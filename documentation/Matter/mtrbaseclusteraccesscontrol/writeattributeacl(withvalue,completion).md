@@ -1,7 +1,8 @@
 # writeAttributeACL(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeACL(withValue value: [Any], completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeACL(withValue value: [Any]) async throws
+```
+
+```objc
+- (void) writeAttributeACLWithValue:(NSArray *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

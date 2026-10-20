@@ -1,7 +1,8 @@
 # type
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Apple In-App Purchase product type.
 
@@ -22,9 +23,10 @@ let type: Product.ProductType
 
 ## See Also
 
-- [let id: String](product/id.md)
+### Getting product identifiers and type
+- [let id: String](./id.md)
   The unique product identifier.
-- [Product.ProductType](product/producttype.md)
+- [Product.ProductType](./producttype.md)
   The types of Apple In-App Purchases.
 
 

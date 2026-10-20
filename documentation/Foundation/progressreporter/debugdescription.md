@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the progress reporter suitable for debugging.
 

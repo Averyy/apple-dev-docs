@@ -1,7 +1,8 @@
 # LSSharedFileListItemRemove(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+ - Deprecated in 10.11
@@ -10,6 +11,10 @@
 
 ```swift
 func LSSharedFileListItemRemove(_ inList: LSSharedFileList, _ inItem: LSSharedFileListItem) -> OSStatus
+```
+
+```c
+OSStatus LSSharedFileListItemRemove(LSSharedFileListRef inList, LSSharedFileListItemRef inItem);
 ```
 
 

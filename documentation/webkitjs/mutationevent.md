@@ -1,7 +1,8 @@
 # MutationEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,24 +10,24 @@
 
 ## Declaration
 
-```swift
+```
 interface MutationEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [attrChange](mutationevent/1631306-attrchange.md)
-- [attrName](mutationevent/1633029-attrname.md)
-- [newValue](mutationevent/1632817-newvalue.md)
-- [prevValue](mutationevent/1632574-prevvalue.md)
-- [relatedNode](mutationevent/1633612-relatednode.md)
+- [attrChange](./mutationevent/api-1631306-attrchange.md)
+- [attrName](./mutationevent/api-1633029-attrname.md)
+- [newValue](./mutationevent/api-1632817-newvalue.md)
+- [prevValue](./mutationevent/api-1632574-prevvalue.md)
+- [relatedNode](./mutationevent/api-1633612-relatednode.md)
 ### Instance Methods
-- [initMutationEvent](mutationevent/1634443-initmutationevent.md)
+- [initMutationEvent](./mutationevent/api-1634443-initmutationevent.md)
 ### Miscellaneous
-- [ADDITION](mutationevent/1630139-addition.md)
-- [MODIFICATION](mutationevent/1631748-modification.md)
-- [REMOVAL](mutationevent/1629626-removal.md)
+- [ADDITION](./mutationevent/api-1630139-addition.md)
+- [MODIFICATION](./mutationevent/api-1631748-modification.md)
+- [REMOVAL](./mutationevent/api-1629626-removal.md)
 
 ## Relationships
 

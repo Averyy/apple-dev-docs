@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kHorizontalConstraint: Int](khorizontalconstraint.md)
-- [var kNoConstraint: Int](knoconstraint.md)
-- [var kVerticalConstraint: Int](kverticalconstraint.md)
+- [var kHorizontalConstraint: Int](../khorizontalconstraint.md)
+- [var kNoConstraint: Int](../knoconstraint.md)
+- [var kVerticalConstraint: Int](../kverticalconstraint.md)
 
 
 ---

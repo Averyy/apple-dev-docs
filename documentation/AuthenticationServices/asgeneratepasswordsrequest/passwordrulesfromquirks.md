@@ -1,7 +1,8 @@
 # passwordRulesFromQuirks
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Password rules from https://github.com/apple/password-manager-resources
 
@@ -15,6 +16,10 @@ Password rules from https://github.com/apple/password-manager-resources
 
 ```swift
 var passwordRulesFromQuirks: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * passwordRulesFromQuirks;
 ```
 
 

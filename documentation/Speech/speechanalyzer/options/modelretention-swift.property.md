@@ -1,7 +1,8 @@
 # modelRetention
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The analyzer’s model caching strategy.
 
@@ -21,9 +22,10 @@ let modelRetention: SpeechAnalyzer.Options.ModelRetention
 
 ## See Also
 
-- [let ignoresResourceLimits: Bool](speechanalyzer/options/ignoresresourcelimits.md)
+### Inspecting options
+- [let ignoresResourceLimits: Bool](./ignoresresourcelimits.md)
   A Boolean value that indicates whether this analyzer ignores predefined system resource limits.
-- [let priority: TaskPriority](speechanalyzer/options/priority.md)
+- [let priority: TaskPriority](./priority.md)
   The priority of analysis processing work.
 
 

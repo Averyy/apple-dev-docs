@@ -1,7 +1,8 @@
 # make(format:colorSpace:alphaIsOpaqueHint:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates the description of an RGB image encoding in a Core Video pixel buffer from the specified properties.
 
@@ -11,7 +12,7 @@ Creates the description of an RGB image encoding in a Core Video pixel buffer fr
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ static func make(format: vImageCVImageFormat.Format, colorSpace: CGColorSpace, a
 
 #### Return Value
 
-A [`vImageCVImageFormat`](vimagecvimageformat.md) instance encoded with the function’s parameters.
+A [`vImageCVImageFormat`](../vimagecvimageformat.md) instance encoded with the function’s parameters.
 
 ## Parameters
 
@@ -32,11 +33,13 @@ A [`vImageCVImageFormat`](vimagecvimageformat.md) instance encoded with the func
 
 ## See Also
 
-- [func vImageCVImageFormat_Create(UInt32, UnsafePointer<vImage_ARGBToYpCbCrMatrix>!, CFString!, CGColorSpace!, Int32) -> Unmanaged<vImageCVImageFormat>!](vimagecvimageformat_create(_:_:_:_:_:).md)
+### Related Documentation
+- [func vImageCVImageFormat_Create(UInt32, UnsafePointer<vImage_ARGBToYpCbCrMatrix>!, CFString!, CGColorSpace!, Int32) -> Unmanaged<vImageCVImageFormat>!](../vimagecvimageformat_create%28_,_,_,_,_%29.md)
   Creates the description of image encoding in a Core Video pixel buffer from the specified properties.
-- [static func make(buffer: CVPixelBuffer) -> vImageCVImageFormat?](vimagecvimageformat/make(buffer:).md)
+### Creating a Core Video image format
+- [static func make(buffer: CVPixelBuffer) -> vImageCVImageFormat?](./make%28buffer%29.md)
   Creates the description of the image encoding in an existing Core Video pixel buffer.
-- [static func make(format: vImageCVImageFormat.Format, matrix: vImage_ARGBToYpCbCrMatrix, chromaSiting: vImageCVImageFormat.ChromaSiting, colorSpace: CGColorSpace, alphaIsOpaqueHint: Bool) -> vImageCVImageFormat?](vimagecvimageformat/make(format:matrix:chromasiting:colorspace:alphaisopaquehint:).md)
+- [static func make(format: vImageCVImageFormat.Format, matrix: vImage_ARGBToYpCbCrMatrix, chromaSiting: vImageCVImageFormat.ChromaSiting, colorSpace: CGColorSpace, alphaIsOpaqueHint: Bool) -> vImageCVImageFormat?](./make%28format,matrix,chromasiting,colorspace,alphaisopaquehint%29.md)
   Creates the description of image encoding in a Core Video pixel buffer from the specified properties.
 
 

@@ -1,23 +1,25 @@
 # start
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool start(IOService *provider);
 ```
 
 ## See Also
 
-- [+ copyMapperForDevice](iomapper/1532972-copymapperfordevice.md)
-- [+ copyMapperForDeviceWithIndex](iomapper/1532964-copymapperfordevicewithindex.md)
-- [- initHardware](iomapper/1532965-inithardware.md)
-- [- free](iomapper/1532982-free.md)
+### Creating a Mapper Object
+- [+ copyMapperForDevice](./api-1532972-copymapperfordevice.md)
+- [+ copyMapperForDeviceWithIndex](./api-1532964-copymapperfordevicewithindex.md)
+- [- initHardware](./api-1532965-inithardware.md)
+- [- free](./api-1532982-free.md)
 
 
 ---

@@ -1,12 +1,13 @@
 # recentDocumentURLs
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of recent-document URLs.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ The list of recent-document URLs.
 var recentDocumentURLs: [URL] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSURL *> * recentDocumentURLs;
+```
+
 #### Discussion
 
-This property contains an array of [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) objects corresponding to the recently opened documents. Do not override this property.
+This property contains an array of [`NSURL`](../../Foundation/nsurl.md) objects corresponding to the recently opened documents. Do not override this property.
 
 ## See Also
 
-- [var maximumRecentDocumentCount: Int](nsdocumentcontroller/maximumrecentdocumentcount.md)
+### Managing the Open Recent Menu
+- [var maximumRecentDocumentCount: Int](./maximumrecentdocumentcount.md)
   The maximum number of items that may be presented in the standard Open Recent menu.
-- [func clearRecentDocuments(Any?)](nsdocumentcontroller/clearrecentdocuments(_:).md)
+- [func clearRecentDocuments(Any?)](./clearrecentdocuments%28_%29.md)
   Empties the recent documents list for the application.
-- [func noteNewRecentDocumentURL(URL)](nsdocumentcontroller/notenewrecentdocumenturl(_:).md)
+- [func noteNewRecentDocumentURL(URL)](./notenewrecentdocumenturl%28_%29.md)
   Adds or replaces an Open Recent menu item corresponding to the data located by the URL.
-- [func noteNewRecentDocument(NSDocument)](nsdocumentcontroller/notenewrecentdocument(_:).md)
+- [func noteNewRecentDocument(NSDocument)](./notenewrecentdocument%28_%29.md)
   Adds or replaces an Open Recent menu item corresponding to the document.
 
 

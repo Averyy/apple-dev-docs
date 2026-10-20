@@ -1,7 +1,8 @@
 # entity(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a child entity’s path.
 
@@ -11,7 +12,7 @@ Provides a child entity’s path.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

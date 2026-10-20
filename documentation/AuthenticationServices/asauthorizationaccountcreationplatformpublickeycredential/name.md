@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Name shared by the user, if requested.
 

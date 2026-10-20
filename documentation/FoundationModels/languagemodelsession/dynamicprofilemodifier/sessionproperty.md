@@ -1,7 +1,8 @@
 # LanguageModelSession.DynamicProfileModifier.SessionProperty
 
 **Framework**: Foundation Models  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A property wrapper that provides access to a session property from within a dynamic profile modifier.
 
@@ -21,13 +22,14 @@ typealias SessionProperty = LanguageModelSession.SessionProperty
 
 ## See Also
 
-- [func body(content: Self.Content) -> Self.Body](languagemodelsession/dynamicprofilemodifier/body(content:).md)
+### Implementing a profile modifier
+- [func body(content: Self.Content) -> Self.Body](./body%28content%29.md)
   The content of the dynamic profile modifier.
-- [LanguageModelSession.DynamicProfileModifier.Content](languagemodelsession/dynamicprofilemodifier/content.md)
+- [LanguageModelSession.DynamicProfileModifier.Content](./content.md)
   The type of dynamic profile content that this modifier wraps.
-- [associatedtype Body : LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofilemodifier/body.md)
+- [associatedtype Body : LanguageModelSession.DynamicProfile](./body.md)
   The type of dynamic profile modifier that represents this modifier.
-- [LanguageModelSession.DynamicProfileModifier.DynamicProfile](languagemodelsession/dynamicprofilemodifier/dynamicprofile.md)
+- [LanguageModelSession.DynamicProfileModifier.DynamicProfile](./dynamicprofile.md)
   The dynamic profile type that a modifier’s body returns.
 
 

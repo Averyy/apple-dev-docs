@@ -1,7 +1,8 @@
 # transformingChanges(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create a new ordered collection difference by mapping over this difference’s members, processing the change objects with the block provided.
 
@@ -18,6 +19,10 @@ Create a new ordered collection difference by mapping over this difference’s m
 
 ```swift
 func transformingChanges(_ block: (NSOrderedCollectionChange) -> NSOrderedCollectionChange) -> CollectionDifference<Any>
+```
+
+```objc
+- (NSOrderedCollectionDifference<id> *) differenceByTransformingChangesWithBlock:(NSOrderedCollectionChange<id> * (^)(NSOrderedCollectionChange<id> *)) block;
 ```
 
 #### Return Value

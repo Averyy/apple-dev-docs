@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A deceleration rate that matches the parent scroll view’s deceleration rate for the orthogonal scrolling section.
 
@@ -18,11 +19,16 @@ A deceleration rate that matches the parent scroll view’s deceleration rate fo
 static let automatic: UICollectionLayoutSectionOrthogonalScrollingProperties.DecelerationRate
 ```
 
+```c
+extern const UICollectionLayoutSectionOrthogonalScrollingDecelerationRate UICollectionLayoutSectionOrthogonalScrollingDecelerationRateAutomatic;
+```
+
 ## See Also
 
-- [static let fast: UICollectionLayoutSectionOrthogonalScrollingProperties.DecelerationRate](uicollectionlayoutsectionorthogonalscrollingproperties/decelerationrate-swift.struct/fast.md)
+### Selecting deceleration rates
+- [static let fast: UICollectionLayoutSectionOrthogonalScrollingProperties.DecelerationRate](./fast.md)
   A rapid deceleration rate for the orthogonal scrolling section.
-- [static let normal: UICollectionLayoutSectionOrthogonalScrollingProperties.DecelerationRate](uicollectionlayoutsectionorthogonalscrollingproperties/decelerationrate-swift.struct/normal.md)
+- [static let normal: UICollectionLayoutSectionOrthogonalScrollingProperties.DecelerationRate](./normal.md)
   The default deceleration rate for the orthogonal scrolling section.
 
 

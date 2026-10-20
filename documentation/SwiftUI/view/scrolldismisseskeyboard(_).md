@@ -1,7 +1,8 @@
 # scrollDismissesKeyboard(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the behavior in which scrollable content interacts with the software keyboard.
 
@@ -26,7 +27,7 @@ A view that uses the specified keyboard dismissal mode.
 
 #### Discussion
 
-You use this modifier to customize how scrollable content interacts with the software keyboard. For example, you can specify a value of [`immediately`](scrolldismisseskeyboardmode/immediately.md) to indicate that you would like scrollable content to immediately dismiss the keyboard if present when a scroll drag gesture begins.
+You use this modifier to customize how scrollable content interacts with the software keyboard. For example, you can specify a value of [`immediately`](../scrolldismisseskeyboardmode/immediately.md) to indicate that you would like scrollable content to immediately dismiss the keyboard if present when a scroll drag gesture begins.
 
 ```swift
 @State private var text = ""
@@ -41,9 +42,9 @@ ScrollView {
 .scrollDismissesKeyboard(.immediately)
 ```
 
-You can also use this modifier to customize the keyboard dismissal behavior for other kinds of scrollable views, like a [`List`](list.md) or a [`TextEditor`](texteditor.md).
+You can also use this modifier to customize the keyboard dismissal behavior for other kinds of scrollable views, like a [`List`](../list.md) or a [`TextEditor`](../texteditor.md).
 
-By default, a [`TextEditor`](texteditor.md) is interactive while other kinds of scrollable content always dismiss the keyboard on a scroll when linked against iOS 16 or later. Pass a value of [`never`](scrolldismisseskeyboardmode/never.md) to indicate that scrollable content should never automatically dismiss the keyboard.
+By default, a [`TextEditor`](../texteditor.md) is interactive while other kinds of scrollable content always dismiss the keyboard on a scroll when linked against iOS 16 or later. Pass a value of [`never`](../scrolldismisseskeyboardmode/never.md) to indicate that scrollable content should never automatically dismiss the keyboard.
 
 ## Parameters
 
@@ -51,9 +52,10 @@ By default, a [`TextEditor`](texteditor.md) is interactive while other kinds of 
 
 ## See Also
 
-- [var scrollDismissesKeyboardMode: ScrollDismissesKeyboardMode](environmentvalues/scrolldismisseskeyboardmode.md)
+### Interacting with a software keyboard
+- [var scrollDismissesKeyboardMode: ScrollDismissesKeyboardMode](../environmentvalues/scrolldismisseskeyboardmode.md)
   The way that scrollable content interacts with the software keyboard.
-- [struct ScrollDismissesKeyboardMode](scrolldismisseskeyboardmode.md)
+- [struct ScrollDismissesKeyboardMode](../scrolldismisseskeyboardmode.md)
   The ways that scrollable content can interact with the software keyboard.
 
 

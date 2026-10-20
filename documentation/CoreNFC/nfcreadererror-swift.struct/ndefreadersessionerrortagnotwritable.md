@@ -1,7 +1,8 @@
 # ndefReaderSessionErrorTagNotWritable
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The NDEF tag isn’t writable.
 
@@ -18,11 +19,12 @@ static var ndefReaderSessionErrorTagNotWritable: NFCReaderError.Code { get }
 
 ## See Also
 
-- [static var ndefReaderSessionErrorTagSizeTooSmall: NFCReaderError.Code](nfcreadererror-swift.struct/ndefreadersessionerrortagsizetoosmall.md)
+### NDEF Tag Errors
+- [static var ndefReaderSessionErrorTagSizeTooSmall: NFCReaderError.Code](./ndefreadersessionerrortagsizetoosmall.md)
   The NDEF tag memory size is too small to store the data.
-- [static var ndefReaderSessionErrorTagUpdateFailure: NFCReaderError.Code](nfcreadererror-swift.struct/ndefreadersessionerrortagupdatefailure.md)
+- [static var ndefReaderSessionErrorTagUpdateFailure: NFCReaderError.Code](./ndefreadersessionerrortagupdatefailure.md)
   The reader session failed to update the NDEF tag.
-- [static var ndefReaderSessionErrorZeroLengthMessage: NFCReaderError.Code](nfcreadererror-swift.struct/ndefreadersessionerrorzerolengthmessage.md)
+- [static var ndefReaderSessionErrorZeroLengthMessage: NFCReaderError.Code](./ndefreadersessionerrorzerolengthmessage.md)
   The NDEF tag doesn’t contain an NDEF message.
 
 

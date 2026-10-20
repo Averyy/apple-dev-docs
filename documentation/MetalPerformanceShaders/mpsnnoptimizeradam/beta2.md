@@ -1,7 +1,8 @@
 # beta2
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var beta2: Double { get }
+```
+
+```objc
+@property (nonatomic, readonly) double beta2;
 ```
 
 

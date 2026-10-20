@@ -2,6 +2,7 @@
 
 **Framework**: WorkoutKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value that indicates whether the alert supports the provided activity and location.

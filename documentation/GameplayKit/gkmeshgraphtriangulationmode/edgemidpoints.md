@@ -1,7 +1,8 @@
 # edgeMidpoints
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to place graph nodes at the midpoint of each in the generated mesh.
 
@@ -19,11 +20,16 @@ An option to place graph nodes at the midpoint of each in the generated mesh.
 static var edgeMidpoints: GKMeshGraphTriangulationMode { get }
 ```
 
+```c
+GKMeshGraphTriangulationModeEdgeMidpoints
+```
+
 ## See Also
 
-- [static var vertices: GKMeshGraphTriangulationMode](gkmeshgraphtriangulationmode/vertices.md)
+### Constants
+- [static var vertices: GKMeshGraphTriangulationMode](./vertices.md)
   An option to place graph nodes at each vertex in the generated mesh.
-- [static var centers: GKMeshGraphTriangulationMode](gkmeshgraphtriangulationmode/centers.md)
+- [static var centers: GKMeshGraphTriangulationMode](./centers.md)
   An option to place graph nodes at the center of each polygon in the generated mesh.
 
 

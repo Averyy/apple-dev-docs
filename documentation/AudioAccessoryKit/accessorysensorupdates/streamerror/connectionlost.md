@@ -1,7 +1,8 @@
 # AccessorySensorUpdates.StreamError.connectionLost
 
 **Framework**: AudioAccessoryKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The XPC connection was permanently lost; the stream is finished.
 

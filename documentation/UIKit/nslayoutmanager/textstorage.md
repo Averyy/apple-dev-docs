@@ -1,7 +1,8 @@
 # textStorage
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text storage object that contains the content to lay out.
 
@@ -9,7 +10,7 @@ The text storage object that contains the content to lay out.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,17 @@ The text storage object that contains the content to lay out.
 unowned(unsafe) var textStorage: NSTextStorage? { get set }
 ```
 
+```objc
+@property (nonatomic, assign, nullable) NSTextStorage * textStorage;
+```
+
 ## See Also
 
-- [func addLayoutManager(NSLayoutManager)](nstextstorage/addlayoutmanager(_:).md)
+### Related Documentation
+- [func addLayoutManager(NSLayoutManager)](../nstextstorage/addlayoutmanager%28_%29.md)
   Adds a layout manager to the text storage object’s set of layout managers.
-- [func replaceTextStorage(NSTextStorage)](../appkit/nslayoutmanager/replacetextstorage(_:).md)
+### Accessing the text storage
+- [func replaceTextStorage(NSTextStorage)](../../AppKit/nslayoutmanager/replacetextstorage%28_%29.md)
   Replaces the layout manager’s current text storage object with the specified object.
 
 

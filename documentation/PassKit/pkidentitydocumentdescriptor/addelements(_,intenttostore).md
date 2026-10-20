@@ -2,6 +2,7 @@
 
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds a list of identity element and defines the way an app, or it’s server, stores the elements.
@@ -18,6 +19,10 @@ Adds a list of identity element and defines the way an app, or it’s server, st
 func addElements(_ elements: [PKIdentityElement], intentToStore: PKIdentityIntentToStore)
 ```
 
+```objc
+- (void) addElements:(NSArray<PKIdentityElement *> *) elements withIntentToStore:(PKIdentityIntentToStore *) intentToStore;
+```
+
 ## Parameters
 
 - `elements`: A list of identity elements.
@@ -25,7 +30,8 @@ func addElements(_ elements: [PKIdentityElement], intentToStore: PKIdentityInten
 
 ## See Also
 
-- [class PKIdentityIntentToStore](pkidentityintenttostore.md)
+### Adding an identity element
+- [class PKIdentityIntentToStore](../pkidentityintenttostore.md)
   An object that represents your intention to store an identity element or values derived from an identity element.
 
 

@@ -1,7 +1,8 @@
 # SparseSolve(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Solve `Ax=b` using the specified iterative method for complex float values.
 
@@ -20,6 +21,10 @@ Solve `Ax=b` using the specified iterative method for complex float values.
 func SparseSolve(_ method: SparseIterativeMethod, _ A: SparseMatrix_Complex_Float, _ b: DenseVector_Complex_Float, _ x: DenseVector_Complex_Float, _ Preconditioner: SparseOpaquePreconditioner_Complex_Float) -> SparseIterativeStatus_t
 ```
 
+```c
+static SparseIterativeStatus_t SparseSolve(SparseIterativeMethod method, SparseMatrix_Complex_Float A, DenseVector_Complex_Float b, DenseVector_Complex_Float x, SparseOpaquePreconditioner_Complex_Float Preconditioner);
+```
+
 ## Parameters
 
 - `method`: (Input) Iterative method specification, eg return value of `SparseConjugateGradient()`.
@@ -30,15 +35,16 @@ func SparseSolve(_ method: SparseIterativeMethod, _ A: SparseMatrix_Complex_Floa
 
 ## See Also
 
-- [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Complex_Float, DenseVector_Complex_Float) -> Void, DenseVector_Complex_Float, DenseVector_Complex_Float) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:)-2cenj.md)
+### Iterative sparse solve functions for complex matrices
+- [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Complex_Float, DenseVector_Complex_Float) -> Void, DenseVector_Complex_Float, DenseVector_Complex_Float) -> SparseIterativeStatus_t](./sparsesolve%28_,_,_,_%29-2cenj.md)
   Solve `Ax=b` using the specified iterative method for complex float values.
-- [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Complex_Double, DenseVector_Complex_Double) -> Void, DenseVector_Complex_Double, DenseVector_Complex_Double) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:)-35kl2.md)
+- [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Complex_Double, DenseVector_Complex_Double) -> Void, DenseVector_Complex_Double, DenseVector_Complex_Double) -> SparseIterativeStatus_t](./sparsesolve%28_,_,_,_%29-35kl2.md)
   Solve `Ax=b` using the specified iterative method for complex double values.
-- [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Complex_Double, DenseVector_Complex_Double) -> Void, DenseVector_Complex_Double, DenseVector_Complex_Double, SparseOpaquePreconditioner_Complex_Double) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-1ogxn.md)
+- [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Complex_Double, DenseVector_Complex_Double) -> Void, DenseVector_Complex_Double, DenseVector_Complex_Double, SparseOpaquePreconditioner_Complex_Double) -> SparseIterativeStatus_t](./sparsesolve%28_,_,_,_,_%29-1ogxn.md)
   Solve `Ax=b` using the specified iterative method for complex double values.
-- [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Complex_Float, DenseVector_Complex_Float) -> Void, DenseVector_Complex_Float, DenseVector_Complex_Float, SparseOpaquePreconditioner_Complex_Float) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-2bm9r.md)
+- [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Complex_Float, DenseVector_Complex_Float) -> Void, DenseVector_Complex_Float, DenseVector_Complex_Float, SparseOpaquePreconditioner_Complex_Float) -> SparseIterativeStatus_t](./sparsesolve%28_,_,_,_,_%29-2bm9r.md)
   Solve `Ax=b` using the specified iterative method for complex float values.
-- [func SparseSolve(SparseIterativeMethod, SparseMatrix_Complex_Double, DenseVector_Complex_Double, DenseVector_Complex_Double, SparseOpaquePreconditioner_Complex_Double) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-7yfqx.md)
+- [func SparseSolve(SparseIterativeMethod, SparseMatrix_Complex_Double, DenseVector_Complex_Double, DenseVector_Complex_Double, SparseOpaquePreconditioner_Complex_Double) -> SparseIterativeStatus_t](./sparsesolve%28_,_,_,_,_%29-7yfqx.md)
   Solve `Ax=b` using the specified iterative method for complex double values.
 
 

@@ -1,7 +1,8 @@
 # Movie.Prices.Price
 
 **Framework**: Apple TV Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about a pricing offer.
 
@@ -10,7 +11,7 @@ Information about a pricing offer.
 
 ## Declaration
 
-```swift
+```
 object Movie.Prices.Price
 ```
 

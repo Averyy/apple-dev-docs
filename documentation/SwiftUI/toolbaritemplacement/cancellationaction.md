@@ -1,7 +1,8 @@
 # cancellationAction
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A placement for cancellation actions in a modal interface.
 
@@ -24,21 +25,22 @@ static let cancellationAction: ToolbarItemPlacement
 
 Cancellation actions dismiss the modal interface without taking any action, usually by tapping or clicking a Cancel button.
 
-In macOS and in Mac Catalyst apps, the system places `cancellationAction` items on the trailing edge of the sheet but places them before any [`confirmationAction`](toolbaritemplacement/confirmationaction.md) items.
+In macOS and in Mac Catalyst apps, the system places `cancellationAction` items on the trailing edge of the sheet but places them before any [`confirmationAction`](./confirmationaction.md) items.
 
 In iOS, iPadOS, tvOS, and watchOS, the system places `cancellationAction` items on the leading edge of the navigation bar.
 
 ## See Also
 
-- [static let primaryAction: ToolbarItemPlacement](toolbaritemplacement/primaryaction.md)
+### Getting placement for specific actions
+- [static let primaryAction: ToolbarItemPlacement](./primaryaction.md)
   A placement for the primary action.
-- [static let secondaryAction: ToolbarItemPlacement](toolbaritemplacement/secondaryaction.md)
+- [static let secondaryAction: ToolbarItemPlacement](./secondaryaction.md)
   A placement for secondary actions.
-- [static let confirmationAction: ToolbarItemPlacement](toolbaritemplacement/confirmationaction.md)
+- [static let confirmationAction: ToolbarItemPlacement](./confirmationaction.md)
   A placement for confirmation actions in a modal interface.
-- [static let destructiveAction: ToolbarItemPlacement](toolbaritemplacement/destructiveaction.md)
+- [static let destructiveAction: ToolbarItemPlacement](./destructiveaction.md)
   A placement for destructive actions in a modal interface.
-- [static let navigation: ToolbarItemPlacement](toolbaritemplacement/navigation.md)
+- [static let navigation: ToolbarItemPlacement](./navigation.md)
   A placement for navigation actions.
 
 

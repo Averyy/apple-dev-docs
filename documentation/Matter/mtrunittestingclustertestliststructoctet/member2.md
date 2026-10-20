@@ -1,7 +1,8 @@
 # member2
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var member2: Data { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSData * member2;
 ```
 
 

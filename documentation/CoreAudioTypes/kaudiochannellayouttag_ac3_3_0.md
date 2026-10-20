@@ -1,7 +1,8 @@
 # kAudioChannelLayoutTag_AC3_3_0
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An AC-3 layout.
 
@@ -20,6 +21,10 @@ An AC-3 layout.
 var kAudioChannelLayoutTag_AC3_3_0: AudioChannelLayoutTag { get }
 ```
 
+```c
+kAudioChannelLayoutTag_AC3_3_0
+```
+
 #### Discussion
 
 Your channels must be laid out in the following order:
@@ -30,15 +35,16 @@ Your channels must be laid out in the following order:
 
 ## See Also
 
-- [var kAudioChannelLayoutTag_AC3_1_0_1: AudioChannelLayoutTag](kaudiochannellayouttag_ac3_1_0_1.md)
+### AC3 Defined Layouts
+- [var kAudioChannelLayoutTag_AC3_1_0_1: AudioChannelLayoutTag](./kaudiochannellayouttag_ac3_1_0_1.md)
   An AC-3 layout.
-- [var kAudioChannelLayoutTag_AC3_3_1: AudioChannelLayoutTag](kaudiochannellayouttag_ac3_3_1.md)
+- [var kAudioChannelLayoutTag_AC3_3_1: AudioChannelLayoutTag](./kaudiochannellayouttag_ac3_3_1.md)
   An AC-3 layout.
-- [var kAudioChannelLayoutTag_AC3_3_0_1: AudioChannelLayoutTag](kaudiochannellayouttag_ac3_3_0_1.md)
+- [var kAudioChannelLayoutTag_AC3_3_0_1: AudioChannelLayoutTag](./kaudiochannellayouttag_ac3_3_0_1.md)
   An AC-3 layout.
-- [var kAudioChannelLayoutTag_AC3_2_1_1: AudioChannelLayoutTag](kaudiochannellayouttag_ac3_2_1_1.md)
+- [var kAudioChannelLayoutTag_AC3_2_1_1: AudioChannelLayoutTag](./kaudiochannellayouttag_ac3_2_1_1.md)
   An AC-3 layout.
-- [var kAudioChannelLayoutTag_AC3_3_1_1: AudioChannelLayoutTag](kaudiochannellayouttag_ac3_3_1_1.md)
+- [var kAudioChannelLayoutTag_AC3_3_1_1: AudioChannelLayoutTag](./kaudiochannellayouttag_ac3_3_1_1.md)
   An AC-3 layout.
 
 

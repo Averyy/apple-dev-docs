@@ -1,12 +1,15 @@
 # NSScroller.Arrow
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-These constants describe the two scroller buttons and are used by [`drawArrow(_:highlight:)`](nsscroller/drawarrow(_:highlight:).md).
+These constants describe the two scroller buttons and are used by [`drawArrow(_:highlight:)`](./drawarrow%28_,highlight%29.md).
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Scroller arrows are not used anymore.
 
 ## Declaration
 
@@ -14,30 +17,35 @@ These constants describe the two scroller buttons and are used by [`drawArrow(_:
 enum Arrow
 ```
 
+```c
+enum NSScrollerArrow : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSScroller.Arrow.incrementArrow](nsscroller/arrow/incrementarrow.md)
+- [NSScroller.Arrow.incrementArrow](./arrow/incrementarrow.md)
   The down or right scroll button.
-- [NSScroller.Arrow.decrementArrow](nsscroller/arrow/decrementarrow.md)
+- [NSScroller.Arrow.decrementArrow](./arrow/decrementarrow.md)
   The up or left scroll button.
 ### Initializers
-- [init?(rawValue: UInt)](nsscroller/arrow/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./arrow/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSScroller.ArrowPosition](nsscroller/arrowposition.md)
-  These constants specify where the scroller’s buttons appear and are used by the [`arrowsPosition`](nsscroller/arrowsposition.md) property.
+### Deprecated enumerations
+- [NSScroller.ArrowPosition](./arrowposition.md)
+  These constants specify where the scroller’s buttons appear and are used by the [`arrowsPosition`](./arrowsposition.md) property.
 
 
 ---

@@ -1,16 +1,19 @@
 # reportAllAcceptedPublicKeyCredentials(relyingPartyIdentifier:userHandle:acceptedCredentialIDs:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides credential managers with a snapshot of all credential identifiers accepted for a given user handle.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
-- visionOS 26.0+
+- iOS 26.0+ - Deprecated in 26.2
+- iPadOS 26.0+ - Deprecated in 26.2
+- Mac Catalyst 26.0+ - Deprecated in 26.2
+- macOS 26.0+ - Deprecated in 26.2
+- visionOS 26.0+ - Deprecated in 26.2
+
+> **Deprecated**: Use `ASCredentialDataManager` instead
 
 ## Declaration
 
@@ -26,7 +29,7 @@ You can also call this method periodically, such as by invoking it on every sign
 
 This call shares the updated credential data with all enabled credential managers installed on the system.
 
-> **Note**: This method throws [`ASAuthorizationError`](asauthorizationerror-swift.struct.md) if the system failed to accept the update.
+> **Throws**: This method throws [`ASAuthorizationError`](../asauthorizationerror-swift.struct.md) if the system failed to accept the update.
 
 ## Parameters
 

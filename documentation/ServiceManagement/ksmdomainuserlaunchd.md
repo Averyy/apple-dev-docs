@@ -1,7 +1,8 @@
 # kSMDomainUserLaunchd
 
 **Framework**: Service Management  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The user-level launch domain.
 
@@ -17,9 +18,14 @@ The user-level launch domain.
 let kSMDomainUserLaunchd: CFString!
 ```
 
+```c
+extern CFStringRef const kSMDomainUserLaunchd;
+```
+
 ## See Also
 
-- [let kSMDomainSystemLaunchd: CFString!](ksmdomainsystemlaunchd.md)
+### Constants
+- [let kSMDomainSystemLaunchd: CFString!](./ksmdomainsystemlaunchd.md)
   The system-level launch domain.
 
 

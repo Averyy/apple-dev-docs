@@ -1,7 +1,8 @@
 # priority
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The priority of this job.
 

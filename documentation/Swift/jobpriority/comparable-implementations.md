@@ -1,33 +1,34 @@
 # Comparable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func ... (Self) -> PartialRangeFrom<Self>](jobpriority/'...(_:)-94kop.md)
+- [static func ... (Self) -> PartialRangeFrom<Self>](./dotdotdot%28_%29-94kop.md)
   Returns a partial range extending upward from a lower bound.
-- [static func ... (Self) -> PartialRangeThrough<Self>](jobpriority/'...(_:)-9gkod.md)
+- [static func ... (Self) -> PartialRangeThrough<Self>](./dotdotdot%28_%29-9gkod.md)
   Returns a partial range up to, and including, its upper bound.
-- [static func ... (Self, Self) -> ClosedRange<Self>](jobpriority/'...(_:_:).md)
+- [static func ... (Self, Self) -> ClosedRange<Self>](./dotdotdot%28_,_%29.md)
   Returns a closed range that contains both of its bounds.
-- [static func ..< (Self) -> PartialRangeUpTo<Self>](jobpriority/'.._(_:).md)
+- [static func ..< (Self) -> PartialRangeUpTo<Self>](./dotdotop%28_%29.md)
   Returns a partial range up to, but not including, its upper bound.
-- [static func ..< (Self, Self) -> Range<Self>](jobpriority/'.._(_:_:).md)
+- [static func ..< (Self, Self) -> Range<Self>](./dotdotop%28_,_%29.md)
   Returns a half-open range that contains its lower bound but not its upper bound.
-- [static func < (JobPriority, JobPriority) -> Bool](jobpriority/_(_:_:)-53h6k.md)
+- [static func < (JobPriority, JobPriority) -> Bool](./op%28_,_%29-53h6k.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (JobPriority, JobPriority) -> Bool](jobpriority/_(_:_:)-9ghlg.md)
+- [static func > (JobPriority, JobPriority) -> Bool](./op%28_,_%29-9ghlg.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func > (borrowing Self, borrowing Self) -> Bool](jobpriority/_(_:_:)-9svm6.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](./op%28_,_%29-9svm6.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func <= (borrowing Self, borrowing Self) -> Bool](jobpriority/_=(_:_:)-2mfn0.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-2mfn0.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (JobPriority, JobPriority) -> Bool](jobpriority/_=(_:_:)-3sizb.md)
+- [static func >= (JobPriority, JobPriority) -> Bool](./opeq%28_,_%29-3sizb.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func <= (JobPriority, JobPriority) -> Bool](jobpriority/_=(_:_:)-5nd54.md)
+- [static func <= (JobPriority, JobPriority) -> Bool](./opeq%28_,_%29-5nd54.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (borrowing Self, borrowing Self) -> Bool](jobpriority/_=(_:_:)-63zix.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-63zix.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 

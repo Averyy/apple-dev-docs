@@ -1,7 +1,8 @@
 # gatherAlongAxis(indices:axis:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a gather-along-axis operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a gather-along-axis operation to the current graph.
 ```swift
 func gatherAlongAxis(indices: some BNNSGraph.Builder.OperationParameter<Int32>, axis: Int) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 #### Discussion
 

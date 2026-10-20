@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a linear gauge style.
 
@@ -17,7 +18,8 @@ init()
 
 ## See Also
 
-- [init(tint:)](lineargaugestyle/init(tint:).md)
+### Creating the gauge style
+- [init(tint:)](./init%28tint%29.md)
   Creates a linear gauge style with a tint color.
 
 

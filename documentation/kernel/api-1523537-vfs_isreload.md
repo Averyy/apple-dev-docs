@@ -1,7 +1,8 @@
 # vfs_isreload
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determine if a reload of filesystem data is in progress. This can only be the case for a read-only filesystem; all data is brought in from secondary storage.
 
@@ -10,11 +11,11 @@ Determine if a reload of filesystem data is in progress. This can only be the ca
 
 ## Declaration
 
-```swift
+```c
 int vfs_isreload(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 Nonzero if a request has been made to reload data, else 0.
 

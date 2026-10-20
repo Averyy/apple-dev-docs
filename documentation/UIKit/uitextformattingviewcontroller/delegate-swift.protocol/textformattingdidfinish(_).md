@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -15,6 +16,11 @@
 @MainActor
 func textFormattingDidFinish(_ viewController: UITextFormattingViewController)
 ```
+
+## Default Implementations
+
+### UITextFormattingViewController.Delegate Implementations
+- [func textFormattingDidFinish(UITextFormattingViewController)](./textformattingdidfinish%28_%29-3rw35.md)
 
 
 ---

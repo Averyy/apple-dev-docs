@@ -1,7 +1,8 @@
 # PagedDocumentLinks
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Links related to the response document, including paging links.
 
@@ -10,7 +11,7 @@ Links related to the response document, including paging links.
 
 ## Declaration
 
-```swift
+```
 object PagedDocumentLinks
 ```
 
@@ -26,13 +27,14 @@ All the response data constitutes multiple *documents.*
 
 ## See Also
 
-- [object PagingInformation](paginginformation.md)
+### Objects
+- [object PagingInformation](./paginginformation.md)
   Paging information for data responses.
-- [object ResourceLinks](resourcelinks.md)
+- [object ResourceLinks](./resourcelinks.md)
   Self-links to requested resources.
-- [object DocumentLinks](documentlinks.md)
+- [object DocumentLinks](./documentlinks.md)
   Self-links to documents that can contain information for one or more resources.
-- [object RelationshipLinks](relationshiplinks.md)
+- [object RelationshipLinks](./relationshiplinks.md)
   Links related to the response document, including self links.
 
 

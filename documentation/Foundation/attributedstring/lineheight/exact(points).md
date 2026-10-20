@@ -1,7 +1,8 @@
 # exact(points:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Constant line height based on a fixed total.
 

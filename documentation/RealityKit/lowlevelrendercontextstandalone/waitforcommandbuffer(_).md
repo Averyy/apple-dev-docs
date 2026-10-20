@@ -1,7 +1,8 @@
 # waitForCommandBuffer(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a command buffer that the renderer should wait on before using resources for rendering.
 

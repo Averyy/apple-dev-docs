@@ -1,7 +1,8 @@
 # Participants.only(_:)
 
 **Framework**: Group Activities  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A custom subset of participants.
 
@@ -21,9 +22,10 @@ case only(Set<Participant>)
 
 ## See Also
 
-- [Participants.all](participants/all.md)
+### Getting the set of participants
+- [Participants.all](./all.md)
   The set of all participants.
-- [static func only(Participant) -> Participants](participants/only(_:)-swift.type.method.md)
+- [static func only(Participant) -> Participants](./only%28_%29-swift.type.method.md)
   Returns a set containing the specified participant.
 
 

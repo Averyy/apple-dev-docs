@@ -1,7 +1,8 @@
 # add(_:error:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an `ABPerson` or `ABGroup` record to the Address Book database.
 
@@ -14,13 +15,19 @@ Adds an `ABPerson` or `ABGroup` record to the Address Book database.
 func add(_ record: ABRecord!, error: ()) throws
 ```
 
+```objc
+- (BOOL) addRecord:(ABRecord *) record error:(NSError **) error;
+```
+
 #### Discussion
 
-If the `record` argument is `nil`, this method raises an exception. Your changes are not committed until you call the [`save()`](abaddressbook-swift.class/save().md) method.
+If the `record` argument is `nil`, this method raises an exception. Your changes are not committed until you call the [`save()`](./save%28%29.md) method.
 
-It is more efficient to use the  [`ABRecord`](abrecord-swift.class.md) method [`init(addressBook:)`](abrecord-swift.class/init(addressbook:).md) when possible.
+It is more efficient to use the  [`ABRecord`](../abrecord-swift.class.md) method [`init(addressBook:)`](../abrecord-swift.class/init%28addressbook%29.md) when possible.
 
-> **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -29,11 +36,12 @@ It is more efficient to use the  [`ABRecord`](abrecord-swift.class.md) method [`
 
 ## See Also
 
-- [func add(ABRecord!) -> Bool](abaddressbook-swift.class/add(_:).md)
+### Adding and Removing Records
+- [func add(ABRecord!) -> Bool](./add%28_%29.md)
   Adds an `ABPerson` or `ABGroup` record to the Address Book database.
-- [func remove(ABRecord!, error: ()) throws](abaddressbook-swift.class/remove(_:error:).md)
+- [func remove(ABRecord!, error: ()) throws](./remove%28_,error%29.md)
   Removes an `ABPerson` or `ABGroup` record from the Address Book database.
-- [func remove(ABRecord!) -> Bool](abaddressbook-swift.class/remove(_:).md)
+- [func remove(ABRecord!) -> Bool](./remove%28_%29.md)
   Removes an `ABPerson` or `ABGroup` record from the Address Book database.
 
 

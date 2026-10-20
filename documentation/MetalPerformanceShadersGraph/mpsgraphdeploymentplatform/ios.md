@@ -1,7 +1,8 @@
 # MPSGraphDeploymentPlatform.iOS
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Deployment target for iOS.
 
@@ -17,6 +18,10 @@ Deployment target for iOS.
 
 ```swift
 case iOS
+```
+
+```c
+MPSGraphDeploymentPlatformIOS
 ```
 
 

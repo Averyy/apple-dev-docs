@@ -2,6 +2,7 @@
 
 **Framework**: HomeKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Informs the delegate when the system modifies the media source display order.

@@ -1,7 +1,8 @@
 # AppEntityUIElementsContext.ElementsRequest
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that describes which UI elements the system is requesting.
 
@@ -23,18 +24,18 @@ enum ElementsRequest
 ## Topics
 
 ### Enumeration Cases
-- [AppEntityUIElementsContext.ElementsRequest.selected](appentityuielementscontext/elementsrequest/selected.md)
+- [AppEntityUIElementsContext.ElementsRequest.selected](./elementsrequest/selected.md)
   Any elements that are currently selected should be provided.
-- [AppEntityUIElementsContext.ElementsRequest.visible(rect:)](appentityuielementscontext/elementsrequest/visible(rect:).md)
+- [AppEntityUIElementsContext.ElementsRequest.visible(rect:)](./elementsrequest/visible%28rect%29.md)
   Any visible elements that intersect the given rect should be provided.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

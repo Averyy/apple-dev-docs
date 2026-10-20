@@ -1,12 +1,13 @@
 # shouldEnableAction(for:identifier:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the delegate to determine whether the action should be enabled.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Sent to the delegate to determine whether the action should be enabled.
 func shouldEnableAction(for person: ABPerson!, identifier: String!) -> Bool
 ```
 
+```objc
+- (BOOL) shouldEnableActionForPerson:(ABPerson *) person identifier:(NSString *) identifier;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if the action is applicable; otherwise, [`NO`](no.md).
+[`YES`](../yes.md) if the action is applicable; otherwise, [`NO`](../no.md).
 
 #### Discussion
 
-If the property returned by [`actionProperty()`](nsobject-swift.class/actionproperty().md) is a multivalue property, `identifier` contains the unique identifier of the value selected.
+If the property returned by [`actionProperty()`](./actionproperty%28%29.md) is a multivalue property, `identifier` contains the unique identifier of the value selected.
 
 ## Parameters
 

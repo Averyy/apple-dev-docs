@@ -1,7 +1,8 @@
 # WeatherCondition.thunderstorms
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Thunderstorms.
 
@@ -22,19 +23,20 @@ case thunderstorms
 
 ## See Also
 
-- [WeatherCondition.drizzle](weathercondition/drizzle.md)
+### Getting precipitation properties
+- [WeatherCondition.drizzle](./drizzle.md)
   Drizzle or light rain.
-- [WeatherCondition.heavyRain](weathercondition/heavyrain.md)
+- [WeatherCondition.heavyRain](./heavyrain.md)
   Heavy rain.
-- [WeatherCondition.isolatedThunderstorms](weathercondition/isolatedthunderstorms.md)
+- [WeatherCondition.isolatedThunderstorms](./isolatedthunderstorms.md)
   Thunderstorms covering less than 1/8 of the forecast area.
-- [WeatherCondition.rain](weathercondition/rain.md)
+- [WeatherCondition.rain](./rain.md)
   Rain.
-- [WeatherCondition.sunShowers](weathercondition/sunshowers.md)
+- [WeatherCondition.sunShowers](./sunshowers.md)
   Rain with visible sun.
-- [WeatherCondition.scatteredThunderstorms](weathercondition/scatteredthunderstorms.md)
+- [WeatherCondition.scatteredThunderstorms](./scatteredthunderstorms.md)
   Numerous thunderstorms spread across up to 50% of the forecast area.
-- [WeatherCondition.strongStorms](weathercondition/strongstorms.md)
+- [WeatherCondition.strongStorms](./strongstorms.md)
   Notably strong thunderstorms.
 
 

@@ -1,7 +1,8 @@
 # HighPassFilterControl
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The identifier for the audio high pass filter control class.
 
@@ -10,25 +11,26 @@ The identifier for the audio high pass filter control class.
 
 ## Declaration
 
-```swift
+```c
 HighPassFilterControl
 ```
 
 #### Discussion
 
-This class is a subclass of the [`IOUserAudioSelectorControl`](iouseraudioselectorcontrol.md) class that indicates the setting of the high pass filter on the element.
+This class is a subclass of the [`IOUserAudioSelectorControl`](../../iouseraudioselectorcontrol.md) class that indicates the setting of the high pass filter on the element.
 
 ## See Also
 
-- [SelectorControl](audiodriverkit/iouseraudioclassid/selectorcontrol.md)
+### Selector Controls
+- [SelectorControl](./selectorcontrol.md)
   The identifier for the audio selector control class.
-- [DataDestinationControl](audiodriverkit/iouseraudioclassid/datadestinationcontrol.md)
+- [DataDestinationControl](./datadestinationcontrol.md)
   The identifier for the audio data destination control class.
-- [DataSourceControl](audiodriverkit/iouseraudioclassid/datasourcecontrol.md)
+- [DataSourceControl](./datasourcecontrol.md)
   The identifier for the audio data source control class.
-- [ClockSourceControl](audiodriverkit/iouseraudioclassid/clocksourcecontrol.md)
+- [ClockSourceControl](./clocksourcecontrol.md)
   The identifier for the audio clock source control class.
-- [LineLevelControl](audiodriverkit/iouseraudioclassid/linelevelcontrol.md)
+- [LineLevelControl](./linelevelcontrol.md)
   The identifier for the audio line level control class.
 
 

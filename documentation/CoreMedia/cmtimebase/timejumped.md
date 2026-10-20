@@ -1,7 +1,8 @@
 # timeJumped
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts by a timebase after a discontinuous time jump.
 
@@ -22,7 +23,8 @@ static let timeJumped: NSNotification.Name
 
 ## See Also
 
-- [static let effectiveRateChanged: NSNotification.Name](cmtimebase/effectiveratechanged.md)
+### Notifications
+- [static let effectiveRateChanged: NSNotification.Name](./effectiveratechanged.md)
   A notification that posts by a timebase after the effective rate changes.
 
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate that responds to events from the continuity device picker view controller.
 
@@ -12,6 +13,10 @@ The delegate that responds to events from the continuity device picker view cont
 
 ```swift
 weak var delegate: (any AVContinuityDevicePickerViewControllerDelegate)? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) id<AVContinuityDevicePickerViewControllerDelegate> delegate;
 ```
 
 

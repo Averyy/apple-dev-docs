@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a given object to the hash table.
 
@@ -20,15 +21,20 @@ Adds a given object to the hash table.
 func add(_ object: ObjectType?)
 ```
 
+```objc
+- (void) addObject:(ObjectType) object;
+```
+
 ## Parameters
 
 - `object`: The object to add to the hash table.
 
 ## See Also
 
-- [func remove(ObjectType?)](nshashtable/remove(_:).md)
+### Manipulating Membership
+- [func remove(ObjectType?)](./remove%28_%29.md)
   Removes a given object from the hash table.
-- [func removeAllObjects()](nshashtable/removeallobjects.md)
+- [func removeAllObjects()](./removeallobjects%28%29.md)
   Removes all objects from the hash table.
 
 

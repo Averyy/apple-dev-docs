@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns an attributed string derived from the given range in the receiver’s text storage.
@@ -13,6 +14,10 @@ Returns an attributed string derived from the given range in the receiver’s te
 
 ```swift
 func attributedSubstring(forProposedRange range: NSRange, actualRange: NSRangePointer?) -> NSAttributedString?
+```
+
+```objc
+- (NSAttributedString *) attributedSubstringForProposedRange:(NSRange) range actualRange:(NSRangePointer) actualRange;
 ```
 
 #### Return Value
@@ -30,9 +35,10 @@ An implementation of this method should be prepared for `aRange` to be out of bo
 
 ## See Also
 
-- [func attributedString() -> NSAttributedString](nstextinputclient/attributedstring.md)
+### Storing text
+- [func attributedString() -> NSAttributedString](./attributedstring%28%29.md)
   Returns an attributed string representing the receiver’s text storage.
-- [func insertText(Any, replacementRange: NSRange)](nstextinputclient/inserttext(_:replacementrange:).md)
+- [func insertText(Any, replacementRange: NSRange)](./inserttext%28_,replacementrange%29.md)
   Inserts the given string into the receiver, replacing the specified content.
 
 

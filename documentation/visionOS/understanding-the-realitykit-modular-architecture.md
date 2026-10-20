@@ -1,6 +1,7 @@
 # Understanding the modular architecture of RealityKit
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Article
 
 Learn how everything fits together in RealityKit.
 
@@ -8,23 +9,23 @@ Learn how everything fits together in RealityKit.
 
 RealityKit is a 3D framework designed for building apps, games, and other immersive experiences. Although it’s built in an object-oriented language and uses object-oriented design principles, the architecture of RealityKit avoids heavy use of inheritance — where objects are built by adding instance variables that hold references to other objects — in favor of a modular design based on a paradigm called Entity Component System (ECS) that divides application objects into one of three types.
 
-Following the ECS paradigm allows you to re-use the functionality contained in a component in many different entities, even if they have very different inheritance chains. Even if two objects have no common ancestors other than [`Entity`](https://developer.apple.com/documentation/realitykit/entity), you can add the same components to both of them and give them the same behavior or functionality.
+Following the ECS paradigm allows you to re-use the functionality contained in a component in many different entities, even if they have very different inheritance chains. Even if two objects have no common ancestors other than [`Entity`](../RealityKit/entity.md), you can add the same components to both of them and give them the same behavior or functionality.
 
-#### Start with Entities
+#### Start with entities
 
-Entities are the core actors of RealityKit. Any object that you can put into a scene, whether visible or not, is an entity and must be a descendent of [`Entity`](https://developer.apple.com/documentation/realitykit/entity). Entities can be 3D models, shape primitives, lights, or even invisible items like sound emitters or trigger volumes. Add components to entities to let them store additional state relevant to a specific type of functionality. Entities themselves contain relatively few properties: Nearly all entity state is stored on an entity’s components.
+Entities are the core actors of RealityKit. Any object that you can put into a scene, whether visible or not, is an entity and must be a descendent of [`Entity`](../RealityKit/entity.md). Entities can be 3D models, shape primitives, lights, or even invisible items like sound emitters or trigger volumes. Add components to entities to let them store additional state relevant to a specific type of functionality. Entities themselves contain relatively few properties: Nearly all entity state is stored on an entity’s components.
 
-RealityKit provides a number of entity types you use to represent different kinds of objects. For example, a [`ModelEntity`](https://developer.apple.com/documentation/realitykit/modelentity) represents a 3D model, such as one imported from a `.usdz` or `.reality` file. These provided entities are essentially just an [`Entity`](https://developer.apple.com/documentation/realitykit/entity) with certain components already added to them. Adding a [`ModelComponent`](https://developer.apple.com/documentation/realitykit/modelcomponent) to an instance of [`Entity`](https://developer.apple.com/documentation/realitykit/entity), for example, results in an entity with identical functionality to a [`ModelEntity`](https://developer.apple.com/documentation/realitykit/modelentity).
+RealityKit provides a number of entity types you use to represent different kinds of objects. For example, a [`ModelEntity`](../RealityKit/modelentity.md) represents a 3D model, such as one imported from a `.usdz` or `.reality` file. These provided entities are essentially just an [`Entity`](../RealityKit/entity.md) with certain components already added to them. Adding a [`ModelComponent`](../RealityKit/modelcomponent.md) to an instance of [`Entity`](../RealityKit/entity.md), for example, results in an entity with identical functionality to a [`ModelEntity`](../RealityKit/modelentity.md).
 
-#### Add Components to Entities
+#### Add components to entities
 
-Components are modular building blocks that you add to an entity; they identify which entities a system will act on, and maintain the per-entity state that systems rely on. Components can contain logic, but limit component logic to code that validates its property values or sets its initial state. Use systems for any logic that affects the behavior of entities or that potentially changes their state on every frame. To add accessibility information to an entity, for example, add a [`AccessibilityComponent`](https://developer.apple.com/documentation/realitykit/accessibilitycomponent) to it and populate its fields with the information the accessibility system needs, such as putting the description that VoiceOver reads into its [`label`](https://developer.apple.com/documentation/realitykit/accessibilitycomponent/label) property.
+Components are modular building blocks that you add to an entity; they identify which entities a system will act on, and maintain the per-entity state that systems rely on. Components can contain logic, but limit component logic to code that validates its property values or sets its initial state. Use systems for any logic that affects the behavior of entities or that potentially changes their state on every frame. To add accessibility information to an entity, for example, add a [`AccessibilityComponent`](../RealityKit/accessibilitycomponent.md) to it and populate its fields with the information the accessibility system needs, such as putting the description that VoiceOver reads into its [`label`](../RealityKit/accessibilitycomponent/label.md) property.
 
 Keep in mind that an entity can only hold one copy of any particular type of component at a time. So, for example, you can’t add two accessibility components to one entity. If you add an accessibility component to an entity that already has one, the new component replaces the previous one.
 
-#### Create Systems to Implement Entity Behavior
+#### Create systems to implement entity behavior
 
-A [`System`](https://developer.apple.com/documentation/realitykit/system) contains code that RealityKit calls on every frame to implement a specific type of entity behavior or to update a particular type of entity state. Systems use components to store their entity-specific state and query for entities to act on by looking for ones with a specific component or combination of components.
+A [`System`](../RealityKit/system.md) contains code that RealityKit calls on every frame to implement a specific type of entity behavior or to update a particular type of entity state. Systems use components to store their entity-specific state and query for entities to act on by looking for ones with a specific component or combination of components.
 
 For example, a game might have a damage system that monitors and updates the health of every entity that can be damaged or destroyed. Systems typically work together with one or more components, so that damage system might use a health component to keep track of how much damage each entity has taken and how much each one is able to take before it’s destroyed. It might also interact with other components. For example, an entity might have an armor component that provides protection to the entity, and the damage system would also need to use the state stored in that component.
 
@@ -32,39 +33,40 @@ Every frame, the damage system queries for entities that have the health compone
 
 Writing entity logic in a system avoids duplication of work. Using traditional OOP design patterns, where this type of logic would reside on the entity class, can often result in the same calculations being performed multiple times, once for every entity potentially affected. No matter how many entities the calculation potentially impacts the system only has to do the calculation once.
 
-For more information on creating systems, see [`Implementing systems for entities in a scene`](https://developer.apple.com/documentation/realitykit/implementing-systems-for-entities-in-a-scene)
+For more information on creating systems, see [Implementing systems for entities in a scene](../RealityKit/implementing-systems-for-entities-in-a-scene.md)
 
 ## See Also
 
-- [Reality Composer Pro](../realitycomposerpro/realitycomposerpro.md)
+### RealityKit and Reality Composer Pro
+- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
   Build, design, and orchestrate 3D content for your RealityKit apps.
-- [Chaparral Village: Building an immersive visionOS adventure game](chaparral-village-building-an-immersive-visionos-adventure-game.md)
+- [Chaparral Village: Building an immersive visionOS adventure game](./chaparral-village-building-an-immersive-visionos-adventure-game.md)
   Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
-- [Designing no-code games with Reality Composer Pro 3](designing-no-code-games-in-reality-composer-pro-3.md)
+- [Designing no-code games with Reality Composer Pro 3](./designing-no-code-games-in-reality-composer-pro-3.md)
   Build a video game in Reality Composer Pro without code using Script Graphs.
-- [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
+- [Petite Asteroids: Building a volumetric visionOS game](./petite-asteroids-building-a-volumetric-visionos-game.md)
   Use the latest RealityKit APIs to create a beautiful video game for visionOS.
-- [BOT-anist](bot-anist.md)
+- [BOT-anist](./bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
-- [Swift Splash](swift-splash.md)
+- [Swift Splash](./swift-splash.md)
   Use RealityKit to create an interactive ride in visionOS.
-- [Diorama](diorama.md)
+- [Diorama](./diorama.md)
   Design scenes for your visionOS app using Reality Composer Pro.
-- [Building an immersive media viewing experience](building-an-immersive-media-viewing-experience.md)
+- [Building an immersive media viewing experience](./building-an-immersive-media-viewing-experience.md)
   Add a deeper level of immersion to media playback in your app with RealityKit and Reality Composer Pro.
-- [Enabling video reflections in an immersive environment](enabling-video-reflections-in-an-immersive-environment.md)
+- [Enabling video reflections in an immersive environment](./enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
-- [Combining 2D and 3D views in an immersive app](../realitykit/combining-2d-and-3d-views-in-an-immersive-app.md)
+- [Combining 2D and 3D views in an immersive app](../RealityKit/combining-2d-and-3d-views-in-an-immersive-app.md)
   Use attachments to place 2D content relative to 3D content in your visionOS app.
-- [Using transforms to move, scale, and rotate entities](understanding-transforms.md)
+- [Using transforms to move, scale, and rotate entities](./understanding-transforms.md)
   Learn how to use Transforms to move, scale, and rotate entities in RealityKit.
-- [Capturing screenshots and video from Apple Vision Pro for 2D viewing](capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing.md)
+- [Capturing screenshots and video from Apple Vision Pro for 2D viewing](./capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing.md)
   Create screenshots and record high-quality video of your visionOS app and its surroundings for app previews.
-- [Implementing object tracking in your app](implementing-object-tracking-in-your-app.md)
+- [Implementing object tracking in your app](./implementing-object-tracking-in-your-app.md)
   Create engaging interactions by training models to recognize and track real-world objects in people’s surroundings.
-- [Placing entities using head and device transform](placing-entities-using-head-and-device-transform.md)
+- [Placing entities using head and device transform](./placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
-- [Manipulating entities with solid collisions](manipulating-entities-with-solid-collisions.md)
+- [Manipulating entities with solid collisions](./manipulating-entities-with-solid-collisions.md)
   Extend the capabilities of your app by using entities, components, and systems to maintain solid collisions when manipulating entities.
 
 

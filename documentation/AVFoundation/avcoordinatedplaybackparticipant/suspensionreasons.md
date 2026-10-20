@@ -1,7 +1,8 @@
 # suspensionReasons
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reasons a participant isn’t currently participating in coordinated playback.
 
@@ -19,15 +20,20 @@ The reasons a participant isn’t currently participating in coordinated playbac
 var suspensionReasons: [AVCoordinatedPlaybackSuspension.Reason] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * suspensionReasons;
+```
+
 #### Discussion
 
 This value is empty if the participant’s playback isn’t in a suspended state.
 
 ## See Also
 
-- [var identifier: UUID](avcoordinatedplaybackparticipant/identifier.md)
+### Accessing participant status
+- [var identifier: UUID](./identifier.md)
   A unique identifier for the participant.
-- [var isReadyToPlay: Bool](avcoordinatedplaybackparticipant/isreadytoplay.md)
+- [var isReadyToPlay: Bool](./isreadytoplay.md)
   A Boolean value that indicates whether the participant is ready to start coordinated playback.
 
 

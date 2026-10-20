@@ -1,7 +1,8 @@
 # usingNewMetadataOnly
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Only metadata from the new item is used, and metadata from the original item isn’t preserved (default).
 
@@ -20,11 +21,16 @@ Only metadata from the new item is used, and metadata from the original item isn
 static var usingNewMetadataOnly: FileManager.ItemReplacementOptions { get }
 ```
 
+```c
+NSFileManagerItemReplacementUsingNewMetadataOnly
+```
+
 ## See Also
 
-- [init(rawValue: UInt)](filemanager/itemreplacementoptions/init(rawvalue:).md)
+### Using File Replacement Options
+- [init(rawValue: UInt)](./init%28rawvalue%29.md)
   Creates a value for a file replacement operation.
-- [static var withoutDeletingBackupItem: FileManager.ItemReplacementOptions](filemanager/itemreplacementoptions/withoutdeletingbackupitem.md)
+- [static var withoutDeletingBackupItem: FileManager.ItemReplacementOptions](./withoutdeletingbackupitem.md)
   The backup item remains in place after a successful replacement.
 
 

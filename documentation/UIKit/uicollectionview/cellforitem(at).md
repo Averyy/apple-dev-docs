@@ -1,7 +1,8 @@
 # cellForItem(at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the cell object at the index path you specify.
 
@@ -9,13 +10,17 @@ Gets the cell object at the index path you specify.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func cellForItem(at indexPath: IndexPath) -> UICollectionViewCell?
+```
+
+```objc
+- (UICollectionViewCell *) cellForItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
 #### Return Value
@@ -37,17 +42,18 @@ In iOS 15 and later, the collection view retains a prepared cell in the followin
 
 ## See Also
 
-- [func indexPathForItem(at: CGPoint) -> IndexPath?](uicollectionview/indexpathforitem(at:).md)
+### Locating items and views in the collection view
+- [func indexPathForItem(at: CGPoint) -> IndexPath?](./indexpathforitem%28at%29.md)
   Gets the index path of the item at the specified point in the collection view.
-- [var indexPathsForVisibleItems: [IndexPath]](uicollectionview/indexpathsforvisibleitems.md)
+- [var indexPathsForVisibleItems: [IndexPath]](./indexpathsforvisibleitems.md)
   An array of the visible items in the collection view.
-- [func indexPath(for: UICollectionViewCell) -> IndexPath?](uicollectionview/indexpath(for:).md)
+- [func indexPath(for: UICollectionViewCell) -> IndexPath?](./indexpath%28for%29.md)
   Gets the index path of the specified cell.
-- [func indexPathsForVisibleSupplementaryElements(ofKind: String) -> [IndexPath]](uicollectionview/indexpathsforvisiblesupplementaryelements(ofkind:).md)
+- [func indexPathsForVisibleSupplementaryElements(ofKind: String) -> [IndexPath]](./indexpathsforvisiblesupplementaryelements%28ofkind%29.md)
   Gets the index paths of all visible supplementary views of the specified type.
-- [func supplementaryView(forElementKind: String, at: IndexPath) -> UICollectionReusableView?](uicollectionview/supplementaryview(forelementkind:at:).md)
+- [func supplementaryView(forElementKind: String, at: IndexPath) -> UICollectionReusableView?](./supplementaryview%28forelementkind,at%29.md)
   Gets the supplementary view at the specified index path.
-- [func visibleSupplementaryViews(ofKind: String) -> [UICollectionReusableView]](uicollectionview/visiblesupplementaryviews(ofkind:).md)
+- [func visibleSupplementaryViews(ofKind: String) -> [UICollectionReusableView]](./visiblesupplementaryviews%28ofkind%29.md)
   Gets an array of the visible supplementary views of the specified kind.
 
 

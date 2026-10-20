@@ -1,7 +1,8 @@
 # cancel(byProducingResumeData:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels an upload and calls the completion handler with resume data for later use. resumeData will be nil if the server does not support the latest resumable uploads Internet-Draft from the HTTP Working Group, found at https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload/
 
@@ -17,7 +18,15 @@ Cancels an upload and calls the completion handler with resume data for later us
 ## Declaration
 
 ```swift
+func cancel(byProducingResumeData completionHandler: @escaping @Sendable (Data?) -> Void)
+```
+
+```swift
 func cancelByProducingResumeData() async -> Data?
+```
+
+```objc
+- (void) cancelByProducingResumeData:(void (^)(NSData *resumeData)) completionHandler;
 ```
 
 ## Parameters

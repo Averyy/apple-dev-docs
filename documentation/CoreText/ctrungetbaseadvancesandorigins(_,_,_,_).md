@@ -1,7 +1,8 @@
 # CTRunGetBaseAdvancesAndOrigins(_:_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copies a range of base advances and origins into user-provided buffers.
 
@@ -20,11 +21,15 @@ Copies a range of base advances and origins into user-provided buffers.
 func CTRunGetBaseAdvancesAndOrigins(_ runRef: CTRun, _ range: CFRange, _ advancesBuffer: UnsafeMutablePointer<CGSize>?, _ originsBuffer: UnsafeMutablePointer<CGPoint>?)
 ```
 
+```c
+extern void CTRunGetBaseAdvancesAndOrigins(CTRunRef runRef, CFRange range, CGSize advancesBuffer[], CGPoint originsBuffer[]);
+```
+
 #### Discussion
 
 A run’s base advances and origins determine the positions of its glyphs but require additional processing before being used for drawing.
 
-Similar to the advances returned by [`CTRunGetAdvances(_:_:_:)`](ctrungetadvances(_:_:_:).md), base advances are the displacement from the origin of a glyph to the origin of the next glyph, except base advances do not include any positioning the font layout tables may have done relative to another glyph (such as a mark relative to its base).
+Similar to the advances returned by [`CTRunGetAdvances(_:_:_:)`](./ctrungetadvances%28_,_,_%29.md), base advances are the displacement from the origin of a glyph to the origin of the next glyph, except base advances do not include any positioning the font layout tables may have done relative to another glyph (such as a mark relative to its base).
 
 The displacement of the current glyph’s origin from the starting position determines the glyph’s actual position, and the displacement of the current glyph’s base advance from the starting position determines the position of the next glyph.
 
@@ -37,13 +42,15 @@ The displacement of the current glyph’s origin from the starting position dete
 
 ## See Also
 
-- [func CTRunGetAdvances(CTRun, CFRange, UnsafeMutablePointer<CGSize>)](ctrungetadvances(_:_:_:).md)
+### Related Documentation
+- [func CTRunGetAdvances(CTRun, CFRange, UnsafeMutablePointer<CGSize>)](./ctrungetadvances%28_,_,_%29.md)
   Copies a range of glyph advances into a user-provided buffer.
-- [func CTLineGetBoundsWithOptions(CTLine, CTLineBoundsOptions) -> CGRect](ctlinegetboundswithoptions(_:_:).md)
+### Measuring the Glyph Run
+- [func CTLineGetBoundsWithOptions(CTLine, CTLineBoundsOptions) -> CGRect](./ctlinegetboundswithoptions%28_,_%29.md)
   Calculates the bounds for a line.
-- [func CTRunGetTypographicBounds(CTRun, CFRange, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?) -> Double](ctrungettypographicbounds(_:_:_:_:_:).md)
+- [func CTRunGetTypographicBounds(CTRun, CFRange, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?) -> Double](./ctrungettypographicbounds%28_,_,_,_,_%29.md)
   Gets the typographic bounds of the run.
-- [func CTRunGetImageBounds(CTRun, CGContext?, CFRange) -> CGRect](ctrungetimagebounds(_:_:_:).md)
+- [func CTRunGetImageBounds(CTRun, CGContext?, CFRange) -> CGRect](./ctrungetimagebounds%28_,_,_%29.md)
   Calculates the image bounds for a glyph range.
 
 

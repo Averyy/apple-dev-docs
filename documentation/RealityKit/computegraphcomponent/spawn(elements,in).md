@@ -1,7 +1,8 @@
 # spawn(elements:in:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Spawns elements into the particle simulation.
 

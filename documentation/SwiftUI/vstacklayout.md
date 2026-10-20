@@ -1,7 +1,8 @@
 # VStackLayout
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A vertical container that you can use in conditional layouts.
 
@@ -23,38 +24,39 @@ struct VStackLayout
 
 #### Overview
 
-This layout container behaves like a [`VStack`](vstack.md), but conforms to the [`Layout`](layout.md) protocol so you can use it in the conditional layouts that you construct with [`AnyLayout`](anylayout.md). If you don’t need a conditional layout, use [`VStack`](vstack.md) instead.
+This layout container behaves like a [`VStack`](./vstack.md), but conforms to the [`Layout`](./layout.md) protocol so you can use it in the conditional layouts that you construct with [`AnyLayout`](./anylayout.md). If you don’t need a conditional layout, use [`VStack`](./vstack.md) instead.
 
 ## Topics
 
 ### Creating a vertical stack
-- [init(alignment: HorizontalAlignment, spacing: CGFloat?)](vstacklayout/init(alignment:spacing:).md)
+- [init(alignment: HorizontalAlignment, spacing: CGFloat?)](./vstacklayout/init%28alignment,spacing%29.md)
   Creates a vertical stack with the specified spacing and horizontal alignment.
 ### Getting the stack’s properties
-- [var alignment: HorizontalAlignment](vstacklayout/alignment.md)
+- [var alignment: HorizontalAlignment](./vstacklayout/alignment.md)
   The horizontal alignment of subviews.
-- [var spacing: CGFloat?](vstacklayout/spacing.md)
+- [var spacing: CGFloat?](./vstacklayout/spacing.md)
   The distance between adjacent subviews.
 
 ## Relationships
 
 ### Conforms To
-- [Animatable](animatable.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Layout](layout.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Animatable](./animatable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Layout](./layout.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AnyLayout](anylayout.md)
+### Transitioning between layout types
+- [struct AnyLayout](./anylayout.md)
   A type-erased instance of the layout protocol.
-- [struct HStackLayout](hstacklayout.md)
+- [struct HStackLayout](./hstacklayout.md)
   A horizontal container that you can use in conditional layouts.
-- [struct ZStackLayout](zstacklayout.md)
+- [struct ZStackLayout](./zstacklayout.md)
   An overlaying container that you can use in conditional layouts.
-- [struct GridLayout](gridlayout.md)
+- [struct GridLayout](./gridlayout.md)
   A grid that you can use in conditional layouts.
 
 

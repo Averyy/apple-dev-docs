@@ -1,7 +1,8 @@
 # JSONDecoder.NonConformingFloatDecodingStrategy.convertFromString(positiveInfinity:negativeInfinity:nan:)
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The strategy that decodes exceptional floating-point values from a specified string representation.
 
@@ -22,7 +23,8 @@ case convertFromString(positiveInfinity: String, negativeInfinity: String, nan: 
 
 ## See Also
 
-- [JSONDecoder.NonConformingFloatDecodingStrategy.throw](jsondecoder/nonconformingfloatdecodingstrategy-swift.enum/throw.md)
+### Exceptional Values
+- [JSONDecoder.NonConformingFloatDecodingStrategy.throw](./throw.md)
   The strategy that throws an error upon decoding an exceptional floating-point value.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image to use as an input image.
@@ -11,7 +12,7 @@ The image to use as an input image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,14 +21,19 @@ The image to use as an input image.
 var inputImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage;
+```
+
 ## See Also
 
-- [var insetPoint0: CGPoint](cidroste/insetpoint0.md)
-- [var insetPoint1: CGPoint](cidroste/insetpoint1.md)
-- [var periodicity: Float](cidroste/periodicity.md)
-- [var rotation: Float](cidroste/rotation.md)
-- [var strands: Float](cidroste/strands.md)
-- [var zoom: Float](cidroste/zoom.md)
+### Instance Properties
+- [var insetPoint0: CGPoint](./insetpoint0.md)
+- [var insetPoint1: CGPoint](./insetpoint1.md)
+- [var periodicity: Float](./periodicity.md)
+- [var rotation: Float](./rotation.md)
+- [var strands: Float](./strands.md)
+- [var zoom: Float](./zoom.md)
 
 
 ---

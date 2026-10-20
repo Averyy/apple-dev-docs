@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFWDCLOpDynamicFlag](1645964-anonymous/kfwdclopdynamicflag.md)
-- [kFWDCLOpFlagMask](1645964-anonymous/kfwdclopflagmask.md)
-- [kFWDCLOpFlagPhase](1645964-anonymous/kfwdclopflagphase.md)
-- [kFWDCLOpVendorDefinedFlag](1645964-anonymous/kfwdclopvendordefinedflag.md)
+- [kFWDCLOpDynamicFlag](./api-1645964-anonymous/kfwdclopdynamicflag.md)
+- [kFWDCLOpFlagMask](./api-1645964-anonymous/kfwdclopflagmask.md)
+- [kFWDCLOpFlagPhase](./api-1645964-anonymous/kfwdclopflagphase.md)
+- [kFWDCLOpVendorDefinedFlag](./api-1645964-anonymous/kfwdclopvendordefinedflag.md)
 
 
 ---

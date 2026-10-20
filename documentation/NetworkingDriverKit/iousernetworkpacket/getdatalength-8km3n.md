@@ -1,16 +1,17 @@
 # GetDataLength
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the number of bytes of data in the packet.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t GetDataLength(uint32_t *length) const;
 ```
 
@@ -24,13 +25,14 @@ virtual kern_return_t GetDataLength(uint32_t *length) const;
 
 ## See Also
 
-- [GetHeadroom](iousernetworkpacket/getheadroom.md)
+### Getting the Packet Information
+- [GetHeadroom](./getheadroom.md)
   Gets the number of bytes reserved at the front of the packet’s buffer.
-- [GetLinkHeaderLength](iousernetworkpacket/getlinkheaderlength-8dlhu.md)
+- [GetLinkHeaderLength](./getlinkheaderlength-8dlhu.md)
   Gets the number of bytes to use for the link header.
-- [GetDataOffset](iousernetworkpacket/getdataoffset-4tw7y.md)
+- [GetDataOffset](./getdataoffset-4tw7y.md)
   Gets the offset to the beginning of the packet’s data.
-- [GetMemorySegmentOffset](iousernetworkpacket/getmemorysegmentoffset-39e4c.md)
+- [GetMemorySegmentOffset](./getmemorysegmentoffset-39e4c.md)
   Gets the offset to the beginning of the packet in the corresponding memory buffer.
 
 

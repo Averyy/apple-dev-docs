@@ -1,7 +1,8 @@
 # standard
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard prominence of a background
 
@@ -26,7 +27,8 @@ This is the default level of prominence and doesn’t require any adjustment to 
 
 ## See Also
 
-- [static let increased: BackgroundProminence](backgroundprominence/increased.md)
+### Getting background prominence
+- [static let increased: BackgroundProminence](./increased.md)
   A more prominent background that likely requires some changes to the views above it.
 
 

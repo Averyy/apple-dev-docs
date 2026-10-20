@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,17 +18,17 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [StandardUSB::kSuperSpeedDeviceCapability5Gb](3793788-anonymous/standardusb_ksuperspeeddevicecapability5gb.md)
-- [StandardUSB::kSuperSpeedDeviceCapabilityFullSpeed](3793788-anonymous/standardusb_ksuperspeeddevicecapabilityfullspeed.md)
-- [StandardUSB::kSuperSpeedDeviceCapabilityHighSpeed](3793788-anonymous/standardusb_ksuperspeeddevicecapabilityhighspeed.md)
-- [StandardUSB::kSuperSpeedDeviceCapabilityLTM](3793788-anonymous/standardusb_ksuperspeeddevicecapabilityltm.md)
-- [StandardUSB::kSuperSpeedDeviceCapabilityLowSpeed](3793788-anonymous/standardusb_ksuperspeeddevicecapabilitylowspeed.md)
-- [StandardUSB::kSuperSpeedDeviceCapabilitySupport5Gb](3793788-anonymous/standardusb_ksuperspeeddevicecapabilitysupport5gb.md)
-- [StandardUSB::kSuperSpeedDeviceCapabilitySupportFullSpeed](3793788-anonymous/standardusb_ksuperspeeddevicecapabilitysupportfullspeed.md)
-- [StandardUSB::kSuperSpeedDeviceCapabilitySupportHighSpeed](3793788-anonymous/standardusb_ksuperspeeddevicecapabilitysupporthighspeed.md)
-- [StandardUSB::kSuperSpeedDeviceCapabilitySupportLowSpeed](3793788-anonymous/standardusb_ksuperspeeddevicecapabilitysupportlowspeed.md)
-- [StandardUSB::kSuperSpeedDeviceCapabilityU1DevExitLatMax](3793788-anonymous/standardusb_ksuperspeeddevicecapabilityu1devexitlatmax.md)
-- [StandardUSB::kSuperSpeedDeviceCapabilityU2DevExitLatMax](3793788-anonymous/standardusb_ksuperspeeddevicecapabilityu2devexitlatmax.md)
+- [StandardUSB::kSuperSpeedDeviceCapability5Gb](./api-3793788-anonymous/standardusb_ksuperspeeddevicecapability5gb.md)
+- [StandardUSB::kSuperSpeedDeviceCapabilityFullSpeed](./api-3793788-anonymous/standardusb_ksuperspeeddevicecapabilityfullspeed.md)
+- [StandardUSB::kSuperSpeedDeviceCapabilityHighSpeed](./api-3793788-anonymous/standardusb_ksuperspeeddevicecapabilityhighspeed.md)
+- [StandardUSB::kSuperSpeedDeviceCapabilityLTM](./api-3793788-anonymous/standardusb_ksuperspeeddevicecapabilityltm.md)
+- [StandardUSB::kSuperSpeedDeviceCapabilityLowSpeed](./api-3793788-anonymous/standardusb_ksuperspeeddevicecapabilitylowspeed.md)
+- [StandardUSB::kSuperSpeedDeviceCapabilitySupport5Gb](./api-3793788-anonymous/standardusb_ksuperspeeddevicecapabilitysupport5gb.md)
+- [StandardUSB::kSuperSpeedDeviceCapabilitySupportFullSpeed](./api-3793788-anonymous/standardusb_ksuperspeeddevicecapabilitysupportfullspeed.md)
+- [StandardUSB::kSuperSpeedDeviceCapabilitySupportHighSpeed](./api-3793788-anonymous/standardusb_ksuperspeeddevicecapabilitysupporthighspeed.md)
+- [StandardUSB::kSuperSpeedDeviceCapabilitySupportLowSpeed](./api-3793788-anonymous/standardusb_ksuperspeeddevicecapabilitysupportlowspeed.md)
+- [StandardUSB::kSuperSpeedDeviceCapabilityU1DevExitLatMax](./api-3793788-anonymous/standardusb_ksuperspeeddevicecapabilityu1devexitlatmax.md)
+- [StandardUSB::kSuperSpeedDeviceCapabilityU2DevExitLatMax](./api-3793788-anonymous/standardusb_ksuperspeeddevicecapabilityu2devexitlatmax.md)
 
 
 ---

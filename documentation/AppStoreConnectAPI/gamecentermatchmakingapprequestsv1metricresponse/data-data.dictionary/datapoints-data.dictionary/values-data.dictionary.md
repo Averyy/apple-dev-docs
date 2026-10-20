@@ -1,7 +1,8 @@
 # GameCenterMatchmakingAppRequestsV1MetricResponse.Data.DataPoints.Values
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The values of the data points.
 
@@ -10,7 +11,7 @@ The values of the data points.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingAppRequestsV1MetricResponse.Data.DataPoints.Values
 ```
 

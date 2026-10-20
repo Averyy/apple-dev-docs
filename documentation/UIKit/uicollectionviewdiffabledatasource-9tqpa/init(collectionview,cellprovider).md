@@ -1,7 +1,8 @@
 # init(collectionView:cellProvider:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a diffable data source with the specified cell provider, and connects it to the specified collection view.
 
@@ -10,7 +11,7 @@ Creates a diffable data source with the specified cell provider, and connects it
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -37,7 +38,8 @@ dataSource = UICollectionViewDiffableDataSource<Int, UUID>(collectionView: colle
 
 ## See Also
 
-- [UICollectionViewDiffableDataSource.CellProvider](uicollectionviewdiffabledatasource-9tqpa/cellprovider.md)
+### Creating a diffable data source
+- [UICollectionViewDiffableDataSource.CellProvider](./cellprovider.md)
   A closure that configures and returns a cell for a collection view from its diffable data source.
 
 

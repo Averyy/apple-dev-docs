@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Social  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The destination URL for this request.
 
@@ -17,19 +18,24 @@ The destination URL for this request.
 var url: URL! { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSURL * URL;
+```
+
 #### Discussion
 
-Use this property to look up the URL of the HTTP request that was set in [`init(forServiceType:requestMethod:url:parameters:)`](slrequest/init(forservicetype:requestmethod:url:parameters:)-2cnf1.md). Possible values are dependent on the target service and are documented by the service provider. For links to documentation for the supported services, see Table 1 in [`SLRequest`](slrequest.md).
+Use this property to look up the URL of the HTTP request that was set in [`init(forServiceType:requestMethod:url:parameters:)`](./init%28forservicetype,requestmethod,url,parameters%29-2cnf1.md). Possible values are dependent on the target service and are documented by the service provider. For links to documentation for the supported services, see Table 1 in [`SLRequest`](../slrequest.md).
 
 ## See Also
 
-- [func preparedURLRequest() -> URLRequest!](slrequest/preparedurlrequest.md)
-  Returns an authorized URL request that can be sent using an [`NSURLConnection`](https://developer.apple.com/documentation/foundation/nsurlconnection) object.
-- [var requestMethod: SLRequestMethod](slrequest/requestmethod.md)
+### Getting the Request Details
+- [func preparedURLRequest() -> URLRequest!](./preparedurlrequest%28%29.md)
+  Returns an authorized URL request that can be sent using an [`NSURLConnection`](../../Foundation/nsurlconnection.md) object.
+- [var requestMethod: SLRequestMethod](./requestmethod.md)
   The method to use for this request.
-- [enum SLRequestMethod](slrequestmethod.md)
+- [enum SLRequestMethod](../slrequestmethod.md)
   Indicates the request method used in the request.
-- [var parameters: [AnyHashable : Any]!](slrequest/parameters.md)
+- [var parameters: [AnyHashable : Any]!](./parameters.md)
   The parameters for this request.
 
 

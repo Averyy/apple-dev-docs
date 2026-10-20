@@ -1,7 +1,8 @@
 # valueDescription
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The description that all sequence elements must match.
 
@@ -20,9 +21,14 @@ The description that all sequence elements must match.
 var valueDescription: MLFeatureDescription { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MLFeatureDescription * valueDescription;
+```
+
 ## See Also
 
-- [var countRange: NSRange](mlsequenceconstraint/countrange.md)
+### Accessing the constraints
+- [var countRange: NSRange](./countrange.md)
   The range of values allowed for the sequence’s length.
 
 

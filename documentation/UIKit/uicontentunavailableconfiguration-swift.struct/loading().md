@@ -1,7 +1,8 @@
 # loading()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates the default configuration for content that’s loading.
 
@@ -10,7 +11,7 @@ Creates the default configuration for content that’s loading.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

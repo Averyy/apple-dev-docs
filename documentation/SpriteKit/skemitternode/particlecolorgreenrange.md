@@ -1,23 +1,28 @@
 # particleColorGreenRange
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of allowed random values for the green component of a particle’s initial color.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var particleColorGreenRange: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat particleColorGreenRange;
 ```
 
 #### Discussion
@@ -26,23 +31,24 @@ The default value is `0.0`. If non-zero, the starting green component of a parti
 
 ## See Also
 
-- [var particleColorSequence: SKKeyframeSequence?](skemitternode/particlecolorsequence.md)
+### Configuring Particle Color
+- [var particleColorSequence: SKKeyframeSequence?](./particlecolorsequence.md)
   The sequence used to specify the color components of a particle over its lifetime.
-- [var particleColor: UIColor](skemitternode/particlecolor.md)
+- [var particleColor: UIColor](./particlecolor.md)
   The average initial color for a particle.
-- [var particleColorAlphaRange: CGFloat](skemitternode/particlecoloralpharange.md)
+- [var particleColorAlphaRange: CGFloat](./particlecoloralpharange.md)
   The range of allowed random values for the alpha component of a particle’s initial color.
-- [var particleColorBlueRange: CGFloat](skemitternode/particlecolorbluerange.md)
+- [var particleColorBlueRange: CGFloat](./particlecolorbluerange.md)
   The range of allowed random values for the blue component of a particle’s initial color.
-- [var particleColorRedRange: CGFloat](skemitternode/particlecolorredrange.md)
+- [var particleColorRedRange: CGFloat](./particlecolorredrange.md)
   The range of allowed random values for the red component of a particle’s initial color.
-- [var particleColorAlphaSpeed: CGFloat](skemitternode/particlecoloralphaspeed.md)
+- [var particleColorAlphaSpeed: CGFloat](./particlecoloralphaspeed.md)
   The rate at which the alpha component of a particle’s color changes per second.
-- [var particleColorBlueSpeed: CGFloat](skemitternode/particlecolorbluespeed.md)
+- [var particleColorBlueSpeed: CGFloat](./particlecolorbluespeed.md)
   The rate at which the blue component of a particle’s color changes per second.
-- [var particleColorGreenSpeed: CGFloat](skemitternode/particlecolorgreenspeed.md)
+- [var particleColorGreenSpeed: CGFloat](./particlecolorgreenspeed.md)
   The rate at which the green component of a particle’s color changes per second.
-- [var particleColorRedSpeed: CGFloat](skemitternode/particlecolorredspeed.md)
+- [var particleColorRedSpeed: CGFloat](./particlecolorredspeed.md)
   The rate at which the red component of a particle’s color changes per second.
 
 

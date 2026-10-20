@@ -1,7 +1,8 @@
 # replaceSubrange(_:with:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the specified subrange of elements with the given collection.
 
@@ -19,6 +20,8 @@ Replaces the specified subrange of elements with the given collection.
 ```swift
 mutating func replaceSubrange<C>(_ subRange: Range<Slice<Base>.Index>, with newElements: C) where C : Collection, Base.Element == C.Element
 ```
+
+Available when `Base` conforms to `RangeReplaceableCollection`.
 
 #### Discussion
 
@@ -39,7 +42,7 @@ Likewise, if you pass a zero-length collection as the `newElements` parameter, t
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(*n* + *m*), where *n* is length of this collection and *m* is the length of `newElements`. If the call to this method simply appends the contents of `newElements` to the collection, this method is equivalent to `append(contentsOf:)`.
+> **Complexity**: O(*n* + *m*), where *n* is length of this collection and *m* is the length of `newElements`. If the call to this method simply appends the contents of `newElements` to the collection, this method is equivalent to `append(contentsOf:)`.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # cmColorSpaceClass
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A color space profile.
 

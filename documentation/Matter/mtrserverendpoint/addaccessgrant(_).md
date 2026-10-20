@@ -1,7 +1,8 @@
 # addAccessGrant(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 func addAccessGrant(_ accessGrant: MTRAccessGrant)
+```
+
+```objc
+- (void) addAccessGrant:(MTRAccessGrant *) accessGrant;
 ```
 
 

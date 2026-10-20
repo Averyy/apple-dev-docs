@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an MPSGraphTensorData with an MPS ndarray.
 
@@ -17,6 +18,10 @@ Initializes an MPSGraphTensorData with an MPS ndarray.
 
 ```swift
 init(_ ndarray: MPSNDArray)
+```
+
+```objc
+- (instancetype) initWithMPSNDArray:(MPSNDArray *) ndarray;
 ```
 
 #### Return Value

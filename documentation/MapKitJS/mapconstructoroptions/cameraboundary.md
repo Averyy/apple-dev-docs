@@ -1,7 +1,8 @@
 # cameraBoundary
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The boundary of the area within which the map view’s center needs to remain.
 
@@ -10,13 +11,13 @@ The boundary of the area within which the map view’s center needs to remain.
 
 ## Declaration
 
-```swift
+```
 cameraBoundary?: CoordinateRegionData | MapRectData | null;
 ```
 
 #### Discussion
 
-This property requires either a [`CoordinateRegion`](coordinateregion.md) or a [`MapRect`](maprect.md) instance as a value.
+This property requires either a [`CoordinateRegion`](../coordinateregion.md) or a [`MapRect`](../maprect.md) instance as a value.
 
 
 ---

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of a driving privilege code.
 

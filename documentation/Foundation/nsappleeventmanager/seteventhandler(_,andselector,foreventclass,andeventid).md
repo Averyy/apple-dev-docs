@@ -1,7 +1,8 @@
 # setEventHandler(_:andSelector:forEventClass:andEventID:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers the Apple event handler specified by `handler` for the event specified by `eventClass` and `eventID`.
 
@@ -15,6 +16,10 @@ Registers the Apple event handler specified by `handler` for the event specified
 func setEventHandler(_ handler: Any, andSelector handleEventSelector: Selector, forEventClass eventClass: AEEventClass, andEventID eventID: AEEventID)
 ```
 
+```objc
+- (void) setEventHandler:(id) handler andSelector:(SEL) handleEventSelector forEventClass:(AEEventClass) eventClass andEventID:(AEEventID) eventID;
+```
+
 #### Discussion
 
 If an event handler is already registered for the specified event class and event ID, removes it. The signature for `handler` should match the following:
@@ -25,7 +30,8 @@ If an event handler is already registered for the specified event class and even
 
 ## See Also
 
-- [func removeEventHandler(forEventClass: AEEventClass, andEventID: AEEventID)](nsappleeventmanager/removeeventhandler(foreventclass:andeventid:).md)
+### Working with event handlers
+- [func removeEventHandler(forEventClass: AEEventClass, andEventID: AEEventID)](./removeeventhandler%28foreventclass,andeventid%29.md)
   If an Apple event handler has been registered for the event specified by `eventClass` and `eventID`, removes it.
 
 

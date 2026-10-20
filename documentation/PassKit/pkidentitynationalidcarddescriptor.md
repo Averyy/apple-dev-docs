@@ -1,7 +1,8 @@
 # PKIdentityNationalIDCardDescriptor
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object for requesting information from a user’s national ID card.
 
@@ -17,14 +18,18 @@ An object for requesting information from a user’s national ID card.
 class PKIdentityNationalIDCardDescriptor
 ```
 
+```objc
+@interface PKIdentityNationalIDCardDescriptor : NSObject
+```
+
 ## Mentions
 
-- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
-- [Configuring your environment for the Verify with Wallet API](configuring-your-environment-for-the-verify-with-wallet-api.md)
+- [Requesting identity data from a Wallet pass](./requesting-identity-data-from-a-wallet-pass.md)
+- [Configuring your environment for the Verify with Wallet API](./configuring-your-environment-for-the-verify-with-wallet-api.md)
 
 #### Discussion
 
-For the elements you request, the response contains the corresponding elements present in the user’s identity document. The table below maps the elements you request using [`PKIdentityElement`](pkidentityelement.md) with the ISO and JP namespace in the response.
+For the elements you request, the response contains the corresponding elements present in the user’s identity document. The table below maps the elements you request using [`PKIdentityElement`](./pkidentityelement.md) with the ISO and JP namespace in the response.
 
 > **Note**:  You can retrieve elements specific to Japan only when you have set the API region to `JP`.
 
@@ -46,56 +51,57 @@ This API requires a special entitlement issued by Apple. After you receive the e
 2. In the `entitlements.plist` for the entitlement, add a new document-types item.
 3. Add a new element string.
 
-Building an app with this entitlement requires macOS 13 or later. For more information about the entitlement, see [`Getting started with the Verify with Wallet API`](https://developer.apple.comhttps://developer.apple.com/wallet/get-started-with-verify-with-wallet/).
+Building an app with this entitlement requires macOS 13 or later. For more information about the entitlement, see [Getting started with the Verify with Wallet API](https://developer.apple.com/wallet/get-started-with-verify-with-wallet/).
 
 ## Topics
 
 ### Setting region information
-- [var region: Locale.Region?](pkidentitynationalidcarddescriptor/region.md)
+- [var region: Locale.Region?](./pkidentitynationalidcarddescriptor/region.md)
   A string used to specify the region associated with the ID.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [PKIdentityDocumentDescriptor](pkidentitydocumentdescriptor.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [PKIdentityDocumentDescriptor](./pkidentitydocumentdescriptor.md)
 
 ## See Also
 
-- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
+### Identity passes and authorization
+- [Requesting identity data from a Wallet pass](./requesting-identity-data-from-a-wallet-pass.md)
   Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
-- [Configuring your environment for the Verify with Wallet API](configuring-your-environment-for-the-verify-with-wallet-api.md)
+- [Configuring your environment for the Verify with Wallet API](./configuring-your-environment-for-the-verify-with-wallet-api.md)
   Set up your environment to use Verify with Wallet.
-- [Verifying Wallet identity requests](verifying-wallet-identity-requests.md)
+- [Verifying Wallet identity requests](./verifying-wallet-identity-requests.md)
   Decrypt and verify an in-app presentment request on your server.
-- [class PKIdentityPhotoIDDescriptor](pkidentityphotoiddescriptor.md)
+- [class PKIdentityPhotoIDDescriptor](./pkidentityphotoiddescriptor.md)
   An object you use to request information from a user’s photo ID or equivalent document.
-- [class PKIdentityAnyOfDescriptor](pkidentityanyofdescriptor.md)
+- [class PKIdentityAnyOfDescriptor](./pkidentityanyofdescriptor.md)
   An object you use to request information from multiple identity documents.
-- [class PKIdentityDriversLicenseDescriptor](pkidentitydriverslicensedescriptor.md)
+- [class PKIdentityDriversLicenseDescriptor](./pkidentitydriverslicensedescriptor.md)
   An object for requesting information from a user’s driver’s license or equivalent document.
-- [class PKAddIdentityDocumentMetadata](pkaddidentitydocumentmetadata.md)
+- [class PKAddIdentityDocumentMetadata](./pkaddidentitydocumentmetadata.md)
   The object for specifying the metadata necessary to provision identity documents.
-- [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
+- [class PKAddIdentityDocumentConfiguration](./pkaddidentitydocumentconfiguration.md)
   Configuration to define the identity document.
-- [enum PKAddIdentityDocumentType](pkaddidentitydocumenttype.md)
+- [enum PKAddIdentityDocumentType](./pkaddidentitydocumenttype.md)
   Classifications that reflect the type of identity document.
-- [struct JPKIPassContents](jpkipasscontents.md)
+- [struct JPKIPassContents](./jpkipasscontents.md)
   A set of actions for viewing and updating PINs, passwords, and signing abilities associated with digital identities on the JPKI applet.
-- [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
+- [class PKAddIdentityDocumentConfiguration](./pkaddidentitydocumentconfiguration.md)
   Configuration to define the identity document.
-- [class PKAddPassMetadataPreview](pkaddpassmetadatapreview.md)
+- [class PKAddPassMetadataPreview](./pkaddpassmetadatapreview.md)
   A preview object that contains information representing the pass you add to Wallet.
-- [class PKIdentityDocumentMetadata](pkidentitydocumentmetadata.md)
+- [class PKIdentityDocumentMetadata](./pkidentitydocumentmetadata.md)
   A set of configured metadata that defines the required information to add the corresponding pass to Wallet.
-- [class PKJapanIndividualNumberCardMetadata](pkjapanindividualnumbercardmetadata.md)
+- [class PKJapanIndividualNumberCardMetadata](./pkjapanindividualnumbercardmetadata.md)
   A class that contains metadata indicating the specific product instance to provision.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: subscript  
+**Role**: Instance Subscript  
 **Required**: Yes
 
 **Availability**:
@@ -9,7 +10,7 @@
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

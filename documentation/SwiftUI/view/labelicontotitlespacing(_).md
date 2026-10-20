@@ -1,7 +1,8 @@
 # labelIconToTitleSpacing(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the spacing between the icon and title in labels.
 
@@ -27,7 +28,8 @@ Use this modifier to set the value that should be used for the icon-to-title spa
 
 ## See Also
 
-- [func labelReservedIconWidth(CGFloat) -> some View](view/labelreservediconwidth(_:).md)
+### Configuring a Label
+- [func labelReservedIconWidth(CGFloat) -> some View](./labelreservediconwidth%28_%29.md)
   Set the width reserved for icons in labels.
 
 

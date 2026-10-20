@@ -1,7 +1,8 @@
 # localParticipantState
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current participant’s level of support for an activity that takes place in a shared simulation space.
 
@@ -16,7 +17,7 @@ final var localParticipantState: SystemCoordinator.ParticipantState { get }
 
 ## Mentions
 
-- [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
+- [Adding spatial Persona support to an activity](../adding-spatial-persona-support-to-an-activity.md)
 
 #### Discussion
 
@@ -26,10 +27,11 @@ This property reflects only the state of the current participant. When this prop
 
 ## See Also
 
-- [var remoteParticipantStates: [Participant : SystemCoordinator.ParticipantState]](systemcoordinator/remoteparticipantstates.md)
-- [var localParticipantStates: SystemCoordinator.ParticipantStates](systemcoordinator/localparticipantstates.md)
+### Getting the participant state
+- [var remoteParticipantStates: [Participant : SystemCoordinator.ParticipantState]](./remoteparticipantstates.md)
+- [var localParticipantStates: SystemCoordinator.ParticipantStates](./localparticipantstates.md)
   An asynchronous sequence that reports changes to the local participant’s state.
-- [SystemCoordinator.ParticipantStates](systemcoordinator/participantstates.md)
+- [SystemCoordinator.ParticipantStates](./participantstates.md)
   An asynchronous sequence that reports the current person’s ability to participate in a shared context.
 
 

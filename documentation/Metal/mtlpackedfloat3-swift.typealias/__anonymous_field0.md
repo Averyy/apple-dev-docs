@@ -1,17 +1,24 @@
 # __Anonymous_field0
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+
+> **Deprecated**: refer to the members of the anonymous type instead
 
 ## Declaration
+
+```swift
+var __Anonymous_field0: _MTLPackedFloat3.__Unnamed_union___Anonymous_field0
+```
 
 ```swift
 var __Anonymous_field0: _MTLPackedFloat3.__Unnamed_union___Anonymous_field0.__Unnamed_struct___Anonymous_field0 { get set }

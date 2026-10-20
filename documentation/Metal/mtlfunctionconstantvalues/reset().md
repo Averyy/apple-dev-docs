@@ -1,7 +1,8 @@
 # reset()
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes all previously set constant values.
 
@@ -17,6 +18,10 @@ Deletes all previously set constant values.
 
 ```swift
 func reset()
+```
+
+```objc
+- (void) reset;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # heartRate(zone:)
 
 **Framework**: WorkoutKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new alert for the specified heart rate zone.
 
@@ -18,17 +19,20 @@ Creates a new alert for the specified heart rate zone.
 static func heartRate(zone: Int) -> Self
 ```
 
+Available when `Self` is `HeartRateZoneAlert`.
+
 ## Parameters
 
 - `zone`: The target heart rate zone.
 
 ## See Also
 
-- [static func heartRate(ClosedRange<Double>, unit: UnitFrequency) -> Self](workoutalert/heartrate(_:unit:).md)
+### Creating heart rate alerts
+- [static func heartRate(ClosedRange<Double>, unit: UnitFrequency) -> Self](./heartrate%28_,unit%29.md)
   Creates a new heart rate alert for the target range.
-- [struct HeartRateRangeAlert](heartraterangealert.md)
+- [struct HeartRateRangeAlert](../heartraterangealert.md)
   An alert for a range of heart rates.
-- [struct HeartRateZoneAlert](heartratezonealert.md)
+- [struct HeartRateZoneAlert](../heartratezonealert.md)
   An alert for a heart rate zone.
 
 

@@ -1,7 +1,8 @@
 # SKOverlay
 
 **Framework**: StoreKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that displays an overlay you can use to recommend another app or an App Clip’s corresponding full app.
 
@@ -17,22 +18,26 @@ A class that displays an overlay you can use to recommend another app or an App 
 class SKOverlay
 ```
 
+```objc
+@interface SKOverlay : NSObject
+```
+
 ## Mentions
 
-- [Receiving ad attributions and postbacks](receiving-ad-attributions-and-postbacks.md)
-- [Signing and providing ads](signing-and-providing-ads.md)
+- [Receiving ad attributions and postbacks](./receiving-ad-attributions-and-postbacks.md)
+- [Signing and providing ads](./signing-and-providing-ads.md)
 
 #### Overview
 
-By displaying an overlay, you can recommend another app to users and enable them to download it immediately. To recommend media that’s not an app, or to display a product page within your app, use [`SKStoreProductViewController`](skstoreproductviewcontroller.md).
+By displaying an overlay, you can recommend another app to users and enable them to download it immediately. To recommend media that’s not an app, or to display a product page within your app, use [`SKStoreProductViewController`](./skstoreproductviewcontroller.md).
 
-> ❗ **Important**:  If you display an overlay in your App Clip, you may only recommend the App Clip’s corresponding full app and need to initialize the overlay with an [`SKOverlay.AppClipConfiguration`](skoverlay/appclipconfiguration.md) object. For more information, see [`Recommending your app to App Clip users`](https://developer.apple.com/documentation/appclip/recommending-your-app-to-app-clip-users).
+> ❗ **Important**:  If you display an overlay in your App Clip, you may only recommend the App Clip’s corresponding full app and need to initialize the overlay with an [`SKOverlay.AppClipConfiguration`](./skoverlay/appclipconfiguration.md) object. For more information, see [Recommending your app to App Clip users](../AppClip/recommending-your-app-to-app-clip-users.md).
 
-If you’re using SwiftUI, make use of the `appStoreOverlay(isPresented:configuration:)` modifier. For example usage, see [`Fruta: Building a feature-rich app with SwiftUI`](https://developer.apple.com/documentation/appclip/fruta-building-a-feature-rich-app-with-swiftui).
+If you’re using SwiftUI, make use of the `appStoreOverlay(isPresented:configuration:)` modifier. For example usage, see [Fruta: Building a feature-rich app with SwiftUI](../AppClip/fruta-building-a-feature-rich-app-with-swiftui.md).
 
-To display an App Store overlay in an app that uses [`UIKit`](https://developer.apple.com/documentation/uikit):
+To display an App Store overlay in an app that uses [UIKit](../UIKit/UIKit.md):
 
-1. Create an [`SKOverlay.AppConfiguration`](skoverlay/appconfiguration.md) with the iTunes identifier of the app you want to recommend.
+1. Create an [`SKOverlay.AppConfiguration`](./skoverlay/appconfiguration.md) with the iTunes identifier of the app you want to recommend.
 2. Initialize `SKOverlay` with the configuration object.
 3. Present the overlay.
 
@@ -48,52 +53,53 @@ func displayOverlay() {
 }
 ```
 
-To respond to the overlay’s appearance, dismissal, or failure to load, set the [`delegate`](skoverlay/delegate.md) and implement the methods defined in [`SKOverlayDelegate`](skoverlaydelegate.md).
+To respond to the overlay’s appearance, dismissal, or failure to load, set the [`delegate`](./skoverlay/delegate.md) and implement the methods defined in [`SKOverlayDelegate`](./skoverlaydelegate.md).
 
 > **Note**:  App extensions can’t display an overlay.
 
 ## Topics
 
 ### Creating an overlay
-- [init(configuration: SKOverlay.Configuration)](skoverlay/init(configuration:).md)
+- [init(configuration: SKOverlay.Configuration)](./skoverlay/init%28configuration%29.md)
   Creates an overlay you use to recommend another app on the App Store.
-- [var configuration: SKOverlay.Configuration](skoverlay/configuration-swift.property.md)
+- [var configuration: SKOverlay.Configuration](./skoverlay/configuration-swift.property.md)
   An overlay’s attributes; for example, its position on the screen.
-- [SKOverlay.AppConfiguration](skoverlay/appconfiguration.md)
+- [SKOverlay.AppConfiguration](./skoverlay/appconfiguration.md)
   An object that represents the attributes of an overlay you use to recommend another app on the App Store.
-- [SKOverlay.AppClipConfiguration](skoverlay/appclipconfiguration.md)
+- [SKOverlay.AppClipConfiguration](./skoverlay/appclipconfiguration.md)
   An object that represents the attributes of an overlay you use to recommend an App Clip’s corresponding full app.
-- [SKOverlay.Configuration](skoverlay/configuration-swift.class.md)
+- [SKOverlay.Configuration](./skoverlay/configuration-swift.class.md)
   The abstract superclass for all classes that represent an overlay’s attributes.
 ### Presenting an overlay
-- [func present(in: UIWindowScene)](skoverlay/present(in:).md)
+- [func present(in: UIWindowScene)](./skoverlay/present%28in%29.md)
   Presents an overlay in a window scene.
 ### Dismissing an overlay
-- [class func dismiss(in: UIWindowScene)](skoverlay/dismiss(in:).md)
+- [class func dismiss(in: UIWindowScene)](./skoverlay/dismiss%28in%29.md)
   Dismisses an App Store overlay.
 ### Setting a delegate
-- [var delegate: (any SKOverlayDelegate)?](skoverlay/delegate.md)
+- [var delegate: (any SKOverlayDelegate)?](./skoverlay/delegate.md)
   The overlay’s delegate.
-- [protocol SKOverlayDelegate](skoverlaydelegate.md)
+- [protocol SKOverlayDelegate](./skoverlaydelegate.md)
   Methods for responding to the overlay’s appearance, dismissal, or failure to load.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Offering media for sale in your app](offering-media-for-sale-in-your-app.md)
+### Recommendations
+- [Offering media for sale in your app](./offering-media-for-sale-in-your-app.md)
   Allow users to purchase media in the App Store from within your app.
-- [class SKStoreProductViewController](skstoreproductviewcontroller.md)
+- [class SKStoreProductViewController](./skstoreproductviewcontroller.md)
   A view controller that provides a page where customers can purchase media from the App Store.
 
 

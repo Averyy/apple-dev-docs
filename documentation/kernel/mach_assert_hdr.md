@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct mach_assert_hdr {
     ...
 };
@@ -17,9 +17,9 @@ struct mach_assert_hdr {
 ## Topics
 
 ### Instance Properties
-- [filename](mach_assert_hdr/4540730-filename.md)
-- [lineno](mach_assert_hdr/4540731-lineno.md)
-- [type](mach_assert_hdr/4540732-type.md)
+- [filename](./mach_assert_hdr/api-4540730-filename.md)
+- [lineno](./mach_assert_hdr/api-4540731-lineno.md)
+- [type](./mach_assert_hdr/api-4540732-type.md)
 
 
 ---

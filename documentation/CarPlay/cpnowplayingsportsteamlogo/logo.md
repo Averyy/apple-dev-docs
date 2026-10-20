@@ -1,7 +1,8 @@
 # logo
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A team logo image for this team.
 
@@ -15,6 +16,10 @@ A team logo image for this team.
 ```swift
 @NSCopying
 var logo: UIImage? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) UIImage * logo;
 ```
 
 

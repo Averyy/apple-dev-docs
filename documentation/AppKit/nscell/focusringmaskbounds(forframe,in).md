@@ -1,7 +1,8 @@
 # focusRingMaskBounds(forFrame:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the bounds of the focus ring mask.
 
@@ -12,6 +13,10 @@ Returns the bounds of the focus ring mask.
 
 ```swift
 func focusRingMaskBounds(forFrame cellFrame: NSRect, in controlView: NSView) -> NSRect
+```
+
+```objc
+- (NSRect) focusRingMaskBoundsForFrame:(NSRect) cellFrame inView:(NSView *) controlView;
 ```
 
 #### Return Value
@@ -31,11 +36,12 @@ The default implementation returns an empty value. Subclasses are expected to im
 
 ## See Also
 
-- [func drawFocusRingMask(withFrame: NSRect, in: NSView)](nscell/drawfocusringmask(withframe:in:).md)
+### Managing Focus Rings
+- [func drawFocusRingMask(withFrame: NSRect, in: NSView)](./drawfocusringmask%28withframe,in%29.md)
   Draws the focus ring for the control.
-- [class var defaultFocusRingType: NSFocusRingType](nscell/defaultfocusringtype.md)
+- [class var defaultFocusRingType: NSFocusRingType](./defaultfocusringtype.md)
   Returns the default type of focus ring for the receiver.
-- [var focusRingType: NSFocusRingType](nscell/focusringtype.md)
+- [var focusRingType: NSFocusRingType](./focusringtype.md)
   The type of focus ring to use with the associated view.
 
 

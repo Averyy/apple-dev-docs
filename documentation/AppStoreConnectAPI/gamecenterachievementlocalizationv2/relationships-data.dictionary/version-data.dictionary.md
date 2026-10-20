@@ -1,7 +1,8 @@
 # GameCenterAchievementLocalizationV2.Relationships.Version
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describes the version of the Game Center achievement localization v2.
 
@@ -10,7 +11,7 @@ The data that describes the version of the Game Center achievement localization 
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementLocalizationV2.Relationships.Version
 ```
 
@@ -21,7 +22,7 @@ object GameCenterAchievementLocalizationV2.Relationships.Version
 ## Topics
 
 ### Dictionaries
-- [object GameCenterAchievementLocalizationV2.Relationships.Version.Data](gamecenterachievementlocalizationv2/relationships-data.dictionary/version-data.dictionary/data-data.dictionary.md)
+- [object GameCenterAchievementLocalizationV2.Relationships.Version.Data](./version-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 
@@ -29,7 +30,8 @@ object GameCenterAchievementLocalizationV2.Relationships.Version
 
 ## See Also
 
-- [object GameCenterAchievementLocalizationV2.Relationships.Image](gamecenterachievementlocalizationv2/relationships-data.dictionary/image-data.dictionary.md)
+### Dictionaries
+- [object GameCenterAchievementLocalizationV2.Relationships.Image](./image-data.dictionary.md)
   The data and links that describe the image of the Game Center achievement localization v2.
 
 

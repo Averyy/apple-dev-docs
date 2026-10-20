@@ -1,14 +1,15 @@
 # memory_object_perf_info_data_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct memory_object_perf_info {
     ...
 } memory_object_perf_info_data_t;
@@ -17,8 +18,8 @@ typedef struct memory_object_perf_info {
 ## Topics
 
 ### Instance Properties
-- [cluster_size](memory_object_perf_info_data_t/1562504-cluster_size.md)
-- [may_cache](memory_object_perf_info_data_t/1562492-may_cache.md)
+- [cluster_size](./memory_object_perf_info_data_t/api-1562504-cluster_size.md)
+- [may_cache](./memory_object_perf_info_data_t/api-1562492-may_cache.md)
 
 
 ---

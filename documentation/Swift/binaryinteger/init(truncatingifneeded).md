@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a new instance from the bit pattern of the given instance by sign-extending or truncating to fit this type.
@@ -56,11 +57,18 @@ let y = UInt16(truncatingIfNeeded: w)
 
 - `source`: An integer to convert to this type.
 
+## Default Implementations
+
+### BinaryInteger Implementations
+- [init<T>(truncatingIfNeeded: T)](./init%28truncatingifneeded%29-54a40.md)
+  Creates a new instance from the bit pattern of the given instance by sign-extending or truncating to fit this type.
+
 ## See Also
 
-- [init<T>(T)](binaryinteger/init(_:)-8gmdl.md)
+### Converting Integers
+- [init<T>(T)](./init%28_%29-8gmdl.md)
   Creates a new instance from the given integer.
-- [init<T>(clamping: T)](binaryinteger/init(clamping:).md)
+- [init<T>(clamping: T)](./init%28clamping%29.md)
   Creates a new instance with the representable value that’s closest to the given integer.
 
 

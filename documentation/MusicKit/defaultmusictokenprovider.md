@@ -1,7 +1,8 @@
 # DefaultMusicTokenProvider
 
 **Framework**: MusicKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The default token provider that music requests use to access Apple Music API.
 
@@ -23,29 +24,30 @@ class DefaultMusicTokenProvider
 ## Topics
 
 ### Initializers
-- [init()](defaultmusictokenprovider/init.md)
+- [init()](./defaultmusictokenprovider/init%28%29.md)
   Creates a user token provider.
 
 ## Relationships
 
 ### Inherits From
-- [MusicUserTokenProvider](musicusertokenprovider.md)
+- [MusicUserTokenProvider](./musicusertokenprovider.md)
 ### Conforms To
-- [MusicDeveloperTokenProvider](musicdevelopertokenprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [MusicDeveloperTokenProvider](./musicdevelopertokenprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [typealias MusicTokenProvider](musictokenprovider.md)
+### Token management
+- [typealias MusicTokenProvider](./musictokenprovider.md)
   An object that music requests use to access Apple Music API.
-- [protocol MusicDeveloperTokenProvider](musicdevelopertokenprovider.md)
+- [protocol MusicDeveloperTokenProvider](./musicdevelopertokenprovider.md)
   A set of methods that music requests use to access Apple Music API.
-- [class MusicUserTokenProvider](musicusertokenprovider.md)
+- [class MusicUserTokenProvider](./musicusertokenprovider.md)
   A class that music requests use to fetch user tokens your app requires to access Apple Music API.
-- [struct MusicTokenRequestOptions](musictokenrequestoptions.md)
+- [struct MusicTokenRequestOptions](./musictokenrequestoptions.md)
   Options that music requests pass into token provider methods to fetch a required token for accessing Apple Music API.
-- [enum MusicTokenRequestError](musictokenrequesterror.md)
+- [enum MusicTokenRequestError](./musictokenrequesterror.md)
   An error that the token provider or music requests can throw upon requesting any token necessary for accessing Apple Music API.
 
 

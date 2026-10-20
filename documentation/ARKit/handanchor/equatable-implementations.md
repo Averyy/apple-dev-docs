@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (HandAnchor, HandAnchor) -> Bool](handanchor/==(_:_:).md)
+- [static func == (HandAnchor, HandAnchor) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two hand anchors are equal.
 
 

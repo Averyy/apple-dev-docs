@@ -1,7 +1,8 @@
 # SpotlightSearchTool.SearchReply.Status.complete
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This is the final set of results for this `queryToken`.
 

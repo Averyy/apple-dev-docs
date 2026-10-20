@@ -1,7 +1,8 @@
 # page(at:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a page from a Core Graphics PDF document.
 
@@ -10,7 +11,7 @@ Returns a page from a Core Graphics PDF document.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns a page from a Core Graphics PDF document.
 
 ```swift
 func page(at pageNumber: Int) -> CGPDFPage?
+```
+
+```c
+extern CGPDFPageRefCGPDFDocumentGetPage(CGPDFDocumentRef document, size_t pageNumber);
 ```
 
 #### Return Value
@@ -30,15 +35,16 @@ Return the PDF page corresponding to the specified page number, or `NULL` if no 
 
 ## See Also
 
-- [var catalog: CGPDFDictionaryRef?](cgpdfdocument/catalog.md)
+### Examining a PDF Document
+- [var catalog: CGPDFDictionaryRef?](./catalog.md)
   Returns the document catalog of a Core Graphics PDF document.
-- [var fileIdentifier: CGPDFArrayRef?](cgpdfdocument/fileidentifier.md)
+- [var fileIdentifier: CGPDFArrayRef?](./fileidentifier.md)
   Gets the file identifier for a PDF document.
-- [var info: CGPDFDictionaryRef?](cgpdfdocument/info.md)
+- [var info: CGPDFDictionaryRef?](./info.md)
   Gets the information dictionary for a PDF document.
-- [var numberOfPages: Int](cgpdfdocument/numberofpages.md)
+- [var numberOfPages: Int](./numberofpages.md)
   Returns the number of pages in a PDF document.
-- [func getVersion(majorVersion: UnsafeMutablePointer<Int32>, minorVersion: UnsafeMutablePointer<Int32>)](cgpdfdocument/getversion(majorversion:minorversion:).md)
+- [func getVersion(majorVersion: UnsafeMutablePointer<Int32>, minorVersion: UnsafeMutablePointer<Int32>)](./getversion%28majorversion,minorversion%29.md)
   Returns the major and minor version numbers of a Core Graphics PDF document.
 
 

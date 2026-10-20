@@ -1,7 +1,8 @@
 # AVCaptureFraming
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A framing, consisting of an aspect ratio and a zoom factor.
 
@@ -16,35 +17,40 @@ A framing, consisting of an aspect ratio and a zoom factor.
 class AVCaptureFraming
 ```
 
+```objc
+@interface AVCaptureFraming : NSObject
+```
+
 #### Overview
 
-An [`AVCaptureSmartFramingMonitor`](avcapturesmartframingmonitor.md) provides framing recommendations using this object.
+An [`AVCaptureSmartFramingMonitor`](./avcapturesmartframingmonitor.md) provides framing recommendations using this object.
 
 ## Topics
 
 ### Inspecting a framing
-- [var aspectRatio: AVCaptureDevice.AspectRatio](avcaptureframing/aspectratio.md)
+- [var aspectRatio: AVCaptureDevice.AspectRatio](./avcaptureframing/aspectratio.md)
   An aspect ratio.
-- [var zoomFactor: Float](avcaptureframing/zoomfactor.md)
+- [var zoomFactor: Float](./avcaptureframing/zoomfactor.md)
   A zoom factor.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var smartFramingMonitor: AVCaptureSmartFramingMonitor?](avcapturedevice/smartframingmonitor.md)
+### Configuring smart framing
+- [var smartFramingMonitor: AVCaptureSmartFramingMonitor?](./avcapturedevice/smartframingmonitor.md)
   A monitor owned by the device that recommends an optimal framing based on the content in the scene.
-- [class AVCaptureSmartFramingMonitor](avcapturesmartframingmonitor.md)
+- [class AVCaptureSmartFramingMonitor](./avcapturesmartframingmonitor.md)
   An object associated with a capture device that monitors the scene and suggests an optimal framing.
 
 

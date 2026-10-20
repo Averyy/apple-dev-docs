@@ -1,7 +1,8 @@
 # SHManagedSession
 
 **Framework**: ShazamKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that records and matches a recording with captured sound in the Shazam catalog or your custom catalog.
 
@@ -22,16 +23,16 @@ final class SHManagedSession
 
 #### Overview
 
-This session is an alternative for [`SHSession`](shsession.md) if you prefer ShazamKit to manage recording.
+This session is an alternative for [`SHSession`](./shsession.md) if you prefer ShazamKit to manage recording.
 
-There are two main differences between this managed session and the [`SHSession`](shsession.md):
+There are two main differences between this managed session and the [`SHSession`](./shsession.md):
 
-- [`SHManagedSession`](shmanagedsession.md) performs all recording of audio and signature generation.
-- [`SHManagedSession`](shmanagedsession.md) won’t accept audio or Signatures that it didn’t generate.
+- [`SHManagedSession`](./shmanagedsession.md) performs all recording of audio and signature generation.
+- [`SHManagedSession`](./shmanagedsession.md) won’t accept audio or Signatures that it didn’t generate.
 
-Matching songs in Shazam requires enabling your app to access the catalog. For more information on enabling your app, see [`Enable ShazamKit for an App ID`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-services/shazamkit).
+Matching songs in Shazam requires enabling your app to access the catalog. For more information on enabling your app, see [Enable ShazamKit for an App ID](https://developer.apple.com/help/account/configure-app-services/shazamkit).
 
-The code below shows searching for a match in the Shazam catalog using [`SHManagedSession`](shmanagedsession.md):
+The code below shows searching for a match in the Shazam catalog using [`SHManagedSession`](./shmanagedsession.md):
 
 ```swift
 // Set up the session.
@@ -54,45 +55,46 @@ switch result {
 ## Topics
 
 ### Creating a managed session object
-- [init()](shmanagedsession/init.md)
+- [init()](./shmanagedsession/init%28%29.md)
   Creates a new managed session object for matching songs in the Shazam Music catalog.
-- [init(catalog: SHCatalog)](shmanagedsession/init(catalog:).md)
+- [init(catalog: SHCatalog)](./shmanagedsession/init%28catalog%29.md)
   Creates a new managed session object for matching audio in a custom catalog.
 ### Getting the session state
-- [var state: SHManagedSession.State](shmanagedsession/state-swift.property.md)
+- [var state: SHManagedSession.State](./shmanagedsession/state-swift.property.md)
   The current state of the managed session.
-- [SHManagedSession.State](shmanagedsession/state-swift.enum.md)
+- [SHManagedSession.State](./shmanagedsession/state-swift.enum.md)
   The state of a managed session.
 ### Returning queries
-- [func result() async -> SHSession.Result](shmanagedsession/result.md)
+- [func result() async -> SHSession.Result](./shmanagedsession/result%28%29.md)
   Performs an asynchronous match with a single signature.
-- [var results: SHSession.Results](shmanagedsession/results.md)
+- [var results: SHSession.Results](./shmanagedsession/results.md)
   The results as an asynchronous sequence of matches.
-- [func cancel()](shmanagedsession/cancel.md)
+- [func cancel()](./shmanagedsession/cancel%28%29.md)
   Cancels the currently running match attempt.
-- [func prepare() async](shmanagedsession/prepare.md)
+- [func prepare() async](./shmanagedsession/prepare%28%29.md)
   Preallocates the resources needed for a match, which increases the responsiveness of matches.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Observable](../observation/observable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Observable](../Observation/observable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class SHSession](shsession.md)
+### Match audio
+- [class SHSession](./shsession.md)
   An object that matches a specific audio recording when a segment of that recording is part of captured sound in the Shazam catalog or your custom catalog.
-- [protocol SHSessionDelegate](shsessiondelegate.md)
+- [protocol SHSessionDelegate](./shsessiondelegate.md)
   Methods that the session calls with the result of a match request.
-- [class SHMatch](shmatch.md)
+- [class SHMatch](./shmatch.md)
   An object that represents the catalog media items that match a query.
-- [class SHMatchedMediaItem](shmatchedmediaitem.md)
+- [class SHMatchedMediaItem](./shmatchedmediaitem.md)
   An object that represents the metadata for a matched reference signature.
-- [class SHMediaItem](shmediaitem.md)
+- [class SHMediaItem](./shmediaitem.md)
   An object that represents the metadata for a reference signature.
 
 

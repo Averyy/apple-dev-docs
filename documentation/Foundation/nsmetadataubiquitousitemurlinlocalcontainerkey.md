@@ -1,7 +1,8 @@
 # NSMetadataUbiquitousItemURLInLocalContainerKey
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The URL for the ubiquitous item in the local container.
 
@@ -20,26 +21,31 @@ The URL for the ubiquitous item in the local container.
 let NSMetadataUbiquitousItemURLInLocalContainerKey: String
 ```
 
+```c
+extern NSString * const NSMetadataUbiquitousItemURLInLocalContainerKey;
+```
+
 ## See Also
 
-- [let NSMetadataItemIsUbiquitousKey: String](nsmetadataitemisubiquitouskey.md)
-- [let NSMetadataUbiquitousItemContainerDisplayNameKey: String](nsmetadataubiquitousitemcontainerdisplaynamekey.md)
+### iCloud Keys
+- [let NSMetadataItemIsUbiquitousKey: String](./nsmetadataitemisubiquitouskey.md)
+- [let NSMetadataUbiquitousItemContainerDisplayNameKey: String](./nsmetadataubiquitousitemcontainerdisplaynamekey.md)
   The display name of the container that stores the ubiquitous item.
-- [let NSMetadataUbiquitousItemDownloadRequestedKey: String](nsmetadataubiquitousitemdownloadrequestedkey.md)
+- [let NSMetadataUbiquitousItemDownloadRequestedKey: String](./nsmetadataubiquitousitemdownloadrequestedkey.md)
   A Boolean value indicating whether a download has been requested for the ubiquitous item.
-- [let NSMetadataUbiquitousItemIsExternalDocumentKey: String](nsmetadataubiquitousitemisexternaldocumentkey.md)
+- [let NSMetadataUbiquitousItemIsExternalDocumentKey: String](./nsmetadataubiquitousitemisexternaldocumentkey.md)
   A Boolean value indicating whether the ubiquitous item is from an external document.
-- [let NSMetadataUbiquitousItemHasUnresolvedConflictsKey: String](nsmetadataubiquitousitemhasunresolvedconflictskey.md)
-- [let NSMetadataUbiquitousItemIsDownloadedKey: String](nsmetadataubiquitousitemisdownloadedkey.md)
-- [let NSMetadataUbiquitousItemIsDownloadingKey: String](nsmetadataubiquitousitemisdownloadingkey.md)
-- [let NSMetadataUbiquitousItemIsUploadedKey: String](nsmetadataubiquitousitemisuploadedkey.md)
-- [let NSMetadataUbiquitousItemIsUploadingKey: String](nsmetadataubiquitousitemisuploadingkey.md)
-- [let NSMetadataUbiquitousItemPercentDownloadedKey: String](nsmetadataubiquitousitempercentdownloadedkey.md)
-- [let NSMetadataUbiquitousItemPercentUploadedKey: String](nsmetadataubiquitousitempercentuploadedkey.md)
-- [let NSMetadataUbiquitousItemDownloadingStatusKey: String](nsmetadataubiquitousitemdownloadingstatuskey.md)
-- [let NSMetadataUbiquitousItemDownloadingErrorKey: String](nsmetadataubiquitousitemdownloadingerrorkey.md)
-- [let NSMetadataUbiquitousItemUploadingErrorKey: String](nsmetadataubiquitousitemuploadingerrorkey.md)
-- [let NSMetadataUbiquitousItemIsSharedKey: String](nsmetadataubiquitousitemissharedkey.md)
+- [let NSMetadataUbiquitousItemHasUnresolvedConflictsKey: String](./nsmetadataubiquitousitemhasunresolvedconflictskey.md)
+- [let NSMetadataUbiquitousItemIsDownloadedKey: String](./nsmetadataubiquitousitemisdownloadedkey.md)
+- [let NSMetadataUbiquitousItemIsDownloadingKey: String](./nsmetadataubiquitousitemisdownloadingkey.md)
+- [let NSMetadataUbiquitousItemIsUploadedKey: String](./nsmetadataubiquitousitemisuploadedkey.md)
+- [let NSMetadataUbiquitousItemIsUploadingKey: String](./nsmetadataubiquitousitemisuploadingkey.md)
+- [let NSMetadataUbiquitousItemPercentDownloadedKey: String](./nsmetadataubiquitousitempercentdownloadedkey.md)
+- [let NSMetadataUbiquitousItemPercentUploadedKey: String](./nsmetadataubiquitousitempercentuploadedkey.md)
+- [let NSMetadataUbiquitousItemDownloadingStatusKey: String](./nsmetadataubiquitousitemdownloadingstatuskey.md)
+- [let NSMetadataUbiquitousItemDownloadingErrorKey: String](./nsmetadataubiquitousitemdownloadingerrorkey.md)
+- [let NSMetadataUbiquitousItemUploadingErrorKey: String](./nsmetadataubiquitousitemuploadingerrorkey.md)
+- [let NSMetadataUbiquitousItemIsSharedKey: String](./nsmetadataubiquitousitemissharedkey.md)
   A Boolean value indicating whether the ubiquitous item is shared.
 
 

@@ -1,7 +1,8 @@
 # NLModel.ModelType.classifier
 
 **Framework**: Natural Language  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A classifier model type that tags text at the phrase, sentence, paragraph, or higher level.
 
@@ -20,9 +21,14 @@ A classifier model type that tags text at the phrase, sentence, paragraph, or hi
 case classifier
 ```
 
+```c
+NLModelTypeClassifier
+```
+
 ## See Also
 
-- [NLModel.ModelType.sequence](nlmodel/modeltype/sequence.md)
+### Model types
+- [NLModel.ModelType.sequence](./sequence.md)
   A sequence model type that tags text at the token level.
 
 

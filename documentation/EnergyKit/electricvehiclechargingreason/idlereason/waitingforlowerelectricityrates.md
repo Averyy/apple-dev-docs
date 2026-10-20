@@ -1,14 +1,15 @@
 # ElectricVehicleChargingReason.IdleReason.waitingForLowerElectricityRates
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reason that indicates the vehicle waits for lower electricity rates to become available.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,8 @@ case waitingForLowerElectricityRates
 
 ## See Also
 
-- [ElectricVehicleChargingReason.IdleReason.waitingForCleanerEnergy](electricvehiclechargingreason/idlereason/waitingforcleanerenergy.md)
+### Grid and rate optimization
+- [ElectricVehicleChargingReason.IdleReason.waitingForCleanerEnergy](./waitingforcleanerenergy.md)
   A reason that indicates the vehicle waits for cleaner energy to become available on the grid.
 
 

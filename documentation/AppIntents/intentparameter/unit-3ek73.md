@@ -1,7 +1,8 @@
 # unit
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,12 +19,15 @@
 final var unit: IntentParameter<Value>.FuelEfficiency? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitFuelEfficiency>`.
+
 ## See Also
 
-- [IntentParameter.FuelEfficiency](intentparameter/fuelefficiency.md)
-- [var defaultUnit: IntentParameter<Value>.FuelEfficiency?](intentparameter/defaultunit-2u2qw.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-6wblf.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-322mt.md)
+### Accessing unit details
+- [IntentParameter.FuelEfficiency](./fuelefficiency.md)
+- [var defaultUnit: IntentParameter<Value>.FuelEfficiency?](./defaultunit-2u2qw.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-6wblf.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-322mt.md)
 
 
 ---

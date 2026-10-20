@@ -1,7 +1,8 @@
 # migrationManagerClass()
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the migration manager class for this store class.
 
@@ -10,7 +11,7 @@ Returns the migration manager class for this store class.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.6+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the migration manager class for this store class.
 
 ```swift
 class func migrationManagerClass() -> AnyClass
+```
+
+```objc
++ (Class) migrationManagerClass;
 ```
 
 #### Return Value

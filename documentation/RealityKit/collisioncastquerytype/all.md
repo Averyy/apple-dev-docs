@@ -1,7 +1,8 @@
 # CollisionCastQueryType.all
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Report all hits sorted in ascending order by distance from the cast origin.
 
@@ -11,7 +12,7 @@ Report all hits sorted in ascending order by distance from the cast origin.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ case all
 
 ## See Also
 
-- [CollisionCastQueryType.nearest](collisioncastquerytype/nearest.md)
+### Collision cast queries
+- [CollisionCastQueryType.nearest](./nearest.md)
   Report the closest hit.
-- [CollisionCastQueryType.any](collisioncastquerytype/any.md)
+- [CollisionCastQueryType.any](./any.md)
   Report one hit.
 
 

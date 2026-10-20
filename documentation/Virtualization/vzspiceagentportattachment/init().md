@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new Spice agent port attachment.
 
@@ -12,6 +13,10 @@ Creates a new Spice agent port attachment.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

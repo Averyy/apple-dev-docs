@@ -1,7 +1,8 @@
 # CustomerReviewSummarization.Relationships.Territory.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data identifying the territory associated with a review summarization.
 
@@ -10,14 +11,14 @@ The resource linkage data identifying the territory associated with a review sum
 
 ## Declaration
 
-```swift
+```
 object CustomerReviewSummarization.Relationships.Territory.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `territories`
 
 
 ---

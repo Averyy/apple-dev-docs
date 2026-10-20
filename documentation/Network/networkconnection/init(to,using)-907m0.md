@@ -1,7 +1,8 @@
 # init(to:using:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,8 @@
 ```swift
 convenience init(to endpoint: NWEndpoint, @ProtocolStackBuilder<ApplicationProtocol> using builder: () -> ApplicationProtocol)
 ```
+
+Available when `ApplicationProtocol` conforms to `MultiplexProtocol`.
 
 
 ---

@@ -1,7 +1,8 @@
 # IOUserVideoReservedConfigChangeAction
 
 **Framework**: VideoDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Reserved configuration change identifiers when changing object state that requires a configuration change.
 
@@ -10,20 +11,20 @@ Reserved configuration change identifiers when changing object state that requir
 
 ## Declaration
 
-```swift
+```c
 enum IOUserVideoReservedConfigChangeAction : uint64_t;
 ```
 
 ## Topics
 
 ### Configuration change identifiers
-- [RingBufferFrameSize](videodriverkit/iouservideoreservedconfigchangeaction/ringbufferframesize.md)
-- [SampleRate](videodriverkit/iouservideoreservedconfigchangeaction/samplerate.md)
-- [StreamFormat](videodriverkit/iouservideoreservedconfigchangeaction/streamformat.md)
-- [StreamAddition](videodriverkit/iouservideoreservedconfigchangeaction/streamaddition.md)
-- [StreamCount](videodriverkit/iouservideoreservedconfigchangeaction/streamcount.md)
-- [StreamDirection](videodriverkit/iouservideoreservedconfigchangeaction/streamdirection.md)
-- [StreamRemoval](videodriverkit/iouservideoreservedconfigchangeaction/streamremoval.md)
+- [RingBufferFrameSize](./iouservideoreservedconfigchangeaction/ringbufferframesize.md)
+- [SampleRate](./iouservideoreservedconfigchangeaction/samplerate.md)
+- [StreamFormat](./iouservideoreservedconfigchangeaction/streamformat.md)
+- [StreamAddition](./iouservideoreservedconfigchangeaction/streamaddition.md)
+- [StreamCount](./iouservideoreservedconfigchangeaction/streamcount.md)
+- [StreamDirection](./iouservideoreservedconfigchangeaction/streamdirection.md)
+- [StreamRemoval](./iouservideoreservedconfigchangeaction/streamremoval.md)
 
 
 ---

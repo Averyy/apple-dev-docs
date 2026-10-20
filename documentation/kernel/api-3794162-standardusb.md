@@ -1,14 +1,15 @@
 # StandardUSB::getEndpointIntervalMicroframes
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 uint32_t StandardUSB::getEndpointIntervalMicroframes(uint32_t usbDeviceSpeed, const EndpointDescriptor *descriptor);
 ```
 

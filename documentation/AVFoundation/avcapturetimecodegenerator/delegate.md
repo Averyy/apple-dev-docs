@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate that receives timecode updates from the timecode generator.
 
@@ -18,13 +19,18 @@ The delegate that receives timecode updates from the timecode generator.
 var delegate: (any AVCaptureTimecodeGeneratorDelegate)? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id<AVCaptureTimecodeGeneratorDelegate> delegate;
+```
+
 #### Discussion
 
-You can use your [`delegate`](avcapturetimecodegenerator/delegate.md) to receive real-time timecode updates. Implement the `timecodeGenerator:didReceiveUpdate:` method in your delegate to handle updates.
+You can use your [`delegate`](./delegate.md) to receive real-time timecode updates. Implement the `timecodeGenerator:didReceiveUpdate:` method in your delegate to handle updates.
 
 ## See Also
 
-- [var delegateCallbackQueue: dispatch_queue_t?](avcapturetimecodegenerator/delegatecallbackqueue.md)
+### Handling delegate callbacks
+- [var delegateCallbackQueue: dispatch_queue_t?](./delegatecallbackqueue.md)
   The dispatch queue on which delegate callbacks are invoked.
 
 

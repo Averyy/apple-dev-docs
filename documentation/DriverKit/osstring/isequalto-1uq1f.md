@@ -1,19 +1,20 @@
 # isEqualTo
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the string with an OSData.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool isEqualTo(const OSData *aDataObject) const;
 ```
 
@@ -31,11 +32,12 @@ If the passed OSData object has the same length and all bytes are identical, tru
 
 ## See Also
 
-- [isEqualTo](osstring/isequalto-712xj.md)
+### Comparing Strings
+- [isEqualTo](./isequalto-712xj.md)
   Compares the string with an OSObject
-- [isEqualTo](osstring/isequalto-5paj5.md)
+- [isEqualTo](./isequalto-5paj5.md)
   Compares the string with an OSString.
-- [isEqualTo](osstring/isequalto-2rg80.md)
+- [isEqualTo](./isequalto-2rg80.md)
   Compares the string with a c-string.
 
 

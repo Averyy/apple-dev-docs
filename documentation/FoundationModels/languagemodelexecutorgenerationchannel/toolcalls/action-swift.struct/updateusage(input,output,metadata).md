@@ -1,7 +1,8 @@
 # updateUsage(input:output:metadata:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an action that replaces the entry’s token-usage totals.
 
@@ -27,11 +28,12 @@ static func updateUsage(input: LanguageModelExecutorGenerationChannel.Usage.Inpu
 
 ## See Also
 
-- [static func toolCall(id: String, name: String, action: LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action) -> LanguageModelExecutorGenerationChannel.ToolCalls.Action](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct/toolcall(id:name:action:).md)
+### Tool calling actions
+- [static func toolCall(id: String, name: String, action: LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action) -> LanguageModelExecutorGenerationChannel.ToolCalls.Action](./toolcall%28id,name,action%29.md)
   Creates an action that routes an event to a specific tool call within the entry.
-- [static func removeToolCall(id: String) -> LanguageModelExecutorGenerationChannel.ToolCalls.Action](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct/removetoolcall(id:).md)
+- [static func removeToolCall(id: String) -> LanguageModelExecutorGenerationChannel.ToolCalls.Action](./removetoolcall%28id%29.md)
   Creates an action that removes a tool call.
-- [static func updateMetadata([String : any ConvertibleToGeneratedContent]) -> LanguageModelExecutorGenerationChannel.ToolCalls.Action](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct/updatemetadata(_:).md)
+- [static func updateMetadata([String : any ConvertibleToGeneratedContent]) -> LanguageModelExecutorGenerationChannel.ToolCalls.Action](./updatemetadata%28_%29.md)
   Creates an action that replaces the tool call’s metadata.
 
 

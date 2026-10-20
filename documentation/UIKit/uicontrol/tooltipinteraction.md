@@ -1,7 +1,8 @@
 # toolTipInteraction
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tooltip interaction associated with the control.
 
@@ -17,11 +18,15 @@ The tooltip interaction associated with the control.
 var toolTipInteraction: UIToolTipInteraction? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) UIToolTipInteraction * toolTipInteraction;
+```
+
 #### Discussion
 
-When you set the [`toolTip`](uicontrol/tooltip.md) property, the control creates a [`UIToolTipInteraction`](uitooltipinteraction.md) object and assigns it to the [`toolTipInteraction`](uicontrol/tooltipinteraction.md) property.
+When you set the [`toolTip`](./tooltip.md) property, the control creates a [`UIToolTipInteraction`](../uitooltipinteraction.md) object and assigns it to the [`toolTipInteraction`](./tooltipinteraction.md) property.
 
-If you want to change the text of the tooltip based the current state of your app or application logic, assign a [`UIToolTipInteractionDelegate`](uitooltipinteractiondelegate.md) object to [`toolTipInteraction`](uicontrol/tooltipinteraction.md)‘s [`delegate`](uitooltipinteraction/delegate.md) property. For example, the following code listing sets the tooltip’s default text and delegate for a shopping cart button:
+If you want to change the text of the tooltip based the current state of your app or application logic, assign a [`UIToolTipInteractionDelegate`](../uitooltipinteractiondelegate.md) object to [`toolTipInteraction`](./tooltipinteraction.md)‘s [`delegate`](../uitooltipinteraction/delegate.md) property. For example, the following code listing sets the tooltip’s default text and delegate for a shopping cart button:
 
 ```swift
 lazy var shoppingCartButtonWithTooltip: UIButton = {
@@ -41,7 +46,7 @@ lazy var shoppingCartButtonWithTooltip: UIButton = {
 }()
 ```
 
-Then the delegate returns a tooltip configuration containing text that states the number of items in the shopping cart by implementing the [`toolTipInteraction(_:configurationAt:)`](uitooltipinteractiondelegate/tooltipinteraction(_:configurationat:).md) method:
+Then the delegate returns a tooltip configuration containing text that states the number of items in the shopping cart by implementing the [`toolTipInteraction(_:configurationAt:)`](../uitooltipinteractiondelegate/tooltipinteraction%28_,configurationat%29.md) method:
 
 ```swift
 func toolTipInteraction(_ interaction: UIToolTipInteraction, configurationAt point: CGPoint) -> UIToolTipConfiguration? {
@@ -62,7 +67,8 @@ func toolTipInteraction(_ interaction: UIToolTipInteraction, configurationAt poi
 
 ## See Also
 
-- [var toolTip: String?](uicontrol/tooltip.md)
+### Showing tooltips
+- [var toolTip: String?](./tooltip.md)
   The default text to display in the control’s tooltip.
 
 

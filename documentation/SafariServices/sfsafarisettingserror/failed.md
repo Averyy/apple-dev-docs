@@ -1,7 +1,8 @@
 # SFSafariSettingsError.failed
 
 **Framework**: Safari Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system was unable to perform the requested operation.
 
@@ -13,6 +14,10 @@ The system was unable to perform the requested operation.
 
 ```swift
 case failed
+```
+
+```c
+SFSafariSettingsErrorFailed
 ```
 
 

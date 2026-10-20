@@ -1,22 +1,25 @@
 # SubscriptionImage.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships for a subscription image, linking it to its associated subscription.
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 3.6+ - Deprecated in 4.4.1
+
+> **Deprecated**: This object is deprecated. Use [`SubscriptionImageV2`](../subscriptionimagev2.md) instead.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionImage.Relationships
 ```
 
 ## Topics
 
-- [object SubscriptionImage.Relationships.Subscription](subscriptionimage/relationships-data.dictionary/subscription-data.dictionary.md)
+- [object SubscriptionImage.Relationships.Subscription](./relationships-data.dictionary/subscription-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -25,7 +28,8 @@ object SubscriptionImage.Relationships
 
 ## See Also
 
-- [object SubscriptionImage.Attributes](subscriptionimage/attributes-data.dictionary.md)
+### Objects
+- [object SubscriptionImage.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a subscription image resource.
 
 

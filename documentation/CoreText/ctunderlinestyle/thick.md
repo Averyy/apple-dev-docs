@@ -1,18 +1,19 @@
 # thick
 
 **Framework**: Core Text  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A specifier that indicates to draw an underline consisting of a thick line.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ A specifier that indicates to draw an underline consisting of a thick line.
 static var thick: CTUnderlineStyle { get }
 ```
 
+```c
+kCTUnderlineStyleThick
+```
+
 ## See Also
 
-- [static var single: CTUnderlineStyle](ctunderlinestyle/single.md)
+### Constants
+- [static var single: CTUnderlineStyle](./single.md)
   A specifier that indicates to draw an underline consisting of a single line.
-- [static var double: CTUnderlineStyle](ctunderlinestyle/double.md)
+- [static var double: CTUnderlineStyle](./double.md)
   A specifier that indicates to draw an underline consisting of a double line.
 
 

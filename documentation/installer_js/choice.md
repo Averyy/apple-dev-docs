@@ -9,7 +9,7 @@ A single installation choice.
 
 Choice objects are properties of the `choices` global variable and represent the installation choices defined in a distribution package.
 
-The name of each property of the `choices` array corresponds to the `choice-id` attribute of each of the distribution’s installation choices (see [`Distribution Definition XML Schema Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DeveloperTools/Reference/DistributionDefinitionRef/Chapters/Introduction.html#//apple_ref/doc/uid/TP40005370) for more information). Therefore, a specific choice is accessed this way:
+The name of each property of the `choices` array corresponds to the `choice-id` attribute of each of the distribution’s installation choices (see [Distribution Definition XML Schema Reference](https://developer.apple.com/library/archive/documentation/DeveloperTools/Reference/DistributionDefinitionRef/Chapters/Introduction.html#//apple_ref/doc/uid/TP40005370) for more information). Therefore, a specific choice is accessed this way:
 
 ```javascript
 choices.<choice-id>
@@ -24,21 +24,21 @@ choices.['choice_a'].selected
 ## Topics
 
 ### Accessing a Choice’s State
-- [selected](choice/1812159-selected.md)
+- [selected](./choice/api-1812159-selected.md)
   A Boolean value that indicates whether the choice is selected.
-- [enabled](choice/1812168-enabled.md)
+- [enabled](./choice/api-1812168-enabled.md)
   A Boolean value that indicates whether the choice is enabled.
-- [visible](choice/1812175-visible.md)
+- [visible](./choice/api-1812175-visible.md)
   A Boolean that indicates whether the choice is visible.
 ### Accessing a Choice’s Metadata
-- [title](choice/1812183-title.md)
+- [title](./choice/api-1812183-title.md)
   The title of the distribution package, as a String.
-- [description](choice/1812191-description.md)
+- [description](./choice/api-1812191-description.md)
   The description of the distribution, as a String.
 ### Working with Packages
-- [packages](choice/1812201-packages.md)
+- [packages](./choice/api-1812201-packages.md)
   An array identifying each package attached to the choice.
-- [packageUpgradeAction](choice/1812213-packageupgradeaction.md)
+- [packageUpgradeAction](./choice/api-1812213-packageupgradeaction.md)
   A string specifying the relationship between the choice’s packages (specified by the packages property) and the same packages (based on the package identifier) installed on the host.
 
 

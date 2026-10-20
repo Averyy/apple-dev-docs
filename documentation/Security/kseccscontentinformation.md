@@ -1,7 +1,8 @@
 # kSecCSContentInformation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 More information about the file system contents making up the signed code on disk.
 
@@ -13,6 +14,10 @@ More information about the file system contents making up the signed code on dis
 
 ```swift
 var kSecCSContentInformation: UInt32 { get }
+```
+
+```c
+kSecCSContentInformation
 ```
 
 #### Discussion

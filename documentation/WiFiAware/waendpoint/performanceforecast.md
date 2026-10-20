@@ -1,7 +1,8 @@
 # performanceForecast
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The forecasted performance for connections setup to the remote device, per WAPerformanceMode.
 

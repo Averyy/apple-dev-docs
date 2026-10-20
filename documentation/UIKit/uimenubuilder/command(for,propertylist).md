@@ -1,7 +1,8 @@
 # command(for:propertyList:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the command for the specified selector and property list.
 
@@ -10,7 +11,7 @@ Gets the command for the specified selector and property list.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -30,11 +31,12 @@ A command object; otherwise, `nil` if there is no such command.
 
 ## See Also
 
-- [var system: UIMenuSystem](uimenubuilder/system.md)
+### Getting menu systems and elements
+- [var system: UIMenuSystem](./system.md)
   The menu system that the menu builder modifies.
-- [func menu(for: UIMenu.Identifier) -> UIMenu?](uimenubuilder/menu(for:).md)
+- [func menu(for: UIMenu.Identifier) -> UIMenu?](./menu%28for%29.md)
   Gets the menu for the specified menu identifier.
-- [func action(for: UIAction.Identifier) -> UIAction?](uimenubuilder/action(for:).md)
+- [func action(for: UIAction.Identifier) -> UIAction?](./action%28for%29.md)
   Gets the action for the specified action identifier.
 
 

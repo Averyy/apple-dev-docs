@@ -2,17 +2,26 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Closes a file from further access.
 
 **Availability**:
-- macOS 15.4+
+- macOS 15.4+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
+func closeItem(_ item: FSItem, modes: FSVolume.OpenModes, replyHandler reply: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func closeItem(_ item: FSItem, modes: FSVolume.OpenModes) async throws
+```
+
+```objc
+- (void) closeItem:(FSItem *) item keepingModes:(FSVolumeOpenModes) modes replyHandler:(void (^)(NSError *error)) reply;
 ```
 
 ## Parameters
@@ -23,9 +32,10 @@ func closeItem(_ item: FSItem, modes: FSVolume.OpenModes) async throws
 
 ## See Also
 
-- [func openItem(FSItem, modes: FSVolume.OpenModes, replyHandler: ((any Error)?) -> Void)](fsvolume/opencloseoperations/openitem(_:modes:replyhandler:).md)
+### Opening and closing
+- [func openItem(FSItem, modes: FSVolume.OpenModes, replyHandler: ((any Error)?) -> Void)](./openitem%28_,modes,replyhandler%29.md)
   Opens a file for access.
-- [FSVolume.OpenModes](fsvolume/openmodes.md)
+- [FSVolume.OpenModes](../openmodes.md)
   Defined modes for opening a file.
 
 

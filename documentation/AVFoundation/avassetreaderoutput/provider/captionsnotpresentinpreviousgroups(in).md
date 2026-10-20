@@ -1,7 +1,8 @@
 # captionsNotPresentInPreviousGroups(in:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the set of captions that are present in the given group but were not present in any group previously vended by calls to next().
 
@@ -17,6 +18,8 @@ Returns the set of captions that are present in the given group but were not pre
 func captionsNotPresentInPreviousGroups(in captionGroup: AVCaptionGroup) -> [AVCaption]
 ```
 
+Available when `Payload` is `AVCaptionGroup`.
+
 #### Return Value
 
 An array of AVCaption objects.
@@ -27,7 +30,8 @@ An array of AVCaption objects.
 
 ## See Also
 
-- [func next() async throws -> Payload?](avassetreaderoutput/provider/next.md)
+### Reading media data
+- [func next() async throws -> Payload?](./next%28%29.md)
   Returns the next piece of media data.
 
 

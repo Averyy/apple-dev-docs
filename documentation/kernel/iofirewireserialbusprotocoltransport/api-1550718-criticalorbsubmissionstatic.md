@@ -1,14 +1,15 @@
 # CriticalOrbSubmissionStatic
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static IOReturn CriticalOrbSubmissionStatic(OSObject *refCon, void *val1, void *val2, void *val3, void *val4);
 ```
 

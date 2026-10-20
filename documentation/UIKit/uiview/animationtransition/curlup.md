@@ -1,16 +1,17 @@
 # UIView.AnimationTransition.curlUp
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A transition that curls a view up from the bottom.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,15 +19,20 @@ A transition that curls a view up from the bottom.
 case curlUp
 ```
 
+```c
+UIViewAnimationTransitionCurlUp
+```
+
 ## See Also
 
-- [UIView.AnimationTransition.none](uiview/animationtransition/none.md)
+### Constants
+- [UIView.AnimationTransition.none](./none.md)
   The option for indicating that no transition is specified.
-- [UIView.AnimationTransition.flipFromLeft](uiview/animationtransition/flipfromleft.md)
+- [UIView.AnimationTransition.flipFromLeft](./flipfromleft.md)
   A transition that flips a view around a vertical axis from left to right. The left side of the view moves towards the front and right side towards the back.
-- [UIView.AnimationTransition.flipFromRight](uiview/animationtransition/flipfromright.md)
+- [UIView.AnimationTransition.flipFromRight](./flipfromright.md)
   A transition that flips a view around a vertical axis from right to left. The right side of the view moves towards the front and left side towards the back.
-- [UIView.AnimationTransition.curlDown](uiview/animationtransition/curldown.md)
+- [UIView.AnimationTransition.curlDown](./curldown.md)
   A transition that curls a view down from the top.
 
 

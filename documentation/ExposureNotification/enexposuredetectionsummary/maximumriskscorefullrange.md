@@ -1,14 +1,17 @@
 # maximumRiskScoreFullRange
 
 **Framework**: Exposure Notification  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that represents the highest, full-range risk score of all the exposures for the user.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
@@ -16,29 +19,34 @@ The value that represents the highest, full-range risk score of all the exposure
 var maximumRiskScoreFullRange: Double { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) double maximumRiskScoreFullRange;
+```
+
 #### Discussion
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.6 and later.
 
-This value is not limited by [`ENRiskScoreMax`](enriskscoremax.md).
+This value is not limited by [`ENRiskScoreMax`](../enriskscoremax.md).
 
 > **Note**:  This value is only available when `ENAPIVersion` is set to `1` in the app’s Info.plist file.
 
 ## See Also
 
-- [var attenuationDurations: [NSNumber]](enexposuredetectionsummary/attenuationdurations.md)
+### Exposure Criteria
+- [var attenuationDurations: [NSNumber]](./attenuationdurations.md)
   An array of durations at specific radio signal attenuations.
-- [var daysSinceLastExposure: Int](enexposuredetectionsummary/dayssincelastexposure.md)
+- [var daysSinceLastExposure: Int](./dayssincelastexposure.md)
   Number of days since the most recent exposure.
-- [var matchedKeyCount: UInt64](enexposuredetectionsummary/matchedkeycount.md)
+- [var matchedKeyCount: UInt64](./matchedkeycount.md)
   The number of keys that matched for an exposure detection.
-- [var maximumRiskScore: ENRiskScore](enexposuredetectionsummary/maximumriskscore.md)
+- [var maximumRiskScore: ENRiskScore](./maximumriskscore.md)
   The vaue that represents the highest risk score of all exposure incidents.
-- [var riskScoreSumFullRange: Double](enexposuredetectionsummary/riskscoresumfullrange.md)
+- [var riskScoreSumFullRange: Double](./riskscoresumfullrange.md)
   The sum of the full-range risk scores for all exposures for the user.
-- [var metadata: [AnyHashable : Any]?](enexposuredetectionsummary/metadata.md)
+- [var metadata: [AnyHashable : Any]?](./metadata.md)
   The metadata associated with the summary.
-- [var daySummaries: [ENExposureDaySummary]](enexposuredetectionsummary/daysummaries.md)
+- [var daySummaries: [ENExposureDaySummary]](./daysummaries.md)
   The summary of each day that contains an exposure.
 
 

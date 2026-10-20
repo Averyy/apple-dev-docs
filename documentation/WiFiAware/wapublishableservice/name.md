@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The full name of the service, as sent over the air.
 
@@ -18,9 +19,9 @@ let name: String
 
 #### Discussion
 
-To avoid conflicts with other apps and devices that may prevent your app from using the service, register your service with a unique name in the [`IANA Service Name Registry`](https://developer.apple.comhttps://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xml).
+To avoid conflicts with other apps and devices that may prevent your app from using the service, register your service with a unique name in the [IANA Service Name Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xml).
 
-For the service name to be valid, follow the rules located in [`RFC 6763`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc6763#section-4.1.2) and  [`RFC 6335`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc6335#section-5.1).
+For the service name to be valid, follow the rules located in [RFC 6763](https://datatracker.ietf.org/doc/html/rfc6763#section-4.1.2) and  [RFC 6335](https://datatracker.ietf.org/doc/html/rfc6335#section-5.1).
 
 The RFC rules require that the service string have a unique name that conforms to the following rules:
 
@@ -48,9 +49,10 @@ The name in the `Info.plist` must be this full service name, exactly as it is se
 
 ## See Also
 
-- [WAPublishableService.ID](wapublishableservice/id-swift.typealias.md)
+### Checking a service name and ID
+- [WAPublishableService.ID](./id-swift.typealias.md)
   The type of value that uniquely identifies the service.
-- [var id: WAPublishableService.ID](wapublishableservice/id-swift.property.md)
+- [var id: WAPublishableService.ID](./id-swift.property.md)
   A stable ID that can be used to identify this publishable service.
 
 

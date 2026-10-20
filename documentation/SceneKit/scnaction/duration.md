@@ -1,18 +1,19 @@
 # duration
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration required to complete an action.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,17 +21,22 @@ The duration required to complete an action.
 var duration: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic) NSTimeInterval duration;
+```
+
 #### Discussion
 
-This is the expected duration of an action’s animation. The actual time an action takes to complete is modified by the action’s [`timingMode`](scnaction/timingmode.md) property.
+This is the expected duration of an action’s animation. The actual time an action takes to complete is modified by the action’s [`timingMode`](./timingmode.md) property.
 
 ## See Also
 
-- [var speed: CGFloat](scnaction/speed.md)
+### Adjusting an Action’s Animation Properties
+- [var speed: CGFloat](./speed.md)
   A speed factor that modifies how fast an action runs.
-- [var timingMode: SCNActionTimingMode](scnaction/timingmode.md)
+- [var timingMode: SCNActionTimingMode](./timingmode.md)
   The timing mode used to execute an action.
-- [var timingFunction: SCNActionTimingFunction?](scnaction/timingfunction.md)
+- [var timingFunction: SCNActionTimingFunction?](./timingfunction.md)
   A block SceneKit calls to determine the action’s animation timing.
 
 

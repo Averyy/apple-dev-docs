@@ -1,7 +1,8 @@
 # parse(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Parses a decimal string in accordance with this strategy and returns the parsed value.
 
@@ -20,13 +21,15 @@ Parses a decimal string in accordance with this strategy and returns the parsed 
 func parse(_ value: String) throws -> Format.FormatInput
 ```
 
+Available when `Format` conforms to `FormatStyle` and `Format.FormatInput` is `Decimal`.
+
 #### Return Value
 
 The parsed integer value.
 
 #### Discussion
 
-Use this method to repeatedly parse decimal strings with the same [`Decimal.ParseStrategy`](decimal/parsestrategy.md). To parse a single decimal string, use the initializers inherited from [`Decimal`](decimal.md) that take a [`String`](https://developer.apple.com/documentation/swift/string) and a [`Decimal.FormatStyle`](decimal/formatstyle.md) as parameters.
+Use this method to repeatedly parse decimal strings with the same [`Decimal.ParseStrategy`](../parsestrategy.md). To parse a single decimal string, use the initializers inherited from [`Decimal`](../../decimal.md) that take a [`String`](../../../Swift/string.md) and a [`Decimal.FormatStyle`](../formatstyle.md) as parameters.
 
 This method throws an error if the parse strategy can’t parse the provided string.
 

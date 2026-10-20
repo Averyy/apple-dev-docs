@@ -1,12 +1,13 @@
 # insertTabViewItem(_:at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the specified item into the tab view’s array of tab view items at the specified index.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Inserts the specified item into the tab view’s array of tab view items at the 
 func insertTabViewItem(_ tabViewItem: NSTabViewItem, at index: Int)
 ```
 
+```objc
+- (void) insertTabViewItem:(NSTabViewItem *) tabViewItem atIndex:(NSInteger) index;
+```
+
 #### Discussion
 
-If there is a delegate and the delegate supports it, sends the delegate the [`tabViewDidChangeNumberOfTabViewItems(_:)`](nstabviewdelegate/tabviewdidchangenumberoftabviewitems(_:).md) message.
+If there is a delegate and the delegate supports it, sends the delegate the [`tabViewDidChangeNumberOfTabViewItems(_:)`](../nstabviewdelegate/tabviewdidchangenumberoftabviewitems%28_%29.md) message.
 
 ## Parameters
 
@@ -25,17 +30,19 @@ If there is a delegate and the delegate supports it, sends the delegate the [`ta
 
 ## See Also
 
-- [func indexOfTabViewItem(withIdentifier: Any) -> Int](nstabview/indexoftabviewitem(withidentifier:).md)
+### Related Documentation
+- [func indexOfTabViewItem(withIdentifier: Any) -> Int](./indexoftabviewitem%28withidentifier%29.md)
   Returns the index of the item that matches the specified identifier or `NSNotFound` if the item is not found.
-- [func tabViewItem(at: Int) -> NSTabViewItem](nstabview/tabviewitem(at:)-7r3at.md)
+- [func tabViewItem(at: Int) -> NSTabViewItem](./tabviewitem%28at%29-7r3at.md)
   Returns the tab view item at `index` in the tab view’s array of items.
-- [var numberOfTabViewItems: Int](nstabview/numberoftabviewitems.md)
+- [var numberOfTabViewItems: Int](./numberoftabviewitems.md)
   The number of items in the tab view’s array of tab view items.
-- [func indexOfTabViewItem(NSTabViewItem) -> Int](nstabview/indexoftabviewitem(_:).md)
+- [func indexOfTabViewItem(NSTabViewItem) -> Int](./indexoftabviewitem%28_%29.md)
   Returns the index of the specified item in the tab view.
-- [func addTabViewItem(NSTabViewItem)](nstabview/addtabviewitem(_:).md)
+### Adding and Removing Tabs
+- [func addTabViewItem(NSTabViewItem)](./addtabviewitem%28_%29.md)
   Adds the specified tab item.
-- [func removeTabViewItem(NSTabViewItem)](nstabview/removetabviewitem(_:).md)
+- [func removeTabViewItem(NSTabViewItem)](./removetabviewitem%28_%29.md)
   Removes the specified item from the tab view’s array of tab view items.
 
 

@@ -1,7 +1,8 @@
 # errSecNoDefaultKeychain
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A default keychain does not exist.
 
@@ -18,6 +19,10 @@ A default keychain does not exist.
 
 ```swift
 var errSecNoDefaultKeychain: OSStatus { get }
+```
+
+```c
+errSecNoDefaultKeychain
 ```
 
 

@@ -1,7 +1,8 @@
 # nickname
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The nickname that a person added to a medication during the entry experience.
 
@@ -17,6 +18,10 @@ The nickname that a person added to a medication during the entry experience.
 
 ```swift
 var nickname: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * nickname;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # default
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default types of analysis to perform.
 
@@ -18,15 +19,20 @@ The default types of analysis to perform.
 static var `default`: AVVideoFrameAnalysisType { get }
 ```
 
+```c
+AVVideoFrameAnalysisTypeDefault
+```
+
 ## See Also
 
-- [static var text: AVVideoFrameAnalysisType](avvideoframeanalysistype/text.md)
+### Analysis types
+- [static var text: AVVideoFrameAnalysisType](./text.md)
   A type that finds text in a paused video frame.
-- [static var subject: AVVideoFrameAnalysisType](avvideoframeanalysistype/subject.md)
+- [static var subject: AVVideoFrameAnalysisType](./subject.md)
   A type that finds a subject that a user can copy out of frame.
-- [static var visualSearch: AVVideoFrameAnalysisType](avvideoframeanalysistype/visualsearch.md)
+- [static var visualSearch: AVVideoFrameAnalysisType](./visualsearch.md)
   A type that identifies objects, landmarks, art, and so on.
-- [static var machineReadableCode: AVVideoFrameAnalysisType](avvideoframeanalysistype/machinereadablecode.md)
+- [static var machineReadableCode: AVVideoFrameAnalysisType](./machinereadablecode.md)
   A type that recognizes machine-readable codes, such as QR codes.
 
 

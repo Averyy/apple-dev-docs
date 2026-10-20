@@ -1,21 +1,28 @@
 # kAudioUnitSubType_AU3DMixerEmbedded
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An audio unit in iOS that is a simplified version of the macOS `kAudioUnitSubType_3DMixer` audio unit. It can have any number of input buses and one output bus. Each input bus can be stereo or mono. The output bus is stereo.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+
+> **Deprecated**: renamed to kAudioUnitSubType_SpatialMixer
 
 ## Declaration
 
 ```swift
 var kAudioUnitSubType_AU3DMixerEmbedded: UInt32 { get }
+```
+
+```c
+kAudioUnitSubType_AU3DMixerEmbedded
 ```
 
 

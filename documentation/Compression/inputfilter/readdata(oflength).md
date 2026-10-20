@@ -1,7 +1,8 @@
 # readData(ofLength:)
 
 **Framework**: Compression  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads processed data from the input filter.
 
@@ -11,7 +12,7 @@ Reads processed data from the input filter.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

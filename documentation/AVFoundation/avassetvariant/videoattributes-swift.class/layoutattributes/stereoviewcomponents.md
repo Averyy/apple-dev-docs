@@ -1,7 +1,8 @@
 # stereoViewComponents
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Attributes that describe the video’s stereo components.
 
@@ -20,13 +21,18 @@ Attributes that describe the video’s stereo components.
 var stereoViewComponents: CMStereoViewComponents { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMStereoViewComponents stereoViewComponents;
+```
+
 #### Discussion
 
-In the case of 3D or stereoscopic content, the value contains [`leftEye`](https://developer.apple.com/documentation/coremedia/cmstereoviewcomponents/lefteye) and [`rightEye`](https://developer.apple.com/documentation/coremedia/cmstereoviewcomponents/righteye) components. In the case of monoscopic content, this value is [`kCMStereoView_None`](https://developer.apple.com/documentation/coremedia/cmstereoviewcomponents/kcmstereoview_none).
+In the case of 3D or stereoscopic content, the value contains [`leftEye`](../../../../CoreMedia/cmstereoviewcomponents/lefteye.md) and [`rightEye`](../../../../CoreMedia/cmstereoviewcomponents/righteye.md) components. In the case of monoscopic content, this value is [`kCMStereoView_None`](../../../../CoreMedia/cmstereoviewcomponents/kcmstereoview_none.md).
 
 ## See Also
 
-- [var projectionType: CMProjectionType](avassetvariant/videoattributes-swift.class/layoutattributes/projectiontype.md)
+### Accessing attributes
+- [var projectionType: CMProjectionType](./projectiontype.md)
   Describes the video projection.
 
 

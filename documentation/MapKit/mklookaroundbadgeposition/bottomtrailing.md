@@ -1,7 +1,8 @@
 # MKLookAroundBadgePosition.bottomTrailing
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that indicates the bottom-right badge position.
 
@@ -18,11 +19,16 @@ The value that indicates the bottom-right badge position.
 case bottomTrailing
 ```
 
+```c
+MKLookAroundBadgePositionBottomTrailing
+```
+
 ## See Also
 
-- [MKLookAroundBadgePosition.topLeading](mklookaroundbadgeposition/topleading.md)
+### Badge positions
+- [MKLookAroundBadgePosition.topLeading](./topleading.md)
   The value that indicates the top-left badge position.
-- [MKLookAroundBadgePosition.topTrailing](mklookaroundbadgeposition/toptrailing.md)
+- [MKLookAroundBadgePosition.topTrailing](./toptrailing.md)
   The value that indicates the top-right badge position.
 
 

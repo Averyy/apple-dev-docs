@@ -1,7 +1,8 @@
 # MediaIntelligenceVideoAsset.ID
 
 **Framework**: Media Intelligence  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A unique identifier for a video asset.
 
@@ -26,24 +27,25 @@ This value is a string-backed identifier that you assign to each video asset. Ch
 ## Topics
 
 ### Creating an ID
-- [init(String)](mediaintelligencevideoasset/id-swift.struct/init(_:).md)
+- [init(String)](./id-swift.struct/init%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(id: MediaIntelligenceVideoAsset.ID, kind: MediaIntelligenceVideoAsset.Kind)](mediaintelligencevideoasset/init(id:kind:).md)
+### Creating an asset
+- [init(id: MediaIntelligenceVideoAsset.ID, kind: MediaIntelligenceVideoAsset.Kind)](./init%28id,kind%29.md)
   Creates a video asset with the specified identifier and kind.
-- [MediaIntelligenceVideoAsset.Kind](mediaintelligencevideoasset/kind-swift.enum.md)
+- [MediaIntelligenceVideoAsset.Kind](./kind-swift.enum.md)
   A value that describes the source of a video asset’s data.
 
 

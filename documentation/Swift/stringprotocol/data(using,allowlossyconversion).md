@@ -1,7 +1,8 @@
 # data(using:allowLossyConversion:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a `Data` containing a representation of the `String` encoded using a given encoding.
 

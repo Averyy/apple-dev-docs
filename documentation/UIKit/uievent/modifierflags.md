@@ -1,7 +1,8 @@
 # modifierFlags
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of modifier keys that are pressed for the current event.
 
@@ -18,9 +19,14 @@ The set of modifier keys that are pressed for the current event.
 var modifierFlags: UIKeyModifierFlags { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIKeyModifierFlags modifierFlags;
+```
+
 ## See Also
 
-- [struct UIKeyModifierFlags](uikeymodifierflags.md)
+### Getting the modifier flags
+- [struct UIKeyModifierFlags](../uikeymodifierflags.md)
   Constants that indicate which modifier keys are pressed.
 
 

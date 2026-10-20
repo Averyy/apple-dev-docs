@@ -1,7 +1,8 @@
 # ASAuthorizationAppleIDRequest
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An OpenID authorization request that relies on the user’s Apple ID.
 
@@ -20,34 +21,39 @@ An OpenID authorization request that relies on the user’s Apple ID.
 class ASAuthorizationAppleIDRequest
 ```
 
+```objc
+@interface ASAuthorizationAppleIDRequest : ASAuthorizationOpenIDRequest
+```
+
 ## Topics
 
 ### Setting the User
-- [var user: String?](asauthorizationappleidrequest/user.md)
+- [var user: String?](./asauthorizationappleidrequest/user.md)
   An identifier associated with the user’s Apple ID.
 
 ## Relationships
 
 ### Inherits From
-- [ASAuthorizationOpenIDRequest](asauthorizationopenidrequest.md)
+- [ASAuthorizationOpenIDRequest](./asauthorizationopenidrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func createRequest() -> ASAuthorizationAppleIDRequest](asauthorizationappleidprovider/createrequest.md)
+### Creating Requests
+- [func createRequest() -> ASAuthorizationAppleIDRequest](./asauthorizationappleidprovider/createrequest%28%29.md)
   Creates a new Apple ID authorization request.
-- [class ASAuthorizationOpenIDRequest](asauthorizationopenidrequest.md)
+- [class ASAuthorizationOpenIDRequest](./asauthorizationopenidrequest.md)
   An OpenID authorization request.
 
 

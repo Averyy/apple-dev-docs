@@ -1,23 +1,28 @@
 # SKTransition
 
 **Framework**: SpriteKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object used to perform an animated transition to a new scene.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class SKTransition
+```
+
+```objc
+@interface SKTransition : NSObject
 ```
 
 #### Overview
@@ -35,67 +40,68 @@ When you present a new scene in a view that is already presenting a scene, you h
 ## Topics
 
 ### Creating Transitions
-- [Transitioning Between Two Scenes](transitioning-between-two-scenes.md)
-- [Configuring Whether Animations Play During the Transition](configuring-whether-animations-play-during-the-transition.md)
-- [class func crossFade(withDuration: TimeInterval) -> SKTransition](sktransition/crossfade(withduration:).md)
+- [Transitioning Between Two Scenes](./transitioning-between-two-scenes.md)
+- [Configuring Whether Animations Play During the Transition](./configuring-whether-animations-play-during-the-transition.md)
+- [class func crossFade(withDuration: TimeInterval) -> SKTransition](./sktransition/crossfade%28withduration%29.md)
   Creates a cross fade transition.
-- [class func doorsCloseHorizontal(withDuration: TimeInterval) -> SKTransition](sktransition/doorsclosehorizontal(withduration:).md)
+- [class func doorsCloseHorizontal(withDuration: TimeInterval) -> SKTransition](./sktransition/doorsclosehorizontal%28withduration%29.md)
   Creates a transition where the new scene appears as a pair of closing horizontal doors.
-- [class func doorsCloseVertical(withDuration: TimeInterval) -> SKTransition](sktransition/doorsclosevertical(withduration:).md)
+- [class func doorsCloseVertical(withDuration: TimeInterval) -> SKTransition](./sktransition/doorsclosevertical%28withduration%29.md)
   Creates a transition where the new scene appears as a pair of closing vertical doors.
-- [class func doorsOpenHorizontal(withDuration: TimeInterval) -> SKTransition](sktransition/doorsopenhorizontal(withduration:).md)
+- [class func doorsOpenHorizontal(withDuration: TimeInterval) -> SKTransition](./sktransition/doorsopenhorizontal%28withduration%29.md)
   Creates a transition where the new scene appears as a pair of opening horizontal doors.
-- [class func doorsOpenVertical(withDuration: TimeInterval) -> SKTransition](sktransition/doorsopenvertical(withduration:).md)
+- [class func doorsOpenVertical(withDuration: TimeInterval) -> SKTransition](./sktransition/doorsopenvertical%28withduration%29.md)
   Creates a transition where the new scene appears as a pair of opening vertical doors.
-- [class func doorway(withDuration: TimeInterval) -> SKTransition](sktransition/doorway(withduration:).md)
+- [class func doorway(withDuration: TimeInterval) -> SKTransition](./sktransition/doorway%28withduration%29.md)
   Creates a transition where the previous scene disappears as a pair of opening doors.
-- [class func fade(with: UIColor, duration: TimeInterval) -> SKTransition](sktransition/fade(with:duration:).md)
+- [class func fade(with: UIColor, duration: TimeInterval) -> SKTransition](./sktransition/fade%28with,duration%29.md)
   Creates a transition that first fades to a constant color and then fades to the new scene.
-- [class func fade(withDuration: TimeInterval) -> SKTransition](sktransition/fade(withduration:).md)
+- [class func fade(withDuration: TimeInterval) -> SKTransition](./sktransition/fade%28withduration%29.md)
   Creates a transition that first fades to black and then fades to the new scene.
-- [class func flipHorizontal(withDuration: TimeInterval) -> SKTransition](sktransition/fliphorizontal(withduration:).md)
+- [class func flipHorizontal(withDuration: TimeInterval) -> SKTransition](./sktransition/fliphorizontal%28withduration%29.md)
   Creates a transition where the two scenes are flipped across a horizontal line running through the center of the view.
-- [class func flipVertical(withDuration: TimeInterval) -> SKTransition](sktransition/flipvertical(withduration:).md)
+- [class func flipVertical(withDuration: TimeInterval) -> SKTransition](./sktransition/flipvertical%28withduration%29.md)
   Creates a transition where the two scenes are flipped across a vertical line running through the center of the view.
-- [class func moveIn(with: SKTransitionDirection, duration: TimeInterval) -> SKTransition](sktransition/movein(with:duration:).md)
+- [class func moveIn(with: SKTransitionDirection, duration: TimeInterval) -> SKTransition](./sktransition/movein%28with,duration%29.md)
   Creates a transition where the new scene moves in on top of the old scene.
-- [class func push(with: SKTransitionDirection, duration: TimeInterval) -> SKTransition](sktransition/push(with:duration:).md)
+- [class func push(with: SKTransitionDirection, duration: TimeInterval) -> SKTransition](./sktransition/push%28with,duration%29.md)
   Creates a transition where the new scene moves in, pushing the old scene out of the view.
-- [class func reveal(with: SKTransitionDirection, duration: TimeInterval) -> SKTransition](sktransition/reveal(with:duration:).md)
+- [class func reveal(with: SKTransitionDirection, duration: TimeInterval) -> SKTransition](./sktransition/reveal%28with,duration%29.md)
   Creates a transition where the old scene moves out of the view, revealing the new scene underneath it.
-- [init(ciFilter: CIFilter, duration: TimeInterval)](sktransition/init(cifilter:duration:)-451za.md)
+- [init(ciFilter: CIFilter, duration: TimeInterval)](./sktransition/init%28cifilter,duration%29-451za.md)
   Creates a transition that uses a Core Image filter to perform the transition.
 ### Pausing
-- [var pausesIncomingScene: Bool](sktransition/pausesincomingscene.md)
+- [var pausesIncomingScene: Bool](./sktransition/pausesincomingscene.md)
   A Boolean value that determines whether the incoming scene is paused during the transition.
-- [var pausesOutgoingScene: Bool](sktransition/pausesoutgoingscene.md)
+- [var pausesOutgoingScene: Bool](./sktransition/pausesoutgoingscene.md)
   A Boolean value that determines whether the outgoing scene is paused during the transition.
 ### Constants
-- [enum SKTransitionDirection](sktransitiondirection.md)
+- [enum SKTransitionDirection](./sktransitiondirection.md)
   For some transitions, the direction in which the transition is performed.
 ### Initializers
-- [init(CIFilter: CIFilter, duration: TimeInterval)](sktransition/init(cifilter:duration:)-9b6m8.md)
+- [init(CIFilter: CIFilter, duration: TimeInterval)](./sktransition/init%28cifilter,duration%29-9b6m8.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var scene: SKScene?](skview/scene.md)
+### Displaying a Scene
+- [var scene: SKScene?](./skview/scene.md)
   The scene currently presented by this view.
-- [func presentScene(SKScene?)](skview/presentscene(_:).md)
+- [func presentScene(SKScene?)](./skview/presentscene%28_%29.md)
   Presents a scene.
-- [func presentScene(SKScene, transition: SKTransition)](skview/presentscene(_:transition:).md)
+- [func presentScene(SKScene, transition: SKTransition)](./skview/presentscene%28_,transition%29.md)
   Transitions from the current scene to a new scene.
 
 

@@ -1,7 +1,8 @@
 # CTTextTabGetLocation(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the tab’s ruler location.
 
@@ -20,6 +21,10 @@ Returns the tab’s ruler location.
 func CTTextTabGetLocation(_ tab: CTTextTab) -> Double
 ```
 
+```c
+extern double CTTextTabGetLocation(CTTextTabRef tab);
+```
+
 #### Return Value
 
 The tab’s ruler location relative to the back margin.
@@ -30,9 +35,10 @@ The tab’s ruler location relative to the back margin.
 
 ## See Also
 
-- [func CTTextTabGetAlignment(CTTextTab) -> CTTextAlignment](cttexttabgetalignment(_:).md)
+### Getting Text Tab Data
+- [func CTTextTabGetAlignment(CTTextTab) -> CTTextAlignment](./cttexttabgetalignment%28_%29.md)
   Returns the text alignment of the tab.
-- [func CTTextTabGetOptions(CTTextTab) -> CFDictionary?](cttexttabgetoptions(_:).md)
+- [func CTTextTabGetOptions(CTTextTab) -> CFDictionary?](./cttexttabgetoptions%28_%29.md)
   Returns the dictionary of attributes associated with the tab.
 
 

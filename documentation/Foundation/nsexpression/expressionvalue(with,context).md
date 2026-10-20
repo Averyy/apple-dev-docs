@@ -1,7 +1,8 @@
 # expressionValue(with:context:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Evaluates an expression using a specified object and context.
 
@@ -20,6 +21,10 @@ Evaluates an expression using a specified object and context.
 func expressionValue(with object: Any?, context: NSMutableDictionary?) -> Any?
 ```
 
+```objc
+- (id) expressionValueWithObject:(id) object context:(NSMutableDictionary *) context;
+```
+
 #### Return Value
 
 The evaluated object.
@@ -27,15 +32,18 @@ The evaluated object.
 ## Parameters
 
 - `object`: The object against which the expression is evaluated.
-- `context`: A dictionary that the expression can use to store temporary state for one predicate evaluation. Can be `nil`. Note that `context` is mutable, and that it can only be accessed during the evaluation of the expression. You must not attempt to retain it for use elsewhere.
+- `context`: A dictionary that the expression can use to store temporary state for one predicate evaluation. Can be `nil`.
+
+  Note that `context` is mutable, and that it can only be accessed during the evaluation of the expression. You must not attempt to retain it for use elsewhere.
 
 ## See Also
 
-- [func allowEvaluation()](nsexpression/allowevaluation.md)
+### Evaluating an Expression
+- [func allowEvaluation()](./allowevaluation%28%29.md)
   Forces a securely decoded expression to allow evaluation.
-- [var `false`: NSExpression](nsexpression/false.md)
+- [var `false`: NSExpression](./false.md)
   An expression to evalutate if a conditional expression’s predicate evaluates to false.
-- [var `true`: NSExpression](nsexpression/true.md)
+- [var `true`: NSExpression](./true.md)
   An expression to evalutate if a conditional expression’s predicate evaluates to true.
 
 

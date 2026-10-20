@@ -1,7 +1,8 @@
 # MPSImageBatchIncrementReadCount(_:_:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Increments or decrements the read count of an image batch by a specified amount.
 
@@ -17,6 +18,10 @@ Increments or decrements the read count of an image batch by a specified amount.
 
 ```swift
 func MPSImageBatchIncrementReadCount(_ batch: [MPSImage], _ amount: Int) -> Int
+```
+
+```c
+NSUInteger MPSImageBatchIncrementReadCount(MPSImageBatch *batch, NSInteger amount);
 ```
 
 

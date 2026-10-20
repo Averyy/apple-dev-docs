@@ -1,7 +1,8 @@
 # unregisterClient(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command UnregisterClient
 
@@ -17,7 +18,15 @@ Command UnregisterClient
 ## Declaration
 
 ```swift
+func unregisterClient(with params: MTRICDManagementClusterUnregisterClientParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func unregisterClient(with params: MTRICDManagementClusterUnregisterClientParams) async throws
+```
+
+```objc
+- (void) unregisterClientWithParams:(MTRICDManagementClusterUnregisterClientParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

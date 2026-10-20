@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Combine  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value that indicates whether two publishers are equivalent.
 
@@ -19,6 +20,8 @@ Returns a Boolean value that indicates whether two publishers are equivalent.
 ```swift
 static func == (lhs: Publishers.Concatenate<Prefix, Suffix>, rhs: Publishers.Concatenate<Prefix, Suffix>) -> Bool
 ```
+
+Available when `Prefix` conforms to `Publisher`, `Prefix` conforms to `Equatable`, `Suffix` conforms to `Publisher`, `Suffix` conforms to `Equatable`, `Prefix.Failure` is `Suffix.Failure`, and `Prefix.Output` is `Suffix.Output`.
 
 #### Return Value
 

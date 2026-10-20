@@ -1,14 +1,15 @@
 # kHIDUsage_BCS_PDF_417
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_BCS_PDF_417 = 0x11B
 ```
 

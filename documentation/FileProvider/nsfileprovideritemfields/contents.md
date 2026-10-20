@@ -1,7 +1,8 @@
 # contents
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The item’s content.
 
@@ -18,13 +19,18 @@ The item’s content.
 static var contents: NSFileProviderItemFields { get }
 ```
 
+```c
+NSFileProviderItemContents
+```
+
 #### Discussion
 
 If the item is a directory, the content are the item’s children. If the item is a file, the content is the data saved on disk.
 
 ## See Also
 
-- [static var filename: NSFileProviderItemFields](nsfileprovideritemfields/filename.md)
+### Specifying the Required Fields
+- [static var filename: NSFileProviderItemFields](./filename.md)
   The item’s filename.
 
 

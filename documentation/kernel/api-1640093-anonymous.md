@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothHCILoopbackModeLocal](1640093-anonymous/kbluetoothhciloopbackmodelocal.md)
-- [kBluetoothHCILoopbackModeOff](1640093-anonymous/kbluetoothhciloopbackmodeoff.md)
-- [kBluetoothHCILoopbackModeRemote](1640093-anonymous/kbluetoothhciloopbackmoderemote.md)
+- [kBluetoothHCILoopbackModeLocal](./api-1640093-anonymous/kbluetoothhciloopbackmodelocal.md)
+- [kBluetoothHCILoopbackModeOff](./api-1640093-anonymous/kbluetoothhciloopbackmodeoff.md)
+- [kBluetoothHCILoopbackModeRemote](./api-1640093-anonymous/kbluetoothhciloopbackmoderemote.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # encode(_:to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a fitted transformer.
 
@@ -22,7 +23,8 @@ func encode(_ transformer: AnnotatedFeatureProvider<Base, UnwrappedInput>.Transf
 
 ## See Also
 
-- [func decode(from: inout any EstimatorDecoder) throws -> AnnotatedFeatureProvider<Base, UnwrappedInput>.Transformer](annotatedfeatureprovider/decode(from:).md)
+### Encoding and decoding
+- [func decode(from: inout any EstimatorDecoder) throws -> AnnotatedFeatureProvider<Base, UnwrappedInput>.Transformer](./decode%28from%29.md)
   Decodes a previously fitted transformer.
 
 

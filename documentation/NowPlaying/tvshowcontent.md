@@ -1,7 +1,8 @@
 # TVShowContent
 
 **Framework**: Now Playing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Content representing a TV show episode.
 
@@ -22,7 +23,7 @@ struct TVShowContent
 
 ## Mentions
 
-- [Publishing media sessions](publishing-media-sessions.md)
+- [Publishing media sessions](./publishing-media-sessions.md)
 
 #### Overview
 
@@ -31,47 +32,48 @@ Use this type for television series playback, including individual episodes.
 ## Topics
 
 ### Initializers
-- [init(id: String, episodeTitle: String, showName: String, duration: MediaDuration?, artwork: Artwork?)](tvshowcontent/init(id:episodetitle:showname:duration:artwork:).md)
+- [init(id: String, episodeTitle: String, showName: String, duration: MediaDuration?, artwork: Artwork?)](./tvshowcontent/init%28id,episodetitle,showname,duration,artwork%29.md)
   Creates TV show episode content.
-- [init(id: String, episodeTitle: String, showName: String, duration: MediaDuration?, artwork: Artwork, animatedArtwork: AnimatedArtwork?)](tvshowcontent/init(id:episodetitle:showname:duration:artwork:animatedartwork:).md)
+- [init(id: String, episodeTitle: String, showName: String, duration: MediaDuration?, artwork: Artwork, animatedArtwork: AnimatedArtwork?)](./tvshowcontent/init%28id,episodetitle,showname,duration,artwork,animatedartwork%29.md)
   Creates TV show episode content with static and animated artwork.
 ### Instance Properties
-- [let animatedArtwork: AnimatedArtwork?](tvshowcontent/animatedartwork.md)
+- [let animatedArtwork: AnimatedArtwork?](./tvshowcontent/animatedartwork.md)
   Animated artwork for this content.
-- [let artwork: Artwork?](tvshowcontent/artwork.md)
+- [let artwork: Artwork?](./tvshowcontent/artwork.md)
   Artwork for this content.
-- [let duration: MediaDuration?](tvshowcontent/duration.md)
+- [let duration: MediaDuration?](./tvshowcontent/duration.md)
   The duration of this content.
-- [let episodeTitle: String](tvshowcontent/episodetitle.md)
+- [let episodeTitle: String](./tvshowcontent/episodetitle.md)
   The title of the episode.
-- [let showName: String](tvshowcontent/showname.md)
+- [let showName: String](./tvshowcontent/showname.md)
   The name of the TV show.
-- [var type: MediaType](tvshowcontent/type.md)
+- [var type: MediaType](./tvshowcontent/type.md)
   The media type (always video for TV shows).
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [MediaContentRepresentable](mediacontentrepresentable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [MediaContentRepresentable](./mediacontentrepresentable.md)
 
 ## See Also
 
-- [protocol MediaContentRepresentable](mediacontentrepresentable.md)
+### Presenting content
+- [protocol MediaContentRepresentable](./mediacontentrepresentable.md)
   A protocol that describes media content being played.
-- [struct MusicContent](musiccontent.md)
+- [struct MusicContent](./musiccontent.md)
   Content representing a music track or song.
-- [struct PodcastContent](podcastcontent.md)
+- [struct PodcastContent](./podcastcontent.md)
   Content representing a podcast episode.
-- [struct MovieContent](moviecontent.md)
+- [struct MovieContent](./moviecontent.md)
   Content representing a movie.
-- [struct BookContent](bookcontent.md)
+- [struct BookContent](./bookcontent.md)
   Content representing an audiobook or book being read aloud.
-- [struct RadioContent](radiocontent.md)
+- [struct RadioContent](./radiocontent.md)
   Content representing a radio station or live audio stream.
-- [struct HomeMediaContent](homemediacontent.md)
+- [struct HomeMediaContent](./homemediacontent.md)
   Content representing home media or ambient content.
-- [struct GenericContent](genericcontent.md)
+- [struct GenericContent](./genericcontent.md)
   Content representing generic or unspecified media.
 
 

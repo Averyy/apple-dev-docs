@@ -1,12 +1,13 @@
 # addFontTrait(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a trait to the font.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,15 @@ Adds a trait to the font.
 func addFontTrait(_ sender: Any?)
 ```
 
+```objc
+- (void) addFontTrait:(id) sender;
+```
+
 #### Discussion
 
-By default, the action message is [`changeFont:`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/changefont:). This action method causes the receiver to send its action message up the responder chain.
+By default, the action message is [`changeFont:`](../../ObjectiveC/nsobject-swift.class/changefont_.md). This action method causes the receiver to send its action message up the responder chain.
 
-When a responder replies by providing a font to convert in a [`convert(_:)`](nsfontmanager/convert(_:).md) message, the receiver converts the font by adding the trait specified by `sender`. This trait is determined by sending a `tag` message to `sender` and interpreting it as a font trait mask for a [`convert(_:toHaveTrait:)`](nsfontmanager/convert(_:tohavetrait:).md) message.
+When a responder replies by providing a font to convert in a [`convert(_:)`](./convert%28_%29.md) message, the receiver converts the font by adding the trait specified by `sender`. This trait is determined by sending a `tag` message to `sender` and interpreting it as a font trait mask for a [`convert(_:toHaveTrait:)`](./convert%28_,tohavetrait%29.md) message.
 
 ## Parameters
 
@@ -26,17 +31,18 @@ When a responder replies by providing a font to convert in a [`convert(_:)`](nsf
 
 ## See Also
 
-- [func removeFontTrait(Any?)](nsfontmanager/removefonttrait(_:).md)
+### Sending Action Methods
+- [func removeFontTrait(Any?)](./removefonttrait%28_%29.md)
   Removes a trait from the font.
-- [func modifyFont(Any?)](nsfontmanager/modifyfont(_:).md)
+- [func modifyFont(Any?)](./modifyfont%28_%29.md)
   Modifies a trait of the font.
-- [func modifyFontViaPanel(Any?)](nsfontmanager/modifyfontviapanel(_:).md)
+- [func modifyFontViaPanel(Any?)](./modifyfontviapanel%28_%29.md)
   Modifies a font trait using input from the Font panel.
-- [func orderFrontStylesPanel(Any?)](nsfontmanager/orderfrontstylespanel(_:).md)
+- [func orderFrontStylesPanel(Any?)](./orderfrontstylespanel%28_%29.md)
   Opens the Font Styles panel.
-- [func orderFrontFontPanel(Any?)](nsfontmanager/orderfrontfontpanel(_:).md)
+- [func orderFrontFontPanel(Any?)](./orderfrontfontpanel%28_%29.md)
   Opens the Font panel, creating it if necessary, and displays that panel in front of the app’s windows.
-- [enum NSFontAction](nsfontaction.md)
+- [enum NSFontAction](../nsfontaction.md)
   Actions that modify a font.
 
 

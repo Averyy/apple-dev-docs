@@ -1,7 +1,8 @@
 # stalenessInterval
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum length of time that may have elapsed since the store previously fetched data before fulfilling a fault issues a new fetch.
 
@@ -10,7 +11,7 @@ The maximum length of time that may have elapsed since the store previously fetc
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ The maximum length of time that may have elapsed since the store previously fetc
 var stalenessInterval: TimeInterval { get set }
 ```
 
+```objc
+@property NSTimeInterval stalenessInterval;
+```
+
 #### Discussion
 
-The staleness interval controls whether *fulfilling a fault* uses data previously fetched by the application, or issues a new fetch (see also [`refresh(_:mergeChanges:)`](nsmanagedobjectcontext/refresh(_:mergechanges:).md)). The staleness interval does *not* affect objects currently in use (that is, it is *not* used to automatically update property values from a persistent store after a certain period of time).
+The staleness interval controls whether *fulfilling a fault* uses data previously fetched by the application, or issues a new fetch (see also [`refresh(_:mergeChanges:)`](./refresh%28_,mergechanges%29.md)). The staleness interval does *not* affect objects currently in use (that is, it is *not* used to automatically update property values from a persistent store after a certain period of time).
 
 The expiration value is applied on a per object basis. It is the relative time until cached data (snapshots) should be considered stale. For example, a value of 300.0 informs the context to utilize cached information for no more than 5 minutes after an object was originally fetched.
 

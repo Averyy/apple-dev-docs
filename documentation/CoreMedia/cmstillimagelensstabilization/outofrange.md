@@ -1,7 +1,8 @@
 # CMStillImageLensStabilization.outOfRange
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The motion of the device or duration of the capture was outside of what the stabilization mechanism could support.
 

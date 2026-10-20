@@ -1,7 +1,8 @@
 # kAXAttributedStringForRangeParameterizedAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The CFAttributedStringType representation of the text associated with this accessibility object that is specified by the given range.
 
@@ -12,6 +13,10 @@ The CFAttributedStringType representation of the text associated with this acces
 
 ```swift
 var kAXAttributedStringForRangeParameterizedAttribute: String { get }
+```
+
+```c
+#define kAXAttributedStringForRangeParameterizedAttribute
 ```
 
 

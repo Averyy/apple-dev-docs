@@ -1,7 +1,8 @@
 # AccessibilityLabeledPairRole.label
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This element represents the label part of the label / content pair.
 
@@ -26,7 +27,8 @@ For example, it might be the explanatory text to the left of a control, describi
 
 ## See Also
 
-- [AccessibilityLabeledPairRole.content](accessibilitylabeledpairrole/content.md)
+### Getting roles
+- [AccessibilityLabeledPairRole.content](./content.md)
   This element represents the content part of the label / content pair.
 
 

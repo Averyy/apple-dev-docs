@@ -7,12 +7,12 @@ Overrideable method to control the open / close behaviour of an IOService.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool handleIsOpen(
  const IOService *forClient ) const;
 ```
 
-#### Return_value
+#### Return Value
 
 Returns true if the specific, or any, client has the IOService open.
 
@@ -26,17 +26,18 @@ See IOService for discussion.
 
 ## See Also
 
-- [getFireWireUnit](iofirewiresbp2target/1812999-getfirewireunit.md)
+### Miscellaneous
+- [getFireWireUnit](./api-1812999-getfirewireunit.md)
   Returns an IOFireWireUnit object.
-- [handleClose](iofirewiresbp2target/1813009-handleclose.md)
+- [handleClose](./api-1813009-handleclose.md)
   Overrideable method to control the open / close behaviour of an IOService.
-- [handleOpen](iofirewiresbp2target/1813037-handleopen.md)
+- [handleOpen](./api-1813037-handleopen.md)
   Overrideable method to control the open / close behaviour of an IOService.
-- [matchPropertyTable](iofirewiresbp2target/1813051-matchpropertytable.md)
+- [matchPropertyTable](./api-1813051-matchpropertytable.md)
   Implements SBP2 specific matching.
-- [start](iofirewiresbp2target/1813074-start.md)
+- [start](./api-1813074-start.md)
   During an IOService instantiation, the start method is called when the IOService has been selected to run on the provider.
-- [stop](iofirewiresbp2target/1813099-stop.md)
+- [stop](./api-1813099-stop.md)
   During an IOService termination, the stop method is called in its clients before they are detached & it is destroyed.
 
 

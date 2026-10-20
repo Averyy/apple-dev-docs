@@ -1,7 +1,8 @@
 # MPSGraphPaddingMode.constant
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Constant
 
@@ -17,6 +18,10 @@ Constant
 
 ```swift
 case constant
+```
+
+```c
+MPSGraphPaddingModeConstant
 ```
 
 

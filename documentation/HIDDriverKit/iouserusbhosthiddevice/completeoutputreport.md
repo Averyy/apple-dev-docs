@@ -1,15 +1,16 @@
 # CompleteOutputReport
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 20.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void CompleteOutputReport(OSAction *action, IOReturn status, uint32_t actualByteCount, uint64_t completionTimestamp);
 ```
 

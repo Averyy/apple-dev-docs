@@ -1,7 +1,8 @@
 # appendInterpolation(_:default:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Interpolates the given optional value’s textual representation, or the specified default string, into the string literal being created.
 

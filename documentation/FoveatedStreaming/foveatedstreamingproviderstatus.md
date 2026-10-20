@@ -1,9 +1,10 @@
 # FoveatedStreamingProviderStatus
 
 **Framework**: Foveated Streaming  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-An enum describing the state of a [`FoveatedStreamingExtension`](foveatedstreamingextension.md).
+An enum describing the state of a [`FoveatedStreamingExtension`](./foveatedstreamingextension.md).
 
 **Availability**:
 - visionOS 27.0+
@@ -17,25 +18,25 @@ enum FoveatedStreamingProviderStatus
 ## Topics
 
 ### Enumeration Cases
-- [FoveatedStreamingProviderStatus.connected](foveatedstreamingproviderstatus/connected.md)
+- [FoveatedStreamingProviderStatus.connected](./foveatedstreamingproviderstatus/connected.md)
   Connected and streaming.
-- [FoveatedStreamingProviderStatus.connecting](foveatedstreamingproviderstatus/connecting.md)
-  [`connect(context:)`](foveatedstreamingextension/connect(context:).md) is in progress.
-- [FoveatedStreamingProviderStatus.disconnected(error:)](foveatedstreamingproviderstatus/disconnected(error:).md)
+- [FoveatedStreamingProviderStatus.connecting](./foveatedstreamingproviderstatus/connecting.md)
+  [`connect(context:)`](./foveatedstreamingextension/connect%28context%29.md) is in progress.
+- [FoveatedStreamingProviderStatus.disconnected(error:)](./foveatedstreamingproviderstatus/disconnected%28error%29.md)
   The session has been disconnected for the provided reason.
-- [FoveatedStreamingProviderStatus.disconnecting](foveatedstreamingproviderstatus/disconnecting.md)
-  [`disconnect()`](foveatedstreamingextension/disconnect().md) has been called.
+- [FoveatedStreamingProviderStatus.disconnecting](./foveatedstreamingproviderstatus/disconnecting.md)
+  [`disconnect()`](./foveatedstreamingextension/disconnect%28%29.md) has been called.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

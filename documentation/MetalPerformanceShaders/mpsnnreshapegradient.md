@@ -1,7 +1,8 @@
 # MPSNNReshapeGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 12.1+
@@ -17,26 +18,30 @@
 class MPSNNReshapeGradient
 ```
 
+```objc
+@interface MPSNNReshapeGradient : MPSCNNGradientKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnreshapegradient/init(coder:device:).md)
-- [init(device: any MTLDevice)](mpsnnreshapegradient/init(device:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsnnreshapegradient/init%28coder,device%29.md)
+- [init(device: any MTLDevice)](./mpsnnreshapegradient/init%28device%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNGradientKernel](mpscnngradientkernel.md)
+- [MPSCNNGradientKernel](./mpscnngradientkernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

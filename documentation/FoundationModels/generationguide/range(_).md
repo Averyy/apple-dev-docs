@@ -1,7 +1,8 @@
 # range(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Enforces values that fall within a range.
 
@@ -17,6 +18,22 @@ Enforces values that fall within a range.
 
 ```swift
 static func range(_ range: ClosedRange<Decimal>) -> GenerationGuide<Decimal>
+```
+
+Available when `Value` is `Decimal`.
+
+**Other overloads**:
+
+```swift
+static func range(_ range: ClosedRange<Double>) -> GenerationGuide<Double>
+```
+
+```swift
+static func range(_ range: ClosedRange<Float>) -> GenerationGuide<Float>
+```
+
+```swift
+static func range(_ range: ClosedRange<Int>) -> GenerationGuide<Int>
 ```
 
 #### Discussion

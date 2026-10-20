@@ -1,7 +1,8 @@
 # defaultAction(forKey:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the default action for the current class.
 
@@ -19,6 +20,10 @@ Returns the default action for the current class.
 class func defaultAction(forKey event: String) -> (any CAAction)?
 ```
 
+```objc
++ (id<CAAction>) defaultActionForKey:(NSString *) event;
+```
+
 #### Return Value
 
 Returns a suitable action object for the given key or `nil` of no action object was associated with that key.
@@ -33,9 +38,10 @@ Classes that want to provide default actions can override this method and use it
 
 ## See Also
 
-- [func action(forKey: String) -> (any CAAction)?](calayer/action(forkey:).md)
+### Getting the layer’s actions
+- [func action(forKey: String) -> (any CAAction)?](./action%28forkey%29.md)
   Returns the action object assigned to the specified key.
-- [var actions: [String : any CAAction]?](calayer/actions.md)
+- [var actions: [String : any CAAction]?](./actions.md)
   A dictionary containing layer actions.
 
 

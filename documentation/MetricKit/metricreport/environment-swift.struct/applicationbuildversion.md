@@ -1,7 +1,8 @@
 # applicationBuildVersion
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the bundle version key in the app’s property list.
 

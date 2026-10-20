@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the delegate object.
 
@@ -15,9 +16,13 @@ Specifies the delegate object.
 unowned(unsafe) var delegate: (any IKDeviceBrowserViewDelegate)! { get set }
 ```
 
+```objc
+@property (assign) id<IKDeviceBrowserViewDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate object must conform to the [`IKDeviceBrowserViewDelegate`](ikdevicebrowserviewdelegate.md) protocol.
+The delegate object must conform to the [`IKDeviceBrowserViewDelegate`](../ikdevicebrowserviewdelegate.md) protocol.
 
 
 ---

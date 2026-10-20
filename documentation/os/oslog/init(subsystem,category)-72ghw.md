@@ -1,7 +1,8 @@
 # init(subsystem:category:)
 
 **Framework**: os  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a log using the specified subsystem and system-defined category.
 
@@ -11,7 +12,7 @@ Creates a log using the specified subsystem and system-defined category.
 - Mac Catalyst 12.0+
 - macOS 10.14+
 - tvOS 12.0+
-- visionOS ?+
+- visionOS
 - watchOS 5.0+
 
 ## Declaration
@@ -31,9 +32,10 @@ convenience init(subsystem: String, category: OSLog.Category)
 
 ## See Also
 
-- [convenience init(subsystem: String, category: String)](oslog/init(subsystem:category:)-17gyy.md)
+### Creating a Log
+- [convenience init(subsystem: String, category: String)](./init%28subsystem,category%29-17gyy.md)
   Creates a log using the specified subsystem and category.
-- [struct Category](oslog/category.md)
+- [struct Category](./category.md)
   System-defined categories that identify well-known parts of your app.
 
 

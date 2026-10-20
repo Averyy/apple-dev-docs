@@ -1,7 +1,8 @@
 # setSourceFeatureChannelMaxCount(_:at:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func setSourceFeatureChannelMaxCount(_ count: Int, at index: Int)
+```
+
+```objc
+- (void) setSourceFeatureChannelMaxCount:(NSUInteger) count atIndex:(NSUInteger) index;
 ```
 
 

@@ -1,7 +1,8 @@
 # toNumber
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts a supported numeric type to a JavaScript number.
 
@@ -10,7 +11,7 @@ Converts a supported numeric type to a JavaScript number.
 
 ## Declaration
 
-```swift
+```
 static number toNumber();
 ```
 

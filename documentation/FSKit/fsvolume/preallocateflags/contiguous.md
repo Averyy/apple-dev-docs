@@ -1,7 +1,8 @@
 # contiguous
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Allocates contiguous space.
 
@@ -14,13 +15,18 @@ Allocates contiguous space.
 static var contiguous: FSVolume.PreallocateFlags { get }
 ```
 
+```c
+FSPreallocateFlagsContiguous
+```
+
 ## See Also
 
-- [static var all: FSVolume.PreallocateFlags](fsvolume/preallocateflags/all.md)
+### Declaring preallocation behaviors
+- [static var all: FSVolume.PreallocateFlags](./all.md)
   Allocates all requested space or no space at all.
-- [static var persist: FSVolume.PreallocateFlags](fsvolume/preallocateflags/persist.md)
+- [static var persist: FSVolume.PreallocateFlags](./persist.md)
   Allocates space that isn’t freed when deleting the descriptor.
-- [static var fromEOF: FSVolume.PreallocateFlags](fsvolume/preallocateflags/fromeof.md)
+- [static var fromEOF: FSVolume.PreallocateFlags](./fromeof.md)
   Allocates space from the physical end of file.
 
 

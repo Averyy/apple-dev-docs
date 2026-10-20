@@ -1,7 +1,8 @@
 # description
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A string containing the description of the error.
 
@@ -10,17 +11,18 @@ A string containing the description of the error.
 
 ## Declaration
 
-```swift
+```
 readonly attribute String description;
 ```
 
 ## See Also
 
-- [code](tverror/1627334-code.md)
+### Getting Error Properties
+- [code](./api-1627334-code.md)
   The error code.
-- [domain](tverror/1627426-domain.md)
+- [domain](./api-1627426-domain.md)
   A string containing the error domain.
-- [userInfo](tverror/1627388-userinfo.md)
+- [userInfo](./api-1627388-userinfo.md)
   The user info dictionary.
 
 

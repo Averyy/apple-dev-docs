@@ -1,7 +1,8 @@
 # HKMetadataKeyAudioExposureDuration
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The audio exposure event’s duration.
 
@@ -19,13 +20,18 @@ The audio exposure event’s duration.
 let HKMetadataKeyAudioExposureDuration: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyAudioExposureDuration;
+```
+
 #### Discussion
 
-Use this key on headphone audio exposure events. It takes an [`HKQuantity`](hkquantity.md) containing the audio level measured in units of time.
+Use this key on headphone audio exposure events. It takes an [`HKQuantity`](./hkquantity.md) containing the audio level measured in units of time.
 
 ## See Also
 
-- [let HKMetadataKeyAudioExposureLevel: String](hkmetadatakeyaudioexposurelevel.md)
+### Metadata Keys
+- [let HKMetadataKeyAudioExposureLevel: String](./hkmetadatakeyaudioexposurelevel.md)
   The audio level associated with an audio event.
 
 

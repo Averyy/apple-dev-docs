@@ -1,7 +1,8 @@
 # ClothBodyEvents.NewSimulationPositions
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An event type that a cloth body publishes (before simulation update) when its new positions are available.
 
@@ -23,23 +24,23 @@ This event should be treated as having a non-escapable lifetime. Some of its dat
 ## Topics
 
 ### Accessing local space positions
-- [func withLocalSpacePositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](clothbodyevents/newsimulationpositions/withlocalspacepositions(_:).md)
+- [func withLocalSpacePositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](./newsimulationpositions/withlocalspacepositions%28_%29.md)
   Provides access to the new simulation positions of the body’s particles, in local space.
 ### Accessing simulation space positions
-- [func withSimulationSpacePositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](clothbodyevents/newsimulationpositions/withsimulationspacepositions(_:).md)
+- [func withSimulationSpacePositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](./newsimulationpositions/withsimulationspacepositions%28_%29.md)
   Provides access to the new simulation positions of the body’s particles, in simulation space.
 ### Identifying the event source
-- [let bodyEntity: Entity](clothbodyevents/newsimulationpositions/bodyentity.md)
+- [let bodyEntity: Entity](./newsimulationpositions/bodyentity.md)
   The entity that has the body component that this event originates from.
-- [let updateCount: UInt64](clothbodyevents/newsimulationpositions/updatecount.md)
+- [let updateCount: UInt64](./newsimulationpositions/updatecount.md)
   The simulation update that this event originates from.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

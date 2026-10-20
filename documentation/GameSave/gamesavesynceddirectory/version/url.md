@@ -1,7 +1,8 @@
 # url
 
 **Framework**: GameSave  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of a directory where you read and write game-save data.
 
@@ -24,7 +25,8 @@ You define the format and structure of files you write in this directory.
 
 ## See Also
 
-- [var isLocal: Bool](gamesavesynceddirectory/version/islocal.md)
+### Accessing saved game state
+- [var isLocal: Bool](./islocal.md)
   `true` if the directory version is local; otherwise `false`.
 
 

@@ -1,7 +1,8 @@
 # liveTextButtonVisible
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the Live Text button appears.
 
@@ -21,13 +22,14 @@ When a person taps the Live Text button, it highlights recognized items in the i
 
 ## See Also
 
-- [var isSupplementaryInterfaceHidden: Bool](imageanalysisoverlayview/issupplementaryinterfacehidden.md)
+### Querying the interface state
+- [var isSupplementaryInterfaceHidden: Bool](./issupplementaryinterfacehidden.md)
   A Boolean value that indicates whether the view hides supplementary interface objects.
-- [func hasInteractiveItem(at: CGPoint) -> Bool](imageanalysisoverlayview/hasinteractiveitem(at:).md)
+- [func hasInteractiveItem(at: CGPoint) -> Bool](./hasinteractiveitem%28at%29.md)
   Returns a Boolean value that indicates whether active text, data detectors, or supplementary interface objects exist at the specified point.
-- [func hasSupplementaryInterface(at: CGPoint) -> Bool](imageanalysisoverlayview/hassupplementaryinterface(at:).md)
+- [func hasSupplementaryInterface(at: CGPoint) -> Bool](./hassupplementaryinterface%28at%29.md)
   Returns a Boolean value that indicates whether supplementary interface objects exist at the specified point.
-- [var selectableItemsHighlighted: Bool](imageanalysisoverlayview/selectableitemshighlighted.md)
+- [var selectableItemsHighlighted: Bool](./selectableitemshighlighted.md)
   A Boolean value that indicates whether the overlay view highlights actionable text or data that the analyzer detects in text.
 
 

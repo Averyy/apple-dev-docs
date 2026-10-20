@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: USDKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the component at the specified index.
 

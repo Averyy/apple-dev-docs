@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 20.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,13 +19,13 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOMaxBusStall10usec](3689532-anonymous/kiomaxbusstall10usec.md)
-- [kIOMaxBusStall20usec](3689532-anonymous/kiomaxbusstall20usec.md)
-- [kIOMaxBusStall25usec](3689532-anonymous/kiomaxbusstall25usec.md)
-- [kIOMaxBusStall30usec](3689532-anonymous/kiomaxbusstall30usec.md)
-- [kIOMaxBusStall40usec](3689532-anonymous/kiomaxbusstall40usec.md)
-- [kIOMaxBusStall5usec](3689532-anonymous/kiomaxbusstall5usec.md)
-- [kIOMaxBusStallNone](3689532-anonymous/kiomaxbusstallnone.md)
+- [kIOMaxBusStall10usec](./api-3689532-anonymous/kiomaxbusstall10usec.md)
+- [kIOMaxBusStall20usec](./api-3689532-anonymous/kiomaxbusstall20usec.md)
+- [kIOMaxBusStall25usec](./api-3689532-anonymous/kiomaxbusstall25usec.md)
+- [kIOMaxBusStall30usec](./api-3689532-anonymous/kiomaxbusstall30usec.md)
+- [kIOMaxBusStall40usec](./api-3689532-anonymous/kiomaxbusstall40usec.md)
+- [kIOMaxBusStall5usec](./api-3689532-anonymous/kiomaxbusstall5usec.md)
+- [kIOMaxBusStallNone](./api-3689532-anonymous/kiomaxbusstallnone.md)
 
 
 ---

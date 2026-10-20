@@ -1,12 +1,14 @@
 # NSUnknownUserInfoKey
 
-**Framework**: Objective-C Runtime
+**Framework**: Objective-C Runtime  
+**Role**: Article
 
 The key for which the key value coding operation failed.
 
 ## See Also
 
-- [NSTargetObjectUserInfoKey](nstargetobjectuserinfokey.md)
+### Constants
+- [NSTargetObjectUserInfoKey](./nstargetobjectuserinfokey.md)
   The object on which the key value coding operation failed.
 
 

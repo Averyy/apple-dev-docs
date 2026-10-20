@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Relinquishes a previously acquired lock.
@@ -21,9 +22,14 @@ Relinquishes a previously acquired lock.
 func unlock()
 ```
 
+```objc
+- (void) unlock;
+```
+
 ## See Also
 
-- [func lock()](nslocking/lock.md)
+### Working with Locks
+- [func lock()](./lock%28%29.md)
   Attempts to acquire a lock, blocking a thread’s execution until the lock can be acquired.
 
 

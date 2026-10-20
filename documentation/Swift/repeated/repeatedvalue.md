@@ -1,7 +1,8 @@
 # repeatedValue
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of every element in this collection.
 

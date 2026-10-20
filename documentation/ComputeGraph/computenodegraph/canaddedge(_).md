@@ -1,7 +1,8 @@
 # canAddEdge(_:)
 
 **Framework**: Compute Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the given edge can be added to the graph.
 
@@ -12,7 +13,7 @@ Returns whether the given edge can be added to the graph.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -22,11 +23,11 @@ func canAddEdge(_ edge: ComputeNodeGraph.Edge) -> Bool
 
 #### Return Value
 
-`true` if calling [`addEdge(_:)`](computenodegraph/addedge(_:).md) with this edge would succeed.
+`true` if calling [`addEdge(_:)`](./addedge%28_%29.md) with this edge would succeed.
 
 #### Discussion
 
-This is the non-throwing preflight check for [`addEdge(_:)`](computenodegraph/addedge(_:).md). Use it to validate a connection — for example, to highlight compatible ports during drag-and-drop — without modifying the graph.
+This is the non-throwing preflight check for [`addEdge(_:)`](./addedge%28_%29.md). Use it to validate a connection — for example, to highlight compatible ports during drag-and-drop — without modifying the graph.
 
 ## Parameters
 

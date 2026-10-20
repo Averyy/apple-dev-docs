@@ -1,7 +1,8 @@
 # lifeSpanVariation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines a plus/minus range (in seconds) from which a value is randomly selected to offset `lifeSpan`. Defaults to 0.2.
 

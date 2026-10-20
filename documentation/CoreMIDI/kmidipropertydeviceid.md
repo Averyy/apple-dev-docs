@@ -1,7 +1,8 @@
 # kMIDIPropertyDeviceID
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The user-visible System Exclusive (SysEx) identifier of a device or entity.
 
@@ -18,19 +19,24 @@ The user-visible System Exclusive (SysEx) identifier of a device or entity.
 let kMIDIPropertyDeviceID: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyDeviceID;
+```
+
 #### Discussion
 
 MIDI drivers can set this property on their devices or entities. Studio setup editors can allow the user to set this property on external devices.
 
 ## See Also
 
-- [let kMIDIPropertyName: CFString](kmidipropertyname.md)
+### Identification
+- [let kMIDIPropertyName: CFString](./kmidipropertyname.md)
   A name for a device, entity, or endpoint.
-- [let kMIDIPropertyModel: CFString](kmidipropertymodel.md)
+- [let kMIDIPropertyModel: CFString](./kmidipropertymodel.md)
   The model name of a device or endpoint.
-- [let kMIDIPropertyManufacturer: CFString](kmidipropertymanufacturer.md)
+- [let kMIDIPropertyManufacturer: CFString](./kmidipropertymanufacturer.md)
   The manufacturer name of a device or endpoint.
-- [let kMIDIPropertyUniqueID: CFString](kmidipropertyuniqueid.md)
+- [let kMIDIPropertyUniqueID: CFString](./kmidipropertyuniqueid.md)
   The unique identifier of a device, entity, or, endpoint.
 
 

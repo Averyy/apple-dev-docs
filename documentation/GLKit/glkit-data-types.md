@@ -1,20 +1,22 @@
 # GLKit Data Types
 
-**Framework**: GLKit
+**Framework**: GLKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Data Types
-- [typealias GLKTextureLoaderCallback](glktextureloadercallback.md)
+- [typealias GLKTextureLoaderCallback](./glktextureloadercallback.md)
   Signature for the block executed after an asynchronous texture loading operation completes.
-- [typealias GLKVertexAttributeParameters](glkvertexattributeparameters.md)
+- [typealias GLKVertexAttributeParameters](./glkvertexattributeparameters.md)
 
 ## See Also
 
-- [GLKit Structures](glkit-structures.md)
-- [GLKit Enumerations](glkit-enumerations.md)
-- [GLKit Constants](glkit-constants.md)
-- [GLKit Functions](glkit-functions.md)
+### Reference
+- [GLKit Structures](./glkit-structures.md)
+- [GLKit Enumerations](./glkit-enumerations.md)
+- [GLKit Constants](./glkit-constants.md)
+- [GLKit Functions](./glkit-functions.md)
 
 
 ---

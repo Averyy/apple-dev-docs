@@ -1,7 +1,8 @@
 # pixelFormatType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format type of this portrait effects matte’s internal image.
 
@@ -20,17 +21,22 @@ The pixel format type of this portrait effects matte’s internal image.
 var pixelFormatType: OSType { get }
 ```
 
+```objc
+@property (readonly) OSType pixelFormatType;
+```
+
 #### Discussion
 
-The only supported pixel format type for the matting image is [`kCVPixelFormatType_OneComponent8`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_onecomponent8).
+The only supported pixel format type for the matting image is [`kCVPixelFormatType_OneComponent8`](../../CoreVideo/kcvpixelformattype_onecomponent8.md).
 
 ## See Also
 
-- [Extracting Portrait Effects matte image data from a photo](extracting-portrait-effects-matte-image-data-from-a-photo.md)
+### Examining a Portrait Effects matte
+- [Extracting Portrait Effects matte image data from a photo](../extracting-portrait-effects-matte-image-data-from-a-photo.md)
   Check for portrait effects matte metadata in existing images.
-- [var mattingImage: CVPixelBuffer](avportraiteffectsmatte/mattingimage.md)
+- [var mattingImage: CVPixelBuffer](./mattingimage.md)
   The portrait effects matte’s internal image, formatted as a pixel buffer.
-- [func dictionaryRepresentation(forAuxiliaryDataType: AutoreleasingUnsafeMutablePointer<NSString?>?) -> [AnyHashable : Any]?](avportraiteffectsmatte/dictionaryrepresentation(forauxiliarydatatype:).md)
+- [func dictionaryRepresentation(forAuxiliaryDataType: AutoreleasingUnsafeMutablePointer<NSString?>?) -> [AnyHashable : Any]?](./dictionaryrepresentation%28forauxiliarydatatype%29.md)
   A dictionary of primitive map information used for writing an image file with a portrait effects matte.
 
 

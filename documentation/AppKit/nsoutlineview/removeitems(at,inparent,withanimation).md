@@ -1,7 +1,8 @@
 # removeItems(at:inParent:withAnimation:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes items at the given indexes in the given parent with the specified optional animations.
 
@@ -14,13 +15,17 @@ Removes items at the given indexes in the given parent with the specified option
 func removeItems(at indexes: IndexSet, inParent parent: Any?, withAnimation animationOptions: NSTableView.AnimationOptions = [])
 ```
 
+```objc
+- (void) removeItemsAtIndexes:(NSIndexSet *) indexes inParent:(id) parent withAnimation:(NSTableViewAnimationOptions) animationOptions;
+```
+
 #### Discussion
 
-This method parallels the [`removeRows(at:withAnimation:)`](nstableview/removerows(at:withanimation:).md) method of [`NSTableView`](nstableview.md) and is used in a way similar to the [`removeObjects(at:)`](https://developer.apple.com/documentation/foundation/nsmutablearray/removeobjects(at:)) method of [`NSMutableArray`](https://developer.apple.com/documentation/foundation/nsmutablearray). The method does nothing if `parent` is not expanded. If any of the child items is expanded, then all of its child rows are also be removed.
+This method parallels the [`removeRows(at:withAnimation:)`](../nstableview/removerows%28at,withanimation%29.md) method of [`NSTableView`](../nstableview.md) and is used in a way similar to the [`removeObjects(at:)`](../../Foundation/nsmutablearray/removeobjects%28at%29.md) method of [`NSMutableArray`](../../Foundation/nsmutablearray.md). The method does nothing if `parent` is not expanded. If any of the child items is expanded, then all of its child rows are also be removed.
 
-> **Note**:  [`NSCell`](nscell.md)-based outline views must first call [`beginUpdates()`](nstableview/beginupdates().md) before calling this method.
+> **Note**:  [`NSCell`](../nscell.md)-based outline views must first call [`beginUpdates()`](../nstableview/beginupdates%28%29.md) before calling this method.
 
-You can call this method multiple times within the same [`beginUpdates()`](nstableview/beginupdates().md)/[`endUpdates()`](nstableview/endupdates().md) block; changes work just like modifying an array. Removing an item at an index beyond what is available throws an exception.
+You can call this method multiple times within the same [`beginUpdates()`](../nstableview/beginupdates%28%29.md)/[`endUpdates()`](../nstableview/endupdates%28%29.md) block; changes work just like modifying an array. Removing an item at an index beyond what is available throws an exception.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ You can call this method multiple times within the same [`beginUpdates()`](nstab
 
 ## See Also
 
-- [func insertItems(at: IndexSet, inParent: Any?, withAnimation: NSTableView.AnimationOptions)](nsoutlineview/insertitems(at:inparent:withanimation:).md)
+### Manipulating Items
+- [func insertItems(at: IndexSet, inParent: Any?, withAnimation: NSTableView.AnimationOptions)](./insertitems%28at,inparent,withanimation%29.md)
   Inserts new items at the given indexes in the given parent with the specified optional animations.
-- [func moveItem(at: Int, inParent: Any?, to: Int, inParent: Any?)](nsoutlineview/moveitem(at:inparent:to:inparent:).md)
+- [func moveItem(at: Int, inParent: Any?, to: Int, inParent: Any?)](./moveitem%28at,inparent,to,inparent%29.md)
   Moves an item at a given index in the given parent to a new index in a new parent.
 
 

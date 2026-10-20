@@ -1,7 +1,8 @@
 # maxPropertyExchangeRequests
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var maxPropertyExchangeRequests: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUInteger maxPropertyExchangeRequests;
 ```
 
 

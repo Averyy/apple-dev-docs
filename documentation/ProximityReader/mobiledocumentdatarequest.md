@@ -1,7 +1,8 @@
 # MobileDocumentDataRequest
 
 **Framework**: ProximityReader  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents a mobile document data request.
 
@@ -19,49 +20,50 @@ protocol MobileDocumentDataRequest : MobileDocumentRequest
 ## Topics
 
 ### Handling the response
-- [protocol MobileDocumentDataResponse](mobiledocumentdataresponse.md)
+- [protocol MobileDocumentDataResponse](./mobiledocumentdataresponse.md)
   A type that represents a mobile document data response.
 
 ## Relationships
 
 ### Inherits From
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MobileDocumentRequest](mobiledocumentrequest.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MobileDocumentRequest](./mobiledocumentrequest.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [MobileDriversLicenseDataRequest](mobiledriverslicensedatarequest.md)
-- [MobileNationalIDCardDataRequest](mobilenationalidcarddatarequest.md)
-- [MobilePhotoIDDataRequest](mobilephotoiddatarequest.md)
+- [MobileDriversLicenseDataRequest](./mobiledriverslicensedatarequest.md)
+- [MobileNationalIDCardDataRequest](./mobilenationalidcarddatarequest.md)
+- [MobilePhotoIDDataRequest](./mobilephotoiddatarequest.md)
 
 ## See Also
 
-- [struct MobileDriversLicenseDisplayRequest](mobiledriverslicensedisplayrequest.md)
+### Mobile document requests
+- [struct MobileDriversLicenseDisplayRequest](./mobiledriverslicensedisplayrequest.md)
   A mobile driver’s license request that retrieves elements from the holder and displays the results onscreen for visual inspection.
-- [struct MobileDriversLicenseDataRequest](mobiledriverslicensedatarequest.md)
+- [struct MobileDriversLicenseDataRequest](./mobiledriverslicensedatarequest.md)
   A mobile driver’s license request that retrieves elements from the holder and returns the validated document elements.
-- [struct MobileDriversLicenseRawDataRequest](mobiledriverslicenserawdatarequest.md)
+- [struct MobileDriversLicenseRawDataRequest](./mobiledriverslicenserawdatarequest.md)
   A mobile driver’s license request which retrieves elements from the holder and returns the raw response data for processing.
-- [struct MobileNationalIDCardDisplayRequest](mobilenationalidcarddisplayrequest.md)
+- [struct MobileNationalIDCardDisplayRequest](./mobilenationalidcarddisplayrequest.md)
   A mobile national ID card request that retrieves elements from the holder and displays the results onscreen for visual inspection.
-- [struct MobileNationalIDCardDataRequest](mobilenationalidcarddatarequest.md)
+- [struct MobileNationalIDCardDataRequest](./mobilenationalidcarddatarequest.md)
   A mobile national ID card request that retrieves elements from the holder and returns the validated document elements.
-- [struct MobileNationalIDCardRawDataRequest](mobilenationalidcardrawdatarequest.md)
+- [struct MobileNationalIDCardRawDataRequest](./mobilenationalidcardrawdatarequest.md)
   A mobile national ID card request which retrieves elements from the holder and returns the raw response data for processing.
-- [struct MobileDocumentDisplayRequest](mobiledocumentdisplayrequest.md)
+- [struct MobileDocumentDisplayRequest](./mobiledocumentdisplayrequest.md)
   A mobile document request that retrieves elements from the holder and displays the results onscreen for visual inspection.
-- [protocol MobileDocumentRequest](mobiledocumentrequest.md)
+- [protocol MobileDocumentRequest](./mobiledocumentrequest.md)
   A type that represents a mobile document request.
-- [protocol MobileDocumentRawDataRequest](mobiledocumentrawdatarequest.md)
+- [protocol MobileDocumentRawDataRequest](./mobiledocumentrawdatarequest.md)
   A type that represents a mobile document raw data request.
-- [struct MobilePhotoIDDataRequest](mobilephotoiddatarequest.md)
+- [struct MobilePhotoIDDataRequest](./mobilephotoiddatarequest.md)
   A photo ID request that retrieves elements from the holder and returns the validated document elements.
-- [struct MobilePhotoIDRawDataRequest](mobilephotoidrawdatarequest.md)
+- [struct MobilePhotoIDRawDataRequest](./mobilephotoidrawdatarequest.md)
   A photo ID request which retrieves elements from the holder and returns the raw response data for processing.
-- [struct MobileDocumentAnyOfDataRequest](mobiledocumentanyofdatarequest.md)
+- [struct MobileDocumentAnyOfDataRequest](./mobiledocumentanyofdatarequest.md)
   A type that describes a data request for any mobile document from a group of requests.
-- [struct MobileDocumentAnyOfRawDataRequest](mobiledocumentanyofrawdatarequest.md)
+- [struct MobileDocumentAnyOfRawDataRequest](./mobiledocumentanyofrawdatarequest.md)
   A type that describes a raw data request for any mobile document from a group of requests.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 The certificate associated with the Identity.
@@ -22,7 +23,8 @@ func certificate(using request: JPKIPassContents.AuthenticationRequest<Self.Iden
 
 ## See Also
 
-- [associatedtype IdentityType : JPKIPassContents.Identity](jpkipasscontents/identity/identitytype.md)
+### Data associated with the identity
+- [associatedtype IdentityType : JPKIPassContents.Identity](./identitytype.md)
   The type associated with the protocol.
 
 

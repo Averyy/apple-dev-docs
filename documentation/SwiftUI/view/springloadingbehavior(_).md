@@ -1,7 +1,8 @@
 # springLoadingBehavior(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the spring loading behavior this view.
 
@@ -58,9 +59,10 @@ HStack {
 
 ## See Also
 
-- [var springLoadingBehavior: SpringLoadingBehavior](environmentvalues/springloadingbehavior.md)
+### Configuring spring loading
+- [var springLoadingBehavior: SpringLoadingBehavior](../environmentvalues/springloadingbehavior.md)
   The behavior of spring loaded interactions for the views associated with this environment.
-- [struct SpringLoadingBehavior](springloadingbehavior.md)
+- [struct SpringLoadingBehavior](../springloadingbehavior.md)
   The options for controlling the spring loading behavior of views.
 
 

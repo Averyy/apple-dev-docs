@@ -1,7 +1,8 @@
 # microphoneCaptureDeviceID
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var microphoneCaptureDeviceID: String? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) NSString * microphoneCaptureDeviceID;
 ```
 
 

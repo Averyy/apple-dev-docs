@@ -1,7 +1,8 @@
 # newDescriptor()
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 class func newDescriptor() -> Self
+```
+
+```objc
++ (MTRServerCluster *) newDescriptorCluster;
 ```
 
 

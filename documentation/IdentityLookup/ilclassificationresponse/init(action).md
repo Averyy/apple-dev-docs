@@ -1,7 +1,8 @@
 # init(action:)
 
 **Framework**: SMS and Call Reporting  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new response using the provided classification.
 
@@ -15,6 +16,10 @@ Creates a new response using the provided classification.
 
 ```swift
 init(action: ILClassificationAction)
+```
+
+```objc
+- (instancetype) initWithClassificationAction:(ILClassificationAction) action;
 ```
 
 ## Parameters

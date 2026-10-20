@@ -1,14 +1,15 @@
 # IOUSBHostCISetupTransferData1bmRequestTypePhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCISetupTransferData1bmRequestTypePhase = IOUSBBitRangePhase(0, 7)
 ```
 

@@ -1,16 +1,19 @@
 # MLSoundClassifier.ModelParameters.ValidationData.dictionary(_:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A validation dataset represented by a dictionary.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 10.15+
+- iOS 15.0+ - Deprecated in 16.0
+- iPadOS 15.0+ - Deprecated in 16.0
+- Mac Catalyst 15.0+ - Deprecated in 16.0
+- macOS 10.15+ - Deprecated in 11.0
 - visionOS 1.0+
+
+> **Deprecated**: Use DataSource.filesByLabel to provide dictionary validation data instead.
 
 ## Declaration
 
@@ -24,11 +27,12 @@ case dictionary([String : [URL]])
 
 ## See Also
 
-- [MLSoundClassifier.ModelParameters.ValidationData.split(strategy:)](mlsoundclassifier/modelparameters-swift.struct/validationdata/split(strategy:).md)
+### Designating validation data
+- [MLSoundClassifier.ModelParameters.ValidationData.split(strategy:)](./split%28strategy%29.md)
   A validation dataset derived by randomly selecting a portion of the sound classifier’s training dataset using the split strategy.
-- [MLSoundClassifier.ModelParameters.ValidationData.dataSource(_:)](mlsoundclassifier/modelparameters-swift.struct/validationdata/datasource(_:).md)
+- [MLSoundClassifier.ModelParameters.ValidationData.dataSource(_:)](./datasource%28_%29.md)
   A validation dataset represented by a data source.
-- [MLSoundClassifier.ModelParameters.ValidationData.none](mlsoundclassifier/modelparameters-swift.struct/validationdata/none.md)
+- [MLSoundClassifier.ModelParameters.ValidationData.none](./none.md)
   An empty validation dataset that skips the model validation phase after training.
 
 

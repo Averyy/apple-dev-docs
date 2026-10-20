@@ -1,7 +1,8 @@
 # AppStoreVersionReleaseRequestCreateRequest.Data.Relationships.AppStoreVersion.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of the resource that you’re relating with the resource you’re creating.
 
@@ -10,14 +11,14 @@ The type and ID of the resource that you’re relating with the resource you’r
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionReleaseRequestCreateRequest.Data.Relationships.AppStoreVersion.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersions`
 
 
 ---

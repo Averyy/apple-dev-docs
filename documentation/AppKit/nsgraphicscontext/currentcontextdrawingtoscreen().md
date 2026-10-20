@@ -1,12 +1,13 @@
 # currentContextDrawingToScreen()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the current context is drawing to the screen.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ Returns a Boolean value that indicates whether the current context is drawing to
 class func currentContextDrawingToScreen() -> Bool
 ```
 
+```objc
++ (BOOL) currentContextDrawingToScreen;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the current context is drawing to the screen, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the current context is drawing to the screen, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-This convenience method is equivalent to sending [`isDrawingToScreen`](nsgraphicscontext/isdrawingtoscreen.md) to the result of [`current`](nsgraphicscontext/current.md).
+This convenience method is equivalent to sending [`isDrawingToScreen`](./isdrawingtoscreen.md) to the result of [`current`](./current.md).
 
 ## See Also
 
-- [var isDrawingToScreen: Bool](nsgraphicscontext/isdrawingtoscreen.md)
+### Testing the Drawing Destination
+- [var isDrawingToScreen: Bool](./isdrawingtoscreen.md)
   A Boolean value that indicates whether the drawing destination is the screen.
 
 

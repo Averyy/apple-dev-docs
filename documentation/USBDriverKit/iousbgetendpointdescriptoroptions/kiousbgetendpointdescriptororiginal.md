@@ -1,7 +1,8 @@
 # kIOUSBGetEndpointDescriptorOriginal
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The original descriptor used to create the pipe.
 
@@ -10,13 +11,14 @@ The original descriptor used to create the pipe.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBGetEndpointDescriptorOriginal
 ```
 
 ## See Also
 
-- [kIOUSBGetEndpointDescriptorCurrentPolicy](iousbgetendpointdescriptoroptions/kiousbgetendpointdescriptorcurrentpolicy.md)
+### Getting the Descriptor Options
+- [kIOUSBGetEndpointDescriptorCurrentPolicy](./kiousbgetendpointdescriptorcurrentpolicy.md)
   The descriptor controlling the current endpoint policy.
 
 

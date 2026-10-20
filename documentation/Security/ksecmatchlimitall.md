@@ -1,7 +1,8 @@
 # kSecMatchLimitAll
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A value that corresponds to matching an unlimited number of items.
 
@@ -20,14 +21,18 @@ A value that corresponds to matching an unlimited number of items.
 let kSecMatchLimitAll: CFString
 ```
 
+```c
+extern CFStringRef const kSecMatchLimitAll;
+```
+
 ## Mentions
 
-- [Searching for keychain items](searching-for-keychain-items.md)
-- [Storing Keys in the Keychain](storing-keys-in-the-keychain.md)
+- [Searching for keychain items](./searching-for-keychain-items.md)
+- [Storing Keys in the Keychain](./storing-keys-in-the-keychain.md)
 
 #### Discussion
 
-Use this value with the [`kSecMatchLimit`](ksecmatchlimit.md) key.
+Use this value with the [`kSecMatchLimit`](./ksecmatchlimit.md) key.
 
 
 ---

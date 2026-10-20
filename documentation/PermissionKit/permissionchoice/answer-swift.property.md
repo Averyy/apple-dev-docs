@@ -1,7 +1,8 @@
 # answer
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of answer this choice represents.
 
@@ -24,11 +25,12 @@ The system uses this value to style how the choice appears to the person making 
 
 ## See Also
 
-- [PermissionChoice.Answer](permissionchoice/answer-swift.enum.md)
+### Accessing answers
+- [PermissionChoice.Answer](./answer-swift.enum.md)
   An answer to the permission request.
-- [static let approve: PermissionChoice](permissionchoice/approve.md)
+- [static let approve: PermissionChoice](./approve.md)
   The system-preferred choice to approve a permission request.
-- [static let decline: PermissionChoice](permissionchoice/decline.md)
+- [static let decline: PermissionChoice](./decline.md)
   The system-preferred choice to decline a permission request.
 
 

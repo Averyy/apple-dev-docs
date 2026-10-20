@@ -1,7 +1,8 @@
 # keyAERangeStop
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies the last Apple event object in the desired range.
 

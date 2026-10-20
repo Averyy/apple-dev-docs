@@ -1,7 +1,8 @@
 # kSecPropertyKeyLabel
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is the label for a certificate property.
 
@@ -12,6 +13,10 @@ A key whose value is the label for a certificate property.
 
 ```swift
 let kSecPropertyKeyLabel: CFString
+```
+
+```c
+extern CFStringRef const kSecPropertyKeyLabel;
 ```
 
 #### Discussion

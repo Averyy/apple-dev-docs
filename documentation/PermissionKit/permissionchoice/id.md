@@ -1,7 +1,8 @@
 # id
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for this choice.
 
@@ -20,11 +21,12 @@ var id: String { get }
 
 #### Discussion
 
-> **Note**: This identifier must be globally unique, including across devices and on any server/s.
+> **Requires**: This identifier must be globally unique, including across devices and on any server/s.
 
 ## See Also
 
-- [var title: String](permissionchoice/title.md)
+### Identifying permissions
+- [var title: String](./title.md)
   The title of the choice that’s displayed to the person by the system.
 
 

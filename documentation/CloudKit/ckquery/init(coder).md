@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a query from a serialized instance.
 
@@ -10,7 +11,7 @@ Creates a query from a serialized instance.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,13 +21,18 @@ Creates a query from a serialized instance.
 init(coder aDecoder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder;
+```
+
 ## Parameters
 
 - `aDecoder`: The coder to use when deserializing the query.
 
 ## See Also
 
-- [convenience init(recordType: CKRecord.RecordType, predicate: NSPredicate)](ckquery/init(recordtype:predicate:).md)
+### Creating a Query
+- [convenience init(recordType: CKRecord.RecordType, predicate: NSPredicate)](./init%28recordtype,predicate%29.md)
   Creates a query with the specified record type and predicate.
 
 

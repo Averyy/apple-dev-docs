@@ -1,7 +1,8 @@
 # height
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The estimated height of the plane.
 
@@ -15,9 +16,14 @@ The estimated height of the plane.
 var height: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float height;
+```
+
 ## See Also
 
-- [var width: Float](arplaneextent/width.md)
+### Inspecting Plane Size
+- [var width: Float](./width.md)
   The estimated width of the plane.
 
 

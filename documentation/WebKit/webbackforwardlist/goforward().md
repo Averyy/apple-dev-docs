@@ -1,12 +1,13 @@
 # goForward()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves forward one item in the back-forward list.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Moves forward one item in the back-forward list.
 func goForward()
 ```
 
+```objc
+- (void) goForward;
+```
+
 #### Discussion
 
-This method works by changing the current item to the item that follows it. This method raises an [`internalInconsistencyException`](https://developer.apple.com/documentation/foundation/nsexceptionname/internalinconsistencyexception) exception if no item follows the current item.
+This method works by changing the current item to the item that follows it. This method raises an [`internalInconsistencyException`](../../Foundation/nsexceptionname/internalinconsistencyexception.md) exception if no item follows the current item.
 
 ## See Also
 
-- [func goBack()](webbackforwardlist/goback.md)
+### Moving Backward and Forward
+- [func goBack()](./goback%28%29.md)
   Moves backward one item in the back-forward list.
-- [func go(to: WebHistoryItem!)](webbackforwardlist/go(to:).md)
+- [func go(to: WebHistoryItem!)](./go%28to%29.md)
   Makes the specified item in the back-forward list the current item.
 
 

@@ -1,7 +1,8 @@
 # next(isolation:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Advances to and returns the result of the next child task.
 
@@ -30,7 +31,7 @@ The elements returned from this method appear in the order that the tasks *compl
 
 For more information about the iteration order and semantics, see `ThrowingTaskGroup.next()`
 
-> **Note**: The error thrown by the next child task that completes.
+> **Throws**: The error thrown by the next child task that completes.
 
 
 ---

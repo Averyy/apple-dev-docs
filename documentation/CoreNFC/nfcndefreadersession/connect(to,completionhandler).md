@@ -1,7 +1,8 @@
 # connect(to:completionHandler:)
 
 **Framework**: Core NFC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Connects the reader session to a tag and activates that tag.
 
@@ -13,7 +14,15 @@ Connects the reader session to a tag and activates that tag.
 ## Declaration
 
 ```swift
+func connect(to tag: any NFCNDEFTag, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func connect(to tag: any NFCNDEFTag) async throws
+```
+
+```objc
+- (void) connectToTag:(id<NFCNDEFTag>) tag completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -23,7 +32,11 @@ A tag stays connected until your app connects to a different tag or restarts pol
 ## Parameters
 
 - `tag`: A tag that the reader session should attempt connecting to.
-- `completionHandler`: A handler that the reader session invokes after completing the tag-connect request. The handler has the following parameter: - **error**: `nil` when the session successfully connects to the tag; otherwise, an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object. The session calls `completionHandler` on the dispatch queue provided when creating the [`NFCNDEFReaderSession`](nfcndefreadersession.md).
+- `completionHandler`: A handler that the reader session invokes after completing the tag-connect request. The handler has the following parameter:
+
+  - **error**: `nil` when the session successfully connects to the tag; otherwise, an [`NSError`](../../Foundation/nserror.md) object.
+
+  The session calls `completionHandler` on the dispatch queue provided when creating the [`NFCNDEFReaderSession`](../nfcndefreadersession.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value for the query item.
 
@@ -20,6 +21,10 @@ The value for the query item.
 var value: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * value;
+```
+
 #### Discussion
 
 For example, in the URL `http://www.apple.com/search/?q=iPad`, the `value` parameter is `iPad`.
@@ -28,9 +33,11 @@ This string is not percent-encoded.
 
 ## See Also
 
-- [var queryItems: [URLQueryItem]?](nsurlcomponents/queryitems.md)
+### Related Documentation
+- [var queryItems: [URLQueryItem]?](../nsurlcomponents/queryitems.md)
   The query URL component as an array of name/value pairs.
-- [var name: String](nsurlqueryitem/name.md)
+### Reading a Query Item’s Name and Value
+- [var name: String](./name.md)
   The name of the query item.
 
 

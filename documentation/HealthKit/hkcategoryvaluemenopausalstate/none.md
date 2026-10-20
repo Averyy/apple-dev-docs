@@ -1,7 +1,8 @@
 # HKCategoryValueMenopausalState.none
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates no menopausal state applies at the sample date.
 
@@ -19,9 +20,13 @@ A value that indicates no menopausal state applies at the sample date.
 case none
 ```
 
+```c
+HKCategoryValueMenopausalStateNone
+```
+
 ## Mentions
 
-- [Recording and querying menopausal state](recording-and-querying-menopausal-state.md)
+- [Recording and querying menopausal state](../recording-and-querying-menopausal-state.md)
 
 #### Discussion
 
@@ -29,9 +34,10 @@ This value represents a confirmed entry that the person is neither in menopause 
 
 ## See Also
 
-- [HKCategoryValueMenopausalState.menopause](hkcategoryvaluemenopausalstate/menopause.md)
+### Specifying a menopausal state value
+- [HKCategoryValueMenopausalState.menopause](./menopause.md)
   A value that indicates the person is in menopause at the sample date.
-- [HKCategoryValueMenopausalState.perimenopause](hkcategoryvaluemenopausalstate/perimenopause.md)
+- [HKCategoryValueMenopausalState.perimenopause](./perimenopause.md)
   A value that indicates the person is in perimenopause at the sample date.
 
 

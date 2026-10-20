@@ -1,17 +1,22 @@
 # NSFocusRingPlacement.above
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Draw the focus ring over an image.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case above
+```
+
+```c
+NSFocusRingAbove
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ Fill a shape to add the focus ring around the shape.
 
 ## See Also
 
-- [NSFocusRingPlacement.below](nsfocusringplacement/below.md)
+### Constants
+- [NSFocusRingPlacement.below](./below.md)
   Draw the focus ring under text.
-- [NSFocusRingPlacement.only](nsfocusringplacement/only.md)
+- [NSFocusRingPlacement.only](./only.md)
   Draw the focus ring if you don’t have an image or text.
 
 

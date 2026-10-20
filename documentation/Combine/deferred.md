@@ -1,7 +1,8 @@
 # Deferred
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that awaits subscription before running the supplied closure to create a publisher for the new subscriber.
 
@@ -23,33 +24,34 @@ struct Deferred<DeferredPublisher> where DeferredPublisher : Publisher
 ## Topics
 
 ### Creating a deferred publisher
-- [init(createPublisher: () -> DeferredPublisher)](deferred/init(createpublisher:).md)
+- [init(createPublisher: () -> DeferredPublisher)](./deferred/init%28createpublisher%29.md)
   Creates a deferred publisher.
 ### Declaring supporting types
-- [typealias Output](deferred/output.md)
+- [typealias Output](./deferred/output.md)
   The kind of values published by this publisher.
-- [typealias Failure](deferred/failure.md)
+- [typealias Failure](./deferred/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let createPublisher: () -> DeferredPublisher](deferred/createpublisher.md)
+- [let createPublisher: () -> DeferredPublisher](./deferred/createpublisher.md)
   The closure to execute when this deferred publisher receives a subscription.
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](./publisher.md)
 
 ## See Also
 
-- [class Future](future.md)
+### Convenience Publishers
+- [class Future](./future.md)
   A publisher that eventually produces a single value and then finishes or fails.
-- [struct Just](just.md)
+- [struct Just](./just.md)
   A publisher that emits an output to each subscriber just once, and then finishes.
-- [struct Empty](empty.md)
+- [struct Empty](./empty.md)
   A publisher that never publishes any values, and optionally finishes immediately.
-- [struct Fail](fail.md)
+- [struct Fail](./fail.md)
   A publisher that immediately terminates with the specified error.
-- [struct Record](record.md)
+- [struct Record](./record.md)
   A publisher that allows for recording a series of inputs and a completion, for later playback to each subscriber.
 
 

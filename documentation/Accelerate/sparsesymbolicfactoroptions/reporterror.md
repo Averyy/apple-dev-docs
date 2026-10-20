@@ -1,18 +1,19 @@
 # reportError
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The function for reporting parameter errors.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,31 +21,36 @@ The function for reporting parameter errors.
 var reportError: ((UnsafePointer<CChar>) -> Void)?
 ```
 
+```c
+void (*)(const char *) reportError;
+```
+
 ## Mentions
 
-- [Solving systems using direct methods](solving-systems-using-direct-methods.md)
+- [Solving systems using direct methods](../solving-systems-using-direct-methods.md)
 
 #### Discussion
 
-If this value is `nil`, the system reports errors using [`os_log_error`](https://developer.apple.com/documentation/os/os_log_error) and then `__builtin_trap()`.
+If this value is `nil`, the system reports errors using [`os_log_error`](../../os/os_log_error.md) and then `__builtin_trap()`.
 
 ## See Also
 
-- [var control: SparseControl_t](sparsesymbolicfactoroptions/control.md)
+### Inspecting Symbolic Factor Options
+- [var control: SparseControl_t](./control.md)
   The flags that control the computation.
-- [struct SparseControl_t](sparsecontrol_t.md)
+- [struct SparseControl_t](../sparsecontrol_t.md)
   Options that control the computation.
-- [var orderMethod: SparseOrder_t](sparsesymbolicfactoroptions/ordermethod.md)
+- [var orderMethod: SparseOrder_t](./ordermethod.md)
   The ordering algorithm.
-- [var order: UnsafeMutablePointer<Int32>?](sparsesymbolicfactoroptions/order.md)
+- [var order: UnsafeMutablePointer<Int32>?](./order.md)
   The user-supplied array for ordering.
-- [struct SparseOrder_t](sparseorder_t.md)
+- [struct SparseOrder_t](../sparseorder_t.md)
   Options that define which ordering algorithm to use.
-- [var ignoreRowsAndColumns: UnsafeMutablePointer<Int32>?](sparsesymbolicfactoroptions/ignorerowsandcolumns.md)
+- [var ignoreRowsAndColumns: UnsafeMutablePointer<Int32>?](./ignorerowsandcolumns.md)
   An array that contains row and column indices to ignore.
-- [var malloc: (Int) -> UnsafeMutableRawPointer?](sparsesymbolicfactoroptions/malloc.md)
+- [var malloc: (Int) -> UnsafeMutableRawPointer?](./malloc.md)
   The function for allocating any necessary storage.
-- [var free: (UnsafeMutableRawPointer?) -> Void](sparsesymbolicfactoroptions/free.md)
+- [var free: (UnsafeMutableRawPointer?) -> Void](./free.md)
   The function for freeing allocated storage.
 
 

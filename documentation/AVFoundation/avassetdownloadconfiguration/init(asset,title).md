@@ -1,7 +1,8 @@
 # init(asset:title:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a download configuration for a media asset.
 
@@ -18,6 +19,10 @@ Creates a download configuration for a media asset.
 
 ```swift
 convenience init(asset: AVURLAsset, title: String)
+```
+
+```objc
++ (instancetype) downloadConfigurationWithAsset:(AVURLAsset *) asset title:(NSString *) title;
 ```
 
 ## Parameters

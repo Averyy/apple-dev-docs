@@ -1,7 +1,8 @@
 # addLine(to:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends a straight line to the path.
 
@@ -9,7 +10,7 @@ Appends a straight line to the path.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,11 +20,15 @@ Appends a straight line to the path.
 func addLine(to point: CGPoint)
 ```
 
+```objc
+- (void) addLineToPoint:(CGPoint) point;
+```
+
 #### Discussion
 
 This method creates a straight line segment starting at the current point and ending at the point specified by the `point` parameter. After adding the line segment, this method updates the current point to the value in `point`.
 
-You must set the path’s current point (using the [`move(to:)`](uibezierpath/move(to:).md) method or through the previous creation of a line or curve segment) before you call this method. If the path is empty, this method does nothing.
+You must set the path’s current point (using the [`move(to:)`](./move%28to%29.md) method or through the previous creation of a line or curve segment) before you call this method. If the path is empty, this method does nothing.
 
 ## Parameters
 
@@ -31,23 +36,24 @@ You must set the path’s current point (using the [`move(to:)`](uibezierpath/mo
 
 ## See Also
 
-- [func move(to: CGPoint)](uibezierpath/move(to:).md)
+### Constructing a path
+- [func move(to: CGPoint)](./move%28to%29.md)
   Moves the path’s current point to the specified location.
-- [func addArc(withCenter: CGPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat, clockwise: Bool)](uibezierpath/addarc(withcenter:radius:startangle:endangle:clockwise:).md)
+- [func addArc(withCenter: CGPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat, clockwise: Bool)](./addarc%28withcenter,radius,startangle,endangle,clockwise%29.md)
   Appends an arc to the path.
-- [func addCurve(to: CGPoint, controlPoint1: CGPoint, controlPoint2: CGPoint)](uibezierpath/addcurve(to:controlpoint1:controlpoint2:).md)
+- [func addCurve(to: CGPoint, controlPoint1: CGPoint, controlPoint2: CGPoint)](./addcurve%28to,controlpoint1,controlpoint2%29.md)
   Appends a cubic Bézier curve to the path.
-- [func addQuadCurve(to: CGPoint, controlPoint: CGPoint)](uibezierpath/addquadcurve(to:controlpoint:).md)
+- [func addQuadCurve(to: CGPoint, controlPoint: CGPoint)](./addquadcurve%28to,controlpoint%29.md)
   Appends a quadratic Bézier curve to the path.
-- [func close()](uibezierpath/close.md)
+- [func close()](./close%28%29.md)
   Closes the most recent subpath.
-- [func removeAllPoints()](uibezierpath/removeallpoints.md)
+- [func removeAllPoints()](./removeallpoints%28%29.md)
   Removes all points from the path, effectively deleting all subpaths.
-- [func append(UIBezierPath)](uibezierpath/append(_:).md)
+- [func append(UIBezierPath)](./append%28_%29.md)
   Appends the contents of the specified path object to the path.
-- [var cgPath: CGPath](uibezierpath/cgpath.md)
+- [var cgPath: CGPath](./cgpath.md)
   The Core Graphics representation of the path.
-- [var currentPoint: CGPoint](uibezierpath/currentpoint.md)
+- [var currentPoint: CGPoint](./currentpoint.md)
   The current point in the graphics path.
 
 

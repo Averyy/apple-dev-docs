@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sigaction {
     ...
 };
@@ -17,8 +17,8 @@ struct sigaction {
 ## Topics
 
 ### Instance Properties
-- [sa_flags](sigaction/1591549-sa_flags.md)
-- [sa_mask](sigaction/1591547-sa_mask.md)
+- [sa_flags](./sigaction/api-1591549-sa_flags.md)
+- [sa_mask](./sigaction/api-1591547-sa_mask.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # respond(generating:options:contextOptions:metadata:prompt:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Produces a generable object as a response to a prompt.
 
@@ -22,7 +23,7 @@ nonisolated(nonsending) final func respond<Content>(generating type: Content.Typ
 
 #### Return Value
 
-[`GeneratedContent`](generatedcontent.md) containing the fields and values defined in the schema.
+[`GeneratedContent`](../generatedcontent.md) containing the fields and values defined in the schema.
 
 #### Discussion
 
@@ -38,15 +39,16 @@ Consider using the default value of `true` for `includeSchemaInPrompt`. The exce
 
 ## See Also
 
-- [func respond(options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<String>](languagemodelsession/respond(options:contextoptions:metadata:prompt:).md)
+### Generating a response with metadata
+- [func respond(options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<String>](./respond%28options,contextoptions,metadata,prompt%29.md)
   Produces a response to a prompt.
-- [func respond(schema: GenerationSchema, options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<GeneratedContent>](languagemodelsession/respond(schema:options:contextoptions:metadata:prompt:).md)
+- [func respond(schema: GenerationSchema, options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<GeneratedContent>](./respond%28schema,options,contextoptions,metadata,prompt%29.md)
   Produces a generated content type as a response to a prompt and schema.
-- [func respond(to:options:contextOptions:metadata:)](languagemodelsession/respond(to:options:contextoptions:metadata:).md)
+- [func respond(to:options:contextOptions:metadata:)](./respond%28to,options,contextoptions,metadata%29.md)
   Produces a response to a prompt.
-- [func respond(to:generating:options:contextOptions:metadata:)](languagemodelsession/respond(to:generating:options:contextoptions:metadata:).md)
+- [func respond(to:generating:options:contextOptions:metadata:)](./respond%28to,generating,options,contextoptions,metadata%29.md)
   Produces a generable object as a response to a prompt.
-- [func respond(to:schema:options:contextOptions:metadata:)](languagemodelsession/respond(to:schema:options:contextoptions:metadata:).md)
+- [func respond(to:schema:options:contextOptions:metadata:)](./respond%28to,schema,options,contextoptions,metadata%29.md)
   Produces a generated content type as a response to a prompt and schema.
 
 

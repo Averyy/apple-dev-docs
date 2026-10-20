@@ -1,14 +1,15 @@
 # kHIDUsage_Csmr_ACClose
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Csmr_ACClose = 0x203
 ```
 

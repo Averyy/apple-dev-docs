@@ -1,7 +1,8 @@
 # Request Mirroring
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Prompt the user to share their screen using AirPlay Mirroring.
 
@@ -17,7 +18,7 @@ Provide either the `DestinationName` or the `DestinationDeviceID`. If you provid
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -27,7 +28,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, macOS |
 | Required access right | N/A |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -75,9 +76,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object RequestMirroringCommand](requestmirroringcommand.md)
+- [object RequestMirroringCommand](./requestmirroringcommand.md)
   The command to prompt the user to share their screen using AirPlay Mirroring.
-- [object RequestMirroringResponse](requestmirroringresponse.md)
+- [object RequestMirroringResponse](./requestmirroringresponse.md)
   A response from the device after it processes the command to prompt the user to share their screen using AirPlay Mirroring.
 
 ## Endpoint
@@ -86,11 +87,19 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `RequestMirroringCommand`
+
 The request object the server returns for the Request Mirroring Command.
+
+## Responses
+
+- `200` OK (`RequestMirroringResponse`, `application/xml`): The response object the system returns for the Request Mirroring Command.
 
 ## See Also
 
-- [Stop Mirroring](stop-mirroring-command.md)
+### AirPlay mirroring
+- [Stop Mirroring](./stop-mirroring-command.md)
   Stop mirroring the display to another device.
 
 

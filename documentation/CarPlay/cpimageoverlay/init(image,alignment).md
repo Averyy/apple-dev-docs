@@ -1,7 +1,8 @@
 # init(image:alignment:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an overlay with a UIImage.
 
@@ -14,6 +15,10 @@ Initialize an overlay with a UIImage.
 
 ```swift
 init(image: UIImage, alignment: CPImageOverlay.Alignment)
+```
+
+```objc
+- (instancetype) initWithImage:(UIImage *) image alignment:(CPImageOverlayAlignment) alignment;
 ```
 
 ## Parameters

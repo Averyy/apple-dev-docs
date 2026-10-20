@@ -1,23 +1,28 @@
 # AVAudio3DVectorOrientation
 
 **Framework**: AVFAudio  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents two orthogonal vectors that describe the orientation of the listener in 3D space.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct AVAudio3DVectorOrientation
+```
+
+```c
+struct AVAudio3DVectorOrientation;
 ```
 
 #### Overview
@@ -27,31 +32,32 @@ Two orthogonal vectors describe the orientation of the listener. The forward vec
 ## Topics
 
 ### Creating a vector orientation
-- [init()](avaudio3dvectororientation/init.md)
+- [init()](./avaudio3dvectororientation/init%28%29.md)
   Creates a 3D vector orientation instance.
-- [init(forward: AVAudio3DVector, up: AVAudio3DVector)](avaudio3dvectororientation/init(forward:up:).md)
+- [init(forward: AVAudio3DVector, up: AVAudio3DVector)](./avaudio3dvectororientation/init%28forward,up%29.md)
   Creates a 3D vector orientation instance using the forward and up vectors you specify.
-- [func AVAudioMake3DVectorOrientation(AVAudio3DVector, AVAudio3DVector) -> AVAudio3DVectorOrientation](avaudiomake3dvectororientation(_:_:).md)
+- [func AVAudioMake3DVectorOrientation(AVAudio3DVector, AVAudio3DVector) -> AVAudio3DVectorOrientation](./avaudiomake3dvectororientation%28_,_%29.md)
   Creates a 3D vector orientation instance using the forward and up vectors you specify.
 ### Getting vector orientation properties
-- [var forward: AVAudio3DVector](avaudio3dvectororientation/forward.md)
+- [var forward: AVAudio3DVector](./avaudio3dvectororientation/forward.md)
   The forward vector points in the direction that the listener faces.
-- [var up: AVAudio3DVector](avaudio3dvectororientation/up.md)
+- [var up: AVAudio3DVector](./avaudio3dvectororientation/up.md)
   The up vector is orthogonal to the forward vector and points upward from the listener’s head.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct AVAudio3DPoint](avaudio3dpoint.md)
+### Positions and orientations
+- [struct AVAudio3DPoint](./avaudio3dpoint.md)
   A structure that represents a point in 3D space.
-- [typealias AVAudio3DVector](avaudio3dvector.md)
+- [typealias AVAudio3DVector](./avaudio3dvector.md)
   A structure that represents a vector in 3D space, in degrees.
-- [struct AVAudio3DAngularOrientation](avaudio3dangularorientation.md)
+- [struct AVAudio3DAngularOrientation](./avaudio3dangularorientation.md)
   A structure that represents the angular orientation of the listener in 3D space.
 
 

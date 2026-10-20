@@ -1,7 +1,8 @@
 # splitView(_:constrainMaxCoordinate:ofSubviewAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the delegate to constrain the maximum coordinate limit of a divider when the user drags it.
 
@@ -13,6 +14,10 @@ Allows the delegate to constrain the maximum coordinate limit of a divider when 
 ```swift
 @MainActor
 optional func splitView(_ splitView: NSSplitView, constrainMaxCoordinate proposedMaximumPosition: CGFloat, ofSubviewAt dividerIndex: Int) -> CGFloat
+```
+
+```objc
+- (CGFloat) splitView:(NSSplitView *) splitView constrainMaxCoordinate:(CGFloat) proposedMaximumPosition ofSubviewAt:(NSInteger) dividerIndex;
 ```
 
 #### Return Value
@@ -35,11 +40,12 @@ If the split bars are horizontal (views are one on top of the other), `proposedM
 
 ## See Also
 
-- [func splitView(NSSplitView, constrainMinCoordinate: CGFloat, ofSubviewAt: Int) -> CGFloat](nssplitviewdelegate/splitview(_:constrainmincoordinate:ofsubviewat:).md)
+### Adjusting Subviews Manually
+- [func splitView(NSSplitView, constrainMinCoordinate: CGFloat, ofSubviewAt: Int) -> CGFloat](./splitview%28_,constrainmincoordinate,ofsubviewat%29.md)
   Allows the delegate to constrain the minimum coordinate limit of a divider when the user drags it.
-- [func splitView(NSSplitView, resizeSubviewsWithOldSize: NSSize)](nssplitviewdelegate/splitview(_:resizesubviewswitholdsize:).md)
+- [func splitView(NSSplitView, resizeSubviewsWithOldSize: NSSize)](./splitview%28_,resizesubviewswitholdsize%29.md)
   Allows the delegate to specify custom sizing behavior for the subviews of the split view.
-- [func splitView(NSSplitView, shouldAdjustSizeOfSubview: NSView) -> Bool](nssplitviewdelegate/splitview(_:shouldadjustsizeofsubview:).md)
+- [func splitView(NSSplitView, shouldAdjustSizeOfSubview: NSView) -> Bool](./splitview%28_,shouldadjustsizeofsubview%29.md)
   Allows the delegate to specify whether to resize the subview.
 
 

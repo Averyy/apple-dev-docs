@@ -1,7 +1,8 @@
 # init(_:pickerOptionContent:confirmation:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -18,9 +19,12 @@
 @preconcurrency init(_ configuration: SubscriptionStoreControlStyleConfiguration, @ViewBuilder pickerOptionContent: @escaping (SubscriptionStoreControlStyleConfiguration.PickerOption) -> PickerContent, @ViewBuilder confirmation: @escaping (SubscriptionStoreControlStyleConfiguration.Option) -> ConfirmationContent)
 ```
 
+Available when `PickerContent` conforms to `View` and `ConfirmationContent` conforms to `View`.
+
 ## See Also
 
-- [init(pickerContent: () -> PickerContent, confirmation: (SubscriptionStoreControlStyleConfiguration.Option) -> ConfirmationContent)](subscriptionstorepicker/init(pickercontent:confirmation:).md)
+### Creating a subscription store picker
+- [init(pickerContent: () -> PickerContent, confirmation: (SubscriptionStoreControlStyleConfiguration.Option) -> ConfirmationContent)](./init%28pickercontent,confirmation%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:size:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new window placement with an absolute position and optional size.
 
@@ -12,6 +13,16 @@ Creates a new window placement with an absolute position and optional size.
 
 ```swift
 init(_ position: CGPoint? = nil, size: CGSize? = nil)
+```
+
+**Other overloads**:
+
+```swift
+init(_ position: UnitPoint, size: CGSize? = nil)
+```
+
+```swift
+init(_ position: WindowPlacement.Position? = nil, size: CGSize? = nil)
 ```
 
 #### Discussion

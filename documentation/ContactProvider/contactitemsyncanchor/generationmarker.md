@@ -1,7 +1,8 @@
 # generationMarker
 
 **Framework**: ContactProvider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value specific to your data source identifying the database generation you’re enumerating for changes.
 
@@ -17,7 +18,8 @@ var generationMarker: Data
 
 ## See Also
 
-- [var offset: Int](contactitemsyncanchor/offset.md)
+### Inspecting sync anchor properties
+- [var offset: Int](./offset.md)
   An offset from the anchor’s generation marker.
 
 

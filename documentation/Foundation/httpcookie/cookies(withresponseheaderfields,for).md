@@ -1,7 +1,8 @@
 # cookies(withResponseHeaderFields:for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an array of HTTP cookies that corresponds to the provided response header fields for the provided URL.
 
@@ -20,6 +21,10 @@ Creates an array of HTTP cookies that corresponds to the provided response heade
 class func cookies(withResponseHeaderFields headerFields: [String : String], for URL: URL) -> [HTTPCookie]
 ```
 
+```objc
++ (NSArray<NSHTTPCookie *> *) cookiesWithResponseHeaderFields:(NSDictionary<NSString *,NSString *> *) headerFields forURL:(NSURL *) URL;
+```
+
 #### Return Value
 
 The array of created cookies.
@@ -34,12 +39,13 @@ If `headerFields` doesn’t specify a path for a given cookie, the cookie is cre
 
 ## Parameters
 
-- `headerFields`: The header fields used to create the [`HTTPCookie`](httpcookie.md) objects.
+- `headerFields`: The header fields used to create the [`HTTPCookie`](../httpcookie.md) objects.
 - `URL`: The URL associated with the created cookies.
 
 ## See Also
 
-- [init?(properties: [HTTPCookiePropertyKey : Any])](httpcookie/init(properties:).md)
+### Creating cookies
+- [init?(properties: [HTTPCookiePropertyKey : Any])](./init%28properties%29.md)
   Initializes an HTTP cookie object with the given cookie properties.
 
 

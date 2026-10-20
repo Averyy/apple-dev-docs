@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The rectangular region of the input image that your Core Image Processor Kernel can use to provide the output.
@@ -20,15 +21,20 @@ The rectangular region of the input image that your Core Image Processor Kernel 
 var region: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect region;
+```
+
 #### Discussion
 
 > **Note**: This will contain but may be larger than the rect returned by ‘roiCallback’.
 
 ## See Also
 
-- [var bytesPerRow: Int](ciimageprocessorinput/bytesperrow.md)
+### Getting Supplemental Information for Image Processing
+- [var bytesPerRow: Int](./bytesperrow.md)
   The bytes per row of the CPU memory that your Core Image Processor Kernel can read pixelsfrom.
-- [var format: CIFormat](ciimageprocessorinput/format.md)
+- [var format: CIFormat](./format.md)
   The pixel format of the CPU memory that your Core Image Processor Kernel can read pixels from.
 
 

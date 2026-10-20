@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sequence gesture with two gestures.
 
@@ -28,9 +29,10 @@ init(_ first: First, _ second: Second)
 
 ## See Also
 
-- [var first: First](sequencegesture/first.md)
+### Creating the gesture
+- [var first: First](./first.md)
   The first gesture in a sequence of two gestures.
-- [var second: Second](sequencegesture/second.md)
+- [var second: Second](./second.md)
   The second gesture in a sequence of two gestures.
 
 

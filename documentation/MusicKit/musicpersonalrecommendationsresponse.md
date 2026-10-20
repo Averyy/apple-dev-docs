@@ -1,7 +1,8 @@
 # MusicPersonalRecommendationsResponse
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that contains results for a personal recommendations request.
 
@@ -23,22 +24,22 @@ struct MusicPersonalRecommendationsResponse
 ## Topics
 
 ### Instance Properties
-- [let recommendations: MusicItemCollection<MusicPersonalRecommendation>](musicpersonalrecommendationsresponse/recommendations.md)
+- [let recommendations: MusicItemCollection<MusicPersonalRecommendation>](./musicpersonalrecommendationsresponse/recommendations.md)
   A collection of personal recommendations.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

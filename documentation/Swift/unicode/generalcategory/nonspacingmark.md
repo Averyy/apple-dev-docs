@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.nonspacingMark
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A non-spacing combining mark with zero advance width (abbreviated Mn).
 
@@ -22,7 +23,7 @@ case nonspacingMark
 
 #### Discussion
 
-This value corresponds to the category `Nonspacing_Mark` (abbreviated `Mn`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Nonspacing_Mark` (abbreviated `Mn`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

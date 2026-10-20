@@ -1,7 +1,8 @@
 # kUSBReEnumerateCaptureDeviceMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The mask to capture the device.
 
@@ -10,7 +11,7 @@ The mask to capture the device.
 
 ## Declaration
 
-```swift
+```c
 kUSBReEnumerateCaptureDeviceMask = ( 1 << kUSBReEnumerateCaptureDeviceBit)
 ```
 

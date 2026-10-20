@@ -1,7 +1,8 @@
 # languages
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The languages the recognizer uses, ordered by descending priority.
 
@@ -20,9 +21,10 @@ final var languages: [Locale.Language] { get }
 
 ## See Also
 
-- [static var supportedLanguages: Set<Locale.Language>](pkstrokerecognizer/supportedlanguages.md)
+### Checking language support
+- [static var supportedLanguages: Set<Locale.Language>](./supportedlanguages.md)
   The languages the recognizer supports.
-- [static var recognitionVersion: Int](pkstrokerecognizer/recognitionversion.md)
+- [static var recognitionVersion: Int](./recognitionversion.md)
   The version number of the recognition engine.
 
 

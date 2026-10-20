@@ -1,7 +1,8 @@
 # PerformanceTestConfig
 
 **Framework**: Retention Messaging API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that enumerates the test configuration parameters.
 
@@ -10,15 +11,15 @@ An object that enumerates the test configuration parameters.
 
 ## Declaration
 
-```swift
+```
 object PerformanceTestConfig
 ```
 
 #### Overview
 
-The [`Initiate Performance Test`](initiate-performance-test.md) endpoint returns the `PerformanceTestConfig` object in the [`PerformanceTestResponse`](performancetestresponse.md) response.
+The [`Initiate Performance Test`](./initiate-performance-test.md) endpoint returns the `PerformanceTestConfig` object in the [`PerformanceTestResponse`](./performancetestresponse.md) response.
 
-When you call the [`Initiate Performance Test`](initiate-performance-test.md) endpoint to start a performance test, the test sends multiple requests and runs for a period of time. To calculate the time when the test concludes, add the `totalDuration` to the time, in milliseconds, you initiated the test.
+When you call the [`Initiate Performance Test`](./initiate-performance-test.md) endpoint to start a performance test, the test sends multiple requests and runs for a period of time. To calculate the time when the test concludes, add the `totalDuration` to the time, in milliseconds, you initiated the test.
 
 ## Properties
 
@@ -30,21 +31,22 @@ When you call the [`Initiate Performance Test`](initiate-performance-test.md) en
 
 ## See Also
 
-- [object PerformanceTestRequest](performancetestrequest.md)
+### Performance testing
+- [object PerformanceTestRequest](./performancetestrequest.md)
   The request object you provide for a performance test that contains an original transaction identifier.
-- [object PerformanceTestResponse](performancetestresponse.md)
+- [object PerformanceTestResponse](./performancetestresponse.md)
   The performance test response object.
-- [object PerformanceTestResponseTimes](performancetestresponsetimes.md)
+- [object PerformanceTestResponseTimes](./performancetestresponsetimes.md)
   An object that describes test response times.
-- [object PerformanceTestResultResponse](performancetestresultresponse.md)
+- [object PerformanceTestResultResponse](./performancetestresultresponse.md)
   An object the API returns that describes the performance test results.
-- [type PerformanceTestStatus](performanceteststatus.md)
+- [type PerformanceTestStatus](./performanceteststatus.md)
   The status of the performance test.
-- [object Failures](failures.md)
+- [object Failures](./failures.md)
   A map of server-to-server notification failure reasons and counts that represent the number of failures during a performance test.
-- [type sendAttemptResult](sendattemptresult.md)
+- [type sendAttemptResult](./sendattemptresult.md)
   The success or error information the App Store server records when it attempts to send an App Store server notification to your server.
-- [type requestId](requestid.md)
+- [type requestId](./requestid.md)
   The identifier of the performance test request.
 
 

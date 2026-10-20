@@ -1,7 +1,8 @@
 # captureSession(_:didChange:)
 
 **Framework**: RoomPlan  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a default, blank implementation for when the capture session updates the dimensions and the transform properties during a scan.
 
@@ -18,7 +19,7 @@ func captureSession(_ session: RoomCaptureSession, didChange room: CapturedRoom)
 
 #### Discussion
 
-The system calls this implementation if your app doesn’t implement [`captureSession(_:didChange:)`](roomcapturesessiondelegate/capturesession(_:didchange:).md).
+The system calls this implementation if your app doesn’t implement [`captureSession(_:didChange:)`](./capturesession%28_,didchange%29.md).
 
 ## Parameters
 
@@ -27,15 +28,16 @@ The system calls this implementation if your app doesn’t implement [`captureSe
 
 ## See Also
 
-- [func captureSession(RoomCaptureSession, didStartWith: RoomCaptureSession.Configuration)](roomcapturesessiondelegate/capturesession(_:didstartwith:)-3c74n.md)
+### Default implementations
+- [func captureSession(RoomCaptureSession, didStartWith: RoomCaptureSession.Configuration)](./capturesession%28_,didstartwith%29-3c74n.md)
   Provides a default, blank implementation for when the session starts.
-- [func captureSession(RoomCaptureSession, didUpdate: CapturedRoom)](roomcapturesessiondelegate/capturesession(_:didupdate:)-77zyg.md)
+- [func captureSession(RoomCaptureSession, didUpdate: CapturedRoom)](./capturesession%28_,didupdate%29-77zyg.md)
   Provides a default, blank implementation for when the session updates surfaces and objects during a scan.
-- [func captureSession(RoomCaptureSession, didRemove: CapturedRoom)](roomcapturesessiondelegate/capturesession(_:didremove:)-9gs76.md)
+- [func captureSession(RoomCaptureSession, didRemove: CapturedRoom)](./capturesession%28_,didremove%29-9gs76.md)
   Provides a default, blank implementation for when the session removes surfaces and objects.
-- [func captureSession(RoomCaptureSession, didProvide: RoomCaptureSession.Instruction)](roomcapturesessiondelegate/capturesession(_:didprovide:)-5hvhl.md)
+- [func captureSession(RoomCaptureSession, didProvide: RoomCaptureSession.Instruction)](./capturesession%28_,didprovide%29-5hvhl.md)
   Provides a default, blank implementation for when the capture session provides a user instruction.
-- [func captureSession(RoomCaptureSession, didEndWith: CapturedRoomData, error: (any Error)?)](roomcapturesessiondelegate/capturesession(_:didendwith:error:)-5f0mc.md)
+- [func captureSession(RoomCaptureSession, didEndWith: CapturedRoomData, error: (any Error)?)](./capturesession%28_,didendwith,error%29-5f0mc.md)
   Provides a default, blank implementation for when the capture session provides raw scan results.
 
 

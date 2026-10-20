@@ -1,7 +1,8 @@
 # CNCinematicCapability.none
 
 **Framework**: Cinematic  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No cinematic capabilities
 
@@ -16,6 +17,10 @@ No cinematic capabilities
 
 ```swift
 case none
+```
+
+```c
+CNCinematicCapabilityNone
 ```
 
 

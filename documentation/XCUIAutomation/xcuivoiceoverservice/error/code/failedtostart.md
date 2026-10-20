@@ -1,24 +1,29 @@
 # XCUIVoiceOverService.Error.Code.failedToStart
 
 **Framework**: XCUIAutomation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 VoiceOver daemon did not start within the timeout.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 case failedToStart
+```
+
+```c
+XCUIVoiceOverServiceErrorFailedToStart
 ```
 
 

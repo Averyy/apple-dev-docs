@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The domain’s version when the system discovered the item at the source location.
@@ -19,11 +20,16 @@ The domain’s version when the system discovered the item at the source locatio
 var domainVersion: NSFileProviderDomainVersion? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSFileProviderDomainVersion * domainVersion;
+```
+
 ## See Also
 
-- [var sourceItem: NSFileProviderItem](nsfileprovidertestingcreation/sourceitem.md)
+### Accessing the Operation’s Data
+- [var sourceItem: NSFileProviderItem](./sourceitem.md)
   A description of the item stored at the source.
-- [var targetSide: NSFileProviderTestingOperationSide](nsfileprovidertestingcreation/targetside.md)
+- [var targetSide: NSFileProviderTestingOperationSide](./targetside.md)
   The target location for the new item.
 
 

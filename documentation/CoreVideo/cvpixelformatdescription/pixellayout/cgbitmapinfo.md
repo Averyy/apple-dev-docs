@@ -1,7 +1,8 @@
 # cgBitmapInfo
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 CoreGraphics bitmap info used for CG compatibility.
 

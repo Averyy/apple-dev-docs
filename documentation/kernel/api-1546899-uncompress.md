@@ -1,14 +1,15 @@
 # uncompress
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 int uncompress(Bytef *dest, uLongf *destLen, const Bytef *source, uLong sourceLen);
 ```
 

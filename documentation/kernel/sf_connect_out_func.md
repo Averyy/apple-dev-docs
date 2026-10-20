@@ -1,18 +1,19 @@
 # sf_connect_out_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*sf_connect_out_func)(void *cookie, socket_t so, const struct sockaddr *to);
 ```
 
-#### Return_value
+#### Return Value
 
 Return: 0 - The caller will continue with normal processing of the connection. EJUSTRETURN - The caller will return with a value of 0 (no error) from that point without further processing the connect command. The protocol layer will not see the call. Anything Else - The caller will rejecting the outbound connection.
 

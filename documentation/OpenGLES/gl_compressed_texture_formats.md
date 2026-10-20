@@ -1,7 +1,8 @@
 # GL_COMPRESSED_TEXTURE_FORMATS
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_COMPRESSED_TEXTURE_FORMATS: Int32 { get }
+```
+
+```c
+#define GL_COMPRESSED_TEXTURE_FORMATS
 ```
 
 

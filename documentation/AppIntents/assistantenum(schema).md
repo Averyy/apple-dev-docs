@@ -1,7 +1,8 @@
 # AssistantEnum(schema:)
 
 **Framework**: App Intents  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 A Swift macro you use to make sure your app enum conforms to an assistant schema.
 
@@ -23,9 +24,10 @@ A Swift macro you use to make sure your app enum conforms to an assistant schema
 
 ## See Also
 
-- [macro AssistantIntent<T>(schema: T)](assistantintent(schema:).md)
+### Deprecated macros
+- [macro AssistantIntent<T>(schema: T)](./assistantintent%28schema%29.md)
   A Swift macro you use to make sure your app intent conforms to an assistant schema.
-- [macro AssistantEntity<T>(schema: T)](assistantentity(schema:).md)
+- [macro AssistantEntity<T>(schema: T)](./assistantentity%28schema%29.md)
   A Swift macro you use to make sure your app entity conforms to an assistant schema.
 
 

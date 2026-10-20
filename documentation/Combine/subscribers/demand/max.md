@@ -1,7 +1,8 @@
 # max
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of requested values.
 
@@ -22,7 +23,7 @@ var max: Int? { get }
 
 #### Discussion
 
-The value is `nil` if the demand is [`unlimited`](subscribers/demand/unlimited.md).
+The value is `nil` if the demand is [`unlimited`](./unlimited.md).
 
 
 ---

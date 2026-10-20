@@ -1,7 +1,8 @@
 # init(dictionary:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated dictionary by placing in it the keys and values contained in another given dictionary.
 
@@ -20,6 +21,10 @@ Initializes a newly allocated dictionary by placing in it the keys and values co
 convenience init(dictionary otherDictionary: [AnyHashable : Any])
 ```
 
+```objc
+- (instancetype) initWithDictionary:(NSDictionary<id,id> *) otherDictionary;
+```
+
 #### Return Value
 
 An initialized dictionary—which might be different than the original receiver—containing the keys and values found in `otherDictionary`.
@@ -30,9 +35,10 @@ An initialized dictionary—which might be different than the original receiver�
 
 ## See Also
 
-- [convenience init(dictionary: [AnyHashable : Any], copyItems: Bool)](nsdictionary/init(dictionary:copyitems:).md)
+### Creating a Dictionary from Another Dictionary
+- [convenience init(dictionary: [AnyHashable : Any], copyItems: Bool)](./init%28dictionary,copyitems%29.md)
   Initializes a newly allocated dictionary using the objects contained in another given dictionary.
-- [convenience init(dictionaryLiteral: (Any, Any)...)](nsdictionary/init(dictionaryliteral:).md)
+- [convenience init(dictionaryLiteral: (Any, Any)...)](./init%28dictionaryliteral%29.md)
   Initializes a newly allocated dictionary from the given key-value pairs.
 
 

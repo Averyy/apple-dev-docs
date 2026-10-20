@@ -1,12 +1,15 @@
 # playlist
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The playlist for the media player.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,11 +17,16 @@ The playlist for the media player.
 var playlist: TVPlaylist? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) TVPlaylist * playlist;
+```
+
 ## See Also
 
-- [init(player: AVPlayer)](tvplayer/init(player:).md)
+### Setting Up the Player
+- [init(player: AVPlayer)](./init%28player%29.md)
   Creates a new customizable player from an existing player.
-- [var player: AVPlayer](tvplayer/player.md)
+- [var player: AVPlayer](./player.md)
   The customizable media player.
 
 

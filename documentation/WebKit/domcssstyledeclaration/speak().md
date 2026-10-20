@@ -1,7 +1,8 @@
 # speak()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func speak() -> String!
+```
+
+```objc
+- (NSString *) speak;
 ```
 
 

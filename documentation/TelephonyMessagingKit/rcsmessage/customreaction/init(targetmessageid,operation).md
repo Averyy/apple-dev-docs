@@ -1,7 +1,8 @@
 # init(targetMessageID:operation:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom reaction instance with the message identifier and content.
 

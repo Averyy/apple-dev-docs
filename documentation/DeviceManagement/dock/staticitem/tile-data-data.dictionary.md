@@ -1,7 +1,8 @@
 # Dock.StaticItem.Tile-data
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The dictionary that contains details about a Dock item.
 
@@ -10,22 +11,26 @@ The dictionary that contains details about a Dock item.
 
 ## Declaration
 
-```swift
+```
 object Dock.StaticItem.Tile-data
 ```
 
 ## Topics
 
 ### Objects
-- [object Dock.StaticItem.Tile-data.File-data](dock/staticitem/tile-data-data.dictionary/file-data-data.dictionary.md)
+- [object Dock.StaticItem.Tile-data.File-data](./tile-data-data.dictionary/file-data-data.dictionary.md)
   For Apple use only.
 
 ## Properties
 
 - `file-data` (Dock.StaticItem.Tile-data.File-data): The data in a file. For Apple use only.
-- `file-type` (integer) *(required)*: The type of tile: - `0`: URL
-- `1`: File
-- `3`: Directory
+- `file-type` (integer) *(required)*: The type of tile:
+
+  - `0`: URL
+  - `1`: File
+  - `3`: Directory
+
+  **Allowed Values**: `0`, `1`, `3`
 - `label` (string) *(required)*: The label of the Dock item.
 - `url` (string): The URL string.
 

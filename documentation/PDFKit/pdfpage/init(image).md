@@ -1,7 +1,8 @@
 # init(image:)
 
 **Framework**: PDFKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `PDFPage` object and initializes it with the specified `NSImage` object.
 
@@ -15,8 +16,28 @@ Creates a new `PDFPage` object and initializes it with the specified `NSImage` o
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+convenience init?(image: UIImage)
+```
+
+*macOS*
+
 ```swift
 convenience init?(image: NSImage)
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+- (instancetype) initWithImage:(UIImage *) image;
+```
+
+*macOS*
+
+```objc
+- (instancetype) initWithImage:(NSImage *) image;
 ```
 
 

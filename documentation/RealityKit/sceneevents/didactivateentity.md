@@ -1,7 +1,8 @@
 # SceneEvents.DidActivateEntity
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Raised after an entity becomes active.
 
@@ -11,7 +12,7 @@ Raised after an entity becomes active.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,24 +23,25 @@ struct DidActivateEntity
 ## Topics
 
 ### Instance Properties
-- [let entity: Entity](sceneevents/didactivateentity/entity.md)
+- [let entity: Entity](./didactivateentity/entity.md)
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [SceneEvents.DidAddEntity](sceneevents/didaddentity.md)
+### Detecting scene hierarchy changes
+- [SceneEvents.DidAddEntity](./didaddentity.md)
   Raised after an entity is added to the scene.
-- [SceneEvents.DidReparentEntity](sceneevents/didreparententity.md)
+- [SceneEvents.DidReparentEntity](./didreparententity.md)
   Raised after an entity has been reparented within the same scene.
-- [SceneEvents.WillRemoveEntity](sceneevents/willremoveentity.md)
+- [SceneEvents.WillRemoveEntity](./willremoveentity.md)
   Raised before an entity is removed from the scene.
-- [SceneEvents.WillDeactivateEntity](sceneevents/willdeactivateentity.md)
+- [SceneEvents.WillDeactivateEntity](./willdeactivateentity.md)
   Raised before an entity becomes inactive.
 
 

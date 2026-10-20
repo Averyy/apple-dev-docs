@@ -1,7 +1,8 @@
 # specializes
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authored specializes paths, or `nil` if none authored.
 

@@ -1,11 +1,12 @@
 # ResultsResponse.Results
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object ResultsResponse.Results
 ```
 

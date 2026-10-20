@@ -1,14 +1,15 @@
 # VNODE_VERIFY_DEFAULT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 VNODE_VERIFY_DEFAULT
 ```
 

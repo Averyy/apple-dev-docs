@@ -1,12 +1,13 @@
 # HTTP Status Codes
 
-**Framework**: Apple Music API
+**Framework**: Apple Music API  
+**Role**: Article
 
 Reference error codes returned by the Apple Music API.
 
 #### Overview
 
-An error code indicates the type of error that occurred while executing a request. These are the possible values for the `status` member in an [`Error`](error.md) object:
+An error code indicates the type of error that occurred while executing a request. These are the possible values for the `status` member in an [`Error`](./error.md) object:
 
 | Code | Name | Description |
 | --- | --- | --- |
@@ -17,21 +18,22 @@ An error code indicates the type of error that occurred while executing a reques
 | 301 | Moved Permanently | Content may be available at a different URL. |
 | 302 | Found | Content definitely available at a specific URL. |
 | 400 | Bad Request | The request wasn’t accepted as formed. |
-| 401 | Unauthorized | The request wasn’t accepted because its authorization is missing or invalid due to an issue with the developer token. ![None](/images/com.apple.applemusicapi/spacer.png) (For personal endpoints) Authorization issues may occur because the user wasn’t signed in or didn’t have a valid Apple Music subscription. ![None](/images/com.apple.applemusicapi/spacer.png) (For music user token request) Developer token issues may occur because the token wasn’t received or was invalid. There could also be an error processing the request. |
-| 403 | Forbidden | The request wasn’t accepted due to an issue with the music user token or because it’s using incorrect authentication. ![None](/images/com.apple.applemusicapi/spacer.png) (For personal endpoints) Authentication issues may occur if the account hasn’t accepted the Media and Apple Music privacy setting. |
+| 401 | Unauthorized | The request wasn’t accepted because its authorization is missing or invalid due to an issue with the developer token. ![](https://developer.apple.com/tutorials/images/com.apple.applemusicapi/spacer.png) (For personal endpoints) Authorization issues may occur because the user wasn’t signed in or didn’t have a valid Apple Music subscription. ![](https://developer.apple.com/tutorials/images/com.apple.applemusicapi/spacer.png) (For music user token request) Developer token issues may occur because the token wasn’t received or was invalid. There could also be an error processing the request. |
+| 403 | Forbidden | The request wasn’t accepted due to an issue with the music user token or because it’s using incorrect authentication. ![](https://developer.apple.com/tutorials/images/com.apple.applemusicapi/spacer.png) (For personal endpoints) Authentication issues may occur if the account hasn’t accepted the Media and Apple Music privacy setting. |
 | 404 | Not Found | The requested resource doesn’t exist. |
 | 405 | Method Not Allowed | Can’t use specified method for the request. |
 | 409 | Conflict | Couldn’t process modification or creation request because there’s a conflict with the current state of the resource. |
 | 413 | Payload Too Large | The body of the request is too large. |
 | 414 | URI Too Long | Won’t process the request because the URI is too long. |
-| 429 | Too Many Requests | The user has made too many requests. See [`Request Rate Limiting`](generating-developer-tokens#Request-Rate-Limiting.md). |
+| 429 | Too Many Requests | The user has made too many requests. See [Request Rate Limiting](./generating-developer-tokens.md#Request-Rate-Limiting). |
 | 500 | Internal Server Error | There’s an error processing the request. |
 | 501 | Not Implemeneted | Endpoint is currently unavailable and reserved for future use. |
 | 503 | Service Unavailable | The service is currently unavailable to process requests. |
 
 ## See Also
 
-- [object Error](error.md)
+### Handling Errors
+- [object Error](./error.md)
   Information about an error that occurred while processing a request.
 
 

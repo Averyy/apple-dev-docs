@@ -1,16 +1,17 @@
 # UICollectionViewUpdateItem.Action
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the type of action being performed on an item.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,34 +19,39 @@ Constants indicating the type of action being performed on an item.
 enum Action
 ```
 
+```c
+enum UICollectionUpdateAction : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UICollectionViewUpdateItem.Action.none](uicollectionviewupdateitem/action/none.md)
-- [UICollectionViewUpdateItem.Action.insert](uicollectionviewupdateitem/action/insert.md)
-- [UICollectionViewUpdateItem.Action.delete](uicollectionviewupdateitem/action/delete.md)
-- [UICollectionViewUpdateItem.Action.reload](uicollectionviewupdateitem/action/reload.md)
-- [UICollectionViewUpdateItem.Action.move](uicollectionviewupdateitem/action/move.md)
+- [UICollectionViewUpdateItem.Action.none](./action/none.md)
+- [UICollectionViewUpdateItem.Action.insert](./action/insert.md)
+- [UICollectionViewUpdateItem.Action.delete](./action/delete.md)
+- [UICollectionViewUpdateItem.Action.reload](./action/reload.md)
+- [UICollectionViewUpdateItem.Action.move](./action/move.md)
 ### Initializers
-- [init?(rawValue: Int)](uicollectionviewupdateitem/action/init(rawvalue:).md)
+- [init?(rawValue: Int)](./action/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var indexPathBeforeUpdate: IndexPath?](uicollectionviewupdateitem/indexpathbeforeupdate.md)
+### Accessing the item changes
+- [var indexPathBeforeUpdate: IndexPath?](./indexpathbeforeupdate.md)
   The index path of the item before the update.
-- [var indexPathAfterUpdate: IndexPath?](uicollectionviewupdateitem/indexpathafterupdate.md)
+- [var indexPathAfterUpdate: IndexPath?](./indexpathafterupdate.md)
   The index path of the item after the update.
-- [var updateAction: UICollectionViewUpdateItem.Action](uicollectionviewupdateitem/updateaction.md)
+- [var updateAction: UICollectionViewUpdateItem.Action](./updateaction.md)
   The action being performed on the item.
 
 

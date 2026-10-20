@@ -1,7 +1,8 @@
 # preferImmediatelyAvailableCredentials
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Tells the authorization controller to prefer credentials that are immediately available on the local device.
 
@@ -16,6 +17,10 @@ Tells the authorization controller to prefer credentials that are immediately av
 
 ```swift
 static var preferImmediatelyAvailableCredentials: ASAuthorizationController.RequestOptions { get }
+```
+
+```c
+ASAuthorizationControllerRequestOptionPreferImmediatelyAvailableCredentials
 ```
 
 

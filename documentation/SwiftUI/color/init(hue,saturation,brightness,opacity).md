@@ -1,7 +1,8 @@
 # init(hue:saturation:brightness:opacity:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a constant color from hue, saturation, and brightness values.
 
@@ -22,7 +23,7 @@ init(hue: Double, saturation: Double, brightness: Double, opacity: Double = 1)
 
 #### Discussion
 
-This initializer creates a constant color that doesn’t change based on context. For example, it doesn’t have distinct light and dark appearances, unlike various system-defined colors, or a color that you load from an Asset Catalog with [`init(_:bundle:)`](color/init(_:bundle:).md).
+This initializer creates a constant color that doesn’t change based on context. For example, it doesn’t have distinct light and dark appearances, unlike various system-defined colors, or a color that you load from an Asset Catalog with [`init(_:bundle:)`](./init%28_,bundle%29.md).
 
 ## Parameters
 
@@ -33,11 +34,12 @@ This initializer creates a constant color that doesn’t change based on context
 
 ## See Also
 
-- [init(Color.RGBColorSpace, white: Double, opacity: Double)](color/init(_:white:opacity:).md)
+### Creating a color from component values
+- [init(Color.RGBColorSpace, white: Double, opacity: Double)](./init%28_,white,opacity%29.md)
   Creates a constant grayscale color.
-- [init(Color.RGBColorSpace, red: Double, green: Double, blue: Double, opacity: Double)](color/init(_:red:green:blue:opacity:).md)
+- [init(Color.RGBColorSpace, red: Double, green: Double, blue: Double, opacity: Double)](./init%28_,red,green,blue,opacity%29.md)
   Creates a constant color from red, green, and blue component values.
-- [Color.RGBColorSpace](color/rgbcolorspace.md)
+- [Color.RGBColorSpace](./rgbcolorspace.md)
   A profile that specifies how to interpret a color value for display.
 
 

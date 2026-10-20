@@ -1,7 +1,8 @@
 # readAttributeLineup(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeLineup(completion: @escaping @Sendable (MTRChannelClusterLineupInfoStruct?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeLineup() async throws -> MTRChannelClusterLineupInfoStruct
+```
+
+```objc
+- (void) readAttributeLineupWithCompletion:(void (^)(MTRChannelClusterLineupInfoStruct *value, NSError *error)) completion;
 ```
 
 

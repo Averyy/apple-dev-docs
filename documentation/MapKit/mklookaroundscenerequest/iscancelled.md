@@ -1,7 +1,8 @@
 # isCancelled
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the cancellation of a scene request was successful.
 
@@ -18,9 +19,14 @@ A Boolean value that indicates if the cancellation of a scene request was succes
 var isCancelled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isCancelled) BOOL cancelled;
+```
+
 ## See Also
 
-- [var isLoading: Bool](mklookaroundscenerequest/isloading.md)
+### Monitoring the progress of scene requests
+- [var isLoading: Bool](./isloading.md)
   A Boolean value that indicates whether a scene request is loading.
 
 

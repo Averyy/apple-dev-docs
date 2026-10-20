@@ -1,7 +1,8 @@
 # isFolder
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a bookmark represents a folder.
 
@@ -15,13 +16,18 @@ A Boolean value that indicates whether a bookmark represents a folder.
 var isFolder: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isFolder;
+```
+
 ## See Also
 
-- [var identifier: String](bebrowserdatabookmark/identifier.md)
+### Accessing bookmark properties
+- [var identifier: String](./identifier.md)
   A unique identifier for a bookmark.
-- [var title: String](bebrowserdatabookmark/title.md)
+- [var title: String](./title.md)
   A localized title for a bookmark.
-- [var url: URL?](bebrowserdatabookmark/url.md)
+- [var url: URL?](./url.md)
   A URL to which a bookmark points.
 
 

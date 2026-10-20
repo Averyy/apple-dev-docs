@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional user information to pass to the file promise provider.
 
@@ -14,10 +15,15 @@ Optional user information to pass to the file promise provider.
 var userInfo: Any? { get set }
 ```
 
+```objc
+@property (strong, nullable) id userInfo;
+```
+
 ## See Also
 
-- [var delegate: (any NSFilePromiseProviderDelegate)?](nsfilepromiseprovider/delegate.md)
-- [var fileType: String](nsfilepromiseprovider/filetype.md)
+### Instance Properties
+- [var delegate: (any NSFilePromiseProviderDelegate)?](./delegate.md)
+- [var fileType: String](./filetype.md)
   The file type of the file promise provider.
 
 

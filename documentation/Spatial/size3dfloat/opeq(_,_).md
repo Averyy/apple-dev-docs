@@ -1,7 +1,8 @@
 # /=(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Calculates the element-wise division of a size and a scalar value and stores the result in the left-hand-side variable.
 

@@ -1,7 +1,8 @@
 # init(configuration:renderContext:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Asynchronously compiles all shader and pipeline resources for the given configuration and render context.
 
@@ -20,7 +21,7 @@ nonisolated
 
 #### Discussion
 
-> **Note**: An error if shader or pipeline compilation fails.
+> **Throws**: An error if shader or pipeline compilation fails.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # ComponentEvents.DidActivate
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Event raised after a component has been activated.
 
@@ -11,7 +12,7 @@ Event raised after a component has been activated.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,21 +23,22 @@ struct DidActivate
 ## Topics
 
 ### Instance Properties
-- [let componentType: any Component.Type](componentevents/didactivate/componenttype.md)
+- [let componentType: any Component.Type](./didactivate/componenttype.md)
   The component type.
-- [let entity: Entity](componentevents/didactivate/entity.md)
+- [let entity: Entity](./didactivate/entity.md)
   The component’s entity.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ComponentEvents.WillDeactivate](componentevents/willdeactivate.md)
+### Detecting component activations
+- [ComponentEvents.WillDeactivate](./willdeactivate.md)
   Event raised before a component is deactivated.
 
 

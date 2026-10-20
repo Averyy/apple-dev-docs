@@ -1,7 +1,8 @@
 # CGContentToneMappingInfo.ITURecommendedOptions
 
 **Framework**: Core Graphics  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -21,19 +22,19 @@ struct ITURecommendedOptions
 ## Topics
 
 ### Initializers
-- [init()](cgcontenttonemappinginfo-swift.enum/iturecommendedoptions/init.md)
-- [init(skipBoostToHDR: Bool, use100nitsHLGOOTF: Bool, useBT1886ForCoreVideoGamma: Bool, useLegacyHDREcosystem: Bool)](cgcontenttonemappinginfo-swift.enum/iturecommendedoptions/init(skipboosttohdr:use100nitshlgootf:usebt1886forcorevideogamma:uselegacyhdrecosystem:).md)
+- [init()](./iturecommendedoptions/init%28%29.md)
+- [init(skipBoostToHDR: Bool, use100nitsHLGOOTF: Bool, useBT1886ForCoreVideoGamma: Bool, useLegacyHDREcosystem: Bool)](./iturecommendedoptions/init%28skipboosttohdr,use100nitshlgootf,usebt1886forcorevideogamma,uselegacyhdrecosystem%29.md)
 ### Instance Properties
-- [var skipBoostToHDR: Bool](cgcontenttonemappinginfo-swift.enum/iturecommendedoptions/skipboosttohdr.md)
-- [var use100nitsHLGOOTF: Bool](cgcontenttonemappinginfo-swift.enum/iturecommendedoptions/use100nitshlgootf.md)
-- [var useBT1886ForCoreVideoGamma: Bool](cgcontenttonemappinginfo-swift.enum/iturecommendedoptions/usebt1886forcorevideogamma.md)
-- [var useLegacyHDREcosystem: Bool](cgcontenttonemappinginfo-swift.enum/iturecommendedoptions/uselegacyhdrecosystem.md)
+- [var skipBoostToHDR: Bool](./iturecommendedoptions/skipboosttohdr.md)
+- [var use100nitsHLGOOTF: Bool](./iturecommendedoptions/use100nitshlgootf.md)
+- [var useBT1886ForCoreVideoGamma: Bool](./iturecommendedoptions/usebt1886forcorevideogamma.md)
+- [var useLegacyHDREcosystem: Bool](./iturecommendedoptions/uselegacyhdrecosystem.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

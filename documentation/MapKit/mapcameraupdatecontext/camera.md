@@ -1,7 +1,8 @@
 # camera
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current map camera.
 
@@ -11,7 +12,7 @@ The current map camera.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ let camera: MapCamera
 
 ## See Also
 
-- [let rect: MKMapRect](mapcameraupdatecontext/rect.md)
+### Accessing information about the camera
+- [let rect: MKMapRect](./rect.md)
   A map rectangle that approximates the view of the map’s camera.
-- [let region: MKCoordinateRegion](mapcameraupdatecontext/region.md)
+- [let region: MKCoordinateRegion](./region.md)
   A map region that approximates the view of the map’s camera.
 
 

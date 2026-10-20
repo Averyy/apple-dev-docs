@@ -1,7 +1,8 @@
 # HMCharacteristicValueTargetMediaState.pause
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The target media state is set to pause.
 
@@ -19,11 +20,16 @@ The target media state is set to pause.
 case pause
 ```
 
+```c
+HMCharacteristicValueTargetMediaStatePause
+```
+
 ## See Also
 
-- [HMCharacteristicValueTargetMediaState.play](hmcharacteristicvaluetargetmediastate/play.md)
+### Media states
+- [HMCharacteristicValueTargetMediaState.play](./play.md)
   The target media state is set to play.
-- [HMCharacteristicValueTargetMediaState.stop](hmcharacteristicvaluetargetmediastate/stop.md)
+- [HMCharacteristicValueTargetMediaState.stop](./stop.md)
   The target media state is set to stop.
 
 

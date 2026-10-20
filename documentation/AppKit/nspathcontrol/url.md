@@ -1,7 +1,8 @@
 # url
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The path value displayed by the receiver.
 
@@ -14,9 +15,13 @@ The path value displayed by the receiver.
 var url: URL? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSURL * URL;
+```
+
 #### Discussion
 
-When setting, an array of `NSPathComponentCell` objects is automatically set based on the path in `url`. If `url` is a file URL (returns [`true`](https://developer.apple.com/documentation/swift/true) from [`isFileURL`](https://developer.apple.com/documentation/foundation/nsurl/isfileurl)), the images are automatically filled with file icons, if the path exists. The URL value itself is stored in the `objectValue` property of the cell.
+When setting, an array of `NSPathComponentCell` objects is automatically set based on the path in `url`. If `url` is a file URL (returns [`true`](../../Swift/true.md) from [`isFileURL`](../../Foundation/nsurl/isfileurl.md)), the images are automatically filled with file icons, if the path exists. The URL value itself is stored in the `objectValue` property of the cell.
 
 
 ---

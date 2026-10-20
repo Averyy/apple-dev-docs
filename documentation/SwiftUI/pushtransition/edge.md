@@ -1,7 +1,8 @@
 # edge
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The edge from which the view will be animated in.
 
@@ -22,7 +23,8 @@ var edge: Edge
 
 ## See Also
 
-- [init(edge: Edge)](pushtransition/init(edge:).md)
+### Creating the transition
+- [init(edge: Edge)](./init%28edge%29.md)
   Creates a transition that animates a view by moving and fading it.
 
 

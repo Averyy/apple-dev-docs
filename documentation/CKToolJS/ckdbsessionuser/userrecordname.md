@@ -1,7 +1,8 @@
 # userRecordName
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The record name that represents the current user.
 
@@ -10,7 +11,7 @@ The record name that represents the current user.
 
 ## Declaration
 
-```swift
+```
 attribute string userRecordName;
 ```
 

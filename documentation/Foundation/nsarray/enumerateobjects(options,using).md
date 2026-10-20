@@ -1,7 +1,8 @@
 # enumerateObjects(options:using:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes a given closure or block using each object in the array with the specified options.
 
@@ -20,22 +21,29 @@ Executes a given closure or block using each object in the array with the specif
 func enumerateObjects(options opts: NSEnumerationOptions = [], using block: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)
 ```
 
+```objc
+- (void) enumerateObjectsWithOptions:(NSEnumerationOptions) opts usingBlock:(void (^)(ObjectType obj, NSUInteger idx, BOOL *stop)) block;
+```
+
 #### Discussion
 
-This method executes synchronously. By default, the enumeration starts with the first object and continues serially through the array to the last object. You can specify [`concurrent`](nsenumerationoptions/concurrent.md) and/or [`reverse`](nsenumerationoptions/reverse.md) as enumeration options to modify this behavior.
+This method executes synchronously. By default, the enumeration starts with the first object and continues serially through the array to the last object. You can specify [`concurrent`](../nsenumerationoptions/concurrent.md) and/or [`reverse`](../nsenumerationoptions/reverse.md) as enumeration options to modify this behavior.
 
 ## Parameters
 
-- `opts`: The options for the enumeration. For possible values, see [`NSEnumerationOptions`](nsenumerationoptions.md).
-- `block`: A closure or block to execute for each object in the array, taking three arguments: - The object.
-- The index of the object in the array.
-- A reference to a Boolean value, which the closure can set to [`true`](https://developer.apple.com/documentation/swift/true) in order to stop further enumeration of the array. If a closure stops further enumeration, that closure continues to run until it’s finished. When the [`concurrent`](nsenumerationoptions/concurrent.md) enumeration option is specified, enumeration stops after all of the currently running closures finish.
+- `opts`: The options for the enumeration. For possible values, see [`NSEnumerationOptions`](../nsenumerationoptions.md).
+- `block`: A closure or block to execute for each object in the array, taking three arguments:
+
+  - The object.
+  - The index of the object in the array.
+  - A reference to a Boolean value, which the closure can set to [`true`](../../Swift/true.md) in order to stop further enumeration of the array. If a closure stops further enumeration, that closure continues to run until it’s finished. When the [`concurrent`](../nsenumerationoptions/concurrent.md) enumeration option is specified, enumeration stops after all of the currently running closures finish.
 
 ## See Also
 
-- [func enumerateObjects((Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsarray/enumerateobjects(_:).md)
+### Sending Messages to Elements
+- [func enumerateObjects((Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateobjects%28_%29.md)
   Executes a given closure or block using each object in the array, starting with the first object and continuing through the array to the last object.
-- [func enumerateObjects(at: IndexSet, options: NSEnumerationOptions, using: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsarray/enumerateobjects(at:options:using:).md)
+- [func enumerateObjects(at: IndexSet, options: NSEnumerationOptions, using: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateobjects%28at,options,using%29.md)
   Executes a given block using the objects in the array at the specified indexes.
 
 

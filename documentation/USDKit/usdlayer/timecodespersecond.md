@@ -1,7 +1,8 @@
 # timeCodesPerSecond
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rate at which time codes advance per second. `nil` if not authored.
 
@@ -21,13 +22,14 @@ var timeCodesPerSecond: Double? { get nonmutating set }
 
 ## See Also
 
-- [var startTimeCode: USDLayer.TimeCode?](usdlayer/starttimecode.md)
+### Setting the time range
+- [var startTimeCode: USDLayer.TimeCode?](./starttimecode.md)
   The first time code in the layer’s animation range. `nil` if not authored.
-- [var endTimeCode: USDLayer.TimeCode?](usdlayer/endtimecode.md)
+- [var endTimeCode: USDLayer.TimeCode?](./endtimecode.md)
   The last time code in the layer’s animation range. `nil` if not authored.
-- [USDLayer.TimeCode](usdlayer/timecode.md)
+- [USDLayer.TimeCode](./timecode.md)
   A time value in USD, typically used for animation keyframe times.
-- [USDLayer.TimeOffset](usdlayer/timeoffset.md)
+- [USDLayer.TimeOffset](./timeoffset.md)
   A time transformation applied when composing layers.
 
 

@@ -1,14 +1,15 @@
 # debug_trailer_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 typedef struct debug_trailer {
     ...
 } debug_trailer_t;
@@ -17,8 +18,8 @@ typedef struct debug_trailer {
 ## Topics
 
 ### Instance Properties
-- [sptm_consistent_debug](debug_trailer_t/4520184-sptm_consistent_debug.md)
-- [translated](debug_trailer_t/4520185-translated.md)
+- [sptm_consistent_debug](./debug_trailer_t/api-4520184-sptm_consistent_debug.md)
+- [translated](./debug_trailer_t/api-4520185-translated.md)
 
 
 ---

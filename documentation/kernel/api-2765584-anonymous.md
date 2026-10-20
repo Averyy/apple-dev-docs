@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12.2+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,19 +18,19 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHIDDispatchOptionDeliveryNotificationForce](2765584-anonymous/khiddispatchoptiondeliverynotificationforce.md)
-- [kHIDDispatchOptionDeliveryNotificationSuppress](2765584-anonymous/khiddispatchoptiondeliverynotificationsuppress.md)
-- [kHIDDispatchOptionPhaseAny](2765584-anonymous/khiddispatchoptionphaseany.md)
-- [kHIDDispatchOptionPhaseBegan](2765584-anonymous/khiddispatchoptionphasebegan.md)
-- [kHIDDispatchOptionPhaseCanceled](2765584-anonymous/khiddispatchoptionphasecanceled.md)
-- [kHIDDispatchOptionPhaseChanged](2765584-anonymous/khiddispatchoptionphasechanged.md)
-- [kHIDDispatchOptionPhaseEnded](2765584-anonymous/khiddispatchoptionphaseended.md)
-- [kHIDDispatchOptionPhaseMayBegin](2765584-anonymous/khiddispatchoptionphasemaybegin.md)
-- [kHIDDispatchOptionScrollMomentumAny](2765584-anonymous/khiddispatchoptionscrollmomentumany.md)
-- [kHIDDispatchOptionScrollMomentumContinue](2765584-anonymous/khiddispatchoptionscrollmomentumcontinue.md)
-- [kHIDDispatchOptionScrollMomentumEnd](2765584-anonymous/khiddispatchoptionscrollmomentumend.md)
-- [kHIDDispatchOptionScrollMomentumStart](2765584-anonymous/khiddispatchoptionscrollmomentumstart.md)
-- [kHIDDispatchOptionScrollNoAcceleration](2765584-anonymous/khiddispatchoptionscrollnoacceleration.md)
+- [kHIDDispatchOptionDeliveryNotificationForce](./api-2765584-anonymous/khiddispatchoptiondeliverynotificationforce.md)
+- [kHIDDispatchOptionDeliveryNotificationSuppress](./api-2765584-anonymous/khiddispatchoptiondeliverynotificationsuppress.md)
+- [kHIDDispatchOptionPhaseAny](./api-2765584-anonymous/khiddispatchoptionphaseany.md)
+- [kHIDDispatchOptionPhaseBegan](./api-2765584-anonymous/khiddispatchoptionphasebegan.md)
+- [kHIDDispatchOptionPhaseCanceled](./api-2765584-anonymous/khiddispatchoptionphasecanceled.md)
+- [kHIDDispatchOptionPhaseChanged](./api-2765584-anonymous/khiddispatchoptionphasechanged.md)
+- [kHIDDispatchOptionPhaseEnded](./api-2765584-anonymous/khiddispatchoptionphaseended.md)
+- [kHIDDispatchOptionPhaseMayBegin](./api-2765584-anonymous/khiddispatchoptionphasemaybegin.md)
+- [kHIDDispatchOptionScrollMomentumAny](./api-2765584-anonymous/khiddispatchoptionscrollmomentumany.md)
+- [kHIDDispatchOptionScrollMomentumContinue](./api-2765584-anonymous/khiddispatchoptionscrollmomentumcontinue.md)
+- [kHIDDispatchOptionScrollMomentumEnd](./api-2765584-anonymous/khiddispatchoptionscrollmomentumend.md)
+- [kHIDDispatchOptionScrollMomentumStart](./api-2765584-anonymous/khiddispatchoptionscrollmomentumstart.md)
+- [kHIDDispatchOptionScrollNoAcceleration](./api-2765584-anonymous/khiddispatchoptionscrollnoacceleration.md)
 
 
 ---

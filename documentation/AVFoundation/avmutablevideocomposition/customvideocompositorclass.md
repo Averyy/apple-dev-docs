@@ -1,22 +1,27 @@
 # customVideoCompositorClass
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom compositor class to use.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.9+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 7.0+ - Deprecated in 26.0
+- iPadOS 7.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.9+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 var customVideoCompositorClass: (any AVVideoCompositing.Type)? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) Class<AVVideoCompositing> * customVideoCompositorClass;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # InstallProfileCommand.Command
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to install a configuration profile on a device.
 
@@ -16,7 +17,7 @@ The command to install a configuration profile on a device.
 
 ## Declaration
 
-```swift
+```
 object InstallProfileCommand.Command
 ```
 
@@ -24,7 +25,11 @@ object InstallProfileCommand.Command
 
 - `Payload` (data) *(required)*: The profile to install, which you can encrypt using any identity certificate installed on the device. You can also sign the profile.
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+
+  **Default**: `false`
 - `RequestType` (string) *(required)*: The request type for this command.
+
+  **Allowed Values**: `InstallProfile`
 
 
 ---

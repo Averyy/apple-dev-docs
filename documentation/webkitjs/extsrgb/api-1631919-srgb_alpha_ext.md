@@ -9,15 +9,16 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned long SRGB_ALPHA_EXT;
 ```
 
 ## See Also
 
-- [FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT](extsrgb/1633296-framebuffer_attachment_color_enc.md)
-- [SRGB8_ALPHA8_EXT](extsrgb/1632244-srgb8_alpha8_ext.md)
-- [SRGB_EXT](extsrgb/1630285-srgb_ext.md)
+### Miscellaneous
+- [FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT](./api-1633296-framebuffer_attachment_color_enc.md)
+- [SRGB8_ALPHA8_EXT](./api-1632244-srgb8_alpha8_ext.md)
+- [SRGB_EXT](./api-1630285-srgb_ext.md)
 
 
 ---

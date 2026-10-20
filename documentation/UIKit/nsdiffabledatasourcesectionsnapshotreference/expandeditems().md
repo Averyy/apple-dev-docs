@@ -1,7 +1,8 @@
 # expandedItems()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The identifiers of all expanded items in the section snapshot.
 
@@ -16,6 +17,10 @@ The identifiers of all expanded items in the section snapshot.
 
 ```swift
 func expandedItems() -> [Any]
+```
+
+```objc
+- (NSArray<id> *) expandedItems;
 ```
 
 

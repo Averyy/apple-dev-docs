@@ -1,7 +1,8 @@
 # GlobalCrypto
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface GlobalCrypto
 ```
 
 ## Topics
 
 ### Instance Properties
-- [crypto](globalcrypto/2871144-crypto.md)
+- [crypto](./globalcrypto/api-2871144-crypto.md)
 
 
 ---

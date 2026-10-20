@@ -1,9 +1,10 @@
 # copyIn
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Use the memory acquire function to allocate and copy items on input (see [`acquireFunction`](nspointerfunctions/acquirefunction.md)).
+Use the memory acquire function to allocate and copy items on input (see [`acquireFunction`](../acquirefunction.md)).
 
 **Availability**:
 - iOS 6.0+
@@ -20,10 +21,15 @@ Use the memory acquire function to allocate and copy items on input (see [`acqui
 static var copyIn: NSPointerFunctions.Options { get }
 ```
 
+```c
+NSPointerFunctionsCopyIn
+```
+
 ## See Also
 
-- [var NSMapTableCopyIn: NSPointerFunctions.Options](nsmaptablecopyin.md)
-  Equivalent to [`copyIn`](nspointerfunctions/options/copyin.md).
+### Copy Option
+- [var NSMapTableCopyIn: NSPointerFunctions.Options](../../nsmaptablecopyin.md)
+  Equivalent to [`copyIn`](./copyin.md).
 
 
 ---

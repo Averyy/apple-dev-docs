@@ -9,7 +9,7 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned long UNSIGNED_INT_24_8_WEBGL;
 ```
 

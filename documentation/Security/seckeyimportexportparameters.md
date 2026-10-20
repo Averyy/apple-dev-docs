@@ -1,17 +1,24 @@
 # SecKeyImportExportParameters
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The legacy import/export parameter structure.
 
 **Availability**:
 - macOS 10.0+
 
+> **Deprecated**: This structure is passed in the `keyParams` parameter as input to the deprecated [`SecKeychainItemExport`](./seckeychainitemexport.md) and [`SecKeychainItemImport`](./seckeychainitemimport.md) functions. Use [`SecItemExport(_:_:_:_:_:)`](./secitemexport%28_,_,_,_,_%29.md) and [`SecItemImport(_:_:_:_:_:_:_:_:)`](./secitemimport%28_,_,_,_,_,_,_,_%29.md) instead. The newer functions rely on the similar but distinct [`SecItemImportExportKeyParameters`](./secitemimportexportkeyparameters.md) structure as input rather than the structure defined here.
+
 ## Declaration
 
 ```swift
 struct SecKeyImportExportParameters
+```
+
+```c
+typedef struct { ... } SecKeyImportExportParameters;
 ```
 
 #### Overview
@@ -21,30 +28,30 @@ PKCS12 is an abbreviation for Public-Key Cryptography Standard # 12. This standa
 ## Topics
 
 ### Instance Properties
-- [var accessRef: Unmanaged<SecAccess>?](seckeyimportexportparameters/accessref.md)
+- [var accessRef: Unmanaged<SecAccess>?](./seckeyimportexportparameters/accessref.md)
   Specifies the initial access controls of imported private keys.
-- [var alertPrompt: Unmanaged<CFString>](seckeyimportexportparameters/alertprompt.md)
+- [var alertPrompt: Unmanaged<CFString>](./seckeyimportexportparameters/alertprompt.md)
   The prompt to display in the secure passphrase alert panel.
-- [var alertTitle: Unmanaged<CFString>](seckeyimportexportparameters/alerttitle.md)
+- [var alertTitle: Unmanaged<CFString>](./seckeyimportexportparameters/alerttitle.md)
   The title to display in the secure passphrase alert panel.
-- [var flags: SecKeyImportExportFlags](seckeyimportexportparameters/flags.md)
+- [var flags: SecKeyImportExportFlags](./seckeyimportexportparameters/flags.md)
   The bitwise `OR` of zero or more key import/export flags.
-- [var keyAttributes: CSSM_KEYATTR_FLAGS](seckeyimportexportparameters/keyattributes.md)
+- [var keyAttributes: CSSM_KEYATTR_FLAGS](./seckeyimportexportparameters/keyattributes.md)
   A word of bits constituting the low-level attribute flags for imported keys.
-- [var keyUsage: CSSM_KEYUSE](seckeyimportexportparameters/keyusage.md)
+- [var keyUsage: CSSM_KEYUSE](./seckeyimportexportparameters/keyusage.md)
   A word of bits constituting the low-level use flags for imported keys.
-- [var passphrase: Unmanaged<CFTypeRef>?](seckeyimportexportparameters/passphrase.md)
+- [var passphrase: Unmanaged<CFTypeRef>?](./seckeyimportexportparameters/passphrase.md)
   The password to use during key import or export.
-- [var version: UInt32](seckeyimportexportparameters/version.md)
+- [var version: UInt32](./seckeyimportexportparameters/version.md)
   The version of this structure.
 ### Initializers
-- [init(version: UInt32, flags: SecKeyImportExportFlags, passphrase: Unmanaged<CFTypeRef>?, alertTitle: Unmanaged<CFString>, alertPrompt: Unmanaged<CFString>, accessRef: Unmanaged<SecAccess>?, keyUsage: CSSM_KEYUSE, keyAttributes: CSSM_KEYATTR_FLAGS)](seckeyimportexportparameters/init(version:flags:passphrase:alerttitle:alertprompt:accessref:keyusage:keyattributes:).md)
+- [init(version: UInt32, flags: SecKeyImportExportFlags, passphrase: Unmanaged<CFTypeRef>?, alertTitle: Unmanaged<CFString>, alertPrompt: Unmanaged<CFString>, accessRef: Unmanaged<SecAccess>?, keyUsage: CSSM_KEYUSE, keyAttributes: CSSM_KEYATTR_FLAGS)](./seckeyimportexportparameters/init%28version,flags,passphrase,alerttitle,alertprompt,accessref,keyusage,keyattributes%29.md)
   Creates a new import/export parameter structure.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

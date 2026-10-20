@@ -1,7 +1,8 @@
 # kSecOIDQC_Statements
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 let kSecOIDQC_Statements: CFString
+```
+
+```c
+extern CFStringRef const kSecOIDQC_Statements;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Media Device  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The communication protocol that this extension implements.
@@ -20,7 +21,7 @@ var protocolType: UTType { get }
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 #### Declaring the Protocol Type
 

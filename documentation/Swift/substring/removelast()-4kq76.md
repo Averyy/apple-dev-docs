@@ -1,7 +1,8 @@
 # removeLast()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes and returns the last element of the collection.
 
@@ -21,6 +22,8 @@ Removes and returns the last element of the collection.
 mutating func removeLast() -> Self.Element
 ```
 
+Available when `Self` conforms to `BidirectionalCollection`.
+
 #### Return Value
 
 The last element of the collection.
@@ -31,7 +34,7 @@ The collection must not be empty.
 
 Calling this method may invalidate all saved indices of this collection. Do not rely on a previously stored index value after altering a collection with any operation that can change its length.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

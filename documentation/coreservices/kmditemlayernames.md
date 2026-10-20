@@ -1,7 +1,8 @@
 # kMDItemLayerNames
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The names of the layers in the file. A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ The names of the layers in the file. A CFArray of CFStrings.
 
 ```swift
 let kMDItemLayerNames: CFString!
+```
+
+```c
+const CFStringRef kMDItemLayerNames;
 ```
 
 

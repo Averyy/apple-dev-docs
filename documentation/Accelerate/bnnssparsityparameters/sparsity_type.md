@@ -1,7 +1,8 @@
 # sparsity_type
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var sparsity_type: BNNSSparsityType
+```
+
+```c
+BNNSSparsityType sparsity_type;
 ```
 
 

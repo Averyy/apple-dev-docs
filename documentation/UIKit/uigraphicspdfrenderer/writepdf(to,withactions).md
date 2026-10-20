@@ -1,7 +1,8 @@
 # writePDF(to:withActions:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a PDF from a set of drawing instructions and saves it to a specified URL.
 
@@ -18,6 +19,10 @@ Creates a PDF from a set of drawing instructions and saves it to a specified URL
 func writePDF(to url: URL, withActions actions: (UIGraphicsPDFRendererContext) -> Void) throws
 ```
 
+```objc
+- (BOOL) writePDFToURL:(NSURL *) url withActions:(UIGraphicsPDFDrawingActions) actions error:(NSError **) error;
+```
+
 #### Discussion
 
 You provide a set of drawing instructions as the block argument to this method, and the method attempts to write the resulting PDF to the supplied URL.
@@ -27,13 +32,14 @@ You can call this method repeatedly to create multiple PDFs, each of which has i
 ## Parameters
 
 - `url`: The URL where the complete PDF file is saved.
-- `actions`: A [`UIGraphicsPDFRenderer.DrawingActions`](uigraphicspdfrenderer/drawingactions.md) closure that, when invoked by the renderer, executes a set of drawing instructions to create the output PDF.
+- `actions`: A [`UIGraphicsPDFRenderer.DrawingActions`](./drawingactions.md) closure that, when invoked by the renderer, executes a set of drawing instructions to create the output PDF.
 
 ## See Also
 
-- [func pdfData(actions: (UIGraphicsPDFRendererContext) -> Void) -> Data](uigraphicspdfrenderer/pdfdata(actions:).md)
+### Managing the PDF data
+- [func pdfData(actions: (UIGraphicsPDFRendererContext) -> Void) -> Data](./pdfdata%28actions%29.md)
   Creates a PDF from a set of drawing instructions and returns it as a data object.
-- [UIGraphicsPDFRenderer.DrawingActions](uigraphicspdfrenderer/drawingactions.md)
+- [UIGraphicsPDFRenderer.DrawingActions](./drawingactions.md)
   A closure for drawing PDF content.
 
 

@@ -1,14 +1,15 @@
 # telemetry_notification_subsystem
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 const struct telemetry_notification_subsystem telemetry_notification_subsystem;
 ```
 

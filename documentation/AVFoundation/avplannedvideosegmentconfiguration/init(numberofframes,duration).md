@@ -1,7 +1,8 @@
 # init(numberOfFrames:duration:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of AVPlannedVideoSegmentConfiguration specifying the number of frames in and total duration of the segment.
 
@@ -17,6 +18,10 @@ Creates an instance of AVPlannedVideoSegmentConfiguration specifying the number 
 
 ```swift
 init(numberOfFrames frameCount: Int, duration: CMTime)
+```
+
+```objc
+- (instancetype) initWithNumberOfFrames:(NSInteger) frameCount duration:(CMTime) duration;
 ```
 
 #### Return Value

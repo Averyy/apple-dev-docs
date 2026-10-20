@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate that receives incoming call information from the provider.
 
@@ -17,9 +18,14 @@ A delegate that receives incoming call information from the provider.
 weak var delegate: (any NEAppPushDelegate)? { get set }
 ```
 
+```objc
+@property (weak, readwrite, nullable) id<NEAppPushDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol NEAppPushDelegate](neapppushdelegate.md)
+### Working with a delegate
+- [protocol NEAppPushDelegate](../neapppushdelegate.md)
   A protocol that defines how an app push manager instance interacts with the framework.
 
 

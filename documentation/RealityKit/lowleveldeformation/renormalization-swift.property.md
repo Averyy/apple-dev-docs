@@ -1,7 +1,8 @@
 # renormalization
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The renormalization data accessors for this deformation.
 

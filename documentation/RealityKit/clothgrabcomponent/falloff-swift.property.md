@@ -1,7 +1,8 @@
 # falloff
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls whether the grabbing strength falls off based on distance from the volume surface.
 
@@ -22,7 +23,8 @@ This property only applies to the `.volume` mode.
 
 ## See Also
 
-- [ClothGrabComponent.Falloff](clothgrabcomponent/falloff-swift.struct.md)
+### Configuring the falloff
+- [ClothGrabComponent.Falloff](./falloff-swift.struct.md)
   Controls whether grab strength falls off based on particle distance from the volume surface.
 
 

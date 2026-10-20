@@ -1,7 +1,8 @@
 # numberOfPickups
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the number of pickups made directly to the application.
 
@@ -18,7 +19,8 @@ var numberOfPickups: Int
 
 ## See Also
 
-- [var numberOfNotifications: Int](deviceactivitydata/applicationactivity/numberofnotifications.md)
+### Tracking usage
+- [var numberOfNotifications: Int](./numberofnotifications.md)
   Access the number of notifications made by the application.
 
 

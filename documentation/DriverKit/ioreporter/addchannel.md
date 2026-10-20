@@ -1,19 +1,20 @@
 # addChannel
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add an additional, similar channel to the reporter.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 IOReturn addChannel(uint64_t channelID, const char *channelName);
 ```
 
@@ -34,12 +35,13 @@ Locking: same-instance concurrency SAFE, MAY BLOCK
 
 ## See Also
 
-- [configureReport](ioreporter/configurereport.md)
+### Instance Methods
+- [configureReport](./configurereport.md)
   Track IOService::configureReport(), provide sizing info
-- [createLegend](ioreporter/createlegend.md)
+- [createLegend](./createlegend.md)
   Create a legend entry represending this reporter’s channels.
-- [free](ioreporter/free.md)
-- [updateReport](ioreporter/updatereport.md)
+- [free](./free.md)
+- [updateReport](./updatereport.md)
   Produce standard reply to IOService::updateReport()
 
 

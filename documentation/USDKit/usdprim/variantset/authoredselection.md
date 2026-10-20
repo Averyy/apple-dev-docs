@@ -1,7 +1,8 @@
 # authoredSelection
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authored variant selection, or `nil` if none is authored.
 

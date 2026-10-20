@@ -1,7 +1,8 @@
 # AppAssetLibraryRefDatum.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an app asset library reference data resource.
 
@@ -10,19 +11,19 @@ Attributes that describe an app asset library reference data resource.
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryRefDatum.Attributes
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppAssetLibraryRefDatum.Attributes.DisplayClasses](appassetlibraryrefdatum/attributes-data.dictionary/displayclasses-data.dictionary.md)
-- [object AppAssetLibraryRefDatum.Attributes.Features](appassetlibraryrefdatum/attributes-data.dictionary/features-data.dictionary.md)
-- [object AppAssetLibraryRefDatum.Attributes.ImageSpecs](appassetlibraryrefdatum/attributes-data.dictionary/imagespecs-data.dictionary.md)
-- [object AppAssetLibraryRefDatum.Attributes.PlacementProfileGroups](appassetlibraryrefdatum/attributes-data.dictionary/placementprofilegroups-data.dictionary.md)
-- [object AppAssetLibraryRefDatum.Attributes.PlacementTypes](appassetlibraryrefdatum/attributes-data.dictionary/placementtypes-data.dictionary.md)
-- [object AppAssetLibraryRefDatum.Attributes.VideoSpecs](appassetlibraryrefdatum/attributes-data.dictionary/videospecs-data.dictionary.md)
+- [object AppAssetLibraryRefDatum.Attributes.DisplayClasses](./attributes-data.dictionary/displayclasses-data.dictionary.md)
+- [object AppAssetLibraryRefDatum.Attributes.Features](./attributes-data.dictionary/features-data.dictionary.md)
+- [object AppAssetLibraryRefDatum.Attributes.ImageSpecs](./attributes-data.dictionary/imagespecs-data.dictionary.md)
+- [object AppAssetLibraryRefDatum.Attributes.PlacementProfileGroups](./attributes-data.dictionary/placementprofilegroups-data.dictionary.md)
+- [object AppAssetLibraryRefDatum.Attributes.PlacementTypes](./attributes-data.dictionary/placementtypes-data.dictionary.md)
+- [object AppAssetLibraryRefDatum.Attributes.VideoSpecs](./attributes-data.dictionary/videospecs-data.dictionary.md)
 
 ## Properties
 

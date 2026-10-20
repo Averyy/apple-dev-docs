@@ -1,7 +1,8 @@
 # NSColorPickerTouchBarItem
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A bar item that provides a system-defined color picker.
 
@@ -17,61 +18,66 @@ A bar item that provides a system-defined color picker.
 class NSColorPickerTouchBarItem
 ```
 
+```objc
+@interface NSColorPickerTouchBarItem : NSTouchBarItem
+```
+
 #### Overview
 
-For design guidance, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/macos/touch-bar/touch-bar-controls-and-views/#color-pickers).
+For design guidance, see [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/macos/touch-bar/touch-bar-controls-and-views/#color-pickers).
 
 ## Topics
 
 ### Creating a color picker item
-- [class func colorPicker(withIdentifier: NSTouchBarItem.Identifier) -> Self](nscolorpickertouchbaritem/colorpicker(withidentifier:).md)
+- [class func colorPicker(withIdentifier: NSTouchBarItem.Identifier) -> Self](./nscolorpickertouchbaritem/colorpicker%28withidentifier%29.md)
   Creates a bar item with the standard color picker icon.
-- [class func textColorPicker(withIdentifier: NSTouchBarItem.Identifier) -> Self](nscolorpickertouchbaritem/textcolorpicker(withidentifier:).md)
+- [class func textColorPicker(withIdentifier: NSTouchBarItem.Identifier) -> Self](./nscolorpickertouchbaritem/textcolorpicker%28withidentifier%29.md)
   Creates a bar item with the standard text color picker icon.
-- [class func strokeColorPicker(withIdentifier: NSTouchBarItem.Identifier) -> Self](nscolorpickertouchbaritem/strokecolorpicker(withidentifier:).md)
+- [class func strokeColorPicker(withIdentifier: NSTouchBarItem.Identifier) -> Self](./nscolorpickertouchbaritem/strokecolorpicker%28withidentifier%29.md)
   Creates a bar item with the standard stroke color picker icon.
-- [class func colorPicker(withIdentifier: NSTouchBarItem.Identifier, buttonImage: UIImage) -> Self](nscolorpickertouchbaritem/colorpicker(withidentifier:buttonimage:).md)
+- [class func colorPicker(withIdentifier: NSTouchBarItem.Identifier, buttonImage: UIImage) -> Self](./nscolorpickertouchbaritem/colorpicker%28withidentifier,buttonimage%29.md)
   Creates a color picker bar item using the supplied image as its icon.
 ### Configuring the color picker
-- [var colorList: NSColorList!](nscolorpickertouchbaritem/colorlist.md)
+- [var colorList: NSColorList!](./nscolorpickertouchbaritem/colorlist.md)
   The list of colors displayed in the color picker.
-- [var allowedColorSpaces: [NSColorSpace]?](nscolorpickertouchbaritem/allowedcolorspaces.md)
+- [var allowedColorSpaces: [NSColorSpace]?](./nscolorpickertouchbaritem/allowedcolorspaces.md)
   Controls the color spaces that the color picker can produce.
-- [var showsAlpha: Bool](nscolorpickertouchbaritem/showsalpha.md)
+- [var showsAlpha: Bool](./nscolorpickertouchbaritem/showsalpha.md)
   A Boolean value that controls whether the color picker allows picking of colors with alpha values other than `1.0`.
-- [var isEnabled: Bool](nscolorpickertouchbaritem/isenabled.md)
+- [var isEnabled: Bool](./nscolorpickertouchbaritem/isenabled.md)
   A Boolean value that determines whether the color picker is enabled.
 ### Obtaining the selected color
-- [var color: UIColor](nscolorpickertouchbaritem/color.md)
+- [var color: UIColor](./nscolorpickertouchbaritem/color.md)
   The picker’s currently selected color.
-- [var target: AnyObject?](nscolorpickertouchbaritem/target.md)
+- [var target: AnyObject?](./nscolorpickertouchbaritem/target.md)
   An object that is notified when a user interacts with the color picker.
-- [var action: Selector?](nscolorpickertouchbaritem/action.md)
+- [var action: Selector?](./nscolorpickertouchbaritem/action.md)
   The selector on the target object that is invoked when a user interacts with the color picker.
 ### Configuring bar customization
-- [var customizationLabel: String!](nscolorpickertouchbaritem/customizationlabel.md)
+- [var customizationLabel: String!](./nscolorpickertouchbaritem/customizationlabel.md)
   The user-visible string identifying this item during touch bar customization.
 
 ## Relationships
 
 ### Inherits From
-- [NSTouchBarItem](nstouchbaritem.md)
+- [NSTouchBarItem](./nstouchbaritem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSColorPicker](nscolorpicker.md)
+### Color Selection
+- [class NSColorPicker](./nscolorpicker.md)
   An abstract superclass that implements the default color picking protocol.
-- [class NSColorWell](nscolorwell.md)
+- [class NSColorWell](./nscolorwell.md)
   A control that displays a color value and lets the user change that color value.
 
 

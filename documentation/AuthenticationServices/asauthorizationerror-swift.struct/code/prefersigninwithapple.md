@@ -1,7 +1,8 @@
 # ASAuthorizationError.Code.preferSignInWithApple
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This error signals the user has an existing Sign in with Apple account that they would prefer to use instead of continuing the current request.
 
@@ -16,6 +17,10 @@ This error signals the user has an existing Sign in with Apple account that they
 
 ```swift
 case preferSignInWithApple
+```
+
+```c
+ASAuthorizationErrorPreferSignInWithApple
 ```
 
 

@@ -1,7 +1,8 @@
 # EvaluationTrait
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A test trait that runs an evaluation and records the result as attachments.
 
@@ -22,8 +23,8 @@ struct EvaluationTrait
 
 ## Mentions
 
-- [Evaluating language model responses](evaluating-language-model-responses.md)
-- [Evaluating tool-calling behavior](evaluating-tool-calling-behavior.md)
+- [Evaluating language model responses](./evaluating-language-model-responses.md)
+- [Evaluating tool-calling behavior](./evaluating-tool-calling-behavior.md)
 
 #### Overview
 
@@ -42,21 +43,22 @@ The result is accessible from an evaluation context.
 ## Topics
 
 ### Instance Methods
-- [func provideScope(for: Test, testCase: Test.Case?, performing: () async throws -> Void) async throws](evaluationtrait/providescope(for:testcase:performing:).md)
+- [func provideScope(for: Test, testCase: Test.Case?, performing: () async throws -> Void) async throws](./evaluationtrait/providescope%28for,testcase,performing%29.md)
   Runs the evaluation and makes its result available to the test body through an evaluation context.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TestScoping](../testing/testscoping.md)
-- [TestTrait](../testing/testtrait.md)
-- [Trait](../testing/trait.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TestScoping](../Testing/testscoping.md)
+- [TestTrait](../Testing/testtrait.md)
+- [Trait](../Testing/trait.md)
 
 ## See Also
 
-- [struct EvaluationContext](evaluationcontext.md)
+### Swift Testing integration
+- [struct EvaluationContext](./evaluationcontext.md)
   A context that provides the evaluation result within a test scope.
 
 

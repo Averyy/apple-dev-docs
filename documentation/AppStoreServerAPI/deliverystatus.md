@@ -1,7 +1,8 @@
 # deliveryStatus
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A value that indicates whether the app successfully delivered an In-App Purchase that works properly.
 
@@ -10,25 +11,34 @@ A value that indicates whether the app successfully delivered an In-App Purchase
 
 ## Declaration
 
-```swift
+```
 string deliveryStatus
 ```
 
+## Possible Values
+
+- `DELIVERED`: The app delivered the In-App Purchase and it’s working properly.
+- `UNDELIVERED_QUALITY_ISSUE`: The app didn’t deliver the In-App Purchase due to a quality issue.
+- `UNDELIVERED_WRONG_ITEM`: The app delivered the wrong item.
+- `UNDELIVERED_SERVER_OUTAGE`: The app didn’t deliver the In-App Purchase due to a server outage.
+- `UNDELIVERED_OTHER`: The app didn’t deliver the In-App Purchase for other reasons.
+
 #### Discussion
 
-Use these delivery status values in the [`ConsumptionRequest`](consumptionrequest.md) request body.
+Use these delivery status values in the [`ConsumptionRequest`](./consumptionrequest.md) request body.
 
-> **Note**: If the delivery status isn’t `DELIVERED`, set the [`consumptionPercentage`](consumptionpercentage.md) to `0`; otherwise, the request fails with an error.
+> **Note**: If the delivery status isn’t `DELIVERED`, set the [`consumptionPercentage`](./consumptionpercentage.md) to `0`; otherwise, the request fails with an error.
 
 ## See Also
 
-- [type customerConsented](customerconsented.md)
+### Consumption data types
+- [type customerConsented](./customerconsented.md)
   A Boolean value that indicates whether the customer consented to provide consumption data to the App Store.
-- [type consumptionPercentage](consumptionpercentage.md)
+- [type consumptionPercentage](./consumptionpercentage.md)
   An integer that indicates the percentage, in milliunits, of the In-App Purchase the customer consumed.
-- [type refundPreference](refundpreference.md)
+- [type refundPreference](./refundpreference.md)
   A value that indicates your preferred outcome for the refund request.
-- [type sampleContentProvided](samplecontentprovided.md)
+- [type sampleContentProvided](./samplecontentprovided.md)
   A Boolean value that indicates whether you provided, prior to its purchase, a free sample or trial of the content, or information about its functionality.
 
 

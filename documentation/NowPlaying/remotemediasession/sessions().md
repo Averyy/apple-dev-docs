@@ -1,7 +1,8 @@
 # sessions()
 
 **Framework**: Now Playing  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns all registered remote sessions.
 
@@ -23,7 +24,7 @@ An array of all remote sessions currently registered with the system.
 
 #### Discussion
 
-> **Note**: [`RemoteMediaSessionError.internalFailure`](remotemediasessionerror/internalfailure.md) if the system couldn’t enumerate registered sessions.
+> **Throws**: [`RemoteMediaSessionError.internalFailure`](../remotemediasessionerror/internalfailure.md) if the system couldn’t enumerate registered sessions.
 
 
 ---

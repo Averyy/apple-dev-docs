@@ -1,7 +1,8 @@
 # init(previous:count:direction:transformType:ofType:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new discrete Fourier transform instance.
 
@@ -11,7 +12,7 @@ Returns a new discrete Fourier transform instance.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -26,7 +27,7 @@ The interleaved DFT operations that the Accelerate framework provides work over 
 
 The following tables show the complete list of supported lengths for different values of `f` and `n`:
 
-##### Supported Lengths for F = 1
+##### Supported lengths for f = 1
 
 | n | `2ⁿ` | `length` (`f * 2ⁿ`) |
 | --- | --- | --- |
@@ -41,7 +42,7 @@ The following tables show the complete list of supported lengths for different v
 | 11 | 2048 | **2048** |
 | 12 | 4096 | **4096** |
 
-##### Supported Lengths for F = 3
+##### Supported lengths for f = 3
 
 | n | `2ⁿ` | `length` (`f * 2ⁿ`) |
 | --- | --- | --- |
@@ -53,7 +54,7 @@ The following tables show the complete list of supported lengths for different v
 | 7 | 128 | **384** |
 | 8 | 256 | **768** |
 
-##### Supported Lengths for F = 5
+##### Supported lengths for f = 5
 
 | n | `2ⁿ` | `length` (`f * 2ⁿ`) |
 | --- | --- | --- |
@@ -64,7 +65,7 @@ The following tables show the complete list of supported lengths for different v
 | 6 | 64 | **320** |
 | 7 | 128 | **640** |
 
-##### Supported Lengths for F = 9
+##### Supported lengths for f = 9
 
 | n | `2ⁿ` | `length` (`f * 2ⁿ`) |
 | --- | --- | --- |
@@ -75,7 +76,7 @@ The following tables show the complete list of supported lengths for different v
 | 6 | 64 | **576** |
 | 7 | 128 | **1152** |
 
-##### Supported Lengths for F = 15
+##### Supported lengths for f = 15
 
 | n | `2ⁿ` | `length` (`f * 2ⁿ`) |
 | --- | --- | --- |
@@ -88,11 +89,11 @@ The following tables show the complete list of supported lengths for different v
 
 ## Parameters
 
-- `previous`: An existing [`vDSP.DiscreteFourierTransform`](vdsp/discretefouriertransform.md) structure that shares memory with the discrete Fourier transform instance that this function returns. Pass `nil` to create an object with newly initialized and allocated memory.
+- `previous`: An existing [`vDSP.DiscreteFourierTransform`](../discretefouriertransform.md) structure that shares memory with the discrete Fourier transform instance that this function returns. Pass `nil` to create an object with newly initialized and allocated memory.
 - `count`: The number of complex elements.
 - `direction`: A flag that specifies the transform direction.
 - `transformType`: A flag that specifies whether the forward transform is real-to-complex or complex-to-complex.
-- `ofType`: The data type for the discrete Fourier transform operation. For split-complex operations, this needs to be be either [`Float`](https://developer.apple.com/documentation/swift/float) or [`Double`](https://developer.apple.com/documentation/swift/double). For interleaved operations, this needs to be either [`DSPComplex`](dspcomplex.md) or [`DSPDoubleComplex`](dspdoublecomplex.md).
+- `ofType`: The data type for the discrete Fourier transform operation. For split-complex operations, this needs to be be either [`Float`](../../../Swift/float.md) or [`Double`](../../../Swift/double.md). For interleaved operations, this needs to be either [`DSPComplex`](../../dspcomplex.md) or [`DSPDoubleComplex`](../../dspdoublecomplex.md).
 
 
 ---

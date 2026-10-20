@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsOnThunderboltMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The mask indicating that the USB device is on a Thunderbolt port.
 
@@ -10,7 +11,7 @@ The mask indicating that the USB device is on a Thunderbolt port.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsOnThunderboltMask = (1 << kUSBInformationDeviceIsOnThunderboltBit)
 ```
 

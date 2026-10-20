@@ -1,14 +1,15 @@
 # gPlatformMemoryID
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 uint32_t gPlatformMemoryID;
 ```
 

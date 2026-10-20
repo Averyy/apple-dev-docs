@@ -1,7 +1,8 @@
 # HMError.Code.bridgedAccessoryNotReachable
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating the bridged accessory cannot be reached.
 
@@ -19,11 +20,16 @@ An error indicating the bridged accessory cannot be reached.
 case bridgedAccessoryNotReachable
 ```
 
+```c
+HMErrorCodeBridgedAccessoryNotReachable
+```
+
 ## See Also
 
-- [HMError.Code.cannotRemoveNonBridgeAccessory](hmerror/code/cannotremovenonbridgeaccessory.md)
+### Bridge errors
+- [HMError.Code.cannotRemoveNonBridgeAccessory](./cannotremovenonbridgeaccessory.md)
   An attempt to remove a bridged accessory.
-- [HMError.Code.cannotUnblockNonBridgeAccessory](hmerror/code/cannotunblocknonbridgeaccessory.md)
+- [HMError.Code.cannotUnblockNonBridgeAccessory](./cannotunblocknonbridgeaccessory.md)
   An error indicating a non-bridge accessory cannot be unblocked.
 
 

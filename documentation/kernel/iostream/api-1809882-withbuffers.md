@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 static IOStream *withBuffers(
  OSArray *buffers,
  IOStreamMode mode = kIOStreamModeOutput,
@@ -22,8 +22,9 @@ static IOStream *withBuffers(
 
 ## See Also
 
-- [free](iostream/1809867-free.md)
-- [initWithBuffers](iostream/1809875-initwithbuffers.md)
+### Creating IOStream objects
+- [free](./api-1809867-free.md)
+- [initWithBuffers](./api-1809875-initwithbuffers.md)
 
 
 ---

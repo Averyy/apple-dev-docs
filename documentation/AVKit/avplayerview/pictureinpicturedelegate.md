@@ -1,7 +1,8 @@
 # pictureInPictureDelegate
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Picture in Picture delegate object.
 
@@ -14,11 +15,16 @@ The Picture in Picture delegate object.
 weak var pictureInPictureDelegate: (any AVPlayerViewPictureInPictureDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<AVPlayerViewPictureInPictureDelegate> pictureInPictureDelegate;
+```
+
 ## See Also
 
-- [var allowsPictureInPicturePlayback: Bool](avplayerview/allowspictureinpictureplayback.md)
+### Configuring picture in picture
+- [var allowsPictureInPicturePlayback: Bool](./allowspictureinpictureplayback.md)
   A Boolean value that determines whether the player view allows Picture in Picture playback.
-- [protocol AVPlayerViewPictureInPictureDelegate](avplayerviewpictureinpicturedelegate.md)
+- [protocol AVPlayerViewPictureInPictureDelegate](../avplayerviewpictureinpicturedelegate.md)
   A protocol that defines the methods to implement to respond to Picture in Picture playback events.
 
 

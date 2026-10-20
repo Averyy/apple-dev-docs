@@ -1,7 +1,8 @@
 # Actor
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An entity in the audit log representing the person, service, or system that performed an action in App Store Connect.
 
@@ -10,14 +11,14 @@ An entity in the audit log representing the person, service, or system that perf
 
 ## Declaration
 
-```swift
+```
 object Actor
 ```
 
 ## Topics
 
 ### Objects
-- [object Actor.Attributes](actor/attributes-data.dictionary.md)
+- [object Actor.Attributes](./actor/attributes-data.dictionary.md)
   Attributes that describe an actor resource.
 
 ## Properties
@@ -25,13 +26,14 @@ object Actor
 - `attributes` (Actor.Attributes)
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `actors`
 
 ## See Also
 
-- [object ActorResponse](actorresponse.md)
+### Objects
+- [object ActorResponse](./actorresponse.md)
   A response containing a single audit log actor who performed a tracked action in App Store Connect.
-- [object ActorsResponse](actorsresponse.md)
+- [object ActorsResponse](./actorsresponse.md)
   A response containing a list of audit log actors who performed actions in App Store Connect.
 
 

@@ -1,7 +1,8 @@
 # groups
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of partitions of the input and output channels.
 
@@ -17,6 +18,10 @@ The number of partitions of the input and output channels.
 
 ```swift
 var groups: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger groups;
 ```
 
 #### Discussion

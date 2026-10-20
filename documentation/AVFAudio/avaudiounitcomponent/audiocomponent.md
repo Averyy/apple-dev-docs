@@ -1,7 +1,8 @@
 # audioComponent
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying audio component.
 
@@ -17,6 +18,10 @@ The underlying audio component.
 
 ```swift
 var audioComponent: AudioComponent { get }
+```
+
+```objc
+@property (nonatomic, readonly) AudioComponent audioComponent;
 ```
 
 

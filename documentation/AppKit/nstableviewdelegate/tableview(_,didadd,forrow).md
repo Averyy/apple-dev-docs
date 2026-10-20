@@ -1,7 +1,8 @@
 # tableView(_:didAdd:forRow:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a row view was added at the specified row.
 
@@ -15,11 +16,15 @@ Tells the delegate that a row view was added at the specified row.
 optional func tableView(_ tableView: NSTableView, didAdd rowView: NSTableRowView, forRow row: Int)
 ```
 
+```objc
+- (void) tableView:(NSTableView *) tableView didAddRowView:(NSTableRowView *) rowView forRow:(NSInteger) row;
+```
+
 #### Discussion
 
 At this point, the delegate can add extra views, or modify the properties of `rowView`.
 
-> **Note**:  This method is only valid for [`NSView`](nsview.md)-based table views.
+> **Note**:  This method is only valid for [`NSView`](../nsview.md)-based table views.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ At this point, the delegate can add extra views, or modify the properties of `ro
 
 ## See Also
 
-- [func tableView(NSTableView, didRemove: NSTableRowView, forRow: Int)](nstableviewdelegate/tableview(_:didremove:forrow:).md)
+### Notification of row views being added or removed
+- [func tableView(NSTableView, didRemove: NSTableRowView, forRow: Int)](./tableview%28_,didremove,forrow%29.md)
   Tells the delegate that a row view was removed from the table at the specified row.
 
 

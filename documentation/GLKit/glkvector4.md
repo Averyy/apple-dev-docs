@@ -1,7 +1,8 @@
 # GLKVector4
 
 **Framework**: GLKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A representation of a 4-component vector.
 
@@ -15,6 +16,10 @@ A representation of a 4-component vector.
 
 ```swift
 typealias GLKVector4 = _GLKVector4
+```
+
+```c
+typedef union _GLKVector4 GLKVector4;
 ```
 
 ##### Fields

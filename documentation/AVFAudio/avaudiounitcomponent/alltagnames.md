@@ -1,7 +1,8 @@
 # allTagNames
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of tag names for the audio unit component.
 
@@ -19,17 +20,22 @@ An array of tag names for the audio unit component.
 var allTagNames: [String] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * allTagNames;
+```
+
 ## See Also
 
-- [var iconURL: URL?](avaudiounitcomponent/iconurl.md)
+### Getting Audio Unit component tags
+- [var iconURL: URL?](./iconurl.md)
   The URL of an icon that represents the audio unit component.
-- [var icon: UIImage?](avaudiounitcomponent/icon.md)
+- [var icon: UIImage?](./icon.md)
   An icon that represents the component.
-- [var localizedTypeName: String](avaudiounitcomponent/localizedtypename.md)
+- [var localizedTypeName: String](./localizedtypename.md)
   The localized type name of the component.
-- [var userTagNames: [String]](avaudiounitcomponent/usertagnames.md)
+- [var userTagNames: [String]](./usertagnames.md)
   An array of tags the user creates.
-- [AVAudioUnitComponent.TagsDidChangeMessage](avaudiounitcomponent/tagsdidchangemessage.md)
+- [AVAudioUnitComponent.TagsDidChangeMessage](./tagsdidchangemessage.md)
   Type-safe notification message for audio unit component tag changes.
 
 

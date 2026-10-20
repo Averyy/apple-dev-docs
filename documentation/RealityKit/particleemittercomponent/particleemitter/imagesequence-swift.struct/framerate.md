@@ -1,7 +1,8 @@
 # frameRate
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Number of sprite sheet frames to play per second.
 

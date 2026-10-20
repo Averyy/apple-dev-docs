@@ -1,7 +1,8 @@
 # gitInformation
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Information about the git status of a given package, if available.
 

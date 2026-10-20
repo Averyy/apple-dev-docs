@@ -1,7 +1,8 @@
 # HKPredicateKeyPathECGClassification
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key path for the sample’s classification.
 
@@ -19,17 +20,23 @@ The key path for the sample’s classification.
 let HKPredicateKeyPathECGClassification: String
 ```
 
+```c
+extern NSString * const HKPredicateKeyPathECGClassification;
+```
+
 #### Discussion
 
 Use this constant whenever you want to include the ECG’s classification in a predicate format string. Add a `%K` placeholder to the format string, and then pass this constant as an argument.
 
 ## See Also
 
-- [HKElectrocardiogram.Classification](hkelectrocardiogram/classification-swift.enum.md)
+### Related Documentation
+- [HKElectrocardiogram.Classification](./hkelectrocardiogram/classification-swift.enum.md)
   Classifications returned by Apple Watch’s ECG algorithm.
-- [let HKPredicateKeyPathECGSymptomsStatus: String](hkpredicatekeypathecgsymptomsstatus.md)
+### Specifying Predicate Key Paths
+- [let HKPredicateKeyPathECGSymptomsStatus: String](./hkpredicatekeypathecgsymptomsstatus.md)
   The key path for the sample’s symptom status.
-- [let HKPredicateKeyPathAverageHeartRate: String](hkpredicatekeypathaverageheartrate.md)
+- [let HKPredicateKeyPathAverageHeartRate: String](./hkpredicatekeypathaverageheartrate.md)
   The key path for the sample’s average heart rate.
 
 

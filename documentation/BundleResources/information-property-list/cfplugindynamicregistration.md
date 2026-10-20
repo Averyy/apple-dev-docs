@@ -1,26 +1,29 @@
 # CFPlugInDynamicRegistration
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value indicating whether the host loads this plug-in.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `CFPlugInDynamicRegistration` (Plug-in should be registered dynamically)
+- **Type**: boolean
 
 ## See Also
 
-- [CFPlugInDynamicRegisterFunction](information-property-list/cfplugindynamicregisterfunction.md)
+### Plug-in configuration
+- [CFPlugInDynamicRegisterFunction](./cfplugindynamicregisterfunction.md)
   The function to use when dynamically registering a plug-in.
-- [CFPlugInFactories](information-property-list/cfpluginfactories.md)
+- [CFPlugInFactories](./cfpluginfactories.md)
   The interfaces supported by the plug-in for static registration.
-- [CFPlugInTypes](information-property-list/cfplugintypes.md)
+- [CFPlugInTypes](./cfplugintypes.md)
   One or more groups of interfaces supported by the plug-in for static registration.
-- [CFPlugInUnloadFunction](information-property-list/cfpluginunloadfunction.md)
+- [CFPlugInUnloadFunction](./cfpluginunloadfunction.md)
   The name of the function to call to unload the plug-in code from memory.
 
 

@@ -1,7 +1,8 @@
 # setNetworkList(_:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the list of handled networks.
 
@@ -17,9 +18,13 @@ Set the list of handled networks.
 func setNetworkList(_ networkList: [NEHotspotNetwork])
 ```
 
+```objc
+- (void) setNetworkList:(NSArray<NEHotspotNetwork *> *) networkList;
+```
+
 #### Discussion
 
-The Hotspot Helper app calls this method on its response to the [`NEHotspotHelperCommandType.filterScanList`](nehotspothelpercommandtype/filterscanlist.md). The helper provides the list of network objects that it is capable of handling with at least low confidence. Networks that it has no confidence in handling should not be specified.
+The Hotspot Helper app calls this method on its response to the [`NEHotspotHelperCommandType.filterScanList`](../nehotspothelpercommandtype/filterscanlist.md). The helper provides the list of network objects that it is capable of handling with at least low confidence. Networks that it has no confidence in handling should not be specified.
 
 ## Parameters
 
@@ -27,7 +32,8 @@ The Hotspot Helper app calls this method on its response to the [`NEHotspotHelpe
 
 ## See Also
 
-- [func setNetwork(NEHotspotNetwork)](nehotspothelperresponse/setnetwork(_:).md)
+### Response properties
+- [func setNetwork(NEHotspotNetwork)](./setnetwork%28_%29.md)
   Set the network that conveys the confidence level.
 
 

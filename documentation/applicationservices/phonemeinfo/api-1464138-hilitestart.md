@@ -1,7 +1,8 @@
 # hiliteStart
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The number of characters in the example word that precede the portion of that word representing the phoneme.
 
@@ -12,6 +13,10 @@ The number of characters in the example word that precede the portion of that wo
 
 ```swift
 var hiliteStart: Int16
+```
+
+```c
+SInt16 hiliteStart;
 ```
 
 

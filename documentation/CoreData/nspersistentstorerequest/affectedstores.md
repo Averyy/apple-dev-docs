@@ -1,7 +1,8 @@
 # affectedStores
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stores the request should be sent to.
 
@@ -10,7 +11,7 @@ The stores the request should be sent to.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,16 +21,22 @@ The stores the request should be sent to.
 var affectedStores: [NSPersistentStore]? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSArray<NSPersistentStore *> * affectedStores;
+```
+
 #### Discussion
 
-The array contains instances of [`NSPersistentStore`](nspersistentstore.md).
+The array contains instances of [`NSPersistentStore`](../nspersistentstore.md).
 
 ## See Also
 
-- [Core Data Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)
-- [var requestType: NSPersistentStoreRequestType](nspersistentstorerequest/requesttype.md)
+### Related Documentation
+- [Core Data Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)
+### Configuring a Request
+- [var requestType: NSPersistentStoreRequestType](./requesttype.md)
   The type of the fetch request.
-- [enum NSPersistentStoreRequestType](nspersistentstorerequesttype.md)
+- [enum NSPersistentStoreRequestType](../nspersistentstorerequesttype.md)
   Constants that specify the types of fetch requests.
 
 

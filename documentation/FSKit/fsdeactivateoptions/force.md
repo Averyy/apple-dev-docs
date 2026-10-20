@@ -1,7 +1,8 @@
 # force
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to force deactivation.
 
@@ -12,6 +13,10 @@ An option to force deactivation.
 
 ```swift
 static var force: FSDeactivateOptions { get }
+```
+
+```c
+FSDeactivateOptionsForce
 ```
 
 

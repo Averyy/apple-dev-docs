@@ -1,7 +1,8 @@
 # regularBilling
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The regular billing cycle for the recurring payment, including start and end dates, an interval, and an interval count.
 
@@ -18,11 +19,16 @@ The regular billing cycle for the recurring payment, including start and end dat
 var regularBilling: PKRecurringPaymentSummaryItem { get set }
 ```
 
+```objc
+@property (nonatomic, strong) PKRecurringPaymentSummaryItem * regularBilling;
+```
+
 ## See Also
 
-- [var trialBilling: PKRecurringPaymentSummaryItem?](pkrecurringpaymentrequest/trialbilling.md)
+### Setting payment summary items
+- [var trialBilling: PKRecurringPaymentSummaryItem?](./trialbilling.md)
   The trial billing cycle for the recurring payment.
-- [class PKRecurringPaymentSummaryItem](pkrecurringpaymentsummaryitem.md)
+- [class PKRecurringPaymentSummaryItem](../pkrecurringpaymentsummaryitem.md)
   An object that defines a summary item for a payment that occurs repeatedly at a specified interval, such as a subscription.
 
 

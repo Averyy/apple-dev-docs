@@ -1,7 +1,8 @@
 # userActivityWasContinued(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate that the user activity was continued on another device.
 
@@ -20,13 +21,18 @@ Notifies the delegate that the user activity was continued on another device.
 optional func userActivityWasContinued(_ userActivity: NSUserActivity)
 ```
 
+```objc
+- (void) userActivityWasContinued:(NSUserActivity *) userActivity;
+```
+
 ## Parameters
 
 - `userActivity`: The user activity that was continued.
 
 ## See Also
 
-- [func userActivityWillSave(NSUserActivity)](nsuseractivitydelegate/useractivitywillsave(_:).md)
+### Managing activity continuation
+- [func userActivityWillSave(NSUserActivity)](./useractivitywillsave%28_%29.md)
   Notifies the delegate that the user activity will be saved to be continued or persisted.
 
 

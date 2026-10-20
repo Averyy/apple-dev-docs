@@ -1,7 +1,8 @@
 # subcontinent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subcontinent that contains this region, if any.
 

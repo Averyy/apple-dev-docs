@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kCSDiskSpaceRecoveryOptionNoUI: Int](kcsdiskspacerecoveryoptionnoui.md)
+- [var kCSDiskSpaceRecoveryOptionNoUI: Int](../../kcsdiskspacerecoveryoptionnoui.md)
 
 
 ---

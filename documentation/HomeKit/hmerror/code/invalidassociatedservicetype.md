@@ -1,7 +1,8 @@
 # HMError.Code.invalidAssociatedServiceType
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating an invalid service type.
 
@@ -19,13 +20,18 @@ An error indicating an invalid service type.
 case invalidAssociatedServiceType
 ```
 
+```c
+HMErrorCodeInvalidAssociatedServiceType
+```
+
 ## See Also
 
-- [HMError.Code.objectAlreadyAssociatedToHome](hmerror/code/objectalreadyassociatedtohome.md)
+### Association errors
+- [HMError.Code.objectAlreadyAssociatedToHome](./objectalreadyassociatedtohome.md)
   An attempt to associate an object with a home when it’s already associated with that home.
-- [HMError.Code.objectAssociatedToAnotherHome](hmerror/code/objectassociatedtoanotherhome.md)
+- [HMError.Code.objectAssociatedToAnotherHome](./objectassociatedtoanotherhome.md)
   An attempt to associate an object with a home when it’s already associated with another home.
-- [HMError.Code.objectNotAssociatedToAnyHome](hmerror/code/objectnotassociatedtoanyhome.md)
+- [HMError.Code.objectNotAssociatedToAnyHome](./objectnotassociatedtoanyhome.md)
   An attempt to perform an operation on an object that is not associated to any home.
 
 

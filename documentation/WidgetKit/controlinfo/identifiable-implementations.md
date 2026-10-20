@@ -1,11 +1,12 @@
 # Identifiable Implementations
 
-**Framework**: WidgetKit
+**Framework**: WidgetKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var id: String](controlinfo/id.md)
+- [var id: String](./id.md)
   The stable identity of the control.
 
 

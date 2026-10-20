@@ -1,21 +1,26 @@
 # MLCTensorParameter
 
 **Framework**: ML Compute  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A tensor parameter object.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 class MLCTensorParameter
+```
+
+```objc
+@interface MLCTensorParameter : NSObject
 ```
 
 #### Overview
@@ -25,33 +30,34 @@ Use a tensor parameter to describe input tensors that the optimizer updates duri
 ## Topics
 
 ### Creating Tensor Parameters
-- [convenience init(tensor: MLCTensor)](mlctensorparameter/init(tensor:).md)
+- [convenience init(tensor: MLCTensor)](./mlctensorparameter/init%28tensor%29.md)
   Creates a tensor parameter with the tensor you specify.
-- [convenience init(tensor: MLCTensor, optimizerData: [MLCTensorData]?)](mlctensorparameter/init(tensor:optimizerdata:).md)
+- [convenience init(tensor: MLCTensor, optimizerData: [MLCTensorData]?)](./mlctensorparameter/init%28tensor,optimizerdata%29.md)
   Creates a tensor parameter with the tensor and optimizer data you specify.
 ### Inspecting Tensor Parameters
-- [var tensor: MLCTensor](mlctensorparameter/tensor.md)
+- [var tensor: MLCTensor](./mlctensorparameter/tensor.md)
   The underlying tensor.
-- [var isUpdatable: Bool](mlctensorparameter/isupdatable.md)
+- [var isUpdatable: Bool](./mlctensorparameter/isupdatable.md)
   A Boolean that indicates whether this tensor parameter is updatable.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [convenience init(graphObjects: [MLCGraph], lossLayer: MLCLayer?, optimizer: MLCOptimizer?)](mlctraininggraph/init(graphobjects:losslayer:optimizer:).md)
+### Creating Training Graphs
+- [convenience init(graphObjects: [MLCGraph], lossLayer: MLCLayer?, optimizer: MLCOptimizer?)](./mlctraininggraph/init%28graphobjects,losslayer,optimizer%29.md)
   Creates a training graph with the layers from the graph objects, loss layer, and optimizer you specify.
-- [Optimizers](optimizers.md)
+- [Optimizers](./optimizers.md)
   Create an optimizer to use with the training graph.
 
 

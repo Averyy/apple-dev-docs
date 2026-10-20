@@ -1,7 +1,8 @@
 # kCMTextMarkupAttribute_CharacterEdgeStyle
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A style for character edges.
 
@@ -20,31 +21,36 @@ A style for character edges.
 let kCMTextMarkupAttribute_CharacterEdgeStyle: CFString
 ```
 
+```c
+extern CFStringRef const kCMTextMarkupAttribute_CharacterEdgeStyle;
+```
+
 #### Discussion
 
-This attribute’s value must be one of the constants listed below that control the shape of the edges of drawn characters. The default value is [`kCMTextMarkupCharacterEdgeStyle_None`](kcmtextmarkupcharacteredgestyle_none.md).
+This attribute’s value must be one of the constants listed below that control the shape of the edges of drawn characters. The default value is [`kCMTextMarkupCharacterEdgeStyle_None`](./kcmtextmarkupcharacteredgestyle_none.md).
 
 ## Topics
 
 ### Edge Styles
-- [let kCMTextMarkupCharacterEdgeStyle_None: CFString](kcmtextmarkupcharacteredgestyle_none.md)
+- [let kCMTextMarkupCharacterEdgeStyle_None: CFString](./kcmtextmarkupcharacteredgestyle_none.md)
   No edge style.
-- [let kCMTextMarkupCharacterEdgeStyle_Raised: CFString](kcmtextmarkupcharacteredgestyle_raised.md)
+- [let kCMTextMarkupCharacterEdgeStyle_Raised: CFString](./kcmtextmarkupcharacteredgestyle_raised.md)
   A raised edge style.
-- [let kCMTextMarkupCharacterEdgeStyle_Depressed: CFString](kcmtextmarkupcharacteredgestyle_depressed.md)
+- [let kCMTextMarkupCharacterEdgeStyle_Depressed: CFString](./kcmtextmarkupcharacteredgestyle_depressed.md)
   A depressed edge style.
-- [let kCMTextMarkupCharacterEdgeStyle_Uniform: CFString](kcmtextmarkupcharacteredgestyle_uniform.md)
+- [let kCMTextMarkupCharacterEdgeStyle_Uniform: CFString](./kcmtextmarkupcharacteredgestyle_uniform.md)
   A uniform border style.
-- [let kCMTextMarkupCharacterEdgeStyle_DropShadow: CFString](kcmtextmarkupcharacteredgestyle_dropshadow.md)
+- [let kCMTextMarkupCharacterEdgeStyle_DropShadow: CFString](./kcmtextmarkupcharacteredgestyle_dropshadow.md)
   A drop shadow style.
 
 ## See Also
 
-- [let kCMTextMarkupAttribute_BoldStyle: CFString](kcmtextmarkupattribute_boldstyle.md)
+### Styles
+- [let kCMTextMarkupAttribute_BoldStyle: CFString](./kcmtextmarkupattribute_boldstyle.md)
   A bold font style.
-- [let kCMTextMarkupAttribute_ItalicStyle: CFString](kcmtextmarkupattribute_italicstyle.md)
+- [let kCMTextMarkupAttribute_ItalicStyle: CFString](./kcmtextmarkupattribute_italicstyle.md)
   An italic font style.
-- [let kCMTextMarkupAttribute_UnderlineStyle: CFString](kcmtextmarkupattribute_underlinestyle.md)
+- [let kCMTextMarkupAttribute_UnderlineStyle: CFString](./kcmtextmarkupattribute_underlinestyle.md)
   An underline font style.
 
 

@@ -1,7 +1,8 @@
 # userName
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the account name of the current user.
 
@@ -14,9 +15,14 @@ Returns the account name of the current user.
 var userName: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * userName;
+```
+
 ## See Also
 
-- [var fullUserName: String](processinfo/fullusername.md)
+### Accessing user information
+- [var fullUserName: String](./fullusername.md)
   Returns the full name of the current user.
 
 

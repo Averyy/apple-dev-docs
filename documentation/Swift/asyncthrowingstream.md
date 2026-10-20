@@ -1,7 +1,8 @@
 # AsyncThrowingStream
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence generated from an error-throwing closure that calls a continuation to produce new elements.
 
@@ -91,87 +92,88 @@ do {
 ## Topics
 
 ### Creating a Continuation-Based Stream
-- [init(Element.Type, bufferingPolicy: AsyncThrowingStream<Element, Failure>.Continuation.BufferingPolicy, (AsyncThrowingStream<Element, Failure>.Continuation) -> Void)](asyncthrowingstream/init(_:bufferingpolicy:_:).md)
+- [init(Element.Type, bufferingPolicy: AsyncThrowingStream<Element, Failure>.Continuation.BufferingPolicy, (AsyncThrowingStream<Element, Failure>.Continuation) -> Void)](./asyncthrowingstream/init%28_,bufferingpolicy,_%29.md)
   Constructs an asynchronous stream for an element type, using the specified buffering policy and element-producing closure.
-- [AsyncThrowingStream.Continuation.BufferingPolicy](asyncthrowingstream/continuation/bufferingpolicy.md)
+- [AsyncThrowingStream.Continuation.BufferingPolicy](./asyncthrowingstream/continuation/bufferingpolicy.md)
   A strategy that handles exhaustion of a buffer’s capacity.
-- [AsyncThrowingStream.Continuation](asyncthrowingstream/continuation.md)
+- [AsyncThrowingStream.Continuation](./asyncthrowingstream/continuation.md)
   A mechanism to interface between synchronous code and an asynchronous stream.
 ### Finding Elements
-- [func contains(Self.Element) async rethrows -> Bool](asyncthrowingstream/contains(_:).md)
+- [func contains(Self.Element) async rethrows -> Bool](./asyncthrowingstream/contains%28_%29.md)
   Returns a Boolean value that indicates whether the asynchronous sequence contains the given element.
-- [func contains(where: (Self.Element) async throws -> Bool) async rethrows -> Bool](asyncthrowingstream/contains(where:).md)
+- [func contains(where: (Self.Element) async throws -> Bool) async rethrows -> Bool](./asyncthrowingstream/contains%28where%29.md)
   Returns a Boolean value that indicates whether the asynchronous sequence contains an element that satisfies the given predicate.
-- [func allSatisfy((Self.Element) async throws -> Bool) async rethrows -> Bool](asyncthrowingstream/allsatisfy(_:).md)
+- [func allSatisfy((Self.Element) async throws -> Bool) async rethrows -> Bool](./asyncthrowingstream/allsatisfy%28_%29.md)
   Returns a Boolean value that indicates whether all elements produced by the asynchronous sequence satisfy the given predicate.
-- [func first(where: (Self.Element) async throws -> Bool) async rethrows -> Self.Element?](asyncthrowingstream/first(where:).md)
+- [func first(where: (Self.Element) async throws -> Bool) async rethrows -> Self.Element?](./asyncthrowingstream/first%28where%29.md)
   Returns the first element of the sequence that satisfies the given predicate.
-- [func min() async rethrows -> Self.Element?](asyncthrowingstream/min.md)
+- [func min() async rethrows -> Self.Element?](./asyncthrowingstream/min%28%29.md)
   Returns the minimum element in an asynchronous sequence of comparable elements.
-- [func min(by: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?](asyncthrowingstream/min(by:).md)
+- [func min(by: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?](./asyncthrowingstream/min%28by%29.md)
   Returns the minimum element in the asynchronous sequence, using the given predicate as the comparison between elements.
-- [func max() async rethrows -> Self.Element?](asyncthrowingstream/max.md)
+- [func max() async rethrows -> Self.Element?](./asyncthrowingstream/max%28%29.md)
   Returns the maximum element in an asynchronous sequence of comparable elements.
-- [func max(by: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?](asyncthrowingstream/max(by:).md)
+- [func max(by: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?](./asyncthrowingstream/max%28by%29.md)
   Returns the maximum element in the asynchronous sequence, using the given predicate as the comparison between elements.
 ### Selecting Elements
-- [func prefix(Int) -> AsyncPrefixSequence<Self>](asyncthrowingstream/prefix(_:).md)
+- [func prefix(Int) -> AsyncPrefixSequence<Self>](./asyncthrowingstream/prefix%28_%29.md)
   Returns an asynchronous sequence, up to the specified maximum length, containing the initial elements of the base asynchronous sequence.
-- [func prefix(while: (Self.Element) async -> Bool) rethrows -> AsyncPrefixWhileSequence<Self>](asyncthrowingstream/prefix(while:).md)
+- [func prefix(while: (Self.Element) async -> Bool) rethrows -> AsyncPrefixWhileSequence<Self>](./asyncthrowingstream/prefix%28while%29.md)
   Returns an asynchronous sequence, containing the initial, consecutive elements of the base sequence that satisfy the given predicate.
 ### Excluding Elements
-- [func dropFirst(Int) -> AsyncDropFirstSequence<Self>](asyncthrowingstream/dropfirst(_:).md)
+- [func dropFirst(Int) -> AsyncDropFirstSequence<Self>](./asyncthrowingstream/dropfirst%28_%29.md)
   Omits a specified number of elements from the base asynchronous sequence, then passes through all remaining elements.
-- [func drop(while: (Self.Element) async -> Bool) -> AsyncDropWhileSequence<Self>](asyncthrowingstream/drop(while:).md)
+- [func drop(while: (Self.Element) async -> Bool) -> AsyncDropWhileSequence<Self>](./asyncthrowingstream/drop%28while%29.md)
   Omits elements from the base asynchronous sequence until a given closure returns false, after which it passes through all remaining elements.
-- [func filter((Self.Element) async -> Bool) -> AsyncFilterSequence<Self>](asyncthrowingstream/filter(_:).md)
+- [func filter((Self.Element) async -> Bool) -> AsyncFilterSequence<Self>](./asyncthrowingstream/filter%28_%29.md)
   Creates an asynchronous sequence that contains, in order, the elements of the base sequence that satisfy the given predicate.
 ### Transforming a Sequence
-- [func map<Transformed>((Self.Element) async -> Transformed) -> AsyncMapSequence<Self, Transformed>](asyncthrowingstream/map(_:)-4a4ke.md)
+- [func map<Transformed>((Self.Element) async -> Transformed) -> AsyncMapSequence<Self, Transformed>](./asyncthrowingstream/map%28_%29-4a4ke.md)
   Creates an asynchronous sequence that maps the given closure over the asynchronous sequence’s elements.
-- [func map<Transformed>((Self.Element) async throws -> Transformed) -> AsyncThrowingMapSequence<Self, Transformed>](asyncthrowingstream/map(_:)-58nrj.md)
+- [func map<Transformed>((Self.Element) async throws -> Transformed) -> AsyncThrowingMapSequence<Self, Transformed>](./asyncthrowingstream/map%28_%29-58nrj.md)
   Creates an asynchronous sequence that maps the given error-throwing closure over the asynchronous sequence’s elements.
-- [func compactMap<ElementOfResult>((Self.Element) async -> ElementOfResult?) -> AsyncCompactMapSequence<Self, ElementOfResult>](asyncthrowingstream/compactmap(_:)-7mgih.md)
+- [func compactMap<ElementOfResult>((Self.Element) async -> ElementOfResult?) -> AsyncCompactMapSequence<Self, ElementOfResult>](./asyncthrowingstream/compactmap%28_%29-7mgih.md)
   Creates an asynchronous sequence that maps the given closure over the asynchronous sequence’s elements, omitting results that don’t return a value.
-- [func compactMap<ElementOfResult>((Self.Element) async throws -> ElementOfResult?) -> AsyncThrowingCompactMapSequence<Self, ElementOfResult>](asyncthrowingstream/compactmap(_:)-944nt.md)
+- [func compactMap<ElementOfResult>((Self.Element) async throws -> ElementOfResult?) -> AsyncThrowingCompactMapSequence<Self, ElementOfResult>](./asyncthrowingstream/compactmap%28_%29-944nt.md)
   Creates an asynchronous sequence that maps an error-throwing closure over the base sequence’s elements, omitting results that don’t return a value.
-- [func flatMap<SegmentOfResult>((Self.Element) async throws -> SegmentOfResult) -> AsyncThrowingFlatMapSequence<Self, SegmentOfResult>](asyncthrowingstream/flatmap(_:)-vhin.md)
+- [func flatMap<SegmentOfResult>((Self.Element) async throws -> SegmentOfResult) -> AsyncThrowingFlatMapSequence<Self, SegmentOfResult>](./asyncthrowingstream/flatmap%28_%29-vhin.md)
   Creates an asynchronous sequence that concatenates the results of calling the given error-throwing transformation with each element of this sequence.
-- [func reduce<Result>(Result, (Result, Self.Element) async throws -> Result) async rethrows -> Result](asyncthrowingstream/reduce(_:_:).md)
+- [func reduce<Result>(Result, (Result, Self.Element) async throws -> Result) async rethrows -> Result](./asyncthrowingstream/reduce%28_,_%29.md)
   Returns the result of combining the elements of the asynchronous sequence using the given closure.
-- [func reduce<Result>(into: Result, (inout Result, Self.Element) async throws -> Void) async rethrows -> Result](asyncthrowingstream/reduce(into:_:).md)
+- [func reduce<Result>(into: Result, (inout Result, Self.Element) async throws -> Void) async rethrows -> Result](./asyncthrowingstream/reduce%28into,_%29.md)
   Returns the result of combining the elements of the asynchronous sequence using the given closure, given a mutable initial value.
 ### Creating an Iterator
-- [func makeAsyncIterator() -> AsyncThrowingStream<Element, Failure>.Iterator](asyncthrowingstream/makeasynciterator.md)
+- [func makeAsyncIterator() -> AsyncThrowingStream<Element, Failure>.Iterator](./asyncthrowingstream/makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
-- [AsyncThrowingStream.Iterator](asyncthrowingstream/iterator.md)
+- [AsyncThrowingStream.Iterator](./asyncthrowingstream/iterator.md)
   The asynchronous iterator for iterating an asynchronous stream.
 ### Supporting Types
-- [AsyncThrowingStream.AsyncIterator](asyncthrowingstream/asynciterator.md)
+- [AsyncThrowingStream.AsyncIterator](./asyncthrowingstream/asynciterator.md)
   The type of asynchronous iterator that produces elements of this asynchronous sequence.
 ### Initializers
-- [init(unfolding: () async throws -> Element?)](asyncthrowingstream/init(unfolding:).md)
+- [init(unfolding: () async throws -> Element?)](./asyncthrowingstream/init%28unfolding%29.md)
   Constructs an asynchronous throwing stream from a given element-producing closure.
 ### Type Methods
-- [static func makeStream(of: Element.Type, throwing: Failure.Type, bufferingPolicy: AsyncThrowingStream<Element, Failure>.Continuation.BufferingPolicy) -> (stream: AsyncThrowingStream<Element, Failure>, continuation: AsyncThrowingStream<Element, Failure>.Continuation)](asyncthrowingstream/makestream(of:throwing:bufferingpolicy:).md)
-  Initializes a new [`AsyncThrowingStream`](asyncthrowingstream.md) and an [`AsyncThrowingStream.Continuation`](asyncthrowingstream/continuation.md).
+- [static func makeStream(of: Element.Type, throwing: Failure.Type, bufferingPolicy: AsyncThrowingStream<Element, Failure>.Continuation.BufferingPolicy) -> (stream: AsyncThrowingStream<Element, Failure>, continuation: AsyncThrowingStream<Element, Failure>.Continuation)](./asyncthrowingstream/makestream%28of,throwing,bufferingpolicy%29.md)
+  Initializes a new [`AsyncThrowingStream`](./asyncthrowingstream.md) and an [`AsyncThrowingStream.Continuation`](./asyncthrowingstream/continuation.md).
 ### Default Implementations
-- [AsyncSequence Implementations](asyncthrowingstream/asyncsequence-implementations.md)
+- [AsyncSequence Implementations](./asyncthrowingstream/asyncsequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](asyncsequence.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [AsyncSequence](./asyncsequence.md)
+- [Copyable](./copyable.md)
+- [Escapable](./escapable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [protocol AsyncSequence](asyncsequence.md)
+### Asynchronous Sequences
+- [protocol AsyncSequence](./asyncsequence.md)
   A type that provides asynchronous, sequential, iterated access to its elements.
-- [struct AsyncStream](asyncstream.md)
+- [struct AsyncStream](./asyncstream.md)
   An asynchronous sequence generated from a closure that calls a continuation to produce new elements.
 
 

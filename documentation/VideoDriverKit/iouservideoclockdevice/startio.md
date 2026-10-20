@@ -1,7 +1,8 @@
 # StartIO
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the clock device to start IO.
 
@@ -10,7 +11,7 @@ Tells the clock device to start IO.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t StartIO(IOUserVideoStartStopFlags in_flags);
 ```
 
@@ -24,9 +25,10 @@ The default implementation always returns `kIOReturnSuccess`. Subclass and overr
 
 ## See Also
 
-- [StopIO](iouservideoclockdevice/stopio.md)
+### Performing I/O
+- [StopIO](./stopio.md)
   Tells the clock device to stop IO.
-- [IOUserVideoStartStopFlags](videodriverkit/iouservideostartstopflags.md)
+- [IOUserVideoStartStopFlags](../videodriverkit-page/iouservideostartstopflags.md)
   Flags used to indicate how I/O is starting or stopping.
 
 

@@ -1,7 +1,8 @@
 # CFErrorCopyDescription(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a human-presentable description for a given error.
 
@@ -20,42 +21,47 @@ Returns a human-presentable description for a given error.
 func CFErrorCopyDescription(_ err: CFError!) -> CFString!
 ```
 
+```c
+extern CFStringRefCFErrorCopyDescription(CFErrorRef err);
+```
+
 #### Return Value
 
-A localized, human-presentable description of `err`. This function never returns `NULL`. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A localized, human-presentable description of `err`. This function never returns `NULL`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
 This is a complete sentence or two which says what failed and why it failed. The structure of the description depends on the details provided in the user info dictionary. The rules for computing the return value are as follows:
 
-1. If the value in the user info dictionary for [`kCFErrorLocalizedDescriptionKey`](kcferrorlocalizeddescriptionkey.md) is not `NULL`, it returns that value as-is.
-2. If the value in the user info dictionary for [`kCFErrorLocalizedFailureReasonKey`](kcferrorlocalizedfailurereasonkey.md) is not `NULL`, there will be an error generated from that.
+1. If the value in the user info dictionary for [`kCFErrorLocalizedDescriptionKey`](./kcferrorlocalizeddescriptionkey.md) is not `NULL`, it returns that value as-is.
+2. If the value in the user info dictionary for [`kCFErrorLocalizedFailureReasonKey`](./kcferrorlocalizedfailurereasonkey.md) is not `NULL`, there will be an error generated from that.
 
-The description is something like: “Operation could not be completed. “ + `kCFErrorLocalizedFailureReasonKey` 3. Generate a user-presentable string from [`kCFErrorDescriptionKey`](kcferrordescriptionkey.md), the domain, and code.
+The description is something like: “Operation could not be completed. “ + `kCFErrorLocalizedFailureReasonKey` 3. Generate a user-presentable string from [`kCFErrorDescriptionKey`](./kcferrordescriptionkey.md), the domain, and code.
 
 The description is something like: “Operation could not be completed. Error domain/code occurred. “ or “Operation could not be completed. “ + `kCFErrorDescriptionKey` + “ (Error domain/code)”
 
-Toll-free bridged instances of [`NSError`](https://developer.apple.com/documentation/foundation/nserror) might provide additional behaviors for manufacturing a description string.
+Toll-free bridged instances of [`NSError`](../Foundation/nserror.md) might provide additional behaviors for manufacturing a description string.
 
 You should not depend on the exact contents or format of the returned string, as it might change in different releases of the operating system.
 
-When you create a [`CFError`](cferror.md), you should try to make sure the return value is human-presentable and localized by providing a value for [`kCFErrorLocalizedDescriptionKey`](kcferrorlocalizeddescriptionkey.md) in the user info dictionary.
+When you create a [`CFError`](./cferror.md), you should try to make sure the return value is human-presentable and localized by providing a value for [`kCFErrorLocalizedDescriptionKey`](./kcferrorlocalizeddescriptionkey.md) in the user info dictionary.
 
 ## Parameters
 
-- `err`: The [`CFError`](cferror.md) to examine. If this is not a valid [`CFError`](cferror.md), the behavior is undefined.
+- `err`: The [`CFError`](./cferror.md) to examine. If this is not a valid [`CFError`](./cferror.md), the behavior is undefined.
 
 ## See Also
 
-- [func CFErrorGetDomain(CFError!) -> CFErrorDomain!](cferrorgetdomain(_:).md)
+### Getting Information About an Error
+- [func CFErrorGetDomain(CFError!) -> CFErrorDomain!](./cferrorgetdomain%28_%29.md)
   Returns the error domain for a given CFError.
-- [func CFErrorGetCode(CFError!) -> CFIndex](cferrorgetcode(_:).md)
+- [func CFErrorGetCode(CFError!) -> CFIndex](./cferrorgetcode%28_%29.md)
   Returns the error code for a given CFError.
-- [func CFErrorCopyUserInfo(CFError!) -> CFDictionary!](cferrorcopyuserinfo(_:).md)
+- [func CFErrorCopyUserInfo(CFError!) -> CFDictionary!](./cferrorcopyuserinfo%28_%29.md)
   Returns the user info dictionary for a given CFError.
-- [func CFErrorCopyFailureReason(CFError!) -> CFString!](cferrorcopyfailurereason(_:).md)
+- [func CFErrorCopyFailureReason(CFError!) -> CFString!](./cferrorcopyfailurereason%28_%29.md)
   Returns a human-presentable failure reason for a given error.
-- [func CFErrorCopyRecoverySuggestion(CFError!) -> CFString!](cferrorcopyrecoverysuggestion(_:).md)
+- [func CFErrorCopyRecoverySuggestion(CFError!) -> CFString!](./cferrorcopyrecoverysuggestion%28_%29.md)
   Returns a human presentable recovery suggestion for a given error.
 
 

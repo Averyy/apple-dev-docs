@@ -1,7 +1,8 @@
 # VideoPlayerComponent.SpatialVideoMode.spatial
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Spatial rendering mode - head-pose based treatments in portal or in full immersive mode set by the immersiveViewingMode.
 

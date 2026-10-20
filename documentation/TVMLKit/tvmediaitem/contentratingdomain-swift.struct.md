@@ -1,12 +1,15 @@
 # TVMediaItem.ContentRatingDomain
 
 **Framework**: TVMLKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value identifying the media’s content rating domain.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,35 +17,40 @@ A value identifying the media’s content rating domain.
 struct ContentRatingDomain
 ```
 
+```c
+typedef NSString * TVMediaItemContentRatingDomain;
+```
+
 ## Topics
 
 ### Rating Domains
-- [static let movie: TVMediaItem.ContentRatingDomain](tvmediaitem/contentratingdomain-swift.struct/movie.md)
+- [static let movie: TVMediaItem.ContentRatingDomain](./contentratingdomain-swift.struct/movie.md)
   The media item’s rating uses the movie domain.
-- [static let music: TVMediaItem.ContentRatingDomain](tvmediaitem/contentratingdomain-swift.struct/music.md)
+- [static let music: TVMediaItem.ContentRatingDomain](./contentratingdomain-swift.struct/music.md)
   The media item’s rating uses the music domain.
-- [static let tvShow: TVMediaItem.ContentRatingDomain](tvmediaitem/contentratingdomain-swift.struct/tvshow.md)
+- [static let tvShow: TVMediaItem.ContentRatingDomain](./contentratingdomain-swift.struct/tvshow.md)
   The media item’s rating uses the TV show domain.
 ### Initializers
-- [init(String)](tvmediaitem/contentratingdomain-swift.struct/init(_:).md)
-- [init(rawValue: String)](tvmediaitem/contentratingdomain-swift.struct/init(rawvalue:).md)
+- [init(String)](./contentratingdomain-swift.struct/init%28_%29.md)
+- [init(rawValue: String)](./contentratingdomain-swift.struct/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var containsExplicitContent: Bool](tvmediaitem/containsexplicitcontent.md)
+### Rating Media Content
+- [var containsExplicitContent: Bool](./containsexplicitcontent.md)
   A Boolean value indicating whether the item contains adult-oriented content.
-- [var contentRatingDomain: TVMediaItem.ContentRatingDomain?](tvmediaitem/contentratingdomain-swift.property.md)
+- [var contentRatingDomain: TVMediaItem.ContentRatingDomain?](./contentratingdomain-swift.property.md)
   The media domain that the rating applies to.
-- [var contentRatingRanking: NSNumber?](tvmediaitem/contentratingranking.md)
+- [var contentRatingRanking: NSNumber?](./contentratingranking.md)
   The rating for a video item.
 
 

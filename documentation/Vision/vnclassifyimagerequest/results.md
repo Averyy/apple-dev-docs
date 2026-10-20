@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results of the image classification request.
 
@@ -19,13 +20,18 @@ The results of the image classification request.
 var results: [VNClassificationObservation]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<VNClassificationObservation *> * results;
+```
+
 ## See Also
 
-- [func supportedIdentifiers() throws -> [String]](vnclassifyimagerequest/supportedidentifiers.md)
+### Accessing Results
+- [func supportedIdentifiers() throws -> [String]](./supportedidentifiers%28%29.md)
   Returns the classification identifiers that the request supports in its current configuration.
-- [class VNClassificationObservation](vnclassificationobservation.md)
+- [class VNClassificationObservation](../vnclassificationobservation.md)
   An object that represents classification information that an image-analysis request produces.
-- [class func knownClassifications(forRevision: Int) throws -> [VNClassificationObservation]](vnclassifyimagerequest/knownclassifications(forrevision:).md)
+- [class func knownClassifications(forRevision: Int) throws -> [VNClassificationObservation]](./knownclassifications%28forrevision%29.md)
   Requests the collection of classifications that the Vision framework recognizes.
 
 

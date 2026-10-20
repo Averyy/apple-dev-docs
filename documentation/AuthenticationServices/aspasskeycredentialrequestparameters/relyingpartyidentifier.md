@@ -1,7 +1,8 @@
 # relyingPartyIdentifier
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The relying party that issues the challenge.
 
@@ -18,13 +19,18 @@ The relying party that issues the challenge.
 var relyingPartyIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * relyingPartyIdentifier;
+```
+
 ## See Also
 
-- [var allowedCredentials: [Data]](aspasskeycredentialrequestparameters/allowedcredentials.md)
+### Viewing credential request parameters
+- [var allowedCredentials: [Data]](./allowedcredentials.md)
   A list of passkey credentials that the relying party accepts for this challenge.
-- [var clientDataHash: Data](aspasskeycredentialrequestparameters/clientdatahash.md)
+- [var clientDataHash: Data](./clientdatahash.md)
   The client data that you sign as part of the response.
-- [var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference](aspasskeycredentialrequestparameters/userverificationpreference.md)
+- [var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference](./userverificationpreference.md)
   The relying party’s preference for user verification.
 
 

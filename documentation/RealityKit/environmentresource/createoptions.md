@@ -1,7 +1,8 @@
 # EnvironmentResource.CreateOptions
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that controls compression, sampling quality, and cubemap dimensions when creating an environment resource.
 
@@ -26,36 +27,37 @@ The options provide control for balancing memory usage, quality, and processing 
 ## Topics
 
 ### Creating the options
-- [init(samplingQuality: EnvironmentResource.CreateOptions.SamplingQuality, specularCubeDimension: Int?, compression: EnvironmentResource.Compression)](environmentresource/createoptions/init(samplingquality:specularcubedimension:compression:).md)
+- [init(samplingQuality: EnvironmentResource.CreateOptions.SamplingQuality, specularCubeDimension: Int?, compression: EnvironmentResource.Compression)](./createoptions/init%28samplingquality,specularcubedimension,compression%29.md)
   Creates an environment creation options structure.
 ### Specifying the quality
-- [EnvironmentResource.CreateOptions.SamplingQuality](environmentresource/createoptions/samplingquality-swift.enum.md)
+- [EnvironmentResource.CreateOptions.SamplingQuality](./createoptions/samplingquality-swift.enum.md)
   An object for controlling the skybox sampling quality for lighting textures.
 ### Accessing the option properties
-- [var compression: EnvironmentResource.Compression](environmentresource/createoptions/compression.md)
+- [var compression: EnvironmentResource.Compression](./createoptions/compression.md)
   The compression to apply to environment textures.
-- [var samplingQuality: EnvironmentResource.CreateOptions.SamplingQuality](environmentresource/createoptions/samplingquality-swift.property.md)
+- [var samplingQuality: EnvironmentResource.CreateOptions.SamplingQuality](./createoptions/samplingquality-swift.property.md)
   The skybox sampling quality for lighting textures.
-- [var specularCubeDimension: Int?](environmentresource/createoptions/specularcubedimension.md)
+- [var specularCubeDimension: Int?](./createoptions/specularcubedimension.md)
   The dimension of the computed specular cubemap for material reflections.
 ### Creating create options
-- [init(skyboxMode: EnvironmentResource.SkyboxMode, samplingQuality: EnvironmentResource.CreateOptions.SamplingQuality, specularCubeDimension: Int?, compression: EnvironmentResource.Compression)](environmentresource/createoptions/init(skyboxmode:samplingquality:specularcubedimension:compression:).md)
+- [init(skyboxMode: EnvironmentResource.SkyboxMode, samplingQuality: EnvironmentResource.CreateOptions.SamplingQuality, specularCubeDimension: Int?, compression: EnvironmentResource.Compression)](./createoptions/init%28skyboxmode,samplingquality,specularcubedimension,compression%29.md)
   Creates an environment creation options structure.
 ### Configuring the skybox
-- [var skyboxMode: EnvironmentResource.SkyboxMode](environmentresource/createoptions/skyboxmode.md)
+- [var skyboxMode: EnvironmentResource.SkyboxMode](./createoptions/skyboxmode.md)
   Skybox’s preservation in the environment resource.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [EnvironmentResource.Compression](environmentresource/compression.md)
+### Configuring the resource creation
+- [EnvironmentResource.Compression](./compression.md)
   The compression to apply when creating an environment resource.
 
 

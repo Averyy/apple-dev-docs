@@ -1,24 +1,26 @@
 # NXSwapHostShortToLittle
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned short NXSwapHostShortToLittle(unsigned short x);
 ```
 
 ## See Also
 
-- [NXSwapHostDoubleToLittle](1517863-nxswaphostdoubletolittle.md)
-- [NXSwapHostFloatToLittle](1517859-nxswaphostfloattolittle.md)
-- [NXSwapHostIntToLittle](1517861-nxswaphostinttolittle.md)
-- [NXSwapHostLongLongToLittle](1517895-nxswaphostlonglongtolittle.md)
-- [NXSwapHostLongToLittle](1517890-nxswaphostlongtolittle.md)
+### Host to Little Endian
+- [NXSwapHostDoubleToLittle](./api-1517863-nxswaphostdoubletolittle.md)
+- [NXSwapHostFloatToLittle](./api-1517859-nxswaphostfloattolittle.md)
+- [NXSwapHostIntToLittle](./api-1517861-nxswaphostinttolittle.md)
+- [NXSwapHostLongLongToLittle](./api-1517895-nxswaphostlonglongtolittle.md)
+- [NXSwapHostLongToLittle](./api-1517890-nxswaphostlongtolittle.md)
 
 
 ---

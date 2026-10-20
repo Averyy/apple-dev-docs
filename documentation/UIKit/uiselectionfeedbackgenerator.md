@@ -1,7 +1,8 @@
 # UISelectionFeedbackGenerator
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A concrete feedback generator subclass that creates haptics to indicate a change in selection.
 
@@ -15,6 +16,10 @@ A concrete feedback generator subclass that creates haptics to indicate a change
 ```swift
 @MainActor
 class UISelectionFeedbackGenerator
+```
+
+```objc
+@interface UISelectionFeedbackGenerator : UIFeedbackGenerator
 ```
 
 #### Overview
@@ -50,42 +55,43 @@ private func longPress(_ sender: UILongPressGestureRecognizer) {
 }
 ```
 
-For more information, read [`Playing haptic feedback in your app`](https://developer.apple.com/documentation/applepencil/playing-haptic-feedback-in-your-app).
+For more information, read [Playing haptic feedback in your app](../ApplePencil/playing-haptic-feedback-in-your-app.md).
 
 ## Topics
 
 ### Reporting selection changes
-- [func selectionChanged()](uiselectionfeedbackgenerator/selectionchanged.md)
+- [func selectionChanged()](./uiselectionfeedbackgenerator/selectionchanged%28%29.md)
   Triggers selection feedback.
-- [func selectionChanged(at: CGPoint)](uiselectionfeedbackgenerator/selectionchanged(at:).md)
+- [func selectionChanged(at: CGPoint)](./uiselectionfeedbackgenerator/selectionchanged%28at%29.md)
   Triggers selection feedback at the specified location.
 
 ## Relationships
 
 ### Inherits From
-- [UIFeedbackGenerator](uifeedbackgenerator.md)
+- [UIFeedbackGenerator](./uifeedbackgenerator.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIInteraction](uiinteraction.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIInteraction](./uiinteraction.md)
 
 ## See Also
 
-- [Playing haptic feedback in your app](../applepencil/playing-haptic-feedback-in-your-app.md)
+### Haptic feedback
+- [Playing haptic feedback in your app](../ApplePencil/playing-haptic-feedback-in-your-app.md)
   Provide tactile feedback when people perform certain actions in your app.
-- [class UIFeedbackGenerator](uifeedbackgenerator.md)
+- [class UIFeedbackGenerator](./uifeedbackgenerator.md)
   The abstract superclass for all feedback generators.
-- [class UIImpactFeedbackGenerator](uiimpactfeedbackgenerator.md)
+- [class UIImpactFeedbackGenerator](./uiimpactfeedbackgenerator.md)
   A concrete feedback generator subclass that creates haptics to simulate physical impacts.
-- [class UINotificationFeedbackGenerator](uinotificationfeedbackgenerator.md)
+- [class UINotificationFeedbackGenerator](./uinotificationfeedbackgenerator.md)
   A concrete feedback generator subclass that creates haptics to communicate successes, failures, and warnings.
-- [class UICanvasFeedbackGenerator](uicanvasfeedbackgenerator.md)
+- [class UICanvasFeedbackGenerator](./uicanvasfeedbackgenerator.md)
   A concrete feedback generator subclass that creates haptics to indicate events on a drawing canvas.
 
 

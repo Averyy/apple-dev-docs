@@ -1,7 +1,8 @@
 # rotation
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the rotation angle for the page in degrees.
 
@@ -19,19 +20,24 @@ Sets the rotation angle for the page in degrees.
 var rotation: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger rotation;
+```
+
 #### Discussion
 
 The rotation must be a positive or negative multiple of 90 (negative angles are converted to their positive equivalents; for example, -90 is changed to 270); otherwise this method throws an exception.
 
 ## See Also
 
-- [var document: PDFDocument?](pdfpage/document.md)
+### Getting Information About a Page
+- [var document: PDFDocument?](./document.md)
   Returns the `PDFDocument` object with which the page is associated.
-- [var label: String?](pdfpage/label.md)
+- [var label: String?](./label.md)
   Returns the label for the page.
-- [func bounds(for: PDFDisplayBox) -> CGRect](pdfpage/bounds(for:).md)
+- [func bounds(for: PDFDisplayBox) -> CGRect](./bounds%28for%29.md)
   Returns the bounds for the specified PDF display box.
-- [func setBounds(CGRect, for: PDFDisplayBox)](pdfpage/setbounds(_:for:).md)
+- [func setBounds(CGRect, for: PDFDisplayBox)](./setbounds%28_,for%29.md)
   Sets the bounds for the specified box.
 
 

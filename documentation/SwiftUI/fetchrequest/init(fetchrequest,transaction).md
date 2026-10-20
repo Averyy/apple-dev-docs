@@ -1,7 +1,8 @@
 # init(fetchRequest:transaction:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a fully configured fetch request that uses the specified transaction when updating results.
 
@@ -21,18 +22,21 @@ Creates a fully configured fetch request that uses the specified transaction whe
 @preconcurrency init(fetchRequest: NSFetchRequest<Result>, transaction: Transaction)
 ```
 
+Available when `Result` conforms to `NSFetchRequestResult`.
+
 #### Discussion
 
-Use this initializer if you need a fetch request with updates that affect the user interface based on a [`Transaction`](transaction.md). Otherwise, use [`init(fetchRequest:animation:)`](fetchrequest/init(fetchrequest:animation:).md).
+Use this initializer if you need a fetch request with updates that affect the user interface based on a [`Transaction`](../transaction.md). Otherwise, use [`init(fetchRequest:animation:)`](./init%28fetchrequest,animation%29.md).
 
 ## Parameters
 
-- `fetchRequest`: An [`NSFetchRequest`](https://developer.apple.com/documentation/coredata/nsfetchrequest) instance that describes the search criteria for retrieving data from the persistent store.
+- `fetchRequest`: An [`NSFetchRequest`](../../CoreData/nsfetchrequest.md) instance that describes the search criteria for retrieving data from the persistent store.
 - `transaction`: A transaction to use for user interface changes that result from changes to the fetched results.
 
 ## See Also
 
-- [init(fetchRequest: NSFetchRequest<Result>, animation: Animation?)](fetchrequest/init(fetchrequest:animation:).md)
+### Creating a fully configured fetch request
+- [init(fetchRequest: NSFetchRequest<Result>, animation: Animation?)](./init%28fetchrequest,animation%29.md)
   Creates a fully configured fetch request that uses the specified animation when updating results.
 
 

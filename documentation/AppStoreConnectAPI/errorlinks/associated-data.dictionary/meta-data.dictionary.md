@@ -1,7 +1,8 @@
 # ErrorLinks.Associated.Meta
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Metadata for an associated link within an error response.
 
@@ -10,7 +11,7 @@ Metadata for an associated link within an error response.
 
 ## Declaration
 
-```swift
+```
 object ErrorLinks.Associated.Meta
 ```
 

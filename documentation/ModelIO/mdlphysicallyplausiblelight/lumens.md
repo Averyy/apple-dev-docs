@@ -1,7 +1,8 @@
 # lumens
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total visible intensity of the light source, in lumens.
 
@@ -19,15 +20,20 @@ The total visible intensity of the light source, in lumens.
 var lumens: Float { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) float lumens;
+```
+
 #### Discussion
 
 The default intensity is 1000 lumens.
 
 ## See Also
 
-- [var color: CGColor?](mdlphysicallyplausiblelight/color.md)
+### Managing Light Color and Intensity
+- [var color: CGColor?](./color.md)
   The color of the light source.
-- [func setColorByTemperature(Float)](mdlphysicallyplausiblelight/setcolorbytemperature(_:).md)
+- [func setColorByTemperature(Float)](./setcolorbytemperature%28_%29.md)
   Sets the light’s color based on a black-body temperature.
 
 

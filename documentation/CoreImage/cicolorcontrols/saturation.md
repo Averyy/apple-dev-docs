@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The amount of saturation to apply.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The amount of saturation to apply.
 var saturation: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float saturation;
+```
+
 ## See Also
 
-- [var brightness: Float](cicolorcontrols/brightness.md)
+### Instance Properties
+- [var brightness: Float](./brightness.md)
   The amount of brightness to apply.
-- [var contrast: Float](cicolorcontrols/contrast.md)
+- [var contrast: Float](./contrast.md)
   The amount of contrast to apply.
-- [var inputImage: CIImage?](cicolorcontrols/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
 
 

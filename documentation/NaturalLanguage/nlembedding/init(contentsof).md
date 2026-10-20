@@ -1,7 +1,8 @@
 # init(contentsOf:)
 
 **Framework**: Natural Language  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a word embedding from a model file.
 
@@ -20,9 +21,13 @@ Creates a word embedding from a model file.
 convenience init(contentsOf url: URL) throws
 ```
 
+```objc
++ (instancetype) embeddingWithContentsOfURL:(NSURL *) url error:(NSError **) error;
+```
+
 #### Discussion
 
-Use this initializer to create a word embedding from an `.mlmodel` file saved by Create ML’s [`MLWordEmbedding`](https://developer.apple.com/documentation/createml/mlwordembedding).
+Use this initializer to create a word embedding from an `.mlmodel` file saved by Create ML’s [`MLWordEmbedding`](../../CreateML/mlwordembedding.md).
 
 ## Parameters
 
@@ -30,9 +35,10 @@ Use this initializer to create a word embedding from an `.mlmodel` file saved by
 
 ## See Also
 
-- [class func wordEmbedding(for: NLLanguage) -> NLEmbedding?](nlembedding/wordembedding(for:).md)
+### Creating a word embedding
+- [class func wordEmbedding(for: NLLanguage) -> NLEmbedding?](./wordembedding%28for%29.md)
   Retrieves a word embedding for a given language.
-- [class func wordEmbedding(for: NLLanguage, revision: Int) -> NLEmbedding?](nlembedding/wordembedding(for:revision:).md)
+- [class func wordEmbedding(for: NLLanguage, revision: Int) -> NLEmbedding?](./wordembedding%28for,revision%29.md)
   Retrieves a word embedding for a given language and revision.
 
 

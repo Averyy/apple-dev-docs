@@ -1,7 +1,8 @@
 # AVMusicEvent
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A base class for the events you associate with a music track.
 
@@ -19,39 +20,44 @@ A base class for the events you associate with a music track.
 class AVMusicEvent
 ```
 
+```objc
+@interface AVMusicEvent : NSObject
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [AVAUPresetEvent](avaupresetevent.md)
-- [AVExtendedNoteOnEvent](avextendednoteonevent.md)
-- [AVExtendedTempoEvent](avextendedtempoevent.md)
-- [AVMIDIChannelEvent](avmidichannelevent.md)
-- [AVMIDIMetaEvent](avmidimetaevent.md)
-- [AVMIDINoteEvent](avmidinoteevent.md)
-- [AVMIDISysexEvent](avmidisysexevent.md)
-- [AVMusicUserEvent](avmusicuserevent.md)
-- [AVParameterEvent](avparameterevent.md)
+- [AVAUPresetEvent](./avaupresetevent.md)
+- [AVExtendedNoteOnEvent](./avextendednoteonevent.md)
+- [AVExtendedTempoEvent](./avextendedtempoevent.md)
+- [AVMIDIChannelEvent](./avmidichannelevent.md)
+- [AVMIDIMetaEvent](./avmidimetaevent.md)
+- [AVMIDINoteEvent](./avmidinoteevent.md)
+- [AVMIDISysexEvent](./avmidisysexevent.md)
+- [AVMusicUserEvent](./avmusicuserevent.md)
+- [AVParameterEvent](./avparameterevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVMusicUserEvent](avmusicuserevent.md)
+### Handling music events
+- [class AVMusicUserEvent](./avmusicuserevent.md)
   An object that represents a custom user message.
-- [class AVParameterEvent](avparameterevent.md)
+- [class AVParameterEvent](./avparameterevent.md)
   An object that represents a parameter event on a music track’s destination.
-- [class AVAUPresetEvent](avaupresetevent.md)
+- [class AVAUPresetEvent](./avaupresetevent.md)
   An object that represents a preset load and change on the music track’s destination audio unit.
-- [class AVExtendedTempoEvent](avextendedtempoevent.md)
+- [class AVExtendedTempoEvent](./avextendedtempoevent.md)
   An object that represents a tempo change to a specific beats-per-minute value.
-- [class AVExtendedNoteOnEvent](avextendednoteonevent.md)
+- [class AVExtendedNoteOnEvent](./avextendednoteonevent.md)
   An object that represents a custom extension of a MIDI note on event.
 
 

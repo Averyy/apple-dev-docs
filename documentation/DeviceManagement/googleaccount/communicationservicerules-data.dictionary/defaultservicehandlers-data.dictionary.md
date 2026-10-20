@@ -1,7 +1,8 @@
 # GoogleAccount.CommunicationServiceRules.DefaultServiceHandlers
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 A dictionary of default service handlers.
 
@@ -13,7 +14,7 @@ A dictionary of default service handlers.
 
 ## Declaration
 
-```swift
+```
 object GoogleAccount.CommunicationServiceRules.DefaultServiceHandlers
 ```
 

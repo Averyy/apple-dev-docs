@@ -1,7 +1,8 @@
 # CKContainer.ApplicationPermissions
 
 **Framework**: CloudKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that represent the permissions that a user grants.
 
@@ -10,7 +11,7 @@ Constants that represent the permissions that a user grants.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,38 +21,43 @@ Constants that represent the permissions that a user grants.
 struct ApplicationPermissions
 ```
 
+```c
+enum CKApplicationPermissions : NSUInteger;
+```
+
 ## Topics
 
 ### Creating Permissions
-- [init(rawValue: UInt)](ckcontainer/applicationpermissions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./applicationpermissions/init%28rawvalue%29.md)
   Creates a premission with the specified raw value.
 ### Accessing Permissions
-- [static var userDiscoverability: CKContainer.ApplicationPermissions](ckcontainer/applicationpermissions/userdiscoverability.md)
+- [static var userDiscoverability: CKContainer.ApplicationPermissions](./applicationpermissions/userdiscoverability.md)
   The user is discoverable using their email address.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func requestApplicationPermission(CKContainer.ApplicationPermissions, completionHandler: (CKContainer.ApplicationPermissionStatus, (any Error)?) -> Void)](ckcontainer/requestapplicationpermission(_:completionhandler:).md)
+### Requesting and Determining App Permissions
+- [func requestApplicationPermission(CKContainer.ApplicationPermissions, completionHandler: (CKContainer.ApplicationPermissionStatus, (any Error)?) -> Void)](./requestapplicationpermission%28_,completionhandler%29.md)
   Prompts the user to authorize the specified permission.
-- [func status(forApplicationPermission: CKContainer.ApplicationPermissions, completionHandler: (CKContainer.ApplicationPermissionStatus, (any Error)?) -> Void)](ckcontainer/status(forapplicationpermission:completionhandler:).md)
+- [func status(forApplicationPermission: CKContainer.ApplicationPermissions, completionHandler: (CKContainer.ApplicationPermissionStatus, (any Error)?) -> Void)](./status%28forapplicationpermission,completionhandler%29.md)
   Determines the authorization status of the specified permission.
-- [CKContainer.Application](ckcontainer/application.md)
+- [CKContainer.Application](./application.md)
   A collection of types for app permissions.
-- [CKContainer.ApplicationPermissionBlock](ckcontainer/applicationpermissionblock.md)
+- [CKContainer.ApplicationPermissionBlock](./applicationpermissionblock.md)
   A closure that processes the outcome of a permissions request.
-- [CKContainer.ApplicationPermissionStatus](ckcontainer/applicationpermissionstatus.md)
+- [CKContainer.ApplicationPermissionStatus](./applicationpermissionstatus.md)
   Constants that represent the status of a permission.
 
 

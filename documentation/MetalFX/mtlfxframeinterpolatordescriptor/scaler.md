@@ -1,7 +1,8 @@
 # scaler
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var scaler: (any MTLFXFrameInterpolatableScaler)? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) id<MTLFXFrameInterpolatableScaler> scaler;
 ```
 
 

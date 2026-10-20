@@ -1,18 +1,19 @@
 # SparseVariantGMRES
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that specifies the standard restarted GMRES variant.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ A constant that specifies the standard restarted GMRES variant.
 var SparseVariantGMRES: SparseGMRESVariant_t { get }
 ```
 
+```c
+SparseVariantGMRES
+```
+
 ## See Also
 
-- [var SparseVariantDQGMRES: SparseGMRESVariant_t](sparsevariantdqgmres.md)
+### Constants
+- [var SparseVariantDQGMRES: SparseGMRESVariant_t](./sparsevariantdqgmres.md)
   A constant that specifies the DQGMRES variant.
-- [var SparseVariantFGMRES: SparseGMRESVariant_t](sparsevariantfgmres.md)
+- [var SparseVariantFGMRES: SparseGMRESVariant_t](./sparsevariantfgmres.md)
   A constant that specifies the flexible GMRES variant.
 
 

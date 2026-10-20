@@ -1,7 +1,8 @@
 # init(columns:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new data frame from a sequence of columns.
 
@@ -26,9 +27,10 @@ init<S>(columns: S) where S : Sequence, S.Element == AnyColumn
 
 ## See Also
 
-- [init()](dataframe/init.md)
+### Creating a Data Frame
+- [init()](./init%28%29.md)
   Creates an empty data frame with no rows or columns.
-- [init(dictionaryLiteral: (String, [Any?])...)](dataframe/init(dictionaryliteral:).md)
+- [init(dictionaryLiteral: (String, [Any?])...)](./init%28dictionaryliteral%29.md)
   Creates a data frame from a dictionary literal.
 
 

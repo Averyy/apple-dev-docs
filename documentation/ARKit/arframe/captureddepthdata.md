@@ -1,7 +1,8 @@
 # capturedDepthData
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Depth data captured in front-camera experiences.
 
@@ -15,23 +16,28 @@ Depth data captured in front-camera experiences.
 var capturedDepthData: AVDepthData? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) AVDepthData * capturedDepthData;
+```
+
 #### Discussion
 
-Frames vended by the session contain a depth map captured by the depth sensor in addition to the color pixel buffer (see [`capturedImage`](arframe/capturedimage.md)) captured by the color camera. The depth-sensing camera provides data at a different frame rate than the color camera, so this property’s value can be `nil` if no depth data was captured at the same time as the current color image.
+Frames vended by the session contain a depth map captured by the depth sensor in addition to the color pixel buffer (see [`capturedImage`](./capturedimage.md)) captured by the color camera. The depth-sensing camera provides data at a different frame rate than the color camera, so this property’s value can be `nil` if no depth data was captured at the same time as the current color image.
 
-This depth data is available only in face-based experiences (see [`ARFaceTrackingConfiguration`](arfacetrackingconfiguration.md)) using the device’s front TrueDepth camera. This property’s value is `nil` when running other AR configurations.
+This depth data is available only in face-based experiences (see [`ARFaceTrackingConfiguration`](../arfacetrackingconfiguration.md)) using the device’s front TrueDepth camera. This property’s value is `nil` when running other AR configurations.
 
 ## See Also
 
-- [var lightEstimate: ARLightEstimate?](arframe/lightestimate.md)
+### Accessing scene data
+- [var lightEstimate: ARLightEstimate?](./lightestimate.md)
   An estimate of lighting conditions based on the camera image.
-- [var rawFeaturePoints: ARPointCloud?](arframe/rawfeaturepoints.md)
+- [var rawFeaturePoints: ARPointCloud?](./rawfeaturepoints.md)
   The current intermediate results of the scene analysis ARKit uses to perform world tracking.
-- [var capturedDepthDataTimestamp: TimeInterval](arframe/captureddepthdatatimestamp.md)
+- [var capturedDepthDataTimestamp: TimeInterval](./captureddepthdatatimestamp.md)
   The time at which depth data for the frame (if any) was captured.
-- [var sceneDepth: ARDepthData?](arframe/scenedepth.md)
+- [var sceneDepth: ARDepthData?](./scenedepth.md)
   Data on the distance between a device’s rear camera and real-world objects in an AR experience.
-- [var smoothedSceneDepth: ARDepthData?](arframe/smoothedscenedepth.md)
+- [var smoothedSceneDepth: ARDepthData?](./smoothedscenedepth.md)
   An average of distance measurements between a device’s rear camera and real-world objects that creates smoother visuals in an AR experience.
 
 

@@ -1,7 +1,8 @@
 # type
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of leaderboard, classic or recurring.
 
@@ -20,15 +21,20 @@ The type of leaderboard, classic or recurring.
 var type: GKLeaderboard.LeaderboardType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GKLeaderboardType type;
+```
+
 ## See Also
 
-- [var baseLeaderboardID: String](gkleaderboard/baseleaderboardid.md)
+### Accessing Identifier and Type Properties
+- [var baseLeaderboardID: String](./baseleaderboardid.md)
   The ID that Game Center uses to identify this leaderboard.
-- [var title: String?](gkleaderboard/title.md)
+- [var title: String?](./title.md)
   The localized title for the leaderboard.
-- [GKLeaderboard.LeaderboardType](gkleaderboard/leaderboardtype.md)
+- [GKLeaderboard.LeaderboardType](./leaderboardtype.md)
   Specifies whether a leaderboard is recurring.
-- [var groupIdentifier: String?](gkleaderboard/groupidentifier.md)
+- [var groupIdentifier: String?](./groupidentifier.md)
   The identifier for the group the leaderboard belongs to.
 
 

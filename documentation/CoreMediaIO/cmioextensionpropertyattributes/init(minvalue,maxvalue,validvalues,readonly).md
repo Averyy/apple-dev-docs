@@ -1,7 +1,8 @@
 # init(minValue:maxValue:validValues:readOnly:)
 
 **Framework**: Core Media I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a property attributes object with the specified configuration.
 
@@ -13,6 +14,10 @@ Creates a property attributes object with the specified configuration.
 
 ```swift
 init(minValue: ObjectType?, maxValue: ObjectType?, validValues: [ObjectType]?, readOnly: Bool)
+```
+
+```objc
+- (instancetype) initWithMinValue:(ObjectType) minValue maxValue:(ObjectType) maxValue validValues:(NSArray<id> *) validValues readOnly:(BOOL) readOnly;
 ```
 
 #### Discussion

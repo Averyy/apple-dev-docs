@@ -1,25 +1,27 @@
 # OSStringGetStringPtr
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 const char *OSStringGetStringPtr(OSStringPtr obj);
 ```
 
 ## See Also
 
-- [getCStringNoCopy](osstring/getcstringnocopy.md)
+### Getting a C String
+- [getCStringNoCopy](./osstring/getcstringnocopy.md)
   Returns a pointer to the OSString object’s internal data buffer.
-- [OSStringPtr](osstringptr.md)
+- [OSStringPtr](./osstringptr.md)
 
 
 ---

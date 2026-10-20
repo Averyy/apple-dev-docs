@@ -1,7 +1,8 @@
 # init(device:linearToGrayScaleTransform:sigma:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 14.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, linearToGrayScaleTransform transform: UnsafePointer<Float>, sigma: Float)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device linearToGrayScaleTransform:(const float *) transform sigma:(const float) sigma;
 ```
 
 

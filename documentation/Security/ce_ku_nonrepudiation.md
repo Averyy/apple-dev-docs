@@ -1,7 +1,8 @@
 # CE_KU_NonRepudiation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CE_KU_NonRepudiation: Int32 { get }
+```
+
+```c
+#define CE_KU_NonRepudiation
 ```
 
 

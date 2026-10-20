@@ -1,7 +1,8 @@
 # hasAuthoredDisplayName
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this object has an authored display name.
 

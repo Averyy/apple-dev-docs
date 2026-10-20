@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : int {
     ...
 };
@@ -17,13 +18,13 @@ enum : int {
 ## Topics
 
 ### Constants
-- [kDisplayModeIDBootProgrammable](1644568-anonymous/kdisplaymodeidbootprogrammable.md)
-- [kDisplayModeIDCurrent](1644568-anonymous/kdisplaymodeidcurrent.md)
-- [kDisplayModeIDFindFirstProgrammable](1644568-anonymous/kdisplaymodeidfindfirstprogrammable.md)
-- [kDisplayModeIDFindFirstResolution](1644568-anonymous/kdisplaymodeidfindfirstresolution.md)
-- [kDisplayModeIDInvalid](1644568-anonymous/kdisplaymodeidinvalid.md)
-- [kDisplayModeIDNoMoreResolutions](1644568-anonymous/kdisplaymodeidnomoreresolutions.md)
-- [kDisplayModeIDReservedBase](1644568-anonymous/kdisplaymodeidreservedbase.md)
+- [kDisplayModeIDBootProgrammable](./api-1644568-anonymous/kdisplaymodeidbootprogrammable.md)
+- [kDisplayModeIDCurrent](./api-1644568-anonymous/kdisplaymodeidcurrent.md)
+- [kDisplayModeIDFindFirstProgrammable](./api-1644568-anonymous/kdisplaymodeidfindfirstprogrammable.md)
+- [kDisplayModeIDFindFirstResolution](./api-1644568-anonymous/kdisplaymodeidfindfirstresolution.md)
+- [kDisplayModeIDInvalid](./api-1644568-anonymous/kdisplaymodeidinvalid.md)
+- [kDisplayModeIDNoMoreResolutions](./api-1644568-anonymous/kdisplaymodeidnomoreresolutions.md)
+- [kDisplayModeIDReservedBase](./api-1644568-anonymous/kdisplaymodeidreservedbase.md)
 
 
 ---

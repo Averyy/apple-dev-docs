@@ -1,7 +1,8 @@
 # resourceType(at:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func resourceType(at index: Int) -> MPSStateResourceType
+```
+
+```objc
+- (MPSStateResourceType) resourceTypeAtIndex:(NSUInteger) index;
 ```
 
 

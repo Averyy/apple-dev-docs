@@ -1,7 +1,8 @@
 # init(isIncluded:header:footer:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -19,10 +20,13 @@
 @preconcurrency init(isIncluded: @escaping (Product) -> Bool, @ViewBuilder header: () -> Header = EmptyView.init, @ViewBuilder footer: () -> Footer = EmptyView.init)
 ```
 
+Available when `Header` conforms to `View`, `Content` is `Never`, and `Footer` conforms to `View`.
+
 ## See Also
 
-- [init(LocalizedStringKey, isIncluded: (Product) -> Bool, footer: () -> Footer)](subscriptionoptionsection/init(_:isincluded:footer:)-17lo3.md)
-- [init(some StringProtocol, isIncluded: (Product) -> Bool, footer: () -> Footer)](subscriptionoptionsection/init(_:isincluded:footer:)-36k79.md)
+### Creating subscription option sections
+- [init(LocalizedStringKey, isIncluded: (Product) -> Bool, footer: () -> Footer)](./init%28_,isincluded,footer%29-17lo3.md)
+- [init(some StringProtocol, isIncluded: (Product) -> Bool, footer: () -> Footer)](./init%28_,isincluded,footer%29-36k79.md)
 
 
 ---

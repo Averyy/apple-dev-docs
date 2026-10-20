@@ -1,7 +1,8 @@
 # Invalidate a Merchant Token
 
 **Framework**: Apple Pay Merchant Token Management API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Invalidate a merchant token associated with your merchant identifier, making it invalid for future transaction authorizations.
 
@@ -22,17 +23,33 @@ When you call this endpoint, Apple Pay server unlinks — invalidates — the me
 
 ## Parameters
 
+### Path Parameters
+
+- `merchantId` (string) *(required)*: Your merchant identifier.
+
+### Header Parameters
+
 - `Accept` (string)
 - `Content-Type` (string) *(required)*
 - `x-request-id` (string) *(required)*
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `MerchantTokenUnlinkRequest`
+
 The request body you use to specify the merchant token that Apple Pay should invalidate.
+
+## Responses
+
+- `204` No Content: Success. The service doesn’t return any additional information.
+- `400` Bad Request (`ErrorResponse`, `application/json`): Invalid request. The merchant token identifier isn’t valid for the merchant identifier.
+- `500` Internal Server Error (`ErrorResponse`, `application/json`): Internal server error.
 
 ## See Also
 
-- [object MerchantTokenUnlinkRequest](merchanttokenunlinkrequest.md)
+### Merchant token invalidation
+- [object MerchantTokenUnlinkRequest](./merchanttokenunlinkrequest.md)
   The request body you use to invalidate a merchant token.
 
 

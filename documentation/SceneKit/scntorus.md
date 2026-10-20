@@ -1,18 +1,19 @@
 # SCNTorus
 
 **Framework**: SceneKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A torus, or ring-shaped geometry.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,67 +21,72 @@ A torus, or ring-shaped geometry.
 class SCNTorus
 ```
 
+```objc
+@interface SCNTorus : SCNGeometry
+```
+
 #### Overview
 
-![None](/images/com.apple.scenekit/media-2929816@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929816@2x.png)
 
-A torus is mathematically defined as a surface of revolution formed by revolving a circle around a coplanar axis. It is the product of two circles: a large ring and a pipe that encircles the ring. SceneKit uses these terms to define the dimensions of a torus geometry in its local coordinate space. The torus’ [`ringRadius`](scntorus/ringradius.md) property defines a circle in the x- and z-axis dimensions, centered at the origin, and its [`pipeRadius`](scntorus/piperadius.md) property defines the width of the surface encircling the ring. To change the orientation of a torus, adjust the [`transform`](scnnode/transform.md) property of the node containing the torus geometry.
+A torus is mathematically defined as a surface of revolution formed by revolving a circle around a coplanar axis. It is the product of two circles: a large ring and a pipe that encircles the ring. SceneKit uses these terms to define the dimensions of a torus geometry in its local coordinate space. The torus’ [`ringRadius`](./scntorus/ringradius.md) property defines a circle in the x- and z-axis dimensions, centered at the origin, and its [`pipeRadius`](./scntorus/piperadius.md) property defines the width of the surface encircling the ring. To change the orientation of a torus, adjust the [`transform`](./scnnode/transform.md) property of the node containing the torus geometry.
 
-Control the level of detail with the [`ringSegmentCount`](scntorus/ringsegmentcount.md) and [`pipeSegmentCount`](scntorus/pipesegmentcount.md) properties. Higher segment counts produce more vertices and a more smoothly curved surface, which can improve rendering quality at a cost to rendering performance.
+Control the level of detail with the [`ringSegmentCount`](./scntorus/ringsegmentcount.md) and [`pipeSegmentCount`](./scntorus/pipesegmentcount.md) properties. Higher segment counts produce more vertices and a more smoothly curved surface, which can improve rendering quality at a cost to rendering performance.
 
 ## Topics
 
 ### Creating a Torus
-- [convenience init(ringRadius: CGFloat, pipeRadius: CGFloat)](scntorus/init(ringradius:piperadius:).md)
+- [convenience init(ringRadius: CGFloat, pipeRadius: CGFloat)](./scntorus/init%28ringradius,piperadius%29.md)
   Creates a torus geometry with the specified ring radius and pipe radius.
 ### Adjusting a Torus’ Dimensions
-- [var ringRadius: CGFloat](scntorus/ringradius.md)
+- [var ringRadius: CGFloat](./scntorus/ringradius.md)
   The major radius of the torus, defining a circle in the x- and z-axis dimensions. Animatable.
-- [var pipeRadius: CGFloat](scntorus/piperadius.md)
+- [var pipeRadius: CGFloat](./scntorus/piperadius.md)
   The minor radius of the torus, defining the pipe that encircles the torus ring. Animatable.
 ### Configuring Torus Properties
-- [var ringSegmentCount: Int](scntorus/ringsegmentcount.md)
+- [var ringSegmentCount: Int](./scntorus/ringsegmentcount.md)
   The number of subdivisions around the torus ring. Animatable.
-- [var pipeSegmentCount: Int](scntorus/pipesegmentcount.md)
+- [var pipeSegmentCount: Int](./scntorus/pipesegmentcount.md)
   The number of subdivisions around the torus pipe. Animatable.
 
 ## Relationships
 
 ### Inherits From
-- [SCNGeometry](scngeometry.md)
+- [SCNGeometry](./scngeometry.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [SCNAnimatable](scnanimatable.md)
-- [SCNBoundingVolume](scnboundingvolume.md)
-- [SCNShadable](scnshadable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [SCNAnimatable](./scnanimatable.md)
+- [SCNBoundingVolume](./scnboundingvolume.md)
+- [SCNShadable](./scnshadable.md)
 
 ## See Also
 
-- [class SCNFloor](scnfloor.md)
+### Basic Shapes
+- [class SCNFloor](./scnfloor.md)
   A plane that can optionally display a reflection of the scene above it.
-- [class SCNBox](scnbox.md)
+- [class SCNBox](./scnbox.md)
   A six-sided polyhedron geometry whose faces are all rectangles, optionally with rounded edges and corners.
-- [class SCNCapsule](scncapsule.md)
+- [class SCNCapsule](./scncapsule.md)
   A right circular cylinder geometry whose ends are capped with hemispheres.
-- [class SCNCone](scncone.md)
+- [class SCNCone](./scncone.md)
   A right circular cone or frustum geometry.
-- [class SCNCylinder](scncylinder.md)
+- [class SCNCylinder](./scncylinder.md)
   A right circular cylinder geometry.
-- [class SCNPlane](scnplane.md)
+- [class SCNPlane](./scnplane.md)
   A rectangular, one-sided plane geometry of specified width and height.
-- [class SCNPyramid](scnpyramid.md)
+- [class SCNPyramid](./scnpyramid.md)
   A right rectangular pyramid geometry.
-- [class SCNSphere](scnsphere.md)
+- [class SCNSphere](./scnsphere.md)
   A sphere (or ball or globe) geometry.
-- [class SCNTube](scntube.md)
+- [class SCNTube](./scntube.md)
   A tube or pipe geometry—a right circular cylinder with a circular hole along its central axis.
 
 

@@ -1,7 +1,8 @@
 # MTLStageInRegionIndirectArguments
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The data layout required for the arguments needed to specify the stage-in region.
 
@@ -19,34 +20,39 @@ The data layout required for the arguments needed to specify the stage-in region
 struct MTLStageInRegionIndirectArguments
 ```
 
+```c
+typedef struct { ... } MTLStageInRegionIndirectArguments;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](mtlstageinregionindirectarguments/init.md)
-- [init(stageInOrigin: (UInt32, UInt32, UInt32), stageInSize: (UInt32, UInt32, UInt32))](mtlstageinregionindirectarguments/init(stageinorigin:stageinsize:).md)
+- [init()](./mtlstageinregionindirectarguments/init%28%29.md)
+- [init(stageInOrigin: (UInt32, UInt32, UInt32), stageInSize: (UInt32, UInt32, UInt32))](./mtlstageinregionindirectarguments/init%28stageinorigin,stageinsize%29.md)
 ### Instance Properties
-- [var stageInOrigin: (UInt32, UInt32, UInt32)](mtlstageinregionindirectarguments/stageinorigin.md)
+- [var stageInOrigin: (UInt32, UInt32, UInt32)](./mtlstageinregionindirectarguments/stageinorigin.md)
   The location of the upper-left corner of the block.
-- [var stageInSize: (UInt32, UInt32, UInt32)](mtlstageinregionindirectarguments/stageinsize.md)
+- [var stageInSize: (UInt32, UInt32, UInt32)](./mtlstageinregionindirectarguments/stageinsize.md)
   The size of the block.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [protocol MTLIndirectComputeCommand](mtlindirectcomputecommand.md)
+### Indirect compute commands
+- [protocol MTLIndirectComputeCommand](./mtlindirectcomputecommand.md)
   A compute command in an indirect command buffer.
-- [struct MTLRegion](mtlregion.md)
+- [struct MTLRegion](./mtlregion.md)
   The bounds for a subset of an instance’s elements.
-- [struct MTLSize](mtlsize.md)
+- [struct MTLSize](./mtlsize.md)
   A type that represents one, two, or three dimensions of a type instance, such as an array or texture.
-- [struct MTLOrigin](mtlorigin.md)
+- [struct MTLOrigin](./mtlorigin.md)
   The coordinates for the front upper-left corner of a region.
-- [struct MTLDispatchThreadgroupsIndirectArguments](mtldispatchthreadgroupsindirectarguments.md)
+- [struct MTLDispatchThreadgroupsIndirectArguments](./mtldispatchthreadgroupsindirectarguments.md)
   The data layout required for arguments needed to specify the size of threadgroups.
 
 

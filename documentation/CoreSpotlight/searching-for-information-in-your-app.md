@@ -1,6 +1,7 @@
 # Searching for information in your app
 
-**Framework**: Core Spotlight
+**Framework**: Core Spotlight  
+**Role**: Article
 
 Search for app-specific content and refine search results using predicates and filters.
 
@@ -8,22 +9,22 @@ Search for app-specific content and refine search results using predicates and f
 
 Add search capabilities to your app to find relevant information quickly. Instead of building your own custom search tools, index your content using the Core Spotlight APIs and use the framework-provided queries to retrieve information. Indexing your content makes it available to both your app and to the system’s Spotlight search feature.
 
-Use a [`CSSearchQuery`](cssearchquery.md) object to execute a search of your app’s indexed content. With this query object, you specify which attributes of an item to match, and the values that constitute a match. For example, you might tell the query to look for media clips with a duration in a specific range. Although you might incorporate input from your app’s UI when building your query string, use this query type to match specific attributes of your indexed content. For information about how to search based solely on input from a person, see [`Building a search interface for your app`](building-a-search-interface-for-your-app.md).
+Use a [`CSSearchQuery`](./cssearchquery.md) object to execute a search of your app’s indexed content. With this query object, you specify which attributes of an item to match, and the values that constitute a match. For example, you might tell the query to look for media clips with a duration in a specific range. Although you might incorporate input from your app’s UI when building your query string, use this query type to match specific attributes of your indexed content. For information about how to search based solely on input from a person, see [Building a search interface for your app](./building-a-search-interface-for-your-app.md).
 
-##### Select the Attributes You Want the Query to Retrieve
+##### Select the attributes you want the query to retrieve
 
-When you execute a query, the system doesn’t automatically retrieve every property of your [`CSSearchableItem`](cssearchableitem.md) objects. Instead, it retrieves only the properties you specifically request. This behavior improves performance by not spending time to retrieve information your app doesn’t need.
+When you execute a query, the system doesn’t automatically retrieve every property of your [`CSSearchableItem`](./cssearchableitem.md) objects. Instead, it retrieves only the properties you specifically request. This behavior improves performance by not spending time to retrieve information your app doesn’t need.
 
-Identify the properties you want, and specify the property names as strings when you initialize your query. For example, to fetch the title and display name of each item, include “title” and “displayName” strings in the [`fetchAttributes`](cssearchquerycontext/fetchattributes.md) property of your context object.
+Identify the properties you want, and specify the property names as strings when you initialize your query. For example, to fetch the title and display name of each item, include “title” and “displayName” strings in the [`fetchAttributes`](./cssearchquerycontext/fetchattributes.md) property of your context object.
 
-##### Create a Query String for Your Search
+##### Create a query string for your search
 
 When you execute a query, Core Spotlight evaluates each item in the index against a query string you provide. Construct your query string from one or more predicates, and use each predicate to evaluate an attribute of the indexed item. If the predicates in the overall query string evaluate to true for an item, the query object returns the item in the search results. For each predicate in your query string, use one of the following formats:
 
 - `attributeName operator value[modifiers]`
 - `InRange(attributeName, minValue, maxValue)`
 
-In both formats, `attributeName` is a property name from the [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md) class. For example, to evaluate the [`title`](cssearchableitemattributeset/title.md) property of the item, use “title” as the attribute name. The `InRange` predicate determines whether a property with a numeric value is between the specified minimum and maximum values. Other predicates compare the attribute to the value you specify using one of the following operators:
+In both formats, `attributeName` is a property name from the [`CSSearchableItemAttributeSet`](./cssearchableitemattributeset.md) class. For example, to evaluate the [`title`](./cssearchableitemattributeset/title.md) property of the item, use “title” as the attribute name. The `InRange` predicate determines whether a property with a numeric value is between the specified minimum and maximum values. Other predicates compare the attribute to the value you specify using one of the following operators:
 
 | Operator | Definition |
 | --- | --- |
@@ -76,14 +77,14 @@ To detect the presence or absence of a particular attribute in an item, compare 
 | `completionDate == "*"` | Matches an item when the `completionDate` attribute is present and has a value. |
 | `completionDate != "*"` | Matches an item when the `completionDate` attribute is absent. |
 
-##### Match Dates and Times in a Query String
+##### Match dates and times in a query string
 
 When an attribute contains a date or time value, there are two ways you can specify the value portion of your predicate:
 
-- Specify a floating-point value with the number of seconds relative to January 1, 2001. You can get this value from a [`CFDate`](https://developer.apple.com/documentation/corefoundation/cfdate) or [`Date`](https://developer.apple.com/documentation/foundation/date) type using the [`CFDateGetAbsoluteTime(_:)`](https://developer.apple.com/documentation/corefoundation/cfdategetabsolutetime(_:)) function.
+- Specify a floating-point value with the number of seconds relative to January 1, 2001. You can get this value from a [`CFDate`](../CoreFoundation/cfdate.md) or [`Date`](../Foundation/date.md) type using the [`CFDateGetAbsoluteTime(_:)`](../CoreFoundation/cfdategetabsolutetime%28_%29.md) function.
 - Specify a property of the built-in `$time` variable.
 
-[`CSSearchQuery`](cssearchquery.md) provides the `$time` variable as a convenient way to specify date values in your query strings. When you start a query, the system initializes this variable to the current date and time. Include this variable in the value portion of your predicate to compare a date-based attribute to the date you specify. The following table lists the properties of the variable you can use in your predicates and how the query matches them against attributes.
+[`CSSearchQuery`](./cssearchquery.md) provides the `$time` variable as a convenient way to specify date values in your query strings. When you start a query, the system initializes this variable to the current date and time. Include this variable in the value portion of your predicate to compare a date-based attribute to the date you specify. The following table lists the properties of the variable you can use in your predicates and how the query matches them against attributes.
 
 | `$time` property | Description |
 | --- | --- |
@@ -99,7 +100,7 @@ When an attribute contains a date or time value, there are two ways you can spec
 | `$time.this_week(NUMBER)` | Adds `NUMBER` weeks to the current date and matches the attribute against that value. You can specify negative or positive numbers. |
 | `$time.this_month(NUMBER)` | Adds `NUMBER` months to the current date and matches the attribute against that value. You can specify negative or positive numbers. |
 | `$time.this_year(NUMBER)` | Adds `NUMBER` years to the current date and matches the attribute against that value. You can specify negative or positive numbers. |
-| `$time.iso(ISO-8601-STR)` | Matches the date you specify using an [`ISO-8601-STR`](https://developer.apple.comhttps://www.iso.org/iso-8601-date-and-time-format.html) compliant string. |
+| `$time.iso(ISO-8601-STR)` | Matches the date you specify using an [ISO-8601-STR](https://www.iso.org/iso-8601-date-and-time-format.html) compliant string. |
 
 The following example shows a query string that includes different types of predicates and modifiers and uses the `$time` variable. The predicate matches an item if author is either Tim or Steve and the item’s completion date occurred within the past 10 days. For the completion date check, adding a negative number to the `$time.today` variable creates a date in the past.
 
@@ -108,11 +109,11 @@ The following example shows a query string that includes different types of pred
  InRange(completionDate,$time.today(-10),$time.today)
 ```
 
-##### Start the Query and Process the Results
+##### Start the query and process the results
 
-Search queries are one-shot objects. While they run, they deliver matching items asynchronously to the handlers you provide. When there are no more items, the query stops. You can also stop a query early by calling its [`cancel()`](cssearchquery/cancel().md) method before the system delivers all matching results.
+Search queries are one-shot objects. While they run, they deliver matching items asynchronously to the handlers you provide. When there are no more items, the query stops. You can also stop a query early by calling its [`cancel()`](./cssearchquery/cancel%28%29.md) method before the system delivers all matching results.
 
-Create a new query using a query string and a [`CSSearchQueryContext`](cssearchquerycontext.md) object, which contains the query configuration parameters. Start the query by fetching the [`results`](cssearchquery/results-swift.property.md) property of the query object and iterating over the results. The property contains an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence), and fetching it starts the query and begins the delivery of the results. The following function searches for items with a specific title and processes the results in an asynchronous task:
+Create a new query using a query string and a [`CSSearchQueryContext`](./cssearchquerycontext.md) object, which contains the query configuration parameters. Start the query by fetching the [`results`](./cssearchquery/results-swift.property.md) property of the query object and iterating over the results. The property contains an [`AsyncSequence`](../Swift/asyncsequence.md), and fetching it starts the query and begins the delivery of the results. The following function searches for items with a specific title and processes the results in an asynchronous task:
 
 ```swift
 import CoreSpotlight
@@ -149,9 +150,9 @@ class QueryExample {
 }
 ```
 
-If you prefer not to process the results using an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence), specify values for the [`foundItemsHandler`](cssearchquery/founditemshandler.md) and [`completionHandler`](cssearchquery/completionhandler.md) properties. When using handler blocks, you’re responsible for calling the [`start()`](cssearchquery/start().md) method to start the query. To deliver results, the query calls your  [`foundItemsHandler`](cssearchquery/founditemshandler.md) block one or more times, delivering new results with each call. The system executes your completion handler block only once after it finishes delivering all the results.
+If you prefer not to process the results using an [`AsyncSequence`](../Swift/asyncsequence.md), specify values for the [`foundItemsHandler`](./cssearchquery/founditemshandler.md) and [`completionHandler`](./cssearchquery/completionhandler.md) properties. When using handler blocks, you’re responsible for calling the [`start()`](./cssearchquery/start%28%29.md) method to start the query. To deliver results, the query calls your  [`foundItemsHandler`](./cssearchquery/founditemshandler.md) block one or more times, delivering new results with each call. The system executes your completion handler block only once after it finishes delivering all the results.
 
-> ❗ **Important**: Process results using either the [`results`](cssearchquery/results-swift.property.md) property or handler blocks, but not both.
+> ❗ **Important**: Process results using either the [`results`](./cssearchquery/results-swift.property.md) property or handler blocks, but not both.
 
 The following code shows a version of the previous method that uses handler blocks to process the results.
 
@@ -198,17 +199,18 @@ class QueryExample {
 
 ## See Also
 
-- [Building a search interface for your app](building-a-search-interface-for-your-app.md)
+### Queries
+- [Building a search interface for your app](./building-a-search-interface-for-your-app.md)
   Add a search interface to your app to execute Spotlight queries and offer suggested text completions.
-- [class CSUserQuery](csuserquery.md)
+- [class CSUserQuery](./csuserquery.md)
   A type you use to initiate searches from your interface and offer suggested text completions.
-- [class CSUserQueryContext](csuserquerycontext.md)
+- [class CSUserQueryContext](./csuserquerycontext.md)
   The configuration details to apply to a user query.
-- [class CSSearchQuery](cssearchquery.md)
+- [class CSSearchQuery](./cssearchquery.md)
   A type you use to programmatically search the indexed app content.
-- [class CSSearchQueryContext](cssearchquerycontext.md)
+- [class CSSearchQueryContext](./cssearchquerycontext.md)
   The behavior configuration to use for a search query.
-- [class CSSuggestion](cssuggestion.md)
+- [class CSSuggestion](./cssuggestion.md)
   The kind of suggestion to use in a query.
 
 

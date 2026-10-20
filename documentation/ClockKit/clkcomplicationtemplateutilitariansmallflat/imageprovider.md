@@ -1,12 +1,15 @@
 # imageProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image to display.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -15,9 +18,14 @@ The image to display.
 var imageProvider: CLKImageProvider? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) CLKImageProvider * imageProvider;
+```
+
 ## See Also
 
-- [var textProvider: CLKTextProvider](clkcomplicationtemplateutilitariansmallflat/textprovider.md)
+### Setting the Complication Data
+- [var textProvider: CLKTextProvider](./textprovider.md)
   The text to display.
 
 

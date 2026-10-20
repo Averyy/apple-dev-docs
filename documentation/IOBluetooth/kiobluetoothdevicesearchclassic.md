@@ -1,10 +1,11 @@
 # kIOBluetoothDeviceSearchClassic
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kIOBluetoothDeviceSearchClassic: IOBluetoothDeviceSearchTypesBits { get }
 ```
 
+```c
+kIOBluetoothDeviceSearchClassic
+```
+
 ## See Also
 
-- [var kIOBluetoothDeviceSearchLE: IOBluetoothDeviceSearchTypesBits](kiobluetoothdevicesearchle.md)
+### Constants
+- [var kIOBluetoothDeviceSearchLE: IOBluetoothDeviceSearchTypesBits](./kiobluetoothdevicesearchle.md)
 
 
 ---

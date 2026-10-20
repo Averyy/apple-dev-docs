@@ -1,7 +1,8 @@
 # MerchantIdUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a merchant id update request.
 
@@ -10,21 +11,21 @@ The request body you use to update a merchant id update request.
 
 ## Declaration
 
-```swift
+```
 object MerchantIdUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object MerchantIdUpdateRequest.Data.Attributes](merchantidupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object MerchantIdUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a merchant id update request resource.
 
 ## Properties
 
 - `attributes` (MerchantIdUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `merchantIds`
 
 
 ---

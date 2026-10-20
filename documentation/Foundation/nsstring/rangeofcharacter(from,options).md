@@ -1,7 +1,8 @@
 # rangeOfCharacter(from:options:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds and returns the range in the string of the first character, using given options, from a given character set.
 
@@ -20,44 +21,51 @@ Finds and returns the range in the string of the first character, using given op
 func rangeOfCharacter(from searchSet: CharacterSet, options mask: NSString.CompareOptions = []) -> NSRange
 ```
 
+```objc
+- (NSRange) rangeOfCharacterFromSet:(NSCharacterSet *) searchSet options:(NSStringCompareOptions) mask;
+```
+
 #### Return Value
 
 The range in the receiver of the first character found from `aSet`. Returns a range of `{``NSNotFound``, 0}` if none of the characters in `aSet` are found.
 
 #### Discussion
 
-Invokes [`rangeOfCharacter(from:options:range:)`](nsstring/rangeofcharacter(from:options:range:).md) with `mask` for the options and the entire extent of the receiver for the range.
+Invokes [`rangeOfCharacter(from:options:range:)`](./rangeofcharacter%28from,options,range%29.md) with `mask` for the options and the entire extent of the receiver for the range.
 
 ## Parameters
 
-- `searchSet`: A character set. This value must not be `nil`. Raises an `NSInvalidArgumentException` if `aSet` is `nil`.
-- `mask`: A mask specifying search options. The following options may be specified by combining them with the C bitwise `OR` operator: [`anchored`](nsstring/compareoptions/anchored.md), [`backwards`](nsstring/compareoptions/backwards.md).
+- `searchSet`: A character set. This value must not be `nil`.
+
+  Raises an `NSInvalidArgumentException` if `aSet` is `nil`.
+- `mask`: A mask specifying search options. The following options may be specified by combining them with the C bitwise `OR` operator: [`anchored`](./compareoptions/anchored.md), [`backwards`](./compareoptions/backwards.md).
 
 ## See Also
 
-- [func contains(String) -> Bool](nsstring/contains(_:).md)
+### Finding Characters and Substrings
+- [func contains(String) -> Bool](./contains%28_%29.md)
   Returns a Boolean value indicating whether the string contains a given string by performing a case-sensitive, locale-unaware search.
-- [func localizedCaseInsensitiveContains(String) -> Bool](nsstring/localizedcaseinsensitivecontains(_:).md)
+- [func localizedCaseInsensitiveContains(String) -> Bool](./localizedcaseinsensitivecontains%28_%29.md)
   Returns a Boolean value indicating whether the string contains a given string by performing a case-insensitive, locale-aware search.
-- [func localizedStandardContains(String) -> Bool](nsstring/localizedstandardcontains(_:).md)
+- [func localizedStandardContains(String) -> Bool](./localizedstandardcontains%28_%29.md)
   Returns a Boolean value indicating whether the string contains a given string by performing a case and diacritic insensitive, locale-aware search.
-- [func rangeOfCharacter(from: CharacterSet) -> NSRange](nsstring/rangeofcharacter(from:).md)
+- [func rangeOfCharacter(from: CharacterSet) -> NSRange](./rangeofcharacter%28from%29.md)
   Finds and returns the range in the string of the first character from a given character set.
-- [func rangeOfCharacter(from: CharacterSet, options: NSString.CompareOptions, range: NSRange) -> NSRange](nsstring/rangeofcharacter(from:options:range:).md)
+- [func rangeOfCharacter(from: CharacterSet, options: NSString.CompareOptions, range: NSRange) -> NSRange](./rangeofcharacter%28from,options,range%29.md)
   Finds and returns the range in the string of the first character from a given character set found in a given range with given options.
-- [func range(of: String) -> NSRange](nsstring/range(of:).md)
+- [func range(of: String) -> NSRange](./range%28of%29.md)
   Finds and returns the range of the first occurrence of a given string within the string.
-- [func range(of: String, options: NSString.CompareOptions) -> NSRange](nsstring/range(of:options:).md)
+- [func range(of: String, options: NSString.CompareOptions) -> NSRange](./range%28of,options%29.md)
   Finds and returns the range of the first occurrence of a given string within the string, subject to given options.
-- [func range(of: String, options: NSString.CompareOptions, range: NSRange) -> NSRange](nsstring/range(of:options:range:).md)
+- [func range(of: String, options: NSString.CompareOptions, range: NSRange) -> NSRange](./range%28of,options,range%29.md)
   Finds and returns the range of the first occurrence of a given string, within the given range of the string, subject to given options.
-- [func range(of: String, options: NSString.CompareOptions, range: NSRange, locale: Locale?) -> NSRange](nsstring/range(of:options:range:locale:).md)
+- [func range(of: String, options: NSString.CompareOptions, range: NSRange, locale: Locale?) -> NSRange](./range%28of,options,range,locale%29.md)
   Finds and returns the range of the first occurrence of a given string within a given range of the string, subject to given options, using the specified locale, if any.
-- [func localizedStandardRange(of: String) -> NSRange](nsstring/localizedstandardrange(of:).md)
+- [func localizedStandardRange(of: String) -> NSRange](./localizedstandardrange%28of%29.md)
   Finds and returns the range of the first occurrence of a given string within the string by performing a case and diacritic insensitive, locale-aware search.
-- [func enumerateLines((String, UnsafeMutablePointer<ObjCBool>) -> Void)](nsstring/enumeratelines(_:).md)
+- [func enumerateLines((String, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratelines%28_%29.md)
   Enumerates all the lines in the string.
-- [func enumerateSubstrings(in: NSRange, options: NSString.EnumerationOptions, using: (String?, NSRange, NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)](nsstring/enumeratesubstrings(in:options:using:).md)
+- [func enumerateSubstrings(in: NSRange, options: NSString.EnumerationOptions, using: (String?, NSRange, NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratesubstrings%28in,options,using%29.md)
   Enumerates the substrings of the specified type in the specified range of the string.
 
 

@@ -1,7 +1,8 @@
 # sourceType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Source type of the timecode, indicating the emitter, carriage, or transport mechanism.
 
@@ -18,11 +19,16 @@ Source type of the timecode, indicating the emitter, carriage, or transport mech
 var sourceType: AVCaptureTimecode.SourceType
 ```
 
+```c
+AVCaptureTimecodeSourceType sourceType;
+```
+
 ## See Also
 
-- [AVCaptureTimecode.SourceType](avcapturetimecode/sourcetype-swift.enum.md)
+### Working with sources
+- [AVCaptureTimecode.SourceType](./sourcetype-swift.enum.md)
   Defines possible sources for generating timecode in using a timecode generator.
-- [AVCaptureTimecode.Source](avcapturetimecode/source.md)
+- [AVCaptureTimecode.Source](./source.md)
   Describes a timecode source that a timecode generator can synchronize to.
 
 

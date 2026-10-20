@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object acting as the delegate for the `PDFDocument` object.
 
@@ -19,9 +20,14 @@ The object acting as the delegate for the `PDFDocument` object.
 weak var delegate: (any PDFDocumentDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<PDFDocumentDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol PDFDocumentDelegate](pdfdocumentdelegate.md)
+### Setting the Delegate
+- [protocol PDFDocumentDelegate](../pdfdocumentdelegate.md)
   The delegate for the `PDFDocument` object.
 
 

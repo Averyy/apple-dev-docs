@@ -1,7 +1,8 @@
 # respond(error:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an error when the system fails to load the value.
 
@@ -20,15 +21,20 @@ Returns an error when the system fails to load the value.
 func respond(error: any Error)
 ```
 
+```objc
+- (void) respondWithError:(NSError *) error;
+```
+
 ## Parameters
 
 - `error`: The error to return for the request.
 
 ## See Also
 
-- [func respond(value: any NSCopying & NSObjectProtocol)](avmetadataitemvaluerequest/respond(value:).md)
+### Handling the response
+- [func respond(value: any NSCopying & NSObjectProtocol)](./respond%28value%29.md)
   Returns the metadata item’s value.
-- [var metadataItem: AVMetadataItem?](avmetadataitemvaluerequest/metadataitem.md)
+- [var metadataItem: AVMetadataItem?](./metadataitem.md)
   The metadata item to request a value for.
 
 

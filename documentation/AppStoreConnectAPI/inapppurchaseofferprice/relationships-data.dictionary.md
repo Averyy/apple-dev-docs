@@ -1,7 +1,8 @@
 # InAppPurchaseOfferPrice.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,16 +11,16 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseOfferPrice.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InAppPurchaseOfferPrice.Relationships.PricePoint](inapppurchaseofferprice/relationships-data.dictionary/pricepoint-data.dictionary.md)
+- [object InAppPurchaseOfferPrice.Relationships.PricePoint](./relationships-data.dictionary/pricepoint-data.dictionary.md)
   The data that describes the price point of the In-App Purchase offer price.
-- [object InAppPurchaseOfferPrice.Relationships.Territory](inapppurchaseofferprice/relationships-data.dictionary/territory-data.dictionary.md)
+- [object InAppPurchaseOfferPrice.Relationships.Territory](./relationships-data.dictionary/territory-data.dictionary.md)
   The data that describes the territory of the In-App Purchase offer price.
 
 ## Properties

@@ -1,7 +1,8 @@
 # textureAdditions
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 IDs of newly added texture assets.
 

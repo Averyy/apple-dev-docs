@@ -1,18 +1,19 @@
 # AVMetricPlaybackMode
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants are the possible playback modes returned by the property “mode” on AVMetricPlaybackModeSwitchEvent
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,29 +21,34 @@ These constants are the possible playback modes returned by the property “mode
 enum AVMetricPlaybackMode
 ```
 
+```c
+enum AVMetricPlaybackMode : NSInteger;
+```
+
 ## Topics
 
 ### Creating a playback mode
-- [init?(rawValue: Int)](avmetricplaybackmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avmetricplaybackmode/init%28rawvalue%29.md)
 ### Playback modes
-- [AVMetricPlaybackMode.local](avmetricplaybackmode/local.md)
+- [AVMetricPlaybackMode.local](./avmetricplaybackmode/local.md)
   Indicates that playback is local.
-- [AVMetricPlaybackMode.airPlayVideo](avmetricplaybackmode/airplayvideo.md)
+- [AVMetricPlaybackMode.airPlayVideo](./avmetricplaybackmode/airplayvideo.md)
   Indicates that playback is via AirPlay Video.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVMetricPlaybackModeSwitchEvent](avmetricplaybackmodeswitchevent.md)
+### Playback mode
+- [class AVMetricPlaybackModeSwitchEvent](./avmetricplaybackmodeswitchevent.md)
   Represents a change in playback state, entering one of AVMetricPlaybackMode
 
 

@@ -1,7 +1,8 @@
 # MTLDataType.sampler
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A Metal texture sampler instance.
 
@@ -19,29 +20,35 @@ A Metal texture sampler instance.
 case sampler
 ```
 
+```c
+MTLDataTypeSampler
+```
+
 ## See Also
 
-- [protocol MTLSamplerState](mtlsamplerstate.md)
+### Related Documentation
+- [protocol MTLSamplerState](../mtlsamplerstate.md)
   An instance that defines how a texture should be sampled.
-- [MTLDataType.tensor](mtldatatype/tensor.md)
+### Resource types
+- [MTLDataType.tensor](./tensor.md)
   Represents a data type corresponding to a machine learning tensor.
-- [MTLDataType.texture](mtldatatype/texture.md)
+- [MTLDataType.texture](./texture.md)
   A Metal texture resource instance.
-- [MTLDataType.renderPipeline](mtldatatype/renderpipeline.md)
+- [MTLDataType.renderPipeline](./renderpipeline.md)
   A Metal render pipeline instance.
-- [MTLDataType.computePipeline](mtldatatype/computepipeline.md)
+- [MTLDataType.computePipeline](./computepipeline.md)
   A Metal compute pipeline instance.
-- [MTLDataType.depthStencilState](mtldatatype/depthstencilstate.md)
+- [MTLDataType.depthStencilState](./depthstencilstate.md)
   Represents a data type corresponding to a depth-stencil state object.
-- [MTLDataType.indirectCommandBuffer](mtldatatype/indirectcommandbuffer.md)
+- [MTLDataType.indirectCommandBuffer](./indirectcommandbuffer.md)
   An indirect command buffer resource instance.
-- [MTLDataType.visibleFunctionTable](mtldatatype/visiblefunctiontable.md)
+- [MTLDataType.visibleFunctionTable](./visiblefunctiontable.md)
   A table of visible functions that a render or compute pipeline can call.
-- [MTLDataType.intersectionFunctionTable](mtldatatype/intersectionfunctiontable.md)
+- [MTLDataType.intersectionFunctionTable](./intersectionfunctiontable.md)
   A table of intersection functions that a render or compute pipeline can call.
-- [MTLDataType.primitiveAccelerationStructure](mtldatatype/primitiveaccelerationstructure.md)
+- [MTLDataType.primitiveAccelerationStructure](./primitiveaccelerationstructure.md)
   A low-level ray-tracing acceleration structure for a set of primitives.
-- [MTLDataType.instanceAccelerationStructure](mtldatatype/instanceaccelerationstructure.md)
+- [MTLDataType.instanceAccelerationStructure](./instanceaccelerationstructure.md)
   A high-level, ray-tracing acceleration structure for a set of low-level primitive instances.
 
 

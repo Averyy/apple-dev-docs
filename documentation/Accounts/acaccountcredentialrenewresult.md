@@ -1,7 +1,8 @@
 # ACAccountCredentialRenewResult
 
 **Framework**: Accounts  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Status codes of credential renewal requests.
 
@@ -17,33 +18,38 @@ Status codes of credential renewal requests.
 enum ACAccountCredentialRenewResult
 ```
 
+```c
+enum ACAccountCredentialRenewResult : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [ACAccountCredentialRenewResult.renewed](acaccountcredentialrenewresult/renewed.md)
+- [ACAccountCredentialRenewResult.renewed](./acaccountcredentialrenewresult/renewed.md)
   The account’s credentials have been renewed and are now associated with the account.
-- [ACAccountCredentialRenewResult.rejected](acaccountcredentialrenewresult/rejected.md)
+- [ACAccountCredentialRenewResult.rejected](./acaccountcredentialrenewresult/rejected.md)
   Renewal failed because the user revoked your access to their account.
-- [ACAccountCredentialRenewResult.failed](acaccountcredentialrenewresult/failed.md)
+- [ACAccountCredentialRenewResult.failed](./acaccountcredentialrenewresult/failed.md)
   A non-user-initiated cancel of the prompt.
 ### Initializers
-- [init?(rawValue: Int)](acaccountcredentialrenewresult/init(rawvalue:).md)
+- [init?(rawValue: Int)](./acaccountcredentialrenewresult/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func renewCredentials(for: ACAccount!, completion: ((ACAccountCredentialRenewResult, (any Error)?) -> Void)!)](acaccountstore/renewcredentials(for:completion:).md)
+### Renewing Account Credentials
+- [func renewCredentials(for: ACAccount!, completion: ((ACAccountCredentialRenewResult, (any Error)?) -> Void)!)](./acaccountstore/renewcredentials%28for,completion%29.md)
   Renews account credentials when the credentials are no longer valid.
-- [typealias ACAccountStoreCredentialRenewalHandler](acaccountstorecredentialrenewalhandler.md)
+- [typealias ACAccountStoreCredentialRenewalHandler](./acaccountstorecredentialrenewalhandler.md)
   Specifies a handler to call when credentials are renewed.
 
 

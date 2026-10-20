@@ -1,14 +1,15 @@
 # DriverDescription
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct DriverDescription {
     ...
 } DriverDescription;
@@ -17,25 +18,26 @@ typedef struct DriverDescription {
 ## Topics
 
 ### Instance Properties
-- [driverDescSignature](driverdescription/1401564-driverdescsignature.md)
-- [driverDescVersion](driverdescription/1401413-driverdescversion.md)
-- [driverOSRuntimeInfo](driverdescription/1401616-driverosruntimeinfo.md)
-- [driverServices](driverdescription/1401582-driverservices.md)
-- [driverType](driverdescription/1401652-drivertype.md)
+- [driverDescSignature](./driverdescription/api-1401564-driverdescsignature.md)
+- [driverDescVersion](./driverdescription/api-1401413-driverdescversion.md)
+- [driverOSRuntimeInfo](./driverdescription/api-1401616-driverosruntimeinfo.md)
+- [driverServices](./driverdescription/api-1401582-driverservices.md)
+- [driverType](./driverdescription/api-1401652-drivertype.md)
 
 ## See Also
 
-- [IOServiceOrdering](1532621-ioserviceordering.md)
-- [IOFixedDivide](1575297-iofixeddivide.md)
-- [IOFixedMultiply](1575302-iofixedmultiply.md)
-- [IOAlignmentToSize](1575292-ioalignmenttosize.md)
-- [IOSizeToAlignment](1575319-iosizetoalignment.md)
-- [OSSynchronizeIO](1576454-ossynchronizeio.md)
+### Utilities
+- [IOServiceOrdering](./api-1532621-ioserviceordering.md)
+- [IOFixedDivide](./api-1575297-iofixeddivide.md)
+- [IOFixedMultiply](./api-1575302-iofixedmultiply.md)
+- [IOAlignmentToSize](./api-1575292-ioalignmenttosize.md)
+- [IOSizeToAlignment](./api-1575319-iosizetoalignment.md)
+- [OSSynchronizeIO](./api-1576454-ossynchronizeio.md)
   The OSSynchronizeIO routine ensures orderly load and store operations to noncached memory mapped I/O devices.
-- [DriverOSRuntime](driverosruntime.md)
-- [DriverOSService](driverosservice.md)
-- [DriverServiceInfo](driverserviceinfo.md)
-- [DriverType](drivertype.md)
+- [DriverOSRuntime](./driverosruntime.md)
+- [DriverOSService](./driverosservice.md)
+- [DriverServiceInfo](./driverserviceinfo.md)
+- [DriverType](./drivertype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # CTRubyOverhang.invalid
 
 **Framework**: Core Text  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The overhang specification is invalid.
 
@@ -20,15 +21,20 @@ The overhang specification is invalid.
 case invalid
 ```
 
+```c
+kCTRubyOverhangInvalid
+```
+
 ## See Also
 
-- [CTRubyOverhang.auto](ctrubyoverhang/auto.md)
+### Constants
+- [CTRubyOverhang.auto](./auto.md)
   The ruby text can overhang adjacent text on both sides.
-- [CTRubyOverhang.start](ctrubyoverhang/start.md)
+- [CTRubyOverhang.start](./start.md)
   The ruby text can overhang the text that precedes it.
-- [CTRubyOverhang.end](ctrubyoverhang/end.md)
+- [CTRubyOverhang.end](./end.md)
   The ruby text can overhang the text that follows it.
-- [CTRubyOverhang.none](ctrubyoverhang/none.md)
+- [CTRubyOverhang.none](./none.md)
   The ruby text can’t overhang the preceding or following text.
 
 

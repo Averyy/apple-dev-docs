@@ -1,17 +1,18 @@
 # MPSScaleTransform
 
 **Framework**: Metal Performance Shaders  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transform matrix for explicit resampling control with a Lanczos kernel.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,30 +20,35 @@ A transform matrix for explicit resampling control with a Lanczos kernel.
 struct MPSScaleTransform
 ```
 
+```c
+typedef struct MPSScaleTransform { ... } MPSScaleTransform;
+```
+
 ## Topics
 
 ### Fields
-- [var scaleX: Double](mpsscaletransform/scalex.md)
+- [var scaleX: Double](./mpsscaletransform/scalex.md)
   The horizontal scale factor.
-- [var scaleY: Double](mpsscaletransform/scaley.md)
+- [var scaleY: Double](./mpsscaletransform/scaley.md)
   The vertical scale factor.
-- [var translateX: Double](mpsscaletransform/translatex.md)
+- [var translateX: Double](./mpsscaletransform/translatex.md)
   The horizontal translation factor.
-- [var translateY: Double](mpsscaletransform/translatey.md)
+- [var translateY: Double](./mpsscaletransform/translatey.md)
   The vertical translation factor.
 ### Initializers
-- [init()](mpsscaletransform/init.md)
-- [init(scaleX: Double, scaleY: Double, translateX: Double, translateY: Double)](mpsscaletransform/init(scalex:scaley:translatex:translatey:).md)
+- [init()](./mpsscaletransform/init%28%29.md)
+- [init(scaleX: Double, scaleY: Double, translateX: Double, translateY: Double)](./mpsscaletransform/init%28scalex,scaley,translatex,translatey%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class MPSImageLanczosScale](mpsimagelanczosscale.md)
+### Related Documentation
+- [class MPSImageLanczosScale](./mpsimagelanczosscale.md)
   A filter that resizes and changes the aspect ratio of an image using Lanczos resampling.
 
 

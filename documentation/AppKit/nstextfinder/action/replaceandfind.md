@@ -1,7 +1,8 @@
 # NSTextFinder.Action.replaceAndFind
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Replaces a single instance of the string and searches for the next match.
 
@@ -14,31 +15,36 @@ Replaces a single instance of the string and searches for the next match.
 case replaceAndFind
 ```
 
+```c
+NSTextFinderActionReplaceAndFind
+```
+
 ## See Also
 
-- [NSTextFinder.Action.showFindInterface](nstextfinder/action/showfindinterface.md)
+### Constants
+- [NSTextFinder.Action.showFindInterface](./showfindinterface.md)
   The find bar interface is displayed.
-- [NSTextFinder.Action.nextMatch](nstextfinder/action/nextmatch.md)
+- [NSTextFinder.Action.nextMatch](./nextmatch.md)
   The next match, if any, is displayed.
-- [NSTextFinder.Action.previousMatch](nstextfinder/action/previousmatch.md)
+- [NSTextFinder.Action.previousMatch](./previousmatch.md)
   The previous match, if any, is displayed.
-- [NSTextFinder.Action.replaceAll](nstextfinder/action/replaceall.md)
+- [NSTextFinder.Action.replaceAll](./replaceall.md)
   All occurrences of the string are replaced.
-- [NSTextFinder.Action.replace](nstextfinder/action/replace.md)
+- [NSTextFinder.Action.replace](./replace.md)
   Replaces a single instance of the string.
-- [NSTextFinder.Action.setSearchString](nstextfinder/action/setsearchstring.md)
+- [NSTextFinder.Action.setSearchString](./setsearchstring.md)
   Sets the search string.
-- [NSTextFinder.Action.replaceAllInSelection](nstextfinder/action/replaceallinselection.md)
+- [NSTextFinder.Action.replaceAllInSelection](./replaceallinselection.md)
   Replaces all occurrences of the string within the current selection.
-- [NSTextFinder.Action.selectAll](nstextfinder/action/selectall.md)
+- [NSTextFinder.Action.selectAll](./selectall.md)
   Selects all matching search strings.
-- [NSTextFinder.Action.selectAllInSelection](nstextfinder/action/selectallinselection.md)
+- [NSTextFinder.Action.selectAllInSelection](./selectallinselection.md)
   Selects all matching search strings within the current selection.
-- [NSTextFinder.Action.hideFindInterface](nstextfinder/action/hidefindinterface.md)
+- [NSTextFinder.Action.hideFindInterface](./hidefindinterface.md)
   Hides the find bar interface.
-- [NSTextFinder.Action.showReplaceInterface](nstextfinder/action/showreplaceinterface.md)
+- [NSTextFinder.Action.showReplaceInterface](./showreplaceinterface.md)
   Displays the find bar interface including the replace functionality.
-- [NSTextFinder.Action.hideReplaceInterface](nstextfinder/action/hidereplaceinterface.md)
+- [NSTextFinder.Action.hideReplaceInterface](./hidereplaceinterface.md)
   Displays the find bar interface including the replace functionality.
 
 

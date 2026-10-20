@@ -1,7 +1,8 @@
 # AVCustomRoutingEvent
 
 **Framework**: AVRouting  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents an event that occurs on a route.
 
@@ -17,6 +18,10 @@ An object that represents an event that occurs on a route.
 class AVCustomRoutingEvent
 ```
 
+```objc
+@interface AVCustomRoutingEvent : NSObject
+```
+
 #### Overview
 
 Depending on the route’s reason, apps establish or tear down a connection to a specified route.
@@ -24,36 +29,37 @@ Depending on the route’s reason, apps establish or tear down a connection to a
 ## Topics
 
 ### Inspecting an event
-- [var route: AVCustomDeviceRoute](avcustomroutingevent/route.md)
+- [var route: AVCustomDeviceRoute](./avcustomroutingevent/route.md)
   A route for the event.
-- [class AVCustomDeviceRoute](avcustomdeviceroute.md)
+- [class AVCustomDeviceRoute](./avcustomdeviceroute.md)
   An object that represents a custom device route.
-- [var reason: AVCustomRoutingEventReason](avcustomroutingevent/reason.md)
+- [var reason: AVCustomRoutingEventReason](./avcustomroutingevent/reason.md)
   A reason for an event, such as a user request to activate or deactivate a route.
-- [enum AVCustomRoutingEventReason](avcustomroutingeventreason.md)
+- [enum AVCustomRoutingEventReason](./avcustomroutingeventreason.md)
   Values that indicate the reason for a routing event.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVCustomRoutingController](avcustomroutingcontroller.md)
+### Media routing
+- [class AVCustomRoutingController](./avcustomroutingcontroller.md)
   An object that manages the connection from a device to a destination.
-- [protocol AVCustomRoutingControllerDelegate](avcustomroutingcontrollerdelegate.md)
+- [protocol AVCustomRoutingControllerDelegate](./avcustomroutingcontrollerdelegate.md)
   A protocol for delegates of a custom routing controller.
-- [class AVCustomRoutingActionItem](avcustomroutingactionitem.md)
+- [class AVCustomRoutingActionItem](./avcustomroutingactionitem.md)
   An object that represents a custom action item to display in a device route picker.
 
 

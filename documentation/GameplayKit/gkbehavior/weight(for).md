@@ -1,7 +1,8 @@
 # weight(for:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the weight for the specified goal’s influence on agents.
 
@@ -19,6 +20,10 @@ Returns the weight for the specified goal’s influence on agents.
 func weight(for goal: GKGoal) -> Float
 ```
 
+```objc
+- (float) weightForGoal:(GKGoal *) goal;
+```
+
 #### Return Value
 
 The weight to be applied to the goal’s influence on an agent’s speed and direction, or `0.0` if the goal is not in the behavior.
@@ -33,15 +38,17 @@ When an agent evaluates its behavior, it examines each goal and calculates the c
 
 ## See Also
 
-- [subscript(GKGoal) -> NSNumber!](gkbehavior/subscript(_:)-2yvko.md)
+### Related Documentation
+- [subscript(GKGoal) -> NSNumber!](./subscript%28_%29-2yvko.md)
   Returns the weight associated with the goal specified by subscript syntax.
-- [func setWeight(Float, for: GKGoal)](gkbehavior/setweight(_:for:).md)
+### Managing a Behavior’s Set of Goals
+- [func setWeight(Float, for: GKGoal)](./setweight%28_,for%29.md)
   Sets the weight for the specified goal’s influence on agents, adding that goal to the behavior if not already present.
-- [func remove(GKGoal)](gkbehavior/remove(_:).md)
+- [func remove(GKGoal)](./remove%28_%29.md)
   Removes the specified goal from the behavior.
-- [func removeAllGoals()](gkbehavior/removeallgoals.md)
+- [func removeAllGoals()](./removeallgoals%28%29.md)
   Removes all goals from the behavior.
-- [var goalCount: Int](gkbehavior/goalcount.md)
+- [var goalCount: Int](./goalcount.md)
   The number of goals in the behavior.
 
 

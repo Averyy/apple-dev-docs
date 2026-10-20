@@ -1,7 +1,8 @@
 # focusHeading
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The heading in which the focus update is occurring.
 
@@ -18,17 +19,22 @@ The heading in which the focus update is occurring.
 var focusHeading: UIFocusHeading { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) UIFocusHeading focusHeading;
+```
+
 #### Discussion
 
-To view all the possible focus heading directions, see the [`UIFocusHeading`](uifocusheading.md) data type.
+To view all the possible focus heading directions, see the [`UIFocusHeading`](../uifocusheading.md) data type.
 
 ## See Also
 
-- [var previouslyFocusedView: UIView?](uifocusupdatecontext/previouslyfocusedview.md)
+### Locating focus direction
+- [var previouslyFocusedView: UIView?](./previouslyfocusedview.md)
   The view that was focused before the focus update.
-- [var nextFocusedView: UIView?](uifocusupdatecontext/nextfocusedview.md)
+- [var nextFocusedView: UIView?](./nextfocusedview.md)
   The view that takes the focus after the focus update.
-- [struct UIFocusHeading](uifocusheading.md)
+- [struct UIFocusHeading](../uifocusheading.md)
   The general type of an event.
 
 

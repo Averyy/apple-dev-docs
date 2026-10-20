@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum IONVRAMVariableType : unsigned int {
     ...
 };
@@ -17,10 +17,10 @@ enum IONVRAMVariableType : unsigned int {
 ## Topics
 
 ### Constants
-- [kOFVariableTypeBoolean](ionvramvariabletype/kofvariabletypeboolean.md)
-- [kOFVariableTypeData](ionvramvariabletype/kofvariabletypedata.md)
-- [kOFVariableTypeNumber](ionvramvariabletype/kofvariabletypenumber.md)
-- [kOFVariableTypeString](ionvramvariabletype/kofvariabletypestring.md)
+- [kOFVariableTypeBoolean](./ionvramvariabletype/kofvariabletypeboolean.md)
+- [kOFVariableTypeData](./ionvramvariabletype/kofvariabletypedata.md)
+- [kOFVariableTypeNumber](./ionvramvariabletype/kofvariabletypenumber.md)
+- [kOFVariableTypeString](./ionvramvariabletype/kofvariabletypestring.md)
 
 
 ---

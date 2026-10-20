@@ -1,7 +1,8 @@
 # inspector(isPresented:content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts an inspector at the applied position in the view hierarchy.
 
@@ -36,7 +37,7 @@ struct ShapeEditor: View {
 
 > **Note**: Trailing column inspectors have their presentation state restored by the framework.
 
-> **Note**: [`InspectorCommands`](inspectorcommands.md) for including the default inspector commands and keyboard shortcuts.
+> **See Also**: [`InspectorCommands`](../inspectorcommands.md) for including the default inspector commands and keyboard shortcuts.
 
 ## Parameters
 
@@ -45,9 +46,10 @@ struct ShapeEditor: View {
 
 ## See Also
 
-- [func inspectorColumnWidth(CGFloat) -> some View](view/inspectorcolumnwidth(_:).md)
+### Presenting an inspector
+- [func inspectorColumnWidth(CGFloat) -> some View](./inspectorcolumnwidth%28_%29.md)
   Sets a fixed, preferred width for the inspector containing this view when presented as a trailing column.
-- [func inspectorColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](view/inspectorcolumnwidth(min:ideal:max:).md)
+- [func inspectorColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](./inspectorcolumnwidth%28min,ideal,max%29.md)
   Sets a flexible, preferred width for the inspector in a trailing-column presentation.
 
 

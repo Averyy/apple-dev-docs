@@ -1,7 +1,8 @@
 # beginRefreshing()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the refresh controller that a refresh operation has begun.
 
@@ -12,6 +13,10 @@ Tells the refresh controller that a refresh operation has begun.
 
 ```swift
 func beginRefreshing()
+```
+
+```objc
+- (void) beginRefreshing;
 ```
 
 #### Discussion

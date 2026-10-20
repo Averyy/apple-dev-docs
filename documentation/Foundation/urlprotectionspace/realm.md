@@ -1,7 +1,8 @@
 # realm
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s authentication realm
 
@@ -20,27 +21,32 @@ The receiver’s authentication realm
 var realm: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * realm;
+```
+
 #### Discussion
 
 This value is `nil` if no realm has been set. A realm is generally only specified for HTTP and HTTPS authentication.
 
 ## See Also
 
-- [var authenticationMethod: String](urlprotectionspace/authenticationmethod.md)
+### Getting protection space properties
+- [var authenticationMethod: String](./authenticationmethod.md)
   The authentication method used by the receiver.
-- [var distinguishedNames: [Data]?](urlprotectionspace/distinguishednames.md)
+- [var distinguishedNames: [Data]?](./distinguishednames.md)
   The acceptable certificate-issuing authorities for client certificate authentication.
-- [var host: String](urlprotectionspace/host.md)
+- [var host: String](./host.md)
   The receiver’s host.
-- [var port: Int](urlprotectionspace/port.md)
+- [var port: Int](./port.md)
   The receiver’s port.
-- [var `protocol`: String?](urlprotectionspace/protocol.md)
+- [var `protocol`: String?](./protocol.md)
   The receiver’s protocol.
-- [var proxyType: String?](urlprotectionspace/proxytype.md)
+- [var proxyType: String?](./proxytype.md)
   The receiver’s proxy type.
-- [var receivesCredentialSecurely: Bool](urlprotectionspace/receivescredentialsecurely.md)
+- [var receivesCredentialSecurely: Bool](./receivescredentialsecurely.md)
   A Boolean value that indicates whether the credentials for the protection space can be sent securely.
-- [var serverTrust: SecTrust?](urlprotectionspace/servertrust.md)
+- [var serverTrust: SecTrust?](./servertrust.md)
   A representation of the server’s SSL transaction state.
 
 

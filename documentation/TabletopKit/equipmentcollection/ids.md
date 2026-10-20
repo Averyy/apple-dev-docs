@@ -1,7 +1,8 @@
 # ids
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifiers of all the equipment in this collection.
 
@@ -16,9 +17,10 @@ var ids: [EquipmentIdentifier] { get }
 
 ## See Also
 
-- [var count: Int](equipmentcollection/count.md)
+### Getting collection properties
+- [var count: Int](./count.md)
   The number of equipment items in this collection.
-- [var state: EquipmentStateCollection](equipmentcollection/state.md)
+- [var state: EquipmentStateCollection](./state.md)
   The collection of equipment states.
 
 

@@ -1,7 +1,8 @@
 # http
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,8 @@
 ```swift
 static var http: DateComponents.HTTPFormatStyle { get }
 ```
+
+Available when `Self` is `DateComponents.HTTPFormatStyle`.
 
 
 ---

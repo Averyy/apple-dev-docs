@@ -1,7 +1,8 @@
 # CKModifyRecordsOperation.RecordSavePolicy.changedKeys
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A policy that instructs CloudKit to save only the fields of a record that contain changes.
 
@@ -10,7 +11,7 @@ A policy that instructs CloudKit to save only the fields of a record that contai
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,15 +21,20 @@ A policy that instructs CloudKit to save only the fields of a record that contai
 case changedKeys
 ```
 
+```c
+CKRecordSaveChangedKeys
+```
+
 #### Discussion
 
-> ❗ **Important**: This policy doesn’t compare record change tags. To only save changes to the most recent version of a record, use [`CKModifyRecordsOperation.RecordSavePolicy.ifServerRecordUnchanged`](ckmodifyrecordsoperation/recordsavepolicy/ifserverrecordunchanged.md) instead.
+> ❗ **Important**: This policy doesn’t compare record change tags. To only save changes to the most recent version of a record, use [`CKModifyRecordsOperation.RecordSavePolicy.ifServerRecordUnchanged`](./ifserverrecordunchanged.md) instead.
 
 ## See Also
 
-- [CKModifyRecordsOperation.RecordSavePolicy.ifServerRecordUnchanged](ckmodifyrecordsoperation/recordsavepolicy/ifserverrecordunchanged.md)
+### Save Policies
+- [CKModifyRecordsOperation.RecordSavePolicy.ifServerRecordUnchanged](./ifserverrecordunchanged.md)
   A policy that instructs CloudKit to only proceed if the record’s change tag matches that of the server’s copy.
-- [CKModifyRecordsOperation.RecordSavePolicy.allKeys](ckmodifyrecordsoperation/recordsavepolicy/allkeys.md)
+- [CKModifyRecordsOperation.RecordSavePolicy.allKeys](./allkeys.md)
   A policy that instructs CloudKit to save all keys of a record, even those without changes.
 
 

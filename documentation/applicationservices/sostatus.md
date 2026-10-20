@@ -1,7 +1,8 @@
 # soStatus
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -14,7 +15,7 @@ var soStatus: OSType { get }
 
 #### Discussion
 
-Get a speech status information structure forthe speech channel. The `speechInfo` parameteris a pointer to a speech status information structure, describedin [`SpeechStatusInfo`](speechstatusinfo.md).
+Get a speech status information structure forthe speech channel. The `speechInfo` parameteris a pointer to a speech status information structure, describedin [`SpeechStatusInfo`](./speechstatusinfo.md).
 
 This selector works with the `GetSpeechInfo` function.
 

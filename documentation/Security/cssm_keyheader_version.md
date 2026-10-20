@@ -1,7 +1,8 @@
 # CSSM_KEYHEADER_VERSION
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_KEYHEADER_VERSION: Int { get }
+```
+
+```c
+CSSM_KEYHEADER_VERSION
 ```
 
 

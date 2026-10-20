@@ -1,17 +1,24 @@
 # init(start:end:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a text provider with the specified start and end dates.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
 ```swift
 convenience init(start startDate: Date, end endDate: Date)
+```
+
+```objc
++ (instancetype) textProviderWithStartDate:(NSDate *) startDate endDate:(NSDate *) endDate;
 ```
 
 #### Return Value
@@ -29,7 +36,8 @@ The returned text provider uses the default calendar and time zone information f
 
 ## See Also
 
-- [convenience init(start: Date, end: Date, timeZone: TimeZone?)](clktimeintervaltextprovider/init(start:end:timezone:).md)
+### Creating the Text Provider
+- [convenience init(start: Date, end: Date, timeZone: TimeZone?)](./init%28start,end,timezone%29.md)
   Creates and returns a text provider with the specified dates and time zone information.
 
 

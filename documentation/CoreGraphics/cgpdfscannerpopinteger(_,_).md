@@ -1,7 +1,8 @@
 # CGPDFScannerPopInteger(_:_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves an integer object from the scanner stack.
 
@@ -10,7 +11,7 @@ Retrieves an integer object from the scanner stack.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Retrieves an integer object from the scanner stack.
 func CGPDFScannerPopInteger(_ scanner: CGPDFScannerRef, _ value: UnsafeMutablePointer<CGPDFInteger>?) -> Bool
 ```
 
+```c
+extern bool CGPDFScannerPopInteger(CGPDFScannerRef scanner, CGPDFInteger *value);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the PDF integer is retrieved successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../Swift/true.md) if the PDF integer is retrieved successfully; otherwise, [`false`](../Swift/false.md).
 
 ## Parameters
 
@@ -31,21 +36,22 @@ func CGPDFScannerPopInteger(_ scanner: CGPDFScannerRef, _ value: UnsafeMutablePo
 
 ## See Also
 
-- [func CGPDFScannerPopObject(CGPDFScannerRef, UnsafeMutablePointer<CGPDFObjectRef?>?) -> Bool](cgpdfscannerpopobject(_:_:).md)
+### Getting PDF Objects from the Scanner Stack
+- [func CGPDFScannerPopObject(CGPDFScannerRef, UnsafeMutablePointer<CGPDFObjectRef?>?) -> Bool](./cgpdfscannerpopobject%28_,_%29.md)
   Retrieves an object from the scanner stack.
-- [func CGPDFScannerPopBoolean(CGPDFScannerRef, UnsafeMutablePointer<CGPDFBoolean>?) -> Bool](cgpdfscannerpopboolean(_:_:).md)
+- [func CGPDFScannerPopBoolean(CGPDFScannerRef, UnsafeMutablePointer<CGPDFBoolean>?) -> Bool](./cgpdfscannerpopboolean%28_,_%29.md)
   Retrieves a Boolean object from the scanner stack.
-- [func CGPDFScannerPopNumber(CGPDFScannerRef, UnsafeMutablePointer<CGPDFReal>?) -> Bool](cgpdfscannerpopnumber(_:_:).md)
+- [func CGPDFScannerPopNumber(CGPDFScannerRef, UnsafeMutablePointer<CGPDFReal>?) -> Bool](./cgpdfscannerpopnumber%28_,_%29.md)
   Retrieves a real value object from the scanner stack.
-- [func CGPDFScannerPopName(CGPDFScannerRef, UnsafeMutablePointer<UnsafePointer<CChar>?>?) -> Bool](cgpdfscannerpopname(_:_:).md)
+- [func CGPDFScannerPopName(CGPDFScannerRef, UnsafeMutablePointer<UnsafePointer<CChar>?>?) -> Bool](./cgpdfscannerpopname%28_,_%29.md)
   Retrieves a character string from the scanner stack.
-- [func CGPDFScannerPopString(CGPDFScannerRef, UnsafeMutablePointer<CGPDFStringRef?>?) -> Bool](cgpdfscannerpopstring(_:_:).md)
+- [func CGPDFScannerPopString(CGPDFScannerRef, UnsafeMutablePointer<CGPDFStringRef?>?) -> Bool](./cgpdfscannerpopstring%28_,_%29.md)
   Retrieves a string object from the scanner stack.
-- [func CGPDFScannerPopArray(CGPDFScannerRef, UnsafeMutablePointer<CGPDFArrayRef?>?) -> Bool](cgpdfscannerpoparray(_:_:).md)
+- [func CGPDFScannerPopArray(CGPDFScannerRef, UnsafeMutablePointer<CGPDFArrayRef?>?) -> Bool](./cgpdfscannerpoparray%28_,_%29.md)
   Retrieves an array object from the scanner stack.
-- [func CGPDFScannerPopDictionary(CGPDFScannerRef, UnsafeMutablePointer<CGPDFDictionaryRef?>?) -> Bool](cgpdfscannerpopdictionary(_:_:).md)
+- [func CGPDFScannerPopDictionary(CGPDFScannerRef, UnsafeMutablePointer<CGPDFDictionaryRef?>?) -> Bool](./cgpdfscannerpopdictionary%28_,_%29.md)
   Retrieves a PDF dictionary object from the scanner stack.
-- [func CGPDFScannerPopStream(CGPDFScannerRef, UnsafeMutablePointer<CGPDFStreamRef?>?) -> Bool](cgpdfscannerpopstream(_:_:).md)
+- [func CGPDFScannerPopStream(CGPDFScannerRef, UnsafeMutablePointer<CGPDFStreamRef?>?) -> Bool](./cgpdfscannerpopstream%28_,_%29.md)
   Retrieves a PDF stream object from the scanner stack.
 
 

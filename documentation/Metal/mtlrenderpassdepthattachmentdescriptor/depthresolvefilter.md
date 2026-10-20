@@ -1,7 +1,8 @@
 # depthResolveFilter
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The filter used for an MSAA depth resolve operation.
 
@@ -19,9 +20,13 @@ The filter used for an MSAA depth resolve operation.
 var depthResolveFilter: MTLMultisampleDepthResolveFilter { get set }
 ```
 
+```objc
+@property (nonatomic) MTLMultisampleDepthResolveFilter depthResolveFilter;
+```
+
 #### Discussion
 
-The default value is [`MTLMultisampleDepthResolveFilter.sample0`](mtlmultisampledepthresolvefilter/sample0.md).
+The default value is [`MTLMultisampleDepthResolveFilter.sample0`](../mtlmultisampledepthresolvefilter/sample0.md).
 
 
 ---

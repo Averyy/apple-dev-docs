@@ -2,6 +2,7 @@
 
 **Framework**: InputMethodKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Displays a preferences window.
@@ -13,6 +14,10 @@ Displays a preferences window.
 
 ```swift
 func showPreferences(_ sender: Any!)
+```
+
+```objc
+- (void) showPreferences:(id) sender;
 ```
 
 #### Discussion

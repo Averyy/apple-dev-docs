@@ -1,7 +1,8 @@
 # .<(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Pointwise compare less than.
 
@@ -19,6 +20,8 @@ Pointwise compare less than.
 ```swift
 static func .< (a: SIMD32<Scalar>, b: SIMD32<Scalar>) -> SIMDMask<SIMD32<Scalar>.MaskStorage>
 ```
+
+Available when `Scalar` is `Float`.
 
 #### Discussion
 

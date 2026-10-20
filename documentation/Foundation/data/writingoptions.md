@@ -1,7 +1,8 @@
 # Data.WritingOptions
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Options to control the writing of data to a URL.
 
@@ -22,11 +23,13 @@ typealias WritingOptions = NSData.WritingOptions
 
 ## See Also
 
-- [NSData.WritingOptions](nsdata/writingoptions.md)
+### Related Documentation
+- [NSData.WritingOptions](../nsdata/writingoptions.md)
   Options for methods used to write data objects.
-- [func write(to: URL, options: Data.WritingOptions) throws](data/write(to:options:).md)
+### Reading and Writing Data
+- [func write(to: URL, options: Data.WritingOptions) throws](./write%28to,options%29.md)
   Writes the contents of the data buffer to a location.
-- [typealias ReadingOptions](data/readingoptions.md)
+- [typealias ReadingOptions](./readingoptions.md)
   Options to control the reading of data from a URL.
 
 

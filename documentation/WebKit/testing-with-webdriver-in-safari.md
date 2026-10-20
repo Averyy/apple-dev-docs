@@ -1,6 +1,7 @@
 # Testing with WebDriver in Safari
 
-**Framework**: WebKit
+**Framework**: WebKit  
+**Role**: Article
 
 Enable WebDriver and run a test.
 
@@ -13,7 +14,7 @@ This article walks you through the process of setting up WebDriver and running a
 3. The driver validates the HTTP request’s contents and forwards the command to the appropriate browser instance.
 4. When a command has finished executing, the driver sends an HTTP response for the REST API command. The client library interprets the HTTP response and returns the result to the test code.
 
-##### Make Sure You Have Safaris Webdriver
+##### Make Sure You Have Safari’s WebDriver
 
 Safari and Safari Technology Preview each provide their own `safaridriver` executable. Make sure you already have the executable on your device:
 
@@ -24,11 +25,11 @@ Each `safaridriver` is capable of launching only the Safari version it’s assoc
 
 ##### Get the Correct Selenium Library Version
 
-Grab a recent release of the [`Selenium`](https://developer.apple.comhttps://www.seleniumhq.org/download/) open source project. Selenium’s Java and Python client libraries offer support for Safari’s native driver implementation starting in the 3.0.0-beta1 release.
+Grab a recent release of the [Selenium](https://www.seleniumhq.org/download/) open source project. Selenium’s Java and Python client libraries offer support for Safari’s native driver implementation starting in the 3.0.0-beta1 release.
 
 > ❗ **Important**:  Don’t use the old SafariDriver implementation, which is no longer supported by the Selenium project. The Apple-developed driver is a replacement for the legacy SafariDriver formerly maintained by the Selenium project.
 
-##### Configure Safari to Enable Webdriver Support
+##### Configure Safari to Enable WebDriver Support
 
 Safari’s WebDriver support for developers is turned off by default. How you enable it depends on your operating system.
 
@@ -38,13 +39,13 @@ Run `safaridriver --enable` once. (If you’re upgrading from a previous macOS r
 
 **Sierra and earlier:**
 
-1. If you haven’t already done so, make the Develop menu available. Choose Safari > Preferences, and on the Advanced tab, select “Show Develop menu in menu bar.” For details, see [`Safari Help`](https://developer.apple.comhttps://support.apple.com/guide/safari/welcome).
+1. If you haven’t already done so, make the Develop menu available. Choose Safari > Preferences, and on the Advanced tab, select “Show Develop menu in menu bar.” For details, see [Safari Help](https://support.apple.com/guide/safari/welcome).
 2. Choose Develop > Allow Remote Automation.
 3. Authorize `safaridriver` to launch the XPC service that hosts the local web server. To permit this, manually run `/usr/bin/safaridriver` once and follow the authentication prompt.
 
-##### Write a Webdriver Testing Suite
+##### Write a WebDriver Testing Suite
 
-Once you’ve obtained a client library, you can write a WebDriver test and run it against Safari. The example below uses using Python WebDriver to test important functionality of the [`WebKit Feature Status`](https://developer.apple.comhttps://webkit.org/status/) page.
+Once you’ve obtained a client library, you can write a WebDriver test and run it against Safari. The example below uses using Python WebDriver to test important functionality of the [WebKit Feature Status](https://webkit.org/status/) page.
 
 > **Note**:  In the Python WebDriver library, each method call synchronously blocks processes until the operation completes. Other WebDriver libraries may provide an asynchronous API.
 
@@ -115,11 +116,12 @@ python test_webkit.py
 
 ## See Also
 
-- [macOS WebDriver Commands for Safari 11.1 and earlier](macos-webdriver-commands-for-safari-11-1-and-earlier.md)
+### WebDriver
+- [macOS WebDriver Commands for Safari 11.1 and earlier](./macos-webdriver-commands-for-safari-11-1-and-earlier.md)
   Test your web content using the WebDriver commands supported by Safari 11.1 and earlier.
-- [macOS WebDriver Commands for Safari 12 and later](macos-webdriver-commands-for-safari-12-and-later.md)
+- [macOS WebDriver Commands for Safari 12 and later](./macos-webdriver-commands-for-safari-12-and-later.md)
   Test your web content using the WebDriver commands supported by Safari 12 and later.
-- [About WebDriver for Safari](about-webdriver-for-safari.md)
+- [About WebDriver for Safari](./about-webdriver-for-safari.md)
   Enhance testing of your web content using Safari’s enhancements to WebDriver.
 
 

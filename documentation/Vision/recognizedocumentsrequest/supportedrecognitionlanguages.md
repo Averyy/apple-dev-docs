@@ -1,7 +1,8 @@
 # supportedRecognitionLanguages
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifiers of the languages that the request supports.
 
@@ -21,15 +22,16 @@ var supportedRecognitionLanguages: [Locale.Language] { get }
 
 ## See Also
 
-- [RecognizeDocumentsRequest.BarcodeDetectionOptions](recognizedocumentsrequest/barcodedetectionoptions-swift.struct.md)
+### Configuring a request
+- [RecognizeDocumentsRequest.BarcodeDetectionOptions](./barcodedetectionoptions-swift.struct.md)
   A configuration object for detecting barcodes in a document.
-- [RecognizeDocumentsRequest.TextRecognitionOptions](recognizedocumentsrequest/textrecognitionoptions-swift.struct.md)
+- [RecognizeDocumentsRequest.TextRecognitionOptions](./textrecognitionoptions-swift.struct.md)
   A configuration object for detected and recognized text within the document.
-- [var barcodeDetectionOptions: RecognizeDocumentsRequest.BarcodeDetectionOptions](recognizedocumentsrequest/barcodedetectionoptions-swift.property.md)
+- [var barcodeDetectionOptions: RecognizeDocumentsRequest.BarcodeDetectionOptions](./barcodedetectionoptions-swift.property.md)
   Configuration for detecting machine-readable codes in the document.
-- [var textRecognitionOptions: RecognizeDocumentsRequest.TextRecognitionOptions](recognizedocumentsrequest/textrecognitionoptions-swift.property.md)
+- [var textRecognitionOptions: RecognizeDocumentsRequest.TextRecognitionOptions](./textrecognitionoptions-swift.property.md)
   Configuration for recognizing text in the document.
-- [var supportedBarcodeSymbologies: [BarcodeSymbology]](recognizedocumentsrequest/supportedbarcodesymbologies.md)
+- [var supportedBarcodeSymbologies: [BarcodeSymbology]](./supportedbarcodesymbologies.md)
   The collection of revisions the request supports.
 
 

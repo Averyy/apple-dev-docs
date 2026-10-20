@@ -1,7 +1,8 @@
 # WKInterfaceAuthorizationAppleIDButton
 
 **Framework**: WatchKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A button that you can use to trigger a Sign in with Apple request.
 
@@ -14,11 +15,15 @@ A button that you can use to trigger a Sign in with Apple request.
 class WKInterfaceAuthorizationAppleIDButton
 ```
 
+```objc
+@interface WKInterfaceAuthorizationAppleIDButton : WKInterfaceObject
+```
+
 #### Overview
 
 Use the authorization button to initiate Sign in with Apple on Apple Watch. You can’t use this button to do anything other than initiating sign-in requests.
 
-> **Note**:  The authorization button doesn’t perform the sign-in request; it provides a button with the correct branding. You must connect this button to an action method to perform the actual request. For more information, see [`Authentication Services`](https://developer.apple.com/documentation/authenticationservices).
+> **Note**:  The authorization button doesn’t perform the sign-in request; it provides a button with the correct branding. You must connect this button to an action method to perform the actual request. For more information, see [Authentication Services](../AuthenticationServices/AuthenticationServices.md).
 
 Don’t subclass or create instances of this class yourself. Instead, drag the button from the Object library and add it to your storyboard. Then define an outlet in your interface controller class and connect it to the button object.
 
@@ -34,7 +39,7 @@ Don’t subclass or create instances of this class yourself. Instead, drag the b
 @property (weak, nonatomic) IBOutlet WKInterfaceAuthorizationAppleIDButton* authorizationButton;
 ```
 
-While initializing the interface controller, WatchKit creates a new instance of this class and assigns it to your outlet. At that point, you can use the object in your outlet to make changes to the button (for example, hiding or disabling the button). This class inherits the methods and properties from its superclass, the [`WKInterfaceObject`](wkinterfaceobject.md) class.
+While initializing the interface controller, WatchKit creates a new instance of this class and assigns it to your outlet. At that point, you can use the object in your outlet to make changes to the button (for example, hiding or disabling the button). This class inherits the methods and properties from its superclass, the [`WKInterfaceObject`](./wkinterfaceobject.md) class.
 
 To respond to authorization button taps, connect the interface object in the storyboard to an action method in the interface controller:
 
@@ -50,51 +55,52 @@ To respond to authorization button taps, connect the interface object in the sto
 - (IBAction)beginAppleIDSignIn
 ```
 
-In the action method, create a sign-in request using the authorization provider, and then use an instance of [`ASAuthorizationController`](https://developer.apple.com/documentation/authenticationservices/asauthorizationcontroller) to execute the request.
+In the action method, create a sign-in request using the authorization provider, and then use an instance of [`ASAuthorizationController`](../AuthenticationServices/asauthorizationcontroller.md) to execute the request.
 
 ## Topics
 
 ### Initializing for SwiftUI
-- [init(style: WKInterfaceAuthorizationAppleIDButton.Style, target: Any?, action: Selector)](wkinterfaceauthorizationappleidbutton/init(style:target:action:).md)
+- [init(style: WKInterfaceAuthorizationAppleIDButton.Style, target: Any?, action: Selector)](./wkinterfaceauthorizationappleidbutton/init%28style,target,action%29.md)
   Creates an authorization button for use in SwiftUI.
-- [WKInterfaceAuthorizationAppleIDButton.Style](wkinterfaceauthorizationappleidbutton/style.md)
+- [WKInterfaceAuthorizationAppleIDButton.Style](./wkinterfaceauthorizationappleidbutton/style.md)
   Values that define an authorization button’s style.
-- [init(target: Any?, action: Selector)](wkinterfaceauthorizationappleidbutton/init(target:action:).md)
+- [init(target: Any?, action: Selector)](./wkinterfaceauthorizationappleidbutton/init%28target,action%29.md)
   Creates an authorization button for use in SwiftUI.
 
 ## Relationships
 
 ### Inherits From
-- [WKInterfaceObject](wkinterfaceobject.md)
+- [WKInterfaceObject](./wkinterfaceobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class WKInterfaceLabel](wkinterfacelabel.md)
+### Controls
+- [class WKInterfaceLabel](./wkinterfacelabel.md)
   An interface element that displays static text.
-- [class WKInterfaceDate](wkinterfacedate.md)
+- [class WKInterfaceDate](./wkinterfacedate.md)
   A label that displays the current date or time.
-- [class WKInterfaceTimer](wkinterfacetimer.md)
+- [class WKInterfaceTimer](./wkinterfacetimer.md)
   A label that displays a countdown or count-up timer.
-- [class WKInterfaceButton](wkinterfacebutton.md)
+- [class WKInterfaceButton](./wkinterfacebutton.md)
   A button in the user interface of your watchOS app.
-- [class WKInterfacePaymentButton](wkinterfacepaymentbutton.md)
+- [class WKInterfacePaymentButton](./wkinterfacepaymentbutton.md)
   A button that you can use to trigger payments through Apple Pay.
-- [class WKInterfaceTextField](wkinterfacetextfield.md)
+- [class WKInterfaceTextField](./wkinterfacetextfield.md)
   An interface element that displays an editable text area.
-- [class WKInterfaceSwitch](wkinterfaceswitch.md)
+- [class WKInterfaceSwitch](./wkinterfaceswitch.md)
   An interface element that toggles between an On and Off state.
-- [class WKInterfaceSlider](wkinterfaceslider.md)
+- [class WKInterfaceSlider](./wkinterfaceslider.md)
   An interface element that lets users select a single floating-point value from a range of values.
-- [class WKInterfaceActivityRing](wkinterfaceactivityring.md)
+- [class WKInterfaceActivityRing](./wkinterfaceactivityring.md)
   A view that displays data from a HealthKit activity summary object.
-- [class WKInterfaceMap](wkinterfacemap.md)
+- [class WKInterfaceMap](./wkinterfacemap.md)
   An interface element that displays a noninteractive map for the location you specify.
 
 

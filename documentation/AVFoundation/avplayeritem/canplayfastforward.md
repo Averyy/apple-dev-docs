@@ -1,7 +1,8 @@
 # canPlayFastForward
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the item can play at fast-forward rates.
 
@@ -21,19 +22,24 @@ nonisolated
 var canPlayFastForward: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL canPlayFastForward;
+```
+
 #### Discussion
 
-This property is `true` when an item can play at rates greater than `2.0`. Every item with a status of [`AVPlayerItem.Status.readyToPlay`](avplayeritem/status-swift.enum/readytoplay.md) plays at rates between `1.0` and `2.0`, inclusive, even when this property is `false`.
+This property is `true` when an item can play at rates greater than `2.0`. Every item with a status of [`AVPlayerItem.Status.readyToPlay`](./status-swift.enum/readytoplay.md) plays at rates between `1.0` and `2.0`, inclusive, even when this property is `false`.
 
 ## See Also
 
-- [var canPlayReverse: Bool](avplayeritem/canplayreverse.md)
+### Determining playback capabilities
+- [var canPlayReverse: Bool](./canplayreverse.md)
   A Boolean value that indicates whether the item can play in reverse.
-- [var canPlayFastReverse: Bool](avplayeritem/canplayfastreverse.md)
+- [var canPlayFastReverse: Bool](./canplayfastreverse.md)
   A Boolean value that indicates whether the item can be quickly reversed.
-- [var canPlaySlowForward: Bool](avplayeritem/canplayslowforward.md)
+- [var canPlaySlowForward: Bool](./canplayslowforward.md)
   A Boolean value that indicates whether the item can play slower than normal.
-- [var canPlaySlowReverse: Bool](avplayeritem/canplayslowreverse.md)
+- [var canPlaySlowReverse: Bool](./canplayslowreverse.md)
   A Boolean value that indicates whether the item can play slowly backward.
 
 

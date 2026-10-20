@@ -1,7 +1,8 @@
 # guestDidStop(_:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the guest operating system stopped the VM.
 
@@ -14,13 +15,18 @@ Tells the delegate that the guest operating system stopped the VM.
 optional func guestDidStop(_ virtualMachine: VZVirtualMachine)
 ```
 
+```objc
+- (void) guestDidStopVirtualMachine:(VZVirtualMachine *) virtualMachine;
+```
+
 ## Parameters
 
 - `virtualMachine`: The VM that called the delegate method.
 
 ## See Also
 
-- [func virtualMachine(VZVirtualMachine, didStopWithError: any Error)](vzvirtualmachinedelegate/virtualmachine(_:didstopwitherror:).md)
+### Stopping the VM
+- [func virtualMachine(VZVirtualMachine, didStopWithError: any Error)](./virtualmachine%28_,didstopwitherror%29.md)
   Tells the delegate that the VM stopped because of an error.
 
 

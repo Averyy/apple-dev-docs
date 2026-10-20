@@ -1,7 +1,8 @@
 # csvRepresentation(options:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a CSV data instance of the data frame type.
 
@@ -22,11 +23,12 @@ func csvRepresentation(options: CSVWritingOptions = .init()) throws -> Data
 
 ## Parameters
 
-- `options`: A [`CSVWritingOptions`](csvwritingoptions.md) instance.
+- `options`: A [`CSVWritingOptions`](../csvwritingoptions.md) instance.
 
 ## See Also
 
-- [func writeCSV(to: URL, options: CSVWritingOptions) throws](dataframeprotocol/writecsv(to:options:).md)
+### Saving a Data Frame Type to a CSV Format
+- [func writeCSV(to: URL, options: CSVWritingOptions) throws](./writecsv%28to,options%29.md)
   Creates a CSV file with the contents of the data frame type.
 
 

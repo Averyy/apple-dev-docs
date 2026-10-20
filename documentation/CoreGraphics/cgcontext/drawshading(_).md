@@ -1,7 +1,8 @@
 # drawShading(_:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fills the clipping path of a context with the specified shading.
 
@@ -10,7 +11,7 @@ Fills the clipping path of a context with the specified shading.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.2+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Fills the clipping path of a context with the specified shading.
 func drawShading(_ shading: CGShading)
 ```
 
+```c
+extern void CGContextDrawShading(CGContextRef c, CGShadingRef shading);
+```
+
 #### Discussion
 
-The preferred way to draw gradients is to use a CGGradient object. See [`CGGradient`](cggradient.md).
+The preferred way to draw gradients is to use a CGGradient object. See [`CGGradient`](../cggradient.md).
 
 ## Parameters
 
@@ -30,15 +35,17 @@ The preferred way to draw gradients is to use a CGGradient object. See [`CGGradi
 
 ## See Also
 
-- [func drawRadialGradient(CGGradient, startCenter: CGPoint, startRadius: CGFloat, endCenter: CGPoint, endRadius: CGFloat, options: CGGradientDrawingOptions)](cgcontext/drawradialgradient(_:startcenter:startradius:endcenter:endradius:options:).md)
+### Related Documentation
+- [func drawRadialGradient(CGGradient, startCenter: CGPoint, startRadius: CGFloat, endCenter: CGPoint, endRadius: CGFloat, options: CGGradientDrawingOptions)](./drawradialgradient%28_,startcenter,startradius,endcenter,endradius,options%29.md)
   Paints a gradient fill that varies along the area defined by the provided starting and ending circles.
-- [func drawLinearGradient(CGGradient, start: CGPoint, end: CGPoint, options: CGGradientDrawingOptions)](cgcontext/drawlineargradient(_:start:end:options:).md)
+- [func drawLinearGradient(CGGradient, start: CGPoint, end: CGPoint, options: CGGradientDrawingOptions)](./drawlineargradient%28_,start,end,options%29.md)
   Paints a gradient fill that varies along the line defined by the provided starting and ending points.
-- [func drawLinearGradient(CGGradient, start: CGPoint, end: CGPoint, options: CGGradientDrawingOptions)](cgcontext/drawlineargradient(_:start:end:options:).md)
+### Drawing Gradients and Shadings
+- [func drawLinearGradient(CGGradient, start: CGPoint, end: CGPoint, options: CGGradientDrawingOptions)](./drawlineargradient%28_,start,end,options%29.md)
   Paints a gradient fill that varies along the line defined by the provided starting and ending points.
-- [func drawRadialGradient(CGGradient, startCenter: CGPoint, startRadius: CGFloat, endCenter: CGPoint, endRadius: CGFloat, options: CGGradientDrawingOptions)](cgcontext/drawradialgradient(_:startcenter:startradius:endcenter:endradius:options:).md)
+- [func drawRadialGradient(CGGradient, startCenter: CGPoint, startRadius: CGFloat, endCenter: CGPoint, endRadius: CGFloat, options: CGGradientDrawingOptions)](./drawradialgradient%28_,startcenter,startradius,endcenter,endradius,options%29.md)
   Paints a gradient fill that varies along the area defined by the provided starting and ending circles.
-- [struct CGGradientDrawingOptions](cggradientdrawingoptions.md)
+- [struct CGGradientDrawingOptions](../cggradientdrawingoptions.md)
   Drawing locations for gradients.
 
 

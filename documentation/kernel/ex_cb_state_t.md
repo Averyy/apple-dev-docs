@@ -1,14 +1,15 @@
 # ex_cb_state_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct ex_cb_state_t {
     ...
 } ex_cb_state_t;
@@ -17,7 +18,7 @@ typedef struct ex_cb_state_t {
 ## Topics
 
 ### Instance Properties
-- [far](ex_cb_state_t/3609185-far.md)
+- [far](./ex_cb_state_t/api-3609185-far.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MinMaxScaler.Transformer
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transformer that scales the input values so that they all lie in a closed range.
 
@@ -20,33 +21,35 @@ A transformer that scales the input values so that they all lie in a closed rang
 struct Transformer
 ```
 
+Available when `Element` conforms to `BinaryFloatingPoint`, `Decodable`, and `Encodable`.
+
 ## Topics
 
 ### Creating a transformer
-- [init(desiredRange: ClosedRange<Element>, fittedRange: ClosedRange<Element>)](minmaxscaler/transformer/init(desiredrange:fittedrange:).md)
+- [init(desiredRange: ClosedRange<Element>, fittedRange: ClosedRange<Element>)](./transformer/init%28desiredrange,fittedrange%29.md)
   Creates a minmax scaling transformer.
 ### Getting the properties
-- [var desiredRange: ClosedRange<Element>](minmaxscaler/transformer/desiredrange.md)
+- [var desiredRange: ClosedRange<Element>](./transformer/desiredrange.md)
   The desired range of transformed values.
-- [var fittedRange: ClosedRange<Element>](minmaxscaler/transformer/fittedrange.md)
+- [var fittedRange: ClosedRange<Element>](./transformer/fittedrange.md)
   The fitted range derived by the estimator when fitting.
 ### Performing the transformation
-- [func applied(to: Element, eventHandler: EventHandler?) -> Element](minmaxscaler/transformer/applied(to:eventhandler:).md)
+- [func applied(to: Element, eventHandler: EventHandler?) -> Element](./transformer/applied%28to,eventhandler%29.md)
   Scales the input values so that they all lie in the closed range `[minimum, maximum]`.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transformer](transformer.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Transformer](../transformer.md)
 
 
 ---

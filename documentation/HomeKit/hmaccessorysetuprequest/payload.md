@@ -1,7 +1,8 @@
 # payload
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The payload to use for accessory setup.
 
@@ -17,17 +18,22 @@ The payload to use for accessory setup.
 var payload: HMAccessorySetupPayload? { get set }
 ```
 
+```objc
+@property (copy, nullable) HMAccessorySetupPayload * payload;
+```
+
 #### Discussion
 
-See [`HMAccessorySetupPayload`](hmaccessorysetuppayload.md) for more information.
+See [`HMAccessorySetupPayload`](../hmaccessorysetuppayload.md) for more information.
 
 ## See Also
 
-- [var homeUniqueIdentifier: UUID?](hmaccessorysetuprequest/homeuniqueidentifier.md)
+### Setting up accessorices
+- [var homeUniqueIdentifier: UUID?](./homeuniqueidentifier.md)
   The identifier corresponding to the home that the accessory should be added to when being set up.
-- [var suggestedAccessoryName: String?](hmaccessorysetuprequest/suggestedaccessoryname.md)
+- [var suggestedAccessoryName: String?](./suggestedaccessoryname.md)
   The name that the framework suggests when the user names the accessory being set up.
-- [var suggestedRoomUniqueIdentifier: UUID?](hmaccessorysetuprequest/suggestedroomuniqueidentifier.md)
+- [var suggestedRoomUniqueIdentifier: UUID?](./suggestedroomuniqueidentifier.md)
   The identifier corresponding to the room that the framework suggests.
 
 

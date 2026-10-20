@@ -1,7 +1,8 @@
 # fulfill(dateStarted:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates that a local participant successfully started a conversation.
 

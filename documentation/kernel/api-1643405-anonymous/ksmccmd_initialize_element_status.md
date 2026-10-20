@@ -1,7 +1,8 @@
 # kSMCCmd_INITIALIZE_ELEMENT_STATUS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSMCCmd_INITIALIZE_ELEMENT_STATUS = 0x07
 ```
 

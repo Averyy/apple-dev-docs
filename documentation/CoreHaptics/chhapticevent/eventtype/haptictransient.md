@@ -1,7 +1,8 @@
 # hapticTransient
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A brief impulse occurring at a specific point in time, like the feedback from toggling a switch.
 
@@ -19,9 +20,13 @@ A brief impulse occurring at a specific point in time, like the feedback from to
 static let hapticTransient: CHHapticEvent.EventType
 ```
 
+```c
+extern CHHapticEventType CHHapticEventTypeHapticTransient;
+```
+
 ## Mentions
 
-- [Playing a single-tap haptic pattern](playing-a-single-tap-haptic-pattern.md)
+- [Playing a single-tap haptic pattern](../../playing-a-single-tap-haptic-pattern.md)
 
 #### Discussion
 
@@ -29,11 +34,12 @@ Transient events complete on their own, even without a duration.
 
 ## See Also
 
-- [static let audioContinuous: CHHapticEvent.EventType](chhapticevent/eventtype/audiocontinuous.md)
+### Enumerating Haptic Types
+- [static let audioContinuous: CHHapticEvent.EventType](./audiocontinuous.md)
   An audio event with a looped waveform of arbitrary length.
-- [static let audioCustom: CHHapticEvent.EventType](chhapticevent/eventtype/audiocustom.md)
+- [static let audioCustom: CHHapticEvent.EventType](./audiocustom.md)
   An audio event using a waveform that you supply.
-- [static let hapticContinuous: CHHapticEvent.EventType](chhapticevent/eventtype/hapticcontinuous.md)
+- [static let hapticContinuous: CHHapticEvent.EventType](./hapticcontinuous.md)
   A haptic event with a looped waveform of arbitrary length.
 
 

@@ -1,7 +1,8 @@
 # playbackCoordinator
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The playback coordinator for the player.
 
@@ -18,6 +19,10 @@ The playback coordinator for the player.
 ```swift
 nonisolated
 var playbackCoordinator: AVPlayerPlaybackCoordinator { get }
+```
+
+```objc
+@property (strong, readonly) AVPlayerPlaybackCoordinator * playbackCoordinator;
 ```
 
 

@@ -1,7 +1,8 @@
 # MLWordTagger.ModelParameters.ValidationData
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The validation data.
 
@@ -17,22 +18,23 @@ enum ValidationData
 ## Topics
 
 ### Specifying validation data
-- [MLWordTagger.ModelParameters.ValidationData.split(strategy:)](mlwordtagger/modelparameters-swift.struct/validationdata-swift.enum/split(strategy:).md)
+- [MLWordTagger.ModelParameters.ValidationData.split(strategy:)](./validationdata-swift.enum/split%28strategy%29.md)
   Generates the validation data by splitting the training dataset.
-- [MLWordTagger.ModelParameters.ValidationData.table(_:tokenColumn:labelColumn:)](mlwordtagger/modelparameters-swift.struct/validationdata-swift.enum/table(_:tokencolumn:labelcolumn:).md)
+- [MLWordTagger.ModelParameters.ValidationData.table(_:tokenColumn:labelColumn:)](./validationdata-swift.enum/table%28_,tokencolumn,labelcolumn%29.md)
   Sets the validation data from the provided data table.
-- [MLWordTagger.ModelParameters.ValidationData.dataFrame(_:tokenColumn:labelColumn:)](mlwordtagger/modelparameters-swift.struct/validationdata-swift.enum/dataframe(_:tokencolumn:labelcolumn:).md)
+- [MLWordTagger.ModelParameters.ValidationData.dataFrame(_:tokenColumn:labelColumn:)](./validationdata-swift.enum/dataframe%28_,tokencolumn,labelcolumn%29.md)
   Set validation data from the DataFrame provided.
-- [case tuples([(tokens: [MLWordTagger.Token], labels: [String])])](mlwordtagger/modelparameters-swift.struct/validationdata-swift.enum/tuples(_:).md)
+- [case tuples([(tokens: [MLWordTagger.Token], labels: [String])])](./validationdata-swift.enum/tuples%28_%29.md)
   Sets the validation data from a list of tokens and labels.
-- [MLWordTagger.ModelParameters.ValidationData.none](mlwordtagger/modelparameters-swift.struct/validationdata-swift.enum/none.md)
+- [MLWordTagger.ModelParameters.ValidationData.none](./validationdata-swift.enum/none.md)
   Doesn’t set validation data.
 
 ## See Also
 
-- [init(validation: MLWordTagger.ModelParameters.ValidationData, algorithm: MLWordTagger.ModelAlgorithmType, language: NLLanguage?)](mlwordtagger/modelparameters-swift.struct/init(validation:algorithm:language:).md)
+### Creating parameters
+- [init(validation: MLWordTagger.ModelParameters.ValidationData, algorithm: MLWordTagger.ModelAlgorithmType, language: NLLanguage?)](./init%28validation,algorithm,language%29.md)
   Creates model parameters.
-- [MLWordTagger.ModelAlgorithmType](mlwordtagger/modelalgorithmtype.md)
+- [MLWordTagger.ModelAlgorithmType](../modelalgorithmtype.md)
   The algorithm type.
 
 

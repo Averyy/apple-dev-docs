@@ -1,17 +1,22 @@
 # bidiProcessingEnabled
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value controlling whether the typesetter performs bidirectional text processing.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var bidiProcessingEnabled: Bool { get set }
+```
+
+```objc
+@property BOOL bidiProcessingEnabled;
 ```
 
 #### Discussion
@@ -20,13 +25,14 @@ You can use this method to disable the bidirectional layout stage if you know th
 
 ## See Also
 
-- [var layoutManager: NSLayoutManager?](nsatstypesetter/layoutmanager.md)
+### Accessing the layout manager
+- [var layoutManager: NSLayoutManager?](./layoutmanager.md)
   The layout manager for the text being typeset.
-- [var usesFontLeading: Bool](nsatstypesetter/usesfontleading.md)
+- [var usesFontLeading: Bool](./usesfontleading.md)
   A Boolean value controlling whether the typesetter uses the leading (or line gap) value specified in the font metric information.
-- [var typesetterBehavior: NSLayoutManager.TypesetterBehavior](nsatstypesetter/typesetterbehavior.md)
+- [var typesetterBehavior: NSLayoutManager.TypesetterBehavior](./typesetterbehavior.md)
   The current typesetter behavior value.
-- [var hyphenationFactor: Float](nsatstypesetter/hyphenationfactor.md)
+- [var hyphenationFactor: Float](./hyphenationfactor.md)
   The threshold controlling when hyphenation is attempted.
 
 

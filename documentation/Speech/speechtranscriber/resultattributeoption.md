@@ -1,7 +1,8 @@
 # SpeechTranscriber.ResultAttributeOption
 
 **Framework**: Speech  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options relating to the attributes of the transcription.
 
@@ -22,25 +23,26 @@ enum ResultAttributeOption
 ## Topics
 
 ### Result attribute options
-- [SpeechTranscriber.ResultAttributeOption.audioTimeRange](speechtranscriber/resultattributeoption/audiotimerange.md)
+- [SpeechTranscriber.ResultAttributeOption.audioTimeRange](./resultattributeoption/audiotimerange.md)
   Includes time-code attributes in a transcription’s attributed string.
-- [SpeechTranscriber.ResultAttributeOption.transcriptionConfidence](speechtranscriber/resultattributeoption/transcriptionconfidence.md)
+- [SpeechTranscriber.ResultAttributeOption.transcriptionConfidence](./resultattributeoption/transcriptionconfidence.md)
   Includes confidence attributes in a transcription’s attributed string.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [SpeechTranscriber.ReportingOption](speechtranscriber/reportingoption.md)
+### Configuring transcription
+- [SpeechTranscriber.ReportingOption](./reportingoption.md)
   Options relating to the transcriber’s result delivery.
-- [SpeechTranscriber.TranscriptionOption](speechtranscriber/transcriptionoption.md)
+- [SpeechTranscriber.TranscriptionOption](./transcriptionoption.md)
   Options relating to the text of the transcription.
 
 

@@ -1,7 +1,8 @@
 # strong
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A password that contains alphanumeric characters and special characters.
 
@@ -15,6 +16,10 @@ A password that contains alphanumeric characters and special characters.
 
 ```swift
 static let strong: ASGeneratedPassword.Kind
+```
+
+```c
+extern ASGeneratedPasswordKind const ASGeneratedPasswordKindStrong;
 ```
 
 

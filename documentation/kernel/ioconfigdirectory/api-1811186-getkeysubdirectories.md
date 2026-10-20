@@ -5,13 +5,13 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn getKeySubdirectories(
  intkey,
  OSIterator *&iterator);
 ```
 
-#### Return_value
+#### Return Value
 
 kIOReturnSuccess if the iterator could be created
 
@@ -26,14 +26,15 @@ Creates an iterator over subdirectories of a given type of the directory.
 
 ## See Also
 
-- [getIndexEntry](ioconfigdirectory/1811146-getindexentry.md)
-- [getIndexKey](ioconfigdirectory/1811157-getindexkey.md)
-- [getIndexType](ioconfigdirectory/1811166-getindextype.md)
-- [getIndexValue](ioconfigdirectory/1811176-getindexvalue.md)
-- [getKeyType](ioconfigdirectory/1811199-getkeytype.md)
-- [getKeyValue](ioconfigdirectory/1811212-getkeyvalue.md)
-- [getSubdirectories](ioconfigdirectory/1811222-getsubdirectories.md)
-- [update](ioconfigdirectory/1811231-update.md)
+### Miscellaneous
+- [getIndexEntry](./api-1811146-getindexentry.md)
+- [getIndexKey](./api-1811157-getindexkey.md)
+- [getIndexType](./api-1811166-getindextype.md)
+- [getIndexValue](./api-1811176-getindexvalue.md)
+- [getKeyType](./api-1811199-getkeytype.md)
+- [getKeyValue](./api-1811212-getkeyvalue.md)
+- [getSubdirectories](./api-1811222-getsubdirectories.md)
+- [update](./api-1811231-update.md)
 
 
 ---

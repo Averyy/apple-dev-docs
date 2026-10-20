@@ -1,7 +1,8 @@
 # allowsEmptySelection
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether it’s possible to present none of the options in the group when an associated player item is played.
 
@@ -20,9 +21,13 @@ A Boolean value that indicates whether it’s possible to present none of the op
 var allowsEmptySelection: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL allowsEmptySelection;
+```
+
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), you can deselect all of the available media options in the group by passing `nil` as the specified [`AVMediaSelectionOption`](avmediaselectionoption.md) object to [`select(_:in:)`](avplayeritem/select(_:in:).md).
+If the value of this property is [`true`](../../Swift/true.md), you can deselect all of the available media options in the group by passing `nil` as the specified [`AVMediaSelectionOption`](../avmediaselectionoption.md) object to [`select(_:in:)`](../avplayeritem/select%28_,in%29.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the invalidation type.
 
@@ -17,7 +18,8 @@ init()
 
 ## See Also
 
-- [func layout()](nsview/layout.md)
+### Creating the invalidation type
+- [func layout()](../../layout%28%29.md)
   Perform layout in concert with the constraint-based layout system.
 
 

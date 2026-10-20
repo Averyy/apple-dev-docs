@@ -1,7 +1,8 @@
 # InAppPurchaseLocalizationV2UpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an In-App Purchase localization update request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an In-App Purchase localization update request resource
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseLocalizationV2UpdateRequest.Data.Attributes
 ```
 

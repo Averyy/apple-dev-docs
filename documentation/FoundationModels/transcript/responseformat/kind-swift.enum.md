@@ -1,7 +1,8 @@
 # Transcript.ResponseFormat.Kind
 
 **Framework**: Foundation Models  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A representation of the different ways a response format can constrain model output.
 
@@ -22,19 +23,20 @@ A representation of the different ways a response format can constrain model out
 ## Topics
 
 ### Response formats
-- [Transcript.ResponseFormat.Kind.schema(_:)](transcript/responseformat/kind-swift.enum/schema(_:).md)
+- [Transcript.ResponseFormat.Kind.schema(_:)](./kind-swift.enum/schema%28_%29.md)
   A format that constrains the model’s output to a generation schema.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let kind: Transcript.ResponseFormat.Kind](transcript/responseformat/kind-swift.property.md)
+### Accessing the kind of format
+- [let kind: Transcript.ResponseFormat.Kind](./kind-swift.property.md)
   The way the response format constrains the model’s output.
 
 

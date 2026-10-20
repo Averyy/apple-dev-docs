@@ -1,7 +1,8 @@
 # preferredBroadcastOptions
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Preferences for how to present audio and video on the main communication channel.
 
@@ -25,9 +26,10 @@ Use this property to request special handling of the audio and video on the Face
 
 ## See Also
 
-- [var supportsContinuationOnTV: Bool](groupactivitymetadata/supportscontinuationontv.md)
+### Specifying media-related behavior
+- [var supportsContinuationOnTV: Bool](./supportscontinuationontv.md)
   A Boolean value that indicates whether your app supports activity continuation on an Apple TV.
-- [struct BroadcastOptions](broadcastoptions.md)
+- [struct BroadcastOptions](../broadcastoptions.md)
   Options for how to broadcast media on the shared communications channel.
 
 

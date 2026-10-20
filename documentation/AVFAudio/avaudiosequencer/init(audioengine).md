@@ -1,7 +1,8 @@
 # init(audioEngine:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio sequencer that the framework attaches to an audio engine instance.
 
@@ -19,13 +20,18 @@ Creates an audio sequencer that the framework attaches to an audio engine instan
 init(audioEngine engine: AVAudioEngine)
 ```
 
+```objc
+- (instancetype) initWithAudioEngine:(AVAudioEngine *) engine;
+```
+
 ## Parameters
 
 - `engine`: The engine to attach to.
 
 ## See Also
 
-- [init()](avaudiosequencer/init.md)
+### Creating an audio sequencer
+- [init()](./init%28%29.md)
   Creates an audio sequencer object.
 
 

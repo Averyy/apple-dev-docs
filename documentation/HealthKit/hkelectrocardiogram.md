@@ -1,7 +1,8 @@
 # HKElectrocardiogram
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A sample for electrocardiogram data.
 
@@ -19,11 +20,15 @@ A sample for electrocardiogram data.
 class HKElectrocardiogram
 ```
 
+```objc
+@interface HKElectrocardiogram : HKSample
+```
+
 #### Overview
 
-An [`HKElectrocardiogram`](hkelectrocardiogram.md) is a collection of voltage values representing waveforms from one or more leads. The [`HKElectrocardiogram`](hkelectrocardiogram.md) sample provides high-level details about the ECG reading, such as the sampling frequency or classification. HealthKit provides read-only access to electrocardiogram (ECG) data saved by Apple Watch.
+An [`HKElectrocardiogram`](./hkelectrocardiogram.md) is a collection of voltage values representing waveforms from one or more leads. The [`HKElectrocardiogram`](./hkelectrocardiogram.md) sample provides high-level details about the ECG reading, such as the sampling frequency or classification. HealthKit provides read-only access to electrocardiogram (ECG) data saved by Apple Watch.
 
-You can query for [`HKElectrocardiogram`](hkelectrocardiogram.md) samples using an [`HKSampleQuery`](hksamplequery.md).
+You can query for [`HKElectrocardiogram`](./hkelectrocardiogram.md) samples using an [`HKSampleQuery`](./hksamplequery.md).
 
 ```swift
 // Create the electrocardiogram sample type.
@@ -54,7 +59,7 @@ let ecgQuery = HKSampleQuery(sampleType: ecgType,
 healthStore.execute(ecgQuery)
 ```
 
-After retrieving an [`HKElectrocardiogram`](hkelectrocardiogram.md) sample, you can access the voltage measurements associated with the sample use an [`HKElectrocardiogramQuery`](hkelectrocardiogramquery.md) query.
+After retrieving an [`HKElectrocardiogram`](./hkelectrocardiogram.md) sample, you can access the voltage measurements associated with the sample use an [`HKElectrocardiogramQuery`](./hkelectrocardiogramquery.md) query.
 
 ```swift
 // Create a query for the voltage measurements
@@ -83,57 +88,58 @@ healthStore.execute(voltageQuery)
 ## Topics
 
 ### Accessing Overview Information
-- [var classification: HKElectrocardiogram.Classification](hkelectrocardiogram/classification-swift.property.md)
+- [var classification: HKElectrocardiogram.Classification](./hkelectrocardiogram/classification-swift.property.md)
   The ECG’s classification.
-- [HKElectrocardiogram.Classification](hkelectrocardiogram/classification-swift.enum.md)
+- [HKElectrocardiogram.Classification](./hkelectrocardiogram/classification-swift.enum.md)
   Classifications returned by Apple Watch’s ECG algorithm.
-- [var averageHeartRate: HKQuantity?](hkelectrocardiogram/averageheartrate.md)
+- [var averageHeartRate: HKQuantity?](./hkelectrocardiogram/averageheartrate.md)
   The user’s average heart rate during the ECG.
-- [var symptomsStatus: HKElectrocardiogram.SymptomsStatus](hkelectrocardiogram/symptomsstatus-swift.property.md)
+- [var symptomsStatus: HKElectrocardiogram.SymptomsStatus](./hkelectrocardiogram/symptomsstatus-swift.property.md)
   A value that indicates whether the user entered a symptom when they recorded the ECG.
-- [HKElectrocardiogram.SymptomsStatus](hkelectrocardiogram/symptomsstatus-swift.enum.md)
+- [HKElectrocardiogram.SymptomsStatus](./hkelectrocardiogram/symptomsstatus-swift.enum.md)
   Values indicating whether the user entered a symptom when they recorded the ECG.
 ### Accessing Voltage Measurements
-- [var numberOfVoltageMeasurements: Int](hkelectrocardiogram/numberofvoltagemeasurements.md)
+- [var numberOfVoltageMeasurements: Int](./hkelectrocardiogram/numberofvoltagemeasurements.md)
   The number of voltage measurements associated with this sample.
-- [var samplingFrequency: HKQuantity?](hkelectrocardiogram/samplingfrequency.md)
+- [var samplingFrequency: HKQuantity?](./hkelectrocardiogram/samplingfrequency.md)
   The frequency at which the Apple Watch sampled the voltage.
-- [HKElectrocardiogram.VoltageMeasurement](hkelectrocardiogram/voltagemeasurement.md)
+- [HKElectrocardiogram.VoltageMeasurement](./hkelectrocardiogram/voltagemeasurement.md)
   The voltage for all leads at a single point in time.
-- [HKElectrocardiogram.Lead](hkelectrocardiogram/lead.md)
+- [HKElectrocardiogram.Lead](./hkelectrocardiogram/lead.md)
   The lead used to record a voltage measurement.
 ### Specifying Metadata
-- [let HKMetadataKeyAppleECGAlgorithmVersion: String](hkmetadatakeyappleecgalgorithmversion.md)
+- [let HKMetadataKeyAppleECGAlgorithmVersion: String](./hkmetadatakeyappleecgalgorithmversion.md)
   A key for metadata indicating the version number of the algorithm Apple Watch uses to generate an ECG reading.
-- [enum HKAppleECGAlgorithmVersion](hkappleecgalgorithmversion.md)
+- [enum HKAppleECGAlgorithmVersion](./hkappleecgalgorithmversion.md)
   Version numbers for the algorithm Apple Watch uses to generate an ECG reading.
 ### Specifying Predicate Key Paths
-- [let HKPredicateKeyPathECGClassification: String](hkpredicatekeypathecgclassification.md)
+- [let HKPredicateKeyPathECGClassification: String](./hkpredicatekeypathecgclassification.md)
   The key path for the sample’s classification.
-- [let HKPredicateKeyPathECGSymptomsStatus: String](hkpredicatekeypathecgsymptomsstatus.md)
+- [let HKPredicateKeyPathECGSymptomsStatus: String](./hkpredicatekeypathecgsymptomsstatus.md)
   The key path for the sample’s symptom status.
-- [let HKPredicateKeyPathAverageHeartRate: String](hkpredicatekeypathaverageheartrate.md)
+- [let HKPredicateKeyPathAverageHeartRate: String](./hkpredicatekeypathaverageheartrate.md)
   The key path for the sample’s average heart rate.
 
 ## Relationships
 
 ### Inherits From
-- [HKSample](hksample.md)
+- [HKSample](./hksample.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [HKElectrocardiogram.VoltageMeasurement](hkelectrocardiogram/voltagemeasurement.md)
+### Electrocardiograms
+- [HKElectrocardiogram.VoltageMeasurement](./hkelectrocardiogram/voltagemeasurement.md)
   The voltage for all leads at a single point in time.
 
 

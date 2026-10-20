@@ -1,7 +1,8 @@
 # AnnotatedFeature
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An annotated example for fitting a supervised estimator.
 
@@ -22,42 +23,43 @@ struct AnnotatedFeature<Feature, Annotation>
 
 ## Mentions
 
-- [Creating a multi-label image classifier](creating-a-multi-label-image-classifier.md)
+- [Creating a multi-label image classifier](./creating-a-multi-label-image-classifier.md)
 
 ## Topics
 
 ### Creating the feature
-- [init(feature: Feature, annotation: Annotation)](annotatedfeature/init(feature:annotation:).md)
+- [init(feature: Feature, annotation: Annotation)](./annotatedfeature/init%28feature,annotation%29.md)
   Creates an example with a feature and an annotation.
 ### Getting the properties
-- [var annotation: Annotation](annotatedfeature/annotation.md)
+- [var annotation: Annotation](./annotatedfeature/annotation.md)
   The annotation.
-- [var feature: Feature](annotatedfeature/feature.md)
+- [var feature: Feature](./annotatedfeature/feature.md)
   The feature value.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AnnotatedFiles](annotatedfiles.md)
+### Annotations
+- [struct AnnotatedFiles](./annotatedfiles.md)
   An annotated files collection.
-- [struct AnnotatedBatch](annotatedbatch.md)
+- [struct AnnotatedBatch](./annotatedbatch.md)
   A batch of annotated examples for fitting a supervised estimator.
-- [struct AnnotatedFeatureProvider](annotatedfeatureprovider.md)
+- [struct AnnotatedFeatureProvider](./annotatedfeatureprovider.md)
   An adaptor that converts a regular estimator to a tabular estimator by selecting features and annotations from columns.
-- [struct AnnotatedPrediction](annotatedprediction.md)
+- [struct AnnotatedPrediction](./annotatedprediction.md)
   An annotated prediction.
-- [struct DataFrameTemporalAnnotationParameters](dataframetemporalannotationparameters.md)
+- [struct DataFrameTemporalAnnotationParameters](./dataframetemporalannotationparameters.md)
   Annotation parameters for the dataframe containing temporal annotations.
 
 

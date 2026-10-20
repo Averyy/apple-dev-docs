@@ -1,7 +1,8 @@
 # epochKey0
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 var epochKey0: Data? { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSData * epochKey0;
 ```
 
 

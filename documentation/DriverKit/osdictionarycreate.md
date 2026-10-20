@@ -1,32 +1,34 @@
 # OSDictionaryCreate
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 OSDictionaryPtrOSDictionaryCreate();
 ```
 
 ## See Also
 
-- [withCapacity](osdictionary/withcapacity.md)
+### Creating a Dictionary
+- [withCapacity](./osdictionary/withcapacity.md)
   Allocates an OSDictionary object with preallocated capacity.
-- [withDictionary](osdictionary/withdictionary.md)
+- [withDictionary](./osdictionary/withdictionary.md)
   Allocates an OSDictionary object with given members and preallocated capacity.
-- [withObjects](osdictionary/withobjects.md)
+- [withObjects](./osdictionary/withobjects.md)
   Allocates an OSDictionary object with given members and preallocated capacity.
-- [merge](osdictionary/merge.md)
+- [merge](./osdictionary/merge.md)
   Adds all members of a dictionary to this dictionary.
-- [free](osdictionary/free.md)
-- [flushCollection](osdictionary/flushcollection.md)
+- [free](./osdictionary/free.md)
+- [flushCollection](./osdictionary/flushcollection.md)
   Removes and drops references to all members of dictionary.
 
 

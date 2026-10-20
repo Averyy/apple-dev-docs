@@ -1,18 +1,19 @@
 # imagp
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of imaginary parts of the complex numbers.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ An array of imaginary parts of the complex numbers.
 var imagp: UnsafeMutablePointer<Float>
 ```
 
+```c
+float * imagp;
+```
+
 ## See Also
 
-- [var realp: UnsafeMutablePointer<Float>](dspsplitcomplex/realp.md)
+### Inspecting a Split Complex Structure’s Data
+- [var realp: UnsafeMutablePointer<Float>](./realp.md)
   An array of real parts of the complex numbers.
 
 

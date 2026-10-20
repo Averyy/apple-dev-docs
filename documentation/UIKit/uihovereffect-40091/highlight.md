@@ -1,7 +1,8 @@
 # highlight
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An effect that applies a highlight to the view on hover.
 
@@ -17,11 +18,14 @@ An effect that applies a highlight to the view on hover.
 static var highlight: UIHoverHighlightEffect { get }
 ```
 
+Available when `Self` is `UIHoverHighlightEffect`.
+
 ## See Also
 
-- [static var automatic: UIHoverAutomaticEffect](uihovereffect-40091/automatic.md)
+### Choosing a hover effect
+- [static var automatic: UIHoverAutomaticEffect](./automatic.md)
   A system-default hover effect that automatically selects the appropriate effect based on the view to which it applies.
-- [static var lift: UIHoverLiftEffect](uihovereffect-40091/lift.md)
+- [static var lift: UIHoverLiftEffect](./lift.md)
   An effect that can visually lift the view on hover where appropriate.
 
 

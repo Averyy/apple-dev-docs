@@ -1,7 +1,8 @@
 # SubscriptionSubmission.Relationships.Subscription.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a subscription submission.
 
@@ -10,14 +11,14 @@ The request body you use to update a subscription submission.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionSubmission.Relationships.Subscription.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptions`
 
 
 ---

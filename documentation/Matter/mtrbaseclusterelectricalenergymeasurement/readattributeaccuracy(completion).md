@@ -1,7 +1,8 @@
 # readAttributeAccuracy(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeAccuracy(completion: @escaping @Sendable (MTRElectricalEnergyMeasurementClusterMeasurementAccuracyStruct?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeAccuracy() async throws -> MTRElectricalEnergyMeasurementClusterMeasurementAccuracyStruct
+```
+
+```objc
+- (void) readAttributeAccuracyWithCompletion:(void (^)(MTRElectricalEnergyMeasurementClusterMeasurementAccuracyStruct *value, NSError *error)) completion;
 ```
 
 

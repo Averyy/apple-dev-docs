@@ -1,12 +1,15 @@
 # gState()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the identifier for the view’s graphics state object, or 0 if the view doesn’t have a graphics state object.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.10
+
+> **Deprecated**: Manage graphics state using an [`NSGraphicsContext`](../nsgraphicscontext.md) object.
 
 ## Declaration
 
@@ -14,37 +17,42 @@ Returns the identifier for the view’s graphics state object, or 0 if the view 
 func gState() -> Int
 ```
 
+```objc
+- (NSInteger) gState;
+```
+
 #### Discussion
 
-A view object’s graphics state object is recreated from scratch whenever the view is focused, unless the [`allocateGState()`](nsview/allocategstate().md) method has been invoked. So if the view hasn’t been focused or hasn’t received the [`allocateGState()`](nsview/allocategstate().md) message, this method returns 0.
+A view object’s graphics state object is recreated from scratch whenever the view is focused, unless the [`allocateGState()`](./allocategstate%28%29.md) method has been invoked. So if the view hasn’t been focused or hasn’t received the [`allocateGState()`](./allocategstate%28%29.md) message, this method returns 0.
 
-Although applications rarely need to use the value returned by [`gState()`](nsview/gstate().md), it can be passed to the few methods that take an object identifier as a parameter.
+Although applications rarely need to use the value returned by [`gState()`](./gstate%28%29.md), it can be passed to the few methods that take an object identifier as a parameter.
 
 ## See Also
 
-- [func lockFocus()](nsview/lockfocus.md)
+### Deprecated methods
+- [func lockFocus()](./lockfocus%28%29.md)
   Locks the focus on the view, so subsequent commands take effect in the view’s window and coordinate system.
-- [func lockFocusIfCanDraw() -> Bool](nsview/lockfocusifcandraw.md)
+- [func lockFocusIfCanDraw() -> Bool](./lockfocusifcandraw%28%29.md)
   Locks the focus to the view atomically if the `canDraw` method returns `true` and returns the value of `canDraw`.
-- [func lockFocusIfCanDraw(in: NSGraphicsContext) -> Bool](nsview/lockfocusifcandraw(in:).md)
+- [func lockFocusIfCanDraw(in: NSGraphicsContext) -> Bool](./lockfocusifcandraw%28in%29.md)
   Locks the focus to the view atomically if drawing can occur in the specified graphics context.
-- [func unlockFocus()](nsview/unlockfocus.md)
+- [func unlockFocus()](./unlockfocus%28%29.md)
   Unlocks focus from the current view.
-- [func scroll(NSRect, by: NSSize)](nsview/scroll(_:by:).md)
+- [func scroll(NSRect, by: NSSize)](./scroll%28_,by%29.md)
   Copies the visible portion of the view’s rendered image within a region and lays that portion down again at a specified offset .
-- [func shouldDrawColor() -> Bool](nsview/shoulddrawcolor.md)
+- [func shouldDrawColor() -> Bool](./shoulddrawcolor%28%29.md)
   Returns a Boolean value indicating whether the view is being drawn to an environment that supports color.
-- [func allocateGState()](nsview/allocategstate.md)
+- [func allocateGState()](./allocategstate%28%29.md)
   Causes the view to maintain a private graphics state object, which encapsulates all parameters of the graphics environment.
-- [func setUpGState()](nsview/setupgstate.md)
+- [func setUpGState()](./setupgstate%28%29.md)
   Overridden by subclasses to (re)initialize the view’s graphics state object.
-- [func renewGState()](nsview/renewgstate.md)
+- [func renewGState()](./renewgstate%28%29.md)
   Invalidates the view’s graphics state object, if it has one.
-- [func releaseGState()](nsview/releasegstate.md)
+- [func releaseGState()](./releasegstate%28%29.md)
   Frees the view’s graphics state object, if it has one.
-- [func dragFile(String, from: NSRect, slideBack: Bool, event: NSEvent) -> Bool](nsview/dragfile(_:from:slideback:event:).md)
+- [func dragFile(String, from: NSRect, slideBack: Bool, event: NSEvent) -> Bool](./dragfile%28_,from,slideback,event%29.md)
   Initiates a dragging operation from the view, allowing the user to drag a file icon to any application that has window or view objects that accept files.
-- [func dragPromisedFiles(ofTypes: [String], from: NSRect, source: Any, slideBack: Bool, event: NSEvent) -> Bool](nsview/dragpromisedfiles(oftypes:from:source:slideback:event:).md)
+- [func dragPromisedFiles(ofTypes: [String], from: NSRect, source: Any, slideBack: Bool, event: NSEvent) -> Bool](./dragpromisedfiles%28oftypes,from,source,slideback,event%29.md)
   Initiates a dragging operation from the view, allowing the user to drag one or more promised files (or directories) into any application that has window or view objects that accept promised file data.
 
 

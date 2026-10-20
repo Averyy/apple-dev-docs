@@ -1,23 +1,28 @@
 # getKeyframeTime(for:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the time for a keyframe in the sequence.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func getKeyframeTime(for index: Int) -> CGFloat
+```
+
+```objc
+- (CGFloat) getKeyframeTimeForIndex:(NSUInteger) index;
 ```
 
 #### Return Value
@@ -30,9 +35,10 @@ The time value for the keyframe.
 
 ## See Also
 
-- [func count() -> Int](skkeyframesequence/count.md)
+### Sequence Information
+- [func count() -> Int](./count%28%29.md)
   The number of keyframes in the sequence.
-- [func getKeyframeValue(for: Int) -> Any](skkeyframesequence/getkeyframevalue(for:).md)
+- [func getKeyframeValue(for: Int) -> Any](./getkeyframevalue%28for%29.md)
   Gets the value for a keyframe in the sequence.
 
 

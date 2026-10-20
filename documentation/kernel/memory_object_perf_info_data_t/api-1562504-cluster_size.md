@@ -1,14 +1,15 @@
 # cluster_size
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 memory_object_cluster_size_t cluster_size;
 ```
 

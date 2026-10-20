@@ -1,9 +1,10 @@
 # kColorSyncRenderingIntentAbsolute
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-A [`kColorSyncRenderingIntent`](kcolorsyncrenderingintent.md) value selecting the ICC-absolute colorimetric rendering intent.
+A [`kColorSyncRenderingIntent`](./kcolorsyncrenderingintent.md) value selecting the ICC-absolute colorimetric rendering intent.
 
 **Availability**:
 - iOS 16.0+
@@ -20,18 +21,23 @@ A [`kColorSyncRenderingIntent`](kcolorsyncrenderingintent.md) value selecting th
 var kColorSyncRenderingIntentAbsolute: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncRenderingIntentAbsolute;
+```
+
 ## See Also
 
-- [var kColorSyncRenderingIntent: Unmanaged<CFString>!](kcolorsyncrenderingintent.md)
+### Choosing rendering intents
+- [var kColorSyncRenderingIntent: Unmanaged<CFString>!](./kcolorsyncrenderingintent.md)
   A key for the rendering intent to use for the profile in a profile-sequence dictionary.
-- [var kColorSyncRenderingIntentPerceptual: Unmanaged<CFString>!](kcolorsyncrenderingintentperceptual.md)
-  A [`kColorSyncRenderingIntent`](kcolorsyncrenderingintent.md) value selecting the perceptual rendering intent.
-- [var kColorSyncRenderingIntentRelative: Unmanaged<CFString>!](kcolorsyncrenderingintentrelative.md)
-  A [`kColorSyncRenderingIntent`](kcolorsyncrenderingintent.md) value selecting the media-relative colorimetric rendering intent.
-- [var kColorSyncRenderingIntentSaturation: Unmanaged<CFString>!](kcolorsyncrenderingintentsaturation.md)
-  A [`kColorSyncRenderingIntent`](kcolorsyncrenderingintent.md) value selecting the saturation rendering intent.
-- [var kColorSyncRenderingIntentUseProfileHeader: Unmanaged<CFString>!](kcolorsyncrenderingintentuseprofileheader.md)
-  A [`kColorSyncRenderingIntent`](kcolorsyncrenderingintent.md) value selecting the rendering intent stored in the profile header.
+- [var kColorSyncRenderingIntentPerceptual: Unmanaged<CFString>!](./kcolorsyncrenderingintentperceptual.md)
+  A [`kColorSyncRenderingIntent`](./kcolorsyncrenderingintent.md) value selecting the perceptual rendering intent.
+- [var kColorSyncRenderingIntentRelative: Unmanaged<CFString>!](./kcolorsyncrenderingintentrelative.md)
+  A [`kColorSyncRenderingIntent`](./kcolorsyncrenderingintent.md) value selecting the media-relative colorimetric rendering intent.
+- [var kColorSyncRenderingIntentSaturation: Unmanaged<CFString>!](./kcolorsyncrenderingintentsaturation.md)
+  A [`kColorSyncRenderingIntent`](./kcolorsyncrenderingintent.md) value selecting the saturation rendering intent.
+- [var kColorSyncRenderingIntentUseProfileHeader: Unmanaged<CFString>!](./kcolorsyncrenderingintentuseprofileheader.md)
+  A [`kColorSyncRenderingIntent`](./kcolorsyncrenderingintent.md) value selecting the rendering intent stored in the profile header.
 
 
 ---

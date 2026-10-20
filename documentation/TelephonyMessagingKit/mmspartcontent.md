@@ -1,7 +1,8 @@
 # MMSPartContent
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines custom headers within MMS content.
 
@@ -17,46 +18,47 @@ struct MMSPartContent
 ## Topics
 
 ### Creating a content part
-- [init(data: Data, contentType: UTType?, contentID: String, disposition: MMSPartContent.MMSDispositionType, fileName: String)](mmspartcontent/init(data:contenttype:contentid:disposition:filename:).md)
+- [init(data: Data, contentType: UTType?, contentID: String, disposition: MMSPartContent.MMSDispositionType, fileName: String)](./mmspartcontent/init%28data,contenttype,contentid,disposition,filename%29.md)
   Creates an MMS part with the provided values.
 ### Accessing part properties
-- [var data: Data](mmspartcontent/data.md)
+- [var data: Data](./mmspartcontent/data.md)
   The raw data used for the MMS content part.
-- [var disposition: MMSPartContent.MMSDispositionType](mmspartcontent/disposition.md)
+- [var disposition: MMSPartContent.MMSDispositionType](./mmspartcontent/disposition.md)
   The disposition of the MMS part, indicating whether the part renders inline or as an attachment.
-- [MMSPartContent.MMSDispositionType](mmspartcontent/mmsdispositiontype.md)
+- [MMSPartContent.MMSDispositionType](./mmspartcontent/mmsdispositiontype.md)
   A structure that defines the disposition of the content part when rendered.
-- [var filename: String](mmspartcontent/filename.md)
+- [var filename: String](./mmspartcontent/filename.md)
   The file name of the MMS part.
-- [var contentID: String](mmspartcontent/contentid.md)
+- [var contentID: String](./mmspartcontent/contentid.md)
   A unique identifier for the part.
-- [var contentType: UTType?](mmspartcontent/contenttype.md)
+- [var contentType: UTType?](./mmspartcontent/contenttype.md)
   The content type of the part, as a Uniform Type Identifier.
-- [struct UTType](../uniformtypeidentifiers/uttype-swift.struct.md)
+- [struct UTType](../UniformTypeIdentifiers/uttype-swift.struct.md)
   A structure that represents a type of data to load, send, or receive.
 ### Working with custom headers
-- [var customHeaders: [MMSPartContent.MMSCustomHeader]](mmspartcontent/customheaders.md)
+- [var customHeaders: [MMSPartContent.MMSCustomHeader]](./mmspartcontent/customheaders.md)
   A dictionary of custom headers to send in the MMS message.
-- [func addCustomHeader(MMSPartContent.MMSCustomHeader)](mmspartcontent/addcustomheader(_:).md)
+- [func addCustomHeader(MMSPartContent.MMSCustomHeader)](./mmspartcontent/addcustomheader%28_%29.md)
   A helper function to add custom headers.
-- [MMSPartContent.MMSCustomHeader](mmspartcontent/mmscustomheader.md)
+- [MMSPartContent.MMSCustomHeader](./mmspartcontent/mmscustomheader.md)
   A structure that defines a custom header as a key-value pair.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var parts: [MMSPartContent]](mmscontent/parts.md)
+### Accessing content properties
+- [var parts: [MMSPartContent]](./mmscontent/parts.md)
   The individual parts of the MMS message.
-- [var subject: String?](mmscontent/subject.md)
+- [var subject: String?](./mmscontent/subject.md)
   The subject of the MMS message.
-- [var headers: [String : String]](mmscontent/headers.md)
+- [var headers: [String : String]](./mmscontent/headers.md)
   Additional headers in a received MMS message, as a key-value dictionary of strings.
 
 

@@ -1,7 +1,8 @@
 # comboBoxSelectionDidChange(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate that the pop-up list selection has finished changing.
 
@@ -15,19 +16,25 @@ Informs the delegate that the pop-up list selection has finished changing.
 optional func comboBoxSelectionDidChange(_ notification: Notification)
 ```
 
+```objc
+- (void) comboBoxSelectionDidChange:(NSNotification *) notification;
+```
+
 ## Parameters
 
-- `notification`: A notification named  [`selectionDidChangeNotification`](nscombobox/selectiondidchangenotification.md).
+- `notification`: A notification named  [`selectionDidChangeNotification`](../nscombobox/selectiondidchangenotification.md).
 
 ## See Also
 
-- [func comboBoxSelectionIsChanging(Notification)](nscomboboxdelegate/comboboxselectionischanging(_:).md)
+### Related Documentation
+- [func comboBoxSelectionIsChanging(Notification)](./comboboxselectionischanging%28_%29.md)
   Informs the delegate that the pop-up list selection is changing.
-- [func comboBoxSelectionIsChanging(Notification)](nscomboboxdelegate/comboboxselectionischanging(_:).md)
+### Manipulating the selection
+- [func comboBoxSelectionIsChanging(Notification)](./comboboxselectionischanging%28_%29.md)
   Informs the delegate that the pop-up list selection is changing.
-- [func comboBoxWillDismiss(Notification)](nscomboboxdelegate/comboboxwilldismiss(_:).md)
+- [func comboBoxWillDismiss(Notification)](./comboboxwilldismiss%28_%29.md)
   Informs the delegate that the pop-up list is about to be dismissed.
-- [func comboBoxWillPopUp(Notification)](nscomboboxdelegate/comboboxwillpopup(_:).md)
+- [func comboBoxWillPopUp(Notification)](./comboboxwillpopup%28_%29.md)
   Informs the delegate that the pop-up list is about to be displayed.
 
 

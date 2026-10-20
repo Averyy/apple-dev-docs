@@ -1,7 +1,8 @@
 # errSecInvalidPasswordRef
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The password reference is invalid.
 
@@ -18,6 +19,10 @@ The password reference is invalid.
 
 ```swift
 var errSecInvalidPasswordRef: OSStatus { get }
+```
+
+```c
+errSecInvalidPasswordRef
 ```
 
 

@@ -1,7 +1,8 @@
 # UIAccessibility.AnnouncementDidFinishMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -20,16 +21,16 @@ struct AnnouncementDidFinishMessage
 ## Topics
 
 ### Initializers
-- [init(announcement: String, wasSuccessful: Bool)](uiaccessibility/announcementdidfinishmessage/init(announcement:wassuccessful:).md)
+- [init(announcement: String, wasSuccessful: Bool)](./announcementdidfinishmessage/init%28announcement,wassuccessful%29.md)
 ### Instance Properties
-- [var announcement: String](uiaccessibility/announcementdidfinishmessage/announcement.md)
-- [var wasSuccessful: Bool](uiaccessibility/announcementdidfinishmessage/wassuccessful.md)
+- [var announcement: String](./announcementdidfinishmessage/announcement.md)
+- [var wasSuccessful: Bool](./announcementdidfinishmessage/wassuccessful.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

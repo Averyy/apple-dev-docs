@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes the receiver using a given archiver.
@@ -19,6 +20,10 @@ Encodes the receiver using a given archiver.
 
 ```swift
 func encode(with coder: NSCoder)
+```
+
+```objc
+- (void) encodeWithCoder:(NSCoder *) coder;
 ```
 
 ## Parameters

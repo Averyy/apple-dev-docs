@@ -1,7 +1,8 @@
 # FoveatedStreamingProviderContext
 
 **Framework**: Foveated Streaming  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Context object provided to a streaming provider when it connects.
 
@@ -22,40 +23,41 @@ Provides access to session state, endpoint information, focus region data, and h
 ## Topics
 
 ### Instance Properties
-- [let endpoint: FoveatedStreamingProviderEndpoint](foveatedstreamingprovidercontext/endpoint.md)
+- [let endpoint: FoveatedStreamingProviderEndpoint](./foveatedstreamingprovidercontext/endpoint.md)
   The endpoint for which a connection is being requested (local IP or remote URL).
-- [var immersiveSpaceFromRemoteSpaceTransform: simd_float4x4](foveatedstreamingprovidercontext/immersivespacefromremotespacetransform.md)
+- [var immersiveSpaceFromRemoteSpaceTransform: simd_float4x4](./foveatedstreamingprovidercontext/immersivespacefromremotespacetransform.md)
   Transform matrix from the remote space to the immersive space.
-- [var latestFocusRegion: FoveatedStreamingProviderFocusRegion?](foveatedstreamingprovidercontext/latestfocusregion.md)
+- [var latestFocusRegion: FoveatedStreamingProviderFocusRegion?](./foveatedstreamingprovidercontext/latestfocusregion.md)
   The latest eye input data, to be used to enable foveated streaming.
-- [var requestedInputCapabilities: Set<FoveatedStreamingSession.InputCapability>](foveatedstreamingprovidercontext/requestedinputcapabilities.md)
+- [var requestedInputCapabilities: Set<FoveatedStreamingSession.InputCapability>](./foveatedstreamingprovidercontext/requestedinputcapabilities.md)
   The set of input capabilities the host app has requested for this session.
-- [var status: FoveatedStreamingProviderStatus](foveatedstreamingprovidercontext/status.md)
+- [var status: FoveatedStreamingProviderStatus](./foveatedstreamingprovidercontext/status.md)
   Reports the current status of the foveated streaming provider.
 ### Instance Methods
-- [func attributeToHostApp(IOSurface)](foveatedstreamingprovidercontext/attributetohostapp(_:)-50mip.md)
+- [func attributeToHostApp(IOSurface)](./foveatedstreamingprovidercontext/attributetohostapp%28_%29-50mip.md)
   Attributes an IOSurface’s memory to the host app instead of the extension.
-- [func attributeToHostApp(any MTLResource)](foveatedstreamingprovidercontext/attributetohostapp(_:)-88yg7.md)
+- [func attributeToHostApp(any MTLResource)](./foveatedstreamingprovidercontext/attributetohostapp%28_%29-88yg7.md)
   Attributes a Metal resource’s memory to the host app instead of the extension.
-- [func reportConnectionInterrupted(any Error)](foveatedstreamingprovidercontext/reportconnectioninterrupted(_:).md)
+- [func reportConnectionInterrupted(any Error)](./foveatedstreamingprovidercontext/reportconnectioninterrupted%28_%29.md)
   Reports that a previously-established connection was unexpectedly lost.
-- [func updateAvailableMessageChannels([FoveatedStreamingSession.MessageChannel.ID])](foveatedstreamingprovidercontext/updateavailablemessagechannels(_:).md)
+- [func updateAvailableMessageChannels([FoveatedStreamingSession.MessageChannel.ID])](./foveatedstreamingprovidercontext/updateavailablemessagechannels%28_%29.md)
   Notifies the host app that the list of available message channels has updated.
-- [func verifyRemoteServerTrust(for: URLAuthenticationChallenge) async -> Bool](foveatedstreamingprovidercontext/verifyremoteservertrust(for:).md)
+- [func verifyRemoteServerTrust(for: URLAuthenticationChallenge) async -> Bool](./foveatedstreamingprovidercontext/verifyremoteservertrust%28for%29.md)
   Verifies the server certificate presented in a TLS authentication challenge.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Observable](../observation/observable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Observable](../Observation/observable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum FoveatedStreamingProviderEndpoint](foveatedstreamingproviderendpoint.md)
+### Streaming provider extensions
+- [enum FoveatedStreamingProviderEndpoint](./foveatedstreamingproviderendpoint.md)
   The streaming endpoint provided to a `FoveatedStreamingProvider` extension.
 
 

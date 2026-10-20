@@ -1,7 +1,8 @@
 # nextUp
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The least representable value that compares greater than this value.
 
@@ -31,15 +32,16 @@ For any finite value `x`, `x.nextUp` is greater than `x`. For `nan` or `infinity
 
 ## See Also
 
-- [var ulp: Double](double/ulp.md)
+### Querying a Double
+- [var ulp: Double](./ulp.md)
   The unit in the last place of this value.
-- [var significand: Double](double/significand.md)
+- [var significand: Double](./significand.md)
   The significand of the floating-point value.
-- [var exponent: Int](double/exponent-swift.property.md)
+- [var exponent: Int](./exponent-swift.property.md)
   The exponent of the floating-point value.
-- [var nextDown: Self](double/nextdown.md)
+- [var nextDown: Self](./nextdown.md)
   The greatest representable value that compares less than this value.
-- [var binade: Double](double/binade.md)
+- [var binade: Double](./binade.md)
   The floating-point value with the same sign and exponent as this value, but with a significand of 1.0.
 
 

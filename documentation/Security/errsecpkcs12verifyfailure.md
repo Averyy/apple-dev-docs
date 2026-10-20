@@ -1,7 +1,8 @@
 # errSecPkcs12VerifyFailure
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 MAC verification failed during PKCS12 Import.
 
@@ -18,6 +19,10 @@ MAC verification failed during PKCS12 Import.
 
 ```swift
 var errSecPkcs12VerifyFailure: OSStatus { get }
+```
+
+```c
+errSecPkcs12VerifyFailure
 ```
 
 

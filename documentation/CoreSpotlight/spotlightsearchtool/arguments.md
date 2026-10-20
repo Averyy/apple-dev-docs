@@ -1,7 +1,8 @@
 # SpotlightSearchTool.Arguments
 
 **Framework**: Core Spotlight  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The overlay tool uses GeneratedContent as its Arguments type so the full native schema (FullArguments or RAGSearchArguments) passes through to NativeSpotlightSearchTool without re-encoding.
 

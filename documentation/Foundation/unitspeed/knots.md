@@ -1,7 +1,8 @@
 # knots
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The knots unit of speed.
 
@@ -21,13 +22,18 @@ The knots unit of speed.
 class var knots: UnitSpeed { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitSpeed * knots;
+```
+
 ## See Also
 
-- [class var metersPerSecond: UnitSpeed](unitspeed/meterspersecond.md)
+### Accessing Predefined Units
+- [class var metersPerSecond: UnitSpeed](./meterspersecond.md)
   The meter per second unit of speed.
-- [class var kilometersPerHour: UnitSpeed](unitspeed/kilometersperhour.md)
+- [class var kilometersPerHour: UnitSpeed](./kilometersperhour.md)
   The kilometers per hour unit of speed.
-- [class var milesPerHour: UnitSpeed](unitspeed/milesperhour.md)
+- [class var milesPerHour: UnitSpeed](./milesperhour.md)
   The miles per hour unit of speed.
 
 

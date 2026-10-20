@@ -1,7 +1,8 @@
 # typeApplSignature
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Application signature.
 

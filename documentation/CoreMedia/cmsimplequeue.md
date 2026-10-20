@@ -1,7 +1,8 @@
 # CMSimpleQueue
 
 **Framework**: Core Media  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reference to an instance that provides a simple lockless queue of elements.
 
@@ -20,42 +21,46 @@ A reference to an instance that provides a simple lockless queue of elements.
 class CMSimpleQueue
 ```
 
+```c
+typedef struct opaqueCMSimpleQueue * CMSimpleQueueRef;
+```
+
 ## Topics
 
 ### Managing Queues
-- [func enqueue(UnsafeRawPointer) throws](cmsimplequeue/enqueue(_:).md)
+- [func enqueue(UnsafeRawPointer) throws](./cmsimplequeue/enqueue%28_%29.md)
   Enqueues an element in the queue.
-- [func dequeue() -> UnsafeRawPointer?](cmsimplequeue/dequeue.md)
+- [func dequeue() -> UnsafeRawPointer?](./cmsimplequeue/dequeue%28%29.md)
   Dequeues an element from the queue.
-- [func reset() throws](cmsimplequeue/reset.md)
+- [func reset() throws](./cmsimplequeue/reset%28%29.md)
   Resets the queue.
 ### Inspecting Queues
-- [var head: UnsafeRawPointer?](cmsimplequeue/head.md)
+- [var head: UnsafeRawPointer?](./cmsimplequeue/head.md)
   The head element in the queue.
-- [var capacity: Int](cmsimplequeue/capacity.md)
+- [var capacity: Int](./cmsimplequeue/capacity.md)
   The number of elements that a queue can hold.
-- [var count: Int](cmsimplequeue/count.md)
+- [var count: Int](./cmsimplequeue/count.md)
   The number of elements currently in the queue.
-- [var fullness: Float](cmsimplequeue/fullness.md)
+- [var fullness: Float](./cmsimplequeue/fullness.md)
   The fullness of a queue as a percentage of its capacity.
 ### Accessing the Type Identifier
-- [static var typeID: CFTypeID](cmsimplequeue/typeid.md)
+- [static var typeID: CFTypeID](./cmsimplequeue/typeid.md)
   The type identifier of sample buffer objects.
 ### Errors
-- [CMSimpleQueue.Error](cmsimplequeue/error.md)
+- [CMSimpleQueue.Error](./cmsimplequeue/error.md)
   A structure that defines errors that queue operations can produce.
 ### Initializers
-- [init(referencing: CMSimpleQueue)](cmsimplequeue/init(referencing:).md)
+- [init(referencing: CMSimpleQueue)](./cmsimplequeue/init%28referencing%29.md)
 ### Type Aliases
-- [CMSimpleQueue.T](cmsimplequeue/t.md)
+- [CMSimpleQueue.T](./cmsimplequeue/t.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

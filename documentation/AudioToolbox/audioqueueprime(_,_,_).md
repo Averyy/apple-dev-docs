@@ -1,7 +1,8 @@
 # AudioQueuePrime(_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Decodes enqueued buffers in preparation for playback.
 
@@ -19,6 +20,10 @@ Decodes enqueued buffers in preparation for playback.
 func AudioQueuePrime(_ inAQ: AudioQueueRef, _ inNumberOfFramesToPrepare: UInt32, _ outNumberOfFramesPrepared: UnsafeMutablePointer<UInt32>?) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioQueuePrime(AudioQueueRef inAQ, UInt32 inNumberOfFramesToPrepare, UInt32 *outNumberOfFramesPrepared);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
@@ -27,11 +32,11 @@ A result code. See Result Codes.
 
 This function decodes enqueued buffers in preparation for playback. It returns when at least the number of audio sample frames specified in `inNumberOfFramesToPrepare` are decoded and ready to play, or (if you pass `0` for the `inNumberOfFramesToPrepare` parameter), when all enqueued buffers are decoded.
 
-To make a buffer of audio data ready to play, use [`AudioQueuePrime(_:_:_:)`](audioqueueprime(_:_:_:).md) as follows:
+To make a buffer of audio data ready to play, use [`AudioQueuePrime(_:_:_:)`](./audioqueueprime%28_,_,_%29.md) as follows:
 
-1. Call [`AudioQueueEnqueueBuffer(_:_:_:_:)`](audioqueueenqueuebuffer(_:_:_:_:).md).
-2. Call [`AudioQueuePrime(_:_:_:)`](audioqueueprime(_:_:_:).md).
-3. Call [`AudioQueueStart(_:_:)`](audioqueuestart(_:_:).md).
+1. Call [`AudioQueueEnqueueBuffer(_:_:_:_:)`](./audioqueueenqueuebuffer%28_,_,_,_%29.md).
+2. Call [`AudioQueuePrime(_:_:_:)`](./audioqueueprime%28_,_,_%29.md).
+3. Call [`AudioQueueStart(_:_:)`](./audioqueuestart%28_,_%29.md).
 
 ## Parameters
 
@@ -41,15 +46,16 @@ To make a buffer of audio data ready to play, use [`AudioQueuePrime(_:_:_:)`](au
 
 ## See Also
 
-- [func AudioQueueStart(AudioQueueRef, UnsafePointer<AudioTimeStamp>?) -> OSStatus](audioqueuestart(_:_:).md)
+### Controlling Audio Queues
+- [func AudioQueueStart(AudioQueueRef, UnsafePointer<AudioTimeStamp>?) -> OSStatus](./audioqueuestart%28_,_%29.md)
   Begins playing or recording audio.
-- [func AudioQueueFlush(AudioQueueRef) -> OSStatus](audioqueueflush(_:).md)
+- [func AudioQueueFlush(AudioQueueRef) -> OSStatus](./audioqueueflush%28_%29.md)
   Resets an audio queue’s decoder state.
-- [func AudioQueueStop(AudioQueueRef, Bool) -> OSStatus](audioqueuestop(_:_:).md)
+- [func AudioQueueStop(AudioQueueRef, Bool) -> OSStatus](./audioqueuestop%28_,_%29.md)
   Stops playing or recording audio.
-- [func AudioQueuePause(AudioQueueRef) -> OSStatus](audioqueuepause(_:).md)
+- [func AudioQueuePause(AudioQueueRef) -> OSStatus](./audioqueuepause%28_%29.md)
   Pauses audio playback or recording.
-- [func AudioQueueReset(AudioQueueRef) -> OSStatus](audioqueuereset(_:).md)
+- [func AudioQueueReset(AudioQueueRef) -> OSStatus](./audioqueuereset%28_%29.md)
   Resets an audio queue.
 
 

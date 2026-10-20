@@ -1,7 +1,8 @@
 # kIOUSBDeviceRequestTypeMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The type mask.
 
@@ -10,7 +11,7 @@ The type mask.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestTypeMask = IOUSBBitRange(5, 6)
 ```
 

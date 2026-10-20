@@ -1,14 +1,15 @@
 # BetaGroup.Relationships.BetaRecruitmentCriterionCompatibleBuildCheck
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.8+
 
 ## Declaration
 
-```swift
+```
 object BetaGroup.Relationships.BetaRecruitmentCriterionCompatibleBuildCheck
 ```
 

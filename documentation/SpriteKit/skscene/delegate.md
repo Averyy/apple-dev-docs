@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate to be called during the animation loop.
 
@@ -20,15 +21,20 @@ A delegate to be called during the animation loop.
 weak var delegate: (any SKSceneDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<SKSceneDelegate> delegate;
+```
+
 #### Discussion
 
 When a delegate is present, when any of the animation loop methods steps are executed, your delegate is called. Typically, you use a delegate when you do not want to implement a scene subclass or if you want to dynamically change the scene behavior at runtime.
 
 ## See Also
 
-- [Subclassing Scenes Versus Assigning a Delegate](subclassing-scenes-versus-assigning-a-delegate.md)
+### Configuring a Delegate
+- [Subclassing Scenes Versus Assigning a Delegate](../subclassing-scenes-versus-assigning-a-delegate.md)
   Use a scene delegate to share app logic across various scenes.
-- [protocol SKSceneDelegate](skscenedelegate.md)
+- [protocol SKSceneDelegate](../skscenedelegate.md)
   Methods that, when implemented, allow any class to participate in the SpriteKit render loop callbacks.
 
 

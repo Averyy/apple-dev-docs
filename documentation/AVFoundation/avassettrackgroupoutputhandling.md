@@ -1,7 +1,8 @@
 # AVAssetTrackGroupOutputHandling
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that specifies policies for how an export session processes alternate tracks in a track group.
 
@@ -19,30 +20,35 @@ A type that specifies policies for how an export session processes alternate tra
 struct AVAssetTrackGroupOutputHandling
 ```
 
+```c
+enum AVAssetTrackGroupOutputHandling : NSUInteger;
+```
+
 ## Topics
 
 ### Policies
-- [static var preserveAlternateTracks: AVAssetTrackGroupOutputHandling](avassettrackgroupoutputhandling/preservealternatetracks.md)
+- [static var preserveAlternateTracks: AVAssetTrackGroupOutputHandling](./avassettrackgroupoutputhandling/preservealternatetracks.md)
   A policy that passes through alternate audio tracks from the source asset during export.
 ### Initializers
-- [init(rawValue: UInt)](avassettrackgroupoutputhandling/init(rawvalue:).md)
+- [init(rawValue: UInt)](./avassettrackgroupoutputhandling/init%28rawvalue%29.md)
   Creates track group output handling structure with a raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var audioTrackGroupHandling: AVAssetTrackGroupOutputHandling](avassetexportsession/audiotrackgrouphandling.md)
+### Configuring track groups
+- [var audioTrackGroupHandling: AVAssetTrackGroupOutputHandling](./avassetexportsession/audiotrackgrouphandling.md)
   A policy that defines how the session exports alternate audio tracks.
 
 

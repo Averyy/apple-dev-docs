@@ -1,6 +1,8 @@
 # Creating a seamless multiview playback experience
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Sample Code  
+**Download**: [CreatingASeamlessMultiviewPlaybackExperience.zip](https://docs-assets.developer.apple.com/published/4bd19326ff2f/CreatingASeamlessMultiviewPlaybackExperience.zip)
 
 Build advanced multiview playback experiences with the AVFoundation and AVRouting frameworks.
 
@@ -13,9 +15,9 @@ Build advanced multiview playback experiences with the AVFoundation and AVRoutin
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC25 session 302: [`Create a seamless multiview playback experience`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/302).
+> **Note**: This sample code project is associated with WWDC25 session 302: [Create a seamless multiview playback experience](https://developer.apple.com/videos/play/wwdc2025/302).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To run this sample, you’ll need the following:
 
@@ -24,19 +26,20 @@ To run this sample, you’ll need the following:
 
 ## See Also
 
-- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
+### Playback control
+- [Observing playback state in SwiftUI](./observing-playback-state-in-swiftui.md)
   Keep your user interface in sync with state changes from playback objects.
-- [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
+- [Controlling the transport behavior of a player](./controlling-the-transport-behavior-of-a-player.md)
   Play, pause, and seek through a media presentation.
-- [class AVPlayer](avplayer.md)
+- [class AVPlayer](./avplayer.md)
   An object that provides the interface to control the player’s transport behavior.
-- [class AVPlayerItem](avplayeritem.md)
+- [class AVPlayerItem](./avplayeritem.md)
   An object that models the timing and presentation state of an asset during playback.
-- [class AVPlayerItemTrack](avplayeritemtrack.md)
+- [class AVPlayerItemTrack](./avplayeritemtrack.md)
   An object that represents the presentation state of an asset track during playback.
-- [class AVQueuePlayer](avqueueplayer.md)
+- [class AVQueuePlayer](./avqueueplayer.md)
   An object that plays a sequence of player items.
-- [class AVPlayerLooper](avplayerlooper.md)
+- [class AVPlayerLooper](./avplayerlooper.md)
   An object that loops media content using a queue player.
 
 

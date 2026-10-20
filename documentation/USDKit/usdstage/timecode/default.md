@@ -1,7 +1,8 @@
 # default
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The time code used to author and read values that do not vary over time.
 

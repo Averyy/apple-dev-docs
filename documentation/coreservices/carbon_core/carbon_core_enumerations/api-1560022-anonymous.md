@@ -5,12 +5,12 @@
 ## Topics
 
 ### Constants
-- [var nbpBuffOvr: Int](nbpbuffovr.md)
-- [var nbpConfDiff: Int](nbpconfdiff.md)
-- [var nbpDuplicate: Int](nbpduplicate.md)
-- [var nbpNISErr: Int](nbpniserr.md)
-- [var nbpNoConfirm: Int](nbpnoconfirm.md)
-- [var nbpNotFound: Int](nbpnotfound.md)
+- [var nbpBuffOvr: Int](../../nbpbuffovr.md)
+- [var nbpConfDiff: Int](../../nbpconfdiff.md)
+- [var nbpDuplicate: Int](../../nbpduplicate.md)
+- [var nbpNISErr: Int](../../nbpniserr.md)
+- [var nbpNoConfirm: Int](../../nbpnoconfirm.md)
+- [var nbpNotFound: Int](../../nbpnotfound.md)
 
 
 ---

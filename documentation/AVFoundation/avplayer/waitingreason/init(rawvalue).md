@@ -1,18 +1,19 @@
 # init(rawValue:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a waiting reason with a string value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ init(rawValue: String)
 
 ## Parameters
 
-- `rawValue`: A string value that corresponds to a defined [`AVPlayer.WaitingReason`](avplayer/waitingreason.md).
+- `rawValue`: A string value that corresponds to a defined [`AVPlayer.WaitingReason`](../waitingreason.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # GCMouse.DidConnectMessage
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message that posts after a mouse accessory connects to the device.
 
@@ -23,7 +24,7 @@ struct DidConnectMessage
 
 Use the `didConnect` identifier with `NotificationCenter` to listen for this message.
 
-```None
+```
 let observation = NotificationCenter.default.addObserver(of: GCMouse.self, for: .didConnect) { message in
    let mouse = message.mouse
 }
@@ -34,16 +35,16 @@ Connections of mouse accessories will be reflected in the `mice` array of the `G
 ## Topics
 
 ### Initializers
-- [init(mouse: GCMouse)](gcmouse/didconnectmessage/init(mouse:).md)
+- [init(mouse: GCMouse)](./didconnectmessage/init%28mouse%29.md)
 ### Instance Properties
-- [var mouse: GCMouse](gcmouse/didconnectmessage/mouse.md)
+- [var mouse: GCMouse](./didconnectmessage/mouse.md)
   The mouse object that connected to the device.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

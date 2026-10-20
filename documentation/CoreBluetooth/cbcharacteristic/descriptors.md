@@ -1,7 +1,8 @@
 # descriptors
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of the descriptors discovered in this characteristic.
 
@@ -20,21 +21,26 @@ A list of the descriptors discovered in this characteristic.
 var descriptors: [CBDescriptor]? { get }
 ```
 
+```objc
+@property (retain, readonly, nullable) NSArray<CBDescriptor *> * descriptors;
+```
+
 #### Discussion
 
-The value of this property is an array of [`CBDescriptor`](cbdescriptor.md) objects that represent a characteristic’s descriptors. Characteristic descriptors provide more information about a characteristic’s value. For example, they may describe the value in human-readable form and describe how to format the value for presentation purposes. For more information about characteristic descriptors, see [`CBDescriptor`](cbdescriptor.md).
+The value of this property is an array of [`CBDescriptor`](../cbdescriptor.md) objects that represent a characteristic’s descriptors. Characteristic descriptors provide more information about a characteristic’s value. For example, they may describe the value in human-readable form and describe how to format the value for presentation purposes. For more information about characteristic descriptors, see [`CBDescriptor`](../cbdescriptor.md).
 
 ## See Also
 
-- [var value: Data?](cbcharacteristic/value.md)
+### Accessing Characteristic Data
+- [var value: Data?](./value.md)
   The value of the characteristic.
-- [var properties: CBCharacteristicProperties](cbcharacteristic/properties.md)
+- [var properties: CBCharacteristicProperties](./properties.md)
   The properties of the characteristic.
-- [struct CBCharacteristicProperties](cbcharacteristicproperties.md)
+- [struct CBCharacteristicProperties](../cbcharacteristicproperties.md)
   Values that represent the possible properties of a characteristic.
-- [var isNotifying: Bool](cbcharacteristic/isnotifying.md)
+- [var isNotifying: Bool](./isnotifying.md)
   A Boolean value that indicates whether the characteristic is currently notifying a subscribed central of its value.
-- [var isBroadcasted: Bool](cbcharacteristic/isbroadcasted.md)
+- [var isBroadcasted: Bool](./isbroadcasted.md)
   A Boolean value that indicates whether the characteristic the service broadcasts this characteristic.
 
 

@@ -1,17 +1,22 @@
 # performClick(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Simulates a single mouse click on the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func performClick(_ sender: Any?)
+```
+
+```objc
+- (void) performClick:(id) sender;
 ```
 
 #### Discussion
@@ -26,13 +31,15 @@ The receiver of this message must be a cell of type `NSActionCell`. This method 
 
 ## See Also
 
-- [var controlView: NSView?](nscell/controlview.md)
+### Related Documentation
+- [var controlView: NSView?](./controlview.md)
   The view associated with the cell.
-- [var acceptsFirstResponder: Bool](nscell/acceptsfirstresponder.md)
+### Respond to Keyboard Events
+- [var acceptsFirstResponder: Bool](./acceptsfirstresponder.md)
   A Boolean value indicating whether the cell accepts first responder status.
-- [var showsFirstResponder: Bool](nscell/showsfirstresponder.md)
+- [var showsFirstResponder: Bool](./showsfirstresponder.md)
   A Boolean value indicating whether the cell provides a visual indication that it is the first responder.
-- [var refusesFirstResponder: Bool](nscell/refusesfirstresponder.md)
+- [var refusesFirstResponder: Bool](./refusesfirstresponder.md)
   A Boolean value indicating whether the cell refuses the first responder status.
 
 

@@ -1,17 +1,22 @@
 # remove(_:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an `ABPerson` or `ABGroup` record from the Address Book database.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func remove(_ record: ABRecord!) -> Bool
+```
+
+```objc
+- (BOOL) removeRecord:(ABRecord *) record;
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ func remove(_ record: ABRecord!) -> Bool
 
 #### Discussion
 
-If `record` is `nil`, this method raises an exception. Your changes are not committed until you call the [`save()`](abaddressbook-swift.class/save().md) method.
+If `record` is `nil`, this method raises an exception. Your changes are not committed until you call the [`save()`](./save%28%29.md) method.
 
 ## Parameters
 
@@ -28,11 +33,12 @@ If `record` is `nil`, this method raises an exception. Your changes are not comm
 
 ## See Also
 
-- [func add(ABRecord!, error: ()) throws](abaddressbook-swift.class/add(_:error:).md)
+### Adding and Removing Records
+- [func add(ABRecord!, error: ()) throws](./add%28_,error%29.md)
   Adds an `ABPerson` or `ABGroup` record to the Address Book database.
-- [func add(ABRecord!) -> Bool](abaddressbook-swift.class/add(_:).md)
+- [func add(ABRecord!) -> Bool](./add%28_%29.md)
   Adds an `ABPerson` or `ABGroup` record to the Address Book database.
-- [func remove(ABRecord!, error: ()) throws](abaddressbook-swift.class/remove(_:error:).md)
+- [func remove(ABRecord!, error: ()) throws](./remove%28_,error%29.md)
   Removes an `ABPerson` or `ABGroup` record from the Address Book database.
 
 

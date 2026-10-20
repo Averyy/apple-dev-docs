@@ -1,7 +1,8 @@
 # AnimalBodyPoseObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An observation that provides the animal body points the analysis recognizes.
 
@@ -22,31 +23,31 @@ struct AnimalBodyPoseObservation
 ## Topics
 
 ### Creating an observation
-- [init(VNAnimalBodyPoseObservation)](animalbodyposeobservation/init(_:).md)
+- [init(VNAnimalBodyPoseObservation)](./animalbodyposeobservation/init%28_%29.md)
   Creates an animal body pose observation.
 ### Inspecting an observation
-- [enum RequestDescriptor](requestdescriptor.md)
+- [enum RequestDescriptor](./requestdescriptor.md)
   A type that describes the request and revision combination.
 ### Getting the joints
-- [AnimalBodyPoseObservation.JointName](animalbodyposeobservation/jointname.md)
+- [AnimalBodyPoseObservation.JointName](./animalbodyposeobservation/jointname.md)
   The joint names for an animal body pose.
-- [AnimalBodyPoseObservation.JointsGroupName](animalbodyposeobservation/jointsgroupname.md)
+- [AnimalBodyPoseObservation.JointsGroupName](./animalbodyposeobservation/jointsgroupname.md)
   The joint group names for an animal body pose.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [PoseProviding](poseproviding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [PoseProviding](./poseproviding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

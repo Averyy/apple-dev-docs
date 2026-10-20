@@ -1,7 +1,8 @@
 # contextSize
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum context size in tokens supported by the model.
 

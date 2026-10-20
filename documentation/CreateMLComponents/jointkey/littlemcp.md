@@ -1,7 +1,8 @@
 # littleMCP
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key associated with ring finger’s metacarpophalangeal (MCP) joint in a hand pose.
 
@@ -21,11 +22,12 @@ static let littleMCP: JointKey
 
 ## See Also
 
-- [static let littleDIP: JointKey](jointkey/littledip.md)
+### Getting little finger properties
+- [static let littleDIP: JointKey](./littledip.md)
   A key associated with ring finger’s distal interphalangeal (DIP) joint in a hand pose.
-- [static let littlePIP: JointKey](jointkey/littlepip.md)
+- [static let littlePIP: JointKey](./littlepip.md)
   A key associated with ring finger’s proximal interphalangeal (PIP) joint in a hand pose.
-- [static let littleTip: JointKey](jointkey/littletip.md)
+- [static let littleTip: JointKey](./littletip.md)
   A key associated with ring finger tip joint in a hand pose.
 
 

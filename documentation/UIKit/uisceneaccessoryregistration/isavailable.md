@@ -1,7 +1,8 @@
 # isAvailable
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the associated scene accessory is available for display by the system or not.
 
@@ -16,9 +17,13 @@ Whether the associated scene accessory is available for display by the system or
 var isAvailable: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isAvailable) BOOL available;
+```
+
 ## Mentions
 
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+- [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 
 #### Discussion
 
@@ -26,7 +31,8 @@ This value is observable during the `updateProperties` and `layoutSubviews` life
 
 ## See Also
 
-- [var isEnabled: Bool](uisceneaccessoryregistration/isenabled.md)
+### Observing availability and controlling display
+- [var isEnabled: Bool](./isenabled.md)
   Whether the content defined by this scene accessory should be displayed or not.
 
 

@@ -1,7 +1,8 @@
 # MobileNationalIDCardRawDataRequest
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A mobile national ID card request which retrieves elements from the holder and returns the raw response data for processing.
 
@@ -19,71 +20,72 @@ struct MobileNationalIDCardRawDataRequest
 ## Topics
 
 ### Creating a raw data request
-- [init(region: Locale.Region, retainedElements: [MobileNationalIDCardRawDataRequest.Element], nonRetainedElements: [MobileNationalIDCardRawDataRequest.Element])](mobilenationalidcardrawdatarequest/init(region:retainedelements:nonretainedelements:).md)
+- [init(region: Locale.Region, retainedElements: [MobileNationalIDCardRawDataRequest.Element], nonRetainedElements: [MobileNationalIDCardRawDataRequest.Element])](./mobilenationalidcardrawdatarequest/init%28region,retainedelements,nonretainedelements%29.md)
   Creates a mobile national ID card raw data request.
 ### Determining the region availability
-- [static func isSupportedRegion(Locale.Region) -> Bool](mobilenationalidcardrawdatarequest/issupportedregion(_:).md)
+- [static func isSupportedRegion(Locale.Region) -> Bool](./mobilenationalidcardrawdatarequest/issupportedregion%28_%29.md)
   Returns a Boolean value that indicates whether you can make a request for the specified region.
 ### Configuring the request details
-- [var region: Locale.Region](mobilenationalidcardrawdatarequest/region.md)
+- [var region: Locale.Region](./mobilenationalidcardrawdatarequest/region.md)
   The region of the document you’re requesting.
-- [var retainedElements: [MobileNationalIDCardRawDataRequest.Element]](mobilenationalidcardrawdatarequest/retainedelements.md)
+- [var retainedElements: [MobileNationalIDCardRawDataRequest.Element]](./mobilenationalidcardrawdatarequest/retainedelements.md)
   The document elements you’re requesting and intend to retain for an indefinite period of time.
-- [var nonRetainedElements: [MobileNationalIDCardRawDataRequest.Element]](mobilenationalidcardrawdatarequest/nonretainedelements.md)
+- [var nonRetainedElements: [MobileNationalIDCardRawDataRequest.Element]](./mobilenationalidcardrawdatarequest/nonretainedelements.md)
   The document elements you’re requesting and intend to retain no longer than is necessary to process the result in realtime.
-- [MobileNationalIDCardRawDataRequest.Element](mobilenationalidcardrawdatarequest/element.md)
+- [MobileNationalIDCardRawDataRequest.Element](./mobilenationalidcardrawdatarequest/element.md)
   A type representing an element that you can request from a mobile national ID card.
 ### Handling the response
-- [MobileNationalIDCardRawDataRequest.Response](mobilenationalidcardrawdatarequest/response.md)
+- [MobileNationalIDCardRawDataRequest.Response](./mobilenationalidcardrawdatarequest/response.md)
   A type that contains the response information from a successful mobile national ID card raw data request.
 ### Initializers
-- [init(region: Locale.Region, retainedElements: [MobileNationalIDCardRawDataRequest.Element], nonRetainedElements: [MobileNationalIDCardRawDataRequest.Element], issuerIdentifiers: [Data])](mobilenationalidcardrawdatarequest/init(region:retainedelements:nonretainedelements:issueridentifiers:).md)
+- [init(region: Locale.Region, retainedElements: [MobileNationalIDCardRawDataRequest.Element], nonRetainedElements: [MobileNationalIDCardRawDataRequest.Element], issuerIdentifiers: [Data])](./mobilenationalidcardrawdatarequest/init%28region,retainedelements,nonretainedelements,issueridentifiers%29.md)
   Creates a mobile national ID card raw data request with issuer identifiers.
 ### Instance Properties
-- [var issuerIdentifiers: [Data]](mobilenationalidcardrawdatarequest/issueridentifiers.md)
+- [var issuerIdentifiers: [Data]](./mobilenationalidcardrawdatarequest/issueridentifiers.md)
   The subject key identifiers of the issuers trusted by the reader.
 ### Default Implementations
-- [MobileDocumentRequest Implementations](mobilenationalidcardrawdatarequest/mobiledocumentrequest-implementations.md)
+- [MobileDocumentRequest Implementations](./mobilenationalidcardrawdatarequest/mobiledocumentrequest-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [MobileDocumentRawDataRequest](mobiledocumentrawdatarequest.md)
-- [MobileDocumentRequest](mobiledocumentrequest.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [MobileDocumentRawDataRequest](./mobiledocumentrawdatarequest.md)
+- [MobileDocumentRequest](./mobiledocumentrequest.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MobileDriversLicenseDisplayRequest](mobiledriverslicensedisplayrequest.md)
+### Mobile document requests
+- [struct MobileDriversLicenseDisplayRequest](./mobiledriverslicensedisplayrequest.md)
   A mobile driver’s license request that retrieves elements from the holder and displays the results onscreen for visual inspection.
-- [struct MobileDriversLicenseDataRequest](mobiledriverslicensedatarequest.md)
+- [struct MobileDriversLicenseDataRequest](./mobiledriverslicensedatarequest.md)
   A mobile driver’s license request that retrieves elements from the holder and returns the validated document elements.
-- [struct MobileDriversLicenseRawDataRequest](mobiledriverslicenserawdatarequest.md)
+- [struct MobileDriversLicenseRawDataRequest](./mobiledriverslicenserawdatarequest.md)
   A mobile driver’s license request which retrieves elements from the holder and returns the raw response data for processing.
-- [struct MobileNationalIDCardDisplayRequest](mobilenationalidcarddisplayrequest.md)
+- [struct MobileNationalIDCardDisplayRequest](./mobilenationalidcarddisplayrequest.md)
   A mobile national ID card request that retrieves elements from the holder and displays the results onscreen for visual inspection.
-- [struct MobileNationalIDCardDataRequest](mobilenationalidcarddatarequest.md)
+- [struct MobileNationalIDCardDataRequest](./mobilenationalidcarddatarequest.md)
   A mobile national ID card request that retrieves elements from the holder and returns the validated document elements.
-- [struct MobileDocumentDisplayRequest](mobiledocumentdisplayrequest.md)
+- [struct MobileDocumentDisplayRequest](./mobiledocumentdisplayrequest.md)
   A mobile document request that retrieves elements from the holder and displays the results onscreen for visual inspection.
-- [protocol MobileDocumentRequest](mobiledocumentrequest.md)
+- [protocol MobileDocumentRequest](./mobiledocumentrequest.md)
   A type that represents a mobile document request.
-- [protocol MobileDocumentDataRequest](mobiledocumentdatarequest.md)
+- [protocol MobileDocumentDataRequest](./mobiledocumentdatarequest.md)
   A type that represents a mobile document data request.
-- [protocol MobileDocumentRawDataRequest](mobiledocumentrawdatarequest.md)
+- [protocol MobileDocumentRawDataRequest](./mobiledocumentrawdatarequest.md)
   A type that represents a mobile document raw data request.
-- [struct MobilePhotoIDDataRequest](mobilephotoiddatarequest.md)
+- [struct MobilePhotoIDDataRequest](./mobilephotoiddatarequest.md)
   A photo ID request that retrieves elements from the holder and returns the validated document elements.
-- [struct MobilePhotoIDRawDataRequest](mobilephotoidrawdatarequest.md)
+- [struct MobilePhotoIDRawDataRequest](./mobilephotoidrawdatarequest.md)
   A photo ID request which retrieves elements from the holder and returns the raw response data for processing.
-- [struct MobileDocumentAnyOfDataRequest](mobiledocumentanyofdatarequest.md)
+- [struct MobileDocumentAnyOfDataRequest](./mobiledocumentanyofdatarequest.md)
   A type that describes a data request for any mobile document from a group of requests.
-- [struct MobileDocumentAnyOfRawDataRequest](mobiledocumentanyofrawdatarequest.md)
+- [struct MobileDocumentAnyOfRawDataRequest](./mobiledocumentanyofrawdatarequest.md)
   A type that describes a raw data request for any mobile document from a group of requests.
 
 

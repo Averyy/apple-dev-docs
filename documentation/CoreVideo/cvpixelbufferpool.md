@@ -1,7 +1,8 @@
 # CVPixelBufferPool
 
 **Framework**: Core Video  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reference to a pixel buffer pool object.
 
@@ -20,19 +21,24 @@ A reference to a pixel buffer pool object.
 class CVPixelBufferPool
 ```
 
+```c
+typedef struct __CVPixelBufferPool * CVPixelBufferPoolRef;
+```
+
 #### Overview
 
-CVPixelBufferPool is a utility object for managing a recyclable set of [`CVPixelBuffer`](cvpixelbuffer.md) objects.
+CVPixelBufferPool is a utility object for managing a recyclable set of [`CVPixelBuffer`](./cvpixelbuffer.md) objects.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [struct CVPixelBufferPoolFlushFlags](cvpixelbufferpoolflushflags.md)
+### Data types
+- [struct CVPixelBufferPoolFlushFlags](./cvpixelbufferpoolflushflags.md)
   The flags to pass to flush the pool.
 
 

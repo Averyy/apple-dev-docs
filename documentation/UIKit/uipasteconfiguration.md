@@ -1,7 +1,8 @@
 # UIPasteConfiguration
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The interface that an object implements to declare its ability to accept specific data types for pasting and for drag-and-drop activities.
 
@@ -18,56 +19,61 @@ The interface that an object implements to declare its ability to accept specifi
 class UIPasteConfiguration
 ```
 
+```objc
+@interface UIPasteConfiguration : NSObject
+```
+
 ## Topics
 
 ### Initializing a paste configuration
-- [init()](uipasteconfiguration/init.md)
+- [init()](./uipasteconfiguration/init%28%29.md)
   Initializes a new paste configuration.
-- [convenience init(acceptableTypeIdentifiers: [String])](uipasteconfiguration/init(acceptabletypeidentifiers:).md)
+- [convenience init(acceptableTypeIdentifiers: [String])](./uipasteconfiguration/init%28acceptabletypeidentifiers%29.md)
   Initializes a new paste configuration with a specified array of acceptable UTIs.
-- [convenience init(forAccepting: any NSItemProviderReading.Type)](uipasteconfiguration/init(foraccepting:)-6is3h.md)
+- [convenience init(forAccepting: any NSItemProviderReading.Type)](./uipasteconfiguration/init%28foraccepting%29-6is3h.md)
   Initializes a new paste configuration with the UTIs declared as supported by a specified class.
-- [convenience init<T>(forAccepting: T.Type)](uipasteconfiguration/init(foraccepting:)-84r2r.md)
+- [convenience init<T>(forAccepting: T.Type)](./uipasteconfiguration/init%28foraccepting%29-84r2r.md)
 ### Getting acceptable type identifiers
-- [var acceptableTypeIdentifiers: [String]](uipasteconfiguration/acceptabletypeidentifiers.md)
+- [var acceptableTypeIdentifiers: [String]](./uipasteconfiguration/acceptabletypeidentifiers.md)
   An array of UTI strings that specify the types accepted by the paste configuration.
 ### Adding acceptable type identifiers
-- [func addAcceptableTypeIdentifiers([String])](uipasteconfiguration/addacceptabletypeidentifiers(_:).md)
+- [func addAcceptableTypeIdentifiers([String])](./uipasteconfiguration/addacceptabletypeidentifiers%28_%29.md)
   Adds an array of UTI strings to a paste configuration, increasing the variety of types the paste configuration accepts.
-- [func addTypeIdentifiers(forAccepting: any NSItemProviderReading.Type)](uipasteconfiguration/addtypeidentifiers(foraccepting:)-4fvd6.md)
+- [func addTypeIdentifiers(forAccepting: any NSItemProviderReading.Type)](./uipasteconfiguration/addtypeidentifiers%28foraccepting%29-4fvd6.md)
   Expands the array of accepted UTIs for a paste configuration, based on those declared as supported by a specified class.
-- [func addTypeIdentifiers<T>(forAccepting: T.Type)](uipasteconfiguration/addtypeidentifiers(foraccepting:)-8af7o.md)
+- [func addTypeIdentifiers<T>(forAccepting: T.Type)](./uipasteconfiguration/addtypeidentifiers%28foraccepting%29-8af7o.md)
 ### Initializers
-- [init?(coder: NSCoder)](uipasteconfiguration/init(coder:).md)
-- [convenience init(typeIdentifiersForAcceptingClass: any NSItemProviderReading.Type)](uipasteconfiguration/init(typeidentifiersforacceptingclass:).md)
+- [init?(coder: NSCoder)](./uipasteconfiguration/init%28coder%29.md)
+- [convenience init(typeIdentifiersForAcceptingClass: any NSItemProviderReading.Type)](./uipasteconfiguration/init%28typeidentifiersforacceptingclass%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIPasteControl](uipastecontrol.md)
+### Pasteboard
+- [class UIPasteControl](./uipastecontrol.md)
   A button that a person taps to place pasteboard contents in your app.
-- [UIPasteControl.Configuration](uipastecontrol/configuration-swift.class.md)
+- [UIPasteControl.Configuration](./uipastecontrol/configuration-swift.class.md)
   An object that determines a paste button’s color, corner style, icon, and text.
-- [UIPasteControl.DisplayMode](uipastecontrol/displaymode.md)
+- [UIPasteControl.DisplayMode](./uipastecontrol/displaymode.md)
   Options that determine whether a paste button composes an icon, textual label, or both.
-- [class UIPasteboard](uipasteboard.md)
+- [class UIPasteboard](./uipasteboard.md)
   An object that helps a user share data from one place to another within your app, and from your app to other apps.
-- [protocol UIPasteConfigurationSupporting](uipasteconfigurationsupporting.md)
+- [protocol UIPasteConfigurationSupporting](./uipasteconfigurationsupporting.md)
   The interface that determines whether a responder object supports paste configuration.
 
 

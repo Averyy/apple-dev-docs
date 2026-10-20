@@ -1,7 +1,8 @@
 # queryGeneration
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Query generation token after the save.
 

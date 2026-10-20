@@ -1,7 +1,8 @@
 # SecItemAttr.certificateType
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a `CSSM_CERT_TYPE` type.
 
@@ -13,6 +14,10 @@ Indicates a `CSSM_CERT_TYPE` type.
 
 ```swift
 case certificateType
+```
+
+```c
+kSecCertificateType
 ```
 
 

@@ -1,7 +1,8 @@
 # tracks
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tracks in the playlist.
 

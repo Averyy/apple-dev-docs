@@ -1,7 +1,8 @@
 # MLImageClassifier.CustomFeatureExtractor
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A custom feature extractor a training session uses to train an image classifier.
 
@@ -21,29 +22,30 @@ struct CustomFeatureExtractor
 ## Topics
 
 ### Creating a custom feature extractor
-- [init(modelPath: URL, outputName: String?)](mlimageclassifier/customfeatureextractor/init(modelpath:outputname:).md)
+- [init(modelPath: URL, outputName: String?)](./customfeatureextractor/init%28modelpath,outputname%29.md)
   Creates a custom feature extractor given a model file and an optional output layer name.
 ### Configuring a custom feature extractor
-- [var modelPath: URL](mlimageclassifier/customfeatureextractor/modelpath.md)
+- [var modelPath: URL](./customfeatureextractor/modelpath.md)
   The location of a neural network `.mlmodel` file that takes an image as an input.
-- [var outputName: String?](mlimageclassifier/customfeatureextractor/outputname.md)
+- [var outputName: String?](./customfeatureextractor/outputname.md)
   The name of the output from a feature extraction layer within the model.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLImageClassifier.DataSource](mlimageclassifier/datasource.md)
+### Supporting types
+- [MLImageClassifier.DataSource](./datasource.md)
   A data source for an image classifier.
-- [MLImageClassifier.ModelParameters](mlimageclassifier/modelparameters-swift.struct.md)
+- [MLImageClassifier.ModelParameters](./modelparameters-swift.struct.md)
   Parameters that affect the process of training an image classifier model.
-- [MLImageClassifier.FeatureExtractorType](mlimageclassifier/featureextractortype.md)
+- [MLImageClassifier.FeatureExtractorType](./featureextractortype.md)
   The underlying base model that extracts image features for image classifier training session.
-- [MLImageClassifier.ImageAugmentationOptions](mlimageclassifier/imageaugmentationoptions.md)
+- [MLImageClassifier.ImageAugmentationOptions](./imageaugmentationoptions.md)
   The variations that the training process can use to generate more training data from the training data you provide.
 
 

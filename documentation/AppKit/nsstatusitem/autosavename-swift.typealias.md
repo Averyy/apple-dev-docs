@@ -1,10 +1,11 @@
 # NSStatusItem.AutosaveName
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 typealias AutosaveName = String
 ```
 
+```c
+typedef NSString * NSStatusItemAutosaveName;
+```
+
 ## See Also
 
-- [var autosaveName: NSStatusItem.AutosaveName!](nsstatusitem/autosavename-swift.property.md)
+### Setting the autosave name
+- [var autosaveName: NSStatusItem.AutosaveName!](./autosavename-swift.property.md)
   A unique name for saving and restoring information about a status item.
 
 

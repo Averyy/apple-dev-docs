@@ -1,7 +1,8 @@
 # sequenceLength
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of embedding vectors the request generates.
 
@@ -20,11 +21,16 @@ The number of embedding vectors the request generates.
 var sequenceLength: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger sequenceLength;
+```
+
 ## See Also
 
-- [var language: NLLanguage](nlcontextualembeddingresult/language.md)
+### Inspecting the result
+- [var language: NLLanguage](./language.md)
   The language that the framework identified or used when processing the input string.
-- [var string: String](nlcontextualembeddingresult/string.md)
+- [var string: String](./string.md)
   A copy of the input string used to generate the embedding vectors.
 
 

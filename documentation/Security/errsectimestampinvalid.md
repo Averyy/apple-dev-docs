@@ -1,7 +1,8 @@
 # errSecTimestampInvalid
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The timestamp is not valid.
 
@@ -18,6 +19,10 @@ The timestamp is not valid.
 
 ```swift
 var errSecTimestampInvalid: OSStatus { get }
+```
+
+```c
+errSecTimestampInvalid
 ```
 
 

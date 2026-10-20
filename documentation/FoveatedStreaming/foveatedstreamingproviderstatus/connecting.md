@@ -1,9 +1,10 @@
 # FoveatedStreamingProviderStatus.connecting
 
 **Framework**: Foveated Streaming  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-[`connect(context:)`](foveatedstreamingextension/connect(context:).md) is in progress.
+[`connect(context:)`](../foveatedstreamingextension/connect%28context%29.md) is in progress.
 
 **Availability**:
 - visionOS 27.0+

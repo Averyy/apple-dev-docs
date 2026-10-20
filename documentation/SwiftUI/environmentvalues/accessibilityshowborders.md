@@ -1,7 +1,8 @@
 # accessibilityShowBorders
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the system preference for Show Borders is enabled.
 

@@ -1,7 +1,8 @@
 # PageIndexViewStyle.BackgroundDisplayMode
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The background style for the page index view.
 
@@ -22,24 +23,25 @@ struct BackgroundDisplayMode
 ## Topics
 
 ### Getting the display modes
-- [static let automatic: PageIndexViewStyle.BackgroundDisplayMode](pageindexviewstyle/backgrounddisplaymode/automatic.md)
+- [static let automatic: PageIndexViewStyle.BackgroundDisplayMode](./backgrounddisplaymode/automatic.md)
   Background will use the default for the platform.
-- [static let always: PageIndexViewStyle.BackgroundDisplayMode](pageindexviewstyle/backgrounddisplaymode/always.md)
+- [static let always: PageIndexViewStyle.BackgroundDisplayMode](./backgrounddisplaymode/always.md)
   Background is always displayed behind the page index view.
-- [static let interactive: PageIndexViewStyle.BackgroundDisplayMode](pageindexviewstyle/backgrounddisplaymode/interactive.md)
+- [static let interactive: PageIndexViewStyle.BackgroundDisplayMode](./backgrounddisplaymode/interactive.md)
   Background is only shown while the index view is interacted with.
-- [static let never: PageIndexViewStyle.BackgroundDisplayMode](pageindexviewstyle/backgrounddisplaymode/never.md)
+- [static let never: PageIndexViewStyle.BackgroundDisplayMode](./backgrounddisplaymode/never.md)
   Background is never displayed behind the page index view.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(backgroundDisplayMode: PageIndexViewStyle.BackgroundDisplayMode)](pageindexviewstyle/init(backgrounddisplaymode:).md)
+### Creating the control group style
+- [init(backgroundDisplayMode: PageIndexViewStyle.BackgroundDisplayMode)](./init%28backgrounddisplaymode%29.md)
   Creates a page index view style.
 
 

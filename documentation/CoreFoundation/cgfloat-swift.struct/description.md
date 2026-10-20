@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of `self`.
 
@@ -11,7 +12,7 @@ A textual representation of `self`.
 - Mac Catalyst 13.0+
 - macOS 10.0+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 1.0+
 
 ## Declaration

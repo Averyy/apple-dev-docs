@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kOSAsyncRefCount](1645644-anonymous/kosasyncrefcount.md)
-- [kOSAsyncRefSize](1645644-anonymous/kosasyncrefsize.md)
+- [kOSAsyncRefCount](./api-1645644-anonymous/kosasyncrefcount.md)
+- [kOSAsyncRefSize](./api-1645644-anonymous/kosasyncrefsize.md)
 
 
 ---

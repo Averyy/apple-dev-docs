@@ -1,7 +1,8 @@
 # motionEndTime
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures the motion end time for this geometry.
 
@@ -17,6 +18,10 @@ Configures the motion end time for this geometry.
 
 ```swift
 var motionEndTime: Float { get set }
+```
+
+```objc
+@property (nonatomic) float motionEndTime;
 ```
 
 #### Discussion

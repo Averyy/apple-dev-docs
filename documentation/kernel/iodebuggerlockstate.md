@@ -1,14 +1,15 @@
 # IODebuggerLockState
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum IODebuggerLockState : unsigned int {
     ...
 } IODebuggerLockState;
@@ -21,7 +22,7 @@ Defines flags returned by IOKernelDebugger::lock().
 ## Topics
 
 ### Constants
-- [kIODebuggerLockTaken](iodebuggerlockstate/kiodebuggerlocktaken.md)
+- [kIODebuggerLockTaken](./iodebuggerlockstate/kiodebuggerlocktaken.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AppIntentError
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error that indicates a problem occurred while performing an app intent.
 
@@ -11,7 +12,7 @@ An error that indicates a problem occurred while performing an app intent.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -26,50 +27,51 @@ When your app intent encounters an error during execution, throw an `AppIntentEr
 
 You can create an `AppIntentError` in several ways:
 
-- **Predefined errors**: Use values from [`AppIntentError.PermissionRequired`](appintenterror/permissionrequired.md), [`AppIntentError.UserActionRequired`](appintenterror/useractionrequired.md), or [`AppIntentError.Unrecoverable`](appintenterror/unrecoverable.md) for common failure scenarios that the system already knows how to handle.
-- **Wrapping a custom error**: If your error type conforms to [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/foundation/customlocalizedstringresourceconvertible), pass it to [`init(wrapping:)`](appintenterror/init(wrapping:)-2lmed.md) to provide a localized description.
-- **Description string**: Create an error with a localized description directly from a [`LocalizedStringResource`](https://developer.apple.com/documentation/foundation/localizedstringresource) and pass it to [`init(description:)`](appintenterror/init(description:).md).
+- **Predefined errors**: Use values from [`AppIntentError.PermissionRequired`](./appintenterror/permissionrequired.md), [`AppIntentError.UserActionRequired`](./appintenterror/useractionrequired.md), or [`AppIntentError.Unrecoverable`](./appintenterror/unrecoverable.md) for common failure scenarios that the system already knows how to handle.
+- **Wrapping a custom error**: If your error type conforms to [`CustomLocalizedStringResourceConvertible`](../Foundation/customlocalizedstringresourceconvertible.md), pass it to [`init(wrapping:)`](./appintenterror/init%28wrapping%29-2lmed.md) to provide a localized description.
+- **Description string**: Create an error with a localized description directly from a [`LocalizedStringResource`](../Foundation/localizedstringresource.md) and pass it to [`init(description:)`](./appintenterror/init%28description%29.md).
 
-The recommended approach for most apps is to define an error enumeration that conforms to [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/foundation/customlocalizedstringresourceconvertible) and throw it from your intent’s [`perform()`](appintent/perform().md) method. The framework automatically wraps conforming errors into an `AppIntentError` with the localized description you provide.
+The recommended approach for most apps is to define an error enumeration that conforms to [`CustomLocalizedStringResourceConvertible`](../Foundation/customlocalizedstringresourceconvertible.md) and throw it from your intent’s [`perform()`](./appintent/perform%28%29.md) method. The framework automatically wraps conforming errors into an `AppIntentError` with the localized description you provide.
 
 ## Topics
 
 ### Getting the error codes
-- [static var restartPerform: AppIntentError](appintenterror/restartperform.md)
+- [static var restartPerform: AppIntentError](./appintenterror/restartperform.md)
 ### Initializers
-- [init(description: LocalizedStringResource)](appintenterror/init(description:).md)
+- [init(description: LocalizedStringResource)](./appintenterror/init%28description%29.md)
   Creates an error with a localized description.
-- [init(predefinedError: AppIntentError, description: LocalizedStringResource)](appintenterror/init(predefinederror:description:).md)
+- [init(predefinedError: AppIntentError, description: LocalizedStringResource)](./appintenterror/init%28predefinederror,description%29.md)
   Creates an error from a predefined error with a custom localized description.
-- [init(wrapping: some CustomAppIntentErrorConvertible)](appintenterror/init(wrapping:)-2lmed.md)
+- [init(wrapping: some CustomAppIntentErrorConvertible)](./appintenterror/init%28wrapping%29-2lmed.md)
   Creates an error from a custom app intent convertible value.
-- [init(wrapping: some CustomLocalizedStringResourceConvertible & Error)](appintenterror/init(wrapping:)-4967l.md)
+- [init(wrapping: some CustomLocalizedStringResourceConvertible & Error)](./appintenterror/init%28wrapping%29-4967l.md)
   Creates an error by wrapping an existing localized error.
 ### Enumerations
-- [AppIntentError.PermissionRequired](appintenterror/permissionrequired.md)
+- [AppIntentError.PermissionRequired](./appintenterror/permissionrequired.md)
   Errors that indicate the app doesn’t have the required permission to perform an action.
-- [AppIntentError.Unrecoverable](appintenterror/unrecoverable.md)
+- [AppIntentError.Unrecoverable](./appintenterror/unrecoverable.md)
   Unknown or unrecoverable errors that might have occurred due to either a system or user error.
-- [AppIntentError.UserActionRequired](appintenterror/useractionrequired.md)
+- [AppIntentError.UserActionRequired](./appintenterror/useractionrequired.md)
   Errors that represent a state where a person needs to respond to successfully complete the action.
 ### Default Implementations
-- [CustomLocalizedStringResourceConvertible Implementations](appintenterror/customlocalizedstringresourceconvertible-implementations.md)
+- [CustomLocalizedStringResourceConvertible Implementations](./appintenterror/customlocalizedstringresourceconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomLocalizedStringResourceConvertible](../Foundation/customlocalizedstringresourceconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol CustomAppIntentErrorConvertible](customappintenterrorconvertible.md)
+### Errors
+- [protocol CustomAppIntentErrorConvertible](./customappintenterrorconvertible.md)
   A type that the system automatically converts to an app intent error.
 
 

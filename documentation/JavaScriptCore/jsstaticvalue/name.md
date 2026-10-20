@@ -1,7 +1,8 @@
 # name
 
 **Framework**: JavaScriptCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A null-terminated UTF-8 string that contains the property’s name.
 
@@ -19,13 +20,18 @@ A null-terminated UTF-8 string that contains the property’s name.
 var name: UnsafePointer<CChar>!
 ```
 
+```c
+const char * name;
+```
+
 ## See Also
 
-- [var getProperty: JSObjectGetPropertyCallback!](jsstaticvalue/getproperty.md)
+### Accessing Static Value Information
+- [var getProperty: JSObjectGetPropertyCallback!](./getproperty.md)
   A callback to invoke when getting the property’s value.
-- [var setProperty: JSObjectSetPropertyCallback!](jsstaticvalue/setproperty.md)
+- [var setProperty: JSObjectSetPropertyCallback!](./setproperty.md)
   A callback to invoke when setting the property’s value.
-- [var attributes: JSPropertyAttributes](jsstaticvalue/attributes.md)
+- [var attributes: JSPropertyAttributes](./attributes.md)
   A set of property attributes to give to the property.
 
 

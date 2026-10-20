@@ -1,7 +1,8 @@
 # SRTextInputSession.SessionType.keyboard
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the session contains text from keyboard input.
 
@@ -16,13 +17,18 @@ Indicates that the session contains text from keyboard input.
 case keyboard
 ```
 
+```c
+SRTextInputSessionTypeKeyboard
+```
+
 ## See Also
 
-- [SRTextInputSession.SessionType.dictation](srtextinputsession/sessiontype-swift.enum/dictation.md)
+### Sources
+- [SRTextInputSession.SessionType.dictation](./dictation.md)
   Indicates that the session contains spoken text.
-- [SRTextInputSession.SessionType.pencil](srtextinputsession/sessiontype-swift.enum/pencil.md)
+- [SRTextInputSession.SessionType.pencil](./pencil.md)
   Indicates that the session contains text drawn with Apple Pencil.
-- [SRTextInputSession.SessionType.thirdPartyKeyboard](srtextinputsession/sessiontype-swift.enum/thirdpartykeyboard.md)
+- [SRTextInputSession.SessionType.thirdPartyKeyboard](./thirdpartykeyboard.md)
   Indicates that the session contains text from a third-party keyboard.
 
 

@@ -1,16 +1,17 @@
 # left
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The touch or touches swipe to the left.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@ The touch or touches swipe to the left.
 static var left: UISwipeGestureRecognizer.Direction { get }
 ```
 
+```c
+UISwipeGestureRecognizerDirectionLeft
+```
+
 ## See Also
 
-- [static var right: UISwipeGestureRecognizer.Direction](uiswipegesturerecognizer/direction-swift.struct/right.md)
+### Constants
+- [static var right: UISwipeGestureRecognizer.Direction](./right.md)
   The touch or touches swipe to the right.
-- [static var up: UISwipeGestureRecognizer.Direction](uiswipegesturerecognizer/direction-swift.struct/up.md)
+- [static var up: UISwipeGestureRecognizer.Direction](./up.md)
   The touch or touches swipe upward.
-- [static var down: UISwipeGestureRecognizer.Direction](uiswipegesturerecognizer/direction-swift.struct/down.md)
+- [static var down: UISwipeGestureRecognizer.Direction](./down.md)
   The touch or touches swipe downward.
 
 

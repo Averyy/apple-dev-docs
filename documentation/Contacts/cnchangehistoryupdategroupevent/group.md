@@ -1,7 +1,8 @@
 # group
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The group that the user updated.
 
@@ -17,6 +18,10 @@ The group that the user updated.
 
 ```swift
 var group: CNGroup { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) CNGroup * group;
 ```
 
 

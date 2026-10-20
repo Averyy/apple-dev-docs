@@ -1,7 +1,8 @@
 # ChartScrollTargetBehavior
 
 **Framework**: Swift Charts  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that configures the scroll behavior of charts.
 
@@ -23,40 +24,41 @@ protocol ChartScrollTargetBehavior : ScrollTargetBehavior
 ## Topics
 
 ### Supporting types
-- [struct MajorValueAlignment](majorvaluealignment.md)
+- [struct MajorValueAlignment](./majorvaluealignment.md)
   A type that defines how the valigned aligned chart scroll target behavior aligns to major values on swipe.
-- [struct ValueAlignedLimitBehavior](valuealignedlimitbehavior.md)
+- [struct ValueAlignedLimitBehavior](./valuealignedlimitbehavior.md)
   A type that defines the amount of marks that can be scrolled at a time.
-- [struct ValueAlignedChartScrollTargetBehavior](valuealignedchartscrolltargetbehavior.md)
+- [struct ValueAlignedChartScrollTargetBehavior](./valuealignedchartscrolltargetbehavior.md)
   A scroll target behavior that aligns to values spaced at regular intervals along the scrollable axes.
 ### Instance Methods
-- [func updateTarget(inout ScrollTarget, context: ChartScrollTargetBehaviorContext)](chartscrolltargetbehavior/updatetarget(_:context:).md)
+- [func updateTarget(inout ScrollTarget, context: ChartScrollTargetBehaviorContext)](./chartscrolltargetbehavior/updatetarget%28_,context%29.md)
 ### Type Methods
-- [static func valueAligned(matching: DateComponents, majorAlignment: MajorValueAlignment<Date>?, limitBehavior: ValueAlignedLimitBehavior) -> ValueAlignedChartScrollTargetBehavior](chartscrolltargetbehavior/valuealigned(matching:majoralignment:limitbehavior:).md)
+- [static func valueAligned(matching: DateComponents, majorAlignment: MajorValueAlignment<Date>?, limitBehavior: ValueAlignedLimitBehavior) -> ValueAlignedChartScrollTargetBehavior](./chartscrolltargetbehavior/valuealigned%28matching,majoralignment,limitbehavior%29.md)
   Creates a scroll target behavior that aligns to values spaced at regular intervals along the scrollable axes.
-- [static func valueAligned<P>(unit: P, majorAlignment: MajorValueAlignment<P>?, limitBehavior: ValueAlignedLimitBehavior) -> ValueAlignedChartScrollTargetBehavior](chartscrolltargetbehavior/valuealigned(unit:majoralignment:limitbehavior:).md)
+- [static func valueAligned<P>(unit: P, majorAlignment: MajorValueAlignment<P>?, limitBehavior: ValueAlignedLimitBehavior) -> ValueAlignedChartScrollTargetBehavior](./chartscrolltargetbehavior/valuealigned%28unit,majoralignment,limitbehavior%29.md)
   Creates a scroll target behavior that aligns to values spaced at regular intervals along the scrollable axes.
-- [static func valueAligned(xMatching: DateComponents, yMatching: DateComponents, xMajorAlignment: MajorValueAlignment<Date>?, yMajorAlignment: MajorValueAlignment<Date>?, limitBehavior: ValueAlignedLimitBehavior) -> ValueAlignedChartScrollTargetBehavior](chartscrolltargetbehavior/valuealigned(xmatching:ymatching:xmajoralignment:ymajoralignment:limitbehavior:).md)
+- [static func valueAligned(xMatching: DateComponents, yMatching: DateComponents, xMajorAlignment: MajorValueAlignment<Date>?, yMajorAlignment: MajorValueAlignment<Date>?, limitBehavior: ValueAlignedLimitBehavior) -> ValueAlignedChartScrollTargetBehavior](./chartscrolltargetbehavior/valuealigned%28xmatching,ymatching,xmajoralignment,ymajoralignment,limitbehavior%29.md)
   Creates a scroll target behavior that aligns to values spaced at regular intervals along the scrollable axes.
-- [static func valueAligned<Y>(xMatching: DateComponents, yUnit: Y, xMajorAlignment: MajorValueAlignment<Date>?, yMajorAlignment: MajorValueAlignment<Y>?, limitBehavior: ValueAlignedLimitBehavior) -> ValueAlignedChartScrollTargetBehavior](chartscrolltargetbehavior/valuealigned(xmatching:yunit:xmajoralignment:ymajoralignment:limitbehavior:).md)
+- [static func valueAligned<Y>(xMatching: DateComponents, yUnit: Y, xMajorAlignment: MajorValueAlignment<Date>?, yMajorAlignment: MajorValueAlignment<Y>?, limitBehavior: ValueAlignedLimitBehavior) -> ValueAlignedChartScrollTargetBehavior](./chartscrolltargetbehavior/valuealigned%28xmatching,yunit,xmajoralignment,ymajoralignment,limitbehavior%29.md)
   Creates a scroll target behavior that aligns to values spaced at regular intervals along the scrollable axes.
-- [static func valueAligned<X>(xUnit: X, yMatching: DateComponents, xMajorAlignment: MajorValueAlignment<X>?, yMajorAlignment: MajorValueAlignment<Date>?, limitBehavior: ValueAlignedLimitBehavior) -> ValueAlignedChartScrollTargetBehavior](chartscrolltargetbehavior/valuealigned(xunit:ymatching:xmajoralignment:ymajoralignment:limitbehavior:).md)
+- [static func valueAligned<X>(xUnit: X, yMatching: DateComponents, xMajorAlignment: MajorValueAlignment<X>?, yMajorAlignment: MajorValueAlignment<Date>?, limitBehavior: ValueAlignedLimitBehavior) -> ValueAlignedChartScrollTargetBehavior](./chartscrolltargetbehavior/valuealigned%28xunit,ymatching,xmajoralignment,ymajoralignment,limitbehavior%29.md)
   Creates a scroll target behavior that aligns to values spaced at regular intervals along the scrollable axes.
-- [static func valueAligned<X, Y>(xUnit: X, yUnit: Y, xMajorAlignment: MajorValueAlignment<X>?, yMajorAlignment: MajorValueAlignment<Y>?, limitBehavior: ValueAlignedLimitBehavior) -> ValueAlignedChartScrollTargetBehavior](chartscrolltargetbehavior/valuealigned(xunit:yunit:xmajoralignment:ymajoralignment:limitbehavior:).md)
+- [static func valueAligned<X, Y>(xUnit: X, yUnit: Y, xMajorAlignment: MajorValueAlignment<X>?, yMajorAlignment: MajorValueAlignment<Y>?, limitBehavior: ValueAlignedLimitBehavior) -> ValueAlignedChartScrollTargetBehavior](./chartscrolltargetbehavior/valuealigned%28xunit,yunit,xmajoralignment,ymajoralignment,limitbehavior%29.md)
   Creates a scroll target behavior that aligns to values spaced at regular intervals along the scrollable axes.
 ### Default Implementations
-- [ScrollTargetBehavior Implementations](chartscrolltargetbehavior/scrolltargetbehavior-implementations.md)
+- [ScrollTargetBehavior Implementations](./chartscrolltargetbehavior/scrolltargetbehavior-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [ScrollTargetBehavior](../swiftui/scrolltargetbehavior.md)
+- [ScrollTargetBehavior](../SwiftUI/scrolltargetbehavior.md)
 ### Conforming Types
-- [ValueAlignedChartScrollTargetBehavior](valuealignedchartscrolltargetbehavior.md)
+- [ValueAlignedChartScrollTargetBehavior](./valuealignedchartscrolltargetbehavior.md)
 
 ## See Also
 
-- [struct ChartScrollTargetBehaviorContext](chartscrolltargetbehaviorcontext.md)
+### Scrolling
+- [struct ChartScrollTargetBehaviorContext](./chartscrolltargetbehaviorcontext.md)
   Contextual information that you can use to determine how to best adjust how charts scroll.
 
 

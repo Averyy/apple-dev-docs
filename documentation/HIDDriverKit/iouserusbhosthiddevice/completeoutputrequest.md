@@ -1,15 +1,16 @@
 # CompleteOutputRequest
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 20.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void CompleteOutputRequest(OSAction *action, IOReturn status, uint32_t bytesTransferred);
 ```
 

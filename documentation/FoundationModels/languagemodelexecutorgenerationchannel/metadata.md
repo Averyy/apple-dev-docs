@@ -1,7 +1,8 @@
 # LanguageModelExecutorGenerationChannel.Metadata
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Snapshot of an entry’s metadata dictionary.
 
@@ -26,30 +27,31 @@ Each event replaces the prior metadata wholesale; keys absent from `values` are 
 ## Topics
 
 ### Handling the metadata values
-- [var values: [String : GeneratedContent]](languagemodelexecutorgenerationchannel/metadata/values.md)
+- [var values: [String : GeneratedContent]](./metadata/values.md)
   The metadata key-value pairs for the entry.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [LanguageModelExecutorGenerationChannel.Reasoning](languagemodelexecutorgenerationchannel/reasoning.md)
+### Accessing the event types
+- [LanguageModelExecutorGenerationChannel.Reasoning](./reasoning.md)
   A reasoning event.
-- [LanguageModelExecutorGenerationChannel.ReasoningSignature](languagemodelexecutorgenerationchannel/reasoningsignature.md)
+- [LanguageModelExecutorGenerationChannel.ReasoningSignature](./reasoningsignature.md)
   Payload for a reasoning entry’s signature update.
-- [LanguageModelExecutorGenerationChannel.TextFragment](languagemodelexecutorgenerationchannel/textfragment.md)
+- [LanguageModelExecutorGenerationChannel.TextFragment](./textfragment.md)
   Text appended to a streaming entry’s current text segment.
-- [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](languagemodelexecutorgenerationchannel/textsegmentreplacement.md)
+- [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](./textsegmentreplacement.md)
   A replacement for a streaming entry’s current text segment.
-- [LanguageModelExecutorGenerationChannel.Response](languagemodelexecutorgenerationchannel/response.md)
+- [LanguageModelExecutorGenerationChannel.Response](./response.md)
   A model-generated response event: text, segment replacements, citations, advisories, custom segments, metadata, or usage.
-- [LanguageModelExecutorGenerationChannel.ToolCalls](languagemodelexecutorgenerationchannel/toolcalls.md)
+- [LanguageModelExecutorGenerationChannel.ToolCalls](./toolcalls.md)
   A tool-call lifecycle event, including per-call argument streaming, reasoning, metadata, usage, or retraction.
-- [LanguageModelExecutorGenerationChannel.Usage](languagemodelexecutorgenerationchannel/usage.md)
+- [LanguageModelExecutorGenerationChannel.Usage](./usage.md)
   Snapshot of an entry’s token totals.
 
 

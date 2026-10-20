@@ -1,7 +1,8 @@
 # activatePreferredSliceForCategory(_:)
 
 **Framework**: Core Telephony  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Activates a preferred network slice for new connections.
 
@@ -20,7 +21,7 @@ final func activatePreferredSliceForCategory(_ appCategory: CTSlicingManager.App
 
 Call this method before establishing network connections to route your app’s traffic through a specific network slice. After calling this method, new network connections that your app establishes use the specified slice category.
 
-The array that [`availableSliceAppCategories`](ctslicingmanager/availablesliceappcategories.md) returns must include the specified category for activation to succeed.
+The array that [`availableSliceAppCategories`](./availablesliceappcategories.md) returns must include the specified category for activation to succeed.
 
 > ❗ **Important**: This method only affects connections that the system creates after calling it. Existing active connections continue to use their current routing until the system closes them.
 
@@ -39,18 +40,23 @@ do {
 }
 ```
 
-> **Note**: - `POSIXError.ENOTSUP` if network slicing is not currently available.
-- `POSIXError.EINVAL` if an invalid parameter or system error occurs.
+> **Throws**:
+>
+> - `POSIXError.ENOTSUP` if network slicing is not currently available.
+> - `POSIXError.EINVAL` if an invalid parameter or system error occurs.
 
 ## Parameters
 
-- `appCategory`: The [`CTSlicingManager.AppCategory`](ctslicingmanager/appcategory.md) to activate. Available categories include: - `communication`: An app category for communication apps like messaging and voice calls.
-- `gaming`: An app category for gaming apps that require low latency and high performance.
-- `streaming`: An app category for streaming apps that require high bandwidth and consistent throughput.
+- `appCategory`: The [`CTSlicingManager.AppCategory`](./appcategory.md) to activate. Available categories include:
+
+  - `communication`: An app category for communication apps like messaging and voice calls.
+  - `gaming`: An app category for gaming apps that require low latency and high performance.
+  - `streaming`: An app category for streaming apps that require high bandwidth and consistent throughput.
 
 ## See Also
 
-- [func disableSlicing() async throws](ctslicingmanager/disableslicing.md)
+### Managing network slicing
+- [func disableSlicing() async throws](./disableslicing%28%29.md)
   Disables network slicing for new connections.
 
 

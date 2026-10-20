@@ -1,7 +1,8 @@
 # batteryLevelDidChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts when the battery level changes.
 
@@ -18,25 +19,30 @@ nonisolated
 class let batteryLevelDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIDeviceBatteryLevelDidChangeNotification;
+```
+
 ## Mentions
 
-- [Processing queued notifications](processing-queued-notifications.md)
+- [Processing queued notifications](../processing-queued-notifications.md)
 
 #### Discussion
 
-For this notification to be sent, you must set the [`isBatteryMonitoringEnabled`](uidevice/isbatterymonitoringenabled.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+For this notification to be sent, you must set the [`isBatteryMonitoringEnabled`](./isbatterymonitoringenabled.md) property to [`true`](../../Swift/true.md).
 
 Notifications for battery level change are sent no more frequently than once per minute. Don’t attempt to calculate battery drainage rate or battery time remaining; drainage rate can change frequently depending on built-in applications as well as your application.
 
-You can obtain the battery level by getting the value of the [`batteryLevel`](uidevice/batterylevel.md) property.
+You can obtain the battery level by getting the value of the [`batteryLevel`](./batterylevel.md) property.
 
 ## See Also
 
-- [class let batteryStateDidChangeNotification: NSNotification.Name](uidevice/batterystatedidchangenotification.md)
+### Managing notifications
+- [class let batteryStateDidChangeNotification: NSNotification.Name](./batterystatedidchangenotification.md)
   A notification that posts when battery state changes.
-- [class let orientationDidChangeNotification: NSNotification.Name](uidevice/orientationdidchangenotification.md)
+- [class let orientationDidChangeNotification: NSNotification.Name](./orientationdidchangenotification.md)
   A notification that posts when the orientation of the device changes.
-- [class let proximityStateDidChangeNotification: NSNotification.Name](uidevice/proximitystatedidchangenotification.md)
+- [class let proximityStateDidChangeNotification: NSNotification.Name](./proximitystatedidchangenotification.md)
   A notification that posts when the state of the proximity sensor changes.
 
 

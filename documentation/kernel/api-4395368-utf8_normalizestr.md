@@ -1,14 +1,15 @@
 # utf8_normalizestr
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 int utf8_normalizestr(const u_int8_t *instr, size_t inlen, u_int8_t *outstr, size_t *outlen, size_t buflen, int flags);
 ```
 

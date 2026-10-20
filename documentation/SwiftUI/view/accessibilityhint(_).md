@@ -1,7 +1,8 @@
 # accessibilityHint(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Communicates to the user what happens after performing the view’s action.
 
@@ -21,13 +22,31 @@ Communicates to the user what happens after performing the view’s action.
 nonisolated func accessibilityHint(_ hint: LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityHint(_ hint: Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
+```
+
+```swift
+nonisolated
+func accessibilityHint(_ hintKey: LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
+```
+
+```swift
+nonisolated
+func accessibilityHint<S>(_ hint: S) -> ModifiedContent<Self, AccessibilityAttachmentModifier> where S : StringProtocol
+```
+
 #### Discussion
 
 Provide a hint in the form of a brief phrase, like “Purchases the item” or “Downloads the attachment”.
 
 ## See Also
 
-- [func accessibilityHint(_:isEnabled:)](view/accessibilityhint(_:isenabled:).md)
+### Offering hints
+- [func accessibilityHint(_:isEnabled:)](./accessibilityhint%28_,isenabled%29.md)
   Communicates to the user what happens after performing the view’s action.
 
 

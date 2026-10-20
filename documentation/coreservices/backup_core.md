@@ -1,6 +1,7 @@
 # Backup Core
 
-**Framework**: Core Services
+**Framework**: Core Services  
+**Role**: API Collection
 
 Access low-level details about file and folder settings used by the macOS Backup utility. 
 
@@ -11,9 +12,9 @@ Backup is a built-in, user-configurable backup solution that protects user data 
 ## Topics
 
 ### Managing an Item’s Backup Exclusion Status
-- [func CSBackupSetItemExcluded(CFURL!, Bool, Bool) -> OSStatus](1445043-csbackupsetitemexcluded.md)
+- [func CSBackupSetItemExcluded(CFURL!, Bool, Bool) -> OSStatus](./api-1445043-csbackupsetitemexcluded.md)
   Includes or excludes an item from the backup.
-- [func CSBackupIsItemExcluded(CFURL!, UnsafeMutablePointer<DarwinBoolean>!) -> Bool](1443602-csbackupisitemexcluded.md)
+- [func CSBackupIsItemExcluded(CFURL!, UnsafeMutablePointer<DarwinBoolean>!) -> Bool](./api-1443602-csbackupisitemexcluded.md)
   Returns a Boolean value indicating whether an item is currently excluded from the backup.
 
 

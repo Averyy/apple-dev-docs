@@ -1,7 +1,8 @@
 # UIWindowSceneResizingRestrictions.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user cannot resize the scene
 
@@ -12,6 +13,10 @@ The user cannot resize the scene
 
 ```swift
 case none
+```
+
+```c
+UIWindowSceneResizingRestrictionsNone
 ```
 
 

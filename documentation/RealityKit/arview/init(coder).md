@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an AR view initialized from data in a given decoder.
 
@@ -25,11 +26,12 @@ Creates an AR view initialized from data in a given decoder.
 
 ## See Also
 
-- [init(frame: CGRect)](arview/init(frame:).md)
+### Creating a view
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates an AR view with the specified dimensions.
-- [init(frame: CGRect, cameraMode: ARView.CameraMode, automaticallyConfigureSession: Bool)](arview/init(frame:cameramode:automaticallyconfiguresession:).md)
+- [init(frame: CGRect, cameraMode: ARView.CameraMode, automaticallyConfigureSession: Bool)](./init%28frame,cameramode,automaticallyconfiguresession%29.md)
   Creates an AR view with the specified dimensions, camera mode, and session configuration state.
-- [convenience init(frame: CGRect, cameraMode: ARView.CameraMode)](arview/init(frame:cameramode:).md)
+- [convenience init(frame: CGRect, cameraMode: ARView.CameraMode)](./init%28frame,cameramode%29.md)
   Creates an AR view with the specified dimensions and camera mode.
 
 

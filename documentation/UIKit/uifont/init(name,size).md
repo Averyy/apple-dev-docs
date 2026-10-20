@@ -1,7 +1,8 @@
 # init(name:size:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a font object for the specified font name and size.
 
@@ -9,7 +10,7 @@ Creates and returns a font object for the specified font name and size.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,13 +20,17 @@ Creates and returns a font object for the specified font name and size.
 init?(name fontName: String, size fontSize: CGFloat)
 ```
 
+```objc
++ (UIFont *) fontWithName:(NSString *) fontName size:(CGFloat) fontSize;
+```
+
 #### Return Value
 
 A font object of the specified name and size.
 
 #### Discussion
 
-You can use the [`fontNames(forFamilyName:)`](uifont/fontnames(forfamilyname:).md) method to retrieve the specific font names for a given font family.
+You can use the [`fontNames(forFamilyName:)`](./fontnames%28forfamilyname%29.md) method to retrieve the specific font names for a given font family.
 
 ## Parameters
 
@@ -34,23 +39,25 @@ You can use the [`fontNames(forFamilyName:)`](uifont/fontnames(forfamilyname:).m
 
 ## See Also
 
-- [class var familyNames: [String]](uifont/familynames.md)
+### Related Documentation
+- [class var familyNames: [String]](./familynames.md)
   Returns an array of font family names available on the system.
-- [class func fontNames(forFamilyName: String) -> [String]](uifont/fontnames(forfamilyname:).md)
+- [class func fontNames(forFamilyName: String) -> [String]](./fontnames%28forfamilyname%29.md)
   Returns an array of font names available in a particular font family.
-- [Scaling fonts automatically](scaling-fonts-automatically.md)
+### Creating Fonts
+- [Scaling fonts automatically](../scaling-fonts-automatically.md)
   Scale text in your interface automatically using Dynamic Type.
-- [Creating self-sizing table view cells](creating-self-sizing-table-view-cells.md)
+- [Creating self-sizing table view cells](../creating-self-sizing-table-view-cells.md)
   Create table view cells that support Dynamic Type and use system spacing constraints to adjust the spacing surrounding text labels.
-- [class func preferredFont(forTextStyle: UIFont.TextStyle) -> UIFont](uifont/preferredfont(fortextstyle:).md)
+- [class func preferredFont(forTextStyle: UIFont.TextStyle) -> UIFont](./preferredfont%28fortextstyle%29.md)
   Returns an instance of the system font for the specified text style with scaling for the user’s selected content size category.
-- [class func preferredFont(forTextStyle: UIFont.TextStyle, compatibleWith: UITraitCollection?) -> UIFont](uifont/preferredfont(fortextstyle:compatiblewith:).md)
+- [class func preferredFont(forTextStyle: UIFont.TextStyle, compatibleWith: UITraitCollection?) -> UIFont](./preferredfont%28fortextstyle,compatiblewith%29.md)
   Returns an instance of the system font for the appropriate text style and traits.
-- [UIFont.TextStyle](uifont/textstyle.md)
+- [UIFont.TextStyle](./textstyle.md)
   Constants that describe the preferred styles for fonts.
-- [init(descriptor: UIFontDescriptor, size: CGFloat)](uifont/init(descriptor:size:).md)
+- [init(descriptor: UIFontDescriptor, size: CGFloat)](./init%28descriptor,size%29.md)
   Returns a font that matches the specified font descriptor.
-- [func withSize(CGFloat) -> UIFont](uifont/withsize(_:).md)
+- [func withSize(CGFloat) -> UIFont](./withsize%28_%29.md)
   Returns a font object that is the same as the font, but has the specified size.
 
 

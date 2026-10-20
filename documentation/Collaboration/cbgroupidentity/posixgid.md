@@ -1,7 +1,8 @@
 # posixGID
 
 **Framework**: Collaboration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the POSIX GID of the identity.
 
@@ -12,6 +13,10 @@ Returns the POSIX GID of the identity.
 
 ```swift
 var posixGID: gid_t { get }
+```
+
+```objc
+@property (nonatomic, readonly) gid_t posixGID;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # SetIOOperationHandler
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the IOOperationHandler block on the device.
 
@@ -10,7 +11,7 @@ Sets the IOOperationHandler block on the device.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetIOOperationHandler(IOOperationHandler in_io_operation_block);
 ```
 
@@ -28,15 +29,16 @@ The IOOperationHandler will be invoked when a IO operation is performed by the h
 
 ## See Also
 
-- [StartIO](iouservideodevice/startio.md)
+### Performing I/O
+- [StartIO](./startio.md)
   Tells the device to start IO.
-- [StopIO](iouservideodevice/stopio.md)
+- [StopIO](./stopio.md)
   Tells the device to stop IO.
-- [IOUserVideoStartStopFlags](videodriverkit/iouservideostartstopflags.md)
+- [IOUserVideoStartStopFlags](../videodriverkit-page/iouservideostartstopflags.md)
   Flags used to indicate how I/O is starting or stopping.
-- [GetCurrentClientIOTime](iouservideodevice/getcurrentclientiotime.md)
+- [GetCurrentClientIOTime](./getcurrentclientiotime.md)
   Gets the current sample/host time pair in the ring buffer written to or read from by the client
-- [IOOperationHandler](videodriverkit/iooperationhandler.md)
+- [IOOperationHandler](../videodriverkit-page/iooperationhandler.md)
   A block that tells the device to perform a video IO operation.
 
 

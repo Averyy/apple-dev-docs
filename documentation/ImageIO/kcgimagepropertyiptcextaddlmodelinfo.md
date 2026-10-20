@@ -1,7 +1,8 @@
 # kCGImagePropertyIPTCExtAddlModelInfo
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 11.3+
@@ -18,23 +19,28 @@
 let kCGImagePropertyIPTCExtAddlModelInfo: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyIPTCExtAddlModelInfo;
+```
+
 ## See Also
 
-- [let kCGImagePropertyIPTCExtAboutCvTerm: CFString](kcgimagepropertyiptcextaboutcvterm.md)
-- [let kCGImagePropertyIPTCExtAboutCvTermCvId: CFString](kcgimagepropertyiptcextaboutcvtermcvid.md)
-- [let kCGImagePropertyIPTCExtAboutCvTermId: CFString](kcgimagepropertyiptcextaboutcvtermid.md)
-- [let kCGImagePropertyIPTCExtAboutCvTermName: CFString](kcgimagepropertyiptcextaboutcvtermname.md)
-- [let kCGImagePropertyIPTCExtAboutCvTermRefinedAbout: CFString](kcgimagepropertyiptcextaboutcvtermrefinedabout.md)
-- [let kCGImagePropertyIPTCExtArtworkCircaDateCreated: CFString](kcgimagepropertyiptcextartworkcircadatecreated.md)
-- [let kCGImagePropertyIPTCExtArtworkContentDescription: CFString](kcgimagepropertyiptcextartworkcontentdescription.md)
-- [let kCGImagePropertyIPTCExtArtworkContributionDescription: CFString](kcgimagepropertyiptcextartworkcontributiondescription.md)
-- [let kCGImagePropertyIPTCExtArtworkCopyrightNotice: CFString](kcgimagepropertyiptcextartworkcopyrightnotice.md)
-- [let kCGImagePropertyIPTCExtArtworkCopyrightOwnerID: CFString](kcgimagepropertyiptcextartworkcopyrightownerid.md)
-- [let kCGImagePropertyIPTCExtArtworkCopyrightOwnerName: CFString](kcgimagepropertyiptcextartworkcopyrightownername.md)
-- [let kCGImagePropertyIPTCExtArtworkCreator: CFString](kcgimagepropertyiptcextartworkcreator.md)
-- [let kCGImagePropertyIPTCExtArtworkCreatorID: CFString](kcgimagepropertyiptcextartworkcreatorid.md)
-- [let kCGImagePropertyIPTCExtArtworkDateCreated: CFString](kcgimagepropertyiptcextartworkdatecreated.md)
-- [let kCGImagePropertyIPTCExtArtworkLicensorID: CFString](kcgimagepropertyiptcextartworklicensorid.md)
+### Extended Properties
+- [let kCGImagePropertyIPTCExtAboutCvTerm: CFString](./kcgimagepropertyiptcextaboutcvterm.md)
+- [let kCGImagePropertyIPTCExtAboutCvTermCvId: CFString](./kcgimagepropertyiptcextaboutcvtermcvid.md)
+- [let kCGImagePropertyIPTCExtAboutCvTermId: CFString](./kcgimagepropertyiptcextaboutcvtermid.md)
+- [let kCGImagePropertyIPTCExtAboutCvTermName: CFString](./kcgimagepropertyiptcextaboutcvtermname.md)
+- [let kCGImagePropertyIPTCExtAboutCvTermRefinedAbout: CFString](./kcgimagepropertyiptcextaboutcvtermrefinedabout.md)
+- [let kCGImagePropertyIPTCExtArtworkCircaDateCreated: CFString](./kcgimagepropertyiptcextartworkcircadatecreated.md)
+- [let kCGImagePropertyIPTCExtArtworkContentDescription: CFString](./kcgimagepropertyiptcextartworkcontentdescription.md)
+- [let kCGImagePropertyIPTCExtArtworkContributionDescription: CFString](./kcgimagepropertyiptcextartworkcontributiondescription.md)
+- [let kCGImagePropertyIPTCExtArtworkCopyrightNotice: CFString](./kcgimagepropertyiptcextartworkcopyrightnotice.md)
+- [let kCGImagePropertyIPTCExtArtworkCopyrightOwnerID: CFString](./kcgimagepropertyiptcextartworkcopyrightownerid.md)
+- [let kCGImagePropertyIPTCExtArtworkCopyrightOwnerName: CFString](./kcgimagepropertyiptcextartworkcopyrightownername.md)
+- [let kCGImagePropertyIPTCExtArtworkCreator: CFString](./kcgimagepropertyiptcextartworkcreator.md)
+- [let kCGImagePropertyIPTCExtArtworkCreatorID: CFString](./kcgimagepropertyiptcextartworkcreatorid.md)
+- [let kCGImagePropertyIPTCExtArtworkDateCreated: CFString](./kcgimagepropertyiptcextartworkdatecreated.md)
+- [let kCGImagePropertyIPTCExtArtworkLicensorID: CFString](./kcgimagepropertyiptcextartworklicensorid.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # GLbyte
 
 **Framework**: OpenGL ES  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias GLbyte = Int8
+```
+
+```c
+typedef int8_t GLbyte;
 ```
 
 

@@ -1,18 +1,19 @@
 # DispatchIO.CloseFlags
 
 **Framework**: Dispatch  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Additional flags to use when closing an I/O channel.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -23,26 +24,27 @@ struct CloseFlags
 ## Topics
 
 ### Close Flags
-- [static let stop: DispatchIO.CloseFlags](dispatchio/closeflags/stop.md)
+- [static let stop: DispatchIO.CloseFlags](./closeflags/stop.md)
   Stop any in-progress read/write operations when closed.
 ### Initializing the Type
-- [var DISPATCH_IO_STOP: Int32](dispatch_io_stop.md)
+- [var DISPATCH_IO_STOP: Int32](../dispatch_io_stop.md)
   Stop any in-progress read and write operations when closed.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func close(flags: DispatchIO.CloseFlags)](dispatchio/close(flags:).md)
+### Closing the File
+- [func close(flags: DispatchIO.CloseFlags)](./close%28flags%29.md)
   Closes the channel to new read and write operations.
 
 

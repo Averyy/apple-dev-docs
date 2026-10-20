@@ -1,7 +1,8 @@
 # IKDeviceBrowserView
 
 **Framework**: Quartz  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The `IKDeviceBrowserView` allows you to select a camera or scanner from a list of the available devices.
 
@@ -14,81 +15,86 @@ The `IKDeviceBrowserView` allows you to select a camera or scanner from a list o
 class IKDeviceBrowserView
 ```
 
+```objc
+@interface IKDeviceBrowserView : NSView
+```
+
 #### Overview
 
-The [`IKDeviceBrowserView`](ikdevicebrowserview.md) delegate must conform to the [`IKDeviceBrowserViewDelegate`](ikdevicebrowserviewdelegate.md) protocol. The delegate provides methods to inform you of selection changes in the browser as well as errors encountered when creating the browser list.
+The [`IKDeviceBrowserView`](./ikdevicebrowserview.md) delegate must conform to the [`IKDeviceBrowserViewDelegate`](./ikdevicebrowserviewdelegate.md) protocol. The delegate provides methods to inform you of selection changes in the browser as well as errors encountered when creating the browser list.
 
 ## Topics
 
 ### Getting the Selected Device
-- [var selectedDevice: ICDevice!](ikdevicebrowserview/selecteddevice.md)
+- [var selectedDevice: ICDevice!](./ikdevicebrowserview/selecteddevice.md)
   Returns the selected device.
 ### Specifying the Device Types to Display
-- [var displaysLocalCameras: Bool](ikdevicebrowserview/displayslocalcameras.md)
+- [var displaysLocalCameras: Bool](./ikdevicebrowserview/displayslocalcameras.md)
   Specifies whether local cameras are displayed by the browser.
-- [var displaysNetworkCameras: Bool](ikdevicebrowserview/displaysnetworkcameras.md)
+- [var displaysNetworkCameras: Bool](./ikdevicebrowserview/displaysnetworkcameras.md)
   Specifies whether network cameras are displayed by the browser.
-- [var displaysLocalScanners: Bool](ikdevicebrowserview/displayslocalscanners.md)
+- [var displaysLocalScanners: Bool](./ikdevicebrowserview/displayslocalscanners.md)
   Specifies whether local scanners are displayed by the browser.
-- [var displaysNetworkScanners: Bool](ikdevicebrowserview/displaysnetworkscanners.md)
+- [var displaysNetworkScanners: Bool](./ikdevicebrowserview/displaysnetworkscanners.md)
   Specifies whether network scanners are displayed by the browser.
 ### Specifying the Display Mode
-- [var mode: IKDeviceBrowserViewDisplayMode](ikdevicebrowserview/mode.md)
+- [var mode: IKDeviceBrowserViewDisplayMode](./ikdevicebrowserview/mode.md)
   Specifies the browser display mode.
 ### Getting and Setting the Delegate
-- [var delegate: (any IKDeviceBrowserViewDelegate)!](ikdevicebrowserview/delegate.md)
+- [var delegate: (any IKDeviceBrowserViewDelegate)!](./ikdevicebrowserview/delegate.md)
   Specifies the delegate object.
 ### Constants
-- [enum IKDeviceBrowserViewDisplayMode](ikdevicebrowserviewdisplaymode.md)
+- [enum IKDeviceBrowserViewDisplayMode](./ikdevicebrowserviewdisplaymode.md)
   These constants specify the display mode of the device browser.
 
 ## Relationships
 
 ### Inherits From
-- [NSView](../appkit/nsview.md)
+- [NSView](../AppKit/nsview.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](../AppKit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../AppKit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../AppKit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../AppKit/nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](../AppKit/nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class IKCameraDeviceView](ikcameradeviceview.md)
+### Classes
+- [class IKCameraDeviceView](./ikcameradeviceview.md)
   The `IKCameraDeviceView` class displays the contents of the selected camera.
-- [class IKFilterBrowserPanel](ikfilterbrowserpanel.md)
+- [class IKFilterBrowserPanel](./ikfilterbrowserpanel.md)
   Presents a user interface for browsing filters.
-- [class IKFilterBrowserView](ikfilterbrowserview.md)
-  The `IKFilterBrowserView` class is used as a container for the elements of an [`IKFilterBrowserPanel`](ikfilterbrowserpanel.md) object.
-- [class IKFilterUIView](ikfilteruiview.md)
+- [class IKFilterBrowserView](./ikfilterbrowserview.md)
+  The `IKFilterBrowserView` class is used as a container for the elements of an [`IKFilterBrowserPanel`](./ikfilterbrowserpanel.md) object.
+- [class IKFilterUIView](./ikfilteruiview.md)
   Input parameters for filtering core image filters.
-- [class IKImageBrowserCell](ikimagebrowsercell.md)
+- [class IKImageBrowserCell](./ikimagebrowsercell.md)
   A class used to display a cell.
-- [class IKImageEditPanel](ikimageeditpanel.md)
+- [class IKImageEditPanel](./ikimageeditpanel.md)
   The `IKImageEditPanel` class provides a panel, that is, a utility window that floats on top of document windows, optimized for image editing.
-- [class IKImageView](ikimageview.md)
+- [class IKImageView](./ikimageview.md)
   A view that allows displaying and minor editing of an image.
-- [class IKPictureTaker](ikpicturetaker.md)
+- [class IKPictureTaker](./ikpicturetaker.md)
   The `IKPictureTaker` class represents a panel that allows users to choose images by browsing the file system. The picture taker panel provides an Open Recent menu, supports image cropping, and supports taking snapshots from an iSight or other digital camera.
-- [class IKSaveOptions](iksaveoptions.md)
+- [class IKSaveOptions](./iksaveoptions.md)
   The `IKSaveOptions` class initializes, adds, and manages user interface options for saving image data.
-- [class IKScannerDeviceView](ikscannerdeviceview.md)
-  The `IKScannerDeviceView` class displays a view that allows scanning. It can be customized by specifying the display mode. The delegate receives the scanned data and must implement the [`IKScannerDeviceViewDelegate`](ikscannerdeviceviewdelegate.md) protocol.
-- [class IKSlideshow](ikslideshow.md)
+- [class IKScannerDeviceView](./ikscannerdeviceview.md)
+  The `IKScannerDeviceView` class displays a view that allows scanning. It can be customized by specifying the display mode. The delegate receives the scanned data and must implement the [`IKScannerDeviceViewDelegate`](./ikscannerdeviceviewdelegate.md) protocol.
+- [class IKSlideshow](./ikslideshow.md)
   The `IKSlideshow` class encapsulates a data source and options for a slideshow.
 
 

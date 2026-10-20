@@ -1,7 +1,8 @@
 # GCPoint2Make(_:_:)
 
 **Framework**: Game Controller  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a point with the specified coordinates in a two-dimensional coordinate system.
 
@@ -19,6 +20,10 @@ Returns a point with the specified coordinates in a two-dimensional coordinate s
 func GCPoint2Make(_ x: Float, _ y: Float) -> GCPoint2
 ```
 
+```c
+static GCPoint2 GCPoint2Make(float x, float y);
+```
+
 #### Return Value
 
 A point in a two-dimensional coordinate system.
@@ -30,11 +35,12 @@ A point in a two-dimensional coordinate system.
 
 ## See Also
 
-- [init()](gcpoint2/init.md)
+### Creating a point
+- [init()](./gcpoint2/init%28%29.md)
   Creates a two dimensional point with coordinates `(0, 0)`.
-- [init(x: Float, y: Float)](gcpoint2/init(x:y:).md)
+- [init(x: Float, y: Float)](./gcpoint2/init%28x,y%29.md)
   Creates a two dimensional point with the given coordinates.
-- [let GCPoint2Zero: GCPoint2](gcpoint2zero.md)
+- [let GCPoint2Zero: GCPoint2](./gcpoint2zero.md)
   The origin for a two dimensional point.
 
 

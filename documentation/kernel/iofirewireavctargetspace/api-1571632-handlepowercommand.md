@@ -1,14 +1,15 @@
 # handlePowerCommand
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 IOReturn handlePowerCommand(UInt16 nodeID, UInt32 generation, const char *buf, UInt32 len);
 ```
 

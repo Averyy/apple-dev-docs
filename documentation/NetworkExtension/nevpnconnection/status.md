@@ -1,7 +1,8 @@
 # status
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current status of the VPN connection.
 
@@ -19,12 +20,17 @@ The current status of the VPN connection.
 var status: NEVPNStatus { get }
 ```
 
+```objc
+@property (readonly) NEVPNStatus status;
+```
+
 ## See Also
 
-- [var manager: NEVPNManager](nevpnconnection/manager.md)
-- [enum NEVPNStatus](nevpnstatus.md)
+### Getting VPN connection status
+- [var manager: NEVPNManager](./manager.md)
+- [enum NEVPNStatus](../nevpnstatus.md)
   The possible states of a VPN connection.
-- [var connectedDate: Date?](nevpnconnection/connecteddate.md)
+- [var connectedDate: Date?](./connecteddate.md)
   The date and time when the connection status changed to `NEVPNStatusConnected`.
 
 

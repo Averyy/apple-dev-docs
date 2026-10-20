@@ -1,7 +1,8 @@
 # rounded(rule:increment:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the format style to use the specified rounding rule and increment.
 
@@ -26,7 +27,7 @@ A decimal format style modified to use the specified rounding rule and increment
 
 #### Discussion
 
-The following example creates a default [`Decimal.FormatStyle`](decimal/formatstyle.md) for the `en_US` locale, and a modified style that rounds integers to the nearest multiple of `100`. It then formats the value `1999.95` using these format styles.
+The following example creates a default [`Decimal.FormatStyle`](../formatstyle.md) for the `en_US` locale, and a modified style that rounds integers to the nearest multiple of `100`. It then formats the value `1999.95` using these format styles.
 
 ```swift
 let defaultStyle = Decimal.FormatStyle(locale: Locale(identifier: "en_US"))
@@ -44,23 +45,24 @@ let roundedNum = num.formatted(roundedStyle) // "2,000"
 
 ## See Also
 
-- [func decimalSeparator(strategy: Decimal.FormatStyle.Configuration.DecimalSeparatorDisplayStrategy) -> Decimal.FormatStyle](decimal/formatstyle/decimalseparator(strategy:).md)
+### Customizing style behavior
+- [func decimalSeparator(strategy: Decimal.FormatStyle.Configuration.DecimalSeparatorDisplayStrategy) -> Decimal.FormatStyle](./decimalseparator%28strategy%29.md)
   Modifies the format style to use the specified decimal separator display strategy.
-- [func grouping(Decimal.FormatStyle.Configuration.Grouping) -> Decimal.FormatStyle](decimal/formatstyle/grouping(_:).md)
+- [func grouping(Decimal.FormatStyle.Configuration.Grouping) -> Decimal.FormatStyle](./grouping%28_%29.md)
   Modifies the format style to use the specified grouping.
-- [func locale(Locale) -> Decimal.FormatStyle](decimal/formatstyle/locale(_:).md)
+- [func locale(Locale) -> Decimal.FormatStyle](./locale%28_%29.md)
   Modifies the format style to use the specified locale.
-- [func notation(Decimal.FormatStyle.Configuration.Notation) -> Decimal.FormatStyle](decimal/formatstyle/notation(_:).md)
+- [func notation(Decimal.FormatStyle.Configuration.Notation) -> Decimal.FormatStyle](./notation%28_%29.md)
   Modifies the format style to use the specified notation.
-- [func precision(Decimal.FormatStyle.Configuration.Precision) -> Decimal.FormatStyle](decimal/formatstyle/precision(_:).md)
+- [func precision(Decimal.FormatStyle.Configuration.Precision) -> Decimal.FormatStyle](./precision%28_%29.md)
   Modifies the format style to use the specified precision.
-- [func scale(Double) -> Decimal.FormatStyle](decimal/formatstyle/scale(_:).md)
+- [func scale(Double) -> Decimal.FormatStyle](./scale%28_%29.md)
   Modifies the format style to use the specified scale.
-- [func sign(strategy: Decimal.FormatStyle.Configuration.SignDisplayStrategy) -> Decimal.FormatStyle](decimal/formatstyle/sign(strategy:).md)
+- [func sign(strategy: Decimal.FormatStyle.Configuration.SignDisplayStrategy) -> Decimal.FormatStyle](./sign%28strategy%29.md)
   Modifies the format style to use the specified sign display strategy for displaying or omitting sign symbols.
-- [Decimal.FormatStyle.Configuration](decimal/formatstyle/configuration.md)
+- [Decimal.FormatStyle.Configuration](./configuration.md)
   The type the format style uses for configuration settings.
-- [enum NumberFormatStyleConfiguration](numberformatstyleconfiguration.md)
+- [enum NumberFormatStyleConfiguration](../../numberformatstyleconfiguration.md)
   Configuration settings for formatting numbers of different types.
 
 

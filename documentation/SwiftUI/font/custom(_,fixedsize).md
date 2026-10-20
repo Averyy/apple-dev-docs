@@ -1,7 +1,8 @@
 # custom(_:fixedSize:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create a custom font with the given `name` and a fixed `size` that does not scale with Dynamic Type.
 
@@ -22,9 +23,10 @@ static func custom(_ name: String, fixedSize: CGFloat) -> Font
 
 ## See Also
 
-- [static func custom(String, size: CGFloat, relativeTo: Font.TextStyle) -> Font](font/custom(_:size:relativeto:).md)
+### Creating custom fonts
+- [static func custom(String, size: CGFloat, relativeTo: Font.TextStyle) -> Font](./custom%28_,size,relativeto%29.md)
   Create a custom font with the given `name` and `size` that scales relative to the given `textStyle`.
-- [static func custom(String, size: CGFloat) -> Font](font/custom(_:size:).md)
+- [static func custom(String, size: CGFloat) -> Font](./custom%28_,size%29.md)
   Create a custom font with the given `name` and `size` that scales with the body text style.
 
 

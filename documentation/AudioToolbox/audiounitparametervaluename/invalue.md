@@ -1,15 +1,20 @@
 # inValue
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var inValue: UnsafePointer<Float32>
+```
+
+```c
+const Float32 * inValue;
 ```
 
 

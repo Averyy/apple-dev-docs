@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -18,6 +19,11 @@
 nonisolated
 (nonsending) func supportsDataEntryType(_ type: UTType) async throws -> Bool
 ```
+
+## Default Implementations
+
+### LanguageModel Implementations
+- [func supportsDataEntryType(UTType) async throws -> Bool](./supportsdataentrytype%28_%29-9cugj.md)
 
 
 ---

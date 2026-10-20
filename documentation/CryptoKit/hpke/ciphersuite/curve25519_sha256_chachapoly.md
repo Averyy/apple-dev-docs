@@ -1,7 +1,8 @@
 # Curve25519_SHA256_ChachaPoly
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A cipher suite for HPKE that uses X25519 elliptic curve key agreement, SHA-2 key derivation with a 256-bit digest, and the ChaCha20 stream cipher with the Poly1305 message authentication code.
 
@@ -22,11 +23,12 @@ static let Curve25519_SHA256_ChachaPoly: HPKE.Ciphersuite
 
 ## See Also
 
-- [static let P256_SHA256_AES_GCM_256: HPKE.Ciphersuite](hpke/ciphersuite/p256_sha256_aes_gcm_256.md)
+### Using elliptic curve cipher suites
+- [static let P256_SHA256_AES_GCM_256: HPKE.Ciphersuite](./p256_sha256_aes_gcm_256.md)
   A cipher suite for HPKE that uses NIST P-256 elliptic curve key agreement, SHA-2 key derivation with a 256-bit digest, and the Advanced Encryption Standard cipher in Galois/Counter Mode with a key length of 256 bits.
-- [static let P384_SHA384_AES_GCM_256: HPKE.Ciphersuite](hpke/ciphersuite/p384_sha384_aes_gcm_256.md)
+- [static let P384_SHA384_AES_GCM_256: HPKE.Ciphersuite](./p384_sha384_aes_gcm_256.md)
   A cipher suite that you use for HPKE using NIST P-384 elliptic curve key agreement, SHA-2 key derivation with a 384-bit digest, and the Advanced Encryption Standard cipher in Galois/Counter Mode with a key length of 256 bits.
-- [static let P521_SHA512_AES_GCM_256: HPKE.Ciphersuite](hpke/ciphersuite/p521_sha512_aes_gcm_256.md)
+- [static let P521_SHA512_AES_GCM_256: HPKE.Ciphersuite](./p521_sha512_aes_gcm_256.md)
   A cipher suite for HPKE that uses NIST P-521 elliptic curve key agreement, SHA-2 key derivation with a 512-bit digest, and the Advanced Encryption Standard cipher in Galois/Counter Mode with a key length of 256 bits.
 
 

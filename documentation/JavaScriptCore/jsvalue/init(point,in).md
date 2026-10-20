@@ -1,7 +1,8 @@
 # init(point:in:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init!(point: CGPoint, in context: JSContext!)
+```
+
+```objc
++ (JSValue *) valueWithPoint:(CGPoint) point inContext:(JSContext *) context;
 ```
 
 #### Return Value

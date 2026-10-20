@@ -1,7 +1,8 @@
 # enableActionWithDuration(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func enableActionWithDuration(with params: MTRActionsClusterEnableActionWithDurationParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func enableActionWithDuration(with params: MTRActionsClusterEnableActionWithDurationParams) async throws
+```
+
+```objc
+- (void) enableActionWithDurationWithParams:(MTRActionsClusterEnableActionWithDurationParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

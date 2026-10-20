@@ -1,7 +1,8 @@
 # playerView(_:restoreUserInterfaceForPictureInPictureStopWithCompletionHandler:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate to restore the user interface before Picture in Picture playback stops.
 
@@ -11,7 +12,15 @@ Tells the delegate to restore the user interface before Picture in Picture playb
 ## Declaration
 
 ```swift
+optional func playerView(_ playerView: AVPlayerView, restoreUserInterfaceForPictureInPictureStopWithCompletionHandler completionHandler: @escaping @Sendable (Bool) -> Void)
+```
+
+```swift
 optional func playerViewRestoreUserInterfaceForPictureInPictureStop(_ playerView: AVPlayerView) async -> Bool
+```
+
+```objc
+- (void) playerView:(AVPlayerView *) playerView restoreUserInterfaceForPictureInPictureStopWithCompletionHandler:(void (^)(BOOL restored)) completionHandler;
 ```
 
 ## Parameters
@@ -21,17 +30,18 @@ optional func playerViewRestoreUserInterfaceForPictureInPictureStop(_ playerView
 
 ## See Also
 
-- [func playerViewWillStartPicture(inPicture: AVPlayerView)](avplayerviewpictureinpicturedelegate/playerviewwillstartpicture(inpicture:).md)
+### Responding to Picture in Picture playback events
+- [func playerViewWillStartPicture(inPicture: AVPlayerView)](./playerviewwillstartpicture%28inpicture%29.md)
   Tells the delegate that Picture in Picture playback is about to start.
-- [func playerViewDidStartPicture(inPicture: AVPlayerView)](avplayerviewpictureinpicturedelegate/playerviewdidstartpicture(inpicture:).md)
+- [func playerViewDidStartPicture(inPicture: AVPlayerView)](./playerviewdidstartpicture%28inpicture%29.md)
   Tells the delegate that Picture in Picture playback started.
-- [func playerViewWillStopPicture(inPicture: AVPlayerView)](avplayerviewpictureinpicturedelegate/playerviewwillstoppicture(inpicture:).md)
+- [func playerViewWillStopPicture(inPicture: AVPlayerView)](./playerviewwillstoppicture%28inpicture%29.md)
   Tells the delegate that Picture in Picture playback is about to stop.
-- [func playerViewDidStopPicture(inPicture: AVPlayerView)](avplayerviewpictureinpicturedelegate/playerviewdidstoppicture(inpicture:).md)
+- [func playerViewDidStopPicture(inPicture: AVPlayerView)](./playerviewdidstoppicture%28inpicture%29.md)
   Tells the delegate that Picture in Picture playback stopped.
-- [func playerView(AVPlayerView, failedToStartPictureInPictureWithError: any Error)](avplayerviewpictureinpicturedelegate/playerview(_:failedtostartpictureinpicturewitherror:).md)
+- [func playerView(AVPlayerView, failedToStartPictureInPictureWithError: any Error)](./playerview%28_,failedtostartpictureinpicturewitherror%29.md)
   Tells the delegate that Picture in Picture playback failed to start.
-- [func playerViewShouldAutomaticallyDismissAtPicture(inPictureStart: AVPlayerView) -> Bool](avplayerviewpictureinpicturedelegate/playerviewshouldautomaticallydismissatpicture(inpicturestart:).md)
+- [func playerViewShouldAutomaticallyDismissAtPicture(inPictureStart: AVPlayerView) -> Bool](./playerviewshouldautomaticallydismissatpicture%28inpicturestart%29.md)
   Asks the delegate if the player view should miniaturize when Picture in Picture starts.
 
 

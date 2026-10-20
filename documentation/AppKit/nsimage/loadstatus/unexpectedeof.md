@@ -1,17 +1,22 @@
 # NSImage.LoadStatus.unexpectedEOF
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Not enough data was available to fully decompress the image.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case unexpectedEOF
+```
+
+```c
+NSImageLoadStatusUnexpectedEOF
 ```
 
 #### Discussion
@@ -20,13 +25,14 @@ The image contains the portions of the data that have already been successfully 
 
 ## See Also
 
-- [NSImage.LoadStatus.completed](nsimage/loadstatus/completed.md)
+### Load Status Values
+- [NSImage.LoadStatus.completed](./completed.md)
   Enough data is available to completely decompress the image.
-- [NSImage.LoadStatus.cancelled](nsimage/loadstatus/cancelled.md)
+- [NSImage.LoadStatus.cancelled](./cancelled.md)
   Image loading was canceled.
-- [NSImage.LoadStatus.invalidData](nsimage/loadstatus/invaliddata.md)
+- [NSImage.LoadStatus.invalidData](./invaliddata.md)
   An error occurred during image decompression.
-- [NSImage.LoadStatus.readError](nsimage/loadstatus/readerror.md)
+- [NSImage.LoadStatus.readError](./readerror.md)
   Not enough data was available for full decompression of the image.
 
 

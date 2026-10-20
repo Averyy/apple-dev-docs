@@ -1,13 +1,16 @@
 # swipeRight(withVelocity:)
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a swipe-right gesture with a velocity you specify.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 - Xcode 16.3+
+
+> **Deprecated**: Use [`swipeRight(velocity:)`](./swiperight%28velocity%29.md) instead.
 
 ## Declaration
 
@@ -22,11 +25,12 @@ Sends a swipe-right gesture with a velocity you specify.
 
 ## See Also
 
-- [func swipeDown(withVelocity: XCUIGestureVelocity)](xcuielement/swipedown(withvelocity:).md)
+### Deprecated methods
+- [func swipeDown(withVelocity: XCUIGestureVelocity)](./swipedown%28withvelocity%29.md)
   Sends a swipe-down gesture with a velocity you specify.
-- [func swipeUp(withVelocity: XCUIGestureVelocity)](xcuielement/swipeup(withvelocity:).md)
+- [func swipeUp(withVelocity: XCUIGestureVelocity)](./swipeup%28withvelocity%29.md)
   Sends a swipe-up gesture with a velocity you specify.
-- [func swipeLeft(withVelocity: XCUIGestureVelocity)](xcuielement/swipeleft(withvelocity:).md)
+- [func swipeLeft(withVelocity: XCUIGestureVelocity)](./swipeleft%28withvelocity%29.md)
   Sends a swipe-left gesture with a velocity you specify.
 
 

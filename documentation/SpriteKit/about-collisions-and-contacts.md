@@ -1,6 +1,7 @@
 # About Collisions and Contacts
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Learn how to set up nodes for collision detection.
 
@@ -20,7 +21,7 @@ SpriteKit uses two mechanisms to limit the number of interactions in each frame:
 - Edge-based physics bodies never interact with other edge-based physics bodies. This means that even if you move them by repositioning the nodes, edge-based physics bodies never collide or contact each other.
 - Every physics body is categorized. Categories are defined by your app; each scene can have up to 32 categories. When you configure a physics body, you define which categories it belongs to and which categories of bodies it should interact with. You define contacts and collisions separately.
 
-The following code creates a red and a blue ball, and a ground object constructed from a series of points. By giving the red ball a [`collisionBitMask`](skphysicsbody/collisionbitmask.md) that matches the ground’s [`categoryBitMask`](skphysicsbody/categorybitmask.md), you make the red ball bounce off the ground. However, the blue ball’s [`collisionBitMask`](skphysicsbody/collisionbitmask.md) is set to a different value and doesn’t interact with the ground.
+The following code creates a red and a blue ball, and a ground object constructed from a series of points. By giving the red ball a [`collisionBitMask`](./skphysicsbody/collisionbitmask.md) that matches the ground’s [`categoryBitMask`](./skphysicsbody/categorybitmask.md), you make the red ball bounce off the ground. However, the blue ball’s [`collisionBitMask`](./skphysicsbody/collisionbitmask.md) is set to a different value and doesn’t interact with the ground.
 
 ```swift
 let ballRadius: CGFloat = 20
@@ -50,19 +51,20 @@ ground.physicsBody?.categoryBitMask = 0b0001
 
 The following image shows the paths taken by both balls when the code above is executed.
 
-![Paths taken by nodes with different collision bit masks](/images/com.apple.spritekit/media-3109124@2x.png)
+![Paths taken by nodes with different collision bit masks](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-3109124@2x.png)
 
 ## See Also
 
-- [var categoryBitMask: UInt32](skphysicsbody/categorybitmask.md)
+### Working with Collisions and Contacts
+- [var categoryBitMask: UInt32](./skphysicsbody/categorybitmask.md)
   A mask that defines which categories this physics body belongs to.
-- [var collisionBitMask: UInt32](skphysicsbody/collisionbitmask.md)
+- [var collisionBitMask: UInt32](./skphysicsbody/collisionbitmask.md)
   A mask that defines which categories of physics bodies can collide with this physics body.
-- [var usesPreciseCollisionDetection: Bool](skphysicsbody/usesprecisecollisiondetection.md)
+- [var usesPreciseCollisionDetection: Bool](./skphysicsbody/usesprecisecollisiondetection.md)
   A Boolean value that determines whether the physics world uses an iterative collision detection algorithm.
-- [var contactTestBitMask: UInt32](skphysicsbody/contacttestbitmask.md)
+- [var contactTestBitMask: UInt32](./skphysicsbody/contacttestbitmask.md)
   A mask that defines which categories of physics bodies cause intersection notifications with this physics body.
-- [func allContactedBodies() -> [SKPhysicsBody]](skphysicsbody/allcontactedbodies.md)
+- [func allContactedBodies() -> [SKPhysicsBody]](./skphysicsbody/allcontactedbodies%28%29.md)
   The physics bodies that this physics body is in contact with.
 
 

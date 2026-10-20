@@ -1,7 +1,8 @@
 # kCMIOPanControlClassID
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,23 +14,28 @@
 var kCMIOPanControlClassID: Int { get }
 ```
 
+```c
+kCMIOPanControlClassID
+```
+
 ## See Also
 
-- [var kCMIOBacklightCompensationControlClassID: Int](kcmiobacklightcompensationcontrolclassid.md)
-- [var kCMIOBlackLevelControlClassID: Int](kcmioblacklevelcontrolclassid.md)
-- [var kCMIOBrightnessControlClassID: Int](kcmiobrightnesscontrolclassid.md)
-- [var kCMIOContrastControlClassID: Int](kcmiocontrastcontrolclassid.md)
-- [var kCMIOExposureControlClassID: Int](kcmioexposurecontrolclassid.md)
-- [var kCMIOFocusControlClassID: Int](kcmiofocuscontrolclassid.md)
-- [var kCMIOGainControlClassID: Int](kcmiogaincontrolclassid.md)
-- [var kCMIOGammaControlClassID: Int](kcmiogammacontrolclassid.md)
-- [var kCMIOHueControlClassID: Int](kcmiohuecontrolclassid.md)
-- [var kCMIOIrisControlClassID: Int](kcmioiriscontrolclassid.md)
-- [var kCMIONoiseReductionControlClassID: Int](kcmionoisereductioncontrolclassid.md)
-- [var kCMIOOpticalFilterClassID: Int](kcmioopticalfilterclassid.md)
-- [var kCMIOPowerLineFrequencyControlClassID: Int](kcmiopowerlinefrequencycontrolclassid.md)
-- [var kCMIOSaturationControlClassID: Int](kcmiosaturationcontrolclassid.md)
-- [var kCMIOSharpnessControlClassID: Int](kcmiosharpnesscontrolclassid.md)
+### Constants
+- [var kCMIOBacklightCompensationControlClassID: Int](./kcmiobacklightcompensationcontrolclassid.md)
+- [var kCMIOBlackLevelControlClassID: Int](./kcmioblacklevelcontrolclassid.md)
+- [var kCMIOBrightnessControlClassID: Int](./kcmiobrightnesscontrolclassid.md)
+- [var kCMIOContrastControlClassID: Int](./kcmiocontrastcontrolclassid.md)
+- [var kCMIOExposureControlClassID: Int](./kcmioexposurecontrolclassid.md)
+- [var kCMIOFocusControlClassID: Int](./kcmiofocuscontrolclassid.md)
+- [var kCMIOGainControlClassID: Int](./kcmiogaincontrolclassid.md)
+- [var kCMIOGammaControlClassID: Int](./kcmiogammacontrolclassid.md)
+- [var kCMIOHueControlClassID: Int](./kcmiohuecontrolclassid.md)
+- [var kCMIOIrisControlClassID: Int](./kcmioiriscontrolclassid.md)
+- [var kCMIONoiseReductionControlClassID: Int](./kcmionoisereductioncontrolclassid.md)
+- [var kCMIOOpticalFilterClassID: Int](./kcmioopticalfilterclassid.md)
+- [var kCMIOPowerLineFrequencyControlClassID: Int](./kcmiopowerlinefrequencycontrolclassid.md)
+- [var kCMIOSaturationControlClassID: Int](./kcmiosaturationcontrolclassid.md)
+- [var kCMIOSharpnessControlClassID: Int](./kcmiosharpnesscontrolclassid.md)
 
 
 ---

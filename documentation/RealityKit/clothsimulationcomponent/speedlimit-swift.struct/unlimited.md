@@ -1,7 +1,8 @@
 # unlimited
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No speed limit, cloth bodies can move at arbitrarily fast speeds.
 

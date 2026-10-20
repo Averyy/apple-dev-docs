@@ -1,7 +1,8 @@
 # packetCapacity
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of packets that the buffer can contain.
 
@@ -20,23 +21,28 @@ The total number of packets that the buffer can contain.
 var packetCapacity: AVAudioPacketCount { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAudioPacketCount packetCapacity;
+```
+
 ## See Also
 
-- [var byteCapacity: UInt32](avaudiocompressedbuffer/bytecapacity.md)
+### Getting audio buffer properties
+- [var byteCapacity: UInt32](./bytecapacity.md)
   The number of packets the buffer contains.
-- [var byteLength: UInt32](avaudiocompressedbuffer/bytelength.md)
+- [var byteLength: UInt32](./bytelength.md)
   The number of valid bytes in the buffer.
-- [var data: UnsafeMutableRawPointer](avaudiocompressedbuffer/data.md)
+- [var data: UnsafeMutableRawPointer](./data.md)
   The audio buffer’s data bytes.
-- [var maximumPacketSize: Int](avaudiocompressedbuffer/maximumpacketsize.md)
+- [var maximumPacketSize: Int](./maximumpacketsize.md)
   The maximum size of a packet, in bytes.
-- [var packetCount: AVAudioPacketCount](avaudiocompressedbuffer/packetcount.md)
+- [var packetCount: AVAudioPacketCount](./packetcount.md)
   The number of packets currently in the buffer.
-- [typealias AVAudioPacketCount](avaudiopacketcount.md)
+- [typealias AVAudioPacketCount](../avaudiopacketcount.md)
   The number of packets of audio data.
-- [var packetDescriptions: UnsafeMutablePointer<AudioStreamPacketDescription>?](avaudiocompressedbuffer/packetdescriptions.md)
+- [var packetDescriptions: UnsafeMutablePointer<AudioStreamPacketDescription>?](./packetdescriptions.md)
   The buffer’s array of packet descriptions.
-- [var packetDependencies: [AudioStreamPacketDependencyDescription]?](avaudiocompressedbuffer/packetdependencies-3a6ln.md)
+- [var packetDependencies: [AudioStreamPacketDependencyDescription]?](./packetdependencies-3a6ln.md)
   The buffer’s array of packet dependencies.
 
 

@@ -1,7 +1,8 @@
 # MTRPowerSourceBatCommonDesignation.designationCR123A
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.5+
@@ -16,6 +17,10 @@
 
 ```swift
 case designationCR123A
+```
+
+```c
+MTRPowerSourceBatCommonDesignationCR123A
 ```
 
 

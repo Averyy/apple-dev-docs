@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureDimension.fourK
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - Mac Catalyst 17.0+

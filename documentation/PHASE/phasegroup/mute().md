@@ -1,7 +1,8 @@
 # mute()
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Silences the group.
 
@@ -19,17 +20,22 @@ Silences the group.
 func mute()
 ```
 
+```objc
+- (void) mute;
+```
+
 ## See Also
 
-- [func unmute()](phasegroup/unmute.md)
+### Silencing Sounds
+- [func unmute()](./unmute%28%29.md)
   Restores the group’s volume.
-- [var isMuted: Bool](phasegroup/ismuted.md)
+- [var isMuted: Bool](./ismuted.md)
   A Boolean value that indicates whether the app silences the group.
-- [func solo()](phasegroup/solo.md)
+- [func solo()](./solo%28%29.md)
   Silences all other groups.
-- [func unsolo()](phasegroup/unsolo.md)
+- [func unsolo()](./unsolo%28%29.md)
   Restores the other groups’ volume.
-- [var isSoloed: Bool](phasegroup/issoloed.md)
+- [var isSoloed: Bool](./issoloed.md)
   A Boolean value that indicates whether the app silences all groups other than this group.
 
 

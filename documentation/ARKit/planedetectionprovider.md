@@ -1,7 +1,8 @@
 # PlaneDetectionProvider
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A source of live data about planes in a person’s surroundings.
 
@@ -21,37 +22,38 @@ Use this provider to indicate to ARKit the types of plane anchors for your app t
 ## Topics
 
 ### Detecting planes
-- [init(alignments: [PlaneAnchor.Alignment])](planedetectionprovider/init(alignments:).md)
+- [init(alignments: [PlaneAnchor.Alignment])](./planedetectionprovider/init%28alignments%29.md)
   Creates a plane detection provider for the types of planes you want to detect.
-- [var allAnchors: [PlaneAnchor]](planedetectionprovider/allanchors.md)
+- [var allAnchors: [PlaneAnchor]](./planedetectionprovider/allanchors.md)
   An array that contains all the plane provider’s anchors.
-- [var anchorUpdates: AnchorUpdateSequence<PlaneAnchor>](planedetectionprovider/anchorupdates.md)
+- [var anchorUpdates: AnchorUpdateSequence<PlaneAnchor>](./planedetectionprovider/anchorupdates.md)
   A sequence of updates to planes a provider detects.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](planedetectionprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./planedetectionprovider/requiredauthorizations.md)
   The types of authorizations necessary for detecting planes.
-- [static var isSupported: Bool](planedetectionprovider/issupported.md)
+- [static var isSupported: Bool](./planedetectionprovider/issupported.md)
   A Boolean value that indicates whether the current runtime environment supports plane detection providers.
 ### Inspecting a plane detection provider
-- [var alignments: [PlaneAnchor.Alignment]](planedetectionprovider/alignments.md)
+- [var alignments: [PlaneAnchor.Alignment]](./planedetectionprovider/alignments.md)
   The plane alignments that you configure a provider to detect.
-- [var state: DataProviderState](planedetectionprovider/state.md)
+- [var state: DataProviderState](./planedetectionprovider/state.md)
   The current status of data coming from a provider.
-- [var description: String](planedetectionprovider/description.md)
+- [var description: String](./planedetectionprovider/description.md)
   A textual representation of this plane detection provider.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [DataProvider](dataprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [DataProvider](./dataprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Placing content on detected planes](../visionos/placing-content-on-detected-planes.md)
+### Plane detection
+- [Placing content on detected planes](../visionOS/placing-content-on-detected-planes.md)
   Detect horizontal surfaces like tables and floors, as well as vertical planes like walls and doors.
-- [struct PlaneAnchor](planeanchor.md)
+- [struct PlaneAnchor](./planeanchor.md)
   An anchor that represents horizontal and vertical planes.
 
 

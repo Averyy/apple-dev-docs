@@ -1,11 +1,12 @@
 # CustomReflectable Implementations
 
-**Framework**: Objective-C Runtime
+**Framework**: Objective-C Runtime  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var customMirror: Mirror](objcbool/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
 
 
 ---

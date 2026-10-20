@@ -1,7 +1,8 @@
 # SKLabelHorizontalAlignmentMode.center
 
 **Framework**: SpriteKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Centers the text horizontally on the node’s origin.
 
@@ -10,7 +11,7 @@ Centers the text horizontally on the node’s origin.
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.9+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,16 @@ Centers the text horizontally on the node’s origin.
 case center
 ```
 
+```c
+SKLabelHorizontalAlignmentModeCenter
+```
+
 ## See Also
 
-- [SKLabelHorizontalAlignmentMode.left](sklabelhorizontalalignmentmode/left.md)
+### Constants
+- [SKLabelHorizontalAlignmentMode.left](./left.md)
   Positions the text so that the left side of the text is on the node’s origin.
-- [SKLabelHorizontalAlignmentMode.right](sklabelhorizontalalignmentmode/right.md)
+- [SKLabelHorizontalAlignmentMode.right](./right.md)
   Positions the text so that the right side of the text is on the node’s origin.
 
 

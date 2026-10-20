@@ -1,20 +1,27 @@
 # MPMoviePlayerTimedMetadataUserInfoKey
 
 **Framework**: Media Player  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An NSDictionary object containing the most recent `MPTimedMetadata` objects.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
-- tvOS ?+
+- iOS 4.0+ - Deprecated in 9.0
+- iPadOS 4.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS - Deprecated in 9.0
+
+> **Deprecated**: Use AVFoundation.
 
 ## Declaration
 
 ```swift
 let MPMoviePlayerTimedMetadataUserInfoKey: String
+```
+
+```c
+extern NSString * const MPMoviePlayerTimedMetadataUserInfoKey;
 ```
 
 

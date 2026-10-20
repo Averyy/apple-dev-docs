@@ -1,7 +1,8 @@
 # RemoveDevice
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an audio device from the audio box.
 
@@ -10,13 +11,13 @@ Removes an audio device from the audio box.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t RemoveDevice(IOUserAudioDevice *in_device);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -24,19 +25,20 @@ If removing the device succeeds, the device’s reference count decrements by on
 
 ## Parameters
 
-- `in_device`: The [`IOUserAudioDevice`](iouseraudiodevice.md) to disassociate from the box.
+- `in_device`: The [`IOUserAudioDevice`](../iouseraudiodevice.md) to disassociate from the box.
 
 ## See Also
 
-- [AddDevice](iouseraudiobox/adddevice.md)
+### Managing Box Contents
+- [AddDevice](./adddevice.md)
   Adds an audio device to the audio box.
-- [IOUserAudioDevice](iouseraudiodevice.md)
+- [IOUserAudioDevice](../iouseraudiodevice.md)
   An audio clock device object that handles the configurations for running I/O.
-- [AddClockDevice](iouseraudiobox/addclockdevice.md)
+- [AddClockDevice](./addclockdevice.md)
   Adds an audio clock device to the audio box.
-- [RemoveClockDevice](iouseraudiobox/removeclockdevice.md)
+- [RemoveClockDevice](./removeclockdevice.md)
   Adds an audio clock device to the audio box.
-- [IOUserAudioClockDevice](iouseraudioclockdevice.md)
+- [IOUserAudioClockDevice](../iouseraudioclockdevice.md)
   An audio clock device object, used to synchronize and perform I/O.
 
 

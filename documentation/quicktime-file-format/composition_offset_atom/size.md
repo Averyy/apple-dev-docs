@@ -1,19 +1,21 @@
 # Size
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer that specifies the number of bytes in the composition offset atom.
 
 ## See Also
 
-- [Type](composition_offset_atom/type.md)
+### Data fields
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Version](composition_offset_atom/version.md)
+- [Version](./version.md)
   A 1-byte specification of the version of this atom.
-- [Flags](composition_offset_atom/flags.md)
+- [Flags](./flags.md)
   A 3-byte space reserved for offset flags.
-- [Entry count](composition_offset_atom/entry_count.md)
+- [Entry count](./entry_count.md)
   A 32-bit unsigned integer that specifies the number of sample numbers in the array that follows.
 
 

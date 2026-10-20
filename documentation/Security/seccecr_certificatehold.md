@@ -1,7 +1,8 @@
 # SecCECR_CertificateHold
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var SecCECR_CertificateHold: Int32 { get }
+```
+
+```c
+#define SecCECR_CertificateHold
 ```
 
 

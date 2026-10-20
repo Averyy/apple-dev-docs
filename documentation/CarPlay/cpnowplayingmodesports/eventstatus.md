@@ -1,7 +1,8 @@
 # eventStatus
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A representation of the current event status. See
 
@@ -14,6 +15,10 @@ A representation of the current event status. See
 
 ```swift
 var eventStatus: CPNowPlayingSportsEventStatus? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) CPNowPlayingSportsEventStatus * eventStatus;
 ```
 
 

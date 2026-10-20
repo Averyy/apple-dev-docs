@@ -1,7 +1,8 @@
 # NSSplitView.DividerStyle.paneSplitter
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A thick style divider with a 3D appearance displays between subviews.
 
@@ -14,11 +15,16 @@ A thick style divider with a 3D appearance displays between subviews.
 case paneSplitter
 ```
 
+```c
+NSSplitViewDividerStylePaneSplitter
+```
+
 ## See Also
 
-- [NSSplitView.DividerStyle.thick](nssplitview/dividerstyle-swift.enum/thick.md)
+### Constants
+- [NSSplitView.DividerStyle.thick](./thick.md)
   A thick style divider displays between subviews.
-- [NSSplitView.DividerStyle.thin](nssplitview/dividerstyle-swift.enum/thin.md)
+- [NSSplitView.DividerStyle.thin](./thin.md)
   A thin style divider displays between subviews.
 
 

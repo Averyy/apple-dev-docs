@@ -1,6 +1,8 @@
 # Synchronizing custom video playback with SharePlay
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [SynchronizingCustomVideoPlaybackWithSharePlay.zip](https://docs-assets.developer.apple.com/published/97a85044b582/SynchronizingCustomVideoPlaybackWithSharePlay.zip)
 
 Keep a custom video pipeline in sync across devices by coordinating playback in SharePlay.
 
@@ -10,17 +12,19 @@ Keep a custom video pipeline in sync across devices by coordinating playback in 
 
 #### Overview
 
-In visionOS, SharePlay lets people share an experience in your app, whether they’re together on a FaceTime call or nearby in the same room. This functionality matters when a video displays something that everyone needs to see at the same time, like a clue appearing on a wall in an escape-room game. Apps that build their own video playback pipeline can support coordinated playback in a SharePlay session by routing playback through an [`AVDelegatingPlaybackCoordinator`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinator).
+In visionOS, SharePlay lets people share an experience in your app, whether they’re together on a FaceTime call or nearby in the same room. This functionality matters when a video displays something that everyone needs to see at the same time, like a clue appearing on a wall in an escape-room game. Apps that build their own video playback pipeline can support coordinated playback in a SharePlay session by routing playback through an [AVDelegatingPlaybackCoordinator](../AVFoundation/avdelegatingplaybackcoordinator.md).
 
 This pipeline has three parts: a renderer, a coordinator, and a synchronizer. The renderer decodes the video and draws its frames. The coordinator shares playback state with the group. The synchronizer controls the playback rate and position, which is how the app plays, pauses, and seeks.
 
 In this sample, participants watch a video together in a shared immersive space. The video plays across the surface of a custom undulating blob that ripples and shifts. When any participant plays, pauses, or seeks, the video updates on every device.
 
-> ❗ **Important**:  This sample is for apps that play media with their own player rather than [`AVPlayer`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avplayer). Apps that play video using `AVPlayer` should use [`AVPlayerPlaybackCoordinator`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avplayerplaybackcoordinator). For a full walkthrough, see [`Supporting coordinated media playback`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/supporting-coordinated-media-playback).
+[Video: A video of participants in a shared immersive space watching a movie play across the surface of an undulating blob.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/sync-custom-video-playback-with-shareplay.mp4)
 
-#### Join a Shareplay Session
+> ❗ **Important**:  This sample is for apps that play media with their own player rather than [AVPlayer](../AVFoundation/avplayer.md). Apps that play video using `AVPlayer` should use [AVPlayerPlaybackCoordinator](../AVFoundation/avplayerplaybackcoordinator.md). For a full walkthrough, see [Supporting coordinated media playback](../AVFoundation/supporting-coordinated-media-playback.md).
 
-To watch together, every participant’s device has to join the same SharePlay session and agree on what’s shared. A session starts from a group activity, so the app defines a single [`GroupActivity`](https://developer.apple.comhttps://developer.apple.com/documentation/groupactivities/groupactivity), `SyncCustomVideoPlaybackActivity`, that describes the shared experience. The activity carries `videoName` and `videoExtension`, so every device loads the same file from its own bundle, as seen here:
+#### Join a SharePlay session
+
+To watch together, every participant’s device has to join the same SharePlay session and agree on what’s shared. A session starts from a group activity, so the app defines a single [GroupActivity](../GroupActivities/groupactivity.md), `SyncCustomVideoPlaybackActivity`, that describes the shared experience. The activity carries `videoName` and `videoExtension`, so every device loads the same file from its own bundle, as seen here:
 
 ```swift
 nonisolated struct SyncCustomVideoPlaybackActivity: GroupActivity, Transferable {
@@ -39,9 +43,9 @@ nonisolated struct SyncCustomVideoPlaybackActivity: GroupActivity, Transferable 
 }
 ```
 
-The video plays in the immersive space, not in the window people use to join, so the app opts out of the default scene association by setting [`sceneAssociationBehavior`](https://developer.apple.comhttps://developer.apple.com/documentation/groupactivities/sceneassociationbehavior) to `.none`.
+The video plays in the immersive space, not in the window people use to join, so the app opts out of the default scene association by setting [sceneAssociationBehavior](../GroupActivities/sceneassociationbehavior.md) to `.none`.
 
-When a participant starts the activity, the system delivers a group session to the app on every participant’s device. The app receives the session by observing `SyncCustomVideoPlaybackActivity.sessions()`. When a session arrives, the app initializes the coordinated playback pipeline for the video the activity names, configures the session’s [`SystemCoordinator`](https://developer.apple.comhttps://developer.apple.com/documentation/groupactivities/systemcoordinator) to share the immersive space, then joins the SharePlay session, like this:
+When a participant starts the activity, the system delivers a group session to the app on every participant’s device. The app receives the session by observing `SyncCustomVideoPlaybackActivity.sessions()`. When a session arrives, the app initializes the coordinated playback pipeline for the video the activity names, configures the session’s [SystemCoordinator](../GroupActivities/systemcoordinator.md) to share the immersive space, then joins the SharePlay session, like this:
 
 ```swift
 // Await new sessions to arrive.
@@ -68,15 +72,15 @@ for await session in SyncCustomVideoPlaybackActivity.sessions() {
 }
 ```
 
-Passing the session to [`coordinateWithSession(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avplaybackcoordinator/coordinatewithsession(_:)) connects the coordinator to the SharePlay session, which carries playback state between this device and the others. Because the app builds the pipeline before it joins, the renderer is ready to apply the first command the coordinator issues.
+Passing the session to [coordinateWithSession(_:)](../AVFoundation/avplaybackcoordinator/coordinatewithsession%28_%29.md) connects the coordinator to the SharePlay session, which carries playback state between this device and the others. Because the app builds the pipeline before it joins, the renderer is ready to apply the first command the coordinator issues.
 
 > **Note**: Simulator has limited support for SharePlay, so playback can take several seconds to start after you tap the Play button.
 
-For more on building SharePlay apps in visionOS, see [`Implementing SharePlay for immersive spaces in visionOS`](https://developer.apple.comhttps://developer.apple.com/documentation/visionos/implementing-shareplay-for-immersive-spaces-in-visionos) and [`Building a guessing game for visionOS`](https://developer.apple.comhttps://developer.apple.com/documentation/groupactivities/building-a-guessing-game-for-visionos).
+For more on building SharePlay apps in visionOS, see [Implementing SharePlay for immersive spaces in visionOS](./implementing-shareplay-for-immersive-spaces-in-visionos.md) and [Building a guessing game for visionOS](../GroupActivities/building-a-guessing-game-for-visionos.md).
 
-#### Read and Decode the Frames
+#### Read and decode the frames
 
-A participant can seek to any point in the video, so the app has to start showing frames from the moment the person chooses rather than from the beginning. The sample’s `VideoSampleSource` opens the bundled video with an [`AVAssetReader`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avassetreader), starts reading at the requested position, and returns the reader and a provider that supplies the video frames one at a time. The code below demonstrates that process:
+A participant can seek to any point in the video, so the app has to start showing frames from the moment the person chooses rather than from the beginning. The sample’s `VideoSampleSource` opens the bundled video with an [AVAssetReader](../AVFoundation/avassetreader.md), starts reading at the requested position, and returns the reader and a provider that supplies the video frames one at a time. The code below demonstrates that process:
 
 ```swift
 // Build a reader, with its sample provider, positioned at the given time.
@@ -112,11 +116,11 @@ func makeReaderAndProvider(at startTime: CMTime) async throws -> sending (reader
 }
 ```
 
-The output settings request `IOSurface-backed` buffers in a pixel format the renderer can display. Setting [`timeRange`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avassetreader/timerange) lets decoding begin mid-video, and the renderer pulls each frame from the provider with [`next()`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avassetreaderoutput/provider/next()). Returning the reader alongside the provider lets the pump cancel it when it stops pulling frames.
+The output settings request `IOSurface-backed` buffers in a pixel format the renderer can display. Setting [timeRange](../AVFoundation/avassetreader/timerange.md) lets decoding begin mid-video, and the renderer pulls each frame from the provider with [next()](../AVFoundation/avassetreaderoutput/provider/next%28%29.md). Returning the reader alongside the provider lets the pump cancel it when it stops pulling frames.
 
-#### Render the Frames in Order
+#### Render the frames in order
 
-For the video to play smoothly without stale frames, samples reach the [`AVSampleBufferVideoRenderer`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avsamplebuffervideorenderer) in order. The renderer holds a queue of decoded frames, but it doesn’t decide when to show them. An [`AVSampleBufferRenderSynchronizer`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer) owns the timeline the renderer presents the decoded frames against. The `PlaybackRenderer` connects the two when it initializes, registering the video renderer with the synchronizer through [`sampleBufferReceiver(adding:)`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer/samplebufferreceiver(adding:)-rxap), which returns the receiver the pump enqueues into, like this:
+For the video to play smoothly without stale frames, samples reach the [AVSampleBufferVideoRenderer](../AVFoundation/avsamplebuffervideorenderer.md) in order. The renderer holds a queue of decoded frames, but it doesn’t decide when to show them. An [AVSampleBufferRenderSynchronizer](../AVFoundation/avsamplebufferrendersynchronizer.md) owns the timeline the renderer presents the decoded frames against. The `PlaybackRenderer` connects the two when it initializes, registering the video renderer with the synchronizer through [sampleBufferReceiver(adding:)](../AVFoundation/avsamplebufferrendersynchronizer/samplebufferreceiver%28adding%29-rxap.md), which returns the receiver the pump enqueues into, like this:
 
 ```swift
 self.pump = VideoSamplePump(
@@ -180,11 +184,11 @@ func start(at time: CMTime) async -> AsyncStream<SampleSourceStatus> {
 }
 ```
 
-Frames decode over time rather than all at once, so `start(at:)` returns an [`AsyncStream`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/asyncstream) immediately and reports the supply’s progress on it. The render task keeps decoding in the background, yielding `enqueued` as each frame reaches the queue, `finished` after it enqueues the last frame in the video, `failed` if the reader or receiver reports an error, or `suspended` when another playback command replaces the task. Because the task cancels the old reader as it exits, no frames from the previous position can reach the renderer.
+Frames decode over time rather than all at once, so `start(at:)` returns an [AsyncStream](../Swift/asyncstream.md) immediately and reports the supply’s progress on it. The render task keeps decoding in the background, yielding `enqueued` as each frame reaches the queue, `finished` after it enqueues the last frame in the video, `failed` if the reader or receiver reports an error, or `suspended` when another playback command replaces the task. Because the task cancels the old reader as it exits, no frames from the previous position can reach the renderer.
 
-#### Apply Playback Commands
+#### Apply playback commands
 
-The renderer has to respond to play, pause, and seek commands. This sample’s `PlaybackRenderer` applies each one by setting a rate and a time on the [`AVSampleBufferRenderSynchronizer`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer) it owns, as demonstrated below. The rate is the playback speed, where `0` pauses playback and `1` plays at normal speed, and the time is the position in the video. For example, to begin playback, `applyPlay` starts the pump if nothing is decoding yet, then sets the rate and time the group asked for.
+The renderer has to respond to play, pause, and seek commands. This sample’s `PlaybackRenderer` applies each one by setting a rate and a time on the [`AVSampleBufferRenderSynchronizer`](../AVFoundation/avsamplebufferrendersynchronizer.md) it owns, as demonstrated below. The rate is the playback speed, where `0` pauses playback and `1` plays at normal speed, and the time is the position in the video. For example, to begin playback, `applyPlay` starts the pump if nothing is decoding yet, then sets the rate and time the group asked for.
 
 ```swift
 private func applyPlay(rate: Float, time: CMTime, atHostTime: CMTime) async {
@@ -222,7 +226,7 @@ The pump decides which frames to decode, and the synchronizer decides when to sh
 
 The coordinator, described in the next section, issues each command: play, pause, seek, or buffer. Play, pause, and seek follow from something a participant does, whereas buffer tells the device that playback is about to start. Each command carries a completion handler that the renderer needs to call after it finishes handling that command, which is how the coordinator knows this device finished responding to it.
 
-Commands can arrive while the renderer is still applying the last one, and applying two at once would leave the synchronizer at the wrong rate or time. So each command has to run to completion before the next one starts. The renderer reads commands from an [`AsyncStream`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/asyncstream) on the main actor, in the order the coordinator issued them, so `handle` finishes one command before the loop pulls the next, as shown here:
+Commands can arrive while the renderer is still applying the last one, and applying two at once would leave the synchronizer at the wrong rate or time. So each command has to run to completion before the next one starts. The renderer reads commands from an [`AsyncStream`](../Swift/asyncstream.md) on the main actor, in the order the coordinator issued them, so `handle` finishes one command before the loop pulls the next, as shown here:
 
 ```swift
 // Commands flow from the coordinator's delegate to the renderer.
@@ -255,9 +259,9 @@ private func handle(_ command: Command) async {
 
 Play, pause, and seek all start with one participant’s action, which the coordinator turns into a command that every device receives.
 
-#### Coordinate Playback Commands
+#### Coordinate playback commands
 
-When a participant plays, pauses, or seeks, every device has to carry out that action, and the app has to respond to actions other participants take. The sample defines a `PlaybackCoordinator` that owns an [`AVDelegatingPlaybackCoordinator`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinator) and routes every action through it rather than changing playback directly. For example, when a participant plays, the app asks the coordinator for a rate change with [`coordinateRateChange(to:options:)`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinator/coordinateratechange(to:options:)), like this:
+When a participant plays, pauses, or seeks, every device has to carry out that action, and the app has to respond to actions other participants take. The sample defines a `PlaybackCoordinator` that owns an [`AVDelegatingPlaybackCoordinator`](../AVFoundation/avdelegatingplaybackcoordinator.md) and routes every action through it rather than changing playback directly. For example, when a participant plays, the app asks the coordinator for a rate change with [coordinateRateChange(to:options:)](../AVFoundation/avdelegatingplaybackcoordinator/coordinateratechange%28to,options%29.md), like this:
 
 ```swift
 init() {
@@ -277,9 +281,9 @@ func coordinatePlay() {
 }
 ```
 
-Passing a shared identifier to [`transitionToItem(withIdentifier:proposingInitialTimingBasedOn:)`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinator/transitiontoitem(withidentifier:proposinginitialtimingbasedon:)) keeps every device coordinating the same item, so a device joining midway adopts the group’s current rate and time.
+Passing a shared identifier to [transitionToItem(withIdentifier:proposingInitialTimingBasedOn:)](../AVFoundation/avdelegatingplaybackcoordinator/transitiontoitem%28withidentifier,proposinginitialtimingbasedon%29.md) keeps every device coordinating the same item, so a device joining midway adopts the group’s current rate and time.
 
-Calling `coordinatePlay()` doesn’t immediately start playback. Each device’s `AVDelegatingPlaybackCoordinator` calls its [`AVPlaybackCoordinatorPlaybackControlDelegate`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avplaybackcoordinatorplaybackcontroldelegate) with the command to perform, including on the device that made the request, as shown below. The sample’s `PlaybackControlDelegate` isn’t main-actor isolated, so it yields each command onto an [`AsyncStream`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/asyncstream) rather than touching the renderer directly. Playback starts when the renderer drains that command and sets the rate.
+Calling `coordinatePlay()` doesn’t immediately start playback. Each device’s `AVDelegatingPlaybackCoordinator` calls its [AVPlaybackCoordinatorPlaybackControlDelegate](../AVFoundation/avplaybackcoordinatorplaybackcontroldelegate.md) with the command to perform, including on the device that made the request, as shown below. The sample’s `PlaybackControlDelegate` isn’t main-actor isolated, so it yields each command onto an [`AsyncStream`](../Swift/asyncstream.md) rather than touching the renderer directly. Playback starts when the renderer drains that command and sets the rate.
 
 ```swift
 private nonisolated final class PlaybackControlDelegate: NSObject, AVPlaybackCoordinatorPlaybackControlDelegate {
@@ -322,15 +326,16 @@ A play command also carries the group’s host clock time, so every device begin
 
 ## See Also
 
-- [Building a guessing game for visionOS](../groupactivities/building-a-guessing-game-for-visionos.md)
+### SharePlay
+- [Building a guessing game for visionOS](../GroupActivities/building-a-guessing-game-for-visionos.md)
   Create a team-based guessing game for visionOS using Group Activities.
-- [Implementing SharePlay for immersive spaces in visionOS](implementing-shareplay-for-immersive-spaces-in-visionos.md)
+- [Implementing SharePlay for immersive spaces in visionOS](./implementing-shareplay-for-immersive-spaces-in-visionos.md)
   Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
-- [Configure your visionOS app for sharing with people nearby](../groupactivities/configure-your-app-for-sharing-with-people-nearby.md)
+- [Configure your visionOS app for sharing with people nearby](../GroupActivities/configure-your-app-for-sharing-with-people-nearby.md)
   Create shared experiences for people wearing Vision Pro in the same room and those on FaceTime.
-- [Adding spatial Persona support to an activity](../groupactivities/adding-spatial-persona-support-to-an-activity.md)
+- [Adding spatial Persona support to an activity](../GroupActivities/adding-spatial-persona-support-to-an-activity.md)
   Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
-- [Synchronizing group gameplay with TabletopKit](../tabletopkit/synchronizing-group-gameplay-with-tabletopkit.md)
+- [Synchronizing group gameplay with TabletopKit](../TabletopKit/synchronizing-group-gameplay-with-tabletopkit.md)
   Maintain game state across multiple players in a race to capture all the coins.
 
 

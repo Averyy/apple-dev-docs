@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized `NSString` object that contains no characters.
 
@@ -20,32 +21,37 @@ Returns an initialized `NSString` object that contains no characters.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 An initialized `NSString` object that contains no characters. The returned object may be different from the original receiver.
 
 ## See Also
 
-- [convenience init?(bytes: UnsafeRawPointer, length: Int, encoding: UInt)](nsstring/init(bytes:length:encoding:).md)
+### Creating and Initializing Strings
+- [convenience init?(bytes: UnsafeRawPointer, length: Int, encoding: UInt)](./init%28bytes,length,encoding%29.md)
   Returns an initialized `NSString` object containing a given number of bytes from a given buffer of bytes interpreted in a given encoding.
-- [convenience init?(bytesNoCopy: UnsafeMutableRawPointer, length: Int, encoding: UInt, freeWhenDone: Bool)](nsstring/init(bytesnocopy:length:encoding:freewhendone:).md)
+- [convenience init?(bytesNoCopy: UnsafeMutableRawPointer, length: Int, encoding: UInt, freeWhenDone: Bool)](./init%28bytesnocopy,length,encoding,freewhendone%29.md)
   Returns an initialized `NSString` object that contains a given number of bytes from a given buffer of bytes interpreted in a given encoding, and optionally frees the buffer.
-- [convenience init(characters: UnsafePointer<unichar>, length: Int)](nsstring/init(characters:length:).md)
+- [convenience init(characters: UnsafePointer<unichar>, length: Int)](./init%28characters,length%29.md)
   Returns an initialized `NSString` object that contains a given number of characters from a given C array of UTF-16 code units.
-- [convenience init(charactersNoCopy: UnsafeMutablePointer<unichar>, length: Int, freeWhenDone: Bool)](nsstring/init(charactersnocopy:length:freewhendone:).md)
+- [convenience init(charactersNoCopy: UnsafeMutablePointer<unichar>, length: Int, freeWhenDone: Bool)](./init%28charactersnocopy,length,freewhendone%29.md)
   Returns an initialized `NSString` object that contains a given number of characters from a given C array of UTF-16 code units.
-- [convenience init(string: String)](nsstring/init(string:)-210xa.md)
+- [convenience init(string: String)](./init%28string%29-210xa.md)
   Returns an `NSString` object initialized by copying the characters from another given string.
-- [convenience init(format: String, arguments: CVaListPointer)](nsstring/init(format:arguments:).md)
+- [convenience init(format: String, arguments: CVaListPointer)](./init%28format,arguments%29.md)
   Returns an `NSString` object initialized by using a given format string as a template into which the remaining argument values are substituted without any localization.
-- [convenience init(format: String, locale: Any?, arguments: CVaListPointer)](nsstring/init(format:locale:arguments:).md)
+- [convenience init(format: String, locale: Any?, arguments: CVaListPointer)](./init%28format,locale,arguments%29.md)
   Returns an `NSString` object initialized by using a given format string as a template into which the remaining argument values are substituted according to given locale information. This method is meant to be called from within a variadic function, where the argument list will be available.
-- [convenience init?(data: Data, encoding: UInt)](nsstring/init(data:encoding:).md)
+- [convenience init?(data: Data, encoding: UInt)](./init%28data,encoding%29.md)
   Returns an `NSString` object initialized by converting given data into UTF-16 code units using a given encoding.
-- [class func localizedUserNotificationString(forKey: String, arguments: [Any]?) -> String](nsstring/localizedusernotificationstring(forkey:arguments:).md)
+- [class func localizedUserNotificationString(forKey: String, arguments: [Any]?) -> String](./localizedusernotificationstring%28forkey,arguments%29.md)
   Returns a localized string intended for display in a notification alert.
-- [class func localizedStringWithFormat(NSString, any CVarArg...) -> Self](nsstring/localizedstringwithformat(_:_:).md)
-- [typealias unichar](unichar.md)
+- [class func localizedStringWithFormat(NSString, any CVarArg...) -> Self](./localizedstringwithformat%28_,_%29.md)
+- [typealias unichar](../unichar.md)
   Type for UTF-16 code units.
 
 

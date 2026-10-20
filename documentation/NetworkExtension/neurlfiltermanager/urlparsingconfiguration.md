@@ -1,7 +1,8 @@
 # urlParsingConfiguration
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property to configure the filter’s parser behavior.
 
@@ -35,15 +36,16 @@ manager.urlParsingConfiguration = config
 
 The parsing result is `example.com/%*?id=123#fragment`, where `"%*"` acts as the placeholder for the excluded path component. The presence of a placeholder indicates the original URL contained that component, but the parsing configuration excluded it.
 
-If the filter manager sets [`urlParsingRegularExpression`](neurlfiltermanager/urlparsingregularexpression.md), this configuration has no effect.
+If the filter manager sets [`urlParsingRegularExpression`](./urlparsingregularexpression.md), this configuration has no effect.
 
 ## See Also
 
-- [NEURLFilterManager.ParsingConfiguration](neurlfiltermanager/parsingconfiguration.md)
+### Customizing filter parsing behavior
+- [NEURLFilterManager.ParsingConfiguration](./parsingconfiguration.md)
   A type to configure the filter’s parser behavior.
-- [var urlParsingRegularExpression: String?](neurlfiltermanager/urlparsingregularexpression.md)
+- [var urlParsingRegularExpression: String?](./urlparsingregularexpression.md)
   A regular expression used for advanced URL parsing.
-- [func setURLParsingRegularExpression(String?) throws](neurlfiltermanager/seturlparsingregularexpression(_:).md)
+- [func setURLParsingRegularExpression(String?) throws](./seturlparsingregularexpression%28_%29.md)
   Sets a regular expression for use in URL parsing.
 
 

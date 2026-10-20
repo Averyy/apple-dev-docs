@@ -1,17 +1,22 @@
 # orderFrontStandardAboutPanel(options:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a standard About window with information from a given options dictionary.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func orderFrontStandardAboutPanel(options optionsDictionary: [NSApplication.AboutPanelOptionKey : Any] = [:])
+```
+
+```objc
+- (void) orderFrontStandardAboutPanelWithOptions:(NSDictionary<NSString *,id> *) optionsDictionary;
 ```
 
 #### Discussion
@@ -22,19 +27,20 @@ In addition to the keys in AboutPanelOptionKey, you may also include the followi
 
 ## Parameters
 
-- `optionsDictionary`: A dictionary whose keys define the contents of the About window. For a list of keys, see [`NSApplication.AboutPanelOptionKey`](nsapplication/aboutpaneloptionkey.md).
+- `optionsDictionary`: A dictionary whose keys define the contents of the About window. For a list of keys, see [`NSApplication.AboutPanelOptionKey`](./aboutpaneloptionkey.md).
 
 ## See Also
 
-- [func orderFrontColorPanel(Any?)](nsapplication/orderfrontcolorpanel(_:).md)
+### Managing Panels
+- [func orderFrontColorPanel(Any?)](./orderfrontcolorpanel%28_%29.md)
   Brings up the color panel, an instance of `NSColorPanel`.
-- [func orderFrontStandardAboutPanel(Any?)](nsapplication/orderfrontstandardaboutpanel(_:).md)
+- [func orderFrontStandardAboutPanel(Any?)](./orderfrontstandardaboutpanel%28_%29.md)
   Displays a standard About window.
-- [func orderFrontCharacterPalette(Any?)](nsapplication/orderfrontcharacterpalette(_:).md)
+- [func orderFrontCharacterPalette(Any?)](./orderfrontcharacterpalette%28_%29.md)
   Opens the character palette.
-- [func runPageLayout(Any?)](nsapplication/runpagelayout(_:).md)
+- [func runPageLayout(Any?)](./runpagelayout%28_%29.md)
   Displays the receiver’s page layout panel, an instance of `NSPageLayout`.
-- [NSApplication.AboutPanelOptionKey](nsapplication/aboutpaneloptionkey.md)
+- [NSApplication.AboutPanelOptionKey](./aboutpaneloptionkey.md)
   Keys to include in the options dictionary when displaying an About panel.
 
 

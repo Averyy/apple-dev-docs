@@ -1,7 +1,8 @@
 # direction
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout direction of the page indicators.
 
@@ -18,13 +19,18 @@ The layout direction of the page indicators.
 var direction: UIPageControl.Direction { get set }
 ```
 
+```objc
+@property (nonatomic, assign) UIPageControlDirection direction;
+```
+
 #### Discussion
 
-The default value of this property is [`UIPageControl.Direction.natural`](uipagecontrol/direction-swift.enum/natural.md).
+The default value of this property is [`UIPageControl.Direction.natural`](./direction-swift.enum/natural.md).
 
 ## See Also
 
-- [UIPageControl.Direction](uipagecontrol/direction-swift.enum.md)
+### Customizing the layout direction
+- [UIPageControl.Direction](./direction-swift.enum.md)
   Decribes the layout direction of a page control’s indicators.
 
 

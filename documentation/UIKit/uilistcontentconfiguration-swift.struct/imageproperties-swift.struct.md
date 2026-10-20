@@ -1,7 +1,8 @@
 # UIListContentConfiguration.ImageProperties
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Properties that affect the list content configuration’s image.
 
@@ -10,7 +11,7 @@ Properties that affect the list content configuration’s image.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,51 +22,52 @@ struct ImageProperties
 ## Topics
 
 ### Configuring image properties
-- [var preferredSymbolConfiguration: UIImage.SymbolConfiguration?](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/preferredsymbolconfiguration.md)
+- [var preferredSymbolConfiguration: UIImage.SymbolConfiguration?](./imageproperties-swift.struct/preferredsymbolconfiguration.md)
   The symbol configuration to use.
-- [var tintColor: UIColor?](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/tintcolor.md)
+- [var tintColor: UIColor?](./imageproperties-swift.struct/tintcolor.md)
   The tint color to apply to the image view.
-- [var tintColorTransformer: UIConfigurationColorTransformer?](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/tintcolortransformer.md)
+- [var tintColorTransformer: UIConfigurationColorTransformer?](./imageproperties-swift.struct/tintcolortransformer.md)
   The color transformer for resolving the tint color.
-- [func resolvedTintColor(for: UIColor) -> UIColor](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/resolvedtintcolor(for:).md)
+- [func resolvedTintColor(for: UIColor) -> UIColor](./imageproperties-swift.struct/resolvedtintcolor%28for%29.md)
   Generates the resolved tint color for the specified tint color, using the tint color and color transformer.
-- [var cornerRadius: CGFloat](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/cornerradius.md)
+- [var cornerRadius: CGFloat](./imageproperties-swift.struct/cornerradius.md)
   The preferred corner radius, using a continuous corner curve, for the image.
-- [var maximumSize: CGSize](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/maximumsize.md)
+- [var maximumSize: CGSize](./imageproperties-swift.struct/maximumsize.md)
   The maximum size for the image.
-- [var reservedLayoutSize: CGSize](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/reservedlayoutsize.md)
+- [var reservedLayoutSize: CGSize](./imageproperties-swift.struct/reservedlayoutsize.md)
   The layout size that the system reserves for the image, and then centers the image within.
-- [static let standardDimension: CGFloat](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/standarddimension.md)
+- [static let standardDimension: CGFloat](./imageproperties-swift.struct/standarddimension.md)
   The system standard layout dimension for reserved layout size.
-- [var accessibilityIgnoresInvertColors: Bool](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/accessibilityignoresinvertcolors.md)
+- [var accessibilityIgnoresInvertColors: Bool](./imageproperties-swift.struct/accessibilityignoresinvertcolors.md)
   A Boolean value that determines whether the image inverts its colors when the user turns on the Invert Colors accessibility setting.
 ### Instance Properties
-- [var strokeColor: UIColor?](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/strokecolor.md)
-- [var strokeColorTransformer: UIConfigurationColorTransformer?](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/strokecolortransformer.md)
-- [var strokeWidth: CGFloat](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/strokewidth.md)
+- [var strokeColor: UIColor?](./imageproperties-swift.struct/strokecolor.md)
+- [var strokeColorTransformer: UIConfigurationColorTransformer?](./imageproperties-swift.struct/strokecolortransformer.md)
+- [var strokeWidth: CGFloat](./imageproperties-swift.struct/strokewidth.md)
 ### Instance Methods
-- [func resolvedStrokeColor(for: UIColor) -> UIColor](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/resolvedstrokecolor(for:).md)
+- [func resolvedStrokeColor(for: UIColor) -> UIColor](./imageproperties-swift.struct/resolvedstrokecolor%28for%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../../Swift/customreflectable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var imageProperties: UIListContentConfiguration.ImageProperties](uilistcontentconfiguration-swift.struct/imageproperties-swift.property.md)
+### Customizing appearance
+- [var imageProperties: UIListContentConfiguration.ImageProperties](./imageproperties-swift.property.md)
   Properties for configuring the image.
-- [var textProperties: UIListContentConfiguration.TextProperties](uilistcontentconfiguration-swift.struct/textproperties-swift.property.md)
+- [var textProperties: UIListContentConfiguration.TextProperties](./textproperties-swift.property.md)
   Properties for configuring the primary text.
-- [var secondaryTextProperties: UIListContentConfiguration.TextProperties](uilistcontentconfiguration-swift.struct/secondarytextproperties.md)
+- [var secondaryTextProperties: UIListContentConfiguration.TextProperties](./secondarytextproperties.md)
   Properties for configuring the secondary text.
-- [UIListContentConfiguration.TextProperties](uilistcontentconfiguration-swift.struct/textproperties-swift.struct.md)
+- [UIListContentConfiguration.TextProperties](./textproperties-swift.struct.md)
   Properties that affect the list content configuration’s text.
 
 

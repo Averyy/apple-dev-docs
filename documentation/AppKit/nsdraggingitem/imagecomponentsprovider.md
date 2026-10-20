@@ -1,7 +1,8 @@
 # imageComponentsProvider
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of blocks that provide the dragging image components.
 
@@ -14,9 +15,13 @@ An array of blocks that provide the dragging image components.
 var imageComponentsProvider: (() -> [NSDraggingImageComponent])? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NSDraggingImageComponent *> * (^imageComponentsProvider)();
+```
+
 #### Discussion
 
-The dragging image is the composite of an array of [`NSDraggingImageComponent`](nsdraggingimagecomponent.md) objects.
+The dragging image is the composite of an array of [`NSDraggingImageComponent`](../nsdraggingimagecomponent.md) objects.
 
 The dragging image components aren’t set directly. Instead, use a block to generate the components and the system calls the block if necessary.
 
@@ -26,11 +31,12 @@ The system arranges the components in painting order. That is, the system paints
 
 ## See Also
 
-- [var imageComponents: [NSDraggingImageComponent]?](nsdraggingitem/imagecomponents.md)
+### Drag image components
+- [var imageComponents: [NSDraggingImageComponent]?](./imagecomponents.md)
   An array of dragging image components to use to create the drag image.
-- [NSDraggingItem.ImageComponentKey](nsdraggingitem/imagecomponentkey.md)
+- [NSDraggingItem.ImageComponentKey](./imagecomponentkey.md)
   Keys that identify components of a dragging image.
-- [var item: Any](nsdraggingitem/item.md)
+- [var item: Any](./item.md)
   The pasteboard reader or writer object dependent on the context where you use the dragging item.
 
 

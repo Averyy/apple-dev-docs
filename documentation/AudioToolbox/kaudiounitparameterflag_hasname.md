@@ -1,15 +1,20 @@
 # kAudioUnitParameterFlag_HasName
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var kAudioUnitParameterFlag_HasName: Int { get }
+```
+
+```c
+kAudioUnitParameterFlag_HasName
 ```
 
 

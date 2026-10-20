@@ -1,7 +1,8 @@
 # init(healthStore:device:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a new workout route builder.
 
@@ -19,22 +20,27 @@ Creates and returns a new workout route builder.
 init(healthStore: HKHealthStore, device: HKDevice?)
 ```
 
+```objc
+- (instancetype) initWithHealthStore:(HKHealthStore *) healthStore device:(HKDevice *) device;
+```
+
 #### Return Value
 
 A newly initialized workout route builder.
 
 ##### Discussion
 
-Use of this initializer is discouraged. Use [`seriesBuilder(for:)`](hkworkoutbuilder/seriesbuilder(for:).md) instead.
+Use of this initializer is discouraged. Use [`seriesBuilder(for:)`](../hkworkoutbuilder/seriesbuilder%28for%29.md) instead.
 
 ## Parameters
 
 - `healthStore`: The HealthKit store.
-- `device`: An object representing the device that provided the location data. Pass `nil` if the app is generating its own location data (for example, using [`Core Location`](https://developer.apple.com/documentation/corelocation)).
+- `device`: An object representing the device that provided the location data. Pass `nil` if the app is generating its own location data (for example, using [Core Location](../../CoreLocation/CoreLocation.md)).
 
 ## See Also
 
-- [func seriesBuilder(for: HKSeriesType) -> HKSeriesBuilder?](hkworkoutbuilder/seriesbuilder(for:).md)
+### Creating the builder
+- [func seriesBuilder(for: HKSeriesType) -> HKSeriesBuilder?](../hkworkoutbuilder/seriesbuilder%28for%29.md)
   Returns the series builder for the specified type, creating a new builder, if necessary.
 
 

@@ -1,7 +1,8 @@
 # VTMotionEstimationSession.BlockSize.blockSize16x16
 
 **Framework**: Video Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+

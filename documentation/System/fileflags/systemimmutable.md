@@ -1,7 +1,8 @@
 # systemImmutable
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 File may not be changed.
 

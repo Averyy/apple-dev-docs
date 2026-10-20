@@ -1,7 +1,8 @@
 # dateDecodingStrategy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strategy used when decoding dates from part of a JSON object.
 
@@ -22,11 +23,12 @@ var dateDecodingStrategy: JSONDecoder.DateDecodingStrategy { get set }
 
 #### Discussion
 
-The default strategy is the [`JSONDecoder.DateDecodingStrategy.deferredToDate`](jsondecoder/datedecodingstrategy-swift.enum/deferredtodate.md) strategy.
+The default strategy is the [`JSONDecoder.DateDecodingStrategy.deferredToDate`](./datedecodingstrategy-swift.enum/deferredtodate.md) strategy.
 
 ## See Also
 
-- [JSONDecoder.DateDecodingStrategy](jsondecoder/datedecodingstrategy-swift.enum.md)
+### Decoding Dates
+- [JSONDecoder.DateDecodingStrategy](./datedecodingstrategy-swift.enum.md)
   The strategies available for formatting dates when decoding them from JSON.
 
 

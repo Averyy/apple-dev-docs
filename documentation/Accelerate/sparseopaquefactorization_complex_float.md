@@ -1,23 +1,28 @@
 # SparseOpaqueFactorization_Complex_Float
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A semi-opaque type representing a matrix factorization in complex float.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct SparseOpaqueFactorization_Complex_Float
+```
+
+```c
+typedef struct { ... } SparseOpaqueFactorization_Complex_Float;
 ```
 
 #### Overview
@@ -26,12 +31,20 @@ Use the `SparseCleanup` function to free resources held by these objects.
 
 The object can be in one of the following states:
 
-1. Something went wrong with symbolic factorization, nothing is valid. - indicated by `.symbolicFactorization.status < 0`
-2. Symbolic factorization was good, but failed in numeric factorization initialization. - indicated by `.symbolicFactorization.status >= 0 && .status < 0 && .numericFactorization == NULL`
-- symbolic factorization may be used for future calls.
-3. Symbolic factorization was good, factor allocated/initialized correctly, but numeric factorization failed e.g. a Cholesky factorization of an indefinite matrix was attempted. - indicated by `.symbolicFactorization.status >= 0 && .status < 0 && .numericFactorization not NULL`
-- user may pass this object to `SparseRefactor_Double` with a modified matrix
-4. Symbolic and numeric factorizations are both good - indicated by `.status >= 0`
+1. Something went wrong with symbolic factorization, nothing is valid.
+
+   - indicated by `.symbolicFactorization.status < 0`
+2. Symbolic factorization was good, but failed in numeric factorization initialization.
+
+   - indicated by `.symbolicFactorization.status >= 0 && .status < 0 && .numericFactorization == NULL`
+   - symbolic factorization may be used for future calls.
+3. Symbolic factorization was good, factor allocated/initialized correctly, but numeric factorization failed e.g. a Cholesky factorization of an indefinite matrix was attempted.
+
+   - indicated by `.symbolicFactorization.status >= 0 && .status < 0 && .numericFactorization not NULL`
+   - user may pass this object to `SparseRefactor_Double` with a modified matrix
+4. Symbolic and numeric factorizations are both good
+
+   - indicated by `.status >= 0`
 
 - **`status`**: Indicates status of factorization object.
 - **`attributes`**: Flags associated with this factorization object. In particular, transpose field indicates whether object is considered to be factorization of A or A^T.
@@ -44,41 +57,42 @@ The object can be in one of the following states:
 ## Topics
 
 ### Initializers
-- [init()](sparseopaquefactorization_complex_float/init.md)
-- [init(status: SparseStatus_t, attributes: SparseAttributesComplex_t, symbolicFactorization: SparseOpaqueSymbolicFactorization, userFactorStorage: Bool, numericFactorization: UnsafeMutableRawPointer?, solveWorkspaceRequiredStatic: Int, solveWorkspaceRequiredPerRHS: Int)](sparseopaquefactorization_complex_float/init(status:attributes:symbolicfactorization:userfactorstorage:numericfactorization:solveworkspacerequiredstatic:solveworkspacerequiredperrhs:).md)
+- [init()](./sparseopaquefactorization_complex_float/init%28%29.md)
+- [init(status: SparseStatus_t, attributes: SparseAttributesComplex_t, symbolicFactorization: SparseOpaqueSymbolicFactorization, userFactorStorage: Bool, numericFactorization: UnsafeMutableRawPointer?, solveWorkspaceRequiredStatic: Int, solveWorkspaceRequiredPerRHS: Int)](./sparseopaquefactorization_complex_float/init%28status,attributes,symbolicfactorization,userfactorstorage,numericfactorization,solveworkspacerequiredstatic,solveworkspacerequiredperrhs%29.md)
 ### Instance Properties
-- [var attributes: SparseAttributesComplex_t](sparseopaquefactorization_complex_float/attributes.md)
+- [var attributes: SparseAttributesComplex_t](./sparseopaquefactorization_complex_float/attributes.md)
   A type representing the attributes of a matrix.
-- [var numericFactorization: UnsafeMutableRawPointer?](sparseopaquefactorization_complex_float/numericfactorization.md)
-- [var solveWorkspaceRequiredPerRHS: Int](sparseopaquefactorization_complex_float/solveworkspacerequiredperrhs.md)
-- [var solveWorkspaceRequiredStatic: Int](sparseopaquefactorization_complex_float/solveworkspacerequiredstatic.md)
-- [var status: SparseStatus_t](sparseopaquefactorization_complex_float/status.md)
+- [var numericFactorization: UnsafeMutableRawPointer?](./sparseopaquefactorization_complex_float/numericfactorization.md)
+- [var solveWorkspaceRequiredPerRHS: Int](./sparseopaquefactorization_complex_float/solveworkspacerequiredperrhs.md)
+- [var solveWorkspaceRequiredStatic: Int](./sparseopaquefactorization_complex_float/solveworkspacerequiredstatic.md)
+- [var status: SparseStatus_t](./sparseopaquefactorization_complex_float/status.md)
   Status field for a factorization.
-- [var symbolicFactorization: SparseOpaqueSymbolicFactorization](sparseopaquefactorization_complex_float/symbolicfactorization.md)
+- [var symbolicFactorization: SparseOpaqueSymbolicFactorization](./sparseopaquefactorization_complex_float/symbolicfactorization.md)
   A semi-opaque type representing symbolic matrix factorization.
-- [var userFactorStorage: Bool](sparseopaquefactorization_complex_float/userfactorstorage.md)
+- [var userFactorStorage: Bool](./sparseopaquefactorization_complex_float/userfactorstorage.md)
 
 ## See Also
 
-- [Solving systems using direct methods](solving-systems-using-direct-methods.md)
+### Solving systems with direct sparse methods
+- [Solving systems using direct methods](./solving-systems-using-direct-methods.md)
   Use direct methods to solve systems of equations where the coefficient matrix is sparse.
-- [struct SparseOpaqueFactorization_Double](sparseopaquefactorization_double.md)
+- [struct SparseOpaqueFactorization_Double](./sparseopaquefactorization_double.md)
   A structure that represents the factorization of a matrix of double-precision, floating-point values.
-- [struct SparseOpaqueFactorization_Float](sparseopaquefactorization_float.md)
+- [struct SparseOpaqueFactorization_Float](./sparseopaquefactorization_float.md)
   A structure that represents the factorization of a matrix of single-precision, floating-point values.
-- [struct SparseOpaqueFactorization_Complex_Double](sparseopaquefactorization_complex_double.md)
+- [struct SparseOpaqueFactorization_Complex_Double](./sparseopaquefactorization_complex_double.md)
   A semi-opaque type representing a matrix factorization in complex double.
-- [Sparse Matrix Factor Functions](sparse-matrix-factor-functions.md)
+- [Sparse Matrix Factor Functions](./sparse-matrix-factor-functions.md)
   Compute the factorization of a matrix.
-- [Sparse Direct Solving Functions (Matrix RHS)](sparse-direct-solving-functions-matrix-rhs.md)
+- [Sparse Direct Solving Functions (Matrix RHS)](./sparse-direct-solving-functions-matrix-rhs.md)
   Solve a system with a right-hand-side dense matrix using a factored sparse coefficient matrix.
-- [Sparse Direct Solving Functions (Vector RHS)](sparse-direct-solving-functions-vector-rhs.md)
+- [Sparse Direct Solving Functions (Vector RHS)](./sparse-direct-solving-functions-vector-rhs.md)
   Solve a system with a right-hand-side dense vector using a factored sparse coefficient matrix.
-- [Sparse Symbolic Factorization Functions](sparse-symbolic-factorization-functions.md)
+- [Sparse Symbolic Factorization Functions](./sparse-symbolic-factorization-functions.md)
   Calculate the symbolic factorization of a matrix, and solve systems using precalculated symbolic factorizations.
-- [Sparse Refactor Functions](sparse-refactor-functions.md)
+- [Sparse Refactor Functions](./sparse-refactor-functions.md)
   Recompute a factorization using the numerical data from a matrix.
-- [Subfactor Functions](subfactor-functions.md)
+- [Subfactor Functions](./subfactor-functions.md)
   Extract and work with subfactors.
 
 

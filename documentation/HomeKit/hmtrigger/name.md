@@ -1,7 +1,8 @@
 # name
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the trigger.
 
@@ -19,22 +20,28 @@ The name of the trigger.
 var name: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * name;
+```
+
 #### Discussion
 
 Trigger names should be set by the user.
 
 ## See Also
 
-- [HomeKit Developer Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/HomeKitDeveloperGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40015050)
-- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmtrigger/updatename(_:completionhandler:).md)
+### Related Documentation
+- [HomeKit Developer Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/HomeKitDeveloperGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40015050)
+### Managing Triggers
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](./updatename%28_,completionhandler%29.md)
   Updates the name of the trigger.
-- [var isEnabled: Bool](hmtrigger/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   State of the trigger.
-- [func enable(Bool, completionHandler: ((any Error)?) -> Void)](hmtrigger/enable(_:completionhandler:).md)
+- [func enable(Bool, completionHandler: ((any Error)?) -> Void)](./enable%28_,completionhandler%29.md)
   Changes the enabled state of the trigger.
-- [var lastFireDate: Date?](hmtrigger/lastfiredate.md)
+- [var lastFireDate: Date?](./lastfiredate.md)
   The last time this trigger fired.
-- [var uniqueIdentifier: UUID](hmtrigger/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./uniqueidentifier.md)
   A unique identifier for this trigger.
 
 

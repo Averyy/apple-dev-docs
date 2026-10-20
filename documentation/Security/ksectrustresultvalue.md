@@ -1,7 +1,8 @@
 # kSecTrustResultValue
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value represents the trust evaluation result.
 
@@ -20,9 +21,13 @@ A key whose value represents the trust evaluation result.
 let kSecTrustResultValue: CFString
 ```
 
+```c
+extern CFStringRef const kSecTrustResultValue;
+```
+
 #### Discussion
 
-The key is present after trust evaluation completes. Its value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) that holds one of the values listed in [`SecTrustResultType`](sectrustresulttype.md), indicating the outcome of the trust evaluation.
+The key is present after trust evaluation completes. Its value is a [`CFNumber`](../CoreFoundation/cfnumber.md) that holds one of the values listed in [`SecTrustResultType`](./sectrustresulttype.md), indicating the outcome of the trust evaluation.
 
 
 ---

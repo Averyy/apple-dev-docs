@@ -1,7 +1,8 @@
 # attachment
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The serial port attachment.
 
@@ -12,6 +13,10 @@ The serial port attachment.
 
 ```swift
 var attachment: VZSerialPortAttachment? { get set }
+```
+
+```objc
+@property (strong, nullable) VZSerialPortAttachment * attachment;
 ```
 
 

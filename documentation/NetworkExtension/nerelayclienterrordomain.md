@@ -1,7 +1,8 @@
 # NERelayClientErrorDomain
 
 **Framework**: Network Extension  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 let NERelayClientErrorDomain: String
+```
+
+```c
+extern NSString * const NERelayClientErrorDomain;
 ```
 
 

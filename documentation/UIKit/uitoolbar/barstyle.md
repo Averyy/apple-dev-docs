@@ -1,7 +1,8 @@
 # barStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The toolbar style that specifies its appearance.
 
@@ -17,13 +18,18 @@ The toolbar style that specifies its appearance.
 var barStyle: UIBarStyle { get set }
 ```
 
+```objc
+@property (nonatomic) UIBarStyle barStyle;
+```
+
 #### Discussion
 
-See [`UIBarStyle`](uibarstyle.md) for possible values. The default value is [`UIBarStyle.default`](uibarstyle/default.md).
+See [`UIBarStyle`](../uibarstyle.md) for possible values. The default value is [`UIBarStyle.default`](../uibarstyle/default.md).
 
 ## See Also
 
-- [enum UIBarStyle](uibarstyle.md)
+### Setting the bar’s style
+- [enum UIBarStyle](../uibarstyle.md)
   Defines the stylistic appearance of different types of views.
 
 

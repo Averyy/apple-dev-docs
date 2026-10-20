@@ -1,7 +1,8 @@
 # hasActiveUserGesture(in:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates if a user gesture is currently active in the specified tab.
 
@@ -18,6 +19,10 @@ Indicates if a user gesture is currently active in the specified tab.
 func hasActiveUserGesture(in tab: any WKWebExtensionTab) -> Bool
 ```
 
+```objc
+- (BOOL) hasActiveUserGestureInTab:(id<WKWebExtensionTab>) tab;
+```
+
 #### Discussion
 
 An active user gesture may influence the availability of certain permissions, such as `activeTab`. User gestures can be triggered by various user interactions with the web extension, including clicking on extension menu items, executing extension commands, or interacting with extension actions. A tab as having an active user gesture enables the extension to access features that require user interaction.
@@ -28,7 +33,8 @@ An active user gesture may influence the availability of certain permissions, su
 
 ## See Also
 
-- [func userGesturePerformed(in: any WKWebExtensionTab)](wkwebextensioncontext/usergestureperformed(in:).md)
+### Related Documentation
+- [func userGesturePerformed(in: any WKWebExtensionTab)](./usergestureperformed%28in%29.md)
   Should be called by the app when a user gesture is performed in a specific tab.
 
 

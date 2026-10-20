@@ -1,7 +1,8 @@
 # boundingBoxOfPath
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the smallest rectangle that contains the current path.
 
@@ -10,7 +11,7 @@ Returns the smallest rectangle that contains the current path.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ Returns the smallest rectangle that contains the current path.
 var boundingBoxOfPath: CGRect { get }
 ```
 
+```c
+extern CGRect CGContextGetPathBoundingBox(CGContextRef c);
+```
+
 #### Discussion
 
 The bounding box is the smallest rectangle completely enclosing all points in a path, including control points for Bézier cubic and quadratic curves.
 
 ## See Also
 
-- [var currentPointOfPath: CGPoint](cgcontext/currentpointofpath.md)
+### Examining the Current Graphics Path
+- [var currentPointOfPath: CGPoint](./currentpointofpath.md)
   Returns the current point in a non-empty path.
-- [var isPathEmpty: Bool](cgcontext/ispathempty.md)
+- [var isPathEmpty: Bool](./ispathempty.md)
   Indicates whether the current path contains any subpaths.
-- [func pathContains(CGPoint, mode: CGPathDrawingMode) -> Bool](cgcontext/pathcontains(_:mode:).md)
+- [func pathContains(CGPoint, mode: CGPathDrawingMode) -> Bool](./pathcontains%28_,mode%29.md)
   Checks to see whether the specified point is contained in the current path.
 
 

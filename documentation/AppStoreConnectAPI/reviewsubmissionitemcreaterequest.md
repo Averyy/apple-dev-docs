@@ -1,7 +1,8 @@
 # ReviewSubmissionItemCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a review submission item.
 
@@ -10,14 +11,14 @@ The request body you use to create a review submission item.
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmissionItemCreateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object ReviewSubmissionItemCreateRequest.Data](reviewsubmissionitemcreaterequest/data-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data](./reviewsubmissionitemcreaterequest/data-data.dictionary.md)
   The request body you use to create a review submission item.
 
 ## Properties
@@ -26,11 +27,12 @@ object ReviewSubmissionItemCreateRequest
 
 ## See Also
 
-- [object ReviewSubmissionItemUpdateRequest](reviewsubmissionitemupdaterequest.md)
+### Objects
+- [object ReviewSubmissionItemUpdateRequest](./reviewsubmissionitemupdaterequest.md)
   The request body you use to update a review submission item update request.
-- [object ReviewSubmissionItemsResponse](reviewsubmissionitemsresponse.md)
+- [object ReviewSubmissionItemsResponse](./reviewsubmissionitemsresponse.md)
   The response body for endpoints that list items in a review submission.
-- [object ReviewSubmissionItemResponse](reviewsubmissionitemresponse.md)
+- [object ReviewSubmissionItemResponse](./reviewsubmissionitemresponse.md)
   The response body for endpoints that create, read, or modify a single review submission item.
 
 

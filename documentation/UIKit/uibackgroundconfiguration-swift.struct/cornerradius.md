@@ -1,7 +1,8 @@
 # cornerRadius
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred corner radius, using a continuous corner curve, for the background and stroke.
 
@@ -10,7 +11,7 @@ The preferred corner radius, using a continuous corner curve, for the background
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,33 +27,34 @@ If the view is too small to fit the requested radius, the system adjusts the cor
 
 ## See Also
 
-- [var customView: UIView?](uibackgroundconfiguration-swift.struct/customview.md)
+### Customizing the background
+- [var customView: UIView?](./customview.md)
   A custom view for the background.
-- [var backgroundInsets: NSDirectionalEdgeInsets](uibackgroundconfiguration-swift.struct/backgroundinsets.md)
+- [var backgroundInsets: NSDirectionalEdgeInsets](./backgroundinsets.md)
   The insets (or outsets, if negative) for the background and stroke, relative to the edges of the containing view.
-- [var edgesAddingLayoutMarginsToBackgroundInsets: NSDirectionalRectEdge](uibackgroundconfiguration-swift.struct/edgesaddinglayoutmarginstobackgroundinsets.md)
+- [var edgesAddingLayoutMarginsToBackgroundInsets: NSDirectionalRectEdge](./edgesaddinglayoutmarginstobackgroundinsets.md)
   The edges on which the configuration adds the containing view’s layout margins to the background insets.
-- [var backgroundColor: UIColor?](uibackgroundconfiguration-swift.struct/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./backgroundcolor.md)
   The color of the background.
-- [var backgroundColorTransformer: UIConfigurationColorTransformer?](uibackgroundconfiguration-swift.struct/backgroundcolortransformer.md)
+- [var backgroundColorTransformer: UIConfigurationColorTransformer?](./backgroundcolortransformer.md)
   The color transformer for resolving the background color.
-- [func resolvedBackgroundColor(for: UIColor) -> UIColor](uibackgroundconfiguration-swift.struct/resolvedbackgroundcolor(for:).md)
+- [func resolvedBackgroundColor(for: UIColor) -> UIColor](./resolvedbackgroundcolor%28for%29.md)
   Generates the resolved background color for the specified tint color, using the background color and color transformer.
-- [var visualEffect: UIVisualEffect?](uibackgroundconfiguration-swift.struct/visualeffect.md)
+- [var visualEffect: UIVisualEffect?](./visualeffect.md)
   The visual effect that the configuration applies to the background.
-- [var shadowProperties: UIShadowProperties](uibackgroundconfiguration-swift.struct/shadowproperties.md)
-- [struct UIShadowProperties](uishadowproperties-swift.struct.md)
-- [var strokeColor: UIColor?](uibackgroundconfiguration-swift.struct/strokecolor.md)
+- [var shadowProperties: UIShadowProperties](./shadowproperties.md)
+- [struct UIShadowProperties](../uishadowproperties-swift.struct.md)
+- [var strokeColor: UIColor?](./strokecolor.md)
   The color of the stroke.
-- [var strokeColorTransformer: UIConfigurationColorTransformer?](uibackgroundconfiguration-swift.struct/strokecolortransformer.md)
+- [var strokeColorTransformer: UIConfigurationColorTransformer?](./strokecolortransformer.md)
   The color transformer for resolving the stroke color.
-- [func resolvedStrokeColor(for: UIColor) -> UIColor](uibackgroundconfiguration-swift.struct/resolvedstrokecolor(for:).md)
+- [func resolvedStrokeColor(for: UIColor) -> UIColor](./resolvedstrokecolor%28for%29.md)
   Generates the resolved stroke color for the specified tint color, using the stroke color and color transformer.
-- [var strokeWidth: CGFloat](uibackgroundconfiguration-swift.struct/strokewidth.md)
+- [var strokeWidth: CGFloat](./strokewidth.md)
   The width of the stroke.
-- [var strokeOutset: CGFloat](uibackgroundconfiguration-swift.struct/strokeoutset.md)
+- [var strokeOutset: CGFloat](./strokeoutset.md)
   The outset (or inset, if negative) for the stroke.
-- [var image: UIImage?](uibackgroundconfiguration-swift.struct/image.md)
+- [var image: UIImage?](./image.md)
   The image displayed in the view’s background.
 
 

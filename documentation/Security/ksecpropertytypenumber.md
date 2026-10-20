@@ -1,7 +1,8 @@
 # kSecPropertyTypeNumber
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies a key whose value is a number.
 
@@ -12,6 +13,10 @@ Specifies a key whose value is a number.
 
 ```swift
 let kSecPropertyTypeNumber: CFString
+```
+
+```c
+extern CFStringRef const kSecPropertyTypeNumber;
 ```
 
 

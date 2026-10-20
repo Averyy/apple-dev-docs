@@ -1,7 +1,8 @@
 # init(dictionary:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated dictionary and adds to it objects from another given dictionary.
 

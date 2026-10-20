@@ -1,7 +1,8 @@
 # snapshot()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A momentary snapshot of all observers added to the collection thus far, that can be assigned to an observable using `-[NSObject setSharedObservers:]`
 
@@ -18,6 +19,10 @@ A momentary snapshot of all observers added to the collection thus far, that can
 
 ```swift
 func snapshot() -> NSKeyValueSharedObserversSnapshot
+```
+
+```objc
+- (NSKeyValueSharedObserversSnapshot *) snapshot;
 ```
 
 

@@ -1,7 +1,8 @@
 # fitted(horizontal:vertical:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -20,8 +21,9 @@ func fitted(horizontal: Bool, vertical: Bool) -> some PresentationSizing
 
 ## See Also
 
-- [func proposedSize(for: PresentationSizingRoot, context: PresentationSizingContext) -> ProposedViewSize](presentationsizing/proposedsize(for:context:).md)
-- [func sticky(horizontal: Bool, vertical: Bool) -> some PresentationSizing](presentationsizing/sticky(horizontal:vertical:).md)
+### Creating custom presentation size
+- [func proposedSize(for: PresentationSizingRoot, context: PresentationSizingContext) -> ProposedViewSize](./proposedsize%28for,context%29.md)
+- [func sticky(horizontal: Bool, vertical: Bool) -> some PresentationSizing](./sticky%28horizontal,vertical%29.md)
   Modifies self to be sticky in the specified dimensions — growing, but not shrinking.
 
 

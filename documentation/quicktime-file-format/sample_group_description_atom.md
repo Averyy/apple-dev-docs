@@ -1,13 +1,14 @@
 # Sample group description atom ('sgpd')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that gives information about the characteristics of sample groups.
 
 ## Mentions
 
-- [Representing encoder delay explicitly](example_representing_encoder_delay_explicitly.md)
+- [Representing encoder delay explicitly](./example_representing_encoder_delay_explicitly.md)
 
 #### Overview
 
@@ -23,38 +24,39 @@ The layout of the sample group atom is as follows:
 
 | Sample group description atom | Bytes |
 | --- | --- |
-| [`Size`](sample_group_description_atom/size.md) | 4 |
-| [`Type`](sample_group_description_atom/type.md) = `'sgpd'` | 4 |
-| [`Version`](sample_group_description_atom/version.md) | 1 |
-| [`Flags`](sample_group_description_atom/flags.md) | 3 |
-| [`Grouping type`](sample_group_description_atom/grouping_type.md) | 4 |
-| [`Default length`](sample_group_description_atom/default_length.md) | 4 |
-| [`Entry count`](sample_group_description_atom/entry_count.md) | 4 |
-| [`Payload data`](sample_group_description_atom/payload_data.md) | variable |
+| [`Size`](./sample_group_description_atom/size.md) | 4 |
+| [`Type`](./sample_group_description_atom/type.md) = `'sgpd'` | 4 |
+| [`Version`](./sample_group_description_atom/version.md) | 1 |
+| [`Flags`](./sample_group_description_atom/flags.md) | 3 |
+| [`Grouping type`](./sample_group_description_atom/grouping_type.md) | 4 |
+| [`Default length`](./sample_group_description_atom/default_length.md) | 4 |
+| [`Entry count`](./sample_group_description_atom/entry_count.md) | 4 |
+| [`Payload data`](./sample_group_description_atom/payload_data.md) | variable |
 
 ## Topics
 
 ### Data fields
-- [Size](sample_group_description_atom/size.md)
+- [Size](./sample_group_description_atom/size.md)
   A 32-bit integer that specifies the number of bytes in this sample group description atom.
-- [Type](sample_group_description_atom/type.md)
+- [Type](./sample_group_description_atom/type.md)
   A 32-bit integer that identifies the atom type.
-- [Version](sample_group_description_atom/version.md)
+- [Version](./sample_group_description_atom/version.md)
   A 1-byte specification of the version of this sample group description.
-- [Flags](sample_group_description_atom/flags.md)
+- [Flags](./sample_group_description_atom/flags.md)
   A 3-byte reserved space.
-- [Grouping type](sample_group_description_atom/grouping_type.md)
+- [Grouping type](./sample_group_description_atom/grouping_type.md)
   A 32-bit integer that identifies the grouping type of this sample group description.
-- [Default length](sample_group_description_atom/default_length.md)
+- [Default length](./sample_group_description_atom/default_length.md)
   A 32-bit integer indicating the length of the group entry in the payload data.
-- [Entry count](sample_group_description_atom/entry_count.md)
+- [Entry count](./sample_group_description_atom/entry_count.md)
   A 32-bit integer giving the number of entries in the payload data field.
-- [Payload data](sample_group_description_atom/payload_data.md)
+- [Payload data](./sample_group_description_atom/payload_data.md)
   A 16-bit signed integer giving the roll distance.
 
 ## See Also
 
-- [Sample-to-group atom ('sbgp')](sample-to-group_atom.md)
+### Sample group structures
+- [Sample-to-group atom ('sbgp')](./sample-to-group_atom.md)
   An atom that associates a sample with a sample group description.
 
 

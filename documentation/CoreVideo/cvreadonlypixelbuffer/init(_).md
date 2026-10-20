@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a read-only pixel buffer by consuming a mutable pixel buffer value.
 

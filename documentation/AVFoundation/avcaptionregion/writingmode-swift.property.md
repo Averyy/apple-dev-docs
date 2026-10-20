@@ -1,7 +1,8 @@
 # writingMode
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block and inline progression direction of the region.
 
@@ -17,9 +18,14 @@ The block and inline progression direction of the region.
 var writingMode: AVCaptionRegion.WritingMode { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCaptionRegionWritingMode writingMode;
+```
+
 ## See Also
 
-- [AVCaptionRegion.WritingMode](avcaptionregion/writingmode-swift.enum.md)
+### Accessing the writing mode
+- [AVCaptionRegion.WritingMode](./writingmode-swift.enum.md)
   Constants that indicate the writing mode for a region.
 
 

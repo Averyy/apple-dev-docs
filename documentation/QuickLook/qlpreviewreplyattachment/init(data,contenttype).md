@@ -1,7 +1,8 @@
 # init(data:contentType:)
 
 **Framework**: Quick Look  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+
@@ -13,6 +14,10 @@
 
 ```swift
 init(data: Data, contentType: UTType)
+```
+
+```objc
+- (instancetype) initWithData:(NSData *) data contentType:(UTType *) contentType;
 ```
 
 #### Discussion

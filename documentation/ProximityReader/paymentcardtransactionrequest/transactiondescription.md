@@ -1,7 +1,8 @@
 # transactionDescription
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional description of the current transaction meant to provide more context, such as a recurring payment being setup or a surcharge applied.
 
@@ -18,19 +19,20 @@ var transactionDescription: PaymentCardTransactionRequest.TransactionAmountDescr
 
 #### Discussion
 
-This attribute is only displayed when the [`PaymentCardTransactionRequest.TransactionType`](paymentcardtransactionrequest/transactiontype.md) is compatible with the [`PaymentCardTransactionRequest.TransactionAmountDescription`](paymentcardtransactionrequest/transactionamountdescription.md) use case.
+This attribute is only displayed when the [`PaymentCardTransactionRequest.TransactionType`](./transactiontype.md) is compatible with the [`PaymentCardTransactionRequest.TransactionAmountDescription`](./transactionamountdescription.md) use case.
 
 ## See Also
 
-- [let amount: Decimal](paymentcardtransactionrequest/amount.md)
+### Getting the transaction details
+- [let amount: Decimal](./amount.md)
   The amount of the purchase or refund in the specified currency.
-- [let currencyCode: String](paymentcardtransactionrequest/currencycode.md)
+- [let currencyCode: String](./currencycode.md)
   The ISO 4217 code that indicates the currency type.
-- [let type: PaymentCardTransactionRequest.TransactionType](paymentcardtransactionrequest/type.md)
+- [let type: PaymentCardTransactionRequest.TransactionType](./type.md)
   The type of transaction, either a purchase or a refund.
-- [PaymentCardTransactionRequest.TransactionType](paymentcardtransactionrequest/transactiontype.md)
+- [PaymentCardTransactionRequest.TransactionType](./transactiontype.md)
   The type of transaction to perform.
-- [PaymentCardTransactionRequest.TransactionAmountDescription](paymentcardtransactionrequest/transactionamountdescription.md)
+- [PaymentCardTransactionRequest.TransactionAmountDescription](./transactionamountdescription.md)
   Values that provide additional information about the transaction amount.
 
 

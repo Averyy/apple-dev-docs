@@ -1,7 +1,8 @@
 # withNoLimits()
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and initializes a new range object that encompasses all possible values.
 
@@ -10,7 +11,7 @@ Creates and initializes a new range object that encompasses all possible values.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,21 +21,26 @@ Creates and initializes a new range object that encompasses all possible values.
 class func withNoLimits() -> Self
 ```
 
+```objc
++ (instancetype) rangeWithNoLimits;
+```
+
 #### Return Value
 
 A newly initialized range object whose minimum value is `—Inf` and whose maximum value is `+Inf`.
 
 ## See Also
 
-- [convenience init(value: CGFloat, variance: CGFloat)](skrange/init(value:variance:).md)
+### Creating a Range Object
+- [convenience init(value: CGFloat, variance: CGFloat)](./init%28value,variance%29.md)
   Creates and initializes a new range object using a value and a maximum distance from that value.
-- [convenience init(lowerLimit: CGFloat)](skrange/init(lowerlimit:).md)
+- [convenience init(lowerLimit: CGFloat)](./init%28lowerlimit%29.md)
   Creates and initializes a new range object that specifies only a minimum value.
-- [convenience init(upperLimit: CGFloat)](skrange/init(upperlimit:).md)
+- [convenience init(upperLimit: CGFloat)](./init%28upperlimit%29.md)
   Creates and initializes a new range object that specifies only a maximum value.
-- [convenience init(constantValue: CGFloat)](skrange/init(constantvalue:).md)
+- [convenience init(constantValue: CGFloat)](./init%28constantvalue%29.md)
   Creates and initializes a new range object that specifies a constant value.
-- [init(lowerLimit: CGFloat, upperLimit: CGFloat)](skrange/init(lowerlimit:upperlimit:).md)
+- [init(lowerLimit: CGFloat, upperLimit: CGFloat)](./init%28lowerlimit,upperlimit%29.md)
   Initializes a new range object.
 
 

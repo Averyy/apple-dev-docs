@@ -1,7 +1,8 @@
 # kSpeechOutputToFileURLProperty
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Set the speech output destination to a file or to the computer’s speakers.
 
@@ -14,11 +15,15 @@ Set the speech output destination to a file or to the computer’s speakers.
 let kSpeechOutputToFileURLProperty: CFString
 ```
 
+```c
+const CFStringRef kSpeechOutputToFileURLProperty;
+```
+
 #### Discussion
 
 The value associated with this property is a `CFURL` object. To write the speech output to a file, use the file’s `CFURLRef`; to generate the sound through the computer’s speakers, use `NULL`.
 
-This property works with the [`SetSpeechProperty(_:_:_:)`](1459256-setspeechproperty.md) function.
+This property works with the [`SetSpeechProperty(_:_:_:)`](./api-1459256-setspeechproperty.md) function.
 
 
 ---

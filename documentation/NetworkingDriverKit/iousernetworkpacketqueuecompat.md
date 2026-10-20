@@ -1,46 +1,47 @@
 # IOUserNetworkPacketQueueCompat
 
 **Framework**: NetworkingDriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 class IOUserNetworkPacketQueueCompat;
 ```
 
 ## Topics
 
 ### Instance Methods
-- [CopyDataQueue](iousernetworkpacketqueuecompat/copydataqueue.md)
-- [DequeuePacket](iousernetworkpacketqueuecompat/dequeuepacket.md)
-- [DequeuePackets](iousernetworkpacketqueuecompat/dequeuepackets.md)
-- [EnqueuePacket](iousernetworkpacketqueuecompat/enqueuepacket.md)
-- [EnqueuePackets](iousernetworkpacketqueuecompat/enqueuepackets-8ny2f.md)
-- [SetDataQueue](iousernetworkpacketqueuecompat/setdataqueue.md)
-- [SetEnable](iousernetworkpacketqueuecompat/setenable-69pix.md)
-- [SetPacketBufferPool](iousernetworkpacketqueuecompat/setpacketbufferpool.md)
-- [SetPacketDirection](iousernetworkpacketqueuecompat/setpacketdirection.md)
-- [enqueuePackets](iousernetworkpacketqueuecompat/enqueuepackets-b3sn.md)
-- [free](iousernetworkpacketqueuecompat/free.md)
-- [init](iousernetworkpacketqueuecompat/init.md)
-- [requestDequeue](iousernetworkpacketqueuecompat/requestdequeue.md)
-- [requestEnqueue](iousernetworkpacketqueuecompat/requestenqueue.md)
-- [setEnable](iousernetworkpacketqueuecompat/setenable-1kf1k.md)
-- [setPacketPoller](iousernetworkpacketqueuecompat/setpacketpoller.md)
+- [CopyDataQueue](./iousernetworkpacketqueuecompat/copydataqueue.md)
+- [DequeuePacket](./iousernetworkpacketqueuecompat/dequeuepacket.md)
+- [DequeuePackets](./iousernetworkpacketqueuecompat/dequeuepackets.md)
+- [EnqueuePacket](./iousernetworkpacketqueuecompat/enqueuepacket.md)
+- [EnqueuePackets](./iousernetworkpacketqueuecompat/enqueuepackets-8ny2f.md)
+- [SetDataQueue](./iousernetworkpacketqueuecompat/setdataqueue.md)
+- [SetEnable](./iousernetworkpacketqueuecompat/setenable-69pix.md)
+- [SetPacketBufferPool](./iousernetworkpacketqueuecompat/setpacketbufferpool.md)
+- [SetPacketDirection](./iousernetworkpacketqueuecompat/setpacketdirection.md)
+- [enqueuePackets](./iousernetworkpacketqueuecompat/enqueuepackets-b3sn.md)
+- [free](./iousernetworkpacketqueuecompat/free.md)
+- [init](./iousernetworkpacketqueuecompat/init.md)
+- [requestDequeue](./iousernetworkpacketqueuecompat/requestdequeue.md)
+- [requestEnqueue](./iousernetworkpacketqueuecompat/requestenqueue.md)
+- [setEnable](./iousernetworkpacketqueuecompat/setenable-1kf1k.md)
+- [setPacketPoller](./iousernetworkpacketqueuecompat/setpacketpoller.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](../driverkit/osobject.md)
+- [OSObject](../DriverKit/osobject.md)
 ### Inherited By
-- [IOUserNetworkRxCompletionQueueCompat](iousernetworkrxcompletionqueuecompat.md)
-- [IOUserNetworkRxSubmissionQueueCompat](iousernetworkrxsubmissionqueuecompat.md)
-- [IOUserNetworkTxCompletionQueueCompat](iousernetworktxcompletionqueuecompat.md)
-- [IOUserNetworkTxSubmissionQueueCompat](iousernetworktxsubmissionqueuecompat.md)
+- [IOUserNetworkRxCompletionQueueCompat](./iousernetworkrxcompletionqueuecompat.md)
+- [IOUserNetworkRxSubmissionQueueCompat](./iousernetworkrxsubmissionqueuecompat.md)
+- [IOUserNetworkTxCompletionQueueCompat](./iousernetworktxcompletionqueuecompat.md)
+- [IOUserNetworkTxSubmissionQueueCompat](./iousernetworktxsubmissionqueuecompat.md)
 
 
 ---

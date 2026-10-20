@@ -1,7 +1,8 @@
 # Float16.SIMD8Storage.Scalar
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 14.0+

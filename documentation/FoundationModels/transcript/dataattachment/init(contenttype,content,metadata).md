@@ -1,7 +1,8 @@
 # init(contentType:content:metadata:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data attachment with the content type, content, and metadata you provide.
 

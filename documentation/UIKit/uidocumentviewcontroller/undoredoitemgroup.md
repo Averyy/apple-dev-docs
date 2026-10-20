@@ -1,7 +1,8 @@
 # undoRedoItemGroup
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The group that contains the undo/redo buttons that this view controller adds to the navigation bar.
 
@@ -15,6 +16,10 @@ The group that contains the undo/redo buttons that this view controller adds to 
 
 ```swift
 var undoRedoItemGroup: UIBarButtonItemGroup { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIBarButtonItemGroup * undoRedoItemGroup;
 ```
 
 #### Discussion

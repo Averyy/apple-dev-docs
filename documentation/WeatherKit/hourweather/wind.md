@@ -1,7 +1,8 @@
 # wind
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Wind data describing the wind speed, direction, and gust.
 

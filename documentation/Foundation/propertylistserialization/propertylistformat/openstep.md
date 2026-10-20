@@ -1,7 +1,8 @@
 # PropertyListSerialization.PropertyListFormat.openStep
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies the ASCII property list format inherited from the OpenStep APIs.
 
@@ -20,15 +21,20 @@ Specifies the ASCII property list format inherited from the OpenStep APIs.
 case openStep
 ```
 
+```c
+NSPropertyListOpenStepFormat
+```
+
 #### Discussion
 
 > ❗ **Important**:  The `NSPropertyListOpenStepFormat` constant is not supported for writing. It can be used only for reading old-style property lists.
 
 ## See Also
 
-- [PropertyListSerialization.PropertyListFormat.xml](propertylistserialization/propertylistformat/xml.md)
+### Constants
+- [PropertyListSerialization.PropertyListFormat.xml](./xml.md)
   Specifies the XML property list format.
-- [PropertyListSerialization.PropertyListFormat.binary](propertylistserialization/propertylistformat/binary.md)
+- [PropertyListSerialization.PropertyListFormat.binary](./binary.md)
   Specifies the binary property list format.
 
 

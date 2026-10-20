@@ -1,7 +1,8 @@
 # CVPixelFormatDescription.Dimensions
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Holds integer horizontal and vertical dimension quantities
 
@@ -23,18 +24,18 @@ struct Dimensions
 ## Topics
 
 ### Initializers
-- [init(horizontal: Int, vertical: Int)](cvpixelformatdescription/dimensions/init(horizontal:vertical:).md)
+- [init(horizontal: Int, vertical: Int)](./dimensions/init%28horizontal,vertical%29.md)
 ### Instance Properties
-- [var horizontal: Int](cvpixelformatdescription/dimensions/horizontal.md)
-- [var vertical: Int](cvpixelformatdescription/dimensions/vertical.md)
+- [var horizontal: Int](./dimensions/horizontal.md)
+- [var vertical: Int](./dimensions/vertical.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

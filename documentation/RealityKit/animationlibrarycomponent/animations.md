@@ -1,7 +1,8 @@
 # animations
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of animations an entity can play.
 
@@ -21,11 +22,12 @@ var animations: AnimationLibraryComponent.AnimationCollection
 
 ## See Also
 
-- [var unkeyedResources: [AnimationResource]?](animationlibrarycomponent/unkeyedresources.md)
+### Accessing animations
+- [var unkeyedResources: [AnimationResource]?](./unkeyedresources.md)
   The library’s animation resources that don’t have a queryable name.
-- [var defaultAnimation: AnimationResource?](animationlibrarycomponent/defaultanimation.md)
+- [var defaultAnimation: AnimationResource?](./defaultanimation.md)
   The default animation resource.
-- [var defaultKey: String?](animationlibrarycomponent/defaultkey.md)
+- [var defaultKey: String?](./defaultkey.md)
   The name of the default animation resource.
 
 

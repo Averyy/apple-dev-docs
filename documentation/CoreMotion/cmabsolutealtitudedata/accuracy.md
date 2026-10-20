@@ -1,7 +1,8 @@
 # accuracy
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The estimated uncertainty of the altimeter in meters, based on one standard deviation.
 
@@ -18,11 +19,16 @@ The estimated uncertainty of the altimeter in meters, based on one standard devi
 var accuracy: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double accuracy;
+```
+
 ## See Also
 
-- [var altitude: Double](cmabsolutealtitudedata/altitude.md)
+### Accessing Altitude Data
+- [var altitude: Double](./altitude.md)
   The absolute altitude of the device relative to sea level, measured in meters.
-- [var precision: Double](cmabsolutealtitudedata/precision.md)
+- [var precision: Double](./precision.md)
   The recommended resolution for the altitude, in meters.
 
 

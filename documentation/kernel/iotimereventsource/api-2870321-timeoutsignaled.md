@@ -1,14 +1,15 @@
 # timeoutSignaled
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 static void timeoutSignaled(void *self, void *c);
 ```
 

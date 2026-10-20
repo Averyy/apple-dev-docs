@@ -2,13 +2,14 @@
 
 **Framework**: Spatial Preview  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 An event emitted to the ChangeListDelegate indicating the start of a USD change.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,7 +25,8 @@ func willApplyChanges(instanceIdentifier: String, operationIdentifier: UInt)
 
 ## See Also
 
-- [func didApplyChanges(instanceIdentifier: String, operationIdentifier: UInt)](usdpreviewsession/changelistdelegate/didapplychanges(instanceidentifier:operationidentifier:).md)
+### Responding to changes
+- [func didApplyChanges(instanceIdentifier: String, operationIdentifier: UInt)](./didapplychanges%28instanceidentifier,operationidentifier%29.md)
   An event emitted to the ChangelistDelegate indicating the end of a USD change.
 
 

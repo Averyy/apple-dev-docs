@@ -1,7 +1,8 @@
 # AppIntentsExtension
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for managing an extension’s configuration.
 
@@ -11,7 +12,7 @@ An interface for managing an extension’s configuration.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,12 +23,12 @@ protocol AppIntentsExtension : AppExtension
 
 ## Mentions
 
-- [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
+- [Responding to the Action button on Apple Watch Ultra](./actionbuttonarticle.md)
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
 
 
 ---

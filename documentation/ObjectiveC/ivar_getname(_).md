@@ -1,7 +1,8 @@
 # ivar_getName(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the name of an instance variable.
 
@@ -20,15 +21,20 @@ Returns the name of an instance variable.
 func ivar_getName(_ v: Ivar) -> UnsafePointer<CChar>?
 ```
 
+```c
+extern const char *ivar_getName(Ivar v);
+```
+
 #### Return Value
 
 A C string containing the instance variable’s name.
 
 ## See Also
 
-- [func ivar_getTypeEncoding(Ivar) -> UnsafePointer<CChar>?](ivar_gettypeencoding(_:).md)
+### Working with Instance Variables
+- [func ivar_getTypeEncoding(Ivar) -> UnsafePointer<CChar>?](./ivar_gettypeencoding%28_%29.md)
   Returns the type string of an instance variable.
-- [func ivar_getOffset(Ivar) -> Int](ivar_getoffset(_:).md)
+- [func ivar_getOffset(Ivar) -> Int](./ivar_getoffset%28_%29.md)
   Returns the offset of an instance variable.
 
 

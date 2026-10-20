@@ -2,6 +2,7 @@
 
 **Framework**: TipKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image associated with the tip.
@@ -27,11 +28,12 @@ Use this property to display an icon to the left of the `title` and `message` of
 
 ## See Also
 
-- [var title: Text](tip/title.md)
+### Setting tip content
+- [var title: Text](./title.md)
   A title that names the tip.
-- [var message: Text?](tip/message.md)
+- [var message: Text?](./message.md)
   A short description of how to use the tip’s feature.
-- [var id: String](tip/id.md)
+- [var id: String](./id.md)
   The tip’s unique identifier.
 
 

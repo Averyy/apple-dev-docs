@@ -1,7 +1,8 @@
 # BackgroundAssetUploadFile.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a background asset upload file resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a background asset upload file resource.
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetUploadFile.Attributes
 ```
 
@@ -18,10 +19,10 @@ object BackgroundAssetUploadFile.Attributes
 
 - `assetDeliveryState` (AppMediaAssetState)
 - `assetToken` (string)
-- `assetType` (string)
+- `assetType` (string): **Allowed Values**: `ASSET`, `MANIFEST`
 - `fileName` (string)
-- `fileSize` (int64)
-- `sourceFileChecksum` (string): This attribute is deprecated, use `sourceFileChecksums` instead.
+- `fileSize` (int64): **Minimum**: `1`; **Maximum**: `9007199254740991`
+- `sourceFileChecksum` (string) *(deprecated)*: This attribute is deprecated, use `sourceFileChecksums` instead.
 - `sourceFileChecksums` (Checksums)
 - `uploadOperations` ([DeliveryFileUploadOperation])
 

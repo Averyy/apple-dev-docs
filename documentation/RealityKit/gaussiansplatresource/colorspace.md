@@ -1,7 +1,8 @@
 # colorSpace
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color space the framework uses to interpret splat colors.
 

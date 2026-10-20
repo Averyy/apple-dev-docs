@@ -1,6 +1,7 @@
 # Routing media to third-party devices
 
-**Framework**: AVSystemRouting
+**Framework**: AVSystemRouting  
+**Role**: Article
 
 Respond to routing events and control playback on a TV, speaker, or other media device.
 
@@ -8,11 +9,11 @@ Respond to routing events and control playback on a TV, speaker, or other media 
 
 When people select a media device, your app receives a routing event. You respond by creating a session that delivers media to that device. This article describes the full workflow, from registering an observer to controlling remote playback.
 
-#### Register an Observer
+#### Register an observer
 
-People can switch media routes at any time by selecting a device. To respond, register an observer with the shared [`AVSystemRouteController`](avsystemroutecontroller-18ns8.md).
+People can switch media routes at any time by selecting a device. To respond, register an observer with the shared [`AVSystemRouteController`](./avsystemroutecontroller-18ns8.md).
 
-Your observer conforms to [`AVSystemRouteControllerObserver`](avsystemroutecontrollerobserver-5syvg.md). When the controller activates or deactivates a route, it calls your observer with an event, and your observer returns a Boolean that indicates whether it handled the event:
+Your observer conforms to [`AVSystemRouteControllerObserver`](./avsystemroutecontrollerobserver-5syvg.md). When the controller activates or deactivates a route, it calls your observer with an event, and your observer returns a Boolean that indicates whether it handled the event:
 
 ```swift
 class RouteObserver: AVSystemRouteControllerObserver {
@@ -36,9 +37,9 @@ let observer = RouteObserver()
 _ = AVSystemRouteController.shared.addObserver(observer)
 ```
 
-#### Start a Url Based Playback Session
+#### Start a URL-based playback session
 
-When you receive an [`AVSystemRouteEvent`](avsystemrouteevent-2elr5.md) with an [`AVSystemRouteEvent.Reason.activate`](avsystemrouteevent-2elr5/reason-swift.enum/activate.md) reason, create an [`AVSystemRouteSession`](avsystemroutesession-gp78.md) and start it on the route. Use [`AVSystemRoute.LaunchMode.player`](avsystemroute-5s2um/launchmode/player.md) to launch the system media player on the remote device:
+When you receive an [`AVSystemRouteEvent`](./avsystemrouteevent-2elr5.md) with an [`AVSystemRouteEvent.Reason.activate`](./avsystemrouteevent-2elr5/reason-swift.enum/activate.md) reason, create an [`AVSystemRouteSession`](./avsystemroutesession-gp78.md) and start it on the route. Use [`AVSystemRoute.LaunchMode.player`](./avsystemroute-5s2um/launchmode/player.md) to launch the system media player on the remote device:
 
 ```swift
 func startPlayback(on route: AVSystemRoute) async -> Bool {
@@ -60,11 +61,11 @@ func startPlayback(on route: AVSystemRoute) async -> Bool {
 }
 ```
 
-The [`start()`](avsystemroutesession-gp78/start().md) method returns an [`AVSystemRouteMediaSession`](avsystemroutemediasession-98ioq.md) that your app uses to control playback and communicate with the remote device.
+The [`start()`](./avsystemroutesession-gp78/start%28%29.md) method returns an [`AVSystemRouteMediaSession`](./avsystemroutemediasession-98ioq.md) that your app uses to control playback and communicate with the remote device.
 
-#### Control and Observe Remote Playback
+#### Control and observe remote playback
 
-Use the [`playbackControl`](avsystemroutemediasession-98ioq/playbackcontrol.md) property to drive playback on the remote device and observe its state. The control conforms to `AVInterfaceControllable` and is available for both [`AVSystemRoute.LaunchMode.player`](avsystemroute-5s2um/launchmode/player.md) and [`AVSystemRoute.LaunchMode.application`](avsystemroute-5s2um/launchmode/application.md) sessions.
+Use the [`playbackControl`](./avsystemroutemediasession-98ioq/playbackcontrol.md) property to drive playback on the remote device and observe its state. The control conforms to `AVInterfaceControllable` and is available for both [`AVSystemRoute.LaunchMode.player`](./avsystemroute-5s2um/launchmode/player.md) and [`AVSystemRoute.LaunchMode.application`](./avsystemroute-5s2um/launchmode/application.md) sessions.
 
 Read properties to reflect remote playback state in your UI, and assign to mutable properties to send commands to the remote device:
 
@@ -84,19 +85,19 @@ func configurePlayback(for mediaSession: AVSystemRouteMediaSession) {
 }
 ```
 
-The `playbackControl` property supports [`Observation`](https://developer.apple.com/documentation/observation) in Swift, allowing SwiftUI views to update automatically as the remote playback state changes.
+The `playbackControl` property supports [Observation](../Observation/Observation.md) in Swift, allowing SwiftUI views to update automatically as the remote playback state changes.
 
 Report your playback metadata to `MPNowPlayingInfoCenter` so the system displays accurate now-playing information across the person’s devices.
 
-#### Start an Application Session
+#### Start an application session
 
-Some streaming devices run dedicated apps on the remote device. Rather than playing a URL through the system media player, launch your companion app on the device and communicate with it directly. To enable bidirectional communication with the companion app through a data channel, use [`AVSystemRoute.LaunchMode.application`](avsystemroute-5s2um/launchmode/application.md) when creating the session:
+Some streaming devices run dedicated apps on the remote device. Rather than playing a URL through the system media player, launch your companion app on the device and communicate with it directly. To enable bidirectional communication with the companion app through a data channel, use [`AVSystemRoute.LaunchMode.application`](./avsystemroute-5s2um/launchmode/application.md) when creating the session:
 
 ```swift
 let session = AVSystemRouteSession(url: url, mode: .application)
 ```
 
-After starting an application session, use the [`AVSystemRouteMediaSession`](avsystemroutemediasession-98ioq.md) class’s [`dataChannel`](avsystemroutemediasession-98ioq/datachannel.md) to exchange data with the remote device. Assign an [`AVSystemRouteDataDelegate`](avsystemroutedatadelegate-7vt4b.md) to receive incoming data:
+After starting an application session, use the [`AVSystemRouteMediaSession`](./avsystemroutemediasession-98ioq.md) class’s [`dataChannel`](./avsystemroutemediasession-98ioq/datachannel.md) to exchange data with the remote device. Assign an [`AVSystemRouteDataDelegate`](./avsystemroutedatadelegate-7vt4b.md) to receive incoming data:
 
 ```swift
 class DataHandler: AVSystemRouteDataDelegate {
@@ -113,7 +114,7 @@ func configureDataChannel(_ mediaSession: AVSystemRouteMediaSession) {
 }
 ```
 
-Send data to the remote device using the channel’s [`send(_:)`](avsystemroute-5s2um/datachannel/send(_:).md) method:
+Send data to the remote device using the channel’s [`send(_:)`](./avsystemroute-5s2um/datachannel/send%28_%29.md) method:
 
 ```swift
 func sendCommand(_ command: Data, to mediaSession: AVSystemRouteMediaSession) async throws {
@@ -124,11 +125,12 @@ func sendCommand(_ command: Data, to mediaSession: AVSystemRouteMediaSession) as
 
 ## See Also
 
-- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
+### Essentials
+- [Routing and streaming media to remote devices](./routing-and-streaming-media-to-remote-devices.md)
   Send media from an app to nearby remote playback devices.
-- [class AVSystemRouteController](avsystemroutecontroller-18ns8.md)
+- [class AVSystemRouteController](./avsystemroutecontroller-18ns8.md)
   An object that manages interaction with system routes.
-- [protocol AVSystemRouteControllerObserver](avsystemroutecontrollerobserver-5syvg.md)
+- [protocol AVSystemRouteControllerObserver](./avsystemroutecontrollerobserver-5syvg.md)
   A protocol for observers of a system routing controller.
 
 

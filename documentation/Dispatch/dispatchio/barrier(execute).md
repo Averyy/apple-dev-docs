@@ -1,7 +1,8 @@
 # barrier(execute:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules a barrier operation on the specified channel.
 
@@ -10,7 +11,7 @@ Schedules a barrier operation on the specified channel.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Schedules a barrier operation on the specified channel.
 
 ```swift
 func barrier(execute barrier: @escaping () -> Void)
+```
+
+```c
+extern void dispatch_io_barrier(dispatch_io_t channel, dispatch_block_t barrier);
 ```
 
 #### Discussion

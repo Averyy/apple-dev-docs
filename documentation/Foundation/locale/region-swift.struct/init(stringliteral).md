@@ -1,7 +1,8 @@
 # init(stringLiteral:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a region from a BCP 47 identifier as a string literal.
 
@@ -26,7 +27,8 @@ init(stringLiteral value: String)
 
 ## See Also
 
-- [init(String)](locale/region-swift.struct/init(_:).md)
+### Creating a region
+- [init(String)](./init%28_%29.md)
   Creates a region from a BCP 47 identifier.
 
 

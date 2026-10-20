@@ -1,7 +1,8 @@
 # MTRFormaldehydeConcentrationMeasurementMeasurementUnit.NGM3
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 case NGM3
+```
+
+```c
+MTRFormaldehydeConcentrationMeasurementMeasurementUnitNGM3
 ```
 
 

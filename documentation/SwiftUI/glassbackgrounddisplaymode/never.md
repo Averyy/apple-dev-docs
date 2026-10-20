@@ -1,7 +1,8 @@
 # GlassBackgroundDisplayMode.never
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Never display the glass material.
 
@@ -16,9 +17,10 @@ case never
 
 ## See Also
 
-- [GlassBackgroundDisplayMode.always](glassbackgrounddisplaymode/always.md)
+### Getting the mode
+- [GlassBackgroundDisplayMode.always](./always.md)
   Always display the glass material.
-- [GlassBackgroundDisplayMode.implicit](glassbackgrounddisplaymode/implicit.md)
+- [GlassBackgroundDisplayMode.implicit](./implicit.md)
   Display the glass material only when the view isn’t already contained in glass.
 
 

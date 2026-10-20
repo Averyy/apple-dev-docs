@@ -1,7 +1,8 @@
 # alertRecoverySuggestionButtonTitle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The label on the recovery suggestion button if it is provided
 
@@ -12,6 +13,10 @@ The label on the recovery suggestion button if it is provided
 
 ```swift
 var alertRecoverySuggestionButtonTitle: String? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSString * alertRecoverySuggestionButtonTitle;
 ```
 
 

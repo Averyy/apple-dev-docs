@@ -1,7 +1,8 @@
 # RemoveApplicationCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to remove an app.
 
@@ -16,14 +17,14 @@ The command to remove an app.
 
 ## Declaration
 
-```swift
+```
 object RemoveApplicationCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object RemoveApplicationCommand.Command](removeapplicationcommand/command-data.dictionary.md)
+- [object RemoveApplicationCommand.Command](./removeapplicationcommand/command-data.dictionary.md)
   The command to remove an app.
 
 ## Properties
@@ -33,7 +34,8 @@ object RemoveApplicationCommand
 
 ## See Also
 
-- [object RemoveApplicationResponse](removeapplicationresponse.md)
+### Commands and responses
+- [object RemoveApplicationResponse](./removeapplicationresponse.md)
   A response from the device after it processes the command to remove an app.
 
 

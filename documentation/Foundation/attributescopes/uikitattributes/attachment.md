@@ -1,7 +1,8 @@
 # attachment
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing an attachment attribute.
 
@@ -20,7 +21,8 @@ let attachment: AttributeScopes.UIKitAttributes.AttachmentAttribute
 
 ## See Also
 
-- [let expansion: AttributeScopes.UIKitAttributes.ExpansionAttribute](attributescopes/uikitattributes/expansion.md)
+### Using Attachments and Expansions
+- [let expansion: AttributeScopes.UIKitAttributes.ExpansionAttribute](./expansion.md)
   A property for accessing an expansion attribute.
 
 

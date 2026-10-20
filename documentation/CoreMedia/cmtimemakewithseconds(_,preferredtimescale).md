@@ -1,7 +1,8 @@
 # CMTimeMakeWithSeconds(_:preferredTimescale:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a time that represents a number of seconds in a preferred timescale.
 
@@ -20,17 +21,21 @@ Creates a time that represents a number of seconds in a preferred timescale.
 func CMTimeMakeWithSeconds(_ seconds: Float64, preferredTimescale: Int32) -> CMTime
 ```
 
+```c
+extern CMTime CMTimeMakeWithSeconds(Float64 seconds, int32_t preferredTimescale);
+```
+
 #### Return Value
 
 A time structure.
 
 #### Discussion
 
-Specify a positive preferred timescale value, or the resulting time is [`invalid`](cmtime/invalid.md).
+Specify a positive preferred timescale value, or the resulting time is [`invalid`](./cmtime/invalid.md).
 
 If you specify a value that causes an overflow, the system repeatedly halves the value until the overflow goes away or the timescale equals `1`. If the value still overflows at that point, the system sets the value to positive or negative infinity.
 
-Query the [`hasBeenRounded`](cmtimeflags/hasbeenrounded.md) property value to determine whether the value, when converted back to seconds, precisely matches the original seconds value.
+Query the [`hasBeenRounded`](./cmtimeflags/hasbeenrounded.md) property value to determine whether the value, when converted back to seconds, precisely matches the original seconds value.
 
 ## Parameters
 
@@ -39,11 +44,12 @@ Query the [`hasBeenRounded`](cmtimeflags/hasbeenrounded.md) property value to de
 
 ## See Also
 
-- [func CMTimeMake(value: Int64, timescale: Int32) -> CMTime](cmtimemake(value:timescale:).md)
+### Creating a Time
+- [func CMTimeMake(value: Int64, timescale: Int32) -> CMTime](./cmtimemake%28value,timescale%29.md)
   Creates a time with a value and timescale.
-- [func CMTimeMakeWithEpoch(value: Int64, timescale: Int32, epoch: Int64) -> CMTime](cmtimemakewithepoch(value:timescale:epoch:).md)
+- [func CMTimeMakeWithEpoch(value: Int64, timescale: Int32, epoch: Int64) -> CMTime](./cmtimemakewithepoch%28value,timescale,epoch%29.md)
   Creates a time with a value, timescale, and epoch.
-- [func CMTimeMakeFromDictionary(CFDictionary?) -> CMTime](cmtimemakefromdictionary(_:).md)
+- [func CMTimeMakeFromDictionary(CFDictionary?) -> CMTime](./cmtimemakefromdictionary%28_%29.md)
   Creates a time from a dictionary representation of its fields.
 
 

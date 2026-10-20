@@ -1,7 +1,8 @@
 # allowsBackForwardNavigationGestures
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether horizontal swipe gestures trigger backward and forward page navigation.
 
@@ -18,31 +19,36 @@ A Boolean value that indicates whether horizontal swipe gestures trigger backwar
 var allowsBackForwardNavigationGestures: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsBackForwardNavigationGestures;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var backForwardList: WKBackForwardList](wkwebview/backforwardlist.md)
+### Navigating between webpages
+- [var backForwardList: WKBackForwardList](./backforwardlist.md)
   The web view’s back-forward list.
-- [func goBack(Any?)](wkwebview/goback(_:).md)
+- [func goBack(Any?)](./goback%28_%29.md)
   Navigates to the back item in the back-forward list.
-- [func goBack() -> WKNavigation?](wkwebview/goback.md)
+- [func goBack() -> WKNavigation?](./goback%28%29.md)
   Navigates to the back item in the back-forward list.
-- [func goForward(Any?)](wkwebview/goforward(_:).md)
+- [func goForward(Any?)](./goforward%28_%29.md)
   Navigates to the forward item in the back-forward list.
-- [func goForward() -> WKNavigation?](wkwebview/goforward.md)
+- [func goForward() -> WKNavigation?](./goforward%28%29.md)
   Navigates to the forward item in the back-forward list.
-- [func go(to: WKBackForwardListItem) -> WKNavigation?](wkwebview/go(to:).md)
+- [func go(to: WKBackForwardListItem) -> WKNavigation?](./go%28to%29.md)
   Navigates to an item from the back-forward list and sets it as the current item.
-- [var canGoBack: Bool](wkwebview/cangoback.md)
+- [var canGoBack: Bool](./cangoback.md)
   A Boolean value that indicates whether there is a valid back item in the back-forward list.
-- [var canGoForward: Bool](wkwebview/cangoforward.md)
+- [var canGoForward: Bool](./cangoforward.md)
   A Boolean value that indicates whether there is a valid forward item in the back-forward list.
-- [var allowsLinkPreview: Bool](wkwebview/allowslinkpreview.md)
+- [var allowsLinkPreview: Bool](./allowslinkpreview.md)
   A Boolean value that determines whether pressing a link displays a preview of the destination for the link.
-- [var interactionState: Any?](wkwebview/interactionstate.md)
+- [var interactionState: Any?](./interactionstate.md)
   An object you use to capture the current state of interaction in a web view so that you can restore that state later to another web view.
 
 

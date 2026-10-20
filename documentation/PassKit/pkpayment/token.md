@@ -1,7 +1,8 @@
 # token
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The encrypted payment information.
 
@@ -19,13 +20,18 @@ The encrypted payment information.
 var token: PKPaymentToken { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nonnull) PKPaymentToken * token;
+```
+
 #### Discussion
 
-For more information about the payment data structure, see [`Payment token format reference`](payment-token-format-reference.md).
+For more information about the payment data structure, see [Payment token format reference](../payment-token-format-reference.md).
 
 ## See Also
 
-- [class PKPaymentToken](pkpaymenttoken.md)
+### Working with the payment token
+- [class PKPaymentToken](../pkpaymenttoken.md)
   Contains the user’s payment credentials.
 
 

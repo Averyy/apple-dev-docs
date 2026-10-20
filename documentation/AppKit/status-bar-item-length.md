@@ -1,15 +1,16 @@
 # Status Bar Item Length
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
-Constants used by the [`statusItem(withLength:)`](nsstatusbar/statusitem(withlength:).md) method.
+Constants used by the [`statusItem(withLength:)`](./nsstatusbar/statusitem%28withlength%29.md) method.
 
 ## Topics
 
 ### Constants
-- [class let squareLength: CGFloat](nsstatusitem/squarelength.md)
+- [class let squareLength: CGFloat](./nsstatusitem/squarelength.md)
   A status item length that is equal to the status bar’s thickness.
-- [class let variableLength: CGFloat](nsstatusitem/variablelength.md)
+- [class let variableLength: CGFloat](./nsstatusitem/variablelength.md)
   A status item length that dynamically adjusts to the width of its contents.
 
 

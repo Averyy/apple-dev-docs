@@ -1,7 +1,8 @@
 # HMTimeEvent
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract superclass for time-based events.
 
@@ -19,29 +20,34 @@ An abstract superclass for time-based events.
 class HMTimeEvent
 ```
 
+```objc
+@interface HMTimeEvent : HMEvent
+```
+
 ## Relationships
 
 ### Inherits From
-- [HMEvent](hmevent.md)
+- [HMEvent](./hmevent.md)
 ### Inherited By
-- [HMCalendarEvent](hmcalendarevent.md)
-- [HMDurationEvent](hmdurationevent.md)
-- [HMSignificantTimeEvent](hmsignificanttimeevent.md)
+- [HMCalendarEvent](./hmcalendarevent.md)
+- [HMDurationEvent](./hmdurationevent.md)
+- [HMSignificantTimeEvent](./hmsignificanttimeevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMCalendarEvent](hmcalendarevent.md)
+### Dates and times
+- [class HMCalendarEvent](./hmcalendarevent.md)
   An event that fires at a specified time.
-- [class HMMutableCalendarEvent](hmmutablecalendarevent.md)
+- [class HMMutableCalendarEvent](./hmmutablecalendarevent.md)
   A mutable event that fires at a specified time.
 
 

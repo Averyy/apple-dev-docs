@@ -1,7 +1,8 @@
 # AppleLosslessFormatFlag_16BitSourceData
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A flag to indicate Apple Lossless data that originated from 16-bit native endian-signed integer data.
 
@@ -10,17 +11,18 @@ A flag to indicate Apple Lossless data that originated from 16-bit native endian
 
 ## Declaration
 
-```swift
+```c
 AppleLosslessFormatFlag_16BitSourceData
 ```
 
 ## See Also
 
-- [AppleLosslessFormatFlag_20BitSourceData](audiodriverkit/iouseraudioformatflags/applelosslessformatflag_20bitsourcedata.md)
+### Apple Lossless Flags
+- [AppleLosslessFormatFlag_20BitSourceData](./applelosslessformatflag_20bitsourcedata.md)
   A flag to indicate Apple Lossless data that originated from 20-bit native endian-signed integer data.
-- [AppleLosslessFormatFlag_24BitSourceData](audiodriverkit/iouseraudioformatflags/applelosslessformatflag_24bitsourcedata.md)
+- [AppleLosslessFormatFlag_24BitSourceData](./applelosslessformatflag_24bitsourcedata.md)
   A flag to indicate Apple Lossless data that originated from 24-bit native endian-signed integer data.
-- [AppleLosslessFormatFlag_32BitSourceData](audiodriverkit/iouseraudioformatflags/applelosslessformatflag_32bitsourcedata.md)
+- [AppleLosslessFormatFlag_32BitSourceData](./applelosslessformatflag_32bitsourcedata.md)
   A flag to indicate Apple Lossless data that originated from 32-bit native endian-signed integer data.
 
 

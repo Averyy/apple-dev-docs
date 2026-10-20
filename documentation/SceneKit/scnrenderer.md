@@ -1,18 +1,19 @@
 # SCNRenderer
 
 **Framework**: SceneKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A renderer for displaying a SceneKit scene in an existing Metal workflow or OpenGL context.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,64 +21,69 @@ A renderer for displaying a SceneKit scene in an existing Metal workflow or Open
 class SCNRenderer
 ```
 
+```objc
+@interface SCNRenderer : NSObject
+```
+
 #### Overview
 
-Use this class when you want to add content rendered by SceneKit to an app that already renders other content by using Metal, OpenGL, or OpenGL ES directly. To provide content for a SceneKit renderer, assign a [`SCNScene`](scnscene.md) object to its [`scene`](scnrenderer/scene.md) property.
+Use this class when you want to add content rendered by SceneKit to an app that already renders other content by using Metal, OpenGL, or OpenGL ES directly. To provide content for a SceneKit renderer, assign a [`SCNScene`](./scnscene.md) object to its [`scene`](./scnrenderer/scene.md) property.
 
-For additional important methods and properties for working with SceneKit renderers, see [`SCNSceneRenderer`](scnscenerenderer.md).
+For additional important methods and properties for working with SceneKit renderers, see [`SCNSceneRenderer`](./scnscenerenderer.md).
 
 ## Topics
 
 ### Creating a Renderer
-- [convenience init(device: (any MTLDevice)?, options: [AnyHashable : Any]?)](scnrenderer/init(device:options:).md)
+- [convenience init(device: (any MTLDevice)?, options: [AnyHashable : Any]?)](./scnrenderer/init%28device,options%29.md)
   Creates a renderer with the specified Metal device.
-- [convenience init(context: EAGLContext?, options: [AnyHashable : Any]?)](scnrenderer/init(context:options:).md)
+- [convenience init(context: EAGLContext?, options: [AnyHashable : Any]?)](./scnrenderer/init%28context,options%29.md)
   Creates a renderer with the specified OpenGL context.
 ### Specifying a Scene
-- [var scene: SCNScene?](scnrenderer/scene.md)
+- [var scene: SCNScene?](./scnrenderer/scene.md)
   The scene to be rendered.
 ### Managing Animation Timing
-- [var nextFrameTime: CFTimeInterval](scnrenderer/nextframetime.md)
+- [var nextFrameTime: CFTimeInterval](./scnrenderer/nextframetime.md)
   The timestamp for the next frame to be rendered.
 ### Rendering a Scene Using Metal
-- [func render(atTime: CFTimeInterval, viewport: CGRect, commandBuffer: any MTLCommandBuffer, passDescriptor: MTLRenderPassDescriptor)](scnrenderer/render(attime:viewport:commandbuffer:passdescriptor:).md)
+- [func render(atTime: CFTimeInterval, viewport: CGRect, commandBuffer: any MTLCommandBuffer, passDescriptor: MTLRenderPassDescriptor)](./scnrenderer/render%28attime,viewport,commandbuffer,passdescriptor%29.md)
   Renders the scene’s contents at the specified system time in the specified Metal command buffer.
 ### Rendering a Scene Using OpenGL
-- [func render()](scnrenderer/render.md)
+- [func render()](./scnrenderer/render%28%29.md)
   Renders the scene’s contents in the renderer’s OpenGL context.
-- [func render(atTime: CFTimeInterval)](scnrenderer/render(attime:).md)
+- [func render(atTime: CFTimeInterval)](./scnrenderer/render%28attime%29.md)
   Renders the scene’s contents at the specified system time in the renderer’s OpenGL context.
 ### Capturing a Snapshot
-- [func snapshot(atTime: CFTimeInterval, with: CGSize, antialiasingMode: SCNAntialiasingMode) -> UIImage](scnrenderer/snapshot(attime:with:antialiasingmode:).md)
+- [func snapshot(atTime: CFTimeInterval, with: CGSize, antialiasingMode: SCNAntialiasingMode) -> UIImage](./scnrenderer/snapshot%28attime,with,antialiasingmode%29.md)
   Creates an image by drawing the renderer’s content at the specified system time.
 ### Instance Methods
-- [func render(withViewport: CGRect, commandBuffer: any MTLCommandBuffer, passDescriptor: MTLRenderPassDescriptor)](scnrenderer/render(withviewport:commandbuffer:passdescriptor:).md)
-- [func update(atTime: CFTimeInterval)](scnrenderer/update(attime:).md)
-- [func updateProbes([SCNNode], atTime: CFTimeInterval)](scnrenderer/updateprobes(_:attime:).md)
+- [func render(withViewport: CGRect, commandBuffer: any MTLCommandBuffer, passDescriptor: MTLRenderPassDescriptor)](./scnrenderer/render%28withviewport,commandbuffer,passdescriptor%29.md)
+- [func update(atTime: CFTimeInterval)](./scnrenderer/update%28attime%29.md)
+- [func updateProbes([SCNNode], atTime: CFTimeInterval)](./scnrenderer/updateprobes%28_,attime%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [SCNSceneRenderer](scnscenerenderer.md)
-- [SCNTechniqueSupport](scntechniquesupport.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [SCNSceneRenderer](./scnscenerenderer.md)
+- [SCNTechniqueSupport](./scntechniquesupport.md)
 
 ## See Also
 
-- [protocol SCNSceneRenderer](scnscenerenderer.md)
-  Methods and properties common to the [`SCNView`](scnview.md), [`SCNLayer`](scnlayer.md), and [`SCNRenderer`](scnrenderer.md) classes.
-- [protocol SCNSceneRendererDelegate](scnscenerendererdelegate.md)
+### Display and Interactivity
+- [protocol SCNSceneRenderer](./scnscenerenderer.md)
+  Methods and properties common to the [`SCNView`](./scnview.md), [`SCNLayer`](./scnlayer.md), and [`SCNRenderer`](./scnrenderer.md) classes.
+- [protocol SCNSceneRendererDelegate](./scnscenerendererdelegate.md)
   Methods your app can implement to participate in SceneKit’s animation loop or perform additional rendering.
-- [class SCNLayer](scnlayer.md)
+- [class SCNLayer](./scnlayer.md)
   A Core Animation layer that renders a SceneKit scene as its content.
-- [class SCNHitTestResult](scnhittestresult.md)
+- [class SCNHitTestResult](./scnhittestresult.md)
   Information about the result of a scene-space or view-space search for scene elements.
 
 

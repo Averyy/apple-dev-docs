@@ -1,7 +1,8 @@
 # activity
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The workout activity type.
 

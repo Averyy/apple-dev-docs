@@ -1,18 +1,23 @@
 # goForward(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An action method that loads the next location in the back-forward list.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @IBAction
 func goForward(_ sender: Any?)
+```
+
+```objc
+- (void) goForward:(id) sender;
 ```
 
 #### Discussion
@@ -25,21 +30,22 @@ This method does nothing if it is unable to move forward.
 
 ## See Also
 
-- [func setMaintainsBackForwardList(Bool)](webview-swift.class/setmaintainsbackforwardlist(_:).md)
+### Moving Back and Forward
+- [func setMaintainsBackForwardList(Bool)](./setmaintainsbackforwardlist%28_%29.md)
   Sets whether to use a back-forward list.
-- [var backForwardList: WebBackForwardList!](webview-swift.class/backforwardlist.md)
+- [var backForwardList: WebBackForwardList!](./backforwardlist.md)
   The receiver’s back-forward list.
-- [var canGoBack: Bool](webview-swift.class/cangoback.md)
+- [var canGoBack: Bool](./cangoback.md)
   A Boolean that indicates whether the previous location can be loaded.
-- [func goBack() -> Bool](webview-swift.class/goback.md)
+- [func goBack() -> Bool](./goback%28%29.md)
   Loads the previous location in the back-forward list.
-- [func goBack(Any?)](webview-swift.class/goback(_:).md)
+- [func goBack(Any?)](./goback%28_%29.md)
   An action method that loads the previous location in the back-forward list.
-- [var canGoForward: Bool](webview-swift.class/cangoforward.md)
+- [var canGoForward: Bool](./cangoforward.md)
   A Boolean that indicates whether the next location can be loaded.
-- [func goForward() -> Bool](webview-swift.class/goforward.md)
+- [func goForward() -> Bool](./goforward%28%29.md)
   Loads the next location in the back-forward list.
-- [func go(toBackForwardItem: WebHistoryItem!) -> Bool](webview-swift.class/go(tobackforwarditem:).md)
+- [func go(toBackForwardItem: WebHistoryItem!) -> Bool](./go%28tobackforwarditem%29.md)
   Loads a specific location from the back-forward list and sets it as the current item.
 
 

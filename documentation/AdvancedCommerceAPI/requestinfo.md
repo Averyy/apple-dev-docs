@@ -1,7 +1,8 @@
 # RequestInfo
 
 **Framework**: Advanced Commerce API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The metadata to include in server requests.
 
@@ -10,7 +11,7 @@ The metadata to include in server requests.
 
 ## Declaration
 
-```swift
+```
 object RequestInfo
 ```
 
@@ -18,51 +19,56 @@ object RequestInfo
 
 You provide the `RequestInfo` in your Advanced Commerce API server requests to uniquely identify your requests. You also have the option to provide additional data in the `RequestInfo` object.
 
-##### Include the App Account Token Optionally
+##### Include the app account token, optionally
 
 You can include an `appAccountToken` in `RequestInfo` to associate an account on your system with the purchase. The App Store returns the same `appAccountToken` value in the transaction information.
 
-If you include `appAccountToken` in the `RequestInfo`, you don’t need to include the app account token as a purchase option by adding [`appAccountToken(_:)`](https://developer.apple.com/documentation/storekit/product/purchaseoption/appaccounttoken(_:)) to the product purchase options ([`purchase(options:)`](https://developer.apple.com/documentation/storekit/product/purchase(options:))).
+If you include `appAccountToken` in the `RequestInfo`, you don’t need to include the app account token as a purchase option by adding [`appAccountToken(_:)`](../StoreKit/product/purchaseoption/appaccounttoken%28_%29.md) to the product purchase options ([`purchase(options:)`](../StoreKit/product/purchase%28options%29.md)).
 
 > ❗ **Important**: If you do include `appAccountToken` in the `purchase(options:)`, you must include the same app account token value in the `RequestInfo`; otherwise, the request fails.
 
-For more information about sending API requests from your app, see [`Sending Advanced Commerce API requests from your app`](https://developer.apple.com/documentation/storekit/sending-advanced-commerce-api-requests-from-your-app).
+For more information about sending API requests from your app, see [Sending Advanced Commerce API requests from your app](../StoreKit/sending-advanced-commerce-api-requests-from-your-app.md).
 
-##### Include the Consistency Token Optionally
+##### Include the consistency token, optionally
 
 The consistency token helps prevent unintended operations that might occur when the server gets multiple or overlapping requests for the same subscription.
 
-Subscriptions receive a new consistency token in the [`advancedCommerceRenewalInfo`](https://developer.apple.com/documentation/appstoreserverapi/advancedcommercerenewalinfo) object of the [`JWSRenewalInfo`](jwsrenewalinfo.md) each time the system updates the subscrpition renewal information. Include the consistency token when you use the [`SubscriptionCreateRequest`](subscriptioncreaterequest.md) operation to resubscribe to the subscription and provide the `previousTransactionID`.
+Subscriptions receive a new consistency token in the [`advancedCommerceRenewalInfo`](../AppStoreServerAPI/advancedcommercerenewalinfo.md) object of the [`JWSRenewalInfo`](./jwsrenewalinfo.md) each time the system updates the subscrpition renewal information. Include the consistency token when you use the [`SubscriptionCreateRequest`](./subscriptioncreaterequest.md) operation to resubscribe to the subscription and provide the `previousTransactionID`.
 
 Don’t include a consistency token when:
 
 - You haven’t received a consistency token.
-- You’re using the [`OneTimeChargeCreateRequest`](onetimechargecreaterequest.md) operation.
-- You’re using the [`SubscriptionCreateRequest`](subscriptioncreaterequest.md) operation for an initial subscription purchase.
+- You’re using the [`OneTimeChargeCreateRequest`](./onetimechargecreaterequest.md) operation.
+- You’re using the [`SubscriptionCreateRequest`](./subscriptioncreaterequest.md) operation for an initial subscription purchase.
 
 ## Properties
 
 - `appAccountToken` (uuid): A UUID that represents an app account token, to associate with the transaction in the request.
-- `consistencyToken` (string): The value of the [`advancedCommerceConsistencyToken`](https://developer.apple.com/documentation/appstoreserverapi/advancedcommerceconsistencytoken) that you receive in the [`JWSRenewalInfo`](jwsrenewalinfo.md) renewal information for a subscription. Don’t generate this value.
+
+  **Maximum Length**: `36`
+- `consistencyToken` (string): The value of the [`advancedCommerceConsistencyToken`](../AppStoreServerAPI/advancedcommerceconsistencytoken.md) that you receive in the [`JWSRenewalInfo`](./jwsrenewalinfo.md) renewal information for a subscription. Don’t generate this value.
 - `requestReferenceId` (uuid) *(required)*: A UUID that you provide to uniquely identify each request. If the request times out, you can use the same `requestReferenceId` value to retry the request. Otherwise, provide a unique value.
+
+  **Maximum Length**: `36`
 
 ## See Also
 
-- [object Descriptors](descriptors.md)
+### Objects
+- [object Descriptors](./descriptors.md)
   The display name and description of a subscription product.
-- [object Offer](offer.md)
+- [object Offer](./offer.md)
   A discount offer for an auto-renewable subscription.
-- [object SubscriptionModifyAddItem](subscriptionmodifyadditem.md)
+- [object SubscriptionModifyAddItem](./subscriptionmodifyadditem.md)
   The data your app provides to add items when it makes changes to an auto-renewable subscription.
-- [object SubscriptionModifyChangeItem](subscriptionmodifychangeitem.md)
+- [object SubscriptionModifyChangeItem](./subscriptionmodifychangeitem.md)
   The data your app provides to change an item of an auto-renewable subscription.
-- [object SubscriptionModifyDescriptors](subscriptionmodifydescriptors.md)
+- [object SubscriptionModifyDescriptors](./subscriptionmodifydescriptors.md)
   The data your app provides to change the description and display name of an auto-renewable subscription.
-- [object SubscriptionModifyPeriodChange](subscriptionmodifyperiodchange.md)
+- [object SubscriptionModifyPeriodChange](./subscriptionmodifyperiodchange.md)
   The data your app provides to change the period of an auto-renewable subscription.
-- [object SubscriptionModifyRemoveItem](subscriptionmodifyremoveitem.md)
+- [object SubscriptionModifyRemoveItem](./subscriptionmodifyremoveitem.md)
   The data your app provides to remove an item from an auto-renewable subscription.
-- [object SubscriptionPriceChangeItem](subscriptionpricechangeitem.md)
+- [object SubscriptionPriceChangeItem](./subscriptionpricechangeitem.md)
   The data your app provides to change a subscription price.
 
 

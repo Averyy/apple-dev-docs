@@ -1,7 +1,8 @@
 # viewDidDisappear(_:)
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs some action after the view disappears.
 
@@ -23,13 +24,14 @@ override dynamic func viewDidDisappear(_ animated: Bool)
 
 ## See Also
 
-- [func loadView()](datascannerviewcontroller/loadview.md)
+### Responding to view controller events
+- [func loadView()](./loadview%28%29.md)
   Creates the view that the controller manages.
-- [func viewDidLoad()](datascannerviewcontroller/viewdidload.md)
+- [func viewDidLoad()](./viewdidload%28%29.md)
   Performs some action after the system loads the view into memory.
-- [func viewWillAppear(Bool)](datascannerviewcontroller/viewwillappear(_:).md)
+- [func viewWillAppear(Bool)](./viewwillappear%28_%29.md)
   Performs some action before the view appears.
-- [func removeFromParent()](datascannerviewcontroller/removefromparent.md)
+- [func removeFromParent()](./removefromparent%28%29.md)
   Removes the view controller from its parent.
 
 

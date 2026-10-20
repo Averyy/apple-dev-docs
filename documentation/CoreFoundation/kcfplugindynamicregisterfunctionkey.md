@@ -1,18 +1,19 @@
 # kCFPlugInDynamicRegisterFunctionKey
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Used to specify a plug-in’s registration function.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ Used to specify a plug-in’s registration function.
 let kCFPlugInDynamicRegisterFunctionKey: CFString!
 ```
 
+```c
+extern CFStringRef const kCFPlugInDynamicRegisterFunctionKey;
+```
+
 ## See Also
 
-- [let kCFPlugInDynamicRegistrationKey: CFString!](kcfplugindynamicregistrationkey.md)
+### Constants
+- [let kCFPlugInDynamicRegistrationKey: CFString!](./kcfplugindynamicregistrationkey.md)
   Indicates whether a plug-in requires dynamic registration.
-- [let kCFPlugInUnloadFunctionKey: CFString!](kcfpluginunloadfunctionkey.md)
+- [let kCFPlugInUnloadFunctionKey: CFString!](./kcfpluginunloadfunctionkey.md)
   Used to specify a plug-in’s unload function.
-- [let kCFPlugInFactoriesKey: CFString!](kcfpluginfactorieskey.md)
+- [let kCFPlugInFactoriesKey: CFString!](./kcfpluginfactorieskey.md)
   Used to statically register factory functions.
-- [let kCFPlugInTypesKey: CFString!](kcfplugintypeskey.md)
+- [let kCFPlugInTypesKey: CFString!](./kcfplugintypeskey.md)
   Used to statically register the factories that can create each supported type.
 
 

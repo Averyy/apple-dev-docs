@@ -1,14 +1,15 @@
 # tvOS 27.2 RC Release Notes
 
-**Framework**: tvOS Release Notes
+**Framework**: tvOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The tvOS 27.2 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 27.2 RC. The SDK comes bundled with Xcode 27.2. For information on the compatibility requirements for Xcode 27.2, see [`Xcode 27.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27_2-release-notes).
+The tvOS 27.2 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 27.2 RC. The SDK comes bundled with Xcode 27.2. For information on the compatibility requirements for Xcode 27.2, see [Xcode 27.2 Release Notes](../Xcode-Release-Notes/xcode-27_2-release-notes.md).
 
-##### Storekit Testing in Xcode
+##### StoreKit Testing in Xcode
 
 ###### Resolved Issues
 
@@ -22,7 +23,8 @@ The tvOS 27.2 SDK provides support to develop tvOS apps for Apple TV devices run
 
 ## See Also
 
-- [tvOS 27 Release Notes](tvos-27-release-notes.md)
+### tvOS 27
+- [tvOS 27 Release Notes](./tvos-27-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

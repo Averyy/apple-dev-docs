@@ -1,6 +1,7 @@
 # User data atoms
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: API Collection
 
 Atoms you use to define and store data associated with a QuickTime object.
 
@@ -14,7 +15,7 @@ The user data atom has an atom type of `'udta'`. Inside the user data atom is a 
 
 This section describes the data atoms that QuickTime recognizes. You may create new data atom types that your own application recognizes. Applications should ignore any data atom types that they do not recognize.
 
-#### User Data List Entry Types
+#### User data list entry types
 
 The user data list entry types are as follows.
 
@@ -52,13 +53,13 @@ The user data list entry types are as follows.
 | `'©swr'` | Name and version number of the software (or hardware) that generated this movie |  |
 | `'©wrt'` | Name of movie’s writer |  |
 | `'AllF'` | Play all frames—byte indicating that all frames of video should be played, regardless of timing |  |
-| `'hinf'` | Hint track information—statistical data for real-time streaming of a particular track. For more information, see Hint Track User Data Atom in [`Hint media`](hint_media.md). |  |
-| `'hnti'` | Hint info atom—data used for real-time streaming of a movie or a track. For more information, see Movie Hint Info Atom and Hint Track User Data Atom in [`Hint media`](hint_media.md). |  |
+| `'hinf'` | Hint track information—statistical data for real-time streaming of a particular track. For more information, see Hint Track User Data Atom in [Hint media](./hint_media.md). |  |
+| `'hnti'` | Hint info atom—data used for real-time streaming of a movie or a track. For more information, see Movie Hint Info Atom and Hint Track User Data Atom in [Hint media](./hint_media.md). |  |
 | `'name'` | Name of object |  |
-| `'tnam'` | Localized track name optionally present in Track user data. The payload is described in [`Track name atom`](track_name_atom.md). |  |
+| `'tnam'` | Localized track name optionally present in Track user data. The payload is described in [`Track name atom`](./track_name_atom.md). |  |
 | `'tagc'` | Media characteristic optionally present in Track user data—specialized text that describes something of interest about the track. For more information, see Media Characteristic Tags below. |  |
 | `'LOOP'` | Long integer indicating looping style. This atom is not present unless the movie is set to loop. Values are 0 for normal looping, 1 for palindromic looping. |  |
-| `'ptv '` | Print to video — display movie in full screen mode. This atom contains a 16-byte structure, described in [`Print to video atom`](print_to_video_atom.md). |  |
+| `'ptv '` | Print to video — display movie in full screen mode. This atom contains a 16-byte structure, described in [`Print to video atom`](./print_to_video_atom.md). |  |
 | `'SelO'` | Play selection only—byte indicating that only the selected area of the movie should be played |  |
 | `'WLOC'` | Default window location for movie—two 16-bit values, `{x,y}` |  |
 
@@ -66,7 +67,7 @@ The user-data items labelled “keywords” and marked as “For Sorting” are 
 
 The window location, looping, play selection only, play all frames, and print to video atoms control the way QuickTime displays a movie. These atoms are interpreted only if the user data atom’s immediate parent is a movie atom (`'moov'`). If they are included as part of a track atom’s user data, they are ignored.
 
-#### User Data Text Strings and Language Codes
+#### User data text strings and language codes
 
 All user data list entries whose type begins with the © character (ASCII `169`) are defined to be international text. These list entries must contain a list of text strings with associated language codes. By storing multiple versions of the same text, a single user data text item can contain translations for different languages.
 
@@ -76,9 +77,9 @@ User data text strings may use either Macintosh text encoding or Unicode text en
 
 > ❗ **Important**: Language code values less than `0x400` are Macintosh language codes. Language code values greater than or equal to `0x400` are ISO language codes. The exception to this rule is language code `0x7FF`F, which indicates an unspecified Macintosh language.
 
-ISO language codes are three-character codes. In order to fit inside a 16-bit field, the characters must be packed into three 5-bit subfields. This packing is described in [`Language code values`](language_code_values.md).
+ISO language codes are three-character codes. In order to fit inside a 16-bit field, the characters must be packed into three 5-bit subfields. This packing is described in [Language code values](./language_code_values.md).
 
-#### Media Characteristic Tags
+#### Media characteristic tags
 
 A track (`'trak'`) atom’s user data atom may contain zero or more media characteristic tag atoms (`'tagc'`).
 
@@ -119,22 +120,23 @@ This specification defines the following public media characteristic tags. Other
 ## Topics
 
 ### Atoms for user data
-- [User data atom ('udta')](user_data_atom.md)
+- [User data atom ('udta')](./user_data_atom.md)
   An atom where you define and store data associated with a QuickTime object.
-- [Track name atom ('tnam')](track_name_atom.md)
+- [Track name atom ('tnam')](./track_name_atom.md)
   An atom that provides a name for a track.
-- [Print to video atom ('ptv ')](print_to_video_atom.md)
+- [Print to video atom ('ptv ')](./print_to_video_atom.md)
   An atom you use to play the movie in full-screen mode, with no window and no visible controller.
 
 ## See Also
 
-- [Movie atom ('moov')](movie_atom.md)
+### Describing movies
+- [Movie atom ('moov')](./movie_atom.md)
   An atom that specifies the information that defines a movie.
-- [Movie header atom ('mvhd')](movie_header_atom.md)
+- [Movie header atom ('mvhd')](./movie_header_atom.md)
   An atom that specifies the characteristics of an entire QuickTime movie.
-- [Color table atom ('ctab')](color_table_atom.md)
+- [Color table atom ('ctab')](./color_table_atom.md)
   An atom that defines a list of preferred colors for displaying the movie on devices that support only 256 colors.
-- [Interleaving movie data](interleaving_movie_data.md)
+- [Interleaving movie data](./interleaving_movie_data.md)
   Interleave data in your movie for optimal playback.
 
 

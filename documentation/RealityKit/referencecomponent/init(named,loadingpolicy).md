@@ -1,7 +1,8 @@
 # init(named:loadingPolicy:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a reference component with a name and loading policy.
 

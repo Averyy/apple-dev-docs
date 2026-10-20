@@ -1,7 +1,8 @@
 # UICalendarView.Decoration
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view that a calendar view displays for a specific date.
 
@@ -18,48 +19,53 @@ A view that a calendar view displays for a specific date.
 class Decoration
 ```
 
+```objc
+@interface UICalendarViewDecoration : NSObject
+```
+
 ## Topics
 
 ### Creating a Default Decoration View
-- [init()](uicalendarview/decoration/init.md)
+- [init()](./decoration/init%28%29.md)
   Creates a default calendar view decoration with a filled circle image, using the system fill color and medium size.
-- [static func `default`(color: UIColor?, size: UICalendarView.DecorationSize) -> UICalendarView.Decoration](uicalendarview/decoration/default(color:size:).md)
+- [static func `default`(color: UIColor?, size: UICalendarView.DecorationSize) -> UICalendarView.Decoration](./decoration/default%28color,size%29.md)
   Creates a default calendar view decoration with a filled circle image, using the color and size you specify.
 ### Creating a Custom Decoration View
-- [class func customView(() -> UIView) -> Self](uicalendarview/decoration/customview(_:).md)
+- [class func customView(() -> UIView) -> Self](./decoration/customview%28_%29.md)
   Creates a new calendar view decoration with a custom view, using your view provider.
 ### Creating Image Decoration Views
-- [static func image(UIImage?, color: UIColor?, size: UICalendarView.DecorationSize) -> UICalendarView.Decoration](uicalendarview/decoration/image(_:color:size:).md)
+- [static func image(UIImage?, color: UIColor?, size: UICalendarView.DecorationSize) -> UICalendarView.Decoration](./decoration/image%28_,color,size%29.md)
   Creates a new calendar view decoration with the image, color, and size that you specify.
 ### Initializers
-- [convenience init(customViewProvider: () -> UIView)](uicalendarview/decoration/init(customviewprovider:).md)
+- [convenience init(customViewProvider: () -> UIView)](./decoration/init%28customviewprovider%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [var fontDesign: UIFontDescriptor.SystemDesign](uicalendarview/fontdesign.md)
+### Customizing the calendar display
+- [var fontDesign: UIFontDescriptor.SystemDesign](./fontdesign.md)
   A font design that the calendar view uses for displaying calendar text.
-- [var delegate: (any UICalendarViewDelegate)?](uicalendarview/delegate.md)
+- [var delegate: (any UICalendarViewDelegate)?](./delegate.md)
   A delegate object the calendar view calls for decoration views.
-- [protocol UICalendarViewDelegate](uicalendarviewdelegate.md)
+- [protocol UICalendarViewDelegate](../uicalendarviewdelegate.md)
   An object that a calendar view uses to display decorations for dates.
-- [UICalendarView.DecorationSize](uicalendarview/decorationsize.md)
+- [UICalendarView.DecorationSize](./decorationsize.md)
   Constants that indicate the relative size of a decoration in a calendar view.
-- [var wantsDateDecorations: Bool](uicalendarview/wantsdatedecorations.md)
+- [var wantsDateDecorations: Bool](./wantsdatedecorations.md)
   A Boolean value that indicates whether the calendar view displays date decorations.
-- [func reloadDecorations(forDateComponents: [DateComponents], animated: Bool)](uicalendarview/reloaddecorations(fordatecomponents:animated:).md)
+- [func reloadDecorations(forDateComponents: [DateComponents], animated: Bool)](./reloaddecorations%28fordatecomponents,animated%29.md)
   Reloads the decorations for the dates you provide, with an option to animate the decoration reload.
 
 

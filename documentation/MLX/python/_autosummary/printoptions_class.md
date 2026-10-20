@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/printoption
 
 # mlx.core.PrintOptions
 
-**
-
-- [.rst](../../_sources/python/_autosummary/printoptions_class.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.PrintOptions
-
- Table of contents 
-
-## Contents
-
-# mlx.core.PrintOptions
-
 **class PrintOptions(**args*, ***kwargs*)**
 : __init__(*self*, *precision: int = -1*) → [None](https://docs.python.org/3/builtins/constants.html#None)
 
@@ -44,5 +17,3 @@ Attributes
 
 `precision`
 (self) -> int
-
-** Contents

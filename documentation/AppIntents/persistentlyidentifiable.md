@@ -1,7 +1,8 @@
 # PersistentlyIdentifiable
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Defines a string that uniquely identifies a type. This is useful for maintaining the identity of a type, even when its type name is changed.
 
@@ -11,7 +12,7 @@ Defines a string that uniquely identifies a type. This is useful for maintaining
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,94 +24,95 @@ protocol PersistentlyIdentifiable
 ## Topics
 
 ### Type Properties
-- [static var persistentIdentifier: String](persistentlyidentifiable/persistentidentifier.md)
+- [static var persistentIdentifier: String](./persistentlyidentifiable/persistentidentifier.md)
   A string that uniquely identifies this type.
 
 ## Relationships
 
 ### Inherited By
-- [AppEntity](appentity.md)
-- [AppEnum](appenum.md)
-- [AppIntent](appintent.md)
-- [AppUnionValueCasesProviding](appunionvaluecasesproviding.md)
-- [AppValue](appvalue.md)
-- [AssistantEntity](assistantentity.md)
-- [AssistantEnum](assistantenum.md)
-- [AssistantIntent](assistantintent.md)
-- [AssistantSchemaEntity](assistantschemaentity.md)
-- [AssistantSchemaEnum](assistantschemaenum.md)
-- [AssistantSchemaIntent](assistantschemaintent.md)
-- [AudioPlaybackIntent](audioplaybackintent.md)
-- [AudioRecordingIntent](audiorecordingintent.md)
-- [AudioStartingIntent](audiostartingintent.md)
-- [CameraCaptureIntent](cameracaptureintent.md)
-- [CancellableIntent](cancellableintent.md)
-- [ControlConfigurationIntent](controlconfigurationintent.md)
-- [CustomIntentMigratedAppIntent](customintentmigratedappintent.md)
-- [DeleteIntent](deleteintent.md)
-- [DeprecatedAppIntent](deprecatedappintent.md)
-- [EntityPropertyQuery](entitypropertyquery.md)
-- [EntityQuery](entityquery.md)
-- [EntityStringQuery](entitystringquery.md)
-- [EnumerableEntityQuery](enumerableentityquery.md)
-- [FileEntity](fileentity.md)
-- [ForegroundContinuableIntent](foregroundcontinuableintent.md)
-- [IndexedEntity](indexedentity.md)
-- [IndexedEntityQuery](indexedentityquery.md)
-- [IntentValueQuery](intentvaluequery.md)
-- [LiveActivityIntent](liveactivityintent.md)
-- [LiveActivityStartingIntent](liveactivitystartingintent.md)
-- [LongRunningIntent](longrunningintent.md)
-- [OpenIntent](openintent.md)
-- [OwnershipProvidingEntity](ownershipprovidingentity.md)
-- [PauseWorkoutIntent](pauseworkoutintent.md)
-- [PlayVideoIntent](playvideointent.md)
-- [PredictableIntent](predictableintent.md)
-- [ProgressReportingIntent](progressreportingintent.md)
-- [PushToTalkTransmissionIntent](pushtotalktransmissionintent.md)
-- [ResumeWorkoutIntent](resumeworkoutintent.md)
-- [SetFocusFilterIntent](setfocusfilterintent.md)
-- [SetValueIntent](setvalueintent.md)
-- [ShowInAppSearchResultsIntent](showinappsearchresultsintent.md)
-- [SnippetIntent](snippetintent.md)
-- [StartDiveIntent](startdiveintent.md)
-- [StartWorkoutIntent](startworkoutintent.md)
-- [SyncableEntity](syncableentity.md)
-- [SystemIntent](systemintent.md)
-- [TargetContentProvidingIntent](targetcontentprovidingintent.md)
-- [TransientAppEntity](transientappentity.md)
-- [UISceneAppIntent](uisceneappintent.md)
-- [URLRepresentableEntity](urlrepresentableentity.md)
-- [URLRepresentableEnum](urlrepresentableenum.md)
-- [URLRepresentableIntent](urlrepresentableintent.md)
-- [UndoableIntent](undoableintent.md)
-- [UniqueAppEntity](uniqueappentity.md)
-- [UniqueAppEntityQuery](uniqueappentityquery.md)
-- [WidgetConfigurationIntent](widgetconfigurationintent.md)
+- [AppEntity](./appentity.md)
+- [AppEnum](./appenum.md)
+- [AppIntent](./appintent.md)
+- [AppUnionValueCasesProviding](./appunionvaluecasesproviding.md)
+- [AppValue](./appvalue.md)
+- [AssistantEntity](./assistantentity.md)
+- [AssistantEnum](./assistantenum.md)
+- [AssistantIntent](./assistantintent.md)
+- [AssistantSchemaEntity](./assistantschemaentity.md)
+- [AssistantSchemaEnum](./assistantschemaenum.md)
+- [AssistantSchemaIntent](./assistantschemaintent.md)
+- [AudioPlaybackIntent](./audioplaybackintent.md)
+- [AudioRecordingIntent](./audiorecordingintent.md)
+- [AudioStartingIntent](./audiostartingintent.md)
+- [CameraCaptureIntent](./cameracaptureintent.md)
+- [CancellableIntent](./cancellableintent.md)
+- [ControlConfigurationIntent](./controlconfigurationintent.md)
+- [CustomIntentMigratedAppIntent](./customintentmigratedappintent.md)
+- [DeleteIntent](./deleteintent.md)
+- [DeprecatedAppIntent](./deprecatedappintent.md)
+- [EntityPropertyQuery](./entitypropertyquery.md)
+- [EntityQuery](./entityquery.md)
+- [EntityStringQuery](./entitystringquery.md)
+- [EnumerableEntityQuery](./enumerableentityquery.md)
+- [FileEntity](./fileentity.md)
+- [ForegroundContinuableIntent](./foregroundcontinuableintent.md)
+- [IndexedEntity](./indexedentity.md)
+- [IndexedEntityQuery](./indexedentityquery.md)
+- [IntentValueQuery](./intentvaluequery.md)
+- [LiveActivityIntent](./liveactivityintent.md)
+- [LiveActivityStartingIntent](./liveactivitystartingintent.md)
+- [LongRunningIntent](./longrunningintent.md)
+- [OpenIntent](./openintent.md)
+- [OwnershipProvidingEntity](./ownershipprovidingentity.md)
+- [PauseWorkoutIntent](./pauseworkoutintent.md)
+- [PlayVideoIntent](./playvideointent.md)
+- [PredictableIntent](./predictableintent.md)
+- [ProgressReportingIntent](./progressreportingintent.md)
+- [PushToTalkTransmissionIntent](./pushtotalktransmissionintent.md)
+- [ResumeWorkoutIntent](./resumeworkoutintent.md)
+- [SetFocusFilterIntent](./setfocusfilterintent.md)
+- [SetValueIntent](./setvalueintent.md)
+- [ShowInAppSearchResultsIntent](./showinappsearchresultsintent.md)
+- [SnippetIntent](./snippetintent.md)
+- [StartDiveIntent](./startdiveintent.md)
+- [StartWorkoutIntent](./startworkoutintent.md)
+- [SyncableEntity](./syncableentity.md)
+- [SystemIntent](./systemintent.md)
+- [TargetContentProvidingIntent](./targetcontentprovidingintent.md)
+- [TransientAppEntity](./transientappentity.md)
+- [UISceneAppIntent](./uisceneappintent.md)
+- [URLRepresentableEntity](./urlrepresentableentity.md)
+- [URLRepresentableEnum](./urlrepresentableenum.md)
+- [URLRepresentableIntent](./urlrepresentableintent.md)
+- [UndoableIntent](./undoableintent.md)
+- [UniqueAppEntity](./uniqueappentity.md)
+- [UniqueAppEntityQuery](./uniqueappentityquery.md)
+- [WidgetConfigurationIntent](./widgetconfigurationintent.md)
 ### Conforming Types
-- [EmptySnippetIntent](emptysnippetintent.md)
-- [OpenURLIntent](openurlintent.md)
-- [RunSystemShortcutIntent](runsystemshortcutintent.md)
-- [StringSearchScope](stringsearchscope.md)
-- [SystemShortcut](systemshortcut.md)
-- [UniqueAppEntityProvider](uniqueappentityprovider.md)
-- [VideoCategory](videocategory.md)
+- [EmptySnippetIntent](./emptysnippetintent.md)
+- [OpenURLIntent](./openurlintent.md)
+- [RunSystemShortcutIntent](./runsystemshortcutintent.md)
+- [StringSearchScope](./stringsearchscope.md)
+- [SystemShortcut](./systemshortcut.md)
+- [UniqueAppEntityProvider](./uniqueappentityprovider.md)
+- [VideoCategory](./videocategory.md)
 
 ## See Also
 
-- [struct EntityIdentifier](entityidentifier.md)
+### Entity identity
+- [struct EntityIdentifier](./entityidentifier.md)
   A type that uniquely identifies a specific instance of an app entity.
-- [protocol EntityIdentifierConvertible](entityidentifierconvertible.md)
+- [protocol EntityIdentifierConvertible](./entityidentifierconvertible.md)
   An interface for converting between an entity’s identifier and its string representation.
-- [struct FileEntityIdentifier](fileentityidentifier.md)
+- [struct FileEntityIdentifier](./fileentityidentifier.md)
   An identifier for an app entity that refers to a document or other file.
-- [struct SyncableEntityIdentifier](syncableentityidentifier.md)
+- [struct SyncableEntityIdentifier](./syncableentityidentifier.md)
   A type-safe wrapper you use to specify different local and stable identifiers for an entity.
-- [struct AttributedEntityIdentifier](attributedentityidentifier.md)
+- [struct AttributedEntityIdentifier](./attributedentityidentifier.md)
   A unique identifier for an app entity instance within an application.
-- [struct AttributedTypeIdentifier](attributedtypeidentifier.md)
+- [struct AttributedTypeIdentifier](./attributedtypeidentifier.md)
   A unique identifier for an app entity or transient app entity type within an application bundle.
-- [protocol AppEntityAnnotatable](appentityannotatable.md)
+- [protocol AppEntityAnnotatable](./appentityannotatable.md)
   An interface that system types adopt and use to manage their relationship to app entities.
 
 

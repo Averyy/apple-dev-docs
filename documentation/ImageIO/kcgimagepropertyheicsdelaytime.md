@@ -1,7 +1,8 @@
 # kCGImagePropertyHEICSDelayTime
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The number of seconds to wait before displaying the next image in the sequence, clamped to a minimum of `0.1` seconds.
 
@@ -20,17 +21,22 @@ The number of seconds to wait before displaying the next image in the sequence, 
 let kCGImagePropertyHEICSDelayTime: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyHEICSDelayTime;
+```
+
 #### Discussion
 
-The value of this key is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) with a floating-point value. The value of this key is never less than 100 millseconds, and the system adjusts values less than that amount to 100 milliseconds, as needed. See [`kCGImagePropertyHEICSUnclampedDelayTime`](kcgimagepropertyheicsunclampeddelaytime.md).
+The value of this key is a [`CFNumber`](../CoreFoundation/cfnumber.md) with a floating-point value. The value of this key is never less than 100 millseconds, and the system adjusts values less than that amount to 100 milliseconds, as needed. See [`kCGImagePropertyHEICSUnclampedDelayTime`](./kcgimagepropertyheicsunclampeddelaytime.md).
 
 ## See Also
 
-- [let kCGImagePropertyHEICSFrameInfoArray: CFString](kcgimagepropertyheicsframeinfoarray.md)
+### Sequence Timing
+- [let kCGImagePropertyHEICSFrameInfoArray: CFString](./kcgimagepropertyheicsframeinfoarray.md)
   An array of dictionaries that contain timing information for the image sequence.
-- [let kCGImagePropertyHEICSUnclampedDelayTime: CFString](kcgimagepropertyheicsunclampeddelaytime.md)
+- [let kCGImagePropertyHEICSUnclampedDelayTime: CFString](./kcgimagepropertyheicsunclampeddelaytime.md)
   The unclamped number of seconds to wait before displaying the next image in the sequence.
-- [let kCGImagePropertyHEICSLoopCount: CFString](kcgimagepropertyheicsloopcount.md)
+- [let kCGImagePropertyHEICSLoopCount: CFString](./kcgimagepropertyheicsloopcount.md)
   The number of times to play the sequence.
 
 

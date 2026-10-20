@@ -2,6 +2,7 @@
 
 **Framework**: Group Activities  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An optional role you associate with this element.
@@ -21,9 +22,10 @@ If you associate a role to a seat, a participant must request that role to sit i
 
 ## See Also
 
-- [var position: SpatialTemplateElementPosition](spatialtemplateelement/position.md)
+### Getting the element details
+- [var position: SpatialTemplateElementPosition](./position.md)
   The location of the element in the shared coordinate space.
-- [var direction: SpatialTemplateElementDirection](spatialtemplateelement/direction.md)
+- [var direction: SpatialTemplateElementDirection](./direction.md)
   The initial orientation of the element in the shared coordinate space.
 
 

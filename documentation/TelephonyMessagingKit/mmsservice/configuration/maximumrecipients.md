@@ -1,7 +1,8 @@
 # maximumRecipients
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of recipients allowed for a sent group message.
 

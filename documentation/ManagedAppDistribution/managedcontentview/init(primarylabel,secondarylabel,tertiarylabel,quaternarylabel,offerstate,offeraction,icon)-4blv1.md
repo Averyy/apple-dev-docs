@@ -1,7 +1,8 @@
 # init(primaryLabel:secondaryLabel:tertiaryLabel:quaternaryLabel:offerState:offerAction:icon:)
 
 **Framework**: ManagedAppDistribution  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a view with the layout of a managed app view and customized labels using localized string keys.
 
@@ -30,7 +31,8 @@ init(primaryLabel: LocalizedStringKey, secondaryLabel: LocalizedStringKey = "", 
 
 ## See Also
 
-- [init(primaryLabel: any StringProtocol, secondaryLabel: any StringProtocol, tertiaryLabel: any StringProtocol, quaternaryLabel: any StringProtocol, offerState: ManagedContentOfferState, offerAction: (ManagedContentOfferState) -> Void, icon: () -> Icon)](managedcontentview/init(primarylabel:secondarylabel:tertiarylabel:quaternarylabel:offerstate:offeraction:icon:)-8l3xw.md)
+### Creating views
+- [init(primaryLabel: any StringProtocol, secondaryLabel: any StringProtocol, tertiaryLabel: any StringProtocol, quaternaryLabel: any StringProtocol, offerState: ManagedContentOfferState, offerAction: (ManagedContentOfferState) -> Void, icon: () -> Icon)](./init%28primarylabel,secondarylabel,tertiarylabel,quaternarylabel,offerstate,offeraction,icon%29-8l3xw.md)
   Create a content view with the layout of a managed app view and customized labels using strings.
 
 

@@ -1,7 +1,8 @@
 # EPROCLIM
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 quotas & mush. Too many processes.
 

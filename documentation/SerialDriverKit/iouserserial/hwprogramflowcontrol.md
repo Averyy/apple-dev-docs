@@ -1,14 +1,15 @@
 # HwProgramFlowControl
 
 **Framework**: SerialDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t HwProgramFlowControl(uint32_t arg, uint8_t xon, uint8_t xoff);
 ```
 

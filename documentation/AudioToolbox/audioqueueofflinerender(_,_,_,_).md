@@ -1,7 +1,8 @@
 # AudioQueueOfflineRender(_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Exports audio to a buffer, instead of to a device, using a playback audio queue.
 
@@ -19,26 +20,32 @@ Exports audio to a buffer, instead of to a device, using a playback audio queue.
 func AudioQueueOfflineRender(_ inAQ: AudioQueueRef, _ inTimestamp: UnsafePointer<AudioTimeStamp>, _ ioBuffer: AudioQueueBufferRef, _ inNumberFrames: UInt32) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioQueueOfflineRender(AudioQueueRef inAQ, const AudioTimeStamp *inTimestamp, AudioQueueBufferRef ioBuffer, UInt32 inNumberFrames);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
 
 #### Discussion
 
-When you change a playback audio queue’s rendering mode to offline, using the [`AudioQueueSetOfflineRenderFormat(_:_:_:)`](audioqueuesetofflinerenderformat(_:_:_:).md) function, you gain access to the rendered audio. You can then write the audio to a file, rather than have it play to external hardware such as a loudspeaker.
+When you change a playback audio queue’s rendering mode to offline, using the [`AudioQueueSetOfflineRenderFormat(_:_:_:)`](./audioqueuesetofflinerenderformat%28_,_,_%29.md) function, you gain access to the rendered audio. You can then write the audio to a file, rather than have it play to external hardware such as a loudspeaker.
 
 ## Parameters
 
 - `inAQ`: The playback audio queue.
-- `inTimestamp`: The time corresponding to the beginning of the current audio queue buffer. This function uses the `mSampleTime` field of the [`AudioTimeStamp`](https://developer.apple.com/documentation/coreaudiotypes/audiotimestamp) data structure.
+- `inTimestamp`: The time corresponding to the beginning of the current audio queue buffer. This function uses the `mSampleTime` field of the [`AudioTimeStamp`](../CoreAudioTypes/audiotimestamp.md) data structure.
 - `ioBuffer`: On input, a buffer you supply to hold rendered audio data. On output, the rendered audio data, which you can then write to a file.
 - `inNumberFrames`: The number of frames of audio to render.
 
 ## See Also
 
-- [func AudioQueueStart(AudioQueueRef, UnsafePointer<AudioTimeStamp>?) -> OSStatus](audioqueuestart(_:_:).md)
+### Related Documentation
+- [func AudioQueueStart(AudioQueueRef, UnsafePointer<AudioTimeStamp>?) -> OSStatus](./audioqueuestart%28_,_%29.md)
   Begins playing or recording audio.
-- [func AudioQueueSetOfflineRenderFormat(AudioQueueRef, UnsafePointer<AudioStreamBasicDescription>?, UnsafePointer<AudioChannelLayout>?) -> OSStatus](audioqueuesetofflinerenderformat(_:_:_:).md)
+### Performing Offline Rendering
+- [func AudioQueueSetOfflineRenderFormat(AudioQueueRef, UnsafePointer<AudioStreamBasicDescription>?, UnsafePointer<AudioChannelLayout>?) -> OSStatus](./audioqueuesetofflinerenderformat%28_,_,_%29.md)
   Sets the rendering mode and audio format for a playback audio queue.
 
 

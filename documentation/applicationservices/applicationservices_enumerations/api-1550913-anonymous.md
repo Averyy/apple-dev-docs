@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kFMCurrentFilterFormat: Int](kfmcurrentfilterformat.md)
+- [var kFMCurrentFilterFormat: Int](../kfmcurrentfilterformat.md)
 
 
 ---

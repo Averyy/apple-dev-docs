@@ -1,7 +1,8 @@
 # MoonPhase
 
 **Framework**: WeatherKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that specifies the moon phase kind.
 
@@ -28,51 +29,52 @@ Waxing and waning provide information about direction. Crescent and gibbous desc
 ## Topics
 
 ### Getting the moon phase
-- [MoonPhase.firstQuarter](moonphase/firstquarter.md)
+- [MoonPhase.firstQuarter](./moonphase/firstquarter.md)
   The disk is half lit.
-- [MoonPhase.full](moonphase/full.md)
+- [MoonPhase.full](./moonphase/full.md)
   The disk is fully lit where the moon is visible.
-- [MoonPhase.lastQuarter](moonphase/lastquarter.md)
+- [MoonPhase.lastQuarter](./moonphase/lastquarter.md)
   The disk is half lit.
-- [MoonPhase.new](moonphase/new.md)
+- [MoonPhase.new](./moonphase/new.md)
   The disk is unlit where the moon is not visible.
-- [MoonPhase.waningCrescent](moonphase/waningcrescent.md)
+- [MoonPhase.waningCrescent](./moonphase/waningcrescent.md)
   The disk is partially lit as the moon is waning.
-- [MoonPhase.waningGibbous](moonphase/waninggibbous.md)
+- [MoonPhase.waningGibbous](./moonphase/waninggibbous.md)
   The disk is half lit as the moon is waning.
-- [MoonPhase.waxingCrescent](moonphase/waxingcrescent.md)
+- [MoonPhase.waxingCrescent](./moonphase/waxingcrescent.md)
   The disk is partially lit as the moon is waxing.
-- [MoonPhase.waxingGibbous](moonphase/waxinggibbous.md)
+- [MoonPhase.waxingGibbous](./moonphase/waxinggibbous.md)
   The disk is half lit as the moon is waxing.
 ### Describing the moon phase
-- [var accessibilityDescription: String](moonphase/accessibilitydescription.md)
+- [var accessibilityDescription: String](./moonphase/accessibilitydescription.md)
   A localized accessibility description describing the moon phase.
-- [var description: String](moonphase/description.md)
+- [var description: String](./moonphase/description.md)
   A localized string describing the moon phase.
-- [var symbolName: String](moonphase/symbolname.md)
+- [var symbolName: String](./moonphase/symbolname.md)
   The SF Symbol icon that represents the moon phase.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct SunEvents](sunevents.md)
+### Celestial information
+- [struct SunEvents](./sunevents.md)
   An enumeration that represents dates of solar events, including sunrise, sunset, dawn, and dusk.
-- [struct MoonEvents](moonevents.md)
+- [struct MoonEvents](./moonevents.md)
   A structure that represents lunar events.
 
 

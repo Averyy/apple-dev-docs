@@ -1,14 +1,15 @@
 # sptm_voff_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 typedef uint64_t sptm_voff_t;
 ```
 

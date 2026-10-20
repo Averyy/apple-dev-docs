@@ -1,7 +1,8 @@
 # init(position0:position1:position2:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a plane from three positions.
 
@@ -29,7 +30,8 @@ The plane’s outward normal is computed as `cross(p1 − p0, p2 − p1)`, so th
 
 ## See Also
 
-- [init(position: SIMD3<Float>, direction: SIMD3<Float>)](lowlevelrenderer/cullconfiguration/plane/init(position:direction:).md)
+### Creating a plane
+- [init(position: SIMD3<Float>, direction: SIMD3<Float>)](./init%28position,direction%29.md)
   Creates a plane from a point on the plane and an outward normal direction.
 
 

@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 init(configuration: WKContentWorld.Configuration)
+```
+
+```objc
++ (WKContentWorld *) worldWithConfiguration:(WKContentWorldConfiguration *) configuration;
 ```
 
 #### Discussion

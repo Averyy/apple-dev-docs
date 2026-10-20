@@ -1,17 +1,22 @@
 # NSGestureRecognizerDelegate
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods for fine-tuning a gesture recognizer’s behavior.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 protocol NSGestureRecognizerDelegate : NSObjectProtocol
+```
+
+```objc
+@protocol NSGestureRecognizerDelegate <NSObject>
 ```
 
 #### Overview
@@ -21,30 +26,31 @@ Use the methods in this protocol to establish dynamic dependencies between gestu
 ## Topics
 
 ### Regulating gesture recognition
-- [func gestureRecognizer(NSGestureRecognizer, shouldAttemptToRecognizeWith: NSEvent) -> Bool](nsgesturerecognizerdelegate/gesturerecognizer(_:shouldattempttorecognizewith:).md)
+- [func gestureRecognizer(NSGestureRecognizer, shouldAttemptToRecognizeWith: NSEvent) -> Bool](./nsgesturerecognizerdelegate/gesturerecognizer%28_,shouldattempttorecognizewith%29.md)
   Asks the delegate if a gesture recognizer should attempt to recognize gestures for a particular event.
-- [func gestureRecognizerShouldBegin(NSGestureRecognizer) -> Bool](nsgesturerecognizerdelegate/gesturerecognizershouldbegin(_:).md)
+- [func gestureRecognizerShouldBegin(NSGestureRecognizer) -> Bool](./nsgesturerecognizerdelegate/gesturerecognizershouldbegin%28_%29.md)
   Asks the delegate if a gesture recognizer should transition out of the Possible (`NSGestureRecognizerStatePossible`) state.
 ### Controlling simultaneous gesture recognition
-- [func gestureRecognizer(NSGestureRecognizer, shouldRecognizeSimultaneouslyWith: NSGestureRecognizer) -> Bool](nsgesturerecognizerdelegate/gesturerecognizer(_:shouldrecognizesimultaneouslywith:).md)
+- [func gestureRecognizer(NSGestureRecognizer, shouldRecognizeSimultaneouslyWith: NSGestureRecognizer) -> Bool](./nsgesturerecognizerdelegate/gesturerecognizer%28_,shouldrecognizesimultaneouslywith%29.md)
   Asks the delegate if two gesture recognizers should be allowed to recognize their gestures simultaneously.
 ### Setting up failure requirements
-- [func gestureRecognizer(NSGestureRecognizer, shouldRequireFailureOf: NSGestureRecognizer) -> Bool](nsgesturerecognizerdelegate/gesturerecognizer(_:shouldrequirefailureof:).md)
+- [func gestureRecognizer(NSGestureRecognizer, shouldRequireFailureOf: NSGestureRecognizer) -> Bool](./nsgesturerecognizerdelegate/gesturerecognizer%28_,shouldrequirefailureof%29.md)
   Asks the delegate if the current gesture recognizer must wait to recognize its gesture until the specified gesture recognizer fails.
-- [func gestureRecognizer(NSGestureRecognizer, shouldBeRequiredToFailBy: NSGestureRecognizer) -> Bool](nsgesturerecognizerdelegate/gesturerecognizer(_:shouldberequiredtofailby:).md)
+- [func gestureRecognizer(NSGestureRecognizer, shouldBeRequiredToFailBy: NSGestureRecognizer) -> Bool](./nsgesturerecognizerdelegate/gesturerecognizer%28_,shouldberequiredtofailby%29.md)
   Asks the delegate if the current gesture recognizer must fail before another gesture recognizer is allowed to recognize its gesture.
 ### Controlling touch reception
-- [func gestureRecognizer(NSGestureRecognizer, shouldReceive: NSTouch) -> Bool](nsgesturerecognizerdelegate/gesturerecognizer(_:shouldreceive:).md)
+- [func gestureRecognizer(NSGestureRecognizer, shouldReceive: NSTouch) -> Bool](./nsgesturerecognizerdelegate/gesturerecognizer%28_,shouldreceive%29.md)
   Called, for a new touch, before the system calls the `touchesBegan:withEvent:` method on the gesture recognizer. Return `NO` to prevent the gesture recognizer from seeing this touch.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSGestureRecognizer](nsgesturerecognizer.md)
+### Custom Gestures
+- [class NSGestureRecognizer](./nsgesturerecognizer.md)
   An object that monitors events and calls its action method when a predefined sequence of events occur.
 
 

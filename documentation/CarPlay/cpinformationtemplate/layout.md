@@ -1,7 +1,8 @@
 # layout
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout that the template uses to arrange its items.
 
@@ -16,9 +17,14 @@ The layout that the template uses to arrange its items.
 var layout: CPInformationTemplateLayout { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CPInformationTemplateLayout layout;
+```
+
 ## See Also
 
-- [enum CPInformationTemplateLayout](cpinformationtemplatelayout.md)
+### Accessing the Layout
+- [enum CPInformationTemplateLayout](../cpinformationtemplatelayout.md)
   The layout that an information template uses to arrange its items.
 
 

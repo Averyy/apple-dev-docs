@@ -1,7 +1,8 @@
 # coreAdvanced3
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 AFM 3 Core Advanced.
 
@@ -20,7 +21,8 @@ static var coreAdvanced3: SystemLanguageModel.Variant { get }
 
 ## See Also
 
-- [static var core3: SystemLanguageModel.Variant](systemlanguagemodel/variant-swift.struct/core3.md)
+### Accessing the core and advanced model variants
+- [static var core3: SystemLanguageModel.Variant](./core3.md)
   AFM 3 Core.
 
 

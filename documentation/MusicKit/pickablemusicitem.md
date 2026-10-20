@@ -1,7 +1,8 @@
 # PickableMusicItem
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for the MusicKit item type that can be selected in the music picker.
 
@@ -19,17 +20,17 @@ protocol PickableMusicItem : MusicItem, Decodable, Encodable, Hashable
 ## Relationships
 
 ### Inherits From
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MusicItem](musicitem.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MusicItem](./musicitem.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [MusicVideo](musicvideo.md)
-- [Song](song.md)
-- [Track](track.md)
+- [MusicVideo](./musicvideo.md)
+- [Song](./song.md)
+- [Track](./track.md)
 
 
 ---

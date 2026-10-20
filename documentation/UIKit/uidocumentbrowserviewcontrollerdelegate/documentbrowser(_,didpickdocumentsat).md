@@ -1,7 +1,8 @@
 # documentBrowser(_:didPickDocumentsAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user has selected one or more documents.
 
@@ -15,6 +16,10 @@ Tells the delegate that the user has selected one or more documents.
 
 ```swift
 optional func documentBrowser(_ controller: UIDocumentBrowserViewController, didPickDocumentsAt documentURLs: [URL])
+```
+
+```objc
+- (void) documentBrowser:(UIDocumentBrowserViewController *) controller didPickDocumentsAtURLs:(NSArray<NSURL *> *) documentURLs;
 ```
 
 #### Discussion
@@ -64,11 +69,14 @@ private func openDocument(_ controller: UIDocumentBrowserViewController,
 ## Parameters
 
 - `controller`: The current document browser.
-- `documentURLs`: An array of URLs for the selected documents. If the document browser’s [`allowsPickingMultipleItems`](uidocumentbrowserviewcontroller/allowspickingmultipleitems.md) property is [`true`](https://developer.apple.com/documentation/swift/true), the array contains one or more URLs. If [`false`](https://developer.apple.com/documentation/swift/false), it contains only a single URL.
+- `documentURLs`: An array of URLs for the selected documents.
+
+  If the document browser’s [`allowsPickingMultipleItems`](../uidocumentbrowserviewcontroller/allowspickingmultipleitems.md) property is [`true`](../../Swift/true.md), the array contains one or more URLs. If [`false`](../../Swift/false.md), it contains only a single URL.
 
 ## See Also
 
-- [func documentBrowser(UIDocumentBrowserViewController, didPickDocumentURLs: [URL])](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didpickdocumenturls:).md)
+### Selecting documents
+- [func documentBrowser(UIDocumentBrowserViewController, didPickDocumentURLs: [URL])](./documentbrowser%28_,didpickdocumenturls%29.md)
   Tells the delegate that the user has selected one or more documents.
 
 

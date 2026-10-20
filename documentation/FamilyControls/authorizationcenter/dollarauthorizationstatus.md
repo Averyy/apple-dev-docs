@@ -1,7 +1,8 @@
 # $authorizationStatus
 
 **Framework**: Family Controls  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A publisher for the authorization status property.
 
@@ -17,7 +18,8 @@ var $authorizationStatus: Published<AuthorizationStatus>.Publisher { get }
 
 ## See Also
 
-- [var authorizationStatus: AuthorizationStatus](authorizationcenter/authorizationstatus.md)
+### Tracking authorization changes
+- [var authorizationStatus: AuthorizationStatus](./authorizationstatus.md)
   The status of your app’s authorization to provide parental controls.
 
 

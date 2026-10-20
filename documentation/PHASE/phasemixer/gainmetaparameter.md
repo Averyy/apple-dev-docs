@@ -1,7 +1,8 @@
 # gainMetaParameter
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A parameter that changes the mixer’s volume gradually over a period of time.
 
@@ -19,15 +20,20 @@ A parameter that changes the mixer’s volume gradually over a period of time.
 var gainMetaParameter: PHASEMetaParameter? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) PHASEMetaParameter * gainMetaParameter;
+```
+
 #### Discussion
 
-Use this property to smoothly adjust the volume of the mixer’s audio signals by calling [`fade(value:duration:)`](phasenumbermetaparameter/fade(value:duration:).md).
+Use this property to smoothly adjust the volume of the mixer’s audio signals by calling [`fade(value:duration:)`](../phasenumbermetaparameter/fade%28value,duration%29.md).
 
-The framework sets the initial value of this property according to the metaparameter definition object’s [`gainMetaParameterDefinition`](phasemixerdefinition/gainmetaparameterdefinition.md).
+The framework sets the initial value of this property according to the metaparameter definition object’s [`gainMetaParameterDefinition`](../phasemixerdefinition/gainmetaparameterdefinition.md).
 
 ## See Also
 
-- [var gain: Double](phasemixer/gain.md)
+### Adjusting Volume
+- [var gain: Double](./gain.md)
   The mixer’s volume.
 
 

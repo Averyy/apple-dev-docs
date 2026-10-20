@@ -1,14 +1,15 @@
 # getMaxReportSize
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+ - Deprecated in 10.15.1
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOByteCount getMaxReportSize(IOHIDReportType type);
 ```
 

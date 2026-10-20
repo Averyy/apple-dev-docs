@@ -1,7 +1,8 @@
 # anchorUpdates
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A sequence of updates that provide information about images a provider tracks.
 

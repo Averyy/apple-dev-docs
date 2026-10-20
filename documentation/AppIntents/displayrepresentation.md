@@ -1,7 +1,8 @@
 # DisplayRepresentation
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that describes the user interface presentation of a custom type.
 
@@ -11,7 +12,7 @@ A type that describes the user interface presentation of a custom type.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,48 +23,49 @@ struct DisplayRepresentation
 
 ## Mentions
 
-- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
+- [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
 ## Topics
 
 ### Creating a representation
-- [init(title: LocalizedStringResource, subtitle: LocalizedStringResource?, image: DisplayRepresentation.Image?)](displayrepresentation/init(title:subtitle:image:).md)
+- [init(title: LocalizedStringResource, subtitle: LocalizedStringResource?, image: DisplayRepresentation.Image?)](./displayrepresentation/init%28title,subtitle,image%29.md)
 ### Displaying the content
-- [var title: LocalizedStringResource](displayrepresentation/title.md)
-- [var subtitle: LocalizedStringResource?](displayrepresentation/subtitle.md)
-- [var image: DisplayRepresentation.Image?](displayrepresentation/image-swift.property.md)
-- [DisplayRepresentation.Image](displayrepresentation/image-swift.struct.md)
+- [var title: LocalizedStringResource](./displayrepresentation/title.md)
+- [var subtitle: LocalizedStringResource?](./displayrepresentation/subtitle.md)
+- [var image: DisplayRepresentation.Image?](./displayrepresentation/image-swift.property.md)
+- [DisplayRepresentation.Image](./displayrepresentation/image-swift.struct.md)
 ### Initializers
-- [init(title: LocalizedStringResource, subtitle: LocalizedStringResource?, image: DisplayRepresentation.Image?, synonyms: [LocalizedStringResource])](displayrepresentation/init(title:subtitle:image:synonyms:).md)
-- [init(title: LocalizedStringResource, subtitle: LocalizedStringResource?, synonyms: [LocalizedStringResource], image: () async throws -> DisplayRepresentation.Image?)](displayrepresentation/init(title:subtitle:synonyms:image:).md)
+- [init(title: LocalizedStringResource, subtitle: LocalizedStringResource?, image: DisplayRepresentation.Image?, synonyms: [LocalizedStringResource])](./displayrepresentation/init%28title,subtitle,image,synonyms%29.md)
+- [init(title: LocalizedStringResource, subtitle: LocalizedStringResource?, synonyms: [LocalizedStringResource], image: () async throws -> DisplayRepresentation.Image?)](./displayrepresentation/init%28title,subtitle,synonyms,image%29.md)
   Creates a display representation whose image is produced lazily by the given closure.
 ### Instance Properties
-- [var synonyms: [LocalizedStringResource]](displayrepresentation/synonyms.md)
+- [var synonyms: [LocalizedStringResource]](./displayrepresentation/synonyms.md)
   A list of localized phrases that are synonyms of this particular display representation
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../Swift/expressiblebyunicodescalarliteral.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol DisplayRepresentable](displayrepresentable.md)
+### Data representations
+- [protocol DisplayRepresentable](./displayrepresentable.md)
   An interface for providing a dynamic visual representation of a specific type and instances of that type.
-- [protocol InstanceDisplayRepresentable](instancedisplayrepresentable.md)
+- [protocol InstanceDisplayRepresentable](./instancedisplayrepresentable.md)
   An interface for providing the visual representation for an instance of a specific type.
-- [protocol TypeDisplayRepresentable](typedisplayrepresentable.md)
+- [protocol TypeDisplayRepresentable](./typedisplayrepresentable.md)
   An interface for providing the visual representation of a specific type.
-- [struct TypeDisplayRepresentation](typedisplayrepresentation.md)
+- [struct TypeDisplayRepresentation](./typedisplayrepresentation.md)
   A type that describes the user interface presentation of a custom type.
-- [protocol StaticDisplayRepresentable](staticdisplayrepresentable.md)
+- [protocol StaticDisplayRepresentable](./staticdisplayrepresentable.md)
   An interface for providing a static visual representation of a specific type.
-- [protocol CaseDisplayRepresentable](casedisplayrepresentable.md)
+- [protocol CaseDisplayRepresentable](./casedisplayrepresentable.md)
   An interface for providing the visual representation for an iterable collection of values.
 
 

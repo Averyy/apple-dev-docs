@@ -1,7 +1,8 @@
 # ExtendRenewalDateResponse
 
 **Framework**: App Store Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response that indicates whether an individual renewal-date extension succeeded, and related details.
 
@@ -10,28 +11,28 @@ A response that indicates whether an individual renewal-date extension succeeded
 
 ## Declaration
 
-```swift
+```
 object ExtendRenewalDateResponse
 ```
 
 ## Mentions
 
-- [Extending the renewal date for auto-renewable subscriptions](extending-the-renewal-date-for-auto-renewable-subscriptions.md)
+- [Extending the renewal date for auto-renewable subscriptions](./extending-the-renewal-date-for-auto-renewable-subscriptions.md)
 
 #### Discussion
 
-This object is the response data for the [`Extend a Subscription Renewal Date`](extend-a-subscription-renewal-date.md) endpoint.
+This object is the response data for the [`Extend a Subscription Renewal Date`](./extend-a-subscription-renewal-date.md) endpoint.
 
 ## Topics
 
 ### Response data types
-- [type effectiveDate](effectivedate.md)
+- [type effectiveDate](./effectivedate.md)
   The new subscription expiration date for a subscription-renewal extension.
-- [type originalTransactionId](originaltransactionid.md)
+- [type originalTransactionId](./originaltransactionid.md)
   The original transaction identifier of a purchase.
-- [type success](success.md)
+- [type success](./success.md)
   A Boolean value that indicates whether the subscription-renewal-date extension succeeded.
-- [type webOrderLineItemId](weborderlineitemid.md)
+- [type webOrderLineItemId](./weborderlineitemid.md)
   The unique identifier of subscription-purchase events across devices, including renewals.
 
 ## Properties
@@ -43,21 +44,22 @@ This object is the response data for the [`Extend a Subscription Renewal Date`](
 
 ## See Also
 
-- [Extending the renewal date for auto-renewable subscriptions](extending-the-renewal-date-for-auto-renewable-subscriptions.md)
+### Subscription-renewal-date extension
+- [Extending the renewal date for auto-renewable subscriptions](./extending-the-renewal-date-for-auto-renewable-subscriptions.md)
   Compensate eligible active subscribers for service interruptions by extending a subscription’s renewal date.
-- [Extend a Subscription Renewal Date](extend-a-subscription-renewal-date.md)
+- [Extend a Subscription Renewal Date](./extend-a-subscription-renewal-date.md)
   Extends the renewal date of a customer’s active subscription using the original transaction identifier.
-- [Extend Subscription Renewal Dates for All Active Subscribers](extend-subscription-renewal-dates-for-all-active-subscribers.md)
+- [Extend Subscription Renewal Dates for All Active Subscribers](./extend-subscription-renewal-dates-for-all-active-subscribers.md)
   Uses a subscription’s product identifier to extend the renewal date for all of its eligible active subscribers.
-- [Get Status of Subscription Renewal Date Extensions](get-status-of-subscription-renewal-date-extensions.md)
+- [Get Status of Subscription Renewal Date Extensions](./get-status-of-subscription-renewal-date-extensions.md)
   Checks whether a renewal date extension request completed, and provides the final count of successful or failed extensions.
-- [object ExtendRenewalDateRequest](extendrenewaldaterequest.md)
+- [object ExtendRenewalDateRequest](./extendrenewaldaterequest.md)
   The request body that contains subscription-renewal-extension data for an individual subscription.
-- [object MassExtendRenewalDateRequest](massextendrenewaldaterequest.md)
+- [object MassExtendRenewalDateRequest](./massextendrenewaldaterequest.md)
   The request body that contains subscription-renewal-extension data to apply for all eligible active subscribers.
-- [object MassExtendRenewalDateResponse](massextendrenewaldateresponse.md)
+- [object MassExtendRenewalDateResponse](./massextendrenewaldateresponse.md)
   A response that indicates the server successfully received the subscription-renewal-date extension request.
-- [object MassExtendRenewalDateStatusResponse](massextendrenewaldatestatusresponse.md)
+- [object MassExtendRenewalDateStatusResponse](./massextendrenewaldatestatusresponse.md)
   A response that indicates the current status of a request to extend the subscription renewal date to all eligible subscribers.
 
 

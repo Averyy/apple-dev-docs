@@ -1,7 +1,8 @@
 # Audio.DistanceAttenuation
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The different ways that audio intensity diminishes as the distance between the listener and the sound source increases.
 
@@ -22,29 +23,30 @@ enum DistanceAttenuation
 ## Topics
 
 ### Enumeration Cases
-- [Audio.DistanceAttenuation.rolloff(factor:)](audio/distanceattenuation/rolloff(factor:).md)
+- [Audio.DistanceAttenuation.rolloff(factor:)](./distanceattenuation/rolloff%28factor%29.md)
   A standard geometric model for attenuating audio intensity naturally with distance, using a specified loss strength factor.
 ### Type Properties
-- [static let `default`: Audio.DistanceAttenuation](audio/distanceattenuation/default.md)
+- [static let `default`: Audio.DistanceAttenuation](./distanceattenuation/default.md)
   The default distance attenuation, which uses a rolloff model that mimics real-world physics.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [enum Audio](audio.md)
+### Audio types
+- [enum Audio](../audio.md)
   A namespace for types that are used commonly in audio.
-- [typealias Decibel](audio/decibel.md)
+- [typealias Decibel](./decibel.md)
   The unit for measuring intensity of sound on a logarithmic scale.
-- [Audio.Directivity](audio/directivity.md)
+- [Audio.Directivity](./directivity.md)
   The radiation pattern of sound emitted from an entity.
 
 

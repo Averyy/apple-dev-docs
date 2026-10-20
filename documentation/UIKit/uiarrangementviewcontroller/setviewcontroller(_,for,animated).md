@@ -1,7 +1,8 @@
 # setViewController(_:for:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the view controller in the arrangement for the specific placement you provide.
 
@@ -27,11 +28,12 @@ Sets the view controller in the arrangement for the specific placement you provi
 
 ## See Also
 
-- [UIArrangementViewController.ViewPlacement](uiarrangementviewcontroller/viewplacement.md)
+### Managing arrangement view controllers
+- [UIArrangementViewController.ViewPlacement](./viewplacement.md)
   A placement of a view controller within an arrangement view controller.
-- [func viewController(for: UIArrangementViewController.ViewPlacement) -> UIViewController?](uiarrangementviewcontroller/viewcontroller(for:).md)
+- [func viewController(for: UIArrangementViewController.ViewPlacement) -> UIViewController?](./viewcontroller%28for%29.md)
   Returns the view controller in the arrangement for the placement you provide.
-- [func placement(for: UIViewController) -> UIArrangementViewController.ViewPlacement?](uiarrangementviewcontroller/placement(for:).md)
+- [func placement(for: UIViewController) -> UIArrangementViewController.ViewPlacement?](./placement%28for%29.md)
   Returns the placement for the view controller you provide in the arrangement.
 
 

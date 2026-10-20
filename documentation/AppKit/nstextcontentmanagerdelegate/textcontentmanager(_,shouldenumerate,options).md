@@ -1,7 +1,8 @@
 # textContentManager(_:shouldEnumerate:options:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the framework should skip this text element in the enumeration.
 
@@ -14,6 +15,10 @@ Returns a Boolean value that indicates whether the framework should skip this te
 optional func textContentManager(_ textContentManager: NSTextContentManager, shouldEnumerate textElement: NSTextElement, options: NSTextContentManager.EnumerationOptions = []) -> Bool
 ```
 
+```objc
+- (BOOL) textContentManager:(NSTextContentManager *) textContentManager shouldEnumerateTextElement:(NSTextElement *) textElement options:(NSTextContentManagerEnumerationOptions) options;
+```
+
 #### Return Value
 
 A Boolean value that informs the framework to skip this `textElement`  in the enumeration. Returning `false` indicates `textElement` to be skipped; otherwise the element is included in the enumeration.
@@ -21,7 +26,7 @@ A Boolean value that informs the framework to skip this `textElement`  in the en
 ## Parameters
 
 - `textContentManager`: The content manager.
-- `textElement`: The [`NSTextElement`](nstextelement.md) to evaluate.
+- `textElement`: The [`NSTextElement`](../nstextelement.md) to evaluate.
 - `options`: One of the available `NSTextElementProviderEnumerationOptions` options.
 
 

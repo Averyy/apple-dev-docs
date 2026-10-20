@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attribute container from a dictionary, using default attribute scopes.
 
@@ -22,7 +23,7 @@ init(_ dictionary: [NSAttributedString.Key : Any])
 
 #### Discussion
 
-This initializer includes all attribute scopes defined by the SDK, such as [`AttributeScopes.FoundationAttributes`](attributescopes/foundationattributes.md), [`AttributeScopes.SwiftUIAttributes`](attributescopes/swiftuiattributes.md), and [`AttributeScopes.AccessibilityAttributes`](attributescopes/accessibilityattributes.md). To use third-party attribute scopes, use the initializers [`init(_:including:)`](attributecontainer/init(_:including:)-2mw0o.md) and [`init(_:including:)`](attributecontainer/init(_:including:)-28n0g.md).
+This initializer includes all attribute scopes defined by the SDK, such as [`AttributeScopes.FoundationAttributes`](../attributescopes/foundationattributes.md), [`AttributeScopes.SwiftUIAttributes`](../attributescopes/swiftuiattributes.md), and [`AttributeScopes.AccessibilityAttributes`](../attributescopes/accessibilityattributes.md). To use third-party attribute scopes, use the initializers [`init(_:including:)`](./init%28_,including%29-2mw0o.md) and [`init(_:including:)`](./init%28_,including%29-28n0g.md).
 
 ## Parameters
 
@@ -30,11 +31,12 @@ This initializer includes all attribute scopes defined by the SDK, such as [`Att
 
 ## See Also
 
-- [init()](attributecontainer/init.md)
+### Creating an Attribute Container
+- [init()](./init%28%29.md)
   Creates an empty attribute container.
-- [init<S>([NSAttributedString.Key : Any], including: S.Type) throws](attributecontainer/init(_:including:)-2mw0o.md)
+- [init<S>([NSAttributedString.Key : Any], including: S.Type) throws](./init%28_,including%29-2mw0o.md)
   Creates an attribute container from a dictionary and an attribute scope.
-- [init<S>([NSAttributedString.Key : Any], including: KeyPath<AttributeScopes, S.Type>) throws](attributecontainer/init(_:including:)-28n0g.md)
+- [init<S>([NSAttributedString.Key : Any], including: KeyPath<AttributeScopes, S.Type>) throws](./init%28_,including%29-28n0g.md)
   Creates an attribute container from a dictionary and an attribute scope that a key path identifies.
 
 

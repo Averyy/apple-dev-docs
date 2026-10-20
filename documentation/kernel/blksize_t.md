@@ -1,14 +1,15 @@
 # blksize_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef __darwin_blksize_t blksize_t;
 ```
 

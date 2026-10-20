@@ -1,7 +1,8 @@
 # policy
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The policy that determines the earliest date and time WidgetKit requests a new timeline from a timeline provider.
 
@@ -21,9 +22,10 @@ let policy: TimelineReloadPolicy
 
 ## See Also
 
-- [let entries: [EntryType]](timeline/entries.md)
+### Getting Timeline Properties
+- [let entries: [EntryType]](./entries.md)
   An array of timeline entries.
-- [struct TimelineReloadPolicy](timelinereloadpolicy.md)
+- [struct TimelineReloadPolicy](../timelinereloadpolicy.md)
   A type that indicates the earliest date WidgetKit requests a new timeline from the widget’s provider.
 
 

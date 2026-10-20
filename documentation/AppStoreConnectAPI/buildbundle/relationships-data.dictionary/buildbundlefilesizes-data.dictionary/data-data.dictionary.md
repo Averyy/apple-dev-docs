@@ -1,7 +1,8 @@
 # BuildBundle.Relationships.BuildBundleFileSizes.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related Build Bundle File Sizes resource.
 
@@ -10,7 +11,7 @@ The type and ID of a related Build Bundle File Sizes resource.
 
 ## Declaration
 
-```swift
+```
 object BuildBundle.Relationships.BuildBundleFileSizes.Data
 ```
 
@@ -18,6 +19,8 @@ object BuildBundle.Relationships.BuildBundleFileSizes.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Build Bundle File Sizes resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `buildBundleFileSizes`
 
 
 ---

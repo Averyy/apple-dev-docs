@@ -1,7 +1,8 @@
 # AVMIDINoteEvent
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents MIDI note on or off messages.
 
@@ -19,38 +20,43 @@ An object that represents MIDI note on or off messages.
 class AVMIDINoteEvent
 ```
 
+```objc
+@interface AVMIDINoteEvent : AVMusicEvent
+```
+
 ## Topics
 
 ### Creating a MIDI note event
-- [init(channel: UInt32, key: UInt32, velocity: UInt32, duration: AVMusicTimeStamp)](avmidinoteevent/init(channel:key:velocity:duration:).md)
+- [init(channel: UInt32, key: UInt32, velocity: UInt32, duration: AVMusicTimeStamp)](./avmidinoteevent/init%28channel,key,velocity,duration%29.md)
   Creates an event with a MIDI channel, key number, velocity, and duration.
 ### Configuring a MIDI note event
-- [var channel: UInt32](avmidinoteevent/channel.md)
+- [var channel: UInt32](./avmidinoteevent/channel.md)
   The MIDI channel.
-- [var key: UInt32](avmidinoteevent/key.md)
+- [var key: UInt32](./avmidinoteevent/key.md)
   The MIDI key number.
-- [var velocity: UInt32](avmidinoteevent/velocity.md)
+- [var velocity: UInt32](./avmidinoteevent/velocity.md)
   The MIDI velocity.
-- [var duration: AVMusicTimeStamp](avmidinoteevent/duration.md)
+- [var duration: AVMusicTimeStamp](./avmidinoteevent/duration.md)
   The duration for the note, in beats.
 
 ## Relationships
 
 ### Inherits From
-- [AVMusicEvent](avmusicevent.md)
+- [AVMusicEvent](./avmusicevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVMIDIMetaEvent](avmidimetaevent.md)
+### Handling MIDI events
+- [class AVMIDIMetaEvent](./avmidimetaevent.md)
   An object that represents MIDI meta event messages.
-- [class AVMIDISysexEvent](avmidisysexevent.md)
+- [class AVMIDISysexEvent](./avmidisysexevent.md)
   An object that represents a MIDI system exclusive message.
 
 

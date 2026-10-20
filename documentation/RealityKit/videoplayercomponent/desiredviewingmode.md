@@ -1,7 +1,8 @@
 # desiredViewingMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The viewer’s selected content-viewing mode.
 
@@ -25,7 +26,8 @@ This is the content-viewing mode that the current content-viewing mode transitio
 
 ## See Also
 
-- [var isPassthroughTintingEnabled: Bool](videoplayercomponent/ispassthroughtintingenabled.md)
+### Configuring the video player
+- [var isPassthroughTintingEnabled: Bool](./ispassthroughtintingenabled.md)
   A Boolean value that indicates whether the passthrough camera feed is tinted, emphasizing the video content.
 
 

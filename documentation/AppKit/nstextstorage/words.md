@@ -1,17 +1,22 @@
 # words
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text storage contents as an array of words.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var words: [NSTextStorage] { get set }
+```
+
+```objc
+@property (copy) NSArray<NSTextStorage *> * words;
 ```
 
 #### Discussion
@@ -20,15 +25,16 @@ Unless you’re dealing with scriptability, you shouldn’t use or modify this p
 
 ## See Also
 
-- [var attributeRuns: [NSTextStorage]](nstextstorage/attributeruns.md)
+### Accessing scriptable properties
+- [var attributeRuns: [NSTextStorage]](./attributeruns.md)
   The text storage contents as an array of attribute runs.
-- [var paragraphs: [NSTextStorage]](nstextstorage/paragraphs.md)
+- [var paragraphs: [NSTextStorage]](./paragraphs.md)
   The text storage contents as an array of paragraphs.
-- [var characters: [NSTextStorage]](nstextstorage/characters.md)
+- [var characters: [NSTextStorage]](./characters.md)
   The text storage contents as an array of characters.
-- [var font: NSFont?](nstextstorage/font.md)
+- [var font: NSFont?](./font.md)
   The font for the text storage.
-- [var foregroundColor: NSColor?](nstextstorage/foregroundcolor.md)
+- [var foregroundColor: NSColor?](./foregroundcolor.md)
   The color for the text.
 
 

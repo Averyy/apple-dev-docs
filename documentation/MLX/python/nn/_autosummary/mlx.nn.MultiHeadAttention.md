@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.M
 
 # mlx.nn.MultiHeadAttention
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.MultiHeadAttention.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.MultiHeadAttention
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.MultiHeadAttention
-
 **class MultiHeadAttention(*dims: int*, *num_heads: int*, *query_input_dims: int | None = None*, *key_input_dims: int | None = None*, *value_input_dims: int | None = None*, *value_dims: int | None = None*, *value_output_dims: int | None = None*, *bias: bool = False*)**
 : Implements the scaled dot product attention with multiple heads.
 Given inputs for queries, keys and values the `MultiHeadAttention`
@@ -66,5 +39,3 @@ Default: `False`.
 Methods
 
 `create_additive_causal_mask`(N[, dtype])
-
-** Contents

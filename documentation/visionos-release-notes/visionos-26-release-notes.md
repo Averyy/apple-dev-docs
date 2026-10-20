@@ -1,20 +1,21 @@
 # visionOS 26 Release Notes
 
-**Framework**: visionOS Release Notes
+**Framework**: visionOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The visionOS 26 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 26. The SDK comes bundled with Xcode 26. For information on the compatibility requirements for Xcode 26, see [`Xcode 26 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26-release-notes).
+The visionOS 26 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 26. The SDK comes bundled with Xcode 26. For information on the compatibility requirements for Xcode 26, see [Xcode 26 Release Notes](../Xcode-Release-Notes/xcode-26-release-notes.md).
 
-##### Airdrop
+##### AirDrop
 
 ###### Resolved Issues
 
 - Fixed: Any 2D video or spatial video received via AirDrop will be saved and opened in the Files app instead of the Photos app.  (152265301)
 
-##### Alarmkit
+##### AlarmKit
 
 ###### Resolved Issues
 
@@ -53,7 +54,7 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 - visionOS app icons might appear with unexpected shapes and highlights in various places across the system.  (154683810)
 
-##### Arkit
+##### ARKit
 
 ###### New Features
 
@@ -67,31 +68,35 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 - Fixed: For Accessory Tracking, in order to get the aim POI (Point of Interest) for GCStylus, use the string “tip” in place of “aim”.  (152335557)
 - Fixed: ARKit now updates data providers to their new states individually. As a result, the `ARKitSession.Event.dataProviderStateChanged` event might be called more often.  (152665341)
 - Fixed: Addressed an issue, where you may have received inaccurate hands data, if you query hand anchors using `HandTrackingProvider.handAnchors(at:)` with timestamps too far in the past or future.  (153125027)
-- Fixed: The implementation of `ar_accessory_tracking_provider_get_latest_anchors` retains returned memory, which contradicts the stated documentation. Ensure the application code using this function adheres to the existing documentation and is rebuilt against the latest SDK release.  (154337356)
+- Fixed: The implementation of `ar_accessory_tracking_provider_get_latest_anchors` retains returned memory, which contradicts the stated documentation.
+
+  Ensure the application code using this function adheres to the existing documentation and is rebuilt against the latest SDK release.  (154337356)
 - Fixed: In visionOS 26 beta 4, accessory tracking fails and controllers are not recognized as spatial input devices.  (156458710)
 
 ###### Known Issues
 
-- Anchor removal notifications do not surface for `AccessoryTrackingProvider`s that listen for `anchorUpdates` when spatial accessories are disconnected or turned off. Apps that depend on removal notifications for removing on-screen visualizations and updating application state might continue to show outdated content when Vision Pro is put back on.  (155822320) **Workaround:** Apps still receive the `GCControllerDidDisconnect` and `GCStylusDidDisconnect` notifications when resuming use of Apple Vision Pro and can use them to reset state.
+- Anchor removal notifications do not surface for `AccessoryTrackingProvider`s that listen for `anchorUpdates` when spatial accessories are disconnected or turned off. Apps that depend on removal notifications for removing on-screen visualizations and updating application state might continue to show outdated content when Vision Pro is put back on.  (155822320)
+
+  **Workaround:** Apps still receive the `GCControllerDidDisconnect` and `GCStylusDidDisconnect` notifications when resuming use of Apple Vision Pro and can use them to reset state.
 
 ###### Deprecations
 
 - `ARQuickLookPreviewItem.h` has been moved to the Quicklook framework and is no longer available via ARKit. If your code imports `ARKit/ARQuickLookPreviewItem.h` directly, change it to import `QuickLook/QuickLook.h` instead. Swift clients should import Quicklook instead of ARKit.  (152081500)
 - `NSEnterpriseMCAMUsageDescription` is now deprecated. Use `NSMainCameraUsageDescription` instead.  (152098891)
 
-##### Assistantschemas
+##### AssistantSchemas
 
 ###### Resolved Issues
 
 - Fixed: If you have adopted any of the following email AssistantSchemas, you will experience a compilation error due to a parameter type change: `createDraft`, `updateDraft`, `replyMail`, `forwardMail`, `message`, and `draft`.  (148633307)
 
-##### Avfoundation
+##### AVFoundation
 
 ###### Resolved Issues
 
 - Fixed: `AVPlayerLayer` does not ensure a valid video frame is always displayed during item replacement, as the `isReadyForDisplay` property does not remain true during transitions.  (151902458)
 
-##### Avkit
+##### AVKit
 
 ###### Resolved Issues
 
@@ -108,13 +113,13 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 - Fixed: The installation of large asset packs might fail.  (153128086)
 - Fixed: The URL Override setting doesn’t save an entered URL’s port number. The device always attempts to communicate with the mock server over port 443.  (156113742) (FB18913475)
 
-##### Cloudkit
+##### CloudKit
 
 ###### Resolved Issues
 
 - Fixed: CloudKit sharing URLs do not launch third-party apps.  (151778655)
 
-##### Compositorservices
+##### CompositorServices
 
 ###### Resolved Issues
 
@@ -126,8 +131,12 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 ###### Known Issues
 
 - Partially-occluded objects might be more difficult to target with tracking areas compared to RealityKit colliders.  (149224443)
-- For CompositorServices renderers using a shared layout, hover effects might not work on tracking areas.  (155811050) **Workaround:** Use the layered layout or the dedicated layout with hover effects.
-- When using Metal 4 and progressive immersion, calling `cp_drawable_render_context_mtl4_end_encoding` triggers a crash.  (156963664) **Workaround:** Set “GPU Frame Capture” in scheme options to “Disabled”.
+- For CompositorServices renderers using a shared layout, hover effects might not work on tracking areas.  (155811050)
+
+  **Workaround:** Use the layered layout or the dedicated layout with hover effects.
+- When using Metal 4 and progressive immersion, calling `cp_drawable_render_context_mtl4_end_encoding` triggers a crash.  (156963664)
+
+  **Workaround:** Set “GPU Frame Capture” in scheme options to “Disabled”.
 
 ##### Control Center
 
@@ -142,28 +151,36 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 - Fixed: While using controller tracking, the Hand Tracking API via ARKit still provides updates for hand holding the controller at 1Hz. This means that if an app is using controller tracking and hand tracking at the same time, it will get sporadic hand tracking results. The intended behavior is for hand tracking to stop when controller is held.   (151882645)
 - Fixed: User might not be able to close or reposition app windows with a game controller or with hand gestures after using a game controller.  (152673502)
 
-##### Coredata
+##### CoreData
 
 ###### Resolved Issues
 
-- Fixed: In beta 5 SDK, CoreData changed several `Sendable` annotations to resolve compatibility issues with Swift 6’s new `MainActor` default isolation feature. These changes include marking `NSManagedObject` as `NS_SWIFT_NONISOLATED NS_SWIFT_NONSENDABLE`, marking `NSManagedObjectContext` as `NS_SWIFT_NONISOLATED NS_SWIFT_SENDABLE`, and requiring `NS_SWIFT_SENDABLE` closures for the family of `perform`, `performBlock`, `performBlockAndWait` and similar methods. These changes are ABI compatible with past releases but might introduce new warnings while building source code that violates the longstanding CoreData concurrency guidelines. `NSManagedObject` are mutable reference types inextricably related to others in a graph and cannot be made `Sendable`. They are expected to be isolated to the scope of the `NSManagedObjectContext` that creates or fetches them. `NSManagedObjectContext` is a style of actor which encapsulates its own dispatch queue. While it’s impermissible to use many methods on `NSManagedObjectContext` from other threads, it is permissible to pass references around to invoke the `performBlock` family of methods, for the purpose of routing a `Sendable` closure to its managed dispatch queue. CoreData supports a user default `-com.apple.CoreData.ConcurrencyDebug 1` which can be used to enable additional assertions.  (153848710) (FB18216198)
+- Fixed: In beta 5 SDK, CoreData changed several `Sendable` annotations to resolve compatibility issues with Swift 6’s new `MainActor` default isolation feature. These changes include marking `NSManagedObject` as `NS_SWIFT_NONISOLATED NS_SWIFT_NONSENDABLE`, marking `NSManagedObjectContext` as `NS_SWIFT_NONISOLATED NS_SWIFT_SENDABLE`, and requiring `NS_SWIFT_SENDABLE` closures for the family of `perform`, `performBlock`, `performBlockAndWait` and similar methods. These changes are ABI compatible with past releases but might introduce new warnings while building source code that violates the longstanding CoreData concurrency guidelines.
+
+  `NSManagedObject` are mutable reference types inextricably related to others in a graph and cannot be made `Sendable`. They are expected to be isolated to the scope of the `NSManagedObjectContext` that creates or fetches them. `NSManagedObjectContext` is a style of actor which encapsulates its own dispatch queue. While it’s impermissible to use many methods on `NSManagedObjectContext` from other threads, it is permissible to pass references around to invoke the `performBlock` family of methods, for the purpose of routing a `Sendable` closure to its managed dispatch queue. CoreData supports a user default `-com.apple.CoreData.ConcurrencyDebug 1` which can be used to enable additional assertions.  (153848710) (FB18216198)
 
 ###### Deprecations
 
-- This release removes support for the following deprecated `NSPersistentStore` option keys: - `NSPersistentStoreUbiquitousContentNameKey`
-- `NSPersistentStoreUbiquitousContentURLKey`
-- `NSPersistentStoreUbiquitousPeerTokenOption`
-- `NSPersistentStoreRemoveUbiquitousMetadataOption`
-- `NSPersistentStoreUbiquitousContainerIdentifierKey`
-- `NSPersistentStoreRebuildFromUbiquitousContentOption` These keys have been deprecated for more than a decade. Affected apps rebuilt with the iOS or macOS 26 SDK will get errors. Apps built against older SDKs will log warnings when opening the store. The on-device persistent store will be fully usable after these keys are removed from options dictionary, albeit without syncing. For data syncing, these APIs were superseded by `NSPersistentCloudKitContainer` in iOS 13 and SwiftData in iOS 17. If absolutely necessary, the iCloud content remains accessible in the containers with the last baseline as a .zip archive file.  (157297746) (FB19286235)
+- This release removes support for the following deprecated `NSPersistentStore` option keys:
 
-##### Eyesight
+  - `NSPersistentStoreUbiquitousContentNameKey`
+  - `NSPersistentStoreUbiquitousContentURLKey`
+  - `NSPersistentStoreUbiquitousPeerTokenOption`
+  - `NSPersistentStoreRemoveUbiquitousMetadataOption`
+  - `NSPersistentStoreUbiquitousContainerIdentifierKey`
+  - `NSPersistentStoreRebuildFromUbiquitousContentOption`
+
+  These keys have been deprecated for more than a decade. Affected apps rebuilt with the iOS or macOS 26 SDK will get errors. Apps built against older SDKs will log warnings when opening the store.
+
+  The on-device persistent store will be fully usable after these keys are removed from options dictionary, albeit without syncing. For data syncing, these APIs were superseded by `NSPersistentCloudKitContainer` in iOS 13 and SwiftData in iOS 17. If absolutely necessary, the iCloud content remains accessible in the containers with the last baseline as a .zip archive file.  (157297746) (FB19286235)
+
+##### EyeSight
 
 ###### Resolved Issues
 
 - Fixed: EyeSight might not display content, even if an observer is present.  (155800405)
 
-##### Facetime
+##### FaceTime
 
 ###### Known Issues
 
@@ -179,7 +196,7 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 - Fixed: Functions that initialize a string from a C-string pointer do not validate that the provided encoding is a valid encoding for C-strings.  (143756086) (FB16417968)
 
-##### Foundation Models Framework
+##### Foundation Models framework
 
 ###### New Features
 
@@ -213,26 +230,32 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 ###### Known Issues
 
-- Some instructions and prompts to the model might not lead to expected responses. Use Feedback Assistant to report satisfactory or unsatisfactory cases. When applicable, you can use `LanguageModelSession.logFeedbackAttachment()` to serialize the feedback to a JSON file and attach it to Feedback Assistant.  (152318091) **Workaround:** Refine your instructions and prompts using `#Playground` in Xcode. When applying guided generation with a `@Generable` type, add `@Guide` with a custom description on properties to steer the model’s responses.
-- If `Argument` type is an enum with associated type, tools will encounter a `ToolCallError` with an underlying `decodingFailure` when the model attempts to call it.  (156723065) **Workaround:** Wrap the enum in a struct.
+- Some instructions and prompts to the model might not lead to expected responses. Use Feedback Assistant to report satisfactory or unsatisfactory cases. When applicable, you can use `LanguageModelSession.logFeedbackAttachment()` to serialize the feedback to a JSON file and attach it to Feedback Assistant.  (152318091)
+
+  **Workaround:** Refine your instructions and prompts using `#Playground` in Xcode. When applying guided generation with a `@Generable` type, add `@Guide` with a custom description on properties to steer the model’s responses.
+- If `Argument` type is an enum with associated type, tools will encounter a `ToolCallError` with an underlying `decodingFailure` when the model attempts to call it.  (156723065)
+
+  **Workaround:** Wrap the enum in a struct.
 
 ##### Game Controller
 
 ###### New Features
 
-- Pair multiple Apple devices to your DualSense or DualSense Edge controller and easily switch between them directly using the controller or Bluetooth settings. See [`this PlayStation blog post`](https://developer.apple.comhttps://blog.playstation.com/2025/07/23/new-ps5-system-update-beta-previews-dualsense-wireless-controller-pairing-across-multiple-devices/) for details.  (137782227)
+- Pair multiple Apple devices to your DualSense or DualSense Edge controller and easily switch between them directly using the controller or Bluetooth settings. See [this PlayStation blog post](https://blog.playstation.com/2025/07/23/new-ps5-system-update-beta-previews-dualsense-wireless-controller-pairing-across-multiple-devices/) for details.  (137782227)
 
 ###### Known Issues
 
-- You might not be able to reposition app windows with a game controller after playing an Arcade game using controllers.  (152130313) **Workaround:** Turn off Bluetooth, turn it on again, and re-connect the controllers.
+- You might not be able to reposition app windows with a game controller after playing an Arcade game using controllers.  (152130313)
 
-##### Healthkit
+  **Workaround:** Turn off Bluetooth, turn it on again, and re-connect the controllers.
+
+##### HealthKit
 
 ###### Resolved Issues
 
 - Fixed: The authorization screen prompted by the Medications Authorization API cannot be dismissed if the user has no available medications needing authorization.  (152094574)
 
-##### Icloud
+##### iCloud
 
 ###### Resolved Issues
 
@@ -242,25 +265,31 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 ###### Known Issues
 
-- The UI becomes locked when attempting to interact with the generic person panel noted in popover for bincompat Playground API presentation.  (152095114) **Workaround:** Force quit and restart the app.
+- The UI becomes locked when attempting to interact with the generic person panel noted in popover for bincompat Playground API presentation.  (152095114)
 
-##### Immersivespace
+  **Workaround:** Force quit and restart the app.
+
+##### ImmersiveSpace
 
 ###### Resolved Issues
 
 - Fixed: Observable view models in an ImmersiveSpace do not get de-initialized when the ImmersiveSpace is closed. Additionally, ImmersiveSpace content is evaluated eagerly instead of lazily.  (147699733)
 
-##### Iphone Unlock
+##### iPhone Unlock
 
 ###### Known Issues
 
-- Unlocking your iPhone with Apple Vision Pro might not work.  (155556946) **Workaround:** Update the iPhone to iOS 26 beta 4 or newer and the Apple Vision Pro to visionOS 26 beta 4 or newer.
+- Unlocking your iPhone with Apple Vision Pro might not work.  (155556946)
+
+  **Workaround:** Update the iPhone to iOS 26 beta 4 or newer and the Apple Vision Pro to visionOS 26 beta 4 or newer.
 
 ##### Keyboards
 
 ###### Known Issues
 
-- For Chinese, Japanese, and Korean keyboards, expanding and collapsing the candidate bar might cause the bottom row of full-size keyboards and bottom two rows of 10-key keyboards to register the wrong input.  (152120249) **Workaround:** Resize the keyboard by dragging the corner.
+- For Chinese, Japanese, and Korean keyboards, expanding and collapsing the candidate bar might cause the bottom row of full-size keyboards and bottom two rows of 10-key keyboards to register the wrong input.  (152120249)
+
+  **Workaround:** Resize the keyboard by dragging the corner.
 
 ##### Lists
 
@@ -284,7 +313,9 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 ###### Known Issues
 
-- Curated guides do not scroll on iOS, iPadOS, or visionOS when the iPhone is in landscape mode.  (152123749) **Workaround:** On iPhone, view curated guides in portrait mode.
+- Curated guides do not scroll on iOS, iPadOS, or visionOS when the iPhone is in landscape mode.  (152123749)
+
+  **Workaround:** On iPhone, view curated guides in portrait mode.
 
 ##### Memory Tools
 
@@ -307,7 +338,7 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 ###### New Features
 
-- Metal 4 is now supported. See [`Metal`](https://developer.apple.comhttps://developer.apple.com/metal/) for additional details.  (113781091)
+- Metal 4 is now supported. See [Metal](https://developer.apple.com/metal/) for additional details.  (113781091)
 
 ###### Resolved Issues
 
@@ -316,9 +347,11 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 ###### Known Issues
 
-- Metal Shader Validation might not work with Metal 4 ray tracing pipelines.  (152520367) **Workaround:** Selectively disable Shader Validation for pipelines using ray tracing. See [`documentation`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/validating-your-apps-metal-shader-usage/#Selectively-enable-Shader-Validation).
+- Metal Shader Validation might not work with Metal 4 ray tracing pipelines.  (152520367)
 
-##### Metalfx
+  **Workaround:** Selectively disable Shader Validation for pipelines using ray tracing. See [documentation](../Xcode/validating-your-apps-metal-shader-usage.md#Selectively-enable-Shader-Validation).
+
+##### MetalFX
 
 ###### Resolved Issues
 
@@ -340,13 +373,13 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 - The Music widget might be unable to display content artwork.  (155628172)
 
-##### Networkextension
+##### NetworkExtension
 
 ###### Deprecations
 
 - Algorithms DES, 3DES, SHA1-96 and SHA1-160 as well as Diffie-Hellman groups less than 14 are no longer supported for IKEv2 VPNs.  (148767790)
 
-##### Nslog
+##### NSLog
 
 ###### New Features
 
@@ -358,7 +391,7 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 - Fixed: Opening a side-by-side stereo 180° video on Apple Vision Pro from Files and opting to convert it to Apple Projected Media Profile might stall indefinitely during conversion.   (146349661)
 
-##### Realitykit
+##### RealityKit
 
 ###### New Features
 
@@ -367,7 +400,9 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 ###### Resolved Issues
 
-- Fixed: Entities with a PortalComponent ignore any ModelSortGroupComponent and instead use a fixed rendering order. In case of sorting rendering issues with portal surface, explicitly add a ModelSortGroupComponent using a `.planarUIAlwaysBehind` sort group.  (149899345)
+- Fixed: Entities with a PortalComponent ignore any ModelSortGroupComponent and instead use a fixed rendering order.
+
+  In case of sorting rendering issues with portal surface, explicitly add a ModelSortGroupComponent using a `.planarUIAlwaysBehind` sort group.  (149899345)
 - Fixed: When using RealityKit API to retrieve the transform value of an accessory-anchored entity in a shared space, the result might be offset from its true value.  (151163403)
 - Fixed: App will crash if an entity is removed while presenting an `ImagePresentationComponent.Spatial3DImage` that has not yet finished generating.  (151960494)
 - Fixed: The `animate` functions on `Entity` and `RealityViewContent` do not start animations.  (152456435)
@@ -375,27 +410,37 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 ###### Known Issues
 
-- Synchronous-loading APIs block the main actor and should not be used in async contexts.  (117170643) **Workaround:** Use `init(...)` async instead.
-- Simple Views using RealityView that modify a `@State` in the `make` closure and use it only in the `update` closure sometimes read an old value in the `update` closure.  (145771388) **Workaround:** Explicitly capture state properties in the `update` closure: ```None
- struct ContentView: View {
-     @State var entity: Entity?
-     var body: some View {
-         RealityView { content in
-             entity = Entity(...)
-             content.add(entity!)
-         } update: { [entity] content in
-             // modify the captured Entity
-             entity.transform = ...
-         }
-     }
- }
-```
+- Synchronous-loading APIs block the main actor and should not be used in async contexts.  (117170643)
+
+  **Workaround:** Use `init(...)` async instead.
+- Simple Views using RealityView that modify a `@State` in the `make` closure and use it only in the `update` closure sometimes read an old value in the `update` closure.  (145771388)
+
+  **Workaround:** Explicitly capture state properties in the `update` closure:
+
+  ```
+   struct ContentView: View {
+       @State var entity: Entity?
+       var body: some View {
+           RealityView { content in
+               entity = Entity(...)
+               content.add(entity!)
+           } update: { [entity] content in
+               // modify the captured Entity
+               entity.transform = ...
+           }
+       }
+   }
+  ```
 - Some properties and components do not update SwiftUI Views when accessed through the `.observable` property on Entity.  (147063698)
 - When a `PresentationComponent` is created with a `Binding` from an `ObservableObject`’s published property, changes to the property might not result in the popover presenting correctly.  (151346044)
-- When using ManipulationComponent with `dynamics.translationBehavior = .none`, `releaseBehavior = .reset` does not reset rotation.  (151648417) **Workaround:** Apply rotation after `ManipulationEvents.WillEnd`.
-- Windows with solid background colors appear to stutter at the edges of Developer Captures if no other windows are open.  (156968230) **Workaround:** Use the default background style, open another window in the background, or keep the window in view at all times during the Developer Capture.
+- When using ManipulationComponent with `dynamics.translationBehavior = .none`, `releaseBehavior = .reset` does not reset rotation.  (151648417)
 
-##### Remoteimmersivespace
+  **Workaround:** Apply rotation after `ManipulationEvents.WillEnd`.
+- Windows with solid background colors appear to stutter at the edges of Developer Captures if no other windows are open.  (156968230)
+
+  **Workaround:** Use the default background style, open another window in the background, or keep the window in view at all times during the Developer Capture.
+
+##### RemoteImmersiveSpace
 
 ###### Resolved Issues
 
@@ -411,10 +456,18 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 ###### Known Issues
 
 - When using the RemoteImmersiveSpace API to stream spatial content from Mac to Apple Vision Pro, there might be visual artifacts around objects of high depth disparity, such as near objects overlapping far objects.  (147999474)
-- When using the RemoteImmersiveSpace API that streams spatial content from Mac to Apple Vision Pro, visionOS 26 beta 2 and macOS 26 beta 2 are not backwards compatible with visionOS 26 beta 1 and macOS 26 beta 1.  (149579399) **Workaround:** Use both visionOS 26 beta 2 and macOS 26 beta 2.
-- When using the RemoteImmersiveSpace API to stream spatial content from Mac to Apple Vision Pro, an app session might have video stalls, blurry content, and black rendering on the sides if running on a Mac computer with Apple silicon.  (151322584) **Workaround:** Profile your application and leverage the -renderQuality API new to visionOS and macOS.
-- If you port an app using Xcode template or Metal 4 with `ProgressiveImmersionStyle` for macOS spatial rendering, the app will crash on macOS.  (153574517) **Workaround:** Use `FullImmersionStyle`.
-- When using the RemoteImmersiveSpace API to stream spatial content from Mac to Apple Vision Pro while in Travel mode, spatial stream might stall and end.  (154209388) **Workaround:** End Travel Mode while using RemoteImmersiveSpace API-enabled apps.
+- When using the RemoteImmersiveSpace API that streams spatial content from Mac to Apple Vision Pro, visionOS 26 beta 2 and macOS 26 beta 2 are not backwards compatible with visionOS 26 beta 1 and macOS 26 beta 1.  (149579399)
+
+  **Workaround:** Use both visionOS 26 beta 2 and macOS 26 beta 2.
+- When using the RemoteImmersiveSpace API to stream spatial content from Mac to Apple Vision Pro, an app session might have video stalls, blurry content, and black rendering on the sides if running on a Mac computer with Apple silicon.  (151322584)
+
+  **Workaround:** Profile your application and leverage the -renderQuality API new to visionOS and macOS.
+- If you port an app using Xcode template or Metal 4 with `ProgressiveImmersionStyle` for macOS spatial rendering, the app will crash on macOS.  (153574517)
+
+  **Workaround:** Use `FullImmersionStyle`.
+- When using the RemoteImmersiveSpace API to stream spatial content from Mac to Apple Vision Pro while in Travel mode, spatial stream might stall and end.  (154209388)
+
+  **Workaround:** End Travel Mode while using RemoteImmersiveSpace API-enabled apps.
 
 ##### Safari
 
@@ -463,7 +516,7 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 - Spotlight Search shows blank icons for native visionOS apps in Siri Suggestions.  (155998187)
 
-##### Storekit
+##### StoreKit
 
 ###### New Features
 
@@ -493,7 +546,7 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 - The `.chart3DRenderingStyle` modifier is not functional.  (150430199)
 
-##### Swiftui
+##### SwiftUI
 
 ###### New Features
 
@@ -501,52 +554,56 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 - Popovers now support customization of their corner radius, through the `presentationCornerRadius(_:)` modifier.  (112938038)
 - Confirmation dialogs presented with the `.confirmationDialog` modifier now appear as popovers, anchored to the source of the presentation. When using the `.confirmationDialog` modifier, ensure this is applied to the view to which the dialog should be anchored. When presenting alerts with the `UIAlertController.Style.actionSheet` `preferredStyle`, ensure a `sourceView` is set on the alert controller’s `popoverPresentationController`.  (132598527)
 - Text, TextEditor, and TextField now by default use string contents to determine the appropriate base writing direction for each paragraph, instead of relying on layout directionality. To specify the writing direction explicitly on a per-paragraph basis, use Foundation’s `AttributedString.writingDirection` attribute. To make the base writing direction follow the layout direction for an entire view, apply the view modifier `.writingDirection(strategy: .layoutBased)`.  (134821288)
-- When linking news SDKs, `NavigationLink`s produce a single view, rather than a list of views in view list contexts. This change improves performance of many `NavigationLink`s in lazy containers like `List`. However, if you are relying on `ContainerValues` propagating out of the `label` view of a `NavigationLink`, or similarly relying on `ContainerValues` of a `ButtonStyle` used to style a link, the `containerValue(_:,_:)` modifier should be moved outside of the link. Below is a minimal example that demonstrates the behavior difference: ```swift
- import SwiftUI
- 
- struct ContentView: View {
-     @State private var presentPopover = false
-     var body: some View {
-         NavigationLink("Custom Link", value: 84)
-             .buttonStyle(MyButtonStyle(containerValue: "Eighty-four"))
-     }
- }
- 
- struct ParentView: View {
-     var body: some View {
-         Group(subviews: ContentView()) { subviews in
-             ForEach(subviews) { subview in
-                 Text(subview.containerValues.myCustomValue)
-             }
-         }
-         .frame(minWidth: 100, minHeight: 100)
-     }
- }
- 
- struct MyButtonStyle: PrimitiveButtonStyle {
-     var containerValue: String
-     func makeBody(configuration: Configuration) -> some View {
-         Button(configuration)
-             .buttonBorderShape(.circle)
-             .containerValue(\.myCustomValue, containerValue)
-     }
- }
- 
- private struct MyContainerValueKey: ContainerValueKey {
-     static let defaultValue: String = "Default value"
- }
- 
- extension ContainerValues {
-     var myCustomValue: String {
-         get { self[MyContainerValueKey.self] }
-         set { self[MyContainerValueKey.self] = newValue }
-     }
- }
- 
- #Preview {
-     ParentView()
- }
-``` (140283584)
+- When linking news SDKs, `NavigationLink`s produce a single view, rather than a list of views in view list contexts. This change improves performance of many `NavigationLink`s in lazy containers like `List`. However, if you are relying on `ContainerValues` propagating out of the `label` view of a `NavigationLink`, or similarly relying on `ContainerValues` of a `ButtonStyle` used to style a link, the `containerValue(_:,_:)` modifier should be moved outside of the link. Below is a minimal example that demonstrates the behavior difference:
+
+  ```swift
+   import SwiftUI
+   
+   struct ContentView: View {
+       @State private var presentPopover = false
+       var body: some View {
+           NavigationLink("Custom Link", value: 84)
+               .buttonStyle(MyButtonStyle(containerValue: "Eighty-four"))
+       }
+   }
+   
+   struct ParentView: View {
+       var body: some View {
+           Group(subviews: ContentView()) { subviews in
+               ForEach(subviews) { subview in
+                   Text(subview.containerValues.myCustomValue)
+               }
+           }
+           .frame(minWidth: 100, minHeight: 100)
+       }
+   }
+   
+   struct MyButtonStyle: PrimitiveButtonStyle {
+       var containerValue: String
+       func makeBody(configuration: Configuration) -> some View {
+           Button(configuration)
+               .buttonBorderShape(.circle)
+               .containerValue(\.myCustomValue, containerValue)
+       }
+   }
+   
+   private struct MyContainerValueKey: ContainerValueKey {
+       static let defaultValue: String = "Default value"
+   }
+   
+   extension ContainerValues {
+       var myCustomValue: String {
+           get { self[MyContainerValueKey.self] }
+           set { self[MyContainerValueKey.self] = newValue }
+       }
+   }
+   
+   #Preview {
+       ParentView()
+   }
+  ```
+
+  (140283584)
 - `List` no longer ignores the vertical insets of rows with a height close to the default minimum height on iOS and visionOS. Use `listRowInsets(_:_:)` to change the vertical row insets.  (141160852)
 - In `NavigationSplitView` and `TabView`s configured as `sidebarAdaptable`, the view trailing the sidebar’s safe area is inset in the width of the sidebar. It can display content outside its safe area, underneath the sidebar.  (141222137)
 - SwiftUI views and presentations now support breakthrough effects. Breakthrough is an effect allowing elements to be visible to the user even when other app content (3D models, UI elements) is occluding it. To add a breakthrough effect to a SwiftUI view, add the `breakthroughEffect(_:)` modifier. To customize the breakthrough effect of a popover in a volumetric context, use the `presentationBreakthroughEffect(_:)` modifier.  (142705695)
@@ -558,7 +615,7 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 - Fixed: `TextEditor`’s undo stack might contain invalid operations for applications with multiple `TextEditor` views.  (83650197) (FB9662463)
 - Fixed: The menu content of some `Menu` views does not update as the result of a state change.  (106878937)
-- Fixed: [`View.onHover(perform:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/onhover(perform:)) and [`View.onContinuousHover(coordinateSpace:perform:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/oncontinuoushover(coordinatespace:perform:)) affect hit-testing for gestures. Gestures are not received if one of these view modifiers is used within an overlay.  (108560020)
+- Fixed: [View.onHover(perform:)](../SwiftUI/view/onhover%28perform%29.md) and [View.onContinuousHover(coordinateSpace:perform:)](../SwiftUI/view/oncontinuoushover%28coordinatespace,perform%29.md) affect hit-testing for gestures. Gestures are not received if one of these view modifiers is used within an overlay.  (108560020)
 - Fixed: For an `ImmersiveSpace` scene, the value for defining a custom scene class via the app’s `Info.plist` is ignored.  (129389802)
 - Fixed: `listSectionSpacing` does not work correctly for sections that have headers and footers. For more control over the list section layout, use the `listSectionMargins` modifier.  (140929163)
 - Fixed: On iOS, `navigationSplitViewColumnWidth()` does not respect the specified minimum and maximum column widths.  (143529326)
@@ -568,25 +625,35 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 - Fixed: Applying a `bold` modifier to `Text` resets the `weight` configuration. The interaction of `bold` and `weight` is not consistent between Text and Font.  (147270079)
 - Fixed: Environment updates from outside of a popover might fail to propagate into the popover’s content view.  (147954025)
 - Fixed: Two-handed gestures cancel the initial event stream.  (149026305)
-- Fixed: On platforms supporting edge-attached and non-edge-attached sheets, non-edge-attached sheets present erroneously as full-screen covers when `.navigationTransition(.zoom...)` is specified. If you wish to keep the full-screen cover in compact size classes, configure a sheet with: ```swift
- .sheet(...) {
-    ContentView()
-     .navigationTransition(.zoom...)
-     .presentationSizing(.page)
-     .presentationCompactAdaptation(.fullScreen)
-``` (150455117)
+- Fixed: On platforms supporting edge-attached and non-edge-attached sheets, non-edge-attached sheets present erroneously as full-screen covers when `.navigationTransition(.zoom...)` is specified. If you wish to keep the full-screen cover in compact size classes, configure a sheet with:
+
+  ```swift
+   .sheet(...) {
+      ContentView()
+       .navigationTransition(.zoom...)
+       .presentationSizing(.page)
+       .presentationCompactAdaptation(.fullScreen)
+  ```
+
+  (150455117)
 - Fixed: Standard gesture precedence and failure requirements do not work with `.manipulable`. Nested gestures always take precedence even if they fail.  (150773003)
 - Fixed: When presenting a context menu from an ornament or attachment in a Volume, the context menu might not appear relative to origin.  (151803598)
 - Fixed: When using the `.hoverEffectDisabled(true)` and `.manipulable` modifiers on the same view, the hover effect glow will still be visible.  (151810879)
 - Fixed: If Default Actor Isolation is set to `MainActor`, `@Animatable` macro emits concurrency warnings in Swift 5 language mode and does not compile in Swift 6 language mode.  (152524435)
-- Fixed: Gestures do not have the same lower priority over the view’s existing `UIGestureRecognizer`s and `NSGestureRecognizer`s as they do over the view’s existing SwiftUI gestures. In apps built with iOS 26, macOS 26, tvOS 26, and visionOS 26, use [`highPriorityGesture(_:isEnabled:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/highprioritygesture(_:isenabled:)) to make sure your gesture takes precedence over the view’s existing gestures, or use [`simultaneousGesture(_:isEnabled:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/simultaneousgesture(_:isenabled:)) to give your gesture the same priority as the view’s existing gestures.  (155581361)
+- Fixed: Gestures do not have the same lower priority over the view’s existing `UIGestureRecognizer`s and `NSGestureRecognizer`s as they do over the view’s existing SwiftUI gestures.
+
+  In apps built with iOS 26, macOS 26, tvOS 26, and visionOS 26, use [highPriorityGesture(_:isEnabled:)](../SwiftUI/view/highprioritygesture%28_,isenabled%29.md) to make sure your gesture takes precedence over the view’s existing gestures, or use [simultaneousGesture(_:isEnabled:)](../SwiftUI/view/simultaneousgesture%28_,isenabled%29.md) to give your gesture the same priority as the view’s existing gestures.  (155581361)
 - Fixed: On visionOS, tvOS, and watchOS, sheets presented within toolbar items might fail to present if the toolbar item’s label view is a `Label`.  (157326248)
 
 ###### Known Issues
 
-- `DragGesture` has a default `minimumDistance` of 10, which is unitless.  (144949485) **Workaround:** When adding a `DragGesture` to an entity, use `DragGesture(minimumDistance: 0.001, coordinateSpace: .local)` to make the minimum distance 1 millimeter.
+- `DragGesture` has a default `minimumDistance` of 10, which is unitless.  (144949485)
+
+  **Workaround:** When adding a `DragGesture` to an entity, use `DragGesture(minimumDistance: 0.001, coordinateSpace: .local)` to make the minimum distance 1 millimeter.
 - When a popover is presented from a SwiftUI view within a volume, moving around the volume might cause the popover to become detached from its source content.  (147066605)
-- When a background is set for a table view, the header does not adopt the color. This results in the table having the specified color but the header having a transparent background.  (150483611) **Workaround:** Refrain from setting a background on table views.
+- When a background is set for a table view, the header does not adopt the color. This results in the table having the specified color but the header having a transparent background.  (150483611)
+
+  **Workaround:** Refrain from setting a background on table views.
 - When using `.manipulable` modifier on content within a `ScrollView`, if the user is looking at the manipulable item when trying to perform an indirect scroll gesture, manipulation will take precedence over scrolling.  (151659525)
 - The detailed surface information classification API might unexpectedly be “none”.  (151820408)
 - The `breakthroughEffect(_:)` and `presentationBreakthroughEffect(_:)` modifiers have no effect in the simulator.  (152112050)
@@ -595,7 +662,7 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 - `Text` concatenation using the `+` operator is deprecated because it makes it hard to create localized strings that are correct across all languages. Use `Text` interpolation instead. See documentation on `Text` for more info on how to produce localized strings.  (128144043)
 
-##### Tabletopkit
+##### TabletopKit
 
 ###### New Features
 
@@ -606,7 +673,7 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 - `interactionWasUpdated` has been deprecated because only some of the provided information is reliably available for remote interactions. The preferred alternative is polling the cursors in the `onUpdate` function of the `TabletopGame.RenderDelegate`.  (150762273)
 
-##### Textkit
+##### TextKit
 
 ###### New Features
 
@@ -614,9 +681,11 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 ###### Resolved Issues
 
-- Fixed: The directionality of `NSParagraphStyle` indentation properties (`firstLineHeadIndent`, `headIndent`, and `tailIndent`) is determined by inconsistent hidden rules implemented by the TextKit typesetting engine. With iOS 26, macOS 26, tvOS 26, watchOS 26, and visionOS 26, the TextKit 2 typesetting engine has been standardized to utilize the resolved writing direction for the paragraph when linked with the OS 26 versions of the corresponding SDKs. For binary compatibility, applications developed with prior SDK versions will use the UI language in a subset of API interfaces. Specifically, for `UILabel`, `NSTextField`, `SwiftUI.Text`, and `NSStringDrawing`, the indentation directionality is determined by the UI language queried by passing nil to `NSParagraphStyle. defaultWritingDirection()` in applications built with prior SDK versions.  (155893102)
+- Fixed: The directionality of `NSParagraphStyle` indentation properties (`firstLineHeadIndent`, `headIndent`, and `tailIndent`) is determined by inconsistent hidden rules implemented by the TextKit typesetting engine.
 
-##### Ui Frameworks
+  With iOS 26, macOS 26, tvOS 26, watchOS 26, and visionOS 26, the TextKit 2 typesetting engine has been standardized to utilize the resolved writing direction for the paragraph when linked with the OS 26 versions of the corresponding SDKs. For binary compatibility, applications developed with prior SDK versions will use the UI language in a subset of API interfaces. Specifically, for `UILabel`, `NSTextField`, `SwiftUI.Text`, and `NSStringDrawing`, the indentation directionality is determined by the UI language queried by passing nil to `NSParagraphStyle. defaultWritingDirection()` in applications built with prior SDK versions.  (155893102)
+
+##### UI Frameworks
 
 ###### Resolved Issues
 
@@ -629,7 +698,7 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 - Text Effect Windows might be partially cut off when triggered from SwiftUI text fields that are positioned in an ornament at `.topTrailingBack`.  (142326671)
 - Apps might receive activation and deactivation notifications when viewing Apple Immersive Video.  (148774882)
 
-##### Uikit
+##### UIKit
 
 ###### New Features
 
@@ -638,7 +707,9 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 ###### Known Issues
 
 - Popovers, action sheets, and context menus from within a `RealityView` attachment might cause the presented content to appear at the wrong location.  (147613953)
-- UIKit non-interactive table view rows might respond to gaze, potentially leading users to perceive them as unresponsive and challenging to navigate.  (150958738) **Workaround:** Use SwiftUI or CollectionViews.
+- UIKit non-interactive table view rows might respond to gaze, potentially leading users to perceive them as unresponsive and challenging to navigate.  (150958738)
+
+  **Workaround:** Use SwiftUI or CollectionViews.
 
 ###### Deprecations
 
@@ -650,7 +721,7 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 - Fixed: Decoding errors in MV-HEVC videos might crash the controlling process, causing the user-facing app to close or video playback to pause. The user can resume playback if the player supports it as the controlling process could relaunch video playback.   (152060939)
 
-##### Webkit
+##### WebKit
 
 ###### Resolved Issues
 
@@ -658,10 +729,14 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 ###### Known Issues
 
-- A site will crash when using a 3D model with audio in `<model>`.  (146899549) **Workaround:** Use a 3D model without audio.
-- Some USDZ models with compressed textures might render without textures in HTML `<model>` elements.  (155650658) **Workaround:** Do not compress the textures.
+- A site will crash when using a 3D model with audio in `<model>`.  (146899549)
 
-##### Webkit Api
+  **Workaround:** Use a 3D model without audio.
+- Some USDZ models with compressed textures might render without textures in HTML `<model>` elements.  (155650658)
+
+  **Workaround:** Do not compress the textures.
+
+##### WebKit API
 
 ###### New Features
 
@@ -672,7 +747,7 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 - Fixed: `webViewOnScrollGeometryChange` might report an incorrect content size.  (146576790)
 
-##### Widgetkit
+##### WidgetKit
 
 ###### Resolved Issues
 
@@ -696,17 +771,18 @@ The visionOS 26 SDK provides support for developing apps for Apple Vision Pro de
 
 ## See Also
 
-- [visionOS 26.6 Release Notes](visionos-26_6-release-notes.md)
+### visionOS 26
+- [visionOS 26.6 Release Notes](./visionos-26_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 26.5 Release Notes](visionos-26_5-release-notes.md)
+- [visionOS 26.5 Release Notes](./visionos-26_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 26.4 Release Notes](visionos-26_4-release-notes.md)
+- [visionOS 26.4 Release Notes](./visionos-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 26.3 Release Notes](visionos-26_3-release-notes.md)
+- [visionOS 26.3 Release Notes](./visionos-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 26.2 Release Notes](visionos-26_2-release-notes.md)
+- [visionOS 26.2 Release Notes](./visionos-26_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 26.1 Release Notes](visionos-26_1-release-notes.md)
+- [visionOS 26.1 Release Notes](./visionos-26_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

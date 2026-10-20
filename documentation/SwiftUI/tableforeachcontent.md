@@ -1,7 +1,8 @@
 # TableForEachContent
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type of table row content that creates table rows created by iterating over a collection.
 
@@ -23,28 +24,29 @@ struct TableForEachContent<Data> where Data : RandomAccessCollection, Data.Eleme
 
 You don’t use this type directly. The various `Table.init(_:,...)` initializers create this type as the table’s `Rows` generic type.
 
-To explicitly create dynamic collection-based rows, use [`ForEach`](foreach.md) instead.
+To explicitly create dynamic collection-based rows, use [`ForEach`](./foreach.md) instead.
 
 ## Relationships
 
 ### Conforms To
-- [TableRowContent](tablerowcontent.md)
+- [TableRowContent](./tablerowcontent.md)
 
 ## See Also
 
-- [struct TableRow](tablerow.md)
+### Creating rows
+- [struct TableRow](./tablerow.md)
   A row that represents a data value in a table.
-- [protocol TableRowContent](tablerowcontent.md)
+- [protocol TableRowContent](./tablerowcontent.md)
   A type used to represent table rows.
-- [struct TableHeaderRowContent](tableheaderrowcontent.md)
+- [struct TableHeaderRowContent](./tableheaderrowcontent.md)
   A table row that displays a single view instead of columned content.
-- [struct TupleTableRowContent](tupletablerowcontent.md)
+- [struct TupleTableRowContent](./tupletablerowcontent.md)
   A type of table column content that creates table rows created from a Swift tuple of table rows.
-- [struct EmptyTableRowContent](emptytablerowcontent.md)
+- [struct EmptyTableRowContent](./emptytablerowcontent.md)
   A table row content that doesn’t produce any rows.
-- [protocol DynamicTableRowContent](dynamictablerowcontent.md)
+- [protocol DynamicTableRowContent](./dynamictablerowcontent.md)
   A type of table row content that generates table rows from an underlying collection of data.
-- [struct TableRowBuilder](tablerowbuilder.md)
+- [struct TableRowBuilder](./tablerowbuilder.md)
   A result builder that creates table row content from closures.
 
 

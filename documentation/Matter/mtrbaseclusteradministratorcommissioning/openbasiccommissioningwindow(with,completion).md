@@ -1,7 +1,8 @@
 # openBasicCommissioningWindow(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func openBasicCommissioningWindow(with params: MTRAdministratorCommissioningClusterOpenBasicCommissioningWindowParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func openBasicCommissioningWindow(with params: MTRAdministratorCommissioningClusterOpenBasicCommissioningWindowParams) async throws
+```
+
+```objc
+- (void) openBasicCommissioningWindowWithParams:(MTRAdministratorCommissioningClusterOpenBasicCommissioningWindowParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

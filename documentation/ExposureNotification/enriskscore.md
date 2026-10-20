@@ -1,19 +1,26 @@
 # ENRiskScore
 
 **Framework**: Exposure Notification  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A value signifying the risk of an exposure event.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 typealias ENRiskScore = UInt8
+```
+
+```c
+typedef uint8_t ENRiskScore;
 ```
 
 #### Discussion
@@ -24,11 +31,12 @@ The risk score incorporates the range and weights of various exposure criteria t
 
 ## See Also
 
-- [class ENExposureInfo](enexposureinfo.md)
+### Exposure Information
+- [class ENExposureInfo](./enexposureinfo.md)
   The incident information related to a potential exposure.
-- [typealias ENRiskLevel](enrisklevel.md)
+- [typealias ENRiskLevel](./enrisklevel.md)
   The user’s estimated risk of exposure.
-- [typealias ENRiskLevelValue](enrisklevelvalue.md)
+- [typealias ENRiskLevelValue](./enrisklevelvalue.md)
   The value associated with a particular risk level.
 
 

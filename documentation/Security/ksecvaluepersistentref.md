@@ -1,7 +1,8 @@
 # kSecValuePersistentRef
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a persistent reference to the item.
 
@@ -20,9 +21,13 @@ A key whose value is a persistent reference to the item.
 let kSecValuePersistentRef: CFString
 ```
 
+```c
+extern CFStringRef const kSecValuePersistentRef;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata). The bytes in this object can be stored by the caller and used on a subsequent invocation of the application (or even a different application) to retrieve the item referenced by it.
+The corresponding value is of type [`CFData`](../CoreFoundation/cfdata.md). The bytes in this object can be stored by the caller and used on a subsequent invocation of the application (or even a different application) to retrieve the item referenced by it.
 
 
 ---

@@ -1,7 +1,8 @@
 # textDroppableView(_:willBecomeEditableForDrop:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if a noneditable text view can accept a drop operation.
 
@@ -17,13 +18,17 @@ Asks the delegate if a noneditable text view can accept a drop operation.
 optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppable, willBecomeEditableForDrop drop: any UITextDropRequest) -> UITextDropEditability
 ```
 
+```objc
+- (UITextDropEditability) textDroppableView:(UIView<UITextDroppable> *) textDroppableView willBecomeEditableForDrop:(id<UITextDropRequest>) drop;
+```
+
 #### Return Value
 
 A text drop editability style that indicates whether the text view can accept a drop operation.
 
 #### Discussion
 
-By default, a text view that is not editable can’t accept drop requests. However, you can change this behavior by returning the editability style [`UITextDropEditability.temporary`](uitextdropeditability/temporary.md) or [`UITextDropEditability.yes`](uitextdropeditability/yes.md) in your implementation of this method. Not implementing this method is the same as returning the [`UITextDropEditability.no`](uitextdropeditability/no.md) style.
+By default, a text view that is not editable can’t accept drop requests. However, you can change this behavior by returning the editability style [`UITextDropEditability.temporary`](../uitextdropeditability/temporary.md) or [`UITextDropEditability.yes`](../uitextdropeditability/yes.md) in your implementation of this method. Not implementing this method is the same as returning the [`UITextDropEditability.no`](../uitextdropeditability/no.md) style.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ By default, a text view that is not editable can’t accept drop requests. Howev
 
 ## See Also
 
-- [func textDroppableView(any UIView & UITextDroppable, proposalForDrop: any UITextDropRequest) -> UITextDropProposal](uitextdropdelegate/textdroppableview(_:proposalfordrop:).md)
+### Accepting a drop activity
+- [func textDroppableView(any UIView & UITextDroppable, proposalForDrop: any UITextDropRequest) -> UITextDropProposal](./textdroppableview%28_,proposalfordrop%29.md)
   Asks the delegate if the text view can accept a drop operation.
 
 

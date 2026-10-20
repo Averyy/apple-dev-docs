@@ -1,7 +1,8 @@
 # SystemRandomNumberGenerator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The system’s default source of random data.
 
@@ -33,7 +34,7 @@ let y = Int.random(in: 1...100, using: &g)
 
 `SystemRandomNumberGenerator` is automatically seeded, is safe to use in multiple threads, and uses a cryptographically secure algorithm whenever possible.
 
-### Platform Implementation of Systemrandomnumbergenerator
+### Platform Implementation of `SystemRandomNumberGenerator`
 
 While the system generator is automatically seeded and thread-safe on every platform, the cryptographic quality of the stream of random data produced by the generator may vary. For more detail, see the documentation for the APIs used by each platform.
 
@@ -44,30 +45,31 @@ While the system generator is automatically seeded and thread-safe on every plat
 ## Topics
 
 ### Creating a Generator
-- [init()](systemrandomnumbergenerator/init.md)
+- [init()](./systemrandomnumbergenerator/init%28%29.md)
   Creates a new instance of the system’s default random number generator.
 ### Generating Random Binary Data
-- [func next() -> UInt64](systemrandomnumbergenerator/next.md)
+- [func next() -> UInt64](./systemrandomnumbergenerator/next%28%29.md)
   Returns a value from a uniform, independent distribution of binary data.
-- [func next<T>() -> T](systemrandomnumbergenerator/next-2x0ly.md)
+- [func next<T>() -> T](./systemrandomnumbergenerator/next%28%29-2x0ly.md)
   Returns a value from a uniform, independent distribution of binary data.
-- [func next<T>(upperBound: T) -> T](systemrandomnumbergenerator/next(upperbound:).md)
+- [func next<T>(upperBound: T) -> T](./systemrandomnumbergenerator/next%28upperbound%29.md)
   Returns a random value that is less than the given upper bound.
 ### Default Implementations
-- [RandomNumberGenerator Implementations](systemrandomnumbergenerator/randomnumbergenerator-implementations.md)
+- [RandomNumberGenerator Implementations](./systemrandomnumbergenerator/randomnumbergenerator-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Copyable](copyable.md)
-- [RandomNumberGenerator](randomnumbergenerator.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [Copyable](./copyable.md)
+- [RandomNumberGenerator](./randomnumbergenerator.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [protocol RandomNumberGenerator](randomnumbergenerator.md)
+### Random Number Generators
+- [protocol RandomNumberGenerator](./randomnumbergenerator.md)
   A type that provides uniformly distributed random data.
 
 

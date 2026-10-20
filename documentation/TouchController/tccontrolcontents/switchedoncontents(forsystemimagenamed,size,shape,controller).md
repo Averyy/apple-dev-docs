@@ -1,7 +1,8 @@
 # switchedOnContents(forSystemImageNamed:size:shape:controller:)
 
 **Framework**: Touch Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The switch contents for the specified system image name, size, and shape.
 
@@ -14,6 +15,10 @@ The switch contents for the specified system image name, size, and shape.
 
 ```swift
 class func switchedOnContents(forSystemImageNamed imageName: String, size: CGSize, shape: TCControlContents.ButtonShape, controller: TCTouchController) -> TCControlContents
+```
+
+```objc
++ (TCControlContents *) switchedOnContentsForSystemImageNamed:(NSString *) imageName size:(CGSize) size shape:(TCControlContentsButtonShape) shape controller:(TCTouchController *) controller;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # invert()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invert the contents of the `CharacterSet`.
 
@@ -22,7 +23,8 @@ mutating func invert()
 
 ## See Also
 
-- [var inverted: CharacterSet](characterset/inverted.md)
+### Inverting a Character Set
+- [var inverted: CharacterSet](./inverted.md)
   Returns an inverted copy of the receiver.
 
 

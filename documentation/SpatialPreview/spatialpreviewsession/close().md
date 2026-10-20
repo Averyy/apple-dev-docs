@@ -2,13 +2,14 @@
 
 **Framework**: Spatial Preview  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Gracefully close the session
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

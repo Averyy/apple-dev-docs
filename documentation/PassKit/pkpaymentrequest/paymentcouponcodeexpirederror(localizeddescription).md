@@ -1,7 +1,8 @@
 # paymentCouponCodeExpiredError(localizedDescription:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an error object that indicates an expired coupon.
 
@@ -10,7 +11,7 @@ Returns an error object that indicates an expired coupon.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,7 +25,7 @@ A new expired coupon error.
 
 #### Discussion
 
-Use this convenience method to create a payment error object instead of creating an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object yourself. This method indicates that the coupon code received from the Apple Pay sheet has expired.
+Use this convenience method to create a payment error object instead of creating an [`NSError`](../../Foundation/nserror.md) object yourself. This method indicates that the coupon code received from the Apple Pay sheet has expired.
 
 The error you provide and its optional message appear on the Apple Pay sheet. There’s limited available space to display messages, so keep your messages concise.
 
@@ -34,15 +35,16 @@ The error you provide and its optional message appear on the Apple Pay sheet. Th
 
 ## See Also
 
-- [class func paymentBillingAddressInvalidError(withKey: String, localizedDescription: String?) -> any Error](pkpaymentrequest/paymentbillingaddressinvaliderror(withkey:localizeddescription:).md)
+### Providing error information
+- [class func paymentBillingAddressInvalidError(withKey: String, localizedDescription: String?) -> any Error](./paymentbillingaddressinvaliderror%28withkey,localizeddescription%29.md)
   Creates a billing address error with the supplied key and user-facing error message.
-- [class func paymentContactInvalidError(withContactField: PKContactField, localizedDescription: String?) -> any Error](pkpaymentrequest/paymentcontactinvaliderror(withcontactfield:localizeddescription:).md)
+- [class func paymentContactInvalidError(withContactField: PKContactField, localizedDescription: String?) -> any Error](./paymentcontactinvaliderror%28withcontactfield,localizeddescription%29.md)
   Creates a contact error with the supplied field and user-facing error message.
-- [class func paymentShippingAddressInvalidError(withKey: String, localizedDescription: String?) -> any Error](pkpaymentrequest/paymentshippingaddressinvaliderror(withkey:localizeddescription:).md)
+- [class func paymentShippingAddressInvalidError(withKey: String, localizedDescription: String?) -> any Error](./paymentshippingaddressinvaliderror%28withkey,localizeddescription%29.md)
   Creates a shipping address error with the supplied key and user-facing error message.
-- [class func paymentShippingAddressUnserviceableError(withLocalizedDescription: String?) -> any Error](pkpaymentrequest/paymentshippingaddressunserviceableerror(withlocalizeddescription:).md)
+- [class func paymentShippingAddressUnserviceableError(withLocalizedDescription: String?) -> any Error](./paymentshippingaddressunserviceableerror%28withlocalizeddescription%29.md)
   Creates an error for an unserviceable address, with the supplied user-facing error message.
-- [static func paymentCouponCodeInvalidError(localizedDescription: String?) -> any Error](pkpaymentrequest/paymentcouponcodeinvaliderror(localizeddescription:).md)
+- [static func paymentCouponCodeInvalidError(localizedDescription: String?) -> any Error](./paymentcouponcodeinvaliderror%28localizeddescription%29.md)
   Returns an error object that indicates an invalid coupon.
 
 

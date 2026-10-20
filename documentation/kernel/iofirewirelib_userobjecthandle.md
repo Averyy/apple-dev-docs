@@ -1,14 +1,15 @@
 # IOFireWireLib::UserObjectHandle
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 typedef UInt32 IOFireWireLib::UserObjectHandle;
 ```
 

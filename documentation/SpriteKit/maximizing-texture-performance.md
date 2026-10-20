@@ -1,12 +1,13 @@
 # Maximizing Texture Performance
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Speed up image display and enable more images to be displayed at one time.
 
 #### Overview
 
-You use textures and atlases to hold your app’s image data, but need to follow recommended practices for the best performance. Because image data can consume much video memory, you should preload textures ahead of time and reuse them where possible. In addition, grouping related textures into an atlas enables them to draw faster. See [`SKTexture`](sktexture.md) and [`SKTextureAtlas`](sktextureatlas.md) class references for more information.
+You use textures and atlases to hold your app’s image data, but need to follow recommended practices for the best performance. Because image data can consume much video memory, you should preload textures ahead of time and reuse them where possible. In addition, grouping related textures into an atlas enables them to draw faster. See [`SKTexture`](./sktexture.md) and [`SKTextureAtlas`](./sktextureatlas.md) class references for more information.
 
 ##### Repeat Images with Textures
 
@@ -14,7 +15,7 @@ Textures, represented as SKTexture objects, are shared images used to render spr
 
 ##### Preload Textures
 
-SpriteKit simplifies texture management by handling the lower-level code required to load textures and make them available to the graphics hardware. Texture management is automatically managed by SpriteKit. However, if your game uses a large number of images, you can improve its performance by taking control of parts of the process. Primarily, you do this by telling SpriteKit explicitly to load a texture using `SKTexture` [`preload(_:withCompletionHandler:)`](sktexture/preload(_:withcompletionhandler:).md) or `SKTextureAtlas` [`preload(completionHandler:)`](sktextureatlas/preload(completionhandler:).md).
+SpriteKit simplifies texture management by handling the lower-level code required to load textures and make them available to the graphics hardware. Texture management is automatically managed by SpriteKit. However, if your game uses a large number of images, you can improve its performance by taking control of parts of the process. Primarily, you do this by telling SpriteKit explicitly to load a texture using `SKTexture` [`preload(_:withCompletionHandler:)`](./sktexture/preload%28_,withcompletionhandler%29.md) or `SKTextureAtlas` [`preload(completionHandler:)`](./sktextureatlas/preload%28completionhandler%29.md).
 
 ##### Group Similar Textures in an Atlas
 
@@ -22,11 +23,12 @@ A texture atlas is a group of related textures that are used together in your ga
 
 ## See Also
 
-- [class SKTexture](sktexture.md)
+### Textures
+- [class SKTexture](./sktexture.md)
   An image, decoded on the GPU, that can be used to render various SpriteKit objects.
-- [class SKTextureAtlas](sktextureatlas.md)
+- [class SKTextureAtlas](./sktextureatlas.md)
   A collection of textures optimized for storage and drawing performance.
-- [class SKMutableTexture](skmutabletexture.md)
+- [class SKMutableTexture](./skmutabletexture.md)
   A texture whose contents can be dynamically updated.
 
 

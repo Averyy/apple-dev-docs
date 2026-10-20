@@ -1,14 +1,15 @@
 # CSSLOT_REQUIREMENTS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 CSSLOT_REQUIREMENTS = 2
 ```
 

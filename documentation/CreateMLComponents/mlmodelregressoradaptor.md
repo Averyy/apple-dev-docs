@@ -1,7 +1,8 @@
 # MLModelRegressorAdaptor
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transformer that uses a Core ML model as a regressor.
 
@@ -23,30 +24,31 @@ struct MLModelRegressorAdaptor<Scalar> where Scalar : MLShapedArrayScalar, Scala
 ## Topics
 
 ### Creating an adaptor
-- [init(model: MLModel) throws](mlmodelregressoradaptor/init(model:).md)
+- [init(model: MLModel) throws](./mlmodelregressoradaptor/init%28model%29.md)
   Creates a MLModel regressor adaptor from a model.
-- [init(contentsOf: URL, configuration: MLModelConfiguration) throws](mlmodelregressoradaptor/init(contentsof:configuration:).md)
+- [init(contentsOf: URL, configuration: MLModelConfiguration) throws](./mlmodelregressoradaptor/init%28contentsof,configuration%29.md)
   Creates a model adaptor from a CoreML model URL.
 ### Getting the model
-- [let model: MLModel](mlmodelregressoradaptor/model.md)
+- [let model: MLModel](./mlmodelregressoradaptor/model.md)
   The CoreML model.
 ### Performing the prediction
-- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> Double](mlmodelregressoradaptor/applied(to:eventhandler:).md)
+- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> Double](./mlmodelregressoradaptor/applied%28to,eventhandler%29.md)
   Performs a prediction from a single input.
 
 ## Relationships
 
 ### Conforms To
-- [Regressor](regressor.md)
-- [Transformer](transformer.md)
+- [Regressor](./regressor.md)
+- [Transformer](./transformer.md)
 
 ## See Also
 
-- [struct MLModelTransformerAdaptor](mlmodeltransformeradaptor.md)
+### Core ML adaptors
+- [struct MLModelTransformerAdaptor](./mlmodeltransformeradaptor.md)
   A transformer that uses a Core ML model.
-- [struct MLModelClassifierAdaptor](mlmodelclassifieradaptor.md)
+- [struct MLModelClassifierAdaptor](./mlmodelclassifieradaptor.md)
   A transformer that uses a Core ML model as a classifier.
-- [struct ModelMetadata](modelmetadata.md)
+- [struct ModelMetadata](./modelmetadata.md)
   User info keys that specify useful information about a model.
 
 

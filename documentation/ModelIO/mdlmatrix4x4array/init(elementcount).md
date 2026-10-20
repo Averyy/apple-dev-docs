@@ -1,7 +1,8 @@
 # init(elementCount:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(elementCount arrayElementCount: Int)
+```
+
+```objc
+- (instancetype) initWithElementCount:(NSUInteger) arrayElementCount;
 ```
 
 

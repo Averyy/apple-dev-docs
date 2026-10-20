@@ -1,7 +1,8 @@
 # simulationRate
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the current simulation rate.
 
@@ -12,7 +13,7 @@ Specifies the current simulation rate.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

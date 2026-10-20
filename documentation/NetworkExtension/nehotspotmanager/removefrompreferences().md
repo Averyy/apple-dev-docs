@@ -1,7 +1,8 @@
 # removeFromPreferences()
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the hotspot manager configuration from the Network Extension preferences.
 
@@ -19,13 +20,14 @@ final func removeFromPreferences() async throws
 
 #### Discussion
 
-This method throws [`NEHotspotManager.Error`](nehotspotmanager/error.md) value asynchronously on failure.
+This method throws [`NEHotspotManager.Error`](./error.md) value asynchronously on failure.
 
 ## See Also
 
-- [func loadFromPreferences() async throws](nehotspotmanager/loadfrompreferences.md)
+### Managing the saved configuration
+- [func loadFromPreferences() async throws](./loadfrompreferences%28%29.md)
   Loads the hotspot manager configuration from the Network Extension preferences.
-- [func saveToPreferences() async throws](nehotspotmanager/savetopreferences.md)
+- [func saveToPreferences() async throws](./savetopreferences%28%29.md)
   Saves the HotspotManager configuration in the Network Extension preferences.
 
 

@@ -1,7 +1,8 @@
 # MediaCommand.RepeatMode.off
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The player does not repeat content during playback.
 

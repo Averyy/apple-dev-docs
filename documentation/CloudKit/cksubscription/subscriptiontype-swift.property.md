@@ -1,7 +1,8 @@
 # subscriptionType
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The behavior that a subscription provides.
 
@@ -10,7 +11,7 @@ The behavior that a subscription provides.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 6.0+
 
@@ -20,13 +21,18 @@ The behavior that a subscription provides.
 var subscriptionType: CKSubscription.SubscriptionType { get }
 ```
 
+```objc
+@property (assign, readonly) CKSubscriptionType subscriptionType;
+```
+
 ## See Also
 
-- [var subscriptionID: CKSubscription.ID](cksubscription/subscriptionid-6fp3j.md)
+### Accessing the Subscription Metadata
+- [var subscriptionID: CKSubscription.ID](./subscriptionid-6fp3j.md)
   The subscription’s unique identifier.
-- [CKSubscription.ID](cksubscription/id.md)
+- [CKSubscription.ID](./id.md)
   A type that represents a subscription’s identifier.
-- [CKSubscription.SubscriptionType](cksubscription/subscriptiontype-swift.enum.md)
+- [CKSubscription.SubscriptionType](./subscriptiontype-swift.enum.md)
   Constants that identify a subscription’s behavior.
 
 

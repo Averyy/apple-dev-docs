@@ -1,7 +1,8 @@
 # classifications
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The classification of each face in the mesh.
 
@@ -16,11 +17,12 @@ var classifications: GeometrySource? { get }
 
 ## See Also
 
-- [var faces: GeometryElement](meshanchor/geometry-swift.struct/faces.md)
+### Inspecting mesh geometry
+- [var faces: GeometryElement](./faces.md)
   The faces of the mesh.
-- [var vertices: GeometrySource](meshanchor/geometry-swift.struct/vertices.md)
+- [var vertices: GeometrySource](./vertices.md)
   The vertices of the mesh.
-- [var normals: GeometrySource](meshanchor/geometry-swift.struct/normals.md)
+- [var normals: GeometrySource](./normals.md)
   The normals of the mesh.
 
 

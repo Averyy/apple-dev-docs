@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared URL cache instance.
 
@@ -20,17 +21,22 @@ The shared URL cache instance.
 class var shared: URLCache { get set }
 ```
 
+```objc
+@property (class, strong) NSURLCache * sharedURLCache;
+```
+
 ## Mentions
 
-- [Accessing cached data](accessing-cached-data.md)
+- [Accessing cached data](../accessing-cached-data.md)
 
 #### Discussion
 
-If your app doesn’t have special caching requirements or constraints, the default shared cache instance should be acceptable. Alternatively, you can create a custom [`URLCache`](urlcache.md) object and set it as the shared cache instance (use `+[NSURLCache setSharedURLCache]` in Objective-C). You should do so before making any calls to this method.
+If your app doesn’t have special caching requirements or constraints, the default shared cache instance should be acceptable. Alternatively, you can create a custom [`URLCache`](../urlcache.md) object and set it as the shared cache instance (use `+[NSURLCache setSharedURLCache]` in Objective-C). You should do so before making any calls to this method.
 
 ## See Also
 
-- [Accessing cached data](accessing-cached-data.md)
+### Related Documentation
+- [Accessing cached data](../accessing-cached-data.md)
   Control how URL requests make use of previously cached data.
 
 

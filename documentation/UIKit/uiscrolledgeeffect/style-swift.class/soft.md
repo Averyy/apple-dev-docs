@@ -1,7 +1,8 @@
 # soft
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A soft-edged scroll edge effect.
 
@@ -16,6 +17,10 @@ A soft-edged scroll edge effect.
 
 ```swift
 class var soft: UIScrollEdgeEffect.Style { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) UIScrollEdgeEffectStyle * softStyle;
 ```
 
 

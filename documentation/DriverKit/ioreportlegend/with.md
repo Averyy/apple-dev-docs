@@ -1,23 +1,25 @@
 # with
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static IOReportLegend * with(OSArray *legend);
 ```
 
 ## See Also
 
-- [addReporterLegend](ioreportlegend/addreporterlegend-c.type.method.md)
+### Type Methods
+- [addReporterLegend](./addreporterlegend-c.type.method.md)
 
 
 ---

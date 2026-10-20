@@ -1,7 +1,8 @@
 # quantity
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The quantity for this sample.
 
@@ -20,17 +21,22 @@ The quantity for this sample.
 var quantity: HKQuantity { get }
 ```
 
+```objc
+@property (copy, readonly) HKQuantity * quantity;
+```
+
 #### Discussion
 
-If the sample contains more than one quantity, this property returns the sum or average, depending on the sample’s aggregation style (sum for cumulative, average for discrete). To access the individual quantities, use an [`HKQuantitySeriesSampleQuery`](hkquantityseriessamplequery.md).
+If the sample contains more than one quantity, this property returns the sum or average, depending on the sample’s aggregation style (sum for cumulative, average for discrete). To access the individual quantities, use an [`HKQuantitySeriesSampleQuery`](../hkquantityseriessamplequery.md).
 
-To see the type of units compatible with this quantity, look up the sample’s quantity type identifier in [`HKQuantityTypeIdentifier`](hkquantitytypeidentifier.md).
+To see the type of units compatible with this quantity, look up the sample’s quantity type identifier in [`HKQuantityTypeIdentifier`](../hkquantitytypeidentifier.md).
 
 ## See Also
 
-- [var count: Int](hkquantitysample/count.md)
+### Getting Property Data
+- [var count: Int](./count.md)
   The number of quantities contained in this sample.
-- [var quantityType: HKQuantityType](hkquantitysample/quantitytype.md)
+- [var quantityType: HKQuantityType](./quantitytype.md)
   The quantity type for this sample.
 
 

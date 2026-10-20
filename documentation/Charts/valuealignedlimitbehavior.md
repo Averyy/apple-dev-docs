@@ -1,7 +1,8 @@
 # ValueAlignedLimitBehavior
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that defines the amount of marks that can be scrolled at a time.
 
@@ -23,18 +24,19 @@ struct ValueAlignedLimitBehavior
 ## Topics
 
 ### Type Properties
-- [static var always: ValueAlignedLimitBehavior](valuealignedlimitbehavior/always.md)
+- [static var always: ValueAlignedLimitBehavior](./valuealignedlimitbehavior/always.md)
   The always limit behavior.
-- [static var automatic: ValueAlignedLimitBehavior](valuealignedlimitbehavior/automatic.md)
+- [static var automatic: ValueAlignedLimitBehavior](./valuealignedlimitbehavior/automatic.md)
   The automatic limit behavior.
-- [static var never: ValueAlignedLimitBehavior](valuealignedlimitbehavior/never.md)
+- [static var never: ValueAlignedLimitBehavior](./valuealignedlimitbehavior/never.md)
   The never limit behavior.
 
 ## See Also
 
-- [struct MajorValueAlignment](majorvaluealignment.md)
+### Supporting types
+- [struct MajorValueAlignment](./majorvaluealignment.md)
   A type that defines how the valigned aligned chart scroll target behavior aligns to major values on swipe.
-- [struct ValueAlignedChartScrollTargetBehavior](valuealignedchartscrolltargetbehavior.md)
+- [struct ValueAlignedChartScrollTargetBehavior](./valuealignedchartscrolltargetbehavior.md)
   A scroll target behavior that aligns to values spaced at regular intervals along the scrollable axes.
 
 

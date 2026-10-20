@@ -1,12 +1,13 @@
 # ABPropertyReadOnlyError
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The property is read-only.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The property is read-only.
 var ABPropertyReadOnlyError: Int { get }
 ```
 
+```c
+ABPropertyReadOnlyError
+```
+
 ## See Also
 
-- [var ABAddRecordsError: Int](abaddrecordserror.md)
+### Constants
+- [var ABAddRecordsError: Int](./abaddrecordserror.md)
   The records could not be added.
-- [var ABRemoveRecordsError: Int](abremoverecordserror.md)
+- [var ABRemoveRecordsError: Int](./abremoverecordserror.md)
   The records could not be removed.
-- [var ABPropertyValueValidationError: Int](abpropertyvaluevalidationerror.md)
+- [var ABPropertyValueValidationError: Int](./abpropertyvaluevalidationerror.md)
   The property value is not valid.
-- [var ABPropertyUnsupportedBySourceError: Int](abpropertyunsupportedbysourceerror.md)
+- [var ABPropertyUnsupportedBySourceError: Int](./abpropertyunsupportedbysourceerror.md)
   The property is not supported by the source.
 
 

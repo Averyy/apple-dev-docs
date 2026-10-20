@@ -1,7 +1,8 @@
 # PaddingData
 
 **Framework**: MapKit JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Interface
 
 A plain object representation of edge inset values.
 
@@ -10,35 +11,36 @@ A plain object representation of edge inset values.
 
 ## Declaration
 
-```swift
+```
 interface PaddingData
 ```
 
 ## Mentions
 
-- [MapKit JS 6](mapkit-js-6.md)
-- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
+- [MapKit JS 6](./mapkit-js-6.md)
+- [Migrating from Version 5 to Version 6](./migrating-from-version-5-to-version-6.md)
 
 ## Topics
 
 ### Padding properties
-- [bottom](paddingdata/bottom.md)
+- [bottom](./paddingdata/bottom.md)
   The amount of padding, in CSS pixels, to inset the map from the bottom edge.
-- [left](paddingdata/left.md)
+- [left](./paddingdata/left.md)
   The amount of padding, in CSS pixels, to inset the map from the left edge.
-- [right](paddingdata/right.md)
+- [right](./paddingdata/right.md)
   The amount of padding, in CSS pixels, to inset the map from the right edge.
-- [top](paddingdata/top.md)
+- [top](./paddingdata/top.md)
   The amount of padding, in CSS pixels, to inset the map from the top edge.
 
 ## Relationships
 
 ### Conforming Types
-- [Padding](padding.md)
+- [Padding](./padding.md)
 
 ## See Also
 
-- [class Padding](padding.md)
+### Map view customization
+- [class Padding](./padding.md)
   The values that define content padding within the map view frame.
 
 

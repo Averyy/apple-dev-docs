@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Configuration.MeshPrimitive
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of geometric mesh primitives to create in model output
 
@@ -18,16 +19,16 @@ enum MeshPrimitive
 ## Topics
 
 ### Enumeration Cases
-- [PhotogrammetrySession.Configuration.MeshPrimitive.quad](photogrammetrysession/configuration-swift.struct/meshprimitive-swift.enum/quad.md)
-- [PhotogrammetrySession.Configuration.MeshPrimitive.triangle](photogrammetrysession/configuration-swift.struct/meshprimitive-swift.enum/triangle.md)
+- [PhotogrammetrySession.Configuration.MeshPrimitive.quad](./meshprimitive-swift.enum/quad.md)
+- [PhotogrammetrySession.Configuration.MeshPrimitive.triangle](./meshprimitive-swift.enum/triangle.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

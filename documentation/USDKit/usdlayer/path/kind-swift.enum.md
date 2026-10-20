@@ -1,7 +1,8 @@
 # USDLayer.Path.Kind
 
 **Framework**: USDKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The classification of the path’s leaf element.
 
@@ -22,32 +23,32 @@ enum Kind
 ## Topics
 
 ### Enumeration Cases
-- [USDLayer.Path.Kind.absoluteRoot](usdlayer/path/kind-swift.enum/absoluteroot.md)
+- [USDLayer.Path.Kind.absoluteRoot](./kind-swift.enum/absoluteroot.md)
   The path is the absolute root, `/`.
-- [USDLayer.Path.Kind.empty](usdlayer/path/kind-swift.enum/empty.md)
+- [USDLayer.Path.Kind.empty](./kind-swift.enum/empty.md)
   The path is empty.
-- [USDLayer.Path.Kind.expression](usdlayer/path/kind-swift.enum/expression.md)
+- [USDLayer.Path.Kind.expression](./kind-swift.enum/expression.md)
   Connection expression path. Legacy USD syntax retained for classifying paths parsed from older USDA data.
-- [USDLayer.Path.Kind.mapper](usdlayer/path/kind-swift.enum/mapper.md)
+- [USDLayer.Path.Kind.mapper](./kind-swift.enum/mapper.md)
   Connection mapper path. Legacy USD syntax retained for classifying paths parsed from older USDA data.
-- [USDLayer.Path.Kind.mapperArgument](usdlayer/path/kind-swift.enum/mapperargument.md)
+- [USDLayer.Path.Kind.mapperArgument](./kind-swift.enum/mapperargument.md)
   Mapper-argument path. Legacy USD syntax retained for classifying paths parsed from older USDA data.
-- [USDLayer.Path.Kind.prim](usdlayer/path/kind-swift.enum/prim.md)
+- [USDLayer.Path.Kind.prim](./kind-swift.enum/prim.md)
   The path identifies a prim.
-- [USDLayer.Path.Kind.primVariantSelection](usdlayer/path/kind-swift.enum/primvariantselection.md)
+- [USDLayer.Path.Kind.primVariantSelection](./kind-swift.enum/primvariantselection.md)
   The path is a variant selection.
-- [USDLayer.Path.Kind.property](usdlayer/path/kind-swift.enum/property.md)
+- [USDLayer.Path.Kind.property](./kind-swift.enum/property.md)
   The path identifies a property on a prim or relationship target.
-- [USDLayer.Path.Kind.target](usdlayer/path/kind-swift.enum/target.md)
+- [USDLayer.Path.Kind.target](./kind-swift.enum/target.md)
   The path is a relationship target.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

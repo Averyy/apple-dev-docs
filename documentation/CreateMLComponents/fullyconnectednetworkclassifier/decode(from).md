@@ -1,7 +1,8 @@
 # decode(from:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decodes the estimator.
 
@@ -20,6 +21,8 @@ Decodes the estimator.
 func decode(from decoder: inout any EstimatorDecoder) throws -> FullyConnectedNetworkClassifierModel<Scalar, Label>
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar`, `Scalar` conforms to `BinaryFloatingPoint`, `Label` conforms to `Comparable`, `Label` conforms to `Decodable`, `Label` conforms to `Encodable`, and `Label` conforms to `Hashable`.
+
 #### Return Value
 
 A fully connected network classifier model.
@@ -30,7 +33,8 @@ A fully connected network classifier model.
 
 ## See Also
 
-- [func encodeWithOptimizer(FullyConnectedNetworkClassifier<Scalar, Label>.Transformer, to: inout any EstimatorEncoder) throws](fullyconnectednetworkclassifier/encodewithoptimizer(_:to:).md)
+### Encoding and decoding
+- [func encodeWithOptimizer(FullyConnectedNetworkClassifier<Scalar, Label>.Transformer, to: inout any EstimatorEncoder) throws](./encodewithoptimizer%28_,to%29.md)
   Encodes a fitted transformer with an optimizer.
 
 

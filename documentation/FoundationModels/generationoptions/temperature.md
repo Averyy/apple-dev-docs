@@ -1,7 +1,8 @@
 # temperature
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that influences the confidence of the model’s response.
 
@@ -31,17 +32,18 @@ The net effect is that low temperatures manifest as more stable and predictable 
 
 ## See Also
 
-- [var sampling: GenerationOptions.SamplingMode?](generationoptions/sampling.md)
+### Configuring options
+- [var sampling: GenerationOptions.SamplingMode?](./sampling.md)
   A sampling strategy for how the model picks tokens when generating a response.
-- [var samplingMode: GenerationOptions.SamplingMode?](generationoptions/samplingmode-swift.property.md)
+- [var samplingMode: GenerationOptions.SamplingMode?](./samplingmode-swift.property.md)
   A sampling strategy for how the model picks tokens when generating a response.
-- [GenerationOptions.SamplingMode](generationoptions/samplingmode-swift.struct.md)
+- [GenerationOptions.SamplingMode](./samplingmode-swift.struct.md)
   A type that defines how values are sampled from a probability distribution.
-- [var toolCallingMode: GenerationOptions.ToolCallingMode?](generationoptions/toolcallingmode-swift.property.md)
+- [var toolCallingMode: GenerationOptions.ToolCallingMode?](./toolcallingmode-swift.property.md)
   The tool calling requirements.
-- [GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct.md)
+- [GenerationOptions.ToolCallingMode](./toolcallingmode-swift.struct.md)
   A value that describes how the model uses tools.
-- [var maximumResponseTokens: Int?](generationoptions/maximumresponsetokens.md)
+- [var maximumResponseTokens: Int?](./maximumresponsetokens.md)
   The maximum number of tokens the model is allowed to produce in its response.
 
 

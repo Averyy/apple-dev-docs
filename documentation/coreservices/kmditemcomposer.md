@@ -1,7 +1,8 @@
 # kMDItemComposer
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The composer of the music contained in the audio file. A CFString.
 
@@ -12,6 +13,10 @@ The composer of the music contained in the audio file. A CFString.
 
 ```swift
 let kMDItemComposer: CFString!
+```
+
+```c
+const CFStringRef kMDItemComposer;
 ```
 
 

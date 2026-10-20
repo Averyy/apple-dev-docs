@@ -1,12 +1,13 @@
 # rulerView(_:shouldAdd:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether a new marker can be added.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Returns whether a new marker can be added.
 func rulerView(_ ruler: NSRulerView, shouldAdd marker: NSRulerMarker) -> Bool
 ```
 
+```objc
+- (BOOL) rulerView:(NSRulerView *) ruler shouldAddMarker:(NSRulerMarker *) marker;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `aMarker` can be added, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if `aMarker` can be added, [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
-The receiver checks for permission to make the change by invoking [`shouldChangeText(in:replacementString:)`](nstextview/shouldchangetext(in:replacementstring:).md) and returning the return value of that message. If the change is allowed, the receiver is then sent a [`rulerView(_:didAdd:)`](nstextview/rulerview(_:didadd:).md) message.
+The receiver checks for permission to make the change by invoking [`shouldChangeText(in:replacementString:)`](./shouldchangetext%28in,replacementstring%29.md) and returning the return value of that message. If the change is allowed, the receiver is then sent a [`rulerView(_:didAdd:)`](./rulerview%28_,didadd%29.md) message.
 
 ## Parameters
 
@@ -29,21 +34,22 @@ The receiver checks for permission to make the change by invoking [`shouldChange
 
 ## See Also
 
-- [func rulerView(NSRulerView, didMove: NSRulerMarker)](nstextview/rulerview(_:didmove:).md)
+### Supporting the ruler view
+- [func rulerView(NSRulerView, didMove: NSRulerMarker)](./rulerview%28_,didmove%29.md)
   Modifies the paragraph style of the paragraphs containing the selection to record the new location of the marker.
-- [func rulerView(NSRulerView, willMove: NSRulerMarker, toLocation: CGFloat) -> CGFloat](nstextview/rulerview(_:willmove:tolocation:).md)
+- [func rulerView(NSRulerView, willMove: NSRulerMarker, toLocation: CGFloat) -> CGFloat](./rulerview%28_,willmove,tolocation%29.md)
   Returns a potentially modified location to which the marker should be moved.
-- [func rulerView(NSRulerView, shouldMove: NSRulerMarker) -> Bool](nstextview/rulerview(_:shouldmove:).md)
+- [func rulerView(NSRulerView, shouldMove: NSRulerMarker) -> Bool](./rulerview%28_,shouldmove%29.md)
   Returns whether the marker should be moved.
-- [func rulerView(NSRulerView, didRemove: NSRulerMarker)](nstextview/rulerview(_:didremove:).md)
+- [func rulerView(NSRulerView, didRemove: NSRulerMarker)](./rulerview%28_,didremove%29.md)
   Modifies the paragraph style of the paragraphs containing the selection—if possible—by removing the specified marker.
-- [func rulerView(NSRulerView, shouldRemove: NSRulerMarker) -> Bool](nstextview/rulerview(_:shouldremove:).md)
+- [func rulerView(NSRulerView, shouldRemove: NSRulerMarker) -> Bool](./rulerview%28_,shouldremove%29.md)
   Returns whether the marker should be removed.
-- [func rulerView(NSRulerView, didAdd: NSRulerMarker)](nstextview/rulerview(_:didadd:).md)
+- [func rulerView(NSRulerView, didAdd: NSRulerMarker)](./rulerview%28_,didadd%29.md)
   Modifies the paragraph style of the paragraphs containing the selection to accommodate a new marker.
-- [func rulerView(NSRulerView, willAdd: NSRulerMarker, atLocation: CGFloat) -> CGFloat](nstextview/rulerview(_:willadd:atlocation:).md)
+- [func rulerView(NSRulerView, willAdd: NSRulerMarker, atLocation: CGFloat) -> CGFloat](./rulerview%28_,willadd,atlocation%29.md)
   Returns a potentially modified location to which the marker should be added.
-- [func rulerView(NSRulerView, handleMouseDownWith: NSEvent)](nstextview/rulerview(_:handlemousedownwith:).md)
+- [func rulerView(NSRulerView, handleMouseDownWith: NSEvent)](./rulerview%28_,handlemousedownwith%29.md)
   Adds a left tab marker to the ruler at the location clicked.
 
 

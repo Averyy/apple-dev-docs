@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](attributedstringprotocol/description.md)
+- [var description: String](./description.md)
   A textual representation of this instance.
 
 

@@ -1,7 +1,8 @@
 # scheduler
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scheduler used for tracking the timing of events.
 
@@ -22,7 +23,8 @@ let scheduler: Context
 
 ## See Also
 
-- [let upstream: Upstream](publishers/measureinterval/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
 
 

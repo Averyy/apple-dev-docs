@@ -1,7 +1,8 @@
 # MTL4BlendState.enabled
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Enables blending.
 
@@ -17,6 +18,10 @@ Enables blending.
 
 ```swift
 case enabled
+```
+
+```c
+MTL4BlendStateEnabled
 ```
 
 

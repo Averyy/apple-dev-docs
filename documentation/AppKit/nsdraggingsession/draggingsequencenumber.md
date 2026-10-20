@@ -1,7 +1,8 @@
 # draggingSequenceNumber
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a number that uniquely identifies the dragging session.
 
@@ -12,6 +13,10 @@ Returns a number that uniquely identifies the dragging session.
 
 ```swift
 var draggingSequenceNumber: Int { get }
+```
+
+```objc
+@property (readonly) NSInteger draggingSequenceNumber;
 ```
 
 

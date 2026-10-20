@@ -1,7 +1,8 @@
 # TabletopInteraction.DirectPickupBehavior.CollisionResolutionBehavior
 
 **Framework**: TabletopKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An object that represent the behavior that the object should have when colliding with the collision targets during the pickup phase.
 
@@ -17,22 +18,23 @@ enum CollisionResolutionBehavior
 ## Topics
 
 ### Resolution behaviors
-- [TabletopInteraction.DirectPickupBehavior.CollisionResolutionBehavior.automatic](tabletopinteraction/directpickupbehavior/collisionresolutionbehavior/automatic.md)
+- [TabletopInteraction.DirectPickupBehavior.CollisionResolutionBehavior.automatic](./collisionresolutionbehavior/automatic.md)
   The automatic behavior moves and rotates the object to ensure that it does not penetrate the collision targets.
-- [TabletopInteraction.DirectPickupBehavior.CollisionResolutionBehavior.disabled](tabletopinteraction/directpickupbehavior/collisionresolutionbehavior/disabled.md)
+- [TabletopInteraction.DirectPickupBehavior.CollisionResolutionBehavior.disabled](./collisionresolutionbehavior/disabled.md)
   Use this value to disable collision resolution.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(deadZone: TabletopInteraction.DeadZone, collisionResolution: TabletopInteraction.DirectPickupBehavior.CollisionResolutionBehavior)](tabletopinteraction/directpickupbehavior/init(deadzone:collisionresolution:).md)
+### Creating a pickup behavior
+- [init(deadZone: TabletopInteraction.DeadZone, collisionResolution: TabletopInteraction.DirectPickupBehavior.CollisionResolutionBehavior)](./init%28deadzone,collisionresolution%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(type:ratio:targetSystem:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new sparse parameters structure.
 
@@ -11,8 +12,10 @@ Returns a new sparse parameters structure.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 

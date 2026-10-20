@@ -1,7 +1,8 @@
 # defaultMetrics
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array of default metrics the test uses to record performance.
 
@@ -19,31 +20,36 @@ An array of default metrics the test uses to record performance.
 class var defaultMetrics: [any XCTMetric] { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSArray<id<XCTMetric>> * defaultMetrics;
+```
+
 #### Discussion
 
-When you call [`measure(options:block:)`](xctestcase/measure(options:block:).md), the test uses this property to determine which metrics to record. The default is an array that contains [`XCTClockMetric`](xctclockmetric.md). Subclasses of [`XCTestCase`](xctestcase.md) can override this property to change the default metrics.
+When you call [`measure(options:block:)`](./measure%28options,block%29.md), the test uses this property to determine which metrics to record. The default is an array that contains [`XCTClockMetric`](../xctclockmetric.md). Subclasses of [`XCTestCase`](../xctestcase.md) can override this property to change the default metrics.
 
 ## See Also
 
-- [func measure(() -> Void)](xctestcase/measure(_:).md)
+### Measuring Performance
+- [func measure(() -> Void)](./measure%28_%29.md)
   Measures the performance of a block of code.
-- [func measureMetrics([XCTPerformanceMetric], automaticallyStartMeasuring: Bool, for: () -> Void)](xctestcase/measuremetrics(_:automaticallystartmeasuring:for:).md)
+- [func measureMetrics([XCTPerformanceMetric], automaticallyStartMeasuring: Bool, for: () -> Void)](./measuremetrics%28_,automaticallystartmeasuring,for%29.md)
   Measures the performance of a block of code, optionally deferring the starting point for measurement.
-- [func measure(metrics: [any XCTMetric], block: () -> Void)](xctestcase/measure(metrics:block:).md)
+- [func measure(metrics: [any XCTMetric], block: () -> Void)](./measure%28metrics,block%29.md)
   Records the selected metrics for a block of code.
-- [func measure(metrics: [any XCTMetric], options: XCTMeasureOptions, block: () -> Void)](xctestcase/measure(metrics:options:block:).md)
+- [func measure(metrics: [any XCTMetric], options: XCTMeasureOptions, block: () -> Void)](./measure%28metrics,options,block%29.md)
   Records the selected metrics, using the specified measurement options, for a block of code.
-- [func measure(options: XCTMeasureOptions, block: () -> Void)](xctestcase/measure(options:block:).md)
+- [func measure(options: XCTMeasureOptions, block: () -> Void)](./measure%28options,block%29.md)
   Records the performance, using the specified measurement options, for a block of code.
-- [func startMeasuring()](xctestcase/startmeasuring.md)
+- [func startMeasuring()](./startmeasuring%28%29.md)
   Starts recording performance metrics within a block of code.
-- [func stopMeasuring()](xctestcase/stopmeasuring.md)
+- [func stopMeasuring()](./stopmeasuring%28%29.md)
   Ends recording performance metrics within a block of code.
-- [class var defaultPerformanceMetrics: [XCTPerformanceMetric]](xctestcase/defaultperformancemetrics.md)
+- [class var defaultPerformanceMetrics: [XCTPerformanceMetric]](./defaultperformancemetrics.md)
   An array of default performance metrics the test records.
-- [class var defaultMeasureOptions: XCTMeasureOptions](xctestcase/defaultmeasureoptions.md)
+- [class var defaultMeasureOptions: XCTMeasureOptions](./defaultmeasureoptions.md)
   The default measurement options the test uses to record performance.
-- [struct XCTPerformanceMetric](xctperformancemetric.md)
+- [struct XCTPerformanceMetric](../xctperformancemetric.md)
   Performance metrics that the test records.
 
 

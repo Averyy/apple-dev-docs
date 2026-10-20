@@ -1,7 +1,8 @@
 # appending(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new text suggestions delegate of the same suggestion item type with the items and behaviors of the receiving delegate and `other` concatenated. When the returned delegate is connected to a text field, all suggestion items provided from the first suggestions delegate appear before all those from the second suggestions delegate, visually separated by a separator.
 
@@ -14,6 +15,8 @@ Returns a new text suggestions delegate of the same suggestion item type with th
 @MainActor
 func appending(_ other: some NSTextSuggestionsDelegate<Self.SuggestionItemType>) -> some NSTextSuggestionsDelegate<Self.SuggestionItemType>
 ```
+
+Available when `SuggestionItemType` conforms to `Hashable`.
 
 #### Discussion
 

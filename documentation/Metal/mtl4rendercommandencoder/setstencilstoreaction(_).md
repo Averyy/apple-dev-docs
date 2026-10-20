@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Configures the store action for the stencil attachment.
@@ -20,15 +21,20 @@ Configures the store action for the stencil attachment.
 func setStencilStoreAction(_ storeAction: MTLStoreAction)
 ```
 
+```objc
+- (void) setStencilStoreAction:(MTLStoreAction) storeAction;
+```
+
 ## Parameters
 
-- `storeAction`: A store action for the stencil attachment that can’t be [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md).
+- `storeAction`: A store action for the stencil attachment that can’t be [`MTLStoreAction.unknown`](../mtlstoreaction/unknown.md).
 
 ## See Also
 
-- [func setColorStoreAction(MTLStoreAction, index: Int)](mtl4rendercommandencoder/setcolorstoreaction(_:index:).md)
+### Configuring the actions for attachments
+- [func setColorStoreAction(MTLStoreAction, index: Int)](./setcolorstoreaction%28_,index%29.md)
   Configures the store action for a color attachment.
-- [func setDepthStoreAction(MTLStoreAction)](mtl4rendercommandencoder/setdepthstoreaction(_:).md)
+- [func setDepthStoreAction(MTLStoreAction)](./setdepthstoreaction%28_%29.md)
   Configures the store action for the depth attachment.
 
 

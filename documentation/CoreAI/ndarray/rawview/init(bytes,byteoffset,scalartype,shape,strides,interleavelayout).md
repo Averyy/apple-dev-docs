@@ -1,7 +1,8 @@
 # init(bytes:byteOffset:scalarType:shape:strides:interleaveLayout:)
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a raw view from existing raw memory, interpreted as the specified scalar type.
 
@@ -35,20 +36,21 @@ let floatView = ndArrayRawView.view(as: Float32.self)
 
 The `shape/strides` must not be able to produce offsets that go outside of the range of `bytes`. As such, negative strides are not supported by this initializer.
 
-**Performance note**: Making an ndArray view from a normal VM pointer to be used as an input or backing of an [`InferenceFunction`](inferencefunction.md) could be a performance anti-pattern if you intend to pass the same underlying memory in repeatedly to many inferences. This can be a function of which compute units the model was specialized for. For example if the inference function runs compute on the GPU or Neural Engine, you may incur a copy of the view into the required memory primitive if it cannot be toll-free converted.
+**Performance note**: Making an ndArray view from a normal VM pointer to be used as an input or backing of an [`InferenceFunction`](../../inferencefunction.md) could be a performance anti-pattern if you intend to pass the same underlying memory in repeatedly to many inferences. This can be a function of which compute units the model was specialized for. For example if the inference function runs compute on the GPU or Neural Engine, you may incur a copy of the view into the required memory primitive if it cannot be toll-free converted.
 
 - bytes: The raw bytes to be referenced by the resulting view.
 - byteOffset: The offset into the span to be interpreted as the start of this view.
 - scalarType: The type of scalars in the provided span.
 - shape: The shape of the resulting view.
 - strides: The strides of the resulting view. If left empty, they will be computed as contiguous row-major.
-- interleaveLayout: Which dimension is interleaved and by what factor. See [`NDArray.InterleaveLayout`](ndarray/interleavelayout-swift.struct.md).
+- interleaveLayout: Which dimension is interleaved and by what factor. See [`NDArray.InterleaveLayout`](../interleavelayout-swift.struct.md).
 
 ## See Also
 
-- [init(metalBuffer: borrowing any MTLBuffer, byteOffset: Int, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int], interleaveLayout: NDArray.InterleaveLayout?)](ndarray/rawview/init(metalbuffer:byteoffset:scalartype:shape:strides:interleavelayout:).md)
+### Creating a raw view
+- [init(metalBuffer: borrowing any MTLBuffer, byteOffset: Int, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int], interleaveLayout: NDArray.InterleaveLayout?)](./init%28metalbuffer,byteoffset,scalartype,shape,strides,interleavelayout%29.md)
   Initialize a raw view from an existing metal buffer, interpreted as the specified scalar type.
-- [init(ioSurface: borrowing IOSurface, byteOffset: Int, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int], interleaveLayout: NDArray.InterleaveLayout?)](ndarray/rawview/init(iosurface:byteoffset:scalartype:shape:strides:interleavelayout:).md)
+- [init(ioSurface: borrowing IOSurface, byteOffset: Int, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int], interleaveLayout: NDArray.InterleaveLayout?)](./init%28iosurface,byteoffset,scalartype,shape,strides,interleavelayout%29.md)
   Initialize a raw view from an existing IOSurface, interpreted as the specified scalar type.
 
 

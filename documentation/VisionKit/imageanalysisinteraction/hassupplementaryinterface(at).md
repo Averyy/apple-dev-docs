@@ -1,7 +1,8 @@
 # hasSupplementaryInterface(at:)
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether supplementary interface objects exist at the specified point.
 
@@ -32,13 +33,14 @@ Supplementary interface objects include the Live Text button and Quick Actions, 
 
 ## See Also
 
-- [var liveTextButtonVisible: Bool](imageanalysisinteraction/livetextbuttonvisible.md)
+### Querying the interface state
+- [var liveTextButtonVisible: Bool](./livetextbuttonvisible.md)
   A Boolean value that indicates whether the Live Text button appears.
-- [var isSupplementaryInterfaceHidden: Bool](imageanalysisinteraction/issupplementaryinterfacehidden.md)
+- [var isSupplementaryInterfaceHidden: Bool](./issupplementaryinterfacehidden.md)
   A Boolean value that indicates whether the view hides supplementary interface objects.
-- [func hasInteractiveItem(at: CGPoint) -> Bool](imageanalysisinteraction/hasinteractiveitem(at:).md)
+- [func hasInteractiveItem(at: CGPoint) -> Bool](./hasinteractiveitem%28at%29.md)
   Returns a Boolean value that indicates whether active text, data detectors, or supplementary interface objects exist at the specified point.
-- [var selectableItemsHighlighted: Bool](imageanalysisinteraction/selectableitemshighlighted.md)
+- [var selectableItemsHighlighted: Bool](./selectableitemshighlighted.md)
   A Boolean value that indicates whether the interaction highlights actionable text or data the analyzer detects in text.
 
 

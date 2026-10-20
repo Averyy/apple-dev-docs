@@ -1,7 +1,8 @@
 # currentOSVersionDeprecationDate
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date when current OS version will be deprecated.
 

@@ -2,9 +2,10 @@
 
 **Framework**: Device Activity  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
-A body containing a [`DeviceActivityReportScene`](deviceactivityreportscene.md) for each context that your extension supports.
+A body containing a [`DeviceActivityReportScene`](../deviceactivityreportscene.md) for each context that your extension supports.
 
 **Availability**:
 - iOS 16.0+

@@ -1,7 +1,8 @@
 # videoDimensionsValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var videoDimensionsValue: CMVideoDimensions { get }
+```
+
+```objc
+@property (readonly) CMVideoDimensions CMVideoDimensionsValue;
 ```
 
 

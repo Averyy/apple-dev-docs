@@ -1,7 +1,8 @@
 # MTLTessellationControlPointIndexType.none
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No size. This value should only be used when drawing patches without a control point index buffer.
 
@@ -19,11 +20,16 @@ No size. This value should only be used when drawing patches without a control p
 case none
 ```
 
+```c
+MTLTessellationControlPointIndexTypeNone
+```
+
 ## See Also
 
-- [MTLTessellationControlPointIndexType.uint16](mtltessellationcontrolpointindextype/uint16.md)
+### Index types
+- [MTLTessellationControlPointIndexType.uint16](./uint16.md)
   The size of a 16-bit unsigned integer.
-- [MTLTessellationControlPointIndexType.uint32](mtltessellationcontrolpointindextype/uint32.md)
+- [MTLTessellationControlPointIndexType.uint32](./uint32.md)
   The size of a 32-bit unsigned integer.
 
 

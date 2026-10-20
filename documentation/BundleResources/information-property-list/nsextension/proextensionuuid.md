@@ -1,7 +1,8 @@
 # ProExtensionUUID
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A UUID string that uniquely identifies your extension to the Compressor app.
 
@@ -9,9 +10,10 @@ A UUID string that uniquely identifies your extension to the Compressor app.
 - ProVideo Encoder Extensions 1.0+
 - ProVideo Workflow Extensions 1.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `ProExtensionUUID`
+- **Type**: string
 
 #### Discussion
 
@@ -19,11 +21,12 @@ The value for this key is a placeholder UUID the Xcode template generates. Each 
 
 ## See Also
 
-- [ProExtensionAttributes](information-property-list/nsextension/proextensionattributes.md)
+### Professional Video Applications
+- [ProExtensionAttributes](./proextensionattributes.md)
   A dictionary that specifies the minimum size of the floating window in which Final Cut Pro hosts the extension view.
-- [ProExtensionPrincipalClass](information-property-list/nsextension/proextensionprincipalclass.md)
+- [ProExtensionPrincipalClass](./proextensionprincipalclass.md)
   The name of the class with the principal implementation of your extension.
-- [ProExtensionPrincipalViewControllerClass](information-property-list/nsextension/proextensionprincipalviewcontrollerclass.md)
+- [ProExtensionPrincipalViewControllerClass](./proextensionprincipalviewcontrollerclass.md)
   The name of the principal view controller class of your extension.
 
 

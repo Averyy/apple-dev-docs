@@ -1,7 +1,8 @@
 # isLookToDictateEnabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,9 +16,14 @@
 var isLookToDictateEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isLookToDictateEnabled) BOOL lookToDictateEnabled;
+```
+
 ## See Also
 
-- [protocol UILookToDictateCapable](uilooktodictatecapable.md)
+### Managing dictation
+- [protocol UILookToDictateCapable](../uilooktodictatecapable.md)
 
 
 ---

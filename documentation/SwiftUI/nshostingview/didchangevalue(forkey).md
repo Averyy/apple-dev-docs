@@ -1,7 +1,8 @@
 # didChangeValue(forKey:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
@@ -15,13 +16,14 @@
 
 ## See Also
 
-- [func keyDown(with: NSEvent)](nshostingview/keydown(with:).md)
+### Managing keyboard interaction
+- [func keyDown(with: NSEvent)](./keydown%28with%29.md)
   Called when the user presses a key on the keyboard while this view is in the responder chain.
-- [func keyUp(with: NSEvent)](nshostingview/keyup(with:).md)
+- [func keyUp(with: NSEvent)](./keyup%28with%29.md)
   Called when the user releases a key on the keyboard while this view is in the responder chain.
-- [func performKeyEquivalent(with: NSEvent) -> Bool](nshostingview/performkeyequivalent(with:).md)
-- [func insertText(Any)](nshostingview/inserttext(_:).md)
-- [func makeTouchBar() -> NSTouchBar?](nshostingview/maketouchbar.md)
+- [func performKeyEquivalent(with: NSEvent) -> Bool](./performkeyequivalent%28with%29.md)
+- [func insertText(Any)](./inserttext%28_%29.md)
+- [func makeTouchBar() -> NSTouchBar?](./maketouchbar%28%29.md)
 
 
 ---

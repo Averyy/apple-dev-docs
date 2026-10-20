@@ -1,7 +1,8 @@
 # PaymentMethodBinding.PaymentMethodBindingError.failed
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The initialization or binding operation failed.
 
@@ -19,13 +20,14 @@ case failed
 
 #### Discussion
 
-The methods of the [`PaymentMethodBinding`](paymentmethodbinding.md) struct can fail if the app isn’t entitled to use this API, or if other errors occur.
+The methods of the [`PaymentMethodBinding`](../../paymentmethodbinding.md) struct can fail if the app isn’t entitled to use this API, or if other errors occur.
 
 ## See Also
 
-- [PaymentMethodBinding.PaymentMethodBindingError.invalidPinningID](paymentmethodbinding/paymentmethodbindingerror/invalidpinningid.md)
+### Getting error codes
+- [PaymentMethodBinding.PaymentMethodBindingError.invalidPinningID](./invalidpinningid.md)
   The in-app binding identifier is invalid or expired.
-- [PaymentMethodBinding.PaymentMethodBindingError.notEligible](paymentmethodbinding/paymentmethodbindingerror/noteligible.md)
+- [PaymentMethodBinding.PaymentMethodBindingError.notEligible](./noteligible.md)
   The user isn’t eligible.
 
 

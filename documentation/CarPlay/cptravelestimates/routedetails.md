@@ -1,7 +1,8 @@
 # routeDetails
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional trip information such as battery, fuel, or toll information to display with travel estimates.
 
@@ -14,6 +15,10 @@ Additional trip information such as battery, fuel, or toll information to displa
 
 ```swift
 var routeDetails: [CPRouteDetail] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<CPRouteDetail *> * routeDetails;
 ```
 
 

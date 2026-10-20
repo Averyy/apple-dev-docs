@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: XPC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the dictionary is empty.
 
@@ -11,7 +12,7 @@ A Boolean value that indicates whether the dictionary is empty.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ var isEmpty: Bool { get }
 
 ## See Also
 
-- [var count: Int](xpcdictionary/count.md)
+### Inspecting a dictionary
+- [var count: Int](./count.md)
   The number of key-value pairs in the dictionary.
 
 

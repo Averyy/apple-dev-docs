@@ -1,6 +1,7 @@
 # Extending vCPU Capabilities Using Model-Specific Registers
 
-**Framework**: Hypervisor
+**Framework**: Hypervisor  
+**Role**: Article
 
 Configure specific client performance monitoring and enable other vCPU capabilities using Model-Specific Registers.
 
@@ -19,13 +20,13 @@ MSRs are also useful in monitoring guest performance, and using them to customiz
 - Enabling last branch registers recording in order to gather information useful in debugging crashes in a guest OS or in the apps running in a guest OS.
 - Enabling or disabling branch and speculation control in the vCPU to mitigate known security issues for apps running in a guest OS.
 
-To bind and an MSR to the current vCPU, use the [`hv_vcpu_enable_managed_msr(_:_:_:)`](hv_vcpu_enable_managed_msr(_:_:_:).md) function. Use the [`hv_vcpu_set_msr_access(_:_:_:)`](hv_vcpu_set_msr_access(_:_:_:).md) function to grant or remove the [`HV_MSR_READ`](hv_msr_read.md) or [`HV_MSR_WRITE`](hv_msr_write.md) permissions (or both). Unbinding an MSR removes read and write permissions from the guest.
+To bind and an MSR to the current vCPU, use the [`hv_vcpu_enable_managed_msr(_:_:_:)`](./hv_vcpu_enable_managed_msr%28_,_,_%29.md) function. Use the [`hv_vcpu_set_msr_access(_:_:_:)`](./hv_vcpu_set_msr_access%28_,_,_%29.md) function to grant or remove the [`HV_MSR_READ`](./hv_msr_read.md) or [`HV_MSR_WRITE`](./hv_msr_write.md) permissions (or both). Unbinding an MSR removes read and write permissions from the guest.
 
-Some MSR facilities require saving and restoring the MSRs in a particular order. The hypervisor framework keeps a list of MSRs that it saves and restores on entry to, and exit from running the guest, along with the rest of the guest state across context switches. In macOS 10 and earlier, the framework appended new MSR requests to the end of the list. When removing an existing request, the framework copied the last entry down to the entry that the framework is deleting. In macOS 11 and later, the framework processes MSRs in the order that they’re added. The MSRs associated with the [`HV_MSR_IA32_PERF_GLOBAL_STATUS`](hv_msr_ia32_perf_global_status.md) register have additional requirements, described below, relating to binding of registers to the vCPU.
+Some MSR facilities require saving and restoring the MSRs in a particular order. The hypervisor framework keeps a list of MSRs that it saves and restores on entry to, and exit from running the guest, along with the rest of the guest state across context switches. In macOS 10 and earlier, the framework appended new MSR requests to the end of the list. When removing an existing request, the framework copied the last entry down to the entry that the framework is deleting. In macOS 11 and later, the framework processes MSRs in the order that they’re added. The MSRs associated with the [`HV_MSR_IA32_PERF_GLOBAL_STATUS`](./hv_msr_ia32_perf_global_status.md) register have additional requirements, described below, relating to binding of registers to the vCPU.
 
-Because of the variety of possible host hardware, there’s no general formula that’s useful for discovering every MSR supported by the platform. Most approaches to determining specific MSR availability start with executing the `CPUID` instruction to determine the underlying hardware features. Then, using [`hv_vmx_get_msr_info(_:_:)`](hv_vmx_get_msr_info(_:_:).md) it’s possible to discover more information about the particular subset of the MSRs that are available.
+Because of the variety of possible host hardware, there’s no general formula that’s useful for discovering every MSR supported by the platform. Most approaches to determining specific MSR availability start with executing the `CPUID` instruction to determine the underlying hardware features. Then, using [`hv_vmx_get_msr_info(_:_:)`](./hv_vmx_get_msr_info%28_,_%29.md) it’s possible to discover more information about the particular subset of the MSRs that are available.
 
-The example below checks for the availability of one of the speculation control and cache flushing MSRs. Here, a Boolean value, `arch_cap_enabled`, contains the result of a `CPUID` instruction that tests availability of the [`HV_MSR_IA32_ARCH_CAPABILITIES`](hv_msr_ia32_arch_capabilities.md) MSR on the Hypervisor host. If successful, the code enables the MSR and grants [`HV_MSR_READ`](hv_msr_read.md) permission to the guest.
+The example below checks for the availability of one of the speculation control and cache flushing MSRs. Here, a Boolean value, `arch_cap_enabled`, contains the result of a `CPUID` instruction that tests availability of the [`HV_MSR_IA32_ARCH_CAPABILITIES`](./hv_msr_ia32_arch_capabilities.md) MSR on the Hypervisor host. If successful, the code enables the MSR and grants [`HV_MSR_READ`](./hv_msr_read.md) permission to the guest.
 
 ```objc
 hv_vcpuid_t vcpuid;
@@ -50,7 +51,7 @@ if (arch_cap_available) {
 
 ```
 
-In the guest OS, test for the availability of [`HV_MSR_IA32_ARCH_CAPABILITIES`](hv_msr_ia32_arch_capabilities.md) MSR using the `CPUID` instruction, and then read the register using the following assembly language fragment:
+In the guest OS, test for the availability of [`HV_MSR_IA32_ARCH_CAPABILITIES`](./hv_msr_ia32_arch_capabilities.md) MSR using the `CPUID` instruction, and then read the register using the following assembly language fragment:
 
 ```c
 // Check with CPUID to see if this MSR is available.
@@ -60,7 +61,7 @@ rdmsr
 
 ```
 
-> **Note**:  The MSRs include several collections of related registers, including [`HV_MSR_IA32_PMC0`](hv_msr_ia32_pmc0.md), [`HV_MSR_IA32_PMC7`](hv_msr_ia32_pmc7.md), [`HV_MSR_IA32_PERFEVNTSEL0`](hv_msr_ia32_perfevntsel0.md), and [`HV_MSR_IA32_PERFEVNTSEL7`](hv_msr_ia32_perfevntsel7.md). To avoid repetition, this article refers to these collections as `HV_MSR_IA32_PMCn` and `HV_MSR_IA32_PERFEVTSELn`, respectively when referring to these register sets. A listing of MSR register names is available in the Model-Specific Registers Constants section.
+> **Note**:  The MSRs include several collections of related registers, including [`HV_MSR_IA32_PMC0`](./hv_msr_ia32_pmc0.md), [`HV_MSR_IA32_PMC7`](./hv_msr_ia32_pmc7.md), [`HV_MSR_IA32_PERFEVNTSEL0`](./hv_msr_ia32_perfevntsel0.md), and [`HV_MSR_IA32_PERFEVNTSEL7`](./hv_msr_ia32_perfevntsel7.md). To avoid repetition, this article refers to these collections as `HV_MSR_IA32_PMCn` and `HV_MSR_IA32_PERFEVTSELn`, respectively when referring to these register sets. A listing of MSR register names is available in the Model-Specific Registers Constants section.
 
 ##### Analyze Guest Performance
 
@@ -82,17 +83,17 @@ The available performance counters and their capabilities vary greatly across ma
 
 Because there are complex interactions between the registers, the framework places restrictions on some of these MSRs:
 
-- The framework reserves many of the fields in these registers: setting them to invalid or unsupported values prevents the guest from running. You can determine which bit positions represent available MSRs using the [`hv_vmx_get_msr_info(_:_:)`](hv_vmx_get_msr_info(_:_:).md) function.
-- The guest can’t set the `HV_MSR_IA32_PERFEVNTSELn` and the [`HV_MSR_IA32_FIXED_CTR_CTRL`](hv_msr_ia32_fixed_ctr_ctrl.md) registers to be directly writable; the client must validate writes to these registers.
-- The framework requires enabling the [`VMENTRY_LOAD_IA32_PERF_GLOBAL_CTRL`](vmentry_load_ia32_perf_global_ctrl.md) and [`VMEXIT_LOAD_IA32_PERF_GLOBAL_CTRL`](vmexit_load_ia32_perf_global_ctrl.md) controls. The framework uses these to stop the counters before loading the MSRs.
+- The framework reserves many of the fields in these registers: setting them to invalid or unsupported values prevents the guest from running. You can determine which bit positions represent available MSRs using the [`hv_vmx_get_msr_info(_:_:)`](./hv_vmx_get_msr_info%28_,_%29.md) function.
+- The guest can’t set the `HV_MSR_IA32_PERFEVNTSELn` and the [`HV_MSR_IA32_FIXED_CTR_CTRL`](./hv_msr_ia32_fixed_ctr_ctrl.md) registers to be directly writable; the client must validate writes to these registers.
+- The framework requires enabling the [`VMENTRY_LOAD_IA32_PERF_GLOBAL_CTRL`](./vmentry_load_ia32_perf_global_ctrl.md) and [`VMEXIT_LOAD_IA32_PERF_GLOBAL_CTRL`](./vmexit_load_ia32_perf_global_ctrl.md) controls. The framework uses these to stop the counters before loading the MSRs.
 - The `HV_MSR_IA32_PMCn` and `IA32_FIXED_CTR0n` registers can count more than 32 bits, but the context switches truncate the values to 32 bits (using the MSR write permission) upon restoration of the register state. One way the client can work around this limitation is by enabling the hardware counters without native access, and simulating wider registers through software. The `HV_MSR_IA32_A_PMCn` alias registers can be useful here as they can contain larger values.
 - If you bind to the `HV_MSR_IA32_PERFEVNTSELn` event selection registers, then you must bind the corresponding `HV_MSR_IA32_PMCn` registers`,` or its alias registers `HV_MSR_IA32_A_PMCn`. Similarly, if you bind the `HV_MSR_IA32_FIXED_CTR_CTRL` register, you must bind all valid `IA32_FIXED_CTRn` registers.
-- The framework doesn’t support native write-access to the `HV_MSR_IA32_PERFEVNTSELn`, [`HV_MSR_IA32_FIXED_CTR_CTRL`](hv_msr_ia32_fixed_ctr_ctrl.md), and [`HV_MSR_IA32_PERF_GLOBAL_CTRL`](hv_msr_ia32_perf_global_ctrl.md) registers. The client must intercept and handle writes to these registers to ensure that the guest isn’t given access to unsupported facilities or unbound counters.
-- If a full-width alias register — like [`HV_MSR_IA32_A_PMC0`](hv_msr_ia32_a_pmc0.md) or [`HV_MSR_IA32_A_PMC7`](hv_msr_ia32_a_pmc7.md) — is available in addition to the original [`HV_MSR_IA32_PMC0`](hv_msr_ia32_pmc0.md) or [`HV_MSR_IA32_PMC7`](hv_msr_ia32_pmc7.md) register, you can only bind one of them to a vCPU at a time. If there’s a binding to either, both MSRs are eligible for guest access.
-- You must bind the [`HV_MSR_IA32_PERF_GLOBAL_STATUS`](hv_msr_ia32_perf_global_status.md), [`HV_MSR_IA32_PERF_GLOBAL_STATUS_RESET`](hv_msr_ia32_perf_global_status_reset.md), and [`HV_MSR_IA32_PERF_GLOBAL_STATUS_SET`](hv_msr_ia32_perf_global_status_set.md) registers to the vCPU. Use of the latter two registers should be in the order [`HV_MSR_IA32_PERF_GLOBAL_STATUS_RESET`](hv_msr_ia32_perf_global_status_reset.md) followed by [`HV_MSR_IA32_PERF_GLOBAL_STATUS_SET`](hv_msr_ia32_perf_global_status_set.md). The framework ensures the restoration of the status register first, and saves it last when switching contexts. You can grant native access to all three MSRs that map to the underlying status register. The guest global status register [`HV_MSR_IA32_PERF_GLOBAL_STATUS_RESET`](hv_msr_ia32_perf_global_status_reset.md) should be both read and written using [`HV_MSR_IA32_PERF_GLOBAL_STATUS`](hv_msr_ia32_perf_global_status.md). Use of the same MSR name is intentional, the framework determines at runtime the right sequence of operations to call). The framework doesn’t support binding this register on processors with architectural performance monitoring version 3 or earlier.
-- The `RDPMC` instruction still requires a VM exit to occur. However, if you use the [`HV_VCPU_ACCEL_RDPMC`](hv_vcpu_accel_rdpmc.md) flag when creating the vCPU, then the kernel automatically handles the `RDPMC` exit, and returns the values of any virtualized PMC register directly to the guest without exiting.
+- The framework doesn’t support native write-access to the `HV_MSR_IA32_PERFEVNTSELn`, [`HV_MSR_IA32_FIXED_CTR_CTRL`](./hv_msr_ia32_fixed_ctr_ctrl.md), and [`HV_MSR_IA32_PERF_GLOBAL_CTRL`](./hv_msr_ia32_perf_global_ctrl.md) registers. The client must intercept and handle writes to these registers to ensure that the guest isn’t given access to unsupported facilities or unbound counters.
+- If a full-width alias register — like [`HV_MSR_IA32_A_PMC0`](./hv_msr_ia32_a_pmc0.md) or [`HV_MSR_IA32_A_PMC7`](./hv_msr_ia32_a_pmc7.md) — is available in addition to the original [`HV_MSR_IA32_PMC0`](./hv_msr_ia32_pmc0.md) or [`HV_MSR_IA32_PMC7`](./hv_msr_ia32_pmc7.md) register, you can only bind one of them to a vCPU at a time. If there’s a binding to either, both MSRs are eligible for guest access.
+- You must bind the [`HV_MSR_IA32_PERF_GLOBAL_STATUS`](./hv_msr_ia32_perf_global_status.md), [`HV_MSR_IA32_PERF_GLOBAL_STATUS_RESET`](./hv_msr_ia32_perf_global_status_reset.md), and [`HV_MSR_IA32_PERF_GLOBAL_STATUS_SET`](./hv_msr_ia32_perf_global_status_set.md) registers to the vCPU. Use of the latter two registers should be in the order [`HV_MSR_IA32_PERF_GLOBAL_STATUS_RESET`](./hv_msr_ia32_perf_global_status_reset.md) followed by [`HV_MSR_IA32_PERF_GLOBAL_STATUS_SET`](./hv_msr_ia32_perf_global_status_set.md). The framework ensures the restoration of the status register first, and saves it last when switching contexts. You can grant native access to all three MSRs that map to the underlying status register. The guest global status register [`HV_MSR_IA32_PERF_GLOBAL_STATUS_RESET`](./hv_msr_ia32_perf_global_status_reset.md) should be both read and written using [`HV_MSR_IA32_PERF_GLOBAL_STATUS`](./hv_msr_ia32_perf_global_status.md). Use of the same MSR name is intentional, the framework determines at runtime the right sequence of operations to call). The framework doesn’t support binding this register on processors with architectural performance monitoring version 3 or earlier.
+- The `RDPMC` instruction still requires a VM exit to occur. However, if you use the [`HV_VCPU_ACCEL_RDPMC`](./hv_vcpu_accel_rdpmc.md) flag when creating the vCPU, then the kernel automatically handles the `RDPMC` exit, and returns the values of any virtualized PMC register directly to the guest without exiting.
 
-##### Record Branch Addresses with Last Branch Msrs
+##### Record Branch Addresses with Last Branch MSRs
 
 You use Last Branch MSRs when you need to record branching information from guest vCPUs; this can be useful for analyzing and understanding guest crashes.
 
@@ -106,7 +107,7 @@ You can bind Last Branch Register MSRs on more recent processors that support th
 - `HV_MSR_LASTINT_FROM_IP`
 - `HV_MSR_LASTINT_TO_IP`
 
-##### Control Security Related Performance Impacts with Speculation Control Msrs
+##### Control Security-Related Performance Impacts with Speculation Control MSRs
 
 The framework supports several speculation control MSRs which can impact guest performance, including:
 
@@ -115,26 +116,27 @@ The framework supports several speculation control MSRs which can impact guest p
 - `HV_MSR_IA32_FLUSH_CMD`
 - `HV_MSR_IA32_ARCH_CAPABILITIES` (read-only register)
 
-For more information about these MSRs, see [`CPUID Enumeration and Architectural MSRs`](https://developer.apple.comhttps://software.intel.com/security-software-guidance/insights/deep-dive-cpuid-enumeration-and-architectural-msrs) (Intel Corporation).
+For more information about these MSRs, see [CPUID Enumeration and Architectural MSRs](https://software.intel.com/security-software-guidance/insights/deep-dive-cpuid-enumeration-and-architectural-msrs) (Intel Corporation).
 
-The framework’s [`hv_vmx_get_msr_info(_:_:)`](hv_vmx_get_msr_info(_:_:).md) function returns the [`HV_MSR_IA32_ARCH_CAPABILITIES`](hv_msr_ia32_arch_capabilities.md) MSR value on the platform, and describes the platform-specific capabilities through the [`HV_VMX_INFO_MSR_IA32_ARCH_CAPABILITIES`](hv_vmx_info_msr_ia32_arch_capabilities.md) value.
+The framework’s [`hv_vmx_get_msr_info(_:_:)`](./hv_vmx_get_msr_info%28_,_%29.md) function returns the [`HV_MSR_IA32_ARCH_CAPABILITIES`](./hv_msr_ia32_arch_capabilities.md) MSR value on the platform, and describes the platform-specific capabilities through the [`HV_VMX_INFO_MSR_IA32_ARCH_CAPABILITIES`](./hv_vmx_info_msr_ia32_arch_capabilities.md) value.
 
 ## See Also
 
-- [func hv_vcpu_read_msr(hv_vcpuid_t, UInt32, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vcpu_read_msr(_:_:_:).md)
+### Model-Specific Registers
+- [func hv_vcpu_read_msr(hv_vcpuid_t, UInt32, UnsafeMutablePointer<UInt64>) -> hv_return_t](./hv_vcpu_read_msr%28_,_,_%29.md)
   Returns, by reference, the current value of a Model-Specific Register (MSR) of a vCPU.
-- [func hv_vcpu_write_msr(hv_vcpuid_t, UInt32, UInt64) -> hv_return_t](hv_vcpu_write_msr(_:_:_:).md)
+- [func hv_vcpu_write_msr(hv_vcpuid_t, UInt32, UInt64) -> hv_return_t](./hv_vcpu_write_msr%28_,_,_%29.md)
   Sets the value of a Model-Specific Register (MSR) of a vCPU.
-- [func hv_vcpu_enable_native_msr(hv_vcpuid_t, UInt32, Bool) -> hv_return_t](hv_vcpu_enable_native_msr(_:_:_:).md)
+- [func hv_vcpu_enable_native_msr(hv_vcpuid_t, UInt32, Bool) -> hv_return_t](./hv_vcpu_enable_native_msr%28_,_,_%29.md)
   Enables or disables a Model-Specific Register (MSR) that the VM uses natively.
-- [func hv_vcpu_set_msr_access(hv_vcpuid_t, UInt32, hv_msr_flags_t) -> hv_return_t](hv_vcpu_set_msr_access(_:_:_:).md)
+- [func hv_vcpu_set_msr_access(hv_vcpuid_t, UInt32, hv_msr_flags_t) -> hv_return_t](./hv_vcpu_set_msr_access%28_,_,_%29.md)
   Controls the guest access of a managed Model-Specific Register (MSR).
-- [func hv_vcpu_enable_managed_msr(hv_vcpuid_t, UInt32, Bool) -> hv_return_t](hv_vcpu_enable_managed_msr(_:_:_:).md)
+- [func hv_vcpu_enable_managed_msr(hv_vcpuid_t, UInt32, Bool) -> hv_return_t](./hv_vcpu_enable_managed_msr%28_,_,_%29.md)
   Enables the guest access of a managed Model-Specific Register (MSR).
-- [typealias hv_msr_flags_t](hv_msr_flags_t.md)
+- [typealias hv_msr_flags_t](./hv_msr_flags_t.md)
   The type representing the native Model-Specific Register (MSR) permissions.
-- [Model-Specific Registers](3727856-model-specific-registers.md)
-- [MSR Permissions](3567078-msr_permissions-enum.md)
+- [Model-Specific Registers](./api-3727856-model-specific-registers.md)
+- [MSR Permissions](./api-3567078-msr_permissions-enum.md)
   An enumeration that describes possible Model-Specific Register (MSR) permisssions.
 
 

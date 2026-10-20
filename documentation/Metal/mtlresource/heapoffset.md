@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The distance, in bytes, from the beginning of the heap to the first byte of the resource, if you allocated the resource on a heap.
@@ -20,17 +21,22 @@ The distance, in bytes, from the beginning of the heap to the first byte of the 
 var heapOffset: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger heapOffset;
+```
+
 #### Discussion
 
-If the heap is not a placement heap ([`MTLHeapType.placement`](mtlheaptype/placement.md)), the value is always `0` and should be ignored.
+If the heap is not a placement heap ([`MTLHeapType.placement`](../mtlheaptype/placement.md)), the value is always `0` and should be ignored.
 
 ## See Also
 
-- [var heap: (any MTLHeap)?](mtlresource/heap.md)
+### Managing heap resources
+- [var heap: (any MTLHeap)?](./heap.md)
   The heap on which the resource is allocated, if any.
-- [func makeAliasable()](mtlresource/makealiasable.md)
+- [func makeAliasable()](./makealiasable%28%29.md)
   Allows future heap resource allocations to alias against the resource’s memory, reusing it.
-- [func isAliasable() -> Bool](mtlresource/isaliasable.md)
+- [func isAliasable() -> Bool](./isaliasable%28%29.md)
   A Boolean value that indicates whether future heap resource allocations may alias against the resource’s memory.
 
 

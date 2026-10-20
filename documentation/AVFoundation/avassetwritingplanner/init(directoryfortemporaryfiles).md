@@ -1,7 +1,8 @@
 # init(directoryForTemporaryFiles:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of AVAssetWritingPlanner given a unique file directory to host all incremental segment files and other intermediate files.
 
@@ -27,7 +28,7 @@ A resuming planner instance can only find the files from a previous planner inst
 
 Source assets, compression configs, and video composition settings should all be taken into account when generating the unique URL.
 
-> **Note**: An error if `directoryForTemporaryFiles` does not exist, or it is not writable, or it contains a corrupted AVAssetWritingPlanner incremental state file.
+> **Throws**: An error if `directoryForTemporaryFiles` does not exist, or it is not writable, or it contains a corrupted AVAssetWritingPlanner incremental state file.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # VideoPlayerComponent.VideoComfortMitigation.play
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The comfort violation occurred, but no action was taken, and the playback continued uninterrupted
 

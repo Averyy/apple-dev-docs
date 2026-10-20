@@ -1,7 +1,8 @@
 # init(effect:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a force effect component with a single force effect, and automatically plays it.
 

@@ -1,7 +1,8 @@
 # updateArrangement(_:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the arrangement of the view controller.
 
@@ -26,11 +27,12 @@ Updates the arrangement of the view controller.
 
 ## See Also
 
-- [struct UIOverlayArrangement](uioverlayarrangement-swift.struct.md)
+### Configuring the arrangement
+- [struct UIOverlayArrangement](../uioverlayarrangement-swift.struct.md)
   An arrangement that layers the primary view over the secondary view, or places the views side by side on a folded display.
-- [struct UISplitArrangement](uisplitarrangement-swift.struct.md)
+- [struct UISplitArrangement](../uisplitarrangement-swift.struct.md)
   An arrangement that places the primary and secondary views side by side along one or more axes.
-- [UIArrangementViewController.Arrangement](uiarrangementviewcontroller/arrangement.md)
+- [UIArrangementViewController.Arrangement](./arrangement.md)
   A type that describes how an arrangement view controller lays out its view controllers.
 
 

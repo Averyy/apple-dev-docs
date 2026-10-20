@@ -1,14 +1,15 @@
 # kCSRSplitTimeoutHiAddress
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kCSRSplitTimeoutHiAddress = kCSRCoreRegistersBaseAddress + 0x0018
 ```
 

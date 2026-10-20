@@ -1,7 +1,8 @@
 # kIOUSBEndpointSynchronizationTypeSynchronous
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The synchronous type.
 
@@ -10,7 +11,7 @@ The synchronous type.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBEndpointSynchronizationTypeSynchronous = (kIOUSBEndpointDescriptorSynchronizationTypeSynchronous >> kIOUSBEndpointDescriptorSynchronizationTypePhase)
 ```
 

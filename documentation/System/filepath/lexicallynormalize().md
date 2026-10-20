@@ -1,7 +1,8 @@
 # lexicallyNormalize()
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Collapse `.` and `..` components lexically (i.e. without following symlinks).
 

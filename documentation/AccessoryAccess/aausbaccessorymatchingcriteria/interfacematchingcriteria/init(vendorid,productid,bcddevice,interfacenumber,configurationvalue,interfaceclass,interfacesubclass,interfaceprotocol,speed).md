@@ -1,7 +1,8 @@
 # init(vendorID:productID:bcdDevice:interfaceNumber:configurationValue:interfaceClass:interfaceSubClass:interfaceProtocol:speed:)
 
 **Framework**: Accessory Access  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new matching criteria structure with the provided values.
 

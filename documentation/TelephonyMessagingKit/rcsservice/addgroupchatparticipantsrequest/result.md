@@ -1,7 +1,8 @@
 # RCSService.AddGroupChatParticipantsRequest.Result
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Structure representing the result of a request to add participants to a group chat.
 
@@ -17,14 +18,14 @@ struct Result
 ## Topics
 
 ### Accessing result properties
-- [let added: [RCSHandle.URI]](rcsservice/addgroupchatparticipantsrequest/result/added.md)
+- [let added: [RCSHandle.URI]](./result/added.md)
   Participants that were added by this operation.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

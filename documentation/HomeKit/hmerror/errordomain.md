@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 8.0+
@@ -19,7 +20,8 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [let HMErrorDomain: String](hmerrordomain.md)
+### Obtaining error information
+- [let HMErrorDomain: String](../hmerrordomain.md)
   A string that identifies the HomeKit error domain.
 
 

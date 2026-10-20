@@ -1,7 +1,8 @@
 # authorizationRef()
 
 **Framework**: Security Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the authorization reference for this object.
 
@@ -14,7 +15,11 @@ Returns the authorization reference for this object.
 func authorizationRef() -> AuthorizationRef!
 ```
 
-#### Return Value
+```objc
+- (AuthorizationRef) authorizationRef;
+```
+
+#### Return value
 
 The authorization reference.
 
@@ -22,7 +27,7 @@ The authorization reference.
 
 You can use the authorization reference in calls to Authorization Services functions.
 
-For additional information see [`Authorization Services`](https://developer.apple.com/documentation/security/authorization-services).
+For additional information see [Authorization Services](../../Security/authorization-services.md).
 
 
 ---

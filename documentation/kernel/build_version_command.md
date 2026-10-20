@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct build_version_command {
     ...
 };
@@ -17,12 +17,12 @@ struct build_version_command {
 ## Topics
 
 ### Instance Properties
-- [cmd](build_version_command/2870239-cmd.md)
-- [cmdsize](build_version_command/2870235-cmdsize.md)
-- [minos](build_version_command/2870231-minos.md)
-- [ntools](build_version_command/2870230-ntools.md)
-- [platform](build_version_command/2870221-platform.md)
-- [sdk](build_version_command/2870238-sdk.md)
+- [cmd](./build_version_command/api-2870239-cmd.md)
+- [cmdsize](./build_version_command/api-2870235-cmdsize.md)
+- [minos](./build_version_command/api-2870231-minos.md)
+- [ntools](./build_version_command/api-2870230-ntools.md)
+- [platform](./build_version_command/api-2870221-platform.md)
+- [sdk](./build_version_command/api-2870238-sdk.md)
 
 
 ---

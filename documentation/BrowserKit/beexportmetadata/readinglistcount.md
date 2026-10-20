@@ -1,7 +1,8 @@
 # readingListCount
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A count of reading list items available for export.
 
@@ -15,13 +16,18 @@ A count of reading list items available for export.
 var readingListCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger readingListCount;
+```
+
 ## See Also
 
-- [var bookmarksCount: Int](beexportmetadata/bookmarkscount.md)
+### Accessing data counts
+- [var bookmarksCount: Int](./bookmarkscount.md)
   A count of bookmarks available for export.
-- [var extensionsCount: Int](beexportmetadata/extensionscount.md)
+- [var extensionsCount: Int](./extensionscount.md)
   A count of extensions available for export.
-- [var historyCount: Int](beexportmetadata/historycount.md)
+- [var historyCount: Int](./historycount.md)
   A count of history items available for export.
 
 

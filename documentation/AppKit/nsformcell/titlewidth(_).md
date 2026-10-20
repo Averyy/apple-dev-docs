@@ -1,17 +1,22 @@
 # titleWidth(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the width of the title field constrained to the specified size.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func titleWidth(_ size: NSSize) -> CGFloat
+```
+
+```objc
+- (CGFloat) titleWidth:(NSSize) size;
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ The width of the title field, measured in points in the user coordinate space.
 
 #### Discussion
 
-If you set the width using [`titleWidth`](nsformcell/titlewidth.md), this method returns the value you set; otherwise, the Application Kit calculates the width, constraining the field size to the specified value.
+If you set the width using [`titleWidth`](./titlewidth.md), this method returns the value you set; otherwise, the Application Kit calculates the width, constraining the field size to the specified value.
 
 ## Parameters
 
@@ -28,7 +33,8 @@ If you set the width using [`titleWidth`](nsformcell/titlewidth.md), this method
 
 ## See Also
 
-- [var titleWidth: CGFloat](nsformcell/titlewidth.md)
+### Related Documentation
+- [var titleWidth: CGFloat](./titlewidth.md)
   The width of the title field.
 
 

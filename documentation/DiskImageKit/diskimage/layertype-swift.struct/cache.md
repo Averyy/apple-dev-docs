@@ -1,7 +1,8 @@
 # cache
 
 **Framework**: DiskImageKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A cache layer.
 

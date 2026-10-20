@@ -1,14 +1,15 @@
 # upl_page_present
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 boolean_t upl_page_present(upl_page_info_t *upl, int index);
 ```
 

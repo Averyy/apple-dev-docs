@@ -1,14 +1,15 @@
 # kBluetoothSDPAttributeIdentifierSupportedFunctions
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPAttributeIdentifierSupportedFunctions = 0x0312
 ```
 

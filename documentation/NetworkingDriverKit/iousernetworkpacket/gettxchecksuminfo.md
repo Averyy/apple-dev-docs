@@ -1,14 +1,15 @@
 # getTxChecksumInfo
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn getTxChecksumInfo(IOUserNetworkPacketTxChecksumFlags *flags, uint16_t *start, uint16_t *stuff) const;
 ```
 

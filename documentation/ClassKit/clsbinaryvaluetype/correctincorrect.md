@@ -1,7 +1,8 @@
 # CLSBinaryValueType.correctIncorrect
 
 **Framework**: ClassKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Correct or incorrect.
 
@@ -18,13 +19,18 @@ Correct or incorrect.
 case correctIncorrect
 ```
 
+```c
+CLSBinaryValueTypeCorrectIncorrect
+```
+
 ## See Also
 
-- [CLSBinaryValueType.passFail](clsbinaryvaluetype/passfail.md)
+### Value Types
+- [CLSBinaryValueType.passFail](./passfail.md)
   Pass or fail.
-- [CLSBinaryValueType.trueFalse](clsbinaryvaluetype/truefalse.md)
+- [CLSBinaryValueType.trueFalse](./truefalse.md)
   True or false.
-- [CLSBinaryValueType.yesNo](clsbinaryvaluetype/yesno.md)
+- [CLSBinaryValueType.yesNo](./yesno.md)
   Yes or no.
 
 

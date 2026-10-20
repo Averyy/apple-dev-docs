@@ -1,14 +1,15 @@
 # fHostTime
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 UInt64 fHostTime;
 ```
 

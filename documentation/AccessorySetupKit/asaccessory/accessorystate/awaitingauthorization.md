@@ -1,7 +1,8 @@
 # ASAccessory.AccessoryState.awaitingAuthorization
 
 **Framework**: AccessorySetupKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The accessory is selected, but full authorization is still pending.
 
@@ -15,11 +16,16 @@ The accessory is selected, but full authorization is still pending.
 case awaitingAuthorization
 ```
 
+```c
+ASAccessoryStateAwaitingAuthorization
+```
+
 ## See Also
 
-- [ASAccessory.AccessoryState.unauthorized](asaccessory/accessorystate/unauthorized.md)
+### Accessory states
+- [ASAccessory.AccessoryState.unauthorized](./unauthorized.md)
   The accessory is invalid or unauthorized.
-- [ASAccessory.AccessoryState.authorized](asaccessory/accessorystate/authorized.md)
+- [ASAccessory.AccessoryState.authorized](./authorized.md)
   The accessory is authorized and available.
 
 

@@ -1,7 +1,8 @@
 # init(group:order:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a model sort group component.
 

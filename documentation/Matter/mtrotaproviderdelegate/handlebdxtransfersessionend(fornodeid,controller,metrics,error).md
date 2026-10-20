@@ -1,7 +1,8 @@
 # handleBDXTransferSessionEnd(forNodeID:controller:metrics:error:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notify the delegate when a BDX Session ends for some node.  The controller identifies the fabric the node is on, and the nodeID identifies the node within that fabric.
 
@@ -18,6 +19,10 @@ Notify the delegate when a BDX Session ends for some node.  The controller ident
 
 ```swift
 optional func handleBDXTransferSessionEnd(forNodeID nodeID: NSNumber, controller: MTRDeviceController, metrics: MTRMetrics, error: (any Error)?)
+```
+
+```objc
+- (void) handleBDXTransferSessionEndForNodeID:(NSNumber *) nodeID controller:(MTRDeviceController *) controller metrics:(MTRMetrics *) metrics error:(NSError *) error;
 ```
 
 

@@ -1,7 +1,8 @@
 # EnumeratedSequence.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The iterator for `EnumeratedSequence`.
 
@@ -21,6 +22,8 @@ The iterator for `EnumeratedSequence`.
 struct Iterator
 ```
 
+Available when `Base` conforms to `Sequence`.
+
 #### Overview
 
 An instance of this iterator wraps a base iterator and yields successive `Int` values, starting at zero, along with the elements of the underlying base iterator. The following example enumerates the elements of an array:
@@ -37,18 +40,18 @@ To create an instance, call `enumerated().makeIterator()` on a sequence or colle
 ## Topics
 
 ### Default Implementations
-- [IteratorProtocol Implementations](enumeratedsequence/iterator/iteratorprotocol-implementations.md)
-- [Sequence Implementations](enumeratedsequence/iterator/sequence-implementations.md)
+- [IteratorProtocol Implementations](./iterator/iteratorprotocol-implementations.md)
+- [Sequence Implementations](./iterator/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [IteratorProtocol](iteratorprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [Copyable](../copyable.md)
+- [Escapable](../escapable.md)
+- [IteratorProtocol](../iteratorprotocol.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
+- [Sequence](../sequence.md)
 
 
 ---

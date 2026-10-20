@@ -1,6 +1,7 @@
 # App Sessions
 
-**Framework**: Analytics Reports
+**Framework**: Analytics Reports  
+**Role**: Article
 
 Analyze how often people open your App Store apps, and the average session duration.
 
@@ -10,15 +11,19 @@ Use these reports to understand how often people open your app, and how long the
 
 - Territories: Worldwide
 - Platforms: iOS, iPadOS, macOS, tvOS, visionOS
-- Availability: - Daily: Every day
-- Weekly: Every Friday for the previous week (Monday to Sunday).
-- Monthly: On the fifth day of the following month.
+- Availability:
+
+  - Daily: Every day
+  - Weekly: Every Friday for the previous week (Monday to Sunday).
+  - Monthly: On the fifth day of the following month.
 - Completeness: Within five days. Weekly and monthly reports are complete by default.
 - History: On request, data is available beginning from January 1, 2024.
-- Privacy: - Includes data from users who have opted to share their data with Apple and developers. Data is provided only when events exist from at least five users for the respective report.
-- Data is available in two reports: standard and detailed. *Standard* reports include fields not easily related to uniquely identifiable user data. *Detailed* reports include all fields and also include additional privacy measures for the data, to help protect uniquely identifiable information for individuals. Download the standard report unless you need to analyze the unique fields in the detailed report. To learn more, see [`Protecting user privacy in report data`](privacy.md).
+- Privacy:
 
-The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [`Data Completeness and Corrections`](data-completeness-corrections.md).
+  - Includes data from users who have opted to share their data with Apple and developers. Data is provided only when events exist from at least five users for the respective report.
+  - Data is available in two reports: standard and detailed. *Standard* reports include fields not easily related to uniquely identifiable user data. *Detailed* reports include all fields and also include additional privacy measures for the data, to help protect uniquely identifiable information for individuals. Download the standard report unless you need to analyze the unique fields in the detailed report. To learn more, see [Protecting user privacy in report data](./privacy.md).
+
+The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
 #### Report Fields
 
@@ -60,21 +65,22 @@ The Analytics Reports framework delivers new portions of report content as insta
 
 ## See Also
 
-- [App Clip Usage](app-clip-usage.md)
+### App Usage
+- [App Clip Usage](./app-clip-usage.md)
   Analyze how users engage with your App Clips.
-- [App Crashes](app-crashes.md)
+- [App Crashes](./app-crashes.md)
   Review crashes for your App Store apps based on app version and device type.
-- [App Store Installations and Deletions](app-installs.md)
+- [App Store Installations and Deletions](./app-installs.md)
   Analyze details on the number of times users install and delete your apps.
-- [App Store Opt-in](app-store-opt-in.md)
+- [App Store Opt-in](./app-store-opt-in.md)
   Analyze the percentage of first-time app downloaders who choose to share their data with you.
-- [CarPlay App Usage](carplay-app-usage.md)
+- [CarPlay App Usage](./carplay-app-usage.md)
   Review how people use CarPlay in your app.
-- [Platform App Installs](platform-app-installs.md)
+- [Platform App Installs](./platform-app-installs.md)
   Analyze your app’s install data by date, install type, channel, device, platform version, and territory.
-- [Shortcut App Usage](shortcut-app-usage.md)
+- [Shortcut App Usage](./shortcut-app-usage.md)
   Analyze how often people use a shortcut action in your app.
-- [Shortcuts Actions Usage](shortcuts-actions-usage.md)
+- [Shortcuts Actions Usage](./shortcuts-actions-usage.md)
   Analyze how often people run shortcuts with your app’s actions.
 
 

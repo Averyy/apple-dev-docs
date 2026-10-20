@@ -1,7 +1,8 @@
 # SKTestSession.TimeRate.realTime
 
 **Framework**: StoreKit Test  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A rate of time in which the test environment runs in real time.
 
@@ -20,6 +21,10 @@ A rate of time in which the test environment runs in real time.
 case realTime
 ```
 
+```c
+SKTestTimeRateRealTime
+```
+
 #### Discussion
 
 With this time rate, subscriptions in the testing environment renew in real time. For example, a weekly subscription renews in one week.
@@ -34,15 +39,16 @@ The time rate also affects the billing grace period and the billing retry period
 
 ## See Also
 
-- [SKTestSession.TimeRate.monthlyRenewalEveryHour](sktestsession/timerate-swift.enum/monthlyrenewaleveryhour.md)
+### Scaled time rates for subscription renewals
+- [SKTestSession.TimeRate.monthlyRenewalEveryHour](./monthlyrenewaleveryhour.md)
   A rate of time in the test environment in which monthly subscriptions renew every hour.
-- [SKTestSession.TimeRate.monthlyRenewalEveryThirtyMinutes](sktestsession/timerate-swift.enum/monthlyrenewaleverythirtyminutes.md)
+- [SKTestSession.TimeRate.monthlyRenewalEveryThirtyMinutes](./monthlyrenewaleverythirtyminutes.md)
   A rate of time in the test environment in which monthly subscriptions renew every 30 minutes.
-- [SKTestSession.TimeRate.monthlyRenewalEveryFifteenMinutes](sktestsession/timerate-swift.enum/monthlyrenewaleveryfifteenminutes.md)
+- [SKTestSession.TimeRate.monthlyRenewalEveryFifteenMinutes](./monthlyrenewaleveryfifteenminutes.md)
   A rate of time in the test environment in which monthly subscriptions renew every 15 minutes.
-- [SKTestSession.TimeRate.monthlyRenewalEveryFiveMinutes](sktestsession/timerate-swift.enum/monthlyrenewaleveryfiveminutes.md)
+- [SKTestSession.TimeRate.monthlyRenewalEveryFiveMinutes](./monthlyrenewaleveryfiveminutes.md)
   A rate of time in the test environment in which monthly subscriptions renew every 5 minutes.
-- [SKTestSession.TimeRate.monthlyRenewalEveryThirtySeconds](sktestsession/timerate-swift.enum/monthlyrenewaleverythirtyseconds.md)
+- [SKTestSession.TimeRate.monthlyRenewalEveryThirtySeconds](./monthlyrenewaleverythirtyseconds.md)
   A rate of time in the test environment in which monthly subscriptions renew every 30 seconds.
 
 

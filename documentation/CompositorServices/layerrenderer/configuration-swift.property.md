@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration details for the specified layer.
 
@@ -17,13 +18,14 @@ var configuration: LayerRenderer.Configuration { get }
 
 #### Discussion
 
-Use the information in this property to set up your rendering loop. The layer ignores any modifications you make to the specified configuration data. To properly configure the layer, specify those details in the initializer for your [`CompositorLayer`](compositorlayer.md) type.
+Use the information in this property to set up your rendering loop. The layer ignores any modifications you make to the specified configuration data. To properly configure the layer, specify those details in the initializer for your [`CompositorLayer`](../compositorlayer.md) type.
 
 ## See Also
 
-- [LayerRenderer.Configuration](layerrenderer/configuration-swift.struct.md)
+### Configuring the layer renderer
+- [LayerRenderer.Configuration](./configuration-swift.struct.md)
   A type that stores the texture formats, layout information, and other details you use to configure your rendering loop code.
-- [LayerRenderer.Capabilities](layerrenderer/capabilities.md)
+- [LayerRenderer.Capabilities](./capabilities.md)
   The color formats, depth formats, and features that you can use to configure your rendering engine.
 
 

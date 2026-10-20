@@ -1,18 +1,19 @@
 # init()
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new numeric factor options structure with default properties.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [init(control: SparseControl_t, scalingMethod: SparseScaling_t, scaling: UnsafeMutableRawPointer?, pivotTolerance: Double, zeroTolerance: Double)](sparsenumericfactoroptions/init(control:scalingmethod:scaling:pivottolerance:zerotolerance:).md)
+### Creating a Numeric Factor Options Stucture
+- [init(control: SparseControl_t, scalingMethod: SparseScaling_t, scaling: UnsafeMutableRawPointer?, pivotTolerance: Double, zeroTolerance: Double)](./init%28control,scalingmethod,scaling,pivottolerance,zerotolerance%29.md)
   Returns a new numeric factor options structure with the specified properties.
 
 

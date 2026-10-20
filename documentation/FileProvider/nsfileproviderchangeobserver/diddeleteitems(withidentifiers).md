@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the observer that the specified items have been deleted.
@@ -19,19 +20,24 @@ Tells the observer that the specified items have been deleted.
 func didDeleteItems(withIdentifiers deletedItemIdentifiers: [NSFileProviderItemIdentifier])
 ```
 
+```objc
+- (void) didDeleteItemsWithIdentifiers:(NSArray<NSString *> *) deletedItemIdentifiers;
+```
+
 ## Parameters
 
 - `deletedItemIdentifiers`: An array of identifiers for the deleted items.
 
 ## See Also
 
-- [func didUpdate([any NSFileProviderItemProtocol])](nsfileproviderchangeobserver/didupdate(_:).md)
+### Observing Changes
+- [func didUpdate([any NSFileProviderItemProtocol])](./didupdate%28_%29.md)
   Tells the observer that the specified items have been updated.
-- [func finishEnumeratingChanges(upTo: NSFileProviderSyncAnchor, moreComing: Bool)](nsfileproviderchangeobserver/finishenumeratingchanges(upto:morecoming:).md)
+- [func finishEnumeratingChanges(upTo: NSFileProviderSyncAnchor, moreComing: Bool)](./finishenumeratingchanges%28upto,morecoming%29.md)
   Tells the observer that all of the changes have been enumerated up to the specified sync anchor.
-- [func finishEnumeratingWithError(any Error)](nsfileproviderchangeobserver/finishenumeratingwitherror(_:).md)
+- [func finishEnumeratingWithError(any Error)](./finishenumeratingwitherror%28_%29.md)
   Tells the observer that an error occurred during change notification.
-- [var suggestedBatchSize: Int](nsfileproviderchangeobserver/suggestedbatchsize.md)
+- [var suggestedBatchSize: Int](./suggestedbatchsize.md)
   The batch size that the system recommends.
 
 

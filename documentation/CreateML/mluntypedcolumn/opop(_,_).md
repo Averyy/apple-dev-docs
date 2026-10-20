@@ -1,7 +1,8 @@
 # ||(_:_:)
 
 **Framework**: Create ML  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Creates a column of Booleans by performing a logical OR operation on each row of two columns of Booleans.
 
@@ -30,7 +31,8 @@ A new column of Booleans if the column and value have the same Boolean/integer u
 
 ## See Also
 
-- [static func && (MLUntypedColumn, MLUntypedColumn) -> MLUntypedColumn](mluntypedcolumn/&&(_:_:).md)
+### Combining columns of booleans to generate an untyped column of booleans
+- [static func && (MLUntypedColumn, MLUntypedColumn) -> MLUntypedColumn](./ampamp%28_,_%29.md)
   Creates a column of Booleans by performing a logical AND operation on each row of two columns of Booleans.
 
 

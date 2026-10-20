@@ -1,14 +1,15 @@
 # tcp_notify_ack_id_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 typedef u_int32_t tcp_notify_ack_id_t;
 ```
 

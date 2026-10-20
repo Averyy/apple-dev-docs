@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.EmitterShape.box
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Particles emit from an axis-aligned box that is centered on the origin.
 

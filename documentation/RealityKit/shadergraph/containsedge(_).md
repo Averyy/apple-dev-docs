@@ -1,7 +1,8 @@
 # containsEdge(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the graph contains an edge equal to the given edge.
 

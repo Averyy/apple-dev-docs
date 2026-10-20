@@ -1,7 +1,8 @@
 # localizedStandardContains(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the string contains the given string, taking the current locale into account.
 

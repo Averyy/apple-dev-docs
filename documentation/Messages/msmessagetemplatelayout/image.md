@@ -1,7 +1,8 @@
 # image
 
 **Framework**: Messages  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An image used to represent the message in the transcript.
 
@@ -16,27 +17,32 @@ An image used to represent the message in the transcript.
 var image: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIImage * image;
+```
+
 #### Discussion
 
 The system crops the left and right edges of the image by 6 points, and rounds the image’s corners.
 
-The template can have either an image or a media file. If this property is set to a non-`nil` value, the [`mediaFileURL`](msmessagetemplatelayout/mediafileurl.md) property is ignored. This property defaults to `nil`.
+The template can have either an image or a media file. If this property is set to a non-`nil` value, the [`mediaFileURL`](./mediafileurl.md) property is ignored. This property defaults to `nil`.
 
 ## See Also
 
-- [var mediaFileURL: URL?](msmessagetemplatelayout/mediafileurl.md)
+### Assigning Visual Elements
+- [var mediaFileURL: URL?](./mediafileurl.md)
   A media file used to represent the message in the transcript.
-- [var imageTitle: String?](msmessagetemplatelayout/imagetitle.md)
+- [var imageTitle: String?](./imagetitle.md)
   The title for the image or media file.
-- [var imageSubtitle: String?](msmessagetemplatelayout/imagesubtitle.md)
+- [var imageSubtitle: String?](./imagesubtitle.md)
   The subtitle for the image or media file.
-- [var caption: String?](msmessagetemplatelayout/caption.md)
+- [var caption: String?](./caption.md)
   A left-aligned caption for the message bubble.
-- [var subcaption: String?](msmessagetemplatelayout/subcaption.md)
+- [var subcaption: String?](./subcaption.md)
   A left-aligned subcaption for the message bubble.
-- [var trailingCaption: String?](msmessagetemplatelayout/trailingcaption.md)
+- [var trailingCaption: String?](./trailingcaption.md)
   A right-aligned caption for the message bubble.
-- [var trailingSubcaption: String?](msmessagetemplatelayout/trailingsubcaption.md)
+- [var trailingSubcaption: String?](./trailingsubcaption.md)
   A right-aligned subcaption for the message bubble.
 
 

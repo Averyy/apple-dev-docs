@@ -1,7 +1,8 @@
 # GCExtendedGamepadValueChangedHandler
 
 **Framework**: Game Controller  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The signature for the block that the profile calls when an element’s value changes.
 
@@ -19,6 +20,10 @@ The signature for the block that the profile calls when an element’s value cha
 typealias GCExtendedGamepadValueChangedHandler = (GCExtendedGamepad, GCControllerElement) -> Void
 ```
 
+```c
+typedef void (^)(GCExtendedGamepad *, GCControllerElement *) GCExtendedGamepadValueChangedHandler;
+```
+
 ## Parameters
 
 - `gamepad`: The profile with the element value that changes.
@@ -26,7 +31,8 @@ typealias GCExtendedGamepadValueChangedHandler = (GCExtendedGamepad, GCControlle
 
 ## See Also
 
-- [var valueChangedHandler: GCExtendedGamepadValueChangedHandler?](gcextendedgamepad/valuechangedhandler.md)
+### Getting change information
+- [var valueChangedHandler: GCExtendedGamepadValueChangedHandler?](./gcextendedgamepad/valuechangedhandler.md)
   The block that the profile calls when an element’s value changes.
 
 

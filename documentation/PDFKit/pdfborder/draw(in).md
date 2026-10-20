@@ -1,7 +1,8 @@
 # draw(in:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the border.
 
@@ -15,8 +16,28 @@ Draws the border.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+func draw(in rect: CGRect)
+```
+
+*macOS*
+
 ```swift
 func draw(in rect: NSRect)
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+- (void) drawInRect:(CGRect) rect;
+```
+
+*macOS*
+
+```objc
+- (void) drawInRect:(NSRect) rect;
 ```
 
 

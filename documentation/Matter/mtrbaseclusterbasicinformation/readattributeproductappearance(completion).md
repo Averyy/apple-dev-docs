@@ -1,7 +1,8 @@
 # readAttributeProductAppearance(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeProductAppearance(completion: @escaping @Sendable (MTRBasicInformationClusterProductAppearanceStruct?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeProductAppearance() async throws -> MTRBasicInformationClusterProductAppearanceStruct
+```
+
+```objc
+- (void) readAttributeProductAppearanceWithCompletion:(void (^)(MTRBasicInformationClusterProductAppearanceStruct *value, NSError *error)) completion;
 ```
 
 

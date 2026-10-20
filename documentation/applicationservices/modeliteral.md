@@ -1,9 +1,10 @@
 # modeLiteral
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-When the speech channel is in text-processing mode, indicates that characters and digits are spoken literally (for example, “cat” is spoken as “C-A-T” and “12” is spoken as "one, two"). Use this value with [`soCharacterMode`](socharactermode.md) and [`soNumberMode`](sonumbermode.md).
+When the speech channel is in text-processing mode, indicates that characters and digits are spoken literally (for example, “cat” is spoken as “C-A-T” and “12” is spoken as "one, two"). Use this value with [`soCharacterMode`](./socharactermode.md) and [`soNumberMode`](./sonumbermode.md).
 
 **Availability**:
 - macOS 10.0+

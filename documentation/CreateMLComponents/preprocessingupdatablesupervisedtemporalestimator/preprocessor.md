@@ -1,17 +1,18 @@
 # preprocessor
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preprocessing transformer.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
+- iOS 16.0+ - Deprecated in 18.0
+- iPadOS 16.0+ - Deprecated in 18.0
+- Mac Catalyst 16.0+ - Deprecated in 18.0
+- macOS 13.0+ - Deprecated in 15.0
+- tvOS 16.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
 
 ## Declaration
 
@@ -21,7 +22,8 @@ var preprocessor: Preprocessor
 
 ## See Also
 
-- [var estimator: Estimator](preprocessingupdatablesupervisedtemporalestimator/estimator.md)
+### Getting the properties
+- [var estimator: Estimator](./estimator.md)
   The estimator.
 
 

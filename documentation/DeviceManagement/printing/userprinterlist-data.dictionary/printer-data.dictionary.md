@@ -1,7 +1,8 @@
 # Printing.UserPrinterList.Printer
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 A printer dictionary.
 
@@ -10,7 +11,7 @@ A printer dictionary.
 
 ## Declaration
 
-```swift
+```
 object Printing.UserPrinterList.Printer
 ```
 
@@ -22,6 +23,8 @@ object Printing.UserPrinterList.Printer
 - `Model` (string): The printer’s model.
 - `PPDURL` (string): The printer’s PPDURL.
 - `PrinterLocked` (boolean): If `true`, locks the printer.
+
+  **Default**: `false`
 
 
 ---

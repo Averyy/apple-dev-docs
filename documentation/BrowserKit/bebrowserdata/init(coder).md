@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes browser data from a decoder.
 
@@ -21,7 +22,8 @@ init?(coder: NSCoder)
 
 ## See Also
 
-- [init(sourceApplicationBundleIdentifier: String?, sourceApplicationLocalizedName: String?)](bebrowserdata/init(sourceapplicationbundleidentifier:sourceapplicationlocalizedname:).md)
+### Creating a representation of browser data
+- [init(sourceApplicationBundleIdentifier: String?, sourceApplicationLocalizedName: String?)](./init%28sourceapplicationbundleidentifier,sourceapplicationlocalizedname%29.md)
   Initializes browser data with the source app’s identifier and display name.
 
 

@@ -1,7 +1,8 @@
 # name
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Name exported with USDz or Reality File asset
 

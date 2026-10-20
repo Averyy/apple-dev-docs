@@ -1,7 +1,8 @@
 # Text.WritingDirectionStrategy
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The way SwiftUI infers the appropriate writing direction if no value is explicitly provided.
 
@@ -23,20 +24,20 @@ struct WritingDirectionStrategy
 ## Topics
 
 ### Type Properties
-- [static let contentBased: Text.WritingDirectionStrategy](text/writingdirectionstrategy/contentbased.md)
+- [static let contentBased: Text.WritingDirectionStrategy](./writingdirectionstrategy/contentbased.md)
   The writing direction following the language of the string that is laid out.
-- [static let `default`: Text.WritingDirectionStrategy](text/writingdirectionstrategy/default.md)
-  The default strategy is [`contentBased`](text/writingdirectionstrategy/contentbased.md).
-- [static let layoutBased: Text.WritingDirectionStrategy](text/writingdirectionstrategy/layoutbased.md)
+- [static let `default`: Text.WritingDirectionStrategy](./writingdirectionstrategy/default.md)
+  The default strategy is [`contentBased`](./writingdirectionstrategy/contentbased.md).
+- [static let layoutBased: Text.WritingDirectionStrategy](./writingdirectionstrategy/layoutbased.md)
   The writing direction following the general UI layout direction.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

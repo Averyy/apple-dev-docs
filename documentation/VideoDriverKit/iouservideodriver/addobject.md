@@ -1,7 +1,8 @@
 # AddObject
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a video object to the driver.
 
@@ -10,7 +11,7 @@ Adds a video object to the driver.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t AddObject(IOUserVideoObject *in_object);
 ```
 
@@ -28,11 +29,12 @@ All objects that need to be managed by the host needs to be added to the driver.
 
 ## See Also
 
-- [RemoveObject](iouservideodriver/removeobject.md)
+### Working with video objects
+- [RemoveObject](./removeobject.md)
   Removes a video object from the driver.
-- [IOUserVideoObject](iouservideoobject.md)
+- [IOUserVideoObject](../iouservideoobject.md)
   The base class for all video objects.
-- [GetVideoObjectForObjectID](iouservideodriver/getvideoobjectforobjectid.md)
+- [GetVideoObjectForObjectID](./getvideoobjectforobjectid.md)
   Gets the video object that corresponds to a video object identifier.
 
 

@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the next key-value pair of a dictionary object as a tuple.
 

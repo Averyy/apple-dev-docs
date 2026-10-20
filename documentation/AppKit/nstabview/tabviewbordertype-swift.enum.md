@@ -1,7 +1,8 @@
 # NSTabView.TabViewBorderType
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
@@ -12,34 +13,39 @@
 enum TabViewBorderType
 ```
 
+```c
+enum NSTabViewBorderType : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSTabView.TabViewBorderType.bezel](nstabview/tabviewbordertype-swift.enum/bezel.md)
-- [NSTabView.TabViewBorderType.line](nstabview/tabviewbordertype-swift.enum/line.md)
-- [NSTabView.TabViewBorderType.none](nstabview/tabviewbordertype-swift.enum/none.md)
+- [NSTabView.TabViewBorderType.bezel](./tabviewbordertype-swift.enum/bezel.md)
+- [NSTabView.TabViewBorderType.line](./tabviewbordertype-swift.enum/line.md)
+- [NSTabView.TabViewBorderType.none](./tabviewbordertype-swift.enum/none.md)
 ### Initializers
-- [init?(rawValue: UInt)](nstabview/tabviewbordertype-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./tabviewbordertype-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var tabViewType: NSTabView.TabType](nstabview/tabviewtype.md)
+### Configuring the Tab Attributes
+- [var tabViewType: NSTabView.TabType](./tabviewtype.md)
   The tab type to display the tabs.
-- [NSTabView.TabType](nstabview/tabtype.md)
-  These constants specify the tab view’s type as used by the [`tabViewType`](nstabview/tabviewtype.md) property.
-- [var tabPosition: NSTabView.TabPosition](nstabview/tabposition-swift.property.md)
-- [NSTabView.TabPosition](nstabview/tabposition-swift.enum.md)
-- [var tabViewBorderType: NSTabView.TabViewBorderType](nstabview/tabviewbordertype-swift.property.md)
+- [NSTabView.TabType](./tabtype.md)
+  These constants specify the tab view’s type as used by the [`tabViewType`](./tabviewtype.md) property.
+- [var tabPosition: NSTabView.TabPosition](./tabposition-swift.property.md)
+- [NSTabView.TabPosition](./tabposition-swift.enum.md)
+- [var tabViewBorderType: NSTabView.TabViewBorderType](./tabviewbordertype-swift.property.md)
 
 
 ---

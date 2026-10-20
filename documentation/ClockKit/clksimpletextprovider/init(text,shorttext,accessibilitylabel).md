@@ -1,17 +1,24 @@
 # init(text:shortText:accessibilityLabel:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a text provider with the text strings and an accessible string.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
 ```swift
 convenience init(text: String, shortText: String?, accessibilityLabel: String?)
+```
+
+```objc
++ (instancetype) textProviderWithText:(NSString *) text shortText:(NSString *) shortText accessibilityLabel:(NSString *) accessibilityLabel;
 ```
 
 #### Return Value
@@ -26,9 +33,10 @@ A text provider initialized with the specified content.
 
 ## See Also
 
-- [convenience init(text: String)](clksimpletextprovider/init(text:).md)
+### Creating a Text Provider
+- [convenience init(text: String)](./init%28text%29.md)
   Creates and returns a text provider with the specified long form text.
-- [convenience init(text: String, shortText: String?)](clksimpletextprovider/init(text:shorttext:).md)
+- [convenience init(text: String, shortText: String?)](./init%28text,shorttext%29.md)
   Creates and returns a text provider with both long and short versions of the text.
 
 

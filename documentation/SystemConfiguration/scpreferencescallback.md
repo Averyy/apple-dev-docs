@@ -1,17 +1,18 @@
 # SCPreferencesCallBack
 
 **Framework**: System Configuration  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Type of the callback function used when the preferences have been updated or applied.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,25 +20,30 @@ Type of the callback function used when the preferences have been updated or app
 typealias SCPreferencesCallBack = (SCPreferences, SCPreferencesNotification, UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(const struct __SCPreferences *, enum SCPreferencesNotification, void *) SCPreferencesCallBack;
+```
+
 ## Parameters
 
 - `prefs`: The preferences session.
-- `notificationType`: The type of notification, such as changes committed or changes applied. See [`SCPreferencesNotification`](scpreferencesnotification.md) for information about possible values.
+- `notificationType`: The type of notification, such as changes committed or changes applied. See [`SCPreferencesNotification`](./scpreferencesnotification.md) for information about possible values.
 - `info`: A C pointer to a user-specified block of data.
 
 ## Topics
 
 ### Fields
-- [prefs](1808420-prefs.md)
+- [prefs](./api-1808420-prefs.md)
   The preferences session.
-- [notificationType](1808421-notificationtype.md)
-  The type of notification, such as changes committed or changes applied. See [`SCPreferencesNotification`](scpreferencesnotification.md) for information about possible values.
+- [notificationType](./api-1808421-notificationtype.md)
+  The type of notification, such as changes committed or changes applied. See [`SCPreferencesNotification`](./scpreferencesnotification.md) for information about possible values.
 
 ## See Also
 
-- [class SCPreferences](scpreferences.md)
+### Data Types
+- [class SCPreferences](./scpreferences.md)
   The handle to an open preferences session for accessing system configuration preferences.
-- [struct SCPreferencesContext](scpreferencescontext.md)
+- [struct SCPreferencesContext](./scpreferencescontext.md)
   A structure containing user-specified data and callbacks for accessing system configuration preferences.
 
 

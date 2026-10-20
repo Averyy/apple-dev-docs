@@ -1,7 +1,8 @@
 # adjust(firstLineRect:bodyRect:lastLineRect:textOrigin:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adjusts the size and origin of the bounding rectangles during a text drag operation.
 
@@ -17,6 +18,10 @@ Adjusts the size and origin of the bounding rectangles during a text drag operat
 func adjust(firstLineRect: UnsafeMutablePointer<CGRect>, bodyRect: UnsafeMutablePointer<CGRect>, lastLineRect: UnsafeMutablePointer<CGRect>, textOrigin origin: CGPoint)
 ```
 
+```objc
+- (void) adjustFirstLineRect:(CGRect *) firstLineRect bodyRect:(CGRect *) bodyRect lastLineRect:(CGRect *) lastLineRect textOrigin:(CGPoint) origin;
+```
+
 #### Discussion
 
 This method does nothing by default. Subclasses may override this method to change the rectangle calculations; for example, in order to enlarge the rectangles by a few points. If you adjust the rectangles, the drag preview changes accordingly.
@@ -30,11 +35,12 @@ This method does nothing by default. Subclasses may override this method to chan
 
 ## See Also
 
-- [var bodyRect: CGRect](uitextdragpreviewrenderer/bodyrect.md)
+### Getting and setting bounding rectangles
+- [var bodyRect: CGRect](./bodyrect.md)
   The bounding rectangle of the text in the middle of the drag preview.
-- [var firstLineRect: CGRect](uitextdragpreviewrenderer/firstlinerect.md)
+- [var firstLineRect: CGRect](./firstlinerect.md)
   The bounding rectangle of the first line of text in the drag preview.
-- [var lastLineRect: CGRect](uitextdragpreviewrenderer/lastlinerect.md)
+- [var lastLineRect: CGRect](./lastlinerect.md)
   The bounding rectangle of the last line of text in the drag preview.
 
 

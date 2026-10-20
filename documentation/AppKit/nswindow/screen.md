@@ -1,17 +1,22 @@
 # screen
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The screen the window is on.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var screen: NSScreen? { get }
+```
+
+```objc
+@property (strong, readonly, nullable) NSScreen * screen;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ The value of this property is the screen where most of the window is on; it is `
 
 ## See Also
 
-- [var deepestScreen: NSScreen?](nswindow/deepestscreen.md)
+### Accessing Screen Information
+- [var deepestScreen: NSScreen?](./deepestscreen.md)
   The deepest screen the window is on (it may be split over several screens).
-- [var displaysWhenScreenProfileChanges: Bool](nswindow/displayswhenscreenprofilechanges.md)
+- [var displaysWhenScreenProfileChanges: Bool](./displayswhenscreenprofilechanges.md)
   A Boolean value that indicates whether the window context should be updated when the screen profile changes or when the window moves to a different screen.
 
 

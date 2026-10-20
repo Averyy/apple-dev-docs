@@ -1,7 +1,8 @@
 # BackgroundAssetVersionInternalBetaRelease.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetVersionInternalBetaRelease.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BackgroundAssetVersionInternalBetaRelease.Relationships.BackgroundAssetVersion](backgroundassetversioninternalbetarelease/relationships-data.dictionary/backgroundassetversion-data.dictionary.md)
+- [object BackgroundAssetVersionInternalBetaRelease.Relationships.BackgroundAssetVersion](./relationships-data.dictionary/backgroundassetversion-data.dictionary.md)
   The data that describes the background asset version related to a asset.
 
 ## Properties

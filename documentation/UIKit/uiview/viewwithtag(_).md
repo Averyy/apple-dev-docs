@@ -1,21 +1,26 @@
 # viewWithTag(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the view whose tag matches the specified value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func viewWithTag(_ tag: Int) -> UIView?
+```
+
+```objc
+- (UIView *) viewWithTag:(NSInteger) tag;
 ```
 
 #### Return Value
@@ -32,7 +37,8 @@ This method searches the current view and all of its subviews for the specified 
 
 ## See Also
 
-- [var tag: Int](uiview/tag.md)
+### Identifying the view at runtime
+- [var tag: Int](./tag.md)
   An integer that you can use to identify view objects in your application.
 
 

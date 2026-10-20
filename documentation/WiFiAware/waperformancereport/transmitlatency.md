@@ -1,7 +1,8 @@
 # transmitLatency
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The measured transmit latency per access category that is in use with the remote devices and that the system can measure.
 
@@ -22,7 +23,8 @@ The system only reports in-use and measurable access categories. The dictionary 
 
 ## See Also
 
-- [WAPerformanceReport.TransmitLatencyMetrics](waperformancereport/transmitlatencymetrics.md)
+### Getting the latency metrics
+- [WAPerformanceReport.TransmitLatencyMetrics](./transmitlatencymetrics.md)
   A report of the transmit latency to the specified peer.
 
 

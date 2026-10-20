@@ -1,7 +1,8 @@
 # NSPersonNameComponentKey
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 9.0+
@@ -18,9 +19,13 @@
 let NSPersonNameComponentKey: String
 ```
 
+```c
+extern NSString * const NSPersonNameComponentKey;
+```
+
 #### Discussion
 
-The value of this attribute is an [`NSString`](nsstring.md) constant identifying the personal name component represented in the attribute range. For possible values, see [`Attributed String Components`](attributed-string-components.md).
+The value of this attribute is an [`NSString`](./nsstring.md) constant identifying the personal name component represented in the attribute range. For possible values, see [Attributed String Components](./attributed-string-components.md).
 
 
 ---

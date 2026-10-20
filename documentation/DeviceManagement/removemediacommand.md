@@ -1,7 +1,8 @@
 # RemoveMediaCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to remove a previously installed book from a device.
 
@@ -12,14 +13,14 @@ The command to remove a previously installed book from a device.
 
 ## Declaration
 
-```swift
+```
 object RemoveMediaCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object RemoveMediaCommand.Command](removemediacommand/command-data.dictionary.md)
+- [object RemoveMediaCommand.Command](./removemediacommand/command-data.dictionary.md)
   The command to remove a previously installed book from a device.
 
 ## Properties
@@ -29,7 +30,8 @@ object RemoveMediaCommand
 
 ## See Also
 
-- [object RemoveMediaResponse](removemediaresponse.md)
+### Commands and responses
+- [object RemoveMediaResponse](./removemediaresponse.md)
   A response from the device after it processes the command to remove a previously installed book from a device.
 
 

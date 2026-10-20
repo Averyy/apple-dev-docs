@@ -1,7 +1,8 @@
 # updateNOC(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func updateNOC(with params: MTROperationalCredentialsClusterUpdateNOCParams, completion: @escaping @Sendable (MTROperationalCredentialsClusterNOCResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func updateNOC(with params: MTROperationalCredentialsClusterUpdateNOCParams) async throws -> MTROperationalCredentialsClusterNOCResponseParams
+```
+
+```objc
+- (void) updateNOCWithParams:(MTROperationalCredentialsClusterUpdateNOCParams *) params completion:(void (^)(MTROperationalCredentialsClusterNOCResponseParams *data, NSError *error)) completion;
 ```
 
 

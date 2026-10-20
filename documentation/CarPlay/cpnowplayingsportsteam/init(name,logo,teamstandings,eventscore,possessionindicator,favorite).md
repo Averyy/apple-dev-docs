@@ -1,7 +1,8 @@
 # init(name:logo:teamStandings:eventScore:possessionIndicator:favorite:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a sports team for display on the now playing screen.
 
@@ -14,6 +15,10 @@ Initialize a sports team for display on the now playing screen.
 
 ```swift
 init(name: String, logo: CPNowPlayingSportsTeamLogo, teamStandings: String?, eventScore: String, possessionIndicator: UIImage?, favorite: Bool)
+```
+
+```objc
+- (instancetype) initWithName:(NSString *) name logo:(CPNowPlayingSportsTeamLogo *) logo teamStandings:(NSString *) teamStandings eventScore:(NSString *) eventScore possessionIndicator:(UIImage *) possessionIndicator favorite:(BOOL) favorite;
 ```
 
 ## Parameters

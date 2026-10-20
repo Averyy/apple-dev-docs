@@ -1,7 +1,8 @@
 # attributedName
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized name of the action as an attributed string.
 
@@ -19,19 +20,24 @@ The localized name of the action as an attributed string.
 var attributedName: NSAttributedString { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSAttributedString * attributedName;
+```
+
 ## See Also
 
-- [var name: String](uiaccessibilitycustomaction/name.md)
+### Accessing the action parameters
+- [var name: String](./name.md)
   The localized name of the action.
-- [var image: UIImage?](uiaccessibilitycustomaction/image.md)
+- [var image: UIImage?](./image.md)
   An image that represents the action in assistive apps.
-- [var actionHandler: UIAccessibilityCustomAction.Handler?](uiaccessibilitycustomaction/actionhandler.md)
+- [var actionHandler: UIAccessibilityCustomAction.Handler?](./actionhandler.md)
   A handler to perform for the action.
-- [var target: AnyObject?](uiaccessibilitycustomaction/target.md)
+- [var target: AnyObject?](./target.md)
   The object that performs the action.
-- [var selector: Selector](uiaccessibilitycustomaction/selector.md)
+- [var selector: Selector](./selector.md)
   The method that performs the action.
-- [UIAccessibilityCustomAction.Handler](uiaccessibilitycustomaction/handler.md)
+- [UIAccessibilityCustomAction.Handler](./handler.md)
   A closure type that defines a handler to perform for an action.
 
 

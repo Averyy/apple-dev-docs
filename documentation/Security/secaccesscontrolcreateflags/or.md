@@ -1,7 +1,8 @@
 # or
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that at least one constraint must be satisfied.
 
@@ -18,6 +19,10 @@ Indicates that at least one constraint must be satisfied.
 
 ```swift
 static var or: SecAccessControlCreateFlags { get }
+```
+
+```c
+kSecAccessControlOr
 ```
 
 

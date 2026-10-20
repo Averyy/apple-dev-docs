@@ -1,7 +1,8 @@
 # pickerStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for pickers within this view.
 
@@ -23,17 +24,18 @@ func pickerStyle<S>(_ style: S) -> some View where S : PickerStyle
 
 ## See Also
 
-- [struct Picker](picker.md)
+### Choosing from a set of options
+- [struct Picker](../picker.md)
   A control for selecting from a set of mutually exclusive values.
-- [func horizontalRadioGroupLayout() -> some View](view/horizontalradiogrouplayout.md)
+- [func horizontalRadioGroupLayout() -> some View](./horizontalradiogrouplayout%28%29.md)
   Sets the style for radio group style pickers within this view to be horizontally positioned with the radio buttons inside the layout.
-- [func defaultWheelPickerItemHeight(CGFloat) -> some View](view/defaultwheelpickeritemheight(_:).md)
+- [func defaultWheelPickerItemHeight(CGFloat) -> some View](./defaultwheelpickeritemheight%28_%29.md)
   Sets the default wheel-style picker item height.
-- [var defaultWheelPickerItemHeight: CGFloat](environmentvalues/defaultwheelpickeritemheight.md)
+- [var defaultWheelPickerItemHeight: CGFloat](../environmentvalues/defaultwheelpickeritemheight.md)
   The default height of an item in a wheel-style picker, such as a date picker.
-- [func paletteSelectionEffect(PaletteSelectionEffect) -> some View](view/paletteselectioneffect(_:).md)
+- [func paletteSelectionEffect(PaletteSelectionEffect) -> some View](./paletteselectioneffect%28_%29.md)
   Specifies the selection effect to apply to a palette item.
-- [struct PaletteSelectionEffect](paletteselectioneffect.md)
+- [struct PaletteSelectionEffect](../paletteselectioneffect.md)
   The selection effect to apply to a palette item.
 
 

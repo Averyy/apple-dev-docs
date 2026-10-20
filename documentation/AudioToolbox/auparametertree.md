@@ -1,7 +1,8 @@
 # AUParameterTree
 
 **Framework**: Audio Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a top-level group node that contains all of an audio unit’s parameters.
 
@@ -19,52 +20,57 @@ An object that represents a top-level group node that contains all of an audio u
 class AUParameterTree
 ```
 
+```objc
+@interface AUParameterTree : AUParameterGroup
+```
+
 #### Overview
 
 An audio unit’s parameters are organized into a tree containing groups and parameters (groups may be nested).
 
-The parameter tree is KVO-compliant. An audio unit may choose to dynamically rearrange the tree; when doing so, it must issue a KVO notification on the audio unit’s [`parameterTree`](auaudiounit/parametertree.md) property.
+The parameter tree is KVO-compliant. An audio unit may choose to dynamically rearrange the tree; when doing so, it must issue a KVO notification on the audio unit’s [`parameterTree`](./auaudiounit/parametertree.md) property.
 
 ## Topics
 
 ### Obtaining Tree Parameters
-- [func parameter(withAddress: AUParameterAddress) -> AUParameter?](auparametertree/parameter(withaddress:).md)
+- [func parameter(withAddress: AUParameterAddress) -> AUParameter?](./auparametertree/parameter%28withaddress%29.md)
   Searches the tree for a parameter with a specific address.
-- [func parameter(withID: AudioUnitParameterID, scope: AudioUnitScope, element: AudioUnitElement) -> AUParameter?](auparametertree/parameter(withid:scope:element:).md)
+- [func parameter(withID: AudioUnitParameterID, scope: AudioUnitScope, element: AudioUnitElement) -> AUParameter?](./auparametertree/parameter%28withid,scope,element%29.md)
   Searches the tree for a specific version 2 audio unit parameter.
 ### Audio Unit Implementations
-- [class func createParameter(withIdentifier: String, name: String, address: AUParameterAddress, min: AUValue, max: AUValue, unit: AudioUnitParameterUnit, unitName: String?, flags: AudioUnitParameterOptions, valueStrings: [String]?, dependentParameters: [NSNumber]?) -> AUParameter](auparametertree/createparameter(withidentifier:name:address:min:max:unit:unitname:flags:valuestrings:dependentparameters:).md)
+- [class func createParameter(withIdentifier: String, name: String, address: AUParameterAddress, min: AUValue, max: AUValue, unit: AudioUnitParameterUnit, unitName: String?, flags: AudioUnitParameterOptions, valueStrings: [String]?, dependentParameters: [NSNumber]?) -> AUParameter](./auparametertree/createparameter%28withidentifier,name,address,min,max,unit,unitname,flags,valuestrings,dependentparameters%29.md)
   Creates a single parameter object.
-- [class func createGroup(withIdentifier: String, name: String, children: [AUParameterNode]) -> AUParameterGroup](auparametertree/creategroup(withidentifier:name:children:).md)
+- [class func createGroup(withIdentifier: String, name: String, children: [AUParameterNode]) -> AUParameterGroup](./auparametertree/creategroup%28withidentifier,name,children%29.md)
   Creates a parameter group object.
-- [class func createGroupTemplate([AUParameterNode]) -> AUParameterGroup](auparametertree/creategrouptemplate(_:).md)
+- [class func createGroupTemplate([AUParameterNode]) -> AUParameterGroup](./auparametertree/creategrouptemplate%28_%29.md)
   Creates a template group which may be used as a prototype for further group instances.
-- [class func createGroup(fromTemplate: AUParameterGroup, identifier: String, name: String, addressOffset: AUParameterAddress) -> AUParameterGroup](auparametertree/creategroup(fromtemplate:identifier:name:addressoffset:).md)
+- [class func createGroup(fromTemplate: AUParameterGroup, identifier: String, name: String, addressOffset: AUParameterAddress) -> AUParameterGroup](./auparametertree/creategroup%28fromtemplate,identifier,name,addressoffset%29.md)
   Initializes a group as a copied instance of a template group.
-- [class func createTree(withChildren: [AUParameterNode]) -> AUParameterTree](auparametertree/createtree(withchildren:).md)
+- [class func createTree(withChildren: [AUParameterNode]) -> AUParameterTree](./auparametertree/createtree%28withchildren%29.md)
   Creates a parameter tree object.
 
 ## Relationships
 
 ### Inherits From
-- [AUParameterGroup](auparametergroup.md)
+- [AUParameterGroup](./auparametergroup.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class AUParameter](auparameter.md)
+### Parameters
+- [class AUParameter](./auparameter.md)
   An object that represents a single audio unit parameter.
-- [class AUParameterGroup](auparametergroup.md)
+- [class AUParameterGroup](./auparametergroup.md)
   A parameter group object represents a group of related audio unit parameters.
-- [class AUParameterNode](auparameternode.md)
+- [class AUParameterNode](./auparameternode.md)
   An object that represents a node in an audio unit’s parameter tree.
 
 

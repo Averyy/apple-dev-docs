@@ -1,7 +1,8 @@
 # ErrorEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,18 +10,18 @@
 
 ## Declaration
 
-```swift
+```
 interface ErrorEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [colno](errorevent/1629774-colno.md)
-- [error](errorevent/2528122-error.md)
-- [filename](errorevent/1633168-filename.md)
-- [lineno](errorevent/1632837-lineno.md)
-- [message](errorevent/1632270-message.md)
+- [colno](./errorevent/api-1629774-colno.md)
+- [error](./errorevent/api-2528122-error.md)
+- [filename](./errorevent/api-1633168-filename.md)
+- [lineno](./errorevent/api-1632837-lineno.md)
+- [message](./errorevent/api-1632270-message.md)
 
 ## Relationships
 

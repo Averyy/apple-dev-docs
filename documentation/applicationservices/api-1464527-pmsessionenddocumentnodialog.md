@@ -1,9 +1,10 @@
 # PMSessionEndDocumentNoDialog(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
-Ends a print job started by calling the function [`PMSessionBeginCGDocumentNoDialog(_:_:_:)`](1460101-pmsessionbegincgdocumentnodialog.md) or [`PMSessionBeginDocumentNoDialog`](core_printing/1805538-pmsessionbegindocumentnodialog.md).
+Ends a print job started by calling the function [`PMSessionBeginCGDocumentNoDialog(_:_:_:)`](./api-1460101-pmsessionbegincgdocumentnodialog.md) or [PMSessionBeginDocumentNoDialog](./core_printing/api-1805538-pmsessionbegindocumentnodialog.md).
 
 **Availability**:
 - macOS 10.2+
@@ -14,9 +15,13 @@ Ends a print job started by calling the function [`PMSessionBeginCGDocumentNoDia
 func PMSessionEndDocumentNoDialog(_ printSession: PMPrintSession) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus PMSessionEndDocumentNoDialog(PMPrintSession printSession);
+```
 
-A result code. See [`Result Codes`](core_printing#1670007.md).
+#### Return Value
+
+A result code. See [Result Codes](./core_printing.md#1670007).
 
 #### Discussion
 
@@ -24,19 +29,20 @@ This function is similar to the function `PMSessionEndDocument` except that the 
 
 This function is used to end a print job, and it should be called within your application’s print loop after the call to the function `PMSessionEndPageNoDialog` and before releasing the printing session. The same printing session that is created by the function `PMCreateSession` for the Print dialog should be used for the print loop.
 
-The function `PMSessionEndDocumentNoDialog` must be called after its corresponding `Begin` function ([`PMSessionBeginCGDocumentNoDialog(_:_:_:)`](1460101-pmsessionbegincgdocumentnodialog.md) or [`PMSessionBeginDocumentNoDialog`](core_printing/1805538-pmsessionbegindocumentnodialog.md)). If the `Begin` function returns `noErr`, the function `PMSessionEndDocument` must be called, even if errors occur within the scope of the `Begin` and `End` functions. You should not call `PMSessionEndDocumentNoDialog` if the `Begin` function returns an error.
+The function `PMSessionEndDocumentNoDialog` must be called after its corresponding `Begin` function ([`PMSessionBeginCGDocumentNoDialog(_:_:_:)`](./api-1460101-pmsessionbegincgdocumentnodialog.md) or [PMSessionBeginDocumentNoDialog](./core_printing/api-1805538-pmsessionbegindocumentnodialog.md)). If the `Begin` function returns `noErr`, the function `PMSessionEndDocument` must be called, even if errors occur within the scope of the `Begin` and `End` functions. You should not call `PMSessionEndDocumentNoDialog` if the `Begin` function returns an error.
 
 ## Parameters
 
-- `printSession`: The current printing session. On return, the printing session is no longer valid; however, you must still call the function [`PMRelease(_:)`](1461402-pmrelease.md) to release the object. 
+- `printSession`: The current printing session. On return, the printing session is no longer valid; however, you must still call the function [`PMRelease(_:)`](./api-1461402-pmrelease.md) to release the object. 
 
 ## See Also
 
-- [func PMSessionBeginCGDocumentNoDialog(PMPrintSession, PMPrintSettings, PMPageFormat) -> OSStatus](1460101-pmsessionbegincgdocumentnodialog.md)
+### Print Loop Functions
+- [func PMSessionBeginCGDocumentNoDialog(PMPrintSession, PMPrintSettings, PMPageFormat) -> OSStatus](./api-1460101-pmsessionbegincgdocumentnodialog.md)
   Begins a print job that draws into a Quartz graphics context and suppresses the printing status dialog.
-- [func PMSessionBeginPageNoDialog(PMPrintSession, PMPageFormat?, UnsafePointer<PMRect>?) -> OSStatus](1463416-pmsessionbeginpagenodialog.md)
+- [func PMSessionBeginPageNoDialog(PMPrintSession, PMPageFormat?, UnsafePointer<PMRect>?) -> OSStatus](./api-1463416-pmsessionbeginpagenodialog.md)
   Starts a new page for printing in the specified printing session and suppresses the printing status dialog.
-- [func PMSessionEndPageNoDialog(PMPrintSession) -> OSStatus](1462014-pmsessionendpagenodialog.md)
+- [func PMSessionEndPageNoDialog(PMPrintSession) -> OSStatus](./api-1462014-pmsessionendpagenodialog.md)
   Indicates the end of drawing the current page for the specified printing session.
 
 

@@ -1,7 +1,8 @@
 # StatusSoftwareUpdateInstallReason
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that reports the device’s pending software update reason.
 
@@ -15,17 +16,17 @@ The status item that reports the device’s pending software update reason.
 
 ## Declaration
 
-```swift
+```
 object StatusSoftwareUpdateInstallReason
 ```
 
 ## Mentions
 
-- [Deploying software updates using declarative management](deploying-software-updates-using-declarative-management.md)
+- [Deploying software updates using declarative management](./deploying-software-updates-using-declarative-management.md)
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -36,7 +37,7 @@ object StatusSoftwareUpdateInstallReason
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS |
 | Allowed in user scope | N/A |
 
-##### Status Item Example
+##### Status item example
 
 ```json
 {
@@ -54,7 +55,7 @@ object StatusSoftwareUpdateInstallReason
 ## Topics
 
 ### Objects
-- [object StatusSoftwareUpdateInstallReasonDictionaryObject](statussoftwareupdateinstallreasondictionaryobject.md)
+- [object StatusSoftwareUpdateInstallReasonDictionaryObject](./statussoftwareupdateinstallreasondictionaryobject.md)
   Details about the reason for a pending software update.
 
 ## Properties
@@ -63,15 +64,16 @@ object StatusSoftwareUpdateInstallReason
 
 ## See Also
 
-- [object StatusSoftwareUpdateBetaEnrollment](statussoftwareupdatebetaenrollment.md)
+### Software update items
+- [object StatusSoftwareUpdateBetaEnrollment](./statussoftwareupdatebetaenrollment.md)
   The status item that reports the device’s enrolled beta program.
-- [object StatusSoftwareUpdateDeviceID](statussoftwareupdatedeviceid.md)
+- [object StatusSoftwareUpdateDeviceID](./statussoftwareupdatedeviceid.md)
   The status item that reports the device’s software update device ID.
-- [object StatusSoftwareUpdateFailureReason](statussoftwareupdatefailurereason.md)
+- [object StatusSoftwareUpdateFailureReason](./statussoftwareupdatefailurereason.md)
   The status item that reports the device’s software update failure reason.
-- [object StatusSoftwareUpdateInstallState](statussoftwareupdateinstallstate.md)
+- [object StatusSoftwareUpdateInstallState](./statussoftwareupdateinstallstate.md)
   The status item that reports the device’s software update install state.
-- [object StatusSoftwareUpdatePendingVersion](statussoftwareupdatependingversion.md)
+- [object StatusSoftwareUpdatePendingVersion](./statussoftwareupdatependingversion.md)
   The status item that reports the device’s pending software update version.
 
 

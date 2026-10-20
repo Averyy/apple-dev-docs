@@ -1,7 +1,8 @@
 # NSStagedMigrationManager
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that handles the migration event loop and provides access to the migrating persistent store.
 
@@ -20,11 +21,15 @@ An object that handles the migration event loop and provides access to the migra
 class NSStagedMigrationManager
 ```
 
+```objc
+@interface NSStagedMigrationManager : NSObject
+```
+
 #### Overview
 
-A staged migration manager contains the individual stages of a migration and applies those stages, in the order you specify, when that migration runs. The manager handles the migration’s event loop, and provides access to the migrating store through its [`container`](nsstagedmigrationmanager/container.md) property. Stages can be custom, which enables you to perform tasks immediately before and after a stage runs, or lightweight, which supplements custom stages with those that Core Data can invoke automatically because they’re already compatible with lightweight migrations.
+A staged migration manager contains the individual stages of a migration and applies those stages, in the order you specify, when that migration runs. The manager handles the migration’s event loop, and provides access to the migrating store through its [`container`](./nsstagedmigrationmanager/container.md) property. Stages can be custom, which enables you to perform tasks immediately before and after a stage runs, or lightweight, which supplements custom stages with those that Core Data can invoke automatically because they’re already compatible with lightweight migrations.
 
-Use [`NSPersistentStoreStagedMigrationManagerOptionKey`](nspersistentstorestagedmigrationmanageroptionkey.md) to include an instance of [`NSStagedMigrationManager`](nsstagedmigrationmanager.md) in your persistent store’s options dictionary, as the following example shows:
+Use [`NSPersistentStoreStagedMigrationManagerOptionKey`](./nspersistentstorestagedmigrationmanageroptionkey.md) to include an instance of [`NSStagedMigrationManager`](./nsstagedmigrationmanager.md) in your persistent store’s options dictionary, as the following example shows:
 
 ```swift
 // Create a migration manager with the required stages.
@@ -49,30 +54,31 @@ let store = coordinator.addPersistentStore(
 ## Topics
 
 ### Creating a migration manager
-- [convenience init([NSMigrationStage])](nsstagedmigrationmanager/init(_:).md)
+- [convenience init([NSMigrationStage])](./nsstagedmigrationmanager/init%28_%29.md)
   Creates a migration manager with the specified stages.
 ### Accessing the persistent container
-- [var container: NSPersistentContainer?](nsstagedmigrationmanager/container.md)
+- [var container: NSPersistentContainer?](./nsstagedmigrationmanager/container.md)
   The container that provides access to the migrating persistent store.
 ### Accessing the stages
-- [var stages: [NSMigrationStage]](nsstagedmigrationmanager/stages.md)
+- [var stages: [NSMigrationStage]](./nsstagedmigrationmanager/stages.md)
   The migration stages.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [let NSPersistentStoreStagedMigrationManagerOptionKey: String](nspersistentstorestagedmigrationmanageroptionkey.md)
+### Migration staging
+- [let NSPersistentStoreStagedMigrationManagerOptionKey: String](./nspersistentstorestagedmigrationmanageroptionkey.md)
   The key for specifying your staged migration manager.
 
 

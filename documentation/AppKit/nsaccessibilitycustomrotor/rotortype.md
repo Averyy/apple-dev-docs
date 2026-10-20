@@ -1,7 +1,8 @@
 # NSAccessibilityCustomRotor.RotorType
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the type of content that the rotor represents.
 
@@ -14,69 +15,74 @@ Constants that indicate the type of content that the rotor represents.
 enum RotorType
 ```
 
+```c
+enum NSAccessibilityCustomRotorType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSAccessibilityCustomRotor.RotorType.custom](nsaccessibilitycustomrotor/rotortype/custom.md)
+- [NSAccessibilityCustomRotor.RotorType.custom](./rotortype/custom.md)
   A rotor with a custom label.
-- [NSAccessibilityCustomRotor.RotorType.any](nsaccessibilitycustomrotor/rotortype/any.md)
+- [NSAccessibilityCustomRotor.RotorType.any](./rotortype/any.md)
   Any type of item.
-- [NSAccessibilityCustomRotor.RotorType.link](nsaccessibilitycustomrotor/rotortype/link.md)
+- [NSAccessibilityCustomRotor.RotorType.link](./rotortype/link.md)
   A link.
-- [NSAccessibilityCustomRotor.RotorType.visitedLink](nsaccessibilitycustomrotor/rotortype/visitedlink.md)
+- [NSAccessibilityCustomRotor.RotorType.visitedLink](./rotortype/visitedlink.md)
   A visited link.
-- [NSAccessibilityCustomRotor.RotorType.heading](nsaccessibilitycustomrotor/rotortype/heading.md)
+- [NSAccessibilityCustomRotor.RotorType.heading](./rotortype/heading.md)
   Any heading-level text.
-- [NSAccessibilityCustomRotor.RotorType.headingLevel1](nsaccessibilitycustomrotor/rotortype/headinglevel1.md)
+- [NSAccessibilityCustomRotor.RotorType.headingLevel1](./rotortype/headinglevel1.md)
   A first-level heading.
-- [NSAccessibilityCustomRotor.RotorType.headingLevel2](nsaccessibilitycustomrotor/rotortype/headinglevel2.md)
+- [NSAccessibilityCustomRotor.RotorType.headingLevel2](./rotortype/headinglevel2.md)
   A second-level heading.
-- [NSAccessibilityCustomRotor.RotorType.headingLevel3](nsaccessibilitycustomrotor/rotortype/headinglevel3.md)
+- [NSAccessibilityCustomRotor.RotorType.headingLevel3](./rotortype/headinglevel3.md)
   A third-level heading.
-- [NSAccessibilityCustomRotor.RotorType.headingLevel4](nsaccessibilitycustomrotor/rotortype/headinglevel4.md)
+- [NSAccessibilityCustomRotor.RotorType.headingLevel4](./rotortype/headinglevel4.md)
   A fourth-level heading.
-- [NSAccessibilityCustomRotor.RotorType.headingLevel5](nsaccessibilitycustomrotor/rotortype/headinglevel5.md)
+- [NSAccessibilityCustomRotor.RotorType.headingLevel5](./rotortype/headinglevel5.md)
   A fifth-level heading.
-- [NSAccessibilityCustomRotor.RotorType.headingLevel6](nsaccessibilitycustomrotor/rotortype/headinglevel6.md)
+- [NSAccessibilityCustomRotor.RotorType.headingLevel6](./rotortype/headinglevel6.md)
   A sixth-level heading.
-- [NSAccessibilityCustomRotor.RotorType.boldText](nsaccessibilitycustomrotor/rotortype/boldtext.md)
+- [NSAccessibilityCustomRotor.RotorType.boldText](./rotortype/boldtext.md)
   Any bold text.
-- [NSAccessibilityCustomRotor.RotorType.italicText](nsaccessibilitycustomrotor/rotortype/italictext.md)
+- [NSAccessibilityCustomRotor.RotorType.italicText](./rotortype/italictext.md)
   Any italicized text.
-- [NSAccessibilityCustomRotor.RotorType.underlinedText](nsaccessibilitycustomrotor/rotortype/underlinedtext.md)
+- [NSAccessibilityCustomRotor.RotorType.underlinedText](./rotortype/underlinedtext.md)
   Any underlined text.
-- [NSAccessibilityCustomRotor.RotorType.misspelledWord](nsaccessibilitycustomrotor/rotortype/misspelledword.md)
+- [NSAccessibilityCustomRotor.RotorType.misspelledWord](./rotortype/misspelledword.md)
   A misspelled word.
-- [NSAccessibilityCustomRotor.RotorType.annotation](nsaccessibilitycustomrotor/rotortype/annotation.md)
+- [NSAccessibilityCustomRotor.RotorType.annotation](./rotortype/annotation.md)
   An annotation.
-- [NSAccessibilityCustomRotor.RotorType.image](nsaccessibilitycustomrotor/rotortype/image.md)
+- [NSAccessibilityCustomRotor.RotorType.image](./rotortype/image.md)
   An image.
-- [NSAccessibilityCustomRotor.RotorType.textField](nsaccessibilitycustomrotor/rotortype/textfield.md)
+- [NSAccessibilityCustomRotor.RotorType.textField](./rotortype/textfield.md)
   A text field.
-- [NSAccessibilityCustomRotor.RotorType.table](nsaccessibilitycustomrotor/rotortype/table.md)
+- [NSAccessibilityCustomRotor.RotorType.table](./rotortype/table.md)
   A table of information.
-- [NSAccessibilityCustomRotor.RotorType.list](nsaccessibilitycustomrotor/rotortype/list.md)
+- [NSAccessibilityCustomRotor.RotorType.list](./rotortype/list.md)
   A list of items.
-- [NSAccessibilityCustomRotor.RotorType.landmark](nsaccessibilitycustomrotor/rotortype/landmark.md)
+- [NSAccessibilityCustomRotor.RotorType.landmark](./rotortype/landmark.md)
   A landmark.
 ### Enumeration Cases
-- [NSAccessibilityCustomRotor.RotorType.audiograph](nsaccessibilitycustomrotor/rotortype/audiograph.md)
+- [NSAccessibilityCustomRotor.RotorType.audiograph](./rotortype/audiograph.md)
 ### Initializers
-- [init?(rawValue: Int)](nsaccessibilitycustomrotor/rotortype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./rotortype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var type: NSAccessibilityCustomRotor.RotorType](nsaccessibilitycustomrotor/type.md)
+### Getting the Rotor Type
+- [var type: NSAccessibilityCustomRotor.RotorType](./type.md)
   The type of content that the rotor represents.
 
 

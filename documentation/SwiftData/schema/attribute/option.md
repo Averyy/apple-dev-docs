@@ -1,7 +1,8 @@
 # Schema.Attribute.Option
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -22,36 +23,36 @@ struct Option
 ## Topics
 
 ### Accessing property options
-- [static var allowsCloudEncryption: Schema.Attribute.Option](schema/attribute/option/allowscloudencryption.md)
+- [static var allowsCloudEncryption: Schema.Attribute.Option](./option/allowscloudencryption.md)
   Stores the property’s value in an encrypted form.
-- [static var externalStorage: Schema.Attribute.Option](schema/attribute/option/externalstorage.md)
+- [static var externalStorage: Schema.Attribute.Option](./option/externalstorage.md)
   Stores the property’s value as binary data adjacent to the model storage.
-- [static var preserveValueOnDeletion: Schema.Attribute.Option](schema/attribute/option/preservevalueondeletion.md)
+- [static var preserveValueOnDeletion: Schema.Attribute.Option](./option/preservevalueondeletion.md)
   Preserves the property’s value in the persistent history when the context deletes the owning model.
-- [static var spotlight: Schema.Attribute.Option](schema/attribute/option/spotlight.md)
+- [static var spotlight: Schema.Attribute.Option](./option/spotlight.md)
   Indexes the property’s value so it can appear in Spotlight search results.
-- [static var unique: Schema.Attribute.Option](schema/attribute/option/unique.md)
+- [static var unique: Schema.Attribute.Option](./option/unique.md)
   Ensures the property’s value is unique across all models of the same type.
-- [static func transformable(by: ValueTransformer.Type) -> Schema.Attribute.Option](schema/attribute/option/transformable(by:)-9d4xh.md)
+- [static func transformable(by: ValueTransformer.Type) -> Schema.Attribute.Option](./option/transformable%28by%29-9d4xh.md)
   Transforms the property’s value between an in-memory form and a persisted form.
-- [static func transformable(by: String) -> Schema.Attribute.Option](schema/attribute/option/transformable(by:)-lunz.md)
-- [static var ephemeral: Schema.Attribute.Option](schema/attribute/option/ephemeral.md)
+- [static func transformable(by: String) -> Schema.Attribute.Option](./option/transformable%28by%29-lunz.md)
+- [static var ephemeral: Schema.Attribute.Option](./option/ephemeral.md)
   Track changes to this property but do not persist
-- [static var codable: Schema.Attribute.Option](schema/attribute/option/codable.md)
+- [static var codable: Schema.Attribute.Option](./option/codable.md)
   Uses the property’s codable representation to store the property.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

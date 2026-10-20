@@ -14,59 +14,60 @@ Clicking a button or lockup is one of the most common ways for a user activate a
 </button
 ```
 
-##### Subelements of Button
+##### Subelements of button
 
-- [`text`](text.md)
+- [text](./text.md)
 
-##### Elements That Use Button
+##### Elements that Use button
 
-- [`alertTemplate`](alerttemplate.md)
-- [`banner`](banner.md)
-- [`descriptiveAlertTemplate`](descriptivealerttemplate.md)
-- [`footer`](footer.md)
-- [`row`](row.md)
-- [`separator`](separator.md)
+- [alertTemplate](./alerttemplate.md)
+- [banner](./banner.md)
+- [descriptiveAlertTemplate](./descriptivealerttemplate.md)
+- [footer](./footer.md)
+- [row](./row.md)
+- [separator](./separator.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [height](element-shaping-height.md)
+- [height](./element-shaping-height.md)
   Specifies the height of an element.
-- [margin](margin.md)
+- [margin](./margin.md)
   Specifies the spacing around an element.
-- [max-height](element-shaping-max-height.md)
+- [max-height](./element-shaping-max-height.md)
   Specifies the maximum height for an element.
-- [max-width](element-shaping-max-width.md)
+- [max-width](./element-shaping-max-width.md)
   Specifies the maximum width for an element.
-- [min-height](element-shaping-min-height.md)
+- [min-height](./element-shaping-min-height.md)
   Specifies the minimum height for an element.
-- [min-width](element-shaping-min-width.md)
+- [min-width](./element-shaping-min-width.md)
   Specifies the minimum width for an element.
-- [padding](padding.md)
+- [padding](./padding.md)
   Specifies the padding between the border and contents of an element.
-- [width](element-shaping-width.md)
+- [width](./element-shaping-width.md)
   Specifies how wide an element is.
 ### Valid TVML Attributes
-- [autoHighlight](autohighlight.md)
+- [autoHighlight](./autohighlight.md)
   Specifies that the element should initially be in focus.
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [buttonLockup](buttonlockup.md)
+### Lockup Elements
+- [buttonLockup](./buttonlockup.md)
   Creates a button that can also have a badge associated with it.
-- [listItemLockup](listitemlockup.md)
+- [listItemLockup](./listitemlockup.md)
   Contains a new list item.
-- [lockup](lockup.md)
+- [lockup](./lockup.md)
   Contains several elements that are treated as a single element.
-- [monogramLockup](monogramlockup.md)
+- [monogramLockup](./monogramlockup.md)
   Creates a monogram using a person’s image or initials.
-- [overlay](overlay.md)
+- [overlay](./overlay.md)
   Displays elements on top of other elements.
 
 

@@ -1,7 +1,8 @@
 # fixedSpace()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a new group that contains a single zero-width fixed space item inside it.
 
@@ -14,6 +15,10 @@ Returns a new group that contains a single zero-width fixed space item inside it
 
 ```swift
 class func fixedSpace() -> UIBarButtonItemGroup
+```
+
+```objc
++ (UIBarButtonItemGroup *) groupWithFixedSpace;
 ```
 
 #### Discussion

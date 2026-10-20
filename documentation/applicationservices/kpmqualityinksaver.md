@@ -1,7 +1,8 @@
 # kPMQualityInkSaver
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies to use a mode that saves ink, even if it slows printing.
 

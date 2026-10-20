@@ -1,18 +1,23 @@
 # stat
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file’s metadata, such as file size, user and group identifiers, and access and modification dates.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var stat: stat
+```
+
+```c
+struct stat stat;
 ```
 
 #### Discussion
@@ -21,9 +26,10 @@ The returned structure’s information is equivalent to that returned by the `st
 
 ## See Also
 
-- [var path: es_string_token_t](es_file_t/path.md)
+### Inspecting File Properties
+- [var path: es_string_token_t](./path.md)
   The file’s path.
-- [var path_truncated: Bool](es_file_t/path_truncated.md)
+- [var path_truncated: Bool](./path_truncated.md)
   A Boolean value that indicates whether Endpoint Security truncated the path string.
 
 

@@ -1,7 +1,8 @@
 # authenticate(using:callback:preferredBrowserSession:additionalHeaderFields:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins a web authentication session.
 
@@ -29,14 +30,15 @@ This initializer throws an error if `additionalHeaderFields` includes a “forbi
 
 - `url`: A URL beginning with HTTP or HTTPS that points to the authentication webpage.
 - `callback`: An object that describes when the session calls its completion handler.
-- `preferredBrowserSession`: The preferred data-sharing behavior of the browser session. For more information, see [`WebAuthenticationSession.BrowserSession`](webauthenticationsession/browsersession.md).
+- `preferredBrowserSession`: The preferred data-sharing behavior of the browser session. For more information, see [`WebAuthenticationSession.BrowserSession`](./browsersession.md).
 - `additionalHeaderFields`: A dictionary containing additional header fields to send when loading the initial URL.
 
 ## See Also
 
-- [WebAuthenticationSession.BrowserSession](webauthenticationsession/browsersession.md)
+### Authenticating a session
+- [WebAuthenticationSession.BrowserSession](./browsersession.md)
   Describes the preferred browser session behavior.
-- [ASWebAuthenticationSession.Callback](aswebauthenticationsession/callback.md)
+- [ASWebAuthenticationSession.Callback](../aswebauthenticationsession/callback.md)
   An object for evaluating navigation events in an authentication session.
 
 

@@ -1,7 +1,8 @@
 # scope
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scope that owns this state. For example, `ComputeNodeGraph/Scope/element` stores a value per particle, while `ComputeNodeGraph/Scope/emitter` stores a single value used by the emission stage.
 
@@ -12,7 +13,7 @@ The scope that owns this state. For example, `ComputeNodeGraph/Scope/element` st
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

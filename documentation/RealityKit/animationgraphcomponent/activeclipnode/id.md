@@ -1,7 +1,8 @@
 # id
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the node within the compiled graph.
 
@@ -21,9 +22,10 @@ let id: Int
 
 ## See Also
 
-- [var currentCycle: Float](animationgraphcomponent/activeclipnode/currentcycle.md)
+### Inspecting playback state
+- [var currentCycle: Float](./currentcycle.md)
   The current playback cycle of the clip.
-- [var wasReset: Bool](animationgraphcomponent/activeclipnode/wasreset.md)
+- [var wasReset: Bool](./wasreset.md)
   A Boolean value that indicates whether the node was reset during the last evaluation tick.
 
 

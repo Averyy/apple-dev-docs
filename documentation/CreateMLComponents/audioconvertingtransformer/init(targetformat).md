@@ -1,7 +1,8 @@
 # init(targetFormat:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio conversion transformer to convert the format of the buffers.
 

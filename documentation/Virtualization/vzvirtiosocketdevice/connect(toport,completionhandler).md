@@ -1,7 +1,8 @@
 # connect(toPort:completionHandler:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initiates a connection to the specified port of the guest operating system.
 
@@ -18,16 +19,19 @@ func connect(toPort port: UInt32, completionHandler: @escaping (Result<VZVirtioS
 
 This method initiates the connection asynchronously, and executes the completion handler when the results are available. If the guest operating system doesn’t listen for connections to the specifed port, this method does nothing.
 
-For a successful connection, this method sets the [`sourcePort`](vzvirtiosocketconnection/sourceport.md) property of the resulting [`VZVirtioSocketConnection`](vzvirtiosocketconnection.md) object to a random port number.
+For a successful connection, this method sets the [`sourcePort`](../vzvirtiosocketconnection/sourceport.md) property of the resulting [`VZVirtioSocketConnection`](../vzvirtiosocketconnection.md) object to a random port number.
 
 ## Parameters
 
 - `port`: The destination port number in the guest operating system.
-- `completionHandler`: The block to execute with the results of the connection attempt. This block has no return value and takes the following parameter: - **result**: The result of the connection attempt. On a successful attempt, this value is the [`VZVirtioSocketConnection`](vzvirtiosocketconnection.md) object to use for communications. On an unsuccessful attempt, this value is the error object that indicates why the connection failed.
+- `completionHandler`: The block to execute with the results of the connection attempt. This block has no return value and takes the following parameter:
+
+  - **result**: The result of the connection attempt. On a successful attempt, this value is the [`VZVirtioSocketConnection`](../vzvirtiosocketconnection.md) object to use for communications. On an unsuccessful attempt, this value is the error object that indicates why the connection failed.
 
 ## See Also
 
-- [func connect(toPort: UInt32) async throws -> VZVirtioSocketConnection](vzvirtiosocketdevice/connect(toport:).md)
+### Connecting to Guest System Ports
+- [func connect(toPort: UInt32) async throws -> VZVirtioSocketConnection](./connect%28toport%29.md)
   Initiates a connection to the specified port of the guest operating system.
 
 

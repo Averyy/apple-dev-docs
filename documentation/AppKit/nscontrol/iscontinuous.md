@@ -1,12 +1,13 @@
 # isContinuous
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the receiver’s cell sends its action message continuously to its target during mouse tracking.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ A Boolean value indicating whether the receiver’s cell sends its action messag
 var isContinuous: Bool { get set }
 ```
 
+```objc
+@property (getter=isContinuous) BOOL continuous;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the action message is sent continuously; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) if the action message is sent continuously; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var action: Selector?](nscontrol/action.md)
+### Implementing the Target-Action Mechanism
+- [var action: Selector?](./action.md)
   The default action-message selector associated with the control.
-- [var target: AnyObject?](nscontrol/target.md)
+- [var target: AnyObject?](./target.md)
   The target object that receives action messages from the cell.
-- [func sendAction(Selector?, to: Any?) -> Bool](nscontrol/sendaction(_:to:).md)
+- [func sendAction(Selector?, to: Any?) -> Bool](./sendaction%28_,to%29.md)
   Causes the specified action to be sent to the target.
-- [func sendAction(on: NSEvent.EventTypeMask) -> Int](nscontrol/sendaction(on:).md)
+- [func sendAction(on: NSEvent.EventTypeMask) -> Int](./sendaction%28on%29.md)
   Sets the conditions on which the receiver sends action messages to its target.
 
 

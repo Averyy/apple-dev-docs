@@ -1,7 +1,8 @@
 # minimum(_:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces values in the noise field by choosing the lesser of each value and a corresponding value in the specified noise object.
 
@@ -19,11 +20,15 @@ Replaces values in the noise field by choosing the lesser of each value and a co
 func minimum(_ noise: GKNoise)
 ```
 
+```objc
+- (void) minimumWithNoise:(GKNoise *) noise;
+```
+
 #### Discussion
 
 In a grayscale texture, higher values are brighter and lower values are darker.
 
-![None](/images/com.apple.gameplaykit/media-2556409@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.gameplaykit/media-2556409@2x.png)
 
 ## Parameters
 
@@ -31,13 +36,14 @@ In a grayscale texture, higher values are brighter and lower values are darker.
 
 ## See Also
 
-- [func add(GKNoise)](gknoise/add(_:).md)
+### Applying Operations that Combine Noise
+- [func add(GKNoise)](./add%28_%29.md)
   Replaces values in the noise field by adding them to values from the specified noise object.
-- [func multiply(GKNoise)](gknoise/multiply(_:).md)
+- [func multiply(GKNoise)](./multiply%28_%29.md)
   Replaces values in the noise field by multiplying them with values from the specified noise object.
-- [func raiseToPower(GKNoise)](gknoise/raisetopower(_:)-zm5g.md)
+- [func raiseToPower(GKNoise)](./raisetopower%28_%29-zm5g.md)
   Replaces values in the noise field by exponentiating them with values from the specified noise object.
-- [func maximum(GKNoise)](gknoise/maximum(_:).md)
+- [func maximum(GKNoise)](./maximum%28_%29.md)
   Replaces values in the noise field by choosing the lesser of each value and a corresponding value in the specified noise object.
 
 

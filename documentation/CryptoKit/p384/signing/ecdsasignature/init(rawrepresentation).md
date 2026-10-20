@@ -1,7 +1,8 @@
 # init(rawRepresentation:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a P-384 digital signature from a raw representation.
 
@@ -26,7 +27,8 @@ init<D>(rawRepresentation: D) throws where D : DataProtocol
 
 ## See Also
 
-- [init<D>(derRepresentation: D) throws](p384/signing/ecdsasignature/init(derrepresentation:).md)
+### Creating a signature
+- [init<D>(derRepresentation: D) throws](./init%28derrepresentation%29.md)
   Creates a P-384 digital signature from a Distinguished Encoding Rules (DER) encoded representation.
 
 

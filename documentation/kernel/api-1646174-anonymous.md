@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDVDKeyClassCSS_CPPM_CPRM](1646174-anonymous/kdvdkeyclasscss_cppm_cprm.md)
-- [kDVDKeyClassRSSA](1646174-anonymous/kdvdkeyclassrssa.md)
+- [kDVDKeyClassCSS_CPPM_CPRM](./api-1646174-anonymous/kdvdkeyclasscss_cppm_cprm.md)
+- [kDVDKeyClassRSSA](./api-1646174-anonymous/kdvdkeyclassrssa.md)
 
 
 ---

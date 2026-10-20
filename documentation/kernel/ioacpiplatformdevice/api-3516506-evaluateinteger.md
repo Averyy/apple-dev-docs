@@ -1,14 +1,15 @@
 # evaluateInteger
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn evaluateInteger(const OSSymbol *objectName, UInt64 *resultInt64, OSObject *params[], IOItemCount paramCount, IOOptionBits options);
 ```
 

@@ -1,7 +1,8 @@
 # orderIdentifier
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique order identifier scoped to your order type identifier.
 
@@ -11,7 +12,7 @@ A unique order identifier scoped to your order type identifier.
 
 ## Declaration
 
-```swift
+```
 required DOMString orderIdentifier;
 ```
 
@@ -21,11 +22,12 @@ In combination with the order type identifier, this uniquely identifies an order
 
 ## See Also
 
-- [authenticationToken](applepaypaymentorderdetails/authenticationtoken.md)
+### Providing order information
+- [authenticationToken](./authenticationtoken.md)
   The authentication token supplied to your web service.
-- [orderTypeIdentifier](applepaypaymentorderdetails/ordertypeidentifier.md)
+- [orderTypeIdentifier](./ordertypeidentifier.md)
   An identifier for the order type associated with the order.
-- [webServiceURL](applepaypaymentorderdetails/webserviceurl.md)
+- [webServiceURL](./webserviceurl.md)
   The URL of your web service.
 
 

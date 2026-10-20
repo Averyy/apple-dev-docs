@@ -1,7 +1,8 @@
 # load()
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The instance method that loads the embedding model.
 
@@ -20,13 +21,18 @@ The instance method that loads the embedding model.
 func load() throws
 ```
 
+```objc
+- (BOOL) loadWithError:(NSError **) error;
+```
+
 #### Discussion
 
-The method fails if the necessary assets aren’t on device for the model you specify. Use [`hasAvailableAssets`](nlcontextualembedding/hasavailableassets.md) and [`requestAssets(completionHandler:)`](nlcontextualembedding/requestassets(completionhandler:).md) to manage the assets.
+The method fails if the necessary assets aren’t on device for the model you specify. Use [`hasAvailableAssets`](./hasavailableassets.md) and [`requestAssets(completionHandler:)`](./requestassets%28completionhandler%29.md) to manage the assets.
 
 ## See Also
 
-- [func unload()](nlcontextualembedding/unload.md)
+### Loading and unloading assets
+- [func unload()](./unload%28%29.md)
   The instance method that unloads the embedding model.
 
 

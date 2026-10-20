@@ -1,7 +1,8 @@
 # MDItemGetTypeID()
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier of all MDItem instances.
 
@@ -14,7 +15,11 @@ Returns the type identifier of all MDItem instances.
 func MDItemGetTypeID() -> CFTypeID
 ```
 
-#### Return_value
+```c
+CFTypeID MDItemGetTypeID(void);
+```
+
+#### Return Value
 
 The type identifier for the `MDItem` opaque type. 
 

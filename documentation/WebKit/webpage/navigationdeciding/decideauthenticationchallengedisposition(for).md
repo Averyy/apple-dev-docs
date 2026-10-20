@@ -2,6 +2,7 @@
 
 **Framework**: WebKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Determines the response to an authentication challenge.
@@ -27,6 +28,12 @@ The option to use to handle the challenge, and the credential to use for authent
 ## Parameters
 
 - `challenge`: The authentication challenge.
+
+## Default Implementations
+
+### WebPage.NavigationDeciding Implementations
+- [func decideAuthenticationChallengeDisposition(for: URLAuthenticationChallenge) async -> (URLSession.AuthChallengeDisposition, URLCredential?)](./decideauthenticationchallengedisposition%28for%29-693ex.md)
+  By default, this method immediately returns with a disposition of `performDefaultHandling` and a `nil` credential.
 
 
 ---

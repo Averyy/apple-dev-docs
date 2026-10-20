@@ -1,7 +1,8 @@
 # IOBDBlockStorageDevice
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 The IOBDBlockStorageDevice class is a generic BD block storage device abstraction.
 
@@ -10,7 +11,7 @@ The IOBDBlockStorageDevice class is a generic BD block storage device abstractio
 
 ## Declaration
 
-```swift
+```cpp
 class IOBDBlockStorageDevice : IODVDBlockStorageDevice
 ```
 
@@ -25,28 +26,29 @@ A subclass implements relay methods that translate our requests into calls to a 
 ## Topics
 
 ### Miscellaneous
-- [init](iobdblockstoragedevice/1811554-init.md)
-- [readDiscStructure](iobdblockstoragedevice/1811564-readdiscstructure.md)
-- [splitTrack](iobdblockstoragedevice/1811575-splittrack.md)
+- [init](./iobdblockstoragedevice/api-1811554-init.md)
+- [readDiscStructure](./iobdblockstoragedevice/api-1811564-readdiscstructure.md)
+- [splitTrack](./iobdblockstoragedevice/api-1811575-splittrack.md)
 ### Instance Methods
-- [- getMetaClass](iobdblockstoragedevice/1541734-getmetaclass.md)
-- [- init](iobdblockstoragedevice/1541739-init.md)
-- [- readDiscStructure](iobdblockstoragedevice/1541740-readdiscstructure.md)
-- [- splitTrack](iobdblockstoragedevice/1541738-splittrack.md)
+- [- getMetaClass](./iobdblockstoragedevice/api-1541734-getmetaclass.md)
+- [- init](./iobdblockstoragedevice/api-1541739-init.md)
+- [- readDiscStructure](./iobdblockstoragedevice/api-1541740-readdiscstructure.md)
+- [- splitTrack](./iobdblockstoragedevice/api-1541738-splittrack.md)
 
 ## Relationships
 
 ### Inherits From
-- [IODVDBlockStorageDevice](iodvdblockstoragedevice.md)
+- [IODVDBlockStorageDevice](./iodvdblockstoragedevice.md)
 
 ## See Also
 
-- [IODVDServices](iodvdservices.md)
-- [IODVDBlockStorageDevice](iodvdblockstoragedevice.md)
+### Interfaces
+- [IODVDServices](./iodvdservices.md)
+- [IODVDBlockStorageDevice](./iodvdblockstoragedevice.md)
   The IODVDBlockStorageDevice class is a generic DVD block storage device abstraction.
-- [IOCompactDiscServices](iocompactdiscservices.md)
-- [IOBDMediaBSDClient](iobdmediabsdclient.md)
-- [IOMediaBSDClient](iomediabsdclient.md)
+- [IOCompactDiscServices](./iocompactdiscservices.md)
+- [IOBDMediaBSDClient](./iobdmediabsdclient.md)
+- [IOMediaBSDClient](./iomediabsdclient.md)
 
 
 ---

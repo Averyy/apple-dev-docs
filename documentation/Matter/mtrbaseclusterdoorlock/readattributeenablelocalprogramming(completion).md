@@ -1,7 +1,8 @@
 # readAttributeEnableLocalProgramming(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeEnableLocalProgramming(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeEnableLocalProgramming() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeEnableLocalProgrammingWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # viewID(type:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The id of the view positioned in the scroll view if configured to be in that position or the user has scrolled past a view with an id of matching type.
 

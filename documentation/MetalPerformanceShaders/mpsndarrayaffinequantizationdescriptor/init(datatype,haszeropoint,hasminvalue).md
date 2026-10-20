@@ -1,7 +1,8 @@
 # init(dataType:hasZeroPoint:hasMinValue:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(dataType quantizationDataType: MPSDataType, hasZeroPoint: Bool, hasMinValue: Bool)
+```
+
+```objc
+- (instancetype) initWithDataType:(MPSDataType) quantizationDataType hasZeroPoint:(BOOL) hasZeroPoint hasMinValue:(BOOL) hasMinValue;
 ```
 
 

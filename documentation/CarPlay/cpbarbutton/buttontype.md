@@ -1,14 +1,15 @@
 # buttonType
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display type for the bar button.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 13.1+
+- iOS 12.0+ - Deprecated in 14.0
+- iPadOS 12.0+ - Deprecated in 14.0
+- Mac Catalyst 13.1+ - Deprecated in 14.0
 
 ## Declaration
 
@@ -16,11 +17,16 @@ The display type for the bar button.
 var buttonType: CPBarButton.Type { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CPBarButtonType buttonType;
+```
+
 ## See Also
 
-- [var buttonStyle: CPBarButtonStyle](cpbarbutton/buttonstyle.md)
+### Getting the Button Style
+- [var buttonStyle: CPBarButtonStyle](./buttonstyle.md)
   The style to use when displaying the button.
-- [enum CPBarButtonStyle](cpbarbuttonstyle.md)
+- [enum CPBarButtonStyle](../cpbarbuttonstyle.md)
   The display style of a bar button.
 
 

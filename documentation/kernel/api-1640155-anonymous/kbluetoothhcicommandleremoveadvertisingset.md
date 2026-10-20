@@ -1,14 +1,15 @@
 # kBluetoothHCICommandLERemoveAdvertisingSet
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandLERemoveAdvertisingSet = 0x003C
 ```
 

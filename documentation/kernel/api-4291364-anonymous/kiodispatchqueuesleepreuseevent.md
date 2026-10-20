@@ -1,7 +1,8 @@
 # kIODispatchQueueSleepReuseEvent
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 23.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kIODispatchQueueSleepReuseEvent = 0x00000100
 ```
 

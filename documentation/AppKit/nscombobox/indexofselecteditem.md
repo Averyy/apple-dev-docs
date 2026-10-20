@@ -1,17 +1,22 @@
 # indexOfSelectedItem
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the last item selected from the pop-up list.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var indexOfSelectedItem: Int { get }
+```
+
+```objc
+@property (readonly) NSInteger indexOfSelectedItem;
 ```
 
 #### Discussion
@@ -20,13 +25,14 @@ The value of this property is `-1` if no item is selected; otherwise, it is the 
 
 ## See Also
 
-- [func deselectItem(at: Int)](nscombobox/deselectitem(at:).md)
+### Manipulating the Selection
+- [func deselectItem(at: Int)](./deselectitem%28at%29.md)
   Deselects the pop-up list item at the specified index if it’s selected.
-- [var objectValueOfSelectedItem: Any?](nscombobox/objectvalueofselecteditem.md)
+- [var objectValueOfSelectedItem: Any?](./objectvalueofselecteditem.md)
   The object corresponding to the last item selected from the pop-up list.
-- [func selectItem(at: Int)](nscombobox/selectitem(at:).md)
+- [func selectItem(at: Int)](./selectitem%28at%29.md)
   Selects the pop-up list row at the given index.
-- [func selectItem(withObjectValue: Any?)](nscombobox/selectitem(withobjectvalue:).md)
+- [func selectItem(withObjectValue: Any?)](./selectitem%28withobjectvalue%29.md)
   Selects the first pop-up list item that corresponds to the given object.
 
 

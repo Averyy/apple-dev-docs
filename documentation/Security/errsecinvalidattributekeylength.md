@@ -1,7 +1,8 @@
 # errSecInvalidAttributeKeyLength
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key length attribute is not valid.
 
@@ -18,6 +19,10 @@ A key length attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeKeyLength: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeKeyLength
 ```
 
 

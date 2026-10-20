@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Gets the menu for the specified menu identifier.
@@ -19,6 +20,10 @@ Gets the menu for the specified menu identifier.
 func menu(for identifier: UIMenu.Identifier) -> UIMenu?
 ```
 
+```objc
+- (UIMenu *) menuForIdentifier:(UIMenuIdentifier) identifier;
+```
+
 #### Return Value
 
 A menu object; otherwise, `nil` if there are no menus with the specified identifier.
@@ -29,11 +34,12 @@ A menu object; otherwise, `nil` if there are no menus with the specified identif
 
 ## See Also
 
-- [var system: UIMenuSystem](uimenubuilder/system.md)
+### Getting menu systems and elements
+- [var system: UIMenuSystem](./system.md)
   The menu system that the menu builder modifies.
-- [func action(for: UIAction.Identifier) -> UIAction?](uimenubuilder/action(for:).md)
+- [func action(for: UIAction.Identifier) -> UIAction?](./action%28for%29.md)
   Gets the action for the specified action identifier.
-- [func command(for: Selector, propertyList: Any?) -> UICommand?](uimenubuilder/command(for:propertylist:).md)
+- [func command(for: Selector, propertyList: Any?) -> UICommand?](./command%28for,propertylist%29.md)
   Gets the command for the specified selector and property list.
 
 

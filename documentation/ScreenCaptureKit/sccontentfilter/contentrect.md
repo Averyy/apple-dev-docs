@@ -1,7 +1,8 @@
 # contentRect
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size and location of the content to filter, in screen points.
 
@@ -19,15 +20,20 @@ The size and location of the content to filter, in screen points.
 var contentRect: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect contentRect;
+```
+
 ## See Also
 
-- [var pointPixelScale: Float](sccontentfilter/pointpixelscale.md)
+### Filter properties
+- [var pointPixelScale: Float](./pointpixelscale.md)
   The scaling factor used to translate screen points into pixels.
-- [var streamType: SCStreamType](sccontentfilter/streamtype.md)
+- [var streamType: SCStreamType](./streamtype.md)
   The type of the streaming content.
-- [enum SCStreamType](scstreamtype.md)
+- [enum SCStreamType](../scstreamtype.md)
   The display type of the presented stream.
-- [var style: SCShareableContentStyle](sccontentfilter/style.md)
+- [var style: SCShareableContentStyle](./style.md)
   The display style of the sharable content.
 
 

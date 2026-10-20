@@ -1,7 +1,8 @@
 # UITableView.Style.insetGrouped
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A table view where the grouped sections are inset with rounded corners.
 
@@ -17,11 +18,16 @@ A table view where the grouped sections are inset with rounded corners.
 case insetGrouped
 ```
 
+```c
+UITableViewStyleInsetGrouped
+```
+
 ## See Also
 
-- [UITableView.Style.plain](uitableview/style-swift.enum/plain.md)
+### Styles
+- [UITableView.Style.plain](./plain.md)
   A plain table view.
-- [UITableView.Style.grouped](uitableview/style-swift.enum/grouped.md)
+- [UITableView.Style.grouped](./grouped.md)
   A table view where sections have distinct groups of rows.
 
 

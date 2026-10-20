@@ -1,7 +1,8 @@
 # WAPairedDevice.ID
 
 **Framework**: Wi-Fi Aware  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type of value that uniquely identifies the paired device.
 
@@ -18,7 +19,8 @@ typealias ID = UInt64
 
 ## See Also
 
-- [let id: WAPairedDevice.ID](wapaireddevice/id-swift.property.md)
+### Getting the app-specific identifier
+- [let id: WAPairedDevice.ID](./id-swift.property.md)
   A stable ID that you can use to uniquely identify a device.
 
 

@@ -1,12 +1,13 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate associated with the date picker.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ The delegate associated with the date picker.
 weak var delegate: (any NSDatePickerCellDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSDatePickerCellDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate must conform to [`NSDatePickerCellDelegate`](nsdatepickercelldelegate.md).
+The delegate must conform to [`NSDatePickerCellDelegate`](../nsdatepickercelldelegate.md).
 
 
 ---

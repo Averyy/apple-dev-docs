@@ -1,7 +1,8 @@
 # kSecAttrType
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key with a value that indicates the item’s type.
 
@@ -20,9 +21,13 @@ A key with a value that indicates the item’s type.
 let kSecAttrType: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrType;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) and represents the item’s type. This number is the unsigned integer representation of a four-character code (for example, ‘aTyp’).
+The corresponding value is of type [`CFNumber`](../CoreFoundation/cfnumber.md) and represents the item’s type. This number is the unsigned integer representation of a four-character code (for example, ‘aTyp’).
 
 
 ---

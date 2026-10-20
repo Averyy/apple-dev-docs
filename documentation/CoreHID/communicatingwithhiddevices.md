@@ -1,6 +1,7 @@
 # Communicating with human interface devices
 
-**Framework**: Core HID
+**Framework**: Core HID  
+**Role**: Article
 
 Interact with and obtain data from devices such as keyboards and mice.
 
@@ -10,15 +11,15 @@ To communicate with a human interface device (HID), you must identify and match 
 
 > **Note**: Interacting with certain HIDs, such as keyboards, require user approval. Ensure that you grant permission to access the device to use it.
 
-##### Locate the Device of Interest
+##### Locate the device of interest
 
-To locate the device you’re interested in, specify a set of matching criteria using [`HIDDeviceManager.DeviceMatchingCriteria`](hiddevicemanager/devicematchingcriteria.md). The following code uses this method to discover the Magic Keyboard with Numeric Keypad `product`:
+To locate the device you’re interested in, specify a set of matching criteria using [`HIDDeviceManager.DeviceMatchingCriteria`](./hiddevicemanager/devicematchingcriteria.md). The following code uses this method to discover the Magic Keyboard with Numeric Keypad `product`:
 
 ```swift
 let matchingCriteria = HIDDeviceManager.DeviceMatchingCriteria(primaryUsage: .genericDesktop(.keyboard), product: "Magic Keyboard with Numeric Keypad")
 ```
 
-Create a [`HIDDeviceManager`](hiddevicemanager.md) and provide the criteria to [`monitorNotifications(matchingCriteria:)`](hiddevicemanager/monitornotifications(matchingcriteria:).md). Notifications arrive immediately for connected devices, and later when newly connected matching devices appear. `monitorNotifications` returns an asynchronous stream that you iterate over. The loop awaits and releases the current Task until a notification comes in.
+Create a [`HIDDeviceManager`](./hiddevicemanager.md) and provide the criteria to [`monitorNotifications(matchingCriteria:)`](./hiddevicemanager/monitornotifications%28matchingcriteria%29.md). Notifications arrive immediately for connected devices, and later when newly connected matching devices appear. `monitorNotifications` returns an asynchronous stream that you iterate over. The loop awaits and releases the current Task until a notification comes in.
 
 ```swift
 let manager = HIDDeviceManager()
@@ -38,11 +39,11 @@ for try await notification in await manager.monitorNotifications(matchingCriteri
 }
 ```
 
-To specify matching criteria using additional properties, see [`init(primaryUsage:deviceUsages:vendorID:productID:transport:product:manufacturer:modelNumber:versionNumber:serialNumber:uniqueID:locationID:localizationCode:isBuiltIn:extraProperties:)`](hiddevicemanager/devicematchingcriteria/init(primaryusage:deviceusages:vendorid:productid:transport:product:manufacturer:modelnumber:versionnumber:serialnumber:uniqueid:locationid:localizationcode:isbuiltin:extraproperties:).md).
+To specify matching criteria using additional properties, see [`init(primaryUsage:deviceUsages:vendorID:productID:transport:product:manufacturer:modelNumber:versionNumber:serialNumber:uniqueID:locationID:localizationCode:isBuiltIn:extraProperties:)`](./hiddevicemanager/devicematchingcriteria/init%28primaryusage,deviceusages,vendorid,productid,transport,product,manufacturer,modelnumber,versionnumber,serialnumber,uniqueid,locationid,localizationcode,isbuiltin,extraproperties%29.md).
 
-##### Communicate with the Device
+##### Communicate with the device
 
-Create a [`HIDDeviceClient`](hiddeviceclient.md) and pass in the device reference to start communication with the device. Verify that you’re communicating with the correct device by checking the usage with [`primaryUsage`](hiddeviceclient/primaryusage.md), the transport with [`transport`](hiddeviceclient/transport.md), and the product name with [`product`](hiddeviceclient/product.md).
+Create a [`HIDDeviceClient`](./hiddeviceclient.md) and pass in the device reference to start communication with the device. Verify that you’re communicating with the correct device by checking the usage with [`primaryUsage`](./hiddeviceclient/primaryusage.md), the transport with [`transport`](./hiddeviceclient/transport.md), and the product name with [`product`](./hiddeviceclient/product.md).
 
 ```swift
 enum ExampleError : Error {
@@ -78,14 +79,14 @@ guard product == "Magic Keyboard with Numeric Keypad" else {
 }
 ```
 
-Obtain the device’s input report using [`dispatchGetReportRequest(type:id:timeout:)`](hiddeviceclient/dispatchgetreportrequest(type:id:timeout:).md). Specify [`HIDReportType.input`](hidreporttype/input.md) for the type, and provide the appropriate [`HIDReportID`](hidreportid.md). This method initiates a get report request to the device over Bluetooth and returns the device’s response.
+Obtain the device’s input report using [`dispatchGetReportRequest(type:id:timeout:)`](./hiddeviceclient/dispatchgetreportrequest%28type,id,timeout%29.md). Specify [`HIDReportType.input`](./hidreporttype/input.md) for the type, and provide the appropriate [`HIDReportID`](./hidreportid.md). This method initiates a get report request to the device over Bluetooth and returns the device’s response.
 
 ```swift
 let report = try await client.dispatchGetReportRequest(type: .input, id: HIDReportID(rawValue: 1))
 print("Get report data: [\(report.map { String(format: "%02x", $0) }.joined(separator: " "))]")
 ```
 
-Monitor the device for input reports or other notifications by calling [`monitorNotifications(reportIDsToMonitor:elementsToMonitor:)`](hiddeviceclient/monitornotifications(reportidstomonitor:elementstomonitor:).md):
+Monitor the device for input reports or other notifications by calling [`monitorNotifications(reportIDsToMonitor:elementsToMonitor:)`](./hiddeviceclient/monitornotifications%28reportidstomonitor,elementstomonitor%29.md):
 
 ```swift
 for try await notification in await client.monitorNotifications(reportIDsToMonitor: [HIDReportID.allReports], elementsToMonitor: []) {
@@ -113,7 +114,7 @@ for try await notification in await client.monitorNotifications(reportIDsToMonit
 }
 ```
 
-Raw reports provide detailed information about data going to and from the device; however, this can generate more detail than you need. Instead, use [`HIDElement`](hidelement.md) to obtain specific information from a device.
+Raw reports provide detailed information about data going to and from the device; however, this can generate more detail than you need. Instead, use [`HIDElement`](./hidelement.md) to obtain specific information from a device.
 
 For the keyboard in this example, the input report contains the report ID, status of the modifier keys, the currently pressed keys, vendor defined data and padding. To obtain just the state of the Shift key, obtain the corresponding element.
 
@@ -124,7 +125,7 @@ guard let leftShiftKey = elements.filter({ $0.usage == .keyboardOrKeypad(.keyboa
 }
 ```
 
-With `leftShiftKey`, monitor [`HIDDeviceClient.Notification.elementUpdates(values:)`](hiddeviceclient/notification/elementupdates(values:).md) for any changes using [`HIDElement.Value`](hidelement/value.md). Values also arrive as a byte stream in [`bytes`](hidelement/value/bytes.md), but are interpretable as integers using extensions such as [`integerValue(asTypeTruncatingIfNeeded:)`](hidelement/value/integervalue(astypetruncatingifneeded:).md). Because the Shift key state is 1 bit, treat it as a `UInt8`.
+With `leftShiftKey`, monitor [`HIDDeviceClient.Notification.elementUpdates(values:)`](./hiddeviceclient/notification/elementupdates%28values%29.md) for any changes using [`HIDElement.Value`](./hidelement/value.md). Values also arrive as a byte stream in [`bytes`](./hidelement/value/bytes.md), but are interpretable as integers using extensions such as [`integerValue(asTypeTruncatingIfNeeded:)`](./hidelement/value/integervalue%28astypetruncatingifneeded%29.md). Because the Shift key state is 1 bit, treat it as a `UInt8`.
 
 ```swift
 for try await notification in await client.monitorNotifications(reportIDsToMonitor: [], elementsToMonitor: [leftShiftKey]) {
@@ -139,7 +140,7 @@ for try await notification in await client.monitorNotifications(reportIDsToMonit
 }
 ```
 
-Use [`HIDElement`](hidelement.md) with get and set reports through [`updateElements(_:timeout:)`](hiddeviceclient/updateelements(_:timeout:).md). This takes [`HIDElement`](hidelement.md) from [`HIDDeviceClient.RequestElementUpdate`](hiddeviceclient/requestelementupdate.md) and [`HIDDeviceClient.ProvideElementUpdate`](hiddeviceclient/provideelementupdate.md), then issues get and set reports with the raw report data in the background.
+Use [`HIDElement`](./hidelement.md) with get and set reports through [`updateElements(_:timeout:)`](./hiddeviceclient/updateelements%28_,timeout%29.md). This takes [`HIDElement`](./hidelement.md) from [`HIDDeviceClient.RequestElementUpdate`](./hiddeviceclient/requestelementupdate.md) and [`HIDDeviceClient.ProvideElementUpdate`](./hiddeviceclient/provideelementupdate.md), then issues get and set reports with the raw report data in the background.
 
 The following example creates a unit test for the keyboard. It turns off the Caps Lock LED, queries the state of the left Shift key, turns on the Caps Lock LED, then queries the state of the left Shift key again to determine if toggling the LED alters the state of the left Shift key.
 
@@ -179,27 +180,28 @@ guard leftShiftStateBefore == leftShiftStateAfter else {
 
 ## See Also
 
-- [actor HIDDeviceClient](hiddeviceclient.md)
+### Interaction
+- [actor HIDDeviceClient](./hiddeviceclient.md)
   A client of a physical or virtual HID compatible peripheral.
-- [struct HIDElement](hidelement.md)
+- [struct HIDElement](./hidelement.md)
   A representation of an item from a report descriptor for a HID device.
-- [struct HIDElementCollection](hidelementcollection.md)
+- [struct HIDElementCollection](./hidelementcollection.md)
   A collection of items from a report descriptor for a HID device.
-- [HIDElement.Value](hidelement/value.md)
+- [HIDElement.Value](./hidelement/value.md)
   Data associated with a HID element.
-- [protocol HIDElementUpdate](hidelementupdate.md)
+- [protocol HIDElementUpdate](./hidelementupdate.md)
   A base protocol for element update types.
-- [enum HIDReportType](hidreporttype.md)
+- [enum HIDReportType](./hidreporttype.md)
   Types for HID reports.
-- [struct HIDReportID](hidreportid.md)
+- [struct HIDReportID](./hidreportid.md)
   A type to represent the report IDs of HID reports.
-- [enum HIDUsage](hidusage.md)
+- [enum HIDUsage](./hidusage.md)
   A type to represent HID usage pages.
-- [enum HIDDeviceError](hiddeviceerror.md)
+- [enum HIDDeviceError](./hiddeviceerror.md)
   Errors that the framework can throw.
-- [enum HIDDeviceTransport](hiddevicetransport.md)
+- [enum HIDDeviceTransport](./hiddevicetransport.md)
   Common transport types that transmit data to or from a HID device.
-- [enum HIDDeviceLocalizationCode](hiddevicelocalizationcode.md)
+- [enum HIDDeviceLocalizationCode](./hiddevicelocalizationcode.md)
   The localization codes that some HID devices declare to specify conformance to a certain format or language.
 
 

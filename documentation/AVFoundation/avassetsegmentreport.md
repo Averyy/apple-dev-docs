@@ -1,7 +1,8 @@
 # AVAssetSegmentReport
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides information about segment data.
 
@@ -19,41 +20,46 @@ An object that provides information about segment data.
 class AVAssetSegmentReport
 ```
 
+```objc
+@interface AVAssetSegmentReport : NSObject
+```
+
 #### Overview
 
-You receive a segment report through the [`assetWriter(_:didOutputSegmentData:segmentType:segmentReport:)`](avassetwriterdelegate/assetwriter(_:didoutputsegmentdata:segmenttype:segmentreport:).md) delegate method.
+You receive a segment report through the [`assetWriter(_:didOutputSegmentData:segmentType:segmentReport:)`](./avassetwriterdelegate/assetwriter%28_,didoutputsegmentdata,segmenttype,segmentreport%29.md) delegate method.
 
 ## Topics
 
 ### Inspecting a report
-- [var segmentType: AVAssetSegmentType](avassetsegmentreport/segmenttype.md)
+- [var segmentType: AVAssetSegmentType](./avassetsegmentreport/segmenttype.md)
   The type of segment data.
-- [enum AVAssetSegmentType](avassetsegmenttype.md)
+- [enum AVAssetSegmentType](./avassetsegmenttype.md)
   Constants that define the type of a segment.
-- [var trackReports: [AVAssetSegmentTrackReport]](avassetsegmentreport/trackreports.md)
+- [var trackReports: [AVAssetSegmentTrackReport]](./avassetsegmentreport/trackreports.md)
   The reports for the segment’s track data.
-- [class AVAssetSegmentTrackReport](avassetsegmenttrackreport.md)
+- [class AVAssetSegmentTrackReport](./avassetsegmenttrackreport.md)
   An object that provides information on a track in segment data.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func assetWriter(AVAssetWriter, didOutputSegmentData: Data, segmentType: AVAssetSegmentType)](avassetwriterdelegate/assetwriter(_:didoutputsegmentdata:segmenttype:).md)
+### Responding to segment output
+- [func assetWriter(AVAssetWriter, didOutputSegmentData: Data, segmentType: AVAssetSegmentType)](./avassetwriterdelegate/assetwriter%28_,didoutputsegmentdata,segmenttype%29.md)
   Tells the delegate that the asset writer output segment data.
-- [func assetWriter(AVAssetWriter, didOutputSegmentData: Data, segmentType: AVAssetSegmentType, segmentReport: AVAssetSegmentReport?)](avassetwriterdelegate/assetwriter(_:didoutputsegmentdata:segmenttype:segmentreport:).md)
+- [func assetWriter(AVAssetWriter, didOutputSegmentData: Data, segmentType: AVAssetSegmentType, segmentReport: AVAssetSegmentReport?)](./avassetwriterdelegate/assetwriter%28_,didoutputsegmentdata,segmenttype,segmentreport%29.md)
   Tells the delegate that the asset writer output segment data and a report.
 
 

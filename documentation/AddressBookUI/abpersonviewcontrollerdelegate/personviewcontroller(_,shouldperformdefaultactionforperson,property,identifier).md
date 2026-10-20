@@ -2,6 +2,7 @@
 
 **Framework**: Address Book UI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sent when the user selects a property value of the person displayed in a person view controller.
@@ -17,9 +18,13 @@ Sent when the user selects a property value of the person displayed in a person 
 func personViewController(_ personViewController: ABPersonViewController, shouldPerformDefaultActionForPerson person: ABRecord, property: ABPropertyID, identifier: ABMultiValueIdentifier) -> Bool
 ```
 
+```objc
+- (BOOL) personViewController:(ABPersonViewController *) personViewController shouldPerformDefaultActionForPerson:(ABRecordRef) person property:(ABPropertyID) property identifier:(ABMultiValueIdentifier) identifier;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `personViewController` should perform its default action. Your application may quit as a result of this action. [`false`](https://developer.apple.com/documentation/swift/false): if `personViewController` should do nothing. The delegate may perform custom action processing.
+[`true`](../../Swift/true.md) if `personViewController` should perform its default action. Your application may quit as a result of this action. [`false`](../../Swift/false.md): if `personViewController` should do nothing. The delegate may perform custom action processing.
 
 ## Parameters
 

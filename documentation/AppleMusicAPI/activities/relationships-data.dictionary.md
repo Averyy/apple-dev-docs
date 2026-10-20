@@ -1,7 +1,8 @@
 # Activities.Relationships
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships for an activity resource.
 
@@ -10,23 +11,26 @@ The relationships for an activity resource.
 
 ## Declaration
 
-```swift
+```
 object Activities.Relationships
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Activities.Relationships.ActivitiesPlaylistsRelationship](activities/relationships-data.dictionary/activitiesplaylistsrelationship.md)
+- [object Activities.Relationships.ActivitiesPlaylistsRelationship](./relationships-data.dictionary/activitiesplaylistsrelationship.md)
   A relationship between the activity and its playlists.
 
 ## Properties
 
-- `playlists` (Activities.Relationships.ActivitiesPlaylistsRelationship): The playlists associated with this activity. By default, `playlists` includes identifiers only. Fetch limits: 10 default, 10 maximum.
+- `playlists` (Activities.Relationships.ActivitiesPlaylistsRelationship): The playlists associated with this activity. By default, `playlists` includes identifiers only.
+
+  Fetch limits: 10 default, 10 maximum.
 
 ## See Also
 
-- [object Activities.Attributes](activities/attributes-data.dictionary.md)
+### Related Objects
+- [object Activities.Attributes](./attributes-data.dictionary.md)
   The attributes for an activities resource.
 
 

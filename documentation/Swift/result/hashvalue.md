@@ -1,7 +1,8 @@
 # hashValue
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hash value.
 
@@ -19,6 +20,8 @@ The hash value.
 ```swift
 var hashValue: Int { get }
 ```
+
+Available when `Success` conforms to `Hashable`, `Failure` conforms to `Error`, and `Failure` conforms to `Hashable`.
 
 #### Discussion
 

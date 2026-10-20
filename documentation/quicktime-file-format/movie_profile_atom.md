@@ -1,13 +1,16 @@
 # Movie profile atom ('prfl')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that summarizes the features and complexity of a movie.
 
+> **Deprecated**: Profile atoms are deprecated in the QuickTime file format. The information that follows documents existing content containing profile atoms and should not be used for new development.
+
 ## Mentions
 
-- [QuickTime File Format change log](revision_history.md)
+- [QuickTime File Format change log](./revision_history.md)
 
 #### Overview
 
@@ -23,25 +26,26 @@ The movie profile atom is a profile atom (`'prfl'`) whose parent is a movie atom
 
 The profile atom contains a list of features. In a movie profile atom, these features summarize the movie as a whole. In a track profile atom, these features describe a particular track.
 
-For details on the structure and contents of profile atoms, see [`Appendix F: Profile atom guidelines`](appendix_f_profile_atom_guidelines.md).
+For details on the structure and contents of profile atoms, see [Appendix F: Profile atom guidelines](./appendix_f_profile_atom_guidelines.md).
 
 ## Topics
 
 ### Data fields
-- [Reserved](movie_profile_atom/reserved.md)
+- [Reserved](./movie_profile_atom/reserved.md)
   A 32-bit field.
-- [Part-ID](movie_profile_atom/part-id.md)
+- [Part-ID](./movie_profile_atom/part-id.md)
   A 32-bit field that defines the feature as being either brand-specific or universal.
-- [Feature code](movie_profile_atom/feature_code.md)
+- [Feature code](./movie_profile_atom/feature_code.md)
   A 32-bit unsigned integer that represents a code specifying a feature.
-- [Value](movie_profile_atom/value.md)
+- [Value](./movie_profile_atom/value.md)
   A 32-bit field that represents a value related to a feature.
 
 ## See Also
 
-- [Track profile atom ('prfl')](track_profile_atom.md)
+### Movie atoms
+- [Track profile atom ('prfl')](./track_profile_atom.md)
   A child atom of movie atoms or track atoms.
-- [Appendix F: Profile atom guidelines](appendix_f_profile_atom_guidelines.md)
+- [Appendix F: Profile atom guidelines](./appendix_f_profile_atom_guidelines.md)
   Summarize profile information about a QuickTime movie so readers can easily determine features and complexity.
 
 

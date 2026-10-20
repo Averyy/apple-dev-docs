@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -21,7 +22,8 @@ init(content: Content)
 
 ## See Also
 
-- [var content: Content](equatableview/content.md)
+### Creating an equatable view
+- [var content: Content](./content.md)
 
 
 ---

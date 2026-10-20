@@ -1,7 +1,8 @@
 # isRefreshing
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether a refresh operation has been triggered and is in progress.
 
@@ -17,11 +18,16 @@ A Boolean value indicating whether a refresh operation has been triggered and is
 var isRefreshing: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isRefreshing) BOOL refreshing;
+```
+
 ## See Also
 
-- [func beginRefreshing()](uirefreshcontrol/beginrefreshing.md)
+### Managing the refresh status
+- [func beginRefreshing()](./beginrefreshing%28%29.md)
   Tells the control that a refresh operation was started programmatically.
-- [func endRefreshing()](uirefreshcontrol/endrefreshing.md)
+- [func endRefreshing()](./endrefreshing%28%29.md)
   Tells the control that a refresh operation has ended.
 
 

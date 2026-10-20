@@ -1,7 +1,8 @@
 # PKPaymentToken
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Contains the user’s payment credentials.
 
@@ -19,42 +20,47 @@ Contains the user’s payment credentials.
 class PKPaymentToken
 ```
 
+```objc
+@interface PKPaymentToken : NSObject
+```
+
 #### Overview
 
-You access the payment token for an authorized payment request using the [`token`](pkpayment/token.md) property of [`PKPayment`](pkpayment.md).
+You access the payment token for an authorized payment request using the [`token`](./pkpayment/token.md) property of [`PKPayment`](./pkpayment.md).
 
 ## Topics
 
 ### Working with payment tokens
-- [var paymentData: Data](pkpaymenttoken/paymentdata.md)
+- [var paymentData: Data](./pkpaymenttoken/paymentdata.md)
   The payment data as a UTF-8 encoded serialization of a JSON dictionary.
-- [var paymentMethod: PKPaymentMethod](pkpaymenttoken/paymentmethod.md)
+- [var paymentMethod: PKPaymentMethod](./pkpaymenttoken/paymentmethod.md)
   Information about the card used in the transaction.
-- [class PKPaymentMethod](pkpaymentmethod.md)
+- [class PKPaymentMethod](./pkpaymentmethod.md)
   An object that contains information about payment methods.
-- [var transactionIdentifier: String](pkpaymenttoken/transactionidentifier.md)
+- [var transactionIdentifier: String](./pkpaymenttoken/transactionidentifier.md)
   A unique identifier for this payment.
 ### Deprecated
-- [var paymentNetwork: String](pkpaymenttoken/paymentnetwork.md)
+- [var paymentNetwork: String](./pkpaymenttoken/paymentnetwork.md)
   The payment network for the card that funds this transaction.
-- [var paymentInstrumentName: String](pkpaymenttoken/paymentinstrumentname.md)
+- [var paymentInstrumentName: String](./pkpaymenttoken/paymentinstrumentname.md)
   A description of the payment card that the user selected to fund the transaction.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var token: PKPaymentToken](pkpayment/token.md)
+### Working with the payment token
+- [var token: PKPaymentToken](./pkpayment/token.md)
   The encrypted payment information.
 
 

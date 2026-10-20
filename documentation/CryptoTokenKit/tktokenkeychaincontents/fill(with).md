@@ -1,7 +1,8 @@
 # fill(with:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fills the keychain with the specified items.
 
@@ -18,6 +19,10 @@ Fills the keychain with the specified items.
 
 ```swift
 func fill(with items: [TKTokenKeychainItem])
+```
+
+```objc
+- (void) fillWithItems:(NSArray<TKTokenKeychainItem *> *) items;
 ```
 
 #### Discussion

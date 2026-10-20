@@ -1,9 +1,10 @@
 # Stream.Event
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-Describes the constants that may be sent to the delegate as a bit field in the second parameter of [`stream(_:handle:)`](streamdelegate/stream(_:handle:).md) to specify the kind of stream event.
+Describes the constants that may be sent to the delegate as a bit field in the second parameter of [`stream(_:handle:)`](../streamdelegate/stream%28_,handle%29.md) to specify the kind of stream event.
 
 **Availability**:
 - iOS 2.0+
@@ -20,51 +21,56 @@ Describes the constants that may be sent to the delegate as a bit field in the s
 struct Event
 ```
 
+```c
+enum NSStreamEvent : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var openCompleted: Stream.Event](stream/event/opencompleted.md)
+- [static var openCompleted: Stream.Event](./event/opencompleted.md)
   The open has completed successfully.
-- [static var hasBytesAvailable: Stream.Event](stream/event/hasbytesavailable.md)
+- [static var hasBytesAvailable: Stream.Event](./event/hasbytesavailable.md)
   The stream has bytes to be read.
-- [static var hasSpaceAvailable: Stream.Event](stream/event/hasspaceavailable.md)
+- [static var hasSpaceAvailable: Stream.Event](./event/hasspaceavailable.md)
   The stream can accept bytes for writing.
-- [static var errorOccurred: Stream.Event](stream/event/erroroccurred.md)
+- [static var errorOccurred: Stream.Event](./event/erroroccurred.md)
   An error has occurred on the stream.
-- [static var endEncountered: Stream.Event](stream/event/endencountered.md)
+- [static var endEncountered: Stream.Event](./event/endencountered.md)
   The end of the stream has been reached.
 ### Initializers
-- [init(rawValue: UInt)](stream/event/init(rawvalue:).md)
+- [init(rawValue: UInt)](./event/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [Stream.Status](stream/status.md)
+### Constants
+- [Stream.Status](./status.md)
   The type declared for the constants listed in doc:stream/stream_status_constants.
-- [Stream Status Constants](stream_status_constants.md)
-  These constants indicate the current status of a stream. They are returned by [`streamStatus`](stream/streamstatus.md).
-- [struct StreamNetworkServiceTypeValue](streamnetworkservicetypevalue.md)
+- [Stream Status Constants](../stream_status_constants.md)
+  These constants indicate the current status of a stream. They are returned by [`streamStatus`](./streamstatus.md).
+- [struct StreamNetworkServiceTypeValue](../streamnetworkservicetypevalue.md)
   `NSStream` defines these string constants for specifying the service type of a stream.
-- [struct StreamSOCKSProxyConfiguration](streamsocksproxyconfiguration.md)
-- [struct StreamSOCKSProxyVersion](streamsocksproxyversion.md)
-- [struct StreamSocketSecurityLevel](streamsocketsecuritylevel.md)
+- [struct StreamSOCKSProxyConfiguration](../streamsocksproxyconfiguration.md)
+- [struct StreamSOCKSProxyVersion](../streamsocksproxyversion.md)
+- [struct StreamSocketSecurityLevel](../streamsocketsecuritylevel.md)
   `NSStream` defines these string constants for specifying the secure-socket layer (SSL) security level.
-- [Stream.PropertyKey](stream/propertykey.md)
-  `NSStream` defines these string constants as keys for accessing stream properties using [`property(forKey:)`](stream/property(forkey:).md) and setting properties with [`setProperty(_:forKey:)`](stream/setproperty(_:forkey:).md):
-- [let NSStreamSocketSSLErrorDomain: String](nsstreamsocketsslerrordomain.md)
+- [Stream.PropertyKey](./propertykey.md)
+  `NSStream` defines these string constants as keys for accessing stream properties using [`property(forKey:)`](./property%28forkey%29.md) and setting properties with [`setProperty(_:forKey:)`](./setproperty%28_,forkey%29.md):
+- [let NSStreamSocketSSLErrorDomain: String](../nsstreamsocketsslerrordomain.md)
   The error domain used by `NSError` when reporting SSL errors.
-- [let NSStreamSOCKSErrorDomain: String](nsstreamsockserrordomain.md)
+- [let NSStreamSOCKSErrorDomain: String](../nsstreamsockserrordomain.md)
   The error domain used by `NSError` when reporting SOCKS errors.
 
 

@@ -1,14 +1,15 @@
 # UILookToDictateCapable
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -16,22 +17,27 @@
 protocol UILookToDictateCapable : NSObjectProtocol
 ```
 
+```objc
+@protocol UILookToDictateCapable <NSObject>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var isLookToDictateEnabled: Bool](uilooktodictatecapable/islooktodictateenabled.md)
+- [var isLookToDictateEnabled: Bool](./uilooktodictatecapable/islooktodictateenabled.md)
   Enable or disable ‘Look To Dictate’ on the receiver.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [UISearchBar](uisearchbar.md)
+- [UISearchBar](./uisearchbar.md)
 
 ## See Also
 
-- [var isLookToDictateEnabled: Bool](uisearchbar/islooktodictateenabled.md)
+### Managing dictation
+- [var isLookToDictateEnabled: Bool](./uisearchbar/islooktodictateenabled.md)
 
 
 ---

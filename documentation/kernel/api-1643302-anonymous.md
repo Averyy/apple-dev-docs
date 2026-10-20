@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,23 +19,23 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kINQUIRY_Page00_PageCode](1643302-anonymous/kinquiry_page00_pagecode.md)
-- [kINQUIRY_Page80_PageCode](1643302-anonymous/kinquiry_page80_pagecode.md)
-- [kINQUIRY_Page83_PageCode](1643302-anonymous/kinquiry_page83_pagecode.md)
-- [kINQUIRY_Page89_PageCode](1643302-anonymous/kinquiry_page89_pagecode.md)
-- [kINQUIRY_PageB1_PageCode](1643302-anonymous/kinquiry_pageb1_pagecode.md)
-- [kINQUIRY_PageB0_PageCode](1643302-anonymous/kinquiry_pageb0_pagecode.md)
-- [kINQUIRY_PageB2_PageCode](1643302-anonymous/kinquiry_pageb2_pagecode.md)
-- [kINQUIRY_PageC0_PageCode](1643302-anonymous/kinquiry_pagec0_pagecode.md)
-- [kINQUIRY_PageC1_PageCode](1643302-anonymous/kinquiry_pagec1_pagecode.md)
-- [kINQUIRY_Page00_PageCode](../driverkit/kinquiry_page00_pagecode.md)
-- [kINQUIRY_Page80_PageCode](../driverkit/kinquiry_page80_pagecode.md)
-- [kINQUIRY_Page83_PageCode](../driverkit/kinquiry_page83_pagecode.md)
-- [kINQUIRY_Page89_PageCode](../driverkit/kinquiry_page89_pagecode.md)
-- [kINQUIRY_PageB0_PageCode](../driverkit/kinquiry_pageb0_pagecode.md)
-- [kINQUIRY_PageB1_PageCode](../driverkit/kinquiry_pageb1_pagecode.md)
-- [kINQUIRY_PageC0_PageCode](../driverkit/kinquiry_pagec0_pagecode.md)
-- [kINQUIRY_PageC1_PageCode](../driverkit/kinquiry_pagec1_pagecode.md)
+- [kINQUIRY_Page00_PageCode](./api-1643302-anonymous/kinquiry_page00_pagecode.md)
+- [kINQUIRY_Page80_PageCode](./api-1643302-anonymous/kinquiry_page80_pagecode.md)
+- [kINQUIRY_Page83_PageCode](./api-1643302-anonymous/kinquiry_page83_pagecode.md)
+- [kINQUIRY_Page89_PageCode](./api-1643302-anonymous/kinquiry_page89_pagecode.md)
+- [kINQUIRY_PageB1_PageCode](./api-1643302-anonymous/kinquiry_pageb1_pagecode.md)
+- [kINQUIRY_PageB0_PageCode](./api-1643302-anonymous/kinquiry_pageb0_pagecode.md)
+- [kINQUIRY_PageB2_PageCode](./api-1643302-anonymous/kinquiry_pageb2_pagecode.md)
+- [kINQUIRY_PageC0_PageCode](./api-1643302-anonymous/kinquiry_pagec0_pagecode.md)
+- [kINQUIRY_PageC1_PageCode](./api-1643302-anonymous/kinquiry_pagec1_pagecode.md)
+- [kINQUIRY_Page00_PageCode](../DriverKit/kinquiry_page00_pagecode.md)
+- [kINQUIRY_Page80_PageCode](../DriverKit/kinquiry_page80_pagecode.md)
+- [kINQUIRY_Page83_PageCode](../DriverKit/kinquiry_page83_pagecode.md)
+- [kINQUIRY_Page89_PageCode](../DriverKit/kinquiry_page89_pagecode.md)
+- [kINQUIRY_PageB0_PageCode](../DriverKit/kinquiry_pageb0_pagecode.md)
+- [kINQUIRY_PageB1_PageCode](../DriverKit/kinquiry_pageb1_pagecode.md)
+- [kINQUIRY_PageC0_PageCode](../DriverKit/kinquiry_pagec0_pagecode.md)
+- [kINQUIRY_PageC1_PageCode](../DriverKit/kinquiry_pagec1_pagecode.md)
 
 
 ---

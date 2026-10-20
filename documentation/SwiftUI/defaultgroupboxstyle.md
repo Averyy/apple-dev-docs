@@ -1,7 +1,8 @@
 # DefaultGroupBoxStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default style for group box views.
 
@@ -21,17 +22,17 @@ struct DefaultGroupBoxStyle
 
 #### Overview
 
-You can also use [`automatic`](groupboxstyle/automatic.md) to construct this style.
+You can also use [`automatic`](./groupboxstyle/automatic.md) to construct this style.
 
 ## Topics
 
 ### Creating the group box style
-- [init()](defaultgroupboxstyle/init.md)
+- [init()](./defaultgroupboxstyle/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [GroupBoxStyle](groupboxstyle.md)
+- [GroupBoxStyle](./groupboxstyle.md)
 
 
 ---

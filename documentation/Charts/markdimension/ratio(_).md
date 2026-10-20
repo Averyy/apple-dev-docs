@@ -1,7 +1,8 @@
 # ratio(_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A dimension that’s proportional to the scale step size, using the specified ratio.
 

@@ -1,7 +1,8 @@
 # NSManagedObjectContext.NotificationKey.invalidatedObjectIDs
 
 **Framework**: Core Data  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A key for the set of invalidated object identifiers.
 
@@ -11,7 +12,7 @@ A key for the set of invalidated object identifiers.
 - Mac Catalyst 10.3+
 - macOS 10.12+
 - tvOS 10.2+
-- visionOS ?+
+- visionOS
 - watchOS 3.2+
 
 ## Declaration
@@ -22,27 +23,28 @@ case invalidatedObjectIDs
 
 ## See Also
 
-- [NSManagedObjectContext.NotificationKey.deletedObjectIDs](nsmanagedobjectcontext/notificationkey/deletedobjectids.md)
+### Constants
+- [NSManagedObjectContext.NotificationKey.deletedObjectIDs](./deletedobjectids.md)
   A key for the set of deleted object identifiers.
-- [NSManagedObjectContext.NotificationKey.deletedObjects](nsmanagedobjectcontext/notificationkey/deletedobjects.md)
+- [NSManagedObjectContext.NotificationKey.deletedObjects](./deletedobjects.md)
   A key for the context’s set of deleted objects.
-- [NSManagedObjectContext.NotificationKey.insertedObjectIDs](nsmanagedobjectcontext/notificationkey/insertedobjectids.md)
+- [NSManagedObjectContext.NotificationKey.insertedObjectIDs](./insertedobjectids.md)
   A key for the set of inserted object identifiers.
-- [NSManagedObjectContext.NotificationKey.insertedObjects](nsmanagedobjectcontext/notificationkey/insertedobjects.md)
+- [NSManagedObjectContext.NotificationKey.insertedObjects](./insertedobjects.md)
   A key for the context’s set of inserted objects.
-- [NSManagedObjectContext.NotificationKey.invalidatedAllObjects](nsmanagedobjectcontext/notificationkey/invalidatedallobjects.md)
+- [NSManagedObjectContext.NotificationKey.invalidatedAllObjects](./invalidatedallobjects.md)
   A key for the context’s set of all invalidated objects.
-- [NSManagedObjectContext.NotificationKey.invalidatedObjects](nsmanagedobjectcontext/notificationkey/invalidatedobjects.md)
+- [NSManagedObjectContext.NotificationKey.invalidatedObjects](./invalidatedobjects.md)
   A key for the context’s set of invalidated objects.
-- [NSManagedObjectContext.NotificationKey.queryGeneration](nsmanagedobjectcontext/notificationkey/querygeneration.md)
+- [NSManagedObjectContext.NotificationKey.queryGeneration](./querygeneration.md)
   A key for the token that indicates which generation of the persistent store Core Data is accessing
-- [NSManagedObjectContext.NotificationKey.refreshedObjectIDs](nsmanagedobjectcontext/notificationkey/refreshedobjectids.md)
+- [NSManagedObjectContext.NotificationKey.refreshedObjectIDs](./refreshedobjectids.md)
   A key for the set of refreshed object identifiers.
-- [NSManagedObjectContext.NotificationKey.refreshedObjects](nsmanagedobjectcontext/notificationkey/refreshedobjects.md)
+- [NSManagedObjectContext.NotificationKey.refreshedObjects](./refreshedobjects.md)
   A key for the context’s set of refreshed objects.
-- [NSManagedObjectContext.NotificationKey.updatedObjectIDs](nsmanagedobjectcontext/notificationkey/updatedobjectids.md)
+- [NSManagedObjectContext.NotificationKey.updatedObjectIDs](./updatedobjectids.md)
   A key for the set of updated object identifiers.
-- [NSManagedObjectContext.NotificationKey.updatedObjects](nsmanagedobjectcontext/notificationkey/updatedobjects.md)
+- [NSManagedObjectContext.NotificationKey.updatedObjects](./updatedobjects.md)
   A key for the context’s set of updated objects.
 
 

@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that defines the text transformation.
 
@@ -10,7 +11,7 @@ A closure that defines the text transformation.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

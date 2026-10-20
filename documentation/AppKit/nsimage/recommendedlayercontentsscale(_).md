@@ -1,7 +1,8 @@
 # recommendedLayerContentsScale(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the recommended layer contents scale for this image.
 
@@ -14,13 +15,17 @@ Returns the recommended layer contents scale for this image.
 func recommendedLayerContentsScale(_ preferredContentsScale: CGFloat) -> CGFloat
 ```
 
+```objc
+- (CGFloat) recommendedLayerContentsScale:(CGFloat) preferredContentsScale;
+```
+
 #### Return Value
 
 The recommended layer contents scale. This scale factor may be different than the one in the `preferredContentsScale` parameter.
 
 #### Discussion
 
-Use this method to obtain the scale factor value that you pass to the [`layerContents(forContentsScale:)`](nsimage/layercontents(forcontentsscale:).md) method. This method uses the image data to determine the scale factor that is best suited for creating an image that looks good in the layer.
+Use this method to obtain the scale factor value that you pass to the [`layerContents(forContentsScale:)`](./layercontents%28forcontentsscale%29.md) method. This method uses the image data to determine the scale factor that is best suited for creating an image that looks good in the layer.
 
 ## Parameters
 
@@ -28,7 +33,8 @@ Use this method to obtain the scale factor value that you pass to the [`layerCon
 
 ## See Also
 
-- [func layerContents(forContentsScale: CGFloat) -> Any](nsimage/layercontents(forcontentsscale:).md)
+### Using Images with Core Animation
+- [func layerContents(forContentsScale: CGFloat) -> Any](./layercontents%28forcontentsscale%29.md)
   Returns an object that may be used as the contents of a layer.
 
 

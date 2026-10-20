@@ -1,11 +1,12 @@
 # kAudioSliderControlPropertyRange
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,9 +14,14 @@
 var kAudioSliderControlPropertyRange: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioSliderControlPropertyRange
+```
+
 ## See Also
 
-- [var kAudioSliderControlPropertyValue: AudioObjectPropertySelector](kaudioslidercontrolpropertyvalue.md)
+### Constants
+- [var kAudioSliderControlPropertyValue: AudioObjectPropertySelector](./kaudioslidercontrolpropertyvalue.md)
 
 
 ---

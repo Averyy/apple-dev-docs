@@ -1,7 +1,8 @@
 # supportsWideColorSourceFrames
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the compositor handles source frames that contains wide color properties.
 
@@ -19,21 +20,26 @@ A Boolean value that indicates whether the compositor handles source frames that
 optional var supportsWideColorSourceFrames: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL supportsWideColorSourceFrames;
+```
+
 ## Mentions
 
-- [Tagging media with video color information](tagging-media-with-video-color-information.md)
+- [Tagging media with video color information](../tagging-media-with-video-color-information.md)
 
 ## See Also
 
-- [var sourcePixelBufferAttributes: [String : any Sendable]?](avvideocompositing/sourcepixelbufferattributes.md)
+### Inspecting processing requirements
+- [var sourcePixelBufferAttributes: [String : any Sendable]?](./sourcepixelbufferattributes.md)
   The pixel buffer attributes that the compositor accepts for source frames.
-- [var requiredPixelBufferAttributesForRenderContext: [String : any Sendable]](avvideocompositing/requiredpixelbufferattributesforrendercontext.md)
+- [var requiredPixelBufferAttributesForRenderContext: [String : any Sendable]](./requiredpixelbufferattributesforrendercontext.md)
   The pixel buffer attributes that the compositor requires for pixel buffers that it creates.
-- [var supportsHDRSourceFrames: Bool](avvideocompositing/supportshdrsourceframes.md)
+- [var supportsHDRSourceFrames: Bool](./supportshdrsourceframes.md)
   A Boolean value that indicates whether the compositor handles source frames that contain high dynamic range (HDR) properties.
-- [var canConformColorOfSourceFrames: Bool](avvideocompositing/canconformcolorofsourceframes.md)
+- [var canConformColorOfSourceFrames: Bool](./canconformcolorofsourceframes.md)
   A Boolean value that indicates whether the compositor conforms the color space of source frames to the composition color space.
-- [var supportsSourceTaggedBuffers: Bool](avvideocompositing/supportssourcetaggedbuffers.md)
+- [var supportsSourceTaggedBuffers: Bool](./supportssourcetaggedbuffers.md)
 
 
 ---

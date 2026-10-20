@@ -1,7 +1,8 @@
 # allowedCredentials
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of allowed credentials.
 
@@ -15,6 +16,10 @@ An array of allowed credentials.
 
 ```swift
 var allowedCredentials: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray<ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor *> * allowedCredentials;
 ```
 
 

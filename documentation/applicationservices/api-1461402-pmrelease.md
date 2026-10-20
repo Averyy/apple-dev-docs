@@ -1,7 +1,8 @@
 # PMRelease(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Releases a printing object by decrementing its reference count.
 
@@ -14,15 +15,19 @@ Releases a printing object by decrementing its reference count.
 func PMRelease(_ object: PMObject?) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus PMRelease(PMObject object);
+```
 
-A result code. See [`Result Codes`](core_printing#1670007.md).
+#### Return Value
+
+A result code. See [Result Codes](./core_printing.md#1670007).
 
 #### Discussion
 
 Your application should use the `PMRelease` function to release any printing objects it creates or retains. When an object’s reference count reaches 0, the object is deallocated.
 
-For example, to terminate a printing session created with the function [`PMCreateSession(_:)`](1463247-pmcreatesession.md), pass the associated [`PMPrintSession`](pmprintsession.md) object to `PMRelease`. To release printing objects created with the functions [`PMCreatePageFormat(_:)`](1459485-pmcreatepageformat.md) and [`PMCreatePrintSettings(_:)`](1463239-pmcreateprintsettings.md), pass the associated `PMPageFormat` and `PMPrintSettings` objects to `PMRelease`.
+For example, to terminate a printing session created with the function [`PMCreateSession(_:)`](./api-1463247-pmcreatesession.md), pass the associated [`PMPrintSession`](./pmprintsession.md) object to `PMRelease`. To release printing objects created with the functions [`PMCreatePageFormat(_:)`](./api-1459485-pmcreatepageformat.md) and [`PMCreatePrintSettings(_:)`](./api-1463239-pmcreateprintsettings.md), pass the associated `PMPageFormat` and `PMPrintSettings` objects to `PMRelease`.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ For example, to terminate a printing session created with the function [`PMCreat
 
 ## See Also
 
-- [func PMRetain(PMObject?) -> OSStatus](1460190-pmretain.md)
+### Releasing and Retaining Printing Objects
+- [func PMRetain(PMObject?) -> OSStatus](./api-1460190-pmretain.md)
   Retains a printing object by incrementing its reference count.
 
 

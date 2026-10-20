@@ -1,11 +1,12 @@
 # CGMomentumScrollPhase.begin
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,11 +14,16 @@
 case begin
 ```
 
+```c
+kCGMomentumScrollPhaseBegin
+```
+
 ## See Also
 
-- [CGMomentumScrollPhase.continuous](cgmomentumscrollphase/continuous.md)
-- [CGMomentumScrollPhase.end](cgmomentumscrollphase/end.md)
-- [CGMomentumScrollPhase.none](cgmomentumscrollphase/none.md)
+### Constants
+- [CGMomentumScrollPhase.continuous](./continuous.md)
+- [CGMomentumScrollPhase.end](./end.md)
+- [CGMomentumScrollPhase.none](./none.md)
 
 
 ---

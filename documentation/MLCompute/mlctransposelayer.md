@@ -1,16 +1,17 @@
 # MLCTransposeLayer
 
 **Framework**: ML Compute  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A layer that permutes the dimensions you specify.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,44 +19,49 @@ A layer that permutes the dimensions you specify.
 class MLCTransposeLayer
 ```
 
+```objc
+@interface MLCTransposeLayer : MLCLayer
+```
+
 ## Topics
 
 ### Creating Transpose Layers
-- [convenience init?(dimensions: [Int])](mlctransposelayer/init(dimensions:).md)
+- [convenience init?(dimensions: [Int])](./mlctransposelayer/init%28dimensions%29.md)
   Creates a transpose layer with the dimensions you specify.
 ### Inspecting Transpose Layers
-- [var dimensions: [Int]](mlctransposelayer/dimensions-71ed6.md)
+- [var dimensions: [Int]](./mlctransposelayer/dimensions-71ed6.md)
   An array that contains an input axis source for each output axis, which represents the ordering of dimensions.
 
 ## Relationships
 
 ### Inherits From
-- [MLCLayer](mlclayer.md)
+- [MLCLayer](./mlclayer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MLCConcatenationLayer](mlcconcatenationlayer.md)
+### Transformation Layers
+- [class MLCConcatenationLayer](./mlcconcatenationlayer.md)
   A layer that combines tensors into a single tensor.
-- [class MLCReshapeLayer](mlcreshapelayer.md)
+- [class MLCReshapeLayer](./mlcreshapelayer.md)
   A layer that reshapes a tensor with the shape you specify.
-- [class MLCSliceLayer](mlcslicelayer.md)
+- [class MLCSliceLayer](./mlcslicelayer.md)
   A layer that extracts a slice from a tensor.
-- [class MLCSplitLayer](mlcsplitlayer.md)
+- [class MLCSplitLayer](./mlcsplitlayer.md)
   A layer that splits a tensor value into a list of subtensors.
-- [class MLCPaddingLayer](mlcpaddinglayer.md)
+- [class MLCPaddingLayer](./mlcpaddinglayer.md)
   A layer that pads a tensor with the padding sizes you specify.
-- [class MLCScatterLayer](mlcscatterlayer.md)
+- [class MLCScatterLayer](./mlcscatterlayer.md)
   A layer that updates the output at an index you specify.
-- [class MLCSelectionLayer](mlcselectionlayer.md)
+- [class MLCSelectionLayer](./mlcselectionlayer.md)
   A layer for selecting elements from two tensors.
-- [class MLCGatherLayer](mlcgatherlayer.md)
+- [class MLCGatherLayer](./mlcgatherlayer.md)
   A layer that fetches data at the locations you specify.
 
 

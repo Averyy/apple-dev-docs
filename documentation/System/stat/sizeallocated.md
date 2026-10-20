@@ -1,7 +1,8 @@
 # sizeAllocated
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Total size allocated, in bytes
 

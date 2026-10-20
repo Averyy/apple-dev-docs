@@ -1,7 +1,8 @@
 # coreTechnology
 
 **Framework**: MarketplaceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A token type for potential purchases related to your app.
 
@@ -17,11 +18,11 @@ static let coreTechnology: TransactionReporting.TokenType
 
 ## Mentions
 
-- [Reporting transactions for the Core Technology Commission](reporting-transactions-for-core-technology-commission.md)
+- [Reporting transactions for the Core Technology Commission](../../reporting-transactions-for-core-technology-commission.md)
 
 #### Discussion
 
-When you pass this constant to the [`token(for:)`](transactionreporting/token(for:).md) method, it returns JSON data as a Base64URL-encoded string. For more information, see [`Reporting transactions for the Core Technology Commission`](reporting-transactions-for-core-technology-commission.md).
+When you pass this constant to the [`token(for:)`](../token%28for%29.md) method, it returns JSON data as a Base64URL-encoded string. For more information, see [Reporting transactions for the Core Technology Commission](../../reporting-transactions-for-core-technology-commission.md).
 
 
 ---

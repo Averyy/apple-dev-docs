@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,7 +18,7 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kINQUIRY_PageC0_Features_HasSEP_LUN](3325821-anonymous/kinquiry_pagec0_features_hassep_lun.md)
+- [kINQUIRY_PageC0_Features_HasSEP_LUN](./api-3325821-anonymous/kinquiry_pagec0_features_hassep_lun.md)
 
 
 ---

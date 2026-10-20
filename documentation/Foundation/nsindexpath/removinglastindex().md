@@ -1,7 +1,8 @@
 # removingLastIndex()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an index path with the nodes in the receiving index path, excluding the last one.
 
@@ -20,6 +21,10 @@ Returns an index path with the nodes in the receiving index path, excluding the 
 func removingLastIndex() -> IndexPath
 ```
 
+```objc
+- (NSIndexPath *) indexPathByRemovingLastIndex;
+```
+
 #### Return Value
 
 A new index path with the receiving index path’s indexes, excluding the last one.
@@ -34,7 +39,8 @@ In OS X v10.4 this method returns `nil` when the length of the receiving index p
 
 ## See Also
 
-- [func adding(Int) -> IndexPath](nsindexpath/adding(_:).md)
+### Adding and Removing Nodes
+- [func adding(Int) -> IndexPath](./adding%28_%29.md)
   Returns an index path containing the nodes in the receiving index path plus another given index.
 
 

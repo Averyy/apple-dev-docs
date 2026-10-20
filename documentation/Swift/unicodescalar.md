@@ -1,7 +1,8 @@
 # UnicodeScalar
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 8.0+
@@ -20,9 +21,10 @@ typealias UnicodeScalar = Unicode.Scalar
 
 ## See Also
 
-- [typealias UTF8](utf8.md)
-- [typealias UTF16](utf16.md)
-- [typealias UTF32](utf32.md)
+### Deprecated
+- [typealias UTF8](./utf8.md)
+- [typealias UTF16](./utf16.md)
+- [typealias UTF32](./utf32.md)
 
 
 ---

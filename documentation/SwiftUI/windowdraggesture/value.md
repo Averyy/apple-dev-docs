@@ -1,7 +1,8 @@
 # WindowDragGesture.Value
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The properties of a window drag gesture.
 
@@ -17,7 +18,7 @@ struct Value
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # listImageRowHandler
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional closure that CarPlay invokes when the user selects an image.
 
@@ -14,6 +15,10 @@ An optional closure that CarPlay invokes when the user selects an image.
 
 ```swift
 var listImageRowHandler: ((CPListImageRowItem, Int, @escaping () -> Void) -> Void)? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) void (^listImageRowHandler)(CPListImageRowItem *item, NSInteger index, dispatch_block_t completionBlock);
 ```
 
 #### Discussion
@@ -34,7 +39,8 @@ CarPlay executes your handler on the main queue. You must call the completion cl
 
 ## See Also
 
-- [var handler: ((any CPSelectableListItem, () -> Void) -> Void)?](cplistimagerowitem/handler.md)
+### Managing Selection
+- [var handler: ((any CPSelectableListItem, () -> Void) -> Void)?](./handler.md)
   An optional closure that CarPlay invokes when the user selects the list item.
 
 

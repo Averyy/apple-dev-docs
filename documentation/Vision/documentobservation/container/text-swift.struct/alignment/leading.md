@@ -1,7 +1,8 @@
 # DocumentObservation.Container.Text.Alignment.leading
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Text aligns to the left edge of the container.
 
@@ -21,9 +22,10 @@ case leading
 
 ## See Also
 
-- [DocumentObservation.Container.Text.Alignment.center](documentobservation/container/text-swift.struct/alignment/center.md)
+### Getting the alignment
+- [DocumentObservation.Container.Text.Alignment.center](./center.md)
   Text aligns horizontally to the center of the container.
-- [DocumentObservation.Container.Text.Alignment.trailing](documentobservation/container/text-swift.struct/alignment/trailing.md)
+- [DocumentObservation.Container.Text.Alignment.trailing](./trailing.md)
   Lines aligned with a right edge within the container.
 
 

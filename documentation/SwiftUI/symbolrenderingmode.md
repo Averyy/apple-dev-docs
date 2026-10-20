@@ -1,7 +1,8 @@
 # SymbolRenderingMode
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A symbol rendering mode.
 
@@ -23,30 +24,31 @@ struct SymbolRenderingMode
 ## Topics
 
 ### Getting symbol rendering modes
-- [static let hierarchical: SymbolRenderingMode](symbolrenderingmode/hierarchical.md)
+- [static let hierarchical: SymbolRenderingMode](./symbolrenderingmode/hierarchical.md)
   A mode that renders symbols as multiple layers, with different opacities applied to the foreground style.
-- [static let monochrome: SymbolRenderingMode](symbolrenderingmode/monochrome.md)
+- [static let monochrome: SymbolRenderingMode](./symbolrenderingmode/monochrome.md)
   A mode that renders symbols as a single layer filled with the foreground style.
-- [static let multicolor: SymbolRenderingMode](symbolrenderingmode/multicolor.md)
+- [static let multicolor: SymbolRenderingMode](./symbolrenderingmode/multicolor.md)
   A mode that renders symbols as multiple layers with their inherit styles.
-- [static let palette: SymbolRenderingMode](symbolrenderingmode/palette.md)
+- [static let palette: SymbolRenderingMode](./symbolrenderingmode/palette.md)
   A mode that renders symbols as multiple layers, with different styles applied to the layers.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func symbolRenderingMode(SymbolRenderingMode?) -> some View](view/symbolrenderingmode(_:).md)
+### Setting symbol rendering modes
+- [func symbolRenderingMode(SymbolRenderingMode?) -> some View](./view/symbolrenderingmode%28_%29.md)
   Sets the rendering mode for symbol images within this view.
-- [var symbolRenderingMode: SymbolRenderingMode?](environmentvalues/symbolrenderingmode.md)
+- [var symbolRenderingMode: SymbolRenderingMode?](./environmentvalues/symbolrenderingmode.md)
   The current symbol rendering mode, or `nil` denoting that the mode is picked automatically using the current image and foreground style as parameters.
-- [struct SymbolColorRenderingMode](symbolcolorrenderingmode.md)
+- [struct SymbolColorRenderingMode](./symbolcolorrenderingmode.md)
   A method of filling a layer in a symbol image.
-- [struct SymbolVariableValueMode](symbolvariablevaluemode.md)
+- [struct SymbolVariableValueMode](./symbolvariablevaluemode.md)
   A method of rendering the variable value of a symbol image.
 
 

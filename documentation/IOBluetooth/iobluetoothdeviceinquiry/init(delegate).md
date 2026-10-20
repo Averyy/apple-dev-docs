@@ -1,17 +1,22 @@
 # init(delegate:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an alloc’d inquiry object, and sets the delegate object, as if -setDelegate: were called on it.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init!(delegate: Any!)
+```
+
+```objc
+- (instancetype) initWithDelegate:(id) delegate;
 ```
 
 #### Return Value

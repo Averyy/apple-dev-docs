@@ -1,10 +1,11 @@
 # NSTextInputTraitType.default
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 case `default`
 ```
 
+```c
+NSTextInputTraitTypeDefault
+```
+
 ## See Also
 
-- [NSTextInputTraitType.no](nstextinputtraittype/no.md)
-- [NSTextInputTraitType.yes](nstextinputtraittype/yes.md)
+### Enumeration Cases
+- [NSTextInputTraitType.no](./no.md)
+- [NSTextInputTraitType.yes](./yes.md)
 
 
 ---

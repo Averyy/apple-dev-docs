@@ -1,7 +1,8 @@
 # setOTAProviderDelegate(_:queue:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 func setOTAProviderDelegate(_ otaProviderDelegate: any MTROTAProviderDelegate, queue: dispatch_queue_t)
+```
+
+```objc
+- (void) setOTAProviderDelegate:(id<MTROTAProviderDelegate>) otaProviderDelegate queue:(dispatch_queue_t) queue;
 ```
 
 

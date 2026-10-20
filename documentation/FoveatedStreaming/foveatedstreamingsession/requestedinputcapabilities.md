@@ -1,7 +1,8 @@
 # requestedInputCapabilities
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of input data types which should be included as part of the stream.
 
@@ -19,7 +20,7 @@ final var requestedInputCapabilities: Set<FoveatedStreamingSession.InputCapabili
 
 The default value is `[]`.
 
-At [`connect(endpoint:)`](foveatedstreamingsession/connect(endpoint:).md) time, any capability in the requested set with [`FoveatedStreamingSession.AuthorizationStatus.notDetermined`](foveatedstreamingsession/authorizationstatus/notdetermined.md) status triggers an authorization prompt before the connection proceeds.  Setting this property does not on its own trigger an authorization prompt — call [`requestAuthorization(for:)`](foveatedstreamingsession/requestauthorization(for:).md) to do that explicitly.
+At [`connect(endpoint:)`](./connect%28endpoint%29.md) time, any capability in the requested set with [`FoveatedStreamingSession.AuthorizationStatus.notDetermined`](./authorizationstatus/notdetermined.md) status triggers an authorization prompt before the connection proceeds.  Setting this property does not on its own trigger an authorization prompt — call [`requestAuthorization(for:)`](./requestauthorization%28for%29.md) to do that explicitly.
 
 
 ---

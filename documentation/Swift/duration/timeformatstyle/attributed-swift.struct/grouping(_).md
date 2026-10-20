@@ -1,7 +1,8 @@
 # grouping(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a modified style that applies the given `grouping` rule to the highest field in the pattern.
 

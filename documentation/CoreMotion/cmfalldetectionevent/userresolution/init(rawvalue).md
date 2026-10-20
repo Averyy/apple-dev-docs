@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Motion  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - watchOS 7.2+

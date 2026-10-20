@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum uio_rw : unsigned int {
     ...
 };
@@ -17,8 +17,8 @@ enum uio_rw : unsigned int {
 ## Topics
 
 ### Constants
-- [UIO_READ](uio_rw/uio_read.md)
-- [UIO_WRITE](uio_rw/uio_write.md)
+- [UIO_READ](./uio_rw/uio_read.md)
+- [UIO_WRITE](./uio_rw/uio_write.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # BNNSArithmeticMultiplyAdd
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An operation that calculates the element-wise fused multiply-add of its three inputs.
 
@@ -20,9 +21,14 @@ An operation that calculates the element-wise fused multiply-add of its three in
 var BNNSArithmeticMultiplyAdd: BNNSArithmeticFunction { get }
 ```
 
+```c
+BNNSArithmeticMultiplyAdd
+```
+
 ## See Also
 
-- [var BNNSArithmeticSelect: BNNSArithmeticFunction](bnnsarithmeticselect.md)
+### Ternary Arithmetic Functions
+- [var BNNSArithmeticSelect: BNNSArithmeticFunction](./bnnsarithmeticselect.md)
   An operation that selects elements from either its second or third input based on the corresponding value of its first input.
 
 

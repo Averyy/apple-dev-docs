@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSetClutAtSetEntries](1644570-anonymous/ksetclutatsetentries.md)
-- [kSetClutAtVBL](1644570-anonymous/ksetclutatvbl.md)
+- [kSetClutAtSetEntries](./api-1644570-anonymous/ksetclutatsetentries.md)
+- [kSetClutAtVBL](./api-1644570-anonymous/ksetclutatvbl.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # USDTransformOperation.Kind.scaleZ
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A scale operation along the Z axis.
 

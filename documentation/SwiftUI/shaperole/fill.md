@@ -1,7 +1,8 @@
 # ShapeRole.fill
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates to the shape’s style that SwiftUI fills the shape.
 
@@ -22,9 +23,10 @@ case fill
 
 ## See Also
 
-- [ShapeRole.stroke](shaperole/stroke.md)
+### Getting shape roles
+- [ShapeRole.stroke](./stroke.md)
   Indicates to the shape’s style that SwiftUI applies a stroke to the shape’s path.
-- [ShapeRole.separator](shaperole/separator.md)
+- [ShapeRole.separator](./separator.md)
   Indicates to the shape’s style that SwiftUI uses the shape as a separator.
 
 

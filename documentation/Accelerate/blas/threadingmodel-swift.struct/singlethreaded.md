@@ -1,18 +1,19 @@
 # singleThreaded
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that specifies BLAS and LAPACK execute on a single thread only.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 - macOS 15.0+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ static let singleThreaded: BLAS.ThreadingModel
 
 ## See Also
 
-- [static let multiThreaded: BLAS.ThreadingModel](blas/threadingmodel-swift.struct/multithreaded.md)
+### Specifying a threading model
+- [static let multiThreaded: BLAS.ThreadingModel](./multithreaded.md)
   A constant that specifies that the Accelerate framework decides whether BLAS and LAPACK execute on single or multiple threads.
 
 

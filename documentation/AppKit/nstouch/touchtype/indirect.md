@@ -1,7 +1,8 @@
 # NSTouch.TouchType.indirect
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An indirect touch that is not on a screen, like a digitizer touch.
 
@@ -14,9 +15,14 @@ An indirect touch that is not on a screen, like a digitizer touch.
 case indirect
 ```
 
+```c
+NSTouchTypeIndirect
+```
+
 ## See Also
 
-- [NSTouch.TouchType.direct](nstouch/touchtype/direct.md)
+### Touch Types
+- [NSTouch.TouchType.direct](./direct.md)
   A direct touch from a user’s finger on a screen.
 
 

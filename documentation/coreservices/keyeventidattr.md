@@ -1,9 +1,10 @@
 # keyEventIDAttr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Event ID of an Apple event. See [`AEAddressDesc`](aeaddressdesc.md).
+Event ID of an Apple event. See [`AEAddressDesc`](./aeaddressdesc.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

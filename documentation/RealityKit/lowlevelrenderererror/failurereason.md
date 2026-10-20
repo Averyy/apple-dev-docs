@@ -1,7 +1,8 @@
 # failureReason
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human-readable explanation of why the error occurred.
 
@@ -19,11 +20,12 @@ var failureReason: String? { get }
 
 ## See Also
 
-- [var errorDescription: String?](lowlevelrenderererror/errordescription.md)
+### Describing the error
+- [var errorDescription: String?](./errordescription.md)
   A human-readable description of the error.
-- [var recoverySuggestion: String?](lowlevelrenderererror/recoverysuggestion.md)
+- [var recoverySuggestion: String?](./recoverysuggestion.md)
   A human-readable suggestion for how to recover from the error.
-- [var helpAnchor: String?](lowlevelrenderererror/helpanchor.md)
+- [var helpAnchor: String?](./helpanchor.md)
   A link to documentation for the error.
 
 

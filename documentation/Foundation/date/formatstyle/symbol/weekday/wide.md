@@ -1,7 +1,8 @@
 # wide
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The complete weekday representation.
 
@@ -22,15 +23,16 @@ static var wide: Date.FormatStyle.Symbol.Weekday { get }
 
 ## See Also
 
-- [static var abbreviated: Date.FormatStyle.Symbol.Weekday](date/formatstyle/symbol/weekday/abbreviated.md)
+### Modifying a Weekday
+- [static var abbreviated: Date.FormatStyle.Symbol.Weekday](./abbreviated.md)
   A shortened weekday representation.
-- [static var narrow: Date.FormatStyle.Symbol.Weekday](date/formatstyle/symbol/weekday/narrow.md)
+- [static var narrow: Date.FormatStyle.Symbol.Weekday](./narrow.md)
   The shortest weekday representation.
-- [static var oneDigit: Date.FormatStyle.Symbol.Weekday](date/formatstyle/symbol/weekday/onedigit.md)
+- [static var oneDigit: Date.FormatStyle.Symbol.Weekday](./onedigit.md)
   The one-digit representation of a weekday.
-- [static var short: Date.FormatStyle.Symbol.Weekday](date/formatstyle/symbol/weekday/short.md)
+- [static var short: Date.FormatStyle.Symbol.Weekday](./short.md)
   The short weekday representation.
-- [static var twoDigits: Date.FormatStyle.Symbol.Weekday](date/formatstyle/symbol/weekday/twodigits.md)
+- [static var twoDigits: Date.FormatStyle.Symbol.Weekday](./twodigits.md)
   The two-digit representation of a standalone weekday, zero-padded if necessary.
 
 

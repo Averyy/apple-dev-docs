@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The container’s name.
 
@@ -20,15 +21,20 @@ The container’s name.
 var name: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * name;
+```
+
 #### Discussion
 
-This property is passed in as part of the initialization of the persistent container. This name is used to locate the [`NSManagedObjectModel`](nsmanagedobjectmodel.md) (if the [`NSManagedObjectModel`](nsmanagedobjectmodel.md) object is not passed in as part of the initialization) and is used to name the persistent store.
+This property is passed in as part of the initialization of the persistent container. This name is used to locate the [`NSManagedObjectModel`](../nsmanagedobjectmodel.md) (if the [`NSManagedObjectModel`](../nsmanagedobjectmodel.md) object is not passed in as part of the initialization) and is used to name the persistent store.
 
 ## See Also
 
-- [var managedObjectModel: NSManagedObjectModel](nspersistentcontainer/managedobjectmodel.md)
+### Getting the Container’s Configuration
+- [var managedObjectModel: NSManagedObjectModel](./managedobjectmodel.md)
   The container’s managed object model.
-- [var persistentStoreCoordinator: NSPersistentStoreCoordinator](nspersistentcontainer/persistentstorecoordinator.md)
+- [var persistentStoreCoordinator: NSPersistentStoreCoordinator](./persistentstorecoordinator.md)
   The container’s persistent store coordinator.
 
 

@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels progress tracking.
 
@@ -20,19 +21,24 @@ Cancels progress tracking.
 func cancel()
 ```
 
+```objc
+- (void) cancel;
+```
+
 #### Discussion
 
-This method invokes the block for [`cancellationHandler`](progress/cancellationhandler.md), if there is one, and ensures that any subsequent reads of the [`isCancelled`](progress/iscancelled.md) property return [`true`](https://developer.apple.com/documentation/swift/true).
+This method invokes the block for [`cancellationHandler`](./cancellationhandler.md), if there is one, and ensures that any subsequent reads of the [`isCancelled`](./iscancelled.md) property return [`true`](../../Swift/true.md).
 
 If the receiver has suboperations, the system cancels their progress as well.
 
 ## See Also
 
-- [func pause()](progress/pause.md)
+### Controlling Progress
+- [func pause()](./pause%28%29.md)
   Pauses progress tracking.
-- [func resume()](progress/resume.md)
+- [func resume()](./resume%28%29.md)
   Resumes progress tracking.
-- [var resumingHandler: (() -> Void)?](progress/resuminghandler.md)
+- [var resumingHandler: (() -> Void)?](./resuminghandler.md)
   The block to invoke when progress resumes.
 
 

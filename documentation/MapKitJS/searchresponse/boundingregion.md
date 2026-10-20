@@ -1,7 +1,8 @@
 # boundingRegion
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The region that encloses the places from the search results.
 
@@ -10,7 +11,7 @@ The region that encloses the places from the search results.
 
 ## Declaration
 
-```swift
+```
 boundingRegion: CoordinateRegion | null;
 ```
 
@@ -20,9 +21,10 @@ This property isn’t present if there aren’t any results.
 
 ## See Also
 
-- [places](searchresponse/places.md)
+### Search response
+- [places](./places.md)
   A list of places that match the search query.
-- [query](searchresponse/query.md)
+- [query](./query.md)
   The query string for performing the search.
 
 

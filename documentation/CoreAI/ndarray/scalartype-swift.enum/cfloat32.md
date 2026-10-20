@@ -1,7 +1,8 @@
 # NDArray.ScalarType.cfloat32
 
 **Framework**: Core AI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 32-bit complex floating-point type.
 
@@ -26,9 +27,10 @@ This type is not currently supported by any operation, but support may be added 
 
 ## See Also
 
-- [NDArray.ScalarType.cfloat16](ndarray/scalartype-swift.enum/cfloat16.md)
+### Defining complex types
+- [NDArray.ScalarType.cfloat16](./cfloat16.md)
   A 16-bit complex floating-point type.
-- [NDArray.ScalarType.cfloat64](ndarray/scalartype-swift.enum/cfloat64.md)
+- [NDArray.ScalarType.cfloat64](./cfloat64.md)
   A 64-bit complex floating-point type.
 
 

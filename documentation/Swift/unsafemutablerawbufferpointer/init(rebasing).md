@@ -1,7 +1,8 @@
 # init(rebasing:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a raw buffer over the same memory as the given raw buffer slice, with the indices rebased to zero.
 

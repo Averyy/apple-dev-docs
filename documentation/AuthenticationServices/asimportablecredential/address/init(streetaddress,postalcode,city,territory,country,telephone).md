@@ -1,7 +1,8 @@
 # init(streetAddress:postalCode:city:territory:country:telephone:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

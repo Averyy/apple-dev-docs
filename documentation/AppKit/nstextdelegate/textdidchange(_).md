@@ -1,7 +1,8 @@
 # textDidChange(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate that the text object has changed its characters or formatting attributes.
 
@@ -15,9 +16,13 @@ Informs the delegate that the text object has changed its characters or formatti
 optional func textDidChange(_ notification: Notification)
 ```
 
+```objc
+- (void) textDidChange:(NSNotification *) notification;
+```
+
 #### Discussion
 
-The name of `aNotification` is [`didChangeNotification`](nstext/didchangenotification.md).
+The name of `aNotification` is [`didChangeNotification`](../nstext/didchangenotification.md).
 
 
 ---

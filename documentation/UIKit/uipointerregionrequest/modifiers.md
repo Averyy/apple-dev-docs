@@ -1,7 +1,8 @@
 # modifiers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Key modifier flags representing keyboard keys pressed by the user at the time of this request.
 
@@ -17,9 +18,14 @@ Key modifier flags representing keyboard keys pressed by the user at the time of
 var modifiers: UIKeyModifierFlags { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIKeyModifierFlags modifiers;
+```
+
 ## See Also
 
-- [var location: CGPoint](uipointerregionrequest/location.md)
+### Inspecting the region request
+- [var location: CGPoint](./location.md)
   The location of the pointer in the interaction’s view’s coordinate space.
 
 

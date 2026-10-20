@@ -1,13 +1,14 @@
 # BundleIdsResponse
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response that contains a list of Bundle ID resources.
 
 ## Declaration
 
-```swift
+```
 object BundleIdsResponse
 ```
 
@@ -18,19 +19,22 @@ object BundleIdsResponse
 - `meta` (PagingInformation): Paging information.
 - `included` ([*]): The requested relationship data.
 
+  **Allowed Types**: `Profile`, `BundleIdCapability`
+
 ## See Also
 
-- [object BundleId](bundleid.md)
+### Objects and Types
+- [object BundleId](./bundleid.md)
   The data structure that represents a Bundle IDs resource.
-- [type BundleIdPlatform](bundleidplatform.md)
+- [type BundleIdPlatform](./bundleidplatform.md)
   Strings that represent the operating system intended for the bundle.
-- [object BundleIdCreateRequest](bundleidcreaterequest.md)
+- [object BundleIdCreateRequest](./bundleidcreaterequest.md)
   The request body you use to create a Bundle ID.
-- [object BundleIdUpdateRequest](bundleidupdaterequest.md)
+- [object BundleIdUpdateRequest](./bundleidupdaterequest.md)
   The request body you use to update a Bundle ID.
-- [object BundleIdResponse](bundleidresponse.md)
+- [object BundleIdResponse](./bundleidresponse.md)
   A response that contains a single Bundle IDs resource.
-- [object BundleIdWithoutIncludesResponse](bundleidwithoutincludesresponse.md)
+- [object BundleIdWithoutIncludesResponse](./bundleidwithoutincludesresponse.md)
   A response that contains a single Bundle IDs resource without includes.
 
 

@@ -1,7 +1,8 @@
 # GCMicroGamepadValueChangedHandler
 
 **Framework**: Game Controller  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Signature for the block that this profile calls when an element’s value changes.
 
@@ -19,6 +20,10 @@ Signature for the block that this profile calls when an element’s value change
 typealias GCMicroGamepadValueChangedHandler = (GCMicroGamepad, GCControllerElement) -> Void
 ```
 
+```c
+typedef void (^)(GCMicroGamepad *, GCControllerElement *) GCMicroGamepadValueChangedHandler;
+```
+
 ## Parameters
 
 - `gamepad`: The profile whose element value changes.
@@ -26,7 +31,8 @@ typealias GCMicroGamepadValueChangedHandler = (GCMicroGamepad, GCControllerEleme
 
 ## See Also
 
-- [var valueChangedHandler: GCMicroGamepadValueChangedHandler?](gcmicrogamepad/valuechangedhandler.md)
+### Receiving a callback when input values change
+- [var valueChangedHandler: GCMicroGamepadValueChangedHandler?](./gcmicrogamepad/valuechangedhandler.md)
   The block that this profile calls when an element’s value changes.
 
 

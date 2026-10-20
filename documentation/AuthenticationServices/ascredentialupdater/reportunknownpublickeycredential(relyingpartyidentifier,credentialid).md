@@ -1,16 +1,19 @@
 # reportUnknownPublicKeyCredential(relyingPartyIdentifier:credentialID:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs credential managers that a specific credential is unknown or no longer accepted.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
-- visionOS 26.0+
+- iOS 26.0+ - Deprecated in 26.2
+- iPadOS 26.0+ - Deprecated in 26.2
+- Mac Catalyst 26.0+ - Deprecated in 26.2
+- macOS 26.0+ - Deprecated in 26.2
+- visionOS 26.0+ - Deprecated in 26.2
+
+> **Deprecated**: Use `ASCredentialDataManager` instead
 
 ## Declaration
 
@@ -24,7 +27,7 @@ Credential managers can act on this report by removing or hiding the credential.
 
 This call shares the updated credential data with all credential managers installed on the system.
 
-> **Note**: This method throws [`ASAuthorizationError`](asauthorizationerror-swift.struct.md) if the system failed to accept the update.
+> **Throws**: This method throws [`ASAuthorizationError`](../asauthorizationerror-swift.struct.md) if the system failed to accept the update.
 
 ## Parameters
 
@@ -33,7 +36,8 @@ This call shares the updated credential data with all credential managers instal
 
 ## See Also
 
-- [func reportUnusedPasswordCredential(domain: String, userName: String) async throws](ascredentialupdater/reportunusedpasswordcredential(domain:username:).md)
+### Reporting unused and unknown credentials
+- [func reportUnusedPasswordCredential(domain: String, userName: String) async throws](./reportunusedpasswordcredential%28domain,username%29.md)
   Informs credential managers that a password is no longer in use.
 
 

@@ -1,7 +1,8 @@
 # CameraRegionProvider.Error.Code.removeAnchorFailed
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Removing a camera region anchor failed.
 

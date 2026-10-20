@@ -1,7 +1,8 @@
 # sec_protocol_options_set_key_update_block(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -18,11 +19,15 @@
 func sec_protocol_options_set_key_update_block(_ options: sec_protocol_options_t, _ key_update_block: @escaping sec_protocol_key_update_t, _ key_update_queue: dispatch_queue_t)
 ```
 
+```c
+void sec_protocol_options_set_key_update_block(sec_protocol_options_t options, sec_protocol_key_update_t key_update_block, dispatch_queue_t key_update_queue);
+```
+
 #### Discussion
 
 Set the key update block.
 
-```None
+```
  A `dispatch_queue_t` on which the key update block should be called.
 ```
 

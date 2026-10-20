@@ -1,7 +1,8 @@
 # next(isolation:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Waits for the next child task to complete, and returns the value it returned.
 
@@ -68,10 +69,11 @@ Don’t call this method from outside the task where you created this task group
 
 ## See Also
 
-- [func next() async -> ChildTaskResult?](taskgroup/next.md)
-- [var isEmpty: Bool](taskgroup/isempty.md)
+### Accessing Individual Results
+- [func next() async -> ChildTaskResult?](./next%28%29.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the group has any remaining tasks.
-- [func waitForAll() async](taskgroup/waitforall.md)
+- [func waitForAll() async](./waitforall%28%29.md)
   Wait for all of the group’s remaining tasks to complete.
 
 

@@ -216,14 +216,12 @@
       "hash": "56a901901b57ef6b44fb325f87105fb95ee8d7e26228c286ef1e3a551f15b66d"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/cameraorientation/!=(_:_:)": {
-      "etag": "W/\"15ed79913033fbaecae578f43743928c\"",
       "file_path": "documentation/DockKit/dockaccessory/cameraorientation/noteq(_,_).md",
-      "hash": "c7c84faeb8124bea2deb19c3943a787b60f39ea3affc558f00b88e668583aa5c"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/cameraorientation/==(_:_:)": {
-      "etag": "W/\"2a669d4a49675ba47a5b83fd2f8894f5\"",
       "file_path": "documentation/DockKit/dockaccessory/cameraorientation/eqeq(_,_).md",
-      "hash": "d59df0272699b44e01bcfc6a3d33b4b883bc776459c50897a65d746bd70ee790"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/cameraorientation/corrected": {
       "etag": "\"235b-65d560cf366cc-df\"",
@@ -1066,14 +1064,12 @@
       "hash": "56a901901b57ef6b44fb325f87105fb95ee8d7e26228c286ef1e3a551f15b66d"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/cameraorientation/!=(_:_:).json": {
-      "etag": "W/\"15ed79913033fbaecae578f43743928c\"",
       "file_path": "documentation/DockKit/dockaccessory/cameraorientation/noteq(_,_).md",
-      "hash": "c7c84faeb8124bea2deb19c3943a787b60f39ea3affc558f00b88e668583aa5c"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/cameraorientation/==(_:_:).json": {
-      "etag": "W/\"2a669d4a49675ba47a5b83fd2f8894f5\"",
       "file_path": "documentation/DockKit/dockaccessory/cameraorientation/eqeq(_,_).md",
-      "hash": "d59df0272699b44e01bcfc6a3d33b4b883bc776459c50897a65d746bd70ee790"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/cameraorientation/corrected.json": {
       "etag": "\"235b-65d560cf366cc-df\"",
@@ -1702,6 +1698,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 340
   }
 }

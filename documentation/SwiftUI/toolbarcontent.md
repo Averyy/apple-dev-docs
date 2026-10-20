@@ -1,7 +1,8 @@
 # ToolbarContent
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Conforming types represent items that can be placed in various locations in a toolbar.
 
@@ -42,64 +43,65 @@ extension MyCustomType: Transition {
 ## Topics
 
 ### Implementing toolbar content
-- [var body: Self.Body](toolbarcontent/body-swift.property.md)
+- [var body: Self.Body](./toolbarcontent/body-swift.property.md)
   The composition of content that comprise the toolbar content.
-- [associatedtype Body : ToolbarContent](toolbarcontent/body-swift.associatedtype.md)
+- [associatedtype Body : ToolbarContent](./toolbarcontent/body-swift.associatedtype.md)
   The type of content representing the body of this toolbar content.
 ### Customizing behaviors
-- [func axisBehavior(ToolbarItemAxisBehavior) -> some ToolbarContent](toolbarcontent/axisbehavior(_:).md)
+- [func axisBehavior(ToolbarItemAxisBehavior) -> some ToolbarContent](./toolbarcontent/axisbehavior%28_%29.md)
   The bar axis behavior of the toolbar item.
-- [struct ToolbarItemAxisBehavior](toolbaritemaxisbehavior.md)
+- [struct ToolbarItemAxisBehavior](./toolbaritemaxisbehavior.md)
   Describes the bar axis behavior of a toolbar item.
 ### Setting visibility
-- [func hidden(Bool) -> some ToolbarContent](toolbarcontent/hidden(_:).md)
+- [func hidden(Bool) -> some ToolbarContent](./toolbarcontent/hidden%28_%29.md)
   Hides a toolbar item within its toolbar.
-- [func sharedBackgroundVisibility(Visibility) -> some ToolbarContent](toolbarcontent/sharedbackgroundvisibility(_:).md)
+- [func sharedBackgroundVisibility(Visibility) -> some ToolbarContent](./toolbarcontent/sharedbackgroundvisibility%28_%29.md)
   Controls the visibility of the glass background effect on items in the toolbar. In certain contexts, such as the navigation bar on iOS and the window toolbar on macOS, toolbar items will be given a glass background effect that is shared with other items in the same logical grouping.
-- [func visibilityPriority(ToolbarItemVisibilityPriority) -> some ToolbarContent](toolbarcontent/visibilitypriority(_:).md)
+- [func visibilityPriority(ToolbarItemVisibilityPriority) -> some ToolbarContent](./toolbarcontent/visibilitypriority%28_%29.md)
   Defines the visibility priority for a toolbar item.
 ### Coordinating with animations
-- [func matchedTransitionSource(id: some Hashable, in: Namespace.ID) -> some ToolbarContent](toolbarcontent/matchedtransitionsource(id:in:).md)
+- [func matchedTransitionSource(id: some Hashable, in: Namespace.ID) -> some ToolbarContent](./toolbarcontent/matchedtransitionsource%28id,in%29.md)
   Identifies this toolbar content as the source of a navigation transition, such as a zoom transition.
 ### Adjusting content margins
-- [func contentMarginsRemoved(Bool) -> some ToolbarContent](toolbarcontent/contentmarginsremoved(_:).md)
+- [func contentMarginsRemoved(Bool) -> some ToolbarContent](./toolbarcontent/contentmarginsremoved%28_%29.md)
   Configures whether the content margins are removed.
 
 ## Relationships
 
 ### Inherited By
-- [CustomizableToolbarContent](customizabletoolbarcontent.md)
+- [CustomizableToolbarContent](./customizabletoolbarcontent.md)
 ### Conforming Types
-- [DefaultToolbarItem](defaulttoolbaritem.md)
-- [EmptyView](emptyview.md)
-- [ForEach](foreach.md)
-- [Group](group.md)
-- [ToolbarItem](toolbaritem.md)
-- [ToolbarItemGroup](toolbaritemgroup.md)
-- [ToolbarOverflowMenu](toolbaroverflowmenu.md)
-- [ToolbarSpacer](toolbarspacer.md)
-- [ToolbarTitleMenu](toolbartitlemenu.md)
-- [TupleContent](tuplecontent.md)
+- [DefaultToolbarItem](./defaulttoolbaritem.md)
+- [EmptyView](./emptyview.md)
+- [ForEach](./foreach.md)
+- [Group](./group.md)
+- [ToolbarItem](./toolbaritem.md)
+- [ToolbarItemGroup](./toolbaritemgroup.md)
+- [ToolbarOverflowMenu](./toolbaroverflowmenu.md)
+- [ToolbarSpacer](./toolbarspacer.md)
+- [ToolbarTitleMenu](./toolbartitlemenu.md)
+- [TupleContent](./tuplecontent.md)
 
 ## See Also
 
-- [func toolbar(content:)](view/toolbar(content:).md)
+### Populating a toolbar
+- [func toolbar(content:)](./view/toolbar%28content%29.md)
   Populates the toolbar or navigation bar with the specified items.
-- [struct ToolbarItem](toolbaritem.md)
+- [struct ToolbarItem](./toolbaritem.md)
   A model that represents an item which can be placed in the toolbar or navigation bar.
-- [struct ToolbarItemGroup](toolbaritemgroup.md)
+- [struct ToolbarItemGroup](./toolbaritemgroup.md)
   A model that represents a group of `ToolbarItem`s which can be placed in the toolbar or navigation bar.
-- [struct ToolbarItemPlacement](toolbaritemplacement.md)
+- [struct ToolbarItemPlacement](./toolbaritemplacement.md)
   A structure that defines the placement of a toolbar item.
-- [func toolbarOverflowMenu<C>(content: () -> C) -> some View](view/toolbaroverflowmenu(content:).md)
+- [func toolbarOverflowMenu<C>(content: () -> C) -> some View](./view/toolbaroverflowmenu%28content%29.md)
   Configures the overflow menu of a toolbar.
-- [struct ToolbarOverflowMenu](toolbaroverflowmenu.md)
+- [struct ToolbarOverflowMenu](./toolbaroverflowmenu.md)
   The overflow menu of a toolbar.
-- [struct ToolbarContentBuilder](toolbarcontentbuilder.md)
+- [struct ToolbarContentBuilder](./toolbarcontentbuilder.md)
   Constructs a toolbar item set from multi-expression closures.
-- [struct ToolbarSpacer](toolbarspacer.md)
+- [struct ToolbarSpacer](./toolbarspacer.md)
   A standard space item in toolbars.
-- [struct DefaultToolbarItem](defaulttoolbaritem.md)
+- [struct DefaultToolbarItem](./defaulttoolbaritem.md)
   A toolbar item that represents a system component.
 
 

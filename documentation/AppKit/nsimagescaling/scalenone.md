@@ -1,7 +1,8 @@
 # NSImageScaling.scaleNone
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Do not scale the image.
 
@@ -14,13 +15,18 @@ Do not scale the image.
 case scaleNone
 ```
 
+```c
+NSImageScaleNone
+```
+
 ## See Also
 
-- [NSImageScaling.scaleProportionallyDown](nsimagescaling/scaleproportionallydown.md)
+### Constants
+- [NSImageScaling.scaleProportionallyDown](./scaleproportionallydown.md)
   If it is too large for the destination, scale the image down while preserving the aspect ratio.
-- [NSImageScaling.scaleAxesIndependently](nsimagescaling/scaleaxesindependently.md)
+- [NSImageScaling.scaleAxesIndependently](./scaleaxesindependently.md)
   Scale each dimension to exactly fit destination.
-- [NSImageScaling.scaleProportionallyUpOrDown](nsimagescaling/scaleproportionallyupordown.md)
+- [NSImageScaling.scaleProportionallyUpOrDown](./scaleproportionallyupordown.md)
   Scale the image to its maximum possible dimensions while both staying within the destination area and preserving its aspect ratio.
 
 

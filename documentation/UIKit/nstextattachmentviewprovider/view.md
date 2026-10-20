@@ -1,7 +1,8 @@
 # view
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text attachment’s view.
 
@@ -18,15 +19,20 @@ The text attachment’s view.
 var view: UIView? { get set }
 ```
 
+```objc
+@property (strong, nullable) UIView * view;
+```
+
 ## See Also
 
-- [var location: any NSTextLocation](nstextattachmentviewprovider/location.md)
+### Defining the contents
+- [var location: any NSTextLocation](./location.md)
   The location that indicates the start of the text attachment.
-- [var textAttachment: NSTextAttachment?](nstextattachmentviewprovider/textattachment.md)
+- [var textAttachment: NSTextAttachment?](./textattachment.md)
   The text attachment for this view.
-- [var textLayoutManager: NSTextLayoutManager?](nstextattachmentviewprovider/textlayoutmanager.md)
+- [var textLayoutManager: NSTextLayoutManager?](./textlayoutmanager.md)
   The text layout manager for this view.
-- [var tracksTextAttachmentViewBounds: Bool](nstextattachmentviewprovider/trackstextattachmentviewbounds.md)
+- [var tracksTextAttachmentViewBounds: Bool](./trackstextattachmentviewbounds.md)
   A Boolean value that determines the text attachment’s bounds policy.
 
 

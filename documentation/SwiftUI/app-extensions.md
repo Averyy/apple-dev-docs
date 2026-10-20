@@ -1,93 +1,95 @@
 # App extensions
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 Extend your app’s basic functionality to other parts of the system, like by adding a Widget.
 
 #### Overview
 
-Use SwiftUI along with [`WidgetKit`](https://developer.apple.com/documentation/widgetkit) to add widgets to your app.
+Use SwiftUI along with [WidgetKit](../WidgetKit/WidgetKit.md) to add widgets to your app.
 
-![None](/images/com.apple.SwiftUI/app-extensions-hero@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/app-extensions-hero@2x.png)
 
-Widgets provide quick access to relevant content from your app. Define a structure that conforms to the [`Widget`](widget.md) protocol, and declare a view hierarchy for the widget. Configure the views inside the widget as you do other SwiftUI views, using view modifiers, including a few widget-specific modifiers.
+Widgets provide quick access to relevant content from your app. Define a structure that conforms to the [`Widget`](./widget.md) protocol, and declare a view hierarchy for the widget. Configure the views inside the widget as you do other SwiftUI views, using view modifiers, including a few widget-specific modifiers.
 
-For design guidance, see [`Widgets`](https://developer.apple.com/design/human-interface-guidelines/widgets) in the Human Interface Guidelines.
+For design guidance, see [Widgets](https://developer.apple.com/design/human-interface-guidelines/widgets) in the Human Interface Guidelines.
 
 ## Topics
 
 ### Creating widgets
-- [Building Widgets Using WidgetKit and SwiftUI](../widgetkit/building-widgets-using-widgetkit-and-swiftui.md)
+- [Building Widgets Using WidgetKit and SwiftUI](../WidgetKit/building-widgets-using-widgetkit-and-swiftui.md)
   Create widgets to show your app’s content on the Home screen, with custom intents for user-customizable settings.
-- [Creating a widget extension](../widgetkit/creating-a-widget-extension.md)
+- [Creating a widget extension](../WidgetKit/creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
-- [Keeping a widget up to date](../widgetkit/keeping-a-widget-up-to-date.md)
+- [Keeping a widget up to date](../WidgetKit/keeping-a-widget-up-to-date.md)
   Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.
-- [Making a configurable widget](../widgetkit/making-a-configurable-widget.md)
+- [Making a configurable widget](../WidgetKit/making-a-configurable-widget.md)
   Give people the option to customize their widgets by adding a custom app intent to your project.
-- [protocol Widget](widget.md)
+- [protocol Widget](./widget.md)
   The configuration and content of a widget to display on the Home screen or in Notification Center.
-- [protocol WidgetBundle](widgetbundle.md)
+- [protocol WidgetBundle](./widgetbundle.md)
   A container used to expose multiple widgets from a single widget extension.
-- [struct LimitedAvailabilityConfiguration](limitedavailabilityconfiguration.md)
+- [struct LimitedAvailabilityConfiguration](./limitedavailabilityconfiguration.md)
   A type-erased widget configuration.
-- [protocol WidgetConfiguration](widgetconfiguration.md)
+- [protocol WidgetConfiguration](./widgetconfiguration.md)
   A type that describes a widget’s content.
-- [struct EmptyWidgetConfiguration](emptywidgetconfiguration.md)
+- [struct EmptyWidgetConfiguration](./emptywidgetconfiguration.md)
   An empty widget configuration.
 ### Composing control widgets
-- [protocol ControlWidget](controlwidget.md)
+- [protocol ControlWidget](./controlwidget.md)
   The configuration and content of a control widget to display in system spaces such as Control Center, the Lock Screen, and the Action Button.
-- [protocol ControlWidgetConfiguration](controlwidgetconfiguration.md)
+- [protocol ControlWidgetConfiguration](./controlwidgetconfiguration.md)
   A type that describes a control widget’s content.
-- [struct EmptyControlWidgetConfiguration](emptycontrolwidgetconfiguration.md)
+- [struct EmptyControlWidgetConfiguration](./emptycontrolwidgetconfiguration.md)
   An empty control widget configuration.
-- [struct ControlWidgetConfigurationBuilder](controlwidgetconfigurationbuilder.md)
+- [struct ControlWidgetConfigurationBuilder](./controlwidgetconfigurationbuilder.md)
   A custom attribute that constructs a control widget’s body.
-- [protocol ControlWidgetTemplate](controlwidgettemplate.md)
+- [protocol ControlWidgetTemplate](./controlwidgettemplate.md)
   A type that describes a control widget’s content.
-- [struct EmptyControlWidgetTemplate](emptycontrolwidgettemplate.md)
+- [struct EmptyControlWidgetTemplate](./emptycontrolwidgettemplate.md)
   An empty control widget template.
-- [struct ControlWidgetTemplateBuilder](controlwidgettemplatebuilder.md)
+- [struct ControlWidgetTemplateBuilder](./controlwidgettemplatebuilder.md)
   A custom attribute that constructs a control widget template’s body.
-- [func controlWidgetActionHint(_:)](view/controlwidgetactionhint(_:).md)
+- [func controlWidgetActionHint(_:)](./view/controlwidgetactionhint%28_%29.md)
   The action hint of the control described by the modified label.
-- [func controlWidgetStatus(_:)](view/controlwidgetstatus(_:).md)
+- [func controlWidgetStatus(_:)](./view/controlwidgetstatus%28_%29.md)
   The status of the control described by the modified label.
 ### Labeling a widget
-- [func widgetLabel(_:)](view/widgetlabel(_:).md)
+- [func widgetLabel(_:)](./view/widgetlabel%28_%29.md)
   Returns a localized text label that displays additional content outside the accessory family widget’s main SwiftUI view.
-- [func widgetLabel<Label>(label: () -> Label) -> some View](view/widgetlabel(label:).md)
+- [func widgetLabel<Label>(label: () -> Label) -> some View](./view/widgetlabel%28label%29.md)
   Creates a label for displaying additional content outside an accessory family widget’s main SwiftUI view.
 ### Styling a widget group
-- [func accessoryWidgetGroupStyle(AccessoryWidgetGroupStyle) -> some View](view/accessorywidgetgroupstyle(_:).md)
+- [func accessoryWidgetGroupStyle(AccessoryWidgetGroupStyle) -> some View](./view/accessorywidgetgroupstyle%28_%29.md)
   The view modifier that can be applied to `AccessoryWidgetGroup` to specify the shape the three content views will be masked with. The value of `style` is set to `.automatic`, which is `.circular` by default.
 ### Controlling the accented group
-- [func widgetAccentable(Bool) -> some View](view/widgetaccentable(_:).md)
+- [func widgetAccentable(Bool) -> some View](./view/widgetaccentable%28_%29.md)
   Adds the view and all of its subviews to the accented group.
 ### Managing placement in the Dynamic Island
-- [func dynamicIsland(verticalPlacement: DynamicIslandExpandedRegionVerticalPlacement) -> some View](view/dynamicisland(verticalplacement:).md)
+- [func dynamicIsland(verticalPlacement: DynamicIslandExpandedRegionVerticalPlacement) -> some View](./view/dynamicisland%28verticalplacement%29.md)
   Specifies the vertical placement for a view of an expanded Live Activity that appears in the Dynamic Island.
 
 ## See Also
 
-- [App organization](app-organization.md)
+### App structure
+- [App organization](./app-organization.md)
   Define the entry point and top-level structure of your app.
-- [Scenes](scenes.md)
+- [Scenes](./scenes.md)
   Declare the user interface groupings that make up the parts of your app.
-- [Windows](windows.md)
+- [Windows](./windows.md)
   Display user interface content in a window or a collection of windows.
-- [Immersive spaces](immersive-spaces.md)
+- [Immersive spaces](./immersive-spaces.md)
   Display unbounded content in a person’s surroundings.
-- [Documents](documents.md)
+- [Documents](./documents.md)
   Enable people to open and manage documents.
-- [Navigation](navigation.md)
+- [Navigation](./navigation.md)
   Enable people to move between different parts of your app’s view hierarchy within a scene.
-- [Modal presentations](modal-presentations.md)
+- [Modal presentations](./modal-presentations.md)
   Present content in a separate view that offers focused interaction.
-- [Toolbars](toolbars.md)
+- [Toolbars](./toolbars.md)
   Provide immediate access to frequently used commands and controls.
-- [Search](search.md)
+- [Search](./search.md)
   Enable people to search for text or other content within your app.
 
 

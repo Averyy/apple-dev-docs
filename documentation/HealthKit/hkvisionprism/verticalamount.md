@@ -1,7 +1,8 @@
 # verticalAmount
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strength of the vertical correction.
 
@@ -20,27 +21,32 @@ The strength of the vertical correction.
 var verticalAmount: HKQuantity { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) HKQuantity * verticalAmount;
+```
+
 #### Discussion
 
-This parameter holds the vertical component of the prescriptions correction, measured in [`prismDiopter()`](hkunit/prismdiopter().md) units.
+This parameter holds the vertical component of the prescriptions correction, measured in [`prismDiopter()`](../hkunit/prismdiopter%28%29.md) units.
 
 ## See Also
 
-- [var eye: HKVisionEye](hkvisionprism/eye.md)
+### Accessing lens specification data
+- [var eye: HKVisionEye](./eye.md)
   A value indicating which eye the correction applies to.
-- [enum HKVisionEye](hkvisioneye.md)
+- [enum HKVisionEye](../hkvisioneye.md)
   A value that specifies the eye for a vision prescription.
-- [var amount: HKQuantity](hkvisionprism/amount.md)
+- [var amount: HKQuantity](./amount.md)
   The strength of the correction.
-- [var angle: HKQuantity](hkvisionprism/angle.md)
+- [var angle: HKQuantity](./angle.md)
   The orientation of the adjustment.
-- [var horizontalAmount: HKQuantity](hkvisionprism/horizontalamount.md)
+- [var horizontalAmount: HKQuantity](./horizontalamount.md)
   The strength of the horizontal correction.
-- [var horizontalBase: HKPrismBase](hkvisionprism/horizontalbase.md)
+- [var horizontalBase: HKPrismBase](./horizontalbase.md)
   The orientation of the horizontal portion of the correction.
-- [var verticalBase: HKPrismBase](hkvisionprism/verticalbase.md)
+- [var verticalBase: HKPrismBase](./verticalbase.md)
   The orientation of the vertical portion of the correction.
-- [enum HKPrismBase](hkprismbase.md)
+- [enum HKPrismBase](../hkprismbase.md)
   The orientation of the prism correction, represented by the location of the prism’s base (the thickest part of the prism).
 
 

@@ -1,7 +1,8 @@
 # loadFileRepresentation(forTypeIdentifier:completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously writes a copy of the provided, typed data to a temporary file, returning a progress object.
 
@@ -20,27 +21,32 @@ Asynchronously writes a copy of the provided, typed data to a temporary file, re
 func loadFileRepresentation(forTypeIdentifier typeIdentifier: String, completionHandler: @escaping @Sendable (URL?, (any Error)?) -> Void) -> Progress
 ```
 
+```objc
+- (NSProgress *) loadFileRepresentationForTypeIdentifier:(NSString *) typeIdentifier completionHandler:(void (^)(NSURL *url, NSError *error)) completionHandler;
+```
+
 #### Discussion
 
 This method writes a copy of the file’s data to a temporary file, which the system deletes when the completion handler returns.
 
 ## See Also
 
-- [func loadItem(forTypeIdentifier: String, options: [AnyHashable : Any]?, completionHandler: NSItemProvider.CompletionHandler?)](nsitemprovider/loaditem(fortypeidentifier:options:completionhandler:).md)
+### Loading the provider’s contents
+- [func loadItem(forTypeIdentifier: String, options: [AnyHashable : Any]?, completionHandler: NSItemProvider.CompletionHandler?)](./loaditem%28fortypeidentifier,options,completionhandler%29.md)
   Loads the item’s data and coerces it to the specified type.
-- [func loadDataRepresentation(forTypeIdentifier: String, completionHandler: (Data?, (any Error)?) -> Void) -> Progress](nsitemprovider/loaddatarepresentation(fortypeidentifier:completionhandler:).md)
+- [func loadDataRepresentation(forTypeIdentifier: String, completionHandler: (Data?, (any Error)?) -> Void) -> Progress](./loaddatarepresentation%28fortypeidentifier,completionhandler%29.md)
   Asynchronously copies the provided, typed data into a generic data object, returning a progress object.
-- [func loadDataRepresentation(for: UTType, completionHandler: (Data?, (any Error)?) -> Void) -> Progress](nsitemprovider/loaddatarepresentation(for:completionhandler:).md)
+- [func loadDataRepresentation(for: UTType, completionHandler: (Data?, (any Error)?) -> Void) -> Progress](./loaddatarepresentation%28for,completionhandler%29.md)
   Asynchronously copies the universal type data into a generic data object, returning a progress object.
-- [func loadFileRepresentation(for: UTType, openInPlace: Bool, completionHandler: (URL?, Bool, (any Error)?) -> Void) -> Progress](nsitemprovider/loadfilerepresentation(for:openinplace:completionhandler:).md)
+- [func loadFileRepresentation(for: UTType, openInPlace: Bool, completionHandler: (URL?, Bool, (any Error)?) -> Void) -> Progress](./loadfilerepresentation%28for,openinplace,completionhandler%29.md)
   Asynchronously writes a copy of the universal type data to a temporary file, returning a progress object.
-- [func loadInPlaceFileRepresentation(forTypeIdentifier: String, completionHandler: (URL?, Bool, (any Error)?) -> Void) -> Progress](nsitemprovider/loadinplacefilerepresentation(fortypeidentifier:completionhandler:).md)
+- [func loadInPlaceFileRepresentation(forTypeIdentifier: String, completionHandler: (URL?, Bool, (any Error)?) -> Void) -> Progress](./loadinplacefilerepresentation%28fortypeidentifier,completionhandler%29.md)
   Asynchronously opens a file in place, if possible, returning a progress object.
-- [func loadObject(ofClass: any NSItemProviderReading.Type, completionHandler: ((any NSItemProviderReading)?, (any Error)?) -> Void) -> Progress](nsitemprovider/loadobject(ofclass:completionhandler:)-8ak5d.md)
+- [func loadObject(ofClass: any NSItemProviderReading.Type, completionHandler: ((any NSItemProviderReading)?, (any Error)?) -> Void) -> Progress](./loadobject%28ofclass,completionhandler%29-8ak5d.md)
   Asynchronously loads an object of a specified class to an item provider, returning a progress object.
-- [func loadObject<T>(ofClass: T.Type, completionHandler: (T?, (any Error)?) -> Void) -> Progress](nsitemprovider/loadobject(ofclass:completionhandler:)-6pysm.md)
+- [func loadObject<T>(ofClass: T.Type, completionHandler: (T?, (any Error)?) -> Void) -> Progress](./loadobject%28ofclass,completionhandler%29-6pysm.md)
   Asynchronously loads an object of a specified class to an item provider, returning a progress object.
-- [func loadTransferable<T>(type: T.Type, completionHandler: (Result<T, any Error>) -> Void) -> Progress](nsitemprovider/loadtransferable(type:completionhandler:).md)
+- [func loadTransferable<T>(type: T.Type, completionHandler: (Result<T, any Error>) -> Void) -> Progress](./loadtransferable%28type,completionhandler%29.md)
   Asynchronously loads an object of a specified transferable type to an item provider, returning a progress object.
 
 

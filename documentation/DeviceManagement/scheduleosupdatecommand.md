@@ -1,37 +1,41 @@
 # ScheduleOSUpdateCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to schedule an update of the operating system on a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 9.0+
-- macOS 10.11+
-- tvOS 12.0+
+- iOS 9.0+ - Deprecated in 26.0
+- iPadOS 9.0+ - Deprecated in 26.0
+- Mac Catalyst 9.0+ - Deprecated in 26.0
+- macOS 10.11+ - Deprecated in 26.0
+- tvOS 12.0+ - Deprecated in 26.0
+
+> **Deprecated**: **Removed** Use the declarative management software update features instead.
 
 ## Declaration
 
-```swift
+```
 object ScheduleOSUpdateCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object ScheduleOSUpdateCommand.Command](scheduleosupdatecommand/command-data.dictionary.md)
+- [object ScheduleOSUpdateCommand.Command](./scheduleosupdatecommand/command-data.dictionary.md)
   The command to schedule an update of the operating system on a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 
 ## Properties
 
-- `Command` (ScheduleOSUpdateCommand.Command) *(required)*: The command dictionary.
-- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+- `Command` (ScheduleOSUpdateCommand.Command) *(required)* *(deprecated)*: The command dictionary.
+- `CommandUUID` (string) *(required)* *(deprecated)*: The unique identifier of the command.
 
 ## See Also
 
-- [object ScheduleOSUpdateResponse](scheduleosupdateresponse.md)
+### Commands and responses
+- [object ScheduleOSUpdateResponse](./scheduleosupdateresponse.md)
   A response from the device after it processes the command to schedule an update of the operating system on a device. Removed: use the declarative management `com.apple.configuration.softwareupdate.enforcement.specific` configuration.
 
 

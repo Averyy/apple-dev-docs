@@ -1,7 +1,8 @@
 # rotated(by:around:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func rotated(by quaternion: simd_quatf, around pivot: Point3DFloat) -> Rect3DFloat
+```
+
+```c
+static SPRect3DFloat SPRect3DFloatRotateByQuaternionAroundPoint(SPRect3DFloat rect, simd_quatf quaternion, SPPoint3DFloat pivot);
 ```
 
 #### Return Value

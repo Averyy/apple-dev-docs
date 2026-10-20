@@ -1,6 +1,8 @@
 # Selecting a selfie based on capture quality
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: Sample Code  
+**Download**: [SelectingASelfieBasedOnCaptureQuality.zip](https://docs-assets.developer.apple.com/published/1a22def1b6eb/SelectingASelfieBasedOnCaptureQuality.zip)
 
 Compare face-capture quality in a set of images by using Vision.
 
@@ -68,7 +70,7 @@ cell.imageView.image = faceImage
 cell.label.text = "\(savedFace.qualityScore)"
 ```
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To run this sample app, you need the following:
 
@@ -77,19 +79,20 @@ To run this sample app, you need the following:
 
 Connect the iPhone to the Mac over USB. The first time you run this sample app, the system prompts you to grant the app access to the camera. You must allow the sample app to access the camera for it to function correctly.
 
-> **Note**: This sample code project is associated with WWDC19 session 222: [`Understanding Images in Vision Framework`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/222/).
+> **Note**: This sample code project is associated with WWDC19 session 222: [Understanding Images in Vision Framework](https://developer.apple.com/videos/play/wwdc19/222/).
 
 ## See Also
 
-- [class VNDetectFaceCaptureQualityRequest](vndetectfacecapturequalityrequest.md)
+### Face and body detection
+- [class VNDetectFaceCaptureQualityRequest](./vndetectfacecapturequalityrequest.md)
   A request that produces a floating-point number that represents the capture quality of a face in a photo.
-- [class VNDetectFaceLandmarksRequest](vndetectfacelandmarksrequest.md)
+- [class VNDetectFaceLandmarksRequest](./vndetectfacelandmarksrequest.md)
   An image-analysis request that finds facial features like eyes and mouth in an image.
-- [class VNDetectFaceRectanglesRequest](vndetectfacerectanglesrequest.md)
+- [class VNDetectFaceRectanglesRequest](./vndetectfacerectanglesrequest.md)
   A request that finds faces within an image.
-- [class VNDetectHumanRectanglesRequest](vndetecthumanrectanglesrequest.md)
+- [class VNDetectHumanRectanglesRequest](./vndetecthumanrectanglesrequest.md)
   A request that finds rectangular regions that contain people in an image.
-- [class VNHumanObservation](vnhumanobservation.md)
+- [class VNHumanObservation](./vnhumanobservation.md)
   An object that represents a person that the request detects.
 
 

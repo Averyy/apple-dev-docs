@@ -1,7 +1,8 @@
 # CSSM_ATTRIBUTE_DATA_CRYPTO_DATA
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_ATTRIBUTE_DATA_CRYPTO_DATA: UInt32 { get }
+```
+
+```c
+CSSM_ATTRIBUTE_DATA_CRYPTO_DATA
 ```
 
 

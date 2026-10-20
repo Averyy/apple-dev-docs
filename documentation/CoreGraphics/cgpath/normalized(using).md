@@ -1,7 +1,8 @@
 # normalized(using:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,16 +21,17 @@ func normalized(using rule: CGPathFillRule = .winding) -> CGPath
 
 ## See Also
 
-- [func applyWithBlock((UnsafePointer<CGPathElement>) -> Void)](cgpath/applywithblock(_:).md)
-- [func componentsSeparated(using: CGPathFillRule) -> [CGPath]](cgpath/componentsseparated(using:).md)
-- [func flattened(threshold: CGFloat) -> CGPath](cgpath/flattened(threshold:).md)
-- [func intersection(CGPath, using: CGPathFillRule) -> CGPath](cgpath/intersection(_:using:).md)
-- [func intersects(CGPath, using: CGPathFillRule) -> Bool](cgpath/intersects(_:using:).md)
-- [func lineIntersection(CGPath, using: CGPathFillRule) -> CGPath](cgpath/lineintersection(_:using:).md)
-- [func lineSubtracting(CGPath, using: CGPathFillRule) -> CGPath](cgpath/linesubtracting(_:using:).md)
-- [func subtracting(CGPath, using: CGPathFillRule) -> CGPath](cgpath/subtracting(_:using:).md)
-- [func symmetricDifference(CGPath, using: CGPathFillRule) -> CGPath](cgpath/symmetricdifference(_:using:).md)
-- [func union(CGPath, using: CGPathFillRule) -> CGPath](cgpath/union(_:using:).md)
+### Instance Methods
+- [func applyWithBlock((UnsafePointer<CGPathElement>) -> Void)](./applywithblock%28_%29.md)
+- [func componentsSeparated(using: CGPathFillRule) -> [CGPath]](./componentsseparated%28using%29.md)
+- [func flattened(threshold: CGFloat) -> CGPath](./flattened%28threshold%29.md)
+- [func intersection(CGPath, using: CGPathFillRule) -> CGPath](./intersection%28_,using%29.md)
+- [func intersects(CGPath, using: CGPathFillRule) -> Bool](./intersects%28_,using%29.md)
+- [func lineIntersection(CGPath, using: CGPathFillRule) -> CGPath](./lineintersection%28_,using%29.md)
+- [func lineSubtracting(CGPath, using: CGPathFillRule) -> CGPath](./linesubtracting%28_,using%29.md)
+- [func subtracting(CGPath, using: CGPathFillRule) -> CGPath](./subtracting%28_,using%29.md)
+- [func symmetricDifference(CGPath, using: CGPathFillRule) -> CGPath](./symmetricdifference%28_,using%29.md)
+- [func union(CGPath, using: CGPathFillRule) -> CGPath](./union%28_,using%29.md)
 
 
 ---

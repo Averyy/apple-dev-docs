@@ -1,7 +1,8 @@
 # currentUser
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Environment of the current user.
 
@@ -17,6 +18,10 @@ Environment of the current user.
 
 ```swift
 class var currentUser: LAEnvironment { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) LAEnvironment * currentUser;
 ```
 
 

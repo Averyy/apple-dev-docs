@@ -1,7 +1,8 @@
 # responses
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The model responses from the transcript.
 
@@ -22,9 +23,10 @@ var responses: [Transcript.Response]
 
 ## See Also
 
-- [var instructionText: String](structuredtranscript/instructiontext.md)
+### Inspecting prompts and responses
+- [var instructionText: String](./instructiontext.md)
   The system instruction text from the transcript.
-- [var prompts: [String]](structuredtranscript/prompts.md)
+- [var prompts: [String]](./prompts.md)
   The user prompt strings from the transcript.
 
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate that receives updates on the discovered accessories.
 
@@ -17,9 +18,14 @@ A delegate that receives updates on the discovered accessories.
 weak var delegate: (any HMAccessoryBrowserDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<HMAccessoryBrowserDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol HMAccessoryBrowserDelegate](hmaccessorybrowserdelegate.md)
+### Tracking the addition or removal of accessories
+- [protocol HMAccessoryBrowserDelegate](../hmaccessorybrowserdelegate.md)
   An interface used to notify an accessory browser delegate of new accessories.
 
 

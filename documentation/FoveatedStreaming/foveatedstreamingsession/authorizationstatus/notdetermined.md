@@ -1,7 +1,8 @@
 # FoveatedStreamingSession.AuthorizationStatus.notDetermined
 
 **Framework**: Foveated Streaming  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user has not yet been prompted for this capability.
 

@@ -1,7 +1,8 @@
 # phStr
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The string used to represent the phoneme. The string does not necessarily have a phonetic connection to the phoneme, but might simply be an abstract textual representation of it.
 
@@ -12,6 +13,10 @@ The string used to represent the phoneme. The string does not necessarily have a
 
 ```swift
 var phStr: Str15
+```
+
+```c
+Str15 phStr;
 ```
 
 

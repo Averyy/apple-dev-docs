@@ -1,7 +1,8 @@
 # directLevel
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The level of the direct unreverberated signal that an entity emits.
 

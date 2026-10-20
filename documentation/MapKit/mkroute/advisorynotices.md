@@ -1,7 +1,8 @@
 # advisoryNotices
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of advisory notice strings for the route.
 
@@ -20,23 +21,28 @@ An array of advisory notice strings for the route.
 var advisoryNotices: [String] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * advisoryNotices;
+```
+
 #### Discussion
 
-This property contains an array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects. The framework localizes each string according to the user’s language preferences. The strings contain additional information that’s important for the user to know about the route. For example, a string might note the closing of a portion of the route during the winter or after big storms.
+This property contains an array of [`NSString`](../../Foundation/nsstring.md) objects. The framework localizes each string according to the user’s language preferences. The strings contain additional information that’s important for the user to know about the route. For example, a string might note the closing of a portion of the route during the winter or after big storms.
 
 ## See Also
 
-- [var name: String](mkroute/name.md)
+### Getting additional route details
+- [var name: String](./name.md)
   The assigned name for the route.
-- [var hasHighways: Bool](mkroute/hashighways.md)
+- [var hasHighways: Bool](./hashighways.md)
   A Boolean value that indicates whether the route contains highways.
-- [var hasTolls: Bool](mkroute/hastolls.md)
+- [var hasTolls: Bool](./hastolls.md)
   A Boolean value that indicates whether the route has tolls.
-- [var distance: CLLocationDistance](mkroute/distance.md)
+- [var distance: CLLocationDistance](./distance.md)
   The route distance, in meters.
-- [var expectedTravelTime: TimeInterval](mkroute/expectedtraveltime.md)
+- [var expectedTravelTime: TimeInterval](./expectedtraveltime.md)
   The expected travel time, in seconds.
-- [var transportType: MKDirectionsTransportType](mkroute/transporttype.md)
+- [var transportType: MKDirectionsTransportType](./transporttype.md)
   The overall route transport type.
 
 

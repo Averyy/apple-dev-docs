@@ -1,7 +1,8 @@
 # SubscriptionIntroductoryOfferInlineCreate.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a subscription introductory offer inline create resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a subscription introductory offer inline create resourc
 
 ## Declaration
 
-```swift
+```
 object SubscriptionIntroductoryOfferInlineCreate.Attributes
 ```
 
@@ -25,7 +26,8 @@ object SubscriptionIntroductoryOfferInlineCreate.Attributes
 
 ## See Also
 
-- [object SubscriptionIntroductoryOfferInlineCreate.Relationships](subscriptionintroductoryofferinlinecreate/relationships-data.dictionary.md)
+### Objects
+- [object SubscriptionIntroductoryOfferInlineCreate.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

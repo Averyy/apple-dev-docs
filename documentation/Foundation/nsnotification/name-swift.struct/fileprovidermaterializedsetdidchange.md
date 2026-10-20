@@ -1,7 +1,8 @@
 # fileProviderMaterializedSetDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -17,8 +18,9 @@ static let fileProviderMaterializedSetDidChange: NSNotification.Name
 
 ## See Also
 
-- [static let fileProviderDomainDidChange: NSNotification.Name](nsnotification/name-swift.struct/fileproviderdomaindidchange.md)
-- [static let fileProviderPendingSetDidChange: NSNotification.Name](nsnotification/name-swift.struct/fileproviderpendingsetdidchange.md)
+### File Provider
+- [static let fileProviderDomainDidChange: NSNotification.Name](./fileproviderdomaindidchange.md)
+- [static let fileProviderPendingSetDidChange: NSNotification.Name](./fileproviderpendingsetdidchange.md)
 
 
 ---

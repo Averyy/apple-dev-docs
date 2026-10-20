@@ -1,7 +1,8 @@
 # kSecAttrAuthenticationTypeMSN
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Microsoft Network default authentication.
 
@@ -18,6 +19,10 @@ Microsoft Network default authentication.
 
 ```swift
 let kSecAttrAuthenticationTypeMSN: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrAuthenticationTypeMSN;
 ```
 
 

@@ -1,7 +1,8 @@
 # CiBuildRun.Attributes.DestinationCommit
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The latest commit of a pull request’s target branch or the source commit for builds that aren’t pull request builds.
 
@@ -10,7 +11,7 @@ The latest commit of a pull request’s target branch or the source commit for b
 
 ## Declaration
 
-```swift
+```
 object CiBuildRun.Attributes.DestinationCommit
 ```
 
@@ -24,15 +25,16 @@ object CiBuildRun.Attributes.DestinationCommit
 
 ## See Also
 
-- [object CiBuildRun.Attributes.SourceCommit](cibuildrun/attributes-data.dictionary/sourcecommit-data.dictionary.md)
+### Objects and types
+- [object CiBuildRun.Attributes.SourceCommit](./sourcecommit-data.dictionary.md)
   The latest commit of a Git branch or tag, or of a pull request’s source branch.
-- [object CiGitUser](cigituser.md)
+- [object CiGitUser](../../cigituser.md)
   The Git identity (name and email) of the person who authored or committed the code change that triggered an Xcode Cloud build.
-- [object CiIssueCounts](ciissuecounts.md)
+- [object CiIssueCounts](../../ciissuecounts.md)
   A summary of the warnings, errors, analyzer warnings, and test failures in an Xcode Cloud build run.
-- [type CiCompletionStatus](cicompletionstatus.md)
+- [type CiCompletionStatus](../../cicompletionstatus.md)
   A string that represents the completion status of an Xcode Cloud build.
-- [type CiExecutionProgress](ciexecutionprogress.md)
+- [type CiExecutionProgress](../../ciexecutionprogress.md)
   A string that represents the progress of an ongoing Xcode Cloud build.
 
 

@@ -1,7 +1,8 @@
 # AppPromotedPurchasesLinkagesRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage identifying a promoted purchase associated with the app promoted purchases linkages request.
 
@@ -10,14 +11,14 @@ The resource linkage identifying a promoted purchase associated with the app pro
 
 ## Declaration
 
-```swift
+```
 object AppPromotedPurchasesLinkagesRequest.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `promotedPurchases`
 
 
 ---

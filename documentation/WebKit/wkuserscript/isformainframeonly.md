@@ -1,7 +1,8 @@
 # isForMainFrameOnly
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to inject the script into the main frame or all frames.
 
@@ -18,17 +19,22 @@ A Boolean value that indicates whether to inject the script into the main frame 
 var isForMainFrameOnly: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isForMainFrameOnly) BOOL forMainFrameOnly;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the web view injects the script only into the main frame. When the value is [`false`](https://developer.apple.com/documentation/swift/false), the web view injects the script into all frames.
+When the value of this property is [`true`](../../Swift/true.md), the web view injects the script only into the main frame. When the value is [`false`](../../Swift/false.md), the web view injects the script into all frames.
 
 ## See Also
 
-- [var source: String](wkuserscript/source.md)
+### Inspecting Script Information
+- [var source: String](./source.md)
   The script’s source code.
-- [var injectionTime: WKUserScriptInjectionTime](wkuserscript/injectiontime.md)
+- [var injectionTime: WKUserScriptInjectionTime](./injectiontime.md)
   The time at which to inject the script into the webpage.
-- [enum WKUserScriptInjectionTime](wkuserscriptinjectiontime.md)
+- [enum WKUserScriptInjectionTime](../wkuserscriptinjectiontime.md)
   Constants for the times at which to inject script content into a webpage.
 
 

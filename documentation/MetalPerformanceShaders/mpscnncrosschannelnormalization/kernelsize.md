@@ -1,7 +1,8 @@
 # kernelSize
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the square kernel window.
 
@@ -19,17 +20,22 @@ The size of the square kernel window.
 var kernelSize: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger kernelSize;
+```
+
 #### Discussion
 
 The default value is `5`.
 
 ## See Also
 
-- [var alpha: Float](mpscnncrosschannelnormalization/alpha.md)
+### Instance Properties
+- [var alpha: Float](./alpha.md)
   The “alpha” variable of the kernel function.
-- [var beta: Float](mpscnncrosschannelnormalization/beta.md)
+- [var beta: Float](./beta.md)
   The “beta” variable of the kernel function.
-- [var delta: Float](mpscnncrosschannelnormalization/delta.md)
+- [var delta: Float](./delta.md)
   The “delta” variable of the kernel function.
 
 

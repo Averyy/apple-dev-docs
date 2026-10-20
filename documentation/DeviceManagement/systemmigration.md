@@ -1,7 +1,8 @@
 # SystemMigration
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures system migration.
 
@@ -10,7 +11,7 @@ The payload that configures system migration.
 
 ## Declaration
 
-```swift
+```
 object SystemMigration
 ```
 
@@ -18,7 +19,7 @@ object SystemMigration
 
 Specify `com.apple.systemmigration` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.systemmigration` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -87,7 +88,7 @@ Specify `com.apple.systemmigration` as the payload type.
 ## Topics
 
 ### Objects
-- [object SystemMigration.CustomBehaviorItem](systemmigration/custombehavioritem.md)
+- [object SystemMigration.CustomBehaviorItem](./systemmigration/custombehavioritem.md)
   The custom behavior dictionary.
 
 ## Properties

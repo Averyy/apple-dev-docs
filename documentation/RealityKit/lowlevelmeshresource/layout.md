@@ -1,7 +1,8 @@
 # LowLevelMeshResource.Layout
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that describes a set of attributes that share a buffer index, offset, and stride.
 
@@ -24,40 +25,41 @@ If you interleave your data (that is, represent it with a structure), use one `L
 ## Topics
 
 ### Creating a layout
-- [init(bufferIndex: Int, bufferOffset: Int, bufferStride: Int, stepFunction: MTLVertexStepFunction, stepRate: Int)](lowlevelmeshresource/layout/init(bufferindex:bufferoffset:bufferstride:stepfunction:steprate:).md)
+- [init(bufferIndex: Int, bufferOffset: Int, bufferStride: Int, stepFunction: MTLVertexStepFunction, stepRate: Int)](./layout/init%28bufferindex,bufferoffset,bufferstride,stepfunction,steprate%29.md)
   Creates a layout with the given buffer index, offset, stride, step function, and step rate.
 ### Configuring vertex stepping
-- [var stepFunction: MTLVertexStepFunction](lowlevelmeshresource/layout/stepfunction.md)
+- [var stepFunction: MTLVertexStepFunction](./layout/stepfunction.md)
   Determines how the vertex shader steps through the data in this layout.
-- [var stepRate: Int](lowlevelmeshresource/layout/steprate.md)
+- [var stepRate: Int](./layout/steprate.md)
   The number of instances that share the same per-instance vertex data.
 ### Initializers
-- [init()](lowlevelmeshresource/layout/init.md)
+- [init()](./layout/init%28%29.md)
   Creates a layout with all fields set to their zero/default values.
 ### Instance Properties
-- [var bufferIndex: Int](lowlevelmeshresource/layout/bufferindex.md)
+- [var bufferIndex: Int](./layout/bufferindex.md)
   The index of the buffer to use for this layout.
-- [var bufferOffset: Int](lowlevelmeshresource/layout/bufferoffset.md)
+- [var bufferOffset: Int](./layout/bufferoffset.md)
   The byte offset into the buffer for the first byte of this layout.
-- [var bufferStride: Int](lowlevelmeshresource/layout/bufferstride.md)
+- [var bufferStride: Int](./layout/bufferstride.md)
   The distance, in bytes, between consecutive vertices for attributes using this layout.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var descriptor: LowLevelMeshResource.Descriptor](lowlevelmeshresource/descriptor-swift.property.md)
+### Describing the mesh layout
+- [var descriptor: LowLevelMeshResource.Descriptor](./descriptor-swift.property.md)
   The descriptor used to create this mesh resource.
-- [LowLevelMeshResource.Descriptor](lowlevelmeshresource/descriptor-swift.struct.md)
+- [LowLevelMeshResource.Descriptor](./descriptor-swift.struct.md)
   An object that describes the data format and layout of the buffers in a low-level mesh.
-- [LowLevelMeshResource.Attribute](lowlevelmeshresource/attribute.md)
+- [LowLevelMeshResource.Attribute](./attribute.md)
   An object that determines how to store vertex attribute data in memory and map it to RealityKit custom shader attributes.
-- [LowLevelMeshResource.VertexSemantic](lowlevelmeshresource/vertexsemantic.md)
+- [LowLevelMeshResource.VertexSemantic](./vertexsemantic.md)
   The intended usage of a vertex attribute.
 
 

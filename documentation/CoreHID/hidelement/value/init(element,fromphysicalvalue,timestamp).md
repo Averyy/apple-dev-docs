@@ -1,7 +1,8 @@
 # init(element:fromPhysicalValue:timestamp:)
 
 **Framework**: Core HID  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a HID element value from a physical value.
 
@@ -25,14 +26,15 @@ The raw value and physical value are calculated; both must be valid.
 
 ## See Also
 
-- [init(element: HIDElement, fromBytes: Data, timestamp: SuspendingClock.Instant)](hidelement/value/init(element:frombytes:timestamp:).md)
+### Create a HID element from a value
+- [init(element: HIDElement, fromBytes: Data, timestamp: SuspendingClock.Instant)](./init%28element,frombytes,timestamp%29.md)
   Creates a value for an HID element.
-- [init?<IntegerType>(element: HIDElement, fromLogicalValueTruncatingIfNeeded: IntegerType, timestamp: SuspendingClock.Instant)](hidelement/value/init(element:fromlogicalvaluetruncatingifneeded:timestamp:).md)
+- [init?<IntegerType>(element: HIDElement, fromLogicalValueTruncatingIfNeeded: IntegerType, timestamp: SuspendingClock.Instant)](./init%28element,fromlogicalvaluetruncatingifneeded,timestamp%29.md)
   Creates a HID element value from a logical value.
-- [init<IntegerType>(element: HIDElement, fromIntegerTruncatingIfNeeded: IntegerType, timestamp: SuspendingClock.Instant)](hidelement/value/init(element:fromintegertruncatingifneeded:timestamp:).md)
+- [init<IntegerType>(element: HIDElement, fromIntegerTruncatingIfNeeded: IntegerType, timestamp: SuspendingClock.Instant)](./init%28element,fromintegertruncatingifneeded,timestamp%29.md)
   Creates an HID element value from an integer.
-- [var element: HIDElement](hidelement/value/element.md)
-  The [`HIDElement`](hidelement.md) associated with this value.
+- [var element: HIDElement](./element.md)
+  The [`HIDElement`](../../hidelement.md) associated with this value.
 
 
 ---

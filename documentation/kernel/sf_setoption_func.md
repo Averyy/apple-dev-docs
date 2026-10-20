@@ -1,18 +1,19 @@
 # sf_setoption_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*sf_setoption_func)(void *cookie, socket_t so, sockopt_t opt);
 ```
 
-#### Return_value
+#### Return Value
 
 Return: 0 - The caller will continue with normal processing of the setsockopt. EJUSTRETURN - The caller will return with a value of 0 (no error) from that point without further propagating the set option command. The socket and protocol layers will not see the call. Anything Else - The caller will stop processing and return this error.
 

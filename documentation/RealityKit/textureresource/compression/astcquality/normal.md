@@ -1,7 +1,8 @@
 # TextureResource.Compression.ASTCQuality.normal
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Compresses with a good balance between quality and processing time.
 
@@ -21,11 +22,12 @@ case normal
 
 ## See Also
 
-- [TextureResource.Compression.ASTCQuality.exhaustive](textureresource/compression/astcquality/exhaustive.md)
+### Compression qualities
+- [TextureResource.Compression.ASTCQuality.exhaustive](./exhaustive.md)
   Compresses optimally, achieving minor gains over high-level compression at the cost of much longer processing times.
-- [TextureResource.Compression.ASTCQuality.fast](textureresource/compression/astcquality/fast.md)
+- [TextureResource.Compression.ASTCQuality.fast](./fast.md)
   Compresses as fast as possible.
-- [TextureResource.Compression.ASTCQuality.high](textureresource/compression/astcquality/high.md)
+- [TextureResource.Compression.ASTCQuality.high](./high.md)
   Compresses with a focus on quality, reaching close to optimal quality while still spending much less time than exhaustive-level compression.
 
 

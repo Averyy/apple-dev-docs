@@ -1,7 +1,8 @@
 # stableMetadata
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Context dictionary containing state-specific information
 

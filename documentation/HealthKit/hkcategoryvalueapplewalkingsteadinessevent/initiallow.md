@@ -1,7 +1,8 @@
 # HKCategoryValueAppleWalkingSteadinessEvent.initialLow
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user received a below-normal steadiness score for their gait while walking.
 
@@ -19,13 +20,18 @@ The user received a below-normal steadiness score for their gait while walking.
 case initialLow
 ```
 
+```c
+HKCategoryValueAppleWalkingSteadinessEventInitialLow
+```
+
 ## See Also
 
-- [HKCategoryValueAppleWalkingSteadinessEvent.initialVeryLow](hkcategoryvalueapplewalkingsteadinessevent/initialverylow.md)
+### Steadiness Values
+- [HKCategoryValueAppleWalkingSteadinessEvent.initialVeryLow](./initialverylow.md)
   The user received a steadiness score for their gait while walking that was considerably below normal.
-- [HKCategoryValueAppleWalkingSteadinessEvent.repeatLow](hkcategoryvalueapplewalkingsteadinessevent/repeatlow.md)
+- [HKCategoryValueAppleWalkingSteadinessEvent.repeatLow](./repeatlow.md)
   The user’s below-normal score persists over a significant period of time.
-- [HKCategoryValueAppleWalkingSteadinessEvent.repeatVeryLow](hkcategoryvalueapplewalkingsteadinessevent/repeatverylow.md)
+- [HKCategoryValueAppleWalkingSteadinessEvent.repeatVeryLow](./repeatverylow.md)
   The user’s considerably below-normal score persists over a significant period of time.
 
 

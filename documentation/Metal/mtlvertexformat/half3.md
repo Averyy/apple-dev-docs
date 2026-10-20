@@ -1,7 +1,8 @@
 # MTLVertexFormat.half3
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A three-component vector with 16-bit floating-point values.
 
@@ -10,7 +11,7 @@ A three-component vector with 16-bit floating-point values.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ A three-component vector with 16-bit floating-point values.
 case half3
 ```
 
+```c
+MTLVertexFormatHalf3
+```
+
 ## See Also
 
-- [MTLVertexFormat.half](mtlvertexformat/half.md)
+### 16-bit floating-point formats
+- [MTLVertexFormat.half](./half.md)
   A 16-bit floating-point value.
-- [MTLVertexFormat.half2](mtlvertexformat/half2.md)
+- [MTLVertexFormat.half2](./half2.md)
   A two-component vector with 16-bit floating-point values.
-- [MTLVertexFormat.half4](mtlvertexformat/half4.md)
+- [MTLVertexFormat.half4](./half4.md)
   A four-component vector with 16-bit floating-point values.
 
 

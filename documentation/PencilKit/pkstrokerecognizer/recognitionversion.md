@@ -1,7 +1,8 @@
 # recognitionVersion
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The version number of the recognition engine.
 
@@ -20,7 +21,7 @@ static var recognitionVersion: Int { get }
 
 ## Mentions
 
-- [Recognizing handwriting and converting it to text](recognizing-handwriting-and-converting-to-text.md)
+- [Recognizing handwriting and converting it to text](../recognizing-handwriting-and-converting-to-text.md)
 
 #### Discussion
 
@@ -28,9 +29,10 @@ If you persist results this recognizer returns, store this value alongside them 
 
 ## See Also
 
-- [static var supportedLanguages: Set<Locale.Language>](pkstrokerecognizer/supportedlanguages.md)
+### Checking language support
+- [static var supportedLanguages: Set<Locale.Language>](./supportedlanguages.md)
   The languages the recognizer supports.
-- [var languages: [Locale.Language]](pkstrokerecognizer/languages.md)
+- [var languages: [Locale.Language]](./languages.md)
   The languages the recognizer uses, ordered by descending priority.
 
 

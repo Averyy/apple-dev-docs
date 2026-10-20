@@ -1,14 +1,15 @@
 # command
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 mach_voucher_attr_recipe_command_t command;
 ```
 

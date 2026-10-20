@@ -1,14 +1,15 @@
 # proc_find_audit_token
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 proc_t proc_find_audit_token(const audit_token_t token);
 ```
 

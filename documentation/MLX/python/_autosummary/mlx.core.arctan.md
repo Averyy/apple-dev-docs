@@ -6,43 +6,14 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.arctan
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.arctan.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.arctan
-
- Table of contents 
-
-## Contents
-
-# mlx.core.arctan
-
-**arctan(*a: array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**arctan(*a: array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Element-wise inverse tangent.
 
 Parameters:
-**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
+**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
 
 Returns:
 The inverse tangent of `a`.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

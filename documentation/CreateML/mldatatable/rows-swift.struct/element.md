@@ -1,7 +1,8 @@
 # MLDataTable.Rows.Element
 
 **Framework**: Create ML  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The Element of a DataTable is a Row. This is represented as a Dictionary-like type containing all Column names and their corresponding values.
 
@@ -21,7 +22,8 @@ typealias Element = MLDataTable.Row
 
 ## See Also
 
-- [MLDataTable.Row](mldatatable/row.md)
+### Supporting types
+- [MLDataTable.Row](../row.md)
   A row of untyped values in a data table.
 
 

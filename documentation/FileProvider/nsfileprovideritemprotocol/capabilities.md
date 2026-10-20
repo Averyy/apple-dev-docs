@@ -1,7 +1,8 @@
 # capabilities
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item’s capabilities.
 
@@ -18,15 +19,20 @@ The item’s capabilities.
 optional var capabilities: NSFileProviderItemCapabilities { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSFileProviderItemCapabilities capabilities;
+```
+
 ## See Also
 
-- [var itemIdentifier: NSFileProviderItemIdentifier](nsfileprovideritemprotocol/itemidentifier.md)
+### Providing Required Properties
+- [var itemIdentifier: NSFileProviderItemIdentifier](./itemidentifier.md)
   The item’s persistent identifier.
-- [var filename: String](nsfileprovideritemprotocol/filename.md)
+- [var filename: String](./filename.md)
   The item’s filename.
-- [var typeIdentifier: String](nsfileprovideritemprotocol/typeidentifier.md)
+- [var typeIdentifier: String](./typeidentifier.md)
   The item’s Uniform Type Identifier (UTI).
-- [var contentType: UTType](nsfileprovideritemprotocol/contenttype.md)
+- [var contentType: UTType](./contenttype.md)
   The item’s Uniform Type Identifier (UTI).
 
 

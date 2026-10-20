@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the related contact.
 
@@ -17,6 +18,18 @@ The name of the related contact.
 
 ```swift
 var name: String { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * name;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * name;
 ```
 
 

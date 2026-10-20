@@ -1,11 +1,12 @@
 # CustomDebugStringConvertible Implementations
 
-**Framework**: System
+**Framework**: System  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](filedescriptor/accessmode/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the access mode, suitable for debugging
 
 

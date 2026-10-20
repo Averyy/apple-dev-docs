@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new set from a raw value.
 
@@ -26,7 +27,8 @@ init(rawValue: Int)
 
 ## See Also
 
-- [let rawValue: Int](eventmodifiers/rawvalue.md)
+### Creating a set of options
+- [let rawValue: Int](./rawvalue.md)
   The raw value.
 
 

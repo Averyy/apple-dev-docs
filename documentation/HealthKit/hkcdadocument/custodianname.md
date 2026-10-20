@@ -1,7 +1,8 @@
 # custodianName
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the organization responsible for the document.
 
@@ -18,6 +19,10 @@ The name of the organization responsible for the document.
 var custodianName: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * custodianName;
+```
+
 #### Discussion
 
 Usually, this is the treating institution’s name.
@@ -26,13 +31,14 @@ HealthKit automatically extracts the custodian’s name from the CDA’s XML dat
 
 ## See Also
 
-- [var authorName: String](hkcdadocument/authorname.md)
+### Accessing the Document’s Data
+- [var authorName: String](./authorname.md)
   The document’s author.
-- [var documentData: Data?](hkcdadocument/documentdata.md)
+- [var documentData: Data?](./documentdata.md)
   The CDA document stored as XML data.
-- [var patientName: String](hkcdadocument/patientname.md)
+- [var patientName: String](./patientname.md)
   The patient’s name.
-- [var title: String](hkcdadocument/title.md)
+- [var title: String](./title.md)
   The document’s title.
 
 

@@ -1,7 +1,8 @@
 # init(coordinate:title:subtitle:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a point annotation displaying a title and subtitle string at the specified coordinate on the map.
 
@@ -20,6 +21,10 @@ Creates a point annotation displaying a title and subtitle string at the specifi
 convenience init(coordinate: CLLocationCoordinate2D, title: String?, subtitle: String?)
 ```
 
+```objc
+- (instancetype) initWithCoordinate:(CLLocationCoordinate2D) coordinate title:(NSString *) title subtitle:(NSString *) subtitle;
+```
+
 ## Parameters
 
 - `coordinate`: The coordinate containing the latitude and longitude values for the desired point.
@@ -28,9 +33,10 @@ convenience init(coordinate: CLLocationCoordinate2D, title: String?, subtitle: S
 
 ## See Also
 
-- [init()](mkpointannotation/init.md)
+### Creating a Point Annotation
+- [init()](./init%28%29.md)
   Creates a map annotation that shows a title string at a point on a map.
-- [convenience init(coordinate: CLLocationCoordinate2D)](mkpointannotation/init(coordinate:).md)
+- [convenience init(coordinate: CLLocationCoordinate2D)](./init%28coordinate%29.md)
   Creates a point annotation at the specified coordinate on the map.
 
 

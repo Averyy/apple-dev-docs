@@ -1,7 +1,8 @@
 # name
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A name associated with the tile definition.
 
@@ -20,11 +21,16 @@ A name associated with the tile definition.
 var name: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * name;
+```
+
 ## See Also
 
-- [var placementWeight: Int](sktiledefinition/placementweight.md)
+### Reading or Adjusting a Tile’s Instance Properties
+- [var placementWeight: Int](./placementweight.md)
   The placement weight of the tile definition.
-- [var size: CGSize](sktiledefinition/size.md)
+- [var size: CGSize](./size.md)
   The size of the tile definition in points.
 
 

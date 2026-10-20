@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this subscriber.
 
@@ -22,9 +23,10 @@ final var description: String { get }
 
 ## See Also
 
-- [var customMirror: Mirror](subscribers/assign/custommirror.md)
+### Supporting Debugging
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the subscriber.
-- [var playgroundDescription: Any](subscribers/assign/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A custom playground description for this subscriber.
 
 

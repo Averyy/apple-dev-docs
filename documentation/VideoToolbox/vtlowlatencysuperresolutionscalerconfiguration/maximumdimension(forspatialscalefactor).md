@@ -1,7 +1,8 @@
 # maximumDimension(forSpatialScaleFactor:)
 
 **Framework**: Video Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The maximum value for either dimension of the source frame, in pixels, for a given spatial scale factor.
 
@@ -21,7 +22,7 @@ class func maximumDimension(forSpatialScaleFactor spatialScaleFactor: Float) -> 
 
 #### Discussion
 
-Both `frameWidth` and `frameHeight` must be less than or equal to this value. Use in conjunction with [`maximumPixelCountForSpatialScaleFactor:`](vtlowlatencysuperresolutionscalerconfiguration/maximumpixelcountforspatialscalefactor:.md) to determine valid frame dimensions. For example, if [`maximumDimensionForSpatialScaleFactor:`](vtlowlatencysuperresolutionscalerconfiguration/maximumdimensionforspatialscalefactor:.md) is 1920 and [`maximumPixelCountForSpatialScaleFactor:`](vtlowlatencysuperresolutionscalerconfiguration/maximumpixelcountforspatialscalefactor:.md) corresponds to 1920×1080, then 1920×1080, 1080×1920, and 1440×1440 are all valid, but 1920×1920 is not. Optional return value.  Returns nil for unsupported spatialScaleFactor or if processor is unsupported.
+Both `frameWidth` and `frameHeight` must be less than or equal to this value. Use in conjunction with [`maximumPixelCountForSpatialScaleFactor:`](./maximumpixelcountforspatialscalefactor_.md) to determine valid frame dimensions. For example, if [`maximumDimensionForSpatialScaleFactor:`](./maximumdimensionforspatialscalefactor_.md) is 1920 and [`maximumPixelCountForSpatialScaleFactor:`](./maximumpixelcountforspatialscalefactor_.md) corresponds to 1920×1080, then 1920×1080, 1080×1920, and 1440×1440 are all valid, but 1920×1920 is not. Optional return value.  Returns nil for unsupported spatialScaleFactor or if processor is unsupported.
 
 
 ---

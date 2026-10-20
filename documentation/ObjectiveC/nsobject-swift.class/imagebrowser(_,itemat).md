@@ -1,17 +1,22 @@
 # imageBrowser(_:itemAt:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an object for the item in an image browser view that corresponds to the specified index.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func imageBrowser(_ aBrowser: IKImageBrowserView!, itemAt index: Int) -> Any!
+```
+
+```objc
+- (id) imageBrowser:(IKImageBrowserView *) aBrowser itemAtIndex:(NSUInteger) index;
 ```
 
 #### Return Value

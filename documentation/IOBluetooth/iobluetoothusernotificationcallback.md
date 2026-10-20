@@ -1,17 +1,22 @@
 # IOBluetoothUserNotificationCallback
 
 **Framework**: IOBluetooth  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Callback function definition for user notifications.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 typealias IOBluetoothUserNotificationCallback = (UnsafeMutableRawPointer?, IOBluetoothUserNotificationRef?, IOBluetoothObjectRef?) -> Void
+```
+
+```c
+typedef void (*)(void *, struct OpaqueIOBluetoothObjectRef *, struct OpaqueIOBluetoothObjectRef *) IOBluetoothUserNotificationCallback;
 ```
 
 #### Return Value

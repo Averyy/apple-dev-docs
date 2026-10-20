@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.EmitterShape.point
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Particles emit from a single point on the origin.
 

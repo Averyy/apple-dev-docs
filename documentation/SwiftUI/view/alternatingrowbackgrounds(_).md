@@ -1,7 +1,8 @@
 # alternatingRowBackgrounds(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Overrides whether lists and tables in this view have alternating row backgrounds.
 
@@ -37,13 +38,14 @@ This can also be combined with `listRowBackground`, which overrides the backgrou
 
 ## See Also
 
-- [func listRowBackground<V>(V?) -> some View](view/listrowbackground(_:).md)
+### Configuring backgrounds
+- [func listRowBackground<V>(V?) -> some View](./listrowbackground%28_%29.md)
   Places a custom background view behind a list row item.
-- [struct AlternatingRowBackgroundBehavior](alternatingrowbackgroundbehavior.md)
+- [struct AlternatingRowBackgroundBehavior](../alternatingrowbackgroundbehavior.md)
   The styling of views with respect to alternating row backgrounds.
-- [var backgroundProminence: BackgroundProminence](environmentvalues/backgroundprominence.md)
+- [var backgroundProminence: BackgroundProminence](../environmentvalues/backgroundprominence.md)
   The prominence of the background underneath views associated with this environment.
-- [struct BackgroundProminence](backgroundprominence.md)
+- [struct BackgroundProminence](../backgroundprominence.md)
   The prominence of backgrounds underneath other views.
 
 

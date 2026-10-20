@@ -1,7 +1,8 @@
 # scrollDismissesKeyboardMode
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The way that scrollable content interacts with the software keyboard.
 
@@ -21,13 +22,14 @@ var scrollDismissesKeyboardMode: ScrollDismissesKeyboardMode { get set }
 
 #### Discussion
 
-The default value is [`automatic`](scrolldismisseskeyboardmode/automatic.md). Use the [`scrollDismissesKeyboard(_:)`](view/scrolldismisseskeyboard(_:).md) modifier to configure this property.
+The default value is [`automatic`](../scrolldismisseskeyboardmode/automatic.md). Use the [`scrollDismissesKeyboard(_:)`](../view/scrolldismisseskeyboard%28_%29.md) modifier to configure this property.
 
 ## See Also
 
-- [func scrollDismissesKeyboard(ScrollDismissesKeyboardMode) -> some View](view/scrolldismisseskeyboard(_:).md)
+### Interacting with a software keyboard
+- [func scrollDismissesKeyboard(ScrollDismissesKeyboardMode) -> some View](../view/scrolldismisseskeyboard%28_%29.md)
   Configures the behavior in which scrollable content interacts with the software keyboard.
-- [struct ScrollDismissesKeyboardMode](scrolldismisseskeyboardmode.md)
+- [struct ScrollDismissesKeyboardMode](../scrolldismisseskeyboardmode.md)
   The ways that scrollable content can interact with the software keyboard.
 
 

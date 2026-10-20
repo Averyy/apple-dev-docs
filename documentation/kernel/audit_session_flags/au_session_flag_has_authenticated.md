@@ -1,14 +1,15 @@
 # AU_SESSION_FLAG_HAS_AUTHENTICATED
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 AU_SESSION_FLAG_HAS_AUTHENTICATED = 0x4000
 ```
 

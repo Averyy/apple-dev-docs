@@ -1,7 +1,8 @@
 # dateTime
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A default format style for formatting dates.
 
@@ -20,9 +21,11 @@ A default format style for formatting dates.
 static var dateTime: Date.FormatStyle { get }
 ```
 
+Available when `Self` is `Date.FormatStyle`.
+
 #### Discussion
 
-Use this type property when the call point allows the use of [`Date.FormatStyle`](date/formatstyle.md); in other words, when the value type is [`Date`](date.md). Typically, you use this with the [`formatted(_:)`](date/formatted(_:).md) method of [`Date`](date.md).
+Use this type property when the call point allows the use of [`Date.FormatStyle`](../date/formatstyle.md); in other words, when the value type is [`Date`](../date.md). Typically, you use this with the [`formatted(_:)`](../date/formatted%28_%29.md) method of [`Date`](../date.md).
 
 Customize the date format style using modifier syntax to apply specific date and time formats. For example:
 
@@ -45,7 +48,7 @@ for localeID in localeArray {
 // ma 27 octobre à 17 h
 ```
 
-The default format styles provided are [`numeric`](date/formatstyle/datestyle/numeric.md) date format and [`shortened`](date/formatstyle/timestyle/shortened.md) time format. For example:
+The default format styles provided are [`numeric`](../date/formatstyle/datestyle/numeric.md) date format and [`shortened`](../date/formatstyle/timestyle/shortened.md) time format. For example:
 
 ```swift
 let meetingDate = Date()

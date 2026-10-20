@@ -1,18 +1,19 @@
 # init(bundleIdentifier:)
 
 **Framework**: XCUIAutomation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a proxy for an application for the specified bundle identifier.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,9 +22,13 @@ Creates a proxy for an application for the specified bundle identifier.
 init(bundleIdentifier: String)
 ```
 
+```objc
+- (instancetype) initWithBundleIdentifier:(NSString *) bundleIdentifier;
+```
+
 #### Discussion
 
-Use this initializer to launch an application based on its bundle identifier. For more information about bundle identifiers, see [`About Bundle IDs`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/IDEs/Conceptual/AppDistributionGuide/ConfiguringYourApp/ConfiguringYourApp.html#//apple_ref/doc/uid/TP40012582-CH28-SW8) in the [`App Distribution Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40012582).
+Use this initializer to launch an application based on its bundle identifier. For more information about bundle identifiers, see [About Bundle IDs](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/AppDistributionGuide/ConfiguringYourApp/ConfiguringYourApp.html#//apple_ref/doc/uid/TP40012582-CH28-SW8) in the [App Distribution Guide](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40012582).
 
 Although every app has a unique bundle ID, there are times when XCUIAutomation needs to decide which particular build of an app to use for testing. With macOS, multiple builds of the same app can exist on a single device. With iOS and tvOS, a build of the app may need to be copied onto the device for testing. In both cases, XCUIAutomation detects a matching build to use in the following order, based on the current test scheme selected in Xcode:
 
@@ -35,13 +40,14 @@ For iOS and tvOS apps, the system installs the matching app build onto the devic
 
 For macOS apps, the system launches the matching app build from its existing location. If the system can’t find the matching app build, it launches the default app build on the device for the requested bundle ID (as determined by Launch Services).
 
-> 💡 **Tip**:  To find the bundle identifier of an Apple app for use in a UI test, see [`Bundle IDs for native iPhone and iPad apps`](https://developer.apple.comhttps://support.apple.com/guide/deployment/bundle-ids-for-native-iphone-and-ipad-apps-depece748c41/web).
+> 💡 **Tip**:  To find the bundle identifier of an Apple app for use in a UI test, see [Bundle IDs for native iPhone and iPad apps](https://support.apple.com/guide/deployment/bundle-ids-for-native-iphone-and-ipad-apps-depece748c41/web).
 
 ## See Also
 
-- [init()](xcuiapplication/init.md)
+### Creating an application proxy
+- [init()](./init%28%29.md)
   Creates a proxy for the application that’s configured as the Target Application in Xcode’s target settings.
-- [init(url: URL)](xcuiapplication/init(url:)-90e7z.md)
+- [init(url: URL)](./init%28url%29-90e7z.md)
   Creates a proxy for the application at the specified file system URL.
 
 

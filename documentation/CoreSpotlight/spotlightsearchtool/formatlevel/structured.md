@@ -1,7 +1,8 @@
 # SpotlightSearchTool.FormatLevel.structured
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Full, structured encoded
 
@@ -20,7 +21,8 @@ case structured
 
 ## See Also
 
-- [SpotlightSearchTool.FormatLevel.compact](spotlightsearchtool/formatlevel/compact.md)
+### Getting the format levels
+- [SpotlightSearchTool.FormatLevel.compact](./compact.md)
   Compact encoding
 
 

@@ -1,12 +1,13 @@
 # downloadWindow(forAuthenticationSheet:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the window to be used by the authentication sheet.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns the window to be used by the authentication sheet.
 optional func downloadWindow(forAuthenticationSheet download: WebDownload!) -> NSWindow!
 ```
 
+```objc
+- (NSWindow *) downloadWindowForAuthenticationSheet:(WebDownload *) download;
+```
+
 #### Return Value
 
-An [`NSWindow`](https://developer.apple.com/documentation/appkit/nswindow) object into which the `WebDownload` object should draw its authentication sheet.
+An [`NSWindow`](../../AppKit/nswindow.md) object into which the `WebDownload` object should draw its authentication sheet.
 
 #### Discussion
 

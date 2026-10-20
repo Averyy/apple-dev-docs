@@ -1,7 +1,8 @@
 # readAttributeBorderRouterName(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeBorderRouterName(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeBorderRouterName() async throws -> String
+```
+
+```objc
+- (void) readAttributeBorderRouterNameWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

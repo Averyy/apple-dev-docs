@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that the reader session received a VAS response.
@@ -17,6 +18,10 @@ Tells the delegate that the reader session received a VAS response.
 func readerSession(_ session: NFCVASReaderSession, didReceive responses: [NFCVASResponse])
 ```
 
+```objc
+- (void) readerSession:(NFCVASReaderSession *) session didReceiveVASResponses:(NSArray<NFCVASResponse *> *) responses;
+```
+
 #### Discussion
 
 The reader session restarts polling when the detected tag moves from the session’s read range.
@@ -24,11 +29,12 @@ The reader session restarts polling when the detected tag moves from the session
 ## Parameters
 
 - `session`: The reader session that calls this method.
-- `responses`: An array of [`NFCVASResponse`](nfcvasresponse.md) objects. The order of the response objects follows the sequence of `GET VAS DATA` sent to the tag by the reader session.
+- `responses`: An array of [`NFCVASResponse`](../nfcvasresponse.md) objects. The order of the response objects follows the sequence of `GET VAS DATA` sent to the tag by the reader session.
 
 ## See Also
 
-- [class NFCVASResponse](nfcvasresponse.md)
+### Receiving VAS Responses
+- [class NFCVASResponse](../nfcvasresponse.md)
   An object representing the response from a single `GET VAS DATA` command.
 
 

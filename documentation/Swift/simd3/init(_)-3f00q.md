@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a vector from the given sequence.
 
@@ -22,7 +23,7 @@ init<S>(_ scalars: S) where S : Sequence, Self.Scalar == S.Element
 
 #### Discussion
 
-> **Note**: `scalars` must have the same number of elements as the vector type.
+> **Precondition**: `scalars` must have the same number of elements as the vector type.
 
 ## Parameters
 

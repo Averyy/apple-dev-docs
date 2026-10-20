@@ -1,7 +1,8 @@
 # Cellular.AttachAPN
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 A dictionary that contains details about an attach access point name (APN) configuration.
 
@@ -13,23 +14,32 @@ A dictionary that contains details about an attach access point name (APN) confi
 
 ## Declaration
 
-```swift
+```
 object Cellular.AttachAPN
 ```
 
 ## Properties
 
-- `AllowedProtocolMask` (integer): The Internet Protocol versions that the system supports. Allowed values: - `1`: IPv4
-- `2`: IPv6
-- `3`: Both Available: iOS 10.3+ | iPadOS 10.3+ | watchOS 3.2+
+- `AllowedProtocolMask` (integer): The Internet Protocol versions that the system supports. Allowed values:
+
+  - `1`: IPv4
+  - `2`: IPv6
+  - `3`: Both
+
+  Available: iOS 10.3+ | iPadOS 10.3+ | watchOS 3.2+
+
+  **Allowed Values**: `1`, `2`, `3`
 - `AuthenticationType` (string): The authentication type.
+
+  **Default**: `PAP`; **Allowed Values**: `CHAP`, `PAP`
 - `Name` (string) *(required)*: The name for this configuration.
 - `Password` (string): The password for the user.
 - `Username` (string): The user name.
 
 ## See Also
 
-- [object Cellular.APNsItem](cellular/apnsitem.md)
+### Objects
+- [object Cellular.APNsItem](./apnsitem.md)
   A dictionary that contains details about an access point name (APN) configuration.
 
 

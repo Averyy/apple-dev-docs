@@ -1,7 +1,8 @@
 # Read related asset library
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the asset library for an app.
 
@@ -10,10 +11,10 @@ Get the asset library for an app.
 
 ## Mentions
 
-- [App Store Connect API 4.5.1 release notes](app-store-connect-api-4-5-1-release-notes.md)
-- [Migrating to the App Asset Library](migrating-to-the-app-asset-library.md)
-- [Uploading and managing image assets](uploading-and-managing-image-assets.md)
-- [Uploading and managing video assets](uploading-and-managing-video-assets.md)
+- [App Store Connect API 4.5.1 release notes](./app-store-connect-api-4-5-1-release-notes.md)
+- [Migrating to the App Asset Library](./migrating-to-the-app-asset-library.md)
+- [Uploading and managing image assets](./uploading-and-managing-image-assets.md)
+- [Uploading and managing video assets](./uploading-and-managing-video-assets.md)
 
 #### Discussion
 
@@ -21,7 +22,7 @@ Get the asset library for an app.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/apps/1234567890/assetLibrary
 ```
 
@@ -62,11 +63,29 @@ https://api.appstoreconnect.apple.com/v1/apps/1234567890/assetLibrary
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
+### Query Parameters
+
 - `fields[appAssetLibraries]` ([string]): Additional fields to include for each app asset library resource returned by the response.
+
+  **Allowed Values**: `images`, `videos`
+
+## Responses
+
+- `200` OK (`AppAssetLibraryResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Get the asset library ID for an app](get-v1-apps-_id_-relationships-assetlibrary.md)
+### Getting asset library information
+- [Get the asset library ID for an app](./get-v1-apps-_id_-relationships-assetlibrary.md)
   Get the asset library resource ID for a specific app.
 
 

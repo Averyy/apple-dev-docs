@@ -1,7 +1,8 @@
 # WKNavigationActionPolicy.cancel
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Cancel the navigation.
 
@@ -18,15 +19,20 @@ Cancel the navigation.
 case cancel
 ```
 
+```c
+WKNavigationActionPolicyCancel
+```
+
 ## Mentions
 
-- [Replacing UIWebView in your app](replacing-uiwebview-in-your-app.md)
+- [Replacing UIWebView in your app](../replacing-uiwebview-in-your-app.md)
 
 ## See Also
 
-- [WKNavigationActionPolicy.allow](wknavigationactionpolicy/allow.md)
+### Constants
+- [WKNavigationActionPolicy.allow](./allow.md)
   Allow the navigation to continue.
-- [WKNavigationActionPolicy.download](wknavigationactionpolicy/download.md)
+- [WKNavigationActionPolicy.download](./download.md)
   Allow the download to proceed.
 
 

@@ -1,14 +1,15 @@
 # vol_capabilities_attr_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct vol_capabilities_attr {
     ...
 } vol_capabilities_attr_t;
@@ -17,8 +18,8 @@ typedef struct vol_capabilities_attr {
 ## Topics
 
 ### Instance Properties
-- [capabilities](vol_capabilities_attr_t/1555314-capabilities.md)
-- [valid](vol_capabilities_attr_t/1555299-valid.md)
+- [capabilities](./vol_capabilities_attr_t/api-1555314-capabilities.md)
+- [valid](./vol_capabilities_attr_t/api-1555299-valid.md)
 
 
 ---

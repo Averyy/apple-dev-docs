@@ -1,7 +1,8 @@
 # applicationContext
 
 **Framework**: Watch Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The most recent contextual data sent to the paired and active device.
 
@@ -18,15 +19,20 @@ The most recent contextual data sent to the paired and active device.
 var applicationContext: [String : Any] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDictionary<NSString *,id> * applicationContext;
+```
+
 #### Discussion
 
-After calling the [`updateApplicationContext(_:)`](wcsession/updateapplicationcontext(_:).md) method, the session object places a copy of your dictionary in this property so that you can determine what data you last sent to the counterpart.
+After calling the [`updateApplicationContext(_:)`](./updateapplicationcontext%28_%29.md) method, the session object places a copy of your dictionary in this property so that you can determine what data you last sent to the counterpart.
 
 ## See Also
 
-- [func updateApplicationContext([String : Any]) throws](wcsession/updateapplicationcontext(_:).md)
+### Managing Background Updates
+- [func updateApplicationContext([String : Any]) throws](./updateapplicationcontext%28_%29.md)
   Sends a dictionary of values that a paired and active device can use to synchronize its state.
-- [var receivedApplicationContext: [String : Any]](wcsession/receivedapplicationcontext.md)
+- [var receivedApplicationContext: [String : Any]](./receivedapplicationcontext.md)
   A dictionary containing the last update data received from a paired and active device.
 
 

@@ -1,7 +1,8 @@
 # specializationStrategy
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optimization strategy for the model specialization.
 
@@ -28,7 +29,8 @@ Use this option to tailor the specialization strategy for your model.
 
 ## See Also
 
-- [MLOptimizationHints.SpecializationStrategy](mloptimizationhints-swift.struct/specializationstrategy-swift.enum.md)
+### Getting the specialization strategy
+- [MLOptimizationHints.SpecializationStrategy](./specializationstrategy-swift.enum.md)
   The optimization strategy for the model specialization.
 
 

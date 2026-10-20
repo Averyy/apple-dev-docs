@@ -1,7 +1,8 @@
 # attributes(in:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Obtain a lazy sequence of all attribute values the selection has in a given text.
 
@@ -24,7 +25,7 @@ func attributes(in text: AttributedString) -> AttributedTextSelection.Attributes
 
 The attribute values of a selection are the attribute values of each run that is fully or partially selected, or the typing attributes in the case the selection is an insertion point.
 
-By default, the sequence contains the attribute container for every run or the typing attributes. Use the [`AttributedTextSelection.Attributes`](attributedtextselection/attributes.md)’ subscript to obtain only the values for a single attribute:
+By default, the sequence contains the attribute container for every run or the typing attributes. Use the [`AttributedTextSelection.Attributes`](./attributes.md)’ subscript to obtain only the values for a single attribute:
 
 ```swift
 selection.attributes(in: text)[\.foregroundColor].contains(.red)

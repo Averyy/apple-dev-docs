@@ -1,7 +1,8 @@
 # value(fromValue:toValue:initialVelocity:time:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates the value of the spring at a given time for a starting and ending value for the spring to travel.
 
@@ -22,11 +23,12 @@ func value<V>(fromValue: V, toValue: V, initialVelocity: V, time: TimeInterval) 
 
 ## See Also
 
-- [func value<V>(target: V, initialVelocity: V, time: TimeInterval) -> V](spring/value(target:initialvelocity:time:).md)
+### Getting spring state
+- [func value<V>(target: V, initialVelocity: V, time: TimeInterval) -> V](./value%28target,initialvelocity,time%29.md)
   Calculates the value of the spring at a given time given a target amount of change.
-- [func velocity<V>(target: V, initialVelocity: V, time: TimeInterval) -> V](spring/velocity(target:initialvelocity:time:).md)
+- [func velocity<V>(target: V, initialVelocity: V, time: TimeInterval) -> V](./velocity%28target,initialvelocity,time%29.md)
   Calculates the velocity of the spring at a given time given a target amount of change.
-- [func velocity<V>(fromValue: V, toValue: V, initialVelocity: V, time: TimeInterval) -> V](spring/velocity(fromvalue:tovalue:initialvelocity:time:).md)
+- [func velocity<V>(fromValue: V, toValue: V, initialVelocity: V, time: TimeInterval) -> V](./velocity%28fromvalue,tovalue,initialvelocity,time%29.md)
   Calculates the velocity of the spring at a given time given a starting and ending value for the spring to travel.
 
 

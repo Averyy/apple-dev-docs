@@ -1,7 +1,8 @@
 # buildPartialBlock(first:)
 
 **Framework**: WidgetKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 17.0+
@@ -19,9 +20,10 @@ static func buildPartialBlock(first: [any TimelineEntry]) -> [any TimelineEntry]
 
 ## See Also
 
-- [static func buildArray([[any TimelineEntry]]) -> [any TimelineEntry]](previewtimelinebuilder/buildarray(_:).md)
-- [static func buildExpression(some TimelineEntry) -> [any TimelineEntry]](previewtimelinebuilder/buildexpression(_:).md)
-- [static func buildPartialBlock(accumulated: [any TimelineEntry], next: [any TimelineEntry]) -> [any TimelineEntry]](previewtimelinebuilder/buildpartialblock(accumulated:next:).md)
+### Previewing timelines
+- [static func buildArray([[any TimelineEntry]]) -> [any TimelineEntry]](./buildarray%28_%29.md)
+- [static func buildExpression(some TimelineEntry) -> [any TimelineEntry]](./buildexpression%28_%29.md)
+- [static func buildPartialBlock(accumulated: [any TimelineEntry], next: [any TimelineEntry]) -> [any TimelineEntry]](./buildpartialblock%28accumulated,next%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ASCredentialExchangeActivity
 
 **Framework**: Authentication Services  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The activity type used in user activity objects sent to importing apps.
 

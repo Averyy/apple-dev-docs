@@ -1,7 +1,8 @@
 # progress
 
 **Framework**: MarketplaceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The progress representing the download & installation of this app. It may be used to pause, resume, or cancel installation depending on the state of this object.
 
@@ -17,7 +18,7 @@ var progress: Progress { get }
 
 ## Mentions
 
-- [Installing apps from an alternative marketplace](installing-apps-from-an-alternative-marketplace.md)
+- [Installing apps from an alternative marketplace](../../../installing-apps-from-an-alternative-marketplace.md)
 
 
 ---

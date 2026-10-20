@@ -1,7 +1,8 @@
 # readAttributeSupportedTemperatureLevels(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSupportedTemperatureLevels(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSupportedTemperatureLevels() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeSupportedTemperatureLevelsWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

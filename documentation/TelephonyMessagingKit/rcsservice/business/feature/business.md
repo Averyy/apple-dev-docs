@@ -1,7 +1,8 @@
 # RCSService.Business.Feature.business
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Business feature.
 

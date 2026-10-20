@@ -1,7 +1,8 @@
 # CMTimeScale
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An integer timescale.
 
@@ -20,19 +21,24 @@ An integer timescale.
 typealias CMTimeScale = Int32
 ```
 
+```c
+typedef int32_t CMTimeScale;
+```
+
 #### Discussion
 
 Timescales must be positive.
 
 ## See Also
 
-- [struct CMTime](cmtime.md)
+### Data Types
+- [struct CMTime](./cmtime.md)
   A structure that represents time.
-- [typealias CMTimeValue](cmtimevalue.md)
+- [typealias CMTimeValue](./cmtimevalue.md)
   An integer time value.
-- [typealias CMTimeEpoch](cmtimeepoch.md)
+- [typealias CMTimeEpoch](./cmtimeepoch.md)
   An epoch for a time.
-- [struct CMTimeFlags](cmtimeflags.md)
+- [struct CMTimeFlags](./cmtimeflags.md)
   A structure that defines the flags for a time value.
 
 

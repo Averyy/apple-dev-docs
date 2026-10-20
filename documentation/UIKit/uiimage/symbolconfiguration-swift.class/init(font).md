@@ -1,7 +1,8 @@
 # init(font:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration object with the specified font information.
 
@@ -19,6 +20,10 @@ Creates a configuration object with the specified font information.
 convenience init(font: UIFont)
 ```
 
+```objc
++ (instancetype) configurationWithFont:(UIFont *) font;
+```
+
 #### Return Value
 
 A new symbol configuration object with the specified information.
@@ -29,28 +34,29 @@ A new symbol configuration object with the specified information.
 
 ## See Also
 
-- [convenience init(pointSize: CGFloat)](uiimage/symbolconfiguration-swift.class/init(pointsize:).md)
+### Creating a symbol configuration
+- [convenience init(pointSize: CGFloat)](./init%28pointsize%29.md)
   Creates a configuration object with the specified point-size information.
-- [convenience init(pointSize: CGFloat, weight: UIImage.SymbolWeight)](uiimage/symbolconfiguration-swift.class/init(pointsize:weight:).md)
+- [convenience init(pointSize: CGFloat, weight: UIImage.SymbolWeight)](./init%28pointsize,weight%29.md)
   Creates a configuration object with the specified point-size and weight information.
-- [convenience init(pointSize: CGFloat, weight: UIImage.SymbolWeight, scale: UIImage.SymbolScale)](uiimage/symbolconfiguration-swift.class/init(pointsize:weight:scale:).md)
+- [convenience init(pointSize: CGFloat, weight: UIImage.SymbolWeight, scale: UIImage.SymbolScale)](./init%28pointsize,weight,scale%29.md)
   Creates a configuration object with the specified point-size, weight, and scale information.
-- [convenience init(scale: UIImage.SymbolScale)](uiimage/symbolconfiguration-swift.class/init(scale:).md)
+- [convenience init(scale: UIImage.SymbolScale)](./init%28scale%29.md)
   Creates a configuration object with the specified scale information.
-- [convenience init(textStyle: UIFont.TextStyle)](uiimage/symbolconfiguration-swift.class/init(textstyle:).md)
+- [convenience init(textStyle: UIFont.TextStyle)](./init%28textstyle%29.md)
   Creates a configuration object with the specified font text style information.
-- [convenience init(textStyle: UIFont.TextStyle, scale: UIImage.SymbolScale)](uiimage/symbolconfiguration-swift.class/init(textstyle:scale:).md)
+- [convenience init(textStyle: UIFont.TextStyle, scale: UIImage.SymbolScale)](./init%28textstyle,scale%29.md)
   Creates a configuration object with the specified font text style and scale information.
-- [convenience init(weight: UIImage.SymbolWeight)](uiimage/symbolconfiguration-swift.class/init(weight:).md)
+- [convenience init(weight: UIImage.SymbolWeight)](./init%28weight%29.md)
   Creates a configuration object with the specified weight information.
-- [convenience init(font: UIFont, scale: UIImage.SymbolScale)](uiimage/symbolconfiguration-swift.class/init(font:scale:).md)
+- [convenience init(font: UIFont, scale: UIImage.SymbolScale)](./init%28font,scale%29.md)
   Creates a configuration object with the specified font and scale information.
-- [UIImage.SymbolScale](uiimage/symbolscale.md)
+- [UIImage.SymbolScale](../symbolscale.md)
   Constants that indicate which scale variant of a symbol image to use.
-- [UIImage.SymbolWeight](uiimage/symbolweight.md)
+- [UIImage.SymbolWeight](../symbolweight.md)
   Constants that indicate which weight variant of a symbol image to use.
-- [UIImage.SymbolColorRenderingMode](uiimage/symbolcolorrenderingmode.md)
-- [UIImage.SymbolVariableValueMode](uiimage/symbolvariablevaluemode.md)
+- [UIImage.SymbolColorRenderingMode](../symbolcolorrenderingmode.md)
+- [UIImage.SymbolVariableValueMode](../symbolvariablevaluemode.md)
 
 
 ---

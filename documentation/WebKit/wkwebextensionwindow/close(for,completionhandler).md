@@ -1,7 +1,8 @@
 # close(for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to close the window.
 
@@ -15,7 +16,15 @@ Called to close the window.
 ## Declaration
 
 ```swift
+optional func close(for context: WKWebExtensionContext, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 optional func close(for context: WKWebExtensionContext) async throws
+```
+
+```objc
+- (void) closeForWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion

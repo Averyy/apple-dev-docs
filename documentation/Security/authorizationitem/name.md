@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The required name of the authorization right or environment data.
 
@@ -13,6 +14,10 @@ The required name of the authorization right or environment data.
 
 ```swift
 var name: AuthorizationString
+```
+
+```c
+AuthorizationString name;
 ```
 
 #### Discussion

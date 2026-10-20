@@ -1,7 +1,8 @@
 # errSecInteractionRequired
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 User interaction is required.
 
@@ -18,6 +19,10 @@ User interaction is required.
 
 ```swift
 var errSecInteractionRequired: OSStatus { get }
+```
+
+```c
+errSecInteractionRequired
 ```
 
 

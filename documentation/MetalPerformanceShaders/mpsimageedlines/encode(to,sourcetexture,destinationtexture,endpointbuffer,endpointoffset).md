@@ -1,7 +1,8 @@
 # encode(to:sourceTexture:destinationTexture:endpointBuffer:endpointOffset:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.4+
@@ -15,6 +16,10 @@
 
 ```swift
 func encode(to commandBuffer: any MTLCommandBuffer, sourceTexture source: any MTLTexture, destinationTexture dest: (any MTLTexture)?, endpointBuffer: any MTLBuffer, endpointOffset: Int)
+```
+
+```objc
+- (void) encodeToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer sourceTexture:(id<MTLTexture>) source destinationTexture:(id<MTLTexture>) dest endpointBuffer:(id<MTLBuffer>) endpointBuffer endpointOffset:(NSUInteger) endpointOffset;
 ```
 
 

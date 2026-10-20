@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ii
 
 # mlx.core.iinfo
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.iinfo.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.iinfo
-
- Table of contents 
-
-## Contents
-
-# mlx.core.iinfo
-
 **class iinfo(**args*, ***kwargs*)**
 : Get information on integer types.
 
@@ -45,12 +18,10 @@ Methods
 Attributes
 
 `dtype`
-The [Dtype](mlx.core.Dtype.html#mlx.core.Dtype).
+The [Dtype](mlx.core.Dtype.md#mlx.core.Dtype).
 
 `max`
 The largest representable number.
 
 `min`
 The smallest representable number.
-
-** Contents

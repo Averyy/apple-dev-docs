@@ -1,7 +1,8 @@
 # UIKeyboardHIDUsage.keyboardUpArrow
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The raw usage code 82 (decimal)/52 (hexadecimal).
 
@@ -18,33 +19,38 @@ The raw usage code 82 (decimal)/52 (hexadecimal).
 case keyboardUpArrow
 ```
 
+```c
+UIKeyboardHIDUsageKeyboardUpArrow
+```
+
 ## See Also
 
-- [UIKeyboardHIDUsage.keyboardLeftArrow](uikeyboardhidusage/keyboardleftarrow.md)
+### Navigation keys
+- [UIKeyboardHIDUsage.keyboardLeftArrow](./keyboardleftarrow.md)
   The raw usage code 80 (decimal)/50 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardRightArrow](uikeyboardhidusage/keyboardrightarrow.md)
+- [UIKeyboardHIDUsage.keyboardRightArrow](./keyboardrightarrow.md)
   The raw usage code 79 (decimal)/4F (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardDownArrow](uikeyboardhidusage/keyboarddownarrow.md)
+- [UIKeyboardHIDUsage.keyboardDownArrow](./keyboarddownarrow.md)
   The raw usage code 81 (decimal)/51 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardPageUp](uikeyboardhidusage/keyboardpageup.md)
+- [UIKeyboardHIDUsage.keyboardPageUp](./keyboardpageup.md)
   The raw usage code 75 (decimal)/4B (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardPageDown](uikeyboardhidusage/keyboardpagedown.md)
+- [UIKeyboardHIDUsage.keyboardPageDown](./keyboardpagedown.md)
   The raw usage code 78 (decimal)/4E (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardHome](uikeyboardhidusage/keyboardhome.md)
+- [UIKeyboardHIDUsage.keyboardHome](./keyboardhome.md)
   The raw usage code 74 (decimal)/4A (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardEnd](uikeyboardhidusage/keyboardend.md)
+- [UIKeyboardHIDUsage.keyboardEnd](./keyboardend.md)
   The raw usage code 77 (decimal)/4D (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardDeleteForward](uikeyboardhidusage/keyboarddeleteforward.md)
+- [UIKeyboardHIDUsage.keyboardDeleteForward](./keyboarddeleteforward.md)
   The raw usage code 76 (decimal)/4C (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardDeleteOrBackspace](uikeyboardhidusage/keyboarddeleteorbackspace.md)
+- [UIKeyboardHIDUsage.keyboardDeleteOrBackspace](./keyboarddeleteorbackspace.md)
   The raw usage code 42 (decimal)/2A (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardEscape](uikeyboardhidusage/keyboardescape.md)
+- [UIKeyboardHIDUsage.keyboardEscape](./keyboardescape.md)
   The raw usage code 41 (decimal)/29 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardInsert](uikeyboardhidusage/keyboardinsert.md)
+- [UIKeyboardHIDUsage.keyboardInsert](./keyboardinsert.md)
   The raw usage code 73 (decimal)/49 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardReturn](uikeyboardhidusage/keyboardreturn.md)
+- [UIKeyboardHIDUsage.keyboardReturn](./keyboardreturn.md)
   The raw usage code 158 (decimal)/9E (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardTab](uikeyboardhidusage/keyboardtab.md)
+- [UIKeyboardHIDUsage.keyboardTab](./keyboardtab.md)
   The raw usage code 43 (decimal)/2B (hexadecimal).
 
 

@@ -1,18 +1,19 @@
 # kCMClosedCaptionFormatType_ATSC
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A type that describes ATSC-compliant samples.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ A type that describes ATSC-compliant samples.
 var kCMClosedCaptionFormatType_ATSC: CMClosedCaptionFormatType { get }
 ```
 
+```c
+kCMClosedCaptionFormatType_ATSC
+```
+
 ## See Also
 
-- [var kCMClosedCaptionFormatType_CEA608: CMClosedCaptionFormatType](kcmclosedcaptionformattype_cea608.md)
+### Constants
+- [var kCMClosedCaptionFormatType_CEA608: CMClosedCaptionFormatType](./kcmclosedcaptionformattype_cea608.md)
   A type that describes CEA 608-compliant samples.
-- [var kCMClosedCaptionFormatType_CEA708: CMClosedCaptionFormatType](kcmclosedcaptionformattype_cea708.md)
+- [var kCMClosedCaptionFormatType_CEA708: CMClosedCaptionFormatType](./kcmclosedcaptionformattype_cea708.md)
   A type that describes CEA 708-compliant samples.
 
 

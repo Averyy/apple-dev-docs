@@ -1,7 +1,8 @@
 # PresentedWindowContent
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that represents the content of a presented window.
 
@@ -21,12 +22,12 @@ struct PresentedWindowContent<Data, Content> where Data : Decodable, Data : Enco
 
 #### Overview
 
-You don’t create this type directly. [`WindowGroup`](windowgroup.md) creates values for you.
+You don’t create this type directly. [`WindowGroup`](./windowgroup.md) creates values for you.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 
 ---

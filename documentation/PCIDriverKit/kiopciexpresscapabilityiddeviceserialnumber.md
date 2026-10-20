@@ -1,51 +1,53 @@
 # kIOPCIExpressCapabilityIDDeviceSerialNumber
 
 **Framework**: PCIDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The identifier for the device serial number extended capability.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOPCIExpressCapabilityIDDeviceSerialNumber
 ```
 
 ## See Also
 
-- [kIOPCICapabilityIDOffset](kiopcicapabilityidoffset.md)
+### Capability Bits
+- [kIOPCICapabilityIDOffset](./kiopcicapabilityidoffset.md)
   The offset to the location of the device’s capability ID.
-- [kIOPCINextCapabilityOffset](kiopcinextcapabilityoffset.md)
+- [kIOPCINextCapabilityOffset](./kiopcinextcapabilityoffset.md)
   The offset to the next PCI capability structure.
-- [kIOPCICapabilityIDPowerManagement](kiopcicapabilityidpowermanagement.md)
+- [kIOPCICapabilityIDPowerManagement](./kiopcicapabilityidpowermanagement.md)
   The identifier for the power management interface.
-- [kIOPCICapabilityIDAGP](kiopcicapabilityidagp.md)
+- [kIOPCICapabilityIDAGP](./kiopcicapabilityidagp.md)
   The identifier for the AGP capability.
-- [kIOPCICapabilityIDVitalProductData](kiopcicapabilityidvitalproductdata.md)
+- [kIOPCICapabilityIDVitalProductData](./kiopcicapabilityidvitalproductdata.md)
   The identifier for the vital product data capability.
-- [kIOPCICapabilityIDSlotID](kiopcicapabilityidslotid.md)
+- [kIOPCICapabilityIDSlotID](./kiopcicapabilityidslotid.md)
   The identifier for the slot identification capability.
-- [kIOPCICapabilityIDMSI](kiopcicapabilityidmsi.md)
+- [kIOPCICapabilityIDMSI](./kiopcicapabilityidmsi.md)
   The identifier for the MSI capability.
-- [kIOPCICapabilityIDCPCIHotswap](kiopcicapabilityidcpcihotswap.md)
+- [kIOPCICapabilityIDCPCIHotswap](./kiopcicapabilityidcpcihotswap.md)
   The identifier for the CompactPCI hot swap capability.
-- [kIOPCICapabilityIDPCIX](kiopcicapabilityidpcix.md)
+- [kIOPCICapabilityIDPCIX](./kiopcicapabilityidpcix.md)
   The identifier for the PCI-X capability.
-- [kIOPCICapabilityIDLDT](kiopcicapabilityidldt.md)
+- [kIOPCICapabilityIDLDT](./kiopcicapabilityidldt.md)
   The identifier for the HyperTransport capability.
-- [kIOPCICapabilityIDVendorSpecific](kiopcicapabilityidvendorspecific.md)
+- [kIOPCICapabilityIDVendorSpecific](./kiopcicapabilityidvendorspecific.md)
   The identifier for any vendor-specific capabilities.
-- [kIOPCICapabilityIDDebugPort](kiopcicapabilityiddebugport.md)
+- [kIOPCICapabilityIDDebugPort](./kiopcicapabilityiddebugport.md)
   The identifier for the debug port capability.
-- [kIOPCICapabilityIDCPCIResourceControl](kiopcicapabilityidcpciresourcecontrol.md)
+- [kIOPCICapabilityIDCPCIResourceControl](./kiopcicapabilityidcpciresourcecontrol.md)
   The identifier for the CompactPCI central resource control capability.
-- [kIOPCICapabilityIDHotplug](kiopcicapabilityidhotplug.md)
+- [kIOPCICapabilityIDHotplug](./kiopcicapabilityidhotplug.md)
   The identifier for the PCI hot plug capability.
-- [kIOPCICapabilityIDAGP8](kiopcicapabilityidagp8.md)
+- [kIOPCICapabilityIDAGP8](./kiopcicapabilityidagp8.md)
   The identifier for the AGP 8x capability.
 
 

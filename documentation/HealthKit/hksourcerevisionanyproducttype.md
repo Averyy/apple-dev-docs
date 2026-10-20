@@ -1,7 +1,8 @@
 # HKSourceRevisionAnyProductType
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that matches any product type.
 
@@ -19,38 +20,43 @@ A constant that matches any product type.
 let HKSourceRevisionAnyProductType: String
 ```
 
+```c
+extern NSString * const HKSourceRevisionAnyProductType;
+```
+
 #### Discussion
 
 When creating a predicate, use this constant to create a source revision object that matches all product types.
 
 ## See Also
 
-- [static let bleedingAfterPregnancy: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingafterpregnancy.md)
+### Variables
+- [static let bleedingAfterPregnancy: HKCategoryTypeIdentifier](./hkcategorytypeidentifier/bleedingafterpregnancy.md)
   A category type that records bleeding after pregnancy as a symptom.
-- [static let bleedingDuringPregnancy: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingduringpregnancy.md)
+- [static let bleedingDuringPregnancy: HKCategoryTypeIdentifier](./hkcategorytypeidentifier/bleedingduringpregnancy.md)
   A category type that records bleeding during pregnancy as a symptom.
-- [static let sleepApneaEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/sleepapneaevent.md)
-- [let HKDevicePropertyKeyFirmwareVersion: String](hkdevicepropertykeyfirmwareversion.md)
+- [static let sleepApneaEvent: HKCategoryTypeIdentifier](./hkcategorytypeidentifier/sleepapneaevent.md)
+- [let HKDevicePropertyKeyFirmwareVersion: String](./hkdevicepropertykeyfirmwareversion.md)
   The device’s firmware version.
-- [let HKDevicePropertyKeyHardwareVersion: String](hkdevicepropertykeyhardwareversion.md)
+- [let HKDevicePropertyKeyHardwareVersion: String](./hkdevicepropertykeyhardwareversion.md)
   The device’s hardware version.
-- [let HKDevicePropertyKeyLocalIdentifier: String](hkdevicepropertykeylocalidentifier.md)
-  A unique identifier for the device on the hardware running the app. For more information, see [`localIdentifier`](hkdevice/localidentifier.md).
-- [let HKDevicePropertyKeyManufacturer: String](hkdevicepropertykeymanufacturer.md)
+- [let HKDevicePropertyKeyLocalIdentifier: String](./hkdevicepropertykeylocalidentifier.md)
+  A unique identifier for the device on the hardware running the app. For more information, see [`localIdentifier`](./hkdevice/localidentifier.md).
+- [let HKDevicePropertyKeyManufacturer: String](./hkdevicepropertykeymanufacturer.md)
   The device’s manufacturer.
-- [let HKDevicePropertyKeyModel: String](hkdevicepropertykeymodel.md)
+- [let HKDevicePropertyKeyModel: String](./hkdevicepropertykeymodel.md)
   The device’s model.
-- [let HKDevicePropertyKeyName: String](hkdevicepropertykeyname.md)
+- [let HKDevicePropertyKeyName: String](./hkdevicepropertykeyname.md)
   The device’s name.
-- [let HKDevicePropertyKeySoftwareVersion: String](hkdevicepropertykeysoftwareversion.md)
+- [let HKDevicePropertyKeySoftwareVersion: String](./hkdevicepropertykeysoftwareversion.md)
   The device’s software version.
-- [let HKDevicePropertyKeyUDIDeviceIdentifier: String](hkdevicepropertykeyudideviceidentifier.md)
+- [let HKDevicePropertyKeyUDIDeviceIdentifier: String](./hkdevicepropertykeyudideviceidentifier.md)
   The device’s UDI Device Identifier.
-- [let HKPredicateKeyPathCount: String](hkpredicatekeypathcount.md)
+- [let HKPredicateKeyPathCount: String](./hkpredicatekeypathcount.md)
   A key path for the sample’s count.
-- [static let GAD7: HKScoredAssessmentTypeIdentifier](hkscoredassessmenttypeidentifier/gad7.md)
-- [static let PHQ9: HKScoredAssessmentTypeIdentifier](hkscoredassessmenttypeidentifier/phq9.md)
-- [let HKSourceRevisionAnyOperatingSystem: OperatingSystemVersion](hksourcerevisionanyoperatingsystem.md)
+- [static let GAD7: HKScoredAssessmentTypeIdentifier](./hkscoredassessmenttypeidentifier/gad7.md)
+- [static let PHQ9: HKScoredAssessmentTypeIdentifier](./hkscoredassessmenttypeidentifier/phq9.md)
+- [let HKSourceRevisionAnyOperatingSystem: OperatingSystemVersion](./hksourcerevisionanyoperatingsystem.md)
   A constant that matches any operating system.
 
 

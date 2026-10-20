@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct mach_assert_default {
     ...
 };
@@ -17,8 +17,8 @@ struct mach_assert_default {
 ## Topics
 
 ### Instance Properties
-- [expr](mach_assert_default/4540727-expr.md)
-- [hdr](mach_assert_default/4540728-hdr.md)
+- [expr](./mach_assert_default/api-4540727-expr.md)
+- [hdr](./mach_assert_default/api-4540728-hdr.md)
 
 
 ---

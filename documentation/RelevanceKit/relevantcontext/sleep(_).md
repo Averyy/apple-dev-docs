@@ -1,7 +1,8 @@
 # sleep(_:)
 
 **Framework**: RelevanceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Tells the system a widget is relevant because of a person’s sleep schedule.
 
@@ -26,9 +27,9 @@ A contextual clue that the system uses to determine the relevance of a widget in
 
 #### Discussion
 
-To indicate relevance based on a sleep condition, request the [`sleepAnalysis`](https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifier/sleepanalysis) permission. If contextual sleep information isn’t available to the system, sleep clues to signal relevance don’t have an effect. For more information about requesting HealthKit permissions, refer to [`Authorizing access to health data`](https://developer.apple.com/documentation/healthkit/authorizing-access-to-health-data).
+To indicate relevance based on a sleep condition, request the [`sleepAnalysis`](../../HealthKit/hkcategorytypeidentifier/sleepanalysis.md) permission. If contextual sleep information isn’t available to the system, sleep clues to signal relevance don’t have an effect. For more information about requesting HealthKit permissions, refer to [Authorizing access to health data](../../HealthKit/authorizing-access-to-health-data.md).
 
-> **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information, refer to [`Increasing the visibility of widgets in Smart Stacks`](https://developer.apple.com/documentation/widgetkit/widget-suggestions-in-smart-stacks).
+> **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information, refer to [Increasing the visibility of widgets in Smart Stacks](../../WidgetKit/widget-suggestions-in-smart-stacks.md).
 
 ## Parameters
 
@@ -36,7 +37,8 @@ To indicate relevance based on a sleep condition, request the [`sleepAnalysis`](
 
 ## See Also
 
-- [RelevantContext.SleepCondition](relevantcontext/sleepcondition.md)
+### Sleep clues
+- [RelevantContext.SleepCondition](./sleepcondition.md)
   Values that represent a person’s typical bedtime or wakeup time.
 
 

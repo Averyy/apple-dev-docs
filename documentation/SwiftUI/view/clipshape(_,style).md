@@ -1,7 +1,8 @@
 # clipShape(_:style:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a clipping shape for this view.
 
@@ -41,7 +42,7 @@ Text("Clipped text in a circle")
 
 The resulting view shows only the portion of the text that lies within the bounds of the circle.
 
-![A screenshot of text clipped to the shape of a](/images/com.apple.SwiftUI/SwiftUI-View-clipShape@2x.png)
+![A screenshot of text clipped to the shape of a](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-clipShape@2x.png)
 
 ## Parameters
 
@@ -50,9 +51,10 @@ The resulting view shows only the portion of the text that lies within the bound
 
 ## See Also
 
-- [func mask<Mask>(alignment: Alignment, () -> Mask) -> some View](view/mask(alignment:_:).md)
+### Masking and clipping
+- [func mask<Mask>(alignment: Alignment, () -> Mask) -> some View](./mask%28alignment,_%29.md)
   Masks this view using the alpha channel of the given view.
-- [func clipped(antialiased: Bool) -> some View](view/clipped(antialiased:).md)
+- [func clipped(antialiased: Bool) -> some View](./clipped%28antialiased%29.md)
   Clips this view to its bounding rectangular frame.
 
 

@@ -1,7 +1,8 @@
 # UIPointerInteractionAnimating
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for modifying an interaction animation in coordination with the pointer effect animations.
 
@@ -18,18 +19,22 @@ An interface for modifying an interaction animation in coordination with the poi
 protocol UIPointerInteractionAnimating : NSObjectProtocol
 ```
 
+```objc
+@protocol UIPointerInteractionAnimating <NSObject>
+```
+
 ## Topics
 
 ### Managing animations
-- [func addAnimations(() -> Void)](uipointerinteractionanimating/addanimations(_:).md)
+- [func addAnimations(() -> Void)](./uipointerinteractionanimating/addanimations%28_%29.md)
   Adds the specified animation block to the animator.
-- [func addCompletion((Bool) -> Void)](uipointerinteractionanimating/addcompletion(_:).md)
+- [func addCompletion((Bool) -> Void)](./uipointerinteractionanimating/addcompletion%28_%29.md)
   Adds the specified completion block to the animator.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

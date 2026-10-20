@@ -1,17 +1,22 @@
 # content
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tree controller’s content object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var content: Any? { get set }
+```
+
+```objc
+@property (strong, nullable) id content;
 ```
 
 #### Discussion

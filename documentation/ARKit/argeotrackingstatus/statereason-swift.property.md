@@ -1,7 +1,8 @@
 # stateReason
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reasons for the app’s geotracking status.
 
@@ -15,9 +16,14 @@ The reasons for the app’s geotracking status.
 var stateReason: ARGeoTrackingStatus.StateReason { get }
 ```
 
+```objc
+@property (nonatomic, readonly) ARGeoTrackingStateReason stateReason;
+```
+
 ## See Also
 
-- [ARGeoTrackingStatus.StateReason](argeotrackingstatus/statereason-swift.enum.md)
+### Determining the Reason
+- [ARGeoTrackingStatus.StateReason](./statereason-swift.enum.md)
   The reasons for the app’s geotracking status.
 
 

@@ -1,7 +1,8 @@
 # initialURL
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source URL that originally asked to load the resource.
 

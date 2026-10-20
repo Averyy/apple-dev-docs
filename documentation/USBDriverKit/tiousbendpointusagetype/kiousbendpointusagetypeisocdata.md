@@ -1,21 +1,23 @@
 # kIOUSBEndpointUsageTypeIsocData
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBEndpointUsageTypeIsocData
 ```
 
 ## See Also
 
-- [kIOUSBEndpointUsageTypeIsocFeedback](tiousbendpointusagetype/kiousbendpointusagetypeisocfeedback.md)
-- [kIOUSBEndpointUsageTypeIsocImplicit](tiousbendpointusagetype/kiousbendpointusagetypeisocimplicit.md)
+### Getting the Usage Types
+- [kIOUSBEndpointUsageTypeIsocFeedback](./kiousbendpointusagetypeisocfeedback.md)
+- [kIOUSBEndpointUsageTypeIsocImplicit](./kiousbendpointusagetypeisocimplicit.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # cancel(with:reason:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a close frame with the given close code and optional close reason.
 
@@ -20,22 +21,27 @@ Sends a close frame with the given close code and optional close reason.
 func cancel(with closeCode: URLSessionWebSocketTask.CloseCode, reason: Data?)
 ```
 
+```objc
+- (void) cancelWithCloseCode:(NSURLSessionWebSocketCloseCode) closeCode reason:(NSData *) reason;
+```
+
 #### Discussion
 
-If you call [`cancel()`](urlsessiontask/cancel().md) on the task instead of this method, it sends a cancellation frame with no close code or reason.
+If you call [`cancel()`](../urlsessiontask/cancel%28%29.md) on the task instead of this method, it sends a cancellation frame with no close code or reason.
 
 ## Parameters
 
-- `closeCode`: A [`URLSessionWebSocketTask.CloseCode`](urlsessionwebsockettask/closecode-swift.enum.md) that indicates the reason for closing the connection.
+- `closeCode`: A [`URLSessionWebSocketTask.CloseCode`](./closecode-swift.enum.md) that indicates the reason for closing the connection.
 - `reason`: Optional further information to explain the closing. The value of this parameter is defined by the endpoints, not by the standard.
 
 ## See Also
 
-- [var closeCode: URLSessionWebSocketTask.CloseCode](urlsessionwebsockettask/closecode-swift.property.md)
+### Closing the connection
+- [var closeCode: URLSessionWebSocketTask.CloseCode](./closecode-swift.property.md)
   A code that indicates the reason a connection closed.
-- [URLSessionWebSocketTask.CloseCode](urlsessionwebsockettask/closecode-swift.enum.md)
+- [URLSessionWebSocketTask.CloseCode](./closecode-swift.enum.md)
   A code that indicates why a WebSocket connection closed.
-- [var closeReason: Data?](urlsessionwebsockettask/closereason.md)
+- [var closeReason: Data?](./closereason.md)
   A block of data that provides further information about why a connection closed.
 
 

@@ -1,7 +1,8 @@
 # sectionHeader(title:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a menu item representing a section header for a logical grouping of menu commands.
 

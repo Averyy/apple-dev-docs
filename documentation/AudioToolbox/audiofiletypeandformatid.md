@@ -1,22 +1,27 @@
 # AudioFileTypeAndFormatID
 
 **Framework**: Audio Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-A specifier for the constant[`kAudioFileGlobalInfo_AvailableStreamDescriptionsForFormat`](kaudiofileglobalinfo_availablestreamdescriptionsforformat.md).
+A specifier for the constant[`kAudioFileGlobalInfo_AvailableStreamDescriptionsForFormat`](./kaudiofileglobalinfo_availablestreamdescriptionsforformat.md).
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 struct AudioFileTypeAndFormatID
+```
+
+```c
+struct AudioFileTypeAndFormatID;
 ```
 
 #### Overview
@@ -26,47 +31,48 @@ This structure specifies a desired audio file type and data format ID so you can
 ## Topics
 
 ### Initializers
-- [init()](audiofiletypeandformatid/init.md)
-- [init(mFileType: AudioFileTypeID, mFormatID: UInt32)](audiofiletypeandformatid/init(mfiletype:mformatid:).md)
+- [init()](./audiofiletypeandformatid/init%28%29.md)
+- [init(mFileType: AudioFileTypeID, mFormatID: UInt32)](./audiofiletypeandformatid/init%28mfiletype,mformatid%29.md)
 ### Instance Properties
-- [var mFileType: AudioFileTypeID](audiofiletypeandformatid/mfiletype.md)
+- [var mFileType: AudioFileTypeID](./audiofiletypeandformatid/mfiletype.md)
   A four-character code for the file type.
-- [var mFormatID: UInt32](audiofiletypeandformatid/mformatid.md)
+- [var mFormatID: UInt32](./audiofiletypeandformatid/mformatid.md)
   A four-character code for the format ID such as `kAudioFormatLinearPCM`, `kAudioFormatMPEG4AAC`, and so forth. (See the `AudioFormat.h` header file for declarations.)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct AudioBytePacketTranslationFlags](audiobytepackettranslationflags.md)
-- [struct AudioFileFlags](audiofileflags.md)
-- [struct AudioFileRegionFlags](audiofileregionflags.md)
+### Data Types
+- [struct AudioBytePacketTranslationFlags](./audiobytepackettranslationflags.md)
+- [struct AudioFileFlags](./audiofileflags.md)
+- [struct AudioFileRegionFlags](./audiofileregionflags.md)
   Flags that specify a playback direction for an audio file region structure.
-- [struct AudioFileStreamParseFlags](audiofilestreamparseflags.md)
-- [struct AudioFileStreamPropertyFlags](audiofilestreampropertyflags.md)
-- [struct AudioFileStreamSeekFlags](audiofilestreamseekflags.md)
-- [typealias AudioFileID](audiofileid.md)
+- [struct AudioFileStreamParseFlags](./audiofilestreamparseflags.md)
+- [struct AudioFileStreamPropertyFlags](./audiofilestreampropertyflags.md)
+- [struct AudioFileStreamSeekFlags](./audiofilestreamseekflags.md)
+- [typealias AudioFileID](./audiofileid.md)
   An opaque data type that represents an audio file object.
-- [typealias AudioFilePropertyID](audiofilepropertyid.md)
+- [typealias AudioFilePropertyID](./audiofilepropertyid.md)
   An audio file property identifier.
-- [struct AudioFile_SMPTE_Time](audiofile_smpte_time.md)
+- [struct AudioFile_SMPTE_Time](./audiofile_smpte_time.md)
   A data structure for describing SMPTE (Society of Motion Picture and Television Engineers) time.
-- [struct AudioFileMarker](audiofilemarker.md)
+- [struct AudioFileMarker](./audiofilemarker.md)
   Annotates a position in an audio file.
-- [struct AudioFileMarkerList](audiofilemarkerlist.md)
+- [struct AudioFileMarkerList](./audiofilemarkerlist.md)
   A list of markers associated with an audio file, including their SMPTE time type, the number of markers, and the markers themselves.
-- [struct AudioFileRegion](audiofileregion.md)
+- [struct AudioFileRegion](./audiofileregion.md)
   An audio file region specifies a segment of audio data.
-- [struct AudioFileRegionList](audiofileregionlist.md)
+- [struct AudioFileRegionList](./audiofileregionlist.md)
   A list of the audio file regions in a file.
-- [struct AudioFramePacketTranslation](audioframepackettranslation.md)
+- [struct AudioFramePacketTranslation](./audioframepackettranslation.md)
   A structure that specifies frame and packet translations.
-- [struct AudioBytePacketTranslation](audiobytepackettranslation.md)
-  A data structure used by the [`kAudioFilePropertyByteToPacket`](kaudiofilepropertybytetopacket.md) and [`kAudioFilePropertyPacketToByte`](kaudiofilepropertypackettobyte.md) properties.
+- [struct AudioBytePacketTranslation](./audiobytepackettranslation.md)
+  A data structure used by the [`kAudioFilePropertyByteToPacket`](./kaudiofilepropertybytetopacket.md) and [`kAudioFilePropertyPacketToByte`](./kaudiofilepropertypackettobyte.md) properties.
 
 
 ---

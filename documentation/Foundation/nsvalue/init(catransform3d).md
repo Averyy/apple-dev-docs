@@ -1,7 +1,8 @@
 # init(CATransform3D:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new value object containing the specified CoreAnimation transform structure.
 
@@ -16,7 +17,15 @@ Creates a new value object containing the specified CoreAnimation transform stru
 ## Declaration
 
 ```swift
+init(CATransform3D t: CATransform3D)
+```
+
+```swift
 init(caTransform3D t: CATransform3D)
+```
+
+```objc
++ (NSValue *) valueWithCATransform3D:(CATransform3D) t;
 ```
 
 #### Return Value
@@ -29,9 +38,11 @@ A new value object that contains the transform information.
 
 ## See Also
 
-- [struct CATransform3D](../quartzcore/catransform3d.md)
+### Related Documentation
+- [struct CATransform3D](../../QuartzCore/catransform3d.md)
   The standard transform matrix used throughout Core Animation.
-- [var caTransform3DValue: CATransform3D](nsvalue/catransform3dvalue.md)
+### Working with CoreAnimation Transform Values
+- [var caTransform3DValue: CATransform3D](./catransform3dvalue.md)
   The CoreAnimation transform structure representation of the value.
 
 

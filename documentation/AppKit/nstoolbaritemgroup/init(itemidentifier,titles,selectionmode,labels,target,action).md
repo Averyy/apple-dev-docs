@@ -1,7 +1,8 @@
 # init(itemIdentifier:titles:selectionMode:labels:target:action:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a grouped toolbar item with labels.
 
@@ -17,18 +18,25 @@ Creates a grouped toolbar item with labels.
 convenience init(itemIdentifier: NSToolbarItem.Identifier, titles: [String], selectionMode: NSToolbarItemGroup.SelectionMode, labels: [String]?, target: Any?, action: Selector?)
 ```
 
+```objc
++ (instancetype) groupWithItemIdentifier:(NSToolbarItemIdentifier) itemIdentifier titles:(NSArray<NSString *> *) titles selectionMode:(NSToolbarItemGroupSelectionMode) selectionMode labels:(NSArray<NSString *> *) labels target:(id) target action:(SEL) action;
+```
+
 ## Parameters
 
 - `itemIdentifier`: The identifier for the grouped toolbar item.
 - `titles`: An array of titles to present as subitems in the grouped toolbar item.
 - `selectionMode`: A Boolean value that indicates how the grouped toolbar item presents selections.
 - `labels`: Labels that correspond to the specified titles.
-- `target`: The target that the toolbar calls upon selection. If target is `nil`, the toolbar attempts to invoke the specified action on the first responder and, failing that, passes the action up the responder chain.
+- `target`: The target that the toolbar calls upon selection.
+
+  If target is `nil`, the toolbar attempts to invoke the specified action on the first responder and, failing that, passes the action up the responder chain.
 - `action`: The selector that the toolbar invokes on the target.
 
 ## See Also
 
-- [convenience init(itemIdentifier: NSToolbarItem.Identifier, images: [UIImage], selectionMode: NSToolbarItemGroup.SelectionMode, labels: [String]?, target: Any?, action: Selector?)](nstoolbaritemgroup/init(itemidentifier:images:selectionmode:labels:target:action:).md)
+### Creating grouped toolbar items
+- [convenience init(itemIdentifier: NSToolbarItem.Identifier, images: [UIImage], selectionMode: NSToolbarItemGroup.SelectionMode, labels: [String]?, target: Any?, action: Selector?)](./init%28itemidentifier,images,selectionmode,labels,target,action%29.md)
   Creates a grouped toolbar item with images.
 
 

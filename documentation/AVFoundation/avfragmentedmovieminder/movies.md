@@ -1,7 +1,8 @@
 # movies
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the fragmented movie objects being minded.
 
@@ -19,11 +20,16 @@ An array containing the fragmented movie objects being minded.
 var movies: [AVFragmentedMovie] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVFragmentedMovie *> * movies;
+```
+
 ## See Also
 
-- [func add(AVFragmentedMovie)](avfragmentedmovieminder/add(_:).md)
+### Adding and removing movies
+- [func add(AVFragmentedMovie)](./add%28_%29.md)
   Adds a fragmented movie to the array of movies being minded.
-- [func remove(AVFragmentedMovie)](avfragmentedmovieminder/remove(_:).md)
+- [func remove(AVFragmentedMovie)](./remove%28_%29.md)
   Removes a fragmented movie from the array of movies being minded.
 
 

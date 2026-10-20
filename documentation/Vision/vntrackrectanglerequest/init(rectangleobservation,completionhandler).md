@@ -1,7 +1,8 @@
 # init(rectangleObservation:completionHandler:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new rectangle tracking request with a rectangle observation.
 
@@ -19,6 +20,10 @@ Creates a new rectangle tracking request with a rectangle observation.
 init(rectangleObservation observation: VNRectangleObservation, completionHandler: VNRequestCompletionHandler? = nil)
 ```
 
+```objc
+- (instancetype) initWithRectangleObservation:(VNRectangleObservation *) observation completionHandler:(VNRequestCompletionHandler) completionHandler;
+```
+
 ## Parameters
 
 - `observation`: A rectangle observation with bounding box and corner location information.
@@ -26,7 +31,8 @@ init(rectangleObservation observation: VNRectangleObservation, completionHandler
 
 ## See Also
 
-- [convenience init(rectangleObservation: VNRectangleObservation)](vntrackrectanglerequest/init(rectangleobservation:).md)
+### Initializing a Rectangle Tracking Request
+- [convenience init(rectangleObservation: VNRectangleObservation)](./init%28rectangleobservation%29.md)
   Creates a new rectangle tracking request with a rectangle observation.
 
 

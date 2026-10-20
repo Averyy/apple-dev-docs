@@ -1,7 +1,8 @@
 # init(scale:bias:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new fused dequantization parameters structure.
 
@@ -11,8 +12,10 @@ Returns a new fused dequantization parameters structure.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 

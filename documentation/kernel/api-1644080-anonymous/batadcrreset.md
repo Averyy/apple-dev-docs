@@ -1,14 +1,15 @@
 # bATADCRReset
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 bATADCRReset = 2
 ```
 

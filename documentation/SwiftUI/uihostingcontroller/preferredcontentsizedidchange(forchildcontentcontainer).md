@@ -1,7 +1,8 @@
 # preferredContentSizeDidChange(forChildContentContainer:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -19,11 +20,12 @@
 
 ## See Also
 
-- [var sizingOptions: UIHostingControllerSizingOptions](uihostingcontroller/sizingoptions.md)
+### Managing the size
+- [var sizingOptions: UIHostingControllerSizingOptions](./sizingoptions.md)
   The options for how the hosting controller tracks changes to the size of its SwiftUI content.
-- [func sizeThatFits(in: CGSize) -> CGSize](uihostingcontroller/sizethatfits(in:).md)
+- [func sizeThatFits(in: CGSize) -> CGSize](./sizethatfits%28in%29.md)
   Calculates and returns the most appropriate size for the current view.
-- [var safeAreaRegions: SafeAreaRegions](uihostingcontroller/safearearegions.md)
+- [var safeAreaRegions: SafeAreaRegions](./safearearegions.md)
   The safe area regions that this view controller adds to its view.
 
 

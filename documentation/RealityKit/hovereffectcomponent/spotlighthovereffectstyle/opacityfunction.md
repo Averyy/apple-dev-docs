@@ -1,7 +1,8 @@
 # opacityFunction
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The blending technique the hover effect applies to the entity’s base material.
 
@@ -20,7 +21,7 @@ var opacityFunction: HoverEffectComponent.OpacityFunction
 
 #### Discussion
 
-The property’s default value is [`HoverEffectComponent.OpacityFunction.full`](hovereffectcomponent/opacityfunction/full.md).
+The property’s default value is [`HoverEffectComponent.OpacityFunction.full`](../opacityfunction/full.md).
 
 
 ---

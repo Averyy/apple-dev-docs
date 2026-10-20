@@ -1,18 +1,19 @@
 # sf_data_out_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*sf_data_out_func)(void *cookie, socket_t so, const struct sockaddr *to, mbuf_t *data, mbuf_t *control, sflt_data_flag_t flags);
 ```
 
-#### Return_value
+#### Return Value
 
 Return: 0 - The caller will continue with normal processing of the data. EJUSTRETURN - The caller will stop processing the data, the data will not be freed. Anything Else - The caller will free the data and stop processing.
 

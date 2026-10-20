@@ -1,17 +1,22 @@
 # HV_VM_DEFAULT
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The default VM creation behavior.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var HV_VM_DEFAULT: Int { get }
+```
+
+```c
+HV_VM_DEFAULT
 ```
 
 

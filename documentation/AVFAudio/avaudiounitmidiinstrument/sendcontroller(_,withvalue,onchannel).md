@@ -1,7 +1,8 @@
 # sendController(_:withValue:onChannel:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a MIDI controller event to the instrument.
 
@@ -19,6 +20,10 @@ Sends a MIDI controller event to the instrument.
 func sendController(_ controller: UInt8, withValue value: UInt8, onChannel channel: UInt8)
 ```
 
+```objc
+- (void) sendController:(uint8_t) controller withValue:(uint8_t) value onChannel:(uint8_t) channel;
+```
+
 ## Parameters
 
 - `controller`: Specifies a standard MIDI controller number. The valid range is `0` to `127`.
@@ -27,23 +32,24 @@ func sendController(_ controller: UInt8, withValue value: UInt8, onChannel chann
 
 ## See Also
 
-- [func sendMIDIEvent(UInt8, data1: UInt8)](avaudiounitmidiinstrument/sendmidievent(_:data1:).md)
+### Sending MIDI events
+- [func sendMIDIEvent(UInt8, data1: UInt8)](./sendmidievent%28_,data1%29.md)
   Sends a MIDI event which contains one data byte to the instrument.
-- [func sendMIDIEvent(UInt8, data1: UInt8, data2: UInt8)](avaudiounitmidiinstrument/sendmidievent(_:data1:data2:).md)
+- [func sendMIDIEvent(UInt8, data1: UInt8, data2: UInt8)](./sendmidievent%28_,data1,data2%29.md)
   Sends a MIDI event which contains two data bytes to the instrument.
-- [func sendMIDISysExEvent(Data)](avaudiounitmidiinstrument/sendmidisysexevent(_:).md)
+- [func sendMIDISysExEvent(Data)](./sendmidisysexevent%28_%29.md)
   Sends a MIDI System Exclusive event to the instrument.
-- [func sendPitchBend(UInt16, onChannel: UInt8)](avaudiounitmidiinstrument/sendpitchbend(_:onchannel:).md)
+- [func sendPitchBend(UInt16, onChannel: UInt8)](./sendpitchbend%28_,onchannel%29.md)
   Sends a MIDI Pitch Bend event to the instrument.
-- [func sendPressure(UInt8, onChannel: UInt8)](avaudiounitmidiinstrument/sendpressure(_:onchannel:).md)
+- [func sendPressure(UInt8, onChannel: UInt8)](./sendpressure%28_,onchannel%29.md)
   Sends a MIDI channel pressure event to the instrument.
-- [func sendPressure(forKey: UInt8, withValue: UInt8, onChannel: UInt8)](avaudiounitmidiinstrument/sendpressure(forkey:withvalue:onchannel:).md)
+- [func sendPressure(forKey: UInt8, withValue: UInt8, onChannel: UInt8)](./sendpressure%28forkey,withvalue,onchannel%29.md)
   Sends a MIDI Polyphonic key pressure event to the instrument.
-- [func sendProgramChange(UInt8, onChannel: UInt8)](avaudiounitmidiinstrument/sendprogramchange(_:onchannel:).md)
+- [func sendProgramChange(UInt8, onChannel: UInt8)](./sendprogramchange%28_,onchannel%29.md)
   Sends MIDI Program Change and Bank Select events to the instrument.
-- [func sendProgramChange(UInt8, bankMSB: UInt8, bankLSB: UInt8, onChannel: UInt8)](avaudiounitmidiinstrument/sendprogramchange(_:bankmsb:banklsb:onchannel:).md)
+- [func sendProgramChange(UInt8, bankMSB: UInt8, bankLSB: UInt8, onChannel: UInt8)](./sendprogramchange%28_,bankmsb,banklsb,onchannel%29.md)
   Sends MIDI Program Change and Bank Select events to the instrument.
-- [func send(UnsafePointer<MIDIEventList>)](avaudiounitmidiinstrument/send(_:).md)
+- [func send(UnsafePointer<MIDIEventList>)](./send%28_%29.md)
   Sends a MIDI event list to the instrument.
 
 

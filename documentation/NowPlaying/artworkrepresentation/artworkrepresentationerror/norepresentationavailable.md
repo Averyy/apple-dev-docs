@@ -1,7 +1,8 @@
 # ArtworkRepresentation.ArtworkRepresentationError.noRepresentationAvailable
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The provided image data couldn’t be converted into a supported representation.
 

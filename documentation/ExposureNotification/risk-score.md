@@ -1,6 +1,7 @@
 # Risk Score
 
-**Framework**: Exposure Notification
+**Framework**: Exposure Notification  
+**Role**: API Collection
 
 The minimum and maximum risk score.
 
@@ -11,28 +12,29 @@ The minimum and maximum risk score.
 ## Topics
 
 ### Constants
-- [var ENRiskScoreMin: Int](enriskscoremin.md)
+- [var ENRiskScoreMin: Int](./enriskscoremin.md)
   The value that is the minimum for risk score.
-- [var ENRiskScoreMax: Int](enriskscoremax.md)
+- [var ENRiskScoreMax: Int](./enriskscoremax.md)
   The value that is the maximum for risk score.
 
 ## See Also
 
-- [Attenuation](attenuation.md)
+### Enumerations
+- [Attenuation](./attenuation.md)
   The minimum and maximum signal attenuations.
-- [Risk Level](risk-level.md)
+- [Risk Level](./risk-level.md)
   The minimum and maximum risk levels.
-- [Risk Level Value](risk-level-value.md)
+- [Risk Level Value](./risk-level-value.md)
   The minimum and maximum risk level values.
-- [Risk Weight](risk-weight.md)
+- [Risk Weight](./risk-weight.md)
   The minimum, default, and maximum risk weights.
-- [struct ENActivityFlags](enactivityflags.md)
+- [struct ENActivityFlags](./enactivityflags.md)
   Activities that occur while the app isn’t running.
-- [enum ENCalibrationConfidence](encalibrationconfidence.md)
+- [enum ENCalibrationConfidence](./encalibrationconfidence.md)
   The transmitting device’s calibration confidence.
-- [enum ENDiagnosisReportType](endiagnosisreporttype.md)
+- [enum ENDiagnosisReportType](./endiagnosisreporttype.md)
   The type of a report that describes the origin of a diagnosis.
-- [enum ENInfectiousness](eninfectiousness.md)
+- [enum ENInfectiousness](./eninfectiousness.md)
   The degree to which a person’s symptoms may indicate transmission risk.
 
 

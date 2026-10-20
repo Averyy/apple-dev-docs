@@ -1,7 +1,8 @@
 # isEndToEndEncrypted
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether this message is end-to-end encrypted.
 
@@ -16,7 +17,7 @@ var isEndToEndEncrypted: Bool
 
 #### Discussion
 
-For outgoing messages, this indicates whether to end-to-end encrypt the message before sending out. If the service does not support end-to-end encryption, the operation throws [`RCSService.Error.endToEndEncryptionNotSupported`](rcsservice/error/endtoendencryptionnotsupported.md).
+For outgoing messages, this indicates whether to end-to-end encrypt the message before sending out. If the service does not support end-to-end encryption, the operation throws [`RCSService.Error.endToEndEncryptionNotSupported`](../../rcsservice/error/endtoendencryptionnotsupported.md).
 
 For incoming messages, this indicates whether the message was end-to-end encrypted.
 

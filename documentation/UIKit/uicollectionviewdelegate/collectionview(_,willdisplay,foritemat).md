@@ -1,7 +1,8 @@
 # collectionView(_:willDisplay:forItemAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the specified cell is about to be displayed in the collection view.
 
@@ -18,6 +19,10 @@ Tells the delegate that the specified cell is about to be displayed in the colle
 optional func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath)
 ```
 
+```objc
+- (void) collectionView:(UICollectionView *) collectionView willDisplayCell:(UICollectionViewCell *) cell forItemAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Discussion
 
 The collection view calls this method before adding a cell to its content. Use this method to detect cell additions, as opposed to monitoring the cell itself to see when it appears.
@@ -30,11 +35,12 @@ The collection view calls this method before adding a cell to its content. Use t
 
 ## See Also
 
-- [func collectionView(UICollectionView, willDisplaySupplementaryView: UICollectionReusableView, forElementKind: String, at: IndexPath)](uicollectionviewdelegate/collectionview(_:willdisplaysupplementaryview:forelementkind:at:).md)
+### Tracking the addition and removal of views
+- [func collectionView(UICollectionView, willDisplaySupplementaryView: UICollectionReusableView, forElementKind: String, at: IndexPath)](./collectionview%28_,willdisplaysupplementaryview,forelementkind,at%29.md)
   Tells the delegate that the specified supplementary view is about to be displayed in the collection view.
-- [func collectionView(UICollectionView, didEndDisplaying: UICollectionViewCell, forItemAt: IndexPath)](uicollectionviewdelegate/collectionview(_:didenddisplaying:foritemat:).md)
+- [func collectionView(UICollectionView, didEndDisplaying: UICollectionViewCell, forItemAt: IndexPath)](./collectionview%28_,didenddisplaying,foritemat%29.md)
   Tells the delegate that the specified cell was removed from the collection view.
-- [func collectionView(UICollectionView, didEndDisplayingSupplementaryView: UICollectionReusableView, forElementOfKind: String, at: IndexPath)](uicollectionviewdelegate/collectionview(_:didenddisplayingsupplementaryview:forelementofkind:at:).md)
+- [func collectionView(UICollectionView, didEndDisplayingSupplementaryView: UICollectionReusableView, forElementOfKind: String, at: IndexPath)](./collectionview%28_,didenddisplayingsupplementaryview,forelementofkind,at%29.md)
   Tells the delegate that the specified supplementary view was removed from the collection view.
 
 

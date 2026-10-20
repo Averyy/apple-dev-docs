@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a reference to the given object only if it is encoded unconditionally elsewhere in the payload (previously, or in the future).
@@ -27,11 +28,17 @@ For encoders which don’t support this feature, the default implementation enco
 
 For formats which don’t support this feature, the default implementation encodes the given object unconditionally.
 
-> **Note**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
+> **Throws**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
 
 ## Parameters
 
 - `object`: The object to encode.
+
+## Default Implementations
+
+### UnkeyedEncodingContainer Implementations
+- [func encodeConditional<T>(T) throws](./encodeconditional%28_%29-4trvc.md)
+  Encodes a reference to the given object only if it is encoded unconditionally elsewhere in the payload (previously, or in the future).
 
 
 ---

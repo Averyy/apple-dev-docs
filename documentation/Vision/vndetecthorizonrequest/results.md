@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results of the horizon detection request.
 
@@ -17,6 +18,10 @@ The results of the horizon detection request.
 
 ```swift
 var results: [VNHorizonObservation]? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSArray<VNHorizonObservation *> * results;
 ```
 
 

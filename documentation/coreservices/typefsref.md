@@ -1,7 +1,8 @@
 # typeFSRef
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 File system reference. Use in preference to file system specifications (`typeFSS`).
 

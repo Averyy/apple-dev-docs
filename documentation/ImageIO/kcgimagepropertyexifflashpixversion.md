@@ -1,7 +1,8 @@
 # kCGImagePropertyExifFlashPixVersion
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The FlashPix version supported by an FPXR file.
 
@@ -20,13 +21,18 @@ The FlashPix version supported by an FPXR file.
 let kCGImagePropertyExifFlashPixVersion: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyExifFlashPixVersion;
+```
+
 #### Discussion
 
 FlashPix is a format for multiresolution tiled images that facilitates fast onscreen viewing.
 
 ## See Also
 
-- [let kCGImagePropertyExifFlashEnergy: CFString](kcgimagepropertyexifflashenergy.md)
+### Flash Information
+- [let kCGImagePropertyExifFlashEnergy: CFString](./kcgimagepropertyexifflashenergy.md)
   The strobe energy when the image was captured, in beam candle power seconds.
 
 

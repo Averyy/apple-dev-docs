@@ -1,16 +1,19 @@
 # fetchPlace(callback)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the place object associated with the map feature.
 
 **Availability**:
-- MapKit JS 5.74.1+
+- MapKit JS 5.74.1+ - Deprecated in 6.0
+
+> **Deprecated**: Use the [`PlaceLookup`](../placelookup.md) [`getPlace()`](../placelookup/getplace1.md) method instead.
 
 ## Declaration
 
-```swift
+```
 fetchPlace(
     callback: (error: Error | null, result: Place | null) => void,
 ): Promise<Place | null>;
@@ -18,12 +21,14 @@ fetchPlace(
 
 ## Mentions
 
-- [MapKit JS 6](mapkit-js-6.md)
+- [MapKit JS 6](../mapkit-js-6.md)
 
 ## Parameters
 
-- `callback`: Required. The framework invokes the callback function with two arguments, `error` and `data,` on success or failure: - error — Contains an error code and a message that describes the error.
-- data — A data object that contains an array with one [`Place`](place.md) object associated with the map feature, or an empty array if the server can’t return the specified place.
+- `callback`: Required. The framework invokes the callback function with two arguments, `error` and `data,` on success or failure:
+
+  - error — Contains an error code and a message that describes the error.
+  - data — A data object that contains an array with one [`Place`](../place.md) object associated with the map feature, or an empty array if the server can’t return the specified place.
 
 
 ---

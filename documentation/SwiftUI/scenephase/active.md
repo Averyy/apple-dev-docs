@@ -1,7 +1,8 @@
 # ScenePhase.active
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The scene is in the foreground and interactive.
 
@@ -28,9 +29,10 @@ An app or custom scene in this phase contains at least one active scene instance
 
 ## See Also
 
-- [ScenePhase.inactive](scenephase/inactive.md)
+### Getting scene phases
+- [ScenePhase.inactive](./inactive.md)
   The scene is in the foreground but should pause its work.
-- [ScenePhase.background](scenephase/background.md)
+- [ScenePhase.background](./background.md)
   The scene isn’t currently visible in the UI.
 
 

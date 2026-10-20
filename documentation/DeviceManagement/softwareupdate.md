@@ -1,16 +1,17 @@
 # SoftwareUpdate
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures the software update policy. Removed: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 26.0
 
 ## Declaration
 
-```swift
+```
 object SoftwareUpdate
 ```
 
@@ -18,7 +19,7 @@ object SoftwareUpdate
 
 Specify `com.apple.SoftwareUpdate` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.SoftwareUpdate` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -68,15 +69,66 @@ Specify `com.apple.SoftwareUpdate` as the payload type.
 
 ## Properties
 
-- `AllowPreReleaseInstallation` (boolean): Removed: macOS 27+
-- `AutomaticallyInstallAppUpdates` (boolean): Removed: macOS 27+
-- `AutomaticallyInstallMacOSUpdates` (boolean): Removed: macOS 27+
-- `AutomaticCheckEnabled` (boolean): Removed: macOS 27+
-- `AutomaticDownload` (boolean): Removed: macOS 27+
-- `CatalogURL` (string): Removed: macOS 27+
-- `ConfigDataInstall` (boolean): Removed: macOS 27+
-- `CriticalUpdateInstall` (boolean): Removed: macOS 27+
-- `restrict-software-update-require-admin-to-install` (boolean): Removed: macOS 27+
+- `AllowPreReleaseInstallation` (boolean) *(deprecated)*: ~~If `true`, prerelease software can be installed on this computer.~~
+
+  ~~Available: macOS 10.9+~~
+  ~~Deprecated: macOS 26+~~
+  Removed: macOS 27+
+
+  **Default**: `true`
+- `AutomaticallyInstallAppUpdates` (boolean) *(deprecated)*: ~~If `false`, deselects the “Install app updates from the App Store” option and prevents the user from changing the option.~~
+
+  ~~Available: macOS 10.15+~~
+  ~~Deprecated: macOS 26+~~
+  Removed: macOS 27+
+
+  **Default**: `true`
+- `AutomaticallyInstallMacOSUpdates` (boolean) *(deprecated)*: ~~If `false`, restricts the “Install macOS Updates” option and prevents the user from changing the option.~~
+
+  ~~Available: macOS 10.15+~~
+  ~~Deprecated: macOS 26+~~
+  Removed: macOS 27+
+
+  **Default**: `true`
+- `AutomaticCheckEnabled` (boolean) *(deprecated)*: ~~If `false`, deselects the “Check for updates” option and prevents the user from changing the option.~~
+
+  ~~Available: macOS 10.15+~~
+  ~~Deprecated: macOS 26+~~
+  Removed: macOS 27+
+
+  **Default**: `true`
+- `AutomaticDownload` (boolean) *(deprecated)*: ~~If `false`, deselects the “Download new updates when available from the App Store” option and prevents the user from changing the option.~~
+
+  ~~Available: macOS 10.15+~~
+  ~~Deprecated: macOS 26+~~
+  Removed: macOS 27+
+
+  **Default**: `true`
+- `CatalogURL` (string) *(deprecated)*: ~~The URL of the software update catalog. This property isn’t supported in macOS 11 and later.~~
+
+  ~~Deprecated: macOS 11+~~
+  Removed: macOS 27+
+- `ConfigDataInstall` (boolean) *(deprecated)*: ~~If `false`, restricts the automatic installation of configuration data.~~
+
+  ~~Available: macOS 10.15+~~
+  ~~Deprecated: macOS 26+~~
+  Removed: macOS 27+
+
+  **Default**: `true`
+- `CriticalUpdateInstall` (boolean) *(deprecated)*: ~~If `false`, disables the automatic installation of critical updates and prevents the user from changing the “Install system data files and security updates” option.~~
+
+  ~~Available: macOS 10.15+~~
+  ~~Deprecated: macOS 26+~~
+  Removed: macOS 27+
+
+  **Default**: `true`
+- `restrict-software-update-require-admin-to-install` (boolean) *(deprecated)*: ~~If `true`, restrict app installations to admin users. This key has the same function as the  `restrict-store-require-admin-to-install` key in the `com.apple.appstore` payload.~~
+
+  ~~Available: macOS 10.14+~~
+  ~~Deprecated: macOS 26+~~
+  Removed: macOS 27+
+
+  **Default**: `false`
 
 
 ---

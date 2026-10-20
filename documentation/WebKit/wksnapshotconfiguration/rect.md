@@ -1,7 +1,8 @@
 # rect
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The portion of your web view to capture, specified as a rectangle in the view’s coordinate system.
 
@@ -18,13 +19,18 @@ The portion of your web view to capture, specified as a rectangle in the view’
 var rect: CGRect { get set }
 ```
 
+```objc
+@property (nonatomic) CGRect rect;
+```
+
 #### Discussion
 
-The default value of this property is [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull), which captures everything in the view’s bounds rectangle. If you specify a custom rectangle, it must lie within the bounds rectangle of the [`WKWebView`](wkwebview.md) object.
+The default value of this property is [`CGRectNull`](../../CoreGraphics/cgrectnull.md), which captures everything in the view’s bounds rectangle. If you specify a custom rectangle, it must lie within the bounds rectangle of the [`WKWebView`](../wkwebview.md) object.
 
 ## See Also
 
-- [var snapshotWidth: NSNumber?](wksnapshotconfiguration/snapshotwidth.md)
+### Specifying the snapshot dimensions
+- [var snapshotWidth: NSNumber?](./snapshotwidth.md)
   The width of the captured image, in points.
 
 

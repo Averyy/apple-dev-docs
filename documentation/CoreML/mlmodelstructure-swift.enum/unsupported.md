@@ -1,7 +1,8 @@
 # MLModelStructure.unsupported
 
 **Framework**: Core ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Represents an unsupported model.
 
@@ -22,17 +23,18 @@ case unsupported
 
 ## See Also
 
-- [case neuralNetwork(MLModelStructure.NeuralNetwork)](mlmodelstructure-swift.enum/neuralnetwork(_:).md)
+### Model structures
+- [case neuralNetwork(MLModelStructure.NeuralNetwork)](./neuralnetwork%28_%29.md)
   Represents a NeuralNetwork model, the associated value is the structure of the NeuralNetwork.
-- [MLModelStructure.NeuralNetwork](mlmodelstructure-swift.enum/neuralnetwork.md)
+- [MLModelStructure.NeuralNetwork](./neuralnetwork.md)
   A struct representing the structure of a NeuralNetwork model..
-- [case pipeline(MLModelStructure.Pipeline)](mlmodelstructure-swift.enum/pipeline(_:).md)
+- [case pipeline(MLModelStructure.Pipeline)](./pipeline%28_%29.md)
   Represents a Pipeline model, the associated value is the structure of the Pipeline.
-- [MLModelStructure.Pipeline](mlmodelstructure-swift.enum/pipeline.md)
+- [MLModelStructure.Pipeline](./pipeline.md)
   A struct representing the structure of a Pipeline model..
-- [case program(MLModelStructure.Program)](mlmodelstructure-swift.enum/program(_:).md)
+- [case program(MLModelStructure.Program)](./program%28_%29.md)
   Represents a MLProgram model. the associated value is the structure of the Program.
-- [MLModelStructure.Program](mlmodelstructure-swift.enum/program.md)
+- [MLModelStructure.Program](./program.md)
   A struct representing the structure of an ML Program model.
 
 

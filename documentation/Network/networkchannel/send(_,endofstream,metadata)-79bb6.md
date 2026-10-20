@@ -1,7 +1,8 @@
 # send(_:endOfStream:metadata:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Send data on a connection.
 
@@ -19,6 +20,8 @@ Send data on a connection.
 ```swift
 func send<Content>(_ content: Content, endOfStream: Bool = false, @ProtocolMetadataBuilder metadata builder: () -> [NWProtocolMetadata] = {[]}) async throws where Content : DataProtocol
 ```
+
+Available when `ApplicationProtocol` conforms to `StreamProtocol`.
 
 #### Discussion
 

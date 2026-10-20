@@ -1,7 +1,8 @@
 # callAsFunction(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the transform closure of the color transformer.
 
@@ -10,7 +11,7 @@ Calls the transform closure of the color transformer.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -33,7 +34,8 @@ let modifiedColor = alphaColorTransformer(baseColor)
 
 ## See Also
 
-- [let transform: (UIColor) -> UIColor](uiconfigurationcolortransformer-swift.struct/transform.md)
+### Calling the color transformer
+- [let transform: (UIColor) -> UIColor](./transform.md)
   The transform closure of the color transformer.
 
 

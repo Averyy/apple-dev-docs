@@ -1,7 +1,8 @@
 # frame
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current remote preview of an immersive video frame.
 

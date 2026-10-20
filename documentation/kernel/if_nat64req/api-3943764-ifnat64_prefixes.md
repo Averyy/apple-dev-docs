@@ -1,14 +1,15 @@
 # ifnat64_prefixes
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 struct ipv6_prefix ifnat64_prefixes[4];
 ```
 

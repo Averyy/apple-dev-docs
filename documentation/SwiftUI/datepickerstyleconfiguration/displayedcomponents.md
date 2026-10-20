@@ -1,7 +1,8 @@
 # displayedComponents
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date components that the user is able to view and edit.
 
@@ -21,9 +22,10 @@ var displayedComponents: DatePickerComponents
 
 ## See Also
 
-- [let label: DatePickerStyleConfiguration.Label](datepickerstyleconfiguration/label-swift.property.md)
+### Labeling the date picker
+- [let label: DatePickerStyleConfiguration.Label](./label-swift.property.md)
   A description of the `DatePicker`.
-- [DatePickerStyleConfiguration.Label](datepickerstyleconfiguration/label-swift.struct.md)
+- [DatePickerStyleConfiguration.Label](./label-swift.struct.md)
   A type-erased label of a `DatePicker`.
 
 

@@ -1,7 +1,8 @@
 # audioTimePitchAlgorithm
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The processing algorithm used to manage audio pitch for scaled audio edits.
 
@@ -20,13 +21,18 @@ The processing algorithm used to manage audio pitch for scaled audio edits.
 var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) AVAudioTimePitchAlgorithm audioTimePitchAlgorithm;
+```
+
 #### Discussion
 
-The supported constants are defined in Time Pitch Algorithm Settings. An [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) will be raised if this property is set to a value other than the defined constants.
+The supported constants are defined in Time Pitch Algorithm Settings. An [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) will be raised if this property is set to a value other than the defined constants.
 
 ## See Also
 
-- [struct AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm.md)
+### Getting the time pitch algorithm setting
+- [struct AVAudioTimePitchAlgorithm](../avaudiotimepitchalgorithm.md)
   An algorithm used to set the audio pitch as the rate changes.
 
 

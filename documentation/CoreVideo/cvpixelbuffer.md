@@ -1,7 +1,8 @@
 # CVPixelBuffer
 
 **Framework**: Core Video  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A reference to a Core Video pixel buffer object.
 
@@ -20,21 +21,26 @@ A reference to a Core Video pixel buffer object.
 typealias CVPixelBuffer = CVImageBuffer
 ```
 
+```c
+typedef CVImageBufferRef CVPixelBufferRef;
+```
+
 #### Discussion
 
 The pixel buffer stores an image in main memory.
 
 ## See Also
 
-- [struct CVPixelBufferLockFlags](cvpixelbufferlockflags.md)
-  The flags to pass to [`CVPixelBufferLockBaseAddress(_:_:)`](cvpixelbufferlockbaseaddress(_:_:).md) and [`CVPixelBufferUnlockBaseAddress(_:_:)`](cvpixelbufferunlockbaseaddress(_:_:).md).
-- [struct CVPlanarComponentInfo](cvplanarcomponentinfo.md)
+### Data Types
+- [struct CVPixelBufferLockFlags](./cvpixelbufferlockflags.md)
+  The flags to pass to [`CVPixelBufferLockBaseAddress(_:_:)`](./cvpixelbufferlockbaseaddress%28_,_%29.md) and [`CVPixelBufferUnlockBaseAddress(_:_:)`](./cvpixelbufferunlockbaseaddress%28_,_%29.md).
+- [struct CVPlanarComponentInfo](./cvplanarcomponentinfo.md)
   A structure for describing planar components.
-- [struct CVPlanarPixelBufferInfo](cvplanarpixelbufferinfo.md)
+- [struct CVPlanarPixelBufferInfo](./cvplanarpixelbufferinfo.md)
   A structure for describing planar buffers.
-- [struct CVPlanarPixelBufferInfo_YCbCrPlanar](cvplanarpixelbufferinfo_ycbcrplanar.md)
+- [struct CVPlanarPixelBufferInfo_YCbCrPlanar](./cvplanarpixelbufferinfo_ycbcrplanar.md)
   A structure for describing YCbCr planar buffers.
-- [struct CVPlanarPixelBufferInfo_YCbCrBiPlanar](cvplanarpixelbufferinfo_ycbcrbiplanar.md)
+- [struct CVPlanarPixelBufferInfo_YCbCrBiPlanar](./cvplanarpixelbufferinfo_ycbcrbiplanar.md)
   A structure for describing YCbCr biplanar buffers.
 
 

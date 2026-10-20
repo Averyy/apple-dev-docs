@@ -1,7 +1,8 @@
 # Player
 
 **Framework**: TabletopKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A player in a tabletop game.
 
@@ -17,19 +18,20 @@ struct Player
 ## Topics
 
 ### Identifying players
-- [var id: PlayerIdentifier](player/id.md)
+- [var id: PlayerIdentifier](./player/id.md)
   A unique identifier for the player.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PlayerIdentifier](playeridentifier.md)
+### Players
+- [struct PlayerIdentifier](./playeridentifier.md)
   A unique identifier for players.
 
 

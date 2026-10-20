@@ -1,7 +1,8 @@
 # tableView(_:estimatedHeightForFooterInSection:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the estimated height of the footer of a particular section.
 
@@ -18,9 +19,13 @@ Asks the delegate for the estimated height of the footer of a particular section
 optional func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat
 ```
 
+```objc
+- (CGFloat) tableView:(UITableView *) tableView estimatedHeightForFooterInSection:(NSInteger) section;
+```
+
 ## Mentions
 
-- [Estimating the height of a table’s scrolling area](estimating-the-height-of-a-table-s-scrolling-area.md)
+- [Estimating the height of a table’s scrolling area](../estimating-the-height-of-a-table-s-scrolling-area.md)
 
 #### Return Value
 
@@ -37,11 +42,13 @@ Providing an estimate the height of section footers can improve the user experie
 
 ## See Also
 
-- [func tableView(UITableView, heightForFooterInSection: Int) -> CGFloat](uitableviewdelegate/tableview(_:heightforfooterinsection:).md)
+### Related Documentation
+- [func tableView(UITableView, heightForFooterInSection: Int) -> CGFloat](./tableview%28_,heightforfooterinsection%29.md)
   Asks the delegate for the height to use for the footer of a particular section.
-- [func tableView(UITableView, estimatedHeightForRowAt: IndexPath) -> CGFloat](uitableviewdelegate/tableview(_:estimatedheightforrowat:).md)
+### Estimating heights for the table’s content
+- [func tableView(UITableView, estimatedHeightForRowAt: IndexPath) -> CGFloat](./tableview%28_,estimatedheightforrowat%29.md)
   Asks the delegate for the estimated height of a row in a specified location.
-- [func tableView(UITableView, estimatedHeightForHeaderInSection: Int) -> CGFloat](uitableviewdelegate/tableview(_:estimatedheightforheaderinsection:).md)
+- [func tableView(UITableView, estimatedHeightForHeaderInSection: Int) -> CGFloat](./tableview%28_,estimatedheightforheaderinsection%29.md)
   Asks the delegate for the estimated height of the header of a particular section.
 
 

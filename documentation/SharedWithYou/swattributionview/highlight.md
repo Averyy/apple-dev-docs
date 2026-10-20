@@ -1,7 +1,8 @@
 # highlight
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The highlight you use to display this attribution.
 
@@ -19,25 +20,30 @@ The highlight you use to display this attribution.
 var highlight: SWHighlight? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite, nullable) SWHighlight * highlight;
+```
+
 #### Discussion
 
 When your app sets this property to a new `highlight`, the system reloads the contents of the view.
 
 ## See Also
 
-- [var backgroundStyle: SWAttributionView.BackgroundStyle](swattributionview/backgroundstyle-swift.property.md)
+### Customizing highlights
+- [var backgroundStyle: SWAttributionView.BackgroundStyle](./backgroundstyle-swift.property.md)
   The background style of the child view that contains names and avatars.
-- [var displayContext: SWAttributionView.DisplayContext](swattributionview/displaycontext-swift.property.md)
+- [var displayContext: SWAttributionView.DisplayContext](./displaycontext-swift.property.md)
   The context for the content the system displays with this view.
-- [var highlightMenu: UIMenu](swattributionview/highlightmenu.md)
+- [var highlightMenu: UIMenu](./highlightmenu.md)
   A menu with a list of system actions specific to this hightlight.
-- [var horizontalAlignment: SWAttributionView.HorizontalAlignment](swattributionview/horizontalalignment-swift.property.md)
+- [var horizontalAlignment: SWAttributionView.HorizontalAlignment](./horizontalalignment-swift.property.md)
   The horizontal alignment of the view.
-- [var menuTitleForHideAction: String?](swattributionview/menutitleforhideaction.md)
+- [var menuTitleForHideAction: String?](./menutitleforhideaction.md)
   A localized string the system uses as a custom title for the hide menu item.
-- [var preferredMaxLayoutWidth: CGFloat](swattributionview/preferredmaxlayoutwidth.md)
+- [var preferredMaxLayoutWidth: CGFloat](./preferredmaxlayoutwidth.md)
   A width the system uses to constrain the view contents.
-- [var supplementalMenu: UIMenu?](swattributionview/supplementalmenu.md)
+- [var supplementalMenu: UIMenu?](./supplementalmenu.md)
   A supplemental menu to augment the attribution view’s existing menu.
 
 

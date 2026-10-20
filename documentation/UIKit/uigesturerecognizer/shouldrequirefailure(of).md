@@ -1,7 +1,8 @@
 # shouldRequireFailure(of:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Overridden to indicate that the receiver requires the specified gesture recognizer to fail.
 
@@ -9,7 +10,7 @@ Overridden to indicate that the receiver requires the specified gesture recogniz
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Overridden to indicate that the receiver requires the specified gesture recogniz
 func shouldRequireFailure(of otherGestureRecognizer: UIGestureRecognizer) -> Bool
 ```
 
+```objc
+- (BOOL) shouldRequireFailureOfGestureRecognizer:(UIGestureRecognizer *) otherGestureRecognizer;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to set up the failure requirement; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) to set up the failure requirement; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -32,34 +37,35 @@ Overriding this method allows a subclass to define a class-wide failure requirem
 
 ## See Also
 
-- [func touchesBegan(Set<UITouch>, with: UIEvent)](uigesturerecognizer/touchesbegan(_:with:).md)
+### Implementing subclasses
+- [func touchesBegan(Set<UITouch>, with: UIEvent)](./touchesbegan%28_,with%29.md)
   Sent to the gesture recognizer when one or more fingers touch down in the associated view.
-- [func touchesMoved(Set<UITouch>, with: UIEvent)](uigesturerecognizer/touchesmoved(_:with:).md)
+- [func touchesMoved(Set<UITouch>, with: UIEvent)](./touchesmoved%28_,with%29.md)
   Sent to the gesture recognizer when one or more fingers move in the associated view.
-- [func touchesEnded(Set<UITouch>, with: UIEvent)](uigesturerecognizer/touchesended(_:with:).md)
+- [func touchesEnded(Set<UITouch>, with: UIEvent)](./touchesended%28_,with%29.md)
   Sent to the gesture recognizer when one or more fingers lift from the associated view.
-- [func touchesCancelled(Set<UITouch>, with: UIEvent)](uigesturerecognizer/touchescancelled(_:with:).md)
+- [func touchesCancelled(Set<UITouch>, with: UIEvent)](./touchescancelled%28_,with%29.md)
   Sent to the gesture recognizer when a system event (such as an incoming phone call) cancels a touch event.
-- [func touchesEstimatedPropertiesUpdated(Set<UITouch>)](uigesturerecognizer/touchesestimatedpropertiesupdated(_:).md)
+- [func touchesEstimatedPropertiesUpdated(Set<UITouch>)](./touchesestimatedpropertiesupdated%28_%29.md)
   Sent to the gesture recognizer when the estimated properties for a touch have changed so that they are no longer estimated, or an update is no longer expected.
-- [func reset()](uigesturerecognizer/reset.md)
+- [func reset()](./reset%28%29.md)
   Overridden to reset internal state when a gesture recognition attempt completes.
-- [func ignore(UITouch, for: UIEvent)](uigesturerecognizer/ignore(_:for:)-5f685.md)
+- [func ignore(UITouch, for: UIEvent)](./ignore%28_,for%29-5f685.md)
   Tells the gesture recognizer to ignore a specific touch of the given event.
-- [func canBePrevented(by: UIGestureRecognizer) -> Bool](uigesturerecognizer/canbeprevented(by:).md)
+- [func canBePrevented(by: UIGestureRecognizer) -> Bool](./canbeprevented%28by%29.md)
   Overridden to indicate that the specified gesture recognizer can prevent the receiver from recognizing a gesture.
-- [func canPrevent(UIGestureRecognizer) -> Bool](uigesturerecognizer/canprevent(_:).md)
+- [func canPrevent(UIGestureRecognizer) -> Bool](./canprevent%28_%29.md)
   Overridden to indicate that the receiver can prevent the specified gesture recognizer from recognizing its gesture.
-- [func shouldReceive(UIEvent) -> Bool](uigesturerecognizer/shouldreceive(_:).md)
-- [func shouldBeRequiredToFail(by: UIGestureRecognizer) -> Bool](uigesturerecognizer/shouldberequiredtofail(by:).md)
+- [func shouldReceive(UIEvent) -> Bool](./shouldreceive%28_%29.md)
+- [func shouldBeRequiredToFail(by: UIGestureRecognizer) -> Bool](./shouldberequiredtofail%28by%29.md)
   Overridden to indicate that the receiver should be required to fail by the specified gesture recognizer.
-- [func ignore(UIPress, for: UIPressesEvent)](uigesturerecognizer/ignore(_:for:)-8qqor.md)
+- [func ignore(UIPress, for: UIPressesEvent)](./ignore%28_,for%29-8qqor.md)
   Tells the gesture recognizer to ignore a specific press of the given event.
-- [func pressesBegan(Set<UIPress>, with: UIPressesEvent)](uigesturerecognizer/pressesbegan(_:with:).md)
+- [func pressesBegan(Set<UIPress>, with: UIPressesEvent)](./pressesbegan%28_,with%29.md)
   Sent to the receiver when a physical button is pressed in the associated view.
-- [func pressesChanged(Set<UIPress>, with: UIPressesEvent)](uigesturerecognizer/presseschanged(_:with:).md)
-  Sent to the receiver when the [`force`](uipress/force.md) of the press has changed in the associated view.
-- [func pressesEnded(Set<UIPress>, with: UIPressesEvent)](uigesturerecognizer/pressesended(_:with:).md)
+- [func pressesChanged(Set<UIPress>, with: UIPressesEvent)](./presseschanged%28_,with%29.md)
+  Sent to the receiver when the [`force`](../uipress/force.md) of the press has changed in the associated view.
+- [func pressesEnded(Set<UIPress>, with: UIPressesEvent)](./pressesended%28_,with%29.md)
   Sent to the receiver when a button is released from the associated view.
 
 

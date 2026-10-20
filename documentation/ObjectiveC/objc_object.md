@@ -1,18 +1,19 @@
 # objc_object
 
 **Framework**: Objective-C Runtime  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Represents an instance of a class.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,23 +21,28 @@ Represents an instance of a class.
 struct objc_object
 ```
 
+```c
+struct objc_object;
+```
+
 ## Topics
 
 ### Initializers
-- [init(isa: AnyClass)](objc_object/init(isa:).md)
+- [init(isa: AnyClass)](./objc_object/init%28isa%29.md)
 ### Instance Properties
-- [var isa: AnyClass](objc_object/isa.md)
+- [var isa: AnyClass](./objc_object/isa.md)
   A pointer to the class definition of which this object is an instance.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct objc_super](objc_super-swift.struct.md)
+### Instance Data Types
+- [struct objc_super](./objc_super-swift.struct.md)
   Specifies the superclass of an instance.
 
 

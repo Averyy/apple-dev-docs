@@ -1,7 +1,8 @@
 # properties()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func properties() -> [AnyHashable : Any]!
+```
+
+```objc
+- (NSDictionary *) properties;
 ```
 
 

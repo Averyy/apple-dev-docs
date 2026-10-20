@@ -1,7 +1,8 @@
 # donatedWithin(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Filters donations to only those that occurred within the specified time range.
 

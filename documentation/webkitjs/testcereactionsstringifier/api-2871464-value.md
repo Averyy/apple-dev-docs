@@ -1,14 +1,15 @@
 # value
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 **Availability**:
 - Safari Mobile 10.1+
 
 ## Declaration
 
-```swift
+```
 stringifier attribute DOMString value;
 ```
 

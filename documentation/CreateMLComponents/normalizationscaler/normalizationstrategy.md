@@ -1,7 +1,8 @@
 # NormalizationScaler.NormalizationStrategy
 
 **Framework**: Create ML Components  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A normalization strategy.
 
@@ -23,22 +24,23 @@ enum NormalizationStrategy
 ## Topics
 
 ### Normalization strategies
-- [NormalizationScaler.NormalizationStrategy.l1](normalizationscaler/normalizationstrategy/l1.md)
+- [NormalizationScaler.NormalizationStrategy.l1](./normalizationstrategy/l1.md)
   A normalization strategy that scales by the L1 Norm (sum of vector absolute values).
-- [NormalizationScaler.NormalizationStrategy.l2](normalizationscaler/normalizationstrategy/l2.md)
+- [NormalizationScaler.NormalizationStrategy.l2](./normalizationstrategy/l2.md)
   A normalization strategy that scales by the L2 Norm (Euclidean norm).
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(norm: NormalizationScaler<Element>.NormalizationStrategy)](normalizationscaler/init(norm:).md)
+### Creating a scaler
+- [init(norm: NormalizationScaler<Element>.NormalizationStrategy)](./init%28norm%29.md)
   Creates a normalization scaler.
 
 

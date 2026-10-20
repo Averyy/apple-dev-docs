@@ -1,7 +1,8 @@
 # animatesToStartingPositionsOnCancelOrFail
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls whether the dragging image animates back to its starting point on a cancelled or failed drag.
 
@@ -14,15 +15,20 @@ Controls whether the dragging image animates back to its starting point on a can
 var animatesToStartingPositionsOnCancelOrFail: Bool { get set }
 ```
 
+```objc
+@property BOOL animatesToStartingPositionsOnCancelOrFail;
+```
+
 #### Discussion
 
 This property should be set immediately after creating the dragging session.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var draggingFormation: NSDraggingFormation](nsdraggingsession/draggingformation.md)
+### Dragging Visual Representation
+- [var draggingFormation: NSDraggingFormation](./draggingformation.md)
   Controls the dragging formation when the drag is not over the source or a valid destination.
 
 

@@ -1,7 +1,8 @@
 # VZNetworkDevice
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A base class that represents a network device in a virtual machine.
 
@@ -14,38 +15,43 @@ A base class that represents a network device in a virtual machine.
 class VZNetworkDevice
 ```
 
+```objc
+@interface VZNetworkDevice : NSObject
+```
+
 #### Overview
 
-Don’t instantiate a [`VZNetworkDevice`](vznetworkdevice.md) directly. When you create a [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) instance with a [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) the system creates the number of network devices based on the number of [`VZVirtioNetworkDeviceConfiguration`](vzvirtionetworkdeviceconfiguration.md) objects you specify in the VM configuration. Before initializing the virtual machine (VM), validate the configuration using [`validate()`](vzvirtualmachineconfiguration/validate().md) to ensure the user’s computer supports the number of network and other devices you’ve specified.  
+Don’t instantiate a [`VZNetworkDevice`](./vznetworkdevice.md) directly. When you create a [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) instance with a [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) the system creates the number of network devices based on the number of [`VZVirtioNetworkDeviceConfiguration`](./vzvirtionetworkdeviceconfiguration.md) objects you specify in the VM configuration. Before initializing the virtual machine (VM), validate the configuration using [`validate()`](./vzvirtualmachineconfiguration/validate%28%29.md) to ensure the user’s computer supports the number of network and other devices you’ve specified.  
 
 For many purposes, a single network that uses a Network Address Translation (NAT) attachment and connects the VM to the host computer’s network is sufficient. You can use additional network interfaces for purposes of your own design, such as:
 
 - Bridging several physical interfaces to connect to multiple networks.
 - Using the file descriptor attachment to create specialized connections for different purposes.
 
-You access the network devices through the `VZVirtualMachine`.[`networkDevices`](vzvirtualmachine/networkdevices.md) property. The network devices map to their respective configurations in a one to one relationship, where index `i` of `VZVirtualMachine.networkDevices` corresponds to the network device configuration at index `i` set on `VZVirtualMachineConfiguration`.[`networkDevices`](vzvirtualmachineconfiguration/networkdevices.md).
+You access the network devices through the `VZVirtualMachine`.[`networkDevices`](./vzvirtualmachine/networkdevices.md) property. The network devices map to their respective configurations in a one to one relationship, where index `i` of `VZVirtualMachine.networkDevices` corresponds to the network device configuration at index `i` set on `VZVirtualMachineConfiguration`.[`networkDevices`](./vzvirtualmachineconfiguration/networkdevices.md).
 
 ## Topics
 
 ### Getting the network attachment point
-- [var attachment: VZNetworkDeviceAttachment?](vznetworkdevice/attachment.md)
+- [var attachment: VZNetworkDeviceAttachment?](./vznetworkdevice/attachment.md)
   The network attachment that’s connected to this network device.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZNetworkDeviceConfiguration](vznetworkdeviceconfiguration.md)
+### Related Documentation
+- [class VZNetworkDeviceConfiguration](./vznetworkdeviceconfiguration.md)
   The common configuration traits for network devices.
 - [vmnet](../vmnet/vmnet.md)
   Connect with network interfaces to read and write packets on guest operating systems.

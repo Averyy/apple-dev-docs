@@ -1,7 +1,8 @@
 # Player
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Creates a new player object.
 
@@ -10,29 +11,30 @@ Creates a new player object.
 
 ## Declaration
 
-```swift
+```
 new Player();
 ```
 
-#### Return_value
+#### Return Value
 
 Returns a new player object.
 
 #### Discussion
 
-After the player object is created, you must associate a [`Playlist`](playlist.md) object with the player before media items can be played.
+After the player object is created, you must associate a [`Playlist`](../playlist.md) object with the player before media items can be played.
 
 ## See Also
 
-- [interactiveOverlayDismissable](player/2123044-interactiveoverlaydismissable.md)
+### Setting Up the Player
+- [interactiveOverlayDismissable](./api-2123044-interactiveoverlaydismissable.md)
   Determines if an interactive overlay can be dismissed using the Menu button.
-- [interactiveOverlayDocument](player/2123043-interactiveoverlaydocument.md)
+- [interactiveOverlayDocument](./api-2123043-interactiveoverlaydocument.md)
   A DOM document that is presented over the entire video player, including the transport bar.
-- [overlayDocument](player/1627320-overlaydocument.md)
+- [overlayDocument](./api-1627320-overlaydocument.md)
   The annotations for a video created by placing a DOM document over the video.
-- [playlist](player/1627389-playlist.md)
+- [playlist](./api-1627389-playlist.md)
   The playlist for a player.
-- [present](player/1627418-present.md)
+- [present](./api-1627418-present.md)
   Shows the player UI if it is not currently visible.
 
 

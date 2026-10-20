@@ -1,7 +1,8 @@
 # init(unsafeWithTaggedBuffers:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a ready sample buffer with tagged buffers content from an existing sample buffer.
 
@@ -19,6 +20,8 @@ Create a ready sample buffer with tagged buffers content from an existing sample
 ```swift
 init(unsafeWithTaggedBuffers unsafeBuffer: sending CMSampleBuffer)
 ```
+
+Available when `Content` is `[CMTaggedDynamicBuffer]`.
 
 
 ---

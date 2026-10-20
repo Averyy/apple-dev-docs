@@ -1,7 +1,8 @@
 # point3DGroupKeyAll
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A group key identifying all three-dimensional landmarks.
 
@@ -19,9 +20,14 @@ A group key identifying all three-dimensional landmarks.
 static let point3DGroupKeyAll: VNRecognizedPointGroupKey
 ```
 
+```c
+extern VNRecognizedPointGroupKey const VNRecognizedPoint3DGroupKeyAll;
+```
+
 ## See Also
 
-- [static let all: VNRecognizedPointGroupKey](vnrecognizedpointgroupkey/all.md)
+### All Regions
+- [static let all: VNRecognizedPointGroupKey](./all.md)
   A group key identifying all landmarks.
 
 

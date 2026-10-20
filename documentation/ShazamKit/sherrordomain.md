@@ -1,7 +1,8 @@
 # SHErrorDomain
 
 **Framework**: ShazamKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for specific errors for ShazamKit.
 
@@ -18,6 +19,10 @@ The error domain for specific errors for ShazamKit.
 
 ```swift
 let SHErrorDomain: String
+```
+
+```c
+extern NSErrorDomain const SHErrorDomain;
 ```
 
 

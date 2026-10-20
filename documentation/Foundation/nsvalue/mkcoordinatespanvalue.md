@@ -1,7 +1,8 @@
 # mkCoordinateSpanValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The MapKit coordinate span structure representation of the value.
 
@@ -20,15 +21,21 @@ The MapKit coordinate span structure representation of the value.
 var mkCoordinateSpanValue: MKCoordinateSpan { get }
 ```
 
+```objc
+@property (atomic, readonly) MKCoordinateSpan MKCoordinateSpanValue;
+```
+
 ## See Also
 
-- [struct MKCoordinateSpan](../mapkit/mkcoordinatespan.md)
+### Related Documentation
+- [struct MKCoordinateSpan](../../MapKit/mkcoordinatespan.md)
   The width and height of a map region.
-- [init(MKCoordinate: CLLocationCoordinate2D)](nsvalue/init(mkcoordinate:).md)
+### Working with Geographic Coordinate Values
+- [init(MKCoordinate: CLLocationCoordinate2D)](./init%28mkcoordinate%29.md)
   Creates a new value object containing the specified CoreLocation geographic coordinate structure.
-- [init(MKCoordinateSpan: MKCoordinateSpan)](nsvalue/init(mkcoordinatespan:).md)
+- [init(MKCoordinateSpan: MKCoordinateSpan)](./init%28mkcoordinatespan%29.md)
   Creates a new value object containing the specified MapKit coordinate span structure.
-- [var mkCoordinateValue: CLLocationCoordinate2D](nsvalue/mkcoordinatevalue.md)
+- [var mkCoordinateValue: CLLocationCoordinate2D](./mkcoordinatevalue.md)
   The CoreLocation geographic coordinate structure representation of the value.
 
 

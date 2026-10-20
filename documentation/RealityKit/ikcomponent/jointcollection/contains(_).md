@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the collection contains an element with a specific identifier.
 

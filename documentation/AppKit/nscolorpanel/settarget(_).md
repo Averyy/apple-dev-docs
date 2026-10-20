@@ -1,17 +1,22 @@
 # setTarget(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the target of the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setTarget(_ target: Any?)
+```
+
+```objc
+- (void) setTarget:(id) target;
 ```
 
 ## Parameters
@@ -20,15 +25,17 @@ func setTarget(_ target: Any?)
 
 ## See Also
 
-- [class NSColorPanel](nscolorpanel.md)
+### Related Documentation
+- [class NSColorPanel](../nscolorpanel.md)
   A standard user interface for selecting color in an app.
-- [var accessoryView: NSView?](nscolorpanel/accessoryview.md)
+### Configuring the color panel
+- [var accessoryView: NSView?](./accessoryview.md)
   The accessory view.
-- [var isContinuous: Bool](nscolorpanel/iscontinuous.md)
+- [var isContinuous: Bool](./iscontinuous.md)
   A Boolean value indicating whether the receiver continuously sends the action message to the target.
-- [func setAction(Selector?)](nscolorpanel/setaction(_:).md)
+- [func setAction(Selector?)](./setaction%28_%29.md)
   Sets the color panel’s action message.
-- [var showsAlpha: Bool](nscolorpanel/showsalpha.md)
+- [var showsAlpha: Bool](./showsalpha.md)
   A Boolean value that indicates whether the receiver shows alpha values and an opacity slider.
 
 

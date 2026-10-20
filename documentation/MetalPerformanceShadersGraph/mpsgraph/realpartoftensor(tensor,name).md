@@ -1,7 +1,8 @@
 # realPartOfTensor(tensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the real part of a tensor.
 
@@ -17,6 +18,10 @@ Returns the real part of a tensor.
 
 ```swift
 func realPartOfTensor(tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) realPartOfTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

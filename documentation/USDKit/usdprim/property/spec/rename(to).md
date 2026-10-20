@@ -1,7 +1,8 @@
 # rename(to:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the property’s name.
 
@@ -21,7 +22,7 @@ func rename(to name: USDToken) throws
 
 #### Discussion
 
-> **Note**: An error if the new name is invalid or already used by a sibling.
+> **Throws**: An error if the new name is invalid or already used by a sibling.
 
 ## Parameters
 

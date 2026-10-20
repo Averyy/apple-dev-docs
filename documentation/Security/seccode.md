@@ -1,7 +1,8 @@
 # SecCode
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A code object representing signed code running on the system.
 
@@ -15,19 +16,23 @@ A code object representing signed code running on the system.
 class SecCode
 ```
 
+```c
+typedef struct __SecCode * SecCodeRef;
+```
+
 ## Mentions
 
-- [Hosting Guest Code](hosting-guest-code.md)
+- [Hosting Guest Code](./hosting-guest-code.md)
 
 #### Overview
 
-In many function calls, a value of type [`SecCode`](seccode.md) can be passed to a parameter that is typed as a [`SecStaticCode`](secstaticcode.md). In these cases, the function performs an implicit call to the [`SecCodeCopyStaticCode(_:_:_:)`](seccodecopystaticcode(_:_:_:).md) function and operates on the result.
+In many function calls, a value of type [`SecCode`](./seccode.md) can be passed to a parameter that is typed as a [`SecStaticCode`](./secstaticcode.md). In these cases, the function performs an implicit call to the [`SecCodeCopyStaticCode(_:_:_:)`](./seccodecopystaticcode%28_,_,_%29.md) function and operates on the result.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

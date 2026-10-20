@@ -1,7 +1,8 @@
 # size
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The size attribute.
 
@@ -14,25 +15,30 @@ The size attribute.
 static var size: FSItem.Attribute { get }
 ```
 
+```c
+FSItemAttributeSize
+```
+
 ## See Also
 
-- [static var type: FSItem.Attribute](fsitem/attribute/type.md)
+### Working with metadata attributes
+- [static var type: FSItem.Attribute](./type.md)
   The type attribute.
-- [static var mode: FSItem.Attribute](fsitem/attribute/mode.md)
+- [static var mode: FSItem.Attribute](./mode.md)
   The mode attribute.
-- [static var linkCount: FSItem.Attribute](fsitem/attribute/linkcount.md)
+- [static var linkCount: FSItem.Attribute](./linkcount.md)
   The link count attribute.
-- [static var uid: FSItem.Attribute](fsitem/attribute/uid.md)
+- [static var uid: FSItem.Attribute](./uid.md)
   The user ID (uid) attribute.
-- [static var gid: FSItem.Attribute](fsitem/attribute/gid.md)
+- [static var gid: FSItem.Attribute](./gid.md)
   The group ID (gid) attribute.
-- [static var flags: FSItem.Attribute](fsitem/attribute/flags.md)
+- [static var flags: FSItem.Attribute](./flags.md)
   The flags attribute.
-- [static var allocSize: FSItem.Attribute](fsitem/attribute/allocsize.md)
+- [static var allocSize: FSItem.Attribute](./allocsize.md)
   The allocated size attribute.
-- [static var supportsLimitedXAttrs: FSItem.Attribute](fsitem/attribute/supportslimitedxattrs.md)
+- [static var supportsLimitedXAttrs: FSItem.Attribute](./supportslimitedxattrs.md)
   The supports limited extended attributes attribute.
-- [static var inhibitKernelOffloadedIO: FSItem.Attribute](fsitem/attribute/inhibitkerneloffloadedio.md)
+- [static var inhibitKernelOffloadedIO: FSItem.Attribute](./inhibitkerneloffloadedio.md)
   The inhibit kernel offloaded I/O attribute.
 
 

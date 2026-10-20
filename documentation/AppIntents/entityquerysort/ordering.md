@@ -1,7 +1,8 @@
 # EntityQuerySort.Ordering
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,22 +23,23 @@ enum Ordering
 ## Topics
 
 ### Enumeration Cases
-- [EntityQuerySort.Ordering.ascending](entityquerysort/ordering/ascending.md)
-- [EntityQuerySort.Ordering.descending](entityquerysort/ordering/descending.md)
+- [EntityQuerySort.Ordering.ascending](./ordering/ascending.md)
+- [EntityQuerySort.Ordering.descending](./ordering/descending.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let order: EntityQuerySort<Entity>.Ordering](entityquerysort/order.md)
+### Getting the sort order
+- [let order: EntityQuerySort<Entity>.Ordering](./order.md)
 
 
 ---

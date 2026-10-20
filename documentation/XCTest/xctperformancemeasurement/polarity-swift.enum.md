@@ -1,7 +1,8 @@
 # XCTPerformanceMeasurement.Polarity
 
 **Framework**: XCTest  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that state whether larger or smaller measurements, relative to a set baseline, indicate better performance.
 
@@ -11,37 +12,42 @@ Constants that state whether larger or smaller measurements, relative to a set b
 enum Polarity
 ```
 
+```c
+enum XCTPerformanceMeasurementPolarity : NSInteger;
+```
+
 ## Topics
 
 ### Polarity Types
-- [XCTPerformanceMeasurement.Polarity.prefersLarger](xctperformancemeasurement/polarity-swift.enum/preferslarger.md)
+- [XCTPerformanceMeasurement.Polarity.prefersLarger](./polarity-swift.enum/preferslarger.md)
   A performance measurement where a larger value, relative to a set baseline, indicates better performance.
-- [XCTPerformanceMeasurement.Polarity.prefersSmaller](xctperformancemeasurement/polarity-swift.enum/preferssmaller.md)
+- [XCTPerformanceMeasurement.Polarity.prefersSmaller](./polarity-swift.enum/preferssmaller.md)
   A performance measurement where a smaller value, relative to a set baseline, indicates better performance.
-- [XCTPerformanceMeasurement.Polarity.unspecified](xctperformancemeasurement/polarity-swift.enum/unspecified.md)
+- [XCTPerformanceMeasurement.Polarity.unspecified](./polarity-swift.enum/unspecified.md)
   A performance measurement that doesn’t specify whether a larger or smaller value, relative to a set baseline, indicates better performance.
 ### Initializers
-- [init?(rawValue: Int)](xctperformancemeasurement/polarity-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./polarity-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var doubleValue: Double](xctperformancemeasurement/doublevalue.md)
+### Accessing Measured Values
+- [var doubleValue: Double](./doublevalue.md)
   The measured value.
-- [var unitSymbol: String](xctperformancemeasurement/unitsymbol.md)
+- [var unitSymbol: String](./unitsymbol.md)
   A string that represents the unit of measurement.
-- [var value: Measurement<Unit>](xctperformancemeasurement/value.md)
+- [var value: Measurement<Unit>](./value.md)
   The measured value, including the unit of measure.
-- [var polarity: XCTPerformanceMeasurement.Polarity](xctperformancemeasurement/polarity-swift.property.md)
+- [var polarity: XCTPerformanceMeasurement.Polarity](./polarity-swift.property.md)
   A constant that states whether larger or smaller measurements, relative to a set baseline, indicate better performance.
 
 

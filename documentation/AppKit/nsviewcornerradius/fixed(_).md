@@ -1,7 +1,8 @@
 # fixed(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Shorthand initializer for a configuration where all four corners are using a fixed corner radius in points.
 
@@ -13,6 +14,10 @@ Shorthand initializer for a configuration where all four corners are using a fix
 
 ```swift
 class func fixed(_ radius: CGFloat) -> NSViewCornerRadius
+```
+
+```objc
++ (NSViewCornerRadius *) fixedRadius:(CGFloat) radius;
 ```
 
 ## Parameters

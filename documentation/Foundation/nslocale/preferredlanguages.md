@@ -1,7 +1,8 @@
 # preferredLanguages
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An ordered list of the user’s preferred languages.
 
@@ -20,11 +21,15 @@ An ordered list of the user’s preferred languages.
 class var preferredLanguages: [String] { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSArray<NSString *> * preferredLanguages;
+```
+
 #### Discussion
 
-Users choose a primary language when configuring a device, as described in [`Reviewing Language and Region Settings`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/SpecifyingPreferences/SpecifyingPreferences.html#//apple_ref/doc/uid/10000171i-CH12). They may also specify one or more secondary languages in order of preference for use when localization is unavailable in a higher priority language. Use this property to obtain the current user’s ordered list of languages, presented as an array of locale identifier strings.
+Users choose a primary language when configuring a device, as described in [Reviewing Language and Region Settings](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/SpecifyingPreferences/SpecifyingPreferences.html#//apple_ref/doc/uid/10000171i-CH12). They may also specify one or more secondary languages in order of preference for use when localization is unavailable in a higher priority language. Use this property to obtain the current user’s ordered list of languages, presented as an array of locale identifier strings.
 
-For more information about language localization in your app, see [`Language and Locale IDs`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/LanguageandLocaleIDs/LanguageandLocaleIDs.html#//apple_ref/doc/uid/10000171i-CH15).
+For more information about language localization in your app, see [Language and Locale IDs](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/LanguageandLocaleIDs/LanguageandLocaleIDs.html#//apple_ref/doc/uid/10000171i-CH15).
 
 
 ---

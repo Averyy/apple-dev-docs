@@ -1,7 +1,8 @@
 # LinearProgressViewStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A progress view that visually indicates its progress using a horizontal bar.
 
@@ -23,26 +24,27 @@ struct LinearProgressViewStyle
 
 #### Overview
 
-Use [`linear`](progressviewstyle/linear.md) to construct this style.
+Use [`linear`](./progressviewstyle/linear.md) to construct this style.
 
 ## Topics
 
 ### Creating the progress view style
-- [init()](linearprogressviewstyle/init.md)
+- [init()](./linearprogressviewstyle/init%28%29.md)
   Creates a linear progress view style.
-- [init(tint: Color)](linearprogressviewstyle/init(tint:).md)
+- [init(tint: Color)](./linearprogressviewstyle/init%28tint%29.md)
   Creates a linear progress view style with a tint color.
 
 ## Relationships
 
 ### Conforms To
-- [ProgressViewStyle](progressviewstyle.md)
+- [ProgressViewStyle](./progressviewstyle.md)
 
 ## See Also
 
-- [struct DefaultProgressViewStyle](defaultprogressviewstyle.md)
+### Supporting types
+- [struct DefaultProgressViewStyle](./defaultprogressviewstyle.md)
   The default progress view style in the current context of the view being styled.
-- [struct CircularProgressViewStyle](circularprogressviewstyle.md)
+- [struct CircularProgressViewStyle](./circularprogressviewstyle.md)
   A progress view that uses a circular gauge to indicate the partial completion of an activity.
 
 

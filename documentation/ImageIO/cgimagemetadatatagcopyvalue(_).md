@@ -1,7 +1,8 @@
 # CGImageMetadataTagCopyValue(_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a shallow copy of the tag’s value, which is suitable only for reading.
 
@@ -20,13 +21,17 @@ Returns a shallow copy of the tag’s value, which is suitable only for reading.
 func CGImageMetadataTagCopyValue(_ tag: CGImageMetadataTag) -> CFTypeRef?
 ```
 
+```c
+extern CFTypeRefCGImageMetadataTagCopyValue(CGImageMetadataTagRef tag);
+```
+
 #### Return Value
 
-A copy of the tag’s value. Possible return types are [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring), [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber), [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean), [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray), and [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary).
+A copy of the tag’s value. Possible return types are [`CFString`](../CoreFoundation/cfstring.md), [`CFNumber`](../CoreFoundation/cfnumber.md), [`CFBoolean`](../CoreFoundation/cfboolean.md), [`CFArray`](../CoreFoundation/cfarray.md), and [`CFDictionary`](../CoreFoundation/cfdictionary.md).
 
 #### Discussion
 
-Use this method to obtain the value when you want to use or display that value elsewhere. Any changes you make to the returned value don’t change the contents of the metadata tag. To change the value, call [`CGImageMetadataSetValueWithPath(_:_:_:_:)`](cgimagemetadatasetvaluewithpath(_:_:_:_:).md) or [`CGImageMetadataSetTagWithPath(_:_:_:_:)`](cgimagemetadatasettagwithpath(_:_:_:_:).md) instead.
+Use this method to obtain the value when you want to use or display that value elsewhere. Any changes you make to the returned value don’t change the contents of the metadata tag. To change the value, call [`CGImageMetadataSetValueWithPath(_:_:_:_:)`](./cgimagemetadatasetvaluewithpath%28_,_,_,_%29.md) or [`CGImageMetadataSetTagWithPath(_:_:_:_:)`](./cgimagemetadatasettagwithpath%28_,_,_,_%29.md) instead.
 
 ## Parameters
 
@@ -34,13 +39,14 @@ Use this method to obtain the value when you want to use or display that value e
 
 ## See Also
 
-- [func CGImageMetadataTagCopyNamespace(CGImageMetadataTag) -> CFString?](cgimagemetadatatagcopynamespace(_:).md)
+### Getting the Attributes of the Tag
+- [func CGImageMetadataTagCopyNamespace(CGImageMetadataTag) -> CFString?](./cgimagemetadatatagcopynamespace%28_%29.md)
   Returns an immutable copy of the tag’s XMP namespace.
-- [func CGImageMetadataTagCopyPrefix(CGImageMetadataTag) -> CFString?](cgimagemetadatatagcopyprefix(_:).md)
+- [func CGImageMetadataTagCopyPrefix(CGImageMetadataTag) -> CFString?](./cgimagemetadatatagcopyprefix%28_%29.md)
   Returns an immutable copy of the tag’s prefix.
-- [func CGImageMetadataTagCopyName(CGImageMetadataTag) -> CFString?](cgimagemetadatatagcopyname(_:).md)
+- [func CGImageMetadataTagCopyName(CGImageMetadataTag) -> CFString?](./cgimagemetadatatagcopyname%28_%29.md)
   Returns an immutable copy of the tag’s name.
-- [func CGImageMetadataTagCopyQualifiers(CGImageMetadataTag) -> CFArray?](cgimagemetadatatagcopyqualifiers(_:).md)
+- [func CGImageMetadataTagCopyQualifiers(CGImageMetadataTag) -> CFArray?](./cgimagemetadatatagcopyqualifiers%28_%29.md)
   Returns a shallow copy of the metadata tags that act as qualifiers for the current tag.
 
 

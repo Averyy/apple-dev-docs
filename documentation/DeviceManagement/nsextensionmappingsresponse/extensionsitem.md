@@ -1,7 +1,8 @@
 # NSExtensionMappingsResponse.ExtensionsItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that contains information about an extension.
 
@@ -10,19 +11,20 @@ A dictionary that contains information about an extension.
 
 ## Declaration
 
-```swift
+```
 object NSExtensionMappingsResponse.ExtensionsItem
 ```
 
 ## Properties
 
 - `DisplayName` (string) *(required)*: The display name of the extension.
-- `ExtensionPoint` (string) *(required)*: The [`NSExtensionPointIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionpointidentifier) for the extension.
+- `ExtensionPoint` (string) *(required)*: The [`NSExtensionPointIdentifier`](../../BundleResources/information-property-list/nsextension/nsextensionpointidentifier.md) for the extension.
 - `Identifier` (string) *(required)*: The identifier of the extension.
 
 ## See Also
 
-- [object NSExtensionMappingsResponse.ErrorChainItem](nsextensionmappingsresponse/errorchainitem.md)
+### Objects
+- [object NSExtensionMappingsResponse.ErrorChainItem](./errorchainitem.md)
   A dictionary that describes an error chain item.
 
 

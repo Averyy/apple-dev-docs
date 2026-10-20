@@ -1,7 +1,8 @@
 # HINT
 
 **Framework**: LivePhotosKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Play a short section of the motion content.
 
@@ -10,16 +11,17 @@ Play a short section of the motion content.
 
 ## Declaration
 
-```swift
+```
 const PlaybackStyleLiteral HINT;
 ```
 
 ## See Also
 
-- [FULL](livephotoskit.playbackstyle/full.md)
+### Enumeration Cases
+- [FULL](./full.md)
   Play the entire motion content including transition effects at the start and end.
-- [LOOP](livephotoskit.playbackstyle/loop.md)
-- [default](livephotoskit.playbackstyle/default.md)
+- [LOOP](./loop.md)
+- [default](./default.md)
 
 
 ---

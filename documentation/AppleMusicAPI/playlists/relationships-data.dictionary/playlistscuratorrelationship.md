@@ -1,7 +1,8 @@
 # Playlists.Relationships.PlaylistsCuratorRelationship
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A relationship from the playlist to its curator.
 
@@ -10,7 +11,7 @@ A relationship from the playlist to its curator.
 
 ## Declaration
 
-```swift
+```
 object Playlists.Relationships.PlaylistsCuratorRelationship
 ```
 
@@ -20,11 +21,14 @@ object Playlists.Relationships.PlaylistsCuratorRelationship
 - `next` (string): A relative cursor to fetch the next paginated collection of resources in the relationship if more exist.
 - `data` ([*]) *(required)*: The curator for the playlist.
 
+  **Allowed Types**: `Activities`, `AppleCurators`, `Curators`
+
 ## See Also
 
-- [object Playlists.Relationships.PlaylistsTracksRelationship](playlists/relationships-data.dictionary/playliststracksrelationship.md)
+### Related Objects
+- [object Playlists.Relationships.PlaylistsTracksRelationship](./playliststracksrelationship.md)
   A relationship from the playlist to its tracks.
-- [object Playlists.Relationships.PlaylistsLibraryRelationship](playlists/relationships-data.dictionary/playlistslibraryrelationship.md)
+- [object Playlists.Relationships.PlaylistsLibraryRelationship](./playlistslibraryrelationship.md)
   A relationship from the playlist to its library.
 
 

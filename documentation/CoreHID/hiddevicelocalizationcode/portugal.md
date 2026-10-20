@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.portugal
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Portuguese in the HID specification.
 

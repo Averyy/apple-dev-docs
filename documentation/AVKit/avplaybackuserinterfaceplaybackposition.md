@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfacePlaybackPosition
 
 **Framework**: AVKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A snapshot comprising a playback position recorded at a known host time and the rate of position advancement.
 
@@ -16,6 +17,10 @@ A snapshot comprising a playback position recorded at a known host time and the 
 class AVPlaybackUserInterfacePlaybackPosition
 ```
 
+```objc
+@interface AVPlaybackUserInterfacePlaybackPosition : NSObject
+```
+
 #### Overview
 
 All three fields must be captured atomically by the conformer.
@@ -23,41 +28,42 @@ All three fields must be captured atomically by the conformer.
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](avplaybackuserinterfaceplaybackposition/init(coder:).md)
-- [init(position: CMTime, hostTime: CMTime, rate: Float)](avplaybackuserinterfaceplaybackposition/init(position:hosttime:rate:).md)
+- [init?(coder: NSCoder)](./avplaybackuserinterfaceplaybackposition/init%28coder%29.md)
+- [init(position: CMTime, hostTime: CMTime, rate: Float)](./avplaybackuserinterfaceplaybackposition/init%28position,hosttime,rate%29.md)
   Creates a new playback position snapshot.
 ### Instance Properties
-- [var hostTime: CMTime](avplaybackuserinterfaceplaybackposition/hosttime.md)
+- [var hostTime: CMTime](./avplaybackuserinterfaceplaybackposition/hosttime.md)
   The mach host time at which `position` was accurate.
-- [var position: CMTime](avplaybackuserinterfaceplaybackposition/position.md)
+- [var position: CMTime](./avplaybackuserinterfaceplaybackposition/position.md)
   The playback position at the time of the snapshot.
-- [var rate: Float](avplaybackuserinterfaceplaybackposition/rate.md)
+- [var rate: Float](./avplaybackuserinterfaceplaybackposition/rate.md)
   The rate of position advancement at the time of the snapshot. Zero when paused; negative during reverse scan.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AVPlaybackUserInterfaceTimeControllable](avplaybackuserinterfacetimecontrollable-50vcy.md)
+### Timeline and segments
+- [protocol AVPlaybackUserInterfaceTimeControllable](./avplaybackuserinterfacetimecontrollable-50vcy.md)
   Provides time control and navigation capabilities for media content.
-- [class AVPlaybackUserInterfaceTimelineSegment](avplaybackuserinterfacetimelinesegment.md)
+- [class AVPlaybackUserInterfaceTimelineSegment](./avplaybackuserinterfacetimelinesegment.md)
   Represents a contiguous segment of timeline content with specific playback characteristics.
-- [enum AVPlaybackUserInterfaceTimelineSegmentType](avplaybackuserinterfacetimelinesegmenttype.md)
+- [enum AVPlaybackUserInterfaceTimelineSegmentType](./avplaybackuserinterfacetimelinesegmenttype.md)
   Describes the type of content within a timeline segment.
 
 

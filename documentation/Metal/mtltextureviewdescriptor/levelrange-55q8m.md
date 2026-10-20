@@ -1,7 +1,8 @@
 # levelRange
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A desired range of mip levels of a texture view.
 

@@ -1,7 +1,8 @@
 # PaymentCardTransactionRequest.PaymentCycle
 
 **Framework**: ProximityReader  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that specify the frequency of payments
 
@@ -19,20 +20,20 @@ enum PaymentCycle
 ## Topics
 
 ### Enumeration Cases
-- [PaymentCardTransactionRequest.PaymentCycle.monthly](paymentcardtransactionrequest/paymentcycle/monthly.md)
+- [PaymentCardTransactionRequest.PaymentCycle.monthly](./paymentcycle/monthly.md)
   Payment is monthly.
-- [PaymentCardTransactionRequest.PaymentCycle.weekly](paymentcardtransactionrequest/paymentcycle/weekly.md)
+- [PaymentCardTransactionRequest.PaymentCycle.weekly](./paymentcycle/weekly.md)
   Payment is weekly.
-- [PaymentCardTransactionRequest.PaymentCycle.yearly](paymentcardtransactionrequest/paymentcycle/yearly.md)
+- [PaymentCardTransactionRequest.PaymentCycle.yearly](./paymentcycle/yearly.md)
   Payment is yearly.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

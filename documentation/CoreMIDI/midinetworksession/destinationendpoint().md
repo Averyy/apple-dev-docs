@@ -1,7 +1,8 @@
 # destinationEndpoint()
 
 **Framework**: Core MIDI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the session’s destination endpoint.
 
@@ -18,19 +19,24 @@ Returns the session’s destination endpoint.
 func destinationEndpoint() -> MIDIEndpointRef
 ```
 
+```objc
+- (MIDIEndpointRef) destinationEndpoint;
+```
+
 #### Return Value
 
 The destination endpoint.
 
 ## See Also
 
-- [var localName: String](midinetworksession/localname.md)
+### Inspecting a Sessions
+- [var localName: String](./localname.md)
   The name of this session’s entity.
-- [var networkName: String](midinetworksession/networkname.md)
+- [var networkName: String](./networkname.md)
   The name with which this session advertises itself over Bonjour.
-- [var networkPort: Int](midinetworksession/networkport.md)
+- [var networkPort: Int](./networkport.md)
   The session’s UDP port.
-- [func sourceEndpoint() -> MIDIEndpointRef](midinetworksession/sourceendpoint.md)
+- [func sourceEndpoint() -> MIDIEndpointRef](./sourceendpoint%28%29.md)
   Returns the session’s source endpoint.
 
 

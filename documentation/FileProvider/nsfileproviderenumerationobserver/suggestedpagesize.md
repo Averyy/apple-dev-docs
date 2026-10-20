@@ -1,7 +1,8 @@
 # suggestedPageSize
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The page size that the system recommends.
 
@@ -18,6 +19,10 @@ The page size that the system recommends.
 optional var suggestedPageSize: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger suggestedPageSize;
+```
+
 #### Discussion
 
 The system suggests a page size to optimize performance based on the enumeration’s context. The system can request the enumeration of a container for various reasons, such as if the user opens the directory in Finder, opens a file in an application, or if the system needs to materialize the contents of a directory. Each case has its own performance profile.
@@ -26,11 +31,12 @@ While using the suggested page size helps ensure the best user experience, the s
 
 ## See Also
 
-- [func didEnumerate([any NSFileProviderItemProtocol])](nsfileproviderenumerationobserver/didenumerate(_:).md)
+### Observing Item Enumeration
+- [func didEnumerate([any NSFileProviderItemProtocol])](./didenumerate%28_%29.md)
   Provides a batch of enumerated items.
-- [func finishEnumerating(upTo: NSFileProviderPage?)](nsfileproviderenumerationobserver/finishenumerating(upto:).md)
+- [func finishEnumerating(upTo: NSFileProviderPage?)](./finishenumerating%28upto%29.md)
   Tells the observer that all of the items have been enumerated up to the specified page.
-- [func finishEnumeratingWithError(any Error)](nsfileproviderenumerationobserver/finishenumeratingwitherror(_:).md)
+- [func finishEnumeratingWithError(any Error)](./finishenumeratingwitherror%28_%29.md)
   Tells the observer that an error occurred during item enumeration.
 
 

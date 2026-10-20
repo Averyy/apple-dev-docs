@@ -1,7 +1,8 @@
 # CISampler
 
 **Framework**: Core Image  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that retrieves pixel samples for processing by a filter kernel.
 
@@ -19,56 +20,61 @@ An object that retrieves pixel samples for processing by a filter kernel.
 class CISampler
 ```
 
+```objc
+@interface CISampler : NSObject
+```
+
 #### Overview
 
-The `CISampler` class retrieves samples of images for processing by a [`CIKernel`](cikernel.md) object. A `CISampler` object defines a coordinate transform, and modes for interpolation and wrapping. You use `CISampler` objects in conjunction with other Core Image classes, such as  [`CIFilter`](cifilter-swift.class.md), `CIKernel`, and [`CIFilterShape`](cifiltershape.md), to create custom filters.
+The `CISampler` class retrieves samples of images for processing by a [`CIKernel`](./cikernel.md) object. A `CISampler` object defines a coordinate transform, and modes for interpolation and wrapping. You use `CISampler` objects in conjunction with other Core Image classes, such as  [`CIFilter`](./cifilter-swift.class.md), `CIKernel`, and [`CIFilterShape`](./cifiltershape.md), to create custom filters.
 
 ## Topics
 
 ### Initializing a Sampler
-- [convenience init(image: CIImage)](cisampler/init(image:).md)
+- [convenience init(image: CIImage)](./cisampler/init%28image%29.md)
   Initializes a sampler with an image object.
-- [init(image: CIImage, options: [AnyHashable : Any]?)](cisampler/init(image:options:).md)
+- [init(image: CIImage, options: [AnyHashable : Any]?)](./cisampler/init%28image,options%29.md)
   Initializes the sampler with an image object using options specified in a dictionary.
 ### Getting Information About the Sampler Object
-- [var definition: CIFilterShape](cisampler/definition.md)
+- [var definition: CIFilterShape](./cisampler/definition.md)
   The domain of definition (DOD) of the sampler
-- [var extent: CGRect](cisampler/extent.md)
+- [var extent: CGRect](./cisampler/extent.md)
   The rectangle that specifies the extent of the sampler
 ### Constants
-- [Sampler Option Keys](sampler-option-keys.md)
+- [Sampler Option Keys](./sampler-option-keys.md)
   Keys for creating a sampler.
-- [Sampler Option Values](sampler-option-values.md)
+- [Sampler Option Values](./sampler-option-values.md)
   Values for sampler option keys.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Writing Custom Kernels](writing-custom-kernels.md)
+### Custom Filters
+- [Writing Custom Kernels](./writing-custom-kernels.md)
   Write your own custom kernels in either the Core Image Kernel Language or the Metal Shading Language.
-- [class CIKernel](cikernel.md)
+- [class CIKernel](./cikernel.md)
   A GPU-based image-processing routine used to create custom Core Image filters.
-- [class CIColorKernel](cicolorkernel.md)
+- [class CIColorKernel](./cicolorkernel.md)
   A GPU-based image-processing routine that processes only the color information in images, used to create custom Core Image filters.
-- [class CIWarpKernel](ciwarpkernel.md)
+- [class CIWarpKernel](./ciwarpkernel.md)
   A GPU-based image-processing routine that processes only the geometry information in an image, used to create custom Core Image filters.
-- [class CIBlendKernel](ciblendkernel.md)
+- [class CIBlendKernel](./ciblendkernel.md)
   A GPU-based image-processing routine that is optimized for blending two images.
-- [class CIFilterShape](cifiltershape.md)
+- [class CIFilterShape](./cifiltershape.md)
   A description of the bounding shape of a filter and the domain of definition for a filter operation.
-- [struct CIFormat](ciformat.md)
+- [struct CIFormat](./ciformat.md)
   Pixel data formats for image input, output, and processing.
 
 

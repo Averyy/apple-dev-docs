@@ -1,7 +1,8 @@
 # temporaryState(with:bufferSize:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func temporaryState(with cmdBuf: any MTLCommandBuffer, bufferSize: Int) -> Self
+```
+
+```objc
++ (instancetype) temporaryStateWithCommandBuffer:(id<MTLCommandBuffer>) cmdBuf bufferSize:(size_t) bufferSize;
 ```
 
 

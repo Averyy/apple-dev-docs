@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Create ML  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Subscript by index. This returns a row in the data table.
 

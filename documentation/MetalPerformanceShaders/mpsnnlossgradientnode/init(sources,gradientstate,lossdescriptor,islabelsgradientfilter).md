@@ -1,7 +1,8 @@
 # init(sources:gradientState:lossDescriptor:isLabelsGradientFilter:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(sources sourceNodes: [MPSNNImageNode], gradientState: MPSNNGradientStateNode?, lossDescriptor descriptor: MPSCNNLossDescriptor, isLabelsGradientFilter: Bool)
+```
+
+```objc
+- (instancetype) initWithSources:(NSArray<MPSNNImageNode *> *) sourceNodes gradientState:(MPSNNGradientStateNode *) gradientState lossDescriptor:(MPSCNNLossDescriptor *) descriptor isLabelsGradientFilter:(BOOL) isLabelsGradientFilter;
 ```
 
 

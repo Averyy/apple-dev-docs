@@ -1,7 +1,8 @@
 # TXTRecordCreate(_:_:_:)
 
 **Framework**: dnssd  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new empty TXTRecordRef referencing the specified storage.
 
@@ -20,6 +21,10 @@ Creates a new empty TXTRecordRef referencing the specified storage.
 func TXTRecordCreate(_ txtRecord: UnsafeMutablePointer<TXTRecordRef>!, _ bufferLen: UInt16, _ buffer: UnsafeMutableRawPointer!)
 ```
 
+```c
+void TXTRecordCreate(TXTRecordRef *txtRecord, uint16_t bufferLen, void *buffer);
+```
+
 #### Discussion
 
 If the buffer parameter is NULL, or the specified storage size is not large enough to hold a key subsequently added using TXTRecordSetValue(), then additional memory will be added as needed using malloc().
@@ -36,7 +41,7 @@ A key with non-empty value requires (1 + key length + 1 + value length).
 
 For most applications, DNS-SD TXT records are generally less than 100 bytes, so in most cases a simple fixed-sized 256-byte buffer will be more than sufficient.
 
-Recommended size limits for DNS-SD TXT Records are discussed in [`dns-sd.org`](https://developer.apple.comhttp://files.dns-sd.org/draft-cheshire-dnsext-dns-sd.txt)
+Recommended size limits for DNS-SD TXT Records are discussed in [dns-sd.org](http://files.dns-sd.org/draft-cheshire-dnsext-dns-sd.txt)
 
 Note: When passing parameters to and from these TXT record APIs, the key name does not include the ‘=’ character. The ‘=’ character is the separator between the key and value in the on-the-wire packet format; it is not part of either the key or the value.
 
@@ -48,15 +53,16 @@ Note: When passing parameters to and from these TXT record APIs, the key name do
 
 ## See Also
 
-- [func TXTRecordDeallocate(UnsafeMutablePointer<TXTRecordRef>!)](txtrecorddeallocate(_:).md)
+### TXT Record Construction Functions
+- [func TXTRecordDeallocate(UnsafeMutablePointer<TXTRecordRef>!)](./txtrecorddeallocate%28_%29.md)
   Releases resources associated with a TXT record.
-- [func TXTRecordGetBytesPtr(UnsafePointer<TXTRecordRef>!) -> UnsafeRawPointer!](txtrecordgetbytesptr(_:).md)
+- [func TXTRecordGetBytesPtr(UnsafePointer<TXTRecordRef>!) -> UnsafeRawPointer!](./txtrecordgetbytesptr%28_%29.md)
   Allows you to retrieve a pointer to the raw bytes within a TXTRecordRef.
-- [func TXTRecordGetLength(UnsafePointer<TXTRecordRef>!) -> UInt16](txtrecordgetlength(_:).md)
+- [func TXTRecordGetLength(UnsafePointer<TXTRecordRef>!) -> UInt16](./txtrecordgetlength%28_%29.md)
   Allows you to determine the length of the raw bytes within a TXTRecordRef.
-- [func TXTRecordRemoveValue(UnsafeMutablePointer<TXTRecordRef>!, UnsafePointer<CChar>!) -> DNSServiceErrorType](txtrecordremovevalue(_:_:).md)
+- [func TXTRecordRemoveValue(UnsafeMutablePointer<TXTRecordRef>!, UnsafePointer<CChar>!) -> DNSServiceErrorType](./txtrecordremovevalue%28_,_%29.md)
   Removes a key from a TXTRecordRef.
-- [func TXTRecordSetValue(UnsafeMutablePointer<TXTRecordRef>!, UnsafePointer<CChar>!, UInt8, UnsafeRawPointer!) -> DNSServiceErrorType](txtrecordsetvalue(_:_:_:_:).md)
+- [func TXTRecordSetValue(UnsafeMutablePointer<TXTRecordRef>!, UnsafePointer<CChar>!, UInt8, UnsafeRawPointer!) -> DNSServiceErrorType](./txtrecordsetvalue%28_,_,_,_%29.md)
   Adds a key (optionally with value) to a TXTRecordRef.
 
 

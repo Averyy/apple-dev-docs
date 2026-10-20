@@ -1,7 +1,8 @@
 # didBecomeInvalid
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for a message about a port becoming invalid.
 
@@ -20,9 +21,11 @@ An identifier for a message about a port becoming invalid.
 static var didBecomeInvalid: NotificationCenter.BaseMessageIdentifier<Port.DidBecomeInvalidMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<Port.DidBecomeInvalidMessage>`.
+
 #### Discussion
 
-Use this identifier with [`NotificationCenter`](notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`Port.DidBecomeInvalidMessage`](port/didbecomeinvalidmessage.md).
+Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`Port.DidBecomeInvalidMessage`](../../port/didbecomeinvalidmessage.md).
 
 
 ---

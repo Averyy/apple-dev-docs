@@ -1,12 +1,13 @@
 # setLabel(_:forSegment:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the label for the specified segment.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ Sets the label for the specified segment.
 func setLabel(_ label: String, forSegment segment: Int)
 ```
 
+```objc
+- (void) setLabel:(NSString *) label forSegment:(NSInteger) segment;
+```
+
 ## Parameters
 
 - `label`: The label you want to display in the segment. If the width of the string is greater than the width of the segment, the string’s text is truncated during drawing.
-- `segment`: The index of the segment whose label you want to set. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if the index is out of bounds.
+- `segment`: The index of the segment whose label you want to set. This method raises an exception ([`rangeException`](../../Foundation/nsexceptionname/rangeexception.md)) if the index is out of bounds.
 
 ## See Also
 
-- [func label(forSegment: Int) -> String?](nssegmentedcontrol/label(forsegment:).md)
+### Configuring the segment text
+- [func label(forSegment: Int) -> String?](./label%28forsegment%29.md)
   Returns the label of the specified segment.
-- [func setAlignment(NSTextAlignment, forSegment: Int)](nssegmentedcontrol/setalignment(_:forsegment:).md)
-- [func alignment(forSegment: Int) -> NSTextAlignment](nssegmentedcontrol/alignment(forsegment:).md)
+- [func setAlignment(NSTextAlignment, forSegment: Int)](./setalignment%28_,forsegment%29.md)
+- [func alignment(forSegment: Int) -> NSTextAlignment](./alignment%28forsegment%29.md)
 
 
 ---

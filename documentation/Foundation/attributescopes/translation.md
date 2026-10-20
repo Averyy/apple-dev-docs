@@ -1,7 +1,8 @@
 # translation
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides access to translation-related attributes.
 
@@ -22,7 +23,8 @@ var translation: AttributeScopes.TranslationAttributes.Type { get }
 
 ## See Also
 
-- [AttributeScopes.TranslationAttributes](attributescopes/translationattributes.md)
+### Translation-Defined Attributes
+- [AttributeScopes.TranslationAttributes](./translationattributes.md)
   A scope that defines translation-specific properties on attributed strings.
 
 

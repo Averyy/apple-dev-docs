@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean that indicates whether the current device supports object capture sessions.
 

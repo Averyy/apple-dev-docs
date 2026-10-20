@@ -1,7 +1,8 @@
 # contains(captureNamed:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether a named capture with the given name exists.
 

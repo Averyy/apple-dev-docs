@@ -1,7 +1,8 @@
 # completeCouponCodeChange
 
 **Framework**: Apple Pay on the Web  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Completes the entry of a coupon code with an update.
 
@@ -11,7 +12,7 @@ Completes the entry of a coupon code with an update.
 
 ## Declaration
 
-```swift
+```
 undefined completeCouponCodeChange(
 	ApplePayCouponCodeUpdate update
 );
@@ -19,19 +20,20 @@ undefined completeCouponCodeChange(
 
 ## Mentions
 
-- [Apple Pay on the Web Version 12 Release Notes](apple-pay-on-the-web-version-12-release-notes.md)
+- [Apple Pay on the Web Version 12 Release Notes](../apple-pay-on-the-web-version-12-release-notes.md)
 
 #### Discussion
 
-This is the method called by [`oncouponcodechanged`](applepaysession/oncouponcodechanged.md) to complete the event.
+This is the method called by [`oncouponcodechanged`](./oncouponcodechanged.md) to complete the event.
 
 ## See Also
 
-- [oncouponcodechanged](applepaysession/oncouponcodechanged.md)
+### Handling coupons
+- [oncouponcodechanged](./oncouponcodechanged.md)
   An event handler called by the system when the user enters or updates a coupon code.
-- [ApplePayCouponCodeChangedEvent](applepaycouponcodechangedevent.md)
+- [ApplePayCouponCodeChangedEvent](../applepaycouponcodechangedevent.md)
   An event object that contains the coupon code entered by the user.
-- [ApplePayCouponCodeUpdate](applepaycouponcodeupdate.md)
+- [ApplePayCouponCodeUpdate](../applepaycouponcodeupdate.md)
   A dictionary that contains the updated transaction details for responding to a coupon changed event.
 
 

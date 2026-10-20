@@ -1,7 +1,8 @@
 # storeBytes(repeating:count:as:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stores the given value’s bytes repeatedly into this span’s memory.
 

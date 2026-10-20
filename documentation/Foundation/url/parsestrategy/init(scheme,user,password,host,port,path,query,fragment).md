@@ -1,7 +1,8 @@
 # init(scheme:user:password:host:port:path:query:fragment:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL parse strategy with the specified component-parsing behaviors.
 
@@ -33,7 +34,8 @@ init(scheme: URL.ParseStrategy.ComponentParseStrategy<String> = .required, user:
 
 ## See Also
 
-- [URL.ParseStrategy.ComponentParseStrategy](url/parsestrategy/componentparsestrategy.md)
+### Creating a URL parse strategy
+- [URL.ParseStrategy.ComponentParseStrategy](./componentparsestrategy.md)
   The strategy used to parse one component of a URL.
 
 

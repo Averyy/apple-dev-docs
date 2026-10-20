@@ -1,7 +1,8 @@
 # hv_vcpu_set_reg(_:_:_:)
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the value of a vCPU register.
 
@@ -14,9 +15,13 @@ Sets the value of a vCPU register.
 func hv_vcpu_set_reg(_ vcpu: hv_vcpu_t, _ reg: hv_reg_t, _ value: UInt64) -> hv_return_t
 ```
 
+```c
+extern hv_return_t hv_vcpu_set_reg(hv_vcpu_t vcpu, hv_reg_t reg, uint64_t value);
+```
+
 #### Return Value
 
-[`HV_SUCCESS`](hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](hv_return_t.md).
+[`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
 #### Discussion
 
@@ -30,9 +35,10 @@ func hv_vcpu_set_reg(_ vcpu: hv_vcpu_t, _ reg: hv_reg_t, _ value: UInt64) -> hv_
 
 ## See Also
 
-- [func hv_vcpu_get_reg(hv_vcpu_t, hv_reg_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vcpu_get_reg(_:_:_:).md)
+### General registers
+- [func hv_vcpu_get_reg(hv_vcpu_t, hv_reg_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](./hv_vcpu_get_reg%28_,_,_%29.md)
   Gets the current value of a vCPU register.
-- [struct hv_reg_t](hv_reg_t.md)
+- [struct hv_reg_t](./hv_reg_t.md)
   The type that defines general registers.
 
 

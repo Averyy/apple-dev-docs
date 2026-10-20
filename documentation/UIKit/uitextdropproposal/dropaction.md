@@ -1,7 +1,8 @@
 # dropAction
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text drop action style that specifies how the text view receives dropped items.
 
@@ -17,23 +18,28 @@ A text drop action style that specifies how the text view receives dropped items
 var dropAction: UITextDropProposal.Action { get set }
 ```
 
+```objc
+@property (nonatomic) UITextDropAction dropAction;
+```
+
 #### Discussion
 
-The property’s default value is [`UITextDropProposal.Action.insert`](uitextdropproposal/action/insert.md).
+The property’s default value is [`UITextDropProposal.Action.insert`](./action/insert.md).
 
 ## See Also
 
-- [UITextDropProposal.Action](uitextdropproposal/action.md)
+### Configuring a text drop proposal
+- [UITextDropProposal.Action](./action.md)
   The text drop action styles for text views.
-- [var dropPerformer: UITextDropProposal.Performer](uitextdropproposal/dropperformer.md)
+- [var dropPerformer: UITextDropProposal.Performer](./dropperformer.md)
   The performer that is responsible for handling the drop operation.
-- [UITextDropProposal.Performer](uitextdropproposal/performer.md)
+- [UITextDropProposal.Performer](./performer.md)
   The performers that are responsible for handling the drop operation.
-- [var dropProgressMode: UITextDropProposal.ProgressMode](uitextdropproposal/dropprogressmode.md)
+- [var dropProgressMode: UITextDropProposal.ProgressMode](./dropprogressmode.md)
   A mode that specifies how the text view indicates progress to the user when loading dropped items.
-- [UITextDropProposal.ProgressMode](uitextdropproposal/progressmode.md)
+- [UITextDropProposal.ProgressMode](./progressmode.md)
   The text drop progress styles for user-visible progress indication.
-- [var useFastSameViewOperations: Bool](uitextdropproposal/usefastsameviewoperations.md)
+- [var useFastSameViewOperations: Bool](./usefastsameviewoperations.md)
   A Boolean value that determines whether the text view can use fast inline dropping when the source and destination are in the same text view.
 
 

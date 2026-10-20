@@ -1,7 +1,8 @@
 # MLCustomLayer
 
 **Framework**: Core ML  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that defines the behavior of a custom layer in your neural network model.
 
@@ -20,35 +21,40 @@ An interface that defines the behavior of a custom layer in your neural network 
 protocol MLCustomLayer
 ```
 
+```objc
+@protocol MLCustomLayer
+```
+
 ## Mentions
 
-- [Creating and Integrating a Model with Custom Layers](creating-and-integrating-a-model-with-custom-layers.md)
+- [Creating and Integrating a Model with Custom Layers](./creating-and-integrating-a-model-with-custom-layers.md)
 
 #### Overview
 
-You use the [`MLCustomLayer`](mlcustomlayer.md) protocol to define the behavior of your own neural network layers in Core ML models. You can deploy novel or proprietary models on your own release schedule. Custom layers also provide a mechanism for pre- or post-processing during model evaluation.
+You use the [`MLCustomLayer`](./mlcustomlayer.md) protocol to define the behavior of your own neural network layers in Core ML models. You can deploy novel or proprietary models on your own release schedule. Custom layers also provide a mechanism for pre- or post-processing during model evaluation.
 
 ## Topics
 
 ### Creating a layer
-- [init(parameters: [String : Any]) throws](mlcustomlayer/init(parameters:).md)
+- [init(parameters: [String : Any]) throws](./mlcustomlayer/init%28parameters%29.md)
   Initializes the custom layer implementation.
 ### Integrating a layer
-- [func setWeightData([Data]) throws](mlcustomlayer/setweightdata(_:).md)
+- [func setWeightData([Data]) throws](./mlcustomlayer/setweightdata%28_%29.md)
   Assigns the weights for the connections within the layer.
-- [func outputShapes(forInputShapes: [[NSNumber]]) throws -> [[NSNumber]]](mlcustomlayer/outputshapes(forinputshapes:).md)
+- [func outputShapes(forInputShapes: [[NSNumber]]) throws -> [[NSNumber]]](./mlcustomlayer/outputshapes%28forinputshapes%29.md)
   Calculates the shapes of the output of this layer for the given input shapes.
 ### Evaluating a layer
-- [func evaluate(inputs: [MLMultiArray], outputs: [MLMultiArray]) throws](mlcustomlayer/evaluate(inputs:outputs:).md)
+- [func evaluate(inputs: [MLMultiArray], outputs: [MLMultiArray]) throws](./mlcustomlayer/evaluate%28inputs,outputs%29.md)
   Evaluates the custom layer with the given inputs.
-- [func encode(commandBuffer: any MTLCommandBuffer, inputs: [any MTLTexture], outputs: [any MTLTexture]) throws](mlcustomlayer/encode(commandbuffer:inputs:outputs:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, inputs: [any MTLTexture], outputs: [any MTLTexture]) throws](./mlcustomlayer/encode%28commandbuffer,inputs,outputs%29.md)
   Encodes GPU commands to evaluate the custom layer.
 ### Initializers
-- [init(parameterDictionary: [String : Any]) throws](mlcustomlayer/init(parameterdictionary:).md)
+- [init(parameterDictionary: [String : Any]) throws](./mlcustomlayer/init%28parameterdictionary%29.md)
 
 ## See Also
 
-- [Creating and Integrating a Model with Custom Layers](creating-and-integrating-a-model-with-custom-layers.md)
+### Custom model layers
+- [Creating and Integrating a Model with Custom Layers](./creating-and-integrating-a-model-with-custom-layers.md)
   Add models with custom neural-network layers to your app.
 
 

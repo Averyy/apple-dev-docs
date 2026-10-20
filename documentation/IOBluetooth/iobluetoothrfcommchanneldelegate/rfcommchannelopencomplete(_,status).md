@@ -1,15 +1,20 @@
 # rfcommChannelOpenComplete(_:status:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func rfcommChannelOpenComplete(_ rfcommChannel: IOBluetoothRFCOMMChannel!, status error: IOReturn)
+```
+
+```objc
+- (void) rfcommChannelOpenComplete:(IOBluetoothRFCOMMChannel *) rfcommChannel status:(IOReturn) error;
 ```
 
 

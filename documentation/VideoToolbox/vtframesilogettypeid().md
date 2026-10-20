@@ -1,7 +1,8 @@
 # VTFrameSiloGetTypeID()
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the Core Foundation type identifier for the frame silo object.
 
@@ -19,13 +20,18 @@ Retrieves the Core Foundation type identifier for the frame silo object.
 func VTFrameSiloGetTypeID() -> CFTypeID
 ```
 
+```c
+extern CFTypeID VTFrameSiloGetTypeID();
+```
+
 #### Return Value
 
 The `CFTypeID` of the frame silo object.
 
 ## See Also
 
-- [func VTFrameSiloGetProgressOfCurrentPass(VTFrameSilo, progressOut: UnsafeMutablePointer<Float32>) -> OSStatus](vtframesilogetprogressofcurrentpass(_:progressout:).md)
+### Inspecting Frame Silos
+- [func VTFrameSiloGetProgressOfCurrentPass(VTFrameSilo, progressOut: UnsafeMutablePointer<Float32>) -> OSStatus](./vtframesilogetprogressofcurrentpass%28_,progressout%29.md)
   Gets the progress of the current pass.
 
 

@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The geographical coordinate information.
 
@@ -17,9 +18,14 @@ The geographical coordinate information.
 var coordinate: CLLocationCoordinate2D { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+```
+
 ## See Also
 
-- [var horizontalAccuracy: CLLocationAccuracy](clvisit/horizontalaccuracy.md)
+### Getting the location
+- [var horizontalAccuracy: CLLocationAccuracy](./horizontalaccuracy.md)
   The horizontal accuracy (in meters) of the specified coordinate.
 
 

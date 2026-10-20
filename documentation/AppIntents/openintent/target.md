@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The item to open in your app.
@@ -12,7 +13,7 @@ The item to open in your app.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,11 +24,12 @@ var target: Self.Value { get set }
 
 #### Discussion
 
-Set this property to a dynamic or static type your app defines, such as an [`AppEntity`](appentity.md) or [`AppEnum`](appenum.md). Use this value to determine what content to show in your app’s interface.
+Set this property to a dynamic or static type your app defines, such as an [`AppEntity`](../appentity.md) or [`AppEnum`](../appenum.md). Use this value to determine what content to show in your app’s interface.
 
 ## See Also
 
-- [associatedtype Value : AppValue](openintent/value.md)
+### Getting the item to open
+- [associatedtype Value : AppValue](./value.md)
   The type of the item to open.
 
 

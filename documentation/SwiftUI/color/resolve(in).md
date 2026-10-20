@@ -1,7 +1,8 @@
 # resolve(in:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Evaluates this color to a resolved color given the current `context`.
 
@@ -22,9 +23,10 @@ func resolve(in environment: EnvironmentValues) -> Color.Resolved
 
 ## See Also
 
-- [init(String, bundle: Bundle?)](color/init(_:bundle:).md)
+### Creating a color
+- [init(String, bundle: Bundle?)](./init%28_,bundle%29.md)
   Creates a color from a color set that you indicate by name.
-- [init(_:)](color/init(_:).md)
+- [init(_:)](./init%28_%29.md)
   Creates a constant color with the values specified by the resolved color.
 
 

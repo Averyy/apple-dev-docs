@@ -1,7 +1,8 @@
 # recordTypes
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The types of records returned by this query.
 
@@ -10,7 +11,7 @@ The types of records returned by this query.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ var recordTypes: [HKVerifiableClinicalRecordCredentialType]
 
 #### Discussion
 
-For a list of valid record types, see [`HKVerifiableClinicalRecordCredentialType`](hkverifiableclinicalrecordcredentialtype.md).
+For a list of valid record types, see [`HKVerifiableClinicalRecordCredentialType`](../hkverifiableclinicalrecordcredentialtype.md).
 
 ## See Also
 
-- [var sourceTypes: [HKVerifiableClinicalRecordSourceType]](hkverifiableclinicalrecordquerydescriptor/sourcetypes.md)
+### Accessing Query Properties
+- [var sourceTypes: [HKVerifiableClinicalRecordSourceType]](./sourcetypes.md)
   The source for the verifiable clinical records, for example from a SMART Health Card or an EU Digital COVID Certificate.
-- [var predicate: NSPredicate?](hkverifiableclinicalrecordquerydescriptor/predicate.md)
+- [var predicate: NSPredicate?](./predicate.md)
   A predicate that limits the results returned by the query.
 
 

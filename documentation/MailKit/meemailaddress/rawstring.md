@@ -1,7 +1,8 @@
 # rawString
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
@@ -12,9 +13,14 @@
 var rawString: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * rawString;
+```
+
 ## See Also
 
-- [var addressString: String?](meemailaddress/addressstring.md)
+### Instance Properties
+- [var addressString: String?](./addressstring.md)
 
 
 ---

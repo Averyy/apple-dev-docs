@@ -1,7 +1,8 @@
 # byComposedCharacterSequences
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 2.0+
@@ -18,19 +19,24 @@
 static var byComposedCharacterSequences: NSString.EnumerationOptions { get }
 ```
 
+```c
+NSStringEnumerationByComposedCharacterSequences
+```
+
 #### Discussion
 
-Enumerates by composed character sequences. Equivalent to [`rangeOfComposedCharacterSequences(for:)`](nsstring/rangeofcomposedcharactersequences(for:).md).
+Enumerates by composed character sequences. Equivalent to [`rangeOfComposedCharacterSequences(for:)`](../rangeofcomposedcharactersequences%28for%29.md).
 
 ## See Also
 
-- [static var byLines: NSString.EnumerationOptions](nsstring/enumerationoptions/bylines.md)
-- [static var byParagraphs: NSString.EnumerationOptions](nsstring/enumerationoptions/byparagraphs.md)
-- [static var byWords: NSString.EnumerationOptions](nsstring/enumerationoptions/bywords.md)
-- [static var bySentences: NSString.EnumerationOptions](nsstring/enumerationoptions/bysentences.md)
-- [static var reverse: NSString.EnumerationOptions](nsstring/enumerationoptions/reverse.md)
-- [static var substringNotRequired: NSString.EnumerationOptions](nsstring/enumerationoptions/substringnotrequired.md)
-- [static var localized: NSString.EnumerationOptions](nsstring/enumerationoptions/localized.md)
+### Constants
+- [static var byLines: NSString.EnumerationOptions](./bylines.md)
+- [static var byParagraphs: NSString.EnumerationOptions](./byparagraphs.md)
+- [static var byWords: NSString.EnumerationOptions](./bywords.md)
+- [static var bySentences: NSString.EnumerationOptions](./bysentences.md)
+- [static var reverse: NSString.EnumerationOptions](./reverse.md)
+- [static var substringNotRequired: NSString.EnumerationOptions](./substringnotrequired.md)
+- [static var localized: NSString.EnumerationOptions](./localized.md)
 
 
 ---

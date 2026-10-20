@@ -1,7 +1,8 @@
 # lift
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An effect that slides the pointer under the view and disappears as the view scales up and gains a shadow.
 
@@ -20,9 +21,10 @@ static var lift: HoverEffect { get }
 
 ## See Also
 
-- [static var automatic: HoverEffect](hovereffect/automatic.md)
+### Getting hover effects
+- [static var automatic: HoverEffect](./automatic.md)
   An effect  that attempts to determine the effect automatically. This is the default effect.
-- [static var highlight: HoverEffect](hovereffect/highlight.md)
+- [static var highlight: HoverEffect](./highlight.md)
   An effect  that morphs the pointer into a platter behind the view and shows a light source indicating position.
 
 

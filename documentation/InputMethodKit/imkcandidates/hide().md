@@ -1,7 +1,8 @@
 # hide()
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hides a candidates window, if it is visible.
 
@@ -14,17 +15,22 @@ Hides a candidates window, if it is visible.
 func hide()
 ```
 
+```objc
+- (void) hide;
+```
+
 ## See Also
 
-- [func show(IMKCandidatesLocationHint)](imkcandidates/show(_:).md)
+### Managing Window Visibility and Behavior
+- [func show(IMKCandidatesLocationHint)](./show%28_%29.md)
   Shows the candidates window.
-- [func isVisible() -> Bool](imkcandidates/isvisible.md)
+- [func isVisible() -> Bool](./isvisible%28%29.md)
   Returns whether or not the candidates window is visible.
-- [func setDismissesAutomatically(Bool)](imkcandidates/setdismissesautomatically(_:).md)
+- [func setDismissesAutomatically(Bool)](./setdismissesautomatically%28_%29.md)
   Sets the state of the flag that determines whether the candidates window dismisses automatically.
-- [func dismissesAutomatically() -> Bool](imkcandidates/dismissesautomatically.md)
+- [func dismissesAutomatically() -> Bool](./dismissesautomatically%28%29.md)
   Returns the state of the flag that determines whether the candidates window dismisses automatically.
-- [func update()](imkcandidates/update.md)
+- [func update()](./update%28%29.md)
   Updates the candidates that are displayed in the candidates window.
 
 

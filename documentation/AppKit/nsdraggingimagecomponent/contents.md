@@ -1,7 +1,8 @@
 # contents
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object providing the image contents of the component.
 
@@ -14,13 +15,18 @@ An object providing the image contents of the component.
 var contents: Any? { get set }
 ```
 
+```objc
+@property (strong, nullable) id contents;
+```
+
 #### Discussion
 
-Typically you set an [`NSImage`](nsimage.md) instance or a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) as content.
+Typically you set an [`NSImage`](../nsimage.md) instance or a [`CGImage`](../../CoreGraphics/cgimage.md) as content.
 
 ## See Also
 
-- [var frame: NSRect](nsdraggingimagecomponent/frame.md)
+### Dragging Image Contents
+- [var frame: NSRect](./frame.md)
   The coordinate space is the bounds of the parent dragging item.
 
 

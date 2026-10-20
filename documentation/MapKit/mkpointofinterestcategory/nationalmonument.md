@@ -1,7 +1,8 @@
 # nationalMonument
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The point of interest category for national monuments.
 
@@ -20,13 +21,18 @@ The point of interest category for national monuments.
 static let nationalMonument: MKPointOfInterestCategory
 ```
 
+```c
+extern MKPointOfInterestCategory const MKPointOfInterestCategoryNationalMonument;
+```
+
 ## See Also
 
-- [static let castle: MKPointOfInterestCategory](mkpointofinterestcategory/castle.md)
+### Historical and cultural landmarks
+- [static let castle: MKPointOfInterestCategory](./castle.md)
   The point of interest category for castles.
-- [static let fortress: MKPointOfInterestCategory](mkpointofinterestcategory/fortress.md)
+- [static let fortress: MKPointOfInterestCategory](./fortress.md)
   The point of interest category for fortresses.
-- [static let landmark: MKPointOfInterestCategory](mkpointofinterestcategory/landmark.md)
+- [static let landmark: MKPointOfInterestCategory](./landmark.md)
   The point of interest category for landmarks.
 
 

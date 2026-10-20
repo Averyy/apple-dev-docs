@@ -1,7 +1,8 @@
 # browser(_:setObjectValue:forItem:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the object that the specified item uses to draw its contents to the specified object.
 
@@ -15,6 +16,10 @@ Sets the object that the specified item uses to draw its contents to the specifi
 optional func browser(_ browser: NSBrowser, setObjectValue object: Any?, forItem item: Any?)
 ```
 
+```objc
+- (void) browser:(NSBrowser *) browser setObjectValue:(id) object forItem:(id) item;
+```
+
 ## Parameters
 
 - `browser`: The browser.
@@ -23,19 +28,20 @@ optional func browser(_ browser: NSBrowser, setObjectValue object: Any?, forItem
 
 ## See Also
 
-- [func browser(NSBrowser, child: Int, ofItem: Any?) -> Any](nsbrowserdelegate/browser(_:child:ofitem:).md)
+### Accessing Components
+- [func browser(NSBrowser, child: Int, ofItem: Any?) -> Any](./browser%28_,child,ofitem%29.md)
   Asks the delegate to return the child of the specified item at the specified index.
-- [func browser(NSBrowser, isLeafItem: Any?) -> Bool](nsbrowserdelegate/browser(_:isleafitem:).md)
+- [func browser(NSBrowser, isLeafItem: Any?) -> Bool](./browser%28_,isleafitem%29.md)
   Asks the delegate whether the specified item is a leaf item (an item that cannot be expanded).
-- [func browser(NSBrowser, shouldEditItem: Any?) -> Bool](nsbrowserdelegate/browser(_:shouldedititem:).md)
+- [func browser(NSBrowser, shouldEditItem: Any?) -> Bool](./browser%28_,shouldedititem%29.md)
   Asks the delegate whether the browser may start an editing session for the specified item.
-- [func browser(NSBrowser, objectValueForItem: Any?) -> Any?](nsbrowserdelegate/browser(_:objectvalueforitem:).md)
+- [func browser(NSBrowser, objectValueForItem: Any?) -> Any?](./browser%28_,objectvalueforitem%29.md)
   Returns the object that the specified item uses to draw its contents.
-- [func rootItem(for: NSBrowser) -> Any?](nsbrowserdelegate/rootitem(for:).md)
+- [func rootItem(for: NSBrowser) -> Any?](./rootitem%28for%29.md)
   Asks the delegate to return the root item of the browser.
-- [func browser(NSBrowser, previewViewControllerForLeafItem: Any) -> NSViewController?](nsbrowserdelegate/browser(_:previewviewcontrollerforleafitem:).md)
+- [func browser(NSBrowser, previewViewControllerForLeafItem: Any) -> NSViewController?](./browser%28_,previewviewcontrollerforleafitem%29.md)
   Asks the delegate for a controller that provides a preview column for the specified leaf item.
-- [func browser(NSBrowser, headerViewControllerForItem: Any?) -> NSViewController?](nsbrowserdelegate/browser(_:headerviewcontrollerforitem:).md)
+- [func browser(NSBrowser, headerViewControllerForItem: Any?) -> NSViewController?](./browser%28_,headerviewcontrollerforitem%29.md)
   Asks the delegate for a controller that provides a header view for the specified column item.
 
 

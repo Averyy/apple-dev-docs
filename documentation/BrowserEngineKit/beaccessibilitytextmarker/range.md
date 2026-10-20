@@ -1,14 +1,15 @@
 # BEAccessibilityTextMarker.Range
 
 **Framework**: BrowserEngineKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents a range in an element’s accessibility text.
 
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
-- macOS ?+
+- macOS
 - tvOS 18.2+
 - visionOS 2.2+
 - watchOS 11.2+
@@ -19,42 +20,47 @@ A class that represents a range in an element’s accessibility text.
 class Range
 ```
 
+```objc
+@interface BEAccessibilityTextMarkerRange : NSObject
+```
+
 ## Topics
 
 ### Range boundaries
-- [var startMarker: BEAccessibilityTextMarker](beaccessibilitytextmarker/range/startmarker.md)
+- [var startMarker: BEAccessibilityTextMarker](./range/startmarker.md)
   The marker at the beginning of a range in an element’s accessibility text.
-- [var endMarker: BEAccessibilityTextMarker](beaccessibilitytextmarker/range/endmarker.md)
+- [var endMarker: BEAccessibilityTextMarker](./range/endmarker.md)
   The marker at the end of a range in an element’s accessibility text.
 ### Initializers
-- [init?(coder: NSCoder)](beaccessibilitytextmarker/range/init(coder:).md)
+- [init?(coder: NSCoder)](./range/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [func accessibilityBounds(for: BEAccessibilityTextMarker.Range) -> CGRect](beaccessibilitytextmarkersupport/accessibilitybounds(for:).md)
+### Text ranges
+- [func accessibilityBounds(for: BEAccessibilityTextMarker.Range) -> CGRect](../beaccessibilitytextmarkersupport/accessibilitybounds%28for%29.md)
   Calculates the bounding rectangle for a text range.
-- [func accessibilityTextMarkerRange() -> BEAccessibilityTextMarker.Range](beaccessibilitytextmarkersupport/accessibilitytextmarkerrange.md)
+- [func accessibilityTextMarkerRange() -> BEAccessibilityTextMarker.Range](../beaccessibilitytextmarkersupport/accessibilitytextmarkerrange%28%29.md)
   The text marker range of the current element.
-- [func accessibilityTextMarkerRangeForCurrentSelection() -> BEAccessibilityTextMarker.Range?](beaccessibilitytextmarkersupport/accessibilitytextmarkerrangeforcurrentselection.md)
+- [func accessibilityTextMarkerRangeForCurrentSelection() -> BEAccessibilityTextMarker.Range?](../beaccessibilitytextmarkersupport/accessibilitytextmarkerrangeforcurrentselection%28%29.md)
   The text marker range of the current selection.
-- [func accessibilityTextMarkerRange(for: NSRange) -> BEAccessibilityTextMarker.Range?](beaccessibilitytextmarkersupport/accessibilitytextmarkerrange(for:).md)
+- [func accessibilityTextMarkerRange(for: NSRange) -> BEAccessibilityTextMarker.Range?](../beaccessibilitytextmarkersupport/accessibilitytextmarkerrange%28for%29.md)
   Returns the text marker range for the text in a given range.
-- [func accessibilityRange(for: BEAccessibilityTextMarker.Range) -> NSRange](beaccessibilitytextmarkersupport/accessibilityrange(for:).md)
+- [func accessibilityRange(for: BEAccessibilityTextMarker.Range) -> NSRange](../beaccessibilitytextmarkersupport/accessibilityrange%28for%29.md)
   Returns the range for the text in a given accessibility marker range.
 
 

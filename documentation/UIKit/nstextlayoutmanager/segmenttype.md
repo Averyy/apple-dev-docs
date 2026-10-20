@@ -1,7 +1,8 @@
 # NSTextLayoutManager.SegmentType
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe the rendering of selection boundaries.
 
@@ -18,45 +19,50 @@ Values that describe the rendering of selection boundaries.
 enum SegmentType
 ```
 
+```c
+enum NSTextLayoutManagerSegmentType : NSInteger;
+```
+
 ## Topics
 
 ### Kinds of text selection segments
-- [NSTextLayoutManager.SegmentType.highlight](nstextlayoutmanager/segmenttype/highlight.md)
+- [NSTextLayoutManager.SegmentType.highlight](./segmenttype/highlight.md)
   The segment behavior suitable for highlighting.
-- [NSTextLayoutManager.SegmentType.selection](nstextlayoutmanager/segmenttype/selection.md)
+- [NSTextLayoutManager.SegmentType.selection](./segmenttype/selection.md)
   The segment behavior suitable for selection rendering.
-- [NSTextLayoutManager.SegmentType.standard](nstextlayoutmanager/segmenttype/standard.md)
+- [NSTextLayoutManager.SegmentType.standard](./segmenttype/standard.md)
   The standard segment, matching the typographic bounds of the range.
 ### Initializers
-- [init?(rawValue: Int)](nstextlayoutmanager/segmenttype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./segmenttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var textViewportLayoutController: NSTextViewportLayoutController](nstextlayoutmanager/textviewportlayoutcontroller.md)
+### Causing layout generation
+- [var textViewportLayoutController: NSTextViewportLayoutController](./textviewportlayoutcontroller.md)
   Returns text viewport layout controller associated with the layout manager’s text container.
-- [func invalidateLayout(for: NSTextRange)](nstextlayoutmanager/invalidatelayout(for:).md)
+- [func invalidateLayout(for: NSTextRange)](./invalidatelayout%28for%29.md)
   Invalidates the layout information for specified text range.
-- [func textLayoutFragment(for: any NSTextLocation) -> NSTextLayoutFragment?](nstextlayoutmanager/textlayoutfragment(for:)-68dez.md)
+- [func textLayoutFragment(for: any NSTextLocation) -> NSTextLayoutFragment?](./textlayoutfragment%28for%29-68dez.md)
   Returns the text layout fragment from the document at the specified location.
-- [func textLayoutFragment(for: CGPoint) -> NSTextLayoutFragment?](nstextlayoutmanager/textlayoutfragment(for:)-4dhrx.md)
+- [func textLayoutFragment(for: CGPoint) -> NSTextLayoutFragment?](./textlayoutfragment%28for%29-4dhrx.md)
   Returns the text layout fragment at the position you specify in the text container.
-- [func ensureLayout(for: CGRect)](nstextlayoutmanager/ensurelayout(for:)-6ptsj.md)
+- [func ensureLayout(for: CGRect)](./ensurelayout%28for%29-6ptsj.md)
   Performs the layout for filling the bounds you specify inside the last text container.
-- [func ensureLayout(for: NSTextRange)](nstextlayoutmanager/ensurelayout(for:)-3duae.md)
+- [func ensureLayout(for: NSTextRange)](./ensurelayout%28for%29-3duae.md)
   Performs the layout for specified text range.
-- [func enumerateTextLayoutFragments(from: (any NSTextLocation)?, options: NSTextLayoutFragment.EnumerationOptions, using: (NSTextLayoutFragment) -> Bool) -> (any NSTextLocation)?](nstextlayoutmanager/enumeratetextlayoutfragments(from:options:using:).md)
+- [func enumerateTextLayoutFragments(from: (any NSTextLocation)?, options: NSTextLayoutFragment.EnumerationOptions, using: (NSTextLayoutFragment) -> Bool) -> (any NSTextLocation)?](./enumeratetextlayoutfragments%28from,options,using%29.md)
   Enumerates the text layout fragments starting at the specified location.
-- [NSTextLayoutManager.SegmentOptions](nstextlayoutmanager/segmentoptions.md)
+- [NSTextLayoutManager.SegmentOptions](./segmentoptions.md)
   Values that describe where and how the framework extends segments of a selection.
 
 

@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](string/description.md)
+- [var description: String](./description.md)
   The value of this string.
 
 

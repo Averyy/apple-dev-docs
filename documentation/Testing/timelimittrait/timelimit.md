@@ -1,7 +1,8 @@
 # timeLimit
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum amount of time a test may run for before timing out.
 
@@ -11,7 +12,7 @@ The maximum amount of time a test may run for before timing out.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 - Swift 6.0+
 - Xcode 16.0+

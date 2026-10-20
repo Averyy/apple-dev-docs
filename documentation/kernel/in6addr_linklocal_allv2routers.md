@@ -1,14 +1,15 @@
 # in6addr_linklocal_allv2routers
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 const struct in6_addr in6addr_linklocal_allv2routers;
 ```
 

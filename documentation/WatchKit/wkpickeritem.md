@@ -1,7 +1,8 @@
 # WKPickerItem
 
 **Framework**: WatchKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A single item in a picker interface.
 
@@ -14,53 +15,58 @@ A single item in a picker interface.
 class WKPickerItem
 ```
 
+```objc
+@interface WKPickerItem : NSObject
+```
+
 #### Overview
 
-You create picker items yourself and assign them to a [`WKInterfacePicker`](wkinterfacepicker.md) object in your interface. For each item, you can specify a title string, an image, or both based on the style of the picker.
+You create picker items yourself and assign them to a [`WKInterfacePicker`](./wkinterfacepicker.md) object in your interface. For each item, you can specify a title string, an image, or both based on the style of the picker.
 
 The style of the picker determines how you configure the items of that picker:
 
 - List. Items may be configured in one of two ways:
-- Specify an image in the [`contentImage`](wkpickeritem/contentimage.md) property.
-- Specify text in the [`title`](wkpickeritem/title.md) property and an optional image in the [`accessoryImage`](wkpickeritem/accessoryimage.md) property.
-- Stacked. Configure each item with an image in the [`contentImage`](wkpickeritem/contentimage.md) property.
-- Image Sequence. Configure each item with an image in the [`contentImage`](wkpickeritem/contentimage.md) property.
+- Specify an image in the [`contentImage`](./wkpickeritem/contentimage.md) property.
+- Specify text in the [`title`](./wkpickeritem/title.md) property and an optional image in the [`accessoryImage`](./wkpickeritem/accessoryimage.md) property.
+- Stacked. Configure each item with an image in the [`contentImage`](./wkpickeritem/contentimage.md) property.
+- Image Sequence. Configure each item with an image in the [`contentImage`](./wkpickeritem/contentimage.md) property.
 
 ## Topics
 
 ### Setting the Picker Item’s Content
-- [var contentImage: WKImage?](wkpickeritem/contentimage.md)
+- [var contentImage: WKImage?](./wkpickeritem/contentimage.md)
   The image to display for the item.
-- [var title: String?](wkpickeritem/title.md)
+- [var title: String?](./wkpickeritem/title.md)
   The text to display for the item.
-- [var accessoryImage: WKImage?](wkpickeritem/accessoryimage.md)
+- [var accessoryImage: WKImage?](./wkpickeritem/accessoryimage.md)
   A small image to display next to the title string.
-- [var caption: String?](wkpickeritem/caption.md)
+- [var caption: String?](./wkpickeritem/caption.md)
   A caption for the item’s content.
 ### Initializers
-- [init?(coder: NSCoder)](wkpickeritem/init(coder:).md)
+- [init?(coder: NSCoder)](./wkpickeritem/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [func setItems([WKPickerItem]?)](wkinterfacepicker/setitems(_:).md)
+### Managing the Picker Contents
+- [func setItems([WKPickerItem]?)](./wkinterfacepicker/setitems%28_%29.md)
   Sets the list of items displayed by the picker.
-- [func setSelectedItemIndex(Int)](wkinterfacepicker/setselecteditemindex(_:).md)
+- [func setSelectedItemIndex(Int)](./wkinterfacepicker/setselecteditemindex%28_%29.md)
   Selects the specified item in the list.
-- [func setCoordinatedAnimations([any WKInterfaceObject & WKImageAnimatable]?)](wkinterfacepicker/setcoordinatedanimations(_:).md)
+- [func setCoordinatedAnimations([any WKInterfaceObject & WKImageAnimatable]?)](./wkinterfacepicker/setcoordinatedanimations%28_%29.md)
   Sets the interface objects that should coordinate their own animations with the picker.
 
 

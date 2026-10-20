@@ -1,7 +1,8 @@
 # CVFillExtendedPixelsCallBackData
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure for holding information that describes a custom extended pixel fill algorithm.
 
@@ -20,38 +21,43 @@ A structure for holding information that describes a custom extended pixel fill 
 struct CVFillExtendedPixelsCallBackData
 ```
 
+```c
+typedef struct { ... } CVFillExtendedPixelsCallBackData;
+```
+
 #### Overview
 
-You must fill out this structure and store it as part of your pixel format description Core Foundation dictionary (key: `kCVPixelFormatFillExtendedPixelsCallback`, type: `CFData`). However, if your custom pixel format never needs the functionality of [`CVPixelBufferFillExtendedPixels(_:)`](cvpixelbufferfillextendedpixels(_:).md), you don’t need to add this key or implement the associated callback.
+You must fill out this structure and store it as part of your pixel format description Core Foundation dictionary (key: `kCVPixelFormatFillExtendedPixelsCallback`, type: `CFData`). However, if your custom pixel format never needs the functionality of [`CVPixelBufferFillExtendedPixels(_:)`](./cvpixelbufferfillextendedpixels%28_%29.md), you don’t need to add this key or implement the associated callback.
 
-For more information about defining a custom pixel format, see [`Pixel Format Description Keys`](pixel-format-description-keys.md).
+For more information about defining a custom pixel format, see [Pixel Format Description Keys](./pixel-format-description-keys.md).
 
 ## Topics
 
 ### Initializers
-- [init()](cvfillextendedpixelscallbackdata/init.md)
-- [init(version: CFIndex, fillCallBack: CVFillExtendedPixelsCallBack?, refCon: UnsafeMutableRawPointer?)](cvfillextendedpixelscallbackdata/init(version:fillcallback:refcon:).md)
+- [init()](./cvfillextendedpixelscallbackdata/init%28%29.md)
+- [init(version: CFIndex, fillCallBack: CVFillExtendedPixelsCallBack?, refCon: UnsafeMutableRawPointer?)](./cvfillextendedpixelscallbackdata/init%28version,fillcallback,refcon%29.md)
 ### Properties
-- [var fillCallBack: CVFillExtendedPixelsCallBack?](cvfillextendedpixelscallbackdata/fillcallback.md)
-- [var refCon: UnsafeMutableRawPointer?](cvfillextendedpixelscallbackdata/refcon.md)
+- [var fillCallBack: CVFillExtendedPixelsCallBack?](./cvfillextendedpixelscallbackdata/fillcallback.md)
+- [var refCon: UnsafeMutableRawPointer?](./cvfillextendedpixelscallbackdata/refcon.md)
   A pointer to application-defined data that is passed to your custom pixel fill function.
-- [var version: CFIndex](cvfillextendedpixelscallbackdata/version.md)
+- [var version: CFIndex](./cvfillextendedpixelscallbackdata/version.md)
   The version of this fill algorithm.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct CVPixelFormatDescription](cvpixelformatdescription.md)
+### Data Types
+- [struct CVPixelFormatDescription](./cvpixelformatdescription.md)
   Defines a pixel format which can be used to create custom pixel buffer types.
-- [struct CVPixelFormatType](cvpixelformattype.md)
+- [struct CVPixelFormatType](./cvpixelformattype.md)
   Identifier for a pixel format type
-- [struct CVSenselSitingOffsets](cvsenselsitingoffsets.md)
+- [struct CVSenselSitingOffsets](./cvsenselsitingoffsets.md)
   Siting offsets, relative to pixel center, of individual sensels/components constituting each pixel.
-- [enum CVSenselArrayPattern](cvsenselarraypattern.md)
+- [enum CVSenselArrayPattern](./cvsenselarraypattern.md)
   Pattern indicating sensel arrangement.
 
 

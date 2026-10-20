@@ -1,12 +1,13 @@
 # init(windowNibName:owner:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a window controller initialized with a nib file and a specified owner for that nib file.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns a window controller initialized with a nib file and a specified owner fo
 convenience init(windowNibName: NSNib.Name, owner: Any)
 ```
 
+```objc
+- (instancetype) initWithWindowNibName:(NSNibName) windowNibName owner:(id) owner;
+```
+
 #### Discussion
 
-The default initialization turns on cascading, sets the [`shouldCloseDocument`](nswindowcontroller/shouldclosedocument.md) property to [`false`](https://developer.apple.com/documentation/swift/false), and sets the autosave name for the window’s frame to an empty string.
+The default initialization turns on cascading, sets the [`shouldCloseDocument`](./shouldclosedocument.md) property to [`false`](../../Swift/false.md), and sets the autosave name for the window’s frame to an empty string.
 
 ## Parameters
 
@@ -25,11 +30,12 @@ The default initialization turns on cascading, sets the [`shouldCloseDocument`](
 
 ## See Also
 
-- [init(window: NSWindow?)](nswindowcontroller/init(window:).md)
+### Initializing Window Controllers
+- [init(window: NSWindow?)](./init%28window%29.md)
   Returns a window controller initialized with a given window.
-- [convenience init(windowNibName: NSNib.Name)](nswindowcontroller/init(windownibname:).md)
+- [convenience init(windowNibName: NSNib.Name)](./init%28windownibname%29.md)
   Returns a window controller initialized with a nib file.
-- [convenience init(windowNibPath: String, owner: Any)](nswindowcontroller/init(windownibpath:owner:).md)
+- [convenience init(windowNibPath: String, owner: Any)](./init%28windownibpath,owner%29.md)
   Returns a window controller initialized with a nib file at an absolute path and a specified owner.
 
 

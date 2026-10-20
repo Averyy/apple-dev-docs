@@ -1,16 +1,19 @@
 # subscript(sidebarVisibility:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 The visibility of the tab identified by its customization identifier.
 
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
-- Mac Catalyst 18.0+
-- macOS 15.0+
-- visionOS 2.0+
+- iOS 18.0+ - Deprecated in 27.2
+- iPadOS 18.0+ - Deprecated in 27.2
+- Mac Catalyst 18.0+ - Deprecated in 27.2
+- macOS 15.0+ - Deprecated in 27.2
+- visionOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use the `tab` subscript and read `sidebarVisibility` instead.
 
 ## Declaration
 
@@ -26,7 +29,7 @@ Visibility can be set imperatively by subscripting with the tab’s id:
 customization[sidebarVisibility: "com.myApp.alerts"] = .hidden
 ```
 
-You can change the default visibility by using the [`defaultVisibility(_:for:)`](tabcontent/defaultvisibility(_:for:).md) with a [`sidebar`](adaptabletabbarplacement/sidebar.md) placement.
+You can change the default visibility by using the [`defaultVisibility(_:for:)`](../tabcontent/defaultvisibility%28_,for%29.md) with a [`sidebar`](../adaptabletabbarplacement/sidebar.md) placement.
 
 ```swift
 Tab("Alerts", systemImage: "bell", value: .alerts) {

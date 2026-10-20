@@ -1,7 +1,8 @@
 # envelope
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of line segments that curve and connect to form a graph.
 
@@ -19,13 +20,17 @@ A collection of line segments that curve and connect to form a graph.
 var envelope: PHASEEnvelope { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) PHASEEnvelope * envelope;
+```
+
 #### Discussion
 
-The line segments collectively plot an output value for the [`inputMetaParameterDefinition`](phasemappedmetaparameterdefinition/inputmetaparameterdefinition.md) property.
+The line segments collectively plot an output value for the [`inputMetaParameterDefinition`](./inputmetaparameterdefinition.md) property.
 
-To plot the input, call [`evaluate(x:)`](phaseenvelope/evaluate(x:).md), passing in the input metaparameter’s [`value`](phasemetaparameter/value.md).
+To plot the input, call [`evaluate(x:)`](../phaseenvelope/evaluate%28x%29.md), passing in the input metaparameter’s [`value`](../phasemetaparameter/value.md).
 
-To gradually change the input over time, call [`fade(value:duration:)`](phasenumbermetaparameter/fade(value:duration:).md).
+To gradually change the input over time, call [`fade(value:duration:)`](../phasenumbermetaparameter/fade%28value,duration%29.md).
 
 
 ---

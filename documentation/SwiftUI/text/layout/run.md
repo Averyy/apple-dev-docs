@@ -1,7 +1,8 @@
 # Text.Layout.Run
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A run of placed glyphs in a text layout.
 
@@ -23,24 +24,24 @@ struct Run
 ## Topics
 
 ### Instance Properties
-- [var characterIndices: [Text.Layout.CharacterIndex]](text/layout/run/characterindices.md)
+- [var characterIndices: [Text.Layout.CharacterIndex]](./run/characterindices.md)
   The array of character indices corresponding to the glyphs in `self`.
-- [var layoutDirection: LayoutDirection](text/layout/run/layoutdirection.md)
+- [var layoutDirection: LayoutDirection](./run/layoutdirection.md)
   The layout direction of the text run.
-- [var typographicBounds: Text.Layout.TypographicBounds](text/layout/run/typographicbounds.md)
+- [var typographicBounds: Text.Layout.TypographicBounds](./run/typographicbounds.md)
   The typographic bounds of the run of glyphs.
 ### Subscripts
-- [subscript<T>(T.Type) -> T?](text/layout/run/subscript(_:).md)
+- [subscript<T>(T.Type) -> T?](./run/subscript%28_%29.md)
   The custom attribute of type `T` associated with the run of glyphs, or nil. If no run contains the custom attribute we also check its attachment’s runs.
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Equatable](../swift/equatable.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../../Swift/bidirectionalcollection.md)
+- [Collection](../../../Swift/collection.md)
+- [Equatable](../../../Swift/equatable.md)
+- [RandomAccessCollection](../../../Swift/randomaccesscollection.md)
+- [Sequence](../../../Swift/sequence.md)
 
 
 ---

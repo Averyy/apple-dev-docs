@@ -1,7 +1,8 @@
 # IntelligenceSettingsApps_NotesObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 If present, configures Notes Intelligence features.
 
@@ -14,22 +15,31 @@ If present, configures Notes Intelligence features.
 
 ## Declaration
 
-```swift
+```
 object IntelligenceSettingsApps_NotesObject
 ```
 
 ## Properties
 
-- `AllowTranscription` (boolean): If `false`, disables Notes Transcription. Available: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+
-- `AllowTranscriptionSummary` (boolean): If `false`, disables Notes Transcription Summary. Available: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+
+- `AllowTranscription` (boolean): If `false`, disables Notes Transcription.
+
+  Available: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+
+
+  **Default**: `true`
+- `AllowTranscriptionSummary` (boolean): If `false`, disables Notes Transcription Summary.
+
+  Available: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+
+
+  **Default**: `true`
 
 ## See Also
 
-- [object IntelligenceSettingsApps_CalendarObject](intelligencesettingsapps_calendarobject.md)
+### Objects
+- [object IntelligenceSettingsApps_CalendarObject](./intelligencesettingsapps_calendarobject.md)
   If present, configures Calendar and Reminders Intelligence features.
-- [object IntelligenceSettingsApps_MailObject](intelligencesettingsapps_mailobject.md)
+- [object IntelligenceSettingsApps_MailObject](./intelligencesettingsapps_mailobject.md)
   If present, configures Mail Intelligence features.
-- [object IntelligenceSettingsApps_SafariObject](intelligencesettingsapps_safariobject.md)
+- [object IntelligenceSettingsApps_SafariObject](./intelligencesettingsapps_safariobject.md)
   If present, configures Safari intelligence features.
 
 

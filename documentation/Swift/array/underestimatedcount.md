@@ -1,7 +1,8 @@
 # underestimatedCount
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value less than or equal to the number of elements in the collection.
 
@@ -22,15 +23,16 @@ var underestimatedCount: Int { get }
 
 #### Discussion
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*n*), where *n* is the length of the collection.
 
 ## See Also
 
-- [func forEach((Self.Element) throws -> Void) rethrows](array/foreach(_:).md)
+### Iterating Over an Array’s Elements
+- [func forEach((Self.Element) throws -> Void) rethrows](./foreach%28_%29.md)
   Calls the given closure on each element in the sequence in the same order as a `for`-`in` loop.
-- [func enumerated() -> EnumeratedSequence<Self>](array/enumerated.md)
+- [func enumerated() -> EnumeratedSequence<Self>](./enumerated%28%29.md)
   Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
-- [func makeIterator() -> IndexingIterator<Self>](array/makeiterator.md)
+- [func makeIterator() -> IndexingIterator<Self>](./makeiterator%28%29.md)
   Returns an iterator over the elements of the collection.
 
 

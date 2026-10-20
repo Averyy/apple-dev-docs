@@ -1,7 +1,8 @@
 # useKeyExchange
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key is a private key that has been shared using a key exchange protocol, such as Diffie-Hellman key exchange.
 
@@ -13,6 +14,10 @@ The key is a private key that has been shared using a key exchange protocol, suc
 
 ```swift
 static var useKeyExchange: SecTrustSettingsKeyUsage { get }
+```
+
+```c
+kSecTrustSettingsKeyUseKeyExchange
 ```
 
 

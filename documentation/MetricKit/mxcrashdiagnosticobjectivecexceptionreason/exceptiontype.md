@@ -1,14 +1,17 @@
 # exceptionType
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
-- Mac Catalyst 17.0+
-- macOS 14.0+
-- visionOS 1.0+
+- iOS 17.0+ - Deprecated in 27.2
+- iPadOS 17.0+ - Deprecated in 27.2
+- Mac Catalyst 17.0+ - Deprecated in 27.0
+- macOS 14.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`exceptionType`](../crashdiagnostic/objectivecexceptionreason/exceptiontype.md) instead.
 
 ## Declaration
 
@@ -16,13 +19,18 @@
 var exceptionType: String { get }
 ```
 
+```objc
+@property (copy, readonly, nonnull) NSString * exceptionType;
+```
+
 ## See Also
 
-- [var arguments: [String]](mxcrashdiagnosticobjectivecexceptionreason/arguments.md)
-- [var className: String](mxcrashdiagnosticobjectivecexceptionreason/classname.md)
-- [var composedMessage: String](mxcrashdiagnosticobjectivecexceptionreason/composedmessage.md)
-- [var exceptionName: String](mxcrashdiagnosticobjectivecexceptionreason/exceptionname.md)
-- [var formatString: String](mxcrashdiagnosticobjectivecexceptionreason/formatstring.md)
+### Reading the data
+- [var arguments: [String]](./arguments.md)
+- [var className: String](./classname.md)
+- [var composedMessage: String](./composedmessage.md)
+- [var exceptionName: String](./exceptionname.md)
+- [var formatString: String](./formatstring.md)
 
 
 ---

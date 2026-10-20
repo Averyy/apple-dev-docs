@@ -1,7 +1,8 @@
 # URLUtils
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,27 +10,27 @@
 
 ## Declaration
 
-```swift
+```
 interface URLUtils
 ```
 
 ## Topics
 
 ### Instance Properties
-- [hash](urlutils/1631163-hash.md)
-- [host](urlutils/1634066-host.md)
-- [hostname](urlutils/1634101-hostname.md)
-- [href](urlutils/1630323-href.md)
-- [origin](urlutils/1630846-origin.md)
-- [password](urlutils/1630591-password.md)
-- [pathname](urlutils/1633193-pathname.md)
-- [port](urlutils/1632339-port.md)
-- [protocol](urlutils/1630173-protocol.md)
-- [search](urlutils/1632827-search.md)
-- [searchParams](urlutils/2871337-searchparams.md)
-- [username](urlutils/1634527-username.md)
+- [hash](./urlutils/api-1631163-hash.md)
+- [host](./urlutils/api-1634066-host.md)
+- [hostname](./urlutils/api-1634101-hostname.md)
+- [href](./urlutils/api-1630323-href.md)
+- [origin](./urlutils/api-1630846-origin.md)
+- [password](./urlutils/api-1630591-password.md)
+- [pathname](./urlutils/api-1633193-pathname.md)
+- [port](./urlutils/api-1632339-port.md)
+- [protocol](./urlutils/api-1630173-protocol.md)
+- [search](./urlutils/api-1632827-search.md)
+- [searchParams](./urlutils/api-2871337-searchparams.md)
+- [username](./urlutils/api-1634527-username.md)
 ### Instance Methods
-- [toString](urlutils/1634384-tostring.md)
+- [toString](./urlutils/api-1634384-tostring.md)
 
 
 ---

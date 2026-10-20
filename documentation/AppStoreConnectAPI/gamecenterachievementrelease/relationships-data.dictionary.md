@@ -1,7 +1,8 @@
 # GameCenterAchievementRelease.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,15 +11,15 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementRelease.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterAchievementRelease.Relationships.GameCenterAchievement](gamecenterachievementrelease/relationships-data.dictionary/gamecenterachievement-data.dictionary.md)
-- [object GameCenterAchievementRelease.Relationships.GameCenterDetail](gamecenterachievementrelease/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
+- [object GameCenterAchievementRelease.Relationships.GameCenterAchievement](./relationships-data.dictionary/gamecenterachievement-data.dictionary.md)
+- [object GameCenterAchievementRelease.Relationships.GameCenterDetail](./relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
 
 ## Properties
 
@@ -27,7 +28,8 @@ object GameCenterAchievementRelease.Relationships
 
 ## See Also
 
-- [object GameCenterAchievementRelease.Attributes](gamecenterachievementrelease/attributes-data.dictionary.md)
+### Objects
+- [object GameCenterAchievementRelease.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a achievement resource.
 
 

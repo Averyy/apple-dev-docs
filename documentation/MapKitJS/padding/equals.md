@@ -1,7 +1,8 @@
 # equals(anotherPadding)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares whether two padding values are equal.
 
@@ -10,7 +11,7 @@ Compares whether two padding values are equal.
 
 ## Declaration
 
-```swift
+```
 equals(anotherPadding: Padding): boolean;
 ```
 

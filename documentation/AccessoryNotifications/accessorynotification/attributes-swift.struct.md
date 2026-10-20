@@ -1,7 +1,8 @@
 # AccessoryNotification.Attributes
 
 **Framework**: Accessory Notifications  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Attributes that display priority for a notification.
 
@@ -16,32 +17,33 @@ struct Attributes
 
 #### Overview
 
-Use these attributes to change the visual appearance of and add information about your notification. For guidance on whether to alert for a notification, see [`AlertingContext`](alertingcontext.md).
+Use these attributes to change the visual appearance of and add information about your notification. For guidance on whether to alert for a notification, see [`AlertingContext`](../alertingcontext.md).
 
 ## Topics
 
 ### Identifying attribute types
-- [static let critical: AccessoryNotification.Attributes](accessorynotification/attributes-swift.struct/critical.md)
+- [static let critical: AccessoryNotification.Attributes](./attributes-swift.struct/critical.md)
   An attribute that indicates a critical notification.
-- [static let priority: AccessoryNotification.Attributes](accessorynotification/attributes-swift.struct/priority.md)
+- [static let priority: AccessoryNotification.Attributes](./attributes-swift.struct/priority.md)
   An attribute that indicates a priority notification.
-- [static let timeSensitive: AccessoryNotification.Attributes](accessorynotification/attributes-swift.struct/timesensitive.md)
+- [static let timeSensitive: AccessoryNotification.Attributes](./attributes-swift.struct/timesensitive.md)
   An attribute that indicates a time-sensitive notification.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [let attributes: AccessoryNotification.Attributes](accessorynotification/attributes-swift.property.md)
+### Working with notification attributes
+- [let attributes: AccessoryNotification.Attributes](./attributes-swift.property.md)
   A set of attributes that indicate the notification’s priority level.
 
 

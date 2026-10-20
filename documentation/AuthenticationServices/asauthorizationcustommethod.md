@@ -1,7 +1,8 @@
 # ASAuthorizationCustomMethod
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The custom authorization method.
 
@@ -14,37 +15,42 @@ The custom authorization method.
 struct ASAuthorizationCustomMethod
 ```
 
+```c
+typedef NSString * ASAuthorizationCustomMethod;
+```
+
 #### Discussion
 
-Use [`ASAuthorizationCustomMethod`](asauthorizationcustommethod.md) to specify a type of custom sign-in in tvOS, like enabling the user to sign in manually or by restoring a purchase.
+Use [`ASAuthorizationCustomMethod`](./asauthorizationcustommethod.md) to specify a type of custom sign-in in tvOS, like enabling the user to sign in manually or by restoring a purchase.
 
 ## Topics
 
 ### Creating the Structure
-- [init(rawValue: String)](asauthorizationcustommethod/init(rawvalue:).md)
+- [init(rawValue: String)](./asauthorizationcustommethod/init%28rawvalue%29.md)
   Initializes the object with a custom authorization method.
 ### Getting the Properties
-- [static let videoSubscriberAccount: ASAuthorizationCustomMethod](asauthorizationcustommethod/videosubscriberaccount.md)
+- [static let videoSubscriberAccount: ASAuthorizationCustomMethod](./asauthorizationcustommethod/videosubscriberaccount.md)
   A type of authorization that uses a TV provider account to sign in.
-- [static let restorePurchase: ASAuthorizationCustomMethod](asauthorizationcustommethod/restorepurchase.md)
+- [static let restorePurchase: ASAuthorizationCustomMethod](./asauthorizationcustommethod/restorepurchase.md)
   A type of authorization that restores an in-app purchase to sign in.
-- [static let other: ASAuthorizationCustomMethod](asauthorizationcustommethod/other.md)
+- [static let other: ASAuthorizationCustomMethod](./asauthorizationcustommethod/other.md)
   A type of authorization that uses a custom sign-in method.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var customAuthorizationMethods: [ASAuthorizationCustomMethod]](asauthorizationcontroller/customauthorizationmethods.md)
+### Apple TV authentication
+- [var customAuthorizationMethods: [ASAuthorizationCustomMethod]](./asauthorizationcontroller/customauthorizationmethods.md)
   An array of custom authorization methods for the user to choose.
-- [func authorizationController(ASAuthorizationController, didCompleteWithCustomMethod: ASAuthorizationCustomMethod)](asauthorizationcontrollerdelegate/authorizationcontroller(_:didcompletewithcustommethod:).md)
+- [func authorizationController(ASAuthorizationController, didCompleteWithCustomMethod: ASAuthorizationCustomMethod)](./asauthorizationcontrollerdelegate/authorizationcontroller%28_,didcompletewithcustommethod%29.md)
   Informs the delegate when authorization completes, and specifies the custom method the user selected.
 
 

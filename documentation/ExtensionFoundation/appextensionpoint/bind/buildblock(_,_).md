@@ -1,7 +1,8 @@
 # buildBlock(_:_:)
 
 **Framework**: ExtensionFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 26.2+

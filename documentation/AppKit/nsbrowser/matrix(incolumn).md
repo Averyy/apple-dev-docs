@@ -1,17 +1,24 @@
 # matrix(inColumn:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the matrix located in the specified column.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.10
+
+> **Deprecated**: Use the item-based `NSBrowser` instead.
 
 ## Declaration
 
 ```swift
 func matrix(inColumn column: Int) -> NSMatrix?
+```
+
+```objc
+- (NSMatrix *) matrixInColumn:(NSInteger) column;
 ```
 
 #### Return Value
@@ -24,11 +31,12 @@ The matrix located in the column.
 
 ## See Also
 
-- [func column(of: NSMatrix) -> Int](nsbrowser/column(of:).md)
+### Deprecated methods
+- [func column(of: NSMatrix) -> Int](./column%28of%29.md)
   Returns the column number in which the given matrix is located.
-- [func matrixClass() -> AnyClass](nsbrowser/matrixclass.md)
+- [func matrixClass() -> AnyClass](./matrixclass%28%29.md)
   Returns the matrix class used in the browser’s columns.
-- [func setMatrixClass(AnyClass)](nsbrowser/setmatrixclass(_:).md)
+- [func setMatrixClass(AnyClass)](./setmatrixclass%28_%29.md)
   Sets the matrix class to be used in the browser’s columns.
 
 

@@ -1,7 +1,8 @@
 # requiredAuthorizations
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The authorization types you need to use the barcode detection provider.
 
@@ -16,7 +17,8 @@ static var requiredAuthorizations: [ARKitSession.AuthorizationType] { get }
 
 ## See Also
 
-- [static var isSupported: Bool](barcodedetectionprovider/issupported.md)
+### Type properties
+- [static var isSupported: Bool](./issupported.md)
   A Boolean value that determines whether a device supports the barcode detection provider.
 
 

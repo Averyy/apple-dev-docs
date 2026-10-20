@@ -2,6 +2,7 @@
 
 **Framework**: CoreAudioKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Called by the host application to obtain view state data from a custom Cocoa view.
@@ -13,6 +14,10 @@ Called by the host application to obtain view state data from a custom Cocoa vie
 
 ```swift
 unowned(unsafe) var customViewPersistentData: NSDictionary? { get set }
+```
+
+```objc
+@property (nonatomic, assign, nullable) NSDictionary<NSString *,id> * customViewPersistentData;
 ```
 
 #### Return Value

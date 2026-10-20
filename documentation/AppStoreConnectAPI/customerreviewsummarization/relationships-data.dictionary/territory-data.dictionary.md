@@ -1,7 +1,8 @@
 # CustomerReviewSummarization.Relationships.Territory
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationship linking a review summarization to the App Store territory it covers.
 
@@ -10,14 +11,14 @@ The relationship linking a review summarization to the App Store territory it co
 
 ## Declaration
 
-```swift
+```
 object CustomerReviewSummarization.Relationships.Territory
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object CustomerReviewSummarization.Relationships.Territory.Data](customerreviewsummarization/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary.md)
+- [object CustomerReviewSummarization.Relationships.Territory.Data](./territory-data.dictionary/data-data.dictionary.md)
   The resource linkage data identifying the territory associated with a review summarization.
 
 ## Properties

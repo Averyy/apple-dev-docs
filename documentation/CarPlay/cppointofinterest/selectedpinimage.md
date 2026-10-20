@@ -1,7 +1,8 @@
 # selectedPinImage
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var selectedPinImage: UIImage? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) UIImage * selectedPinImage;
 ```
 
 

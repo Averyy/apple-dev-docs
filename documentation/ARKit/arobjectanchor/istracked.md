@@ -1,7 +1,8 @@
 # isTracked
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the anchor is currently being tracked.
 
@@ -13,6 +14,10 @@ A Boolean value indicating whether the anchor is currently being tracked.
 
 ```swift
 var isTracked: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL isTracked;
 ```
 
 

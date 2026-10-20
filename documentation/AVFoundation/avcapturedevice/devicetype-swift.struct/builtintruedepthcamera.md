@@ -1,7 +1,8 @@
 # builtInTrueDepthCamera
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A device that consists of two cameras, one Infrared and one YUV.
 
@@ -17,19 +18,24 @@ A device that consists of two cameras, one Infrared and one YUV.
 static let builtInTrueDepthCamera: AVCaptureDevice.DeviceType
 ```
 
+```c
+extern AVCaptureDeviceType const AVCaptureDeviceTypeBuiltInTrueDepthCamera;
+```
+
 ## Mentions
 
-- [Capturing photos with depth](capturing-photos-with-depth.md)
+- [Capturing photos with depth](../../capturing-photos-with-depth.md)
 
 #### Discussion
 
 The infrared camera provides high-quality depth information that’s synchronized and perspective corrected to the frame the YUV camera produces. While the resolution of the depth data and YUV frames may differ, their field of view and aspect ratio always match.
 
-> ❗ **Important**:  To obtain a device of this type, use the [`default(_:for:position:)`](avcapturedevice/default(_:for:position:).md) method or the [`AVCaptureDevice.DiscoverySession`](avcapturedevice/discoverysession.md) class. Other methods don’t discover devices of this type.
+> ❗ **Important**:  To obtain a device of this type, use the [`default(_:for:position:)`](../default%28_,for,position%29.md) method or the [`AVCaptureDevice.DiscoverySession`](../discoverysession.md) class. Other methods don’t discover devices of this type.
 
 ## See Also
 
-- [static let builtInLiDARDepthCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtinlidardepthcamera.md)
+### Depth sensing
+- [static let builtInLiDARDepthCamera: AVCaptureDevice.DeviceType](./builtinlidardepthcamera.md)
   A device that consists of two cameras, one LiDAR and one YUV.
 
 

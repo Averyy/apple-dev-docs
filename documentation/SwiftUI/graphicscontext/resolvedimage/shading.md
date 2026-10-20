@@ -1,7 +1,8 @@
 # shading
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional shading to fill the image with.
 
@@ -22,13 +23,14 @@ var shading: GraphicsContext.Shading?
 
 #### Discussion
 
-The value of this property defaults to [`foreground`](graphicscontext/shading/foreground.md) for template images, and to `nil` otherwise.
+The value of this property defaults to [`foreground`](../shading/foreground.md) for template images, and to `nil` otherwise.
 
 ## See Also
 
-- [var size: CGSize](graphicscontext/resolvedimage/size.md)
+### Getting the image properties
+- [var size: CGSize](./size.md)
   The size of the image.
-- [let baseline: CGFloat](graphicscontext/resolvedimage/baseline.md)
+- [let baseline: CGFloat](./baseline.md)
   The distance from the top of the image to its baseline.
 
 

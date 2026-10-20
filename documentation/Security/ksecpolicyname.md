@@ -1,7 +1,8 @@
 # kSecPolicyName
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A name (`CFStringRef`) that the certificate must match to satisfy this policy. For SSL/TLS, this specifies the server name which must match the common name of the certificate. For S/MIME, this specifies the RFC 822 email address.
 
@@ -18,6 +19,10 @@ A name (`CFStringRef`) that the certificate must match to satisfy this policy. F
 
 ```swift
 let kSecPolicyName: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyName;
 ```
 
 

@@ -1,7 +1,8 @@
 # newTexture(texture:options:)
 
 **Framework**: MetalKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Synchronously loads image data and creates a Metal texture from the specified Model I/O texture.
 
@@ -19,6 +20,10 @@ Synchronously loads image data and creates a Metal texture from the specified Mo
 func newTexture(texture: MDLTexture, options: [MTKTextureLoader.Option : Any]? = nil) throws -> any MTLTexture
 ```
 
+```objc
+- (id<MTLTexture>) newTextureWithMDLTexture:(MDLTexture *) texture options:(NSDictionary<NSString *,id> *) options error:(NSError **) error;
+```
+
 #### Return Value
 
 A fully loaded and initialized Metal texture, or `nil` if an error occurred.
@@ -30,7 +35,8 @@ A fully loaded and initialized Metal texture, or `nil` if an error occurred.
 
 ## See Also
 
-- [func newTexture(texture: MDLTexture, options: [MTKTextureLoader.Option : Any]?, completionHandler: ((any MTLTexture)?, (any Error)?) -> Void)](mtktextureloader/newtexture(texture:options:completionhandler:).md)
+### Loading Textures from Model I/O Representations
+- [func newTexture(texture: MDLTexture, options: [MTKTextureLoader.Option : Any]?, completionHandler: ((any MTLTexture)?, (any Error)?) -> Void)](./newtexture%28texture,options,completionhandler%29.md)
   Asynchronously loads image data and creates a Metal texture from the specified Model I/O texture.
 
 

@@ -1,6 +1,7 @@
 # Creating engaging challenges from leaderboards
 
-**Framework**: GameKit
+**Framework**: GameKit  
+**Role**: Article
 
 Encourage friendly competition by adding challenges to your game.
 
@@ -8,27 +9,27 @@ Encourage friendly competition by adding challenges to your game.
 
 Challenges encourage your players to invite their friends into your game for friendly competitions in score-based rounds. Players see your challenges promoted throughout the Games app and other places around the OS as suggestions for enjoying their games with friends. They can invite their Game Center friends and anyone from their contacts, see scores appear in real-time, receive notifications at key moments until the game crowns a winner, and have a rematch. GameKit builds challenges on top of leaderboards, turning single-player game activities into a social experience players can share with their friends.
 
-![An illustration that shows a variety of challenges.](/images/com.apple.gamekit/creating-engaging-challenges-from-leaderboards-hero@2x.png)
+![An illustration that shows a variety of challenges.](https://developer.apple.com/tutorials/images/com.apple.gamekit/creating-engaging-challenges-from-leaderboards-hero@2x.png)
 
 To adopt challenges, you just need an active Game Center leaderboard. When you associate a leaderboard with a challenge, for players participating in the challenge, the system automatically submits the same scores submitted for that leaderboard.
 
-To learn more about the Games app, see [`Engage players with the Games app`](https://developer.apple.comhttps://developer.apple.com/wwdc25/215). To learn more about leaderboards that work well for challenges, see [`Choosing a leaderboard for your challenges`](choosing-a-leaderboard-for-your-challenges.md).
+To learn more about the Games app, see [Engage players with the Games app](https://developer.apple.com/wwdc25/215). To learn more about leaderboards that work well for challenges, see [Choosing a leaderboard for your challenges](./choosing-a-leaderboard-for-your-challenges.md).
 
-#### Configure Challenges
+#### Configure challenges
 
-Configure challenges in Xcode before accessing them in your code. When you’re ready to deploy your configuration, sync your updates with App Store Connect. For more information about configuring and testing Game Center features, see [`Initializing and configuring Game Center`](initializing-and-configuring-game-center.md).
+Configure challenges in Xcode before accessing them in your code. When you’re ready to deploy your configuration, sync your updates with App Store Connect. For more information about configuring and testing Game Center features, see [Initializing and configuring Game Center](./initializing-and-configuring-game-center.md).
 
 When you configure a challenge, you specify details like the leaderboard with which to associate it and whether it’s repeatable. You also configure localization details for the challenge, like the display name.
 
-![A screenshot of the GameKit configuration in Xcode. The configuration includes a classic leaderboard named ](/images/com.apple.gamekit/xcode-challenge-fastest-clear-time@2x.png)
+![A screenshot of the GameKit configuration in Xcode. The configuration includes a classic leaderboard named ](https://developer.apple.com/tutorials/images/com.apple.gamekit/xcode-challenge-fastest-clear-time@2x.png)
 
-If you make changes to your game, like adding a new leaderboard or adding a deep link using activities, you can configure a minimum version for a challenge. When you do, the Games app prompts a person to upgrade to the appropriate version of your game to participate in the challenge. For more information, see the “Set challenges minimum version” section in [`Manage Challenges`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-game-center/manage-challenges).
+If you make changes to your game, like adding a new leaderboard or adding a deep link using activities, you can configure a minimum version for a challenge. When you do, the Games app prompts a person to upgrade to the appropriate version of your game to participate in the challenge. For more information, see the “Set challenges minimum version” section in [Manage Challenges](https://developer.apple.com/help/app-store-connect/configure-game-center/manage-challenges).
 
-To learn more about the information you enter in App Store Connect, see [`Challenge properties`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/challenges).
+To learn more about the information you enter in App Store Connect, see [Challenge properties](https://developer.apple.com/help/app-store-connect/reference/challenges).
 
-#### Report Challenge Progress
+#### Report challenge progress
 
-Players can use the Games app to create challenges and invite their friends to play. After a player creates a challenge, you use the standard reporting methods — [`submitScore(_:context:player:completionHandler:)`](gkleaderboard/submitscore(_:context:player:completionhandler:).md) — for reporting updates to the leaderboard you associate with the challenge. For more information about getting and submitting leaderboard scores, see [`Encourage progress and competition with leaderboards`](encourage-progress-and-competition-with-leaderboards.md).
+Players can use the Games app to create challenges and invite their friends to play. After a player creates a challenge, you use the standard reporting methods — [`submitScore(_:context:player:completionHandler:)`](./gkleaderboard/submitscore%28_,context,player,completionhandler%29.md) — for reporting updates to the leaderboard you associate with the challenge. For more information about getting and submitting leaderboard scores, see [Encourage progress and competition with leaderboards](./encourage-progress-and-competition-with-leaderboards.md).
 
 If you have a leaderboard that only tracks a player’s personal best or all-time score, you can still use it for a challenge. Submit the most recent score with every attempt, but set the leaderboard’s *Score Submission Type* to *Best Score*. This setting only displays the player’s best score on the leaderboard, but also allows challenges to count the player’s most recent score submissions during the course of the challenge.
 
@@ -41,9 +42,9 @@ if try await challengeDefinition.hasActiveChallenges {
 }
 ```
 
-#### Get the Object That Represents the Challenge
+#### Get the object that represents the challenge
 
-Use `GameKit` when you want to help facilitate challenge creation through your game. A [`GKChallengeDefinition`](gkchallengedefinition.md) class contains the static metadata you configure in Xcode or App Store Connect. Use `GKChallengeDefinition.all` to load all of the challenges that you define for a game:
+Use `GameKit` when you want to help facilitate challenge creation through your game. A [`GKChallengeDefinition`](./gkchallengedefinition.md) class contains the static metadata you configure in Xcode or App Store Connect. Use `GKChallengeDefinition.all` to load all of the challenges that you define for a game:
 
 ```swift
 // Load all challenges for a game.
@@ -58,25 +59,25 @@ let challenge = challengeDefinitions.first(where: { $0.identifier == challengeID
 let leaderboard = challengeDefinitions.first(where: { $0.leaderboard?.baseLeaderboardID == leaderboardID })
 ```
 
-#### Create a Challenge
+#### Create a challenge
 
-If you don’t need to create a custom UI for challenge selection, use [`triggerForPlayTogether(handler:)`](gkaccesspoint/triggerforplaytogether(handler:).md) to present the default system UI that shows the available challenges for your game. After a player selects a challenge from the list, the view to create a challenge appears.
+If you don’t need to create a custom UI for challenge selection, use [`triggerForPlayTogether(handler:)`](./gkaccesspoint/triggerforplaytogether%28handler%29.md) to present the default system UI that shows the available challenges for your game. After a player selects a challenge from the list, the view to create a challenge appears.
 
 ```swift
 // Show the system UI to show a list of available challenges the player selects from.
 await GKAccessPoint.shared.triggerForPlayTogether()
 ```
 
-You can display the available challenges in your UI by fetching all of the challenge definitions. After a player selects the challenge they want to create, call [`trigger(challengeDefinitionID:handler:)`](gkaccesspoint/trigger(challengedefinitionid:handler:).md) with the challenge identifier. This UI gives the player a familiar experience to create a challenge from. When determining where to present the system UI for a challenge, consider placing entry points at contextually relevant locations in your game.
+You can display the available challenges in your UI by fetching all of the challenge definitions. After a player selects the challenge they want to create, call [`trigger(challengeDefinitionID:handler:)`](./gkaccesspoint/trigger%28challengedefinitionid,handler%29.md) with the challenge identifier. This UI gives the player a familiar experience to create a challenge from. When determining where to present the system UI for a challenge, consider placing entry points at contextually relevant locations in your game.
 
 ```swift
 // Show the system UI to create a challenge based on the configuration.
 await GKAccessPoint.shared.trigger(challengeDefinitionID: challenge.identifier)
 ```
 
-#### Integrate Your Challenge with Activities
+#### Integrate your challenge with activities
 
-When you create an activity, you can associate it with a leaderboard that you use for challenges. When a player receives a challenge notification on their device, the system uses a deep link to help you navigate them into the experience. Use [`GKGameActivityListener`](gkgameactivitylistener.md) to observe and receive activity events from the system.
+When you create an activity, you can associate it with a leaderboard that you use for challenges. When a player receives a challenge notification on their device, the system uses a deep link to help you navigate them into the experience. Use [`GKGameActivityListener`](./gkgameactivitylistener.md) to observe and receive activity events from the system.
 
 When a player chooses to engage with your challenge, the system navigates them directly to it with your help. For example, to configure a daily mini crossword challenge, perform the following steps:
 
@@ -85,9 +86,9 @@ When a player chooses to engage with your challenge, the system navigates them d
 3. Configure the challenge with the recurring leaderboard and set it as not repeatable.
 4. Handle the activity event in your game to navigate the player to the right place when they engage with the challenge.
 
-To learn more about adding activities to your game, and deep-linking to them, see [`Creating activities for your game`](creating-activities-for-your-game.md)
+To learn more about adding activities to your game, and deep-linking to them, see [Creating activities for your game](./creating-activities-for-your-game.md)
 
-#### Validate Your Challenge Integration
+#### Validate your challenge integration
 
 When you submit a score to a challenge leaderboard, it consumes a challenge attempt, so it’s important to handle score submissions with care and perform score submissions at the right moments in your code. When you use the leaderboard APIs, consider the following when validating your integration:
 
@@ -99,7 +100,7 @@ When you submit a score to a challenge leaderboard, it consumes a challenge atte
 - Rely on your leaderboard configuration to resolve a player’s personal best score instead of submitting their personal best.
 - Use leaderboards to track attempts — not real-time scores — instead of submitting scores for each point a player earns.
 
-Make sure to call [`submitScore(_:context:player:completionHandler:)`](gkleaderboard/submitscore(_:context:player:completionhandler:).md) during relevant moments of gameplay instead of when the player starts the game or navigates menus. Game Center handles error recovery and offline score submission, so don’t submit cores during your game’s startup.
+Make sure to call [`submitScore(_:context:player:completionHandler:)`](./gkleaderboard/submitscore%28_,context,player,completionhandler%29.md) during relevant moments of gameplay instead of when the player starts the game or navigates menus. Game Center handles error recovery and offline score submission, so don’t submit cores during your game’s startup.
 
 When a player wants to engage with a challenge that you associate with an activity:
 
@@ -110,11 +111,12 @@ When a player wants to engage with a challenge that you associate with an activi
 
 ## See Also
 
-- [Choosing a leaderboard for your challenges](choosing-a-leaderboard-for-your-challenges.md)
+### Challenges
+- [Choosing a leaderboard for your challenges](./choosing-a-leaderboard-for-your-challenges.md)
   Understand what gameplay works well when configuring challenges in your game.
-- [class GKChallengeDefinition](gkchallengedefinition.md)
+- [class GKChallengeDefinition](./gkchallengedefinition.md)
   An object that represents the static metadata you define for the challenge.
-- [GKShowChallengeBanners](../bundleresources/information-property-list/gkshowchallengebanners.md)
+- [GKShowChallengeBanners](../BundleResources/information-property-list/gkshowchallengebanners.md)
   A Boolean value that indicates whether GameKit can display challenge banners in a game.
 
 

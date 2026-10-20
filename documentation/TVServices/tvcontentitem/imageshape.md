@@ -1,12 +1,15 @@
 # imageShape
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The intended aspect ratio or shape of the content image.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 13.0
+
+> **Deprecated**: TVContentItem has been replaced by TVTopShelfItem
 
 ## Declaration
 
@@ -14,31 +17,36 @@ The intended aspect ratio or shape of the content image.
 var imageShape: TVContentItemImageShape { get set }
 ```
 
+```objc
+@property (nonatomic) TVContentItemImageShape imageShape;
+```
+
 #### Discussion
 
-When the TV Content object is being used to represent Top Shelf items, then the allowed values for this property depend on the [`topShelfStyle`](tvtopshelfprovider/topshelfstyle.md) property of the object that implements the TV TopShelf extension. For more information, see [`TVTopShelfProvider`](tvtopshelfprovider.md).
+When the TV Content object is being used to represent Top Shelf items, then the allowed values for this property depend on the [`topShelfStyle`](../tvtopshelfprovider/topshelfstyle.md) property of the object that implements the TV TopShelf extension. For more information, see [`TVTopShelfProvider`](../tvtopshelfprovider.md).
 
-If the [`topShelfStyle`](tvtopshelfprovider/topshelfstyle.md) value is [`TVTopShelfContentStyle.inset`](tvtopshelfcontentstyle/inset.md), the valid values of this property are:
+If the [`topShelfStyle`](../tvtopshelfprovider/topshelfstyle.md) value is [`TVTopShelfContentStyle.inset`](../tvtopshelfcontentstyle/inset.md), the valid values of this property are:
 
-- [`TVContentItemImageShape.extraWide`](tvcontentitemimageshape/extrawide.md)
+- [`TVContentItemImageShape.extraWide`](../tvcontentitemimageshape/extrawide.md)
 
-If the [`topShelfStyle`](tvtopshelfprovider/topshelfstyle.md) value is [`TVTopShelfContentStyle.sectioned`](tvtopshelfcontentstyle/sectioned.md), the valid values are:
+If the [`topShelfStyle`](../tvtopshelfprovider/topshelfstyle.md) value is [`TVTopShelfContentStyle.sectioned`](../tvtopshelfcontentstyle/sectioned.md), the valid values are:
 
-- [`TVContentItemImageShape.poster`](tvcontentitemimageshape/poster.md)
-- [`TVContentItemImageShape.square`](tvcontentitemimageshape/square.md)
-- [`TVContentItemImageShape.HDTV`](tvcontentitemimageshape/hdtv.md)
+- [`TVContentItemImageShape.poster`](../tvcontentitemimageshape/poster.md)
+- [`TVContentItemImageShape.square`](../tvcontentitemimageshape/square.md)
+- [`TVContentItemImageShape.HDTV`](../tvcontentitemimageshape/hdtv.md)
 
 If the value of this property is not valid for the current Top Shelf style, the system reserves the right to scale the image in any way.
 
 ## See Also
 
-- [var creationDate: Date?](tvcontentitem/creationdate.md)
+### Inspecting the Content Properties
+- [var creationDate: Date?](./creationdate.md)
   The date when the content item was created, or the date when it was first broadcast, or some other kind of origination date.
-- [var duration: NSNumber?](tvcontentitem/duration.md)
+- [var duration: NSNumber?](./duration.md)
   The amount of time required to play the media to completion.
-- [var expirationDate: Date?](tvcontentitem/expirationdate.md)
+- [var expirationDate: Date?](./expirationdate.md)
   The date when the user will no longer be able to access the item.
-- [enum TVContentItemImageShape](tvcontentitemimageshape.md)
+- [enum TVContentItemImageShape](../tvcontentitemimageshape.md)
   An enumerated type that identifies the shape in which the content item should be displayed.
 
 

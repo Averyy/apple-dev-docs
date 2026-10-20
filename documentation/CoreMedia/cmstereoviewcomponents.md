@@ -1,7 +1,8 @@
 # CMStereoViewComponents
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants describing the stereo views contained within a buffer or channel.
 
@@ -20,6 +21,10 @@ Constants describing the stereo views contained within a buffer or channel.
 struct CMStereoViewComponents
 ```
 
+```c
+enum CMStereoViewComponents : uint64_t;
+```
+
 #### Overview
 
 When no stereo view components are available on a video track, even if it’s encoded for multiview video, any video content in the associated data is single-track 2D.
@@ -27,42 +32,43 @@ When no stereo view components are available on a video track, even if it’s en
 ## Topics
 
 ### Eye Layer
-- [static var leftEye: CMStereoViewComponents](cmstereoviewcomponents/lefteye.md)
+- [static var leftEye: CMStereoViewComponents](./cmstereoviewcomponents/lefteye.md)
   The stereo video track includes a left eye layer.
-- [static var rightEye: CMStereoViewComponents](cmstereoviewcomponents/righteye.md)
+- [static var rightEye: CMStereoViewComponents](./cmstereoviewcomponents/righteye.md)
   The stereo video track includes a right eye layer.
 ### Initializers
-- [init(rawValue: UInt64)](cmstereoviewcomponents/init(rawvalue:).md)
+- [init(rawValue: UInt64)](./cmstereoviewcomponents/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [CMMetadata](cmmetadata.md)
+### Metadata
+- [CMMetadata](./cmmetadata.md)
   The APIs for working with the framework’s Metadata Identifier Services and Metadata Data Type Registry.
-- [CMTag](cmtag-api.md)
+- [CMTag](./cmtag-api.md)
   Types and interfaces for working with Core Media tags.
-- [class CMTag](cmtag-swift.class.md)
+- [class CMTag](./cmtag-swift.class.md)
   A tag to set additional metadata on media buffers.
-- [class CMTypedTag](cmtypedtag.md)
+- [class CMTypedTag](./cmtypedtag.md)
   A tag to set additional metadata on media buffers, with an associated Swift type for its value.
-- [CMTagCollection](cmtagcollection.md)
+- [CMTagCollection](./cmtagcollection.md)
   Objective-C types and interfaces for working with Core Media tag collections.
-- [enum CMProjectionType](cmprojectiontype.md)
+- [enum CMProjectionType](./cmprojectiontype.md)
   Constants describing the projection surface information in a 3D video buffer or channel.
-- [struct CMStereoViewInterpretationOptions](cmstereoviewinterpretationoptions.md)
+- [struct CMStereoViewInterpretationOptions](./cmstereoviewinterpretationoptions.md)
   Create a set of stereo view interpretation options from a constant.
-- [enum CMPackingType](cmpackingtype.md)
+- [enum CMPackingType](./cmpackingtype.md)
   The type of packing within each video frame, if any.
 
 

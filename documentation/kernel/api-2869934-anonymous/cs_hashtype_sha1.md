@@ -1,14 +1,15 @@
 # CS_HASHTYPE_SHA1
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 CS_HASHTYPE_SHA1 = 1
 ```
 

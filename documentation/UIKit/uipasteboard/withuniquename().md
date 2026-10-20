@@ -1,7 +1,8 @@
 # withUniqueName()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an app pasteboard that you identify by a unique system-generated name.
 
@@ -17,21 +18,26 @@ Returns an app pasteboard that you identify by a unique system-generated name.
 class func withUniqueName() -> UIPasteboard
 ```
 
+```objc
++ (UIPasteboard *) pasteboardWithUniqueName;
+```
+
 #### Return Value
 
 An app pasteboard object with a unique name.
 
 #### Discussion
 
-Obtain the value of the [`name`](uipasteboard/name-swift.property.md) property to discover the name of the returned pasteboard. App pasteboards returned by this method are not persistent, existing only until the app quits. Starting in iOS 10, persistent named pasteboards are deprecated. Instead use a shared container, as described in the overview for the [`UIPasteboard`](uipasteboard.md) class.
+Obtain the value of the [`name`](./name-swift.property.md) property to discover the name of the returned pasteboard. App pasteboards returned by this method are not persistent, existing only until the app quits. Starting in iOS 10, persistent named pasteboards are deprecated. Instead use a shared container, as described in the overview for the [`UIPasteboard`](../uipasteboard.md) class.
 
 ## See Also
 
-- [class var general: UIPasteboard](uipasteboard/general.md)
+### Getting and removing pasteboards
+- [class var general: UIPasteboard](./general.md)
   The systemwide general pasteboard, which you use for general copy-paste operations.
-- [init?(name: UIPasteboard.Name, create: Bool)](uipasteboard/init(name:create:).md)
+- [init?(name: UIPasteboard.Name, create: Bool)](./init%28name,create%29.md)
   Returns a pasteboard that you identify by name, optionally creating it if it doesn’t exist.
-- [class func remove(withName: UIPasteboard.Name)](uipasteboard/remove(withname:).md)
+- [class func remove(withName: UIPasteboard.Name)](./remove%28withname%29.md)
   Invalidates the designated app pasteboard.
 
 

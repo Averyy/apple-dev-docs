@@ -1,7 +1,8 @@
 # fillTexture
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The texture used to fill the shape.
 
@@ -20,19 +21,24 @@ The texture used to fill the shape.
 var fillTexture: SKTexture? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) SKTexture * fillTexture;
+```
+
 ## Mentions
 
-- [Controlling Shape Drawing with Shaders](controlling-shape-drawing-with-shaders.md)
+- [Controlling Shape Drawing with Shaders](../controlling-shape-drawing-with-shaders.md)
 
 #### Discussion
 
-The default value is `nil`. If a fill texture is specified, the shape node is rendered using that texture blended with the [`fillColor`](skshapenode/fillcolor.md).
+The default value is `nil`. If a fill texture is specified, the shape node is rendered using that texture blended with the [`fillColor`](./fillcolor.md).
 
-> ❗ **Important**:  The default fill color of a [`SKShapeNode`](skshapenode.md) is `SKColor.clear`. Since the fill texture is blended with the fill color, [`fillColor`](skshapenode/fillcolor.md) needs to be set to a non-clear color for it to display. For example, to display the texture without any color blend effects, set [`fillColor`](skshapenode/fillcolor.md) to `SKColor.white`.
+> ❗ **Important**:  The default fill color of a [`SKShapeNode`](../skshapenode.md) is `SKColor.clear`. Since the fill texture is blended with the fill color, [`fillColor`](./fillcolor.md) needs to be set to a non-clear color for it to display. For example, to display the texture without any color blend effects, set [`fillColor`](./fillcolor.md) to `SKColor.white`.
 
 ## See Also
 
-- [var fillColor: UIColor](skshapenode/fillcolor.md)
+### Filling a Shape
+- [var fillColor: UIColor](./fillcolor.md)
   The color used to fill the shape.
 
 

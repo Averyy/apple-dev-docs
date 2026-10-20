@@ -1,18 +1,19 @@
 # reserved
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A reserved field whose value is always zero.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ A reserved field whose value is always zero.
 var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8)
 ```
 
+```c
+uint8_t reserved[5];
+```
+
 ## See Also
 
-- [var manufacturer: (UInt8, UInt8, UInt8)](midicideviceidentification/manufacturer.md)
+### Configuring Device Identification
+- [var manufacturer: (UInt8, UInt8, UInt8)](./manufacturer.md)
   The MIDI System Exclusive (SysEx) ID of the device manufacturer.
-- [var modelNumber: (UInt8, UInt8)](midicideviceidentification/modelnumber.md)
+- [var modelNumber: (UInt8, UInt8)](./modelnumber.md)
   The device model number.
-- [var family: (UInt8, UInt8)](midicideviceidentification/family.md)
+- [var family: (UInt8, UInt8)](./family.md)
   The group of familes to which the device belongs.
-- [var revisionLevel: (UInt8, UInt8, UInt8, UInt8)](midicideviceidentification/revisionlevel.md)
+- [var revisionLevel: (UInt8, UInt8, UInt8, UInt8)](./revisionlevel.md)
   The revision number of the device model number.
 
 

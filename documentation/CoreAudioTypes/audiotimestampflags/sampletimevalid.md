@@ -1,7 +1,8 @@
 # sampleTimeValid
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that indicates that the sample frame time is valid.
 
@@ -20,17 +21,22 @@ A flag that indicates that the sample frame time is valid.
 static var sampleTimeValid: AudioTimeStampFlags { get }
 ```
 
+```c
+kAudioTimeStampSampleTimeValid
+```
+
 ## See Also
 
-- [static var hostTimeValid: AudioTimeStampFlags](audiotimestampflags/hosttimevalid.md)
+### Type Properties
+- [static var hostTimeValid: AudioTimeStampFlags](./hosttimevalid.md)
   A flag that indicates that the host time is valid.
-- [static var rateScalarValid: AudioTimeStampFlags](audiotimestampflags/ratescalarvalid.md)
+- [static var rateScalarValid: AudioTimeStampFlags](./ratescalarvalid.md)
   A flag that indicates that the rate scalar is valid.
-- [static var sampleHostTimeValid: AudioTimeStampFlags](audiotimestampflags/samplehosttimevalid.md)
+- [static var sampleHostTimeValid: AudioTimeStampFlags](./samplehosttimevalid.md)
   A flag that indicates that the sample frame time and the host time are valid.
-- [static var smpteTimeValid: AudioTimeStampFlags](audiotimestampflags/smptetimevalid.md)
+- [static var smpteTimeValid: AudioTimeStampFlags](./smptetimevalid.md)
   A flag that indicates that the SMPTE time is valid.
-- [static var wordClockTimeValid: AudioTimeStampFlags](audiotimestampflags/wordclocktimevalid.md)
+- [static var wordClockTimeValid: AudioTimeStampFlags](./wordclocktimevalid.md)
   A flag that indicates that the word clock time is valid.
 
 

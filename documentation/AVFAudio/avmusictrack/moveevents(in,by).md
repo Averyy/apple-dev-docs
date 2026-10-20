@@ -1,7 +1,8 @@
 # moveEvents(in:by:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves the beat location of all events in the given beat range by the amount you specify.
 
@@ -19,6 +20,10 @@ Moves the beat location of all events in the given beat range by the amount you 
 func moveEvents(in range: AVBeatRange, by beatAmount: AVMusicTimeStamp)
 ```
 
+```objc
+- (void) moveEventsInRange:(AVBeatRange) range byAmount:(AVMusicTimeStamp) beatAmount;
+```
+
 ## Parameters
 
 - `range`: The range of beats.
@@ -26,9 +31,10 @@ func moveEvents(in range: AVBeatRange, by beatAmount: AVMusicTimeStamp)
 
 ## See Also
 
-- [func addEvent(AVMusicEvent, at: AVMusicTimeStamp)](avmusictrack/addevent(_:at:).md)
+### Adding and clearing events
+- [func addEvent(AVMusicEvent, at: AVMusicTimeStamp)](./addevent%28_,at%29.md)
   Adds a music event to a track at the time you specify.
-- [func clearEvents(in: AVBeatRange)](avmusictrack/clearevents(in:).md)
+- [func clearEvents(in: AVBeatRange)](./clearevents%28in%29.md)
   Removes all events in the given beat range from the music track.
 
 

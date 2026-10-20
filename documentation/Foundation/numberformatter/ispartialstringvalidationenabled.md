@@ -1,7 +1,8 @@
 # isPartialStringValidationEnabled
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines whether partial string validation is enabled for the receiver.
 
@@ -18,6 +19,10 @@ Determines whether partial string validation is enabled for the receiver.
 
 ```swift
 var isPartialStringValidationEnabled: Bool { get set }
+```
+
+```objc
+@property (getter=isPartialStringValidationEnabled) BOOL partialStringValidationEnabled;
 ```
 
 

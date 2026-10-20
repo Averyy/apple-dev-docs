@@ -1,7 +1,8 @@
 # defaultItemIdentifiers
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A required list of identifiers for items that you want to appear in the Touch Bar after instantiating it.
 
@@ -17,32 +18,38 @@ A required list of identifiers for items that you want to appear in the Touch Ba
 var defaultItemIdentifiers: [NSTouchBarItem.Identifier] { get set }
 ```
 
+```objc
+@property (copy) NSArray<NSString *> * defaultItemIdentifiers;
+```
+
 #### Discussion
 
-Always specify this property for an [`NSTouchBar`](nstouchbar.md) object, even if you elect to make the bar noncustomizable. The system:
+Always specify this property for an [`NSTouchBar`](../nstouchbar.md) object, even if you elect to make the bar noncustomizable. The system:
 
 - Shows this list’s items by default when the system displays the bar.
-- Includes a preconfigured bar, containing these items, in the associated customization UI (when you have assigned the bar a [`customizationIdentifier`](nstouchbar/customizationidentifier-swift.property.md) property value); the user can drag the default bar into the Touch Bar, should they want to return to the default configuration.
+- Includes a preconfigured bar, containing these items, in the associated customization UI (when you have assigned the bar a [`customizationIdentifier`](./customizationidentifier-swift.property.md) property value); the user can drag the default bar into the Touch Bar, should they want to return to the default configuration.
 
 The system archives this property.
 
 ## See Also
 
-- [var customizationIdentifier: NSTouchBar.CustomizationIdentifier?](nstouchbar/customizationidentifier-swift.property.md)
+### Related Documentation
+- [var customizationIdentifier: NSTouchBar.CustomizationIdentifier?](./customizationidentifier-swift.property.md)
   A globally unique string that makes the Touch Bar eligible for user customization.
-- [var customizationRequiredItemIdentifiers: [NSTouchBarItem.Identifier]](nstouchbar/customizationrequireditemidentifiers.md)
+- [var customizationRequiredItemIdentifiers: [NSTouchBarItem.Identifier]](./customizationrequireditemidentifiers.md)
   An optional list of identifiers for items you want to always appear in the Touch Bar and which the user can’t remove during customization.
-- [var customizationAllowedItemIdentifiers: [NSTouchBarItem.Identifier]](nstouchbar/customizationalloweditemidentifiers.md)
+- [var customizationAllowedItemIdentifiers: [NSTouchBarItem.Identifier]](./customizationalloweditemidentifiers.md)
   A list of identifiers for items to show in the Touch Bar’s customization UI.
-- [var itemIdentifiers: [NSTouchBarItem.Identifier]](nstouchbar/itemidentifiers.md)
+- [var itemIdentifiers: [NSTouchBarItem.Identifier]](./itemidentifiers.md)
   The list of identifiers for the current items in the Touch Bar.
-- [var delegate: (any NSTouchBarDelegate)?](nstouchbar/delegate.md)
+### Providing bar items
+- [var delegate: (any NSTouchBarDelegate)?](./delegate.md)
   The delegate that provides items to the Touch Bar.
-- [var templateItems: Set<NSTouchBarItem>](nstouchbar/templateitems.md)
+- [var templateItems: Set<NSTouchBarItem>](./templateitems.md)
   The primary source of items that the Touch Bar uses to fill its private items array, unless you provide items using a delegate.
-- [var principalItemIdentifier: NSTouchBarItem.Identifier?](nstouchbar/principalitemidentifier.md)
+- [var principalItemIdentifier: NSTouchBarItem.Identifier?](./principalitemidentifier.md)
   The identifier of an item you want the system to center in the Touch Bar.
-- [var escapeKeyReplacementItemIdentifier: NSTouchBarItem.Identifier?](nstouchbar/escapekeyreplacementitemidentifier.md)
+- [var escapeKeyReplacementItemIdentifier: NSTouchBarItem.Identifier?](./escapekeyreplacementitemidentifier.md)
   The identifier of an item that replaces the system-provided button in the Touch Bar.
 
 

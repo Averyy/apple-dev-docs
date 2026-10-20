@@ -1,7 +1,8 @@
 # CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.LensDomain
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies the kind of lens
 
@@ -23,17 +24,17 @@ enum LensDomain
 ## Topics
 
 ### Enumeration Cases
-- [CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.LensDomain.color](cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/lensdomain/color.md)
+- [CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.LensDomain.color](./lensdomain/color.md)
   Camera lense which captures color data.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [Hashable](../../../../../Swift/hashable.md)
+- [RawRepresentable](../../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 
 
 ---

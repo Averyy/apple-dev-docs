@@ -1,7 +1,8 @@
 # SRDeviceUsageReport.NotificationUsage
 
 **Framework**: SensorKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes notification frequency and the manner in which the user interacts with notifications.
 
@@ -16,37 +17,42 @@ An object that describes notification frequency and the manner in which the user
 class NotificationUsage
 ```
 
+```objc
+@interface SRNotificationUsage : NSObject
+```
+
 #### Overview
 
-Each instance of this class represents a user notification in a particular app category. For more information, see [`notificationUsageByCategory`](srdeviceusagereport/notificationusagebycategory.md).
+Each instance of this class represents a user notification in a particular app category. For more information, see [`notificationUsageByCategory`](./notificationusagebycategory.md).
 
 ## Topics
 
 ### Analyzing Notification Use
-- [var bundleIdentifier: String?](srdeviceusagereport/notificationusage/bundleidentifier.md)
+- [var bundleIdentifier: String?](./notificationusage/bundleidentifier.md)
   The bundle identifier of the app that corresponds to the notification.
-- [var event: SRDeviceUsageReport.NotificationUsage.Event](srdeviceusagereport/notificationusage/event-swift.property.md)
+- [var event: SRDeviceUsageReport.NotificationUsage.Event](./notificationusage/event-swift.property.md)
   The way that the user interacts with the notification.
-- [SRDeviceUsageReport.NotificationUsage.Event](srdeviceusagereport/notificationusage/event-swift.enum.md)
+- [SRDeviceUsageReport.NotificationUsage.Event](./notificationusage/event-swift.enum.md)
   The ways that a user interacts with notifications.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var notificationUsageByCategory: [SRDeviceUsageReport.CategoryKey : [SRDeviceUsageReport.NotificationUsage]]](srdeviceusagereport/notificationusagebycategory.md)
+### Analyzing Notification Use
+- [var notificationUsageByCategory: [SRDeviceUsageReport.CategoryKey : [SRDeviceUsageReport.NotificationUsage]]](./notificationusagebycategory.md)
   The frequency of notifications per category.
 
 

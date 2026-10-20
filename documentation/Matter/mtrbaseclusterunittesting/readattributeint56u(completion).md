@@ -1,7 +1,8 @@
 # readAttributeInt56u(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeInt56u(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeInt56u() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeInt56uWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

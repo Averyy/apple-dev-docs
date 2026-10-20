@@ -1,7 +1,8 @@
 # allAnchors
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of all known world anchors from the world-tracking provider.
 
@@ -20,17 +21,18 @@ Returns `nil` if the data provider isn’t running, and for other errors.
 
 ## See Also
 
-- [init()](worldtrackingprovider/init.md)
+### Tracking objects
+- [init()](./init%28%29.md)
   Creates a world-tracking provider.
-- [var anchorUpdates: AnchorUpdateSequence<WorldAnchor>](worldtrackingprovider/anchorupdates.md)
+- [var anchorUpdates: AnchorUpdateSequence<WorldAnchor>](./anchorupdates.md)
   A sequence of updates to anchors a provider tracks.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](worldtrackingprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
   The types of authorizations necessary for tracking world anchors.
-- [static var isSupported: Bool](worldtrackingprovider/issupported.md)
+- [static var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the current runtime environment supports world-tracking providers.
-- [func addAnchor(WorldAnchor) async throws](worldtrackingprovider/addanchor(_:).md)
+- [func addAnchor(WorldAnchor) async throws](./addanchor%28_%29.md)
   Adds a world anchor you supply to the set of currently tracked anchors.
-- [WorldTrackingProvider.Error](worldtrackingprovider/error.md)
+- [WorldTrackingProvider.Error](./error.md)
   An error that can occur during a world-tracking session.
 
 

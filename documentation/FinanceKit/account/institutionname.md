@@ -1,7 +1,8 @@
 # institutionName
 
 **Framework**: FinanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the institution that holds this account.
 
@@ -17,19 +18,20 @@ var institutionName: String { get }
 
 ## See Also
 
-- [var accountDescription: String?](account/accountdescription.md)
+### Instance Properties
+- [var accountDescription: String?](./accountdescription.md)
   A person’s description of this account.
-- [var assetAccount: AssetAccount?](account/assetaccount.md)
+- [var assetAccount: AssetAccount?](./assetaccount.md)
   An asset account.
-- [var currencyCode: String](account/currencycode.md)
+- [var currencyCode: String](./currencycode.md)
   The ISO 4217 currency code that identifies the currency that denominates the account.
-- [var displayName: String](account/displayname.md)
+- [var displayName: String](./displayname.md)
   The name for this account that a person provided.
-- [var id: UUID](account/id.md)
+- [var id: UUID](./id.md)
   The unique account ID for this account.
-- [var liabilityAccount: LiabilityAccount?](account/liabilityaccount.md)
+- [var liabilityAccount: LiabilityAccount?](./liabilityaccount.md)
   A liability account.
-- [var openingDate: Date?](account/openingdate.md)
+- [var openingDate: Date?](./openingdate.md)
   The date the account was opened, if known.
 
 

@@ -1,7 +1,8 @@
 # STScreenTimeConfigurationObserver
 
 **Framework**: Screen Time  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The object you use to observe changes to the current configuration.
 
@@ -17,39 +18,44 @@ The object you use to observe changes to the current configuration.
 class STScreenTimeConfigurationObserver
 ```
 
+```objc
+@interface STScreenTimeConfigurationObserver : NSObject
+```
+
 #### Overview
 
-Use this class to start and stop observing the current configuration. For example, you can opt to disable private browsing in your web browser’s view controller when [`enforcesChildRestrictions`](stscreentimeconfiguration/enforceschildrestrictions.md) is `true`.
+Use this class to start and stop observing the current configuration. For example, you can opt to disable private browsing in your web browser’s view controller when [`enforcesChildRestrictions`](./stscreentimeconfiguration/enforceschildrestrictions.md) is `true`.
 
 ## Topics
 
 ### Initializers
-- [init(updateQueue: dispatch_queue_t)](stscreentimeconfigurationobserver/init(updatequeue:).md)
+- [init(updateQueue: dispatch_queue_t)](./stscreentimeconfigurationobserver/init%28updatequeue%29.md)
   Creates a configuration observer that reports updates on the queue you specify.
 ### Instance properties
-- [var configuration: STScreenTimeConfiguration?](stscreentimeconfigurationobserver/configuration.md)
+- [var configuration: STScreenTimeConfiguration?](./stscreentimeconfigurationobserver/configuration.md)
   The configuration being observed.
 ### Instance methods
-- [func startObserving()](stscreentimeconfigurationobserver/startobserving.md)
+- [func startObserving()](./stscreentimeconfigurationobserver/startobserving%28%29.md)
   Starts observing changes to the current configuration.
-- [func stopObserving()](stscreentimeconfigurationobserver/stopobserving.md)
+- [func stopObserving()](./stscreentimeconfigurationobserver/stopobserving%28%29.md)
   Stops observing changes to the current configuration.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class STScreenTimeConfiguration](stscreentimeconfiguration.md)
+### Configuration queries
+- [class STScreenTimeConfiguration](./stscreentimeconfiguration.md)
   The configuration for this device.
 
 

@@ -1,7 +1,8 @@
 # MPSImageEdgeMode.mirror
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 12.1+
@@ -15,6 +16,10 @@
 
 ```swift
 case mirror
+```
+
+```c
+MPSImageEdgeModeMirror
 ```
 
 

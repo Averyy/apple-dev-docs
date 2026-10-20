@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw value.
 
@@ -21,7 +22,8 @@ let rawValue: Int
 
 ## See Also
 
-- [init(rawValue: Int)](broadcastoptions/init(rawvalue:).md)
+### Creating options from a raw value
+- [init(rawValue: Int)](./init%28rawvalue%29.md)
   Creates a set of options from a raw value.
 
 

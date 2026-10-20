@@ -1,7 +1,8 @@
 # viewRotationAngle
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The angle, in degrees, to rotate a view by so the `ARFrame` it displays stays level with the horizon as the device rotates.
 

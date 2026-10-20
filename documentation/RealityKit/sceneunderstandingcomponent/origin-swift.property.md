@@ -1,7 +1,8 @@
 # origin
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The origin that RealityKit creates the component from.
 

@@ -1,7 +1,8 @@
 # Entity.ChildCollection.IndexingIterator.SubSequence
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 13.0+
@@ -9,13 +10,15 @@
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias SubSequence = AnySequence<Entity.ChildCollection.IndexingIterator<Elements>.Element>
 ```
+
+Available when `Elements` conforms to `Collection`.
 
 
 ---

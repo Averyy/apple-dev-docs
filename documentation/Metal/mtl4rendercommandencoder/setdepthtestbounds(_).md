@@ -1,7 +1,8 @@
 # setDepthTestBounds(_:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the range for depth bounds testing.
 
@@ -29,15 +30,16 @@ The render command encoder disables depth bounds testing by default. The render 
 
 ## See Also
 
-- [func setDepthStencilState((any MTLDepthStencilState)?)](mtl4rendercommandencoder/setdepthstencilstate(_:).md)
+### Configuring depth and stencil behavior
+- [func setDepthStencilState((any MTLDepthStencilState)?)](./setdepthstencilstate%28_%29.md)
   Configures this encoder with a depth stencil state that applies to your subsequent draw commands.
-- [func setDepthBias(Float, slopeScale: Float, clamp: Float)](mtl4rendercommandencoder/setdepthbias(_:slopescale:clamp:).md)
+- [func setDepthBias(Float, slopeScale: Float, clamp: Float)](./setdepthbias%28_,slopescale,clamp%29.md)
   Configures the adjustments a render pass applies to depth values from fragment shader functions by a scaling factor and bias.
-- [func setDepthClipMode(MTLDepthClipMode)](mtl4rendercommandencoder/setdepthclipmode(_:).md)
+- [func setDepthClipMode(MTLDepthClipMode)](./setdepthclipmode%28_%29.md)
   Controls the behavior for fragments outside of the near or far planes.
-- [func setStencilReferenceValue(UInt32)](mtl4rendercommandencoder/setstencilreferencevalue(_:).md)
+- [func setStencilReferenceValue(UInt32)](./setstencilreferencevalue%28_%29.md)
   Configures this encoder with a reference value for stencil testing.
-- [func setStencilReferenceValue(front: UInt32, back: UInt32)](mtl4rendercommandencoder/setstencilreferencevalue(front:back:).md)
+- [func setStencilReferenceValue(front: UInt32, back: UInt32)](./setstencilreferencevalue%28front,back%29.md)
   Configures the encoder with different stencil test reference values for front-facing and back-facing primitives.
 
 

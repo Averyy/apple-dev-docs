@@ -1,7 +1,8 @@
 # subtle
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The element is subtly blended over occluding content.
 

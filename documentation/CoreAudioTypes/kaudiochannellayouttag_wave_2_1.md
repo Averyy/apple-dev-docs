@@ -1,7 +1,8 @@
 # kAudioChannelLayoutTag_WAVE_2_1
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 13.0+
@@ -18,17 +19,22 @@
 var kAudioChannelLayoutTag_WAVE_2_1: AudioChannelLayoutTag { get }
 ```
 
+```c
+kAudioChannelLayoutTag_WAVE_2_1
+```
+
 ## See Also
 
-- [var kAudioChannelLayoutTag_WAVE_3_0: AudioChannelLayoutTag](kaudiochannellayouttag_wave_3_0.md)
-- [var kAudioChannelLayoutTag_WAVE_4_0_A: AudioChannelLayoutTag](kaudiochannellayouttag_wave_4_0_a.md)
-- [var kAudioChannelLayoutTag_WAVE_4_0_B: AudioChannelLayoutTag](kaudiochannellayouttag_wave_4_0_b.md)
-- [var kAudioChannelLayoutTag_WAVE_5_0_A: AudioChannelLayoutTag](kaudiochannellayouttag_wave_5_0_a.md)
-- [var kAudioChannelLayoutTag_WAVE_5_0_B: AudioChannelLayoutTag](kaudiochannellayouttag_wave_5_0_b.md)
-- [var kAudioChannelLayoutTag_WAVE_5_1_A: AudioChannelLayoutTag](kaudiochannellayouttag_wave_5_1_a.md)
-- [var kAudioChannelLayoutTag_WAVE_5_1_B: AudioChannelLayoutTag](kaudiochannellayouttag_wave_5_1_b.md)
-- [var kAudioChannelLayoutTag_WAVE_6_1: AudioChannelLayoutTag](kaudiochannellayouttag_wave_6_1.md)
-- [var kAudioChannelLayoutTag_WAVE_7_1: AudioChannelLayoutTag](kaudiochannellayouttag_wave_7_1.md)
+### Wave Layouts
+- [var kAudioChannelLayoutTag_WAVE_3_0: AudioChannelLayoutTag](./kaudiochannellayouttag_wave_3_0.md)
+- [var kAudioChannelLayoutTag_WAVE_4_0_A: AudioChannelLayoutTag](./kaudiochannellayouttag_wave_4_0_a.md)
+- [var kAudioChannelLayoutTag_WAVE_4_0_B: AudioChannelLayoutTag](./kaudiochannellayouttag_wave_4_0_b.md)
+- [var kAudioChannelLayoutTag_WAVE_5_0_A: AudioChannelLayoutTag](./kaudiochannellayouttag_wave_5_0_a.md)
+- [var kAudioChannelLayoutTag_WAVE_5_0_B: AudioChannelLayoutTag](./kaudiochannellayouttag_wave_5_0_b.md)
+- [var kAudioChannelLayoutTag_WAVE_5_1_A: AudioChannelLayoutTag](./kaudiochannellayouttag_wave_5_1_a.md)
+- [var kAudioChannelLayoutTag_WAVE_5_1_B: AudioChannelLayoutTag](./kaudiochannellayouttag_wave_5_1_b.md)
+- [var kAudioChannelLayoutTag_WAVE_6_1: AudioChannelLayoutTag](./kaudiochannellayouttag_wave_6_1.md)
+- [var kAudioChannelLayoutTag_WAVE_7_1: AudioChannelLayoutTag](./kaudiochannellayouttag_wave_7_1.md)
 
 
 ---

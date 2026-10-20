@@ -1,7 +1,8 @@
 # pageBreakMargins
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The spacing between pages as defined by the top, bottom, left, and right margins.
 
@@ -15,13 +16,34 @@ The spacing between pages as defined by the top, bottom, left, and right margins
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+var pageBreakMargins: UIEdgeInsets { get set }
+```
+
+*macOS*
+
 ```swift
 var pageBreakMargins: NSEdgeInsets { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic) UIEdgeInsets pageBreakMargins;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic) NSEdgeInsets pageBreakMargins;
+```
+
 ## See Also
 
-- [var displaysPageBreaks: Bool](pdfview/displayspagebreaks.md)
+### Defining Page Breaks
+- [var displaysPageBreaks: Bool](./displayspagebreaks.md)
   A Boolean value indicating whether the view is displaying page breaks.
 
 

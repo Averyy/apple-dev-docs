@@ -1,7 +1,8 @@
 # referrerURL
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the webpage that linked to the webpage URL.
 
@@ -20,13 +21,18 @@ The URL of the webpage that linked to the webpage URL.
 var referrerURL: URL? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSURL * referrerURL;
+```
+
 ## See Also
 
-- [var webpageURL: URL?](nsuseractivity/webpageurl.md)
+### Browsing the web
+- [var webpageURL: URL?](./webpageurl.md)
   The URL of the webpage to load in a browser to continue the activity.
-- [let NSUserActivityTypeBrowsingWeb: String](nsuseractivitytypebrowsingweb.md)
+- [let NSUserActivityTypeBrowsingWeb: String](../nsuseractivitytypebrowsingweb.md)
   An activity that continues from Handoff or a universal link.
-- [let TVUserActivityTypeBrowsingChannelGuide: String](../tvservices/tvuseractivitytypebrowsingchannelguide.md)
+- [let TVUserActivityTypeBrowsingChannelGuide: String](../../TVServices/tvuseractivitytypebrowsingchannelguide.md)
   An activity for viewing your app’s channel guide.
 
 

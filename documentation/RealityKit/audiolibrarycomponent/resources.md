@@ -1,7 +1,8 @@
 # resources
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of audio resources with user-defined names.
 
@@ -21,7 +22,7 @@ var resources: [String : AudioResource]
 
 #### Discussion
 
-The values can be any [`AudioResource`](audioresource.md) type, such as [`AudioFileResource`](audiofileresource.md) or [`AudioFileGroupResource`](audiofilegroupresource.md). In memory, you can also use [`AudioBufferResource`](audiobufferresource.md), but this type doesn’t support serializing to disk or sharing via network.
+The values can be any [`AudioResource`](../audioresource.md) type, such as [`AudioFileResource`](../audiofileresource.md) or [`AudioFileGroupResource`](../audiofilegroupresource.md). In memory, you can also use [`AudioBufferResource`](../audiobufferresource.md), but this type doesn’t support serializing to disk or sharing via network.
 
 
 ---

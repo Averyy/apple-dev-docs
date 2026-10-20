@@ -1,7 +1,8 @@
 # interface
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The interface with which the channel was initialized.
 
@@ -16,9 +17,10 @@ final let interface: NWInterface
 
 ## See Also
 
-- [let etherType: UInt16](nwethernetchannel/ethertype.md)
+### Inspecting Ethernet Channels
+- [let etherType: UInt16](./ethertype.md)
   The custom Ethernet type with which the channel was initialized.
-- [var queue: DispatchQueue?](nwethernetchannel/queue.md)
+- [var queue: DispatchQueue?](./queue.md)
   The queue on which channel events will be delivered.
 
 

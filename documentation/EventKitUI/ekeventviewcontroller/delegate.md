@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: EventKit UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The event view controller’s delegate.
 
@@ -17,9 +18,14 @@ The event view controller’s delegate.
 weak var delegate: (any EKEventViewDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<EKEventViewDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol EKEventViewDelegate](ekeventviewdelegate.md)
+### Dismissing the Event Interface
+- [protocol EKEventViewDelegate](../ekeventviewdelegate.md)
   Delegates used to display details for calendar events.
 
 

@@ -1,9 +1,10 @@
 # componentInfo
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-An array containing a [`CVPlanarComponentInfo`](cvplanarcomponentinfo.md) structure for each plane of the buffer.
+An array containing a [`CVPlanarComponentInfo`](../cvplanarcomponentinfo.md) structure for each plane of the buffer.
 
 **Availability**:
 - iOS 4.0+
@@ -18,6 +19,10 @@ An array containing a [`CVPlanarComponentInfo`](cvplanarcomponentinfo.md) struct
 
 ```swift
 var componentInfo: CVPlanarComponentInfo
+```
+
+```c
+CVPlanarComponentInfo componentInfo[1];
 ```
 
 

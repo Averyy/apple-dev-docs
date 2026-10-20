@@ -1,7 +1,8 @@
 # configurationsByApplication
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of apps available during an assessment, along with their associated configurations.
 
@@ -17,17 +18,22 @@ The collection of apps available during an assessment, along with their associat
 var configurationsByApplication: [AEAssessmentApplication : AEAssessmentParticipantConfiguration] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDictionary<AEAssessmentApplication *,AEAssessmentParticipantConfiguration *> * configurationsByApplication;
+```
+
 #### Discussion
 
 Access this property to get a list of the currently allowed secondary apps and their individual configurations. Add apps to the list by calling the `AEAssessmentConfiguration/setConfiguration(_:for:)` method. Remove them from the list by calling the `AEAssessmentConfiguration/remove(_:)` method.
 
 ## See Also
 
-- [var mainParticipantConfiguration: AEAssessmentParticipantConfiguration](aeassessmentconfiguration/mainparticipantconfiguration.md)
+### Allowing access to other apps
+- [var mainParticipantConfiguration: AEAssessmentParticipantConfiguration](./mainparticipantconfiguration.md)
   The app-specific configuration for the app that invokes the assessment.
-- [class AEAssessmentApplication](aeassessmentapplication.md)
+- [class AEAssessmentApplication](../aeassessmentapplication.md)
   A representation of an app that users can access during an assessment.
-- [class AEAssessmentParticipantConfiguration](aeassessmentparticipantconfiguration.md)
+- [class AEAssessmentParticipantConfiguration](../aeassessmentparticipantconfiguration.md)
   Configuration information for an app that’s available during an assessment.
 
 

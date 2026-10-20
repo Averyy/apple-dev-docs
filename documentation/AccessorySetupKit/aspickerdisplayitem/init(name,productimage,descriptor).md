@@ -1,7 +1,8 @@
 # init(name:productImage:descriptor:)
 
 **Framework**: AccessorySetupKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a picker display item with a name and image to display and a descriptor to match discovered accessories.
 
@@ -13,6 +14,10 @@ Creates a picker display item with a name and image to display and a descriptor 
 
 ```swift
 init(name: String, productImage: UIImage, descriptor: ASDiscoveryDescriptor)
+```
+
+```objc
+- (instancetype) initWithName:(NSString *) name productImage:(UIImage *) productImage descriptor:(ASDiscoveryDescriptor *) descriptor;
 ```
 
 ## Parameters

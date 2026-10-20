@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOMediaStateBusy](1641852-anonymous/kiomediastatebusy.md)
-- [kIOMediaStateOffline](1641852-anonymous/kiomediastateoffline.md)
-- [kIOMediaStateOnline](1641852-anonymous/kiomediastateonline.md)
+- [kIOMediaStateBusy](./api-1641852-anonymous/kiomediastatebusy.md)
+- [kIOMediaStateOffline](./api-1641852-anonymous/kiomediastateoffline.md)
+- [kIOMediaStateOnline](./api-1641852-anonymous/kiomediastateonline.md)
 
 
 ---

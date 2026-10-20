@@ -1,7 +1,8 @@
 # registerIdentifier(_:)
 
 **Framework**: ServicesAccountLinking  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Registers an account identifier with the user’s Media & Purchases account.
 
@@ -19,7 +20,7 @@ static func registerIdentifier(_ identifier: String) async throws
 
 #### Discussion
 
-> **Note**: [`notEligible`](registrationerror/noteligible.md) if app is not a registered partner, or [`failed`](registrationerror/failed.md) for other failures.
+> **Throws**: [`notEligible`](../registrationerror/noteligible.md) if app is not a registered partner, or [`failed`](../registrationerror/failed.md) for other failures.
 
 ## Parameters
 
@@ -27,7 +28,8 @@ static func registerIdentifier(_ identifier: String) async throws
 
 ## See Also
 
-- [static func registerToken(String) async throws](reselleraccount/registertoken(_:).md)
+### Registration methods
+- [static func registerToken(String) async throws](./registertoken%28_%29.md)
   Registers a signed token with the user’s Media & Purchases account.
 
 

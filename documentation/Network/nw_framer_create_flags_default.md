@@ -1,7 +1,8 @@
 # NW_FRAMER_CREATE_FLAGS_DEFAULT
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant flag value that indicates that the default framer protocol behavior should be used.
 
@@ -20,17 +21,22 @@ A constant flag value that indicates that the default framer protocol behavior s
 var NW_FRAMER_CREATE_FLAGS_DEFAULT: Int32 { get }
 ```
 
+```c
+#define NW_FRAMER_CREATE_FLAGS_DEFAULT
+```
+
 ## See Also
 
-- [func nw_framer_create_definition(UnsafePointer<CChar>, UInt32, nw_framer_start_handler_t) -> nw_protocol_definition_t](nw_framer_create_definition(_:_:_:).md)
+### Adding Framers to Connections
+- [func nw_framer_create_definition(UnsafePointer<CChar>, UInt32, nw_framer_start_handler_t) -> nw_protocol_definition_t](./nw_framer_create_definition%28_,_,_%29.md)
   Initializes a new protocol definition based on your protocol implementation.
-- [typealias nw_framer_start_handler_t](nw_framer_start_handler_t.md)
+- [typealias nw_framer_start_handler_t](./nw_framer_start_handler_t.md)
   A handler that represents the entry point into your custom protocol.
-- [typealias nw_framer_t](nw_framer_t.md)
+- [typealias nw_framer_t](./nw_framer_t.md)
   An object that represents a single instance of your custom protocol running in a connection.
-- [struct nw_framer_start_result_t](nw_framer_start_result_t.md)
+- [struct nw_framer_start_result_t](./nw_framer_start_result_t.md)
   Results that you send to indicate the disposition of your protocol after the start handler is invoked.
-- [func nw_framer_create_options(nw_protocol_definition_t) -> nw_protocol_options_t](nw_framer_create_options(_:).md)
+- [func nw_framer_create_options(nw_protocol_definition_t) -> nw_protocol_options_t](./nw_framer_create_options%28_%29.md)
   Initializes a set of protocol options with a custom framer definition.
 
 

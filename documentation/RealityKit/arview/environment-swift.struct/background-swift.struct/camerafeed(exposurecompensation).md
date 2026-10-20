@@ -1,7 +1,8 @@
 # cameraFeed(exposureCompensation:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Use the camera feed as a background.
 
@@ -22,11 +23,12 @@ static func cameraFeed(exposureCompensation: Float = 0.0) -> ARView.Environment.
 
 ## See Also
 
-- [static func color(ARView.Environment.Color) -> ARView.Environment.Background](arview/environment-swift.struct/background-swift.struct/color(_:)-97jik.md)
+### Backgrounds
+- [static func color(ARView.Environment.Color) -> ARView.Environment.Background](./color%28_%29-97jik.md)
   Use a solid color as a background.
-- [static func color(ARView.Environment.Color) -> ARView.Environment.Background](arview/environment-swift.struct/background-swift.struct/color(_:)-5hh3f.md)
+- [static func color(ARView.Environment.Color) -> ARView.Environment.Background](./color%28_%29-5hh3f.md)
   Use a solid color as a background.
-- [static func skybox(EnvironmentResource) -> ARView.Environment.Background](arview/environment-swift.struct/background-swift.struct/skybox(_:).md)
+- [static func skybox(EnvironmentResource) -> ARView.Environment.Background](./skybox%28_%29.md)
   Use a skybox environment resource as a background.
 
 

@@ -1,7 +1,8 @@
 # m_value
 
 **Framework**: AudioDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The control value matched by this description.
 
@@ -10,15 +11,16 @@ The control value matched by this description.
 
 ## Declaration
 
-```swift
+```c
 IOUserAudioSelectorValue m_value;
 ```
 
 ## See Also
 
-- [m_name](iouseraudioselectorvaluedescription/m_name.md)
+### Accessing Description Properties
+- [m_name](./m_name.md)
   The name of the selector value.
-- [IOUserAudioSelectorValue](iouseraudioselectorvalue.md)
+- [IOUserAudioSelectorValue](../iouseraudioselectorvalue.md)
   The type of values managed by a selector control.
 
 

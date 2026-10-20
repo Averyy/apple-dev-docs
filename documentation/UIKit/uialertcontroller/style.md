@@ -1,7 +1,8 @@
 # UIAlertController.Style
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the type of alert to display.
 
@@ -9,7 +10,7 @@ Constants indicating the type of alert to display.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,33 +19,38 @@ Constants indicating the type of alert to display.
 enum Style
 ```
 
+```c
+enum UIAlertControllerStyle : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIAlertController.Style.actionSheet](uialertcontroller/style/actionsheet.md)
+- [UIAlertController.Style.actionSheet](./style/actionsheet.md)
   An action sheet displayed by the view controller that presented it.
-- [UIAlertController.Style.alert](uialertcontroller/style/alert.md)
+- [UIAlertController.Style.alert](./style/alert.md)
   An alert displayed modally for the app.
 ### Initializers
-- [init?(rawValue: Int)](uialertcontroller/style/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var title: String?](uialertcontroller/title.md)
+### Configuring the alert
+- [var title: String?](./title.md)
   The title of the alert.
-- [var message: String?](uialertcontroller/message.md)
+- [var message: String?](./message.md)
   Descriptive text that provides more details about the reason for the alert.
-- [var preferredStyle: UIAlertController.Style](uialertcontroller/preferredstyle.md)
+- [var preferredStyle: UIAlertController.Style](./preferredstyle.md)
   The style of the alert controller.
 
 

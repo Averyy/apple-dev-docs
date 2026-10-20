@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transform to apply to the text before displaying it.
 
@@ -16,11 +17,12 @@ var transform: TVMediaItemContentConfiguration.TextProperties.TextTransform { ge
 
 ## See Also
 
-- [var font: UIFont](tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/font.md)
+### Configuring Text Properties
+- [var font: UIFont](./font.md)
   The font for the text.
-- [var color: UIColor](tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/color.md)
+- [var color: UIColor](./color.md)
   The color of the text.
-- [TVMediaItemContentConfiguration.TextProperties.TextTransform](tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform.md)
+- [TVMediaItemContentConfiguration.TextProperties.TextTransform](./texttransform.md)
   Constants that specify the transform to apply to the text.
 
 

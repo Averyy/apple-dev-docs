@@ -1,7 +1,8 @@
 # AAError
 
 **Framework**: Accessory Access  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values that describe errors the AccessoryAccess framework returns.
 
@@ -17,33 +18,34 @@ struct AAError
 ## Topics
 
 ### Errors
-- [static var accessoryListenerAlreadyRegistered: AAError.Code](aaerror/accessorylisteneralreadyregistered.md)
+- [static var accessoryListenerAlreadyRegistered: AAError.Code](./aaerror/accessorylisteneralreadyregistered.md)
   An error that indicates the accessory listener is already registered, and therefore the app can’t re-register it.
-- [static var accessoryNotAccessible: AAError.Code](aaerror/accessorynotaccessible.md)
+- [static var accessoryNotAccessible: AAError.Code](./aaerror/accessorynotaccessible.md)
   An error that indicates the USB accessory isn’t accessible.
-- [static var internalError: AAError.Code](aaerror/internalerror.md)
+- [static var internalError: AAError.Code](./aaerror/internalerror.md)
   An error that represents an internal error.
-- [static var invalidAccessoryState: AAError.Code](aaerror/invalidaccessorystate.md)
+- [static var invalidAccessoryState: AAError.Code](./aaerror/invalidaccessorystate.md)
   An error that indicates the accessory isn’t in the correct state for the current operation.
-- [AAError.Code](aaerror/code.md)
+- [AAError.Code](./aaerror/code.md)
   Values that represent error codes that the AccessoryAccess framework returns.
 ### Type properties
-- [static var errorDomain: String](aaerror/errordomain.md)
+- [static var errorDomain: String](./aaerror/errordomain.md)
   A value that represents the Accessory Access framework’s error domain.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let AAErrorDomain: String](aaerrordomain.md)
+### Errors
+- [let AAErrorDomain: String](./aaerrordomain.md)
   The string that represents the framework’s error domain.
 
 

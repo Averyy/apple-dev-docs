@@ -1,7 +1,8 @@
 # vfs_context_proc
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Get the BSD process structure associated with a vfs_context_t.
 
@@ -10,11 +11,11 @@ Get the BSD process structure associated with a vfs_context_t.
 
 ## Declaration
 
-```swift
+```c
 proc_t vfs_context_proc(vfs_context_t ctx);
 ```
 
-#### Return_value
+#### Return Value
 
 Process if available, NULL otherwise.
 

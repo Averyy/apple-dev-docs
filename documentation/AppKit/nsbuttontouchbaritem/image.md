@@ -1,7 +1,8 @@
 # image
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -11,14 +12,35 @@
 
 ## Declaration
 
+*Mac Catalyst*
+
+```swift
+var image: UIImage? { get set }
+```
+
+*macOS*
+
 ```swift
 var image: NSImage? { get set }
 ```
 
+*Mac Catalyst*
+
+```objc
+@property (strong, nullable) UIImage * image;
+```
+
+*macOS*
+
+```objc
+@property (strong, nullable) NSImage * image;
+```
+
 ## See Also
 
-- [var title: String](nsbuttontouchbaritem/title.md)
-- [var bezelColor: UIColor?](nsbuttontouchbaritem/bezelcolor.md)
+### Configuring button appearance
+- [var title: String](./title.md)
+- [var bezelColor: UIColor?](./bezelcolor.md)
 
 
 ---

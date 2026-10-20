@@ -1,7 +1,8 @@
 # errSecCSTooBig
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The code is too big for current signing format.
 
@@ -13,6 +14,10 @@ The code is too big for current signing format.
 
 ```swift
 var errSecCSTooBig: OSStatus { get }
+```
+
+```c
+errSecCSTooBig
 ```
 
 

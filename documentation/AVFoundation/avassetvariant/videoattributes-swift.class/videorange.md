@@ -1,7 +1,8 @@
 # videoRange
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The video range of the variant.
 
@@ -20,23 +21,28 @@ The video range of the variant.
 var videoRange: AVVideoRange { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVVideoRange videoRange;
+```
+
 #### Discussion
 
-The property defaults to [`sdr`](avvideorange/sdr.md).
+The property defaults to [`sdr`](../../avvideorange/sdr.md).
 
 ## See Also
 
-- [var codecTypes: [CMVideoCodecType]](avassetvariant/videoattributes-swift.class/codectypes.md)
+### Inspecting the attributes
+- [var codecTypes: [CMVideoCodecType]](./codectypes.md)
   The video sample codec types present in the variant’s renditions.
-- [var nominalFrameRate: Double?](avassetvariant/videoattributes-swift.class/nominalframerate.md)
+- [var nominalFrameRate: Double?](./nominalframerate.md)
   The nominal frame rate of the variant’s renditions.
-- [var presentationSize: CGSize](avassetvariant/videoattributes-swift.class/presentationsize.md)
+- [var presentationSize: CGSize](./presentationsize.md)
   The presentation size of the variant’s renditions.
-- [struct AVVideoRange](avvideorange.md)
+- [struct AVVideoRange](../../avvideorange.md)
   Constants that describe a video variant’s dynamic range.
-- [var videoLayoutAttributes: [AVAssetVariant.VideoAttributes.LayoutAttributes]](avassetvariant/videoattributes-swift.class/videolayoutattributes.md)
+- [var videoLayoutAttributes: [AVAssetVariant.VideoAttributes.LayoutAttributes]](./videolayoutattributes.md)
   Attributes that describe the layout of the video content.
-- [AVAssetVariant.VideoAttributes.LayoutAttributes](avassetvariant/videoattributes-swift.class/layoutattributes.md)
+- [AVAssetVariant.VideoAttributes.LayoutAttributes](./layoutattributes.md)
   Attributes that describe the layout of video content.
 
 

@@ -1,21 +1,26 @@
 # xpc_peer_requirement_t
 
 **Framework**: XPC  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias xpc_peer_requirement_t = OS_xpc_peer_requirement
+```
+
+```c
+typedef NSObject<OS_xpc_peer_requirement> * xpc_peer_requirement_t;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # distance(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the distance to another run loop scheduler time.
 
@@ -30,9 +31,10 @@ The time interval between this time and the provided time.
 
 ## See Also
 
-- [RunLoop.SchedulerTimeType.Stride](runloop/schedulertimetype/stride.md)
+### Working with Scheduler Time Intervals
+- [RunLoop.SchedulerTimeType.Stride](./stride.md)
   The interval by which run loop times advance.
-- [func advanced(by: RunLoop.SchedulerTimeType.Stride) -> RunLoop.SchedulerTimeType](runloop/schedulertimetype/advanced(by:).md)
+- [func advanced(by: RunLoop.SchedulerTimeType.Stride) -> RunLoop.SchedulerTimeType](./advanced%28by%29.md)
   Returns a run loop scheduler time calculated by advancing this instance’s time by the given interval.
 
 

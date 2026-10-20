@@ -1,7 +1,8 @@
 # UITabSidebarItem.Content
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -18,8 +19,8 @@ enum Content
 ## Topics
 
 ### Enumeration Cases
-- [UITabSidebarItem.Content.action(_:)](uitabsidebaritem/content-swift.enum/action(_:).md)
-- [UITabSidebarItem.Content.tab(_:)](uitabsidebaritem/content-swift.enum/tab(_:).md)
+- [UITabSidebarItem.Content.action(_:)](./content-swift.enum/action%28_%29.md)
+- [UITabSidebarItem.Content.tab(_:)](./content-swift.enum/tab%28_%29.md)
 
 
 ---

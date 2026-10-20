@@ -1,7 +1,8 @@
 # qualityOfService
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default service level to apply to operations that the queue invokes.
 
@@ -20,17 +21,22 @@ The default service level to apply to operations that the queue invokes.
 var qualityOfService: QualityOfService { get set }
 ```
 
+```objc
+@property NSQualityOfService qualityOfService;
+```
+
 #### Discussion
 
-This property specifies the service level applied to operation objects added to the queue. If the operation object has an explicit service level set, that value is used instead. The default value of this property depends on how you created the queue. For queues you create yourself, the default value is `NSOperationQualityOfServiceBackground`. For the queue returned by the [`main`](operationqueue/main.md) method, the default value is `NSOperationQualityOfServiceUserInteractive` and cannot be changed.
+This property specifies the service level applied to operation objects added to the queue. If the operation object has an explicit service level set, that value is used instead. The default value of this property depends on how you created the queue. For queues you create yourself, the default value is `NSOperationQualityOfServiceBackground`. For the queue returned by the [`main`](./main.md) method, the default value is `NSOperationQualityOfServiceUserInteractive` and cannot be changed.
 
 Service levels affect the priority with which operation objects are given access to system resources such as CPU time, network resources, disk resources, and so on. Operations with a higher quality of service level are given greater priority over system resources so that they may perform their task more quickly. You use service levels to ensure that operations responding to explicit user requests are given priority over less critical work.
 
 ## See Also
 
-- [var maxConcurrentOperationCount: Int](operationqueue/maxconcurrentoperationcount.md)
+### Managing the Execution of Operations
+- [var maxConcurrentOperationCount: Int](./maxconcurrentoperationcount.md)
   The maximum number of queued operations that can run at the same time.
-- [class var defaultMaxConcurrentOperationCount: Int](operationqueue/defaultmaxconcurrentoperationcount.md)
+- [class var defaultMaxConcurrentOperationCount: Int](./defaultmaxconcurrentoperationcount.md)
   The default maximum number of operations to invoke concurrently in a queue.
 
 

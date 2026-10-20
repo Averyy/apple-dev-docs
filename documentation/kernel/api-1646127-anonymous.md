@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHFSPlusCreator](1646127-anonymous/khfspluscreator.md)
-- [kHardLinkFileType](1646127-anonymous/khardlinkfiletype.md)
+- [kHFSPlusCreator](./api-1646127-anonymous/khfspluscreator.md)
+- [kHardLinkFileType](./api-1646127-anonymous/khardlinkfiletype.md)
 
 
 ---

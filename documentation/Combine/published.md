@@ -1,7 +1,8 @@
 # Published
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that publishes a property marked with an attribute.
 
@@ -51,32 +52,33 @@ When the property changes, publishing occurs in the property’s `willSet` block
 
 ##### See Also
 
-- [`assign(to:)`](publisher/assign(to:).md)
+- [`assign(to:)`](./publisher/assign%28to%29.md)
 
 ## Topics
 
 ### Creating a published instance
-- [init(initialValue: Value)](published/init(initialvalue:).md)
+- [init(initialValue: Value)](./published/init%28initialvalue%29.md)
   Creates the published instance with an initial value.
-- [init(wrappedValue: Value)](published/init(wrappedvalue:).md)
+- [init(wrappedValue: Value)](./published/init%28wrappedvalue%29.md)
   Creates the published instance with an initial wrapped value.
 ### Publishing the value
-- [var projectedValue: Published<Value>.Publisher](published/projectedvalue.md)
+- [var projectedValue: Published<Value>.Publisher](./published/projectedvalue.md)
   The property for which this instance exposes a publisher.
-- [Published.Publisher](published/publisher.md)
+- [Published.Publisher](./published/publisher.md)
   A publisher for properties marked with the `@Published` attribute.
 
 ## See Also
 
-- [protocol Publisher](publisher.md)
+### Publishers
+- [protocol Publisher](./publisher.md)
   Declares that a type can transmit a sequence of values over time.
-- [enum Publishers](publishers.md)
+- [enum Publishers](./publishers.md)
   A namespace for types that serve as publishers.
-- [struct AnyPublisher](anypublisher.md)
+- [struct AnyPublisher](./anypublisher.md)
   A publisher that performs type erasure by wrapping another publisher.
-- [protocol Cancellable](cancellable.md)
+- [protocol Cancellable](./cancellable.md)
   A protocol indicating that an activity or action supports cancellation.
-- [class AnyCancellable](anycancellable.md)
+- [class AnyCancellable](./anycancellable.md)
   A type-erasing cancellable object that executes a provided closure when canceled.
 
 

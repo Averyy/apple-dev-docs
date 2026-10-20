@@ -1,7 +1,8 @@
 # spaceToBatch(_:spatialAxesTensor:batchAxisTensor:blockDimensionsTensor:usePixelShuffleOrder:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a space-to-batch operation and returns the result tensor.
 
@@ -19,13 +20,17 @@ Creates a space-to-batch operation and returns the result tensor.
 func spaceToBatch(_ tensor: MPSGraphTensor, spatialAxesTensor: MPSGraphTensor, batchAxisTensor: MPSGraphTensor, blockDimensionsTensor: MPSGraphTensor, usePixelShuffleOrder: Bool, name: String?) -> MPSGraphTensor
 ```
 
+```objc
+- (MPSGraphTensor *) spaceToBatchTensor:(MPSGraphTensor *) tensor spatialAxesTensor:(MPSGraphTensor *) spatialAxesTensor batchAxisTensor:(MPSGraphTensor *) batchAxisTensor blockDimensionsTensor:(MPSGraphTensor *) blockDimensionsTensor usePixelShuffleOrder:(BOOL) usePixelShuffleOrder name:(NSString *) name;
+```
+
 #### Return Value
 
 A valid MPSGraphTensor object.
 
 #### Discussion
 
-This operation outputs a copy of the `input` tensor, where values from the `spatialAxesTensor` (for `usePixelShuffleOrder=YES` 1,2 or 3 axes supported, otherwise limited only by `MPSNDArray` rank limitations) dimensions are moved in spatial blocks with rectangular size defined by `blockDimensionsTensor` to the `batchAxisTensor` dimension. Use the `usePixelShuffleOrder` parameter  to control how the data within spatial blocks is ordered in the `batchAxisTensor` dimension: with `usePixelShuffleOrder=YES` MPSGraph stores the values of the spatial blocks contiguosly within the `batchAxisTensor` dimension, whereas otherwise they are stored interleaved with existing values in the `batchAxisTensor` dimension. Note: This operation is the inverse of [`batchToSpace(_:spatialAxesTensor:batchAxisTensor:blockDimensionsTensor:usePixelShuffleOrder:name:)`](mpsgraph/batchtospace(_:spatialaxestensor:batchaxistensor:blockdimensionstensor:usepixelshuffleorder:name:).md). Note: This operation is a generalization of [`space(toDepth2DTensor:widthAxisTensor:heightAxisTensor:depthAxisTensor:blockSize:usePixelShuffleOrder:name:)`](mpsgraph/space(todepth2dtensor:widthaxistensor:heightaxistensor:depthaxistensor:blocksize:usepixelshuffleorder:name:).md).
+This operation outputs a copy of the `input` tensor, where values from the `spatialAxesTensor` (for `usePixelShuffleOrder=YES` 1,2 or 3 axes supported, otherwise limited only by `MPSNDArray` rank limitations) dimensions are moved in spatial blocks with rectangular size defined by `blockDimensionsTensor` to the `batchAxisTensor` dimension. Use the `usePixelShuffleOrder` parameter  to control how the data within spatial blocks is ordered in the `batchAxisTensor` dimension: with `usePixelShuffleOrder=YES` MPSGraph stores the values of the spatial blocks contiguosly within the `batchAxisTensor` dimension, whereas otherwise they are stored interleaved with existing values in the `batchAxisTensor` dimension. Note: This operation is the inverse of [`batchToSpace(_:spatialAxesTensor:batchAxisTensor:blockDimensionsTensor:usePixelShuffleOrder:name:)`](./batchtospace%28_,spatialaxestensor,batchaxistensor,blockdimensionstensor,usepixelshuffleorder,name%29.md). Note: This operation is a generalization of [`space(toDepth2DTensor:widthAxisTensor:heightAxisTensor:depthAxisTensor:blockSize:usePixelShuffleOrder:name:)`](./space%28todepth2dtensor,widthaxistensor,heightaxistensor,depthaxistensor,blocksize,usepixelshuffleorder,name%29.md).
 
 ## Parameters
 

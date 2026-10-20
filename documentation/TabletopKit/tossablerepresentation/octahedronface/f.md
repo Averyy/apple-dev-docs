@@ -1,7 +1,8 @@
 # TossableRepresentation.OctahedronFace.f
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 26.0+
@@ -14,13 +15,14 @@ case f
 
 ## See Also
 
-- [TossableRepresentation.OctahedronFace.a](tossablerepresentation/octahedronface/a.md)
-- [TossableRepresentation.OctahedronFace.b](tossablerepresentation/octahedronface/b.md)
-- [TossableRepresentation.OctahedronFace.c](tossablerepresentation/octahedronface/c.md)
-- [TossableRepresentation.OctahedronFace.d](tossablerepresentation/octahedronface/d.md)
-- [TossableRepresentation.OctahedronFace.e](tossablerepresentation/octahedronface/e.md)
-- [TossableRepresentation.OctahedronFace.g](tossablerepresentation/octahedronface/g.md)
-- [TossableRepresentation.OctahedronFace.h](tossablerepresentation/octahedronface/h.md)
+### Faces
+- [TossableRepresentation.OctahedronFace.a](./a.md)
+- [TossableRepresentation.OctahedronFace.b](./b.md)
+- [TossableRepresentation.OctahedronFace.c](./c.md)
+- [TossableRepresentation.OctahedronFace.d](./d.md)
+- [TossableRepresentation.OctahedronFace.e](./e.md)
+- [TossableRepresentation.OctahedronFace.g](./g.md)
+- [TossableRepresentation.OctahedronFace.h](./h.md)
 
 
 ---

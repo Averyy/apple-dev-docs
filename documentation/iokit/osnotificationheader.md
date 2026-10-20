@@ -1,7 +1,8 @@
 # OSNotificationHeader
 
 **Framework**: IOKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,14 +14,20 @@
 struct OSNotificationHeader
 ```
 
+```c
+typedef struct OSNotificationHeader {
+    ...
+} OSNotificationHeader;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](osnotificationheader/1514872-init.md)
+- [init()](./osnotificationheader/api-1514872-init.md)
 ### Instance Properties
-- [var reference: OSAsyncReference](osnotificationheader/1455523-reference.md)
-- [var size: mach_msg_size_t](osnotificationheader/1455560-size.md)
-- [var type: natural_t](osnotificationheader/1455562-type.md)
+- [var reference: OSAsyncReference](./osnotificationheader/api-1455523-reference.md)
+- [var size: mach_msg_size_t](./osnotificationheader/api-1455560-size.md)
+- [var type: natural_t](./osnotificationheader/api-1455562-type.md)
 
 
 ---

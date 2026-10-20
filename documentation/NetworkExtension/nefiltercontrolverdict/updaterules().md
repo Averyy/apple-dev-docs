@@ -1,7 +1,8 @@
 # updateRules()
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create a verdict that indicates to the system that the filtering rules have been updated, and that the Filter Data Provider needs to make a decision about the flow’s data.
 
@@ -17,15 +18,20 @@ Create a verdict that indicates to the system that the filtering rules have been
 class func updateRules() -> NEFilterControlVerdict
 ```
 
+```objc
++ (NEFilterControlVerdict *) updateRules;
+```
+
 #### Return Value
 
 An `NEFilterControlVerdict` object.
 
 ## See Also
 
-- [class func allow(withUpdateRules: Bool) -> NEFilterControlVerdict](nefiltercontrolverdict/allow(withupdaterules:).md)
+### Creating control verdicts
+- [class func allow(withUpdateRules: Bool) -> NEFilterControlVerdict](./allow%28withupdaterules%29.md)
   Create a verdict that indicates to the system that all of the flow’s data should be allowed to pass to its final destination, and that the filtering rules have been updated.
-- [class func drop(withUpdateRules: Bool) -> NEFilterControlVerdict](nefiltercontrolverdict/drop(withupdaterules:).md)
+- [class func drop(withUpdateRules: Bool) -> NEFilterControlVerdict](./drop%28withupdaterules%29.md)
   Create a verdict that indicates to the system that all of the flow’s data should be dropped, and that the filtering rules have been updated.
 
 

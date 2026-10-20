@@ -1,6 +1,7 @@
 # Authorization Plug-ins
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: API Collection
 
 Extend the authorization services API by creating plug-ins that can participate in authorization decisions.
 
@@ -22,17 +23,17 @@ import Security.AuthorizationPlugin
 #import <Security/AuthorizationPlugin.h>       
 ```
 
-> **Note**:  When your plug-in needs to interact with the user, subclass the [`SFAuthorizationPluginView`](https://developer.apple.com/documentation/securityinterface/sfauthorizationpluginview) class to maintain the look and feel of the system authentication dialogs.
+> **Note**:  When your plug-in needs to interact with the user, subclass the [`SFAuthorizationPluginView`](../SecurityInterface/sfauthorizationpluginview.md) class to maintain the look and feel of the system authentication dialogs.
 
 ## Topics
 
 ### First Steps
-- [Extending authorization services with plug-ins](extending-authorization-services-with-plug-ins.md)
+- [Extending authorization services with plug-ins](./extending-authorization-services-with-plug-ins.md)
   Modify the system’s authorization policy with custom code.
 ### Creating a Plug-in
-- [AuthorizationCallbacks Version](authorizationcallbacks-version.md)
+- [AuthorizationCallbacks Version](./authorizationcallbacks-version.md)
   The version of the interface implemented by the authorization engine.
-- [AuthorizationPluginInterface Version](authorizationplugininterface-version.md)
+- [AuthorizationPluginInterface Version](./authorizationplugininterface-version.md)
   The version of the interface implemented by the plug-in.
 
 

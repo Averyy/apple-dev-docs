@@ -1,7 +1,8 @@
 # mayStore(days:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 An object that indicates your app may store a data element for the length of time you specify.
 
@@ -17,13 +18,17 @@ An object that indicates your app may store a data element for the length of tim
 class func mayStore(days: Int) -> Self
 ```
 
+```objc
++ (instancetype) mayStoreIntentForDays:(NSInteger) days;
+```
+
 ## Mentions
 
-- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
+- [Requesting identity data from a Wallet pass](../requesting-identity-data-from-a-wallet-pass.md)
 
 #### Return Value
 
-A new instance of [`PKIdentityIntentToStore`](pkidentityintenttostore.md).
+A new instance of [`PKIdentityIntentToStore`](../pkidentityintenttostore.md).
 
 ## Parameters
 

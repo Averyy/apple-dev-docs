@@ -1,9 +1,10 @@
 # SFError.Code.noAttachmentFound
 
 **Framework**: Safari Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-The Content Blocker extension returned an [`NSExtensionItem`](https://developer.apple.com/documentation/foundation/nsextensionitem) that did not include an attachment.
+The Content Blocker extension returned an [`NSExtensionItem`](../../../Foundation/nsextensionitem.md) that did not include an attachment.
 
 **Availability**:
 - iOS 10.0+
@@ -18,11 +19,16 @@ The Content Blocker extension returned an [`NSExtensionItem`](https://developer.
 case noAttachmentFound
 ```
 
+```c
+SFErrorNoAttachmentFound
+```
+
 ## See Also
 
-- [SFError.Code.loadingInterrupted](sferror/code/loadinginterrupted.md)
+### Error Codes
+- [SFError.Code.loadingInterrupted](./loadinginterrupted.md)
   There was an error loading the content blocker extension.
-- [SFError.Code.noExtensionFound](sferror/code/noextensionfound.md)
+- [SFError.Code.noExtensionFound](./noextensionfound.md)
   A Content Blocker or Safari app extension with the specified bundle identifier was not found, or the bundle identifier specified an extension that was not owned by you.
 
 

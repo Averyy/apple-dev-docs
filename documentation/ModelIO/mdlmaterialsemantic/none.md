@@ -1,9 +1,10 @@
 # MDLMaterialSemantic.none
 
 **Framework**: Model I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-The material property’s [`semantic`](mdlmaterialproperty/semantic.md) property has not been initialized.
+The material property’s [`semantic`](../mdlmaterialproperty/semantic.md) property has not been initialized.
 
 **Availability**:
 - iOS 9.0+
@@ -19,37 +20,42 @@ The material property’s [`semantic`](mdlmaterialproperty/semantic.md) property
 case none
 ```
 
+```c
+MDLMaterialSemanticNone
+```
+
 ## See Also
 
-- [MDLMaterialSemantic.baseColor](mdlmaterialsemantic/basecolor.md)
+### Constants
+- [MDLMaterialSemantic.baseColor](./basecolor.md)
   The inherent color of a surface, to be used as a modulator during shading.
-- [MDLMaterialSemantic.subsurface](mdlmaterialsemantic/subsurface.md)
+- [MDLMaterialSemantic.subsurface](./subsurface.md)
   The degree to which light scatters under the surface of a material.
-- [MDLMaterialSemantic.metallic](mdlmaterialsemantic/metallic.md)
+- [MDLMaterialSemantic.metallic](./metallic.md)
   The degree to which a material appears as a dielectric surface (lower values) or as a metal (higher values).
-- [MDLMaterialSemantic.specular](mdlmaterialsemantic/specular.md)
+- [MDLMaterialSemantic.specular](./specular.md)
   The intensity of specular highlights that appear on the material’s surface.
-- [MDLMaterialSemantic.specularExponent](mdlmaterialsemantic/specularexponent.md)
+- [MDLMaterialSemantic.specularExponent](./specularexponent.md)
   The exponent to be used in Blinn-Phong approximation of the material’s specular response.
-- [MDLMaterialSemantic.specularTint](mdlmaterialsemantic/speculartint.md)
+- [MDLMaterialSemantic.specularTint](./speculartint.md)
   The balance of color for specular highlights, between the light color (lower values) and the material’s base color (at higher values).
-- [MDLMaterialSemantic.roughness](mdlmaterialsemantic/roughness.md)
+- [MDLMaterialSemantic.roughness](./roughness.md)
   The degree to which a material appears smooth, affecting both diffuse and specular response.
-- [MDLMaterialSemantic.anisotropic](mdlmaterialsemantic/anisotropic.md)
+- [MDLMaterialSemantic.anisotropic](./anisotropic.md)
   The degree to which specular highlights elongate in the direction of the local tangent basis.
-- [MDLMaterialSemantic.anisotropicRotation](mdlmaterialsemantic/anisotropicrotation.md)
+- [MDLMaterialSemantic.anisotropicRotation](./anisotropicrotation.md)
   The angle at which anisotropic effects are rotated relative to the local tangent basis.
-- [MDLMaterialSemantic.sheen](mdlmaterialsemantic/sheen.md)
+- [MDLMaterialSemantic.sheen](./sheen.md)
   The intensity of highlights that appear only at glancing angles on a material’s surface.
-- [MDLMaterialSemantic.sheenTint](mdlmaterialsemantic/sheentint.md)
+- [MDLMaterialSemantic.sheenTint](./sheentint.md)
   The balance of color for highlights that appear only at glancing angles, between the light color (lower values) and the material’s base color (at higher values).
-- [MDLMaterialSemantic.clearcoat](mdlmaterialsemantic/clearcoat.md)
+- [MDLMaterialSemantic.clearcoat](./clearcoat.md)
   The intensity of a second specular highlight, similar to the gloss that results from a clear coat on an automotive finish.
-- [MDLMaterialSemantic.clearcoatGloss](mdlmaterialsemantic/clearcoatgloss.md)
+- [MDLMaterialSemantic.clearcoatGloss](./clearcoatgloss.md)
   The spread of a second specular highlight, similar to the gloss that results from a clear coat on an automotive finish.
-- [MDLMaterialSemantic.emission](mdlmaterialsemantic/emission.md)
+- [MDLMaterialSemantic.emission](./emission.md)
   The color emitted as radiance from a material’s surface.
-- [MDLMaterialSemantic.bump](mdlmaterialsemantic/bump.md)
+- [MDLMaterialSemantic.bump](./bump.md)
   The degree of perturbation in a material’s surface.
 
 

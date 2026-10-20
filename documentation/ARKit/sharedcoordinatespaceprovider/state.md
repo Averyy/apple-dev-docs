@@ -1,7 +1,8 @@
 # state
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of this shared coordinate space provider.
 

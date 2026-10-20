@@ -1,7 +1,8 @@
 # unregisterFromEngine()
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the group from the engine’s dictionary.
 
@@ -19,13 +20,18 @@ Removes the group from the engine’s dictionary.
 func unregisterFromEngine()
 ```
 
+```objc
+- (void) unregisterFromEngine;
+```
+
 #### Discussion
 
-For more information, see [`groups`](phaseengine/groups.md).
+For more information, see [`groups`](../phaseengine/groups.md).
 
 ## See Also
 
-- [func register(engine: PHASEEngine)](phasegroup/register(engine:).md)
+### Defining the Group
+- [func register(engine: PHASEEngine)](./register%28engine%29.md)
   Adds the group to the engine’s dictionary.
 
 

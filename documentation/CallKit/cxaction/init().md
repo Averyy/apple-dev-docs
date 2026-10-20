@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new telephony action.
 
@@ -18,9 +19,13 @@ Initializes a new telephony action.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
-A new [`CXAction`](cxaction.md) object.
+A new [`CXAction`](../cxaction.md) object.
 
 #### Discussion
 
@@ -28,7 +33,8 @@ This is the designated initializer.
 
 ## See Also
 
-- [init?(coder: NSCoder)](cxaction/init(coder:).md)
+### Creating an Action
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a new telephony action with data in an unarchiver.
 
 

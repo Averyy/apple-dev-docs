@@ -1,7 +1,8 @@
 # origin
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Position information, in meters, that represents the origin from which to render the calibration in 3D space relative to the person’s eye.
 

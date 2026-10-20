@@ -1,21 +1,26 @@
 # CFFileDescriptor
 
 **Framework**: Core Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class CFFileDescriptor
+```
+
+```c
+typedef struct __CFFileDescriptor * CFFileDescriptorRef;
 ```
 
 #### Overview
@@ -65,63 +70,64 @@ int main(int argc, char *argv[]) {
 ## Topics
 
 ### Creating a CFFileDescriptor
-- [func CFFileDescriptorCreate(CFAllocator!, CFFileDescriptorNativeDescriptor, Bool, CFFileDescriptorCallBack!, UnsafePointer<CFFileDescriptorContext>!) -> CFFileDescriptor!](cffiledescriptorcreate(_:_:_:_:_:).md)
+- [func CFFileDescriptorCreate(CFAllocator!, CFFileDescriptorNativeDescriptor, Bool, CFFileDescriptorCallBack!, UnsafePointer<CFFileDescriptorContext>!) -> CFFileDescriptor!](./cffiledescriptorcreate%28_,_,_,_,_%29.md)
   Creates a new CFFileDescriptor.
 ### Getting Information About a File Descriptor
-- [func CFFileDescriptorGetNativeDescriptor(CFFileDescriptor!) -> CFFileDescriptorNativeDescriptor](cffiledescriptorgetnativedescriptor(_:).md)
+- [func CFFileDescriptorGetNativeDescriptor(CFFileDescriptor!) -> CFFileDescriptorNativeDescriptor](./cffiledescriptorgetnativedescriptor%28_%29.md)
   Returns the native file descriptor for a given CFFileDescriptor.
-- [func CFFileDescriptorIsValid(CFFileDescriptor!) -> Bool](cffiledescriptorisvalid(_:).md)
+- [func CFFileDescriptorIsValid(CFFileDescriptor!) -> Bool](./cffiledescriptorisvalid%28_%29.md)
   Returns a Boolean value that indicates whether the native file descriptor for a given CFFileDescriptor is valid.
-- [func CFFileDescriptorGetContext(CFFileDescriptor!, UnsafeMutablePointer<CFFileDescriptorContext>!)](cffiledescriptorgetcontext(_:_:).md)
+- [func CFFileDescriptorGetContext(CFFileDescriptor!, UnsafeMutablePointer<CFFileDescriptorContext>!)](./cffiledescriptorgetcontext%28_,_%29.md)
   Gets the context for a given CFFileDescriptor.
 ### Invalidating a File Descriptor
-- [func CFFileDescriptorInvalidate(CFFileDescriptor!)](cffiledescriptorinvalidate(_:).md)
+- [func CFFileDescriptorInvalidate(CFFileDescriptor!)](./cffiledescriptorinvalidate%28_%29.md)
   Invalidates a CFFileDescriptor object.
 ### Managing Callbacks
-- [func CFFileDescriptorEnableCallBacks(CFFileDescriptor!, CFOptionFlags)](cffiledescriptorenablecallbacks(_:_:).md)
+- [func CFFileDescriptorEnableCallBacks(CFFileDescriptor!, CFOptionFlags)](./cffiledescriptorenablecallbacks%28_,_%29.md)
   Enables callbacks for a given CFFileDescriptor.
-- [func CFFileDescriptorDisableCallBacks(CFFileDescriptor!, CFOptionFlags)](cffiledescriptordisablecallbacks(_:_:).md)
+- [func CFFileDescriptorDisableCallBacks(CFFileDescriptor!, CFOptionFlags)](./cffiledescriptordisablecallbacks%28_,_%29.md)
   Disables callbacks for a given CFFileDescriptor.
 ### Creating a Run Loop Source
-- [func CFFileDescriptorCreateRunLoopSource(CFAllocator!, CFFileDescriptor!, CFIndex) -> CFRunLoopSource!](cffiledescriptorcreaterunloopsource(_:_:_:).md)
+- [func CFFileDescriptorCreateRunLoopSource(CFAllocator!, CFFileDescriptor!, CFIndex) -> CFRunLoopSource!](./cffiledescriptorcreaterunloopsource%28_,_,_%29.md)
   Creates a new runloop source for a given CFFileDescriptor.
 ### Getting the CFFileDescriptor Type ID
-- [func CFFileDescriptorGetTypeID() -> CFTypeID](cffiledescriptorgettypeid().md)
+- [func CFFileDescriptorGetTypeID() -> CFTypeID](./cffiledescriptorgettypeid%28%29.md)
   Returns the type identifier for the CFFileDescriptor opaque type.
 ### Data Types
-- [typealias CFFileDescriptorNativeDescriptor](cffiledescriptornativedescriptor.md)
+- [typealias CFFileDescriptorNativeDescriptor](./cffiledescriptornativedescriptor.md)
   Defines a type for the native file descriptor.
-- [typealias CFFileDescriptorCallBack](cffiledescriptorcallback.md)
+- [typealias CFFileDescriptorCallBack](./cffiledescriptorcallback.md)
   Defines a structure for a callback for a CFFileDescriptor.
-- [struct CFFileDescriptorContext](cffiledescriptorcontext.md)
+- [struct CFFileDescriptorContext](./cffiledescriptorcontext.md)
   Defines a structure for the context of a CFFileDescriptor.
 ### Constants
-- [Callback Identifiers](1477595-callback-identifiers.md)
+- [Callback Identifiers](./api-1477595-callback-identifiers.md)
   Constants that identify the read and write callbacks.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [class CFAllocator](cfallocator.md)
-- [class CFArray](cfarray.md)
-- [class CFAttributedString](cfattributedstring.md)
-- [class CFBag](cfbag.md)
-- [class CFBinaryHeap](cfbinaryheap.md)
-- [class CFBitVector](cfbitvector.md)
-- [class CFBoolean](cfboolean.md)
-- [class CFBundle](cfbundle.md)
-- [class CFCalendar](cfcalendar.md)
-- [class CFCharacterSet](cfcharacterset.md)
-- [class CFData](cfdata.md)
-- [class CFDate](cfdate.md)
-- [class CFDateFormatter](cfdateformatter.md)
-- [class CFDictionary](cfdictionary.md)
-- [class CFError](cferror.md)
+### Opaque Types
+- [class CFAllocator](./cfallocator.md)
+- [class CFArray](./cfarray.md)
+- [class CFAttributedString](./cfattributedstring.md)
+- [class CFBag](./cfbag.md)
+- [class CFBinaryHeap](./cfbinaryheap.md)
+- [class CFBitVector](./cfbitvector.md)
+- [class CFBoolean](./cfboolean.md)
+- [class CFBundle](./cfbundle.md)
+- [class CFCalendar](./cfcalendar.md)
+- [class CFCharacterSet](./cfcharacterset.md)
+- [class CFData](./cfdata.md)
+- [class CFDate](./cfdate.md)
+- [class CFDateFormatter](./cfdateformatter.md)
+- [class CFDictionary](./cfdictionary.md)
+- [class CFError](./cferror.md)
 
 
 ---

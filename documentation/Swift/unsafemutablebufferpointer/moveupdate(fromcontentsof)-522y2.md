@@ -1,7 +1,8 @@
 # moveUpdate(fromContentsOf:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates this buffer’s initialized memory by moving every element from the source buffer, leaving the source memory uninitialized.
 
@@ -32,7 +33,7 @@ The returned index is one past the index of the last element updated. If `source
 
 > **Note**: The memory regions referenced by `source` and this buffer must not overlap.
 
-> **Note**: `self.count` >= `source.count`
+> **Precondition**: `self.count` >= `source.count`
 
 ## Parameters
 

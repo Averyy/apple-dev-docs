@@ -1,7 +1,8 @@
 # ASCredentialImportManager
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class to manage importing credentials.
 
@@ -20,9 +21,9 @@ class ASCredentialImportManager
 
 #### Overview
 
-`ASCredentialImportManager` allows your app to exchange authentication credentials such as passwords and passkeys with other apps. Participating apps, such as password managers, export credentials to your app by using the [`ASCredentialExportManager`](ascredentialexportmanager.md) class.
+`ASCredentialImportManager` allows your app to exchange authentication credentials such as passwords and passkeys with other apps. Participating apps, such as password managers, export credentials to your app by using the [`ASCredentialExportManager`](./ascredentialexportmanager.md) class.
 
-##### Configuring Your App
+##### Configuring your app
 
 To participate in credential exchange, edit your credential provider extension’s information property list and add the following key with a Boolean value of `YES`:
 
@@ -34,11 +35,11 @@ Also, declare the versions of the credential data format your app supports using
 
 The value is an array of strings containing every version your app supports. Currently, the only available version is `1.0`.
 
-##### Importing Credentials
+##### Importing credentials
 
-Credential export begins when another app calls [`exportCredentials(_:)`](ascredentialexportmanager/exportcredentials(_:).md), which brings up a system UI to choose an app to export to. When the person using the export app chooses your app to receive the credentials, the system launches your app and sends an  [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) whose [`activityType`](https://developer.apple.com/documentation/foundation/nsuseractivity/activitytype) is `ASCredentialExchangeActivity`. To support this process, add the [`NSUserActivityTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsuseractivitytypes) array to your app’s information property list and add the item `ASCredentialExchangeActivityType` to the array.
+Credential export begins when another app calls [`exportCredentials(_:)`](./ascredentialexportmanager/exportcredentials%28_%29.md), which brings up a system UI to choose an app to export to. When the person using the export app chooses your app to receive the credentials, the system launches your app and sends an  [`NSUserActivity`](../Foundation/nsuseractivity.md) whose [`activityType`](../Foundation/nsuseractivity/activitytype.md) is `ASCredentialExchangeActivity`. To support this process, add the [`NSUserActivityTypes`](../BundleResources/information-property-list/nsuseractivitytypes.md) array to your app’s information property list and add the item `ASCredentialExchangeActivityType` to the array.
 
-Your app needs to prepare for the system launching the app from this activity by fetching the `ASCredentialImportToken` from the activity’s  [`userInfo`](https://developer.apple.com/documentation/foundation/nsuseractivity/userinfo) dictionary. The value of this key is a [`UUID`](https://developer.apple.com/documentation/foundation/uuid) token; create an instance of [`ASCredentialImportManager`](ascredentialimportmanager.md) and pass the token to [`importCredentials(token:)`](ascredentialimportmanager/importcredentials(token:).md) to begin the import process.
+Your app needs to prepare for the system launching the app from this activity by fetching the `ASCredentialImportToken` from the activity’s  [`userInfo`](../Foundation/nsuseractivity/userinfo.md) dictionary. The value of this key is a [`UUID`](../Foundation/uuid.md) token; create an instance of [`ASCredentialImportManager`](./ascredentialimportmanager.md) and pass the token to [`importCredentials(token:)`](./ascredentialimportmanager/importcredentials%28token%29.md) to begin the import process.
 
 The following example shows how a SwiftUI app handles launching from the user activity and beginning the credential import process.
 
@@ -63,22 +64,23 @@ The following example shows how a SwiftUI app handles launching from the user ac
  }
 ```
 
-For a corresponding export code example, see [`ASCredentialExportManager`](ascredentialexportmanager.md).
+For a corresponding export code example, see [`ASCredentialExportManager`](./ascredentialexportmanager.md).
 
 ## Topics
 
 ### Creating an import manager
-- [init()](ascredentialimportmanager/init.md)
+- [init()](./ascredentialimportmanager/init%28%29.md)
   Creates an import manager instance.
 ### Importing credentials
-- [func importCredentials(token: UUID) async throws -> ASExportedCredentialData](ascredentialimportmanager/importcredentials(token:).md)
+- [func importCredentials(token: UUID) async throws -> ASExportedCredentialData](./ascredentialimportmanager/importcredentials%28token%29.md)
   Begins the credential import process.
-- [struct ASExportedCredentialData](asexportedcredentialdata.md)
+- [struct ASExportedCredentialData](./asexportedcredentialdata.md)
   A container for credential data that your app provides to an exporter or receives from an importer.
 
 ## See Also
 
-- [class ASCredentialExportManager](ascredentialexportmanager.md)
+### Credential migration
+- [class ASCredentialExportManager](./ascredentialexportmanager.md)
   A class to manage exporting credentials.
 
 

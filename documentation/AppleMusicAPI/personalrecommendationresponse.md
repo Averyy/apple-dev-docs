@@ -1,7 +1,8 @@
 # PersonalRecommendationResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to a request for personal recommendations.
 
@@ -10,17 +11,18 @@ The response to a request for personal recommendations.
 
 ## Declaration
 
-```swift
+```
 object PersonalRecommendationResponse
 ```
 
 ## Properties
 
-- `data` ([PersonalRecommendation]) *(required)*: The [`PersonalRecommendation`](personalrecommendation.md) resources included in the response for the request.
+- `data` ([PersonalRecommendation]) *(required)*: The [`PersonalRecommendation`](./personalrecommendation.md) resources included in the response for the request.
 
 ## See Also
 
-- [object PersonalRecommendation](personalrecommendation.md)
+### Handling the Response
+- [object PersonalRecommendation](./personalrecommendation.md)
   A resource object that represents recommended resources for a user calculated using their selected preferences.
 
 

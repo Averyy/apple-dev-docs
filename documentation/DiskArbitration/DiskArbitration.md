@@ -1,7 +1,8 @@
 # Disk Arbitration
 
 **Framework**: Disk Arbitration  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Provides mechanisms to register and block disk mount or unmount events.
 
@@ -11,23 +12,23 @@ Provides mechanisms to register and block disk mount or unmount events.
 
 #### Overview
 
-For related documentation, see [`Mac Technology Overview`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/OSX_Technology_Overview/About/About.html#//apple_ref/doc/uid/TP40001067).
+For related documentation, see [Mac Technology Overview](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/OSX_Technology_Overview/About/About.html#//apple_ref/doc/uid/TP40001067).
 
 ## Topics
 
 ### Reference
-- [DADisk.h](dadisk-h.md)
-- [DADissenter.h](dadissenter-h.md)
-- [DASession.h](dasession-h.md)
-- [DiskArbitration.h](diskarbitration-h.md)
+- [DADisk.h](./dadisk-h.md)
+- [DADissenter.h](./dadissenter-h.md)
+- [DASession.h](./dasession-h.md)
+- [DiskArbitration.h](./diskarbitration-h.md)
   Register for mount/unmount notifications, and block mount/unmount events.
-- [DiskArbitration Enumerations](diskarbitration-enumerations.md)
-- [DiskArbitration Constants](diskarbitration-constants.md)
-- [DiskArbitration Data Types](diskarbitration-data-types.md)
+- [DiskArbitration Enumerations](./diskarbitration-enumerations.md)
+- [DiskArbitration Constants](./diskarbitration-constants.md)
+- [DiskArbitration Data Types](./diskarbitration-data-types.md)
 ### Variables
-- [let kDADiskDescriptionFSKitPrefix: CFString](kdadiskdescriptionfskitprefix.md)
-- [let kDADiskDescriptionRepairRunningKey: CFString](kdadiskdescriptionrepairrunningkey.md)
-- [var kDADiskMountOptionNoFollow: Int](kdadiskmountoptionnofollow.md)
+- [let kDADiskDescriptionFSKitPrefix: CFString](./kdadiskdescriptionfskitprefix.md)
+- [let kDADiskDescriptionRepairRunningKey: CFString](./kdadiskdescriptionrepairrunningkey.md)
+- [var kDADiskMountOptionNoFollow: Int](./kdadiskmountoptionnofollow.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(networkIdentifier:discoveryMethod:)
 
 **Framework**: Nearby Interaction  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a DL-TDOA configuration with a network identifier and discovery method.
 
@@ -16,11 +17,15 @@ Initializes a DL-TDOA configuration with a network identifier and discovery meth
 init(networkIdentifier: Int, discoveryMethod: NIDLTDOAConfiguration.DiscoveryMethod)
 ```
 
+```objc
+- (instancetype) initWithNetworkIdentifier:(NSInteger) networkIdentifier discoveryMethod:(NIDLTDOADiscoveryMethod) discoveryMethod;
+```
+
 #### Discussion
 
 Use this initializer to create a DL-TDOA configuration that specifies a network identifier for a specific tracked area and the method it uses to discover anchors in the tracked area. The network identifier corresponds to the session ID configured in the DL-TDOA anchors. Anchors with the same session ID belong to the same tracked area.
 
-Specify the method your app uses to discover anchors among [`NIDLTDOAConfiguration.DiscoveryMethod.wifi`](nidltdoaconfiguration/discoverymethod-swift.enum/wifi.md) and [`NIDLTDOAConfiguration.DiscoveryMethod.bluetoothLowEnergy`](nidltdoaconfiguration/discoverymethod-swift.enum/bluetoothlowenergy.md) to match the infrastructure in your deployment environment.
+Specify the method your app uses to discover anchors among [`NIDLTDOAConfiguration.DiscoveryMethod.wifi`](./discoverymethod-swift.enum/wifi.md) and [`NIDLTDOAConfiguration.DiscoveryMethod.bluetoothLowEnergy`](./discoverymethod-swift.enum/bluetoothlowenergy.md) to match the infrastructure in your deployment environment.
 
 ```swift
 let configuration = NIDLTDOAConfiguration(
@@ -37,7 +42,8 @@ session.run(configuration)
 
 ## See Also
 
-- [init(networkIdentifier: Int)](nidltdoaconfiguration/init(networkidentifier:).md)
+### Creating a configuration
+- [init(networkIdentifier: Int)](./init%28networkidentifier%29.md)
   Initializes a Downlink Time-Difference-of-Arrival (DL-TDOA) configuration for a specific tracked area.
 
 

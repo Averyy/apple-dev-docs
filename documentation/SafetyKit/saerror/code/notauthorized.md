@@ -1,7 +1,8 @@
 # SAError.Code.notAuthorized
 
 **Framework**: SafetyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app isn’t authorized to perform the requested operation.
 
@@ -18,13 +19,18 @@ The app isn’t authorized to perform the requested operation.
 case notAuthorized
 ```
 
+```c
+SAErrorNotAuthorized
+```
+
 ## See Also
 
-- [SAError.Code.invalidArgument](saerror/code/invalidargument.md)
+### Determining the error type
+- [SAError.Code.invalidArgument](./invalidargument.md)
   The passed argument is invalid.
-- [SAError.Code.notAllowed](saerror/code/notallowed.md)
+- [SAError.Code.notAllowed](./notallowed.md)
   The system restricts the feature on this iPhone at the current time.
-- [SAError.Code.operationFailed](saerror/code/operationfailed.md)
+- [SAError.Code.operationFailed](./operationfailed.md)
   The requested operation failed; retrying may succeed.
 
 

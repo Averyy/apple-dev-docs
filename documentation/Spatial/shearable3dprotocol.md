@@ -1,7 +1,8 @@
 # Shearable3DProtocol
 
 **Framework**: Spatial  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that defines the interface for Spatial entities that can shear.
 
@@ -23,23 +24,23 @@ protocol Shearable3DProtocol<Scalar> : SpatialTypeProtocol
 ## Topics
 
 ### Instance Methods
-- [func shear(Self.AxisEnumeration)](shearable3dprotocol/shear(_:).md)
+- [func shear(Self.AxisEnumeration)](./shearable3dprotocol/shear%28_%29.md)
   Shears the entity.
-- [func sheared(Self.AxisEnumeration) -> Self](shearable3dprotocol/sheared(_:).md)
+- [func sheared(Self.AxisEnumeration) -> Self](./shearable3dprotocol/sheared%28_%29.md)
   Returns a sheared entity.
 
 ## Relationships
 
 ### Inherits From
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [SpatialTypeProtocol](spatialtypeprotocol.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [SpatialTypeProtocol](./spatialtypeprotocol.md)
 ### Conforming Types
-- [AffineTransform3D](affinetransform3d.md)
-- [AffineTransform3DFloat](affinetransform3dfloat.md)
-- [ProjectiveTransform3D](projectivetransform3d.md)
-- [ProjectiveTransform3DFloat](projectivetransform3dfloat.md)
+- [AffineTransform3D](./affinetransform3d.md)
+- [AffineTransform3DFloat](./affinetransform3dfloat.md)
+- [ProjectiveTransform3D](./projectivetransform3d.md)
+- [ProjectiveTransform3DFloat](./projectivetransform3dfloat.md)
 
 
 ---

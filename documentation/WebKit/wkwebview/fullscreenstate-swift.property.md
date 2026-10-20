@@ -1,7 +1,8 @@
 # fullscreenState
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -16,9 +17,14 @@
 var fullscreenState: WKWebView.FullscreenState { get }
 ```
 
+```objc
+@property (nonatomic, readonly) WKFullscreenState fullscreenState;
+```
+
 ## See Also
 
-- [WKWebView.FullscreenState](wkwebview/fullscreenstate-swift.enum.md)
+### Handling full-screen transitions
+- [WKWebView.FullscreenState](./fullscreenstate-swift.enum.md)
 
 
 ---

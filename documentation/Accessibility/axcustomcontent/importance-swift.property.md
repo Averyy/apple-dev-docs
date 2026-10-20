@@ -1,7 +1,8 @@
 # importance
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that determines when to output custom accessibility content.
 
@@ -20,17 +21,22 @@ An object that determines when to output custom accessibility content.
 var importance: AXCustomContent.Importance { get set }
 ```
 
+```objc
+@property (nonatomic, assign) AXCustomContentImportance importance;
+```
+
 ## See Also
 
-- [var label: String](axcustomcontent/label.md)
+### Defining custom content
+- [var label: String](./label.md)
   A localized string that identifies the label for this content.
-- [var attributedLabel: NSAttributedString](axcustomcontent/attributedlabel.md)
+- [var attributedLabel: NSAttributedString](./attributedlabel.md)
   A localized attributed string that identifies the label for this content.
-- [var value: String](axcustomcontent/value.md)
+- [var value: String](./value.md)
   A localized string that provides a value for the label.
-- [var attributedValue: NSAttributedString](axcustomcontent/attributedvalue.md)
+- [var attributedValue: NSAttributedString](./attributedvalue.md)
   A localized attributed string that provides a value for the label.
-- [AXCustomContent.Importance](axcustomcontent/importance-swift.enum.md)
+- [AXCustomContent.Importance](./importance-swift.enum.md)
   Objects that control the timing of content output.
 
 

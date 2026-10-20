@@ -1,7 +1,8 @@
 # read(bufferIndex:using:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a Metal vertex buffer at the specified index, for GPU reading.
 
@@ -22,16 +23,17 @@ func read(bufferIndex index: Int, using commandBuffer: any MTLCommandBuffer) -> 
 
 ## Parameters
 
-- `index`: The index of the buffer to read. Use a value that is less than [`vertexBufferCount`](lowlevelmesh/descriptor-swift.struct/vertexbuffercount.md).
-- `commandBuffer`: The [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) you intend to use for reading. RealityKit waits for the command buffer to complete before discarding the buffer.
+- `index`: The index of the buffer to read. Use a value that is less than [`vertexBufferCount`](./descriptor-swift.struct/vertexbuffercount.md).
+- `commandBuffer`: The [`MTLCommandBuffer`](../../Metal/mtlcommandbuffer.md) you intend to use for reading. RealityKit waits for the command buffer to complete before discarding the buffer.
 
 ## See Also
 
-- [func readIndices(using: any MTLCommandBuffer) -> any MTLBuffer](lowlevelmesh/readindices(using:).md)
+### Accessing mesh data on the GPU with Metal
+- [func readIndices(using: any MTLCommandBuffer) -> any MTLBuffer](./readindices%28using%29.md)
   Retrieves the Metal index buffer for GPU reading.
-- [func replace(bufferIndex: Int, using: any MTLCommandBuffer) -> any MTLBuffer](lowlevelmesh/replace(bufferindex:using:).md)
+- [func replace(bufferIndex: Int, using: any MTLCommandBuffer) -> any MTLBuffer](./replace%28bufferindex,using%29.md)
   Retrieves a Metal vertex buffer you can use to replace the contents of the specified buffer on the GPU using Metal.
-- [func replaceIndices(using: any MTLCommandBuffer) -> any MTLBuffer](lowlevelmesh/replaceindices(using:).md)
+- [func replaceIndices(using: any MTLCommandBuffer) -> any MTLBuffer](./replaceindices%28using%29.md)
   Retrieves a Metal index buffer that you can use to replace the indices of this low-level mesh.
 
 

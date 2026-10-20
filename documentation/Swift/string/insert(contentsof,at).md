@@ -1,7 +1,8 @@
 # insert(contentsOf:at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts a collection of characters at the specified position.
 
@@ -24,7 +25,7 @@ mutating func insert<S>(contentsOf newElements: S, at i: String.Index) where S :
 
 Calling this method invalidates any existing indices for use with this string.
 
-> **Note**: O(*n*), where *n* is the combined length of the string and `newElements`.
+> **Complexity**: O(*n*), where *n* is the combined length of the string and `newElements`.
 
 ## Parameters
 
@@ -33,11 +34,12 @@ Calling this method invalidates any existing indices for use with this string.
 
 ## See Also
 
-- [func insert(Character, at: String.Index)](string/insert(_:at:).md)
+### Inserting Characters
+- [func insert(Character, at: String.Index)](./insert%28_,at%29.md)
   Inserts a new character at the specified position.
-- [func insert(Self.Element, at: Self.Index)](string/insert(_:at:)-88yqh.md)
+- [func insert(Self.Element, at: Self.Index)](./insert%28_,at%29-88yqh.md)
   Inserts a new element into the collection at the specified position.
-- [func insert<C>(contentsOf: C, at: Self.Index)](string/insert(contentsof:at:)-rdu9.md)
+- [func insert<C>(contentsOf: C, at: Self.Index)](./insert%28contentsof,at%29-rdu9.md)
   Inserts the elements of a sequence into the collection at the specified position.
 
 

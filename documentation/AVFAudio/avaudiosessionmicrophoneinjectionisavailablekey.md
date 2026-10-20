@@ -1,7 +1,8 @@
 # AVAudioSessionMicrophoneInjectionIsAvailableKey
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key to retrieve a Boolean value that indicates whether microphone injection is available.
 
@@ -17,9 +18,13 @@ A key to retrieve a Boolean value that indicates whether microphone injection is
 let AVAudioSessionMicrophoneInjectionIsAvailableKey: String
 ```
 
+```c
+extern NSString * const AVAudioSessionMicrophoneInjectionIsAvailableKey;
+```
+
 #### Discussion
 
-The associated value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) that represents a Boolean value.
+The associated value is an [`NSNumber`](../Foundation/nsnumber.md) that represents a Boolean value.
 
 
 ---

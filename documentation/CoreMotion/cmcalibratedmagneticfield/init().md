@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Motion  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the magnetic field to a set of default values.
 
@@ -21,7 +22,8 @@ init()
 
 ## See Also
 
-- [init(field: CMMagneticField, accuracy: CMMagneticFieldCalibrationAccuracy)](cmcalibratedmagneticfield/init(field:accuracy:).md)
+### Initializers
+- [init(field: CMMagneticField, accuracy: CMMagneticFieldCalibrationAccuracy)](./init%28field,accuracy%29.md)
   Initializes the magnetic field to the specified set of values.
 
 

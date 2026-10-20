@@ -1,7 +1,8 @@
 # memberAnnotations
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of annotations that the framework grouped together in a cluster.
 
@@ -10,7 +11,7 @@ An array of annotations that the framework grouped together in a cluster.
 
 ## Declaration
 
-```swift
+```
 get memberAnnotations(): Annotation[];
 ```
 

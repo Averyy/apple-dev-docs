@@ -1,7 +1,8 @@
 # Markup
 
 **Framework**: PaperKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A markup component.
 
@@ -25,50 +26,51 @@ protocol Markup : Sendable
 ## Topics
 
 ### Laying out
-- [var frame: CGRect](markup/frame.md)
+- [var frame: CGRect](./markup/frame.md)
   The element’s unrotated frame.
-- [var rotation: CGFloat](markup/rotation.md)
+- [var rotation: CGFloat](./markup/rotation.md)
   The element’s rotation around the center of its frame.
-- [var renderFrame: CGRect](markup/renderframe.md)
+- [var renderFrame: CGRect](./markup/renderframe.md)
   The unrotated frame that tightly fits the rendered contents of the element.
-- [func applyTransform(CGAffineTransform)](markup/applytransform(_:).md)
+- [func applyTransform(CGAffineTransform)](./markup/applytransform%28_%29.md)
   Transforms this element with the specified transform.
 ### Controlling interactions
-- [var allowedInteractions: MarkupInteractions](markup/allowedinteractions.md)
+- [var allowedInteractions: MarkupInteractions](./markup/allowedinteractions.md)
   Interactions that people can perform on this markup.
-- [struct MarkupInteractions](markupinteractions.md)
+- [struct MarkupInteractions](./markupinteractions.md)
   Interactions that people can perform on markup elements.
 ### Managing feature compatibility
-- [var featureSet: FeatureSet](markup/featureset.md)
+- [var featureSet: FeatureSet](./markup/featureset.md)
   The set of features used by this markup.
-- [func removeContentUnsupported(by: FeatureSet) -> Bool](markup/removecontentunsupported(by:).md)
+- [func removeContentUnsupported(by: FeatureSet) -> Bool](./markup/removecontentunsupported%28by%29.md)
   Removes all content not supported by the provided feature set.
 ### Identifying markup
-- [var elementID: MarkupOrderedSet.ElementID](markup/elementid.md)
+- [var elementID: MarkupOrderedSet.ElementID](./markup/elementid.md)
   The element identifier for use in a markup ordered set.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [ImageMarkup](imagemarkup.md)
-- [LinkMarkup](linkmarkup.md)
-- [LoupeMarkup](loupemarkup.md)
-- [ShapeMarkup](shapemarkup.md)
+- [ImageMarkup](./imagemarkup.md)
+- [LinkMarkup](./linkmarkup.md)
+- [LoupeMarkup](./loupemarkup.md)
+- [ShapeMarkup](./shapemarkup.md)
 
 ## See Also
 
-- [struct ImageMarkup](imagemarkup.md)
+### Markup elements
+- [struct ImageMarkup](./imagemarkup.md)
   A markup element that represents an image.
-- [struct ShapeMarkup](shapemarkup.md)
+- [struct ShapeMarkup](./shapemarkup.md)
   A markup element that represents a shape or text box with customizable appearance and behavior.
-- [struct LinkMarkup](linkmarkup.md)
+- [struct LinkMarkup](./linkmarkup.md)
   A URL link that a person can tap on in the canvas.
-- [struct LoupeMarkup](loupemarkup.md)
+- [struct LoupeMarkup](./loupemarkup.md)
   A loupe magnifier that magnifies the content below the loupe.
-- [struct MarkupInteractions](markupinteractions.md)
+- [struct MarkupInteractions](./markupinteractions.md)
   Interactions that people can perform on markup elements.
 
 

@@ -1,7 +1,8 @@
 # iso8601
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,8 @@
 ```swift
 static var iso8601: DateComponents.ISO8601FormatStyle { get }
 ```
+
+Available when `Self` is `DateComponents.ISO8601FormatStyle`.
 
 
 ---

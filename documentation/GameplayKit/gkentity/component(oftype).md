@@ -1,7 +1,8 @@
 # component(ofType:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 9.0+
@@ -19,7 +20,8 @@ func component<ComponentType>(ofType componentClass: ComponentType.Type) -> Comp
 
 ## See Also
 
-- [func removeComponent<ComponentType>(ofType: ComponentType.Type)](gkentity/removecomponent(oftype:).md)
+### Instance Methods
+- [func removeComponent<ComponentType>(ofType: ComponentType.Type)](./removecomponent%28oftype%29.md)
 
 
 ---

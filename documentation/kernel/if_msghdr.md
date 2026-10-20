@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct if_msghdr {
     ...
 };
@@ -17,13 +17,13 @@ struct if_msghdr {
 ## Topics
 
 ### Instance Properties
-- [ifm_addrs](if_msghdr/1564004-ifm_addrs.md)
-- [ifm_data](if_msghdr/1563960-ifm_data.md)
-- [ifm_flags](if_msghdr/1564007-ifm_flags.md)
-- [ifm_index](if_msghdr/1563994-ifm_index.md)
-- [ifm_msglen](if_msghdr/1563958-ifm_msglen.md)
-- [ifm_type](if_msghdr/1564029-ifm_type.md)
-- [ifm_version](if_msghdr/1564078-ifm_version.md)
+- [ifm_addrs](./if_msghdr/api-1564004-ifm_addrs.md)
+- [ifm_data](./if_msghdr/api-1563960-ifm_data.md)
+- [ifm_flags](./if_msghdr/api-1564007-ifm_flags.md)
+- [ifm_index](./if_msghdr/api-1563994-ifm_index.md)
+- [ifm_msglen](./if_msghdr/api-1563958-ifm_msglen.md)
+- [ifm_type](./if_msghdr/api-1564029-ifm_type.md)
+- [ifm_version](./if_msghdr/api-1564078-ifm_version.md)
 
 
 ---

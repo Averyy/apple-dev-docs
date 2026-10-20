@@ -1,7 +1,8 @@
 # topLeft
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Radius of the top left corner of the view.
 
@@ -12,6 +13,10 @@ Radius of the top left corner of the view.
 
 ```swift
 var topLeft: CGFloat { get }
+```
+
+```objc
+@property (readonly) CGFloat topLeft;
 ```
 
 

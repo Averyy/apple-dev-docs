@@ -1,7 +1,8 @@
 # AVSampleRateConverterAlgorithmKey
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string value that represents the sample rate converter algorithm to use.
 
@@ -20,21 +21,26 @@ A string value that represents the sample rate converter algorithm to use.
 let AVSampleRateConverterAlgorithmKey: String
 ```
 
+```c
+extern NSString * const AVSampleRateConverterAlgorithmKey;
+```
+
 ## Topics
 
 ### Supported algorithms
-- [let AVSampleRateConverterAlgorithm_Normal: String](avsamplerateconverteralgorithm_normal.md)
+- [let AVSampleRateConverterAlgorithm_Normal: String](./avsamplerateconverteralgorithm_normal.md)
   The usual encoder bit rate strategy.
-- [let AVSampleRateConverterAlgorithm_MinimumPhase: String](avsamplerateconverteralgorithm_minimumphase.md)
+- [let AVSampleRateConverterAlgorithm_MinimumPhase: String](./avsamplerateconverteralgorithm_minimumphase.md)
   The minimum phase encoder bit rate strategy.
-- [let AVSampleRateConverterAlgorithm_Mastering: String](avsamplerateconverteralgorithm_mastering.md)
+- [let AVSampleRateConverterAlgorithm_Mastering: String](./avsamplerateconverteralgorithm_mastering.md)
   The mastering encoder bit rate strategy.
 
 ## See Also
 
-- [let AVSampleRateConverterAudioQualityKey: String](avsamplerateconverteraudioqualitykey.md)
+### Sample rate conversion keys
+- [let AVSampleRateConverterAudioQualityKey: String](./avsamplerateconverteraudioqualitykey.md)
   An integer value that represents the audio quality for conversion.
-- [let AVEncoderAudioQualityForVBRKey: String](avencoderaudioqualityforvbrkey.md)
+- [let AVEncoderAudioQualityForVBRKey: String](./avencoderaudioqualityforvbrkey.md)
 
 
 ---

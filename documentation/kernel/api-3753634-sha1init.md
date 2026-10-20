@@ -1,14 +1,15 @@
 # SHA1Init
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 void SHA1Init(SHA1_CTX *);
 ```
 

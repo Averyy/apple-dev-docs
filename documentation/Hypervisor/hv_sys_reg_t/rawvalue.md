@@ -1,12 +1,13 @@
 # rawValue
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An unsigned 16-bit integer that represents the system registers.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

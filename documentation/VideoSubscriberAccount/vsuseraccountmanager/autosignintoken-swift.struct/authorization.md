@@ -1,7 +1,8 @@
 # authorization
 
 **Framework**: Video Subscriber Account  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A state that represents a person’s approval of Automatic Sign-In.
 
@@ -20,11 +21,11 @@ var authorization: VSUserAccountManager.AutoSignInAuthorization { get }
 
 ## Mentions
 
-- [Signing people in to their media accounts automatically](signing-people-in-to-media-apps-automatically.md)
+- [Signing people in to their media accounts automatically](../../signing-people-in-to-media-apps-automatically.md)
 
 #### Discussion
 
-The default value is [`VSUserAccountManager.AutoSignInAuthorization.notDetermined`](vsuseraccountmanager/autosigninauthorization/notdetermined.md). The framework updates the value based on a person’s answer to the prompt to opt in to Automatic Sign-In (see [`requestAutoSignInAuthorization()`](vsuseraccountmanager/requestautosigninauthorization().md)).
+The default value is [`VSUserAccountManager.AutoSignInAuthorization.notDetermined`](../autosigninauthorization/notdetermined.md). The framework updates the value based on a person’s answer to the prompt to opt in to Automatic Sign-In (see [`requestAutoSignInAuthorization()`](../requestautosigninauthorization%28%29.md)).
 
 
 ---

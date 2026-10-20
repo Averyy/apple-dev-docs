@@ -1,7 +1,8 @@
 # readAttributeMaxCompPressure(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeMaxCompPressure(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeMaxCompPressureWithParams:(MTRReadParams *) params;
 ```
 
 

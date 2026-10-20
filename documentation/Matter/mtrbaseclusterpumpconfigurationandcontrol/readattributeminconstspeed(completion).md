@@ -1,7 +1,8 @@
 # readAttributeMinConstSpeed(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeMinConstSpeed(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeMinConstSpeed() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeMinConstSpeedWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

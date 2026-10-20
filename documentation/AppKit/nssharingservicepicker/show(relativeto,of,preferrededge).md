@@ -1,7 +1,8 @@
 # show(relativeTo:of:preferredEdge:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Shows the picker interface and populates it with the relevant sharing services.
 
@@ -12,6 +13,10 @@ Shows the picker interface and populates it with the relevant sharing services.
 
 ```swift
 func show(relativeTo rect: NSRect, of view: NSView, preferredEdge: NSRectEdge)
+```
+
+```objc
+- (void) showRelativeToRect:(NSRect) rect ofView:(NSView *) view preferredEdge:(NSRectEdge) preferredEdge;
 ```
 
 #### Discussion
@@ -32,13 +37,14 @@ The following example shows the basic code to display the picker in response to 
 
 ## Parameters
 
-- `rect`: The rectangle the picker should be showed relative to. The coordinates are in the `view` coordinate system. Passing [`NSZeroRect`](https://developer.apple.com/documentation/foundation/nszerorect) causes the view bounds to be used.
+- `rect`: The rectangle the picker should be showed relative to. The coordinates are in the `view` coordinate system. Passing [`NSZeroRect`](../../Foundation/nszerorect.md) causes the view bounds to be used.
 - `view`: The view.
-- `preferredEdge`: The preferred edge of the view to display the picker. See [`NSRectEdge`](https://developer.apple.com/documentation/foundation/nsrectedge) for the possible values.
+- `preferredEdge`: The preferred edge of the view to display the picker. See [`NSRectEdge`](../../Foundation/nsrectedge.md) for the possible values.
 
 ## See Also
 
-- [func close()](nssharingservicepicker/close.md)
+### Displaying the sharing service picker
+- [func close()](./close%28%29.md)
   Closes the picker interface.
 
 

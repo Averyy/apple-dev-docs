@@ -1,14 +1,15 @@
 # OUTPUT_COMMUNICATION_SPEAKER
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 OUTPUT_COMMUNICATION_SPEAKER = 0x0306
 ```
 

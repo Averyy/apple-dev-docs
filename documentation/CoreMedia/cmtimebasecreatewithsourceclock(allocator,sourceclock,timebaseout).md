@@ -1,7 +1,8 @@
 # CMTimebaseCreateWithSourceClock(allocator:sourceClock:timebaseOut:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a timebase by using a source clock.
 
@@ -20,6 +21,10 @@ Creates a timebase by using a source clock.
 func CMTimebaseCreateWithSourceClock(allocator: CFAllocator?, sourceClock: CMClock, timebaseOut: UnsafeMutablePointer<CMTimebase?>) -> OSStatus
 ```
 
+```c
+extern OSStatus CMTimebaseCreateWithSourceClock(CFAllocatorRef allocator, CMClockRef sourceClock, CMTimebaseRef*timebaseOut);
+```
+
 ## Parameters
 
 - `allocator`: The allocator to use for creating the timebase.
@@ -28,7 +33,8 @@ func CMTimebaseCreateWithSourceClock(allocator: CFAllocator?, sourceClock: CMClo
 
 ## See Also
 
-- [func CMTimebaseCreateWithSourceTimebase(allocator: CFAllocator?, sourceTimebase: CMTimebase, timebaseOut: UnsafeMutablePointer<CMTimebase?>) -> OSStatus](cmtimebasecreatewithsourcetimebase(allocator:sourcetimebase:timebaseout:).md)
+### Creating Timebases
+- [func CMTimebaseCreateWithSourceTimebase(allocator: CFAllocator?, sourceTimebase: CMTimebase, timebaseOut: UnsafeMutablePointer<CMTimebase?>) -> OSStatus](./cmtimebasecreatewithsourcetimebase%28allocator,sourcetimebase,timebaseout%29.md)
   Creates a timebase by using a source timebase.
 
 

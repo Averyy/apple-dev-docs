@@ -1,7 +1,8 @@
 # NowPlayingView
 
 **Framework**: WatchKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that displays the system’s Now Playing interface so that the user can control audio.
 
@@ -17,7 +18,7 @@ A view that displays the system’s Now Playing interface so that the user can c
 
 ## Mentions
 
-- [Adding a Now Playing View](adding-a-now-playing-view.md)
+- [Adding a Now Playing View](./adding-a-now-playing-view.md)
 
 #### Overview
 
@@ -30,19 +31,20 @@ Always present the Now Playing view so that it fills the screen in a nonscrollin
 ## Topics
 
 ### Creating a Now Playing View
-- [init()](nowplayingview/init.md)
+- [init()](./nowplayingview/init%28%29.md)
   Creates a view that displays the system’s Now Playing interface.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [Storyboard support](storyboard-support.md)
+### User interface
+- [Storyboard support](./storyboard-support.md)
   Connect your code to storyboard elements using interface controllers, interface objects, and event handlers.
 
 

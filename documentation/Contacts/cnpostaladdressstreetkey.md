@@ -1,7 +1,8 @@
 # CNPostalAddressStreetKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The street name of the address.
 
@@ -19,25 +20,30 @@ The street name of the address.
 let CNPostalAddressStreetKey: String
 ```
 
+```c
+extern NSString * const CNPostalAddressStreetKey;
+```
+
 #### Discussion
 
 This key takes a string value.
 
 ## See Also
 
-- [let CNPostalAddressCityKey: String](cnpostaladdresscitykey.md)
+### Getting the postal attribute keys
+- [let CNPostalAddressCityKey: String](./cnpostaladdresscitykey.md)
   The city of the address.
-- [let CNPostalAddressCountryKey: String](cnpostaladdresscountrykey.md)
+- [let CNPostalAddressCountryKey: String](./cnpostaladdresscountrykey.md)
   The country or region name of the address.
-- [let CNPostalAddressISOCountryCodeKey: String](cnpostaladdressisocountrycodekey.md)
+- [let CNPostalAddressISOCountryCodeKey: String](./cnpostaladdressisocountrycodekey.md)
   The ISO country code of the address.
-- [let CNPostalAddressPostalCodeKey: String](cnpostaladdresspostalcodekey.md)
+- [let CNPostalAddressPostalCodeKey: String](./cnpostaladdresspostalcodekey.md)
   The postal code of the address.
-- [let CNPostalAddressStateKey: String](cnpostaladdressstatekey.md)
+- [let CNPostalAddressStateKey: String](./cnpostaladdressstatekey.md)
   The state name of the address.
-- [let CNPostalAddressSubAdministrativeAreaKey: String](cnpostaladdresssubadministrativeareakey.md)
+- [let CNPostalAddressSubAdministrativeAreaKey: String](./cnpostaladdresssubadministrativeareakey.md)
   The subadministrative area of the address.
-- [let CNPostalAddressSubLocalityKey: String](cnpostaladdresssublocalitykey.md)
+- [let CNPostalAddressSubLocalityKey: String](./cnpostaladdresssublocalitykey.md)
   The sublocality of the address.
 
 

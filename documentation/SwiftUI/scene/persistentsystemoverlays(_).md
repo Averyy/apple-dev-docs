@@ -1,7 +1,8 @@
 # persistentSystemOverlays(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the preferred visibility of the non-transient system views overlaying the app.
 
@@ -25,7 +26,7 @@ func persistentSystemOverlays(_ preferredVisibility: Visibility) -> some Scene
 
 Use this modifier to influence the appearance of system overlays in your app. The behavior varies by platform.
 
-In iOS, the following example hides every persistent system overlay. In visionOS 2 and later, the SharePlay Indicator hides if the scene is shared through SharePlay, or not shared at all. During screen sharing, the indicator always remains visible. The Home indicator doesn’t appear without specific user intent when you set visibility to [`Visibility.hidden`](visibility/hidden.md). For a [`WindowGroup`](windowgroup.md), the modifier affects the visibility of the window chrome. For an [`ImmersiveSpace`](immersivespace.md), it affects the Home indicator.
+In iOS, the following example hides every persistent system overlay. In visionOS 2 and later, the SharePlay Indicator hides if the scene is shared through SharePlay, or not shared at all. During screen sharing, the indicator always remains visible. The Home indicator doesn’t appear without specific user intent when you set visibility to [`Visibility.hidden`](../visibility/hidden.md). For a [`WindowGroup`](../windowgroup.md), the modifier affects the visibility of the window chrome. For an [`ImmersiveSpace`](../immersivespace.md), it affects the Home indicator.
 
 ```swift
 struct ImmersiveView: View {
@@ -50,19 +51,20 @@ Affected non-transient system views can include, but are not limited to:
 
 ## See Also
 
-- [struct WindowVisibilityToggle](windowvisibilitytoggle.md)
+### Configuring window visibility
+- [struct WindowVisibilityToggle](../windowvisibilitytoggle.md)
   A specialized button for toggling the visibility of a window.
-- [func defaultLaunchBehavior(SceneLaunchBehavior) -> some Scene](scene/defaultlaunchbehavior(_:).md)
+- [func defaultLaunchBehavior(SceneLaunchBehavior) -> some Scene](./defaultlaunchbehavior%28_%29.md)
   Sets the default launch behavior for this scene.
-- [func restorationBehavior(SceneRestorationBehavior) -> some Scene](scene/restorationbehavior(_:).md)
+- [func restorationBehavior(SceneRestorationBehavior) -> some Scene](./restorationbehavior%28_%29.md)
   Sets the restoration behavior for this scene.
-- [struct SceneLaunchBehavior](scenelaunchbehavior.md)
+- [struct SceneLaunchBehavior](../scenelaunchbehavior.md)
   The launch behavior for a scene.
-- [struct SceneRestorationBehavior](scenerestorationbehavior.md)
+- [struct SceneRestorationBehavior](../scenerestorationbehavior.md)
   The restoration behavior for a scene.
-- [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](view/windowtoolbarfullscreenvisibility(_:).md)
+- [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](../view/windowtoolbarfullscreenvisibility%28_%29.md)
   Configures the visibility of the window toolbar when the window enters full screen mode.
-- [struct WindowToolbarFullScreenVisibility](windowtoolbarfullscreenvisibility.md)
+- [struct WindowToolbarFullScreenVisibility](../windowtoolbarfullscreenvisibility.md)
   The visibility of the window toolbar with respect to full screen mode.
 
 

@@ -1,7 +1,8 @@
 # createNew
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Creates a new layer instead of opening an existing file. Any existing file at the specified path will be overwritten.
 

@@ -1,7 +1,8 @@
 # MLHandActionClassifier
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A task that creates a hand action classification model by training with videos of people’s hand movements that you provide.
 
@@ -21,81 +22,82 @@ struct MLHandActionClassifier
 ## Topics
 
 ### Training a hand action classifier asynchronously
-- [static func train(trainingData: MLHandActionClassifier.DataSource, parameters: MLHandActionClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLHandActionClassifier>](mlhandactionclassifier/train(trainingdata:parameters:sessionparameters:).md)
+- [static func train(trainingData: MLHandActionClassifier.DataSource, parameters: MLHandActionClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLHandActionClassifier>](./mlhandactionclassifier/train%28trainingdata,parameters,sessionparameters%29.md)
   Begins an asynchronous hand action classifier’s training session.
-- [static func makeTrainingSession(trainingData: MLHandActionClassifier.DataSource, parameters: MLHandActionClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLHandActionClassifier>](mlhandactionclassifier/maketrainingsession(trainingdata:parameters:sessionparameters:).md)
+- [static func makeTrainingSession(trainingData: MLHandActionClassifier.DataSource, parameters: MLHandActionClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLHandActionClassifier>](./mlhandactionclassifier/maketrainingsession%28trainingdata,parameters,sessionparameters%29.md)
   Creates an asynchronous hand action classifier’s training session.
-- [static func resume(MLTrainingSession<MLHandActionClassifier>) throws -> MLJob<MLHandActionClassifier>](mlhandactionclassifier/resume(_:).md)
+- [static func resume(MLTrainingSession<MLHandActionClassifier>) throws -> MLJob<MLHandActionClassifier>](./mlhandactionclassifier/resume%28_%29.md)
   Begins or continues an asynchronous hand action classifier’s training session.
-- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLHandActionClassifier>](mlhandactionclassifier/restoretrainingsession(sessionparameters:).md)
+- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLHandActionClassifier>](./mlhandactionclassifier/restoretrainingsession%28sessionparameters%29.md)
   Recreates an asynchronous hand action classifier’s training session by restoring its saved state from the file system.
 ### Creating a hand action classifier from a checkpoint
-- [init(checkpoint: MLCheckpoint) throws](mlhandactionclassifier/init(checkpoint:).md)
+- [init(checkpoint: MLCheckpoint) throws](./mlhandactionclassifier/init%28checkpoint%29.md)
   Creates a hand action classifier from a training session checkpoint.
 ### Training a hand action classifier synchronously
-- [init(trainingData: MLHandActionClassifier.DataSource, parameters: MLHandActionClassifier.ModelParameters) throws](mlhandactionclassifier/init(trainingdata:parameters:).md)
+- [init(trainingData: MLHandActionClassifier.DataSource, parameters: MLHandActionClassifier.ModelParameters) throws](./mlhandactionclassifier/init%28trainingdata,parameters%29.md)
   Creates a hand action classifier by starting a synchronous training session.
 ### Evaluating a hand action classifier
-- [func evaluation(on: MLHandActionClassifier.DataSource) throws -> MLClassifierMetrics](mlhandactionclassifier/evaluation(on:).md)
+- [func evaluation(on: MLHandActionClassifier.DataSource) throws -> MLClassifierMetrics](./mlhandactionclassifier/evaluation%28on%29.md)
   Generates metrics describing the hand action classifier’s performance on labeled videos.
-- [var trainingMetrics: MLClassifierMetrics](mlhandactionclassifier/trainingmetrics.md)
+- [var trainingMetrics: MLClassifierMetrics](./mlhandactionclassifier/trainingmetrics.md)
   Measurements of the hand action classifier’s performance on the training dataset.
-- [var validationMetrics: MLClassifierMetrics](mlhandactionclassifier/validationmetrics.md)
+- [var validationMetrics: MLClassifierMetrics](./mlhandactionclassifier/validationmetrics.md)
   Measurements of the hand action classifier’s performance on the validation dataset.
 ### Testing a hand action classifier
-- [func prediction(from: URL) throws -> [MLHandActionClassifier.Prediction]](mlhandactionclassifier/prediction(from:).md)
+- [func prediction(from: URL) throws -> [MLHandActionClassifier.Prediction]](./mlhandactionclassifier/prediction%28from%29.md)
   Generates an array of hand-action predictions for a video.
-- [func predictions(from: [URL]) throws -> [[MLHandActionClassifier.Prediction]]](mlhandactionclassifier/predictions(from:).md)
+- [func predictions(from: [URL]) throws -> [[MLHandActionClassifier.Prediction]]](./mlhandactionclassifier/predictions%28from%29.md)
   Generates an array of hand action predictions for each video in a URL array.
-- [MLHandActionClassifier.Prediction](mlhandactionclassifier/prediction.md)
+- [MLHandActionClassifier.Prediction](./mlhandactionclassifier/prediction.md)
   A collection of predictions, each paired with its confidence, for a range of video frames.
 ### Saving a hand action classifier
-- [func write(to: URL, metadata: MLModelMetadata?) throws](mlhandactionclassifier/write(to:metadata:).md)
+- [func write(to: URL, metadata: MLModelMetadata?) throws](./mlhandactionclassifier/write%28to,metadata%29.md)
   Exports the hand action classifier as a CoreML model file.
-- [func write(toFile: String, metadata: MLModelMetadata?) throws](mlhandactionclassifier/write(tofile:metadata:).md)
+- [func write(toFile: String, metadata: MLModelMetadata?) throws](./mlhandactionclassifier/write%28tofile,metadata%29.md)
   Exports the hand action classifier as a Core ML model file.
 ### Inspecting a hand action classifier model
-- [var model: MLModel](mlhandactionclassifier/model.md)
+- [var model: MLModel](./mlhandactionclassifier/model.md)
   The underlying Core ML model of the hand action classifier stored in memory.
-- [let modelParameters: MLHandActionClassifier.ModelParameters](mlhandactionclassifier/modelparameters-swift.property.md)
+- [let modelParameters: MLHandActionClassifier.ModelParameters](./mlhandactionclassifier/modelparameters-swift.property.md)
   The hand action model’s configuration parameters.
 ### Describing a hand action classifier
-- [var description: String](mlhandactionclassifier/description.md)
+- [var description: String](./mlhandactionclassifier/description.md)
   A text representation of the hand action classifier.
-- [var debugDescription: String](mlhandactionclassifier/debugdescription.md)
+- [var debugDescription: String](./mlhandactionclassifier/debugdescription.md)
   A text representation of the hand action classifier suitable for debugging.
-- [var playgroundDescription: Any](mlhandactionclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./mlhandactionclassifier/playgrounddescription.md)
   A description of the hand action classifier that’s viewable in a playground.
 ### Supporting types
-- [MLHandActionClassifier.DataSource](mlhandactionclassifier/datasource.md)
+- [MLHandActionClassifier.DataSource](./mlhandactionclassifier/datasource.md)
   A hand action classifier dataset that contains annotated videos or hand joint location data.
-- [MLHandActionClassifier.ModelParameters](mlhandactionclassifier/modelparameters-swift.struct.md)
+- [MLHandActionClassifier.ModelParameters](./mlhandactionclassifier/modelparameters-swift.struct.md)
   A set of parameters that affect the training process of a hand action classifier task.
-- [MLHandActionClassifier.VideoAugmentationOptions](mlhandactionclassifier/videoaugmentationoptions.md)
+- [MLHandActionClassifier.VideoAugmentationOptions](./mlhandactionclassifier/videoaugmentationoptions.md)
   Options a hand action classification training session can use to generate additional training data from the videos you provide.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlhandactionclassifier/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlhandactionclassifier/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlhandactionclassifier/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./mlhandactionclassifier/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./mlhandactionclassifier/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./mlhandactionclassifier/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
 
 ## See Also
 
-- [Creating an Action Classifier Model](creating-an-action-classifier-model.md)
+### Video models
+- [Creating an Action Classifier Model](./creating-an-action-classifier-model.md)
   Train a machine learning model to recognize a person’s body movements.
-- [Detecting human actions in a live video feed](detecting-human-actions-in-a-live-video-feed.md)
+- [Detecting human actions in a live video feed](./detecting-human-actions-in-a-live-video-feed.md)
   Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
-- [struct MLActionClassifier](mlactionclassifier.md)
+- [struct MLActionClassifier](./mlactionclassifier.md)
   A model you train with videos to classify a person’s body movements.
-- [struct MLStyleTransfer](mlstyletransfer.md)
+- [struct MLStyleTransfer](./mlstyletransfer.md)
   A model you train to apply an image’s style to other images or videos.
 
 

@@ -1,7 +1,8 @@
 # groupingAttributes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of grouping attributes. (read-only)
 
@@ -20,25 +21,30 @@ An array of grouping attributes. (read-only)
 var groupingAttributes: [String]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NSString *> * groupingAttributes;
+```
+
 #### Discussion
 
 Setting this property while a query is running stops the query and discards the current results. The receiver immediately starts a new query.
 
 ## See Also
 
-- [var searchScopes: [Any]](nsmetadataquery/searchscopes.md)
+### Configuring queries
+- [var searchScopes: [Any]](./searchscopes.md)
   An array containing the search scopes.
-- [var predicate: NSPredicate?](nsmetadataquery/predicate.md)
+- [var predicate: NSPredicate?](./predicate.md)
   The predicate used to filter query results.
-- [var sortDescriptors: [NSSortDescriptor]](nsmetadataquery/sortdescriptors.md)
+- [var sortDescriptors: [NSSortDescriptor]](./sortdescriptors.md)
   An array of sort descriptor objects.
-- [var valueListAttributes: [String]](nsmetadataquery/valuelistattributes.md)
+- [var valueListAttributes: [String]](./valuelistattributes.md)
   An array of attributes whose values are gathered by the query.
-- [var notificationBatchingInterval: TimeInterval](nsmetadataquery/notificationbatchinginterval.md)
+- [var notificationBatchingInterval: TimeInterval](./notificationbatchinginterval.md)
   The interval at which notification of updated results occurs.
-- [var delegate: (any NSMetadataQueryDelegate)?](nsmetadataquery/delegate.md)
+- [var delegate: (any NSMetadataQueryDelegate)?](./delegate.md)
   The query’s delegate.
-- [var searchItems: [Any]?](nsmetadataquery/searchitems.md)
+- [var searchItems: [Any]?](./searchitems.md)
   An array of objects that define the query’s scope.
 
 

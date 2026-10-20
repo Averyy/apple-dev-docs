@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the word embedding parameters that’s suitable for output during debugging.
 
@@ -16,9 +17,10 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](mlwordembedding/modelparameters-swift.struct/description.md)
+### Describing parameters
+- [var description: String](./description.md)
   A text representation of the word embedding parameters.
-- [var playgroundDescription: Any](mlwordembedding/modelparameters-swift.struct/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the word embedding parameters shown in a playground.
 
 

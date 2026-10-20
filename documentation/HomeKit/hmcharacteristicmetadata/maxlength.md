@@ -1,7 +1,8 @@
 # maxLength
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of UTF-8 characters allowed in a characteristic that uses a string format.
 
@@ -19,19 +20,24 @@ The maximum number of UTF-8 characters allowed in a characteristic that uses a s
 var maxLength: NSNumber? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSNumber * maxLength;
+```
+
 #### Discussion
 
 This value only applies to characteristics with a string type.
 
 ## See Also
 
-- [var validValues: [NSNumber]?](hmcharacteristicmetadata/validvalues.md)
+### Bounding the value
+- [var validValues: [NSNumber]?](./validvalues.md)
   The subset of valid values supported by the characteristic when the format is of type unsigned integer.
-- [var minimumValue: NSNumber?](hmcharacteristicmetadata/minimumvalue.md)
+- [var minimumValue: NSNumber?](./minimumvalue.md)
   The minimum value for the characteristic.
-- [var maximumValue: NSNumber?](hmcharacteristicmetadata/maximumvalue.md)
+- [var maximumValue: NSNumber?](./maximumvalue.md)
   The maximum value for the characteristic.
-- [var stepValue: NSNumber?](hmcharacteristicmetadata/stepvalue.md)
+- [var stepValue: NSNumber?](./stepvalue.md)
   The minimum interval between values for the characteristic.
 
 

@@ -1,7 +1,8 @@
 # highlightNextResult(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the highlighted result to the next or previous match.
 
@@ -17,6 +18,10 @@ Updates the highlighted result to the next or previous match.
 func highlightNextResult(in direction: UITextStorageDirection)
 ```
 
+```objc
+- (void) highlightNextResultInDirection:(UITextStorageDirection) direction;
+```
+
 #### Discussion
 
 The system calls this method when a person taps the next or previous button, or enters `Return` or `Shift+Return` on a hardware keyboard while the search field has focus.
@@ -27,13 +32,14 @@ The system calls this method when a person taps the next or previous button, or 
 
 ## See Also
 
-- [func performSearch(query: String, options: UITextSearchOptions?)](uifindsession/performsearch(query:options:).md)
+### Managing session interactions
+- [func performSearch(query: String, options: UITextSearchOptions?)](./performsearch%28query,options%29.md)
   Initiates a search for the query string you provide.
-- [func performSingleReplacement(query: String, replacementString: String, options: UITextSearchOptions?)](uifindsession/performsinglereplacement(query:replacementstring:options:).md)
+- [func performSingleReplacement(query: String, replacementString: String, options: UITextSearchOptions?)](./performsinglereplacement%28query,replacementstring,options%29.md)
   Replaces a single instance of the query string with the replacement string you provide.
-- [func replaceAll(searchQuery: String, replacementString: String, options: UITextSearchOptions?)](uifindsession/replaceall(searchquery:replacementstring:options:).md)
+- [func replaceAll(searchQuery: String, replacementString: String, options: UITextSearchOptions?)](./replaceall%28searchquery,replacementstring,options%29.md)
   Replaces all matching instances of the query string with the replacement string you provide.
-- [func invalidateFoundResults()](uifindsession/invalidatefoundresults.md)
+- [func invalidateFoundResults()](./invalidatefoundresults%28%29.md)
   Invalidates the found ranges and updates the system find panel.
 
 

@@ -1,7 +1,8 @@
 # startIndex
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The starting position for iterating members of the set.
 
@@ -19,6 +20,8 @@ The starting position for iterating members of the set.
 ```swift
 var startIndex: Set<Element>.Index { get }
 ```
+
+Available when `Element` conforms to `Hashable`.
 
 #### Discussion
 

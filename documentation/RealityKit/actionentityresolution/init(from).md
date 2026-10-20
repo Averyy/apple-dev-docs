@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance from a decoder.
 

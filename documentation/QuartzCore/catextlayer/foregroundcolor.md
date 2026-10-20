@@ -1,7 +1,8 @@
 # foregroundColor
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color used to render the receiver’s text. Animatable.
 
@@ -19,21 +20,26 @@ The color used to render the receiver’s text. Animatable.
 var foregroundColor: CGColor? { get set }
 ```
 
+```objc
+@property (nullable) CGColorRef foregroundColor;
+```
+
 #### Discussion
 
 Defaults to opaque white.
 
-The `foregroundColor` property is only used when the [`string`](catextlayer/string.md) property is not an `NSAttributedString`.
+The `foregroundColor` property is only used when the [`string`](./string.md) property is not an `NSAttributedString`.
 
 > **Note**:  Implicit animation of this property is only enabled in applications compiled for macOS 10.6 and later.
 
 ## See Also
 
-- [var font: CFTypeRef?](catextlayer/font.md)
+### Text Visual Properties
+- [var font: CFTypeRef?](./font.md)
   The font used to render the receiver’s text.
-- [var fontSize: CGFloat](catextlayer/fontsize.md)
+- [var fontSize: CGFloat](./fontsize.md)
   The font size used to render the receiver’s text. Animatable.
-- [var allowsFontSubpixelQuantization: Bool](catextlayer/allowsfontsubpixelquantization.md)
+- [var allowsFontSubpixelQuantization: Bool](./allowsfontsubpixelquantization.md)
   Determines whether to allow subpixel quantization for the graphics context used for text rendering.
 
 

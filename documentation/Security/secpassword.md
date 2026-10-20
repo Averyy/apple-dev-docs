@@ -1,7 +1,8 @@
 # SecPassword
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Contains information about a password.
 
@@ -14,11 +15,15 @@ Contains information about a password.
 class SecPassword
 ```
 
+```c
+typedef struct __SecPassword * SecPasswordRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

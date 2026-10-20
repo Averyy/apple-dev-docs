@@ -1,7 +1,8 @@
 # clearReferences()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears all authored references on this prim.
 

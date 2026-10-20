@@ -1,11 +1,12 @@
 # MobileDocumentRequest Implementations
 
-**Framework**: ProximityReader
+**Framework**: ProximityReader  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [MobilePhotoIDRawDataRequest.Response](mobilephotoidrawdatarequest/response.md)
+- [MobilePhotoIDRawDataRequest.Response](./response.md)
   A type that contains the response information from a successful photo ID raw data request.
 
 

@@ -1,7 +1,8 @@
 # preprocessed(from:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Preprocesses a sequence of examples.
 
@@ -31,17 +32,18 @@ The preprocessed examples.
 
 ## See Also
 
-- [func fitted<S>(to: S, eventHandler: EventHandler?) async throws -> PreprocessingEstimator<Preprocessor, Estimator>.Transformer](preprocessingestimator/fitted(to:eventhandler:).md)
+### Preprocesing and fitting
+- [func fitted<S>(to: S, eventHandler: EventHandler?) async throws -> PreprocessingEstimator<Preprocessor, Estimator>.Transformer](./fitted%28to,eventhandler%29.md)
   Fits a composed transformer to a sequence of examples.
-- [func fitted<S>(toPreprocessed: S, eventHandler: EventHandler?) async throws -> PreprocessingEstimator<Preprocessor, Estimator>.Transformer](preprocessingestimator/fitted(topreprocessed:eventhandler:).md)
+- [func fitted<S>(toPreprocessed: S, eventHandler: EventHandler?) async throws -> PreprocessingEstimator<Preprocessor, Estimator>.Transformer](./fitted%28topreprocessed,eventhandler%29.md)
   Fits a transformer to a sequence of preprocessed features.
-- [PreprocessingEstimator.Input](preprocessingestimator/input.md)
+- [PreprocessingEstimator.Input](./input.md)
   The input type.
-- [PreprocessingEstimator.Intermediate](preprocessingestimator/intermediate.md)
+- [PreprocessingEstimator.Intermediate](./intermediate.md)
   The intermediate type.
-- [PreprocessingEstimator.Output](preprocessingestimator/output.md)
+- [PreprocessingEstimator.Output](./output.md)
   The output type.
-- [protocol Transformer](transformer.md)
+- [protocol Transformer](../transformer.md)
   A transformer that takes an input and produces an output.
 
 

@@ -1,7 +1,8 @@
 # CGImagePixelFormatInfo.RGBCIF10
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 12.0+
@@ -18,13 +19,18 @@
 case RGBCIF10
 ```
 
+```c
+kCGImagePixelFormatRGBCIF10
+```
+
 ## See Also
 
-- [CGImagePixelFormatInfo.RGB101010](cgimagepixelformatinfo/rgb101010.md)
-- [CGImagePixelFormatInfo.RGB555](cgimagepixelformatinfo/rgb555.md)
-- [CGImagePixelFormatInfo.RGB565](cgimagepixelformatinfo/rgb565.md)
-- [CGImagePixelFormatInfo.mask](cgimagepixelformatinfo/mask.md)
-- [CGImagePixelFormatInfo.packed](cgimagepixelformatinfo/packed.md)
+### Enumeration Cases
+- [CGImagePixelFormatInfo.RGB101010](./rgb101010.md)
+- [CGImagePixelFormatInfo.RGB555](./rgb555.md)
+- [CGImagePixelFormatInfo.RGB565](./rgb565.md)
+- [CGImagePixelFormatInfo.mask](./mask.md)
+- [CGImagePixelFormatInfo.packed](./packed.md)
 
 
 ---

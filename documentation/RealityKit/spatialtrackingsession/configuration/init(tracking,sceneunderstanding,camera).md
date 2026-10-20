@@ -1,7 +1,8 @@
 # init(tracking:sceneUnderstanding:camera:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration with anchor capabilities, scene-understanding capabilities, and camera feeds.
 
@@ -17,9 +18,9 @@ init(tracking anchorCapabilities: Set<SpatialTrackingSession.Configuration.Ancho
 
 ## Parameters
 
-- `anchorCapabilities`: The set of anchor capabilities to run with a [`SpatialTrackingSession`](spatialtrackingsession.md).
-- `sceneUnderstanding`: The set of scene-understanding capabilities to run with a [`SpatialTrackingSession`](spatialtrackingsession.md).
-- `camera`: The camera feed to run with a [`SpatialTrackingSession`](spatialtrackingsession.md).
+- `anchorCapabilities`: The set of anchor capabilities to run with a [`SpatialTrackingSession`](../../spatialtrackingsession.md).
+- `sceneUnderstanding`: The set of scene-understanding capabilities to run with a [`SpatialTrackingSession`](../../spatialtrackingsession.md).
+- `camera`: The camera feed to run with a [`SpatialTrackingSession`](../../spatialtrackingsession.md).
 
 
 ---

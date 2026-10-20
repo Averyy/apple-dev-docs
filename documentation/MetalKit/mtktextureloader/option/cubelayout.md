@@ -1,7 +1,8 @@
 # cubeLayout
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key used to specify how cube texture data is arranged in the source image.
 
@@ -19,15 +20,20 @@ A key used to specify how cube texture data is arranged in the source image.
 static let cubeLayout: MTKTextureLoader.Option
 ```
 
+```c
+extern MTKTextureLoaderOption const MTKTextureLoaderOptionCubeLayout;
+```
+
 #### Discussion
 
-The value for this key is one of the values listed for [`MTKTextureLoader.CubeLayout`](mtktextureloader/cubelayout.md). If this option is omitted, the texture loader does not create a cube texture.
+The value for this key is one of the values listed for [`MTKTextureLoader.CubeLayout`](../cubelayout.md). If this option is omitted, the texture loader does not create a cube texture.
 
-This option cannot be used with PVR files, KTX files, or [`MDLTexture`](https://developer.apple.com/documentation/modelio/mdltexture) objects, which support cube textures directly.
+This option cannot be used with PVR files, KTX files, or [`MDLTexture`](../../../ModelIO/mdltexture.md) objects, which support cube textures directly.
 
 ## See Also
 
-- [MTKTextureLoader.CubeLayout](mtktextureloader/cubelayout.md)
+### Specifying Cube Layout
+- [MTKTextureLoader.CubeLayout](../cubelayout.md)
   Options for specifying how cube texture data is arranged in the source image.
 
 

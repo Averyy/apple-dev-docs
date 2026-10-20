@@ -1,7 +1,8 @@
 # language
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A language ID that determines the language for the search result text.
 
@@ -10,19 +11,20 @@ A language ID that determines the language for the search result text.
 
 ## Declaration
 
-```swift
+```
 language?: string;
 ```
 
 #### Discussion
 
-This overrides the [`language`](serviceconstructoroptions/language.md) provided to the [`Search`](search.md) constructor.
+This overrides the [`language`](../serviceconstructoroptions/language.md) provided to the [`Search`](../search.md) constructor.
 
 ## See Also
 
-- [coordinate](searchoptions/coordinate.md)
+### Autocomplete search initialization
+- [coordinate](./coordinate.md)
   A map coordinate that provides a hint for the geographic area to search.
-- [region](searchoptions/region.md)
+- [region](./region.md)
   A map region that provides a hint for the geographic area to search.
 
 

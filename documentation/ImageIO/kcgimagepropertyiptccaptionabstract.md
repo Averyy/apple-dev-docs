@@ -1,7 +1,8 @@
 # kCGImagePropertyIPTCCaptionAbstract
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The description of the image.
 
@@ -20,21 +21,26 @@ The description of the image.
 let kCGImagePropertyIPTCCaptionAbstract: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyIPTCCaptionAbstract;
+```
+
 ## See Also
 
-- [let kCGImagePropertyIPTCImageType: CFString](kcgimagepropertyiptcimagetype.md)
+### Image Information
+- [let kCGImagePropertyIPTCImageType: CFString](./kcgimagepropertyiptcimagetype.md)
   The image type.
-- [let kCGImagePropertyIPTCImageOrientation: CFString](kcgimagepropertyiptcimageorientation.md)
+- [let kCGImagePropertyIPTCImageOrientation: CFString](./kcgimagepropertyiptcimageorientation.md)
   The image orientation (portrait, landscape, or square).
-- [let kCGImagePropertyIPTCLanguageIdentifier: CFString](kcgimagepropertyiptclanguageidentifier.md)
+- [let kCGImagePropertyIPTCLanguageIdentifier: CFString](./kcgimagepropertyiptclanguageidentifier.md)
   The language identifier, a two-letter code defined by ISO 639:1988.
-- [let kCGImagePropertyIPTCHeadline: CFString](kcgimagepropertyiptcheadline.md)
+- [let kCGImagePropertyIPTCHeadline: CFString](./kcgimagepropertyiptcheadline.md)
   A summary of the contents of the image.
-- [let kCGImagePropertyIPTCCredit: CFString](kcgimagepropertyiptccredit.md)
+- [let kCGImagePropertyIPTCCredit: CFString](./kcgimagepropertyiptccredit.md)
   The name of the service that provided the image.
-- [let kCGImagePropertyIPTCStarRating: CFString](kcgimagepropertyiptcstarrating.md)
+- [let kCGImagePropertyIPTCStarRating: CFString](./kcgimagepropertyiptcstarrating.md)
   The star rating.
-- [let kCGImagePropertyIPTCScene: CFString](kcgimagepropertyiptcscene.md)
+- [let kCGImagePropertyIPTCScene: CFString](./kcgimagepropertyiptcscene.md)
   The scene codes for the image; a scene code is a six-digit string.
 
 

@@ -1,12 +1,13 @@
 # takeBackgroundColorFrom(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the view’s background color to the specified color.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
@@ -15,13 +16,18 @@ Sets the view’s background color to the specified color.
 func takeBackgroundColorFrom(_ sender: Any)
 ```
 
+```objc
+- (void) takeBackgroundColorFrom:(id) sender;
+```
+
 #### Discussion
 
 A view’s background is the area displayed to either side of a PDF document’s pages. The background also appears between pages when page breaks are enabled. The default color is a 50% gray.
 
 ## See Also
 
-- [var backgroundColor: UIColor](pdfview/backgroundcolor.md)
+### Setting Background Color
+- [var backgroundColor: UIColor](./backgroundcolor.md)
   The view’s background color.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button with an automatic label that describes the subscription option and starts a subscribe interaction when someone selects the button.
 
@@ -23,7 +24,7 @@ Creates a button with an automatic label that describes the subscription option 
 
 #### Discussion
 
-You receive [`SubscriptionStoreControlStyleConfiguration.Option`](subscriptionstorecontrolstyleconfiguration/option.md) values to initialize the subscribe button from the [`makeBody(configuration:)`](subscriptionstorecontrolstyle/makebody(configuration:).md) method of your custom subscription store control style.
+You receive [`SubscriptionStoreControlStyleConfiguration.Option`](../subscriptionstorecontrolstyleconfiguration/option.md) values to initialize the subscribe button from the [`makeBody(configuration:)`](../subscriptionstorecontrolstyle/makebody%28configuration%29.md) method of your custom subscription store control style.
 
 
 ---

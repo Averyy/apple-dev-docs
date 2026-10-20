@@ -1,7 +1,8 @@
 # appEntityIdentifier(forSelectionType:identifier:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Associates the items in a SwiftUI list view with app entities to make them discoverable by Apple Intelligence and Siri.
 
@@ -25,7 +26,7 @@ func appEntityIdentifier<I>(forSelectionType itemType: I.Type = I.self, identifi
 
 Use this modifier to make app entities that describe data in a list discoverable by Apple Intelligence and Siri. This provides additional context to the system when the list appears onscreen and people scroll through it.
 
-The following example associates a [`List`](list.md) view that displays books with an app entity for each book in the list.
+The following example associates a [`List`](../list.md) view that displays books with an app entity for each book in the list.
 
 ```swift
 struct BookListView: View {
@@ -44,19 +45,20 @@ struct BookListView: View {
  }
 ```
 
-For more information, refer to [`Providing contextual cues to Apple Intelligence and Siri`](https://developer.apple.com/documentation/appintents/providing-contextual-cues-to-apple-intelligence-and-siri) and [`App Intents`](https://developer.apple.com/documentation/appintents).
+For more information, refer to [Providing contextual cues to Apple Intelligence and Siri](../../AppIntents/providing-contextual-cues-to-apple-intelligence-and-siri.md) and [App Intents](../../AppIntents/AppIntents.md).
 
 ## See Also
 
-- [func appEntityIdentifier(EntityIdentifier?) -> some View](view/appentityidentifier(_:).md)
+### App intents
+- [func appEntityIdentifier(EntityIdentifier?) -> some View](./appentityidentifier%28_%29.md)
   Associates a SwiftUI view with an app entity to make its content discoverable by Apple Intelligence and Siri.
-- [func appEntityUIElements((AppEntityUIElementsContext) -> [AppEntityUIElement]) -> some View](view/appentityuielements(_:).md)
+- [func appEntityUIElements((AppEntityUIElementsContext) -> [AppEntityUIElement]) -> some View](./appentityuielements%28_%29.md)
   Provides the system with additional context to make a custom view’s content discoverable by Apple Intelligence and Siri.
-- [func onAppIntentExecution<I>(I.Type, perform: (I) -> Void) -> some View](view/onappintentexecution(_:perform:).md)
+- [func onAppIntentExecution<I>(I.Type, perform: (I) -> Void) -> some View](./onappintentexecution%28_,perform%29.md)
   Registers a handler to run when the app receives an app intent that targets the associated scene.
-- [func shortcutsLinkStyle(ShortcutsLinkStyle) -> some View](view/shortcutslinkstyle(_:).md)
+- [func shortcutsLinkStyle(ShortcutsLinkStyle) -> some View](./shortcutslinkstyle%28_%29.md)
   Sets the given style for ShortcutsLinks within the view hierarchy
-- [func siriTipViewStyle(SiriTipViewStyle) -> some View](view/siritipviewstyle(_:).md)
+- [func siriTipViewStyle(SiriTipViewStyle) -> some View](./siritipviewstyle%28_%29.md)
   Sets the given style for SiriTipView within the view hierarchy
 
 

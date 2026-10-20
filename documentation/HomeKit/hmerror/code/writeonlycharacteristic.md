@@ -1,7 +1,8 @@
 # HMError.Code.writeOnlyCharacteristic
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An attempt to read from a write-only characteristic.
 
@@ -19,9 +20,14 @@ An attempt to read from a write-only characteristic.
 case writeOnlyCharacteristic
 ```
 
+```c
+HMErrorCodeWriteOnlyCharacteristic
+```
+
 ## See Also
 
-- [HMError.Code.readOnlyCharacteristic](hmerror/code/readonlycharacteristic.md)
+### Characteristic errors
+- [HMError.Code.readOnlyCharacteristic](./readonlycharacteristic.md)
   An attempt to modify a read-only value.
 
 

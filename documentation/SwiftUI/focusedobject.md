@@ -1,7 +1,8 @@
 # FocusedObject
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A property wrapper type for an observable object supplied by the focused view or one of its ancestors.
 
@@ -28,26 +29,27 @@ Focused objects invalidate the current view whenever the observable object chang
 ## Topics
 
 ### Creating the focused object
-- [init()](focusedobject/init.md)
+- [init()](./focusedobject/init%28%29.md)
   Creates a focused object.
 ### Getting the value
-- [var projectedValue: FocusedObject<ObjectType>.Wrapper?](focusedobject/projectedvalue.md)
+- [var projectedValue: FocusedObject<ObjectType>.Wrapper?](./focusedobject/projectedvalue.md)
   A projection of the focused object that creates bindings to its properties using dynamic member lookup.
-- [var wrappedValue: ObjectType?](focusedobject/wrappedvalue.md)
+- [var wrappedValue: ObjectType?](./focusedobject/wrappedvalue.md)
   The underlying value referenced by the focused object.
-- [FocusedObject.Wrapper](focusedobject/wrapper.md)
+- [FocusedObject.Wrapper](./focusedobject/wrapper.md)
   A wrapper around the underlying focused object that can create bindings to its properties using dynamic member lookup.
 
 ## Relationships
 
 ### Conforms To
-- [DynamicProperty](dynamicproperty.md)
+- [DynamicProperty](./dynamicproperty.md)
 
 ## See Also
 
-- [func focusedObject(_:)](view/focusedobject(_:).md)
+### Exposing reference types to focused views
+- [func focusedObject(_:)](./view/focusedobject%28_%29.md)
   Creates a new view that exposes the provided object to other views whose whose state depends on the focused view hierarchy.
-- [func focusedSceneObject(_:)](view/focusedsceneobject(_:).md)
+- [func focusedSceneObject(_:)](./view/focusedsceneobject%28_%29.md)
   Creates a new view that exposes the provided object to other views whose whose state depends on the active scene.
 
 

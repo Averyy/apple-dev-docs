@@ -1,7 +1,8 @@
 # IOUSBHostPropertyKeyLocationID
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The location ID of the USB host device.
 
@@ -13,6 +14,10 @@ The location ID of the USB host device.
 
 ```swift
 let IOUSBHostPropertyKeyLocationID: String
+```
+
+```c
+extern IOUSBHostPropertyKey IOUSBHostPropertyKeyLocationID;
 ```
 
 

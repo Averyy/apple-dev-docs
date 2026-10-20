@@ -2,6 +2,7 @@
 
 **Framework**: Core Haptics  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the device supports audio event playback.
@@ -20,9 +21,14 @@ A Boolean value that indicates whether the device supports audio event playback.
 var supportsAudio: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL supportsAudio;
+```
+
 ## See Also
 
-- [var supportsHaptics: Bool](chhapticdevicecapability/supportshaptics.md)
+### Determining Support for Haptics
+- [var supportsHaptics: Bool](./supportshaptics.md)
   A Boolean value that indicates whether the device supports haptic event playback.
 
 

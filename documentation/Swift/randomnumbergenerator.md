@@ -1,7 +1,8 @@
 # RandomNumberGenerator
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that provides uniformly distributed random data.
 
@@ -41,7 +42,7 @@ enum Weekday: CaseIterable {
 }
 ```
 
-### Conforming to the Randomnumbergenerator Protocol
+### Conforming to the RandomNumberGenerator Protocol
 
 A custom `RandomNumberGenerator` type can have different characteristics than the default `SystemRandomNumberGenerator` type. For example, a seedable generator can be used to generate a repeatable sequence of random values for testing purposes.
 
@@ -52,19 +53,20 @@ Types that conform to `RandomNumberGenerator` should specifically document the t
 ## Topics
 
 ### Generating Random Binary Data
-- [func next() -> UInt64](randomnumbergenerator/next.md)
+- [func next() -> UInt64](./randomnumbergenerator/next%28%29.md)
   Returns a value from a uniform, independent distribution of binary data.
-- [func next<T>(upperBound: T) -> T](randomnumbergenerator/next(upperbound:).md)
+- [func next<T>(upperBound: T) -> T](./randomnumbergenerator/next%28upperbound%29.md)
   Returns a random value that is less than the given upper bound.
 
 ## Relationships
 
 ### Conforming Types
-- [SystemRandomNumberGenerator](systemrandomnumbergenerator.md)
+- [SystemRandomNumberGenerator](./systemrandomnumbergenerator.md)
 
 ## See Also
 
-- [struct SystemRandomNumberGenerator](systemrandomnumbergenerator.md)
+### Random Number Generators
+- [struct SystemRandomNumberGenerator](./systemrandomnumbergenerator.md)
   The system’s default source of random data.
 
 

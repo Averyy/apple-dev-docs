@@ -1,7 +1,8 @@
 # argSort(_:axis:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the indices that sort the elements of the input tensor along the specified axis.
 
@@ -17,6 +18,10 @@ Computes the indices that sort the elements of the input tensor along the specif
 
 ```swift
 func argSort(_ tensor: MPSGraphTensor, axis: Int, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) argSortWithTensor:(MPSGraphTensor *) tensor axis:(NSInteger) axis name:(NSString *) name;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # render(meshInstancesArrayIndex:meshInstanceIndex:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a draw call for a single mesh instance.
 
@@ -24,9 +25,10 @@ func render(meshInstancesArrayIndex: Int, meshInstanceIndex: Int)
 
 ## See Also
 
-- [func render(meshInstancesArrayIndex: Int, range: Range<Int>)](lowlevelrenderer/renderstate/render(meshinstancesarrayindex:range:).md)
+### Rendering mesh instances
+- [func render(meshInstancesArrayIndex: Int, range: Range<Int>)](./render%28meshinstancesarrayindex,range%29.md)
   Encodes draw calls for a contiguous range of mesh instances.
-- [func reset()](lowlevelrenderer/renderstate/reset.md)
+- [func reset()](./reset%28%29.md)
   Resets the render encoder state to renderer defaults.
 
 

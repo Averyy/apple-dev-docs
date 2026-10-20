@@ -1,16 +1,19 @@
 # jsonRepresentation()
 
 **Framework**: MetricKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the contents of the payload in JSON format.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`MetricReport`](../metricreport.md) instead.
 
 ## Declaration
 
@@ -18,13 +21,18 @@ Returns the contents of the payload in JSON format.
 func jsonRepresentation() -> Data
 ```
 
+```objc
+- (NSData *) JSONRepresentation;
+```
+
 #### Return Value
 
-A [`Data`](https://developer.apple.com/documentation/foundation/data) (Swift) or [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) (Objective-C) object containing the JSON representation of the metrics in the payload.
+A [`Data`](../../Foundation/data.md) (Swift) or [`NSData`](../../Foundation/nsdata.md) (Objective-C) object containing the JSON representation of the metrics in the payload.
 
 ## See Also
 
-- [func dictionaryRepresentation() -> [AnyHashable : Any]](mxmetricpayload/dictionaryrepresentation.md)
+### Generating a report
+- [func dictionaryRepresentation() -> [AnyHashable : Any]](./dictionaryrepresentation%28%29.md)
   Returns the results of the payload as a dictionary.
 
 

@@ -1,7 +1,8 @@
 # ~=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether a value is included in a range.
 

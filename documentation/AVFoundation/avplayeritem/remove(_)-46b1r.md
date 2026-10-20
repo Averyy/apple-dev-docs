@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified player item output object from the receiver.
 
@@ -21,15 +22,20 @@ nonisolated
 func remove(_ output: AVPlayerItemOutput)
 ```
 
+```objc
+- (void) removeOutput:(AVPlayerItemOutput *) output;
+```
+
 ## Parameters
 
 - `output`: The player item output object to remove.
 
 ## See Also
 
-- [var outputs: [AVPlayerItemOutput]](avplayeritem/outputs.md)
+### Managing player item outputs
+- [var outputs: [AVPlayerItemOutput]](./outputs.md)
   An array of outputs associated with the player item.
-- [func add(AVPlayerItemOutput)](avplayeritem/add(_:)-16ctk.md)
+- [func add(AVPlayerItemOutput)](./add%28_%29-16ctk.md)
   Adds the specified player item output object to the receiver.
 
 

@@ -1,17 +1,22 @@
 # webView(_:didFailLoadWithError:for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when an error occurs loading a committed data source.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 optional func webView(_ sender: WebView!, didFailLoadWithError error: (any Error)!, for frame: WebFrame!)
+```
+
+```objc
+- (void) webView:(WebView *) sender didFailLoadWithError:(NSError *) error forFrame:(WebFrame *) frame;
 ```
 
 #### Discussion

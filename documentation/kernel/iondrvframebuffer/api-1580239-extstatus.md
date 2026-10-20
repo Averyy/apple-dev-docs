@@ -1,14 +1,15 @@
 # extStatus
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static IOReturn extStatus(OSObject *owner, void *code, void *params);
 ```
 

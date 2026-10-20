@@ -1,7 +1,8 @@
 # IOMainPort(_:_:)
 
 **Framework**: IOKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 15.0+
@@ -14,6 +15,10 @@
 
 ```swift
 func IOMainPort(_ bootstrapPort: mach_port_t, _ mainPort: UnsafeMutablePointer<mach_port_t>!) -> kern_return_t
+```
+
+```c
+kern_return_t IOMainPort(mach_port_t bootstrapPort, mach_port_t *mainPort);
 ```
 
 

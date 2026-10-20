@@ -1,17 +1,22 @@
 # init(frame:textContainer:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a text view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(frame frameRect: NSRect, textContainer container: NSTextContainer?)
+```
+
+```objc
+- (instancetype) initWithFrame:(NSRect) frameRect textContainer:(NSTextContainer *) container;
 ```
 
 #### Return Value
@@ -22,9 +27,9 @@ An initialized text view.
 
 This method is the designated initializer for `NSTextView` objects.
 
-Unlike [`init(frame:)`](nstextview/init(frame:).md), which builds up an entire group of text-handling objects, you use this method after you’ve created the other components of the text-handling system — a text storage object, a layout manager, and a text container. Assembling the components in this fashion means that the text storage, not the text view, is the principal owner of the component objects.
+Unlike [`init(frame:)`](./init%28frame%29.md), which builds up an entire group of text-handling objects, you use this method after you’ve created the other components of the text-handling system — a text storage object, a layout manager, and a text container. Assembling the components in this fashion means that the text storage, not the text view, is the principal owner of the component objects.
 
-The [`init(frame:)`](nstextview/init(frame:).md) initializer uses [`NSLayoutManager`](nslayoutmanager.md) by default. When you use this initializer in macOS 12 and later, you have the option to use [`NSTextLayoutManager`](nstextlayoutmanager.md) which gives you access to newer TextKit functionality and performance improvements. To use the new layout manager  create instances of [`NSTextLayoutManager`](nstextlayoutmanager.md), [`NSTextContainer`](nstextcontainer.md), and [`NSTextContentStorage`](nstextcontentstorage.md); these manage the view’s text layout, text regions, and backingstore, respectively. The example below shows the order of creation and initialization of these objects, and how configure them to initialize an [`NSTextView`](nstextview.md):
+The [`init(frame:)`](./init%28frame%29.md) initializer uses [`NSLayoutManager`](../nslayoutmanager.md) by default. When you use this initializer in macOS 12 and later, you have the option to use [`NSTextLayoutManager`](../nstextlayoutmanager.md) which gives you access to newer TextKit functionality and performance improvements. To use the new layout manager  create instances of [`NSTextLayoutManager`](../nstextlayoutmanager.md), [`NSTextContainer`](../nstextcontainer.md), and [`NSTextContentStorage`](../nstextcontentstorage.md); these manage the view’s text layout, text regions, and backingstore, respectively. The example below shows the order of creation and initialization of these objects, and how configure them to initialize an [`NSTextView`](../nstextview.md):
 
 ```swift
 // The viewWidth and viewBounds are set up elsewhere 
@@ -42,7 +47,7 @@ let textView = NSTextView(frame: viewBounds, textContainer: textLayoutManager.te
 
 ```
 
-In macOS 11 and earlier, you follow a similar pattern but using [`NSLayoutManager`](nslayoutmanager.md) and [`NSTextStorage`](nstextstorage.md) instead:
+In macOS 11 and earlier, you follow a similar pattern but using [`NSLayoutManager`](../nslayoutmanager.md) and [`NSTextStorage`](../nstextstorage.md) instead:
 
 ```swift
 // The viewBounds and containerSize are set up elsewhere 
@@ -66,10 +71,11 @@ let textView = NSTextView(frame: viewBounds, textContainer: textContainer)
 
 ## See Also
 
-- [init(frame: NSRect)](nstextview/init(frame:).md)
+### Creating a text view
+- [init(frame: NSRect)](./init%28frame%29.md)
   Initializes a text view.
-- [convenience init(usingTextLayoutManager: Bool)](nstextview/init(usingtextlayoutmanager:).md)
-- [init?(coder: NSCoder)](nstextview/init(coder:).md)
+- [convenience init(usingTextLayoutManager: Bool)](./init%28usingtextlayoutmanager%29.md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Initializes a text view with data in an unarchiver.
 
 

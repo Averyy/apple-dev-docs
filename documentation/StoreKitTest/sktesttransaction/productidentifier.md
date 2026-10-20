@@ -1,7 +1,8 @@
 # productIdentifier
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier that uniquely represents a product, which you provide in the StoreKit configuration file.
 
@@ -20,6 +21,10 @@ An identifier that uniquely represents a product, which you provide in the Store
 var productIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * productIdentifier;
+```
+
 #### Discussion
 
 You configure the product identifiers in the .`storekit` configuration file. Each product identifier must be unique.
@@ -28,9 +33,10 @@ You configure the product identifiers in the .`storekit` configuration file. Eac
 
 ## See Also
 
-- [var identifier: Int](sktesttransaction/identifier.md)
+### Identifying Transactions and Products
+- [var identifier: Int](./identifier.md)
   The identifier of the transaction in the testing environment.
-- [var originalTransactionIdentifier: Int](sktesttransaction/originaltransactionidentifier.md)
+- [var originalTransactionIdentifier: Int](./originaltransactionidentifier.md)
   The identifier of the original transaction.
 
 

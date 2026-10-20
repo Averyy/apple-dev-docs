@@ -1,7 +1,8 @@
 # BoundingRegionProviding
 
 **Framework**: Vision  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for objects that have a defined boundary in an image.
 
@@ -23,33 +24,34 @@ protocol BoundingRegionProviding
 ## Topics
 
 ### Getting the bounding region
-- [var boundingRegion: NormalizedRegion](boundingregionproviding/boundingregion.md)
+- [var boundingRegion: NormalizedRegion](./boundingregionproviding/boundingregion.md)
   A polygon that defines the boundary of an area in the image.
 
 ## Relationships
 
 ### Conforming Types
-- [DocumentObservation.Container](documentobservation/container.md)
-- [DocumentObservation.Container.DataDetectorMatch](documentobservation/container/datadetectormatch.md)
-- [DocumentObservation.Container.List](documentobservation/container/list.md)
-- [DocumentObservation.Container.Table](documentobservation/container/table.md)
-- [DocumentObservation.Container.Text](documentobservation/container/text-swift.struct.md)
+- [DocumentObservation.Container](./documentobservation/container.md)
+- [DocumentObservation.Container.DataDetectorMatch](./documentobservation/container/datadetectormatch.md)
+- [DocumentObservation.Container.List](./documentobservation/container/list.md)
+- [DocumentObservation.Container.Table](./documentobservation/container/table.md)
+- [DocumentObservation.Container.Text](./documentobservation/container/text-swift.struct.md)
 
 ## See Also
 
-- [struct NormalizedPoint](normalizedpoint.md)
+### Image locations and regions
+- [struct NormalizedPoint](./normalizedpoint.md)
   A point in a 2D coordinate system.
-- [struct NormalizedRect](normalizedrect.md)
+- [struct NormalizedRect](./normalizedrect.md)
   The location and dimensions of a rectangle.
-- [typealias NormalizedRegion](normalizedregion.md)
+- [typealias NormalizedRegion](./normalizedregion.md)
   A polygon composed of normalized points.
-- [struct NormalizedCircle](normalizedcircle.md)
+- [struct NormalizedCircle](./normalizedcircle.md)
   The center point and radius of a 2D circle.
-- [protocol BoundingBoxProviding](boundingboxproviding.md)
+- [protocol BoundingBoxProviding](./boundingboxproviding.md)
   A protocol for objects that have a bounding box.
-- [protocol QuadrilateralProviding](quadrilateralproviding.md)
+- [protocol QuadrilateralProviding](./quadrilateralproviding.md)
   A protocol for objects that have a bounding quadrilateral.
-- [enum CoordinateOrigin](coordinateorigin.md)
+- [enum CoordinateOrigin](./coordinateorigin.md)
   The origin of a coordinate system relative to an image.
 
 

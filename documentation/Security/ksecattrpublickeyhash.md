@@ -1,7 +1,8 @@
 # kSecAttrPublicKeyHash
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the item’s public key hash.
 
@@ -20,9 +21,13 @@ A key whose value indicates the item’s public key hash.
 let kSecAttrPublicKeyHash: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrPublicKeyHash;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) and contains the hash of a certificate’s public key. Items of class [`kSecClassCertificate`](ksecclasscertificate.md) have this attribute. Read only.
+The corresponding value is of type [`CFData`](../CoreFoundation/cfdata.md) and contains the hash of a certificate’s public key. Items of class [`kSecClassCertificate`](./ksecclasscertificate.md) have this attribute. Read only.
 
 
 ---

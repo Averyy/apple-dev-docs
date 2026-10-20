@@ -1,7 +1,8 @@
 # CXSetMutedCallAction
 
 **Framework**: CallKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An encapsulation of the act of muting or unmuting a call.
 
@@ -18,53 +19,58 @@ An encapsulation of the act of muting or unmuting a call.
 class CXSetMutedCallAction
 ```
 
+```objc
+@interface CXSetMutedCallAction : CXCallAction
+```
+
 #### Overview
 
-[`CXSetMutedCallAction`](cxsetmutedcallaction.md) is a concrete subclass of [`CXCallAction`](cxcallaction.md). When the user or the system mutes a call, the provider sends [`provider(_:perform:)`](cxproviderdelegate/provider(_:perform:)-4u3yu.md) to its delegate. The provider’s delegate calls the [`fulfill()`](cxaction/fulfill().md) method to indicate that the action was successfully performed. When a caller mutes a call, that caller is unable to communicate with other callers until they unmute the call. A muted caller still receives communication from other unmuted callers.
+[`CXSetMutedCallAction`](./cxsetmutedcallaction.md) is a concrete subclass of [`CXCallAction`](./cxcallaction.md). When the user or the system mutes a call, the provider sends [`provider(_:perform:)`](./cxproviderdelegate/provider%28_,perform%29-4u3yu.md) to its delegate. The provider’s delegate calls the [`fulfill()`](./cxaction/fulfill%28%29.md) method to indicate that the action was successfully performed. When a caller mutes a call, that caller is unable to communicate with other callers until they unmute the call. A muted caller still receives communication from other unmuted callers.
 
 ## Topics
 
 ### Creating New Actions
-- [convenience init(call: UUID, muted: Bool)](cxsetmutedcallaction/init(call:muted:).md)
+- [convenience init(call: UUID, muted: Bool)](./cxsetmutedcallaction/init%28call,muted%29.md)
   Initializes a new action for a call identified by a given UUID, as well as whether the call is muted.
-- [init?(coder: NSCoder)](cxsetmutedcallaction/init(coder:).md)
+- [init?(coder: NSCoder)](./cxsetmutedcallaction/init%28coder%29.md)
   Creates a new action for a call with data in an unarchiver.
 ### Accessing Action Attributes
-- [var isMuted: Bool](cxsetmutedcallaction/ismuted.md)
+- [var isMuted: Bool](./cxsetmutedcallaction/ismuted.md)
   A Boolean value that indicates whether the call is muted.
 ### Initializers
-- [convenience init(callUUID: UUID, muted: Bool)](cxsetmutedcallaction/init(calluuid:muted:).md)
+- [convenience init(callUUID: UUID, muted: Bool)](./cxsetmutedcallaction/init%28calluuid,muted%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [CXCallAction](cxcallaction.md)
+- [CXCallAction](./cxcallaction.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class CXAction](cxaction.md)
+### Call-related actions
+- [class CXAction](./cxaction.md)
   An abstract class that declares a programmatic interface for objects that represent a telephony action.
-- [class CXCallAction](cxcallaction.md)
+- [class CXCallAction](./cxcallaction.md)
   A programmatic interface for objects that represent a telephony action associated with a call object.
-- [class CXEndCallAction](cxendcallaction.md)
+- [class CXEndCallAction](./cxendcallaction.md)
   An encapsulation of the act of ending a call.
-- [class CXPlayDTMFCallAction](cxplaydtmfcallaction.md)
+- [class CXPlayDTMFCallAction](./cxplaydtmfcallaction.md)
   An encapsulation of the act of playing a dual tone multifrequency (DTMF) sequence.
-- [class CXSetGroupCallAction](cxsetgroupcallaction.md)
+- [class CXSetGroupCallAction](./cxsetgroupcallaction.md)
   An encapsulation of the act of grouping or ungrouping calls.
-- [class CXSetHeldCallAction](cxsetheldcallaction.md)
+- [class CXSetHeldCallAction](./cxsetheldcallaction.md)
   An encapsulation of the act of placing a call on hold or removing a call from hold.
-- [class CXSetTranslatingCallAction](cxsettranslatingcallaction.md)
+- [class CXSetTranslatingCallAction](./cxsettranslatingcallaction.md)
   An encapsulation of the act of translating a call.
 
 

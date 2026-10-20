@@ -1,7 +1,8 @@
 # withThrowingTaskGroup(of:returning:isolation:body:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Starts a new scope that can contain a dynamic number of throwing child tasks.
 
@@ -67,35 +68,36 @@ try await withThrowingTaskGroup(of: Void.self) { group in
 
 An individual task throws its error in the corresponding call to `Group.next()`, which gives you a chance to handle the individual error or to let the group rethrow the error.
 
-Refer to [`TaskGroup`](taskgroup.md) documentation for detailed discussion of semantics shared between all task groups.
+Refer to [`TaskGroup`](./taskgroup.md) documentation for detailed discussion of semantics shared between all task groups.
 
-> **Note**: [`TaskGroup`](taskgroup.md)
+> **See Also**: [`TaskGroup`](./taskgroup.md)
 
-> **Note**: [`ThrowingTaskGroup`](throwingtaskgroup.md)
+> **See Also**: [`ThrowingTaskGroup`](./throwingtaskgroup.md)
 
-> **Note**: [`ThrowingDiscardingTaskGroup`](throwingdiscardingtaskgroup.md)
+> **See Also**: [`ThrowingDiscardingTaskGroup`](./throwingdiscardingtaskgroup.md)
 
 ## See Also
 
-- [struct Task](task.md)
+### Tasks
+- [struct Task](./task.md)
   A unit of asynchronous work.
-- [struct TaskGroup](taskgroup.md)
+- [struct TaskGroup](./taskgroup.md)
   A group that contains dynamically created child tasks.
-- [func withTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout TaskGroup<ChildTaskResult>) async -> GroupResult) async -> GroupResult](withtaskgroup(of:returning:isolation:body:).md)
+- [func withTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout TaskGroup<ChildTaskResult>) async -> GroupResult) async -> GroupResult](./withtaskgroup%28of,returning,isolation,body%29.md)
   Starts a new scope that can contain a dynamic number of child tasks.
-- [struct ThrowingTaskGroup](throwingtaskgroup.md)
+- [struct ThrowingTaskGroup](./throwingtaskgroup.md)
   A group that contains throwing, dynamically created child tasks.
-- [struct TaskPriority](taskpriority.md)
+- [struct TaskPriority](./taskpriority.md)
   The priority of a task.
-- [struct DiscardingTaskGroup](discardingtaskgroup.md)
+- [struct DiscardingTaskGroup](./discardingtaskgroup.md)
   A discarding group that contains dynamically created child tasks.
-- [func withDiscardingTaskGroup<GroupResult>(returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout DiscardingTaskGroup) async -> GroupResult) async -> GroupResult](withdiscardingtaskgroup(returning:isolation:body:).md)
+- [func withDiscardingTaskGroup<GroupResult>(returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout DiscardingTaskGroup) async -> GroupResult) async -> GroupResult](./withdiscardingtaskgroup%28returning,isolation,body%29.md)
   Starts a new scope that can contain a dynamic number of child tasks.
-- [struct ThrowingDiscardingTaskGroup](throwingdiscardingtaskgroup.md)
+- [struct ThrowingDiscardingTaskGroup](./throwingdiscardingtaskgroup.md)
   A throwing discarding group that contains dynamically created child tasks.
-- [func withThrowingDiscardingTaskGroup<GroupResult>(returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingDiscardingTaskGroup<any Error>) async throws -> GroupResult) async throws -> GroupResult](withthrowingdiscardingtaskgroup(returning:isolation:body:).md)
+- [func withThrowingDiscardingTaskGroup<GroupResult>(returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingDiscardingTaskGroup<any Error>) async throws -> GroupResult) async throws -> GroupResult](./withthrowingdiscardingtaskgroup%28returning,isolation,body%29.md)
   Starts a new scope that can contain a dynamic number of child tasks.
-- [struct UnsafeCurrentTask](unsafecurrenttask.md)
+- [struct UnsafeCurrentTask](./unsafecurrenttask.md)
   An unsafe reference to the current task.
 
 

@@ -1,7 +1,8 @@
 # first(where:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Publishes the first element of a stream to satisfy a predicate closure, then finishes normally.
 
@@ -26,9 +27,9 @@ A publisher that only publishes the first element of a stream that satisfies the
 
 #### Discussion
 
-Use [`first(where:)`](publisher/first(where:).md) to republish only the first element of a stream that satisfies a closure you specify. The publisher ignores all elements after the first element that satisfies the closure and finishes normally. If this publisher doesn’t receive any elements, it finishes without publishing.
+Use [`first(where:)`](./first%28where%29.md) to republish only the first element of a stream that satisfies a closure you specify. The publisher ignores all elements after the first element that satisfies the closure and finishes normally. If this publisher doesn’t receive any elements, it finishes without publishing.
 
-In the example below, the provided closure causes the [`Publishers.FirstWhere`](publishers/firstwhere.md) publisher to republish the first received element that’s greater than `0`, then finishes normally.
+In the example below, the provided closure causes the [`Publishers.FirstWhere`](../publishers/firstwhere.md) publisher to republish the first received element that’s greater than `0`, then finishes normally.
 
 ```swift
 let numbers = (-10...10)
@@ -45,19 +46,20 @@ cancellable = numbers.publisher
 
 ## See Also
 
-- [func first() -> Publishers.First<Self>](publisher/first.md)
+### Selecting specific elements
+- [func first() -> Publishers.First<Self>](./first%28%29.md)
   Publishes the first element of a stream, then finishes.
-- [func tryFirst(where: (Self.Output) throws -> Bool) -> Publishers.TryFirstWhere<Self>](publisher/tryfirst(where:).md)
+- [func tryFirst(where: (Self.Output) throws -> Bool) -> Publishers.TryFirstWhere<Self>](./tryfirst%28where%29.md)
   Publishes the first element of a stream to satisfy a throwing predicate closure, then finishes normally.
-- [func last() -> Publishers.Last<Self>](publisher/last.md)
+- [func last() -> Publishers.Last<Self>](./last%28%29.md)
   Publishes the last element of a stream, after the stream finishes.
-- [func last(where: (Self.Output) -> Bool) -> Publishers.LastWhere<Self>](publisher/last(where:).md)
+- [func last(where: (Self.Output) -> Bool) -> Publishers.LastWhere<Self>](./last%28where%29.md)
   Publishes the last element of a stream that satisfies a predicate closure, after upstream finishes.
-- [func tryLast(where: (Self.Output) throws -> Bool) -> Publishers.TryLastWhere<Self>](publisher/trylast(where:).md)
+- [func tryLast(where: (Self.Output) throws -> Bool) -> Publishers.TryLastWhere<Self>](./trylast%28where%29.md)
   Publishes the last element of a stream that satisfies an error-throwing predicate closure, after the stream finishes.
-- [func output(at: Int) -> Publishers.Output<Self>](publisher/output(at:).md)
+- [func output(at: Int) -> Publishers.Output<Self>](./output%28at%29.md)
   Publishes a specific element, indicated by its index in the sequence of published elements.
-- [func output<R>(in: R) -> Publishers.Output<Self>](publisher/output(in:).md)
+- [func output<R>(in: R) -> Publishers.Output<Self>](./output%28in%29.md)
   Publishes elements specified by their range in the sequence of published elements.
 
 

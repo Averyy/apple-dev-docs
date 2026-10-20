@@ -1,7 +1,8 @@
 # minimumAngles
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The negative delta from the rest pose per-axis in radians.
 

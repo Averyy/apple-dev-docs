@@ -1,7 +1,8 @@
 # gru(initialHiddenStates:inputHiddenWeight:hiddenHiddenWeight:bias:inputBias:direction:activation:recurrentActivation:applyResetGateAfterMatMul:outputSequence:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a GRU operation to the current graph.
 
@@ -20,31 +21,33 @@ Adds a GRU operation to the current graph.
 func gru(initialHiddenStates: BNNSGraph.Builder.Tensor<T>, inputHiddenWeight: BNNSGraph.Builder.Tensor<T>, hiddenHiddenWeight: BNNSGraph.Builder.Tensor<T>, bias: BNNSGraph.Builder.Tensor<T>, inputBias: BNNSGraph.Builder.Tensor<T>, direction: BNNSGraph.Builder.Direction, activation: BNNSGraph.Builder.Activation, recurrentActivation: BNNSGraph.Builder.Activation, applyResetGateAfterMatMul: Bool, outputSequence: Bool) -> (output: BNNSGraph.Builder.Tensor<T>, hiddenStates: BNNSGraph.Builder.Tensor<T>)
 ```
 
+Available when `T` conforms to `BNNSScalar`.
+
 #### Discussion
 
 If `applyResetGateAfterMatMul` is false, For each time `t`, from `0` to `L-1`, computes:
 
 Reset gate:
 
-```None
+```
 r[t, ...] = RA(matmul(W_ir, x[t, ...]) + b_ir + matmul(W_hr, h[t-1, ...]) + b_hr)
 ```
 
 Update gate:
 
-```None
+```
 z[t, ...] = RA(matmul(W_iz, x[t, ...]) + b_iz + matmul(W_hz, h[t-1, ...]) + b_hz)
 ```
 
 New gate:
 
-```None
+```
 n[t, ...] =  A(matmul(W_in, x[t, ...]) + b_in + matmul(W_hn, h[t-1, ...]) * r[t, ...] + b_hn)
 ```
 
 Hidden state:
 
-```None
+```
 h[t, ...] = (1 - z[t, ...]) * n[t, ...] + z[t, ...] * h[t-1, ...]
 ```
 
@@ -63,7 +66,7 @@ If `applyResetGateAfterMatMul` is `true`, the calculation for the new gate chang
 
 New gate:
 
-```None
+```
 n[t, ...] =  A(matmul(W_in, x[t, ...]) + b_in + (matmul(W_hn, h[t-1, ...]) + b_hn) * r[t, ...])
 ```
 

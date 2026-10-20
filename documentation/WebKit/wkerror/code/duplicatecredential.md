@@ -1,7 +1,8 @@
 # WKError.Code.duplicateCredential
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the system found a duplicate passkey during an import.
 
@@ -18,37 +19,42 @@ An error that indicates the system found a duplicate passkey during an import.
 case duplicateCredential
 ```
 
+```c
+WKErrorDuplicateCredential
+```
+
 ## See Also
 
-- [WKError.Code.unknown](wkerror/code/unknown.md)
+### Errors
+- [WKError.Code.unknown](./unknown.md)
   An error that indicates an unknown issue occurred.
-- [WKError.Code.webContentProcessTerminated](wkerror/code/webcontentprocessterminated.md)
+- [WKError.Code.webContentProcessTerminated](./webcontentprocessterminated.md)
   An error that indicates the web process that contains the content is no longer running.
-- [WKError.Code.webViewInvalidated](wkerror/code/webviewinvalidated.md)
+- [WKError.Code.webViewInvalidated](./webviewinvalidated.md)
   An error that indicates the web view was invalidated.
-- [WKError.Code.javaScriptExceptionOccurred](wkerror/code/javascriptexceptionoccurred.md)
+- [WKError.Code.javaScriptExceptionOccurred](./javascriptexceptionoccurred.md)
   An error that indicates a JavaScript exception occurred.
-- [WKError.Code.javaScriptResultTypeIsUnsupported](wkerror/code/javascriptresulttypeisunsupported.md)
+- [WKError.Code.javaScriptResultTypeIsUnsupported](./javascriptresulttypeisunsupported.md)
   An error that indicates the result of JavaScript execution could not be returned.
-- [WKError.Code.contentRuleListStoreCompileFailed](wkerror/code/contentruleliststorecompilefailed.md)
+- [WKError.Code.contentRuleListStoreCompileFailed](./contentruleliststorecompilefailed.md)
   An error that indicates the compilation of a rule list failed.
-- [WKError.Code.contentRuleListStoreLookUpFailed](wkerror/code/contentruleliststorelookupfailed.md)
+- [WKError.Code.contentRuleListStoreLookUpFailed](./contentruleliststorelookupfailed.md)
   An error that indicates a content rule list data store didn’t find a rule list with the specified identifier.
-- [WKError.Code.contentRuleListStoreRemoveFailed](wkerror/code/contentruleliststoreremovefailed.md)
+- [WKError.Code.contentRuleListStoreRemoveFailed](./contentruleliststoreremovefailed.md)
   An error that indicates a failure to remove a content rule list from the rule list data store object.
-- [WKError.Code.contentRuleListStoreVersionMismatch](wkerror/code/contentruleliststoreversionmismatch.md)
+- [WKError.Code.contentRuleListStoreVersionMismatch](./contentruleliststoreversionmismatch.md)
   An error that indicates the rule list version is outdated and cannot be read.
-- [WKError.Code.attributedStringContentFailedToLoad](wkerror/code/attributedstringcontentfailedtoload.md)
+- [WKError.Code.attributedStringContentFailedToLoad](./attributedstringcontentfailedtoload.md)
   An error that indicates the failure to navigate to web content from an attributed string.
-- [WKError.Code.attributedStringContentLoadTimedOut](wkerror/code/attributedstringcontentloadtimedout.md)
+- [WKError.Code.attributedStringContentLoadTimedOut](./attributedstringcontentloadtimedout.md)
   An error that indicates a timeout occurred while trying to load web content from an attributed string.
-- [WKError.Code.javaScriptInvalidFrameTarget](wkerror/code/javascriptinvalidframetarget.md)
+- [WKError.Code.javaScriptInvalidFrameTarget](./javascriptinvalidframetarget.md)
   An error that indicates your content referenced an invalid web frame.
-- [WKError.Code.navigationAppBoundDomain](wkerror/code/navigationappbounddomain.md)
+- [WKError.Code.navigationAppBoundDomain](./navigationappbounddomain.md)
   An error that indicates navigation failed due to an app-bound domain restriction.
-- [WKError.Code.javaScriptAppBoundDomain](wkerror/code/javascriptappbounddomain.md)
+- [WKError.Code.javaScriptAppBoundDomain](./javascriptappbounddomain.md)
   An error that indicates JavaScript execution failed due to an app-bound domain restriction.
-- [WKError.Code.credentialNotFound](wkerror/code/credentialnotfound.md)
+- [WKError.Code.credentialNotFound](./credentialnotfound.md)
   An error that indicates the system could not find a passkey during an export.
 
 

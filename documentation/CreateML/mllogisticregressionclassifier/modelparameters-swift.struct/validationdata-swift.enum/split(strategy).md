@@ -1,7 +1,8 @@
 # MLLogisticRegressionClassifier.ModelParameters.ValidationData.split(strategy:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Generate validation data by splitting the training dataset. This is the default.
 
@@ -21,11 +22,12 @@ case split(strategy: MLSplitStrategy)
 
 ## See Also
 
-- [MLLogisticRegressionClassifier.ModelParameters.ValidationData.table(_:)](mllogisticregressionclassifier/modelparameters-swift.struct/validationdata-swift.enum/table(_:).md)
+### Specifying validation data
+- [MLLogisticRegressionClassifier.ModelParameters.ValidationData.table(_:)](./table%28_%29.md)
   Set validation data from the MLDataTable provided.
-- [MLLogisticRegressionClassifier.ModelParameters.ValidationData.dataFrame(_:)](mllogisticregressionclassifier/modelparameters-swift.struct/validationdata-swift.enum/dataframe(_:).md)
+- [MLLogisticRegressionClassifier.ModelParameters.ValidationData.dataFrame(_:)](./dataframe%28_%29.md)
   Validation data provided in a DataFrame.
-- [MLLogisticRegressionClassifier.ModelParameters.ValidationData.none](mllogisticregressionclassifier/modelparameters-swift.struct/validationdata-swift.enum/none.md)
+- [MLLogisticRegressionClassifier.ModelParameters.ValidationData.none](./none.md)
   Do not set validation data.
 
 

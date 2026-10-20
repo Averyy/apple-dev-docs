@@ -1,7 +1,8 @@
 # isSkipForwardEnabled
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether forward-skipping is available.
 
@@ -14,17 +15,22 @@ A Boolean value that indicates whether forward-skipping is available.
 var isSkipForwardEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isSkipForwardEnabled) BOOL skipForwardEnabled;
+```
+
 #### Discussion
 
-This property affects the appearance of the forward-skipping indicator. The value you set for the player view controller’s [`skippingBehavior`](avplayerviewcontroller/skippingbehavior.md) property determines its forward-skipping behavior.
+This property affects the appearance of the forward-skipping indicator. The value you set for the player view controller’s [`skippingBehavior`](./skippingbehavior.md) property determines its forward-skipping behavior.
 
 ## See Also
 
-- [var isSkipBackwardEnabled: Bool](avplayerviewcontroller/isskipbackwardenabled.md)
+### Configuring skipping behavior
+- [var isSkipBackwardEnabled: Bool](./isskipbackwardenabled.md)
   A Boolean value that indicates whether backward-skipping is available.
-- [var skippingBehavior: AVPlayerViewControllerSkippingBehavior](avplayerviewcontroller/skippingbehavior.md)
+- [var skippingBehavior: AVPlayerViewControllerSkippingBehavior](./skippingbehavior.md)
   The behavior that skipping gestures perform.
-- [enum AVPlayerViewControllerSkippingBehavior](avplayerviewcontrollerskippingbehavior.md)
+- [enum AVPlayerViewControllerSkippingBehavior](../avplayerviewcontrollerskippingbehavior.md)
   Constants that represent the player view controller’s skipping behavior.
 
 

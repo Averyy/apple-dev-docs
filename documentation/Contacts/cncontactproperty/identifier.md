@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the labeled value in the array of labeled.
 
@@ -19,17 +20,30 @@ The identifier of the labeled value in the array of labeled.
 var identifier: String? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * identifier;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly, nullable) NSString * identifier;
+```
+
 #### Discussion
 
 Identifier is used only for properties in labeled arrays. If the property is not an array of labeled values, the value of the identifier is `nil`.
 
 ## See Also
 
-- [var key: String](cncontactproperty/key.md)
+### Getting the Property Information
+- [var key: String](./key.md)
   The key of the contact property.
-- [var value: Any?](cncontactproperty/value.md)
+- [var value: Any?](./value.md)
   The value of the property.
-- [var label: String?](cncontactproperty/label.md)
+- [var label: String?](./label.md)
   The label of the labeled value of the property array.
 
 

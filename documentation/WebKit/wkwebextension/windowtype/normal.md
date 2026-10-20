@@ -1,7 +1,8 @@
 # WKWebExtension.WindowType.normal
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a normal window.
 
@@ -16,6 +17,10 @@ Indicates a normal window.
 
 ```swift
 case normal
+```
+
+```c
+WKWebExtensionWindowTypeNormal
 ```
 
 

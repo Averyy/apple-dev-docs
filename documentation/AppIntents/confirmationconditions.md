@@ -1,7 +1,8 @@
 # ConfirmationConditions
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Conditions for a confirmation request.
 
@@ -27,23 +28,24 @@ If any of the conditions are met, confirmation will be requested.
 ## Topics
 
 ### Type Properties
-- [static let lowConfidenceSource: ConfirmationConditions](confirmationconditions/lowconfidencesource.md)
+- [static let lowConfidenceSource: ConfirmationConditions](./confirmationconditions/lowconfidencesource.md)
   Only confirm if initiated from a low-confidence action source.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [struct IntentChoiceOption](intentchoiceoption.md)
+### Disambiguation
+- [struct IntentChoiceOption](./intentchoiceoption.md)
   A structure representing an entry in a list of options for a person to choose from before an app intent resumes its action.
 
 

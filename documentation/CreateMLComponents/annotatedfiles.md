@@ -1,7 +1,8 @@
 # AnnotatedFiles
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An annotated files collection.
 
@@ -23,36 +24,37 @@ struct AnnotatedFiles
 ## Topics
 
 ### Creating the feature
-- [init(labeledBySubdirectoryNamesAt: URL, type: UTType, continueOnFailure: Bool) throws](annotatedfiles/init(labeledbysubdirectorynamesat:type:continueonfailure:).md)
+- [init(labeledBySubdirectoryNamesAt: URL, type: UTType, continueOnFailure: Bool) throws](./annotatedfiles/init%28labeledbysubdirectorynamesat,type,continueonfailure%29.md)
   Reads training examples from a directory containing files in labeled sub-directories.
-- [init(labeledByNamesAt: URL, separator: Character, index: Int, type: UTType, continueOnFailure: Bool) throws](annotatedfiles/init(labeledbynamesat:separator:index:type:continueonfailure:).md)
+- [init(labeledByNamesAt: URL, separator: Character, index: Int, type: UTType, continueOnFailure: Bool) throws](./annotatedfiles/init%28labeledbynamesat,separator,index,type,continueonfailure%29.md)
   Reads training examples from a directory containing files having their labels in the name. The name can contain multiple words separated by a `separator`. So the `index` tells the position of the label in the file name. Files with incorrect name format are ignored.
 
 ## Relationships
 
 ### Conforms To
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [Collection](../Swift/collection.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [struct AnnotatedBatch](annotatedbatch.md)
+### Annotations
+- [struct AnnotatedBatch](./annotatedbatch.md)
   A batch of annotated examples for fitting a supervised estimator.
-- [struct AnnotatedFeature](annotatedfeature.md)
+- [struct AnnotatedFeature](./annotatedfeature.md)
   An annotated example for fitting a supervised estimator.
-- [struct AnnotatedFeatureProvider](annotatedfeatureprovider.md)
+- [struct AnnotatedFeatureProvider](./annotatedfeatureprovider.md)
   An adaptor that converts a regular estimator to a tabular estimator by selecting features and annotations from columns.
-- [struct AnnotatedPrediction](annotatedprediction.md)
+- [struct AnnotatedPrediction](./annotatedprediction.md)
   An annotated prediction.
-- [struct DataFrameTemporalAnnotationParameters](dataframetemporalannotationparameters.md)
+- [struct DataFrameTemporalAnnotationParameters](./dataframetemporalannotationparameters.md)
   Annotation parameters for the dataframe containing temporal annotations.
 
 

@@ -1,7 +1,8 @@
 # draw(with:to:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -17,11 +18,16 @@
 func draw(with box: PDFDisplayBox, to context: CGContext)
 ```
 
+```objc
+- (void) drawWithBox:(PDFDisplayBox) box toContext:(CGContextRef) context;
+```
+
 ## See Also
 
-- [func thumbnail(of: CGSize, for: PDFDisplayBox) -> UIImage](pdfpage/thumbnail(of:for:).md)
-- [func transform(CGContext, for: PDFDisplayBox)](pdfpage/transform(_:for:).md)
-- [func transform(for: PDFDisplayBox) -> CGAffineTransform](pdfpage/transform(for:).md)
+### Instance Methods
+- [func thumbnail(of: CGSize, for: PDFDisplayBox) -> UIImage](./thumbnail%28of,for%29.md)
+- [func transform(CGContext, for: PDFDisplayBox)](./transform%28_,for%29.md)
+- [func transform(for: PDFDisplayBox) -> CGAffineTransform](./transform%28for%29.md)
 
 
 ---

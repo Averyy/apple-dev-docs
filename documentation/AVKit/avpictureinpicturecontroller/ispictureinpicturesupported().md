@@ -1,7 +1,8 @@
 # isPictureInPictureSupported()
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the current device supports Picture in Picture.
 
@@ -19,10 +20,14 @@ Returns a Boolean value that indicates whether the current device supports Pictu
 class func isPictureInPictureSupported() -> Bool
 ```
 
+```objc
++ (BOOL) isPictureInPictureSupported;
+```
+
 ## Mentions
 
-- [Adopting Picture in Picture for video calls](adopting-picture-in-picture-for-video-calls.md)
-- [Adopting Picture in Picture in a custom player](adopting-picture-in-picture-in-a-custom-player.md)
+- [Adopting Picture in Picture for video calls](../adopting-picture-in-picture-for-video-calls.md)
+- [Adopting Picture in Picture in a custom player](../adopting-picture-in-picture-in-a-custom-player.md)
 
 #### Return Value
 
@@ -34,11 +39,12 @@ If Picture in Picture isn’t supported on the current device, attempting to ini
 
 ## See Also
 
-- [var isPictureInPicturePossible: Bool](avpictureinpicturecontroller/ispictureinpicturepossible.md)
+### Accessing Picture in Picture state
+- [var isPictureInPicturePossible: Bool](./ispictureinpicturepossible.md)
   A Boolean value that indicates whether Picture in Picture playback is currently possible.
-- [var isPictureInPictureActive: Bool](avpictureinpicturecontroller/ispictureinpictureactive.md)
+- [var isPictureInPictureActive: Bool](./ispictureinpictureactive.md)
   A Boolean value that indicates whether the Picture in Picture window is onscreen.
-- [var isPictureInPictureSuspended: Bool](avpictureinpicturecontroller/ispictureinpicturesuspended.md)
+- [var isPictureInPictureSuspended: Bool](./ispictureinpicturesuspended.md)
   A Boolean value that indicates whether the system suspends the controller’s Picture in Picture window.
 
 

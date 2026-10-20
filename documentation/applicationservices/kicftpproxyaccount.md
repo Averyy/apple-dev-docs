@@ -1,7 +1,8 @@
 # kICFTPProxyAccount
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var kICFTPProxyAccount: String { get }
+```
+
+```c
+#define kICFTPProxyAccount
 ```
 
 

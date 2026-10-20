@@ -1,7 +1,8 @@
 # jsonObject(with:options:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Foundation object from given JSON data.
 
@@ -20,6 +21,10 @@ Returns a Foundation object from given JSON data.
 class func jsonObject(with data: Data, options opt: JSONSerialization.ReadingOptions = []) throws -> Any
 ```
 
+```objc
++ (id) JSONObjectWithData:(NSData *) data options:(NSJSONReadingOptions) opt error:(NSError **) error;
+```
+
 #### Return Value
 
 A Foundation object from the JSON data in `data`, or `nil` if an error occurs.
@@ -28,20 +33,26 @@ A Foundation object from the JSON data in `data`, or `nil` if an error occurs.
 
 The data must be in one of the 5 supported encodings listed in the JSON specification: UTF-8, UTF-16LE, UTF-16BE, UTF-32LE, UTF-32BE. The data may or may not have a BOM. The most efficient encoding to use for parsing is UTF-8, so if you have a choice in encoding the data passed to this method, use UTF-8.
 
-> **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
 - `data`: A data object containing JSON data.
-- `opt`: Options for reading the JSON data and creating the Foundation objects. For possible values, see [`JSONSerialization.ReadingOptions`](jsonserialization/readingoptions.md).
+- `opt`: Options for reading the JSON data and creating the Foundation objects.
+
+  For possible values, see [`JSONSerialization.ReadingOptions`](./readingoptions.md).
 
 ## See Also
 
-- [class func data(withJSONObject: Any, options: JSONSerialization.WritingOptions) throws -> Data](jsonserialization/data(withjsonobject:options:).md)
+### Related Documentation
+- [class func data(withJSONObject: Any, options: JSONSerialization.WritingOptions) throws -> Data](./data%28withjsonobject,options%29.md)
   Returns JSON data from a Foundation object.
-- [class func jsonObject(with: InputStream, options: JSONSerialization.ReadingOptions) throws -> Any](jsonserialization/jsonobject(with:options:)-3afap.md)
+### Creating a JSON Object
+- [class func jsonObject(with: InputStream, options: JSONSerialization.ReadingOptions) throws -> Any](./jsonobject%28with,options%29-3afap.md)
   Returns a Foundation object from JSON data in a given stream.
-- [JSONSerialization.ReadingOptions](jsonserialization/readingoptions.md)
+- [JSONSerialization.ReadingOptions](./readingoptions.md)
   Options used when creating Foundation objects from JSON data.
 
 

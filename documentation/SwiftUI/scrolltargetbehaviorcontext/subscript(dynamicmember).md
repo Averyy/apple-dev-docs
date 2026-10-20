@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 17.0+

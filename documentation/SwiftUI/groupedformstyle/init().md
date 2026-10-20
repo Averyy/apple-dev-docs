@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a form style with scrolling, grouped rows.
 
@@ -23,7 +24,7 @@ init()
 
 #### Discussion
 
-Don’t call this initializer directly. Instead, use the [`grouped`](formstyle/grouped.md) static variable to create this style:
+Don’t call this initializer directly. Instead, use the [`grouped`](../formstyle/grouped.md) static variable to create this style:
 
 ```swift
 Form {

@@ -1,7 +1,8 @@
 # init(_:arguments:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new tool expectation.
 

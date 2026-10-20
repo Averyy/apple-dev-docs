@@ -1,7 +1,8 @@
 # MLMultiArrayConstraint
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The shape and data type constraints for a multidimensional array feature.
 
@@ -20,51 +21,56 @@ The shape and data type constraints for a multidimensional array feature.
 class MLMultiArrayConstraint
 ```
 
+```objc
+@interface MLMultiArrayConstraint : NSObject
+```
+
 ## Topics
 
 ### Accessing the Constraints
-- [var shape: [NSNumber]](mlmultiarrayconstraint/shape.md)
+- [var shape: [NSNumber]](./mlmultiarrayconstraint/shape.md)
   The shape of the multi array.
-- [var dataType: MLMultiArrayDataType](mlmultiarrayconstraint/datatype.md)
+- [var dataType: MLMultiArrayDataType](./mlmultiarrayconstraint/datatype.md)
   The type for the multi array.
-- [var shapeConstraint: MLMultiArrayShapeConstraint](mlmultiarrayconstraint/shapeconstraint.md)
+- [var shapeConstraint: MLMultiArrayShapeConstraint](./mlmultiarrayconstraint/shapeconstraint.md)
   The constraint on the shape of the multiarray.
-- [class MLMultiArrayShapeConstraint](mlmultiarrayshapeconstraint.md)
+- [class MLMultiArrayShapeConstraint](./mlmultiarrayshapeconstraint.md)
   The lists of shapes or ranges of shapes that constrain a multiarray feature.
 ### Initializers
-- [init?(coder: NSCoder)](mlmultiarrayconstraint/init(coder:).md)
+- [init?(coder: NSCoder)](./mlmultiarrayconstraint/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var stateConstraint: MLStateConstraint?](mlfeaturedescription/stateconstraint.md)
+### Accessing feature constraints
+- [var stateConstraint: MLStateConstraint?](./mlfeaturedescription/stateconstraint.md)
   The state feature value constraint.
-- [var imageConstraint: MLImageConstraint?](mlfeaturedescription/imageconstraint.md)
+- [var imageConstraint: MLImageConstraint?](./mlfeaturedescription/imageconstraint.md)
   The size and format constraints for an image feature.
-- [class MLImageConstraint](mlimageconstraint.md)
+- [class MLImageConstraint](./mlimageconstraint.md)
   The width, height, and pixel format constraints of an image feature.
-- [var dictionaryConstraint: MLDictionaryConstraint?](mlfeaturedescription/dictionaryconstraint.md)
+- [var dictionaryConstraint: MLDictionaryConstraint?](./mlfeaturedescription/dictionaryconstraint.md)
   The constraint for a dictionary feature.
-- [class MLDictionaryConstraint](mldictionaryconstraint.md)
+- [class MLDictionaryConstraint](./mldictionaryconstraint.md)
   The constraint on the keys for a dictionary feature.
-- [var multiArrayConstraint: MLMultiArrayConstraint?](mlfeaturedescription/multiarrayconstraint.md)
+- [var multiArrayConstraint: MLMultiArrayConstraint?](./mlfeaturedescription/multiarrayconstraint.md)
   The constraints on a multidimensional array feature.
-- [var sequenceConstraint: MLSequenceConstraint?](mlfeaturedescription/sequenceconstraint.md)
+- [var sequenceConstraint: MLSequenceConstraint?](./mlfeaturedescription/sequenceconstraint.md)
   The constraints for a sequence feature.
-- [class MLSequenceConstraint](mlsequenceconstraint.md)
+- [class MLSequenceConstraint](./mlsequenceconstraint.md)
   The constraints for a sequence feature.
 
 

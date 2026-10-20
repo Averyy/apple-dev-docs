@@ -1,7 +1,8 @@
 # solverIterations
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parameters that control the accuracy of solving physics simulations.
 

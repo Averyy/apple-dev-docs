@@ -1,7 +1,8 @@
 # MPSRNNSequenceDirection.forward
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 case forward
 ```
 
+```c
+MPSRNNSequenceDirectionForward
+```
+
 ## See Also
 
-- [MPSRNNSequenceDirection.backward](mpsrnnsequencedirection/backward.md)
+### Enumeration Cases
+- [MPSRNNSequenceDirection.backward](./backward.md)
 
 
 ---

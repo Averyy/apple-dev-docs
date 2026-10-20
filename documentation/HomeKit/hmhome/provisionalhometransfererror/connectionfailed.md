@@ -1,7 +1,8 @@
 # HMHome.ProvisionalHomeTransferError.connectionFailed
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Establishing a network connection to the home hub failed.
 
@@ -17,11 +18,12 @@ case connectionFailed
 
 ## See Also
 
-- [HMHome.ProvisionalHomeTransferError.authenticationFailed](hmhome/provisionalhometransfererror/authenticationfailed.md)
+### Detecting transfer errors
+- [HMHome.ProvisionalHomeTransferError.authenticationFailed](./authenticationfailed.md)
   Authentication with the home hub failed.
-- [HMHome.ProvisionalHomeTransferError.serverError](hmhome/provisionalhometransfererror/servererror.md)
+- [HMHome.ProvisionalHomeTransferError.serverError](./servererror.md)
   An unexpected server-side error or internal error occurred.
-- [HMHome.ProvisionalHomeTransferError.targetHomeRejected](hmhome/provisionalhometransfererror/targethomerejected.md)
+- [HMHome.ProvisionalHomeTransferError.targetHomeRejected](./targethomerejected.md)
   The home hub rejected the target home identifier.
 
 

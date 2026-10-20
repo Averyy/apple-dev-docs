@@ -1,7 +1,8 @@
 # init(elevationStyle:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new imagery based map configuration with the specified elevation style.
 
@@ -19,13 +20,18 @@ Creates a new imagery based map configuration with the specified elevation style
 convenience init(elevationStyle: MKMapConfiguration.ElevationStyle)
 ```
 
+```objc
+- (instancetype) initWithElevationStyle:(MKMapElevationStyle) elevationStyle;
+```
+
 ## Parameters
 
-- `elevationStyle`: One of the [`MKMapConfiguration.ElevationStyle`](mkmapconfiguration/elevationstyle-swift.enum.md) elevation styles.
+- `elevationStyle`: One of the [`MKMapConfiguration.ElevationStyle`](../mkmapconfiguration/elevationstyle-swift.enum.md) elevation styles.
 
 ## See Also
 
-- [init()](mkimagerymapconfiguration/init.md)
+### Creating a map imagery configuration
+- [init()](./init%28%29.md)
   Creates a new imagery based map configuration.
 
 

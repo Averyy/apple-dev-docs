@@ -1,12 +1,15 @@
 # stratifiedSplit(proportions:seed:labelColumn:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a data table by splitting the data source into strata.
 
 **Availability**:
-- macOS 11.0+
+- macOS 11.0+ - Deprecated in 14.0
+
+> **Deprecated**: Use DataFrame.stratifiedSplit(on:by:)
 
 ## Declaration
 
@@ -26,9 +29,10 @@ A new data table.
 
 ## See Also
 
-- [func videosWithAnnotations() throws -> MLDataTable](mlactionclassifier/datasource/videoswithannotations.md)
+### Generating data tables from a data source
+- [func videosWithAnnotations() throws -> MLDataTable](./videoswithannotations%28%29.md)
   Generates a data table of the data source’s video URL locations and action annotations.
-- [func keypointsWithAnnotations(targetFrameRate: Double) throws -> MLDataTable](mlactionclassifier/datasource/keypointswithannotations(targetframerate:).md)
+- [func keypointsWithAnnotations(targetFrameRate: Double) throws -> MLDataTable](./keypointswithannotations%28targetframerate%29.md)
   Generates a data table with action annotations of the data source.
 
 

@@ -1,6 +1,7 @@
 # Getting value based on age using an array
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: Article
 
 Return a value that changes according to an array of values as a function of the age of the requests.
 
@@ -50,13 +51,14 @@ number agedValues(number        $ageSeconds,
 | `values` | The values to map the age ranges to. |
 | `ages` | The age ranges to map to the values. |
 
-##### Return Value
+##### Return value
 
 If `ageSeconds` is less than the first item in the `ages` array (`ages[0]`), `initialValue`. If `ageSeconds` is in the range between two items in the `ages` array (`ages[n] <= ageSeconds < ages[n+1]`), the corresponding item in the `values` array (`values[n]`). If `ageSeconds` is greater than the last item in the `ages` array, `initialValue`.
 
 ## See Also
 
-- [Getting value based on age](getting-value-based-on-age.md)
+### Match functions
+- [Getting value based on age](./getting-value-based-on-age.md)
   Return a value that changes in regular steps as a function of the age of the requests.
 
 

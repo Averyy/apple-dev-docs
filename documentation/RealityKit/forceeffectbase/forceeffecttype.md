@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A type that represents the kind of force effect.
@@ -22,7 +23,7 @@ associatedtype ForceEffectType : ForceEffectProtocol
 
 #### Discussion
 
-This type underlies the force type of a [`ForceEffect`](forceeffect.md).
+This type underlies the force type of a [`ForceEffect`](../forceeffect.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # convolutionTranspose2D(_:weights:outputShapeTensor:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a convolution transpose operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a convolution transpose operation and returns the result tensor.
 
 ```swift
 func convolutionTranspose2D(_ source: MPSGraphTensor, weights: MPSGraphTensor, outputShapeTensor outputShape: MPSGraphTensor, descriptor: MPSGraphConvolution2DOpDescriptor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) convolutionTranspose2DWithSourceTensor:(MPSGraphTensor *) source weightsTensor:(MPSGraphTensor *) weights outputShapeTensor:(MPSGraphTensor *) outputShape descriptor:(MPSGraphConvolution2DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
 #### Return Value

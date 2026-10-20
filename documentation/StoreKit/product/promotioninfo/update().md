@@ -1,7 +1,8 @@
 # update()
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves your changes to the promoted product’s visibility.
 
@@ -18,15 +19,16 @@ func update() async throws
 
 ## Mentions
 
-- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
+- [Supporting promoted Apple In-App Purchases in your app](../../supporting-promoted-in-app-purchases-in-your-app.md)
 
 #### Discussion
 
-If you change the [`visibility`](product/promotioninfo/visibility-swift.property.md) value by setting it directly, call [`update()`](product/promotioninfo/update().md) to save your changes to the App Store server. Changes take effect after you call [`update()`](product/promotioninfo/update().md) or [`updateAll(_:)`](product/promotioninfo/updateall(_:).md).
+If you change the [`visibility`](./visibility-swift.property.md) value by setting it directly, call [`update()`](./update%28%29.md) to save your changes to the App Store server. Changes take effect after you call [`update()`](./update%28%29.md) or [`updateAll(_:)`](./updateall%28_%29.md).
 
 ## See Also
 
-- [static func updateAll(some Collection<Product.PromotionInfo>) async throws](product/promotioninfo/updateall(_:).md)
+### Updating order and visibility
+- [static func updateAll(some Collection<Product.PromotionInfo>) async throws](./updateall%28_%29.md)
   Sets the order and visibility of all the promoted products and saves your changes.
 
 

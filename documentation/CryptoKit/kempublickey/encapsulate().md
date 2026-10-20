@@ -2,6 +2,7 @@
 
 **Framework**: Apple CryptoKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Generates and encapsulates a shared secret.
@@ -27,7 +28,7 @@ The shared secret, and its encapsulated version.
 
 #### Discussion
 
-Share the encapsulated secret with the person who has the [`KEMPrivateKey`](kemprivatekey.md). They use [`decapsulate(_:)`](kemprivatekey/decapsulate(_:).md) to recover the shared secret.
+Share the encapsulated secret with the person who has the [`KEMPrivateKey`](../kemprivatekey.md). They use [`decapsulate(_:)`](../kemprivatekey/decapsulate%28_%29.md) to recover the shared secret.
 
 
 ---

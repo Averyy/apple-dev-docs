@@ -1,7 +1,8 @@
 # itemTime
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time to seek to in the item timeline.
 
@@ -19,17 +20,22 @@ The time to seek to in the item timeline.
 var itemTime: CMTime { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTime itemTime;
+```
+
 #### Discussion
 
 > ❗ **Important**:  Don’t automatically resume playback after seeking to this time. The coordinator issues a new play command when all participants are ready to resume.
 
 ## See Also
 
-- [var shouldBufferInAnticipationOfPlayback: Bool](avdelegatingplaybackcoordinatorseekcommand/shouldbufferinanticipationofplayback.md)
+### Accessing command details
+- [var shouldBufferInAnticipationOfPlayback: Bool](./shouldbufferinanticipationofplayback.md)
   A Boolean value that indicates whether the player starts buffering in anticipation of a request to begin playback.
-- [var anticipatedPlaybackRate: Float](avdelegatingplaybackcoordinatorseekcommand/anticipatedplaybackrate.md)
+- [var anticipatedPlaybackRate: Float](./anticipatedplaybackrate.md)
   The rate at which the coordinator expects playback to resume.
-- [var completionDueDate: Date?](avdelegatingplaybackcoordinatorseekcommand/completionduedate.md)
+- [var completionDueDate: Date?](./completionduedate.md)
   The deadline by which the coordinator expects the delegate to handle the command.
 
 

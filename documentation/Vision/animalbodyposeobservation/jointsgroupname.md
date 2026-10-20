@@ -1,7 +1,8 @@
 # AnimalBodyPoseObservation.JointsGroupName
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The joint group names for an animal body pose.
 
@@ -22,27 +23,28 @@ enum JointsGroupName
 ## Topics
 
 ### Getting the group names
-- [AnimalBodyPoseObservation.JointsGroupName.forelegs](animalbodyposeobservation/jointsgroupname/forelegs.md)
-- [AnimalBodyPoseObservation.JointsGroupName.head](animalbodyposeobservation/jointsgroupname/head.md)
-- [AnimalBodyPoseObservation.JointsGroupName.hindlegs](animalbodyposeobservation/jointsgroupname/hindlegs.md)
-- [AnimalBodyPoseObservation.JointsGroupName.tail](animalbodyposeobservation/jointsgroupname/tail.md)
-- [AnimalBodyPoseObservation.JointsGroupName.trunk](animalbodyposeobservation/jointsgroupname/trunk.md)
+- [AnimalBodyPoseObservation.JointsGroupName.forelegs](./jointsgroupname/forelegs.md)
+- [AnimalBodyPoseObservation.JointsGroupName.head](./jointsgroupname/head.md)
+- [AnimalBodyPoseObservation.JointsGroupName.hindlegs](./jointsgroupname/hindlegs.md)
+- [AnimalBodyPoseObservation.JointsGroupName.tail](./jointsgroupname/tail.md)
+- [AnimalBodyPoseObservation.JointsGroupName.trunk](./jointsgroupname/trunk.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AnimalBodyPoseObservation.JointName](animalbodyposeobservation/jointname.md)
+### Getting the joints
+- [AnimalBodyPoseObservation.JointName](./jointname.md)
   The joint names for an animal body pose.
 
 

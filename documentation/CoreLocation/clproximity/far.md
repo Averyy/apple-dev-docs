@@ -1,7 +1,8 @@
 # CLProximity.far
 
 **Framework**: Core Location  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The beacon is far away.
 
@@ -17,13 +18,18 @@ The beacon is far away.
 case far
 ```
 
+```c
+CLProximityFar
+```
+
 ## See Also
 
-- [CLProximity.unknown](clproximity/unknown.md)
+### Proximity Values
+- [CLProximity.unknown](./unknown.md)
   The proximity of the beacon could not be determined.
-- [CLProximity.immediate](clproximity/immediate.md)
+- [CLProximity.immediate](./immediate.md)
   The beacon is in the user’s immediate vicinity.
-- [CLProximity.near](clproximity/near.md)
+- [CLProximity.near](./near.md)
   The beacon is relatively close to the user.
 
 

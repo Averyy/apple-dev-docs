@@ -1,7 +1,8 @@
 # init(identifier:title:options:icon:)
 
 **Framework**: User Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action object by using the specified title, options, and icon.
 
@@ -19,6 +20,10 @@ Creates an action object by using the specified title, options, and icon.
 convenience init(identifier: String, title: String, options: UNNotificationActionOptions = [], icon: UNNotificationActionIcon?)
 ```
 
+```objc
++ (instancetype) actionWithIdentifier:(NSString *) identifier title:(NSString *) title options:(UNNotificationActionOptions) options icon:(UNNotificationActionIcon *) icon;
+```
+
 #### Return Value
 
 An action object that the system initializes.
@@ -27,12 +32,13 @@ An action object that the system initializes.
 
 - `identifier`: The string that you use internally to identify the action. This string must be unique among your app’s supported actions. When the user selects the action, the system passes this string to your app and asks the user to perform the related task. This parameter must not be `nil` or an empty string.
 - `title`: The localized string the system displays to the user. The system displays this string as the title of a button, which the system adds to the notification interface. This parameter must not be `nil`.
-- `options`: Additional options that describe how the action behaves. Include options when you need the related behavior. For a list of possible values, see [`UNNotificationActionOptions`](unnotificationactionoptions.md).
+- `options`: Additional options that describe how the action behaves. Include options when you need the related behavior. For a list of possible values, see [`UNNotificationActionOptions`](../unnotificationactionoptions.md).
 - `icon`: The icon that the system displays to the user.
 
 ## See Also
 
-- [convenience init(identifier: String, title: String, options: UNNotificationActionOptions)](unnotificationaction/init(identifier:title:options:).md)
+### Essentials
+- [convenience init(identifier: String, title: String, options: UNNotificationActionOptions)](./init%28identifier,title,options%29.md)
   Creates an action object by using the specified title and options.
 
 

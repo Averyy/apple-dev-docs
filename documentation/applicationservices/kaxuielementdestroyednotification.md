@@ -1,7 +1,8 @@
 # kAXUIElementDestroyedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An accessibility object was disposed of.
 
@@ -12,6 +13,10 @@ An accessibility object was disposed of.
 
 ```swift
 var kAXUIElementDestroyedNotification: String { get }
+```
+
+```c
+#define kAXUIElementDestroyedNotification
 ```
 
 

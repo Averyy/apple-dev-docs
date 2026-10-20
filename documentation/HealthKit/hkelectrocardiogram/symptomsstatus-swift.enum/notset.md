@@ -1,7 +1,8 @@
 # HKElectrocardiogram.SymptomsStatus.notSet
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user didn’t specify whether or not they experienced symptoms.
 
@@ -19,11 +20,16 @@ The user didn’t specify whether or not they experienced symptoms.
 case notSet
 ```
 
+```c
+HKElectrocardiogramSymptomsStatusNotSet
+```
+
 ## See Also
 
-- [HKElectrocardiogram.SymptomsStatus.none](hkelectrocardiogram/symptomsstatus-swift.enum/none.md)
+### Status
+- [HKElectrocardiogram.SymptomsStatus.none](./none.md)
   The user didn’t experience any symptoms during the duration of the electrocardiogram reading.
-- [HKElectrocardiogram.SymptomsStatus.present](hkelectrocardiogram/symptomsstatus-swift.enum/present.md)
+- [HKElectrocardiogram.SymptomsStatus.present](./present.md)
   The user added a symptom when they recorded the ECG.
 
 

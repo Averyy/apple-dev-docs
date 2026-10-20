@@ -1,7 +1,8 @@
 # showDetailViewController(_:sender:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the specified view controller as the secondary view controller of the split view interface.
 
@@ -9,7 +10,7 @@ Presents the specified view controller as the secondary view controller of the s
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,15 @@ Presents the specified view controller as the secondary view controller of the s
 func showDetailViewController(_ vc: UIViewController, sender: Any?)
 ```
 
+```objc
+- (void) showDetailViewController:(UIViewController *) vc sender:(id) sender;
+```
+
 #### Discussion
 
-Whenever possible, use this method (instead of modifying the contents of the [`viewControllers`](uisplitviewcontroller/viewcontrollers.md) property directly) to replace the secondary view controller of your split view interface. This method displays the specified view controller in a way that’s optimal for the current size class in effect. It also takes advantage of existing navigation controller behaviors whenever possible to minimize changes to the split view interface.
+Whenever possible, use this method (instead of modifying the contents of the [`viewControllers`](./viewcontrollers.md) property directly) to replace the secondary view controller of your split view interface. This method displays the specified view controller in a way that’s optimal for the current size class in effect. It also takes advantage of existing navigation controller behaviors whenever possible to minimize changes to the split view interface.
 
-This method calls the delegate’s [`splitViewController(_:showDetail:sender:)`](uisplitviewcontrollerdelegate/splitviewcontroller(_:showdetail:sender:).md) method to give the delegate an opportunity to show the view controller. If the delegate doesn’t show the view controller, the split view controller forwards the message to the view controller being replaced. For example, a navigation controller responds by pushing `vc` onto its navigation stack. If no other object shows the view controller, the split view controller shows it using the following heuristics:
+This method calls the delegate’s [`splitViewController(_:showDetail:sender:)`](../uisplitviewcontrollerdelegate/splitviewcontroller%28_,showdetail,sender%29.md) method to give the delegate an opportunity to show the view controller. If the delegate doesn’t show the view controller, the split view controller forwards the message to the view controller being replaced. For example, a navigation controller responds by pushing `vc` onto its navigation stack. If no other object shows the view controller, the split view controller shows it using the following heuristics:
 
 - In a horizontally regular environment, the split view controller installs `vc` as the secondary view controller.
 - In a horizontally compact environment, the split view controller presents `vc` modally.
@@ -36,13 +41,14 @@ All view controllers implement this method. If they do not show the view control
 
 ## See Also
 
-- [func show(UISplitViewController.Column)](uisplitviewcontroller/show(_:).md)
+### Displaying the child view controllers
+- [func show(UISplitViewController.Column)](./show%28_%29.md)
   Presents the view controller in the specified column of the split view interface.
-- [func hide(UISplitViewController.Column)](uisplitviewcontroller/hide(_:).md)
+- [func hide(UISplitViewController.Column)](./hide%28_%29.md)
   Dismisses the view controller in the specified column of the split view interface.
-- [func isShowing(UISplitViewController.Column) -> Bool](uisplitviewcontroller/isshowing(_:).md)
+- [func isShowing(UISplitViewController.Column) -> Bool](./isshowing%28_%29.md)
   A Boolean value that indicates whether the split view interface is showing the specified column.
-- [func show(UIViewController, sender: Any?)](uisplitviewcontroller/show(_:sender:).md)
+- [func show(UIViewController, sender: Any?)](./show%28_,sender%29.md)
   Presents the specified view controller as the primary view controller in the split view interface.
 
 

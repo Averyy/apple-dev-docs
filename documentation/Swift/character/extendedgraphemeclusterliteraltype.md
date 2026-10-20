@@ -1,7 +1,8 @@
 # Character.ExtendedGraphemeClusterLiteralType
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents an extended grapheme cluster literal.
 

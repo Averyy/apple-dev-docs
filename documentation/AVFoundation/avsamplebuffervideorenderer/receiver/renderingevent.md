@@ -1,7 +1,8 @@
 # AVSampleBufferVideoRenderer.Receiver.RenderingEvent
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Events that might require intervention after there are no more samples to enqueue, but before rendering has finished.
 
@@ -22,22 +23,23 @@ enum RenderingEvent
 ## Topics
 
 ### Rendering events
-- [AVSampleBufferVideoRenderer.Receiver.RenderingEvent.didFailToDecode(_:)](avsamplebuffervideorenderer/receiver/renderingevent/didfailtodecode(_:).md)
+- [AVSampleBufferVideoRenderer.Receiver.RenderingEvent.didFailToDecode(_:)](./renderingevent/didfailtodecode%28_%29.md)
   Indicates that the renderer failed to decode one or more previously enqueued sample buffers.
-- [AVSampleBufferVideoRenderer.Receiver.RenderingEvent.requiresFlushToResumeDecoding(_:)](avsamplebuffervideorenderer/receiver/renderingevent/requiresflushtoresumedecoding(_:).md)
+- [AVSampleBufferVideoRenderer.Receiver.RenderingEvent.requiresFlushToResumeDecoding(_:)](./renderingevent/requiresflushtoresumedecoding%28_%29.md)
   The Receiver requires a flush to continue enqueuing samples.
-- [AVSampleBufferVideoRenderer.Receiver.RenderingEvent.failed(_:)](avsamplebuffervideorenderer/receiver/renderingevent/failed(_:).md)
+- [AVSampleBufferVideoRenderer.Receiver.RenderingEvent.failed(_:)](./renderingevent/failed%28_%29.md)
   Indicates that the receiver cannot currently enqueue or render sample buffers because of the associated error.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var renderingEventsAfterFinishedEnqueuing: some Sendable & AsyncSequence<AVSampleBufferVideoRenderer.Receiver.RenderingEvent, Never>](avsamplebuffervideorenderer/receiver/renderingeventsafterfinishedenqueuing.md)
+### Observing rendering events
+- [var renderingEventsAfterFinishedEnqueuing: some Sendable & AsyncSequence<AVSampleBufferVideoRenderer.Receiver.RenderingEvent, Never>](./renderingeventsafterfinishedenqueuing.md)
   A sequence of events that may occur when rendering after enqueuing samples has finished.
 
 

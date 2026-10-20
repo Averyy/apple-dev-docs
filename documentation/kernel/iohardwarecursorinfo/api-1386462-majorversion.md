@@ -1,7 +1,8 @@
 # majorVersion
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Set to kHardwareCursorInfoMajorVersion.
 
@@ -10,7 +11,7 @@ Set to kHardwareCursorInfoMajorVersion.
 
 ## Declaration
 
-```swift
+```c
 UInt16 majorVersion;
 ```
 

@@ -1,7 +1,8 @@
 # isMagnetometerActive
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether magnetometer updates are currently happening.
 
@@ -17,19 +18,25 @@ A Boolean value that determines whether magnetometer updates are currently happe
 var isMagnetometerActive: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isMagnetometerActive) BOOL magnetometerActive;
+```
+
 #### Discussion
 
-This property indicates whether the [`startMagnetometerUpdates(to:withHandler:)`](cmmotionmanager/startmagnetometerupdates(to:withhandler:).md) or [`startMagnetometerUpdates()`](cmmotionmanager/startmagnetometerupdates().md) method has been called since the last time the [`stopMagnetometerUpdates()`](cmmotionmanager/stopmagnetometerupdates().md) method was called. (If the start methods hadn’t been called, the app could be getting updates from the magnetometer after calling, for example, [`startDeviceMotionUpdates()`](cmmotionmanager/startdevicemotionupdates().md), but this property would return [`false`](https://developer.apple.com/documentation/swift/false).)
+This property indicates whether the [`startMagnetometerUpdates(to:withHandler:)`](./startmagnetometerupdates%28to,withhandler%29.md) or [`startMagnetometerUpdates()`](./startmagnetometerupdates%28%29.md) method has been called since the last time the [`stopMagnetometerUpdates()`](./stopmagnetometerupdates%28%29.md) method was called. (If the start methods hadn’t been called, the app could be getting updates from the magnetometer after calling, for example, [`startDeviceMotionUpdates()`](./startdevicemotionupdates%28%29.md), but this property would return [`false`](../../Swift/false.md).)
 
 ## See Also
 
-- [var isMagnetometerAvailable: Bool](cmmotionmanager/ismagnetometeravailable.md)
+### Related Documentation
+- [var isMagnetometerAvailable: Bool](./ismagnetometeravailable.md)
   A Boolean value that indicates whether a magnetometer is available on the device.
-- [var isDeviceMotionActive: Bool](cmmotionmanager/isdevicemotionactive.md)
+### Determining Which Services Are Active
+- [var isDeviceMotionActive: Bool](./isdevicemotionactive.md)
   A Boolean value that determines whether the app is receiving updates from the device-motion service.
-- [var isAccelerometerActive: Bool](cmmotionmanager/isaccelerometeractive.md)
+- [var isAccelerometerActive: Bool](./isaccelerometeractive.md)
   A Boolean value that indicates whether accelerometer updates are currently happening.
-- [var isGyroActive: Bool](cmmotionmanager/isgyroactive.md)
+- [var isGyroActive: Bool](./isgyroactive.md)
   A Boolean value that determines whether gyroscope updates are currently happening.
 
 

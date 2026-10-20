@@ -1,19 +1,20 @@
 # ODSession Option Keys
 
-**Framework**: Open Directory
+**Framework**: Open Directory  
+**Role**: API Collection
 
 Option keys used when creating a session directed over a proxy.
 
 ## Topics
 
 ### Constants
-- [let ODSessionProxyAddress: String](odsessionproxyaddress.md)
+- [let ODSessionProxyAddress: String](./odsessionproxyaddress.md)
   The address to connect to via proxy. The value is of type `NSString`.
-- [let ODSessionProxyPort: String](odsessionproxyport.md)
+- [let ODSessionProxyPort: String](./odsessionproxyport.md)
   The port to connect to via proxy. The value is of type `NSNumber`.
-- [let ODSessionProxyUsername: String](odsessionproxyusername.md)
+- [let ODSessionProxyUsername: String](./odsessionproxyusername.md)
   The username to connect with via proxy. The value is of type `NSString`.
-- [let ODSessionProxyPassword: String](odsessionproxypassword.md)
+- [let ODSessionProxyPassword: String](./odsessionproxypassword.md)
   The password to connect with via proxy. The value is of type `NSString`.
 
 

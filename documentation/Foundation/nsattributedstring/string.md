@@ -1,7 +1,8 @@
 # string
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The character contents of the attributed string as a string.
 
@@ -20,6 +21,10 @@ The character contents of the attributed string as a string.
 var string: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * string;
+```
+
 #### Discussion
 
 Attachment characters are not removed from the value of this property.
@@ -30,9 +35,10 @@ This primitive property must guarantee efficient access to an attributed stringâ
 
 ## See Also
 
-- [var length: Int](nsattributedstring/length.md)
+### Getting the characters
+- [var length: Int](./length.md)
   The length of the attributed string.
-- [func attributedSubstring(from: NSRange) -> NSAttributedString](nsattributedstring/attributedsubstring(from:).md)
+- [func attributedSubstring(from: NSRange) -> NSAttributedString](./attributedsubstring%28from%29.md)
   Returns an attributed string consisting of the characters and attributes within the specified range in the attributed string.
 
 

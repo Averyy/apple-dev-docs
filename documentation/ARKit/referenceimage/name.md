@@ -1,7 +1,8 @@
 # name
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of a reference image.
 
@@ -16,11 +17,12 @@ var name: String? { get set }
 
 ## See Also
 
-- [var physicalSize: CGSize](referenceimage/physicalsize.md)
+### Inspecting a reference image
+- [var physicalSize: CGSize](./physicalsize.md)
   The size, in meters, of a reference image in the real world.
-- [var resourceGroupName: String?](referenceimage/resourcegroupname.md)
+- [var resourceGroupName: String?](./resourcegroupname.md)
   A string value the represents the name of the resource group the framework loads an image from.
-- [var description: String](referenceimage/description.md)
+- [var description: String](./description.md)
   A textual representation of this reference image.
 
 

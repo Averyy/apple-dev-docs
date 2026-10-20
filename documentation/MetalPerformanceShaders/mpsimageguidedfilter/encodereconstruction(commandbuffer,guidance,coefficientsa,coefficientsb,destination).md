@@ -1,7 +1,8 @@
 # encodeReconstruction(commandBuffer:guidance:coefficientsA:coefficientsB:destination:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.2+
@@ -15,6 +16,10 @@
 
 ```swift
 func encodeReconstruction(commandBuffer: any MTLCommandBuffer, guidance guidanceTexture: any MTLTexture, coefficientsA coefficientsTextureA: any MTLTexture, coefficientsB coefficientsTextureB: any MTLTexture, destination destinationTexture: any MTLTexture)
+```
+
+```objc
+- (void) encodeReconstructionToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer guidanceTexture:(id<MTLTexture>) guidanceTexture coefficientsTextureA:(id<MTLTexture>) coefficientsTextureA coefficientsTextureB:(id<MTLTexture>) coefficientsTextureB destinationTexture:(id<MTLTexture>) destinationTexture;
 ```
 
 

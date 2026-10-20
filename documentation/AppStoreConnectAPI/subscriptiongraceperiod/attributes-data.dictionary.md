@@ -1,7 +1,8 @@
 # SubscriptionGracePeriod.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a subscription grace period resource.
 
@@ -10,15 +11,15 @@ Attributes that describe a subscription grace period resource.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGracePeriod.Attributes
 ```
 
 ## Properties
 
-- `duration` (SubscriptionGracePeriodDuration): [`SubscriptionGracePeriodDuration`](subscriptiongraceperiodduration.md)
+- `duration` (SubscriptionGracePeriodDuration): [`SubscriptionGracePeriodDuration`](../subscriptiongraceperiodduration.md)
 - `optIn` (boolean)
-- `renewalType` (string)
+- `renewalType` (string): **Allowed Values**: `ALL_RENEWALS`, `PAID_TO_PAID_ONLY`
 - `sandboxOptIn` (boolean)
 
 

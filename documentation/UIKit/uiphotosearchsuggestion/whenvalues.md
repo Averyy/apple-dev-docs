@@ -1,7 +1,8 @@
 # whenValues
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Time periods mentioned in the text that can be used to filter photos.
 
@@ -14,6 +15,10 @@ Time periods mentioned in the text that can be used to filter photos.
 
 ```swift
 var whenValues: [String] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSString *> * whenValues;
 ```
 
 #### Discussion

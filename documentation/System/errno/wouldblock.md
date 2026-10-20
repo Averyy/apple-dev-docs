@@ -1,7 +1,8 @@
 # wouldBlock
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Operation would block.
 
@@ -22,7 +23,7 @@ static var wouldBlock: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -30,9 +31,10 @@ The corresponding C error is `EWOULDBLOCK`.
 
 ## See Also
 
-- [static var deadlock: Errno](errno/deadlock.md)
+### Runtime Errors
+- [static var deadlock: Errno](./deadlock.md)
   Resource deadlock avoided.
-- [static var noMemory: Errno](errno/nomemory.md)
+- [static var noMemory: Errno](./nomemory.md)
   Can’t allocate memory.
 
 

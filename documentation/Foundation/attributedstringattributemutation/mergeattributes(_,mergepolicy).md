@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Merges the attributed string’s attributes with those in a specified attribute container.
@@ -28,9 +29,10 @@ mutating func mergeAttributes(_ attributes: AttributeContainer, mergePolicy: Att
 
 ## See Also
 
-- [func setAttributes(AttributeContainer)](attributedstringattributemutation/setattributes(_:).md)
+### Mutating the String’s Attributes
+- [func setAttributes(AttributeContainer)](./setattributes%28_%29.md)
   Sets the attributed string’s attributes to those in a specified attribute container.
-- [func replaceAttributes(AttributeContainer, with: AttributeContainer)](attributedstringattributemutation/replaceattributes(_:with:).md)
+- [func replaceAttributes(AttributeContainer, with: AttributeContainer)](./replaceattributes%28_,with%29.md)
   Replaces the attributed string’s attributes with those in a specified attribute container.
 
 

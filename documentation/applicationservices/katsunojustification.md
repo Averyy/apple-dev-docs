@@ -1,7 +1,8 @@
 # kATSUNoJustification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var kATSUNoJustification: Fract { get }
+```
+
+```c
+#define kATSUNoJustification
 ```
 
 

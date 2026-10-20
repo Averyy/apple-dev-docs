@@ -1,7 +1,8 @@
 # SCRecordingEditor.Mode.preview
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - tvOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 case preview
+```
+
+```c
+SCRecordingEditorModePreview
 ```
 
 

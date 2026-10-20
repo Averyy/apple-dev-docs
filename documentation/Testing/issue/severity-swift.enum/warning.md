@@ -1,7 +1,8 @@
 # Issue.Severity.warning
 
 **Framework**: Swift Testing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The severity level for an issue which should be noted but is not necessarily an error.
 

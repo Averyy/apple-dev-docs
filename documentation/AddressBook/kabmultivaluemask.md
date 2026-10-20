@@ -1,20 +1,25 @@
 # kABMultiValueMask
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-Used by [`ABPropertyType`](abpropertytype.md) to specify a multivalue property.
+Used by [`ABPropertyType`](./abpropertytype.md) to specify a multivalue property.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var kABMultiValueMask: Int32 { get }
+```
+
+```c
+#define kABMultiValueMask
 ```
 
 

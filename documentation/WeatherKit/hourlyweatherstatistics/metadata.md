@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Descriptive information about the weather statistics data.
 

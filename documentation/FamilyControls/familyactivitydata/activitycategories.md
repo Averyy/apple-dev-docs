@@ -1,7 +1,8 @@
 # activityCategories
 
 **Framework**: Family Controls  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of all possible activity categories.
 
@@ -19,15 +20,16 @@ var activityCategories: Set<ActivityCategory> { get async throws }
 
 Each category contains both a `localizedDisplayName` and a `token`.
 
-> ❗ **Important**:  Authorize your app with [`AuthorizationCenter`](authorizationcenter.md) and ensure data access is available before accessing this variable. Otherwise, it always throws an error.
+> ❗ **Important**:  Authorize your app with [`AuthorizationCenter`](../authorizationcenter.md) and ensure data access is available before accessing this variable. Otherwise, it always throws an error.
 
 ## See Also
 
-- [static let shared: FamilyActivityData](familyactivitydata/shared.md)
+### Accessing activity data
+- [static let shared: FamilyActivityData](./shared.md)
   A shared instance for accessing a person’s family activity data.
-- [var installedApplications: [Application]](familyactivitydata/installedapplications.md)
+- [var installedApplications: [Application]](./installedapplications.md)
   Applications someone installs on a device.
-- [var visitedWebDomains: [WebDomain]](familyactivitydata/visitedwebdomains.md)
+- [var visitedWebDomains: [WebDomain]](./visitedwebdomains.md)
   Web domains someone visits on their device.
 
 

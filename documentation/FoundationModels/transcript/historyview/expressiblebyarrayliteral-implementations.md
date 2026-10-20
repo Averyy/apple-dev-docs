@@ -1,11 +1,12 @@
 # ExpressibleByArrayLiteral Implementations
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [Transcript.HistoryView.ArrayLiteralElement](transcript/historyview/arrayliteralelement.md)
+- [Transcript.HistoryView.ArrayLiteralElement](./arrayliteralelement.md)
   The type of entry an array literal contains when it creates a history view.
 
 

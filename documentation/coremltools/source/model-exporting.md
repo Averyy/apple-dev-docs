@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/model-exporting.html
 
 # Model Exporting
 
-**
-
-- [.md](../_sources/source/model-exporting.md)
-- **
-
-.pdf
-
-**
-
-# Model Exporting
-
- Table of contents 
-
-## Contents
-
-# Model Exporting
-
 The recommended way to generate ExportedProgram for your model is to use PyTorch’s [torch.export.export](https://pytorch.org/docs/stable/export.html#torch.export.export). Exporting runs an example input tensor through your model, and captures the operations that are invoked as that input makes its way through the model’s layers.
 
 Exporting Limitations
@@ -54,59 +37,74 @@ coremltools        8.0
 The following example builds a simple model from scratch and exports it to generate the ExportedProgram object needed by the converter. Follow these steps:
 
 1. Define a simple layer module to reuse:
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
 
-# Define a simple layer module we will reuse in our network
-class Attention(nn.Module):
-    def __init__(self):
-        super().__init__()
-        self.wq = nn.Linear(32, 64)
-        self.wk = nn.Linear(32, 64)
-        self.wv = nn.Linear(32, 64)
-        self.wo = nn.Linear(64, 32)
+   ```
+   import torch
+   import torch.nn as nn
+   import torch.nn.functional as F
 
-    def forward(self, embedding):
-        q = self.wq(embedding)
-        k = self.wk(embedding)
-        v = self.wv(embedding)
-        attention = F.scaled_dot_product_attention(q, k, v)
-        o = self.wo(attention)
-        return o
+   # Define a simple layer module we will reuse in our network
+   class Attention(nn.Module):
+       def __init__(self):
+           super().__init__()
+           self.wq = nn.Linear(32, 64)
+           self.wk = nn.Linear(32, 64)
+           self.wv = nn.Linear(32, 64)
+           self.wo = nn.Linear(64, 32)
+
+       def forward(self, embedding):
+           q = self.wq(embedding)
+           k = self.wk(embedding)
+           v = self.wv(embedding)
+           attention = F.scaled_dot_product_attention(q, k, v)
+           o = self.wo(attention)
+           return o
+   ```
 2. Define a simple network consisting of several base layers:
-# A simple network consisting of several base layers
-class Transformer(nn.Module):
-    def __init__(self):
-        super().__init__()
-        self.attention = Attention()
-        self.w1 = nn.Linear(32, 16)
-        self.w2 = nn.Linear(16, 32)
-        self.w3 = nn.Linear(32, 16)
 
-    def forward(self, embedding):
-        attention = self.attention(embedding)
-        x = embedding + attention
-        y = self.w2(F.silu(self.w1(x)) * self.w3(x))
-        z = x + y
-        return z
+   ```
+   # A simple network consisting of several base layers
+   class Transformer(nn.Module):
+       def __init__(self):
+           super().__init__()
+           self.attention = Attention()
+           self.w1 = nn.Linear(32, 16)
+           self.w2 = nn.Linear(16, 32)
+           self.w3 = nn.Linear(32, 16)
+
+       def forward(self, embedding):
+           attention = self.attention(embedding)
+           x = embedding + attention
+           y = self.w2(F.silu(self.w1(x)) * self.w3(x))
+           z = x + y
+           return z
+   ```
 3. Instantiate the network:
-# Instantiate the network
-model = Transformer()
-model.eval()
+
+   ```
+   # Instantiate the network
+   model = Transformer()
+   model.eval()
+   ```
 4. Define the example input, which is needed by exporter, and export the model.
 Run `torch.export.export` on your model with an example input, and save the resulting exported object. For an example input, you can use one sample of training or validation data, or even use randomly-generated data as shown in the following code snippet:
-# Example input, needed by exporter
-example_input = (torch.rand(2, 32),)
-# Define dynamic shapes to be considered by exporter, if any
-batch_dim = torch.export.Dim(name="batch_dim", min=1, max=128)
-dynamic_shapes = {"embedding": {0: batch_dim}}
-# Generate ExportedProgram by exporting
-exported_model = torch.export.export(model, example_input, dynamic_shapes=dynamic_shapes)
-5. Convert the exported model to Core ML:
-import coremltools as ct
 
-mlmodel = ct.convert(exported_model)
+   ```
+   # Example input, needed by exporter
+   example_input = (torch.rand(2, 32),)
+   # Define dynamic shapes to be considered by exporter, if any
+   batch_dim = torch.export.Dim(name="batch_dim", min=1, max=128)
+   dynamic_shapes = {"embedding": {0: batch_dim}}
+   # Generate ExportedProgram by exporting
+   exported_model = torch.export.export(model, example_input, dynamic_shapes=dynamic_shapes)
+   ```
+5. Convert the exported model to Core ML:
+
+   ```
+   import coremltools as ct
+
+   mlmodel = ct.convert(exported_model)
+   ```
 
 ## Difference from Tracing
 
@@ -120,5 +118,3 @@ Another difference between tracing and exporting is how to create dynamic shapes
 
 - If `RangeDim` is desired, then nothing more is needed, since it will be automatically converted from [torch.export.Dim](https://pytorch.org/docs/stable/export.html#torch.export.dynamic_shapes.Dim)
 - Else if `EnumeratedShapes` are desired, then user will need to specify shape enumeration in `inputs` arg, and only the torch.export dynamic dimensions are allowed to have more-than-1 possible sizes
-
-** Contents

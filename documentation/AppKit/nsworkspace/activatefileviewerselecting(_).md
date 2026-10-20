@@ -1,7 +1,8 @@
 # activateFileViewerSelecting(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Activates the Finder, and opens one or more windows selecting the specified files.
 
@@ -14,6 +15,10 @@ Activates the Finder, and opens one or more windows selecting the specified file
 func activateFileViewerSelecting(_ fileURLs: [URL])
 ```
 
+```objc
+- (void) activateFileViewerSelectingURLs:(NSArray<NSURL *> *) fileURLs;
+```
+
 #### Discussion
 
 You can safely call this method from any thread of your app.
@@ -24,11 +29,12 @@ You can safely call this method from any thread of your app.
 
 ## See Also
 
-- [func duplicate([URL], completionHandler: (([URL : URL], (any Error)?) -> Void)?)](nsworkspace/duplicate(_:completionhandler:).md)
+### Manipulating Files
+- [func duplicate([URL], completionHandler: (([URL : URL], (any Error)?) -> Void)?)](./duplicate%28_,completionhandler%29.md)
   Duplicates the specified URLS asynchronously in the same manner as the Finder.
-- [func recycle([URL], completionHandler: (([URL : URL], (any Error)?) -> Void)?)](nsworkspace/recycle(_:completionhandler:).md)
+- [func recycle([URL], completionHandler: (([URL : URL], (any Error)?) -> Void)?)](./recycle%28_,completionhandler%29.md)
   Moves the specified URLs to the trash in the same manner as the Finder.
-- [func selectFile(String?, inFileViewerRootedAtPath: String) -> Bool](nsworkspace/selectfile(_:infileviewerrootedatpath:).md)
+- [func selectFile(String?, inFileViewerRootedAtPath: String) -> Bool](./selectfile%28_,infileviewerrootedatpath%29.md)
   Selects the file at the specified path.
 
 

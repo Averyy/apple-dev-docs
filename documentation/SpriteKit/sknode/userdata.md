@@ -1,23 +1,28 @@
 # userData
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary containing arbitrary data.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var userData: NSMutableDictionary? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) NSMutableDictionary * userData;
 ```
 
 #### Discussion

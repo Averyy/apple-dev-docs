@@ -1,14 +1,15 @@
 # kIOServiceTerminateWithRematchCurrentDext
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 kIOServiceTerminateWithRematchCurrentDext = 0x00000020
 ```
 

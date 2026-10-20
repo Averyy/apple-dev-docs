@@ -1,7 +1,8 @@
 # CKShare.Participant.AcceptanceStatus
 
 **Framework**: CloudKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents the acceptance status of the participant.
 
@@ -11,9 +12,11 @@ A type that represents the acceptance status of the participant.
 - Mac Catalyst 13.1+ - Deprecated
 - macOS 10.12+ - Deprecated
 - tvOS 10.0+ - Deprecated
-- visionOS ?+ - Deprecated
+- visionOS - Deprecated
 - watchOS 3.0+ - Deprecated
 - Swift 4.2+
+
+> **Deprecated**: renamed to CKShare.ParticipantAcceptanceStatus
 
 ## Declaration
 
@@ -23,9 +26,10 @@ typealias AcceptanceStatus = CKShare.ParticipantAcceptanceStatus
 
 ## See Also
 
-- [var acceptanceStatus: CKShare.ParticipantAcceptanceStatus](ckshare/participant/acceptancestatus-swift.property.md)
+### Accessing the Participant’s Status
+- [var acceptanceStatus: CKShare.ParticipantAcceptanceStatus](./acceptancestatus-swift.property.md)
   The current state of the user’s acceptance of the share.
-- [CKShare.ParticipantAcceptanceStatus](ckshare/participantacceptancestatus.md)
+- [CKShare.ParticipantAcceptanceStatus](../participantacceptancestatus.md)
   Constants that represent the status of a participant.
 
 

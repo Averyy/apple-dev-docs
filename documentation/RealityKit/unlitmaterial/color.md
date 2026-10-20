@@ -1,7 +1,8 @@
 # color
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The material’s base color.
 
@@ -11,7 +12,7 @@ The material’s base color.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,11 +22,12 @@ var color: UnlitMaterial.BaseColor { get set }
 
 #### Discussion
 
-> **Note**: The blending mode of `UnlitMaterial` materials should be configured explicitly with the [`blending`](unlitmaterial/blending-swift.property.md) property for transparent or translucent surfaces.  The `opaque` mode is used when unset.
+> **Note**: The blending mode of `UnlitMaterial` materials should be configured explicitly with the [`blending`](./blending-swift.property.md) property for transparent or translucent surfaces.  The `opaque` mode is used when unset.
 
 ## See Also
 
-- [var baseColor: MaterialColorParameter](unlitmaterial/basecolor-swift.property.md)
+### Configuring base color
+- [var baseColor: MaterialColorParameter](./basecolor-swift.property.md)
   The base color of the material.
 
 

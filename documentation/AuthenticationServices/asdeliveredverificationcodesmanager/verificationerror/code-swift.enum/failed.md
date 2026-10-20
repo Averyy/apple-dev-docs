@@ -1,7 +1,8 @@
 # ASDeliveredVerificationCodesManager.VerificationError.Code.failed
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+

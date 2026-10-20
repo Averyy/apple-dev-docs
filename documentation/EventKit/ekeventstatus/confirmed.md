@@ -1,17 +1,18 @@
 # EKEventStatus.confirmed
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The event is confirmed.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ The event is confirmed.
 case confirmed
 ```
 
+```c
+EKEventStatusConfirmed
+```
+
 ## See Also
 
-- [EKEventStatus.none](ekeventstatus/none.md)
+### Constants
+- [EKEventStatus.none](./none.md)
   The event has no status.
-- [EKEventStatus.tentative](ekeventstatus/tentative.md)
+- [EKEventStatus.tentative](./tentative.md)
   The event is tentative.
-- [EKEventStatus.canceled](ekeventstatus/canceled.md)
+- [EKEventStatus.canceled](./canceled.md)
   The event is canceled.
 
 

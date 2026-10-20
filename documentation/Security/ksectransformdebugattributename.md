@@ -1,12 +1,15 @@
 # kSecTransformDebugAttributeName
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A write stream that should receive debug data.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 12.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
@@ -14,9 +17,13 @@ A write stream that should receive debug data.
 let kSecTransformDebugAttributeName: CFString
 ```
 
+```c
+extern CFStringRef const kSecTransformDebugAttributeName;
+```
+
 #### Discussion
 
-Set this attribute to a [`CFWriteStream`](https://developer.apple.com/documentation/corefoundation/cfwritestream). This signals the transform to write debugging information to the stream. If you set this attribute to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue), debug data is written to `stderr` instead.
+Set this attribute to a [`CFWriteStream`](../CoreFoundation/cfwritestream.md). This signals the transform to write debugging information to the stream. If you set this attribute to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md), debug data is written to `stderr` instead.
 
 
 ---

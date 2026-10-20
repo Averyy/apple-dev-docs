@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that exposes elements received from an upstream publisher as a throwing asynchronous sequence.
 

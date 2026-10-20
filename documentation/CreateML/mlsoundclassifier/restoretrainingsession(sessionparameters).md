@@ -1,7 +1,8 @@
 # restoreTrainingSession(sessionParameters:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an asynchronous training session for a sound classifier by restoring an existing training session’s state from its parameters.
 
@@ -20,23 +21,24 @@ static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameter
 
 #### Return Value
 
-An [`MLTrainingSession`](mltrainingsession.md) that represents the sound classifier training session.
+An [`MLTrainingSession`](../mltrainingsession.md) that represents the sound classifier training session.
 
 ## Parameters
 
-- `sessionParameters`: The [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you used to create the training session using [`makeTrainingSession(trainingData:parameters:sessionParameters:)`](mlsoundclassifier/maketrainingsession(trainingdata:parameters:sessionparameters:).md).
+- `sessionParameters`: The [`MLTrainingSessionParameters`](../mltrainingsessionparameters.md) instance you used to create the training session using [`makeTrainingSession(trainingData:parameters:sessionParameters:)`](./maketrainingsession%28trainingdata,parameters,sessionparameters%29.md).
 
 ## See Also
 
-- [static train(trainingData:parameters:sessionParameters:)](mlsoundclassifier/train(trainingdata:parameters:sessionparameters:).md)
+### Training a sound classifier asynchronously
+- [static train(trainingData:parameters:sessionParameters:)](./train%28trainingdata,parameters,sessionparameters%29.md)
   Begins an asynchronous sound classifier training session with a training dataset represented by a data source.
-- [static func makeTrainingSession(trainingData: MLSoundClassifier.DataSource, parameters: MLSoundClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLSoundClassifier>](mlsoundclassifier/maketrainingsession(trainingdata:parameters:sessionparameters:).md)
+- [static func makeTrainingSession(trainingData: MLSoundClassifier.DataSource, parameters: MLSoundClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLSoundClassifier>](./maketrainingsession%28trainingdata,parameters,sessionparameters%29.md)
   Creates an asynchronous training session for a sound classifier.
-- [static func resume(MLTrainingSession<MLSoundClassifier>) throws -> MLJob<MLSoundClassifier>](mlsoundclassifier/resume(_:).md)
+- [static func resume(MLTrainingSession<MLSoundClassifier>) throws -> MLJob<MLSoundClassifier>](./resume%28_%29.md)
   Begins or continues an asynchronous training session for a sound classifier.
-- [static func extractFeatures(trainingData: MLSoundClassifier.DataSource, parameters: MLSoundClassifier.FeatureExtractionParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLSoundClassifier.DataSource>](mlsoundclassifier/extractfeatures(trainingdata:parameters:sessionparameters:).md)
+- [static func extractFeatures(trainingData: MLSoundClassifier.DataSource, parameters: MLSoundClassifier.FeatureExtractionParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLSoundClassifier.DataSource>](./extractfeatures%28trainingdata,parameters,sessionparameters%29.md)
   Begins an asynchronous session that extracts sound features from a data source of sound files.
-- [MLSoundClassifier.FeatureExtractionParameters](mlsoundclassifier/featureextractionparameters.md)
+- [MLSoundClassifier.FeatureExtractionParameters](./featureextractionparameters.md)
   Parameters that affect the process of extracting sound features from audio files.
 
 

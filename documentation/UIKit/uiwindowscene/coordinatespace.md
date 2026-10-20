@@ -1,16 +1,19 @@
 # coordinateSpace
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The coordinate space occupied by the scene.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- tvOS 13.0+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 26.0
+- iPadOS 13.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- tvOS 13.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+
+> **Deprecated**: Use effectiveGeometry.coordinateSpace instead.
 
 ## Declaration
 
@@ -18,15 +21,20 @@ The coordinate space occupied by the scene.
 var coordinateSpace: any UICoordinateSpace { get }
 ```
 
+```objc
+@property (nonatomic, readonly) id<UICoordinateSpace> coordinateSpace;
+```
+
 #### Discussion
 
-Use the provided coordinate space to get the bounds of the scene’s bounds rectangle and to convert points and rectangles to and from other coordinate spaces. For example, use [`coordinateSpace`](uiwindowscene/coordinatespace.md) to convert a point in the scene to the screen coordinate space.
+Use the provided coordinate space to get the bounds of the scene’s bounds rectangle and to convert points and rectangles to and from other coordinate spaces. For example, use [`coordinateSpace`](./coordinatespace.md) to convert a point in the scene to the screen coordinate space.
 
 ## See Also
 
-- [var interfaceOrientation: UIInterfaceOrientation](uiwindowscene/interfaceorientation.md)
+### Deprecated
+- [var interfaceOrientation: UIInterfaceOrientation](./interfaceorientation.md)
   The orientation to use when displaying content in your windows.
-- [UIWindowScene.PresentationStyle](uiwindowscene/presentationstyle.md)
+- [UIWindowScene.PresentationStyle](./presentationstyle.md)
   The placement of a window scene relative to other scenes in the workspace.
 
 

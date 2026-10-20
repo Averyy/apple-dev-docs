@@ -1,7 +1,8 @@
 # CFNetworkErrors.cfurlErrorFileOutsideSafeArea
 
 **Framework**: CFNetwork  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The file is outside of the safe area.
 
@@ -17,6 +18,10 @@ The file is outside of the safe area.
 
 ```swift
 case cfurlErrorFileOutsideSafeArea
+```
+
+```c
+kCFURLErrorFileOutsideSafeArea
 ```
 
 

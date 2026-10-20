@@ -1,7 +1,8 @@
 # vertexBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A buffer that contains vertex data.
 
@@ -19,17 +20,22 @@ A buffer that contains vertex data.
 var vertexBuffer: (any MTLBuffer)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MTLBuffer> vertexBuffer;
+```
+
 #### Discussion
 
-The [`vertexFormat`](mtlaccelerationstructuretrianglegeometrydescriptor/vertexformat.md) property defines the format of each vertex position in the buffer. You need to set a vertex buffer before creating the acceleration structure.
+The [`vertexFormat`](./vertexformat.md) property defines the format of each vertex position in the buffer. You need to set a vertex buffer before creating the acceleration structure.
 
 ## See Also
 
-- [var vertexFormat: MTLAttributeFormat](mtlaccelerationstructuretrianglegeometrydescriptor/vertexformat.md)
+### Configuring vertex data
+- [var vertexFormat: MTLAttributeFormat](./vertexformat.md)
   The format of each vertex position in the vertex buffer property.
-- [var vertexBufferOffset: Int](mtlaccelerationstructuretrianglegeometrydescriptor/vertexbufferoffset.md)
+- [var vertexBufferOffset: Int](./vertexbufferoffset.md)
   The offset, in bytes, for the first vertex in the vertex buffer.
-- [var vertexStride: Int](mtlaccelerationstructuretrianglegeometrydescriptor/vertexstride.md)
+- [var vertexStride: Int](./vertexstride.md)
   The stride, in bytes, between vertices in the vertex buffer.
 
 

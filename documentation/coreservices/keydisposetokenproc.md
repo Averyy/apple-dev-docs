@@ -1,9 +1,10 @@
 # keyDisposeTokenProc
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Token disposal function. See [`OSLDisposeTokenProcPtr`](osldisposetokenprocptr.md).
+Token disposal function. See [`OSLDisposeTokenProcPtr`](./osldisposetokenprocptr.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

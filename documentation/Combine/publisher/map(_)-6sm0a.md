@@ -1,7 +1,8 @@
 # map(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Publishes the value of a key path.
 
@@ -26,7 +27,7 @@ A publisher that publishes the value of the key path.
 
 #### Discussion
 
-In the following example, the [`map(_:)`](publisher/map(_:)-6sm0a.md) operator uses the Swift key path syntax to access the `die` member of the `DiceRoll` structure published by the [`Just`](just.md) publisher.
+In the following example, the [`map(_:)`](./map%28_%29-6sm0a.md) operator uses the Swift key path syntax to access the `die` member of the `DiceRoll` structure published by the [`Just`](../just.md) publisher.
 
 The downstream sink subscriber receives only the value of this `Int`, not the entire `DiceRoll`.
 
@@ -49,9 +50,10 @@ cancellable = Just(DiceRoll(die:Int.random(in:1...6)))
 
 ## See Also
 
-- [func map<T0, T1>(KeyPath<Self.Output, T0>, KeyPath<Self.Output, T1>) -> Publishers.MapKeyPath2<Self, T0, T1>](publisher/map(_:_:).md)
+### Identifying properties with key paths
+- [func map<T0, T1>(KeyPath<Self.Output, T0>, KeyPath<Self.Output, T1>) -> Publishers.MapKeyPath2<Self, T0, T1>](./map%28_,_%29.md)
   Publishes the values of two key paths as a tuple.
-- [func map<T0, T1, T2>(KeyPath<Self.Output, T0>, KeyPath<Self.Output, T1>, KeyPath<Self.Output, T2>) -> Publishers.MapKeyPath3<Self, T0, T1, T2>](publisher/map(_:_:_:).md)
+- [func map<T0, T1, T2>(KeyPath<Self.Output, T0>, KeyPath<Self.Output, T1>, KeyPath<Self.Output, T2>) -> Publishers.MapKeyPath3<Self, T0, T1, T2>](./map%28_,_,_%29.md)
   Publishes the values of three key paths as a tuple.
 
 

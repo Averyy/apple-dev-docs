@@ -1,7 +1,8 @@
 # immersiveViewingMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current immersive-viewing mode.
 
@@ -16,7 +17,8 @@ var immersiveViewingMode: VideoPlayerComponent.ImmersiveViewingMode? { get }
 
 ## See Also
 
-- [var desiredImmersiveViewingMode: VideoPlayerComponent.ImmersiveViewingMode](videoplayercomponent/desiredimmersiveviewingmode.md)
+### Playing immersive media
+- [var desiredImmersiveViewingMode: VideoPlayerComponent.ImmersiveViewingMode](./desiredimmersiveviewingmode.md)
   The viewer’s selected immersive-viewing mode.
 
 

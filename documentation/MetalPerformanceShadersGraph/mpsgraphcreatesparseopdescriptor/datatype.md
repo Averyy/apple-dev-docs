@@ -1,7 +1,8 @@
 # dataType
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the datatype of the sparse tensor.
 
@@ -17,6 +18,10 @@ Defines the datatype of the sparse tensor.
 
 ```swift
 var dataType: MPSDataType { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSDataType dataType;
 ```
 
 

@@ -1,7 +1,8 @@
 # readAttributeBatChargingCurrent(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeBatChargingCurrent(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeBatChargingCurrent() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeBatChargingCurrentWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

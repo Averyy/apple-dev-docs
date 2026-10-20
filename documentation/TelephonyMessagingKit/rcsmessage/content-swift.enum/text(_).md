@@ -1,7 +1,8 @@
 # RCSMessage.Content.text(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A content type for text content.
 
@@ -16,7 +17,8 @@ case text(RCSMessage.Text)
 
 ## See Also
 
-- [RCSMessage.Text](rcsmessage/text.md)
+### Working with text content
+- [RCSMessage.Text](../text.md)
   A structure that represents text content in an RCS message.
 
 

@@ -1,7 +1,8 @@
 # textInputClientWillStartScrollingOrZooming()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 14.0+
@@ -12,13 +13,18 @@
 func textInputClientWillStartScrollingOrZooming()
 ```
 
+```objc
+- (void) textInputClientWillStartScrollingOrZooming;
+```
+
 ## Mentions
 
-- [Adopting the system text cursor in custom text views](adopting-the-system-text-cursor-in-custom-text-views.md)
+- [Adopting the system text cursor in custom text views](../adopting-the-system-text-cursor-in-custom-text-views.md)
 
 ## See Also
 
-- [func textInputClientDidEndScrollingOrZooming()](nstextinputcontext/textinputclientdidendscrollingorzooming.md)
+### Instance Methods
+- [func textInputClientDidEndScrollingOrZooming()](./textinputclientdidendscrollingorzooming%28%29.md)
 
 
 ---

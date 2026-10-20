@@ -1,7 +1,8 @@
 # MTRPowerSourceStatus
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,27 +19,31 @@
 enum MTRPowerSourceStatus
 ```
 
+```c
+enum MTRPowerSourceStatus : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRPowerSourceStatus.active](mtrpowersourcestatus/active.md)
-- [MTRPowerSourceStatus.standby](mtrpowersourcestatus/standby.md)
-- [MTRPowerSourceStatus.unavailable](mtrpowersourcestatus/unavailable.md)
-- [MTRPowerSourceStatus.unspecified](mtrpowersourcestatus/unspecified.md)
+- [MTRPowerSourceStatus.active](./mtrpowersourcestatus/active.md)
+- [MTRPowerSourceStatus.standby](./mtrpowersourcestatus/standby.md)
+- [MTRPowerSourceStatus.unavailable](./mtrpowersourcestatus/unavailable.md)
+- [MTRPowerSourceStatus.unspecified](./mtrpowersourcestatus/unspecified.md)
 ### Type Properties
-- [static var unspecfied: MTRPowerSourceStatus](mtrpowersourcestatus/unspecfied.md)
+- [static var unspecfied: MTRPowerSourceStatus](./mtrpowersourcestatus/unspecfied.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrpowersourcestatus/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrpowersourcestatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

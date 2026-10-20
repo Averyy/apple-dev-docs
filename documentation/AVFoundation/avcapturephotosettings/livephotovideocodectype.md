@@ -1,7 +1,8 @@
 # livePhotoVideoCodecType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The video codec to use for encoding the movie portion of Live Photo output.
 
@@ -17,15 +18,20 @@ The video codec to use for encoding the movie portion of Live Photo output.
 var livePhotoVideoCodecType: AVVideoCodecType { get set }
 ```
 
+```objc
+@property (nonatomic, copy) AVVideoCodecType livePhotoVideoCodecType;
+```
+
 #### Discussion
 
-This value must be one of the video codec types listed in the photo output’s [`availableLivePhotoVideoCodecTypes`](avcapturephotooutput/availablelivephotovideocodectypes.md) array.
+This value must be one of the video codec types listed in the photo output’s [`availableLivePhotoVideoCodecTypes`](../avcapturephotooutput/availablelivephotovideocodectypes.md) array.
 
 ## See Also
 
-- [var livePhotoMovieFileURL: URL?](avcapturephotosettings/livephotomoviefileurl.md)
+### Configuring Live Photo settings
+- [var livePhotoMovieFileURL: URL?](./livephotomoviefileurl.md)
   A URL at which to write Live Photo movie output.
-- [var livePhotoMovieMetadata: [AVMetadataItem]!](avcapturephotosettings/livephotomoviemetadata.md)
+- [var livePhotoMovieMetadata: [AVMetadataItem]!](./livephotomoviemetadata.md)
   A dictionary of metadata to include in the Live Photo movie file.
 
 

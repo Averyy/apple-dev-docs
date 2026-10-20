@@ -1,7 +1,8 @@
 # connections
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The connection target paths authored on this attribute.
 

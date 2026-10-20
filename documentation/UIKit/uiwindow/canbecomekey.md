@@ -1,7 +1,8 @@
 # canBecomeKey
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the window can become the key window.
 
@@ -18,21 +19,26 @@ A Boolean value that indicates whether the window can become the key window.
 var canBecomeKey: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL canBecomeKeyWindow;
+```
+
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true). To indicate that the window can’t become the key window, override [`canBecomeKey`](uiwindow/canbecomekey.md) and return [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`true`](../../Swift/true.md). To indicate that the window can’t become the key window, override [`canBecomeKey`](./canbecomekey.md) and return [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isKeyWindow: Bool](uiwindow/iskeywindow.md)
+### Making windows key
+- [var isKeyWindow: Bool](./iskeywindow.md)
   A Boolean value that indicates whether the window is the key window.
-- [func makeKeyAndVisible()](uiwindow/makekeyandvisible.md)
+- [func makeKeyAndVisible()](./makekeyandvisible%28%29.md)
   Shows the window and makes it the key window.
-- [func makeKey()](uiwindow/makekey.md)
+- [func makeKey()](./makekey%28%29.md)
   Makes the window the key window.
-- [func becomeKey()](uiwindow/becomekey.md)
+- [func becomeKey()](./becomekey%28%29.md)
   Tells the window that it’s the key window.
-- [func resignKey()](uiwindow/resignkey.md)
+- [func resignKey()](./resignkey%28%29.md)
   Tells the window that it’s no longer the key window.
 
 

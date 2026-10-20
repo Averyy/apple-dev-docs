@@ -1,7 +1,8 @@
 # StationGenres.Relationships
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships for a station genre resource.
 
@@ -10,14 +11,14 @@ The relationships for a station genre resource.
 
 ## Declaration
 
-```swift
+```
 object StationGenres.Relationships
 ```
 
 ## Topics
 
 ### Related Objects
-- [object StationGenres.Relationships.StationGenresStationsRelationship](stationgenres/relationships-data.dictionary/stationgenresstationsrelationship.md)
+- [object StationGenres.Relationships.StationGenresStationsRelationship](./relationships-data.dictionary/stationgenresstationsrelationship.md)
   A relationship from the station genre to associated stations.
 
 ## Properties
@@ -26,7 +27,8 @@ object StationGenres.Relationships
 
 ## See Also
 
-- [object StationGenres.Attributes](stationgenres/attributes-data.dictionary.md)
+### Related Objects
+- [object StationGenres.Attributes](./attributes-data.dictionary.md)
   The attributes for the station genre resource.
 
 

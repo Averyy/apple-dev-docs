@@ -1,7 +1,8 @@
 # CMTimebase.Error
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe timebase errors.
 
@@ -23,28 +24,29 @@ struct Error
 ## Topics
 
 ### Constants
-- [static let allocationFailed: NSError](cmtimebase/error/allocationfailed.md)
+- [static let allocationFailed: NSError](./error/allocationfailed.md)
   A timebase error that indicates the memory allocation fails.
-- [static let invalidParameter: NSError](cmtimebase/error/invalidparameter.md)
+- [static let invalidParameter: NSError](./error/invalidparameter.md)
   A timebase error that indicates a parameter isn’t valid.
-- [static let missingRequiredParameter: NSError](cmtimebase/error/missingrequiredparameter.md)
+- [static let missingRequiredParameter: NSError](./error/missingrequiredparameter.md)
   A timebase error that indicates a missing parameter.
-- [static let readOnly: NSError](cmtimebase/error/readonly.md)
+- [static let readOnly: NSError](./error/readonly.md)
   A timebase error that indicates the system attempts to modify a read-only timebase.
-- [static let timerIntervalTooShort: NSError](cmtimebase/error/timerintervaltooshort.md)
+- [static let timerIntervalTooShort: NSError](./error/timerintervaltooshort.md)
   A timebase error that indicates the time interval is too short.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CMTimebase.NotificationKey](cmtimebase/notificationkey.md)
+### Constants
+- [CMTimebase.NotificationKey](./notificationkey.md)
   Constants that describe notification keys.
-- [static var typeID: CFTypeID](cmtimebase/typeid.md)
+- [static var typeID: CFTypeID](./typeid.md)
   A Core Foundation type identifier that represents a timebase object.
 
 

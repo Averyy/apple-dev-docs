@@ -1,7 +1,8 @@
 # MTRDoorLockClusterGetYearDayScheduleResponseParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,30 +19,34 @@
 class MTRDoorLockClusterGetYearDayScheduleResponseParams
 ```
 
+```objc
+@interface MTRDoorLockClusterGetYearDayScheduleResponseParams : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(responseValue: [String : Any]) throws](mtrdoorlockclustergetyeardayscheduleresponseparams/init(responsevalue:).md)
+- [init(responseValue: [String : Any]) throws](./mtrdoorlockclustergetyeardayscheduleresponseparams/init%28responsevalue%29.md)
 ### Instance Properties
-- [var localEndTime: NSNumber?](mtrdoorlockclustergetyeardayscheduleresponseparams/localendtime.md)
-- [var localStartTime: NSNumber?](mtrdoorlockclustergetyeardayscheduleresponseparams/localstarttime.md)
-- [var status: NSNumber](mtrdoorlockclustergetyeardayscheduleresponseparams/status.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrdoorlockclustergetyeardayscheduleresponseparams/timedinvoketimeoutms.md)
-- [var userIndex: NSNumber](mtrdoorlockclustergetyeardayscheduleresponseparams/userindex.md)
-- [var yearDayIndex: NSNumber](mtrdoorlockclustergetyeardayscheduleresponseparams/yeardayindex.md)
+- [var localEndTime: NSNumber?](./mtrdoorlockclustergetyeardayscheduleresponseparams/localendtime.md)
+- [var localStartTime: NSNumber?](./mtrdoorlockclustergetyeardayscheduleresponseparams/localstarttime.md)
+- [var status: NSNumber](./mtrdoorlockclustergetyeardayscheduleresponseparams/status.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrdoorlockclustergetyeardayscheduleresponseparams/timedinvoketimeoutms.md)
+- [var userIndex: NSNumber](./mtrdoorlockclustergetyeardayscheduleresponseparams/userindex.md)
+- [var yearDayIndex: NSNumber](./mtrdoorlockclustergetyeardayscheduleresponseparams/yeardayindex.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

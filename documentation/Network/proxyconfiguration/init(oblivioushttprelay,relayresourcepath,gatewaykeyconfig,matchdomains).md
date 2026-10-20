@@ -1,7 +1,8 @@
 # init(obliviousHTTPRelay:relayResourcePath:gatewayKeyConfig:matchDomains:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+

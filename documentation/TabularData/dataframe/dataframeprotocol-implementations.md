@@ -1,11 +1,12 @@
 # DataFrameProtocol Implementations
 
-**Framework**: TabularData
+**Framework**: TabularData  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var base: DataFrame](dataframe/base.md)
+- [var base: DataFrame](./base.md)
   The underlying data frame.
 
 

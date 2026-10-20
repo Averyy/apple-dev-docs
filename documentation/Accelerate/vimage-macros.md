@@ -1,6 +1,7 @@
 # vImage Macros
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 
 ---

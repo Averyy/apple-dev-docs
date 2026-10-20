@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Create ML Components  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a contiguous range of windows.
 
@@ -18,6 +19,12 @@ Accesses a contiguous range of windows.
 
 ```swift
 subscript(bounds: Range<Int>) -> Slice<SlidingWindows<Scalar>> { get }
+```
+
+**Other overloads**:
+
+```swift
+subscript(position: Int) -> MLShapedArray<Scalar> { get }
 ```
 
 ## Parameters

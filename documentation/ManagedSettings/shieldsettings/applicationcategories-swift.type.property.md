@@ -1,7 +1,8 @@
 # applicationCategories
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metadata for the configuration that specifies categories of apps for the system to cover with a shielding view.
 
@@ -18,17 +19,18 @@ static let applicationCategories: SettingMetadata<ShieldSettings.ActivityCategor
 
 #### Discussion
 
-The default value is [`ShieldSettings.ActivityCategoryPolicy.none`](shieldsettings/activitycategorypolicy/none.md).
+The default value is [`ShieldSettings.ActivityCategoryPolicy.none`](./activitycategorypolicy/none.md).
 
 ## See Also
 
-- [ShieldSettings.ActivityCategoryPolicy](shieldsettings/activitycategorypolicy.md)
+### Blocking categories of apps and websites
+- [ShieldSettings.ActivityCategoryPolicy](./activitycategorypolicy.md)
   Policies available for shielding activities based on their category.
-- [var applicationCategories: ShieldSettings.ActivityCategoryPolicy<Application>?](shieldsettings/applicationcategories-swift.property.md)
+- [var applicationCategories: ShieldSettings.ActivityCategoryPolicy<Application>?](./applicationcategories-swift.property.md)
   Categories of apps for the system to cover with a shielding view.
-- [var webDomainCategories: ShieldSettings.ActivityCategoryPolicy<WebDomain>?](shieldsettings/webdomaincategories-swift.property.md)
+- [var webDomainCategories: ShieldSettings.ActivityCategoryPolicy<WebDomain>?](./webdomaincategories-swift.property.md)
   Categories of websites for the system to cover with a shielding view.
-- [static let webDomainCategories: SettingMetadata<ShieldSettings.ActivityCategoryPolicy<WebDomain>>](shieldsettings/webdomaincategories-swift.type.property.md)
+- [static let webDomainCategories: SettingMetadata<ShieldSettings.ActivityCategoryPolicy<WebDomain>>](./webdomaincategories-swift.type.property.md)
   The metadata for the configuration that specifies categories of websites for the system to shield.
 
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate that HomeKit tells about changes in the state of network access.
 
@@ -19,9 +20,14 @@ A delegate that HomeKit tells about changes in the state of network access.
 weak var delegate: (any HMNetworkConfigurationProfileDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id<HMNetworkConfigurationProfileDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol HMNetworkConfigurationProfileDelegate](hmnetworkconfigurationprofiledelegate.md)
+### Listening for access changes
+- [protocol HMNetworkConfigurationProfileDelegate](../hmnetworkconfigurationprofiledelegate.md)
   An interface that your app adopts to receive notifications about changes in the state of network access.
 
 

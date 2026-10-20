@@ -1,7 +1,8 @@
 # MobileDriversLicenseDataRequest.Response.DocumentElements
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that contains the document elements from a successful mobile driver’s license data request.
 
@@ -19,78 +20,78 @@ struct DocumentElements
 ## Topics
 
 ### Structures
-- [MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege](mobiledriverslicensedatarequest/response/documentelements-swift.struct/aamvadrivingprivilege.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege](./documentelements-swift.struct/aamvadrivingprivilege.md)
   A type that represents the mobile driver’s license holder’s AAMVA driving privileges.
-- [MobileDriversLicenseDataRequest.Response.DocumentElements.DrivingPrivilege](mobiledriverslicensedatarequest/response/documentelements-swift.struct/drivingprivilege.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.DrivingPrivilege](./documentelements-swift.struct/drivingprivilege.md)
   A type that represents a driving privilege which the mobile driver’s license holder possesses.
-- [MobileDriversLicenseDataRequest.Response.DocumentElements.IssuingAuthority](mobiledriverslicensedatarequest/response/documentelements-swift.struct/issuingauthority-swift.struct.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.IssuingAuthority](./documentelements-swift.struct/issuingauthority-swift.struct.md)
   A type that represents the state or government that issued the identity document.
 ### Instance Properties
-- [let aamvaDrivingPrivileges: [MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege]](mobiledriverslicensedatarequest/response/documentelements-swift.struct/aamvadrivingprivileges.md)
+- [let aamvaDrivingPrivileges: [MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege]](./documentelements-swift.struct/aamvadrivingprivileges.md)
   The mobile driver’s license holder’s AAMVA driving privileges.
-- [var address: CNPostalAddress?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/address.md)
+- [var address: CNPostalAddress?](./documentelements-swift.struct/address.md)
   The mobile driver’s license holder’s address on record with the issuer.
-- [let age: Int?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/age.md)
+- [let age: Int?](./documentelements-swift.struct/age.md)
   The mobile driver’s license holder’s age in years.
-- [let ageAtLeastElements: [Int : Bool]](mobiledriverslicensedatarequest/response/documentelements-swift.struct/ageatleastelements.md)
+- [let ageAtLeastElements: [Int : Bool]](./documentelements-swift.struct/ageatleastelements.md)
   A dictionary of values that indicate whether the document holder is at least the specified age.
-- [let dateOfBirth: DateComponents?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/dateofbirth.md)
+- [let dateOfBirth: DateComponents?](./documentelements-swift.struct/dateofbirth.md)
   The date of birth of the mobile driver’s license holder.
-- [let documentDHSComplianceStatus: MobileDriversLicenseDataRequest.Response.DocumentElements.DHSComplianceStatus?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/documentdhscompliancestatus.md)
+- [let documentDHSComplianceStatus: MobileDriversLicenseDataRequest.Response.DocumentElements.DHSComplianceStatus?](./documentelements-swift.struct/documentdhscompliancestatus.md)
   The document’s DHS (U.S. Department of Homeland Security) compliance status.
-- [let documentExpirationDate: DateComponents?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/documentexpirationdate.md)
+- [let documentExpirationDate: DateComponents?](./documentelements-swift.struct/documentexpirationdate.md)
   The document’s expiration date.
-- [let documentIssueDate: DateComponents?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/documentissuedate.md)
+- [let documentIssueDate: DateComponents?](./documentelements-swift.struct/documentissuedate.md)
   The document’s issue date.
-- [let documentNumber: String?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/documentnumber.md)
+- [let documentNumber: String?](./documentelements-swift.struct/documentnumber.md)
   The document’s number, as defined by the document’s issuing authority.
-- [let drivingPrivileges: [MobileDriversLicenseDataRequest.Response.DocumentElements.DrivingPrivilege]](mobiledriverslicensedatarequest/response/documentelements-swift.struct/drivingprivileges.md)
+- [let drivingPrivileges: [MobileDriversLicenseDataRequest.Response.DocumentElements.DrivingPrivilege]](./documentelements-swift.struct/drivingprivileges.md)
   The mobile driver’s license holder’s driving privileges.
-- [let eyeColor: MobileDriversLicenseDataRequest.Response.DocumentElements.EyeColor?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/eyecolor-swift.property.md)
+- [let eyeColor: MobileDriversLicenseDataRequest.Response.DocumentElements.EyeColor?](./documentelements-swift.struct/eyecolor-swift.property.md)
   The mobile identity document holder’s eye color on record with the issuer.
-- [let hairColor: MobileDriversLicenseDataRequest.Response.DocumentElements.HairColor?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.property.md)
+- [let hairColor: MobileDriversLicenseDataRequest.Response.DocumentElements.HairColor?](./documentelements-swift.struct/haircolor-swift.property.md)
   The mobile identity document holder’s hair color on record with the issuer.
-- [let height: Measurement<UnitLength>?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/height.md)
+- [let height: Measurement<UnitLength>?](./documentelements-swift.struct/height.md)
   The mobile identity document holder’s height on record with the issuer.
-- [let isOrganDonor: Bool?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/isorgandonor.md)
+- [let isOrganDonor: Bool?](./documentelements-swift.struct/isorgandonor.md)
   A Boolean value indicating whether the identity document holder is an organ donor.
-- [let isVeteran: Bool?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/isveteran.md)
+- [let isVeteran: Bool?](./documentelements-swift.struct/isveteran.md)
   A Boolean value indicating whether the identity document holder is a veteran.
-- [let issuingAuthority: MobileDriversLicenseDataRequest.Response.DocumentElements.IssuingAuthority?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/issuingauthority-swift.property.md)
+- [let issuingAuthority: MobileDriversLicenseDataRequest.Response.DocumentElements.IssuingAuthority?](./documentelements-swift.struct/issuingauthority-swift.property.md)
   The state or government that issued the identity document.
-- [let name: MobileDocumentHolderName?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/name.md)
+- [let name: MobileDocumentHolderName?](./documentelements-swift.struct/name.md)
   The mobile driver’s license holder’s name.
-- [var nameComponents: PersonNameComponents?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/namecomponents.md)
+- [var nameComponents: PersonNameComponents?](./documentelements-swift.struct/namecomponents.md)
   The mobile driver’s license holder’s name components.
-- [let nationality: String?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/nationality.md)
+- [let nationality: String?](./documentelements-swift.struct/nationality.md)
   The nationality of the identity document holder on record with the issuer.
-- [let placeOfBirth: String?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/placeofbirth.md)
+- [let placeOfBirth: String?](./documentelements-swift.struct/placeofbirth.md)
   The birth place of the identity document holder on record with the issuer.
-- [let portraitData: Data?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/portraitdata.md)
+- [let portraitData: Data?](./documentelements-swift.struct/portraitdata.md)
   The portrait data of the mobile driver’s license holder on record with the issuer.
-- [let sex: MobileDriversLicenseDataRequest.Response.DocumentElements.Sex?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.property.md)
+- [let sex: MobileDriversLicenseDataRequest.Response.DocumentElements.Sex?](./documentelements-swift.struct/sex-swift.property.md)
   The mobile driver’s license holder’s sex.
-- [let signatureUsualMarkData: Data?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/signatureusualmarkdata.md)
+- [let signatureUsualMarkData: Data?](./documentelements-swift.struct/signatureusualmarkdata.md)
   The signature or usual mark data of the identity document holder on record with the issuer.
-- [let weight: Measurement<UnitMass>?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/weight.md)
+- [let weight: Measurement<UnitMass>?](./documentelements-swift.struct/weight.md)
   The mobile identity document holder’s weight on record with the issuer.
 ### Enumerations
-- [MobileDriversLicenseDataRequest.Response.DocumentElements.DHSComplianceStatus](mobiledriverslicensedatarequest/response/documentelements-swift.struct/dhscompliancestatus.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.DHSComplianceStatus](./documentelements-swift.struct/dhscompliancestatus.md)
   A type that represents the mobile driver’s license’ DHS (U.S. Department of Homeland Security) compliance status.
-- [MobileDriversLicenseDataRequest.Response.DocumentElements.EyeColor](mobiledriverslicensedatarequest/response/documentelements-swift.struct/eyecolor-swift.enum.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.EyeColor](./documentelements-swift.struct/eyecolor-swift.enum.md)
   A type that represents the mobile driver’s license holder’s eye color
-- [MobileDriversLicenseDataRequest.Response.DocumentElements.HairColor](mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.enum.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.HairColor](./documentelements-swift.struct/haircolor-swift.enum.md)
   A type that represents the mobile driver’s license holder’s hair color
-- [MobileDriversLicenseDataRequest.Response.DocumentElements.Sex](mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.Sex](./documentelements-swift.struct/sex-swift.enum.md)
   A type that represents the mobile driver’s license holder’s sex.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

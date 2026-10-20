@@ -1,7 +1,8 @@
 # IKRig.Joint.LimitsDefinition.Axis
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -20,15 +21,15 @@ enum Axis
 ## Topics
 
 ### Enumeration Cases
-- [IKRig.Joint.LimitsDefinition.Axis.x](ikrig/joint/limitsdefinition/axis/x.md)
-- [IKRig.Joint.LimitsDefinition.Axis.y](ikrig/joint/limitsdefinition/axis/y.md)
-- [IKRig.Joint.LimitsDefinition.Axis.z](ikrig/joint/limitsdefinition/axis/z.md)
+- [IKRig.Joint.LimitsDefinition.Axis.x](./axis/x.md)
+- [IKRig.Joint.LimitsDefinition.Axis.y](./axis/y.md)
+- [IKRig.Joint.LimitsDefinition.Axis.z](./axis/z.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
 
 
 ---

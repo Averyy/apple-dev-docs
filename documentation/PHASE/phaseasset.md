@@ -1,7 +1,8 @@
 # PHASEAsset
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A base class that adds a name to framework assets.
 
@@ -19,50 +20,55 @@ A base class that adds a name to framework assets.
 class PHASEAsset
 ```
 
+```objc
+@interface PHASEAsset : NSObject
+```
+
 #### Overview
 
-Through inheritance, this class adds a string [`identifier`](phaseasset/identifier.md) to subclasses, for example, [`PHASESoundAsset`](phasesoundasset.md) and [`PHASESoundEventNodeAsset`](phasesoundeventnodeasset.md).
+Through inheritance, this class adds a string [`identifier`](./phaseasset/identifier.md) to subclasses, for example, [`PHASESoundAsset`](./phasesoundasset.md) and [`PHASESoundEventNodeAsset`](./phasesoundeventnodeasset.md).
 
-PHASE generates objects of this type based on template [`PHASEDefinition`](phasedefinition.md) subclasses. For example, PHASE gives you a [`PHASESoundEventNodeAsset`](phasesoundeventnodeasset.md) when you register a [`PHASESoundEventNodeDefinition`](phasesoundeventnodedefinition.md) with the asset registry via [`registerSoundEventAsset(rootNode:identifier:)`](phaseassetregistry/registersoundeventasset(rootnode:identifier:).md).
+PHASE generates objects of this type based on template [`PHASEDefinition`](./phasedefinition.md) subclasses. For example, PHASE gives you a [`PHASESoundEventNodeAsset`](./phasesoundeventnodeasset.md) when you register a [`PHASESoundEventNodeDefinition`](./phasesoundeventnodedefinition.md) with the asset registry via [`registerSoundEventAsset(rootNode:identifier:)`](./phaseassetregistry/registersoundeventasset%28rootnode,identifier%29.md).
 
 ## Topics
 
 ### Identifying an Asset
-- [var identifier: String](phaseasset/identifier.md)
+- [var identifier: String](./phaseasset/identifier.md)
   A unique name for the asset.
 ### Classifying an Asset
-- [PHASEAsset.AssetType](phaseasset/assettype.md)
+- [PHASEAsset.AssetType](./phaseasset/assettype.md)
   Options that determine how PHASE manages sound assets in memory.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [PHASEGlobalMetaParameterAsset](phaseglobalmetaparameterasset.md)
-- [PHASESoundAsset](phasesoundasset.md)
-- [PHASESoundEventNodeAsset](phasesoundeventnodeasset.md)
+- [PHASEGlobalMetaParameterAsset](./phaseglobalmetaparameterasset.md)
+- [PHASESoundAsset](./phasesoundasset.md)
+- [PHASESoundEventNodeAsset](./phasesoundeventnodeasset.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASESoundAsset](phasesoundasset.md)
+### Audio Selection and Playback
+- [class PHASESoundAsset](./phasesoundasset.md)
   A sound resource stored in the asset registry.
-- [class PHASESoundEvent](phasesoundevent.md)
+- [class PHASESoundEvent](./phasesoundevent.md)
   An object that determines which audio to play.
-- [PHASESoundEvent.RenderingState](phasesoundevent/renderingstate-swift.enum.md)
+- [PHASESoundEvent.RenderingState](./phasesoundevent/renderingstate-swift.enum.md)
   The playback status of audio.
-- [class PHASESoundEventNodeDefinition](phasesoundeventnodedefinition.md)
+- [class PHASESoundEventNodeDefinition](./phasesoundeventnodedefinition.md)
   A base class for sound event nodes that connect to form a node hierarchy.
-- [class PHASESoundEventNodeAsset](phasesoundeventnodeasset.md)
+- [class PHASESoundEventNodeAsset](./phasesoundeventnodeasset.md)
   A template object for sounds that can play in reaction to environmental state.
-- [Sound Event Nodes](sound-event-nodes.md)
+- [Sound Event Nodes](./sound-event-nodes.md)
   Objects that connect to form a hierarchical tree of audio actions.
 
 

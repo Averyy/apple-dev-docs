@@ -1,7 +1,8 @@
 # workingColorSpace
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The working color space of the Core Image context.
 
@@ -19,19 +20,24 @@ The working color space of the Core Image context.
 var workingColorSpace: CGColorSpace? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CGColorSpaceRef workingColorSpace;
+```
+
 #### Discussion
 
-The working color space determines the color space used when executing filter kernels; Core Image automatically converts to and from the source and destination color spaces of input images and output contexts. You specify a working color space using the [`workingColorSpace`](cicontextoption/workingcolorspace.md) key in the `options` dictionary when creating a Core Image context.
+The working color space determines the color space used when executing filter kernels; Core Image automatically converts to and from the source and destination color spaces of input images and output contexts. You specify a working color space using the [`workingColorSpace`](../cicontextoption/workingcolorspace.md) key in the `options` dictionary when creating a Core Image context.
 
 ## See Also
 
-- [func clearCaches()](cicontext/clearcaches.md)
+### Managing Resources
+- [func clearCaches()](./clearcaches%28%29.md)
   Frees any cached data, such as temporary images, associated with the context and runs the garbage collector.
-- [func reclaimResources()](cicontext/reclaimresources.md)
+- [func reclaimResources()](./reclaimresources%28%29.md)
   Runs the garbage collector to reclaim any resources that the context no longer requires.
-- [class func offlineGPUCount() -> UInt32](cicontext/offlinegpucount.md)
+- [class func offlineGPUCount() -> UInt32](./offlinegpucount%28%29.md)
   Returns the number of GPUs not currently driving a display.
-- [var workingFormat: CIFormat](cicontext/workingformat.md)
+- [var workingFormat: CIFormat](./workingformat.md)
   The working pixel format of the Core Image context.
 
 

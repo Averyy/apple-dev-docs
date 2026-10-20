@@ -1,7 +1,8 @@
 # attributes
 
 **Framework**: JavaScriptCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of property attributes to give to the property.
 
@@ -19,13 +20,18 @@ A set of property attributes to give to the property.
 var attributes: JSPropertyAttributes
 ```
 
+```c
+JSPropertyAttributes attributes;
+```
+
 ## See Also
 
-- [var name: UnsafePointer<CChar>!](jsstaticvalue/name.md)
+### Accessing Static Value Information
+- [var name: UnsafePointer<CChar>!](./name.md)
   A null-terminated UTF-8 string that contains the property’s name.
-- [var getProperty: JSObjectGetPropertyCallback!](jsstaticvalue/getproperty.md)
+- [var getProperty: JSObjectGetPropertyCallback!](./getproperty.md)
   A callback to invoke when getting the property’s value.
-- [var setProperty: JSObjectSetPropertyCallback!](jsstaticvalue/setproperty.md)
+- [var setProperty: JSObjectSetPropertyCallback!](./setproperty.md)
   A callback to invoke when setting the property’s value.
 
 

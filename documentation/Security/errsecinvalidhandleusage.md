@@ -1,7 +1,8 @@
 # errSecInvalidHandleUsage
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The common security services manager handle does not match with the service type.
 
@@ -18,6 +19,10 @@ The common security services manager handle does not match with the service type
 
 ```swift
 var errSecInvalidHandleUsage: OSStatus { get }
+```
+
+```c
+errSecInvalidHandleUsage
 ```
 
 

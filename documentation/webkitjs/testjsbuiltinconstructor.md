@@ -1,26 +1,27 @@
 # TestJSBuiltinConstructor
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Mobile 10.0+
 
 ## Declaration
 
-```swift
+```
 interface TestJSBuiltinConstructor
 ```
 
 ## Topics
 
 ### Instance Properties
-- [testAttribute](testjsbuiltinconstructor/1777824-testattribute.md)
-- [testAttributeCustom](testjsbuiltinconstructor/1777891-testattributecustom.md)
-- [testAttributeRWCustom](testjsbuiltinconstructor/1777756-testattributerwcustom.md)
+- [testAttribute](./testjsbuiltinconstructor/api-1777824-testattribute.md)
+- [testAttributeCustom](./testjsbuiltinconstructor/api-1777891-testattributecustom.md)
+- [testAttributeRWCustom](./testjsbuiltinconstructor/api-1777756-testattributerwcustom.md)
 ### Instance Methods
-- [testCustomFunction](testjsbuiltinconstructor/1777911-testcustomfunction.md)
-- [testFunction](testjsbuiltinconstructor/1777919-testfunction.md)
+- [testCustomFunction](./testjsbuiltinconstructor/api-1777911-testcustomfunction.md)
+- [testFunction](./testjsbuiltinconstructor/api-1777919-testfunction.md)
 
 
 ---

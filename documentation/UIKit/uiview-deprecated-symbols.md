@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,37 +12,37 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated methods
-- [class func beginAnimations(String?, context: UnsafeMutableRawPointer?)](uiview/beginanimations(_:context:).md)
+- [class func beginAnimations(String?, context: UnsafeMutableRawPointer?)](./uiview/beginanimations%28_,context%29.md)
   Marks the beginning of a begin/commit animation block.
-- [class func commitAnimations()](uiview/commitanimations.md)
+- [class func commitAnimations()](./uiview/commitanimations%28%29.md)
   Marks the end of a begin/commit animation block and schedules the animations for execution.
-- [class func setAnimationStart(Date)](uiview/setanimationstart(_:).md)
+- [class func setAnimationStart(Date)](./uiview/setanimationstart%28_%29.md)
   Sets the start time for the current animation block.
-- [class func setAnimationsEnabled(Bool)](uiview/setanimationsenabled(_:).md)
+- [class func setAnimationsEnabled(Bool)](./uiview/setanimationsenabled%28_%29.md)
   Sets whether animations are enabled.
-- [class func setAnimationDelegate(Any?)](uiview/setanimationdelegate(_:).md)
+- [class func setAnimationDelegate(Any?)](./uiview/setanimationdelegate%28_%29.md)
   Sets the delegate for any animation messages.
-- [class func setAnimationWillStart(Selector?)](uiview/setanimationwillstart(_:).md)
+- [class func setAnimationWillStart(Selector?)](./uiview/setanimationwillstart%28_%29.md)
   Sets the message to send to the animation delegate when the animation starts.
-- [class func setAnimationDidStop(Selector?)](uiview/setanimationdidstop(_:).md)
+- [class func setAnimationDidStop(Selector?)](./uiview/setanimationdidstop%28_%29.md)
   Sets the message to send to the animation delegate when animation stops.
-- [class func setAnimationDuration(TimeInterval)](uiview/setanimationduration(_:).md)
+- [class func setAnimationDuration(TimeInterval)](./uiview/setanimationduration%28_%29.md)
   Sets the duration (measured in seconds) of the animations in an animation block.
-- [class func setAnimationDelay(TimeInterval)](uiview/setanimationdelay(_:).md)
+- [class func setAnimationDelay(TimeInterval)](./uiview/setanimationdelay%28_%29.md)
   Sets the amount of time (in seconds) to wait before animating property changes within an animation block.
-- [class func setAnimationCurve(UIView.AnimationCurve)](uiview/setanimationcurve(_:).md)
+- [class func setAnimationCurve(UIView.AnimationCurve)](./uiview/setanimationcurve%28_%29.md)
   Sets the curve to use when animating property changes within an animation block.
-- [class func setAnimationRepeatCount(Float)](uiview/setanimationrepeatcount(_:).md)
+- [class func setAnimationRepeatCount(Float)](./uiview/setanimationrepeatcount%28_%29.md)
   Sets the number of times animations within an animation block repeat.
-- [class func setAnimationRepeatAutoreverses(Bool)](uiview/setanimationrepeatautoreverses(_:).md)
+- [class func setAnimationRepeatAutoreverses(Bool)](./uiview/setanimationrepeatautoreverses%28_%29.md)
   Sets whether the animations within an animation block automatically reverse themselves.
-- [class func setAnimationBeginsFromCurrentState(Bool)](uiview/setanimationbeginsfromcurrentstate(_:).md)
+- [class func setAnimationBeginsFromCurrentState(Bool)](./uiview/setanimationbeginsfromcurrentstate%28_%29.md)
   Sets whether the animation should begin playing from the current state.
-- [class func setAnimationTransition(UIView.AnimationTransition, for: UIView, cache: Bool)](uiview/setanimationtransition(_:for:cache:).md)
+- [class func setAnimationTransition(UIView.AnimationTransition, for: UIView, cache: Bool)](./uiview/setanimationtransition%28_,for,cache%29.md)
   Sets a transition to apply to a view during an animation block.
-- [class var areAnimationsEnabled: Bool](uiview/areanimationsenabled.md)
+- [class var areAnimationsEnabled: Bool](./uiview/areanimationsenabled.md)
   Returns a Boolean value indicating whether animations are enabled.
-- [func forBaselineLayout() -> UIView](uiview/forbaselinelayout.md)
+- [func forBaselineLayout() -> UIView](./uiview/forbaselinelayout%28%29.md)
   Returns a view used to satisfy baseline constraints.
 
 

@@ -1,7 +1,8 @@
 # WebContentFilter.URLFilterParameters
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 A dictionary containing URL filter parameters.
 
@@ -13,7 +14,7 @@ A dictionary containing URL filter parameters.
 
 ## Declaration
 
-```swift
+```
 object WebContentFilter.URLFilterParameters
 ```
 
@@ -25,15 +26,20 @@ object WebContentFilter.URLFilterParameters
 - `URLFilterControlProviderBundleIdentifier` (string) *(required)*: The bundle identifier string of the URL filter control provider app extension. The system uses this string to identify the URL filter control provider when the filter starts running.
 - `URLFilterControlProviderDesignatedRequirement` (string): The designated requirement string in the code signature of the URL filter control provider app extension. The system uses this string to identify the URL filter control provider when the filter starts running. Required in macOS.
 - `URLFilterFailClosed` (boolean): If `true`, the system blocks URLs if the filter is enabled, but it fails to make any filtering decision; for example, if there’s a communication failure with the PIR server. If `false`, the system allows URLs if the filter is enabled, but it fails to make any filtering decision.
+
+  **Default**: `false`
 - `URLPrefilterFetchFrequency` (integer): The time interval in seconds that the system uses to periodically run the `NEURLFilterControlProvider` app extension. The default value is 86400 seconds (1 day). The minimum allowed value is 2700 seconds (45 minutes). The system allows `NEURLFilterControlProvider` implementations to download prefilter Bloom filter data onto the device periodically at the specified interval. Implementations need to allow for a slight difference between the scheduled time and the actual runtime of the task, due to the scheduling mechanism on the system.
+
+  **Default**: `86400`; **Minimum**: `2700`
 
 ## See Also
 
-- [object WebContentFilter.AllowListBookmarksItem](webcontentfilter/allowlistbookmarksitem.md)
+### Objects
+- [object WebContentFilter.AllowListBookmarksItem](./allowlistbookmarksitem.md)
   The bookmark in the allow list of the web content filter.
-- [object WebContentFilter.VendorConfig](webcontentfilter/vendorconfig-data.dictionary.md)
+- [object WebContentFilter.VendorConfig](./vendorconfig-data.dictionary.md)
   A custom dictionary for the filtering service plug-in.
-- [object WebContentFilter.WhitelistedBookmarksItem](webcontentfilter/whitelistedbookmarksitem.md)
+- [object WebContentFilter.WhitelistedBookmarksItem](./whitelistedbookmarksitem.md)
   The bookmark in the allow list of the web content filter.
 
 

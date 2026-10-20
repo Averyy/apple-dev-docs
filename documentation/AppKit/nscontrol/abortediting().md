@@ -1,12 +1,13 @@
 # abortEditing()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Terminates the current editing operation and discards any edited text.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,27 +15,32 @@ Terminates the current editing operation and discards any edited text.
 func abortEditing() -> Bool
 ```
 
+```objc
+- (BOOL) abortEditing;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if there was a field editor associated with the control; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if there was a field editor associated with the control; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
 If there was a field editor, this method removes the field editor’s delegate.
 
-Because the control discards any edits, it doesn’t call [`controlTextDidEndEditing(_:)`](nscontroltexteditingdelegate/controltextdidendediting(_:).md).
+Because the control discards any edits, it doesn’t call [`controlTextDidEndEditing(_:)`](../nscontroltexteditingdelegate/controltextdidendediting%28_%29.md).
 
 ## See Also
 
-- [func currentEditor() -> NSText?](nscontrol/currenteditor.md)
+### Managing the Field Editor
+- [func currentEditor() -> NSText?](./currenteditor%28%29.md)
   Returns the current field editor for the control.
-- [func validateEditing()](nscontrol/validateediting.md)
+- [func validateEditing()](./validateediting%28%29.md)
   Validates changes to any user-typed text.
-- [func edit(withFrame: NSRect, editor: NSText, delegate: Any?, event: NSEvent)](nscontrol/edit(withframe:editor:delegate:event:).md)
+- [func edit(withFrame: NSRect, editor: NSText, delegate: Any?, event: NSEvent)](./edit%28withframe,editor,delegate,event%29.md)
   Begins editing of the receiver’s text using the specified field editor.
-- [func endEditing(NSText)](nscontrol/endediting(_:).md)
+- [func endEditing(NSText)](./endediting%28_%29.md)
   Ends the editing of text in the receiver using the specified field editor.
-- [func select(withFrame: NSRect, editor: NSText, delegate: Any?, start: Int, length: Int)](nscontrol/select(withframe:editor:delegate:start:length:).md)
+- [func select(withFrame: NSRect, editor: NSText, delegate: Any?, start: Int, length: Int)](./select%28withframe,editor,delegate,start,length%29.md)
   Selects the specified text range in the receiver’s field editor.
 
 

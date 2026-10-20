@@ -1,7 +1,8 @@
 # isFindInteractionEnabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that enables a text view’s built-in find interaction.
 
@@ -17,13 +18,18 @@ A Boolean value that enables a text view’s built-in find interaction.
 var isFindInteractionEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite, getter=isFindInteractionEnabled) BOOL findInteractionEnabled;
+```
+
 ## Mentions
 
-- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
+- [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
 ## See Also
 
-- [var findInteraction: UIFindInteraction?](uitextview/findinteraction.md)
+### Supporting Find and Replace
+- [var findInteraction: UIFindInteraction?](./findinteraction.md)
   The text view’s built-in find interaction.
 
 

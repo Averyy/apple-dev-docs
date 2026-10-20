@@ -1,7 +1,8 @@
 # creationDate
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item’s creation date, usually the same as its `EXIF` creation date.
 
@@ -18,11 +19,16 @@ The item’s creation date, usually the same as its `EXIF` creation date.
 var creationDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDate * creationDate;
+```
+
 ## See Also
 
-- [var modificationDate: Date?](iccameraitem/modificationdate.md)
+### Determining an Item’s Change Dates
+- [var modificationDate: Date?](./modificationdate.md)
   The item’s modification date, usually the same as its `EXIF` modification date.
-- [var wasAddedAfterContentCatalogCompleted: Bool](iccameraitem/wasaddedaftercontentcatalogcompleted.md)
+- [var wasAddedAfterContentCatalogCompleted: Bool](./wasaddedaftercontentcatalogcompleted.md)
   A Boolean value indicating whether the item was captured on the camera after the camera’s content had been fully enumerated.
 
 

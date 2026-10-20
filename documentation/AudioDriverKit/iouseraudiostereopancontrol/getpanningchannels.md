@@ -1,7 +1,8 @@
 # GetPanningChannels
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the current stereo panning channels.
 
@@ -10,7 +11,7 @@ Gets the current stereo panning channels.
 
 ## Declaration
 
-```swift
+```c
 void GetPanningChannels(IOUserAudioObjectPropertyElement *out_left_channel, IOUserAudioObjectPropertyElement *out_right_channel);
 ```
 
@@ -20,16 +21,17 @@ This method synchronizes by using the work queue created by the object.
 
 ## Parameters
 
-- `out_left_channel`: On return, the [`IOUserAudioObjectPropertyElement`](audiodriverkit/iouseraudioobjectpropertyelement.md) for the left channel.
-- `out_right_channel`: On return, the [`IOUserAudioObjectPropertyElement`](audiodriverkit/iouseraudioobjectpropertyelement.md) for the right channel.
+- `out_left_channel`: On return, the [`IOUserAudioObjectPropertyElement`](../audiodriverkit-page/iouseraudioobjectpropertyelement.md) for the left channel.
+- `out_right_channel`: On return, the [`IOUserAudioObjectPropertyElement`](../audiodriverkit-page/iouseraudioobjectpropertyelement.md) for the right channel.
 
 ## See Also
 
-- [SetControlValue](iouseraudiostereopancontrol/setcontrolvalue.md)
+### Accessing the Value
+- [SetControlValue](./setcontrolvalue.md)
   Sets the stereo pan value of the control.
-- [GetControlValue](iouseraudiostereopancontrol/getcontrolvalue.md)
+- [GetControlValue](./getcontrolvalue.md)
   Gets the floating-point stereo pan value of the control.
-- [SetPanningChannels](iouseraudiostereopancontrol/setpanningchannels.md)
+- [SetPanningChannels](./setpanningchannels.md)
   Sets the current stereo panning channels.
 
 

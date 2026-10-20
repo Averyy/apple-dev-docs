@@ -1,7 +1,8 @@
 # prepare
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Prepare the memory for an I/O transfer.
 
@@ -10,11 +11,11 @@ Prepare the memory for an I/O transfer.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn prepare(IODirection forDirection);
 ```
 
-#### Return_value
+#### Return Value
 
 An IOReturn code.
 
@@ -28,14 +29,15 @@ This involves paging in the memory, if necessary, and wiring it down for the dur
 
 ## See Also
 
-- [prepare](iomemorydescriptor/1812845-prepare.md)
+### Preparing the Buffer
+- [prepare](./api-1812845-prepare.md)
   Prepare the memory for an I/O transfer.
-- [complete](iomemorydescriptor/1812740-complete.md)
+- [complete](./api-1812740-complete.md)
   Complete processing of the memory after an I/O transfer finishes.
-- [- complete](iomemorydescriptor/1442043-complete.md)
+- [- complete](./api-1442043-complete.md)
   Complete processing of the memory after an I/O transfer finishes.
-- [- getPreparationID](iomemorydescriptor/1441964-getpreparationid.md)
-- [- setPreparationID](iomemorydescriptor/1442011-setpreparationid.md)
+- [- getPreparationID](./api-1441964-getpreparationid.md)
+- [- setPreparationID](./api-1442011-setpreparationid.md)
 
 
 ---

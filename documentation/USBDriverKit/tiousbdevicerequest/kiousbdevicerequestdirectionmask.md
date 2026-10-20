@@ -1,34 +1,36 @@
 # kIOUSBDeviceRequestDirectionMask
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestDirectionMask
 ```
 
 ## See Also
 
-- [kIOUSBDeviceRequestSize](tiousbdevicerequest/kiousbdevicerequestsize.md)
-- [kIOUSBDeviceRequestDirectionPhase](tiousbdevicerequest/kiousbdevicerequestdirectionphase.md)
-- [kIOUSBDeviceRequestDirectionOut](tiousbdevicerequest/kiousbdevicerequestdirectionout.md)
-- [kIOUSBDeviceRequestDirectionIn](tiousbdevicerequest/kiousbdevicerequestdirectionin.md)
-- [kIOUSBDeviceRequestTypeMask](tiousbdevicerequest/kiousbdevicerequesttypemask.md)
-- [kIOUSBDeviceRequestTypePhase](tiousbdevicerequest/kiousbdevicerequesttypephase.md)
-- [kIOUSBDeviceRequestTypeStandard](tiousbdevicerequest/kiousbdevicerequesttypestandard.md)
-- [kIOUSBDeviceRequestTypeClass](tiousbdevicerequest/kiousbdevicerequesttypeclass.md)
-- [kIOUSBDeviceRequestTypeVendor](tiousbdevicerequest/kiousbdevicerequesttypevendor.md)
-- [kIOUSBDeviceRequestRecipientMask](tiousbdevicerequest/kiousbdevicerequestrecipientmask.md)
-- [kIOUSBDeviceRequestRecipientPhase](tiousbdevicerequest/kiousbdevicerequestrecipientphase.md)
-- [kIOUSBDeviceRequestRecipientDevice](tiousbdevicerequest/kiousbdevicerequestrecipientdevice.md)
-- [kIOUSBDeviceRequestRecipientInterface](tiousbdevicerequest/kiousbdevicerequestrecipientinterface.md)
-- [kIOUSBDeviceRequestRecipientEndpoint](tiousbdevicerequest/kiousbdevicerequestrecipientendpoint.md)
-- [kIOUSBDeviceRequestRecipientOther](tiousbdevicerequest/kiousbdevicerequestrecipientother.md)
+### Getting the Device Request Settings
+- [kIOUSBDeviceRequestSize](./kiousbdevicerequestsize.md)
+- [kIOUSBDeviceRequestDirectionPhase](./kiousbdevicerequestdirectionphase.md)
+- [kIOUSBDeviceRequestDirectionOut](./kiousbdevicerequestdirectionout.md)
+- [kIOUSBDeviceRequestDirectionIn](./kiousbdevicerequestdirectionin.md)
+- [kIOUSBDeviceRequestTypeMask](./kiousbdevicerequesttypemask.md)
+- [kIOUSBDeviceRequestTypePhase](./kiousbdevicerequesttypephase.md)
+- [kIOUSBDeviceRequestTypeStandard](./kiousbdevicerequesttypestandard.md)
+- [kIOUSBDeviceRequestTypeClass](./kiousbdevicerequesttypeclass.md)
+- [kIOUSBDeviceRequestTypeVendor](./kiousbdevicerequesttypevendor.md)
+- [kIOUSBDeviceRequestRecipientMask](./kiousbdevicerequestrecipientmask.md)
+- [kIOUSBDeviceRequestRecipientPhase](./kiousbdevicerequestrecipientphase.md)
+- [kIOUSBDeviceRequestRecipientDevice](./kiousbdevicerequestrecipientdevice.md)
+- [kIOUSBDeviceRequestRecipientInterface](./kiousbdevicerequestrecipientinterface.md)
+- [kIOUSBDeviceRequestRecipientEndpoint](./kiousbdevicerequestrecipientendpoint.md)
+- [kIOUSBDeviceRequestRecipientOther](./kiousbdevicerequestrecipientother.md)
 
 
 ---

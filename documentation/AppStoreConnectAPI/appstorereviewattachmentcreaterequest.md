@@ -1,7 +1,8 @@
 # AppStoreReviewAttachmentCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an App Store Review Attachment.
 
@@ -10,14 +11,14 @@ The request body you use to create an App Store Review Attachment.
 
 ## Declaration
 
-```swift
+```
 object AppStoreReviewAttachmentCreateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreReviewAttachmentCreateRequest.Data](appstorereviewattachmentcreaterequest/data-data.dictionary.md)
+- [object AppStoreReviewAttachmentCreateRequest.Data](./appstorereviewattachmentcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
 ## Properties
@@ -26,13 +27,14 @@ object AppStoreReviewAttachmentCreateRequest
 
 ## See Also
 
-- [object AppStoreReviewAttachment](appstorereviewattachment.md)
+### Objects
+- [object AppStoreReviewAttachment](./appstorereviewattachment.md)
   A file attached to an App Store review submission to provide reviewers with additional context, such as demo credentials or notes.
-- [object AppStoreReviewAttachmentResponse](appstorereviewattachmentresponse.md)
+- [object AppStoreReviewAttachmentResponse](./appstorereviewattachmentresponse.md)
   The response body for endpoints that create, read, or modify a file attached to an App Store review submission.
-- [object AppStoreReviewAttachmentUpdateRequest](appstorereviewattachmentupdaterequest.md)
+- [object AppStoreReviewAttachmentUpdateRequest](./appstorereviewattachmentupdaterequest.md)
   The request body you use to update an App Store Review Attachment.
-- [object AppStoreReviewAttachmentsResponse](appstorereviewattachmentsresponse.md)
+- [object AppStoreReviewAttachmentsResponse](./appstorereviewattachmentsresponse.md)
   The response body for endpoints that list files attached to an App Store review submission.
 
 

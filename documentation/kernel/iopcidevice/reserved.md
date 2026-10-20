@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct IOPCIDeviceExpansionData * reserved;
 ```
 

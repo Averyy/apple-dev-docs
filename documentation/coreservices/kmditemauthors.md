@@ -1,7 +1,8 @@
 # kMDItemAuthors
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The author, or authors, of the contents of the file. A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ The author, or authors, of the contents of the file. A CFArray of CFStrings.
 
 ```swift
 let kMDItemAuthors: CFString!
+```
+
+```c
+const CFStringRef kMDItemAuthors;
 ```
 
 #### Discussion

@@ -1,14 +1,15 @@
 # INPUT_MICROPHONE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 INPUT_MICROPHONE = 0x0201
 ```
 

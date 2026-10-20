@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the demand to the provide encoder.
 
@@ -26,7 +27,8 @@ func encode(to encoder: any Encoder) throws
 
 ## See Also
 
-- [init(from: any Decoder) throws](subscribers/demand/init(from:).md)
+### Encoding and decoding
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates a demand instance from a decoder.
 
 

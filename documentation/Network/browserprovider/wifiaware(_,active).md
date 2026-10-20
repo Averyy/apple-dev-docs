@@ -1,7 +1,8 @@
 # wifiAware(_:active:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Setup a `NetworkBrowser` to subscribe to Wi-Fi Aware services on selected, paired devices.
 
@@ -14,6 +15,8 @@ Setup a `NetworkBrowser` to subscribe to Wi-Fi Aware services on selected, paire
 ```swift
 static func wifiAware(_ action: WASubscriberBrowser.Action, active requestedDuration: Duration? = nil) -> Self
 ```
+
+Available when `Self` is `WASubscriberBrowser`.
 
 #### Return Value
 

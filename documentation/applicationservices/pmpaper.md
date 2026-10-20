@@ -1,7 +1,8 @@
 # PMPaper
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 An opaque type that stores information about the paper used in a print job.
 
@@ -12,6 +13,10 @@ An opaque type that stores information about the paper used in a print job.
 
 ```swift
 typealias PMPaper = OpaquePointer
+```
+
+```c
+typedef struct OpaquePMPaper *PMPaper;
 ```
 
 #### Discussion

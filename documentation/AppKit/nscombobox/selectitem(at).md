@@ -1,12 +1,13 @@
 # selectItem(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Selects the pop-up list row at the given index.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Selects the pop-up list row at the given index.
 func selectItem(at index: Int)
 ```
 
+```objc
+- (void) selectItemAtIndex:(NSInteger) index;
+```
+
 #### Discussion
 
-Posts an [`selectionDidChangeNotification`](nscombobox/selectiondidchangenotification.md) to the default notification center if the selection does in fact change. Note that this method does not alter the contents of the combo box’s text field.
+Posts an [`selectionDidChangeNotification`](./selectiondidchangenotification.md) to the default notification center if the selection does in fact change. Note that this method does not alter the contents of the combo box’s text field.
 
 ## Parameters
 
@@ -24,15 +29,17 @@ Posts an [`selectionDidChangeNotification`](nscombobox/selectiondidchangenotific
 
 ## See Also
 
-- [var objectValue: Any?](nscontrol/objectvalue.md)
+### Related Documentation
+- [var objectValue: Any?](../nscontrol/objectvalue.md)
   The value of the receiver’s cell as an Objective-C object.
-- [func deselectItem(at: Int)](nscombobox/deselectitem(at:).md)
+### Manipulating the Selection
+- [func deselectItem(at: Int)](./deselectitem%28at%29.md)
   Deselects the pop-up list item at the specified index if it’s selected.
-- [var indexOfSelectedItem: Int](nscombobox/indexofselecteditem.md)
+- [var indexOfSelectedItem: Int](./indexofselecteditem.md)
   The index of the last item selected from the pop-up list.
-- [var objectValueOfSelectedItem: Any?](nscombobox/objectvalueofselecteditem.md)
+- [var objectValueOfSelectedItem: Any?](./objectvalueofselecteditem.md)
   The object corresponding to the last item selected from the pop-up list.
-- [func selectItem(withObjectValue: Any?)](nscombobox/selectitem(withobjectvalue:).md)
+- [func selectItem(withObjectValue: Any?)](./selectitem%28withobjectvalue%29.md)
   Selects the first pop-up list item that corresponds to the given object.
 
 

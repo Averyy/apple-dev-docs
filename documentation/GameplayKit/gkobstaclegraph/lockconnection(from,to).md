@@ -1,7 +1,8 @@
 # lockConnection(from:to:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prevents the specified nodes from being disconnected due to the addition of obstacles.
 
@@ -19,11 +20,15 @@ Prevents the specified nodes from being disconnected due to the addition of obst
 func lockConnection(from startNode: NodeType, to endNode: NodeType)
 ```
 
+```objc
+- (void) lockConnectionFromNode:(NodeType) startNode toNode:(NodeType) endNode;
+```
+
 #### Discussion
 
-By default, adding obstacles with the [`addObstacles(_:)`](gkobstaclegraph/addobstacles(_:).md) method disconnects pairs of nodes if the direct path between them intersects an obstacle. This behavior ensures that using the findPathBetweenNodes:toNode: method does not result in a path through the graph that crosses obstacles.
+By default, adding obstacles with the [`addObstacles(_:)`](./addobstacles%28_%29.md) method disconnects pairs of nodes if the direct path between them intersects an obstacle. This behavior ensures that using the findPathBetweenNodes:toNode: method does not result in a path through the graph that crosses obstacles.
 
-With certain nodes, such as those you add with the [`connectUsingObstacles(node:)`](gkobstaclegraph/connectusingobstacles(node:).md) method to represent the position of a game character or objective, this behavior might not be desirable. For example, if you add an obstacle that overlaps a character’s current position, the character should be able to find a path that exits the obstacle. In this case, use the [`unlockConnection(from:to:)`](gkobstaclegraph/unlockconnection(from:to:).md) method to protect the connection between the character’s node and a neighboring node from being automatically destroyed. If you later rearrange nodes so that such protection is no longer necessary, use the [`unlockConnection(from:to:)`](gkobstaclegraph/unlockconnection(from:to:).md) method to remove it.
+With certain nodes, such as those you add with the [`connectUsingObstacles(node:)`](./connectusingobstacles%28node%29.md) method to represent the position of a game character or objective, this behavior might not be desirable. For example, if you add an obstacle that overlaps a character’s current position, the character should be able to find a path that exits the obstacle. In this case, use the [`unlockConnection(from:to:)`](./unlockconnection%28from,to%29.md) method to protect the connection between the character’s node and a neighboring node from being automatically destroyed. If you later rearrange nodes so that such protection is no longer necessary, use the [`unlockConnection(from:to:)`](./unlockconnection%28from,to%29.md) method to remove it.
 
 ## Parameters
 
@@ -32,9 +37,10 @@ With certain nodes, such as those you add with the [`connectUsingObstacles(node:
 
 ## See Also
 
-- [func unlockConnection(from: NodeType, to: NodeType)](gkobstaclegraph/unlockconnection(from:to:).md)
+### Locking Node Connections
+- [func unlockConnection(from: NodeType, to: NodeType)](./unlockconnection%28from,to%29.md)
   Allows the specified nodes to be disconnected due to the addition of obstacles.
-- [func isConnectionLocked(from: NodeType, to: NodeType) -> Bool](gkobstaclegraph/isconnectionlocked(from:to:).md)
+- [func isConnectionLocked(from: NodeType, to: NodeType) -> Bool](./isconnectionlocked%28from,to%29.md)
   Returns a Boolean value indicating whether the specified nodes are protected from disconnection due to the addition of obstacles.
 
 

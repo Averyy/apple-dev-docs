@@ -1,7 +1,8 @@
 # objectID(for:withReferenceObject:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a managed object ID from the reference data for a specified entity.
 
@@ -10,7 +11,7 @@ Returns a managed object ID from the reference data for a specified entity.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns a managed object ID from the reference data for a specified entity.
 
 ```swift
 func objectID(for entity: NSEntityDescription, withReferenceObject data: Any) -> NSManagedObjectID
+```
+
+```objc
+- (NSManagedObjectID *) objectIDForEntity:(NSEntityDescription *) entity referenceObject:(id) data;
 ```
 
 #### Return Value
@@ -39,9 +44,10 @@ You should not override this method.
 
 ## See Also
 
-- [func load() throws](nsatomicstore/load.md)
+### Loading a Store
+- [func load() throws](./load%28%29.md)
   Loads the cache nodes for the receiver.
-- [func addCacheNodes(Set<NSAtomicStoreCacheNode>)](nsatomicstore/addcachenodes(_:).md)
+- [func addCacheNodes(Set<NSAtomicStoreCacheNode>)](./addcachenodes%28_%29.md)
   Registers a set of cache nodes with the receiver.
 
 

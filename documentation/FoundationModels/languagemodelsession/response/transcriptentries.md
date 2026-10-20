@@ -1,7 +1,8 @@
 # transcriptEntries
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of transcript entries.
 

@@ -1,14 +1,15 @@
 # all_image_info_addr
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 mach_vm_address_t all_image_info_addr;
 ```
 

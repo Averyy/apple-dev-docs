@@ -1,7 +1,8 @@
 # init(iesProfile:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a light from photometry data in the file at the specified URL.
 
@@ -17,6 +18,10 @@ Initializes a light from photometry data in the file at the specified URL.
 
 ```swift
 init?(iesProfile URL: URL)
+```
+
+```objc
+- (instancetype) initWithIESProfile:(NSURL *) URL;
 ```
 
 #### Return Value

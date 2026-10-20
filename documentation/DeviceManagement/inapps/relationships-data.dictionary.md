@@ -1,18 +1,19 @@
 # InApps.Relationships
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object InApps.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InApps.Relationships.InAppsAppRelationship](inapps/relationships-data.dictionary/inappsapprelationship.md)
+- [object InApps.Relationships.InAppsAppRelationship](./relationships-data.dictionary/inappsapprelationship.md)
 
 ## Properties
 

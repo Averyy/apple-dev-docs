@@ -1,7 +1,8 @@
 # WASharedSecret.Context
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A unique value that is specific to your App and the use case a given connection will perform, which diversifies the generated secret so that it is unique to your App and connection.
 
@@ -19,21 +20,21 @@ struct Context
 ## Topics
 
 ### Initializers
-- [init?(Data)](washaredsecret/context/init(_:)-74fai.md)
+- [init?(Data)](./context/init%28_%29-74fai.md)
   Creates a new custom context that provides unique data.
-- [init?(String)](washaredsecret/context/init(_:)-8fpqd.md)
+- [init?(String)](./context/init%28_%29-8fpqd.md)
   Creates a new custom context that provides a unique string.
 ### Type Properties
-- [static let bundleID: WASharedSecret.Context](washaredsecret/context/bundleid.md)
+- [static let bundleID: WASharedSecret.Context](./context/bundleid.md)
   A string that provides a unique value specific to your app.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

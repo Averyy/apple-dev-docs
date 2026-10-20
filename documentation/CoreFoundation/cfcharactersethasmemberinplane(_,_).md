@@ -1,23 +1,28 @@
 # CFCharacterSetHasMemberInPlane(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Reports whether or not a character set contains at least one member character in the specified plane.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFCharacterSetHasMemberInPlane(_ theSet: CFCharacterSet!, _ thePlane: CFIndex) -> Bool
+```
+
+```c
+extern Boolean CFCharacterSetHasMemberInPlane(CFCharacterSetRef theSet, CFIndex thePlane);
 ```
 
 #### Return Value
@@ -31,13 +36,14 @@ func CFCharacterSetHasMemberInPlane(_ theSet: CFCharacterSet!, _ thePlane: CFInd
 
 ## See Also
 
-- [func CFCharacterSetCreateBitmapRepresentation(CFAllocator!, CFCharacterSet!) -> CFData!](cfcharactersetcreatebitmaprepresentation(_:_:).md)
+### Querying Character Sets
+- [func CFCharacterSetCreateBitmapRepresentation(CFAllocator!, CFCharacterSet!) -> CFData!](./cfcharactersetcreatebitmaprepresentation%28_,_%29.md)
   Creates a new immutable data with the bitmap representation from the given character set.
-- [func CFCharacterSetIsCharacterMember(CFCharacterSet!, UniChar) -> Bool](cfcharactersetischaractermember(_:_:).md)
+- [func CFCharacterSetIsCharacterMember(CFCharacterSet!, UniChar) -> Bool](./cfcharactersetischaractermember%28_,_%29.md)
   Reports whether or not a given Unicode character is in a character set.
-- [func CFCharacterSetIsLongCharacterMember(CFCharacterSet!, UTF32Char) -> Bool](cfcharactersetislongcharactermember(_:_:).md)
+- [func CFCharacterSetIsLongCharacterMember(CFCharacterSet!, UTF32Char) -> Bool](./cfcharactersetislongcharactermember%28_,_%29.md)
   Reports whether or not a given UTF-32 character is in a character set.
-- [func CFCharacterSetIsSupersetOfSet(CFCharacterSet!, CFCharacterSet!) -> Bool](cfcharactersetissupersetofset(_:_:).md)
+- [func CFCharacterSetIsSupersetOfSet(CFCharacterSet!, CFCharacterSet!) -> Bool](./cfcharactersetissupersetofset%28_,_%29.md)
   Reports whether or not a character set is a superset of another set.
 
 

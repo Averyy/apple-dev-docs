@@ -1,7 +1,8 @@
 # StationGenres
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A resource object that represents a station genre.
 
@@ -10,33 +11,36 @@ A resource object that represents a station genre.
 
 ## Declaration
 
-```swift
+```
 object StationGenres
 ```
 
 ## Topics
 
 ### Related Objects
-- [object StationGenres.Attributes](stationgenres/attributes-data.dictionary.md)
+- [object StationGenres.Attributes](./stationgenres/attributes-data.dictionary.md)
   The attributes for the station genre resource.
-- [object StationGenres.Relationships](stationgenres/relationships-data.dictionary.md)
+- [object StationGenres.Relationships](./stationgenres/relationships-data.dictionary.md)
   The relationships for a station genre resource.
 
 ## Properties
 
 - `id` (string) *(required)*: The identifier for the station genre.
 - `type` (string) *(required)*: This value must always be `station-genres`.
+
+  **Allowed Values**: `station-genres`
 - `href` (string) *(required)*: The relative location for the station genre resource.
 - `attributes` (StationGenres.Attributes): The attributes for the station genre.
 - `relationships` (StationGenres.Relationships): The relationships for the station genre.
 
 ## See Also
 
-- [object Stations](stations.md)
+### Handling the Response
+- [object Stations](./stations.md)
   A resource object that represents a station.
-- [object StationsResponse](stationsresponse.md)
+- [object StationsResponse](./stationsresponse.md)
   The response to a stations request.
-- [object StationGenresResponse](stationgenresresponse.md)
+- [object StationGenresResponse](./stationgenresresponse.md)
   The response to a specific station genres resource request.
 
 

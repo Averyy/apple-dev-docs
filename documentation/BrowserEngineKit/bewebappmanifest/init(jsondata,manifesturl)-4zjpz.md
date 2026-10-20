@@ -1,12 +1,13 @@
 # init(JSONData:manifestURL:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.5+
 - iPadOS 17.5+
-- macOS ?+
+- macOS
 - tvOS 17.5+
 - visionOS 1.2+
 - watchOS 10.5+
@@ -19,7 +20,8 @@ init?(JSONData jsonData: Data, manifestURL: URL)
 
 ## See Also
 
-- [init?(jsonData: Data, manifestURL: URL)](bewebappmanifest/init(jsondata:manifesturl:)-3azfg.md)
+### Creating a web app manifest
+- [init?(jsonData: Data, manifestURL: URL)](./init%28jsondata,manifesturl%29-3azfg.md)
   Returns nil if manifestURL is invalid or jsonData cannot be parsed.
 
 

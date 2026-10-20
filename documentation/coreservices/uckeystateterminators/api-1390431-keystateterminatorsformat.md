@@ -1,7 +1,8 @@
 # keyStateTerminatorsFormat
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 16-bit integer identifying the format of the `UCKeyStateTerminators` structure. Set to `kUCKeyStateTerminatorsFormat`.
 
@@ -13,6 +14,10 @@ An unsigned 16-bit integer identifying the format of the `UCKeyStateTerminators`
 
 ```swift
 var keyStateTerminatorsFormat: UInt16
+```
+
+```c
+UInt16 keyStateTerminatorsFormat;
 ```
 
 

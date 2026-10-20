@@ -1,11 +1,14 @@
 # globalValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS 10.9+
+- macOS 10.9+ - Deprecated in 10.14
 - Swift 4.0+
+
+> **Deprecated**: Please use Metal or MetalKit.
 
 ## Declaration
 

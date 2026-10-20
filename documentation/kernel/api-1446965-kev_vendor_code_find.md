@@ -1,18 +1,19 @@
 # kev_vendor_code_find
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 errno_t kev_vendor_code_find(const char *vendor_string, u_int32_t *vendor_code);
 ```
 
-#### Return_value
+#### Return Value
 
 May return ENOMEM if memory constraints prevent allocation of a new vendor code.
 

@@ -1,7 +1,8 @@
 # NEOnDemandRuleAction
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 8.0+
@@ -17,33 +18,38 @@
 enum NEOnDemandRuleAction
 ```
 
+```c
+enum NEOnDemandRuleAction : NSInteger;
+```
+
 ## Topics
 
 ### Rule Actions
-- [NEOnDemandRuleAction.connect](neondemandruleaction/connect.md)
+- [NEOnDemandRuleAction.connect](./neondemandruleaction/connect.md)
   Start the VPN connection for every connection attempt.
-- [NEOnDemandRuleAction.disconnect](neondemandruleaction/disconnect.md)
+- [NEOnDemandRuleAction.disconnect](./neondemandruleaction/disconnect.md)
   Do not start the VPN connection, and disconnect the VPN connection if it is not currently disconnected.
-- [NEOnDemandRuleAction.evaluateConnection](neondemandruleaction/evaluateconnection.md)
+- [NEOnDemandRuleAction.evaluateConnection](./neondemandruleaction/evaluateconnection.md)
   Start the VPN after evaluating the destination host being accessed against the rule’s parameters.
-- [NEOnDemandRuleAction.ignore](neondemandruleaction/ignore.md)
+- [NEOnDemandRuleAction.ignore](./neondemandruleaction/ignore.md)
   Do not start the VPN connection, but do not disconnect it if it is currently connected.
 ### Initializers
-- [init?(rawValue: Int)](neondemandruleaction/init(rawvalue:).md)
+- [init?(rawValue: Int)](./neondemandruleaction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var action: NEOnDemandRuleAction](neondemandrule/action.md)
+### Accessing the rule action
+- [var action: NEOnDemandRuleAction](./neondemandrule/action.md)
   The action of the On Demand Rule.
 
 

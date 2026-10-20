@@ -1,14 +1,15 @@
 # MTF_RIGHTS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 MTF_RIGHTS = (1 << MT_RIGHTS)
 ```
 

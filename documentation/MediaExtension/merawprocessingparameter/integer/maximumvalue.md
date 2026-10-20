@@ -1,7 +1,8 @@
 # maximumValue
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum value for this parameter.
 
@@ -14,13 +15,18 @@ The maximum value for this parameter.
 var maximumValue: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger maximumValue;
+```
+
 ## See Also
 
-- [var currentValue: Int](merawprocessingparameter/integer/currentvalue.md)
+### Properties
+- [var currentValue: Int](./currentvalue.md)
   Get or set the current value for this parameter.
-- [var initialValue: Int](merawprocessingparameter/integer/initialvalue.md)
+- [var initialValue: Int](./initialvalue.md)
   The initial value for this parameter as defined in the sequence metadata.
-- [var minimumValue: Int](merawprocessingparameter/integer/minimumvalue.md)
+- [var minimumValue: Int](./minimumvalue.md)
   The minimum value for this parameter.
 
 

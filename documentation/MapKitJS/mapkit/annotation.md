@@ -1,7 +1,8 @@
 # Annotation
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The getter to use to for access the annotation class.
 
@@ -10,7 +11,7 @@ The getter to use to for access the annotation class.
 
 ## Declaration
 
-```swift
+```
 get Annotation(): typeof Annotation;
 ```
 
@@ -20,35 +21,36 @@ You must load the appropriate library first before accessing the getter, otherwi
 
 ## See Also
 
-- [AddressCategory](mapkit/addresscategory.md)
+### Namespace properties
+- [AddressCategory](./addresscategory.md)
   An accessor for the address category enumeration.
-- [AddressFilter](mapkit/addressfilter.md)
+- [AddressFilter](./addressfilter.md)
   The getter to use to access the address filter class.
-- [AnnotationCollisionMode](mapkit/annotationcollisionmode.md)
+- [AnnotationCollisionMode](./annotationcollisionmode.md)
   An accessor for the annotation collision mode enumeration.
-- [AnnotationDisplayPriority](mapkit/annotationdisplaypriority.md)
+- [AnnotationDisplayPriority](./annotationdisplaypriority.md)
   An accessor for the annotation display priority enumeration.
-- [BoundingRegion](mapkit/boundingregion.md)
+- [BoundingRegion](./boundingregion.md)
   The getter to use to access the the bounding region class.
-- [CameraZoomRange](mapkit/camerazoomrange.md)
+- [CameraZoomRange](./camerazoomrange.md)
   The getter to use to access the camera zoom range class.
-- [CircleOverlay](mapkit/circleoverlay.md)
+- [CircleOverlay](./circleoverlay.md)
   The getter to use to access the circle overlay class.
-- [ColorScheme](mapkit/colorscheme.md)
+- [ColorScheme](./colorscheme.md)
   An accessor for the color scheme enumeration.
-- [Coordinate](mapkit/coordinate.md)
+- [Coordinate](./coordinate.md)
   The getter to use to access the coordinate class.
-- [CoordinateRegion](mapkit/coordinateregion.md)
+- [CoordinateRegion](./coordinateregion.md)
   The getter to use to access the coordinate region class.
-- [CoordinateSpan](mapkit/coordinatespan.md)
+- [CoordinateSpan](./coordinatespan.md)
   The getter to use to access the coordinate span class.
-- [Directions](mapkit/directions.md)
+- [Directions](./directions.md)
   The getter to use to access the directions class.
-- [DistanceUnitSystem](mapkit/distanceunitsystem.md)
+- [DistanceUnitSystem](./distanceunitsystem.md)
   An accessor for the distance unit system enumeration.
-- [FeatureVisibility](mapkit/featurevisibility.md)
+- [FeatureVisibility](./featurevisibility.md)
   An accessor for the feature visibility enumeration.
-- [Geocoder](mapkit/geocoder.md)
+- [Geocoder](./geocoder.md)
   The getter to use to access the geocoder class.
 
 

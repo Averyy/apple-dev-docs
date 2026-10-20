@@ -1,7 +1,8 @@
 # disableLooping()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disables looping for the player queue.
 
@@ -19,13 +20,18 @@ Disables looping for the player queue.
 func disableLooping()
 ```
 
+```objc
+- (void) disableLooping;
+```
+
 #### Discussion
 
-The player looper will stop performing player queue operations for looping and let the current looping item replica play to the end. The player’s original [`actionAtItemEnd`](avplayer/actionatitemend-swift.property.md) property will be restored afterwards.
+The player looper will stop performing player queue operations for looping and let the current looping item replica play to the end. The player’s original [`actionAtItemEnd`](../avplayer/actionatitemend-swift.property.md) property will be restored afterwards.
 
 ## See Also
 
-- [var loopingPlayerItems: [AVPlayerItem]](avplayerlooper/loopingplayeritems.md)
+### Configuring looping
+- [var loopingPlayerItems: [AVPlayerItem]](./loopingplayeritems.md)
   An array containing replicas of the template player item used to accomplish the looping.
 
 

@@ -1,7 +1,8 @@
 # addRequest(_:cadence:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a request to the video processor.
 
@@ -22,7 +23,7 @@ final func addRequest<T>(_ request: T, cadence: VideoProcessor.Cadence? = nil) a
 
 #### Return Value
 
-An [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) that produces a request result for each frame.
+An [`AsyncSequence`](../../Swift/asyncsequence.md) that produces a request result for each frame.
 
 #### Discussion
 
@@ -35,9 +36,10 @@ By default, the framework processes every frame.
 
 ## See Also
 
-- [VideoProcessor.Cadence](videoprocessor/cadence.md)
+### Adding and removing a request
+- [VideoProcessor.Cadence](./cadence.md)
   A type that describes the video processing cadence.
-- [func removeRequest(any VisionRequest) async -> Bool](videoprocessor/removerequest(_:).md)
+- [func removeRequest(any VisionRequest) async -> Bool](./removerequest%28_%29.md)
   Stops performing a request on future frames.
 
 

@@ -1,7 +1,8 @@
 # assert(_:_:file:line:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs a traditional C-style assert with an optional message.
 
@@ -37,11 +38,12 @@ Use this function for internal consistency checks that are active during testing
 
 ## See Also
 
-- [func assertionFailure(@autoclosure () -> String, file: StaticString, line: UInt)](assertionfailure(_:file:line:).md)
+### Testing
+- [func assertionFailure(@autoclosure () -> String, file: StaticString, line: UInt)](./assertionfailure%28_,file,line%29.md)
   Indicates that an internal consistency check failed.
-- [func precondition(@autoclosure () -> Bool, @autoclosure () -> String, file: StaticString, line: UInt)](precondition(_:_:file:line:).md)
+- [func precondition(@autoclosure () -> Bool, @autoclosure () -> String, file: StaticString, line: UInt)](./precondition%28_,_,file,line%29.md)
   Checks a necessary condition for making forward progress.
-- [func preconditionFailure(@autoclosure () -> String, file: StaticString, line: UInt) -> Never](preconditionfailure(_:file:line:).md)
+- [func preconditionFailure(@autoclosure () -> String, file: StaticString, line: UInt) -> Never](./preconditionfailure%28_,file,line%29.md)
   Indicates that a precondition was violated.
 
 

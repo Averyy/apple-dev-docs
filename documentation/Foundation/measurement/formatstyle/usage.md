@@ -1,7 +1,8 @@
 # usage
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The intended purpose of the formatted measurement.
 
@@ -37,39 +38,40 @@ temperature.formatted(.measurement(width: .abbreviated, usage: .asProvided))
 
 All unit types have `general` and `asProvided` options. Some subclasses have additional options, such as the following:
 
-[`UnitTemperature`](unittemperature.md)
+[`UnitTemperature`](../../unittemperature.md)
 
 - `person`
 - `weather`
 
-[`UnitLength`](unitlength.md)
+[`UnitLength`](../../unitlength.md)
 
 - `person`
 - `personHeight`
 - `road`
 
-[`UnitEnergy`](unitenergy.md)
+[`UnitEnergy`](../../unitenergy.md)
 
 - `food`
 - `workout`
 
-[`UnitMass`](unitmass.md)
+[`UnitMass`](../../unitmass.md)
 
 - `personWeight`
 
 ## See Also
 
-- [var width: Measurement<UnitType>.FormatStyle.UnitWidth](measurement/formatstyle/width.md)
+### Modifying a measurement format style
+- [var width: Measurement<UnitType>.FormatStyle.UnitWidth](./width.md)
   The width of the measurement unit.
-- [Measurement.FormatStyle.UnitWidth](measurement/formatstyle/unitwidth.md)
+- [Measurement.FormatStyle.UnitWidth](./unitwidth.md)
   Specifies the width of the unit, determining the textual representation.
-- [var numberFormatStyle: FloatingPointFormatStyle<Double>?](measurement/formatstyle/numberformatstyle.md)
+- [var numberFormatStyle: FloatingPointFormatStyle<Double>?](./numberformatstyle.md)
   The formatting of the measurement value.
-- [var hidesScaleName: Bool](measurement/formatstyle/hidesscalename.md)
+- [var hidesScaleName: Bool](./hidesscalename.md)
   The visibility of the unit name of a temperature.
-- [var locale: Locale](measurement/formatstyle/locale.md)
+- [var locale: Locale](./locale.md)
   The locale of the format style.
-- [func locale(Locale) -> Measurement<UnitType>.FormatStyle](measurement/formatstyle/locale(_:).md)
+- [func locale(Locale) -> Measurement<UnitType>.FormatStyle](./locale%28_%29.md)
   Modifies the measurement format style to use the specified locale.
 
 

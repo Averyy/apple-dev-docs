@@ -1,18 +1,19 @@
 # Issue.Kind.expectationFailed(_:)
 
 **Framework**: Swift Testing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-An issue due to a failed expectation, such as those produced by [`expect(_:_:sourceLocation:)`](expect(_:_:sourcelocation:).md).
+An issue due to a failed expectation, such as those produced by [`expect(_:_:sourceLocation:)`](../../expect%28_,_,sourcelocation%29.md).
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 

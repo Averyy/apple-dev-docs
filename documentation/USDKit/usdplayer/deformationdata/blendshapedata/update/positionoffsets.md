@@ -1,7 +1,8 @@
 # positionOffsets
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Changed position delta offsets.
 

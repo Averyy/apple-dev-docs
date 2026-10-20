@@ -2,6 +2,7 @@
 
 **Framework**: Combine  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 Describes an instant in time for this scheduler.
@@ -23,7 +24,8 @@ associatedtype SchedulerTimeType : Strideable where Self.SchedulerTimeType.Strid
 
 ## See Also
 
-- [associatedtype SchedulerOptions](scheduler/scheduleroptions.md)
+### Declaring scheduler timekeeping and options
+- [associatedtype SchedulerOptions](./scheduleroptions.md)
   A type that defines options accepted by the scheduler.
 
 

@@ -1,14 +1,15 @@
 # IOUSBHostCIEndpointCreateCommandData1Descriptor
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCIEndpointCreateCommandData1Descriptor = IOUSBBitRange64(0, 63)
 ```
 

@@ -1,7 +1,8 @@
 # init(frame:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a switch control.
 
@@ -17,21 +18,26 @@ Creates a switch control.
 init(frame: CGRect)
 ```
 
+```objc
+- (instancetype) initWithFrame:(CGRect) frame;
+```
+
 #### Return Value
 
-An initialized [`UISwitch`](uiswitch.md) object.
+An initialized [`UISwitch`](../uiswitch.md) object.
 
 #### Discussion
 
-[`UISwitch`](uiswitch.md) overrides [`init(frame:)`](uiview/init(frame:).md) and enforces a size appropriate for the control.
+[`UISwitch`](../uiswitch.md) overrides [`init(frame:)`](../uiview/init%28frame%29.md) and enforces a size appropriate for the control.
 
 ## Parameters
 
-- `frame`: A rectangle defining the frame of the [`UISwitch`](uiswitch.md) object. The size components of this rectangle are ignored.
+- `frame`: A rectangle defining the frame of the [`UISwitch`](../uiswitch.md) object. The size components of this rectangle are ignored.
 
 ## See Also
 
-- [init?(coder: NSCoder)](uiswitch/init(coder:).md)
+### Creating a switch
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a switch control from data in an unarchiver.
 
 

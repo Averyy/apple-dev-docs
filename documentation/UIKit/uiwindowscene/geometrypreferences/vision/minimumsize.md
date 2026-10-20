@@ -1,7 +1,8 @@
 # minimumSize
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - visionOS 1.0+

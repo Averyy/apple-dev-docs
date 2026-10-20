@@ -1,7 +1,8 @@
 # HMCharacteristicTypeCurrentAirPurifierState
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The current air purifier state.
 
@@ -19,25 +20,30 @@ The current air purifier state.
 let HMCharacteristicTypeCurrentAirPurifierState: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeCurrentAirPurifierState;
+```
+
 #### Discussion
 
-The corresponding value is one of the constants in the [`HMCharacteristicValueCurrentAirPurifierState`](hmcharacteristicvaluecurrentairpurifierstate.md) enumeration.
+The corresponding value is one of the constants in the [`HMCharacteristicValueCurrentAirPurifierState`](./hmcharacteristicvaluecurrentairpurifierstate.md) enumeration.
 
 ## Topics
 
 ### Values
-- [enum HMCharacteristicValueCurrentAirPurifierState](hmcharacteristicvaluecurrentairpurifierstate.md)
+- [enum HMCharacteristicValueCurrentAirPurifierState](./hmcharacteristicvaluecurrentairpurifierstate.md)
   Possible values for the current air purifier state.
 
 ## See Also
 
-- [let HMCharacteristicTypeTargetAirPurifierState: String](hmcharacteristictypetargetairpurifierstate.md)
+### Purifiers and filters
+- [let HMCharacteristicTypeTargetAirPurifierState: String](./hmcharacteristictypetargetairpurifierstate.md)
   The target air purifier state.
-- [let HMCharacteristicTypeFilterLifeLevel: String](hmcharacteristictypefilterlifelevel.md)
+- [let HMCharacteristicTypeFilterLifeLevel: String](./hmcharacteristictypefilterlifelevel.md)
   The amount of useful life remaining in a filter.
-- [let HMCharacteristicTypeFilterChangeIndication: String](hmcharacteristictypefilterchangeindication.md)
+- [let HMCharacteristicTypeFilterChangeIndication: String](./hmcharacteristictypefilterchangeindication.md)
   A filter’s change indicator.
-- [let HMCharacteristicTypeFilterResetChangeIndication: String](hmcharacteristictypefilterresetchangeindication.md)
+- [let HMCharacteristicTypeFilterResetChangeIndication: String](./hmcharacteristictypefilterresetchangeindication.md)
   A reset control for a filter change notification.
 
 

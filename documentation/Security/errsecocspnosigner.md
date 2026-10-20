@@ -1,7 +1,8 @@
 # errSecOCSPNoSigner
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The online certificate status protocol (OCSP) response has no signer.
 
@@ -18,6 +19,10 @@ The online certificate status protocol (OCSP) response has no signer.
 
 ```swift
 var errSecOCSPNoSigner: OSStatus { get }
+```
+
+```c
+errSecOCSPNoSigner
 ```
 
 

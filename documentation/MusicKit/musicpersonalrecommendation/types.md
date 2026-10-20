@@ -1,7 +1,8 @@
 # types
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The types of items in the personal recommendation.
 

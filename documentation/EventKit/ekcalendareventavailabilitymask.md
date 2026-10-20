@@ -1,17 +1,18 @@
 # EKCalendarEventAvailabilityMask
 
 **Framework**: EventKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A bitmask indicating the event availability settings that the calendar can support.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,62 +20,67 @@ A bitmask indicating the event availability settings that the calendar can suppo
 struct EKCalendarEventAvailabilityMask
 ```
 
+```c
+enum EKCalendarEventAvailabilityMask : NSUInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](ekcalendareventavailabilitymask/init(rawvalue:).md)
+- [init(rawValue: UInt)](./ekcalendareventavailabilitymask/init%28rawvalue%29.md)
   Creates a calendar event availability mask with the specified raw value.
 ### Type Properties
-- [static var busy: EKCalendarEventAvailabilityMask](ekcalendareventavailabilitymask/busy.md)
+- [static var busy: EKCalendarEventAvailabilityMask](./ekcalendareventavailabilitymask/busy.md)
   The calendar supports the busy event availability setting.
-- [static var free: EKCalendarEventAvailabilityMask](ekcalendareventavailabilitymask/free.md)
+- [static var free: EKCalendarEventAvailabilityMask](./ekcalendareventavailabilitymask/free.md)
   The calendar supports the free event availability setting.
-- [static var tentative: EKCalendarEventAvailabilityMask](ekcalendareventavailabilitymask/tentative.md)
+- [static var tentative: EKCalendarEventAvailabilityMask](./ekcalendareventavailabilitymask/tentative.md)
   The calendar supports the tentative event availability setting.
-- [static var unavailable: EKCalendarEventAvailabilityMask](ekcalendareventavailabilitymask/unavailable.md)
+- [static var unavailable: EKCalendarEventAvailabilityMask](./ekcalendareventavailabilitymask/unavailable.md)
   The calendar supports the unavailable event availability setting.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [enum EKCalendarType](ekcalendartype.md)
+### Accessing Calendar Properties
+- [enum EKCalendarType](./ekcalendartype.md)
   Possible calendar types.
-- [var allowsContentModifications: Bool](ekcalendar/allowscontentmodifications.md)
+- [var allowsContentModifications: Bool](./ekcalendar/allowscontentmodifications.md)
   A Boolean value that indicates whether you can add, edit, and delete items in the calendar.
-- [var cgColor: CGColor!](ekcalendar/cgcolor.md)
+- [var cgColor: CGColor!](./ekcalendar/cgcolor.md)
   The calendar’s color.
-- [var color: NSColor!](ekcalendar/color.md)
+- [var color: NSColor!](./ekcalendar/color.md)
   The calendar’s color.
-- [var isImmutable: Bool](ekcalendar/isimmutable.md)
+- [var isImmutable: Bool](./ekcalendar/isimmutable.md)
   A Boolean value indicating whether the calendar’s properties can be edited or deleted.
-- [var title: String](ekcalendar/title.md)
+- [var title: String](./ekcalendar/title.md)
   The calendar’s title.
-- [var type: EKCalendarType](ekcalendar/type.md)
+- [var type: EKCalendarType](./ekcalendar/type.md)
   The calendar’s type.
-- [var allowedEntityTypes: EKEntityMask](ekcalendar/allowedentitytypes.md)
+- [var allowedEntityTypes: EKEntityMask](./ekcalendar/allowedentitytypes.md)
   The entity types this calendar can contain.
-- [var source: EKSource!](ekcalendar/source.md)
+- [var source: EKSource!](./ekcalendar/source.md)
   The source object representing the account to which this calendar belongs.
-- [var isSubscribed: Bool](ekcalendar/issubscribed.md)
+- [var isSubscribed: Bool](./ekcalendar/issubscribed.md)
   A Boolean value indicating whether the calendar is a subscribed calendar.
-- [var supportedEventAvailabilities: EKCalendarEventAvailabilityMask](ekcalendar/supportedeventavailabilities.md)
+- [var supportedEventAvailabilities: EKCalendarEventAvailabilityMask](./ekcalendar/supportedeventavailabilities.md)
   The event availability settings supported by this calendar, as indicated by a bitmask.
-- [var calendarIdentifier: String](ekcalendar/calendaridentifier.md)
+- [var calendarIdentifier: String](./ekcalendar/calendaridentifier.md)
   A unique identifier for the calendar.
-- [func DATETIME_COMPONENTS_DO_NOT_USE()](datetime_components_do_not_use().md)
+- [func DATETIME_COMPONENTS_DO_NOT_USE()](./datetime_components_do_not_use%28%29.md)
   A deprecated function.
-- [func DATE_COMPONENTS_DO_NOT_USE()](date_components_do_not_use().md)
+- [func DATE_COMPONENTS_DO_NOT_USE()](./date_components_do_not_use%28%29.md)
   A deprecated function.
 
 

@@ -1,7 +1,8 @@
 # copyBytes(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the bytes of data from the type into a raw memory buffer.
 
@@ -46,15 +47,16 @@ dest.withUnsafeMutableBytes { destBufferPtr in
 
 ## See Also
 
-- [func copyBytes<DestinationType>(to: UnsafeMutableBufferPointer<DestinationType>) -> Int](dataprotocol/copybytes(to:)-52wps.md)
+### Copying Underlying Bytes
+- [func copyBytes<DestinationType>(to: UnsafeMutableBufferPointer<DestinationType>) -> Int](./copybytes%28to%29-52wps.md)
   Copies the bytes of data from the type into a typed memory buffer.
-- [func copyBytes<DestinationType>(to: UnsafeMutableBufferPointer<DestinationType>, count: Int) -> Int](dataprotocol/copybytes(to:count:)-6krsm.md)
+- [func copyBytes<DestinationType>(to: UnsafeMutableBufferPointer<DestinationType>, count: Int) -> Int](./copybytes%28to,count%29-6krsm.md)
   Copies the provided number of bytes from the start of the type into  a typed memory buffer.
-- [func copyBytes(to: UnsafeMutableRawBufferPointer, count: Int) -> Int](dataprotocol/copybytes(to:count:)-29t5.md)
+- [func copyBytes(to: UnsafeMutableRawBufferPointer, count: Int) -> Int](./copybytes%28to,count%29-29t5.md)
   Copies the provided number of bytes from the start of the type into a raw memory buffer.
-- [func copyBytes<DestinationType, R>(to: UnsafeMutableBufferPointer<DestinationType>, from: R) -> Int](dataprotocol/copybytes(to:from:)-1ol47.md)
+- [func copyBytes<DestinationType, R>(to: UnsafeMutableBufferPointer<DestinationType>, from: R) -> Int](./copybytes%28to,from%29-1ol47.md)
   Copies a range of the bytes from the type into a typed memory buffer.
-- [func copyBytes<R>(to: UnsafeMutableRawBufferPointer, from: R) -> Int](dataprotocol/copybytes(to:from:)-1y839.md)
+- [func copyBytes<R>(to: UnsafeMutableRawBufferPointer, from: R) -> Int](./copybytes%28to,from%29-1y839.md)
   Copies a range of the bytes from the type into a raw memory buffer.
 
 

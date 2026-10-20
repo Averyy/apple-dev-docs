@@ -1,7 +1,8 @@
 # SecItemAttr.pathItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the path attribute.
 
@@ -13,6 +14,10 @@ Identifies the path attribute.
 
 ```swift
 case pathItemAttr
+```
+
+```c
+kSecPathItemAttr
 ```
 
 #### Discussion

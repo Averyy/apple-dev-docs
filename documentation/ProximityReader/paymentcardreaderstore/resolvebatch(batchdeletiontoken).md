@@ -1,7 +1,8 @@
 # resolveBatch(batchDeletionToken:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes the current batch and all its Store and Forward payments, allowing you to request a new batch.
 
@@ -22,7 +23,7 @@ The remaining number of payments to process.
 
 #### Discussion
 
-> **Note**: This method throws a [`PaymentCardReaderStore.StoreError`](paymentcardreaderstore/storeerror.md) if the customer isn’t online at the moment you call it, if there’s no Store and Forward batch to resolve, or if the deletion token is invalid.
+> **Throws**: This method throws a [`PaymentCardReaderStore.StoreError`](./storeerror.md) if the customer isn’t online at the moment you call it, if there’s no Store and Forward batch to resolve, or if the deletion token is invalid.
 
 ## Parameters
 

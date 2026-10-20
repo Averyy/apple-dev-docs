@@ -1,7 +1,8 @@
 # isNetworkAccessRestricted
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An indication of whether the accessory’s access to the network is restricted.
 
@@ -17,6 +18,10 @@ An indication of whether the accessory’s access to the network is restricted.
 
 ```swift
 var isNetworkAccessRestricted: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly, getter=isNetworkAccessRestricted) BOOL networkAccessRestricted;
 ```
 
 #### Discussion

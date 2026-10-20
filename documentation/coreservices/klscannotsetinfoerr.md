@@ -1,7 +1,8 @@
 # kLSCannotSetInfoErr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The system can’t hide the filename extension.
 
@@ -17,29 +18,30 @@ var kLSCannotSetInfoErr: OSStatus { get }
 
 ## See Also
 
-- [var kLSAppInTrashErr: OSStatus](klsappintrasherr.md)
+### Result Codes
+- [var kLSAppInTrashErr: OSStatus](./klsappintrasherr.md)
   The app can’t run because it’s inside a Trash folder.
-- [var kLSUnknownErr: OSStatus](klsunknownerr.md)
+- [var kLSUnknownErr: OSStatus](./klsunknownerr.md)
   An unknown error has occurred.
-- [var kLSNotAnApplicationErr: OSStatus](klsnotanapplicationerr.md)
+- [var kLSNotAnApplicationErr: OSStatus](./klsnotanapplicationerr.md)
   The item for registration is not an app.
-- [var kLSDataUnavailableErr: OSStatus](klsdataunavailableerr.md)
+- [var kLSDataUnavailableErr: OSStatus](./klsdataunavailableerr.md)
   Data of the desired type is not available (for example, there is no kind string).
-- [var kLSApplicationNotFoundErr: OSStatus](klsapplicationnotfounderr.md)
+- [var kLSApplicationNotFoundErr: OSStatus](./klsapplicationnotfounderr.md)
   No app in the Launch Services database matches the input criteria.
-- [var kLSDataErr: OSStatus](klsdataerr.md)
+- [var kLSDataErr: OSStatus](./klsdataerr.md)
   Improper data structure.
-- [var kLSLaunchInProgressErr: OSStatus](klslaunchinprogresserr.md)
+- [var kLSLaunchInProgressErr: OSStatus](./klslaunchinprogresserr.md)
   A launch of the app is already in progress.
-- [var kLSServerCommunicationErr: OSStatus](klsservercommunicationerr.md)
+- [var kLSServerCommunicationErr: OSStatus](./klsservercommunicationerr.md)
   There is a problem communicating with the server process that maintains the Launch Services database. 
-- [var kLSIncompatibleSystemVersionErr: OSStatus](klsincompatiblesystemversionerr.md)
+- [var kLSIncompatibleSystemVersionErr: OSStatus](./klsincompatiblesystemversionerr.md)
   The requested app can’t run on the current macOS version.
-- [var kLSNoLaunchPermissionErr: OSStatus](klsnolaunchpermissionerr.md)
+- [var kLSNoLaunchPermissionErr: OSStatus](./klsnolaunchpermissionerr.md)
   The user doesn’t have permission to launch the app on a managed network.
-- [var kLSNoExecutableErr: OSStatus](klsnoexecutableerr.md)
+- [var kLSNoExecutableErr: OSStatus](./klsnoexecutableerr.md)
   The executable file is missing or has an unusable format.
-- [var kLSMultipleSessionsNotSupportedErr: OSStatus](klsmultiplesessionsnotsupportederr.md)
+- [var kLSMultipleSessionsNotSupportedErr: OSStatus](./klsmultiplesessionsnotsupportederr.md)
   The requested app can’t run simultaneously in two different user sessions.
 
 

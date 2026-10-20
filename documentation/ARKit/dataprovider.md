@@ -1,7 +1,8 @@
 # DataProvider
 
 **Framework**: ARKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A source of live data from ARKit.
 
@@ -17,51 +18,52 @@ protocol DataProvider : AnyObject, CustomStringConvertible, Sendable
 
 #### Overview
 
-Most providers supply an asynchronous sequence of updated anchors for the provider’s data type. For example, a [`HandTrackingProvider`](handtrackingprovider.md) instance’s [`anchorUpdates`](handtrackingprovider/anchorupdates.md) property gives updates over time for hand anchors.
+Most providers supply an asynchronous sequence of updated anchors for the provider’s data type. For example, a [`HandTrackingProvider`](./handtrackingprovider.md) instance’s [`anchorUpdates`](./handtrackingprovider/anchorupdates.md) property gives updates over time for hand anchors.
 
 ## Topics
 
 ### Inspecting a data provider
-- [var state: DataProviderState](dataprovider/state.md)
+- [var state: DataProviderState](./dataprovider/state.md)
   The current status of data coming from this provider.
 ### Inspecting a data provider type
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](dataprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./dataprovider/requiredauthorizations.md)
   The kinds of authorization you need to use a particular data provider type.
-- [static var isSupported: Bool](dataprovider/issupported.md)
+- [static var isSupported: Bool](./dataprovider/issupported.md)
   A Boolean value that indicates whether the current runtime environment supports a particular provider type.
 
 ## Relationships
 
 ### Inherits From
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [AccessoryTrackingProvider](accessorytrackingprovider.md)
-- [BarcodeDetectionProvider](barcodedetectionprovider.md)
-- [CameraFrameProvider](cameraframeprovider.md)
-- [CameraRegionProvider](cameraregionprovider.md)
-- [EnvironmentLightEstimationProvider](environmentlightestimationprovider.md)
-- [HandTrackingProvider](handtrackingprovider.md)
-- [ImageTrackingProvider](imagetrackingprovider.md)
-- [ObjectTrackingProvider](objecttrackingprovider.md)
-- [PlaneDetectionProvider](planedetectionprovider.md)
-- [RoomTrackingProvider](roomtrackingprovider.md)
-- [SceneReconstructionProvider](scenereconstructionprovider.md)
-- [SharedCoordinateSpaceProvider](sharedcoordinatespaceprovider.md)
-- [StereoPropertiesProvider](stereopropertiesprovider.md)
-- [VisualFidelityProvider](visualfidelityprovider.md)
-- [WorldTrackingProvider](worldtrackingprovider.md)
+- [AccessoryTrackingProvider](./accessorytrackingprovider.md)
+- [BarcodeDetectionProvider](./barcodedetectionprovider.md)
+- [CameraFrameProvider](./cameraframeprovider.md)
+- [CameraRegionProvider](./cameraregionprovider.md)
+- [EnvironmentLightEstimationProvider](./environmentlightestimationprovider.md)
+- [HandTrackingProvider](./handtrackingprovider.md)
+- [ImageTrackingProvider](./imagetrackingprovider.md)
+- [ObjectTrackingProvider](./objecttrackingprovider.md)
+- [PlaneDetectionProvider](./planedetectionprovider.md)
+- [RoomTrackingProvider](./roomtrackingprovider.md)
+- [SceneReconstructionProvider](./scenereconstructionprovider.md)
+- [SharedCoordinateSpaceProvider](./sharedcoordinatespaceprovider.md)
+- [StereoPropertiesProvider](./stereopropertiesprovider.md)
+- [VisualFidelityProvider](./visualfidelityprovider.md)
+- [WorldTrackingProvider](./worldtrackingprovider.md)
 
 ## See Also
 
-- [Setting up access to ARKit data](../visionos/setting-up-access-to-arkit-data.md)
+### visionOS
+- [Setting up access to ARKit data](../visionOS/setting-up-access-to-arkit-data.md)
   Check whether your app can use ARKit and respect people’s privacy.
-- [class ARKitSession](arkitsession.md)
+- [class ARKitSession](./arkitsession.md)
   The main entry point for receiving data from ARKit.
-- [protocol Anchor](anchor.md)
+- [protocol Anchor](./anchor.md)
   The identity, location, and orientation of an object in world space.
-- [ARKit in visionOS](arkit-in-visionos.md)
+- [ARKit in visionOS](./arkit-in-visionos.md)
   Create immersive augmented reality experiences.
 
 

@@ -1,7 +1,8 @@
 # rect(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an anchor source rect defined by `r` in the current view.
 
@@ -20,9 +21,12 @@ Returns an anchor source rect defined by `r` in the current view.
 static func rect(_ r: CGRect) -> Anchor<Value>.Source
 ```
 
+Available when `Value` is `CGRect`.
+
 ## See Also
 
-- [static var bounds: Anchor<CGRect>.Source](anchor/source/bounds.md)
+### Getting rectangle anchor sources
+- [static var bounds: Anchor<CGRect>.Source](./bounds.md)
   An anchor source rect defined as the entire bounding rect of the current view.
 
 

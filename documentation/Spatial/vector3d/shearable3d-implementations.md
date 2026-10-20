@@ -1,11 +1,12 @@
 # Shearable3D Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func sheared(AxisWithFactors) -> Vector3D](vector3d/sheared(_:).md)
+- [func sheared(AxisWithFactors) -> Vector3D](./sheared%28_%29.md)
   Returns a vector that results from shearing over an axis by shear factors for the other two axes.
 
 

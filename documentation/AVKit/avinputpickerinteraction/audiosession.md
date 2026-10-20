@@ -1,7 +1,8 @@
 # audioSession
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio session for the picker.
 
@@ -14,6 +15,10 @@ The audio session for the picker.
 
 ```swift
 var audioSession: AVAudioSession { get set }
+```
+
+```objc
+@property (nonatomic, strong, nonnull) AVAudioSession * audioSession;
 ```
 
 

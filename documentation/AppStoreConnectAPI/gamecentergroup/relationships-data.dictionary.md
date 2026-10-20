@@ -1,7 +1,8 @@
 # GameCenterGroup.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,35 +11,35 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object GameCenterGroup.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterGroup.Relationships.GameCenterAchievements](gamecentergroup/relationships-data.dictionary/gamecenterachievements-data.dictionary.md)
-- [object GameCenterGroup.Relationships.GameCenterDetails](gamecentergroup/relationships-data.dictionary/gamecenterdetails-data.dictionary.md)
-- [object GameCenterGroup.Relationships.GameCenterLeaderboardSets](gamecentergroup/relationships-data.dictionary/gamecenterleaderboardsets-data.dictionary.md)
-- [object GameCenterGroup.Relationships.GameCenterLeaderboards](gamecentergroup/relationships-data.dictionary/gamecenterleaderboards-data.dictionary.md)
+- [object GameCenterGroup.Relationships.GameCenterAchievements](./relationships-data.dictionary/gamecenterachievements-data.dictionary.md)
+- [object GameCenterGroup.Relationships.GameCenterDetails](./relationships-data.dictionary/gamecenterdetails-data.dictionary.md)
+- [object GameCenterGroup.Relationships.GameCenterLeaderboardSets](./relationships-data.dictionary/gamecenterleaderboardsets-data.dictionary.md)
+- [object GameCenterGroup.Relationships.GameCenterLeaderboards](./relationships-data.dictionary/gamecenterleaderboards-data.dictionary.md)
 ### Dictionaries
-- [object GameCenterGroup.Relationships.GameCenterAchievementsV2](gamecentergroup/relationships-data.dictionary/gamecenterachievementsv2-data.dictionary.md)
+- [object GameCenterGroup.Relationships.GameCenterAchievementsV2](./relationships-data.dictionary/gamecenterachievementsv2-data.dictionary.md)
   The data and links that describe the Game Center achievements of the Game Center group.
-- [object GameCenterGroup.Relationships.GameCenterActivities](gamecentergroup/relationships-data.dictionary/gamecenteractivities-data.dictionary.md)
+- [object GameCenterGroup.Relationships.GameCenterActivities](./relationships-data.dictionary/gamecenteractivities-data.dictionary.md)
   The data and links that describe the Game Center Activities related to a group.
-- [object GameCenterGroup.Relationships.GameCenterChallenges](gamecentergroup/relationships-data.dictionary/gamecenterchallenges-data.dictionary.md)
+- [object GameCenterGroup.Relationships.GameCenterChallenges](./relationships-data.dictionary/gamecenterchallenges-data.dictionary.md)
   The data and links that describe the Game Center Challenges related to a group.
-- [object GameCenterGroup.Relationships.GameCenterLeaderboardSetsV2](gamecentergroup/relationships-data.dictionary/gamecenterleaderboardsetsv2-data.dictionary.md)
+- [object GameCenterGroup.Relationships.GameCenterLeaderboardSetsV2](./relationships-data.dictionary/gamecenterleaderboardsetsv2-data.dictionary.md)
   The data and links that describe the Game Center leaderboard sets of the Game Center group.
-- [object GameCenterGroup.Relationships.GameCenterLeaderboardsV2](gamecentergroup/relationships-data.dictionary/gamecenterleaderboardsv2-data.dictionary.md)
+- [object GameCenterGroup.Relationships.GameCenterLeaderboardsV2](./relationships-data.dictionary/gamecenterleaderboardsv2-data.dictionary.md)
   The data and links that describe the Game Center leaderboards of the Game Center group.
 
 ## Properties
 
-- `gameCenterAchievements` (GameCenterGroup.Relationships.GameCenterAchievements)
+- `gameCenterAchievements` (GameCenterGroup.Relationships.GameCenterAchievements) *(deprecated)*
 - `gameCenterDetails` (GameCenterGroup.Relationships.GameCenterDetails)
-- `gameCenterLeaderboards` (GameCenterGroup.Relationships.GameCenterLeaderboards)
-- `gameCenterLeaderboardSets` (GameCenterGroup.Relationships.GameCenterLeaderboardSets)
+- `gameCenterLeaderboards` (GameCenterGroup.Relationships.GameCenterLeaderboards) *(deprecated)*
+- `gameCenterLeaderboardSets` (GameCenterGroup.Relationships.GameCenterLeaderboardSets) *(deprecated)*
 - `gameCenterAchievementsV2` (GameCenterGroup.Relationships.GameCenterAchievementsV2)
 - `gameCenterActivities` (GameCenterGroup.Relationships.GameCenterActivities)
 - `gameCenterChallenges` (GameCenterGroup.Relationships.GameCenterChallenges)
@@ -47,7 +48,8 @@ object GameCenterGroup.Relationships
 
 ## See Also
 
-- [object GameCenterGroup.Attributes](gamecentergroup/attributes-data.dictionary.md)
+### Objects
+- [object GameCenterGroup.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a group resource.
 
 

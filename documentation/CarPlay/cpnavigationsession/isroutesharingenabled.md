@@ -1,7 +1,8 @@
 # isRouteSharingEnabled
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the vehicle is presently using route data for any features in its built-in navigation system.
 
@@ -14,6 +15,10 @@ Whether the vehicle is presently using route data for any features in its built-
 
 ```swift
 var isRouteSharingEnabled: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isRouteSharingEnabled) BOOL routeSharingEnabled;
 ```
 
 

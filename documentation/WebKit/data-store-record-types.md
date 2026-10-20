@@ -1,41 +1,43 @@
 # Data Store Record Types
 
-**Framework**: WebKit
+**Framework**: WebKit  
+**Role**: API Collection
 
 Explore the constants that identify the types of data that websites store.
 
 #### Overview
 
-A [`WKWebsiteDataRecord`](wkwebsitedatarecord.md) object includes these constants in its [`dataTypes`](wkwebsitedatarecord/datatypes.md) property.
+A [`WKWebsiteDataRecord`](./wkwebsitedatarecord.md) object includes these constants in its [`dataTypes`](./wkwebsitedatarecord/datatypes.md) property.
 
 ## Topics
 
 ### Cookie type
-- [let WKWebsiteDataTypeCookies: String](wkwebsitedatatypecookies.md)
+- [let WKWebsiteDataTypeCookies: String](./wkwebsitedatatypecookies.md)
   Cookies.
 ### Cache types
-- [let WKWebsiteDataTypeMemoryCache: String](wkwebsitedatatypememorycache.md)
+- [let WKWebsiteDataTypeMemoryCache: String](./wkwebsitedatatypememorycache.md)
   In-memory caches.
-- [let WKWebsiteDataTypeDiskCache: String](wkwebsitedatatypediskcache.md)
+- [let WKWebsiteDataTypeDiskCache: String](./wkwebsitedatatypediskcache.md)
   On-disk caches.
-- [let WKWebsiteDataTypeOfflineWebApplicationCache: String](wkwebsitedatatypeofflinewebapplicationcache.md)
+- [let WKWebsiteDataTypeOfflineWebApplicationCache: String](./wkwebsitedatatypeofflinewebapplicationcache.md)
   HTML offline web app caches.
 ### Storage types
-- [let WKWebsiteDataTypeLocalStorage: String](wkwebsitedatatypelocalstorage.md)
+- [let WKWebsiteDataTypeLocalStorage: String](./wkwebsitedatatypelocalstorage.md)
   HTML local storage.
-- [let WKWebsiteDataTypeSessionStorage: String](wkwebsitedatatypesessionstorage.md)
+- [let WKWebsiteDataTypeSessionStorage: String](./wkwebsitedatatypesessionstorage.md)
   HTML session storage.
 ### Database types
-- [let WKWebsiteDataTypeWebSQLDatabases: String](wkwebsitedatatypewebsqldatabases.md)
+- [let WKWebsiteDataTypeWebSQLDatabases: String](./wkwebsitedatatypewebsqldatabases.md)
   WebSQL databases.
-- [let WKWebsiteDataTypeIndexedDBDatabases: String](wkwebsitedatatypeindexeddbdatabases.md)
+- [let WKWebsiteDataTypeIndexedDBDatabases: String](./wkwebsitedatatypeindexeddbdatabases.md)
   IndexedDB databases.
 ### Screen time type
-- [let WKWebsiteDataTypeScreenTime: String](wkwebsitedatatypescreentime.md)
+- [let WKWebsiteDataTypeScreenTime: String](./wkwebsitedatatypescreentime.md)
 
 ## See Also
 
-- [var dataTypes: Set<String>](wkwebsitedatarecord/datatypes.md)
+### Getting the Data Type
+- [var dataTypes: Set<String>](./wkwebsitedatarecord/datatypes.md)
   The types of data associated with the record.
 
 

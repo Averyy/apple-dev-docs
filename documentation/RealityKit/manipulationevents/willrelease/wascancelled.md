@@ -1,7 +1,8 @@
 # wasCancelled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the release was caused by a cancelled interaction.
 

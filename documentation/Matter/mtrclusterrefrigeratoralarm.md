@@ -1,7 +1,8 @@
 # MTRClusterRefrigeratorAlarm
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Cluster Refrigerator Alarm Attributes and commands for configuring the Refrigerator alarm.
 
@@ -20,32 +21,36 @@ Cluster Refrigerator Alarm Attributes and commands for configuring the Refrigera
 class MTRClusterRefrigeratorAlarm
 ```
 
+```objc
+@interface MTRClusterRefrigeratorAlarm : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterrefrigeratoralarm/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusterrefrigeratoralarm/init%28device,endpointid,queue%29.md)
   The queue is currently unused, but may be used in the future for calling completions for command invocations if commands are added to this cluster.
 ### Instance Methods
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterrefrigeratoralarm/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterrefrigeratoralarm/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterrefrigeratoralarm/readattributeclusterrevision(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterrefrigeratoralarm/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterrefrigeratoralarm/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeMask(with: MTRReadParams?) -> [String : Any]?](mtrclusterrefrigeratoralarm/readattributemask(with:).md)
-- [func readAttributeState(with: MTRReadParams?) -> [String : Any]?](mtrclusterrefrigeratoralarm/readattributestate(with:).md)
-- [func readAttributeSupported(with: MTRReadParams?) -> [String : Any]?](mtrclusterrefrigeratoralarm/readattributesupported(with:).md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrefrigeratoralarm/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrefrigeratoralarm/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrefrigeratoralarm/readattributeclusterrevision%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrefrigeratoralarm/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrefrigeratoralarm/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeMask(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrefrigeratoralarm/readattributemask%28with%29.md)
+- [func readAttributeState(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrefrigeratoralarm/readattributestate%28with%29.md)
+- [func readAttributeSupported(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrefrigeratoralarm/readattributesupported%28with%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

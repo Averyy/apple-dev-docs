@@ -1,7 +1,8 @@
 # USDTransformOperation.Kind.rotateZYX
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Euler rotation with ZYX order.
 

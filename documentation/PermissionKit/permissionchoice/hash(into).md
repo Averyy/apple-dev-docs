@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: PermissionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a hash operation on the value by feeding its hash values into the given hasher.
 
@@ -24,7 +25,8 @@ func hash(into hasher: inout Hasher)
 
 ## See Also
 
-- [static func == (PermissionChoice, PermissionChoice) -> Bool](permissionchoice/==(_:_:).md)
+### Computing hashes
+- [static func == (PermissionChoice, PermissionChoice) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
 
 

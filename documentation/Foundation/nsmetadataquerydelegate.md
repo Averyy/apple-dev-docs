@@ -1,7 +1,8 @@
 # NSMetadataQueryDelegate
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that enables the delegate of a metadata query to provide substitute results or attributes.
 
@@ -20,24 +21,29 @@ An interface that enables the delegate of a metadata query to provide substitute
 protocol NSMetadataQueryDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSMetadataQueryDelegate <NSObject>
+```
+
 ## Topics
 
 ### Getting Query Results
-- [func metadataQuery(NSMetadataQuery, replacementObjectForResultObject: NSMetadataItem) -> Any](nsmetadataquerydelegate/metadataquery(_:replacementobjectforresultobject:).md)
+- [func metadataQuery(NSMetadataQuery, replacementObjectForResultObject: NSMetadataItem) -> Any](./nsmetadataquerydelegate/metadataquery%28_,replacementobjectforresultobject%29.md)
   Returns a different object for a given query result object.
-- [func metadataQuery(NSMetadataQuery, replacementValueForAttribute: String, value: Any) -> Any](nsmetadataquerydelegate/metadataquery(_:replacementvalueforattribute:value:).md)
+- [func metadataQuery(NSMetadataQuery, replacementValueForAttribute: String, value: Any) -> Any](./nsmetadataquerydelegate/metadataquery%28_,replacementvalueforattribute,value%29.md)
   Returns a different value for a given attribute and value.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSMetadataQuery](nsmetadataquery.md)
+### File Search
+- [class NSMetadataQuery](./nsmetadataquery.md)
   A query that you perform against Spotlight metadata.
-- [class NSMetadataItem](nsmetadataitem.md)
+- [class NSMetadataItem](./nsmetadataitem.md)
   The metadata associated with a file.
 
 

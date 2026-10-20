@@ -1,7 +1,8 @@
 # NetworkMetadataProtocol
 
 **Framework**: Network  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Types that conform to NetworkProtocolOptions can be used when configuring protocol stacks.
 

@@ -1,7 +1,8 @@
 # failureWhileWaiting
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A code that represents a test failure the test encountered while waiting to fulfill expectations.
 
@@ -13,9 +14,10 @@ static var failureWhileWaiting: XCTestError.Code { get }
 
 ## See Also
 
-- [static var timeoutWhileWaiting: XCTestError.Code](xctesterror/timeoutwhilewaiting.md)
+### Classifying Errors with Codes
+- [static var timeoutWhileWaiting: XCTestError.Code](./timeoutwhilewaiting.md)
   A code that represents a timeout the test encountered while waiting to fulfill expectations.
-- [XCTestError.Code](xctesterror/code.md)
+- [XCTestError.Code](./code.md)
   Error codes for errors that can occur while the test is waiting to fulfill expectations.
 
 

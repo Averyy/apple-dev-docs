@@ -1,7 +1,8 @@
 # kCGImagePropertyJFIFYDensity
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The y pixel density.
 
@@ -20,13 +21,18 @@ The y pixel density.
 let kCGImagePropertyJFIFYDensity: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyJFIFYDensity;
+```
+
 ## See Also
 
-- [let kCGImagePropertyJFIFXDensity: CFString](kcgimagepropertyjfifxdensity.md)
+### Quality Information
+- [let kCGImagePropertyJFIFXDensity: CFString](./kcgimagepropertyjfifxdensity.md)
   The x pixel density.
-- [let kCGImagePropertyJFIFDensityUnit: CFString](kcgimagepropertyjfifdensityunit.md)
+- [let kCGImagePropertyJFIFDensityUnit: CFString](./kcgimagepropertyjfifdensityunit.md)
   The units for the x and y density fields.
-- [let kCGImagePropertyJFIFIsProgressive: CFString](kcgimagepropertyjfifisprogressive.md)
+- [let kCGImagePropertyJFIFIsProgressive: CFString](./kcgimagepropertyjfifisprogressive.md)
   Whether there are versions of the image of increasing quality.
 
 

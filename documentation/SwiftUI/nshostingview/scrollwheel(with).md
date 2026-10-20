@@ -1,7 +1,8 @@
 # scrollWheel(with:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
@@ -15,8 +16,9 @@
 
 ## See Also
 
-- [func magnify(with: NSEvent)](nshostingview/magnify(with:).md)
-- [func rotate(with: NSEvent)](nshostingview/rotate(with:).md)
+### Responding to gestures
+- [func magnify(with: NSEvent)](./magnify%28with%29.md)
+- [func rotate(with: NSEvent)](./rotate%28with%29.md)
 
 
 ---

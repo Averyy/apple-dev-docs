@@ -1,7 +1,8 @@
 # CTRubyPosition.count
 
 **Framework**: Core Text  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that accounts for all ruby positions during ruby annotation creation.
 
@@ -20,19 +21,24 @@ A constant that accounts for all ruby positions during ruby annotation creation.
 case count
 ```
 
+```c
+kCTRubyPositionCount
+```
+
 #### Discussion
 
-When you create a ruby annotation using [`CTRubyAnnotationCreate(_:_:_:_:)`](ctrubyannotationcreate(_:_:_:_:).md), use this constant to allocate an array of [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) texts that contains a sufficient number of elements for each [`CTRubyPosition`](ctrubyposition.md).
+When you create a ruby annotation using [`CTRubyAnnotationCreate(_:_:_:_:)`](../ctrubyannotationcreate%28_,_,_,_%29.md), use this constant to allocate an array of [`CFString`](../../CoreFoundation/cfstring.md) texts that contains a sufficient number of elements for each [`CTRubyPosition`](../ctrubyposition.md).
 
 ## See Also
 
-- [CTRubyPosition.before](ctrubyposition/before.md)
+### Constants
+- [CTRubyPosition.before](./before.md)
   The ruby text is positioned before the base text, appearing above horizontal text and to the right of vertical text.
-- [CTRubyPosition.after](ctrubyposition/after.md)
+- [CTRubyPosition.after](./after.md)
   The ruby text is positioned after the base text, appearing below horizontal text and to the left of vertical text.
-- [CTRubyPosition.interCharacter](ctrubyposition/intercharacter.md)
+- [CTRubyPosition.interCharacter](./intercharacter.md)
   The ruby text is positioned to the right of the base text, regardless of whether it’s horizontal or vertical.
-- [CTRubyPosition.inline](ctrubyposition/inline.md)
+- [CTRubyPosition.inline](./inline.md)
   The ruby text follows the base text with no special styling.
 
 

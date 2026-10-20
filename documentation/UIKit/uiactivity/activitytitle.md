@@ -1,7 +1,8 @@
 # activityTitle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A user-readable string that describes the service.
 
@@ -17,6 +18,10 @@ A user-readable string that describes the service.
 var activityTitle: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * activityTitle;
+```
+
 #### Return Value
 
 A string that describes the service.
@@ -27,15 +32,16 @@ The default value is `nil`. Subclasses must override this property to return a u
 
 ## See Also
 
-- [class var activityCategory: UIActivity.Category](uiactivity/activitycategory.md)
+### Getting the activity information
+- [class var activityCategory: UIActivity.Category](./activitycategory.md)
   The category of the activity, which may be used to group activities in the UI.
-- [UIActivity.Category](uiactivity/category.md)
+- [UIActivity.Category](./category.md)
   An enumeration that defines categories of activities.
-- [var activityType: UIActivity.ActivityType?](uiactivity/activitytype-swift.property.md)
+- [var activityType: UIActivity.ActivityType?](./activitytype-swift.property.md)
   The type of service being provided.
-- [UIActivity.ActivityType](uiactivity/activitytype-swift.struct.md)
+- [UIActivity.ActivityType](./activitytype-swift.struct.md)
   A structure that describes the types of activities for which the system has built-in support.
-- [var activityImage: UIImage?](uiactivity/activityimage.md)
+- [var activityImage: UIImage?](./activityimage.md)
   An image that identifies the service to the user.
 
 

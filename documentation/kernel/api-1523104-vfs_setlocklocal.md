@@ -1,7 +1,8 @@
 # vfs_setlocklocal
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Mark a filesystem as using VFS-level advisory locking support.
 
@@ -10,11 +11,11 @@ Mark a filesystem as using VFS-level advisory locking support.
 
 ## Declaration
 
-```swift
+```c
 void vfs_setlocklocal(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 void.
 

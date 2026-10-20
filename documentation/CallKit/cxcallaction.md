@@ -1,7 +1,8 @@
 # CXCallAction
 
 **Framework**: CallKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A programmatic interface for objects that represent a telephony action associated with a call object.
 
@@ -18,75 +19,80 @@ A programmatic interface for objects that represent a telephony action associate
 class CXCallAction
 ```
 
+```objc
+@interface CXCallAction : CXAction
+```
+
 #### Overview
 
-The CallKit framework provides the following concrete [`CXCallAction`](cxcallaction.md) subclasses.
+The CallKit framework provides the following concrete [`CXCallAction`](./cxcallaction.md) subclasses.
 
 | CXCallAction subclass | Description |
 | --- | --- |
-| [`CXAnswerCallAction`](cxanswercallaction.md) | Answers an incoming call. |
-| [`CXStartCallAction`](cxstartcallaction.md) | Initiates an outgoing call. |
-| [`CXEndCallAction`](cxendcallaction.md) | Ends a call. |
-| [`CXSetHeldCallAction`](cxsetheldcallaction.md) | Places a call on hold or removes a call from hold. |
-| [`CXSetGroupCallAction`](cxsetgroupcallaction.md) | Groups a call with another call or removes a call from a group. |
-| [`CXSetMutedCallAction`](cxsetmutedcallaction.md) | Mutes or unmutes a call. |
-| [`CXSetTranslatingCallAction`](cxsettranslatingcallaction.md) | Starts or stops call translation. |
-| [`CXPlayDTMFCallAction`](cxplaydtmfcallaction.md) | Plays a DTMF (dual tone multifrequency) tone sequence on a call. |
+| [`CXAnswerCallAction`](./cxanswercallaction.md) | Answers an incoming call. |
+| [`CXStartCallAction`](./cxstartcallaction.md) | Initiates an outgoing call. |
+| [`CXEndCallAction`](./cxendcallaction.md) | Ends a call. |
+| [`CXSetHeldCallAction`](./cxsetheldcallaction.md) | Places a call on hold or removes a call from hold. |
+| [`CXSetGroupCallAction`](./cxsetgroupcallaction.md) | Groups a call with another call or removes a call from a group. |
+| [`CXSetMutedCallAction`](./cxsetmutedcallaction.md) | Mutes or unmutes a call. |
+| [`CXSetTranslatingCallAction`](./cxsettranslatingcallaction.md) | Starts or stops call translation. |
+| [`CXPlayDTMFCallAction`](./cxplaydtmfcallaction.md) | Plays a DTMF (dual tone multifrequency) tone sequence on a call. |
 
-To perform one or more actions, you add them to a new [`CXTransaction`](cxtransaction.md) object and pass the transaction to an instance of [`CXCallController`](cxcallcontroller.md) using the [`request(_:completion:)`](cxcallcontroller/request(_:completion:).md) method. After each action is performed by the telephony provider, the provider’s delegate calls either the [`fulfill()`](cxaction/fulfill().md) method, indicating that the action was successfully performed, or the [`fail()`](cxaction/fail().md) method, to indicate that an error occurred; both of these methods set the [`isComplete`](cxaction/iscomplete.md) property of the action to [`true`](https://developer.apple.com/documentation/swift/true).
+To perform one or more actions, you add them to a new [`CXTransaction`](./cxtransaction.md) object and pass the transaction to an instance of [`CXCallController`](./cxcallcontroller.md) using the [`request(_:completion:)`](./cxcallcontroller/request%28_,completion%29.md) method. After each action is performed by the telephony provider, the provider’s delegate calls either the [`fulfill()`](./cxaction/fulfill%28%29.md) method, indicating that the action was successfully performed, or the [`fail()`](./cxaction/fail%28%29.md) method, to indicate that an error occurred; both of these methods set the [`isComplete`](./cxaction/iscomplete.md) property of the action to [`true`](../Swift/true.md).
 
 ## Topics
 
 ### Creating New Call Actions
-- [init(call: UUID)](cxcallaction/init(call:).md)
+- [init(call: UUID)](./cxcallaction/init%28call%29.md)
   Initializes a new action for a call identified by a given UUID.
-- [init?(coder: NSCoder)](cxcallaction/init(coder:).md)
+- [init?(coder: NSCoder)](./cxcallaction/init%28coder%29.md)
   Creates a new action for a call with data in an unarchiver.
 ### Accessing Call Action Attributes
-- [var callUUID: UUID](cxcallaction/calluuid.md)
+- [var callUUID: UUID](./cxcallaction/calluuid.md)
   The unique identifier for the call associated with the action.
 ### Initializers
-- [init(callUUID: UUID)](cxcallaction/init(calluuid:).md)
+- [init(callUUID: UUID)](./cxcallaction/init%28calluuid%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [CXAction](cxaction.md)
+- [CXAction](./cxaction.md)
 ### Inherited By
-- [CXAnswerCallAction](cxanswercallaction.md)
-- [CXEndCallAction](cxendcallaction.md)
-- [CXPlayDTMFCallAction](cxplaydtmfcallaction.md)
-- [CXSetGroupCallAction](cxsetgroupcallaction.md)
-- [CXSetHeldCallAction](cxsetheldcallaction.md)
-- [CXSetMutedCallAction](cxsetmutedcallaction.md)
-- [CXSetTranslatingCallAction](cxsettranslatingcallaction.md)
-- [CXStartCallAction](cxstartcallaction.md)
+- [CXAnswerCallAction](./cxanswercallaction.md)
+- [CXEndCallAction](./cxendcallaction.md)
+- [CXPlayDTMFCallAction](./cxplaydtmfcallaction.md)
+- [CXSetGroupCallAction](./cxsetgroupcallaction.md)
+- [CXSetHeldCallAction](./cxsetheldcallaction.md)
+- [CXSetMutedCallAction](./cxsetmutedcallaction.md)
+- [CXSetTranslatingCallAction](./cxsettranslatingcallaction.md)
+- [CXStartCallAction](./cxstartcallaction.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class CXAction](cxaction.md)
+### Call-related actions
+- [class CXAction](./cxaction.md)
   An abstract class that declares a programmatic interface for objects that represent a telephony action.
-- [class CXEndCallAction](cxendcallaction.md)
+- [class CXEndCallAction](./cxendcallaction.md)
   An encapsulation of the act of ending a call.
-- [class CXPlayDTMFCallAction](cxplaydtmfcallaction.md)
+- [class CXPlayDTMFCallAction](./cxplaydtmfcallaction.md)
   An encapsulation of the act of playing a dual tone multifrequency (DTMF) sequence.
-- [class CXSetGroupCallAction](cxsetgroupcallaction.md)
+- [class CXSetGroupCallAction](./cxsetgroupcallaction.md)
   An encapsulation of the act of grouping or ungrouping calls.
-- [class CXSetHeldCallAction](cxsetheldcallaction.md)
+- [class CXSetHeldCallAction](./cxsetheldcallaction.md)
   An encapsulation of the act of placing a call on hold or removing a call from hold.
-- [class CXSetMutedCallAction](cxsetmutedcallaction.md)
+- [class CXSetMutedCallAction](./cxsetmutedcallaction.md)
   An encapsulation of the act of muting or unmuting a call.
-- [class CXSetTranslatingCallAction](cxsettranslatingcallaction.md)
+- [class CXSetTranslatingCallAction](./cxsettranslatingcallaction.md)
   An encapsulation of the act of translating a call.
 
 

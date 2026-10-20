@@ -1,7 +1,8 @@
 # StringUserIdentity
 
 **Framework**: Assignables  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A user identity defined by a string.
 
@@ -9,7 +10,7 @@ A user identity defined by a string.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,40 +21,41 @@ struct StringUserIdentity
 ## Topics
 
 ### Creating a user identity
-- [init(value: String)](stringuseridentity/init(value:).md)
+- [init(value: String)](./stringuseridentity/init%28value%29.md)
   Initializes a `StringUserIdentity` with the given string value.
 ### Inspecting an identity
-- [var stringRepresentation: String](stringuseridentity/stringrepresentation.md)
+- [var stringRepresentation: String](./stringuseridentity/stringrepresentation.md)
   String representation of this user identity for display or debugging purposes.
-- [var typeID: String](stringuseridentity/typeid-swift.property.md)
+- [var typeID: String](./stringuseridentity/typeid-swift.property.md)
   A unique type identifier for this user identity.
-- [static var typeID: String](stringuseridentity/typeid-swift.type.property.md)
+- [static var typeID: String](./stringuseridentity/typeid-swift.type.property.md)
   A unique type identifier for this user identity.
-- [var value: String](stringuseridentity/value.md)
+- [var value: String](./stringuseridentity/value.md)
   The value of the string to contain in this user identity.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UserIdentity](useridentity.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UserIdentity](./useridentity.md)
 
 ## See Also
 
-- [protocol UserIdentity](useridentity.md)
+### Identity
+- [protocol UserIdentity](./useridentity.md)
   Types conforming to this protocol can act as user identities for editors of a document.
-- [struct AnonymousUserIdentity](anonymoususeridentity.md)
+- [struct AnonymousUserIdentity](./anonymoususeridentity.md)
   A user identity for unknown editors.
-- [struct AnyUserIdentity](anyuseridentity.md)
+- [struct AnyUserIdentity](./anyuseridentity.md)
   A user identity that performs type erasure by wrapping another user identity.
-- [class UserIdentityTypeRegistry](useridentitytyperegistry.md)
-  A registry for user identity types. Assignable documents and document elements store user identity data as `Data` objects. In order for that data to be deserialized, the type to deserialize it as needs to be known to [`UserIdentityTypeRegistry`](useridentitytyperegistry.md). Without registration of the user identity, custom types won’t be deserializable.
-- [enum UserIdentityFactory](useridentityfactory.md)
+- [class UserIdentityTypeRegistry](./useridentitytyperegistry.md)
+  A registry for user identity types. Assignable documents and document elements store user identity data as `Data` objects. In order for that data to be deserialized, the type to deserialize it as needs to be known to [`UserIdentityTypeRegistry`](./useridentitytyperegistry.md). Without registration of the user identity, custom types won’t be deserializable.
+- [enum UserIdentityFactory](./useridentityfactory.md)
   A type that contains helpers for creating user identity objects.
 
 

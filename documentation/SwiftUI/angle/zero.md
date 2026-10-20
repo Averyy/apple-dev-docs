@@ -1,7 +1,8 @@
 # zero
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,8 +21,9 @@ static var zero: Angle { get }
 
 ## See Also
 
-- [static func degrees(Double) -> Angle](angle/degrees(_:).md)
-- [static func radians(Double) -> Angle](angle/radians(_:).md)
+### Getting constant angles
+- [static func degrees(Double) -> Angle](./degrees%28_%29.md)
+- [static func radians(Double) -> Angle](./radians%28_%29.md)
 
 
 ---

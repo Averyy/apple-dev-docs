@@ -1,7 +1,8 @@
 # NWProtocolUDP.Options
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container of options for configuring how UDP is used on a connection.
 
@@ -23,22 +24,23 @@ class Options
 ## Topics
 
 ### Customizing UDP Connections
-- [init()](nwprotocoludp/options/init.md)
+- [init()](./options/init%28%29.md)
   Initializes a default set of UDP connection options.
-- [var preferNoChecksum: Bool](nwprotocoludp/options/prefernochecksum.md)
+- [var preferNoChecksum: Bool](./options/prefernochecksum.md)
   A Boolean that configures the connection to not send UDP checksums.
 
 ## Relationships
 
 ### Inherits From
-- [NWProtocolOptions](nwprotocoloptions.md)
+- [NWProtocolOptions](../nwprotocoloptions.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static let definition: NWProtocolDefinition](nwprotocoludp/definition.md)
+### Creating UDP Connections
+- [static let definition: NWProtocolDefinition](./definition.md)
   The system definition of the User Datagram Protocol.
 
 

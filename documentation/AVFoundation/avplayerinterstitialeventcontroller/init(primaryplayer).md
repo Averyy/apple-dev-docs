@@ -1,7 +1,8 @@
 # init(primaryPlayer:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an event controller with a player item.
 
@@ -18,6 +19,10 @@ Creates an event controller with a player item.
 
 ```swift
 init(primaryPlayer: AVPlayer)
+```
+
+```objc
+- (instancetype) initWithPrimaryPlayer:(AVPlayer *) primaryPlayer;
 ```
 
 ## Parameters

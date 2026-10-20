@@ -1,7 +1,8 @@
 # startDiagnostics(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func startDiagnostics(completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func startDiagnostics() async throws
+```
+
+```objc
+- (void) startDiagnosticsWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

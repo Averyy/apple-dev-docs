@@ -1,7 +1,8 @@
 # shuffle()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Shuffles the collection in place.
 
@@ -20,6 +21,8 @@ Shuffles the collection in place.
 mutating func shuffle()
 ```
 
+Available when `Self` conforms to `RandomAccessCollection`.
+
 #### Discussion
 
 Use the `shuffle()` method to randomly reorder the elements of an array.
@@ -32,7 +35,7 @@ names.shuffle()
 
 This method is equivalent to calling `shuffle(using:)`, passing in the system’s default random generator.
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 
 ---

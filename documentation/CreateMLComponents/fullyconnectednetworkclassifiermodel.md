@@ -1,7 +1,8 @@
 # FullyConnectedNetworkClassifierModel
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A classifier model that uses a fully connected network.
 
@@ -23,44 +24,45 @@ struct FullyConnectedNetworkClassifierModel<Scalar, Label> where Scalar : MLShap
 ## Topics
 
 ### Applying a classification
-- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> ClassificationDistribution<Label>](fullyconnectednetworkclassifiermodel/applied(to:eventhandler:).md)
+- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> ClassificationDistribution<Label>](./fullyconnectednetworkclassifiermodel/applied%28to,eventhandler%29.md)
   Performs a classification on a shaped array.
 
 ## Relationships
 
 ### Conforms To
-- [Classifier](classifier.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [Transformer](transformer.md)
+- [Classifier](./classifier.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Escapable](../Swift/escapable.md)
+- [Transformer](./transformer.md)
 
 ## See Also
 
-- [protocol Classifier](classifier.md)
+### Classifiers
+- [protocol Classifier](./classifier.md)
   An estimator that predicts classification probabilities.
-- [struct LogisticRegressionClassifier](logisticregressionclassifier.md)
+- [struct LogisticRegressionClassifier](./logisticregressionclassifier.md)
   A logistic regression classifier.
-- [struct LogisticRegressionClassifierModel](logisticregressionclassifiermodel.md)
+- [struct LogisticRegressionClassifierModel](./logisticregressionclassifiermodel.md)
   A trained logistic regression classifier model.
-- [struct BoostedTreeClassifier](boostedtreeclassifier.md)
+- [struct BoostedTreeClassifier](./boostedtreeclassifier.md)
   A gradient boosted decision tree classifier.
-- [struct BoostedTreeConfiguration](boostedtreeconfiguration.md)
+- [struct BoostedTreeConfiguration](./boostedtreeconfiguration.md)
   A boosted tree configuration.
-- [struct FullyConnectedNetworkClassifier](fullyconnectednetworkclassifier.md)
+- [struct FullyConnectedNetworkClassifier](./fullyconnectednetworkclassifier.md)
   A classifier that uses a fully connected network.
-- [struct FullyConnectedNetworkMultiLabelClassifier](fullyconnectednetworkmultilabelclassifier.md)
+- [struct FullyConnectedNetworkMultiLabelClassifier](./fullyconnectednetworkmultilabelclassifier.md)
   A classifier that uses a multi-label fully-connected network.
-- [struct FullyConnectedNetworkMultiLabelClassifierModel](fullyconnectednetworkmultilabelclassifiermodel.md)
+- [struct FullyConnectedNetworkMultiLabelClassifierModel](./fullyconnectednetworkmultilabelclassifiermodel.md)
   A multi-label classifier model that uses a fully-connected network.
-- [struct FullyConnectedNetworkConfiguration](fullyconnectednetworkconfiguration.md)
+- [struct FullyConnectedNetworkConfiguration](./fullyconnectednetworkconfiguration.md)
   A fully connected network configuration.
-- [struct TreeClassifierModel](treeclassifiermodel.md)
+- [struct TreeClassifierModel](./treeclassifiermodel.md)
   A trained tree classifier model.
-- [struct TimeSeriesClassifier](timeseriesclassifier.md)
-- [struct TimeSeriesClassifierConfiguration](timeseriesclassifierconfiguration.md)
+- [struct TimeSeriesClassifier](./timeseriesclassifier.md)
+- [struct TimeSeriesClassifierConfiguration](./timeseriesclassifierconfiguration.md)
   The configuration for a time-series classifier.
 
 

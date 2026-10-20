@@ -1,7 +1,8 @@
 # AVCaption.TextCombine.all
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that combines all of the characters.
 
@@ -17,17 +18,22 @@ An option that combines all of the characters.
 case all
 ```
 
+```c
+AVCaptionTextCombineAll
+```
+
 ## See Also
 
-- [AVCaption.TextCombine.none](avcaption/textcombine/none.md)
+### Text combine options
+- [AVCaption.TextCombine.none](./none.md)
   An option that doesn’t combine text upright.
-- [AVCaption.TextCombine.oneDigit](avcaption/textcombine/onedigit.md)
+- [AVCaption.TextCombine.oneDigit](./onedigit.md)
   An option that makes one digit upright.
-- [AVCaption.TextCombine.twoDigits](avcaption/textcombine/twodigits.md)
+- [AVCaption.TextCombine.twoDigits](./twodigits.md)
   An option that combines two consecutive digits.
-- [AVCaption.TextCombine.threeDigits](avcaption/textcombine/threedigits.md)
+- [AVCaption.TextCombine.threeDigits](./threedigits.md)
   An option that combines three consecutive digits.
-- [AVCaption.TextCombine.fourDigits](avcaption/textcombine/fourdigits.md)
+- [AVCaption.TextCombine.fourDigits](./fourdigits.md)
   An option that combines four consecutive digits.
 
 

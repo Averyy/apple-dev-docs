@@ -1,7 +1,8 @@
 # token(byAddingParameterAutomationObserver:)
 
 **Framework**: Audio Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 10.0+
@@ -17,13 +18,18 @@
 func token(byAddingParameterAutomationObserver observer: @escaping AUParameterAutomationObserver) -> AUParameterObserverToken
 ```
 
+```objc
+- (AUParameterObserverToken) tokenByAddingParameterAutomationObserver:(AUParameterAutomationObserver) observer;
+```
+
 ## See Also
 
-- [func token(byAddingParameterObserver: AUParameterObserver) -> AUParameterObserverToken](auparameternode/token(byaddingparameterobserver:).md)
+### Observers
+- [func token(byAddingParameterObserver: AUParameterObserver) -> AUParameterObserverToken](./token%28byaddingparameterobserver%29.md)
   Adds an observer for a single parameter or all parameters in a group.
-- [func token(byAddingParameterRecordingObserver: AUParameterRecordingObserver) -> AUParameterObserverToken](auparameternode/token(byaddingparameterrecordingobserver:).md)
+- [func token(byAddingParameterRecordingObserver: AUParameterRecordingObserver) -> AUParameterObserverToken](./token%28byaddingparameterrecordingobserver%29.md)
   Adds a recording observer for a single parameter or all parameters in a group.
-- [func removeParameterObserver(AUParameterObserverToken)](auparameternode/removeparameterobserver(_:).md)
+- [func removeParameterObserver(AUParameterObserverToken)](./removeparameterobserver%28_%29.md)
   Remove a specific parameter observer.
 
 

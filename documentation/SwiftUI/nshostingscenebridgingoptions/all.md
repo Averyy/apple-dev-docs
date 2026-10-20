@@ -1,7 +1,8 @@
 # all
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The hosting view’s associated window will have both its title bars and toolbars populated with values from their respective modifiers.
 
@@ -16,9 +17,10 @@ static let all: NSHostingSceneBridgingOptions
 
 ## See Also
 
-- [static let title: NSHostingSceneBridgingOptions](nshostingscenebridgingoptions/title.md)
+### Geting bridging options
+- [static let title: NSHostingSceneBridgingOptions](./title.md)
   The hosting view’s associated window will have its title and subtitle populated with the values provided to the `navigationTitle(_:)` and `navigationSubtitle(_:)` modifiers, respectively.
-- [static let toolbars: NSHostingSceneBridgingOptions](nshostingscenebridgingoptions/toolbars.md)
+- [static let toolbars: NSHostingSceneBridgingOptions](./toolbars.md)
   The hosting view’s associated window will have its toolbar populated with any items provided to the `toolbar(content:)` modifier.
 
 

@@ -1,7 +1,8 @@
 # freeBlocks
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for the number of free blocks in the volume.
 
@@ -12,6 +13,10 @@ A property for the number of free blocks in the volume.
 
 ```swift
 var freeBlocks: UInt64 { get set }
+```
+
+```objc
+@property uint64_t freeBlocks;
 ```
 
 

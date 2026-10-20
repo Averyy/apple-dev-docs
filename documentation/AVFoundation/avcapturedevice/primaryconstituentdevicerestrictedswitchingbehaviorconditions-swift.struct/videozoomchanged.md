@@ -1,7 +1,8 @@
 # videoZoomChanged
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Restrict switching to a fallback camera only when the device’s video zoom changes.
 
@@ -18,17 +19,22 @@ Restrict switching to a fallback camera only when the device’s video zoom chan
 static var videoZoomChanged: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions { get }
 ```
 
+```c
+AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditionVideoZoomChanged
+```
+
 #### Discussion
 
-This condition switches cameras when the video zoom factor changes, either by setting a value for the device’s [`videoZoomFactor`](avcapturedevice/videozoomfactor.md) property or calling its [`ramp(toVideoZoomFactor:withRate:)`](avcapturedevice/ramp(tovideozoomfactor:withrate:).md) method.
+This condition switches cameras when the video zoom factor changes, either by setting a value for the device’s [`videoZoomFactor`](../videozoomfactor.md) property or calling its [`ramp(toVideoZoomFactor:withRate:)`](../ramp%28tovideozoomfactor,withrate%29.md) method.
 
 > **Note**:  All changes to video zoom factor allow switching to a fallback camera, not only those changes across switch-over zoom factors.
 
 ## See Also
 
-- [static var exposureModeChanged: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](avcapturedevice/primaryconstituentdevicerestrictedswitchingbehaviorconditions-swift.struct/exposuremodechanged.md)
+### Switching behavior conditions
+- [static var exposureModeChanged: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](./exposuremodechanged.md)
   Restrict switching to a fallback camera only when the device’s exposure mode changes.
-- [static var focusModeChanged: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](avcapturedevice/primaryconstituentdevicerestrictedswitchingbehaviorconditions-swift.struct/focusmodechanged.md)
+- [static var focusModeChanged: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](./focusmodechanged.md)
   Restrict switching to a fallback camera only when the device’s focus mode changes.
 
 

@@ -1,7 +1,8 @@
 # highlightGroups
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 An array of highlight groups, with each group containing a list of highlights.
 
@@ -10,7 +11,7 @@ An array of highlight groups, with each group containing a list of highlights.
 
 ## Declaration
 
-```swift
+```
 attribute Array highlightGroups;
 ```
 
@@ -18,7 +19,7 @@ attribute Array highlightGroups;
 
 The `highlightGroups` property enables you to show several groups of highlights from a stream. Each highlight group in the array contains a list of highlights. Each highlight is an object with the following properties: `description`, `duration`, `imageURL`, `name`, and `starttime`. Highlight objects are ad-hoc JSON objects and there are no explicit classes for these types.
 
-A good way to envision how the `highlightGroups` property works is to think of a video of a baseball game. During the game, several home runs are hit. You can create a highlight group containing the video for each of these highlights and put the highlight group into the `highlightGroups` property. [`Listing 1`](mediaitem/1627413-highlightgroups#1943542.md) shows a complete example of how to set up a highlight group.
+A good way to envision how the `highlightGroups` property works is to think of a video of a baseball game. During the game, several home runs are hit. You can create a highlight group containing the video for each of these highlights and put the highlight group into the `highlightGroups` property. [Listing 1](./api-1627413-highlightgroups.md#1943542) shows a complete example of how to set up a highlight group.
 
 ```javascript
 var baseURL;
@@ -64,9 +65,10 @@ App.onExit = function() {
 
 ## See Also
 
-- [interstitials](mediaitem/1627341-interstitials.md)
+### Setting Timing Options
+- [interstitials](./api-1627341-interstitials.md)
   An array of `interstitial` objects.
-- [resumeTime](mediaitem/1627400-resumetime.md)
+- [resumeTime](./api-1627400-resumetime.md)
   The number of seconds from the beginning of the item at which the item begins playing.
 
 

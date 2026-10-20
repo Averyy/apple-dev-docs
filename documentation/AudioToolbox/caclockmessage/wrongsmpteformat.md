@@ -1,10 +1,11 @@
 # CAClockMessage.wrongSMPTEFormat
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,14 +13,19 @@
 case wrongSMPTEFormat
 ```
 
+```c
+kCAClockMessage_WrongSMPTEFormat
+```
+
 ## See Also
 
-- [CAClockMessage.armed](caclockmessage/armed.md)
-- [CAClockMessage.disarmed](caclockmessage/disarmed.md)
-- [CAClockMessage.propertyChanged](caclockmessage/propertychanged.md)
-- [CAClockMessage.startTimeSet](caclockmessage/starttimeset.md)
-- [CAClockMessage.started](caclockmessage/started.md)
-- [CAClockMessage.stopped](caclockmessage/stopped.md)
+### Constants
+- [CAClockMessage.armed](./armed.md)
+- [CAClockMessage.disarmed](./disarmed.md)
+- [CAClockMessage.propertyChanged](./propertychanged.md)
+- [CAClockMessage.startTimeSet](./starttimeset.md)
+- [CAClockMessage.started](./started.md)
+- [CAClockMessage.stopped](./stopped.md)
 
 
 ---

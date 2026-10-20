@@ -1,7 +1,8 @@
 # FilterError
 
 **Framework**: Compression  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Errors that occur during compression.
 
@@ -11,7 +12,7 @@ Errors that occur during compression.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -23,33 +24,34 @@ enum FilterError
 ## Topics
 
 ### Enumeration Cases
-- [FilterError.invalidData](filtererror/invaliddata.md)
+- [FilterError.invalidData](./filtererror/invaliddata.md)
   An error that indicates invalid data passed to the encoder-decoder.
-- [FilterError.invalidState](filtererror/invalidstate.md)
+- [FilterError.invalidState](./filtererror/invalidstate.md)
   An error that indicates a filter failed to initialize, or that it has an invalid internal stare or parameters.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Compressing and decompressing data with input and output filters](../accelerate/compressing-and-decompressing-data-with-input-and-output-filters.md)
+### Objects that simplify multiple-step compression
+- [Compressing and decompressing data with input and output filters](../Accelerate/compressing-and-decompressing-data-with-input-and-output-filters.md)
   Compress and decompress streamed or from-memory data, using input and output filters.
-- [Compressing and decompressing files with stream compression](../accelerate/compressing-and-decompressing-files-with-stream-compression.md)
+- [Compressing and decompressing files with stream compression](../Accelerate/compressing-and-decompressing-files-with-stream-compression.md)
   Perform compression for all files and decompression for files with supported extension types.
-- [class InputFilter](inputfilter.md)
+- [class InputFilter](./inputfilter.md)
   An encoder-decoder that reads input data from a stream.
-- [class OutputFilter](outputfilter.md)
+- [class OutputFilter](./outputfilter.md)
   An encoder-decoder that writes output data to a stream.
-- [enum Algorithm](algorithm.md)
+- [enum Algorithm](./algorithm.md)
   Algorithms used for compression or decompression.
-- [enum FilterOperation](filteroperation.md)
+- [enum FilterOperation](./filteroperation.md)
   Operations that define whether input and output filters compress or decompress data.
 
 

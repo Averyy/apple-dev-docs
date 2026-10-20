@@ -1,12 +1,13 @@
 # rotate(byDegrees:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Rotates the view’s bounds rectangle by a specified degree value around the origin of the coordinate system, (0.0, 0.0).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,15 @@ Rotates the view’s bounds rectangle by a specified degree value around the ori
 func rotate(byDegrees angle: CGFloat)
 ```
 
+```objc
+- (void) rotateByAngle:(CGFloat) angle;
+```
+
 #### Discussion
 
-See the [`boundsRotation`](nsview/boundsrotation.md) method description for more information. This method neither redisplays the view nor marks it as needing display. You must do this yourself by calling the [`display()`](nsview/display().md) method or setting the [`needsDisplay`](nsview/needsdisplay.md) property.
+See the [`boundsRotation`](./boundsrotation.md) method description for more information. This method neither redisplays the view nor marks it as needing display. You must do this yourself by calling the [`display()`](./display%28%29.md) method or setting the [`needsDisplay`](./needsdisplay.md) property.
 
-This method posts an [`boundsDidChangeNotification`](nsview/boundsdidchangenotification.md) to the default notification center if the view is configured to do so.
+This method posts an [`boundsDidChangeNotification`](./boundsdidchangenotification.md) to the default notification center if the view is configured to do so.
 
 ## Parameters
 
@@ -26,13 +31,15 @@ This method posts an [`boundsDidChangeNotification`](nsview/boundsdidchangenotif
 
 ## See Also
 
-- [var frameRotation: CGFloat](nsview/framerotation.md)
+### Related Documentation
+- [var frameRotation: CGFloat](./framerotation.md)
   The angle of rotation, measured in degrees, applied to the view’s frame rectangle relative to its superview’s coordinate system.
-- [var postsBoundsChangedNotifications: Bool](nsview/postsboundschangednotifications.md)
+- [var postsBoundsChangedNotifications: Bool](./postsboundschangednotifications.md)
   A Boolean value indicating whether the view posts notifications when its bounds rectangle changes.
-- [func translateOrigin(to: NSPoint)](nsview/translateorigin(to:).md)
+### Modifying the Coordinate System
+- [func translateOrigin(to: NSPoint)](./translateorigin%28to%29.md)
   Translates the view’s coordinate system so that its origin moves to a new location.
-- [func scaleUnitSquare(to: NSSize)](nsview/scaleunitsquare(to:).md)
+- [func scaleUnitSquare(to: NSSize)](./scaleunitsquare%28to%29.md)
   Scales the view’s coordinate system so that the unit square scales to the specified dimensions.
 
 

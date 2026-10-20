@@ -2,6 +2,7 @@
 
 **Framework**: AVKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The audio output volume as a normalized value between 0.0 and 1.0.

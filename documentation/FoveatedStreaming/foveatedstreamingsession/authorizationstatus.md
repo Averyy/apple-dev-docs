@@ -1,9 +1,10 @@
 # FoveatedStreamingSession.AuthorizationStatus
 
 **Framework**: Foveated Streaming  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-The authorization status of an [`FoveatedStreamingSession.InputCapability`](foveatedstreamingsession/inputcapability.md).
+The authorization status of an [`FoveatedStreamingSession.InputCapability`](./inputcapability.md).
 
 **Availability**:
 - visionOS 27.0+
@@ -17,25 +18,25 @@ enum AuthorizationStatus
 ## Topics
 
 ### Enumeration Cases
-- [FoveatedStreamingSession.AuthorizationStatus.authorized](foveatedstreamingsession/authorizationstatus/authorized.md)
+- [FoveatedStreamingSession.AuthorizationStatus.authorized](./authorizationstatus/authorized.md)
   The user has authorized this capability.
-- [FoveatedStreamingSession.AuthorizationStatus.notDetermined](foveatedstreamingsession/authorizationstatus/notdetermined.md)
+- [FoveatedStreamingSession.AuthorizationStatus.notDetermined](./authorizationstatus/notdetermined.md)
   The user has not yet been prompted for this capability.
-- [FoveatedStreamingSession.AuthorizationStatus.unauthorized](foveatedstreamingsession/authorizationstatus/unauthorized.md)
+- [FoveatedStreamingSession.AuthorizationStatus.unauthorized](./authorizationstatus/unauthorized.md)
   The user has denied this capability, or the capability is otherwise unavailable.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

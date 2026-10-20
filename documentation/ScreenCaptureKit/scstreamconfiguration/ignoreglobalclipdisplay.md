@@ -1,7 +1,8 @@
 # ignoreGlobalClipDisplay
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the stream ignores content clipped past the edge of a display, when streaming in display style.
 
@@ -15,23 +16,28 @@ A Boolean value that indicates if the stream ignores content clipped past the ed
 var ignoreGlobalClipDisplay: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL ignoreGlobalClipDisplay;
+```
+
 #### Discussion
 
 The display that originates the stream determines clipping bounds. When this value is `true`, the stream contains content moved past the clipping bounds. The default value is `false`.
 
 ## See Also
 
-- [var showsCursor: Bool](scstreamconfiguration/showscursor.md)
+### Configuring captured elements
+- [var showsCursor: Bool](./showscursor.md)
   A Boolean value that determines whether the cursor is visible in the stream.
-- [var shouldBeOpaque: Bool](scstreamconfiguration/shouldbeopaque.md)
+- [var shouldBeOpaque: Bool](./shouldbeopaque.md)
   A Boolean value that indicates if semitransparent content presents as opaque.
-- [var capturesShadowsOnly: Bool](scstreamconfiguration/capturesshadowsonly.md)
+- [var capturesShadowsOnly: Bool](./capturesshadowsonly.md)
   A Boolean value that indicates if the stream only captures shadows.
-- [var ignoreShadowsDisplay: Bool](scstreamconfiguration/ignoreshadowsdisplay.md)
+- [var ignoreShadowsDisplay: Bool](./ignoreshadowsdisplay.md)
   A Boolean value that indicates if the stream ignores the capturing of window shadows when streaming in display style.
-- [var ignoreShadowsSingleWindow: Bool](scstreamconfiguration/ignoreshadowssinglewindow.md)
+- [var ignoreShadowsSingleWindow: Bool](./ignoreshadowssinglewindow.md)
   A Boolean value that indicates if the stream ignores the capturing of window shadows when streaming in window style.
-- [var ignoreGlobalClipSingleWindow: Bool](scstreamconfiguration/ignoreglobalclipsinglewindow.md)
+- [var ignoreGlobalClipSingleWindow: Bool](./ignoreglobalclipsinglewindow.md)
   A Boolean value that indicates if the stream ignores content clipped past the edge of a display, when streaming in window style.
 
 

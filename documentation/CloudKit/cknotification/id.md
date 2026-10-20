@@ -1,7 +1,8 @@
 # CKNotification.ID
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that uniquely identifies a push notification that a container sends.
 
@@ -10,7 +11,7 @@ An object that uniquely identifies a push notification that a container sends.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,41 +21,46 @@ An object that uniquely identifies a push notification that a container sends.
 class ID
 ```
 
+```objc
+@interface CKNotificationID : NSObject
+```
+
 #### Overview
 
-You don’t create notification IDs directly. The server creates them when it creates instances of [`CKNotification`](cknotification.md) that correspond to the push notifications that CloudKit sends to your app. You can compare two IDs using the [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) method to determine whether two notifications are the same. This class defines no methods or properties.
+You don’t create notification IDs directly. The server creates them when it creates instances of [`CKNotification`](../cknotification.md) that correspond to the push notifications that CloudKit sends to your app. You can compare two IDs using the [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) method to determine whether two notifications are the same. This class defines no methods or properties.
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](cknotification/id/init(coder:).md)
+- [init?(coder: NSCoder)](./id/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var notificationID: CKNotification.ID?](cknotification/notificationid.md)
+### Identifying the Notification
+- [var notificationID: CKNotification.ID?](./notificationid.md)
   The notification’s ID.
-- [var notificationType: CKNotification.NotificationType](cknotification/notificationtype-swift.property.md)
+- [var notificationType: CKNotification.NotificationType](./notificationtype-swift.property.md)
   The type of event that generates the notification.
-- [CKNotification.NotificationType](cknotification/notificationtype-swift.enum.md)
+- [CKNotification.NotificationType](./notificationtype-swift.enum.md)
   Constants that indicate the type of event that generates the push notification.
-- [var containerIdentifier: String?](cknotification/containeridentifier.md)
+- [var containerIdentifier: String?](./containeridentifier.md)
   The ID of the container with the content that triggers the notification.
 
 

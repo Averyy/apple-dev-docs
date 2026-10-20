@@ -1,12 +1,15 @@
 # drawsBackground
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the web view draws a background.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
+
+> **Deprecated**: No longer supported; please adopt WKWebView.
 
 ## Declaration
 
@@ -14,13 +17,18 @@ A Boolean that indicates whether the web view draws a background.
 var drawsBackground: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL drawsBackground;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), a default background is drawn; if [`false`](https://developer.apple.com/documentation/swift/false), it is not.
+If [`true`](../../Swift/true.md), a default background is drawn; if [`false`](../../Swift/false.md), it is not.
 
 ## See Also
 
-- [var shouldUpdateWhileOffscreen: Bool](webview-swift.class/shouldupdatewhileoffscreen.md)
+### Drawing
+- [var shouldUpdateWhileOffscreen: Bool](./shouldupdatewhileoffscreen.md)
   A Boolean that inidicates whether the web view should update even when it is not in a window that is currently visible.
 
 

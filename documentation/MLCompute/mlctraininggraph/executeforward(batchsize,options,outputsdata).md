@@ -1,16 +1,19 @@
 # executeForward(batchSize:options:outputsData:)
 
 **Framework**: ML Compute  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes the forward pass of the training graph with the batch size, execution options, and output data you specify.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 15.0+ - Deprecated in 17.0
+- iPadOS 15.0+ - Deprecated in 17.0
+- Mac Catalyst 15.0+ - Deprecated in 17.0
+- macOS 12.0+ - Deprecated in 14.0
+- tvOS 15.0+ - Deprecated in 17.0
+
+> **Deprecated**: Use Metal Performance Shaders Graph or BNNS instead.
 
 ## Declaration
 
@@ -21,7 +24,7 @@ func executeForward(batchSize: Int, options: MLCExecutionOptions = [], outputsDa
 
 #### Return Value
 
-The result tensor, if any, and the execution time if you specify [`profiling`](mlcexecutionoptions/profiling.md).
+The result tensor, if any, and the execution time if you specify [`profiling`](../mlcexecutionoptions/profiling.md).
 
 ## Parameters
 
@@ -31,27 +34,28 @@ The result tensor, if any, and the execution time if you specify [`profiling`](m
 
 ## See Also
 
-- [func executeForward(batchSize: Int, options: MLCExecutionOptions, completionHandler: MLCGraphCompletionHandler?) -> Bool](mlctraininggraph/executeforward(batchsize:options:completionhandler:).md)
+### Executing Forward, Gradient, and Optimizer Updates
+- [func executeForward(batchSize: Int, options: MLCExecutionOptions, completionHandler: MLCGraphCompletionHandler?) -> Bool](./executeforward%28batchsize,options,completionhandler%29.md)
   Executes the forward pass of the training graph with the batch size, execution options, and completion handler you specify.
-- [func executeForward(batchSize: Int, options: MLCExecutionOptions, outputsData: [String : MLCTensorData]?, completionHandler: MLCGraphCompletionHandler?) -> Bool](mlctraininggraph/executeforward(batchsize:options:outputsdata:completionhandler:).md)
+- [func executeForward(batchSize: Int, options: MLCExecutionOptions, outputsData: [String : MLCTensorData]?, completionHandler: MLCGraphCompletionHandler?) -> Bool](./executeforward%28batchsize,options,outputsdata,completionhandler%29.md)
   Executes the forward pass of the training graph with the batch size, execution options, output data, and completion handler you specify.
-- [func executeGradient(batchSize: Int, options: MLCExecutionOptions, completionHandler: MLCGraphCompletionHandler?) -> Bool](mlctraininggraph/executegradient(batchsize:options:completionhandler:).md)
+- [func executeGradient(batchSize: Int, options: MLCExecutionOptions, completionHandler: MLCGraphCompletionHandler?) -> Bool](./executegradient%28batchsize,options,completionhandler%29.md)
   Executes the gradient pass of the training graph with the batch size, execution options, and completion handler you specify.
-- [func executeGradient(batchSize: Int, options: MLCExecutionOptions, outputsData: [String : MLCTensorData]?, completionHandler: MLCGraphCompletionHandler?) -> Bool](mlctraininggraph/executegradient(batchsize:options:outputsdata:completionhandler:).md)
+- [func executeGradient(batchSize: Int, options: MLCExecutionOptions, outputsData: [String : MLCTensorData]?, completionHandler: MLCGraphCompletionHandler?) -> Bool](./executegradient%28batchsize,options,outputsdata,completionhandler%29.md)
   Executes the gradient pass of the training graph with the batch size, execution options, output data, and completion handler you specify.
-- [func executeGradient(batchSize: Int, options: MLCExecutionOptions, outputsData: [String : MLCTensorData]?) async throws -> TimeInterval](mlctraininggraph/executegradient(batchsize:options:outputsdata:).md)
+- [func executeGradient(batchSize: Int, options: MLCExecutionOptions, outputsData: [String : MLCTensorData]?) async throws -> TimeInterval](./executegradient%28batchsize,options,outputsdata%29.md)
   Executes the gradient pass of the training graph with the batch size, execution options, and output data you specify.
-- [func executeOptimizerUpdate(options: MLCExecutionOptions, completionHandler: MLCGraphCompletionHandler?) -> Bool](mlctraininggraph/executeoptimizerupdate(options:completionhandler:).md)
+- [func executeOptimizerUpdate(options: MLCExecutionOptions, completionHandler: MLCGraphCompletionHandler?) -> Bool](./executeoptimizerupdate%28options,completionhandler%29.md)
   Executes the optimizer update pass of the training graph with the execution options and completion handler you specify.
-- [func executeOptimizerUpdate(options: MLCExecutionOptions) async throws -> TimeInterval](mlctraininggraph/executeoptimizerupdate(options:).md)
+- [func executeOptimizerUpdate(options: MLCExecutionOptions) async throws -> TimeInterval](./executeoptimizerupdate%28options%29.md)
   Executes the optimizer update pass of the training graph with the execution options you specify.
-- [func synchronizeUpdates()](mlctraininggraph/synchronizeupdates.md)
+- [func synchronizeUpdates()](./synchronizeupdates%28%29.md)
   Synchronizes updates from device memory.
-- [func setTrainingTensorParameters([MLCTensorParameter]) -> Bool](mlctraininggraph/settrainingtensorparameters(_:).md)
+- [func setTrainingTensorParameters([MLCTensorParameter]) -> Bool](./settrainingtensorparameters%28_%29.md)
   Sets the input tensor parameters, which the optimizer then updates.
-- [struct MLCExecutionOptions](mlcexecutionoptions.md)
+- [struct MLCExecutionOptions](../mlcexecutionoptions.md)
   A bitmask that specifies the options you use when executing a graph.
-- [typealias MLCGraphCompletionHandler](mlcgraphcompletionhandler.md)
+- [typealias MLCGraphCompletionHandler](../mlcgraphcompletionhandler.md)
   A callback completion handler you execute when a graph finishes execution.
 
 

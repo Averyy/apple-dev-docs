@@ -1,6 +1,7 @@
 # Pausing and resuming downloads
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: Article
 
 Allow the user to resume a download without starting over.
 
@@ -10,9 +11,9 @@ Your app or the user may need to cancel an in-progress download and resume it la
 
 You can also use this technique to resume a download that fails due to a temporary loss of connectivity.
 
-##### Store the Resume Data Object When You Cancel the Download
+##### Store the resume data object when you cancel the download
 
-You cancel a [`URLSessionDownloadTask`](urlsessiondownloadtask.md) by calling [`cancel(byProducingResumeData:)`](urlsessiondownloadtask/cancel(byproducingresumedata:).md). This method takes a completion handler which is called once the cancellation is complete. The completion handler receives a `resumeData` parameter. If it it not `nil`, this is the token you use later to resume the download. The following example shows how to cancel a download task and store `resumeData`, if it exists, in a property.
+You cancel a [`URLSessionDownloadTask`](./urlsessiondownloadtask.md) by calling [`cancel(byProducingResumeData:)`](./urlsessiondownloadtask/cancel%28byproducingresumedata%29.md). This method takes a completion handler which is called once the cancellation is complete. The completion handler receives a `resumeData` parameter. If it it not `nil`, this is the token you use later to resume the download. The following example shows how to cancel a download task and store `resumeData`, if it exists, in a property.
 
 Storing the resume data when canceling a download
 
@@ -27,15 +28,15 @@ downloadTask.cancel { resumeDataOrNil in
 
 ```
 
-> ❗ **Important**:  Not all downloads can be resumed. See the discussion in [`cancel(byProducingResumeData:)`](urlsessiondownloadtask/cancel(byproducingresumedata:).md) for a list of conditions that must be met for a download to be resumable. Also, downloads that use a background configuration will handle resumption automatically, so manual resuming is only needed for non-background downloads.
+> ❗ **Important**:  Not all downloads can be resumed. See the discussion in [`cancel(byProducingResumeData:)`](./urlsessiondownloadtask/cancel%28byproducingresumedata%29.md) for a list of conditions that must be met for a download to be resumable. Also, downloads that use a background configuration will handle resumption automatically, so manual resuming is only needed for non-background downloads.
 
-##### Store the Resume Data Object When a Download Fails
+##### Store the resume data object when a download fails
 
 You can also resume a download that has failed due to a temporary loss of connectivity, as when the user walks out of WiFi range.
 
-When the download fails, the session calls your [`urlSession(_:task:didCompleteWithError:)`](urlsessiontaskdelegate/urlsession(_:task:didcompletewitherror:).md) delegate method. If `error` is not `nil`, look in its `userInfo` dictionary for the key [`NSURLSessionDownloadTaskResumeData`](nsurlsessiondownloadtaskresumedata.md). If the key exists, save the value associated with it to use later when you try to resume the download. If the key does not exist, the download can’t be resumed.
+When the download fails, the session calls your [`urlSession(_:task:didCompleteWithError:)`](./urlsessiontaskdelegate/urlsession%28_,task,didcompletewitherror%29.md) delegate method. If `error` is not `nil`, look in its `userInfo` dictionary for the key [`NSURLSessionDownloadTaskResumeData`](./nsurlsessiondownloadtaskresumedata.md). If the key exists, save the value associated with it to use later when you try to resume the download. If the key does not exist, the download can’t be resumed.
 
-The following example shows an implementation of [`urlSession(_:task:didCompleteWithError:)`](urlsessiontaskdelegate/urlsession(_:task:didcompletewitherror:).md) that retrieves and saves the `resumeData` object, if any, from the error.
+The following example shows an implementation of [`urlSession(_:task:didCompleteWithError:)`](./urlsessiontaskdelegate/urlsession%28_,task,didcompletewitherror%29.md) that retrieves and saves the `resumeData` object, if any, from the error.
 
 ```swift
 func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
@@ -52,9 +53,9 @@ func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithErro
 
 ```
 
-##### Use the Stored Resume Data Object to Resume Downloading
+##### Use the stored resume data object to resume downloading
 
-When it’s appropriate to resume the download, create a new [`URLSessionDownloadTask`](urlsessiondownloadtask.md) by using the [`downloadTask(withResumeData:)`](urlsession/downloadtask(withresumedata:).md) or [`downloadTask(withResumeData:completionHandler:)`](urlsession/downloadtask(withresumedata:completionhandler:).md) method of [`URLSession`](urlsession.md), passing in the `resumeData` object you stored earlier. Then call [`resume()`](urlsessiontask/resume().md) on the task to resume the download.
+When it’s appropriate to resume the download, create a new [`URLSessionDownloadTask`](./urlsessiondownloadtask.md) by using the [`downloadTask(withResumeData:)`](./urlsession/downloadtask%28withresumedata%29.md) or [`downloadTask(withResumeData:completionHandler:)`](./urlsession/downloadtask%28withresumedata,completionhandler%29.md) method of [`URLSession`](./urlsession.md), passing in the `resumeData` object you stored earlier. Then call [`resume()`](./urlsessiontask/resume%28%29.md) on the task to resume the download.
 
 Creating and starting a download task from resume data
 
@@ -69,13 +70,14 @@ self.downloadTask = downloadTask
 
 ```
 
-If the download resumes successfully, the task calls your delegate’s [`urlSession(_:downloadTask:didResumeAtOffset:expectedTotalBytes:)`](urlsessiondownloaddelegate/urlsession(_:downloadtask:didresumeatoffset:expectedtotalbytes:).md) method. You can use the offset and byte count parameters to inform the user that the download has resumed and has preserved its earlier progress.
+If the download resumes successfully, the task calls your delegate’s [`urlSession(_:downloadTask:didResumeAtOffset:expectedTotalBytes:)`](./urlsessiondownloaddelegate/urlsession%28_,downloadtask,didresumeatoffset,expectedtotalbytes%29.md) method. You can use the offset and byte count parameters to inform the user that the download has resumed and has preserved its earlier progress.
 
 ## See Also
 
-- [Downloading files from websites](downloading-files-from-websites.md)
+### Downloading
+- [Downloading files from websites](./downloading-files-from-websites.md)
   Download files directly to the filesystem.
-- [Downloading files in the background](downloading-files-in-the-background.md)
+- [Downloading files in the background](./downloading-files-in-the-background.md)
   Create tasks that download files while your app is inactive.
 
 

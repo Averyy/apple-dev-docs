@@ -1,7 +1,8 @@
 # BNNS.FusedLayer
 
 **Framework**: Accelerate  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for fused convolution-normalization and fully connected-normalization layers.
 
@@ -11,8 +12,10 @@ The base class for fused convolution-normalization and fully connected-normaliza
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,19 +26,19 @@ class FusedLayer
 ## Topics
 
 ### Applying a Fused Layer
-- [func apply(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, for: BNNS.LearningPhase) throws](bnns/fusedlayer/apply(batchsize:input:output:for:).md)
+- [func apply(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, for: BNNS.LearningPhase) throws](./fusedlayer/apply%28batchsize,input,output,for%29.md)
   Applies the layer to a set of input objects, writing the result to a set of output objects.
-- [func applyBackward(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, outputGradient: BNNSNDArrayDescriptor, generatingInputGradient: BNNSNDArrayDescriptor, generatingParameterGradients: [BNNSNDArrayDescriptor]) throws](bnns/fusedlayer/applybackward(batchsize:input:output:outputgradient:generatinginputgradient:generatingparametergradients:).md)
+- [func applyBackward(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, outputGradient: BNNSNDArrayDescriptor, generatingInputGradient: BNNSNDArrayDescriptor, generatingParameterGradients: [BNNSNDArrayDescriptor]) throws](./fusedlayer/applybackward%28batchsize,input,output,outputgradient,generatinginputgradient,generatingparametergradients%29.md)
   Applies the layer backward to generate input gradients.
 
 ## Relationships
 
 ### Inherits From
-- [BNNS.Layer](bnns/layer.md)
+- [BNNS.Layer](./layer.md)
 ### Inherited By
-- [BNNS.FusedConvolutionNormalizationLayer](bnns/fusedconvolutionnormalizationlayer.md)
-- [BNNS.FusedFullyConnectedNormalizationLayer](bnns/fusedfullyconnectednormalizationlayer.md)
-- [BNNS.FusedParametersLayer](bnns/fusedparameterslayer.md)
+- [BNNS.FusedConvolutionNormalizationLayer](./fusedconvolutionnormalizationlayer.md)
+- [BNNS.FusedFullyConnectedNormalizationLayer](./fusedfullyconnectednormalizationlayer.md)
+- [BNNS.FusedParametersLayer](./fusedparameterslayer.md)
 
 
 ---

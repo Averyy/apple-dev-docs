@@ -1,7 +1,8 @@
 # refresh(_:)
 
 **Framework**: Managed Settings  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Refresh expired ApplicationTokens
 

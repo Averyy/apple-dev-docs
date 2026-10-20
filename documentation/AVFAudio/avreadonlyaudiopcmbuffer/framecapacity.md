@@ -1,7 +1,8 @@
 # frameCapacity
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -20,9 +21,10 @@ var frameCapacity: Int { get }
 
 ## See Also
 
-- [var format: AVAudioFormat](avreadonlyaudiopcmbuffer/format.md)
-- [var frameLength: Int](avreadonlyaudiopcmbuffer/framelength.md)
-- [var stride: Int](avreadonlyaudiopcmbuffer/stride.md)
+### Getting buffer properties
+- [var format: AVAudioFormat](./format.md)
+- [var frameLength: Int](./framelength.md)
+- [var stride: Int](./stride.md)
 
 
 ---

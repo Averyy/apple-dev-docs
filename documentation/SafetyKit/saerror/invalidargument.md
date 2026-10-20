@@ -1,7 +1,8 @@
 # invalidArgument
 
 **Framework**: SafetyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The method received an argument that it can’t validate.
 
@@ -20,15 +21,16 @@ static var invalidArgument: SAError.Code { get }
 
 ## See Also
 
-- [SAError.Code](saerror/code.md)
+### Identifying an error cause
+- [SAError.Code](./code.md)
   Codes for identifying errors in SafetyKit.
-- [let SAErrorDomain: String](saerrordomain.md)
+- [let SAErrorDomain: String](../saerrordomain.md)
   The domain for error objects that SafetyKit produces.
-- [static var notAllowed: SAError.Code](saerror/notallowed.md)
+- [static var notAllowed: SAError.Code](./notallowed.md)
   The system currently restricts the feature on this device.
-- [static var notAuthorized: SAError.Code](saerror/notauthorized.md)
+- [static var notAuthorized: SAError.Code](./notauthorized.md)
   The system denies the app from performing the requested operation.
-- [static var operationFailed: SAError.Code](saerror/operationfailed.md)
+- [static var operationFailed: SAError.Code](./operationfailed.md)
   The requested operation failed; retrying may succeed.
 
 

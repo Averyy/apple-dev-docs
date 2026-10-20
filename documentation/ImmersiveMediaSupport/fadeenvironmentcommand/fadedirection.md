@@ -1,7 +1,8 @@
 # FadeEnvironmentCommand.FadeDirection
 
 **Framework**: Immersive Media Support  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that represents the direction of the fade environment command.
 
@@ -21,23 +22,23 @@ enum FadeDirection
 ## Topics
 
 ### Enumeration Cases
-- [FadeEnvironmentCommand.FadeDirection.in](fadeenvironmentcommand/fadedirection/in.md)
+- [FadeEnvironmentCommand.FadeDirection.in](./fadedirection/in.md)
   A value that represents fading in of the environment backdrops.
-- [FadeEnvironmentCommand.FadeDirection.out](fadeenvironmentcommand/fadedirection/out.md)
+- [FadeEnvironmentCommand.FadeDirection.out](./fadedirection/out.md)
   A value that represents fading out of the environment backdrops.
 
 ## Relationships
 
 ### Conforms To
-- [CodingKey](../swift/codingkey.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CodingKey](../../Swift/codingkey.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

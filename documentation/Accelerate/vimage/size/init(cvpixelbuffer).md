@@ -1,7 +1,8 @@
 # init(cvPixelBuffer:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a size with dimensions specified by a Core Video pixel buffer.
 
@@ -11,7 +12,7 @@ Creates a size with dimensions specified by a Core Video pixel buffer.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -26,15 +27,16 @@ init(cvPixelBuffer: CVPixelBuffer)
 
 ## See Also
 
-- [init?<T>(exactWidth: T, height: T)](vimage/size/init(exactwidth:height:)-9nwk0.md)
+### Initializers
+- [init?<T>(exactWidth: T, height: T)](./init%28exactwidth,height%29-9nwk0.md)
   Creates a size with dimensions specified as floating-point values.
-- [init?<T>(exactWidth: T, height: T)](vimage/size/init(exactwidth:height:)-4ygbk.md)
+- [init?<T>(exactWidth: T, height: T)](./init%28exactwidth,height%29-4ygbk.md)
   Creates a size with dimensions specified as integer values.
-- [init?(exactly: CGSize)](vimage/size/init(exactly:).md)
+- [init?(exactly: CGSize)](./init%28exactly%29.md)
   Creates a size with dimensions specified as a Core Graphics size value.
-- [init(width: Int, height: Int)](vimage/size/init(width:height:)-fzcb.md)
+- [init(width: Int, height: Int)](./init%28width,height%29-fzcb.md)
   Creates a size with dimensions specified as integer values.
-- [init(width: vImagePixelCount, height: vImagePixelCount)](vimage/size/init(width:height:)-8ly3k.md)
+- [init(width: vImagePixelCount, height: vImagePixelCount)](./init%28width,height%29-8ly3k.md)
   Creates a size with dimensions specified as unsigned integer values.
 
 

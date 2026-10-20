@@ -1,7 +1,8 @@
 # AVAudioUnitEQFilterParameters
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that encapsulates the parameters that the equalizer uses.
 
@@ -20,45 +21,50 @@ An object that encapsulates the parameters that the equalizer uses.
 class AVAudioUnitEQFilterParameters
 ```
 
+```objc
+@interface AVAudioUnitEQFilterParameters : NSObject
+```
+
 #### Overview
 
-> **Note**:  Don’t create an instance of the `AVAudioUnitEQFilterParameters` class directly. Use the array that returns from the [`bands`](avaudiouniteq/bands.md) property of [`AVAudioUnitEQ`](avaudiouniteq.md).
+> **Note**:  Don’t create an instance of the `AVAudioUnitEQFilterParameters` class directly. Use the array that returns from the [`bands`](./avaudiouniteq/bands.md) property of [`AVAudioUnitEQ`](./avaudiouniteq.md).
 
 ## Topics
 
 ### Configuring a filter band
-- [var bandwidth: Float](avaudiouniteqfilterparameters/bandwidth.md)
+- [var bandwidth: Float](./avaudiouniteqfilterparameters/bandwidth.md)
   The bandwidth of the equalizer filter, in octaves.
-- [var bypass: Bool](avaudiouniteqfilterparameters/bypass.md)
+- [var bypass: Bool](./avaudiouniteqfilterparameters/bypass.md)
   The bypass state of the equalizer filter band.
-- [var filterType: AVAudioUnitEQFilterType](avaudiouniteqfilterparameters/filtertype.md)
+- [var filterType: AVAudioUnitEQFilterType](./avaudiouniteqfilterparameters/filtertype.md)
   The equalizer filter type.
-- [enum AVAudioUnitEQFilterType](avaudiouniteqfiltertype.md)
+- [enum AVAudioUnitEQFilterType](./avaudiouniteqfiltertype.md)
   Filter types available to use with the filter type property.
-- [var frequency: Float](avaudiouniteqfilterparameters/frequency.md)
+- [var frequency: Float](./avaudiouniteqfilterparameters/frequency.md)
   The frequency of the equalizer filter, in hertz.
-- [var gain: Float](avaudiouniteqfilterparameters/gain.md)
+- [var gain: Float](./avaudiouniteqfilterparameters/gain.md)
   The gain of the equalizer filter, in decibels.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var bands: [AVAudioUnitEQFilterParameters]](avaudiouniteq/bands.md)
+### Configuring equalizer bands
+- [var bands: [AVAudioUnitEQFilterParameters]](./avaudiouniteq/bands.md)
   An array of equalizer filter parameters.
-- [var globalGain: Float](avaudiouniteq/globalgain.md)
+- [var globalGain: Float](./avaudiouniteq/globalgain.md)
   The overall gain adjustment that the audio unit applies to the signal, in decibels.
 
 

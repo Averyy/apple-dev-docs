@@ -1,9 +1,10 @@
 # MDLProbePlacement
 
 **Framework**: Model I/O  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Options affecting automatic placement of light probes in a scene, used with the [`placeLightProbes(withDensity:heuristic:using:)`](mdlasset/placelightprobes(withdensity:heuristic:using:).md) method.
+Options affecting automatic placement of light probes in a scene, used with the [`placeLightProbes(withDensity:heuristic:using:)`](./mdlasset/placelightprobes%28withdensity,heuristic,using%29.md) method.
 
 **Availability**:
 - iOS 9.0+
@@ -19,29 +20,34 @@ Options affecting automatic placement of light probes in a scene, used with the 
 enum MDLProbePlacement
 ```
 
+```c
+enum MDLProbePlacement : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MDLProbePlacement.irradianceDistribution](mdlprobeplacement/irradiancedistribution.md)
+- [MDLProbePlacement.irradianceDistribution](./mdlprobeplacement/irradiancedistribution.md)
   An option to examine the lighting conditions at various positions in the scene being evaluated, then place light probes only at the locations where each contributes optimally to scene lighting.
-- [MDLProbePlacement.uniformGrid](mdlprobeplacement/uniformgrid.md)
+- [MDLProbePlacement.uniformGrid](./mdlprobeplacement/uniformgrid.md)
   An option to place light probes at each unit coordinate in a three-dimensional grid that evenly divides the region being evaluated.
 ### Initializers
-- [init?(rawValue: Int)](mdlprobeplacement/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mdlprobeplacement/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func placeLightProbes(withDensity: Float, heuristic: MDLProbePlacement, using: any MDLLightProbeIrradianceDataSource) -> [MDLLightProbe]](mdlasset/placelightprobes(withdensity:heuristic:using:).md)
+### Working with Lights
+- [class func placeLightProbes(withDensity: Float, heuristic: MDLProbePlacement, using: any MDLLightProbeIrradianceDataSource) -> [MDLLightProbe]](./mdlasset/placelightprobes%28withdensity,heuristic,using%29.md)
   Automatically creates and places light probes for use in illuminating a scene.
 
 

@@ -4141,7 +4141,7 @@
       "hash": "ebe5e7214e96409ff44241512956ce7989881d9c60e95a1665bcbe4f3ae5f754"
     },
     "https://developer.apple.com/documentation/endpointsecurity/es_event_type_auth_setmode": {
-      "etag": "\"80cf-65d55d1f11d08\"",
+      "etag": "\"80cf-65d55d1f11d08-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_type_auth_setmode.md",
       "hash": "06fb1cf84c78cf7cfe7ae19bd0af6d5385e5fd050e43a51169cea86ccf620766"
     },
@@ -12301,7 +12301,7 @@
       "hash": "ebe5e7214e96409ff44241512956ce7989881d9c60e95a1665bcbe4f3ae5f754"
     },
     "https://developer.apple.com/tutorials/data/documentation/endpointsecurity/es_event_type_auth_setmode.json": {
-      "etag": "\"80cf-65d55d1f11d08\"",
+      "etag": "\"80cf-65d55d1f11d08-df\"",
       "file_path": "documentation/EndpointSecurity/es_event_type_auth_setmode.md",
       "hash": "06fb1cf84c78cf7cfe7ae19bd0af6d5385e5fd050e43a51169cea86ccf620766"
     },
@@ -16322,6 +16322,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 3264
   }
 }

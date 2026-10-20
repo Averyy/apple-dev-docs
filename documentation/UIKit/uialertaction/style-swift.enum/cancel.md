@@ -1,7 +1,8 @@
 # UIAlertAction.Style.cancel
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Apply a style that indicates the action cancels the operation and leaves things unchanged.
 
@@ -9,7 +10,7 @@ Apply a style that indicates the action cancels the operation and leaves things 
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ Apply a style that indicates the action cancels the operation and leaves things 
 case cancel
 ```
 
+```c
+UIAlertActionStyleCancel
+```
+
 ## Mentions
 
-- [Getting the user’s attention with alerts and action sheets](getting-the-user-s-attention-with-alerts-and-action-sheets.md)
+- [Getting the user’s attention with alerts and action sheets](../../getting-the-user-s-attention-with-alerts-and-action-sheets.md)
 
 ## See Also
 
-- [UIAlertAction.Style.default](uialertaction/style-swift.enum/default.md)
+### Constants
+- [UIAlertAction.Style.default](./default.md)
   Apply the default style to the action’s button.
-- [UIAlertAction.Style.destructive](uialertaction/style-swift.enum/destructive.md)
+- [UIAlertAction.Style.destructive](./destructive.md)
   Apply a style that indicates the action might change or delete data.
 
 

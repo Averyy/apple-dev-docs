@@ -1,7 +1,8 @@
 # CTFramesetterCreateFrame(_:_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an immutable frame using a framesetter.
 
@@ -18,6 +19,10 @@ Creates an immutable frame using a framesetter.
 
 ```swift
 func CTFramesetterCreateFrame(_ framesetter: CTFramesetter, _ stringRange: CFRange, _ path: CGPath, _ frameAttributes: CFDictionary?) -> CTFrame
+```
+
+```c
+extern CTFrameRefCTFramesetterCreateFrame(CTFramesetterRef framesetter, CFRange stringRange, CGPathRef path, CFDictionaryRef frameAttributes);
 ```
 
 #### Return Value
@@ -41,7 +46,8 @@ In versions of macOS prior to 10.7 and versions of iOS prior to 4.2, this functi
 
 ## See Also
 
-- [func CTFramesetterGetTypesetter(CTFramesetter) -> CTTypesetter](ctframesettergettypesetter(_:).md)
+### Creating Frames
+- [func CTFramesetterGetTypesetter(CTFramesetter) -> CTTypesetter](./ctframesettergettypesetter%28_%29.md)
   Returns the typesetter object being used by the framesetter.
 
 

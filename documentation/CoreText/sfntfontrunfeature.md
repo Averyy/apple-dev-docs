@@ -1,16 +1,17 @@
 # sfntFontRunFeature
 
 **Framework**: Core Text  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,38 +19,43 @@
 struct sfntFontRunFeature
 ```
 
+```c
+struct sfntFontRunFeature;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](sfntfontrunfeature/init.md)
-- [init(featureType: UInt16, setting: UInt16)](sfntfontrunfeature/init(featuretype:setting:).md)
+- [init()](./sfntfontrunfeature/init%28%29.md)
+- [init(featureType: UInt16, setting: UInt16)](./sfntfontrunfeature/init%28featuretype,setting%29.md)
 ### Instance Properties
-- [var featureType: UInt16](sfntfontrunfeature/featuretype.md)
-- [var setting: UInt16](sfntfontrunfeature/setting.md)
+- [var featureType: UInt16](./sfntfontrunfeature/featuretype.md)
+- [var setting: UInt16](./sfntfontrunfeature/setting.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct AnchorPoint](anchorpoint.md)
-- [struct AnchorPointTable](anchorpointtable.md)
-- [struct AnkrTable](ankrtable.md)
-- [struct BslnFormat0Part](bslnformat0part.md)
-- [struct BslnFormat1Part](bslnformat1part.md)
-- [struct BslnFormat2Part](bslnformat2part.md)
-- [struct BslnFormat3Part](bslnformat3part.md)
-- [struct BslnFormatUnion](bslnformatunion.md)
-- [struct BslnTable](bslntable.md)
-- [struct FontVariation](fontvariation.md)
-- [struct JustDirectionTable](justdirectiontable.md)
-- [struct JustPCAction](justpcaction.md)
-- [struct JustPCActionSubrecord](justpcactionsubrecord.md)
-- [struct JustPCConditionalAddAction](justpcconditionaladdaction.md)
-- [struct JustPCDecompositionAction](justpcdecompositionaction.md)
+### Structures
+- [struct AnchorPoint](./anchorpoint.md)
+- [struct AnchorPointTable](./anchorpointtable.md)
+- [struct AnkrTable](./ankrtable.md)
+- [struct BslnFormat0Part](./bslnformat0part.md)
+- [struct BslnFormat1Part](./bslnformat1part.md)
+- [struct BslnFormat2Part](./bslnformat2part.md)
+- [struct BslnFormat3Part](./bslnformat3part.md)
+- [struct BslnFormatUnion](./bslnformatunion.md)
+- [struct BslnTable](./bslntable.md)
+- [struct FontVariation](./fontvariation.md)
+- [struct JustDirectionTable](./justdirectiontable.md)
+- [struct JustPCAction](./justpcaction.md)
+- [struct JustPCActionSubrecord](./justpcactionsubrecord.md)
+- [struct JustPCConditionalAddAction](./justpcconditionaladdaction.md)
+- [struct JustPCDecompositionAction](./justpcdecompositionaction.md)
 
 
 ---

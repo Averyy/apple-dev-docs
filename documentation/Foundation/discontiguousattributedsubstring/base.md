@@ -1,7 +1,8 @@
 # base
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying attributed string that the discontiguous attributed substring derives from.
 

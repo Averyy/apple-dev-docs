@@ -1,7 +1,8 @@
 # append(contentsOf:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds anchors from a sequence to the end of this collection.
 
@@ -11,7 +12,7 @@ Adds anchors from a sequence to the end of this collection.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,23 @@ Adds anchors from a sequence to the end of this collection.
 @preconcurrency func append<S>(contentsOf sequence: S) where S : Sequence, S.Element : HasAnchoring
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency func append(contentsOf array: [any HasAnchoring])
+```
+
 ## Parameters
 
 - `sequence`: The sequence of anchor entities to add.
 
 ## See Also
 
-- [func append(any HasAnchoring)](scene/anchorcollection/append(_:).md)
+### Adding anchors
+- [func append(any HasAnchoring)](./append%28_%29.md)
   Adds a new anchor at the end of the collection.
-- [func append(contentsOf: [any HasAnchoring])](scene/anchorcollection/append(contentsof:)-3bjib.md)
+- [func append(contentsOf: [any HasAnchoring])](./append%28contentsof%29-3bjib.md)
   Adds anchors from an array to the end of this collection.
 
 

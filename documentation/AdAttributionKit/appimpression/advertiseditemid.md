@@ -1,7 +1,8 @@
 # advertisedItemID
 
 **Framework**: AdAttributionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The advertised item’s ID.
 
@@ -18,25 +19,26 @@ var advertisedItemID: UInt64 { get }
 
 ## Mentions
 
-- [Generating JWS impressions](generating-jws-impressions.md)
+- [Generating JWS impressions](../generating-jws-impressions.md)
 
 ## See Also
 
-- [var adNetworkID: String](appimpression/adnetworkid.md)
+### Accessing ad impression properties
+- [var adNetworkID: String](./adnetworkid.md)
   The advertising network ID.
-- [var compactJWSRepresentation: String](appimpression/compactjwsrepresentation.md)
+- [var compactJWSRepresentation: String](./compactjwsrepresentation.md)
   A string that presents the compact representation of the impression’s JSON Web Signature (JWS).
-- [var eligibleForReengagement: Bool](appimpression/eligibleforreengagement.md)
+- [var eligibleForReengagement: Bool](./eligibleforreengagement.md)
   A Boolean value that indicates whether this impression is eligible for reengagement.
-- [var id: UUID](appimpression/id.md)
+- [var id: UUID](./id.md)
   The impression’s unique ID.
-- [var keyID: String](appimpression/keyid.md)
+- [var keyID: String](./keyid.md)
   The JSON Web Signature (JWS) key ID.
-- [var publisherItemID: UInt64](appimpression/publisheritemid.md)
+- [var publisherItemID: UInt64](./publisheritemid.md)
   The publisher app’s item ID.
-- [var sourceID: Int](appimpression/sourceid.md)
+- [var sourceID: Int](./sourceid.md)
   A four-digit integer that ad networks define to represent the ad campaign.
-- [var timestamp: Date](appimpression/timestamp.md)
+- [var timestamp: Date](./timestamp.md)
   The impression’s timestamp, in milliseconds since 1970.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the system when the selection has changed in the document.
@@ -9,7 +10,7 @@ Tells the system when the selection has changed in the document.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- macOS ?+
+- macOS
 - tvOS 17.4+
 - visionOS 1.1+
 
@@ -19,13 +20,18 @@ Tells the system when the selection has changed in the document.
 func selectionDidChange(for textInput: any BETextInput)
 ```
 
+```objc
+- (void) selectionDidChangeForTextInput:(id<BETextInput>) textInput;
+```
+
 #### Discussion
 
 This method results in an document state refresh with an invocation to: -[BETextInput requestTextContextForAutocorrectionWithCompletionHandler:]
 
 ## See Also
 
-- [func selectionWillChange(for: any BETextInput)](betextinputdelegate/selectionwillchange(for:).md)
+### Text selection
+- [func selectionWillChange(for: any BETextInput)](./selectionwillchange%28for%29.md)
   Tells the system when the selection is about to change in the document.
 
 

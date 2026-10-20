@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value that indicates whether the GPU device supports the feature set of a specific GPU family.
@@ -20,23 +21,28 @@ Returns a Boolean value that indicates whether the GPU device supports the featu
 func supportsFamily(_ gpuFamily: MTLGPUFamily) -> Bool
 ```
 
+```objc
+- (BOOL) supportsFamily:(MTLGPUFamily) gpuFamily;
+```
+
 ## Mentions
 
-- [Improving your game’s graphics performance and settings](improving-your-games-graphics-performance-and-settings.md)
-- [Choosing a resource storage mode for Intel and AMD GPUs](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
-- [Setting resource storage modes](setting-resource-storage-modes.md)
+- [Improving your game’s graphics performance and settings](../improving-your-games-graphics-performance-and-settings.md)
+- [Choosing a resource storage mode for Intel and AMD GPUs](../choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
+- [Setting resource storage modes](../setting-resource-storage-modes.md)
 
 ## Parameters
 
-- `gpuFamily`: An [`MTLGPUFamily`](mtlgpufamily.md) instance.
+- `gpuFamily`: An [`MTLGPUFamily`](../mtlgpufamily.md) instance.
 
 ## See Also
 
-- [enum MTLGPUFamily](mtlgpufamily.md)
+### Checking a GPU device’s feature support
+- [enum MTLGPUFamily](../mtlgpufamily.md)
   Represents the functionality for families of GPUs.
-- [func supportsFeatureSet(MTLFeatureSet) -> Bool](mtldevice/supportsfeatureset(_:).md)
+- [func supportsFeatureSet(MTLFeatureSet) -> Bool](./supportsfeatureset%28_%29.md)
   Returns a Boolean value that indicates whether the GPU device supports a specific feature set.
-- [enum MTLFeatureSet](mtlfeatureset.md)
+- [enum MTLFeatureSet](../mtlfeatureset.md)
   The device feature sets that define specific platform, hardware, and software configurations.
 
 

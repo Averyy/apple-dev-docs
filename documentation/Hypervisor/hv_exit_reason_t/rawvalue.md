@@ -1,12 +1,13 @@
 # rawValue
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unsigned 32-bit integer that represents virual macine exit reasons.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

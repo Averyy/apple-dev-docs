@@ -1,12 +1,13 @@
 # isKeyWindow
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the window is the key window for the application.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,29 @@ A Boolean value that indicates whether the window is the key window for the appl
 var isKeyWindow: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isKeyWindow) BOOL keyWindow;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the window is the key window for the application; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) if the window is the key window for the application; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isMainWindow: Bool](nswindow/ismainwindow.md)
+### Related Documentation
+- [var isMainWindow: Bool](./ismainwindow.md)
   A Boolean value that indicates whether the window is the application’s main window.
-- [var canBecomeKey: Bool](nswindow/canbecomekey.md)
+### Managing Key Status
+- [var canBecomeKey: Bool](./canbecomekey.md)
   A Boolean value that indicates whether the window can become the key window.
-- [func makeKey()](nswindow/makekey.md)
+- [func makeKey()](./makekey%28%29.md)
   Makes the window the key window.
-- [func makeKeyAndOrderFront(Any?)](nswindow/makekeyandorderfront(_:).md)
+- [func makeKeyAndOrderFront(Any?)](./makekeyandorderfront%28_%29.md)
   Moves the window to the front of the screen list, within its level, and makes it the key window; that is, it shows the window.
-- [func becomeKey()](nswindow/becomekey.md)
+- [func becomeKey()](./becomekey%28%29.md)
   Informs the window that it has become the key window.
-- [func resignKey()](nswindow/resignkey.md)
+- [func resignKey()](./resignkey%28%29.md)
   Resigns the window’s key window status.
 
 

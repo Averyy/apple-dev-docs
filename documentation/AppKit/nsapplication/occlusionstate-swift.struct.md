@@ -1,7 +1,8 @@
 # NSApplication.OcclusionState
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 This constant indicates whether at least part of any window owned by this app is visible.
 
@@ -14,29 +15,34 @@ This constant indicates whether at least part of any window owned by this app is
 struct OcclusionState
 ```
 
+```c
+enum NSApplicationOcclusionState : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var visible: NSApplication.OcclusionState](nsapplication/occlusionstate-swift.struct/visible.md)
+- [static var visible: NSApplication.OcclusionState](./occlusionstate-swift.struct/visible.md)
   If set, at least part of any window owned by this app is visible.
 ### Initializers
-- [init(rawValue: UInt)](nsapplication/occlusionstate-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./occlusionstate-swift.struct/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var occlusionState: NSApplication.OcclusionState](nsapplication/occlusionstate-swift.property.md)
+### Getting the Occlusion State
+- [var occlusionState: NSApplication.OcclusionState](./occlusionstate-swift.property.md)
   The occlusion state of the app.
 
 

@@ -1,7 +1,8 @@
 # init(canSign:canEncrypt:securityError:addressesFailingEncryption:)
 
 **Framework**: MailKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that describes whether the message security handler can encrypt or sign an outgoing message.
 
@@ -14,6 +15,10 @@ Creates an object that describes whether the message security handler can encryp
 init(canSign: Bool, canEncrypt: Bool, securityError: (any Error)?, addressesFailingEncryption: [MEEmailAddress])
 ```
 
+```objc
+- (instancetype) initWithCanSign:(BOOL) canSign canEncrypt:(BOOL) canEncrypt securityError:(NSError *) securityError addressesFailingEncryption:(NSArray<MEEmailAddress *> *) addressesFailingEncryption;
+```
+
 ## Parameters
 
 - `canSign`: A Boolean value that indicates the message security handler can digitally sign the outgoing message.
@@ -23,13 +28,14 @@ init(canSign: Bool, canEncrypt: Bool, securityError: (any Error)?, addressesFail
 
 ## See Also
 
-- [var canSign: Bool](meoutgoingmessageencodingstatus/cansign.md)
+### Providing Encoding Status
+- [var canSign: Bool](./cansign.md)
   A Boolean value that indicates the message security handler can digitally sign the outgoing message.
-- [var canEncrypt: Bool](meoutgoingmessageencodingstatus/canencrypt.md)
+- [var canEncrypt: Bool](./canencrypt.md)
   A Boolean value that indicates the message security handler can encrypt the outgoing message.
-- [var securityError: (any Error)?](meoutgoingmessageencodingstatus/securityerror.md)
+- [var securityError: (any Error)?](./securityerror.md)
   An error that the message encoder encountered while determining the encoding status for the outgoing message.
-- [var addressesFailingEncryption: [MEEmailAddress]](meoutgoingmessageencodingstatus/addressesfailingencryption.md)
+- [var addressesFailingEncryption: [MEEmailAddress]](./addressesfailingencryption.md)
   An array of email addresses that prevent the message security handler from signing the message.
 
 

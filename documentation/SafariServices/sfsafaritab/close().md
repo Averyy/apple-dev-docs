@@ -1,7 +1,8 @@
 # close()
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.14.4+
@@ -12,10 +13,15 @@
 func close()
 ```
 
+```objc
+- (void) close;
+```
+
 ## See Also
 
-- [func getContainingWindow(completionHandler: (SFSafariWindow?) -> Void)](sfsafaritab/getcontainingwindow(completionhandler:).md)
-- [func navigate(to: URL)](sfsafaritab/navigate(to:).md)
+### Instance Methods
+- [func getContainingWindow(completionHandler: (SFSafariWindow?) -> Void)](./getcontainingwindow%28completionhandler%29.md)
+- [func navigate(to: URL)](./navigate%28to%29.md)
 
 
 ---

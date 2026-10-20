@@ -1,7 +1,8 @@
 # size(forNumberOfPages:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the size the receiver’s bounds should be to accommodate the given number of pages.
 
@@ -9,13 +10,17 @@ Returns the size the receiver’s bounds should be to accommodate the given numb
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func size(forNumberOfPages pageCount: Int) -> CGSize
+```
+
+```objc
+- (CGSize) sizeForNumberOfPages:(NSInteger) pageCount;
 ```
 
 #### Return Value

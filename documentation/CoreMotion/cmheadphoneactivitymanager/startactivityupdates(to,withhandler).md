@@ -1,7 +1,8 @@
 # startActivityUpdates(to:withHandler:)
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts headphone activity updates, providing data to the given handler through the given queue.
 
@@ -18,13 +19,18 @@ Starts headphone activity updates, providing data to the given handler through t
 func startActivityUpdates(to queue: OperationQueue, withHandler handler: @escaping CMHeadphoneActivityManager.ActivityHandler)
 ```
 
+```objc
+- (void) startActivityUpdatesToQueue:(NSOperationQueue *) queue withHandler:(CMHeadphoneActivityHandler) handler;
+```
+
 ## See Also
 
-- [func stopActivityUpdates()](cmheadphoneactivitymanager/stopactivityupdates.md)
+### Starting and Stopping Updates
+- [func stopActivityUpdates()](./stopactivityupdates%28%29.md)
   Stops headphone activity updates.
-- [func startStatusUpdates(to: OperationQueue, withHandler: CMHeadphoneActivityManager.StatusHandler)](cmheadphoneactivitymanager/startstatusupdates(to:withhandler:).md)
+- [func startStatusUpdates(to: OperationQueue, withHandler: CMHeadphoneActivityManager.StatusHandler)](./startstatusupdates%28to,withhandler%29.md)
   Starts headphone status updates, providing data to the given handler through the given queue.
-- [func stopStatusUpdates()](cmheadphoneactivitymanager/stopstatusupdates.md)
+- [func stopStatusUpdates()](./stopstatusupdates%28%29.md)
   Stops headphone status updates.
 
 

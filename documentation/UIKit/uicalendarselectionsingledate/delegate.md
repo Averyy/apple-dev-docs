@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate object that a calendar view asks about selectable dates and informs of changes to the selection of a single date.
 
@@ -17,9 +18,14 @@ A delegate object that a calendar view asks about selectable dates and informs o
 weak var delegate: (any UICalendarSelectionSingleDateDelegate)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) id<UICalendarSelectionSingleDateDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol UICalendarSelectionSingleDateDelegate](uicalendarselectionsingledatedelegate.md)
+### Setting the selection delegate
+- [protocol UICalendarSelectionSingleDateDelegate](../uicalendarselectionsingledatedelegate.md)
   A set of methods you implement to provide selectable dates and handle changes to the selection of a single date.
 
 

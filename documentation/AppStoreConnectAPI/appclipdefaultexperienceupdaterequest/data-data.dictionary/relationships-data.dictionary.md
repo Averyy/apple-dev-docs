@@ -1,7 +1,8 @@
 # AppClipDefaultExperienceUpdateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
@@ -10,14 +11,14 @@ The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object AppClipDefaultExperienceUpdateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipDefaultExperienceUpdateRequest.Data.Relationships.ReleaseWithAppStoreVersion](appclipdefaultexperienceupdaterequest/data-data.dictionary/relationships-data.dictionary/releasewithappstoreversion-data.dictionary.md)
+- [object AppClipDefaultExperienceUpdateRequest.Data.Relationships.ReleaseWithAppStoreVersion](./relationships-data.dictionary/releasewithappstoreversion-data.dictionary.md)
   The relationship to the App Store Versions resource you set with the request that updates a Default App Clip Experiences resource.
 
 ## Properties
@@ -26,7 +27,8 @@ object AppClipDefaultExperienceUpdateRequest.Data.Relationships
 
 ## See Also
 
-- [object AppClipDefaultExperienceUpdateRequest.Data.Attributes](appclipdefaultexperienceupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object AppClipDefaultExperienceUpdateRequest.Data.Attributes](./attributes-data.dictionary.md)
   The attributes you set that describe the new Default App Clip Experiences resource.
 
 

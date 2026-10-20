@@ -1,7 +1,8 @@
 # drawImage
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Draws the specified image with its upper-left corner at the specified point on the canvas, optionally scaling the image to a specified width and height. Alternatively, draws a specified region of the image, mapped to a specified region of the canvas.
 
@@ -11,7 +12,7 @@ Draws the specified image with its upper-left corner at the specified point on t
 
 ## Declaration
 
-```swift
+```
 void drawImage(
     CanvasImageSource image, 
     unrestricted float x, 

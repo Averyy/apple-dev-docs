@@ -1,7 +1,8 @@
 # kFxPropertyKey_VariesWhenParamsAreStatic
 
 **Framework**: Professional Video Applications  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that determines whether your rendering varies even when the parameters remain the same.
 
@@ -14,9 +15,13 @@ A key that determines whether your rendering varies even when the parameters rem
 var kFxPropertyKey_VariesWhenParamsAreStatic: String { get }
 ```
 
+```c
+#define kFxPropertyKey_VariesWhenParamsAreStatic
+```
+
 ## Mentions
 
-- [Building an FxPlug plug-in manually](../professional-video-applications/building-an-fxplug-plug-in-manually.md)
+- [Building an FxPlug plug-in manually](https://developer.apple.com/documentation/professional-video-applications/building-an-fxplug-plug-in-manually)
 
 #### Discussion
 
@@ -24,11 +29,12 @@ The value for this key is a Boolean `NSNumber` indicating whether this effect ch
 
 ## See Also
 
-- [var kFxPropertyKey_NeedsFullBuffer: String](kfxpropertykey_needsfullbuffer.md)
+### Property Keys
+- [var kFxPropertyKey_NeedsFullBuffer: String](./kfxpropertykey_needsfullbuffer.md)
   A key that determines whether the plug-in needs the entire image to do its processing, and can’t tile its rendering.
-- [var kFxPropertyKey_ChangesOutputSize: String](kfxpropertykey_changesoutputsize.md)
+- [var kFxPropertyKey_ChangesOutputSize: String](./kfxpropertykey_changesoutputsize.md)
   A key that determines whether your filter has the ability to change the size of its output to be different than the size of its input.
-- [var kFxPropertyKey_DesiredProcessingColorInfo: String](kfxpropertykey_desiredprocessingcolorinfo.md)
+- [var kFxPropertyKey_DesiredProcessingColorInfo: String](./kfxpropertykey_desiredprocessingcolorinfo.md)
   A key that determines whether your plug-in renders in linear or gamma-corrected color space.
 
 

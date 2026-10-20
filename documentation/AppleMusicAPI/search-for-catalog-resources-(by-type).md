@@ -1,7 +1,8 @@
 # Search for Catalog Resources
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Search the catalog by using a query.
 
@@ -10,13 +11,13 @@ Search the catalog by using a query.
 
 #### Discussion
 
-If successful, the HTTP status code is 200 (OK) and the `results` contains a map of search results. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [`Handling Requests and Responses`](handling-requests-and-responses.md).
+If successful, the HTTP status code is 200 (OK) and the `results` contains a map of search results. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/catalog/us/search?types=songs,albums,artists&term=beach+bunny
 ```
 
@@ -567,20 +568,40 @@ https://api.music.apple.com/v1/catalog/us/search?types=songs,albums,artists&term
 
 ## Parameters
 
+### Path Parameters
+
+- `storefront` (string) *(required)*: An iTunes Store territory, specified by an ISO 3166 alpha-2 country code. The possible values are the `id` attributes of `Storefront` objects.
+
+### Query Parameters
+
 - `term` (string) *(required)*: The entered text for the search with ‘`+`’ characters between each word, to replace spaces (for example `term=james+br`).
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 - `limit` (integer): The number of objects or number of objects in the specified relationship returned.
+
+  **Default**: `5`; **Maximum**: `25`
 - `offset` (string): The next page or group of objects to fetch.
 - `types` ([string]) *(required)*: The list of the types of resources to include in the results.
+
+  **Allowed Values**: `activities`, `albums`, `apple-curators`, `artists`, `curators`, `music-videos`, `playlists`, `record-labels`, `songs`, `stations`
 - `with` ([string]): A list of modifications to apply to the request.
+
+  **Allowed Values**: `topResults`
+
+## Responses
+
+- `200` OK (`SearchResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
 
 ## See Also
 
-- [object SearchResponse](searchresponse.md)
+### Related Documentation
+- [object SearchResponse](./searchresponse.md)
   The response to a search request.
-- [Get Catalog Search Hints](get-catalog-search-hints.md)
+### Searching for Catalog Resources
+- [Get Catalog Search Hints](./get-catalog-search-hints.md)
   Fetch the search term results for a hint.
-- [Get Catalog Search Suggestions](get-catalog-search-suggesions.md)
+- [Get Catalog Search Suggestions](./get-catalog-search-suggesions.md)
   Fetch the search suggestions for a provided term input.
 
 

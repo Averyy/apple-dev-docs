@@ -1,7 +1,8 @@
 # UIGraphicsImageRendererContext
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The drawing environment for an image renderer.
 
@@ -18,54 +19,59 @@ The drawing environment for an image renderer.
 class UIGraphicsImageRendererContext
 ```
 
+```objc
+@interface UIGraphicsImageRendererContext : UIGraphicsRendererContext
+```
+
 #### Overview
 
-When using the [`UIGraphicsImageRenderer`](uigraphicsimagerenderer.md) drawing methods, you must pass a block of type [`UIGraphicsImageRenderer.DrawingActions`](uigraphicsimagerenderer/drawingactions.md) as an argument, which provides a [`UIGraphicsImageRendererContext`](uigraphicsimagerenderercontext.md) instance as an argument. Use the context object to access high-level drawing functions and the underlying Core Graphics context.
+When using the [`UIGraphicsImageRenderer`](./uigraphicsimagerenderer.md) drawing methods, you must pass a block of type [`UIGraphicsImageRenderer.DrawingActions`](./uigraphicsimagerenderer/drawingactions.md) as an argument, which provides a [`UIGraphicsImageRendererContext`](./uigraphicsimagerenderercontext.md) instance as an argument. Use the context object to access high-level drawing functions and the underlying Core Graphics context.
 
-> **Note**:  `UIGraphicsImageRendererContext` inherits much of its functionality from its abstract superclass [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md).
+> **Note**:  `UIGraphicsImageRendererContext` inherits much of its functionality from its abstract superclass [`UIGraphicsRendererContext`](./uigraphicsrenderercontext.md).
 
-To learn how to use a `UIGraphicsImageRendererContext` object in combination with an image renderer, see [`Creating a graphics image renderer`](uigraphicsimagerenderer#Creating-a-graphics-image-renderer.md).
+To learn how to use a `UIGraphicsImageRendererContext` object in combination with an image renderer, see [Creating a graphics image renderer](./uigraphicsimagerenderer.md#Creating-a-graphics-image-renderer).
 
 ## Topics
 
 ### Getting the image
-- [var currentImage: UIImage](uigraphicsimagerenderercontext/currentimage.md)
+- [var currentImage: UIImage](./uigraphicsimagerenderercontext/currentimage.md)
   The current state of the drawing context, expressed as an object that manages image data in your app.
 ### Getting the image drawing actions
-- [UIGraphicsImageRenderer.DrawingActions](uigraphicsimagerenderer/drawingactions.md)
+- [UIGraphicsImageRenderer.DrawingActions](./uigraphicsimagerenderer/drawingactions.md)
   A closure for drawing an image.
 
 ## Relationships
 
 ### Inherits From
-- [UIGraphicsRendererContext](uigraphicsrenderercontext.md)
+- [UIGraphicsRendererContext](./uigraphicsrenderercontext.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UIGraphicsRenderer](uigraphicsrenderer.md)
+### Graphics contexts
+- [class UIGraphicsRenderer](./uigraphicsrenderer.md)
   An abstract base class for creating graphics renderers.
-- [class UIGraphicsRendererContext](uigraphicsrenderercontext.md)
+- [class UIGraphicsRendererContext](./uigraphicsrenderercontext.md)
   The base class for the drawing environments for graphics renderers.
-- [class UIGraphicsRendererFormat](uigraphicsrendererformat.md)
+- [class UIGraphicsRendererFormat](./uigraphicsrendererformat.md)
   A set of drawing attributes that represents the configuration of a graphics renderer context.
-- [class UIGraphicsImageRenderer](uigraphicsimagerenderer.md)
+- [class UIGraphicsImageRenderer](./uigraphicsimagerenderer.md)
   A graphics renderer for creating Core Graphics-backed images.
-- [class UIGraphicsImageRendererFormat](uigraphicsimagerendererformat.md)
+- [class UIGraphicsImageRendererFormat](./uigraphicsimagerendererformat.md)
   A set of drawing attributes that represents the configuration of an image renderer context.
-- [class UIGraphicsPDFRenderer](uigraphicspdfrenderer.md)
+- [class UIGraphicsPDFRenderer](./uigraphicspdfrenderer.md)
   A graphics renderer for creating PDFs.
-- [class UIGraphicsPDFRendererContext](uigraphicspdfrenderercontext.md)
+- [class UIGraphicsPDFRendererContext](./uigraphicspdfrenderercontext.md)
   The drawing environment for a PDF renderer.
-- [class UIGraphicsPDFRendererFormat](uigraphicspdfrendererformat.md)
+- [class UIGraphicsPDFRendererFormat](./uigraphicspdfrendererformat.md)
   A set of drawing attributes that represents the configuration of a PDF renderer context.
 
 

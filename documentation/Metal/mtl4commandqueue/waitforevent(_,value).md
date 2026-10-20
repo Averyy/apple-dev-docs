@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Schedules an operation to wait for a GPU event of a specific value before continuing to execute any future GPU work.
@@ -20,9 +21,13 @@ Schedules an operation to wait for a GPU event of a specific value before contin
 func waitForEvent(_ event: any MTLEvent, value: UInt64)
 ```
 
+```objc
+- (void) waitForEvent:(id<MTLEvent>) event value:(uint64_t) value;
+```
+
 ## Parameters
 
-- `event`: [`MTLEvent`](mtlevent.md) to wait on.
+- `event`: [`MTLEvent`](../mtlevent.md) to wait on.
 - `value`: The specific value to wait for.
 
 

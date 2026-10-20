@@ -1,7 +1,8 @@
 # useHardwareAcceleration
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value specifying that using hardware is preferred when decoding.
 
@@ -17,6 +18,10 @@ A Boolean value specifying that using hardware is preferred when decoding.
 
 ```swift
 static let useHardwareAcceleration: CIImageOption
+```
+
+```c
+extern CIImageOption const kCIImageUseHardwareAcceleration;
 ```
 
 #### Discussion

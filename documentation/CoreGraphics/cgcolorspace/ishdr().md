@@ -1,7 +1,8 @@
 # isHDR()
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func isHDR() -> Bool
+```
+
+```c
+extern bool CGColorSpaceIsHDR(CGColorSpaceRef );
 ```
 
 

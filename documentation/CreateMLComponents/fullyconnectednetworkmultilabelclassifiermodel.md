@@ -1,7 +1,8 @@
 # FullyConnectedNetworkMultiLabelClassifierModel
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A multi-label classifier model that uses a fully-connected network.
 
@@ -22,54 +23,55 @@ struct FullyConnectedNetworkMultiLabelClassifierModel<Scalar, Label> where Scala
 ## Topics
 
 ### Performing a classification
-- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) throws -> ClassificationDistribution<Label>](fullyconnectednetworkmultilabelclassifiermodel/applied(to:eventhandler:).md)
+- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) throws -> ClassificationDistribution<Label>](./fullyconnectednetworkmultilabelclassifiermodel/applied%28to,eventhandler%29.md)
   Performs a classification on a shaped array.
 ### Computing evaluation metrics
-- [func evaluation(on: some Collection<AnnotatedFeature<MLShapedArray<Scalar>, Set<Label>>>, confidenceThresholds: [Label : Float]) throws -> MultiLabelClassificationMetrics<Label>](fullyconnectednetworkmultilabelclassifiermodel/evaluation(on:confidencethresholds:).md)
+- [func evaluation(on: some Collection<AnnotatedFeature<MLShapedArray<Scalar>, Set<Label>>>, confidenceThresholds: [Label : Float]) throws -> MultiLabelClassificationMetrics<Label>](./fullyconnectednetworkmultilabelclassifiermodel/evaluation%28on,confidencethresholds%29.md)
   Computes evaluation metrics on annotated examples.
 ### Performing a prediction
-- [func prediction(from:confidenceThresholds:)](fullyconnectednetworkmultilabelclassifiermodel/prediction(from:confidencethresholds:).md)
+- [func prediction(from:confidenceThresholds:)](./fullyconnectednetworkmultilabelclassifiermodel/prediction%28from,confidencethresholds%29.md)
   Performs a prediction and keeps label-confidence pairs that are greater than or equal to the provided confidence thresholds.
 ### Updating the precision recall curve
-- [func updatePrecisionRecallCurves(some Collection<AnnotatedFeature<MLShapedArray<Scalar>, Set<Label>>>) async throws](fullyconnectednetworkmultilabelclassifiermodel/updateprecisionrecallcurves(_:).md)
+- [func updatePrecisionRecallCurves(some Collection<AnnotatedFeature<MLShapedArray<Scalar>, Set<Label>>>) async throws](./fullyconnectednetworkmultilabelclassifiermodel/updateprecisionrecallcurves%28_%29.md)
   Updates the per-label precision-recall curve using the input data.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transformer](transformer.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Transformer](./transformer.md)
 
 ## See Also
 
-- [protocol Classifier](classifier.md)
+### Classifiers
+- [protocol Classifier](./classifier.md)
   An estimator that predicts classification probabilities.
-- [struct LogisticRegressionClassifier](logisticregressionclassifier.md)
+- [struct LogisticRegressionClassifier](./logisticregressionclassifier.md)
   A logistic regression classifier.
-- [struct LogisticRegressionClassifierModel](logisticregressionclassifiermodel.md)
+- [struct LogisticRegressionClassifierModel](./logisticregressionclassifiermodel.md)
   A trained logistic regression classifier model.
-- [struct BoostedTreeClassifier](boostedtreeclassifier.md)
+- [struct BoostedTreeClassifier](./boostedtreeclassifier.md)
   A gradient boosted decision tree classifier.
-- [struct BoostedTreeConfiguration](boostedtreeconfiguration.md)
+- [struct BoostedTreeConfiguration](./boostedtreeconfiguration.md)
   A boosted tree configuration.
-- [struct FullyConnectedNetworkClassifier](fullyconnectednetworkclassifier.md)
+- [struct FullyConnectedNetworkClassifier](./fullyconnectednetworkclassifier.md)
   A classifier that uses a fully connected network.
-- [struct FullyConnectedNetworkClassifierModel](fullyconnectednetworkclassifiermodel.md)
+- [struct FullyConnectedNetworkClassifierModel](./fullyconnectednetworkclassifiermodel.md)
   A classifier model that uses a fully connected network.
-- [struct FullyConnectedNetworkMultiLabelClassifier](fullyconnectednetworkmultilabelclassifier.md)
+- [struct FullyConnectedNetworkMultiLabelClassifier](./fullyconnectednetworkmultilabelclassifier.md)
   A classifier that uses a multi-label fully-connected network.
-- [struct FullyConnectedNetworkConfiguration](fullyconnectednetworkconfiguration.md)
+- [struct FullyConnectedNetworkConfiguration](./fullyconnectednetworkconfiguration.md)
   A fully connected network configuration.
-- [struct TreeClassifierModel](treeclassifiermodel.md)
+- [struct TreeClassifierModel](./treeclassifiermodel.md)
   A trained tree classifier model.
-- [struct TimeSeriesClassifier](timeseriesclassifier.md)
-- [struct TimeSeriesClassifierConfiguration](timeseriesclassifierconfiguration.md)
+- [struct TimeSeriesClassifier](./timeseriesclassifier.md)
+- [struct TimeSeriesClassifierConfiguration](./timeseriesclassifierconfiguration.md)
   The configuration for a time-series classifier.
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new proximity reader discovery object.
 

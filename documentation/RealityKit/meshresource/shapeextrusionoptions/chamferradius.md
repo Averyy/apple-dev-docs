@@ -1,7 +1,8 @@
 # chamferRadius
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width or depth, in meters, of each chamfered edge.
 

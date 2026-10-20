@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new instance by decoding from the given decoder
 

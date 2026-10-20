@@ -1,7 +1,8 @@
 # upperAngleLimit
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum angle that the node can have after it is rotated by a reach event.
 
@@ -20,11 +21,16 @@ The maximum angle that the node can have after it is rotated by a reach event.
 var upperAngleLimit: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGFloat upperAngleLimit;
+```
+
 ## See Also
 
-- [init(lowerAngleLimit: CGFloat, upperAngleLimit: CGFloat)](skreachconstraints/init(loweranglelimit:upperanglelimit:).md)
+### Working with Reach Constraints
+- [init(lowerAngleLimit: CGFloat, upperAngleLimit: CGFloat)](./init%28loweranglelimit,upperanglelimit%29.md)
   Initializes a new reach constraint object.
-- [var lowerAngleLimit: CGFloat](skreachconstraints/loweranglelimit.md)
+- [var lowerAngleLimit: CGFloat](./loweranglelimit.md)
   The minimum angle that the node can have after it is rotated by a reach event.
 
 

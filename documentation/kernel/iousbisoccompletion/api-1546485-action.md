@@ -1,7 +1,8 @@
 # action
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The function to call.
 
@@ -10,15 +11,16 @@ The function to call.
 
 ## Declaration
 
-```swift
+```c
 IOUSBIsocCompletionAction action;
 ```
 
 ## See Also
 
-- [target](iousbisoccompletion/1546120-target.md)
+### Getting the Properties
+- [target](./api-1546120-target.md)
   The target to pass to the action function.
-- [parameter](iousbisoccompletion/1546572-parameter.md)
+- [parameter](./api-1546572-parameter.md)
   The parameter to pass to the action function.
 
 

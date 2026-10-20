@@ -1,7 +1,8 @@
 # Instructions
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Details you provide that define the model’s intended behavior on prompts.
 
@@ -21,12 +22,12 @@ struct Instructions
 
 ## Mentions
 
-- [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
-- [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
-- [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
-- [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
-- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
-- [Supporting languages and locales with Foundation Models](supporting-languages-and-locales-with-foundation-models.md)
+- [Improving the safety of generative model output](./improving-the-safety-of-generative-model-output.md)
+- [Composing dynamic sessions with instructions and profiles](./composing-dynamic-sessions-with-instructions-and-profiles.md)
+- [Generating content and performing tasks with Foundation Models](./generating-content-and-performing-tasks-with-foundation-models.md)
+- [Prompting an on-device foundation model](./prompting-an-on-device-foundation-model.md)
+- [Running a Core AI model in a Foundation Models session](./running-a-core-ai-model-in-a-foundation-models-session.md)
+- [Supporting languages and locales with Foundation Models](./supporting-languages-and-locales-with-foundation-models.md)
 
 #### Overview
 
@@ -44,9 +45,9 @@ let prompt = "Making homemade bread"
 let response = try await session.respond(to: prompt)
 ```
 
-Don’t include untrusted content in instructions: the model is typically trained to obey instructions over any commands it receives in prompts. For more on how instructions impact generation quality and safety, see [`Improving the safety of generative model output`](improving-the-safety-of-generative-model-output.md).
+Don’t include untrusted content in instructions: the model is typically trained to obey instructions over any commands it receives in prompts. For more on how instructions impact generation quality and safety, see [Improving the safety of generative model output](./improving-the-safety-of-generative-model-output.md).
 
-All input to the model contributes tokens to the context window of the [`LanguageModelSession`](languagemodelsession.md) — including the [`Instructions`](instructions.md), [`Prompt`](prompt.md), [`Tool`](tool.md), and [`Generable`](generable.md) types, and the model’s responses. If your session exceeds the available context size, it throws  [`LanguageModelError.contextSizeExceeded(_:)`](languagemodelerror/contextsizeexceeded(_:).md).
+All input to the model contributes tokens to the context window of the [`LanguageModelSession`](./languagemodelsession.md) — including the [`Instructions`](./instructions.md), [`Prompt`](./prompt.md), [`Tool`](./tool.md), and [`Generable`](./generable.md) types, and the model’s responses. If your session exceeds the available context size, it throws  [`LanguageModelError.contextSizeExceeded(_:)`](./languagemodelerror/contextsizeexceeded%28_%29.md).
 
 Instructions can consume a lot of tokens that contribute to the context window size. To reduce your instruction size:
 
@@ -55,43 +56,44 @@ Instructions can consume a lot of tokens that contribute to the context window s
 - Use concise and imperative language instead of indirect or jargon that the model might misinterpret.
 - Aim for one to three paragraphs instead of including a significant amount of background information, policy, or extra content.
 
-For more information on managing the context window size, see [`Managing the context window`](managing-the-context-window.md).
+For more information on managing the context window size, see [Managing the context window](./managing-the-context-window.md).
 
 ## Topics
 
 ### Creating instructions
-- [init(_:)](instructions/init(_:).md)
+- [init(_:)](./instructions/init%28_%29.md)
   Creates instructions from the content of a builder closure.
-- [struct InstructionsBuilder](instructionsbuilder.md)
+- [struct InstructionsBuilder](./instructionsbuilder.md)
   A type that represents an instructions builder.
-- [protocol InstructionsRepresentable](instructionsrepresentable.md)
+- [protocol InstructionsRepresentable](./instructionsrepresentable.md)
   A type that can be represented as instructions.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [DynamicInstructions](dynamicinstructions.md)
-- [Escapable](../swift/escapable.md)
-- [InstructionsRepresentable](instructionsrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [DynamicInstructions](./dynamicinstructions.md)
+- [Escapable](../Swift/escapable.md)
+- [InstructionsRepresentable](./instructionsrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
+### Sessions and prompts
+- [Prompting an on-device foundation model](./prompting-an-on-device-foundation-model.md)
   Tailor your prompts to get effective results from an on-device model.
-- [Managing the context window](managing-the-context-window.md)
+- [Managing the context window](./managing-the-context-window.md)
   Optimize your app’s token usage when prompting a model with the Foundation Models framework.
-- [Updating prompts for new model versions](updating-prompts-for-new-model-versions.md)
+- [Updating prompts for new model versions](./updating-prompts-for-new-model-versions.md)
   Manage the prompts your app uses by versioning them to make the most out of model improvements.
-- [class LanguageModelSession](languagemodelsession.md)
+- [class LanguageModelSession](./languagemodelsession.md)
   An object that represents a session that interacts with a language model.
-- [struct Prompt](prompt.md)
+- [struct Prompt](./prompt.md)
   A prompt from a person to the model.
-- [struct GenerationOptions](generationoptions.md)
+- [struct GenerationOptions](./generationoptions.md)
   Options that control how the model generates its response to a prompt.
-- [struct ContextOptions](contextoptions.md)
+- [struct ContextOptions](./contextoptions.md)
   Options that configure details that should appear in the prompt.
 
 

@@ -1,7 +1,8 @@
 # transitioningDelegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object that provides transition animator, interactive controller, and custom presentation controller objects.
 
@@ -9,7 +10,7 @@ The delegate object that provides transition animator, interactive controller, a
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,27 +19,32 @@ The delegate object that provides transition animator, interactive controller, a
 weak var transitioningDelegate: (any UIViewControllerTransitioningDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIViewControllerTransitioningDelegate> transitioningDelegate;
+```
+
 #### Discussion
 
-When the view controller’s [`modalPresentationStyle`](uiviewcontroller/modalpresentationstyle.md) property is [`UIModalPresentationStyle.custom`](uimodalpresentationstyle/custom.md), UIKit uses the object in this property to facilitate transitions and presentations for the view controller. The transitioning delegate object is a custom object that you provide and that conforms to the [`UIViewControllerTransitioningDelegate`](uiviewcontrollertransitioningdelegate.md) protocol. Its job is to vend the animator objects used to animate this view controller’s view onscreen and an optional presentation controller to provide any additional chrome and animations.
+When the view controller’s [`modalPresentationStyle`](./modalpresentationstyle.md) property is [`UIModalPresentationStyle.custom`](../uimodalpresentationstyle/custom.md), UIKit uses the object in this property to facilitate transitions and presentations for the view controller. The transitioning delegate object is a custom object that you provide and that conforms to the [`UIViewControllerTransitioningDelegate`](../uiviewcontrollertransitioningdelegate.md) protocol. Its job is to vend the animator objects used to animate this view controller’s view onscreen and an optional presentation controller to provide any additional chrome and animations.
 
 ## See Also
 
-- [var transitionCoordinator: (any UIViewControllerTransitionCoordinator)?](uiviewcontroller/transitioncoordinator.md)
+### Adding a custom transition or presentation
+- [var transitionCoordinator: (any UIViewControllerTransitionCoordinator)?](./transitioncoordinator.md)
   Returns the active transition coordinator object.
-- [func targetViewController(forAction: Selector, sender: Any?) -> UIViewController?](uiviewcontroller/targetviewcontroller(foraction:sender:).md)
+- [func targetViewController(forAction: Selector, sender: Any?) -> UIViewController?](./targetviewcontroller%28foraction,sender%29.md)
   Returns the view controller that responds to the action.
-- [var presentationController: UIPresentationController?](uiviewcontroller/presentationcontroller.md)
+- [var presentationController: UIPresentationController?](./presentationcontroller.md)
   The presentation controller that’s managing the current view controller.
-- [var popoverPresentationController: UIPopoverPresentationController?](uiviewcontroller/popoverpresentationcontroller.md)
+- [var popoverPresentationController: UIPopoverPresentationController?](./popoverpresentationcontroller.md)
   The nearest popover presentation controller that is managing the current view controller.
-- [var sheetPresentationController: UISheetPresentationController?](uiviewcontroller/sheetpresentationcontroller.md)
+- [var sheetPresentationController: UISheetPresentationController?](./sheetpresentationcontroller.md)
   The sheet presentation controller for the view controller.
-- [var activePresentationController: UIPresentationController?](uiviewcontroller/activepresentationcontroller.md)
+- [var activePresentationController: UIPresentationController?](./activepresentationcontroller.md)
   The presentation controller that’s managing the view controller.
-- [var restoresFocusAfterTransition: Bool](uiviewcontroller/restoresfocusaftertransition.md)
+- [var restoresFocusAfterTransition: Bool](./restoresfocusaftertransition.md)
   A Boolean value that indicates whether an item that previously was focused should again become focused when the item’s view controller becomes visible and focusable.
-- [Customizing and resizing sheets in UIKit](customizing-and-resizing-sheets-in-uikit.md)
+- [Customizing and resizing sheets in UIKit](../customizing-and-resizing-sheets-in-uikit.md)
   Discover how to create a layered and customized sheet experience in UIKit.
 
 

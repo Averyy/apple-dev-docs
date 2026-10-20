@@ -2,6 +2,7 @@
 
 **Framework**: PaperKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Interactions that people can perform on this markup.
@@ -25,7 +26,8 @@ Use this to configure how people can interact with the markup, such as preventin
 
 ## See Also
 
-- [struct MarkupInteractions](markupinteractions.md)
+### Controlling interactions
+- [struct MarkupInteractions](../markupinteractions.md)
   Interactions that people can perform on markup elements.
 
 

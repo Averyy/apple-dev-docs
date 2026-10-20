@@ -1,7 +1,8 @@
 # contentStyle
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content style that the vehicle selects.
 
@@ -16,13 +17,18 @@ The content style that the vehicle selects.
 var contentStyle: CPContentStyle { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CPContentStyle contentStyle;
+```
+
 #### Discussion
 
 The vehicle selects the content style according to the ambient light level. Your navigation app can use this value to determine the most appropriate style of map content to draw in its base view. The content style is independent of the user interface style, which controls light and dark mode.
 
 ## See Also
 
-- [struct CPContentStyle](cpcontentstyle.md)
+### Getting the Content Style
+- [struct CPContentStyle](../cpcontentstyle.md)
   The types of content style that the vehicle allows.
 
 

@@ -1,7 +1,8 @@
 # translateX(by:yBy:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the specified translation factors to the receiver’s transformation matrix.
 
@@ -15,6 +16,10 @@ Applies the specified translation factors to the receiver’s transformation mat
 func translateX(by deltaX: Double, yBy deltaY: Double)
 ```
 
+```objc
+- (void) translateXBy:(CGFloat) deltaX yBy:(CGFloat) deltaY;
+```
+
 #### Discussion
 
 Subsequent transformations cause coordinates to be shifted by `deltaX` units along the x axis and by `deltaY` units along the y axis. Translation factors do not affect `NSSize` values, which specify a differential between points.
@@ -26,19 +31,20 @@ Subsequent transformations cause coordinates to be shifted by `deltaX` units alo
 
 ## See Also
 
-- [func rotate(byDegrees: Double)](nsaffinetransform/rotate(bydegrees:).md)
+### Accumulating Transformations
+- [func rotate(byDegrees: Double)](./rotate%28bydegrees%29.md)
   Applies a rotation factor (measured in degrees) to the receiver’s transformation matrix.
-- [func rotate(byRadians: Double)](nsaffinetransform/rotate(byradians:).md)
+- [func rotate(byRadians: Double)](./rotate%28byradians%29.md)
   Applies a rotation factor (measured in radians) to the receiver’s transformation matrix.
-- [func scale(by: Double)](nsaffinetransform/scale(by:).md)
+- [func scale(by: Double)](./scale%28by%29.md)
   Applies the specified scaling factor along both x and y axes to the receiver’s transformation matrix.
-- [func scaleX(by: Double, yBy: Double)](nsaffinetransform/scalex(by:yby:).md)
+- [func scaleX(by: Double, yBy: Double)](./scalex%28by,yby%29.md)
   Applies scaling factors to each axis of the receiver’s transformation matrix.
-- [func append(NSAffineTransform)](nsaffinetransform/append(_:).md)
+- [func append(NSAffineTransform)](./append%28_%29.md)
   Appends the specified matrix to the receiver’s matrix.
-- [func prepend(NSAffineTransform)](nsaffinetransform/prepend(_:).md)
+- [func prepend(NSAffineTransform)](./prepend%28_%29.md)
   Prepends the specified matrix to the receiver’s matrix.
-- [func invert()](nsaffinetransform/invert.md)
+- [func invert()](./invert%28%29.md)
   Replaces the receiver’s matrix with its inverse matrix.
 
 

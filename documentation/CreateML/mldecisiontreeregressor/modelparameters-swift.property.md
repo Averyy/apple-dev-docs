@@ -1,7 +1,8 @@
 # modelParameters
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying parameters used when training the model.
 
@@ -21,9 +22,10 @@ let modelParameters: MLDecisionTreeRegressor.ModelParameters
 
 ## See Also
 
-- [var model: MLModel](mldecisiontreeregressor/model.md)
+### Inspecting a decision tree regressor
+- [var model: MLModel](./model.md)
   The Core ML model.
-- [MLDecisionTreeRegressor.ModelParameters](mldecisiontreeregressor/modelparameters-swift.struct.md)
+- [MLDecisionTreeRegressor.ModelParameters](./modelparameters-swift.struct.md)
   Parameters that affect the process of training a model.
 
 

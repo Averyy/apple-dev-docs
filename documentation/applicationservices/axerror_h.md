@@ -1,19 +1,20 @@
 # AXError.h
 
-**Framework**: Application Services
+**Framework**: Application Services  
+**Role**: API Collection
 
 These error codes can be returned from the accessibility functions defined in AXUIElement.h.
 
 #### Overview
 
-##### 1678830
+##### Included Headers
 
 - <CoreFoundation/CoreFoundation.h>
 
 ## Topics
 
 ### Constants
-- [enum AXError](axerror.md)
+- [enum AXError](./axerror.md)
   Error codes returned by accessibility functions.
 
 

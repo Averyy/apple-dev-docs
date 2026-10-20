@@ -1,7 +1,8 @@
 # audioTimePitchAlgorithm
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A processing algorithm for managing audio pitch for scaled audio edits.
 
@@ -19,13 +20,18 @@ A processing algorithm for managing audio pitch for scaled audio edits.
 var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm { get set }
 ```
 
+```objc
+@property (nonatomic, copy) AVAudioTimePitchAlgorithm audioTimePitchAlgorithm;
+```
+
 #### Discussion
 
-The default value is [`spectral`](avaudiotimepitchalgorithm/spectral.md).
+The default value is [`spectral`](../avaudiotimepitchalgorithm/spectral.md).
 
 ## See Also
 
-- [var audioMix: AVAudioMix?](avassetexportsession/audiomix.md)
+### Configuring audio output
+- [var audioMix: AVAudioMix?](./audiomix.md)
   The parameters for audio mixing and an indication of whether to enable nondefault audio mixing for export.
 
 

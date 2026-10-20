@@ -1,7 +1,8 @@
 # AVCaptureDevice.MicrophoneMode.voiceIsolation
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that processes microphone audio to isolate the voice and attenuate other signals.
 
@@ -18,11 +19,16 @@ A mode that processes microphone audio to isolate the voice and attenuate other 
 case voiceIsolation
 ```
 
+```c
+AVCaptureMicrophoneModeVoiceIsolation
+```
+
 ## See Also
 
-- [AVCaptureDevice.MicrophoneMode.standard](avcapturedevice/microphonemode/standard.md)
+### Microphone modes
+- [AVCaptureDevice.MicrophoneMode.standard](./standard.md)
   A mode that processes microphone audio with standard voice DSP.
-- [AVCaptureDevice.MicrophoneMode.wideSpectrum](avcapturedevice/microphonemode/widespectrum.md)
+- [AVCaptureDevice.MicrophoneMode.wideSpectrum](./widespectrum.md)
   A mode that minimizes microphone audio processing to capture all sounds in the room.
 
 

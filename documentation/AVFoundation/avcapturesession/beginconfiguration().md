@@ -1,7 +1,8 @@
 # beginConfiguration()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Marks the beginning of changes to a running capture session’s configuration to perform in a single atomic update.
 
@@ -19,19 +20,24 @@ Marks the beginning of changes to a running capture session’s configuration to
 func beginConfiguration()
 ```
 
+```objc
+- (void) beginConfiguration;
+```
+
 ## Mentions
 
-- [Setting up a capture session](setting-up-a-capture-session.md)
+- [Setting up a capture session](../setting-up-a-capture-session.md)
 
 #### Discussion
 
-Call this method and [`commitConfiguration()`](avcapturesession/commitconfiguration().md) to batch multiple configuration operations on a running session into an atomic update.
+Call this method and [`commitConfiguration()`](./commitconfiguration%28%29.md) to batch multiple configuration operations on a running session into an atomic update.
 
-After you call this method, you can add or remove outputs, alter the [`sessionPreset`](avcapturesession/sessionpreset.md), or configure individual capture input or output properties. The session configuration doesn’t change until you invoke [`commitConfiguration()`](avcapturesession/commitconfiguration().md), at which the system updates all settings. You can nest [`beginConfiguration()`](avcapturesession/beginconfiguration().md) and [`commitConfiguration()`](avcapturesession/commitconfiguration().md) pairs, and the system applies the changes when you call the outermost commit.
+After you call this method, you can add or remove outputs, alter the [`sessionPreset`](./sessionpreset.md), or configure individual capture input or output properties. The session configuration doesn’t change until you invoke [`commitConfiguration()`](./commitconfiguration%28%29.md), at which the system updates all settings. You can nest [`beginConfiguration()`](./beginconfiguration%28%29.md) and [`commitConfiguration()`](./commitconfiguration%28%29.md) pairs, and the system applies the changes when you call the outermost commit.
 
 ## See Also
 
-- [func commitConfiguration()](avcapturesession/commitconfiguration.md)
+### Configuring a session
+- [func commitConfiguration()](./commitconfiguration%28%29.md)
   Commits one or more changes to a running capture session’s configuration in a single atomic update.
 
 

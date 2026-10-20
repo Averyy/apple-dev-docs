@@ -1,7 +1,8 @@
 # InAppPurchaseLocalizationV2.Relationships.Version
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The In-App Purchase version for the In-App Purchase localization.
 
@@ -10,14 +11,14 @@ The In-App Purchase version for the In-App Purchase localization.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseLocalizationV2.Relationships.Version
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseLocalizationV2.Relationships.Version.Data](inapppurchaselocalizationv2/relationships-data.dictionary/version-data.dictionary/data-data.dictionary.md)
+- [object InAppPurchaseLocalizationV2.Relationships.Version.Data](./version-data.dictionary/data-data.dictionary.md)
   The request body you use to modify an In-App Purchase localization with the v2 API.
 
 ## Properties

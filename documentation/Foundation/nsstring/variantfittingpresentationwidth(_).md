@@ -1,7 +1,8 @@
 # variantFittingPresentationWidth(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string variation suitable for the specified presentation width.
 
@@ -20,6 +21,10 @@ Returns a string variation suitable for the specified presentation width.
 func variantFittingPresentationWidth(_ width: Int) -> String
 ```
 
+```objc
+- (NSString *) variantFittingPresentationWidth:(NSInteger) width;
+```
+
 #### Return Value
 
 A string variation, or the original string if no variations exist for the specified width.
@@ -28,9 +33,9 @@ A string variation, or the original string if no variations exist for the specif
 
 You can use this method to provide adaptive strings for the user’s device—that is, text that avoids truncation and maximizes available space. For example, an app running on an iPad Pro in Landscape orientation might welcome a user with the message “Greetings and Salutations!”, whereas the same app running on an iPhone SE in Portrait orientation might instead show an abbreviated welcome message, like “Hello!”.
 
-> **Note**:  Don’t call this method when setting user-visible text for standard UIKit controls, such as [`UILabel`](https://developer.apple.com/documentation/uikit/uilabel). UIKit provides built-in support for adaptive strings, and automatically selects the string width variant appropriate for the current screen size according to the behavior described below.
+> **Note**:  Don’t call this method when setting user-visible text for standard UIKit controls, such as [`UILabel`](../../UIKit/uilabel.md). UIKit provides built-in support for adaptive strings, and automatically selects the string width variant appropriate for the current screen size according to the behavior described below.
 
-Call this method on a string with one or more width variations. You define width variations for a localized string in a Stringsdict file using the `NSStringVariableWidthRuleType` key, and then retrieve a string with variations using [`NSLocalizedString`](nslocalizedstring.md).
+Call this method on a string with one or more width variations. You define width variations for a localized string in a Stringsdict file using the `NSStringVariableWidthRuleType` key, and then retrieve a string with variations using [`NSLocalizedString`](../nslocalizedstring.md).
 
 For example, consider the `stringsdict.plist` file in the first listing and the corresponding code in the second listing.
 
@@ -78,17 +83,18 @@ In iOS, width contexts are measured by the number of em units that fit across th
 
 ## See Also
 
-- [func draw(at: CGPoint, withAttributes: [NSAttributedString.Key : Any]?)](nsstring/draw(at:withattributes:).md)
+### Sizing and Drawing Strings
+- [func draw(at: CGPoint, withAttributes: [NSAttributedString.Key : Any]?)](./draw%28at,withattributes%29.md)
   Draws the receiver with the font and other display characteristics of the given attributes, at the specified point in the current graphics context.
-- [func draw(in: CGRect, withAttributes: [NSAttributedString.Key : Any]?)](nsstring/draw(in:withattributes:).md)
+- [func draw(in: CGRect, withAttributes: [NSAttributedString.Key : Any]?)](./draw%28in,withattributes%29.md)
   Draws the attributed string inside the specified bounding rectangle.
-- [func draw(with: CGRect, options: NSStringDrawingOptions, attributes: [NSAttributedString.Key : Any]?, context: NSStringDrawingContext?)](nsstring/draw(with:options:attributes:context:).md)
+- [func draw(with: CGRect, options: NSStringDrawingOptions, attributes: [NSAttributedString.Key : Any]?, context: NSStringDrawingContext?)](./draw%28with,options,attributes,context%29.md)
   Draws the attributed string in the specified bounding rectangle using the provided options.
-- [func boundingRect(with: CGSize, options: NSStringDrawingOptions, attributes: [NSAttributedString.Key : Any]?, context: NSStringDrawingContext?) -> CGRect](nsstring/boundingrect(with:options:attributes:context:).md)
+- [func boundingRect(with: CGSize, options: NSStringDrawingOptions, attributes: [NSAttributedString.Key : Any]?, context: NSStringDrawingContext?) -> CGRect](./boundingrect%28with,options,attributes,context%29.md)
   Calculates and returns the bounding rect for the receiver drawn using the given options and display characteristics, within the specified rectangle in the current graphics context.
-- [func size(withAttributes: [NSAttributedString.Key : Any]?) -> CGSize](nsstring/size(withattributes:).md)
+- [func size(withAttributes: [NSAttributedString.Key : Any]?) -> CGSize](./size%28withattributes%29.md)
   Returns the bounding box size the receiver occupies when drawn with the given attributes.
-- [struct NSStringDrawingOptions](../uikit/nsstringdrawingoptions.md)
+- [struct NSStringDrawingOptions](../../UIKit/nsstringdrawingoptions.md)
   Constants that specify the rendering options for drawing a string.
 
 

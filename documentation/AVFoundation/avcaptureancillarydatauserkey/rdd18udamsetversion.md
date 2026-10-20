@@ -1,7 +1,8 @@
 # rdd18UDAMSetVersion
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An AVCaptureAncillaryDataEncoder key corresponding with the optional RDD18 user defined metadata UDAM Set Version
 
@@ -16,6 +17,10 @@ An AVCaptureAncillaryDataEncoder key corresponding with the optional RDD18 user 
 
 ```swift
 static let rdd18UDAMSetVersion: AVCaptureAncillaryDataUserKey
+```
+
+```c
+extern AVCaptureAncillaryDataUserKey const AVCaptureAncillaryDataUserKeyRDD18UDAMSetVersion;
 ```
 
 #### Discussion

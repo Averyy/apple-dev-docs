@@ -1,7 +1,8 @@
 # dispatchType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strategy for dispatching any compute commands encoded in the compute pass.
 
@@ -19,9 +20,13 @@ The strategy for dispatching any compute commands encoded in the compute pass.
 var dispatchType: MTLDispatchType { get set }
 ```
 
+```objc
+@property (nonatomic) MTLDispatchType dispatchType;
+```
+
 #### Discussion
 
-The default dispatch type is [`MTLDispatchType.serial`](mtldispatchtype/serial.md).
+The default dispatch type is [`MTLDispatchType.serial`](../mtldispatchtype/serial.md).
 
 
 ---

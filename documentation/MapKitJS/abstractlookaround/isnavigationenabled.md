@@ -1,7 +1,8 @@
 # isNavigationEnabled
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether someone can navigate inside the Look Around view.
 
@@ -10,16 +11,17 @@ A Boolean value that indicates whether someone can navigate inside the Look Arou
 
 ## Declaration
 
-```swift
+```
 get isNavigationEnabled(): boolean;
 set isNavigationEnabled(value: boolean);
 ```
 
 ## See Also
 
-- [isScrollEnabled](abstractlookaround/isscrollenabled.md)
+### Controlling the interactions with a Look Around view
+- [isScrollEnabled](./isscrollenabled.md)
   A Boolean value that indicates whether someone can scroll the Look Around view.
-- [isZoomEnabled](abstractlookaround/iszoomenabled.md)
+- [isZoomEnabled](./iszoomenabled.md)
   A Boolean value that indicates whether someone can zoom the Look Around view.
 
 

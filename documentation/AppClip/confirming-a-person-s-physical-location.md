@@ -1,6 +1,7 @@
 # Confirming a person’s physical location
 
-**Framework**: App Clips
+**Framework**: App Clips  
+**Role**: Article
 
 Add code to quickly confirm a person’s physical location while respecting their privacy.
 
@@ -8,26 +9,26 @@ Add code to quickly confirm a person’s physical location while respecting thei
 
 If you create an App Clip that people invoke at a physical location, you may need to confirm a person’s location before allowing them to perform a task. For a quick launch and to preserve user privacy, App Clips use a lightweight mechanism in which the system verifies that a person is at a specific, expected location. When you adopt this mechanism, and when people allow it, the *App Clip card* contains a note that tells people that the App Clip can verify their location. They can disable location verification by tapping the note on the App Clip card.
 
-![An App Clip card for an App Clip that can verify a person’s physical location.](/images/com.apple.appclip/enabling-app-clips-card-location@2x.png)
+![An App Clip card for an App Clip that can verify a person’s physical location.](https://developer.apple.com/tutorials/images/com.apple.appclip/enabling-app-clips-card-location@2x.png)
 
-##### Enable Your App Clip to Verify a Persons Location
+##### Enable your App Clip to verify a person’s location
 
 To enable your App Clip to verify the person’s location, modify your App Clip’s `Info.plist` file:
 
-1. Open your App Clip’s `Info.plist`, add the [`NSAppClip`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsappclip) key, and set its type to `Dictionary`.
-2. Add an entry to the dictionary with [`NSAppClipRequestLocationConfirmation`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsappclip/nsappcliprequestlocationconfirmation) as the key, select `Boolean` as its type, and set its value to `true`.
+1. Open your App Clip’s `Info.plist`, add the [`NSAppClip`](../BundleResources/information-property-list/nsappclip.md) key, and set its type to `Dictionary`.
+2. Add an entry to the dictionary with [`NSAppClipRequestLocationConfirmation`](../BundleResources/information-property-list/nsappclip/nsappcliprequestlocationconfirmation.md) as the key, select `Boolean` as its type, and set its value to `true`.
 
-![An Info.plist file with the entry that allows the App Clip to confirm a person’s location.](/images/com.apple.appclip/xcode-requests-location-confirmation@2x.png)
+![An Info.plist file with the entry that allows the App Clip to confirm a person’s location.](https://developer.apple.com/tutorials/images/com.apple.appclip/xcode-requests-location-confirmation@2x.png)
 
-Alternatively, open the `Info.plist` file in the property list editor and add the entry by selecting App Clip from the list of keys. This adds the [`NSAppClip`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsappclip) key and the following entries of type `Boolean` to its dictionary: “Requests ephemeral user notifications” and “Requests location confirmation.” Per default, the value for both entries is `NO`. Change the value for “Requests location confirmation” to `YES`.
+Alternatively, open the `Info.plist` file in the property list editor and add the entry by selecting App Clip from the list of keys. This adds the [`NSAppClip`](../BundleResources/information-property-list/nsappclip.md) key and the following entries of type `Boolean` to its dictionary: “Requests ephemeral user notifications” and “Requests location confirmation.” Per default, the value for both entries is `NO`. Change the value for “Requests location confirmation” to `YES`.
 
-> **Note**:  Don’t add an entry for the [`NSAppClipRequestLocationConfirmation`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsappclip/nsappcliprequestlocationconfirmation) key to your full app’s `Info.plist` — functionality to confirm a person’s location is only available to App Clips. Instead, modify your full app’s code to request permission to access the location of a device and make use of the [`Core Location`](https://developer.apple.com/documentation/corelocation) framework. For more information, refer to [`Getting the current location of a device`](https://developer.apple.com/documentation/corelocation/getting-the-current-location-of-a-device).
+> **Note**:  Don’t add an entry for the [`NSAppClipRequestLocationConfirmation`](../BundleResources/information-property-list/nsappclip/nsappcliprequestlocationconfirmation.md) key to your full app’s `Info.plist` — functionality to confirm a person’s location is only available to App Clips. Instead, modify your full app’s code to request permission to access the location of a device and make use of the [Core Location](../CoreLocation/CoreLocation.md) framework. For more information, refer to [Getting the current location of a device](../CoreLocation/getting-the-current-location-of-a-device.md).
 
-##### Add Code That Verifies the Physical Location
+##### Add code that verifies the physical location
 
 After you modify your App Clip’s `Info.plist` file, add code to provide the expected physical location information to the App Clip. To retrieve this information, encode an identifier in the URL that launches the App Clip, and use the identifier to look up the location information for a business in your database. Alternatively, encode the location information in the URL that launches the App Clip.
 
-On launch, access the location information, use it to create a [`CLCircularRegion`](https://developer.apple.com/documentation/corelocation/clcircularregion) object with a radius of up to 500 meters, and pass it to the [`confirmAcquired(in:completionHandler:)`](apactivationpayload/confirmacquired(in:completionhandler:).md) function.
+On launch, access the location information, use it to create a [`CLCircularRegion`](../CoreLocation/clcircularregion.md) object with a radius of up to 500 meters, and pass it to the [`confirmAcquired(in:completionHandler:)`](./apactivationpayload/confirmacquired%28in,completionhandler%29.md) function.
 
 The following code verifies a person’s location when they launch the App Clip. Make sure to update your user interface for each possible result, including the case where a person denies access to location services on their device.
 
@@ -87,21 +88,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 }
 ```
 
-For more information on how you can access the App Clip’s invocation URL, refer to [`Responding to invocations`](responding-to-invocations.md).
+For more information on how you can access the App Clip’s invocation URL, refer to [Responding to invocations](./responding-to-invocations.md).
 
 ## See Also
 
-- [Responding to invocations](responding-to-invocations.md)
+### Launch
+- [Responding to invocations](./responding-to-invocations.md)
   Add code to respond to invocations and offer a focused launch experience.
-- [Associating your App Clip with your website](associating-your-app-clip-with-your-website.md)
+- [Associating your App Clip with your website](./associating-your-app-clip-with-your-website.md)
   Enable the system to verify your App Clip to support invocations from your website and devices running iOS 16.3 or earlier.
-- [Supporting invocations from your website and the Messages app](supporting-invocations-from-your-website-and-the-messages-app.md)
+- [Supporting invocations from your website and the Messages app](./supporting-invocations-from-your-website-and-the-messages-app.md)
   Display a Smart App Banner and the App Clip card on your website that people tap to launch your App Clip, and add support for invocations from the Messages app.
-- [Launching another app’s App Clip from your app](launching-another-app-s-app-clip-from-your-app.md)
+- [Launching another app’s App Clip from your app](./launching-another-app-s-app-clip-from-your-app.md)
   Enable people to launch another app’s App Clip from your app with App Clip links and offer a rich preview of it with the Link Presentation framework.
-- [class APActivationPayload](apactivationpayload.md)
+- [class APActivationPayload](./apactivationpayload.md)
   Information that’s passed to an App Clip on launch.
-- [NSAppClip](../bundleresources/information-property-list/nsappclip.md)
+- [NSAppClip](../BundleResources/information-property-list/nsappclip.md)
   A collection of keys that an App Clip uses to get additional capabilities.
 
 

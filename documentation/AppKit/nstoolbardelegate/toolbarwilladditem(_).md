@@ -1,7 +1,8 @@
 # toolbarWillAddItem(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the toolbar is about to add the specified item.
 
@@ -18,21 +19,26 @@ Tells the delegate that the toolbar is about to add the specified item.
 optional func toolbarWillAddItem(_ notification: Notification)
 ```
 
+```objc
+- (void) toolbarWillAddItem:(NSNotification *) notification;
+```
+
 #### Discussion
 
 Use this method to cache references to new toolbar items or perform any tasks related to the addition of those items.
 
 ## Parameters
 
-- `notification`: A notification named [`willAddItemNotification`](nstoolbar/willadditemnotification.md).
+- `notification`: A notification named [`willAddItemNotification`](../nstoolbar/willadditemnotification.md).
 
 ## See Also
 
-- [func toolbar(NSToolbar, itemForItemIdentifier: NSToolbarItem.Identifier, willBeInsertedIntoToolbar: Bool) -> NSToolbarItem?](nstoolbardelegate/toolbar(_:itemforitemidentifier:willbeinsertedintotoolbar:).md)
+### Adding and removing items
+- [func toolbar(NSToolbar, itemForItemIdentifier: NSToolbarItem.Identifier, willBeInsertedIntoToolbar: Bool) -> NSToolbarItem?](./toolbar%28_,itemforitemidentifier,willbeinsertedintotoolbar%29.md)
   Asks the delegate for the toolbar item associated with the specified identifier.
-- [func toolbarDidRemoveItem(Notification)](nstoolbardelegate/toolbardidremoveitem(_:).md)
+- [func toolbarDidRemoveItem(Notification)](./toolbardidremoveitem%28_%29.md)
   Tells the delegate that the toolbar removed the specified item.
-- [NSToolbar.Identifier](nstoolbar/identifier-swift.typealias.md)
+- [NSToolbar.Identifier](../nstoolbar/identifier-swift.typealias.md)
   A string value that you use to differentiate your app’s toolbars.
 
 

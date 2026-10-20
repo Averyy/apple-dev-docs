@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 An array of dependencies for this system.
@@ -12,7 +13,7 @@ An array of dependencies for this system.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ static var dependencies: [SystemDependency] { get }
 
 ## Mentions
 
-- [Implementing systems for entities in a scene](implementing-systems-for-entities-in-a-scene.md)
+- [Implementing systems for entities in a scene](../implementing-systems-for-entities-in-a-scene.md)
 
 #### Discussion
 
@@ -40,11 +41,18 @@ class SystemB : RealityKit.System {
 }
 ```
 
-When the app runs, RealityKit calls [`update(context:)`](system/update(context:).md) on `SystemA` first, then on `SystemB`, and then on `SystemC`.
+When the app runs, RealityKit calls [`update(context:)`](./update%28context%29.md) on `SystemA` first, then on `SystemB`, and then on `SystemC`.
+
+## Default Implementations
+
+### System Implementations
+- [static var dependencies: [SystemDependency]](./dependencies-2d7zt.md)
+  A default implementation of the dependencies array.
 
 ## See Also
 
-- [enum SystemDependency](systemdependency.md)
+### Specifying dependencies
+- [enum SystemDependency](../systemdependency.md)
   Defines update order relative to other systems. An object that specifies the update order between multiple systems.
 
 

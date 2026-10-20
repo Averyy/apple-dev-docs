@@ -1,7 +1,8 @@
 # encode(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a property list that represents an encoded version of the value you supply.
 
@@ -25,7 +26,7 @@ func encode<Value>(_ value: Value) throws -> Data where Value : Encodable
 If there’s a problem encoding the value you supply, this method throws an error based on the type of problem:
 
 - The value fails to encode, or contains a nested value that fails to encode—this method throws the corresponding error.
-- The value can’t be encoded as a property list—this method throws the [`EncodingError.invalidValue(_:_:)`](https://developer.apple.com/documentation/swift/encodingerror/invalidvalue(_:_:)) error.
+- The value can’t be encoded as a property list—this method throws the [`EncodingError.invalidValue(_:_:)`](../../Swift/encodingerror/invalidvalue%28_,_%29.md) error.
 
 ## Parameters
 
@@ -33,10 +34,11 @@ If there’s a problem encoding the value you supply, this method throws an erro
 
 ## See Also
 
-- [init()](propertylistencoder/init.md)
+### Encoding
+- [init()](./init%28%29.md)
   Creates a new, reusable property list encoder with the default formatting settings.
-- [func encode<T, C>(T, configuration: C.Type) throws -> Data](propertylistencoder/encode(_:configuration:)-4biuh.md)
-- [func encode<T>(T, configuration: T.EncodingConfiguration) throws -> Data](propertylistencoder/encode(_:configuration:)-5ee8q.md)
+- [func encode<T, C>(T, configuration: C.Type) throws -> Data](./encode%28_,configuration%29-4biuh.md)
+- [func encode<T>(T, configuration: T.EncodingConfiguration) throws -> Data](./encode%28_,configuration%29-5ee8q.md)
 
 
 ---

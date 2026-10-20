@@ -1,7 +1,8 @@
 # GCSpatialAccessoryDidConnect
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - visionOS 27.0+

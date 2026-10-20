@@ -1,14 +1,15 @@
 # StandardUSB::validateDeviceDescriptor
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 bool StandardUSB::validateDeviceDescriptor(uint32_t usbDeviceSpeed, const DeviceDescriptor *descriptor);
 ```
 

@@ -1,7 +1,8 @@
 # UIDropSessionProgressIndicatorStyle.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The indicator style for using the system’s default drop-progress indication.
 
@@ -17,9 +18,14 @@ The indicator style for using the system’s default drop-progress indication.
 case `default`
 ```
 
+```c
+UIDropSessionProgressIndicatorStyleDefault
+```
+
 ## See Also
 
-- [UIDropSessionProgressIndicatorStyle.none](uidropsessionprogressindicatorstyle/none.md)
+### Progress indicator styles
+- [UIDropSessionProgressIndicatorStyle.none](./none.md)
   The indicator style for no drop-progress indication.
 
 

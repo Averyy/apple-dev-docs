@@ -1,23 +1,28 @@
 # enumerateChildNodes(_:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes the specified block for each of the node’s child and descendant nodes.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 func enumerateChildNodes(_ block: (SCNNode, UnsafeMutablePointer<ObjCBool>) -> Void)
+```
+
+```objc
+- (void) enumerateChildNodesUsingBlock:(void (^)(SCNNode *child, BOOL *stop)) block;
 ```
 
 #### Discussion
@@ -26,16 +31,21 @@ SceneKit uses a recursive preorder traversal to process the child node subtree�
 
 ## Parameters
 
-- `block`: The block to apply to the node’s child and descendant nodes. - The block takes two parameters:
-- - **child**: The child node currently being evaluated. - **stop**: A reference to a Boolean value. Set `*stop` to [`true`](https://developer.apple.com/documentation/swift/true) in the block to abort further processing of the child node subtree.
+- `block`: The block to apply to the node’s child and descendant nodes.
+
+  - The block takes two parameters:
+  - - **child**: The child node currently being evaluated.
+
+  - **stop**: A reference to a Boolean value. Set `*stop` to [`true`](../../Swift/true.md) in the block to abort further processing of the child node subtree.
 
 ## See Also
 
-- [func childNodes(passingTest: (SCNNode, UnsafeMutablePointer<ObjCBool>) -> Bool) -> [SCNNode]](scnnode/childnodes(passingtest:).md)
+### Searching the Node Hierarchy
+- [func childNodes(passingTest: (SCNNode, UnsafeMutablePointer<ObjCBool>) -> Bool) -> [SCNNode]](./childnodes%28passingtest%29.md)
   Returns all nodes in the node’s child node subtree that satisfy the test applied by a block.
-- [func childNode(withName: String, recursively: Bool) -> SCNNode?](scnnode/childnode(withname:recursively:).md)
+- [func childNode(withName: String, recursively: Bool) -> SCNNode?](./childnode%28withname,recursively%29.md)
   Returns the first node in the node’s child node subtree with the specified name.
-- [func enumerateHierarchy((SCNNode, UnsafeMutablePointer<ObjCBool>) -> Void)](scnnode/enumeratehierarchy(_:).md)
+- [func enumerateHierarchy((SCNNode, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratehierarchy%28_%29.md)
   Executes the specified block for each of the node’s child and descendant nodes, as well as for the node itself.
 
 

@@ -1,7 +1,8 @@
 # init(content:header:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a section with a header and the provided section content.
 
@@ -20,6 +21,14 @@ Creates a section with a header and the provided section content.
 init(@TabContentBuilder<SelectionValue> content: () -> Content, @ContentBuilder header: () -> Header) where Header : View, Footer == EmptyView
 ```
 
+Available when `Content` conforms to `TabContent` and `SelectionValue` conforms to `Hashable`.
+
+**Other overloads**:
+
+```swift
+init<V>(@TabContentBuilder<V?> content: () -> Content, @ContentBuilder header: () -> Header) where Header : View, Footer == EmptyView, SelectionValue == V?, V : Hashable
+```
+
 ## Parameters
 
 - `content`: The section’s content.
@@ -27,9 +36,10 @@ init(@TabContentBuilder<SelectionValue> content: () -> Content, @ContentBuilder 
 
 ## See Also
 
-- [init(content:)](tabsection/init(content:).md)
+### Creating a tab section
+- [init(content:)](./init%28content%29.md)
   Creates a section with the provided section content.
-- [init(_:content:)](tabsection/init(_:content:).md)
+- [init(_:content:)](./init%28_,content%29.md)
   Creates a section with the provided content.
 
 

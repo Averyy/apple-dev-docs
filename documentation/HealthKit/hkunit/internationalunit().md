@@ -1,7 +1,8 @@
 # internationalUnit()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit that measures the amount of a biologically active substance in international units (IU).
 
@@ -17,6 +18,10 @@ Returns a HealthKit unit that measures the amount of a biologically active subst
 
 ```swift
 class func internationalUnit() -> Self
+```
+
+```objc
++ (instancetype) internationalUnit;
 ```
 
 #### Return Value

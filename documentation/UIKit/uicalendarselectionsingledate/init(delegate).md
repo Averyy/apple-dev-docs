@@ -1,7 +1,8 @@
 # init(delegate:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that tracks a date a user selects from a calendar view, with an optional delegate to manage selectable dates and selection changes.
 
@@ -15,6 +16,10 @@ Creates an object that tracks a date a user selects from a calendar view, with a
 
 ```swift
 init(delegate: (any UICalendarSelectionSingleDateDelegate)?)
+```
+
+```objc
+- (instancetype) initWithDelegate:(id<UICalendarSelectionSingleDateDelegate>) delegate;
 ```
 
 ## Parameters

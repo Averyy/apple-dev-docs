@@ -1,7 +1,8 @@
 # AppClipAdvancedExperienceCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,16 +11,16 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperienceCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipAdvancedExperienceCreateRequest.Data.Attributes](appclipadvancedexperiencecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppClipAdvancedExperienceCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The attributes you set that describe the new Advanced App Clip Experiences resource.
-- [object AppClipAdvancedExperienceCreateRequest.Data.Relationships](appclipadvancedexperiencecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object AppClipAdvancedExperienceCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
@@ -28,9 +29,12 @@ object AppClipAdvancedExperienceCreateRequest.Data
 - `relationships` (AppClipAdvancedExperienceCreateRequest.Data.Relationships) *(required)*: The navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `appClipAdvancedExperiences`
+
 ## See Also
 
-- [object AppClipAdvancedExperienceLocalizationInlineCreate](appclipadvancedexperiencelocalizationinlinecreate.md)
+### Objects
+- [object AppClipAdvancedExperienceLocalizationInlineCreate](../appclipadvancedexperiencelocalizationinlinecreate.md)
   An inline object for specifying localized text and action button when creating an App Clip advanced experience.
 
 

@@ -1,7 +1,8 @@
 # copy()
 
 **Framework**: Core Video  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a copy all propagated and non-propagated attachments.
 

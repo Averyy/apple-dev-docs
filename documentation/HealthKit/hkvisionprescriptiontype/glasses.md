@@ -1,7 +1,8 @@
 # HKVisionPrescriptionType.glasses
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A prescription for glasses.
 
@@ -19,9 +20,14 @@ A prescription for glasses.
 case glasses
 ```
 
+```c
+HKVisionPrescriptionTypeGlasses
+```
+
 ## See Also
 
-- [HKVisionPrescriptionType.contacts](hkvisionprescriptiontype/contacts.md)
+### Prescription types
+- [HKVisionPrescriptionType.contacts](./contacts.md)
   A prescription for contacts.
 
 

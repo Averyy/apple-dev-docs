@@ -1,7 +1,8 @@
 # Firewall
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures the firewall.
 
@@ -10,7 +11,7 @@ The payload that configures the firewall.
 
 ## Declaration
 
-```swift
+```
 object Firewall
 ```
 
@@ -22,7 +23,7 @@ The payload needs to exist in a system-scoped profile.
 
 If more than one profile contains this payload, the system uses the most restrictive union of settings.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ If more than one profile contains this payload, the system uses the most restric
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -82,13 +83,25 @@ If more than one profile contains this payload, the system uses the most restric
 ## Topics
 
 ### Objects
-- [object Firewall.ApplicationsItem](firewall/applicationsitem.md)
+- [object Firewall.ApplicationsItem](./firewall/applicationsitem.md)
   A dictionary of details for apps.
 
 ## Properties
 
-- `AllowSigned` (boolean): If `true`, the system allows built-in software to receive incoming connections. > **Note**:  The system ensures that `AllowSigned` always has a value. If missing from the payload, the system sets it to `true`. Available: macOS 12.3+
-- `AllowSignedApp` (boolean): If `true`, the system allows downloaded signed software to receive incoming connections. > **Note**:  The system ensures that `AllowSignedApp` always has a value. If missing from the payload, the system sets it to `true`. Available: macOS 12.3+
+- `AllowSigned` (boolean): If `true`, the system allows built-in software to receive incoming connections.
+
+  > **Note**:  The system ensures that `AllowSigned` always has a value. If missing from the payload, the system sets it to `true`.
+
+  Available: macOS 12.3+
+
+  **Default**: `true`
+- `AllowSignedApp` (boolean): If `true`, the system allows downloaded signed software to receive incoming connections.
+
+  > **Note**:  The system ensures that `AllowSignedApp` always has a value. If missing from the payload, the system sets it to `true`.
+
+  Available: macOS 12.3+
+
+  **Default**: `true`
 - `Applications` ([Firewall.ApplicationsItem]): The list of apps with connections that the firewall controls.
 - `BlockAllIncoming` (boolean): If `true`, the system enables blocking all incoming connections.
 - `EnableFirewall` (boolean) *(required)*: If `true`, the system enables the firewall.
@@ -96,23 +109,24 @@ If more than one profile contains this payload, the system uses the most restric
 
 ## See Also
 
-- [object Cellular](cellular.md)
+### Networking
+- [object Cellular](./cellular.md)
   The payload that configures cellular settings.
-- [object CellularPrivateNetwork](cellularprivatenetwork.md)
+- [object CellularPrivateNetwork](./cellularprivatenetwork.md)
   The payload that provides device info on private network deployments, including geographical location, preference over Wi-Fi, and network deployment type.
-- [object ContentCachingService](contentcachingservice.md)
+- [object ContentCachingService](./contentcachingservice.md)
   The payload that configures the Content Caching service.
-- [object DNSSettings](dnssettings.md)
+- [object DNSSettings](./dnssettings.md)
   The payload that configures encrypted DNS settings.
-- [object Domains](domains.md)
+- [object Domains](./domains.md)
   The payload that configures the domains under an organization’s management.
-- [object NetworkUsageRules](networkusagerules.md)
+- [object NetworkUsageRules](./networkusagerules.md)
   The payload that configures network-usage rules.
-- [object Relay](relay.md)
+- [object Relay](./relay.md)
   The payload that configures relay settings.
-- [object WiFi](wifi.md)
+- [object WiFi](./wifi.md)
   The payload that configures Wi-Fi settings.
-- [object WiFiManagedSettings](wifimanagedsettings.md)
+- [object WiFiManagedSettings](./wifimanagedsettings.md)
   The payload that configures managed Wi-Fi settings.
 
 

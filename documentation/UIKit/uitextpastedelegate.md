@@ -1,7 +1,8 @@
 # UITextPasteDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for handling pasting and dropping of text, using item providers.
 
@@ -18,32 +19,37 @@ The interface for handling pasting and dropping of text, using item providers.
 protocol UITextPasteDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UITextPasteDelegate <NSObject>
+```
+
 ## Topics
 
 ### Preparing to paste a text paste item
-- [func textPasteConfigurationSupporting(any UITextPasteConfigurationSupporting, transform: any UITextPasteItem)](uitextpastedelegate/textpasteconfigurationsupporting(_:transform:).md)
+- [func textPasteConfigurationSupporting(any UITextPasteConfigurationSupporting, transform: any UITextPasteItem)](./uitextpastedelegate/textpasteconfigurationsupporting%28_,transform%29.md)
   Tells the delegate to transform the pasted or dropped text item.
 ### Pasting the text paste item
-- [func textPasteConfigurationSupporting(any UITextPasteConfigurationSupporting, combineItemAttributedStrings: [NSAttributedString], for: UITextRange) -> NSAttributedString](uitextpastedelegate/textpasteconfigurationsupporting(_:combineitemattributedstrings:for:).md)
+- [func textPasteConfigurationSupporting(any UITextPasteConfigurationSupporting, combineItemAttributedStrings: [NSAttributedString], for: UITextRange) -> NSAttributedString](./uitextpastedelegate/textpasteconfigurationsupporting%28_,combineitemattributedstrings,for%29.md)
   Asks the delegate to combine multiple strings into a single attributed string.
-- [func textPasteConfigurationSupporting(any UITextPasteConfigurationSupporting, performPasteOf: NSAttributedString, to: UITextRange) -> UITextRange](uitextpastedelegate/textpasteconfigurationsupporting(_:performpasteof:to:).md)
+- [func textPasteConfigurationSupporting(any UITextPasteConfigurationSupporting, performPasteOf: NSAttributedString, to: UITextRange) -> UITextRange](./uitextpastedelegate/textpasteconfigurationsupporting%28_,performpasteof,to%29.md)
   Asks the delegate to explicitly handle the final incorporation of a pasted or dropped string of text into the text view.
 ### Animating the paste operation
-- [func textPasteConfigurationSupporting(any UITextPasteConfigurationSupporting, shouldAnimatePasteOf: NSAttributedString, to: UITextRange) -> Bool](uitextpastedelegate/textpasteconfigurationsupporting(_:shouldanimatepasteof:to:).md)
+- [func textPasteConfigurationSupporting(any UITextPasteConfigurationSupporting, shouldAnimatePasteOf: NSAttributedString, to: UITextRange) -> Bool](./uitextpastedelegate/textpasteconfigurationsupporting%28_,shouldanimatepasteof,to%29.md)
   Asks the delegate if the paste or drop operation should be animated.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol UITextPasteItem](uitextpasteitem.md)
+### Pasteboard support
+- [protocol UITextPasteItem](./uitextpasteitem.md)
   The interface for obtaining information about, and interacting with, a text item for pasting or dropping.
-- [protocol UISearchTextFieldPasteItem](uisearchtextfieldpasteitem.md)
+- [protocol UISearchTextFieldPasteItem](./uisearchtextfieldpasteitem.md)
   A protocol that supports pasting tokens.
-- [protocol UITextPasteConfigurationSupporting](uitextpasteconfigurationsupporting.md)
+- [protocol UITextPasteConfigurationSupporting](./uitextpasteconfigurationsupporting.md)
   The interface for text-oriented responder objects to participate in the unified paste and drop system in iOS.
 
 

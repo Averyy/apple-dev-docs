@@ -1,21 +1,22 @@
 # DOMException
 
 **Framework**: TVMLKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - tvOS 14.0+
 
 ## Declaration
 
-```swift
+```
 interface DOMException
 ```
 
 ## Topics
 
 ### Instance Properties
-- [code](domexception/3192102-code.md)
+- [code](./domexception/api-3192102-code.md)
 
 
 ---

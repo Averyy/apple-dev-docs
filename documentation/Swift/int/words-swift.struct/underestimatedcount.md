@@ -1,7 +1,8 @@
 # underestimatedCount
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value less than or equal to the number of elements in the collection.
 
@@ -22,7 +23,7 @@ var underestimatedCount: Int { get }
 
 #### Discussion
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*n*), where *n* is the length of the collection.
 
 
 ---

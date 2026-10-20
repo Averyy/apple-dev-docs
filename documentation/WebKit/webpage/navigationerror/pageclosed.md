@@ -1,7 +1,8 @@
 # WebPage.NavigationError.pageClosed
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The navigation could not begin because the page has been closed.
 

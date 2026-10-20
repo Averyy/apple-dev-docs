@@ -2,17 +2,22 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the index of the character whose bounding rectangle includes the given point.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func characterIndex(for point: NSPoint) -> Int
+```
+
+```objc
+- (NSUInteger) characterIndexForPoint:(NSPoint) point;
 ```
 
 #### Return Value
@@ -25,13 +30,14 @@ The character index, measured from the start of the receiver’s text storage, o
 
 ## See Also
 
-- [func firstRect(forCharacterRange: NSRange, actualRange: NSRangePointer?) -> NSRect](nstextinputclient/firstrect(forcharacterrange:actualrange:).md)
+### Getting character coordinates
+- [func firstRect(forCharacterRange: NSRange, actualRange: NSRangePointer?) -> NSRect](./firstrect%28forcharacterrange,actualrange%29.md)
   Returns the first logical boundary rectangle for characters in the given range.
-- [func baselineDeltaForCharacter(at: Int) -> CGFloat](nstextinputclient/baselinedeltaforcharacter(at:).md)
-  Returns the baseline position of a given character relative to the origin of rectangle returned by [`firstRect(forCharacterRange:actualRange:)`](nstextinputclient/firstrect(forcharacterrange:actualrange:).md).
-- [func drawsVerticallyForCharacter(at: Int) -> Bool](nstextinputclient/drawsverticallyforcharacter(at:).md)
+- [func baselineDeltaForCharacter(at: Int) -> CGFloat](./baselinedeltaforcharacter%28at%29.md)
+  Returns the baseline position of a given character relative to the origin of rectangle returned by [`firstRect(forCharacterRange:actualRange:)`](./firstrect%28forcharacterrange,actualrange%29.md).
+- [func drawsVerticallyForCharacter(at: Int) -> Bool](./drawsverticallyforcharacter%28at%29.md)
   Informs the text input management system whether the protocol-conforming client renders the character at the given index vertically.
-- [func fractionOfDistanceThroughGlyph(for: NSPoint) -> CGFloat](nstextinputclient/fractionofdistancethroughglyph(for:).md)
+- [func fractionOfDistanceThroughGlyph(for: NSPoint) -> CGFloat](./fractionofdistancethroughglyph%28for%29.md)
   Returns the fraction of the distance from the left side of the character to the right side that a given point lies.
 
 

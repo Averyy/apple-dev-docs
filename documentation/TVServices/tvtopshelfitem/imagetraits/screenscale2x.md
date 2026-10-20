@@ -1,7 +1,8 @@
 # screenScale2x
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A high-resolution image to display on devices running in a 2x resolution mode.
 
@@ -14,9 +15,14 @@ A high-resolution image to display on devices running in a 2x resolution mode.
 static var screenScale2x: TVTopShelfItem.ImageTraits { get }
 ```
 
+```c
+TVTopShelfItemImageTraitScreenScale2x
+```
+
 ## See Also
 
-- [static var screenScale1x: TVTopShelfItem.ImageTraits](tvtopshelfitem/imagetraits/screenscale1x.md)
+### Image Traits
+- [static var screenScale1x: TVTopShelfItem.ImageTraits](./screenscale1x.md)
   An image to display on devices running in a 1x resolution mode.
 
 

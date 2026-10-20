@@ -1,7 +1,8 @@
 # atr
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ATR (Answer to Reset) of the inserted Smart Card, or `nil` if no Smart Card is inserted or the inserted Smart Card is mute.
 
@@ -20,9 +21,14 @@ The ATR (Answer to Reset) of the inserted Smart Card, or `nil` if no Smart Card 
 var atr: TKSmartCardATR? { get }
 ```
 
+```objc
+@property (readonly, nullable) TKSmartCardATR * ATR;
+```
+
 ## See Also
 
-- [class TKSmartCardATR](tksmartcardatr.md)
+### Reading the Answer to Reset
+- [class TKSmartCardATR](../tksmartcardatr.md)
   A parsed ATR (Answer To Reset) message from a Smart Card.
 
 

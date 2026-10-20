@@ -1,7 +1,8 @@
 # init(RTF:documentAttributes:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attributed string by decoding the stream of RTF commands and data in the specified data object.
 
@@ -11,7 +12,15 @@ Creates an attributed string by decoding the stream of RTF commands and data in 
 ## Declaration
 
 ```swift
+init?(RTF data: Data, documentAttributes dict: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)
+```
+
+```swift
 init?(rtf data: Data, documentAttributes dict: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)
+```
+
+```objc
+- (instancetype) initWithRTF:(NSData *) data documentAttributes:(NSDictionary<NSString *,id> **) dict;
 ```
 
 #### Return Value
@@ -20,7 +29,7 @@ Returns an initialized attributed string object, or `nil` if the method can’t 
 
 #### Discussion
 
-Also returns by reference in `dict` a dictionary containing document-level attributes described in [`NSAttributedString.DocumentAttributeKey`](nsattributedstring/documentattributekey.md). `dict` may be `NULL`, in which case no document attributes are returned. Returns an initialized object, or `nil` if `data` can’t be decoded.
+Also returns by reference in `dict` a dictionary containing document-level attributes described in [`NSAttributedString.DocumentAttributeKey`](./documentattributekey.md). `dict` may be `NULL`, in which case no document attributes are returned. Returns an initialized object, or `nil` if `data` can’t be decoded.
 
 ## Parameters
 
@@ -29,9 +38,10 @@ Also returns by reference in `dict` a dictionary containing document-level attri
 
 ## See Also
 
-- [init?(RTFD: Data, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(rtfd:documentattributes:).md)
+### Creating from RTF
+- [init?(RTFD: Data, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](./init%28rtfd,documentattributes%29.md)
   Creates an attributed string by decoding the stream of RTFD commands and data in the specified data object.
-- [init?(RTFDFileWrapper: FileWrapper, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(rtfdfilewrapper:documentattributes:).md)
+- [init?(RTFDFileWrapper: FileWrapper, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](./init%28rtfdfilewrapper,documentattributes%29.md)
   Creates an attributed string from the specified file wrapper that contains an RTFD document.
 
 

@@ -1,7 +1,8 @@
 # details
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of detail lines for this shopping cart item.
 

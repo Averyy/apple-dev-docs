@@ -1,7 +1,8 @@
 # supportsPHYMode(_:)
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Method for determining which PHY modes a network supports.
 
@@ -12,6 +13,10 @@ Method for determining which PHY modes a network supports.
 
 ```swift
 func supportsPHYMode(_ phyMode: CWPHYMode) -> Bool
+```
+
+```objc
+- (BOOL) supportsPHYMode:(CWPHYMode) phyMode;
 ```
 
 #### Return Value

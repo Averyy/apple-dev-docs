@@ -1,7 +1,8 @@
 # retrieveConnectedPeripherals(withServices:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a list of the peripherals connected to the system whose services match a given set of criteria.
 
@@ -20,21 +21,26 @@ Returns a list of the peripherals connected to the system whose services match a
 func retrieveConnectedPeripherals(withServices serviceUUIDs: [CBUUID]) -> [CBPeripheral]
 ```
 
+```objc
+- (NSArray<CBPeripheral *> *) retrieveConnectedPeripheralsWithServices:(NSArray<CBUUID *> *) serviceUUIDs;
+```
+
 #### Return Value
 
 A list of the peripherals that are currently connected to the system and that contain any of the services specified in the `serviceUUID` parameter.
 
 #### Discussion
 
-The list of connected peripherals can include those that other apps have connected. You need to connect these peripherals locally using the [`connect(_:options:)`](cbcentralmanager/connect(_:options:).md) method before using them.
+The list of connected peripherals can include those that other apps have connected. You need to connect these peripherals locally using the [`connect(_:options:)`](./connect%28_,options%29.md) method before using them.
 
 ## Parameters
 
-- `serviceUUIDs`: A list of service UUIDs, represented by [`CBUUID`](cbuuid.md) objects.
+- `serviceUUIDs`: A list of service UUIDs, represented by [`CBUUID`](../cbuuid.md) objects.
 
 ## See Also
 
-- [func retrievePeripherals(withIdentifiers: [UUID]) -> [CBPeripheral]](cbcentralmanager/retrieveperipherals(withidentifiers:).md)
+### Retrieving Lists of Peripherals
+- [func retrievePeripherals(withIdentifiers: [UUID]) -> [CBPeripheral]](./retrieveperipherals%28withidentifiers%29.md)
   Returns a list of known peripherals by their identifiers.
 
 

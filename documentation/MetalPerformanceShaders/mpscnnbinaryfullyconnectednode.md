@@ -1,7 +1,8 @@
 # MPSCNNBinaryFullyConnectedNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a fully connected convolution layer with binary weights and optionally binarized input image.
 
@@ -19,30 +20,35 @@ A representation of a fully connected convolution layer with binary weights and 
 class MPSCNNBinaryFullyConnectedNode
 ```
 
+```objc
+@interface MPSCNNBinaryFullyConnectedNode : MPSCNNBinaryConvolutionNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource, scaleValue: Float, type: MPSCNNBinaryConvolutionType, flags: MPSCNNBinaryConvolutionFlags)](mpscnnbinaryfullyconnectednode/init(source:weights:scalevalue:type:flags:).md)
-- [protocol MPSCNNConvolutionDataSource](mpscnnconvolutiondatasource.md)
+- [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource, scaleValue: Float, type: MPSCNNBinaryConvolutionType, flags: MPSCNNBinaryConvolutionFlags)](./mpscnnbinaryfullyconnectednode/init%28source,weights,scalevalue,type,flags%29.md)
+- [protocol MPSCNNConvolutionDataSource](./mpscnnconvolutiondatasource.md)
   The protocol that provides convolution filter weights and bias terms.
-- [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource, outputBiasTerms: UnsafePointer<Float>?, outputScaleTerms: UnsafePointer<Float>?, inputBiasTerms: UnsafePointer<Float>?, inputScaleTerms: UnsafePointer<Float>?, type: MPSCNNBinaryConvolutionType, flags: MPSCNNBinaryConvolutionFlags)](mpscnnbinaryfullyconnectednode/init(source:weights:outputbiasterms:outputscaleterms:inputbiasterms:inputscaleterms:type:flags:).md)
+- [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource, outputBiasTerms: UnsafePointer<Float>?, outputScaleTerms: UnsafePointer<Float>?, inputBiasTerms: UnsafePointer<Float>?, inputScaleTerms: UnsafePointer<Float>?, type: MPSCNNBinaryConvolutionType, flags: MPSCNNBinaryConvolutionFlags)](./mpscnnbinaryfullyconnectednode/init%28source,weights,outputbiasterms,outputscaleterms,inputbiasterms,inputscaleterms,type,flags%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNBinaryConvolutionNode](mpscnnbinaryconvolutionnode.md)
+- [MPSCNNBinaryConvolutionNode](./mpscnnbinaryconvolutionnode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MPSNNTrainableNode](mpsnntrainablenode.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MPSNNTrainableNode](./mpsnntrainablenode.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNFullyConnectedNode](mpscnnfullyconnectednode.md)
+### Fully Connected Layer Nodes
+- [class MPSCNNFullyConnectedNode](./mpscnnfullyconnectednode.md)
   A representation of a fully connected convolution layer, also known as an inner product layer.
 
 

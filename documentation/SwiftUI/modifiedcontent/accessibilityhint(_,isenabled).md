@@ -1,7 +1,8 @@
 # accessibilityHint(_:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Communicates to the user what happens after performing the view’s action.
 
@@ -19,6 +20,25 @@ Communicates to the user what happens after performing the view’s action.
 ```swift
 @export(implementation)
 nonisolated func accessibilityHint(_ hint: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Content, Modifier>
+```
+
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityHint(_ hint: Text, isEnabled: Bool) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityHint(_ hintKey: LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityHint<S>(_ hint: S, isEnabled: Bool) -> ModifiedContent<Content, Modifier> where S : StringProtocol
 ```
 
 #### Discussion

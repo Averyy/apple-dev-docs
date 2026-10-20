@@ -1,7 +1,8 @@
 # AVPlayerVideoOutput.Sample
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A video frame along with auxiliary information for display at the specified presentation time.
 
@@ -23,25 +24,26 @@ struct Sample
 ## Topics
 
 ### Inspecting a sample
-- [let activeConfiguration: AVPlayerVideoOutput.Configuration](avplayervideooutput/sample/activeconfiguration.md)
+- [let activeConfiguration: AVPlayerVideoOutput.Configuration](./sample/activeconfiguration.md)
   The active configuration that this sample was derived from.
-- [let presentationTime: CMTime](avplayervideooutput/sample/presentationtime.md)
+- [let presentationTime: CMTime](./sample/presentationtime.md)
   A CMTime representing the true display deadline for this sample in terms of the corresponding AVPlayerItem’s timebase.
-- [let taggedBuffers: [CMTaggedDynamicBuffer]](avplayervideooutput/sample/taggedbuffers.md)
+- [let taggedBuffers: [CMTaggedDynamicBuffer]](./sample/taggedbuffers.md)
   An array of CMTaggedBuffers containing the frame for the specified time.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func sample(forHostTime: CMTime) -> AVPlayerVideoOutput.Sample?](avplayervideooutput/sample(forhosttime:).md)
+### Accessing video data
+- [func sample(forHostTime: CMTime) -> AVPlayerVideoOutput.Sample?](./sample%28forhosttime%29.md)
   Retrieves a video sample along with auxiliary information for display at the specified host time.
-- [func taggedBuffers(forHostTime: CMTime) -> (taggedBufferGroup: [CMTaggedBuffer], presentationTime: CMTime, activeConfiguration: AVPlayerVideoOutput.Configuration)?](avplayervideooutput/taggedbuffers(forhosttime:).md)
-- [AVPlayerVideoOutput.Configuration](avplayervideooutput/configuration.md)
+- [func taggedBuffers(forHostTime: CMTime) -> (taggedBufferGroup: [CMTaggedBuffer], presentationTime: CMTime, activeConfiguration: AVPlayerVideoOutput.Configuration)?](./taggedbuffers%28forhosttime%29.md)
+- [AVPlayerVideoOutput.Configuration](./configuration.md)
   An object that provides configuration information for the related player item.
 
 

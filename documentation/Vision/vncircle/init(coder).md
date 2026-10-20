@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 14.0+
@@ -19,11 +20,12 @@ init?(coder: NSCoder)
 
 ## See Also
 
-- [init(center: VNPoint, radius: Double)](vncircle/init(center:radius:).md)
+### Creating a Circle
+- [init(center: VNPoint, radius: Double)](./init%28center,radius%29.md)
   Creates a circle with the specified center and radius.
-- [convenience init(center: VNPoint, diameter: Double)](vncircle/init(center:diameter:).md)
+- [convenience init(center: VNPoint, diameter: Double)](./init%28center,diameter%29.md)
   Creates a circle with the specified center and diameter.
-- [class var zero: VNCircle](vncircle/zero.md)
+- [class var zero: VNCircle](./zero.md)
   A circle object centered at the origin, with a radius of zero.
 
 

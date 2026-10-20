@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A localized message describing what error occurred.
@@ -20,6 +21,12 @@ A localized message describing what error occurred.
 ```swift
 var errorDescription: String? { get }
 ```
+
+## Default Implementations
+
+### LocalizedError Implementations
+- [var errorDescription: String?](./errordescription-5o849.md)
+  A localized message describing what error occurred.
 
 
 ---

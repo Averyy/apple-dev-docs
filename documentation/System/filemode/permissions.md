@@ -1,7 +1,8 @@
 # permissions
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file’s permissions, from the mode’s permission bits.
 

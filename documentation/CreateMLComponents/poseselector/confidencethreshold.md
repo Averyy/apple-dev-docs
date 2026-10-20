@@ -1,7 +1,8 @@
 # confidenceThreshold
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A threshold confidence between 0 to 1 for the joints to be considered valid in pose selection. The default value is 0.2.
 
@@ -21,7 +22,8 @@ var confidenceThreshold: Float
 
 ## See Also
 
-- [var strategy: PoseSelectionStrategy](poseselector/strategy.md)
+### Getting the properties
+- [var strategy: PoseSelectionStrategy](./strategy.md)
   Pose selection strategy.
 
 

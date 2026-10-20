@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: VisionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an overlay view from data in a coder object.
 
@@ -21,9 +22,10 @@ required dynamic init?(coder: NSCoder)
 
 ## See Also
 
-- [convenience init(any ImageAnalysisOverlayViewDelegate)](imageanalysisoverlayview/init(_:).md)
+### Creating overlay views
+- [convenience init(any ImageAnalysisOverlayViewDelegate)](./init%28_%29.md)
   Creates an overlay view with the specified delegate object.
-- [init(frame: NSRect)](imageanalysisoverlayview/init(frame:).md)
+- [init(frame: NSRect)](./init%28frame%29.md)
   Creates an overlay view with the specified frame rectangle.
 
 

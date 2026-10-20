@@ -1,6 +1,7 @@
 # Text sample data
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 An atom that contains text data.
 
@@ -23,11 +24,12 @@ The following table lists the currently defined text sample extensions.
 
 ## See Also
 
-- [Text sample description](text_sample_description.md)
+### Storing text data
+- [Text sample description](./text_sample_description.md)
   An atom that defines how to interpret text media data.
-- [Text media information atom ('text')](text_media_information_atom.md)
+- [Text media information atom ('text')](./text_media_information_atom.md)
   An atom that contains information about text media.
-- [Hypertext and wired text](hypertext_and_wired_text.md)
+- [Hypertext and wired text](./hypertext_and_wired_text.md)
   Store hypertext in a text track sample atom.
 
 

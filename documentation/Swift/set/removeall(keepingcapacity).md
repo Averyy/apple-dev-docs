@@ -1,7 +1,8 @@
 # removeAll(keepingCapacity:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all members from the set.
 
@@ -20,20 +21,23 @@ Removes all members from the set.
 mutating func removeAll(keepingCapacity keepCapacity: Bool = false)
 ```
 
+Available when `Element` conforms to `Hashable`.
+
 ## Parameters
 
 - `keepCapacity`: If `true`, the set’s buffer capacity is preserved; if `false`, the underlying buffer is released. The default is `false`.
 
 ## See Also
 
-- [func filter<E>((Element) throws(E) -> Bool) throws(E) -> Set<Element>](set/filter(_:).md)
+### Removing Elements
+- [func filter<E>((Element) throws(E) -> Bool) throws(E) -> Set<Element>](./filter%28_%29.md)
   Returns a new set containing the elements of the set that satisfy the given predicate.
-- [func remove(Element) -> Element?](set/remove(_:)-8p2tv.md)
+- [func remove(Element) -> Element?](./remove%28_%29-8p2tv.md)
   Removes the specified element from the set.
-- [func remove<ConcreteElement>(ConcreteElement) -> ConcreteElement?](set/remove(_:)-4d3i1.md)
-- [func removeFirst() -> Element](set/removefirst.md)
+- [func remove<ConcreteElement>(ConcreteElement) -> ConcreteElement?](./remove%28_%29-4d3i1.md)
+- [func removeFirst() -> Element](./removefirst%28%29.md)
   Removes the first element of the set.
-- [func remove(at: Set<Element>.Index) -> Element](set/remove(at:).md)
+- [func remove(at: Set<Element>.Index) -> Element](./remove%28at%29.md)
   Removes the element at the given index of the set.
 
 

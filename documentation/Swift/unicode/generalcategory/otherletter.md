@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.otherLetter
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Other letters, including syllables and ideographs.
 
@@ -22,7 +23,7 @@ case otherLetter
 
 #### Discussion
 
-This value corresponds to the category `Other_Letter` (abbreviated `Lo`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Other_Letter` (abbreviated `Lo`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

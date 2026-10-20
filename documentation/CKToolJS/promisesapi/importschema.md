@@ -1,7 +1,8 @@
 # importSchema
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Uploads a file that defines the new schema for the container.
 
@@ -10,7 +11,7 @@ Uploads a file that defines the new schema for the container.
 
 ## Declaration
 
-```swift
+```
 CancellablePromise importSchema(
 	ImportSchemaParams params
 );
@@ -96,15 +97,16 @@ try {
 
 ## See Also
 
-- [exportSchema](promisesapi/exportschema.md)
+### Database Management
+- [exportSchema](./exportschema.md)
   Downloads the container’s schema.
-- [getContainers](promisesapi/getcontainers.md)
+- [getContainers](./getcontainers.md)
   Fetches containers for a team.
-- [resetConfigToProduction](promisesapi/resetconfigtoproduction.md)
+- [resetConfigToProduction](./resetconfigtoproduction.md)
   Resets the container configuration to production.
-- [resetToProduction](promisesapi/resettoproduction.md)
+- [resetToProduction](./resettoproduction.md)
   Resets the schema of the environment to production.
-- [validateSchema](promisesapi/validateschema.md)
+- [validateSchema](./validateschema.md)
   Validates the uploaded schema file for the container.
 
 

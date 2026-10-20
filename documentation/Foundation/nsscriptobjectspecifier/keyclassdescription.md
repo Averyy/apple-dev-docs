@@ -1,7 +1,8 @@
 # keyClassDescription
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the class description of the objects specified by the receiver.
 
@@ -15,13 +16,18 @@ Returns the class description of the objects specified by the receiver.
 var keyClassDescription: NSScriptClassDescription? { get }
 ```
 
+```objc
+@property (retain, readonly, nullable) NSScriptClassDescription * keyClassDescription;
+```
+
 #### Return Value
 
 The class description of the objects specified by the receiver.
 
 ## See Also
 
-- [var key: String](nsscriptobjectspecifier/key.md)
+### Getting and setting object keys
+- [var key: String](./key.md)
   Sets the key of the receiver.
 
 

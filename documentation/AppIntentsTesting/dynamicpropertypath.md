@@ -1,7 +1,8 @@
 # DynamicPropertyPath
 
 **Framework**: App Intents Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-safe, dynamic path to access nested intent values.
 
@@ -39,37 +40,38 @@ let coffee: AnyAppEntity = try result.value.as(CoffeeEntity)
 ## Topics
 
 ### Instance Methods
-- [func `as`<T>(T.Type) throws -> T](dynamicpropertypath/as(_:)-5po1a.md)
+- [func `as`<T>(T.Type) throws -> T](./dynamicpropertypath/as%28_%29-5po1a.md)
   Casts a property to the provided type.
-- [func `as`<IntentType>(IntentType) throws -> IntentType.Instance](dynamicpropertypath/as(_:)-6n9rh.md)
+- [func `as`<IntentType>(IntentType) throws -> IntentType.Instance](./dynamicpropertypath/as%28_%29-6n9rh.md)
   Casts the value to the given type.
 ### Subscripts
-- [subscript(Int) -> (any IntentValueExpressing)?](dynamicpropertypath/subscript(_:)-1hj9z.md)
+- [subscript(Int) -> (any IntentValueExpressing)?](./dynamicpropertypath/subscript%28_%29-1hj9z.md)
   Accesses a collection element by index, without casting.
-- [subscript(Int) -> DynamicPropertyPath](dynamicpropertypath/subscript(_:)-4bof1.md)
+- [subscript(Int) -> DynamicPropertyPath](./dynamicpropertypath/subscript%28_%29-4bof1.md)
   Accesses a nested property on a collection element by index.
-- [subscript<T>(Int) -> T](dynamicpropertypath/subscript(_:)-kiay.md)
+- [subscript<T>(Int) -> T](./dynamicpropertypath/subscript%28_%29-kiay.md)
   Accesses a collection element by index, for comparison with a known value.
-- [subscript(dynamicMember _: String) -> DynamicPropertyPath](dynamicpropertypath/subscript(dynamicmember:)-aj9z.md)
+- [subscript(dynamicMember _: String) -> DynamicPropertyPath](./dynamicpropertypath/subscript%28dynamicmember%29-aj9z.md)
   Creates a dynamic path for navigating deeper into a nested property hierarchy.
-- [subscript(dynamicMember _: String) -> (any IntentValueExpressing)?](dynamicpropertypath/subscript(dynamicmember:)-hqdv.md)
+- [subscript(dynamicMember _: String) -> (any IntentValueExpressing)?](./dynamicpropertypath/subscript%28dynamicmember%29-hqdv.md)
   Accesses a property by name without casting.
-- [subscript<T>(dynamicMember _: String) -> T](dynamicpropertypath/subscript(dynamicmember:)-lizi.md)
+- [subscript<T>(dynamicMember _: String) -> T](./dynamicpropertypath/subscript%28dynamicmember%29-lizi.md)
   Accesses a typed property at the current path by name.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AppIntentTypeDefinition](appintenttypedefinition.md)
+### Supporting types
+- [protocol AppIntentTypeDefinition](./appintenttypedefinition.md)
   A protocol that associates a definition type with its corresponding instance type.
-- [struct DynamicPropertyPathCollection](dynamicpropertypathcollection.md)
+- [struct DynamicPropertyPathCollection](./dynamicpropertypathcollection.md)
   Indexed result items from an intent value query.
-- [struct IntentValuePropertiesCallable](intentvaluepropertiescallable.md)
+- [struct IntentValuePropertiesCallable](./intentvaluepropertiescallable.md)
   A callable wrapper that creates app intent instances from keyword arguments.
 
 

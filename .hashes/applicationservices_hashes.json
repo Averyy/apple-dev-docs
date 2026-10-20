@@ -9121,7 +9121,7 @@
       "hash": "121b293f84067acf549b137c646b39083b20f975cb73044ba5f7a8097f9b0780"
     },
     "https://developer.apple.com/documentation/applicationservices/katslinedisableallglyphmorphing": {
-      "etag": "\"1526-65b3a462a8b0b-df\"",
+      "etag": "\"1526-65b3a462a8b0b\"",
       "file_path": "documentation/applicationservices/katslinedisableallglyphmorphing.md",
       "hash": "fa6c5c5826241b4aff6bad86373bd28a5274dbfdbd8b97aaf98b24fda4637be6"
     },
@@ -26561,7 +26561,7 @@
       "hash": "121b293f84067acf549b137c646b39083b20f975cb73044ba5f7a8097f9b0780"
     },
     "https://developer.apple.com/tutorials/data/documentation/applicationservices/katslinedisableallglyphmorphing.json": {
-      "etag": "\"1526-65b3a462a8b0b-df\"",
+      "etag": "\"1526-65b3a462a8b0b\"",
       "file_path": "documentation/applicationservices/katslinedisableallglyphmorphing.md",
       "hash": "fa6c5c5826241b4aff6bad86373bd28a5274dbfdbd8b97aaf98b24fda4637be6"
     },
@@ -34882,6 +34882,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 6976
   }
 }

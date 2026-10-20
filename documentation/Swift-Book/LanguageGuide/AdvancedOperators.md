@@ -48,7 +48,7 @@ Swift supports all of the bitwise operators found in C, as described below.
 
 The *bitwise NOT operator* (`~`) inverts all bits in a number:
 
-![](bitwiseNOT)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/bitwiseNOT@2x.png)
 
 The bitwise NOT operator is a prefix operator,
 and appears immediately before the value it operates on,
@@ -92,7 +92,7 @@ The *bitwise AND operator* (`&`) combines the bits of two numbers.
 It returns a new number whose bits are set to `1`
 only if the bits were equal to `1` in *both* input numbers:
 
-![](bitwiseAND)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/bitwiseAND@2x.png)
 
 In the example below,
 the values of `firstSixBits` and `lastSixBits`
@@ -123,7 +123,7 @@ The *bitwise OR operator* (`|`) compares the bits of two numbers.
 The operator returns a new number whose bits are set to `1`
 if the bits are equal to `1` in *either* input number:
 
-![](bitwiseOR)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/bitwiseOR@2x.png)
 
 <!-- Apple Books screenshot ends here. -->
 
@@ -157,7 +157,7 @@ The operator returns a new number whose bits are set to `1`
 where the input bits are different
 and are set to `0` where the input bits are the same:
 
-![](bitwiseXOR)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/bitwiseXOR@2x.png)
 
 In the example below,
 the values of `firstBits` and `otherBits` each have a bit set to `1`
@@ -218,7 +218,7 @@ Green numbers are shifted,
 gray numbers are discarded,
 and pink zeros are inserted:
 
-![](bitshiftUnsigned)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/bitshiftUnsigned@2x.png)
 
 Here's how bit shifting looks in Swift code:
 
@@ -329,7 +329,7 @@ Positive numbers are stored in exactly the same way as for unsigned integers,
 counting upwards from `0`.
 Here's how the bits inside an `Int8` look for the number `4`:
 
-![](bitshiftSignedFour)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/bitshiftSignedFour@2x.png)
 
 The sign bit is `0` (meaning “positive”),
 and the seven value bits are just the number `4`,
@@ -343,12 +343,12 @@ so this means `2` to the power of `7`, or `128`.
 
 Here's how the bits inside an `Int8` look for the number `-4`:
 
-![](bitshiftSignedMinusFour)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/bitshiftSignedMinusFour@2x.png)
 
 This time, the sign bit is `1` (meaning “negative”),
 and the seven value bits have a binary value of `124` (which is `128 - 4`):
 
-![](bitshiftSignedMinusFourValue)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/bitshiftSignedMinusFourValue@2x.png)
 
 This encoding for negative numbers is known as a *two's complement* representation.
 It may seem an unusual way to represent negative numbers,
@@ -359,7 +359,7 @@ simply by performing a standard binary addition of all eight bits
 (including the sign bit),
 and discarding anything that doesn't fit in the eight bits once you're done:
 
-![](bitshiftSignedAddition)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/bitshiftSignedAddition@2x.png)
 
 Second, the two's complement representation also lets you
 shift the bits of negative numbers to the left and right like positive numbers,
@@ -371,7 +371,7 @@ apply the same rules as for unsigned integers,
 but fill any empty bits on the left with the *sign bit*,
 rather than with a zero.
 
-![](bitshiftSigned)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/bitshiftSigned@2x.png)
 
 This action ensures that signed integers have the same sign after they're shifted to the right,
 and is known as an *arithmetic shift*.
@@ -464,7 +464,7 @@ as shown in the diagram below.
 The value that remains within the bounds of the `UInt8`
 after the overflow addition is `00000000`, or zero.
 
-![](overflowAddition)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/overflowAddition@2x.png)
 
 Something similar happens when
 an unsigned integer is allowed to overflow in the negative direction.
@@ -496,7 +496,7 @@ If you subtract `1` from `00000000` using the overflow subtraction operator (`&-
 the number will overflow and wrap around to `11111111`,
 or `255` in decimal.
 
-![](overflowUnsignedSubtraction)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/overflowUnsignedSubtraction@2x.png)
 
 Overflow also occurs for signed integers.
 All addition and subtraction for signed integers is performed in bitwise fashion,
@@ -530,7 +530,7 @@ gives a binary value of `01111111`,
 which toggles the sign bit and gives positive `127`,
 the maximum positive value that an `Int8` can hold.
 
-![](overflowSignedSubtraction)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/overflowSignedSubtraction@2x.png)
 
 For both signed and unsigned integers,
 overflow in the positive direction
@@ -757,7 +757,7 @@ let combinedVector = vector + anotherVector
 This example adds together the vectors `(3.0, 1.0)` and `(2.0, 4.0)`
 to make the vector `(5.0, 5.0)`, as illustrated below.
 
-![](vectorAddition)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/vectorAddition@2x.png)
 
 ### Prefix and Postfix Operators
 
@@ -982,7 +982,7 @@ as described in [Adopting a Protocol Using a Synthesized Implementation](Protoco
 You can declare and implement your own *custom operators* in addition to
 the standard operators provided by Swift.
 For a list of characters that can be used to define custom operators,
-see [Operators](LexicalStructure.md#Operators).
+see [Operators](../ReferenceManual/LexicalStructure.md#Operators).
 
 New operators are declared at a global level using the `operator` keyword,
 and are marked with the `prefix`, `infix` or `postfix` modifiers:
@@ -1100,7 +1100,7 @@ including a complete list of the operator precedence groups and associativity se
 see [Operator Declarations](https://developer.apple.com/documentation/swift/operator_declarations).
 For more information about precedence groups and to see the syntax for
 defining your own operators and precedence groups,
-see [Operator Declaration](Declarations.md#Operator-Declaration).
+see [Operator Declaration](../ReferenceManual/Declarations.md#Operator-Declaration).
 
 > Note: You don't specify a precedence when defining a prefix or postfix operator.
 > However, if you apply both a prefix and a postfix operator to the same operand,
@@ -1480,7 +1480,7 @@ and the `buildArray(_:)` method turns that array into a `Line`.
 
 For a complete list of how Swift transforms builder syntax
 into calls to the builder type's methods,
-see [resultBuilder](Attributes.md#resultBuilder).
+see [resultBuilder](../ReferenceManual/Attributes.md#resultBuilder).
 
 <!--
   The following needs more work...

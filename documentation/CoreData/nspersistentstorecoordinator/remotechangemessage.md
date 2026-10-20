@@ -1,7 +1,8 @@
 # NSPersistentStoreCoordinator.RemoteChangeMessage
 
 **Framework**: Core Data  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Posted when a store receives a remote change notification from another process.
 
@@ -23,20 +24,20 @@ struct RemoteChangeMessage
 ## Topics
 
 ### Instance Properties
-- [let historyToken: NSPersistentHistoryToken?](nspersistentstorecoordinator/remotechangemessage/historytoken.md)
+- [let historyToken: NSPersistentHistoryToken?](./remotechangemessage/historytoken.md)
   The persistent history token representing the state after the remote change.
-- [let persistentStoreCoordinator: NSPersistentStoreCoordinator](nspersistentstorecoordinator/remotechangemessage/persistentstorecoordinator.md)
-- [let storeURL: URL](nspersistentstorecoordinator/remotechangemessage/storeurl.md)
+- [let persistentStoreCoordinator: NSPersistentStoreCoordinator](./remotechangemessage/persistentstorecoordinator.md)
+- [let storeURL: URL](./remotechangemessage/storeurl.md)
   The URL of the store that changed.
-- [let storeUUID: String](nspersistentstorecoordinator/remotechangemessage/storeuuid.md)
+- [let storeUUID: String](./remotechangemessage/storeuuid.md)
   The UUID of the store that changed.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](../foundation/notificationcenter/asyncmessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.AsyncMessage](../../Foundation/notificationcenter/asyncmessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # PrereleaseVersion.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Prerelease Versions resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a Prerelease Versions resource.
 
 ## Declaration
 
-```swift
+```
 object PrereleaseVersion.Attributes
 ```
 
@@ -21,9 +22,11 @@ object PrereleaseVersion.Attributes
 
 ## See Also
 
-- [Prerelease Versions](prerelease-versions.md)
+### Related Documentation
+- [Prerelease Versions](../prerelease-versions.md)
   Platform-specific versions of your app intended for distribution to beta testers.
-- [object PrereleaseVersion.Relationships](prereleaseversion/relationships-data.dictionary.md)
+### Objects
+- [object PrereleaseVersion.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

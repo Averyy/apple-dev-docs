@@ -1,7 +1,8 @@
 # kCFProxyTypeHTTPS
 
 **Framework**: CFNetwork  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies an HTTPS proxy.
 
@@ -19,19 +20,24 @@ Specifies an HTTPS proxy.
 let kCFProxyTypeHTTPS: CFString
 ```
 
+```c
+extern CFStringRef const kCFProxyTypeHTTPS;
+```
+
 ## See Also
 
-- [let kCFProxyTypeNone: CFString](kcfproxytypenone.md)
+### Constants
+- [let kCFProxyTypeNone: CFString](./kcfproxytypenone.md)
   Specifies that no proxy should be used.
-- [let kCFProxyTypeAutoConfigurationURL: CFString](kcfproxytypeautoconfigurationurl.md)
+- [let kCFProxyTypeAutoConfigurationURL: CFString](./kcfproxytypeautoconfigurationurl.md)
   Specifies that the proxy is determined by an autoconfiguration file at a given URL.
-- [let kCFProxyTypeAutoConfigurationJavaScript: CFString](kcfproxytypeautoconfigurationjavascript.md)
+- [let kCFProxyTypeAutoConfigurationJavaScript: CFString](./kcfproxytypeautoconfigurationjavascript.md)
   Specifies that the proxy is determined by a provided autoconfiguration script.
-- [let kCFProxyTypeFTP: CFString](kcfproxytypeftp.md)
+- [let kCFProxyTypeFTP: CFString](./kcfproxytypeftp.md)
   Specifies an FTP proxy.
-- [let kCFProxyTypeHTTP: CFString](kcfproxytypehttp.md)
+- [let kCFProxyTypeHTTP: CFString](./kcfproxytypehttp.md)
   Specifies an HTTP proxy.
-- [let kCFProxyTypeSOCKS: CFString](kcfproxytypesocks.md)
+- [let kCFProxyTypeSOCKS: CFString](./kcfproxytypesocks.md)
   Specifies a SOCKS proxy.
 
 

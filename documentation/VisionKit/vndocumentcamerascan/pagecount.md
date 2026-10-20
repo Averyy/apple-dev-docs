@@ -1,7 +1,8 @@
 # pageCount
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of pages in the scanned document.
 
@@ -17,11 +18,16 @@ The number of pages in the scanned document.
 var pageCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger pageCount;
+```
+
 ## See Also
 
-- [var title: String](vndocumentcamerascan/title.md)
+### Reading the scanned document
+- [var title: String](./title.md)
   The title of the scanned document.
-- [func imageOfPage(at: Int) -> UIImage](vndocumentcamerascan/imageofpage(at:).md)
+- [func imageOfPage(at: Int) -> UIImage](./imageofpage%28at%29.md)
   Requests the image of a page at a specified index.
 
 

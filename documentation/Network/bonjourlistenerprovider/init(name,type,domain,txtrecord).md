@@ -1,7 +1,8 @@
 # init(name:type:domain:txtRecord:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a Bonjour service to advertise.
 

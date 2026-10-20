@@ -1,7 +1,8 @@
 # takeRetainedValue()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the value of this unmanaged reference as a managed reference and consumes an unbalanced retain of it.
 

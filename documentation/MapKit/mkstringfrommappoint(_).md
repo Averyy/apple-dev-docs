@@ -1,23 +1,28 @@
 # MKStringFromMapPoint(_:)
 
 **Framework**: MapKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a formatted string for the specified map point.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func MKStringFromMapPoint(_ point: MKMapPoint) -> String
+```
+
+```c
+static NSString *MKStringFromMapPoint(MKMapPoint point);
 ```
 
 #### Return Value

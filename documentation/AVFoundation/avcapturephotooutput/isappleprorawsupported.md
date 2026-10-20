@@ -1,7 +1,8 @@
 # isAppleProRAWSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the current device and configuration supports Apple ProRAW pixel formats.
 
@@ -17,9 +18,13 @@ A Boolean value that indicates whether the current device and configuration supp
 var isAppleProRAWSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isAppleProRAWSupported) BOOL appleProRAWSupported;
+```
+
 ## Mentions
 
-- [Capturing photos in RAW and Apple ProRAW formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
+- [Capturing photos in RAW and Apple ProRAW formats](../capturing-photos-in-raw-and-apple-proraw-formats.md)
 
 #### Discussion
 
@@ -27,7 +32,8 @@ This property is key-value observable.
 
 ## See Also
 
-- [var isAppleProRAWEnabled: Bool](avcapturephotooutput/isappleprorawenabled.md)
+### Configuring ProRAW support
+- [var isAppleProRAWEnabled: Bool](./isappleprorawenabled.md)
   A Boolean value that indicates whether you’ve configured the photo output to deliver Apple ProRAW formats.
 
 

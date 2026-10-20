@@ -1,7 +1,8 @@
 # printFormatters
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The print formatters for the page renderer.
 
@@ -17,15 +18,20 @@ The print formatters for the page renderer.
 var printFormatters: [UIPrintFormatter]? { get set }
 ```
 
+```objc
+@property (atomic, copy, nullable) NSArray<UIPrintFormatter *> * printFormatters;
+```
+
 #### Discussion
 
-The elements of the array are [`UIPrintFormatter`](uiprintformatter.md) objects. A print formatter can be an instance of [`UISimpleTextPrintFormatter`](uisimpletextprintformatter.md), [`UIMarkupTextPrintFormatter`](uimarkuptextprintformatter.md), or [`UIViewPrintFormatter`](uiviewprintformatter.md). Print formatters added this way to a page renderer are associated with page ranges through each print formatter’s [`startPage`](uiprintformatter/startpage.md) and [`pageCount`](uiprintformatter/pagecount.md) properties.
+The elements of the array are [`UIPrintFormatter`](../uiprintformatter.md) objects. A print formatter can be an instance of [`UISimpleTextPrintFormatter`](../uisimpletextprintformatter.md), [`UIMarkupTextPrintFormatter`](../uimarkuptextprintformatter.md), or [`UIViewPrintFormatter`](../uiviewprintformatter.md). Print formatters added this way to a page renderer are associated with page ranges through each print formatter’s [`startPage`](../uiprintformatter/startpage.md) and [`pageCount`](../uiprintformatter/pagecount.md) properties.
 
 ## See Also
 
-- [func addPrintFormatter(UIPrintFormatter, startingAtPageAt: Int)](uiprintpagerenderer/addprintformatter(_:startingatpageat:).md)
+### Managing print formatters
+- [func addPrintFormatter(UIPrintFormatter, startingAtPageAt: Int)](./addprintformatter%28_,startingatpageat%29.md)
   Adds a print formatter to the page renderer starting at the specified page.
-- [func printFormattersForPage(at: Int) -> [UIPrintFormatter]?](uiprintpagerenderer/printformattersforpage(at:).md)
+- [func printFormattersForPage(at: Int) -> [UIPrintFormatter]?](./printformattersforpage%28at%29.md)
   Returns the print formatters for a specified page.
 
 

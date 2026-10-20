@@ -1,7 +1,8 @@
 # selectedColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The selected color in the color picker.
 
@@ -17,21 +18,26 @@ The selected color in the color picker.
 var selectedColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIColor * selectedColor;
+```
+
 #### Discussion
 
-When a person selects a new color in the color picker, the system generates the control event [`valueChanged`](uicontrol/event/valuechanged.md).
+When a person selects a new color in the color picker, the system generates the control event [`valueChanged`](../uicontrol/event/valuechanged.md).
 
 This property is KVO-compliant.
 
 ## See Also
 
-- [var title: String?](uicolorwell/title.md)
+### Configuring color picker attributes
+- [var title: String?](./title.md)
   The title for the color picker.
-- [var maximumLinearExposure: CGFloat](uicolorwell/maximumlinearexposure.md)
+- [var maximumLinearExposure: CGFloat](./maximumlinearexposure.md)
   The maximum exposure to apply to a color when returned by the color well.
-- [var supportsAlpha: Bool](uicolorwell/supportsalpha.md)
+- [var supportsAlpha: Bool](./supportsalpha.md)
   A Boolean value that determines whether the color picker supports alpha values.
-- [var supportsEyedropper: Bool](uicolorwell/supportseyedropper.md)
+- [var supportsEyedropper: Bool](./supportseyedropper.md)
   If set to `NO` the eyedropper functionality is not supported for this color well.
 
 

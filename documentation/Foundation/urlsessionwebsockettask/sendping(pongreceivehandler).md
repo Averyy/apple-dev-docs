@@ -1,7 +1,8 @@
 # sendPing(pongReceiveHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a ping frame from the client side, with a closure to receive the pong from the server endpoint.
 
@@ -20,13 +21,17 @@ Sends a ping frame from the client side, with a closure to receive the pong from
 func sendPing(pongReceiveHandler: @escaping @Sendable ((any Error)?) -> Void)
 ```
 
+```objc
+- (void) sendPingWithPongReceiveHandler:(void (^)(NSError *error)) pongReceiveHandler;
+```
+
 #### Discussion
 
 When sending multiple pings, the task always calls `pongReceiveHandler` in the order it sent the pings.
 
 ## Parameters
 
-- `pongReceiveHandler`: A closure called by the task when it receives the pong from the server. The block/closure receives an [`NSError`](nserror.md) that indicates a lost connection or other problem, or `nil` if no error occurred.
+- `pongReceiveHandler`: A closure called by the task when it receives the pong from the server. The block/closure receives an [`NSError`](../nserror.md) that indicates a lost connection or other problem, or `nil` if no error occurred.
 
 
 ---

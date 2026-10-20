@@ -1,7 +1,8 @@
 # curveType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A curve type for curves in the geometry.
 
@@ -19,9 +20,13 @@ A curve type for curves in the geometry.
 var curveType: MTLCurveType { get set }
 ```
 
+```objc
+@property (nonatomic) MTLCurveType curveType;
+```
+
 #### Discussion
 
-The default value is [`MTLCurveType.round`](mtlcurvetype/round.md).
+The default value is [`MTLCurveType.round`](../mtlcurvetype/round.md).
 
 
 ---

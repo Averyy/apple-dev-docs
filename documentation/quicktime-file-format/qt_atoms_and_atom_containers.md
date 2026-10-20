@@ -1,6 +1,7 @@
 # QT atoms and atom containers
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 An enhanced data structure that provide a more general-purpose storage format.
 
@@ -18,7 +19,7 @@ The following figure depicts the layout of a QT atom. Each QT atom starts with a
 
 Each container atom starts with a QT atom header followed by the atom’s contents. The contents are either child atoms or data, but never both. If an atom contains children, it also contains all of its children’s data and descendants. The root atom is always present and never has any siblings.
 
-![A container atom with an atom size and atom type, that contains another container atom with an atom size and atom type. The inner container atom contains two leaf atoms, each with an atom size, atom type, and atom data.](/images/com.apple.qtff/qt-atom-layout@2x.png)
+![A container atom with an atom size and atom type, that contains another container atom with an atom size and atom type. The inner container atom contains two leaf atoms, each with an atom size, atom type, and atom data.](https://developer.apple.com/tutorials/images/com.apple.qtff/qt-atom-layout@2x.png)
 
 A QT atom container header contains the following data:
 
@@ -34,7 +35,7 @@ Each QT atom header contains the following data:
 - **Child count**: A 16-bit integer that specifies the number of child atoms that an atom contains. This count includes only immediate children. If this field is set to `0`, the atom is a leaf atom and contains only data.
 - **Reserved**: A 32-bit integer that must be set to `0`.
 
-#### Qt Atom Containers
+#### QT atom containers
 
 A QuickTime atom container is a basic structure for storing information in QuickTime. An atom container is a tree-structured hierarchy of QT atoms. You can think of a newly created QT atom container as the root of a tree structure that contains no children.
 
@@ -42,7 +43,7 @@ An atom container is a container, not an atom. It has a reserved field and a loc
 
 A QT atom container contains QT atoms, as shown in the following figure. Each QT atom contains either data or other atoms. If a QT atom contains other atoms, it is a parent atom and the atoms it contains are its child atoms. Each parent’s child atom is uniquely identified by its atom type and atom ID. A QT atom that contains data is called a leaf atom.
 
-![A hierarchical chart with a QT atom container at the top. The QT atom container has lines drawn to two atoms below that it contains. The first atom, on the left, has a size, type, and data. The second atom, on the right, is labeled “Parent Atom” and has a size and type. That atom has lines drawn to two more atoms that it contains. The first atom, on the left, has a size and type. The second atom, on the right, is labeled “Child Atom” and has a size, type, and data. ](/images/com.apple.qtff/atom-container-parent-child@2x.png)
+![A hierarchical chart with a QT atom container at the top. The QT atom container has lines drawn to two atoms below that it contains. The first atom, on the left, has a size, type, and data. The second atom, on the right, is labeled “Parent Atom” and has a size and type. That atom has lines drawn to two more atoms that it contains. The first atom, on the left, has a size and type. The second atom, on the right, is labeled “Child Atom” and has a size, type, and data. ](https://developer.apple.com/tutorials/images/com.apple.qtff/atom-container-parent-child@2x.png)
 
 Each QT atom has an offset that describes the atom’s position within the QT atom container. In addition, each QT atom has a type and an ID. The atom type describes the kind of information the atom represents. The atom ID is used to differentiate child atoms of the same type with the same parent; an atom’s ID must be unique for a given parent and type. In addition to the atom ID, each atom has a 1-based index that describes its order relative to other child atoms of the same parent with the same atom type. You can uniquely identify a QT atom in one of three ways:
 
@@ -58,7 +59,7 @@ You can store and retrieve atoms in a QT atom container by index, ID, or both. F
 
 The following figure shows a QT atom container that has two child atoms. The first child atom (`offset = 10`) is a leaf atom that has an atom type of `'abcd'`, an ID of `1000`, and an index of `1`. The second child atom (`offset = 20`) has an atom type of `'abcd'`, an ID of `900`, and an index of `2`. Because the two child atoms have the same type, they must have different IDs. The second child atom is also a parent atom of three atoms.
 
-![A QT atom container with two child atoms.](/images/com.apple.qtff/atom-container-two-children@2x.png)
+![A QT atom container with two child atoms.](https://developer.apple.com/tutorials/images/com.apple.qtff/atom-container-two-children@2x.png)
 
 The first child atom (`offset = 30`) has an atom type of `'abcd'`, an ID of `100`, and an index of `1`. It does not have any children, nor does it have data. The second child atom (`offset = 40`) has an atom type of `'word'`, an ID of `100`, and an index of `1`. The atom has data, so it is a leaf atom. The second atom (`offset = 40`) has the same ID as the first atom (`offset = 30`), but a different atom type. The third child atom (`offset = 50`) has an atom type of `'abcd'`, an ID of `1000`, and an index of `2`. Its atom type and ID are the same as that of another atom (`offset = 10`) with a different parent.
 
@@ -70,11 +71,12 @@ When calling any QT atom function for which you specify a parent atom as a param
 
 ## See Also
 
-- [Atoms](atoms.md)
+### Building in QuickTime
+- [Atoms](./atoms.md)
   The basic data unit in a QuickTime file is the atom.
-- [Creating, copying, and disposing of atom containers](creating_copying_and_disposing_of_atom_containers.md)
+- [Creating, copying, and disposing of atom containers](./creating_copying_and_disposing_of_atom_containers.md)
   Manage atoms in atom containers.
-- [QuickTime movie files](quicktime_movie_files.md)
+- [QuickTime movie files](./quicktime_movie_files.md)
   The QuickTime file format describes the characteristics of QuickTime movie files.
 
 

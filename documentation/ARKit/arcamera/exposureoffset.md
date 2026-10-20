@@ -1,7 +1,8 @@
 # exposureOffset
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value you supply to your custom renderer to light your scene.
 
@@ -15,11 +16,15 @@ A value you supply to your custom renderer to light your scene.
 var exposureOffset: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float exposureOffset;
+```
+
 #### Discussion
 
 If your app displays an AR experience using a custom Metal renderer, use this value to light your scene during its post-processed lighting stage.
 
-Lighting a scene using [`exposureOffset`](arcamera/exposureoffset.md) is normally more performant than scaling each light source in your scene based on the value of the frame’s [`lightEstimate`](arframe/lightestimate.md).
+Lighting a scene using [`exposureOffset`](./exposureoffset.md) is normally more performant than scaling each light source in your scene based on the value of the frame’s [`lightEstimate`](../arframe/lightestimate.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # PauseConversationAction
 
 **Framework**: LiveCommunicationKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An action that stops or restarts all audio and video streams for a conversation.
 
@@ -21,36 +22,37 @@ final class PauseConversationAction
 ## Topics
 
 ### Creating a conversation action
-- [init(conversationUUID: UUID, isPaused: Bool)](pauseconversationaction/init(conversationuuid:ispaused:).md)
+- [init(conversationUUID: UUID, isPaused: Bool)](./pauseconversationaction/init%28conversationuuid,ispaused%29.md)
   Creates an action that starts or stops all audio and video streams for a conversation.
 ### Accessing action attributes
-- [let isPaused: Bool](pauseconversationaction/ispaused.md)
+- [let isPaused: Bool](./pauseconversationaction/ispaused.md)
   A value that specifies whether to start or stop all audio or video streams for a conversation.
 
 ## Relationships
 
 ### Inherits From
-- [ConversationAction](conversationaction.md)
+- [ConversationAction](./conversationaction.md)
 
 ## See Also
 
-- [class ConversationAction](conversationaction.md)
+### Conversation actions
+- [class ConversationAction](./conversationaction.md)
   A type that represents an action for a conversation.
-- [class EndConversationAction](endconversationaction.md)
+- [class EndConversationAction](./endconversationaction.md)
   An action that removes the local participant from a conversation and stops all audio and video streams.
-- [class JoinConversationAction](joinconversationaction.md)
+- [class JoinConversationAction](./joinconversationaction.md)
   An action for joining an incoming conversation.
-- [class MergeConversationAction](mergeconversationaction.md)
+- [class MergeConversationAction](./mergeconversationaction.md)
   An action that merges two separate conversations into one conversation.
-- [class MuteConversationAction](muteconversationaction.md)
+- [class MuteConversationAction](./muteconversationaction.md)
   An action that mutes or unmutes a conversation.
-- [class PlayToneAction](playtoneaction.md)
+- [class PlayToneAction](./playtoneaction.md)
   An action that plays sequence of tones to indicate that a participant of a conversation interacted with the keypad.
-- [class SetTranslatingAction](settranslatingaction.md)
+- [class SetTranslatingAction](./settranslatingaction.md)
   An action that starts or stops translation.
-- [class StartConversationAction](startconversationaction.md)
+- [class StartConversationAction](./startconversationaction.md)
   An action that starts an outgoing conversation and causes the devices of a remote participant to ring.
-- [class UnmergeConversationAction](unmergeconversationaction.md)
+- [class UnmergeConversationAction](./unmergeconversationaction.md)
   An action that separates two previosuly merged conversations.
 
 

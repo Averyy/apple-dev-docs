@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A color to use for the odd stripes.
@@ -11,7 +12,7 @@ A color to use for the odd stripes.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,15 +21,20 @@ A color to use for the odd stripes.
 var color0: CIColor { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CIColor * color0;
+```
+
 ## See Also
 
-- [var center: CGPoint](cistripesgenerator/center.md)
+### Instance Properties
+- [var center: CGPoint](./center.md)
   The x and y position to use as the center of the stripe pattern.
-- [var color1: CIColor](cistripesgenerator/color1.md)
+- [var color1: CIColor](./color1.md)
   A color to use for the even stripes.
-- [var sharpness: Float](cistripesgenerator/sharpness.md)
+- [var sharpness: Float](./sharpness.md)
   The sharpness of the stripe pattern.
-- [var width: Float](cistripesgenerator/width.md)
+- [var width: Float](./width.md)
   The width of a stripe.
 
 

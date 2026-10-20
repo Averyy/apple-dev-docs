@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a current value subject with the given initial value.
 

@@ -1,7 +1,8 @@
 # UIKeyModifierFlags
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that indicate which modifier keys are pressed.
 
@@ -9,7 +10,7 @@ Constants that indicate which modifier keys are pressed.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,54 +19,59 @@ Constants that indicate which modifier keys are pressed.
 struct UIKeyModifierFlags
 ```
 
+```c
+enum UIKeyModifierFlags : NSInteger;
+```
+
 ## Topics
 
 ### Modifier flags
-- [static var alphaShift: UIKeyModifierFlags](uikeymodifierflags/alphashift.md)
+- [static var alphaShift: UIKeyModifierFlags](./uikeymodifierflags/alphashift.md)
   A modifier flag that indicates the user pressed the Caps Lock key.
-- [static var shift: UIKeyModifierFlags](uikeymodifierflags/shift.md)
+- [static var shift: UIKeyModifierFlags](./uikeymodifierflags/shift.md)
   A modifier flag that indicates the user pressed the Shift key.
-- [static var control: UIKeyModifierFlags](uikeymodifierflags/control.md)
+- [static var control: UIKeyModifierFlags](./uikeymodifierflags/control.md)
   A modifier flag that indicates the user pressed the Control key.
-- [static var alternate: UIKeyModifierFlags](uikeymodifierflags/alternate.md)
+- [static var alternate: UIKeyModifierFlags](./uikeymodifierflags/alternate.md)
   A modifier flag that indicates the user pressed the Option key.
-- [static var command: UIKeyModifierFlags](uikeymodifierflags/command.md)
+- [static var command: UIKeyModifierFlags](./uikeymodifierflags/command.md)
   A modifier flag that indicates the user pressed the Command key.
-- [static var numericPad: UIKeyModifierFlags](uikeymodifierflags/numericpad.md)
+- [static var numericPad: UIKeyModifierFlags](./uikeymodifierflags/numericpad.md)
   A modifier flag that indicates the user pressed a key located on the numeric keypad.
 ### Initializers
-- [init(rawValue: Int)](uikeymodifierflags/init(rawvalue:).md)
+- [init(rawValue: Int)](./uikeymodifierflags/init%28rawvalue%29.md)
   Creates a modifier-flags structure from data in an unarchiver.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var title: String](uikeycommand/title.md)
+### Getting information about the key command
+- [var title: String](./uikeycommand/title.md)
   The key command’s title.
-- [var image: UIImage?](uikeycommand/image.md)
+- [var image: UIImage?](./uikeycommand/image.md)
   The key command’s image.
-- [var input: String?](uikeycommand/input.md)
+- [var input: String?](./uikeycommand/input.md)
   The string of characters corresponding to the keys that must be pressed to match this key command.
-- [var action: Selector?](uikeycommand/action.md)
+- [var action: Selector?](./uikeycommand/action.md)
   The command’s action-method selector.
-- [var modifierFlags: UIKeyModifierFlags](uikeycommand/modifierflags.md)
+- [var modifierFlags: UIKeyModifierFlags](./uikeycommand/modifierflags.md)
   The bit mask of modifier flags that must be pressed to match this key command.
-- [var discoverabilityTitle: String?](uikeycommand/discoverabilitytitle.md)
+- [var discoverabilityTitle: String?](./uikeycommand/discoverabilitytitle.md)
   An elaborated title that explains the purpose of the key command.
-- [var attributes: UIMenuElement.Attributes](uikeycommand/attributes.md)
+- [var attributes: UIMenuElement.Attributes](./uikeycommand/attributes.md)
   The attributes indicating the style of the key command.
-- [var state: UIMenuElement.State](uikeycommand/state.md)
+- [var state: UIMenuElement.State](./uikeycommand/state.md)
   The state of the key command.
 
 

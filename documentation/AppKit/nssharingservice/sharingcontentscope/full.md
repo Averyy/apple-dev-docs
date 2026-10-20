@@ -1,7 +1,8 @@
 # NSSharingService.SharingContentScope.full
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Used when sharing the whole content of the current document, for example, the URL of the webpage.
 
@@ -14,11 +15,16 @@ Used when sharing the whole content of the current document, for example, the UR
 case full
 ```
 
+```c
+NSSharingContentScopeFull
+```
+
 ## See Also
 
-- [NSSharingService.SharingContentScope.item](nssharingservice/sharingcontentscope/item.md)
+### Constants
+- [NSSharingService.SharingContentScope.item](./item.md)
   Used when sharing a clearly identified item, for example, a file represented by its icon.
-- [NSSharingService.SharingContentScope.partial](nssharingservice/sharingcontentscope/partial.md)
+- [NSSharingService.SharingContentScope.partial](./partial.md)
   Used when sharing a portion of a more global content, for example, part of a webpage.
 
 

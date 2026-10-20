@@ -1,7 +1,8 @@
 # SecTrustSettingsCreateExternalRepresentation(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtains an external, portable representation of the specified domain’s trust settings.
 
@@ -15,9 +16,13 @@ Obtains an external, portable representation of the specified domain’s trust s
 func SecTrustSettingsCreateExternalRepresentation(_ domain: SecTrustSettingsDomain, _ trustSettings: UnsafeMutablePointer<CFData?>) -> OSStatus
 ```
 
+```c
+OSStatus SecTrustSettingsCreateExternalRepresentation(SecTrustSettingsDomain domain, CFDataRef*trustSettings);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md). Returns [`errSecNoTrustSettings`](errsecnotrustsettings.md) if no trust settings exist for the specified domain.
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). Returns [`errSecNoTrustSettings`](./errsecnotrustsettings.md) if no trust settings exist for the specified domain.
 
 #### Discussion
 
@@ -25,8 +30,8 @@ Trust settings for a certificate are associated with the hash of the certificate
 
 ## Parameters
 
-- `domain`: The trust settings domain for which you want an external representation of trust settings. For possible values, see [`SecTrustSettingsDomain`](sectrustsettingsdomain.md).
-- `trustSettings`: An external representation of the domain’s trust settings. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
+- `domain`: The trust settings domain for which you want an external representation of trust settings. For possible values, see [`SecTrustSettingsDomain`](./sectrustsettingsdomain.md).
+- `trustSettings`: An external representation of the domain’s trust settings. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release this object when you are finished with it.
 
 
 ---

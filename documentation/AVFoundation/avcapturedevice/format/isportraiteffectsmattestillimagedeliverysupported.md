@@ -1,7 +1,8 @@
 # isPortraitEffectsMatteStillImageDeliverySupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether the device supports portrait matte effects in still-image capture.
 
@@ -17,11 +18,16 @@ A Boolean indicating whether the device supports portrait matte effects in still
 var isPortraitEffectsMatteStillImageDeliverySupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isPortraitEffectsMatteStillImageDeliverySupported) BOOL portraitEffectsMatteStillImageDeliverySupported;
+```
+
 ## See Also
 
-- [var isPortraitEffectSupported: Bool](avcapturedevice/format/isportraiteffectsupported.md)
+### Determining Portrait Effects support
+- [var isPortraitEffectSupported: Bool](./isportraiteffectsupported.md)
   A Boolean value that indicates whether the format supports the Portrait Effect feature.
-- [var videoFrameRateRangeForPortraitEffect: AVFrameRateRange?](avcapturedevice/format/videoframeraterangeforportraiteffect.md)
+- [var videoFrameRateRangeForPortraitEffect: AVFrameRateRange?](./videoframeraterangeforportraiteffect.md)
   The range of frame rates available when Portrait Effect is active.
 
 

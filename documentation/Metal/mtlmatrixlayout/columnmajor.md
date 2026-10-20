@@ -1,7 +1,8 @@
 # MTLMatrixLayout.columnMajor
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case columnMajor
+```
+
+```c
+MTLMatrixLayoutColumnMajor
 ```
 
 

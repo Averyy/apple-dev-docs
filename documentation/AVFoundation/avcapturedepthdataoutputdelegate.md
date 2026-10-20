@@ -1,7 +1,8 @@
 # AVCaptureDepthDataOutputDelegate
 
 **Framework**: AVFoundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods for receiving depth data produced by a depth capture output.
 
@@ -17,28 +18,33 @@ Methods for receiving depth data produced by a depth capture output.
 protocol AVCaptureDepthDataOutputDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol AVCaptureDepthDataOutputDelegate <NSObject>
+```
+
 ## Topics
 
 ### Receiving depth data
-- [func depthDataOutput(AVCaptureDepthDataOutput, didOutput: AVDepthData, timestamp: CMTime, connection: AVCaptureConnection)](avcapturedepthdataoutputdelegate/depthdataoutput(_:didoutput:timestamp:connection:).md)
+- [func depthDataOutput(AVCaptureDepthDataOutput, didOutput: AVDepthData, timestamp: CMTime, connection: AVCaptureConnection)](./avcapturedepthdataoutputdelegate/depthdataoutput%28_,didoutput,timestamp,connection%29.md)
   Provides newly captured depth data to the delegate.
-- [func depthDataOutput(AVCaptureDepthDataOutput, didDrop: AVDepthData, timestamp: CMTime, connection: AVCaptureConnection, reason: AVCaptureOutput.DataDroppedReason)](avcapturedepthdataoutputdelegate/depthdataoutput(_:diddrop:timestamp:connection:reason:).md)
+- [func depthDataOutput(AVCaptureDepthDataOutput, didDrop: AVDepthData, timestamp: CMTime, connection: AVCaptureConnection, reason: AVCaptureOutput.DataDroppedReason)](./avcapturedepthdataoutputdelegate/depthdataoutput%28_,diddrop,timestamp,connection,reason%29.md)
   Informs the delegate that captured depth data was not processed.
-- [AVCaptureOutput.DataDroppedReason](avcaptureoutput/datadroppedreason.md)
+- [AVCaptureOutput.DataDroppedReason](./avcaptureoutput/datadroppedreason.md)
   Constants that define reasons for why the system dropped a frame.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func setDelegate((any AVCaptureDepthDataOutputDelegate)?, callbackQueue: dispatch_queue_t?)](avcapturedepthdataoutput/setdelegate(_:callbackqueue:).md)
+### Receiving captured depth data
+- [func setDelegate((any AVCaptureDepthDataOutputDelegate)?, callbackQueue: dispatch_queue_t?)](./avcapturedepthdataoutput/setdelegate%28_,callbackqueue%29.md)
   Designates a delegate object to receive depth data and a dispatch queue for delivering that data.
-- [var delegate: (any AVCaptureDepthDataOutputDelegate)?](avcapturedepthdataoutput/delegate.md)
+- [var delegate: (any AVCaptureDepthDataOutputDelegate)?](./avcapturedepthdataoutput/delegate.md)
   A delegate object that receives depth data.
-- [var delegateCallbackQueue: dispatch_queue_t?](avcapturedepthdataoutput/delegatecallbackqueue.md)
+- [var delegateCallbackQueue: dispatch_queue_t?](./avcapturedepthdataoutput/delegatecallbackqueue.md)
   A dispatch queue for delivering depth data.
 
 

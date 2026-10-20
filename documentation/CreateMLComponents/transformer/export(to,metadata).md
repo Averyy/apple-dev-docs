@@ -1,7 +1,8 @@
 # export(to:metadata:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports this transformer as a CoreML model with userInfo.
 
@@ -30,7 +31,8 @@ func export(to url: URL, metadata: ModelMetadata) throws
 
 ## See Also
 
-- [func export(to: URL) throws](transformer/export(to:).md)
+### Exporting
+- [func export(to: URL) throws](./export%28to%29.md)
   Exports this transformer as a CoreML model.
 
 

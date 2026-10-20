@@ -1,7 +1,8 @@
 # runSynchronously(on:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Run this job on the passed in executor.
 

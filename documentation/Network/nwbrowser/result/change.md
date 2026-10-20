@@ -1,7 +1,8 @@
 # NWBrowser.Result.Change
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Ways in which discovered services can change between specific results.
 
@@ -23,27 +24,27 @@ enum Change
 ## Topics
 
 ### Inspecting Change Types
-- [NWBrowser.Result.Change.identical](nwbrowser/result/change/identical.md)
+- [NWBrowser.Result.Change.identical](./change/identical.md)
   No change was detected for the result.
-- [NWBrowser.Result.Change.added(_:)](nwbrowser/result/change/added(_:).md)
+- [NWBrowser.Result.Change.added(_:)](./change/added%28_%29.md)
   A new result was discovered.
-- [NWBrowser.Result.Change.removed(_:)](nwbrowser/result/change/removed(_:).md)
+- [NWBrowser.Result.Change.removed(_:)](./change/removed%28_%29.md)
   A previously discovered result was removed.
-- [case changed(old: NWBrowser.Result, new: NWBrowser.Result, flags: NWBrowser.Result.Change.Flags)](nwbrowser/result/change/changed(old:new:flags:).md)
+- [case changed(old: NWBrowser.Result, new: NWBrowser.Result, flags: NWBrowser.Result.Change.Flags)](./change/changed%28old,new,flags%29.md)
   A result changed properties but was not removed.
-- [NWBrowser.Result.Change.Flags](nwbrowser/result/change/flags.md)
+- [NWBrowser.Result.Change.Flags](./change/flags.md)
   Flags providing details about a change in a discovered service.
 ### Calculating Result Changes
-- [init(between: NWBrowser.Result?, NWBrowser.Result?)](nwbrowser/result/change/init(between:_:).md)
+- [init(between: NWBrowser.Result?, NWBrowser.Result?)](./change/init%28between,_%29.md)
   Initializes a change between two results.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

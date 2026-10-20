@@ -1,7 +1,8 @@
 # init(stringLiteral:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a language code from an identifier as a string literal.
 
@@ -26,7 +27,8 @@ init(stringLiteral value: String)
 
 ## See Also
 
-- [init(String)](locale/languagecode-swift.struct/init(_:).md)
+### Creating a language code
+- [init(String)](./init%28_%29.md)
   Creates a language code from an identifier.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a type collecting the relevances for a widget kind.
 

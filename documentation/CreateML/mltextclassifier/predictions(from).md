@@ -1,7 +1,8 @@
 # predictions(from:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Classifies an array of strings with labels.
 
@@ -18,6 +19,12 @@ Classifies an array of strings with labels.
 func predictions(from texts: [String]) throws -> [String]
 ```
 
+**Other overloads**:
+
+```swift
+func predictions(from texts: MLDataColumn<String>) throws -> MLDataColumn<String>
+```
+
 #### Return Value
 
 An array of labels for the given strings.
@@ -28,11 +35,12 @@ An array of labels for the given strings.
 
 ## See Also
 
-- [func prediction(from: String) throws -> String](mltextclassifier/prediction(from:).md)
+### Testing a text classifier
+- [func prediction(from: String) throws -> String](./prediction%28from%29.md)
   Classifies a string with a label.
-- [func predictionWithConfidence(from: String) throws -> [String : Double]](mltextclassifier/predictionwithconfidence(from:).md)
+- [func predictionWithConfidence(from: String) throws -> [String : Double]](./predictionwithconfidence%28from%29.md)
   Predicts multiple possible labels and their confidence scores for the specified string.
-- [func predictionsWithConfidence(from:)](mltextclassifier/predictionswithconfidence(from:).md)
+- [func predictionsWithConfidence(from:)](./predictionswithconfidence%28from%29.md)
   Predicts multiple possible labels and their confidence scores for each string in the specified array.
 
 

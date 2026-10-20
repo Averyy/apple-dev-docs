@@ -1,7 +1,8 @@
 # init(receivesDynamicLighting:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an occlusion material.
 
@@ -21,7 +22,8 @@ init(receivesDynamicLighting: Bool = false)
 
 ## See Also
 
-- [init()](occlusionmaterial/init.md)
+### Creating an occlusion material
+- [init()](./init%28%29.md)
 
 
 ---

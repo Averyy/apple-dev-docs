@@ -1,7 +1,8 @@
 # extend(by:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Extend block buffer by appending a memory block of count bytes.
 

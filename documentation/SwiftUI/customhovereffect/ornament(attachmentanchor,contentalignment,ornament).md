@@ -1,7 +1,8 @@
 # ornament(attachmentAnchor:contentAlignment:ornament:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Presents an ornament on hover.
 

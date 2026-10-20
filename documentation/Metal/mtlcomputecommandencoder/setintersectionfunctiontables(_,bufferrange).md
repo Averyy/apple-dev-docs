@@ -1,7 +1,8 @@
 # setIntersectionFunctionTables(_:bufferRange:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Binds multiple intersection function tables to the buffer argument table, allowing you to call their functions on the GPU.
 
@@ -11,7 +12,7 @@ Binds multiple intersection function tables to the buffer argument table, allowi
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,14 +26,15 @@ func setIntersectionFunctionTables(_ intersectionFunctionTables: [(any MTLInters
 
 ## Parameters
 
-- `intersectionFunctionTables`: An array of [`MTLIntersectionFunctionTable`](mtlintersectionfunctiontable.md) instances to bind.
+- `intersectionFunctionTables`: An array of [`MTLIntersectionFunctionTable`](../mtlintersectionfunctiontable.md) instances to bind.
 - `bufferRange`: The argument buffer table indices to bind each of the `intersectionFunctionTables` to, in the order they appear.
 
 ## See Also
 
-- [func setVisibleFunctionTable((any MTLVisibleFunctionTable)?, bufferIndex: Int)](mtlcomputecommandencoder/setvisiblefunctiontable(_:bufferindex:).md)
+### Binding function tables
+- [func setVisibleFunctionTable((any MTLVisibleFunctionTable)?, bufferIndex: Int)](./setvisiblefunctiontable%28_,bufferindex%29.md)
   Binds a visible function table to the buffer argument table, allowing you to call its functions on the GPU.
-- [func setVisibleFunctionTables([(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)](mtlcomputecommandencoder/setvisiblefunctiontables(_:bufferrange:).md)
+- [func setVisibleFunctionTables([(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)](./setvisiblefunctiontables%28_,bufferrange%29.md)
   Binds multiple visible function tables to the buffer argument table, allowing you to call their functions on the GPU.
 
 

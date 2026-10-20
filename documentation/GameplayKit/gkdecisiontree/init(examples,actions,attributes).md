@@ -1,7 +1,8 @@
 # init(examples:actions:attributes:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an automatically learned decision tree using the specified attributes, example items, and actions.
 
@@ -19,15 +20,19 @@ Creates an automatically learned decision tree using the specified attributes, e
 init(examples: [[any NSObjectProtocol]], actions: [any NSObjectProtocol], attributes: [any NSObjectProtocol])
 ```
 
+```objc
+- (instancetype) initWithExamples:(NSArray<NSArray<id<NSObject>> *> *) examples actions:(NSArray<id<NSObject>> *) actions attributes:(NSArray<id<NSObject>> *) attributes;
+```
+
 #### Return Value
 
 A new decision tree.
 
 #### Discussion
 
-When you use this initializer, the [`GKDecisionTree`](gkdecisiontree.md) class automatically infers a decision tree structure that chooses actions based on the attribute values in the examples array. That is, if you later use the [`findAction(forAnswers:)`](gkdecisiontree/findaction(foranswers:).md) method with a set of attribute values (or answers to questions) matching one of the entries in the `examples` array, the tree will choose the action at the corresponding index in the `actions` array. However, a decision tree is a predictive model, so the created tree is not limited to handling cases that exactly match the examples—if you call the [`findAction(forAnswers:)`](gkdecisiontree/findaction(foranswers:).md) with a set of answers not in the examples array, the tree predicts an action by generalizing from similar examples.
+When you use this initializer, the [`GKDecisionTree`](../gkdecisiontree.md) class automatically infers a decision tree structure that chooses actions based on the attribute values in the examples array. That is, if you later use the [`findAction(forAnswers:)`](./findaction%28foranswers%29.md) method with a set of attribute values (or answers to questions) matching one of the entries in the `examples` array, the tree will choose the action at the corresponding index in the `actions` array. However, a decision tree is a predictive model, so the created tree is not limited to handling cases that exactly match the examples—if you call the [`findAction(forAnswers:)`](./findaction%28foranswers%29.md) with a set of answers not in the examples array, the tree predicts an action by generalizing from similar examples.
 
-For example the following code creates a tree with data similar to that shown in [`Creating a Decision Tree`](gkdecisiontree#Creating-a-Decision-Tree.md):
+For example the following code creates a tree with data similar to that shown in [Creating a Decision Tree](../gkdecisiontree.md#Creating-a-Decision-Tree):
 
 **Swift**:
 
@@ -88,7 +93,7 @@ GKDecisionTree *decisionTree = [[GKDecisionTree alloc] initWithExamples:examples
 
 When creating an automatically learned decision tree, be sure to provide enough examples to predict actions for all of the possible answer sets you expect to handle, and no contradictory examples.
 
-For example, [`Figure 1`](gkdecisiontree#1965709.md) shows the tree inferred from the input in the above code example. This tree always chooses the “Psychic Strike” action when the opponent’s health is below 15, because the only example with that action fits that condition. If you want to choose that action based on answers to both the “HP?” and “Special?” attributes, you’d need to provide multiple examples where that action corresponds to different sets of attribute values.
+For example, [Figure 1](../gkdecisiontree.md#1965709) shows the tree inferred from the input in the above code example. This tree always chooses the “Psychic Strike” action when the opponent’s health is below 15, because the only example with that action fits that condition. If you want to choose that action based on answers to both the “HP?” and “Special?” attributes, you’d need to provide multiple examples where that action corresponds to different sets of attribute values.
 
 ## Parameters
 

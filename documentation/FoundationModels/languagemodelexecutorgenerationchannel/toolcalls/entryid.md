@@ -1,7 +1,8 @@
 # entryID
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the entry.
 
@@ -21,11 +22,12 @@ var entryID: String?
 
 ## See Also
 
-- [var action: LanguageModelExecutorGenerationChannel.ToolCalls.Action](languagemodelexecutorgenerationchannel/toolcalls/action-swift.property.md)
+### Handling tool calls
+- [var action: LanguageModelExecutorGenerationChannel.ToolCalls.Action](./action-swift.property.md)
   The action to perform.
-- [LanguageModelExecutorGenerationChannel.ToolCalls.Action](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct.md)
+- [LanguageModelExecutorGenerationChannel.ToolCalls.Action](./action-swift.struct.md)
   An operation that can be performed on a tool-calls entry.
-- [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall](languagemodelexecutorgenerationchannel/toolcalls/toolcall.md)
+- [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall](./toolcall.md)
   A per-tool-call event payload.
 
 

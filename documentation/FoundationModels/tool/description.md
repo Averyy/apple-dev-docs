@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A natural language description of when and how to use the tool.
@@ -22,13 +23,14 @@ var description: String { get }
 
 ## See Also
 
-- [var name: String](tool/name.md)
+### Inspecting a tool
+- [var name: String](./name.md)
   A unique name for the tool.
-- [var parameters: GenerationSchema](tool/parameters.md)
+- [var parameters: GenerationSchema](./parameters.md)
   A schema for the parameters this tool accepts.
-- [var includesSchemaInInstructions: Bool](tool/includesschemaininstructions.md)
+- [var includesSchemaInInstructions: Bool](./includesschemaininstructions.md)
   A Boolean value that indicates whether the framework includes this tool’s definition in the session’s instructions.
-- [typealias SessionProperty](tool/sessionproperty.md)
+- [typealias SessionProperty](./sessionproperty.md)
   A property wrapper that provides access to a session property from within a tool.
 
 

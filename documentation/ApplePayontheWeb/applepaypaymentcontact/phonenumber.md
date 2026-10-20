@@ -1,7 +1,8 @@
 # phoneNumber
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A phone number for the contact.
 
@@ -11,7 +12,7 @@ A phone number for the contact.
 
 ## Declaration
 
-```swift
+```
 DOMString phoneNumber;
 ```
 
@@ -23,15 +24,16 @@ Your app should be prepared to handle phone numbers in a variety of formats, for
 
 ## See Also
 
-- [emailAddress](applepaypaymentcontact/emailaddress.md)
+### Contact properties
+- [emailAddress](./emailaddress.md)
   An email address for the contact.
-- [givenName](applepaypaymentcontact/givenname.md)
+- [givenName](./givenname.md)
   The contact’s given name.
-- [familyName](applepaypaymentcontact/familyname.md)
+- [familyName](./familyname.md)
   The contact’s family name.
-- [phoneticGivenName](applepaypaymentcontact/phoneticgivenname.md)
+- [phoneticGivenName](./phoneticgivenname.md)
   The phonetic spelling of the contact’s given name.
-- [phoneticFamilyName](applepaypaymentcontact/phoneticfamilyname.md)
+- [phoneticFamilyName](./phoneticfamilyname.md)
   The phonetic spelling of the contact’s family name.
 
 

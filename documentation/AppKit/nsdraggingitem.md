@@ -1,7 +1,8 @@
 # NSDraggingItem
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A single dragged item within a dragging session.
 
@@ -14,51 +15,56 @@ A single dragged item within a dragging session.
 class NSDraggingItem
 ```
 
+```objc
+@interface NSDraggingItem : NSObject
+```
+
 #### Overview
 
-[`NSDraggingItem`](nsdraggingitem.md) objects have extremely limited lifetimes. Don’t retain these items because changing outside of the prescribed lifetimes has no impact on the drag.
+[`NSDraggingItem`](./nsdraggingitem.md) objects have extremely limited lifetimes. Don’t retain these items because changing outside of the prescribed lifetimes has no impact on the drag.
 
-When you call the [`NSDraggingSession`](nsdraggingsession.md) method [`beginDraggingSession(with:event:source:)`](nsview/begindraggingsession(with:event:source:).md), the system immediately consumes the dragging items that pass to the method, and doesn’t retain them. Any further changes to the dragging item associated with the returned [`NSDraggingSession`](nsdraggingsession.md) must occur with the enumeration method [`enumerateDraggingItems(options:for:classes:searchOptions:using:)`](nsdraggingsession/enumeratedraggingitems(options:for:classes:searchoptions:using:).md). When enumerating, the system creates `NSDraggingItem` instances right before giving them to the enumeration block. After returning from the block, the dragging item is no longer valid.
+When you call the [`NSDraggingSession`](./nsdraggingsession.md) method [`beginDraggingSession(with:event:source:)`](./nsview/begindraggingsession%28with,event,source%29.md), the system immediately consumes the dragging items that pass to the method, and doesn’t retain them. Any further changes to the dragging item associated with the returned [`NSDraggingSession`](./nsdraggingsession.md) must occur with the enumeration method [`enumerateDraggingItems(options:for:classes:searchOptions:using:)`](./nsdraggingsession/enumeratedraggingitems%28options,for,classes,searchoptions,using%29.md). When enumerating, the system creates `NSDraggingItem` instances right before giving them to the enumeration block. After returning from the block, the dragging item is no longer valid.
 
 ## Topics
 
 ### Initializing a dragging item
-- [init(pasteboardWriter: any NSPasteboardWriting)](nsdraggingitem/init(pasteboardwriter:).md)
+- [init(pasteboardWriter: any NSPasteboardWriting)](./nsdraggingitem/init%28pasteboardwriter%29.md)
   Creates and returns a dragging item using the specified content.
 ### Dragging frame
-- [func setDraggingFrame(NSRect, contents: Any?)](nsdraggingitem/setdraggingframe(_:contents:).md)
+- [func setDraggingFrame(NSRect, contents: Any?)](./nsdraggingitem/setdraggingframe%28_,contents%29.md)
   Sets the item’s dragging frame and contents.
-- [var draggingFrame: NSRect](nsdraggingitem/draggingframe.md)
+- [var draggingFrame: NSRect](./nsdraggingitem/draggingframe.md)
   The frame of the dragging item.
 ### Drag image components
-- [var imageComponents: [NSDraggingImageComponent]?](nsdraggingitem/imagecomponents.md)
+- [var imageComponents: [NSDraggingImageComponent]?](./nsdraggingitem/imagecomponents.md)
   An array of dragging image components to use to create the drag image.
-- [var imageComponentsProvider: (() -> [NSDraggingImageComponent])?](nsdraggingitem/imagecomponentsprovider.md)
+- [var imageComponentsProvider: (() -> [NSDraggingImageComponent])?](./nsdraggingitem/imagecomponentsprovider.md)
   An array of blocks that provide the dragging image components.
-- [NSDraggingItem.ImageComponentKey](nsdraggingitem/imagecomponentkey.md)
+- [NSDraggingItem.ImageComponentKey](./nsdraggingitem/imagecomponentkey.md)
   Keys that identify components of a dragging image.
-- [var item: Any](nsdraggingitem/item.md)
+- [var item: Any](./nsdraggingitem/item.md)
   The pasteboard reader or writer object dependent on the context where you use the dragging item.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol NSDraggingSource](nsdraggingsource.md)
+### Drag Sources
+- [protocol NSDraggingSource](./nsdraggingsource.md)
   A set of methods that are implemented by the source object in a dragging session.
-- [class NSDraggingSession](nsdraggingsession.md)
+- [class NSDraggingSession](./nsdraggingsession.md)
   An object that encapsulates a drag-and-drop action.
-- [class NSDraggingImageComponent](nsdraggingimagecomponent.md)
+- [class NSDraggingImageComponent](./nsdraggingimagecomponent.md)
   A single object in a dragging item.
 
 

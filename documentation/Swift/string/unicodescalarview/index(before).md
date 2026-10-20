@@ -1,7 +1,8 @@
 # index(before:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the previous consecutive location before `i`.
 
@@ -22,7 +23,7 @@ func index(before i: String.UnicodeScalarView.Index) -> String.UnicodeScalarView
 
 #### Discussion
 
-> **Note**: The previous location exists.
+> **Precondition**: The previous location exists.
 
 
 ---

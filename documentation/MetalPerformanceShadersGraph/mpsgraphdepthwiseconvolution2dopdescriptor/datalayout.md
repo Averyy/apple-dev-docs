@@ -1,7 +1,8 @@
 # dataLayout
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data layout of the input data in the forward pass.
 
@@ -19,9 +20,13 @@ The data layout of the input data in the forward pass.
 var dataLayout: MPSGraphTensorNamedDataLayout { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MPSGraphTensorNamedDataLayout dataLayout;
+```
+
 #### Discussion
 
-See: [`MPSGraphTensorNamedDataLayout`](mpsgraphtensornameddatalayout.md).
+See: [`MPSGraphTensorNamedDataLayout`](../mpsgraphtensornameddatalayout.md).
 
 
 ---

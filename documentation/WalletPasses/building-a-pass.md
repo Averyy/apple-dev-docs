@@ -1,16 +1,17 @@
 # Building a Pass
 
-**Framework**: Wallet Passes
+**Framework**: Wallet Passes  
+**Role**: Article
 
 Build a distributable pass.
 
 #### Overview
 
-The pass you distribute to a user is a signed [`Bundle`](https://developer.apple.com/documentation/foundation/bundle) that contains the JSON description of the pass, images, and optional localizations.
+The pass you distribute to a user is a signed [`Bundle`](../Foundation/bundle.md) that contains the JSON description of the pass, images, and optional localizations.
 
 To build a pass, you:
 
-- Create the source files for a pass. To learn more, see [`Creating the Source for a Pass`](creating-the-source-for-a-pass.md).
+- Create the source files for a pass. To learn more, see [Creating the Source for a Pass](./creating-the-source-for-a-pass.md).
 - Create a pass type identifier.
 - Generate a signing certificate.
 - Create a digital signature for the pass.
@@ -28,13 +29,13 @@ Create your pass type identifier in the Certificates, Identifiers & Profiles are
 - On the next screen, choose Pass Type IDs and click Continue.
 - Enter a description and the reverse DNS string to create the identifier.
 
-For more information on signing in to your account and creating identifiers, see [`Developer Account Help`](https://developer.apple.comhttps://developer.apple.com/help/account/).
+For more information on signing in to your account and creating identifiers, see [Developer Account Help](https://developer.apple.com/help/account/).
 
-Set the `passTypeIdentifier` of [`Pass`](pass.md) in the `pass.json` file to the identifier. Set the `serialNumber` key to the unique serial number for that identifier.
+Set the `passTypeIdentifier` of [`Pass`](./pass.md) in the `pass.json` file to the identifier. Set the `serialNumber` key to the unique serial number for that identifier.
 
 ##### Generate a Signing Certificate
 
-Signing a pass requires a signing certificate for the pass type identifier. Before you can generate a signing certificate you need a certificate signing request (CSR). To learn how to generate a CSR, see [`Create a certificate signing request`](https://developer.apple.comhttps://developer.apple.com/help/account/create-certificates/create-a-certificate-signing-request).
+Signing a pass requires a signing certificate for the pass type identifier. Before you can generate a signing certificate you need a certificate signing request (CSR). To learn how to generate a CSR, see [Create a certificate signing request](https://developer.apple.com/help/account/create-certificates/create-a-certificate-signing-request).
 
 Generate the signing certificate in the Certificates, Identifiers & Profiles area of the Apple Developer portal.
 
@@ -45,7 +46,7 @@ Generate the signing certificate in the Certificates, Identifiers & Profiles are
 
 After uploading the CSR, generate the certificate and download it to the machine used for signing the pass.
 
-For more information on signing into your account and creating signing certificates, see [`Developer Account Help`](https://developer.apple.comhttps://developer.apple.com/help/account/).
+For more information on signing into your account and creating signing certificates, see [Developer Account Help](https://developer.apple.com/help/account/).
 
 ##### Sign the Pass and Create the Bundle
 
@@ -82,7 +83,7 @@ The manifest is a JSON object that contains a dictionary of the SHA1 hashes for 
 
 Test your pass by dropping it onto an iPhone that’s running on Simulator. Wallet shows the add pass dialog if it’s valid.
 
-![A graphic that show the add pass sheet on an iPhone 12 running in Simulator. ](/images/com.apple.walletpasses/media-3737826@2x.png)
+![A graphic that show the add pass sheet on an iPhone 12 running in Simulator. ](https://developer.apple.com/tutorials/images/com.apple.walletpasses/media-3737826@2x.png)
 
 ##### Common Problems
 
@@ -97,7 +98,7 @@ If your pass doesn’t build correctly, check whether the following are all true
 - The source contains all required images.
 - The images are in the correct format.
 - The `pass.json` and `manifest.json` files use the correct JSON syntax.
-- Strings that require value formats are correct, such as the `value` and `attributedValue` keys of [`PassFieldContent`](passfieldcontent.md) which require an ISO 8601 date.
+- Strings that require value formats are correct, such as the `value` and `attributedValue` keys of [`PassFieldContent`](./passfieldcontent.md) which require an ISO 8601 date.
 - The names of localization folders use the correct language and region identifiers.
 - Each localization folder contains all localized image files.
 - Each localization folder contain the `pass.strings` file for passes with localized strings.
@@ -107,19 +108,20 @@ If your pass doesn’t build correctly, check whether the following are all true
 
 ## See Also
 
-- [Creating a pass with Pass Designer](creating-a-pass-with-pass-designer.md)
+### Essentials
+- [Creating a pass with Pass Designer](./creating-a-pass-with-pass-designer.md)
   Construct and customize a variety of pass styles with this easy-to-use tool.
-- [Creating a Poster Generic Pass](creating-a-poster-generic-pass.md)
+- [Creating a Poster Generic Pass](./creating-a-poster-generic-pass.md)
   Construct a digital pass with information that enables people to take action.
-- [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
+- [Creating the Source for a Pass](./creating-the-source-for-a-pass.md)
   Create the directory structure and add source files and images to define a pass.
-- [Defining the metadata of your Wallet Pass](defining-the-metadata-of-your-wallet-pass.md)
+- [Defining the metadata of your Wallet Pass](./defining-the-metadata-of-your-wallet-pass.md)
   Provide customizable information for your Wallet Pass.
-- [Distributing and updating a pass](distributing-and-updating-a-pass.md)
+- [Distributing and updating a pass](./distributing-and-updating-a-pass.md)
   Distribute a pass to your users or update an existing pass.
-- [object Pass](pass.md)
+- [object Pass](./pass.md)
   An object that represents a pass.
-- [object PassFields](passfields.md)
+- [object PassFields](./passfields.md)
   An object that represents the groups of fields that display information on the front and back of a pass.
 
 

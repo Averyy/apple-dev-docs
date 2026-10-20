@@ -1,7 +1,8 @@
 # ShaderGraphMaterial.LoadError
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -20,20 +21,20 @@ enum LoadError
 ## Topics
 
 ### Enumeration Cases
-- [ShaderGraphMaterial.LoadError.invalidTypeFound](shadergraphmaterial/loaderror/invalidtypefound.md)
-- [ShaderGraphMaterial.LoadError.invalidURL](shadergraphmaterial/loaderror/invalidurl.md)
-- [ShaderGraphMaterial.LoadError.materialNameNotFound](shadergraphmaterial/loaderror/materialnamenotfound.md)
-- [ShaderGraphMaterial.LoadError.resourceShareFailed](shadergraphmaterial/loaderror/resourcesharefailed.md)
+- [ShaderGraphMaterial.LoadError.invalidTypeFound](./loaderror/invalidtypefound.md)
+- [ShaderGraphMaterial.LoadError.invalidURL](./loaderror/invalidurl.md)
+- [ShaderGraphMaterial.LoadError.materialNameNotFound](./loaderror/materialnamenotfound.md)
+- [ShaderGraphMaterial.LoadError.resourceShareFailed](./loaderror/resourcesharefailed.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

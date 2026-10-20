@@ -1,7 +1,8 @@
 # CMTimeMappingShow(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Prints a description of a time mapping to standard output.
 
@@ -20,6 +21,10 @@ Prints a description of a time mapping to standard output.
 func CMTimeMappingShow(_ mapping: CMTimeMapping)
 ```
 
+```c
+extern void CMTimeMappingShow(CMTimeMapping mapping);
+```
+
 #### Discussion
 
 You typically use this function for debugging purposes.
@@ -30,9 +35,10 @@ You typically use this function for debugging purposes.
 
 ## See Also
 
-- [func CMTimeMappingCopyAsDictionary(CMTimeMapping, allocator: CFAllocator?) -> CFDictionary?](cmtimemappingcopyasdictionary(_:allocator:).md)
+### Representing Time Mappings
+- [func CMTimeMappingCopyAsDictionary(CMTimeMapping, allocator: CFAllocator?) -> CFDictionary?](./cmtimemappingcopyasdictionary%28_,allocator%29.md)
   Returns a dictionary representation of a time mapping.
-- [func CMTimeMappingCopyDescription(allocator: CFAllocator?, mapping: CMTimeMapping) -> CFString?](cmtimemappingcopydescription(allocator:mapping:).md)
+- [func CMTimeMappingCopyDescription(allocator: CFAllocator?, mapping: CMTimeMapping) -> CFString?](./cmtimemappingcopydescription%28allocator,mapping%29.md)
   Copies a string description of a time mapping.
 
 

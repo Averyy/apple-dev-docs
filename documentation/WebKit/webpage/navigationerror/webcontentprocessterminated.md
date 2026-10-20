@@ -1,7 +1,8 @@
 # WebPage.NavigationError.webContentProcessTerminated
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The process for the web content of this page was terminated for any reason.
 

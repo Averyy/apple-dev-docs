@@ -1,7 +1,8 @@
 # kCGImagePropertyTIFFDictionary
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary of key-value pairs for an image that uses Tagged Image File Format (TIFF).
 
@@ -20,9 +21,13 @@ A dictionary of key-value pairs for an image that uses Tagged Image File Format 
 let kCGImagePropertyTIFFDictionary: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyTIFFDictionary;
+```
+
 #### Discussion
 
-For more information about the available metadata keys, see [`TIFF Image Properties`](tiff-image-properties.md).
+For more information about the available metadata keys, see [TIFF Image Properties](./tiff-image-properties.md).
 
 
 ---

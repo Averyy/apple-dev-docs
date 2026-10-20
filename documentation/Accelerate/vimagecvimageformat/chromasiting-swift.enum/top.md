@@ -1,7 +1,8 @@
 # vImageCVImageFormat.ChromaSiting.top
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The chrominance sample is horizontally centered, but co-sited with the top row of luminance samples.
 
@@ -11,7 +12,7 @@ The chrominance sample is horizontally centered, but co-sited with the top row o
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,17 +23,18 @@ case top
 
 ## See Also
 
-- [vImageCVImageFormat.ChromaSiting.topLeft](vimagecvimageformat/chromasiting-swift.enum/topleft.md)
+### Chrominance siting constants
+- [vImageCVImageFormat.ChromaSiting.topLeft](./topleft.md)
   The chrominance sample is co-sited with the top-left luminance sample.
-- [vImageCVImageFormat.ChromaSiting.bottom](vimagecvimageformat/chromasiting-swift.enum/bottom.md)
+- [vImageCVImageFormat.ChromaSiting.bottom](./bottom.md)
   The chrominance sample is horizontally centered, but co-sited with the bottom row of luminance samples.
-- [vImageCVImageFormat.ChromaSiting.bottomLeft](vimagecvimageformat/chromasiting-swift.enum/bottomleft.md)
+- [vImageCVImageFormat.ChromaSiting.bottomLeft](./bottomleft.md)
   The chrominance sample is co-sited with the bottom-left luminance sample.
-- [vImageCVImageFormat.ChromaSiting.left](vimagecvimageformat/chromasiting-swift.enum/left.md)
+- [vImageCVImageFormat.ChromaSiting.left](./left.md)
   The chrominance sample is horizontally co-sited with the left column of luminance samples, but centered vertically.
-- [vImageCVImageFormat.ChromaSiting.center](vimagecvimageformat/chromasiting-swift.enum/center.md)
+- [vImageCVImageFormat.ChromaSiting.center](./center.md)
   The chrominance sample is fully centered.
-- [vImageCVImageFormat.ChromaSiting.dv420](vimagecvimageformat/chromasiting-swift.enum/dv420.md)
+- [vImageCVImageFormat.ChromaSiting.dv420](./dv420.md)
   The Cr and Cb samples are alternately co-sited with the left luminance samples of the same field.
 
 

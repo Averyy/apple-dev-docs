@@ -1,12 +1,15 @@
 # TVInterfaceCreating
 
 **Framework**: TVMLKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines methods used to create views and view controllers.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,47 +17,52 @@ A protocol that defines methods used to create views and view controllers.
 protocol TVInterfaceCreating : NSObjectProtocol
 ```
 
+```objc
+@protocol TVInterfaceCreating <NSObject>
+```
+
 ## Mentions
 
-- [Creating TVML Elements](creating-tvml-elements.md)
+- [Creating TVML Elements](./creating-tvml-elements.md)
 
 #### Overview
 
-This protocol contains methods used to create views and view controllers from a [`TVViewElement`](tvviewelement.md).
+This protocol contains methods used to create views and view controllers from a [`TVViewElement`](./tvviewelement.md).
 
 ## Topics
 
 ### Retrieving Resource Information
-- [func resourceImage(name: String) -> UIImage?](tvinterfacecreating/resourceimage(name:).md)
+- [func resourceImage(name: String) -> UIImage?](./tvinterfacecreating/resourceimage%28name%29.md)
   Returns the image for the given resource
-- [func resourceURL(name: String) -> URL?](tvinterfacecreating/resourceurl(name:).md)
+- [func resourceURL(name: String) -> URL?](./tvinterfacecreating/resourceurl%28name%29.md)
   Returns a URL for the given resource.
 ### Updating View Information
-- [func makeViewController(element: TVViewElement, existingViewController: UIViewController?) -> UIViewController?](tvinterfacecreating/makeviewcontroller(element:existingviewcontroller:).md)
+- [func makeViewController(element: TVViewElement, existingViewController: UIViewController?) -> UIViewController?](./tvinterfacecreating/makeviewcontroller%28element,existingviewcontroller%29.md)
   Returns a view controller for a view element.
-- [func makeView(element: TVViewElement, existingView: UIView?) -> UIView?](tvinterfacecreating/makeview(element:existingview:).md)
+- [func makeView(element: TVViewElement, existingView: UIView?) -> UIView?](./tvinterfacecreating/makeview%28element,existingview%29.md)
   Returns a view for a view element.
-- [func collectionViewCellClass(for: TVViewElement) -> AnyClass?](tvinterfacecreating/collectionviewcellclass(for:).md)
+- [func collectionViewCellClass(for: TVViewElement) -> AnyClass?](./tvinterfacecreating/collectionviewcellclass%28for%29.md)
   Returns a collection view cell for the specified element.
-- [func playerViewController(for: TVPlayer) -> UIViewController?](tvinterfacecreating/playerviewcontroller(for:).md)
+- [func playerViewController(for: TVPlayer) -> UIViewController?](./tvinterfacecreating/playerviewcontroller%28for%29.md)
   Returns the custom player user interface for a custom player.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [TVInterfaceFactory](tvinterfacefactory.md)
+- [TVInterfaceFactory](./tvinterfacefactory.md)
 
 ## See Also
 
-- [class TVViewElement](tvviewelement.md)
+### Views and View Controllers
+- [class TVViewElement](./tvviewelement.md)
   A representation of a read-only DOM node.
-- [class TVInterfaceFactory](tvinterfacefactory.md)
+- [class TVInterfaceFactory](./tvinterfacefactory.md)
   A factory for the creation of views and view controllers.
-- [class TVBrowserViewController](tvbrowserviewcontroller.md)
+- [class TVBrowserViewController](./tvbrowserviewcontroller.md)
   A view controller that presents content in a browsable, full-screen format.
-- [class TVDocumentViewController](tvdocumentviewcontroller.md)
+- [class TVDocumentViewController](./tvdocumentviewcontroller.md)
   A view controller that represents a TVMLKit document.
 
 

@@ -1,7 +1,8 @@
 # PredicateExpressions.KeyPath.CommonKeyPathKind
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -18,21 +19,23 @@
 enum CommonKeyPathKind
 ```
 
+Available when `Root` conforms to `PredicateExpression`.
+
 ## Topics
 
 ### Enumeration Cases
-- [PredicateExpressions.KeyPath.CommonKeyPathKind.bidirectionalCollectionLast](predicateexpressions/keypath/commonkeypathkind/bidirectionalcollectionlast.md)
-- [PredicateExpressions.KeyPath.CommonKeyPathKind.collectionCount](predicateexpressions/keypath/commonkeypathkind/collectioncount.md)
-- [PredicateExpressions.KeyPath.CommonKeyPathKind.collectionFirst](predicateexpressions/keypath/commonkeypathkind/collectionfirst.md)
-- [PredicateExpressions.KeyPath.CommonKeyPathKind.collectionIsEmpty](predicateexpressions/keypath/commonkeypathkind/collectionisempty.md)
+- [PredicateExpressions.KeyPath.CommonKeyPathKind.bidirectionalCollectionLast](./commonkeypathkind/bidirectionalcollectionlast.md)
+- [PredicateExpressions.KeyPath.CommonKeyPathKind.collectionCount](./commonkeypathkind/collectioncount.md)
+- [PredicateExpressions.KeyPath.CommonKeyPathKind.collectionFirst](./commonkeypathkind/collectionfirst.md)
+- [PredicateExpressions.KeyPath.CommonKeyPathKind.collectionIsEmpty](./commonkeypathkind/collectionisempty.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

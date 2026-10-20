@@ -1,7 +1,8 @@
 # CLMonitor.Record
 
 **Framework**: Core Location  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a condition and its associated event information that the framework is monitoring.
 
@@ -24,22 +25,23 @@ The `CLMonitor.Record` contains a condition and most recent event that affects i
 ## Topics
 
 ### Record characteristics
-- [let condition: any CLCondition](clmonitor-2r51v/record/condition.md)
+- [let condition: any CLCondition](./record/condition.md)
   The condition that the framework is monitoring for.
-- [let lastEvent: CLMonitor.Event](clmonitor-2r51v/record/lastevent.md)
+- [let lastEvent: CLMonitor.Event](./record/lastevent.md)
   The most recent event the monitor records.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CLMonitor.Event](clmonitor-2r51v/event.md)
+### Monitor events
+- [CLMonitor.Event](./event.md)
   An event object that the framework passes to the events sequence in the monitor.
-- [CLMonitor.Events](clmonitor-2r51v/events-swift.struct.md)
+- [CLMonitor.Events](./events-swift.struct.md)
   A type that represents an asynchronous sequence of events.
 
 

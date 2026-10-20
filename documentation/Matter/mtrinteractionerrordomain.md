@@ -1,7 +1,8 @@
 # MTRInteractionErrorDomain
 
 **Framework**: Matter  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 let MTRInteractionErrorDomain: String
+```
+
+```c
+extern NSErrorDomain const MTRInteractionErrorDomain;
 ```
 
 

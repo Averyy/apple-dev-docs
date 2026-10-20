@@ -1,7 +1,8 @@
 # init(baseExpression:underExpression:overExpression:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.2+
@@ -16,6 +17,10 @@
 
 ```swift
 init(baseExpression: AXMathExpression, underExpression: AXMathExpression, overExpression: AXMathExpression)
+```
+
+```objc
+- (instancetype) initWithBaseExpression:(AXMathExpression *) baseExpression underExpression:(AXMathExpression *) underExpression overExpression:(AXMathExpression *) overExpression;
 ```
 
 

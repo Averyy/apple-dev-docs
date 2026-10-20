@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16UDI_C_Plane
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16UDI_C_Plane = 0x001D
 ```
 

@@ -1,7 +1,8 @@
 # ThrowingTaskGroup.AsyncIterator
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of asynchronous iterator that produces elements of this asynchronous sequence.
 
@@ -20,11 +21,14 @@ The type of asynchronous iterator that produces elements of this asynchronous se
 typealias AsyncIterator = ThrowingTaskGroup<ChildTaskResult, Failure>.Iterator
 ```
 
+Available when `ChildTaskResult` conforms to `Sendable` and `Failure` conforms to `Error`.
+
 ## See Also
 
-- [ThrowingTaskGroup.Element](throwingtaskgroup/element.md)
+### Supporting Types
+- [ThrowingTaskGroup.Element](./element.md)
   The type of element produced by this asynchronous sequence.
-- [ThrowingTaskGroup.Iterator](throwingtaskgroup/iterator.md)
+- [ThrowingTaskGroup.Iterator](./iterator.md)
   A type that provides an iteration interface over the results of tasks added to the group.
 
 

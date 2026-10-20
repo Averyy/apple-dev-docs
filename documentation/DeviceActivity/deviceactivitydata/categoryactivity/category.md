@@ -1,7 +1,8 @@
 # category
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the category of the activity.
 
@@ -18,7 +19,7 @@ var category: ActivityCategory
 
 #### Discussion
 
-Your device activity report extension can access the category’s [`localizedDisplayName`](https://developer.apple.com/documentation/managedsettings/activitycategory/localizeddisplayname).
+Your device activity report extension can access the category’s [`localizedDisplayName`](../../../ManagedSettings/activitycategory/localizeddisplayname.md).
 
 
 ---

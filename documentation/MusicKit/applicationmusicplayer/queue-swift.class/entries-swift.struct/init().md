@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty collection of entries.
 

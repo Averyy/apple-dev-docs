@@ -1,7 +1,8 @@
 # MPSImageLanczosScale
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A filter that resizes and changes the aspect ratio of an image using Lanczos resampling.
 
@@ -19,6 +20,10 @@ A filter that resizes and changes the aspect ratio of an image using Lanczos res
 class MPSImageLanczosScale
 ```
 
+```objc
+@interface MPSImageLanczosScale : MPSImageScale
+```
+
 #### Overview
 
 You can use this filter to enlarge or reduce the size of an image, or to change the aspect ratio of an image. The filter uses a Lanczos resampling algorithm, that typically produces better quality for photographs, but is slower than linear sampling that uses GPU texture units. Lanczos downsampling does not require a low pass filter to be applied before it is used. Because the resampling function has negative lobes, Lanczos can result in ringing artifacts near sharp edges, making it less suitable for vector art.
@@ -26,36 +31,37 @@ You can use this filter to enlarge or reduce the size of an image, or to change 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagelanczosscale/init(coder:device:).md)
-- [init(device: any MTLDevice)](mpsimagelanczosscale/init(device:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsimagelanczosscale/init%28coder,device%29.md)
+- [init(device: any MTLDevice)](./mpsimagelanczosscale/init%28device%29.md)
 ### Properties
-- [struct MPSScaleTransform](mpsscaletransform.md)
+- [struct MPSScaleTransform](./mpsscaletransform.md)
   A transform matrix for explicit resampling control with a Lanczos kernel.
 
 ## Relationships
 
 ### Inherits From
-- [MPSImageScale](mpsimagescale.md)
+- [MPSImageScale](./mpsimagescale.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSImageConversion](mpsimageconversion.md)
+### Image Manipulation Filters
+- [class MPSImageConversion](./mpsimageconversion.md)
   A filter that performs a conversion of color space, alpha, or pixel format.
-- [class MPSImageScale](mpsimagescale.md)
+- [class MPSImageScale](./mpsimagescale.md)
   A filter that resizes and changes the aspect ratio of an image.
-- [class MPSImageBilinearScale](mpsimagebilinearscale.md)
+- [class MPSImageBilinearScale](./mpsimagebilinearscale.md)
   A filter that resizes and changes the aspect ratio of an image using Bilinear resampling.
-- [class MPSImageTranspose](mpsimagetranspose.md)
+- [class MPSImageTranspose](./mpsimagetranspose.md)
   A filter that transposes an image.
 
 

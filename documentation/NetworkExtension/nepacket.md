@@ -1,7 +1,8 @@
 # NEPacket
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A network packet and its associated properties.
 
@@ -19,39 +20,44 @@ A network packet and its associated properties.
 class NEPacket
 ```
 
+```objc
+@interface NEPacket : NSObject
+```
+
 ## Topics
 
 ### Initializing a packet
-- [init(data: Data, protocolFamily: sa_family_t)](nepacket/init(data:protocolfamily:).md)
+- [init(data: Data, protocolFamily: sa_family_t)](./nepacket/init%28data,protocolfamily%29.md)
 ### Accessing packet properties
-- [var data: Data](nepacket/data.md)
-- [var metadata: NEFlowMetaData?](nepacket/metadata.md)
-- [var protocolFamily: sa_family_t](nepacket/protocolfamily.md)
-- [var direction: NETrafficDirection](nepacket/direction.md)
+- [var data: Data](./nepacket/data.md)
+- [var metadata: NEFlowMetaData?](./nepacket/metadata.md)
+- [var protocolFamily: sa_family_t](./nepacket/protocolfamily.md)
+- [var direction: NETrafficDirection](./nepacket/direction.md)
   The direction of the packet.
-- [enum NETrafficDirection](netrafficdirection.md)
+- [enum NETrafficDirection](./netrafficdirection.md)
   A type to represent the direction of network traffic.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NEPacketTunnelFlow](nepackettunnelflow.md)
+### Packet handling
+- [class NEPacketTunnelFlow](./nepackettunnelflow.md)
   An object you use to read and write packets to and from the tunnel’s virtual interface.
-- [In-Provider Networking](in-provider-networking.md)
+- [In-Provider Networking](./in-provider-networking.md)
   Network APIs for use by all types of NetworkExtension providers and by hotspot helpers.
 
 

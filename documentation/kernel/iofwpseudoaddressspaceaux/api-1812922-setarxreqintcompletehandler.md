@@ -7,13 +7,13 @@ Installs a callback to receive notification, when FWIM has completed ARxReqInt p
 
 ## Declaration
 
-```swift
+```cpp
 virtual void setARxReqIntCompleteHandler(
  void *refcon,
  IOFWARxReqIntCompleteHandlerhandler );
 ```
 
-#### Return_value
+#### Return Value
 
 none.
 

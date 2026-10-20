@@ -1,22 +1,29 @@
 # init(image:)
 
 **Framework**: Media Player  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a media item artwork instance with a full-size image.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 5.0+ - Deprecated in 10.0
+- iPadOS 5.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS 9.0+ - Deprecated in 10.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 3.0
+
+> **Deprecated**: Use -initWithBoundsSize:requestHandler:
 
 ## Declaration
 
 ```swift
 convenience init(image: UIImage)
+```
+
+```objc
+- (instancetype) initWithImage:(UIImage *) image;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # kVTCompressionPreset_HighSpeed
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -17,22 +18,27 @@
 let kVTCompressionPreset_HighSpeed: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPreset_HighSpeed;
+```
+
 #### Discussion
 
 A preset to provide a high-speed encoding.
 
 An encoder configured using this preset is expected to achieve a faster encoding at a lower compression quality than an encoder configured with the preset kVTCompressionPreset_HighQuality or kVTCompressionPreset_Balanced. The presets kVTCompressionPreset_HighQuality and kVTCompressionPreset_Balanced may be preferred for a higher compression quality.
 
-```None
+```
 See also kVTCompressionPreset_HighQuality, kVTCompressionPreset_Balanced, kVTCompressionPreset_VideoConferencing, kVTCompressionPreset_ConsistentQuality.
 ```
 
 ## See Also
 
-- [let kVTCompressionPreset_Balanced: CFString](kvtcompressionpreset_balanced.md)
-- [let kVTCompressionPreset_HighQuality: CFString](kvtcompressionpreset_highquality.md)
-- [let kVTCompressionPreset_VideoConferencing: CFString](kvtcompressionpreset_videoconferencing.md)
-- [let kVTCompressionPropertyKey_SupportedPresetDictionaries: CFString](kvtcompressionpropertykey_supportedpresetdictionaries.md)
+### Compression Presets
+- [let kVTCompressionPreset_Balanced: CFString](./kvtcompressionpreset_balanced.md)
+- [let kVTCompressionPreset_HighQuality: CFString](./kvtcompressionpreset_highquality.md)
+- [let kVTCompressionPreset_VideoConferencing: CFString](./kvtcompressionpreset_videoconferencing.md)
+- [let kVTCompressionPropertyKey_SupportedPresetDictionaries: CFString](./kvtcompressionpropertykey_supportedpresetdictionaries.md)
 
 
 ---

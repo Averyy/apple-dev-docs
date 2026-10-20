@@ -1,7 +1,8 @@
 # isMainProgramContent
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A media characteristic that indicates a track or media selection option includes content its author indicates is essential to the asset’s presentation.
 
@@ -20,21 +21,26 @@ A media characteristic that indicates a track or media selection option includes
 static let isMainProgramContent: AVMediaCharacteristic
 ```
 
+```c
+extern AVMediaCharacteristic const AVMediaCharacteristicIsMainProgramContent;
+```
+
 #### Discussion
 
 Example: an option that presents the main program audio for the presentation, regardless of locale, would typically have this characteristic.
 
 The value of this characteristic is `public.main-program-content`.
 
-The system infers the presence of this characteristic for a media option; it considers any option that doesn’t have the characteristic [`isAuxiliaryContent`](avmediacharacteristic/isauxiliarycontent.md) to be main content.
+The system infers the presence of this characteristic for a media option; it considers any option that doesn’t have the characteristic [`isAuxiliaryContent`](./isauxiliarycontent.md) to be main content.
 
 ## See Also
 
-- [static let isOriginalContent: AVMediaCharacteristic](avmediacharacteristic/isoriginalcontent.md)
+### Content
+- [static let isOriginalContent: AVMediaCharacteristic](./isoriginalcontent.md)
   A media characteristic that indicates that a track or media selection option contains original content.
-- [static let isAuxiliaryContent: AVMediaCharacteristic](avmediacharacteristic/isauxiliarycontent.md)
+- [static let isAuxiliaryContent: AVMediaCharacteristic](./isauxiliarycontent.md)
   A media characteristic that indicates a track or media selection option includes content its author indicates is auxiliary to the asset’s presentation.
-- [static let machineGenerated: AVMediaCharacteristic](avmediacharacteristic/machinegenerated.md)
+- [static let machineGenerated: AVMediaCharacteristic](./machinegenerated.md)
   A media characteristic that indicates that a track was generated in an automated fashion by a machine.
 
 

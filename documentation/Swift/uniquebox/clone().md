@@ -1,7 +1,8 @@
 # clone()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the value within the unqiue box and returns it in a new unique instance.
 

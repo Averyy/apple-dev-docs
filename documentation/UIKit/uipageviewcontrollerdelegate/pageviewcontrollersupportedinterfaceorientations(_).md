@@ -1,7 +1,8 @@
 # pageViewControllerSupportedInterfaceOrientations(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the complete set of supported interface orientations for the page view controller, as determined by the delegate.
 
@@ -17,9 +18,13 @@ Returns the complete set of supported interface orientations for the page view c
 optional func pageViewControllerSupportedInterfaceOrientations(_ pageViewController: UIPageViewController) -> UIInterfaceOrientationMask
 ```
 
+```objc
+- (UIInterfaceOrientationMask) pageViewControllerSupportedInterfaceOrientations:(UIPageViewController *) pageViewController;
+```
+
 #### Return Value
 
-One of the [`UIInterfaceOrientationMask`](uiinterfaceorientationmask.md) constants that represents the set of   interface orientations supported by the page view controller.
+One of the [`UIInterfaceOrientationMask`](../uiinterfaceorientationmask.md) constants that represents the set of   interface orientations supported by the page view controller.
 
 ## Parameters
 
@@ -27,9 +32,11 @@ One of the [`UIInterfaceOrientationMask`](uiinterfaceorientationmask.md) constan
 
 ## See Also
 
-- [var supportedInterfaceOrientations: UIInterfaceOrientationMask](uiviewcontroller/supportedinterfaceorientations.md)
+### Related Documentation
+- [var supportedInterfaceOrientations: UIInterfaceOrientationMask](../uiviewcontroller/supportedinterfaceorientations.md)
   The interface orientations that the view controller supports.
-- [func pageViewControllerPreferredInterfaceOrientationForPresentation(UIPageViewController) -> UIInterfaceOrientation](uipageviewcontrollerdelegate/pageviewcontrollerpreferredinterfaceorientationforpresentation(_:).md)
+### Overriding View Rotation Settings
+- [func pageViewControllerPreferredInterfaceOrientationForPresentation(UIPageViewController) -> UIInterfaceOrientation](./pageviewcontrollerpreferredinterfaceorientationforpresentation%28_%29.md)
   Returns the preferred orientation for presentation of the page view controller, as determined by the delegate.
 
 

@@ -1,23 +1,28 @@
 # scale(to:duration:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an action that uniformly changes the scale factor of a node to an absolute value.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 class func scale(to scale: CGFloat, duration sec: TimeInterval) -> SCNAction
+```
+
+```objc
++ (SCNAction *) scaleTo:(CGFloat) scale duration:(NSTimeInterval) sec;
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ A new action object.
 
 #### Discussion
 
-When the action executes, the node’s [`scale`](scnnode/scale.md) property animates to the new value.
+When the action executes, the node’s [`scale`](../scnnode/scale.md) property animates to the new value.
 
 This action is not reversible; the reverse of this action has the same duration but does not change anything.
 
@@ -37,7 +42,8 @@ This action is not reversible; the reverse of this action has the same duration 
 
 ## See Also
 
-- [class func scale(by: CGFloat, duration: TimeInterval) -> SCNAction](scnaction/scale(by:duration:).md)
+### Creating Actions That Change a Node’s Scale
+- [class func scale(by: CGFloat, duration: TimeInterval) -> SCNAction](./scale%28by,duration%29.md)
   Creates an action that uniformly changes the scale factor of a node by a relative value.
 
 

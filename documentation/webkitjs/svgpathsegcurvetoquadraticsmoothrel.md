@@ -1,7 +1,8 @@
 # SVGPathSegCurvetoQuadraticSmoothRel
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGPathSegCurvetoQuadraticSmoothRel
 ```
 
 ## Topics
 
 ### Instance Properties
-- [x](svgpathsegcurvetoquadraticsmoothrel/1629956-x.md)
-- [y](svgpathsegcurvetoquadraticsmoothrel/1630426-y.md)
+- [x](./svgpathsegcurvetoquadraticsmoothrel/api-1629956-x.md)
+- [y](./svgpathsegcurvetoquadraticsmoothrel/api-1630426-y.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGPathSeg](svgpathseg.md)
+- [SVGPathSeg](./svgpathseg.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # mbuf_tag_type_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef u_int16_t mbuf_tag_type_t;
 ```
 

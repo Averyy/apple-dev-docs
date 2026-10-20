@@ -1,7 +1,8 @@
 # trailingBack
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A guide representing a point at the trailing edge of the horizontal axis, center of the vertical axis, and back of the depth axis.
 

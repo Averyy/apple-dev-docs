@@ -1,7 +1,8 @@
 # AVCaptureOutput.DataDroppedReason.discontinuity
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system dropped data because the device providing data experienced a discontinuity, and the output lost an unknown number of data objects.
 
@@ -19,17 +20,22 @@ The system dropped data because the device providing data experienced a disconti
 case discontinuity
 ```
 
+```c
+AVCaptureOutputDataDroppedReasonDiscontinuity
+```
+
 #### Discussion
 
 A discontinuity is a situation where the capture system can’t ensure that minimal time passes between the capture of data buffers. This kind of situation can arise when the system as a whole is too busy to handle the data.
 
 ## See Also
 
-- [AVCaptureOutput.DataDroppedReason.none](avcaptureoutput/datadroppedreason/none.md)
+### Reasons
+- [AVCaptureOutput.DataDroppedReason.none](./none.md)
   The system didn’t drop data.
-- [AVCaptureOutput.DataDroppedReason.lateData](avcaptureoutput/datadroppedreason/latedata.md)
+- [AVCaptureOutput.DataDroppedReason.lateData](./latedata.md)
   The system dropped data because you’ve configured capture output to drop data when delegate queue is in a blocked state, and there’s data to deliver.
-- [AVCaptureOutput.DataDroppedReason.outOfBuffers](avcaptureoutput/datadroppedreason/outofbuffers.md)
+- [AVCaptureOutput.DataDroppedReason.outOfBuffers](./outofbuffers.md)
   The system dropped data because the capture output exhausted its internal pool of memory buffers.
 
 

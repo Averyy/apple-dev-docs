@@ -1,7 +1,8 @@
 # sort(by:ascending:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sorts items by a specified property.
 

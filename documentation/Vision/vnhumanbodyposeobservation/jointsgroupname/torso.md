@@ -1,7 +1,8 @@
 # torso
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The torso.
 
@@ -19,9 +20,13 @@ The torso.
 static let torso: VNHumanBodyPoseObservation.JointsGroupName
 ```
 
+```c
+extern VNHumanBodyPoseObservationJointsGroupName const VNHumanBodyPoseObservationJointsGroupNameTorso;
+```
+
 ## Mentions
 
-- [Detecting Human Body Poses in Images](detecting-human-body-poses-in-images.md)
+- [Detecting Human Body Poses in Images](../../detecting-human-body-poses-in-images.md)
 
 
 ---

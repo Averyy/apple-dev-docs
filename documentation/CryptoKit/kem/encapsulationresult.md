@@ -1,7 +1,8 @@
 # KEM.EncapsulationResult
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The result of a key encapsulation operation.
 
@@ -23,19 +24,19 @@ struct EncapsulationResult
 ## Topics
 
 ### Initializers
-- [init(sharedSecret: SymmetricKey, encapsulated: Data)](kem/encapsulationresult/init(sharedsecret:encapsulated:).md)
+- [init(sharedSecret: SymmetricKey, encapsulated: Data)](./encapsulationresult/init%28sharedsecret,encapsulated%29.md)
   Initializes a key encapsulation result.
 ### Instance Properties
-- [let encapsulated: Data](kem/encapsulationresult/encapsulated.md)
+- [let encapsulated: Data](./encapsulationresult/encapsulated.md)
   The encapsulated representation of the shared secret.
-- [let sharedSecret: SymmetricKey](kem/encapsulationresult/sharedsecret.md)
+- [let sharedSecret: SymmetricKey](./encapsulationresult/sharedsecret.md)
   The shared secret.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

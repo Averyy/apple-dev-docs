@@ -1,10 +1,11 @@
 # BluetoothLEAdvertisingTypeConnectableUndirected
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,12 +13,17 @@
 var BluetoothLEAdvertisingTypeConnectableUndirected: BluetoothLEAdvertisingType { get }
 ```
 
+```c
+BluetoothLEAdvertisingTypeConnectableUndirected
+```
+
 ## See Also
 
-- [var BluetoothLEAdvertisingTypeConnectableDirected: BluetoothLEAdvertisingType](bluetoothleadvertisingtypeconnectabledirected.md)
-- [var BluetoothLEAdvertisingTypeDiscoverableUndirected: BluetoothLEAdvertisingType](bluetoothleadvertisingtypediscoverableundirected.md)
-- [var BluetoothLEAdvertisingTypeNonConnectableUndirected: BluetoothLEAdvertisingType](bluetoothleadvertisingtypenonconnectableundirected.md)
-- [var BluetoothLEAdvertisingTypeScanResponse: BluetoothLEAdvertisingType](bluetoothleadvertisingtypescanresponse.md)
+### Constants
+- [var BluetoothLEAdvertisingTypeConnectableDirected: BluetoothLEAdvertisingType](./bluetoothleadvertisingtypeconnectabledirected.md)
+- [var BluetoothLEAdvertisingTypeDiscoverableUndirected: BluetoothLEAdvertisingType](./bluetoothleadvertisingtypediscoverableundirected.md)
+- [var BluetoothLEAdvertisingTypeNonConnectableUndirected: BluetoothLEAdvertisingType](./bluetoothleadvertisingtypenonconnectableundirected.md)
+- [var BluetoothLEAdvertisingTypeScanResponse: BluetoothLEAdvertisingType](./bluetoothleadvertisingtypescanresponse.md)
 
 
 ---

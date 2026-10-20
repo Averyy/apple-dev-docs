@@ -1,7 +1,8 @@
 # VTCompressionSessionInvalidate(_:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Tears down a compression session.
 
@@ -19,9 +20,13 @@ Tears down a compression session.
 func VTCompressionSessionInvalidate(_ session: VTCompressionSession)
 ```
 
+```c
+extern void VTCompressionSessionInvalidate(VTCompressionSessionRef session);
+```
+
 #### Discussion
 
-When you finish using a compression session you created, call `VTCompressionSessionInvalidate` to tear it down, and then call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) to release its memory.
+When you finish using a compression session you created, call `VTCompressionSessionInvalidate` to tear it down, and then call [`CFRelease`](../CoreFoundation/cfrelease.md) to release its memory.
 
 > **Note**:  A compression session is automatically invalidated when its retain count reaches zero, but because sessions may be retained by multiple parties, it’s hard to predict when this will happen.  Calling `VTCompressionSessionInvalidate` ensures a deterministic, orderly teardown.
 

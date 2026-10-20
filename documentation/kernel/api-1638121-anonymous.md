@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSCSIServicesNotification_Resume](1638121-anonymous/kscsiservicesnotification_resume.md)
-- [kSCSIServicesNotification_Suspend](1638121-anonymous/kscsiservicesnotification_suspend.md)
+- [kSCSIServicesNotification_Resume](./api-1638121-anonymous/kscsiservicesnotification_resume.md)
+- [kSCSIServicesNotification_Suspend](./api-1638121-anonymous/kscsiservicesnotification_suspend.md)
 
 
 ---

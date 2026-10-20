@@ -1,7 +1,8 @@
 # entityIndexInLightmapResource
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary mapping the descendants of the LightmapComponent-holding entity to their corresponding slot in the Lightmap resource.
 

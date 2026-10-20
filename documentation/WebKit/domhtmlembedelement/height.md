@@ -1,15 +1,20 @@
 # height
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 var height: Int32 { get set }
+```
+
+```objc
+@property int height;
 ```
 
 

@@ -1,18 +1,19 @@
 # kCMSyncError_RateMustBeNonZero
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A sync error that indicates the rate is nonzero.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ A sync error that indicates the rate is nonzero.
 var kCMSyncError_RateMustBeNonZero: OSStatus { get }
 ```
 
+```c
+kCMSyncError_RateMustBeNonZero
+```
+
 ## See Also
 
-- [var kCMSyncError_MissingRequiredParameter: OSStatus](kcmsyncerror_missingrequiredparameter.md)
+### Constants
+- [var kCMSyncError_MissingRequiredParameter: OSStatus](./kcmsyncerror_missingrequiredparameter.md)
   A sync error that indicates a parameter is missing.
-- [var kCMSyncError_InvalidParameter: OSStatus](kcmsyncerror_invalidparameter.md)
+- [var kCMSyncError_InvalidParameter: OSStatus](./kcmsyncerror_invalidparameter.md)
   A sync error that indicates a parameter isn’t valid.
-- [var kCMSyncError_AllocationFailed: OSStatus](kcmsyncerror_allocationfailed.md)
+- [var kCMSyncError_AllocationFailed: OSStatus](./kcmsyncerror_allocationfailed.md)
   A sync error that indicates the memory allocation fails.
 
 

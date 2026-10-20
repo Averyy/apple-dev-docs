@@ -1,7 +1,8 @@
 # kSecImportExportPassphrase
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A passphrase (represented by a `CFStringRef` object) to be used when exporting to or importing from PKCS#12 format.
 
@@ -18,6 +19,10 @@ A passphrase (represented by a `CFStringRef` object) to be used when exporting t
 
 ```swift
 let kSecImportExportPassphrase: CFString
+```
+
+```c
+extern CFStringRef const kSecImportExportPassphrase;
 ```
 
 

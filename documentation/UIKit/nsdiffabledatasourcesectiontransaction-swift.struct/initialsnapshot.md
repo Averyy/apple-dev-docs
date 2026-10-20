@@ -1,7 +1,8 @@
 # initialSnapshot
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The section snapshot before the transaction occured.
 
@@ -10,7 +11,7 @@ The section snapshot before the transaction occured.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ var initialSnapshot: NSDiffableDataSourceSectionSnapshot<ItemIdentifierType> { g
 
 ## See Also
 
-- [var sectionIdentifier: SectionIdentifierType](nsdiffabledatasourcesectiontransaction-swift.struct/sectionidentifier.md)
+### Accessing a transaction’s information
+- [var sectionIdentifier: SectionIdentifierType](./sectionidentifier.md)
   The identifier of the section for the transaction.
-- [var finalSnapshot: NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>](nsdiffabledatasourcesectiontransaction-swift.struct/finalsnapshot.md)
+- [var finalSnapshot: NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>](./finalsnapshot.md)
   The section snapshot after the transaction occured.
-- [var difference: CollectionDifference<ItemIdentifierType>](nsdiffabledatasourcesectiontransaction-swift.struct/difference.md)
+- [var difference: CollectionDifference<ItemIdentifierType>](./difference.md)
   A collection of insertions and removals that describe the difference between initial and final section snapshots.
 
 

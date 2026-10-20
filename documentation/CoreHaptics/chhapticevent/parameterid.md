@@ -1,7 +1,8 @@
 # CHHapticEvent.ParameterID
 
 **Framework**: Core Haptics  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An identifier for an event parameter.
 
@@ -9,7 +10,7 @@ An identifier for an event parameter.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS ?+
+- macOS
 - tvOS 14.0+
 - visionOS 1.0+
 
@@ -19,9 +20,13 @@ An identifier for an event parameter.
 struct ParameterID
 ```
 
+```c
+typedef NSString * CHHapticEventParameterID;
+```
+
 ## Mentions
 
-- [Representing haptic patterns in AHAP files](representing-haptic-patterns-in-ahap-files.md)
+- [Representing haptic patterns in AHAP files](../representing-haptic-patterns-in-ahap-files.md)
 
 #### Discussion
 
@@ -30,47 +35,48 @@ Specify event parameters when creating a haptic or audio event. The combination 
 ## Topics
 
 ### Haptic Event Parameter IDs
-- [static let hapticIntensity: CHHapticEvent.ParameterID](chhapticevent/parameterid/hapticintensity.md)
+- [static let hapticIntensity: CHHapticEvent.ParameterID](./parameterid/hapticintensity.md)
   The strength of a haptic event.
-- [static let hapticSharpness: CHHapticEvent.ParameterID](chhapticevent/parameterid/hapticsharpness.md)
+- [static let hapticSharpness: CHHapticEvent.ParameterID](./parameterid/hapticsharpness.md)
   The feel of a haptic event.
-- [static let attackTime: CHHapticEvent.ParameterID](chhapticevent/parameterid/attacktime.md)
+- [static let attackTime: CHHapticEvent.ParameterID](./parameterid/attacktime.md)
   The time at which a haptic pattern’s intensity begins increasing.
-- [static let decayTime: CHHapticEvent.ParameterID](chhapticevent/parameterid/decaytime.md)
+- [static let decayTime: CHHapticEvent.ParameterID](./parameterid/decaytime.md)
   The time at which a haptic pattern’s intensity begins decreasing.
-- [static let releaseTime: CHHapticEvent.ParameterID](chhapticevent/parameterid/releasetime.md)
+- [static let releaseTime: CHHapticEvent.ParameterID](./parameterid/releasetime.md)
   The time at which to begin fading the haptic pattern.
-- [static let sustained: CHHapticEvent.ParameterID](chhapticevent/parameterid/sustained.md)
+- [static let sustained: CHHapticEvent.ParameterID](./parameterid/sustained.md)
   A Boolean value that indicates whether to sustain a haptic event for its specified duration.
 ### Audio Event Parameter IDs
-- [static let audioVolume: CHHapticEvent.ParameterID](chhapticevent/parameterid/audiovolume.md)
+- [static let audioVolume: CHHapticEvent.ParameterID](./parameterid/audiovolume.md)
   The volume of an audio event.
-- [static let audioPan: CHHapticEvent.ParameterID](chhapticevent/parameterid/audiopan.md)
+- [static let audioPan: CHHapticEvent.ParameterID](./parameterid/audiopan.md)
   The stereo panning of an audio event.
-- [static let audioPitch: CHHapticEvent.ParameterID](chhapticevent/parameterid/audiopitch.md)
+- [static let audioPitch: CHHapticEvent.ParameterID](./parameterid/audiopitch.md)
   The pitch of an audio event.
-- [static let audioBrightness: CHHapticEvent.ParameterID](chhapticevent/parameterid/audiobrightness.md)
+- [static let audioBrightness: CHHapticEvent.ParameterID](./parameterid/audiobrightness.md)
   The high-frequency content of an audio event.
 ### Swift Initializers
-- [init(rawValue: String)](chhapticevent/parameterid/init(rawvalue:).md)
+- [init(rawValue: String)](./parameterid/init%28rawvalue%29.md)
   Creates the identifier of a haptic event parameter with the specified string value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var eventParameters: [CHHapticEventParameter]](chhapticevent/eventparameters.md)
+### Configuring Haptic Events
+- [var eventParameters: [CHHapticEventParameter]](./eventparameters.md)
   An array of event parameters, possibly empty.
-- [var relativeTime: TimeInterval](chhapticevent/relativetime.md)
+- [var relativeTime: TimeInterval](./relativetime.md)
   The start time of the event, relative to other events in the same pattern.
-- [var duration: TimeInterval](chhapticevent/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The duration of the haptic event.
 
 

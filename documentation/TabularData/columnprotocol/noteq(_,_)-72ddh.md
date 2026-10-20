@@ -1,7 +1,8 @@
 # !=(_:_:)
 
 **Framework**: TabularData  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean array that indicates whether the value isn’t equal to the corresponding element of a column type.
 
@@ -20,6 +21,8 @@ Returns a Boolean array that indicates whether the value isn’t equal to the co
 static func != (lhs: Self.Element, rhs: Self) -> [Bool]
 ```
 
+Available when `Element` conforms to `Comparable`.
+
 #### Return Value
 
 A Boolean array.
@@ -31,11 +34,12 @@ A Boolean array.
 
 ## See Also
 
-- [static func == (Self, Self.Element) -> [Bool]](columnprotocol/==(_:_:)-5jc0x.md)
+### Comparing a Column with a Value
+- [static func == (Self, Self.Element) -> [Bool]](./eqeq%28_,_%29-5jc0x.md)
   Returns a Boolean array that indicates whether the corresponding element of a column type is equal to a value.
-- [static func == (Self.Element, Self) -> [Bool]](columnprotocol/==(_:_:)-4hx04.md)
+- [static func == (Self.Element, Self) -> [Bool]](./eqeq%28_,_%29-4hx04.md)
   Returns a Boolean array that indicates whether the value is equal to the corresponding element of a column type.
-- [static func != (Self, Self.Element) -> [Bool]](columnprotocol/!=(_:_:)-557vb.md)
+- [static func != (Self, Self.Element) -> [Bool]](./noteq%28_,_%29-557vb.md)
   Returns a Boolean array that indicates whether the corresponding element of a column type isn’t equal to a value.
 
 

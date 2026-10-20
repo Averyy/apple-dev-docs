@@ -1,7 +1,8 @@
 # DateFormatter.Style.full
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 2.0+
@@ -18,6 +19,10 @@
 case full
 ```
 
+```c
+NSDateFormatterFullStyle
+```
+
 #### Discussion
 
 Specifies a full style with complete details, such as “Tuesday, April 12, 1952 AD” or “3:30:42 PM Pacific Standard Time”.
@@ -26,10 +31,11 @@ Equal to `kCFDateFormatterFullStyle`.
 
 ## See Also
 
-- [DateFormatter.Style.none](dateformatter/style/none.md)
-- [DateFormatter.Style.short](dateformatter/style/short.md)
-- [DateFormatter.Style.medium](dateformatter/style/medium.md)
-- [DateFormatter.Style.long](dateformatter/style/long.md)
+### Constants
+- [DateFormatter.Style.none](./none.md)
+- [DateFormatter.Style.short](./short.md)
+- [DateFormatter.Style.medium](./medium.md)
+- [DateFormatter.Style.long](./long.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # moveElement(from:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves and returns the element at `index`, leaving that element’s underlying memory uninitialized.
 
@@ -19,6 +20,8 @@ Retrieves and returns the element at `index`, leaving that element’s underlyin
 ```swift
 func moveElement<Element>(from index: Slice<Base>.Index) -> Element where Base == UnsafeMutableBufferPointer<Element>
 ```
+
+Available when `Base` conforms to `Collection`.
 
 #### Return Value
 

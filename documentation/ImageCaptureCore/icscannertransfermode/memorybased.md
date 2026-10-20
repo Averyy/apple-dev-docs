@@ -1,7 +1,8 @@
 # ICScannerTransferMode.memoryBased
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The mode for transferring the scan as data.
 
@@ -14,9 +15,14 @@ The mode for transferring the scan as data.
 case memoryBased
 ```
 
+```c
+ICScannerTransferModeMemoryBased
+```
+
 ## See Also
 
-- [ICScannerTransferMode.fileBased](icscannertransfermode/filebased.md)
+### Constants
+- [ICScannerTransferMode.fileBased](./filebased.md)
   The mode for transferring the scan as a file.
 
 

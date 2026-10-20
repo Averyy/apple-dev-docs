@@ -1141,9 +1141,8 @@
       "hash": "1a6cf8b0bf5cbd58c864c2f4d8acb5bed25a4309c1ea40d2c9d8af9a59f46d7d"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/authorizationstatus()": {
-      "etag": "\"2279-65b7906431b49-df\"",
       "file_path": "documentation/CoreMotion/cmmotionmanager/authorizationstatus().md",
-      "hash": "b75582a71f611369b154f79fa94b21b55b75909901b29b0bab051ab30c6a7b0c"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/availableattitudereferenceframes()": {
       "etag": "\"371c-65d55cc0e4ba0-df\"",
@@ -3291,9 +3290,8 @@
       "hash": "3d7d8350a21a08783d00444fd3355c7ab59ff8822682759de43e400e7a3e7a81"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/authorizationstatus().json": {
-      "etag": "\"2279-65b7906431b49-df\"",
       "file_path": "documentation/CoreMotion/cmmotionmanager/authorizationstatus().md",
-      "hash": "b75582a71f611369b154f79fa94b21b55b75909901b29b0bab051ab30c6a7b0c"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/authorizationstatus.json": {
       "etag": "\"2123-65da2c9626569-df\"",
@@ -4312,6 +4310,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 862
   }
 }

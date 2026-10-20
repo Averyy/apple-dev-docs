@@ -1,7 +1,8 @@
 # streamID
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The QUIC stream identifier.
 

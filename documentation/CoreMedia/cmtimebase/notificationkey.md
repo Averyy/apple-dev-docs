@@ -1,7 +1,8 @@
 # CMTimebase.NotificationKey
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe notification keys.
 
@@ -23,23 +24,24 @@ struct NotificationKey
 ## Topics
 
 ### Notification Keys
-- [static let eventTime: CMTimebase.NotificationKey](cmtimebase/notificationkey/eventtime.md)
+- [static let eventTime: CMTimebase.NotificationKey](./notificationkey/eventtime.md)
   A notification that posts by a timebase after a discontinuous time jump.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CMTimebase.Error](cmtimebase/error.md)
+### Constants
+- [CMTimebase.Error](./error.md)
   Constants that describe timebase errors.
-- [static var typeID: CFTypeID](cmtimebase/typeid.md)
+- [static var typeID: CFTypeID](./typeid.md)
   A Core Foundation type identifier that represents a timebase object.
 
 

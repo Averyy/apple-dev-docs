@@ -1,7 +1,8 @@
 # predictions(from:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Predicts sequences of labels, token locations, and token lengths from the input strings.
 
@@ -14,6 +15,12 @@ Predicts sequences of labels, token locations, and token lengths from the input 
 func predictions<S>(from texts: S) throws -> DataFrame where S : Sequence, S.Element == String
 ```
 
+**Other overloads**:
+
+```swift
+func predictions(from texts: MLDataColumn<String>) throws -> MLDataTable
+```
+
 #### Return Value
 
 A `DataFrame` containing predicted labels, token locations, and token lengths.
@@ -24,9 +31,10 @@ A `DataFrame` containing predicted labels, token locations, and token lengths.
 
 ## See Also
 
-- [func prediction(from:)](mlwordtagger/prediction(from:).md)
+### Testing a word tagger
+- [func prediction(from:)](./prediction%28from%29.md)
   Predicts a tag for the input string.
-- [func predictionWithConfidence(from:)](mlwordtagger/predictionwithconfidence(from:).md)
+- [func predictionWithConfidence(from:)](./predictionwithconfidence%28from%29.md)
   Predicts tags and confidence scores for the input string. Predicts tags and confidence scores for the input string.
 
 

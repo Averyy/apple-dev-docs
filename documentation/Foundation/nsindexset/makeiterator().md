@@ -1,7 +1,8 @@
 # makeIterator()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an *iterator* over the elements of this *sequence*.
 
@@ -26,13 +27,14 @@ Complexity: O(1).
 
 ## See Also
 
-- [func enumerate((Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsindexset/enumerate(_:).md)
+### Enumerating Indexes
+- [func enumerate((Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerate%28_%29.md)
   Executes a given Block using each object in the index set.
-- [func enumerate(options: NSEnumerationOptions, using: (Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsindexset/enumerate(options:using:).md)
+- [func enumerate(options: NSEnumerationOptions, using: (Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerate%28options,using%29.md)
   Executes a given Block over the index set’s indexes, using the specified enumeration options.
-- [func enumerate(in: NSRange, options: NSEnumerationOptions, using: (Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsindexset/enumerate(in:options:using:).md)
+- [func enumerate(in: NSRange, options: NSEnumerationOptions, using: (Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerate%28in,options,using%29.md)
   Executes a given Block using the indexes in the specified range, using the specified enumeration options.
-- [struct NSIndexSetIterator](nsindexsetiterator.md)
+- [struct NSIndexSetIterator](../nsindexsetiterator.md)
   An iterator suitable for enumerating the elements of an index set.
 
 

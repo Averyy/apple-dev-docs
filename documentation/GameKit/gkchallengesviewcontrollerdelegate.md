@@ -1,10 +1,13 @@
 # GKChallengesViewControllerDelegate
 
 **Framework**: GameKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 15.4
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
@@ -12,33 +15,38 @@
 protocol GKChallengesViewControllerDelegate
 ```
 
+```objc
+@protocol GKChallengesViewControllerDelegate
+```
+
 ## Topics
 
 ### Dismissing the View Controller
-- [func challengesViewControllerDidFinish(GKChallengesViewController!)](gkchallengesviewcontrollerdelegate/challengesviewcontrollerdidfinish(_:).md)
+- [func challengesViewControllerDidFinish(GKChallengesViewController!)](./gkchallengesviewcontrollerdelegate/challengesviewcontrollerdidfinish%28_%29.md)
 
 ## See Also
 
-- [protocol GKAchievementViewControllerDelegate](gkachievementviewcontrollerdelegate.md)
-  An object implementing the [`GKAchievementViewControllerDelegate`](gkachievementviewcontrollerdelegate.md) protocol is called when the user dismisses the achievements view controller. Typically, this protocol is implemented by the object in your game that originally displayed the achievements user interface.
-- [protocol GKChallengeEventHandlerDelegate](gkchallengeeventhandlerdelegate.md)
-  You implement the [`GKChallengeEventHandlerDelegate`](gkchallengeeventhandlerdelegate.md) delegate to control how challenges are displayed in your game.
-- [protocol GKChallengeListener](gkchallengelistener.md)
+### Deprecated protocols
+- [protocol GKAchievementViewControllerDelegate](./gkachievementviewcontrollerdelegate.md)
+  An object implementing the [`GKAchievementViewControllerDelegate`](./gkachievementviewcontrollerdelegate.md) protocol is called when the user dismisses the achievements view controller. Typically, this protocol is implemented by the object in your game that originally displayed the achievements user interface.
+- [protocol GKChallengeEventHandlerDelegate](./gkchallengeeventhandlerdelegate.md)
+  You implement the [`GKChallengeEventHandlerDelegate`](./gkchallengeeventhandlerdelegate.md) delegate to control how challenges are displayed in your game.
+- [protocol GKChallengeListener](./gkchallengelistener.md)
   An object that responds to challenge events.
-- [protocol GKFriendRequestComposeViewControllerDelegate](gkfriendrequestcomposeviewcontrollerdelegate.md)
-  The [`GKFriendRequestComposeViewControllerDelegate`](gkfriendrequestcomposeviewcontrollerdelegate.md) protocol is implemented by delegates of the [`GKFriendRequestComposeViewController`](gkfriendrequestcomposeviewcontroller.md) class. The delegate is called when the player dismisses the friend request.
-- [protocol GKGameSessionEventListener](gkgamesessioneventlistener.md)
+- [protocol GKFriendRequestComposeViewControllerDelegate](./gkfriendrequestcomposeviewcontrollerdelegate.md)
+  The [`GKFriendRequestComposeViewControllerDelegate`](./gkfriendrequestcomposeviewcontrollerdelegate.md) protocol is implemented by delegates of the [`GKFriendRequestComposeViewController`](./gkfriendrequestcomposeviewcontroller.md) class. The delegate is called when the player dismisses the friend request.
+- [protocol GKGameSessionEventListener](./gkgamesessioneventlistener.md)
   An event listener that handles game session events.
-- [protocol GKLeaderboardViewControllerDelegate](gkleaderboardviewcontrollerdelegate.md)
-  The [`GKLeaderboardViewControllerDelegate`](gkleaderboardviewcontrollerdelegate.md) protocol is implemented by delegates of the [`GKLeaderboardViewController`](gkleaderboardviewcontroller.md) class. The delegate is called when the player dismisses the leaderboard.
-- [protocol GKPeerPickerControllerDelegate](gkpeerpickercontrollerdelegate.md)
-  The [`GKPeerPickerControllerDelegate`](gkpeerpickercontrollerdelegate.md) protocol is implemented on an object to customize the behavior of a [`GKPeerPickerController`](gkpeerpickercontroller.md) object. The delegate is called by the peer picker to create a session object and to respond as the session is configured by the controller.
-- [protocol GKSessionDelegate](gksessiondelegate.md)
-  An object implements the [`GKSessionDelegate`](gksessiondelegate.md) protocol to control the behavior of a [`GKSession`](gksession.md) object. The delegate is called when other visible peers change their state relative to the session. It is also called to determine whether another peer is allowed to connect to the session.
-- [protocol GKTurnBasedEventHandlerDelegate](gkturnbasedeventhandlerdelegate.md)
-  The [`GKTurnBasedEventHandlerDelegate`](gkturnbasedeventhandlerdelegate.md) protocol is implemented by an object to receive notifications events for turn-based matches. All methods are called on the main thread.
-- [protocol GKVoiceChatClient](gkvoicechatclient.md)
-  The [`GKVoiceChatClient`](gkvoicechatclient.md) protocol is implemented to control the behavior of the [`GKVoiceChatService`](gkvoicechatservice.md) object. The voice chat client has a number of responsibilities:
+- [protocol GKLeaderboardViewControllerDelegate](./gkleaderboardviewcontrollerdelegate.md)
+  The [`GKLeaderboardViewControllerDelegate`](./gkleaderboardviewcontrollerdelegate.md) protocol is implemented by delegates of the [`GKLeaderboardViewController`](./gkleaderboardviewcontroller.md) class. The delegate is called when the player dismisses the leaderboard.
+- [protocol GKPeerPickerControllerDelegate](./gkpeerpickercontrollerdelegate.md)
+  The [`GKPeerPickerControllerDelegate`](./gkpeerpickercontrollerdelegate.md) protocol is implemented on an object to customize the behavior of a [`GKPeerPickerController`](./gkpeerpickercontroller.md) object. The delegate is called by the peer picker to create a session object and to respond as the session is configured by the controller.
+- [protocol GKSessionDelegate](./gksessiondelegate.md)
+  An object implements the [`GKSessionDelegate`](./gksessiondelegate.md) protocol to control the behavior of a [`GKSession`](./gksession.md) object. The delegate is called when other visible peers change their state relative to the session. It is also called to determine whether another peer is allowed to connect to the session.
+- [protocol GKTurnBasedEventHandlerDelegate](./gkturnbasedeventhandlerdelegate.md)
+  The [`GKTurnBasedEventHandlerDelegate`](./gkturnbasedeventhandlerdelegate.md) protocol is implemented by an object to receive notifications events for turn-based matches. All methods are called on the main thread.
+- [protocol GKVoiceChatClient](./gkvoicechatclient.md)
+  The [`GKVoiceChatClient`](./gkvoicechatclient.md) protocol is implemented to control the behavior of the [`GKVoiceChatService`](./gkvoicechatservice.md) object. The voice chat client has a number of responsibilities:
 
 
 ---

@@ -1,7 +1,8 @@
 # percentLikely
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The percentage of time when dyskinetic symptoms were likely.
 
@@ -17,9 +18,14 @@ The percentage of time when dyskinetic symptoms were likely.
 var percentLikely: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float percentLikely;
+```
+
 ## See Also
 
-- [var percentUnlikely: Float](cmdyskineticsymptomresult/percentunlikely.md)
+### Accessing Dyskinetic Symptom Data
+- [var percentUnlikely: Float](./percentunlikely.md)
   The percentage of time when dyskinetic symptoms were unlikely.
 
 

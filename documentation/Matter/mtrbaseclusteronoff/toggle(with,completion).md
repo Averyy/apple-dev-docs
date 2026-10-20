@@ -1,7 +1,8 @@
 # toggle(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func toggle(with params: MTROnOffClusterToggleParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func toggle(with params: MTROnOffClusterToggleParams?) async throws
+```
+
+```objc
+- (void) toggleWithParams:(MTROnOffClusterToggleParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # queue
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The playback queue for the application music player.
 

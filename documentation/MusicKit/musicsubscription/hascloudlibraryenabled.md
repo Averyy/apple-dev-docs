@@ -1,7 +1,8 @@
 # hasCloudLibraryEnabled
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A capability that allows your app to perform modifications to the user’s iCloud Music Library.
 

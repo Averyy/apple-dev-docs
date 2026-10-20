@@ -1,7 +1,8 @@
 # removeNetwork(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command RemoveNetwork
 
@@ -17,7 +18,15 @@ Command RemoveNetwork
 ## Declaration
 
 ```swift
+func removeNetwork(with params: MTRThreadNetworkDirectoryClusterRemoveNetworkParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func removeNetwork(with params: MTRThreadNetworkDirectoryClusterRemoveNetworkParams) async throws
+```
+
+```objc
+- (void) removeNetworkWithParams:(MTRThreadNetworkDirectoryClusterRemoveNetworkParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

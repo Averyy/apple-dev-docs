@@ -1,7 +1,8 @@
 # UIURLToLaunchStoryboardAssociations
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 The user-defined storyboard identifiers that associate with supported schemes.
 
@@ -9,13 +10,14 @@ The user-defined storyboard identifiers that associate with supported schemes.
 - iOS 9.0+
 - iPadOS 9.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `UIURLToLaunchStoryboardAssociations`
+- **Type**: dictionary
 
 #### Discussion
 
-The keys for this dictionary are the URL schemes defined in [`CFBundleURLTypes`](information-property-list/cfbundleurltypes.md) for your app. The value for the specified key is a [`UILaunchStoryboardIdentifier`](information-property-list/uilaunchstoryboards/uilaunchstoryboarddefinitions/uilaunchstoryboardidentifier.md) from the [`UILaunchStoryboardDefinitions`](information-property-list/uilaunchstoryboards/uilaunchstoryboarddefinitions.md) array.
+The keys for this dictionary are the URL schemes defined in [`CFBundleURLTypes`](../cfbundleurltypes.md) for your app. The value for the specified key is a [`UILaunchStoryboardIdentifier`](./uilaunchstoryboarddefinitions/uilaunchstoryboardidentifier.md) from the [`UILaunchStoryboardDefinitions`](./uilaunchstoryboarddefinitions.md) array.
 
 ## Properties
 

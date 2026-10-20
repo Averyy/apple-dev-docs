@@ -1,7 +1,8 @@
 # fitted(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fits a model to a sequence of examples.
 
@@ -26,7 +27,7 @@ The fitted model.
 
 #### Discussion
 
-This method uses a sliding window to chunk the input features into features of [`inputWindowSize`](lineartimeseriesforecaster/inputwindowsize.md) elements and annotations of [`forecastWindowSize`](lineartimeseriesforecaster/forecastwindowsize.md) elements. If you want to use a different windowing strategy, use [`fitted(toWindows:eventHandler:)`](lineartimeseriesforecaster/fitted(towindows:eventhandler:).md).
+This method uses a sliding window to chunk the input features into features of [`inputWindowSize`](./inputwindowsize.md) elements and annotations of [`forecastWindowSize`](./forecastwindowsize.md) elements. If you want to use a different windowing strategy, use [`fitted(toWindows:eventHandler:)`](./fitted%28towindows,eventhandler%29.md).
 
 ## Parameters
 
@@ -35,15 +36,16 @@ This method uses a sliding window to chunk the input features into features of [
 
 ## See Also
 
-- [func update(inout LinearTimeSeriesForecaster<Scalar>.Transformer, with: AnnotatedBatch<Scalar>) async throws -> Scalar](lineartimeseriesforecaster/update(_:with:).md)
+### Updating and fitting
+- [func update(inout LinearTimeSeriesForecaster<Scalar>.Transformer, with: AnnotatedBatch<Scalar>) async throws -> Scalar](./update%28_,with%29.md)
   Updates a model with a new batch of examples.
-- [func update(inout LinearTimeSeriesForecaster<Scalar>.Model, withWindows: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws](lineartimeseriesforecaster/update(_:withwindows:eventhandler:).md)
+- [func update(inout LinearTimeSeriesForecaster<Scalar>.Model, withWindows: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws](./update%28_,withwindows,eventhandler%29.md)
   Updates a model with a sequence of windows.
-- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, validateOn: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> LinearTimeSeriesForecaster<Scalar>.Model](lineartimeseriesforecaster/fitted(to:validateon:eventhandler:).md)
+- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, validateOn: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> LinearTimeSeriesForecaster<Scalar>.Model](./fitted%28to,validateon,eventhandler%29.md)
   Fits a model to a sequence of examples with validation.
-- [func fitted(toWindows: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> LinearTimeSeriesForecaster<Scalar>.Model](lineartimeseriesforecaster/fitted(towindows:eventhandler:).md)
+- [func fitted(toWindows: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> LinearTimeSeriesForecaster<Scalar>.Model](./fitted%28towindows,eventhandler%29.md)
   Fits a model to a sequence of windows.
-- [func fitted(toWindows: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, validateOn: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> LinearTimeSeriesForecaster<Scalar>.Model](lineartimeseriesforecaster/fitted(towindows:validateon:eventhandler:).md)
+- [func fitted(toWindows: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, validateOn: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> LinearTimeSeriesForecaster<Scalar>.Model](./fitted%28towindows,validateon,eventhandler%29.md)
   Fits a model to a sequence of annotated windows with validation.
 
 

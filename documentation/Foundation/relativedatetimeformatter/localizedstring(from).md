@@ -1,7 +1,8 @@
 # localizedString(from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Formats a relative time represented by the specified date components.
 
@@ -20,6 +21,10 @@ Formats a relative time represented by the specified date components.
 func localizedString(from dateComponents: DateComponents) -> String
 ```
 
+```objc
+- (NSString *) localizedStringFromDateComponents:(NSDateComponents *) dateComponents;
+```
+
 #### Return Value
 
 A string that represents the formatted relative time from date components.
@@ -35,7 +40,7 @@ print(formatter.localizedString(from: components))
 // Outputs:  2 days ago
 ```
 
-This method formats the value of the least granular unit in the [`NSDateComponents`](nsdatecomponents.md) object, and doesn’t provide a compound format of the date component.
+This method formats the value of the least granular unit in the [`NSDateComponents`](../nsdatecomponents.md) object, and doesn’t provide a compound format of the date component.
 
 > ❗ **Important**:  This method only supports year, month, week of month, day, hour, minute, and second components. The formatter ignores all other date components.
 
@@ -45,11 +50,12 @@ This method formats the value of the least granular unit in the [`NSDateComponen
 
 ## See Also
 
-- [func localizedString(for: Date, relativeTo: Date) -> String](relativedatetimeformatter/localizedstring(for:relativeto:).md)
+### Converting Dates to Formatted Strings
+- [func localizedString(for: Date, relativeTo: Date) -> String](./localizedstring%28for,relativeto%29.md)
   Formats the date interval from the reference date to the specified date using the formatter’s calendar.
-- [func localizedString(fromTimeInterval: TimeInterval) -> String](relativedatetimeformatter/localizedstring(fromtimeinterval:).md)
+- [func localizedString(fromTimeInterval: TimeInterval) -> String](./localizedstring%28fromtimeinterval%29.md)
   Formats the specified time interval using the formatter’s calendar.
-- [func string(for: Any?) -> String?](relativedatetimeformatter/string(for:).md)
+- [func string(for: Any?) -> String?](./string%28for%29.md)
   Creates a formatted string for a date relative to the current date and time.
 
 

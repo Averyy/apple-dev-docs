@@ -1,7 +1,8 @@
 # PowerThresholdAlert
 
 **Framework**: WorkoutKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An alert for a power threshold.
 
@@ -21,36 +22,37 @@ struct PowerThresholdAlert
 ## Topics
 
 ### Creating power threshold alerts
-- [init(target: Measurement<UnitPower>)](powerthresholdalert/init(target:).md)
+- [init(target: Measurement<UnitPower>)](./powerthresholdalert/init%28target%29.md)
   Returns a new power threshold alert for the target measurement.
 ### Accessing alert data
-- [var target: Measurement<UnitPower>](powerthresholdalert/target.md)
+- [var target: Measurement<UnitPower>](./powerthresholdalert/target.md)
   The target measurement using power units.
-- [var targetQuantity: HKQuantity](powerthresholdalert/targetquantity.md)
+- [var targetQuantity: HKQuantity](./powerthresholdalert/targetquantity.md)
   A HealthKit quantity that represents the target power threshold.
 ### Initializers
-- [init(target: Measurement<UnitPower>, metric: WorkoutAlertMetric)](powerthresholdalert/init(target:metric:).md)
+- [init(target: Measurement<UnitPower>, metric: WorkoutAlertMetric)](./powerthresholdalert/init%28target,metric%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [WorkoutAlert](workoutalert.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [WorkoutAlert](./workoutalert.md)
 
 ## See Also
 
-- [static func power(ClosedRange<Double>, unit: UnitPower) -> Self](workoutalert/power(_:unit:)-57ekz.md)
+### Creating power alerts
+- [static func power(ClosedRange<Double>, unit: UnitPower) -> Self](./workoutalert/power%28_,unit%29-57ekz.md)
   Creates a new power alert for the target range.
-- [struct PowerRangeAlert](powerrangealert.md)
+- [struct PowerRangeAlert](./powerrangealert.md)
   An alert for a range of power values.
-- [static func power(Double, unit: UnitPower) -> Self](workoutalert/power(_:unit:)-289mz.md)
+- [static func power(Double, unit: UnitPower) -> Self](./workoutalert/power%28_,unit%29-289mz.md)
   Creates an alert for the specified power threshold.
-- [static func power(zone: Int) -> Self](workoutalert/power(zone:).md)
+- [static func power(zone: Int) -> Self](./workoutalert/power%28zone%29.md)
   Creates a new alert for the specified power zone.
-- [struct PowerZoneAlert](powerzonealert.md)
+- [struct PowerZoneAlert](./powerzonealert.md)
   An alert for a power zone.
 
 

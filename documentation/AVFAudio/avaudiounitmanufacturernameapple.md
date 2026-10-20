@@ -1,7 +1,8 @@
 # AVAudioUnitManufacturerNameApple
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The audio unit manufacturer is Apple.
 
@@ -17,6 +18,10 @@ The audio unit manufacturer is Apple.
 
 ```swift
 let AVAudioUnitManufacturerNameApple: String
+```
+
+```c
+extern NSString * const AVAudioUnitManufacturerNameApple;
 ```
 
 

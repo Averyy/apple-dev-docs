@@ -1,7 +1,8 @@
 # variableFromTensor(_:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a variable from an input tensor.
 
@@ -17,6 +18,10 @@ Creates a variable from an input tensor.
 
 ```swift
 func variableFromTensor(_ tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) variableFromTensorWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

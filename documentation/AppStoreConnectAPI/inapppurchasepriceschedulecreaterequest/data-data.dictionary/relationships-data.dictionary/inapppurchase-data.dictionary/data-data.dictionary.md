@@ -1,7 +1,8 @@
 # InAppPurchasePriceScheduleCreateRequest.Data.Relationships.InAppPurchase.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an In-App Purchase price schedule.
 
@@ -10,14 +11,14 @@ The request body you use to create an In-App Purchase price schedule.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchasePriceScheduleCreateRequest.Data.Relationships.InAppPurchase.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `inAppPurchases`
 
 
 ---

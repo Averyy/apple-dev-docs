@@ -1,7 +1,8 @@
 # magnificationFilter
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The filter used when increasing the size of the content.
 
@@ -19,29 +20,34 @@ The filter used when increasing the size of the content.
 var magnificationFilter: CALayerContentsFilter { get set }
 ```
 
+```objc
+@property (copy) CALayerContentsFilter magnificationFilter;
+```
+
 #### Discussion
 
-The possible values for this property are listed in [`Scaling Filters`](scaling-filters.md).
+The possible values for this property are listed in [Scaling Filters](../scaling-filters.md).
 
-The default value of this property is [`linear`](calayercontentsfilter/linear.md).
+The default value of this property is [`linear`](../calayercontentsfilter/linear.md).
 
-[`Figure 1`](calayer/1410907-magnificationfilter#2851435.md) shows the difference between linear and nearest filtering when a 10 x 10 point image of a circle is magnified by a scale of 10.
+[Figure 1](./api-1410907-magnificationfilter.md#2851435) shows the difference between linear and nearest filtering when a 10 x 10 point image of a circle is magnified by a scale of 10.
 
-![Circle with different magnification filters](/images/com.apple.quartzcore/media-2851435@2x.png)
+![Circle with different magnification filters](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2851435@2x.png)
 
-The circle on the left uses [`linear`](calayercontentsfilter/linear.md) and the circle on the right uses [`nearest`](calayercontentsfilter/nearest.md).
+The circle on the left uses [`linear`](../calayercontentsfilter/linear.md) and the circle on the right uses [`nearest`](../calayercontentsfilter/nearest.md).
 
 ## See Also
 
-- [var filters: [Any]?](calayer/filters.md)
+### Layer filters
+- [var filters: [Any]?](./filters.md)
   An array of Core Image filters to apply to the contents of the layer and its sublayers. Animatable.
-- [var compositingFilter: Any?](calayer/compositingfilter.md)
+- [var compositingFilter: Any?](./compositingfilter.md)
   A CoreImage filter used to composite the layer and the content behind it. Animatable.
-- [var backgroundFilters: [Any]?](calayer/backgroundfilters.md)
+- [var backgroundFilters: [Any]?](./backgroundfilters.md)
   An array of Core Image filters to apply to the content immediately behind the layer. Animatable.
-- [var minificationFilter: CALayerContentsFilter](calayer/minificationfilter.md)
+- [var minificationFilter: CALayerContentsFilter](./minificationfilter.md)
   The filter used when reducing the size of the content.
-- [var minificationFilterBias: Float](calayer/minificationfilterbias.md)
+- [var minificationFilterBias: Float](./minificationfilterbias.md)
   The bias factor used by the minification filter to determine the levels of detail.
 
 

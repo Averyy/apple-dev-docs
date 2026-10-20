@@ -1,7 +1,8 @@
 # readAttributePrimary5Intensity(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributePrimary5Intensity(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributePrimary5IntensityWithParams:(MTRReadParams *) params;
 ```
 
 

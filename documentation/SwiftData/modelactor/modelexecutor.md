@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The executor that coordinates access to the model actor.
@@ -25,11 +26,12 @@ var modelExecutor: any ModelExecutor { get }
 
 #### Discussion
 
-> ❗ **Important**: Don’t use the executor to access the model context. Instead, use the [`modelContext`](modelactor/modelcontext.md) property.
+> ❗ **Important**: Don’t use the executor to access the model context. Instead, use the [`modelContext`](./modelcontext.md) property.
 
 ## See Also
 
-- [var unownedExecutor: UnownedSerialExecutor](modelactor/unownedexecutor.md)
+### Accessing the executors
+- [var unownedExecutor: UnownedSerialExecutor](./unownedexecutor.md)
   The optimized, unonwned reference to the model actor’s executor.
 
 

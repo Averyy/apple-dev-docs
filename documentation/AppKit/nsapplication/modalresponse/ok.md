@@ -1,12 +1,13 @@
 # OK
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The presentation or dismissal of the sheet has finished.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ The presentation or dismissal of the sheet has finished.
 static var OK: NSApplication.ModalResponse { get }
 ```
 
+```c
+static const NSModalResponse NSModalResponseOK;
+```
+
 ## See Also
 
-- [static var cancel: NSApplication.ModalResponse](nsapplication/modalresponse/cancel.md)
+### Responses
+- [static var cancel: NSApplication.ModalResponse](./cancel.md)
   The presentation or dismissal of the sheet has been canceled.
-- [static var `continue`: NSApplication.ModalResponse](nsapplication/modalresponse/continue.md)
-  Modal session is continuing (returned by [`runModalSession(_:)`](nsapplication/runmodalsession(_:).md) only).
-- [static var stop: NSApplication.ModalResponse](nsapplication/modalresponse/stop.md)
-  Modal session was broken with [`stopModal()`](nsapplication/stopmodal().md).
-- [static var abort: NSApplication.ModalResponse](nsapplication/modalresponse/abort.md)
-  Modal session was broken with [`abortModal()`](nsapplication/abortmodal().md).
-- [static var alertFirstButtonReturn: NSApplication.ModalResponse](nsapplication/modalresponse/alertfirstbuttonreturn.md)
+- [static var `continue`: NSApplication.ModalResponse](./continue.md)
+  Modal session is continuing (returned by [`runModalSession(_:)`](../runmodalsession%28_%29.md) only).
+- [static var stop: NSApplication.ModalResponse](./stop.md)
+  Modal session was broken with [`stopModal()`](../stopmodal%28%29.md).
+- [static var abort: NSApplication.ModalResponse](./abort.md)
+  Modal session was broken with [`abortModal()`](../abortmodal%28%29.md).
+- [static var alertFirstButtonReturn: NSApplication.ModalResponse](./alertfirstbuttonreturn.md)
   The user clicked the first (rightmost) button on the dialog or sheet.
-- [static var alertSecondButtonReturn: NSApplication.ModalResponse](nsapplication/modalresponse/alertsecondbuttonreturn.md)
+- [static var alertSecondButtonReturn: NSApplication.ModalResponse](./alertsecondbuttonreturn.md)
   The user clicked the second button from the right edge of the dialog or sheet.
-- [static var alertThirdButtonReturn: NSApplication.ModalResponse](nsapplication/modalresponse/alertthirdbuttonreturn.md)
+- [static var alertThirdButtonReturn: NSApplication.ModalResponse](./alertthirdbuttonreturn.md)
   The user clicked the third button from the right edge of the dialog or sheet.
 
 

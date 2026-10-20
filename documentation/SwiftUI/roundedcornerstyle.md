@@ -1,7 +1,8 @@
 # RoundedCornerStyle
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines the shape of a rounded rectangle’s corners.
 
@@ -23,36 +24,37 @@ enum RoundedCornerStyle
 ## Topics
 
 ### Getting corner styles
-- [RoundedCornerStyle.circular](roundedcornerstyle/circular.md)
+- [RoundedCornerStyle.circular](./roundedcornerstyle/circular.md)
   Quarter-circle rounded rect corners.
-- [RoundedCornerStyle.continuous](roundedcornerstyle/continuous.md)
+- [RoundedCornerStyle.continuous](./roundedcornerstyle/continuous.md)
   Continuous curvature rounded rect corners.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Rectangle](rectangle.md)
+### Creating rectangular shapes
+- [struct Rectangle](./rectangle.md)
   A rectangular shape aligned inside the frame of the view containing it.
-- [struct RoundedRectangle](roundedrectangle.md)
+- [struct RoundedRectangle](./roundedrectangle.md)
   A rectangular shape with rounded corners, aligned inside the frame of the view containing it.
-- [protocol RoundedRectangularShape](roundedrectangularshape.md)
-  A protocol of [`InsettableShape`](insettableshape.md) that describes a rounded rectangular shape.
-- [struct RoundedRectangularShapeCorners](roundedrectangularshapecorners.md)
-  A type describing the corner styles of a [`RoundedRectangularShape`](roundedrectangularshape.md).
-- [struct UnevenRoundedRectangle](unevenroundedrectangle.md)
+- [protocol RoundedRectangularShape](./roundedrectangularshape.md)
+  A protocol of [`InsettableShape`](./insettableshape.md) that describes a rounded rectangular shape.
+- [struct RoundedRectangularShapeCorners](./roundedrectangularshapecorners.md)
+  A type describing the corner styles of a [`RoundedRectangularShape`](./roundedrectangularshape.md).
+- [struct UnevenRoundedRectangle](./unevenroundedrectangle.md)
   A rectangular shape with rounded corners with different values, aligned inside the frame of the view containing it.
-- [struct RectangleCornerRadii](rectanglecornerradii.md)
+- [struct RectangleCornerRadii](./rectanglecornerradii.md)
   Describes the corner radius values of a rounded rectangle with uneven corners.
-- [struct RectangleCornerInsets](rectanglecornerinsets.md)
+- [struct RectangleCornerInsets](./rectanglecornerinsets.md)
   The inset sizes for the corners of a rectangle.
-- [struct ConcentricRectangle](concentricrectangle.md)
+- [struct ConcentricRectangle](./concentricrectangle.md)
   A shape whose corners you configure, individually or uniformly, to be squared, rounded, or concentric relative to a container shape’s corners.
 
 

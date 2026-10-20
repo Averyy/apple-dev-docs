@@ -7,12 +7,12 @@ Complete processing of the memory after an I/O transfer finishes.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn complete(
  IODirection forDirection = forDirection) = 0;
 ```
 
-#### Return_value
+#### Return Value
 
 An IOReturn code.
 
@@ -26,14 +26,15 @@ This method should not be called unless a prepare was previously issued; the pre
 
 ## See Also
 
-- [prepare](iomemorydescriptor/1812845-prepare.md)
+### Preparing the Buffer
+- [prepare](./api-1812845-prepare.md)
   Prepare the memory for an I/O transfer.
-- [- prepare](iomemorydescriptor/1442024-prepare.md)
+- [- prepare](./api-1442024-prepare.md)
   Prepare the memory for an I/O transfer.
-- [- complete](iomemorydescriptor/1442043-complete.md)
+- [- complete](./api-1442043-complete.md)
   Complete processing of the memory after an I/O transfer finishes.
-- [- getPreparationID](iomemorydescriptor/1441964-getpreparationid.md)
-- [- setPreparationID](iomemorydescriptor/1442011-setpreparationid.md)
+- [- getPreparationID](./api-1441964-getpreparationid.md)
+- [- setPreparationID](./api-1442011-setpreparationid.md)
 
 
 ---

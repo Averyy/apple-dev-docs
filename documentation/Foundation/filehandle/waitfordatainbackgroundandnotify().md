@@ -1,7 +1,8 @@
 # waitForDataInBackgroundAndNotify()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously checks to see if data is available.
 
@@ -20,27 +21,32 @@ Asynchronously checks to see if data is available.
 func waitForDataInBackgroundAndNotify()
 ```
 
+```objc
+- (void) waitForDataInBackgroundAndNotify;
+```
+
 #### Discussion
 
-When the data becomes available, this method posts a [`NSFileHandleDataAvailable`](nsnotification/name-swift.struct/nsfilehandledataavailable.md) notification on the current thread.
+When the data becomes available, this method posts a [`NSFileHandleDataAvailable`](../nsnotification/name-swift.struct/nsfilehandledataavailable.md) notification on the current thread.
 
 You must call this method from a thread that has an active run loop.
 
 ## See Also
 
-- [func acceptConnectionInBackgroundAndNotify()](filehandle/acceptconnectioninbackgroundandnotify.md)
+### Reading asynchronously with notifications
+- [func acceptConnectionInBackgroundAndNotify()](./acceptconnectioninbackgroundandnotify%28%29.md)
   Accepts a socket connection (for stream-type sockets only) in the background and creates a file handle for the “near” (client) end of the communications channel.
-- [func acceptConnectionInBackgroundAndNotify(forModes: [RunLoop.Mode]?)](filehandle/acceptconnectioninbackgroundandnotify(formodes:).md)
+- [func acceptConnectionInBackgroundAndNotify(forModes: [RunLoop.Mode]?)](./acceptconnectioninbackgroundandnotify%28formodes%29.md)
   Accepts a socket connection (for stream-type sockets only) in the background and creates a file handle for the “near” (client) end of the communications channel.
-- [func readInBackgroundAndNotify()](filehandle/readinbackgroundandnotify.md)
+- [func readInBackgroundAndNotify()](./readinbackgroundandnotify%28%29.md)
   Reads from the file or communications channel in the background and posts a notification when finished.
-- [func readInBackgroundAndNotify(forModes: [RunLoop.Mode]?)](filehandle/readinbackgroundandnotify(formodes:).md)
+- [func readInBackgroundAndNotify(forModes: [RunLoop.Mode]?)](./readinbackgroundandnotify%28formodes%29.md)
   Reads from the file or communications channel in the background and posts a notification when finished.
-- [func readToEndOfFileInBackgroundAndNotify()](filehandle/readtoendoffileinbackgroundandnotify.md)
+- [func readToEndOfFileInBackgroundAndNotify()](./readtoendoffileinbackgroundandnotify%28%29.md)
   Reads to the end of file from the file or communications channel in the background and posts a notification when finished.
-- [func readToEndOfFileInBackgroundAndNotify(forModes: [RunLoop.Mode]?)](filehandle/readtoendoffileinbackgroundandnotify(formodes:).md)
+- [func readToEndOfFileInBackgroundAndNotify(forModes: [RunLoop.Mode]?)](./readtoendoffileinbackgroundandnotify%28formodes%29.md)
   Reads to the end of file from the file or communications channel in the background and posts a notification when finished.
-- [func waitForDataInBackgroundAndNotify(forModes: [RunLoop.Mode]?)](filehandle/waitfordatainbackgroundandnotify(formodes:).md)
+- [func waitForDataInBackgroundAndNotify(forModes: [RunLoop.Mode]?)](./waitfordatainbackgroundandnotify%28formodes%29.md)
   Asynchronously checks to see if data is available.
 
 

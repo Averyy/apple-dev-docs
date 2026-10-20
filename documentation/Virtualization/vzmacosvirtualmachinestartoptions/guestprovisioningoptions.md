@@ -1,7 +1,8 @@
 # guestProvisioningOptions
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that controls provisioning a macOS guest.
 
@@ -15,9 +16,13 @@ A value that controls provisioning a macOS guest.
 var guestProvisioningOptions: VZMacGuestProvisioningOptions? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) VZMacGuestProvisioningOptions * guestProvisioningOptions;
+```
+
 #### Discussion
 
-This property allows someone to provision a macOS guest by setting [`VZMacGuestProvisioningOptions`](vzmacguestprovisioningoptions.md).
+This property allows someone to provision a macOS guest by setting [`VZMacGuestProvisioningOptions`](../vzmacguestprovisioningoptions.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # MusicPersonalRecommendationsRequest
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A request that your app uses to fetch music recommendations based on the user’s library and listening history.
 
@@ -23,26 +24,26 @@ struct MusicPersonalRecommendationsRequest
 ## Topics
 
 ### Initializers
-- [init()](musicpersonalrecommendationsrequest/init.md)
+- [init()](./musicpersonalrecommendationsrequest/init%28%29.md)
   Creates a request to fetch default personal recommendations for the user.
-- [init<S>(refreshing: S)](musicpersonalrecommendationsrequest/init(refreshing:).md)
+- [init<S>(refreshing: S)](./musicpersonalrecommendationsrequest/init%28refreshing%29.md)
   Creates a request to fetch default personal recommendations for the user.
 ### Instance Properties
-- [var limit: Int?](musicpersonalrecommendationsrequest/limit.md)
+- [var limit: Int?](./musicpersonalrecommendationsrequest/limit.md)
   A limit for the number of recommendations to return in the personal recommendations response.
-- [var offset: Int?](musicpersonalrecommendationsrequest/offset.md)
+- [var offset: Int?](./musicpersonalrecommendationsrequest/offset.md)
   An offset for the request.
 ### Instance Methods
-- [func response() async throws -> MusicPersonalRecommendationsResponse](musicpersonalrecommendationsrequest/response.md)
+- [func response() async throws -> MusicPersonalRecommendationsResponse](./musicpersonalrecommendationsrequest/response%28%29.md)
   Fetches the music recommendations based on the user’s library and listening history.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # data_ptr
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A pointer to data.
 
@@ -10,13 +11,14 @@ A pointer to data.
 
 ## Declaration
 
-```swift
+```c
 void *data_ptr;
 ```
 
 ## See Also
 
-- [data_length](kev_d_vectors/1446939-data_length.md)
+### Fields
+- [data_length](./api-1446939-data_length.md)
   The length of data.
 
 

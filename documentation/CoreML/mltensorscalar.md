@@ -1,7 +1,8 @@
 # MLTensorScalar
 
 **Framework**: Core ML  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents the tensor scalar types supported by the framework. Don’t use this type directly.
 
@@ -23,20 +24,21 @@ protocol MLTensorScalar : Sendable
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MLTensor](mltensor.md)
+### Model tensor
+- [struct MLTensor](./mltensor.md)
   A multi-dimensional array of numerical or Boolean scalars tailored to ML use cases, containing methods to perform transformations and mathematical operations efficiently using a ML compute device.
-- [protocol MLTensorRangeExpression](mltensorrangeexpression.md)
+- [protocol MLTensorRangeExpression](./mltensorrangeexpression.md)
   A type that can be used to slice a dimension of a tensor. Don’t use this type directly.
-- [func pointwiseMin(_:_:)](pointwisemin(_:_:).md)
+- [func pointwiseMin(_:_:)](./pointwisemin%28_,_%29.md)
   Computes the element-wise minimum of two tensors.
-- [func pointwiseMax(_:_:)](pointwisemax(_:_:).md)
+- [func pointwiseMax(_:_:)](./pointwisemax%28_,_%29.md)
   Computes the element-wise minimum between two tensors.
-- [func withMLTensorComputePolicy(_:_:)](withmltensorcomputepolicy(_:_:).md)
+- [func withMLTensorComputePolicy(_:_:)](./withmltensorcomputepolicy%28_,_%29.md)
   Calls the given closure within a task-local context using the specified compute policy to influence what compute device tensor operations are executed on.
 
 

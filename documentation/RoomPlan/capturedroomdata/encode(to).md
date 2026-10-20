@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: RoomPlan  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Serializes captured room data to the specified encoder.
 
@@ -17,7 +18,7 @@ func encode(to encoder: any Encoder) throws
 
 #### Discussion
 
-An app might serialize a [`CapturedRoomData`](capturedroomdata.md) object to defer processing to a later date or to defer processing to another device.
+An app might serialize a [`CapturedRoomData`](../capturedroomdata.md) object to defer processing to a later date or to defer processing to another device.
 
 ## Parameters
 

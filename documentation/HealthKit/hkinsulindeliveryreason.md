@@ -1,7 +1,8 @@
 # HKInsulinDeliveryReason
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible reasons for administering insulin.
 
@@ -19,25 +20,29 @@ Possible reasons for administering insulin.
 enum HKInsulinDeliveryReason
 ```
 
+```c
+enum HKInsulinDeliveryReason : NSInteger;
+```
+
 ## Topics
 
 ### Delivery Reasons
-- [HKInsulinDeliveryReason.basal](hkinsulindeliveryreason/basal.md)
+- [HKInsulinDeliveryReason.basal](./hkinsulindeliveryreason/basal.md)
   Insulin administered to meet the user’s basic metabolic needs.
-- [HKInsulinDeliveryReason.bolus](hkinsulindeliveryreason/bolus.md)
+- [HKInsulinDeliveryReason.bolus](./hkinsulindeliveryreason/bolus.md)
   Insulin administered to meet the user’s episodic requirements.
 ### Initializers
-- [init?(rawValue: Int)](hkinsulindeliveryreason/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkinsulindeliveryreason/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

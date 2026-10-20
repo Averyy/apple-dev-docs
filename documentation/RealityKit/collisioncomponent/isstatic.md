@@ -1,7 +1,8 @@
 # isStatic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the collider is static.
 

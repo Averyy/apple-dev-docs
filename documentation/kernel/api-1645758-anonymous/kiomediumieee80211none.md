@@ -1,14 +1,15 @@
 # kIOMediumIEEE80211None
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOMediumIEEE80211None = ( IFM_NONE           | IFM_IEEE80211 )
 ```
 

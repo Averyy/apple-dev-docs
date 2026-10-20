@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A view that represents the appearance and interaction of a toggle.
@@ -23,15 +24,16 @@ associatedtype Body : View
 
 #### Discussion
 
-SwiftUI infers this type automatically based on the [`View`](view.md) instance that you return from your implementation of the [`makeBody(configuration:)`](togglestyle/makebody(configuration:).md) method.
+SwiftUI infers this type automatically based on the [`View`](../view.md) instance that you return from your implementation of the [`makeBody(configuration:)`](./makebody%28configuration%29.md) method.
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](togglestyle/makebody(configuration:).md)
+### Creating custom toggle styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view that represents the body of a toggle.
-- [struct ToggleStyleConfiguration](togglestyleconfiguration.md)
+- [struct ToggleStyleConfiguration](../togglestyleconfiguration.md)
   The properties of a toggle instance.
-- [ToggleStyle.Configuration](togglestyle/configuration.md)
+- [ToggleStyle.Configuration](./configuration.md)
   The properties of a toggle instance.
 
 

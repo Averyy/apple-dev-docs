@@ -1,7 +1,8 @@
 # averageBitRate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The average bit rate for the variant.
 
@@ -27,7 +28,8 @@ If the variant doesn’t define a peak bit rate, the value is negative.
 
 ## See Also
 
-- [var peakBitRate: Double?](avassetvariant/peakbitrate-9hzpi.md)
+### Configuring bit rate
+- [var peakBitRate: Double?](./peakbitrate-9hzpi.md)
   The peak bit rate for the variant.
 
 

@@ -1,33 +1,35 @@
 # kUSBHostMatchingPropertyInterfaceNumber
 
 **Framework**: USBDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 #define kUSBHostMatchingPropertyInterfaceNumber
 ```
 
 ## See Also
 
-- [kUSBHostMatchingPropertySpeed](kusbhostmatchingpropertyspeed.md)
-- [kUSBHostMatchingPropertyPortType](kusbhostmatchingpropertyporttype.md)
-- [kUSBHostMatchingPropertyVendorID](kusbhostmatchingpropertyvendorid.md)
-- [kUSBHostMatchingPropertyProductID](kusbhostmatchingpropertyproductid.md)
-- [kUSBHostMatchingPropertyDeviceClass](kusbhostmatchingpropertydeviceclass.md)
-- [kUSBHostMatchingPropertyProductIDMask](kusbhostmatchingpropertyproductidmask.md)
-- [kUSBHostMatchingPropertyDeviceProtocol](kusbhostmatchingpropertydeviceprotocol.md)
-- [kUSBHostMatchingPropertyDeviceSubClass](kusbhostmatchingpropertydevicesubclass.md)
-- [kUSBHostMatchingPropertyInterfaceClass](kusbhostmatchingpropertyinterfaceclass.md)
-- [kUSBHostMatchingPropertyProductIDArray](kusbhostmatchingpropertyproductidarray.md)
-- [kUSBHostMatchingPropertyInterfaceProtocol](kusbhostmatchingpropertyinterfaceprotocol.md)
-- [kUSBHostMatchingPropertyInterfaceSubClass](kusbhostmatchingpropertyinterfacesubclass.md)
-- [kUSBHostMatchingPropertyConfigurationValue](kusbhostmatchingpropertyconfigurationvalue.md)
-- [kUSBHostMatchingPropertyDeviceReleaseNumber](kusbhostmatchingpropertydevicereleasenumber.md)
+### Host Matching Properties
+- [kUSBHostMatchingPropertySpeed](./kusbhostmatchingpropertyspeed.md)
+- [kUSBHostMatchingPropertyPortType](./kusbhostmatchingpropertyporttype.md)
+- [kUSBHostMatchingPropertyVendorID](./kusbhostmatchingpropertyvendorid.md)
+- [kUSBHostMatchingPropertyProductID](./kusbhostmatchingpropertyproductid.md)
+- [kUSBHostMatchingPropertyDeviceClass](./kusbhostmatchingpropertydeviceclass.md)
+- [kUSBHostMatchingPropertyProductIDMask](./kusbhostmatchingpropertyproductidmask.md)
+- [kUSBHostMatchingPropertyDeviceProtocol](./kusbhostmatchingpropertydeviceprotocol.md)
+- [kUSBHostMatchingPropertyDeviceSubClass](./kusbhostmatchingpropertydevicesubclass.md)
+- [kUSBHostMatchingPropertyInterfaceClass](./kusbhostmatchingpropertyinterfaceclass.md)
+- [kUSBHostMatchingPropertyProductIDArray](./kusbhostmatchingpropertyproductidarray.md)
+- [kUSBHostMatchingPropertyInterfaceProtocol](./kusbhostmatchingpropertyinterfaceprotocol.md)
+- [kUSBHostMatchingPropertyInterfaceSubClass](./kusbhostmatchingpropertyinterfacesubclass.md)
+- [kUSBHostMatchingPropertyConfigurationValue](./kusbhostmatchingpropertyconfigurationvalue.md)
+- [kUSBHostMatchingPropertyDeviceReleaseNumber](./kusbhostmatchingpropertydevicereleasenumber.md)
 
 
 ---

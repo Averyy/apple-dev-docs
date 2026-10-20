@@ -1,7 +1,8 @@
 # CFNetworkExecuteProxyAutoConfigurationScript(_:_:_:_:)
 
 **Framework**: CFNetwork  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Downloads a proxy autoconfiguration script and executes it.
 
@@ -19,6 +20,10 @@ Downloads a proxy autoconfiguration script and executes it.
 func CFNetworkExecuteProxyAutoConfigurationScript(_ proxyAutoConfigurationScript: CFString, _ targetURL: CFURL, _ cb: CFProxyAutoConfigurationResultCallback, _ clientContext: UnsafeMutablePointer<CFStreamClientContext>) -> CFRunLoopSource
 ```
 
+```c
+extern CFRunLoopSourceRefCFNetworkExecuteProxyAutoConfigurationScript(CFStringRef proxyAutoConfigurationScript, CFURLRef targetURL, CFProxyAutoConfigurationResultCallback cb, CFStreamClientContext *clientContext);
+```
+
 #### Discussion
 
 This function returns a run loop source that the caller should schedule. Once execution of the script has completed, the specified callback function is called.
@@ -34,22 +39,23 @@ This function returns a run loop source that the caller should schedule. Once ex
 
 ## See Also
 
-- [func CFNetworkCopyProxiesForURL(CFURL, CFDictionary) -> Unmanaged<CFArray>](cfnetworkcopyproxiesforurl(_:_:).md)
+### Global Proxy Configuration
+- [func CFNetworkCopyProxiesForURL(CFURL, CFDictionary) -> Unmanaged<CFArray>](./cfnetworkcopyproxiesforurl%28_,_%29.md)
   Returns the list of proxies that should be used to download a given URL.
-- [func CFNetworkCopyProxiesForAutoConfigurationScript(CFString, CFURL, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<CFArray>?](cfnetworkcopyproxiesforautoconfigurationscript(_:_:_:).md)
+- [func CFNetworkCopyProxiesForAutoConfigurationScript(CFString, CFURL, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<CFArray>?](./cfnetworkcopyproxiesforautoconfigurationscript%28_,_,_%29.md)
   Executes a proxy autoconfiguration script to determine the best proxy to use to retrieve a specified URL.
-- [func CFNetworkExecuteProxyAutoConfigurationURL(CFURL, CFURL, CFProxyAutoConfigurationResultCallback, UnsafeMutablePointer<CFStreamClientContext>) -> CFRunLoopSource](cfnetworkexecuteproxyautoconfigurationurl(_:_:_:_:).md)
+- [func CFNetworkExecuteProxyAutoConfigurationURL(CFURL, CFURL, CFProxyAutoConfigurationResultCallback, UnsafeMutablePointer<CFStreamClientContext>) -> CFRunLoopSource](./cfnetworkexecuteproxyautoconfigurationurl%28_,_,_,_%29.md)
   Downloads a proxy autoconfiguration script and executes it.
-- [func CFNetworkCopySystemProxySettings() -> Unmanaged<CFDictionary>?](cfnetworkcopysystemproxysettings().md)
+- [func CFNetworkCopySystemProxySettings() -> Unmanaged<CFDictionary>?](./cfnetworkcopysystemproxysettings%28%29.md)
   Returns a CFDictionary containing the current systemwide internet proxy settings.
-- [typealias CFProxyAutoConfigurationResultCallback](cfproxyautoconfigurationresultcallback.md)
+- [typealias CFProxyAutoConfigurationResultCallback](./cfproxyautoconfigurationresultcallback.md)
   Callback function called when a proxy autoconfiguration computation has completed.
-- [Property Keys](property-keys.md)
-  Keys for calls to property get/set functions such as [`CFReadStreamSetProperty(_:_:_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamsetproperty(_:_:_:)) and [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamcopyproperty(_:_:)).
-- [Proxy Types](proxy-types.md)
+- [Property Keys](./property-keys.md)
+  Keys for calls to property get/set functions such as [`CFReadStreamSetProperty(_:_:_:)`](../CoreFoundation/cfreadstreamsetproperty%28_,_,_%29.md) and [`CFReadStreamCopyProperty(_:_:)`](../CoreFoundation/cfreadstreamcopyproperty%28_,_%29.md).
+- [Proxy Types](./proxy-types.md)
   Constants that specify the type of proxy.
-- [Global Proxy Settings Constants](global-proxy-settings-constants.md)
-  Constants for keys in the global proxy settings dictionary returned by [`CFNetworkCopySystemProxySettings()`](cfnetworkcopysystemproxysettings().md).
+- [Global Proxy Settings Constants](./global-proxy-settings-constants.md)
+  Constants for keys in the global proxy settings dictionary returned by [`CFNetworkCopySystemProxySettings()`](./cfnetworkcopysystemproxysettings%28%29.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # keyToCharTableOffsets
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An array of offsets from the beginning of the `'uchr'` resource to each of the `UCKeyOutput` key-code-to-character tables in the `keyToCharData[]` array that follows this structure in the resource.
 
@@ -13,6 +14,10 @@ An array of offsets from the beginning of the `'uchr'` resource to each of the `
 
 ```swift
 var keyToCharTableOffsets: UInt32
+```
+
+```c
+UInt32 keyToCharTableOffsets[1];
 ```
 
 

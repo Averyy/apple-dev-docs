@@ -1,7 +1,8 @@
 # Color.ResolvedHDR
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A concrete color value, including HDR headroom information.
 
@@ -25,50 +26,51 @@ struct ResolvedHDR
 
 `Color.ResolvedHDR` is a set of RGBA values that represent a color that can be shown. The color components are stored in the extended sRGB color space and may contain a “headroom” value describing how the color is rendered for displays with different dynamic ranges. This is a low-level type, most colors are represented by the `Color` type.
 
-> **Note**: `Color.Resolved`, `Color`.
+> **See Also**: `Color.Resolved`, `Color`.
 
 ## Topics
 
 ### Creating a concrete color value
-- [init(Color.Resolved, headroom: Float?)](color/resolvedhdr/init(_:headroom:).md)
+- [init(Color.Resolved, headroom: Float?)](./resolvedhdr/init%28_,headroom%29.md)
   Initializes a new resolved color value.
 ### Getting color properties
-- [var red: Float](color/resolvedhdr/red.md)
+- [var red: Float](./resolvedhdr/red.md)
   The amount of red in the color in the extended sRGB color space.
-- [var green: Float](color/resolvedhdr/green.md)
+- [var green: Float](./resolvedhdr/green.md)
   The amount of green in the color in the extended sRGB color space.
-- [var blue: Float](color/resolvedhdr/blue.md)
+- [var blue: Float](./resolvedhdr/blue.md)
   The amount of blue in the color in the extended sRGB color space.
-- [var linearRed: Float](color/resolvedhdr/linearred.md)
+- [var linearRed: Float](./resolvedhdr/linearred.md)
   The amount of red in the color in the extended sRGB color space variant with linear gamma.
-- [var linearGreen: Float](color/resolvedhdr/lineargreen.md)
+- [var linearGreen: Float](./resolvedhdr/lineargreen.md)
   The amount of green in the color in the extended sRGB color space variant with linear gamma.
-- [var linearBlue: Float](color/resolvedhdr/linearblue.md)
+- [var linearBlue: Float](./resolvedhdr/linearblue.md)
   The amount of blue in the color in the extended sRGB color space variant with linear gamma.
-- [var opacity: Float](color/resolvedhdr/opacity.md)
+- [var opacity: Float](./resolvedhdr/opacity.md)
   The opacity of the color, in the range `0` to `1`.
-- [var headroom: Float?](color/resolvedhdr/headroom.md)
+- [var headroom: Float?](./resolvedhdr/headroom.md)
   The content headroom of the color.
 
 ## Relationships
 
 ### Conforms To
-- [Animatable](animatable.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [ShapeStyle](shapestyle.md)
+- [Animatable](../animatable.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [ShapeStyle](../shapestyle.md)
 
 ## See Also
 
-- [func resolveHDR(in: EnvironmentValues) -> Color.ResolvedHDR](color/resolvehdr(in:).md)
+### Working with high dynamic range (HDR) colors
+- [func resolveHDR(in: EnvironmentValues) -> Color.ResolvedHDR](./resolvehdr%28in%29.md)
   Evaluates this color to a resolved color with content headroom, given a set of environment values.
 
 

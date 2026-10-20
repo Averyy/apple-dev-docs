@@ -1,18 +1,25 @@
 # imageProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image to display.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
 ```swift
 @NSCopying
 var imageProvider: CLKFullColorImageProvider { get set }
+```
+
+```objc
+@property (nonatomic, copy) CLKFullColorImageProvider * imageProvider;
 ```
 
 #### Discussion

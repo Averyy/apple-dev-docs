@@ -1,7 +1,8 @@
 # init(sensor:)
 
 **Framework**: SensorKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new sensor reader for the specified sensor type.
 
@@ -24,7 +25,7 @@ A new `SRReader` instance
 
 This initializer attempts to create a reader for the given sensor.
 
-> **Note**: An error if cannot create reader due to hardware limitations or internal error
+> **Throws**: An error if cannot create reader due to hardware limitations or internal error
 
 #### Example
 

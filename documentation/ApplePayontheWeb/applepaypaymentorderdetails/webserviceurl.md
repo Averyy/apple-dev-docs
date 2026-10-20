@@ -1,7 +1,8 @@
 # webServiceURL
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of your web service.
 
@@ -11,7 +12,7 @@ The URL of your web service.
 
 ## Declaration
 
-```swift
+```
 required DOMString webServiceURL;
 ```
 
@@ -21,11 +22,12 @@ The URL for your web service needs to begin with `https://`; for example, `https
 
 ## See Also
 
-- [authenticationToken](applepaypaymentorderdetails/authenticationtoken.md)
+### Providing order information
+- [authenticationToken](./authenticationtoken.md)
   The authentication token supplied to your web service.
-- [orderIdentifier](applepaypaymentorderdetails/orderidentifier.md)
+- [orderIdentifier](./orderidentifier.md)
   A unique order identifier scoped to your order type identifier.
-- [orderTypeIdentifier](applepaypaymentorderdetails/ordertypeidentifier.md)
+- [orderTypeIdentifier](./ordertypeidentifier.md)
   An identifier for the order type associated with the order.
 
 

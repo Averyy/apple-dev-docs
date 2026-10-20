@@ -1,7 +1,8 @@
 # leading
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 10.15+
@@ -10,6 +11,10 @@
 
 ```swift
 static var leading: NSDirectionalRectEdge { get }
+```
+
+```c
+NSDirectionalRectEdgeLeading
 ```
 
 

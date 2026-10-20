@@ -1,15 +1,18 @@
 # eventAttribution
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An options key for `application(_:open:options:)`. The value is a `UIEventAttribution` to go along with the URL to open.
 
 **Availability**:
-- iOS 14.5+
-- iPadOS 14.5+
-- Mac Catalyst 14.5+
-- visionOS 1.0+
+- iOS 14.5+ - Deprecated in 26.0
+- iPadOS 14.5+ - Deprecated in 26.0
+- Mac Catalyst 14.5+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+
+> **Deprecated**: Use UIScene lifecycle and UISceneOpenURLOptions.eventAttribution from a UIOpenURLContext in UIScene.ConnectionOptions.URLContexts instead.
 
 ## Declaration
 
@@ -17,13 +20,18 @@ An options key for `application(_:open:options:)`. The value is a `UIEventAttrib
 static let eventAttribution: UIApplication.OpenURLOptionsKey
 ```
 
+```c
+extern UIApplicationOpenURLOptionsKey const UIApplicationOpenURLOptionsEventAttributionKey;
+```
+
 ## See Also
 
-- [static let sourceApplication: UIApplication.OpenURLOptionsKey](uiapplication/openurloptionskey/sourceapplication.md)
+### Accessing open-URL options
+- [static let sourceApplication: UIApplication.OpenURLOptionsKey](./sourceapplication.md)
   A key containing the bundle ID of the app that sent the open-URL request to your app.
-- [static let annotation: UIApplication.OpenURLOptionsKey](uiapplication/openurloptionskey/annotation.md)
+- [static let annotation: UIApplication.OpenURLOptionsKey](./annotation.md)
   A key containing the information passed to a document interaction controller object’s annotation property.
-- [static let openInPlace: UIApplication.OpenURLOptionsKey](uiapplication/openurloptionskey/openinplace.md)
+- [static let openInPlace: UIApplication.OpenURLOptionsKey](./openinplace.md)
   A key containing a flag that indicates whether a document must be copied before you use it.
 
 

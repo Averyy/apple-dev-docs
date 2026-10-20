@@ -1,17 +1,20 @@
 # Get Users
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about a set of users.
 
 **Availability**:
 - VPP License Management 1.0+
 
+> **Deprecated**: This legacy API is currently in maintenance mode. Apple won’t add any new functionality to it.
+
 ## Mentions
 
-- [Retrieving a large record set](retrieving-a-large-record-set.md)
-- [Handling error responses](handling-error-responses.md)
+- [Retrieving a large record set](./retrieving-a-large-record-set.md)
+- [Handling error responses](./handling-error-responses.md)
 
 #### Discussion
 
@@ -19,7 +22,7 @@ Get information about a set of users.
 
 **Request**:
 
-```None
+```
 {
   "batchToken": null,
   "sinceModifiedToken": null,
@@ -85,9 +88,9 @@ Get information about a set of users.
 ## Topics
 
 ### Request and Response
-- [object GetVppUsersRequest](getvppusersrequest.md)
+- [object GetVppUsersRequest](./getvppusersrequest.md)
   The request for the users’ details service.
-- [object GetVppUsersResponse](getvppusersresponse.md)
+- [object GetVppUsersResponse](./getvppusersresponse.md)
   The response from the users’ details service.
 
 ## Endpoint
@@ -96,17 +99,25 @@ Get information about a set of users.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `GetVppUsersRequest`
+
 missing
+
+## Responses
+
+- `200` OK (`GetVppUsersResponse`, `application/json`)
 
 ## See Also
 
-- [Get a User](get-a-user.md)
+### User management
+- [Get a User](./get-a-user.md)
   Get information about a particular user.
-- [Register a User](register-a-user.md)
+- [Register a User](./register-a-user.md)
   Register a user with the volume-purchase program.
-- [Edit a User](edit-a-user.md)
+- [Edit a User](./edit-a-user.md)
   Modify details about a user.
-- [Retire a User](retire-a-user.md)
+- [Retire a User](./retire-a-user.md)
   Retire a user account.
 
 

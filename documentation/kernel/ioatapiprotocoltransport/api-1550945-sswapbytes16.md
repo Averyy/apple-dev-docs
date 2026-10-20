@@ -1,14 +1,15 @@
 # sSwapBytes16
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 static void sSwapBytes16(UInt8 *buffer, IOByteCount numBytesToSwap);
 ```
 

@@ -1,7 +1,8 @@
 # lateralJitter
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of lateral particle jitter at the stroke edge for supported inks.
 
@@ -16,6 +17,10 @@ The amount of lateral particle jitter at the stroke edge for supported inks.
 
 ```swift
 var lateralJitter: CGFloat { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGFloat lateralJitter;
 ```
 
 #### Discussion

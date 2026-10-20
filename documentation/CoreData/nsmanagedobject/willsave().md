@@ -1,7 +1,8 @@
 # willSave()
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides an opportunity to add code into the life cycle of the managed object before saving it.
 
@@ -10,7 +11,7 @@ Provides an opportunity to add code into the life cycle of the managed object be
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Provides an opportunity to add code into the life cycle of the managed object be
 
 ```swift
 func willSave()
+```
+
+```objc
+- (void) willSave;
 ```
 
 #### Discussion
@@ -30,33 +35,34 @@ For example, if you set a last-modified timestamp, you should check whether eith
 
 If you change property values using primitive accessors, you avoid the possibility of infinite recursion, but Core Data will not notice the change you make.
 
-The sense of “save” in the method name is that of a database commit statement and so applies to deletions as well as to updates to objects. For subclasses, this method is therefore an appropriate locus for code to be executed when an object deleted as well as “saved to disk.” You can find out if an object is marked for deletion with [`isDeleted`](nsmanagedobject/isdeleted.md).
+The sense of “save” in the method name is that of a database commit statement and so applies to deletions as well as to updates to objects. For subclasses, this method is therefore an appropriate locus for code to be executed when an object deleted as well as “saved to disk.” You can find out if an object is marked for deletion with [`isDeleted`](./isdeleted.md).
 
 ## See Also
 
-- [class var contextShouldIgnoreUnmodeledPropertyChanges: Bool](nsmanagedobject/contextshouldignoreunmodeledpropertychanges.md)
+### Managing Change Events
+- [class var contextShouldIgnoreUnmodeledPropertyChanges: Bool](./contextshouldignoreunmodeledpropertychanges.md)
   A Boolean value that indicates whether to mark instances of the class as having changes when an unmodeled property changes.
-- [func awakeFromFetch()](nsmanagedobject/awakefromfetch.md)
+- [func awakeFromFetch()](./awakefromfetch%28%29.md)
   Provides an opportunity to add code into the life cycle of the managed object when fufilling it from a fault.
-- [func awakeFromInsert()](nsmanagedobject/awakefrominsert.md)
+- [func awakeFromInsert()](./awakefrominsert%28%29.md)
   Provides an opportunity to add code into the life cycle of the managed object when initially creating it.
-- [func awake(fromSnapshotEvents: NSSnapshotEventType)](nsmanagedobject/awake(fromsnapshotevents:).md)
+- [func awake(fromSnapshotEvents: NSSnapshotEventType)](./awake%28fromsnapshotevents%29.md)
   Provides an opportunity to add code into the life cycle of the managed object when fulfilling it from a snapshot.
-- [func changedValues() -> [String : Any]](nsmanagedobject/changedvalues.md)
+- [func changedValues() -> [String : Any]](./changedvalues%28%29.md)
   Returns a dictionary containing the keys and new values of persistent properties with changes since the last fetching or saving of the managed object.
-- [func changedValuesForCurrentEvent() -> [String : Any]](nsmanagedobject/changedvaluesforcurrentevent.md)
+- [func changedValuesForCurrentEvent() -> [String : Any]](./changedvaluesforcurrentevent%28%29.md)
   Returns a dictionary containing the keys and new values of persistent properties with changes since the last fetching or saving of the managed object.
-- [func committedValues(forKeys: [String]?) -> [String : Any]](nsmanagedobject/committedvalues(forkeys:).md)
+- [func committedValues(forKeys: [String]?) -> [String : Any]](./committedvalues%28forkeys%29.md)
   Returns a dictionary of the most recent fetched or saved values of the managed object for the properties of the specified keys.
-- [func prepareForDeletion()](nsmanagedobject/preparefordeletion.md)
+- [func prepareForDeletion()](./preparefordeletion%28%29.md)
   Provides an opportunity to add code into the life cycle of the managed object before deleting it.
-- [func didSave()](nsmanagedobject/didsave.md)
+- [func didSave()](./didsave%28%29.md)
   Provides an opportunity to add code into the life cycle of the managed object after the managed object’s context completes a save operation.
-- [func willTurnIntoFault()](nsmanagedobject/willturnintofault.md)
+- [func willTurnIntoFault()](./willturnintofault%28%29.md)
   Provides an opportunity to add code into the life cycle of the managed object before converting it to a fault.
-- [func didTurnIntoFault()](nsmanagedobject/didturnintofault.md)
+- [func didTurnIntoFault()](./didturnintofault%28%29.md)
   Provides an opportunity to add code into the life cycle of the managed object after converting it to a fault.
-- [class func fetchRequest() -> NSFetchRequest<any NSFetchRequestResult>](nsmanagedobject/fetchrequest.md)
+- [class func fetchRequest() -> NSFetchRequest<any NSFetchRequestResult>](./fetchrequest%28%29.md)
   Returns an initialized fetch request with the entity this subclass represents.
 
 

@@ -1,7 +1,8 @@
 # foregroundStyle(_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the axis content’s foreground elements to use a given style.
 

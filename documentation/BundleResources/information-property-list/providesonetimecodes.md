@@ -1,7 +1,8 @@
 # ProvidesOneTimeCodes
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 Allows this credential provider to show up in one-time-code text fields, to allowing filling time-based verification codes.
 
@@ -12,19 +13,23 @@ Allows this credential provider to show up in one-time-code text fields, to allo
 - macOS 15.0+
 - visionOS 2.0+
 
+## Details
+
+- **Name**: `ProvidesOneTimeCodes`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 
 ## See Also
 
-- [ProvidesPasskeys](information-property-list/nsextension/nsextensionattributes/ascredentialproviderextensioncapabilities/providespasskeys.md)
+### Providing credentials
+- [ProvidesPasskeys](./nsextension/nsextensionattributes/ascredentialproviderextensioncapabilities/providespasskeys.md)
   A Boolean value that indicates whether your credential provider extension provides passkeys.
-- [SupportsConditionalPasskeyRegistration](information-property-list/supportsconditionalpasskeyregistration.md)
+- [SupportsConditionalPasskeyRegistration](./supportsconditionalpasskeyregistration.md)
   Indicates that the credential provider supports automatic passkey upgrades.
-- [ProvidesPasswords](information-property-list/nsextension/nsextensionattributes/ascredentialproviderextensioncapabilities/providespasswords.md)
+- [ProvidesPasswords](./nsextension/nsextensionattributes/ascredentialproviderextensioncapabilities/providespasswords.md)
   A Boolean value that indicates whether your credential provider extension provides passwords.
 
 

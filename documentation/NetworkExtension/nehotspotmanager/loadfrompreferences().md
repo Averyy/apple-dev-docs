@@ -1,7 +1,8 @@
 # loadFromPreferences()
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads the hotspot manager configuration from the Network Extension preferences.
 
@@ -19,15 +20,16 @@ final func loadFromPreferences() async throws
 
 #### Discussion
 
-If you haven’t previously saved a configuration with [`saveToPreferences()`](nehotspotmanager/savetopreferences().md), this call loads a default configuration.
+If you haven’t previously saved a configuration with [`saveToPreferences()`](./savetopreferences%28%29.md), this call loads a default configuration.
 
-This method throws [`NEHotspotManager.Error`](nehotspotmanager/error.md) value asynchronously on failure.
+This method throws [`NEHotspotManager.Error`](./error.md) value asynchronously on failure.
 
 ## See Also
 
-- [func saveToPreferences() async throws](nehotspotmanager/savetopreferences.md)
+### Managing the saved configuration
+- [func saveToPreferences() async throws](./savetopreferences%28%29.md)
   Saves the HotspotManager configuration in the Network Extension preferences.
-- [func removeFromPreferences() async throws](nehotspotmanager/removefrompreferences.md)
+- [func removeFromPreferences() async throws](./removefrompreferences%28%29.md)
   Removes the hotspot manager configuration from the Network Extension preferences.
 
 

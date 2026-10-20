@@ -1,7 +1,8 @@
 # color(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,12 @@
 
 ```swift
 static func color(_ color: NSColor) -> MaterialParameters.Value
+```
+
+**Other overloads**:
+
+```swift
+static func color(_ color: UIColor) -> MaterialParameters.Value
 ```
 
 

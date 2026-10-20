@@ -1,7 +1,8 @@
 # intrinsicMatrixReferenceDimensions
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Image dimensions to which the camera’s intrinsic matrix values are relative.
 

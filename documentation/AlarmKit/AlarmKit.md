@@ -1,7 +1,8 @@
 # AlarmKit
 
 **Framework**: AlarmKit  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Schedule prominent alarms and countdowns to help people manage their time.
 
@@ -17,23 +18,23 @@ Use `AlarmKit` to create custom alarms and timers in your app. `AlarmKit` provid
 ## Topics
 
 ### Alarm management
-- [Scheduling an alarm with AlarmKit](scheduling-an-alarm-with-alarmkit.md)
+- [Scheduling an alarm with AlarmKit](./scheduling-an-alarm-with-alarmkit.md)
   Create prominent alerts at specified dates for your iOS app.
-- [class AlarmManager](alarmmanager.md)
+- [class AlarmManager](./alarmmanager.md)
   An object that exposes functions to work with alarms: scheduling, snoozing, cancelling.
-- [struct Alarm](alarm.md)
+- [struct Alarm](./alarm.md)
   An object that describes an alarm that can alert once or on a repeating schedule.
 ### Buttons
-- [struct AlarmButton](alarmbutton.md)
+- [struct AlarmButton](./alarmbutton.md)
   A struct that defines the appearance of buttons.
 ### Views
-- [struct AlarmPresentation](alarmpresentation.md)
+- [struct AlarmPresentation](./alarmpresentation.md)
   An object that describes the content required for the alarm UI.
-- [struct AlarmPresentationState](alarmpresentationstate.md)
+- [struct AlarmPresentationState](./alarmpresentationstate.md)
   The system managed content state of an alarm Live Activity.
-- [struct AlarmAttributes](alarmattributes.md)
+- [struct AlarmAttributes](./alarmattributes.md)
   An object that contains all information necessary for the alarm UI.
-- [protocol AlarmMetadata](alarmmetadata.md)
+- [protocol AlarmMetadata](./alarmmetadata.md)
   A metadata object that contains information about an alarm.
 
 

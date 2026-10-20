@@ -1,7 +1,8 @@
 # prefix
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string with which to prefix all log messages.
 
@@ -22,9 +23,10 @@ let prefix: String
 
 ## See Also
 
-- [let upstream: Upstream](publishers/print/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
-- [let stream: (any TextOutputStream)?](publishers/print/stream.md)
+- [let stream: (any TextOutputStream)?](./stream.md)
 
 
 ---

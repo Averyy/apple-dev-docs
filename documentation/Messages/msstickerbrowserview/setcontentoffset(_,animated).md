@@ -1,7 +1,8 @@
 # setContentOffset(_:animated:)
 
 **Framework**: Messages  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the offset distance between the content and the browser’s origin.
 
@@ -16,6 +17,10 @@ Sets the offset distance between the content and the browser’s origin.
 func setContentOffset(_ contentOffset: CGPoint, animated: Bool)
 ```
 
+```objc
+- (void) setContentOffset:(CGPoint) contentOffset animated:(BOOL) animated;
+```
+
 #### Discussion
 
 Increasing the offset’s `x` value shifts the content to the left. Increasing the offset’s `y` value shifts the content upward.
@@ -23,15 +28,16 @@ Increasing the offset’s `x` value shifts the content to the left. Increasing t
 ## Parameters
 
 - `contentOffset`: The distance that the content is offset from the browser’s origin.
-- `animated`: A Boolean value that determines whether the change is animated. If [`true`](https://developer.apple.com/documentation/swift/true), the change is animated at a constant velocity. If [`false`](https://developer.apple.com/documentation/swift/false), the change takes place immediately.
+- `animated`: A Boolean value that determines whether the change is animated. If [`true`](../../Swift/true.md), the change is animated at a constant velocity. If [`false`](../../Swift/false.md), the change takes place immediately.
 
 ## See Also
 
-- [var contentInset: UIEdgeInsets](msstickerbrowserview/contentinset.md)
+### Managing the Browser’s Appearance
+- [var contentInset: UIEdgeInsets](./contentinset.md)
   The distance that the content is inset from the edge of the browser view.
-- [var contentOffset: CGPoint](msstickerbrowserview/contentoffset.md)
+- [var contentOffset: CGPoint](./contentoffset.md)
   The distance that the content is offset from the browser’s origin.
-- [var stickerSize: MSStickerSize](msstickerbrowserview/stickersize.md)
+- [var stickerSize: MSStickerSize](./stickersize.md)
   The size of the stickers in the browser.
 
 

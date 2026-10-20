@@ -1,7 +1,8 @@
 # ARKitSession.AuthorizationType.handTracking
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The authorization for access to detailed hand-tracking data.
 
@@ -17,9 +18,10 @@ case handTracking
 
 ## See Also
 
-- [ARKitSession.AuthorizationType.worldSensing](arkitsession/authorizationtype/worldsensing.md)
+### Requesting authorization
+- [ARKitSession.AuthorizationType.worldSensing](./worldsensing.md)
   The authorization for access to plane detection, scene reconstruction, and image tracking.
-- [ARKitSession.AuthorizationType.cameraAccess](arkitsession/authorizationtype/cameraaccess.md)
+- [ARKitSession.AuthorizationType.cameraAccess](./cameraaccess.md)
   The authorization for camera access.
 
 

@@ -1,7 +1,8 @@
 # containsAny(of:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the rectangle contains any of the specified points.
 
@@ -11,7 +12,7 @@ Returns a Boolean value that indicates whether the rectangle contains any of the
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -30,19 +31,20 @@ A Boolean value that indicates whether the rectangle contains any of the specifi
 
 ## See Also
 
-- [func distance(to: Rect3D) -> Double](rect3d/distance(to:).md)
+### Deprecated symbols
+- [func distance(to: Rect3D) -> Double](./distance%28to%29.md)
   Returns the distance between the origins of two rectangle.
-- [func rotation(to: Rect3D) -> Rotation3D](rect3d/rotation(to:).md)
+- [func rotation(to: Rect3D) -> Rotation3D](./rotation%28to%29.md)
   Returns the rotation around @p (0,0,0)  from the first rectangle to the second rectangle.
-- [var maxX: Double](rect3d/maxx.md)
-- [var maxY: Double](rect3d/maxy.md)
-- [var maxZ: Double](rect3d/maxz.md)
-- [var midX: Double](rect3d/midx.md)
-- [var midY: Double](rect3d/midy.md)
-- [var midZ: Double](rect3d/midz.md)
-- [var minX: Double](rect3d/minx.md)
-- [var minY: Double](rect3d/miny.md)
-- [var minZ: Double](rect3d/minz.md)
+- [var maxX: Double](./maxx.md)
+- [var maxY: Double](./maxy.md)
+- [var maxZ: Double](./maxz.md)
+- [var midX: Double](./midx.md)
+- [var midY: Double](./midy.md)
+- [var midZ: Double](./midz.md)
+- [var minX: Double](./minx.md)
+- [var minY: Double](./miny.md)
+- [var minZ: Double](./minz.md)
 
 
 ---

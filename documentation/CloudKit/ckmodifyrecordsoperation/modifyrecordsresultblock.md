@@ -1,7 +1,8 @@
 # modifyRecordsResultBlock
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure to execute after CloudKit modifies all of the records.
 
@@ -11,7 +12,7 @@ The closure to execute after CloudKit modifies all of the records.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -24,8 +25,10 @@ var modifyRecordsResultBlock: ((Result<Void, any Error>) -> Void)? { get set }
 
 The closure returns no value and takes the following parameter:
 
-- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either: - A successful `Result`, or
-- An error that contains information about a problem encountered modifying the records.
+- A [`Result`](../../Swift/result.md) that contains either:
+
+  - A successful `Result`, or
+  - An error that contains information about a problem encountered modifying the records.
 
 The closure executes only once, and represents your final opportunity to process the operation’s results. It executes after all record progress closures and record completion closures finish. The closure executes serially with respect to the other closures of the operation.
 

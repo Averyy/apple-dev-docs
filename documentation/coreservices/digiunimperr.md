@@ -1,7 +1,8 @@
 # digiUnimpErr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Digitizer feature is unimplemented. 
 

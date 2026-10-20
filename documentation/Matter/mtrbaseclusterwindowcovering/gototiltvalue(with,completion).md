@@ -1,7 +1,8 @@
 # goToTiltValue(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func goToTiltValue(with params: MTRWindowCoveringClusterGoToTiltValueParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func goToTiltValue(with params: MTRWindowCoveringClusterGoToTiltValueParams) async throws
+```
+
+```objc
+- (void) goToTiltValueWithParams:(MTRWindowCoveringClusterGoToTiltValueParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

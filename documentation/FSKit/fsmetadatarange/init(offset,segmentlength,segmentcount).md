@@ -1,7 +1,8 @@
 # init(offset:segmentLength:segmentCount:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a metadata range with the given properties.
 
@@ -14,10 +15,14 @@ Initializes a metadata range with the given properties.
 init(offset startOffset: off_t, segmentLength: UInt64, segmentCount: UInt64)
 ```
 
+```objc
+- (instancetype) initWithOffset:(off_t) startOffset segmentLength:(uint64_t) segmentLength segmentCount:(uint64_t) segmentCount;
+```
+
 ## Parameters
 
-- `startOffset`: The start offset of the range in bytes. Ensure this value is a multiple of the corresponding resource’s [`blockSize`](fsblockdeviceresource/blocksize.md).
-- `segmentLength`: The segment length in bytes. Ensure this value is a multiple of the corresponding resource’s [`blockSize`](fsblockdeviceresource/blocksize.md).
+- `startOffset`: The start offset of the range in bytes. Ensure this value is a multiple of the corresponding resource’s [`blockSize`](../fsblockdeviceresource/blocksize.md).
+- `segmentLength`: The segment length in bytes. Ensure this value is a multiple of the corresponding resource’s [`blockSize`](../fsblockdeviceresource/blocksize.md).
 - `segmentCount`: The number of segments in the range.
 
 

@@ -1,7 +1,8 @@
 # currentTransferMessage
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,12 +14,17 @@
 var currentTransferMessage: UnsafePointer<IOUSBHostCIMessage> { get }
 ```
 
+```objc
+@property (nonatomic, readonly) const IOUSBHostCIMessage * currentTransferMessage;
+```
+
 ## See Also
 
-- [var controllerInterface: IOUSBHostControllerInterface](iousbhostciendpointstatemachine/controllerinterface.md)
-- [var deviceAddress: Int](iousbhostciendpointstatemachine/deviceaddress.md)
-- [var endpointAddress: Int](iousbhostciendpointstatemachine/endpointaddress.md)
-- [var endpointState: IOUSBHostCIEndpointState](iousbhostciendpointstatemachine/endpointstate.md)
+### Instance Properties
+- [var controllerInterface: IOUSBHostControllerInterface](./controllerinterface.md)
+- [var deviceAddress: Int](./deviceaddress.md)
+- [var endpointAddress: Int](./endpointaddress.md)
+- [var endpointState: IOUSBHostCIEndpointState](./endpointstate.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # announcementDidFinishNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that UIKit posts when the system finishes reading an announcement.
 
@@ -9,7 +10,7 @@ A notification that UIKit posts when the system finishes reading an announcement
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ nonisolated
 static let announcementDidFinishNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIAccessibilityAnnouncementDidFinishNotification;
+```
+
 #### Discussion
 
-The parameter is a dictionary with two keys, [`announcementStringValueUserInfoKey`](uiaccessibility/announcementstringvalueuserinfokey.md) and [`announcementWasSuccessfulUserInfoKey`](uiaccessibility/announcementwassuccessfuluserinfokey.md). Observe this notification using the default notification center.
+The parameter is a dictionary with two keys, [`announcementStringValueUserInfoKey`](./announcementstringvalueuserinfokey.md) and [`announcementWasSuccessfulUserInfoKey`](./announcementwassuccessfuluserinfokey.md). Observe this notification using the default notification center.
 
 ## See Also
 
-- [static let announcement: UIAccessibility.Notification](uiaccessibility/notification/announcement.md)
+### VoiceOver
+- [static let announcement: UIAccessibility.Notification](./notification/announcement.md)
   A notification that an app posts when it needs to convey an announcement to the assistive app.
-- [static let voiceOverStatusDidChangeNotification: NSNotification.Name](uiaccessibility/voiceoverstatusdidchangenotification.md)
+- [static let voiceOverStatusDidChangeNotification: NSNotification.Name](./voiceoverstatusdidchangenotification.md)
   A notification that UIKit posts when VoiceOver starts or stops.
-- [let UIAccessibilityVoiceOverStatusChanged: String](uiaccessibilityvoiceoverstatuschanged.md)
+- [let UIAccessibilityVoiceOverStatusChanged: String](../uiaccessibilityvoiceoverstatuschanged.md)
   A notification that UIKit posts when VoiceOver starts or stops.
 
 

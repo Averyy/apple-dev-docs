@@ -1,7 +1,8 @@
 # IOUSBHostControllerInterfaceCommandHandler
 
 **Framework**: IOUSBHost  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,12 +14,17 @@
 typealias IOUSBHostControllerInterfaceCommandHandler = (IOUSBHostControllerInterface, IOUSBHostCIMessage) -> Void
 ```
 
+```c
+typedef void (^)(IOUSBHostControllerInterface *, struct IOUSBHostCIMessage) IOUSBHostControllerInterfaceCommandHandler;
+```
+
 ## See Also
 
-- [typealias IOUSBHostCIDoorbell](iousbhostcidoorbell.md)
-- [typealias IOUSBHostCIPortStatus](iousbhostciportstatus.md)
-- [typealias IOUSBHostControllerInterfaceDoorbellHandler](iousbhostcontrollerinterfacedoorbellhandler.md)
-- [typealias IOUSBHostIsochronousTransactionCompletionHandler](iousbhostisochronoustransactioncompletionhandler.md)
+### Data Types
+- [typealias IOUSBHostCIDoorbell](./iousbhostcidoorbell.md)
+- [typealias IOUSBHostCIPortStatus](./iousbhostciportstatus.md)
+- [typealias IOUSBHostControllerInterfaceDoorbellHandler](./iousbhostcontrollerinterfacedoorbellhandler.md)
+- [typealias IOUSBHostIsochronousTransactionCompletionHandler](./iousbhostisochronoustransactioncompletionhandler.md)
 
 
 ---

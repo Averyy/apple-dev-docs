@@ -1,7 +1,8 @@
 # kSecTransformErrorInvalidOperation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid operation was attempted.
 
@@ -9,7 +10,7 @@ An invalid operation was attempted.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.0+
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
@@ -18,6 +19,10 @@ An invalid operation was attempted.
 
 ```swift
 var kSecTransformErrorInvalidOperation: CFIndex { get }
+```
+
+```c
+kSecTransformErrorInvalidOperation
 ```
 
 

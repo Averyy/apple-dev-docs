@@ -1,7 +1,8 @@
 # fulfill(withDateStarted:)
 
 **Framework**: CallKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports the successful execution of the action at the specified time.
 
@@ -18,9 +19,13 @@ Reports the successful execution of the action at the specified time.
 func fulfill(withDateStarted dateStarted: Date)
 ```
 
+```objc
+- (void) fulfillWithDateStarted:(NSDate *) dateStarted;
+```
+
 #### Discussion
 
-Use this method instead of [`fulfill()`](cxaction/fulfill().md) to note a time other than the current time that the call started.
+Use this method instead of [`fulfill()`](../cxaction/fulfill%28%29.md) to note a time other than the current time that the call started.
 
 ## Parameters
 

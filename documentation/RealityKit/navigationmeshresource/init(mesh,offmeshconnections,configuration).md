@@ -1,7 +1,8 @@
 # init(mesh:offMeshConnections:configuration:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Asynchronously creates a NavigationMeshResource from a MeshResource. This will take the input geometry and configuration and process it into a Navigation Mesh. The input and final geometry of the Navigation Mesh may not match, as it strives to simplify regions and match the configuration to determine what areas are walkable.
 
@@ -17,6 +18,12 @@ Asynchronously creates a NavigationMeshResource from a MeshResource. This will t
 
 ```swift
 convenience init(mesh: MeshResource, offMeshConnections: [NavigationMeshResource.OffMeshConnection] = [], configuration: NavigationMeshResource.Configuration) async throws
+```
+
+**Other overloads**:
+
+```swift
+convenience init(mesh: MeshResource, offMeshConnections: [NavigationMeshResource.OffMeshConnection] = [], configuration: NavigationMeshResource.Configuration) throws
 ```
 
 

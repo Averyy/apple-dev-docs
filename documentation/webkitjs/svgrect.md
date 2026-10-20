@@ -1,7 +1,8 @@
 # SVGRect
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGRect
 ```
 
 ## Topics
 
 ### Instance Properties
-- [height](svgrect/1631896-height.md)
-- [width](svgrect/1630313-width.md)
-- [x](svgrect/1630783-x.md)
-- [y](svgrect/1629092-y.md)
+- [height](./svgrect/api-1631896-height.md)
+- [width](./svgrect/api-1630313-width.md)
+- [x](./svgrect/api-1630783-x.md)
+- [y](./svgrect/api-1629092-y.md)
 
 
 ---

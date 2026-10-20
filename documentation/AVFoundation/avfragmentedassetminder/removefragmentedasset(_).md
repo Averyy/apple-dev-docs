@@ -1,7 +1,8 @@
 # removeFragmentedAsset(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a fragmented asset from the array of minded assets.
 
@@ -20,13 +21,18 @@ Removes a fragmented asset from the array of minded assets.
 func removeFragmentedAsset(_ asset: any AVAsset & AVFragmentMinding)
 ```
 
+```objc
+- (void) removeFragmentedAsset:(AVAsset<AVFragmentMinding> *) asset;
+```
+
 ## Parameters
 
 - `asset`: The fragmented asset to remove from the minder.
 
 ## See Also
 
-- [func addFragmentedAsset(any AVAsset & AVFragmentMinding)](avfragmentedassetminder/addfragmentedasset(_:).md)
+### Adding and removing fragmented assets
+- [func addFragmentedAsset(any AVAsset & AVFragmentMinding)](./addfragmentedasset%28_%29.md)
   Adds a fragmented asset to the array of minded assets.
 
 

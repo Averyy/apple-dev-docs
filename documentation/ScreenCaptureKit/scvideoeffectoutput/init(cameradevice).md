@@ -1,7 +1,8 @@
 # init(cameraDevice:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 init(cameraDevice device: AVCaptureDevice)
+```
+
+```objc
+- (instancetype) initWithCameraDevice:(AVCaptureDevice *) device;
 ```
 
 #### Discussion

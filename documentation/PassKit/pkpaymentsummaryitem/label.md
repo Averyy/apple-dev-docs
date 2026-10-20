@@ -1,7 +1,8 @@
 # label
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A short, localized description of the item.
 
@@ -19,6 +20,10 @@ A short, localized description of the item.
 var label: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * label;
+```
+
 #### Discussion
 
 Provide the label in title case—for example, VAT Tax, Gift Wrap and Card, or Discount.
@@ -27,11 +32,12 @@ Omit any punctuation and whitespace after the label. The label is formatted for 
 
 ## See Also
 
-- [var amount: NSDecimalNumber](pkpaymentsummaryitem/amount.md)
+### Describing summary items
+- [var amount: NSDecimalNumber](./amount.md)
   The summary item’s amount.
-- [var type: PKPaymentSummaryItemType](pkpaymentsummaryitem/type.md)
+- [var type: PKPaymentSummaryItemType](./type.md)
   The summary item’s type that indicates whether the amount is final.
-- [enum PKPaymentSummaryItemType](pkpaymentsummaryitemtype.md)
+- [enum PKPaymentSummaryItemType](../pkpaymentsummaryitemtype.md)
   Constants that describe the type of the payment summary item, such as final or pending.
 
 

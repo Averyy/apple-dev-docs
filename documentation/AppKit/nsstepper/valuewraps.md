@@ -1,12 +1,13 @@
 # valueWraps
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the stepper wraps around the minimum and maximum values.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A Boolean value that indicates whether the stepper wraps around the minimum and 
 var valueWraps: Bool { get set }
 ```
 
+```objc
+@property BOOL valueWraps;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if, when incrementing or decrementing, the value wraps around to the minimum or maximum. [`false`](https://developer.apple.com/documentation/swift/false) if the value stays pinned at the minimum or maximum. The default is [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](../../Swift/true.md) if, when incrementing or decrementing, the value wraps around to the minimum or maximum. [`false`](../../Swift/false.md) if the value stays pinned at the minimum or maximum. The default is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var autorepeat: Bool](nsstepper/autorepeat.md)
+### Specifying how the stepper responds
+- [var autorepeat: Bool](./autorepeat.md)
   A Boolean value that indicates how the stepper responds to mouse events.
 
 

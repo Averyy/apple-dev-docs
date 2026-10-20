@@ -1,7 +1,8 @@
 # properties
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configured properties of the layer renderer.
 
@@ -21,7 +22,8 @@ The layer properties include details about the layer’s textures, such as their
 
 ## See Also
 
-- [LayerRenderer.Properties](layerrenderer/properties-swift.struct.md)
+### Getting the layer renderer properties
+- [LayerRenderer.Properties](./properties-swift.struct.md)
   A type that describes the organization of the layer renderer’s textures and the relationships between those textures and the views you use for drawing.
 
 

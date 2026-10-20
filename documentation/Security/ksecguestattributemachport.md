@@ -1,7 +1,8 @@
 # kSecGuestAttributeMachPort
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Not implemented.
 
@@ -13,6 +14,10 @@ Not implemented.
 
 ```swift
 let kSecGuestAttributeMachPort: CFString
+```
+
+```c
+extern CFStringRef const kSecGuestAttributeMachPort;
 ```
 
 

@@ -1,14 +1,15 @@
 # inet_common
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 struct ifnet_traffic_descriptor_common inet_common;
 ```
 

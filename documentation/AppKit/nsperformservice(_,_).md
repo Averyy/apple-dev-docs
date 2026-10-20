@@ -1,12 +1,13 @@
 # NSPerformService(_:_:)
 
 **Framework**: AppKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Programmatically invokes a Services menu service.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Programmatically invokes a Services menu service.
 func NSPerformService(_ itemName: String, _ pboard: NSPasteboard?) -> Bool
 ```
 
+```c
+extern BOOL NSPerformService(NSString *itemName, NSPasteboard *pboard);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the service was successfully performed or [`false`](https://developer.apple.com/documentation/swift/false) if it was not.
+[`true`](../Swift/true.md) if the service was successfully performed or [`false`](../Swift/false.md) if it was not.
 
 #### Discussion
 

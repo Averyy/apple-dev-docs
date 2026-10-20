@@ -1,7 +1,8 @@
 # replace(with:value:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces an attribute with a different attribute that a key path identifies.
 
@@ -28,7 +29,8 @@ mutating func replace<U>(with keyPath: KeyPath<AttributeDynamicLookup, U>, value
 
 ## See Also
 
-- [func replace<U>(with: U.Type, value: U.Value)](attributedstring/singleattributetransformer/replace(with:value:)-6bn0e.md)
+### Replacing Attributes
+- [func replace<U>(with: U.Type, value: U.Value)](./replace%28with,value%29-6bn0e.md)
   Replaces an attribute with a different attribute.
 
 

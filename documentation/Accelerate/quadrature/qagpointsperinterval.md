@@ -1,7 +1,8 @@
 # Quadrature.QAGPointsPerInterval
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that specify the number of points per interval for the globally adaptive integrator.
 
@@ -11,7 +12,7 @@ Constants that specify the number of points per interval for the globally adapti
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -23,14 +24,14 @@ struct QAGPointsPerInterval
 ## Topics
 
 ### Instance Properties
-- [let points: Int](quadrature/qagpointsperinterval/points.md)
+- [let points: Int](./qagpointsperinterval/points.md)
 ### Type Properties
-- [static let fifteen: Quadrature.QAGPointsPerInterval](quadrature/qagpointsperinterval/fifteen.md)
-- [static let fiftyOne: Quadrature.QAGPointsPerInterval](quadrature/qagpointsperinterval/fiftyone.md)
-- [static let fortyOne: Quadrature.QAGPointsPerInterval](quadrature/qagpointsperinterval/fortyone.md)
-- [static let sixtyOne: Quadrature.QAGPointsPerInterval](quadrature/qagpointsperinterval/sixtyone.md)
-- [static let thirtyOne: Quadrature.QAGPointsPerInterval](quadrature/qagpointsperinterval/thirtyone.md)
-- [static let twentyOne: Quadrature.QAGPointsPerInterval](quadrature/qagpointsperinterval/twentyone.md)
+- [static let fifteen: Quadrature.QAGPointsPerInterval](./qagpointsperinterval/fifteen.md)
+- [static let fiftyOne: Quadrature.QAGPointsPerInterval](./qagpointsperinterval/fiftyone.md)
+- [static let fortyOne: Quadrature.QAGPointsPerInterval](./qagpointsperinterval/fortyone.md)
+- [static let sixtyOne: Quadrature.QAGPointsPerInterval](./qagpointsperinterval/sixtyone.md)
+- [static let thirtyOne: Quadrature.QAGPointsPerInterval](./qagpointsperinterval/thirtyone.md)
+- [static let twentyOne: Quadrature.QAGPointsPerInterval](./qagpointsperinterval/twentyone.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(sharedSecret:encapsulated:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a key encapsulation result.
 

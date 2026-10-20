@@ -1,7 +1,8 @@
 # progress
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A progress object that you can use to observe or cancel an installation.
 
@@ -14,9 +15,13 @@ A progress object that you can use to observe or cancel an installation.
 var progress: Progress { get }
 ```
 
+```objc
+@property (readonly) NSProgress * progress;
+```
+
 ## Mentions
 
-- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
+- [Installing macOS on a Virtual Machine](../installing-macos-on-a-virtual-machine.md)
 
 #### Discussion
 
@@ -24,9 +29,10 @@ Canceling the progress object before starting an installation raises an exceptio
 
 ## See Also
 
-- [var restoreImageURL: URL](vzmacosinstaller/restoreimageurl.md)
+### Getting Information About an Installation
+- [var restoreImageURL: URL](./restoreimageurl.md)
   The restore image URL used to initialize this installer.
-- [var virtualMachine: VZVirtualMachine](vzmacosinstaller/virtualmachine.md)
+- [var virtualMachine: VZVirtualMachine](./virtualmachine.md)
   The virtual machine used to initialize this installer.
 
 

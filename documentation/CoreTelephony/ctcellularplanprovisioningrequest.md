@@ -1,7 +1,8 @@
 # CTCellularPlanProvisioningRequest
 
 **Framework**: Core Telephony  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request specifying an eSIM to download and install.
 
@@ -16,51 +17,56 @@ A request specifying an eSIM to download and install.
 class CTCellularPlanProvisioningRequest
 ```
 
+```objc
+@interface CTCellularPlanProvisioningRequest : NSObject
+```
+
 #### Overview
 
-You must set the [`address`](ctcellularplanprovisioningrequest/address.md) property for the request to be valid. All other properties are optional.
+You must set the [`address`](./ctcellularplanprovisioningrequest/address.md) property for the request to be valid. All other properties are optional.
 
 This class is only available to carrier apps with suitable entitlements.
 
 ## Topics
 
 ### Specifying Request Properties
-- [var address: String](ctcellularplanprovisioningrequest/address.md)
+- [var address: String](./ctcellularplanprovisioningrequest/address.md)
   The address of the carrier network’s eSIM server.
-- [var confirmationCode: String?](ctcellularplanprovisioningrequest/confirmationcode.md)
+- [var confirmationCode: String?](./ctcellularplanprovisioningrequest/confirmationcode.md)
   The provisioning request’s confirmation code, provided by the network operator when initiating an eSIM download.
-- [var eid: String?](ctcellularplanprovisioningrequest/eid.md)
+- [var eid: String?](./ctcellularplanprovisioningrequest/eid.md)
   The provisioning request’s eUICC identifier (EID).
-- [var iccid: String?](ctcellularplanprovisioningrequest/iccid.md)
+- [var iccid: String?](./ctcellularplanprovisioningrequest/iccid.md)
   The provisioning request’s Integrated Circuit Card Identifier (ICCID).
-- [var matchingID: String?](ctcellularplanprovisioningrequest/matchingid.md)
+- [var matchingID: String?](./ctcellularplanprovisioningrequest/matchingid.md)
   The provisioning request’s matching identifier (MatchingID).
-- [var oid: String?](ctcellularplanprovisioningrequest/oid.md)
+- [var oid: String?](./ctcellularplanprovisioningrequest/oid.md)
   The provisioning request’s Object Identifier (OID).
 ### Initializers
-- [init?(coder: NSCoder)](ctcellularplanprovisioningrequest/init(coder:).md)
+- [init?(coder: NSCoder)](./ctcellularplanprovisioningrequest/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class CTCellularPlanProvisioning](ctcellularplanprovisioning.md)
+### eSIM
+- [class CTCellularPlanProvisioning](./ctcellularplanprovisioning.md)
   An object you use to download and install a carrier eSIM.
-- [class CTCellularPlanProperties](ctcellularplanproperties.md)
+- [class CTCellularPlanProperties](./ctcellularplanproperties.md)
   An object you use for an eSIM.
-- [enum CTCellularPlanCapability](ctcellularplancapability.md)
+- [enum CTCellularPlanCapability](./ctcellularplancapability.md)
   The type of cellular plan available for an eSIM.
 
 

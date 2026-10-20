@@ -1,7 +1,8 @@
 # navigationBar(_:didPop:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that an item was popped from the navigation bar.
 
@@ -9,13 +10,17 @@ Tells the delegate that an item was popped from the navigation bar.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 optional func navigationBar(_ navigationBar: UINavigationBar, didPop item: UINavigationItem)
+```
+
+```objc
+- (void) navigationBar:(UINavigationBar *) navigationBar didPopItem:(UINavigationItem *) item;
 ```
 
 #### Discussion
@@ -29,7 +34,8 @@ If animating the pop operation, this method is invoked after the animation ends;
 
 ## See Also
 
-- [func navigationBar(UINavigationBar, shouldPop: UINavigationItem) -> Bool](uinavigationbardelegate/navigationbar(_:shouldpop:).md)
+### Popping items
+- [func navigationBar(UINavigationBar, shouldPop: UINavigationItem) -> Bool](./navigationbar%28_,shouldpop%29.md)
   Returns a Boolean value indicating whether the navigation bar should pop an item.
 
 

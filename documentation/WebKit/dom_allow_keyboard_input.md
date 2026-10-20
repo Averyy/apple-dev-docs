@@ -1,15 +1,20 @@
 # DOM_ALLOW_KEYBOARD_INPUT
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var DOM_ALLOW_KEYBOARD_INPUT: Int { get }
+```
+
+```c
+DOM_ALLOW_KEYBOARD_INPUT
 ```
 
 

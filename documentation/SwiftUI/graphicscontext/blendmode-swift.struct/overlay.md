@@ -1,7 +1,8 @@
 # overlay
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mode that either multiplies or screens the source image samples with the background image samples, depending on the background color.
 
@@ -26,9 +27,10 @@ Drawing in this mode overlays the existing image samples while preserving the hi
 
 ## See Also
 
-- [static var softLight: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/softlight.md)
+### Adding contrast
+- [static var softLight: GraphicsContext.BlendMode](./softlight.md)
   A mode that either darkens or lightens colors, depending on the source image sample color.
-- [static var hardLight: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/hardlight.md)
+- [static var hardLight: GraphicsContext.BlendMode](./hardlight.md)
   A mode that either multiplies or screens colors, depending on the source image sample color.
 
 

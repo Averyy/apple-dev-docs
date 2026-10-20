@@ -1,14 +1,15 @@
 # poller
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 static IOUserNetworkPacketPoller * poller(OSObject *target, IODispatchQueue *queue, PollAction pollAction, EventAction eventAction, IOOptionBits options, void *refCon);
 ```
 

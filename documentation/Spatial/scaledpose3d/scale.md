@@ -1,18 +1,19 @@
 # scale
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scaled pose’s scale.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,19 +21,24 @@ The scaled pose’s scale.
 var scale: Double
 ```
 
+```c
+double scale;
+```
+
 ## See Also
 
-- [var matrix: simd_double4x4](scaledpose3d/matrix.md)
+### Inspecting a 3D scaled pose’s properties
+- [var matrix: simd_double4x4](./matrix.md)
   The scaled pose’s underlying matrix.
-- [var position: Point3D](scaledpose3d/position.md)
+- [var position: Point3D](./position.md)
   The scaled pose’s position.
-- [var rotation: Rotation3D](scaledpose3d/rotation.md)
+- [var rotation: Rotation3D](./rotation.md)
   The scaled pose’s rotation.
-- [var inverse: ScaledPose3D](scaledpose3d/inverse.md)
+- [var inverse: ScaledPose3D](./inverse.md)
   The scaled pose’s inverse.
-- [var customMirror: Mirror](scaledpose3d/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the notification.
-- [static var identity: ScaledPose3D](scaledpose3d/identity.md)
+- [static var identity: ScaledPose3D](./identity.md)
   The identity scaled pose.
 
 

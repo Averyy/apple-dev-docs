@@ -1,7 +1,8 @@
 # USDLayer.TimeCode
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A time value in USD, typically used for animation keyframe times.
 
@@ -26,38 +27,39 @@ Wraps a `Double` but is treated as a distinct schema-registered value type by US
 ## Topics
 
 ### Initializers
-- [init(Double)](usdlayer/timecode/init(_:).md)
+- [init(Double)](./timecode/init%28_%29.md)
   Creates a time code at the given time.
 ### Instance Properties
-- [var value: Double](usdlayer/timecode/value.md)
+- [var value: Double](./timecode/value.md)
   The underlying time value as a Double.
 ### Type Properties
-- [static let `default`: USDLayer.TimeCode](usdlayer/timecode/default.md)
+- [static let `default`: USDLayer.TimeCode](./timecode/default.md)
   The default time code (0.0).
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [USDPrim.Attribute.Value](usdprim/attribute/value.md)
-- [USDValueProtocol](usdvalueprotocol.md)
+- [Comparable](../../Swift/comparable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByFloatLiteral](../../Swift/expressiblebyfloatliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [USDPrim.Attribute.Value](../usdprim/attribute/value.md)
+- [USDValueProtocol](../usdvalueprotocol.md)
 
 ## See Also
 
-- [var startTimeCode: USDLayer.TimeCode?](usdlayer/starttimecode.md)
+### Setting the time range
+- [var startTimeCode: USDLayer.TimeCode?](./starttimecode.md)
   The first time code in the layer’s animation range. `nil` if not authored.
-- [var endTimeCode: USDLayer.TimeCode?](usdlayer/endtimecode.md)
+- [var endTimeCode: USDLayer.TimeCode?](./endtimecode.md)
   The last time code in the layer’s animation range. `nil` if not authored.
-- [var timeCodesPerSecond: Double?](usdlayer/timecodespersecond.md)
+- [var timeCodesPerSecond: Double?](./timecodespersecond.md)
   The rate at which time codes advance per second. `nil` if not authored.
-- [USDLayer.TimeOffset](usdlayer/timeoffset.md)
+- [USDLayer.TimeOffset](./timeoffset.md)
   A time transformation applied when composing layers.
 
 

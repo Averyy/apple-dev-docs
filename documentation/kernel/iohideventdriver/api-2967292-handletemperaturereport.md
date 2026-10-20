@@ -1,14 +1,15 @@
 # handleTemperatureReport
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.14+ - Deprecated in 10.15.1
 
 ## Declaration
 
-```swift
+```c
 void handleTemperatureReport(AbsoluteTime timeStamp, UInt32 reportID);
 ```
 

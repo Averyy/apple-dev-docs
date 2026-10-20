@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of inference value held by this async value.
 
@@ -20,9 +21,10 @@ final var kind: InferenceValue.Kind { get }
 
 ## See Also
 
-- [var ndArray: NDArray?](inferencefunction/asyncvalue/ndarray.md)
+### Accessing an async value
+- [var ndArray: NDArray?](./ndarray.md)
   Waits for any pending write access on the underlying ndArray to complete, then returns it.
-- [var pixelBuffer: CVReadOnlyPixelBuffer?](inferencefunction/asyncvalue/pixelbuffer.md)
+- [var pixelBuffer: CVReadOnlyPixelBuffer?](./pixelbuffer.md)
   Waits for any pending write access on the underlying pixel buffer to complete, then returns it.
 
 

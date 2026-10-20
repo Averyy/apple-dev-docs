@@ -1,7 +1,8 @@
 # CNLabelContactRelationGreatGrandmother
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The label for the contact’s great-grandmother.
 
@@ -19,37 +20,42 @@ The label for the contact’s great-grandmother.
 let CNLabelContactRelationGreatGrandmother: String
 ```
 
+```c
+extern NSString * const CNLabelContactRelationGreatGrandmother;
+```
+
 ## See Also
 
-- [let CNLabelContactRelationAunt: String](cnlabelcontactrelationaunt.md)
+### Getting extended family relationship labels
+- [let CNLabelContactRelationAunt: String](./cnlabelcontactrelationaunt.md)
   The label for the contact’s aunt.
-- [let CNLabelContactRelationAuntFathersBrothersWife: String](cnlabelcontactrelationauntfathersbrotherswife.md)
+- [let CNLabelContactRelationAuntFathersBrothersWife: String](./cnlabelcontactrelationauntfathersbrotherswife.md)
   The label for the contact’s father’s brother’s wife.
-- [let CNLabelContactRelationAuntFathersElderBrothersWife: String](cnlabelcontactrelationauntfatherselderbrotherswife.md)
+- [let CNLabelContactRelationAuntFathersElderBrothersWife: String](./cnlabelcontactrelationauntfatherselderbrotherswife.md)
   The label for the contact’s father’s elder brother’s wife.
-- [let CNLabelContactRelationAuntFathersElderSister: String](cnlabelcontactrelationauntfatherseldersister.md)
+- [let CNLabelContactRelationAuntFathersElderSister: String](./cnlabelcontactrelationauntfatherseldersister.md)
   The label for the contact’s father’s elder sister.
-- [let CNLabelContactRelationAuntFathersSister: String](cnlabelcontactrelationauntfatherssister.md)
+- [let CNLabelContactRelationAuntFathersSister: String](./cnlabelcontactrelationauntfatherssister.md)
   The label for the contact’s father’s sister.
-- [let CNLabelContactRelationAuntFathersYoungerBrothersWife: String](cnlabelcontactrelationauntfathersyoungerbrotherswife.md)
+- [let CNLabelContactRelationAuntFathersYoungerBrothersWife: String](./cnlabelcontactrelationauntfathersyoungerbrotherswife.md)
   The label for the contact’s father’s younger brother’s wife.
-- [let CNLabelContactRelationAuntFathersYoungerSister: String](cnlabelcontactrelationauntfathersyoungersister.md)
+- [let CNLabelContactRelationAuntFathersYoungerSister: String](./cnlabelcontactrelationauntfathersyoungersister.md)
   The label for the contact’s father’s younger sister.
-- [let CNLabelContactRelationAuntMothersBrothersWife: String](cnlabelcontactrelationauntmothersbrotherswife.md)
+- [let CNLabelContactRelationAuntMothersBrothersWife: String](./cnlabelcontactrelationauntmothersbrotherswife.md)
   The label for the contact’s mother’s brother’s wife.
-- [let CNLabelContactRelationAuntMothersElderSister: String](cnlabelcontactrelationauntmotherseldersister.md)
+- [let CNLabelContactRelationAuntMothersElderSister: String](./cnlabelcontactrelationauntmotherseldersister.md)
   The label for the contact’s mother’s elder sister.
-- [let CNLabelContactRelationAuntMothersSister: String](cnlabelcontactrelationauntmotherssister.md)
+- [let CNLabelContactRelationAuntMothersSister: String](./cnlabelcontactrelationauntmotherssister.md)
   The label for the contact’s mother’s sister.
-- [let CNLabelContactRelationAuntMothersYoungerSister: String](cnlabelcontactrelationauntmothersyoungersister.md)
+- [let CNLabelContactRelationAuntMothersYoungerSister: String](./cnlabelcontactrelationauntmothersyoungersister.md)
   The label for the contact’s mother’s younger sister.
-- [let CNLabelContactRelationAuntParentsElderSister: String](cnlabelcontactrelationauntparentseldersister.md)
+- [let CNLabelContactRelationAuntParentsElderSister: String](./cnlabelcontactrelationauntparentseldersister.md)
   The label for the contact’s parent’s elder sister.
-- [let CNLabelContactRelationAuntParentsSister: String](cnlabelcontactrelationauntparentssister.md)
+- [let CNLabelContactRelationAuntParentsSister: String](./cnlabelcontactrelationauntparentssister.md)
   The label for the contact’s parent’s sister.
-- [let CNLabelContactRelationAuntParentsYoungerSister: String](cnlabelcontactrelationauntparentsyoungersister.md)
+- [let CNLabelContactRelationAuntParentsYoungerSister: String](./cnlabelcontactrelationauntparentsyoungersister.md)
   The label for the contact’s parent’s younger sister.
-- [let CNLabelContactRelationCousin: String](cnlabelcontactrelationcousin.md)
+- [let CNLabelContactRelationCousin: String](./cnlabelcontactrelationcousin.md)
   The label for the contact’s cousin.
 
 

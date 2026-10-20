@@ -1,7 +1,8 @@
 # init(presentation:unitsStyle:locale:calendar:capitalizationContext:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a relative date format style with the specified presentation, units, locale, calendar, and capitalization context.
 

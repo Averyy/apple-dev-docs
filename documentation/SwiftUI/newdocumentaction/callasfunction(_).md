@@ -1,7 +1,8 @@
 # callAsFunction(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a new document window.
 
@@ -15,15 +16,27 @@ Presents a new document window.
 @preconcurrency func callAsFunction<D>(_ newDocument: @autoclosure @escaping @Sendable () -> D) where D : FileDocument
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency func callAsFunction<D>(_ newDocument: @autoclosure @escaping @Sendable () -> sending D) where D : ReadableDocument
+```
+
+```swift
+@MainActor
+@preconcurrency func callAsFunction<D>(_ newDocument: @escaping @Sendable () -> D) where D : ReferenceFileDocument
+```
+
 #### Discussion
 
-Don’t call this method directly. SwiftUI calls it when you call the [`newDocument`](environmentvalues/newdocument.md) action:
+Don’t call this method directly. SwiftUI calls it when you call the [`newDocument`](../environmentvalues/newdocument.md) action:
 
 ```swift
 newDocument(TextDocument(text: selectedText))
 ```
 
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
+For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [Methods with Special Names](https://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
 
 ## Parameters
 
@@ -31,9 +44,10 @@ For information about how Swift uses the `callAsFunction()` method to simplify c
 
 ## See Also
 
-- [func callAsFunction(contentType: UTType)](newdocumentaction/callasfunction(contenttype:).md)
+### Calling the action
+- [func callAsFunction(contentType: UTType)](./callasfunction%28contenttype%29.md)
   Presents a new document window.
-- [func callAsFunction(contentType: UTType, prepareDocument: (ModelContext) -> Void)](newdocumentaction/callasfunction(contenttype:preparedocument:).md)
+- [func callAsFunction(contentType: UTType, prepareDocument: (ModelContext) -> Void)](./callasfunction%28contenttype,preparedocument%29.md)
   Presents a new document window with preset contents.
 
 

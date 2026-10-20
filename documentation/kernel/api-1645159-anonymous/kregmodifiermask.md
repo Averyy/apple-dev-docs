@@ -1,14 +1,15 @@
 # kRegModifierMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kRegModifierMask = (RegModifiers)0xFF000000
 ```
 

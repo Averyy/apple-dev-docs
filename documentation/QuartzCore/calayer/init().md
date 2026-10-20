@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized `CALayer` object.
 
@@ -19,6 +20,10 @@ Returns an initialized `CALayer` object.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 An initialized `CALayer` object.
@@ -29,9 +34,10 @@ This is the designated initializer for layer objects that are not in the present
 
 ## See Also
 
-- [init(layer: Any)](calayer/init(layer:).md)
+### Creating a layer
+- [init(layer: Any)](./init%28layer%29.md)
   Override to copy or initialize custom fields of the specified layer.
-- [init(remoteClientId: UInt32)](calayer/init(remoteclientid:).md)
+- [init(remoteClientId: UInt32)](./init%28remoteclientid%29.md)
   Initializes a layer with a remote client ID.
 
 

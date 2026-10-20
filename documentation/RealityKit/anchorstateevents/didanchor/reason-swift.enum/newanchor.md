@@ -1,7 +1,8 @@
 # AnchorStateEvents.DidAnchor.Reason.newAnchor
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Entity is anchored to a new anchor
 

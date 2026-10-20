@@ -1,7 +1,8 @@
 # readAttributeDescription(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeDescription(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeDescription() async throws -> String
+```
+
+```objc
+- (void) readAttributeDescriptionWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

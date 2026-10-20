@@ -1,7 +1,8 @@
 # removeVariantSet(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the variant set with the given name.
 

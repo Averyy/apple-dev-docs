@@ -1,7 +1,8 @@
 # init(data:)
 
 **Framework**: Natural Language  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a gazetteer from a data instance.
 
@@ -20,17 +21,22 @@ Creates a gazetteer from a data instance.
 init(data: Data) throws
 ```
 
+```objc
+- (instancetype) initWithData:(NSData *) data error:(NSError **) error;
+```
+
 ## Parameters
 
 - `data`: A gazetteer contained in a data instance.
 
 ## See Also
 
-- [init(contentsOf: URL) throws](nlgazetteer/init(contentsof:).md)
+### Creating a Gazetteer
+- [init(contentsOf: URL) throws](./init%28contentsof%29.md)
   Creates a Natural Language gazetteer from a model created with the Create ML framework.
-- [init(dictionary: [String : [String]], language: NLLanguage?) throws](nlgazetteer/init(dictionary:language:).md)
+- [init(dictionary: [String : [String]], language: NLLanguage?) throws](./init%28dictionary,language%29.md)
   Creates a gazetteer from a set of labels for terms represented by a dictionary.
-- [class func write([String : [String]], language: NLLanguage?, to: URL) throws](nlgazetteer/write(_:language:to:).md)
+- [class func write([String : [String]], language: NLLanguage?, to: URL) throws](./write%28_,language,to%29.md)
   Creates a gazetteer from a set of labels for terms represented by a dictionary and saves the gazetteer to a file.
 
 

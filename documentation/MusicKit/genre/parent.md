@@ -1,7 +1,8 @@
 # parent
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parent genre, if any.
 

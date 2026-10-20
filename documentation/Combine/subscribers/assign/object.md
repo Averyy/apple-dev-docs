@@ -1,7 +1,8 @@
 # object
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that contains the property to assign.
 
@@ -22,11 +23,12 @@ final var object: Root? { get }
 
 #### Discussion
 
-The subscriber holds a strong reference to this object until the upstream publisher calls [`receive(completion:)`](subscriber/receive(completion:).md), at which point the subscriber sets this property to `nil`.
+The subscriber holds a strong reference to this object until the upstream publisher calls [`receive(completion:)`](../../subscriber/receive%28completion%29.md), at which point the subscriber sets this property to `nil`.
 
 ## See Also
 
-- [let keyPath: ReferenceWritableKeyPath<Root, Input>](subscribers/assign/keypath.md)
+### Inspecting the assigned property
+- [let keyPath: ReferenceWritableKeyPath<Root, Input>](./keypath.md)
   The key path that indicates the property to assign.
 
 

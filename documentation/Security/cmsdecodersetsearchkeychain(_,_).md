@@ -1,12 +1,13 @@
 # CMSDecoderSetSearchKeychain(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Specifies the keychains to search for intermediate certificates to be used in verifying a signed message’s signer certificates.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.13 (renamed: SecKeychainSetSearchList(_:))
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Specifies the keychains to search for intermediate certificates to be used in ve
 func CMSDecoderSetSearchKeychain(_ cmsDecoder: CMSDecoder, _ keychainOrArray: CFTypeRef) -> OSStatus
 ```
 
+```c
+OSStatus CMSDecoderSetSearchKeychain(CMSDecoderRef cmsDecoder, CFTypeRef keychainOrArray);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
@@ -31,7 +36,8 @@ If you do call this function, you must call it before you call the `CMSDecoderCo
 
 ## See Also
 
-- [func CMSDecoderCreate(UnsafeMutablePointer<CMSDecoder?>) -> OSStatus](cmsdecodercreate(_:).md)
+### Related Documentation
+- [func CMSDecoderCreate(UnsafeMutablePointer<CMSDecoder?>) -> OSStatus](./cmsdecodercreate%28_%29.md)
   Creates a CMSDecoder reference.
 
 

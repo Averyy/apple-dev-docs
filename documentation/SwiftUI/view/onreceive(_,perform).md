@@ -1,7 +1,8 @@
 # onReceive(_:perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform when this view detects data emitted by the given publisher.
 
@@ -32,7 +33,8 @@ A view that triggers `action` when `publisher` emits an event.
 
 ## See Also
 
-- [func onChange(of:initial:_:)](view/onchange(of:initial:_:).md)
+### Responding to data changes
+- [func onChange(of:initial:_:)](./onchange%28of,initial,_%29.md)
   Adds a modifier for this view that fires an action when a specific value changes.
 
 

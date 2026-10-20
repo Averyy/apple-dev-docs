@@ -1,7 +1,8 @@
 # init(model:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a model container to use with an image analysis request based on the model you provide.
 
@@ -19,21 +20,26 @@ Creates a model container to use with an image analysis request based on the mod
 convenience init(model: VNCoreMLModel)
 ```
 
+```objc
+- (instancetype) initWithModel:(VNCoreMLModel *) model;
+```
+
 #### Discussion
 
-Initialization can fail if the [`Core ML`](https://developer.apple.com/documentation/coreml) model you provide isn’t supported in Vision, such as if the model doesn’t accept an image as input.
+Initialization can fail if the [Core ML](../../CoreML/CoreML.md) model you provide isn’t supported in Vision, such as if the model doesn’t accept an image as input.
 
 ## Parameters
 
-- `model`: The [`Core ML`](https://developer.apple.com/documentation/coreml) model on which to base the Vision request.
+- `model`: The [Core ML](../../CoreML/CoreML.md) model on which to base the Vision request.
 
 ## See Also
 
-- [init(model: VNCoreMLModel, completionHandler: VNRequestCompletionHandler?)](vncoremlrequest/init(model:completionhandler:).md)
+### Initializing with a Core ML Model
+- [init(model: VNCoreMLModel, completionHandler: VNRequestCompletionHandler?)](./init%28model,completionhandler%29.md)
   Creates a model container to use with an image analysis request based on the model you provide, with an optional completion handler.
-- [var model: VNCoreMLModel](vncoremlrequest/model.md)
+- [var model: VNCoreMLModel](./model.md)
   The model to base the image analysis request on.
-- [class VNCoreMLModel](vncoremlmodel.md)
+- [class VNCoreMLModel](../vncoremlmodel.md)
   A container for the model to use with Vision requests.
 
 

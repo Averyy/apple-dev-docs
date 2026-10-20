@@ -1,7 +1,8 @@
 # kVTDecompressionPropertyKey_NumberOfFramesBeingDecoded
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Returns the number of frames currently being decoded.
 
@@ -19,15 +20,20 @@ Returns the number of frames currently being decoded.
 let kVTDecompressionPropertyKey_NumberOfFramesBeingDecoded: CFString
 ```
 
+```c
+extern CFStringRef const kVTDecompressionPropertyKey_NumberOfFramesBeingDecoded;
+```
+
 #### Discussion
 
 This number may decrease asynchronously as frames are output.
 
 ## See Also
 
-- [let kVTDecompressionPropertyKey_MaxOutputPresentationTimeStampOfFramesBeingDecoded: CFString](kvtdecompressionpropertykey_maxoutputpresentationtimestampofframesbeingdecoded.md)
+### Asynchronous State
+- [let kVTDecompressionPropertyKey_MaxOutputPresentationTimeStampOfFramesBeingDecoded: CFString](./kvtdecompressionpropertykey_maxoutputpresentationtimestampofframesbeingdecoded.md)
   The maximum output presentation timestamp of the frames currently being decoded.
-- [let kVTDecompressionPropertyKey_MinOutputPresentationTimeStampOfFramesBeingDecoded: CFString](kvtdecompressionpropertykey_minoutputpresentationtimestampofframesbeingdecoded.md)
+- [let kVTDecompressionPropertyKey_MinOutputPresentationTimeStampOfFramesBeingDecoded: CFString](./kvtdecompressionpropertykey_minoutputpresentationtimestampofframesbeingdecoded.md)
   The minimum output presentation timestamp of the frames currently being decoded.
 
 

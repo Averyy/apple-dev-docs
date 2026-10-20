@@ -1,7 +1,8 @@
 # init(namePrefix:givenName:middleName:familyName:nameSuffix:nickname:phoneticRepresentation:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+

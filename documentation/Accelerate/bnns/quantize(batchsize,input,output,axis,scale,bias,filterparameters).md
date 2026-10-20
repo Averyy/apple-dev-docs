@@ -1,7 +1,8 @@
 # quantize(batchSize:input:output:axis:scale:bias:filterParameters:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Quantizes the input tensor and writes the result to the output tensor.
 
@@ -11,8 +12,10 @@ Quantizes the input tensor and writes the result to the output tensor.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -72,15 +75,17 @@ static func quantize() {
 
 ## See Also
 
-- [var BNNSQuantizerFunctionQuantize: BNNSQuantizerFunction](bnnsquantizerfunctionquantize.md)
+### Related Documentation
+- [var BNNSQuantizerFunctionQuantize: BNNSQuantizerFunction](../bnnsquantizerfunctionquantize.md)
   A constant that specifes conversion to a lower precision.
-- [static func dequantize(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axis: Int?, scale: BNNSNDArrayDescriptor?, bias: BNNSNDArrayDescriptor?, filterParameters: BNNSFilterParameters?) throws](bnns/dequantize(batchsize:input:output:axis:scale:bias:filterparameters:).md)
+### Quantization functions
+- [static func dequantize(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axis: Int?, scale: BNNSNDArrayDescriptor?, bias: BNNSNDArrayDescriptor?, filterParameters: BNNSFilterParameters?) throws](./dequantize%28batchsize,input,output,axis,scale,bias,filterparameters%29.md)
   Dequantizes the input tensor and writes the result to the output tensor.
-- [struct BNNSQuantizerFunction](bnnsquantizerfunction.md)
+- [struct BNNSQuantizerFunction](../bnnsquantizerfunction.md)
   Constants that describe quantization functions.
-- [struct BNNSLayerParametersQuantization](bnnslayerparametersquantization.md)
+- [struct BNNSLayerParametersQuantization](../bnnslayerparametersquantization.md)
   A structure that contains the parameters of a quantization layer.
-- [func BNNSDirectApplyQuantizer(UnsafePointer<BNNSLayerParametersQuantization>, UnsafePointer<BNNSFilterParameters>?, Int, Int, Int) -> Int32](bnnsdirectapplyquantizer(_:_:_:_:_:).md)
+- [func BNNSDirectApplyQuantizer(UnsafePointer<BNNSLayerParametersQuantization>, UnsafePointer<BNNSFilterParameters>?, Int, Int, Int) -> Int32](../bnnsdirectapplyquantizer%28_,_,_,_,_%29.md)
   Applies a quantization layer directly to two input matrices.
 
 

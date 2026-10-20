@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new, empty array.
 
@@ -36,13 +37,14 @@ print(emptyArray.isEmpty)
 
 ## See Also
 
-- [init<S>(S)](array/init(_:)-1ip9h.md)
+### Creating an Array
+- [init<S>(S)](./init%28_%29-1ip9h.md)
   Creates a new instance of a collection containing the elements of a sequence.
-- [init<S>(S)](array/init(_:)-236cl.md)
+- [init<S>(S)](./init%28_%29-236cl.md)
   Creates an array containing the elements of a sequence.
-- [init(repeating: Element, count: Int)](array/init(repeating:count:).md)
+- [init(repeating: Element, count: Int)](./init%28repeating,count%29.md)
   Creates a new array containing the specified number of a single, repeated value.
-- [init<E>(unsafeUninitializedCapacity: Int, initializingWith: (inout UnsafeMutableBufferPointer<Element>, inout Int) throws(E) -> Void) throws(E)](array/init(unsafeuninitializedcapacity:initializingwith:).md)
+- [init<E>(unsafeUninitializedCapacity: Int, initializingWith: (inout UnsafeMutableBufferPointer<Element>, inout Int) throws(E) -> Void) throws(E)](./init%28unsafeuninitializedcapacity,initializingwith%29.md)
   Creates an array with the specified capacity, and then calls the given closure with a buffer covering the array’s uninitialized memory.
 
 

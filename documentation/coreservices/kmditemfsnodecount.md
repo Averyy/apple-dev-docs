@@ -1,7 +1,8 @@
 # kMDItemFSNodeCount
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Number of files in a directory. A CFNumber.
 
@@ -12,6 +13,10 @@ Number of files in a directory. A CFNumber.
 
 ```swift
 let kMDItemFSNodeCount: CFString!
+```
+
+```c
+const CFStringRef kMDItemFSNodeCount;
 ```
 
 

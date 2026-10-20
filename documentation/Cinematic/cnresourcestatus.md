@@ -1,7 +1,8 @@
 # CNResourceStatus
 
 **Framework**: Cinematic  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -16,29 +17,33 @@
 enum CNResourceStatus
 ```
 
+```c
+enum CNResourceStatus : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [CNResourceStatus.needsDownloading](cnresourcestatus/needsdownloading.md)
+- [CNResourceStatus.needsDownloading](./cnresourcestatus/needsdownloading.md)
   Configuration is supported but requires download of resources
-- [CNResourceStatus.ready](cnresourcestatus/ready.md)
+- [CNResourceStatus.ready](./cnresourcestatus/ready.md)
   Configuration is supported
-- [CNResourceStatus.unsupportedAsset](cnresourcestatus/unsupportedasset.md)
+- [CNResourceStatus.unsupportedAsset](./cnresourcestatus/unsupportedasset.md)
   The given asset is unsupported on the current build
-- [CNResourceStatus.unsupportedDevice](cnresourcestatus/unsupporteddevice.md)
+- [CNResourceStatus.unsupportedDevice](./cnresourcestatus/unsupporteddevice.md)
   The device lacks hardware capabilities for the given configuration
 ### Initializers
-- [init?(rawValue: Int)](cnresourcestatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cnresourcestatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

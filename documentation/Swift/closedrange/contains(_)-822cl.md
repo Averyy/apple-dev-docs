@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the given closed range is contained within this closed range.
 
@@ -20,6 +21,8 @@ Returns a Boolean value indicating whether the given closed range is contained w
 func contains(_ other: ClosedRange<Bound>) -> Bool
 ```
 
+Available when `Bound` conforms to `Comparable`.
+
 #### Return Value
 
 `true` if `other` is wholly contained within this closed range; otherwise, `false`.
@@ -35,7 +38,7 @@ range.contains(2...10)       // true
 range.contains(2...12)       // false
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

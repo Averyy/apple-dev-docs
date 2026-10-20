@@ -1,7 +1,8 @@
 # updateRecurrence(_:completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the recurrence interval.
 
@@ -14,21 +15,32 @@ Updates the recurrence interval.
 ## Declaration
 
 ```swift
+func updateRecurrence(_ recurrence: DateComponents?, completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func updateRecurrence(_ recurrence: DateComponents?) async throws
+```
+
+```objc
+- (void) updateRecurrence:(NSDateComponents *) recurrence completionHandler:(void (^)(NSError *error)) completion;
 ```
 
 #### Discussion
 
-See [`recurrence`](hmtimertrigger/recurrence.md) for a discussion of how the recurrence value is used.
+See [`recurrence`](./recurrence.md) for a discussion of how the recurrence value is used.
 
 ## Parameters
 
 - `recurrence`: The new recurrence interval.
-- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `completion`: The block executed after the request is processed.
+
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [var recurrence: DateComponents?](hmtimertrigger/recurrence.md)
+### Using recurrence
+- [var recurrence: DateComponents?](./recurrence.md)
   The interval on which to repeat firing the trigger.
 
 

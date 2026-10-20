@@ -1,16 +1,18 @@
 # NSMenuItem
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 Text for a Services menu item.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `NSMenuItem` (Menu)
+- **Type**: dictionary
 
 #### Discussion
 
@@ -22,13 +24,14 @@ The dictionary key is `default` with a string value.
 
 ## See Also
 
-- [NSKeyEquivalent](information-property-list/nsservices/nskeyequivalent.md)
+### Invocation
+- [NSKeyEquivalent](./nskeyequivalent.md)
   A keyboard shortcut that invokes the service menu command.
-- [NSMessage](information-property-list/nsservices/nsmessage.md)
+- [NSMessage](./nsmessage.md)
   An instance method that invokes the service.
-- [NSPortName](information-property-list/nsservices/nsportname.md)
+- [NSPortName](./nsportname.md)
   The port that the service monitors for incoming requests.
-- [NSTimeout](information-property-list/nsservices/nstimeout.md)
+- [NSTimeout](./nstimeout.md)
   The amount of time, in milliseconds, that the system waits for a response from the service.
 
 

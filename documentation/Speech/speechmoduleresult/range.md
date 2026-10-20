@@ -2,6 +2,7 @@
 
 **Framework**: Speech  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The audio input range that this result applies to.

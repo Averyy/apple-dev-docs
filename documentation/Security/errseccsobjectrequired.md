@@ -1,7 +1,8 @@
 # errSecCSObjectRequired
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A required pointer argument was null.
 
@@ -13,6 +14,10 @@ A required pointer argument was null.
 
 ```swift
 var errSecCSObjectRequired: OSStatus { get }
+```
+
+```c
+errSecCSObjectRequired
 ```
 
 

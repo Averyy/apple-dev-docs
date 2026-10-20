@@ -1,7 +1,8 @@
 # pause()
 
 **Framework**: Nearby Interaction  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops sending distance and direction updates to the peer.
 
@@ -17,17 +18,22 @@ Stops sending distance and direction updates to the peer.
 func pause()
 ```
 
+```objc
+- (void) pause;
+```
+
 #### Discussion
 
-To resume a paused session, the app calls [`run(_:)`](nisession/run(_:).md), passing in the session’s configuration.
+To resume a paused session, the app calls [`run(_:)`](./run%28_%29.md), passing in the session’s configuration.
 
-If an app pauses the session for too long, the peer receives [`session(_:didRemove:reason:)`](nisessiondelegate/session(_:didremove:reason:).md) callback with the [`NINearbyObject.RemovalReason.timeout`](ninearbyobject/removalreason/timeout.md) reason.
+If an app pauses the session for too long, the peer receives [`session(_:didRemove:reason:)`](../nisessiondelegate/session%28_,didremove,reason%29.md) callback with the [`NINearbyObject.RemovalReason.timeout`](../ninearbyobject/removalreason/timeout.md) reason.
 
 ## See Also
 
-- [var delegate: (any NISessionDelegate)?](nisession/delegate.md)
+### Managing life cycle
+- [var delegate: (any NISessionDelegate)?](./delegate.md)
   An object that the framework notifies of session events.
-- [func invalidate()](nisession/invalidate.md)
+- [func invalidate()](./invalidate%28%29.md)
   Stops a running session.
 
 

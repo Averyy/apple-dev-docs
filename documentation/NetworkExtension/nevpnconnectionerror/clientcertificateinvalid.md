@@ -1,7 +1,8 @@
 # NEVPNConnectionError.clientCertificateInvalid
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error code that indicates the client certfiicate is invalid.
 
@@ -19,11 +20,16 @@ An error code that indicates the client certfiicate is invalid.
 case clientCertificateInvalid
 ```
 
+```c
+NEVPNConnectionErrorClientCertificateInvalid
+```
+
 ## See Also
 
-- [NEVPNConnectionError.clientCertificateNotYetValid](nevpnconnectionerror/clientcertificatenotyetvalid.md)
+### Client certificate error codes
+- [NEVPNConnectionError.clientCertificateNotYetValid](./clientcertificatenotyetvalid.md)
   An error code that indicates the client certfiicate won’t be valid until some time in the future.
-- [NEVPNConnectionError.clientCertificateExpired](nevpnconnectionerror/clientcertificateexpired.md)
+- [NEVPNConnectionError.clientCertificateExpired](./clientcertificateexpired.md)
   An error code that indicates the client certfiicate’s validity period has passed.
 
 

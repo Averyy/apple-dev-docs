@@ -1,7 +1,8 @@
 # VNGeneratePersonSegmentationRequestRevision1
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for specifying revision 1 of the person segmentation generation request.
 
@@ -17,6 +18,10 @@ A constant for specifying revision 1 of the person segmentation generation reque
 
 ```swift
 var VNGeneratePersonSegmentationRequestRevision1: Int { get }
+```
+
+```c
+static const NSUInteger VNGeneratePersonSegmentationRequestRevision1;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(colorTemperatureGradientFrom:toColorTemperature:name:textureDimensions:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a texture that creates a vertical gradient between two color temperatures.
 
@@ -19,6 +20,10 @@ Initializes a texture that creates a vertical gradient between two color tempera
 init(colorTemperatureGradientFrom colorTemperature1: Float, toColorTemperature colorTemperature2: Float, name: String?, textureDimensions: vector_int2)
 ```
 
+```objc
+- (instancetype) initWithColorTemperatureGradientFrom:(float) colorTemperature1 toColorTemperature:(float) colorTemperature2 name:(NSString *) name textureDimensions:(vector_int2) textureDimensions;
+```
+
 #### Return Value
 
 A new color swatch texture object.
@@ -34,18 +39,19 @@ Real-world light sources often measure color of illumination based on a black-bo
 | “Daylight” | Bright, slightly greenish white | 5000 K |
 | “Cool daylight” | Bright, slightly bluish white | 6500 K |
 
-This initializer does not generate texel data; the [`MDLColorSwatchTexture`](mdlcolorswatchtexture.md) class automatically generates data and caches it for reuse when you use one of the [`MDLTexture`](mdltexture.md) methods listed in Accessing Texture Data.
+This initializer does not generate texel data; the [`MDLColorSwatchTexture`](../mdlcolorswatchtexture.md) class automatically generates data and caches it for reuse when you use one of the [`MDLTexture`](../mdltexture.md) methods listed in Accessing Texture Data.
 
 ## Parameters
 
 - `colorTemperature1`: The black-body color temperature, in Kelvins, at the top of the gradient.
 - `colorTemperature2`: The black-body color temperature, in Kelvins, at the bottom of the gradient.
-- `name`: The [`name`](mdlnamed/name.md) property for the new texture object.
+- `name`: The [`name`](../mdlnamed/name.md) property for the new texture object.
 - `textureDimensions`: The texel dimensions (width and height) of the texture image.
 
 ## See Also
 
-- [init(colorGradientFrom: CGColor, to: CGColor, name: String?, textureDimensions: vector_int2)](mdlcolorswatchtexture/init(colorgradientfrom:to:name:texturedimensions:).md)
+### Creating a Color Swatch Texture
+- [init(colorGradientFrom: CGColor, to: CGColor, name: String?, textureDimensions: vector_int2)](./init%28colorgradientfrom,to,name,texturedimensions%29.md)
   Initializes a texture that creates a vertical gradient between two colors.
 
 

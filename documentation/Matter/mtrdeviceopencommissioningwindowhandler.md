@@ -1,7 +1,8 @@
 # MTRDeviceOpenCommissioningWindowHandler
 
 **Framework**: Matter  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 16.2+
@@ -16,6 +17,10 @@
 
 ```swift
 typealias MTRDeviceOpenCommissioningWindowHandler = (MTRSetupPayload?, (any Error)?) -> Void
+```
+
+```c
+typedef void (^)(MTRSetupPayload *, NSError *) MTRDeviceOpenCommissioningWindowHandler;
 ```
 
 

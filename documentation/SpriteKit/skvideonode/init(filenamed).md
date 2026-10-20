@@ -1,7 +1,8 @@
 # init(fileNamed:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a video node using a video file stored in the app bundle.
 
@@ -20,6 +21,10 @@ Initializes a video node using a video file stored in the app bundle.
 init(fileNamed videoFile: String)
 ```
 
+```objc
+- (instancetype) initWithFileNamed:(NSString *) videoFile;
+```
+
 #### Return Value
 
 An initialized video node.
@@ -30,15 +35,16 @@ An initialized video node.
 
 ## See Also
 
-- [init(avPlayer: AVPlayer)](skvideonode/init(avplayer:)-9ydbu.md)
-  Initializes a video node using an existing [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) object.
-- [init(url: URL)](skvideonode/init(url:)-2im38.md)
+### Creating a Video Node
+- [init(avPlayer: AVPlayer)](./init%28avplayer%29-9ydbu.md)
+  Initializes a video node using an existing [`AVPlayer`](../../AVFoundation/avplayer.md) object.
+- [init(url: URL)](./init%28url%29-2im38.md)
   Initializes a video node using a URL.
-- [init?(coder: NSCoder)](skvideonode/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Tells you when to initialize a video node that was created from an archive.
-- [init(videoFileNamed: String)](skvideonode/init(videofilenamed:).md)
+- [init(videoFileNamed: String)](./init%28videofilenamed%29.md)
   Initializes a video node using a video file stored in the app bundle.
-- [init(videoURL: URL)](skvideonode/init(videourl:).md)
+- [init(videoURL: URL)](./init%28videourl%29.md)
   Initializes a video node using a URL that points to a video file.
 
 

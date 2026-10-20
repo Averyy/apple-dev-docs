@@ -1,7 +1,8 @@
 # NSApplication.ShouldEndSuppressingHighDynamicRangeContent
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 26.0+
@@ -15,14 +16,15 @@ struct ShouldEndSuppressingHighDynamicRangeContent
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var applicationShouldSuppressHighDynamicRangeContent: Bool](nsapplication/applicationshouldsuppresshighdynamicrangecontent.md)
+### Displaying high dynamic resolution (HDR) content
+- [var applicationShouldSuppressHighDynamicRangeContent: Bool](./applicationshouldsuppresshighdynamicrangecontent.md)
   A boolean value indicating whether your application should suppress HDR content based on established policy. Built-in AppKit components such as NSImageView will automatically behave correctly with HDR content. You should use this value in conjunction with notifications (`NSApplicationShouldBeginSuppressingHighDynamicRangeContentNotification` and `NSApplicationShouldEndSuppressingHighDynamicRangeContentNotification`) to suppress HDR content in your application when signaled to do so.
-- [NSApplication.ShouldBeginSuppressingHighDynamicRangeContent](nsapplication/shouldbeginsuppressinghighdynamicrangecontent.md)
+- [NSApplication.ShouldBeginSuppressingHighDynamicRangeContent](./shouldbeginsuppressinghighdynamicrangecontent.md)
 
 
 ---

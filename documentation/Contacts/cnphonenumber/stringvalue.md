@@ -1,7 +1,8 @@
 # stringValue
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string value of the phone number.
 
@@ -17,6 +18,18 @@ The string value of the phone number.
 
 ```swift
 var stringValue: String { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * stringValue;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * stringValue;
 ```
 
 

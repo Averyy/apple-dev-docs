@@ -1,7 +1,8 @@
 # suppressUsageRecording
 
 **Framework**: Screen Time  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the webpage controller is not recording web usage.
 
@@ -17,19 +18,24 @@ A Boolean that indicates whether the webpage controller is not recording web usa
 var suppressUsageRecording: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL suppressUsageRecording;
+```
+
 #### Discussion
 
-Set to [`YES`](https://developer.apple.com/documentation/objectivec/yes) to stop recording and reporting web-usage data.
+Set to [`YES`](../../ObjectiveC/yes.md) to stop recording and reporting web-usage data.
 
 ## See Also
 
-- [var url: URL?](stwebpagecontroller/url.md)
+### Instance properties
+- [var url: URL?](./url.md)
   The URL for the webpage.
-- [var urlIsBlocked: Bool](stwebpagecontroller/urlisblocked.md)
+- [var urlIsBlocked: Bool](./urlisblocked.md)
   A Boolean that indicates whether a parent or guardian has blocked the URL.
-- [var urlIsPictureInPicture: Bool](stwebpagecontroller/urlispictureinpicture.md)
+- [var urlIsPictureInPicture: Bool](./urlispictureinpicture.md)
   A Boolean that indicates whether the webpage is currently displaying a floating picture in picture window.
-- [var urlIsPlayingVideo: Bool](stwebpagecontroller/urlisplayingvideo.md)
+- [var urlIsPlayingVideo: Bool](./urlisplayingvideo.md)
   A Boolean that indicates whether there are one or more videos currently playing in the webpage.
 
 

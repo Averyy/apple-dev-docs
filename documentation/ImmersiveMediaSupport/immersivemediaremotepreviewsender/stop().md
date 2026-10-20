@@ -1,7 +1,8 @@
 # stop()
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the sender - all current connected receivers will be disconnected and streaming will stop.
 

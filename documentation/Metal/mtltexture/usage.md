@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Options that determine how you can use the texture.
@@ -20,39 +21,44 @@ Options that determine how you can use the texture.
 var usage: MTLTextureUsage { get }
 ```
 
+```objc
+@property (readonly) MTLTextureUsage usage;
+```
+
 #### Discussion
 
-You set this value in an [`MTLTextureDescriptor`](mtltexturedescriptor.md) that you then use to create the given texture. After you create the texture, its usage options don’t change.
+You set this value in an [`MTLTextureDescriptor`](../mtltexturedescriptor.md) that you then use to create the given texture. After you create the texture, its usage options don’t change.
 
 ## See Also
 
-- [var textureType: MTLTextureType](mtltexture/texturetype.md)
+### Querying texture attributes
+- [var textureType: MTLTextureType](./texturetype.md)
   The dimension and arrangement of the texture image data.
-- [var pixelFormat: MTLPixelFormat](mtltexture/pixelformat.md)
+- [var pixelFormat: MTLPixelFormat](./pixelformat.md)
   The format of pixels in the texture.
-- [var width: Int](mtltexture/width.md)
+- [var width: Int](./width.md)
   The width of the texture image for the base level mipmap, in pixels.
-- [var height: Int](mtltexture/height.md)
+- [var height: Int](./height.md)
   The height of the texture image for the base level mipmap, in pixels.
-- [var depth: Int](mtltexture/depth.md)
+- [var depth: Int](./depth.md)
   The depth of the texture image for the base level mipmap, in pixels.
-- [var mipmapLevelCount: Int](mtltexture/mipmaplevelcount.md)
+- [var mipmapLevelCount: Int](./mipmaplevelcount.md)
   The number of mipmap levels in the texture.
-- [var arrayLength: Int](mtltexture/arraylength.md)
+- [var arrayLength: Int](./arraylength.md)
   The number of slices in the texture array.
-- [var sampleCount: Int](mtltexture/samplecount.md)
+- [var sampleCount: Int](./samplecount.md)
   The number of samples in each pixel.
-- [var isFramebufferOnly: Bool](mtltexture/isframebufferonly.md)
+- [var isFramebufferOnly: Bool](./isframebufferonly.md)
   A Boolean value that indicates whether the texture can only be used as a render target.
-- [var allowGPUOptimizedContents: Bool](mtltexture/allowgpuoptimizedcontents.md)
+- [var allowGPUOptimizedContents: Bool](./allowgpuoptimizedcontents.md)
   A Boolean value indicating whether the GPU is allowed to adjust the contents of the texture to improve GPU performance.
-- [var isShareable: Bool](mtltexture/isshareable.md)
+- [var isShareable: Bool](./isshareable.md)
   A Boolean indicating whether this texture can be shared with other processes.
-- [var swizzle: MTLTextureSwizzleChannels](mtltexture/swizzle.md)
+- [var swizzle: MTLTextureSwizzleChannels](./swizzle.md)
   The pattern that the GPU applies to pixels when you read or sample pixels from the texture.
-- [enum MTLTextureType](mtltexturetype.md)
+- [enum MTLTextureType](../mtltexturetype.md)
   The dimension of each image, including whether multiple images are arranged into an array or a cube.
-- [struct MTLTextureUsage](mtltextureusage.md)
+- [struct MTLTextureUsage](../mtltextureusage.md)
   An enumeration for the various options that determine how you can use a texture.
 
 

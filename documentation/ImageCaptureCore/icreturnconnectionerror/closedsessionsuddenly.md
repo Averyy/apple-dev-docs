@@ -1,16 +1,17 @@
 # closedSessionSuddenly
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Device closed session without request.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -20,19 +21,20 @@ static var closedSessionSuddenly: ICReturnConnectionError.Code { get }
 
 ## See Also
 
-- [static var driverExited: ICReturnConnectionError.Code](icreturnconnectionerror/driverexited.md)
+### Error Codes
+- [static var driverExited: ICReturnConnectionError.Code](./driverexited.md)
   Device driver exited without request.
-- [static var ejectFailed: ICReturnConnectionError.Code](icreturnconnectionerror/ejectfailed.md)
+- [static var ejectFailed: ICReturnConnectionError.Code](./ejectfailed.md)
   Device reports eject has failed.
-- [static var ejectedSuddenly: ICReturnConnectionError.Code](icreturnconnectionerror/ejectedsuddenly.md)
+- [static var ejectedSuddenly: ICReturnConnectionError.Code](./ejectedsuddenly.md)
   Device ejected without request.
-- [static var failedToOpen: ICReturnConnectionError.Code](icreturnconnectionerror/failedtoopen.md)
+- [static var failedToOpen: ICReturnConnectionError.Code](./failedtoopen.md)
   Failed to open a connection to the device.
-- [static var failedToOpenDevice: ICReturnConnectionError.Code](icreturnconnectionerror/failedtoopendevice.md)
+- [static var failedToOpenDevice: ICReturnConnectionError.Code](./failedtoopendevice.md)
   Failed to open the device.
-- [static var sessionAlreadyOpen: ICReturnConnectionError.Code](icreturnconnectionerror/sessionalreadyopen.md)
+- [static var sessionAlreadyOpen: ICReturnConnectionError.Code](./sessionalreadyopen.md)
   Device reports session is already open.
-- [ICReturnConnectionError.Code](icreturnconnectionerror/code.md)
+- [ICReturnConnectionError.Code](./code.md)
 
 
 ---

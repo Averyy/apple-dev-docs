@@ -1,7 +1,8 @@
 # accessibilitySubrole()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
@@ -15,12 +16,13 @@
 
 ## See Also
 
-- [var accessibilityFocusedUIElement: Any?](nshostingview/accessibilityfocuseduielement.md)
-- [func accessibilityChildren() -> [Any]?](nshostingview/accessibilitychildren.md)
-- [func accessibilityChildrenInNavigationOrder() -> [any NSAccessibilityElementProtocol]?](nshostingview/accessibilitychildreninnavigationorder.md)
-- [func accessibilityHitTest(NSPoint) -> Any?](nshostingview/accessibilityhittest(_:).md)
-- [func accessibilityRole() -> NSAccessibility.Role?](nshostingview/accessibilityrole.md)
-- [func isAccessibilityElement() -> Bool](nshostingview/isaccessibilityelement.md)
+### Managing accessibility behaviors
+- [var accessibilityFocusedUIElement: Any?](./accessibilityfocuseduielement.md)
+- [func accessibilityChildren() -> [Any]?](./accessibilitychildren%28%29.md)
+- [func accessibilityChildrenInNavigationOrder() -> [any NSAccessibilityElementProtocol]?](./accessibilitychildreninnavigationorder%28%29.md)
+- [func accessibilityHitTest(NSPoint) -> Any?](./accessibilityhittest%28_%29.md)
+- [func accessibilityRole() -> NSAccessibility.Role?](./accessibilityrole%28%29.md)
+- [func isAccessibilityElement() -> Bool](./isaccessibilityelement%28%29.md)
 
 
 ---

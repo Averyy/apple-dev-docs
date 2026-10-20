@@ -1,7 +1,8 @@
 # distance(from:to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the distance between two indices.
 

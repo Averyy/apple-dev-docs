@@ -1,12 +1,13 @@
 # drawsBackground
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver draws its background.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ A Boolean value that indicates whether the receiver draws its background.
 var drawsBackground: Bool { get set }
 ```
 
+```objc
+@property BOOL drawsBackground;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) to cause the receiver to fill its background with the background color,  [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) to cause the receiver to fill its background with the background color,  [`false`](../../Swift/false.md) otherwise.
 
 ## See Also
 
-- [var backgroundColor: NSColor](nstextview/backgroundcolor.md)
+### Setting graphics attributes
+- [var backgroundColor: NSColor](./backgroundcolor.md)
   The receiver’s background color.
-- [var allowsDocumentBackgroundColorChange: Bool](nstextview/allowsdocumentbackgroundcolorchange.md)
+- [var allowsDocumentBackgroundColorChange: Bool](./allowsdocumentbackgroundcolorchange.md)
   A Boolean value that indicates whether the receiver allows its background color to change.
-- [func changeDocumentBackgroundColor(Any?)](nstextview/changedocumentbackgroundcolor(_:).md)
+- [func changeDocumentBackgroundColor(Any?)](./changedocumentbackgroundcolor%28_%29.md)
   An action method used to set the background color.
 
 

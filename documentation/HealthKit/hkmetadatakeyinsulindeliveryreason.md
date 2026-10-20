@@ -1,7 +1,8 @@
 # HKMetadataKeyInsulinDeliveryReason
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The medical reason for administering insulin.
 
@@ -19,14 +20,18 @@ The medical reason for administering insulin.
 let HKMetadataKeyInsulinDeliveryReason: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyInsulinDeliveryReason;
+```
+
 #### Discussion
 
-This key is required for [`insulinDelivery`](hkquantitytypeidentifier/insulindelivery.md) samples. It takes an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a [`HKInsulinDeliveryReason`](hkinsulindeliveryreason.md) value.
+This key is required for [`insulinDelivery`](./hkquantitytypeidentifier/insulindelivery.md) samples. It takes an [`NSNumber`](../Foundation/nsnumber.md) object containing a [`HKInsulinDeliveryReason`](./hkinsulindeliveryreason.md) value.
 
 ## Topics
 
 ### Valid Delivery Reasons
-- [enum HKInsulinDeliveryReason](hkinsulindeliveryreason.md)
+- [enum HKInsulinDeliveryReason](./hkinsulindeliveryreason.md)
   Possible reasons for administering insulin.
 
 

@@ -1,12 +1,13 @@
 # AudioHardwarePlugin
 
 **Framework**: Core Audio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Instances of the AudioHardwarePlugin class encapsulate a single audio HAL plugin, which is a CFBundle loaded by the HAL as a driver to implement device-specific properties and routines.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration
@@ -18,28 +19,28 @@ class AudioHardwarePlugin
 ## Topics
 
 ### Initializers
-- [init(id: AudioObjectID)](audiohardwareplugin/init(id:).md)
+- [init(id: AudioObjectID)](./audiohardwareplugin/init%28id%29.md)
 ### Instance Properties
-- [var boxes: [AudioHardwareBox]](audiohardwareplugin/boxes.md)
+- [var boxes: [AudioHardwareBox]](./audiohardwareplugin/boxes.md)
   An array of AudioHardwareBoxes that represent all the box objects currently provided by the plugin.
-- [var bundleID: String](audiohardwareplugin/bundleid.md)
+- [var bundleID: String](./audiohardwareplugin/bundleid.md)
   A String that contains the bundle identifier for the plugin.
-- [var clocks: [AudioHardwareClock]](audiohardwareplugin/clocks.md)
+- [var clocks: [AudioHardwareClock]](./audiohardwareplugin/clocks.md)
   An array of AudioHardwareClocks that represent all the clock objects currently provided by the plugin.
-- [var devices: [AudioHardwareDevice]](audiohardwareplugin/devices.md)
+- [var devices: [AudioHardwareDevice]](./audiohardwareplugin/devices.md)
   An array of AudioHardwareDevices that represent all the devices currently provided by the plugin.
 ### Instance Methods
-- [func box(forUID: String) throws -> AudioHardwareBox?](audiohardwareplugin/box(foruid:).md)
-- [func clock(forUID: String) throws -> AudioHardwareClock?](audiohardwareplugin/clock(foruid:).md)
-- [func device(forUID: String) throws -> AudioHardwareDevice?](audiohardwareplugin/device(foruid:).md)
+- [func box(forUID: String) throws -> AudioHardwareBox?](./audiohardwareplugin/box%28foruid%29.md)
+- [func clock(forUID: String) throws -> AudioHardwareClock?](./audiohardwareplugin/clock%28foruid%29.md)
+- [func device(forUID: String) throws -> AudioHardwareDevice?](./audiohardwareplugin/device%28foruid%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [AudioHardwareObject](audiohardwareobject.md)
+- [AudioHardwareObject](./audiohardwareobject.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

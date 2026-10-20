@@ -1,7 +1,8 @@
 # AccessibilityDeclarationUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure of the request body you use to update an accessibility declaration.
 
@@ -10,21 +11,21 @@ The data structure of the request body you use to update an accessibility declar
 
 ## Declaration
 
-```swift
+```
 object AccessibilityDeclarationUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AccessibilityDeclarationUpdateRequest.Data.Attributes](accessibilitydeclarationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AccessibilityDeclarationUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes you set that describe the updated accessibility declaration resource.
 
 ## Properties
 
 - `attributes` (AccessibilityDeclarationUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `accessibilityDeclarations`
 
 
 ---

@@ -1,7 +1,8 @@
 # NWProtocolQUIC.Metadata.KeepAliveBehavior
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A QUIC connection keepalive behavior.
 
@@ -23,22 +24,23 @@ enum KeepAliveBehavior
 ## Topics
 
 ### Keepalive Behaviors
-- [NWProtocolQUIC.Metadata.KeepAliveBehavior.on](nwprotocolquic/metadata/keepalivebehavior/on.md)
+- [NWProtocolQUIC.Metadata.KeepAliveBehavior.on](./keepalivebehavior/on.md)
   Keepalives are enabled with the default timeout.
-- [NWProtocolQUIC.Metadata.KeepAliveBehavior.off](nwprotocolquic/metadata/keepalivebehavior/off.md)
+- [NWProtocolQUIC.Metadata.KeepAliveBehavior.off](./keepalivebehavior/off.md)
   Keepalives are disabled.
-- [NWProtocolQUIC.Metadata.KeepAliveBehavior.seconds(_:)](nwprotocolquic/metadata/keepalivebehavior/seconds(_:).md)
+- [NWProtocolQUIC.Metadata.KeepAliveBehavior.seconds(_:)](./keepalivebehavior/seconds%28_%29.md)
   Keepalives are enabled with a custom timeout, in seconds.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var keepAlive: NWProtocolQUIC.Metadata.KeepAliveBehavior](nwprotocolquic/metadata/keepalive.md)
+### Configuring Keepalives
+- [var keepAlive: NWProtocolQUIC.Metadata.KeepAliveBehavior](./keepalive.md)
   The QUIC connection keepalive behavior.
 
 

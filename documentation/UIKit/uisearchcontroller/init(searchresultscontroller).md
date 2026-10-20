@@ -1,7 +1,8 @@
 # init(searchResultsController:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a search controller with the specified view controller for displaying the results.
 
@@ -9,7 +10,7 @@ Creates and returns a search controller with the specified view controller for d
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,17 @@ Creates and returns a search controller with the specified view controller for d
 init(searchResultsController: UIViewController?)
 ```
 
+```objc
+- (instancetype) initWithSearchResultsController:(UIViewController *) searchResultsController;
+```
+
 #### Return Value
 
 An initialized search controller.
 
 #### Discussion
 
-After creating the search controller, always assign an object to the [`searchResultsUpdater`](uisearchcontroller/searchresultsupdater.md) property. The search controller uses that object to update the search results.
+After creating the search controller, always assign an object to the [`searchResultsUpdater`](./searchresultsupdater.md) property. The search controller uses that object to update the search results.
 
 ## Parameters
 
@@ -32,9 +37,10 @@ After creating the search controller, always assign an object to the [`searchRes
 
 ## See Also
 
-- [init?(coder: NSCoder)](uisearchcontroller/init(coder:).md)
+### Creating a search controller
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Returns an initialized search controller from data in the specified unarchiver.
-- [init(nibName: String?, bundle: Bundle?)](uisearchcontroller/init(nibname:bundle:).md)
+- [init(nibName: String?, bundle: Bundle?)](./init%28nibname,bundle%29.md)
   Returns an initialized view controller with the nib file in the specified bundle.
 
 

@@ -1,7 +1,8 @@
 # SubscriptionPriceCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a subscription price create request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a subscription price create request resource.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPriceCreateRequest.Data.Attributes
 ```
 
@@ -22,7 +23,8 @@ object SubscriptionPriceCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object SubscriptionPriceCreateRequest.Data.Relationships](subscriptionpricecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object SubscriptionPriceCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

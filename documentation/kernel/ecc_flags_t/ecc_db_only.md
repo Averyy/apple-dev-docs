@@ -1,14 +1,15 @@
 # ECC_DB_ONLY
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.2+
 
 ## Declaration
 
-```swift
+```c
 ECC_DB_ONLY
 ```
 

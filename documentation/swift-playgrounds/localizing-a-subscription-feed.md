@@ -1,6 +1,7 @@
 # Localizing a Subscription Feed
 
-**Framework**: Swift Playgrounds
+**Framework**: Swift Playgrounds  
+**Role**: Article
 
 Provide multiple localizations of a subscription’s content in a single feed.
 
@@ -8,9 +9,9 @@ Provide multiple localizations of a subscription’s content in a single feed.
 
 You can provide localizations of your subscription content by linking to a supplemental JSON object that maps locale IDs to locale-specific feeds.
 
-##### Create the Localization Mapping in Json
+##### Create the Localization Mapping in JSON
 
-Each localization of your subscription’s content requires its own entry in the supplemental JSON object. You create the mapping from a locale ID—a standard format described in [`Locale IDs`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/LanguageandLocaleIDs/LanguageandLocaleIDs.html#//apple_ref/doc/uid/10000171i-CH15-SW9)—to the localized feed URL by pairing the two for that locale. You use the locale ID as the key and the localized feed URL as the value for each key-value pair in the JSON object.
+Each localization of your subscription’s content requires its own entry in the supplemental JSON object. You create the mapping from a locale ID—a standard format described in [Locale IDs](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/LanguageandLocaleIDs/LanguageandLocaleIDs.html#//apple_ref/doc/uid/10000171i-CH15-SW9)—to the localized feed URL by pairing the two for that locale. You use the locale ID as the key and the localized feed URL as the value for each key-value pair in the JSON object.
 
 For example, you can supply the following locale JSON to support a feed that’s localized to contain English and French versions of a subscription’s content:
 
@@ -23,17 +24,18 @@ For example, you can supply the following locale JSON to support a feed that’s
 
 The locale ID for the French localization is `fr`, and `fr-feed.json` contains French metadata and the URL for the localized French playground books in the subscription.
 
-##### Share the Localized Json Objects Url
+##### Share the Localized JSON Object’s URL
 
 Unlike feeds that aren’t localized, localized feeds download the supplemental JSON object as an extra step to determine locale information before downloading your feed’s content. As a result, you need to use the URL for the supplemental JSON object when sharing your subscription.
 
-![A diagram showing the relationship between the feed URL, the feed JSON, and the intermediate locale JSON that’s only required for localized feeds.](/images/com.apple.Swift-Playgrounds/localizing-a-subscription-feed-1@2x.png)
+![A diagram showing the relationship between the feed URL, the feed JSON, and the intermediate locale JSON that’s only required for localized feeds.](https://developer.apple.com/tutorials/images/com.apple.Swift-Playgrounds/localizing-a-subscription-feed-1@2x.png)
 
 ## See Also
 
-- [Creating a subscription](creating-a-subscription.md)
+### Subscriptions
+- [Creating a subscription](./creating-a-subscription.md)
   Create a machine-readable summary of a set of playground books to make them available for others to download.
-- [Publishing a Subscription](publishing-a-subscription.md)
+- [Publishing a Subscription](./publishing-a-subscription.md)
   Make the playground books in a series available online for download and subscription.
 
 

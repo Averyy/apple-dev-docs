@@ -1,23 +1,28 @@
 # attenuationFalloffExponent
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transition curve for the light’s intensity between its attenuation start and end distances. Animatable.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 var attenuationFalloffExponent: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat attenuationFalloffExponent;
 ```
 
 #### Discussion
@@ -26,13 +31,14 @@ You can apply attenuation to omnidirectional lights and spotlights, causing thei
 
 A value of `0.0` specifies no attenuation—the light’s intensity is the same at all distances. A value of `1.0` specifies a linear transition, and a value of `2.0` (the default) specifies a quadratic transition curve. Higher values have little visible effect.
 
-You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
+You can animate changes to this property’s value. See [Animating SceneKit Content](../animating-scenekit-content.md).
 
 ## See Also
 
-- [var attenuationStartDistance: CGFloat](scnlight/attenuationstartdistance.md)
+### Managing Light Attenuation
+- [var attenuationStartDistance: CGFloat](./attenuationstartdistance.md)
   The distance from the light at which its intensity begins to diminish. Animatable.
-- [var attenuationEndDistance: CGFloat](scnlight/attenuationenddistance.md)
+- [var attenuationEndDistance: CGFloat](./attenuationenddistance.md)
   The distance from the light at which its intensity is completely diminished. Animatable.
 
 

@@ -1,7 +1,8 @@
 # argMin(axis:keepDimension:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an argmin operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds an argmin operation to the current graph.
 ```swift
 func argMin(axis: Int, keepDimension: Bool) -> BNNSGraph.Builder.Tensor<Int32>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 #### Discussion
 

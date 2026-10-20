@@ -1,7 +1,8 @@
 # search
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Defines triggers originating from search fields constructed from searchable modifiers.
 
@@ -44,7 +45,8 @@ NavigationView {
 
 ## See Also
 
-- [static let text: SubmitTriggers](submittriggers/text.md)
+### Getting submit triggers
+- [static let text: SubmitTriggers](./text.md)
   Defines triggers originating from text input controls like `TextField` and `SecureField`.
 
 

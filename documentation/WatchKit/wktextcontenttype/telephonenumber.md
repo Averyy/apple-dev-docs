@@ -1,12 +1,13 @@
 # telephoneNumber
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A telephone number.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ A telephone number.
 static let telephoneNumber: WKTextContentType
 ```
 
+```c
+extern WKTextContentType const WKTextContentTypeTelephoneNumber;
+```
+
 ## See Also
 
-- [static let emailAddress: WKTextContentType](wktextcontenttype/emailaddress.md)
+### Contact Information
+- [static let emailAddress: WKTextContentType](./emailaddress.md)
   An email address.
 
 

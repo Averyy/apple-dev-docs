@@ -1,7 +1,8 @@
 # trimEnd
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The optional time, in seconds, at which the animation stops.
 
@@ -21,7 +22,7 @@ var trimEnd: TimeInterval? { get set }
 
 #### Discussion
 
-This property is `nil` by default, which plays the animation until `time` = [`duration`](animationgroup/duration.md). If you set a value, the animation edits the duration according to the specified ending time.
+This property is `nil` by default, which plays the animation until `time` = [`duration`](../animationgroup/duration.md). If you set a value, the animation edits the duration according to the specified ending time.
 
 
 ---

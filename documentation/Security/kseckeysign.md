@@ -1,7 +1,8 @@
 # kSecKeySign
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type uint32, value is nonzero. This key can be used in a sign operation.
 
@@ -12,6 +13,10 @@ Type uint32, value is nonzero. This key can be used in a sign operation.
 
 ```swift
 var kSecKeySign: Int32 { get }
+```
+
+```c
+kSecKeySign
 ```
 
 

@@ -1,7 +1,8 @@
 # kMDItemFinderComment
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Finder comments for this file. A CFString.
 
@@ -12,6 +13,10 @@ Finder comments for this file. A CFString.
 
 ```swift
 let kMDItemFinderComment: CFString!
+```
+
+```c
+const CFStringRef kMDItemFinderComment;
 ```
 
 

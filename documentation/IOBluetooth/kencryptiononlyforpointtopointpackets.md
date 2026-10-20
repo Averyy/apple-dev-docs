@@ -1,10 +1,11 @@
 # kEncryptionOnlyForPointToPointPackets
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kEncryptionOnlyForPointToPointPackets: BluetoothHCIEncryptionModes { get }
 ```
 
+```c
+kEncryptionOnlyForPointToPointPackets
+```
+
 ## See Also
 
-- [var kEncryptionDisabled: BluetoothHCIEncryptionModes](kencryptiondisabled.md)
-- [var kEncryptionForBothPointToPointAndBroadcastPackets: BluetoothHCIEncryptionModes](kencryptionforbothpointtopointandbroadcastpackets.md)
+### Constants
+- [var kEncryptionDisabled: BluetoothHCIEncryptionModes](./kencryptiondisabled.md)
+- [var kEncryptionForBothPointToPointAndBroadcastPackets: BluetoothHCIEncryptionModes](./kencryptionforbothpointtopointandbroadcastpackets.md)
 
 
 ---

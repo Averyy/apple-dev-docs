@@ -1,7 +1,8 @@
 # CKError.Code.accountTemporarilyUnavailable
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs when the user’s iCloud account is temporarily unavailable.
 
@@ -20,43 +21,48 @@ An error that occurs when the user’s iCloud account is temporarily unavailable
 case accountTemporarilyUnavailable
 ```
 
+```c
+CKErrorAccountTemporarilyUnavailable
+```
+
 #### Discussion
 
 You receive this error when the user’s iCloud account is available, but isn’t ready to support CloudKit operations. Don’t delete any cached data and don’t enqueue any additional CloudKit operations.
 
-Checking the account status after the operation fails, assuming there are no other changes to the account’s status, returns [`CKAccountStatus.temporarilyUnavailable`](ckaccountstatus/temporarilyunavailable.md). Use the [`CKAccountChanged`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/ckaccountchanged) notification to listen for future account status changes, and retry the operation after the status becomes [`CKAccountStatus.available`](ckaccountstatus/available.md).
+Checking the account status after the operation fails, assuming there are no other changes to the account’s status, returns [`CKAccountStatus.temporarilyUnavailable`](../../ckaccountstatus/temporarilyunavailable.md). Use the [`CKAccountChanged`](../../../Foundation/nsnotification/name-swift.struct/ckaccountchanged.md) notification to listen for future account status changes, and retry the operation after the status becomes [`CKAccountStatus.available`](../../ckaccountstatus/available.md).
 
 ## See Also
 
-- [CKError.Code.alreadyShared](ckerror/code/alreadyshared.md)
+### Error Codes
+- [CKError.Code.alreadyShared](./alreadyshared.md)
   An error that occurs when CloudKit attempts to share a record with an existing share.
-- [CKError.Code.assetFileModified](ckerror/code/assetfilemodified.md)
+- [CKError.Code.assetFileModified](./assetfilemodified.md)
   An error that occurs when the system modifies an asset while saving it.
-- [CKError.Code.assetFileNotFound](ckerror/code/assetfilenotfound.md)
+- [CKError.Code.assetFileNotFound](./assetfilenotfound.md)
   An error that occurs when the system can’t find the specified asset.
-- [CKError.Code.assetNotAvailable](ckerror/code/assetnotavailable.md)
+- [CKError.Code.assetNotAvailable](./assetnotavailable.md)
   An error that occurs when the system can’t access the specified asset.
-- [CKError.Code.badContainer](ckerror/code/badcontainer.md)
+- [CKError.Code.badContainer](./badcontainer.md)
   An error that occurs when you use an unknown or unauthorized container.
-- [CKError.Code.badDatabase](ckerror/code/baddatabase.md)
+- [CKError.Code.badDatabase](./baddatabase.md)
   An error that occurs when the operation can’t complete for the specified database.
-- [CKError.Code.batchRequestFailed](ckerror/code/batchrequestfailed.md)
+- [CKError.Code.batchRequestFailed](./batchrequestfailed.md)
   An error that occurs when the system rejects the entire batch of changes.
-- [CKError.Code.changeTokenExpired](ckerror/code/changetokenexpired.md)
+- [CKError.Code.changeTokenExpired](./changetokenexpired.md)
   An error that occurs when the change token expires.
-- [CKError.Code.constraintViolation](ckerror/code/constraintviolation.md)
+- [CKError.Code.constraintViolation](./constraintviolation.md)
   An error that occurs when the server rejects the request because of a unique constraint violation.
-- [CKError.Code.incompatibleVersion](ckerror/code/incompatibleversion.md)
+- [CKError.Code.incompatibleVersion](./incompatibleversion.md)
   An error that occurs when the current app version is older than the oldest allowed version.
-- [CKError.Code.internalError](ckerror/code/internalerror.md)
+- [CKError.Code.internalError](./internalerror.md)
   A nonrecoverable error that CloudKit encounters.
-- [CKError.Code.invalidArguments](ckerror/code/invalidarguments.md)
+- [CKError.Code.invalidArguments](./invalidarguments.md)
   An error that occurs when the request contains invalid information.
-- [CKError.Code.limitExceeded](ckerror/code/limitexceeded.md)
+- [CKError.Code.limitExceeded](./limitexceeded.md)
   An error that occurs when a request’s size exceeds the limit.
-- [CKError.Code.managedAccountRestricted](ckerror/code/managedaccountrestricted.md)
+- [CKError.Code.managedAccountRestricted](./managedaccountrestricted.md)
   An error that occurs when CloudKit rejects a request due to a managed-account restriction.
-- [CKError.Code.missingEntitlement](ckerror/code/missingentitlement.md)
+- [CKError.Code.missingEntitlement](./missingentitlement.md)
   An error that occurs when the app is missing a required entitlement.
 
 

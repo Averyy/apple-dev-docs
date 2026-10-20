@@ -1,7 +1,8 @@
 # isHidden
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
@@ -12,9 +13,14 @@
 var isHidden: Bool { get set }
 ```
 
+```objc
+@property (getter=isHidden) BOOL hidden;
+```
+
 ## See Also
 
-- [var numberOfCells: Int](nsgridrow/numberofcells.md)
+### Getting the Row Details
+- [var numberOfCells: Int](./numberofcells.md)
 
 
 ---

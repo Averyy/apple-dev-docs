@@ -1,7 +1,8 @@
 # Image.Orientation.down
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates a 180° rotation of the image from the orientation of its original pixel data.
 
@@ -22,11 +23,12 @@ case down
 
 ## See Also
 
-- [Image.Orientation.up](image/orientation/up.md)
+### Getting image orientations
+- [Image.Orientation.up](./up.md)
   A value that indicates the original pixel data matches the image’s intended display orientation.
-- [Image.Orientation.left](image/orientation/left.md)
+- [Image.Orientation.left](./left.md)
   A value that indicates a 90° counterclockwise rotation from the orientation of its original pixel data.
-- [Image.Orientation.right](image/orientation/right.md)
+- [Image.Orientation.right](./right.md)
   A value that indicates a 90° clockwise rotation of the image from the orientation of its original pixel data.
 
 

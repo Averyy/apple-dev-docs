@@ -1,7 +1,8 @@
 # LibraryPlaylistsResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to a library playlists request.
 
@@ -10,27 +11,28 @@ The response to a library playlists request.
 
 ## Declaration
 
-```swift
+```
 object LibraryPlaylistsResponse
 ```
 
 ## Properties
 
-- `data` ([LibraryPlaylists]) *(required)*: The [`LibraryPlaylists`](libraryplaylists.md) included in the response for the request.
+- `data` ([LibraryPlaylists]) *(required)*: The [`LibraryPlaylists`](./libraryplaylists.md) included in the response for the request.
 
 ## See Also
 
-- [object Playlists](playlists.md)
+### Handling the Response
+- [object Playlists](./playlists.md)
   A resource object that represents a playlist.
-- [object PlaylistsResponse](playlistsresponse.md)
+- [object PlaylistsResponse](./playlistsresponse.md)
   The response to a playlists request.
-- [object LibraryPlaylists](libraryplaylists.md)
+- [object LibraryPlaylists](./libraryplaylists.md)
   A resource object that represents a library playlist.
-- [object LibraryPlaylistsTracksRelationshipResponse](libraryplayliststracksrelationshipresponse.md)
+- [object LibraryPlaylistsTracksRelationshipResponse](./libraryplayliststracksrelationshipresponse.md)
   The response to a library playlists tracks relationship request.
-- [object LibraryPlaylistFolders](libraryplaylistfolders.md)
+- [object LibraryPlaylistFolders](./libraryplaylistfolders.md)
   A resource object that represents a library playlist folder.
-- [object LibraryPlaylistFoldersResponse](libraryplaylistfoldersresponse.md)
+- [object LibraryPlaylistFoldersResponse](./libraryplaylistfoldersresponse.md)
   The response to a library playlist folders request.
 
 

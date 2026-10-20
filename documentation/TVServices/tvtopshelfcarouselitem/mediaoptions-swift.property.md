@@ -1,7 +1,8 @@
 # mediaOptions
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Information about the media format and presentation options.
 
@@ -14,13 +15,18 @@ Information about the media format and presentation options.
 var mediaOptions: TVTopShelfCarouselItem.MediaOptions { get set }
 ```
 
+```objc
+@property (nonatomic) TVTopShelfCarouselItemMediaOptions mediaOptions;
+```
+
 #### Discussion
 
-Specify all of the options that apply to the underlying content. The system adds standard icons for the options you support. For example, if you specify the [`videoResolution4K`](tvtopshelfcarouselitem/mediaoptions-swift.struct/videoresolution4k.md) option, the system adds an icon to the detail view indicating that playback in 4K resolution is possible.
+Specify all of the options that apply to the underlying content. The system adds standard icons for the options you support. For example, if you specify the [`videoResolution4K`](./mediaoptions-swift.struct/videoresolution4k.md) option, the system adds an icon to the detail view indicating that playback in 4K resolution is possible.
 
 ## See Also
 
-- [TVTopShelfCarouselItem.MediaOptions](tvtopshelfcarouselitem/mediaoptions-swift.struct.md)
+### Adding Media Badges
+- [TVTopShelfCarouselItem.MediaOptions](./mediaoptions-swift.struct.md)
   Constants indicating the item’s audio and video capabilities.
 
 

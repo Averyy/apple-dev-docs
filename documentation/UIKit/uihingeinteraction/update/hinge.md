@@ -1,7 +1,8 @@
 # hinge
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current hinge state for the interaction, or `nil` when the interaction leaves a hierarchy that provides hinge updates.
 
@@ -17,6 +18,10 @@ The current hinge state for the interaction, or `nil` when the interaction leave
 ```swift
 @NSCopying
 var hinge: UIHinge? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) UIHinge * hinge;
 ```
 
 

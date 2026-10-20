@@ -1,7 +1,8 @@
 # dataType
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type of the tensor data.
 
@@ -17,6 +18,10 @@ The data type of the tensor data.
 
 ```swift
 var dataType: MPSDataType { get }
+```
+
+```objc
+@property (nonatomic, readonly) MPSDataType dataType;
 ```
 
 

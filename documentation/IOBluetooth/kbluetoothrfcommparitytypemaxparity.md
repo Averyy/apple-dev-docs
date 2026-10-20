@@ -1,10 +1,11 @@
 # kBluetoothRFCOMMParityTypeMaxParity
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kBluetoothRFCOMMParityTypeMaxParity: BluetoothRFCOMMParityType { get }
 ```
 
+```c
+kBluetoothRFCOMMParityTypeMaxParity
+```
+
 ## See Also
 
-- [var kBluetoothRFCOMMParityTypeEvenParity: BluetoothRFCOMMParityType](kbluetoothrfcommparitytypeevenparity.md)
-- [var kBluetoothRFCOMMParityTypeNoParity: BluetoothRFCOMMParityType](kbluetoothrfcommparitytypenoparity.md)
-- [var kBluetoothRFCOMMParityTypeOddParity: BluetoothRFCOMMParityType](kbluetoothrfcommparitytypeoddparity.md)
+### Constants
+- [var kBluetoothRFCOMMParityTypeEvenParity: BluetoothRFCOMMParityType](./kbluetoothrfcommparitytypeevenparity.md)
+- [var kBluetoothRFCOMMParityTypeNoParity: BluetoothRFCOMMParityType](./kbluetoothrfcommparitytypenoparity.md)
+- [var kBluetoothRFCOMMParityTypeOddParity: BluetoothRFCOMMParityType](./kbluetoothrfcommparitytypeoddparity.md)
 
 
 ---

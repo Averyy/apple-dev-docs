@@ -1,16 +1,19 @@
 # poolingType
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pooling operation type.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.0
+- iPadOS 14.0+ - Deprecated in 17.0
+- Mac Catalyst 14.0+ - Deprecated in 17.0
+- macOS 11.0+ - Deprecated in 14.0
+- tvOS 14.0+ - Deprecated in 17.0
+
+> **Deprecated**: Use Metal Performance Shaders Graph or BNNS instead.
 
 ## Declaration
 
@@ -20,13 +23,14 @@ var poolingType: MLCPoolingType { get }
 
 ## See Also
 
-- [var kernelSizes: (height: Int, width: Int)](mlcpoolingdescriptor/kernelsizes.md)
+### Inspecting Pooling Descriptors
+- [var kernelSizes: (height: Int, width: Int)](./kernelsizes.md)
   A tuple that contains the kernel sizes for height and width.
-- [var strides: (y: Int, x: Int)](mlcpoolingdescriptor/strides.md)
+- [var strides: (y: Int, x: Int)](./strides.md)
   A tuple that contains the kernel strides for y and x.
-- [var dilationRates: (y: Int, x: Int)](mlcpoolingdescriptor/dilationrates.md)
+- [var dilationRates: (y: Int, x: Int)](./dilationrates.md)
   A tuple that contains the dilation rates for y and x.
-- [var paddingPolicy: MLCPaddingPolicy](mlcpoolingdescriptor/paddingpolicy-7p8a2.md)
+- [var paddingPolicy: MLCPaddingPolicy](./paddingpolicy-7p8a2.md)
   The padding policy.
 
 

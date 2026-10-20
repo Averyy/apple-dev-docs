@@ -1,15 +1,18 @@
 # detectValues(for:inItemSet:completionHandler:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether pasteboard items match the specified patterns, reading the contents if it finds a match.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 15.0
+- iPadOS 14.0+ - Deprecated in 15.0
+- Mac Catalyst 14.0+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use [`detectValues(for:inItemSet:completionHandler:)`](./detectvalues%28for,initemset,completionhandler%29-pm9l.md) instead.
 
 ## Declaration
 
@@ -21,7 +24,7 @@ func detectValues(for patterns: Set<UIPasteboard.DetectionPattern>, inItemSet it
 
 > ❗ **Important**:  Calling this method notifies the user that the app has read the contents of the pasteboard.
 
-For details about the types returned for each pattern, see [`UIPasteboard.DetectionPattern`](uipasteboard/detectionpattern.md).
+For details about the types returned for each pattern, see [`UIPasteboard.DetectionPattern`](./detectionpattern.md).
 
 ## Parameters
 
@@ -31,15 +34,16 @@ For details about the types returned for each pattern, see [`UIPasteboard.Detect
 
 ## See Also
 
-- [var isPersistent: Bool](uipasteboard/ispersistent.md)
+### Deprecated
+- [var isPersistent: Bool](./ispersistent.md)
   A Boolean value that indicates whether the pasteboard is persistent.
-- [func setPersistent(Bool)](uipasteboard/setpersistent(_:).md)
+- [func setPersistent(Bool)](./setpersistent%28_%29.md)
   A Boolean value that indicates whether the pasteboard is persistent.
-- [func detectPatterns(for: Set<UIPasteboard.DetectionPattern>, completionHandler: (Result<Set<UIPasteboard.DetectionPattern>, any Error>) -> ())](uipasteboard/detectpatterns(for:completionhandler:)-5zlnd.md)
+- [func detectPatterns(for: Set<UIPasteboard.DetectionPattern>, completionHandler: (Result<Set<UIPasteboard.DetectionPattern>, any Error>) -> ())](./detectpatterns%28for,completionhandler%29-5zlnd.md)
   Determines whether the first pasteboard item matches the specified patterns, without notifying the user.
-- [func detectPatterns(for: Set<UIPasteboard.DetectionPattern>, inItemSet: IndexSet?, completionHandler: (Result<[Set<UIPasteboard.DetectionPattern>], any Error>) -> ())](uipasteboard/detectpatterns(for:initemset:completionhandler:)-29iwn.md)
+- [func detectPatterns(for: Set<UIPasteboard.DetectionPattern>, inItemSet: IndexSet?, completionHandler: (Result<[Set<UIPasteboard.DetectionPattern>], any Error>) -> ())](./detectpatterns%28for,initemset,completionhandler%29-29iwn.md)
   Determines whether pasteboard items match the specified patterns, without notifying the user.
-- [func detectValues(for: Set<UIPasteboard.DetectionPattern>, completionHandler: (Result<[UIPasteboard.DetectionPattern : Any], any Error>) -> ())](uipasteboard/detectvalues(for:completionhandler:)-9p2ff.md)
+- [func detectValues(for: Set<UIPasteboard.DetectionPattern>, completionHandler: (Result<[UIPasteboard.DetectionPattern : Any], any Error>) -> ())](./detectvalues%28for,completionhandler%29-9p2ff.md)
   Determines whether the first pasteboard item matches the specified patterns, reading the contents if it finds a match.
 
 

@@ -1,11 +1,12 @@
 # kAudioDeviceTransportTypeFireWire
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,21 +14,26 @@
 var kAudioDeviceTransportTypeFireWire: UInt32 { get }
 ```
 
+```c
+kAudioDeviceTransportTypeFireWire
+```
+
 ## See Also
 
-- [var kAudioDeviceTransportTypeAVB: UInt32](kaudiodevicetransporttypeavb.md)
-- [var kAudioDeviceTransportTypeAggregate: UInt32](kaudiodevicetransporttypeaggregate.md)
-- [var kAudioDeviceTransportTypeAirPlay: UInt32](kaudiodevicetransporttypeairplay.md)
-- [var kAudioDeviceTransportTypeBluetooth: UInt32](kaudiodevicetransporttypebluetooth.md)
-- [var kAudioDeviceTransportTypeBluetoothLE: UInt32](kaudiodevicetransporttypebluetoothle.md)
-- [var kAudioDeviceTransportTypeBuiltIn: UInt32](kaudiodevicetransporttypebuiltin.md)
-- [var kAudioDeviceTransportTypeDisplayPort: UInt32](kaudiodevicetransporttypedisplayport.md)
-- [var kAudioDeviceTransportTypeHDMI: UInt32](kaudiodevicetransporttypehdmi.md)
-- [var kAudioDeviceTransportTypePCI: UInt32](kaudiodevicetransporttypepci.md)
-- [var kAudioDeviceTransportTypeThunderbolt: UInt32](kaudiodevicetransporttypethunderbolt.md)
-- [var kAudioDeviceTransportTypeUSB: UInt32](kaudiodevicetransporttypeusb.md)
-- [var kAudioDeviceTransportTypeUnknown: UInt32](kaudiodevicetransporttypeunknown.md)
-- [var kAudioDeviceTransportTypeVirtual: UInt32](kaudiodevicetransporttypevirtual.md)
+### Constants
+- [var kAudioDeviceTransportTypeAVB: UInt32](./kaudiodevicetransporttypeavb.md)
+- [var kAudioDeviceTransportTypeAggregate: UInt32](./kaudiodevicetransporttypeaggregate.md)
+- [var kAudioDeviceTransportTypeAirPlay: UInt32](./kaudiodevicetransporttypeairplay.md)
+- [var kAudioDeviceTransportTypeBluetooth: UInt32](./kaudiodevicetransporttypebluetooth.md)
+- [var kAudioDeviceTransportTypeBluetoothLE: UInt32](./kaudiodevicetransporttypebluetoothle.md)
+- [var kAudioDeviceTransportTypeBuiltIn: UInt32](./kaudiodevicetransporttypebuiltin.md)
+- [var kAudioDeviceTransportTypeDisplayPort: UInt32](./kaudiodevicetransporttypedisplayport.md)
+- [var kAudioDeviceTransportTypeHDMI: UInt32](./kaudiodevicetransporttypehdmi.md)
+- [var kAudioDeviceTransportTypePCI: UInt32](./kaudiodevicetransporttypepci.md)
+- [var kAudioDeviceTransportTypeThunderbolt: UInt32](./kaudiodevicetransporttypethunderbolt.md)
+- [var kAudioDeviceTransportTypeUSB: UInt32](./kaudiodevicetransporttypeusb.md)
+- [var kAudioDeviceTransportTypeUnknown: UInt32](./kaudiodevicetransporttypeunknown.md)
+- [var kAudioDeviceTransportTypeVirtual: UInt32](./kaudiodevicetransporttypevirtual.md)
 
 
 ---

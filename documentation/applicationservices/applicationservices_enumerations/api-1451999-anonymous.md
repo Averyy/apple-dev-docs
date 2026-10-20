@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kATSUInvalidFontID: Int](katsuinvalidfontid.md)
+- [var kATSUInvalidFontID: Int](../katsuinvalidfontid.md)
 
 
 ---

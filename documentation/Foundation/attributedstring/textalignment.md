@@ -1,7 +1,8 @@
 # AttributedString.TextAlignment
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The explicit alignment of text within its container.
 
@@ -27,23 +28,23 @@ Alignment defines the horizontal position of each line within its container.
 ## Topics
 
 ### Enumeration Cases
-- [AttributedString.TextAlignment.center](attributedstring/textalignment/center.md)
+- [AttributedString.TextAlignment.center](./textalignment/center.md)
   The horizontal center of each line is aligned to the horizontal center of the container.
-- [AttributedString.TextAlignment.left](attributedstring/textalignment/left.md)
+- [AttributedString.TextAlignment.left](./textalignment/left.md)
   The left edge of each line is aligned to the left edge of the container.
-- [AttributedString.TextAlignment.right](attributedstring/textalignment/right.md)
+- [AttributedString.TextAlignment.right](./textalignment/right.md)
   The right edge of each line is aligned to the right edge of the container.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

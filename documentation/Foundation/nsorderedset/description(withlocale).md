@@ -1,7 +1,8 @@
 # description(withLocale:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string that represents the contents of the ordered set, formatted as a property list.
 
@@ -20,23 +21,28 @@ Returns a string that represents the contents of the ordered set, formatted as a
 func description(withLocale locale: Any?) -> String
 ```
 
+```objc
+- (NSString *) descriptionWithLocale:(id) locale;
+```
+
 #### Return Value
 
 A string that represents the contents of the ordered set, formatted as a property list.
 
 #### Discussion
 
-For a description of how locale is applied to each element in the receiving ordered set, see [`description(withLocale:indent:)`](nsorderedset/description(withlocale:indent:).md).
+For a description of how locale is applied to each element in the receiving ordered set, see [`description(withLocale:indent:)`](./description%28withlocale,indent%29.md).
 
 ## Parameters
 
-- `locale`: An [`NSLocale`](nslocale.md) object or an `NSDictionary` object that specifies options used for formatting each of the ordered set’s elements (where recognized). Specify `nil` if you don’t want the elements formatted.
+- `locale`: An [`NSLocale`](../nslocale.md) object or an `NSDictionary` object that specifies options used for formatting each of the ordered set’s elements (where recognized). Specify `nil` if you don’t want the elements formatted.
 
 ## See Also
 
-- [var description: String](nsorderedset/description.md)
+### Describing a Set
+- [var description: String](./description.md)
   A string that represents the contents of the ordered set, formatted as a property list.
-- [func description(withLocale: Any?, indent: Int) -> String](nsorderedset/description(withlocale:indent:).md)
+- [func description(withLocale: Any?, indent: Int) -> String](./description%28withlocale,indent%29.md)
   Returns a string that represents the contents of the ordered set, formatted as a property list.
 
 

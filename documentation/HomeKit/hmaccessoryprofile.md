@@ -1,7 +1,8 @@
 # HMAccessoryProfile
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A profile that certain accessories implement.
 
@@ -19,45 +20,50 @@ A profile that certain accessories implement.
 class HMAccessoryProfile
 ```
 
+```objc
+@interface HMAccessoryProfile : NSObject
+```
+
 #### Overview
 
-This is an abstract superclass for classes such as [`HMCameraProfile`](hmcameraprofile.md) and [`HMNetworkConfigurationProfile`](hmnetworkconfigurationprofile.md). Each profile subclass controls specific features for a specific set of accessories.
+This is an abstract superclass for classes such as [`HMCameraProfile`](./hmcameraprofile.md) and [`HMNetworkConfigurationProfile`](./hmnetworkconfigurationprofile.md). Each profile subclass controls specific features for a specific set of accessories.
 
 ## Topics
 
 ### Getting information about a profile
-- [var accessory: HMAccessory?](hmaccessoryprofile/accessory.md)
+- [var accessory: HMAccessory?](./hmaccessoryprofile/accessory.md)
   The accessory that implements this profile.
-- [var services: [HMService]](hmaccessoryprofile/services.md)
+- [var services: [HMService]](./hmaccessoryprofile/services.md)
   An array of services that represents this profile.
-- [var uniqueIdentifier: UUID](hmaccessoryprofile/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./hmaccessoryprofile/uniqueidentifier.md)
   A unique identifier for the profile.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [HMCameraProfile](hmcameraprofile.md)
-- [HMMediaSourceDisplayOrderProfile](hmmediasourcedisplayorderprofile.md)
-- [HMNetworkConfigurationProfile](hmnetworkconfigurationprofile.md)
+- [HMCameraProfile](./hmcameraprofile.md)
+- [HMMediaSourceDisplayOrderProfile](./hmmediasourcedisplayorderprofile.md)
+- [HMNetworkConfigurationProfile](./hmnetworkconfigurationprofile.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var profiles: [HMAccessoryProfile]](hmaccessory/profiles.md)
+### Managing accessory profiles
+- [var profiles: [HMAccessoryProfile]](./hmaccessory/profiles.md)
   An array of profiles implemented by the accessory.
-- [class HMNetworkConfigurationProfile](hmnetworkconfigurationprofile.md)
+- [class HMNetworkConfigurationProfile](./hmnetworkconfigurationprofile.md)
   A profile that provides information about network protection for an accessory.
-- [class HMCameraProfile](hmcameraprofile.md)
+- [class HMCameraProfile](./hmcameraprofile.md)
   A camera profile that interacts with an accessory’s camera.
 
 

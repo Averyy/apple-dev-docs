@@ -1,7 +1,8 @@
 # isTranslating
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates whether translation is active for a call.
 
@@ -14,6 +15,10 @@ A value that indicates whether translation is active for a call.
 
 ```swift
 var isTranslating: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL isTranslating;
 ```
 
 

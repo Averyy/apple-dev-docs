@@ -1,18 +1,19 @@
 # AVAudioQuality.high
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents a high audio quality for encoding and conversion.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ A value that represents a high audio quality for encoding and conversion.
 case high
 ```
 
+```c
+AVAudioQualityHigh
+```
+
 ## See Also
 
-- [AVAudioQuality.min](avaudioquality/min.md)
+### Choosing a quality level
+- [AVAudioQuality.min](./min.md)
   A value that represents a minimum audio quality for encoding and conversion.
-- [AVAudioQuality.low](avaudioquality/low.md)
+- [AVAudioQuality.low](./low.md)
   A value that represents a low audio quality for encoding and conversion.
-- [AVAudioQuality.medium](avaudioquality/medium.md)
+- [AVAudioQuality.medium](./medium.md)
   A value that represents a medium audio quality for encoding and conversion.
-- [AVAudioQuality.max](avaudioquality/max.md)
+- [AVAudioQuality.max](./max.md)
   A value that represents a maximum audio quality for encoding and conversion.
 
 

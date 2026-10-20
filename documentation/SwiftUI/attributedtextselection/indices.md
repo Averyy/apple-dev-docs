@@ -1,7 +1,8 @@
 # AttributedTextSelection.Indices
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The indices of the current selection.
 
@@ -24,17 +25,17 @@ enum Indices
 ## Topics
 
 ### Enumeration Cases
-- [AttributedTextSelection.Indices.insertionPoint(_:)](attributedtextselection/indices/insertionpoint(_:).md)
+- [AttributedTextSelection.Indices.insertionPoint(_:)](./indices/insertionpoint%28_%29.md)
   The index of a single insertion point.
-- [case ranges(RangeSet<AttributedString.Index>)](attributedtextselection/indices/ranges(_:).md)
+- [case ranges(RangeSet<AttributedString.Index>)](./indices/ranges%28_%29.md)
   The range-set of selected characters.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,18 +1,19 @@
 # CTFontDescriptorProgressHandler
 
 **Framework**: Core Text  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The progress callback type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,14 +21,19 @@ The progress callback type.
 typealias CTFontDescriptorProgressHandler = (CTFontDescriptorMatchingState, CFDictionary) -> Bool
 ```
 
+```c
+typedef _Bool (^)(enum CTFontDescriptorMatchingState, const struct __CFDictionary *) CTFontDescriptorProgressHandler;
+```
+
 #### Discussion
 
-Use this callback type with [`CTFontDescriptorMatchFontDescriptorsWithProgressHandler(_:_:_:)`](ctfontdescriptormatchfontdescriptorswithprogresshandler(_:_:_:).md).
+Use this callback type with [`CTFontDescriptorMatchFontDescriptorsWithProgressHandler(_:_:_:)`](./ctfontdescriptormatchfontdescriptorswithprogresshandler%28_,_,_%29.md).
 
 ## See Also
 
-- [typealias ATSFontRef](atsfontref.md)
-- [typealias CTFontCollectionSortDescriptorsCallback](ctfontcollectionsortdescriptorscallback.md)
+### Data Types
+- [typealias ATSFontRef](./atsfontref.md)
+- [typealias CTFontCollectionSortDescriptorsCallback](./ctfontcollectionsortdescriptorscallback.md)
   The collection sorting callback type.
 
 

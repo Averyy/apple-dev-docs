@@ -1,7 +1,8 @@
 # resourceLoader(_:shouldWaitForLoadingOfRequestedResource:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if it wants to load the requested resource.
 
@@ -19,19 +20,23 @@ Asks the delegate if it wants to load the requested resource.
 optional func resourceLoader(_ resourceLoader: AVAssetResourceLoader, shouldWaitForLoadingOfRequestedResource loadingRequest: AVAssetResourceLoadingRequest) -> Bool
 ```
 
+```objc
+- (BOOL) resourceLoader:(AVAssetResourceLoader *) resourceLoader shouldWaitForLoadingOfRequestedResource:(AVAssetResourceLoadingRequest *) loadingRequest;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if your delegate can load the resource specified by the `loadingRequest` parameter or [`false`](https://developer.apple.com/documentation/swift/false) if it cannot.
+[`true`](../../Swift/true.md) if your delegate can load the resource specified by the `loadingRequest` parameter or [`false`](../../Swift/false.md) if it cannot.
 
 #### Discussion
 
 The resource loader object calls this method when assistance is required of your code to load the specified resource. For example, the resource loader might call this method to load decryption keys that have been specified using a custom URL scheme.
 
-Returning [`true`](https://developer.apple.com/documentation/swift/true) from this method, implies only that the receiver will load, or at least attempt to load, the resource. In some implementations, the actual work of loading the resource might be initiated on another thread, running asynchronously to the resource loading delegate; whether the work begins immediately or merely soon is an implementation detail of the client application.
+Returning [`true`](../../Swift/true.md) from this method, implies only that the receiver will load, or at least attempt to load, the resource. In some implementations, the actual work of loading the resource might be initiated on another thread, running asynchronously to the resource loading delegate; whether the work begins immediately or merely soon is an implementation detail of the client application.
 
-You can load the resource synchronously or asynchronously. In both cases, you must indicate success or failure of the operation by calling the [`finishLoading(with:data:redirect:)`](avassetresourceloadingrequest/finishloading(with:data:redirect:).md) or [`finishLoading(with:)`](avassetresourceloadingrequest/finishloading(with:).md) method of the request object when you finish. If you load the resource asynchronously, you must also store a strong reference to the object in the `loadingRequest` parameter before returning from this method.
+You can load the resource synchronously or asynchronously. In both cases, you must indicate success or failure of the operation by calling the [`finishLoading(with:data:redirect:)`](../avassetresourceloadingrequest/finishloading%28with,data,redirect%29.md) or [`finishLoading(with:)`](../avassetresourceloadingrequest/finishloading%28with%29.md) method of the request object when you finish. If you load the resource asynchronously, you must also store a strong reference to the object in the `loadingRequest` parameter before returning from this method.
 
-If you return [`false`](https://developer.apple.com/documentation/swift/false) from this method, the resource loader treats the loading of the resource as having failed.
+If you return [`false`](../../Swift/false.md) from this method, the resource loader treats the loading of the resource as having failed.
 
 ## Parameters
 
@@ -40,9 +45,10 @@ If you return [`false`](https://developer.apple.com/documentation/swift/false) f
 
 ## See Also
 
-- [func resourceLoader(AVAssetResourceLoader, shouldWaitForRenewalOfRequestedResource: AVAssetResourceRenewalRequest) -> Bool](avassetresourceloaderdelegate/resourceloader(_:shouldwaitforrenewalofrequestedresource:).md)
+### Processing resource requests
+- [func resourceLoader(AVAssetResourceLoader, shouldWaitForRenewalOfRequestedResource: AVAssetResourceRenewalRequest) -> Bool](./resourceloader%28_,shouldwaitforrenewalofrequestedresource%29.md)
   Tells the delegate when assistance is required of the application to renew a resource.
-- [func resourceLoader(AVAssetResourceLoader, didCancel: AVAssetResourceLoadingRequest)](avassetresourceloaderdelegate/resourceloader(_:didcancel:)-3nl51.md)
+- [func resourceLoader(AVAssetResourceLoader, didCancel: AVAssetResourceLoadingRequest)](./resourceloader%28_,didcancel%29-3nl51.md)
   Informs the delegate that a prior loading request has been cancelled.
 
 

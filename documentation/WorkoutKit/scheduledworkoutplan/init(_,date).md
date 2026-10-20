@@ -1,7 +1,8 @@
 # init(_:date:)
 
 **Framework**: WorkoutKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new scheduled workout plan.
 

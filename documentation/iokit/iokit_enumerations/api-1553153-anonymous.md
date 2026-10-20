@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kIOConnectMethodVarOutputSize: Int](kioconnectmethodvaroutputsize.md)
+- [var kIOConnectMethodVarOutputSize: Int](../kioconnectmethodvaroutputsize.md)
 
 
 ---

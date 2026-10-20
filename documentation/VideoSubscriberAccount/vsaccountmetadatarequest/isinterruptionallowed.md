@@ -1,7 +1,8 @@
 # isInterruptionAllowed
 
 **Framework**: Video Subscriber Account  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether your app can prompt the user to authenticate to complete the request.
 
@@ -9,7 +10,7 @@ A Boolean value that indicates whether your app can prompt the user to authentic
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
-- macOS ?+
+- macOS
 - tvOS 10.0+
 - visionOS 1.0+
 
@@ -19,15 +20,20 @@ A Boolean value that indicates whether your app can prompt the user to authentic
 var isInterruptionAllowed: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, getter=isInterruptionAllowed) BOOL interruptionAllowed;
+```
+
 ## See Also
 
-- [var featuredAccountProviderIdentifiers: [String]](vsaccountmetadatarequest/featuredaccountprovideridentifiers.md)
+### Specifying Additional Options
+- [var featuredAccountProviderIdentifiers: [String]](./featuredaccountprovideridentifiers.md)
   The providers your app lists prominently during authentication.
-- [var forceAuthentication: Bool](vsaccountmetadatarequest/forceauthentication.md)
+- [var forceAuthentication: Bool](./forceauthentication.md)
   A Boolean value that indicates whether the app ignores cached credentials.
-- [var localizedVideoTitle: String?](vsaccountmetadatarequest/localizedvideotitle.md)
+- [var localizedVideoTitle: String?](./localizedvideotitle.md)
   A short, user-presentable name for the video that the user wants to play.
-- [var applicationAccountProviders: [VSAccountApplicationProvider]?](vsaccountmetadatarequest/applicationaccountproviders.md)
+- [var applicationAccountProviders: [VSAccountApplicationProvider]?](./applicationaccountproviders.md)
   An array of application-specific providers to add to the list of account providers.
 
 

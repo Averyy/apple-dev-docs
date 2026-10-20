@@ -1,14 +1,15 @@
 # SetControlValue
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual void SetControlValue(IOUserVideoObjectID control_id, IOUserVideoClassID control_class_id);
 ```
 

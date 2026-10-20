@@ -1,7 +1,8 @@
 # replacementEmbeddedThumbnailPixelBuffer(withPhotoFormat:for:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A callback in which you can provide a replacement embedded thumbnail image with compression settings, or strip the existing embedded thumbnail image from the flattened file.
 
@@ -17,30 +18,35 @@ A callback in which you can provide a replacement embedded thumbnail image with 
 optional func replacementEmbeddedThumbnailPixelBuffer(withPhotoFormat replacementEmbeddedThumbnailPhotoFormatOut: AutoreleasingUnsafeMutablePointer<NSDictionary?>, for photo: AVCapturePhoto) -> Unmanaged<CVPixelBuffer>?
 ```
 
+```objc
+- (CVPixelBufferRef) replacementEmbeddedThumbnailPixelBufferWithPhotoFormat:(NSDictionary<NSString *,id> **) replacementEmbeddedThumbnailPhotoFormatOut forPhoto:(AVCapturePhoto *) photo;
+```
+
 #### Return Value
 
 A pixel buffer containing a source image to be encoded to the file as the replacement thumbnail image. To preserve the existing embedded thumbnail photo to the flattened data, set `replacementEmbeddedThumbnailPhotoFormatOut` to `photo.embeddedThumbnailPhotoFormat` and return `nil`. To replace the existing embedded thumbnail, pass a replacement photo format dictionary and return a non-`nil` replacement pixel buffer.  To remove the existing embedded thumbnail, set `replacementEmbeddedThumbnailPhotoFormatOut` to `nil` and return `nil`.
 
 #### Discussion
 
-This callback is optional. If your delegate doesn’t implement this callback, the existing metadata in the in-memory [`AVCapturePhoto`](avcapturephoto.md) container is written directly to the file data representation.
+This callback is optional. If your delegate doesn’t implement this callback, the existing metadata in the in-memory [`AVCapturePhoto`](../avcapturephoto.md) container is written directly to the file data representation.
 
 ## Parameters
 
-- `replacementEmbeddedThumbnailPhotoFormatOut`: A pointer to a dictionary of keys and values from `AVFoundation/AVVideoSettings.h`.  If you pass a non-nil dictionary, [`AVVideoCodecKey`](avvideocodeckey.md) is required, with `width` and `height` keys optional.
-- `photo`: The calling instance of [`AVCapturePhoto`](avcapturephoto.md) whose file metadata you’re modifying.
+- `replacementEmbeddedThumbnailPhotoFormatOut`: A pointer to a dictionary of keys and values from `AVFoundation/AVVideoSettings.h`.  If you pass a non-nil dictionary, [`AVVideoCodecKey`](../avvideocodeckey.md) is required, with `width` and `height` keys optional.
+- `photo`: The calling instance of [`AVCapturePhoto`](../avcapturephoto.md) whose file metadata you’re modifying.
 
 ## See Also
 
-- [func replacementMetadata(for: AVCapturePhoto) -> [String : Any]?](avcapturephotofiledatarepresentationcustomizer/replacementmetadata(for:).md)
-  A callback in which you can provide replacement metadata or direct [`AVCapturePhoto`](avcapturephoto.md) to strip existing metadata from the flattened file.
-- [func replacementDepthData(for: AVCapturePhoto) -> AVDepthData?](avcapturephotofiledatarepresentationcustomizer/replacementdepthdata(for:).md)
+### Replacing or removing metadata
+- [func replacementMetadata(for: AVCapturePhoto) -> [String : Any]?](./replacementmetadata%28for%29.md)
+  A callback in which you can provide replacement metadata or direct [`AVCapturePhoto`](../avcapturephoto.md) to strip existing metadata from the flattened file.
+- [func replacementDepthData(for: AVCapturePhoto) -> AVDepthData?](./replacementdepthdata%28for%29.md)
   A callback in which you can provide replacement depth data or strip existing depth data from the file.
-- [func replacementPortraitEffectsMatte(for: AVCapturePhoto) -> AVPortraitEffectsMatte?](avcapturephotofiledatarepresentationcustomizer/replacementportraiteffectsmatte(for:).md)
+- [func replacementPortraitEffectsMatte(for: AVCapturePhoto) -> AVPortraitEffectsMatte?](./replacementportraiteffectsmatte%28for%29.md)
   A callback in which you can provide a replacement portrait effects matte, or strip the existing portrait effects matte from the file.
-- [func replacementSemanticSegmentationMatte(ofType: AVSemanticSegmentationMatte.MatteType, for: AVCapturePhoto) -> AVSemanticSegmentationMatte?](avcapturephotofiledatarepresentationcustomizer/replacementsemanticsegmentationmatte(oftype:for:).md)
+- [func replacementSemanticSegmentationMatte(ofType: AVSemanticSegmentationMatte.MatteType, for: AVCapturePhoto) -> AVSemanticSegmentationMatte?](./replacementsemanticsegmentationmatte%28oftype,for%29.md)
   Replaces or removes the semantic segmentation matte of the specified type from the flattened file data representation.
-- [func replacementAppleProRAWCompressionSettings(for: AVCapturePhoto, defaultSettings: [String : Any], maximumBitDepth: Int) -> [String : Any]](avcapturephotofiledatarepresentationcustomizer/replacementappleprorawcompressionsettings(for:defaultsettings:maximumbitdepth:).md)
+- [func replacementAppleProRAWCompressionSettings(for: AVCapturePhoto, defaultSettings: [String : Any], maximumBitDepth: Int) -> [String : Any]](./replacementappleprorawcompressionsettings%28for,defaultsettings,maximumbitdepth%29.md)
   Replaces the compression settings the system uses when writing Apple ProRAW data to a Linear DNG file.
 
 

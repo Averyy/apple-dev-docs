@@ -1,7 +1,8 @@
 # CNSpatialAudioRenderingStyle.standard
 
 **Framework**: Cinematic  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Produces an unprocessed spatial stem of the original recording. This is the default rendering style.
 
@@ -16,6 +17,10 @@ Produces an unprocessed spatial stem of the original recording. This is the defa
 
 ```swift
 case standard
+```
+
+```c
+CNSpatialAudioRenderingStyleStandard
 ```
 
 

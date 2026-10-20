@@ -1,7 +1,8 @@
 # navigateTarget(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func navigateTarget(with params: MTRTargetNavigatorClusterNavigateTargetParams, completion: @escaping @Sendable (MTRTargetNavigatorClusterNavigateTargetResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func navigateTarget(with params: MTRTargetNavigatorClusterNavigateTargetParams) async throws -> MTRTargetNavigatorClusterNavigateTargetResponseParams
+```
+
+```objc
+- (void) navigateTargetWithParams:(MTRTargetNavigatorClusterNavigateTargetParams *) params completion:(void (^)(MTRTargetNavigatorClusterNavigateTargetResponseParams *data, NSError *error)) completion;
 ```
 
 

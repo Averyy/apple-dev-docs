@@ -1,7 +1,8 @@
 # type
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of workout event.
 
@@ -19,15 +20,20 @@ The type of workout event.
 var type: HKWorkoutEventType { get }
 ```
 
+```objc
+@property (assign, readonly) HKWorkoutEventType type;
+```
+
 #### Discussion
 
-For a description of possible events, see [`HKWorkoutEventType`](hkworkouteventtype.md).
+For a description of possible events, see [`HKWorkoutEventType`](../hkworkouteventtype.md).
 
 ## See Also
 
-- [var dateInterval: DateInterval](hkworkoutevent/dateinterval.md)
+### Getting property data
+- [var dateInterval: DateInterval](./dateinterval.md)
   The time and duration of the event.
-- [var metadata: [String : Any]?](hkworkoutevent/metadata.md)
+- [var metadata: [String : Any]?](./metadata.md)
   The metadata associated with the workout event.
 
 

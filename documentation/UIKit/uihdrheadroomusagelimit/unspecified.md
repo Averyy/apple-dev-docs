@@ -1,22 +1,27 @@
 # UIHDRHeadroomUsageLimit.unspecified
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Headroom usage limits are not defined
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 case unspecified
+```
+
+```c
+UIHDRHeadroomUsageLimitUnspecified
 ```
 
 

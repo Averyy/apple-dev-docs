@@ -1,17 +1,22 @@
 # accessibilityVisibleCharacterRange()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the range of visible characters in the document.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func accessibilityVisibleCharacterRange() -> NSRange
+```
+
+```objc
+- (NSRange) accessibilityVisibleCharacterRange;
 ```
 
 #### Return Value
@@ -20,13 +25,14 @@ The range of the visible characters in the document. This method should return t
 
 #### Discussion
 
-This method is the getter for the [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) protocol’s [`accessibilityVisibleCharacterRange`](nsaccessibility-c.protocol/accessibilityvisiblecharacterrange.md) property.
+This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityVisibleCharacterRange`](../nsaccessibility-c.protocol/accessibilityvisiblecharacterrange.md) property.
 
 ## See Also
 
-- [func accessibilityAttributedString(for: NSRange) -> NSAttributedString?](nsaccessibilitystatictext/accessibilityattributedstring(for:).md)
+### Supporting Accessibility
+- [func accessibilityAttributedString(for: NSRange) -> NSAttributedString?](./accessibilityattributedstring%28for%29.md)
   Returns the attributed substring for the specified range of characters.
-- [func accessibilityValue() -> String?](nsaccessibilitystatictext/accessibilityvalue.md)
+- [func accessibilityValue() -> String?](./accessibilityvalue%28%29.md)
   Returns the text that the accessibility element displays.
 
 

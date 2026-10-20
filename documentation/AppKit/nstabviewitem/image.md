@@ -1,7 +1,8 @@
 # image
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Gets and set the image for this tab view item. The image may only be used in certain tab view styles and options.
 
@@ -14,13 +15,18 @@ Gets and set the image for this tab view item. The image may only be used in cer
 var image: NSImage? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSImage * image;
+```
+
 #### Discussion
 
 The default value is `nil`.
 
 ## See Also
 
-- [var viewController: NSViewController?](nstabviewitem/viewcontroller.md)
+### Instance Properties
+- [var viewController: NSViewController?](./viewcontroller.md)
 
 
 ---

@@ -1,16 +1,17 @@
 # COREFOUNDATION_CFPLUGINCOM_SEPARATE
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,10 +19,15 @@
 var COREFOUNDATION_CFPLUGINCOM_SEPARATE: Int32 { get }
 ```
 
+```c
+#define COREFOUNDATION_CFPLUGINCOM_SEPARATE
+```
+
 ## See Also
 
-- [var CF_HAS_TYPED_ALLOCATOR: Int32](cf_has_typed_allocator.md)
-- [var CGFLOAT_DEFINED: Int32](cgfloat_defined.md)
+### Macros
+- [var CF_HAS_TYPED_ALLOCATOR: Int32](./cf_has_typed_allocator.md)
+- [var CGFLOAT_DEFINED: Int32](./cgfloat_defined.md)
 
 
 ---

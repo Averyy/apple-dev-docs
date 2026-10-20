@@ -1,7 +1,8 @@
 # init(type:description:anyOf:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a schema for a string enumeration.
 
@@ -19,6 +20,12 @@ Creates a schema for a string enumeration.
 init(type: any Generable.Type, description: String? = nil, anyOf choices: [String])
 ```
 
+**Other overloads**:
+
+```swift
+init(type: any Generable.Type, description: String? = nil, anyOf types: [any Generable.Type])
+```
+
 ## Parameters
 
 - `type`: The type this schema represents.
@@ -27,13 +34,14 @@ init(type: any Generable.Type, description: String? = nil, anyOf choices: [Strin
 
 ## See Also
 
-- [init(root: DynamicGenerationSchema, dependencies: [DynamicGenerationSchema]) throws](generationschema/init(root:dependencies:).md)
+### Creating a generation schema
+- [init(root: DynamicGenerationSchema, dependencies: [DynamicGenerationSchema]) throws](./init%28root,dependencies%29.md)
   Creates a schema by providing an array of dynamic schemas.
-- [init(type: any Generable.Type, description: String?, properties: [GenerationSchema.Property])](generationschema/init(type:description:properties:).md)
+- [init(type: any Generable.Type, description: String?, properties: [GenerationSchema.Property])](./init%28type,description,properties%29.md)
   Creates a schema by providing an array of properties.
-- [init(type: any Generable.Type, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [GenerationSchema.Property])](generationschema/init(type:description:representnilexplicitlyingeneratedcontent:properties:).md)
+- [init(type: any Generable.Type, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [GenerationSchema.Property])](./init%28type,description,representnilexplicitlyingeneratedcontent,properties%29.md)
   Creates a schema by providing an array of properties.
-- [GenerationSchema.Property](generationschema/property.md)
+- [GenerationSchema.Property](./property.md)
   A named, strongly typed member of an object type with an optional description and guides.
 
 

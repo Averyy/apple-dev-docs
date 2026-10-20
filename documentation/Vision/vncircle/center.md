@@ -1,7 +1,8 @@
 # center
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The circle’s center point.
 
@@ -19,15 +20,20 @@ The circle’s center point.
 var center: VNPoint { get }
 ```
 
+```objc
+@property (strong, readonly) VNPoint * center;
+```
+
 ## See Also
 
-- [var diameter: Double](vncircle/diameter.md)
+### Inspecting a Circle
+- [var diameter: Double](./diameter.md)
   The circle’s diameter.
-- [var radius: Double](vncircle/radius.md)
+- [var radius: Double](./radius.md)
   The circle’s radius.
-- [func contains(VNPoint) -> Bool](vncircle/contains(_:).md)
+- [func contains(VNPoint) -> Bool](./contains%28_%29.md)
   Determines if this circle, including its boundary, contains the specified point.
-- [func contains(VNPoint, inCircumferentialRingOfWidth: Double) -> Bool](vncircle/contains(_:incircumferentialringofwidth:).md)
+- [func contains(VNPoint, inCircumferentialRingOfWidth: Double) -> Bool](./contains%28_,incircumferentialringofwidth%29.md)
   Determines if a ring around this circle’s circumference contains the specified point.
 
 

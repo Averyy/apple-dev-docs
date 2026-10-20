@@ -1,7 +1,8 @@
 # CSSM_ALGID_PKCS5_PBKDF1_MD2
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_ALGID_PKCS5_PBKDF1_MD2: UInt32 { get }
+```
+
+```c
+CSSM_ALGID_PKCS5_PBKDF1_MD2
 ```
 
 

@@ -1,7 +1,8 @@
 # SecPreferencesDomain.dynamic
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a dynamic search list (typically provided by removable keychains such as smart cards).
 
@@ -13,6 +14,10 @@ Indicates a dynamic search list (typically provided by removable keychains such 
 
 ```swift
 case dynamic
+```
+
+```c
+kSecPreferencesDomainDynamic
 ```
 
 

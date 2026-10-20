@@ -1,7 +1,8 @@
 # proratedRefund
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The transaction was partially refunded based on consumption.
 

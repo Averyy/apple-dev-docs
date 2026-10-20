@@ -1,7 +1,8 @@
 # cellularServiceID
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Service identifier to use for this request.
 
@@ -16,11 +17,12 @@ var cellularServiceID: CellularServiceID
 
 ## See Also
 
-- [var handle: RCSHandle.URI](rcsservice/businessinformationrequest/handle.md)
+### Accessing request properties
+- [var handle: RCSHandle.URI](./handle.md)
   URI handle of the target.
-- [var cachePolicy: RCSService.BusinessInformationRequest.CachePolicy](rcsservice/businessinformationrequest/cachepolicy-swift.property.md)
+- [var cachePolicy: RCSService.BusinessInformationRequest.CachePolicy](./cachepolicy-swift.property.md)
   Cache policy to use for request.
-- [RCSService.BusinessInformationRequest.CachePolicy](rcsservice/businessinformationrequest/cachepolicy-swift.enum.md)
+- [RCSService.BusinessInformationRequest.CachePolicy](./cachepolicy-swift.enum.md)
   `
 
 

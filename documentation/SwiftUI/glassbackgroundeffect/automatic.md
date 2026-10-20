@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default glass background effect, based on the glass’s context.
 
@@ -13,6 +14,8 @@ The default glass background effect, based on the glass’s context.
 ```swift
 static var automatic: AutomaticGlassBackgroundEffect { get }
 ```
+
+Available when `Self` is `AutomaticGlassBackgroundEffect`.
 
 
 ---

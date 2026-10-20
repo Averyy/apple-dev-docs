@@ -1,7 +1,8 @@
 # FileType
 
 **Framework**: System  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A file type matching those contained in a C `mode_t`.
 
@@ -28,41 +29,41 @@ struct FileType
 ## Topics
 
 ### Initializers
-- [init(rawValue: CInterop.Mode)](filetype/init(rawvalue:).md)
+- [init(rawValue: CInterop.Mode)](./filetype/init%28rawvalue%29.md)
   Creates a strongly-typed file type from the raw C `mode_t`.
 ### Instance Properties
-- [var rawValue: CInterop.Mode](filetype/rawvalue.md)
+- [var rawValue: CInterop.Mode](./filetype/rawvalue.md)
   The raw file-type bits from the C mode.
 ### Type Properties
-- [static var blockSpecial: FileType](filetype/blockspecial.md)
+- [static var blockSpecial: FileType](./filetype/blockspecial.md)
   Block special device
-- [static var characterSpecial: FileType](filetype/characterspecial.md)
+- [static var characterSpecial: FileType](./filetype/characterspecial.md)
   Character special device
-- [static var directory: FileType](filetype/directory.md)
+- [static var directory: FileType](./filetype/directory.md)
   Directory
-- [static var fifo: FileType](filetype/fifo.md)
+- [static var fifo: FileType](./filetype/fifo.md)
   FIFO (or named pipe)
-- [static var regular: FileType](filetype/regular.md)
+- [static var regular: FileType](./filetype/regular.md)
   Regular file
-- [static var socket: FileType](filetype/socket.md)
+- [static var socket: FileType](./filetype/socket.md)
   Socket
-- [static var symbolicLink: FileType](filetype/symboliclink.md)
+- [static var symbolicLink: FileType](./filetype/symboliclink.md)
   Symbolic link
-- [static var whiteout: FileType](filetype/whiteout.md)
+- [static var whiteout: FileType](./filetype/whiteout.md)
   Whiteout file
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

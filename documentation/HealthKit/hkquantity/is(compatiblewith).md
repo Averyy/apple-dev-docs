@@ -1,7 +1,8 @@
 # is(compatibleWith:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a boolean value indicating whether the quantity is compatible with the provided unit.
 
@@ -19,9 +20,13 @@ Returns a boolean value indicating whether the quantity is compatible with the p
 func `is`(compatibleWith unit: HKUnit) -> Bool
 ```
 
+```objc
+- (BOOL) isCompatibleWithUnit:(HKUnit *) unit;
+```
+
 #### Return Value
 
-`Yes` if the quantity is compatible; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+`Yes` if the quantity is compatible; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -35,7 +40,8 @@ Complex units are compatible if the equation defining the units are compatible. 
 
 ## See Also
 
-- [func doubleValue(for: HKUnit) -> Double](hkquantity/doublevalue(for:).md)
+### Working With Units
+- [func doubleValue(for: HKUnit) -> Double](./doublevalue%28for%29.md)
   Returns the quantity’s value in the provided unit.
 
 

@@ -1,14 +1,15 @@
 # GameCenterLeaderboardVersionV2LocalizationsLinkagesResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardVersionV2LocalizationsLinkagesResponse.Data
 ```
 
@@ -20,7 +21,7 @@ object GameCenterLeaderboardVersionV2LocalizationsLinkagesResponse.Data
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboardLocalizations`
 
 
 ---

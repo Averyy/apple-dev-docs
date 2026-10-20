@@ -1,7 +1,8 @@
 # Enable Remote Desktop
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Enable Remote Desktop on a device.
 
@@ -20,7 +21,7 @@ All other options remain unchanged.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -70,9 +71,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object EnableRemoteDesktopCommand](enableremotedesktopcommand.md)
+- [object EnableRemoteDesktopCommand](./enableremotedesktopcommand.md)
   The command to enable Remote Desktop on a device.
-- [object EnableRemoteDesktopResponse](enableremotedesktopresponse.md)
+- [object EnableRemoteDesktopResponse](./enableremotedesktopresponse.md)
   A response from the device after it processes the command to enable Remote Desktop on a device.
 
 ## Endpoint
@@ -81,13 +82,21 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `EnableRemoteDesktopCommand`
+
 The request object the server returns for the Enable Remote Desktop Command.
+
+## Responses
+
+- `200` OK (`EnableRemoteDesktopResponse`, `application/xml`): The response object the system returns for the Enable Remote Desktop Command.
 
 ## See Also
 
-- [Disable Remote Desktop](disable-remote-desktop-command.md)
+### Managed settings
+- [Disable Remote Desktop](./disable-remote-desktop-command.md)
   Disable Remote Desktop on a device.
-- [Settings](settings-command.md)
+- [Settings](./settings-command.md)
   Configure settings on a device.
 
 

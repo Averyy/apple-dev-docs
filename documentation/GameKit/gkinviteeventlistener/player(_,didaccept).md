@@ -1,7 +1,8 @@
 # player(_:didAccept:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles the event when the local player accepts an invitation from another player.
 
@@ -19,9 +20,13 @@ Handles the event when the local player accepts an invitation from another playe
 optional func player(_ player: GKPlayer, didAccept invite: GKInvite)
 ```
 
+```objc
+- (void) player:(GKPlayer *) player didAcceptInvite:(GKInvite *) invite;
+```
+
 ## Mentions
 
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
+- [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
 
 #### Discussion
 
@@ -34,11 +39,13 @@ This method presents the matchmaker view controller in the invitation state so t
 
 ## See Also
 
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
+### Related Documentation
+- [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
   Discover and invite other players to participate in a real-time game.
-- [func player(GKPlayer, didRequestMatchWithRecipients: [GKPlayer])](gkinviteeventlistener/player(_:didrequestmatchwithrecipients:).md)
+### Starting a New Match
+- [func player(GKPlayer, didRequestMatchWithRecipients: [GKPlayer])](./player%28_,didrequestmatchwithrecipients%29.md)
   Handles the event when the local player sends other players an invitation to join a match.
-- [func player(GKPlayer, didRequestMatchWithPlayers: [String])](gkinviteeventlistener/player(_:didrequestmatchwithplayers:).md)
+- [func player(GKPlayer, didRequestMatchWithPlayers: [String])](./player%28_,didrequestmatchwithplayers%29.md)
   Handles the event when the local player sends other players an invitation to join a match.
 
 

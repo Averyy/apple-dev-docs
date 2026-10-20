@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the string that uniquely identifies the data at the specified location in the view.
@@ -19,6 +20,10 @@ Returns the string that uniquely identifies the data at the specified location i
 func modelIdentifierForElement(at idx: IndexPath, in view: UIView) -> String?
 ```
 
+```objc
+- (NSString *) modelIdentifierForElementAtIndexPath:(NSIndexPath *) idx inView:(UIView *) view;
+```
+
 #### Return Value
 
 A string that uniquely identifies the data object.
@@ -34,7 +39,8 @@ Use the provided information to locate the requested data object. From that obje
 
 ## See Also
 
-- [func indexPathForElement(withModelIdentifier: String, in: UIView) -> IndexPath?](uidatasourcemodelassociation/indexpathforelement(withmodelidentifier:in:).md)
+### Locating the data
+- [func indexPathForElement(withModelIdentifier: String, in: UIView) -> IndexPath?](./indexpathforelement%28withmodelidentifier,in%29.md)
   Returns the current index of the data object with the specified identifier.
 
 

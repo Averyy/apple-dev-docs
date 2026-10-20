@@ -1,12 +1,13 @@
 # NSFontRenderingMode.defaultRenderingMode
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Determines the actual mode based on the user preference settings.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Determines the actual mode based on the user preference settings.
 case defaultRenderingMode
 ```
 
+```c
+NSFontDefaultRenderingMode
+```
+
 ## See Also
 
-- [NSFontRenderingMode.antialiasedRenderingMode](nsfontrenderingmode/antialiasedrenderingmode.md)
+### Constants
+- [NSFontRenderingMode.antialiasedRenderingMode](./antialiasedrenderingmode.md)
   Specifies antialiased, floating-point advancements rendering mode (synonymous with printerFont).
-- [NSFontRenderingMode.integerAdvancementsRenderingMode](nsfontrenderingmode/integeradvancementsrenderingmode.md)
+- [NSFontRenderingMode.integerAdvancementsRenderingMode](./integeradvancementsrenderingmode.md)
   Specifies integer advancements rendering mode.
-- [NSFontRenderingMode.antialiasedIntegerAdvancementsRenderingMode](nsfontrenderingmode/antialiasedintegeradvancementsrenderingmode.md)
+- [NSFontRenderingMode.antialiasedIntegerAdvancementsRenderingMode](./antialiasedintegeradvancementsrenderingmode.md)
   Specifies antialiased, integer advancements rendering mode.
 
 

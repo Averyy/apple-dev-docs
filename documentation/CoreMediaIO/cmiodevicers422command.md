@@ -1,7 +1,8 @@
 # CMIODeviceRS422Command
 
 **Framework**: Core Media I/O  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -13,31 +14,36 @@
 struct CMIODeviceRS422Command
 ```
 
+```c
+struct CMIODeviceRS422Command;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cmiodevicers422command/init.md)
-- [init(mCommand: UnsafeMutablePointer<UInt8>!, mCommandLength: UInt32, mResponse: UnsafeMutablePointer<UInt8>!, mResponseLength: UInt32, mResponseUsed: UInt32)](cmiodevicers422command/init(mcommand:mcommandlength:mresponse:mresponselength:mresponseused:).md)
+- [init()](./cmiodevicers422command/init%28%29.md)
+- [init(mCommand: UnsafeMutablePointer<UInt8>!, mCommandLength: UInt32, mResponse: UnsafeMutablePointer<UInt8>!, mResponseLength: UInt32, mResponseUsed: UInt32)](./cmiodevicers422command/init%28mcommand,mcommandlength,mresponse,mresponselength,mresponseused%29.md)
 ### Instance Properties
-- [var mCommand: UnsafeMutablePointer<UInt8>!](cmiodevicers422command/mcommand.md)
-- [var mCommandLength: UInt32](cmiodevicers422command/mcommandlength.md)
-- [var mResponse: UnsafeMutablePointer<UInt8>!](cmiodevicers422command/mresponse.md)
-- [var mResponseLength: UInt32](cmiodevicers422command/mresponselength.md)
-- [var mResponseUsed: UInt32](cmiodevicers422command/mresponseused.md)
+- [var mCommand: UnsafeMutablePointer<UInt8>!](./cmiodevicers422command/mcommand.md)
+- [var mCommandLength: UInt32](./cmiodevicers422command/mcommandlength.md)
+- [var mResponse: UnsafeMutablePointer<UInt8>!](./cmiodevicers422command/mresponse.md)
+- [var mResponseLength: UInt32](./cmiodevicers422command/mresponselength.md)
+- [var mResponseUsed: UInt32](./cmiodevicers422command/mresponseused.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct CMIODeviceAVCCommand](cmiodeviceavccommand.md)
-- [struct CMIODeviceSMPTETimeCallback](cmiodevicesmptetimecallback.md)
-- [struct CMIODeviceStreamConfiguration](cmiodevicestreamconfiguration.md)
-- [struct CMIOObjectPropertyAddress](cmioobjectpropertyaddress.md)
-- [struct CMIOStreamDeck](cmiostreamdeck.md)
-- [struct CMIOStreamScheduledOutputNotificationProcAndRefCon](cmiostreamscheduledoutputnotificationprocandrefcon.md)
+### Structures
+- [struct CMIODeviceAVCCommand](./cmiodeviceavccommand.md)
+- [struct CMIODeviceSMPTETimeCallback](./cmiodevicesmptetimecallback.md)
+- [struct CMIODeviceStreamConfiguration](./cmiodevicestreamconfiguration.md)
+- [struct CMIOObjectPropertyAddress](./cmioobjectpropertyaddress.md)
+- [struct CMIOStreamDeck](./cmiostreamdeck.md)
+- [struct CMIOStreamScheduledOutputNotificationProcAndRefCon](./cmiostreamscheduledoutputnotificationprocandrefcon.md)
 
 
 ---

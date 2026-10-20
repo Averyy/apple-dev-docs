@@ -1,7 +1,8 @@
 # hoverEffect
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The kind for hover effects.
 
@@ -28,15 +29,16 @@ This kind does not affect the `onHover` modifier.
 
 ## See Also
 
-- [static let interaction: ContentShapeKinds](contentshapekinds/interaction.md)
+### Getting shape kinds
+- [static let interaction: ContentShapeKinds](./interaction.md)
   The kind for hit-testing and accessibility.
-- [static let dragPreview: ContentShapeKinds](contentshapekinds/dragpreview.md)
+- [static let dragPreview: ContentShapeKinds](./dragpreview.md)
   The kind for drag and drop previews.
-- [static let contextMenuPreview: ContentShapeKinds](contentshapekinds/contextmenupreview.md)
+- [static let contextMenuPreview: ContentShapeKinds](./contextmenupreview.md)
   The kind for context menu previews.
-- [static let focusEffect: ContentShapeKinds](contentshapekinds/focuseffect.md)
+- [static let focusEffect: ContentShapeKinds](./focuseffect.md)
   The kind for the focus effect.
-- [static let accessibility: ContentShapeKinds](contentshapekinds/accessibility.md)
+- [static let accessibility: ContentShapeKinds](./accessibility.md)
   The kind for accessibility visuals and sorting.
 
 

@@ -1,7 +1,8 @@
 # kSecPolicyApplePayIssuerEncryption
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 9.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kSecPolicyApplePayIssuerEncryption: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyApplePayIssuerEncryption;
 ```
 
 

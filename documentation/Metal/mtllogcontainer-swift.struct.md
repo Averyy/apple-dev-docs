@@ -1,7 +1,8 @@
 # MTLLogContainer
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of logged messages, created when a Metal device runs a command buffer.
 
@@ -11,7 +12,7 @@ A collection of logged messages, created when a Metal device runs a command buff
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,16 +22,17 @@ struct MTLLogContainer
 
 #### Overview
 
-Enumerate a log container object to get a list of [`MTLFunctionLog`](mtlfunctionlog.md) instances.
+Enumerate a log container object to get a list of [`MTLFunctionLog`](./mtlfunctionlog.md) instances.
 
 ## Relationships
 
 ### Conforms To
-- [Sequence](../swift/sequence.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [protocol MTLFunctionLog](mtlfunctionlog.md)
+### Shader logs
+- [protocol MTLFunctionLog](./mtlfunctionlog.md)
   A log entry a Metal device generates when the it runs a command buffer.
 
 

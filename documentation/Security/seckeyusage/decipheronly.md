@@ -1,7 +1,8 @@
 # decipherOnly
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The `DecipherOnly` bit is set in KeyUsage extension.
 
@@ -12,6 +13,10 @@ The `DecipherOnly` bit is set in KeyUsage extension.
 
 ```swift
 static var decipherOnly: SecKeyUsage { get }
+```
+
+```c
+kSecKeyUsageDecipherOnly
 ```
 
 

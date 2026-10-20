@@ -1,7 +1,8 @@
 # wasAddedAfterContentCatalogCompleted
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the item was captured on the camera after the camera’s content had been fully enumerated.
 
@@ -18,15 +19,20 @@ A Boolean value indicating whether the item was captured on the camera after the
 var wasAddedAfterContentCatalogCompleted: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=wasAddedAfterContentCatalogCompleted) BOOL addedAfterContentCatalogCompleted;
+```
+
 #### Discussion
 
 This value does not apply to files added as a result of adding a new store to the camera.
 
 ## See Also
 
-- [var creationDate: Date?](iccameraitem/creationdate.md)
+### Determining an Item’s Change Dates
+- [var creationDate: Date?](./creationdate.md)
   The item’s creation date, usually the same as its `EXIF` creation date.
-- [var modificationDate: Date?](iccameraitem/modificationdate.md)
+- [var modificationDate: Date?](./modificationdate.md)
   The item’s modification date, usually the same as its `EXIF` modification date.
 
 

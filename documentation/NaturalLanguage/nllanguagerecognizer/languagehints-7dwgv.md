@@ -1,7 +1,8 @@
 # languageHints
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary that maps languages to their probabilities in the language identification process.
 
@@ -23,11 +24,12 @@ var languageHints: [NLLanguage : Double] { get set }
 
 #### Discussion
 
-This is a dictionary mapping languages to their probabilities and used by [`processString(_:)`](nllanguagerecognizer/processstring(_:).md).
+This is a dictionary mapping languages to their probabilities and used by [`processString(_:)`](./processstring%28_%29.md).
 
 ## See Also
 
-- [var languageConstraints: [NLLanguage]](nllanguagerecognizer/languageconstraints.md)
+### Guiding the recognizer
+- [var languageConstraints: [NLLanguage]](./languageconstraints.md)
   Limits the set of possible languages that the recognizer will return.
 
 

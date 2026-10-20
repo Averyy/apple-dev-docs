@@ -1,7 +1,8 @@
 # updateName(_:completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the name of the service group.
 
@@ -14,25 +15,36 @@ Updates the name of the service group.
 ## Declaration
 
 ```swift
+func updateName(_ name: String, completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func updateName(_ name: String) async throws
+```
+
+```objc
+- (void) updateName:(NSString *) name completionHandler:(void (^)(NSError *error)) completion;
 ```
 
 ## Parameters
 
 - `name`: The new name; must not be `nil`.
-- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `completion`: The block executed after the request is processed.
+
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [var name: String](hmservicegroup/name.md)
+### Managing Service Groups
+- [var name: String](./name.md)
   The name of the service group.
-- [var uniqueIdentifier: UUID](hmservicegroup/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./uniqueidentifier.md)
   The unique identifier for the service group.
-- [var services: [HMService]](hmservicegroup/services.md)
+- [var services: [HMService]](./services.md)
   Array of the services in the service group.
-- [func addService(HMService, completionHandler: ((any Error)?) -> Void)](hmservicegroup/addservice(_:completionhandler:).md)
+- [func addService(HMService, completionHandler: ((any Error)?) -> Void)](./addservice%28_,completionhandler%29.md)
   Adds a new service to the service group.
-- [func removeService(HMService, completionHandler: ((any Error)?) -> Void)](hmservicegroup/removeservice(_:completionhandler:).md)
+- [func removeService(HMService, completionHandler: ((any Error)?) -> Void)](./removeservice%28_,completionhandler%29.md)
   Removes a service from the service group.
 
 

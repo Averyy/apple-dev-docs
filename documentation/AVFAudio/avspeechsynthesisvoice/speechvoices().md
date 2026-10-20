@@ -1,7 +1,8 @@
 # speechVoices()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Retrieves all available voices on the device.
 
@@ -10,7 +11,7 @@ Retrieves all available voices on the device.
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.14+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,21 +21,26 @@ Retrieves all available voices on the device.
 class func speechVoices() -> [AVSpeechSynthesisVoice]
 ```
 
+```objc
++ (NSArray<AVSpeechSynthesisVoice *> *) speechVoices;
+```
+
 #### Return Value
 
 An array of voices.
 
 #### Discussion
 
-Use the [`language`](avspeechsynthesisvoice/language.md) property to identify each voice by its language and locale.
+Use the [`language`](./language.md) property to identify each voice by its language and locale.
 
 ## See Also
 
-- [init?(identifier: String)](avspeechsynthesisvoice/init(identifier:).md)
+### Creating a voice
+- [init?(identifier: String)](./init%28identifier%29.md)
   Retrieves a voice for the identifier you specify.
-- [init?(language: String?)](avspeechsynthesisvoice/init(language:).md)
+- [init?(language: String?)](./init%28language%29.md)
   Retrieves a voice for the BCP 47 code language code you specify.
-- [let AVSpeechSynthesisVoiceIdentifierAlex: String](avspeechsynthesisvoiceidentifieralex.md)
+- [let AVSpeechSynthesisVoiceIdentifierAlex: String](../avspeechsynthesisvoiceidentifieralex.md)
   The voice that the system identifies as Alex.
 
 

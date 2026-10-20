@@ -1,7 +1,8 @@
 # timeRanges
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of ranges that indicate the offsets within the reference signature that this media item describes.
 
@@ -22,11 +23,12 @@ var timeRanges: [Range<TimeInterval>] { get }
 
 ## See Also
 
-- [subscript(SHMediaItemProperty) -> Any](shmediaitem/subscript(_:).md)
+### Working with media item properties
+- [subscript(SHMediaItemProperty) -> Any](./subscript%28_%29.md)
   Accesses the property for the specified key for reading.
-- [struct SHMediaItemProperty](shmediaitemproperty.md)
+- [struct SHMediaItemProperty](../shmediaitemproperty.md)
   Constants for the media item property names.
-- [var frequencySkewRanges: [Range<Float>]](shmediaitem/frequencyskewranges-1j7d3.md)
+- [var frequencySkewRanges: [Range<Float>]](./frequencyskewranges-1j7d3.md)
   An array of ranges that indicate the frequency skews in the reference signature that this media item describes.
 
 

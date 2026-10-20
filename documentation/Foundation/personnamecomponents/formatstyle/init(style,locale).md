@@ -1,7 +1,8 @@
 # init(style:locale:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance using the provided format style and locale.
 
@@ -24,14 +25,14 @@ init(style: PersonNameComponents.FormatStyle.Style = .medium, locale: Locale = .
 
 Customize the person name components format style by providing a style and a locale.
 
-The formatted style can be long, medium, short, or abbreviated. The default value is [`PersonNameComponents.FormatStyle.Style.medium`](personnamecomponents/formatstyle/style-swift.enum/medium.md).
+The formatted style can be long, medium, short, or abbreviated. The default value is [`PersonNameComponents.FormatStyle.Style.medium`](./style-swift.enum/medium.md).
 
-The locale provides linguistic and cultural context to the formatted name. The default value is [`autoupdatingCurrent`](locale/autoupdatingcurrent.md).
+The locale provides linguistic and cultural context to the formatted name. The default value is [`autoupdatingCurrent`](../../locale/autoupdatingcurrent.md).
 
 ## Parameters
 
-- `style`: The [`PersonNameComponents.FormatStyle.Style`](personnamecomponents/formatstyle/style-swift.enum.md) used to format the name.
-- `locale`: The [`Locale`](locale.md) used to create the string representation of the name.
+- `style`: The [`PersonNameComponents.FormatStyle.Style`](./style-swift.enum.md) used to format the name.
+- `locale`: The [`Locale`](../../locale.md) used to create the string representation of the name.
 
 
 ---

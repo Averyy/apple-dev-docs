@@ -1,7 +1,8 @@
 # presentedItemDidMove(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells your object that the presented item moved or was renamed.
 
@@ -20,9 +21,13 @@ Tells your object that the presented item moved or was renamed.
 optional func presentedItemDidMove(to newURL: URL)
 ```
 
+```objc
+- (void) presentedItemDidMoveToURL:(NSURL *) newURL;
+```
+
 #### Discussion
 
-Use this method to update the value returned by the [`presentedItemURL`](nsfilepresenter/presenteditemurl.md) property of your object.
+Use this method to update the value returned by the [`presentedItemURL`](./presenteditemurl.md) property of your object.
 
 ## Parameters
 
@@ -30,13 +35,15 @@ Use this method to update the value returned by the [`presentedItemURL`](nsfilep
 
 ## See Also
 
-- [var presentedItemURL: URL?](nsfilepresenter/presenteditemurl.md)
+### Related Documentation
+- [var presentedItemURL: URL?](./presenteditemurl.md)
   The URL of the presented file or directory.
-- [func savePresentedItemChanges(completionHandler: ((any Error)?) -> Void)](nsfilepresenter/savepresenteditemchanges(completionhandler:).md)
+### Handling Changes to Files
+- [func savePresentedItemChanges(completionHandler: ((any Error)?) -> Void)](./savepresenteditemchanges%28completionhandler%29.md)
   Tells your object to save any unsaved changes for the presented item.
-- [func accommodatePresentedItemDeletion(completionHandler: ((any Error)?) -> Void)](nsfilepresenter/accommodatepresenteditemdeletion(completionhandler:).md)
+- [func accommodatePresentedItemDeletion(completionHandler: ((any Error)?) -> Void)](./accommodatepresenteditemdeletion%28completionhandler%29.md)
   Tells your object that its presented item is about to be deleted.
-- [func presentedItemDidChange()](nsfilepresenter/presenteditemdidchange.md)
+- [func presentedItemDidChange()](./presenteditemdidchange%28%29.md)
   Tells your object that the presented item’s contents or attributes changed.
 
 

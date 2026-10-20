@@ -2,6 +2,7 @@
 
 **Framework**: WebKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 A JavaScript `alert()` function has been invoked.
@@ -24,6 +25,12 @@ func handleJavaScriptAlert(message: String, initiatedBy frame: WebPage.FrameInfo
 
 - `message`: The message provided by JavaScript.
 - `frame`: Information about the frame whose JavaScript process initiated this call.
+
+## Default Implementations
+
+### WebPage.DialogPresenting Implementations
+- [func handleJavaScriptAlert(message: String, initiatedBy: WebPage.FrameInfo) async](./handlejavascriptalert%28message,initiatedby%29-32742.md)
+  By default, this method immediately returns.
 
 
 ---

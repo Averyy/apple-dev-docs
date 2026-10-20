@@ -1,7 +1,8 @@
 # groups
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Component groups displayed by text formatting view.
 
@@ -15,6 +16,10 @@ Component groups displayed by text formatting view.
 
 ```swift
 var groups: [UITextFormattingViewController.ComponentGroup] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<UITextFormattingViewControllerComponentGroup *> * groups;
 ```
 
 

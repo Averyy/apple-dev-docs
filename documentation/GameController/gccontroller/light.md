@@ -1,7 +1,8 @@
 # light
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller’s light settings.
 
@@ -19,15 +20,20 @@ The controller’s light settings.
 var light: GCDeviceLight? { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly, nullable) GCDeviceLight * light;
+```
+
 #### Discussion
 
 Use the light settings to signal the user or to create a more immersive experience. If the controller doesn’t provide light settings, this property is `nil`.
 
 ## See Also
 
-- [var battery: GCDeviceBattery?](gccontroller/battery.md)
+### Accessing battery, haptics, and light objects
+- [var battery: GCDeviceBattery?](./battery.md)
   The controller’s battery information.
-- [var haptics: GCDeviceHaptics?](gccontroller/haptics.md)
+- [var haptics: GCDeviceHaptics?](./haptics.md)
   The controller’s haptics information.
 
 

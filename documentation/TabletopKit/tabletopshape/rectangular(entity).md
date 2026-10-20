@@ -1,7 +1,8 @@
 # rectangular(entity:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - visionOS 2.0+
@@ -15,7 +16,8 @@
 
 ## See Also
 
-- [static func round(entity: Entity) -> TabletopShape](tabletopshape/round(entity:).md)
+### Creating a table that you render using an entity
+- [static func round(entity: Entity) -> TabletopShape](./round%28entity%29.md)
 
 
 ---

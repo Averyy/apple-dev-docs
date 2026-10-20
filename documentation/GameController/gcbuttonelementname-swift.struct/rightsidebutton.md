@@ -1,7 +1,8 @@
 # rightSideButton
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.4+

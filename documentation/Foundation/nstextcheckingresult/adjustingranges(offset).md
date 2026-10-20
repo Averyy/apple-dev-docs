@@ -1,7 +1,8 @@
 # adjustingRanges(offset:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new text checking result after adjusting the ranges as specified by the offset.
 
@@ -18,6 +19,10 @@ Returns a new text checking result after adjusting the ranges as specified by th
 
 ```swift
 func adjustingRanges(offset: Int) -> NSTextCheckingResult
+```
+
+```objc
+- (NSTextCheckingResult *) resultByAdjustingRangesWithOffset:(NSInteger) offset;
 ```
 
 #### Return Value

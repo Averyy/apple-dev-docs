@@ -1,7 +1,8 @@
 # MEComposeUserAction.reply
 
 **Framework**: MailKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 12.0+
@@ -12,11 +13,16 @@
 case reply
 ```
 
+```c
+MEComposeUserActionReply
+```
+
 ## See Also
 
-- [MEComposeUserAction.forward](mecomposeuseraction/forward.md)
-- [MEComposeUserAction.newMessage](mecomposeuseraction/newmessage.md)
-- [MEComposeUserAction.replyAll](mecomposeuseraction/replyall.md)
+### Enumeration Cases
+- [MEComposeUserAction.forward](./forward.md)
+- [MEComposeUserAction.newMessage](./newmessage.md)
+- [MEComposeUserAction.replyAll](./replyall.md)
 
 
 ---

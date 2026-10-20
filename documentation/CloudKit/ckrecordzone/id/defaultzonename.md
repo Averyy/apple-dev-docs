@@ -1,7 +1,8 @@
 # defaultZoneName
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the default zone.
 
@@ -11,7 +12,7 @@ The name of the default zone.
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ static let defaultZoneName: String
 
 ## See Also
 
-- [static let `default`: CKRecordZone.ID](ckrecordzone/id/default.md)
+### Accessing the Default Zone
+- [static let `default`: CKRecordZone.ID](./default.md)
   The default zone ID.
 
 

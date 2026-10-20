@@ -1,7 +1,8 @@
 # NEIPv6Settings
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The IPv6 settings of an IP layer network tunnel.
 
@@ -19,54 +20,59 @@ The IPv6 settings of an IP layer network tunnel.
 class NEIPv6Settings
 ```
 
+```objc
+@interface NEIPv6Settings : NSObject
+```
+
 #### Overview
 
-To specify the IPv6 settings of a packet tunnel, set its [`NEPacketTunnelNetworkSettings`](nepackettunnelnetworksettings.md).[`ipv6Settings`](nepackettunnelnetworksettings/ipv6settings.md) property to an instance of this class.
+To specify the IPv6 settings of a packet tunnel, set its [`NEPacketTunnelNetworkSettings`](./nepackettunnelnetworksettings.md).[`ipv6Settings`](./nepackettunnelnetworksettings/ipv6settings.md) property to an instance of this class.
 
 ## Topics
 
 ### Initializing IPv6 settings
-- [init(addresses: [String], networkPrefixLengths: [NSNumber])](neipv6settings/init(addresses:networkprefixlengths:).md)
+- [init(addresses: [String], networkPrefixLengths: [NSNumber])](./neipv6settings/init%28addresses,networkprefixlengths%29.md)
   Initializes the IPv6 settings object.
 ### Accessing IPv6 properties
-- [var addresses: [String]](neipv6settings/addresses.md)
+- [var addresses: [String]](./neipv6settings/addresses.md)
   The IPv6 addresses to assign to the TUN interface.
-- [var networkPrefixLengths: [NSNumber]](neipv6settings/networkprefixlengths.md)
+- [var networkPrefixLengths: [NSNumber]](./neipv6settings/networkprefixlengths.md)
   The IPv6 network prefix lengths to assign to the TUN interface.
 ### Routing network traffic
-- [var includedRoutes: [NEIPv6Route]?](neipv6settings/includedroutes.md)
+- [var includedRoutes: [NEIPv6Route]?](./neipv6settings/includedroutes.md)
   The IPv6 network traffic that the system routes to the TUN interface.
-- [var excludedRoutes: [NEIPv6Route]?](neipv6settings/excludedroutes.md)
+- [var excludedRoutes: [NEIPv6Route]?](./neipv6settings/excludedroutes.md)
   The IPv6 network traffic that the system routes to the primary physical interface, not the TUN interface.
-- [class NEIPv6Route](neipv6route.md)
+- [class NEIPv6Route](./neipv6route.md)
   The settings for an IPv6 route.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var ipv4Settings: NEIPv4Settings?](nepackettunnelnetworksettings/ipv4settings.md)
+### Accessing network properties
+- [var ipv4Settings: NEIPv4Settings?](./nepackettunnelnetworksettings/ipv4settings.md)
   The tunnel IP version 4 settings.
-- [class NEIPv4Settings](neipv4settings.md)
+- [class NEIPv4Settings](./neipv4settings.md)
   The IPv4 settings of an IP layer network tunnel.
-- [var ipv6Settings: NEIPv6Settings?](nepackettunnelnetworksettings/ipv6settings.md)
+- [var ipv6Settings: NEIPv6Settings?](./nepackettunnelnetworksettings/ipv6settings.md)
   The tunnel IP version 6 settings.
-- [var tunnelOverheadBytes: NSNumber?](nepackettunnelnetworksettings/tunneloverheadbytes.md)
+- [var tunnelOverheadBytes: NSNumber?](./nepackettunnelnetworksettings/tunneloverheadbytes.md)
   The number of bytes added to each tunneled packet for storing tunneling protocol headers.
-- [var mtu: NSNumber?](nepackettunnelnetworksettings/mtu.md)
+- [var mtu: NSNumber?](./nepackettunnelnetworksettings/mtu.md)
   The size of the maximum trasnmission unit, in bytes.
 
 

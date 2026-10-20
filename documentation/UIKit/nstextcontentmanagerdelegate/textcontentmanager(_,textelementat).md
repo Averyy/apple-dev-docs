@@ -1,7 +1,8 @@
 # textContentManager(_:textElementAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The method the framework calls to return the text element at a specific location.
 
@@ -18,9 +19,13 @@ The method the framework calls to return the text element at a specific location
 optional func textContentManager(_ textContentManager: NSTextContentManager, textElementAt location: any NSTextLocation) -> NSTextElement?
 ```
 
+```objc
+- (NSTextElement *) textContentManager:(NSTextContentManager *) textContentManager textElementAtLocation:(id<NSTextLocation>) location;
+```
+
 #### Return Value
 
-An [`NSTextElement`](nstextelement.md).
+An [`NSTextElement`](../nstextelement.md).
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # init(device:matteResolution:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an AR matte generator.
 
@@ -13,6 +14,10 @@ Creates an AR matte generator.
 
 ```swift
 init(device: any MTLDevice, matteResolution: ARMatteGenerator.Resolution)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device matteResolution:(ARMatteResolution) matteResolution;
 ```
 
 #### Discussion

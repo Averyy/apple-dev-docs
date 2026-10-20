@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Calculates and returns a height based on the context.
@@ -31,7 +32,8 @@ The height of the detent, or `nil` if the detent should be inactive based on the
 
 ## See Also
 
-- [CustomPresentationDetent.Context](custompresentationdetent/context.md)
+### Getting the height
+- [CustomPresentationDetent.Context](./context.md)
   Information that you can use to calculate the height of a custom detent.
 
 

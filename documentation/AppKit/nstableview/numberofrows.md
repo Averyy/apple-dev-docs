@@ -1,17 +1,22 @@
 # numberOfRows
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of rows in the table.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var numberOfRows: Int { get }
+```
+
+```objc
+@property (readonly) NSInteger numberOfRows;
 ```
 
 #### Discussion
@@ -20,9 +25,11 @@ Typically you should not ask the table view how many rows it has; instead, inter
 
 ## See Also
 
-- [func numberOfRows(in: NSTableView) -> Int](nstableviewdatasource/numberofrows(in:).md)
+### Related Documentation
+- [func numberOfRows(in: NSTableView) -> Int](../nstableviewdatasource/numberofrows%28in%29.md)
   Returns the number of records managed for `aTableView` by the data source object.
-- [var numberOfColumns: Int](nstableview/numberofcolumns.md)
+### Table Dimensions
+- [var numberOfColumns: Int](./numberofcolumns.md)
   The number of columns in the table.
 
 

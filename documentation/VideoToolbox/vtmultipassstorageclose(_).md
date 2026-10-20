@@ -1,7 +1,8 @@
 # VTMultiPassStorageClose(_:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Ensures that any pending data is written to the multipass storage file and closes the file.
 
@@ -19,9 +20,13 @@ Ensures that any pending data is written to the multipass storage file and close
 func VTMultiPassStorageClose(_ multiPassStorage: VTMultiPassStorage) -> OSStatus
 ```
 
+```c
+extern OSStatus VTMultiPassStorageClose(VTMultiPassStorageRef multiPassStorage);
+```
+
 #### Discussion
 
-After this function is called, all functions on the multipass storage object fail. It’s still necessary to release the object by calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease).
+After this function is called, all functions on the multipass storage object fail. It’s still necessary to release the object by calling [`CFRelease`](../CoreFoundation/cfrelease.md).
 
 ## Parameters
 

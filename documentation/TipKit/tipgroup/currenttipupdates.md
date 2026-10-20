@@ -1,7 +1,8 @@
 # currentTipUpdates
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Stream of tips that become eligible for display.
 
@@ -22,7 +23,8 @@ final var currentTipUpdates: some AsyncSequence<any Tip, Never> { get }
 
 ## See Also
 
-- [var currentTip: (any Tip)?](tipgroup/currenttip.md)
+### Getting the currently available tip
+- [var currentTip: (any Tip)?](./currenttip.md)
   Returns the current tip available for display.
 
 

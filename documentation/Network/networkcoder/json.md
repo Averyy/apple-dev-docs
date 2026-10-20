@@ -1,7 +1,8 @@
 # json
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,8 @@
 ```swift
 static var json: NetworkJSONCoder { get }
 ```
+
+Available when `Self` is `NetworkJSONCoder`.
 
 
 ---

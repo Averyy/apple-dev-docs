@@ -1,7 +1,8 @@
 # errorCode
 
 **Framework**: Link Presentation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A code for the error.
 
@@ -22,7 +23,8 @@ var errorCode: Int { get }
 
 ## See Also
 
-- [var errorUserInfo: [String : Any]](lperror/erroruserinfo.md)
+### Error details
+- [var errorUserInfo: [String : Any]](./erroruserinfo.md)
 
 
 ---

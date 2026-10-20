@@ -1,7 +1,8 @@
 # setMicrophoneCaptureState(_:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes whether the webpage is using the microphone to capture audio.
 
@@ -15,7 +16,15 @@ Changes whether the webpage is using the microphone to capture audio.
 ## Declaration
 
 ```swift
+func setMicrophoneCaptureState(_ state: WKMediaCaptureState, completionHandler: (@MainActor @Sendable () -> Void)? = nil)
+```
+
+```swift
 func setMicrophoneCaptureState(_ state: WKMediaCaptureState) async
+```
+
+```objc
+- (void) setMicrophoneCaptureState:(WKMediaCaptureState) state completionHandler:(void (^)(void)) completionHandler;
 ```
 
 ## Parameters
@@ -25,13 +34,14 @@ func setMicrophoneCaptureState(_ state: WKMediaCaptureState) async
 
 ## See Also
 
-- [var cameraCaptureState: WKMediaCaptureState](wkwebview/cameracapturestate.md)
+### Managing the microphone and camera
+- [var cameraCaptureState: WKMediaCaptureState](./cameracapturestate.md)
   An enumeration case that indicates whether the webpage is using the camera to capture images or video.
-- [var microphoneCaptureState: WKMediaCaptureState](wkwebview/microphonecapturestate.md)
+- [var microphoneCaptureState: WKMediaCaptureState](./microphonecapturestate.md)
   An enumeration case that indicates whether the webpage is using the microphone to capture audio.
-- [func setCameraCaptureState(WKMediaCaptureState, completionHandler: (() -> Void)?)](wkwebview/setcameracapturestate(_:completionhandler:).md)
+- [func setCameraCaptureState(WKMediaCaptureState, completionHandler: (() -> Void)?)](./setcameracapturestate%28_,completionhandler%29.md)
   Changes whether the webpage is using the camera to capture images or video.
-- [enum WKMediaCaptureState](wkmediacapturestate.md)
+- [enum WKMediaCaptureState](../wkmediacapturestate.md)
   An enumeration that describes whether a media device, like a camera or microphone, is currently capturing audio or video.
 
 

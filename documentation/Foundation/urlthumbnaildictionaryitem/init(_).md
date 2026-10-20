@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a thumbnail dictionary item key from the provided constant string.
 
@@ -22,7 +23,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](urlthumbnaildictionaryitem/init(rawvalue:).md)
+### Creating a Thumbnail Dictionary Key
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates a thumbnail dictionary item key from the provided raw value string.
 
 

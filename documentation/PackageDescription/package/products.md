@@ -1,7 +1,8 @@
 # products
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of products that this package vends and that clients can use.
 
@@ -13,7 +14,8 @@ final var products: [Product]
 
 ## See Also
 
-- [class Product](product.md)
+### Configuring Products
+- [class Product](../product.md)
   The object that defines a package product.
 
 

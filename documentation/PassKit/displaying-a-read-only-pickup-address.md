@@ -1,6 +1,7 @@
 # Displaying a Read-Only Pickup Address
 
-**Framework**: PassKit (Apple Pay and Wallet)
+**Framework**: PassKit (Apple Pay and Wallet)  
+**Role**: Article
 
 Configure a payment request to display a read-only pickup address on the payment sheet.
 
@@ -10,14 +11,14 @@ The payment sheet displays the shipping address in the same place whether the sh
 
 > **Note**:  This feature is available in apps built for iOS 15, iPadOS 15, watchOS 8, macOS 12, and apps built with Mac Catalyst 15 and later.
 
-##### Add a Read Only Pickup Address
+##### Add a Read-Only Pickup Address
 
 Set the following four properties of your payment request to display a read-only pickup address:
 
-- Set [`shippingType`](pkpaymentrequest/shippingtype.md) to [`PKShippingType.storePickup`](pkshippingtype/storepickup.md).
-- Add the [`postalAddress`](pkcontactfield/postaladdress.md) to [`requiredShippingContactFields`](pkpaymentrequest/requiredshippingcontactfields.md) to show the pickup address. To request additional information about the person picking up the item, such as a name or phone number, add other required fields.
-- Set [`shippingContact`](pkpaymentrequest/shippingcontact.md) to the pickup address. Optionally set the [`name`](pkcontact/name.md) of the pickup address to a store or location name.
-- Set [`shippingContactEditingMode`](pkpaymentrequest/shippingcontacteditingmode.md) to [`PKShippingContactEditingMode.storePickup`](pkshippingcontacteditingmode/storepickup.md).
+- Set [`shippingType`](./pkpaymentrequest/shippingtype.md) to [`PKShippingType.storePickup`](./pkshippingtype/storepickup.md).
+- Add the [`postalAddress`](./pkcontactfield/postaladdress.md) to [`requiredShippingContactFields`](./pkpaymentrequest/requiredshippingcontactfields.md) to show the pickup address. To request additional information about the person picking up the item, such as a name or phone number, add other required fields.
+- Set [`shippingContact`](./pkpaymentrequest/shippingcontact.md) to the pickup address. Optionally set the [`name`](./pkcontact/name.md) of the pickup address to a store or location name.
+- Set [`shippingContactEditingMode`](./pkpaymentrequest/shippingcontacteditingmode.md) to [`PKShippingContactEditingMode.storePickup`](./pkshippingcontacteditingmode/storepickup.md).
 
 The code below configures an in-store pickup at Example Company and requires an email for the pickup person:
 
@@ -57,19 +58,21 @@ paymentRequest.shippingContactEditingMode = .storePickup
 
 ## See Also
 
-- [var dateComponentsRange: PKDateComponentsRange?](pkshippingmethod/datecomponentsrange.md)
+### Related Documentation
+- [var dateComponentsRange: PKDateComponentsRange?](./pkshippingmethod/datecomponentsrange.md)
   An expected range of delivery or shipping dates for a package, or the time range when an item is available for pickup.
-- [var shippingMethods: [PKShippingMethod]?](pkpaymentrequest/shippingmethods.md)
+### Setting the shipping methods and types
+- [var shippingMethods: [PKShippingMethod]?](./pkpaymentrequest/shippingmethods.md)
   An array of shipping method objects that describe the supported shipping methods.
-- [class PKShippingMethod](pkshippingmethod.md)
+- [class PKShippingMethod](./pkshippingmethod.md)
   An object that defines a shipping method for delivering physical goods.
-- [var shippingType: PKShippingType](pkpaymentrequest/shippingtype.md)
+- [var shippingType: PKShippingType](./pkpaymentrequest/shippingtype.md)
   The type of shipping the request uses.
-- [var shippingContactEditingMode: PKShippingContactEditingMode](pkpaymentrequest/shippingcontacteditingmode.md)
+- [var shippingContactEditingMode: PKShippingContactEditingMode](./pkpaymentrequest/shippingcontacteditingmode.md)
   A value that indicates whether the shipping mode prevents the user from editing the shipping address.
-- [enum PKShippingType](pkshippingtype.md)
+- [enum PKShippingType](./pkshippingtype.md)
   A complete list of valid shipping types.
-- [enum PKShippingContactEditingMode](pkshippingcontacteditingmode.md)
+- [enum PKShippingContactEditingMode](./pkshippingcontacteditingmode.md)
   Constants that indicate whether the shipping mode prevents the user from editing fields of the shipping address.
 
 

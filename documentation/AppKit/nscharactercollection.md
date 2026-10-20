@@ -1,12 +1,13 @@
 # NSCharacterCollection
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that map character identifiers to glyphs.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,47 +15,52 @@ Values that map character identifiers to glyphs.
 enum NSCharacterCollection
 ```
 
+```c
+enum NSCharacterCollection : NSUInteger;
+```
+
 ## Topics
 
 ### Collections
-- [NSCharacterCollection.identityMappingCharacterCollection](nscharactercollection/identitymappingcharactercollection.md)
+- [NSCharacterCollection.identityMappingCharacterCollection](./nscharactercollection/identitymappingcharactercollection.md)
   Indicates that the character identifier is equal to the glyph index.
-- [NSCharacterCollection.adobeCNS1CharacterCollection](nscharactercollection/adobecns1charactercollection.md)
+- [NSCharacterCollection.adobeCNS1CharacterCollection](./nscharactercollection/adobecns1charactercollection.md)
   Indicates the Adobe-CNS1 mapping.
-- [NSCharacterCollection.adobeGB1CharacterCollection](nscharactercollection/adobegb1charactercollection.md)
+- [NSCharacterCollection.adobeGB1CharacterCollection](./nscharactercollection/adobegb1charactercollection.md)
   Indicates the Adobe-GB1 mapping.
-- [NSCharacterCollection.adobeJapan1CharacterCollection](nscharactercollection/adobejapan1charactercollection.md)
+- [NSCharacterCollection.adobeJapan1CharacterCollection](./nscharactercollection/adobejapan1charactercollection.md)
   Indicates the Adobe-Japan1 mapping.
-- [NSCharacterCollection.adobeJapan2CharacterCollection](nscharactercollection/adobejapan2charactercollection.md)
+- [NSCharacterCollection.adobeJapan2CharacterCollection](./nscharactercollection/adobejapan2charactercollection.md)
   Indicates the Adobe-Japan2 mapping.
-- [NSCharacterCollection.adobeKorea1CharacterCollection](nscharactercollection/adobekorea1charactercollection.md)
+- [NSCharacterCollection.adobeKorea1CharacterCollection](./nscharactercollection/adobekorea1charactercollection.md)
   Indicates the Adobe-Korea1 mapping.
 ### Initializers
-- [init?(rawValue: UInt)](nscharactercollection/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./nscharactercollection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init?(characterIdentifier: Int, collection: NSCharacterCollection, baseString: String)](nsglyphinfo/init(characteridentifier:collection:basestring:).md)
+### Deprecated
+- [init?(characterIdentifier: Int, collection: NSCharacterCollection, baseString: String)](./nsglyphinfo/init%28characteridentifier,collection,basestring%29.md)
   Instantiates and returns an `NSGlyphInfo` object using a character identifier and a character collection.
-- [init?(glyph: NSGlyph, forFont: NSFont, baseString: String)](nsglyphinfo/init(glyph:forfont:basestring:).md)
+- [init?(glyph: NSGlyph, forFont: NSFont, baseString: String)](./nsglyphinfo/init%28glyph,forfont,basestring%29.md)
   Instantiates and returns a glyph information object using a glyph index and a specified font.
-- [init?(glyphName: String, forFont: NSFont, baseString: String)](nsglyphinfo/init(glyphname:forfont:basestring:).md)
+- [init?(glyphName: String, forFont: NSFont, baseString: String)](./nsglyphinfo/init%28glyphname,forfont,basestring%29.md)
   Instantiates and returns a glyph information object using a glyph name and a specified font.
-- [var characterIdentifier: Int](nsglyphinfo/characteridentifier.md)
+- [var characterIdentifier: Int](./nsglyphinfo/characteridentifier.md)
   The receiver’s character identifier (CID).
-- [var characterCollection: NSCharacterCollection](nsglyphinfo/charactercollection.md)
+- [var characterCollection: NSCharacterCollection](./nsglyphinfo/charactercollection.md)
   A value specifying the glyph–to–character identifier mapping of the receiver.
-- [var glyphName: String?](nsglyphinfo/glyphname.md)
+- [var glyphName: String?](./nsglyphinfo/glyphname.md)
   The receiver’s glyph name.
 
 

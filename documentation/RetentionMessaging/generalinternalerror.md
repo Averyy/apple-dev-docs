@@ -1,7 +1,8 @@
 # GeneralInternalError
 
 **Framework**: Retention Messaging API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An error that indicates a general internal error.
 
@@ -10,14 +11,14 @@ An error that indicates a general internal error.
 
 ## Declaration
 
-```swift
+```
 object GeneralInternalError
 ```
 
 ## Properties
 
-- `errorCode` (number)
-- `errorMessage` (string)
+- `errorCode` (number): **Allowed Values**: `5000000`
+- `errorMessage` (string): **Allowed Values**: `An unknown error occurred.`
 
 
 ---

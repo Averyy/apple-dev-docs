@@ -1,7 +1,8 @@
 # accept(_:completionHandler:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Accepts the specified share metadata.
 
@@ -20,6 +21,10 @@ Accepts the specified share metadata.
 func accept(_ metadata: CKShare.Metadata, completionHandler: @escaping @Sendable (CKShare?, (any Error)?) -> Void)
 ```
 
+```objc
+- (void) acceptShareMetadata:(CKShareMetadata *) metadata completionHandler:(void (^)(CKShare *acceptedShare, NSError *error)) completionHandler;
+```
+
 #### Discussion
 
 The closure doesn’t return a value and takes the following parameters:
@@ -34,9 +39,10 @@ The closure doesn’t return a value and takes the following parameters:
 
 ## See Also
 
-- [func fetchShareMetadata(with: URL, completionHandler: (CKShare.Metadata?, (any Error)?) -> Void)](ckcontainer/fetchsharemetadata(with:completionhandler:).md)
+### Accessing Container Metadata
+- [func fetchShareMetadata(with: URL, completionHandler: (CKShare.Metadata?, (any Error)?) -> Void)](./fetchsharemetadata%28with,completionhandler%29.md)
   Fetches the share metadata for the specified share URL.
-- [static let CKAccountChanged: NSNotification.Name](../foundation/nsnotification/name-swift.struct/ckaccountchanged.md)
+- [static let CKAccountChanged: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/ckaccountchanged.md)
   A notification that a container posts when the status of an iCloud account changes.
 
 

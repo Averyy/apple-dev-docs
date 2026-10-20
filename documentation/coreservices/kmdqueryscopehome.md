@@ -1,7 +1,8 @@
 # kMDQueryScopeHome
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies that the query should be restricted to the volume and directory that contains the current user’s home directory.
 
@@ -12,6 +13,10 @@ Specifies that the query should be restricted to the volume and directory that c
 
 ```swift
 let kMDQueryScopeHome: CFString!
+```
+
+```c
+const CFStringRef kMDQueryScopeHome;
 ```
 
 

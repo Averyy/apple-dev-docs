@@ -1,7 +1,8 @@
 # finalize()
 
 **Framework**: Compression  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finalizes the stream by flushing all the remaining data in the stream.
 
@@ -11,7 +12,7 @@ Finalizes the stream by flushing all the remaining data in the stream.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ func finalize() throws
 
 ## See Also
 
-- [func write<D>(D?) throws](outputfilter/write(_:).md)
+### Instance Methods
+- [func write<D>(D?) throws](./write%28_%29.md)
   Writes data to the output filter.
 
 

@@ -1,7 +1,8 @@
 # validateSegments(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a given array of track segments conform to the timing rules for a composition track.
 
@@ -18,6 +19,10 @@ Returns a Boolean value that indicates whether a given array of track segments c
 
 ```swift
 func validateSegments(_ trackSegments: [AVCompositionTrackSegment]) throws
+```
+
+```objc
+- (BOOL) validateTrackSegments:(NSArray<AVCompositionTrackSegment *> *) trackSegments error:(NSError **) outError;
 ```
 
 ## Parameters

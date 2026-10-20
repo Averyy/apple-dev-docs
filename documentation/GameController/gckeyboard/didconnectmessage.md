@@ -1,7 +1,8 @@
 # GCKeyboard.DidConnectMessage
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message that posts after a keyboard accessory connects to the device.
 
@@ -23,7 +24,7 @@ struct DidConnectMessage
 
 Use the `didConnect` identifier with `NotificationCenter` to listen for this message.
 
-```None
+```
 let observation = NotificationCenter.default.addObserver(of: GCKeyboard.self, for: .didConnect) { message in
    let keyboard = message.keyboard
 }
@@ -32,16 +33,16 @@ let observation = NotificationCenter.default.addObserver(of: GCKeyboard.self, fo
 ## Topics
 
 ### Initializers
-- [init(keyboard: GCKeyboard)](gckeyboard/didconnectmessage/init(keyboard:).md)
+- [init(keyboard: GCKeyboard)](./didconnectmessage/init%28keyboard%29.md)
 ### Instance Properties
-- [var keyboard: GCKeyboard](gckeyboard/didconnectmessage/keyboard.md)
+- [var keyboard: GCKeyboard](./didconnectmessage/keyboard.md)
   The keyboard object that connected to the device.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

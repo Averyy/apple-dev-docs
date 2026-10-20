@@ -1,7 +1,8 @@
 # RCSService.Business.SuggestedAction.Action.showLocation(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Show location action.
 
@@ -16,9 +17,10 @@ case showLocation(RCSService.Business.ShowLocationAction)
 
 ## See Also
 
-- [RCSService.Business.ShowLocationAction](rcsservice/business/showlocationaction.md)
+### Handling location actions
+- [RCSService.Business.ShowLocationAction](../../showlocationaction.md)
   Shows a location on a map.
-- [RCSService.Business.SuggestedAction.Action.sendLocation](rcsservice/business/suggestedaction/action-swift.enum/sendlocation.md)
+- [RCSService.Business.SuggestedAction.Action.sendLocation](./sendlocation.md)
   Send location from device to business.
 
 

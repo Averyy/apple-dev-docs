@@ -1,7 +1,8 @@
 # init(info:domainDimension:domain:rangeDimension:range:callbacks:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Core Graphics function.
 
@@ -10,7 +11,7 @@ Creates a Core Graphics function.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.2+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Creates a Core Graphics function.
 init?(info: UnsafeMutableRawPointer?, domainDimension: Int, domain: UnsafePointer<CGFloat>?, rangeDimension: Int, range: UnsafePointer<CGFloat>?, callbacks: UnsafePointer<CGFunctionCallbacks>)
 ```
 
+```c
+extern CGFunctionRefCGFunctionCreate(void *info, size_t domainDimension, const CGFloat *domain, size_t rangeDimension, const CGFloat *range, const CGFunctionCallbacks *callbacks);
+```
+
 #### Return Value
 
-The new Core Graphics function. In Objective-C, you’re responsible for releasing this object using [`CGFunctionRelease`](cgfunctionrelease.md).
+The new Core Graphics function. In Objective-C, you’re responsible for releasing this object using [`CGFunctionRelease`](../cgfunctionrelease.md).
 
 ## Parameters
 

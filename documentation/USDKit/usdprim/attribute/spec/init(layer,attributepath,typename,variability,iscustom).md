@@ -1,7 +1,8 @@
 # init(layer:attributePath:typeName:variability:isCustom:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attribute spec at the given path in the layer, authoring intermediate ancestor prim specs as `over`s where needed.
 

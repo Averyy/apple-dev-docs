@@ -1,14 +1,15 @@
 # IOMallocArraySize
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 vm_size_t IOMallocArraySize(vm_size_t hdr_size, vm_size_t elem_size, vm_size_t elem_count);
 ```
 

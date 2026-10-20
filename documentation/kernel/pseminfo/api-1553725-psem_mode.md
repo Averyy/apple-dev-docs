@@ -1,14 +1,15 @@
 # psem_mode
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 mode_t psem_mode;
 ```
 

@@ -1,7 +1,8 @@
 # setBuffer(_:bufferOffset:elementCount:at:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Binds a Metal buffer to a parameter.
 

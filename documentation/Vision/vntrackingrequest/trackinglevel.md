@@ -1,7 +1,8 @@
 # trackingLevel
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value for specifying whether to prioritize speed or location accuracy.
 
@@ -19,13 +20,18 @@ A value for specifying whether to prioritize speed or location accuracy.
 var trackingLevel: VNRequestTrackingLevel { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) VNRequestTrackingLevel trackingLevel;
+```
+
 ## See Also
 
-- [enum VNRequestTrackingLevel](vnrequesttrackinglevel.md)
+### Configuring a Tracking Request
+- [enum VNRequestTrackingLevel](../vnrequesttrackinglevel.md)
   An enumeration of tracking priorities.
-- [var inputObservation: VNDetectedObjectObservation](vntrackingrequest/inputobservation.md)
+- [var inputObservation: VNDetectedObjectObservation](./inputobservation.md)
   The observation object defining a region to track.
-- [var isLastFrame: Bool](vntrackingrequest/islastframe.md)
+- [var isLastFrame: Bool](./islastframe.md)
   A Boolean that indicates the last frame in a tracking sequence.
 
 

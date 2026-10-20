@@ -1,12 +1,13 @@
 # Writing Failable Asynchronous APIs
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Vend results as part of an API when you can’t return errors synchronously.
 
 #### Overview
 
-When writing a function, method, or other API that might fail, you use the `throws` keyword on the declaration to indicate that the API call can throw an error. However, you can’t use the `throws` keyword to model APIs that return asynchronously. Instead, use the [`Result`](result.md) enumeration to capture information about whether an asychronous call succeeds or fails, and use the associated values for the [`Result.success(_:)`](result/success(_:).md) and [`Result.failure(_:)`](result/failure(_:).md) cases to carry information about the result of the call.
+When writing a function, method, or other API that might fail, you use the `throws` keyword on the declaration to indicate that the API call can throw an error. However, you can’t use the `throws` keyword to model APIs that return asynchronously. Instead, use the [`Result`](./result.md) enumeration to capture information about whether an asychronous call succeeds or fails, and use the associated values for the [`Result.success(_:)`](./result/success%28_%29.md) and [`Result.failure(_:)`](./result/failure%28_%29.md) cases to carry information about the result of the call.
 
 ##### Return Result Instances Asynchronously
 
@@ -77,9 +78,10 @@ Source of randomness failed: entropyDepleted
 
 ## See Also
 
-- [case success(Success)](result/success(_:).md)
+### Representing a Result
+- [case success(Success)](./result/success%28_%29.md)
   A success, storing a `Success` value.
-- [case failure(Failure)](result/failure(_:).md)
+- [case failure(Failure)](./result/failure%28_%29.md)
   A failure, storing a `Failure` value.
 
 

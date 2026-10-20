@@ -1,7 +1,8 @@
 # undoCount
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of times you can invoke undo before there are no actions left to undo.
 
@@ -20,15 +21,20 @@ The number of times you can invoke undo before there are no actions left to undo
 var undoCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger undoCount;
+```
+
 #### Discussion
 
-A nonzero value doesn’t imply you can safely invoke [`undo()`](undomanager/undo().md) immediately, because you may have to close open undo groups first.
+A nonzero value doesn’t imply you can safely invoke [`undo()`](./undo%28%29.md) immediately, because you may have to close open undo groups first.
 
 ## See Also
 
-- [var levelsOfUndo: Int](undomanager/levelsofundo.md)
+### Managing undo and redo stack depth
+- [var levelsOfUndo: Int](./levelsofundo.md)
   The maximum number of top-level undo groups the undo manager holds.
-- [var redoCount: Int](undomanager/redocount.md)
+- [var redoCount: Int](./redocount.md)
   The number of times you can invoke redo before there are no actions left to redo.
 
 

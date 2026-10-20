@@ -1,7 +1,8 @@
 # EntitlementsQuery.DataType
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The types of elements allowed in entitlements dictionaries.
 
@@ -23,20 +24,20 @@ enum DataType
 ## Topics
 
 ### Enumeration Cases
-- [EntitlementsQuery.DataType.array](entitlementsquery/datatype/array.md)
-- [EntitlementsQuery.DataType.boolean](entitlementsquery/datatype/boolean.md)
-- [EntitlementsQuery.DataType.dictionary](entitlementsquery/datatype/dictionary.md)
-- [EntitlementsQuery.DataType.integer](entitlementsquery/datatype/integer.md)
-- [EntitlementsQuery.DataType.string](entitlementsquery/datatype/string.md)
+- [EntitlementsQuery.DataType.array](./datatype/array.md)
+- [EntitlementsQuery.DataType.boolean](./datatype/boolean.md)
+- [EntitlementsQuery.DataType.dictionary](./datatype/dictionary.md)
+- [EntitlementsQuery.DataType.integer](./datatype/integer.md)
+- [EntitlementsQuery.DataType.string](./datatype/string.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 
 ---

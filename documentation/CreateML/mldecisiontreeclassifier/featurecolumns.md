@@ -1,7 +1,8 @@
 # featureColumns
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the columns you selected at initialization to train the classifier.
 
@@ -25,9 +26,10 @@ Changing the value of this property doesn’t retrain the model or affect its be
 
 ## See Also
 
-- [static train(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](mldecisiontreeclassifier/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).md)
+### Training a decision tree classifier synchronously
+- [static train(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](./train%28trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters%29.md)
   Trains a decision tree classifier.
-- [var targetColumn: String](mldecisiontreeclassifier/targetcolumn.md)
+- [var targetColumn: String](./targetcolumn.md)
   The name of the column you selected at initialization to define which categories the classifier predicts.
 
 

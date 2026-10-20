@@ -1,14 +1,15 @@
 # kIOAccelSurfaceControl
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 kIOAccelSurfaceControl
 ```
 

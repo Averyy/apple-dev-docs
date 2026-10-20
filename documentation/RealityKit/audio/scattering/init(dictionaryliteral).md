@@ -1,7 +1,8 @@
 # init(dictionaryLiteral:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scattering data set from a sequence of pairs of center frequency and scattering coefficient.
 
@@ -25,7 +26,7 @@ The scattering coefficient is a value between zero and one that describes the pr
 
 The values will be interpolated and/or extrapolated to cover the audible frequency range.
 
-```None
+```
 let data: Audio.Scattering = [500: 0.3, 1000: 0.4, 4000: 0.5]
 ```
 

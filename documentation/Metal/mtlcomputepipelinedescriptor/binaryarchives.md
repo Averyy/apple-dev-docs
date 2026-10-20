@@ -1,7 +1,8 @@
 # binaryArchives
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The binary archives that contain any precompiled shader functions to link.
 
@@ -19,6 +20,10 @@ The binary archives that contain any precompiled shader functions to link.
 var binaryArchives: [any MTLBinaryArchive]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSArray<id<MTLBinaryArchive>> * binaryArchives;
+```
+
 #### Discussion
 
 The default value is `nil`.
@@ -29,7 +34,8 @@ By providing a set of binary archives, when Metal creates the pipeline state obj
 
 ## See Also
 
-- [var supportAddingBinaryFunctions: Bool](mtlcomputepipelinedescriptor/supportaddingbinaryfunctions.md)
+### Loading binary archives
+- [var supportAddingBinaryFunctions: Bool](./supportaddingbinaryfunctions.md)
   A Boolean value that indicates whether you can use the pipeline to create new pipelines by adding binary functions to its callable functions list.
 
 

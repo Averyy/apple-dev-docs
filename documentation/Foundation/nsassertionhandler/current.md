@@ -1,7 +1,8 @@
 # current
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the `NSAssertionHandler` object associated with the current thread.
 
@@ -18,6 +19,10 @@ Returns the `NSAssertionHandler` object associated with the current thread.
 
 ```swift
 class var current: NSAssertionHandler { get }
+```
+
+```objc
+@property (class, strong, readonly) NSAssertionHandler * currentHandler;
 ```
 
 #### Return Value

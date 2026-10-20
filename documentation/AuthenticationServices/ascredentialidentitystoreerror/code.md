@@ -1,7 +1,8 @@
 # ASCredentialIdentityStoreError.Code
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that represent credential identity store error codes.
 
@@ -18,33 +19,38 @@ Constants that represent credential identity store error codes.
 enum Code
 ```
 
+```c
+enum ASCredentialIdentityStoreErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Codes
-- [ASCredentialIdentityStoreError.Code.internalError](ascredentialidentitystoreerror/code/internalerror.md)
+- [ASCredentialIdentityStoreError.Code.internalError](./code/internalerror.md)
   The operation failed due to an internal error.
-- [ASCredentialIdentityStoreError.Code.storeBusy](ascredentialidentitystoreerror/code/storebusy.md)
+- [ASCredentialIdentityStoreError.Code.storeBusy](./code/storebusy.md)
   The operation failed because the credential identity store is busy.
-- [ASCredentialIdentityStoreError.Code.storeDisabled](ascredentialidentitystoreerror/code/storedisabled.md)
+- [ASCredentialIdentityStoreError.Code.storeDisabled](./code/storedisabled.md)
   The operation failed because the credential identity store is disabled.
 ### Initializers
-- [init?(rawValue: Int)](ascredentialidentitystoreerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ASCredentialIdentityStoreError](ascredentialidentitystoreerror.md)
+### Recognizing errors
+- [struct ASCredentialIdentityStoreError](../ascredentialidentitystoreerror.md)
   A credential identity store error.
-- [let ASCredentialIdentityStoreErrorDomain: String](ascredentialidentitystoreerrordomain.md)
+- [let ASCredentialIdentityStoreErrorDomain: String](../ascredentialidentitystoreerrordomain.md)
   The domain for a credential identity store error.
 
 

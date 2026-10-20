@@ -1,7 +1,8 @@
 # read(contentsOf:configuration:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Reads an audio file as an async sequence of audio buffers.
 
@@ -30,9 +31,10 @@ An async sequence of `AVAudioPCMBuffer`.
 
 ## See Also
 
-- [static read(_:configuration:)](audioreader/read(_:configuration:).md)
+### Reading audio
+- [static read(_:configuration:)](./read%28_,configuration%29.md)
   Reads a sequence of annotated files as a lazy sequence of results each containing an audio buffers or an error.
-- [static func readMicrophone(configuration: AudioReader.Configuration) async throws -> AudioReader.MicrophoneAsyncBuffers](audioreader/readmicrophone(configuration:).md)
+- [static func readMicrophone(configuration: AudioReader.Configuration) async throws -> AudioReader.MicrophoneAsyncBuffers](./readmicrophone%28configuration%29.md)
   Reads an async sequence of audio frames captured with a microphone.
 
 

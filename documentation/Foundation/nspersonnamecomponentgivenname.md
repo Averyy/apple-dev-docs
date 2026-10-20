@@ -1,7 +1,8 @@
 # NSPersonNameComponentGivenName
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 9.0+
@@ -18,17 +19,22 @@
 let NSPersonNameComponentGivenName: String
 ```
 
+```c
+extern NSString * const NSPersonNameComponentGivenName;
+```
+
 #### Discussion
 
 Identifies a given name component.
 
 ## See Also
 
-- [let NSPersonNameComponentFamilyName: String](nspersonnamecomponentfamilyname.md)
-- [let NSPersonNameComponentMiddleName: String](nspersonnamecomponentmiddlename.md)
-- [let NSPersonNameComponentPrefix: String](nspersonnamecomponentprefix.md)
-- [let NSPersonNameComponentSuffix: String](nspersonnamecomponentsuffix.md)
-- [let NSPersonNameComponentNickname: String](nspersonnamecomponentnickname.md)
+### Constants
+- [let NSPersonNameComponentFamilyName: String](./nspersonnamecomponentfamilyname.md)
+- [let NSPersonNameComponentMiddleName: String](./nspersonnamecomponentmiddlename.md)
+- [let NSPersonNameComponentPrefix: String](./nspersonnamecomponentprefix.md)
+- [let NSPersonNameComponentSuffix: String](./nspersonnamecomponentsuffix.md)
+- [let NSPersonNameComponentNickname: String](./nspersonnamecomponentnickname.md)
 
 
 ---

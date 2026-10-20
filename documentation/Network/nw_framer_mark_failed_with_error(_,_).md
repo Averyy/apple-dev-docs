@@ -1,7 +1,8 @@
 # nw_framer_mark_failed_with_error(_:_:)
 
 **Framework**: Network  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Indicates to a connection that your protocol has encountered an error, or has gracefully closed.
 
@@ -20,19 +21,24 @@ Indicates to a connection that your protocol has encountered an error, or has gr
 func nw_framer_mark_failed_with_error(_ framer: nw_framer_t, _ error_code: Int32)
 ```
 
+```c
+void nw_framer_mark_failed_with_error(nw_framer_t framer, int error_code);
+```
+
 ## See Also
 
-- [func nw_framer_mark_ready(nw_framer_t)](nw_framer_mark_ready(_:).md)
+### Managing Instance Lifetime
+- [func nw_framer_mark_ready(nw_framer_t)](./nw_framer_mark_ready%28_%29.md)
   Indicates to a connection that your protocol’s handshake is complete.
-- [func nw_framer_prepend_application_protocol(nw_framer_t, nw_protocol_options_t) -> Bool](nw_framer_prepend_application_protocol(_:_:).md)
-  Dynamically adds another protocol that will run above your protocol after your protocol calls [`nw_framer_mark_ready(_:)`](nw_framer_mark_ready(_:).md).
-- [func nw_framer_set_stop_handler(nw_framer_t, nw_framer_stop_handler_t)](nw_framer_set_stop_handler(_:_:).md)
+- [func nw_framer_prepend_application_protocol(nw_framer_t, nw_protocol_options_t) -> Bool](./nw_framer_prepend_application_protocol%28_,_%29.md)
+  Dynamically adds another protocol that will run above your protocol after your protocol calls [`nw_framer_mark_ready(_:)`](./nw_framer_mark_ready%28_%29.md).
+- [func nw_framer_set_stop_handler(nw_framer_t, nw_framer_stop_handler_t)](./nw_framer_set_stop_handler%28_,_%29.md)
   Sets a block to handle when the connection is being closed.
-- [typealias nw_framer_stop_handler_t](nw_framer_stop_handler_t.md)
+- [typealias nw_framer_stop_handler_t](./nw_framer_stop_handler_t.md)
   A handler that requests that your protocol send any final messages to close the connection.
-- [func nw_framer_set_cleanup_handler(nw_framer_t, nw_framer_cleanup_handler_t)](nw_framer_set_cleanup_handler(_:_:).md)
+- [func nw_framer_set_cleanup_handler(nw_framer_t, nw_framer_cleanup_handler_t)](./nw_framer_set_cleanup_handler%28_,_%29.md)
   Sets a block to handle the final cleanup of allocations made by your protocol instance.
-- [typealias nw_framer_cleanup_handler_t](nw_framer_cleanup_handler_t.md)
+- [typealias nw_framer_cleanup_handler_t](./nw_framer_cleanup_handler_t.md)
   A handler that tells your protocol to clean up all allocations before being deallocated.
 
 

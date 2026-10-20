@@ -1,14 +1,15 @@
 # csReserved1
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```c
 uintptr_t csReserved1;
 ```
 

@@ -1,7 +1,8 @@
 # init(group:name:repeatMode:fillMode:trimStart:trimEnd:trimDuration:offset:delay:speed:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a collection of animations that play simultaneously.
 
@@ -11,7 +12,7 @@ Creates a collection of animations that play simultaneously.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

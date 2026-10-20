@@ -1,7 +1,8 @@
 # managedObjectContext
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,15 +21,16 @@ var managedObjectContext: NSManagedObjectContext { get set }
 
 ## See Also
 
-- [Loading and displaying a large data feed](loading-and-displaying-a-large-data-feed.md)
+### Accessing Core Data
+- [Loading and displaying a large data feed](../loading-and-displaying-a-large-data-feed.md)
   Consume data in the background, and lower memory use by batching imports and preventing duplicate records.
-- [struct FetchRequest](fetchrequest.md)
+- [struct FetchRequest](../fetchrequest.md)
   A property wrapper type that retrieves entities from a Core Data persistent store.
-- [struct FetchedResults](fetchedresults.md)
+- [struct FetchedResults](../fetchedresults.md)
   A collection of results retrieved from a Core Data store.
-- [struct SectionedFetchRequest](sectionedfetchrequest.md)
+- [struct SectionedFetchRequest](../sectionedfetchrequest.md)
   A property wrapper type that retrieves entities, grouped into sections, from a Core Data persistent store.
-- [struct SectionedFetchResults](sectionedfetchresults.md)
+- [struct SectionedFetchResults](../sectionedfetchresults.md)
   A collection of results retrieved from a Core Data persistent store, grouped into sections.
 
 

@@ -1,7 +1,8 @@
 # aliasFile
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents an alias file.
 
@@ -22,21 +23,22 @@ static var aliasFile: UTType { get }
 
 #### Discussion
 
-This type conforms to both [`data`](uttype-swift.struct/data.md) and [`resolvable`](uttype-swift.struct/resolvable.md), and its identifier is `com.apple.alias-file`.
+This type conforms to both [`data`](./data.md) and [`resolvable`](./resolvable.md), and its identifier is `com.apple.alias-file`.
 
 ## See Also
 
-- [static var directory: UTType](uttype-swift.struct/directory.md)
+### Apple file system objects
+- [static var directory: UTType](./directory.md)
   A type that represents a file system directory, including packages and folders.
-- [static var symbolicLink: UTType](uttype-swift.struct/symboliclink.md)
+- [static var symbolicLink: UTType](./symboliclink.md)
   A type that represents a symbolic link.
-- [static var mountPoint: UTType](uttype-swift.struct/mountpoint.md)
+- [static var mountPoint: UTType](./mountpoint.md)
   A type that represents a volume mount point.
-- [static var folder: UTType](uttype-swift.struct/folder.md)
+- [static var folder: UTType](./folder.md)
   A type that represents a user-browsable directory.
-- [static var volume: UTType](uttype-swift.struct/volume.md)
+- [static var volume: UTType](./volume.md)
   A type that represents the root folder of a volume or mount point.
-- [static var diskImage: UTType](uttype-swift.struct/diskimage.md)
+- [static var diskImage: UTType](./diskimage.md)
   A type that represents a data item that’s mountable as a volume.
 
 

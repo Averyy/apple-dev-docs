@@ -1,7 +1,8 @@
 # StoreKitError.invalidPresentationContext
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 StoreKit UI cannot be presented from the current context.
 

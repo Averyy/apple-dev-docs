@@ -1,7 +1,8 @@
 # title
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of this top result for catalog search.
 

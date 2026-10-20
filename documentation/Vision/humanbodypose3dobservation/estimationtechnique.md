@@ -1,7 +1,8 @@
 # HumanBodyPose3DObservation.EstimationTechnique
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that identify body height estimation techniques.
 
@@ -22,30 +23,31 @@ enum EstimationTechnique
 ## Topics
 
 ### Getting estimation techniques
-- [HumanBodyPose3DObservation.EstimationTechnique.measured](humanbodypose3dobservation/estimationtechnique/measured.md)
+- [HumanBodyPose3DObservation.EstimationTechnique.measured](./estimationtechnique/measured.md)
   A technique that uses LiDAR depth data to measure body height, in meters.
-- [HumanBodyPose3DObservation.EstimationTechnique.reference](humanbodypose3dobservation/estimationtechnique/reference.md)
+- [HumanBodyPose3DObservation.EstimationTechnique.reference](./estimationtechnique/reference.md)
   A technique that uses a reference height.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let bodyHeight: Measurement<UnitLength>](humanbodypose3dobservation/bodyheight.md)
+- [let bodyHeight: Measurement<UnitLength>](./bodyheight.md)
   The estimated human body height, in meters.
-- [let cameraOriginMatrix: simd_float4x4](humanbodypose3dobservation/cameraoriginmatrix.md)
+- [let cameraOriginMatrix: simd_float4x4](./cameraoriginmatrix.md)
   A transform from the skeleton hip to the camera.
-- [let heightEstimationTechnique: HumanBodyPose3DObservation.EstimationTechnique](humanbodypose3dobservation/heightestimationtechnique.md)
+- [let heightEstimationTechnique: HumanBodyPose3DObservation.EstimationTechnique](./heightestimationtechnique.md)
   The technique the framework uses to estimate body height.
 
 

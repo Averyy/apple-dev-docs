@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The element’s true aliases without any system-level remapping of the controls.
@@ -18,6 +19,10 @@ The element’s true aliases without any system-level remapping of the controls.
 
 ```swift
 var elementAliases: Set<String> { get }
+```
+
+```objc
+@property (copy, readonly) NSSet<NSString<GCPhysicalInputElementName> *> * elementAliases;
 ```
 
 

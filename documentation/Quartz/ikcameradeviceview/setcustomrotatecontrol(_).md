@@ -1,7 +1,8 @@
 # setCustomRotateControl(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.6+
@@ -10,6 +11,10 @@
 
 ```swift
 func setCustomRotateControl(_ control: NSSegmentedControl!)
+```
+
+```objc
+- (void) setCustomRotateControl:(NSSegmentedControl *) control;
 ```
 
 

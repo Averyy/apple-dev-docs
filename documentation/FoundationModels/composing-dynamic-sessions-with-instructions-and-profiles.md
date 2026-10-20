@@ -1,6 +1,7 @@
 # Composing dynamic sessions with instructions and profiles
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: Article
 
 Adapt sessions dynamically at runtime by loading instructions and tools based on the state of your app.
 
@@ -18,11 +19,11 @@ The framework introduces three composable layers for building dynamic apps that 
 
 Because the body of dynamic instructions re-evaluates before each call to the model, the model always sees a snapshot of your app’s current state.
 
-#### Declare Dynamic Instructions
+#### Declare dynamic instructions
 
-You use [`DynamicInstructions`](dynamicinstructions.md) to declaratively specify the instructions and list of tools that are necessary for the state your app is in. Conform a type to [`DynamicInstructions`](dynamicinstructions.md) and implement its `body` property. Carefully consider using only the instructions and tools that are necessary for the task since a dynamic instruction evaluates before each model request.
+You use [`DynamicInstructions`](./dynamicinstructions.md) to declaratively specify the instructions and list of tools that are necessary for the state your app is in. Conform a type to [`DynamicInstructions`](./dynamicinstructions.md) and implement its `body` property. Carefully consider using only the instructions and tools that are necessary for the task since a dynamic instruction evaluates before each model request.
 
-In the `body` of your type, include any [`Instructions`](instructions.md) block, [`Tool`](tool.md) instances, and nested [`DynamicInstructions`](dynamicinstructions.md). Because the `body` of your type evaluates before each model request, add any necessary conditionals to load or exclude items based on your runtime state.
+In the `body` of your type, include any [`Instructions`](./instructions.md) block, [`Tool`](./tool.md) instances, and nested [`DynamicInstructions`](./dynamicinstructions.md). Because the `body` of your type evaluates before each model request, add any necessary conditionals to load or exclude items based on your runtime state.
 
 ```swift
 struct PresentationInstructions: DynamicInstructions {
@@ -53,9 +54,9 @@ struct PresentationInstructions: DynamicInstructions {
 
 Because the `body` re-evaluates before every model request, switching from image editing to animation editing automatically updates the active toolset.
 
-Nest [`DynamicInstructions`](dynamicinstructions.md) conformances to keep each concern self-contained. The custom `ImageEditingInstructions` type above, for example, bundles its own instructions and tools for use across different parts of the app.
+Nest [`DynamicInstructions`](./dynamicinstructions.md) conformances to keep each concern self-contained. The custom `ImageEditingInstructions` type above, for example, bundles its own instructions and tools for use across different parts of the app.
 
-After declaring your [`DynamicInstructions`](dynamicinstructions.md), pass them to [`LanguageModelSession`](languagemodelsession.md) using the [`init(model:dynamicInstructions:history:)`](languagemodelsession/init(model:dynamicinstructions:history:).md) initializer:
+After declaring your [`DynamicInstructions`](./dynamicinstructions.md), pass them to [`LanguageModelSession`](./languagemodelsession.md) using the [`init(model:dynamicInstructions:history:)`](./languagemodelsession/init%28model,dynamicinstructions,history%29.md) initializer:
 
 ```swift
 let session = LanguageModelSession(
@@ -63,11 +64,11 @@ let session = LanguageModelSession(
 )
 ```
 
-> ❗ **Important**: When conditionally providing instructions and tools, append them in place to improve latency from the use of model caching. For more information about prompt caching, see [`Optimizing key-value caching in language model sessions`](optimizing-key-value-caching-in-language-model-sessions.md).
+> ❗ **Important**: When conditionally providing instructions and tools, append them in place to improve latency from the use of model caching. For more information about prompt caching, see [Optimizing key-value caching in language model sessions](./optimizing-key-value-caching-in-language-model-sessions.md).
 
-#### Configure a Profile
+#### Configure a profile
 
-A [`LanguageModelSession.Profile`](languagemodelsession/profile.md) associates [`DynamicInstructions`](dynamicinstructions.md) with session-level properties, making instructions, tools, and modifiers more dynamic. Compose a [`LanguageModelSession.Profile`](languagemodelsession/profile.md) based on the task you want to accomplish. Parameterizing instructions, tools, and modifiers makes the API surface flexible enough to fit your needs. For example, you might choose to parameterize the model temperature and reasoning level depending on the state of your app:
+A [`LanguageModelSession.Profile`](./languagemodelsession/profile.md) associates [`DynamicInstructions`](./dynamicinstructions.md) with session-level properties, making instructions, tools, and modifiers more dynamic. Compose a [`LanguageModelSession.Profile`](./languagemodelsession/profile.md) based on the task you want to accomplish. Parameterizing instructions, tools, and modifiers makes the API surface flexible enough to fit your needs. For example, you might choose to parameterize the model temperature and reasoning level depending on the state of your app:
 
 ```swift
 Profile {
@@ -81,13 +82,13 @@ Profile {
 .reasoningLevel(likesAstronomy ? .deep : .light)
 ```
 
-#### Orchestrate Multiple Profiles with a Dynamic Profile
+#### Orchestrate multiple profiles with a dynamic profile
 
-Instead of writing an all-encompassing profile, break up the problem into multiple domain-specific profiles. A [`LanguageModelSession.DynamicProfile`](languagemodelsession/dynamicprofile.md) orchestrates the transitions between your profiles by using conditionals and nesting. When the active profile changes, the session adopts the new model and generation options on the next model request. The following diagram illustrates a dynamic profile managing three profiles, each with their own model configuration and conditional instructions:
+Instead of writing an all-encompassing profile, break up the problem into multiple domain-specific profiles. A [`LanguageModelSession.DynamicProfile`](./languagemodelsession/dynamicprofile.md) orchestrates the transitions between your profiles by using conditionals and nesting. When the active profile changes, the session adopts the new model and generation options on the next model request. The following diagram illustrates a dynamic profile managing three profiles, each with their own model configuration and conditional instructions:
 
-![A diagram that illustrates a dynamic profile that manages three profiles. There](/images/com.apple.foundationmodels/composing-dynamic-sessions-with-instructions-and-profiles-dynamic-profile@2x.png)
+![A diagram that illustrates a dynamic profile that manages three profiles. There](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/composing-dynamic-sessions-with-instructions-and-profiles-dynamic-profile@2x.png)
 
-A [`LanguageModelSession.DynamicProfileBuilder`](languagemodelsession/dynamicprofilebuilder.md) enforces a hard constraint at compile time so exactly one [`LanguageModelSession.Profile`](languagemodelsession/profile.md) is active at a time. Instead of using parallel `if` blocks, use expressions so the compiler verifies the constraint:
+A [`LanguageModelSession.DynamicProfileBuilder`](./languagemodelsession/dynamicprofilebuilder.md) enforces a hard constraint at compile time so exactly one [`LanguageModelSession.Profile`](./languagemodelsession/profile.md) is active at a time. Instead of using parallel `if` blocks, use expressions so the compiler verifies the constraint:
 
 ```swift
 struct PresentationProfile: LanguageModelSession.DynamicProfile {
@@ -121,7 +122,7 @@ struct PresentationProfile: LanguageModelSession.DynamicProfile {
 }
 ```
 
-Pass the dynamic profile to [`LanguageModelSession`](languagemodelsession.md) using the [`init(profile:history:)`](languagemodelsession/init(profile:history:).md) initializer:
+Pass the dynamic profile to [`LanguageModelSession`](./languagemodelsession.md) using the [`init(profile:history:)`](./languagemodelsession/init%28profile,history%29.md) initializer:
 
 ```swift
 let session = LanguageModelSession(
@@ -129,7 +130,7 @@ let session = LanguageModelSession(
 )
 ```
 
-#### Apply Modifier Precedence Rules
+#### Apply modifier precedence rules
 
 Dynamic profiles and subprofiles support the same value modifiers, like temperature, reasoning level, and so on. When the same modifier appears at multiple levels, a three-tier precedence rule determines which value to use — from highest to lowest priority:
 
@@ -173,20 +174,20 @@ struct WritingContent: LanguageModelSession.DynamicProfile {
 }
 ```
 
-#### Respond to Life Cycle Events
+#### Respond to life cycle events
 
 Observe and react to key moments during a session by using life cycle modifiers. Unlike value modifiers, life cycle callbacks accumulate across nested profiles. When a profile and a subprofile both register a callback, the framework calls both. The following shows the available modifiers and when they run:
 
 | Modifier | Description |
 | --- | --- |
-| [`onActivate(perform:)`](languagemodelsession/dynamicprofile/onactivate(perform:).md) | Runs when the profile becomes active and allows for set up work. |
-| [`onDeactivate(perform:)`](languagemodelsession/dynamicprofile/ondeactivate(perform:).md) | Runs when the profile becomes inactive and allows for teardown work. |
-| [`onPrompt(perform:)`](languagemodelsession/dynamicprofile/onprompt(perform:).md) | Runs after the user prompt appends to the transcript, but before the model request starts. |
-| [`onResponse(perform:)`](languagemodelsession/dynamicprofile/onresponse(perform:).md) | Runs after the model produces a response. |
-| [`onToolCall(perform:)`](languagemodelsession/dynamicprofile/ontoolcall(perform:).md) | Runs when the model invokes a tool. |
-| [`onToolOutput(perform:)`](languagemodelsession/dynamicprofile/ontooloutput(perform:).md) | Runs when a tool call produces output. |
+| [`onActivate(perform:)`](./languagemodelsession/dynamicprofile/onactivate%28perform%29.md) | Runs when the profile becomes active and allows for set up work. |
+| [`onDeactivate(perform:)`](./languagemodelsession/dynamicprofile/ondeactivate%28perform%29.md) | Runs when the profile becomes inactive and allows for teardown work. |
+| [`onPrompt(perform:)`](./languagemodelsession/dynamicprofile/onprompt%28perform%29.md) | Runs after the user prompt appends to the transcript, but before the model request starts. |
+| [`onResponse(perform:)`](./languagemodelsession/dynamicprofile/onresponse%28perform%29.md) | Runs after the model produces a response. |
+| [`onToolCall(perform:)`](./languagemodelsession/dynamicprofile/ontoolcall%28perform%29.md) | Runs when the model invokes a tool. |
+| [`onToolOutput(perform:)`](./languagemodelsession/dynamicprofile/ontooloutput%28perform%29.md) | Runs when a tool call produces output. |
 
-Use life cycle events as validation checkpoints by throwing an error. Throwing an error inside a life cycle callback propagates to the caller’s [`respond(to:options:)`](languagemodelsession/respond(to:options:).md) or [`streamResponse(to:options:)`](languagemodelsession/streamresponse(to:options:).md) call, letting you raise errors that surface directly to your call site:
+Use life cycle events as validation checkpoints by throwing an error. Throwing an error inside a life cycle callback propagates to the caller’s [`respond(to:options:)`](./languagemodelsession/respond%28to,options%29.md) or [`streamResponse(to:options:)`](./languagemodelsession/streamresponse%28to,options%29.md) call, letting you raise errors that surface directly to your call site:
 
 ```swift
 Profile {
@@ -205,9 +206,9 @@ Profile {
 }
 ```
 
-#### Access Session Level Properties
+#### Access session-level properties
 
-The building blocks of dynamic instructions and profiles help you define what the model sees and how it’s configured. Use `@SessionProperty` to access session properties from within a [`LanguageModelSession.DynamicProfile`](languagemodelsession/dynamicprofile.md), [`LanguageModelSession.Profile`](languagemodelsession/profile.md), [`DynamicInstructions`](dynamicinstructions.md), and [`Tool`](tool.md).
+The building blocks of dynamic instructions and profiles help you define what the model sees and how it’s configured. Use `@SessionProperty` to access session properties from within a [`LanguageModelSession.DynamicProfile`](./languagemodelsession/dynamicprofile.md), [`LanguageModelSession.Profile`](./languagemodelsession/profile.md), [`DynamicInstructions`](./dynamicinstructions.md), and [`Tool`](./tool.md).
 
 The session history provides the transcript entries after instructions such as prompts, responses, tool calls, and tool outputs. The history excludes instructions segments from `DynamicInstructions`. Accessing the history shared property gives you the ability to perform updates like compaction and summarization. Use `@SessionProperty` to access and modify transcript entries:
 
@@ -231,9 +232,9 @@ var body: some LanguageModelSession.DynamicProfile {
 }
 ```
 
-> **Note**: Because model output influences the evaluation of [`DynamicInstructions`](dynamicinstructions.md) and [`Tool`](tool.md), the session history is read-only in these contexts.
+> **Note**: Because model output influences the evaluation of [`DynamicInstructions`](./dynamicinstructions.md) and [`Tool`](./tool.md), the session history is read-only in these contexts.
 
-When you need session-scoped properties beyond the built-in history, apply the [`SessionPropertyEntry()`](sessionpropertyentry().md) macro to a stored property in an extension on [`SessionPropertyValues`](sessionpropertyvalues.md). This makes the property accessible from the components within the session when you use [`LanguageModelSession.SessionProperty`](languagemodelsession/sessionproperty.md). For example, to create a custom [`Tool`](tool.md) to access shared state, extend [`SessionPropertyValues`](sessionpropertyvalues.md) with a new property and then access it with [`LanguageModelSession.SessionProperty`](languagemodelsession/sessionproperty.md) from the tool:
+When you need session-scoped properties beyond the built-in history, apply the [`SessionPropertyEntry()`](./sessionpropertyentry%28%29.md) macro to a stored property in an extension on [`SessionPropertyValues`](./sessionpropertyvalues.md). This makes the property accessible from the components within the session when you use [`LanguageModelSession.SessionProperty`](./languagemodelsession/sessionproperty.md). For example, to create a custom [`Tool`](./tool.md) to access shared state, extend [`SessionPropertyValues`](./sessionpropertyvalues.md) with a new property and then access it with [`LanguageModelSession.SessionProperty`](./languagemodelsession/sessionproperty.md) from the tool:
 
 ```swift
 extension SessionPropertyValues {
@@ -264,9 +265,9 @@ struct PlannerTool: Tool {
 }
 ```
 
-#### Create Reusable Components with a Custom Modifier
+#### Create reusable components with a custom modifier
 
-A [`LanguageModelSession.DynamicProfileModifier`](languagemodelsession/dynamicprofilemodifier.md) allows you to compose traits like model selection, temperature, life cycle callbacks, and so on, into a self-contained modifier that you attach to your profile. A modifier receives the wrapped content and returns a new [`LanguageModelSession.DynamicProfile`](languagemodelsession/dynamicprofile.md) `body`. For example, the following creates a low temperature modifier for debugging that logs debug information after a request:
+A [`LanguageModelSession.DynamicProfileModifier`](./languagemodelsession/dynamicprofilemodifier.md) allows you to compose traits like model selection, temperature, life cycle callbacks, and so on, into a self-contained modifier that you attach to your profile. A modifier receives the wrapped content and returns a new [`LanguageModelSession.DynamicProfile`](./languagemodelsession/dynamicprofile.md) `body`. For example, the following creates a low temperature modifier for debugging that logs debug information after a request:
 
 ```swift
 struct DebugProfileModifier: LanguageModelSession.DynamicProfileModifier {
@@ -286,7 +287,7 @@ extension LanguageModelSession.DynamicProfile {
 }
 ```
 
-To use a custom modifier, apply it to your [`LanguageModelSession.Profile`](languagemodelsession/profile.md):
+To use a custom modifier, apply it to your [`LanguageModelSession.Profile`](./languagemodelsession/profile.md):
 
 ```swift
 Profile {
@@ -295,9 +296,9 @@ Profile {
 .debug()
 ```
 
-#### Transform the Session History
+#### Transform the session history
 
-Because the transcript grows with every turn in a session, context size limits become important to consider. Before prompting the model, a profile can transform the transcript it sends to filter entries that aren’t necessary for the request. For example, you might drop completed tool calls, or even remove sensitive information, before sending a request to a model. Use the [`historyTransform(_:)`](languagemodelsession/dynamicprofile/historytransform(_:).md) modifier to receive the current history before each model request and return only the entries to use for the request. The following only sends the last twenty entries to the model:
+Because the transcript grows with every turn in a session, context size limits become important to consider. Before prompting the model, a profile can transform the transcript it sends to filter entries that aren’t necessary for the request. For example, you might drop completed tool calls, or even remove sensitive information, before sending a request to a model. Use the [`historyTransform(_:)`](./languagemodelsession/dynamicprofile/historytransform%28_%29.md) modifier to receive the current history before each model request and return only the entries to use for the request. The following only sends the last twenty entries to the model:
 
 ```swift
 Profile {
@@ -312,21 +313,22 @@ Profile {
 }
 ```
 
-When a [`LanguageModelSession.DynamicProfile`](languagemodelsession/dynamicprofile.md) coordinates multiple profiles, [`historyTransform(_:)`](languagemodelsession/dynamicprofile/historytransform(_:).md) allows each profile to manage its own view of the history. One profile compresses the history for a small on-device model, and a profile that uses a server model — with a much larger context size — gets the full history.
+When a [`LanguageModelSession.DynamicProfile`](./languagemodelsession/dynamicprofile.md) coordinates multiple profiles, [`historyTransform(_:)`](./languagemodelsession/dynamicprofile/historytransform%28_%29.md) allows each profile to manage its own view of the history. One profile compresses the history for a small on-device model, and a profile that uses a server model — with a much larger context size — gets the full history.
 
 ## See Also
 
-- [Origami: Crafting a dynamic tutorial for Apple Intelligence](origami-crafting-a-dynamic-tutorial-for-apple-intelligence.md)
+### Dynamic profiles
+- [Origami: Crafting a dynamic tutorial for Apple Intelligence](./origami-crafting-a-dynamic-tutorial-for-apple-intelligence.md)
   Build interactive experiences with Foundation Models and Private Cloud Compute using multimodal prompts.
-- [protocol DynamicInstructions](dynamicinstructions.md)
+- [protocol DynamicInstructions](./dynamicinstructions.md)
   A type that represents dynamic instructions.
-- [struct DynamicInstructionsForEach](dynamicinstructionsforeach.md)
+- [struct DynamicInstructionsForEach](./dynamicinstructionsforeach.md)
   Dynamic instructions that produce content for each element of a collection.
-- [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
+- [LanguageModelSession.DynamicProfile](./languagemodelsession/dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
-- [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)
+- [LanguageModelSession.DynamicProfileModifier](./languagemodelsession/dynamicprofilemodifier.md)
   A protocol for creating reusable wrappers around dynamic profile content.
-- [LanguageModelSession.Profile](languagemodelsession/profile.md)
+- [LanguageModelSession.Profile](./languagemodelsession/profile.md)
   A profile that contains dynamic instructions.
 
 

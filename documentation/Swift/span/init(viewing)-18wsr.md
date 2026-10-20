@@ -1,7 +1,8 @@
 # init(viewing:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 View initialized raw memory as a typed span.
 
@@ -19,6 +20,8 @@ View initialized raw memory as a typed span.
 ```swift
 init(viewing bytes: RawSpan) where Element : ConvertibleFromBytes
 ```
+
+Available when `Element` conforms to `BitwiseCopyable`.
 
 #### Discussion
 

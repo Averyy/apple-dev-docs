@@ -1,7 +1,8 @@
 # AVAssetWritingPlanner.SegmentResult.successWithState(_:)
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Finish the segment successfully with custom client state.
 
@@ -21,7 +22,7 @@ case successWithState(Data)
 
 #### Discussion
 
-Use this case to save custom state data that will be restored if the export session is interrupted and later resumed. The client state is available via [`clientStateToRestore`](avplannedsegmentwritingrequest/clientstatetorestore.md) when the segment is resumed. Only the last successful state data is persisted. Any previous state data will be overwritten.
+Use this case to save custom state data that will be restored if the export session is interrupted and later resumed. The client state is available via [`clientStateToRestore`](../../avplannedsegmentwritingrequest/clientstatetorestore.md) when the segment is resumed. Only the last successful state data is persisted. Any previous state data will be overwritten.
 
 ## Parameters
 
@@ -29,9 +30,10 @@ Use this case to save custom state data that will be restored if the export sess
 
 ## See Also
 
-- [AVAssetWritingPlanner.SegmentResult.success](avassetwritingplanner/segmentresult/success.md)
+### Completion Options
+- [AVAssetWritingPlanner.SegmentResult.success](./success.md)
   Finish the segment successfully without saving state.
-- [AVAssetWritingPlanner.SegmentResult.cancelled](avassetwritingplanner/segmentresult/cancelled.md)
+- [AVAssetWritingPlanner.SegmentResult.cancelled](./cancelled.md)
   Cancel the current segment while allowing future resumption.
 
 

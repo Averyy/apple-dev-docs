@@ -1,7 +1,8 @@
 # UIListEnvironment.grouped
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates the containing list is a grouped-style list.
 
@@ -18,19 +19,24 @@ A constant that indicates the containing list is a grouped-style list.
 case grouped
 ```
 
+```c
+UIListEnvironmentGrouped
+```
+
 ## See Also
 
-- [UIListEnvironment.unspecified](uilistenvironment/unspecified.md)
+### Constants
+- [UIListEnvironment.unspecified](./unspecified.md)
   A constant that indicates the absence of information about a containing list.
-- [UIListEnvironment.none](uilistenvironment/none.md)
+- [UIListEnvironment.none](./none.md)
   A constant that indicates there isn’t a containing list.
-- [UIListEnvironment.plain](uilistenvironment/plain.md)
+- [UIListEnvironment.plain](./plain.md)
   A constant that indicates the containing list is a plain-style list.
-- [UIListEnvironment.insetGrouped](uilistenvironment/insetgrouped.md)
+- [UIListEnvironment.insetGrouped](./insetgrouped.md)
   A constant that indicates the containing list is an inset-grouped-style list.
-- [UIListEnvironment.sidebar](uilistenvironment/sidebar.md)
+- [UIListEnvironment.sidebar](./sidebar.md)
   A constant that indicates the containing list is a sidebar-style list.
-- [UIListEnvironment.sidebarPlain](uilistenvironment/sidebarplain.md)
+- [UIListEnvironment.sidebarPlain](./sidebarplain.md)
   A constant that indicates the containing list is a sidebar-plain-style list.
 
 

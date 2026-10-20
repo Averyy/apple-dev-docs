@@ -1,7 +1,8 @@
 # MarketplaceSearchDetailCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a marketplace search detail create request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a marketplace search detail create request resource.
 
 ## Declaration
 
-```swift
+```
 object MarketplaceSearchDetailCreateRequest.Data.Attributes
 ```
 
@@ -20,7 +21,8 @@ object MarketplaceSearchDetailCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object MarketplaceSearchDetailCreateRequest.Data.Relationships](marketplacesearchdetailcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object MarketplaceSearchDetailCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

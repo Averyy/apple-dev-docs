@@ -1,15 +1,16 @@
 # MPSCustomKernelIndex
 
 **Framework**: Metal Performance Shaders  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,22 +18,26 @@
 struct MPSCustomKernelIndex
 ```
 
+```c
+typedef enum { ... } MPSCustomKernelIndex;
+```
+
 ## Topics
 
 ### Initializers
-- [init(UInt32)](mpscustomkernelindex/init(_:).md)
-- [init(rawValue: UInt32)](mpscustomkernelindex/init(rawvalue:).md)
+- [init(UInt32)](./mpscustomkernelindex/init%28_%29.md)
+- [init(rawValue: UInt32)](./mpscustomkernelindex/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](mpscustomkernelindex/rawvalue.md)
+- [var rawValue: UInt32](./mpscustomkernelindex/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

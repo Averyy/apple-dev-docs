@@ -1,7 +1,8 @@
 # InAppPurchaseAppStoreReviewScreenshotUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an In-App Purchase App Store review screenshot update request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an In-App Purchase App Store review screenshot update r
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseAppStoreReviewScreenshotUpdateRequest.Data.Attributes
 ```
 

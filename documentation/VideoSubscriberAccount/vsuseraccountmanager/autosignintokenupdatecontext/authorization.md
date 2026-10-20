@@ -1,7 +1,8 @@
 # authorization
 
 **Framework**: Video Subscriber Account  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A state that represents a person’s approval of Automatic Sign-In.
 
@@ -18,11 +19,11 @@ var authorization: VSUserAccountManager.AutoSignInAuthorization { get }
 
 ## Mentions
 
-- [Signing people in to their media accounts automatically](signing-people-in-to-media-apps-automatically.md)
+- [Signing people in to their media accounts automatically](../../signing-people-in-to-media-apps-automatically.md)
 
 #### Discussion
 
-The system prompts the person to opt in to Automatic Sign-In when the app calls   [`requestAutoSignInAuthorization()`](vsuseraccountmanager/requestautosigninauthorization().md). If the person approves the prompt, the framework sets the [`authorization`](vsuseraccountmanager/autosignintokenupdatecontext/authorization.md) status to [`VSUserAccountManager.AutoSignInAuthorization.granted`](vsuseraccountmanager/autosigninauthorization/granted.md). If the person dismisses the prompt without approving, the system leaves the authorization status [`VSUserAccountManager.AutoSignInAuthorization.notDetermined`](vsuseraccountmanager/autosigninauthorization/notdetermined.md) and the framework doesn’t prompt them again until the app calls [`requestAutoSignInAuthorization()`](vsuseraccountmanager/requestautosigninauthorization().md) once more.
+The system prompts the person to opt in to Automatic Sign-In when the app calls   [`requestAutoSignInAuthorization()`](../requestautosigninauthorization%28%29.md). If the person approves the prompt, the framework sets the [`authorization`](./authorization.md) status to [`VSUserAccountManager.AutoSignInAuthorization.granted`](../autosigninauthorization/granted.md). If the person dismisses the prompt without approving, the system leaves the authorization status [`VSUserAccountManager.AutoSignInAuthorization.notDetermined`](../autosigninauthorization/notdetermined.md) and the framework doesn’t prompt them again until the app calls [`requestAutoSignInAuthorization()`](../requestautosigninauthorization%28%29.md) once more.
 
 
 ---

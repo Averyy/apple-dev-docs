@@ -5,15 +5,15 @@
 ## Topics
 
 ### Constants
-- [var typeCString: DescType](typecstring.md)
+- [var typeCString: DescType](../../typecstring.md)
   C string—Mac OS Roman characters followed by a NULL byte. Deprecated.
-- [var typeEncodedString: DescType](typeencodedstring.md)
+- [var typeEncodedString: DescType](../../typeencodedstring.md)
   Styled Unicode text. Not implemented.
-- [var typePString: DescType](typepstring.md)
+- [var typePString: DescType](../../typepstring.md)
   Pascal string—unsigned length byte followed by Mac OS Roman characters. Deprecated.
-- [var typeStyledUnicodeText: DescType](typestyledunicodetext.md)
+- [var typeStyledUnicodeText: DescType](../../typestyledunicodetext.md)
   Styled Unicode text. Not implemented.
-- [var typeUnicodeText: DescType](typeunicodetext.md)
+- [var typeUnicodeText: DescType](../../typeunicodetext.md)
   Unicode text. Native byte ordering, optional BOM.
 
 

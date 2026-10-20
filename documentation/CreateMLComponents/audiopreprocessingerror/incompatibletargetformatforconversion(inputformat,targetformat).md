@@ -1,7 +1,8 @@
 # AudioPreprocessingError.incompatibleTargetFormatForConversion(inputFormat:targetFormat:)
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that the input and output formats are incompatible for creating an audio converter.
 

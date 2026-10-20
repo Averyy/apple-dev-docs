@@ -1,7 +1,8 @@
 # preferred
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The compute device that the framework prefers to execute the layer/operation.
 
@@ -22,11 +23,12 @@ let preferred: MLComputeDevice
 
 ## Mentions
 
-- [Analyzing a Core ML model’s performance in Xcode](analyzing-a-core-ml-model-s-performance-in-xcode.md)
+- [Analyzing a Core ML model’s performance in Xcode](../../analyzing-a-core-ml-model-s-performance-in-xcode.md)
 
 ## See Also
 
-- [let supported: [MLComputeDevice]](mlcomputeplan-1w21n/deviceusage/supported.md)
+### Getting the device usage
+- [let supported: [MLComputeDevice]](./supported.md)
   The compute devices that can execute the layer/operation.
 
 

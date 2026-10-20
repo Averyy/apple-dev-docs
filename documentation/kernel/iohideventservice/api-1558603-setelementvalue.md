@@ -1,14 +1,15 @@
 # setElementValue
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12.2+ - Deprecated in 10.15.1
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn setElementValue(UInt32 usagePage, UInt32 usage, UInt32 value);
 ```
 

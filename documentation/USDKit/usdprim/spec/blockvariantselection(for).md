@@ -1,7 +1,8 @@
 # blockVariantSelection(for:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Authors an explicit “no selection” for the given variant set.
 

@@ -12,33 +12,34 @@ The `textField` element provides a field for users to enter text. This element i
 <textField>tclark@example.com</textField>
 ```
 
-##### Contained in
+##### Contained In
 
-- [`formTemplate`](formtemplate.md)
+- [formTemplate](./formtemplate.md)
 
 ## Topics
 
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [keyboardType](keyboardtype.md)
+- [keyboardType](./keyboardtype.md)
   Specifies the keyboard to display.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [secure](secure.md)
+- [secure](./secure.md)
   Hides typed text.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [asset](asset.md)
+### Multimedia Elements
+- [asset](./asset.md)
   Contains information about where a media item is stored.
-- [relatedContentURL](relatedcontenturl.md)
+- [relatedContentURL](./relatedcontenturl.md)
   Contains the URL for the displayed content.
-- [searchField](searchfield.md)
+- [searchField](./searchfield.md)
   Displays an interactive text field used to search for content.
-- [mediaContent](mediacontent.md)
+- [mediaContent](./mediacontent.md)
   Contains information used to play inline audio or video.
 
 

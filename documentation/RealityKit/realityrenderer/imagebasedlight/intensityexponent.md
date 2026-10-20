@@ -1,7 +1,8 @@
 # intensityExponent
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The intensity value of the light. The intensity modulates the intensity specified in the diffuse and specular textures An intensity of 0 means using the diffuse/specular intensities as-is Otherwise the intensity is multiplied by 2^intensity
 

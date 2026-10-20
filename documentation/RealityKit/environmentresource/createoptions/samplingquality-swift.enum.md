@@ -1,7 +1,8 @@
 # EnvironmentResource.CreateOptions.SamplingQuality
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An object for controlling the skybox sampling quality for lighting textures.
 
@@ -22,22 +23,22 @@ enum SamplingQuality
 ## Topics
 
 ### Sampling qualities
-- [EnvironmentResource.CreateOptions.SamplingQuality.fast](environmentresource/createoptions/samplingquality-swift.enum/fast.md)
+- [EnvironmentResource.CreateOptions.SamplingQuality.fast](./samplingquality-swift.enum/fast.md)
   Computes the environment textures with small sampling rates.
-- [EnvironmentResource.CreateOptions.SamplingQuality.normal](environmentresource/createoptions/samplingquality-swift.enum/normal.md)
+- [EnvironmentResource.CreateOptions.SamplingQuality.normal](./samplingquality-swift.enum/normal.md)
   Computes the environment textures with regular sampling rates.
-- [EnvironmentResource.CreateOptions.SamplingQuality.high](environmentresource/createoptions/samplingquality-swift.enum/high.md)
+- [EnvironmentResource.CreateOptions.SamplingQuality.high](./samplingquality-swift.enum/high.md)
   Computes the environment textures with high sampling rates, reducing texture noise in high-frequency areas.
-- [EnvironmentResource.CreateOptions.SamplingQuality.veryHigh](environmentresource/createoptions/samplingquality-swift.enum/veryhigh.md)
+- [EnvironmentResource.CreateOptions.SamplingQuality.veryHigh](./samplingquality-swift.enum/veryhigh.md)
   Computes the environment textures with very high sampling rates.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

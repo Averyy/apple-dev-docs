@@ -1,7 +1,8 @@
 # addVideoToPage
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app intent conforms to the schema for adding a video to a page in a text document.
 

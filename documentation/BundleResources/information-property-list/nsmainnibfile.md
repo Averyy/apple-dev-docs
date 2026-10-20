@@ -1,7 +1,8 @@
 # NSMainNibFile
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of an app’s main user interface file.
 
@@ -13,23 +14,25 @@ The name of an app’s main user interface file.
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSMainNibFile` (Main nib file base name)
+- **Type**: string
 
 ## See Also
 
-- [UIApplicationSceneManifest](information-property-list/uiapplicationscenemanifest.md)
+### Main user interface
+- [UIApplicationSceneManifest](./uiapplicationscenemanifest.md)
   The information about the app’s scene-based life-cycle support.
-- [UIApplicationPreferredDefaultSceneSessionRole](information-property-list/uiapplicationpreferreddefaultscenesessionrole.md)
+- [UIApplicationPreferredDefaultSceneSessionRole](./uiapplicationpreferreddefaultscenesessionrole.md)
   The preferred initial scene session role for your app.
-- [NSMainStoryboardFile](information-property-list/nsmainstoryboardfile.md)
+- [NSMainStoryboardFile](./nsmainstoryboardfile.md)
   The name of an app’s storyboard resource file.
-- [UIMainStoryboardFile](information-property-list/uimainstoryboardfile.md)
+- [UIMainStoryboardFile](./uimainstoryboardfile.md)
   The name of the app’s main storyboard file.
-- [LSUIElement](information-property-list/lsuielement.md)
+- [LSUIElement](./lsuielement.md)
   A Boolean value indicating whether the app is an agent app that runs in the background and doesn’t appear in the Dock.
-- [UISupportsTrueScreenSizeOnMac](information-property-list/uisupportstruescreensizeonmac.md)
+- [UISupportsTrueScreenSizeOnMac](./uisupportstruescreensizeonmac.md)
   A Boolean value that indicates whether your iPad app supports arbitrary screen sizes and resolutions when running on a Mac.
 
 

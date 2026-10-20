@@ -1,7 +1,8 @@
 # MPMusicPlaybackState.seekingForward
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The music player is seeking forward.
 
@@ -18,17 +19,22 @@ The music player is seeking forward.
 case seekingForward
 ```
 
+```c
+MPMusicPlaybackStateSeekingForward
+```
+
 ## See Also
 
-- [MPMusicPlaybackState.stopped](mpmusicplaybackstate/stopped.md)
+### Constants
+- [MPMusicPlaybackState.stopped](./stopped.md)
   The music player is stopped.
-- [MPMusicPlaybackState.playing](mpmusicplaybackstate/playing.md)
+- [MPMusicPlaybackState.playing](./playing.md)
   The music player is playing.
-- [MPMusicPlaybackState.paused](mpmusicplaybackstate/paused.md)
+- [MPMusicPlaybackState.paused](./paused.md)
   The music player is paused.
-- [MPMusicPlaybackState.interrupted](mpmusicplaybackstate/interrupted.md)
+- [MPMusicPlaybackState.interrupted](./interrupted.md)
   The music player has been interrupted, such as by an incoming phone call.
-- [MPMusicPlaybackState.seekingBackward](mpmusicplaybackstate/seekingbackward.md)
+- [MPMusicPlaybackState.seekingBackward](./seekingbackward.md)
   The music player is seeking backward.
 
 

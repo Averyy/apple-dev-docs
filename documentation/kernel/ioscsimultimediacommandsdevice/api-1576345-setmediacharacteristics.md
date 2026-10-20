@@ -1,14 +1,15 @@
 # SetMediaCharacteristics
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual void SetMediaCharacteristics(UInt32 blockSize, UInt32 blockCount);
 ```
 

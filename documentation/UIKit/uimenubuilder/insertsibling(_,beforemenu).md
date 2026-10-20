@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Inserts a sibling menu before the specified menu.
@@ -19,6 +20,10 @@ Inserts a sibling menu before the specified menu.
 func insertSibling(_ siblingMenu: UIMenu, beforeMenu siblingIdentifier: UIMenu.Identifier)
 ```
 
+```objc
+- (void) insertSiblingMenu:(UIMenu *) siblingMenu beforeMenuForIdentifier:(UIMenuIdentifier) siblingIdentifier;
+```
+
 ## Parameters
 
 - `siblingMenu`: The sibling menu to insert.
@@ -26,7 +31,8 @@ func insertSibling(_ siblingMenu: UIMenu, beforeMenu siblingIdentifier: UIMenu.I
 
 ## See Also
 
-- [func insertSibling(UIMenu, afterMenu: UIMenu.Identifier)](uimenubuilder/insertsibling(_:aftermenu:).md)
+### Inserting sibling menus
+- [func insertSibling(UIMenu, afterMenu: UIMenu.Identifier)](./insertsibling%28_,aftermenu%29.md)
   Inserts a sibling menu after the specified menu.
 
 

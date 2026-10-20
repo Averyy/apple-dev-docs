@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -17,9 +18,16 @@
 init(_ m: CATransform3D)
 ```
 
+**Other overloads**:
+
+```swift
+init(_ m: CGAffineTransform)
+```
+
 ## See Also
 
-- [init()](projectiontransform/init.md)
+### Creating a transform
+- [init()](./init%28%29.md)
 
 
 ---

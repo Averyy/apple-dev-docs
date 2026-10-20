@@ -1,6 +1,7 @@
 # Safari 13.1 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released March 24, 2020 — Version 13.1 (15609.1.20)
 
@@ -43,14 +44,14 @@ Safari 13.1 ships with iOS 13.4 and macOS 10.15.4. It’s also available for mac
 - Added the “Not Secure” warning for sites using TLS 1.1 and 1.0.
 - Fixed many bugs identified by fuzz testing.
 
-##### Javascript
+##### JavaScript
 
 ###### New Features
 
 - Added support for the nullish coalescing operator ??.
 - Added support for the `String.prototype.replaceAll` method.
 
-##### Web Api
+##### Web API
 
 ###### New Features
 
@@ -62,13 +63,13 @@ Safari 13.1 ships with iOS 13.4 and macOS 10.15.4. It’s also available for mac
 - Added support for the Remote Playback API.
 - Added support for the Picture-in-Picture API.
 
-##### Webrtc
+##### WebRTC
 
 ###### New Features
 
 - Added support for DTMF codec and proxies.
 
-##### Html
+##### HTML
 
 ###### New Features
 
@@ -80,7 +81,7 @@ Safari 13.1 ships with iOS 13.4 and macOS 10.15.4. It’s also available for mac
 
 - Added support for CSS Shadow Parts.
 
-##### Css
+##### CSS
 
 ###### New Features
 
@@ -101,7 +102,8 @@ Safari 13.1 ships with iOS 13.4 and macOS 10.15.4. It’s also available for mac
 
 ## See Also
 
-- [Safari 13 Release Notes](safari-13-release-notes.md)
+### Version 13
+- [Safari 13 Release Notes](./safari-13-release-notes.md)
   Released September 19, 2019 — Version 13 (15608.2.11)
 
 

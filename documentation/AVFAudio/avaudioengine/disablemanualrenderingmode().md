@@ -1,7 +1,8 @@
 # disableManualRenderingMode()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the engine to render to or from an audio device.
 
@@ -20,17 +21,22 @@ Sets the engine to render to or from an audio device.
 func disableManualRenderingMode()
 ```
 
+```objc
+- (void) disableManualRenderingMode;
+```
+
 ## See Also
 
-- [func enableManualRenderingMode(AVAudioEngineManualRenderingMode, format: AVAudioFormat, maximumFrameCount: AVAudioFrameCount) throws](avaudioengine/enablemanualrenderingmode(_:format:maximumframecount:).md)
+### Rendering audio manually
+- [func enableManualRenderingMode(AVAudioEngineManualRenderingMode, format: AVAudioFormat, maximumFrameCount: AVAudioFrameCount) throws](./enablemanualrenderingmode%28_,format,maximumframecount%29.md)
   Sets the engine to operate in manual rendering mode with the render format and maximum frame count you specify.
-- [enum AVAudioEngineManualRenderingMode](avaudioenginemanualrenderingmode.md)
+- [enum AVAudioEngineManualRenderingMode](../avaudioenginemanualrenderingmode.md)
   The two modes for manual rendering.
-- [func renderOffline(AVAudioFrameCount, to: AVAudioPCMBuffer) throws -> AVAudioEngineManualRenderingStatus](avaudioengine/renderoffline(_:to:).md)
+- [func renderOffline(AVAudioFrameCount, to: AVAudioPCMBuffer) throws -> AVAudioEngineManualRenderingStatus](./renderoffline%28_,to%29.md)
   Makes a render call to the engine operating in the offline manual rendering mode.
-- [enum AVAudioEngineManualRenderingStatus](avaudioenginemanualrenderingstatus.md)
+- [enum AVAudioEngineManualRenderingStatus](../avaudioenginemanualrenderingstatus.md)
   Status codes that return from the render call to the engine operating in manual rendering mode.
-- [enum AVAudioEngineManualRenderingError](avaudioenginemanualrenderingerror.md)
+- [enum AVAudioEngineManualRenderingError](../avaudioenginemanualrenderingerror.md)
   Constants that describe error codes that the framework returns from manual rendering mode methods.
 
 

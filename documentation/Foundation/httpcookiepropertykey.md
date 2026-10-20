@@ -1,7 +1,8 @@
 # HTTPCookiePropertyKey
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that define the supported keys in a cookie attributes dictionary.
 
@@ -20,58 +21,63 @@ Constants that define the supported keys in a cookie attributes dictionary.
 struct HTTPCookiePropertyKey
 ```
 
+```c
+typedef NSString * NSHTTPCookiePropertyKey;
+```
+
 ## Topics
 
 ### Cookie property keys
-- [static let comment: HTTPCookiePropertyKey](httpcookiepropertykey/comment.md)
+- [static let comment: HTTPCookiePropertyKey](./httpcookiepropertykey/comment.md)
   An `NSString` object containing the comment for the cookie.
-- [static let commentURL: HTTPCookiePropertyKey](httpcookiepropertykey/commenturl.md)
+- [static let commentURL: HTTPCookiePropertyKey](./httpcookiepropertykey/commenturl.md)
   An `NSURL` object or `NSString` object containing the comment URL for the cookie.
-- [static let discard: HTTPCookiePropertyKey](httpcookiepropertykey/discard.md)
+- [static let discard: HTTPCookiePropertyKey](./httpcookiepropertykey/discard.md)
   An `NSString` object stating whether the cookie should be discarded at the end of the session.
-- [static let domain: HTTPCookiePropertyKey](httpcookiepropertykey/domain.md)
+- [static let domain: HTTPCookiePropertyKey](./httpcookiepropertykey/domain.md)
   An `NSString` object containing the domain for the cookie.
-- [static let expires: HTTPCookiePropertyKey](httpcookiepropertykey/expires.md)
+- [static let expires: HTTPCookiePropertyKey](./httpcookiepropertykey/expires.md)
   An `NSDate` object or `NSString` object specifying the expiration date for the cookie.
-- [static let maximumAge: HTTPCookiePropertyKey](httpcookiepropertykey/maximumage.md)
+- [static let maximumAge: HTTPCookiePropertyKey](./httpcookiepropertykey/maximumage.md)
   An `NSString` object containing an integer value stating how long in seconds the cookie should be kept, at most.
-- [static let name: HTTPCookiePropertyKey](httpcookiepropertykey/name.md)
+- [static let name: HTTPCookiePropertyKey](./httpcookiepropertykey/name.md)
   An `NSString` object containing the name of the cookie (required).
-- [static let originURL: HTTPCookiePropertyKey](httpcookiepropertykey/originurl.md)
+- [static let originURL: HTTPCookiePropertyKey](./httpcookiepropertykey/originurl.md)
   An NSURL or `NSString` object containing the URL that set this cookie.
-- [static let path: HTTPCookiePropertyKey](httpcookiepropertykey/path.md)
+- [static let path: HTTPCookiePropertyKey](./httpcookiepropertykey/path.md)
   An `NSString` object containing the path for the cookie.
-- [static let port: HTTPCookiePropertyKey](httpcookiepropertykey/port.md)
+- [static let port: HTTPCookiePropertyKey](./httpcookiepropertykey/port.md)
   An `NSString` object containing comma-separated integer values specifying the ports for the cookie.
-- [static let sameSitePolicy: HTTPCookiePropertyKey](httpcookiepropertykey/samesitepolicy.md)
+- [static let sameSitePolicy: HTTPCookiePropertyKey](./httpcookiepropertykey/samesitepolicy.md)
   A string indicating the same-site policy for the cookie.
-- [static let secure: HTTPCookiePropertyKey](httpcookiepropertykey/secure.md)
+- [static let secure: HTTPCookiePropertyKey](./httpcookiepropertykey/secure.md)
   An `NSString` object indicating that the cookie should be transmitted only over secure channels.
-- [static let value: HTTPCookiePropertyKey](httpcookiepropertykey/value.md)
+- [static let value: HTTPCookiePropertyKey](./httpcookiepropertykey/value.md)
   An `NSString` object containing the value of the cookie.
-- [static let version: HTTPCookiePropertyKey](httpcookiepropertykey/version.md)
+- [static let version: HTTPCookiePropertyKey](./httpcookiepropertykey/version.md)
   An `NSString` object that specifies the version of the cookie.
 ### Creating custom cookie property keys
-- [init(String)](httpcookiepropertykey/init(_:).md)
+- [init(String)](./httpcookiepropertykey/init%28_%29.md)
   Creates an HTTP cookie property key using the given string.
-- [init(rawValue: String)](httpcookiepropertykey/init(rawvalue:).md)
+- [init(rawValue: String)](./httpcookiepropertykey/init%28rawvalue%29.md)
   Creates an HTTP cookie property key using the given string.
 ### Type Properties
-- [static let setByJavaScript: HTTPCookiePropertyKey](httpcookiepropertykey/setbyjavascript.md)
+- [static let setByJavaScript: HTTPCookiePropertyKey](./httpcookiepropertykey/setbyjavascript.md)
   An NSString object indicating that the cookie is set via JavaScript.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var properties: [HTTPCookiePropertyKey : Any]?](httpcookie/properties.md)
+### Accessing cookie properties as key-value pairs
+- [var properties: [HTTPCookiePropertyKey : Any]?](./httpcookie/properties.md)
   The cookie’s properties.
 
 

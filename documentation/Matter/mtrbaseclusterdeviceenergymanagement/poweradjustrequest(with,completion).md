@@ -1,7 +1,8 @@
 # powerAdjustRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command PowerAdjustRequest
 
@@ -17,7 +18,15 @@ Command PowerAdjustRequest
 ## Declaration
 
 ```swift
+func powerAdjustRequest(with params: MTRDeviceEnergyManagementClusterPowerAdjustRequestParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func powerAdjustRequest(with params: MTRDeviceEnergyManagementClusterPowerAdjustRequestParams) async throws
+```
+
+```objc
+- (void) powerAdjustRequestWithParams:(MTRDeviceEnergyManagementClusterPowerAdjustRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

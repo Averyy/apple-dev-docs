@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metadata for this HealthKit object.
 
@@ -19,28 +20,33 @@ The metadata for this HealthKit object.
 var metadata: [String : Any]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSDictionary<NSString *,id> * metadata;
+```
+
 #### Discussion
 
-The metadata dictionary contains extra information describing this object. The dictionary’s keys are all [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects. The values can be [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects or [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) objects. For a complete list of predefined metadata keys, see [`Metadata Keys`](metadata-keys.md).
+The metadata dictionary contains extra information describing this object. The dictionary’s keys are all [`NSString`](../../Foundation/nsstring.md) objects. The values can be [`NSString`](../../Foundation/nsstring.md) objects, [`NSNumber`](../../Foundation/nsnumber.md) objects or [`NSDate`](../../Foundation/nsdate.md) objects. For a complete list of predefined metadata keys, see [Metadata Keys](../metadata-keys.md).
 
 Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the HealthKit object’s capabilities.
 
 You set an object’s metadata when you create the object by calling one of these methods (or a related method):
 
-- [`init(type:quantity:start:end:metadata:)`](hkquantitysample/init(type:quantity:start:end:metadata:).md)
-- [`init(type:value:start:end:metadata:)`](hkcategorysample/init(type:value:start:end:metadata:).md)
-- [`init(type:start:end:objects:metadata:)`](hkcorrelation/init(type:start:end:objects:metadata:).md)
-- [`init(activityType:start:end:duration:totalEnergyBurned:totalDistance:metadata:)`](hkworkout/init(activitytype:start:end:duration:totalenergyburned:totaldistance:metadata:).md)
+- [`init(type:quantity:start:end:metadata:)`](../hkquantitysample/init%28type,quantity,start,end,metadata%29.md)
+- [`init(type:value:start:end:metadata:)`](../hkcategorysample/init%28type,value,start,end,metadata%29.md)
+- [`init(type:start:end:objects:metadata:)`](../hkcorrelation/init%28type,start,end,objects,metadata%29.md)
+- [`init(activityType:start:end:duration:totalEnergyBurned:totalDistance:metadata:)`](../hkworkout/init%28activitytype,start,end,duration,totalenergyburned,totaldistance,metadata%29.md)
 
 ## See Also
 
-- [var uuid: UUID](hkobject/uuid.md)
+### Accessing Properties
+- [var uuid: UUID](./uuid.md)
   The universally unique identifier (UUID) for this HealthKit object.
-- [var device: HKDevice?](hkobject/device.md)
+- [var device: HKDevice?](./device.md)
   The device that generated the data for this object.
-- [var sourceRevision: HKSourceRevision](hkobject/sourcerevision.md)
+- [var sourceRevision: HKSourceRevision](./sourcerevision.md)
   The app or device that created this object.
-- [var source: HKSource](hkobject/source.md)
+- [var source: HKSource](./source.md)
   A HealthKit source, representing the app or device that created this object.
 
 

@@ -1,20 +1,22 @@
 # Reference Array Maximum
 
-**Framework**: DriverKit
+**Framework**: DriverKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Getting the Maximum Array Size
-- [kIOUserClientAsyncReferenceCountMax](kiouserclientasyncreferencecountmax.md)
+- [kIOUserClientAsyncReferenceCountMax](./kiouserclientasyncreferencecountmax.md)
 
 ## See Also
 
-- [AsyncCompletion](iouserclient/asynccompletion.md)
+### Communicating with the Client
+- [AsyncCompletion](./iouserclient/asynccompletion.md)
   Send asynchronous arguments to a completion supplied by ExternalMethod().
-- [KernelCompletion](iouserclient/kernelcompletion.md)
-- [IOUserClientAsyncArgumentsArray](iouserclientasyncargumentsarray.md)
-- [Arguments Array Maximum](3325601-arguments_array_maximum.md)
-- [IOUserClientAsyncReferenceArray](iouserclientasyncreferencearray.md)
+- [KernelCompletion](./iouserclient/kernelcompletion.md)
+- [IOUserClientAsyncArgumentsArray](./iouserclientasyncargumentsarray.md)
+- [Arguments Array Maximum](./api-3325601-arguments_array_maximum.md)
+- [IOUserClientAsyncReferenceArray](./iouserclientasyncreferencearray.md)
 
 
 ---

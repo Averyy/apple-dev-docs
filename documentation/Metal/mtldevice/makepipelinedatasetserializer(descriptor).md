@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new pipeline data set serializer instance from a descriptor.
@@ -20,13 +21,17 @@ Creates a new pipeline data set serializer instance from a descriptor.
 func makePipelineDataSetSerializer(descriptor: MTL4PipelineDataSetSerializerDescriptor) -> any MTL4PipelineDataSetSerializer
 ```
 
+```objc
+- (id<MTL4PipelineDataSetSerializer>) newPipelineDataSetSerializerWithDescriptor:(MTL4PipelineDataSetSerializerDescriptor *) descriptor;
+```
+
 #### Return Value
 
-A [`MTL4PipelineDataSetSerializer`](mtl4pipelinedatasetserializer.md) instance, or `nil` if the function failed.
+A [`MTL4PipelineDataSetSerializer`](../mtl4pipelinedatasetserializer.md) instance, or `nil` if the function failed.
 
 ## Parameters
 
-- `descriptor`: A [`MTL4PipelineDataSetSerializerDescriptor`](mtl4pipelinedatasetserializerdescriptor.md) instance that configures the new [`MTL4PipelineDataSetSerializer`](mtl4pipelinedatasetserializer.md) instance.
+- `descriptor`: A [`MTL4PipelineDataSetSerializerDescriptor`](../mtl4pipelinedatasetserializerdescriptor.md) instance that configures the new [`MTL4PipelineDataSetSerializer`](../mtl4pipelinedatasetserializer.md) instance.
 
 
 ---

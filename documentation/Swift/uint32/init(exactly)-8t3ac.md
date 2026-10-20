@@ -1,7 +1,8 @@
 # init(exactly:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 init?<T>(exactly source: T) where T : BinaryInteger
 ```
+
+Available when `Self` conforms to `FixedWidthInteger`.
 
 
 ---

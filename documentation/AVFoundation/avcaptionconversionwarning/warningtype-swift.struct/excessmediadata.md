@@ -1,7 +1,8 @@
 # excessMediaData
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that indicates one or more captions exceed the media data capacity for media of the type and subtype that the conversion settings specify.
 
@@ -15,6 +16,10 @@ A type that indicates one or more captions exceed the media data capacity for me
 
 ```swift
 static let excessMediaData: AVCaptionConversionWarning.WarningType
+```
+
+```c
+extern AVCaptionConversionWarningType const AVCaptionConversionWarningTypeExcessMediaData;
 ```
 
 

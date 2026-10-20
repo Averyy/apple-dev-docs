@@ -1,7 +1,8 @@
 # message
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional description of the skipped test, displayed in the Test navigator.
 

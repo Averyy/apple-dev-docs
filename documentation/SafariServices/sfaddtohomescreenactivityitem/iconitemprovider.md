@@ -1,7 +1,8 @@
 # iconItemProvider
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that conveys the bookmark’s icon to the system.
 
@@ -17,11 +18,16 @@ An object that conveys the bookmark’s icon to the system.
 optional var iconItemProvider: NSItemProvider? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSItemProvider * iconItemProvider;
+```
+
 ## See Also
 
-- [var title: String](sfaddtohomescreenactivityitem/title.md)
+### Describing a bookmark or web app
+- [var title: String](./title.md)
   The bookmark’s title.
-- [var url: URL](sfaddtohomescreenactivityitem/url.md)
+- [var url: URL](./url.md)
   The bookmark’s URL.
 
 

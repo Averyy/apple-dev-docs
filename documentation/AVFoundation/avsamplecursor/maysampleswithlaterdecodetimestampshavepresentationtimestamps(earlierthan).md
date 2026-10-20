@@ -1,7 +1,8 @@
 # maySamplesWithLaterDecodeTimeStampsHavePresentationTimeStamps(earlierThan:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether a sample later in decode order can have a presentation timestamp earlier than that of the specified sample cursor.
 
@@ -20,13 +21,17 @@ Determines whether a sample later in decode order can have a presentation timest
 func maySamplesWithLaterDecodeTimeStampsHavePresentationTimeStamps(earlierThan cursor: AVSampleCursor) -> Bool
 ```
 
+```objc
+- (BOOL) samplesWithLaterDecodeTimeStampsMayHaveEarlierPresentationTimeStampsThanCursor:(AVSampleCursor *) cursor;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if it’s possible for any sample later in decode order than the sample at the position of the receiver can have a presentation timestamp earlier than that of the specified sample cursor; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if it’s possible for any sample later in decode order than the sample at the position of the receiver can have a presentation timestamp earlier than that of the specified sample cursor; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Undefined results occur if this cursor and the passed in cursor reference different sequences of samples, such as when they’re created by different instances of [`AVAssetTrack`](avassettrack.md).
+Undefined results occur if this cursor and the passed in cursor reference different sequences of samples, such as when they’re created by different instances of [`AVAssetTrack`](../avassettrack.md).
 
 ## Parameters
 
@@ -34,9 +39,10 @@ Undefined results occur if this cursor and the passed in cursor reference differ
 
 ## See Also
 
-- [func maySamplesWithEarlierDecodeTimeStampsHavePresentationTimeStamps(laterThan: AVSampleCursor) -> Bool](avsamplecursor/maysampleswithearlierdecodetimestampshavepresentationtimestamps(laterthan:).md)
+### Accessing samples
+- [func maySamplesWithEarlierDecodeTimeStampsHavePresentationTimeStamps(laterThan: AVSampleCursor) -> Bool](./maysampleswithearlierdecodetimestampshavepresentationtimestamps%28laterthan%29.md)
   Determines whether a sample earlier in decode order can have a presentation timestamp later than that of the specified sample cursor.
-- [var samplesRequiredForDecoderRefresh: Int](avsamplecursor/samplesrequiredfordecoderrefresh.md)
+- [var samplesRequiredForDecoderRefresh: Int](./samplesrequiredfordecoderrefresh.md)
   The number of samples prior to the current sample, in decode order, the decoder requires to achieve a coherent output at the current decode time.
 
 

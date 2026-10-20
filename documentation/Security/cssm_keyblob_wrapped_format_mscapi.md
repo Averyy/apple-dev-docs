@@ -1,7 +1,8 @@
 # CSSM_KEYBLOB_WRAPPED_FORMAT_MSCAPI
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_KEYBLOB_WRAPPED_FORMAT_MSCAPI: UInt32 { get }
+```
+
+```c
+CSSM_KEYBLOB_WRAPPED_FORMAT_MSCAPI
 ```
 
 

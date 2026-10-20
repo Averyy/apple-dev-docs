@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core HID  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a HID report ID.
 

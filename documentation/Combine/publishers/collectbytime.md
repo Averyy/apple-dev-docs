@@ -1,7 +1,8 @@
 # Publishers.CollectByTime
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that buffers and periodically publishes its items.
 
@@ -23,39 +24,40 @@ struct CollectByTime<Upstream, Context> where Upstream : Publisher, Context : Sc
 ## Topics
 
 ### Creating a collect by time Publisher
-- [init(upstream: Upstream, strategy: Publishers.TimeGroupingStrategy<Context>, options: Context.SchedulerOptions?)](publishers/collectbytime/init(upstream:strategy:options:).md)
+- [init(upstream: Upstream, strategy: Publishers.TimeGroupingStrategy<Context>, options: Context.SchedulerOptions?)](./collectbytime/init%28upstream,strategy,options%29.md)
   Creates a publisher that buffers and periodically publishes its items.
 ### Declaring supporting types
-- [Publishers.CollectByTime.Output](publishers/collectbytime/output.md)
+- [Publishers.CollectByTime.Output](./collectbytime/output.md)
   The kind of values published by this publisher.
-- [Publishers.CollectByTime.Failure](publishers/collectbytime/failure.md)
+- [Publishers.CollectByTime.Failure](./collectbytime/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/collectbytime/upstream.md)
+- [let upstream: Upstream](./collectbytime/upstream.md)
   The publisher that this publisher receives elements from.
-- [let strategy: Publishers.TimeGroupingStrategy<Context>](publishers/collectbytime/strategy.md)
+- [let strategy: Publishers.TimeGroupingStrategy<Context>](./collectbytime/strategy.md)
   The strategy with which to collect and publish elements.
-- [let options: Context.SchedulerOptions?](publishers/collectbytime/options.md)
+- [let options: Context.SchedulerOptions?](./collectbytime/options.md)
   Scheduler options to use for the strategy.
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.Collect](publishers/collect.md)
+### Reducing elements
+- [Publishers.Collect](./collect.md)
   A publisher that buffers items.
-- [Publishers.CollectByCount](publishers/collectbycount.md)
+- [Publishers.CollectByCount](./collectbycount.md)
   A publisher that buffers a maximum number of items.
-- [Publishers.TimeGroupingStrategy](publishers/timegroupingstrategy.md)
+- [Publishers.TimeGroupingStrategy](./timegroupingstrategy.md)
   A strategy for collecting received elements.
-- [Publishers.IgnoreOutput](publishers/ignoreoutput.md)
+- [Publishers.IgnoreOutput](./ignoreoutput.md)
   A publisher that ignores all upstream elements, but passes along the upstream publisher’s completion state (finished or failed).
-- [Publishers.Reduce](publishers/reduce.md)
+- [Publishers.Reduce](./reduce.md)
   A publisher that applies a closure to all received elements and produces an accumulated value when the upstream publisher finishes.
-- [Publishers.TryReduce](publishers/tryreduce.md)
+- [Publishers.TryReduce](./tryreduce.md)
   A publisher that applies an error-throwing closure to all received elements and produces an accumulated value when the upstream publisher finishes.
 
 

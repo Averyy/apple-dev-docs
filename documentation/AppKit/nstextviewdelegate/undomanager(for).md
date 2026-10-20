@@ -1,7 +1,8 @@
 # undoManager(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the undo manager for the specified text view.
 
@@ -13,6 +14,10 @@ Returns the undo manager for the specified text view.
 ```swift
 @MainActor
 optional func undoManager(for view: NSTextView) -> UndoManager?
+```
+
+```objc
+- (NSUndoManager *) undoManagerForTextView:(NSTextView *) view;
 ```
 
 #### Return Value

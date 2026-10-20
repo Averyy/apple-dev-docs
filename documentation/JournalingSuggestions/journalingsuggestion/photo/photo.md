@@ -1,7 +1,8 @@
 # photo
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL to an image on disk for the photo.
 
@@ -16,7 +17,8 @@ var photo: URL
 
 ## See Also
 
-- [var date: Date?](journalingsuggestion/photo/date.md)
+### Accessing photo data
+- [var date: Date?](./date.md)
   The photo’s creation date.
 
 

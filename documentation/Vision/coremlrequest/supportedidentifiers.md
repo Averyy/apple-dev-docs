@@ -1,7 +1,8 @@
 # supportedIdentifiers
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The classification identifiers supported by the request.
 
@@ -26,15 +27,16 @@ This returns `nil` if the configuration isn’t supported.
 
 ## See Also
 
-- [let modelContainer: CoreMLModelContainer](coremlrequest/modelcontainer.md)
+### Configuring a request
+- [let modelContainer: CoreMLModelContainer](./modelcontainer.md)
   The model to base the image analysis request on.
-- [struct CoreMLModelContainer](coremlmodelcontainer.md)
+- [struct CoreMLModelContainer](../coremlmodelcontainer.md)
   A model container to use with an image-analysis request.
-- [enum ComputeStage](computestage.md)
+- [enum ComputeStage](../computestage.md)
   Types that represent the compute stage.
-- [var cropAndScaleAction: ImageCropAndScaleAction](coremlrequest/cropandscaleaction.md)
+- [var cropAndScaleAction: ImageCropAndScaleAction](./cropandscaleaction.md)
   An optional setting that tells the Vision algorithm how to scale an input image.
-- [enum ImageCropAndScaleAction](imagecropandscaleaction.md)
+- [enum ImageCropAndScaleAction](../imagecropandscaleaction.md)
   A scale to apply to an input image before performing a request.
 
 

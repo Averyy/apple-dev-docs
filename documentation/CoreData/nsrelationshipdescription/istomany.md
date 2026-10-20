@@ -1,7 +1,8 @@
 # isToMany
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean value that indicates whether the relationship can contain many managed objects.
 
@@ -10,7 +11,7 @@ Returns a Boolean value that indicates whether the relationship can contain many
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ Returns a Boolean value that indicates whether the relationship can contain many
 var isToMany: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isToMany) BOOL toMany;
+```
+
 #### Discussion
 
-If [`maxCount`](nsrelationshipdescription/maxcount.md) is equal to `1`, implying a to-one relationship, this property returns [`false`](https://developer.apple.com/documentation/swift/false); otherwise, it returns [`true`](https://developer.apple.com/documentation/swift/true).
+If [`maxCount`](./maxcount.md) is equal to `1`, implying a to-one relationship, this property returns [`false`](../../Swift/false.md); otherwise, it returns [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var minCount: Int](nsrelationshipdescription/mincount.md)
+### Configuring Cardinality
+- [var minCount: Int](./mincount.md)
   The minimum number of managed objects the relationship can reference.
-- [var maxCount: Int](nsrelationshipdescription/maxcount.md)
+- [var maxCount: Int](./maxcount.md)
   The maximum number of managed objects the relationship can reference.
 
 

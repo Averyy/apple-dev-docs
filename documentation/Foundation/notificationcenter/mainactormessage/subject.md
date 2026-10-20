@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A type which you can optionally post and observe along with this `MainActorMessage`.
@@ -23,7 +24,8 @@ associatedtype Subject
 
 ## See Also
 
-- [static var name: Notification.Name](notificationcenter/mainactormessage/name.md)
+### Declaring the message name and subject
+- [static var name: Notification.Name](./name.md)
   A optional name corresponding to this type, used to interoperate with notification posters and observers.
 
 

@@ -1,7 +1,8 @@
 # cmLong10ColorPacking
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The color values for three 10-bit color channels are stored consecutively in a 32-bit long, with the two highest order bits unused.
 

@@ -1,7 +1,8 @@
 # DataStoreSaveChangesResult
 
 **Framework**: SwiftData  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -22,24 +23,25 @@ final class DataStoreSaveChangesResult<T> where T : DataStoreSnapshot
 ## Topics
 
 ### Initializers
-- [init(for: String, remappedIdentifiers: [PersistentIdentifier : PersistentIdentifier], snapshotsToReregister: [PersistentIdentifier : T])](datastoresavechangesresult/init(for:remappedidentifiers:snapshotstoreregister:).md)
-- [init(for: String, remappedIdentifiers: [PersistentIdentifier : PersistentIdentifier], snapshotsToReregister: [PersistentIdentifier : T], historyToken: (any HistoryToken)?)](datastoresavechangesresult/init(for:remappedidentifiers:snapshotstoreregister:historytoken:).md)
+- [init(for: String, remappedIdentifiers: [PersistentIdentifier : PersistentIdentifier], snapshotsToReregister: [PersistentIdentifier : T])](./datastoresavechangesresult/init%28for,remappedidentifiers,snapshotstoreregister%29.md)
+- [init(for: String, remappedIdentifiers: [PersistentIdentifier : PersistentIdentifier], snapshotsToReregister: [PersistentIdentifier : T], historyToken: (any HistoryToken)?)](./datastoresavechangesresult/init%28for,remappedidentifiers,snapshotstoreregister,historytoken%29.md)
 ### Instance Properties
-- [let historyToken: (any HistoryToken)?](datastoresavechangesresult/historytoken.md)
-- [let remappedIdentifiers: [PersistentIdentifier : PersistentIdentifier]](datastoresavechangesresult/remappedidentifiers.md)
-- [let snapshotsToReregister: [PersistentIdentifier : T]](datastoresavechangesresult/snapshotstoreregister.md)
-- [let storeIdentifier: String](datastoresavechangesresult/storeidentifier.md)
+- [let historyToken: (any HistoryToken)?](./datastoresavechangesresult/historytoken.md)
+- [let remappedIdentifiers: [PersistentIdentifier : PersistentIdentifier]](./datastoresavechangesresult/remappedidentifiers.md)
+- [let snapshotsToReregister: [PersistentIdentifier : T]](./datastoresavechangesresult/snapshotstoreregister.md)
+- [let storeIdentifier: String](./datastoresavechangesresult/storeidentifier.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func save(DataStoreSaveChangesRequest<Self.Snapshot>) throws -> DataStoreSaveChangesResult<Self.Snapshot>](datastore/save(_:).md)
-- [struct DataStoreSaveChangesRequest](datastoresavechangesrequest.md)
+### Persisting model data
+- [func save(DataStoreSaveChangesRequest<Self.Snapshot>) throws -> DataStoreSaveChangesResult<Self.Snapshot>](./datastore/save%28_%29.md)
+- [struct DataStoreSaveChangesRequest](./datastoresavechangesrequest.md)
 
 
 ---

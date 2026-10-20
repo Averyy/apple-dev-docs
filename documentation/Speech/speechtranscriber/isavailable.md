@@ -1,7 +1,8 @@
 # isAvailable
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether this module is available given the device’s hardware and capabilities.
 

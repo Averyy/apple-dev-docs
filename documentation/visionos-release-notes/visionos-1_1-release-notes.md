@@ -1,12 +1,13 @@
 # visionOS 1.1 Release Notes
 
-**Framework**: visionOS Release Notes
+**Framework**: visionOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 1.1. The SDK comes bundled with Xcode 15.3. For information on the compatibility requirements for Xcode 15.3, see [`Xcode 15.3 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-15_3-release-notes).
+The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 1.1. The SDK comes bundled with Xcode 15.3. For information on the compatibility requirements for Xcode 15.3, see [Xcode 15.3 Release Notes](../Xcode-Release-Notes/xcode-15_3-release-notes.md).
 
 ##### General
 
@@ -18,7 +19,9 @@ The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- Some third-party apps might crash on launch or during use when Accessibility options are enabled.  (122506670) (FB13595783) **Workaround:** Disable any Accessibility options before launching impacted apps.
+- Some third-party apps might crash on launch or during use when Accessibility options are enabled.  (122506670) (FB13595783)
+
+  **Workaround:** Disable any Accessibility options before launching impacted apps.
 
 ##### Accessibility
 
@@ -46,7 +49,9 @@ The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- The Control Center indicator might be missing.  (121071017) **Workaround:** Reboot your Apple Vision Pro.
+- The Control Center indicator might be missing.  (121071017)
+
+  **Workaround:** Reboot your Apple Vision Pro.
 
 ##### Immersive Space
 
@@ -60,7 +65,7 @@ The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro d
 
 - Fixed: Passcodes containing a character which uses a diacritic can’t be used to unlock Apple Vision Pro.  (122551154)
 
-##### Mac Virtual Display Airplay Wireless
+##### Mac Virtual Display / AirPlay Wireless
 
 ###### Known Issues
 
@@ -76,7 +81,9 @@ The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- Users might see session interruption notifications that are not relevant to their app.  (123124097) **Workaround:** Filter notifications against audio session of choice like so: NotificationCenter.default.addObserver(forName: AVAudioSession.interruptionNotification, object: AVAudioSession.sharedInstance(), queue: nil) { … }
+- Users might see session interruption notifications that are not relevant to their app.  (123124097)
+
+  **Workaround:** Filter notifications against audio session of choice like so: NotificationCenter.default.addObserver(forName: AVAudioSession.interruptionNotification, object: AVAudioSession.sharedInstance(), queue: nil) { … }
 
 ##### Passcode
 
@@ -96,18 +103,22 @@ The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro d
 
 - Fixed: Eye tracking may not be accurate after Persona capture until the next time you put on Apple Vision Pro.   (121630768)
 
-##### Realitykit
+##### RealityKit
 
 ###### Resolved Issues
 
-- Fixed: In multi-scene apps, custom [`Systems`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/system) created for each scene are now released when the scene is dismissed.  (116190653)
+- Fixed: In multi-scene apps, custom [Systems](../RealityKit/system.md) created for each scene are now released when the scene is dismissed.  (116190653)
 - Fixed: RealityKit reports incorrect visualBounds for Attachments, which may impact entity placement. Larger attachments may be clipped due to the incorrect visualBounds values.  (121887607)
 - Fixed: A scene associated with the RealityRenderer might be incorrectly registered to a non-RealityRenderer system resulting in a crash.  (122392672)
 
 ###### Known Issues
 
-- A scene associated with the RealityRenderer using a custom system is not updated every frame.  (110476883) **Workaround:** Update your components by subscribing to SceneEvents.Update rather than using a System.
-- Assigning a new VideoPlayerComponent to an Entity that already has one will result in a black video screen.  (117087641) **Workaround:** Reuse the existing VideoPlayerComponent or remove the existing one first before assigning the new one.
+- A scene associated with the RealityRenderer using a custom system is not updated every frame.  (110476883)
+
+  **Workaround:** Update your components by subscribing to SceneEvents.Update rather than using a System.
+- Assigning a new VideoPlayerComponent to an Entity that already has one will result in a black video screen.  (117087641)
+
+  **Workaround:** Reuse the existing VideoPlayerComponent or remove the existing one first before assigning the new one.
 
 ##### Settings
 
@@ -115,11 +126,13 @@ The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro d
 
 - Fixed: Users might not be able to shut down Apple Vision Pro from Settings.  (120555236)
 
-##### Shadergraph Materials
+##### ShaderGraph Materials
 
 ###### Known Issues
 
-- ShaderGraph material node compositions might result in invalid visual output.  (122723231) **Workaround:** Avoid using a common asset node for both a surface shader and a geometry modifier within a single material or duplicate the asset node if needed.
+- ShaderGraph material node compositions might result in invalid visual output.  (122723231)
+
+  **Workaround:** Avoid using a common asset node for both a surface shader and a geometry modifier within a single material or duplicate the asset node if needed.
 
 ##### Simulator
 
@@ -134,21 +147,27 @@ The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro d
 - Fixed: Siri may be unusable.  (122361345)
 - Fixed: Unable to invoke Siri in simulator.  (122514562)
 
-##### Storekit
+##### StoreKit
 
 ###### New Features
 
-- New pricing properties `price`, `currency`, and `currencyCode` are now available on [`Transaction`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction). If an offer was applied to the transaction, a new property `offer` is available to see information about it (id, type, payment mode), as well as convenience properties `offerID`, `offerType`, and `offerPaymentMode`.  (106650768)
-- `productDescriptionHidden(_:)` API can be used to configure the visibility of product descriptions in `ProductView`, `StoreView` and `SubscriptionStoreView` instances within a view hierarchy. When building with Xcode 15.3, the view modifier can be used even if your app is running on iOS 17.0, iPadOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, visionOS 1.0, or later. When implementing a product view style, it can support this new view modifier by checking the `descriptionVisibility` property on the configuration value.  (110414819) (FB12261973)
-- You can use [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) to present promotional offers by adding the `subscriptionPromotionalOffer(offer:signature:)` modifier. If you’re already using [`inAppPurchaseOptions(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/inapppurchaseoptions(_:)) modifier to support promotional offers for StoreKit views, you should adopt the new API instead when your app is running on iOS 17.4, iPadOS 17.4, macOS 14.4, tvOS 17.4, watchOS 10.4, visionOS 1.1 or later. Do not use both APIs to apply a promotional offer for the same view.  (115358806)
+- New pricing properties `price`, `currency`, and `currencyCode` are now available on [Transaction](../StoreKit/transaction.md). If an offer was applied to the transaction, a new property `offer` is available to see information about it (id, type, payment mode), as well as convenience properties `offerID`, `offerType`, and `offerPaymentMode`.  (106650768)
+- `productDescriptionHidden(_:)` API can be used to configure the visibility of product descriptions in `ProductView`, `StoreView` and `SubscriptionStoreView` instances within a view hierarchy. When building with Xcode 15.3, the view modifier can be used even if your app is running on iOS 17.0, iPadOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, visionOS 1.0, or later.
+
+  When implementing a product view style, it can support this new view modifier by checking the `descriptionVisibility` property on the configuration value.  (110414819) (FB12261973)
+- You can use [SubscriptionStoreView](../StoreKit/subscriptionstoreview.md) to present promotional offers by adding the `subscriptionPromotionalOffer(offer:signature:)` modifier.
+
+  If you’re already using [inAppPurchaseOptions(_:)](../SwiftUI/view/inapppurchaseoptions%28_%29.md) modifier to support promotional offers for StoreKit views, you should adopt the new API instead when your app is running on iOS 17.4, iPadOS 17.4, macOS 14.4, tvOS 17.4, watchOS 10.4, visionOS 1.1 or later. Do not use both APIs to apply a promotional offer for the same view.  (115358806)
 
 ###### Resolved Issues
 
-- Fixed: The [`isEligibleForIntroOffer`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo/3803203-iseligibleforintrooffer) property and [`isEligibleForIntroOffer(for:)`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo/3791958-iseligibleforintrooffer) method now reflect ineligibility in cases where a customer would otherwise be eligible for the offer if they weren’t actively subscribed. This means a customer which is not currently eligible for an introductory offer may become eligible in the future. Customers who redeem an introductory offer for a given subscription group will continue to never be eligible for another introductory offer in that subscription group. You can detect this case this by checking if any one transaction with a matching [`subscriptionGroupID`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/3749718-subscriptiongroupid) has the [`type`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/offer/4307073-type) property on [`offer`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/4307076-offer) set to [`introductory`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/offertype/3822309-introductory).  (103604770) (FB11889732)
-- Fixed an issue causing the refund request “Done” button to not dismiss the sheet when using StoreKit Testing in Xcode.  (117482750)
-- Fixed: Apps which configure a [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) to show terms of service & privacy policy links with automatic or URL destinations will now open the URLs in the default browser.  (120985657) (FB13540404)
+- Fixed: The [isEligibleForIntroOffer](../StoreKit/product/subscriptioninfo/api-3803203-iseligibleforintrooffer.md) property and [isEligibleForIntroOffer(for:)](../StoreKit/product/subscriptioninfo/api-3791958-iseligibleforintrooffer.md) method now reflect ineligibility in cases where a customer would otherwise be eligible for the offer if they weren’t actively subscribed. This means a customer which is not currently eligible for an introductory offer may become eligible in the future.
 
-##### Swiftui
+  Customers who redeem an introductory offer for a given subscription group will continue to never be eligible for another introductory offer in that subscription group. You can detect this case this by checking if any one transaction with a matching [subscriptionGroupID](../StoreKit/transaction/api-3749718-subscriptiongroupid.md) has the [type](../StoreKit/transaction/offer/api-4307073-type.md) property on [offer](../StoreKit/transaction/api-4307076-offer.md) set to [introductory](../StoreKit/transaction/offertype/api-3822309-introductory.md).  (103604770) (FB11889732)
+- Fixed an issue causing the refund request “Done” button to not dismiss the sheet when using StoreKit Testing in Xcode.  (117482750)
+- Fixed: Apps which configure a [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) to show terms of service & privacy policy links with automatic or URL destinations will now open the URLs in the default browser.  (120985657) (FB13540404)
+
+##### SwiftUI
 
 ###### New Features
 
@@ -162,15 +181,17 @@ The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- If the display zoom is changed in settings while a volume with a physical size is open, the content might be clipped.  (120806632) **Workaround:** Closing the volume or force-quitting the app.
+- If the display zoom is changed in settings while a volume with a physical size is open, the content might be clipped.  (120806632)
 
-##### Ui Frameworks
+  **Workaround:** Closing the volume or force-quitting the app.
+
+##### UI Frameworks
 
 ###### Resolved Issues
 
 - Fixed: Navigation bar display title modes are now respected and result in a smaller or larger navigation bar title.  (114283700)
 
-##### Uikit
+##### UIKit
 
 ###### Resolved Issues
 
@@ -180,19 +201,24 @@ The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Resolved Issues
 
-- Fixed: `UILabel.preferredVibrancy` only supported semantic label colors, but now it supports all colors. ```None
- let label = UILabel()
- label.preferredVibrancy = .automatic // default value
- label.textColor = .red // label will be rendered as vibrant red.
-``` (115106359)
+- Fixed: `UILabel.preferredVibrancy` only supported semantic label colors, but now it supports all colors.
+
+  ```
+   let label = UILabel()
+   label.preferredVibrancy = .automatic // default value
+   label.textColor = .red // label will be rendered as vibrant red.
+  ```
+
+  (115106359)
 
 ## See Also
 
-- [visionOS 1.3 Release Notes](visionos-1_3-release-notes.md)
+### visionOS
+- [visionOS 1.3 Release Notes](./visionos-1_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 1.2 Release Notes](visionos-1_2-release-notes.md)
+- [visionOS 1.2 Release Notes](./visionos-1_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS Release Notes](visionos-release-notes.md)
+- [visionOS Release Notes](./visionos-release-notes-page.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

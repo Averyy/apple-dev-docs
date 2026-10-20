@@ -1,7 +1,8 @@
 # FaceObservation.Landmarks2D.Region.PointsClassification
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -21,26 +22,27 @@ enum PointsClassification
 ## Topics
 
 ### Getting the point classifications
-- [FaceObservation.Landmarks2D.Region.PointsClassification.closedPath](faceobservation/landmarks2d/region/pointsclassification-swift.enum/closedpath.md)
-- [FaceObservation.Landmarks2D.Region.PointsClassification.disconnected](faceobservation/landmarks2d/region/pointsclassification-swift.enum/disconnected.md)
-- [FaceObservation.Landmarks2D.Region.PointsClassification.openPath](faceobservation/landmarks2d/region/pointsclassification-swift.enum/openpath.md)
+- [FaceObservation.Landmarks2D.Region.PointsClassification.closedPath](./pointsclassification-swift.enum/closedpath.md)
+- [FaceObservation.Landmarks2D.Region.PointsClassification.disconnected](./pointsclassification-swift.enum/disconnected.md)
+- [FaceObservation.Landmarks2D.Region.PointsClassification.openPath](./pointsclassification-swift.enum/openpath.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let originatingRequestDescriptor: RequestDescriptor?](faceobservation/landmarks2d/region/originatingrequestdescriptor.md)
-- [let points: [NormalizedPoint]](faceobservation/landmarks2d/region/points.md)
-- [let pointsClassification: FaceObservation.Landmarks2D.Region.PointsClassification](faceobservation/landmarks2d/region/pointsclassification-swift.property.md)
-- [let precisionEstimatesPerPoint: [Float]?](faceobservation/landmarks2d/region/precisionestimatesperpoint.md)
+### Inspecting a region
+- [let originatingRequestDescriptor: RequestDescriptor?](./originatingrequestdescriptor.md)
+- [let points: [NormalizedPoint]](./points.md)
+- [let pointsClassification: FaceObservation.Landmarks2D.Region.PointsClassification](./pointsclassification-swift.property.md)
+- [let precisionEstimatesPerPoint: [Float]?](./precisionestimatesperpoint.md)
 
 
 ---

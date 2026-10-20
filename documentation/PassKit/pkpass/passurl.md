@@ -1,17 +1,18 @@
 # passURL
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL that opens the pass in the Wallet app.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,9 +20,13 @@ The URL that opens the pass in the Wallet app.
 var passURL: URL? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSURL * passURL;
+```
+
 #### Discussion
 
-Use the [`openURL(_:)`](https://developer.apple.com/documentation/uikit/uiapplication/openurl(_:)) method to open the pass in the Wallet app.
+Use the [`openURL(_:)`](../../UIKit/uiapplication/openurl%28_%29.md) method to open the pass in the Wallet app.
 
 
 ---

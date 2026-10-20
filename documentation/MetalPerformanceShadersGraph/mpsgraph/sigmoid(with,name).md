@@ -1,7 +1,8 @@
 # sigmoid(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the sigmoid operation on an input tensor.
 
@@ -19,9 +20,13 @@ Computes the sigmoid operation on an input tensor.
 func sigmoid(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
 ```
 
+```objc
+- (MPSGraphTensor *) sigmoidWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
+```
+
 #### Return Value
 
-A valid [`MPSGraphTensor`](mpsgraphtensor.md) object.
+A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object.
 
 ## Parameters
 

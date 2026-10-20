@@ -1,9 +1,10 @@
 # phase
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The window’s current [`ScenePhase`](scenephase.md).
+The window’s current [`ScenePhase`](../scenephase.md).
 
 **Availability**:
 - visionOS 2.0+

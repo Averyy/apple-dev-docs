@@ -1,7 +1,8 @@
 # errSecApplePublicKeyIncomplete
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The public key is incomplete.
 
@@ -18,6 +19,10 @@ The public key is incomplete.
 
 ```swift
 var errSecApplePublicKeyIncomplete: OSStatus { get }
+```
+
+```c
+errSecApplePublicKeyIncomplete
 ```
 
 

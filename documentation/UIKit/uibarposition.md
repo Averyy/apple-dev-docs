@@ -1,7 +1,8 @@
 # UIBarPosition
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants to identify the position of a bar.
 
@@ -9,7 +10,7 @@ Constants to identify the position of a bar.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,33 +19,38 @@ Constants to identify the position of a bar.
 enum UIBarPosition
 ```
 
+```c
+enum UIBarPosition : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIBarPosition.any](uibarposition/any.md)
+- [UIBarPosition.any](./uibarposition/any.md)
   Specifies that the position is unspecified.
-- [UIBarPosition.bottom](uibarposition/bottom.md)
+- [UIBarPosition.bottom](./uibarposition/bottom.md)
   Specifies that the bar is at the bottom of its containing view.
-- [UIBarPosition.top](uibarposition/top.md)
+- [UIBarPosition.top](./uibarposition/top.md)
   Specifies that the bar is at the top of its containing view.
-- [UIBarPosition.topAttached](uibarposition/topattached.md)
+- [UIBarPosition.topAttached](./uibarposition/topattached.md)
   Specifies that the bar is at the top of the screen, as well as its containing view.
 ### Initializers
-- [init?(rawValue: Int)](uibarposition/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uibarposition/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum UIBarMetrics](uibarmetrics.md)
+### Constants
+- [enum UIBarMetrics](./uibarmetrics.md)
   Constants to specify metrics to use for appearance.
 
 

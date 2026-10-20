@@ -1,7 +1,8 @@
 # registrationRepair
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the registration is undergoing repair.
 
@@ -14,9 +15,14 @@ Indicates that the registration is undergoing repair.
 static var registrationRepair: ASAuthorizationProviderExtensionRequestOptions { get }
 ```
 
+```c
+ASAuthorizationProviderExtensionRequestOptionsRegistrationRepair
+```
+
 ## See Also
 
-- [static var userInteractionEnabled: ASAuthorizationProviderExtensionRequestOptions](asauthorizationproviderextensionrequestoptions/userinteractionenabled.md)
+### Identifying the options
+- [static var userInteractionEnabled: ASAuthorizationProviderExtensionRequestOptions](./userinteractionenabled.md)
   Indicates that the user interface is in an enabled state.
 
 

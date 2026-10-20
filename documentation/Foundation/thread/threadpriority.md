@@ -1,7 +1,8 @@
 # threadPriority
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s priority
 
@@ -20,6 +21,10 @@ The receiver’s priority
 var threadPriority: Double { get set }
 ```
 
+```objc
+@property double threadPriority;
+```
+
 #### Discussion
 
 The thread’s priority, which is specified by a floating point number from 0.0 to 1.0, where 1.0 is highest priority.
@@ -28,12 +33,13 @@ The priorities in this range are mapped to the operating system’s priority val
 
 ## See Also
 
-- [var qualityOfService: QualityOfService](thread/qualityofservice.md)
-- [enum QualityOfService](qualityofservice.md)
+### Prioritizing Thread Work
+- [var qualityOfService: QualityOfService](./qualityofservice.md)
+- [enum QualityOfService](../qualityofservice.md)
   Constants that indicate the nature and importance of work to the system.
-- [class func threadPriority() -> Double](thread/threadpriority.md)
+- [class func threadPriority() -> Double](./threadpriority%28%29.md)
   Returns the current thread’s priority.
-- [class func setThreadPriority(Double) -> Bool](thread/setthreadpriority(_:).md)
+- [class func setThreadPriority(Double) -> Bool](./setthreadpriority%28_%29.md)
   Sets the current thread’s priority.
 
 

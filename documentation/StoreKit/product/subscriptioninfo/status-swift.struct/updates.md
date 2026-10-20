@@ -1,7 +1,8 @@
 # updates
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The asynchronous sequence that emits status information when a subscription’s status changes.
 
@@ -22,12 +23,13 @@ static var updates: Product.SubscriptionInfo.Status.Statuses { get }
 
 ## Mentions
 
-- [Managing Price Increases for Auto-Renewable Subscriptions](managing-price-increases-for-auto-renewable-subscriptions.md)
+- [Managing Price Increases for Auto-Renewable Subscriptions](../../../managing-price-increases-for-auto-renewable-subscriptions.md)
 
 ## See Also
 
-- [static var all: AsyncStream<(groupID: String, statuses: [Product.SubscriptionInfo.Status])>](product/subscriptioninfo/status-swift.struct/all.md)
-- [Product.SubscriptionInfo.Status.Statuses](product/subscriptioninfo/status-swift.struct/statuses.md)
+### Monitoring subscription status changes
+- [static var all: AsyncStream<(groupID: String, statuses: [Product.SubscriptionInfo.Status])>](./all.md)
+- [Product.SubscriptionInfo.Status.Statuses](./statuses.md)
   An asynchronous sequence that listens for new subscription status information.
 
 

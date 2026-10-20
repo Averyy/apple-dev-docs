@@ -1,23 +1,28 @@
 # has_value
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether valid mouse parameters are available.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- Reality Composer Pro ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- Reality Composer Pro
 
 ## Declaration
 
 ```swift
 var has_value: Bool
+```
+
+```c
+bool has_value;
 ```
 
 #### Discussion

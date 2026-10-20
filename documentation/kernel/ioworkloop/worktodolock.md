@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOSimpleLock *workToDoLock;
 ```
 
@@ -15,13 +15,14 @@ The spin lock that is used to guard the 'workToDo' variable.
 
 ## See Also
 
-- [workToDo](ioworkloop/worktodo.md)
-- [workThread](ioworkloop/workthread.md)
-- [reserved](ioworkloop/reserved.md)
-- [loopRestart](ioworkloop/looprestart.md)
-- [gateLock](ioworkloop/gatelock.md)
-- [eventChain](ioworkloop/eventchain.md)
-- [controlG](ioworkloop/controlg.md)
+### Instance Variables
+- [workToDo](./worktodo.md)
+- [workThread](./workthread.md)
+- [reserved](./reserved.md)
+- [loopRestart](./looprestart.md)
+- [gateLock](./gatelock.md)
+- [eventChain](./eventchain.md)
+- [controlG](./controlg.md)
 
 
 ---

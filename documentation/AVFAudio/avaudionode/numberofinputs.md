@@ -1,7 +1,8 @@
 # numberOfInputs
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of input busses for the node.
 
@@ -20,13 +21,18 @@ The number of input busses for the node.
 var numberOfInputs: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger numberOfInputs;
+```
+
 ## See Also
 
-- [typealias AVAudioNodeBus](avaudionodebus.md)
+### Inspecting input buses
+- [typealias AVAudioNodeBus](../avaudionodebus.md)
   The index of a bus on an audio node.
-- [func inputFormat(forBus: AVAudioNodeBus) -> AVAudioFormat](avaudionode/inputformat(forbus:).md)
+- [func inputFormat(forBus: AVAudioNodeBus) -> AVAudioFormat](./inputformat%28forbus%29.md)
   Gets the input format for the bus you specify.
-- [func name(forInputBus: AVAudioNodeBus) -> String?](avaudionode/name(forinputbus:).md)
+- [func name(forInputBus: AVAudioNodeBus) -> String?](./name%28forinputbus%29.md)
   Gets the name of the input bus you specify.
 
 

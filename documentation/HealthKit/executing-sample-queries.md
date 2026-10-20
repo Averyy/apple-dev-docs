@@ -1,6 +1,7 @@
 # Executing Sample Queries
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: Article
 
 Create, run, and sort sample queries.
 
@@ -10,7 +11,7 @@ Use sample queries to read samples from the HealthKit store. Each query returns 
 
 ##### Create and Run the Query
 
-You create a sample query by calling the [`init(sampleType:predicate:limit:sortDescriptors:resultsHandler:)`](hksamplequery/init(sampletype:predicate:limit:sortdescriptors:resultshandler:).md) initializer. Start by creating the sample type.
+You create a sample query by calling the [`init(sampleType:predicate:limit:sortDescriptors:resultsHandler:)`](./hksamplequery/init%28sampletype,predicate,limit,sortdescriptors,resultshandler%29.md) initializer. Start by creating the sample type.
 
 ```swift
 guard let sampleType = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.dietaryEnergyConsumed) else {
@@ -42,7 +43,7 @@ let query = HKSampleQuery(sampleType: sampleType, predicate: nil, limit: Int(HKO
 }
 ```
 
-After the query is instantiated, you run it by calling the HealthKit store’s [`execute(_:)`](hkhealthstore/execute(_:).md) method.
+After the query is instantiated, you run it by calling the HealthKit store’s [`execute(_:)`](./hkhealthstore/execute%28_%29.md) method.
 
 ```swift
 store.execute(query)
@@ -92,15 +93,16 @@ let filteredAndSortedQuery = HKSampleQuery(sampleType: sampleType,
 
 ## See Also
 
-- [init(sampleType: HKSampleType, predicate: NSPredicate?, limit: Int, sortDescriptors: [NSSortDescriptor]?, resultsHandler: (HKSampleQuery, [HKSample]?, (any Error)?) -> Void)](hksamplequery/init(sampletype:predicate:limit:sortdescriptors:resultshandler:).md)
+### Creating Sample Queries
+- [init(sampleType: HKSampleType, predicate: NSPredicate?, limit: Int, sortDescriptors: [NSSortDescriptor]?, resultsHandler: (HKSampleQuery, [HKSample]?, (any Error)?) -> Void)](./hksamplequery/init%28sampletype,predicate,limit,sortdescriptors,resultshandler%29.md)
   Instantiates and returns a sample query.
-- [init(queryDescriptors: [HKQueryDescriptor], limit: Int, resultsHandler: (HKSampleQuery, [HKSample]?, (any Error)?) -> Void)](hksamplequery/init(querydescriptors:limit:resultshandler:).md)
+- [init(queryDescriptors: [HKQueryDescriptor], limit: Int, resultsHandler: (HKSampleQuery, [HKSample]?, (any Error)?) -> Void)](./hksamplequery/init%28querydescriptors,limit,resultshandler%29.md)
   Creates a query for samples that match any of the descriptors you provided.
-- [init(queryDescriptors: [HKQueryDescriptor], limit: Int, sortDescriptors: [NSSortDescriptor], resultsHandler: (HKSampleQuery, [HKSample]?, (any Error)?) -> Void)](hksamplequery/init(querydescriptors:limit:sortdescriptors:resultshandler:).md)
+- [init(queryDescriptors: [HKQueryDescriptor], limit: Int, sortDescriptors: [NSSortDescriptor], resultsHandler: (HKSampleQuery, [HKSample]?, (any Error)?) -> Void)](./hksamplequery/init%28querydescriptors,limit,sortdescriptors,resultshandler%29.md)
   Creates a query for samples that match any of the query descriptors you provided, sorted by the sort descriptors you provided.
-- [var HKObjectQueryNoLimit: Int](hkobjectquerynolimit.md)
+- [var HKObjectQueryNoLimit: Int](./hkobjectquerynolimit.md)
   A value indicating that the query returns all the matching samples in the HealthKit store.
-- [HealthKit sort descriptors](healthkit-sort-descriptors.md)
+- [HealthKit sort descriptors](./healthkit-sort-descriptors.md)
   Identifiers for sorting results.
 
 

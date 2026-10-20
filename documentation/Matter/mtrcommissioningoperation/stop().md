@@ -1,7 +1,8 @@
 # stop()
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stop commissioning.  This will typically result in commissioning:failedWithError: callbacks to delegates.
 
@@ -18,6 +19,10 @@ Stop commissioning.  This will typically result in commissioning:failedWithError
 
 ```swift
 func stop() -> Bool
+```
+
+```objc
+- (BOOL) stop;
 ```
 
 #### Discussion

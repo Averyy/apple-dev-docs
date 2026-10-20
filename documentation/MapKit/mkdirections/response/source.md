@@ -1,7 +1,8 @@
 # source
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start point of the route.
 
@@ -20,13 +21,18 @@ The start point of the route.
 var source: MKMapItem { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MKMapItem * source;
+```
+
 #### Discussion
 
-The item in this property may contain additional details that aren’t in the original item you use to create the [`MKDirections.Request`](mkdirections/request.md) object.
+The item in this property may contain additional details that aren’t in the original item you use to create the [`MKDirections.Request`](../request.md) object.
 
 ## See Also
 
-- [var destination: MKMapItem](mkdirections/response/destination.md)
+### Getting the end points
+- [var destination: MKMapItem](./destination.md)
   The end point of the route.
 
 

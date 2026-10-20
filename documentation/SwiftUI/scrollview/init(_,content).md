@@ -1,7 +1,8 @@
 # init(_:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance that’s scrollable in the direction of the given axis and can show indicators while scrolling.
 
@@ -21,6 +22,8 @@ Creates a new instance that’s scrollable in the direction of the given axis an
 nonisolated init(_ axes: Axis.Set = .vertical, @ContentBuilder content: () -> Content)
 ```
 
+Available when `Content` conforms to `View`.
+
 ## Parameters
 
 - `axes`: The scroll view’s scrollable axis. The default axis is the vertical axis.
@@ -28,7 +31,8 @@ nonisolated init(_ axes: Axis.Set = .vertical, @ContentBuilder content: () -> Co
 
 ## See Also
 
-- [init(Axis.Set, showsIndicators: Bool, content: () -> Content)](scrollview/init(_:showsindicators:content:).md)
+### Creating a scroll view
+- [init(Axis.Set, showsIndicators: Bool, content: () -> Content)](./init%28_,showsindicators,content%29.md)
   Creates a new instance that’s scrollable in the direction of the given axis and can show indicators while scrolling.
 
 

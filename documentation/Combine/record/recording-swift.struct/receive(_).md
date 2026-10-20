@@ -1,7 +1,8 @@
 # receive(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add an output to the recording.
 

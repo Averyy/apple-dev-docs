@@ -1,7 +1,8 @@
 # init(validating:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 On Unix, creates the string `"/"`
 

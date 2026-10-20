@@ -2,6 +2,7 @@
 
 **Framework**: Evaluations  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of input samples in the evaluation dataset.
@@ -23,9 +24,10 @@ associatedtype Sample where Self.Sample == Self.SampleLoader.Sample, Self.Sample
 
 ## See Also
 
-- [associatedtype SampleLoader : Loader](evaluation/sampleloader.md)
+### Providing data
+- [associatedtype SampleLoader : Loader](./sampleloader.md)
   The type of the sample loader used to provide the evaluation dataset.
-- [var dataset: Self.SampleLoader](evaluation/dataset.md)
+- [var dataset: Self.SampleLoader](./dataset.md)
   The evaluation dataset.
 
 

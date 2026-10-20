@@ -1,7 +1,8 @@
 # map(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array containing the results of mapping the given closure over the sequence’s elements.
 
@@ -36,7 +37,7 @@ let letterCounts = cast.map { $0.count }
 // 'letterCounts' == [6, 6, 3, 4]
 ```
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 

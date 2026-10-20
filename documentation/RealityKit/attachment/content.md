@@ -1,7 +1,8 @@
 # content
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view associated with this attachment.
 

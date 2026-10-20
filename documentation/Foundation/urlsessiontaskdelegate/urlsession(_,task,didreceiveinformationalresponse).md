@@ -1,7 +1,8 @@
 # urlSession(_:task:didReceiveInformationalResponse:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 optional func urlSession(_ session: URLSession, task: URLSessionTask, didReceiveInformationalResponse response: HTTPURLResponse)
+```
+
+```objc
+- (void) URLSession:(NSURLSession *) session task:(NSURLSessionTask *) task didReceiveInformationalResponse:(NSHTTPURLResponse *) response;
 ```
 
 

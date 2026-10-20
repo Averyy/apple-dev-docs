@@ -1,7 +1,8 @@
 # leaderboard
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Scores submitted to this leaderboard will also be submitted as scores in this challenge.
 
@@ -18,6 +19,10 @@ Scores submitted to this leaderboard will also be submitted as scores in this ch
 
 ```swift
 var leaderboard: GKLeaderboard? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) GKLeaderboard * leaderboard;
 ```
 
 

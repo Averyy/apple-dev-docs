@@ -1,7 +1,8 @@
 # maximumLiquidEquivalent
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum amount of snowfall as liquid equivalent for the period.
 

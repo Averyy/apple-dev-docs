@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A map coordinate that provides a hint for the geographic area to search.
 
@@ -10,19 +11,20 @@ A map coordinate that provides a hint for the geographic area to search.
 
 ## Declaration
 
-```swift
+```
 coordinate?: CoordinateData;
 ```
 
 #### Discussion
 
-This overrides the [`coordinate`](searchconstructoroptions/coordinate.md) provided to the [`Search`](search.md) onstructor.
+This overrides the [`coordinate`](../searchconstructoroptions/coordinate.md) provided to the [`Search`](../search.md) onstructor.
 
 ## See Also
 
-- [language](searchoptions/language.md)
+### Autocomplete search initialization
+- [language](./language.md)
   A language ID that determines the language for the search result text.
-- [region](searchoptions/region.md)
+- [region](./region.md)
   A map region that provides a hint for the geographic area to search.
 
 

@@ -1,15 +1,16 @@
 # CIKMeans
 
 **Framework**: Core Image  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,35 +18,40 @@
 protocol CIKMeans : CIAreaReductionFilter
 ```
 
+```objc
+@protocol CIKMeans <CIAreaReductionFilter>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var count: Int](cikmeans/count.md)
-- [var inputMeans: CIImage?](cikmeans/inputmeans.md)
-- [var passes: Float](cikmeans/passes.md)
-- [var perceptual: Bool](cikmeans/perceptual.md)
+- [var count: Int](./cikmeans/count.md)
+- [var inputMeans: CIImage?](./cikmeans/inputmeans.md)
+- [var passes: Float](./cikmeans/passes.md)
+- [var perceptual: Bool](./cikmeans/perceptual.md)
 
 ## Relationships
 
 ### Inherits From
-- [CIAreaReductionFilter](ciareareductionfilter.md)
-- [CIFilterProtocol](cifilterprotocol.md)
+- [CIAreaReductionFilter](./ciareareductionfilter.md)
+- [CIFilterProtocol](./cifilterprotocol.md)
 
 ## See Also
 
-- [protocol CIAreaAverage](ciareaaverage.md)
-- [protocol CIAreaHistogram](ciareahistogram.md)
-- [protocol CIAreaLogarithmicHistogram](ciarealogarithmichistogram.md)
-- [protocol CIAreaMaximum](ciareamaximum.md)
-- [protocol CIAreaMaximumAlpha](ciareamaximumalpha.md)
-- [protocol CIAreaMinMax](ciareaminmax.md)
-- [protocol CIAreaMinMaxRed](ciareaminmaxred.md)
-- [protocol CIAreaMinimum](ciareaminimum.md)
-- [protocol CIAreaMinimumAlpha](ciareaminimumalpha.md)
-- [protocol CIAreaReductionFilter](ciareareductionfilter.md)
-- [protocol CIColumnAverage](cicolumnaverage.md)
-- [protocol CIHistogramDisplay](cihistogramdisplay.md)
-- [protocol CIRowAverage](cirowaverage.md)
+### Protocols
+- [protocol CIAreaAverage](./ciareaaverage.md)
+- [protocol CIAreaHistogram](./ciareahistogram.md)
+- [protocol CIAreaLogarithmicHistogram](./ciarealogarithmichistogram.md)
+- [protocol CIAreaMaximum](./ciareamaximum.md)
+- [protocol CIAreaMaximumAlpha](./ciareamaximumalpha.md)
+- [protocol CIAreaMinMax](./ciareaminmax.md)
+- [protocol CIAreaMinMaxRed](./ciareaminmaxred.md)
+- [protocol CIAreaMinimum](./ciareaminimum.md)
+- [protocol CIAreaMinimumAlpha](./ciareaminimumalpha.md)
+- [protocol CIAreaReductionFilter](./ciareareductionfilter.md)
+- [protocol CIColumnAverage](./cicolumnaverage.md)
+- [protocol CIHistogramDisplay](./cihistogramdisplay.md)
+- [protocol CIRowAverage](./cirowaverage.md)
 
 
 ---

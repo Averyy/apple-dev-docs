@@ -1,7 +1,8 @@
 # ATSUCurvePath
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,15 +14,21 @@
 struct ATSUCurvePath
 ```
 
+```c
+typedef struct ATSUCurvePath {
+    ...
+} ATSUCurvePath;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](atsucurvepath/1462862-init.md)
-- [init(vectors: UInt32, controlBits: UInt32, vector: ATSPoint)](atsucurvepath/1459100-init.md)
+- [init()](./atsucurvepath/api-1462862-init.md)
+- [init(vectors: UInt32, controlBits: UInt32, vector: ATSPoint)](./atsucurvepath/api-1459100-init.md)
 ### Instance Properties
-- [var controlBits: UInt32](atsucurvepath/1463251-controlbits.md)
-- [var vector: ATSPoint](atsucurvepath/1461479-vector.md)
-- [var vectors: UInt32](atsucurvepath/1462624-vectors.md)
+- [var controlBits: UInt32](./atsucurvepath/api-1463251-controlbits.md)
+- [var vector: ATSPoint](./atsucurvepath/api-1461479-vector.md)
+- [var vectors: UInt32](./atsucurvepath/api-1462624-vectors.md)
 
 
 ---

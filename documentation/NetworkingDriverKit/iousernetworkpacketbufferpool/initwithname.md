@@ -1,14 +1,15 @@
 # initWithName
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool initWithName(const char *poolName, OSObject *owner, IONetworkPacketType packetType, const IOUserNetworkPacketBufferPoolOptions *options);
 ```
 

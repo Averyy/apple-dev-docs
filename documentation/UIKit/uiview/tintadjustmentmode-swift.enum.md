@@ -1,7 +1,8 @@
 # UIView.TintAdjustmentMode
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The tint adjustment mode for the view.
 
@@ -9,7 +10,7 @@ The tint adjustment mode for the view.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,51 +19,56 @@ The tint adjustment mode for the view.
 enum TintAdjustmentMode
 ```
 
+```c
+enum UIViewTintAdjustmentMode : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIView.TintAdjustmentMode.automatic](uiview/tintadjustmentmode-swift.enum/automatic.md)
+- [UIView.TintAdjustmentMode.automatic](./tintadjustmentmode-swift.enum/automatic.md)
   The tint adjustment mode of the view is the same as its superview’s tint adjustment mode (or `UIViewTintAdjustmentModeNormal` if the view has no superview).
-- [UIView.TintAdjustmentMode.normal](uiview/tintadjustmentmode-swift.enum/normal.md)
+- [UIView.TintAdjustmentMode.normal](./tintadjustmentmode-swift.enum/normal.md)
   The view’s tint color property returns the completely unmodified tint color of the view.
-- [UIView.TintAdjustmentMode.dimmed](uiview/tintadjustmentmode-swift.enum/dimmed.md)
+- [UIView.TintAdjustmentMode.dimmed](./tintadjustmentmode-swift.enum/dimmed.md)
   The view’s tint color property returns a desaturated, dimmed version of the view’s original tint color.
 ### Initializers
-- [init?(rawValue: Int)](uiview/tintadjustmentmode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./tintadjustmentmode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UIView.AnimationCurve](uiview/animationcurve.md)
+### Constants
+- [UIView.AnimationCurve](./animationcurve.md)
   Specifies the supported animation curves.
-- [UIView.AnimationOptions](uiview/animationoptions.md)
+- [UIView.AnimationOptions](./animationoptions.md)
   Options for animating views using block objects.
-- [UIView.AnimationTransition](uiview/animationtransition.md)
+- [UIView.AnimationTransition](./animationtransition.md)
   Animation transition options for use in an animation block object.
-- [UIView.SystemAnimation](uiview/systemanimation.md)
+- [UIView.SystemAnimation](./systemanimation.md)
   Option to remove the views from the hierarchy when animation is complete.
-- [UIView.KeyframeAnimationOptions](uiview/keyframeanimationoptions.md)
+- [UIView.KeyframeAnimationOptions](./keyframeanimationoptions.md)
   Options for configuring keyframe-based animations.
-- [NSLayoutConstraint.Axis](nslayoutconstraint/axis.md)
+- [NSLayoutConstraint.Axis](../nslayoutconstraint/axis.md)
   Keys that specify a horizontal or vertical layout constraint between objects.
-- [class let layoutFittingCompressedSize: CGSize](uiview/layoutfittingcompressedsize.md)
+- [class let layoutFittingCompressedSize: CGSize](./layoutfittingcompressedsize.md)
   The option to use the smallest possible size.
-- [class let layoutFittingExpandedSize: CGSize](uiview/layoutfittingexpandedsize.md)
+- [class let layoutFittingExpandedSize: CGSize](./layoutfittingexpandedsize.md)
   The option to use the largest possible size.
-- [class let noIntrinsicMetric: CGFloat](uiview/nointrinsicmetric.md)
+- [class let noIntrinsicMetric: CGFloat](./nointrinsicmetric.md)
   The absence of an intrinsic metric for a given numeric view property.
-- [UIView.AutoresizingMask](uiview/autoresizingmask-swift.struct.md)
+- [UIView.AutoresizingMask](./autoresizingmask-swift.struct.md)
   Options for automatic view resizing.
-- [enum UISemanticContentAttribute](uisemanticcontentattribute.md)
+- [enum UISemanticContentAttribute](../uisemanticcontentattribute.md)
   A semantic description of the view’s contents, used to determine whether the view should be flipped when switching between left-to-right and right-to-left layouts.
 
 

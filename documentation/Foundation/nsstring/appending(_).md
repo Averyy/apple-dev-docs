@@ -1,7 +1,8 @@
 # appending(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new string made by appending a given string to the receiver.
 
@@ -18,6 +19,10 @@ Returns a new string made by appending a given string to the receiver.
 
 ```swift
 func appending(_ aString: String) -> String
+```
+
+```objc
+- (NSString *) stringByAppendingString:(NSString *) aString;
 ```
 
 #### Return Value
@@ -38,12 +43,15 @@ produces the string “`Error: premature end of file.`”.
 
 ## Parameters
 
-- `aString`: The string to append to the receiver. This value must not be `nil`. > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `aString` is `nil`.
+- `aString`: The string to append to the receiver. This value must not be `nil`.
+
+  > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `aString` is `nil`.
 
 ## See Also
 
-- [func appendingFormat(NSString, any CVarArg...) -> NSString](nsstring/appendingformat(_:_:).md)
-- [func padding(toLength: Int, withPad: String, startingAt: Int) -> String](nsstring/padding(tolength:withpad:startingat:).md)
+### Combining Strings
+- [func appendingFormat(NSString, any CVarArg...) -> NSString](./appendingformat%28_,_%29.md)
+- [func padding(toLength: Int, withPad: String, startingAt: Int) -> String](./padding%28tolength,withpad,startingat%29.md)
   Returns a new string formed from the receiver by either removing characters from the end, or by appending as many occurrences as necessary of a given pad string.
 
 

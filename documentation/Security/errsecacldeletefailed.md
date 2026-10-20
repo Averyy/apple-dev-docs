@@ -1,7 +1,8 @@
 # errSecACLDeleteFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An ACL delete operation failed.
 
@@ -18,6 +19,10 @@ An ACL delete operation failed.
 
 ```swift
 var errSecACLDeleteFailed: OSStatus { get }
+```
+
+```c
+errSecACLDeleteFailed
 ```
 
 

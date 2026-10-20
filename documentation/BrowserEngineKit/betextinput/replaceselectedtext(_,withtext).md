@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Replaces text with new text, either within the current selection or near the cursor.
@@ -18,9 +19,13 @@ Replaces text with new text, either within the current selection or near the cur
 func replaceSelectedText(_ text: String, withText replacementText: String)
 ```
 
+```objc
+- (void) replaceSelectedText:(NSString *) text withText:(NSString *) replacementText;
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 #### Discussion
 
@@ -37,13 +42,14 @@ This method’s behavior depends on the current selection state:
 
 ## See Also
 
-- [func insert(BETextSuggestion)](betextinput/insert(_:)-5iryn.md)
+### Inserting and replacing text
+- [func insert(BETextSuggestion)](./insert%28_%29-5iryn.md)
   Inserts a text suggestion in response to a suggestion selection.
-- [func insert(BETextAlternatives)](betextinput/insert(_:)-6x7hd.md)
+- [func insert(BETextAlternatives)](./insert%28_%29-6x7hd.md)
   Inserts the given text or one of the available alternatives.
-- [func replaceDictatedText(String, withText: String)](betextinput/replacedictatedtext(_:withtext:).md)
+- [func replaceDictatedText(String, withText: String)](./replacedictatedtext%28_,withtext%29.md)
   Replaces the specified text for the text of a dictation.
-- [func add(BETextAlternatives)](betextinput/add(_:).md)
+- [func add(BETextAlternatives)](./add%28_%29.md)
   Adds text alternatives to the text input object for the current selection.
 
 

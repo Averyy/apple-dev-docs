@@ -1,7 +1,8 @@
 # AEBuildError
 
 **Framework**: Core Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Defines a structure for storing additional error codeinformation for “AEBuild” routines.
 
@@ -15,15 +16,21 @@ Defines a structure for storing additional error codeinformation for “AEBuild�
 struct AEBuildError
 ```
 
+```c
+typedef struct AEBuildError {
+    ...
+} AEBuildError;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](aebuilderror/1447428-init.md)
-- [init(fError: AEBuildErrorCode, fErrorPos: UInt32)](aebuilderror/1449472-init.md)
+- [init()](./aebuilderror/api-1447428-init.md)
+- [init(fError: AEBuildErrorCode, fErrorPos: UInt32)](./aebuilderror/api-1449472-init.md)
 ### Instance Properties
-- [var fError: AEBuildErrorCode](aebuilderror/1446581-ferror.md)
-  The error code. See [`AEBuildErrorCode`](aebuilderrorcode.md) for alist of errors. 
-- [var fErrorPos: UInt32](aebuilderror/1448861-ferrorpos.md)
+- [var fError: AEBuildErrorCode](./aebuilderror/api-1446581-ferror.md)
+  The error code. See [`AEBuildErrorCode`](./aebuilderrorcode.md) for alist of errors. 
+- [var fErrorPos: UInt32](./aebuilderror/api-1448861-ferrorpos.md)
   The character position where the parser detectedthe error. 
 
 

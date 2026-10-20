@@ -1,7 +1,8 @@
 # finalize()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The garbage collector invokes this method on the receiver before disposing of the memory it uses.
 
@@ -20,13 +21,18 @@ The garbage collector invokes this method on the receiver before disposing of th
 func finalize()
 ```
 
+```objc
+- (void) finalize;
+```
+
 #### Discussion
 
-This method behaves as described in the `NSObject` class specification under the [`finalize()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/finalize()) instance method. Note that a `finalize` method must be thread-safe.
+This method behaves as described in the `NSObject` class specification under the [`finalize()`](../../ObjectiveC/nsobject-swift.class/finalize%28%29.md) instance method. Note that a `finalize` method must be thread-safe.
 
 ## See Also
 
-- [func dealloc()](nsproxy/dealloc.md)
+### Related Documentation
+- [func dealloc()](./dealloc%28%29.md)
   Deallocates the memory occupied by the receiver.
 
 

@@ -1,7 +1,8 @@
 # MTRDishwasherModeModeTag
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,34 +19,38 @@
 enum MTRDishwasherModeModeTag
 ```
 
+```c
+enum MTRDishwasherModeModeTag : uint16_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRDishwasherModeModeTag.auto](mtrdishwashermodemodetag/auto.md)
-- [MTRDishwasherModeModeTag.day](mtrdishwashermodemodetag/day.md)
-- [MTRDishwasherModeModeTag.heavy](mtrdishwashermodemodetag/heavy.md)
-- [MTRDishwasherModeModeTag.light](mtrdishwashermodemodetag/light.md)
-- [MTRDishwasherModeModeTag.lowEnergy](mtrdishwashermodemodetag/lowenergy.md)
-- [MTRDishwasherModeModeTag.lowNoise](mtrdishwashermodemodetag/lownoise.md)
-- [MTRDishwasherModeModeTag.max](mtrdishwashermodemodetag/max.md)
-- [MTRDishwasherModeModeTag.min](mtrdishwashermodemodetag/min.md)
-- [MTRDishwasherModeModeTag.night](mtrdishwashermodemodetag/night.md)
-- [MTRDishwasherModeModeTag.normal](mtrdishwashermodemodetag/normal.md)
-- [MTRDishwasherModeModeTag.quick](mtrdishwashermodemodetag/quick.md)
-- [MTRDishwasherModeModeTag.quiet](mtrdishwashermodemodetag/quiet.md)
-- [MTRDishwasherModeModeTag.vacation](mtrdishwashermodemodetag/vacation.md)
+- [MTRDishwasherModeModeTag.auto](./mtrdishwashermodemodetag/auto.md)
+- [MTRDishwasherModeModeTag.day](./mtrdishwashermodemodetag/day.md)
+- [MTRDishwasherModeModeTag.heavy](./mtrdishwashermodemodetag/heavy.md)
+- [MTRDishwasherModeModeTag.light](./mtrdishwashermodemodetag/light.md)
+- [MTRDishwasherModeModeTag.lowEnergy](./mtrdishwashermodemodetag/lowenergy.md)
+- [MTRDishwasherModeModeTag.lowNoise](./mtrdishwashermodemodetag/lownoise.md)
+- [MTRDishwasherModeModeTag.max](./mtrdishwashermodemodetag/max.md)
+- [MTRDishwasherModeModeTag.min](./mtrdishwashermodemodetag/min.md)
+- [MTRDishwasherModeModeTag.night](./mtrdishwashermodemodetag/night.md)
+- [MTRDishwasherModeModeTag.normal](./mtrdishwashermodemodetag/normal.md)
+- [MTRDishwasherModeModeTag.quick](./mtrdishwashermodemodetag/quick.md)
+- [MTRDishwasherModeModeTag.quiet](./mtrdishwashermodemodetag/quiet.md)
+- [MTRDishwasherModeModeTag.vacation](./mtrdishwashermodemodetag/vacation.md)
 ### Initializers
-- [init?(rawValue: UInt16)](mtrdishwashermodemodetag/init(rawvalue:).md)
+- [init?(rawValue: UInt16)](./mtrdishwashermodemodetag/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

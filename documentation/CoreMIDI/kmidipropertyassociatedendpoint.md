@@ -1,7 +1,8 @@
 # kMIDIPropertyAssociatedEndpoint
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.0+
@@ -16,18 +17,23 @@
 let kMIDIPropertyAssociatedEndpoint: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyAssociatedEndpoint;
+```
+
 ## See Also
 
-- [var kMIDI1UPMaxSysexSize: UInt8](kmidi1upmaxsysexsize.md)
-- [var kMIDIDeviceIDFunctionBlock: MIDICIDeviceID](kmidideviceidfunctionblock.md)
-- [var kMIDIDeviceIDUMPGroup: MIDICIDeviceID](kmidideviceidumpgroup.md)
-- [let kMIDIPropertyUMPActiveGroupBitmap: CFString](kmidipropertyumpactivegroupbitmap.md)
-- [let kMIDIPropertyUMPCanTransmitGroupless: CFString](kmidipropertyumpcantransmitgroupless.md)
-- [var kMIDIUInteger14Max: MIDIUInteger14](kmidiuinteger14max.md)
-- [var kMIDIUInteger28Max: MIDIUInteger28](kmidiuinteger28max.md)
-- [var kMIDIUInteger2Max: MIDIUInteger2](kmidiuinteger2max.md)
-- [var kMIDIUInteger4Max: MIDIUInteger4](kmidiuinteger4max.md)
-- [var kMIDIUInteger7Max: MIDIUInteger7](kmidiuinteger7max.md)
+### Constants
+- [var kMIDI1UPMaxSysexSize: UInt8](./kmidi1upmaxsysexsize.md)
+- [var kMIDIDeviceIDFunctionBlock: MIDICIDeviceID](./kmidideviceidfunctionblock.md)
+- [var kMIDIDeviceIDUMPGroup: MIDICIDeviceID](./kmidideviceidumpgroup.md)
+- [let kMIDIPropertyUMPActiveGroupBitmap: CFString](./kmidipropertyumpactivegroupbitmap.md)
+- [let kMIDIPropertyUMPCanTransmitGroupless: CFString](./kmidipropertyumpcantransmitgroupless.md)
+- [var kMIDIUInteger14Max: MIDIUInteger14](./kmidiuinteger14max.md)
+- [var kMIDIUInteger28Max: MIDIUInteger28](./kmidiuinteger28max.md)
+- [var kMIDIUInteger2Max: MIDIUInteger2](./kmidiuinteger2max.md)
+- [var kMIDIUInteger4Max: MIDIUInteger4](./kmidiuinteger4max.md)
+- [var kMIDIUInteger7Max: MIDIUInteger7](./kmidiuinteger7max.md)
 
 
 ---

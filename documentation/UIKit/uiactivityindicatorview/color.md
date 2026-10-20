@@ -1,7 +1,8 @@
 # color
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of the activity indicator.
 
@@ -9,7 +10,7 @@ The color of the activity indicator.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The color of the activity indicator.
 var color: UIColor! { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite, null_resettable) UIColor * color;
+```
+
 #### Discussion
 
-If you set a color for an activity indicator, it overrides the color provided by the [`style`](uiactivityindicatorview/style-swift.property.md) property.
+If you set a color for an activity indicator, it overrides the color provided by the [`style`](./style-swift.property.md) property.
 
 ## See Also
 
-- [var style: UIActivityIndicatorView.Style](uiactivityindicatorview/style-swift.property.md)
+### Configuring the activity indicator appearance
+- [var style: UIActivityIndicatorView.Style](./style-swift.property.md)
   The basic appearance of the activity indicator.
 
 

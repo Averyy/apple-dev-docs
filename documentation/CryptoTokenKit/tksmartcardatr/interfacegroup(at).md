@@ -1,7 +1,8 @@
 # interfaceGroup(at:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the interface group at the specified index.
 
@@ -20,19 +21,26 @@ Returns the interface group at the specified index.
 func interfaceGroup(at index: Int) -> TKSmartCardATR.InterfaceGroup?
 ```
 
+```objc
+- (TKSmartCardATRInterfaceGroup *) interfaceGroupAtIndex:(NSInteger) index;
+```
+
 #### Return Value
 
 The interface group at the specified index, or `nil` if not present.
 
 ## Parameters
 
-- `index`: The index of the desired interface group. > ❗ **Important**:  Interface group indexes start at `1`, as specified by ISO 7816-3.
+- `index`: The index of the desired interface group.
+
+  > ❗ **Important**:  Interface group indexes start at `1`, as specified by ISO 7816-3.
 
 ## See Also
 
-- [func interfaceGroup(for: TKSmartCardProtocol) -> TKSmartCardATR.InterfaceGroup?](tksmartcardatr/interfacegroup(for:).md)
+### Retrieving Interface Groups
+- [func interfaceGroup(for: TKSmartCardProtocol) -> TKSmartCardATR.InterfaceGroup?](./interfacegroup%28for%29.md)
   Returns the interface group with the specified protocol.
-- [TKSmartCardATR.InterfaceGroup](tksmartcardatr/interfacegroup.md)
+- [TKSmartCardATR.InterfaceGroup](./interfacegroup.md)
   A single interface-bytes group for a Smart Card ATR (Answer to Reset).
 
 

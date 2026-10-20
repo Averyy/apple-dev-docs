@@ -1,7 +1,8 @@
 # dataRepresentation
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw data for the signature.
 
@@ -20,9 +21,22 @@ The raw data for the signature.
 var dataRepresentation: Data { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, strong, readonly) NSData * dataRepresentation;
+```
+
+*macOS*
+
+```objc
+@property (atomic, strong, readonly) NSData * dataRepresentation;
+```
+
 ## See Also
 
-- [var duration: TimeInterval](shsignature/duration.md)
+### Reading signature information
+- [var duration: TimeInterval](./duration.md)
   The duration of the audio you use to generate the signature.
 
 

@@ -1,7 +1,8 @@
 # recognizedPoint(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the point for a joint name that the observation recognizes.
 
@@ -19,6 +20,10 @@ Returns the point for a joint name that the observation recognizes.
 func recognizedPoint(_ jointName: VNHumanBodyPose3DObservation.JointName) throws -> VNHumanBodyRecognizedPoint3D
 ```
 
+```objc
+- (VNHumanBodyRecognizedPoint3D *) recognizedPointForJointName:(VNHumanBodyPose3DObservationJointName) jointName error:(NSError **) error;
+```
+
 #### Return Value
 
 The point for the joint name.
@@ -29,15 +34,16 @@ The point for the joint name.
 
 ## See Also
 
-- [var availableJointNames: [VNHumanBodyPose3DObservation.JointName]](vnhumanbodypose3dobservation/availablejointnames.md)
+### Accessing Points
+- [var availableJointNames: [VNHumanBodyPose3DObservation.JointName]](./availablejointnames.md)
   The names of the available joints in the observation.
-- [VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname.md)
+- [VNHumanBodyPose3DObservation.JointName](./jointname.md)
   The joint names for a 3D body pose.
-- [var availableJointsGroupNames: [VNHumanBodyPose3DObservation.JointsGroupName]](vnhumanbodypose3dobservation/availablejointsgroupnames.md)
+- [var availableJointsGroupNames: [VNHumanBodyPose3DObservation.JointsGroupName]](./availablejointsgroupnames.md)
   The available joint group names in the observation.
-- [VNHumanBodyPose3DObservation.JointsGroupName](vnhumanbodypose3dobservation/jointsgroupname.md)
+- [VNHumanBodyPose3DObservation.JointsGroupName](./jointsgroupname.md)
   The joint group names for a 3D body pose.
-- [func recognizedPoints(VNHumanBodyPose3DObservation.JointsGroupName) throws -> [VNHumanBodyPose3DObservation.JointName : VNHumanBodyRecognizedPoint3D]](vnhumanbodypose3dobservation/recognizedpoints(_:).md)
+- [func recognizedPoints(VNHumanBodyPose3DObservation.JointsGroupName) throws -> [VNHumanBodyPose3DObservation.JointName : VNHumanBodyRecognizedPoint3D]](./recognizedpoints%28_%29.md)
   Returns a collection of points for the group name you specify.
 
 

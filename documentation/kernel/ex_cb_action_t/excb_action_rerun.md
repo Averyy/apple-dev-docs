@@ -1,14 +1,15 @@
 # EXCB_ACTION_RERUN
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 EXCB_ACTION_RERUN
 ```
 

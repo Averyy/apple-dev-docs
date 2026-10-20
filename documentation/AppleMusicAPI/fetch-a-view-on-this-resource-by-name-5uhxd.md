@@ -1,7 +1,8 @@
 # Get a Catalog Record Label’s Relationship View Directly by Name
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch related resources for a single record label’s relationship view.
 
@@ -10,13 +11,13 @@ Fetch related resources for a single record label’s relationship view.
 
 #### Discussion
 
-If successful, the HTTP status code is 200 (OK) and the `data` array contains a single [`RecordLabels.Views`](recordlabels/views-data.dictionary.md) object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [`Handling Requests and Responses`](handling-requests-and-responses.md).
+If successful, the HTTP status code is 200 (OK) and the `data` array contains a single [`RecordLabels.Views`](./recordlabels/views-data.dictionary.md) object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/catalog/us/record-labels/1543990853/view/top-releases
 ```
 
@@ -467,21 +468,41 @@ https://api.music.apple.com/v1/catalog/us/record-labels/1543990853/view/top-rele
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The unique identifier for the record label.
+- `storefront` (string) *(required)*: An iTunes Store territory, specified by an ISO 3166 alpha-2 country code. The possible values are the `id` attributes of `Storefront` objects.
+- `view` (string) *(required)*: The name of the resource view to fetch.
+
+  **Allowed Values**: `latest-releases`, `top-releases`
+
+### Query Parameters
+
 - `extend` ([string]): A list of attribute extensions to apply to resources in the response.
 - `include` ([string]): Additional relationships to include in the fetch.
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 - `limit` (integer): The number of objects or number of objects in the specified relationship returned.
 - `with` ([string]): A list of modifications to apply to the request.
 
+  **Allowed Values**: `attributes`
+
+## Responses
+
+- `200` OK (`RelationshipViewResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
+
 ## See Also
 
-- [object RecordLabels](recordlabels.md)
+### Related Documentation
+- [object RecordLabels](./recordlabels.md)
   A resource object that represents a record label.
-- [object RecordLabelsResponse](recordlabelsresponse.md)
+- [object RecordLabelsResponse](./recordlabelsresponse.md)
   The response to a request for record labels.
-- [Get a Catalog Record Label](get-a-record-label.md)
+### Requesting Catalog Record Labels
+- [Get a Catalog Record Label](./get-a-record-label.md)
   Fetch a record label by using its identifier.
-- [Get Multiple Record Labels](get-multiple-record-labels.md)
+- [Get Multiple Record Labels](./get-multiple-record-labels.md)
   Fetch one or more record labels by using their identifiers.
 
 

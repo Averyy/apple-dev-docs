@@ -1,7 +1,8 @@
 # systemSymbolName
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.2+
@@ -14,6 +15,10 @@
 
 ```swift
 var systemSymbolName: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * systemSymbolName;
 ```
 
 

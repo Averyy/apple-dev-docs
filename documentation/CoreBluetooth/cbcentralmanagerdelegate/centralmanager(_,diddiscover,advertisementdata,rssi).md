@@ -1,7 +1,8 @@
 # centralManager(_:didDiscover:advertisementData:rssi:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate the central manager discovered a peripheral while scanning for devices.
 
@@ -20,9 +21,13 @@ Tells the delegate the central manager discovered a peripheral while scanning fo
 optional func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber)
 ```
 
+```objc
+- (void) centralManager:(CBCentralManager *) central didDiscoverPeripheral:(CBPeripheral *) peripheral advertisementData:(NSDictionary<NSString *,id> *) advertisementData RSSI:(NSNumber *) RSSI;
+```
+
 #### Discussion
 
-You can access the advertisement data with the keys listed in [`Advertisement Data Retrieval Keys`](advertisement-data-retrieval-keys.md). You must retain a local copy of the peripheral if you want to perform commands on it. Use the RSSI data to determine the proximity of a discoverable peripheral device, and whether you want to connect to it automatically.
+You can access the advertisement data with the keys listed in [Advertisement Data Retrieval Keys](../advertisement-data-retrieval-keys.md). You must retain a local copy of the peripheral if you want to perform commands on it. Use the RSSI data to determine the proximity of a discoverable peripheral device, and whether you want to connect to it automatically.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ You can access the advertisement data with the keys listed in [`Advertisement Da
 
 ## See Also
 
-- [Advertisement Data Retrieval Keys](advertisement-data-retrieval-keys.md)
+### Discovering and Retrieving Peripherals
+- [Advertisement Data Retrieval Keys](../advertisement-data-retrieval-keys.md)
   Keys used to specify items in a dictionary of peripheral advertisement data.
 
 

@@ -1,7 +1,8 @@
 # searchableIndexDidFinishThrottle(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the index throttling has finished.
 
@@ -18,6 +19,10 @@ Tells the delegate that the index throttling has finished.
 optional func searchableIndexDidFinishThrottle(_ searchableIndex: CSSearchableIndex)
 ```
 
+```objc
+- (void) searchableIndexDidFinishThrottle:(CSSearchableIndex *) searchableIndex;
+```
+
 #### Discussion
 
 If the system previously throttled the indexing process for your app, it calls this method when throttling ends. For example, it might call this method after someone plugs in their device to charge it. Use this method to resume your app’s standard indexing behavior.
@@ -28,7 +33,8 @@ If the system previously throttled the indexing process for your app, it calls t
 
 ## See Also
 
-- [func searchableIndexDidThrottle(CSSearchableIndex)](cssearchableindexdelegate/searchableindexdidthrottle(_:).md)
+### Monitoring Spotlight status
+- [func searchableIndexDidThrottle(CSSearchableIndex)](./searchableindexdidthrottle%28_%29.md)
   Tells the delegate that indexing is being throttled.
 
 

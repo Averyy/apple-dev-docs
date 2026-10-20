@@ -1,7 +1,8 @@
 # SWHighlightEvent
 
 **Framework**: Shared with You  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines an activity that the system posts in response to a user action for a highlight.
 
@@ -18,37 +19,42 @@ A protocol that defines an activity that the system posts in response to a user 
 protocol SWHighlightEvent : NSCopying, NSSecureCoding, NSObjectProtocol
 ```
 
+```objc
+@protocol SWHighlightEvent <NSObject, NSSecureCoding, NSCopying>
+```
+
 ## Mentions
 
-- [Adding shared content collaboration to your app](adding-shared-content-collaboration-to-your-app.md)
+- [Adding shared content collaboration to your app](./adding-shared-content-collaboration-to-your-app.md)
 
 ## Topics
 
 ### Accessing the URL
-- [var highlightURL: URL](swhighlightevent/highlighturl.md)
+- [var highlightURL: URL](./swhighlightevent/highlighturl.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 ### Conforming Types
-- [SWHighlightChangeEvent](swhighlightchangeevent.md)
-- [SWHighlightMembershipEvent](swhighlightmembershipevent.md)
-- [SWHighlightMentionEvent](swhighlightmentionevent.md)
-- [SWHighlightPersistenceEvent](swhighlightpersistenceevent.md)
+- [SWHighlightChangeEvent](./swhighlightchangeevent.md)
+- [SWHighlightMembershipEvent](./swhighlightmembershipevent.md)
+- [SWHighlightMentionEvent](./swhighlightmentionevent.md)
+- [SWHighlightPersistenceEvent](./swhighlightpersistenceevent.md)
 
 ## See Also
 
-- [class SWHighlightChangeEvent](swhighlightchangeevent.md)
+### Highlight events
+- [class SWHighlightChangeEvent](./swhighlightchangeevent.md)
   An object that represents change activity for a highlight.
-- [class SWHighlightMembershipEvent](swhighlightmembershipevent.md)
+- [class SWHighlightMembershipEvent](./swhighlightmembershipevent.md)
   An object that represents membership activity for a highlight.
-- [class SWHighlightMentionEvent](swhighlightmentionevent.md)
+- [class SWHighlightMentionEvent](./swhighlightmentionevent.md)
   An object that represents mention activity for a highlight.
-- [class SWHighlightPersistenceEvent](swhighlightpersistenceevent.md)
+- [class SWHighlightPersistenceEvent](./swhighlightpersistenceevent.md)
   An object that represents persistence activity for a highlight.
 
 

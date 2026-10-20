@@ -1,7 +1,8 @@
 # body
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that contains the notification’s main content.
 
@@ -16,15 +17,16 @@ let body: NSAttributedString?
 
 #### Discussion
 
-This property can embed genmoji ([`NSAdaptiveImageGlyph`](https://developer.apple.comhttps://developer.apple.com/documentation/uikit/nsadaptiveimageglyph)).
+This property can embed genmoji ([NSAdaptiveImageGlyph](../../UIKit/nsadaptiveimageglyph.md)).
 
 ## See Also
 
-- [let title: String?](accessorynotification/title.md)
+### Displaying notification content
+- [let title: String?](./title.md)
   A primary text for the notification.
-- [let subtitle: String?](accessorynotification/subtitle.md)
+- [let subtitle: String?](./subtitle.md)
   Secondary text for the notification.
-- [let summary: NSAttributedString?](accessorynotification/summary.md)
+- [let summary: NSAttributedString?](./summary.md)
   An Apple Intelligence summary for the notification.
 
 

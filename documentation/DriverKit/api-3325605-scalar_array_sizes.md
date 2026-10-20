@@ -1,18 +1,20 @@
 # Scalar Array Sizes
 
-**Framework**: DriverKit
+**Framework**: DriverKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Getting the Maximum Size
-- [kIOUserClientScalarArrayCountMax](kiouserclientscalararraycountmax.md)
+- [kIOUserClientScalarArrayCountMax](./kiouserclientscalararraycountmax.md)
 
 ## See Also
 
-- [IOUserClientScalarArray](iouserclientscalararray.md)
-- [Output Maximum Size](3325606-output_maximum_size.md)
+### Getting Type Information
+- [IOUserClientScalarArray](./iouserclientscalararray.md)
+- [Output Maximum Size](./api-3325606-output_maximum_size.md)
   Constant to denote a variable length structure argument to IOUserClient.
-- [Version Information](3325604-version_information.md)
+- [Version Information](./api-3325604-version_information.md)
 
 
 ---

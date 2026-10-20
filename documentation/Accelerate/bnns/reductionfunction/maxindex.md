@@ -1,7 +1,8 @@
 # BNNS.ReductionFunction.maxIndex
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A function for reduction that computes the index of the maximum value.
 
@@ -11,8 +12,10 @@ A function for reduction that computes the index of the maximum value.
 - Mac Catalyst 14.0+ - Deprecated
 - macOS 11.0+ - Deprecated
 - tvOS 14.0+ - Deprecated
-- visionOS ?+
+- visionOS
 - watchOS 7.0+ - Deprecated
+
+> **Deprecated**: Use `argMax`.
 
 ## Declaration
 
@@ -22,7 +25,8 @@ case maxIndex
 
 ## See Also
 
-- [BNNS.ReductionFunction.minIndex](bnns/reductionfunction/minindex.md)
+### Deprecated Symbols
+- [BNNS.ReductionFunction.minIndex](./minindex.md)
   A function for reduction that computes the index of the minimum value.
 
 

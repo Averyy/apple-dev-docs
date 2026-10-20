@@ -1,7 +1,8 @@
 # WKNavigationType.linkActivated
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A link activation.
 
@@ -18,21 +19,26 @@ A link activation.
 case linkActivated
 ```
 
+```c
+WKNavigationTypeLinkActivated
+```
+
 #### Discussion
 
 This action occurs when the user activates a link with an `href` attribute.
 
 ## See Also
 
-- [WKNavigationType.formSubmitted](wknavigationtype/formsubmitted.md)
+### Getting the Navigation Types
+- [WKNavigationType.formSubmitted](./formsubmitted.md)
   A request to submit a form.
-- [WKNavigationType.backForward](wknavigationtype/backforward.md)
+- [WKNavigationType.backForward](./backforward.md)
   A request for the frame’s next or previous item.
-- [WKNavigationType.reload](wknavigationtype/reload.md)
+- [WKNavigationType.reload](./reload.md)
   A request to reload the webpage.
-- [WKNavigationType.formResubmitted](wknavigationtype/formresubmitted.md)
+- [WKNavigationType.formResubmitted](./formresubmitted.md)
   A request to resubmit a form.
-- [WKNavigationType.other](wknavigationtype/other.md)
+- [WKNavigationType.other](./other.md)
   A navigation request that originates for some other reason.
 
 

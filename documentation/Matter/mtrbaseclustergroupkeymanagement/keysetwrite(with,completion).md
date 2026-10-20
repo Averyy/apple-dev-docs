@@ -1,7 +1,8 @@
 # keySetWrite(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func keySetWrite(with params: MTRGroupKeyManagementClusterKeySetWriteParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func keySetWrite(with params: MTRGroupKeyManagementClusterKeySetWriteParams) async throws
+```
+
+```objc
+- (void) keySetWriteWithParams:(MTRGroupKeyManagementClusterKeySetWriteParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

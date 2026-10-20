@@ -1,7 +1,8 @@
 # SizeCalculationMethod.allocated
 
 **Framework**: Background Assets  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A calculation method that counts the number of bytes that the file system allocated for a file.
 
@@ -17,6 +18,10 @@ A calculation method that counts the number of bytes that the file system alloca
 
 ```swift
 case allocated
+```
+
+```c
+BASizeCalculationMethodAllocated
 ```
 
 #### Discussion

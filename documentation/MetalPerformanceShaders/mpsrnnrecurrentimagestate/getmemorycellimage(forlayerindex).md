@@ -1,7 +1,8 @@
 # getMemoryCellImage(forLayerIndex:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 func getMemoryCellImage(forLayerIndex layerIndex: Int) -> MPSImage?
 ```
 
+```objc
+- (MPSImage *) getMemoryCellImageForLayerIndex:(NSUInteger) layerIndex;
+```
+
 ## See Also
 
-- [func getRecurrentOutputImage(forLayerIndex: Int) -> MPSImage?](mpsrnnrecurrentimagestate/getrecurrentoutputimage(forlayerindex:).md)
+### Instance Methods
+- [func getRecurrentOutputImage(forLayerIndex: Int) -> MPSImage?](./getrecurrentoutputimage%28forlayerindex%29.md)
 
 
 ---

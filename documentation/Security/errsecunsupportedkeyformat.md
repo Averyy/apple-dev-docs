@@ -1,7 +1,8 @@
 # errSecUnsupportedKeyFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key header format is not supported.
 
@@ -18,6 +19,10 @@ The key header format is not supported.
 
 ```swift
 var errSecUnsupportedKeyFormat: OSStatus { get }
+```
+
+```c
+errSecUnsupportedKeyFormat
 ```
 
 

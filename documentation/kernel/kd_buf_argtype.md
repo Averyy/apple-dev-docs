@@ -1,14 +1,15 @@
 # kd_buf_argtype
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 typedef uint64_t kd_buf_argtype;
 ```
 

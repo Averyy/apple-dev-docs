@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a new variant to this variant set.
 
@@ -21,7 +22,7 @@ func add(_ variantName: String) throws
 
 #### Discussion
 
-> **Note**: An error if the variant cannot be added.
+> **Throws**: An error if the variant cannot be added.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # isoCurrencies
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array containing currencies defined by the currency codes in ISO-4217.
 
@@ -22,7 +23,8 @@ static var isoCurrencies: [Locale.Currency] { get }
 
 ## See Also
 
-- [static let unknown: Locale.Currency](locale/currency-swift.struct/unknown.md)
+### Using common currencies
+- [static let unknown: Locale.Currency](./unknown.md)
   A representation of an “unknown” currency, for use with transactions that don’t involve any currency.
 
 

@@ -1,7 +1,8 @@
 # init(asset:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that generates images for times within a video asset.
 
@@ -17,6 +18,10 @@ Creates an object that generates images for times within a video asset.
 
 ```swift
 init(asset: AVAsset)
+```
+
+```objc
+- (instancetype) initWithAsset:(AVAsset *) asset;
 ```
 
 ## Parameters

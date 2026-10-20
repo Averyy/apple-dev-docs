@@ -1,7 +1,8 @@
 # errSSLPeerDecompressFail
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Decompression failed.
 
@@ -18,6 +19,10 @@ Decompression failed.
 
 ```swift
 var errSSLPeerDecompressFail: OSStatus { get }
+```
+
+```c
+errSSLPeerDecompressFail
 ```
 
 

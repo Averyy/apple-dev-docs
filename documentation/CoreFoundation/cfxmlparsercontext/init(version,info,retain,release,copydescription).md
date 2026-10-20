@@ -1,10 +1,11 @@
 # init(version:info:retain:release:copyDescription:)
 
 **Framework**: Core Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

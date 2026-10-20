@@ -1,7 +1,8 @@
 # EPErrorDomain
 
 **Framework**: Execution Policy  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -11,6 +12,10 @@
 
 ```swift
 let EPErrorDomain: String
+```
+
+```c
+extern NSErrorDomain const EPErrorDomain;
 ```
 
 

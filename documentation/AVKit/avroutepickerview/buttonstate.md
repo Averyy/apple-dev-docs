@@ -1,7 +1,8 @@
 # AVRoutePickerView.ButtonState
 
 **Framework**: AVKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the available button states.
 
@@ -14,45 +15,50 @@ Constants that describe the available button states.
 enum ButtonState
 ```
 
+```c
+enum AVRoutePickerViewButtonState : NSInteger;
+```
+
 ## Topics
 
 ### Creating a button state
-- [init?(rawValue: Int)](avroutepickerview/buttonstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./buttonstate/init%28rawvalue%29.md)
 ### Button states
-- [AVRoutePickerView.ButtonState.normal](avroutepickerview/buttonstate/normal.md)
+- [AVRoutePickerView.ButtonState.normal](./buttonstate/normal.md)
   The normal, or default, button state.
-- [AVRoutePickerView.ButtonState.normalHighlighted](avroutepickerview/buttonstate/normalhighlighted.md)
+- [AVRoutePickerView.ButtonState.normalHighlighted](./buttonstate/normalhighlighted.md)
   The highlighted button state when a mouse-down event occurs inside the button.
-- [AVRoutePickerView.ButtonState.active](avroutepickerview/buttonstate/active.md)
+- [AVRoutePickerView.ButtonState.active](./buttonstate/active.md)
   The button state when AirPlay is active.
-- [AVRoutePickerView.ButtonState.activeHighlighted](avroutepickerview/buttonstate/activehighlighted.md)
+- [AVRoutePickerView.ButtonState.activeHighlighted](./buttonstate/activehighlighted.md)
   The highlighted button state when AirPlay is active.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var activeTintColor: UIColor!](avroutepickerview/activetintcolor.md)
+### Configuring the route picker view
+- [var activeTintColor: UIColor!](./activetintcolor.md)
   The view’s tint color when AirPlay is active.
-- [var isRoutePickerButtonBordered: Bool](avroutepickerview/isroutepickerbuttonbordered.md)
+- [var isRoutePickerButtonBordered: Bool](./isroutepickerbuttonbordered.md)
   A Boolean value that indicates whether the route picker button has a border.
-- [var prioritizesVideoDevices: Bool](avroutepickerview/prioritizesvideodevices.md)
+- [var prioritizesVideoDevices: Bool](./prioritizesvideodevices.md)
   A Boolean value that indicates whether the route picker sorts video output devices to the top of the list.
-- [var routePickerButtonStyle: AVRoutePickerViewButtonStyle](avroutepickerview/routepickerbuttonstyle.md)
+- [var routePickerButtonStyle: AVRoutePickerViewButtonStyle](./routepickerbuttonstyle.md)
   The button style for the route picker.
-- [enum AVRoutePickerViewButtonStyle](avroutepickerviewbuttonstyle.md)
+- [enum AVRoutePickerViewButtonStyle](../avroutepickerviewbuttonstyle.md)
   Constants that define the button styles a route picker view supports.
-- [func routePickerButtonColor(for: AVRoutePickerView.ButtonState) -> NSColor](avroutepickerview/routepickerbuttoncolor(for:).md)
+- [func routePickerButtonColor(for: AVRoutePickerView.ButtonState) -> NSColor](./routepickerbuttoncolor%28for%29.md)
   Returns the color of the picker button for the specified state.
-- [func setRoutePickerButtonColor(NSColor?, for: AVRoutePickerView.ButtonState)](avroutepickerview/setroutepickerbuttoncolor(_:for:).md)
+- [func setRoutePickerButtonColor(NSColor?, for: AVRoutePickerView.ButtonState)](./setroutepickerbuttoncolor%28_,for%29.md)
   Sets the route picker button color for the specified state.
 
 

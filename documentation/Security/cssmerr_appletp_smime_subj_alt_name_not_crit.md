@@ -1,7 +1,8 @@
 # CSSMERR_APPLETP_SMIME_SUBJ_ALT_NAME_NOT_CRIT
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSMERR_APPLETP_SMIME_SUBJ_ALT_NAME_NOT_CRIT: Int { get }
+```
+
+```c
+CSSMERR_APPLETP_SMIME_SUBJ_ALT_NAME_NOT_CRIT
 ```
 
 

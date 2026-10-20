@@ -1,7 +1,8 @@
 # senselSitingOffsets
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Siting offsets, relative to pixel center, of individual sensels/components constituting each pixel.
 

@@ -1,7 +1,8 @@
 # deviceSize
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of the touch device in points, such as 72 ppi.
 
@@ -14,13 +15,18 @@ The range of the touch device in points, such as 72 ppi.
 var deviceSize: NSSize { get }
 ```
 
+```objc
+@property (readonly) NSSize deviceSize;
+```
+
 #### Discussion
 
 The lower-left corner of the surface is considered (0,0).
 
 ## See Also
 
-- [var device: Any?](nstouch/device.md)
+### Using Touch Device Properties
+- [var device: Any?](./device.md)
   The digitizer that generates the touch. Useful to distinguish touches emanating from multiple-device scenarios.
 
 

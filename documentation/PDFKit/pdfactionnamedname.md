@@ -1,7 +1,8 @@
 # PDFActionNamedName
 
 **Framework**: PDFKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 11.0+
@@ -17,57 +18,62 @@
 enum PDFActionNamedName
 ```
 
+```c
+enum PDFActionNamedName : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [PDFActionNamedName.find](pdfactionnamedname/find.md)
+- [PDFActionNamedName.find](./pdfactionnamedname/find.md)
   The Find action.
-- [PDFActionNamedName.firstPage](pdfactionnamedname/firstpage.md)
+- [PDFActionNamedName.firstPage](./pdfactionnamedname/firstpage.md)
   The First Page action.
-- [PDFActionNamedName.goBack](pdfactionnamedname/goback.md)
+- [PDFActionNamedName.goBack](./pdfactionnamedname/goback.md)
   The Go Back action.
-- [PDFActionNamedName.goForward](pdfactionnamedname/goforward.md)
+- [PDFActionNamedName.goForward](./pdfactionnamedname/goforward.md)
   The Go Forward action.
-- [PDFActionNamedName.goToPage](pdfactionnamedname/gotopage.md)
+- [PDFActionNamedName.goToPage](./pdfactionnamedname/gotopage.md)
   The Go to Page action.
-- [PDFActionNamedName.lastPage](pdfactionnamedname/lastpage.md)
+- [PDFActionNamedName.lastPage](./pdfactionnamedname/lastpage.md)
   The Last Page action.
-- [PDFActionNamedName.nextPage](pdfactionnamedname/nextpage.md)
+- [PDFActionNamedName.nextPage](./pdfactionnamedname/nextpage.md)
   The Next Page action.
-- [PDFActionNamedName.none](pdfactionnamedname/none.md)
+- [PDFActionNamedName.none](./pdfactionnamedname/none.md)
   The action has no name.
-- [PDFActionNamedName.previousPage](pdfactionnamedname/previouspage.md)
+- [PDFActionNamedName.previousPage](./pdfactionnamedname/previouspage.md)
   The Previous Page action.
-- [PDFActionNamedName.print](pdfactionnamedname/print.md)
+- [PDFActionNamedName.print](./pdfactionnamedname/print.md)
   The Print action.
-- [PDFActionNamedName.zoomIn](pdfactionnamedname/zoomin.md)
+- [PDFActionNamedName.zoomIn](./pdfactionnamedname/zoomin.md)
   The Zoom In action.
-- [PDFActionNamedName.zoomOut](pdfactionnamedname/zoomout.md)
+- [PDFActionNamedName.zoomOut](./pdfactionnamedname/zoomout.md)
   The Zoom Out action.
 ### Initializers
-- [init?(rawValue: Int)](pdfactionnamedname/init(rawvalue:).md)
+- [init?(rawValue: Int)](./pdfactionnamedname/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class PDFActionGoTo](pdfactiongoto.md)
+### Action Types
+- [class PDFActionGoTo](./pdfactiongoto.md)
   `PDFActionGoTo`, a subclass of `PDFAction`, defines methods for getting and setting the destination of a go-to action.
-- [class PDFActionNamed](pdfactionnamed.md)
+- [class PDFActionNamed](./pdfactionnamed.md)
   `PDFActionNamed` defines methods used to work with actions in PDF documents, some of which are named in the Adobe PDF Specification.
-- [class PDFActionRemoteGoTo](pdfactionremotegoto.md)
+- [class PDFActionRemoteGoTo](./pdfactionremotegoto.md)
   `PDFActionRemoteGoTo`, a subclass of `PDFAction`, defines methods for getting and setting the destination of a go-to action that targets another document.
-- [class PDFActionResetForm](pdfactionresetform.md)
+- [class PDFActionResetForm](./pdfactionresetform.md)
   `PDFActionResetForm`, a subclass of `PDFAction`, defines methods for getting and clearing fields in a PDF form.
-- [class PDFActionURL](pdfactionurl.md)
+- [class PDFActionURL](./pdfactionurl.md)
   `PDFActionURL`, a subclass of `PDFAction`, defines methods for getting and setting the URL associated with a URL action.
 
 

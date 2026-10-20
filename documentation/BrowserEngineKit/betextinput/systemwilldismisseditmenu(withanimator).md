@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Invoked by the system when it is about to dismiss an edit menu with an animator.
@@ -15,6 +16,10 @@ Invoked by the system when it is about to dismiss an edit menu with an animator.
 
 ```swift
 func systemWillDismissEditMenu(withAnimator animator: any UIEditMenuInteractionAnimating)
+```
+
+```objc
+- (void) systemWillDismissEditMenuWithAnimator:(id<UIEditMenuInteractionAnimating>) animator;
 ```
 
 

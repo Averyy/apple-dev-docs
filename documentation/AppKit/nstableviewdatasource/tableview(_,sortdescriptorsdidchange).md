@@ -1,12 +1,13 @@
 # tableView(_:sortDescriptorsDidChange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called by `aTableView` to indicate that sorting may need to be done.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Called by `aTableView` to indicate that sorting may need to be done.
 optional func tableView(_ tableView: NSTableView, sortDescriptorsDidChange oldDescriptors: [NSSortDescriptor])
 ```
 
+```objc
+- (void) tableView:(NSTableView *) tableView sortDescriptorsDidChange:(NSArray<NSSortDescriptor *> *) oldDescriptors;
+```
+
 #### Discussion
 
-The data source typically sorts and reloads the data, and adjusts the selections accordingly. If you need to know the current sort descriptors and the data source doesn’t manage them itself, you can get the current sort descriptors by sending `aTableView` a [`sortDescriptors`](nstableview/sortdescriptors.md) message.
+The data source typically sorts and reloads the data, and adjusts the selections accordingly. If you need to know the current sort descriptors and the data source doesn’t manage them itself, you can get the current sort descriptors by sending `aTableView` a [`sortDescriptors`](../nstableview/sortdescriptors.md) message.
 
 ## Parameters
 

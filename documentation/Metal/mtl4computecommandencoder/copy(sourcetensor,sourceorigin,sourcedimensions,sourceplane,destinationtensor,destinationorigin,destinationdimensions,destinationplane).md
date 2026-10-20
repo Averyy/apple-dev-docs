@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a command to copy data from a slice of a plane of a tensor into a slice of a plane of another tensor.
@@ -18,6 +19,10 @@ Encodes a command to copy data from a slice of a plane of a tensor into a slice 
 
 ```swift
 func copy(sourceTensor: any MTLTensor, sourceOrigin: MTLTensorExtents, sourceDimensions: MTLTensorExtents, sourcePlane: MTLTensorPlaneType, destinationTensor: any MTLTensor, destinationOrigin: MTLTensorExtents, destinationDimensions: MTLTensorExtents, destinationPlane: MTLTensorPlaneType)
+```
+
+```objc
+- (void) copyFromTensor:(id<MTLTensor>) sourceTensor sourceOrigin:(MTLTensorExtents *) sourceOrigin sourceDimensions:(MTLTensorExtents *) sourceDimensions sourcePlane:(MTLTensorPlaneType) sourcePlane toTensor:(id<MTLTensor>) destinationTensor destinationOrigin:(MTLTensorExtents *) destinationOrigin destinationDimensions:(MTLTensorExtents *) destinationDimensions destinationPlane:(MTLTensorPlaneType) destinationPlane;
 ```
 
 #### Discussion

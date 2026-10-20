@@ -1,7 +1,8 @@
 # init(placement:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a toolbar item group with a specified placement and content.
 
@@ -28,7 +29,8 @@ init(placement: ToolbarItemPlacement = .automatic, @ContentBuilder content: () -
 
 ## See Also
 
-- [init<C, L>(placement: ToolbarItemPlacement, content: () -> C, label: () -> L)](toolbaritemgroup/init(placement:content:label:).md)
+### Creating a toolbar item group
+- [init<C, L>(placement: ToolbarItemPlacement, content: () -> C, label: () -> L)](./init%28placement,content,label%29.md)
   Creates a toolbar item group with the specified placement, content, and a label describing that content.
 
 

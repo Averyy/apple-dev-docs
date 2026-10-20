@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kIODefaultMemoryType: Int](kiodefaultmemorytype.md)
+- [var kIODefaultMemoryType: Int](../kiodefaultmemorytype.md)
 
 
 ---

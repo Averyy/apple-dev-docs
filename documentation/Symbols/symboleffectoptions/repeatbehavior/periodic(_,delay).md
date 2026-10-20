@@ -1,7 +1,8 @@
 # periodic(_:delay:)
 
 **Framework**: Symbols  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A repeat behavior with a preferred play count and delay using periodic animations. Periodic animations play the effect at regular intervals starting and stopping each time.
 

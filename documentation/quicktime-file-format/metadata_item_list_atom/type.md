@@ -1,7 +1,8 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer that identifies the atom type.
 
@@ -11,7 +12,8 @@ Set this to `'ilst'`.
 
 ## See Also
 
-- [Item list](metadata_item_list_atom/item_list.md)
+### Data fields
+- [Item list](./item_list.md)
   A list of metadata values and related keys.
 
 

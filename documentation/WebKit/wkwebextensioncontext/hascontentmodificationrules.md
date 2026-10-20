@@ -1,7 +1,8 @@
 # hasContentModificationRules
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A boolean value indicating whether the extension includes rules used for content modification or blocking.
 
@@ -16,6 +17,10 @@ A boolean value indicating whether the extension includes rules used for content
 
 ```swift
 var hasContentModificationRules: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL hasContentModificationRules;
 ```
 
 #### Discussion

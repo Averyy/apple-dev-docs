@@ -1,7 +1,8 @@
 # MenuStyleConfiguration.Label
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased label of a menu.
 
@@ -23,11 +24,12 @@ A type-erased label of a menu.
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](../view.md)
 
 ## See Also
 
-- [MenuStyleConfiguration.Content](menustyleconfiguration/content.md)
+### Setting the label and content
+- [MenuStyleConfiguration.Content](./content.md)
   A type-erased content of a menu.
 
 

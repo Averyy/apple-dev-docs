@@ -1,7 +1,8 @@
 # numeric(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Column alignment appropriate for numeric content.
 
@@ -29,15 +30,16 @@ This uses the provided numbering system to determine the alignment:
 
 ## See Also
 
-- [static var automatic: TableColumnAlignment](tablecolumnalignment/automatic.md)
+### Getting the alignment
+- [static var automatic: TableColumnAlignment](./automatic.md)
   The default column alignment.
-- [static var leading: TableColumnAlignment](tablecolumnalignment/leading.md)
+- [static var leading: TableColumnAlignment](./leading.md)
   Leading column alignment.
-- [static var center: TableColumnAlignment](tablecolumnalignment/center.md)
+- [static var center: TableColumnAlignment](./center.md)
   Center column alignment.
-- [static var trailing: TableColumnAlignment](tablecolumnalignment/trailing.md)
+- [static var trailing: TableColumnAlignment](./trailing.md)
   Trailing column alignment.
-- [static var numeric: TableColumnAlignment](tablecolumnalignment/numeric.md)
+- [static var numeric: TableColumnAlignment](./numeric.md)
   Column alignment appropriate for numeric content.
 
 

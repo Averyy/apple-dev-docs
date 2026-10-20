@@ -1,7 +1,8 @@
 # motionTextureFormat
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format of the input motion texture for the scaler you create with this descriptor.
 
@@ -16,6 +17,10 @@ The pixel format of the input motion texture for the scaler you create with this
 
 ```swift
 var motionTextureFormat: MTLPixelFormat { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLPixelFormat motionTextureFormat;
 ```
 
 

@@ -1,7 +1,8 @@
 # kAXPriorityKey
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Notification info key used to specify a priority for the notification. See AXPriority.
 
@@ -12,6 +13,10 @@ Notification info key used to specify a priority for the notification. See AXPri
 
 ```swift
 var kAXPriorityKey: String { get }
+```
+
+```c
+#define kAXPriorityKey
 ```
 
 

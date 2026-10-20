@@ -1,7 +1,8 @@
 # index
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the index of the outline.
 
@@ -19,19 +20,24 @@ Returns the index of the outline.
 var index: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger index;
+```
+
 #### Discussion
 
 The index of the outline object is relative to its siblings and from the perspective of the parent of the outline object. The root outline object, and any outline object without a parent, has an index value of `0`.
 
 ## See Also
 
-- [var document: PDFDocument?](pdfoutline/document.md)
+### Getting Information About an Outline
+- [var document: PDFDocument?](./document.md)
   Returns the document with which the outline is associated.
-- [var numberOfChildren: Int](pdfoutline/numberofchildren.md)
+- [var numberOfChildren: Int](./numberofchildren.md)
   Returns the number of child outline objects in the outline.
-- [var parent: PDFOutline?](pdfoutline/parent.md)
+- [var parent: PDFOutline?](./parent.md)
   Returns the parent outline object of the outline (returns `NULL` if called on the root outline object).
-- [func child(at: Int) -> PDFOutline?](pdfoutline/child(at:).md)
+- [func child(at: Int) -> PDFOutline?](./child%28at%29.md)
   Returns the child outline object at the specified index.
 
 

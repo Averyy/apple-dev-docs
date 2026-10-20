@@ -1,7 +1,8 @@
 # onNetwork
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static var onNetwork: MTRDiscoveryCapabilities { get }
+```
+
+```c
+MTRDiscoveryCapabilitiesOnNetwork
 ```
 
 

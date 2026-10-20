@@ -1,7 +1,8 @@
 # randomSplitBySequence(proportion:by:on:seed:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 15.0+
@@ -19,13 +20,14 @@ func randomSplitBySequence(proportion: Double, by sequenceIdentifierColumn: Stri
 
 ## See Also
 
-- [func stratifiedSplit<RNG>(proportions: [Double], on: String, generator: inout RNG) throws -> MLDataTable](mldatatable/stratifiedsplit(proportions:on:generator:).md)
+### Splitting a data table
+- [func stratifiedSplit<RNG>(proportions: [Double], on: String, generator: inout RNG) throws -> MLDataTable](./stratifiedsplit%28proportions,on,generator%29.md)
   Randomly split a MLDataTable into a number partitions while stratifying on a user-define label column.
-- [func stratifiedSplit(proportions: [Double], on: String, seed: Int) throws -> MLDataTable](mldatatable/stratifiedsplit(proportions:on:seed:).md)
+- [func stratifiedSplit(proportions: [Double], on: String, seed: Int) throws -> MLDataTable](./stratifiedsplit%28proportions,on,seed%29.md)
   Randomly split a MLDataTable into a number partitions while stratifying on a user-define label column.
-- [func stratifiedSplitBySequence<RNG>(proportions: [Double], by: String, on: String, generator: inout RNG) throws -> MLDataTable](mldatatable/stratifiedsplitbysequence(proportions:by:on:generator:).md)
+- [func stratifiedSplitBySequence<RNG>(proportions: [Double], by: String, on: String, generator: inout RNG) throws -> MLDataTable](./stratifiedsplitbysequence%28proportions,by,on,generator%29.md)
   Randomly split a MLDataTable into partitions on a user-define label column, while keeping rows from the same sequence in the original order.
-- [func stratifiedSplitBySequence(proportions: [Double], by: String, on: String, seed: Int) throws -> MLDataTable](mldatatable/stratifiedsplitbysequence(proportions:by:on:seed:).md)
+- [func stratifiedSplitBySequence(proportions: [Double], by: String, on: String, seed: Int) throws -> MLDataTable](./stratifiedsplitbysequence%28proportions,by,on,seed%29.md)
   Randomly split a MLDataTable into partitions on a user-define label column, while keeping rows from the same sequence in the original order.
 
 

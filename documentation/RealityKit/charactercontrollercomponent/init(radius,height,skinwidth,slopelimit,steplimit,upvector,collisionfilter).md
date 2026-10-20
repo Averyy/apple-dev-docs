@@ -1,7 +1,8 @@
 # init(radius:height:skinWidth:slopeLimit:stepLimit:upVector:collisionFilter:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a character controller component using specified values.
 
@@ -11,7 +12,7 @@ Creates a character controller component using specified values.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ init(radius: Float, height: Float, skinWidth: Float = defaultSkinWidth, slopeLim
 
 ## See Also
 
-- [init()](charactercontrollercomponent/init.md)
+### Creating a character controller component
+- [init()](./init%28%29.md)
   Creates a character controller component using default values.
 
 

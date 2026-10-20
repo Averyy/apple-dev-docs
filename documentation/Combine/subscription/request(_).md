@@ -2,6 +2,7 @@
 
 **Framework**: Combine  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells a publisher that it may send more values to the subscriber.
@@ -23,11 +24,12 @@ func request(_ demand: Subscribers.Demand)
 
 ## Mentions
 
-- [Processing Published Elements with Subscribers](processing-published-elements-with-subscribers.md)
+- [Processing Published Elements with Subscribers](../processing-published-elements-with-subscribers.md)
 
 ## See Also
 
-- [Subscribers.Demand](subscribers/demand.md)
+### Requesting elements
+- [Subscribers.Demand](../subscribers/demand.md)
   A requested number of items, sent to a publisher from a subscriber through the subscription.
 
 

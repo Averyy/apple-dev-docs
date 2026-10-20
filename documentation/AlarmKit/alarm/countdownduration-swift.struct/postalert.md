@@ -1,7 +1,8 @@
 # postAlert
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration applied after the alarm has alerted at least once and moves back to the countdown state.
 
@@ -22,9 +23,10 @@ For example, this would be the snooze duration for an alarm.  A timer with a rep
 
 ## See Also
 
-- [init(preAlert: TimeInterval?, postAlert: TimeInterval?)](alarm/countdownduration-swift.struct/init(prealert:postalert:).md)
+### Creating a countdown duration
+- [init(preAlert: TimeInterval?, postAlert: TimeInterval?)](./init%28prealert,postalert%29.md)
   Creates an instance of a countdown duration.
-- [var preAlert: TimeInterval?](alarm/countdownduration-swift.struct/prealert.md)
+- [var preAlert: TimeInterval?](./prealert.md)
   The duration applied before the alarm fires.
 
 

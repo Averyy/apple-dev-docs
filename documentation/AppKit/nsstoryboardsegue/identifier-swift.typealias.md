@@ -1,10 +1,11 @@
 # NSStoryboardSegue.Identifier
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,13 +13,18 @@
 typealias Identifier = String
 ```
 
+```c
+typedef NSString * NSStoryboardSegueIdentifier;
+```
+
 ## See Also
 
-- [var sourceController: Any](nsstoryboardsegue/sourcecontroller.md)
+### Inspecting a Storyboard Segue
+- [var sourceController: Any](./sourcecontroller.md)
   The starting/containing view controller or window controller for the storyboard segue.
-- [var destinationController: Any](nsstoryboardsegue/destinationcontroller.md)
+- [var destinationController: Any](./destinationcontroller.md)
   The ending/contained view controller or window controller for the storyboard segue.
-- [var identifier: NSStoryboardSegue.Identifier?](nsstoryboardsegue/identifier-swift.property.md)
+- [var identifier: NSStoryboardSegue.Identifier?](./identifier-swift.property.md)
   An optional, unique identifier for the storyboard segue that you can specify using the Identity inspector in Interface Builder.
 
 

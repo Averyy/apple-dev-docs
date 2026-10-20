@@ -1,7 +1,8 @@
 # PredicateExpressions.CollectionRangeSubscript
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -21,23 +22,23 @@ struct CollectionRangeSubscript<Wrapped, Range> where Wrapped : PredicateExpress
 ## Topics
 
 ### Initializers
-- [init(wrapped: Wrapped, range: Range)](predicateexpressions/collectionrangesubscript/init(wrapped:range:).md)
+- [init(wrapped: Wrapped, range: Range)](./collectionrangesubscript/init%28wrapped,range%29.md)
 ### Instance Properties
-- [let range: Range](predicateexpressions/collectionrangesubscript/range.md)
-- [let wrapped: Wrapped](predicateexpressions/collectionrangesubscript/wrapped.md)
+- [let range: Range](./collectionrangesubscript/range.md)
+- [let wrapped: Wrapped](./collectionrangesubscript/wrapped.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [PredicateExpression](predicateexpression.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StandardPredicateExpression](standardpredicateexpression.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
+- [PredicateExpression](../predicateexpression.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [StandardPredicateExpression](../standardpredicateexpression.md)
 
 
 ---

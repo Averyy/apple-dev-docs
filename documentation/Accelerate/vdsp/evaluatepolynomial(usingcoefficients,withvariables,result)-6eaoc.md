@@ -1,7 +1,8 @@
 # evaluatePolynomial(usingCoefficients:withVariables:result:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Evaluates a single-precision polynomial using specified coefficients and variables.
 
@@ -11,7 +12,7 @@ Evaluates a single-precision polynomial using specified coefficients and variabl
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -53,7 +54,8 @@ For example, the following code evaluates the polynomial with the coefficients `
 
 ## See Also
 
-- [static func evaluatePolynomial<U>(usingCoefficients: [Float], withVariables: U) -> [Float]](vdsp/evaluatepolynomial(usingcoefficients:withvariables:)-7mznu.md)
+### Single-precision polynomial evaluation
+- [static func evaluatePolynomial<U>(usingCoefficients: [Float], withVariables: U) -> [Float]](./evaluatepolynomial%28usingcoefficients,withvariables%29-7mznu.md)
   Returns a single-precision evaluated polynomial using specified coefficients and variables.
 
 

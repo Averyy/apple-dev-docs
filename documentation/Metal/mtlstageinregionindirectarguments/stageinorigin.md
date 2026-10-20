@@ -1,7 +1,8 @@
 # stageInOrigin
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the upper-left corner of the block.
 
@@ -17,6 +18,10 @@ The location of the upper-left corner of the block.
 
 ```swift
 var stageInOrigin: (UInt32, UInt32, UInt32)
+```
+
+```c
+uint32_t stageInOrigin[3];
 ```
 
 

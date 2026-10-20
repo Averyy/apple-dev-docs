@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a NIST P-256 elliptic curve private key for use with Diffie-Hellman key exchange.
 

@@ -1,7 +1,8 @@
 # ARView.Environment.SceneUnderstanding.Options
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Available scene-understanding options.
 
@@ -19,47 +20,48 @@ struct Options
 ## Topics
 
 ### Type Properties
-- [static let collision: ARView.Environment.SceneUnderstanding.Options](arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct/collision.md)
+- [static let collision: ARView.Environment.SceneUnderstanding.Options](./options-swift.struct/collision.md)
   The `.collision` option means that the reconstructed geometry can be used for collision queries (i.e. raycasting)
-- [static let `default`: ARView.Environment.SceneUnderstanding.Options](arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct/default.md)
+- [static let `default`: ARView.Environment.SceneUnderstanding.Options](./options-swift.struct/default.md)
   The `.default` options is a sentinel value that indicates the user wants whatever scene-understanding features work with the current device and are supported. It overrides other options in the options set.
-- [static let occlusion: ARView.Environment.SceneUnderstanding.Options](arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct/occlusion.md)
+- [static let occlusion: ARView.Environment.SceneUnderstanding.Options](./options-swift.struct/occlusion.md)
   The `.occlusion` option means that the reconstructed geometry will be used for rendering, but only to update the depth buffer. Parts of virtual objects which are behind the reconstructed geometry are not rendered.
-- [static let physics: ARView.Environment.SceneUnderstanding.Options](arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct/physics.md)
+- [static let physics: ARView.Environment.SceneUnderstanding.Options](./options-swift.struct/physics.md)
   No abstract
-- [static let receivesLighting: ARView.Environment.SceneUnderstanding.Options](arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct/receiveslighting.md)
+- [static let receivesLighting: ARView.Environment.SceneUnderstanding.Options](./options-swift.struct/receiveslighting.md)
   The `.receivesLighting` option means that the virtual lights will interact with real world surfaces causing them to shine. The properties  of the mesh will be set to a default material.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../../../Swift/optionset.md)
+- [RawRepresentable](../../../../Swift/rawrepresentable.md)
+- [SetAlgebra](../../../../Swift/setalgebra.md)
 
 ## See Also
 
-- [Creating a game with scene understanding](creating-a-game-with-scene-understanding.md)
+### Scene reconstructions and analysis
+- [Creating a game with scene understanding](../../../creating-a-game-with-scene-understanding.md)
   Create AR games and experiences that interact with real-world objects on LiDAR-equipped iOS devices.
-- [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
+- [Implementing scene understanding and reconstruction in your RealityKit app](../../../realitykit-scene-understanding.md)
   Detect real-world objects and surfaces to create precise AR interactions.
-- [Visualizing and interacting with a reconstructed scene](../arkit/visualizing-and-interacting-with-a-reconstructed-scene.md)
+- [Visualizing and interacting with a reconstructed scene](../../../../ARKit/visualizing-and-interacting-with-a-reconstructed-scene.md)
   Estimate the shape of the physical environment using a polygonal mesh.
-- [var sceneReconstruction: ARConfiguration.SceneReconstruction](../arkit/arworldtrackingconfiguration/scenereconstruction.md)
+- [var sceneReconstruction: ARConfiguration.SceneReconstruction](../../../../ARKit/arworldtrackingconfiguration/scenereconstruction.md)
   A flag that enables scene reconstruction.
-- [class func supportsSceneReconstruction(ARConfiguration.SceneReconstruction) -> Bool](../arkit/arworldtrackingconfiguration/supportsscenereconstruction(_:).md)
+- [class func supportsSceneReconstruction(ARConfiguration.SceneReconstruction) -> Bool](../../../../ARKit/arworldtrackingconfiguration/supportsscenereconstruction%28_%29.md)
   Checks if the device supports scene reconstruction.
-- [struct SceneUnderstandingComponent](sceneunderstandingcomponent.md)
+- [struct SceneUnderstandingComponent](../../../sceneunderstandingcomponent.md)
   A component that specifies an entity is participating in the system’s scene-understanding features.
-- [ARView.Environment.SceneUnderstanding](arview/environment-swift.struct/sceneunderstanding-swift.struct.md)
+- [ARView.Environment.SceneUnderstanding](../sceneunderstanding-swift.struct.md)
   An object that holds scene-understanding options for the view.
-- [protocol HasSceneUnderstanding](hassceneunderstanding.md)
+- [protocol HasSceneUnderstanding](../../../hassceneunderstanding.md)
   A specification that detects and reacts to features of the physical environment.
-- [class SceneReconstructionProvider](../arkit/scenereconstructionprovider.md)
+- [class SceneReconstructionProvider](../../../../ARKit/scenereconstructionprovider.md)
   A source of live data about the shape of a person’s surroundings.
-- [class ARSession](../arkit/arsession.md)
+- [class ARSession](../../../../ARKit/arsession.md)
   The object that manages the major tasks associated with every AR experience, such as motion tracking, camera passthrough, and image analysis.
 
 

@@ -1,7 +1,8 @@
 # init(targetSize:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image scaler transformer. This transformer is used to scale an image to the `targetSize`.
 
@@ -25,9 +26,10 @@ init(targetSize: CGSize)
 
 ## See Also
 
-- [init(targetHeight: Double)](imagescaler/init(targetheight:).md)
+### Creating a transformer
+- [init(targetHeight: Double)](./init%28targetheight%29.md)
   Creates an image scaler transformer that preserves the aspect ratio.
-- [init(targetWidth: Double)](imagescaler/init(targetwidth:).md)
+- [init(targetWidth: Double)](./init%28targetwidth%29.md)
   Creates an image scaler transformer that preserves the aspect ratio.
 
 

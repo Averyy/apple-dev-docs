@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: App License Delivery SDK  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the specified raw value.
 
@@ -15,7 +16,7 @@ init?(rawValue: UInt32)
 
 If there is no value of the type that corresponds with the specified raw value, this initializer returns `nil`. For example:
 
-```None
+```
 enum PaperSize: String {
     case A4, A5, Letter, Legal
 }

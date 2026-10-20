@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The host time, in seconds, when the GPU finishes execution of the committed command buffers.
@@ -18,6 +19,10 @@ The host time, in seconds, when the GPU finishes execution of the committed comm
 
 ```swift
 var gpuEndTime: CFTimeInterval { get }
+```
+
+```objc
+@property (nonatomic, readonly) CFTimeInterval GPUEndTime;
 ```
 
 

@@ -1,7 +1,8 @@
 # setTorque(_:index:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the torque for each rigid body.
 
@@ -26,7 +27,7 @@ Inside the force effect update function, you are responsible to compute and outp
 ## Parameters
 
 - `torque`: The torque value.
-- `index`: The index to the rigid body. The index should be in the range [0, [`physicsBodyCount`](forceeffectparameters/physicsbodycount.md)].
+- `index`: The index to the rigid body. The index should be in the range [0, [`physicsBodyCount`](./physicsbodycount.md)].
 
 
 ---

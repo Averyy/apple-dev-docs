@@ -1,7 +1,8 @@
 # invertColorsStatusDidChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that UIKit posts when the settings for inverted colors change.
 
@@ -9,7 +10,7 @@ A notification that UIKit posts when the settings for inverted colors change.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,22 @@ nonisolated
 static let invertColorsStatusDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIAccessibilityInvertColorsStatusDidChangeNotification;
+```
+
 #### Discussion
 
 This notification doesn’t include a parameter. Observe this notification using the default notification center.
 
-Use the [`isInvertColorsEnabled`](uiaccessibility/isinvertcolorsenabled.md) function to determine whether the settings for inverted colors are in an enabled state.
+Use the [`isInvertColorsEnabled`](./isinvertcolorsenabled.md) function to determine whether the settings for inverted colors are in an enabled state.
 
 ## See Also
 
-- [static let darkerSystemColorsStatusDidChangeNotification: NSNotification.Name](uiaccessibility/darkersystemcolorsstatusdidchangenotification.md)
+### Colors
+- [static let darkerSystemColorsStatusDidChangeNotification: NSNotification.Name](./darkersystemcolorsstatusdidchangenotification.md)
   A notification that UIKit posts when the system’s Increase Contrast setting changes.
-- [static let grayscaleStatusDidChangeNotification: NSNotification.Name](uiaccessibility/grayscalestatusdidchangenotification.md)
+- [static let grayscaleStatusDidChangeNotification: NSNotification.Name](./grayscalestatusdidchangenotification.md)
   A notification that UIKit posts when the system’s Grayscale setting changes.
 
 

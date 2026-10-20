@@ -1,14 +1,15 @@
 # mapDepthIndex
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 IOIndex mapDepthIndex(IODisplayModeID modeID, IOIndex depth, bool fromDepthMode);
 ```
 

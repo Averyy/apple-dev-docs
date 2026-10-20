@@ -1,7 +1,8 @@
 # Get a Catalog Playlist’s Relationship View Directly by Name
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch related resources for a single playlist’s relationship view.
 
@@ -10,13 +11,13 @@ Fetch related resources for a single playlist’s relationship view.
 
 #### Discussion
 
-If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [`Handling Requests and Responses`](handling-requests-and-responses.md).
+If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/catalog/us/playlists/pl.cb4d1c09a2df4230a78d0395fe1f8fde/view/featured-artists
 ```
 
@@ -1427,25 +1428,45 @@ https://api.music.apple.com/v1/catalog/us/playlists/pl.cb4d1c09a2df4230a78d0395f
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: A unique identifier for the playlist.
+- `storefront` (string) *(required)*: An iTunes Store territory, specified by an ISO 3166 alpha-2 country code. The possible values are the `id` attributes of `Storefront` objects.
+- `view` (string) *(required)*: The name of the resource view to fetch.
+
+  **Allowed Values**: `featured-artists`, `more-by-curator`
+
+### Query Parameters
+
 - `extend` ([string]): A list of attribute extensions to apply to resources in the response.
 - `include` ([string]): Additional relationships to include in the fetch.
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 - `limit` (integer): The number of objects or number of objects in the specified relationship returned.
 - `with` ([string]): A list of modifications to apply to the request.
 
+  **Allowed Values**: `attributes`
+
+## Responses
+
+- `200` OK (`RelationshipViewResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
+
 ## See Also
 
-- [object Playlists](playlists.md)
+### Related Documentation
+- [object Playlists](./playlists.md)
   A resource object that represents a playlist.
-- [object PlaylistsResponse](playlistsresponse.md)
+- [object PlaylistsResponse](./playlistsresponse.md)
   The response to a playlists request.
-- [Get a Catalog Playlist](get-a-catalog-playlist.md)
+### Requesting a Catalog Playlist
+- [Get a Catalog Playlist](./get-a-catalog-playlist.md)
   Fetch a playlist by using its identifier.
-- [Get a Catalog Playlist's Relationship Directly by Name](fetch-a-relationship-on-this-resource-by-name-707nb.md)
+- [Get a Catalog Playlist's Relationship Directly by Name](./fetch-a-relationship-on-this-resource-by-name-707nb.md)
   Fetch a playlist’s relationship by using its identifier.
-- [Get Multiple Catalog Playlists](get-multiple-catalog-playlists.md)
+- [Get Multiple Catalog Playlists](./get-multiple-catalog-playlists.md)
   Fetch one or more playlists by using their identifiers.
-- [Get Charts Playlists by Storefront Value](get-charts-playlists-by-storefront-value.md)
+- [Get Charts Playlists by Storefront Value](./get-charts-playlists-by-storefront-value.md)
   Fetch one or more Charts Playlists by using their Storefront value.
 
 

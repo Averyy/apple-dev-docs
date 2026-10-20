@@ -1,7 +1,8 @@
 # init(named:in:constantValues:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a surface shader with the specified function constant values.
 

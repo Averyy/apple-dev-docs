@@ -1,7 +1,8 @@
 # text
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list item’s primary text.
 
@@ -16,19 +17,24 @@ The list item’s primary text.
 var text: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * text;
+```
+
 ## See Also
 
-- [func setText(String)](cplistitem/settext(_:).md)
+### Managing Content
+- [func setText(String)](./settext%28_%29.md)
   Updates the list item’s primary text.
-- [var detailText: String?](cplistitem/detailtext.md)
+- [var detailText: String?](./detailtext.md)
   The list item’s secondary text.
-- [func setDetailText(String?)](cplistitem/setdetailtext(_:).md)
+- [func setDetailText(String?)](./setdetailtext%28_%29.md)
   Updates the list item’s secondary text.
-- [var image: UIImage?](cplistitem/image.md)
+- [var image: UIImage?](./image.md)
   The image that the list item displays in its leading region.
-- [func setImage(UIImage?)](cplistitem/setimage(_:).md)
+- [func setImage(UIImage?)](./setimage%28_%29.md)
   Updates the list item’s image.
-- [class var maximumImageSize: CGSize](cplistitem/maximumimagesize.md)
+- [class var maximumImageSize: CGSize](./maximumimagesize.md)
   The maximum size of a list item’s image and accessory image.
 
 

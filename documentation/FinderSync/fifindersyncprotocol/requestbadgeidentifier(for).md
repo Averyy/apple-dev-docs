@@ -1,7 +1,8 @@
 # requestBadgeIdentifier(for:)
 
 **Framework**: Finder Sync  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests a badge for the given file or directory.
 
@@ -14,9 +15,13 @@ Requests a badge for the given file or directory.
 optional func requestBadgeIdentifier(for url: URL)
 ```
 
+```objc
+- (void) requestBadgeIdentifierForURL:(NSURL *) url;
+```
+
 #### Discussion
 
-Override this method to receive notifications whenever a new item becomes visible in the Finder. Check the item’s state, and call [`setBadgeIdentifier(_:for:)`](fifindersynccontroller/setbadgeidentifier(_:for:).md) to set an appropriate badge.
+Override this method to receive notifications whenever a new item becomes visible in the Finder. Check the item’s state, and call [`setBadgeIdentifier(_:for:)`](../fifindersynccontroller/setbadgeidentifier%28_,for%29.md) to set an appropriate badge.
 
 ## Parameters
 
@@ -24,19 +29,21 @@ Override this method to receive notifications whenever a new item becomes visibl
 
 ## See Also
 
-- [func setBadgeIdentifier(String, for: URL)](fifindersynccontroller/setbadgeidentifier(_:for:).md)
+### Related Documentation
+- [func setBadgeIdentifier(String, for: URL)](../fifindersynccontroller/setbadgeidentifier%28_,for%29.md)
   Sets the badge for a file or directory.
-- [func beginObservingDirectory(at: URL)](fifindersyncprotocol/beginobservingdirectory(at:).md)
+### Managing Badges, Shortcut Menus, and Toolbar Buttons
+- [func beginObservingDirectory(at: URL)](./beginobservingdirectory%28at%29.md)
   Tells the extension that the user is looking at a monitored directory or at one of its subdirectories.
-- [func endObservingDirectory(at: URL)](fifindersyncprotocol/endobservingdirectory(at:).md)
+- [func endObservingDirectory(at: URL)](./endobservingdirectory%28at%29.md)
   Tells the extension that the user has stopped looking at a monitored directory or at one of its subdirectories.
-- [func menu(for: FIMenuKind) -> NSMenu?](fifindersyncprotocol/menu(for:).md)
+- [func menu(for: FIMenuKind) -> NSMenu?](./menu%28for%29.md)
   Requests a custom menu from the extension.
-- [var toolbarItemImage: NSImage](fifindersyncprotocol/toolbaritemimage.md)
+- [var toolbarItemImage: NSImage](./toolbaritemimage.md)
   The image for the extension’s toolbar button.
-- [var toolbarItemName: String](fifindersyncprotocol/toolbaritemname.md)
+- [var toolbarItemName: String](./toolbaritemname.md)
   The name of the extension’s toolbar button.
-- [var toolbarItemToolTip: String](fifindersyncprotocol/toolbaritemtooltip.md)
+- [var toolbarItemToolTip: String](./toolbaritemtooltip.md)
   The tooltip text for the extension’s toolbar button.
 
 

@@ -1,7 +1,8 @@
 # SVGUseElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,22 +10,22 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGUseElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [height](svguseelement/1630843-height.md)
-- [width](svguseelement/1629477-width.md)
-- [x](svguseelement/1632216-x.md)
-- [y](svguseelement/1629278-y.md)
+- [height](./svguseelement/api-1630843-height.md)
+- [width](./svguseelement/api-1629477-width.md)
+- [x](./svguseelement/api-1632216-x.md)
+- [y](./svguseelement/api-1629278-y.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGGraphicsElement](svggraphicselement.md)
+- [SVGGraphicsElement](./svggraphicselement.md)
 
 
 ---

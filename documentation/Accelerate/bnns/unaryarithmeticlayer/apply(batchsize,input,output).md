@@ -1,7 +1,8 @@
 # apply(batchSize:input:output:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the layer to a set of input objects, writing the result to a set of output objects.
 
@@ -11,8 +12,10 @@ Applies the layer to a set of input objects, writing the result to a set of outp
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -28,7 +31,8 @@ func apply(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDesc
 
 ## See Also
 
-- [func applyBackward(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, outputGradient: BNNSNDArrayDescriptor, generatingInputGradient: BNNSNDArrayDescriptor) throws](bnns/unaryarithmeticlayer/applybackward(batchsize:input:output:outputgradient:generatinginputgradient:).md)
+### Applying a Unary Arithmetic Layer
+- [func applyBackward(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, outputGradient: BNNSNDArrayDescriptor, generatingInputGradient: BNNSNDArrayDescriptor) throws](./applybackward%28batchsize,input,output,outputgradient,generatinginputgradient%29.md)
   Applies the layer backward to generate input gradients.
 
 

@@ -1,7 +1,8 @@
 # Get Rejection Reasons
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve the details of an ad creative rejection reason by ID.
 
@@ -10,7 +11,7 @@ Retrieve the details of an ad creative rejection reason by ID.
 
 #### Discussion
 
-This endpoint retrieves the details of a specific ad creative rejection reason by its identifier, including the reason code and description. See [`CreativeRejectionReason`](creativerejectionreason.md) for the full field reference, including `creativeId` and the `reasonLevel` values.
+This endpoint retrieves the details of a specific ad creative rejection reason by its identifier, including the reason code and description. See [`CreativeRejectionReason`](./creativerejectionreason.md) for the full field reference, including `creativeId` and the `reasonLevel` values.
 
 #### Payload Examples
 
@@ -18,7 +19,7 @@ This endpoint retrieves the details of a specific ad creative rejection reason b
 
 Retrieves the details of a specific ad creative rejection reason by its identifier, including the reason code and description.
 
-```None
+```
 GET https://api.ads.apple.com/v1/rejection-reasons/apps/112233445
 ```
 
@@ -52,15 +53,32 @@ GET https://api.ads.apple.com/v1/rejection-reasons/apps/112233445
 
 ## Parameters
 
+### Path Parameters
+
+- `rejectionReasonId` (int64) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`RejectionReasonResponse`, `application/json`)
+- `400` Bad Request (`Error`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`Error`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [App Eligibility Endpoints](app-eligibility-endpoints.md)
+### Related Documentation
+- [App Eligibility Endpoints](./app-eligibility-endpoints.md)
   Check whether apps qualify to run ads and look up rejection reasons for creatives.
-- [Check App Eligibility](find-apps-eligibilities.md)
+- [Check App Eligibility](./find-apps-eligibilities.md)
   Check whether an app is eligible to run on certain Apple Ads placements and in specific countries or regions.
-- [Query Rejection Reasons](find-rejection-reasons.md)
+- [Query Rejection Reasons](./find-rejection-reasons.md)
   Query ad creative rejection reasons for apps and return why each ad creative failed approval.
 
 

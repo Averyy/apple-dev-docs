@@ -1,7 +1,8 @@
 # append(queryItems:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends a list of query items to the URL.
 
@@ -22,13 +23,14 @@ mutating func append(queryItems: [URLQueryItem])
 
 ## Parameters
 
-- `queryItems`: An array of [`URLQueryItem`](urlqueryitem.md) instances to append to the URL.
+- `queryItems`: An array of [`URLQueryItem`](../urlqueryitem.md) instances to append to the URL.
 
 ## See Also
 
-- [func appending(queryItems: [URLQueryItem]) -> URL](url/appending(queryitems:).md)
+### Adding query items
+- [func appending(queryItems: [URLQueryItem]) -> URL](./appending%28queryitems%29.md)
   Returns a new URL formed by appending a list of query items to the URL.
-- [struct URLQueryItem](urlqueryitem.md)
+- [struct URLQueryItem](../urlqueryitem.md)
   A single name-value pair from the query portion of a URL.
 
 

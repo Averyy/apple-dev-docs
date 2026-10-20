@@ -9,14 +9,15 @@
 ## Topics
 
 ### Constants
-- [Global Constants](global-constants.md)
+- [Global Constants](./global-constants.md)
 
 ## See Also
 
-- [CoreWLANTypes.h](corewlantypes-h.md)
-- [CoreWLANUtil.h](corewlanutil-h.md)
-- [CoreWLAN Enumerations](corewlan-enumerations.md)
-- [CoreWLAN Functions](corewlan-functions.md)
+### Reference
+- [CoreWLANTypes.h](./corewlantypes-h.md)
+- [CoreWLANUtil.h](./corewlanutil-h.md)
+- [CoreWLAN Enumerations](./corewlan-enumerations.md)
+- [CoreWLAN Functions](./corewlan-functions.md)
 
 
 ---

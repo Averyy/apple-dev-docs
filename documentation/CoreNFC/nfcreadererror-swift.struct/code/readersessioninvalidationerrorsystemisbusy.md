@@ -1,7 +1,8 @@
 # NFCReaderError.Code.readerSessionInvalidationErrorSystemIsBusy
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The reader session failed because the system is busy.
 
@@ -16,23 +17,28 @@ The reader session failed because the system is busy.
 case readerSessionInvalidationErrorSystemIsBusy
 ```
 
+```c
+NFCReaderSessionInvalidationErrorSystemIsBusy
+```
+
 ## See Also
 
-- [NFCReaderError.Code.readerSessionInvalidationErrorFirstNDEFTagRead](nfcreadererror-swift.struct/code/readersessioninvalidationerrorfirstndeftagread.md)
+### Session Errors
+- [NFCReaderError.Code.readerSessionInvalidationErrorFirstNDEFTagRead](./readersessioninvalidationerrorfirstndeftagread.md)
   The first NDEF tag read by this session is invalid.
-- [NFCReaderError.Code.readerSessionInvalidationErrorSessionTerminatedUnexpectedly](nfcreadererror-swift.struct/code/readersessioninvalidationerrorsessionterminatedunexpectedly.md)
+- [NFCReaderError.Code.readerSessionInvalidationErrorSessionTerminatedUnexpectedly](./readersessioninvalidationerrorsessionterminatedunexpectedly.md)
   The reader session terminated unexpectedly.
-- [NFCReaderError.Code.readerSessionInvalidationErrorSessionTimeout](nfcreadererror-swift.struct/code/readersessioninvalidationerrorsessiontimeout.md)
+- [NFCReaderError.Code.readerSessionInvalidationErrorSessionTimeout](./readersessioninvalidationerrorsessiontimeout.md)
   The reader session timed out.
-- [NFCReaderError.Code.readerSessionInvalidationErrorUserCanceled](nfcreadererror-swift.struct/code/readersessioninvalidationerrorusercanceled.md)
+- [NFCReaderError.Code.readerSessionInvalidationErrorUserCanceled](./readersessioninvalidationerrorusercanceled.md)
   The user canceled the reader session.
-- [NFCReaderError.Code.readerSessionInvalidationErrorFirstNDEFTagRead](nfcreadererror-swift.struct/code/readersessioninvalidationerrorfirstndeftagread.md)
+- [NFCReaderError.Code.readerSessionInvalidationErrorFirstNDEFTagRead](./readersessioninvalidationerrorfirstndeftagread.md)
   The first NDEF tag read by this session is invalid.
-- [NFCReaderError.Code.readerSessionInvalidationErrorSessionTerminatedUnexpectedly](nfcreadererror-swift.struct/code/readersessioninvalidationerrorsessionterminatedunexpectedly.md)
+- [NFCReaderError.Code.readerSessionInvalidationErrorSessionTerminatedUnexpectedly](./readersessioninvalidationerrorsessionterminatedunexpectedly.md)
   The reader session terminated unexpectedly.
-- [NFCReaderError.Code.readerSessionInvalidationErrorSessionTimeout](nfcreadererror-swift.struct/code/readersessioninvalidationerrorsessiontimeout.md)
+- [NFCReaderError.Code.readerSessionInvalidationErrorSessionTimeout](./readersessioninvalidationerrorsessiontimeout.md)
   The reader session timed out.
-- [NFCReaderError.Code.readerSessionInvalidationErrorUserCanceled](nfcreadererror-swift.struct/code/readersessioninvalidationerrorusercanceled.md)
+- [NFCReaderError.Code.readerSessionInvalidationErrorUserCanceled](./readersessioninvalidationerrorusercanceled.md)
   The user canceled the reader session.
 
 

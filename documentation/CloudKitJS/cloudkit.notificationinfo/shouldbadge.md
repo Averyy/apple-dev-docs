@@ -1,7 +1,8 @@
 # shouldBadge
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether a badge should be displayed. If `true`, a badge is displayed; otherwise, it is not. The default value is `false`.
 
@@ -10,7 +11,7 @@ A Boolean value indicating whether a badge should be displayed. If `true`, a bad
 
 ## Declaration
 
-```swift
+```
 attribute Boolean shouldBadge;
 ```
 

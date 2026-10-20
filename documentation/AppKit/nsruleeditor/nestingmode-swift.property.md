@@ -1,17 +1,22 @@
 # nestingMode
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rule editor’s nesting mode.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var nestingMode: NSRuleEditor.NestingMode { get set }
+```
+
+```objc
+@property NSRuleEditorNestingMode nestingMode;
 ```
 
 #### Discussion
@@ -20,13 +25,14 @@ You typically set the nesting mode at view creation time and do not subsequently
 
 ## See Also
 
-- [var isEditable: Bool](nsruleeditor/iseditable.md)
+### Configuring a Rule Editor
+- [var isEditable: Bool](./iseditable.md)
   A Boolean value that determines whether the rule editor is editable.
-- [NSRuleEditor.NestingMode](nsruleeditor/nestingmode-swift.enum.md)
+- [NSRuleEditor.NestingMode](./nestingmode-swift.enum.md)
   Specifies a type for nesting modes.
-- [var canRemoveAllRows: Bool](nsruleeditor/canremoveallrows.md)
+- [var canRemoveAllRows: Bool](./canremoveallrows.md)
   A Boolean value that indicates whether all the rows can be removed.
-- [var rowHeight: CGFloat](nsruleeditor/rowheight.md)
+- [var rowHeight: CGFloat](./rowheight.md)
   The rule editor’s row height.
 
 

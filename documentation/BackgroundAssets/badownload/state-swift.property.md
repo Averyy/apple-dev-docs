@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of the download.
 
@@ -19,9 +20,14 @@ The current state of the download.
 var state: BADownload.State { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BADownloadState state;
+```
+
 ## See Also
 
-- [BADownload.State](badownload/state-swift.enum.md)
+### Getting the current state
+- [BADownload.State](./state-swift.enum.md)
   Constants that indicate the state of a download.
 
 

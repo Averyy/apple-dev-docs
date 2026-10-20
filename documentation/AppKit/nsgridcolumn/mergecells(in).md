@@ -1,7 +1,8 @@
 # mergeCells(in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12+
@@ -12,9 +13,14 @@
 func mergeCells(in range: NSRange)
 ```
 
+```objc
+- (void) mergeCellsInRange:(NSRange) range;
+```
+
 ## See Also
 
-- [func cell(at: Int) -> NSGridCell](nsgridcolumn/cell(at:).md)
+### Instance Methods
+- [func cell(at: Int) -> NSGridCell](./cell%28at%29.md)
 
 
 ---

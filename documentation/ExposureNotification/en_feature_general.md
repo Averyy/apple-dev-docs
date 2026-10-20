@@ -1,7 +1,8 @@
 # EN_FEATURE_GENERAL
 
 **Framework**: Exposure Notification  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 13.5+
@@ -12,6 +13,10 @@
 
 ```swift
 var EN_FEATURE_GENERAL: Int32 { get }
+```
+
+```c
+#define EN_FEATURE_GENERAL
 ```
 
 

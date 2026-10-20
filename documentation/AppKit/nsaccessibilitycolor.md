@@ -1,7 +1,8 @@
 # NSAccessibilityColor
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A role-based protocol that declares the minimum interface necessary for an accessibility element to act as a color.
 
@@ -15,20 +16,25 @@ A role-based protocol that declares the minimum interface necessary for an acces
 protocol NSAccessibilityColor
 ```
 
+```objc
+@protocol NSAccessibilityColor
+```
+
 ## Topics
 
 ### Supporting Accessibility
-- [var accessibilityName: String](nsaccessibilitycolor/accessibilityname.md)
+- [var accessibilityName: String](./nsaccessibilitycolor/accessibilityname.md)
   Returns a localized description of the color for use in accessibility attributes.
 
 ## Relationships
 
 ### Conforming Types
-- [NSColor](nscolor.md)
+- [NSColor](./nscolor.md)
 
 ## See Also
 
-- [protocol NSAccessibilityImage](nsaccessibilityimage.md)
+### Images and Color
+- [protocol NSAccessibilityImage](./nsaccessibilityimage.md)
   A role-based protocol that declares the minimum interface necessary for an accessibility element to act as an image.
 
 

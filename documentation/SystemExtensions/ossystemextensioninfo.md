@@ -1,7 +1,8 @@
 # OSSystemExtensionInfo
 
 **Framework**: System Extensions  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - macOS 15.1+
@@ -12,26 +13,30 @@
 class OSSystemExtensionInfo
 ```
 
+```objc
+@interface OSSystemExtensionInfo : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var bundleIdentifier: String](ossystemextensioninfo/bundleidentifier.md)
-- [var bundleShortVersion: String](ossystemextensioninfo/bundleshortversion.md)
-- [var bundleVersion: String](ossystemextensioninfo/bundleversion.md)
+- [var bundleIdentifier: String](./ossystemextensioninfo/bundleidentifier.md)
+- [var bundleShortVersion: String](./ossystemextensioninfo/bundleshortversion.md)
+- [var bundleVersion: String](./ossystemextensioninfo/bundleversion.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,6 +1,7 @@
 # Handling errors
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: Article
 
 Determine the underlying cause of errors that result from StoreKit requests.
 
@@ -8,31 +9,32 @@ Determine the underlying cause of errors that result from StoreKit requests.
 
 A StoreKit request may fail for one of many possible reasons, including invalid product information, invalid payment details, problems with your App Store Connect account, or networking issues. When an error occurs, check the error code to find out what went wrong.
 
-##### Determine the Cause of the Error
+##### Determine the cause of the error
 
-When handling errors, such as with the [`request(_:didFailWithError:)`](skrequestdelegate/request(_:didfailwitherror:).md) delegate method, it’s important to use the [`domain`](https://developer.apple.com/documentation/foundation/nserror/domain) and [`code`](https://developer.apple.com/documentation/foundation/nserror/code) of the resulting error to determine the underlying cause of failure.
+When handling errors, such as with the [`request(_:didFailWithError:)`](./skrequestdelegate/request%28_,didfailwitherror%29.md) delegate method, it’s important to use the [`domain`](../Foundation/nserror/domain.md) and [`code`](../Foundation/nserror/code.md) of the resulting error to determine the underlying cause of failure.
 
-StoreKit uses [`SKErrorDomain`](skerrordomain.md) for errors related to payments, store products, and cloud services, as described in [`SKError.Code`](skerror/code.md). For additional information on troubleshooting StoreKit framework issues, see the [`Apple In-App Purchase FAQ`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2413/_index.html#//apple_ref/doc/uid/DTS40016228).
+StoreKit uses [`SKErrorDomain`](./skerrordomain.md) for errors related to payments, store products, and cloud services, as described in [`SKError.Code`](./skerror/code.md). For additional information on troubleshooting StoreKit framework issues, see the [Apple In-App Purchase FAQ](https://developer.apple.com/library/archive/technotes/tn2413/_index.html#//apple_ref/doc/uid/DTS40016228).
 
-Errors related to networking use [`NSURLErrorDomain`](https://developer.apple.com/documentation/foundation/nsurlerrordomain). The following table describes some of the most common networking errors that may occur when using StoreKit:
+Errors related to networking use [`NSURLErrorDomain`](../Foundation/nsurlerrordomain.md). The following table describes some of the most common networking errors that may occur when using StoreKit:
 
 | Error code | Description |
 | --- | --- |
-| [`NSURLErrorTimedOut`](https://developer.apple.com/documentation/foundation/nsurlerrortimedout-swift.var) (`-1001`) | The connection timed out. |
-| [`NSURLErrorCannotFindHost`](https://developer.apple.com/documentation/foundation/nsurlerrorcannotfindhost-swift.var) (`-1003`) | The connection failed because it can’t find the host. |
-| [`NSURLErrorCannotConnectToHost`](https://developer.apple.com/documentation/foundation/nsurlerrorcannotconnecttohost-swift.var) (`-1004`) | The connection failed because it can’t connect to the host. |
-| [`NSURLErrorNetworkConnectionLost`](https://developer.apple.com/documentation/foundation/nsurlerrornetworkconnectionlost-swift.var) (`-1005`) | The connection failed because it lost the network connection. |
-| [`NSURLErrorNotConnectedToInternet`](https://developer.apple.com/documentation/foundation/nsurlerrornotconnectedtointernet-swift.var) (`-1009`) | The connection failed because the device isn’t connected to the internet. |
-| [`NSURLErrorUserCancelledAuthentication`](https://developer.apple.com/documentation/foundation/nsurlerrorusercancelledauthentication-swift.var) (`-1012`) | The connection failed because the user canceled required authentication. |
-| [`NSURLErrorSecureConnectionFailed`](https://developer.apple.com/documentation/foundation/nsurlerrorsecureconnectionfailed-swift.var) (`-1200`) | The secure connection failed for an unknown reason. |
+| [`NSURLErrorTimedOut`](../Foundation/nsurlerrortimedout-swift.var.md) (`-1001`) | The connection timed out. |
+| [`NSURLErrorCannotFindHost`](../Foundation/nsurlerrorcannotfindhost-swift.var.md) (`-1003`) | The connection failed because it can’t find the host. |
+| [`NSURLErrorCannotConnectToHost`](../Foundation/nsurlerrorcannotconnecttohost-swift.var.md) (`-1004`) | The connection failed because it can’t connect to the host. |
+| [`NSURLErrorNetworkConnectionLost`](../Foundation/nsurlerrornetworkconnectionlost-swift.var.md) (`-1005`) | The connection failed because it lost the network connection. |
+| [`NSURLErrorNotConnectedToInternet`](../Foundation/nsurlerrornotconnectedtointernet-swift.var.md) (`-1009`) | The connection failed because the device isn’t connected to the internet. |
+| [`NSURLErrorUserCancelledAuthentication`](../Foundation/nsurlerrorusercancelledauthentication-swift.var.md) (`-1012`) | The connection failed because the user canceled required authentication. |
+| [`NSURLErrorSecureConnectionFailed`](../Foundation/nsurlerrorsecureconnectionfailed-swift.var.md) (`-1200`) | The secure connection failed for an unknown reason. |
 
 ## See Also
 
-- [SKError.Code](skerror/code.md)
+### Errors
+- [SKError.Code](./skerror/code.md)
   Error codes for StoreKit errors.
-- [struct SKError](skerror.md)
+- [struct SKError](./skerror.md)
   StoreKit error descriptions, codes, and domains.
-- [let SKErrorDomain: String](skerrordomain.md)
+- [let SKErrorDomain: String](./skerrordomain.md)
   The error domain name for StoreKit errors.
 
 

@@ -1,7 +1,8 @@
 # makeCase(_:)
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an enumeration case with the specified raw value.
 
@@ -22,7 +23,7 @@ func makeCase(_ rawValue: String) -> AnyAppEnum
 
 ## Mentions
 
-- [Testing your App Intents code](testing-your-app-intents-code.md)
+- [Testing your App Intents code](../testing-your-app-intents-code.md)
 
 #### Return Value
 

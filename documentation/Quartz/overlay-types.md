@@ -1,21 +1,23 @@
 # Overlay Types
 
-**Framework**: Quartz
+**Framework**: Quartz  
+**Role**: API Collection
 
 A layer level.
 
 ## Topics
 
 ### Constants
-- [let IKOverlayTypeBackground: String](ikoverlaytypebackground.md)
+- [let IKOverlayTypeBackground: String](./ikoverlaytypebackground.md)
   A background.
-- [let IKOverlayTypeImage: String](ikoverlaytypeimage.md)
+- [let IKOverlayTypeImage: String](./ikoverlaytypeimage.md)
   An image.
 
 ## See Also
 
-- [Tool Modes](tool-modes.md)
-  Image Kit tools modes referenced by the [`currentToolMode`](ikimageview/currenttoolmode.md) property.
+### Constants
+- [Tool Modes](./tool-modes.md)
+  Image Kit tools modes referenced by the [`currentToolMode`](./ikimageview/currenttoolmode.md) property.
 
 
 ---

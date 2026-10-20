@@ -1,7 +1,8 @@
 # noBackgroundContent
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the extension does not have background content.
 

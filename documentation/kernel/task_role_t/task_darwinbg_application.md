@@ -1,14 +1,15 @@
 # TASK_DARWINBG_APPLICATION
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 TASK_DARWINBG_APPLICATION = 8
 ```
 

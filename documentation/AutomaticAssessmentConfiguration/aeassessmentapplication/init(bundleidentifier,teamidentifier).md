@@ -1,7 +1,8 @@
 # init(bundleIdentifier:teamIdentifier:)
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a representation of an app using its bundle and team identifiers.
 
@@ -15,6 +16,10 @@ Creates a representation of an app using its bundle and team identifiers.
 
 ```swift
 init(bundleIdentifier: String, teamIdentifier: String?)
+```
+
+```objc
+- (instancetype) initWithBundleIdentifier:(NSString *) bundleIdentifier teamIdentifier:(NSString *) teamIdentifier;
 ```
 
 #### Discussion
@@ -32,11 +37,12 @@ You can get the bundle and team identifiers for an app using the `codesign` comm
 
 ## See Also
 
-- [init(bundleIdentifier: String)](aeassessmentapplication/init(bundleidentifier:).md)
+### Creating an assessment application
+- [init(bundleIdentifier: String)](./init%28bundleidentifier%29.md)
   Creates a representation of an app using its bundle identifier.
-- [var bundleIdentifier: String](aeassessmentapplication/bundleidentifier.md)
+- [var bundleIdentifier: String](./bundleidentifier.md)
   The bundle identifier of the app.
-- [var teamIdentifier: String?](aeassessmentapplication/teamidentifier.md)
+- [var teamIdentifier: String?](./teamidentifier.md)
   The team identifier of the app.
 
 

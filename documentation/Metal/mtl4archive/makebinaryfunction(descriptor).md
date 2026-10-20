@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Synchronously creates a binary version of a GPU visible function or GPU intersection function.
@@ -18,6 +19,10 @@ Synchronously creates a binary version of a GPU visible function or GPU intersec
 
 ```swift
 func makeBinaryFunction(descriptor: MTL4BinaryFunctionDescriptor) throws -> any MTL4BinaryFunction
+```
+
+```objc
+- (id<MTL4BinaryFunction>) newBinaryFunctionWithDescriptor:(MTL4BinaryFunctionDescriptor *) descriptor error:(NSError **) error;
 ```
 
 #### Return Value

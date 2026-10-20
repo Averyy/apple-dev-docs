@@ -1,7 +1,8 @@
 # readAttributeEnhancedCurrentHue(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeEnhancedCurrentHue(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeEnhancedCurrentHue() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeEnhancedCurrentHueWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

@@ -1,18 +1,19 @@
 # init(c0:c1:c2:c3:gamma:cutoff:c4:c5:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a structure that represents a transfer function to convert from linear to nonlinear RGB.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -50,7 +51,8 @@ else {
 
 ## See Also
 
-- [init()](vimagetransferfunction/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Creates an empty transfer function structure.
 
 

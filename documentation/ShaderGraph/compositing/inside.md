@@ -1,7 +1,8 @@
 # Inside
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 Multiplies a mask to all channels of the input.
 
@@ -15,7 +16,51 @@ Multiplies a mask to all channels of the input.
 
 #### Parameter Types
 
-#### Parameter Descriptions
+**Inside (float)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Float |
+| `Mask` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Float |
+
+**Inside (half)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Half |
+| `Mask` | Half |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Half |
+
+**Inside (color3f)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Color3 |
+| `Mask` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color3 |
+
+**Inside (color4f)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Color4 |
+| `Mask` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+#### Parameter descriptions
 
 - **`In`**: The input value to which the mask applies.
 - **`Mask`**: The value by which the input is multiplied.
@@ -24,43 +69,48 @@ Multiplies a mask to all channels of the input.
 
 Below is an example of a simple node graph that uses the Inside node to apply a mask to a brick texture:
 
-![None](/images/ShaderGraph-Docs/InsideGraph.png)
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/InsideGraph.png)
 
 Below, the resulting texture applies to a cube.
 
-![None](/images/ShaderGraph-Docs/InsideMaterial3.png)
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/InsideMaterial1.png)
+
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/InsideMaterial2.png)
+
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/InsideMaterial3.png)
 
 ## See Also
 
-- [Premultiply](compositing/premultiply.md)
+### Nodes
+- [Premultiply](./premultiply.md)
   Multiplies the RGB channels of the input by the alpha channel.
-- [Unpremultiply](compositing/unpremultiply.md)
+- [Unpremultiply](./unpremultiply.md)
   Divides the RGB channels of the input by the alpha channel.
-- [Additive Mix](compositing/additive-mix.md)
+- [Additive Mix](./additive-mix.md)
   Adds foreground and background values.
-- [Subtractive Mix](compositing/subtractive-mix.md)
+- [Subtractive Mix](./subtractive-mix.md)
   Subtracts foreground from background values.
-- [Difference](compositing/difference.md)
+- [Difference](./difference.md)
   Outputs the distance between foreground and background values.
-- [Burn](compositing/burn.md)
+- [Burn](./burn.md)
   A blend operation that darkens the foreground layer using the background.
-- [Dodge](compositing/dodge.md)
+- [Dodge](./dodge.md)
   A blend operation that lightens the background layer depending on the foreground.
-- [Screen](compositing/screen.md)
+- [Screen](./screen.md)
   A blend operation that lightens areas that are darker than white.
-- [Overlay](compositing/overlay.md)
+- [Overlay](./overlay.md)
   A blend operation that multiplies dark areas and screens light areas.
-- [Disjoint Over](compositing/disjoint-over.md)
+- [Disjoint Over](./disjoint-over.md)
   A merge operation that layers foreground over background color, but assumes no overlap in partially transparent areas covered by both.
-- [In](compositing/in.md)
+- [In](./in.md)
   Outputs areas of foreground that overlap with the alpha of background.
-- [Mask](compositing/mask.md)
+- [Mask](./mask.md)
   Outputs areas of background that overlap with the alpha of foreground.
-- [Matte](compositing/matte.md)
+- [Matte](./matte.md)
   A merge operation that layers premultiplied foreground over background.
-- [Out](compositing/out.md)
+- [Out](./out.md)
   Outputs areas of foreground that do not overlap with background.
-- [Over](compositing/over.md)
+- [Over](./over.md)
   A merge operation that layers foreground over background, using the alpha of the foreground.
 
 

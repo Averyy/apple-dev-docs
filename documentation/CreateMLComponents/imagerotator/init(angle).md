@@ -1,7 +1,8 @@
 # init(angle:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transformer that rotates an image by a specified angle.
 

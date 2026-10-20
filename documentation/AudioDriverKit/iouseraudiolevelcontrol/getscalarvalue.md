@@ -1,7 +1,8 @@
 # GetScalarValue
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the scalar value of the level control.
 
@@ -10,7 +11,7 @@ Gets the scalar value of the level control.
 
 ## Declaration
 
-```swift
+```c
 float GetScalarValue();
 ```
 
@@ -20,11 +21,12 @@ The scalar value of the level control.
 
 ## See Also
 
-- [SetScalarValue](iouseraudiolevelcontrol/setscalarvalue.md)
+### Accessing the Value
+- [SetScalarValue](./setscalarvalue.md)
   Sets the scalar value of the level control.
-- [SetDecibelValue](iouseraudiolevelcontrol/setdecibelvalue.md)
+- [SetDecibelValue](./setdecibelvalue.md)
   Sets the decibel value of the level control.
-- [GetDecibelValue](iouseraudiolevelcontrol/getdecibelvalue.md)
+- [GetDecibelValue](./getdecibelvalue.md)
   Gets the decibel value of the level control.
 
 

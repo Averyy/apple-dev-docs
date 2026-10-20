@@ -1,7 +1,8 @@
 # mapAnnotations(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array containing the results of mapping the given closure over the sequence’s annotations.
 

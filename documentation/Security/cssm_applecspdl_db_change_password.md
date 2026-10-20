@@ -1,7 +1,8 @@
 # CSSM_APPLECSPDL_DB_CHANGE_PASSWORD
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_APPLECSPDL_DB_CHANGE_PASSWORD: Int { get }
+```
+
+```c
+CSSM_APPLECSPDL_DB_CHANGE_PASSWORD
 ```
 
 

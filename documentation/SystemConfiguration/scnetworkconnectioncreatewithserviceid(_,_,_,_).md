@@ -1,7 +1,8 @@
 # SCNetworkConnectionCreateWithServiceID(_:_:_:_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new connection reference to use for getting the status or for connecting or disconnecting the associated service.
 
@@ -12,6 +13,10 @@ Creates a new connection reference to use for getting the status or for connecti
 
 ```swift
 func SCNetworkConnectionCreateWithServiceID(_ allocator: CFAllocator?, _ serviceID: CFString, _ callout: SCNetworkConnectionCallBack?, _ context: UnsafeMutablePointer<SCNetworkConnectionContext>?) -> SCNetworkConnection?
+```
+
+```c
+SCNetworkConnectionRefSCNetworkConnectionCreateWithServiceID(CFAllocatorRef allocator, CFStringRef serviceID, SCNetworkConnectionCallBack callout, SCNetworkConnectionContext *context);
 ```
 
 #### Return Value

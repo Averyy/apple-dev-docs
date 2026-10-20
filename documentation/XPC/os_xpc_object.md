@@ -1,18 +1,19 @@
 # OS_xpc_object
 
 **Framework**: XPC  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for an XPC object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,18 +21,23 @@ The interface for an XPC object.
 protocol OS_xpc_object : NSObjectProtocol
 ```
 
+```objc
+@protocol OS_xpc_object <NSObject>
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [typealias xpc_object_t](xpc_object_t.md)
+### Objects
+- [typealias xpc_object_t](./xpc_object_t.md)
   A type that can describe all XPC objects, including dictionaries, arrays, strings, and numbers.
-- [typealias xpc_type_t](xpc_type_t.md)
+- [typealias xpc_type_t](./xpc_type_t.md)
   A type that describes XPC object types.
-- [class OS_xpc_listener](os_xpc_listener-swift.class.md)
+- [class OS_xpc_listener](./os_xpc_listener-swift.class.md)
 
 
 ---

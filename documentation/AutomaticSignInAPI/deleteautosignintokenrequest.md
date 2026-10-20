@@ -1,7 +1,8 @@
 # DeleteAutoSignInTokenRequest
 
 **Framework**: Automatic Sign-In API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body that contains the sign-in token to be deleted.
 
@@ -10,21 +11,22 @@ The request body that contains the sign-in token to be deleted.
 
 ## Declaration
 
-```swift
+```
 object DeleteAutoSignInTokenRequest
 ```
 
 #### Overview
 
-This is the request object for the [`Delete Sign-In Token`](delete-this-token-for-all-associated-users.md) endpoint.
+This is the request object for the [`Delete Sign-In Token`](./delete-this-token-for-all-associated-users.md) endpoint.
 
 ## Properties
 
-- `autoSignInTokenValue` (string): The token [`value`](https://developer.apple.com/documentation/videosubscriberaccount/vsautosignintoken/value) that needs to be deleted.
+- `autoSignInTokenValue` (string): The token [`value`](../VideoSubscriberAccount/vsautosignintoken/value.md) that needs to be deleted.
 
 ## See Also
 
-- [Delete Sign-In Token](delete-this-token-for-all-associated-users.md)
+### Token deletion
+- [Delete Sign-In Token](./delete-this-token-for-all-associated-users.md)
   Deletes a specific sign-in token.
 
 

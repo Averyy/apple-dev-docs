@@ -1,7 +1,8 @@
 # displayedKeys
 
 **Framework**: Contacts UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The keys to be displayed when a contact is expanded.
 
@@ -14,13 +15,18 @@ The keys to be displayed when a contact is expanded.
 var displayedKeys: [String] { get set }
 ```
 
+```objc
+@property (copy) NSArray<NSString *> * displayedKeys;
+```
+
 #### Discussion
 
-If no keys are provided, the picker selects contacts instead of values. For a list of possible keys, see [`Contact Keys`](https://developer.apple.com/documentation/contacts/contact-keys).
+If no keys are provided, the picker selects contacts instead of values. For a list of possible keys, see [Contact Keys](../../Contacts/contact-keys.md).
 
 ## See Also
 
-- [class CNContact](../contacts/cncontact.md)
+### Related Documentation
+- [class CNContact](../../Contacts/cncontact.md)
   An immutable object that stores information about a single contact, such as the contact’s first name, phone numbers, and addresses.
 
 

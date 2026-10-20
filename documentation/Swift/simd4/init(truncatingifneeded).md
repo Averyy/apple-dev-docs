@@ -1,7 +1,8 @@
 # init(truncatingIfNeeded:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new vector from the given vector, truncating the bit patterns of the given vector’s elements if necessary.
 
@@ -19,6 +20,8 @@ Creates a new vector from the given vector, truncating the bit patterns of the g
 ```swift
 init<Other>(truncatingIfNeeded other: SIMD4<Other>) where Other : FixedWidthInteger, Other : SIMDScalar
 ```
+
+Available when `Scalar` conforms to `FixedWidthInteger` and `SIMDScalar`.
 
 ## Parameters
 

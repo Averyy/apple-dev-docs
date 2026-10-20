@@ -1,17 +1,19 @@
 # TVMLKit Constants
 
-**Framework**: TVMLKit
+**Framework**: TVMLKit  
+**Role**: API Collection
 
 This document defines constants in the TVMLKit framework that are not associated with a particular class.
 
 ## Topics
 
 ### Constants
-- [let TVDocumentErrorDomain: String](tvdocumenterrordomain.md)
+- [let TVDocumentErrorDomain: String](./tvdocumenterrordomain.md)
 
 ## See Also
 
-- [TVMLKit Enumerations](tvmlkit-enumerations.md)
+### Reference
+- [TVMLKit Enumerations](./tvmlkit-enumerations.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # streamApplicationErrorCode
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The QUIC application error code to send for the stream, or received from the peer.
 

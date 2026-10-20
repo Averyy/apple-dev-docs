@@ -1,7 +1,8 @@
 # InAppPurchaseOfferPrice.Relationships.PricePoint
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describes the price point of the In-App Purchase offer price.
 
@@ -10,14 +11,14 @@ The data that describes the price point of the In-App Purchase offer price.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseOfferPrice.Relationships.PricePoint
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InAppPurchaseOfferPrice.Relationships.PricePoint.Data](inapppurchaseofferprice/relationships-data.dictionary/pricepoint-data.dictionary/data-data.dictionary.md)
+- [object InAppPurchaseOfferPrice.Relationships.PricePoint.Data](./pricepoint-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties
@@ -26,7 +27,8 @@ object InAppPurchaseOfferPrice.Relationships.PricePoint
 
 ## See Also
 
-- [object InAppPurchaseOfferPrice.Relationships.Territory](inapppurchaseofferprice/relationships-data.dictionary/territory-data.dictionary.md)
+### Dictionaries
+- [object InAppPurchaseOfferPrice.Relationships.Territory](./territory-data.dictionary.md)
   The data that describes the territory of the In-App Purchase offer price.
 
 

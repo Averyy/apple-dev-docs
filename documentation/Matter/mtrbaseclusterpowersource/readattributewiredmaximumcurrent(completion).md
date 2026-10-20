@@ -1,7 +1,8 @@
 # readAttributeWiredMaximumCurrent(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeWiredMaximumCurrent(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeWiredMaximumCurrent() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeWiredMaximumCurrentWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # mipLevelCount
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of mipmap levels contained in the texture image data.
 
@@ -19,21 +20,26 @@ The number of mipmap levels contained in the texture image data.
 var mipLevelCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger mipLevelCount;
+```
+
 #### Discussion
 
-Mipmapping is a technique that uses multiple sizes of a texture image to increase rendering performance. If this property’s value is zero, the texture contains a single image, whose size matches the [`dimensions`](mdltexture/dimensions.md) property. If this value is 1, the texture contains an additional image at half the original dimensions; if this value is 2, the texture contains images at the original size, at half size, and at quarter size; and so on.
+Mipmapping is a technique that uses multiple sizes of a texture image to increase rendering performance. If this property’s value is zero, the texture contains a single image, whose size matches the [`dimensions`](./dimensions.md) property. If this value is 1, the texture contains an additional image at half the original dimensions; if this value is 2, the texture contains images at the original size, at half size, and at quarter size; and so on.
 
 ## See Also
 
-- [var dimensions: vector_int2](mdltexture/dimensions.md)
+### Examining Texture Attributes
+- [var dimensions: vector_int2](./dimensions.md)
   The width and height, in texels, of the texture image.
-- [var rowStride: Int](mdltexture/rowstride.md)
+- [var rowStride: Int](./rowstride.md)
   The number of bytes between the first texel in a row of image data and the first texel in the next row.
-- [var channelCount: Int](mdltexture/channelcount.md)
+- [var channelCount: Int](./channelcount.md)
   The number of channels per texel.
-- [var channelEncoding: MDLTextureChannelEncoding](mdltexture/channelencoding.md)
+- [var channelEncoding: MDLTextureChannelEncoding](./channelencoding.md)
   The data format for each channel value per texel.
-- [var isCube: Bool](mdltexture/iscube.md)
+- [var isCube: Bool](./iscube.md)
   A Boolean value that indicates whether the texture is a cube textures.
 
 

@@ -1,7 +1,8 @@
 # firstTextBaseline
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A guide that marks the top-most text baseline in a view.
 
@@ -22,16 +23,16 @@ static let firstTextBaseline: VerticalAlignment
 
 ## Mentions
 
-- [Aligning views within a stack](aligning-views-within-a-stack.md)
-- [Aligning views across stacks](aligning-views-across-stacks.md)
+- [Aligning views within a stack](../aligning-views-within-a-stack.md)
+- [Aligning views across stacks](../aligning-views-across-stacks.md)
 
 #### Discussion
 
 Use this guide to align with the baseline of the top-most text in a view. The guide aligns with the bottom of a view that contains no text:
 
-![A box that contains the text, First Text Baseline.](/images/com.apple.SwiftUI/VerticalAlignment-firstTextBaseline-1-iOS@2x.png)
+![A box that contains the text, First Text Baseline.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/VerticalAlignment-firstTextBaseline-1-iOS@2x.png)
 
-The following code generates the image above using an [`HStack`](hstack.md):
+The following code generates the image above using an [`HStack`](../hstack.md):
 
 ```swift
 struct VerticalAlignmentFirstTextBaseline: View {
@@ -47,13 +48,14 @@ struct VerticalAlignmentFirstTextBaseline: View {
 
 ## See Also
 
-- [static let top: VerticalAlignment](verticalalignment/top.md)
+### Getting guides
+- [static let top: VerticalAlignment](./top.md)
   A guide that marks the top edge of the view.
-- [static let center: VerticalAlignment](verticalalignment/center.md)
+- [static let center: VerticalAlignment](./center.md)
   A guide that marks the vertical center of the view.
-- [static let bottom: VerticalAlignment](verticalalignment/bottom.md)
+- [static let bottom: VerticalAlignment](./bottom.md)
   A guide that marks the bottom edge of the view.
-- [static let lastTextBaseline: VerticalAlignment](verticalalignment/lasttextbaseline.md)
+- [static let lastTextBaseline: VerticalAlignment](./lasttextbaseline.md)
   A guide that marks the bottom-most text baseline in a view.
 
 

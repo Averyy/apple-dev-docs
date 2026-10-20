@@ -1,17 +1,22 @@
 # controlPointBounds
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounding box of the path, including any control points.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var controlPointBounds: NSRect { get }
+```
+
+```objc
+@property (readonly) NSRect controlPointBounds;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ This property contains the rectangle that encloses the receiver’s path. If the
 
 ## See Also
 
-- [var bounds: NSRect](nsbezierpath/bounds.md)
+### Querying a Path
+- [var bounds: NSRect](./bounds.md)
   The bounding box of the path.
-- [var currentPoint: NSPoint](nsbezierpath/currentpoint.md)
+- [var currentPoint: NSPoint](./currentpoint.md)
   The current point (the trailing point or ending point in the most recently added segment).
-- [var isEmpty: Bool](nsbezierpath/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the path is empty.
 
 

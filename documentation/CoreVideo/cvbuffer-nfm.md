@@ -1,82 +1,85 @@
 # CVBuffer
 
-**Framework**: Core Video
+**Framework**: Core Video  
+**Role**: API Collection
 
 An abstract base class that defines how to interact with data buffers.
 
 #### Overview
 
-A [`CVBuffer`](cvbuffer.md) serves as an abstract base class that defines how to interact with buffers of data. A buffer object can hold video, audio, or possibly other types of data. All the other buffer types within the Core Video framework, such as [`CVImageBuffer`](cvimagebuffer-q40.md) and [`CVPixelBuffer`](cvpixelbuffer-q2e.md), derive from [`CVBuffer`](cvbuffer.md). You can use the [`CVBuffer`](cvbuffer.md) programming interface on any Core Video buffer.
+A [`CVBuffer`](./cvbuffer.md) serves as an abstract base class that defines how to interact with buffers of data. A buffer object can hold video, audio, or possibly other types of data. All the other buffer types within the Core Video framework, such as [CVImageBuffer](./cvimagebuffer-q40.md) and [CVPixelBuffer](./cvpixelbuffer-q2e.md), derive from [`CVBuffer`](./cvbuffer.md). You can use the [`CVBuffer`](./cvbuffer.md) programming interface on any Core Video buffer.
 
 ## Topics
 
 ### Working with attachments
-- [func CVBufferHasAttachment(CVBuffer, CFString) -> Bool](cvbufferhasattachment(_:_:).md)
+- [func CVBufferHasAttachment(CVBuffer, CFString) -> Bool](./cvbufferhasattachment%28_,_%29.md)
   Returns a Boolean value that indicates whether a Core Video buffer contains a specified attachment.
-- [func CVBufferCopyAttachment(CVBuffer, CFString, UnsafeMutablePointer<CVAttachmentMode>?) -> CFTypeRef?](cvbuffercopyattachment(_:_:_:).md)
+- [func CVBufferCopyAttachment(CVBuffer, CFString, UnsafeMutablePointer<CVAttachmentMode>?) -> CFTypeRef?](./cvbuffercopyattachment%28_,_,_%29.md)
   Returns a copy of an attachment from a Core Video buffer.
-- [func CVBufferCopyAttachments(CVBuffer, CVAttachmentMode) -> CFDictionary?](cvbuffercopyattachments(_:_:).md)
+- [func CVBufferCopyAttachments(CVBuffer, CVAttachmentMode) -> CFDictionary?](./cvbuffercopyattachments%28_,_%29.md)
   Returns a copy of all attachments from a Core Video buffer.
-- [func CVBufferSetAttachment(CVBuffer, CFString, CFTypeRef, CVAttachmentMode)](cvbuffersetattachment(_:_:_:_:).md)
+- [func CVBufferSetAttachment(CVBuffer, CFString, CFTypeRef, CVAttachmentMode)](./cvbuffersetattachment%28_,_,_,_%29.md)
   Sets or adds an attachment to a Core Video buffer.
-- [func CVBufferSetAttachments(CVBuffer, CFDictionary, CVAttachmentMode)](cvbuffersetattachments(_:_:_:).md)
+- [func CVBufferSetAttachments(CVBuffer, CFDictionary, CVAttachmentMode)](./cvbuffersetattachments%28_,_,_%29.md)
   Sets a dictionary of attachments on a Core Video buffer.
-- [func CVBufferPropagateAttachments(CVBuffer, CVBuffer)](cvbufferpropagateattachments(_:_:).md)
+- [func CVBufferPropagateAttachments(CVBuffer, CVBuffer)](./cvbufferpropagateattachments%28_,_%29.md)
   Copies all attachments that Core Video can propagate from one buffer to another.
-- [func CVBufferRemoveAttachment(CVBuffer, CFString)](cvbufferremoveattachment(_:_:).md)
+- [func CVBufferRemoveAttachment(CVBuffer, CFString)](./cvbufferremoveattachment%28_,_%29.md)
   Removes the attachment you specify from a Core Video buffer.
-- [func CVBufferRemoveAllAttachments(CVBuffer)](cvbufferremoveallattachments(_:).md)
+- [func CVBufferRemoveAllAttachments(CVBuffer)](./cvbufferremoveallattachments%28_%29.md)
   Removes all attachments from a Core Video buffer.
-- [func CVBufferGetAttachment(CVBuffer, CFString, UnsafeMutablePointer<CVAttachmentMode>?) -> Unmanaged<CFTypeRef>?](cvbuffergetattachment(_:_:_:).md)
+- [func CVBufferGetAttachment(CVBuffer, CFString, UnsafeMutablePointer<CVAttachmentMode>?) -> Unmanaged<CFTypeRef>?](./cvbuffergetattachment%28_,_,_%29.md)
   Retrieves a specific attachment of a Core Video buffer.
-- [func CVBufferGetAttachments(CVBuffer, CVAttachmentMode) -> CFDictionary?](cvbuffergetattachments(_:_:).md)
+- [func CVBufferGetAttachments(CVBuffer, CVAttachmentMode) -> CFDictionary?](./cvbuffergetattachments%28_,_%29.md)
   Retrieves all attachments of a Core Video buffer.
 ### Protocols
-- [protocol CVBufferRepresentable](cvbufferrepresentable.md)
+- [protocol CVBufferRepresentable](./cvbufferrepresentable.md)
   CVBufferRepresentable protocol is a sealed protocol intended to be implemented by the types in CoreVideo framework. This protocol facilitates Swift types that wrap a value of CVBuffer type.
-- [protocol CVAttachmentKeyDefinitions](cvattachmentkeydefinitions.md)
+- [protocol CVAttachmentKeyDefinitions](./cvattachmentkeydefinitions.md)
   Marks a type as a collection of attachment keys for an attachment bearer.
-- [protocol CVAttachmentModePreference](cvattachmentmodepreference.md)
+- [protocol CVAttachmentModePreference](./cvattachmentmodepreference.md)
   Defines preferred mode for an attachment key.
-- [protocol CVAttachmentValueRepresentable](cvattachmentvaluerepresentable.md)
+- [protocol CVAttachmentValueRepresentable](./cvattachmentvaluerepresentable.md)
   Allows Swift types to be used as buffer attachment value.
 ### Attachment system (Swift)
-- [struct CVAttachmentAccess](cvattachmentaccess.md)
+- [struct CVAttachmentAccess](./cvattachmentaccess.md)
   Provides access to the attachments of a buffer.
-- [struct CVAttachmentContainer](cvattachmentcontainer.md)
+- [struct CVAttachmentContainer](./cvattachmentcontainer.md)
   Provides storage for buffer attachments independent of the buffer lifetime
-- [struct CVAttachmentRawValue](cvattachmentrawvalue.md)
+- [struct CVAttachmentRawValue](./cvattachmentrawvalue.md)
   A lightweight wrapper around raw attachment values.
-- [struct CVAttachmentKeyDefinition](cvattachmentkeydefinition.md)
+- [struct CVAttachmentKeyDefinition](./cvattachmentkeydefinition.md)
   Associates a raw attachment key with a value type and preferred propagation mode.
-- [struct CVAttachmentKeyDefinitionWithDefault](cvattachmentkeydefinitionwithdefault.md)
+- [struct CVAttachmentKeyDefinitionWithDefault](./cvattachmentkeydefinitionwithdefault.md)
   Associates a raw attachment key with a default value and preferred propagation mode.
-- [struct CVAttachmentCompositeKeyDefinition](cvattachmentcompositekeydefinition.md)
+- [struct CVAttachmentCompositeKeyDefinition](./cvattachmentcompositekeydefinition.md)
   Associates a set of raw attachment keys with a value type and preferred propagation mode.
-- [enum CVAttachmentModePreferenceShouldPropagate](cvattachmentmodepreferenceshouldpropagate.md)
+- [enum CVAttachmentModePreferenceShouldPropagate](./cvattachmentmodepreferenceshouldpropagate.md)
   Sets preferred mode for attachment to should propagate
-- [enum CVAttachmentModePreferenceShouldNotPropagate](cvattachmentmodepreferenceshouldnotpropagate.md)
+- [enum CVAttachmentModePreferenceShouldNotPropagate](./cvattachmentmodepreferenceshouldnotpropagate.md)
   Sets preferred mode for attachment to should not propagate
 ### Data types
-- [class CVBuffer](cvbuffer.md)
-- [enum CVAttachmentMode](cvattachmentmode.md)
+- [class CVBuffer](./cvbuffer.md)
+- [enum CVAttachmentMode](./cvattachmentmode.md)
   The propagation modes of a Core Video buffer attachment.
 ### Constants
-- [CVBuffer Attribute Keys](cvbuffer-attribute-keys.md)
+- [CVBuffer Attribute Keys](./cvbuffer-attribute-keys.md)
   The attributes associated with Core Video buffers.
-- [CVBuffer Attachment Keys](cvbuffer-attachment-keys.md)
+- [CVBuffer Attachment Keys](./cvbuffer-attachment-keys.md)
   The attachment types for a Core Video buffer.
 
 ## See Also
 
-- [Core Video Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreVideo/CVProg_Intro/CVProg_Intro.html#//apple_ref/doc/uid/TP40001536)
-- [CVImageBuffer](cvimagebuffer-q40.md)
+### Related Documentation
+- [Core Video Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreVideo/CVProg_Intro/CVProg_Intro.html#//apple_ref/doc/uid/TP40001536)
+### Data Processing
+- [CVImageBuffer](./cvimagebuffer-q40.md)
   An interface for managing different types of image data.
-- [CVPixelBuffer](cvpixelbuffer-q2e.md)
+- [CVPixelBuffer](./cvpixelbuffer-q2e.md)
   An image buffer that holds pixels in main memory.
-- [CVPixelBufferPool](cvpixelbufferpool-77o.md)
+- [CVPixelBufferPool](./cvpixelbufferpool-77o.md)
   A utility object for managing a recyclable set of pixel buffer objects.
-- [CVPixelFormatDescription](cvpixelformatdescription-42p.md)
+- [CVPixelFormatDescription](./cvpixelformatdescription-42p.md)
   An API that provides functions and types for defining custom pixel formats.
 
 

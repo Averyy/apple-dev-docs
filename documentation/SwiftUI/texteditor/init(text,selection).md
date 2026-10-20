@@ -1,7 +1,8 @@
 # init(text:selection:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a styled text editor.
 
@@ -19,9 +20,16 @@ nonisolated
 init(text: Binding<AttributedString>, selection: Binding<AttributedTextSelection>? = nil)
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+init(text: Binding<String>, selection: Binding<TextSelection?>)
+```
+
 #### Discussion
 
-Use a [`TextEditor`](texteditor.md) instance to create a view in which users can enter and edit long-form styled text.
+Use a [`TextEditor`](../texteditor.md) instance to create a view in which users can enter and edit long-form styled text.
 
 In this example the text editor is setup to edit styled text:
 
@@ -36,15 +44,15 @@ struct StyledTextEditingView: View {
 }
 ```
 
-##### Format Text By Combining Attributes and View Modifiers
+##### Format text by combining attributes and view modifiers
 
-If the AttributedString does not have a font and/or foreground color specified for a given range of text, the rich text editor will use the font and/or foreground color inherited from the environment for that range of text, just like [`init(_:)`](text/init(_:)-1a4oh.md). To control what formatting options are available in the editor, use the [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md) protocol.
+If the AttributedString does not have a font and/or foreground color specified for a given range of text, the rich text editor will use the font and/or foreground color inherited from the environment for that range of text, just like [`init(_:)`](../text/init%28_%29-1a4oh.md). To control what formatting options are available in the editor, use the [`AttributedTextFormattingDefinition`](../attributedtextformattingdefinition.md) protocol.
 
-> **Note**: Other than [`Text`](text.md), this editor does not automatically translate UIKit or AppKit formatting attributes into SwiftUI attributes. For importing RTF documents, which encode formatting using UIKit and AppKit attributes, use [`AttributedTextFormatting.Transferable`](attributedtextformatting/transferable.md) to obtain an attributed string compatible with this editor.
+> **Note**: Other than [`Text`](../text.md), this editor does not automatically translate UIKit or AppKit formatting attributes into SwiftUI attributes. For importing RTF documents, which encode formatting using UIKit and AppKit attributes, use [`AttributedTextFormatting.Transferable`](../attributedtextformatting/transferable.md) to obtain an attributed string compatible with this editor.
 
-##### Build Custom Controls Using the Selection Binding
+##### Build custom controls using the selection binding
 
-Use [`AttributedTextSelection`](attributedtextselection.md) for implementing custom controls, e.g. for applying formatting such as boldness:
+Use [`AttributedTextSelection`](../attributedtextselection.md) for implementing custom controls, e.g. for applying formatting such as boldness:
 
 ```swift
 struct StyledTextEditingView: View {
@@ -85,14 +93,14 @@ struct StyledTextEditingView: View {
 }
 ```
 
-> **Note**: When binding the `selection`, always make sure it is updated after you mutate the `text`. Otherwise, the editor resets the selection to the end of the `text`. For more details, see [`indices(in:)`](attributedtextselection/indices(in:).md).
+> **Note**: When binding the `selection`, always make sure it is updated after you mutate the `text`. Otherwise, the editor resets the selection to the end of the `text`. For more details, see [`indices(in:)`](../attributedtextselection/indices%28in%29.md).
 
-> **Note**: [`AttributedTextSelection`](attributedtextselection.md), [`attributedTextFormattingDefinition(_:)`](view/attributedtextformattingdefinition(_:)-81jn6.md), [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md), [`AttributedTextValueConstraint`](attributedtextvalueconstraint.md), [`AttributedTextFormatting`](attributedtextformatting.md)
+> **See Also**: [`AttributedTextSelection`](../attributedtextselection.md), [`attributedTextFormattingDefinition(_:)`](../view/attributedtextformattingdefinition%28_%29-81jn6.md), [`AttributedTextFormattingDefinition`](../attributedtextformattingdefinition.md), [`AttributedTextValueConstraint`](../attributedtextvalueconstraint.md), [`AttributedTextFormatting`](../attributedtextformatting.md)
 
 ## Parameters
 
-- `text`: A [`Binding`](binding.md) to the variable containing the styled text to edit.
-- `selection`: An optional [`Binding`](binding.md) to the variable containing the selection.
+- `text`: A [`Binding`](../binding.md) to the variable containing the styled text to edit.
+- `selection`: An optional [`Binding`](../binding.md) to the variable containing the selection.
 
 
 ---

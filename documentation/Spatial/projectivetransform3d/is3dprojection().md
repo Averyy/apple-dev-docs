@@ -1,7 +1,8 @@
 # is3DProjection()
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the transform is a 3D projection.
 
@@ -20,13 +21,18 @@ Returns a Boolean value that indicates whether the transform is a 3D projection.
 func is3DProjection() -> Bool
 ```
 
+```c
+static bool SPProjectiveTransform3DIs3DProjection(SPProjectiveTransform3D transform);
+```
+
 ## See Also
 
-- [func isUniform(overDimensions: Dimension3DSet) -> Bool](projectivetransform3d/isuniform(overdimensions:).md)
+### Checking characteristics
+- [func isUniform(overDimensions: Dimension3DSet) -> Bool](./isuniform%28overdimensions%29.md)
   Returns a Boolean value that indicates whether the transform scales equally over the specified dimensions.
-- [var isAffine: Bool](projectivetransform3d/isaffine.md)
+- [var isAffine: Bool](./isaffine.md)
   A Boolean value that indicates whether the transform is affine.
-- [var isInvertible: Bool](projectivetransform3d/isinvertible.md)
+- [var isInvertible: Bool](./isinvertible.md)
   Returns a Boolean value that indicates whether the transform is invertible.
 
 

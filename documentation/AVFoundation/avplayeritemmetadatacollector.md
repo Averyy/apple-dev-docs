@@ -1,7 +1,8 @@
 # AVPlayerItemMetadataCollector
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object used to capture the date range metadata defined for an HTTP Live Streaming asset.
 
@@ -20,9 +21,13 @@ An object used to capture the date range metadata defined for an HTTP Live Strea
 class AVPlayerItemMetadataCollector
 ```
 
+```objc
+@interface AVPlayerItemMetadataCollector : AVPlayerItemMediaDataCollector
+```
+
 #### Overview
 
-You can use the HLS `#EXT-X-DATERANGE` tag to define date range metadata in a media playlist. This tag is useful for defining timed metadata for interstitial regions such as advertisements, but can be used to define any timed metadata needed by your stream. To access this metadata when the stream is played using an [`AVPlayer`](avplayer.md), you create an instance of `AVPlayerItemMetadataCollector`, configure its delegate object (see [`AVPlayerItemMetadataCollectorPushDelegate`](avplayeritemmetadatacollectorpushdelegate.md)), and add it as a media data collector to the [`AVPlayerItem`](avplayeritem.md) (see example).
+You can use the HLS `#EXT-X-DATERANGE` tag to define date range metadata in a media playlist. This tag is useful for defining timed metadata for interstitial regions such as advertisements, but can be used to define any timed metadata needed by your stream. To access this metadata when the stream is played using an [`AVPlayer`](./avplayer.md), you create an instance of `AVPlayerItemMetadataCollector`, configure its delegate object (see [`AVPlayerItemMetadataCollectorPushDelegate`](./avplayeritemmetadatacollectorpushdelegate.md)), and add it as a media data collector to the [`AVPlayerItem`](./avplayeritem.md) (see example).
 
 **Swift**:
 
@@ -78,52 +83,53 @@ didCollectDateRangeMetadataGroups:(NSArray<AVDateRangeMetadataGroup *> *)metadat
 @end
 ```
 
-Creating an `AVPlayerItemMetadataCollector` as shown in the example, will capture all `#EXT-X-DATERANGE` metadata defined in your stream. If you would like to filter the output to only the metadata of interest, you can create an instance to filter by identifier and/or classifying labels using the [`init(identifiers:classifyingLabels:)`](avplayeritemmetadatacollector/init(identifiers:classifyinglabels:).md) initializer.
+Creating an `AVPlayerItemMetadataCollector` as shown in the example, will capture all `#EXT-X-DATERANGE` metadata defined in your stream. If you would like to filter the output to only the metadata of interest, you can create an instance to filter by identifier and/or classifying labels using the [`init(identifiers:classifyingLabels:)`](./avplayeritemmetadatacollector/init%28identifiers,classifyinglabels%29.md) initializer.
 
 ## Topics
 
 ### Creating a metadata collector
-- [init(identifiers: [String]?, classifyingLabels: [String]?)](avplayeritemmetadatacollector/init(identifiers:classifyinglabels:).md)
+- [init(identifiers: [String]?, classifyingLabels: [String]?)](./avplayeritemmetadatacollector/init%28identifiers,classifyinglabels%29.md)
   Creates a metadata collector to access a stream’s metadata groups matching the specified array of identifiers and classifying labels.
 ### Accessing the delegate and callback queue
-- [func setDelegate((any AVPlayerItemMetadataCollectorPushDelegate)?, queue: dispatch_queue_t?)](avplayeritemmetadatacollector/setdelegate(_:queue:).md)
+- [func setDelegate((any AVPlayerItemMetadataCollectorPushDelegate)?, queue: dispatch_queue_t?)](./avplayeritemmetadatacollector/setdelegate%28_,queue%29.md)
   Sets the delegate and a dispatch queue on which the delegate will be called.
-- [var delegate: (any AVPlayerItemMetadataCollectorPushDelegate)?](avplayeritemmetadatacollector/delegate.md)
+- [var delegate: (any AVPlayerItemMetadataCollectorPushDelegate)?](./avplayeritemmetadatacollector/delegate.md)
   Accesses the metadata collector’s delegate object.
-- [protocol AVPlayerItemMetadataCollectorPushDelegate](avplayeritemmetadatacollectorpushdelegate.md)
+- [protocol AVPlayerItemMetadataCollectorPushDelegate](./avplayeritemmetadatacollectorpushdelegate.md)
   A protocol you implement to receive metadata callbacks from a player item metadata collector.
-- [var delegateQueue: dispatch_queue_t?](avplayeritemmetadatacollector/delegatequeue.md)
+- [var delegateQueue: dispatch_queue_t?](./avplayeritemmetadatacollector/delegatequeue.md)
   The dispatch queue on which the delegate’s methods are called.
 
 ## Relationships
 
 ### Inherits From
-- [AVPlayerItemMediaDataCollector](avplayeritemmediadatacollector.md)
+- [AVPlayerItemMediaDataCollector](./avplayeritemmediadatacollector.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Presenting chapter markers](presenting-chapter-markers.md)
+### Timed metadata
+- [Presenting chapter markers](./presenting-chapter-markers.md)
   Add chapter markers to enable users to quickly navigate your content.
-- [class AVMetadataGroup](avmetadatagroup.md)
+- [class AVMetadataGroup](./avmetadatagroup.md)
   A collection of metadata items associated with a timeline segment.
-- [class AVTimedMetadataGroup](avtimedmetadatagroup.md)
+- [class AVTimedMetadataGroup](./avtimedmetadatagroup.md)
   A collection of metadata items that are valid for use during a specific time range.
-- [class AVMutableTimedMetadataGroup](avmutabletimedmetadatagroup.md)
+- [class AVMutableTimedMetadataGroup](./avmutabletimedmetadatagroup.md)
   A mutable collection of metadata items that are valid for use during a specific time range.
-- [class AVDateRangeMetadataGroup](avdaterangemetadatagroup.md)
+- [class AVDateRangeMetadataGroup](./avdaterangemetadatagroup.md)
   A collection of metadata items that are valid for use within a specific date range.
-- [class AVMutableDateRangeMetadataGroup](avmutabledaterangemetadatagroup.md)
+- [class AVMutableDateRangeMetadataGroup](./avmutabledaterangemetadatagroup.md)
   A mutable collection of metadata items that are valid for use within a specific range of dates.
-- [class AVPlayerItemMediaDataCollector](avplayeritemmediadatacollector.md)
+- [class AVPlayerItemMediaDataCollector](./avplayeritemmediadatacollector.md)
   The abstract base for media data collectors.
 
 

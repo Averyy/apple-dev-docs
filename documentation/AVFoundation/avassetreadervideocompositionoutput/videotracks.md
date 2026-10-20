@@ -1,7 +1,8 @@
 # videoTracks
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tracks from which the output reads the composited video.
 
@@ -19,13 +20,18 @@ The tracks from which the output reads the composited video.
 var videoTracks: [AVAssetTrack] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVAssetTrack *> * videoTracks;
+```
+
 #### Discussion
 
-The array contains [`AVAssetTrack`](avassettrack.md) objects owned by the target asset reader’s asset.
+The array contains [`AVAssetTrack`](../avassettrack.md) objects owned by the target asset reader’s asset.
 
 ## See Also
 
-- [var videoSettings: [String : Any]?](avassetreadervideocompositionoutput/videosettings.md)
+### Inspecting an output
+- [var videoSettings: [String : Any]?](./videosettings.md)
   The video settings that the output uses.
 
 

@@ -1,7 +1,8 @@
 # playerGroup
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A number identifying a subset of players invited to join a match.
 
@@ -20,11 +21,15 @@ A number identifying a subset of players invited to join a match.
 var playerGroup: Int { get set }
 ```
 
+```objc
+@property (assign) NSUInteger playerGroup;
+```
+
 ## Mentions
 
-- [Creating matchmaking rules for backward compatibility](creating-matchmaking-rules-for-backward-compatibility.md)
-- [Finding players using matchmaking rules](finding-players-using-matchmaking-rules.md)
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Creating matchmaking rules for backward compatibility](../creating-matchmaking-rules-for-backward-compatibility.md)
+- [Finding players using matchmaking rules](../finding-players-using-matchmaking-rules.md)
+- [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
 #### Discussion
 
@@ -32,7 +37,8 @@ Game Center only finds players whose `GKMatchRequest` objects share the same `pl
 
 ## See Also
 
-- [var playerAttributes: UInt32](gkmatchrequest/playerattributes.md)
+### Matching specific players
+- [var playerAttributes: UInt32](./playerattributes.md)
   A mask that specifies the role that the local player would like to play in the game.
 
 

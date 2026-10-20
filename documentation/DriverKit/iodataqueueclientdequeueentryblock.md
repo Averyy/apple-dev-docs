@@ -1,37 +1,39 @@
 # IODataQueueClientDequeueEntryBlock
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The handler block you use to remove data from a queue.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef void (^)(const void *, unsigned long) IODataQueueClientDequeueEntryBlock;
 ```
 
 ## See Also
 
-- [SetDataAvailableHandler](iodataqueuedispatchsource/setdataavailablehandler.md)
+### Removing Work from the Queue
+- [SetDataAvailableHandler](./iodataqueuedispatchsource/setdataavailablehandler.md)
   Sets the handler block to run when another object adds data to the queue.
-- [DataAvailable](iodataqueuedispatchsource/dataavailable.md)
+- [DataAvailable](./iodataqueuedispatchsource/dataavailable.md)
   Responds to the addition of new data to the queue.
-- [IsDataAvailable](iodataqueuedispatchsource/isdataavailable.md)
+- [IsDataAvailable](./iodataqueuedispatchsource/isdataavailable.md)
   Checks whether the data queue contains data to process.
-- [Peek](iodataqueuedispatchsource/peek.md)
+- [Peek](./iodataqueuedispatchsource/peek.md)
   Returns the next queue entry without removing it from the queue.
-- [Dequeue](iodataqueuedispatchsource/dequeue.md)
+- [Dequeue](./iodataqueuedispatchsource/dequeue.md)
   Removes the next entry from the queue.
-- [DequeueWithCoalesce](iodataqueuedispatchsource/dequeuewithcoalesce.md)
+- [DequeueWithCoalesce](./iodataqueuedispatchsource/dequeuewithcoalesce.md)
   Removes the next queue entry, but doesn’t automatically send notifications.
-- [SendDataServiced](iodataqueuedispatchsource/senddataserviced.md)
+- [SendDataServiced](./iodataqueuedispatchsource/senddataserviced.md)
   Notifies interested parties that you removed data from the queue.
 
 

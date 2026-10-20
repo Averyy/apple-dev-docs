@@ -1,7 +1,8 @@
 # value
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value to be signaled or waited for.
 

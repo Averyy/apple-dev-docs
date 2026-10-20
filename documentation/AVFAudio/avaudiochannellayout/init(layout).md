@@ -1,7 +1,8 @@
 # init(layout:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio channel layout object from an existing one.
 
@@ -20,13 +21,17 @@ Creates an audio channel layout object from an existing one.
 init(layout: UnsafePointer<AudioChannelLayout>)
 ```
 
+```objc
+- (instancetype) initWithLayout:(const AudioChannelLayout *) layout;
+```
+
 #### Return Value
 
 A new `AVAudioChannelLayout` object.
 
 #### Discussion
 
-If the audio channel layout object’s tag is [`kAudioChannelLayoutTag_UseChannelDescriptions`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_usechanneldescriptions), this initializer attempts to convert it to a more specific tag.
+If the audio channel layout object’s tag is [`kAudioChannelLayoutTag_UseChannelDescriptions`](../../CoreAudioTypes/kaudiochannellayouttag_usechanneldescriptions.md), this initializer attempts to convert it to a more specific tag.
 
 ## Parameters
 
@@ -34,9 +39,11 @@ If the audio channel layout object’s tag is [`kAudioChannelLayoutTag_UseChanne
 
 ## See Also
 
-- [var layout: UnsafePointer<AudioChannelLayout>](avaudiochannellayout/layout.md)
+### Related Documentation
+- [var layout: UnsafePointer<AudioChannelLayout>](./layout.md)
   The underlying audio channel layout.
-- [convenience init?(layoutTag: AudioChannelLayoutTag)](avaudiochannellayout/init(layouttag:).md)
+### Creating an audio channel layout
+- [convenience init?(layoutTag: AudioChannelLayoutTag)](./init%28layouttag%29.md)
   Creates an audio channel layout object from a layout tag.
 
 

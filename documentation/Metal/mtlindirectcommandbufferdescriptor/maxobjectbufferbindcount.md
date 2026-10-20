@@ -1,7 +1,8 @@
 # maxObjectBufferBindCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var maxObjectBufferBindCount: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger maxObjectBufferBindCount;
 ```
 
 

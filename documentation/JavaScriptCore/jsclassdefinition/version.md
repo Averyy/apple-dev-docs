@@ -1,7 +1,8 @@
 # version
 
 **Framework**: JavaScriptCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of the class definition structure.
 
@@ -19,21 +20,26 @@ The version of the class definition structure.
 var version: Int32
 ```
 
+```c
+int version;
+```
+
 ## See Also
 
-- [var parentClass: JSClassRef!](jsclassdefinition/parentclass.md)
+### Managing Class Information
+- [var parentClass: JSClassRef!](./parentclass.md)
   A JavaScript class to set as the class’s parent class.
-- [var className: UnsafePointer<CChar>!](jsclassdefinition/classname.md)
+- [var className: UnsafePointer<CChar>!](./classname.md)
   A null-terminated UTF-8 string that contains the class’s name.
-- [var attributes: JSClassAttributes](jsclassdefinition/attributes.md)
+- [var attributes: JSClassAttributes](./attributes.md)
   A set of class attributes to give to the class.
-- [var staticValues: UnsafePointer<JSStaticValue>!](jsclassdefinition/staticvalues.md)
+- [var staticValues: UnsafePointer<JSStaticValue>!](./staticvalues.md)
   An array that contains the class’s statically declared value properties.
-- [struct JSStaticValue](jsstaticvalue.md)
+- [struct JSStaticValue](../jsstaticvalue.md)
   A statically declared value property.
-- [var staticFunctions: UnsafePointer<JSStaticFunction>!](jsclassdefinition/staticfunctions.md)
+- [var staticFunctions: UnsafePointer<JSStaticFunction>!](./staticfunctions.md)
   An array that contains the class’s statically declared function properties.
-- [struct JSStaticFunction](jsstaticfunction.md)
+- [struct JSStaticFunction](../jsstaticfunction.md)
   A statically declared function property.
 
 

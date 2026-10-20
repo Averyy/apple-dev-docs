@@ -1,7 +1,8 @@
 # mapViewDidChangeVisibleRegion(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the map view’s visible region changes.
 
@@ -19,6 +20,10 @@ Tells the delegate when the map view’s visible region changes.
 optional func mapViewDidChangeVisibleRegion(_ mapView: MKMapView)
 ```
 
+```objc
+- (void) mapViewDidChangeVisibleRegion:(MKMapView *) mapView;
+```
+
 #### Discussion
 
 Use this method to update the map in response to intermediate changes to the region. The map view calls this method each time the value of its visible region changes.
@@ -31,9 +36,10 @@ Use this method to update the map in response to intermediate changes to the reg
 
 ## See Also
 
-- [func mapView(MKMapView, regionWillChangeAnimated: Bool)](mkmapviewdelegate/mapview(_:regionwillchangeanimated:).md)
+### Responding to map position changes
+- [func mapView(MKMapView, regionWillChangeAnimated: Bool)](./mapview%28_,regionwillchangeanimated%29.md)
   Tells the delegate when the region the map view is displaying is about to change.
-- [func mapView(MKMapView, regionDidChangeAnimated: Bool)](mkmapviewdelegate/mapview(_:regiondidchangeanimated:).md)
+- [func mapView(MKMapView, regionDidChangeAnimated: Bool)](./mapview%28_,regiondidchangeanimated%29.md)
   Tells the delegate when the region the map view is displaying changes.
 
 

@@ -1,7 +1,8 @@
 # icon
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A symbolic representation of the labeled item.
 
@@ -22,7 +23,8 @@ var icon: LabelStyleConfiguration.Icon { get }
 
 ## See Also
 
-- [LabelStyleConfiguration.Icon](labelstyleconfiguration/icon-swift.struct.md)
+### Setting the icon
+- [LabelStyleConfiguration.Icon](./icon-swift.struct.md)
   A type-erased icon view of a label.
 
 

@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 2.0+
@@ -18,13 +19,18 @@
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(charactersIn: String)](nscharacterset/init(charactersin:).md)
+### Creating a Custom Character Set
+- [init(charactersIn: String)](./init%28charactersin%29.md)
   Returns a character set containing the characters in a given string.
-- [init(range: NSRange)](nscharacterset/init(range:).md)
+- [init(range: NSRange)](./init%28range%29.md)
   Returns a character set containing characters with Unicode values in a given range.
-- [NSOpenStepUnicodeReservedBase](1560803-nsopenstepunicodereservedbase.md)
+- [NSOpenStepUnicodeReservedBase](../api-1560803-nsopenstepunicodereservedbase.md)
   Specifies lower bound for a Unicode character range reserved for Apple’s corporate use.
 
 

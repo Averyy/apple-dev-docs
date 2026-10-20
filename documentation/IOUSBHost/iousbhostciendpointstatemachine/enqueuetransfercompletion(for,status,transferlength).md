@@ -1,7 +1,8 @@
 # enqueueTransferCompletion(for:status:transferLength:)
 
 **Framework**: IOUSBHost  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,11 +14,16 @@
 func enqueueTransferCompletion(for message: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus, transferLength: Int) throws
 ```
 
+```objc
+- (BOOL) enqueueTransferCompletionForMessage:(const IOUSBHostCIMessage *) message status:(IOUSBHostCIMessageStatus) status transferLength:(NSUInteger) transferLength error:(NSError **) error;
+```
+
 ## See Also
 
-- [func inspectCommand(UnsafePointer<IOUSBHostCIMessage>) throws](iousbhostciendpointstatemachine/inspectcommand(_:).md)
-- [func processDoorbell(IOUSBHostCIDoorbell) throws](iousbhostciendpointstatemachine/processdoorbell(_:).md)
-- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](iousbhostciendpointstatemachine/respond(tocommand:status:).md)
+### Instance Methods
+- [func inspectCommand(UnsafePointer<IOUSBHostCIMessage>) throws](./inspectcommand%28_%29.md)
+- [func processDoorbell(IOUSBHostCIDoorbell) throws](./processdoorbell%28_%29.md)
+- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](./respond%28tocommand,status%29.md)
 
 
 ---

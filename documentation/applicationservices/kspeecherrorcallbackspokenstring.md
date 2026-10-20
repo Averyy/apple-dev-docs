@@ -1,7 +1,8 @@
 # kSpeechErrorCallbackSpokenString
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The text being synthesized when the error occurred.
 
@@ -12,6 +13,10 @@ The text being synthesized when the error occurred.
 
 ```swift
 let kSpeechErrorCallbackSpokenString: CFString
+```
+
+```c
+const CFStringRef kSpeechErrorCallbackSpokenString;
 ```
 
 

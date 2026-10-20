@@ -1,17 +1,24 @@
 # viewController(atRow:makeIfNecessary:)
 
 **Framework**: Notification Center  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the content view controller associated with the specified row, or a new content view controller if desired.
 
 **Availability**:
-- macOS 10.10+
+- macOS 10.10+ - Deprecated in 11.0
+
+> **Deprecated**: Use [WidgetKit](../../WidgetKit/WidgetKit.md) instead.
 
 ## Declaration
 
 ```swift
 func viewController(atRow row: Int, makeIfNecessary makeIfNecesary: Bool) -> NSViewController
+```
+
+```objc
+- (NSViewController *) viewControllerAtRow:(NSUInteger) row makeIfNecessary:(BOOL) makeIfNecesary;
 ```
 
 #### Return Value
@@ -21,13 +28,14 @@ The content view controller associated with the specified row, if one exists. Re
 ## Parameters
 
 - `row`: The row in the list.
-- `makeIfNecesary`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to create a new content view controller if none exists or [`false`](https://developer.apple.com/documentation/swift/false) to reuse an existing row.
+- `makeIfNecesary`: Specify [`true`](../../Swift/true.md) to create a new content view controller if none exists or [`false`](../../Swift/false.md) to reuse an existing row.
 
 ## See Also
 
-- [var contents: [Any]](ncwidgetlistviewcontroller/contents.md)
+### Accessing Content
+- [var contents: [Any]](./contents.md)
   An array of objects to display in the list view.
-- [func row(for: NSViewController) -> Int](ncwidgetlistviewcontroller/row(for:).md)
+- [func row(for: NSViewController) -> Int](./row%28for%29.md)
   Returns the row represented by the specified content view controller.
 
 

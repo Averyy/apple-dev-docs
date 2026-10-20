@@ -1,18 +1,21 @@
 # key
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A projection parameter structure that describes the key-related input parameters and projection.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,23 +23,28 @@ A projection parameter structure that describes the key-related input parameters
 var key: BNNSMHAProjectionParameters
 ```
 
+```c
+BNNSMHAProjectionParameters key;
+```
+
 ## See Also
 
-- [var query: BNNSMHAProjectionParameters](bnnslayerparametersmultiheadattention/query.md)
+### Instance Properties
+- [var query: BNNSMHAProjectionParameters](./query.md)
   A projection parameter structure that describes the query-related input parameters and projection.
-- [var value: BNNSMHAProjectionParameters](bnnslayerparametersmultiheadattention/value.md)
+- [var value: BNNSMHAProjectionParameters](./value.md)
   A projection parameter structure that describes the value-related input parameters and projection.
-- [var add_zero_attn: Bool](bnnslayerparametersmultiheadattention/add_zero_attn.md)
+- [var add_zero_attn: Bool](./add_zero_attn.md)
   A Boolean value that, if true, adds a row of zeroes to the projected *K* and *V* inputs to the calculation.
-- [var key_attn_bias: BNNSNDArrayDescriptor](bnnslayerparametersmultiheadattention/key_attn_bias.md)
+- [var key_attn_bias: BNNSNDArrayDescriptor](./key_attn_bias.md)
   A 2D tensor that’s added to the value as part of the attention calculation.
-- [var value_attn_bias: BNNSNDArrayDescriptor](bnnslayerparametersmultiheadattention/value_attn_bias.md)
+- [var value_attn_bias: BNNSNDArrayDescriptor](./value_attn_bias.md)
   An optional `d_value` x `num_heads` 2D tensor that’s added as part of the attention calculation.
-- [var output: BNNSMHAProjectionParameters](bnnslayerparametersmultiheadattention/output.md)
+- [var output: BNNSMHAProjectionParameters](./output.md)
   A projection parameter structure that describes the output tensor and associated projection.
-- [var dropout: Float](bnnslayerparametersmultiheadattention/dropout.md)
+- [var dropout: Float](./dropout.md)
   The seed for the dropout layer’s random number generator.
-- [var seed: UInt32](bnnslayerparametersmultiheadattention/seed.md)
+- [var seed: UInt32](./seed.md)
   A random seed for the dropout layer.
 
 

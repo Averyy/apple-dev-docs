@@ -2,6 +2,7 @@
 
 **Framework**: Apple CryptoKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Finalizes the hash function and returns the computed digest.
@@ -27,15 +28,16 @@ The computed digest of the data.
 
 #### Discussion
 
-Call this method after you provide the hash function with all the data to hash using one or more calls to the [`update(data:)`](hashfunction/update(data:).md) or [`update(bufferPointer:)`](hashfunction/update(bufferpointer:).md) method. After finalizing the hash function, discard it. To compute a new digest, create a new hash function with a call to the [`init()`](hashfunction/init().md) method.
+Call this method after you provide the hash function with all the data to hash using one or more calls to the [`update(data:)`](./update%28data%29.md) or [`update(bufferPointer:)`](./update%28bufferpointer%29.md) method. After finalizing the hash function, discard it. To compute a new digest, create a new hash function with a call to the [`init()`](./init%28%29.md) method.
 
 ## See Also
 
-- [init()](hashfunction/init.md)
+### Computing a hash iteratively
+- [init()](./init%28%29.md)
   Creates a hash function.
-- [func update<D>(data: D)](hashfunction/update(data:).md)
+- [func update<D>(data: D)](./update%28data%29.md)
   Incrementally updates the hash function with the given data.
-- [func update(bufferPointer: UnsafeRawBufferPointer)](hashfunction/update(bufferpointer:).md)
+- [func update(bufferPointer: UnsafeRawBufferPointer)](./update%28bufferpointer%29.md)
   Incrementally updates the hash function with the contents of the buffer.
 
 

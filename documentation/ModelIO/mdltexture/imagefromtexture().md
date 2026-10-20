@@ -1,7 +1,8 @@
 # imageFromTexture()
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports the texture data as a CoreGraphics image.
 
@@ -19,15 +20,20 @@ Exports the texture data as a CoreGraphics image.
 func imageFromTexture() -> Unmanaged<CGImage>?
 ```
 
+```objc
+- (CGImageRef) imageFromTexture;
+```
+
 #### Return Value
 
 A CoreGraphics image object containing the texture’s pixel data, or `nil` if the texture data cannot be represented using CoreGraphics.
 
 ## See Also
 
-- [func write(to: URL) -> Bool](mdltexture/write(to:).md)
+### Exporting Textures
+- [func write(to: URL) -> Bool](./write%28to%29.md)
   Exports the texture data to an image file at the specified URL.
-- [func write(to: URL, type: CFString) -> Bool](mdltexture/write(to:type:).md)
+- [func write(to: URL, type: CFString) -> Bool](./write%28to,type%29.md)
   Exports the texture data to an image file at the specified URL, of the specified type.
 
 

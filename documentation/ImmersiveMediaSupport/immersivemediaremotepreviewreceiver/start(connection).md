@@ -1,7 +1,8 @@
 # start(connection:)
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the necessary steps to start receiving remote Immersive video frames using the given network connection.
 
@@ -17,7 +18,7 @@ func start(connection: NWConnection) async throws
 
 #### Discussion
 
-> **Note**: This function throws if anything fails establishing the connection.
+> **Throws**: This function throws if anything fails establishing the connection.
 
 ## Parameters
 

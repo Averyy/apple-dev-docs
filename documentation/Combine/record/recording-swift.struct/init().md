@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Set up a recording in a state ready to receive output.
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [init(output: [Output], completion: Subscribers.Completion<Failure>)](record/recording-swift.struct/init(output:completion:).md)
+### Creating a recording
+- [init(output: [Output], completion: Subscribers.Completion<Failure>)](./init%28output,completion%29.md)
   Set up a complete recording with the specified output and completion.
 
 

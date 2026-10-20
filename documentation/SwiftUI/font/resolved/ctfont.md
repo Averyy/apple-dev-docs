@@ -1,7 +1,8 @@
 # ctFont
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the CTFont opaque type that represents a CoreText font object.
 

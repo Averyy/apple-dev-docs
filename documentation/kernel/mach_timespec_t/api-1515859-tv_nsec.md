@@ -1,14 +1,15 @@
 # tv_nsec
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 clock_res_t tv_nsec;
 ```
 

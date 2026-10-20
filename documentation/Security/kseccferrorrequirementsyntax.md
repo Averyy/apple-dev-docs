@@ -1,7 +1,8 @@
 # kSecCFErrorRequirementSyntax
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string containing a compilation error generated when parsing a requirement.
 
@@ -15,9 +16,13 @@ A key whose value is a string containing a compilation error generated when pars
 let kSecCFErrorRequirementSyntax: CFString
 ```
 
+```c
+extern CFStringRef const kSecCFErrorRequirementSyntax;
+```
+
 #### Discussion
 
-This key is present when a call to the [`SecRequirementCreateWithStringAndErrors(_:_:_:_:)`](secrequirementcreatewithstringanderrors(_:_:_:_:).md) function results in a compilation error during the processing of the code requirement string.
+This key is present when a call to the [`SecRequirementCreateWithStringAndErrors(_:_:_:_:)`](./secrequirementcreatewithstringanderrors%28_,_,_,_%29.md) function results in a compilation error during the processing of the code requirement string.
 
 
 ---

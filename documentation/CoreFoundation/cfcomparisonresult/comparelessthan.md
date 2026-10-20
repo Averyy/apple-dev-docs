@@ -1,18 +1,19 @@
 # CFComparisonResult.compareLessThan
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Returned by a comparison function if the first value is less than the second value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ Returned by a comparison function if the first value is less than the second val
 case compareLessThan
 ```
 
+```c
+kCFCompareLessThan
+```
+
 ## See Also
 
-- [CFComparisonResult.compareEqualTo](cfcomparisonresult/compareequalto.md)
+### Constants
+- [CFComparisonResult.compareEqualTo](./compareequalto.md)
   Returned by a comparison function if the first value is equal to the second value.
-- [CFComparisonResult.compareGreaterThan](cfcomparisonresult/comparegreaterthan.md)
+- [CFComparisonResult.compareGreaterThan](./comparegreaterthan.md)
   Returned by a comparison function if the first value is greater than the second value.
 
 

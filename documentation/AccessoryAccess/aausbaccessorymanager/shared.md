@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Accessory Access  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the shared USB accessory manager object for this process.
 
@@ -12,6 +13,10 @@ Returns the shared USB accessory manager object for this process.
 
 ```swift
 class var shared: AAUSBAccessoryManager { get }
+```
+
+```objc
+@property (class, strong, readonly) AAUSBAccessoryManager * sharedManager;
 ```
 
 #### Discussion

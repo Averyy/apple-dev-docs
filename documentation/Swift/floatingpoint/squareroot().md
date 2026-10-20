@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the square root of the value, rounded to a representable value.
@@ -38,6 +39,12 @@ let (dx, dy) = (3.0, 4.0)
 let distance = hypotenuse(dx, dy)
 // distance == 5.0
 ```
+
+## Default Implementations
+
+### FloatingPoint Implementations
+- [func squareRoot() -> Self](./squareroot%28%29-7bo35.md)
+  Returns the square root of the value, rounded to a representable value.
 
 
 ---

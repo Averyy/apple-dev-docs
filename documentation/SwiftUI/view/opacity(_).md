@@ -1,7 +1,8 @@
 # opacity(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the transparency of this view.
 
@@ -48,7 +49,7 @@ struct Opacity: View {
 }
 ```
 
-![Two overlaid rectangles, where the topmost has its opacity set to 50%,](/images/com.apple.SwiftUI/SwiftUI-View-opacity@2x.png)
+![Two overlaid rectangles, where the topmost has its opacity set to 50%,](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-opacity@2x.png)
 
 ## Parameters
 
@@ -56,7 +57,8 @@ struct Opacity: View {
 
 ## See Also
 
-- [func hidden() -> some View](view/hidden.md)
+### Hiding views
+- [func hidden() -> some View](./hidden%28%29.md)
   Hides this view unconditionally.
 
 

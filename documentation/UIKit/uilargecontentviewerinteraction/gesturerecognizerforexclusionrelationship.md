@@ -1,7 +1,8 @@
 # gestureRecognizerForExclusionRelationship
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A gesture recognizer that you can use to set up simultaneous recognition or failure relationships with other gesture recognizers.
 
@@ -17,9 +18,14 @@ A gesture recognizer that you can use to set up simultaneous recognition or fail
 var gestureRecognizerForExclusionRelationship: UIGestureRecognizer { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UIGestureRecognizer * gestureRecognizerForExclusionRelationship;
+```
+
 ## See Also
 
-- [var delegate: (any UILargeContentViewerInteractionDelegate)?](uilargecontentviewerinteraction/delegate.md)
+### Customizing large content viewer interactions
+- [var delegate: (any UILargeContentViewerInteractionDelegate)?](./delegate.md)
   An object that can fine-tune the large content viewer interactions, especially in the presence of other gesture recognizers.
 
 

@@ -1,7 +1,8 @@
 # readAttributeCountdownTime(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeCountdownTime(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeCountdownTime() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeCountdownTimeWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

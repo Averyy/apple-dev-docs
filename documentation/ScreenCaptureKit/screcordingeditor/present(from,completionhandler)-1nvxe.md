@@ -1,7 +1,8 @@
 # present(from:completionHandler:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 27.0+
@@ -9,7 +10,15 @@
 ## Declaration
 
 ```swift
+func present(from window: NSWindow, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func present(from window: NSWindow) async throws
+```
+
+```objc
+- (void) presentFromWindow:(NSWindow *) window completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion

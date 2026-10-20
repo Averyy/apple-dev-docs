@@ -1,34 +1,36 @@
 # CanRoute
 
 **Framework**: MIDIDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```c
 CanRoute
 ```
 
 ## See Also
 
-- [AdvanceScheduleTimeMuSec](mididriverkit/iousermidiproperty/advancescheduletimemusec.md)
-- [ConnectionUniqueID](mididriverkit/iousermidiproperty/connectionuniqueid.md)
-- [DeviceID](mididriverkit/iousermidiproperty/deviceid.md)
-- [DisplayName](mididriverkit/iousermidiproperty/displayname.md)
-- [DriverDeviceEditorApp](mididriverkit/iousermidiproperty/driverdeviceeditorapp.md)
-- [DriverOwner](mididriverkit/iousermidiproperty/driverowner.md)
-- [DriverVersion](mididriverkit/iousermidiproperty/driverversion.md)
-- [FactoryPatchNameFile](mididriverkit/iousermidiproperty/factorypatchnamefile.md)
-- [Image](mididriverkit/iousermidiproperty/image.md)
-- [IsBroadcast](mididriverkit/iousermidiproperty/isbroadcast.md)
-- [IsDrumMachine](mididriverkit/iousermidiproperty/isdrummachine.md)
-- [IsEffectUnit](mididriverkit/iousermidiproperty/iseffectunit.md)
-- [IsEmbeddedEntity](mididriverkit/iousermidiproperty/isembeddedentity.md)
-- [IsMixer](mididriverkit/iousermidiproperty/ismixer.md)
-- [IsSampler](mididriverkit/iousermidiproperty/issampler.md)
+### Constants
+- [AdvanceScheduleTimeMuSec](./advancescheduletimemusec.md)
+- [ConnectionUniqueID](./connectionuniqueid.md)
+- [DeviceID](./deviceid.md)
+- [DisplayName](./displayname.md)
+- [DriverDeviceEditorApp](./driverdeviceeditorapp.md)
+- [DriverOwner](./driverowner.md)
+- [DriverVersion](./driverversion.md)
+- [FactoryPatchNameFile](./factorypatchnamefile.md)
+- [Image](./image.md)
+- [IsBroadcast](./isbroadcast.md)
+- [IsDrumMachine](./isdrummachine.md)
+- [IsEffectUnit](./iseffectunit.md)
+- [IsEmbeddedEntity](./isembeddedentity.md)
+- [IsMixer](./ismixer.md)
+- [IsSampler](./issampler.md)
 
 
 ---

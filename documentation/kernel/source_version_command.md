@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct source_version_command {
     ...
 };
@@ -17,9 +17,9 @@ struct source_version_command {
 ## Topics
 
 ### Instance Properties
-- [cmd](source_version_command/1525714-cmd.md)
-- [cmdsize](source_version_command/1525658-cmdsize.md)
-- [version](source_version_command/1525621-version.md)
+- [cmd](./source_version_command/api-1525714-cmd.md)
+- [cmdsize](./source_version_command/api-1525658-cmdsize.md)
+- [version](./source_version_command/api-1525621-version.md)
 
 
 ---

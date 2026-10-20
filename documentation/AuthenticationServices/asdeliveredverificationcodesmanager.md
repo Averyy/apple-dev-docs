@@ -1,7 +1,8 @@
 # ASDeliveredVerificationCodesManager
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 This class allows interacting with one-time codes delivered to the system.
 
@@ -25,17 +26,17 @@ The codes may be delivered from many different sources, for example, email or SM
 ## Topics
 
 ### Structures
-- [ASDeliveredVerificationCodesManager.VerificationError](asdeliveredverificationcodesmanager/verificationerror.md)
+- [ASDeliveredVerificationCodesManager.VerificationError](./asdeliveredverificationcodesmanager/verificationerror.md)
 ### Initializers
-- [init()](asdeliveredverificationcodesmanager/init.md)
+- [init()](./asdeliveredverificationcodesmanager/init%28%29.md)
 ### Instance Methods
-- [func consumeOneTimeCode(ASVerificationCode) async throws](asdeliveredverificationcodesmanager/consumeonetimecode(_:).md)
+- [func consumeOneTimeCode(ASVerificationCode) async throws](./asdeliveredverificationcodesmanager/consumeonetimecode%28_%29.md)
   Mark a one-time code as “consumed” by the current process.
 - [func oneTimeCodes(preferredDuration: TimeInterval, anchor: ASPresentationAnchor) async throws -> some AsyncSequence<ASVerificationCode, any Error>
-](asdeliveredverificationcodesmanager/onetimecodes(preferredduration:anchor:)-6x2k6.md)
+](./asdeliveredverificationcodesmanager/onetimecodes%28preferredduration,anchor%29-6x2k6.md)
   Stream one-time codes received by the system.
 - [func oneTimeCodes(preferredDuration: TimeInterval, anchor: ASPresentationAnchor) async throws -> some AsyncSequence<ASVerificationCode, any Error>
-](asdeliveredverificationcodesmanager/onetimecodes(preferredduration:anchor:)-tyrg.md)
+](./asdeliveredverificationcodesmanager/onetimecodes%28preferredduration,anchor%29-tyrg.md)
   Stream one-time codes received by the system.
 
 

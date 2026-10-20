@@ -1,7 +1,8 @@
 # init(contentsOfCSVFile:columns:rows:types:options:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data frame from a CSV file.
 
@@ -22,7 +23,7 @@ init(contentsOfCSVFile url: URL, columns: [String]? = nil, rows: Range<Int>? = n
 
 #### Discussion
 
-> **Note**: A `CSVReadingError` instance.
+> **Throws**: A `CSVReadingError` instance.
 
 ## Parameters
 
@@ -34,11 +35,12 @@ init(contentsOfCSVFile url: URL, columns: [String]? = nil, rows: Range<Int>? = n
 
 ## See Also
 
-- [init(csvData: Data, columns: [String]?, rows: Range<Int>?, types: [String : CSVType], options: CSVReadingOptions) throws](dataframe/init(csvdata:columns:rows:types:options:).md)
+### Creating a Data Frame from a CSV
+- [init(csvData: Data, columns: [String]?, rows: Range<Int>?, types: [String : CSVType], options: CSVReadingOptions) throws](./init%28csvdata,columns,rows,types,options%29.md)
   Creates a data frame from CSV data.
-- [enum CSVType](csvtype.md)
+- [enum CSVType](../csvtype.md)
   Represents the value types in a CSV file.
-- [struct CSVReadingOptions](csvreadingoptions.md)
+- [struct CSVReadingOptions](../csvreadingoptions.md)
   A set of CSV file-reading options.
 
 

@@ -1,7 +1,8 @@
 # export(to:metadata:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports this transformer as a CoreML model package with user-supplied metadata.
 
@@ -18,6 +19,8 @@ Exports this transformer as a CoreML model package with user-supplied metadata.
 func export(to url: URL, metadata: ModelMetadata) throws
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar`, `Scalar` conforms to `BinaryFloatingPoint`, `Label` conforms to `Comparable`, `Label` conforms to `Decodable`, `Label` conforms to `Encodable`, and `Label` conforms to `Hashable`.
+
 ## Parameters
 
 - `url`: The location to write the model into.
@@ -25,9 +28,10 @@ func export(to url: URL, metadata: ModelMetadata) throws
 
 ## See Also
 
-- [func applied(to:eventHandler:)](timeseriesclassifier/model/applied(to:eventhandler:).md)
+### Applying and exporting
+- [func applied(to:eventHandler:)](./applied%28to,eventhandler%29.md)
   Performs a classification on a shaped array of input features.
-- [func export(to: URL) throws](timeseriesclassifier/model/export(to:).md)
+- [func export(to: URL) throws](./export%28to%29.md)
   Exports this transformer as a CoreML model package.
 
 

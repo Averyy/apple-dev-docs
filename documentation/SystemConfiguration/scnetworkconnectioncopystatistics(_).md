@@ -1,7 +1,8 @@
 # SCNetworkConnectionCopyStatistics(_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the statistics of the specified connection.
 
@@ -14,9 +15,13 @@ Returns the statistics of the specified connection.
 func SCNetworkConnectionCopyStatistics(_ connection: SCNetworkConnection) -> CFDictionary?
 ```
 
+```c
+CFDictionaryRefSCNetworkConnectionCopyStatistics(SCNetworkConnectionRef connection);
+```
+
 #### Return Value
 
-The statistics dictionary, or `NULL` if an error occurred (use the [`SCError()`](scerror().md) function to retrieve the specific error).
+The statistics dictionary, or `NULL` if an error occurred (use the [`SCError()`](./scerror%28%29.md) function to retrieve the specific error).
 
 #### Discussion
 
@@ -31,7 +36,7 @@ A statistics dictionary contains specific dictionaries with statistics for each 
 | PPP | `ErrorsIn` | The number of errors going up into the network stack for any networking protocol without the PPP headers and trailers. |
 | PPP | `ErrorsOut` | The number of errors coming out of the network stack for any networking protocol without the PPP headers and trailers. |
 
-See [`Statistics Dictionary Keys`](statistics-dictionary-keys.md) for the keys to use in the statistics dictionary.
+See [Statistics Dictionary Keys](./statistics-dictionary-keys.md) for the keys to use in the statistics dictionary.
 
 ## Parameters
 
@@ -39,17 +44,18 @@ See [`Statistics Dictionary Keys`](statistics-dictionary-keys.md) for the keys t
 
 ## See Also
 
-- [func SCNetworkConnectionGetTypeID() -> CFTypeID](scnetworkconnectiongettypeid().md)
+### Getting Connection-Status Information
+- [func SCNetworkConnectionGetTypeID() -> CFTypeID](./scnetworkconnectiongettypeid%28%29.md)
   Returns the type identifier of all `SCNetworkConnection` instances.
-- [func SCNetworkConnectionCopyUserPreferences(CFDictionary?, UnsafeMutablePointer<Unmanaged<CFString>?>, UnsafeMutablePointer<Unmanaged<CFDictionary>?>) -> Bool](scnetworkconnectioncopyuserpreferences(_:_:_:).md)
+- [func SCNetworkConnectionCopyUserPreferences(CFDictionary?, UnsafeMutablePointer<Unmanaged<CFString>?>, UnsafeMutablePointer<Unmanaged<CFDictionary>?>) -> Bool](./scnetworkconnectioncopyuserpreferences%28_,_,_%29.md)
   Provides the default service ID and a dictionary of user options for the specified connection.
-- [func SCNetworkConnectionCopyServiceID(SCNetworkConnection) -> CFString?](scnetworkconnectioncopyserviceid(_:).md)
+- [func SCNetworkConnectionCopyServiceID(SCNetworkConnection) -> CFString?](./scnetworkconnectioncopyserviceid%28_%29.md)
   Returns the service ID associated with the specified network connection.
-- [func SCNetworkConnectionGetStatus(SCNetworkConnection) -> SCNetworkConnectionStatus](scnetworkconnectiongetstatus(_:).md)
+- [func SCNetworkConnectionGetStatus(SCNetworkConnection) -> SCNetworkConnectionStatus](./scnetworkconnectiongetstatus%28_%29.md)
   Returns the status of the specified network connection.
-- [func SCNetworkConnectionCopyExtendedStatus(SCNetworkConnection) -> CFDictionary?](scnetworkconnectioncopyextendedstatus(_:).md)
+- [func SCNetworkConnectionCopyExtendedStatus(SCNetworkConnection) -> CFDictionary?](./scnetworkconnectioncopyextendedstatus%28_%29.md)
   Returns the extended status of the connection.
-- [func SCNetworkConnectionCopyUserOptions(SCNetworkConnection) -> CFDictionary?](scnetworkconnectioncopyuseroptions(_:).md)
+- [func SCNetworkConnectionCopyUserOptions(SCNetworkConnection) -> CFDictionary?](./scnetworkconnectioncopyuseroptions%28_%29.md)
   Gets the user options used to start the specified connection.
 
 

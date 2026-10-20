@@ -1,7 +1,8 @@
 # dateAddedToShare
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date and time when an originator or administrator added this participant to the share.
 
@@ -18,6 +19,10 @@ The date and time when an originator or administrator added this participant to 
 
 ```swift
 var dateAddedToShare: Date? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSDate * dateAddedToShare;
 ```
 
 #### Discussion

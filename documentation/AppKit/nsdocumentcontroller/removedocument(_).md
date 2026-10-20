@@ -1,12 +1,13 @@
 # removeDocument(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the given document from the list of open documents.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Removes the given document from the list of open documents.
 func removeDocument(_ document: NSDocument)
 ```
 
+```objc
+- (void) removeDocument:(NSDocument *) document;
+```
+
 #### Discussion
 
-A document will automatically call [`removeDocument(_:)`](nsdocumentcontroller/removedocument(_:).md) when it closes. This method is mostly provided for subclasses that want to know when documents close.
+A document will automatically call [`removeDocument(_:)`](./removedocument%28_%29.md) when it closes. This method is mostly provided for subclasses that want to know when documents close.
 
 ## Parameters
 
@@ -24,15 +29,16 @@ A document will automatically call [`removeDocument(_:)`](nsdocumentcontroller/r
 
 ## See Also
 
-- [var documents: [NSDocument]](nsdocumentcontroller/documents.md)
+### Managing Documents
+- [var documents: [NSDocument]](./documents.md)
   The document objects managed by the receiver.
-- [func addDocument(NSDocument)](nsdocumentcontroller/adddocument(_:).md)
+- [func addDocument(NSDocument)](./adddocument%28_%29.md)
   Adds the given document to the list of open documents.
-- [var currentDocument: NSDocument?](nsdocumentcontroller/currentdocument.md)
+- [var currentDocument: NSDocument?](./currentdocument.md)
   The document object associated with the main window.
-- [func document(for: NSWindow) -> NSDocument?](nsdocumentcontroller/document(for:)-a5yd.md)
+- [func document(for: NSWindow) -> NSDocument?](./document%28for%29-a5yd.md)
   Returns the document object whose window controller owns a specified window.
-- [var hasEditedDocuments: Bool](nsdocumentcontroller/hasediteddocuments.md)
+- [var hasEditedDocuments: Bool](./hasediteddocuments.md)
   A Boolean value indicating whether the receiver has any documents with unsaved changes.
 
 

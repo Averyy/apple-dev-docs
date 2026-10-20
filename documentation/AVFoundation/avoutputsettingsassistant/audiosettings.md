@@ -1,7 +1,8 @@
 # audioSettings
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An audio settings dictionary.
 
@@ -19,23 +20,28 @@ An audio settings dictionary.
 var audioSettings: [String : Any]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDictionary<NSString *,id> * audioSettings;
+```
+
 #### Discussion
 
-The value of this property may change as a result of setting a new value for the [`sourceAudioFormat`](avoutputsettingsassistant/sourceaudioformat.md) property. See [`Audio settings`](audio-settings.md) for keys and values.
+The value of this property may change as a result of setting a new value for the [`sourceAudioFormat`](./sourceaudioformat.md) property. See [Audio settings](../audio-settings.md) for keys and values.
 
 ## See Also
 
-- [var outputFileType: AVFileType](avoutputsettingsassistant/outputfiletype.md)
+### Configuring output settings
+- [var outputFileType: AVFileType](./outputfiletype.md)
   A uniform type identifier (UTI) that indicates the type of file to write.
-- [var sourceAudioFormat: CMAudioFormatDescription?](avoutputsettingsassistant/sourceaudioformat.md)
+- [var sourceAudioFormat: CMAudioFormatDescription?](./sourceaudioformat.md)
   The format of the source audio data.
-- [var videoSettings: [String : Any]?](avoutputsettingsassistant/videosettings.md)
+- [var videoSettings: [String : Any]?](./videosettings.md)
   A video settings dictionary.
-- [var sourceVideoFormat: CMVideoFormatDescription?](avoutputsettingsassistant/sourcevideoformat.md)
+- [var sourceVideoFormat: CMVideoFormatDescription?](./sourcevideoformat.md)
   The format of the source video data.
-- [var sourceVideoMinFrameDuration: CMTime](avoutputsettingsassistant/sourcevideominframeduration.md)
+- [var sourceVideoMinFrameDuration: CMTime](./sourcevideominframeduration.md)
   A time value that describes the minimum frame duration of the video data.
-- [var sourceVideoAverageFrameDuration: CMTime](avoutputsettingsassistant/sourcevideoaverageframeduration.md)
+- [var sourceVideoAverageFrameDuration: CMTime](./sourcevideoaverageframeduration.md)
   A time value that describes the average frame duration of the video data.
 
 

@@ -1,15 +1,16 @@
 # kDynamicRangeCompressionProfile_GeneralCompression
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,12 +18,17 @@
 var kDynamicRangeCompressionProfile_GeneralCompression: UInt32 { get }
 ```
 
+```c
+kDynamicRangeCompressionProfile_GeneralCompression
+```
+
 ## See Also
 
-- [var kDynamicRangeCompressionProfile_LateNight: UInt32](kdynamicrangecompressionprofile_latenight.md)
-- [var kDynamicRangeCompressionProfile_LimitedPlaybackRange: UInt32](kdynamicrangecompressionprofile_limitedplaybackrange.md)
-- [var kDynamicRangeCompressionProfile_NoisyEnvironment: UInt32](kdynamicrangecompressionprofile_noisyenvironment.md)
-- [var kDynamicRangeCompressionProfile_None: UInt32](kdynamicrangecompressionprofile_none.md)
+### Constants
+- [var kDynamicRangeCompressionProfile_LateNight: UInt32](./kdynamicrangecompressionprofile_latenight.md)
+- [var kDynamicRangeCompressionProfile_LimitedPlaybackRange: UInt32](./kdynamicrangecompressionprofile_limitedplaybackrange.md)
+- [var kDynamicRangeCompressionProfile_NoisyEnvironment: UInt32](./kdynamicrangecompressionprofile_noisyenvironment.md)
+- [var kDynamicRangeCompressionProfile_None: UInt32](./kdynamicrangecompressionprofile_none.md)
 
 
 ---

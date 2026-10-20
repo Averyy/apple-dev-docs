@@ -1,7 +1,8 @@
 # knownTimeZoneIdentifiers
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns an array of strings listing the identifier of all the time zones known to the system.
 
@@ -22,9 +23,10 @@ static var knownTimeZoneIdentifiers: [String] { get }
 
 ## See Also
 
-- [init?(secondsFromGMT: Int)](timezone/init(secondsfromgmt:).md)
+### Creating a Time Zone
+- [init?(secondsFromGMT: Int)](./init%28secondsfromgmt%29.md)
   Returns a time zone initialized with a specific number of seconds from GMT.
-- [static var abbreviationDictionary: [String : String]](timezone/abbreviationdictionary.md)
+- [static var abbreviationDictionary: [String : String]](./abbreviationdictionary.md)
   Returns the mapping of abbreviations to time zone identifiers.
 
 

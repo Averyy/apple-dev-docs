@@ -1,7 +1,8 @@
 # readingAvailable
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that determines whether the device supports NFC tag reading.
 
@@ -16,9 +17,13 @@ A Boolean value that determines whether the device supports NFC tag reading.
 class var readingAvailable: Bool { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) BOOL readingAvailable;
+```
+
 #### Discussion
 
-Before creating a reader session, always check the [`readingAvailable`](nfcreadersession-swift.class/readingavailable.md) property to determine whether the user’s device supports scanning for and detecting NFC tags.
+Before creating a reader session, always check the [`readingAvailable`](./readingavailable.md) property to determine whether the user’s device supports scanning for and detecting NFC tags.
 
 
 ---

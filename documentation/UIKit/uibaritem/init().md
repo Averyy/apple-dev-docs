@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the bar item to its default state.
 
@@ -9,7 +10,7 @@ Initializes the bar item to its default state.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ Initializes the bar item to its default state.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 An initialized bar item or `nil` if the item could not be initialized.
 
 ## See Also
 
-- [init?(coder: NSCoder)](uibaritem/init(coder:).md)
+### Creating a bar item
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a bar item from data in an unarchiver.
 
 

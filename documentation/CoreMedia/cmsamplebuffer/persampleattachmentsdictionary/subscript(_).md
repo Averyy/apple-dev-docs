@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Core Media  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 13.0+

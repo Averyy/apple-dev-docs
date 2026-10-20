@@ -1,7 +1,8 @@
 # ImageExposureAdjuster
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An image exposure adjusting transformer.
 
@@ -22,49 +23,50 @@ struct ImageExposureAdjuster
 ## Topics
 
 ### Creating an exposure adjuster
-- [init(amount: Double)](imageexposureadjuster/init(amount:).md)
+- [init(amount: Double)](./imageexposureadjuster/init%28amount%29.md)
   Creates an image exposure adjusting transformer.
 ### Getting the amount
-- [var amount: Double](imageexposureadjuster/amount.md)
+- [var amount: Double](./imageexposureadjuster/amount.md)
   The amount to adjust the exposure of the image. The larger the value, the brighter the exposure.
 ### Performing the transformation
-- [func applied(to: CIImage, eventHandler: EventHandler?) -> CIImage](imageexposureadjuster/applied(to:eventhandler:).md)
+- [func applied(to: CIImage, eventHandler: EventHandler?) -> CIImage](./imageexposureadjuster/applied%28to,eventhandler%29.md)
   Adjusts the exposure of the input image.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transformer](transformer.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Transformer](./transformer.md)
 
 ## See Also
 
-- [Augmenting images to expand your training data](augmenting-images-to-expand-your-training-data.md)
+### Image components
+- [Augmenting images to expand your training data](./augmenting-images-to-expand-your-training-data.md)
   Improve your model by using transformed versions of your training images.
-- [Creating a multi-label image classifier](creating-a-multi-label-image-classifier.md)
+- [Creating a multi-label image classifier](./creating-a-multi-label-image-classifier.md)
   Train a machine learning model to assign multiple labels to an image.
-- [struct ImageReader](imagereader.md)
+- [struct ImageReader](./imagereader.md)
   An image file reader.
-- [protocol ImageFeatureExtractor](imagefeatureextractor.md)
+- [protocol ImageFeatureExtractor](./imagefeatureextractor.md)
   A transformer that takes an image and outputs image features.
-- [struct ImageCropper](imagecropper.md)
+- [struct ImageCropper](./imagecropper.md)
   An image crop transformer.
-- [struct ImageScaler](imagescaler.md)
+- [struct ImageScaler](./imagescaler.md)
   An image scaling transformer.
-- [struct ImageFeaturePrint](imagefeatureprint.md)
+- [struct ImageFeaturePrint](./imagefeatureprint.md)
   ImageFeaturePrint image feature extractor.
-- [struct ImageBlur](imageblur.md)
+- [struct ImageBlur](./imageblur.md)
   An image blurring transformer.
-- [struct ImageColorTransformer](imagecolortransformer.md)
+- [struct ImageColorTransformer](./imagecolortransformer.md)
   An image color transformer.
-- [struct ImageFlipper](imageflipper.md)
+- [struct ImageFlipper](./imageflipper.md)
   An image flipper transformer.
-- [struct ImageRotator](imagerotator.md)
+- [struct ImageRotator](./imagerotator.md)
   An image rotating transformer.
-- [struct RandomImageNoiseGenerator](randomimagenoisegenerator.md)
+- [struct RandomImageNoiseGenerator](./randomimagenoisegenerator.md)
   A transformer that adds random noise to an image.
-- [struct MLModelImageFeatureExtractor](mlmodelimagefeatureextractor.md)
+- [struct MLModelImageFeatureExtractor](./mlmodelimagefeatureextractor.md)
   An image feature extractor provided by an MLModel.
 
 

@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an auxiliary storage object with data from the location at the URL you provide.
 
@@ -14,17 +15,22 @@ Initializes an auxiliary storage object with data from the location at the URL y
 init(url URL: URL)
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) URL;
+```
+
 ## Parameters
 
 - `URL`: The URL of the auxiliary storage on the local file system.
 
 ## See Also
 
-- [init(contentsOfURL: URL)](vzmacauxiliarystorage/init(contentsofurl:).md)
+### Creating the auxiliary storage
+- [init(contentsOfURL: URL)](./init%28contentsofurl%29.md)
   Initializes an auxiliary storage object with data from the location at the URL you provide.
-- [init(creatingStorageAt: URL, hardwareModel: VZMacHardwareModel, options: VZMacAuxiliaryStorage.InitializationOptions) throws](vzmacauxiliarystorage/init(creatingstorageat:hardwaremodel:options:).md)
+- [init(creatingStorageAt: URL, hardwareModel: VZMacHardwareModel, options: VZMacAuxiliaryStorage.InitializationOptions) throws](./init%28creatingstorageat,hardwaremodel,options%29.md)
   Creates an initialized Mac auxiliary storage instance that describes a specific hardware model at a URL you specify.
-- [VZMacAuxiliaryStorage.InitializationOptions](vzmacauxiliarystorage/initializationoptions.md)
+- [VZMacAuxiliaryStorage.InitializationOptions](./initializationoptions.md)
   Options you can set when creating new auxiliary storage.
 
 

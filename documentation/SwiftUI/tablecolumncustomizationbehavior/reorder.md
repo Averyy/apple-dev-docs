@@ -1,7 +1,8 @@
 # reorder
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A behavior that allows the column to be reordered by the user.
 
@@ -20,11 +21,12 @@ static let reorder: TableColumnCustomizationBehavior
 
 ## See Also
 
-- [static var all: TableColumnCustomizationBehavior](tablecolumncustomizationbehavior/all.md)
+### Getting the customization behavior
+- [static var all: TableColumnCustomizationBehavior](./all.md)
   All customization behaviors.
-- [static let resize: TableColumnCustomizationBehavior](tablecolumncustomizationbehavior/resize.md)
+- [static let resize: TableColumnCustomizationBehavior](./resize.md)
   A behavior that allows the column to be resized by the user.
-- [static let visibility: TableColumnCustomizationBehavior](tablecolumncustomizationbehavior/visibility.md)
+- [static let visibility: TableColumnCustomizationBehavior](./visibility.md)
   A behavior that allows the column to be hidden or revealed by the user.
 
 

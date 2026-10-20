@@ -1,7 +1,8 @@
 # makeCaptureSession()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new capture session in this media environment  or throws an error if it can not be created.
 
@@ -21,9 +22,10 @@ The media environment must be activated before the capture session can be starte
 
 ## See Also
 
-- [func activate() throws](mediaenvironment/activate.md)
+### Capturing media streams
+- [func activate() throws](./activate%28%29.md)
   Activates the media environment.
-- [func suspend() throws](mediaenvironment/suspend.md)
+- [func suspend() throws](./suspend%28%29.md)
   Suspends the media environment.
 
 

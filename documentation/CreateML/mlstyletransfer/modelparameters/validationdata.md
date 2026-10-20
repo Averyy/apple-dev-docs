@@ -1,7 +1,8 @@
 # MLStyleTransfer.ModelParameters.ValidationData
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The source of a validation dataset for a style transfer model.
 
@@ -21,21 +22,22 @@ enum ValidationData
 ## Topics
 
 ### Designating validation data
-- [MLStyleTransfer.ModelParameters.ValidationData.content(_:)](mlstyletransfer/modelparameters/validationdata/content(_:).md)
+- [MLStyleTransfer.ModelParameters.ValidationData.content(_:)](./validationdata/content%28_%29.md)
   The location of a validation image you use to validate the model.
-- [MLStyleTransfer.ModelParameters.ValidationData.none](mlstyletransfer/modelparameters/validationdata/none.md)
+- [MLStyleTransfer.ModelParameters.ValidationData.none](./validationdata/none.md)
   An empty validation dataset you use to skip model validation.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLStyleTransfer.ModelParameters.ModelAlgorithmType](mlstyletransfer/modelparameters/modelalgorithmtype.md)
+### Describing parameters
+- [MLStyleTransfer.ModelParameters.ModelAlgorithmType](./modelalgorithmtype.md)
   The style transfer training algorithm options.
 
 

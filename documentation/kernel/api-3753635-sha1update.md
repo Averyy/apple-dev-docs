@@ -1,14 +1,15 @@
 # SHA1Update
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 void SHA1Update(SHA1_CTX *, const void *, size_t);
 ```
 

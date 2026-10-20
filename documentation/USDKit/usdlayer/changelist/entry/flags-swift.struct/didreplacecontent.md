@@ -1,7 +1,8 @@
 # didReplaceContent
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the layer’s content was replaced.
 

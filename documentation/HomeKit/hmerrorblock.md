@@ -1,7 +1,8 @@
 # HMErrorBlock
 
 **Framework**: HomeKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A completion block that provides an error.
 
@@ -19,17 +20,22 @@ A completion block that provides an error.
 typealias HMErrorBlock = ((any Error)?) -> Void
 ```
 
+```c
+typedef void (^)(NSError *) HMErrorBlock;
+```
+
 ## Parameters
 
 - `error`: The error the block returns.
 
 ## See Also
 
-- [struct HMError](hmerror.md)
+### Errors
+- [struct HMError](./hmerror.md)
   An error HomeKit returns.
-- [let HMErrorDomain: String](hmerrordomain.md)
+- [let HMErrorDomain: String](./hmerrordomain.md)
   A string that identifies the HomeKit error domain.
-- [HMError.Code](hmerror/code.md)
+- [HMError.Code](./hmerror/code.md)
   Possible error values that can be returned from HomeKit APIs.
 
 

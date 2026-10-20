@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new set from a finite sequence of items.
 
@@ -19,6 +20,8 @@ Creates a new set from a finite sequence of items.
 ```swift
 init<Source>(_ sequence: Source) where Element == Source.Element, Source : Sequence
 ```
+
+Available when `Element` conforms to `Hashable`.
 
 #### Discussion
 
@@ -45,11 +48,12 @@ print(laterPrimes)
 
 ## See Also
 
-- [init()](set/init.md)
+### Creating a Set
+- [init()](./init%28%29.md)
   Creates an empty set.
-- [init(minimumCapacity: Int)](set/init(minimumcapacity:).md)
+- [init(minimumCapacity: Int)](./init%28minimumcapacity%29.md)
   Creates an empty set with preallocated space for at least the specified number of elements.
-- [init<S>(S)](set/init(_:)-9cgks.md)
+- [init<S>(S)](./init%28_%29-9cgks.md)
   Creates a new set from a finite sequence of items.
 
 

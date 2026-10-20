@@ -1,13 +1,14 @@
 # RandomAccessCollection Implementations
 
-**Framework**: Core Audio
+**Framework**: Core Audio  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var endIndex: Int](unsafemutableaudiobufferlistpointer/endindex.md)
+- [var endIndex: Int](./endindex.md)
   The “past the end” position; always identical to `count`.
-- [var startIndex: Int](unsafemutableaudiobufferlistpointer/startindex.md)
+- [var startIndex: Int](./startindex.md)
   Always zero, which is the index of the first `AudioBuffer`.
 
 

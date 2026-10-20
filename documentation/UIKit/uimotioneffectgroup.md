@@ -1,7 +1,8 @@
 # UIMotionEffectGroup
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A collection of motion effects that you want to apply to a view at the same time.
 
@@ -9,7 +10,7 @@ A collection of motion effects that you want to apply to a view at the same time
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,35 +20,40 @@ A collection of motion effects that you want to apply to a view at the same time
 class UIMotionEffectGroup
 ```
 
+```objc
+@interface UIMotionEffectGroup : UIMotionEffect
+```
+
 #### Overview
 
-This class behaves similarly to the [`CAAnimationGroup`](https://developer.apple.com/documentation/quartzcore/caanimationgroup) class in Core Animation. The key paths and values returned by each motion effect object are applied simultaneously and with the same timing. Because [`UIMotionEffectGroup`](uimotioneffectgroup.md) is a subclass of [`UIMotionEffect`](uimotioneffect.md), you can treat it like a single motion effect in your code. After setting a value for the [`motionEffects`](uimotioneffectgroup/motioneffects.md) property, add the group object to one or more of your views.
+This class behaves similarly to the [`CAAnimationGroup`](../QuartzCore/caanimationgroup.md) class in Core Animation. The key paths and values returned by each motion effect object are applied simultaneously and with the same timing. Because [`UIMotionEffectGroup`](./uimotioneffectgroup.md) is a subclass of [`UIMotionEffect`](./uimotioneffect.md), you can treat it like a single motion effect in your code. After setting a value for the [`motionEffects`](./uimotioneffectgroup/motioneffects.md) property, add the group object to one or more of your views.
 
 ## Topics
 
 ### Setting the group items
-- [var motionEffects: [UIMotionEffect]?](uimotioneffectgroup/motioneffects.md)
+- [var motionEffects: [UIMotionEffect]?](./uimotioneffectgroup/motioneffects.md)
   An array of motion effect objects to apply as a group to the view.
 
 ## Relationships
 
 ### Inherits From
-- [UIMotionEffect](uimotioneffect.md)
+- [UIMotionEffect](./uimotioneffect.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UIInterpolatingMotionEffect](uiinterpolatingmotioneffect.md)
+### View-based effects
+- [class UIInterpolatingMotionEffect](./uiinterpolatingmotioneffect.md)
   An object that maps the horizontal or vertical tilt of a device to values that you specify so that UIKit can apply those values to your views.
 
 

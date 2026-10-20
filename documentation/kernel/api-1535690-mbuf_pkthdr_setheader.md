@@ -1,18 +1,19 @@
 # mbuf_pkthdr_setheader
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 void mbuf_pkthdr_setheader(mbuf_t mbuf, void *header);
 ```
 
-#### Return_value
+#### Return Value
 
 0 upon success otherwise the errno error.
 

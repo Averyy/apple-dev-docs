@@ -1,14 +1,15 @@
 # NuDCLCallback
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*NuDCLCallback)(void *refcon, NuDCLRef dcl);
 ```
 

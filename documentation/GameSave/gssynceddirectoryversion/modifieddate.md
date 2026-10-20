@@ -1,7 +1,8 @@
 # modifiedDate
 
 **Framework**: GameSave  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date that this version was last modified.
 
@@ -16,6 +17,10 @@ The date that this version was last modified.
 
 ```swift
 var modifiedDate: Date { get }
+```
+
+```objc
+@property (readonly, nonnull) NSDate * modifiedDate;
 ```
 
 

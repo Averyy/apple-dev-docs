@@ -1,9 +1,10 @@
 # MTL4CounterHeapType.invalid
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Specifies that [`MTL4CounterHeap`](mtl4counterheap.md) entries contain invalid data.
+Specifies that [`MTL4CounterHeap`](../mtl4counterheap.md) entries contain invalid data.
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,10 @@ Specifies that [`MTL4CounterHeap`](mtl4counterheap.md) entries contain invalid d
 
 ```swift
 case invalid
+```
+
+```c
+MTL4CounterHeapTypeInvalid
 ```
 
 

@@ -1,7 +1,8 @@
 # init(frames:name:tweenMode:frameInterval:isAdditive:bindTarget:blendLayer:repeatMode:fillMode:trimStart:trimEnd:trimDuration:offset:delay:speed:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an animation with a collection of frames that represent incremental steps in the overall timeline.
 
@@ -11,7 +12,7 @@ Creates an animation with a collection of frames that represent incremental step
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -39,7 +40,8 @@ init(frames: [Value], name: String = "", tweenMode: TweenMode = .linear, frameIn
 
 ## See Also
 
-- [init(jointNames: [String], frames: [Value], name: String, tweenMode: TweenMode, frameInterval: Float, isAdditive: Bool, isScaleAnimated: Bool, isRotationAnimated: Bool, isTranslationAnimated: Bool, bindTarget: BindTarget?, blendLayer: Int32, repeatMode: AnimationRepeatMode, fillMode: AnimationFillMode, trimStart: TimeInterval?, trimEnd: TimeInterval?, trimDuration: TimeInterval?, offset: TimeInterval, delay: TimeInterval, speed: Float)](sampledanimation/init(jointnames:frames:name:tweenmode:frameinterval:isadditive:isscaleanimated:isrotationanimated:istranslationanimated:bindtarget:blendlayer:repeatmode:fillmode:trimstart:trimend:trimduration:offset:delay:speed:).md)
+### Creating an animation
+- [init(jointNames: [String], frames: [Value], name: String, tweenMode: TweenMode, frameInterval: Float, isAdditive: Bool, isScaleAnimated: Bool, isRotationAnimated: Bool, isTranslationAnimated: Bool, bindTarget: BindTarget?, blendLayer: Int32, repeatMode: AnimationRepeatMode, fillMode: AnimationFillMode, trimStart: TimeInterval?, trimEnd: TimeInterval?, trimDuration: TimeInterval?, offset: TimeInterval, delay: TimeInterval, speed: Float)](./init%28jointnames,frames,name,tweenmode,frameinterval,isadditive,isscaleanimated,isrotationanimated,istranslationanimated,bindtarget,blendlayer,repeatmode,fillmode,trimstart,trimend,trimduration,offset,delay,speed%29.md)
   Creates an animation that interpolates between two configurations of the given joints.
 
 

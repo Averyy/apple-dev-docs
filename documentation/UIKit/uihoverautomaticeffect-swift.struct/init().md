@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a system-default hover effect that automatically selects the appropriate effect based on the view to which it applies.
 

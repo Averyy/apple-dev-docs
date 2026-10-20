@@ -1,7 +1,8 @@
 # apply(_:animatingDifferences:completion:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes and executing a completion handler.
 
@@ -22,9 +23,10 @@ func apply(_ snapshot: NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemI
 
 ## See Also
 
-- [func snapshot() -> NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>](nstableviewdiffabledatasource-c5gl/snapshot.md)
+### Updating Data
+- [func snapshot() -> NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>](./snapshot%28%29.md)
   Returns a representation of the current state of the data in the table view.
-- [var defaultRowAnimation: NSTableView.AnimationOptions](nstableviewdiffabledatasource-c5gl/defaultrowanimation.md)
+- [var defaultRowAnimation: NSTableView.AnimationOptions](./defaultrowanimation.md)
   The default animation the UI uses to show differences between rows.
 
 

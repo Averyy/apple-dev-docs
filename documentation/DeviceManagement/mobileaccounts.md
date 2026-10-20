@@ -1,7 +1,8 @@
 # MobileAccounts
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures mobile accounts on the device.
 
@@ -10,7 +11,7 @@ The payload that configures mobile accounts on the device.
 
 ## Declaration
 
-```swift
+```
 object MobileAccounts
 ```
 
@@ -18,7 +19,7 @@ object MobileAccounts
 
 Specify `com.apple.MCX` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.MCX` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -69,24 +70,35 @@ Specify `com.apple.MCX` as the payload type.
 ## Properties
 
 - `cachedaccounts.askForSecureTokenAuthBypass` (boolean): If `true`, the system bypasses the secure token authorization dialog. This dialog only appears on APFS volumes.
+
+  **Default**: `false`
 - `cachedaccounts.expiry.delete.disusedSeconds` (integer): The minimum number of seconds a mobile account can exist before the system makes an automatic attempt to remove the mobile account. Set to `0` to attempt removing it at the next login or logout. Set to `-1` to never attempt removing the mobile account.
+
+  **Default**: `-1`
 - `cachedaccounts.WarnOnCreate.allowNever` (boolean): If `true`, the system allows the user to stop the prompts about mobile account creation every time the user logs in. This key is only valid if `com.apple.cachedaccounts.WarnOnCreate` is `true`.
+
+  **Default**: `false`
 - `com.apple.cachedaccounts.CreateAtLogin` (boolean): If `true`, the system creates the mobile account at login time.
+
+  **Default**: `false`
 - `com.apple.cachedaccounts.WarnOnCreate` (boolean): If `true`, the system asks the user whether to create the mobile account and it allows the user to not create it.
+
+  **Default**: `false`
 
 ## See Also
 
-- [object Accounts](accounts.md)
+### Accounts
+- [object Accounts](./accounts.md)
   The payload that configures guest accounts.
-- [object CalDAV](caldav.md)
+- [object CalDAV](./caldav.md)
   The payload that configures a Calendar account.
-- [object CardDAV](carddav.md)
+- [object CardDAV](./carddav.md)
   The payload that configures a Contacts account.
-- [object GoogleAccount](googleaccount.md)
+- [object GoogleAccount](./googleaccount.md)
   The payload that configures a Google account.
-- [object LDAP](ldap.md)
+- [object LDAP](./ldap.md)
   The payload that configures a Lightweight Directory Access Protocol (LDAP) account.
-- [object SubscribedCalendars](subscribedcalendars.md)
+- [object SubscribedCalendars](./subscribedcalendars.md)
   The payload that configures subscribed calendars.
 
 

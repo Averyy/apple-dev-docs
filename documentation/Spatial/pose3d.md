@@ -1,7 +1,8 @@
 # Pose3D
 
 **Framework**: Spatial  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains a 3D position and a 3D rotation.
 
@@ -20,135 +21,140 @@ A structure that contains a 3D position and a 3D rotation.
 struct Pose3D
 ```
 
+```c
+typedef struct { ... } SPPose3D;
+```
+
 ## Topics
 
 ### Creating a 3D pose structure
-- [init()](pose3d/init.md)
+- [init()](./pose3d/init%28%29.md)
   Creates a pose structure.
-- [init?(simd_float4x4)](pose3d/init(_:)-8njy6.md)
+- [init?(simd_float4x4)](./pose3d/init%28_%29-8njy6.md)
   Creates a pose from the specified 4 x 4 single-precision matrix.
-- [init?(simd_double4x4)](pose3d/init(_:)-9xspz.md)
+- [init?(simd_double4x4)](./pose3d/init%28_%29-9xspz.md)
   Creates a pose from the specified 4 x 4 double-precision matrix.
-- [init(forward: Vector3D, up: Vector3D)](pose3d/init(forward:up:).md)
+- [init(forward: Vector3D, up: Vector3D)](./pose3d/init%28forward,up%29.md)
   Creates a pose with the specified forward and up vectors.
-- [init(position: simd_float3, rotation: simd_quatf)](pose3d/init(position:rotation:)-1gu7k.md)
+- [init(position: simd_float3, rotation: simd_quatf)](./pose3d/init%28position,rotation%29-1gu7k.md)
   Creates a pose with the specified single-precision position vector and quaternion.
-- [init(position: Point3D, rotation: Rotation3D)](pose3d/init(position:rotation:)-5afaf.md)
+- [init(position: Point3D, rotation: Rotation3D)](./pose3d/init%28position,rotation%29-5afaf.md)
   Creates a pose with the specified Spatial position and rotation structures.
-- [init(position: Point3D, rotation: Rotation3D)](pose3d/init(position:rotation:)-5vswy.md)
+- [init(position: Point3D, rotation: Rotation3D)](./pose3d/init%28position,rotation%29-5vswy.md)
   Creates a pose with the specified single-precision position vector and quaternion.
-- [init(position: simd_double3, rotation: simd_quatd)](pose3d/init(position:rotation:)-zc2j.md)
+- [init(position: simd_double3, rotation: simd_quatd)](./pose3d/init%28position,rotation%29-zc2j.md)
   Creates a pose with the specified double-precision position vector and quaternion.
-- [init(position: Point3D, target: Point3D, up: Vector3D)](pose3d/init(position:target:up:).md)
+- [init(position: Point3D, target: Point3D, up: Vector3D)](./pose3d/init%28position,target,up%29.md)
   Returns a pose at the specified position with the rotation towards the target.
-- [init?(transform: AffineTransform3D)](pose3d/init(transform:)-2sey4.md)
+- [init?(transform: AffineTransform3D)](./pose3d/init%28transform%29-2sey4.md)
   Returns a pose with a position and rotation defined by an affine transform.
-- [init?(transform: ProjectiveTransform3D)](pose3d/init(transform:)-4go9c.md)
+- [init?(transform: ProjectiveTransform3D)](./pose3d/init%28transform%29-4go9c.md)
   Returns a pose with a position and rotation defined by a projective transform.
 ### Constants
-- [static var identity: Pose3D](pose3d/identity.md)
+- [static var identity: Pose3D](./pose3d/identity.md)
   The identity pose.
 ### Inspecting a 3D pose’s properties
-- [var matrix: simd_double4x4](pose3d/matrix.md)
+- [var matrix: simd_double4x4](./pose3d/matrix.md)
   The pose’s underlying matrix.
-- [var position: Point3D](pose3d/position.md)
+- [var position: Point3D](./pose3d/position.md)
   The pose’s position.
-- [var rotation: Rotation3D](pose3d/rotation.md)
+- [var rotation: Rotation3D](./pose3d/rotation.md)
   The pose’s rotation.
-- [var inverse: Pose3D](pose3d/inverse.md)
+- [var inverse: Pose3D](./pose3d/inverse.md)
   The pose’s inverse.
 ### Transforming a 3D pose structure
-- [func concatenating(ScaledPose3D) -> ScaledPose3D](pose3d/concatenating(_:)-4esra.md)
+- [func concatenating(ScaledPose3D) -> ScaledPose3D](./pose3d/concatenating%28_%29-4esra.md)
   Returns a pose that represents the concatenation of a scaled pose and a pose.
-- [func concatenating(Pose3D) -> Pose3D](pose3d/concatenating(_:)-6dd2s.md)
+- [func concatenating(Pose3D) -> Pose3D](./pose3d/concatenating%28_%29-6dd2s.md)
   Returns a pose that represents the concatenation of two poses.
-- [func flip(along: Axis3D)](pose3d/flip(along:).md)
+- [func flip(along: Axis3D)](./pose3d/flip%28along%29.md)
   Flips a pose along the specified axis.
-- [func flipped(along: Axis3D) -> Pose3D](pose3d/flipped(along:).md)
+- [func flipped(along: Axis3D) -> Pose3D](./pose3d/flipped%28along%29.md)
   Returns a pose that results from flipping it along the specified axis.
-- [func rotated(by: simd_quatd) -> Pose3D](pose3d/rotated(by:)-10k2a.md)
+- [func rotated(by: simd_quatd) -> Pose3D](./pose3d/rotated%28by%29-10k2a.md)
   Returns a pose that results from rotating with the specified quaternion.
-- [func rotated(by: Rotation3D) -> Pose3D](pose3d/rotated(by:)-377u.md)
+- [func rotated(by: Rotation3D) -> Pose3D](./pose3d/rotated%28by%29-377u.md)
   Returns a pose that results from applying the specified rotation.
 ### Checking characteristics
-- [var isIdentity: Bool](pose3d/isidentity.md)
+- [var isIdentity: Bool](./pose3d/isidentity.md)
   A Boolean value that indicates whether the pose is the identity pose.
 ### Comparing values
-- [func isApproximatelyEqual(to: Pose3D, tolerance: Double) -> Bool](pose3d/isapproximatelyequal(to:tolerance:).md)
+- [func isApproximatelyEqual(to: Pose3D, tolerance: Double) -> Bool](./pose3d/isapproximatelyequal%28to,tolerance%29.md)
   Returns a Boolean value that indicates whether two poses are equal within a specified tolerance.
-- [static func == (Pose3D, Pose3D) -> Bool](pose3d/==(_:_:).md)
+- [static func == (Pose3D, Pose3D) -> Bool](./pose3d/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two values are equal.
 ### Applying arithmetic operations
-- [static func * (Pose3D, Pose3D) -> Pose3D](pose3d/*(_:_:).md)
+- [static func * (Pose3D, Pose3D) -> Pose3D](./pose3d/star%28_,_%29.md)
   Returns the concatenation of two poses.
-- [static func *= (inout Pose3D, Pose3D)](pose3d/*=(_:_:).md)
+- [static func *= (inout Pose3D, Pose3D)](./pose3d/stareq%28_,_%29.md)
   Concatenates two poses and stores the result in the left-hand-side variable.
 ### Deprecated symbols
-- [init?(matrix: simd_float4x4)](pose3d/init(matrix:)-63uwf.md)
-- [init?(matrix: simd_double4x4)](pose3d/init(matrix:)-6698w.md)
+- [init?(matrix: simd_float4x4)](./pose3d/init%28matrix%29-63uwf.md)
+- [init?(matrix: simd_double4x4)](./pose3d/init%28matrix%29-6698w.md)
 ### Initializers
-- [init(Pose3DFloat)](pose3d/init(_:)-6u9lt.md)
+- [init(Pose3DFloat)](./pose3d/init%28_%29-6u9lt.md)
   Returns a double-precision pose from a single-precision pose.
 ### Default Implementations
-- [CustomReflectable Implementations](pose3d/customreflectable-implementations.md)
-- [Decodable Implementations](pose3d/decodable-implementations.md)
-- [Encodable Implementations](pose3d/encodable-implementations.md)
-- [Equatable Implementations](pose3d/equatable-implementations.md)
-- [Hashable Implementations](pose3d/hashable-implementations.md)
-- [ProjectiveTransformable3D Implementations](pose3d/projectivetransformable3d-implementations.md)
-- [Rotatable3D Implementations](pose3d/rotatable3d-implementations.md)
+- [CustomReflectable Implementations](./pose3d/customreflectable-implementations.md)
+- [Decodable Implementations](./pose3d/decodable-implementations.md)
+- [Encodable Implementations](./pose3d/encodable-implementations.md)
+- [Equatable Implementations](./pose3d/equatable-implementations.md)
+- [Hashable Implementations](./pose3d/hashable-implementations.md)
+- [ProjectiveTransformable3D Implementations](./pose3d/projectivetransformable3d-implementations.md)
+- [Rotatable3D Implementations](./pose3d/rotatable3d-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [ProjectiveTransformable3D](projectivetransformable3d.md)
-- [Rotatable3D](rotatable3d.md)
-- [Rotatable3DProtocol](rotatable3dprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SpatialTypeProtocol](spatialtypeprotocol.md)
-- [Translatable3D](translatable3d.md)
-- [Translatable3DProtocol](translatable3dprotocol.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [ProjectiveTransformable3D](./projectivetransformable3d.md)
+- [Rotatable3D](./rotatable3d.md)
+- [Rotatable3DProtocol](./rotatable3dprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SpatialTypeProtocol](./spatialtypeprotocol.md)
+- [Translatable3D](./translatable3d.md)
+- [Translatable3DProtocol](./translatable3dprotocol.md)
 
 ## See Also
 
-- [struct Point3D](point3d.md)
+### 3D primitives
+- [struct Point3D](./point3d.md)
   A point in a 3D coordinate system.
-- [struct Point3DFloat](point3dfloat.md)
+- [struct Point3DFloat](./point3dfloat.md)
   A single-precision structure that contains a point in a three-dimensional coordinate system.
-- [struct Size3D](size3d.md)
+- [struct Size3D](./size3d.md)
   A size that describes width, height, and depth in a 3D coordinate system.
-- [struct Size3DFloat](size3dfloat.md)
+- [struct Size3DFloat](./size3dfloat.md)
   A single-precision structure that contains width, height, and depth values.
-- [struct Rect3D](rect3d.md)
+- [struct Rect3D](./rect3d.md)
   A rectangle in a 3D coordinate system.
-- [struct Rect3DFloat](rect3dfloat.md)
+- [struct Rect3DFloat](./rect3dfloat.md)
   A single-precision structure that contains the location and dimensions of a 3D rectangle.
-- [struct Rotation3D](rotation3d.md)
+- [struct Rotation3D](./rotation3d.md)
   A rotation in three dimensions.
-- [struct Rotation3DFloat](rotation3dfloat.md)
+- [struct Rotation3DFloat](./rotation3dfloat.md)
   A single-precision structure that represents a rotation in three dimensions.
-- [struct RotationAxis3D](rotationaxis3d.md)
+- [struct RotationAxis3D](./rotationaxis3d.md)
   A 3D rotation axis.
-- [struct RotationAxis3DFloat](rotationaxis3dfloat.md)
+- [struct RotationAxis3DFloat](./rotationaxis3dfloat.md)
   A 3D axis.
-- [struct Pose3DFloat](pose3dfloat.md)
+- [struct Pose3DFloat](./pose3dfloat.md)
   A single-precision structure that contains a position and rotation.
-- [struct ScaledPose3D](scaledpose3d.md)
+- [struct ScaledPose3D](./scaledpose3d.md)
   A structure that contains a position, rotation, and scale.
-- [struct ScaledPose3DFloat](scaledpose3dfloat.md)
+- [struct ScaledPose3DFloat](./scaledpose3dfloat.md)
   A structure that contains a position, rotation, and scale.
-- [struct SphericalCoordinates3D](sphericalcoordinates3d.md)
+- [struct SphericalCoordinates3D](./sphericalcoordinates3d.md)
   A structure that defines spherical coordinates in radial, inclination, azimuthal order.
-- [struct SphericalCoordinates3DFloat](sphericalcoordinates3dfloat.md)
+- [struct SphericalCoordinates3DFloat](./sphericalcoordinates3dfloat.md)
   A single-precision structure that defines spherical coordinates in radial, inclination, azimuthal order.
 
 

@@ -1,20 +1,22 @@
 # kIOUSB30TimingParameterBELTDefaultNs
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30TimingParameterBELTDefaultNs
 ```
 
 ## See Also
 
-- [kIOUSB30TimingParameterBELTMinNs](tiousb30timingparameters/kiousb30timingparameterbeltminns.md)
+### Getting the Timing Parameters
+- [kIOUSB30TimingParameterBELTMinNs](./kiousb30timingparameterbeltminns.md)
 
 
 ---

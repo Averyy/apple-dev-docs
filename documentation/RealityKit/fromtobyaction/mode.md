@@ -1,9 +1,10 @@
 # mode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Determines the entities transform [`from`](fromtobyaction/from.md) and [`to`](fromtobyaction/to.md) are relative to.
+Determines the entities transform [`from`](./from.md) and [`to`](./to.md) are relative to.
 
 **Availability**:
 - iOS 18.0+
@@ -18,6 +19,8 @@ Determines the entities transform [`from`](fromtobyaction/from.md) and [`to`](fr
 ```swift
 var mode: FromToByAction<Transform>.TransformMode? { get }
 ```
+
+Available when `Value` is `Transform`.
 
 #### Discussion
 

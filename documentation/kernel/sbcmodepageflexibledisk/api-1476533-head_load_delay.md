@@ -1,14 +1,15 @@
 # HEAD_LOAD_DELAY
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 UInt8 HEAD_LOAD_DELAY;
 ```
 

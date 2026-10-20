@@ -1,7 +1,8 @@
 # NSWindow.WillBeginSheetMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,17 +16,17 @@ struct WillBeginSheetMessage
 ## Topics
 
 ### Initializers
-- [init(window: NSWindow)](nswindow/willbeginsheetmessage/init(window:).md)
+- [init(window: NSWindow)](./willbeginsheetmessage/init%28window%29.md)
 ### Instance Properties
-- [var window: NSWindow](nswindow/willbeginsheetmessage/window.md)
+- [var window: NSWindow](./willbeginsheetmessage/window.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

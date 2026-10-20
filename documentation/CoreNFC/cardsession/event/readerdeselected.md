@@ -1,7 +1,8 @@
 # CardSession.Event.readerDeselected
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session lost the RF link or the currently-selected Application Identifier (AID) became deselected.
 
@@ -18,15 +19,16 @@ case readerDeselected
 
 ## See Also
 
-- [CardSession.Event.sessionStarted](cardsession/event/sessionstarted.md)
+### Events
+- [CardSession.Event.sessionStarted](./sessionstarted.md)
   The card session successfully started.
-- [CardSession.Event.readerDetected](cardsession/event/readerdetected.md)
+- [CardSession.Event.readerDetected](./readerdetected.md)
   The session detected the RF field of an external NFC reader.
-- [case received(CardSession.APDU)](cardsession/event/received(_:).md)
+- [case received(CardSession.APDU)](./received%28_%29.md)
   The session received an Application Programming Data Unit (ADPU).
-- [CardSession.APDU](cardsession/apdu.md)
+- [CardSession.APDU](../apdu.md)
   An Application Programming Data Unit (APDU) received from the NFC card reader.
-- [case sessionInvalidated(reason: CardSession.Error)](cardsession/event/sessioninvalidated(reason:).md)
+- [case sessionInvalidated(reason: CardSession.Error)](./sessioninvalidated%28reason%29.md)
   The session became invalid.
 
 

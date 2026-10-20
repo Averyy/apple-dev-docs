@@ -1,7 +1,8 @@
 # rotationMode
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines whether objects animating along the path rotate to match the path tangent.
 
@@ -19,15 +20,20 @@ Determines whether objects animating along the path rotate to match the path tan
 var rotationMode: CAAnimationRotationMode? { get set }
 ```
 
+```objc
+@property (copy, nullable) CAAnimationRotationMode rotationMode;
+```
+
 #### Discussion
 
-The possible values for this property are described in [`Rotation Mode Values`](rotation-mode-values.md). The default value of this property is `nil`, which indicates that objects should not rotate to follow the path.
+The possible values for this property are described in [Rotation Mode Values](../rotation-mode-values.md). The default value of this property is `nil`, which indicates that objects should not rotate to follow the path.
 
 The effect of setting this property to a non-`nil` value when no path object is supplied is undefined.
 
 ## See Also
 
-- [var path: CGPath?](cakeyframeanimation/path.md)
+### Related Documentation
+- [var path: CGPath?](./path.md)
   The path for a point-based property to follow.
 
 

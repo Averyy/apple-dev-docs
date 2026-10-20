@@ -1,18 +1,19 @@
 # strict
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system makes its best effort to observe the timer’s specified leeway value, even if the value is smaller than the default leeway.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 

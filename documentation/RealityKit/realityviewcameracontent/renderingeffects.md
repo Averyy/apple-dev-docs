@@ -1,7 +1,8 @@
 # renderingEffects
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rendering options that you use to selectively enable or disable certain rendering effects.
 

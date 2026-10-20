@@ -1,7 +1,8 @@
 # init(avPlayer:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a video player component from an AV player object.
 
@@ -41,11 +42,12 @@ videoEntity.components.set(videoPlayerComponent)
 
 ## Parameters
 
-- `avPlayer`: An [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) instance.
+- `avPlayer`: An [`AVPlayer`](../../AVFoundation/avplayer.md) instance.
 
 ## See Also
 
-- [init(videoRenderer: AVSampleBufferVideoRenderer)](videoplayercomponent/init(videorenderer:).md)
+### Creating a video player component
+- [init(videoRenderer: AVSampleBufferVideoRenderer)](./init%28videorenderer%29.md)
   Creates a video player component from a sample buffer video renderer object.
 
 

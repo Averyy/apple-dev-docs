@@ -1,12 +1,13 @@
 # prepareContent()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Typically overridden by subclasses that require additional control over the creation of new objects.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Typically overridden by subclasses that require additional control over the crea
 func prepareContent()
 ```
 
+```objc
+- (void) prepareContent;
+```
+
 #### Discussion
 
-Subclasses that implement this method are responsible for creating the new content object and setting it as the receiver’s content object. This method is only called if [`automaticallyPreparesContent`](nsobjectcontroller/automaticallypreparescontent.md) has been set to [`true`](https://developer.apple.com/documentation/swift/true).
+Subclasses that implement this method are responsible for creating the new content object and setting it as the receiver’s content object. This method is only called if [`automaticallyPreparesContent`](./automaticallypreparescontent.md) has been set to [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var content: Any?](nsobjectcontroller/content.md)
+### Managing content
+- [var content: Any?](./content.md)
   The receiver’s content object.
-- [var automaticallyPreparesContent: Bool](nsobjectcontroller/automaticallypreparescontent.md)
+- [var automaticallyPreparesContent: Bool](./automaticallypreparescontent.md)
   A Boolean that shows whether the receiver automatically creates and inserts new content objects automatically when loading from a nib file.
 
 

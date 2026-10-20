@@ -1,7 +1,8 @@
 # weight
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var weight: Float { get }
+```
+
+```objc
+@property (nonatomic, readonly) float weight;
 ```
 
 

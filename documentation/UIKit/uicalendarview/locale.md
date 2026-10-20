@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locale the calendar view uses for calendar conventions.
 
@@ -17,15 +18,20 @@ The locale the calendar view uses for calendar conventions.
 var locale: Locale { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nonnull) NSLocale * locale;
+```
+
 #### Discussion
 
-Defaults to [`current`](https://developer.apple.com/documentation/foundation/nslocale/current).
+Defaults to [`current`](../../Foundation/nslocale/current.md).
 
 ## See Also
 
-- [var calendar: Calendar](uicalendarview/calendar.md)
+### Setting calendar details
+- [var calendar: Calendar](./calendar.md)
   The calendar that the calendar view illustrates.
-- [var timeZone: TimeZone?](uicalendarview/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone from the date the calendar view displays.
 
 

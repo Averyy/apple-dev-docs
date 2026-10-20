@@ -1,7 +1,8 @@
 # requestDeleteFiles(_:deleteFailed:completion:)
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes files from the camera, with the ability to catch failures and execute a completion block.
 
@@ -18,17 +19,22 @@ Deletes files from the camera, with the ability to catch failures and execute a 
 func requestDeleteFiles(_ files: [ICCameraItem], deleteFailed: @escaping ([ICDeleteError : ICCameraItem]) -> Void, completion: @escaping ([ICDeleteResult : [ICCameraItem]], (any Error)?) -> Void) -> Progress?
 ```
 
+```objc
+- (NSProgress *) requestDeleteFiles:(NSArray<ICCameraItem *> *) files deleteFailed:(void (^)(NSDictionary<NSString *,ICCameraItem *> *)) deleteFailed completion:(void (^)(NSDictionary<NSString *,NSArray<ICCameraItem *> *> *result, NSError *error)) completion;
+```
+
 ## See Also
 
-- [var isLocked: Bool](iccameradevice/islocked.md)
+### Deleting Files
+- [var isLocked: Bool](./islocked.md)
   A Boolean value indicating whether the device is locked, preventing deletion of any asset.
-- [struct ICDeleteResult](icdeleteresult.md)
+- [struct ICDeleteResult](../icdeleteresult.md)
   The result of a deletion request.
-- [struct ICDeleteError](icdeleteerror.md)
+- [struct ICDeleteError](../icdeleteerror.md)
   An error resulting from a deletion request.
-- [func requestDeleteFiles([ICCameraItem])](iccameradevice/requestdeletefiles(_:).md)
+- [func requestDeleteFiles([ICCameraItem])](./requestdeletefiles%28_%29.md)
   Deletes files from the camera.
-- [func cancelDelete()](iccameradevice/canceldelete.md)
+- [func cancelDelete()](./canceldelete%28%29.md)
   Cancels the current delete operation.
 
 

@@ -1,7 +1,8 @@
 # grantCapability(_:invalidationHandler:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Grants the specified capability to the process, calling the handler when the capability becomes invalid.
 
@@ -17,11 +18,11 @@ func grantCapability(_ capability: ProcessCapability, invalidationHandler: @esca
 
 #### Return Value
 
-A [`ProcessCapability.Grant`](processcapability/grant.md) object that represents the granted capability.
+A [`ProcessCapability.Grant`](../processcapability/grant.md) object that represents the granted capability.
 
 #### Discussion
 
-When the process no longer needs the capability, call [`invalidate()`](processcapability/grant/invalidate().md) on the returned object.
+When the process no longer needs the capability, call [`invalidate()`](../processcapability/grant/invalidate%28%29.md) on the returned object.
 
 ## Parameters
 
@@ -30,7 +31,8 @@ When the process no longer needs the capability, call [`invalidate()`](processca
 
 ## See Also
 
-- [func grantCapability(ProcessCapability) throws -> ProcessCapability.Grant](networkingprocess/grantcapability(_:).md)
+### Coordinating processes
+- [func grantCapability(ProcessCapability) throws -> ProcessCapability.Grant](./grantcapability%28_%29.md)
   Grants the specified capability to the process.
 
 

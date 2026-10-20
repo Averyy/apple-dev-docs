@@ -1,7 +1,8 @@
 # Reverb
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The reverberation RealityKit applies to spatial audio sources.
 
@@ -21,7 +22,7 @@ struct Reverb
 
 #### Overview
 
-You can configure the reverb for spatial audio sources in your RealityKit content with the [`ReverbComponent`](reverbcomponent.md).
+You can configure the reverb for spatial audio sources in your RealityKit content with the [`ReverbComponent`](./reverbcomponent.md).
 
 ```swift
 let cinema = Entity()
@@ -32,31 +33,32 @@ cinema.components.set(ReverbComponent(reverb: reverb))
 ## Topics
 
 ### Creating a reverb
-- [static func simulated(mesh: ReverbMeshResource, materials: [Audio.Material]) -> Reverb](reverb/simulated(mesh:materials:).md)
+- [static func simulated(mesh: ReverbMeshResource, materials: [Audio.Material]) -> Reverb](./reverb/simulated%28mesh,materials%29.md)
   A reverb that is simulated from a reverb mesh and materials.
 ### Structures
-- [Reverb.Preset](reverb/preset.md)
+- [Reverb.Preset](./reverb/preset.md)
   Reverbs defined by a preset environment.
 ### Type Properties
-- [static let anechoic: Reverb](reverb/anechoic.md)
+- [static let anechoic: Reverb](./reverb/anechoic.md)
   A reverb instance that applies no reverberation to spatial audio sources.
 ### Type Methods
-- [static func preset(Reverb.Preset) -> Reverb](reverb/preset(_:).md)
+- [static func preset(Reverb.Preset) -> Reverb](./reverb/preset%28_%29.md)
   Returns a reverb instance that you can set on a reverb component.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Reverb.Preset](reverb/preset.md)
+### Reverb
+- [Reverb.Preset](./reverb/preset.md)
   Reverbs defined by a preset environment.
-- [struct ReverbComponent](reverbcomponent.md)
+- [struct ReverbComponent](./reverbcomponent.md)
   A component that defines the reverberation of spatial audio sources.
 
 

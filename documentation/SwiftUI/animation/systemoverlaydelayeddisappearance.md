@@ -1,7 +1,8 @@
 # systemOverlayDelayedDisappearance
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Animation used when system overlays disappear, with a delay equal to `systemOverlayDisappearanceDelay`.
 

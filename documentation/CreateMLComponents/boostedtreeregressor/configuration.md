@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Boosted tree configuration.
 
@@ -22,9 +23,10 @@ var configuration: BoostedTreeConfiguration { get set }
 
 ## See Also
 
-- [var annotationColumnID: ColumnID<Annotation>](boostedtreeregressor/annotationcolumnid.md)
+### Getting the properties
+- [var annotationColumnID: ColumnID<Annotation>](./annotationcolumnid.md)
   The annotation column identifier.
-- [var featureColumnNames: [String]](boostedtreeregressor/featurecolumnnames.md)
+- [var featureColumnNames: [String]](./featurecolumnnames.md)
   The names of the columns containing feature values.
 
 

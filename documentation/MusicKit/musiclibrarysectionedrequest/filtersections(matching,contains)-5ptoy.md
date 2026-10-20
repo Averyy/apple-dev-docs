@@ -1,7 +1,8 @@
 # filterSections(matching:contains:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Filters sections by a given property that contains a specific string.
 

@@ -1,7 +1,8 @@
 # usingRate(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 New object with updated rate.
 
@@ -11,7 +12,7 @@ New object with updated rate.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,11 +22,12 @@ func usingRate(_ rate: MeshBuffers.Rate) -> MeshBuffer<Element>
 
 ## See Also
 
-- [func forEach((Element, Element) throws -> Void) rethrows](meshbuffer/foreach(_:)-53vhs.md)
+### Iterating the elements of a buffer
+- [func forEach((Element, Element) throws -> Void) rethrows](./foreach%28_%29-53vhs.md)
   Iterate over pairs of elements.
-- [func forEach((Element, Element, Element) throws -> Void) rethrows](meshbuffer/foreach(_:)-7o3tb.md)
+- [func forEach((Element, Element, Element) throws -> Void) rethrows](./foreach%28_%29-7o3tb.md)
   Iterate over three elements per step.
-- [func forEach((Element, Element, Element, Element) throws -> Void) rethrows](meshbuffer/foreach(_:)-xhri.md)
+- [func forEach((Element, Element, Element, Element) throws -> Void) rethrows](./foreach%28_%29-xhri.md)
   Iterate over four elements per step.
 
 

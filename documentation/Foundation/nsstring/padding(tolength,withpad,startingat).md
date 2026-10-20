@@ -1,7 +1,8 @@
 # padding(toLength:withPad:startingAt:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new string formed from the receiver by either removing characters from the end, or by appending as many occurrences as necessary of a given pad string.
 
@@ -18,6 +19,10 @@ Returns a new string formed from the receiver by either removing characters from
 
 ```swift
 func padding(toLength newLength: Int, withPad padString: String, startingAt padIndex: Int) -> String
+```
+
+```objc
+- (NSString *) stringByPaddingToLength:(NSUInteger) newLength withString:(NSString *) padString startingAtIndex:(NSUInteger) padIndex;
 ```
 
 #### Return Value
@@ -48,8 +53,9 @@ Here are some examples of usage:
 
 ## See Also
 
-- [func appendingFormat(NSString, any CVarArg...) -> NSString](nsstring/appendingformat(_:_:).md)
-- [func appending(String) -> String](nsstring/appending(_:).md)
+### Combining Strings
+- [func appendingFormat(NSString, any CVarArg...) -> NSString](./appendingformat%28_,_%29.md)
+- [func appending(String) -> String](./appending%28_%29.md)
   Returns a new string made by appending a given string to the receiver.
 
 

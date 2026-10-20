@@ -1,7 +1,8 @@
 # prefersCompactControlSizeMetrics
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 When this property is `YES`, any `NSControl`s in the view or its descendants will be sized with compact metrics compatible with macOS 15.0 and earlier. Defaults to `NO`.
 
@@ -12,6 +13,10 @@ When this property is `YES`, any `NSControl`s in the view or its descendants wil
 
 ```swift
 var prefersCompactControlSizeMetrics: Bool { get set }
+```
+
+```objc
+@property BOOL prefersCompactControlSizeMetrics;
 ```
 
 

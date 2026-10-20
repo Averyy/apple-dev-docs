@@ -1,7 +1,8 @@
 # accessibilityFrame
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame of the accessibility element, in screen coordinates.
 
@@ -9,7 +10,7 @@ The frame of the accessibility element, in screen coordinates.
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,25 +19,31 @@ The frame of the accessibility element, in screen coordinates.
 var accessibilityFrame: CGRect { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGRect accessibilityFrame;
+```
+
 #### Discussion
 
 When you create an accessibility element to represent an element in your application, you must set this property to the `CGRect` structure that specifies the object’s screen location and size. (Objects that inherit from `UIView` include this information by default.)
 
-Assigning a new value to this property changes the value of the [`accessibilityFrameInContainerSpace`](uiaccessibilityelement/accessibilityframeincontainerspace.md) property to [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull).
+Assigning a new value to this property changes the value of the [`accessibilityFrameInContainerSpace`](./accessibilityframeincontainerspace.md) property to [`CGRectNull`](../../CoreGraphics/cgrectnull.md).
 
 ## See Also
 
-- [static func convertToScreenCoordinates(CGRect, in: UIView) -> CGRect](uiaccessibility/converttoscreencoordinates(_:in:)-9ziiu.md)
+### Related Documentation
+- [static func convertToScreenCoordinates(CGRect, in: UIView) -> CGRect](../uiaccessibility/converttoscreencoordinates%28_,in%29-9ziiu.md)
   Converts the specified rectangle from view coordinates to screen coordinates.
-- [var accessibilityLabel: String?](uiaccessibilityelement/accessibilitylabel.md)
+### Accessing the attributes of an accessibility element
+- [var accessibilityLabel: String?](./accessibilitylabel.md)
   A string that succinctly identifies the accessibility element.
-- [var accessibilityHint: String?](uiaccessibilityelement/accessibilityhint.md)
+- [var accessibilityHint: String?](./accessibilityhint.md)
   A string that briefly describes the result of performing an action on the accessibility element.
-- [var accessibilityValue: String?](uiaccessibilityelement/accessibilityvalue.md)
+- [var accessibilityValue: String?](./accessibilityvalue.md)
   A string that represents the current value of the accessibility element.
-- [var accessibilityFrameInContainerSpace: CGRect](uiaccessibilityelement/accessibilityframeincontainerspace.md)
+- [var accessibilityFrameInContainerSpace: CGRect](./accessibilityframeincontainerspace.md)
   The frame of the accessibility element, in the coordinate space of its container view.
-- [var accessibilityTraits: UIAccessibilityTraits](uiaccessibilityelement/accessibilitytraits.md)
+- [var accessibilityTraits: UIAccessibilityTraits](./accessibilitytraits.md)
   The combination of traits that best characterize the accessibility element.
 
 

@@ -1,7 +1,8 @@
 # compare(_:_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides the relative ordering of two elements.
 

@@ -1,7 +1,8 @@
 # webpageURL
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL specified when initializing the receiver.
 
@@ -14,15 +15,20 @@ The URL specified when initializing the receiver.
 var webpageURL: URL { get }
 ```
 
+```objc
+@property (readonly) NSURL * webpageURL;
+```
+
 #### Discussion
 
 This property returns the URL passed when initializing the receiver. This property is read-only.
 
 ## See Also
 
-- [var applicationURL: URL](sfuniversallink/applicationurl.md)
+### Configuring Universal Links
+- [var applicationURL: URL](./applicationurl.md)
   The URL to the app that can open this universal link.
-- [var isEnabled: Bool](sfuniversallink/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A flag that indicates whether the universal link is enabled.
 
 

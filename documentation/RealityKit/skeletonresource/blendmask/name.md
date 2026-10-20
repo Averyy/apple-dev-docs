@@ -1,7 +1,8 @@
 # name
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the blend mask. Must be unique within the skeleton. Used to identify and reference specific masks within animation systems.
 

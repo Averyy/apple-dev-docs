@@ -1,7 +1,8 @@
 # pattern(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Enforces that the string follows the pattern.
 
@@ -18,6 +19,8 @@ Enforces that the string follows the pattern.
 ```swift
 static func pattern<Output>(_ regex: Regex<Output>) -> GenerationGuide<String>
 ```
+
+Available when `Value` is `String`.
 
 
 ---

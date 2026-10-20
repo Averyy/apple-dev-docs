@@ -1,7 +1,8 @@
 # retire(_:cacheDelay:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 optional func retire(_ heap: any MTLHeap, cacheDelay seconds: Double)
+```
+
+```objc
+- (void) retireHeap:(id<MTLHeap>) heap cacheDelay:(double) seconds;
 ```
 
 

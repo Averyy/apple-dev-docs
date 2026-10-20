@@ -1,7 +1,8 @@
 # SubviewsCollectionSlice
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A slice of a SubviewsCollection.
 
@@ -23,25 +24,26 @@ struct SubviewsCollectionSlice
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
-- [View](view.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [Sequence](../Swift/sequence.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct Subview](subview.md)
+### Accessing a container’s subviews
+- [struct Subview](./subview.md)
   An opaque value representing a subview of another view.
-- [struct SubviewsCollection](subviewscollection.md)
+- [struct SubviewsCollection](./subviewscollection.md)
   An opaque collection representing the subviews of view.
-- [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](view/containervalue(_:_:).md)
+- [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](./view/containervalue%28_,_%29.md)
   Sets a particular container value of a view.
-- [struct ContainerValues](containervalues.md)
+- [struct ContainerValues](./containervalues.md)
   A collection of container values associated with a given view.
-- [protocol ContainerValueKey](containervaluekey.md)
+- [protocol ContainerValueKey](./containervaluekey.md)
   A key for accessing container values.
 
 

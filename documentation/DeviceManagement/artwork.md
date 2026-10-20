@@ -1,7 +1,8 @@
 # Artwork
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents artwork.
 
@@ -10,14 +11,14 @@ An object that represents artwork.
 
 ## Declaration
 
-```swift
+```
 object Artwork
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Artwork.Gradient](artwork/gradient-data.dictionary.md)
+- [object Artwork.Gradient](./artwork/gradient-data.dictionary.md)
   An object that represents the properties of a color gradient for an artwork object.
 
 ## Properties
@@ -38,13 +39,14 @@ object Artwork
 
 ## See Also
 
-- [object DescriptionAttribute](descriptionattribute.md)
+### Getting common type information
+- [object DescriptionAttribute](./descriptionattribute.md)
   An object that represents a description attribute.
-- [object Genres](genres.md)
+- [object Genres](./genres.md)
   A resource object that represents a music genre.
-- [object Apps](apps.md)
+- [object Apps](./apps.md)
   A resource object that represents an app.
-- [object Books](books.md)
+- [object Books](./books.md)
   A resource object that represents a book.
 
 

@@ -1,7 +1,8 @@
 # union(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a rectangle that represents the union of two rectangles.
 
@@ -20,6 +21,10 @@ Returns a rectangle that represents the union of two rectangles.
 func union(_ rect2: MKMapRect) -> MKMapRect
 ```
 
+```c
+extern MKMapRect MKMapRectUnion(MKMapRect rect1, MKMapRect rect2);
+```
+
 #### Return Value
 
 A rectangle with an area that encompasses the two rectangles and the space between them.
@@ -34,13 +39,14 @@ If either rectangle is `null`, this method returns the other rectangle. This met
 
 ## See Also
 
-- [func intersection(MKMapRect) -> MKMapRect](mkmaprect/intersection(_:).md)
+### Modifying the rectangle
+- [func intersection(MKMapRect) -> MKMapRect](./intersection%28_%29.md)
   Returns the rectangle that represents the intersection of two rectangles.
-- [func insetBy(dx: Double, dy: Double) -> MKMapRect](mkmaprect/insetby(dx:dy:).md)
+- [func insetBy(dx: Double, dy: Double) -> MKMapRect](./insetby%28dx,dy%29.md)
   Returns the specified rectangle with an inset by the specified amounts.
-- [func offsetBy(dx: Double, dy: Double) -> MKMapRect](mkmaprect/offsetby(dx:dy:).md)
+- [func offsetBy(dx: Double, dy: Double) -> MKMapRect](./offsetby%28dx,dy%29.md)
   Returns a rectangle with an origin point that shifts by the specified amount.
-- [func MKMapRectDivide(MKMapRect, UnsafeMutablePointer<MKMapRect>, UnsafeMutablePointer<MKMapRect>, Double, CGRectEdge)](mkmaprectdivide(_:_:_:_:_:).md)
+- [func MKMapRectDivide(MKMapRect, UnsafeMutablePointer<MKMapRect>, UnsafeMutablePointer<MKMapRect>, Double, CGRectEdge)](../mkmaprectdivide%28_,_,_,_,_%29.md)
   Divides the specified rectangle into two smaller rectangles.
 
 

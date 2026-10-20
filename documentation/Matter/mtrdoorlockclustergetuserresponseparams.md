@@ -1,7 +1,8 @@
 # MTRDoorLockClusterGetUserResponseParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,36 +19,40 @@
 class MTRDoorLockClusterGetUserResponseParams
 ```
 
+```objc
+@interface MTRDoorLockClusterGetUserResponseParams : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(responseValue: [String : Any]) throws](mtrdoorlockclustergetuserresponseparams/init(responsevalue:).md)
+- [init(responseValue: [String : Any]) throws](./mtrdoorlockclustergetuserresponseparams/init%28responsevalue%29.md)
 ### Instance Properties
-- [var creatorFabricIndex: NSNumber?](mtrdoorlockclustergetuserresponseparams/creatorfabricindex.md)
-- [var credentialRule: NSNumber?](mtrdoorlockclustergetuserresponseparams/credentialrule.md)
-- [var credentials: [Any]?](mtrdoorlockclustergetuserresponseparams/credentials.md)
-- [var lastModifiedFabricIndex: NSNumber?](mtrdoorlockclustergetuserresponseparams/lastmodifiedfabricindex.md)
-- [var nextUserIndex: NSNumber?](mtrdoorlockclustergetuserresponseparams/nextuserindex.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrdoorlockclustergetuserresponseparams/timedinvoketimeoutms.md)
-- [var userIndex: NSNumber](mtrdoorlockclustergetuserresponseparams/userindex.md)
-- [var userName: String?](mtrdoorlockclustergetuserresponseparams/username.md)
-- [var userStatus: NSNumber?](mtrdoorlockclustergetuserresponseparams/userstatus.md)
-- [var userType: NSNumber?](mtrdoorlockclustergetuserresponseparams/usertype.md)
-- [var userUniqueID: NSNumber?](mtrdoorlockclustergetuserresponseparams/useruniqueid-761ye.md)
-- [var userUniqueId: NSNumber?](mtrdoorlockclustergetuserresponseparams/useruniqueid-761xi.md)
+- [var creatorFabricIndex: NSNumber?](./mtrdoorlockclustergetuserresponseparams/creatorfabricindex.md)
+- [var credentialRule: NSNumber?](./mtrdoorlockclustergetuserresponseparams/credentialrule.md)
+- [var credentials: [Any]?](./mtrdoorlockclustergetuserresponseparams/credentials.md)
+- [var lastModifiedFabricIndex: NSNumber?](./mtrdoorlockclustergetuserresponseparams/lastmodifiedfabricindex.md)
+- [var nextUserIndex: NSNumber?](./mtrdoorlockclustergetuserresponseparams/nextuserindex.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrdoorlockclustergetuserresponseparams/timedinvoketimeoutms.md)
+- [var userIndex: NSNumber](./mtrdoorlockclustergetuserresponseparams/userindex.md)
+- [var userName: String?](./mtrdoorlockclustergetuserresponseparams/username.md)
+- [var userStatus: NSNumber?](./mtrdoorlockclustergetuserresponseparams/userstatus.md)
+- [var userType: NSNumber?](./mtrdoorlockclustergetuserresponseparams/usertype.md)
+- [var userUniqueID: NSNumber?](./mtrdoorlockclustergetuserresponseparams/useruniqueid-761ye.md)
+- [var userUniqueId: NSNumber?](./mtrdoorlockclustergetuserresponseparams/useruniqueid-761xi.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

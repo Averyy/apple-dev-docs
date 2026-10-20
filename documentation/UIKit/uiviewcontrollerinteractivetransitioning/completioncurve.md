@@ -1,7 +1,8 @@
 # completionCurve
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Called when the system needs the animation completion curve for an interactive view controller transition.
 
@@ -9,7 +10,7 @@ Called when the system needs the animation completion curve for an interactive v
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ Called when the system needs the animation completion curve for an interactive v
 optional var completionCurve: UIView.AnimationCurve { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIViewAnimationCurve completionCurve;
+```
+
 #### Return Value
 
-Default value is [`UIView.AnimationCurve.easeInOut`](uiview/animationcurve/easeinout.md), with other possible values described in the [`UIView.AnimationCurve`](uiview/animationcurve.md) type definition.
+Default value is [`UIView.AnimationCurve.easeInOut`](../uiview/animationcurve/easeinout.md), with other possible values described in the [`UIView.AnimationCurve`](../uiview/animationcurve.md) type definition.
 
 ## See Also
 
-- [var completionSpeed: CGFloat](uiviewcontrollerinteractivetransitioning/completionspeed.md)
+### Providing a transition’s completion characteristics
+- [var completionSpeed: CGFloat](./completionspeed.md)
   Called when the system needs the speed at which to complete an interactive transition, after the interactive portion is finished.
 
 

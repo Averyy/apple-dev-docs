@@ -1,7 +1,8 @@
 # errSecInvalidValue
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid value was detected.
 
@@ -18,6 +19,10 @@ An invalid value was detected.
 
 ```swift
 var errSecInvalidValue: OSStatus { get }
+```
+
+```c
+errSecInvalidValue
 ```
 
 

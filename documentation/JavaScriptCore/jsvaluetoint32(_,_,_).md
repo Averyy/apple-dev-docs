@@ -1,7 +1,8 @@
 # JSValueToInt32(_:_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func JSValueToInt32(_ ctx: JSContextRef, _ value: JSValueRef, _ exception: UnsafeMutablePointer<JSValueRef?>?) -> Int32
+```
+
+```c
+int32_t JSValueToInt32(JSContextRef ctx, JSValueRef value, JSValueRef*exception);
 ```
 
 #### Return Value

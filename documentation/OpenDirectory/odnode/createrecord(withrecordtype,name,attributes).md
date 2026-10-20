@@ -1,18 +1,23 @@
 # createRecord(withRecordType:name:attributes:)
 
 **Framework**: Open Directory  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a record in a specified node with specified properties.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.6+
 
 ## Declaration
 
 ```swift
 func createRecord(withRecordType inRecordType: String!, name inRecordName: String!, attributes inAttributes: [AnyHashable : Any]! = [:]) throws -> ODRecord
+```
+
+```objc
+- (ODRecord *) createRecordWithRecordType:(ODRecordType) inRecordType name:(NSString *) inRecordName attributes:(NSDictionary *) inAttributes error:(NSError **) outError;
 ```
 
 #### Return Value
@@ -23,7 +28,9 @@ The created record.
 
 The record is automatically assigned a UUID. This UUID can be overridden if one is specified in `inAttributes`.
 
-> **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -33,11 +40,12 @@ The record is automatically assigned a UUID. This UUID can be overridden if one 
 
 ## See Also
 
-- [func record(withRecordType: String!, name: String!, attributes: Any!) throws -> ODRecord](odnode/record(withrecordtype:name:attributes:).md)
+### Managing Node Records
+- [func record(withRecordType: String!, name: String!, attributes: Any!) throws -> ODRecord](./record%28withrecordtype,name,attributes%29.md)
   Returns a record from the node with a specified type and name.
-- [func supportedAttributes(forRecordType: String!) throws -> [Any]](odnode/supportedattributes(forrecordtype:).md)
+- [func supportedAttributes(forRecordType: String!) throws -> [Any]](./supportedattributes%28forrecordtype%29.md)
   Returns an array of attribute types supported by the node’s records.
-- [func supportedRecordTypes() throws -> [Any]](odnode/supportedrecordtypes.md)
+- [func supportedRecordTypes() throws -> [Any]](./supportedrecordtypes%28%29.md)
   Returns an array of the record types supported by the node.
 
 

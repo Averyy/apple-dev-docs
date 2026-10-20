@@ -1,7 +1,8 @@
 # AVAudioUnitTypeGenerator
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An audio unit type that represents a generator.
 
@@ -19,25 +20,30 @@ An audio unit type that represents a generator.
 let AVAudioUnitTypeGenerator: String
 ```
 
+```c
+extern NSString * const AVAudioUnitTypeGenerator;
+```
+
 ## See Also
 
-- [let AVAudioUnitTypeOutput: String](avaudiounittypeoutput.md)
+### Identifying component types
+- [let AVAudioUnitTypeOutput: String](./avaudiounittypeoutput.md)
   An audio unit type that represents an output.
-- [let AVAudioUnitTypeMusicDevice: String](avaudiounittypemusicdevice.md)
+- [let AVAudioUnitTypeMusicDevice: String](./avaudiounittypemusicdevice.md)
   An audio unit type that represents a music device.
-- [let AVAudioUnitTypeMusicEffect: String](avaudiounittypemusiceffect.md)
+- [let AVAudioUnitTypeMusicEffect: String](./avaudiounittypemusiceffect.md)
   An audio unit type that represents a music effect.
-- [let AVAudioUnitTypeFormatConverter: String](avaudiounittypeformatconverter.md)
+- [let AVAudioUnitTypeFormatConverter: String](./avaudiounittypeformatconverter.md)
   An audio unit type that represents a format converter.
-- [let AVAudioUnitTypeEffect: String](avaudiounittypeeffect.md)
+- [let AVAudioUnitTypeEffect: String](./avaudiounittypeeffect.md)
   An audio unit type that represents an effect.
-- [let AVAudioUnitTypeMixer: String](avaudiounittypemixer.md)
+- [let AVAudioUnitTypeMixer: String](./avaudiounittypemixer.md)
   An audio unit type that represents a mixer.
-- [let AVAudioUnitTypePanner: String](avaudiounittypepanner.md)
+- [let AVAudioUnitTypePanner: String](./avaudiounittypepanner.md)
   An audio unit type that represents a panner.
-- [let AVAudioUnitTypeOfflineEffect: String](avaudiounittypeofflineeffect.md)
+- [let AVAudioUnitTypeOfflineEffect: String](./avaudiounittypeofflineeffect.md)
   An audio unit type that represents an offline effect.
-- [let AVAudioUnitTypeMIDIProcessor: String](avaudiounittypemidiprocessor.md)
+- [let AVAudioUnitTypeMIDIProcessor: String](./avaudiounittypemidiprocessor.md)
   An audio unit type that represents a MIDI processor.
 
 

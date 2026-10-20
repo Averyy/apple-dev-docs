@@ -1,7 +1,8 @@
 # numberOfShotsTaken
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of shots taken in the entire capture session so far, including both automatic capture and manual capture.
 

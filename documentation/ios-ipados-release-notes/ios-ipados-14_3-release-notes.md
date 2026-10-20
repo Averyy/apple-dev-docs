@@ -1,12 +1,13 @@
 # iOS & iPadOS 14.3 Release Notes
 
-**Framework**: iOS & iPadOS Release Notes
+**Framework**: iOS & iPadOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 14.3 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 14.3. The SDK comes bundled with Xcode 12.3. For information on the compatibility requirements for Xcode 12.3, see [`Xcode 12.3 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-12_3-release-notes).
+The iOS & iPadOS 14.3 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 14.3. The SDK comes bundled with Xcode 12.3. For information on the compatibility requirements for Xcode 12.3, see [Xcode 12.3 Release Notes](../Xcode-Release-Notes/xcode-12_3-release-notes.md).
 
 ##### App Clips
 
@@ -14,7 +15,7 @@ The iOS & iPadOS 14.3 SDK provides support to develop apps for iPhone, iPad, and
 
 - You can now launch an App Clip by scanning App Clip Codes designed by Apple, by using Camera or from Control Center. (71991284)
 
-##### Skadnetwork
+##### SKAdNetwork
 
 ###### Known Issues
 
@@ -33,23 +34,24 @@ The iOS & iPadOS 14.3 SDK provides support to develop apps for iPhone, iPad, and
 
 ###### Deprecations
 
-The `TargetApplicationBundleIdentifier` in [`WebClip`](https://developer.apple.com/documentation/devicemanagement/webclip) is intended for enterprise customers to launch a custom URL in a third-party browser, rather than to provide theming options. Beginning in iOS & iPadOS 14.3, pointing `TargetApplicationBundleIdentifier` to an app made by Apple is no longer supported. A Web Clip already installed via a configuration profile will continue to work; however, the `TargetApplicationBundleIdentifier` property will be ignored in newly installed Web Clips unless the configuration profile is deployed via MDM. For devices not enrolled in MDM, create a single-step shortcut with the Open App action, then add the shortcut to the Home screen. (71422092)
+The `TargetApplicationBundleIdentifier` in [`WebClip`](../DeviceManagement/webclip.md) is intended for enterprise customers to launch a custom URL in a third-party browser, rather than to provide theming options. Beginning in iOS & iPadOS 14.3, pointing `TargetApplicationBundleIdentifier` to an app made by Apple is no longer supported. A Web Clip already installed via a configuration profile will continue to work; however, the `TargetApplicationBundleIdentifier` property will be ignored in newly installed Web Clips unless the configuration profile is deployed via MDM. For devices not enrolled in MDM, create a single-step shortcut with the Open App action, then add the shortcut to the Home screen. (71422092)
 
 ## See Also
 
-- [iOS & iPadOS 14.7 Release Notes](ios-ipados-14_7-release-notes.md)
+### iOS & iPadOS 14
+- [iOS & iPadOS 14.7 Release Notes](./ios-ipados-14_7-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 14.6 Release Notes](ios-ipados-14_6-release-notes.md)
+- [iOS & iPadOS 14.6 Release Notes](./ios-ipados-14_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 14.5.1 Release Notes](ios-ipados-14_5_1-release-notes.md)
+- [iOS & iPadOS 14.5.1 Release Notes](./ios-ipados-14_5_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 14.5 Release Notes](ios-ipados-14_5-release-notes.md)
+- [iOS & iPadOS 14.5 Release Notes](./ios-ipados-14_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 14.4 Release Notes](ios-ipados-14_4-release-notes.md)
+- [iOS & iPadOS 14.4 Release Notes](./ios-ipados-14_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 14.2 Release Notes](ios-ipados-14_2-release-notes.md)
+- [iOS & iPadOS 14.2 Release Notes](./ios-ipados-14_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 14 Release Notes](ios-ipados-14-release-notes.md)
+- [iOS & iPadOS 14 Release Notes](./ios-ipados-14-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

@@ -1,7 +1,8 @@
 # secureConnectionStartDate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time immediately before the task started the TLS security handshake to secure the current connection.
 
@@ -20,31 +21,36 @@ The time immediately before the task started the TLS security handshake to secur
 var secureConnectionStartDate: Date? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSDate * secureConnectionStartDate;
+```
+
 #### Discussion
 
 This value is `nil` if an encrypted connection isn’t used, if a persistent connection is used, or if the resource is retrieved from local resources.
 
 ## See Also
 
-- [var fetchStartDate: Date?](urlsessiontasktransactionmetrics/fetchstartdate.md)
+### Accessing temporal metrics
+- [var fetchStartDate: Date?](./fetchstartdate.md)
   The time when the task started fetching the resource, from the server or locally.
-- [var domainLookupStartDate: Date?](urlsessiontasktransactionmetrics/domainlookupstartdate.md)
+- [var domainLookupStartDate: Date?](./domainlookupstartdate.md)
   The time immediately before the task started the name lookup for the resource.
-- [var domainLookupEndDate: Date?](urlsessiontasktransactionmetrics/domainlookupenddate.md)
+- [var domainLookupEndDate: Date?](./domainlookupenddate.md)
   The time after the name lookup was completed.
-- [var connectStartDate: Date?](urlsessiontasktransactionmetrics/connectstartdate.md)
+- [var connectStartDate: Date?](./connectstartdate.md)
   The time immediately before the task started establishing a TCP connection to the server.
-- [var secureConnectionEndDate: Date?](urlsessiontasktransactionmetrics/secureconnectionenddate.md)
+- [var secureConnectionEndDate: Date?](./secureconnectionenddate.md)
   The time immediately after the security handshake completed.
-- [var connectEndDate: Date?](urlsessiontasktransactionmetrics/connectenddate.md)
+- [var connectEndDate: Date?](./connectenddate.md)
   The time immediately after the task finished establishing the connection to the server.
-- [var requestStartDate: Date?](urlsessiontasktransactionmetrics/requeststartdate.md)
+- [var requestStartDate: Date?](./requeststartdate.md)
   The time immediately before the task started requesting the resource, regardless of whether it is retrieved from the server or local resources.
-- [var requestEndDate: Date?](urlsessiontasktransactionmetrics/requestenddate.md)
+- [var requestEndDate: Date?](./requestenddate.md)
   The time immediately after the task finished requesting the resource, regardless of whether it was retrieved from the server or local resources.
-- [var responseStartDate: Date?](urlsessiontasktransactionmetrics/responsestartdate.md)
+- [var responseStartDate: Date?](./responsestartdate.md)
   The time immediately after the task received the first byte of the response from the server or from local resources.
-- [var responseEndDate: Date?](urlsessiontasktransactionmetrics/responseenddate.md)
+- [var responseEndDate: Date?](./responseenddate.md)
   The time immediately after the task received the last byte of the resource.
 
 

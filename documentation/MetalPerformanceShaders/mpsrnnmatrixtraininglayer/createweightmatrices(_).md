@@ -1,7 +1,8 @@
 # createWeightMatrices(_:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func createWeightMatrices(_ matricesOut: NSMutableArray)
+```
+
+```objc
+- (void) createWeightMatrices:(NSMutableArray<MPSMatrix *> *) matricesOut;
 ```
 
 

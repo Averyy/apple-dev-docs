@@ -1,12 +1,13 @@
 # showWindow(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays the window associated with the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Displays the window associated with the receiver.
 func showWindow(_ sender: Any?)
 ```
 
+```objc
+- (void) showWindow:(id) sender;
+```
+
 #### Discussion
 
-If the window is an [`NSPanel`](nspanel.md) object and has its [`becomesKeyOnlyIfNeeded`](nspanel/becomeskeyonlyifneeded.md) flag set to [`true`](https://developer.apple.com/documentation/swift/true), the window is displayed in front of all other windows but is not made key; otherwise it is displayed in front and is made key. This method is useful for menu actions.
+If the window is an [`NSPanel`](../nspanel.md) object and has its [`becomesKeyOnlyIfNeeded`](../nspanel/becomeskeyonlyifneeded.md) flag set to [`true`](../../Swift/true.md), the window is displayed in front of all other windows but is not made key; otherwise it is displayed in front and is made key. This method is useful for menu actions.
 
 ## Parameters
 
@@ -25,19 +30,21 @@ If the window is an [`NSPanel`](nspanel.md) object and has its [`becomesKeyOnlyI
 
 ## See Also
 
-- [func orderFront(Any?)](nswindow/orderfront(_:).md)
+### Related Documentation
+- [func orderFront(Any?)](../nswindow/orderfront%28_%29.md)
   Moves the window to the front of its level in the screen list, without changing either the key window or the main window.
-- [func makeKeyAndOrderFront(Any?)](nswindow/makekeyandorderfront(_:).md)
+- [func makeKeyAndOrderFront(Any?)](../nswindow/makekeyandorderfront%28_%29.md)
   Moves the window to the front of the screen list, within its level, and makes it the key window; that is, it shows the window.
-- [func loadWindow()](nswindowcontroller/loadwindow.md)
+### Loading and Displaying the Window
+- [func loadWindow()](./loadwindow%28%29.md)
   Loads the receiver’s window from the nib file.
-- [var isWindowLoaded: Bool](nswindowcontroller/iswindowloaded.md)
+- [var isWindowLoaded: Bool](./iswindowloaded.md)
   A Boolean value that indicates whether the nib file containing the receiver’s window has been loaded.
-- [var window: NSWindow?](nswindowcontroller/window.md)
+- [var window: NSWindow?](./window.md)
   The window owned by the receiver.
-- [func windowDidLoad()](nswindowcontroller/windowdidload.md)
+- [func windowDidLoad()](./windowdidload%28%29.md)
   Sent after the window owned by the receiver has been loaded.
-- [func windowWillLoad()](nswindowcontroller/windowwillload.md)
+- [func windowWillLoad()](./windowwillload%28%29.md)
   Sent before the window owned by the receiver is loaded.
 
 

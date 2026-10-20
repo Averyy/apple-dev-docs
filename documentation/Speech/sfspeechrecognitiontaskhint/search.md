@@ -1,7 +1,8 @@
 # SFSpeechRecognitionTaskHint.search
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A task that uses captured speech to specify search terms.
 
@@ -18,17 +19,22 @@ A task that uses captured speech to specify search terms.
 case search
 ```
 
+```c
+SFSpeechRecognitionTaskHintSearch
+```
+
 #### Discussion
 
 Use this hint type when you are using speech recognition to identify search terms.
 
 ## See Also
 
-- [SFSpeechRecognitionTaskHint.unspecified](sfspeechrecognitiontaskhint/unspecified.md)
+### Hints
+- [SFSpeechRecognitionTaskHint.unspecified](./unspecified.md)
   An unspecified type of task.
-- [SFSpeechRecognitionTaskHint.dictation](sfspeechrecognitiontaskhint/dictation.md)
+- [SFSpeechRecognitionTaskHint.dictation](./dictation.md)
   A task that uses captured speech for text entry.
-- [SFSpeechRecognitionTaskHint.confirmation](sfspeechrecognitiontaskhint/confirmation.md)
+- [SFSpeechRecognitionTaskHint.confirmation](./confirmation.md)
   A task that uses captured speech for short, confirmation-style requests.
 
 

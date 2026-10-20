@@ -1,7 +1,8 @@
 # protocols
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of protocols indicated in the ATR
 
@@ -20,19 +21,24 @@ An array of protocols indicated in the ATR
 var protocols: [NSNumber] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSNumber *> * protocols;
+```
+
 #### Discussion
 
-Each element in the returned array is an `NSNumber` object containing an `NSUInteger` value corresponding to a member of the [`TKSmartCardProtocol`](tksmartcardprotocol.md) enumeration.
+Each element in the returned array is an `NSNumber` object containing an `NSUInteger` value corresponding to a member of the [`TKSmartCardProtocol`](../tksmartcardprotocol.md) enumeration.
 
 The returned protocols are ordered such that the default protocol is at index `0`, and any duplicate values are removed.
 
 ## See Also
 
-- [var bytes: Data](tksmartcardatr/bytes.md)
+### Accessing ATR Attributes
+- [var bytes: Data](./bytes.md)
   The ATR message data.
-- [var historicalBytes: Data](tksmartcardatr/historicalbytes.md)
+- [var historicalBytes: Data](./historicalbytes.md)
   The ATR historical bytes, not including interface bytes or the TCK (check byte).
-- [var historicalRecords: [TKCompactTLVRecord]?](tksmartcardatr/historicalrecords.md)
+- [var historicalRecords: [TKCompactTLVRecord]?](./historicalrecords.md)
   A list of compact TLV records parsed from historical bytes.
 
 

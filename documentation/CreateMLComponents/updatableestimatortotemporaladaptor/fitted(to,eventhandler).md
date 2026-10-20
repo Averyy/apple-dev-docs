@@ -1,17 +1,18 @@
 # fitted(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fits a transformer to a sequence of examples.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
+- iOS 16.0+ - Deprecated in 18.0
+- iPadOS 16.0+ - Deprecated in 18.0
+- Mac Catalyst 16.0+ - Deprecated in 18.0
+- macOS 13.0+ - Deprecated in 15.0
+- tvOS 16.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
 
 ## Declaration
 
@@ -30,15 +31,16 @@ The fitted transformer.
 
 ## See Also
 
-- [func makeTransformer() -> UpdatableEstimatorToTemporalAdaptor<Base>.Transformer](updatableestimatortotemporaladaptor/maketransformer.md)
+### Fitting and updating
+- [func makeTransformer() -> UpdatableEstimatorToTemporalAdaptor<Base>.Transformer](./maketransformer%28%29.md)
   Creates a default-initialized transformer suitable for incremental fitting.
-- [func update<InputSequence>(inout UpdatableEstimatorToTemporalAdaptor<Base>.Transformer, with: InputSequence, eventHandler: EventHandler?) async throws](updatableestimatortotemporaladaptor/update(_:with:eventhandler:).md)
+- [func update<InputSequence>(inout UpdatableEstimatorToTemporalAdaptor<Base>.Transformer, with: InputSequence, eventHandler: EventHandler?) async throws](./update%28_,with,eventhandler%29.md)
   Updates a transformer with a new sequence of examples.
-- [UpdatableEstimatorToTemporalAdaptor.Input](updatableestimatortotemporaladaptor/input.md)
+- [UpdatableEstimatorToTemporalAdaptor.Input](./input.md)
   The input type.
-- [UpdatableEstimatorToTemporalAdaptor.Output](updatableestimatortotemporaladaptor/output.md)
+- [UpdatableEstimatorToTemporalAdaptor.Output](./output.md)
   The output type.
-- [UpdatableEstimatorToTemporalAdaptor.Transformer](updatableestimatortotemporaladaptor/transformer.md)
+- [UpdatableEstimatorToTemporalAdaptor.Transformer](./transformer.md)
   The transformer type created by this estimator.
 
 

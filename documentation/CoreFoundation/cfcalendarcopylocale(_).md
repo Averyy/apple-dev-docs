@@ -1,18 +1,19 @@
 # CFCalendarCopyLocale(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a locale object for a specified calendar.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns a locale object for a specified calendar.
 func CFCalendarCopyLocale(_ calendar: CFCalendar!) -> CFLocale!
 ```
 
+```c
+extern CFLocaleRefCFCalendarCopyLocale(CFCalendarRef calendar);
+```
+
 #### Return Value
 
-A copy of the locale object for the specified calendar. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A copy of the locale object for the specified calendar. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
@@ -30,7 +35,8 @@ A copy of the locale object for the specified calendar. Ownership follows the [`
 
 ## See Also
 
-- [func CFCalendarSetLocale(CFCalendar!, CFLocale!)](cfcalendarsetlocale(_:_:).md)
+### Getting and Setting the Locale
+- [func CFCalendarSetLocale(CFCalendar!, CFLocale!)](./cfcalendarsetlocale%28_,_%29.md)
   Sets the locale for a calendar.
 
 

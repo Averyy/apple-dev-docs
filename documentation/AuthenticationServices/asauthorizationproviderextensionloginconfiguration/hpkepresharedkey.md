@@ -1,7 +1,8 @@
 # hpkePreSharedKey
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var hpkePreSharedKey: Data? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSData * hpkePreSharedKey;
 ```
 
 #### Discussion

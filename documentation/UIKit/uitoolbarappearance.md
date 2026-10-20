@@ -1,7 +1,8 @@
 # UIToolbarAppearance
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object for customizing the appearance of a toolbar.
 
@@ -19,37 +20,41 @@ An object for customizing the appearance of a toolbar.
 class UIToolbarAppearance
 ```
 
+```objc
+@interface UIToolbarAppearance : UIBarAppearance
+```
+
 #### Overview
 
-After creating a [`UIToolbarAppearance`](uitoolbarappearance.md) object, use the methods and properties of this class to specify the appearance of items in the toolbar. Use the inherited properties from [`UIBarAppearance`](uibarappearance.md) to configure the background and shadow attributes of the toolbar itself.
+After creating a [`UIToolbarAppearance`](./uitoolbarappearance.md) object, use the methods and properties of this class to specify the appearance of items in the toolbar. Use the inherited properties from [`UIBarAppearance`](./uibarappearance.md) to configure the background and shadow attributes of the toolbar itself.
 
 ## Topics
 
 ### Configuring bar button items
-- [var buttonAppearance: UIBarButtonItemAppearance](uitoolbarappearance/buttonappearance.md)
+- [var buttonAppearance: UIBarButtonItemAppearance](./uitoolbarappearance/buttonappearance.md)
   The appearance attributes for plain bar button items in the toolbar.
-- [var prominentButtonAppearance: UIBarButtonItemAppearance](uitoolbarappearance/prominentbuttonappearance.md)
+- [var prominentButtonAppearance: UIBarButtonItemAppearance](./uitoolbarappearance/prominentbuttonappearance.md)
   The appearance attributes for Prominent buttons.
 ### Configuring the Done button
-- [var doneButtonAppearance: UIBarButtonItemAppearance](uitoolbarappearance/donebuttonappearance.md)
+- [var doneButtonAppearance: UIBarButtonItemAppearance](./uitoolbarappearance/donebuttonappearance.md)
   The appearance attributes for Done buttons.
 
 ## Relationships
 
 ### Inherits From
-- [UIBarAppearance](uibarappearance.md)
+- [UIBarAppearance](./uibarappearance.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kAXVisibleRowsAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An array of the accessibility objects representing the currently visible rows in this table or outline view.
 
@@ -12,6 +13,10 @@ An array of the accessibility objects representing the currently visible rows in
 
 ```swift
 var kAXVisibleRowsAttribute: String { get }
+```
+
+```c
+#define kAXVisibleRowsAttribute
 ```
 
 

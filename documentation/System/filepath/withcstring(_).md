@@ -1,7 +1,8 @@
 # withCString(_:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 For backwards compatibility only. This function is equivalent to the preferred `withPlatformString`.
 

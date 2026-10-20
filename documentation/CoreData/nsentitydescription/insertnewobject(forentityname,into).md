@@ -1,7 +1,8 @@
 # insertNewObject(forEntityName:into:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates, configures, and returns an instance of the class for the entity with a given name.
 
@@ -10,7 +11,7 @@ Creates, configures, and returns an instance of the class for the entity with a 
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Creates, configures, and returns an instance of the class for the entity with a 
 
 ```swift
 class func insertNewObject(forEntityName entityName: String, into context: NSManagedObjectContext) -> NSManagedObject
+```
+
+```objc
++ (NSManagedObject *) insertNewObjectForEntityForName:(NSString *) entityName inManagedObjectContext:(NSManagedObjectContext *) context;
 ```
 
 #### Return Value
@@ -45,7 +50,8 @@ return newObject;
 
 ## See Also
 
-- [init(entity: NSEntityDescription, insertInto: NSManagedObjectContext?)](nsmanagedobject/init(entity:insertinto:).md)
+### Related Documentation
+- [init(entity: NSEntityDescription, insertInto: NSManagedObjectContext?)](../nsmanagedobject/init%28entity,insertinto%29.md)
   Initializes a managed object from an entity description and inserts it into the specified managed object context.
 
 

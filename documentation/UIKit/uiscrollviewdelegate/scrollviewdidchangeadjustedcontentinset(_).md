@@ -1,7 +1,8 @@
 # scrollViewDidChangeAdjustedContentInset(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the scroll view’s inset values change.
 
@@ -16,6 +17,10 @@ Tells the delegate when the scroll view’s inset values change.
 
 ```swift
 optional func scrollViewDidChangeAdjustedContentInset(_ scrollView: UIScrollView)
+```
+
+```objc
+- (void) scrollViewDidChangeAdjustedContentInset:(UIScrollView *) scrollView;
 ```
 
 ## Parameters

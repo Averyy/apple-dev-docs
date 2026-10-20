@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The specular albedo texture this scaler evaluates.
@@ -19,9 +20,13 @@ The specular albedo texture this scaler evaluates.
 var specularAlbedoTexture: (any MTLTexture)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MTLTexture> specularAlbedoTexture;
+```
+
 #### Discussion
 
-You are responsible for ensuring the usage and pixel format of the texture you assign to this property matches the texture usage [`specularAlbedoTextureUsage`](mtlfxtemporaldenoisedscalerbase/specularalbedotextureusage.md) requests and the pixel format that [`specularAlbedoTextureFormat`](mtlfxtemporaldenoisedscalerdescriptor/specularalbedotextureformat.md) requests.
+You are responsible for ensuring the usage and pixel format of the texture you assign to this property matches the texture usage [`specularAlbedoTextureUsage`](./specularalbedotextureusage.md) requests and the pixel format that [`specularAlbedoTextureFormat`](../mtlfxtemporaldenoisedscalerdescriptor/specularalbedotextureformat.md) requests.
 
 
 ---

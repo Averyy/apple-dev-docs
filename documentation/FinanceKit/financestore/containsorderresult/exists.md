@@ -1,7 +1,8 @@
 # FinanceStore.ContainsOrderResult.exists
 
 **Framework**: FinanceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The specified order exists.
 
@@ -18,11 +19,12 @@ case exists
 
 ## See Also
 
-- [FinanceStore.ContainsOrderResult.newerExists](financestore/containsorderresult/newerexists.md)
+### Enumeration Cases
+- [FinanceStore.ContainsOrderResult.newerExists](./newerexists.md)
   A newer order than the one you specified exists.
-- [FinanceStore.ContainsOrderResult.notFound](financestore/containsorderresult/notfound.md)
+- [FinanceStore.ContainsOrderResult.notFound](./notfound.md)
   The specified order doesn’t exist.
-- [FinanceStore.ContainsOrderResult.olderExists](financestore/containsorderresult/olderexists.md)
+- [FinanceStore.ContainsOrderResult.olderExists](./olderexists.md)
   A older order than the one you specified exists.
 
 

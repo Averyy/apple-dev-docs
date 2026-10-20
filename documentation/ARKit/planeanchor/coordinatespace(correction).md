@@ -1,7 +1,8 @@
 # coordinateSpace(correction:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The anchor’s coordinate space.
 

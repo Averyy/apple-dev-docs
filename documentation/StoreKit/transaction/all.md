@@ -1,7 +1,8 @@
 # all
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A sequence that emits all the customer’s transactions for your app.
 
@@ -22,12 +23,12 @@ static var all: Transaction.Transactions { get }
 
 ## Mentions
 
-- [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
-- [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
+- [Supporting subscription offer codes in your app](../supporting-subscription-offer-codes-in-your-app.md)
+- [Supporting win-back offers in your app](../supporting-win-back-offers-in-your-app.md)
 
 #### Discussion
 
-This sequence returns the customer’s transaction history current to the moment you access it. The sequence emits a finite number of transactions. If the App Store processes additional transactions for the customer while you’re accessing this sequence, they appear in the transaction listener [`updates`](transaction/updates.md).
+This sequence returns the customer’s transaction history current to the moment you access it. The sequence emits a finite number of transactions. If the App Store processes additional transactions for the customer while you’re accessing this sequence, they appear in the transaction listener [`updates`](./updates.md).
 
 The transaction history includes the following Apple In-App Purchases:
 
@@ -37,17 +38,18 @@ The transaction history includes the following Apple In-App Purchases:
 - Auto-renewable subscriptions, including all renewals
 - Auto-renewable subscriptions and non-consumables that the customer gets through Family Sharing
 
-By default, when the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.apple.com/documentation/bundleresources/information-property-list/skincludeconsumableinapppurchasehistory) property list key is `false`, the transaction information excludes finished consumables (unless refunded or revoked).
+By default, when the [`SKIncludeConsumableInAppPurchaseHistory`](../../BundleResources/information-property-list/skincludeconsumableinapppurchasehistory.md) property list key is `false`, the transaction information excludes finished consumables (unless refunded or revoked).
 
-To get all possible transactions, including all finished consumables, set the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.apple.com/documentation/bundleresources/information-property-list/skincludeconsumableinapppurchasehistory) property list key to `true`.
+To get all possible transactions, including all finished consumables, set the [`SKIncludeConsumableInAppPurchaseHistory`](../../BundleResources/information-property-list/skincludeconsumableinapppurchasehistory.md) property list key to `true`.
 
 ## See Also
 
-- [struct Transaction](transaction.md)
+### Transaction history and entitlements
+- [struct Transaction](../transaction.md)
   Information that represents the customer’s purchase of a product in your app.
-- [static var updates: Transaction.Transactions](transaction/updates.md)
+- [static var updates: Transaction.Transactions](./updates.md)
   The asynchronous sequence that emits a transaction when the system creates or updates transactions that occur outside the app or on other devices.
-- [static var currentEntitlements: Transaction.Transactions](transaction/currententitlements.md)
+- [static var currentEntitlements: Transaction.Transactions](./currententitlements.md)
   A sequence of the latest transactions that entitle a customer to Apple In-App Purchases and subscriptions.
 
 

@@ -1,7 +1,8 @@
 # count
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of instance slots in this array.
 
@@ -23,7 +24,8 @@ Represents the total capacity allocated at creation time; some slots may be unoc
 
 ## See Also
 
-- [func setMeshInstance(LowLevelMeshInstanceArray.Element, index: Int) throws(LowLevelRenderContextError)](lowlevelmeshinstancearray/setmeshinstance(_:index:).md)
+### Setting mesh instances
+- [func setMeshInstance(LowLevelMeshInstanceArray.Element, index: Int) throws(LowLevelRenderContextError)](./setmeshinstance%28_,index%29.md)
   Assigns a mesh instance to the slot at the given index, or clears the slot if the instance is nil.
 
 

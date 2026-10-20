@@ -1,18 +1,19 @@
 # kCMTextFormatType_QTText
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A type that describes QuickTime text media.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ A type that describes QuickTime text media.
 var kCMTextFormatType_QTText: CMTextFormatType { get }
 ```
 
+```c
+kCMTextFormatType_QTText
+```
+
 ## See Also
 
-- [var kCMTextFormatType_3GText: CMTextFormatType](kcmtextformattype_3gtext.md)
+### Constants
+- [var kCMTextFormatType_3GText: CMTextFormatType](./kcmtextformattype_3gtext.md)
   A type that describes 3GPP text media.
 
 

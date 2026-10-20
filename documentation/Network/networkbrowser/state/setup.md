@@ -1,7 +1,8 @@
 # NetworkBrowser.State.setup
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The browser has been created but not started. Set any relevant callback handlers on the browser before calling `start()`.
 

@@ -1,7 +1,8 @@
 # signpostName
 
 **Framework**: OSLog  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The signpost’s name.
 
@@ -20,9 +21,14 @@ The signpost’s name.
 var signpostName: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * signpostName;
+```
+
 ## See Also
 
-- [var signpostIdentifier: os_signpost_id_t](oslogentrysignpost/signpostidentifier.md)
+### Accessing Signpost Details
+- [var signpostIdentifier: os_signpost_id_t](./signpostidentifier.md)
   The signpost’s identifier.
 
 

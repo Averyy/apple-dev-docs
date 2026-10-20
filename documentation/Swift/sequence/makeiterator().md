@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns an iterator over the elements of this sequence.
@@ -21,11 +22,20 @@ Returns an iterator over the elements of this sequence.
 func makeIterator() -> Self.Iterator
 ```
 
+## Default Implementations
+
+### Sequence Implementations
+- [func makeIterator() -> IndexingIterator<Self>](./makeiterator%28%29-85cyw.md)
+  Returns an iterator over the elements of the collection.
+- [func makeIterator() -> Self](./makeiterator%28%29-9859q.md)
+  Returns an iterator over the elements of this sequence.
+
 ## See Also
 
-- [associatedtype Iterator : IteratorProtocol](sequence/iterator.md)
+### Creating an Iterator
+- [associatedtype Iterator : IteratorProtocol](./iterator.md)
   A type that provides the sequence’s iteration interface and encapsulates its iteration state.
-- [associatedtype Element](sequence/element.md)
+- [associatedtype Element](./element.md)
   A type representing the sequence’s elements.
 
 

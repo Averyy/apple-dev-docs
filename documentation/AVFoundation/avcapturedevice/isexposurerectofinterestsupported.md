@@ -1,7 +1,8 @@
 # isExposureRectOfInterestSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the device supports exposure rectangles of interest.
 
@@ -18,17 +19,22 @@ Whether the device supports exposure rectangles of interest.
 var isExposureRectOfInterestSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isExposureRectOfInterestSupported) BOOL exposureRectOfInterestSupported;
+```
+
 #### Discussion
 
-You may only set the device’s [`exposureRectOfInterest`](avcapturedevice/exposurerectofinterest.md) property if this property returns `true`.
+You may only set the device’s [`exposureRectOfInterest`](./exposurerectofinterest.md) property if this property returns `true`.
 
 ## See Also
 
-- [var exposureRectOfInterest: CGRect](avcapturedevice/exposurerectofinterest.md)
+### Setting an exposure rectangle of interest
+- [var exposureRectOfInterest: CGRect](./exposurerectofinterest.md)
   The device’s current exposure rectangle of interest, if it has one.
-- [var minExposureRectOfInterestSize: CGSize](avcapturedevice/minexposurerectofinterestsize.md)
+- [var minExposureRectOfInterestSize: CGSize](./minexposurerectofinterestsize.md)
   The minimum size you may use when specifying a rectangle of interest.
-- [func defaultRectForExposurePoint(ofInterest: CGPoint) -> CGRect](avcapturedevice/defaultrectforexposurepoint(ofinterest:).md)
+- [func defaultRectForExposurePoint(ofInterest: CGPoint) -> CGRect](./defaultrectforexposurepoint%28ofinterest%29.md)
   The default rectangle of interest used for a given exposure point of interest.
 
 

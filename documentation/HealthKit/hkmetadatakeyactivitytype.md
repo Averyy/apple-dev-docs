@@ -1,7 +1,8 @@
 # HKMetadataKeyActivityType
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 17.0+
@@ -17,16 +18,21 @@
 let HKMetadataKeyActivityType: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyActivityType;
+```
+
 ## See Also
 
-- [let HKMetadataKeyAppleFitnessPlusSession: String](hkmetadatakeyapplefitnessplussession.md)
-- [let HKMetadataKeyCoachedWorkout: String](hkmetadatakeycoachedworkout.md)
+### Workout Type
+- [let HKMetadataKeyAppleFitnessPlusSession: String](./hkmetadatakeyapplefitnessplussession.md)
+- [let HKMetadataKeyCoachedWorkout: String](./hkmetadatakeycoachedworkout.md)
   A key that indicates whether the workout was performed with a coach or personal trainer.
-- [let HKMetadataKeyGroupFitness: String](hkmetadatakeygroupfitness.md)
+- [let HKMetadataKeyGroupFitness: String](./hkmetadatakeygroupfitness.md)
   A key that indicates whether the workout was performed as part of a group fitness class.
-- [let HKMetadataKeyIndoorWorkout: String](hkmetadatakeyindoorworkout.md)
+- [let HKMetadataKeyIndoorWorkout: String](./hkmetadatakeyindoorworkout.md)
   A key that indicates whether the workout was performed indoors.
-- [let HKMetadataKeyWorkoutBrandName: String](hkmetadatakeyworkoutbrandname.md)
+- [let HKMetadataKeyWorkoutBrandName: String](./hkmetadatakeyworkoutbrandname.md)
   The brand name of a particular workout.
 
 

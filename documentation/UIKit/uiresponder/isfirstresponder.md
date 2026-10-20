@@ -1,7 +1,8 @@
 # isFirstResponder
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean value indicating whether this object is the first responder.
 
@@ -9,7 +10,7 @@ Returns a Boolean value indicating whether this object is the first responder.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Returns a Boolean value indicating whether this object is the first responder.
 var isFirstResponder: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isFirstResponder;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the responder is the first responder; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the responder is the first responder; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -28,15 +33,16 @@ UIKit dispatches some types of events, such as motion events, to the first respo
 
 ## See Also
 
-- [var next: UIResponder?](uiresponder/next.md)
+### Managing the responder chain
+- [var next: UIResponder?](./next.md)
   Returns the next responder in the responder chain, or `nil` if there’s no next responder.
-- [var canBecomeFirstResponder: Bool](uiresponder/canbecomefirstresponder.md)
+- [var canBecomeFirstResponder: Bool](./canbecomefirstresponder.md)
   Returns a Boolean value indicating whether this object can become the first responder.
-- [func becomeFirstResponder() -> Bool](uiresponder/becomefirstresponder.md)
+- [func becomeFirstResponder() -> Bool](./becomefirstresponder%28%29.md)
   Asks UIKit to make this object the first responder in its window.
-- [var canResignFirstResponder: Bool](uiresponder/canresignfirstresponder.md)
+- [var canResignFirstResponder: Bool](./canresignfirstresponder.md)
   Returns a Boolean value indicating whether the responder is willing to relinquish first-responder status.
-- [func resignFirstResponder() -> Bool](uiresponder/resignfirstresponder.md)
+- [func resignFirstResponder() -> Bool](./resignfirstresponder%28%29.md)
   Notifies this object that it has been asked to relinquish its status as first responder in its window.
 
 

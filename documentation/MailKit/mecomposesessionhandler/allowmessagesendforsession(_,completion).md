@@ -1,7 +1,8 @@
 # allowMessageSendForSession(_:completion:)
 
 **Framework**: MailKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Confirms that the message is ready for delivery.
 
@@ -11,14 +12,26 @@ Confirms that the message is ready for delivery.
 ## Declaration
 
 ```swift
+optional func allowMessageSendForSession(_ session: MEComposeSession, completion: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 optional func allowMessageSendForSession(_ session: MEComposeSession) async throws
+```
+
+```objc
+- (void) session:(MEComposeSession *) session canSendMessageWithCompletionHandler:(void (^)(NSError *error)) completion;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-optional func allowMessageSendForSession(_ session: MEComposeSession) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> optional func allowMessageSendForSession(_ session: MEComposeSession) async throws
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 MailKit gives your compose session handler an opportunity to confirm that a message is ready for delivery. If the message is ready for delivery and needs no further attention, call the completion handler and pass `nil`.
 

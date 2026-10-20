@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a default bordered table style, with alternating row backgrounds.
 
@@ -17,7 +18,8 @@ init()
 
 ## See Also
 
-- [init(alternatesRowBackgrounds: Bool)](borderedtablestyle/init(alternatesrowbackgrounds:).md)
+### Creating the table style
+- [init(alternatesRowBackgrounds: Bool)](./init%28alternatesrowbackgrounds%29.md)
   Creates an inset table style with optional alternating row backgrounds.
 
 

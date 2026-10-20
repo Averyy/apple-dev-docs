@@ -1,7 +1,8 @@
 # mouseEntered(with:frame:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays the cell component over which the mouse is hovering.
 
@@ -14,9 +15,13 @@ Displays the cell component over which the mouse is hovering.
 func mouseEntered(with event: NSEvent, frame: NSRect, in view: NSView)
 ```
 
+```objc
+- (void) mouseEntered:(NSEvent *) event withFrame:(NSRect) frame inView:(NSView *) view;
+```
+
 #### Discussion
 
-The `NSPathCell` object dynamically animates to display the component that the mouse is hovering over using mouse-entered and mouse-exited events. The control should call these methods to correctly display the hovered component to the user. The control can acquire rectangles to track using [`rect(of:withFrame:in:)`](nspathcell/rect(of:withframe:in:).md).
+The `NSPathCell` object dynamically animates to display the component that the mouse is hovering over using mouse-entered and mouse-exited events. The control should call these methods to correctly display the hovered component to the user. The control can acquire rectangles to track using [`rect(of:withFrame:in:)`](./rect%28of,withframe,in%29.md).
 
 ## Parameters
 
@@ -26,7 +31,8 @@ The `NSPathCell` object dynamically animates to display the component that the m
 
 ## See Also
 
-- [func mouseExited(with: NSEvent, frame: NSRect, in: NSView)](nspathcell/mouseexited(with:frame:in:).md)
+### Displaying Hidden Components
+- [func mouseExited(with: NSEvent, frame: NSRect, in: NSView)](./mouseexited%28with,frame,in%29.md)
   Hides the cell component over which the mouse is hovering.
 
 

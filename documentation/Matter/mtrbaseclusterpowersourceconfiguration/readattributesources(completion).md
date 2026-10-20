@@ -1,7 +1,8 @@
 # readAttributeSources(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSources(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSources() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeSourcesWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

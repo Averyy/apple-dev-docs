@@ -1,14 +1,15 @@
 # kSSCPrinterCmd_CHANGE_DEFINITION
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSSCPrinterCmd_CHANGE_DEFINITION = 0x40
 ```
 

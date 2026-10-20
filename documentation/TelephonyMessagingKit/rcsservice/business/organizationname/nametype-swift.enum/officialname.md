@@ -1,7 +1,8 @@
 # RCSService.Business.OrganizationName.NameType.officialName
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Official name.
 

@@ -1,7 +1,8 @@
 # CNKeyDescriptor
 
 **Framework**: Contacts  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 This protocol is reserved for Contacts framework usage.
 
@@ -19,17 +20,22 @@ This protocol is reserved for Contacts framework usage.
 protocol CNKeyDescriptor : NSCopying, NSSecureCoding, NSObjectProtocol
 ```
 
+```objc
+@protocol CNKeyDescriptor <NSObject, NSSecureCoding, NSCopying>
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [init(keysToFetch: [any CNKeyDescriptor])](cncontactfetchrequest/init(keystofetch:).md)
+### Creating a Fetch Request
+- [init(keysToFetch: [any CNKeyDescriptor])](./cncontactfetchrequest/init%28keystofetch%29.md)
   Creates a fetch request for the specified keys.
 
 

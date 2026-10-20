@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the base writing direction at the location you specify.
@@ -19,9 +20,13 @@ Returns the base writing direction at the location you specify.
 func baseWritingDirection(at location: any NSTextLocation) -> NSTextSelectionNavigation.WritingDirection
 ```
 
+```objc
+- (NSTextSelectionNavigationWritingDirection) baseWritingDirectionAtLocation:(id<NSTextLocation>) location;
+```
+
 #### Return Value
 
-The [`NSWritingDirection`](nswritingdirection.md).
+The [`NSWritingDirection`](../nswritingdirection.md).
 
 ## Parameters
 
@@ -29,11 +34,12 @@ The [`NSWritingDirection`](nswritingdirection.md).
 
 ## See Also
 
-- [NSTextSelectionNavigation.WritingDirection](nstextselectionnavigation/writingdirection.md)
+### Changing the characteristics of the selection
+- [NSTextSelectionNavigation.WritingDirection](../nstextselectionnavigation/writingdirection.md)
   Values that describe the writing direction inside a text selection.
-- [func textLayoutOrientation(at: any NSTextLocation) -> NSTextSelectionNavigation.LayoutOrientation](nstextselectiondatasource/textlayoutorientation(at:).md)
+- [func textLayoutOrientation(at: any NSTextLocation) -> NSTextSelectionNavigation.LayoutOrientation](./textlayoutorientation%28at%29.md)
   Returns the layout orientation at the location you specify.
-- [NSTextSelectionNavigation.LayoutOrientation](nstextselectionnavigation/layoutorientation.md)
+- [NSTextSelectionNavigation.LayoutOrientation](../nstextselectionnavigation/layoutorientation.md)
   Values that describe the possible layout orientations.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Configures the encoder with a machine learning pipeline state instance.
@@ -20,6 +21,10 @@ Configures the encoder with a machine learning pipeline state instance.
 func setPipelineState(_ pipelineState: any MTL4MachineLearningPipelineState)
 ```
 
+```objc
+- (void) setPipelineState:(id<MTL4MachineLearningPipelineState>) pipelineState;
+```
+
 #### Discussion
 
 The pipeline state instance affects all subsequent Machine Learning commands.
@@ -30,7 +35,8 @@ The pipeline state instance affects all subsequent Machine Learning commands.
 
 ## See Also
 
-- [func setArgumentTable((any MTL4ArgumentTable)?)](mtl4machinelearningcommandencoder/setargumenttable(_:).md)
+### Configuring the pass
+- [func setArgumentTable((any MTL4ArgumentTable)?)](./setargumenttable%28_%29.md)
   Sets an argument table for the command encoder’s machine learning shader stage.
 
 

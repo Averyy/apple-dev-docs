@@ -1,7 +1,8 @@
 # perceptualDuration
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -17,10 +18,15 @@
 var perceptualDuration: CFTimeInterval { get }
 ```
 
+```objc
+@property (readonly) CFTimeInterval perceptualDuration;
+```
+
 ## See Also
 
-- [var allowsOverdamping: Bool](caspringanimation/allowsoverdamping.md)
-- [var bounce: CGFloat](caspringanimation/bounce.md)
+### Instance Properties
+- [var allowsOverdamping: Bool](./allowsoverdamping.md)
+- [var bounce: CGFloat](./bounce.md)
 
 
 ---

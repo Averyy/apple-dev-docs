@@ -1,7 +1,8 @@
 # domain
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string containing the error domain.
 
@@ -20,13 +21,19 @@ A string containing the error domain.
 var domain: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSErrorDomain domain;
+```
+
 ## See Also
 
-- [var localizedDescription: String](nserror/localizeddescription.md)
+### Related Documentation
+- [var localizedDescription: String](./localizeddescription.md)
   A string containing the localized description of the error.
-- [var code: Int](nserror/code.md)
+### Getting Error Properties
+- [var code: Int](./code.md)
   The error code.
-- [var userInfo: [String : Any]](nserror/userinfo.md)
+- [var userInfo: [String : Any]](./userinfo.md)
   The user info dictionary.
 
 

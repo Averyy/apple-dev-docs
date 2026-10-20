@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var appVersionTooOld: Int](appversiontooold.md)
-- [var notAppropriateForClassic: Int](notappropriateforclassic.md)
-- [var wrongApplicationPlatform: Int](wrongapplicationplatform.md)
+- [var appVersionTooOld: Int](../../appversiontooold.md)
+- [var notAppropriateForClassic: Int](../../notappropriateforclassic.md)
+- [var wrongApplicationPlatform: Int](../../wrongapplicationplatform.md)
 
 
 ---

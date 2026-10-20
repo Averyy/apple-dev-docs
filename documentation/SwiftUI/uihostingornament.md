@@ -1,7 +1,8 @@
 # UIHostingOrnament
 
 **Framework**: SwiftUI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A model that represents an ornament suitable for being hosted in UIKit.
 
@@ -29,29 +30,30 @@ self.ornaments = [
 ## Topics
 
 ### Creating a hosting ornament
-- [init(sceneAnchor:contentAlignment:content:)](uihostingornament/init(sceneanchor:contentalignment:content:).md)
+- [init(sceneAnchor:contentAlignment:content:)](./uihostingornament/init%28sceneanchor,contentalignment,content%29.md)
   Creates an ornament with the specified alignment and content.
-- [var rootView: Content](uihostingornament/rootview.md)
+- [var rootView: Content](./uihostingornament/rootview.md)
   The root view of the SwiftUI view hierarchy managed by this ornament.
 ### Setting the alignment
-- [var contentAlignment: Alignment](uihostingornament/contentalignment.md)
+- [var contentAlignment: Alignment](./uihostingornament/contentalignment.md)
   The alignment in the ornament used to position it.
-- [var sceneAnchor: UnitPoint](uihostingornament/sceneanchor.md)
+- [var sceneAnchor: UnitPoint](./uihostingornament/sceneanchor.md)
   The anchor point for aligning the ornament’s content (based on the `contentAlignment`) with the scene.
 ### Instance Properties
-- [var contentAlignment3D: Alignment3D](uihostingornament/contentalignment3d.md)
+- [var contentAlignment3D: Alignment3D](./uihostingornament/contentalignment3d.md)
 
 ## Relationships
 
 ### Inherits From
-- [UIOrnament](uiornament.md)
+- [UIOrnament](./uiornament.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UIOrnament](uiornament.md)
+### Hosting an ornament in UIKit
+- [class UIOrnament](./uiornament.md)
   The abstract base class that represents an ornament.
 
 

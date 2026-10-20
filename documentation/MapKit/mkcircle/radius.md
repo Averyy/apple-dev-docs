@@ -1,7 +1,8 @@
 # radius
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radius of the circular area, in meters.
 
@@ -20,11 +21,16 @@ The radius of the circular area, in meters.
 var radius: CLLocationDistance { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationDistance radius;
+```
+
 ## See Also
 
-- [var coordinate: CLLocationCoordinate2D](mkcircle/coordinate.md)
+### Accessing the overlay’s attributes
+- [var coordinate: CLLocationCoordinate2D](./coordinate.md)
   The center point of the circular area, specified as a latitude and longitude.
-- [var boundingMapRect: MKMapRect](mkcircle/boundingmaprect.md)
+- [var boundingMapRect: MKMapRect](./boundingmaprect.md)
   The bounding rectangle of the circular area.
 
 

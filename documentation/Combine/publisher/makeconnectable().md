@@ -1,7 +1,8 @@
 # makeConnectable()
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a connectable wrapper around the publisher.
 
@@ -20,17 +21,19 @@ Creates a connectable wrapper around the publisher.
 func makeConnectable() -> Publishers.MakeConnectable<Self>
 ```
 
+Available when `Failure` is `Never`.
+
 ## Mentions
 
-- [Controlling Publishing with Connectable Publishers](controlling-publishing-with-connectable-publishers.md)
+- [Controlling Publishing with Connectable Publishers](../controlling-publishing-with-connectable-publishers.md)
 
 #### Return Value
 
-A [`ConnectablePublisher`](connectablepublisher.md) wrapping this publisher.
+A [`ConnectablePublisher`](../connectablepublisher.md) wrapping this publisher.
 
 #### Discussion
 
-In the following example, [`makeConnectable()`](publisher/makeconnectable().md) wraps its upstream publisher (an instance of [`Publishers.Share`](publishers/share.md)) with a [`ConnectablePublisher`](connectablepublisher.md). Without this, the first sink subscriber would receive all the elements from the sequence publisher and cause it to complete before the second subscriber attaches. By making the publisher connectable, the publisher doesn’t produce any elements until after the [`connect()`](connectablepublisher/connect().md) call.
+In the following example, [`makeConnectable()`](./makeconnectable%28%29.md) wraps its upstream publisher (an instance of [`Publishers.Share`](../publishers/share.md)) with a [`ConnectablePublisher`](../connectablepublisher.md). Without this, the first sink subscriber would receive all the elements from the sequence publisher and cause it to complete before the second subscriber attaches. By making the publisher connectable, the publisher doesn’t produce any elements until after the [`connect()`](../connectablepublisher/connect%28%29.md) call.
 
 ```swift
  let subject = Just<String>("Sent")
@@ -52,7 +55,7 @@ In the following example, [`makeConnectable()`](publisher/makeconnectable().md) 
  // Stream 1 received: Sent
 ```
 
-> **Note**: The [`connect()`](connectablepublisher/connect().md) operator returns a [`Cancellable`](cancellable.md) instance that you must retain. You can also use this instance to cancel publishing.
+> **Note**: The [`connect()`](../connectablepublisher/connect%28%29.md) operator returns a [`Cancellable`](../cancellable.md) instance that you must retain. You can also use this instance to cancel publishing.
 
 
 ---

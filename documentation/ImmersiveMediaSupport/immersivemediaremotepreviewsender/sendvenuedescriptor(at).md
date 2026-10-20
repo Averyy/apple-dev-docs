@@ -1,7 +1,8 @@
 # sendVenueDescriptor(at:)
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends an AIME to all connected receivers.
 
@@ -16,7 +17,7 @@ func sendVenueDescriptor(at url: URL) async throws
 
 #### Discussion
 
-> **Note**: This function throws if anything fails while sending the venue descriptor, for example, if the url is invalid.
+> **Throws**: This function throws if anything fails while sending the venue descriptor, for example, if the url is invalid.
 
 ## Parameters
 

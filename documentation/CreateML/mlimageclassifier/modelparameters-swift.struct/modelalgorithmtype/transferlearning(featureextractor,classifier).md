@@ -1,7 +1,8 @@
 # MLImageClassifier.ModelParameters.ModelAlgorithmType.transferLearning(featureExtractor:classifier:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Train using a transfer-learning algorithm with a specified feature extractor and classifier.
 

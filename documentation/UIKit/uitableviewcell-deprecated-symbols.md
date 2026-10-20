@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,11 +12,11 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated properties
-- [var textLabel: UILabel?](uitableviewcell/textlabel.md)
+- [var textLabel: UILabel?](./uitableviewcell/textlabel.md)
   The label to use for the main textual content of the table cell.
-- [var detailTextLabel: UILabel?](uitableviewcell/detailtextlabel.md)
+- [var detailTextLabel: UILabel?](./uitableviewcell/detailtextlabel.md)
   The secondary label of the table cell, if one exists.
-- [var imageView: UIImageView?](uitableviewcell/imageview.md)
+- [var imageView: UIImageView?](./uitableviewcell/imageview.md)
   The image view of the table cell.
 
 

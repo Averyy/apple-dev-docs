@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Configures the size of a threadgroup memory buffer for a threadgroup argument in the fragment and tile shader functions.
@@ -20,6 +21,10 @@ Configures the size of a threadgroup memory buffer for a threadgroup argument in
 func setThreadgroupMemoryLength(_ length: Int, offset: Int, index: Int)
 ```
 
+```objc
+- (void) setThreadgroupMemoryLength:(NSUInteger) length offset:(NSUInteger) offset atIndex:(NSUInteger) index;
+```
+
 ## Parameters
 
 - `length`: The size of the threadgroup memory, in bytes.
@@ -28,7 +33,8 @@ func setThreadgroupMemoryLength(_ length: Int, offset: Int, index: Int)
 
 ## See Also
 
-- [func setObjectThreadgroupMemoryLength(Int, index: Int)](mtl4rendercommandencoder/setobjectthreadgroupmemorylength(_:index:).md)
+### Configuring persistent threadgroup memory
+- [func setObjectThreadgroupMemoryLength(Int, index: Int)](./setobjectthreadgroupmemorylength%28_,index%29.md)
   Configures the size of a threadgroup memory buffer for a threadgroup argument in the object shader function.
 
 

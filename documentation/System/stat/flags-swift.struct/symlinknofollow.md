@@ -1,7 +1,8 @@
 # symlinkNoFollow
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 If the path ends with a symbolic link, return information about the link itself.
 

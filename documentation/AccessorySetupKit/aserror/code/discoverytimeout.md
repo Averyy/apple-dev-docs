@@ -1,7 +1,8 @@
 # ASError.Code.discoveryTimeout
 
 **Framework**: AccessorySetupKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Accessory discovery timed out.
 
@@ -15,9 +16,14 @@ Accessory discovery timed out.
 case discoveryTimeout
 ```
 
+```c
+ASErrorCodeDiscoveryTimeout
+```
+
 ## See Also
 
-- [ASError.Code.invalidated](aserror/code/invalidated.md)
+### Timeout and life cycle errors
+- [ASError.Code.invalidated](./invalidated.md)
   The session invalidated prior to completing the operation.
 
 

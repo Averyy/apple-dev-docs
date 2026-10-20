@@ -1,6 +1,7 @@
 # App Store Installations and Deletions
 
-**Framework**: Analytics Reports
+**Framework**: Analytics Reports  
+**Role**: Article
 
 Analyze details on the number of times users install and delete your apps.
 
@@ -10,19 +11,23 @@ Use the data in this report to estimate the number of times people install and d
 
 - Territories: Worldwide
 - Platforms: iOS, iPadOS, macOS, tvOS, visionOS
-- Availability: - Daily: Every day
-- Weekly: Every Friday for the previous week (Monday to Sunday).
-- Monthly: On the fifth day of the following month.
+- Availability:
+
+  - Daily: Every day
+  - Weekly: Every Friday for the previous week (Monday to Sunday).
+  - Monthly: On the fifth day of the following month.
 - Completeness: Within five days. Weekly and monthly reports are complete by default.
 - History: On request, data is available beginning from January 1, 2024.
-- Privacy: - Includes data from users who have opted to share their data with Apple and developers. Data is provided only when events exist from at least five users for the respective report.
-- Data is available in two reports: standard and detailed. *Standard* reports include fields not easily related to uniquely identifiable user data. *Detailed* reports include all fields and also include additional privacy measures for the data, to help protect uniquely identifiable information for individuals. Download the standard report unless you need to analyze the unique fields in the detailed report. To learn more, see [`Protecting user privacy in report data`](privacy.md).
+- Privacy:
+
+  - Includes data from users who have opted to share their data with Apple and developers. Data is provided only when events exist from at least five users for the respective report.
+  - Data is available in two reports: standard and detailed. *Standard* reports include fields not easily related to uniquely identifiable user data. *Detailed* reports include all fields and also include additional privacy measures for the data, to help protect uniquely identifiable information for individuals. Download the standard report unless you need to analyze the unique fields in the detailed report. To learn more, see [Protecting user privacy in report data](./privacy.md).
 
 App Download Date
 
 - The date on which someone downloaded the app onto the device. This field is only populated if the download occurred in the previous 30 days, otherwise it is null.
 
-The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [`Data Completeness and Corrections`](data-completeness-corrections.md).
+The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
 #### Report Fields
 
@@ -62,7 +67,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Source Type | Web referrer | The user tapped a link from a website that brought them to your App Store product page. If a chain of redirects in Safari leads to your App Store product page, the referring website will be the last URL in the chain. For iOS apps, taps from websites in non-Safari web browsers, such as Chrome, are attributed as that web browser app in App Referrers. For macOS apps, taps from non-Safari web browsers are attributed to Web Referrers. |
 | Source Type | App Clip | The user tapped a link in your App Clip that brought them to your App Store product page. |
 | Source Type | Unavailable | The source from which the user downloaded your app is unavailable. |
-| Source Type | Institutional purchase | The user downloaded your app from [`Apple Business Manager`](https://developer.apple.comhttps://support.apple.com/guide/apple-business-manager/welcome/web) or [`Apple School Manager`](https://developer.apple.comhttps://support.apple.com/guide/apple-school-manager/welcome/web). |
+| Source Type | Institutional purchase | The user downloaded your app from [Apple Business Manager](https://support.apple.com/guide/apple-business-manager/welcome/web) or [Apple School Manager](https://support.apple.com/guide/apple-school-manager/welcome/web). |
 | Page Type | Product page | The user downloaded your app from your app’s product page. |
 | Page Type | In-app event | The user downloaded your app from an in-app event page. |
 | Page Type | Store sheet | The user downloaded the app from a store sheet in the App Store. |
@@ -70,21 +75,22 @@ The Analytics Reports framework delivers new portions of report content as insta
 
 ## See Also
 
-- [App Clip Usage](app-clip-usage.md)
+### App Usage
+- [App Clip Usage](./app-clip-usage.md)
   Analyze how users engage with your App Clips.
-- [App Crashes](app-crashes.md)
+- [App Crashes](./app-crashes.md)
   Review crashes for your App Store apps based on app version and device type.
-- [App Store Opt-in](app-store-opt-in.md)
+- [App Store Opt-in](./app-store-opt-in.md)
   Analyze the percentage of first-time app downloaders who choose to share their data with you.
-- [App Sessions](app-sessions.md)
+- [App Sessions](./app-sessions.md)
   Analyze how often people open your App Store apps, and the average session duration.
-- [CarPlay App Usage](carplay-app-usage.md)
+- [CarPlay App Usage](./carplay-app-usage.md)
   Review how people use CarPlay in your app.
-- [Platform App Installs](platform-app-installs.md)
+- [Platform App Installs](./platform-app-installs.md)
   Analyze your app’s install data by date, install type, channel, device, platform version, and territory.
-- [Shortcut App Usage](shortcut-app-usage.md)
+- [Shortcut App Usage](./shortcut-app-usage.md)
   Analyze how often people use a shortcut action in your app.
-- [Shortcuts Actions Usage](shortcuts-actions-usage.md)
+- [Shortcuts Actions Usage](./shortcuts-actions-usage.md)
   Analyze how often people run shortcuts with your app’s actions.
 
 

@@ -1,7 +1,8 @@
 # colorLoop
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.2+
@@ -16,6 +17,10 @@
 
 ```swift
 static var colorLoop: MTRColorControlColorCapabilitiesBitmap { get }
+```
+
+```c
+MTRColorControlColorCapabilitiesBitmapColorLoop
 ```
 
 

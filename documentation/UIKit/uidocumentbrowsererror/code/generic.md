@@ -1,7 +1,8 @@
 # UIDocumentBrowserError.Code.generic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unspecified error.
 
@@ -17,9 +18,14 @@ An unspecified error.
 case generic
 ```
 
+```c
+UIDocumentBrowserErrorGeneric
+```
+
 ## See Also
 
-- [UIDocumentBrowserError.Code.noLocationAvailable](uidocumentbrowsererror/code/nolocationavailable.md)
+### Error codes
+- [UIDocumentBrowserError.Code.noLocationAvailable](./nolocationavailable.md)
   An error indicating that no location exists.
 
 

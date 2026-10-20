@@ -1,13 +1,14 @@
 # texture::uv
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Current pixel’s position, in UV [0.0, 1.0] coordinates.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ float2 texture::uv()
 
 In the context of a texture stage, returns the current pixel position, in UV coordinates.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/texture__uv.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/texture__uv.svg)
 
 
 ---

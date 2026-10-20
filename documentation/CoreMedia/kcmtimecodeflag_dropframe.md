@@ -1,18 +1,19 @@
 # kCMTimeCodeFlag_DropFrame
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A type that describes timecodes are to be rendered in drop-frame format.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ A type that describes timecodes are to be rendered in drop-frame format.
 var kCMTimeCodeFlag_DropFrame: UInt32 { get }
 ```
 
+```c
+kCMTimeCodeFlag_DropFrame
+```
+
 ## See Also
 
-- [var kCMTimeCodeFlag_24HourMax: UInt32](kcmtimecodeflag_24hourmax.md)
+### Constants
+- [var kCMTimeCodeFlag_24HourMax: UInt32](./kcmtimecodeflag_24hourmax.md)
   A type that describes timecode rolls over every 24 hours.
-- [var kCMTimeCodeFlag_NegTimesOK: UInt32](kcmtimecodeflag_negtimesok.md)
+- [var kCMTimeCodeFlag_NegTimesOK: UInt32](./kcmtimecodeflag_negtimesok.md)
   A type that describes that the track may contain negative timecodes.
 
 

@@ -1,7 +1,8 @@
 # UIImage.DynamicRange.unspecified
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Do not specify a preferred dynamic range.
 
@@ -16,6 +17,10 @@ Do not specify a preferred dynamic range.
 
 ```swift
 case unspecified
+```
+
+```c
+UIImageDynamicRangeUnspecified
 ```
 
 

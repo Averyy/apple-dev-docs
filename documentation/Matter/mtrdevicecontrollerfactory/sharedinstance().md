@@ -1,7 +1,8 @@
 # sharedInstance()
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 class func sharedInstance() -> MTRDeviceControllerFactory
+```
+
+```objc
++ (MTRDeviceControllerFactory *) sharedInstance;
 ```
 
 

@@ -1,7 +1,8 @@
 # clusterPM1ConcentrationMeasurementAttributeUncertaintyID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 static var clusterPM1ConcentrationMeasurementAttributeUncertaintyID: MTRAttributeIDType { get }
+```
+
+```c
+MTRAttributeIDTypeClusterPM1ConcentrationMeasurementAttributeUncertaintyID
 ```
 
 

@@ -1,17 +1,18 @@
 # AVAssetWriter.Status.writing
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The asset writer is writing.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ The asset writer is writing.
 case writing
 ```
 
+```c
+AVAssetWriterStatusWriting
+```
+
 ## See Also
 
-- [AVAssetWriter.Status.unknown](avassetwriter/status-swift.enum/unknown.md)
+### Status values
+- [AVAssetWriter.Status.unknown](./unknown.md)
   The asset writer’s status isn’t known.
-- [AVAssetWriter.Status.completed](avassetwriter/status-swift.enum/completed.md)
+- [AVAssetWriter.Status.completed](./completed.md)
   The asset writer finishes writing successfully.
-- [AVAssetWriter.Status.failed](avassetwriter/status-swift.enum/failed.md)
+- [AVAssetWriter.Status.failed](./failed.md)
   The asset writer fails to write the output file.
-- [AVAssetWriter.Status.cancelled](avassetwriter/status-swift.enum/cancelled.md)
+- [AVAssetWriter.Status.cancelled](./cancelled.md)
   The asset writer canceled the writing operation.
 
 

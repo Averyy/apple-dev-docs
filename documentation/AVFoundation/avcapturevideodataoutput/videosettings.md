@@ -1,7 +1,8 @@
 # videoSettings
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary that contains the compression settings for the output.
 
@@ -17,6 +18,10 @@ A dictionary that contains the compression settings for the output.
 
 ```swift
 var videoSettings: [String : Any]! { get set }
+```
+
+```objc
+@property (nonatomic, copy, null_resettable) NSDictionary<NSString *,id> * videoSettings;
 ```
 
 #### Discussion
@@ -39,36 +44,37 @@ myVideoOutput.videoSettings = @{ }; // Receive samples in device format.
 
 To receive samples in a default uncompressed format, set this value to `nil`. Then you can query this value to receive a dictionary of the settings the session uses.
 
-In iOS versions prior to iOS 16, the only key supported is [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/corevideo/kcvpixelbufferpixelformattypekey). In iOS 16 and later, the supported keys include the following:
+In iOS versions prior to iOS 16, the only key supported is [`kCVPixelBufferPixelFormatTypeKey`](../../CoreVideo/kcvpixelbufferpixelformattypekey.md). In iOS 16 and later, the supported keys include the following:
 
-- For compressed video output, only use [`AVVideoPixelAspectRatioKey`](avvideopixelaspectratiokey.md), [`AVVideoCleanApertureKey`](avvideocleanaperturekey.md), [`AVVideoScalingModeKey`](avvideoscalingmodekey.md), [`AVVideoColorPropertiesKey`](avvideocolorpropertieskey.md), and [`AVVideoAllowWideColorKey`](avvideoallowwidecolorkey.md).
-- For uncompressed video output, you can also use [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/corevideo/kcvpixelbufferpixelformattypekey), [`kCVPixelBufferWidthKey`](https://developer.apple.com/documentation/corevideo/kcvpixelbufferwidthkey), and [`kCVPixelBufferHeightKey`](https://developer.apple.com/documentation/corevideo/kcvpixelbufferheightkey), in addition to the compressed video output keys.
+- For compressed video output, only use [`AVVideoPixelAspectRatioKey`](../avvideopixelaspectratiokey.md), [`AVVideoCleanApertureKey`](../avvideocleanaperturekey.md), [`AVVideoScalingModeKey`](../avvideoscalingmodekey.md), [`AVVideoColorPropertiesKey`](../avvideocolorpropertieskey.md), and [`AVVideoAllowWideColorKey`](../avvideoallowwidecolorkey.md).
+- For uncompressed video output, you can also use [`kCVPixelBufferPixelFormatTypeKey`](../../CoreVideo/kcvpixelbufferpixelformattypekey.md), [`kCVPixelBufferWidthKey`](../../CoreVideo/kcvpixelbufferwidthkey.md), and [`kCVPixelBufferHeightKey`](../../CoreVideo/kcvpixelbufferheightkey.md), in addition to the compressed video output keys.
 
-You can use [`availableVideoPixelFormatTypes`](avcapturevideodataoutput/availablevideopixelformattypes.md) and [`availableVideoCodecTypes`](avcapturevideodataoutput/availablevideocodectypes.md) to get a list of the supported pixel formats and video codecs, respectively. The width and height need to match the [`videoOrientation`](avcaptureconnection/videoorientation.md) specified in the output’s [`AVCaptureConnection`](avcaptureconnection.md), otherwise the system throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception). The aspect ratio of the width and height also need to match the aspect ratio of the source’s [`activeFormat`](avcapturedevice/activeformat.md), corrected for the connection’s [`videoOrientation`](avcaptureconnection/videoorientation.md), otherwise the system throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception). If the width or height exceeds the source’s `activeFormat`‘s width or height, the system throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception). Don’t change the width and height if [`deliversPreviewSizedOutputBuffers`](avcapturevideodataoutput/deliverspreviewsizedoutputbuffers.md) is [`true`](https://developer.apple.com/documentation/swift/true), otherwise the system throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception).
+You can use [`availableVideoPixelFormatTypes`](./availablevideopixelformattypes.md) and [`availableVideoCodecTypes`](./availablevideocodectypes.md) to get a list of the supported pixel formats and video codecs, respectively. The width and height need to match the [`videoOrientation`](../avcaptureconnection/videoorientation.md) specified in the output’s [`AVCaptureConnection`](../avcaptureconnection.md), otherwise the system throws an [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md). The aspect ratio of the width and height also need to match the aspect ratio of the source’s [`activeFormat`](../avcapturedevice/activeformat.md), corrected for the connection’s [`videoOrientation`](../avcaptureconnection/videoorientation.md), otherwise the system throws an [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md). If the width or height exceeds the source’s `activeFormat`‘s width or height, the system throws an [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md). Don’t change the width and height if [`deliversPreviewSizedOutputBuffers`](./deliverspreviewsizedoutputbuffers.md) is [`true`](../../Swift/true.md), otherwise the system throws an [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md).
 
 ## See Also
 
-- [Video settings](video-settings.md)
+### Configuring video capture
+- [Video settings](../video-settings.md)
   Configure video processing settings using standard key and value constants.
-- [var alwaysDiscardsLateVideoFrames: Bool](avcapturevideodataoutput/alwaysdiscardslatevideoframes.md)
+- [var alwaysDiscardsLateVideoFrames: Bool](./alwaysdiscardslatevideoframes.md)
   Indicates whether to drop video frames if they arrive late.
-- [var automaticallyConfiguresOutputBufferDimensions: Bool](avcapturevideodataoutput/automaticallyconfiguresoutputbufferdimensions.md)
+- [var automaticallyConfiguresOutputBufferDimensions: Bool](./automaticallyconfiguresoutputbufferdimensions.md)
   A Boolean value that indicates whether the output automatically configures the size of output buffers.
-- [var deliversPreviewSizedOutputBuffers: Bool](avcapturevideodataoutput/deliverspreviewsizedoutputbuffers.md)
+- [var deliversPreviewSizedOutputBuffers: Bool](./deliverspreviewsizedoutputbuffers.md)
   A Boolean value that indicates whether the output is configured to deliver preview-sized buffers.
-- [var preparesCellularRadioForNetworkConnection: Bool](avcapturevideodataoutput/preparescellularradiofornetworkconnection.md)
+- [var preparesCellularRadioForNetworkConnection: Bool](./preparescellularradiofornetworkconnection.md)
   Indicates whether the receiver should prepare the cellular radio for imminent network activity.
-- [var preservesDynamicHDRMetadata: Bool](avcapturevideodataoutput/preservesdynamichdrmetadata.md)
+- [var preservesDynamicHDRMetadata: Bool](./preservesdynamichdrmetadata.md)
   Indicates whether the receiver should preserve dynamic HDR metadata as an attachment on the output sample buffer’s underlying pixel buffer.
-- [var recommendedMediaTimeScaleForAssetWriter: CMTimeScale](avcapturevideodataoutput/recommendedmediatimescaleforassetwriter.md)
+- [var recommendedMediaTimeScaleForAssetWriter: CMTimeScale](./recommendedmediatimescaleforassetwriter.md)
   Indicates the recommended media timescale for the video track.
-- [func recommendedMovieMetadata(forVideoCodecType: AVVideoCodecType, assetWriterOutputFileType: AVFileType) -> [AVMetadataItem]?](avcapturevideodataoutput/recommendedmoviemetadata(forvideocodectype:assetwriteroutputfiletype:).md)
+- [func recommendedMovieMetadata(forVideoCodecType: AVVideoCodecType, assetWriterOutputFileType: AVFileType) -> [AVMetadataItem]?](./recommendedmoviemetadata%28forvideocodectype,assetwriteroutputfiletype%29.md)
   Recommends movie-level metadata for a particular video codec type and output file type, to be used with an asset writer input.
-- [func recommendedVideoSettings(forVideoCodecType: AVVideoCodecType, assetWriterOutputFileType: AVFileType) -> [String : Any]?](avcapturevideodataoutput/recommendedvideosettings(forvideocodectype:assetwriteroutputfiletype:).md)
+- [func recommendedVideoSettings(forVideoCodecType: AVVideoCodecType, assetWriterOutputFileType: AVFileType) -> [String : Any]?](./recommendedvideosettings%28forvideocodectype,assetwriteroutputfiletype%29.md)
   Returns a video settings dictionary appropriate for capturing video to a file with the specified codec and type.
-- [func recommendedVideoSettings(forVideoCodecType: AVVideoCodecType, assetWriterOutputFileType: AVFileType, outputFileURL: URL?) -> [String : Any]?](avcapturevideodataoutput/recommendedvideosettings(forvideocodectype:assetwriteroutputfiletype:outputfileurl:).md)
+- [func recommendedVideoSettings(forVideoCodecType: AVVideoCodecType, assetWriterOutputFileType: AVFileType, outputFileURL: URL?) -> [String : Any]?](./recommendedvideosettings%28forvideocodectype,assetwriteroutputfiletype,outputfileurl%29.md)
   Returns a dictionary of recommended output settings for writing the specified code, file type, and output URL.
-- [func recommendedVideoSettingsForAssetWriter(writingTo: AVFileType) -> [String : Any]?](avcapturevideodataoutput/recommendedvideosettingsforassetwriter(writingto:).md)
+- [func recommendedVideoSettingsForAssetWriter(writingTo: AVFileType) -> [String : Any]?](./recommendedvideosettingsforassetwriter%28writingto%29.md)
   Specifies the recommended settings for use with an AVAssetWriterInput.
 
 

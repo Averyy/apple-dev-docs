@@ -1,17 +1,24 @@
 # kSecTransformActionInternalizeExtraData
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An action that triggers after attributes are read into a transform.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
 ```swift
 let kSecTransformActionInternalizeExtraData: CFString
+```
+
+```c
+extern CFStringRef const kSecTransformActionInternalizeExtraData;
 ```
 
 #### Discussion

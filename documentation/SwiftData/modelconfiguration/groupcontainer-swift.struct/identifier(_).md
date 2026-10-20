@@ -1,7 +1,8 @@
 # identifier(_:)
 
 **Framework**: SwiftData  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Tells SwiftData to use the specified group container as the root location for the app’s persistent storage.
 
@@ -23,13 +24,14 @@ static func identifier(_ groupName: String) -> ModelConfiguration.GroupContainer
 
 ## Parameters
 
-- `groupName`: The identifier of the group container to use. You find these in the App Groups capabilities section of your Xcode project. For more information, see [`Configuring app groups`](https://developer.apple.com/documentation/xcode/configuring-app-groups).
+- `groupName`: The identifier of the group container to use. You find these in the App Groups capabilities section of your Xcode project. For more information, see [Configuring app groups](../../../Xcode/configuring-app-groups.md).
 
 ## See Also
 
-- [static var automatic: ModelConfiguration.GroupContainer](modelconfiguration/groupcontainer-swift.struct/automatic.md)
+### Getting discovery options
+- [static var automatic: ModelConfiguration.GroupContainer](./automatic.md)
   Tells SwiftData to use the app’s primary group container as the root location for the persistent storage.
-- [static var none: ModelConfiguration.GroupContainer](modelconfiguration/groupcontainer-swift.struct/none.md)
+- [static var none: ModelConfiguration.GroupContainer](./none.md)
   Prevents SwiftData from using a group container as the root location for the app’s persistent storage.
 
 

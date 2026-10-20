@@ -1,7 +1,8 @@
 # listAccompaniedSidebarCell()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates the default configuration you use to style a cell in an accompanied sidebar list.
 
@@ -9,7 +10,7 @@ Creates the default configuration you use to style a cell in an accompanied side
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,15 +26,16 @@ The default configuration for a cell in an accompanied sidebar list.
 
 Create this configuration to update the styling for the background of a cell in a list. When you apply this configuration to a cell, the background of the cell matches the system default styling for a cell in an accompanied sidebar collection view list, including styling for highlighted and selected states. An accompanied sidebar collection view list is a list that’s in the primary column of a split view controller, accompanied by another list in the split view controller’s supplementary column.
 
-For an appearance consistent with system defaults, use this background configuration for a cell in an accompanied sidebar collection view list that you configure with the [`UICollectionLayoutListConfiguration.Appearance.sidebar`](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebar.md) or [`UICollectionLayoutListConfiguration.Appearance.sidebarPlain`](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebarplain.md) enumeration case.
+For an appearance consistent with system defaults, use this background configuration for a cell in an accompanied sidebar collection view list that you configure with the [`UICollectionLayoutListConfiguration.Appearance.sidebar`](../uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebar.md) or [`UICollectionLayoutListConfiguration.Appearance.sidebarPlain`](../uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebarplain.md) enumeration case.
 
 ## See Also
 
-- [static func listPlainCell() -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/listplaincell.md)
+### Creating cell background configurations
+- [static func listPlainCell() -> UIBackgroundConfiguration](./listplaincell%28%29.md)
   Creates the default configuration you use to style a cell in a plain list.
-- [static func listGroupedCell() -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/listgroupedcell.md)
+- [static func listGroupedCell() -> UIBackgroundConfiguration](./listgroupedcell%28%29.md)
   Creates the default configuration you use to style a cell in a grouped list.
-- [static func listSidebarCell() -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/listsidebarcell.md)
+- [static func listSidebarCell() -> UIBackgroundConfiguration](./listsidebarcell%28%29.md)
   Creates the default configuration you use to style a cell in a sidebar list.
 
 

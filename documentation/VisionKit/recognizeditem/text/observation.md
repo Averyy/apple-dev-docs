@@ -1,7 +1,8 @@
 # observation
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that contains details about the location and content of text and glyphs in an image.
 
@@ -22,7 +23,8 @@ Use this property only if you need vision details that aren’t included in the 
 
 ## See Also
 
-- [var bounds: RecognizedItem.Bounds](recognizeditem/text/bounds.md)
+### Locating text
+- [var bounds: RecognizedItem.Bounds](./bounds.md)
   The bounds of the recognized item in view coordinates.
 
 

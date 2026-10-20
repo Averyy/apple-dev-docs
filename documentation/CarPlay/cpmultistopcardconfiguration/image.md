@@ -1,7 +1,8 @@
 # image
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional image displayed alongside the @c title in the options panel, serving as an entry point to the multi-stop panel.
 
@@ -15,6 +16,10 @@ An optional image displayed alongside the @c title in the options panel, serving
 ```swift
 @NSCopying
 var image: UIImage? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) UIImage * image;
 ```
 
 

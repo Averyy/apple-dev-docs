@@ -1,7 +1,8 @@
 # deltaBetweenPreferredStartTimes
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delta between successive preferred start times.
 

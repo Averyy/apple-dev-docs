@@ -1,7 +1,8 @@
 # isISOLanguage
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this language code is in the list of ISO-defined languages.
 
@@ -22,7 +23,7 @@ var isISOLanguage: Bool { get }
 
 #### Discussion
 
-The following code snippet illustrates use of the [`isISOLanguage`](locale/languagecode-swift.struct/isisolanguage.md) value.
+The following code snippet illustrates use of the [`isISOLanguage`](./isisolanguage.md) value.
 
 ```swift
 let enIsISO = Locale.LanguageCode("en").isISOLanguage // true
@@ -31,7 +32,8 @@ let gibberishIsISO = Locale.LanguageCode("gibberish").isISOLanguage // false
 
 ## See Also
 
-- [var identifier: String](locale/languagecode-swift.struct/identifier.md)
+### Examining language code properties
+- [var identifier: String](./identifier.md)
   The identifier used to create the language code.
 
 

@@ -1,7 +1,8 @@
 # sessionIdentifier
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the keyboard session.
 
@@ -14,6 +15,10 @@ A unique identifier for the keyboard session.
 
 ```swift
 var sessionIdentifier: String { get }
+```
+
+```objc
+@property (copy, readonly) NSString * sessionIdentifier;
 ```
 
 #### Discussion

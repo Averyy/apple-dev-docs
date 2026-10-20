@@ -1,7 +1,8 @@
 # GL_TEXTURE_CUBE_MAP_POSITIVE_Z
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_TEXTURE_CUBE_MAP_POSITIVE_Z: Int32 { get }
+```
+
+```c
+#define GL_TEXTURE_CUBE_MAP_POSITIVE_Z
 ```
 
 

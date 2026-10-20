@@ -1,7 +1,8 @@
 # register(_:)
 
 **Framework**: Core Video  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Register a new pixel format with CoreVideo.
 

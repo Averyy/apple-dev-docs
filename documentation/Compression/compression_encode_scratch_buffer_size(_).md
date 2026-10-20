@@ -1,7 +1,8 @@
 # compression_encode_scratch_buffer_size(_:)
 
 **Framework**: Compression  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the required compression scratch buffer size for the selected algorithm.
 
@@ -20,29 +21,34 @@ Returns the required compression scratch buffer size for the selected algorithm.
 func compression_encode_scratch_buffer_size(_ algorithm: compression_algorithm) -> Int
 ```
 
+```c
+extern size_t compression_encode_scratch_buffer_size(compression_algorithm algorithm);
+```
+
 #### Return Value
 
 Size in bytes.
 
 #### Discussion
 
-- algorithm: A constant of type [`compression_algorithm`](compression_algorithm.md) that specifies the compression algorithm.
+- algorithm: A constant of type [`compression_algorithm`](./compression_algorithm.md) that specifies the compression algorithm.
 
 #### Discussion
 
-This function returns the number of bytes to provide in an optional scratch buffer when calling [`compression_encode_buffer(_:_:_:_:_:_:)`](compression_encode_buffer(_:_:_:_:_:_:).md).
+This function returns the number of bytes to provide in an optional scratch buffer when calling [`compression_encode_buffer(_:_:_:_:_:_:)`](./compression_encode_buffer%28_,_,_,_,_,_%29.md).
 
 ## See Also
 
-- [Compressing and decompressing data with buffer compression](../accelerate/compressing-and-decompressing-data-with-buffer-compression.md)
+### Single-step compression
+- [Compressing and decompressing data with buffer compression](../Accelerate/compressing-and-decompressing-data-with-buffer-compression.md)
   Compress a string, write it to the file system, and decompress the same file using buffer compression.
-- [func compression_encode_buffer(UnsafeMutablePointer<UInt8>, Int, UnsafePointer<UInt8>, Int, UnsafeMutableRawPointer?, compression_algorithm) -> Int](compression_encode_buffer(_:_:_:_:_:_:).md)
+- [func compression_encode_buffer(UnsafeMutablePointer<UInt8>, Int, UnsafePointer<UInt8>, Int, UnsafeMutableRawPointer?, compression_algorithm) -> Int](./compression_encode_buffer%28_,_,_,_,_,_%29.md)
   Compresses the contents of a source buffer into a destination buffer.
-- [func compression_decode_scratch_buffer_size(compression_algorithm) -> Int](compression_decode_scratch_buffer_size(_:).md)
+- [func compression_decode_scratch_buffer_size(compression_algorithm) -> Int](./compression_decode_scratch_buffer_size%28_%29.md)
   Returns the required decompression scratch buffer size for the selected algorithm.
-- [func compression_decode_buffer(UnsafeMutablePointer<UInt8>, Int, UnsafePointer<UInt8>, Int, UnsafeMutableRawPointer?, compression_algorithm) -> Int](compression_decode_buffer(_:_:_:_:_:_:).md)
+- [func compression_decode_buffer(UnsafeMutablePointer<UInt8>, Int, UnsafePointer<UInt8>, Int, UnsafeMutableRawPointer?, compression_algorithm) -> Int](./compression_decode_buffer%28_,_,_,_,_,_%29.md)
   Decompresses the contents of a source buffer into a destination buffer.
-- [struct compression_algorithm](compression_algorithm.md)
+- [struct compression_algorithm](./compression_algorithm.md)
   A structure for values that represent compression algorithms.
 
 

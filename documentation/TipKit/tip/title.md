@@ -2,6 +2,7 @@
 
 **Framework**: TipKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A title that names the tip.
@@ -27,11 +28,12 @@ Use this property to convey the benefit of your tip. All tips require a title.
 
 ## See Also
 
-- [var message: Text?](tip/message.md)
+### Setting tip content
+- [var message: Text?](./message.md)
   A short description of how to use the tip’s feature.
-- [var image: Image?](tip/image.md)
+- [var image: Image?](./image.md)
   The image associated with the tip.
-- [var id: String](tip/id.md)
+- [var id: String](./id.md)
   The tip’s unique identifier.
 
 

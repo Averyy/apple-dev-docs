@@ -1,7 +1,8 @@
 # accessibilityUserInputLabels
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 ```swift
 @MainActor
 var accessibilityUserInputLabels: [String]! { get set }
+```
+
+```objc
+@property (nonatomic, strong, null_resettable) NSArray<NSString *> * accessibilityUserInputLabels;
 ```
 
 

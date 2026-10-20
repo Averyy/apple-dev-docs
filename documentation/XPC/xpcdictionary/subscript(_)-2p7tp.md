@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: XPC  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Get or set an `XPCEndpoint` value in this dictionary.
 

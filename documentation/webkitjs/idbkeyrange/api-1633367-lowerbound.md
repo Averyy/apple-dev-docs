@@ -1,7 +1,8 @@
 # lowerBound
 
 **Framework**: WebKit JS  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - Safari Desktop 9.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 static IDBKeyRange lowerBound(
     any lower, 
     optional boolean open

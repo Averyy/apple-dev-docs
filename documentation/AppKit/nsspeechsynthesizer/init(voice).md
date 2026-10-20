@@ -1,17 +1,24 @@
 # init(voice:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the receiver with a voice.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 14.0
+
+> **Deprecated**: Use AVSpeechSynthesizer in AVFoundation instead
 
 ## Declaration
 
 ```swift
 init?(voice: NSSpeechSynthesizer.VoiceName?)
+```
+
+```objc
+- (instancetype) initWithVoice:(NSSpeechSynthesizerVoiceName) voice;
 ```
 
 #### Return Value
@@ -24,7 +31,8 @@ Initialized speech synthesizer or `nil` when the voice identified by `voiceIdent
 
 ## See Also
 
-- [class var availableVoices: [NSSpeechSynthesizer.VoiceName]](nsspeechsynthesizer/availablevoices.md)
+### Related Documentation
+- [class var availableVoices: [NSSpeechSynthesizer.VoiceName]](./availablevoices.md)
   Provides the identifiers of the voices available on the system.
 
 

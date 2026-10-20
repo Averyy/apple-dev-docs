@@ -1,7 +1,8 @@
 # stop(id:)
 
 **Framework**: AlarmKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the alarm with the specified ID.
 
@@ -26,13 +27,14 @@ If the alarm is a one-shot, meaning it doesn’t have a repeating schedule, then
 
 ## See Also
 
-- [func cancel(id: Alarm.ID) throws](alarmmanager/cancel(id:).md)
+### Changing an alarm state
+- [func cancel(id: Alarm.ID) throws](./cancel%28id%29.md)
   Cancels the alarm with the specified ID.
-- [func countdown(id: Alarm.ID) throws](alarmmanager/countdown(id:).md)
+- [func countdown(id: Alarm.ID) throws](./countdown%28id%29.md)
   Performs a countdown for the alarm with the specified ID if it’s currently alerting.
-- [func pause(id: Alarm.ID) throws](alarmmanager/pause(id:).md)
+- [func pause(id: Alarm.ID) throws](./pause%28id%29.md)
   Pauses the alarm with the specified ID if it’s in the countdown state.
-- [func resume(id: Alarm.ID) throws](alarmmanager/resume(id:).md)
+- [func resume(id: Alarm.ID) throws](./resume%28id%29.md)
   Resumes the alarm with the specified ID if it’s in the paused state.
 
 

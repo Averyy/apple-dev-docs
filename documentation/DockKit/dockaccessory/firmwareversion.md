@@ -1,7 +1,8 @@
 # firmwareVersion
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The firmware version of the dock accessory.
 
@@ -23,19 +24,20 @@ The format of the version is major, minor, and revision, separated by periods.
 
 ## See Also
 
-- [var hardwareModel: String?](dockaccessory/hardwaremodel.md)
+### Getting accessory information
+- [var hardwareModel: String?](./hardwaremodel.md)
   The model of the dock accessory.
-- [let identifier: DockAccessory.Identifier](dockaccessory/identifier-swift.property.md)
+- [let identifier: DockAccessory.Identifier](./identifier-swift.property.md)
   The name and unique identifer of the dock accessory.
-- [DockAccessory.Identifier](dockaccessory/identifier-swift.struct.md)
+- [DockAccessory.Identifier](./identifier-swift.struct.md)
   Information that uniquely identifies the dock accessory.
-- [DockAccessory.Category](dockaccessory/category.md)
+- [DockAccessory.Category](./category.md)
   Types of supported dock accesories.
-- [DockAccessory.State](dockaccessory/state.md)
+- [DockAccessory.State](./state.md)
   The state of a dock accessory.
-- [DockAccessory.StateChange](dockaccessory/statechange.md)
+- [DockAccessory.StateChange](./statechange.md)
   An event that indicates a change in the state of a dock accessory.
-- [DockAccessory.StateChanges](dockaccessory/statechanges.md)
+- [DockAccessory.StateChanges](./statechanges.md)
   An asynchronous sequence of dock accessory state changes.
 
 

@@ -1,7 +1,8 @@
 # contentUnavailableConfigurationState
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current configuration state of the content-unavailable view.
 
@@ -10,7 +11,7 @@ The current configuration state of the content-unavailable view.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,13 +26,14 @@ You can customize the configuration state by overriding this property in your su
 
 ## See Also
 
-- [var contentUnavailableConfiguration: (any UIContentConfiguration)?](uiviewcontroller/contentunavailableconfiguration-4b95e.md)
+### Indicating missing content
+- [var contentUnavailableConfiguration: (any UIContentConfiguration)?](./contentunavailableconfiguration-4b95e.md)
   The current content-unavailable configuration of the view controller.
-- [func setNeedsUpdateContentUnavailableConfiguration()](uiviewcontroller/setneedsupdatecontentunavailableconfiguration.md)
+- [func setNeedsUpdateContentUnavailableConfiguration()](./setneedsupdatecontentunavailableconfiguration%28%29.md)
   Requests that the system update the content-unavailable configuration for the latest state.
-- [func updateContentUnavailableConfiguration(using: UIContentUnavailableConfigurationState)](uiviewcontroller/updatecontentunavailableconfiguration(using:).md)
+- [func updateContentUnavailableConfiguration(using: UIContentUnavailableConfigurationState)](./updatecontentunavailableconfiguration%28using%29.md)
   Updates the content-unavailable configuration for the provided state.
-- [struct UIContentUnavailableConfiguration](uicontentunavailableconfiguration-swift.struct.md)
+- [struct UIContentUnavailableConfiguration](../uicontentunavailableconfiguration-swift.struct.md)
   A content configuration for a content-unavailable view.
 
 

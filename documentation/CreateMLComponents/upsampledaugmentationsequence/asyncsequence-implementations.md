@@ -1,11 +1,12 @@
 # AsyncSequence Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [UpsampledAugmentationSequence.AsyncIterator](upsampledaugmentationsequence/asynciterator.md)
+- [UpsampledAugmentationSequence.AsyncIterator](./asynciterator.md)
   The iterator that produces elements in the augmentation sequence.
 
 

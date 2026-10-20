@@ -1,6 +1,7 @@
 # Processing queued notifications
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Respond to notifications when coming out of the suspended state.
 
@@ -12,16 +13,16 @@ The following table lists the notifications that apps can receive after they sta
 
 | Event | Notifications |
 | --- | --- |
-| The user changed your app’s preferences | [`didChangeNotification`](https://developer.apple.com/documentation/foundation/userdefaults/didchangenotification) |
-| The current language or locale settings changed | [`currentLocaleDidChangeNotification`](https://developer.apple.com/documentation/foundation/nslocale/currentlocaledidchangenotification) |
-| The screen mode of a display changes | [`modeDidChangeNotification`](uiscreen/modedidchangenotification.md) |
-| An external display is connected or disconnected | [`didConnectNotification`](uiscreen/didconnectnotification.md) ![None](/images/com.apple.uikit/spacer.png) [`didDisconnectNotification`](uiscreen/diddisconnectnotification.md) |
-| An accessory is connected or disconnected | [`EAAccessoryDidConnect`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/eaaccessorydidconnect) (Swift) or [`EAAccessoryDidConnectNotification`](https://developer.apple.com/documentation/externalaccessory/eaaccessorydidconnectnotification) (Objective-C) ![None](/images/com.apple.uikit/spacer.png) [`EAAccessoryDidDisconnect`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/eaaccessorydiddisconnect) (Swift) or [`EAAccessoryDidDisconnectNotification`](https://developer.apple.com/documentation/externalaccessory/eaaccessorydiddisconnectnotification) (Objective-C) |
-| The status of the user’s iCloud account changed | [`NSUbiquityIdentityDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsubiquityidentitydidchange) |
-| The device orientation changed | [`orientationDidChangeNotification`](uidevice/orientationdidchangenotification.md) ![None](/images/com.apple.uikit/spacer.png) (UIKit automatically updates the interface orientation of your view controllers when appropriate.) |
-| There was a significant time change | [`significantTimeChangeNotification`](uiapplication/significanttimechangenotification.md) |
-| The battery level or battery state changed | [`batteryLevelDidChangeNotification`](uidevice/batteryleveldidchangenotification.md) ![None](/images/com.apple.uikit/spacer.png) [`batteryStateDidChangeNotification`](uidevice/batterystatedidchangenotification.md) |
-| The device’s proximity to the user changed | [`proximityStateDidChangeNotification`](uidevice/proximitystatedidchangenotification.md) |
+| The user changed your app’s preferences | [`didChangeNotification`](../Foundation/userdefaults/didchangenotification.md) |
+| The current language or locale settings changed | [`currentLocaleDidChangeNotification`](../Foundation/nslocale/currentlocaledidchangenotification.md) |
+| The screen mode of a display changes | [`modeDidChangeNotification`](./uiscreen/modedidchangenotification.md) |
+| An external display is connected or disconnected | [`didConnectNotification`](./uiscreen/didconnectnotification.md) ![](https://developer.apple.com/tutorials/images/com.apple.uikit/spacer.png) [`didDisconnectNotification`](./uiscreen/diddisconnectnotification.md) |
+| An accessory is connected or disconnected | [`EAAccessoryDidConnect`](../Foundation/nsnotification/name-swift.struct/eaaccessorydidconnect.md) (Swift) or [`EAAccessoryDidConnectNotification`](../ExternalAccessory/eaaccessorydidconnectnotification.md) (Objective-C) ![](https://developer.apple.com/tutorials/images/com.apple.uikit/spacer.png) [`EAAccessoryDidDisconnect`](../Foundation/nsnotification/name-swift.struct/eaaccessorydiddisconnect.md) (Swift) or [`EAAccessoryDidDisconnectNotification`](../ExternalAccessory/eaaccessorydiddisconnectnotification.md) (Objective-C) |
+| The status of the user’s iCloud account changed | [`NSUbiquityIdentityDidChange`](../Foundation/nsnotification/name-swift.struct/nsubiquityidentitydidchange.md) |
+| The device orientation changed | [`orientationDidChangeNotification`](./uidevice/orientationdidchangenotification.md) ![](https://developer.apple.com/tutorials/images/com.apple.uikit/spacer.png) (UIKit automatically updates the interface orientation of your view controllers when appropriate.) |
+| There was a significant time change | [`significantTimeChangeNotification`](./uiapplication/significanttimechangenotification.md) |
+| The battery level or battery state changed | [`batteryLevelDidChangeNotification`](./uidevice/batteryleveldidchangenotification.md) ![](https://developer.apple.com/tutorials/images/com.apple.uikit/spacer.png) [`batteryStateDidChangeNotification`](./uidevice/batterystatedidchangenotification.md) |
+| The device’s proximity to the user changed | [`proximityStateDidChangeNotification`](./uidevice/proximitystatedidchangenotification.md) |
 
 When a suspended app starts running again, the system delivers any queued notifications on the app’s main thread before it delivers any touch events or user input. Handle all notifications as quickly as possible.
 

@@ -1,7 +1,8 @@
 # isLenient
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether to use heuristics when parsing the representation.
 

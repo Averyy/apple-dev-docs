@@ -1,7 +1,8 @@
 # setAll(value:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the data for all vertices to a common value.
 
@@ -22,13 +23,14 @@ mutating func setAll(value: ElementType)
 
 ## See Also
 
-- [func set(vertexIndices: [UInt32], value: ElementType)](perclothvertexdata/set(vertexindices:value:).md)
+### Setting vertex values
+- [func set(vertexIndices: [UInt32], value: ElementType)](./set%28vertexindices,value%29.md)
   Sets the data for the given vertex indices to a common value.
-- [func reset()](perclothvertexdata/reset-1nlsc.md)
+- [func reset()](./reset%28%29-1nlsc.md)
   Resets the per-vertex data of each vertex to the default position constraint.
-- [func reset()](perclothvertexdata/reset-403m8.md)
+- [func reset()](./reset%28%29-403m8.md)
   Resets the per-vertex data of each vertex to a zero-force external force.
-- [func reset()](perclothvertexdata/reset-4x5xi.md)
+- [func reset()](./reset%28%29-4x5xi.md)
   Resets the per-vertex data of each vertex to the default motion type.
 
 

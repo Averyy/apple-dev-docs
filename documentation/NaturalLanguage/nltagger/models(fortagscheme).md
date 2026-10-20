@@ -1,7 +1,8 @@
 # models(forTagScheme:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the models that apply to the given tag scheme.
 
@@ -20,6 +21,10 @@ Returns the models that apply to the given tag scheme.
 func models(forTagScheme tagScheme: NLTagScheme) -> [NLModel]
 ```
 
+```objc
+- (NSArray<NLModel *> *) modelsForTagScheme:(NLTagScheme) tagScheme;
+```
+
 #### Return Value
 
 The array of models that apply to the given tag scheme.
@@ -30,7 +35,8 @@ The array of models that apply to the given tag scheme.
 
 ## See Also
 
-- [func setModels([NLModel], forTagScheme: NLTagScheme)](nltagger/setmodels(_:fortagscheme:).md)
+### Using models with a tagger
+- [func setModels([NLModel], forTagScheme: NLTagScheme)](./setmodels%28_,fortagscheme%29.md)
   Assigns models for a tag scheme.
 
 

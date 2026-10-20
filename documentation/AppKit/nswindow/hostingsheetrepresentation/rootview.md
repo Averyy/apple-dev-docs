@@ -1,7 +1,8 @@
 # rootView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The root view of the sheet.
 

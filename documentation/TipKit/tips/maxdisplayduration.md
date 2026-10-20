@@ -1,7 +1,8 @@
 # MaxDisplayDuration
 
 **Framework**: TipKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Specifies the maximum amount of time a tip is displayed before it is invalidated.
 
@@ -43,20 +44,21 @@ struct FavoriteBackyardTip: Tip {
 ## Topics
 
 ### Initializers
-- [init(TimeInterval)](tips/maxdisplayduration/init(_:).md)
+- [init(TimeInterval)](./maxdisplayduration/init%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Option](tipoption.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Option](../tipoption.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct IgnoresDisplayFrequency](tips/ignoresdisplayfrequency.md)
+### Options
+- [struct IgnoresDisplayFrequency](./ignoresdisplayfrequency.md)
   Controls whether a tip obeys the preconfigured display frequency interval.
-- [struct MaxDisplayCount](tips/maxdisplaycount.md)
+- [struct MaxDisplayCount](./maxdisplaycount.md)
   Specifies the maximum number of times a tip displays before the system automatically invalidates it.
 
 

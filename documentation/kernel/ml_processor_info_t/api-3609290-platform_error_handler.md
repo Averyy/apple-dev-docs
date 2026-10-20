@@ -1,14 +1,15 @@
 # platform_error_handler
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 platform_error_handler_t platform_error_handler;
 ```
 

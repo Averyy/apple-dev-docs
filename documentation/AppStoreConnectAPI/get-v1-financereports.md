@@ -1,7 +1,8 @@
 # Download finance reports
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Download finance reports filtered by your specified criteria.
 
@@ -10,11 +11,11 @@ Download finance reports filtered by your specified criteria.
 
 ## Mentions
 
-- [Downloading Analytics Reports](downloading-analytics-reports.md)
+- [Downloading Analytics Reports](./downloading-analytics-reports.md)
 
 #### Discussion
 
-For more information see [`Download financial reports`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports).
+For more information see [Download financial reports](https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports).
 
 ## Endpoint
 
@@ -22,14 +23,27 @@ For more information see [`Download financial reports`](https://developer.apple.
 
 ## Parameters
 
-- `filter[regionCode]` ([string]) *(required)*: You can download consolidated or separate financial reports per territory. For a complete list of possible values, see [`Financial report regions and currencies`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/financial-report-regions-and-currencies).
-- `filter[reportDate]` ([string]) *(required)*: The fiscal month of the report you wish to download based on the [`Apple Fiscal Calendar`](https://developer.apple.comhttps://appstoreconnect.apple.com/WebObjects/iTunesConnect.woa/wa/jumpTo?page=fiscalcalendar). The fiscal month is specified in the `YYYY-MM` format.
+### Query Parameters
+
+- `filter[regionCode]` ([string]) *(required)*: You can download consolidated or separate financial reports per territory. For a complete list of possible values, see [Financial report regions and currencies](https://developer.apple.com/help/app-store-connect/reference/financial-report-regions-and-currencies).
+- `filter[reportDate]` ([string]) *(required)*: The fiscal month of the report you wish to download based on the [Apple Fiscal Calendar](https://appstoreconnect.apple.com/WebObjects/iTunesConnect.woa/wa/jumpTo?page=fiscalcalendar). The fiscal month is specified in the `YYYY-MM` format.
 - `filter[reportType]` ([string]) *(required)*: This value is always `FINANCIAL`.
-- `filter[vendorNumber]` ([string]) *(required)*: You can find your vendor number in [`View payments and proceeds`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/getting-paid/view-payments-and-proceeds).
+
+  **Allowed Values**: `FINANCIAL`, `FINANCE_DETAIL`
+- `filter[vendorNumber]` ([string]) *(required)*: You can find your vendor number in [View payments and proceeds](https://developer.apple.com/help/app-store-connect/getting-paid/view-payments-and-proceeds).
+
+## Responses
+
+- `200` OK (`gzip`, `application/a-gzip`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Download sales and trends reports](get-v1-salesreports.md)
+### Downloading Reports
+- [Download sales and trends reports](./get-v1-salesreports.md)
   Download sales and trends reports filtered by your specified criteria.
 
 

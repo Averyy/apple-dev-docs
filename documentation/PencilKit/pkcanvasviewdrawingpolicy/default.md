@@ -1,7 +1,8 @@
 # PKCanvasViewDrawingPolicy.default
 
 **Framework**: PencilKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default input type to use for drawing on a canvas.
 
@@ -17,15 +18,20 @@ The default input type to use for drawing on a canvas.
 case `default`
 ```
 
+```c
+PKCanvasViewDrawingPolicyDefault
+```
+
 #### Discussion
 
-By default, if the tool picker is visible, respect the pencil interaction setting of the [`prefersPencilOnlyDrawing`](https://developer.apple.com/documentation/uikit/uipencilinteraction/preferspencilonlydrawing) property; otherwise only accept input from Apple Pencil.
+By default, if the tool picker is visible, respect the pencil interaction setting of the [`prefersPencilOnlyDrawing`](../../UIKit/uipencilinteraction/preferspencilonlydrawing.md) property; otherwise only accept input from Apple Pencil.
 
 ## See Also
 
-- [PKCanvasViewDrawingPolicy.anyInput](pkcanvasviewdrawingpolicy/anyinput.md)
+### Drawing policies
+- [PKCanvasViewDrawingPolicy.anyInput](./anyinput.md)
   Allows drawing on the canvas from any input source.
-- [PKCanvasViewDrawingPolicy.pencilOnly](pkcanvasviewdrawingpolicy/pencilonly.md)
+- [PKCanvasViewDrawingPolicy.pencilOnly](./pencilonly.md)
   Pencil touches are the only input that draw on the canvas.
 
 

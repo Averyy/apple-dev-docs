@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image to use as a foreground image.
@@ -11,7 +12,7 @@ The image to use as a foreground image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,11 +21,16 @@ The image to use as a foreground image.
 var inputImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage;
+```
+
 ## See Also
 
-- [var backgroundImage: CIImage?](ciblendwithmask/backgroundimage.md)
+### Instance Properties
+- [var backgroundImage: CIImage?](./backgroundimage.md)
   The image to use as a background image.
-- [var maskImage: CIImage?](ciblendwithmask/maskimage.md)
+- [var maskImage: CIImage?](./maskimage.md)
   A grayscale mask that defines the blend.
 
 

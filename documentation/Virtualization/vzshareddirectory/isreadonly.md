@@ -1,7 +1,8 @@
 # isReadOnly
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the directory is read-only to the guest.
 
@@ -14,9 +15,14 @@ A Boolean value that indicates whether the directory is read-only to the guest.
 var isReadOnly: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isReadOnly) BOOL readOnly;
+```
+
 ## See Also
 
-- [var url: URL](vzshareddirectory/url.md)
+### Accessing Directory Properties
+- [var url: URL](./url.md)
   A file URL to a directory on the host system to expose to the guest.
 
 

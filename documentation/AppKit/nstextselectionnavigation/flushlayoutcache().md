@@ -1,7 +1,8 @@
 # flushLayoutCache()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Flushes cached layout information.
 
@@ -12,6 +13,10 @@ Flushes cached layout information.
 
 ```swift
 func flushLayoutCache()
+```
+
+```objc
+- (void) flushLayoutCache;
 ```
 
 #### Discussion

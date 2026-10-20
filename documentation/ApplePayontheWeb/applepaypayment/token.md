@@ -1,7 +1,8 @@
 # token
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The encrypted information for an authorized payment.
 
@@ -11,19 +12,20 @@ The encrypted information for an authorized payment.
 
 ## Declaration
 
-```swift
+```
 required ApplePayPaymentToken token;
 ```
 
 ## See Also
 
-- [ApplePayPaymentToken](applepaypaymenttoken.md)
+### Payment token
+- [ApplePayPaymentToken](../applepaypaymenttoken.md)
   An object that contains the user’s payment credentials.
-- [ApplePayPaymentMethod](applepaypaymentmethod.md)
+- [ApplePayPaymentMethod](../applepaypaymentmethod.md)
   A dictionary that describes an Apple Pay payment method.
-- [ApplePayPaymentMethodType](applepaypaymentmethodtype.md)
+- [ApplePayPaymentMethodType](../applepaypaymentmethodtype.md)
   A string that represents the type of the payment method.
-- [ApplePayPaymentPass](applepaypaymentpass.md)
+- [ApplePayPaymentPass](../applepaypaymentpass.md)
   A provisioned payment card for Apple Pay payments.
 
 

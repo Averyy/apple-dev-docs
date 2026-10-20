@@ -1,7 +1,8 @@
 # clinicalType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier that indicates the type of record, such as an allergic reaction, a lab result, or a medical procedure.
 
@@ -19,11 +20,16 @@ An identifier that indicates the type of record, such as an allergic reaction, a
 var clinicalType: HKClinicalType { get }
 ```
 
+```objc
+@property (copy, readonly) HKClinicalType * clinicalType;
+```
+
 ## See Also
 
-- [var displayName: String](hkclinicalrecord/displayname.md)
+### Accessing Clinical Record Data
+- [var displayName: String](./displayname.md)
   The primary display name as shown in the Health app.
-- [var fhirResource: HKFHIRResource?](hkclinicalrecord/fhirresource.md)
+- [var fhirResource: HKFHIRResource?](./fhirresource.md)
   The Fast Healthcare Interoperability Resources (FHIR) data for this record.
 
 

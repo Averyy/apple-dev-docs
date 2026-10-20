@@ -1,7 +1,8 @@
 # AVSpeechBoundary.immediate
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates to pause or stop speech immediately.
 
@@ -10,7 +11,7 @@ Indicates to pause or stop speech immediately.
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.14+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,14 @@ Indicates to pause or stop speech immediately.
 case immediate
 ```
 
+```c
+AVSpeechBoundaryImmediate
+```
+
 ## See Also
 
-- [AVSpeechBoundary.word](avspeechboundary/word.md)
+### Choosing a speech boundary
+- [AVSpeechBoundary.word](./word.md)
   Indicates to pause or stop speech after the synthesizer finishes speaking the current word.
 
 

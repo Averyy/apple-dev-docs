@@ -1,14 +1,15 @@
 # snd_family
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned char snd_family;
 ```
 

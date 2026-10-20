@@ -1,7 +1,8 @@
 # AMActionErrorKey
 
 **Framework**: Automator  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key to retrieve the action that caused an error.
 
@@ -15,17 +16,22 @@ A key to retrieve the action that caused an error.
 var AMActionErrorKey: String { get }
 ```
 
+```c
+#define AMActionErrorKey
+```
+
 #### Discussion
 
-Use this key to obtain, from the [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary of an instance of [`NSError`](https://developer.apple.com/documentation/foundation/nserror), a reference to the action ([`AMAction`](amaction.md)) that caused the error.
+Use this key to obtain, from the [`userInfo`](../Foundation/nserror/userinfo.md) dictionary of an instance of [`NSError`](../Foundation/nserror.md), a reference to the action ([`AMAction`](./amaction.md)) that caused the error.
 
 ## See Also
 
-- [var AMAutomatorErrorDomain: String](amautomatorerrordomain.md)
+### Errors
+- [var AMAutomatorErrorDomain: String](./amautomatorerrordomain.md)
   A string that identifies the Automator error domain.
-- [struct AMError](amerror.md)
+- [struct AMError](./amerror.md)
   An Automator error.
-- [AMError.Code](amerror/code.md)
+- [AMError.Code](./amerror/code.md)
   Automator error codes.
 
 

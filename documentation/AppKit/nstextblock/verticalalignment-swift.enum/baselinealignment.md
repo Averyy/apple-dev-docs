@@ -1,12 +1,13 @@
 # baselineAlignment
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Aligns adjacent blocks at the baseline of the first line of text in the block.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 27.0 (renamed: NSTextBlock.VerticalAlignment.baseline)
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Aligns adjacent blocks at the baseline of the first line of text in the block.
 static var baselineAlignment: NSTextBlock.VerticalAlignment { get }
 ```
 
+```c
+NSTextBlockBaselineAlignment
+```
+
 ## See Also
 
-- [static var topAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.enum/topalignment.md)
+### Deprecated
+- [static var topAlignment: NSTextBlock.VerticalAlignment](./topalignment.md)
   Aligns adjacent blocks at their top.
-- [static var middleAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.enum/middlealignment.md)
+- [static var middleAlignment: NSTextBlock.VerticalAlignment](./middlealignment.md)
   Aligns adjacent blocks at their middle.
-- [static var bottomAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.enum/bottomalignment.md)
+- [static var bottomAlignment: NSTextBlock.VerticalAlignment](./bottomalignment.md)
   Aligns adjacent blocks at their bottom.
 
 

@@ -1,7 +1,8 @@
 # ASCredentialIdentityStoreErrorDomain
 
 **Framework**: Authentication Services  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for a credential identity store error.
 
@@ -18,11 +19,16 @@ The domain for a credential identity store error.
 let ASCredentialIdentityStoreErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const ASCredentialIdentityStoreErrorDomain;
+```
+
 ## See Also
 
-- [struct ASCredentialIdentityStoreError](ascredentialidentitystoreerror.md)
+### Recognizing errors
+- [struct ASCredentialIdentityStoreError](./ascredentialidentitystoreerror.md)
   A credential identity store error.
-- [ASCredentialIdentityStoreError.Code](ascredentialidentitystoreerror/code.md)
+- [ASCredentialIdentityStoreError.Code](./ascredentialidentitystoreerror/code.md)
   Constants that represent credential identity store error codes.
 
 

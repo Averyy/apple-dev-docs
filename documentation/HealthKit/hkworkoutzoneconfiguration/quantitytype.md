@@ -1,7 +1,8 @@
 # quantityType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that specifies the quantity type to which the zones apply.
 
@@ -25,7 +26,8 @@ Workout zones support the heart rate and cycling power quantity types.
 
 ## See Also
 
-- [let zones: [HKWorkoutZone]](hkworkoutzoneconfiguration/zones.md)
+### Accessing configuration properties
+- [let zones: [HKWorkoutZone]](./zones.md)
   A property that contains the workout zones, ordered from lowest to highest threshold.
 
 

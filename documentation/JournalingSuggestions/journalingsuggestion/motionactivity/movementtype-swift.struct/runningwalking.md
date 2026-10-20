@@ -1,7 +1,8 @@
 # runningWalking
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mixed running and walking movement activity type.
 
@@ -16,9 +17,10 @@ static let runningWalking: JournalingSuggestion.MotionActivity.MovementType
 
 ## See Also
 
-- [static let running: JournalingSuggestion.MotionActivity.MovementType](journalingsuggestion/motionactivity/movementtype-swift.struct/running.md)
+### Recording movement type
+- [static let running: JournalingSuggestion.MotionActivity.MovementType](./running.md)
   A running movement activity type.
-- [static let walking: JournalingSuggestion.MotionActivity.MovementType](journalingsuggestion/motionactivity/movementtype-swift.struct/walking.md)
+- [static let walking: JournalingSuggestion.MotionActivity.MovementType](./walking.md)
   A walking movement activity type.
 
 

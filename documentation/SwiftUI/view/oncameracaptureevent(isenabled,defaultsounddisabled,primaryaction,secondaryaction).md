@@ -1,7 +1,8 @@
 # onCameraCaptureEvent(isEnabled:defaultSoundDisabled:primaryAction:secondaryAction:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Used to register actions triggered by system capture events.
 
@@ -15,6 +16,13 @@ Used to register actions triggered by system capture events.
 ```swift
 @MainActor
 @preconcurrency func onCameraCaptureEvent(isEnabled: Bool = true, defaultSoundDisabled: Bool = false, primaryAction: @escaping (AVCaptureEvent) -> Void, secondaryAction: @escaping (AVCaptureEvent) -> Void) -> some View
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency func onCameraCaptureEvent(isEnabled: Bool = true, defaultSoundDisabled: Bool = false, primaryAction: @escaping (AVCaptureEvent) async -> Void, secondaryAction: @escaping (AVCaptureEvent) async -> Void) -> some View
 ```
 
 #### Discussion
@@ -32,13 +40,14 @@ This API is for media capture use cases only.
 
 ## See Also
 
-- [func onCameraCaptureEvent(isEnabled: Bool, action: (AVCaptureEvent) -> Void) -> some View](view/oncameracaptureevent(isenabled:action:).md)
+### Camera
+- [func onCameraCaptureEvent(isEnabled: Bool, action: (AVCaptureEvent) -> Void) -> some View](./oncameracaptureevent%28isenabled,action%29.md)
   Used to register an action triggered by system capture events.
-- [func onCameraCaptureEvent(isEnabled:defaultSoundDisabled:action:)](view/oncameracaptureevent(isenabled:defaultsounddisabled:action:).md)
+- [func onCameraCaptureEvent(isEnabled:defaultSoundDisabled:action:)](./oncameracaptureevent%28isenabled,defaultsounddisabled,action%29.md)
   Used to register an action triggered by system capture events.
-- [func onCameraCaptureEvent(isEnabled: Bool, primaryAction: (AVCaptureEvent) -> Void, secondaryAction: (AVCaptureEvent) -> Void) -> some View](view/oncameracaptureevent(isenabled:primaryaction:secondaryaction:).md)
+- [func onCameraCaptureEvent(isEnabled: Bool, primaryAction: (AVCaptureEvent) -> Void, secondaryAction: (AVCaptureEvent) -> Void) -> some View](./oncameracaptureevent%28isenabled,primaryaction,secondaryaction%29.md)
   Used to register actions triggered by system capture events.
-- [func cameraAnchor(isActive: Bool) -> some View](view/cameraanchor(isactive:).md)
+- [func cameraAnchor(isActive: Bool) -> some View](./cameraanchor%28isactive%29.md)
   Specifies the view that should act as the virtual camera for Apple Vision Pro 2D Persona stream.
 
 

@@ -1,7 +1,8 @@
 # init(upstream:scheduler:options:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that delivers elements to its downstream subscriber on a specific scheduler.
 

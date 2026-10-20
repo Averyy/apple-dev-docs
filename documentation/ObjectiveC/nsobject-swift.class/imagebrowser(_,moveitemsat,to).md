@@ -1,12 +1,13 @@
 # imageBrowser(_:moveItemsAt:to:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Signals that the specified items should be moved to the specified destination.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Signals that the specified items should be moved to the specified destination.
 func imageBrowser(_ aBrowser: IKImageBrowserView!, moveItemsAt indexes: IndexSet!, to destinationIndex: Int) -> Bool
 ```
 
+```objc
+- (BOOL) imageBrowser:(IKImageBrowserView *) aBrowser moveItemsAtIndexes:(NSIndexSet *) indexes toIndex:(NSUInteger) destinationIndex;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if successful; [`NO`](no.md) otherwise.
+[`YES`](../yes.md) if successful; [`NO`](../no.md) otherwise.
 
 #### Discussion
 
@@ -30,7 +35,8 @@ This method is optional. It is invoked by the image browser view after  Image Ki
 
 ## See Also
 
-- [func setAllowsReordering(Bool)](../quartz/ikimagebrowserview/setallowsreordering(_:).md)
+### Related Documentation
+- [func setAllowsReordering(Bool)](../../Quartz/ikimagebrowserview/setallowsreordering%28_%29.md)
   Controls whether the user can reorder items.
 
 

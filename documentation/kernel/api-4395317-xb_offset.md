@@ -1,14 +1,15 @@
 # xb_offset
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 size_t xb_offset(struct xdrbuf *);
 ```
 

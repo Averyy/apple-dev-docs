@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new argument table from an argument table descriptor.
@@ -20,17 +21,21 @@ Creates a new argument table from an argument table descriptor.
 func makeArgumentTable(descriptor: MTL4ArgumentTableDescriptor) throws -> any MTL4ArgumentTable
 ```
 
+```objc
+- (id<MTL4ArgumentTable>) newArgumentTableWithDescriptor:(MTL4ArgumentTableDescriptor *) descriptor error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+- [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
 #### Return Value
 
-A [`MTL4ArgumentTable`](mtl4argumenttable.md) instance, or `nil` if the function failed.
+A [`MTL4ArgumentTable`](../mtl4argumenttable.md) instance, or `nil` if the function failed.
 
 ## Parameters
 
-- `descriptor`: A [`MTL4ArgumentTableDescriptor`](mtl4argumenttabledescriptor.md) instance that configures the [`MTL4ArgumentTable`](mtl4argumenttable.md) instance.
+- `descriptor`: A [`MTL4ArgumentTableDescriptor`](../mtl4argumenttabledescriptor.md) instance that configures the [`MTL4ArgumentTable`](../mtl4argumenttable.md) instance.
 
 
 ---

@@ -1,7 +1,8 @@
 # presentOfferCodeRedeemSheet(from:options:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Presents a sheet that enables users to redeem subscription offer codes that you configure in App Store Connect.
 
@@ -20,27 +21,28 @@ static func presentOfferCodeRedeemSheet(from viewController: UIViewController, o
 
 ## Mentions
 
-- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
+- [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md)
 
 #### Return Value
 
-A [`VerificationResult`](verificationresult.md) containing the [`Transaction`](transaction.md) that the redemption produces.
+A [`VerificationResult`](../verificationresult.md) containing the [`Transaction`](../transaction.md) that the redemption produces.
 
 #### Discussion
 
-> **Note**: [`StoreKitError`](storekiterror.md) if the system cannot present the sheet or the redemption fails.
+> **Throws**: [`StoreKitError`](../storekiterror.md) if the system cannot present the sheet or the redemption fails.
 
 ## Parameters
 
 - `viewController`: The `UIViewController` that StoreKit uses to display the offer code redemption sheet.
-- `options`: A set of [`RedeemOption`](redeemoption.md) values to configure the offer code redemption.
+- `options`: A set of [`RedeemOption`](../redeemoption.md) values to configure the offer code redemption.
 
 ## See Also
 
-- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
+### Presenting the offer code redemption sheet
+- [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md)
   Enable customers to redeem offer codes through the App Store or within your app.
 - [func offerCodeRedemption(options: Set<RedeemOption>, isPresented: Binding<Bool>, onCompletion: (Result<VerificationResult<Transaction>, any Error>) -> Void) -> some View
-](../swiftui/view/offercoderedemption(options:ispresented:oncompletion:).md)
+](../../SwiftUI/view/offercoderedemption%28options,ispresented,oncompletion%29.md)
   Presents a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
 
 

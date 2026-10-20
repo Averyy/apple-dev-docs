@@ -1,7 +1,8 @@
 # modelParameters
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying parameters used when training the model.
 
@@ -21,9 +22,10 @@ let modelParameters: MLBoostedTreeRegressor.ModelParameters
 
 ## See Also
 
-- [var model: MLModel](mlboostedtreeregressor/model.md)
+### Inspecting a boosted tree regressor
+- [var model: MLModel](./model.md)
   The Core ML model.
-- [MLBoostedTreeRegressor.ModelParameters](mlboostedtreeregressor/modelparameters-swift.struct.md)
+- [MLBoostedTreeRegressor.ModelParameters](./modelparameters-swift.struct.md)
   Parameters that affect the process of training a model.
 
 

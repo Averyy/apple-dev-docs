@@ -1,12 +1,13 @@
 # NSTabView.TabType
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-These constants specify the tab view’s type as used by the [`tabViewType`](nstabview/tabviewtype.md) property.
+These constants specify the tab view’s type as used by the [`tabViewType`](./tabviewtype.md) property.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,44 +15,49 @@ These constants specify the tab view’s type as used by the [`tabViewType`](nst
 enum TabType
 ```
 
+```c
+enum NSTabViewType : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSTabView.TabType.topTabsBezelBorder](nstabview/tabtype/toptabsbezelborder.md)
+- [NSTabView.TabType.topTabsBezelBorder](./tabtype/toptabsbezelborder.md)
   The view includes tabs on the top of the view and has a bezeled border (the default).
-- [NSTabView.TabType.noTabsBezelBorder](nstabview/tabtype/notabsbezelborder.md)
+- [NSTabView.TabType.noTabsBezelBorder](./tabtype/notabsbezelborder.md)
   The view does not include tabs and has a bezeled border.
-- [NSTabView.TabType.noTabsLineBorder](nstabview/tabtype/notabslineborder.md)
+- [NSTabView.TabType.noTabsLineBorder](./tabtype/notabslineborder.md)
   The view does not include tabs and has a lined border.
-- [NSTabView.TabType.noTabsNoBorder](nstabview/tabtype/notabsnoborder.md)
+- [NSTabView.TabType.noTabsNoBorder](./tabtype/notabsnoborder.md)
   The view does not include tabs and has no border.
-- [NSTabView.TabType.bottomTabsBezelBorder](nstabview/tabtype/bottomtabsbezelborder.md)
+- [NSTabView.TabType.bottomTabsBezelBorder](./tabtype/bottomtabsbezelborder.md)
   Tabs are on the bottom of the view with a bezeled border.
-- [NSTabView.TabType.leftTabsBezelBorder](nstabview/tabtype/lefttabsbezelborder.md)
+- [NSTabView.TabType.leftTabsBezelBorder](./tabtype/lefttabsbezelborder.md)
   Tabs are on the left of the view with a bezeled border.
-- [NSTabView.TabType.rightTabsBezelBorder](nstabview/tabtype/righttabsbezelborder.md)
+- [NSTabView.TabType.rightTabsBezelBorder](./tabtype/righttabsbezelborder.md)
   Tabs are on the right of the view with a bezeled border.
 ### Initializers
-- [init?(rawValue: UInt)](nstabview/tabtype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./tabtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var tabViewType: NSTabView.TabType](nstabview/tabviewtype.md)
+### Configuring the Tab Attributes
+- [var tabViewType: NSTabView.TabType](./tabviewtype.md)
   The tab type to display the tabs.
-- [var tabPosition: NSTabView.TabPosition](nstabview/tabposition-swift.property.md)
-- [NSTabView.TabPosition](nstabview/tabposition-swift.enum.md)
-- [var tabViewBorderType: NSTabView.TabViewBorderType](nstabview/tabviewbordertype-swift.property.md)
-- [NSTabView.TabViewBorderType](nstabview/tabviewbordertype-swift.enum.md)
+- [var tabPosition: NSTabView.TabPosition](./tabposition-swift.property.md)
+- [NSTabView.TabPosition](./tabposition-swift.enum.md)
+- [var tabViewBorderType: NSTabView.TabViewBorderType](./tabviewbordertype-swift.property.md)
+- [NSTabView.TabViewBorderType](./tabviewbordertype-swift.enum.md)
 
 
 ---

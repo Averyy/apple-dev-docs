@@ -1,7 +1,8 @@
 # canSendWriteWithoutResponse
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the remote device can send a write without a response.
 
@@ -20,15 +21,20 @@ A Boolean value that indicates whether the remote device can send a write withou
 var canSendWriteWithoutResponse: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL canSendWriteWithoutResponse;
+```
+
 #### Discussion
 
-If this value is [`false`](https://developer.apple.com/documentation/swift/false), flushing all current writes sets the value to [`true`](https://developer.apple.com/documentation/swift/true). This also results in a call to the delegate’s [`peripheralIsReady(toSendWriteWithoutResponse:)`](cbperipheraldelegate/peripheralisready(tosendwritewithoutresponse:).md).
+If this value is [`false`](../../Swift/false.md), flushing all current writes sets the value to [`true`](../../Swift/true.md). This also results in a call to the delegate’s [`peripheralIsReady(toSendWriteWithoutResponse:)`](../cbperipheraldelegate/peripheralisready%28tosendwritewithoutresponse%29.md).
 
 ## See Also
 
-- [var state: CBPeripheralState](cbperipheral/state.md)
+### Monitoring a Peripheral’s Connection State
+- [var state: CBPeripheralState](./state.md)
   The connection state of the peripheral.
-- [enum CBPeripheralState](cbperipheralstate.md)
+- [enum CBPeripheralState](../cbperipheralstate.md)
   Values representing the connection state of a peripheral.
 
 

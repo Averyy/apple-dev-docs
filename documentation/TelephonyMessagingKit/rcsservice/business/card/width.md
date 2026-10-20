@@ -1,7 +1,8 @@
 # RCSService.Business.Card.Width
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumeration specifying the width of a card.
 
@@ -17,24 +18,25 @@ enum Width
 ## Topics
 
 ### Determining width
-- [RCSService.Business.Card.Width.medium](rcsservice/business/card/width/medium.md)
+- [RCSService.Business.Card.Width.medium](./width/medium.md)
   Medium width.
-- [RCSService.Business.Card.Width.small](rcsservice/business/card/width/small.md)
+- [RCSService.Business.Card.Width.small](./width/small.md)
   Small width.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [RCSService.Business.Card.Media](rcsservice/business/card/media.md)
+### Supporting types
+- [RCSService.Business.Card.Media](./media.md)
   Structure containing information about media in a card.
 
 

@@ -1,7 +1,8 @@
 # NSExtensionRequestHandling
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface an app extension uses to respond to a request from a host app.
 
@@ -20,24 +21,29 @@ The interface an app extension uses to respond to a request from a host app.
 protocol NSExtensionRequestHandling : NSObjectProtocol
 ```
 
+```objc
+@protocol NSExtensionRequestHandling <NSObject>
+```
+
 #### Overview
 
-The [`NSExtensionRequestHandling`](nsextensionrequesthandling.md) protocol provides a life cycle hook into an app extension. An extension’s principal object can implement this protocol and use [`beginRequest(with:)`](nsextensionrequesthandling/beginrequest(with:).md) to keep track of the request from a host app.
+The [`NSExtensionRequestHandling`](./nsextensionrequesthandling.md) protocol provides a life cycle hook into an app extension. An extension’s principal object can implement this protocol and use [`beginRequest(with:)`](./nsextensionrequesthandling/beginrequest%28with%29.md) to keep track of the request from a host app.
 
 ## Topics
 
 ### Preparing for a request
-- [func beginRequest(with: NSExtensionContext)](nsextensionrequesthandling/beginrequest(with:).md)
+- [func beginRequest(with: NSExtensionContext)](./nsextensionrequesthandling/beginrequest%28with%29.md)
   Tells the extension to prepare for a host app’s request.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSExtensionContext](nsextensioncontext.md)
+### Extension Support
+- [class NSExtensionContext](./nsextensioncontext.md)
   The host app context from which an app extension is invoked.
 
 

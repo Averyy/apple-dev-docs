@@ -1,7 +1,8 @@
 # timeLapse
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the file is a time-lapse video file.
 
@@ -18,11 +19,16 @@ A Boolean value that indicates whether the file is a time-lapse video file.
 var timeLapse: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL timeLapse;
+```
+
 ## See Also
 
-- [var duration: Double](iccamerafile/duration.md)
+### Inspecting Video Properties
+- [var duration: Double](./duration.md)
   The duration, in seconds, of an audio or video file.
-- [var highFramerate: Bool](iccamerafile/highframerate.md)
+- [var highFramerate: Bool](./highframerate.md)
   A Boolean value that indicates whether the file is a slow motion or high-frame-rate video file.
 
 

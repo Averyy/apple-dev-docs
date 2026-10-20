@@ -1,7 +1,8 @@
 # power(exponent:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A number scale where each range value y can be expressed as a power function of the domain value x, with `y = a * pow(x, exponent) + b`.
 

@@ -1,34 +1,46 @@
 # advancedCommerceRefundReason
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 **Availability**:
 - App Store Server API 1.14+
 
 ## Declaration
 
-```swift
+```
 string advancedCommerceRefundReason
 ```
 
+## Possible Values
+
+- `UNINTENDED_PURCHASE`
+- `FULFILLMENT_ISSUE`
+- `UNSATISFIED_WITH_PURCHASE`
+- `LEGAL`
+- `OTHER`
+- `MODIFY_ITEMS_REFUND`
+- `SIMULATE_REFUND_DECLINE`
+
 ## See Also
 
-- [type advancedCommerceConsistencyToken](advancedcommerceconsistencytoken.md)
-- [type advancedCommerceDescription](advancedcommercedescription.md)
-- [type advancedCommerceDisplayName](advancedcommercedisplayname.md)
-- [type advancedCommerceEstimatedTax](advancedcommerceestimatedtax.md)
-- [type advancedCommerceOfferPeriod](advancedcommerceofferperiod.md)
-- [type advancedCommerceOfferPrice](advancedcommerceofferprice.md)
-- [type advancedCommercePeriod](advancedcommerceperiod.md)
-- [type advancedCommercePeriodCount](advancedcommerceperiodcount.md)
-- [type advancedCommercePrice](advancedcommerceprice.md)
-- [type advancedCommercePriceIncreaseInfoDependentSKU](advancedcommercepriceincreaseinfodependentsku.md)
-- [type advancedCommercePriceIncreaseInfoPrice](advancedcommercepriceincreaseinfoprice.md)
-- [type advancedCommercePriceIncreaseInfoStatus](advancedcommercepriceincreaseinfostatus.md)
-- [type advancedCommerceReason](advancedcommercereason.md)
-- [type advancedCommerceRefundAmount](advancedcommercerefundamount.md)
-- [type advancedCommerceRefundDate](advancedcommercerefunddate.md)
+### Data types
+- [type advancedCommerceConsistencyToken](./advancedcommerceconsistencytoken.md)
+- [type advancedCommerceDescription](./advancedcommercedescription.md)
+- [type advancedCommerceDisplayName](./advancedcommercedisplayname.md)
+- [type advancedCommerceEstimatedTax](./advancedcommerceestimatedtax.md)
+- [type advancedCommerceOfferPeriod](./advancedcommerceofferperiod.md)
+- [type advancedCommerceOfferPrice](./advancedcommerceofferprice.md)
+- [type advancedCommercePeriod](./advancedcommerceperiod.md)
+- [type advancedCommercePeriodCount](./advancedcommerceperiodcount.md)
+- [type advancedCommercePrice](./advancedcommerceprice.md)
+- [type advancedCommercePriceIncreaseInfoDependentSKU](./advancedcommercepriceincreaseinfodependentsku.md)
+- [type advancedCommercePriceIncreaseInfoPrice](./advancedcommercepriceincreaseinfoprice.md)
+- [type advancedCommercePriceIncreaseInfoStatus](./advancedcommercepriceincreaseinfostatus.md)
+- [type advancedCommerceReason](./advancedcommercereason.md)
+- [type advancedCommerceRefundAmount](./advancedcommercerefundamount.md)
+- [type advancedCommerceRefundDate](./advancedcommercerefunddate.md)
 
 
 ---

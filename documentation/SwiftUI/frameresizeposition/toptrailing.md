@@ -1,7 +1,8 @@
 # FrameResizePosition.topTrailing
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The top trailing edge of the frame.
 

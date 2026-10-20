@@ -1,7 +1,8 @@
 # array
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array that failed validation.
 
@@ -10,7 +11,7 @@ The array that failed validation.
 
 ## Declaration
 
-```swift
+```
 attribute Array array;
 ```
 

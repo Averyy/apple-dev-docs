@@ -1,7 +1,8 @@
 # scene(_:restoreInteractionStateWith:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -16,13 +17,18 @@
 optional func scene(_ scene: UIScene, restoreInteractionStateWith stateRestorationActivity: NSUserActivity)
 ```
 
+```objc
+- (void) scene:(UIScene *) scene restoreInteractionStateWithUserActivity:(NSUserActivity *) stateRestorationActivity;
+```
+
 ## See Also
 
-- [Restoring your app’s state](restoring-your-app-s-state.md)
+### Saving the state of the scene
+- [Restoring your app’s state](../restoring-your-app-s-state.md)
   Provide continuity for the user by preserving current activities.
-- [func stateRestorationActivity(for: UIScene) -> NSUserActivity?](uiscenedelegate/staterestorationactivity(for:).md)
+- [func stateRestorationActivity(for: UIScene) -> NSUserActivity?](./staterestorationactivity%28for%29.md)
   Returns a user activity object encapsulating the current state of the specified scene.
-- [func scene(UIScene, didUpdate: NSUserActivity)](uiscenedelegate/scene(_:didupdate:).md)
+- [func scene(UIScene, didUpdate: NSUserActivity)](./scene%28_,didupdate%29.md)
   Tells the delegate that the specified activity object was updated.
 
 

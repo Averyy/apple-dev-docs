@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a context style with the raw value you provide.
 

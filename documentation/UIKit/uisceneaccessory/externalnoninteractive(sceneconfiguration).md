@@ -1,7 +1,8 @@
 # externalNonInteractive(sceneConfiguration:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new scene accessory configuration for presenting non-interactive content on an external display.
 
@@ -14,6 +15,10 @@ Creates a new scene accessory configuration for presenting non-interactive conte
 
 ```swift
 class func externalNonInteractive(sceneConfiguration: UISceneConfiguration) -> Self
+```
+
+```objc
++ (instancetype) externalNonInteractiveSceneAccessoryWithConfiguration:(UISceneConfiguration *) sceneConfiguration;
 ```
 
 #### Discussion

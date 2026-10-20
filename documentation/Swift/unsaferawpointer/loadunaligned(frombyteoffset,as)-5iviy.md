@@ -1,7 +1,8 @@
 # loadUnaligned(fromByteOffset:as:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new instance of the given type, constructed from the raw memory at the specified offset.
 

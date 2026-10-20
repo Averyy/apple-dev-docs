@@ -1,17 +1,22 @@
 # delegate()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the currently assigned delegate
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func delegate() -> Any!
+```
+
+```objc
+- (id) delegate;
 ```
 
 #### Return Value

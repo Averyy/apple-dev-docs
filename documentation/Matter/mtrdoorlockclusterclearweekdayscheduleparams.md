@@ -1,7 +1,8 @@
 # MTRDoorLockClusterClearWeekDayScheduleParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,26 +19,30 @@
 class MTRDoorLockClusterClearWeekDayScheduleParams
 ```
 
+```objc
+@interface MTRDoorLockClusterClearWeekDayScheduleParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var serverSideProcessingTimeout: NSNumber?](mtrdoorlockclusterclearweekdayscheduleparams/serversideprocessingtimeout.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrdoorlockclusterclearweekdayscheduleparams/timedinvoketimeoutms.md)
-- [var userIndex: NSNumber](mtrdoorlockclusterclearweekdayscheduleparams/userindex.md)
-- [var weekDayIndex: NSNumber](mtrdoorlockclusterclearweekdayscheduleparams/weekdayindex.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrdoorlockclusterclearweekdayscheduleparams/serversideprocessingtimeout.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrdoorlockclusterclearweekdayscheduleparams/timedinvoketimeoutms.md)
+- [var userIndex: NSNumber](./mtrdoorlockclusterclearweekdayscheduleparams/userindex.md)
+- [var weekDayIndex: NSNumber](./mtrdoorlockclusterclearweekdayscheduleparams/weekdayindex.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

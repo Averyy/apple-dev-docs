@@ -1,7 +1,8 @@
 # resetCondition(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func resetCondition(with params: MTRHEPAFilterMonitoringClusterResetConditionParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func resetCondition(with params: MTRHEPAFilterMonitoringClusterResetConditionParams?) async throws
+```
+
+```objc
+- (void) resetConditionWithParams:(MTRHEPAFilterMonitoringClusterResetConditionParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

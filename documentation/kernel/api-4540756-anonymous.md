@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 enum : uint32_t {
     ...
 };
@@ -17,7 +18,7 @@ enum : uint32_t {
 ## Topics
 
 ### Constants
-- [SPTM_N_TRACES](4540756-anonymous/sptm_n_traces.md)
+- [SPTM_N_TRACES](./api-4540756-anonymous/sptm_n_traces.md)
 
 
 ---

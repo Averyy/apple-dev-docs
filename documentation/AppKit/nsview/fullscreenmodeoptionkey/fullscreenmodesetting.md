@@ -1,7 +1,8 @@
 # fullScreenModeSetting
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Key whose corresponding value specifies the full screen mode setting.
 
@@ -14,19 +15,24 @@ Key whose corresponding value specifies the full screen mode setting.
 static let fullScreenModeSetting: NSView.FullScreenModeOptionKey
 ```
 
+```c
+extern NSViewFullScreenModeOptionKey const NSFullScreenModeSetting;
+```
+
 #### Discussion
 
-The corresponding value is an instance of [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) that contains keys specified in Display Mode Standard Properties and Display Mode Optional Properties in [`Quartz Display Services`](https://developer.apple.com/documentation/coregraphics/quartz-display-services).
+The corresponding value is an instance of [`NSDictionary`](../../../Foundation/nsdictionary.md) that contains keys specified in Display Mode Standard Properties and Display Mode Optional Properties in [Quartz Display Services](../../../CoreGraphics/quartz-display-services.md).
 
-When the [`fullScreenModeApplicationPresentationOptions`](nsview/fullscreenmodeoptionkey/fullscreenmodeapplicationpresentationoptions.md) is specified in the options dictionary specifying this option as well will cause an exception.
+When the [`fullScreenModeApplicationPresentationOptions`](./fullscreenmodeapplicationpresentationoptions.md) is specified in the options dictionary specifying this option as well will cause an exception.
 
 ## See Also
 
-- [static let fullScreenModeAllScreens: NSView.FullScreenModeOptionKey](nsview/fullscreenmodeoptionkey/fullscreenmodeallscreens.md)
+### Type Properties
+- [static let fullScreenModeAllScreens: NSView.FullScreenModeOptionKey](./fullscreenmodeallscreens.md)
   Key whose corresponding value specifies whether the view should take over all screens.
-- [static let fullScreenModeApplicationPresentationOptions: NSView.FullScreenModeOptionKey](nsview/fullscreenmodeoptionkey/fullscreenmodeapplicationpresentationoptions.md)
+- [static let fullScreenModeApplicationPresentationOptions: NSView.FullScreenModeOptionKey](./fullscreenmodeapplicationpresentationoptions.md)
   Key whose corresponding value specifies the application presentation options.
-- [static let fullScreenModeWindowLevel: NSView.FullScreenModeOptionKey](nsview/fullscreenmodeoptionkey/fullscreenmodewindowlevel.md)
+- [static let fullScreenModeWindowLevel: NSView.FullScreenModeOptionKey](./fullscreenmodewindowlevel.md)
   Key whose corresponding value specifies the screen mode window level.
 
 

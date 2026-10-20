@@ -1,17 +1,18 @@
 # init()
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new data layout for dispatching threadgroups over indirect buffer calls.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ init()
 
 ## See Also
 
-- [init(threadgroupsPerGrid: (UInt32, UInt32, UInt32))](mtldispatchthreadgroupsindirectarguments/init(threadgroupspergrid:).md)
+### Specifying the size of the threadgroup
+- [init(threadgroupsPerGrid: (UInt32, UInt32, UInt32))](./init%28threadgroupspergrid%29.md)
   Returns a new data layout for dispatching threadgroups over indirect buffer calls, with specified threadgroups per grid.
-- [var threadgroupsPerGrid: (UInt32, UInt32, UInt32)](mtldispatchthreadgroupsindirectarguments/threadgroupspergrid.md)
+- [var threadgroupsPerGrid: (UInt32, UInt32, UInt32)](./threadgroupspergrid.md)
   The number of threadgroups for the grid, in each dimension.
 
 

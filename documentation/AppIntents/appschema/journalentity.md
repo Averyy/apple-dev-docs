@@ -1,7 +1,8 @@
 # AppSchema.JournalEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies entity schemas in the journal domain.
 
@@ -21,19 +22,20 @@ protocol JournalEntity : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var entry: some AppSchemaEntity](appschema/journalentity/entry.md)
+- [var entry: some AppSchemaEntity](./journalentity/entry.md)
   An entity schema for an entry.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Entity](appschema/entity.md)
+- [AppSchema.Entity](./entity.md)
 
 ## See Also
 
-- [var entry: some AppSchemaEntity](appschema/journalentity/entry.md)
+### Content and parameter types
+- [var entry: some AppSchemaEntity](./journalentity/entry.md)
   An entity schema for an entry.
 
 

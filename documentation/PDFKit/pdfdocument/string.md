@@ -1,7 +1,8 @@
 # string
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string representing the textual content for the entire document.
 
@@ -19,6 +20,10 @@ A string representing the textual content for the entire document.
 var string: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * string;
+```
+
 #### Return Value
 
 A string that represents the textual content of the entire document.
@@ -27,23 +32,24 @@ A string that represents the textual content of the entire document.
 
 Pages are delimited with linefeed characters.
 
-This is a convenience method, equivalent to creating a selection object for the entire document and then invoking the `PDFSelection` class’s [`string`](pdfselection/string.md) method.
+This is a convenience method, equivalent to creating a selection object for the entire document and then invoking the `PDFSelection` class’s [`string`](../pdfselection/string.md) method.
 
 ## See Also
 
-- [var documentURL: URL?](pdfdocument/documenturl.md)
+### Accessing Document Information
+- [var documentURL: URL?](./documenturl.md)
   The URL for the document.
-- [var majorVersion: Int](pdfdocument/majorversion.md)
+- [var majorVersion: Int](./majorversion.md)
   The major version of the document.
-- [var minorVersion: Int](pdfdocument/minorversion.md)
+- [var minorVersion: Int](./minorversion.md)
   The minor version of the document.
-- [func outlineItem(for: PDFSelection) -> PDFOutline?](pdfdocument/outlineitem(for:).md)
+- [func outlineItem(for: PDFSelection) -> PDFOutline?](./outlineitem%28for%29.md)
   Returns the most likely parent PDF outline object for the selection.
-- [var outlineRoot: PDFOutline?](pdfdocument/outlineroot.md)
+- [var outlineRoot: PDFOutline?](./outlineroot.md)
   The document’s root outline to a PDF outline object.
-- [var documentAttributes: [AnyHashable : Any]?](pdfdocument/documentattributes.md)
+- [var documentAttributes: [AnyHashable : Any]?](./documentattributes.md)
   A dictionary of document metadata.
-- [var documentRef: CGPDFDocument?](pdfdocument/documentref.md)
+- [var documentRef: CGPDFDocument?](./documentref.md)
   The `CGPDFDocument` associated with the `PDFDocument` object.
 
 

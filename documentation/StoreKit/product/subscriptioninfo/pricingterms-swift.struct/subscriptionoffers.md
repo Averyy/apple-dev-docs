@@ -1,7 +1,8 @@
 # subscriptionOffers
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.4+
@@ -20,15 +21,16 @@ let subscriptionOffers: [Product.SubscriptionOffer]
 
 ## Mentions
 
-- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Supporting monthly subscriptions with a 12-month commitment](../../../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
 ## See Also
 
-- [let billingDisplayPrice: String](product/subscriptioninfo/pricingterms-swift.struct/billingdisplayprice.md)
-- [let billingPeriod: Product.SubscriptionInfo.BillingPeriod](product/subscriptioninfo/pricingterms-swift.struct/billingperiod.md)
-- [let billingPlanType: Product.SubscriptionInfo.BillingPlanType](product/subscriptioninfo/pricingterms-swift.struct/billingplantype.md)
-- [let billingPrice: Decimal](product/subscriptioninfo/pricingterms-swift.struct/billingprice.md)
-- [let commitmentInfo: Product.SubscriptionInfo.CommitmentInfo](product/subscriptioninfo/pricingterms-swift.struct/commitmentinfo.md)
+### Instance Properties - generated
+- [let billingDisplayPrice: String](./billingdisplayprice.md)
+- [let billingPeriod: Product.SubscriptionInfo.BillingPeriod](./billingperiod.md)
+- [let billingPlanType: Product.SubscriptionInfo.BillingPlanType](./billingplantype.md)
+- [let billingPrice: Decimal](./billingprice.md)
+- [let commitmentInfo: Product.SubscriptionInfo.CommitmentInfo](./commitmentinfo.md)
 
 
 ---

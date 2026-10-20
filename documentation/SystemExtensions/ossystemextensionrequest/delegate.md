@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: System Extensions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate to receive updates about the progress of a request.
 
@@ -14,9 +15,14 @@ A delegate to receive updates about the progress of a request.
 weak var delegate: (any OSSystemExtensionRequestDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id<OSSystemExtensionRequestDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol OSSystemExtensionRequestDelegate](ossystemextensionrequestdelegate.md)
+### Working with a Delegate
+- [protocol OSSystemExtensionRequestDelegate](../ossystemextensionrequestdelegate.md)
   A type that receives updates about the progress of a request.
 
 

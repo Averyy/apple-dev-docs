@@ -1,7 +1,8 @@
 # ARKitCoordinateSpace.Correction.none
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Coordinate spaces are unaltered and represent actual locations.
 

@@ -1,7 +1,8 @@
 # HMCharacteristicTypeSaturation
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The saturation of the color used by a light.
 
@@ -19,19 +20,24 @@ The saturation of the color used by a light.
 let HMCharacteristicTypeSaturation: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeSaturation;
+```
+
 #### Discussion
 
 The corresponding value is a floating point percentage of maximum saturation.
 
 ## See Also
 
-- [let HMCharacteristicTypeCurrentLightLevel: String](hmcharacteristictypecurrentlightlevel.md)
+### Light
+- [let HMCharacteristicTypeCurrentLightLevel: String](./hmcharacteristictypecurrentlightlevel.md)
   The current light level.
-- [let HMCharacteristicTypeHue: String](hmcharacteristictypehue.md)
+- [let HMCharacteristicTypeHue: String](./hmcharacteristictypehue.md)
   The hue of the color used by a light.
-- [let HMCharacteristicTypeBrightness: String](hmcharacteristictypebrightness.md)
+- [let HMCharacteristicTypeBrightness: String](./hmcharacteristictypebrightness.md)
   The brightness of a light.
-- [let HMCharacteristicTypeColorTemperature: String](hmcharacteristictypecolortemperature.md)
+- [let HMCharacteristicTypeColorTemperature: String](./hmcharacteristictypecolortemperature.md)
   The color temperature of a light.
 
 

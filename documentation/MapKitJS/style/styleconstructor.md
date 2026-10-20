@@ -1,7 +1,8 @@
 # new Style(options)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates and initializes a style object.
 
@@ -10,17 +11,18 @@ Creates and initializes a style object.
 
 ## Declaration
 
-```swift
+```
 constructor(options?: StyleConstructorOptions);
 ```
 
 ## Parameters
 
-- `options`: A [`StyleConstructorOptions`](styleconstructoroptions.md) object of style properties.
+- `options`: A [`StyleConstructorOptions`](../styleconstructoroptions.md) object of style properties.
 
 ## See Also
 
-- [interface StyleConstructorOptions](styleconstructoroptions.md)
+### Creating a style
+- [interface StyleConstructorOptions](../styleconstructoroptions.md)
   Initial values of options for applying style to overlays.
 
 

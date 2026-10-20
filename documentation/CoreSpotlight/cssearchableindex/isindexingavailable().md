@@ -1,7 +1,8 @@
 # isIndexingAvailable()
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether indexing is available on the current device.
 
@@ -16,6 +17,10 @@ Returns a Boolean value that indicates whether indexing is available on the curr
 
 ```swift
 class func isIndexingAvailable() -> Bool
+```
+
+```objc
++ (BOOL) isIndexingAvailable;
 ```
 
 #### Return Value

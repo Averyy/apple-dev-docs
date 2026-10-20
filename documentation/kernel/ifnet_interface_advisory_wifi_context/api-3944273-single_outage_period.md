@@ -1,14 +1,15 @@
 # single_outage_period
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 uint16_t single_outage_period;
 ```
 

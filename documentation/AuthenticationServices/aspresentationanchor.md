@@ -1,7 +1,8 @@
 # ASPresentationAnchor
 
 **Framework**: Authentication Services  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A platform-specific type that indicates the kind of user interface element to use as a presentation anchor.
 
@@ -15,15 +16,36 @@ A platform-specific type that indicates the kind of user interface element to us
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+typealias ASPresentationAnchor = UIWindow
+```
+
+*macOS*
+
 ```swift
 typealias ASPresentationAnchor = NSWindow
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```c
+typedef UIWindow * ASPresentationAnchor;
+```
+
+*macOS*
+
+```c
+typedef NSWindow * ASPresentationAnchor;
+```
+
 ## See Also
 
-- [convenience init(presentationAnchor: ASPresentationAnchor)](ascredentialexportmanager/init(presentationanchor:)-56ki6.md)
+### Creating an export manager
+- [convenience init(presentationAnchor: ASPresentationAnchor)](./ascredentialexportmanager/init%28presentationanchor%29-56ki6.md)
   Creates an export manager, anchored by the given AppKit window.
-- [convenience init(presentationAnchor: ASPresentationAnchor)](ascredentialexportmanager/init(presentationanchor:)-904gt.md)
+- [convenience init(presentationAnchor: ASPresentationAnchor)](./ascredentialexportmanager/init%28presentationanchor%29-904gt.md)
   Creates an export manager, anchored by the given UIKit window.
 
 

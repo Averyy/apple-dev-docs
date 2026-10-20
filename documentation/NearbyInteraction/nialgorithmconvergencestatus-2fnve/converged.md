@@ -1,7 +1,8 @@
 # NIAlgorithmConvergenceStatus.converged
 
 **Framework**: Nearby Interaction  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates the framework’s Camera Assistance feature is operational.
 
@@ -19,13 +20,14 @@ case converged
 
 #### Discussion
 
-In this state, the app doesn’t need to coach the user and receives all the benefits of Camera Assistance described in [`isCameraAssistanceEnabled`](ninearbypeerconfiguration/iscameraassistanceenabled.md).
+In this state, the app doesn’t need to coach the user and receives all the benefits of Camera Assistance described in [`isCameraAssistanceEnabled`](../ninearbypeerconfiguration/iscameraassistanceenabled.md).
 
 ## See Also
 
-- [case notConverged([NIAlgorithmConvergenceStatus.Reason])](nialgorithmconvergencestatus-2fnve/notconverged(_:).md)
+### Interpreting the convergence state
+- [case notConverged([NIAlgorithmConvergenceStatus.Reason])](./notconverged%28_%29.md)
   A status that indicates the framework’s Camera Assistance feature requires action from the user.
-- [NIAlgorithmConvergenceStatus.unknown](nialgorithmconvergencestatus-2fnve/unknown.md)
+- [NIAlgorithmConvergenceStatus.unknown](./unknown.md)
   An indication that the framework is unsure of the Camera Assistance status.
 
 

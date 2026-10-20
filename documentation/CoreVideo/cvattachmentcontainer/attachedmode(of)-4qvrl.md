@@ -1,7 +1,8 @@
 # attachedMode(of:)
 
 **Framework**: Core Video  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the propagation mode of a stored attachment you identify with a key path to a key definition, without retrieving the value.
 

@@ -1,7 +1,8 @@
 # Substring
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A slice of a string.
 
@@ -83,107 +84,108 @@ You can call this generic function with an instance of either `String` or `Subst
 ## Topics
 
 ### Operators
-- [static func ~= (Substring, String) -> Bool](substring/~=(_:_:).md)
+- [static func ~= (Substring, String) -> Bool](./substring/tildeeq%28_,_%29.md)
 ### Initializers
-- [init()](substring/init.md)
+- [init()](./substring/init%28%29.md)
   Creates an empty substring.
-- [init(Substring.UTF8View)](substring/init(_:)-4njms.md)
+- [init(Substring.UTF8View)](./substring/init%28_%29-4njms.md)
   Creates a Substring having the given content.
-- [init(Substring.UTF16View)](substring/init(_:)-61zpv.md)
+- [init(Substring.UTF16View)](./substring/init%28_%29-61zpv.md)
   Creates a Substring having the given content.
-- [init(Substring.UnicodeScalarView)](substring/init(_:)-7k0au.md)
+- [init(Substring.UnicodeScalarView)](./substring/init%28_%29-7k0au.md)
   Creates a Substring having the given content.
 ### Instance Properties
-- [var base: String](substring/base.md)
+- [var base: String](./substring/base.md)
   Returns the underlying string from which this substring was derived.
-- [var characters: Substring](substring/characters.md)
+- [var characters: Substring](./substring/characters.md)
   A view of the string’s contents as a collection of characters.
-- [var customPlaygroundQuickLook: _PlaygroundQuickLook](substring/customplaygroundquicklook.md)
+- [var customPlaygroundQuickLook: _PlaygroundQuickLook](./substring/customplaygroundquicklook.md)
   A custom playground Quick Look for this instance.
-- [var isContiguousUTF8: Bool](substring/iscontiguousutf8.md)
+- [var isContiguousUTF8: Bool](./substring/iscontiguousutf8.md)
   Returns whether this string’s storage contains validly-encoded UTF-8 contents in contiguous memory.
-- [var utf8Span: UTF8Span](substring/utf8span.md)
+- [var utf8Span: UTF8Span](./substring/utf8span.md)
   A UTF-8 span over the code units that make up this substring.
 ### Instance Methods
-- [func filter<E>((Substring.Element) throws(E) -> Bool) throws(E) -> String](substring/filter(_:).md)
-- [func isTriviallyIdentical(to: Substring) -> Bool](substring/istriviallyidentical(to:).md)
+- [func filter<E>((Substring.Element) throws(E) -> Bool) throws(E) -> String](./substring/filter%28_%29.md)
+- [func isTriviallyIdentical(to: Substring) -> Bool](./substring/istriviallyidentical%28to%29.md)
   Returns a boolean value indicating whether this substring is identical to `other`.
-- [func makeContiguousUTF8()](substring/makecontiguousutf8.md)
+- [func makeContiguousUTF8()](./substring/makecontiguousutf8%28%29.md)
   If this string is not contiguous, make it so. If this mutates the substring, it will invalidate any pre-existing indices.
-- [func replaceSubrange(Range<Substring.Index>, with: Substring)](substring/replacesubrange(_:with:)-mfwu.md)
-- [func withMutableCharacters<R>((inout Substring) -> R) -> R](substring/withmutablecharacters(_:).md)
+- [func replaceSubrange(Range<Substring.Index>, with: Substring)](./substring/replacesubrange%28_,with%29-mfwu.md)
+- [func withMutableCharacters<R>((inout Substring) -> R) -> R](./substring/withmutablecharacters%28_%29.md)
   Applies the given closure to a mutable view of the string’s characters.
-- [func withUTF8<R, E>((UnsafeBufferPointer<UInt8>) throws(E) -> R) throws(E) -> R](substring/withutf8(_:).md)
+- [func withUTF8<R, E>((UnsafeBufferPointer<UInt8>) throws(E) -> R) throws(E) -> R](./substring/withutf8%28_%29.md)
   Runs `body` over the content of this substring in contiguous memory. If this substring is not contiguous, this will first make it contiguous, which will also speed up subsequent access. If this mutates the substring, it will invalidate any pre-existing indices.
 ### Type Aliases
-- [Substring.CharacterView](substring/characterview.md)
+- [Substring.CharacterView](./substring/characterview.md)
   A view of a string’s contents as a collection of characters.
-- [Substring.Output](substring/output.md)
+- [Substring.Output](./substring/output.md)
 ### Default Implementations
-- [Attachable Implementations](substring/attachable-implementations.md)
-- [BidirectionalCollection Implementations](substring/bidirectionalcollection-implementations.md)
-- [Collection Implementations](substring/collection-implementations.md)
-- [Comparable Implementations](substring/comparable-implementations.md)
-- [CustomDebugStringConvertible Implementations](substring/customdebugstringconvertible-implementations.md)
-- [CustomReflectable Implementations](substring/customreflectable-implementations.md)
-- [CustomStringConvertible Implementations](substring/customstringconvertible-implementations.md)
-- [Equatable Implementations](substring/equatable-implementations.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](substring/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByStringInterpolation Implementations](substring/expressiblebystringinterpolation-implementations.md)
-- [ExpressibleByStringLiteral Implementations](substring/expressiblebystringliteral-implementations.md)
-- [ExpressibleByUnicodeScalarLiteral Implementations](substring/expressiblebyunicodescalarliteral-implementations.md)
-- [Hashable Implementations](substring/hashable-implementations.md)
-- [LosslessStringConvertible Implementations](substring/losslessstringconvertible-implementations.md)
-- [RangeReplaceableCollection Implementations](substring/rangereplaceablecollection-implementations.md)
-- [Sequence Implementations](substring/sequence-implementations.md)
-- [StringProtocol Implementations](substring/stringprotocol-implementations.md)
-- [TextOutputStream Implementations](substring/textoutputstream-implementations.md)
-- [TextOutputStreamable Implementations](substring/textoutputstreamable-implementations.md)
+- [Attachable Implementations](./substring/attachable-implementations.md)
+- [BidirectionalCollection Implementations](./substring/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./substring/collection-implementations.md)
+- [Comparable Implementations](./substring/comparable-implementations.md)
+- [CustomDebugStringConvertible Implementations](./substring/customdebugstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./substring/customreflectable-implementations.md)
+- [CustomStringConvertible Implementations](./substring/customstringconvertible-implementations.md)
+- [Equatable Implementations](./substring/equatable-implementations.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](./substring/expressiblebyextendedgraphemeclusterliteral-implementations.md)
+- [ExpressibleByStringInterpolation Implementations](./substring/expressiblebystringinterpolation-implementations.md)
+- [ExpressibleByStringLiteral Implementations](./substring/expressiblebystringliteral-implementations.md)
+- [ExpressibleByUnicodeScalarLiteral Implementations](./substring/expressiblebyunicodescalarliteral-implementations.md)
+- [Hashable Implementations](./substring/hashable-implementations.md)
+- [LosslessStringConvertible Implementations](./substring/losslessstringconvertible-implementations.md)
+- [RangeReplaceableCollection Implementations](./substring/rangereplaceablecollection-implementations.md)
+- [Sequence Implementations](./substring/sequence-implementations.md)
+- [StringProtocol Implementations](./substring/stringprotocol-implementations.md)
+- [TextOutputStream Implementations](./substring/textoutputstream-implementations.md)
+- [TextOutputStreamable Implementations](./substring/textoutputstreamable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Attachable](../testing/attachable.md)
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [Collection](collection.md)
-- [Comparable](comparable.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomReflectable](customreflectable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [CustomTestStringConvertible](../testing/customteststringconvertible.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringInterpolation](expressiblebystringinterpolation.md)
-- [ExpressibleByStringLiteral](expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](expressiblebyunicodescalarliteral.md)
-- [Hashable](hashable.md)
-- [LosslessStringConvertible](losslessstringconvertible.md)
-- [RangeReplaceableCollection](rangereplaceablecollection.md)
-- [RegexComponent](regexcomponent.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
-- [StringProtocol](stringprotocol.md)
-- [TextOutputStream](textoutputstream.md)
-- [TextOutputStreamable](textoutputstreamable.md)
+- [Attachable](../Testing/attachable.md)
+- [BidirectionalCollection](./bidirectionalcollection.md)
+- [Collection](./collection.md)
+- [Comparable](./comparable.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [CustomReflectable](./customreflectable.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [CustomTestStringConvertible](../Testing/customteststringconvertible.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](./expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringInterpolation](./expressiblebystringinterpolation.md)
+- [ExpressibleByStringLiteral](./expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](./expressiblebyunicodescalarliteral.md)
+- [Hashable](./hashable.md)
+- [LosslessStringConvertible](./losslessstringconvertible.md)
+- [RangeReplaceableCollection](./rangereplaceablecollection.md)
+- [RegexComponent](./regexcomponent.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
+- [Sequence](./sequence.md)
+- [StringProtocol](./stringprotocol.md)
+- [TextOutputStream](./textoutputstream.md)
+- [TextOutputStreamable](./textoutputstreamable.md)
 
 ## See Also
 
-- [protocol StringProtocol](stringprotocol.md)
+### Related String Types
+- [protocol StringProtocol](./stringprotocol.md)
   A type that can represent a string as a collection of characters.
-- [String.Index](string/index.md)
+- [String.Index](./string/index.md)
   A position of a character or code unit in a string.
-- [String.UnicodeScalarView](string/unicodescalarview.md)
+- [String.UnicodeScalarView](./string/unicodescalarview.md)
   A view of a string’s contents as a collection of Unicode scalar values.
-- [String.UTF16View](string/utf16view.md)
+- [String.UTF16View](./string/utf16view.md)
   A view of a string’s contents as a collection of UTF-16 code units.
-- [String.UTF8View](string/utf8view.md)
+- [String.UTF8View](./string/utf8view.md)
   A view of a string’s contents as a collection of UTF-8 code units.
-- [String.Iterator](string/iterator.md)
+- [String.Iterator](./string/iterator.md)
   A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [String.Encoding](string/encoding.md)
+- [String.Encoding](./string/encoding.md)
 
 
 ---

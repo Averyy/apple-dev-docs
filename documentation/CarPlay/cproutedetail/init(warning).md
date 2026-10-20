@@ -1,7 +1,8 @@
 # init(warning:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates additional route information for route warnings.
 
@@ -14,6 +15,10 @@ Creates additional route information for route warnings.
 
 ```swift
 convenience init(warning: String)
+```
+
+```objc
++ (instancetype) routeDetailWithWarning:(NSString *) warning;
 ```
 
 #### Return Value

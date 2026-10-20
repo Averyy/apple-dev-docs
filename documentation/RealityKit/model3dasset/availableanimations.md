@@ -1,7 +1,8 @@
 # availableAnimations
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 List of all available animations on the entity.
 

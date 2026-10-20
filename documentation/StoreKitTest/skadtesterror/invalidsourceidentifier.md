@@ -1,7 +1,8 @@
 # invalidSourceIdentifier
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The postback’s identifier isn’t two, three, or four digits.
 
@@ -18,19 +19,20 @@ static var invalidSourceIdentifier: SKAdTestError.Code { get }
 
 #### Discussion
 
-A valid postback includes two to four digits of the impression’s [`sourceIdentifier`](https://developer.apple.com/documentation/storekit/skadimpression/sourceidentifier). For more information about the varying length of source identifiers, see [`Receiving postbacks in multiple conversion windows`](https://developer.apple.com/documentation/storekit/receiving-postbacks-in-multiple-conversion-windows).
+A valid postback includes two to four digits of the impression’s [`sourceIdentifier`](../../StoreKit/skadimpression/sourceidentifier.md). For more information about the varying length of source identifiers, see [Receiving postbacks in multiple conversion windows](../../StoreKit/receiving-postbacks-in-multiple-conversion-windows.md).
 
 ## See Also
 
-- [static var invalidVersion: SKAdTestError.Code](skadtesterror/invalidversion.md)
+### Getting Other Errors
+- [static var invalidVersion: SKAdTestError.Code](./invalidversion.md)
   A postback contains an incorrect version number.
-- [static var invalidImpressionId: SKAdTestError.Code](skadtesterror/invalidimpressionid.md)
+- [static var invalidImpressionId: SKAdTestError.Code](./invalidimpressionid.md)
   The impression ID isn’t a valid UUID string.
-- [static var invalidSourceAppAdamId: SKAdTestError.Code](skadtesterror/invalidsourceappadamid.md)
+- [static var invalidSourceAppAdamId: SKAdTestError.Code](./invalidsourceappadamid.md)
   The app ID is less than zero.
-- [static var invalidSourceDomain: SKAdTestError.Code](skadtesterror/invalidsourcedomain.md)
+- [static var invalidSourceDomain: SKAdTestError.Code](./invalidsourcedomain.md)
   The source domain isn’t in the correct format.
-- [static var unknownError: SKAdTestError.Code](skadtesterror/unknownerror.md)
+- [static var unknownError: SKAdTestError.Code](./unknownerror.md)
   An unknown error occurred in the testing environment.
 
 

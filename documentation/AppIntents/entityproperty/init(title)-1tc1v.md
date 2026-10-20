@@ -1,7 +1,8 @@
 # init(title:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an app intent entity property.
 
@@ -11,7 +12,7 @@ Creates an app intent entity property.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Creates an app intent entity property.
 ```swift
 convenience init(title: LocalizedStringResource)
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitElectricResistance>`.
 
 ## Parameters
 

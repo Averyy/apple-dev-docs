@@ -1,7 +1,8 @@
 # analyzeSequence(_:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Analyzes an input sequence, returning when the sequence terminates.
 
@@ -21,11 +22,11 @@ final func analyzeSequence<InputSequence>(_ inputSequence: InputSequence) async 
 
 #### Return Value
 
-The time-code of the last audio sample that was consumed from this or an earlier input sequence, or `nil` if no audio sample has been consumed. You may use this value for the parameter of [`finalizeAndFinish(through:)`](speechanalyzer/finalizeandfinish(through:).md) (or other methods).
+The time-code of the last audio sample that was consumed from this or an earlier input sequence, or `nil` if no audio sample has been consumed. You may use this value for the parameter of [`finalizeAndFinish(through:)`](./finalizeandfinish%28through%29.md) (or other methods).
 
 #### Discussion
 
-When this method returns, the last audio consumed from the input sequence may still be undergoing analysis. To wait for the analysis to complete, call another method such as [`finalize(through:)`](speechanalyzer/finalize(through:).md) and await its return.
+When this method returns, the last audio consumed from the input sequence may still be undergoing analysis. To wait for the analysis to complete, call another method such as [`finalize(through:)`](./finalize%28through%29.md) and await its return.
 
 If you cancel the task executing this method, most input sequences will terminate early, causing this method to return early. The method returns the time-code of the last audio sample that was consumed and does not throw `CancellationError`.
 
@@ -35,7 +36,8 @@ If you cancel the task executing this method, most input sequences will terminat
 
 ## See Also
 
-- [func analyzeSequence(from: AVAudioFile) async throws -> CMTime?](speechanalyzer/analyzesequence(from:).md)
+### Performing analysis
+- [func analyzeSequence(from: AVAudioFile) async throws -> CMTime?](./analyzesequence%28from%29.md)
   Analyzes an input sequence created from an audio file, returning when the file has been read.
 
 

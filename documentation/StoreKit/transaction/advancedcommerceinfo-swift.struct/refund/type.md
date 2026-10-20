@@ -1,7 +1,8 @@
 # type
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the refund.
 
@@ -22,11 +23,12 @@ let type: Transaction.AdvancedCommerceInfo.Refund.RefundType
 
 ## See Also
 
-- [let amount: Decimal](transaction/advancedcommerceinfo-swift.struct/refund/amount.md)
+### Instance Properties
+- [let amount: Decimal](./amount.md)
   The amount of the refund.
-- [let date: Date](transaction/advancedcommerceinfo-swift.struct/refund/date.md)
+- [let date: Date](./date.md)
   The date the refund was granted.
-- [let reason: Transaction.AdvancedCommerceInfo.Refund.Reason](transaction/advancedcommerceinfo-swift.struct/refund/reason-swift.property.md)
+- [let reason: Transaction.AdvancedCommerceInfo.Refund.Reason](./reason-swift.property.md)
   The reason for the refund.
 
 

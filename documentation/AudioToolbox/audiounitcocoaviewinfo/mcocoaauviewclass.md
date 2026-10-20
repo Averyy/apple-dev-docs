@@ -1,15 +1,20 @@
 # mCocoaAUViewClass
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var mCocoaAUViewClass: Unmanaged<CFString>
+```
+
+```c
+CFStringRef mCocoaAUViewClass[1];
 ```
 
 

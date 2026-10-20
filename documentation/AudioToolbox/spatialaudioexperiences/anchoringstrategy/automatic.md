@@ -1,7 +1,8 @@
 # SpatialAudioExperiences.AnchoringStrategy.automatic
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A system-defined anchoring strategy.
 

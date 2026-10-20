@@ -1,7 +1,8 @@
 # lowTemperature
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The observed low temperature for the day.
 

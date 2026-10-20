@@ -2,6 +2,7 @@
 
 **Framework**: MediaExtension  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a new video decoder factory.
@@ -15,9 +16,14 @@ Creates a new video decoder factory.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [func makeVideoDecoder(codecType: CMVideoCodecType, videoFormatDescription: CMVideoFormatDescription, videoDecoderSpecifications: [String : Any], pixelBufferManager: MEVideoDecoderPixelBufferManager) throws -> any MEVideoDecoder](mevideodecoderextension/makevideodecoder(codectype:videoformatdescription:videodecoderspecifications:pixelbuffermanager:).md)
+### Creating a video decoder
+- [func makeVideoDecoder(codecType: CMVideoCodecType, videoFormatDescription: CMVideoFormatDescription, videoDecoderSpecifications: [String : Any], pixelBufferManager: MEVideoDecoderPixelBufferManager) throws -> any MEVideoDecoder](./makevideodecoder%28codectype,videoformatdescription,videodecoderspecifications,pixelbuffermanager%29.md)
   Creates a new video decoder that matches the codec type, format description, decoder specifications, and pixel buffer manager that you specify.
 
 

@@ -1,7 +1,8 @@
 # xpc_copy(_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a copy of the object.
 
@@ -10,7 +11,7 @@ Creates a copy of the object.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,17 @@ Creates a copy of the object.
 func xpc_copy(_ object: xpc_object_t) -> xpc_object_t?
 ```
 
+```c
+extern xpc_object_txpc_copy(xpc_object_t object);
+```
+
 #### Return Value
 
 The new object. `NULL` if the object type does not support copying or if sufficient memory for the copy could not be allocated. Service objects do not support copying.
 
 #### Discussion
 
-When called on an array or dictionary, [`xpc_copy(_:)`](xpc_copy(_:).md) will perform a deep copy.
+When called on an array or dictionary, [`xpc_copy(_:)`](./xpc_copy%28_%29.md) will perform a deep copy.
 
 The object returned is not necessarily guaranteed to be a new object, and whether it is will depend on the implementation of the object being copied.
 
@@ -36,7 +41,8 @@ The object returned is not necessarily guaranteed to be a new object, and whethe
 
 ## See Also
 
-- [func xpc_copy_description(xpc_object_t) -> UnsafeMutablePointer<CChar>](xpc_copy_description(_:).md)
+### Copying
+- [func xpc_copy_description(xpc_object_t) -> UnsafeMutablePointer<CChar>](./xpc_copy_description%28_%29.md)
   Copies a debug string that describes the object.
 
 

@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.B
 
 # mlx.nn.Bilinear
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Bilinear.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Bilinear
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Bilinear
-
 **class Bilinear(*input1_dims: int*, *input2_dims: int*, *output_dims: int*, *bias: bool = True*)**
 : Applies a bilinear transformation to the inputs.
 Concretely:
@@ -55,5 +28,3 @@ Parameters:
 not use a bias. Default is `True`.
 
 Methods
-
-** Contents

@@ -1,7 +1,8 @@
 # type
 
 **Framework**: PushKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type value indicating how to interpret the payload.
 
@@ -19,13 +20,18 @@ The type value indicating how to interpret the payload.
 var type: PKPushType { get }
 ```
 
+```objc
+@property (copy, readonly) PKPushType type;
+```
+
 #### Discussion
 
-For possible values, see [`PKPushType`](pkpushtype.md).
+For possible values, see [`PKPushType`](../pkpushtype.md).
 
 ## See Also
 
-- [var dictionaryPayload: [AnyHashable : Any]](pkpushpayload/dictionarypayload.md)
+### Payload Data
+- [var dictionaryPayload: [AnyHashable : Any]](./dictionarypayload.md)
   The contents of the received payload.
 
 

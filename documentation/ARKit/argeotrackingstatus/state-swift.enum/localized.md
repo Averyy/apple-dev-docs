@@ -1,7 +1,8 @@
 # ARGeoTrackingStatus.State.localized
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Geo tracking is localized.
 
@@ -15,23 +16,28 @@ Geo tracking is localized.
 case localized
 ```
 
+```c
+ARGeoTrackingStateLocalized
+```
+
 #### Discussion
 
-In [`ARGeoTrackingStatus.State.localized`](argeotrackingstatus/state-swift.enum/localized.md), ARKit has completed visual localization and the app is free to place location anchors ([`ARGeoAnchor`](argeoanchor.md)).
+In [`ARGeoTrackingStatus.State.localized`](./localized.md), ARKit has completed visual localization and the app is free to place location anchors ([`ARGeoAnchor`](../../argeoanchor.md)).
 
 ## See Also
 
-- [ARGeoTrackingStatus.State.initializing](argeotrackingstatus/state-swift.enum/initializing.md)
+### States
+- [ARGeoTrackingStatus.State.initializing](./initializing.md)
   The session is initializing geo tracking.
-- [ARGeoTrackingStatus.State.localizing](argeotrackingstatus/state-swift.enum/localizing.md)
+- [ARGeoTrackingStatus.State.localizing](./localizing.md)
   Geo tracking is attempting to localize against a map.
-- [ARGeoTrackingStatus.State.notAvailable](argeotrackingstatus/state-swift.enum/notavailable.md)
+- [ARGeoTrackingStatus.State.notAvailable](./notavailable.md)
   Geo tracking is not available.
-- [ARGeoTrackingStatus.State.initializing](argeotrackingstatus/state-swift.enum/initializing.md)
+- [ARGeoTrackingStatus.State.initializing](./initializing.md)
   The session is initializing geo tracking.
-- [ARGeoTrackingStatus.State.localizing](argeotrackingstatus/state-swift.enum/localizing.md)
+- [ARGeoTrackingStatus.State.localizing](./localizing.md)
   Geo tracking is attempting to localize against a map.
-- [ARGeoTrackingStatus.State.notAvailable](argeotrackingstatus/state-swift.enum/notavailable.md)
+- [ARGeoTrackingStatus.State.notAvailable](./notavailable.md)
   Geo tracking is not available.
 
 

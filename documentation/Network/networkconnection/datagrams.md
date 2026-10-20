@@ -1,7 +1,8 @@
 # datagrams
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access connection-wide unreliable datagrams over QUIC. Subsequent accesses to this object will return the same reference. All incoming datagrams for the entire QUIC connection will be received on this `SubConnection` once invoked.
 
@@ -19,6 +20,8 @@ Access connection-wide unreliable datagrams over QUIC. Subsequent accesses to th
 ```swift
 final var datagrams: QUIC.Datagrams<QUICDatagram> { get async throws }
 ```
+
+Available when `ApplicationProtocol` is `QUIC`.
 
 
 ---

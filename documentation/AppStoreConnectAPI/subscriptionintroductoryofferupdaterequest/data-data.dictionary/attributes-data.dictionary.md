@@ -1,7 +1,8 @@
 # SubscriptionIntroductoryOfferUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a subscription introductory offer update request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a subscription introductory offer update request resour
 
 ## Declaration
 
-```swift
+```
 object SubscriptionIntroductoryOfferUpdateRequest.Data.Attributes
 ```
 

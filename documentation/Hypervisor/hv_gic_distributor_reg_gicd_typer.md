@@ -1,15 +1,20 @@
 # HV_GIC_DISTRIBUTOR_REG_GICD_TYPER
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var HV_GIC_DISTRIBUTOR_REG_GICD_TYPER: hv_gic_distributor_reg_t { get }
+```
+
+```c
+HV_GIC_DISTRIBUTOR_REG_GICD_TYPER
 ```
 
 

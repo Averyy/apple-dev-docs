@@ -1,7 +1,8 @@
 # PlaceDescriptor.PlaceRepresentation.coordinate(_:)
 
 **Framework**: GeoToolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A physical location described by its latitude and longitude.
 
@@ -22,9 +23,10 @@ case coordinate(CLLocationCoordinate2D)
 
 ## See Also
 
-- [PlaceDescriptor.PlaceRepresentation.address(_:)](placedescriptor/placerepresentation/address(_:).md)
+### Enumeration cases
+- [PlaceDescriptor.PlaceRepresentation.address(_:)](./address%28_%29.md)
   Full address, as you’d use in postal or administrative scenarios.
-- [PlaceDescriptor.PlaceRepresentation.deviceLocation(_:)](placedescriptor/placerepresentation/devicelocation(_:).md)
+- [PlaceDescriptor.PlaceRepresentation.deviceLocation(_:)](./devicelocation%28_%29.md)
   Physical location in a coordinate system that a device would collect.
 
 

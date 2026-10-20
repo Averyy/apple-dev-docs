@@ -1,7 +1,8 @@
 # joints
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The joints which define this skeleton’s hierarchy.
 

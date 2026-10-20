@@ -1,7 +1,8 @@
 # SFSafariSettingsError.notAllowed
 
 **Framework**: Safari Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The process does not have the permission to call this API.
 
@@ -13,6 +14,10 @@ The process does not have the permission to call this API.
 
 ```swift
 case notAllowed
+```
+
+```c
+SFSafariSettingsErrorNotAllowed
 ```
 
 

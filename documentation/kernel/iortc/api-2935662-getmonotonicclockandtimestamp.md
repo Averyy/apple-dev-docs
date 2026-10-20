@@ -1,14 +1,15 @@
 # getMonotonicClockAndTimestamp
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.13.2+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn getMonotonicClockAndTimestamp(uint64_t *usecs, uint64_t *mach_absolute_time);
 ```
 

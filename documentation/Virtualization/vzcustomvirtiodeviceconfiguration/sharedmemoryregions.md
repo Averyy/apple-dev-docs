@@ -1,7 +1,8 @@
 # sharedMemoryRegions
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of shared memory regions.
 
@@ -12,6 +13,10 @@ The list of shared memory regions.
 
 ```swift
 var sharedMemoryRegions: [VZVirtioSharedMemoryRegionConfiguration] { get set }
+```
+
+```objc
+@property (copy, readwrite) NSArray<VZVirtioSharedMemoryRegionConfiguration *> * sharedMemoryRegions;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # init(routeChoice:handler:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a map panel item with one of the route choices available for a trip.
 
@@ -14,6 +15,10 @@ Creates a map panel item with one of the route choices available for a trip.
 
 ```swift
 init(routeChoice: CPRouteChoice, handler: ((CPMapPanelItem, @escaping () -> Void) -> Void)? = nil)
+```
+
+```objc
+- (instancetype) initWithRouteChoice:(CPRouteChoice *) routeChoice handler:(void (^)(CPMapPanelItem *item, dispatch_block_t completionBlock)) handler;
 ```
 
 #### Return Value

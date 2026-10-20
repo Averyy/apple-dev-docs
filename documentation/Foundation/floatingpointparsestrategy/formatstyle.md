@@ -1,7 +1,8 @@
 # formatStyle
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format style this strategy uses when parsing strings.
 
@@ -22,7 +23,8 @@ var formatStyle: Format
 
 ## See Also
 
-- [var lenient: Bool](floatingpointparsestrategy/lenient.md)
+### Accessing strategy properties
+- [var lenient: Bool](./lenient.md)
   A Boolean value that indicates whether parsing allows any discrepencies in the expected format.
 
 

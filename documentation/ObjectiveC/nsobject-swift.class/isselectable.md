@@ -1,15 +1,20 @@
 # isSelectable
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var isSelectable: Bool { get }
+```
+
+```objc
+@property (readonly, getter=isSelectable) BOOL selectable;
 ```
 
 

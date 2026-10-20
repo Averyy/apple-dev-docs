@@ -1,7 +1,8 @@
 # init(name:priority:operation:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Runs the given throwing operation asynchronously as part of a new *unstructured* top-level task.
 
@@ -21,6 +22,8 @@ Runs the given throwing operation asynchronously as part of a new *unstructured*
 init(name: String? = nil, priority: TaskPriority? = nil, operation: sending @escaping @isolated(any) () async throws -> Success)
 ```
 
+Available when `Success` conforms to `Sendable` and `Failure` is `any Error`.
+
 #### Return Value
 
 A reference to the task.
@@ -39,17 +42,18 @@ You need to keep a reference to the task if you want to cancel it by calling the
 
 ## See Also
 
-- [init(name: String?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:priority:operation:)-2dll5.md)
+### Creating a Task
+- [init(name: String?, priority: TaskPriority?, operation: sending () async -> Success)](./init%28name,priority,operation%29-2dll5.md)
   Runs the given nonthrowing operation asynchronously as part of a new *unstructured* top-level task.
-- [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(name:executorpreference:priority:operation:)-59bfi.md)
+- [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success)](./init%28name,executorpreference,priority,operation%29-59bfi.md)
   Runs the given throwing operation asynchronously as part of a new *unstructured* top-level task.
-- [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:executorpreference:priority:operation:)-81pay.md)
+- [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success)](./init%28name,executorpreference,priority,operation%29-81pay.md)
   Runs the given nonthrowing operation asynchronously as part of a new *unstructured* top-level task.
-- [static var currentPriority: TaskPriority](task/currentpriority.md)
+- [static var currentPriority: TaskPriority](./currentpriority.md)
   The current task’s priority.
-- [static var basePriority: TaskPriority?](task/basepriority.md)
+- [static var basePriority: TaskPriority?](./basepriority.md)
   The current task’s base priority.
-- [func withTaskPriorityEscalationHandler<T, E>(operation: nonisolated(nonsending) () async throws(E) -> T, onPriorityEscalated: (TaskPriority, TaskPriority) -> Void) async throws(E) -> T](withtaskpriorityescalationhandler(operation:onpriorityescalated:).md)
+- [func withTaskPriorityEscalationHandler<T, E>(operation: nonisolated(nonsending) () async throws(E) -> T, onPriorityEscalated: (TaskPriority, TaskPriority) -> Void) async throws(E) -> T](../withtaskpriorityescalationhandler%28operation,onpriorityescalated%29.md)
   Runs the passed `operation` while registering a task priority escalation handler. The handler will be triggered concurrently to the current task if the current is subject to priority escalation.
 
 

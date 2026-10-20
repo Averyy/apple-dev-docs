@@ -1,7 +1,8 @@
 # displayMaskRectangle
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies the rectangular display area within the image.
 

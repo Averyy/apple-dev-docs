@@ -1,7 +1,8 @@
 # disconnect()
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disconnects the local player from the match.
 
@@ -19,13 +20,18 @@ Disconnects the local player from the match.
 func disconnect()
 ```
 
+```objc
+- (void) disconnect;
+```
+
 #### Discussion
 
 Call this method before ending a match.
 
 ## See Also
 
-- [func rematch(completionHandler: ((GKMatch?, (any Error)?) -> Void)?)](gkmatch/rematch(completionhandler:).md)
+### Finishing the match
+- [func rematch(completionHandler: ((GKMatch?, (any Error)?) -> Void)?)](./rematch%28completionhandler%29.md)
   Creates a new match with the players from an existing match.
 
 

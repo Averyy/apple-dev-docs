@@ -1,7 +1,8 @@
 # complete
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The complete inline-editing experience is provided if possible.
 

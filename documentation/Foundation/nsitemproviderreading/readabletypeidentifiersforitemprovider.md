@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 An array of UTI strings representing the data types supported by the class.
@@ -19,6 +20,18 @@ An array of UTI strings representing the data types supported by the class.
 
 ```swift
 static var readableTypeIdentifiersForItemProvider: [String] { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (class, nonatomic, copy, readonly) NSArray<NSString *> * readableTypeIdentifiersForItemProvider;
+```
+
+*macOS*
+
+```objc
+@property (class, atomic, copy, readonly) NSArray<NSString *> * readableTypeIdentifiersForItemProvider;
 ```
 
 #### Discussion

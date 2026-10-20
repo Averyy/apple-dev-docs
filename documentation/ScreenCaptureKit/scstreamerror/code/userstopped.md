@@ -1,7 +1,8 @@
 # SCStreamError.Code.userStopped
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error message that indicates the user stopped the stream.
 
@@ -17,6 +18,10 @@ An error message that indicates the user stopped the stream.
 
 ```swift
 case userStopped
+```
+
+```c
+SCStreamErrorUserStopped
 ```
 
 #### Discussion

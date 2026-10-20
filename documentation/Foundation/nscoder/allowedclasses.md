@@ -1,7 +1,8 @@
 # allowedClasses
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of coded classes allowed for secure coding.
 
@@ -20,13 +21,18 @@ The set of coded classes allowed for secure coding.
 var allowedClasses: Set<AnyHashable>? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSSet<Class> * allowedClasses;
+```
+
 #### Discussion
 
-Secure coders check this set of allowed classes before decoding objects, and all objects must implement the [`NSSecureCoding`](nssecurecoding.md) protocol.
+Secure coders check this set of allowed classes before decoding objects, and all objects must implement the [`NSSecureCoding`](../nssecurecoding.md) protocol.
 
 ## See Also
 
-- [var requiresSecureCoding: Bool](nscoder/requiressecurecoding.md)
+### Secure Coding
+- [var requiresSecureCoding: Bool](./requiressecurecoding.md)
   Indicates whether the archiver requires all archived classes to resist object substitution attacks.
 
 

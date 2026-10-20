@@ -1,7 +1,8 @@
 # colorSpace
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color space of the bitmap.
 
@@ -14,11 +15,16 @@ The color space of the bitmap.
 var colorSpace: NSColorSpace { get }
 ```
 
+```objc
+@property (strong, readonly) NSColorSpace * colorSpace;
+```
+
 ## See Also
 
-- [func converting(to: NSColorSpace, renderingIntent: NSColorRenderingIntent) -> NSBitmapImageRep?](nsbitmapimagerep/converting(to:renderingintent:).md)
+### Managing Color Spaces
+- [func converting(to: NSColorSpace, renderingIntent: NSColorRenderingIntent) -> NSBitmapImageRep?](./converting%28to,renderingintent%29.md)
   Converts the bitmap image representation to the specified color space.
-- [func retagging(with: NSColorSpace) -> NSBitmapImageRep?](nsbitmapimagerep/retagging(with:).md)
+- [func retagging(with: NSColorSpace) -> NSBitmapImageRep?](./retagging%28with%29.md)
   Changes the color space tag of the bitmap image representation.
 
 

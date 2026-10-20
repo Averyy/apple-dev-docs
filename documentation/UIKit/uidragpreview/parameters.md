@@ -1,7 +1,8 @@
 # parameters
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance parameters associated with the drag item preview.
 
@@ -16,6 +17,10 @@ The appearance parameters associated with the drag item preview.
 ```swift
 @NSCopying
 var parameters: UIDragPreviewParameters { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) UIDragPreviewParameters * parameters;
 ```
 
 

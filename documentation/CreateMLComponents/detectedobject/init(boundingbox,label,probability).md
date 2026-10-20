@@ -1,7 +1,8 @@
 # init(boundingBox:label:probability:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a detected object with bounding box, object label and confidence.
 

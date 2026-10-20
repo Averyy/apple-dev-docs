@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an `NSSortDescriptor` representing the same sort as the given `SortDescriptor`.
 

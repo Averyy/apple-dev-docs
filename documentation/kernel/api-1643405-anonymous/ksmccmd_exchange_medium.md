@@ -1,7 +1,8 @@
 # kSMCCmd_EXCHANGE_MEDIUM
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSMCCmd_EXCHANGE_MEDIUM = 0xA6
 ```
 

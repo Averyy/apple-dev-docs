@@ -1,7 +1,8 @@
 # MTRMediaPlaybackPlaybackState
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,25 +19,29 @@
 enum MTRMediaPlaybackPlaybackState
 ```
 
+```c
+enum MTRMediaPlaybackPlaybackState : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRMediaPlaybackPlaybackState.buffering](mtrmediaplaybackplaybackstate/buffering.md)
-- [MTRMediaPlaybackPlaybackState.notPlaying](mtrmediaplaybackplaybackstate/notplaying.md)
-- [MTRMediaPlaybackPlaybackState.paused](mtrmediaplaybackplaybackstate/paused.md)
-- [MTRMediaPlaybackPlaybackState.playing](mtrmediaplaybackplaybackstate/playing.md)
+- [MTRMediaPlaybackPlaybackState.buffering](./mtrmediaplaybackplaybackstate/buffering.md)
+- [MTRMediaPlaybackPlaybackState.notPlaying](./mtrmediaplaybackplaybackstate/notplaying.md)
+- [MTRMediaPlaybackPlaybackState.paused](./mtrmediaplaybackplaybackstate/paused.md)
+- [MTRMediaPlaybackPlaybackState.playing](./mtrmediaplaybackplaybackstate/playing.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrmediaplaybackplaybackstate/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrmediaplaybackplaybackstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

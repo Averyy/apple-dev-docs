@@ -1,7 +1,8 @@
 # bottomK(_:axisTensor:kTensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a BottomK operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a BottomK operation and returns the result tensor.
 
 ```swift
 func bottomK(_ source: MPSGraphTensor, axisTensor: MPSGraphTensor, kTensor: MPSGraphTensor, name: String?) -> [MPSGraphTensor]
+```
+
+```objc
+- (NSArray<MPSGraphTensor *> *) bottomKWithSourceTensor:(MPSGraphTensor *) source axisTensor:(MPSGraphTensor *) axisTensor kTensor:(MPSGraphTensor *) kTensor name:(NSString *) name;
 ```
 
 #### Return Value

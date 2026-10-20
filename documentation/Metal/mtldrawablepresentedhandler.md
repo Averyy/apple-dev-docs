@@ -1,17 +1,18 @@
 # MTLDrawablePresentedHandler
 
 **Framework**: Metal  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block of code invoked after a drawable is presented.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ A block of code invoked after a drawable is presented.
 typealias MTLDrawablePresentedHandler = @Sendable (any MTLDrawable) -> Void
 ```
 
+```c
+typedef void (^)(id<MTLDrawable>) MTLDrawablePresentedHandler;
+```
+
 ## See Also
 
-- [protocol MTLDrawable](mtldrawable.md)
+### Render pass outputs
+- [protocol MTLDrawable](./mtldrawable.md)
   A displayable resource that can be rendered or written to.
 
 

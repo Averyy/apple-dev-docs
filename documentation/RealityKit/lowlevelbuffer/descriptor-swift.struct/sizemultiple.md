@@ -1,7 +1,8 @@
 # sizeMultiple
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 For variable length buffers, bytesUsed needs to be a multiple of this value.
 

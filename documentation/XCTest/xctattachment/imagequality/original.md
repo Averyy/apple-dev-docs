@@ -1,7 +1,8 @@
 # XCTAttachment.ImageQuality.original
 
 **Framework**: XCTest  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Original image quality, represented as a lossless PNG image.
 
@@ -11,11 +12,16 @@ Original image quality, represented as a lossless PNG image.
 case original
 ```
 
+```c
+XCTImageQualityOriginal
+```
+
 ## See Also
 
-- [XCTAttachment.ImageQuality.medium](xctattachment/imagequality/medium.md)
+### Quality Settings
+- [XCTAttachment.ImageQuality.medium](./medium.md)
   Medium image quality, represented as a high quality lossy JPEG image.
-- [XCTAttachment.ImageQuality.low](xctattachment/imagequality/low.md)
+- [XCTAttachment.ImageQuality.low](./low.md)
   Low image quality, represented as a highly compressed lossy JPEG image.
 
 

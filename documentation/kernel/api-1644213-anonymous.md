@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOFBHardwareCursorActive](1644213-anonymous/kiofbhardwarecursoractive.md)
-- [kIOFBHardwareCursorInVRAM](1644213-anonymous/kiofbhardwarecursorinvram.md)
+- [kIOFBHardwareCursorActive](./api-1644213-anonymous/kiofbhardwarecursoractive.md)
+- [kIOFBHardwareCursorInVRAM](./api-1644213-anonymous/kiofbhardwarecursorinvram.md)
 
 
 ---

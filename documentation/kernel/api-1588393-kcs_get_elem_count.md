@@ -1,21 +1,23 @@
 # kcs_get_elem_count
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 uint32_t kcs_get_elem_count(kcdata_subtype_descriptor_t d);
 ```
 
 ## See Also
 
-- [kcs_get_elem_size](1588402-kcs_get_elem_size.md)
-- [kcs_set_elem_size](1588385-kcs_set_elem_size.md)
+### kcs
+- [kcs_get_elem_size](./api-1588402-kcs_get_elem_size.md)
+- [kcs_set_elem_size](./api-1588385-kcs_set_elem_size.md)
 
 
 ---

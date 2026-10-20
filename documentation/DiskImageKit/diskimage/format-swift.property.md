@@ -1,7 +1,8 @@
 # format
 
 **Framework**: DiskImageKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format of the disk image.
 
@@ -16,7 +17,7 @@ var format: DiskImage.Format { get }
 
 #### Discussion
 
-This is one of the available [`DiskImage.Format`](diskimage/format-swift.enum.md) values.
+This is one of the available [`DiskImage.Format`](./format-swift.enum.md) values.
 
 
 ---

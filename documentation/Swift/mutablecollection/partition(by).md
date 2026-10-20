@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Reorders the elements of the collection such that all the elements that match the given predicate are after all the elements that don’t match.
@@ -49,11 +50,19 @@ let second = numbers[p...]
 
 Note that the order of elements in both partitions changed. That is, `40` appears before `60` in the original collection, but, after calling `partition(by:)`, `60` appears before `40`.
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
 - `belongsInSecondPartition`: A predicate used to partition the collection. All elements satisfying this predicate are ordered after all elements not satisfying it.
+
+## Default Implementations
+
+### MutableCollection Implementations
+- [func partition(by: (Self.Element) throws -> Bool) rethrows -> Self.Index](./partition%28by%29-4stj2.md)
+  Reorders the elements of the collection such that all the elements that match the given predicate are after all the elements that don’t match.
+- [func partition(by: (Self.Element) throws -> Bool) rethrows -> Self.Index](./partition%28by%29-8g62j.md)
+  Reorders the elements of the collection such that all the elements that match the given predicate are after all the elements that don’t match.
 
 
 ---

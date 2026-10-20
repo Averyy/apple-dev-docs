@@ -1,7 +1,8 @@
 # init(title:image:identifier:children:viewControllerProvider:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tab group.
 
@@ -16,6 +17,10 @@ Creates a tab group.
 
 ```swift
 init(title: String, image: UIImage?, identifier: String, children: [UITab], viewControllerProvider: ((UITab) -> UIViewController)? = nil)
+```
+
+```objc
+- (instancetype) initWithTitle:(NSString *) title image:(UIImage *) image identifier:(NSString *) identifier children:(NSArray<UITab *> *) children viewControllerProvider:(UIViewController * (^)(UITab *)) viewControllerProvider;
 ```
 
 ## Parameters

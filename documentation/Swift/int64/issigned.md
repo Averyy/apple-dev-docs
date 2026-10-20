@@ -1,7 +1,8 @@
 # isSigned
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value indicating whether this type is a signed integer type.
 

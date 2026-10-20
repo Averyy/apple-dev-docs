@@ -1,7 +1,8 @@
 # contentDescription
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the content, if available.
 

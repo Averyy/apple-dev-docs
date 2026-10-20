@@ -1,7 +1,8 @@
 # init(status:requestCount:offset:completeCount:timeStamp:options:)
 
 **Framework**: IOUSBHost  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -15,7 +16,8 @@ init(status: IOReturn, requestCount: UInt32, offset: UInt32, completeCount: UInt
 
 ## See Also
 
-- [init()](iousbhostisochronoustransaction/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

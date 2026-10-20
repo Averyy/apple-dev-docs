@@ -1,7 +1,8 @@
 # summary(of:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a group summaries instance for the columns you select by name.
 
@@ -20,15 +21,18 @@ Generates a group summaries instance for the columns you select by name.
 func summary(of columnNames: [String]) -> any GroupSummaries
 ```
 
+Available when `GroupingKey` conforms to `Hashable`.
+
 ## Parameters
 
 - `columnNames`: An array of column names.
 
 ## See Also
 
-- [func summary() -> any GroupSummaries](rowgrouping/summary.md)
+### Summarizing a Row Grouping
+- [func summary() -> any GroupSummaries](./summary%28%29.md)
   Generates a group summaries instance for the columns of the row grouping.
-- [protocol GroupSummaries](groupsummaries.md)
+- [protocol GroupSummaries](../groupsummaries.md)
   A collection of group summaries.
 
 

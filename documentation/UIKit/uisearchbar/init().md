@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the search bar to its default state.
 
@@ -9,7 +10,7 @@ Initializes the search bar to its default state.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ Initializes the search bar to its default state.
 convenience init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 An initialized search bar or `nil` if the view could not be initialized.
 
 ## See Also
 
-- [init?(coder: NSCoder)](uisearchbar/init(coder:).md)
+### Creating a search bar
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a search bar from data in a given unarchiver.
-- [init(frame: CGRect)](uisearchbar/init(frame:).md)
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates a search bar with a specified frame.
 
 

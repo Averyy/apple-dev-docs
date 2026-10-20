@@ -1,7 +1,8 @@
 # GLKTextureInfoOrigin.bottomLeft
 
 **Framework**: GLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The origin of the texture is in the bottom-left corner.
 
@@ -17,11 +18,16 @@ The origin of the texture is in the bottom-left corner.
 case bottomLeft
 ```
 
+```c
+GLKTextureInfoOriginBottomLeft
+```
+
 ## See Also
 
-- [GLKTextureInfoOrigin.unknown](glktextureinfoorigin/unknown.md)
+### Constants
+- [GLKTextureInfoOrigin.unknown](./unknown.md)
   The origin of the texture is not supported.
-- [GLKTextureInfoOrigin.topLeft](glktextureinfoorigin/topleft.md)
+- [GLKTextureInfoOrigin.topLeft](./topleft.md)
   The origin of the texture is in the top-left corner.
 
 

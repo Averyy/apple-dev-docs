@@ -1,7 +1,8 @@
 # kIOUSBEndpointUsageTypeIsocImplicit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The isochronous implicit type.
 
@@ -10,7 +11,7 @@ The isochronous implicit type.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBEndpointUsageTypeIsocImplicit = (kIOUSBEndpointDescriptorUsageTypeIsocImplicit >> kIOUSBEndpointDescriptorUsageTypePhase)
 ```
 

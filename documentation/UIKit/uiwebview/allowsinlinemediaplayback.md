@@ -1,19 +1,24 @@
 # allowsInlineMediaPlayback
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether HTML5 videos play inline or use the native full-screen controller.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 4.0+
+- iOS 4.0+ - Deprecated in 12.0
+- iPadOS 4.0+ - Deprecated in 12.0
+- Mac Catalyst 4.0+ - Deprecated in 12.0
 
 ## Declaration
 
 ```swift
 var allowsInlineMediaPlayback: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL allowsInlineMediaPlayback;
 ```
 
 #### Discussion
@@ -26,11 +31,12 @@ The default value for iPhone is `false` and the default value for iPad is `true`
 
 ## See Also
 
-- [var mediaPlaybackRequiresUserAction: Bool](uiwebview/mediaplaybackrequiresuseraction.md)
+### Managing media playback
+- [var mediaPlaybackRequiresUserAction: Bool](./mediaplaybackrequiresuseraction.md)
   A Boolean value that determines whether HTML5 videos can play automatically or require the user to start playing them.
-- [var mediaPlaybackAllowsAirPlay: Bool](uiwebview/mediaplaybackallowsairplay.md)
+- [var mediaPlaybackAllowsAirPlay: Bool](./mediaplaybackallowsairplay.md)
   A Boolean value that determines whether Air Play is allowed from this view.
-- [var allowsPictureInPictureMediaPlayback: Bool](uiwebview/allowspictureinpicturemediaplayback.md)
+- [var allowsPictureInPictureMediaPlayback: Bool](./allowspictureinpicturemediaplayback.md)
   A Boolean value that determines whether Picture in Picture playback is allowed from this view.
 
 

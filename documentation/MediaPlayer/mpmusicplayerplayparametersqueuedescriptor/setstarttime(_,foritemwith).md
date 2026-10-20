@@ -1,7 +1,8 @@
 # setStartTime(_:forItemWith:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the time the item with the associated play parameters is to start playing.
 
@@ -18,14 +19,19 @@ Sets the time the item with the associated play parameters is to start playing.
 func setStartTime(_ startTime: TimeInterval, forItemWith playParameters: MPMusicPlayerPlayParameters)
 ```
 
+```objc
+- (void) setStartTime:(NSTimeInterval) startTime forItemWithPlayParameters:(MPMusicPlayerPlayParameters *) playParameters;
+```
+
 ## Parameters
 
-- `startTime`: The [`TimeInterval`](https://developer.apple.com/documentation/foundation/timeinterval) describing when the item with designated play parameters starts playing.
+- `startTime`: The [`TimeInterval`](../../Foundation/timeinterval.md) describing when the item with designated play parameters starts playing.
 - `playParameters`: The play parameters associated with the item in the queue that has a changed start time.
 
 ## See Also
 
-- [func setEndTime(TimeInterval, forItemWith: MPMusicPlayerPlayParameters)](mpmusicplayerplayparametersqueuedescriptor/setendtime(_:foritemwith:).md)
+### Setting start and end times
+- [func setEndTime(TimeInterval, forItemWith: MPMusicPlayerPlayParameters)](./setendtime%28_,foritemwith%29.md)
   Sets the time the item with the associated play parameters is to stop playing.
 
 

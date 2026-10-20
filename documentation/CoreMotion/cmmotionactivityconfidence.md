@@ -1,7 +1,8 @@
 # CMMotionActivityConfidence
 
 **Framework**: Core Motion  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The confidence that the motion data is accurate.
 
@@ -19,33 +20,38 @@ The confidence that the motion data is accurate.
 enum CMMotionActivityConfidence
 ```
 
+```c
+enum CMMotionActivityConfidence : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [CMMotionActivityConfidence.low](cmmotionactivityconfidence/low.md)
+- [CMMotionActivityConfidence.low](./cmmotionactivityconfidence/low.md)
   Confidence is low.
-- [CMMotionActivityConfidence.medium](cmmotionactivityconfidence/medium.md)
+- [CMMotionActivityConfidence.medium](./cmmotionactivityconfidence/medium.md)
   Confidence is good.
-- [CMMotionActivityConfidence.high](cmmotionactivityconfidence/high.md)
+- [CMMotionActivityConfidence.high](./cmmotionactivityconfidence/high.md)
   Confidence is high.
 ### Initializers
-- [init?(rawValue: Int)](cmmotionactivityconfidence/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cmmotionactivityconfidence/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var startDate: Date](cmmotionactivity/startdate.md)
+### Getting Metadata for the Motion
+- [var startDate: Date](./cmmotionactivity/startdate.md)
   The time at which the change in motion occurred.
-- [var confidence: CMMotionActivityConfidence](cmmotionactivity/confidence.md)
+- [var confidence: CMMotionActivityConfidence](./cmmotionactivity/confidence.md)
   The confidence in the assessment of the motion type.
 
 

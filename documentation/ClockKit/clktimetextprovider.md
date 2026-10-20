@@ -1,12 +1,15 @@
 # CLKTimeTextProvider
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A formatted time value.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
@@ -14,9 +17,13 @@ A formatted time value.
 class CLKTimeTextProvider
 ```
 
+```objc
+@interface CLKTimeTextProvider : CLKTextProvider
+```
+
 ## Mentions
 
-- [Creating a timeline entry](creating-a-timeline-entry.md)
+- [Creating a timeline entry](./creating-a-timeline-entry.md)
 
 #### Overview
 
@@ -30,40 +37,41 @@ When formatting the time, the time text provider drops the morning/evening indic
 ## Topics
 
 ### Creating a Text Provider
-- [convenience init(date: Date)](clktimetextprovider/init(date:).md)
+- [convenience init(date: Date)](./clktimetextprovider/init%28date%29.md)
   Creates and returns a text provider for displaying the specified time.
-- [convenience init(date: Date, timeZone: TimeZone?)](clktimetextprovider/init(date:timezone:).md)
+- [convenience init(date: Date, timeZone: TimeZone?)](./clktimetextprovider/init%28date,timezone%29.md)
   Creates and returns a text provider for displaying the specified time.
 ### Getting the Time Information
-- [var date: Date](clktimetextprovider/date.md)
+- [var date: Date](./clktimetextprovider/date.md)
   The date object containing the time value.
-- [var timeZone: TimeZone?](clktimetextprovider/timezone.md)
+- [var timeZone: TimeZone?](./clktimetextprovider/timezone.md)
   The time zone used to format time values.
 
 ## Relationships
 
 ### Inherits From
-- [CLKTextProvider](clktextprovider.md)
+- [CLKTextProvider](./clktextprovider.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CLKSimpleTextProvider](clksimpletextprovider.md)
+### Text providers
+- [class CLKSimpleTextProvider](./clksimpletextprovider.md)
   A single line of text to display in your complication interface.
-- [class CLKDateTextProvider](clkdatetextprovider.md)
+- [class CLKDateTextProvider](./clkdatetextprovider.md)
   A formatted string that conveys a date without any time information.
-- [class CLKRelativeDateTextProvider](clkrelativedatetextprovider.md)
+- [class CLKRelativeDateTextProvider](./clkrelativedatetextprovider.md)
   A formatted string that conveys the difference in time between the current date and a date that you specify.
-- [class CLKTimeIntervalTextProvider](clktimeintervaltextprovider.md)
+- [class CLKTimeIntervalTextProvider](./clktimeintervaltextprovider.md)
   A formatted time range.
-- [class CLKTextProvider](clktextprovider.md)
+- [class CLKTextProvider](./clktextprovider.md)
   The common behavior for displaying text-based data in a complication.
 
 

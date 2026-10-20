@@ -1,13 +1,14 @@
 # Equatable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func != (borrowing Self, borrowing Self) -> Bool](optional/!=(_:_:)-9vqn3.md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29-9vqn3.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [static func == (Wrapped?, Wrapped?) -> Bool](optional/==(_:_:)-m6x.md)
+- [static func == (Wrapped?, Wrapped?) -> Bool](./eqeq%28_,_%29-m6x.md)
   Returns a Boolean value indicating whether two optional instances are equal.
 
 

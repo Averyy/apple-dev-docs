@@ -1,7 +1,8 @@
 # didResize
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didResize: NotificationCenter.BaseMessageIdentifier<NSWindow.DidResizeMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSWindow.DidResizeMessage>`.
 
 
 ---

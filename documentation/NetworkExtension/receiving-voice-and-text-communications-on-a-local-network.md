@@ -1,6 +1,8 @@
 # Receiving Voice and Text Communications on a Local Network
 
-**Framework**: Network Extension
+**Framework**: Network Extension  
+**Role**: Sample Code  
+**Download**: [ReceivingVoiceAndTextCommunicationsOnALocalNetwork.zip](https://docs-assets.developer.apple.com/published/f55c63838213/ReceivingVoiceAndTextCommunicationsOnALocalNetwork.zip)
 
 Provide voice and text communication on a local network isolated from Apple Push Notification service by adopting Local Push Connectivity.
 
@@ -20,14 +22,14 @@ This sample app shows how to implement and use Local Push Connectivity within a 
 
 The `SimplePush` app maintains two connections to the server:
 
-- Notification Channel — A TCP connection the [`NEAppPushProvider`](neapppushprovider.md) maintains that provides functionality similar to Apple Push Notification service (APNs) when on a local Wi-Fi or private LTE network.
+- Notification Channel — A TCP connection the [`NEAppPushProvider`](./neapppushprovider.md) maintains that provides functionality similar to Apple Push Notification service (APNs) when on a local Wi-Fi or private LTE network.
 - Control Channel — A TCP connection the iOS app maintains and uses to send app control data to the server.
 
 To run the sample, you need a Mac to operate as the server, and two iOS devices (such as an iPhone and an iPad, or an iPod touch and an iPhone) that can connect to the server to communicate with each other.
 
 ##### Configure the Sample Code Project
 
-Apps that use Local Push Connectivity require the [`App Push Provider entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/local-push-connectivity).
+Apps that use Local Push Connectivity require the [App Push Provider entitlement](https://developer.apple.com/contact/request/local-push-connectivity).
 
 After you receive the entitlement, do the following:
 
@@ -41,26 +43,29 @@ After you receive the entitlement, do the following:
 
 Select the `SimplePushServer` build scheme and your Mac as the run destination, then run the project to start the server.
 
-##### Build Run and Configure the Sample App
+##### Build, Run, and Configure the Sample App
 
 With the server running, select the `SimplePush` iOS build scheme and run the project on your iOS device. When `SimplePush` starts, update the app’s settings to connect to the server. Tap the Settings button and enter the following information:
 
 1. Enter the Server Address, which is the IP address or hostname of the Mac where `SimplePushServer` is running.
-2. Enter one or more of the following network configurations: - Wi-Fi — Enter the SSID of your local Wi-Fi network. The `NEAppPushProvider` runs when your device joins the Wi-Fi network with the SSID you’ve specified.
-- Cellular—Enter the Mobile Country Code and Mobile Network Code of your cellular provider. If the device is connected to a Band 48 CBRS cellular network, enter the Tracking Area Code for the network.
-- Ethernet — The `NEAppPushProvider` runs when your device is connected to an Ethernet network and the ethernet network is the primary route on the device.
+2. Enter one or more of the following network configurations:
 
-> ❗ **Important**: All cellular networks other than Band 48 CBRS require the device to be supervised for `NEAppPushProvider` to run. For more information, see [`Supervision of Apple devices`](https://developer.apple.comhttps://support.apple.com/guide/deployment-reference-ios/enabling-device-supervision-ior7ba06c270/web).
+   - Wi-Fi — Enter the SSID of your local Wi-Fi network. The `NEAppPushProvider` runs when your device joins the Wi-Fi network with the SSID you’ve specified.
+   - Cellular—Enter the Mobile Country Code and Mobile Network Code of your cellular provider. If the device is connected to a Band 48 CBRS cellular network, enter the Tracking Area Code for the network.
+   - Ethernet — The `NEAppPushProvider` runs when your device is connected to an Ethernet network and the ethernet network is the primary route on the device.
+
+> ❗ **Important**: All cellular networks other than Band 48 CBRS require the device to be supervised for `NEAppPushProvider` to run. For more information, see [Supervision of Apple devices](https://support.apple.com/guide/deployment-reference-ios/enabling-device-supervision-ior7ba06c270/web).
 
 After configuring the settings above, the Local Push Connectivity - Active setting displays “Yes” when `NEAppPushProvider` is running. You must perform the steps above on at least two iOS devices so you can test and observe message exchanges between clients.
 
 ## See Also
 
-- [class NEAppPushManager](neapppushmanager.md)
+### Essentials
+- [class NEAppPushManager](./neapppushmanager.md)
   An object that configures a push provider and manages its life cycle.
-- [class NEAppPushProvider](neapppushprovider.md)
+- [class NEAppPushProvider](./neapppushprovider.md)
   An object that creates and maintains a persistent network connection to a local push server.
-- [Maintaining a Reliable Network Connection](maintaining-a-reliable-network-connection.md)
+- [Maintaining a Reliable Network Connection](./maintaining-a-reliable-network-connection.md)
   Implement your Local Push Connectivity app to ensure delivery of notifications.
 
 

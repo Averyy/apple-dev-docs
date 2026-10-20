@@ -1,7 +1,8 @@
 # reserved
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Reserved. May be used to hold a 32-bit encoding value, if necessary (see the description of the `script` field for more information).
 
@@ -12,6 +13,10 @@ Reserved. May be used to hold a 32-bit encoding value, if necessary (see the des
 
 ```swift
 var reserved: (Int32, Int32, Int32, Int32)
+```
+
+```c
+SInt32 reserved[4];
 ```
 
 

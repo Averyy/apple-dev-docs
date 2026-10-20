@@ -1,14 +1,15 @@
 # ip_user_fname
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 user_addr_t ip_user_fname;
 ```
 

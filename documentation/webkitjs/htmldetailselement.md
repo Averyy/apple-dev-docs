@@ -1,7 +1,8 @@
 # HTMLDetailsElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLDetailsElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [open](htmldetailselement/1629346-open.md)
+- [open](./htmldetailselement/api-1629346-open.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

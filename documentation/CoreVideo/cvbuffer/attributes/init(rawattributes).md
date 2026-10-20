@@ -1,7 +1,8 @@
 # init(rawAttributes:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an instance using a freeform attribute dictionary
 
@@ -22,7 +23,7 @@ init(rawAttributes: [String : any Sendable])
 
 #### Discussion
 
-This dictionary should only contain the pixel buffer attributes that [`CVPixelBufferCreate(_:_:_:_:_:_:)`](cvpixelbuffercreate(_:_:_:_:_:_:).md) function accepts.
+This dictionary should only contain the pixel buffer attributes that [`CVPixelBufferCreate(_:_:_:_:_:_:)`](../../cvpixelbuffercreate%28_,_,_,_,_,_%29.md) function accepts.
 
 
 ---

@@ -1,7 +1,8 @@
 # removeLast(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes values from the end of this path.
 
@@ -22,7 +23,7 @@ mutating func removeLast(_ k: Int = 1)
 
 #### Discussion
 
-> **Note**: The input parameter `k` must be greater than or equal to zero, and must be less than or equal to the number of elements in the path.
+> **Precondition**: The input parameter `k` must be greater than or equal to zero, and must be less than or equal to the number of elements in the path.
 
 ## Parameters
 
@@ -30,11 +31,12 @@ mutating func removeLast(_ k: Int = 1)
 
 ## See Also
 
-- [var isEmpty: Bool](navigationpath/isempty.md)
+### Managing path contents
+- [var isEmpty: Bool](./isempty.md)
   A Boolean that indicates whether this path is empty.
-- [var count: Int](navigationpath/count.md)
+- [var count: Int](./count.md)
   The number of elements in this path.
-- [func append(_:)](navigationpath/append(_:).md)
+- [func append(_:)](./append%28_%29.md)
   Appends a new codable value to the end of this path.
 
 

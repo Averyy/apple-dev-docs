@@ -1,7 +1,8 @@
 # creationVariety
 
 **Framework**: Image Playground  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount to vary the creation parameters when generating multiple images from the same inputs.
 
@@ -20,9 +21,9 @@ var creationVariety: ImagePlaygroundOptions.CreationVariety
 
 #### Discussion
 
-When creating multiple images from the same inputs, the system adjusts parameters programmatically to create images with different content. Use this property to specify the amount of variability you want in the final images. For example, specify [`ImagePlaygroundOptions.CreationVariety.high`](imageplaygroundoptions/creationvariety-swift.enum/high.md) to generate images with greater numbers of differences, or specify [`ImagePlaygroundOptions.CreationVariety.low`](imageplaygroundoptions/creationvariety-swift.enum/low.md) to generate images that are closer together.
+When creating multiple images from the same inputs, the system adjusts parameters programmatically to create images with different content. Use this property to specify the amount of variability you want in the final images. For example, specify [`ImagePlaygroundOptions.CreationVariety.high`](./creationvariety-swift.enum/high.md) to generate images with greater numbers of differences, or specify [`ImagePlaygroundOptions.CreationVariety.low`](./creationvariety-swift.enum/low.md) to generate images that are closer together.
 
-The default value of this property is [`ImagePlaygroundOptions.CreationVariety.automatic`](imageplaygroundoptions/creationvariety-swift.enum/automatic.md).
+The default value of this property is [`ImagePlaygroundOptions.CreationVariety.automatic`](./creationvariety-swift.enum/automatic.md).
 
 
 ---

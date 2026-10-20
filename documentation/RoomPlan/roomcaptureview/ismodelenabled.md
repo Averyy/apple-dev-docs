@@ -1,7 +1,8 @@
 # isModelEnabled
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the view displays a miniature rendering of the scanned room at the bottom of its bounds.
 
@@ -11,6 +12,15 @@ A Boolean value that determines whether the view displays a miniature rendering 
 - Mac Catalyst 16.0+
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst*
+
+```swift
+@MainActor
+@preconcurrency var isModelEnabled: Bool { get set }
+```
+
+*Mac Catalyst*
 
 ```swift
 @MainActor

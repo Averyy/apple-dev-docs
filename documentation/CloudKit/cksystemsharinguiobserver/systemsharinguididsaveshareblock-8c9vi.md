@@ -1,7 +1,8 @@
 # systemSharingUIDidSaveShareBlock
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A callback block the system invokes after the success or failure of a share save by the system sharing UI.
 
@@ -10,7 +11,7 @@ A callback block the system invokes after the success or failure of a share save
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,15 +22,16 @@ var systemSharingUIDidSaveShareBlock: (@Sendable (CKRecord.ID, Result<CKShare, a
 
 #### Discussion
 
-Following a successful share save by the system sharing UI in the provided [`CKContainer`](ckcontainer.md), the system invokes this callback with a `nonnull` [`CKRecord.ID`](ckrecord/id.md), a `nonnull` share, and a `nil` error.
+Following a successful share save by the system sharing UI in the provided [`CKContainer`](../ckcontainer.md), the system invokes this callback with a `nonnull` [`CKRecord.ID`](../ckrecord/id.md), a `nonnull` share, and a `nil` error.
 
-If a save failure occurs due to a per-item error like [`CKError.Code.serverRecordChanged`](ckerror/code/serverrecordchanged.md), the system invokes this callback with a `nonnull` [`CKRecord.ID`](ckrecord/id.md), a `nil` share, and a `nonnull` error.
+If a save failure occurs due to a per-item error like [`CKError.Code.serverRecordChanged`](../ckerror/code/serverrecordchanged.md), the system invokes this callback with a `nonnull` [`CKRecord.ID`](../ckrecord/id.md), a `nil` share, and a `nonnull` error.
 
-Each [`CKSystemSharingUIObserver`](cksystemsharinguiobserver.md) instance has a private serial queue. The system uses this queue for all callback block invocations.
+Each [`CKSystemSharingUIObserver`](../cksystemsharinguiobserver.md) instance has a private serial queue. The system uses this queue for all callback block invocations.
 
 ## See Also
 
-- [var systemSharingUIDidStopSharingBlock: ((CKRecord.ID, Result<Void, any Error>) -> Void)?](cksystemsharinguiobserver/systemsharinguididstopsharingblock-7nmiw.md)
+### Accessing sharing blocks
+- [var systemSharingUIDidStopSharingBlock: ((CKRecord.ID, Result<Void, any Error>) -> Void)?](./systemsharinguididstopsharingblock-7nmiw.md)
   A callback block the system invokes after the success or failure of a share delete by the system sharing UI.
 
 

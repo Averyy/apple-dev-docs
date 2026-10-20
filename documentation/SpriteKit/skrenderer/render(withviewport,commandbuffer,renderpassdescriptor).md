@@ -1,7 +1,8 @@
 # render(withViewport:commandBuffer:renderPassDescriptor:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -17,13 +18,18 @@
 func render(withViewport viewport: CGRect, commandBuffer: any MTLCommandBuffer, renderPassDescriptor: MTLRenderPassDescriptor)
 ```
 
+```objc
+- (void) renderWithViewport:(CGRect) viewport commandBuffer:(id<MTLCommandBuffer>) commandBuffer renderPassDescriptor:(MTLRenderPassDescriptor *) renderPassDescriptor;
+```
+
 ## Mentions
 
-- [Choosing a SpriteKit Scene Renderer](choosing-a-spritekit-scene-renderer.md)
+- [Choosing a SpriteKit Scene Renderer](../choosing-a-spritekit-scene-renderer.md)
 
 ## See Also
 
-- [func render(withViewport: CGRect, renderCommandEncoder: any MTLRenderCommandEncoder, renderPassDescriptor: MTLRenderPassDescriptor, commandQueue: any MTLCommandQueue)](skrenderer/render(withviewport:rendercommandencoder:renderpassdescriptor:commandqueue:).md)
+### Rendering the Scene
+- [func render(withViewport: CGRect, renderCommandEncoder: any MTLRenderCommandEncoder, renderPassDescriptor: MTLRenderPassDescriptor, commandQueue: any MTLCommandQueue)](./render%28withviewport,rendercommandencoder,renderpassdescriptor,commandqueue%29.md)
 
 
 ---

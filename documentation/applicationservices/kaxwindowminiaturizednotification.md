@@ -1,7 +1,8 @@
 # kAXWindowMiniaturizedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The application was minimized (that is, moved into the Dock).
 
@@ -12,6 +13,10 @@ The application was minimized (that is, moved into the Dock).
 
 ```swift
 var kAXWindowMiniaturizedNotification: String { get }
+```
+
+```c
+#define kAXWindowMiniaturizedNotification
 ```
 
 

@@ -1,23 +1,28 @@
 # classSymbolic
 
 **Framework**: Core Text  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A generally design-independent font style.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 static var classSymbolic: CTFontStylisticClass { get }
+```
+
+```c
+kCTFontClassSymbolic
 ```
 
 #### Discussion
@@ -26,23 +31,24 @@ A class typically assigned to fonts used for special characters, such as icons, 
 
 ## See Also
 
-- [static var classOldStyleSerifs: CTFontStylisticClass](ctfontstylisticclass/classoldstyleserifs.md)
+### Stylistic Classes
+- [static var classOldStyleSerifs: CTFontStylisticClass](./classoldstyleserifs.md)
   A font style based on the Latin printing style of the 15th to 17th century.
-- [static var classTransitionalSerifs: CTFontStylisticClass](ctfontstylisticclass/classtransitionalserifs.md)
+- [static var classTransitionalSerifs: CTFontStylisticClass](./classtransitionalserifs.md)
   A font style based on the Latin printing style of the 18th to 19th century.
-- [static var classModernSerifs: CTFontStylisticClass](ctfontstylisticclass/classmodernserifs.md)
+- [static var classModernSerifs: CTFontStylisticClass](./classmodernserifs.md)
   A font style based on the Latin printing style of the 20th century.
-- [static var classClarendonSerifs: CTFontStylisticClass](ctfontstylisticclass/classclarendonserifs.md)
+- [static var classClarendonSerifs: CTFontStylisticClass](./classclarendonserifs.md)
   A font style variation of the Oldstyle Serifs and the Transitional Serifs.
-- [static var classSlabSerifs: CTFontStylisticClass](ctfontstylisticclass/classslabserifs.md)
+- [static var classSlabSerifs: CTFontStylisticClass](./classslabserifs.md)
   A font style characterized by serifs with a square transition between the strokes and the serifs (no brackets).
-- [static var classFreeformSerifs: CTFontStylisticClass](ctfontstylisticclass/classfreeformserifs.md)
+- [static var classFreeformSerifs: CTFontStylisticClass](./classfreeformserifs.md)
   A font style that includes serifs but expresses a design freedom that doesn’t generally fit within the other serif design classifications.
-- [static var classSansSerif: CTFontStylisticClass](ctfontstylisticclass/classsansserif.md)
+- [static var classSansSerif: CTFontStylisticClass](./classsansserif.md)
   A font style that includes most basic letter forms (excluding Scripts and Ornamentals) that do not have serifs on the strokes.
-- [static var classOrnamentals: CTFontStylisticClass](ctfontstylisticclass/classornamentals.md)
+- [static var classOrnamentals: CTFontStylisticClass](./classornamentals.md)
   A font style that includes highly decorated or stylized character shapes such as those typically used in headlines.
-- [static var classScripts: CTFontStylisticClass](ctfontstylisticclass/classscripts.md)
+- [static var classScripts: CTFontStylisticClass](./classscripts.md)
   A font style among those typefaces designed to simulate handwriting.
 
 

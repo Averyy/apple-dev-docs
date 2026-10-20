@@ -1,7 +1,8 @@
 # insert(term:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add a custom term to the vocabulary.
 
@@ -29,9 +30,10 @@ This class accumulates vocabulary data (in the form of tokens paired with X-SAMP
 
 ## See Also
 
-- [static func supportedPhonemes(locale: Locale) -> [String]](sfcustomlanguagemodeldata/supportedphonemes(locale:).md)
+### Adding terms
+- [static func supportedPhonemes(locale: Locale) -> [String]](./supportedphonemes%28locale%29.md)
   List the supported subset of X-SAMPA pronunciations supported by this locale for the Speech framework.
-- [SFCustomLanguageModelData.CustomPronunciation](sfcustomlanguagemodeldata/custompronunciation.md)
+- [SFCustomLanguageModelData.CustomPronunciation](./custompronunciation.md)
   A term to be introduced into the speech recognition model’s vocabulary.
 
 

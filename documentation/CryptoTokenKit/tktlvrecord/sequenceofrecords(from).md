@@ -1,7 +1,8 @@
 # sequenceOfRecords(from:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns an array of TLV records from the specified data.
 
@@ -20,6 +21,10 @@ Creates and returns an array of TLV records from the specified data.
 class func sequenceOfRecords(from data: Data) -> [TKTLVRecord]?
 ```
 
+```objc
++ (NSArray<TKTLVRecord *> *) sequenceOfRecordsFromData:(NSData *) data;
+```
+
 #### Return Value
 
 A sequence of TLV records, or `nil` if `data` does not specify a sequence of valid records.
@@ -30,7 +35,8 @@ A sequence of TLV records, or `nil` if `data` does not specify a sequence of val
 
 ## See Also
 
-- [convenience init?(from: Data)](tktlvrecord/init(from:).md)
+### Creating Records
+- [convenience init?(from: Data)](./init%28from%29.md)
   Creates and returns a TLV record from by parsing the specified data.
 
 

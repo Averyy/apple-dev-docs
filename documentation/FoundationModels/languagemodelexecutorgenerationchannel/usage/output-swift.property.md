@@ -1,7 +1,8 @@
 # output
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The output token counts from the response.
 
@@ -21,11 +22,12 @@ var output: LanguageModelExecutorGenerationChannel.Usage.Output
 
 ## See Also
 
-- [var input: LanguageModelExecutorGenerationChannel.Usage.Input](languagemodelexecutorgenerationchannel/usage/input-swift.property.md)
+### Updating the token counts
+- [var input: LanguageModelExecutorGenerationChannel.Usage.Input](./input-swift.property.md)
   The input token counts from the transcript.
-- [LanguageModelExecutorGenerationChannel.Usage.Input](languagemodelexecutorgenerationchannel/usage/input-swift.struct.md)
+- [LanguageModelExecutorGenerationChannel.Usage.Input](./input-swift.struct.md)
   Token counts for the transcript submitted to the model.
-- [LanguageModelExecutorGenerationChannel.Usage.Output](languagemodelexecutorgenerationchannel/usage/output-swift.struct.md)
+- [LanguageModelExecutorGenerationChannel.Usage.Output](./output-swift.struct.md)
   Token counts for the output produced by the model.
 
 

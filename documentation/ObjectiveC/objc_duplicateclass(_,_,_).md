@@ -1,7 +1,8 @@
 # objc_duplicateClass(_:_:_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Used by Foundation’s Key-Value Observing.
 
@@ -20,18 +21,23 @@ Used by Foundation’s Key-Value Observing.
 func objc_duplicateClass(_ original: AnyClass, _ name: UnsafePointer<CChar>, _ extraBytes: Int) -> AnyClass
 ```
 
+```c
+extern Classobjc_duplicateClass(Class original, const char *name, size_t extraBytes);
+```
+
 #### Discussion
 
 Do not call this function yourself.
 
 ## See Also
 
-- [func objc_allocateClassPair(AnyClass?, UnsafePointer<CChar>, Int) -> AnyClass?](objc_allocateclasspair(_:_:_:).md)
+### Adding Classes
+- [func objc_allocateClassPair(AnyClass?, UnsafePointer<CChar>, Int) -> AnyClass?](./objc_allocateclasspair%28_,_,_%29.md)
   Creates a new class and metaclass.
-- [func objc_disposeClassPair(AnyClass)](objc_disposeclasspair(_:).md)
+- [func objc_disposeClassPair(AnyClass)](./objc_disposeclasspair%28_%29.md)
   Destroys a class and its associated metaclass.
-- [func objc_registerClassPair(AnyClass)](objc_registerclasspair(_:).md)
-  Registers a class that was allocated using [`objc_allocateClassPair(_:_:_:)`](objc_allocateclasspair(_:_:_:).md).
+- [func objc_registerClassPair(AnyClass)](./objc_registerclasspair%28_%29.md)
+  Registers a class that was allocated using [`objc_allocateClassPair(_:_:_:)`](./objc_allocateclasspair%28_,_,_%29.md).
 
 
 ---

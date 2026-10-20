@@ -1,7 +1,8 @@
 # OS_sec_protocol_metadata
 
 **Framework**: Security  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A `sec_protocol_metadata` instance conatins read-only properties of a connected and configured security protocol. Clients use this object to read information about a protocol instance. Properties include, for example, the negotiated TLS version, ciphersuite, and peer certificates.
 
@@ -20,10 +21,14 @@ A `sec_protocol_metadata` instance conatins read-only properties of a connected 
 protocol OS_sec_protocol_metadata : NSObjectProtocol
 ```
 
+```objc
+@protocol OS_sec_protocol_metadata <NSObject>
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

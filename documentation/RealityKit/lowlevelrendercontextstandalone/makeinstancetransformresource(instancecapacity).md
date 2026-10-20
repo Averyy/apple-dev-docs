@@ -1,7 +1,8 @@
 # makeInstanceTransformResource(instanceCapacity:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a transform buffer resource for GPU instancing.
 
@@ -19,13 +20,13 @@ final func makeInstanceTransformResource(instanceCapacity: Int) throws -> LowLev
 
 #### Return Value
 
-A newly created [`LowLevelInstanceTransformResource`](lowlevelinstancetransformresource.md).
+A newly created [`LowLevelInstanceTransformResource`](../lowlevelinstancetransformresource.md).
 
 #### Discussion
 
-The buffer stores up to `instanceCapacity` model-to-local transforms as `float4x4` values. Assign the result to a [`LowLevelMeshInstance`](lowlevelmeshinstance.md) via [`setInstanceTransforms(_:)`](lowlevelmeshinstance/setinstancetransforms(_:).md) to enable GPU instancing.
+The buffer stores up to `instanceCapacity` model-to-local transforms as `float4x4` values. Assign the result to a [`LowLevelMeshInstance`](../lowlevelmeshinstance.md) via [`setInstanceTransforms(_:)`](../lowlevelmeshinstance/setinstancetransforms%28_%29.md) to enable GPU instancing.
 
-> **Note**: An error if the allocation fails.
+> **Throws**: An error if the allocation fails.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # selectedIndexes()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The selected indexes of the camera files.
 
@@ -14,13 +15,18 @@ The selected indexes of the camera files.
 func selectedIndexes() -> IndexSet!
 ```
 
+```objc
+- (NSIndexSet *) selectedIndexes;
+```
+
 #### Return Value
 
 The indexes of the selected files.
 
 ## See Also
 
-- [func select(IndexSet!, byExtendingSelection: Bool)](ikcameradeviceview/select(_:byextendingselection:).md)
+### Selection Management
+- [func select(IndexSet!, byExtendingSelection: Bool)](./select%28_,byextendingselection%29.md)
   Invoked to select the specified files, extending the selection if specified.
 
 

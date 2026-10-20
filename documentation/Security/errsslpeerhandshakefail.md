@@ -1,7 +1,8 @@
 # errSSLPeerHandshakeFail
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The handshake failed.
 
@@ -18,6 +19,10 @@ The handshake failed.
 
 ```swift
 var errSSLPeerHandshakeFail: OSStatus { get }
+```
+
+```c
+errSSLPeerHandshakeFail
 ```
 
 

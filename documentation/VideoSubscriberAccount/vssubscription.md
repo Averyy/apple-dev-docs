@@ -1,22 +1,29 @@
 # VSSubscription
 
 **Framework**: Video Subscriber Account  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes a subscriber’s access to content.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 11.0+
-- macOS ?+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 18.0
+- iPadOS 11.0+ - Deprecated in 18.0
+- Mac Catalyst 11.0+ - Deprecated in 18.0
+- macOS
+- tvOS 11.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use VSUserAccount instead.
 
 ## Declaration
 
 ```swift
 class VSSubscription
+```
+
+```objc
+@interface VSSubscription : NSObject
 ```
 
 #### Overview
@@ -26,28 +33,28 @@ Use a `VSSubscription` object to set user subscription information, such as acco
 ## Topics
 
 ### Setting Subscription Details
-- [var accessLevel: VSSubscriptionAccessLevel](vssubscription/accesslevel.md)
+- [var accessLevel: VSSubscriptionAccessLevel](./vssubscription/accesslevel.md)
   The subscriber’s level of access to your catalog of content.
-- [enum VSSubscriptionAccessLevel](vssubscriptionaccesslevel.md)
+- [enum VSSubscriptionAccessLevel](./vssubscriptionaccesslevel.md)
   Constants representing a subscriber’s level of access to your content.
-- [var billingIdentifier: String?](vssubscription/billingidentifier.md)
+- [var billingIdentifier: String?](./vssubscription/billingidentifier.md)
   The subscriber’s billing group.
-- [var expirationDate: Date!](vssubscription/expirationdate.md)
+- [var expirationDate: Date!](./vssubscription/expirationdate.md)
   The date when the user’s subscription expires.
-- [var tierIdentifiers: [String]!](vssubscription/tieridentifiers.md)
+- [var tierIdentifiers: [String]!](./vssubscription/tieridentifiers.md)
   A list of content from your catalog that the subscriber can access.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

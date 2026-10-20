@@ -1,12 +1,13 @@
 # Sound sample descriptions
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: API Collection
 
 A sound sample description contains information that defines how to interpret sound media data.
 
 #### Overview
 
-The sound sample description contains information that defines how to interpret sound media data. This sample description is based on the standard sample description, as described in [`Sample description atom`](sample_description_atom.md).
+The sound sample description contains information that defines how to interpret sound media data. This sample description is based on the standard sample description, as described in [`Sample description atom`](./sample_description_atom.md).
 
 The data format field contains the format of the audio data. This may specify a compression format or one of several uncompressed audio formats. The following table shows a list of some supported sound formats.
 
@@ -40,20 +41,21 @@ The data format field contains the format of the audio data. This may specify a 
 ## Topics
 
 ### Using sample descriptions
-- [Sound sample description version 0 ('stsd')](sound_sample_description_version_0.md)
+- [Sound sample description version 0 ('stsd')](./sound_sample_description_version_0.md)
   A sound sample description that supports only uncompressed audio in raw or twos-complement format.
-- [Sound sample description version 1 ('stsd')](sound_sample_description_version_1.md)
+- [Sound sample description version 1 ('stsd')](./sound_sample_description_version_1.md)
   An extended sound sample description that supports compressed audio, and includes the ability to add atoms to the sound description.
-- [Sound sample description version 2 ('stsd')](sound_sample_description_version_2.md)
+- [Sound sample description version 2 ('stsd')](./sound_sample_description_version_2.md)
   An updated sound sample description that adds high resolution audio.
 
 ## See Also
 
-- [Sound sample description extensions](sound_sample_description_extensions.md)
+### Storing audio data
+- [Sound sample description extensions](./sound_sample_description_extensions.md)
   Extend sound sample descriptions by appending other atoms.
-- [Sound sample data](sound_sample_data.md)
+- [Sound sample data](./sound_sample_data.md)
   Sound sample formats that QuickTime supports.
-- [Audio priming-handling encoder delay in AAC](appendix_g_audio_priming_handling_encoder_delay_in_aac.md)
+- [Audio priming-handling encoder delay in AAC](./appendix_g_audio_priming_handling_encoder_delay_in_aac.md)
   Position a source audio signal in a sound track to handle encoder delay.
 
 

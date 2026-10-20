@@ -1,7 +1,8 @@
 # options
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Options for the graph executable.
 
@@ -17,6 +18,10 @@ Options for the graph executable.
 
 ```swift
 var options: MPSGraphOptions { get set }
+```
+
+```objc
+@property (atomic, readwrite) MPSGraphOptions options;
 ```
 
 #### Discussion

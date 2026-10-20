@@ -1,7 +1,8 @@
 # trustSettingsChangedEventMask
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 If the bit specified by this mask is set, your callback function is invoked when there is a change in certificate trust settings.
 
@@ -13,6 +14,10 @@ If the bit specified by this mask is set, your callback function is invoked when
 
 ```swift
 static var trustSettingsChangedEventMask: SecKeychainEventMask { get }
+```
+
+```c
+kSecTrustSettingsChangedEventMask
 ```
 
 

@@ -1,14 +1,15 @@
 # kBluetoothHCICommandLEReadPhy
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandLEReadPhy = 0x0030
 ```
 

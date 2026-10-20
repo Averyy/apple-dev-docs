@@ -1,7 +1,8 @@
 # recentSubscriptionStartDate
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The earliest start date of a subscription in a series of auto-renewable subscription purchases that ignores all lapses of paid service shorter than 60 days.
 
@@ -23,11 +24,12 @@ var recentSubscriptionStartDate: Date { get }
 
 #### Discussion
 
-> ❗ **Important**:  Don’t use the [`recentSubscriptionStartDate`](product/subscriptioninfo/renewalinfo/recentsubscriptionstartdate.md) date to calculate days of paid service. For more information about paid days of service, see [`Net revenue after a year`](https://developer.apple.comhttps://developer.apple.com/app-store/subscriptions/#revenue-after-one-year).
+> ❗ **Important**:  Don’t use the [`recentSubscriptionStartDate`](./recentsubscriptionstartdate.md) date to calculate days of paid service. For more information about paid days of service, see [Net revenue after a year](https://developer.apple.com/app-store/subscriptions/#revenue-after-one-year).
 
 ## See Also
 
-- [var renewalDate: Date?](product/subscriptioninfo/renewalinfo/renewaldate.md)
+### Getting subscription dates
+- [var renewalDate: Date?](./renewaldate.md)
   The UNIX time, in milliseconds, that the most recent auto-renewable subscription purchase expires.
 
 

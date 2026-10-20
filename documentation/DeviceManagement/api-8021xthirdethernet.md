@@ -1,7 +1,8 @@
 # 8021XThirdEthernet
 
 **Framework**: Device Management  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Device Management Profile
 
 The payload that configures the third wired Ethernet interface.
 
@@ -10,7 +11,7 @@ The payload that configures the third wired Ethernet interface.
 
 ## Declaration
 
-```swift
+```
 WiFi.EAPClientConfiguration 8021XThirdEthernet
 ```
 
@@ -21,12 +22,12 @@ Specify `com.apple.thirdethernet.managed` as the payload type.
 This payload’s contents contain these profile-specific keys:
 
 - Interface (String): This payload uses the value `ThirdEthernet`.
-- EAPClientConfiguration ([`WiFi.EAPClientConfiguration`](wifi/eapclientconfiguration-data.dictionary.md)): The dictionary that defines the enterprise profile for the network.
+- EAPClientConfiguration ([`WiFi.EAPClientConfiguration`](./wifi/eapclientconfiguration-data.dictionary.md)): The dictionary that defines the enterprise profile for the network.
 - SetupModes (String): The type of connection mode, which is either “System” or “Loginwindow.” “System” is the default.
 
 This payload applies to Ethernet interfaces according to service order, regardless of whether the interface is working.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -38,7 +39,7 @@ This payload applies to Ethernet interfaces according to service order, regardle
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -105,17 +106,18 @@ This payload applies to Ethernet interfaces according to service order, regardle
 
 ## See Also
 
-- [object 8021XGlobalEthernet](8021xglobalethernet.md)
+### Ethernet
+- [object 8021XGlobalEthernet](./api-8021xglobalethernet.md)
   The payload that configures the default fallback global Ethernet interface.
-- [type 8021XFirstActiveEthernet](8021xfirstactiveethernet.md)
+- [type 8021XFirstActiveEthernet](./api-8021xfirstactiveethernet.md)
   The payload that configures the first wired, active Ethernet interface.
-- [type 8021XFirstEthernet](8021xfirstethernet.md)
+- [type 8021XFirstEthernet](./api-8021xfirstethernet.md)
   The payload that configures the first wired Ethernet interface.
-- [type 8021XSecondActiveEthernet](8021xsecondactiveethernet.md)
+- [type 8021XSecondActiveEthernet](./api-8021xsecondactiveethernet.md)
   The payload that configures the second wired, active Ethernet interface.
-- [type 8021XSecondEthernet](8021xsecondethernet.md)
+- [type 8021XSecondEthernet](./api-8021xsecondethernet.md)
   The payload that configures the second wired Ethernet interface.
-- [type 8021XThirdActiveEthernet](8021xthirdactiveethernet.md)
+- [type 8021XThirdActiveEthernet](./api-8021xthirdactiveethernet.md)
   The payload that configures the third wired, active Ethernet interface.
 
 

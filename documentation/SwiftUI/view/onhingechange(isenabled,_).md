@@ -1,7 +1,8 @@
 # onHingeChange(isEnabled:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform when the hinge context of the view hierarchy changes.
 
@@ -49,9 +50,10 @@ In the example above, the current angle and status of the hinge will be displaye
 
 ## See Also
 
-- [struct DeviceHingeContext](devicehingecontext.md)
+### Responding to hinge angle changes
+- [struct DeviceHingeContext](../devicehingecontext.md)
   A type describing the context of hinges on the device.
-- [struct DeviceHinge](devicehinge.md)
+- [struct DeviceHinge](../devicehinge.md)
   A type encapsulating the state of a single hinge.
 
 

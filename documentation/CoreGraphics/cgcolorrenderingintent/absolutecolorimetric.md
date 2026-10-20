@@ -1,21 +1,26 @@
 # CGColorRenderingIntent.absoluteColorimetric
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 case absoluteColorimetric
+```
+
+```c
+kCGRenderingIntentAbsoluteColorimetric
 ```
 
 #### Discussion
@@ -24,12 +29,13 @@ Map colors outside of the gamut of the output device to the closest possible mat
 
 ## See Also
 
-- [CGColorRenderingIntent.defaultIntent](cgcolorrenderingintent/defaultintent.md)
+### Constants
+- [CGColorRenderingIntent.defaultIntent](./defaultintent.md)
   The default rendering intent for the graphics context.
-- [CGColorRenderingIntent.relativeColorimetric](cgcolorrenderingintent/relativecolorimetric.md)
-- [CGColorRenderingIntent.perceptual](cgcolorrenderingintent/perceptual.md)
+- [CGColorRenderingIntent.relativeColorimetric](./relativecolorimetric.md)
+- [CGColorRenderingIntent.perceptual](./perceptual.md)
   Preserve the visual relationship between colors by compressing the gamut of the graphics context to fit inside the gamut of the output device. Perceptual intent is good for photographs and other complex, detailed images.
-- [CGColorRenderingIntent.saturation](cgcolorrenderingintent/saturation.md)
+- [CGColorRenderingIntent.saturation](./saturation.md)
 
 
 ---

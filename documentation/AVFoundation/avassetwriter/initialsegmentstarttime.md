@@ -1,7 +1,8 @@
 # initialSegmentStartTime
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start time of the initial segment.
 
@@ -19,23 +20,28 @@ The start time of the initial segment.
 var initialSegmentStartTime: CMTime { get set }
 ```
 
+```objc
+@property (nonatomic) CMTime initialSegmentStartTime;
+```
+
 #### Discussion
 
-This value is relevant only when the [`preferredOutputSegmentInterval`](avassetwriter/preferredoutputsegmentinterval.md) property value is positive numeric, in which case you must set a numeric time.
+This value is relevant only when the [`preferredOutputSegmentInterval`](./preferredoutputsegmentinterval.md) property value is positive numeric, in which case you must set a numeric time.
 
 You can’t change this value after writing starts.
 
 ## See Also
 
-- [var delegate: (any AVAssetWriterDelegate)?](avassetwriter/delegate.md)
+### Configuring segment writing
+- [var delegate: (any AVAssetWriterDelegate)?](./delegate.md)
   A delegate object that responds to asset-writing events.
-- [protocol AVAssetWriterDelegate](avassetwriterdelegate.md)
+- [protocol AVAssetWriterDelegate](../avassetwriterdelegate.md)
   A delegate protocol that defines the methods to implement to respond to asset-writing events.
-- [var preferredOutputSegmentInterval: CMTime](avassetwriter/preferredoutputsegmentinterval.md)
+- [var preferredOutputSegmentInterval: CMTime](./preferredoutputsegmentinterval.md)
   The interval of output segments that you prefer.
-- [var outputFileTypeProfile: AVFileTypeProfile?](avassetwriter/outputfiletypeprofile.md)
+- [var outputFileTypeProfile: AVFileTypeProfile?](./outputfiletypeprofile.md)
   A profile for the output file type.
-- [func flushSegment()](avassetwriter/flushsegment.md)
+- [func flushSegment()](./flushsegment%28%29.md)
   Closes the current segment and outputs it to a delegate method.
 
 

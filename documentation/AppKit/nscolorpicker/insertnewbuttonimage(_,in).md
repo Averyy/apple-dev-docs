@@ -1,18 +1,23 @@
 # insertNewButtonImage(_:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the image used for the specified button cell.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 func insertNewButtonImage(_ newButtonImage: NSImage, in buttonCell: NSButtonCell)
+```
+
+```objc
+- (void) insertNewButtonImage:(NSImage *) newButtonImage in:(NSButtonCell *) buttonCell;
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ Called by the color panel to insert a new image into the specified cell by invok
 
 ## See Also
 
-- [var provideNewButtonImage: NSImage](nscolorpicker/providenewbuttonimage.md)
+### Adding Button Images
+- [var provideNewButtonImage: NSImage](./providenewbuttonimage.md)
   The button image used by the color picker.
 
 

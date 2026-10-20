@@ -1,7 +1,8 @@
 # MPSGraphPaddingMode.reflect
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Reflect
 
@@ -17,6 +18,10 @@ Reflect
 
 ```swift
 case reflect
+```
+
+```c
+MPSGraphPaddingModeReflect
 ```
 
 

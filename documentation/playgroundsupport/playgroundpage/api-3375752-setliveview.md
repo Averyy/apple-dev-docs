@@ -1,7 +1,8 @@
 # setLiveView(_:)
 
 **Framework**: Playground Support  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Generic Instance Method
 
 Displays a view that shows the result of running the code that’s on the current page.
 
@@ -12,6 +13,14 @@ Displays a view that shows the result of running the code that’s on the curren
 
 ## Declaration
 
+*macOS*
+
+```swift
+final func setLiveView<IncomingView>(_ newLiveView: IncomingView) where IncomingView : PlaygroundLiveViewable
+```
+
+*Swift Playgrounds*
+
 ```swift
 func setLiveView<IncomingView>(_ newLiveView: IncomingView) where IncomingView : PlaygroundLiveViewable
 ```
@@ -20,7 +29,7 @@ func setLiveView<IncomingView>(_ newLiveView: IncomingView) where IncomingView :
 
 The live view appears in the assistant editor for the current playground page. There can be only one live view open at any time.
 
-When you call [`setLiveView(_:)`](playgroundpage/3375752-setliveview.md), the system sets [`needsIndefiniteExecution`](playgroundpage/1964501-needsindefiniteexecution.md) to `true`.
+When you call [`setLiveView(_:)`](./api-3375752-setliveview.md), the system sets [`needsIndefiniteExecution`](./api-1964501-needsindefiniteexecution.md) to `true`.
 
 ## Parameters
 
@@ -28,11 +37,12 @@ When you call [`setLiveView(_:)`](playgroundpage/3375752-setliveview.md), the sy
 
 ## See Also
 
-- [static let current: PlaygroundPage](playgroundpage/1964509-current.md)
+### Configuring Live Views
+- [static let current: PlaygroundPage](./api-1964509-current.md)
   The current playground page.
-- [func setLiveView<IncomingView>(IncomingView)](playgroundpage/3375751-setliveview.md)
+- [func setLiveView<IncomingView>(IncomingView)](./api-3375751-setliveview.md)
   Displays a SwiftUI view that shows the result of running the code that’s on the current page.
-- [var liveView: (any PlaygroundLiveViewable)?](playgroundpage/1964506-liveview.md)
+- [var liveView: (any PlaygroundLiveViewable)?](./api-1964506-liveview.md)
   A live view that shows the result of running the code that’s on the current page.
 
 

@@ -1,7 +1,8 @@
 # isLocallyInitiated
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that is true if the current session was created by the local participant.
 

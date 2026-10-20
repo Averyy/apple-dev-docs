@@ -1,12 +1,13 @@
 # stopListening()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the speech recognition engine to suspend listening for commands.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Tells the speech recognition engine to suspend listening for commands.
 func stopListening()
 ```
 
+```objc
+- (void) stopListening;
+```
+
 ## See Also
 
-- [func startListening()](nsspeechrecognizer/startlistening.md)
+### Listening
+- [func startListening()](./startlistening%28%29.md)
   Tells the speech recognition engine to begin listening for commands.
 
 

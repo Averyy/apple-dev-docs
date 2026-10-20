@@ -1,17 +1,22 @@
 # moveRulerline(fromLocation:toLocation:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws temporary lines in the ruler area.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func moveRulerline(fromLocation oldLocation: CGFloat, toLocation newLocation: CGFloat)
+```
+
+```objc
+- (void) moveRulerlineFromLocation:(CGFloat) oldLocation toLocation:(CGFloat) newLocation;
 ```
 
 #### Discussion

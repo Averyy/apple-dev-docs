@@ -1,7 +1,8 @@
 # grayscaleDisplay
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Grayscale accessibility feature.
 
@@ -17,15 +18,20 @@ The Grayscale accessibility feature.
 static var grayscaleDisplay: UIGuidedAccessAccessibilityFeature { get }
 ```
 
+```c
+UIGuidedAccessAccessibilityFeatureGrayscaleDisplay
+```
+
 ## See Also
 
-- [static var assistiveTouch: UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature/assistivetouch.md)
+### Constants
+- [static var assistiveTouch: UIGuidedAccessAccessibilityFeature](./assistivetouch.md)
   The AssistiveTouch accessibility feature.
-- [static var invertColors: UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature/invertcolors.md)
+- [static var invertColors: UIGuidedAccessAccessibilityFeature](./invertcolors.md)
   The Smart Invert accessibility feature.
-- [static var voiceOver: UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature/voiceover.md)
+- [static var voiceOver: UIGuidedAccessAccessibilityFeature](./voiceover.md)
   The VoiceOver assistive app.
-- [static var zoom: UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature/zoom.md)
+- [static var zoom: UIGuidedAccessAccessibilityFeature](./zoom.md)
   The Zoom accessibility feature.
 
 

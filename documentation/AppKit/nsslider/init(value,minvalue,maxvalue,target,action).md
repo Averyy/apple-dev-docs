@@ -1,7 +1,8 @@
 # init(value:minValue:maxValue:target:action:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a continuous horizontal slider that represents values over the specified range.
 
@@ -12,6 +13,10 @@ Creates a continuous horizontal slider that represents values over the specified
 
 ```swift
 convenience init(value: Double, minValue: Double, maxValue: Double, target: Any?, action: Selector?)
+```
+
+```objc
++ (instancetype) sliderWithValue:(double) value minValue:(double) minValue maxValue:(double) maxValue target:(id) target action:(SEL) action;
 ```
 
 #### Return Value
@@ -28,7 +33,8 @@ An initialized slider control.
 
 ## See Also
 
-- [convenience init(target: Any?, action: Selector?)](nsslider/init(target:action:).md)
+### Creating sliders
+- [convenience init(target: Any?, action: Selector?)](./init%28target,action%29.md)
   Creates a continuous horizontal slider whose values range from `0.0` to `1.0`.
 
 

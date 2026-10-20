@@ -1,7 +1,8 @@
 # hoverEffectGroup(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an effect that activates a named group of effects.
 
@@ -13,6 +14,8 @@ Creates an effect that activates a named group of effects.
 ```swift
 static func hoverEffectGroup(_ group: HoverEffectGroup?) -> GroupHoverEffect
 ```
+
+Available when `Self` is `GroupHoverEffect`.
 
 #### Return Value
 

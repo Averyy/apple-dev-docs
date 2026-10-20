@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 A Boolean value that indicates whether system features can discover this app intent.
@@ -12,7 +13,7 @@ A Boolean value that indicates whether system features can discover this app int
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,7 +24,7 @@ static var isDiscoverable: Bool { get }
 
 ## Mentions
 
-- [Creating your first app intent](creating-your-first-app-intent.md)
+- [Creating your first app intent](../creating-your-first-app-intent.md)
 
 #### Discussion
 
@@ -31,11 +32,18 @@ When the value of this property is `true`, system features like Siri, Spotlight,
 
 > **Note**: App Shortcuts require this property to be `true` for the app intents they use.
 
+## Default Implementations
+
+### AppIntent Implementations
+- [static var isDiscoverable: Bool](./isdiscoverable-95nxm.md)
+  A Boolean value that indicates whether system features can discover this app intent.
+
 ## See Also
 
-- [static var title: LocalizedStringResource](appintent/title.md)
+### Configuring the metadata
+- [static var title: LocalizedStringResource](./title.md)
   A short, localized, human-readable string that conveys the app intent’s action.
-- [static var description: IntentDescription?](appintent/description.md)
+- [static var description: IntentDescription?](./description.md)
   A localized string that describes what the app intent does.
 
 

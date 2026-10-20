@@ -1,9 +1,10 @@
 # MFMailComposeError.Code
 
 **Framework**: Message UI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Error codes for [`NSError`](https://developer.apple.com/documentation/foundation/nserror) objects that are associated with the mail composition interface.
+Error codes for [`NSError`](../../Foundation/nserror.md) objects that are associated with the mail composition interface.
 
 **Availability**:
 - iOS 3.0+
@@ -17,31 +18,36 @@ Error codes for [`NSError`](https://developer.apple.com/documentation/foundation
 enum Code
 ```
 
+```c
+enum MFMailComposeErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MFMailComposeError.Code.saveFailed](mfmailcomposeerror/code/savefailed.md)
+- [MFMailComposeError.Code.saveFailed](./code/savefailed.md)
   An error occurred while trying to save the email message to the Drafts folder.
-- [MFMailComposeError.Code.sendFailed](mfmailcomposeerror/code/sendfailed.md)
+- [MFMailComposeError.Code.sendFailed](./code/sendfailed.md)
   An error occurred while trying to queue or send the email message.
 ### Initializers
-- [init?(rawValue: Int)](mfmailcomposeerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MFMailComposeError](mfmailcomposeerror.md)
+### Responding to errors
+- [struct MFMailComposeError](../mfmailcomposeerror.md)
   Mail composition errors.
-- [let MFMailComposeErrorDomain: String](mfmailcomposeerrordomain.md)
+- [let MFMailComposeErrorDomain: String](../mfmailcomposeerrordomain.md)
   The domain used for error objects that are associated with the mail composition interface.
 
 

@@ -1,7 +1,8 @@
 # CChar8
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The C++20 ‘char8_t’ type, which has UTF-8 encoding.
 
@@ -22,32 +23,33 @@ typealias CChar8 = UInt8
 
 ## See Also
 
-- [typealias CBool](cbool.md)
+### Aliases for Imported C Types
+- [typealias CBool](./cbool.md)
   The C ‘_Bool’ and C++ ‘bool’ type.
-- [typealias CChar](cchar.md)
+- [typealias CChar](./cchar.md)
   The C ‘char’ type.
-- [typealias CChar16](cchar16.md)
+- [typealias CChar16](./cchar16.md)
   The C++11 ‘char16_t’ type, which has UTF-16 encoding.
-- [typealias CChar32](cchar32.md)
+- [typealias CChar32](./cchar32.md)
   The C++11 ‘char32_t’ type, which has UTF-32 encoding.
-- [typealias CDouble](cdouble.md)
+- [typealias CDouble](./cdouble.md)
   The C ‘double’ type.
-- [typealias CLongDouble](clongdouble.md)
-- [typealias CFloat](cfloat.md)
+- [typealias CLongDouble](./clongdouble.md)
+- [typealias CFloat](./cfloat.md)
   The C ‘float’ type.
-- [typealias CFloat16](cfloat16.md)
+- [typealias CFloat16](./cfloat16.md)
   The C ‘_Float16’ type.
-- [typealias CInt](cint.md)
-- [typealias CLong](clong.md)
-- [typealias CLongLong](clonglong.md)
+- [typealias CInt](./cint.md)
+- [typealias CLong](./clong.md)
+- [typealias CLongLong](./clonglong.md)
   The C ‘long long’ type.
-- [typealias CShort](cshort.md)
+- [typealias CShort](./cshort.md)
   The C ‘short’ type.
-- [typealias CSignedChar](csignedchar.md)
+- [typealias CSignedChar](./csignedchar.md)
   The C ‘signed char’ type.
-- [typealias CUnsignedChar](cunsignedchar.md)
+- [typealias CUnsignedChar](./cunsignedchar.md)
   The C ‘unsigned char’ type.
-- [typealias CUnsignedInt](cunsignedint.md)
+- [typealias CUnsignedInt](./cunsignedint.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # PlaygroundPage.AssessmentStatus.pass(message:)
 
 **Framework**: Playground Support  
-**Kind**: enumelt
+**Kind**: enumelt  
+**Role**: Enumeration Case
 
 An assessment that communicates that a learner has successfully completed a task.
 
@@ -17,7 +18,7 @@ case pass(message: String?)
 
 #### Discussion
 
-The `message` associated value can contain markup. For more information on markup, see [`Markup Formatting Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html#//apple_ref/doc/uid/TP40016497). The example below shows a popover with the message “**Great** job!”
+The `message` associated value can contain markup. For more information on markup, see [Markup Formatting Reference](https://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html#//apple_ref/doc/uid/TP40016497). The example below shows a popover with the message “**Great** job!”
 
 ```swift
 PlaygroundPage.current.assessmentStatus = .pass(message: "**Great** job!")

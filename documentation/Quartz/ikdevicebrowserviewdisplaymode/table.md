@@ -1,7 +1,8 @@
 # IKDeviceBrowserViewDisplayMode.table
 
 **Framework**: Quartz  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The devices are displayed in a table.
 
@@ -14,11 +15,16 @@ The devices are displayed in a table.
 case table
 ```
 
+```c
+IKDeviceBrowserViewDisplayModeTable
+```
+
 ## See Also
 
-- [IKDeviceBrowserViewDisplayMode.outline](ikdevicebrowserviewdisplaymode/outline.md)
+### Constants
+- [IKDeviceBrowserViewDisplayMode.outline](./outline.md)
   The devices are displayed in an outline.
-- [IKDeviceBrowserViewDisplayMode.icon](ikdevicebrowserviewdisplaymode/icon.md)
+- [IKDeviceBrowserViewDisplayMode.icon](./icon.md)
   The devices are displayed as icons.
 
 

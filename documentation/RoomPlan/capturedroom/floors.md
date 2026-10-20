@@ -1,7 +1,8 @@
 # floors
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of floors that the framework identifies during a scan.
 
@@ -18,31 +19,32 @@ var floors: [CapturedRoom.Surface] { get }
 
 ## See Also
 
-- [var identifier: UUID](capturedroom/identifier.md)
+### Inspecting room details
+- [var identifier: UUID](./identifier.md)
   A unique alphanumeric value that the framework assigns the room.
-- [var story: Int](capturedroom/story.md)
+- [var story: Int](./story.md)
   The story, floor number, or level on which the captured room resides within a larger structure.
-- [CapturedRoom.Surface](capturedroom/surface.md)
+- [CapturedRoom.Surface](./surface.md)
   A 2D area in a room that the framework identifies as a surface.
-- [var doors: [CapturedRoom.Surface]](capturedroom/doors.md)
+- [var doors: [CapturedRoom.Surface]](./doors.md)
   An array of doors that the framework identifies during a scan.
-- [var objects: [CapturedRoom.Object]](capturedroom/objects.md)
+- [var objects: [CapturedRoom.Object]](./objects.md)
   An array of objects that the framework identifies during a scan.
-- [CapturedRoom.Object](capturedroom/object.md)
+- [CapturedRoom.Object](./object.md)
   A 3D area in a room that the framework identifies as an object.
-- [var openings: [CapturedRoom.Surface]](capturedroom/openings.md)
+- [var openings: [CapturedRoom.Surface]](./openings.md)
   An array of openings that the framework identifies during a scan.
-- [var walls: [CapturedRoom.Surface]](capturedroom/walls.md)
+- [var walls: [CapturedRoom.Surface]](./walls.md)
   An array of walls that the framework identifies during a scan.
-- [var windows: [CapturedRoom.Surface]](capturedroom/windows.md)
+- [var windows: [CapturedRoom.Surface]](./windows.md)
   An array of windows that the framework identifies during a scan.
-- [var sections: [CapturedRoom.Section]](capturedroom/sections.md)
+- [var sections: [CapturedRoom.Section]](./sections.md)
   One or more room types that the framework observes in the room.
-- [CapturedRoom.Section](capturedroom/section.md)
+- [CapturedRoom.Section](./section.md)
   An object that identifies a particular area in a captured room in relation to common types of room areas in a building.
-- [CapturedRoom.Confidence](capturedroom/confidence.md)
+- [CapturedRoom.Confidence](./confidence.md)
   Levels of certainty in the classification of a particular detail in a scan.
-- [var version: Int](capturedroom/version.md)
+- [var version: Int](./version.md)
   A version number for the captured room.
 
 

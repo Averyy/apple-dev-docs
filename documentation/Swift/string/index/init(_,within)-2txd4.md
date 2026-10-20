@@ -1,7 +1,8 @@
 # init(_:within:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an index in the given UTF-16 view that corresponds exactly to the specified string position.
 

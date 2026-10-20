@@ -1,7 +1,8 @@
 # uniqueIdentifier
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the home.
 
@@ -19,13 +20,18 @@ A unique identifier for the home.
 var uniqueIdentifier: UUID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSUUID * uniqueIdentifier;
+```
+
 ## See Also
 
-- [var name: String](hmhome/name.md)
+### Identifying a home
+- [var name: String](./name.md)
   The name the user gives to the home.
-- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmhome/updatename(_:completionhandler:).md)
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](./updatename%28_,completionhandler%29.md)
   Updates the name of the home.
-- [var isPrimary: Bool](hmhome/isprimary.md)
+- [var isPrimary: Bool](./isprimary.md)
   A Boolean value that indicates whether this is the primary home for its home manager.
 
 

@@ -1,7 +1,8 @@
 # MKMultiPolygonRenderer
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The visual representation of multiple polygon overlays.
 
@@ -19,40 +20,45 @@ The visual representation of multiple polygon overlays.
 class MKMultiPolygonRenderer
 ```
 
+```objc
+@interface MKMultiPolygonRenderer : MKOverlayPathRenderer
+```
+
 #### Overview
 
-Use this renderer to provide the style for multiple polygons created using [`MKMultiPolygon`](mkmultipolygon.md).
+Use this renderer to provide the style for multiple polygons created using [`MKMultiPolygon`](./mkmultipolygon.md).
 
 ## Topics
 
 ### Creating a multipolygon renderer
-- [init(multiPolygon: MKMultiPolygon)](mkmultipolygonrenderer/init(multipolygon:).md)
+- [init(multiPolygon: MKMultiPolygon)](./mkmultipolygonrenderer/init%28multipolygon%29.md)
   Creates and returns a renderer that handles drawing for the specified multipolygon overlay object.
 ### Accessing the multipolygon object
-- [var multiPolygon: MKMultiPolygon](mkmultipolygonrenderer/multipolygon.md)
+- [var multiPolygon: MKMultiPolygon](./mkmultipolygonrenderer/multipolygon.md)
   The multipolygon object that the renderer uses to draw the overlay’s contents.
 
 ## Relationships
 
 ### Inherits From
-- [MKOverlayPathRenderer](mkoverlaypathrenderer.md)
+- [MKOverlayPathRenderer](./mkoverlaypathrenderer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKPolygon](mkpolygon.md)
+### Custom shape overlays
+- [class MKPolygon](./mkpolygon.md)
   A closed polygon overlay.
-- [class MKPolygonRenderer](mkpolygonrenderer.md)
+- [class MKPolygonRenderer](./mkpolygonrenderer.md)
   The visual representation of a single polygon overlay.
-- [class MKMultiPolygon](mkmultipolygon.md)
+- [class MKMultiPolygon](./mkmultipolygon.md)
   A collection of multiple closed polygon overlays.
-- [class MKOverlayPathRenderer](mkoverlaypathrenderer.md)
+- [class MKOverlayPathRenderer](./mkoverlaypathrenderer.md)
   The visual representation of a path-based overlay.
 
 

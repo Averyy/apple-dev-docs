@@ -1,7 +1,8 @@
 # CBChannelSoundingProcedureResults
 
 **Framework**: Core Bluetooth  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 27.0+
@@ -14,30 +15,35 @@
 class CBChannelSoundingProcedureResults
 ```
 
+```objc
+@interface CBChannelSoundingProcedureResults : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var distance: Double](cbchannelsoundingprocedureresults/distance.md)
+- [var distance: Double](./cbchannelsoundingprocedureresults/distance.md)
   The measured distance in meters of a CBPeripheral.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Measuring distance between devices using Channel Sounding](measuring-distance-between-devices-using-channel-sounding.md)
+### Channel Sounding
+- [Measuring distance between devices using Channel Sounding](./measuring-distance-between-devices-using-channel-sounding.md)
   Measure the distance between two Bluetooth Low Energy devices in real time with Channel Sounding.
-- [class CBChannelSoundingSessionConfiguration](cbchannelsoundingsessionconfiguration.md)
-- [let CBUUIDCharacteristicObservationScheduleString: String](cbuuidcharacteristicobservationschedulestring.md)
+- [class CBChannelSoundingSessionConfiguration](./cbchannelsoundingsessionconfiguration.md)
+- [let CBUUIDCharacteristicObservationScheduleString: String](./cbuuidcharacteristicobservationschedulestring.md)
 
 
 ---

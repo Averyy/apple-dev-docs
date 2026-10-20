@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the identity provider.
 
@@ -16,6 +17,10 @@ The URL of the identity provider.
 
 ```swift
 var url: URL { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSURL * url;
 ```
 
 

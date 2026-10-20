@@ -1,7 +1,8 @@
 # sendMessage(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends an MMS message to the given destination.
 
@@ -16,9 +17,11 @@ final func sendMessage(_ message: MMSMessage) async throws
 
 #### Discussion
 
-If the [`totalSize`](mmsmessage/totalsize.md) exceeds [`maximumMessageSize`](mmsservice/configuration/maximummessagesize.md), this call fails with [`MMSService.Error.maximumSizeExceeded`](mmsservice/error/maximumsizeexceeded.md).
+If the [`totalSize`](../mmsmessage/totalsize.md) exceeds [`maximumMessageSize`](./configuration/maximummessagesize.md), this call fails with [`MMSService.Error.maximumSizeExceeded`](./error/maximumsizeexceeded.md).
 
-> **Note**: - [`MMSService.Error`](mmsservice/error.md) if sending the message fails.
+> **Throws**:
+>
+> - [`MMSService.Error`](./error.md) if sending the message fails.
 
 ## Parameters
 
@@ -26,7 +29,8 @@ If the [`totalSize`](mmsmessage/totalsize.md) exceeds [`maximumMessageSize`](mms
 
 ## See Also
 
-- [struct MMSMessage](mmsmessage.md)
+### Sending messages
+- [struct MMSMessage](../mmsmessage.md)
   A structure that contains the data of an MMS message.
 
 

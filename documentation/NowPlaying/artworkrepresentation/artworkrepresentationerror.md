@@ -1,9 +1,10 @@
 # ArtworkRepresentation.ArtworkRepresentationError
 
 **Framework**: Now Playing  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Errors that can occur when creating an [`ArtworkRepresentation`](artworkrepresentation.md).
+Errors that can occur when creating an [`ArtworkRepresentation`](../artworkrepresentation.md).
 
 **Availability**:
 - iOS 27.0+
@@ -23,17 +24,17 @@ enum ArtworkRepresentationError
 ## Topics
 
 ### Enumeration Cases
-- [ArtworkRepresentation.ArtworkRepresentationError.noRepresentationAvailable](artworkrepresentation/artworkrepresentationerror/norepresentationavailable.md)
+- [ArtworkRepresentation.ArtworkRepresentationError.noRepresentationAvailable](./artworkrepresentationerror/norepresentationavailable.md)
   The provided image data couldn’t be converted into a supported representation.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

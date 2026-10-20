@@ -1,7 +1,8 @@
 # implicitAnchors
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Treat properly self-signed certificates as anchors implicitly.
 
@@ -12,6 +13,10 @@ Treat properly self-signed certificates as anchors implicitly.
 
 ```swift
 static var implicitAnchors: SecTrustOptionFlags { get }
+```
+
+```c
+kSecTrustOptionImplicitAnchors
 ```
 
 

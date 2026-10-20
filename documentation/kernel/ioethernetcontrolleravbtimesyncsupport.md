@@ -1,14 +1,15 @@
 # IOEthernetControllerAVBTimeSyncSupport
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.13.1+
 
 ## Declaration
 
-```swift
+```c
 typedef enum IOEthernetControllerAVBTimeSyncSupport : unsigned int {
     ...
 } IOEthernetControllerAVBTimeSyncSupport;
@@ -17,10 +18,10 @@ typedef enum IOEthernetControllerAVBTimeSyncSupport : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOEthernetControllerAVBTimeSyncSupportHardware](ioethernetcontrolleravbtimesyncsupport/kioethernetcontrolleravbtimesyncsupporthardware.md)
-- [kIOEthernetControllerAVBTimeSyncSupportInterrupt](ioethernetcontrolleravbtimesyncsupport/kioethernetcontrolleravbtimesyncsupportinterrupt.md)
-- [kIOEthernetControllerAVBTimeSyncSupportNone](ioethernetcontrolleravbtimesyncsupport/kioethernetcontrolleravbtimesyncsupportnone.md)
-- [kIOEthernetControllerAVBTimeSyncSupportSoftware](ioethernetcontrolleravbtimesyncsupport/kioethernetcontrolleravbtimesyncsupportsoftware.md)
+- [kIOEthernetControllerAVBTimeSyncSupportHardware](./ioethernetcontrolleravbtimesyncsupport/kioethernetcontrolleravbtimesyncsupporthardware.md)
+- [kIOEthernetControllerAVBTimeSyncSupportInterrupt](./ioethernetcontrolleravbtimesyncsupport/kioethernetcontrolleravbtimesyncsupportinterrupt.md)
+- [kIOEthernetControllerAVBTimeSyncSupportNone](./ioethernetcontrolleravbtimesyncsupport/kioethernetcontrolleravbtimesyncsupportnone.md)
+- [kIOEthernetControllerAVBTimeSyncSupportSoftware](./ioethernetcontrolleravbtimesyncsupport/kioethernetcontrolleravbtimesyncsupportsoftware.md)
 
 
 ---

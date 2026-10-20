@@ -1,14 +1,15 @@
 # msgh_labels
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 msg_labels_t msgh_labels;
 ```
 

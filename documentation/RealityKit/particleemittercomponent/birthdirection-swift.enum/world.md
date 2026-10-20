@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.BirthDirection.world
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Ignores the orientation from the emitter entity’s transform.
 

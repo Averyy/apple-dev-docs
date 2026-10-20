@@ -1,7 +1,8 @@
 # MTRGeneralDiagnosticsHardwareFault
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.4+
@@ -18,32 +19,36 @@
 enum MTRGeneralDiagnosticsHardwareFault
 ```
 
+```c
+enum MTRGeneralDiagnosticsHardwareFault : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRGeneralDiagnosticsHardwareFault.audioOutputFault](mtrgeneraldiagnosticshardwarefault/audiooutputfault.md)
-- [MTRGeneralDiagnosticsHardwareFault.nonResettableOverTemp](mtrgeneraldiagnosticshardwarefault/nonresettableovertemp.md)
-- [MTRGeneralDiagnosticsHardwareFault.nonVolatileMemoryError](mtrgeneraldiagnosticshardwarefault/nonvolatilememoryerror.md)
-- [MTRGeneralDiagnosticsHardwareFault.powerSource](mtrgeneraldiagnosticshardwarefault/powersource.md)
-- [MTRGeneralDiagnosticsHardwareFault.radio](mtrgeneraldiagnosticshardwarefault/radio.md)
-- [MTRGeneralDiagnosticsHardwareFault.resettableOverTemp](mtrgeneraldiagnosticshardwarefault/resettableovertemp.md)
-- [MTRGeneralDiagnosticsHardwareFault.sensor](mtrgeneraldiagnosticshardwarefault/sensor.md)
-- [MTRGeneralDiagnosticsHardwareFault.tamperDetected](mtrgeneraldiagnosticshardwarefault/tamperdetected.md)
-- [MTRGeneralDiagnosticsHardwareFault.unspecified](mtrgeneraldiagnosticshardwarefault/unspecified.md)
-- [MTRGeneralDiagnosticsHardwareFault.userInterfaceFault](mtrgeneraldiagnosticshardwarefault/userinterfacefault.md)
-- [MTRGeneralDiagnosticsHardwareFault.visualDisplayFault](mtrgeneraldiagnosticshardwarefault/visualdisplayfault.md)
+- [MTRGeneralDiagnosticsHardwareFault.audioOutputFault](./mtrgeneraldiagnosticshardwarefault/audiooutputfault.md)
+- [MTRGeneralDiagnosticsHardwareFault.nonResettableOverTemp](./mtrgeneraldiagnosticshardwarefault/nonresettableovertemp.md)
+- [MTRGeneralDiagnosticsHardwareFault.nonVolatileMemoryError](./mtrgeneraldiagnosticshardwarefault/nonvolatilememoryerror.md)
+- [MTRGeneralDiagnosticsHardwareFault.powerSource](./mtrgeneraldiagnosticshardwarefault/powersource.md)
+- [MTRGeneralDiagnosticsHardwareFault.radio](./mtrgeneraldiagnosticshardwarefault/radio.md)
+- [MTRGeneralDiagnosticsHardwareFault.resettableOverTemp](./mtrgeneraldiagnosticshardwarefault/resettableovertemp.md)
+- [MTRGeneralDiagnosticsHardwareFault.sensor](./mtrgeneraldiagnosticshardwarefault/sensor.md)
+- [MTRGeneralDiagnosticsHardwareFault.tamperDetected](./mtrgeneraldiagnosticshardwarefault/tamperdetected.md)
+- [MTRGeneralDiagnosticsHardwareFault.unspecified](./mtrgeneraldiagnosticshardwarefault/unspecified.md)
+- [MTRGeneralDiagnosticsHardwareFault.userInterfaceFault](./mtrgeneraldiagnosticshardwarefault/userinterfacefault.md)
+- [MTRGeneralDiagnosticsHardwareFault.visualDisplayFault](./mtrgeneraldiagnosticshardwarefault/visualdisplayfault.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrgeneraldiagnosticshardwarefault/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrgeneraldiagnosticshardwarefault/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

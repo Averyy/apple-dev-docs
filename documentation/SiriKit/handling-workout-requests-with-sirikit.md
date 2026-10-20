@@ -1,6 +1,8 @@
 # Handling Workout Requests with SiriKit
 
-**Framework**: SiriKit
+**Framework**: SiriKit  
+**Role**: Sample Code  
+**Download**: [HandlingWorkoutRequestsWithSiriKit.zip](https://docs-assets.developer.apple.com/published/0403d3e99e08/HandlingWorkoutRequestsWithSiriKit.zip)
 
 Add an Intent Extension to your app that handles requests to control workouts with Siri.
 
@@ -20,7 +22,7 @@ The project consists of three targets:
 - `AscentIntentsExtension`, an Intent Extension that integrates with SiriKit to control workouts.
 - `AscentFramework`, an embedded framework containing shared code needed by both the Intent Extension and the main app.
 
-See [`Creating an Intents App Extension`](creating-an-intents-app-extension.md) for more information on the general process of adding an Intent Extension to your app, including how to enable the Siri capability and configure the `NSExtension` keys in `Info.plist`.
+See [Creating an Intents App Extension](./creating-an-intents-app-extension.md) for more information on the general process of adding an Intent Extension to your app, including how to enable the Siri capability and configure the `NSExtension` keys in `Info.plist`.
 
 ##### Configure the Sample Code Project
 
@@ -92,7 +94,7 @@ func resolveWorkoutName(for intent: INStartWorkoutIntent, with completion: @esca
 
 > **Note**: It is not necessary to implement *all* of the available parameter resolution methods, only those that need additional logic. For example, the extension in this sample doesn’t need to do any special processing of the goal value when starting a workout, so there is no implementation of [`resolveGoalValue(for:with:)`](https://developer.apple.com/documentation/intents/instartworkoutintenthandling/resolvegoalvalue(for:with:)), although the app still recognizes and processes the goal value.
 
-To aid Siri with recognition of parameter names like “wall climb” and “boulder climb,” add an `AppIntentVocabulary.plist` to a project. More information on this file and how it can add vocabulary to Siri can be found in [`Registering Custom Vocabulary with SiriKit`](registering-custom-vocabulary-with-sirikit.md).
+To aid Siri with recognition of parameter names like “wall climb” and “boulder climb,” add an `AppIntentVocabulary.plist` to a project. More information on this file and how it can add vocabulary to Siri can be found in [Registering Custom Vocabulary with SiriKit](./registering-custom-vocabulary-with-sirikit.md).
 
 Once all parameters have been resolved, the system calls [`confirm(intent:completion:)`](https://developer.apple.com/documentation/intents/instartworkoutintenthandling/confirm(intent:completion:)). Validate the resolved parameters and pass back an [`INStartWorkoutIntentResponse`](https://developer.apple.com/documentation/intents/instartworkoutintentresponse) with an [`INStartWorkoutIntentResponseCode`](https://developer.apple.com/documentation/intents/instartworkoutintentresponsecode).
 
@@ -100,7 +102,7 @@ Once all parameters have been resolved, the system calls [`confirm(intent:comple
 
 Once the request to start the workout has been confirmed, the system calls [`handle(intent:completion:)`](https://developer.apple.com/documentation/intents/instartworkoutintenthandling/handle(intent:completion:)). Some requests from Siri will be better handled by the main app rather than the Intent Extension; for example, the main app can better respond to requests in which long-lived system services are needed to support the workout.
 
-To transfer control to the main app, create a [`INStartWorkoutIntentResponse`](https://developer.apple.com/documentation/intents/instartworkoutintentresponse) with the [`INStartWorkoutIntentResponseCode.handleInApp`](https://developer.apple.com/documentation/intents/instartworkoutintentresponsecode/handleinapp) code and pass it to the completion block.
+To transfer control to the main app, create a [`INStartWorkoutIntentResponse`](https://developer.apple.com/documentation/intents/instartworkoutintentresponse) with the [`handleInApp`](https://developer.apple.com/documentation/intents/instartworkoutintentresponsecode/handleinapp) code and pass it to the completion block.
 
 ```swift
 func handle(intent: INStartWorkoutIntent, completion: @escaping (INStartWorkoutIntentResponse) -> Void) {
@@ -110,7 +112,7 @@ func handle(intent: INStartWorkoutIntent, completion: @escaping (INStartWorkoutI
 }
 ```
 
-When an Intent Extension handles an intent with the `handleInApp` response code, it delivers the to the intent to the [`application(_:handle:completionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:handle:completionhandler:)) method in the main app’s process in the background.
+When an Intent Extension handles an intent with the `handleInApp` response code, it delivers the to the intent to the [`application(_:handle:completionHandler:)`](../UIKit/uiapplicationdelegate/application%28_,handle,completionhandler%29.md) method in the main app’s process in the background.
 
 ```swift
 func application(_ application: UIApplication, handle intent: INIntent, completionHandler: @escaping (INIntentResponse) -> Void) {
@@ -132,21 +134,22 @@ func application(_ application: UIApplication, handle intent: INIntent, completi
 
 ## See Also
 
-- [Adding Shortcuts for Wind Down](adding-shortcuts-for-wind-down.md)
+### Sample code
+- [Adding Shortcuts for Wind Down](./adding-shortcuts-for-wind-down.md)
   Reveal your app’s shortcuts inside the Health app.
-- [Booking Rides with SiriKit](booking-rides-with-sirikit.md)
+- [Booking Rides with SiriKit](./booking-rides-with-sirikit.md)
   Add Intents extensions to your app to handle requests to book rides using Siri and Maps.
-- [Handling Payment Requests with SiriKit](handling-payment-requests-with-sirikit.md)
+- [Handling Payment Requests with SiriKit](./handling-payment-requests-with-sirikit.md)
   Add an Intent Extension to your app to handle money transfer requests with Siri.
-- [Integrating Your App with Siri Event Suggestions](integrating-your-app-with-siri-event-suggestions.md)
+- [Integrating Your App with Siri Event Suggestions](./integrating-your-app-with-siri-event-suggestions.md)
   Donate reservations and provide quick access to event details throughout the system.
-- [Managing Audio with SiriKit](managing-audio-with-sirikit.md)
+- [Managing Audio with SiriKit](./managing-audio-with-sirikit.md)
   Control audio playback and handle requests to add media using SiriKit Media Intents.
-- [Providing Hands-Free App Control with Intents](providing-hands-free-app-control-with-intents.md)
+- [Providing Hands-Free App Control with Intents](./providing-hands-free-app-control-with-intents.md)
   Resolve, confirm, and handle intents without an extension.
-- [Soup Chef: Accelerating App Interactions with Shortcuts](soup-chef-accelerating-app-interactions-with-shortcuts.md)
+- [Soup Chef: Accelerating App Interactions with Shortcuts](./soup-chef-accelerating-app-interactions-with-shortcuts.md)
   Make it easy for people to use Siri with your app by providing shortcuts to your app’s actions.
-- [Soup Chef with App Intents: Migrating custom intents](soup-chef-with-app-intents-migrating-custom-intents.md)
+- [Soup Chef with App Intents: Migrating custom intents](./soup-chef-with-app-intents-migrating-custom-intents.md)
   Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
 
 

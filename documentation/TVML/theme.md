@@ -1,6 +1,7 @@
 # theme
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Sets the color scheme for an element.
 
@@ -8,27 +9,28 @@ Sets the color scheme for an element.
 
 Setting the `theme` attribute changes the font color for text. Badge colors are also affected if the color is changed using CSS. The background image is not affected by the `theme` attribute. Templates default to `light` unless otherwise specified. `theme` can be used with all templates. The following templates default to `dark`:
 
-- [`productTemplate`](producttemplate.md)
-- [`productBundleTemplate`](productbundletemplate.md)
+- [productTemplate](./producttemplate.md)
+- [productBundleTemplate](./productbundletemplate.md)
 
-##### Values for Theme
+##### Values for theme
 
 - **`dark`**: The theme is set to dark.
 - **`light`**: The theme is set to light.
 
-##### Elements That Use Theme
+##### Elements that Use theme
 
 The `theme` attribute can be used with any element.
 
 ## See Also
 
-- [autoHighlight](autohighlight.md)
+### Valid TVML Attributes
+- [autoHighlight](./autohighlight.md)
   Specifies that the element should initially be in focus.
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [layoutDirection](layoutdirection.md)
+- [layoutDirection](./layoutdirection.md)
   Specifies the direction in which text is displayed.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
 
 

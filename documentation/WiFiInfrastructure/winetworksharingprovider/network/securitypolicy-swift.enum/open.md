@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.SecurityPolicy.open
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allows open network security, with no authentication or encryption.
 

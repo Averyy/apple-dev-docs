@@ -1,7 +1,8 @@
 # EmphasizeAction.EmphasisMotionType.bounce
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Raises up and then drops, appearing to bounce on the ground.
 

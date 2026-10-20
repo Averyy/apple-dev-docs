@@ -1,7 +1,8 @@
 # HTMLEmbedElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,26 +10,26 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLEmbedElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [align](htmlembedelement/1629144-align.md)
-- [height](htmlembedelement/1633775-height.md)
-- [name](htmlembedelement/1633841-name.md)
-- [src](htmlembedelement/1632660-src.md)
-- [type](htmlembedelement/1632066-type.md)
-- [width](htmlembedelement/1631178-width.md)
+- [align](./htmlembedelement/api-1629144-align.md)
+- [height](./htmlembedelement/api-1633775-height.md)
+- [name](./htmlembedelement/api-1633841-name.md)
+- [src](./htmlembedelement/api-1632660-src.md)
+- [type](./htmlembedelement/api-1632066-type.md)
+- [width](./htmlembedelement/api-1631178-width.md)
 ### Instance Methods
-- [getSVGDocument](htmlembedelement/1629511-getsvgdocument.md)
+- [getSVGDocument](./htmlembedelement/api-1629511-getsvgdocument.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

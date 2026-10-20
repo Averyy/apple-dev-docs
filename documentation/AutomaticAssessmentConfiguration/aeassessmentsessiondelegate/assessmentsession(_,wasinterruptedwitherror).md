@@ -1,7 +1,8 @@
 # assessmentSession(_:wasInterruptedWithError:)
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a system failure interrupted the session.
 
@@ -17,9 +18,13 @@ Tells the delegate that a system failure interrupted the session.
 optional func assessmentSession(_ session: AEAssessmentSession, wasInterruptedWithError error: any Error)
 ```
 
+```objc
+- (void) assessmentSession:(AEAssessmentSession *) session wasInterruptedWithError:(NSError *) error;
+```
+
 #### Discussion
 
-If one or more subsystems fail during a session, the session tells its delegate by calling the [`assessmentSession(_:wasInterruptedWithError:)`](aeassessmentsessiondelegate/assessmentsession(_:wasinterruptedwitherror:).md) method. If your app receives this callback, immediately stop the assessment, hide all sensitive content, and end the session. Because it might take time for your app to stop the assessment, the session relies on your app to call the [`end()`](aeassessmentsession/end().md) method:
+If one or more subsystems fail during a session, the session tells its delegate by calling the [`assessmentSession(_:wasInterruptedWithError:)`](./assessmentsession%28_,wasinterruptedwitherror%29.md) method. If your app receives this callback, immediately stop the assessment, hide all sensitive content, and end the session. Because it might take time for your app to stop the assessment, the session relies on your app to call the [`end()`](../aeassessmentsession/end%28%29.md) method:
 
 **Swift**:
 
@@ -50,11 +55,12 @@ func assessmentSession(_ session: AEAssessmentSession, wasInterruptedWithError e
 
 ## See Also
 
-- [func assessmentSessionDidBegin(AEAssessmentSession)](aeassessmentsessiondelegate/assessmentsessiondidbegin(_:).md)
+### Responding to session start and stop
+- [func assessmentSessionDidBegin(AEAssessmentSession)](./assessmentsessiondidbegin%28_%29.md)
   Tells the delegate that the session started.
-- [func assessmentSession(AEAssessmentSession, failedToBeginWithError: any Error)](aeassessmentsessiondelegate/assessmentsession(_:failedtobeginwitherror:).md)
+- [func assessmentSession(AEAssessmentSession, failedToBeginWithError: any Error)](./assessmentsession%28_,failedtobeginwitherror%29.md)
   Tells the delegate that the session failed to start.
-- [func assessmentSessionDidEnd(AEAssessmentSession)](aeassessmentsessiondelegate/assessmentsessiondidend(_:).md)
+- [func assessmentSessionDidEnd(AEAssessmentSession)](./assessmentsessiondidend%28_%29.md)
   Tells the delegate that the session ended.
 
 

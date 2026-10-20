@@ -1,7 +1,8 @@
 # conic
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 12.0+
@@ -17,11 +18,16 @@
 static let conic: CAGradientLayerType
 ```
 
+```c
+extern CAGradientLayerType const kCAGradientLayerConic;
+```
+
 ## See Also
 
-- [static let axial: CAGradientLayerType](cagradientlayertype/axial.md)
+### Type Properties
+- [static let axial: CAGradientLayerType](./axial.md)
   An axial gradient (also called a linear gradient) varies along an axis between two defined end points. All points that lie on a line perpendicular to the axis have the same color value.
-- [static let radial: CAGradientLayerType](cagradientlayertype/radial.md)
+- [static let radial: CAGradientLayerType](./radial.md)
 
 
 ---

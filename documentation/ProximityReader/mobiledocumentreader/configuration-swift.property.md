@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration of the mobile document reader.
 
@@ -20,11 +21,12 @@ final var configuration: MobileDocumentReader.Configuration { get async throws }
 
 Use the information contained in the configuration to construct as reader token on your server.
 
-> **Note**: A [`MobileDocumentReaderError`](mobiledocumentreadererror.md) if an error occurs.
+> **Throws**: A [`MobileDocumentReaderError`](../mobiledocumentreadererror.md) if an error occurs.
 
 ## See Also
 
-- [MobileDocumentReader.Configuration](mobiledocumentreader/configuration-swift.struct.md)
+### Retrieving the reader configuration
+- [MobileDocumentReader.Configuration](./configuration-swift.struct.md)
   A type that represents the configuration of the mobile document reader.
 
 

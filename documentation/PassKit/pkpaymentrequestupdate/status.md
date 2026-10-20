@@ -1,7 +1,8 @@
 # status
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status of the payment request that indicates whether authorization succeeds or fails.
 
@@ -19,13 +20,18 @@ The status of the payment request that indicates whether authorization succeeds 
 var status: PKPaymentAuthorizationStatus { get set }
 ```
 
+```objc
+@property (nonatomic, assign) PKPaymentAuthorizationStatus status;
+```
+
 #### Discussion
 
-See [`PKPaymentAuthorizationStatus`](pkpaymentauthorizationstatus.md) for valid values.
+See [`PKPaymentAuthorizationStatus`](../pkpaymentauthorizationstatus.md) for valid values.
 
 ## See Also
 
-- [enum PKPaymentAuthorizationStatus](pkpaymentauthorizationstatus.md)
+### Updating authorization status
+- [enum PKPaymentAuthorizationStatus](../pkpaymentauthorizationstatus.md)
   General success and failure status for payment authorization.
 
 

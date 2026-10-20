@@ -1,7 +1,8 @@
 # updatedIDs
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Object IDs of objects that were updated during this save.
 

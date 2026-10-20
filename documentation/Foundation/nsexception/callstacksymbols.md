@@ -1,7 +1,8 @@
 # callStackSymbols
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the current call stack symbols.
 
@@ -20,13 +21,18 @@ An array containing the current call stack symbols.
 var callStackSymbols: [String] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * callStackSymbols;
+```
+
 #### Discussion
 
 An array of strings describing the call stack backtrace at the moment the exception was first raised. The format of each string is determined by the `backtrace_symbols()` API
 
 ## See Also
 
-- [var callStackReturnAddresses: [NSNumber]](nsexception/callstackreturnaddresses.md)
+### Getting Exception Stack Frames
+- [var callStackReturnAddresses: [NSNumber]](./callstackreturnaddresses.md)
   The call return addresses related to a raised exception.
 
 

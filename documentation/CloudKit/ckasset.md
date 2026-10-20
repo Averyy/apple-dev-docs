@@ -1,7 +1,8 @@
 # CKAsset
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An external file that belongs to a record.
 
@@ -10,7 +11,7 @@ An external file that belongs to a record.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,69 +21,74 @@ An external file that belongs to a record.
 class CKAsset
 ```
 
+```objc
+@interface CKAsset : NSObject
+```
+
 ## Mentions
 
-- [Encrypting User Data](encrypting-user-data.md)
+- [Encrypting User Data](./encrypting-user-data.md)
 
 #### Overview
 
-Use assets to incorporate external files into your app’s records, such as photos, videos, and binary files. Alternatively, use assets when a field’s value is more than a few kilobytes in size. To associate an instance of [`CKAsset`](ckasset.md) with a record, assign it to one of its fields.
+Use assets to incorporate external files into your app’s records, such as photos, videos, and binary files. Alternatively, use assets when a field’s value is more than a few kilobytes in size. To associate an instance of [`CKAsset`](./ckasset.md) with a record, assign it to one of its fields.
 
 > **Note**: CloudKit stores only an asset’s data. If you require its filename, or any other file-system metadata, use one or more separate fields on the record to store it.
 
 CloudKit stores an asset’s data separately from a record that references it, but maintains an association with that record. When you save a record that has an asset, CloudKit saves both the record and the asset to the server. Similarly, when you fetch the record, the server returns the record and the asset.
 
-When you fetch a record that contains an asset, CloudKit stores the asset’s data in a staging area accessible to your app. Use the asset’s [`fileURL`](ckasset/fileurl.md) property to access its staged location. The system regularly deletes files in the staging area to reclaim disk space. To avoid this behavior, move the data into your app’s container as soon as you fetch it.
+When you fetch a record that contains an asset, CloudKit stores the asset’s data in a staging area accessible to your app. Use the asset’s [`fileURL`](./ckasset/fileurl.md) property to access its staged location. The system regularly deletes files in the staging area to reclaim disk space. To avoid this behavior, move the data into your app’s container as soon as you fetch it.
 
-If you don’t require the asset when retrieving records, use the operation’s `desiredKeys` property to exclude the field. For more information, see [`CKFetchRecordsOperation`](ckfetchrecordsoperation.md), [`CKQueryOperation`](ckqueryoperation.md), and [`CKFetchRecordZoneChangesOperation`](ckfetchrecordzonechangesoperation.md).
+If you don’t require the asset when retrieving records, use the operation’s `desiredKeys` property to exclude the field. For more information, see [`CKFetchRecordsOperation`](./ckfetchrecordsoperation.md), [`CKQueryOperation`](./ckqueryoperation.md), and [`CKFetchRecordZoneChangesOperation`](./ckfetchrecordzonechangesoperation.md).
 
 If you no longer require an asset that’s on the server, you don’t delete it. Instead, orphan the asset by setting any fields that contain the asset to `nil` and then saving the record. CloudKit periodically deletes orphaned assets from the server.
 
 ## Topics
 
 ### Creating an Asset
-- [init(fileURL: URL)](ckasset/init(fileurl:).md)
+- [init(fileURL: URL)](./ckasset/init%28fileurl%29.md)
   Creates an asset that references a file.
 ### Getting the URL of the Asset
-- [var fileURL: URL?](ckasset/fileurl.md)
+- [var fileURL: URL?](./ckasset/fileurl.md)
   The URL for accessing the asset.
 ### Structures
-- [CKAsset.ExportedAssetID](ckasset/exportedassetid.md)
-  An identifier that can be used for creating a server-side copy of a [`CKAsset`](ckasset.md) that already exists in iCloud, potentially in a different container.
+- [CKAsset.ExportedAssetID](./ckasset/exportedassetid.md)
+  An identifier that can be used for creating a server-side copy of a [`CKAsset`](./ckasset.md) that already exists in iCloud, potentially in a different container.
 ### Initializers
-- [convenience init(importing: CKAsset.ExportedAssetID)](ckasset/init(importing:).md)
-  Initialize a new [`CKAsset`](ckasset.md) that can be used to create a copy of an asset that already exists in iCloud, potentially in a different container.
+- [convenience init(importing: CKAsset.ExportedAssetID)](./ckasset/init%28importing%29.md)
+  Initialize a new [`CKAsset`](./ckasset.md) that can be used to create a copy of an asset that already exists in iCloud, potentially in a different container.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CKRecordValueProtocol](ckrecordvalueprotocol.md)
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CKRecordValueProtocol](./ckrecordvalueprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Designing and Creating a CloudKit Database](designing-and-creating-a-cloudkit-database.md)
+### Schemas
+- [Designing and Creating a CloudKit Database](./designing-and-creating-a-cloudkit-database.md)
   Create a schema to store your app’s objects as records in iCloud using CloudKit.
-- [Managing iCloud Containers with CloudKit Database App](managing-icloud-containers-with-cloudkit-database-app.md)
+- [Managing iCloud Containers with CloudKit Database App](./managing-icloud-containers-with-cloudkit-database-app.md)
   Inspect and modify the schema and data for your app’s iCloud container.
-- [class CKRecordZone](ckrecordzone.md)
+- [class CKRecordZone](./ckrecordzone.md)
   A database partition that contains related records.
-- [class CKRecord](ckrecord.md)
+- [class CKRecord](./ckrecord.md)
   A collection of key-value pairs that store your app’s data.
-- [CKRecord.Reference](ckrecord/reference.md)
+- [CKRecord.Reference](./ckrecord/reference.md)
   A relationship between two records in a record zone.
-- [Integrating a Text-Based Schema into Your Workflow](integrating-a-text-based-schema-into-your-workflow.md)
+- [Integrating a Text-Based Schema into Your Workflow](./integrating-a-text-based-schema-into-your-workflow.md)
   Define and update your schema with the CloudKit Schema Language.
 
 

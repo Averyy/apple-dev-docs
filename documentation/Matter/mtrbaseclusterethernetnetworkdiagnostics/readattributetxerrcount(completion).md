@@ -1,7 +1,8 @@
 # readAttributeTxErrCount(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeTxErrCount(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeTxErrCount() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeTxErrCountWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

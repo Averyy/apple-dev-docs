@@ -1,13 +1,14 @@
 # event_count
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of elements in the muted events array.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ The number of elements in the muted events array.
 var event_count: Int
 ```
 
+```c
+size_t event_count;
+```
+
 ## See Also
 
-- [var audit_token: audit_token_t](es_muted_process_t/audit_token.md)
+### Accessing Muted Processes
+- [var audit_token: audit_token_t](./audit_token.md)
   The audit token associated with a muted process.
-- [var events: UnsafePointer<es_event_type_t>!](es_muted_process_t/events.md)
+- [var events: UnsafePointer<es_event_type_t>!](./events.md)
   An array containing the muted event types.
-- [struct es_event_type_t](es_event_type_t.md)
+- [struct es_event_type_t](../es_event_type_t.md)
   A type used to identify a message’s event type and subscribe to events of that type.
 
 

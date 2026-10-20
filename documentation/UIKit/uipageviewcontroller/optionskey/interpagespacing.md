@@ -1,7 +1,8 @@
 # interPageSpacing
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Space between pages, in points.
 
@@ -9,7 +10,7 @@ Space between pages, in points.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ Space between pages, in points.
 static let interPageSpacing: UIPageViewController.OptionsKey
 ```
 
+```c
+extern UIPageViewControllerOptionsKey const UIPageViewControllerOptionInterPageSpacingKey;
+```
+
 #### Discussion
 
-The value should be a [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) wrapped in an instance of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber). The default value is zero. An inter-page spacing is only valid if the transition style is [`UIPageViewController.TransitionStyle.scroll`](uipageviewcontroller/transitionstyle-swift.enum/scroll.md).
+The value should be a [`CGFloat`](../../../CoreFoundation/cgfloat-swift.struct.md) wrapped in an instance of [`NSNumber`](../../../Foundation/nsnumber.md). The default value is zero. An inter-page spacing is only valid if the transition style is [`UIPageViewController.TransitionStyle.scroll`](../transitionstyle-swift.enum/scroll.md).
 
 ## See Also
 
-- [static let spineLocation: UIPageViewController.OptionsKey](uipageviewcontroller/optionskey/spinelocation.md)
+### Page options
+- [static let spineLocation: UIPageViewController.OptionsKey](./spinelocation.md)
   Location of the spine.
 
 

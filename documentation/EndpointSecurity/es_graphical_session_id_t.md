@@ -1,11 +1,12 @@
 # es_graphical_session_id_t
 
 **Framework**: Endpoint Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,10 +14,15 @@
 typealias es_graphical_session_id_t = UInt32
 ```
 
+```c
+typedef uint32_t es_graphical_session_id_t;
+```
+
 ## See Also
 
-- [typealias es_cdhash_t](es_cdhash_t.md)
-- [typealias es_sha256_t](es_sha256_t.md)
+### Data Types
+- [typealias es_cdhash_t](./es_cdhash_t.md)
+- [typealias es_sha256_t](./es_sha256_t.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # LegacyAppLimitedStatusReasonDetails.CountryOrRegionLimitedStatusReasons
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - Apple Ads Platform API 1.0+
 
 ## Declaration
 
-```swift
+```
 object LegacyAppLimitedStatusReasonDetails.CountryOrRegionLimitedStatusReasons
 ```
 

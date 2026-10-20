@@ -1,6 +1,8 @@
 # Track performance by app state using MetricKit
 
-**Framework**: MetricKit
+**Framework**: MetricKit  
+**Role**: Sample Code  
+**Download**: [TrackPerformanceByAppStateUsingMetricKit.zip](https://docs-assets.developer.apple.com/published/3625b37a1b16/TrackPerformanceByAppStateUsingMetricKit.zip)
 
 Collect performance metrics, diagnostic reports, and experiment data related to your app’s current state using the MetricKit framework.
 
@@ -16,11 +18,11 @@ MetricKit provides the data you need to understand how your app performs in the 
 
 The app is an expense report manager that lets you create reports, scan receipts, and view expenses in different layouts. As you use the app on your device, MetricKit collects performance data in the background. The sample saves incoming metric and diagnostic reports as JSON files in the Files app.
 
-![An iOS app displaying a daily expense breakdown across two spending categories. The presentation can be adjusted to show daily, weekly, monthly, or yearly breakdowns.](/images/com.apple.metrickit/track-performance-by-app-state-using-metrickit-1@2x.png)
+![An iOS app displaying a daily expense breakdown across two spending categories. The presentation can be adjusted to show daily, weekly, monthly, or yearly breakdowns.](https://developer.apple.com/tutorials/images/com.apple.metrickit/track-performance-by-app-state-using-metrickit-1@2x.png)
 
 > **Note**: MetricKit delivers reports on a system-determined schedule. To generate reports during development, import MetricKit, subscribe to reports in code, and run your app from Xcode, then choose Debug > MetricKit > Simulate MetricKit Payloads.
 
-#### Configure the Sample Code Project
+#### Configure the sample code project
 
 To build and run this sample, you need:
 
@@ -35,9 +37,9 @@ To configure the project:
 
 The app creates sample expense data on first launch. Receipt images and metric payloads are stored in the app’s Documents directory, accessible through the Files app.
 
-#### Create a Metrics Collector
+#### Create a metrics collector
 
-The sample centralizes all MetricKit integration in a `MetricsCollector` class. This class initializes a [`MetricManager`](metricmanager.md) with the state reporting domains the app uses — one for experiments and one for user activity:
+The sample centralizes all MetricKit integration in a `MetricsCollector` class. This class initializes a [`MetricManager`](./metricmanager.md) with the state reporting domains the app uses — one for experiments and one for user activity:
 
 ```swift
 @Observable
@@ -69,9 +71,9 @@ struct MetricKit_SampleApp: App {
 }
 ```
 
-#### Receive Metric and Diagnostic Reports
+#### Receive metric and diagnostic reports
 
-The sample listens for two types of reports using async sequences on [`MetricManager`](metricmanager.md). Metric reports contain aggregated performance data, and diagnostic reports contain information about crashes, hangs, and other issues.
+The sample listens for two types of reports using async sequences on [`MetricManager`](./metricmanager.md). Metric reports contain aggregated performance data, and diagnostic reports contain information about crashes, hangs, and other issues.
 
 ```swift
 func startListening() {
@@ -97,11 +99,11 @@ Each report handler encodes the report to JSON and writes it to the app’s Docu
 encoder.userInfo[MetricReport.encodingFormatKey] = MetricReport.EncodingFormat.byStateReportingDomain
 ```
 
-#### Track Experiment Variants with State Reporting
+#### Track experiment variants with state reporting
 
 The sample uses state reporting to correlate performance data with specific experiment variants. By tracking which variant is active, the resulting metric reports reveal whether a particular layout causes performance regressions.
 
-The sample defines a `@ReportableMetadata` macro to describe the experiment context, and a [`StateReportingDomain`](statereportingdomain.md) to group experiment data:
+The sample defines a `@ReportableMetadata` macro to describe the experiment context, and a [`StateReportingDomain`](./statereportingdomain.md) to group experiment data:
 
 ```swift
 @ReportableMetadata
@@ -149,11 +151,11 @@ The expense report detail view reports the active variant when the view appears 
 }
 ```
 
-#### Report User Activity State
+#### Report user activity state
 
 The sample tracks which workflow a person is performing so that metric reports reflect performance data in the context of specific activities. By reporting which tab is active, the resulting reports reveal whether performance issues are isolated to a particular area of the app.
 
-The sample defines a `@ReportableMetadata` type and a [`StateReportingDomain`](statereportingdomain.md) for user activity, with constants for each tracked mode:
+The sample defines a `@ReportableMetadata` type and a [`StateReportingDomain`](./statereportingdomain.md) for user activity, with constants for each tracked mode:
 
 ```swift
 @ReportableMetadata
@@ -186,9 +188,9 @@ The main tab view reports a transition whenever the selected tab changes, using 
 
 The `metricsCollector` reports a state transition each time the person switches between the Reports and Spending tabs, allowing the system to attribute performance data to the active workflow.
 
-#### Measure Launch Performance
+#### Measure launch performance
 
-The sample measures the time spent creating initial sample data during app launch by wrapping the operation in a call to [`trackLaunchTask(id:onTrackingError:_:)`](metricmanager/tracklaunchtask(id:ontrackingerror:_:)-jnu1.md). The framework includes this timing data in subsequent metric reports, which helps identify slow launch operations:
+The sample measures the time spent creating initial sample data during app launch by wrapping the operation in a call to [`trackLaunchTask(id:onTrackingError:_:)`](./metricmanager/tracklaunchtask%28id,ontrackingerror,_%29-jnu1.md). The framework includes this timing data in subsequent metric reports, which helps identify slow launch operations:
 
 ```swift
 metricsCollector.trackLaunchTask(idString: "create-seed-data") {
@@ -196,11 +198,11 @@ metricsCollector.trackLaunchTask(idString: "create-seed-data") {
 }
 ```
 
-#### Measure Document Capture with Signpost Metrics
+#### Measure document capture with signpost metrics
 
-The sample uses [`SignpostIntervalMetric`](signpostintervalmetric.md) to measure resource usage during the receipt scanning workflow. By wrapping the document camera session in a signpost interval, MetricKit aggregates CPU time, memory, logical writes, and duration across scanning sessions and includes them in metric reports.
+The sample uses [`SignpostIntervalMetric`](./signpostintervalmetric.md) to measure resource usage during the receipt scanning workflow. By wrapping the document camera session in a signpost interval, MetricKit aggregates CPU time, memory, logical writes, and duration across scanning sessions and includes them in metric reports.
 
-The `MetricsCollector` obtains a log handle from [`MetricManager`](metricmanager.md) and provides methods to begin and end the signpost interval:
+The `MetricsCollector` obtains a log handle from [`MetricManager`](./metricmanager.md) and provides methods to begin and end the signpost interval:
 
 ```swift
 private let documentCaptureLog = MetricManager.logHandle(category: "DocumentCapture")
@@ -214,7 +216,7 @@ func endDocumentCapture() {
 }
 ```
 
-The log handle that [`logHandle(category:)`](metricmanager/loghandle(category:).md) returns is persistent. So, MetricKit collects and aggregates all the signposts that this log handle emits. The signpost name and category identify this interval in the resulting [`SignpostIntervalMetric`](signpostintervalmetric.md) objects. You can also use [`OSSignposter`](https://developer.apple.com/documentation/os/ossignposter) with this handle, but only [`mxSignpost(_:dso:log:name:signpostID:_:_:)`](mxsignpost(_:dso:log:name:signpostid:_:_:).md) populates the [`SignpostIntervalMetric`](signpostintervalmetric.md) measurement properties such as CPU time, memory usage, and logical writes.
+The log handle that [`logHandle(category:)`](./metricmanager/loghandle%28category%29.md) returns is persistent. So, MetricKit collects and aggregates all the signposts that this log handle emits. The signpost name and category identify this interval in the resulting [`SignpostIntervalMetric`](./signpostintervalmetric.md) objects. You can also use [`OSSignposter`](../os/ossignposter.md) with this handle, but only [`mxSignpost(_:dso:log:name:signpostID:_:_:)`](./mxsignpost%28_,dso,log,name,signpostid,_,_%29.md) populates the [`SignpostIntervalMetric`](./signpostintervalmetric.md) measurement properties such as CPU time, memory usage, and logical writes.
 
 The expense report detail view begins the interval when the person taps the button to scan a receipt, and ends it when the scanner sheet dismisses:
 
@@ -235,13 +237,13 @@ Button("Add Expense", systemImage: "document.viewfinder") {
 }
 ```
 
-The resulting metric reports include an [`SignpostIntervalMetric`](signpostintervalmetric.md) entry containing cumulative CPU time, peak memory, cumulative logical writes, and a histogram of interval durations.
+The resulting metric reports include an [`SignpostIntervalMetric`](./signpostintervalmetric.md) entry containing cumulative CPU time, peak memory, cumulative logical writes, and a histogram of interval durations.
 
 The sample also triggers a fatal error when a person attempts to submit an expense report with no expenses. This intentional crash generates a crash diagnostic report.
 
-#### Identify Crash Diagnostics in Reports
+#### Identify crash diagnostics in reports
 
-Each [`DiagnosticReport`](diagnosticreport.md) contains a `result` property of type [`DiagnosticResult`](diagnosticresult.md), which is an enum indicating the kind of diagnostic:
+Each [`DiagnosticReport`](./diagnosticreport.md) contains a `result` property of type [`DiagnosticResult`](./diagnosticresult.md), which is an enum indicating the kind of diagnostic:
 
 ```swift
 public enum DiagnosticResult {
@@ -266,17 +268,18 @@ private func handleDiagnosticReport(_ report: DiagnosticReport) async {
 }
 ```
 
-The [`CrashDiagnostic`](crashdiagnostic.md) type provides details about the crash, including the termination reason, Mach exception type, Unix signal, and the call stack tree at the time of the crash.
+The [`CrashDiagnostic`](./crashdiagnostic.md) type provides details about the crash, including the termination reason, Mach exception type, Unix signal, and the call stack tree at the time of the crash.
 
 The sample demonstrates how to use this pattern to prompt someone for additional context in debug builds. When a crash diagnostic is detected, the app presents a modal dialog asking the person to describe what they were doing when the crash occurred. This kind of supplemental information can be valuable during development, where stack traces alone may not explain how a person reached a particular code path.
 
 ## See Also
 
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+### Essentials
+- [Monitoring app performance with MetricKit](./monitoring-app-performance-with-metrickit.md)
   Receive daily performance metrics and immediate diagnostic reports from real device usage.
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
   Work with the metric values, diagnostic data, and environments in MetricKit reports.
-- [MetricKit updates](../updates/metrickit.md)
+- [MetricKit updates](../Updates/metrickit.md)
   Learn about important changes to MetricKit.
 
 

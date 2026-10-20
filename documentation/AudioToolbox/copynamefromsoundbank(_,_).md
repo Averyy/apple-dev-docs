@@ -1,7 +1,8 @@
 # CopyNameFromSoundBank(_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copies the name of a sound bank from a sound bank file at a specified URL.
 
@@ -19,6 +20,10 @@ Copies the name of a sound bank from a sound bank file at a specified URL.
 func CopyNameFromSoundBank(_ inURL: CFURL, _ outName: UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus
 ```
 
+```c
+extern OSStatus CopyNameFromSoundBank(CFURLRef inURL, CFStringRef*outName);
+```
+
 #### Return Value
 
 A result code.
@@ -30,11 +35,12 @@ A result code.
 
 ## See Also
 
-- [func CopyInstrumentInfoFromSoundBank(CFURL, UnsafeMutablePointer<Unmanaged<CFArray>?>) -> OSStatus](copyinstrumentinfofromsoundbank(_:_:).md)
-- [var kInstrumentInfoKey_LSB: String](kinstrumentinfokey_lsb.md)
-- [var kInstrumentInfoKey_MSB: String](kinstrumentinfokey_msb.md)
-- [var kInstrumentInfoKey_Name: String](kinstrumentinfokey_name.md)
-- [var kInstrumentInfoKey_Program: String](kinstrumentinfokey_program.md)
+### Instrument Functions
+- [func CopyInstrumentInfoFromSoundBank(CFURL, UnsafeMutablePointer<Unmanaged<CFArray>?>) -> OSStatus](./copyinstrumentinfofromsoundbank%28_,_%29.md)
+- [var kInstrumentInfoKey_LSB: String](./kinstrumentinfokey_lsb.md)
+- [var kInstrumentInfoKey_MSB: String](./kinstrumentinfokey_msb.md)
+- [var kInstrumentInfoKey_Name: String](./kinstrumentinfokey_name.md)
+- [var kInstrumentInfoKey_Program: String](./kinstrumentinfokey_program.md)
 
 
 ---

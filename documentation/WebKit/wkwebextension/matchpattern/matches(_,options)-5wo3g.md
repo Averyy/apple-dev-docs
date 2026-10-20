@@ -1,7 +1,8 @@
 # matches(_:options:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Matches the receiver pattern against the specified URL with options.
 
@@ -18,6 +19,10 @@ Matches the receiver pattern against the specified URL with options.
 func matches(_ url: URL?, options: WKWebExtension.MatchPattern.Options = []) -> Bool
 ```
 
+```objc
+- (BOOL) matchesURL:(NSURL *) url options:(WKWebExtensionMatchPatternOptions) options;
+```
+
 #### Return Value
 
 A Boolean value indicating if the pattern matches the specified URL.
@@ -29,7 +34,8 @@ A Boolean value indicating if the pattern matches the specified URL.
 
 ## See Also
 
-- [func matches(URL?) -> Bool](wkwebextension/matchpattern/matches(_:)-471rf.md)
+### Related Documentation
+- [func matches(URL?) -> Bool](./matches%28_%29-471rf.md)
   Matches the receiver pattern against the specified URL.
 
 

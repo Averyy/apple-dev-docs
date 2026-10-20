@@ -1,7 +1,8 @@
 # cameraDeviceCanSyncClock
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the camera can synchronize its date and time with that of the host computer.
 
@@ -16,6 +17,10 @@ Indicates that the camera can synchronize its date and time with that of the hos
 
 ```swift
 static let cameraDeviceCanSyncClock: ICDeviceCapability
+```
+
+```c
+extern ICDeviceCapability const ICCameraDeviceCanSyncClock;
 ```
 
 

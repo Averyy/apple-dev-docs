@@ -1,7 +1,8 @@
 # init(shortcut:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an intent that performs a person’s configured action.
 
@@ -22,7 +23,8 @@ init(shortcut: SystemShortcut)
 
 ## See Also
 
-- [struct SystemShortcut](systemshortcut.md)
+### Creating the intent
+- [struct SystemShortcut](../systemshortcut.md)
   An opaque reference to a user-configured action for use in a widget button.
 
 

@@ -1,7 +1,8 @@
 # sidecarFiles
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of two camera files associated with this file.
 
@@ -18,13 +19,18 @@ An array of two camera files associated with this file.
 var sidecarFiles: [ICCameraItem]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSArray<ICCameraItem *> * sidecarFiles;
+```
+
 #### Discussion
 
 An example of a sidecar file is a file with the same base 3 name as this file and an `XMP` extension.
 
 ## See Also
 
-- [var pairedRawImage: ICCameraFile?](iccamerafile/pairedrawimage.md)
+### Identifying Related Files
+- [var pairedRawImage: ICCameraFile?](./pairedrawimage.md)
   A sidecar file containing the logical `RAW` compliment of a `JPG` or other two-format image.
 
 

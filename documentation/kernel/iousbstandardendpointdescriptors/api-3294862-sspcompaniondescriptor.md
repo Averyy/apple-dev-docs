@@ -1,7 +1,8 @@
 # sspCompanionDescriptor
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The companion descriptor for SuperSpeedPlus devices.
 
@@ -10,17 +11,18 @@ The companion descriptor for SuperSpeedPlus devices.
 
 ## Declaration
 
-```swift
+```c
 IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor sspCompanionDescriptor;
 ```
 
 ## See Also
 
-- [bcdUSB](iousbstandardendpointdescriptors/3294859-bcdusb.md)
+### Getting the Properties
+- [bcdUSB](./api-3294859-bcdusb.md)
   A binary-coded decimal value that indicates the USB version that the device supports.
-- [descriptor](iousbstandardendpointdescriptors/3294860-descriptor.md)
+- [descriptor](./api-3294860-descriptor.md)
   A valid endpoint descriptor.
-- [ssCompanionDescriptor](iousbstandardendpointdescriptors/3294861-sscompaniondescriptor.md)
+- [ssCompanionDescriptor](./api-3294861-sscompaniondescriptor.md)
   The companion descriptor for SuperSpeed devices.
 
 

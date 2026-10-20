@@ -1,9 +1,10 @@
 # draw(for:active:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Calls [`draw(for:with:active:)`](pdfselection/draw(for:with:active:).md) with a default value for box parameter.
+Calls [`draw(for:with:active:)`](./draw%28for,with,active%29.md) with a default value for box parameter.
 
 **Availability**:
 - iOS 11.0+
@@ -19,15 +20,20 @@ Calls [`draw(for:with:active:)`](pdfselection/draw(for:with:active:).md) with a 
 func draw(for page: PDFPage, active: Bool)
 ```
 
+```objc
+- (void) drawForPage:(PDFPage *) page active:(BOOL) active;
+```
+
 #### Discussion
 
-The default value is `kPDFDisplayBoxCropBox`. If active is [`true`](https://developer.apple.com/documentation/swift/true), drawing uses `selectedTextBackgroundColor`. If [`false`](https://developer.apple.com/documentation/swift/false), it uses `secondarySelectedControlColor`.
+The default value is `kPDFDisplayBoxCropBox`. If active is [`true`](../../Swift/true.md), drawing uses `selectedTextBackgroundColor`. If [`false`](../../Swift/false.md), it uses `secondarySelectedControlColor`.
 
 ## See Also
 
-- [func draw(for: PDFPage, with: PDFDisplayBox, active: Bool)](pdfselection/draw(for:with:active:).md)
+### Managing Selection Drawing
+- [func draw(for: PDFPage, with: PDFDisplayBox, active: Bool)](./draw%28for,with,active%29.md)
   Draws the selection relative to the origin of the specified box in page space.
-- [var color: UIColor?](pdfselection/color.md)
+- [var color: UIColor?](./color.md)
   Sets the color used for the drawing of a selection in both active and inactive states.
 
 

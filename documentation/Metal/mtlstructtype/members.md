@@ -1,7 +1,8 @@
 # members
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of instances that describe the fields in the struct.
 
@@ -10,7 +11,7 @@ An array of instances that describe the fields in the struct.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,15 +20,21 @@ An array of instances that describe the fields in the struct.
 var members: [MTLStructMember] { get }
 ```
 
+```objc
+@property (readonly) NSArray<MTLStructMember *> * members;
+```
+
 #### Discussion
 
-Each array element in [`members`](mtlstructtype/members.md) is an [`MTLStructMember`](mtlstructmember.md) instance that corresponds to one of the fields in the struct.
+Each array element in [`members`](./members.md) is an [`MTLStructMember`](../mtlstructmember.md) instance that corresponds to one of the fields in the struct.
 
 ## See Also
 
-- [Metal Shading Language Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364)
-- [Metal Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221)
-- [func memberByName(String) -> MTLStructMember?](mtlstructtype/memberbyname(_:).md)
+### Related Documentation
+- [Metal Shading Language Guide](https://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364)
+- [Metal Programming Guide](https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221)
+### Obtaining information about struct members
+- [func memberByName(String) -> MTLStructMember?](./memberbyname%28_%29.md)
   Provides a representation of a struct member.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift Charts  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The content and behavior of the chart content.
@@ -24,9 +25,10 @@ The content and behavior of the chart content.
 
 ## See Also
 
-- [struct VectorizedAreaPlotContent](vectorizedareaplotcontent.md)
+### Supporting types
+- [struct VectorizedAreaPlotContent](../vectorizedareaplotcontent.md)
   An opaque vectorized chart content type.
-- [struct FunctionAreaPlotContent](functionareaplotcontent.md)
+- [struct FunctionAreaPlotContent](../functionareaplotcontent.md)
 
 
 ---

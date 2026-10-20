@@ -1,7 +1,8 @@
 # DetectHumanRectanglesRequest.Revision
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that describes the algorithm or implementation that the request performs.
 
@@ -23,27 +24,28 @@ enum Revision
 ## Topics
 
 ### Getting the revision
-- [DetectHumanRectanglesRequest.Revision.revision2](detecthumanrectanglesrequest/revision-swift.enum/revision2.md)
+- [DetectHumanRectanglesRequest.Revision.revision2](./revision-swift.enum/revision2.md)
   An algorithm or implementation that represents the second revision.
-- [DetectHumanRectanglesRequest.Revision.revision3](detecthumanrectanglesrequest/revision-swift.enum/revision3.md)
-  Compared to `.revision2`, this revision generally provides better precision and recall. This is the default revision on platforms that support it. Specify `.revision2` at instantiation to preserve the previous behavior. Use [`supportedRevisions`](detecthumanrectanglesrequest/supportedrevisions.md) to check if this revision is supported on the platform.
+- [DetectHumanRectanglesRequest.Revision.revision3](./revision-swift.enum/revision3.md)
+  Compared to `.revision2`, this revision generally provides better precision and recall. This is the default revision on platforms that support it. Specify `.revision2` at instantiation to preserve the previous behavior. Use [`supportedRevisions`](./supportedrevisions.md) to check if this revision is supported on the platform.
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Comparable](../../Swift/comparable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let revision: DetectHumanRectanglesRequest.Revision](detecthumanrectanglesrequest/revision-swift.property.md)
+### Getting the revision
+- [let revision: DetectHumanRectanglesRequest.Revision](./revision-swift.property.md)
   The algorithm or implementation the request uses.
-- [static let supportedRevisions: [DetectHumanRectanglesRequest.Revision]](detecthumanrectanglesrequest/supportedrevisions.md)
+- [static let supportedRevisions: [DetectHumanRectanglesRequest.Revision]](./supportedrevisions.md)
   The collection of revisions the request supports.
 
 

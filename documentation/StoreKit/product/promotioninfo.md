@@ -1,7 +1,8 @@
 # Product.PromotionInfo
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about a promoted Apple In-App Purchase that customizes its order and visibility on the device.
 
@@ -18,59 +19,60 @@ struct PromotionInfo
 
 ## Mentions
 
-- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
+- [Supporting promoted Apple In-App Purchases in your app](../supporting-promoted-in-app-purchases-in-your-app.md)
 
 #### Overview
 
 The `Product.PromotionInfo` structure represents promoted Apple In-App Purchases available in your app. You set up promoted Apple In-App Purchases using App Store Connect, including their default display order and visibility settings. Use this API to override and customize their order and visibility. Overrides are per device. They can take effect after the user launches the app at least once.
 
-You don’t instantiate this structure. To get a list of `Product.PromotionInfo` objects, call the static method [`updateProductOrder(byID:)`](product/promotioninfo/updateproductorder(byid:).md) with a list of product identifiers that represent your promoted in-app purchases. Then call [`currentOrder`](product/promotioninfo/currentorder.md) to get the list of `Product.PromotionInfo` objects. To change their order, call [`updateAll(_:)`](product/promotioninfo/updateall(_:).md) with the promoted in-app purchases listed in the desired order. To change the order using product identifiers, call [`updateProductOrder(byID:)`](product/promotioninfo/updateproductorder(byid:).md).
+You don’t instantiate this structure. To get a list of `Product.PromotionInfo` objects, call the static method [`updateProductOrder(byID:)`](./promotioninfo/updateproductorder%28byid%29.md) with a list of product identifiers that represent your promoted in-app purchases. Then call [`currentOrder`](./promotioninfo/currentorder.md) to get the list of `Product.PromotionInfo` objects. To change their order, call [`updateAll(_:)`](./promotioninfo/updateall%28_%29.md) with the promoted in-app purchases listed in the desired order. To change the order using product identifiers, call [`updateProductOrder(byID:)`](./promotioninfo/updateproductorder%28byid%29.md).
 
 To prevent a promoted Apple In-App Purchase from appearing in the App Store on the device, there are two options:
 
-- Hide the product by setting the [`visibility`](product/promotioninfo/visibility-swift.property.md) value to [`Product.PromotionInfo.Visibility.hidden`](product/promotioninfo/visibility-swift.enum/hidden.md) and calling [`update()`](product/promotioninfo/update().md), or call [`updateProductVisibility(_:for:)`](product/promotioninfo/updateproductvisibility(_:for:).md).
-- Remove the product from the list by excluding it when you call [`updateAll(_:)`](product/promotioninfo/updateall(_:).md) or [`updateProductOrder(byID:)`](product/promotioninfo/updateproductorder(byid:).md).
+- Hide the product by setting the [`visibility`](./promotioninfo/visibility-swift.property.md) value to [`Product.PromotionInfo.Visibility.hidden`](./promotioninfo/visibility-swift.enum/hidden.md) and calling [`update()`](./promotioninfo/update%28%29.md), or call [`updateProductVisibility(_:for:)`](./promotioninfo/updateproductvisibility%28_,for%29.md).
+- Remove the product from the list by excluding it when you call [`updateAll(_:)`](./promotioninfo/updateall%28_%29.md) or [`updateProductOrder(byID:)`](./promotioninfo/updateproductorder%28byid%29.md).
 
-To cancel your overrides and return to the default order and visibility, call [`updateAll(_:)`](product/promotioninfo/updateall(_:).md) or [`updateProductOrder(byID:)`](product/promotioninfo/updateproductorder(byid:).md) with an empty array.
+To cancel your overrides and return to the default order and visibility, call [`updateAll(_:)`](./promotioninfo/updateall%28_%29.md) or [`updateProductOrder(byID:)`](./promotioninfo/updateproductorder%28byid%29.md) with an empty array.
 
-For more information about promoting Apple In-App Purchases, see [`Supporting promoted Apple In-App Purchases in your app`](supporting-promoted-in-app-purchases-in-your-app.md).
+For more information about promoting Apple In-App Purchases, see [Supporting promoted Apple In-App Purchases in your app](../supporting-promoted-in-app-purchases-in-your-app.md).
 
 ## Topics
 
 ### Getting the product ID
-- [let productID: Product.ID](product/promotioninfo/productid.md)
+- [let productID: Product.ID](./promotioninfo/productid.md)
   The product identifier of the promoted Apple In-App Purchase.
 ### Managing promotion order
-- [static func updateProductOrder(byID: some Collection<String>) async throws](product/promotioninfo/updateproductorder(byid:).md)
+- [static func updateProductOrder(byID: some Collection<String>) async throws](./promotioninfo/updateproductorder%28byid%29.md)
   Sets the display order of promoted Apple In-App Purchases in the App Store, using product identifiers.
 ### Getting overridden order
-- [static var currentOrder: [Product.PromotionInfo]](product/promotioninfo/currentorder.md)
+- [static var currentOrder: [Product.PromotionInfo]](./promotioninfo/currentorder.md)
   Gets the customized order of the promotion info objects the represent promoted products.
 ### Managing promotion visibility
-- [var visibility: Product.PromotionInfo.Visibility](product/promotioninfo/visibility-swift.property.md)
+- [var visibility: Product.PromotionInfo.Visibility](./promotioninfo/visibility-swift.property.md)
   A value that indicates whether the promoted Apple In-App Purchase is visible or hidden on the user’s device.
-- [Product.PromotionInfo.Visibility](product/promotioninfo/visibility-swift.enum.md)
+- [Product.PromotionInfo.Visibility](./promotioninfo/visibility-swift.enum.md)
   The visibility states for product promotion information.
-- [static func updateProductVisibility(Product.PromotionInfo.Visibility, for: Product.ID) async throws](product/promotioninfo/updateproductvisibility(_:for:).md)
+- [static func updateProductVisibility(Product.PromotionInfo.Visibility, for: Product.ID) async throws](./promotioninfo/updateproductvisibility%28_,for%29.md)
   Updates a value that indicates whether a promoted Apple In-App Purchase appears in the App Store on the user’s device.
 ### Updating order and visibility
-- [func update() async throws](product/promotioninfo/update.md)
+- [func update() async throws](./promotioninfo/update%28%29.md)
   Saves your changes to the promoted product’s visibility.
-- [static func updateAll(some Collection<Product.PromotionInfo>) async throws](product/promotioninfo/updateall(_:).md)
+- [static func updateAll(some Collection<Product.PromotionInfo>) async throws](./promotioninfo/updateall%28_%29.md)
   Sets the order and visibility of all the promoted products and saves your changes.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 ## See Also
 
-- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
+### Promoted Apple In-App Purchases
+- [Supporting promoted Apple In-App Purchases in your app](../supporting-promoted-in-app-purchases-in-your-app.md)
   Display promoted Apple In-App Purchases on your product page and handle purchases that users initiate on the App Store.
-- [struct PurchaseIntent](purchaseintent.md)
+- [struct PurchaseIntent](../purchaseintent.md)
   An instance that emits purchase intents, which indicate that the customer initiated a purchase outside of your app, for your app to complete.
-- [Testing promoted Apple In-App Purchases](testing-promoted-in-app-purchases.md)
+- [Testing promoted Apple In-App Purchases](../testing-promoted-in-app-purchases.md)
   Test your Apple In-App Purchases before making your app available in the App Store.
 
 

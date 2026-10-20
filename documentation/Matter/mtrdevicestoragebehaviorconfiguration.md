@@ -1,7 +1,8 @@
 # MTRDeviceStorageBehaviorConfiguration
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Class that configures how MTRDevice objects persist their attributes to storage, so as to not overwhelm the underlying storage system.
 
@@ -20,40 +21,44 @@ Class that configures how MTRDevice objects persist their attributes to storage,
 class MTRDeviceStorageBehaviorConfiguration
 ```
 
+```objc
+@interface MTRDeviceStorageBehaviorConfiguration : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [convenience init(reportToPersistenceDelayTime: TimeInterval, reportToPersistenceDelayTimeMax: TimeInterval, recentReportTimesMaxCount: Int, timeBetweenReportsTooShortThreshold: TimeInterval, timeBetweenReportsTooShortMinThreshold: TimeInterval, reportToPersistenceDelayMaxMultiplier: Double, deviceReportingExcessivelyIntervalThreshold: TimeInterval)](mtrdevicestoragebehaviorconfiguration/init(reporttopersistencedelaytime:reporttopersistencedelaytimemax:recentreporttimesmaxcount:timebetweenreportstooshortthreshold:timebetweenreportstooshortminthreshold:reporttopersistencedelaymaxmultiplier:devicereportingexcessivelyintervalt-6xgqf.md)
+- [convenience init(reportToPersistenceDelayTime: TimeInterval, reportToPersistenceDelayTimeMax: TimeInterval, recentReportTimesMaxCount: Int, timeBetweenReportsTooShortThreshold: TimeInterval, timeBetweenReportsTooShortMinThreshold: TimeInterval, reportToPersistenceDelayMaxMultiplier: Double, deviceReportingExcessivelyIntervalThreshold: TimeInterval)](./mtrdevicestoragebehaviorconfiguration/init%28reporttopersistencedelaytime_reporttopersistencedelaytimemax_recentreporttimesmaxcount_timebetweenreportstooshortthreshold_timebetweenreportstooshortminthreshold_reporttopersistencedelaymaxmultiplier_devicereporti-c06fe453.md)
   Create configuration with specified values. See description below for details, and the list of properties below for valid ranges of these values.
 ### Instance Properties
-- [var deviceReportingExcessivelyIntervalThreshold: TimeInterval](mtrdevicestoragebehaviorconfiguration/devicereportingexcessivelyintervalthreshold.md)
-- [var disableStorageBehaviorOptimization: Bool](mtrdevicestoragebehaviorconfiguration/disablestoragebehavioroptimization.md)
+- [var deviceReportingExcessivelyIntervalThreshold: TimeInterval](./mtrdevicestoragebehaviorconfiguration/devicereportingexcessivelyintervalthreshold.md)
+- [var disableStorageBehaviorOptimization: Bool](./mtrdevicestoragebehaviorconfiguration/disablestoragebehavioroptimization.md)
   If disableStorageBehaviorOptimization is set to YES, then all the waiting mechanism as described above is disabled.
-- [var recentReportTimesMaxCount: Int](mtrdevicestoragebehaviorconfiguration/recentreporttimesmaxcount.md)
-- [var reportToPersistenceDelayMaxMultiplier: Double](mtrdevicestoragebehaviorconfiguration/reporttopersistencedelaymaxmultiplier.md)
-- [var reportToPersistenceDelayTime: TimeInterval](mtrdevicestoragebehaviorconfiguration/reporttopersistencedelaytime.md)
+- [var recentReportTimesMaxCount: Int](./mtrdevicestoragebehaviorconfiguration/recentreporttimesmaxcount.md)
+- [var reportToPersistenceDelayMaxMultiplier: Double](./mtrdevicestoragebehaviorconfiguration/reporttopersistencedelaymaxmultiplier.md)
+- [var reportToPersistenceDelayTime: TimeInterval](./mtrdevicestoragebehaviorconfiguration/reporttopersistencedelaytime.md)
   If any of these properties are set to be out of the documented limits, these default values will be used to replace all of them:
-- [var reportToPersistenceDelayTimeMax: TimeInterval](mtrdevicestoragebehaviorconfiguration/reporttopersistencedelaytimemax.md)
-- [var timeBetweenReportsTooShortMinThreshold: TimeInterval](mtrdevicestoragebehaviorconfiguration/timebetweenreportstooshortminthreshold.md)
-- [var timeBetweenReportsTooShortThreshold: TimeInterval](mtrdevicestoragebehaviorconfiguration/timebetweenreportstooshortthreshold.md)
+- [var reportToPersistenceDelayTimeMax: TimeInterval](./mtrdevicestoragebehaviorconfiguration/reporttopersistencedelaytimemax.md)
+- [var timeBetweenReportsTooShortMinThreshold: TimeInterval](./mtrdevicestoragebehaviorconfiguration/timebetweenreportstooshortminthreshold.md)
+- [var timeBetweenReportsTooShortThreshold: TimeInterval](./mtrdevicestoragebehaviorconfiguration/timebetweenreportstooshortthreshold.md)
 ### Type Methods
-- [class func withDefaultStorageBehavior() -> Self](mtrdevicestoragebehaviorconfiguration/withdefaultstoragebehavior.md)
+- [class func withDefaultStorageBehavior() -> Self](./mtrdevicestoragebehaviorconfiguration/withdefaultstoragebehavior%28%29.md)
   Create configuration with a default set of values. See description below for details.
-- [class func withStorageBehaviorOptimizationDisabled() -> Self](mtrdevicestoragebehaviorconfiguration/withstoragebehavioroptimizationdisabled.md)
+- [class func withStorageBehaviorOptimizationDisabled() -> Self](./mtrdevicestoragebehaviorconfiguration/withstoragebehavioroptimizationdisabled%28%29.md)
   Create configuration that disables storage behavior optimizations.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

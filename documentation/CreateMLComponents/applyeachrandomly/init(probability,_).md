@@ -1,7 +1,8 @@
 # init(probability:_:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an augmentation that applies each transformer randomly in the given order.
 

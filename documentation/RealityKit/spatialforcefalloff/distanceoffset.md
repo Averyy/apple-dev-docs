@@ -1,7 +1,8 @@
 # distanceOffset
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A distance from the origin where the falloff begins.
 
@@ -21,7 +22,7 @@ var distanceOffset: Double
 
 #### Discussion
 
-Use an offset value that is less than [`bounds`](spatialforcefalloff/bounds.md).
+Use an offset value that is less than [`bounds`](./bounds.md).
 
 
 ---

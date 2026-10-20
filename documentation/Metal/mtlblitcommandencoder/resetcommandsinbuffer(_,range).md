@@ -1,7 +1,8 @@
 # resetCommandsInBuffer(_:range:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a command that resets a range of commands in an indirect command buffer.
 
@@ -11,7 +12,7 @@ Encodes a command that resets a range of commands in an indirect command buffer.
 - Mac Catalyst 12.0+
 - macOS 10.14+
 - tvOS 12.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,9 +27,10 @@ func resetCommandsInBuffer(_ buffer: any MTLIndirectCommandBuffer, range: Range<
 
 ## See Also
 
-- [func copyIndirectCommandBuffer(any MTLIndirectCommandBuffer, sourceRange: Range<Int>, destination: any MTLIndirectCommandBuffer, destinationIndex: Int)](mtlblitcommandencoder/copyindirectcommandbuffer(_:sourcerange:destination:destinationindex:).md)
+### Managing indirect command buffers
+- [func copyIndirectCommandBuffer(any MTLIndirectCommandBuffer, sourceRange: Range<Int>, destination: any MTLIndirectCommandBuffer, destinationIndex: Int)](./copyindirectcommandbuffer%28_,sourcerange,destination,destinationindex%29.md)
   Encodes a command that copies commands from one indirect command buffer into another.
-- [func optimizeIndirectCommandBuffer(any MTLIndirectCommandBuffer, range: Range<Int>)](mtlblitcommandencoder/optimizeindirectcommandbuffer(_:range:).md)
+- [func optimizeIndirectCommandBuffer(any MTLIndirectCommandBuffer, range: Range<Int>)](./optimizeindirectcommandbuffer%28_,range%29.md)
   Encodes a command that can improve the performance of a range of commands within an indirect command buffer.
 
 

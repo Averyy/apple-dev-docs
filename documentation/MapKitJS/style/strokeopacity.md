@@ -1,7 +1,8 @@
 # strokeOpacity
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The opacity of the stroke color.
 
@@ -10,14 +11,14 @@ The opacity of the stroke color.
 
 ## Declaration
 
-```swift
+```
 get strokeOpacity(): number;
 set strokeOpacity(strokeOpacity: number);
 ```
 
 ## Mentions
 
-- [Adding interactivity to overlays](adding-interactivity-to-overlays.md)
+- [Adding interactivity to overlays](../adding-interactivity-to-overlays.md)
 
 #### Discussion
 
@@ -25,11 +26,12 @@ The value of this property can be in the range of `0` (fully transparent) to `1`
 
 ## See Also
 
-- [strokeColor](style/strokecolor.md)
+### Styling strokes
+- [strokeColor](./strokecolor.md)
   The stroke color of a line.
-- [strokeStart](style/strokestart.md)
+- [strokeStart](./strokestart.md)
   The unit distance along the line where a stroke begins.
-- [strokeEnd](style/strokeend.md)
+- [strokeEnd](./strokeend.md)
   The unit distance along the line where a stroke ends.
 
 

@@ -1,7 +1,8 @@
 # normalizedPoints
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contour’s array of points in normalized coordinates.
 
@@ -21,19 +22,20 @@ var normalizedPoints: [simd_float2] { get }
 
 #### Discussion
 
-This property value provides the address of the buffer that contain the array of [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) values.
+This property value provides the address of the buffer that contain the array of [`CGPoint`](../../CoreFoundation/cgpoint.md) values.
 
 ## See Also
 
-- [var aspectRatio: Float](vncontour/aspectratio.md)
+### Inspecting the Contour
+- [var aspectRatio: Float](./aspectratio.md)
   The aspect ratio of the contour.
-- [var indexPath: IndexPath](vncontour/indexpath.md)
+- [var indexPath: IndexPath](./indexpath.md)
   The contour object’s index path.
-- [var normalizedPath: CGPath](vncontour/normalizedpath.md)
+- [var normalizedPath: CGPath](./normalizedpath.md)
   The contour object as a path in normalized coordinates.
-- [var pointCount: Int](vncontour/pointcount.md)
+- [var pointCount: Int](./pointcount.md)
   The contour’s number of points.
-- [func polygonApproximation(epsilon: Float) throws -> VNContour](vncontour/polygonapproximation(epsilon:).md)
+- [func polygonApproximation(epsilon: Float) throws -> VNContour](./polygonapproximation%28epsilon%29.md)
   Simplifies the contour to a polygon using a Ramer-Douglas-Peucker algorithm.
 
 

@@ -1,7 +1,8 @@
 # colorSpaceName
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A color space to use for the output buffer.
 
@@ -15,17 +16,22 @@ A color space to use for the output buffer.
 unowned(unsafe) var colorSpaceName: CFString { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CFStringRef colorSpaceName;
+```
+
 #### Discussion
 
-If you don’t specify a value, the output buffer uses the same color space as the display. If you specify a value, if must be one of the strings specified in [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace).
+If you don’t specify a value, the output buffer uses the same color space as the display. If you specify a value, if must be one of the strings specified in [`CGColorSpace`](../../CoreGraphics/cgcolorspace.md).
 
 ## See Also
 
-- [var pixelFormat: OSType](scstreamconfiguration/pixelformat.md)
+### Configuring colors
+- [var pixelFormat: OSType](./pixelformat.md)
   A pixel format for sample buffers that a stream outputs.
-- [var colorMatrix: CFString](scstreamconfiguration/colormatrix.md)
+- [var colorMatrix: CFString](./colormatrix.md)
   A color matrix to apply to the output surface.
-- [var backgroundColor: CGColor](scstreamconfiguration/backgroundcolor.md)
+- [var backgroundColor: CGColor](./backgroundcolor.md)
   A background color for the output.
 
 

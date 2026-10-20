@@ -1,7 +1,8 @@
 # ObjectCaptureSession.CaptureState.ready
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session is ready to begin taking calls to capture.
 

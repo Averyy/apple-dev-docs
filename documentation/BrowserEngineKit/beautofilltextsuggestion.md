@@ -1,7 +1,8 @@
 # BEAutoFillTextSuggestion
 
 **Framework**: BrowserEngineKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A suggestion object that provides AutoFill text content for web form fields based on a person’s usage patterns.
 
@@ -17,37 +18,42 @@ A suggestion object that provides AutoFill text content for web form fields base
 class BEAutoFillTextSuggestion
 ```
 
+```objc
+@interface BEAutoFillTextSuggestion : BETextSuggestion
+```
+
 ## Topics
 
 ### Suggestion contents
-- [var contents: [UITextContentType : String]](beautofilltextsuggestion/contents.md)
+- [var contents: [UITextContentType : String]](./beautofilltextsuggestion/contents.md)
   A dictionary of content types that map to corresponding string text suggestions for AutoFill functionality.
 
 ## Relationships
 
 ### Inherits From
-- [BETextSuggestion](betextsuggestion.md)
+- [BETextSuggestion](./betextsuggestion.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class BETextAlternatives](betextalternatives.md)
+### Replacements and AutoFill
+- [class BETextAlternatives](./betextalternatives.md)
   An object that provides alternative text suggestions for a person’s text selection.
-- [class BETextDocumentContext](betextdocumentcontext.md)
+- [class BETextDocumentContext](./betextdocumentcontext.md)
   Information about the text surrounding a selection in a document.
-- [class BETextDocumentRequest](betextdocumentrequest.md)
+- [class BETextDocumentRequest](./betextdocumentrequest.md)
   A description of the contextual information that a text document request retrieves.
-- [BETextDocumentRequest.Options](betextdocumentrequest/options-swift.struct.md)
+- [BETextDocumentRequest.Options](./betextdocumentrequest/options-swift.struct.md)
   Options that describe the contextual information for a text document request.
-- [class BETextSuggestion](betextsuggestion.md)
+- [class BETextSuggestion](./betextsuggestion.md)
   A text suggestion to insert into a document.
-- [struct BETextReplacementOptions](betextreplacementoptions.md)
+- [struct BETextReplacementOptions](./betextreplacementoptions.md)
   Options that determine the way your app processes text in webpages.
 
 

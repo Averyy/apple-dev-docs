@@ -1,7 +1,8 @@
 # AssistantSchemas.BooksIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for app intents that offer ebook and audiobook functionality.
 
@@ -23,32 +24,32 @@ protocol BooksIntent : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var navigatePage: some AssistantSchemas.Intent](assistantschemas/booksintent/navigatepage.md)
+- [var navigatePage: some AssistantSchemas.Intent](./booksintent/navigatepage.md)
   The app intent conforms to the schema for navigating to a specific page of an ebook.
-- [var openBook: some AssistantSchemas.Intent](assistantschemas/booksintent/openbook.md)
+- [var openBook: some AssistantSchemas.Intent](./booksintent/openbook.md)
   The app intent conforms to the schema for opening an ebook.
-- [var playAudiobook: some AssistantSchemas.Intent](assistantschemas/booksintent/playaudiobook.md)
+- [var playAudiobook: some AssistantSchemas.Intent](./booksintent/playaudiobook.md)
   The app intent conforms to the schema for playing an audiobook.
-- [var search: some AssistantSchemas.Intent](assistantschemas/booksintent/search.md)
+- [var search: some AssistantSchemas.Intent](./booksintent/search.md)
   The app intent conforms to the schema for searching an ebook or audiobook library.
-- [var updateCharacterSpacing: some AssistantSchemas.Intent](assistantschemas/booksintent/updatecharacterspacing.md)
+- [var updateCharacterSpacing: some AssistantSchemas.Intent](./booksintent/updatecharacterspacing.md)
   The app intent conforms to the schema for updating the character spacing.
-- [var updateFontSize: some AssistantSchemas.Intent](assistantschemas/booksintent/updatefontsize.md)
+- [var updateFontSize: some AssistantSchemas.Intent](./booksintent/updatefontsize.md)
   The app intent conforms to the schema for updating the font size.
-- [var updateLineSpacing: some AssistantSchemas.Intent](assistantschemas/booksintent/updatelinespacing.md)
+- [var updateLineSpacing: some AssistantSchemas.Intent](./booksintent/updatelinespacing.md)
   The app intent conforms to the schema for updating the line spacing.
-- [var updateSettings: some AssistantSchemas.Intent](assistantschemas/booksintent/updatesettings.md)
+- [var updateSettings: some AssistantSchemas.Intent](./booksintent/updatesettings.md)
   The app intent conforms to the schema for updating settings for an ebook.
-- [var updateWordSpacing: some AssistantSchemas.Intent](assistantschemas/booksintent/updatewordspacing.md)
+- [var updateWordSpacing: some AssistantSchemas.Intent](./booksintent/updatewordspacing.md)
   The app intent conforms to the schema for updating the spacing between words.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
-- [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
+- [AssistantSchema.IntentSchema](../assistantschema/intentschema.md)
+- [AssistantSchemas.IntentSchema](./intentschema.md)
 
 
 ---

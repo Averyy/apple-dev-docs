@@ -1,7 +1,8 @@
 # CancellationResponse
 
 **Framework**: Account Data Transfer  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that describes the outcome of canceling a download request.
 
@@ -10,20 +11,25 @@ An object that describes the outcome of canceling a download request.
 
 ## Declaration
 
-```swift
+```
 object CancellationResponse
 ```
 
 ## Properties
 
 - `jobStatus` (string): The current status of the download request.
+
+  **Allowed Values**: `cancelled`
 - `status` (string): The outcome of the cancellation operation.
+
+  **Allowed Values**: `success`, `error`
 
 ## See Also
 
-- [Cancel request](cancel-request.md)
+### Cancellation
+- [Cancel request](./cancel-request.md)
   Tells the server to stop processing an active request.
-- [object CancellationRequest](cancellationrequest.md)
+- [object CancellationRequest](./cancellationrequest.md)
   An object that identifies a one-time request, or an individual instance of a recurring request, to cancel.
 
 

@@ -1,21 +1,28 @@
 # cumulativeAbnormalExitCount
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of times the app exited abnormally from the foreground.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 27.2
+- iPadOS 14.0+ - Deprecated in 27.2
+- Mac Catalyst 14.0+ - Deprecated in 27.0
+- macOS 11.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`abnormalTerminationCount`](../foregroundterminationmetric/abnormalterminationcount.md) instead.
 
 ## Declaration
 
 ```swift
 var cumulativeAbnormalExitCount: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger cumulativeAbnormalExitCount;
 ```
 
 #### Discussion

@@ -1,6 +1,7 @@
 # Safari 27 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released September 14, 2026 — 27.0 (20625.1.29)
 
@@ -61,7 +62,7 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed an issue where `!important` declarations did not override CSS animation values when CSS transitions were also running on the same property. (174367827)
 - Fixed an issue where identity matrix decomposition generated invalid quaternions, resulting in incorrect transform animations. (174813328)
 
-##### Css
+##### CSS
 
 ###### New Features
 
@@ -364,7 +365,7 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed the concentric inner-button corner radius on horizontal text form controls incorrectly ignoring the bottom inset. (180869927)
 - Fixed a number of issues with the default styles for customizable `<select>` with `appearance: base-select`, including spacing, borders, `border-radius`, overflow, cursors, `optgroup` styling, picker dialog shadow, and increased contrast colors. (183345556)
 
-##### Html
+##### HTML
 
 ###### New Features
 
@@ -438,7 +439,7 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed a regression where RGB gain map images were decoded to 8 bits per channel, causing a color shift and incorrect brightness. (179152566)
 - Fixed handling of the gain-map target pixel format when decoding HDR images to fall back safely when the format cannot be parsed. (181180757)
 
-##### Javascript
+##### JavaScript
 
 ###### Resolved Issues
 
@@ -476,7 +477,7 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed `Array.prototype.join` to include prototype elements added during element `toString` invocation. (178055452)
 - Fixed an issue where `Temporal.Instant` operations were not aligned with the spec’s abstract operations. (179844859)
 
-##### Mathml
+##### MathML
 
 ###### New Features
 
@@ -508,7 +509,7 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 ###### New Features
 
 - Added support for setting `TextTrackCue.endTime` to `Infinity` to represent an unbounded cue duration. (71042767)
-- Added support for synchronized video playback on displays using genlock on macOS. ([`311815@main`](https://developer.apple.comhttps://commits.webkit.org/311815@main), [`312166@main`](https://developer.apple.comhttps://commits.webkit.org/312166@main))  (175197574)
+- Added support for synchronized video playback on displays using genlock on macOS. ([311815@main](https://commits.webkit.org/311815@main), [312166@main](https://commits.webkit.org/312166@main))  (175197574)
 - Added support for overriding color space for hardware video decoders in WebCodecs. (178717498)
 
 ###### Resolved Issues
@@ -614,7 +615,7 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed an issue where the HTTP cache did not store responses with explicit freshness for all status codes. (179871690)
 - Fixed URL path separators being encoded as `%2F` following a percent-encoded Armenian path segment. (180067095)
 
-##### Pdf
+##### PDF
 
 ###### Known Issues
 
@@ -742,7 +743,7 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed an issue where an `<img>` embedding an SVG with a near-integral intrinsic width rendered one device pixel narrower than expected. (180490343)
 - Fixed elements with `filter: drop-shadow()` not being fully repainted when a child is resized. (181284741)
 
-##### Svg
+##### SVG
 
 ###### New Features
 
@@ -927,13 +928,13 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 
 - Fixed a line break appearing after a U+201D Right Double Quotation Mark. (177952069)
 
-##### Ui Events
+##### UI Events
 
 ###### Resolved Issues
 
 - Fixed boundary events not being dispatched when a hovered element is removed from the DOM, so the Full Screen button on bsky.app no longer remains stuck in a hover state. (176507648)
 
-##### Web Api
+##### Web API
 
 ###### New Features
 
@@ -1134,7 +1135,7 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Added `getCookiesForURL:` to `WKHTTPCookieStore` as public API, allowing applications to efficiently retrieve cookies matching a specific URL instead of fetching the entire cookie store. (168165666)
 - Added the ability to clear a content world via `WKWebView`. (176381093)
 
-##### Webassembly
+##### WebAssembly
 
 ###### New Features
 
@@ -1146,7 +1147,7 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed incorrect `IntegerOverflow` exceptions thrown by `i32.rem_s`, `i64.rem_s`, `i32.div_u`, `i64.div_u`, `i32.rem_u`, and `i64.rem_u` when both operands are constants. (175122462)
 - Fixed a regression where `RegisterSet::normalizeWidths()` lost vector-width information, causing v128 argument corruption in WebAssembly SIMD thunks. (176035764)
 
-##### Webdriver
+##### WebDriver
 
 ###### New Features
 
@@ -1157,7 +1158,7 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 
 - Fixed an issue where the WebDriver full page screenshot was clipped to the viewport dimensions instead of the full page. (179840186)
 
-##### Webgl
+##### WebGL
 
 ###### Resolved Issues
 
@@ -1166,7 +1167,7 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed some `texImage` functions reporting errors with incorrect function names. (175652807)
 - Fixed some WebGL context state properties not being correctly reset on context loss. (176190808)
 
-##### Webgpu
+##### WebGPU
 
 ###### New Features
 
@@ -1181,7 +1182,7 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 - Fixed WGSL parser handling of identifiers per the latest specification. (177008615)
 - Fixed WGSL validation of binary expressions involving short-circuit and/or operators. (177012957)
 
-##### Webrtc
+##### WebRTC
 
 ###### New Features
 
@@ -1212,7 +1213,8 @@ Safari 27 is available for iOS 27, iPadOS 27, visionOS 27, macOS 27, macOS 26, a
 
 ## See Also
 
-- [Safari 27.2 Beta Release Notes](safari-27_2-release-notes.md)
+### Version 27
+- [Safari 27.2 Beta Release Notes](./safari-27_2-release-notes.md)
   Released October 13, 2026 — 27.2 beta (20625.2.8)
 
 

@@ -1,6 +1,7 @@
 # Creating a Look-At Constraint
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Make a node automatically rotate itself based on the changing position of another node, by using orientation constraints.
 
@@ -8,7 +9,7 @@ Make a node automatically rotate itself based on the changing position of anothe
 
 A common use for orientation constraints is to make a *look-at constraint*. For example, you may create a look-at constraint to make a pair of eyes follow a moving object or to have a rocket point in the direction of its target.
 
-The following code shows how to create a constraint to make a sprite node named `pointer` always point toward a circular-shape node named `target`. The texture assigned to `pointer` is an upward-pointing arrow and, because SpriteKit’s angular coordinates have their origin at the three o’clock position, the orient constraint has an offset of 90° ([`pi`](https://developer.apple.com/documentation/swift/floatingpoint/pi)`/2` radians) so that the arrow is correctly oriented toward the target.
+The following code shows how to create a constraint to make a sprite node named `pointer` always point toward a circular-shape node named `target`. The texture assigned to `pointer` is an upward-pointing arrow and, because SpriteKit’s angular coordinates have their origin at the three o’clock position, the orient constraint has an offset of 90° ([`pi`](../Swift/floatingpoint/pi.md)`/2` radians) so that the arrow is correctly oriented toward the target.
 
 ```swift
 let target = SKShapeNode(circleOfRadius: 10)
@@ -24,7 +25,7 @@ let lookAtConstraint = SKConstraint.orient(to: target,
 pointer.constraints = [ lookAtConstraint ]
 ```
 
-A further orientation constraint, [`zRotation(_:)`](skconstraint/zrotation(_:).md), can be used in combination with the look-at constraint shown above to limit rotation. When you add the code above, the arrow’s rotation is limited so that it never points downward:
+A further orientation constraint, [`zRotation(_:)`](./skconstraint/zrotation%28_%29.md), can be used in combination with the look-at constraint shown above to limit rotation. When you add the code above, the arrow’s rotation is limited so that it never points downward:
 
 ```swift
 let limitLookAt = SKConstraint.zRotation(SKRange(lowerLimit: -CGFloat.pi / 2,
@@ -35,13 +36,14 @@ pointer.constraints = [ lookAtConstraint, limitLookAt ]
 
 ## See Also
 
-- [class func orient(to: SKNode, offset: SKRange) -> Self](skconstraint/orient(to:offset:)-1h1tw.md)
+### Creating Orientation Constraints
+- [class func orient(to: SKNode, offset: SKRange) -> Self](./skconstraint/orient%28to,offset%29-1h1tw.md)
   Creates a constraint that forces a node to rotate to face another node.
-- [class func orient(to: CGPoint, offset: SKRange) -> Self](skconstraint/orient(to:offset:)-9lq3h.md)
+- [class func orient(to: CGPoint, offset: SKRange) -> Self](./skconstraint/orient%28to,offset%29-9lq3h.md)
   Creates a constraint that forces a node to rotate to face a fixed point.
-- [class func orient(to: CGPoint, in: SKNode, offset: SKRange) -> Self](skconstraint/orient(to:in:offset:).md)
+- [class func orient(to: CGPoint, in: SKNode, offset: SKRange) -> Self](./skconstraint/orient%28to,in,offset%29.md)
   Creates a constraint that forces a node to rotate to face a point in another node’s coordinate system.
-- [class func zRotation(SKRange) -> Self](skconstraint/zrotation(_:).md)
+- [class func zRotation(SKRange) -> Self](./skconstraint/zrotation%28_%29.md)
   Creates a constraint that limits the orientation of a node.
 
 

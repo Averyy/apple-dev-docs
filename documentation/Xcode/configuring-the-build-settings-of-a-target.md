@@ -1,6 +1,7 @@
 # Configuring the build settings of a target
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Specify the options you use to compile, link, and produce a product from a target, and identify settings inherited from your project or the system.
 
@@ -10,13 +11,13 @@ The Xcode build process is highly configurable, and you can change the build set
 
 Make changes to your project or target’s settings from the Build Settings tab or with build configuration files. The following image shows the Build Settings tab for a project.
 
-![An Xcode window shows the build settings for the selected target, and the controls you use to filter and search the list of settings.](/images/com.apple.Xcode/build-settings-editor@2x.png)
+![An Xcode window shows the build settings for the selected target, and the controls you use to filter and search the list of settings.](https://developer.apple.com/tutorials/images/com.apple.Xcode/build-settings-editor@2x.png)
 
-> **Note**: You can also store settings in specially formatted text files called build configuration files. These files make it easy to save your settings along with your source files in your source control management system. For information about build configuration files, see [`Adding a build configuration file to your project`](adding-a-build-configuration-file-to-your-project.md).
+> **Note**: You can also store settings in specially formatted text files called build configuration files. These files make it easy to save your settings along with your source files in your source control management system. For information about build configuration files, see [Adding a build configuration file to your project](./adding-a-build-configuration-file-to-your-project.md).
 
-For a complete list of build settings, see [`Build settings reference`](build-settings-reference.md).
+For a complete list of build settings, see [Build settings reference](./build-settings-reference.md).
 
-##### Search and Filter the List of Build Settings
+##### Search and filter the list of build settings
 
 To find a specific build setting quickly, use the filters and Search field at the top of the Build Settings tab.
 
@@ -24,7 +25,7 @@ To find a specific build setting quickly, use the filters and Search field at th
 - Enter text in the search field to display settings that contain the specified string. Xcode searches all settings attributes by default.
 - To refine your search, click the magnifying glass and select a single attribute to match.
 
-##### Configure the Value of a Build Setting
+##### Configure the value of a build setting
 
 Each build setting has the following attributes.
 
@@ -43,13 +44,13 @@ To configure different values for debug and release builds, click a setting’s 
 
 Some settings define their values in terms of other settings. For example, an attribute whose value is a path to a file might use the `BUILD_DIR` setting to specify part of the path. When a setting’s definition is visible, choose Editor > Show Values to see the computed final value — that is, the value without the environment variable. When the final value is visible, choose Editor > Show Definitions to see the definition.
 
-##### Evaluate How Your Project Inherits Settings
+##### Evaluate how your project inherits settings
 
 Every target inherits settings from both its parent project and the platform SDK. This inheritance model ensures that the target starts with valid baseline settings. When you create a target, Xcode changes some settings based on the target type, and you are free to make other changes based on your needs.
 
 To help you track down the source of a setting’s value, open the build settings for your project or target and select the Levels filter. Xcode displays the current settings hierarchy in the build settings editor. This hierarchy includes the default SDK values and any other project or target values that are active. The Resolved column shows the final resolved value Xcode uses to build the item.
 
-![The levels option in the build settings editor shows the inheritance of default system settings, project settings, and target settings.](/images/com.apple.Xcode/build-setting-inheritance-hierarchy@2x.png)
+![The levels option in the build settings editor shows the inheritance of default system settings, project settings, and target settings.](https://developer.apple.com/tutorials/images/com.apple.Xcode/build-setting-inheritance-hierarchy@2x.png)
 
 With levels displayed, highlighted values indicate values that take precedence. Xcode uses a target’s build settings before referring to build settings you define for the project. At each level, Xcode gives precedence to settings you provide in the project over those you provide in build configuration files. Xcode gives the lowest precedence to the default system values. The hierarchy of precedence is:
 
@@ -61,21 +62,22 @@ With levels displayed, highlighted values indicate values that take precedence. 
 
 > **Note**: When using the `xcodebuild` command-line tool, the tool gives any settings you pass to it the highest prededence.
 
-##### Obtain Additional Details About a Build Setting
+##### Obtain additional details about a build setting
 
 To see detailed information about a particular setting, select the setting and choose View > Inspectors > Quick Help. Xcode displays a description of the setting, along with its name and value type.
 
-![The quick help inspector shows detailed information about the selected build setting.](/images/com.apple.Xcode/build-setting-quick-help@2x.png)
+![The quick help inspector shows detailed information about the selected build setting.](https://developer.apple.com/tutorials/images/com.apple.Xcode/build-setting-quick-help@2x.png)
 
 ## See Also
 
-- [Adding a build configuration file to your project](adding-a-build-configuration-file-to-your-project.md)
+### Build settings
+- [Adding a build configuration file to your project](./adding-a-build-configuration-file-to-your-project.md)
   Specify your project’s build settings in plain-text files, and supply different settings for debug and release builds.
-- [Build settings reference](build-settings-reference.md)
+- [Build settings reference](./build-settings-reference.md)
   A detailed list of individual Xcode build settings that control or change the way a target is built.
-- [Identifying and addressing framework module issues](identifying-and-addressing-framework-module-issues.md)
+- [Identifying and addressing framework module issues](./identifying-and-addressing-framework-module-issues.md)
   Detect and fix common problems found in framework modules with the module verifier.
-- [Understanding build product layout changes in Xcode](understanding-build-product-layout-changes.md)
+- [Understanding build product layout changes in Xcode](./understanding-build-product-layout-changes.md)
 
 
 ---

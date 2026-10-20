@@ -1,7 +1,8 @@
 # isNil(at:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean that indicates whether the element at the index is missing.
 
@@ -26,13 +27,14 @@ func isNil(at index: Int) -> Bool
 
 ## See Also
 
-- [var name: String](anycolumnslice/name.md)
+### Inspecting a Type-Erased Column Slice
+- [var name: String](./name.md)
   The name of the slice’s parent column.
-- [var count: Int](anycolumnslice/count.md)
+- [var count: Int](./count.md)
   The number of elements in the column slice.
-- [var missingCount: Int](anycolumnslice/missingcount.md)
+- [var missingCount: Int](./missingcount.md)
   The number of missing elements in the column slice.
-- [var wrappedElementType: any Any.Type](anycolumnslice/wrappedelementtype.md)
+- [var wrappedElementType: any Any.Type](./wrappedelementtype.md)
   The underlying type of the column’s elements.
 
 

@@ -1,14 +1,15 @@
 # reinit
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn reinit(FWAddress devAddress, IOMemoryDescriptor *hostMem, FWDeviceCallback completion, void *refcon, bool failOnReset);
 ```
 

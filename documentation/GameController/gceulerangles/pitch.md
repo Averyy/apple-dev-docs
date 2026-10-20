@@ -1,7 +1,8 @@
 # pitch
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pitch of the controller in radians.
 
@@ -19,15 +20,20 @@ The pitch of the controller in radians.
 var pitch: Double
 ```
 
+```c
+double pitch;
+```
+
 #### Discussion
 
 A *pitch* is a rotation around the x-axis that passes through the controller from side to side. The sign of the pitch follows the right-hand rule. If you point your right thumb along the positive axis, the curl of your other fingers points in the positive direction around that axis.
 
 ## See Also
 
-- [var yaw: Double](gceulerangles/yaw.md)
+### Getting Euler Angle Values
+- [var yaw: Double](./yaw.md)
   The yaw of the device in radians.
-- [var roll: Double](gceulerangles/roll.md)
+- [var roll: Double](./roll.md)
   The roll of the controller in radians.
 
 

@@ -1,7 +1,8 @@
 # addAction(_:)
 
 **Framework**: CallKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified action to the transaction.
 
@@ -16,6 +17,10 @@ Adds the specified action to the transaction.
 
 ```swift
 func addAction(_ action: CXAction)
+```
+
+```objc
+- (void) addAction:(CXAction *) action;
 ```
 
 ## Parameters

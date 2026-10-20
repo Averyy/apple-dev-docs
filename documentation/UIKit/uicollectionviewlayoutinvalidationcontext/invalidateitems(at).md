@@ -1,7 +1,8 @@
 # invalidateItems(at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the cells at the specified index paths to the list of invalid items.
 
@@ -9,7 +10,7 @@ Adds the cells at the specified index paths to the list of invalid items.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,25 +19,30 @@ Adds the cells at the specified index paths to the list of invalid items.
 func invalidateItems(at indexPaths: [IndexPath])
 ```
 
+```objc
+- (void) invalidateItemsAtIndexPaths:(NSArray<NSIndexPath *> *) indexPaths;
+```
+
 #### Discussion
 
-Call this method to identify the specific cells of your layout that require updates. The cells you specify are added to the array in the [`invalidatedItemIndexPaths`](uicollectionviewlayoutinvalidationcontext/invalidateditemindexpaths.md) property.
+Call this method to identify the specific cells of your layout that require updates. The cells you specify are added to the array in the [`invalidatedItemIndexPaths`](./invalidateditemindexpaths.md) property.
 
 ## Parameters
 
-- `indexPaths`: An array of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects. Each index path represents a cell whose layout needs to be recomputed.
+- `indexPaths`: An array of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects. Each index path represents a cell whose layout needs to be recomputed.
 
 ## See Also
 
-- [func invalidateSupplementaryElements(ofKind: String, at: [IndexPath])](uicollectionviewlayoutinvalidationcontext/invalidatesupplementaryelements(ofkind:at:).md)
+### Invalidating Specific Items
+- [func invalidateSupplementaryElements(ofKind: String, at: [IndexPath])](./invalidatesupplementaryelements%28ofkind,at%29.md)
   Adds the supplementary views at the specified index paths to the list of invalid items.
-- [func invalidateDecorationElements(ofKind: String, at: [IndexPath])](uicollectionviewlayoutinvalidationcontext/invalidatedecorationelements(ofkind:at:).md)
+- [func invalidateDecorationElements(ofKind: String, at: [IndexPath])](./invalidatedecorationelements%28ofkind,at%29.md)
   Adds the decoration views at the specified index paths to the list of invalid items.
-- [var invalidatedItemIndexPaths: [IndexPath]?](uicollectionviewlayoutinvalidationcontext/invalidateditemindexpaths.md)
+- [var invalidatedItemIndexPaths: [IndexPath]?](./invalidateditemindexpaths.md)
   An array of index paths representing the cells that were invalidated.
-- [var invalidatedSupplementaryIndexPaths: [String : [IndexPath]]?](uicollectionviewlayoutinvalidationcontext/invalidatedsupplementaryindexpaths.md)
+- [var invalidatedSupplementaryIndexPaths: [String : [IndexPath]]?](./invalidatedsupplementaryindexpaths.md)
   A dictionary that identifies the supplementary views that were invalidated.
-- [var invalidatedDecorationIndexPaths: [String : [IndexPath]]?](uicollectionviewlayoutinvalidationcontext/invalidateddecorationindexpaths.md)
+- [var invalidatedDecorationIndexPaths: [String : [IndexPath]]?](./invalidateddecorationindexpaths.md)
   A dictionary that identifies the decoration views that were invalidated.
 
 

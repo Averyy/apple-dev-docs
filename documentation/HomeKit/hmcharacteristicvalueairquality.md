@@ -1,7 +1,8 @@
 # HMCharacteristicValueAirQuality
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the air quality.
 
@@ -19,33 +20,37 @@ Possible values for the air quality.
 enum HMCharacteristicValueAirQuality
 ```
 
+```c
+enum HMCharacteristicValueAirQuality : NSInteger;
+```
+
 ## Topics
 
 ### Air Quality
-- [HMCharacteristicValueAirQuality.unknown](hmcharacteristicvalueairquality/unknown.md)
+- [HMCharacteristicValueAirQuality.unknown](./hmcharacteristicvalueairquality/unknown.md)
   The air quality is unknown.
-- [HMCharacteristicValueAirQuality.excellent](hmcharacteristicvalueairquality/excellent.md)
+- [HMCharacteristicValueAirQuality.excellent](./hmcharacteristicvalueairquality/excellent.md)
   The air quality is excellent.
-- [HMCharacteristicValueAirQuality.good](hmcharacteristicvalueairquality/good.md)
+- [HMCharacteristicValueAirQuality.good](./hmcharacteristicvalueairquality/good.md)
   The air quality is good.
-- [HMCharacteristicValueAirQuality.fair](hmcharacteristicvalueairquality/fair.md)
+- [HMCharacteristicValueAirQuality.fair](./hmcharacteristicvalueairquality/fair.md)
   The air quality is fair.
-- [HMCharacteristicValueAirQuality.inferior](hmcharacteristicvalueairquality/inferior.md)
+- [HMCharacteristicValueAirQuality.inferior](./hmcharacteristicvalueairquality/inferior.md)
   The air quality is inferior.
-- [HMCharacteristicValueAirQuality.poor](hmcharacteristicvalueairquality/poor.md)
+- [HMCharacteristicValueAirQuality.poor](./hmcharacteristicvalueairquality/poor.md)
   The air quality is poor.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvalueairquality/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvalueairquality/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

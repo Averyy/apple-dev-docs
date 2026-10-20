@@ -1,7 +1,8 @@
 # argmin()
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index of the minimum value of the flattened scalars.
 
@@ -32,13 +33,14 @@ await y.shapedArray(of: Int32.self) // is 0
 
 ## See Also
 
-- [func argmax() -> MLTensor](mltensor/argmax.md)
+### Accessing the indicies
+- [func argmax() -> MLTensor](./argmax%28%29.md)
   Returns the index of the maximum value of the flattened scalars.
-- [func argmax(alongAxis: Int, keepRank: Bool) -> MLTensor](mltensor/argmax(alongaxis:keeprank:).md)
+- [func argmax(alongAxis: Int, keepRank: Bool) -> MLTensor](./argmax%28alongaxis,keeprank%29.md)
   Returns the indices of the maximum values along the specified axis.
-- [func argmin(alongAxis: Int, keepRank: Bool) -> MLTensor](mltensor/argmin(alongaxis:keeprank:).md)
+- [func argmin(alongAxis: Int, keepRank: Bool) -> MLTensor](./argmin%28alongaxis,keeprank%29.md)
   Returns the indices of the minimum values along the specified axis.
-- [func argsort(alongAxis: Int, descendingOrder: Bool) -> MLTensor](mltensor/argsort(alongaxis:descendingorder:).md)
+- [func argsort(alongAxis: Int, descendingOrder: Bool) -> MLTensor](./argsort%28alongaxis,descendingorder%29.md)
   Returns the indices (or arguments) of a tensor that give its sorted order along the specified axis.
 
 

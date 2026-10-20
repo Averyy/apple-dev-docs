@@ -1,7 +1,8 @@
 # outlineView(_:shouldTypeSelectFor:withCurrentSearch:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether type select should proceed for a given event and search string.
 
@@ -15,13 +16,17 @@ Returns a Boolean value that indicates whether type select should proceed for a 
 optional func outlineView(_ outlineView: NSOutlineView, shouldTypeSelectFor event: NSEvent, withCurrentSearch searchString: String?) -> Bool
 ```
 
+```objc
+- (BOOL) outlineView:(NSOutlineView *) outlineView shouldTypeSelectForEvent:(NSEvent *) event withCurrentSearchString:(NSString *) searchString;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if type select should proceed, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if type select should proceed, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Generally, this method will be called from [`keyDown(with:)`](nsresponder/keydown(with:).md) and the event will be a key event.
+Generally, this method will be called from [`keyDown(with:)`](../nsresponder/keydown%28with%29.md) and the event will be a key event.
 
 ## Parameters
 
@@ -31,9 +36,10 @@ Generally, this method will be called from [`keyDown(with:)`](nsresponder/keydow
 
 ## See Also
 
-- [func outlineView(NSOutlineView, typeSelectStringFor: NSTableColumn?, item: Any) -> String?](nsoutlineviewdelegate/outlineview(_:typeselectstringfor:item:).md)
+### Supporting Type Select
+- [func outlineView(NSOutlineView, typeSelectStringFor: NSTableColumn?, item: Any) -> String?](./outlineview%28_,typeselectstringfor,item%29.md)
   Returns the string that is used for type selection for a given column and item.
-- [func outlineView(NSOutlineView, nextTypeSelectMatchFromItem: Any, toItem: Any, for: String) -> Any?](nsoutlineviewdelegate/outlineview(_:nexttypeselectmatchfromitem:toitem:for:).md)
+- [func outlineView(NSOutlineView, nextTypeSelectMatchFromItem: Any, toItem: Any, for: String) -> Any?](./outlineview%28_,nexttypeselectmatchfromitem,toitem,for%29.md)
   Returns the first item that matches the searchString from within the range of startItem to endItem
 
 

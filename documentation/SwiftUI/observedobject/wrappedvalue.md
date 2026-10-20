@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying value that the observed object references.
 
@@ -39,9 +40,10 @@ When you change a wrapped value, you can access the new value immediately. Howev
 
 ## See Also
 
-- [var projectedValue: ObservedObject<ObjectType>.Wrapper](observedobject/projectedvalue.md)
+### Getting the value
+- [var projectedValue: ObservedObject<ObjectType>.Wrapper](./projectedvalue.md)
   A projection of the observed object that creates bindings to its properties.
-- [ObservedObject.Wrapper](observedobject/wrapper.md)
+- [ObservedObject.Wrapper](./wrapper.md)
   A wrapper of the underlying observable object that can create bindings to its properties.
 
 

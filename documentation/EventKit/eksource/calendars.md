@@ -1,17 +1,22 @@
 # calendars
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calendars that belong to this source object.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 2.0
 
 ## Declaration
 
 ```swift
 var calendars: Set<EKCalendar> { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSSet<EKCalendar *> * calendars;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ var calendars: Set<EKCalendar> { get }
 
 ## See Also
 
-- [func calendars(for: EKEntityType) -> Set<EKCalendar>](eksource/calendars(for:).md)
+### Accessing Calendars
+- [func calendars(for: EKEntityType) -> Set<EKCalendar>](./calendars%28for%29.md)
   Returns the calendars that belong to this source object that support a particular entity type.
 
 

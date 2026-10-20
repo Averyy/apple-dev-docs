@@ -1,7 +1,8 @@
 # linear
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A linear curve.
 

@@ -1,7 +1,8 @@
 # cardExpirationState
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expiration state of the card that the system read.
 

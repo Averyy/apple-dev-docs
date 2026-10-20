@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the most appropriate window for presenting the authentication modification interface.
@@ -16,6 +17,10 @@ Returns the most appropriate window for presenting the authentication modificati
 
 ```swift
 func presentationAnchor(for controller: ASAccountAuthenticationModificationController) -> ASPresentationAnchor
+```
+
+```objc
+- (ASPresentationAnchor) presentationAnchorForAccountAuthenticationModificationController:(ASAccountAuthenticationModificationController *) controller;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # replacingOccurrences(of:with:options:range:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new string in which all occurrences of a target string in a specified range of the string are replaced by another given string.
 

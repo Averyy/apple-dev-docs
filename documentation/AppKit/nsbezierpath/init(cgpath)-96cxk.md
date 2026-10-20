@@ -1,7 +1,8 @@
 # init(cgPath:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 14.0+
@@ -12,17 +13,22 @@
 init(cgPath: CGPath)
 ```
 
+```objc
++ (NSBezierPath *) bezierPathWithCGPath:(CGPathRef) cgPath;
+```
+
 ## See Also
 
-- [init(ovalIn: NSRect)](nsbezierpath/init(ovalin:).md)
+### Creating a Bézier Path
+- [init(ovalIn: NSRect)](./init%28ovalin%29.md)
   Creates and returns a new Bézier path object initialized with an oval path inscribed in the specified rectangle.
-- [init(rect: NSRect)](nsbezierpath/init(rect:).md)
+- [init(rect: NSRect)](./init%28rect%29.md)
   Creates and returns a new Bézier path object initialized with a rectangular path.
-- [init(roundedRect: NSRect, xRadius: CGFloat, yRadius: CGFloat)](nsbezierpath/init(roundedrect:xradius:yradius:).md)
+- [init(roundedRect: NSRect, xRadius: CGFloat, yRadius: CGFloat)](./init%28roundedrect,xradius,yradius%29.md)
   Creates and returns a new Bézier path object initialized with a rounded rectangular path.
-- [var flattened: NSBezierPath](nsbezierpath/flattened.md)
+- [var flattened: NSBezierPath](./flattened.md)
   A flattened version of the path object.
-- [var reversed: NSBezierPath](nsbezierpath/reversed.md)
+- [var reversed: NSBezierPath](./reversed.md)
   A path containing the reversed contents of the current path object.
 
 

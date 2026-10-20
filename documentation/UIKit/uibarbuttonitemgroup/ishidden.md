@@ -1,7 +1,8 @@
 # isHidden
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that determines the visibility of the group.
 
@@ -17,13 +18,18 @@ A Boolean that determines the visibility of the group.
 var isHidden: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite, getter=isHidden) BOOL hidden;
+```
+
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to hide the group, or [`false`](https://developer.apple.com/documentation/swift/false) to display the group.
+Set this property to [`true`](../../Swift/true.md) to hide the group, or [`false`](../../Swift/false.md) to display the group.
 
 ## See Also
 
-- [var isDisplayingRepresentativeItem: Bool](uibarbuttonitemgroup/isdisplayingrepresentativeitem.md)
+### Determining the group’s appearance
+- [var isDisplayingRepresentativeItem: Bool](./isdisplayingrepresentativeitem.md)
   A Boolean value indicating whether the representative item is showing in place of the group’s items.
 
 

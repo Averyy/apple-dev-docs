@@ -1,7 +1,8 @@
 # NSExtensionItem
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An immutable collection of values representing different aspects of an item for an extension to act upon.
 
@@ -20,46 +21,51 @@ An immutable collection of values representing different aspects of an item for 
 class NSExtensionItem
 ```
 
+```objc
+@interface NSExtensionItem : NSObject
+```
+
 ## Topics
 
 ### Identifying the Item
-- [var attributedTitle: NSAttributedString?](nsextensionitem/attributedtitle.md)
+- [var attributedTitle: NSAttributedString?](./nsextensionitem/attributedtitle.md)
   An optional title for the item.
-- [var userInfo: [AnyHashable : Any]?](nsextensionitem/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./nsextensionitem/userinfo.md)
   An optional dictionary of keys and values corresponding to the extension item’s properties.
 ### Item Contents
-- [var attachments: [NSItemProvider]?](nsextensionitem/attachments.md)
+- [var attachments: [NSItemProvider]?](./nsextensionitem/attachments.md)
   An optional array of media data associated with the extension item.
-- [var attributedContentText: NSAttributedString?](nsextensionitem/attributedcontenttext.md)
+- [var attributedContentText: NSAttributedString?](./nsextensionitem/attributedcontenttext.md)
   An optional string describing the extension item content.
 ### Constants
-- [Property Keys](property-keys.md)
+- [Property Keys](./property-keys.md)
   These keys correspond to the extension item properties and are specified in the extension’s `Info.plist`.
-- [UTI Subtypes for Data Detector Types](uti-subtypes-for-data-detector-types.md)
+- [UTI Subtypes for Data Detector Types](./uti-subtypes-for-data-detector-types.md)
   These constants represent sub-Uniform Type Identifier of `com.apple.structured-text`
 ### Initializers
-- [init?(coder: NSCoder)](nsextensionitem/init(coder:).md)
+- [init?(coder: NSCoder)](./nsextensionitem/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
 
 ## See Also
 
-- [class NSItemProvider](nsitemprovider.md)
+### Attachments
+- [class NSItemProvider](./nsitemprovider.md)
   An item provider for conveying data or a file between processes during drag-and-drop or copy-and-paste activities, or from a host app to an app extension.
-- [Add Functionality to Finder with Action Extensions](../appkit/add-functionality-to-finder-with-action-extensions.md)
+- [Add Functionality to Finder with Action Extensions](../AppKit/add-functionality-to-finder-with-action-extensions.md)
   Implement Action Extensions to provide quick access to commonly used features of your app.
 
 

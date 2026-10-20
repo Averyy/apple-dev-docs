@@ -1,15 +1,16 @@
 # start(completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates that the framework has started the provider, and provides a completion handler for subclasses to signal their readiness.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 27.2
+- iPadOS 14.0+ - Deprecated in 27.2
+- Mac Catalyst 14.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
 
 ## Declaration
 
@@ -17,13 +18,17 @@ Indicates that the framework has started the provider, and provides a completion
 func start(completionHandler: @escaping ((any Error)?) -> Void)
 ```
 
+```objc
+- (void) startWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
+```
+
 ## Mentions
 
-- [Maintaining a Reliable Network Connection](maintaining-a-reliable-network-connection.md)
+- [Maintaining a Reliable Network Connection](../maintaining-a-reliable-network-connection.md)
 
 #### Discussion
 
-An [`NEAppPushProvider`](neapppushprovider.md) subclass must override this method to create a connection with its server.
+An [`NEAppPushProvider`](../neapppushprovider.md) subclass must override this method to create a connection with its server.
 
 ## Parameters
 
@@ -31,11 +36,12 @@ An [`NEAppPushProvider`](neapppushprovider.md) subclass must override this metho
 
 ## See Also
 
-- [func start()](neapppushprovider/start.md)
+### Implementing provider life cycle
+- [func start()](./start%28%29.md)
   Indicates that the framework has started the provider.
-- [func stop(with: NEProviderStopReason, completionHandler: () -> Void)](neapppushprovider/stop(with:completionhandler:).md)
+- [func stop(with: NEProviderStopReason, completionHandler: () -> Void)](./stop%28with,completionhandler%29.md)
   Indicates that the framework needs to stop the provider.
-- [func handleTimerEvent()](neapppushprovider/handletimerevent.md)
+- [func handleTimerEvent()](./handletimerevent%28%29.md)
   Indicates a periodic status check from the framework to the provider.
 
 

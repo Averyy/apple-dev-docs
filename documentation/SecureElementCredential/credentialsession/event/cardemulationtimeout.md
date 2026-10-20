@@ -1,7 +1,8 @@
 # CredentialSession.Event.cardEmulationTimeout
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session’s card emulation timer expired.
 
@@ -17,13 +18,14 @@ case cardEmulationTimeout
 
 #### Discussion
 
-This event the session’s state back to [`CredentialSession.State.management`](credentialsession/state-swift.enum/management.md).
+This event the session’s state back to [`CredentialSession.State.management`](../state-swift.enum/management.md).
 
-When handling this event, SwiftUI applications must invalidate the [`CredentialTransaction.Configuration`](credentialtransaction/configuration.md) requested for this transaction.
+When handling this event, SwiftUI applications must invalidate the [`CredentialTransaction.Configuration`](../../credentialtransaction/configuration.md) requested for this transaction.
 
 ## See Also
 
-- [CredentialSession.Event.presentmentIntentAssertionTimeout](credentialsession/event/presentmentintentassertiontimeout.md)
+### Timeout events
+- [CredentialSession.Event.presentmentIntentAssertionTimeout](./presentmentintentassertiontimeout.md)
   The session’s presentment intent assertion timed out.
 
 

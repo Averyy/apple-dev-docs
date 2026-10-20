@@ -1,7 +1,8 @@
 # init(data:size:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a graph structure from the specified opaque graph object.
 
@@ -27,7 +28,8 @@ init(data: UnsafeMutableRawPointer?, size: Int)
 
 ## See Also
 
-- [init()](bnns_graph_t/init.md)
+### Initializing a graph
+- [init()](./init%28%29.md)
   Creates an empty graph structure.
 
 

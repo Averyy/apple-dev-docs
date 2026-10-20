@@ -1,7 +1,8 @@
 # fileSystemTypeName
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for the file system type name.
 
@@ -12,6 +13,10 @@ A property for the file system type name.
 
 ```swift
 var fileSystemTypeName: String { get }
+```
+
+```objc
+@property (copy, readonly) NSString * fileSystemTypeName;
 ```
 
 #### Discussion

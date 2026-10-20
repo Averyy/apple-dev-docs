@@ -1,7 +1,8 @@
 # NSPrintInfo.PaperOrientation.portrait
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Pages are printed in portrait orientation.
 
@@ -14,9 +15,14 @@ Pages are printed in portrait orientation.
 case portrait
 ```
 
+```c
+NSPaperOrientationPortrait
+```
+
 ## See Also
 
-- [NSPrintInfo.PaperOrientation.landscape](nsprintinfo/paperorientation/landscape.md)
+### Orientations
+- [NSPrintInfo.PaperOrientation.landscape](./landscape.md)
   Pages are printed in landscape orientation.
 
 

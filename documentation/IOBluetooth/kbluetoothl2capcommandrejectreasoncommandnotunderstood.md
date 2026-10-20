@@ -1,10 +1,11 @@
 # kBluetoothL2CAPCommandRejectReasonCommandNotUnderstood
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kBluetoothL2CAPCommandRejectReasonCommandNotUnderstood: BluetoothL2CAPCommandRejectReason { get }
 ```
 
+```c
+kBluetoothL2CAPCommandRejectReasonCommandNotUnderstood
+```
+
 ## See Also
 
-- [var kBluetoothL2CAPCommandRejectReasonInvalidCIDInRequest: BluetoothL2CAPCommandRejectReason](kbluetoothl2capcommandrejectreasoninvalidcidinrequest.md)
-- [var kBluetoothL2CAPCommandRejectReasonSignallingMTUExceeded: BluetoothL2CAPCommandRejectReason](kbluetoothl2capcommandrejectreasonsignallingmtuexceeded.md)
+### Constants
+- [var kBluetoothL2CAPCommandRejectReasonInvalidCIDInRequest: BluetoothL2CAPCommandRejectReason](./kbluetoothl2capcommandrejectreasoninvalidcidinrequest.md)
+- [var kBluetoothL2CAPCommandRejectReasonSignallingMTUExceeded: BluetoothL2CAPCommandRejectReason](./kbluetoothl2capcommandrejectreasonsignallingmtuexceeded.md)
 
 
 ---

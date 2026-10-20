@@ -1,7 +1,8 @@
 # isInvertible
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean value that indicates whether the transform is invertible.
 
@@ -20,13 +21,18 @@ Returns a Boolean value that indicates whether the transform is invertible.
 var isInvertible: Bool { get }
 ```
 
+```c
+static bool SPProjectiveTransform3DIsInvertible(SPProjectiveTransform3D transform);
+```
+
 ## See Also
 
-- [func is3DProjection() -> Bool](projectivetransform3d/is3dprojection.md)
+### Checking characteristics
+- [func is3DProjection() -> Bool](./is3dprojection%28%29.md)
   Returns a Boolean value that indicates whether the transform is a 3D projection.
-- [func isUniform(overDimensions: Dimension3DSet) -> Bool](projectivetransform3d/isuniform(overdimensions:).md)
+- [func isUniform(overDimensions: Dimension3DSet) -> Bool](./isuniform%28overdimensions%29.md)
   Returns a Boolean value that indicates whether the transform scales equally over the specified dimensions.
-- [var isAffine: Bool](projectivetransform3d/isaffine.md)
+- [var isAffine: Bool](./isaffine.md)
   A Boolean value that indicates whether the transform is affine.
 
 

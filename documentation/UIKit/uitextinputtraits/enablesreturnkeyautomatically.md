@@ -1,16 +1,17 @@
 # enablesReturnKeyAutomatically
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system automatically enables the Return key when the user enters text.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether the system automatically enables the Retu
 optional var enablesReturnKeyAutomatically: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL enablesReturnKeyAutomatically;
+```
+
 #### Discussion
 
-The default value for this property is [`false`](https://developer.apple.com/documentation/swift/false). If you set it to [`true`](https://developer.apple.com/documentation/swift/true), the keyboard disables the Return key when the text entry area contains no text. As soon as the user enters some text, the Return key is automatically enabled.
+The default value for this property is [`false`](../../Swift/false.md). If you set it to [`true`](../../Swift/true.md), the keyboard disables the Return key when the text entry area contains no text. As soon as the user enters some text, the Return key is automatically enabled.
 
 ## See Also
 
-- [var isSecureTextEntry: Bool](uitextinputtraits/issecuretextentry.md)
+### Managing the keyboard behavior
+- [var isSecureTextEntry: Bool](./issecuretextentry.md)
   A Boolean value that indicates whether a text object disables copying, and in some cases, prevents recording/broadcasting and also hides the text.
 
 

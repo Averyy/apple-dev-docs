@@ -1,7 +1,8 @@
 # specifier
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 How this prim definition composes — `def`, `over`, or `class`.
 

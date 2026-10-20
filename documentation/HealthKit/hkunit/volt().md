@@ -1,7 +1,8 @@
 # volt()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring the difference in electrical potential using volts.
 
@@ -19,9 +20,14 @@ Returns a HealthKit unit for measuring the difference in electrical potential us
 class func volt() -> Self
 ```
 
+```objc
++ (instancetype) voltUnit;
+```
+
 ## See Also
 
-- [class func voltUnit(with: HKMetricPrefix) -> Self](hkunit/voltunit(with:).md)
+### Electrical potential difference
+- [class func voltUnit(with: HKMetricPrefix) -> Self](./voltunit%28with%29.md)
   Returns a HealthKit unit for measuring the electrical potential difference in volts with the provided prefix.
 
 

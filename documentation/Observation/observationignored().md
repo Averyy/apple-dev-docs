@@ -1,7 +1,8 @@
 # ObservationIgnored()
 
 **Framework**: Observation  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Disables observation tracking of a property.
 

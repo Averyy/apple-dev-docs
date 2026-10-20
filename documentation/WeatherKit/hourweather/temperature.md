@@ -1,7 +1,8 @@
 # temperature
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The temperature during the hour.
 
@@ -22,11 +23,12 @@ var temperature: Measurement<UnitTemperature>
 
 ## See Also
 
-- [var apparentTemperature: Measurement<UnitTemperature>](hourweather/apparenttemperature.md)
+### Getting temperature and humidity
+- [var apparentTemperature: Measurement<UnitTemperature>](./apparenttemperature.md)
   The apparent, or “feels like” temperature during the hour.
-- [var humidity: Double](hourweather/humidity.md)
+- [var humidity: Double](./humidity.md)
   The humidity for the hour.
-- [var dewPoint: Measurement<UnitTemperature>](hourweather/dewpoint.md)
+- [var dewPoint: Measurement<UnitTemperature>](./dewpoint.md)
   The amount of moisture in the air.
 
 

@@ -1,7 +1,8 @@
 # HwDeactivate
 
 **Framework**: USBSerialDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Closes the communication channel to the device.
 
@@ -10,13 +11,13 @@ Closes the communication channel to the device.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t HwDeactivate();
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -24,7 +25,8 @@ Override this method and use it to close the connection to your device’s hardw
 
 ## See Also
 
-- [HwActivate](iouserusbserial/hwactivate.md)
+### Activating and Deactivating the Service
+- [HwActivate](./hwactivate.md)
   Opens the communication channel to the device.
 
 

@@ -1,7 +1,8 @@
 # copy
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Copy the data to the modified view.
 

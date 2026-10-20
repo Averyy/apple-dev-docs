@@ -1,12 +1,15 @@
 # CLKComplicationTemplateGraphicRectangularLargeImage
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A template for displaying a large rectangle containing header text and an image.
 
 **Availability**:
-- watchOS 5.0+
+- watchOS 5.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
@@ -14,11 +17,15 @@ A template for displaying a large rectangle containing header text and an image.
 class CLKComplicationTemplateGraphicRectangularLargeImage
 ```
 
+```objc
+@interface CLKComplicationTemplateGraphicRectangularLargeImage : CLKComplicationTemplate
+```
+
 #### Overview
 
-This template belongs to the [`CLKComplicationFamily.graphicRectangular`](clkcomplicationfamily/graphicrectangular.md) family. [`Figure 1`](clkcomplicationtemplategraphicrectangularlargeimage#3034025.md) shows the layout of the image and where the template might appear on the clock face.
+This template belongs to the [`CLKComplicationFamily.graphicRectangular`](./clkcomplicationfamily/graphicrectangular.md) family. [Figure 1](./clkcomplicationtemplategraphicrectangularlargeimage.md#3034025) shows the layout of the image and where the template might appear on the clock face.
 
-![Diagram of a watch face showing the layout of a rectangular large image template.](/images/com.apple.clockkit/media-3034025@2x.png)
+![Diagram of a watch face showing the layout of a rectangular large image template.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3034025@2x.png)
 
 The table below lists the dimensions of the image you use in this template. All dimensions are in pixels. All images must be specified as @2x images for display on Apple Watch, so the point-based dimensions are half the listed size.
 
@@ -36,34 +43,35 @@ Instead of providing multiple images with different resolutions, you can provide
 ## Topics
 
 ### Creating the Template
-- [init(textProvider: CLKTextProvider, imageProvider: CLKFullColorImageProvider)](clkcomplicationtemplategraphicrectangularlargeimage/init(textprovider:imageprovider:).md)
+- [init(textProvider: CLKTextProvider, imageProvider: CLKFullColorImageProvider)](./clkcomplicationtemplategraphicrectangularlargeimage/init%28textprovider,imageprovider%29.md)
   Creates a new template with a text provider and an image provider.
 ### Setting the Complication Data
-- [var textProvider: CLKTextProvider](clkcomplicationtemplategraphicrectangularlargeimage/textprovider.md)
+- [var textProvider: CLKTextProvider](./clkcomplicationtemplategraphicrectangularlargeimage/textprovider.md)
   The header text to display in the complication.
-- [var imageProvider: CLKFullColorImageProvider](clkcomplicationtemplategraphicrectangularlargeimage/imageprovider.md)
+- [var imageProvider: CLKFullColorImageProvider](./clkcomplicationtemplategraphicrectangularlargeimage/imageprovider.md)
   The image to display.
 
 ## Relationships
 
 ### Inherits From
-- [CLKComplicationTemplate](clkcomplicationtemplate.md)
+- [CLKComplicationTemplate](./clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CLKComplicationTemplateGraphicRectangularLargeView](clkcomplicationtemplategraphicrectangularlargeview.md)
+### Large Images and Views
+- [class CLKComplicationTemplateGraphicRectangularLargeView](./clkcomplicationtemplategraphicrectangularlargeview.md)
   A template for displaying a large rectangle containing header text and a SwiftUI view.
-- [class CLKComplicationTemplateGraphicRectangularFullImage](clkcomplicationtemplategraphicrectangularfullimage.md)
+- [class CLKComplicationTemplateGraphicRectangularFullImage](./clkcomplicationtemplategraphicrectangularfullimage.md)
   A template for displaying a full-color image that fills the complication.
-- [class CLKComplicationTemplateGraphicRectangularFullView](clkcomplicationtemplategraphicrectangularfullview.md)
+- [class CLKComplicationTemplateGraphicRectangularFullView](./clkcomplicationtemplategraphicrectangularfullview.md)
   A template for displaying a SwiftUI view that fills the entire template.
 
 

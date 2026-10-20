@@ -1,7 +1,8 @@
 # name
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contact’s name.
 
@@ -16,13 +17,18 @@ The contact’s name.
 var name: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * name;
+```
+
 ## See Also
 
-- [var image: UIImage](cpcontact/image.md)
+### Configuring the Contact’s Attributes
+- [var image: UIImage](./image.md)
   The contact’s image.
-- [var subtitle: String?](cpcontact/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   A subtitle that the template displays in addition to the contact’s name.
-- [var informativeText: String?](cpcontact/informativetext.md)
+- [var informativeText: String?](./informativetext.md)
   Additional text that the template displays.
 
 

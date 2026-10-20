@@ -1,21 +1,22 @@
 # AppAssetLibraryPlacementVideoRelationships.Video
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryPlacementVideoRelationships.Video
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppAssetLibraryPlacementVideoRelationships.Video.Data](appassetlibraryplacementvideorelationships/video-data.dictionary/data-data.dictionary.md)
+- [object AppAssetLibraryPlacementVideoRelationships.Video.Data](./video-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

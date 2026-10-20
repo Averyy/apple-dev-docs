@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Assigns a sampler state to an entry in the mesh shader argument table.
@@ -20,22 +21,27 @@ Assigns a sampler state to an entry in the mesh shader argument table.
 func setMeshSamplerState(_ sampler: (any MTLSamplerState)?, index: Int)
 ```
 
+```objc
+- (void) setMeshSamplerState:(id<MTLSamplerState>) sampler atIndex:(NSUInteger) index;
+```
+
 #### Discussion
 
 By default, the sampler state at each index is `nil`.
 
 ## Parameters
 
-- `sampler`: An [`MTLSamplerState`](mtlsamplerstate.md) instance the command assigns to an entry in the mesh shader argument table for sampler states.
+- `sampler`: An [`MTLSamplerState`](../mtlsamplerstate.md) instance the command assigns to an entry in the mesh shader argument table for sampler states.
 - `index`: An integer that represents the entry in the mesh shader argument table for sampler states that stores a record of `sampler`.
 
 ## See Also
 
-- [func setMeshSamplerState((any MTLSamplerState)?, lodMinClamp: Float, lodMaxClamp: Float, index: Int)](mtlrendercommandencoder/setmeshsamplerstate(_:lodminclamp:lodmaxclamp:index:).md)
+### Assigning sampler states for mesh shaders
+- [func setMeshSamplerState((any MTLSamplerState)?, lodMinClamp: Float, lodMaxClamp: Float, index: Int)](./setmeshsamplerstate%28_,lodminclamp,lodmaxclamp,index%29.md)
   Assigns a sampler state and clamp values to an entry in the mesh shader argument table.
-- [func setMeshSamplerStates([(any MTLSamplerState)?], range: Range<Int>)](mtlrendercommandencoder/setmeshsamplerstates(_:range:).md)
+- [func setMeshSamplerStates([(any MTLSamplerState)?], range: Range<Int>)](./setmeshsamplerstates%28_,range%29.md)
   Assigns multiple sampler states to a range of entries in the mesh shader argument table.
-- [func setMeshSamplerStates([(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)](mtlrendercommandencoder/setmeshsamplerstates(_:lodminclamps:lodmaxclamps:range:).md)
+- [func setMeshSamplerStates([(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)](./setmeshsamplerstates%28_,lodminclamps,lodmaxclamps,range%29.md)
   Assigns multiple sampler states and clamp values to a range of entries in the mesh shader argument table.
 
 

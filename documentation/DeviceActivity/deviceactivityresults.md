@@ -1,7 +1,8 @@
 # DeviceActivityResults
 
 **Framework**: Device Activity  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence of filtered device activity results.
 
@@ -19,22 +20,23 @@ struct DeviceActivityResults<Element>
 ## Topics
 
 ### Classes
-- [DeviceActivityResults.Iterator](deviceactivityresults/iterator.md)
+- [DeviceActivityResults.Iterator](./deviceactivityresults/iterator.md)
   An asynchronous iterator for filtered device activity.
 ### Instance Methods
-- [func makeAsyncIterator() -> DeviceActivityResults<Element>.Iterator<Element>](deviceactivityresults/makeasynciterator.md)
+- [func makeAsyncIterator() -> DeviceActivityResults<Element>.Iterator<Element>](./deviceactivityresults/makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../Swift/asyncsequence.md)
 
 ## See Also
 
-- [struct DeviceActivityFilter](deviceactivityfilter.md)
+### Filter activity data
+- [struct DeviceActivityFilter](./deviceactivityfilter.md)
   A type that filters the device activity data to include in a report.
-- [struct DeviceActivityData](deviceactivitydata.md)
+- [struct DeviceActivityData](./deviceactivitydata.md)
   Activity data for a person on a specific device.
 
 

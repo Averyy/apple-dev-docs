@@ -1,15 +1,20 @@
 # NSBrowser.ColumnResizingType.autoColumnResizing
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case autoColumnResizing
+```
+
+```c
+NSBrowserAutoColumnResizing
 ```
 
 #### Discussion
@@ -18,8 +23,9 @@ All columns have the same width, calculated using a combination of the minimum c
 
 ## See Also
 
-- [NSBrowser.ColumnResizingType.noColumnResizing](nsbrowser/columnresizingtype-swift.enum/nocolumnresizing.md)
-- [NSBrowser.ColumnResizingType.userColumnResizing](nsbrowser/columnresizingtype-swift.enum/usercolumnresizing.md)
+### Constants
+- [NSBrowser.ColumnResizingType.noColumnResizing](./nocolumnresizing.md)
+- [NSBrowser.ColumnResizingType.userColumnResizing](./usercolumnresizing.md)
 
 
 ---

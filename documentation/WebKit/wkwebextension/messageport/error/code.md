@@ -1,9 +1,10 @@
 # WKWebExtension.MessagePort.Error.Code
 
 **Framework**: WebKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Constants that indicate errors in the [`WKWebExtension.MessagePort`](wkwebextension/messageport.md) domain.
+Constants that indicate errors in the [`WKWebExtension.MessagePort`](../../messageport.md) domain.
 
 **Availability**:
 - iOS 18.4+
@@ -18,43 +19,48 @@ Constants that indicate errors in the [`WKWebExtension.MessagePort`](wkwebextens
 enum Code
 ```
 
+```c
+enum WKWebExtensionMessagePortError : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [WKWebExtension.MessagePort.Error.Code.messageInvalid](wkwebextension/messageport/error/code/messageinvalid.md)
+- [WKWebExtension.MessagePort.Error.Code.messageInvalid](./code/messageinvalid.md)
   Indicates that the message is invalid.
-- [WKWebExtension.MessagePort.Error.Code.notConnected](wkwebextension/messageport/error/code/notconnected.md)
+- [WKWebExtension.MessagePort.Error.Code.notConnected](./code/notconnected.md)
   Indicates that the message port is disconnected.
-- [WKWebExtension.MessagePort.Error.Code.unknown](wkwebextension/messageport/error/code/unknown.md)
+- [WKWebExtension.MessagePort.Error.Code.unknown](./code/unknown.md)
   Indicates that an unknown error occurred.
 ### Initializers
-- [init?(rawValue: Int)](wkwebextension/messageport/error/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
   Creates an error code from a raw value you provide.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../../../Swift/bitwisecopyable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [RawRepresentable](../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [WKWebExtension.Error.Code](wkwebextension/error/code.md)
-  Constants that indicate errors in the [`WKWebExtension`](wkwebextension.md) domain.
-- [WKWebExtensionContext.Error.Code](wkwebextensioncontext/error/code.md)
-  Constants that indicate errors in the [`WKWebExtensionContext`](wkwebextensioncontext.md) domain.
-- [WKWebExtension.DataRecord.Error.Code](wkwebextension/datarecord/error/code.md)
-  Constants that indicate errors in the [`WKWebExtension.DataRecord`](wkwebextension/datarecord.md) domain.
-- [WKWebExtension.DataRecord.Error](wkwebextension/datarecord/error.md)
-  Constants that indicate errors in the [`WKWebExtension.DataRecord`](wkwebextension/datarecord.md) domain.
-- [WKWebExtension.MatchPattern.Error.Code](wkwebextension/matchpattern/error/code.md)
-  Constants that indicate errors in the [`WKWebExtension.MatchPattern`](wkwebextension/matchpattern.md) domain.
-- [WKWebExtension.MessagePort.Error](wkwebextension/messageport/error.md)
-  Constants that indicate errors in the [`WKWebExtension.MessagePort`](wkwebextension/messageport.md) domain.
+### Web extension errors
+- [WKWebExtension.Error.Code](../../error/code.md)
+  Constants that indicate errors in the [`WKWebExtension`](../../../wkwebextension.md) domain.
+- [WKWebExtensionContext.Error.Code](../../../wkwebextensioncontext/error/code.md)
+  Constants that indicate errors in the [`WKWebExtensionContext`](../../../wkwebextensioncontext.md) domain.
+- [WKWebExtension.DataRecord.Error.Code](../../datarecord/error/code.md)
+  Constants that indicate errors in the [`WKWebExtension.DataRecord`](../../datarecord.md) domain.
+- [WKWebExtension.DataRecord.Error](../../datarecord/error.md)
+  Constants that indicate errors in the [`WKWebExtension.DataRecord`](../../datarecord.md) domain.
+- [WKWebExtension.MatchPattern.Error.Code](../../matchpattern/error/code.md)
+  Constants that indicate errors in the [`WKWebExtension.MatchPattern`](../../matchpattern.md) domain.
+- [WKWebExtension.MessagePort.Error](../error.md)
+  Constants that indicate errors in the [`WKWebExtension.MessagePort`](../../messageport.md) domain.
 
 
 ---

@@ -1,7 +1,8 @@
 # CGImageMetadataRegisterNamespaceForPrefix(_:_:_:_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Registers the specified namespace and prefix with the metadata object.
 
@@ -20,13 +21,17 @@ Registers the specified namespace and prefix with the metadata object.
 func CGImageMetadataRegisterNamespaceForPrefix(_ metadata: CGMutableImageMetadata, _ xmlns: CFString, _ prefix: CFString, _ err: UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool
 ```
 
+```c
+extern bool CGImageMetadataRegisterNamespaceForPrefix(CGMutableImageMetadataRef metadata, CFStringRef xmlns, CFStringRef prefix, CFErrorRef*err);
+```
+
 #### Return Value
 
 `true` if registration of the namespace was successful, or `false` if it wasn’t.
 
 #### Discussion
 
-All tags you add to a [`CGMutableImageMetadata`](cgmutableimagemetadata.md) object must belong to known namespaces. When you encounter an unrecognized prefix in a metadata path, call this function to register the prefix before you add the corresponding tag.
+All tags you add to a [`CGMutableImageMetadata`](./cgmutableimagemetadata.md) object must belong to known namespaces. When you encounter an unrecognized prefix in a metadata path, call this function to register the prefix before you add the corresponding tag.
 
 You don’t need to register the standard metadata spaces, or any metadata spaces that are already present in the image’s metadata. Register only the namespaces you need to support additional metadata tags.
 

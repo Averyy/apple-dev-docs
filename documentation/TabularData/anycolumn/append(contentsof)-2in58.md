@@ -1,7 +1,8 @@
 # append(contentsOf:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends the contents of another column to the column.
 
@@ -26,9 +27,10 @@ mutating func append(contentsOf other: AnyColumn)
 
 ## See Also
 
-- [func append(Any?)](anycolumn/append(_:).md)
+### Adding Elements
+- [func append(Any?)](./append%28_%29.md)
   Appends an optional element to the column.
-- [func append(contentsOf: AnyColumnSlice)](anycolumn/append(contentsof:)-az5b.md)
+- [func append(contentsOf: AnyColumnSlice)](./append%28contentsof%29-az5b.md)
   Appends the contents of a column slice to the column.
 
 

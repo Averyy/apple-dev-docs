@@ -1,7 +1,8 @@
 # httpCookieStorage
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cookie store for storing cookies within this session.
 
@@ -20,23 +21,28 @@ The cookie store for storing cookies within this session.
 var httpCookieStorage: HTTPCookieStorage? { get set }
 ```
 
+```objc
+@property (retain, nullable) NSHTTPCookieStorage * HTTPCookieStorage;
+```
+
 #### Discussion
 
 This property determines the cookie storage object used by all tasks within sessions based on this configuration.
 
 To disable cookie storage, set this property to `nil`.
 
-For default and background sessions, the default value is the [`shared`](httpcookiestorage/shared.md) cookie storage object.
+For default and background sessions, the default value is the [`shared`](../httpcookiestorage/shared.md) cookie storage object.
 
-For [`ephemeral`](urlsessionconfiguration/ephemeral.md) sessions, the default value is a private cookie storage object that stores data in memory only, and is destroyed when you invalidate the session.
+For [`ephemeral`](./ephemeral.md) sessions, the default value is a private cookie storage object that stores data in memory only, and is destroyed when you invalidate the session.
 
 ## See Also
 
-- [var httpCookieAcceptPolicy: HTTPCookie.AcceptPolicy](urlsessionconfiguration/httpcookieacceptpolicy.md)
+### Setting cookie policies
+- [var httpCookieAcceptPolicy: HTTPCookie.AcceptPolicy](./httpcookieacceptpolicy.md)
   A policy constant that determines when cookies should be accepted.
-- [var httpShouldSetCookies: Bool](urlsessionconfiguration/httpshouldsetcookies.md)
+- [var httpShouldSetCookies: Bool](./httpshouldsetcookies.md)
   A Boolean value that determines whether requests should contain cookies from the cookie store.
-- [class HTTPCookie](httpcookie.md)
+- [class HTTPCookie](../httpcookie.md)
   A representation of an HTTP cookie.
 
 

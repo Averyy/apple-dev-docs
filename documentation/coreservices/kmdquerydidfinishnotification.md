@@ -1,7 +1,8 @@
 # kMDQueryDidFinishNotification
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Posted to indicate that the query has finished the initial result-gathering phase. 
 
@@ -12,6 +13,10 @@ Posted to indicate that the query has finished the initial result-gathering phas
 
 ```swift
 let kMDQueryDidFinishNotification: CFString!
+```
+
+```c
+const CFStringRef kMDQueryDidFinishNotification;
 ```
 
 

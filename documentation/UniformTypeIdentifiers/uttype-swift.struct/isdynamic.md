@@ -1,7 +1,8 @@
 # isDynamic
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system generates the type.
 
@@ -28,13 +29,14 @@ The system either declares a type or dynamically generates a type, but not both.
 
 ## See Also
 
-- [var isDeclared: Bool](uttype-swift.struct/isdeclared.md)
+### Obtaining additional type information
+- [var isDeclared: Bool](./isdeclared.md)
   A Boolean value that indicates whether the system declares the type.
-- [var isPublic: Bool](uttype-swift.struct/ispublic.md)
+- [var isPublic: Bool](./ispublic.md)
   A Boolean value that indicates whether the type is in the public domain.
-- [var referenceURL: URL?](uttype-swift.struct/referenceurl.md)
+- [var referenceURL: URL?](./referenceurl.md)
   The reference URL for the type.
-- [var version: Int?](uttype-swift.struct/version.md)
+- [var version: Int?](./version.md)
   The type’s version, if available.
 
 

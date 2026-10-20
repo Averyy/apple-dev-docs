@@ -1,7 +1,8 @@
 # markerTintColor
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background color of the marker balloon.
 
@@ -15,9 +16,30 @@ The background color of the marker balloon.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+@NSCopying
+var markerTintColor: UIColor? { get set }
+```
+
+*macOS*
+
 ```swift
 @NSCopying
 var markerTintColor: NSColor? { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, nullable) UIColor * markerTintColor;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, copy, nullable) NSColor * markerTintColor;
 ```
 
 #### Discussion

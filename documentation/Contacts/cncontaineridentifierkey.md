@@ -1,7 +1,8 @@
 # CNContainerIdentifierKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The identifier key of the container.
 
@@ -19,15 +20,20 @@ The identifier key of the container.
 let CNContainerIdentifierKey: String
 ```
 
+```c
+extern NSString * const CNContainerIdentifierKey;
+```
+
 #### Discussion
 
 This key represents the container identifier property for KVC/KVO usage. This property is always fetched.
 
 ## See Also
 
-- [let CNContainerNameKey: String](cncontainernamekey.md)
+### Getting Container-Related Keys
+- [let CNContainerNameKey: String](./cncontainernamekey.md)
   The name of the container.
-- [let CNContainerTypeKey: String](cncontainertypekey.md)
+- [let CNContainerTypeKey: String](./cncontainertypekey.md)
   The type of the container.
 
 

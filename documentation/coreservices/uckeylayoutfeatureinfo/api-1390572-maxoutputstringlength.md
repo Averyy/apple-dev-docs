@@ -1,7 +1,8 @@
 # maxOutputStringLength
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 32-bit integer specifying the longest possible output string of Unicode characters to be produced by this `'uchr'` resource.
 
@@ -13,6 +14,10 @@ An unsigned 32-bit integer specifying the longest possible output string of Unic
 
 ```swift
 var maxOutputStringLength: UInt32
+```
+
+```c
+UInt32 maxOutputStringLength;
 ```
 
 

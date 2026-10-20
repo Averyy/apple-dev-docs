@@ -1,7 +1,8 @@
 # init(playlist:startingAt:)
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a playback queue with a playlist and a specific playlist entry for the player to start playback.
 

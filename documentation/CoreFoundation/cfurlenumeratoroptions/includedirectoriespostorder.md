@@ -1,18 +1,19 @@
 # includeDirectoriesPostOrder
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-If provided along with the [`descendRecursively`](cfurlenumeratoroptions/descendrecursively.md) option, the recursive enumerator returns a directory’s URL after returning the URLs of the directory’s descendents.
+If provided along with the [`descendRecursively`](./descendrecursively.md) option, the recursive enumerator returns a directory’s URL after returning the URLs of the directory’s descendents.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,22 +21,27 @@ If provided along with the [`descendRecursively`](cfurlenumeratoroptions/descend
 static var includeDirectoriesPostOrder: CFURLEnumeratorOptions { get }
 ```
 
+```c
+kCFURLEnumeratorIncludeDirectoriesPostOrder
+```
+
 #### Discussion
 
-A recursive post-order enumerator returns [`CFURLEnumeratorResult.directoryPostOrderSuccess`](cfurlenumeratorresult/directorypostordersuccess.md) when it returns a directory’s URL after returning the directory’s descendents.
+A recursive post-order enumerator returns [`CFURLEnumeratorResult.directoryPostOrderSuccess`](../cfurlenumeratorresult/directorypostordersuccess.md) when it returns a directory’s URL after returning the directory’s descendents.
 
 ## See Also
 
-- [static var descendRecursively: CFURLEnumeratorOptions](cfurlenumeratoroptions/descendrecursively.md)
+### Constants
+- [static var descendRecursively: CFURLEnumeratorOptions](./descendrecursively.md)
   The enumerator recurses into each subdirectory enumerated.
-- [static var skipInvisibles: CFURLEnumeratorOptions](cfurlenumeratoroptions/skipinvisibles.md)
+- [static var skipInvisibles: CFURLEnumeratorOptions](./skipinvisibles.md)
   The enumerator skips “hidden” or “invisible” objects.
-- [static var generateFileReferenceURLs: CFURLEnumeratorOptions](cfurlenumeratoroptions/generatefilereferenceurls.md)
+- [static var generateFileReferenceURLs: CFURLEnumeratorOptions](./generatefilereferenceurls.md)
   The enumerator generates file reference URLs instead of file path URLs.
-- [static var skipPackageContents: CFURLEnumeratorOptions](cfurlenumeratoroptions/skippackagecontents.md)
+- [static var skipPackageContents: CFURLEnumeratorOptions](./skippackagecontents.md)
   The enumerator skips package directory contents.
-- [static var includeDirectoriesPreOrder: CFURLEnumeratorOptions](cfurlenumeratoroptions/includedirectoriespreorder.md)
-  If provided along with the [`descendRecursively`](cfurlenumeratoroptions/descendrecursively.md) option, the recursive enumerator returns a directory’s URL before returning the URLs of the directory’s descendents.
+- [static var includeDirectoriesPreOrder: CFURLEnumeratorOptions](./includedirectoriespreorder.md)
+  If provided along with the [`descendRecursively`](./descendrecursively.md) option, the recursive enumerator returns a directory’s URL before returning the URLs of the directory’s descendents.
 
 
 ---

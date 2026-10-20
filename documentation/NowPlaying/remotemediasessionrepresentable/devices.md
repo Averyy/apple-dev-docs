@@ -2,6 +2,7 @@
 
 **Framework**: Now Playing  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The devices currently playing as part of this session.
@@ -21,7 +22,7 @@ var devices: [MediaDevice] { get }
 
 ## Mentions
 
-- [Publishing remote media sessions](publishing-remote-media-sessions.md)
+- [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # degrees
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The degrees unit of angle.
 
@@ -21,17 +22,22 @@ The degrees unit of angle.
 class var degrees: UnitAngle { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitAngle * degrees;
+```
+
 ## See Also
 
-- [class var arcMinutes: UnitAngle](unitangle/arcminutes.md)
+### Accessing Predefined Units
+- [class var arcMinutes: UnitAngle](./arcminutes.md)
   The arc minutes unit of angle.
-- [class var arcSeconds: UnitAngle](unitangle/arcseconds.md)
+- [class var arcSeconds: UnitAngle](./arcseconds.md)
   The arc seconds unit of angle.
-- [class var radians: UnitAngle](unitangle/radians.md)
+- [class var radians: UnitAngle](./radians.md)
   The radians unit of angle.
-- [class var gradians: UnitAngle](unitangle/gradians.md)
+- [class var gradians: UnitAngle](./gradians.md)
   The gradians unit of angle.
-- [class var revolutions: UnitAngle](unitangle/revolutions.md)
+- [class var revolutions: UnitAngle](./revolutions.md)
   The revolutions unit of angle.
 
 

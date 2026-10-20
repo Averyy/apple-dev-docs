@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The predicate the expectation evaluates.
 
@@ -12,9 +13,14 @@ The predicate the expectation evaluates.
 var predicate: NSPredicate { get }
 ```
 
+```objc
+@property (copy, readonly) NSPredicate * predicate;
+```
+
 ## See Also
 
-- [var object: Any?](xctnspredicateexpectation/object.md)
+### Expectation Properties
+- [var object: Any?](./object.md)
   An optional object against which the predicate evaluates.
 
 

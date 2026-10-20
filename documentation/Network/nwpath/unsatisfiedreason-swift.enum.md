@@ -1,7 +1,8 @@
 # NWPath.UnsatisfiedReason
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 14.2+
@@ -21,19 +22,19 @@ enum UnsatisfiedReason
 ## Topics
 
 ### Enumeration Cases
-- [NWPath.UnsatisfiedReason.cellularDenied](nwpath/unsatisfiedreason-swift.enum/cellulardenied.md)
-- [NWPath.UnsatisfiedReason.localNetworkDenied](nwpath/unsatisfiedreason-swift.enum/localnetworkdenied.md)
-- [NWPath.UnsatisfiedReason.notAvailable](nwpath/unsatisfiedreason-swift.enum/notavailable.md)
-- [NWPath.UnsatisfiedReason.vpnInactive](nwpath/unsatisfiedreason-swift.enum/vpninactive.md)
-- [NWPath.UnsatisfiedReason.wifiDenied](nwpath/unsatisfiedreason-swift.enum/wifidenied.md)
+- [NWPath.UnsatisfiedReason.cellularDenied](./unsatisfiedreason-swift.enum/cellulardenied.md)
+- [NWPath.UnsatisfiedReason.localNetworkDenied](./unsatisfiedreason-swift.enum/localnetworkdenied.md)
+- [NWPath.UnsatisfiedReason.notAvailable](./unsatisfiedreason-swift.enum/notavailable.md)
+- [NWPath.UnsatisfiedReason.vpnInactive](./unsatisfiedreason-swift.enum/vpninactive.md)
+- [NWPath.UnsatisfiedReason.wifiDenied](./unsatisfiedreason-swift.enum/wifidenied.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # passkey
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The passkey identity type.
 
@@ -18,11 +19,16 @@ The passkey identity type.
 static var passkey: ASCredentialIdentityStore.IdentityTypes { get }
 ```
 
+```c
+ASCredentialIdentityTypesPasskey
+```
+
 ## See Also
 
-- [static var password: ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes/password.md)
+### Working with identity types
+- [static var password: ASCredentialIdentityStore.IdentityTypes](./password.md)
   The password identity type.
-- [static var oneTimeCode: ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes/onetimecode.md)
+- [static var oneTimeCode: ASCredentialIdentityStore.IdentityTypes](./onetimecode.md)
   The one-time code identity type.
 
 

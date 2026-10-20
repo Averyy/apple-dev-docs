@@ -1,7 +1,8 @@
 # sourceFrame
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 ```swift
 @NSCopying
 var sourceFrame: WKFrameInfo { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) WKFrameInfo * sourceFrame;
 ```
 
 #### Discussion

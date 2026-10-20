@@ -1,21 +1,23 @@
 # wTotalLength
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint16_t wTotalLength;
 ```
 
 ## See Also
 
-- [bLength](iousbconfigurationdescheader/blength.md)
-- [bDescriptorType](iousbconfigurationdescheader/bdescriptortype.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
+- [bDescriptorType](./bdescriptortype.md)
 
 
 ---

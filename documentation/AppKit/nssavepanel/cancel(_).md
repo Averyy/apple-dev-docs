@@ -1,12 +1,13 @@
 # cancel(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The action method that the panel calls when the user clicks the Cancel button.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ The action method that the panel calls when the user clicks the Cancel button.
 func cancel(_ sender: Any?)
 ```
 
+```objc
+- (void) cancel:(id) sender;
+```
+
 ## Parameters
 
 - `sender`: The `NSSavePanel` object that contains the Cancel button.
 
 ## See Also
 
-- [func ok(Any?)](nssavepanel/ok(_:).md)
+### Handling Actions
+- [func ok(Any?)](./ok%28_%29.md)
   The action method that the panel calls when the user clicks the OK button.
 
 

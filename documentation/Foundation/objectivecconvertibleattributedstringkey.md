@@ -1,7 +1,8 @@
 # ObjectiveCConvertibleAttributedStringKey
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines Objective-C interoperability with an attribute key’s value type.
 
@@ -24,40 +25,40 @@ protocol ObjectiveCConvertibleAttributedStringKey : AttributedStringKey
 
 Conform to this protocol to allow your attributed string key to customize its Objective-C conversion behavior. This allows you to define an Objective-C value type and provide methods to convert to and from this type.
 
-Attributed string keys that don’t conform to this protocol cast the value to [`AnyObject`](https://developer.apple.com/documentation/swift/anyobject) before converting to Objective-C. When converting from Objective-C, the value casts to the key’s [`Value`](attributedstringkey/value.md) type. In cases where Swift types bridge automatically to Objective-C types, like [`String`](https://developer.apple.com/documentation/swift/string) to [`NSString`](nsstring.md), this default behavior is adequate. But for unbridged value types, you need to conform to this protocol and provide the conversion methods.
+Attributed string keys that don’t conform to this protocol cast the value to [`AnyObject`](../Swift/anyobject.md) before converting to Objective-C. When converting from Objective-C, the value casts to the key’s [`Value`](./attributedstringkey/value.md) type. In cases where Swift types bridge automatically to Objective-C types, like [`String`](../Swift/string.md) to [`NSString`](./nsstring.md), this default behavior is adequate. But for unbridged value types, you need to conform to this protocol and provide the conversion methods.
 
 ## Topics
 
 ### Accessing the Objective-C Type
-- [associatedtype ObjectiveCValue : NSObject](objectivecconvertibleattributedstringkey/objectivecvalue.md)
+- [associatedtype ObjectiveCValue : NSObject](./objectivecconvertibleattributedstringkey/objectivecvalue.md)
   The Objective-C type that corresponds to this key’s value type.
 ### Converting between Swift and Objective-C Types
-- [static func objectiveCValue(for: Self.Value) throws -> Self.ObjectiveCValue](objectivecconvertibleattributedstringkey/objectivecvalue(for:).md)
+- [static func objectiveCValue(for: Self.Value) throws -> Self.ObjectiveCValue](./objectivecconvertibleattributedstringkey/objectivecvalue%28for%29.md)
   Returns an Objective-C typed value for a given value of this key’s type.
-- [static func value(for: Self.ObjectiveCValue) throws -> Self.Value](objectivecconvertibleattributedstringkey/value(for:).md)
+- [static func value(for: Self.ObjectiveCValue) throws -> Self.Value](./objectivecconvertibleattributedstringkey/value%28for%29.md)
   Returns a value of this key’s type for a given Objective-C value.
 
 ## Relationships
 
 ### Inherits From
-- [AttributedStringKey](attributedstringkey.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](./attributedstringkey.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [AttributeScopes.AccessibilityAttributes.AdjustedPitchAttribute](attributescopes/accessibilityattributes/adjustedpitchattribute.md)
-- [AttributeScopes.AccessibilityAttributes.AnnouncementPriorityAttribute](attributescopes/accessibilityattributes/announcementpriorityattribute.md)
-- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute](attributescopes/accessibilityattributes/headinglevelattribute.md)
-- [AttributeScopes.AccessibilityAttributes.TextualContextAttribute](attributescopes/accessibilityattributes/textualcontextattribute.md)
-- [AttributeScopes.AppKitAttributes.AdaptiveImageGlyphAttribute](attributescopes/appkitattributes/adaptiveimageglyphattribute.md)
-- [AttributeScopes.AppKitAttributes.StrikethroughStyleAttribute](attributescopes/appkitattributes/strikethroughstyleattribute.md)
-- [AttributeScopes.AppKitAttributes.UnderlineStyleAttribute](attributescopes/appkitattributes/underlinestyleattribute.md)
-- [AttributeScopes.FoundationAttributes.InflectionAlternativeAttribute](attributescopes/foundationattributes/inflectionalternativeattribute.md)
-- [AttributeScopes.FoundationAttributes.InlinePresentationIntentAttribute](attributescopes/foundationattributes/inlinepresentationintentattribute.md)
-- [AttributeScopes.FoundationAttributes.LinkAttribute](attributescopes/foundationattributes/linkattribute.md)
-- [AttributeScopes.FoundationAttributes.ListItemDelimiterAttribute](attributescopes/foundationattributes/listitemdelimiterattribute.md)
-- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute](attributescopes/foundationattributes/personnamecomponentattribute.md)
-- [AttributeScopes.UIKitAttributes.AdaptiveImageGlyphAttribute](attributescopes/uikitattributes/adaptiveimageglyphattribute.md)
-- [AttributeScopes.UIKitAttributes.StrikethroughStyleAttribute](attributescopes/uikitattributes/strikethroughstyleattribute.md)
-- [AttributeScopes.UIKitAttributes.UnderlineStyleAttribute](attributescopes/uikitattributes/underlinestyleattribute.md)
+- [AttributeScopes.AccessibilityAttributes.AdjustedPitchAttribute](./attributescopes/accessibilityattributes/adjustedpitchattribute.md)
+- [AttributeScopes.AccessibilityAttributes.AnnouncementPriorityAttribute](./attributescopes/accessibilityattributes/announcementpriorityattribute.md)
+- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute](./attributescopes/accessibilityattributes/headinglevelattribute.md)
+- [AttributeScopes.AccessibilityAttributes.TextualContextAttribute](./attributescopes/accessibilityattributes/textualcontextattribute.md)
+- [AttributeScopes.AppKitAttributes.AdaptiveImageGlyphAttribute](./attributescopes/appkitattributes/adaptiveimageglyphattribute.md)
+- [AttributeScopes.AppKitAttributes.StrikethroughStyleAttribute](./attributescopes/appkitattributes/strikethroughstyleattribute.md)
+- [AttributeScopes.AppKitAttributes.UnderlineStyleAttribute](./attributescopes/appkitattributes/underlinestyleattribute.md)
+- [AttributeScopes.FoundationAttributes.InflectionAlternativeAttribute](./attributescopes/foundationattributes/inflectionalternativeattribute.md)
+- [AttributeScopes.FoundationAttributes.InlinePresentationIntentAttribute](./attributescopes/foundationattributes/inlinepresentationintentattribute.md)
+- [AttributeScopes.FoundationAttributes.LinkAttribute](./attributescopes/foundationattributes/linkattribute.md)
+- [AttributeScopes.FoundationAttributes.ListItemDelimiterAttribute](./attributescopes/foundationattributes/listitemdelimiterattribute.md)
+- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute](./attributescopes/foundationattributes/personnamecomponentattribute.md)
+- [AttributeScopes.UIKitAttributes.AdaptiveImageGlyphAttribute](./attributescopes/uikitattributes/adaptiveimageglyphattribute.md)
+- [AttributeScopes.UIKitAttributes.StrikethroughStyleAttribute](./attributescopes/uikitattributes/strikethroughstyleattribute.md)
+- [AttributeScopes.UIKitAttributes.UnderlineStyleAttribute](./attributescopes/uikitattributes/underlinestyleattribute.md)
 
 
 ---

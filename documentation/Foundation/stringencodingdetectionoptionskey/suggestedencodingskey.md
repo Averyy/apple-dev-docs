@@ -1,7 +1,8 @@
 # suggestedEncodingsKey
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 8.0+
@@ -18,18 +19,23 @@
 static let suggestedEncodingsKey: StringEncodingDetectionOptionsKey
 ```
 
+```c
+extern NSStringEncodingDetectionOptionsKey const NSStringEncodingDetectionSuggestedEncodingsKey;
+```
+
 #### Discussion
 
 Option specifying any suggested string encodings. Use this when you have prior knowledge about the likely or expected encoding. The corresponding value for this key is an `NSArray` of `NSNumber` objects that contain `NSStringEncoding` values. If this option is unspecified, all allowed encodings are evaluated with equal consideration.
 
 ## See Also
 
-- [static let allowLossyKey: StringEncodingDetectionOptionsKey](stringencodingdetectionoptionskey/allowlossykey.md)
-- [static let disallowedEncodingsKey: StringEncodingDetectionOptionsKey](stringencodingdetectionoptionskey/disallowedencodingskey.md)
-- [static let fromWindowsKey: StringEncodingDetectionOptionsKey](stringencodingdetectionoptionskey/fromwindowskey.md)
-- [static let likelyLanguageKey: StringEncodingDetectionOptionsKey](stringencodingdetectionoptionskey/likelylanguagekey.md)
-- [static let lossySubstitutionKey: StringEncodingDetectionOptionsKey](stringencodingdetectionoptionskey/lossysubstitutionkey.md)
-- [static let useOnlySuggestedEncodingsKey: StringEncodingDetectionOptionsKey](stringencodingdetectionoptionskey/useonlysuggestedencodingskey.md)
+### Type Properties
+- [static let allowLossyKey: StringEncodingDetectionOptionsKey](./allowlossykey.md)
+- [static let disallowedEncodingsKey: StringEncodingDetectionOptionsKey](./disallowedencodingskey.md)
+- [static let fromWindowsKey: StringEncodingDetectionOptionsKey](./fromwindowskey.md)
+- [static let likelyLanguageKey: StringEncodingDetectionOptionsKey](./likelylanguagekey.md)
+- [static let lossySubstitutionKey: StringEncodingDetectionOptionsKey](./lossysubstitutionkey.md)
+- [static let useOnlySuggestedEncodingsKey: StringEncodingDetectionOptionsKey](./useonlysuggestedencodingskey.md)
 
 
 ---

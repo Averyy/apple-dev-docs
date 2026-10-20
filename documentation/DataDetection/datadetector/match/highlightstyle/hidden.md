@@ -1,7 +1,8 @@
 # DataDetector.Match.HighlightStyle.hidden
 
 **Framework**: DataDetection  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A highlight style that indicates the match is visually hidden from the display.
 

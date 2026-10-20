@@ -1,7 +1,8 @@
 # HumanBodyPoseExtractor
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The human body pose image feature extractor.
 
@@ -22,43 +23,44 @@ struct HumanBodyPoseExtractor
 ## Topics
 
 ### Creating the extractor
-- [init()](humanbodyposeextractor/init.md)
+- [init()](./humanbodyposeextractor/init%28%29.md)
   Creates a human body pose extractor transformer
 ### Extracting the body pose
-- [func applied(to: CIImage, eventHandler: EventHandler?) async throws -> [Pose]](humanbodyposeextractor/applied(to:eventhandler:).md)
+- [func applied(to: CIImage, eventHandler: EventHandler?) async throws -> [Pose]](./humanbodyposeextractor/applied%28to,eventhandler%29.md)
   Extracts human body poses from a pixel buffer.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transformer](transformer.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Transformer](./transformer.md)
 
 ## See Also
 
-- [Counting human body action repetitions in a live video feed](counting-human-body-action-repetitions-in-a-live-video-feed.md)
+### Pose components
+- [Counting human body action repetitions in a live video feed](./counting-human-body-action-repetitions-in-a-live-video-feed.md)
   Use Create ML Components to analyze a series of video frames and count a person’s repetitive or periodic body movements.
-- [struct Pose](pose.md)
+- [struct Pose](./pose.md)
   A pose that contains joint keypoints from a person, a hand, or a combination.
-- [struct JointKey](jointkey.md)
+- [struct JointKey](./jointkey.md)
   A key that uniquely identifies a joint.
-- [struct JointPoint](jointpoint.md)
+- [struct JointPoint](./jointpoint.md)
   A joint in a pose that contains a location and scoring information.
-- [struct PoseSelector](poseselector.md)
+- [struct PoseSelector](./poseselector.md)
   A transformer that selects one pose from an array of poses.
-- [enum PoseSelectionStrategy](poseselectionstrategy.md)
+- [enum PoseSelectionStrategy](./poseselectionstrategy.md)
   Pose selection strategy.
-- [struct JointsSelector](jointsselector.md)
+- [struct JointsSelector](./jointsselector.md)
   Joints selector from a pose.
-- [struct HumanHandPoseExtractor](humanhandposeextractor.md)
+- [struct HumanHandPoseExtractor](./humanhandposeextractor.md)
   The human hand pose image feature extractor.
-- [struct HumanBodyActionCounter](humanbodyactioncounter.md)
+- [struct HumanBodyActionCounter](./humanbodyactioncounter.md)
   A human body action repetition counting transformer that takes window of human body poses and produces cumulative human body action repetition counts.
-- [struct HumanBodyActionPeriodPredictor](humanbodyactionperiodpredictor.md)
+- [struct HumanBodyActionPeriodPredictor](./humanbodyactionperiodpredictor.md)
   A human body action period predictor transformer that takes window of poses and produces a window of predictions.
 
 

@@ -1,7 +1,8 @@
 # audioRecorderDidFinishRecording(_:successfully:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when recording stops or finishes due to reaching its time limit.
 
@@ -18,6 +19,10 @@ Tells the delegate when recording stops or finishes due to reaching its time lim
 
 ```swift
 optional func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool)
+```
+
+```objc
+- (void) audioRecorderDidFinishRecording:(AVAudioRecorder *) recorder successfully:(BOOL) flag;
 ```
 
 #### Discussion

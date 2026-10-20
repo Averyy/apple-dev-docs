@@ -1,7 +1,8 @@
 # owner(of:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the device that owns a given entity.
 
@@ -28,7 +29,8 @@ The networked device that owns the entity.
 
 ## See Also
 
-- [func giveOwnership(of: Entity, toPeer: any SynchronizationPeerID) -> Bool](multipeerconnectivityservice/giveownership(of:topeer:).md)
+### Managing ownership
+- [func giveOwnership(of: Entity, toPeer: any SynchronizationPeerID) -> Bool](./giveownership%28of,topeer%29.md)
   Transfers ownership of the given entity to the named network device.
 
 

@@ -1,7 +1,8 @@
 # searchScopes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the search scopes.
 
@@ -20,26 +21,32 @@ An array containing the search scopes.
 var searchScopes: [Any] { get set }
 ```
 
+```objc
+@property (copy) NSArray * searchScopes;
+```
+
 #### Discussion
 
-This array can contain `NSURL` or `NSString` objects that represent file-system directories or the search scopes for the query. For a list of valid search scopes, see [`Metadata Query Search Scopes`](metadata-query-search-scopes.md). An empty array indicates that there is no limitation on where the query searches.
+This array can contain `NSURL` or `NSString` objects that represent file-system directories or the search scopes for the query. For a list of valid search scopes, see [Metadata Query Search Scopes](../metadata-query-search-scopes.md). An empty array indicates that there is no limitation on where the query searches.
 
 ## See Also
 
-- [File Metadata Search Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Carbon/Conceptual/SpotlightQuery/Concepts/Introduction.html#//apple_ref/doc/uid/TP40001841)
-- [var predicate: NSPredicate?](nsmetadataquery/predicate.md)
+### Related Documentation
+- [File Metadata Search Programming Guide](https://developer.apple.com/library/archive/documentation/Carbon/Conceptual/SpotlightQuery/Concepts/Introduction.html#//apple_ref/doc/uid/TP40001841)
+### Configuring queries
+- [var predicate: NSPredicate?](./predicate.md)
   The predicate used to filter query results.
-- [var sortDescriptors: [NSSortDescriptor]](nsmetadataquery/sortdescriptors.md)
+- [var sortDescriptors: [NSSortDescriptor]](./sortdescriptors.md)
   An array of sort descriptor objects.
-- [var valueListAttributes: [String]](nsmetadataquery/valuelistattributes.md)
+- [var valueListAttributes: [String]](./valuelistattributes.md)
   An array of attributes whose values are gathered by the query.
-- [var groupingAttributes: [String]?](nsmetadataquery/groupingattributes.md)
+- [var groupingAttributes: [String]?](./groupingattributes.md)
   An array of grouping attributes. (read-only)
-- [var notificationBatchingInterval: TimeInterval](nsmetadataquery/notificationbatchinginterval.md)
+- [var notificationBatchingInterval: TimeInterval](./notificationbatchinginterval.md)
   The interval at which notification of updated results occurs.
-- [var delegate: (any NSMetadataQueryDelegate)?](nsmetadataquery/delegate.md)
+- [var delegate: (any NSMetadataQueryDelegate)?](./delegate.md)
   The query’s delegate.
-- [var searchItems: [Any]?](nsmetadataquery/searchitems.md)
+- [var searchItems: [Any]?](./searchitems.md)
   An array of objects that define the query’s scope.
 
 

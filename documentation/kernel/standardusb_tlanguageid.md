@@ -1,14 +1,15 @@
 # StandardUSB::tLanguageID
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 typedef enum StandardUSB::tLanguageID : unsigned int {
     ...
 } StandardUSB::tLanguageID;
@@ -17,7 +18,7 @@ typedef enum StandardUSB::tLanguageID : unsigned int {
 ## Topics
 
 ### Constants
-- [StandardUSB::kLanguageIDEnglishUS](standardusb_tlanguageid/standardusb_klanguageidenglishus.md)
+- [StandardUSB::kLanguageIDEnglishUS](./standardusb_tlanguageid/standardusb_klanguageidenglishus.md)
 
 
 ---

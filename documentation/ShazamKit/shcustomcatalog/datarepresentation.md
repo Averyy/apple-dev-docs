@@ -1,7 +1,8 @@
 # dataRepresentation
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data representation of this file, it can be written to disk
 
@@ -18,6 +19,18 @@ The data representation of this file, it can be written to disk
 
 ```swift
 var dataRepresentation: Data { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, strong, readonly) NSData * dataRepresentation;
+```
+
+*macOS*
+
+```objc
+@property (atomic, strong, readonly) NSData * dataRepresentation;
 ```
 
 

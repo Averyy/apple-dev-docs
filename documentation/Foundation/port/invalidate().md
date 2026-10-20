@@ -1,9 +1,10 @@
 # invalidate()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Marks the receiver as invalid and posts an [`didBecomeInvalidNotification`](port/didbecomeinvalidnotification.md) to the default notification center.
+Marks the receiver as invalid and posts an [`didBecomeInvalidNotification`](./didbecomeinvalidnotification.md) to the default notification center.
 
 **Availability**:
 - iOS 2.0+
@@ -20,13 +21,18 @@ Marks the receiver as invalid and posts an [`didBecomeInvalidNotification`](port
 func invalidate()
 ```
 
+```objc
+- (void) invalidate;
+```
+
 #### Discussion
 
 You must call this method before releasing a port object (or removing strong references to it if your application is garbage collected).
 
 ## See Also
 
-- [var isValid: Bool](port/isvalid.md)
+### Validation
+- [var isValid: Bool](./isvalid.md)
   A Boolean value that indicates whether the receiver is valid.
 
 

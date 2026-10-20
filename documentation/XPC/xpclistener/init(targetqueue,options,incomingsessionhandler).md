@@ -1,7 +1,8 @@
 # init(targetQueue:options:incomingSessionHandler:)
 
 **Framework**: XPC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an anonymous listener
 

@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.L
 
 # mlx.nn.Linear
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Linear.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Linear
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Linear
-
 **class Linear(*input_dims: int*, *output_dims: int*, *bias: bool = True*)**
 : Applies an affine transformation to the input.
 Concretely:
@@ -55,5 +28,3 @@ Methods
 
 `to_quantized`([group_size, bits, mode, ...])
 Return a quantized approximation of this layer.
-
-** Contents

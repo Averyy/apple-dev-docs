@@ -1,7 +1,8 @@
 # cannotRemoveNonBridgeAccessory
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An attempt to remove a bridged accessory.
 
@@ -25,9 +26,10 @@ You can only remove standalone or bridge accessories.
 
 ## See Also
 
-- [static var bridgedAccessoryNotReachable: HMError.Code](hmerror/bridgedaccessorynotreachable.md)
+### Detecting bridge errors
+- [static var bridgedAccessoryNotReachable: HMError.Code](./bridgedaccessorynotreachable.md)
   An error indicating the bridged accessory cannot be reached.
-- [static var cannotUnblockNonBridgeAccessory: HMError.Code](hmerror/cannotunblocknonbridgeaccessory.md)
+- [static var cannotUnblockNonBridgeAccessory: HMError.Code](./cannotunblocknonbridgeaccessory.md)
   An error indicating a non-bridge accessory cannot be unblocked.
 
 

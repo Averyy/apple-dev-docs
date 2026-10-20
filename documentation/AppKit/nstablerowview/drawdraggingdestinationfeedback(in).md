@@ -1,7 +1,8 @@
 # drawDraggingDestinationFeedback(in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the row’s dragging destination feedback when the entire row is a drop target.
 
@@ -14,11 +15,15 @@ Draws the row’s dragging destination feedback when the entire row is a drop ta
 func drawDraggingDestinationFeedback(in dirtyRect: NSRect)
 ```
 
+```objc
+- (void) drawDraggingDestinationFeedbackInRect:(NSRect) dirtyRect;
+```
+
 #### Discussion
 
 Overriding this method allows an application to draw custom dragging destination feedback when the entire row is a drop target.
 
-This method only is called if [`isTargetForDropOperation`](nstablerowview/istargetfordropoperation.md) is [`true`](https://developer.apple.com/documentation/swift/true), and is only drawn based on the properties set, such as the group row style.
+This method only is called if [`isTargetForDropOperation`](./istargetfordropoperation.md) is [`true`](../../Swift/true.md), and is only drawn based on the properties set, such as the group row style.
 
 ## Parameters
 
@@ -26,13 +31,14 @@ This method only is called if [`isTargetForDropOperation`](nstablerowview/istarg
 
 ## See Also
 
-- [var backgroundColor: NSColor](nstablerowview/backgroundcolor.md)
+### Overriding Row View Display Characteristics
+- [var backgroundColor: NSColor](./backgroundcolor.md)
   The background color of the row.
-- [func drawBackground(in: NSRect)](nstablerowview/drawbackground(in:).md)
+- [func drawBackground(in: NSRect)](./drawbackground%28in%29.md)
   Draws the background of the row in the rectangle.
-- [func drawSelection(in: NSRect)](nstablerowview/drawselection(in:).md)
+- [func drawSelection(in: NSRect)](./drawselection%28in%29.md)
   Draws the selected row.
-- [func drawSeparator(in: NSRect)](nstablerowview/drawseparator(in:).md)
+- [func drawSeparator(in: NSRect)](./drawseparator%28in%29.md)
   Draws the horizontal separator between table rows.
 
 

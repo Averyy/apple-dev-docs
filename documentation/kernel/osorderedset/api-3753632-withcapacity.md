@@ -1,7 +1,8 @@
 # withCapacity
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,15 @@
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```c
+static OSOrderedSetPtr withCapacity(uint32_t capacity, OSOrderBlock orderBlock);
+```
+
+*macOS*
+
+```c
 static OSPtr<OSOrderedSet> withCapacity(unsigned int capacity, OSOrderBlock orderBlock);
 ```
 

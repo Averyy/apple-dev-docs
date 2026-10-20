@@ -1,7 +1,8 @@
 # JSONEncoder.DataEncodingStrategy.custom(_:)
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The strategy that encodes data using a user-defined function.
 

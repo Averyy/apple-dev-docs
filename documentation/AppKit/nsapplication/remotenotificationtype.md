@@ -1,12 +1,13 @@
 # NSApplication.RemoteNotificationType
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 These constants determine whether apps launched by remote notifications display a badge.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,42 +15,47 @@ These constants determine whether apps launched by remote notifications display 
 struct RemoteNotificationType
 ```
 
+```c
+enum NSRemoteNotificationType : NSUInteger;
+```
+
 ## Topics
 
 ### Interaction Types
-- [static var badge: NSApplication.RemoteNotificationType](nsapplication/remotenotificationtype/badge.md)
+- [static var badge: NSApplication.RemoteNotificationType](./remotenotificationtype/badge.md)
   The app should display a badge.
-- [static var sound: NSApplication.RemoteNotificationType](nsapplication/remotenotificationtype/sound.md)
+- [static var sound: NSApplication.RemoteNotificationType](./remotenotificationtype/sound.md)
   The app should play a sound.
-- [static var alert: NSApplication.RemoteNotificationType](nsapplication/remotenotificationtype/alert.md)
+- [static var alert: NSApplication.RemoteNotificationType](./remotenotificationtype/alert.md)
   The app should display an alert.
 ### Initializers
-- [init(rawValue: UInt)](nsapplication/remotenotificationtype/init(rawvalue:).md)
+- [init(rawValue: UInt)](./remotenotificationtype/init%28rawvalue%29.md)
   Initializes a new remote notifications options structure.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func registerForRemoteNotifications()](nsapplication/registerforremotenotifications.md)
+### Managing remote notifications
+- [func registerForRemoteNotifications()](./registerforremotenotifications%28%29.md)
   Register for notifications sent by Apple Push Notification service (APNs).
-- [func unregisterForRemoteNotifications()](nsapplication/unregisterforremotenotifications.md)
+- [func unregisterForRemoteNotifications()](./unregisterforremotenotifications%28%29.md)
   Unregister for notifications received from Apple Push Notification service.
-- [var enabledRemoteNotificationTypes: NSApplication.RemoteNotificationType](nsapplication/enabledremotenotificationtypes.md)
+- [var enabledRemoteNotificationTypes: NSApplication.RemoteNotificationType](./enabledremotenotificationtypes.md)
   The types of push notifications that the app accepts.
-- [func registerForRemoteNotifications(matching: NSApplication.RemoteNotificationType)](nsapplication/registerforremotenotifications(matching:).md)
+- [func registerForRemoteNotifications(matching: NSApplication.RemoteNotificationType)](./registerforremotenotifications%28matching%29.md)
   Register to receive notifications of the specified types from a provider through the Apple Push Notification service.
-- [var isRegisteredForRemoteNotifications: Bool](nsapplication/isregisteredforremotenotifications.md)
+- [var isRegisteredForRemoteNotifications: Bool](./isregisteredforremotenotifications.md)
   A Boolean value indicating whether the app is registered with Apple Push Notification service (APNs).
 
 

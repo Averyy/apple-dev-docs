@@ -1,7 +1,8 @@
 # RequestRefundResponse
 
 **Framework**: Advanced Commerce API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for a transaction refund request.
 
@@ -10,13 +11,13 @@ The response body for a transaction refund request.
 
 ## Declaration
 
-```swift
+```
 object RequestRefundResponse
 ```
 
 #### Overview
 
-##Discussion This is the response body for the [`Request Transaction Refund`](request-transaction-refund.md) endpoint.
+##Discussion This is the response body for the [`Request Transaction Refund`](./request-transaction-refund.md) endpoint.
 
 ## Properties
 
@@ -25,11 +26,12 @@ object RequestRefundResponse
 
 ## See Also
 
-- [Request Transaction Refund](request-transaction-refund.md)
+### Refund request from the server
+- [Request Transaction Refund](./request-transaction-refund.md)
   Request a refund for a one-time charge or subscription transaction.
-- [object RequestRefundRequest](requestrefundrequest.md)
+- [object RequestRefundRequest](./requestrefundrequest.md)
   The request body for requesting a refund for a transaction.
-- [object RequestRefundItem](requestrefunditem.md)
+- [object RequestRefundItem](./requestrefunditem.md)
   Information about the refund request for an item, such as its SKU, the refund amount, reason, and type.
 
 

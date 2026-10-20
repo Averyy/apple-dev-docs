@@ -2,6 +2,7 @@
 
 **Framework**: Model I/O  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The transform matrix that defines the local coordinate space relative to a parent coordinate space.
@@ -20,15 +21,20 @@ The transform matrix that defines the local coordinate space relative to a paren
 var matrix: matrix_float4x4 { get set }
 ```
 
+```objc
+@property (nonatomic, assign) matrix_float4x4 matrix;
+```
+
 #### Discussion
 
 This matrix defines the position, orientation, shear, and scale for any object affected by the transform component, relative to the coordinate space of its parent.
 
-If the transform component includes time-based transform information, this method returns the local transform matrix as of the earliest time sample (as reported by the [`minimumTime`](mdltransformcomponent/minimumtime.md) property).
+If the transform component includes time-based transform information, this method returns the local transform matrix as of the earliest time sample (as reported by the [`minimumTime`](./minimumtime.md) property).
 
 ## See Also
 
-- [func setLocalTransform(matrix_float4x4)](mdltransformcomponent/setlocaltransform(_:).md)
+### Working with Static Transforms
+- [func setLocalTransform(matrix_float4x4)](./setlocaltransform%28_%29.md)
   Sets a new static transform matrix, overriding any time-based transform information.
 
 

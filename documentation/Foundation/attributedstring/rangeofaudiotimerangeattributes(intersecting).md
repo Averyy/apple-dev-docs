@@ -1,7 +1,8 @@
 # rangeOfAudioTimeRangeAttributes(intersecting:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the range of the attributed string that is within the given time range.
 
@@ -24,7 +25,7 @@ The range of the string’s intersecting text, or `nil` if the string has no int
 
 #### Discussion
 
-The method compares the given time range against the [`AttributeScopes.SpeechAttributes.TimeRangeAttribute`](attributescopes/speechattributes/timerangeattribute.md) attributes of the string. The time ranges in the string should be in ascending order, but not necessarily contiguous, and the string can include runs without a time range attribute.
+The method compares the given time range against the [`AttributeScopes.SpeechAttributes.TimeRangeAttribute`](../attributescopes/speechattributes/timerangeattribute.md) attributes of the string. The time ranges in the string should be in ascending order, but not necessarily contiguous, and the string can include runs without a time range attribute.
 
 You can use this method to help update an attributed string that tracks the volatile or finalized results of a `SpeechTranscriber` or `DictationTranscriber` module.
 

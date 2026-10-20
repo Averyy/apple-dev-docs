@@ -1,7 +1,8 @@
 # timeout
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that indicates the app intent exceeded the allowed time limit without reporting progress.
 

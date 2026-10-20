@@ -1,7 +1,8 @@
 # magnification
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The factor by which the video’s view is currently scaled.
 
@@ -14,6 +15,10 @@ The factor by which the video’s view is currently scaled.
 var magnification: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, setter=setMagnification:) CGFloat magnification;
+```
+
 #### Discussion
 
 The supported magnification range is `1.0` to `64.0`. The system zooms using nearest neighbor interpolation after it scales the content past a certain factor.
@@ -22,9 +27,10 @@ The default value is `1.0`.
 
 ## See Also
 
-- [var allowsMagnification: Bool](avplayerview/allowsmagnification.md)
+### Magnifying video
+- [var allowsMagnification: Bool](./allowsmagnification.md)
   A Boolean value that indicates whether the magnify gesture changes the video’s view magnification.
-- [func setMagnification(CGFloat, centeredAt: CGPoint)](avplayerview/setmagnification(_:centeredat:).md)
+- [func setMagnification(CGFloat, centeredAt: CGPoint)](./setmagnification%28_,centeredat%29.md)
   Scales the video’s view by a specified factor, and centers the result on a specified point.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 This property tells a tiled-input processor which input tile index is being processed.
@@ -20,17 +21,22 @@ This property tells a tiled-input processor which input tile index is being proc
 var roiTileIndex: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger roiTileIndex;
+```
+
 #### Discussion
 
 This property is only relevant if your processor implements `/CIImageProcessorKernel/roiTileArrayForInput:arguments:outputRect:`
 
-This can be useful if the processor needs to clear the [`CIImageProcessorOutput`](ciimageprocessoroutput.md) before the first tile is processed.
+This can be useful if the processor needs to clear the [`CIImageProcessorOutput`](../ciimageprocessoroutput.md) before the first tile is processed.
 
 ## See Also
 
-- [var digest: UInt64](ciimageprocessorinput/digest.md)
+### Instance Properties
+- [var digest: UInt64](./digest.md)
   A 64-bit digest that uniquely describes the contents of the input to a processor.
-- [var roiTileCount: Int](ciimageprocessorinput/roitilecount.md)
+- [var roiTileCount: Int](./roitilecount.md)
   This property tells a tiled-input processor how many input tiles will be processed.
 
 

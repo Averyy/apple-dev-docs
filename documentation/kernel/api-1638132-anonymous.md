@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDisabledInterruptState](1638132-anonymous/kdisabledinterruptstate.md)
-- [kEnabledInterruptState](1638132-anonymous/kenabledinterruptstate.md)
+- [kDisabledInterruptState](./api-1638132-anonymous/kdisabledinterruptstate.md)
+- [kEnabledInterruptState](./api-1638132-anonymous/kenabledinterruptstate.md)
 
 
 ---

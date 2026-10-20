@@ -1,7 +1,8 @@
 # interruptionLevel
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The notification’s importance and required delivery timing.
 
@@ -20,15 +21,28 @@ The notification’s importance and required delivery timing.
 var interruptionLevel: UNNotificationInterruptionLevel { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, assign, readwrite) UNNotificationInterruptionLevel interruptionLevel;
+```
+
+*macOS*
+
+```objc
+@property (atomic, assign, readwrite) UNNotificationInterruptionLevel interruptionLevel;
+```
+
 ## See Also
 
-- [var sound: UNNotificationSound?](unmutablenotificationcontent/sound.md)
+### Integrating with the system
+- [var sound: UNNotificationSound?](./sound.md)
   The sound that plays when the system delivers the notification.
-- [enum UNNotificationInterruptionLevel](unnotificationinterruptionlevel.md)
+- [enum UNNotificationInterruptionLevel](../unnotificationinterruptionlevel.md)
   Constants that indicate the importance and delivery timing of a notification.
-- [var relevanceScore: Double](unmutablenotificationcontent/relevancescore.md)
+- [var relevanceScore: Double](./relevancescore.md)
   The score the system uses to determine if the notification is the summary’s featured notification.
-- [var filterCriteria: String?](unmutablenotificationcontent/filtercriteria.md)
+- [var filterCriteria: String?](./filtercriteria.md)
   The criteria the system evaluates to determine if it displays the notification in the current Focus.
 
 

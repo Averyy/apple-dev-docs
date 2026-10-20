@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier for the event.
 
@@ -18,6 +19,10 @@ An identifier for the event.
 
 ```swift
 var identifier: String { get set }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * identifier;
 ```
 
 #### Discussion

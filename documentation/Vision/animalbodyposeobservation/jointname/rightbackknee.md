@@ -1,7 +1,8 @@
 # AnimalBodyPoseObservation.JointName.rightBackKnee
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -19,21 +20,22 @@ case rightBackKnee
 
 ## See Also
 
-- [AnimalBodyPoseObservation.JointName.leftBackElbow](animalbodyposeobservation/jointname/leftbackelbow.md)
-- [AnimalBodyPoseObservation.JointName.leftBackKnee](animalbodyposeobservation/jointname/leftbackknee.md)
-- [AnimalBodyPoseObservation.JointName.leftBackPaw](animalbodyposeobservation/jointname/leftbackpaw.md)
-- [AnimalBodyPoseObservation.JointName.leftEarBottom](animalbodyposeobservation/jointname/leftearbottom.md)
-- [AnimalBodyPoseObservation.JointName.leftEarMiddle](animalbodyposeobservation/jointname/leftearmiddle.md)
-- [AnimalBodyPoseObservation.JointName.leftEarTop](animalbodyposeobservation/jointname/lefteartop.md)
-- [AnimalBodyPoseObservation.JointName.leftEye](animalbodyposeobservation/jointname/lefteye.md)
-- [AnimalBodyPoseObservation.JointName.leftFrontElbow](animalbodyposeobservation/jointname/leftfrontelbow.md)
-- [AnimalBodyPoseObservation.JointName.leftFrontKnee](animalbodyposeobservation/jointname/leftfrontknee.md)
-- [AnimalBodyPoseObservation.JointName.leftFrontPaw](animalbodyposeobservation/jointname/leftfrontpaw.md)
-- [AnimalBodyPoseObservation.JointName.neck](animalbodyposeobservation/jointname/neck.md)
-- [AnimalBodyPoseObservation.JointName.nose](animalbodyposeobservation/jointname/nose.md)
-- [AnimalBodyPoseObservation.JointName.rightBackElbow](animalbodyposeobservation/jointname/rightbackelbow.md)
-- [AnimalBodyPoseObservation.JointName.rightBackPaw](animalbodyposeobservation/jointname/rightbackpaw.md)
-- [AnimalBodyPoseObservation.JointName.rightEarBottom](animalbodyposeobservation/jointname/rightearbottom.md)
+### Getting the joint names
+- [AnimalBodyPoseObservation.JointName.leftBackElbow](./leftbackelbow.md)
+- [AnimalBodyPoseObservation.JointName.leftBackKnee](./leftbackknee.md)
+- [AnimalBodyPoseObservation.JointName.leftBackPaw](./leftbackpaw.md)
+- [AnimalBodyPoseObservation.JointName.leftEarBottom](./leftearbottom.md)
+- [AnimalBodyPoseObservation.JointName.leftEarMiddle](./leftearmiddle.md)
+- [AnimalBodyPoseObservation.JointName.leftEarTop](./lefteartop.md)
+- [AnimalBodyPoseObservation.JointName.leftEye](./lefteye.md)
+- [AnimalBodyPoseObservation.JointName.leftFrontElbow](./leftfrontelbow.md)
+- [AnimalBodyPoseObservation.JointName.leftFrontKnee](./leftfrontknee.md)
+- [AnimalBodyPoseObservation.JointName.leftFrontPaw](./leftfrontpaw.md)
+- [AnimalBodyPoseObservation.JointName.neck](./neck.md)
+- [AnimalBodyPoseObservation.JointName.nose](./nose.md)
+- [AnimalBodyPoseObservation.JointName.rightBackElbow](./rightbackelbow.md)
+- [AnimalBodyPoseObservation.JointName.rightBackPaw](./rightbackpaw.md)
+- [AnimalBodyPoseObservation.JointName.rightEarBottom](./rightearbottom.md)
 
 
 ---

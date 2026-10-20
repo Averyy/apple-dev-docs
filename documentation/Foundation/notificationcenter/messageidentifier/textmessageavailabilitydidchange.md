@@ -1,7 +1,8 @@
 # textMessageAvailabilityDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Notification posted when text message availability changes.
 
@@ -16,6 +17,8 @@ Notification posted when text message availability changes.
 ```swift
 static var textMessageAvailabilityDidChange: NotificationCenter.BaseMessageIdentifier<MFMessageComposeViewController.TextMessageAvailabilityDidChangeMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<MFMessageComposeViewController.TextMessageAvailabilityDidChangeMessage>`.
 
 #### Discussion
 

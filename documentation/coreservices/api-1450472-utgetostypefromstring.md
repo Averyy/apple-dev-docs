@@ -1,7 +1,8 @@
 # UTGetOSTypeFromString(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Decodes a tag string into an OSType.
 
@@ -14,7 +15,11 @@ Decodes a tag string into an OSType.
 func UTGetOSTypeFromString(_ inString: CFString) -> OSType
 ```
 
-#### Return_value
+```c
+OSType UTGetOSTypeFromString(CFStringRef inString);
+```
+
+#### Return Value
 
 The OSType that was encoded in the string.
 
@@ -28,7 +33,8 @@ You call this function to convert an OSType string returned by a UTI function ba
 
 ## See Also
 
-- [func UTCreateStringForOSType(OSType) -> Unmanaged<CFString>](1442804-utcreatestringforostype.md)
+### Related Documentation
+- [func UTCreateStringForOSType(OSType) -> Unmanaged<CFString>](./api-1442804-utcreatestringforostype.md)
   Encodes an `OSType` into a string suitable for use as a tag argument.
 
 

@@ -1,7 +1,8 @@
 # handlerForContentBlocker()
 
 **Framework**: MailKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an object that provides rules that the message viewer uses to block content.
 
@@ -12,6 +13,10 @@ Returns an object that provides rules that the message viewer uses to block cont
 
 ```swift
 optional func handlerForContentBlocker() -> any MEContentBlocker
+```
+
+```objc
+- (id<MEContentBlocker>) handlerForContentBlocker;
 ```
 
 #### Return Value

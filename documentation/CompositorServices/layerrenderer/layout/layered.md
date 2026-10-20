@@ -1,7 +1,8 @@
 # LayerRenderer.Layout.layered
 
 **Framework**: Compositor Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A layout that specifies each view’s content as a slice of a single texture.
 
@@ -15,19 +16,24 @@ A layout that specifies each view’s content as a slice of a single texture.
 case layered
 ```
 
+```c
+cp_layer_renderer_layout_layered
+```
+
 ## Mentions
 
-- [Drawing fully immersive content using Metal](drawing-fully-immersive-content-using-metal.md)
+- [Drawing fully immersive content using Metal](../../drawing-fully-immersive-content-using-metal.md)
 
 #### Discussion
 
-The layout uses a single texture to store the content for all rendered views. The type of the texture is [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/metal/mtltexturetype/type2darray). The texture map’s slice index indicates which array slot contains each view’s content.
+The layout uses a single texture to store the content for all rendered views. The type of the texture is [`MTLTextureType.type2DArray`](../../../Metal/mtltexturetype/type2darray.md). The texture map’s slice index indicates which array slot contains each view’s content.
 
 ## See Also
 
-- [LayerRenderer.Layout.dedicated](layerrenderer/layout/dedicated.md)
+### Getting the texture layouts
+- [LayerRenderer.Layout.dedicated](./dedicated.md)
   A layout that assigns a separate texture to each rendered view.
-- [LayerRenderer.Layout.shared](layerrenderer/layout/shared.md)
+- [LayerRenderer.Layout.shared](./shared.md)
   A layout that uses a single texture to store the content for all rendered views.
 
 

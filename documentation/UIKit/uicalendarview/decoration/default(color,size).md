@@ -1,7 +1,8 @@
 # default(color:size:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a default calendar view decoration with a filled circle image, using the color and size you specify.
 
@@ -9,7 +10,7 @@ Creates a default calendar view decoration with a filled circle image, using the
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -29,7 +30,8 @@ A calendar view decoration.
 
 ## See Also
 
-- [init()](uicalendarview/decoration/init.md)
+### Creating a Default Decoration View
+- [init()](./init%28%29.md)
   Creates a default calendar view decoration with a filled circle image, using the system fill color and medium size.
 
 

@@ -1,21 +1,26 @@
 # length
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes you choose to hold for this tensor data instance.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 var length: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUInteger length;
 ```
 
 #### Discussion
@@ -24,7 +29,8 @@ var length: Int { get }
 
 ## See Also
 
-- [var bytes: UnsafeMutableRawPointer](mlctensordata/bytes.md)
+### Inspecting Tensor Data
+- [var bytes: UnsafeMutableRawPointer](./bytes.md)
   A buffer that conains data.
 
 

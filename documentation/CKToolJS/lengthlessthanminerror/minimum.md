@@ -1,7 +1,8 @@
 # minimum
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum value (inclusive) for the tested length property.
 
@@ -10,7 +11,7 @@ The minimum value (inclusive) for the tested length property.
 
 ## Declaration
 
-```swift
+```
 attribute number minimum;
 ```
 

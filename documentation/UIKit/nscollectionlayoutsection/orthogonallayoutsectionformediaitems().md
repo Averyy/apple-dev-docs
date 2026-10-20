@@ -1,7 +1,8 @@
 # orthogonalLayoutSectionForMediaItems()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an orthogonally scrolling section with system default spacing.
 
@@ -14,11 +15,16 @@ Creates an orthogonally scrolling section with system default spacing.
 class func orthogonalLayoutSectionForMediaItems() -> NSCollectionLayoutSection
 ```
 
+```objc
++ (NSCollectionLayoutSection *) orthogonalLayoutSectionForMediaItems;
+```
+
 ## See Also
 
-- [convenience init(group: NSCollectionLayoutGroup)](nscollectionlayoutsection/init(group:).md)
+### Creating a section
+- [convenience init(group: NSCollectionLayoutGroup)](./init%28group%29.md)
   Creates a section containing the specified group.
-- [static func list(using: UICollectionLayoutListConfiguration, layoutEnvironment: any NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection](nscollectionlayoutsection/list(using:layoutenvironment:).md)
+- [static func list(using: UICollectionLayoutListConfiguration, layoutEnvironment: any NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection](./list%28using,layoutenvironment%29.md)
   Creates a list section with the specified list configuration and layout environment.
 
 

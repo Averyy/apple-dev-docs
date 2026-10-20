@@ -2,13 +2,14 @@
 
 **Framework**: Spatial Preview  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Can observe this state
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

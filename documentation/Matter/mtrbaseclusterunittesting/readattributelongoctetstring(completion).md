@@ -1,7 +1,8 @@
 # readAttributeLongOctetString(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeLongOctetString(completion: @escaping @Sendable (Data?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeLongOctetString() async throws -> Data
+```
+
+```objc
+- (void) readAttributeLongOctetStringWithCompletion:(void (^)(NSData *value, NSError *error)) completion;
 ```
 
 

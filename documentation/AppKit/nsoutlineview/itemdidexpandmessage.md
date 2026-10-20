@@ -1,7 +1,8 @@
 # NSOutlineView.ItemDidExpandMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,18 +16,18 @@ struct ItemDidExpandMessage
 ## Topics
 
 ### Initializers
-- [init(outlineView: NSOutlineView, item: Any)](nsoutlineview/itemdidexpandmessage/init(outlineview:item:).md)
+- [init(outlineView: NSOutlineView, item: Any)](./itemdidexpandmessage/init%28outlineview,item%29.md)
 ### Instance Properties
-- [var item: Any](nsoutlineview/itemdidexpandmessage/item.md)
-- [var outlineView: NSOutlineView](nsoutlineview/itemdidexpandmessage/outlineview.md)
+- [var item: Any](./itemdidexpandmessage/item.md)
+- [var outlineView: NSOutlineView](./itemdidexpandmessage/outlineview.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

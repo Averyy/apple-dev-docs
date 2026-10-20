@@ -1,18 +1,19 @@
 # DispatchObject
 
 **Framework**: Dispatch  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for most dispatch types.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,19 +23,19 @@ class DispatchObject
 
 #### Overview
 
-There are many types of dispatch objects, including [`DispatchQueue`](dispatchqueue.md), [`DispatchGroup`](dispatchgroup.md), and [`DispatchSource`](dispatchsource.md). The base dispatch object interfaces allow you to manage memory, pause and resume execution, define object context, log task data, and more.
+There are many types of dispatch objects, including [`DispatchQueue`](./dispatchqueue.md), [`DispatchGroup`](./dispatchgroup.md), and [`DispatchSource`](./dispatchsource.md). The base dispatch object interfaces allow you to manage memory, pause and resume execution, define object context, log task data, and more.
 
 ## Topics
 
 ### Activating, Suspending, and Resuming
-- [func activate()](dispatchobject/activate.md)
+- [func activate()](./dispatchobject/activate%28%29.md)
   Activates the dispatch object.
-- [func resume()](dispatchobject/resume.md)
+- [func resume()](./dispatchobject/resume%28%29.md)
   Resumes the invocation of block objects on a dispatch object.
-- [func suspend()](dispatchobject/suspend.md)
+- [func suspend()](./dispatchobject/suspend%28%29.md)
   Suspends the invocation of block objects on a dispatch object.
 ### Changing the Assigned Target Queue
-- [func setTarget(queue: dispatch_queue_t?)](dispatchobject/settarget(queue:).md)
+- [func setTarget(queue: dispatch_queue_t?)](./dispatchobject/settarget%28queue%29.md)
   Specifies the dispatch queue on which to perform work associated with the current object.
 
 ## Relationships
@@ -42,24 +43,25 @@ There are many types of dispatch objects, including [`DispatchQueue`](dispatchqu
 ### Inherits From
 - [OS_object](../os/os_object.md)
 ### Inherited By
-- [DispatchGroup](dispatchgroup.md)
-- [DispatchIO](dispatchio.md)
-- [DispatchQueue](dispatchqueue.md)
-- [DispatchSemaphore](dispatchsemaphore.md)
-- [DispatchSource](dispatchsource.md)
+- [DispatchGroup](./dispatchgroup.md)
+- [DispatchIO](./dispatchio.md)
+- [DispatchQueue](./dispatchqueue.md)
+- [DispatchSemaphore](./dispatchsemaphore.md)
+- [DispatchSource](./dispatchsource.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [enum DispatchPredicate](dispatchpredicate.md)
+### Dispatch Objects
+- [enum DispatchPredicate](./dispatchpredicate.md)
   Logical conditions to evaluate within a given execution context.
-- [func dispatchPrecondition(condition: @autoclosure () -> DispatchPredicate)](dispatchprecondition(condition:).md)
+- [func dispatchPrecondition(condition: @autoclosure () -> DispatchPredicate)](./dispatchprecondition%28condition%29.md)
   Checks a dispatch condition necessary for further execution.
-- [Dispatch Objects](dispatch-objects.md)
+- [Dispatch Objects](./dispatch-objects.md)
   The basic behaviors supported by all dispatch types.
 
 

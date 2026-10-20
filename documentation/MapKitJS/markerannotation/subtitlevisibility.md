@@ -1,7 +1,8 @@
 # subtitleVisibility
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that determines the behavior of the subtitle’s visibility.
 
@@ -10,20 +11,21 @@ A value that determines the behavior of the subtitle’s visibility.
 
 ## Declaration
 
-```swift
+```
 get subtitleVisibility(): FeatureVisibility;
 set subtitleVisibility(value: FeatureVisibility);
 ```
 
 #### Discussion
 
-The subtitle visibility controls the subtitle that renders below the balloon part of the marker. The default value is [`Adaptive`](featurevisibility/adaptive.md).
+The subtitle visibility controls the subtitle that renders below the balloon part of the marker. The default value is [`Adaptive`](../featurevisibility/adaptive.md).
 
 For adaptive visibility, the subtitle is always hidden in the normal state, by default. In the selected state, the subtitle follows the same rules as the title.
 
 ## See Also
 
-- [titleVisibility](markerannotation/titlevisibility.md)
+### Setting visibility
+- [titleVisibility](./titlevisibility.md)
   A value that determines the behavior of the title’s visibility.
 
 

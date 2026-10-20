@@ -1,7 +1,8 @@
 # action
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action to perform.
 

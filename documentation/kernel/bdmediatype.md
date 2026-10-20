@@ -1,14 +1,15 @@
 # BDMediaType
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 typedef UInt32 BDMediaType;
 ```
 

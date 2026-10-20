@@ -1,7 +1,8 @@
 # NSView.BackgroundStyle.normal
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that reflects the predominant color scheme of the view’s appearance.
 
@@ -14,17 +15,22 @@ A style that reflects the predominant color scheme of the view’s appearance.
 case normal
 ```
 
+```c
+NSBackgroundStyleNormal
+```
+
 ## See Also
 
-- [NSView.BackgroundStyle.emphasized](nsview/backgroundstyle/emphasized.md)
+### Getting the Background Styles
+- [NSView.BackgroundStyle.emphasized](./emphasized.md)
   A style that adds emphasis to the background using an alternate color or visual effect.
-- [NSView.BackgroundStyle.raised](nsview/backgroundstyle/raised.md)
+- [NSView.BackgroundStyle.raised](./raised.md)
   A style that makes the background appear higher than the content drawn on it.
-- [NSView.BackgroundStyle.lowered](nsview/backgroundstyle/lowered.md)
+- [NSView.BackgroundStyle.lowered](./lowered.md)
   A style that makes the background appear lower than the content drawn on it.
-- [static var light: NSView.BackgroundStyle](nsview/backgroundstyle/light.md)
+- [static var light: NSView.BackgroundStyle](./light.md)
   The background is a light color.
-- [static var dark: NSView.BackgroundStyle](nsview/backgroundstyle/dark.md)
+- [static var dark: NSView.BackgroundStyle](./dark.md)
   The background is a dark color.
 
 

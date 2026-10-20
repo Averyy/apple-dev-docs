@@ -1,7 +1,8 @@
 # RCSHandle.Group
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents an RCS group handle.
 
@@ -17,28 +18,29 @@ struct Group
 ## Topics
 
 ### Accessing group properties
-- [let focus: String](rcshandle/group/focus.md)
+- [let focus: String](./group/focus.md)
   A string that represents the focus of this group, as described in RFC 4353.
-- [let conversationID: String](rcshandle/group/conversationid.md)
+- [let conversationID: String](./group/conversationid.md)
   A string that represents the conversation identifier for this group.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case uri(RCSHandle.URI)](rcshandle/uri(_:).md)
+### Accessing handle values
+- [case uri(RCSHandle.URI)](./uri%28_%29.md)
   A handle that represents a single recipient or sender, as identified by a URI.
-- [RCSHandle.URI](rcshandle/uri.md)
+- [RCSHandle.URI](./uri.md)
   A structure that represents an RCS URI handle.
-- [case group(RCSHandle.Group)](rcshandle/group(_:).md)
+- [case group(RCSHandle.Group)](./group%28_%29.md)
   A handle that represents a group.
 
 

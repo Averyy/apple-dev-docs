@@ -1,7 +1,8 @@
 # applySnapshot(usingReloadData:completion:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets the UI to reflect the state of the data in the snapshot without computing a diff or animating the changes, optionally executing a completion handler.
 
@@ -18,6 +19,10 @@ Resets the UI to reflect the state of the data in the snapshot without computing
 func applySnapshot(usingReloadData snapshot: NSDiffableDataSourceSnapshotReference, completion: (() -> Void)? = nil)
 ```
 
+```objc
+- (void) applySnapshotUsingReloadData:(NSDiffableDataSourceSnapshot<id,id> *) snapshot completion:(void (^)()) completion;
+```
+
 #### Discussion
 
 The system interrupts any ongoing item animations and immediately reloads the table view’s content.
@@ -31,15 +36,16 @@ You can safely call this method from a background queue, but you must do so cons
 
 ## See Also
 
-- [func snapshot() -> NSDiffableDataSourceSnapshotReference](uitableviewdiffabledatasourcereference/snapshot.md)
+### Updating data
+- [func snapshot() -> NSDiffableDataSourceSnapshotReference](./snapshot%28%29.md)
   Returns a representation of the current state of the data in the table view.
-- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool)](uitableviewdiffabledatasourcereference/applysnapshot(_:animatingdifferences:).md)
+- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool)](./applysnapshot%28_,animatingdifferences%29.md)
   Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes.
-- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool, completion: (() -> Void)?)](uitableviewdiffabledatasourcereference/applysnapshot(_:animatingdifferences:completion:).md)
+- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool, completion: (() -> Void)?)](./applysnapshot%28_,animatingdifferences,completion%29.md)
   Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes and executing a completion handler.
-- [func applySnapshot(usingReloadData: NSDiffableDataSourceSnapshotReference)](uitableviewdiffabledatasourcereference/applysnapshot(usingreloaddata:).md)
+- [func applySnapshot(usingReloadData: NSDiffableDataSourceSnapshotReference)](./applysnapshot%28usingreloaddata%29.md)
   Resets the UI to reflect the state of the data in the snapshot without computing a diff or animating the changes.
-- [var defaultRowAnimation: UITableView.RowAnimation](uitableviewdiffabledatasourcereference/defaultrowanimation.md)
+- [var defaultRowAnimation: UITableView.RowAnimation](./defaultrowanimation.md)
   The default type of animation to use when inserting or deleting rows.
 
 

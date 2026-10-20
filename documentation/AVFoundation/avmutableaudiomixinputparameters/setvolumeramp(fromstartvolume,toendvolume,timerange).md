@@ -1,7 +1,8 @@
 # setVolumeRamp(fromStartVolume:toEndVolume:timeRange:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a volume ramp to apply during a specified time range.
 
@@ -20,6 +21,10 @@ Sets a volume ramp to apply during a specified time range.
 func setVolumeRamp(fromStartVolume startVolume: Float, toEndVolume endVolume: Float, timeRange: CMTimeRange)
 ```
 
+```objc
+- (void) setVolumeRampFromStartVolume:(float) startVolume toEndVolume:(float) endVolume timeRange:(CMTimeRange) timeRange;
+```
+
 ## Parameters
 
 - `startVolume`: The starting volume. The value must be between `0.0` and 1.0.
@@ -28,7 +33,8 @@ func setVolumeRamp(fromStartVolume startVolume: Float, toEndVolume endVolume: Fl
 
 ## See Also
 
-- [func setVolume(Float, at: CMTime)](avmutableaudiomixinputparameters/setvolume(_:at:).md)
+### Setting the volume
+- [func setVolume(Float, at: CMTime)](./setvolume%28_,at%29.md)
   Sets the value of the audio volume starting at the specified time.
 
 

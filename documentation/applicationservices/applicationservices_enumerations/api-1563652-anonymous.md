@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kATSFontFilterCurrentVersion: Int](katsfontfiltercurrentversion.md)
+- [var kATSFontFilterCurrentVersion: Int](../katsfontfiltercurrentversion.md)
 
 
 ---

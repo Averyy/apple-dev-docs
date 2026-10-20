@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Port.Options
 
 **Framework**: Compute Graph  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Flags that modify how a port’s value is treated during compilation and execution.
 
@@ -12,7 +13,7 @@ Flags that modify how a port’s value is treated during compilation and executi
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,31 +24,31 @@ struct Options
 ## Topics
 
 ### Type Properties
-- [static let argument: ComputeNodeGraph.Port.Options](computenodegraph/port/options/argument.md)
+- [static let argument: ComputeNodeGraph.Port.Options](./options/argument.md)
   Port is an argument to a runtime function.
-- [static let compile: ComputeNodeGraph.Port.Options](computenodegraph/port/options/compile.md)
+- [static let compile: ComputeNodeGraph.Port.Options](./options/compile.md)
   Port affects compilation.
-- [static let constant: ComputeNodeGraph.Port.Options](computenodegraph/port/options/constant.md)
+- [static let constant: ComputeNodeGraph.Port.Options](./options/constant.md)
   Port is constant and doesn’t need to be changeable.
-- [static let externalReference: ComputeNodeGraph.Port.Options](computenodegraph/port/options/externalreference.md)
+- [static let externalReference: ComputeNodeGraph.Port.Options](./options/externalreference.md)
   The port references a value outside of the graph, such as by filename
-- [static let optional: ComputeNodeGraph.Port.Options](computenodegraph/port/options/optional.md)
+- [static let optional: ComputeNodeGraph.Port.Options](./options/optional.md)
   The value of this port is optional (may be nil)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../../Swift/optionset.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../../Swift/setalgebra.md)
 
 
 ---

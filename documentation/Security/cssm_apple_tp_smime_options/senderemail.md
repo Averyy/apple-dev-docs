@@ -1,7 +1,8 @@
 # SenderEmail
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var SenderEmail: UnsafePointer<CChar>!
+```
+
+```c
+const char * SenderEmail;
 ```
 
 

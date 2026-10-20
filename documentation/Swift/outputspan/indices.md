@@ -1,7 +1,8 @@
 # indices
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of initialized indices for this `OutputSpan`.
 

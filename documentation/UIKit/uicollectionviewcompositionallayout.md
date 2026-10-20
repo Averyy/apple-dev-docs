@@ -1,7 +1,8 @@
 # UICollectionViewCompositionalLayout
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A layout object that lets you combine items in highly adaptive and flexible visual arrangements.
 
@@ -19,13 +20,17 @@ A layout object that lets you combine items in highly adaptive and flexible visu
 class UICollectionViewCompositionalLayout
 ```
 
+```objc
+@interface UICollectionViewCompositionalLayout : UICollectionViewLayout
+```
+
 #### Overview
 
 A compositional layout is a type of collection view layout. It’s designed to be composable, flexible, and fast, letting you build any kind of visual arrangement for your content by combining — or compositing — each smaller component into a full layout.
 
 A compositional layout is composed of one or more sections that break up the layout into distinct visual groupings. Each section is composed of groups of individual items, the smallest unit of data you want to present. A group might lay out its items in a horizontal row, a vertical column, or a custom arrangement.
 
-![Schematic representation of the App Store app on iOS, showing a collection view with a compositional layout. The layout is composed of two horizontally-scrolling sections that have different layouts. The top section shows one group with one item visible onscreen, with other groups peeking in from the side of the screen. The bottom section shows one group that’s a column of three cells, each of those cells being an item. Each of the items, groups, and sections are outlined and labeled to show how the pieces fit together.](/images/com.apple.uikit/media-3568664@2x.png)
+![Schematic representation of the App Store app on iOS, showing a collection view with a compositional layout. The layout is composed of two horizontally-scrolling sections that have different layouts. The top section shows one group with one item visible onscreen, with other groups peeking in from the side of the screen. The bottom section shows one group that’s a column of three cells, each of those cells being an item. Each of the items, groups, and sections are outlined and labeled to show how the pieces fit together.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-3568664@2x.png)
 
 You combine the components by building up from items into a group, from groups into a section, and finally into a full layout, like in this example of a basic list layout:
 
@@ -73,41 +78,42 @@ func createBasicListLayout() -> UICollectionViewLayout {
 ## Topics
 
 ### Creating a layout
-- [init(section: NSCollectionLayoutSection)](uicollectionviewcompositionallayout/init(section:).md)
+- [init(section: NSCollectionLayoutSection)](./uicollectionviewcompositionallayout/init%28section%29.md)
   Creates a compositional layout object with a single section.
-- [init(section: NSCollectionLayoutSection, configuration: UICollectionViewCompositionalLayoutConfiguration)](uicollectionviewcompositionallayout/init(section:configuration:).md)
+- [init(section: NSCollectionLayoutSection, configuration: UICollectionViewCompositionalLayoutConfiguration)](./uicollectionviewcompositionallayout/init%28section,configuration%29.md)
   Creates a compositional layout object with a single section and an additional configuration.
-- [init(sectionProvider: UICollectionViewCompositionalLayoutSectionProvider)](uicollectionviewcompositionallayout/init(sectionprovider:).md)
+- [init(sectionProvider: UICollectionViewCompositionalLayoutSectionProvider)](./uicollectionviewcompositionallayout/init%28sectionprovider%29.md)
   Creates a compositional layout object with a section provider to supply the layout’s sections.
-- [init(sectionProvider: UICollectionViewCompositionalLayoutSectionProvider, configuration: UICollectionViewCompositionalLayoutConfiguration)](uicollectionviewcompositionallayout/init(sectionprovider:configuration:).md)
+- [init(sectionProvider: UICollectionViewCompositionalLayoutSectionProvider, configuration: UICollectionViewCompositionalLayoutConfiguration)](./uicollectionviewcompositionallayout/init%28sectionprovider,configuration%29.md)
   Creates a compositional layout object with a section provider and an additional configuration.
 ### Creating a list layout
-- [static func list(using: UICollectionLayoutListConfiguration) -> UICollectionViewCompositionalLayout](uicollectionviewcompositionallayout/list(using:).md)
+- [static func list(using: UICollectionLayoutListConfiguration) -> UICollectionViewCompositionalLayout](./uicollectionviewcompositionallayout/list%28using%29.md)
   Creates a compositional layout that contains only list sections of the specified configuration.
-- [struct UICollectionLayoutListConfiguration](uicollectionlayoutlistconfiguration-swift.struct.md)
+- [struct UICollectionLayoutListConfiguration](./uicollectionlayoutlistconfiguration-swift.struct.md)
   A configuration for creating a list layout.
 ### Configuring the layout
-- [var configuration: UICollectionViewCompositionalLayoutConfiguration](uicollectionviewcompositionallayout/configuration.md)
+- [var configuration: UICollectionViewCompositionalLayoutConfiguration](./uicollectionviewcompositionallayout/configuration.md)
   The layout’s configuration, such as its scroll direction and section spacing.
 
 ## Relationships
 
 ### Inherits From
-- [UICollectionViewLayout](uicollectionviewlayout.md)
+- [UICollectionViewLayout](./uicollectionviewlayout.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Implementing modern collection views](implementing-modern-collection-views.md)
+### Essentials
+- [Implementing modern collection views](./implementing-modern-collection-views.md)
   Bring compositional layouts to your app and simplify updating your user interface with diffable data sources.
 
 

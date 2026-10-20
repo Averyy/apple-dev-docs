@@ -1,7 +1,8 @@
 # preferredMediaChunkAlignment
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The boundary for media chunk alignment for file types that support media chunk alignment.
 
@@ -19,15 +20,20 @@ The boundary for media chunk alignment for file types that support media chunk a
 var preferredMediaChunkAlignment: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger preferredMediaChunkAlignment;
+```
+
 #### Discussion
 
 The default value is `0`, which indicates to use no padding should to achieve chunk alignment. Setting a negative chunk alignment value causes an error.
 
 ## See Also
 
-- [var preferredMediaChunkDuration: CMTime](avmutablemovietrack/preferredmediachunkduration.md)
+### Accessing media chunks
+- [var preferredMediaChunkDuration: CMTime](./preferredmediachunkduration.md)
   The maximum duration to use for each chunk of sample data written to the file for file types that support media chunk duration.
-- [var preferredMediaChunkSize: Int](avmutablemovietrack/preferredmediachunksize.md)
+- [var preferredMediaChunkSize: Int](./preferredmediachunksize.md)
   The maximum size to use for each chunk of sample data written to the file for file types that support media chunk duration.
 
 

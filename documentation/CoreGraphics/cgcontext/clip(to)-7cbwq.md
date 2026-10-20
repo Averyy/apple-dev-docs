@@ -1,7 +1,8 @@
 # clip(to:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the clipping path to the intersection of the current clipping path with the area defined by the specified rectangle.
 
@@ -10,7 +11,7 @@ Sets the clipping path to the intersection of the current clipping path with the
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Sets the clipping path to the intersection of the current clipping path with the
 
 ```swift
 func clip(to rect: CGRect)
+```
+
+```c
+extern void CGContextClipToRect(CGContextRef c, CGRect rect);
 ```
 
 #### Discussion
@@ -32,13 +37,14 @@ After determining the new clipping path, the function resets the context’s cur
 
 ## See Also
 
-- [func clip(using: CGPathFillRule)](cgcontext/clip(using:).md)
+### Working with the Current Clipping Path
+- [func clip(using: CGPathFillRule)](./clip%28using%29.md)
   Modifies the current clipping path.
-- [func clip(to: [CGRect])](cgcontext/clip(to:)-2eg0.md)
+- [func clip(to: [CGRect])](./clip%28to%29-2eg0.md)
   Sets the clipping path to the intersection of the current clipping path with the region defined by an array of rectangles.
-- [func clip(to: CGRect, mask: CGImage)](cgcontext/clip(to:mask:).md)
+- [func clip(to: CGRect, mask: CGImage)](./clip%28to,mask%29.md)
   Maps a mask into the specified rectangle and intersects it with the current clipping area of the graphics context.
-- [var boundingBoxOfClipPath: CGRect](cgcontext/boundingboxofclippath.md)
+- [var boundingBoxOfClipPath: CGRect](./boundingboxofclippath.md)
   Returns the bounding box of a clipping path.
 
 

@@ -1,7 +1,8 @@
 # NEHotspotEvaluationProvider
 
 **Framework**: Network Extension  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines methods and properties your extension implements to handle evaluate and filter scan list commands.
 
@@ -24,35 +25,36 @@ Conform to this protocol in your hotspot helper app extension.
 ## Topics
 
 ### Managing provider life cycle
-- [func start() async -> Bool](nehotspotevaluationprovider/start.md)
+- [func start() async -> Bool](./nehotspotevaluationprovider/start%28%29.md)
   Tells the extension to start the evaluation provider, in response to a request from the framework.
-- [func stop(reason: NEProviderStopReason) async](nehotspotevaluationprovider/stop(reason:).md)
+- [func stop(reason: NEProviderStopReason) async](./nehotspotevaluationprovider/stop%28reason%29.md)
   Tells the exension to stop the evaluation provider, in response to a request from the framework.
-- [enum NEProviderStopReason](neproviderstopreason.md)
+- [enum NEProviderStopReason](./neproviderstopreason.md)
   Reasons why the provider extension was stopped.
 ### Sending commands to the provider
-- [func handleCommand(NEHotspotHelperCommand) async -> NEHotspotHelperResponse](nehotspotevaluationprovider/handlecommand(_:).md)
+- [func handleCommand(NEHotspotHelperCommand) async -> NEHotspotHelperResponse](./nehotspotevaluationprovider/handlecommand%28_%29.md)
   Handles a given hotspot command, in response to a request from the framework.
-- [class NEHotspotHelperCommand](nehotspothelpercommand.md)
+- [class NEHotspotHelperCommand](./nehotspothelpercommand.md)
   A command for the hotspot helper to handle.
 ### Providing a network name
-- [var localizedDisplayName: String](nehotspotevaluationprovider/localizeddisplayname.md)
+- [var localizedDisplayName: String](./nehotspotevaluationprovider/localizeddisplayname.md)
   A localized string that the system UI uses for annotation of the Wi-Fi network.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
 
 ## See Also
 
-- [class NEHotspotManager](nehotspotmanager.md)
+### Hotspot helper extension
+- [class NEHotspotManager](./nehotspotmanager.md)
   A class that you use to enable or disable the hotspot evaluation and authentication provider extensions.
-- [protocol NEHotspotAuthenticationProvider](nehotspotauthenticationprovider.md)
+- [protocol NEHotspotAuthenticationProvider](./nehotspotauthenticationprovider.md)
   A protocol that defines methods that your extension adopts to start and stop the extension, and to handle commands to authenticate with the hotspot network.
-- [class NEHotspotEvaluationProviderConfiguration](nehotspotevaluationproviderconfiguration.md)
+- [class NEHotspotEvaluationProviderConfiguration](./nehotspotevaluationproviderconfiguration.md)
   A class that defines configuration options for use in NetworkExtension evaluation providers.
-- [class NEHotspotAuthenticationProviderConfiguration](nehotspotauthenticationproviderconfiguration.md)
+- [class NEHotspotAuthenticationProviderConfiguration](./nehotspotauthenticationproviderconfiguration.md)
   A class that defines configuration options for use in NetworkExtension authentication providers.
 
 

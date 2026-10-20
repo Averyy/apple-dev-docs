@@ -1,7 +1,8 @@
 # is(compatibleWith:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the quantity type is compatible with the given unit.
 
@@ -19,13 +20,17 @@ Returns a Boolean value that indicates whether the quantity type is compatible w
 func `is`(compatibleWith unit: HKUnit) -> Bool
 ```
 
+```objc
+- (BOOL) isCompatibleWithUnit:(HKUnit *) unit;
+```
+
 #### Return Value
 
 YES if the quantity type is compatible with the given unit; otherwise, NO.
 
 #### Discussion
 
-When creating a HealthKit quantity sample, the sample’s type and quantity object must use compatible units. For more information, see [`HKQuantity`](hkquantity.md).
+When creating a HealthKit quantity sample, the sample’s type and quantity object must use compatible units. For more information, see [`HKQuantity`](../hkquantity.md).
 
 ## Parameters
 
@@ -33,9 +38,10 @@ When creating a HealthKit quantity sample, the sample’s type and quantity obje
 
 ## See Also
 
-- [var aggregationStyle: HKQuantityAggregationStyle](hkquantitytype/aggregationstyle.md)
+### Accessing Quantity Type Data
+- [var aggregationStyle: HKQuantityAggregationStyle](./aggregationstyle.md)
   The aggregation style for the given quantity type.
-- [enum HKQuantityAggregationStyle](hkquantityaggregationstyle.md)
+- [enum HKQuantityAggregationStyle](../hkquantityaggregationstyle.md)
   Constant values that describe how quantities can be aggregated over time.
 
 

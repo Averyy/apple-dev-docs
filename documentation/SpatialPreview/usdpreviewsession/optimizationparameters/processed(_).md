@@ -1,13 +1,14 @@
 # USDPreviewSession.OptimizationParameters.processed(_:)
 
 **Framework**: Spatial Preview  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allows the stage to analyzed for the given `OptimizationSteps` preferences and have those prefences applied.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # init(key:ascending:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sort descriptor with a specified string key path and sort order.
 
@@ -20,28 +21,35 @@ Creates a sort descriptor with a specified string key path and sort order.
 init(key: String?, ascending: Bool)
 ```
 
+```objc
+- (instancetype) initWithKey:(NSString *) key ascending:(BOOL) ascending;
+```
+
 #### Return Value
 
-A sort descriptor that initializes with the specified key path and sort order, and the default comparison selector ([`compare`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CIKernelLangRef/ci_gslang_ext.html#//apple_ref/doc/uid/TP40004397-CH206-BCIECEBI)).
+A sort descriptor that initializes with the specified key path and sort order, and the default comparison selector ([compare](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CIKernelLangRef/ci_gslang_ext.html#//apple_ref/doc/uid/TP40004397-CH206-BCIECEBI)).
 
 ## Parameters
 
-- `key`: The key path for performing a comparison. For information about key paths, see [`Key-Value Coding Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/index.html#//apple_ref/doc/uid/10000107i).
-- `ascending`: [`true`](https://developer.apple.com/documentation/swift/true) if the receiver specifies sorting in ascending order; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+- `key`: The key path for performing a comparison.
+
+  For information about key paths, see [Key-Value Coding Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/index.html#//apple_ref/doc/uid/10000107i).
+- `ascending`: [`true`](../../Swift/true.md) if the receiver specifies sorting in ascending order; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [init(key: String?, ascending: Bool, selector: Selector?)](nssortdescriptor/init(key:ascending:selector:).md)
+### Creating a Sort Descriptor
+- [init(key: String?, ascending: Bool, selector: Selector?)](./init%28key,ascending,selector%29.md)
   Creates a sort descriptor with a specified string key path, ordering, and comparison selector.
-- [convenience init<Root, Value>(keyPath: KeyPath<Root, Value>, ascending: Bool)](nssortdescriptor/init(keypath:ascending:).md)
+- [convenience init<Root, Value>(keyPath: KeyPath<Root, Value>, ascending: Bool)](./init%28keypath,ascending%29.md)
   Creates a sort descriptor with a specified key path and ordering.
-- [init(key: String?, ascending: Bool, comparator: Comparator)](nssortdescriptor/init(key:ascending:comparator:).md)
+- [init(key: String?, ascending: Bool, comparator: Comparator)](./init%28key,ascending,comparator%29.md)
   Creates a sort descriptor with a specified string key path and ordering, and a comparator block.
-- [convenience init<Root, Value>(keyPath: KeyPath<Root, Value>, ascending: Bool, comparator: Comparator)](nssortdescriptor/init(keypath:ascending:comparator:).md)
+- [convenience init<Root, Value>(keyPath: KeyPath<Root, Value>, ascending: Bool, comparator: Comparator)](./init%28keypath,ascending,comparator%29.md)
   Creates a sort descriptor with a specified key path and ordering, and a comparator block.
-- [init?(coder: NSCoder)](nssortdescriptor/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a sort descriptor by decoding from the coder you specify.
-- [convenience init<Compared>(SortDescriptor<Compared>)](nssortdescriptor/init(_:)-7qf91.md)
+- [convenience init<Compared>(SortDescriptor<Compared>)](./init%28_%29-7qf91.md)
   Creates a sort descriptor using a sort descriptor you specify.
 
 

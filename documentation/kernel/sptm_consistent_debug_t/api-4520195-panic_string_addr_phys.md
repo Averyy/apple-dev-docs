@@ -1,14 +1,15 @@
 # panic_string_addr_phys
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 uint64_t panic_string_addr_phys;
 ```
 

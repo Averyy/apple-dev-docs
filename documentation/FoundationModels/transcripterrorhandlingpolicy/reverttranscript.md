@@ -1,7 +1,8 @@
 # revertTranscript
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A policy that reverts the transcript back to the state it was in just before the most recent request.
 
@@ -21,7 +22,8 @@ static let revertTranscript: TranscriptErrorHandlingPolicy
 
 ## See Also
 
-- [static let preserveTranscript: TranscriptErrorHandlingPolicy](transcripterrorhandlingpolicy/preservetranscript.md)
+### Error handling policies
+- [static let preserveTranscript: TranscriptErrorHandlingPolicy](./preservetranscript.md)
   A policy that keeps the current transcript as is.
 
 

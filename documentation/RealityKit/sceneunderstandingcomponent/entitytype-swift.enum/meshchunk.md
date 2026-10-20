@@ -1,7 +1,8 @@
 # SceneUnderstandingComponent.EntityType.meshChunk
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An entity that models the physical shape of the environment within a given cubic region.
 
@@ -25,14 +26,15 @@ When `SpotLightComponent.SurroundingsLight` or `PointLightComponent.Surroundings
 - On visionOS, RealityKit automatically selects the opaque meshes that intersect the bounding box of the entity’s mesh and illuminates them with surroundings light in a progressive immersive space.
 - On macOS, surroundings light illuminates the entity’s mesh.
 
-When [`GroundingShadowComponent`](groundingshadowcomponent.md) is enabled:
+When [`GroundingShadowComponent`](../../groundingshadowcomponent.md) is enabled:
 
 - On visionOS, the entity’s mesh receives grounding shadows in a progressive immersive space.
 - On macOS, the entity’s mesh receives grounding shadows.
 
 ## See Also
 
-- [SceneUnderstandingComponent.EntityType.face](sceneunderstandingcomponent/entitytype-swift.enum/face.md)
+### Choosing the entity type
+- [SceneUnderstandingComponent.EntityType.face](./face.md)
   An entity that models a face that the framework detects in the physical environment.
 
 

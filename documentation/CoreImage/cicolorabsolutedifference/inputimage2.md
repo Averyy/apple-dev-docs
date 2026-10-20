@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The second image to use for differencing.
@@ -11,7 +12,7 @@ The second image to use for differencing.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,9 +21,14 @@ The second image to use for differencing.
 var inputImage2: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage2;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](cicolorabsolutedifference/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The first image to use for differencing.
 
 

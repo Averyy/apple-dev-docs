@@ -1,7 +1,8 @@
 # position
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The playback position at the time of the snapshot.
 
@@ -14,6 +15,10 @@ The playback position at the time of the snapshot.
 
 ```swift
 var position: CMTime { get }
+```
+
+```objc
+@property (nonatomic, readonly) CMTime position;
 ```
 
 

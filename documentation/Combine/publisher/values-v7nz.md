@@ -1,7 +1,8 @@
 # values
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The elements produced by the publisher, as a throwing asynchronous sequence.
 
@@ -22,9 +23,9 @@ var values: AsyncThrowingPublisher<Self> { get }
 
 #### Discussion
 
-This property provides an [`AsyncThrowingPublisher`](asyncthrowingpublisher.md), which allows you to use the Swift `async`-`await` syntax to receive the publisher’s elements. Because [`AsyncPublisher`](asyncpublisher.md) conforms to [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence), you iterate over its elements with a `for`-`await`-`in` loop, rather than attaching a subscriber. If the publisher terminates with an error, the awaiting caller receives the error as a `throw`.
+This property provides an [`AsyncThrowingPublisher`](../asyncthrowingpublisher.md), which allows you to use the Swift `async`-`await` syntax to receive the publisher’s elements. Because [`AsyncPublisher`](../asyncpublisher.md) conforms to [`AsyncSequence`](../../Swift/asyncsequence.md), you iterate over its elements with a `for`-`await`-`in` loop, rather than attaching a subscriber. If the publisher terminates with an error, the awaiting caller receives the error as a `throw`.
 
-The following example shows how to use the `values` property to receive elements asynchronously. The example adapts a code snippet from the [`tryFilter(_:)`](publisher/tryfilter(_:).md) operator’s documentation, which filters a sequence to only emit even integers, and terminate with an error on a `0`. This example replaces the [`Subscribers.Sink`](subscribers/sink.md) subscriber with a `for`-`await`-`in` loop that iterates over the [`AsyncPublisher`](asyncpublisher.md) provided by the `values` property. With this approach, the error handling previously provided in the sink subscriber’s [`receiveCompletion`](subscribers/sink/receivecompletion.md) closure goes instead in a `catch` block.
+The following example shows how to use the `values` property to receive elements asynchronously. The example adapts a code snippet from the [`tryFilter(_:)`](./tryfilter%28_%29.md) operator’s documentation, which filters a sequence to only emit even integers, and terminate with an error on a `0`. This example replaces the [`Subscribers.Sink`](../subscribers/sink.md) subscriber with a `for`-`await`-`in` loop that iterates over the [`AsyncPublisher`](../asyncpublisher.md) provided by the `values` property. With this approach, the error handling previously provided in the sink subscriber’s [`receiveCompletion`](../subscribers/sink/receivecompletion.md) closure goes instead in a `catch` block.
 
 ```swift
 let numbers: [Int] = [1, 2, 3, 4, 0, 5]
@@ -48,7 +49,8 @@ do {
 
 ## See Also
 
-- [var values: AsyncPublisher<Self>](publisher/values-1dm9r.md)
+### Accessing elements asynchronously
+- [var values: AsyncPublisher<Self>](./values-1dm9r.md)
   The elements produced by the publisher, as an asynchronous sequence.
 
 

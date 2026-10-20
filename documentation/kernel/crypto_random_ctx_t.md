@@ -1,14 +1,15 @@
 # crypto_random_ctx_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 13.1+
 
 ## Declaration
 
-```swift
+```c
 typedef void *crypto_random_ctx_t;
 ```
 

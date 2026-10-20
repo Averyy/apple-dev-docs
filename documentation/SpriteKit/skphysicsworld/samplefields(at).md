@@ -1,7 +1,8 @@
 # sampleFields(at:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Samples all of the field nodes in the scene and returns the summation of their forces at that point.
 
@@ -18,6 +19,10 @@ Samples all of the field nodes in the scene and returns the summation of their f
 
 ```swift
 func sampleFields(at position: vector_float3) -> vector_float3
+```
+
+```objc
+- (vector_float3) sampleFieldsAt:(vector_float3) position;
 ```
 
 #### Return Value

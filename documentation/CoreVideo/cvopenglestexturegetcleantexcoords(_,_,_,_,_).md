@@ -1,19 +1,26 @@
 # CVOpenGLESTextureGetCleanTexCoords(_:_:_:_:_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns convenient normalized texture coordinates for the part of the image that should be displayed.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- tvOS 9.0+
+- iOS 5.0+ - Deprecated in 12.0
+- iPadOS 5.0+ - Deprecated in 12.0
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGL/OpenGLES is no longer supported. Use Metal APIs instead. (Define COREVIDEO_SILENCE_GL_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func CVOpenGLESTextureGetCleanTexCoords(_ image: CVOpenGLESTexture, _ lowerLeft: UnsafeMutablePointer<GLfloat>, _ lowerRight: UnsafeMutablePointer<GLfloat>, _ upperRight: UnsafeMutablePointer<GLfloat>, _ upperLeft: UnsafeMutablePointer<GLfloat>)
+```
+
+```c
+extern void CVOpenGLESTextureGetCleanTexCoords(CVOpenGLESTextureRef image, GLfloat lowerLeft[2], GLfloat lowerRight[2], GLfloat upperRight[2], GLfloat upperLeft[2]);
 ```
 
 #### Discussion
@@ -30,13 +37,14 @@ This function automatically takes into account whether or not the texture is fli
 
 ## See Also
 
-- [func CVOpenGLESTextureGetTarget(CVOpenGLESTexture) -> GLenum](cvopenglestexturegettarget(_:).md)
+### Inspecting Textures
+- [func CVOpenGLESTextureGetTarget(CVOpenGLESTexture) -> GLenum](./cvopenglestexturegettarget%28_%29.md)
   Returns the texture target for a `CVOpenGLESTextureRef`.
-- [func CVOpenGLESTextureGetName(CVOpenGLESTexture) -> GLuint](cvopenglestexturegetname(_:).md)
+- [func CVOpenGLESTextureGetName(CVOpenGLESTexture) -> GLuint](./cvopenglestexturegetname%28_%29.md)
   Returns the texture target name for a `CVOpenGLESTextureRef`.
-- [func CVOpenGLESTextureIsFlipped(CVOpenGLESTexture) -> Bool](cvopenglestextureisflipped(_:).md)
+- [func CVOpenGLESTextureIsFlipped(CVOpenGLESTexture) -> Bool](./cvopenglestextureisflipped%28_%29.md)
   Returns whether the image is flipped vertically or not.
-- [func CVOpenGLESTextureGetTypeID() -> CFTypeID](cvopenglestexturegettypeid().md)
+- [func CVOpenGLESTextureGetTypeID() -> CFTypeID](./cvopenglestexturegettypeid%28%29.md)
   Returns the Core Foundation type identifier for a Core Video texture-based image buffer.
 
 

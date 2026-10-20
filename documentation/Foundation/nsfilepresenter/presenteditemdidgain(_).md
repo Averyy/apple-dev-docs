@@ -1,7 +1,8 @@
 # presentedItemDidGain(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a new version of the file or file package was added.
 
@@ -20,6 +21,10 @@ Tells the delegate that a new version of the file or file package was added.
 optional func presentedItemDidGain(_ version: NSFileVersion)
 ```
 
+```objc
+- (void) presentedItemDidGainVersion:(NSFileVersion *) version;
+```
+
 #### Discussion
 
 Your delegate can use this method to determine how to incorporate data from the new version of the file or file package. If the file has not been modified by your code, you might simply update to the new version quietly. However, if your application has its own changes, you might need to ask the user how to proceed.
@@ -30,15 +35,16 @@ Your delegate can use this method to determine how to incorporate data from the 
 
 ## See Also
 
-- [func presentedItemDidLose(NSFileVersion)](nsfilepresenter/presenteditemdidlose(_:).md)
+### Responding to Version Changes
+- [func presentedItemDidLose(NSFileVersion)](./presenteditemdidlose%28_%29.md)
   Tells the delegate that a version of the file or file package was removed.
-- [func presentedItemDidResolveConflict(NSFileVersion)](nsfilepresenter/presenteditemdidresolveconflict(_:).md)
+- [func presentedItemDidResolveConflict(NSFileVersion)](./presenteditemdidresolveconflict%28_%29.md)
   Tells the delegate that some other entity resolved a version conflict for the presenter’s file or file package.
-- [func presentedSubitem(at: URL, didGain: NSFileVersion)](nsfilepresenter/presentedsubitem(at:didgain:).md)
+- [func presentedSubitem(at: URL, didGain: NSFileVersion)](./presentedsubitem%28at,didgain%29.md)
   Tells the delegate that the item inside the presented directory gained a new version.
-- [func presentedSubitem(at: URL, didLose: NSFileVersion)](nsfilepresenter/presentedsubitem(at:didlose:).md)
+- [func presentedSubitem(at: URL, didLose: NSFileVersion)](./presentedsubitem%28at,didlose%29.md)
   Tells the delegate that the item inside the presented directory lost an existing version.
-- [func presentedSubitem(at: URL, didResolve: NSFileVersion)](nsfilepresenter/presentedsubitem(at:didresolve:).md)
+- [func presentedSubitem(at: URL, didResolve: NSFileVersion)](./presentedsubitem%28at,didresolve%29.md)
   Tells the delegate that the item inside the presented directory had a version conflict resolved by an outside entity.
 
 

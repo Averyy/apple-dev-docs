@@ -1,17 +1,18 @@
 # PHASESoundEventError.Code
 
 **Framework**: PHASE  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Codes that identify sound event errors.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,39 +20,44 @@ Codes that identify sound event errors.
 enum Code
 ```
 
+```c
+enum PHASESoundEventError : NSInteger;
+```
+
 ## Topics
 
 ### Errors
-- [PHASESoundEventError.Code.apiMisuse](phasesoundeventerror-swift.struct/code/apimisuse.md)
+- [PHASESoundEventError.Code.apiMisuse](./code/apimisuse.md)
   An error that indicates the app misconfigures data or calls the framework in unsupported succession.
-- [PHASESoundEventError.Code.badData](phasesoundeventerror-swift.struct/code/baddata.md)
+- [PHASESoundEventError.Code.badData](./code/baddata.md)
   An error that indicates a sound event contains invalid data.
-- [PHASESoundEventError.Code.invalidInstance](phasesoundeventerror-swift.struct/code/invalidinstance.md)
+- [PHASESoundEventError.Code.invalidInstance](./code/invalidinstance.md)
   An error that indicates a sound event object is no longer valid.
-- [PHASESoundEventError.Code.notFound](phasesoundeventerror-swift.struct/code/notfound.md)
+- [PHASESoundEventError.Code.notFound](./code/notfound.md)
   An error the framework throws when it fails to find a particular sound event.
-- [PHASESoundEventError.Code.outOfMemory](phasesoundeventerror-swift.struct/code/outofmemory.md)
+- [PHASESoundEventError.Code.outOfMemory](./code/outofmemory.md)
   An error the framework throws when a sound event depletes system memory.
-- [PHASESoundEventError.Code.systemNotInitialized](phasesoundeventerror-swift.struct/code/systemnotinitialized.md)
+- [PHASESoundEventError.Code.systemNotInitialized](./code/systemnotinitialized.md)
   An error the framework throws when engine initialization interrupts sound event playback.
 ### Initializers
-- [init?(rawValue: Int)](phasesoundeventerror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PHASESoundEventError](phasesoundeventerror-swift.struct.md)
+### Sound Event Errors
+- [struct PHASESoundEventError](../phasesoundeventerror-swift.struct.md)
   A sound event error that PHASE reports.
-- [let PHASESoundEventErrorDomain: String](phasesoundeventerrordomain.md)
+- [let PHASESoundEventErrorDomain: String](../phasesoundeventerrordomain.md)
   A unique error domain for sound events.
 
 

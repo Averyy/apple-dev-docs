@@ -1,7 +1,8 @@
 # export(to:error:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func export(to url: URL, error: (any Error)?) -> Bool
+```
+
+```objc
+- (BOOL) exportToURL:(NSURL *) url error:(NSError *) error;
 ```
 
 

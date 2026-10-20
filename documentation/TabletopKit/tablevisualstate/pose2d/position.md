@@ -1,7 +1,8 @@
 # position
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - visionOS 2.0+
@@ -14,7 +15,8 @@ var position: TableVisualState.Point2D
 
 ## See Also
 
-- [var rotation: Angle2D](tablevisualstate/pose2d/rotation.md)
+### Getting 2D pose properties
+- [var rotation: Angle2D](./rotation.md)
 
 
 ---

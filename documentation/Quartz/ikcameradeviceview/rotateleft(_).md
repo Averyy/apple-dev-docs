@@ -1,7 +1,8 @@
 # rotateLeft(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Rotates the selected image to the left.
 
@@ -15,6 +16,10 @@ Rotates the selected image to the left.
 func rotateLeft(_ sender: Any!)
 ```
 
+```objc
+- (void) rotateLeft:(id) sender;
+```
+
 #### Discussion
 
 This method is can be connected to a user interface item in Interface Builder.
@@ -25,11 +30,12 @@ This method is can be connected to a user interface item in Interface Builder.
 
 ## See Also
 
-- [var canRotateSelectedItemsLeft: Bool](ikcameradeviceview/canrotateselecteditemsleft.md)
+### Selected Item Rotation
+- [var canRotateSelectedItemsLeft: Bool](./canrotateselecteditemsleft.md)
   Returns whether the selected items can be rotated left.
-- [var canRotateSelectedItemsRight: Bool](ikcameradeviceview/canrotateselecteditemsright.md)
+- [var canRotateSelectedItemsRight: Bool](./canrotateselecteditemsright.md)
   Returns whether the selected items can be rotated right.
-- [func rotateRight(Any!)](ikcameradeviceview/rotateright(_:).md)
+- [func rotateRight(Any!)](./rotateright%28_%29.md)
   Rotates the selected image to the right.
 
 

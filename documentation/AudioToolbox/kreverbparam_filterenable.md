@@ -1,15 +1,16 @@
 # kReverbParam_FilterEnable
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,12 +18,17 @@
 var kReverbParam_FilterEnable: AudioUnitParameterID { get }
 ```
 
+```c
+kReverbParam_FilterEnable
+```
+
 ## See Also
 
-- [var kReverbParam_FilterBandwidth: AudioUnitParameterID](kreverbparam_filterbandwidth.md)
-- [var kReverbParam_FilterFrequency: AudioUnitParameterID](kreverbparam_filterfrequency.md)
-- [var kReverbParam_FilterGain: AudioUnitParameterID](kreverbparam_filtergain.md)
-- [var kReverbParam_FilterType: AudioUnitParameterID](kreverbparam_filtertype.md)
+### Constants
+- [var kReverbParam_FilterBandwidth: AudioUnitParameterID](./kreverbparam_filterbandwidth.md)
+- [var kReverbParam_FilterFrequency: AudioUnitParameterID](./kreverbparam_filterfrequency.md)
+- [var kReverbParam_FilterGain: AudioUnitParameterID](./kreverbparam_filtergain.md)
+- [var kReverbParam_FilterType: AudioUnitParameterID](./kreverbparam_filtertype.md)
 
 
 ---

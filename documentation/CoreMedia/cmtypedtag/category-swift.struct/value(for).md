@@ -1,7 +1,8 @@
 # value(for:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Convert a tag value into a typed value valid for this category, if possible.
 
@@ -30,7 +31,8 @@ A value of type `TypedValue` containing the tag value, or `nil` if the tag value
 
 ## See Also
 
-- [func tagValue(for: TypedValue) -> CMTag.Value](cmtypedtag/category-swift.struct/tagvalue(for:).md)
+### Transforming Tag Values
+- [func tagValue(for: TypedValue) -> CMTag.Value](./tagvalue%28for%29.md)
   Convert a typed value to a raw tag value for this category.
 
 

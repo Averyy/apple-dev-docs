@@ -1,7 +1,8 @@
 # AlternativeDistributionKeyCreateRequest.Data.Relationships.App
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AlternativeDistributionKeyCreateRequest.Data.Relationships.App
 ```
 
 ## Topics
 
 ### Objects
-- [object AlternativeDistributionKeyCreateRequest.Data.Relationships.App.Data](alternativedistributionkeycreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
+- [object AlternativeDistributionKeyCreateRequest.Data.Relationships.App.Data](./app-data.dictionary/data-data.dictionary.md)
   The app that is associated with the alternative distribution key.
 
 ## Properties

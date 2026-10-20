@@ -1,7 +1,8 @@
 # volumeTotalCapacity
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The volume’s total capacity, in bytes.
 
@@ -22,11 +23,12 @@ var volumeTotalCapacity: Int? { get }
 
 ## See Also
 
-- [var volumeAvailableCapacity: Int?](urlresourcevalues/volumeavailablecapacity.md)
+### Volume capacity values
+- [var volumeAvailableCapacity: Int?](./volumeavailablecapacity.md)
   The volume’s available capacity, in bytes.
-- [var volumeAvailableCapacityForImportantUsage: Int64?](urlresourcevalues/volumeavailablecapacityforimportantusage.md)
+- [var volumeAvailableCapacityForImportantUsage: Int64?](./volumeavailablecapacityforimportantusage.md)
   The volume’s available capacity for storing important resources, in bytes.
-- [var volumeAvailableCapacityForOpportunisticUsage: Int64?](urlresourcevalues/volumeavailablecapacityforopportunisticusage.md)
+- [var volumeAvailableCapacityForOpportunisticUsage: Int64?](./volumeavailablecapacityforopportunisticusage.md)
   The volume’s available capacity for storing nonessential resources, in bytes.
 
 

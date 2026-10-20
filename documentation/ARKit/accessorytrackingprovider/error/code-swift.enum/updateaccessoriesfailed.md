@@ -1,7 +1,8 @@
 # AccessoryTrackingProvider.Error.Code.updateAccessoriesFailed
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Updating accessories failed.
 

@@ -1,7 +1,8 @@
 # errSecUnsupportedFieldFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The field format is not supported.
 
@@ -18,6 +19,10 @@ The field format is not supported.
 
 ```swift
 var errSecUnsupportedFieldFormat: OSStatus { get }
+```
+
+```c
+errSecUnsupportedFieldFormat
 ```
 
 

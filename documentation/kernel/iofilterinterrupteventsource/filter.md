@@ -5,13 +5,13 @@
 
 ## Declaration
 
-```swift
+```c
 typedef bool ( *Filter)(
    OSObject *,
    IOFilterInterruptEventSource *);
 ```
 
-#### Return_value
+#### Return Value
 
 false if this interrupt can be ignored.
 

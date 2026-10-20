@@ -1,7 +1,8 @@
 # rawFeaturePoints
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A coarse representation of the space-mapping data recorded in the world map.
 
@@ -13,6 +14,10 @@ A coarse representation of the space-mapping data recorded in the world map.
 
 ```swift
 var rawFeaturePoints: ARPointCloud { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) ARPointCloud * rawFeaturePoints;
 ```
 
 #### Discussion

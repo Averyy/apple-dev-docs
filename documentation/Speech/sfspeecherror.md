@@ -1,7 +1,8 @@
 # SFSpeechError
 
 **Framework**: Speech  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -20,32 +21,33 @@ struct SFSpeechError
 ## Topics
 
 ### Error domain
-- [static var errorDomain: String](sfspeecherror/errordomain.md)
+- [static var errorDomain: String](./sfspeecherror/errordomain.md)
 ### Error codes
-- [SFSpeechError.Code](sfspeecherror/code.md)
+- [SFSpeechError.Code](./sfspeecherror/code.md)
   Error codes that can be thrown under the Speech framework’s error domain.
 ### Aliased error codes
-- [static var audioReadFailed: SFSpeechError.Code](sfspeecherror/audioreadfailed.md)
-- [static var internalServiceError: SFSpeechError.Code](sfspeecherror/internalserviceerror.md)
-- [static var malformedSupplementalModel: SFSpeechError.Code](sfspeecherror/malformedsupplementalmodel.md)
-- [static var missingParameter: SFSpeechError.Code](sfspeecherror/missingparameter.md)
-- [static var timeout: SFSpeechError.Code](sfspeecherror/timeout.md)
-- [static var undefinedTemplateClassName: SFSpeechError.Code](sfspeecherror/undefinedtemplateclassname.md)
+- [static var audioReadFailed: SFSpeechError.Code](./sfspeecherror/audioreadfailed.md)
+- [static var internalServiceError: SFSpeechError.Code](./sfspeecherror/internalserviceerror.md)
+- [static var malformedSupplementalModel: SFSpeechError.Code](./sfspeecherror/malformedsupplementalmodel.md)
+- [static var missingParameter: SFSpeechError.Code](./sfspeecherror/missingparameter.md)
+- [static var timeout: SFSpeechError.Code](./sfspeecherror/timeout.md)
+- [static var undefinedTemplateClassName: SFSpeechError.Code](./sfspeecherror/undefinedtemplateclassname.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let SFSpeechErrorDomain: String](sfspeecherrordomain.md)
-- [SFSpeechError.Code](sfspeecherror/code.md)
+### Errors
+- [let SFSpeechErrorDomain: String](./sfspeecherrordomain.md)
+- [SFSpeechError.Code](./sfspeecherror/code.md)
   Error codes that can be thrown under the Speech framework’s error domain.
 
 

@@ -1,7 +1,8 @@
 # setUserCallback(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a callback that the sequencer calls each time it encounters a user event during playback.
 
@@ -19,6 +20,10 @@ Adds a callback that the sequencer calls each time it encounters a user event du
 func setUserCallback(_ userCallback: AVAudioSequencerUserCallback?)
 ```
 
+```objc
+- (void) setUserCallback:(AVAudioSequencerUserCallback) userCallback;
+```
+
 #### Discussion
 
 The system calls the same callback for events that occur on any track in the sequencer. Set the callback to `nil` to disable it.
@@ -29,7 +34,8 @@ The system calls the same callback for events that occur on any track in the seq
 
 ## See Also
 
-- [typealias AVAudioSequencerUserCallback](avaudiosequencerusercallback.md)
+### Setting the user callback
+- [typealias AVAudioSequencerUserCallback](../avaudiosequencerusercallback.md)
   A callback the sequencer calls asynchronously during playback when it encounters a user event.
 
 

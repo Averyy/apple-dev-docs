@@ -1,7 +1,8 @@
 # measure(options:block:)
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Records the performance, using the specified measurement options, for a block of code.
 
@@ -19,6 +20,10 @@ Records the performance, using the specified measurement options, for a block of
 func measure(options: XCTMeasureOptions, block: () -> Void)
 ```
 
+```objc
+- (void) measureWithOptions:(XCTMeasureOptions *) options block:(void (^)()) block;
+```
+
 ## Parameters
 
 - `options`: Options to control the gathering of performance measurements.
@@ -26,25 +31,26 @@ func measure(options: XCTMeasureOptions, block: () -> Void)
 
 ## See Also
 
-- [func measure(() -> Void)](xctestcase/measure(_:).md)
+### Measuring Performance
+- [func measure(() -> Void)](./measure%28_%29.md)
   Measures the performance of a block of code.
-- [func measureMetrics([XCTPerformanceMetric], automaticallyStartMeasuring: Bool, for: () -> Void)](xctestcase/measuremetrics(_:automaticallystartmeasuring:for:).md)
+- [func measureMetrics([XCTPerformanceMetric], automaticallyStartMeasuring: Bool, for: () -> Void)](./measuremetrics%28_,automaticallystartmeasuring,for%29.md)
   Measures the performance of a block of code, optionally deferring the starting point for measurement.
-- [func measure(metrics: [any XCTMetric], block: () -> Void)](xctestcase/measure(metrics:block:).md)
+- [func measure(metrics: [any XCTMetric], block: () -> Void)](./measure%28metrics,block%29.md)
   Records the selected metrics for a block of code.
-- [func measure(metrics: [any XCTMetric], options: XCTMeasureOptions, block: () -> Void)](xctestcase/measure(metrics:options:block:).md)
+- [func measure(metrics: [any XCTMetric], options: XCTMeasureOptions, block: () -> Void)](./measure%28metrics,options,block%29.md)
   Records the selected metrics, using the specified measurement options, for a block of code.
-- [func startMeasuring()](xctestcase/startmeasuring.md)
+- [func startMeasuring()](./startmeasuring%28%29.md)
   Starts recording performance metrics within a block of code.
-- [func stopMeasuring()](xctestcase/stopmeasuring.md)
+- [func stopMeasuring()](./stopmeasuring%28%29.md)
   Ends recording performance metrics within a block of code.
-- [class var defaultPerformanceMetrics: [XCTPerformanceMetric]](xctestcase/defaultperformancemetrics.md)
+- [class var defaultPerformanceMetrics: [XCTPerformanceMetric]](./defaultperformancemetrics.md)
   An array of default performance metrics the test records.
-- [class var defaultMetrics: [any XCTMetric]](xctestcase/defaultmetrics.md)
+- [class var defaultMetrics: [any XCTMetric]](./defaultmetrics.md)
   An array of default metrics the test uses to record performance.
-- [class var defaultMeasureOptions: XCTMeasureOptions](xctestcase/defaultmeasureoptions.md)
+- [class var defaultMeasureOptions: XCTMeasureOptions](./defaultmeasureoptions.md)
   The default measurement options the test uses to record performance.
-- [struct XCTPerformanceMetric](xctperformancemetric.md)
+- [struct XCTPerformanceMetric](../xctperformancemetric.md)
   Performance metrics that the test records.
 
 

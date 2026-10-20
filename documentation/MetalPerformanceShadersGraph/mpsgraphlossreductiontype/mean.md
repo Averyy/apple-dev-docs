@@ -1,7 +1,8 @@
 # MPSGraphLossReductionType.mean
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Reduces the loss down to a scalar with a mean operation.
 
@@ -17,6 +18,10 @@ Reduces the loss down to a scalar with a mean operation.
 
 ```swift
 case mean
+```
+
+```c
+MPSGraphLossReductionTypeMean
 ```
 
 

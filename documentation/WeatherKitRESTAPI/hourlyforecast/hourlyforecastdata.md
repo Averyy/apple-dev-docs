@@ -1,7 +1,8 @@
 # HourlyForecast.HourlyForecastData
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The hourly forecast information.
 
@@ -10,7 +11,7 @@ The hourly forecast information.
 
 ## Declaration
 
-```swift
+```
 object HourlyForecast.HourlyForecastData
 ```
 
@@ -21,7 +22,7 @@ object HourlyForecast.HourlyForecastData
 ## Relationships
 
 ### Inherited By
-- [HourlyForecast](hourlyforecast.md)
+- [HourlyForecast](../hourlyforecast.md)
 
 
 ---

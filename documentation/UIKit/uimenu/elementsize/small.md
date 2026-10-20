@@ -1,7 +1,8 @@
 # UIMenu.ElementSize.small
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that represents a small menu element size.
 
@@ -18,11 +19,16 @@ A constant that represents a small menu element size.
 case small
 ```
 
+```c
+UIMenuElementSizeSmall
+```
+
 ## See Also
 
-- [UIMenu.ElementSize.medium](uimenu/elementsize/medium.md)
+### Constants
+- [UIMenu.ElementSize.medium](./medium.md)
   A constant that represents a medium menu element size.
-- [UIMenu.ElementSize.large](uimenu/elementsize/large.md)
+- [UIMenu.ElementSize.large](./large.md)
   A constant that represents a large menu element size.
 
 

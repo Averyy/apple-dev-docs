@@ -1,7 +1,8 @@
 # convert(_:at:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts an audio buffer.
 
@@ -27,7 +28,7 @@ An array of `AnalyzerInput` objects containing converted audio corresponding to 
 
 This method does not necessarily convert the entire audio buffer. Some audio data may be held over and integrated into the conversion of a later audio buffer for correctness or efficiency.
 
-Call [`flush()`](analyzerinputconverter/flush().md) to convert any remaining held-over audio and add it to the analyzer’s input sequence before finishing the sequence.
+Call [`flush()`](./flush%28%29.md) to convert any remaining held-over audio and add it to the analyzer’s input sequence before finishing the sequence.
 
 ## Parameters
 
@@ -36,7 +37,8 @@ Call [`flush()`](analyzerinputconverter/flush().md) to convert any remaining hel
 
 ## See Also
 
-- [func flush() throws -> [AnalyzerInput]](analyzerinputconverter/flush.md)
+### Converting a buffer
+- [func flush() throws -> [AnalyzerInput]](./flush%28%29.md)
   Completes pending audio conversions.
 
 

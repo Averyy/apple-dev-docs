@@ -1,7 +1,8 @@
 # Activity.ContentUpdates
 
 **Framework**: ActivityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that offers functionality to observe changes to the dynamic content of a Live Activity.
 
@@ -15,26 +16,29 @@ A structure that offers functionality to observe changes to the dynamic content 
 struct ContentUpdates
 ```
 
+Available when `Attributes` conforms to `ActivityAttributes`.
+
 ## Topics
 
 ### Structures
-- [Activity.ContentUpdates.Iterator](activity/contentupdates-swift.struct/iterator.md)
+- [Activity.ContentUpdates.Iterator](./contentupdates-swift.struct/iterator.md)
   An iterator for accessing individual data entries from the series.
 ### Instance Methods
-- [func makeAsyncIterator() -> Activity<Attributes>.ContentUpdates.Iterator](activity/contentupdates-swift.struct/makeasynciterator.md)
+- [func makeAsyncIterator() -> Activity<Attributes>.ContentUpdates.Iterator](./contentupdates-swift.struct/makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces results from this asynchronous sequence.
 ### Type Aliases
-- [Activity.ContentUpdates.Element](activity/contentupdates-swift.struct/element.md)
+- [Activity.ContentUpdates.Element](./contentupdates-swift.struct/element.md)
   The type of element this asynchronous sequence produces.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [var contentUpdates: Activity<Attributes>.ContentUpdates](activity/contentupdates-swift.property.md)
+### Observing Live Activity content changes
+- [var contentUpdates: Activity<Attributes>.ContentUpdates](./contentupdates-swift.property.md)
   An asynchronous sequence you use to observe changes to the dynamic content of a Live Activity.
 
 

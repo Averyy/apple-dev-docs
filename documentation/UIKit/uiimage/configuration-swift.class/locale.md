@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var locale: Locale? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSLocale * locale;
 ```
 
 

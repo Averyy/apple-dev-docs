@@ -1,7 +1,8 @@
 # didWin
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the postback won the attribution.
 
@@ -16,13 +17,18 @@ A Boolean value that indicates whether the postback won the attribution.
 var didWin: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) BOOL didWin;
+```
+
 ## See Also
 
-- [var fidelityType: Int](skadtestpostback/fidelitytype.md)
+### Getting conversion information
+- [var fidelityType: Int](./fidelitytype.md)
   An integer that indicates the type of ad impression, StoreKit-rendered or view-through.
-- [var fineConversionValue: Int](skadtestpostback/fineconversionvalue.md)
+- [var fineConversionValue: Int](./fineconversionvalue.md)
   The specific conversion value of an ad postback.
-- [var coarseConversionValue: SKAdNetwork.CoarseConversionValue?](skadtestpostback/coarseconversionvalue.md)
+- [var coarseConversionValue: SKAdNetwork.CoarseConversionValue?](./coarseconversionvalue.md)
   A value that indicates a high, medium, or low conversion value for an ad postback.
 
 

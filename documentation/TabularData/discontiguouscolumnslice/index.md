@@ -1,7 +1,8 @@
 # DiscontiguousColumnSlice.Index
 
 **Framework**: TabularData  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that represents a position in the column slice.
 
@@ -22,7 +23,8 @@ typealias Index = Int
 
 ## See Also
 
-- [DiscontiguousColumnSlice.Element](discontiguouscolumnslice/element.md)
+### Supporting Types
+- [DiscontiguousColumnSlice.Element](./element.md)
   The type of the column slice’s elements.
 
 

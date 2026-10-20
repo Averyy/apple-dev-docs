@@ -1,6 +1,8 @@
 # Playing spatial audio
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [PlayingSpatialAudioInVisionOS.zip](https://docs-assets.developer.apple.com/published/d80280abbf97/PlayingSpatialAudioInVisionOS.zip)
 
 Create and adjust spatial audio in visionOS with RealityKit.
 
@@ -10,11 +12,11 @@ Create and adjust spatial audio in visionOS with RealityKit.
 
 #### Overview
 
-This sample demonstrates how to load and play a spatial audio file in a visionOS app with the [`SpatialAudioComponent`](https://developer.apple.com/documentation/realitykit/spatialaudiocomponent). As the following image shows, you can use this component to configure how an entity emits sounds into a person’s environment:
+This sample demonstrates how to load and play a spatial audio file in a visionOS app with the [`SpatialAudioComponent`](../RealityKit/spatialaudiocomponent.md). As the following image shows, you can use this component to configure how an entity emits sounds into a person’s environment:
 
-![This is a screenshot of a visionOS app in the Simulator. The right side features an axis visualizer, while the left side presents a description of texts and three draggers that correspond to gain, direct level, and reverb levels.](/images/com.apple.visionOS/sample-spatialaudio-1-main-view.png)
+![This is a screenshot of a visionOS app in the Simulator. The right side features an axis visualizer, while the left side presents a description of texts and three draggers that correspond to gain, direct level, and reverb levels.](https://developer.apple.com/tutorials/images/com.apple.visionOS/sample-spatialaudio-1-main-view.png)
 
-##### Create the Axis Visualizer
+##### Create the axis visualizer
 
 Using existing RealityKit shapes, the sample creates an axis visualizer in the app’s main view to represent the x, y, and z axes of the audio source:
 
@@ -38,7 +40,7 @@ struct AxisVisualizer {
 
 The structure uses a `make()` method to create the entity that contains the axis mesh.
 
-To create the representation of the x-axis, the app creates a box mesh with [`generateBox(size:cornerRadius:)`](https://developer.apple.com/documentation/realitykit/meshresource/generatebox(size:cornerradius:)-2ovma) and a red [`UnlitMaterial`](https://developer.apple.com/documentation/realitykit/unlitmaterial), then combines the two with [`ModelEntity`](https://developer.apple.com/documentation/realitykit/modelentity):
+To create the representation of the x-axis, the app creates a box mesh with [`generateBox(size:cornerRadius:)`](../RealityKit/meshresource/generatebox%28size,cornerradius%29-2ovma.md) and a red [`UnlitMaterial`](../RealityKit/unlitmaterial.md), then combines the two with [`ModelEntity`](../RealityKit/modelentity.md):
 
 ```swift
 static func make() -> Entity {
@@ -65,7 +67,7 @@ static func make() -> Entity {
 
 The app follows similar steps to create the representation of the y and z axes, by adjusting the color of the material, the position of the entity, and the corresponding vector of three scalar values representing the width, height, and depth of the box.
 
-To create an origin point and complete the visualizer, the app creates a white sphere at the default position, using [`generateSphere(radius:)`](https://developer.apple.com/documentation/realitykit/meshresource/generatesphere(radius:)):
+To create an origin point and complete the visualizer, the app creates a white sphere at the default position, using [`generateSphere(radius:)`](../RealityKit/meshresource/generatesphere%28radius%29.md):
 
 ```swift
 static func make() -> Entity {
@@ -87,7 +89,7 @@ static func make() -> Entity {
 }
 ```
 
-##### Create a Decibel Slider
+##### Create a decibel slider
 
 To adjust the decibels for the gain, the direct level, and the reverb level of the audio source, the app creates the `DecibelSlider` view that the app adds to the main body view. The view contains a `name` property, which represents the name of the property that it controls, and a `value` variable, which stores the decibel value:
 
@@ -117,9 +119,9 @@ struct DecibelSlider: View {
 }
 ```
 
-Using a [`Slider`](https://developer.apple.com/documentation/swiftui/slider) within the view, a person can control the `value` property from the bounded linear range of values between -60 and 0.
+Using a [`Slider`](../SwiftUI/slider.md) within the view, a person can control the `value` property from the bounded linear range of values between -60 and 0.
 
-##### Set Up the Main Window
+##### Set up the main window
 
 To create the main view, the app combines the following subviews:
 
@@ -164,7 +166,7 @@ struct SpatialAudioView: View {
 
 The view creates `entity` to hold the audio sample. The `gain`, `directLevel`, and `reverbLevel` properties represent the default values for the audio source.
 
-##### Play the Spatial Audio
+##### Play the spatial audio
 
 When the necessary properties are in place, the `audioSource` view loads the audio file and configures it for continuous playback. Then the app sets up `entity` with a `SpatialAudioComponent` to play the audio in the reality view:
 
@@ -226,7 +228,7 @@ var audioSource: some View {
 }
 ```
 
-##### Showcase Text Descriptions
+##### Showcase text descriptions
 
 The sample creates the `description` view to display the collection of texts and guide people through the audio experience in the app:
 
@@ -255,7 +257,7 @@ var description: some View {
 }
 ```
 
-##### Control the Spatial Audio
+##### Control the spatial audio
 
 To adjust the `gain`, `directLevel`, and `reverbLevel` properties, the sample implements the `configuration` view, adding the `decibelSlider` that allows people to drag to adjust the values:
 
@@ -276,6 +278,9 @@ var configuration: some View {
 ```
 
 ###### Related to
+
+- [`SpatialAudioComponent`](../RealityKit/spatialaudiocomponent.md)
+  A component that configures how sounds emit from an entity into a person’s environment.
 
 
 ---

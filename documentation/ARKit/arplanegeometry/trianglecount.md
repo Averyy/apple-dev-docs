@@ -1,9 +1,10 @@
 # triangleCount
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The number of triangles described by the [`triangleIndices`](arplanegeometry/triangleindices-1azi3.md) buffer.
+The number of triangles described by the [`triangleIndices`](./triangleindices-1azi3.md) buffer.
 
 **Availability**:
 - iOS 11.3+
@@ -15,17 +16,22 @@ The number of triangles described by the [`triangleIndices`](arplanegeometry/tri
 var triangleCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger triangleCount;
+```
+
 #### Discussion
 
-Each set of three indices forms a triangle, so the number of indices in the [`triangleIndices`](arplanegeometry/triangleindices-1azi3.md) buffer is three times the [`triangleCount`](arplanegeometry/trianglecount.md) value.
+Each set of three indices forms a triangle, so the number of indices in the [`triangleIndices`](./triangleindices-1azi3.md) buffer is three times the [`triangleCount`](./trianglecount.md) value.
 
 ## See Also
 
-- [var vertices: [simd_float3]](arplanegeometry/vertices-43kle.md)
+### Accessing Mesh Data
+- [var vertices: [simd_float3]](./vertices-43kle.md)
   An array of vertex positions for each point in the plane mesh.
-- [var textureCoordinates: [vector_float2]](arplanegeometry/texturecoordinates-p801.md)
+- [var textureCoordinates: [vector_float2]](./texturecoordinates-p801.md)
   An array of texture coordinate values for each point in the plane mesh.
-- [var triangleIndices: [Int16]](arplanegeometry/triangleindices-64epx.md)
+- [var triangleIndices: [Int16]](./triangleindices-64epx.md)
   An array of indices describing the triangle mesh formed by the plane geometry’s vertex data.
 
 

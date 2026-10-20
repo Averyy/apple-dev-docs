@@ -1,7 +1,8 @@
 # allowsMultipleSelectionDuringEditing
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that controls whether users can select more than one cell simultaneously in editing mode.
 
@@ -9,7 +10,7 @@ A Boolean value that controls whether users can select more than one cell simult
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,33 +19,38 @@ A Boolean value that controls whether users can select more than one cell simult
 var allowsMultipleSelectionDuringEditing: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsMultipleSelectionDuringEditing;
+```
+
 ## Mentions
 
-- [Handling row selection in a table view](handling-row-selection-in-a-table-view.md)
+- [Handling row selection in a table view](../handling-row-selection-in-a-table-view.md)
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). If you set it to [`true`](https://developer.apple.com/documentation/swift/true), check marks appear next to selected rows in editing mode. In addition, [`UITableView`](uitableview.md) doesn’t query for editing styles when it goes into editing mode. If you access [`indexPathsForSelectedRows`](uitableview/indexpathsforselectedrows.md), you can get the index paths that identify the selected rows.
+The default value of this property is [`false`](../../Swift/false.md). If you set it to [`true`](../../Swift/true.md), check marks appear next to selected rows in editing mode. In addition, [`UITableView`](../uitableview.md) doesn’t query for editing styles when it goes into editing mode. If you access [`indexPathsForSelectedRows`](./indexpathsforselectedrows.md), you can get the index paths that identify the selected rows.
 
 ## See Also
 
-- [var indexPathForSelectedRow: IndexPath?](uitableview/indexpathforselectedrow.md)
+### Selecting rows
+- [var indexPathForSelectedRow: IndexPath?](./indexpathforselectedrow.md)
   An index path that identifies the row and section of the selected row.
-- [var indexPathsForSelectedRows: [IndexPath]?](uitableview/indexpathsforselectedrows.md)
+- [var indexPathsForSelectedRows: [IndexPath]?](./indexpathsforselectedrows.md)
   The index paths that represent the selected rows.
-- [func selectRow(at: IndexPath?, animated: Bool, scrollPosition: UITableView.ScrollPosition)](uitableview/selectrow(at:animated:scrollposition:).md)
+- [func selectRow(at: IndexPath?, animated: Bool, scrollPosition: UITableView.ScrollPosition)](./selectrow%28at,animated,scrollposition%29.md)
   Selects a row in the table view that an index path identifies, optionally scrolling the row to a location in the table view.
-- [func deselectRow(at: IndexPath, animated: Bool)](uitableview/deselectrow(at:animated:).md)
+- [func deselectRow(at: IndexPath, animated: Bool)](./deselectrow%28at,animated%29.md)
   Deselects a row that an index path identifies, with an option to animate the deselection.
-- [var allowsSelection: Bool](uitableview/allowsselection.md)
+- [var allowsSelection: Bool](./allowsselection.md)
   A Boolean value that determines whether users can select a row.
-- [var allowsMultipleSelection: Bool](uitableview/allowsmultipleselection.md)
+- [var allowsMultipleSelection: Bool](./allowsmultipleselection.md)
   A Boolean value that determines whether users can select more than one row outside of editing mode.
-- [var allowsSelectionDuringEditing: Bool](uitableview/allowsselectionduringediting.md)
+- [var allowsSelectionDuringEditing: Bool](./allowsselectionduringediting.md)
   A Boolean value that determines whether users can select cells while the table view is in editing mode.
-- [var selectionFollowsFocus: Bool](uitableview/selectionfollowsfocus.md)
+- [var selectionFollowsFocus: Bool](./selectionfollowsfocus.md)
   A Boolean value that triggers an automatic selection when focus moves to a cell.
-- [class let selectionDidChangeNotification: NSNotification.Name](uitableview/selectiondidchangenotification.md)
+- [class let selectionDidChangeNotification: NSNotification.Name](./selectiondidchangenotification.md)
   A notification that posts when the selected row in the posting table view changes.
 
 

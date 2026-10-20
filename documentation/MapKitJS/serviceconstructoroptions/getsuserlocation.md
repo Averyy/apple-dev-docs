@@ -1,7 +1,8 @@
 # getsUserLocation
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A Boolean value that indicates whether to limit the results to the user’s location, according to the web browser.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether to limit the results to the user’s loca
 
 ## Declaration
 
-```swift
+```
 getsUserLocation?: boolean;
 ```
 
@@ -22,11 +23,12 @@ This value may not have an effect on some services.
 
 ## See Also
 
-- [coordinate](searchconstructoroptions/coordinate.md)
+### Search Initialization
+- [coordinate](../searchconstructoroptions/coordinate.md)
   A map coordinate that provides a hint for the geographic area to search.
-- [language](serviceconstructoroptions/language.md)
+- [language](./language.md)
   A language identifier that determines the language for the service results text.
-- [region](searchconstructoroptions/region.md)
+- [region](../searchconstructoroptions/region.md)
   A map region that provides a hint for the geographic area to search.
 
 

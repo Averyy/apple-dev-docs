@@ -2,6 +2,7 @@
 
 **Framework**: Evaluations  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of the sample loader used to provide the evaluation dataset.
@@ -23,9 +24,10 @@ associatedtype SampleLoader : Loader
 
 ## See Also
 
-- [associatedtype Sample](evaluation/sample.md)
+### Providing data
+- [associatedtype Sample](./sample.md)
   The type of input samples in the evaluation dataset.
-- [var dataset: Self.SampleLoader](evaluation/dataset.md)
+- [var dataset: Self.SampleLoader](./dataset.md)
   The evaluation dataset.
 
 

@@ -1,7 +1,8 @@
 # getVersion(majorVersion:minorVersion:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the major and minor version numbers of a Core Graphics PDF document.
 
@@ -10,7 +11,7 @@ Returns the major and minor version numbers of a Core Graphics PDF document.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the major and minor version numbers of a Core Graphics PDF document.
 
 ```swift
 func getVersion(majorVersion: UnsafeMutablePointer<Int32>, minorVersion: UnsafeMutablePointer<Int32>)
+```
+
+```c
+extern void CGPDFDocumentGetVersion(CGPDFDocumentRef document, int *majorVersion, int *minorVersion);
 ```
 
 #### Discussion
@@ -31,15 +36,16 @@ On return, the values of the `majorVersion` and `minorVersion` parameters are se
 
 ## See Also
 
-- [var catalog: CGPDFDictionaryRef?](cgpdfdocument/catalog.md)
+### Examining a PDF Document
+- [var catalog: CGPDFDictionaryRef?](./catalog.md)
   Returns the document catalog of a Core Graphics PDF document.
-- [var fileIdentifier: CGPDFArrayRef?](cgpdfdocument/fileidentifier.md)
+- [var fileIdentifier: CGPDFArrayRef?](./fileidentifier.md)
   Gets the file identifier for a PDF document.
-- [var info: CGPDFDictionaryRef?](cgpdfdocument/info.md)
+- [var info: CGPDFDictionaryRef?](./info.md)
   Gets the information dictionary for a PDF document.
-- [var numberOfPages: Int](cgpdfdocument/numberofpages.md)
+- [var numberOfPages: Int](./numberofpages.md)
   Returns the number of pages in a PDF document.
-- [func page(at: Int) -> CGPDFPage?](cgpdfdocument/page(at:).md)
+- [func page(at: Int) -> CGPDFPage?](./page%28at%29.md)
   Returns a page from a Core Graphics PDF document.
 
 

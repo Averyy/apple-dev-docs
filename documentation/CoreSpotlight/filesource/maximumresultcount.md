@@ -1,7 +1,8 @@
 # maximumResultCount
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of results to retrieve from this source.
 
@@ -24,9 +25,10 @@ Use this property to limit the number of results the Spotlight search tool retur
 
 ## See Also
 
-- [var fetchAttributes: [SearchableItemAttribute]](filesource/fetchattributes.md)
+### Configuring the search options
+- [var fetchAttributes: [SearchableItemAttribute]](./fetchattributes.md)
   The attributes to fetch for each file or directory and provide to the model.
-- [var scopes: [URL]](filesource/scopes.md)
+- [var scopes: [URL]](./scopes.md)
   The directories to search.
 
 

@@ -1,7 +1,8 @@
 # SpeechSynthesisEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface SpeechSynthesisEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [charIndex](speechsynthesisevent/1631882-charindex.md)
-- [elapsedTime](speechsynthesisevent/1629526-elapsedtime.md)
-- [name](speechsynthesisevent/1630327-name.md)
+- [charIndex](./speechsynthesisevent/api-1631882-charindex.md)
+- [elapsedTime](./speechsynthesisevent/api-1629526-elapsedtime.md)
+- [name](./speechsynthesisevent/api-1630327-name.md)
 
 ## Relationships
 

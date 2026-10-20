@@ -1,17 +1,18 @@
 # x
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The x coordinate of the position, in pixels.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ The x coordinate of the position, in pixels.
 var x: Double
 ```
 
+```c
+double x;
+```
+
 ## See Also
 
-- [var y: Double](mpsorigin/y.md)
+### Fields
+- [var y: Double](./y.md)
   The y coordinate of the position, in pixels.
-- [var z: Double](mpsorigin/z.md)
+- [var z: Double](./z.md)
   The z coordinate of the position, in pixels.
 
 

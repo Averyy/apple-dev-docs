@@ -1,7 +1,8 @@
 # init(node:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a component to manage the specified SpriteKit node.
 
@@ -19,13 +20,17 @@ Initializes a component to manage the specified SpriteKit node.
 init(node: SKNode)
 ```
 
+```objc
+- (instancetype) initWithNode:(SKNode *) node;
+```
+
 #### Return Value
 
 A new SpriteKit component.
 
 #### Discussion
 
-When you add this component to a [`GKEntity`](gkentity.md) object, the component automatically sets the [`entity`](https://developer.apple.com/documentation/spritekit/sknode/entity) property of its SpriteKit node to point to that entity.
+When you add this component to a [`GKEntity`](../gkentity.md) object, the component automatically sets the [`entity`](../../SpriteKit/sknode/entity.md) property of its SpriteKit node to point to that entity.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # content
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Payload containing the samples.
 
@@ -19,6 +20,8 @@ Payload containing the samples.
 ```swift
 var content: CMSampleBuffer.DynamicContent { get set }
 ```
+
+Available when `Content` is `CMSampleBuffer.DynamicContent`.
 
 #### Discussion
 

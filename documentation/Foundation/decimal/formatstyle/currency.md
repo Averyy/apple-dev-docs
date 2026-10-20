@@ -1,7 +1,8 @@
 # Decimal.FormatStyle.Currency
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A format style that converts between decimal currency values and their textual representations.
 
@@ -23,70 +24,70 @@ struct Currency
 ## Topics
 
 ### Creating a decimal currency style
-- [init(code: String, locale: Locale)](decimal/formatstyle/currency/init(code:locale:).md)
+- [init(code: String, locale: Locale)](./currency/init%28code,locale%29.md)
   Creates a decimal currency format style that uses the given currency code and locale.
 ### Customizing style behavior
-- [func decimalSeparator(strategy: Decimal.FormatStyle.Currency.Configuration.DecimalSeparatorDisplayStrategy) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/decimalseparator(strategy:).md)
+- [func decimalSeparator(strategy: Decimal.FormatStyle.Currency.Configuration.DecimalSeparatorDisplayStrategy) -> Decimal.FormatStyle.Currency](./currency/decimalseparator%28strategy%29.md)
   Modifies the format style to use the specified decimal separator display strategy.
-- [func grouping(Decimal.FormatStyle.Currency.Configuration.Grouping) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/grouping(_:).md)
+- [func grouping(Decimal.FormatStyle.Currency.Configuration.Grouping) -> Decimal.FormatStyle.Currency](./currency/grouping%28_%29.md)
   Modifies the format style to use the specified grouping.
-- [func locale(Locale) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/locale(_:).md)
+- [func locale(Locale) -> Decimal.FormatStyle.Currency](./currency/locale%28_%29.md)
   Modifies the format style to use the specified locale.
-- [func precision(Decimal.FormatStyle.Currency.Configuration.Precision) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/precision(_:).md)
+- [func precision(Decimal.FormatStyle.Currency.Configuration.Precision) -> Decimal.FormatStyle.Currency](./currency/precision%28_%29.md)
   Modifies the format style to use the specified precision.
-- [func presentation(Decimal.FormatStyle.Currency.Configuration.Presentation) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/presentation(_:).md)
+- [func presentation(Decimal.FormatStyle.Currency.Configuration.Presentation) -> Decimal.FormatStyle.Currency](./currency/presentation%28_%29.md)
   Modifies the format style to use the specified presentation.
-- [func rounded(rule: Decimal.FormatStyle.Currency.Configuration.RoundingRule, increment: Int?) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/rounded(rule:increment:).md)
+- [func rounded(rule: Decimal.FormatStyle.Currency.Configuration.RoundingRule, increment: Int?) -> Decimal.FormatStyle.Currency](./currency/rounded%28rule,increment%29.md)
   Modifies the format style to use the specified rounding rule and increment.
-- [func scale(Double) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/scale(_:).md)
+- [func scale(Double) -> Decimal.FormatStyle.Currency](./currency/scale%28_%29.md)
   Modifies the format style to use the specified scale.
-- [func sign(strategy: Decimal.FormatStyle.Currency.Configuration.SignDisplayStrategy) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/sign(strategy:).md)
+- [func sign(strategy: Decimal.FormatStyle.Currency.Configuration.SignDisplayStrategy) -> Decimal.FormatStyle.Currency](./currency/sign%28strategy%29.md)
   Modifies the format style to use the specified sign display strategy.
-- [Decimal.FormatStyle.Currency.Configuration](decimal/formatstyle/currency/configuration.md)
+- [Decimal.FormatStyle.Currency.Configuration](./currency/configuration.md)
   The type the format style uses for configuration settings.
-- [enum CurrencyFormatStyleConfiguration](currencyformatstyleconfiguration.md)
+- [enum CurrencyFormatStyleConfiguration](../../currencyformatstyleconfiguration.md)
   Configuration settings for formatting currency values.
 ### Formatting decimal currency values
-- [func format(Decimal) -> String](decimal/formatstyle/currency/format(_:).md)
+- [func format(Decimal) -> String](./currency/format%28_%29.md)
   Formats a decimal value, using this style.
 ### Creating attributed strings
-- [var attributed: Decimal.FormatStyle.Attributed](decimal/formatstyle/currency/attributed.md)
+- [var attributed: Decimal.FormatStyle.Attributed](./currency/attributed.md)
   An attributed format style based on the decimal currency format style.
-- [Decimal.FormatStyle.Attributed](decimal/formatstyle/attributed-swift.struct.md)
+- [Decimal.FormatStyle.Attributed](./attributed-swift.struct.md)
   A format style that converts integers into attributed strings.
 ### Accessing style properties
-- [var currencyCode: String](decimal/formatstyle/currency/currencycode.md)
+- [var currencyCode: String](./currency/currencycode.md)
   The currency code this format style uses.
-- [var locale: Locale](decimal/formatstyle/currency/locale.md)
+- [var locale: Locale](./currency/locale.md)
   The locale of the format style.
 ### Parsing decimal currency values
-- [var parseStrategy: Decimal.ParseStrategy<Decimal.FormatStyle.Currency>](decimal/formatstyle/currency/parsestrategy.md)
+- [var parseStrategy: Decimal.ParseStrategy<Decimal.FormatStyle.Currency>](./currency/parsestrategy.md)
   The parse strategy that this format style uses.
 ### Locating currency values in regular expressions
-- [func consuming(String, startingAt: String.Index, in: Range<String.Index>) throws -> (upperBound: String.Index, output: Decimal)?](decimal/formatstyle/currency/consuming(_:startingat:in:).md)
+- [func consuming(String, startingAt: String.Index, in: Range<String.Index>) throws -> (upperBound: String.Index, output: Decimal)?](./currency/consuming%28_,startingat,in%29.md)
   Process the input string within the specified bounds, beginning at the given index, and return the end position (upper bound) of the match and the produced output.
 ### Instance Methods
-- [func notation(Decimal.FormatStyle.Currency.Configuration.Notation) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/notation(_:).md)
+- [func notation(Decimal.FormatStyle.Currency.Configuration.Notation) -> Decimal.FormatStyle.Currency](./currency/notation%28_%29.md)
   Modifies the format style to use the specified notation.
 ### Default Implementations
-- [CustomConsumingRegexComponent Implementations](decimal/formatstyle/currency/customconsumingregexcomponent-implementations.md)
-- [ParseableFormatStyle Implementations](decimal/formatstyle/currency/parseableformatstyle-implementations.md)
+- [CustomConsumingRegexComponent Implementations](./currency/customconsumingregexcomponent-implementations.md)
+- [ParseableFormatStyle Implementations](./currency/parseableformatstyle-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomConsumingRegexComponent](../swift/customconsumingregexcomponent.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [FormatStyle](formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [ParseableFormatStyle](parseableformatstyle.md)
-- [RegexComponent](../swift/regexcomponent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomConsumingRegexComponent](../../../Swift/customconsumingregexcomponent.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [FormatStyle](../../formatstyle.md)
+- [Hashable](../../../Swift/hashable.md)
+- [ParseableFormatStyle](../../parseableformatstyle.md)
+- [RegexComponent](../../../Swift/regexcomponent.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

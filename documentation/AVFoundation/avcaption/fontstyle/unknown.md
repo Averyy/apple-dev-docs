@@ -1,7 +1,8 @@
 # AVCaption.FontStyle.unknown
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unknown font style.
 
@@ -17,11 +18,16 @@ An unknown font style.
 case unknown
 ```
 
+```c
+AVCaptionFontStyleUnknown
+```
+
 ## See Also
 
-- [AVCaption.FontStyle.normal](avcaption/fontstyle/normal.md)
+### Font styles
+- [AVCaption.FontStyle.normal](./normal.md)
   A normal font style.
-- [AVCaption.FontStyle.italic](avcaption/fontstyle/italic.md)
+- [AVCaption.FontStyle.italic](./italic.md)
   An italic font style.
 
 

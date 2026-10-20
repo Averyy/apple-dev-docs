@@ -1,7 +1,8 @@
 # Image.ResizingMode.stretch
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode to enlarge or reduce the size of an image so that it fills the available space.
 
@@ -22,7 +23,8 @@ case stretch
 
 ## See Also
 
-- [Image.ResizingMode.tile](image/resizingmode/tile.md)
+### Getting resizing modes
+- [Image.ResizingMode.tile](./tile.md)
   A mode to repeat the image at its original size, as many times as necessary to fill the available space.
 
 

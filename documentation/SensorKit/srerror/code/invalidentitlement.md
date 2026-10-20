@@ -1,7 +1,8 @@
 # SRError.Code.invalidEntitlement
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Occurs when the app lacks the required entitlement.
 
@@ -16,19 +17,24 @@ Occurs when the app lacks the required entitlement.
 case invalidEntitlement
 ```
 
+```c
+SRErrorInvalidEntitlement
+```
+
 #### Discussion
 
-To allow the app to read sensor data, the system requires that the app’s code signature contain a special entitlement. For more information, see [`Configuring your project for sensor reading`](configuring-your-project-for-sensor-reading.md).
+To allow the app to read sensor data, the system requires that the app’s code signature contain a special entitlement. For more information, see [Configuring your project for sensor reading](../../configuring-your-project-for-sensor-reading.md).
 
 ## See Also
 
-- [SRError.Code.promptDeclined](srerror/code/promptdeclined.md)
+### Errors
+- [SRError.Code.promptDeclined](./promptdeclined.md)
   Occurs when the user cancels the sensor approval workflow.
-- [SRError.Code.dataInaccessible](srerror/code/datainaccessible.md)
+- [SRError.Code.dataInaccessible](./datainaccessible.md)
   Occurs when the app can’t access the sensor’s data.
-- [SRError.Code.fetchRequestInvalid](srerror/code/fetchrequestinvalid.md)
+- [SRError.Code.fetchRequestInvalid](./fetchrequestinvalid.md)
   Occurs when the app misconfigures a fetch request.
-- [SRError.Code.noAuthorization](srerror/code/noauthorization.md)
+- [SRError.Code.noAuthorization](./noauthorization.md)
   Occurs when the user declines sensor access in the Settings app.
 
 

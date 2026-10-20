@@ -1,7 +1,8 @@
 # Audio.DistanceAttenuation.rolloff(factor:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A standard geometric model for attenuating audio intensity naturally with distance, using a specified loss strength factor.
 

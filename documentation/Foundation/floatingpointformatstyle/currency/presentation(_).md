@@ -1,7 +1,8 @@
 # presentation(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the format style to use the specified presentation.
 
@@ -26,27 +27,28 @@ A floating-point currency format style modified to use the specified presentatio
 
 ## Parameters
 
-- `p`: A currency presentation value, such as [`isoCode`](currencyformatstyleconfiguration/presentation/isocode.md) or [`fullName`](currencyformatstyleconfiguration/presentation/fullname.md).
+- `p`: A currency presentation value, such as [`isoCode`](../../currencyformatstyleconfiguration/presentation/isocode.md) or [`fullName`](../../currencyformatstyleconfiguration/presentation/fullname.md).
 
 ## See Also
 
-- [func decimalSeparator(strategy: FloatingPointFormatStyle<Value>.Currency.Configuration.DecimalSeparatorDisplayStrategy) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/decimalseparator(strategy:).md)
+### Customizing style behavior
+- [func decimalSeparator(strategy: FloatingPointFormatStyle<Value>.Currency.Configuration.DecimalSeparatorDisplayStrategy) -> FloatingPointFormatStyle<Value>.Currency](./decimalseparator%28strategy%29.md)
   Modifies the format style to use the specified decimal separator display strategy.
-- [func grouping(FloatingPointFormatStyle<Value>.Currency.Configuration.Grouping) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/grouping(_:).md)
+- [func grouping(FloatingPointFormatStyle<Value>.Currency.Configuration.Grouping) -> FloatingPointFormatStyle<Value>.Currency](./grouping%28_%29.md)
   Modifies the format style to use the specified grouping.
-- [func locale(Locale) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/locale(_:).md)
+- [func locale(Locale) -> FloatingPointFormatStyle<Value>.Currency](./locale%28_%29.md)
   Modifies the format style to use the specified locale.
-- [func precision(FloatingPointFormatStyle<Value>.Currency.Configuration.Precision) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/precision(_:).md)
+- [func precision(FloatingPointFormatStyle<Value>.Currency.Configuration.Precision) -> FloatingPointFormatStyle<Value>.Currency](./precision%28_%29.md)
   Modifies the format style to use the specified precision.
-- [func rounded(rule: FloatingPointFormatStyle<Value>.Currency.Configuration.RoundingRule, increment: Double?) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/rounded(rule:increment:).md)
+- [func rounded(rule: FloatingPointFormatStyle<Value>.Currency.Configuration.RoundingRule, increment: Double?) -> FloatingPointFormatStyle<Value>.Currency](./rounded%28rule,increment%29.md)
   Modifies the format style to use the specified rounding rule and increment.
-- [func scale(Double) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/scale(_:).md)
+- [func scale(Double) -> FloatingPointFormatStyle<Value>.Currency](./scale%28_%29.md)
   Modifies the format style to use the specified scale.
-- [func sign(strategy: FloatingPointFormatStyle<Value>.Currency.Configuration.SignDisplayStrategy) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/sign(strategy:).md)
+- [func sign(strategy: FloatingPointFormatStyle<Value>.Currency.Configuration.SignDisplayStrategy) -> FloatingPointFormatStyle<Value>.Currency](./sign%28strategy%29.md)
   Modifies the format style to use the specified sign display strategy.
-- [FloatingPointFormatStyle.Currency.Configuration](floatingpointformatstyle/currency/configuration.md)
+- [FloatingPointFormatStyle.Currency.Configuration](./configuration.md)
   The type the format style uses for configuration settings.
-- [enum CurrencyFormatStyleConfiguration](currencyformatstyleconfiguration.md)
+- [enum CurrencyFormatStyleConfiguration](../../currencyformatstyleconfiguration.md)
   Configuration settings for formatting currency values.
 
 

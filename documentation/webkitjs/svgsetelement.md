@@ -1,7 +1,8 @@
 # SVGSetElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGSetElement
 ```
 
 ## Relationships
 
 ### Inherits From
-- [SVGAnimationElement](svganimationelement.md)
+- [SVGAnimationElement](./svganimationelement.md)
 
 
 ---

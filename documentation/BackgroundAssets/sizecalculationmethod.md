@@ -1,7 +1,8 @@
 # SizeCalculationMethod
 
 **Framework**: Background Assets  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Methods for calculating a file’s size.
 
@@ -19,28 +20,32 @@ Methods for calculating a file’s size.
 enum SizeCalculationMethod
 ```
 
+```c
+enum BASizeCalculationMethod : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [SizeCalculationMethod.allocated](sizecalculationmethod/allocated.md)
+- [SizeCalculationMethod.allocated](./sizecalculationmethod/allocated.md)
   A calculation method that counts the number of bytes that the file system allocated for a file.
-- [SizeCalculationMethod.logical](sizecalculationmethod/logical.md)
+- [SizeCalculationMethod.logical](./sizecalculationmethod/logical.md)
   A calculation method that counts the number of bytes in a file.
 ### Initializers
-- [init?(rawValue: Int)](sizecalculationmethod/init(rawvalue:).md)
+- [init?(rawValue: Int)](./sizecalculationmethod/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

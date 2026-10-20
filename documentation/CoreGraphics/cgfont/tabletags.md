@@ -1,7 +1,8 @@
 # tableTags
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an array of tags that correspond to the font tables for a font.
 
@@ -10,7 +11,7 @@ Returns an array of tags that correspond to the font tables for a font.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns an array of tags that correspond to the font tables for a font.
 
 ```swift
 var tableTags: CFArray? { get }
+```
+
+```c
+extern CFArrayRefCGFontCopyTableTags(CGFontRef font);
 ```
 
 #### Discussion
@@ -30,11 +35,12 @@ tag = (uint32_t)(uintptr_t)CFArrayGetValue(table, k);
 
 ## See Also
 
-- [func table(for: UInt32) -> CFData?](cgfont/table(for:).md)
+### Working with Font Tables
+- [func table(for: UInt32) -> CFData?](./table%28for%29.md)
   Returns the font table that corresponds to the provided tag.
-- [Font Table Index Values](font-table-index-values.md)
+- [Font Table Index Values](../font-table-index-values.md)
   Possible values for an index into a font table.
-- [Obsolete Font Table Index Values](obsolete-font-table-index-values.md)
+- [Obsolete Font Table Index Values](../obsolete-font-table-index-values.md)
   Deprecated values for an index into a font table.
 
 

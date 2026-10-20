@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [IOUSBHostCITransferCompletionMessageControlDeviceAddress](3612510-anonymous/iousbhostcitransfercompletionmessagecontroldeviceaddress.md)
-- [IOUSBHostCITransferCompletionMessageControlDeviceAddressPhase](3612510-anonymous/iousbhostcitransfercompletionmessagecontroldeviceaddressphase.md)
-- [IOUSBHostCITransferCompletionMessageControlEndpointAddress](3612510-anonymous/iousbhostcitransfercompletionmessagecontrolendpointaddress.md)
-- [IOUSBHostCITransferCompletionMessageControlEndpointAddressPhase](3612510-anonymous/iousbhostcitransfercompletionmessagecontrolendpointaddressphase.md)
-- [IOUSBHostCITransferCompletionMessageControlStatus](3612510-anonymous/iousbhostcitransfercompletionmessagecontrolstatus.md)
-- [IOUSBHostCITransferCompletionMessageControlStatusPhase](3612510-anonymous/iousbhostcitransfercompletionmessagecontrolstatusphase.md)
+- [IOUSBHostCITransferCompletionMessageControlDeviceAddress](./api-3612510-anonymous/iousbhostcitransfercompletionmessagecontroldeviceaddress.md)
+- [IOUSBHostCITransferCompletionMessageControlDeviceAddressPhase](./api-3612510-anonymous/iousbhostcitransfercompletionmessagecontroldeviceaddressphase.md)
+- [IOUSBHostCITransferCompletionMessageControlEndpointAddress](./api-3612510-anonymous/iousbhostcitransfercompletionmessagecontrolendpointaddress.md)
+- [IOUSBHostCITransferCompletionMessageControlEndpointAddressPhase](./api-3612510-anonymous/iousbhostcitransfercompletionmessagecontrolendpointaddressphase.md)
+- [IOUSBHostCITransferCompletionMessageControlStatus](./api-3612510-anonymous/iousbhostcitransfercompletionmessagecontrolstatus.md)
+- [IOUSBHostCITransferCompletionMessageControlStatusPhase](./api-3612510-anonymous/iousbhostcitransfercompletionmessagecontrolstatusphase.md)
 
 
 ---

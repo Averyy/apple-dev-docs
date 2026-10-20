@@ -1,7 +1,8 @@
 # insertions
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The insertions contained by this difference, from lowest offset to highest.
 

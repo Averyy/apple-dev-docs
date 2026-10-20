@@ -1,7 +1,8 @@
 # ExternalPurchase.NoticeResult.continuedWithExternalPurchaseToken(token:)
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Describes when people chose to continue to view external purchases, and provides the external purchase token.
 
@@ -22,13 +23,13 @@ case continuedWithExternalPurchaseToken(token: String)
 
 ## Mentions
 
-- [Receiving and decoding external purchase tokens](receiving-and-decoding-external-purchase-tokens.md)
+- [Receiving and decoding external purchase tokens](../../receiving-and-decoding-external-purchase-tokens.md)
 
 #### Discussion
 
-When your app calls [`presentNoticeSheet()`](externalpurchase/presentnoticesheet().md) and it results in this value: [`ExternalPurchase.NoticeResult.continuedWithExternalPurchaseToken(token:)`](externalpurchase/noticeresult/continuedwithexternalpurchasetoken(token:).md), your app can proceed to present external purchases.
+When your app calls [`presentNoticeSheet()`](../presentnoticesheet%28%29.md) and it results in this value: [`ExternalPurchase.NoticeResult.continuedWithExternalPurchaseToken(token:)`](./continuedwithexternalpurchasetoken%28token%29.md), your app can proceed to present external purchases.
 
-> ❗ **Important**:  Record and use the token to report the customer’s external purchases to Apple. For more information, see [`External Purchase Server API`](https://developer.apple.com/documentation/externalpurchaseserverapi).
+> ❗ **Important**:  Record and use the token to report the customer’s external purchases to Apple. For more information, see [External Purchase Server API](../../../ExternalPurchaseServerAPI/ExternalPurchaseServerAPI.md).
 
 ``
 
@@ -38,7 +39,8 @@ When your app calls [`presentNoticeSheet()`](externalpurchase/presentnoticesheet
 
 ## See Also
 
-- [ExternalPurchase.NoticeResult.cancelled](externalpurchase/noticeresult/cancelled.md)
+### Getting notice sheet results
+- [ExternalPurchase.NoticeResult.cancelled](./cancelled.md)
   Describes when people chose to cancel and not view external purchases.
 
 

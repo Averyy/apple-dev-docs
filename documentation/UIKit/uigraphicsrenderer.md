@@ -1,7 +1,8 @@
 # UIGraphicsRenderer
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract base class for creating graphics renderers.
 
@@ -18,19 +19,23 @@ An abstract base class for creating graphics renderers.
 class UIGraphicsRenderer
 ```
 
+```objc
+@interface UIGraphicsRenderer : NSObject
+```
+
 #### Overview
 
-Don’t use [`UIGraphicsRenderer`](uigraphicsrenderer.md) directly. Instead, either use one of the concrete subclasses ([`UIGraphicsImageRenderer`](uigraphicsimagerenderer.md) or [`UIGraphicsPDFRenderer`](uigraphicspdfrenderer.md)), or create your own subclass.
+Don’t use [`UIGraphicsRenderer`](./uigraphicsrenderer.md) directly. Instead, either use one of the concrete subclasses ([`UIGraphicsImageRenderer`](./uigraphicsimagerenderer.md) or [`UIGraphicsPDFRenderer`](./uigraphicspdfrenderer.md)), or create your own subclass.
 
 Graphics renderers provide memory-efficient management of Core Graphics contexts. Core Graphics contexts represent the drawing environment and backing store for 2D Graphics. As you reuse a graphics renderer, it in turn reuses Core Graphics contexts.
 
-##### Subclassing Notes
+##### Subclassing notes
 
-You can’t use [`UIGraphicsRenderer`](uigraphicsrenderer.md) directly, but if the concrete subclasses ([`UIGraphicsPDFRenderer`](uigraphicspdfrenderer.md) and [`UIGraphicsImageRenderer`](uigraphicsimagerenderer.md)) don’t provide the functionality you require, you can create your own subclass.
+You can’t use [`UIGraphicsRenderer`](./uigraphicsrenderer.md) directly, but if the concrete subclasses ([`UIGraphicsPDFRenderer`](./uigraphicspdfrenderer.md) and [`UIGraphicsImageRenderer`](./uigraphicsimagerenderer.md)) don’t provide the functionality you require, you can create your own subclass.
 
-Consider creating a subclass any time you need to create multiple Core Graphics contexts, each with the same dimensions and attributes, and one of the concrete subclasses ([`UIGraphicsPDFRenderer`](uigraphicspdfrenderer.md) or [`UIGraphicsImageRenderer`](uigraphicsimagerenderer.md)) doesn’t provide the functionality you require.
+Consider creating a subclass any time you need to create multiple Core Graphics contexts, each with the same dimensions and attributes, and one of the concrete subclasses ([`UIGraphicsPDFRenderer`](./uigraphicspdfrenderer.md) or [`UIGraphicsImageRenderer`](./uigraphicsimagerenderer.md)) doesn’t provide the functionality you require.
 
-To create a subclass of [`UIGraphicsRenderer`](uigraphicsrenderer.md), first import the appropriate submodule or header, as shown in the following code.
+To create a subclass of [`UIGraphicsRenderer`](./uigraphicsrenderer.md), first import the appropriate submodule or header, as shown in the following code.
 
 **Swift**:
 
@@ -44,71 +49,72 @@ import UIKit.UIGraphicsRendererSubclass
 #import <UIKit/UIGraphicsRendererSubclass.h>
 ```
 
-A graphics renderer manages a pool of Core Graphics contexts that are reused with repeated uses of the renderer. The renderer creates these [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) objects using the [`context(with:)`](uigraphicsrenderer/context(with:).md) class method, and then wraps each of them in an instance of the class returned by the [`rendererContextClass()`](uigraphicsrenderer/renderercontextclass().md) class method. You must therefore override these two methods in your graphics renderer subclass.
+A graphics renderer manages a pool of Core Graphics contexts that are reused with repeated uses of the renderer. The renderer creates these [`CGContext`](../CoreGraphics/cgcontext.md) objects using the [`context(with:)`](./uigraphicsrenderer/context%28with%29.md) class method, and then wraps each of them in an instance of the class returned by the [`rendererContextClass()`](./uigraphicsrenderer/renderercontextclass%28%29.md) class method. You must therefore override these two methods in your graphics renderer subclass.
 
-To perform drawing actions on a Core Graphics context, call the [`runDrawingActions(_:completionActions:)`](uigraphicsrenderer/rundrawingactions(_:completionactions:).md) method, providing two blocks. Both of these blocks have a [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md) argument, providing access to a Core Graphics context.
+To perform drawing actions on a Core Graphics context, call the [`runDrawingActions(_:completionActions:)`](./uigraphicsrenderer/rundrawingactions%28_,completionactions%29.md) method, providing two blocks. Both of these blocks have a [`UIGraphicsRendererContext`](./uigraphicsrenderercontext.md) argument, providing access to a Core Graphics context.
 
-It is recommended that you create a public method on your renderer subclass that internally wraps the [`runDrawingActions(_:completionActions:)`](uigraphicsrenderer/rundrawingactions(_:completionactions:).md) method. This is how the rendering methods operate on the concrete subclasses, for example the [`image(actions:)`](uigraphicsimagerenderer/image(actions:).md) method on [`UIGraphicsImageRenderer`](uigraphicsimagerenderer.md).
+It is recommended that you create a public method on your renderer subclass that internally wraps the [`runDrawingActions(_:completionActions:)`](./uigraphicsrenderer/rundrawingactions%28_,completionactions%29.md) method. This is how the rendering methods operate on the concrete subclasses, for example the [`image(actions:)`](./uigraphicsimagerenderer/image%28actions%29.md) method on [`UIGraphicsImageRenderer`](./uigraphicsimagerenderer.md).
 
-Each time the [`runDrawingActions(_:completionActions:)`](uigraphicsrenderer/rundrawingactions(_:completionactions:).md) method is called, the renderer calls the [`prepare(_:with:)`](uigraphicsrenderer/prepare(_:with:).md) method with the [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) and [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md) as arguments. Override the [`prepare(_:with:)`](uigraphicsrenderer/prepare(_:with:).md) method to apply the [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md) configuration to the underlying [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) before the renderer invokes the drawing actions.
+Each time the [`runDrawingActions(_:completionActions:)`](./uigraphicsrenderer/rundrawingactions%28_,completionactions%29.md) method is called, the renderer calls the [`prepare(_:with:)`](./uigraphicsrenderer/prepare%28_,with%29.md) method with the [`CGContext`](../CoreGraphics/cgcontext.md) and [`UIGraphicsRendererContext`](./uigraphicsrenderercontext.md) as arguments. Override the [`prepare(_:with:)`](./uigraphicsrenderer/prepare%28_,with%29.md) method to apply the [`UIGraphicsRendererContext`](./uigraphicsrenderercontext.md) configuration to the underlying [`CGContext`](../CoreGraphics/cgcontext.md) before the renderer invokes the drawing actions.
 
 ## Topics
 
 ### Initializing a graphics renderer
-- [convenience init(bounds: CGRect)](uigraphicsrenderer/init(bounds:).md)
+- [convenience init(bounds: CGRect)](./uigraphicsrenderer/init%28bounds%29.md)
   Creates a new graphics renderer with the specified bounds and a default format.
-- [init(bounds: CGRect, format: UIGraphicsRendererFormat)](uigraphicsrenderer/init(bounds:format:).md)
+- [init(bounds: CGRect, format: UIGraphicsRendererFormat)](./uigraphicsrenderer/init%28bounds,format%29.md)
   Creates a new graphics renderer with the given bounds and format.
 ### Configuring the renderer
-- [var allowsImageOutput: Bool](uigraphicsrenderer/allowsimageoutput.md)
+- [var allowsImageOutput: Bool](./uigraphicsrenderer/allowsimageoutput.md)
   A Boolean value specifying whether the renderer can create output images.
-- [var format: UIGraphicsRendererFormat](uigraphicsrenderer/format.md)
+- [var format: UIGraphicsRendererFormat](./uigraphicsrenderer/format.md)
   The format used to create the graphics renderer.
 ### Running the drawing actions
-- [func runDrawingActions((UIGraphicsRendererContext) -> Void, completionActions: ((UIGraphicsRendererContext) -> Void)?) throws](uigraphicsrenderer/rundrawingactions(_:completionactions:).md)
+- [func runDrawingActions((UIGraphicsRendererContext) -> Void, completionActions: ((UIGraphicsRendererContext) -> Void)?) throws](./uigraphicsrenderer/rundrawingactions%28_,completionactions%29.md)
   Performs drawing actions on a Core Graphics context that the renderer prepares.
-- [typealias UIGraphicsDrawingActions](uigraphicsdrawingactions.md)
+- [typealias UIGraphicsDrawingActions](./uigraphicsdrawingactions.md)
   A closure that executes a set of drawing instructions that the renderer applies to the Core Graphics context.
 ### Managing graphics contexts
-- [class func context(with: UIGraphicsRendererFormat) -> CGContext?](uigraphicsrenderer/context(with:).md)
+- [class func context(with: UIGraphicsRendererFormat) -> CGContext?](./uigraphicsrenderer/context%28with%29.md)
   Creates a Core Graphics context configured according to the supplied format object.
-- [class func prepare(CGContext, with: UIGraphicsRendererContext)](uigraphicsrenderer/prepare(_:with:).md)
+- [class func prepare(CGContext, with: UIGraphicsRendererContext)](./uigraphicsrenderer/prepare%28_,with%29.md)
   Applies the configuration specified in the renderer context to the Core Graphics context.
-- [class func rendererContextClass() -> AnyClass](uigraphicsrenderer/renderercontextclass.md)
+- [class func rendererContextClass() -> AnyClass](./uigraphicsrenderer/renderercontextclass%28%29.md)
   Specifies the drawing context class used by this graphics renderer.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [UIGraphicsImageRenderer](uigraphicsimagerenderer.md)
-- [UIGraphicsPDFRenderer](uigraphicspdfrenderer.md)
+- [UIGraphicsImageRenderer](./uigraphicsimagerenderer.md)
+- [UIGraphicsPDFRenderer](./uigraphicspdfrenderer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class UIGraphicsRendererContext](uigraphicsrenderercontext.md)
+### Graphics contexts
+- [class UIGraphicsRendererContext](./uigraphicsrenderercontext.md)
   The base class for the drawing environments for graphics renderers.
-- [class UIGraphicsRendererFormat](uigraphicsrendererformat.md)
+- [class UIGraphicsRendererFormat](./uigraphicsrendererformat.md)
   A set of drawing attributes that represents the configuration of a graphics renderer context.
-- [class UIGraphicsImageRenderer](uigraphicsimagerenderer.md)
+- [class UIGraphicsImageRenderer](./uigraphicsimagerenderer.md)
   A graphics renderer for creating Core Graphics-backed images.
-- [class UIGraphicsImageRendererContext](uigraphicsimagerenderercontext.md)
+- [class UIGraphicsImageRendererContext](./uigraphicsimagerenderercontext.md)
   The drawing environment for an image renderer.
-- [class UIGraphicsImageRendererFormat](uigraphicsimagerendererformat.md)
+- [class UIGraphicsImageRendererFormat](./uigraphicsimagerendererformat.md)
   A set of drawing attributes that represents the configuration of an image renderer context.
-- [class UIGraphicsPDFRenderer](uigraphicspdfrenderer.md)
+- [class UIGraphicsPDFRenderer](./uigraphicspdfrenderer.md)
   A graphics renderer for creating PDFs.
-- [class UIGraphicsPDFRendererContext](uigraphicspdfrenderercontext.md)
+- [class UIGraphicsPDFRendererContext](./uigraphicspdfrenderercontext.md)
   The drawing environment for a PDF renderer.
-- [class UIGraphicsPDFRendererFormat](uigraphicspdfrendererformat.md)
+- [class UIGraphicsPDFRendererFormat](./uigraphicspdfrendererformat.md)
   A set of drawing attributes that represents the configuration of a PDF renderer context.
 
 

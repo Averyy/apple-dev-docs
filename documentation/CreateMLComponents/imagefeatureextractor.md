@@ -1,7 +1,8 @@
 # ImageFeatureExtractor
 
 **Framework**: Create ML Components  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A transformer that takes an image and outputs image features.
 
@@ -22,38 +23,39 @@ protocol ImageFeatureExtractor : Transformer where Self.Input == CIImage, Self.O
 ## Relationships
 
 ### Inherits From
-- [Transformer](transformer.md)
+- [Transformer](./transformer.md)
 ### Conforming Types
-- [ImageFeaturePrint](imagefeatureprint.md)
-- [MLModelImageFeatureExtractor](mlmodelimagefeatureextractor.md)
+- [ImageFeaturePrint](./imagefeatureprint.md)
+- [MLModelImageFeatureExtractor](./mlmodelimagefeatureextractor.md)
 
 ## See Also
 
-- [Augmenting images to expand your training data](augmenting-images-to-expand-your-training-data.md)
+### Image components
+- [Augmenting images to expand your training data](./augmenting-images-to-expand-your-training-data.md)
   Improve your model by using transformed versions of your training images.
-- [Creating a multi-label image classifier](creating-a-multi-label-image-classifier.md)
+- [Creating a multi-label image classifier](./creating-a-multi-label-image-classifier.md)
   Train a machine learning model to assign multiple labels to an image.
-- [struct ImageReader](imagereader.md)
+- [struct ImageReader](./imagereader.md)
   An image file reader.
-- [struct ImageCropper](imagecropper.md)
+- [struct ImageCropper](./imagecropper.md)
   An image crop transformer.
-- [struct ImageScaler](imagescaler.md)
+- [struct ImageScaler](./imagescaler.md)
   An image scaling transformer.
-- [struct ImageFeaturePrint](imagefeatureprint.md)
+- [struct ImageFeaturePrint](./imagefeatureprint.md)
   ImageFeaturePrint image feature extractor.
-- [struct ImageBlur](imageblur.md)
+- [struct ImageBlur](./imageblur.md)
   An image blurring transformer.
-- [struct ImageColorTransformer](imagecolortransformer.md)
+- [struct ImageColorTransformer](./imagecolortransformer.md)
   An image color transformer.
-- [struct ImageExposureAdjuster](imageexposureadjuster.md)
+- [struct ImageExposureAdjuster](./imageexposureadjuster.md)
   An image exposure adjusting transformer.
-- [struct ImageFlipper](imageflipper.md)
+- [struct ImageFlipper](./imageflipper.md)
   An image flipper transformer.
-- [struct ImageRotator](imagerotator.md)
+- [struct ImageRotator](./imagerotator.md)
   An image rotating transformer.
-- [struct RandomImageNoiseGenerator](randomimagenoisegenerator.md)
+- [struct RandomImageNoiseGenerator](./randomimagenoisegenerator.md)
   A transformer that adds random noise to an image.
-- [struct MLModelImageFeatureExtractor](mlmodelimagefeatureextractor.md)
+- [struct MLModelImageFeatureExtractor](./mlmodelimagefeatureextractor.md)
   An image feature extractor provided by an MLModel.
 
 

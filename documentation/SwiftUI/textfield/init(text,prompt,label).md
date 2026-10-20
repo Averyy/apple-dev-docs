@@ -1,7 +1,8 @@
 # init(text:prompt:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text field with a prompt generated from a `Text`.
 
@@ -21,9 +22,11 @@ nonisolated
 init(text: Binding<String>, prompt: Text? = nil, @ContentBuilder label: () -> Label)
 ```
 
+Available when `Label` conforms to `View`.
+
 #### Discussion
 
-Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an action whenever the user submits this text field.
+Use the [`onSubmit(of:_:)`](../view/onsubmit%28of,_%29.md) modifier to invoke an action whenever the user submits this text field.
 
 ## Parameters
 
@@ -33,9 +36,10 @@ Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an actio
 
 ## See Also
 
-- [init(_:text:)](textfield/init(_:text:).md)
+### Creating a text field with a string
+- [init(_:text:)](./init%28_,text%29.md)
   Creates a text field with a text label generated from a localized title string.
-- [init(_:text:prompt:)](textfield/init(_:text:prompt:).md)
+- [init(_:text:prompt:)](./init%28_,text,prompt%29.md)
   Creates a text field with a text label generated from a localized title string resource.
 
 

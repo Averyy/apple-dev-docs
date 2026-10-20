@@ -1,7 +1,8 @@
 # init(identifier:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new calendar specified by a given identifier.
 
@@ -20,6 +21,10 @@ Creates a new calendar specified by a given identifier.
 init?(identifier calendarIdentifierConstant: NSCalendar.Identifier)
 ```
 
+```objc
++ (NSCalendar *) calendarWithIdentifier:(NSCalendarIdentifier) calendarIdentifierConstant;
+```
+
 #### Return Value
 
 The initialized calendar, or `nil` if the identifier is unknown (if, for example, it is either an unrecognized string or the calendar is not supported by the current version of the operating system).
@@ -34,13 +39,15 @@ The returned calendar defaults to the current locale and default time zone.
 
 ## See Also
 
-- [var calendarIdentifier: NSCalendar.Identifier](nscalendar/calendaridentifier.md)
+### Related Documentation
+- [var calendarIdentifier: NSCalendar.Identifier](./calendaridentifier.md)
   An identifier for the calendar.
-- [class var autoupdatingCurrent: Calendar](nscalendar/autoupdatingcurrent.md)
+- [class var autoupdatingCurrent: Calendar](./autoupdatingcurrent.md)
   A calendar that tracks changes to user’s preferred calendar.
-- [init?(calendarIdentifier: NSCalendar.Identifier)](nscalendar/init(calendaridentifier:).md)
+### Creating and Initializing Calendars
+- [init?(calendarIdentifier: NSCalendar.Identifier)](./init%28calendaridentifier%29.md)
   Initializes a calendar according to a given identifier.
-- [NSCalendar.Identifier](nscalendar/identifier.md)
+- [NSCalendar.Identifier](./identifier.md)
   The supported calendar types.
 
 

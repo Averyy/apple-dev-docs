@@ -1,14 +1,15 @@
 # totalEnergy
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total electrical energy consumed or generated.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,13 +19,14 @@ var totalEnergy: Measurement<UnitEnergy>?
 
 ## Mentions
 
-- [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
+- [Providing charging history for electric vehicles](../providing-informative-charging-history-for-electric-vehicles.md)
 
 ## See Also
 
-- [var totalRuntime: Duration?](electricityinsightrecord/totalruntime.md)
+### Getting the insight record data
+- [var totalRuntime: Duration?](./totalruntime.md)
   The total time that electricity-consuming devices actively ran.
-- [let range: DateInterval](electricityinsightrecord/range.md)
+- [let range: DateInterval](./range.md)
   The time period that the insight record spans.
 
 

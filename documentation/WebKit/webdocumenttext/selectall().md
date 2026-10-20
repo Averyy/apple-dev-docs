@@ -2,12 +2,13 @@
 
 **Framework**: WebKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Selects all the text in the web document.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -15,13 +16,18 @@ Selects all the text in the web document.
 func selectAll()
 ```
 
+```objc
+- (void) selectAll;
+```
+
 ## See Also
 
-- [func deselectAll()](webdocumenttext/deselectall.md)
+### Selecting and deselecting text
+- [func deselectAll()](./deselectall%28%29.md)
   Deselects the currently selected text in the web document.
-- [func selectedString() -> String!](webdocumenttext/selectedstring.md)
+- [func selectedString() -> String!](./selectedstring%28%29.md)
   Returns the currently selected text in the web document as a string.
-- [func selectedAttributedString() -> NSAttributedString!](webdocumenttext/selectedattributedstring.md)
+- [func selectedAttributedString() -> NSAttributedString!](./selectedattributedstring%28%29.md)
   Returns the currently selected text in the web document as an attributed string.
 
 

@@ -1,7 +1,8 @@
 # errSecInvalidAction
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The action is invalid.
 
@@ -18,6 +19,10 @@ The action is invalid.
 
 ```swift
 var errSecInvalidAction: OSStatus { get }
+```
+
+```c
+errSecInvalidAction
 ```
 
 

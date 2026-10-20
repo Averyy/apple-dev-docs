@@ -1,7 +1,8 @@
 # PreprocessedFeatureSequence
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence of eagerly stored temporal features.
 
@@ -27,51 +28,52 @@ This sequence eagerly stores the results of preprocessing a temporal estimator.
 ## Topics
 
 ### Creating a sequence
-- [init<S>(S) async throws](preprocessedfeaturesequence/init(_:).md)
+- [init<S>(S) async throws](./preprocessedfeaturesequence/init%28_%29.md)
   Creates an asynchronous sequence of stored temporal features.
 ### Getting the properties
-- [var count: Int?](preprocessedfeaturesequence/count.md)
+- [var count: Int?](./preprocessedfeaturesequence/count.md)
   The stored temporal feature count.
-- [var features: [TemporalFeature<Feature>]](preprocessedfeaturesequence/features.md)
+- [var features: [TemporalFeature<Feature>]](./preprocessedfeaturesequence/features.md)
   The stored temporal features.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [TemporalSequence](temporalsequence.md)
+- [AsyncSequence](../Swift/asyncsequence.md)
+- [TemporalSequence](./temporalsequence.md)
 
 ## See Also
 
-- [Creating a time-series classifier](creating-a-time-series-classifier.md)
+### Time-based components
+- [Creating a time-series classifier](./creating-a-time-series-classifier.md)
   Train a machine learning model to predict the class label of time-series signals.
-- [Creating a time-series forecaster](creating-a-time-series-forecaster.md)
+- [Creating a time-series forecaster](./creating-a-time-series-forecaster.md)
   Forecast future data points by training a machine learning model using historical data.
-- [struct DateFeatures](datefeatures.md)
+- [struct DateFeatures](./datefeatures.md)
   A set of date and time features.
-- [struct DateFeatureExtractor](datefeatureextractor.md)
+- [struct DateFeatureExtractor](./datefeatureextractor.md)
   A time and date feature extractor.
-- [struct LinearTimeSeriesForecaster](lineartimeseriesforecaster.md)
+- [struct LinearTimeSeriesForecaster](./lineartimeseriesforecaster.md)
   A time-series forecasting estimator.
-- [struct LinearTimeSeriesForecasterConfiguration](lineartimeseriesforecasterconfiguration.md)
+- [struct LinearTimeSeriesForecasterConfiguration](./lineartimeseriesforecasterconfiguration.md)
   The configuration for a linear time-series forecaster.
-- [struct TimeSeriesForecasterBatches](timeseriesforecasterbatches.md)
+- [struct TimeSeriesForecasterBatches](./timeseriesforecasterbatches.md)
   A sequence of forecaster batches on a time series shaped array.
-- [struct TimeSeriesForecasterAnnotatedWindows](timeseriesforecasterannotatedwindows.md)
+- [struct TimeSeriesForecasterAnnotatedWindows](./timeseriesforecasterannotatedwindows.md)
   A sequence of forecasting windows on a time series shaped array.
-- [struct TemporalFeature](temporalfeature.md)
+- [struct TemporalFeature](./temporalfeature.md)
   A temporal feature contains a segment identifier and a feature value.
-- [protocol TemporalSequence](temporalsequence.md)
+- [protocol TemporalSequence](./temporalsequence.md)
   Async sequence for temporal features.
-- [struct TemporalSegmentIdentifier](temporalsegmentidentifier.md)
+- [struct TemporalSegmentIdentifier](./temporalsegmentidentifier.md)
   Uniquely identifiers a segment of a temporal sequence.
-- [struct SlidingWindows](slidingwindows.md)
+- [struct SlidingWindows](./slidingwindows.md)
   A sequence of windows on a time series shaped array.
-- [struct SlidingWindowTransformer](slidingwindowtransformer.md)
+- [struct SlidingWindowTransformer](./slidingwindowtransformer.md)
   A temporal transformer that groups input elements.
-- [struct Downsampler](downsampler.md)
+- [struct Downsampler](./downsampler.md)
   A temporal transformer that down samples the input stream.
-- [struct VideoReader](videoreader.md)
+- [struct VideoReader](./videoreader.md)
   A video file reader.
 
 

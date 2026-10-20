@@ -1,7 +1,8 @@
 # LSTMGradients(_:recurrentWeight:sourceGradient:zState:cellOutputFwd:stateGradient:cellGradient:inputWeight:bias:initState:initCell:mask:peephole:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an LSTM gradient operation and returns the gradient tensor values.
 
@@ -19,21 +20,25 @@ Creates an LSTM gradient operation and returns the gradient tensor values.
 func LSTMGradients(_ source: MPSGraphTensor, recurrentWeight: MPSGraphTensor, sourceGradient: MPSGraphTensor, zState: MPSGraphTensor, cellOutputFwd: MPSGraphTensor, stateGradient: MPSGraphTensor?, cellGradient: MPSGraphTensor?, inputWeight: MPSGraphTensor?, bias: MPSGraphTensor?, initState: MPSGraphTensor?, initCell: MPSGraphTensor?, mask: MPSGraphTensor?, peephole: MPSGraphTensor?, descriptor: MPSGraphLSTMDescriptor, name: String?) -> [MPSGraphTensor]
 ```
 
+```objc
+- (NSArray<MPSGraphTensor *> *) LSTMGradientsWithSourceTensor:(MPSGraphTensor *) source recurrentWeight:(MPSGraphTensor *) recurrentWeight sourceGradient:(MPSGraphTensor *) sourceGradient zState:(MPSGraphTensor *) zState cellOutputFwd:(MPSGraphTensor *) cellOutputFwd stateGradient:(MPSGraphTensor *) stateGradient cellGradient:(MPSGraphTensor *) cellGradient inputWeight:(MPSGraphTensor *) inputWeight bias:(MPSGraphTensor *) bias initState:(MPSGraphTensor *) initState initCell:(MPSGraphTensor *) initCell mask:(MPSGraphTensor *) mask peephole:(MPSGraphTensor *) peephole descriptor:(MPSGraphLSTMDescriptor *) descriptor name:(NSString *) name;
+```
+
 #### Return Value
 
 A valid `MPSGraphTensor` array containing gradients for each input tensor, except for `sourceGradient` and `mask`. In case an input is nil, no gradient will be returned for it. The order of the gradients will be: for `source`, for `recurrentWeight`, for `inputWeight`, for `bias`, for `peephole`, for `initState` and for `initCell`.
 
 #### Discussion
 
-For details of this operation and parameters, refer to documentation of [`LSTM(_:recurrentWeight:inputWeight:bias:initState:initCell:mask:peephole:descriptor:name:)`](mpsgraph/lstm(_:recurrentweight:inputweight:bias:initstate:initcell:mask:peephole:descriptor:name:).md).
+For details of this operation and parameters, refer to documentation of [`LSTM(_:recurrentWeight:inputWeight:bias:initState:initCell:mask:peephole:descriptor:name:)`](./lstm%28_,recurrentweight,inputweight,bias,initstate,initcell,mask,peephole,descriptor,name%29.md).
 
 ## Parameters
 
 - `source`: A tensor containing the source data `x[t]`  with the data layout [T,N,I]. In case `inputWeight = nil` and `bidirectional = NO` then the layout is [T,N,4H] and for `inputWeight = nil` and `bidirectional = YES` the layout is [T,N,8H].
 - `recurrentWeight`: A tensor containing the recurrent weights `R`. For `bidirectional` the layout is [2,4H,H] and otherwise it is [4H,H].
 - `sourceGradient`: The input gradient, that is the gradient of a tensor with respect to the first output of the forward pass.
-- `zState`: The third output of [`LSTM(_:recurrentWeight:inputWeight:bias:initState:initCell:descriptor:name:)`](mpsgraph/lstm(_:recurrentweight:inputweight:bias:initstate:initcell:descriptor:name:).md) with `descriptor.training = YES`.
-- `cellOutputFwd`: The second output of [`LSTM(_:recurrentWeight:inputWeight:bias:initState:initCell:descriptor:name:)`](mpsgraph/lstm(_:recurrentweight:inputweight:bias:initstate:initcell:descriptor:name:).md) with `descriptor.training = YES` or `descriptor.produceCell = YES`.
+- `zState`: The third output of [`LSTM(_:recurrentWeight:inputWeight:bias:initState:initCell:descriptor:name:)`](./lstm%28_,recurrentweight,inputweight,bias,initstate,initcell,descriptor,name%29.md) with `descriptor.training = YES`.
+- `cellOutputFwd`: The second output of [`LSTM(_:recurrentWeight:inputWeight:bias:initState:initCell:descriptor:name:)`](./lstm%28_,recurrentweight,inputweight,bias,initstate,initcell,descriptor,name%29.md) with `descriptor.training = YES` or `descriptor.produceCell = YES`.
 - `stateGradient`: The input gradient for state coming from the future timestep - optional, if missing the operation assumes zeroes.
 - `cellGradient`: Input gradient for cell coming from the future timestep - optional, if missing the operation assumes zeroes.
 - `inputWeight`: A tensor containing the input weights matrix `W` - optional, if missing the operation assumes a diagonal unit-matrix. For `bidirectional` the layout is [8H,I] and otherwise it is [4H,I].

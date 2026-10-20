@@ -1,7 +1,8 @@
 # NSTextLayoutManager.SegmentType.standard
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The standard segment, matching the typographic bounds of the range.
 
@@ -18,11 +19,16 @@ The standard segment, matching the typographic bounds of the range.
 case standard
 ```
 
+```c
+NSTextLayoutManagerSegmentTypeStandard
+```
+
 ## See Also
 
-- [NSTextLayoutManager.SegmentType.highlight](nstextlayoutmanager/segmenttype/highlight.md)
+### Kinds of text selection segments
+- [NSTextLayoutManager.SegmentType.highlight](./highlight.md)
   The segment behavior suitable for highlighting.
-- [NSTextLayoutManager.SegmentType.selection](nstextlayoutmanager/segmenttype/selection.md)
+- [NSTextLayoutManager.SegmentType.selection](./selection.md)
   The segment behavior suitable for selection rendering.
 
 

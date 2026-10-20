@@ -1,7 +1,8 @@
 # init(name:data:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a time zone with a given identifier and time zone data.
 
@@ -20,11 +21,15 @@ Initializes a time zone with a given identifier and time zone data.
 init?(name tzName: String, data aData: Data?)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) tzName data:(NSData *) aData;
+```
+
 #### Discussion
 
 As of macOS 10.6, the underlying implementation of this method has been changed to ignore the specified `data` parameter.
 
-> ❗ **Important**:  You should not use this method. Instead, use [`init(name:)`](nstimezone/init(name:).md) to initialize a time zone object with a given name.
+> ❗ **Important**:  You should not use this method. Instead, use [`init(name:)`](./init%28name%29.md) to initialize a time zone object with a given name.
 
 ## Parameters
 
@@ -33,15 +38,16 @@ As of macOS 10.6, the underlying implementation of this method has been changed 
 
 ## See Also
 
-- [init?(name: String)](nstimezone/init(name:).md)
+### Creating Time Zones
+- [init?(name: String)](./init%28name%29.md)
   Returns a time zone initialized with a given identifier.
-- [convenience init?(abbreviation: String)](nstimezone/init(abbreviation:).md)
+- [convenience init?(abbreviation: String)](./init%28abbreviation%29.md)
   Returns the time zone object identified by a given abbreviation.
-- [convenience init(forSecondsFromGMT: Int)](nstimezone/init(forsecondsfromgmt:).md)
+- [convenience init(forSecondsFromGMT: Int)](./init%28forsecondsfromgmt%29.md)
   Returns a time zone object offset from Greenwich Mean Time by a given number of seconds.
-- [class var knownTimeZoneNames: [String]](nstimezone/knowntimezonenames.md)
+- [class var knownTimeZoneNames: [String]](./knowntimezonenames.md)
   Returns an array of strings listing the IDs of all the time zones known to the system.
-- [class var abbreviationDictionary: [String : String]](nstimezone/abbreviationdictionary.md)
+- [class var abbreviationDictionary: [String : String]](./abbreviationdictionary.md)
   Returns a dictionary holding the mappings of time zone abbreviations to time zone names.
 
 

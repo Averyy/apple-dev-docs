@@ -1,7 +1,8 @@
 # decodeWithOptimizer(from:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads the encoded transformer and optimizer with a decoder.
 
@@ -20,6 +21,8 @@ Reads the encoded transformer and optimizer with a decoder.
 func decodeWithOptimizer(from decoder: inout any EstimatorDecoder) throws -> LinearRegressorModel<Scalar>
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
+
 #### Return Value
 
 The decoded transformer.
@@ -30,7 +33,8 @@ The decoded transformer.
 
 ## See Also
 
-- [func encodeWithOptimizer(LinearRegressorModel<Scalar>, to: inout any EstimatorEncoder) throws](linearregressor/encodewithoptimizer(_:to:).md)
+### Encoding and decoding
+- [func encodeWithOptimizer(LinearRegressorModel<Scalar>, to: inout any EstimatorEncoder) throws](./encodewithoptimizer%28_,to%29.md)
   Encodes the transformer and optimizer to an encoder.
 
 

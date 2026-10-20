@@ -1,7 +1,8 @@
 # hostHasController
 
 **Framework**: CoreAudioKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the host shows its own control surface in this view configuration.
 
@@ -18,11 +19,24 @@ A Boolean value that indicates whether the host shows its own control surface in
 var hostHasController: Bool { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+@property (nonatomic, readonly) BOOL hostHasController;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) BOOL hostHasController;
+```
+
 ## See Also
 
-- [var width: CGFloat](auaudiounitviewconfiguration/width.md)
+### Accessing Settings
+- [var width: CGFloat](./width.md)
   The configured width.
-- [var height: CGFloat](auaudiounitviewconfiguration/height.md)
+- [var height: CGFloat](./height.md)
   The configured height.
 
 

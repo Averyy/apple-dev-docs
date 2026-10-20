@@ -1,7 +1,8 @@
 # messagingAppUsage
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The camera session occurs while the user is in the app with messaging capability.
 
@@ -16,9 +17,14 @@ The camera session occurs while the user is in the app with messaging capability
 static var messagingAppUsage: SRFaceMetrics.Context { get }
 ```
 
+```c
+SRFaceMetricsContextMessagingAppUsage
+```
+
 ## See Also
 
-- [static var deviceUnlock: SRFaceMetrics.Context](srfacemetrics/context-swift.struct/deviceunlock.md)
+### Camera contexts
+- [static var deviceUnlock: SRFaceMetrics.Context](./deviceunlock.md)
   The camera session occurs while the user has the device unlocked.
 
 

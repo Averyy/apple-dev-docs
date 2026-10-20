@@ -1,6 +1,7 @@
 # Audio Components
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: API Collection
 
 Find, load, and configure audio components, such as Audio Units and audio codecs.
 
@@ -70,64 +71,65 @@ The bundle `Info.plist` file needs to contain an `AudioComponents` item whose va
 ## Topics
 
 ### Creating an Audio Component Instance
-- [func AudioComponentInstanceNew(AudioComponent, UnsafeMutablePointer<AudioComponentInstance?>) -> OSStatus](audiocomponentinstancenew(_:_:).md)
+- [func AudioComponentInstanceNew(AudioComponent, UnsafeMutablePointer<AudioComponentInstance?>) -> OSStatus](./audiocomponentinstancenew%28_,_%29.md)
   Creates a new instance of an audio component.
-- [func AudioComponentInstantiate(AudioComponent, AudioComponentInstantiationOptions, (AudioComponentInstance?, OSStatus) -> Void)](audiocomponentinstantiate(_:_:_:).md)
-- [func AudioComponentInstanceDispose(AudioComponentInstance) -> OSStatus](audiocomponentinstancedispose(_:).md)
+- [func AudioComponentInstantiate(AudioComponent, AudioComponentInstantiationOptions, (AudioComponentInstance?, OSStatus) -> Void)](./audiocomponentinstantiate%28_,_,_%29.md)
+- [func AudioComponentInstanceDispose(AudioComponentInstance) -> OSStatus](./audiocomponentinstancedispose%28_%29.md)
   Disposes of an audio component instance.
-- [typealias AudioComponent](audiocomponent.md)
+- [typealias AudioComponent](./audiocomponent.md)
   An audio component.
-- [struct AudioComponentInstantiationOptions](audiocomponentinstantiationoptions.md)
-- [Audio Component Errors](1619490-audio-component-errors.md)
+- [struct AudioComponentInstantiationOptions](./audiocomponentinstantiationoptions.md)
+- [Audio Component Errors](./api-1619490-audio-component-errors.md)
 ### Creating an Audio Component Dynamically
-- [func AudioComponentRegister(UnsafePointer<AudioComponentDescription>, CFString, UInt32, AudioComponentFactoryFunction) -> AudioComponent](audiocomponentregister(_:_:_:_:).md)
-- [func AudioComponentCount(UnsafePointer<AudioComponentDescription>) -> UInt32](audiocomponentcount(_:).md)
+- [func AudioComponentRegister(UnsafePointer<AudioComponentDescription>, CFString, UInt32, AudioComponentFactoryFunction) -> AudioComponent](./audiocomponentregister%28_,_,_,_%29.md)
+- [func AudioComponentCount(UnsafePointer<AudioComponentDescription>) -> UInt32](./audiocomponentcount%28_%29.md)
   Returns the number of audio components that match a specified `AudioComponentDescription` structure.
-- [func AudioComponentFindNext(AudioComponent?, UnsafePointer<AudioComponentDescription>) -> AudioComponent?](audiocomponentfindnext(_:_:).md)
+- [func AudioComponentFindNext(AudioComponent?, UnsafePointer<AudioComponentDescription>) -> AudioComponent?](./audiocomponentfindnext%28_,_%29.md)
   Finds the next component that matches a specified `AudioComponentDescription` structure after a specified audio component.
-- [func AudioComponentInstanceGetComponent(AudioComponentInstance) -> AudioComponent](audiocomponentinstancegetcomponent(_:).md)
+- [func AudioComponentInstanceGetComponent(AudioComponentInstance) -> AudioComponent](./audiocomponentinstancegetcomponent%28_%29.md)
   Retrieves a reference to an audio component from an instance of that audio component.
-- [struct AudioComponentDescription](audiocomponentdescription.md)
+- [struct AudioComponentDescription](./audiocomponentdescription.md)
   Identifying information for an audio component.
-- [typealias AudioComponentInstance](audiocomponentinstance.md)
+- [typealias AudioComponentInstance](./audiocomponentinstance.md)
   A component instance, or object, is an audio unit or audio codec.
-- [struct AudioComponentFlags](audiocomponentflags.md)
-- [typealias AudioComponentFactoryFunction](audiocomponentfactoryfunction.md)
+- [struct AudioComponentFlags](./audiocomponentflags.md)
+- [typealias AudioComponentFactoryFunction](./audiocomponentfactoryfunction.md)
 ### Getting Information About a Component
-- [func AudioComponentInstanceCanDo(AudioComponentInstance, Int16) -> Bool](audiocomponentinstancecando(_:_:).md)
+- [func AudioComponentInstanceCanDo(AudioComponentInstance, Int16) -> Bool](./audiocomponentinstancecando%28_,_%29.md)
   Determines if an audio component instance implements a particular function.
-- [func AudioComponentGetDescription(AudioComponent, UnsafeMutablePointer<AudioComponentDescription>) -> OSStatus](audiocomponentgetdescription(_:_:).md)
+- [func AudioComponentGetDescription(AudioComponent, UnsafeMutablePointer<AudioComponentDescription>) -> OSStatus](./audiocomponentgetdescription%28_,_%29.md)
   Gets the class description, as an `AudioComponentDescription` structure, of an audio component.
-- [func AudioComponentCopyName(AudioComponent, UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus](audiocomponentcopyname(_:_:).md)
+- [func AudioComponentCopyName(AudioComponent, UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus](./audiocomponentcopyname%28_,_%29.md)
   Returns the generic name of an audio component.
-- [func AudioComponentGetVersion(AudioComponent, UnsafeMutablePointer<UInt32>) -> OSStatus](audiocomponentgetversion(_:_:).md)
+- [func AudioComponentGetVersion(AudioComponent, UnsafeMutablePointer<UInt32>) -> OSStatus](./audiocomponentgetversion%28_,_%29.md)
   Gets the version of an audio component in hexadecimal form as `0xMMMMmmDD` (major, minor, dot).
-- [func AudioComponentCopyIcon(AudioComponent) -> UIImage?](audiocomponentcopyicon(_:).md)
-- [func AudioComponentCopyConfigurationInfo(AudioComponent, UnsafeMutablePointer<Unmanaged<CFDictionary>?>) -> OSStatus](audiocomponentcopyconfigurationinfo(_:_:).md)
-- [struct AudioComponentPlugInInterface](audiocomponentplugininterface.md)
-- [typealias AudioComponentMethod](audiocomponentmethod.md)
+- [func AudioComponentCopyIcon(AudioComponent) -> UIImage?](./audiocomponentcopyicon%28_%29.md)
+- [func AudioComponentCopyConfigurationInfo(AudioComponent, UnsafeMutablePointer<Unmanaged<CFDictionary>?>) -> OSStatus](./audiocomponentcopyconfigurationinfo%28_,_%29.md)
+- [struct AudioComponentPlugInInterface](./audiocomponentplugininterface.md)
+- [typealias AudioComponentMethod](./audiocomponentmethod.md)
 ### Validating an Audio Component
-- [func AudioComponentValidate(AudioComponent, CFDictionary?, UnsafeMutablePointer<AudioComponentValidationResult>) -> OSStatus](audiocomponentvalidate(_:_:_:).md)
-- [var kAudioComponentValidationParameter_LoadOutOfProcess: String](kaudiocomponentvalidationparameter_loadoutofprocess.md)
-- [enum AudioComponentValidationResult](audiocomponentvalidationresult.md)
+- [func AudioComponentValidate(AudioComponent, CFDictionary?, UnsafeMutablePointer<AudioComponentValidationResult>) -> OSStatus](./audiocomponentvalidate%28_,_,_%29.md)
+- [var kAudioComponentValidationParameter_LoadOutOfProcess: String](./kaudiocomponentvalidationparameter_loadoutofprocess.md)
+- [enum AudioComponentValidationResult](./audiocomponentvalidationresult.md)
 ### Constants
-- [var kAudioComponentConfigurationInfo_ValidationResult: String](kaudiocomponentconfigurationinfo_validationresult.md)
-- [let kAudioComponentInstanceInvalidationNotification: CFString](kaudiocomponentinstanceinvalidationnotification.md)
-- [let kAudioComponentRegistrationsChangedNotification: CFString](kaudiocomponentregistrationschangednotification.md)
-- [var kAudioComponentValidationParameter_ForceValidation: String](kaudiocomponentvalidationparameter_forcevalidation.md)
-- [var kAudioComponentValidationParameter_TimeOut: String](kaudiocomponentvalidationparameter_timeout.md)
+- [var kAudioComponentConfigurationInfo_ValidationResult: String](./kaudiocomponentconfigurationinfo_validationresult.md)
+- [let kAudioComponentInstanceInvalidationNotification: CFString](./kaudiocomponentinstanceinvalidationnotification.md)
+- [let kAudioComponentRegistrationsChangedNotification: CFString](./kaudiocomponentregistrationschangednotification.md)
+- [var kAudioComponentValidationParameter_ForceValidation: String](./kaudiocomponentvalidationparameter_forcevalidation.md)
+- [var kAudioComponentValidationParameter_TimeOut: String](./kaudiocomponentvalidationparameter_timeout.md)
 
 ## See Also
 
-- [Generating spatial audio from a multichannel audio stream](generating-spatial-audio-from-a-multichannel-audio-stream.md)
+### Audio Units
+- [Generating spatial audio from a multichannel audio stream](./generating-spatial-audio-from-a-multichannel-audio-stream.md)
   Convert 8-channel audio to 2-channel spatial audio by using a spatial mixer audio unit.
-- [Audio Unit v3 Plug-Ins](audio-unit-v3-plug-ins.md)
+- [Audio Unit v3 Plug-Ins](./audio-unit-v3-plug-ins.md)
   Deliver custom audio effects, instruments, and other audio behaviors using an Audio Unit v3 app extension.
-- [Audio Unit v2 (C) API](audio-unit-v2-c-api.md)
+- [Audio Unit v2 (C) API](./audio-unit-v2-c-api.md)
   Configure an Audio Unit and prepare it to render audio.
-- [Audio Unit Properties](audio-unit-properties.md)
+- [Audio Unit Properties](./audio-unit-properties.md)
   Obtain information about the built-in mixers, equalizers, filters, effects, and other Audio Unit app extensions.
-- [Audio Unit Voice I/O](audio-unit-voice-i-o.md)
+- [Audio Unit Voice I/O](./audio-unit-voice-i-o.md)
   Configure system voice processing and respond to speech events.
 
 

@@ -1,7 +1,8 @@
 # index(before:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index in the range before the specified one.
 
@@ -22,11 +23,12 @@ func index(before i: IndexSet.RangeView.Index) -> IndexSet.RangeView.Index
 
 ## See Also
 
-- [let startIndex: IndexSet.RangeView.Index](indexset/rangeview-swift.struct/startindex.md)
+### Finding Indexes
+- [let startIndex: IndexSet.RangeView.Index](./startindex.md)
   The beginning index in the range.
-- [let endIndex: IndexSet.RangeView.Index](indexset/rangeview-swift.struct/endindex.md)
+- [let endIndex: IndexSet.RangeView.Index](./endindex.md)
   The ending index in the range.
-- [func index(after: IndexSet.RangeView.Index) -> IndexSet.RangeView.Index](indexset/rangeview-swift.struct/index(after:).md)
+- [func index(after: IndexSet.RangeView.Index) -> IndexSet.RangeView.Index](./index%28after%29.md)
   Returns the index in the range after the specified one.
 
 

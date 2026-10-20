@@ -1,17 +1,22 @@
 # systemID
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The systemID URL.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var systemID: Unmanaged<CFURL>!
+```
+
+```c
+CFURLRef systemID;
 ```
 
 

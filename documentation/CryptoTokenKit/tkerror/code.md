@@ -1,7 +1,8 @@
 # TKError.Code
 
 **Framework**: CryptoTokenKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes from CryptoTokenKit.
 
@@ -20,50 +21,55 @@ Error codes from CryptoTokenKit.
 enum Code
 ```
 
+```c
+enum TKErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Error Codes
-- [TKError.Code.notImplemented](tkerror/code/notimplemented.md)
+- [TKError.Code.notImplemented](./code/notimplemented.md)
   The functionality is not implemented.
-- [TKError.Code.communicationError](tkerror/code/communicationerror.md)
+- [TKError.Code.communicationError](./code/communicationerror.md)
   A communication error occurred.
-- [TKError.Code.corruptedData](tkerror/code/corrupteddata.md)
+- [TKError.Code.corruptedData](./code/corrupteddata.md)
   The data was corrupted.
-- [TKError.Code.canceledByUser](tkerror/code/canceledbyuser.md)
+- [TKError.Code.canceledByUser](./code/canceledbyuser.md)
   The operation was canceled by the user.
-- [TKError.Code.authenticationFailed](tkerror/code/authenticationfailed.md)
+- [TKError.Code.authenticationFailed](./code/authenticationfailed.md)
   Authentication failed.
-- [TKError.Code.objectNotFound](tkerror/code/objectnotfound.md)
+- [TKError.Code.objectNotFound](./code/objectnotfound.md)
   The object was not found.
-- [TKError.Code.tokenNotFound](tkerror/code/tokennotfound.md)
+- [TKError.Code.tokenNotFound](./code/tokennotfound.md)
   The token was not found.
-- [TKError.Code.badParameter](tkerror/code/badparameter.md)
+- [TKError.Code.badParameter](./code/badparameter.md)
   An invalid parameter was provided.
-- [TKError.Code.authenticationNeeded](tkerror/code/authenticationneeded.md)
+- [TKError.Code.authenticationNeeded](./code/authenticationneeded.md)
   Authentication is needed.
-- [static var TKErrorAuthenticationFailed: TKError.Code](tkerror/code/tkerrorauthenticationfailed.md)
-- [static var TKErrorObjectNotFound: TKError.Code](tkerror/code/tkerrorobjectnotfound.md)
-- [static var TKErrorTokenNotFound: TKError.Code](tkerror/code/tkerrortokennotfound.md)
+- [static var TKErrorAuthenticationFailed: TKError.Code](./code/tkerrorauthenticationfailed.md)
+- [static var TKErrorObjectNotFound: TKError.Code](./code/tkerrorobjectnotfound.md)
+- [static var TKErrorTokenNotFound: TKError.Code](./code/tkerrortokennotfound.md)
 ### Enumeration Cases
-- [TKError.Code.invalidatedDeviceKey](tkerror/code/invalidateddevicekey.md)
+- [TKError.Code.invalidatedDeviceKey](./code/invalidateddevicekey.md)
 ### Initializers
-- [init?(rawValue: Int)](tkerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct TKError](tkerror.md)
+### Errors
+- [struct TKError](../tkerror.md)
   An error specific to the CryptoTokenKit framework.
-- [let TKErrorDomain: String](tkerrordomain.md)
+- [let TKErrorDomain: String](../tkerrordomain.md)
   The domain for all CryptoTokenKit framework errors.
 
 

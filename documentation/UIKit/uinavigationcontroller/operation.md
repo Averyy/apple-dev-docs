@@ -1,16 +1,17 @@
 # UINavigationController.Operation
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that define the type of navigation controller transitions that can occur.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,27 +19,31 @@ Constants that define the type of navigation controller transitions that can occ
 enum Operation
 ```
 
+```c
+enum UINavigationControllerOperation : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UINavigationController.Operation.none](uinavigationcontroller/operation/none.md)
+- [UINavigationController.Operation.none](./operation/none.md)
   A constant that indicates no operation is taking place.
-- [UINavigationController.Operation.push](uinavigationcontroller/operation/push.md)
+- [UINavigationController.Operation.push](./operation/push.md)
   A constant that indicates a view controller is being pushed onto the navigation stack.
-- [UINavigationController.Operation.pop](uinavigationcontroller/operation/pop.md)
+- [UINavigationController.Operation.pop](./operation/pop.md)
   A constant that indicates the topmost view controller is being removed from the navigation stack.
 ### Initializers
-- [init?(rawValue: Int)](uinavigationcontroller/operation/init(rawvalue:).md)
+- [init?(rawValue: Int)](./operation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

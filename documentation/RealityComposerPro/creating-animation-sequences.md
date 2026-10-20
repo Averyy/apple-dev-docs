@@ -1,6 +1,7 @@
 # Creating animation sequences
 
-**Framework**: Reality Composer Pro
+**Framework**: Reality Composer Pro  
+**Role**: Article
 
 Build animation sequences that drive entity behavior across multiple tracks in Reality Composer Pro.
 
@@ -10,7 +11,7 @@ In Reality Composer Pro, a **sequence** is an asset that defines a series of ani
 
 You can build and design sequences in the Sequence Editor, where you can add and edit motion paths, animations, and movements. Apply a sequence to an entity. When you create a sequence, Reality Composer Pro prompts you to open an entity in your project.
 
-##### Create or Open an Animation Sequence
+##### Create or open an animation sequence
 
 1. In the Project Browser, control-click a folder, and then click **New** > **Animation** > **Sequence**.
 2. Type a name for the sequence and then press Return.
@@ -20,47 +21,47 @@ You can build and design sequences in the Sequence Editor, where you can add and
 
 **Method 2** In the Project Browser, browse to an animation sequence and double-click it to open it. The animation sequence and its associated entity open automatically.
 
-![A screenshot of Reality Composer Pro showing an animation sequence in the Project Browser.](/images/RealityComposerPro/AnimationProjectBrowser@2x.png)
+![A screenshot of Reality Composer Pro showing an animation sequence in the Project Browser.](https://developer.apple.com/tutorials/images/RealityComposerPro/AnimationProjectBrowser@2x.png)
 
-#### Browse the Animation Clips Panel
+#### Browse the Animation Clips panel
 
 The Animation Clips panel shows a list of compatible animations for the currently open sequence. After you add tracks to your sequence, drag clips from this panel directly onto tracks in the Sequence Editor.
 
 > 💡 **Tip**: Click the **Hierarchy** tab in the Animation Clips panel to view the entity hierarchy for the currently opened animation sequence. This is useful when your sequence has deeply nested entities and you need to find a specific child entity.
 
-![A screenshot of Reality Composer Pro showing the Animation Clips panel with compatible animations listed for an open animation sequence.](/images/RealityComposerPro/OpenExistingAnimation@2x.png)
+![A screenshot of Reality Composer Pro showing the Animation Clips panel with compatible animations listed for an open animation sequence.](https://developer.apple.com/tutorials/images/RealityComposerPro/OpenExistingAnimation@2x.png)
 
-#### Change Animation Sequence Playback
+#### Change animation sequence playback
 
 To sync a clip to a specific moment in your sequence, drag the left edge of a clip to set the **Trim Start**. To adjust the **Repeat Mode** and **Repeat Duration**, drag from the top of the right edge. To set the **Trim End**, drag from the bottom of the right edge. Hold Option while dragging the bottom-right edge to change the **Speed**. For actions, drag the right edge to adjust **Duration**.
 
-#### Change Sequence Editor Display Options
+#### Change Sequence Editor display options
 
 Click **Options** (…) to change the following options:
 
 - Units — Frames or Seconds
 - Snap — Nodes to Ruler, Nodes to Nodes, Playhead to Ruler
 
-#### Add a Sequence Track
+#### Add a sequence track
 
 To add a sequence track, click **[+]** in the lower left corner. Select a target entity in the preview tab and then click **Select**. In the Inspector, enter a name for the new track.
 
 To add a sub-track to an existing sequence track, click **[+]** in the lower right corner of the sequence track. In the Inspector, enter a name for the new sub-track.
 
-#### Add Actions to a Sequence
+#### Add actions to a sequence
 
 Actions are predefined, modular parts you can add to a sequence track to perform different functions. Under **Animation Clips**, under **Actions**, drag an action onto a sequence track. Click the action to select it, then configure its parameters in the Inspector. Different actions have different parameters.
 
 The following actions are available:
 
-- **Play Audio** — Plays an audio file or sound effect synchronized with the animation timeline. Add audio files to an Audio Library Component on the target entity before they appear in the Sequence Editor for selection. See [`PlayAudioAction`](https://developer.apple.com/documentation/realitykit/playaudioaction).
-- **Enable/Disable Entity** — Controls the visibility and active state of a target entity and its descendants in the scene, turning them on or off at specific timeline points. See [`SetEntityEnabledAction`](https://developer.apple.com/documentation/realitykit/setentityenabledaction).
+- **Play Audio** — Plays an audio file or sound effect synchronized with the animation timeline. Add audio files to an Audio Library Component on the target entity before they appear in the Sequence Editor for selection. See [`PlayAudioAction`](../RealityKit/playaudioaction.md).
+- **Enable/Disable Entity** — Controls the visibility and active state of a target entity and its descendants in the scene, turning them on or off at specific timeline points. See [`SetEntityEnabledAction`](../RealityKit/setentityenabledaction.md).
 - **Motion Path** — Defines spatial control points for path-based orbit, spin, or custom movement animation along predefined trajectories.
-- **Billboard Blend In/Out** — Animates the blend factor of the target entity’s Billboard component, controlling how strongly the entity orients itself toward the active camera over time. See [`BillboardAction`](https://developer.apple.com/documentation/realitykit/billboardaction).
+- **Billboard Blend In/Out** — Animates the blend factor of the target entity’s Billboard component, controlling how strongly the entity orients itself toward the active camera over time. See [`BillboardAction`](../RealityKit/billboardaction.md).
 
-![A screenshot of Reality Composer Pro Animation Sequence Editor showing a Track with an Animation Motion Path.](/images/RealityComposerPro/AnimationMotionPath2@2x.png)
+![A screenshot of Reality Composer Pro Animation Sequence Editor showing a Track with an Animation Motion Path.](https://developer.apple.com/tutorials/images/RealityComposerPro/AnimationMotionPath2@2x.png)
 
-#### Configure Sequence Properties
+#### Configure sequence properties
 
 The Sequence Settings control the global properties and target assignment for the sequence.
 
@@ -68,13 +69,13 @@ The Sequence Settings control the global properties and target assignment for th
 
 **Speed** Playback speed multiplier for the entire sequence. 1 is normal playback, 2 doubles playback speed, and so forth. Lower numbers reduce playback speed.
 
-#### Configure Track Properties
+#### Configure track properties
 
 Track properties let you turn a selected track on or off (mute). **Name** The name of the selected track.
 
 **Mute** When toggled, disables the track.
 
-#### Configure Clip Properties
+#### Configure clip properties
 
 The Animation Clip Properties provide controls for configuring animation clips on the Sequence Editor timeline.
 
@@ -96,17 +97,18 @@ The Animation Clip Properties provide controls for configuring animation clips o
 
 ## See Also
 
-- [Creating animation sequences for auto-play](creating-animation-sequences-for-autoplay.md)
+### Animation
+- [Creating animation sequences for auto-play](./creating-animation-sequences-for-autoplay.md)
   Root an animation Sequence at the right entity, then wire it to an Animation Library Component so it plays automatically at runtime.
-- [Building multi-track animation sequences](building-multi-track-animation-sequences.md)
+- [Building multi-track animation sequences](./building-multi-track-animation-sequences.md)
   Root a Sequence correctly so it shows up as a clip and plays automatically at runtime.
-- [Working with the Animation Graph](working-with-the-animation-graph.md)
+- [Working with the Animation Graph](./working-with-the-animation-graph.md)
   Build character animation state machines visually using the Animation Graph in Reality Composer Pro.
-- [Building an advanced Animation Graph](building-an-advanced-animation-graph.md)
+- [Building an advanced Animation Graph](./building-an-advanced-animation-graph.md)
   Drive a character’s locomotion state machine from a Script Graph at runtime.
-- [Building a navmesh in Reality Composer Pro](building-a-navmesh-in-reality-composer-pro.md)
+- [Building a navmesh in Reality Composer Pro](./building-a-navmesh-in-reality-composer-pro.md)
   Configure a navigation mesh in Reality Composer Pro to define walkable areas and paths for AI-controlled entities in your scene.
-- [Defining a behavior with Behavior Trees](defining-a-behavior-with-behavior-trees.md)
+- [Defining a behavior with Behavior Trees](./defining-a-behavior-with-behavior-trees.md)
   Set up and connect Behavior Tree nodes to drive entity decision-making in your scene.
 
 

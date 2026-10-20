@@ -1,25 +1,27 @@
 # Collection Types
 
-**Framework**: DriverKit
+**Framework**: DriverKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Types
-- [kOSCollectionTypeArray](koscollectiontypearray.md)
-- [kOSCollectionTypeBoolean](koscollectiontypeboolean.md)
-- [kOSCollectionTypeData](koscollectiontypedata.md)
-- [kOSCollectionTypeDictionary](koscollectiontypedictionary.md)
-- [kOSCollectionTypeNumber](koscollectiontypenumber.md)
-- [kOSCollectionTypeSerialization](koscollectiontypeserialization.md)
-- [kOSCollectionTypeSet](koscollectiontypeset.md)
-- [kOSCollectionTypeString](koscollectiontypestring.md)
-- [kOSCollectionTypeSymbol](koscollectiontypesymbol.md)
+- [kOSCollectionTypeArray](./koscollectiontypearray.md)
+- [kOSCollectionTypeBoolean](./koscollectiontypeboolean.md)
+- [kOSCollectionTypeData](./koscollectiontypedata.md)
+- [kOSCollectionTypeDictionary](./koscollectiontypedictionary.md)
+- [kOSCollectionTypeNumber](./koscollectiontypenumber.md)
+- [kOSCollectionTypeSerialization](./koscollectiontypeserialization.md)
+- [kOSCollectionTypeSet](./koscollectiontypeset.md)
+- [kOSCollectionTypeString](./koscollectiontypestring.md)
+- [kOSCollectionTypeSymbol](./koscollectiontypesymbol.md)
 
 ## See Also
 
-- [OSCollectionTypeID](oscollectiontypeid.md)
-- [OSCollectionTypeName](oscollectiontypename.md)
-- [OSCollectionType](oscollectiontype.md)
+### Getting Type Information
+- [OSCollectionTypeID](./oscollectiontypeid.md)
+- [OSCollectionTypeName](./oscollectiontypename.md)
+- [OSCollectionType](./oscollectiontype.md)
 
 
 ---

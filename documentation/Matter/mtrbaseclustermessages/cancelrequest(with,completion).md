@@ -1,7 +1,8 @@
 # cancelRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command CancelMessagesRequest
 
@@ -17,7 +18,15 @@ Command CancelMessagesRequest
 ## Declaration
 
 ```swift
+func cancelRequest(with params: MTRMessagesClusterCancelMessagesRequestParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func cancelRequest(with params: MTRMessagesClusterCancelMessagesRequestParams) async throws
+```
+
+```objc
+- (void) cancelMessagesRequestWithParams:(MTRMessagesClusterCancelMessagesRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

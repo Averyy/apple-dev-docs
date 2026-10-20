@@ -1,7 +1,8 @@
 # numericFormat
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string representing a count for the type, e.g. “2 books”.
 
@@ -11,7 +12,7 @@ A string representing a count for the type, e.g. “2 books”.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

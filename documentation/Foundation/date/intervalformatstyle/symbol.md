@@ -1,7 +1,8 @@
 # Date.IntervalFormatStyle.Symbol
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that supports customizing formatting templates using the date format style’s modifier functions, and constructing fixed-pattern date format strings.
 
@@ -22,9 +23,10 @@ typealias Symbol = Date.FormatStyle.Symbol
 
 ## See Also
 
-- [Date.IntervalFormatStyle.DateStyle](date/intervalformatstyle/datestyle.md)
+### Supporting Types
+- [Date.IntervalFormatStyle.DateStyle](./datestyle.md)
   The type that defines date interval styles that vary in length or in their included components.
-- [Date.IntervalFormatStyle.TimeStyle](date/intervalformatstyle/timestyle.md)
+- [Date.IntervalFormatStyle.TimeStyle](./timestyle.md)
   The type that defines time styles that vary in length or in their included components.
 
 

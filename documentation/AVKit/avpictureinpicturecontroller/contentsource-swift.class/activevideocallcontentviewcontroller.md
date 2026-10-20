@@ -1,7 +1,8 @@
 # activeVideoCallContentViewController
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view controller that presents the video call content.
 
@@ -17,6 +18,10 @@ The view controller that presents the video call content.
 var activeVideoCallContentViewController: AVPictureInPictureVideoCallViewController { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVPictureInPictureVideoCallViewController * activeVideoCallContentViewController;
+```
+
 #### Discussion
 
 This view controller may indicate a preferred content size which influences the aspect ratio and the size of the Picture in Picture window. The view it presents isn’t interactive and doesn’t receive touches or user input.
@@ -27,9 +32,10 @@ Although apps can choose to move content from their source view to this view con
 
 ## See Also
 
-- [var activeVideoCallSourceView: UIView?](avpictureinpicturecontroller/contentsource-swift.class/activevideocallsourceview.md)
+### Accessing the active call presentation
+- [var activeVideoCallSourceView: UIView?](./activevideocallsourceview.md)
   The view that contains the video content of the call.
-- [class AVPictureInPictureVideoCallViewController](avpictureinpicturevideocallviewcontroller.md)
+- [class AVPictureInPictureVideoCallViewController](../../avpictureinpicturevideocallviewcontroller.md)
   A view controller that presents content from a video call in Picture in Picture.
 
 

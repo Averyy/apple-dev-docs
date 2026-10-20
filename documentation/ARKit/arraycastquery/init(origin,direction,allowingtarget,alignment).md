@@ -1,7 +1,8 @@
 # init(origin:direction:allowingTarget:alignment:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+

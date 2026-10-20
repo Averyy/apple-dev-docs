@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of the date interval.
 
@@ -20,11 +21,16 @@ The duration of the date interval.
 var duration: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval duration;
+```
+
 ## See Also
 
-- [var startDate: Date](nsdateinterval/startdate.md)
+### Accessing Start Date, End Date, and Duration
+- [var startDate: Date](./startdate.md)
   The start date of the date interval.
-- [var endDate: Date](nsdateinterval/enddate.md)
+- [var endDate: Date](./enddate.md)
   The end date of the date interval.
 
 

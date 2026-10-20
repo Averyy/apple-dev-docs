@@ -1,7 +1,8 @@
 # background
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A configuration that describes the launch scene’s background.
 
@@ -9,7 +10,7 @@ A configuration that describes the launch scene’s background.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ A configuration that describes the launch scene’s background.
 
 ## See Also
 
-- [var title: String](uidocumentviewcontroller/launchoptions-swift.class/title.md)
+### Configuring the appearance
+- [var title: String](./title.md)
   The title that appears in the title view.
-- [var documentTargetView: UIView?](uidocumentviewcontroller/launchoptions-swift.class/documenttargetview.md)
+- [var documentTargetView: UIView?](./documenttargetview.md)
   The document target view.
-- [var browserViewController: UIDocumentBrowserViewController](uidocumentviewcontroller/launchoptions-swift.class/browserviewcontroller.md)
+- [var browserViewController: UIDocumentBrowserViewController](./browserviewcontroller.md)
   The document browser view controller.
 
 

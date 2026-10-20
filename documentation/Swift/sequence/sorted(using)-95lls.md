@@ -1,7 +1,8 @@
 # sorted(using:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the elements of the sequence, sorted using the given comparator to compare elements.
 

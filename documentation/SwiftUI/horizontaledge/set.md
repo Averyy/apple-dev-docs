@@ -1,7 +1,8 @@
 # HorizontalEdge.Set
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An efficient set of horizontal edges.
 
@@ -24,28 +25,28 @@ struct Set
 ## Topics
 
 ### Getting edge sets
-- [static let all: HorizontalEdge.Set](horizontaledge/set/all.md)
+- [static let all: HorizontalEdge.Set](./set/all.md)
   A set containing the leading and trailing horizontal edges.
-- [static let leading: HorizontalEdge.Set](horizontaledge/set/leading.md)
+- [static let leading: HorizontalEdge.Set](./set/leading.md)
   A set containing only the leading horizontal edge.
-- [static let trailing: HorizontalEdge.Set](horizontaledge/set/trailing.md)
+- [static let trailing: HorizontalEdge.Set](./set/trailing.md)
   A set containing only the trailing horizontal edge.
 ### Creating an edge set
-- [init(HorizontalEdge)](horizontaledge/set/init(_:).md)
+- [init(HorizontalEdge)](./set/init%28_%29.md)
   Creates a set of edges containing only the specified horizontal edge.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

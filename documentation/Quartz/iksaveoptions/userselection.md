@@ -1,7 +1,8 @@
 # userSelection
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a dictionary that contains the save options selected by the user.
 
@@ -14,11 +15,16 @@ Returns a dictionary that contains the save options selected by the user.
 var userSelection: [AnyHashable : Any]! { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDictionary * userSelection;
+```
+
 ## See Also
 
-- [var imageProperties: [AnyHashable : Any]!](iksaveoptions/imageproperties.md)
+### Retrieving User Responses
+- [var imageProperties: [AnyHashable : Any]!](./imageproperties.md)
   Returns a dictionary of updated image properties that reflects the user’s selection.
-- [var imageUTType: String!](iksaveoptions/imageuttype.md)
+- [var imageUTType: String!](./imageuttype.md)
   Returns the uniform type identifier that reflects the user’s selection.
 
 

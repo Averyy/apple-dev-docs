@@ -1,7 +1,8 @@
 # JSValueToBoolean(_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts a JavaScript value to a Boolean and returns the resulting Boolean.
 
@@ -19,6 +20,10 @@ Converts a JavaScript value to a Boolean and returns the resulting Boolean.
 func JSValueToBoolean(_ ctx: JSContextRef!, _ value: JSValueRef!) -> Bool
 ```
 
+```c
+bool JSValueToBoolean(JSContextRef ctx, JSValueRef value);
+```
+
 #### Return Value
 
 The Boolean result of conversion.
@@ -26,15 +31,16 @@ The Boolean result of conversion.
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `value`: The [`JSValueRef`](jsvalueref.md) to convert.
+- `value`: The [`JSValueRef`](./jsvalueref.md) to convert.
 
 ## See Also
 
-- [func JSValueToNumber(JSContextRef!, JSValueRef!, UnsafeMutablePointer<JSValueRef?>!) -> Double](jsvaluetonumber(_:_:_:).md)
+### Converting to Primitive Values
+- [func JSValueToNumber(JSContextRef!, JSValueRef!, UnsafeMutablePointer<JSValueRef?>!) -> Double](./jsvaluetonumber%28_,_,_%29.md)
   Converts a JavaScript value to a number and returns the resulting number.
-- [func JSValueToStringCopy(JSContextRef!, JSValueRef!, UnsafeMutablePointer<JSValueRef?>!) -> JSStringRef!](jsvaluetostringcopy(_:_:_:).md)
+- [func JSValueToStringCopy(JSContextRef!, JSValueRef!, UnsafeMutablePointer<JSValueRef?>!) -> JSStringRef!](./jsvaluetostringcopy%28_,_,_%29.md)
   Converts a JavaScript value to a string and copies the result into a JavaScript string.
-- [func JSValueToObject(JSContextRef!, JSValueRef!, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](jsvaluetoobject(_:_:_:).md)
+- [func JSValueToObject(JSContextRef!, JSValueRef!, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](./jsvaluetoobject%28_,_,_%29.md)
   Converts a JavaScript value to an object and returns the resulting object.
 
 

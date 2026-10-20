@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of the event, in beats.
 
@@ -19,15 +20,20 @@ The duration of the event, in beats.
 var duration: AVMusicTimeStamp { get set }
 ```
 
+```objc
+@property (readwrite) AVMusicTimeStamp duration;
+```
+
 ## See Also
 
-- [var midiNote: Float](avextendednoteonevent/midinote.md)
+### Configuring a note-on event
+- [var midiNote: Float](./midinote.md)
   The MIDI note number.
-- [var velocity: Float](avextendednoteonevent/velocity.md)
+- [var velocity: Float](./velocity.md)
   The MDI velocity.
-- [var instrumentID: UInt32](avextendednoteonevent/instrumentid.md)
+- [var instrumentID: UInt32](./instrumentid.md)
   The instrument identifier.
-- [var groupID: UInt32](avextendednoteonevent/groupid.md)
+- [var groupID: UInt32](./groupid.md)
   The audio unit channel that handles the event.
 
 

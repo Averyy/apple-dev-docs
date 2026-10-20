@@ -1,23 +1,28 @@
 # DenseMatrix_Complex_Double
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Contains a dense `rowCount` x `columnCount` matrix of complex double values stored in column-major order.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct DenseMatrix_Complex_Double
+```
+
+```c
+typedef struct { ... } DenseMatrix_Complex_Double;
 ```
 
 #### Overview
@@ -31,22 +36,23 @@ struct DenseMatrix_Complex_Double
 ## Topics
 
 ### Initializers
-- [init(rowCount: Int32, columnCount: Int32, columnStride: Int32, attributes: SparseAttributesComplex_t, data: OpaquePointer)](densematrix_complex_double/init(rowcount:columncount:columnstride:attributes:data:).md)
+- [init(rowCount: Int32, columnCount: Int32, columnStride: Int32, attributes: SparseAttributesComplex_t, data: OpaquePointer)](./densematrix_complex_double/init%28rowcount,columncount,columnstride,attributes,data%29.md)
 ### Instance Properties
-- [var attributes: SparseAttributesComplex_t](densematrix_complex_double/attributes.md)
+- [var attributes: SparseAttributesComplex_t](./densematrix_complex_double/attributes.md)
   A type representing the attributes of a matrix.
-- [var columnCount: Int32](densematrix_complex_double/columncount.md)
-- [var columnStride: Int32](densematrix_complex_double/columnstride.md)
-- [var data: OpaquePointer](densematrix_complex_double/data.md)
-- [var rowCount: Int32](densematrix_complex_double/rowcount.md)
+- [var columnCount: Int32](./densematrix_complex_double/columncount.md)
+- [var columnStride: Int32](./densematrix_complex_double/columnstride.md)
+- [var data: OpaquePointer](./densematrix_complex_double/data.md)
+- [var rowCount: Int32](./densematrix_complex_double/rowcount.md)
 
 ## See Also
 
-- [struct DenseMatrix_Complex_Float](densematrix_complex_float.md)
+### Creating dense complex matrices and dense complex vectors
+- [struct DenseMatrix_Complex_Float](./densematrix_complex_float.md)
   Contains a dense `rowCount` x `columnCount` matrix of complex float values stored in column-major order.
-- [struct DenseVector_Complex_Double](densevector_complex_double.md)
+- [struct DenseVector_Complex_Double](./densevector_complex_double.md)
   Contains a dense vector of double complex values.
-- [struct DenseVector_Complex_Float](densevector_complex_float.md)
+- [struct DenseVector_Complex_Float](./densevector_complex_float.md)
   Contains a dense vector of float complex values.
 
 

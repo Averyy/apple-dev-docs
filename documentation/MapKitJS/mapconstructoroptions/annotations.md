@@ -1,7 +1,8 @@
 # annotations
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 An array holding all the annotations on the map.
 
@@ -10,7 +11,7 @@ An array holding all the annotations on the map.
 
 ## Declaration
 
-```swift
+```
 annotations?: Annotation[];
 ```
 
@@ -20,9 +21,10 @@ The default value is `[]` (empty array).
 
 ## See Also
 
-- [annotationForCluster](mapconstructoroptions/annotationforcluster.md)
+### Configuring map annotations
+- [annotationForCluster](./annotationforcluster.md)
   Modifies cluster annotations.
-- [selectedAnnotation](mapconstructoroptions/selectedannotation.md)
+- [selectedAnnotation](./selectedannotation.md)
   The selected annotation on the map.
 
 

@@ -1,7 +1,8 @@
 # init(_:relativeTo:flags:retryOnInterrupt:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `Stat` struct from a `FilePath` and `Flags`, including a `FileDescriptor` to resolve a relative path.
 

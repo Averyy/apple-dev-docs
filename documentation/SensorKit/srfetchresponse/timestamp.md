@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Retrieves the timestamp when the sensor sample was written to the data store.
 

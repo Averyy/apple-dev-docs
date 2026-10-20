@@ -1,7 +1,8 @@
 # layoutMarginsGuide
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A layout guide representing the view’s margins.
 
@@ -18,21 +19,27 @@ A layout guide representing the view’s margins.
 var layoutMarginsGuide: UILayoutGuide { get }
 ```
 
+```objc
+@property (strong, readonly) UILayoutGuide * layoutMarginsGuide;
+```
+
 #### Discussion
 
 Use this layout guide’s anchors to create constraints with the view’s margin.
 
 ## See Also
 
-- [var layoutMargins: UIEdgeInsets](uiview/layoutmargins.md)
+### Related Documentation
+- [var layoutMargins: UIEdgeInsets](./layoutmargins.md)
   The default spacing to use when laying out content in the view.
-- [func addLayoutGuide(UILayoutGuide)](uiview/addlayoutguide(_:).md)
+### Working with layout guides
+- [func addLayoutGuide(UILayoutGuide)](./addlayoutguide%28_%29.md)
   Adds the specified layout guide to the view.
-- [var layoutGuides: [UILayoutGuide]](uiview/layoutguides.md)
+- [var layoutGuides: [UILayoutGuide]](./layoutguides.md)
   The array of layout guide objects owned by this view.
-- [var readableContentGuide: UILayoutGuide](uiview/readablecontentguide.md)
+- [var readableContentGuide: UILayoutGuide](./readablecontentguide.md)
   A layout guide representing an area with a readable width within the view.
-- [func removeLayoutGuide(UILayoutGuide)](uiview/removelayoutguide(_:).md)
+- [func removeLayoutGuide(UILayoutGuide)](./removelayoutguide%28_%29.md)
   Removes the specified layout guide from the view.
 
 

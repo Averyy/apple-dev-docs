@@ -1,7 +1,8 @@
 # phoneNumber
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contact’s telephone number, or `nil` if the contact’s phone number is not needed for the transaction.
 
@@ -19,15 +20,20 @@ The contact’s telephone number, or `nil` if the contact’s phone number is no
 var phoneNumber: CNPhoneNumber? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) CNPhoneNumber * phoneNumber;
+```
+
 ## See Also
 
-- [var emailAddress: String?](pkcontact/emailaddress.md)
+### Contact information
+- [var emailAddress: String?](./emailaddress.md)
   The contact’s email address, or `nil` if the contact’s email is not needed for the transaction.
-- [var name: PersonNameComponents?](pkcontact/name.md)
+- [var name: PersonNameComponents?](./name.md)
   The contact’s first and last name, or `nil` if the contact’s name is not needed for the transaction.
-- [var postalAddress: CNPostalAddress?](pkcontact/postaladdress.md)
+- [var postalAddress: CNPostalAddress?](./postaladdress.md)
   The contact’s full postal address.
-- [var supplementarySubLocality: String?](pkcontact/supplementarysublocality.md)
+- [var supplementarySubLocality: String?](./supplementarysublocality.md)
   The contact’s sublocality, or `nil` if the sublocality is not needed for the transaction.
 
 

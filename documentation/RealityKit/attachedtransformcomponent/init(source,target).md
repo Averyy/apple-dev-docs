@@ -1,7 +1,8 @@
 # init(source:target:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an AttachedTransformComponent with an optional source pin and a target pin
 

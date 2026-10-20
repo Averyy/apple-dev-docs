@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static let automatic: CALayerContentsFormat
+```
+
+```c
+extern CALayerContentsFormat const kCAContentsFormatAutomatic;
 ```
 
 

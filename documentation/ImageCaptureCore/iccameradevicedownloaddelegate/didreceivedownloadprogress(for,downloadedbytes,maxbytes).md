@@ -1,7 +1,8 @@
 # didReceiveDownloadProgress(for:downloadedBytes:maxBytes:)
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the delegate about the status of the download.
 
@@ -18,9 +19,14 @@ Updates the delegate about the status of the download.
 optional func didReceiveDownloadProgress(for file: ICCameraFile, downloadedBytes: off_t, maxBytes: off_t)
 ```
 
+```objc
+- (void) didReceiveDownloadProgressForFile:(ICCameraFile *) file downloadedBytes:(off_t) downloadedBytes maxBytes:(off_t) maxBytes;
+```
+
 ## See Also
 
-- [func didDownloadFile(ICCameraFile, error: (any Error)?, options: [String : Any], contextInfo: UnsafeMutableRawPointer?)](iccameradevicedownloaddelegate/diddownloadfile(_:error:options:contextinfo:).md)
+### Responding to Download Status
+- [func didDownloadFile(ICCameraFile, error: (any Error)?, options: [String : Any], contextInfo: UnsafeMutableRawPointer?)](./diddownloadfile%28_,error,options,contextinfo%29.md)
   Tells the delegate that the requested download has completed.
 
 

@@ -1,14 +1,15 @@
 # init_display_putc
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 void init_display_putc(unsigned char *baseaddr, int rowbytes, int height);
 ```
 

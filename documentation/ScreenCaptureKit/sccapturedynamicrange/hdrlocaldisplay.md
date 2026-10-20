@@ -1,7 +1,8 @@
 # SCCaptureDynamicRange.hdrLocalDisplay
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the system captures the screen in high dynamic range with attributes of the local display.
 
@@ -13,6 +14,10 @@ Specifies that the system captures the screen in high dynamic range with attribu
 
 ```swift
 case hdrLocalDisplay
+```
+
+```c
+SCCaptureDynamicRangeHDRLocalDisplay
 ```
 
 #### Discussion

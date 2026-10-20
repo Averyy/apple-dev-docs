@@ -1,7 +1,8 @@
 # variable
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Variable line height based on font metrics.
 

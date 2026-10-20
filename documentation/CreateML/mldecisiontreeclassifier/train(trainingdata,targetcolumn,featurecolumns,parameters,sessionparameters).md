@@ -1,7 +1,8 @@
 # train(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Trains a decision tree classifier.
 
@@ -19,6 +20,12 @@ Trains a decision tree classifier.
 static func train(trainingData: DataFrame, targetColumn: String, featureColumns: [String]? = nil, parameters: MLDecisionTreeClassifier.ModelParameters = ModelParameters(), sessionParameters: MLTrainingSessionParameters = _defaultSessionParameters) throws -> MLJob<MLDecisionTreeClassifier>
 ```
 
+**Other overloads**:
+
+```swift
+static func train(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]? = nil, parameters: MLDecisionTreeClassifier.ModelParameters = ModelParameters(), sessionParameters: MLTrainingSessionParameters = _defaultSessionParameters) throws -> MLJob<MLDecisionTreeClassifier>
+```
+
 #### Return Value
 
 A `MLJob` that can be used to observe training progress.
@@ -32,14 +39,15 @@ If `sessionDirectory` is provided it will save training progress. If there is pr
 - `trainingData`: A `DataFrame` specifying training data.
 - `targetColumn`: A String specifying the target column name in the trainingData
 - `featureColumns`: An optional list of Strings specifying feature columns to be used to predict the target, if not provided, default to use all the other columns in the trainingData, except the one specified by targetColumn
-- `parameters`: Model training parameters. See [`MLDecisionTreeClassifier.ModelParameters`](mldecisiontreeclassifier/modelparameters-swift.struct.md) for the defaults.
-- `sessionParameters`: Training session parameters. See [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) for the defaults.
+- `parameters`: Model training parameters. See [`MLDecisionTreeClassifier.ModelParameters`](./modelparameters-swift.struct.md) for the defaults.
+- `sessionParameters`: Training session parameters. See [`MLTrainingSessionParameters`](../mltrainingsessionparameters.md) for the defaults.
 
 ## See Also
 
-- [var targetColumn: String](mldecisiontreeclassifier/targetcolumn.md)
+### Training a decision tree classifier synchronously
+- [var targetColumn: String](./targetcolumn.md)
   The name of the column you selected at initialization to define which categories the classifier predicts.
-- [var featureColumns: [String]](mldecisiontreeclassifier/featurecolumns.md)
+- [var featureColumns: [String]](./featurecolumns.md)
   The names of the columns you selected at initialization to train the classifier.
 
 

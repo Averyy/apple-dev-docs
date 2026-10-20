@@ -1,7 +1,8 @@
 # HMCharacteristicValueActivationState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the current status of an accessory.
 
@@ -19,25 +20,29 @@ Possible values for the current status of an accessory.
 enum HMCharacteristicValueActivationState
 ```
 
+```c
+enum HMCharacteristicValueActivationState : NSInteger;
+```
+
 ## Topics
 
 ### Activation States
-- [HMCharacteristicValueActivationState.inactive](hmcharacteristicvalueactivationstate/inactive.md)
+- [HMCharacteristicValueActivationState.inactive](./hmcharacteristicvalueactivationstate/inactive.md)
   The accessory is inactive.
-- [HMCharacteristicValueActivationState.active](hmcharacteristicvalueactivationstate/active.md)
+- [HMCharacteristicValueActivationState.active](./hmcharacteristicvalueactivationstate/active.md)
   The accessory is active.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvalueactivationstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvalueactivationstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

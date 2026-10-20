@@ -2,6 +2,7 @@
 
 **Framework**: Accelerate  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The number of channels in a pixel buffer.
@@ -12,7 +13,7 @@ The number of channels in a pixel buffer.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,7 +24,8 @@ static var channelCount: Int { get }
 
 ## See Also
 
-- [static var bitCountPerPixel: Int](staticpixelformat/bitcountperpixel.md)
+### Type Properties
+- [static var bitCountPerPixel: Int](./bitcountperpixel.md)
   The number of bits allocated for a single pixel.
 
 

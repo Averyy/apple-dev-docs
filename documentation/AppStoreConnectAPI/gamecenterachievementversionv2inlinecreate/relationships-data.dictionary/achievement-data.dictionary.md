@@ -1,7 +1,8 @@
 # GameCenterAchievementVersionV2InlineCreate.Relationships.Achievement
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describes the achievement of the Game Center achievement version v2 inline create.
 
@@ -10,7 +11,7 @@ The data that describes the achievement of the Game Center achievement version v
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementVersionV2InlineCreate.Relationships.Achievement
 ```
 
@@ -21,7 +22,7 @@ object GameCenterAchievementVersionV2InlineCreate.Relationships.Achievement
 ## Topics
 
 ### Dictionaries
-- [object GameCenterAchievementVersionV2InlineCreate.Relationships.Achievement.Data](gamecenterachievementversionv2inlinecreate/relationships-data.dictionary/achievement-data.dictionary/data-data.dictionary.md)
+- [object GameCenterAchievementVersionV2InlineCreate.Relationships.Achievement.Data](./achievement-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

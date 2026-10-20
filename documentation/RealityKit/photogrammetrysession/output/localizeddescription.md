@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Localized string containing any extra information about the message, such as the reason why a sample is invalid.
 

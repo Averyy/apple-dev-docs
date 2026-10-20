@@ -1,7 +1,8 @@
 # deviceUsage(for:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the anticipated compute devices that would be used for executing a NeuralNetwork layer.
 
@@ -20,9 +21,15 @@ Returns the anticipated compute devices that would be used for executing a Neura
 func deviceUsage(for layer: MLModelStructure.NeuralNetwork.Layer) -> MLComputePlan.DeviceUsage?
 ```
 
+**Other overloads**:
+
+```swift
+func deviceUsage(for operation: MLModelStructure.Program.Operation) -> MLComputePlan.DeviceUsage?
+```
+
 ## Mentions
 
-- [Analyzing a Core ML model’s performance in Xcode](analyzing-a-core-ml-model-s-performance-in-xcode.md)
+- [Analyzing a Core ML model’s performance in Xcode](../analyzing-a-core-ml-model-s-performance-in-xcode.md)
 
 #### Return Value
 
@@ -34,11 +41,12 @@ The anticipated compute devices that would be used for evaluating the layer or `
 
 ## See Also
 
-- [func deviceUsage(for: MLModelStructure.NeuralNetwork.Layer) -> MLComputePlan.DeviceUsage?](mlcomputeplan-1w21n/deviceusage(for:)-9em1q.md)
+### Getting the device usage
+- [func deviceUsage(for: MLModelStructure.NeuralNetwork.Layer) -> MLComputePlan.DeviceUsage?](./deviceusage%28for%29-9em1q.md)
   Returns the anticipated compute devices that would be used for executing a NeuralNetwork layer.
-- [func deviceUsage(for: MLModelStructure.Program.Operation) -> MLComputePlan.DeviceUsage?](mlcomputeplan-1w21n/deviceusage(for:)-7cdlm.md)
+- [func deviceUsage(for: MLModelStructure.Program.Operation) -> MLComputePlan.DeviceUsage?](./deviceusage%28for%29-7cdlm.md)
   Returns the anticipated compute devices that would be used for executing a MLProgram operation.
-- [MLComputePlan.DeviceUsage](mlcomputeplan-1w21n/deviceusage.md)
+- [MLComputePlan.DeviceUsage](./deviceusage.md)
   The anticipated compute devices that would be used for executing a layer/operation.
 
 

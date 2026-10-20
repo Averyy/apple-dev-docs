@@ -1,7 +1,8 @@
 # isVideoRotationAngleSupported(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the connection supports a rotation angle.
 
@@ -18,13 +19,18 @@ Returns a Boolean value that indicates whether the connection supports a rotatio
 func isVideoRotationAngleSupported(_ videoRotationAngle: CGFloat) -> Bool
 ```
 
+```objc
+- (BOOL) isVideoRotationAngleSupported:(CGFloat) videoRotationAngle;
+```
+
 ## Parameters
 
 - `videoRotationAngle`: A rotation angle in degrees.
 
 ## See Also
 
-- [var videoRotationAngle: CGFloat](avcaptureconnection/videorotationangle.md)
+### Rotating a video
+- [var videoRotationAngle: CGFloat](./videorotationangle.md)
   A rotation angle the connection applies to the video flowing through it.
 
 

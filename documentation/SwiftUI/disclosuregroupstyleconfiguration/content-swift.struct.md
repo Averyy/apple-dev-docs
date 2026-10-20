@@ -1,7 +1,8 @@
 # DisclosureGroupStyleConfiguration.Content
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased content of a disclosure group.
 
@@ -22,11 +23,12 @@ A type-erased content of a disclosure group.
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](../view.md)
 
 ## See Also
 
-- [let content: DisclosureGroupStyleConfiguration.Content](disclosuregroupstyleconfiguration/content-swift.property.md)
+### Configuring the content
+- [let content: DisclosureGroupStyleConfiguration.Content](./content-swift.property.md)
   The content of the disclosure group.
 
 

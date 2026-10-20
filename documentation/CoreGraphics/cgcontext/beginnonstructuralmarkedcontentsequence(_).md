@@ -1,7 +1,8 @@
 # beginNonStructuralMarkedContentSequence(_:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 func beginNonStructuralMarkedContentSequence(_ tagType: CGPDFTagType)
+```
+
+```c
+extern void CGPDFContextBeginNonStructuralMarkedContentSequence(CGContextRef context, CGPDFTagType tagType);
 ```
 
 

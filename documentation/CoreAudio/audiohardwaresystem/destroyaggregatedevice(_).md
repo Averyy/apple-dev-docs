@@ -1,12 +1,13 @@
 # destroyAggregateDevice(_:)
 
 **Framework**: Core Audio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Destroys the aggregate device represented by the given AudioHardwareAggregateDevice.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

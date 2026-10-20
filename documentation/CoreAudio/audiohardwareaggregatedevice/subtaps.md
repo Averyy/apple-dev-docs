@@ -1,7 +1,8 @@
 # subtaps
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of AudioHardwareTaps for all the subtaps contained in the aggregate device.
 

@@ -1,7 +1,8 @@
 # AVAsyncProperty.Status
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Loaded status values for asynchronous properties.
 
@@ -23,29 +24,29 @@ enum Status
 
 ## Mentions
 
-- [Loading media data asynchronously](loading-media-data-asynchronously.md)
+- [Loading media data asynchronously](../loading-media-data-asynchronously.md)
 
 ## Topics
 
 ### Status values
-- [AVAsyncProperty.Status.notYetLoaded](avasyncproperty/status/notyetloaded.md)
+- [AVAsyncProperty.Status.notYetLoaded](./status/notyetloaded.md)
   The system hasn’t loaded a property value.
-- [AVAsyncProperty.Status.loading](avasyncproperty/status/loading.md)
+- [AVAsyncProperty.Status.loading](./status/loading.md)
   The system is loading the property.
-- [AVAsyncProperty.Status.loaded(_:)](avasyncproperty/status/loaded(_:).md)
+- [AVAsyncProperty.Status.loaded(_:)](./status/loaded%28_%29.md)
   A property value is ready to use.
-- [AVAsyncProperty.Status.failed(_:)](avasyncproperty/status/failed(_:).md)
+- [AVAsyncProperty.Status.failed(_:)](./status/failed%28_%29.md)
   A property value fails to load.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

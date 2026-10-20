@@ -1,7 +1,8 @@
 # index(_:offsetBy:limitedBy:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
 
@@ -46,7 +47,7 @@ print(j)
 
 The value passed as `distance` must not offset `i` beyond the bounds of the collection, unless the index passed as `limit` prevents offsetting beyond those bounds.
 
-> **Note**: O(*n*), where *n* is the absolute value of `distance`.
+> **Complexity**: O(*n*), where *n* is the absolute value of `distance`.
 
 ## Parameters
 
@@ -56,27 +57,28 @@ The value passed as `distance` must not offset `i` beyond the bounds of the coll
 
 ## See Also
 
-- [var startIndex: String.Index](string/startindex.md)
+### Manipulating Indices
+- [var startIndex: String.Index](./startindex.md)
   The position of the first character in a nonempty string.
-- [var endIndex: String.Index](string/endindex.md)
+- [var endIndex: String.Index](./endindex.md)
   A string’s “past the end” position—that is, the position one greater than the last valid subscript argument.
-- [func index(after: String.Index) -> String.Index](string/index(after:).md)
+- [func index(after: String.Index) -> String.Index](./index%28after%29.md)
   Returns the position immediately after the given index.
-- [func formIndex(after: inout Self.Index)](string/formindex(after:).md)
+- [func formIndex(after: inout Self.Index)](./formindex%28after%29.md)
   Replaces the given index with its successor.
-- [func index(before: String.Index) -> String.Index](string/index(before:).md)
+- [func index(before: String.Index) -> String.Index](./index%28before%29.md)
   Returns the position immediately before the given index.
-- [func formIndex(before: inout Self.Index)](string/formindex(before:).md)
+- [func formIndex(before: inout Self.Index)](./formindex%28before%29.md)
   Replaces the given index with its predecessor.
-- [func index(String.Index, offsetBy: Int) -> String.Index](string/index(_:offsetby:).md)
+- [func index(String.Index, offsetBy: Int) -> String.Index](./index%28_,offsetby%29.md)
   Returns an index that is the specified distance from the given index.
-- [func formIndex(inout Self.Index, offsetBy: Int)](string/formindex(_:offsetby:).md)
+- [func formIndex(inout Self.Index, offsetBy: Int)](./formindex%28_,offsetby%29.md)
   Offsets the given index by the specified distance.
-- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](string/formindex(_:offsetby:limitedby:).md)
+- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](./formindex%28_,offsetby,limitedby%29.md)
   Offsets the given index by the specified distance, or so that it equals the given limiting index.
-- [func distance(from: String.Index, to: String.Index) -> Int](string/distance(from:to:).md)
+- [func distance(from: String.Index, to: String.Index) -> Int](./distance%28from,to%29.md)
   Returns the distance between two indices.
-- [var indices: DefaultIndices<Self>](string/indices-swift.property.md)
+- [var indices: DefaultIndices<Self>](./indices-swift.property.md)
   The indices that are valid for subscripting the collection, in ascending order.
 
 

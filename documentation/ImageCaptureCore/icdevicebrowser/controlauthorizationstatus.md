@@ -1,7 +1,8 @@
 # controlAuthorizationStatus
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 14.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var controlAuthorizationStatus: ICAuthorizationStatus { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) ICAuthorizationStatus controlAuthorizationStatus;
 ```
 
 

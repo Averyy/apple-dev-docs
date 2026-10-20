@@ -1,7 +1,8 @@
 # coordinateWithSession(_:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins coordination of the game with a group session
 

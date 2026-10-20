@@ -1,7 +1,8 @@
 # LaunchConstraint
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol to which a lightweight code requirement constraint conforms if you can use it in launch code requirements.
 
@@ -23,34 +24,35 @@ protocol LaunchConstraint : Decodable, Encodable, Sendable
 ## Relationships
 
 ### Inherits From
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [CodeDirectoryHash](codedirectoryhash.md)
-- [EntitlementsQuery](entitlementsquery.md)
-- [InfoPlistHash](infoplisthash.md)
-- [IsInitProcess](isinitprocess.md)
-- [IsSIPProtected](issipprotected.md)
-- [PlatformType](platformtype.md)
-- [ProcessCodeSigningFlags](processcodesigningflags.md)
-- [SigningIdentifier](signingidentifier.md)
-- [TeamIdentifier](teamidentifier.md)
-- [ValidationCategory](validationcategory.md)
+- [CodeDirectoryHash](./codedirectoryhash.md)
+- [EntitlementsQuery](./entitlementsquery.md)
+- [InfoPlistHash](./infoplisthash.md)
+- [IsInitProcess](./isinitprocess.md)
+- [IsSIPProtected](./issipprotected.md)
+- [PlatformType](./platformtype.md)
+- [ProcessCodeSigningFlags](./processcodesigningflags.md)
+- [SigningIdentifier](./signingidentifier.md)
+- [TeamIdentifier](./teamidentifier.md)
+- [ValidationCategory](./validationcategory.md)
 
 ## See Also
 
-- [func SecCodeCheckValidityWithProcessRequirement(code: SecCode, flags: SecCSFlags, requirement: ProcessCodeRequirement) -> ValidationResult](seccodecheckvaliditywithprocessrequirement(code:flags:requirement:).md)
+### Checking code requirements for launching processes
+- [func SecCodeCheckValidityWithProcessRequirement(code: SecCode, flags: SecCSFlags, requirement: ProcessCodeRequirement) -> ValidationResult](./seccodecheckvaliditywithprocessrequirement%28code,flags,requirement%29.md)
   Checks whether the code associated with a running process satisfies a lightweight code requirement.
-- [var launchRequirement: LaunchCodeRequirement?](../foundation/process/launchrequirement.md)
-- [struct LaunchCodeRequirement](launchcoderequirement.md)
+- [var launchRequirement: LaunchCodeRequirement?](../Foundation/process/launchrequirement.md)
+- [struct LaunchCodeRequirement](./launchcoderequirement.md)
   A lightweight code requirement that you use to evaluate the executable for a launching process.
-- [func allOf(requirement: () -> [any LaunchConstraint]) -> any LaunchConstraint](allof(requirement:)-4gf5f.md)
+- [func allOf(requirement: () -> [any LaunchConstraint]) -> any LaunchConstraint](./allof%28requirement%29-4gf5f.md)
   Creates a constraint that requires a launching process’s executable to satisfy all of the provided constraints.
-- [func anyOf(requirement: () -> [any LaunchConstraint]) -> any LaunchConstraint](anyof(requirement:)-6nicx.md)
+- [func anyOf(requirement: () -> [any LaunchConstraint]) -> any LaunchConstraint](./anyof%28requirement%29-6nicx.md)
   Creates a constraint that requires a launching process’s executable to satisfy any of the provided constraints.
-- [struct LaunchConstraintBuilder](launchconstraintbuilder.md)
+- [struct LaunchConstraintBuilder](./launchconstraintbuilder.md)
   A custom parameter attribute that constructs launch constraints from closures.
 
 

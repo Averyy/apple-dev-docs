@@ -1,7 +1,8 @@
 # language
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A code that indicates the language of voice output.
 
@@ -12,6 +13,10 @@ A code that indicates the language of voice output.
 
 ```swift
 var language: Int16
+```
+
+```c
+SInt16 language;
 ```
 
 

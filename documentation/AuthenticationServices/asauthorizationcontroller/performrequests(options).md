@@ -1,7 +1,8 @@
 # performRequests(options:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the specified authorization flows during controller initialization.
 
@@ -18,15 +19,20 @@ Starts the specified authorization flows during controller initialization.
 func performRequests(options: ASAuthorizationController.RequestOptions = [])
 ```
 
+```objc
+- (void) performRequestsWithOptions:(ASAuthorizationControllerRequestOptions) options;
+```
+
 ## See Also
 
-- [func performRequests()](asauthorizationcontroller/performrequests.md)
+### Executing requests
+- [func performRequests()](./performrequests%28%29.md)
   Starts the specified authorization flows during controller initialization.
-- [func performAutoFillAssistedRequests()](asauthorizationcontroller/performautofillassistedrequests.md)
+- [func performAutoFillAssistedRequests()](./performautofillassistedrequests%28%29.md)
   Initiates the authorization flows for requests that support AutoFill presentation.
-- [func cancel()](asauthorizationcontroller/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels any active authorization requests.
-- [ASAuthorizationController.RequestOptions](asauthorizationcontroller/requestoptions.md)
+- [ASAuthorizationController.RequestOptions](./requestoptions.md)
   Options that modify how a controller performs authorization requests.
 
 

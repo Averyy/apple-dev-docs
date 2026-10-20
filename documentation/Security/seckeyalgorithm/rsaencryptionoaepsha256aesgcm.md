@@ -1,7 +1,8 @@
 # rsaEncryptionOAEPSHA256AESGCM
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static let rsaEncryptionOAEPSHA256AESGCM: SecKeyAlgorithm
+```
+
+```c
+extern SecKeyAlgorithm const kSecKeyAlgorithmRSAEncryptionOAEPSHA256AESGCM;
 ```
 
 

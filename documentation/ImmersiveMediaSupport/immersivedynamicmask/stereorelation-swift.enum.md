@@ -1,7 +1,8 @@
 # ImmersiveDynamicMask.StereoRelation
 
 **Framework**: Immersive Media Support  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that determines how the left mask relates to the right, or vice versa.
 
@@ -21,19 +22,19 @@ enum StereoRelation
 ## Topics
 
 ### Enumeration Cases
-- [ImmersiveDynamicMask.StereoRelation.identical](immersivedynamicmask/stereorelation-swift.enum/identical.md)
-- [ImmersiveDynamicMask.StereoRelation.mirror](immersivedynamicmask/stereorelation-swift.enum/mirror.md)
-- [ImmersiveDynamicMask.StereoRelation.separate](immersivedynamicmask/stereorelation-swift.enum/separate.md)
+- [ImmersiveDynamicMask.StereoRelation.identical](./stereorelation-swift.enum/identical.md)
+- [ImmersiveDynamicMask.StereoRelation.mirror](./stereorelation-swift.enum/mirror.md)
+- [ImmersiveDynamicMask.StereoRelation.separate](./stereorelation-swift.enum/separate.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

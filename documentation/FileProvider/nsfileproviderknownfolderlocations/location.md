@@ -1,7 +1,8 @@
 # NSFileProviderKnownFolderLocations.Location
 
 **Framework**: File Provider  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - macOS 15.0+
@@ -12,30 +13,35 @@
 class Location
 ```
 
+```objc
+@interface NSFileProviderKnownFolderLocation : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(existingItemIdentifier: NSFileProviderItemIdentifier)](nsfileproviderknownfolderlocations/location/init(existingitemidentifier:).md)
+- [init(existingItemIdentifier: NSFileProviderItemIdentifier)](./location/init%28existingitemidentifier%29.md)
   Initialize a location with the item identifier of a folder that already exists on the server.
-- [init(parentItemIdentifier: NSFileProviderItemIdentifier, filename: String)](nsfileproviderknownfolderlocations/location/init(parentitemidentifier:filename:).md)
+- [init(parentItemIdentifier: NSFileProviderItemIdentifier, filename: String)](./location/init%28parentitemidentifier,filename%29.md)
   Initialize a location with the filename of the folder in a specified parent.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var desktopLocation: NSFileProviderKnownFolderLocations.Location?](nsfileproviderknownfolderlocations/desktoplocation.md)
-- [var documentsLocation: NSFileProviderKnownFolderLocations.Location?](nsfileproviderknownfolderlocations/documentslocation.md)
+### Identifying known-folder locations
+- [var desktopLocation: NSFileProviderKnownFolderLocations.Location?](./desktoplocation.md)
+- [var documentsLocation: NSFileProviderKnownFolderLocations.Location?](./documentslocation.md)
 
 
 ---

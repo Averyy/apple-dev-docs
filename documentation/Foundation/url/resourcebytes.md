@@ -1,7 +1,8 @@
 # resourceBytes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL’s resource data, as an asynchronous sequence of bytes.
 
@@ -39,13 +40,14 @@ do {
 }
 ```
 
-To wait for the entire resource to load, use the [`URLSession`](urlsession.md) method [`data(from:delegate:)`](urlsession/data(from:delegate:).md) with the `await` keyword. [`URLSession`](urlsession.md) also offers methods to upload data to a URL endpoint and download a URL’s contents to a file.
+To wait for the entire resource to load, use the [`URLSession`](../urlsession.md) method [`data(from:delegate:)`](../urlsession/data%28from,delegate%29.md) with the `await` keyword. [`URLSession`](../urlsession.md) also offers methods to upload data to a URL endpoint and download a URL’s contents to a file.
 
 ## See Also
 
-- [var lines: AsyncLineSequence<URL.AsyncBytes>](url/lines.md)
+### Loading URL contents asynchronously
+- [var lines: AsyncLineSequence<URL.AsyncBytes>](./lines.md)
   The URL’s resource data, as an asynchronous sequence of lines of text.
-- [struct AsyncBytes](url/asyncbytes.md)
+- [struct AsyncBytes](./asyncbytes.md)
   An asynchronous sequence of bytes loaded from the URL.
 
 

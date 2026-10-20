@@ -1,17 +1,24 @@
 # stalled
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
 ```swift
 static var stalled: MPMovieLoadState { get }
+```
+
+```c
+MPMovieLoadStateStalled
 ```
 
 #### Discussion
@@ -20,8 +27,9 @@ The buffering of data has stalled. If started now, playback may pause automatica
 
 ## See Also
 
-- [static var playable: MPMovieLoadState](mpmovieloadstate/playable.md)
-- [static var playthroughOK: MPMovieLoadState](mpmovieloadstate/playthroughok.md)
+### Constants
+- [static var playable: MPMovieLoadState](./playable.md)
+- [static var playthroughOK: MPMovieLoadState](./playthroughok.md)
 
 
 ---

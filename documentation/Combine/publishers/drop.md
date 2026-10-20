@@ -1,7 +1,8 @@
 # Publishers.Drop
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that omits a specified number of elements before republishing later elements.
 
@@ -23,45 +24,46 @@ struct Drop<Upstream> where Upstream : Publisher
 ## Topics
 
 ### Creating a drop Publisher
-- [init(upstream: Upstream, count: Int)](publishers/drop/init(upstream:count:).md)
+- [init(upstream: Upstream, count: Int)](./drop/init%28upstream,count%29.md)
   Creates a publisher that omits a specified number of elements before republishing later elements.
 ### Declaring supporting types
-- [Publishers.Drop.Output](publishers/drop/output.md)
+- [Publishers.Drop.Output](./drop/output.md)
   The kind of values published by this publisher.
-- [Publishers.Drop.Failure](publishers/drop/failure.md)
+- [Publishers.Drop.Failure](./drop/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/drop/upstream.md)
+- [let upstream: Upstream](./drop/upstream.md)
   The publisher from which this publisher receives elements.
-- [let count: Int](publishers/drop/count.md)
+- [let count: Int](./drop/count.md)
   The number of elements to drop.
 ### Comparing publishers
-- [static func == (Publishers.Drop<Upstream>, Publishers.Drop<Upstream>) -> Bool](publishers/drop/==(_:_:).md)
+- [static func == (Publishers.Drop<Upstream>, Publishers.Drop<Upstream>) -> Bool](./drop/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
 ### Default Implementations
-- [Equatable Implementations](publishers/drop/equatable-implementations.md)
+- [Equatable Implementations](./drop/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Publisher](publisher.md)
+- [Equatable](../../Swift/equatable.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.DropUntilOutput](publishers/dropuntiloutput.md)
+### Applying sequence operations to elements
+- [Publishers.DropUntilOutput](./dropuntiloutput.md)
   A publisher that ignores elements from the upstream publisher until it receives an element from second publisher.
-- [Publishers.DropWhile](publishers/dropwhile.md)
+- [Publishers.DropWhile](./dropwhile.md)
   A publisher that omits elements from an upstream publisher until a given closure returns false.
-- [Publishers.TryDropWhile](publishers/trydropwhile.md)
+- [Publishers.TryDropWhile](./trydropwhile.md)
   A publisher that omits elements from an upstream publisher until a given error-throwing closure returns false.
-- [Publishers.Concatenate](publishers/concatenate.md)
+- [Publishers.Concatenate](./concatenate.md)
   A publisher that emits all of one publisher’s elements before those from another publisher.
-- [Publishers.PrefixWhile](publishers/prefixwhile.md)
+- [Publishers.PrefixWhile](./prefixwhile.md)
   A publisher that republishes elements while a predicate closure indicates publishing should continue.
-- [Publishers.TryPrefixWhile](publishers/tryprefixwhile.md)
+- [Publishers.TryPrefixWhile](./tryprefixwhile.md)
   A publisher that republishes elements while an error-throwing predicate closure indicates publishing should continue.
-- [Publishers.PrefixUntilOutput](publishers/prefixuntiloutput.md)
+- [Publishers.PrefixUntilOutput](./prefixuntiloutput.md)
   A publisher that republishes elements until another publisher emits an element.
 
 

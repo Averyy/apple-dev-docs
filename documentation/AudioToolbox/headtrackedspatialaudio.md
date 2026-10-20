@@ -1,7 +1,8 @@
 # HeadTrackedSpatialAudio
 
 **Framework**: Audio Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A spatial experience that takes user motion into account.
 
@@ -16,7 +17,7 @@ struct HeadTrackedSpatialAudio
 
 ## Mentions
 
-- [Anchoring sound to a window or volume](spatializing-sound-from-a-uiscene.md)
+- [Anchoring sound to a window or volume](./spatializing-sound-from-a-uiscene.md)
 
 #### Overview
 
@@ -38,21 +39,21 @@ myPlayer.intendedSpatialExperience = .headTracked(.front, soundStageSize: .large
 ## Topics
 
 ### Instance Properties
-- [var anchoringStrategy: SpatialAudioExperiences.AnchoringStrategy](headtrackedspatialaudio/anchoringstrategy.md)
+- [var anchoringStrategy: SpatialAudioExperiences.AnchoringStrategy](./headtrackedspatialaudio/anchoringstrategy.md)
   The experience’s anchoring strategy.
-- [var soundStageSize: SpatialAudioExperiences.SoundStageSize](headtrackedspatialaudio/soundstagesize.md)
+- [var soundStageSize: SpatialAudioExperiences.SoundStageSize](./headtrackedspatialaudio/soundstagesize.md)
   The experience’s sound stage size.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SpatialAudioExperience](spatialaudioexperience.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SpatialAudioExperience](./spatialaudioexperience.md)
 
 
 ---

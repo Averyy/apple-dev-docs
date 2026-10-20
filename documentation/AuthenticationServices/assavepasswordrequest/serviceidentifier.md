@@ -1,7 +1,8 @@
 # serviceIdentifier
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the service for which the the credential should be associated.
 
@@ -15,6 +16,10 @@ The identifier of the service for which the the credential should be associated.
 
 ```swift
 var serviceIdentifier: ASCredentialServiceIdentifier { get }
+```
+
+```objc
+@property (nonatomic, readonly) ASCredentialServiceIdentifier * serviceIdentifier;
 ```
 
 

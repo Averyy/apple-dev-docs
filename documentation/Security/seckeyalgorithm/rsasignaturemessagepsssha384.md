@@ -1,7 +1,8 @@
 # rsaSignatureMessagePSSSHA384
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 11.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static let rsaSignatureMessagePSSSHA384: SecKeyAlgorithm
+```
+
+```c
+extern SecKeyAlgorithm const kSecKeyAlgorithmRSASignatureMessagePSSSHA384;
 ```
 
 

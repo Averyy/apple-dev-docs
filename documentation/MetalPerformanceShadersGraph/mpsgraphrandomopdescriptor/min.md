@@ -1,7 +1,8 @@
 # min
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The lower range of the distribution.
 
@@ -17,6 +18,10 @@ The lower range of the distribution.
 
 ```swift
 var min: Float { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) float min;
 ```
 
 #### Discussion

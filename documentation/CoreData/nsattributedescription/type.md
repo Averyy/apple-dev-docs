@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attribute’s type.
 
@@ -11,7 +12,7 @@ The attribute’s type.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -26,13 +27,14 @@ Don’t change an attribute’s type after you add its containing managed object
 
 ## See Also
 
-- [var attributeValueClassName: String?](nsattributedescription/attributevalueclassname.md)
+### Managing the type
+- [var attributeValueClassName: String?](./attributevalueclassname.md)
   The class name that represents the attribute’s value.
-- [NSAttributeDescription.AttributeType](nsattributedescription/attributetype-swift.struct.md)
+- [NSAttributeDescription.AttributeType](./attributetype-swift.struct.md)
   The types of attributes that Core Data supports.
-- [var attributeType: NSAttributeType](nsattributedescription/attributetype-swift.property.md)
+- [var attributeType: NSAttributeType](./attributetype-swift.property.md)
   The attribute’s type.
-- [enum NSAttributeType](nsattributetype.md)
+- [enum NSAttributeType](../nsattributetype.md)
   The types of attribute that Core Data supports.
 
 

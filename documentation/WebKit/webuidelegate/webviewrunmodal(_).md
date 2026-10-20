@@ -1,12 +1,13 @@
 # webViewRunModal(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a web view in a modal window.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Displays a web view in a modal window.
 optional func webViewRunModal(_ sender: WebView!)
 ```
 
+```objc
+- (void) webViewRunModal:(WebView *) sender;
+```
+
 #### Discussion
 
-This method should display and order front a modal window containing the specified web view. This method is invoked after the [`webView(_:createWebViewModalDialogWith:)`](webuidelegate/webview(_:createwebviewmodaldialogwith:).md) method is used to create a new window.
+This method should display and order front a modal window containing the specified web view. This method is invoked after the [`webView(_:createWebViewModalDialogWith:)`](./webview%28_,createwebviewmodaldialogwith%29.md) method is used to create a new window.
 
 ## Parameters
 
@@ -24,11 +29,12 @@ This method should display and order front a modal window containing the specifi
 
 ## See Also
 
-- [func webView(WebView!, createWebViewModalDialogWith: URLRequest!) -> WebView!](webuidelegate/webview(_:createwebviewmodaldialogwith:).md)
+### Creating and Closing Windows
+- [func webView(WebView!, createWebViewModalDialogWith: URLRequest!) -> WebView!](./webview%28_,createwebviewmodaldialogwith%29.md)
   Creates a modal window containing a web view that loads the specified request.
-- [func webView(WebView!, createWebViewWith: URLRequest!) -> WebView!](webuidelegate/webview(_:createwebviewwith:).md)
+- [func webView(WebView!, createWebViewWith: URLRequest!) -> WebView!](./webview%28_,createwebviewwith%29.md)
   Creates a window containing a web view to load the specified request.
-- [func webViewClose(WebView!)](webuidelegate/webviewclose(_:).md)
+- [func webViewClose(WebView!)](./webviewclose%28_%29.md)
   Closes a web view in a window.
 
 

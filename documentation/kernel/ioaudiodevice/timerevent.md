@@ -7,7 +7,7 @@ Generic timer event callback for IOAudioDevice timer targets
 
 ## Declaration
 
-```swift
+```c
 typedef void ( *TimerEvent)(
    OSObject *target,
    IOAudioDevice *audioDevice);

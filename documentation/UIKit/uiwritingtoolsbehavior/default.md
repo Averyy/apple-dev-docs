@@ -1,7 +1,8 @@
 # UIWritingToolsBehavior.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to let the system determine the best way to enable writing tools for the view.
 
@@ -17,17 +18,22 @@ An option to let the system determine the best way to enable writing tools for t
 case `default`
 ```
 
+```c
+UIWritingToolsBehaviorDefault
+```
+
 #### Discussion
 
 The system chooses a complete, limited, or none experience based on the device-level support for the feature.
 
 ## See Also
 
-- [UIWritingToolsBehavior.none](uiwritingtoolsbehavior/none.md)
+### Getting the writing tools behaviors
+- [UIWritingToolsBehavior.none](./none.md)
   An option to prevent the writing tools from modifying the text in the view.
-- [UIWritingToolsBehavior.complete](uiwritingtoolsbehavior/complete.md)
+- [UIWritingToolsBehavior.complete](./complete.md)
   An option to provide the complete writing tools experience for the text view.
-- [UIWritingToolsBehavior.limited](uiwritingtoolsbehavior/limited.md)
+- [UIWritingToolsBehavior.limited](./limited.md)
   An option to provide a limited, overlay-panel experience for the text view.
 
 

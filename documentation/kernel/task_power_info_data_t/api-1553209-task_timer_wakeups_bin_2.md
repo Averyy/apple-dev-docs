@@ -1,14 +1,15 @@
 # task_timer_wakeups_bin_2
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 uint64_t task_timer_wakeups_bin_2;
 ```
 

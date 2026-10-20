@@ -1,7 +1,8 @@
 # tintColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A tint color applied to the glass.
 
@@ -16,6 +17,10 @@ A tint color applied to the glass.
 ```swift
 @NSCopying
 var tintColor: UIColor? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) UIColor * tintColor;
 ```
 
 

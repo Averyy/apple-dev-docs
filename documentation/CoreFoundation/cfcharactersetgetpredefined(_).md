@@ -1,23 +1,28 @@
 # CFCharacterSetGetPredefined(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a predefined character set.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFCharacterSetGetPredefined(_ theSetIdentifier: CFCharacterSetPredefinedSet) -> CFCharacterSet!
+```
+
+```c
+extern CFCharacterSetRefCFCharacterSetGetPredefined(CFCharacterSetPredefinedSet theSetIdentifier);
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ A predefined character set. This instance is owned by Core Foundation.
 
 ## Parameters
 
-- `theSetIdentifier`: A predefined character set. See [`Predefined CFCharacterSet Selector Values`](predefined_cfcharacterset_selector_values.md) for the list of available character sets.
+- `theSetIdentifier`: A predefined character set. See [Predefined CFCharacterSet Selector Values](./predefined_cfcharacterset_selector_values.md) for the list of available character sets.
 
 
 ---

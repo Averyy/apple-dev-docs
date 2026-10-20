@@ -1,7 +1,8 @@
 # earlyStoppingIterationCount
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of iterations to use when evaluating whether to stop early.
 
@@ -28,15 +29,16 @@ The `fitted` method will stop if no significant progress is made for this many i
 
 ## See Also
 
-- [var batchSize: Int](multivariatelinearregressorconfiguration/batchsize.md)
+### Getting the properties
+- [var batchSize: Int](./batchsize.md)
   The number of examples in each training batch.
-- [var maximumIterationCount: Int](multivariatelinearregressorconfiguration/maximumiterationcount.md)
+- [var maximumIterationCount: Int](./maximumiterationcount.md)
   The maximum number of allowed passes through the data.
-- [var earlyStoppingTolerance: Float](multivariatelinearregressorconfiguration/earlystoppingtolerance.md)
+- [var earlyStoppingTolerance: Float](./earlystoppingtolerance.md)
   The early-stopping tolerance.
-- [var learningRate: Float](multivariatelinearregressorconfiguration/learningrate.md)
+- [var learningRate: Float](./learningrate.md)
   The optimizer learning rate.
-- [var randomSeed: Int?](multivariatelinearregressorconfiguration/randomseed.md)
+- [var randomSeed: Int?](./randomseed.md)
   A seed to generate reproducible results from random operations.
 
 

@@ -1,7 +1,8 @@
 # Object
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The identifier for the audio object class.
 
@@ -10,7 +11,7 @@ The identifier for the audio object class.
 
 ## Declaration
 
-```swift
+```c
 Object
 ```
 

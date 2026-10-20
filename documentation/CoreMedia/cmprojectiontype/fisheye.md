@@ -1,7 +1,8 @@
 # CMProjectionType.fisheye
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Video content displays as a fisheye projection.
 
@@ -20,13 +21,18 @@ Video content displays as a fisheye projection.
 case fisheye
 ```
 
+```c
+kCMProjectionType_Fisheye
+```
+
 ## See Also
 
-- [CMProjectionType.rectangular](cmprojectiontype/rectangular.md)
+### Projection Surfaces
+- [CMProjectionType.rectangular](./rectangular.md)
   Video content displays on a flat, rectangular 2D surface.
-- [CMProjectionType.equirectangular](cmprojectiontype/equirectangular.md)
+- [CMProjectionType.equirectangular](./equirectangular.md)
   Video content displays as a 360 degree equirectangular projection.
-- [CMProjectionType.halfEquirectangular](cmprojectiontype/halfequirectangular.md)
+- [CMProjectionType.halfEquirectangular](./halfequirectangular.md)
   Video content displays as a 180 degree equirectangular projection.
 
 

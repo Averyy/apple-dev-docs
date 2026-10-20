@@ -1,7 +1,8 @@
 # createXPCRepresentation()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an encoded representation of the media environment for transmission through an XPC connection.
 

@@ -1,14 +1,15 @@
 # closeForClient
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.13+ - Deprecated in 10.15.1
 
 ## Declaration
 
-```swift
+```cpp
 virtual void closeForClient(IOService *client, void *context, IOOptionBits options);
 ```
 

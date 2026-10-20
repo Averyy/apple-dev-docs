@@ -1,7 +1,8 @@
 # locationManagerDidPauseLocationUpdates(_:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that location updates were paused.
 
@@ -18,6 +19,10 @@ Tells the delegate that location updates were paused.
 optional func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager)
 ```
 
+```objc
+- (void) locationManagerDidPauseLocationUpdates:(CLLocationManager *) manager;
+```
+
 #### Discussion
 
 When the location manager detects that the device’s location is not changing, it can pause the delivery of updates in order to shut down the appropriate hardware and save power. When it does this, it calls this method to let your app know that this has happened.
@@ -30,7 +35,8 @@ After a pause occurs, it is your responsibility to restart location services aga
 
 ## See Also
 
-- [func locationManagerDidResumeLocationUpdates(CLLocationManager)](cllocationmanagerdelegate/locationmanagerdidresumelocationupdates(_:).md)
+### Pausing location updates
+- [func locationManagerDidResumeLocationUpdates(CLLocationManager)](./locationmanagerdidresumelocationupdates%28_%29.md)
   Tells the delegate that the delivery of location updates has resumed.
 
 

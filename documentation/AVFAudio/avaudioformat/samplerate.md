@@ -1,7 +1,8 @@
 # sampleRate
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio format sampling rate, in hertz.
 
@@ -20,13 +21,18 @@ The audio format sampling rate, in hertz.
 var sampleRate: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double sampleRate;
+```
+
 ## See Also
 
-- [var channelCount: AVAudioChannelCount](avaudioformat/channelcount.md)
+### Getting audio format values
+- [var channelCount: AVAudioChannelCount](./channelcount.md)
   The number of channels of audio data.
-- [var channelLayout: AVAudioChannelLayout?](avaudioformat/channellayout.md)
+- [var channelLayout: AVAudioChannelLayout?](./channellayout.md)
   The underlying audio channel layout.
-- [var formatDescription: CMAudioFormatDescription](avaudioformat/formatdescription.md)
+- [var formatDescription: CMAudioFormatDescription](./formatdescription.md)
   The audio format description to use with Core Media APIs.
 
 

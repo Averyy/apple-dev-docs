@@ -1,7 +1,8 @@
 # MobileDriversLicenseDataRequest.Response
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that contains the response information from a successful mobile driver’s license data request.
 
@@ -19,22 +20,22 @@ struct Response
 ## Topics
 
 ### Structures
-- [MobileDriversLicenseDataRequest.Response.DocumentElements](mobiledriverslicensedatarequest/response/documentelements-swift.struct.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements](./response/documentelements-swift.struct.md)
   A type that contains the document elements from a successful mobile driver’s license data request.
 ### Instance Properties
-- [let documentElements: MobileDriversLicenseDataRequest.Response.DocumentElements](mobiledriverslicensedatarequest/response/documentelements-swift.property.md)
+- [let documentElements: MobileDriversLicenseDataRequest.Response.DocumentElements](./response/documentelements-swift.property.md)
   The document elements from a successful mobile driver’s license data request.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [MobileDocumentDataResponse](mobiledocumentdataresponse.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [MobileDocumentDataResponse](../mobiledocumentdataresponse.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

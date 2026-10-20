@@ -1,7 +1,8 @@
 # TKSmartCardPINFormat.Justification.left
 
 **Framework**: CryptoTokenKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 9.0+
@@ -18,13 +19,18 @@
 case left
 ```
 
+```c
+TKSmartCardPINJustificationLeft
+```
+
 #### Discussion
 
 Justify to the left.
 
 ## See Also
 
-- [TKSmartCardPINFormat.Justification.right](tksmartcardpinformat/justification/right.md)
+### Constants
+- [TKSmartCardPINFormat.Justification.right](./right.md)
 
 
 ---

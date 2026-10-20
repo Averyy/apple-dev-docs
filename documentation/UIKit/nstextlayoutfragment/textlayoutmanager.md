@@ -1,7 +1,8 @@
 # textLayoutManager
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout manager for this text layout fragment.
 
@@ -16,6 +17,10 @@ The layout manager for this text layout fragment.
 
 ```swift
 weak var textLayoutManager: NSTextLayoutManager? { get }
+```
+
+```objc
+@property (weak, readonly, nullable) NSTextLayoutManager * textLayoutManager;
 ```
 
 

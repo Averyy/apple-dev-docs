@@ -1,23 +1,28 @@
 # CFURLGetFileSystemRepresentation(_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Fills a buffer with the file system’s native string representation of a given URL’s path.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFURLGetFileSystemRepresentation(_ url: CFURL!, _ resolveAgainstBase: Bool, _ buffer: UnsafeMutablePointer<UInt8>!, _ maxBufLen: CFIndex) -> Bool
+```
+
+```c
+extern Boolean CFURLGetFileSystemRepresentation(CFURLRef url, Boolean resolveAgainstBase, UInt8 *buffer, CFIndex maxBufLen);
 ```
 
 #### Return Value
@@ -37,17 +42,18 @@ No more than `maxBufLen` bytes are written to `buffer`. If `url` requires more t
 
 ## See Also
 
-- [func CFURLCreateData(CFAllocator!, CFURL!, CFStringEncoding, Bool) -> CFData!](cfurlcreatedata(_:_:_:_:).md)
+### Converting URLs to Other Representations
+- [func CFURLCreateData(CFAllocator!, CFURL!, CFStringEncoding, Bool) -> CFData!](./cfurlcreatedata%28_,_,_,_%29.md)
   Creates a `CFData` object containing the content of a given URL.
-- [func CFURLCreateStringByAddingPercentEscapes(CFAllocator!, CFString!, CFString!, CFString!, CFStringEncoding) -> CFString!](cfurlcreatestringbyaddingpercentescapes(_:_:_:_:_:).md)
+- [func CFURLCreateStringByAddingPercentEscapes(CFAllocator!, CFString!, CFString!, CFString!, CFStringEncoding) -> CFString!](./cfurlcreatestringbyaddingpercentescapes%28_,_,_,_,_%29.md)
   Creates a copy of a string, replacing certain characters with the equivalent percent escape sequence based on the specified encoding.
-- [func CFURLCreateStringByReplacingPercentEscapes(CFAllocator!, CFString!, CFString!) -> CFString!](cfurlcreatestringbyreplacingpercentescapes(_:_:_:).md)
+- [func CFURLCreateStringByReplacingPercentEscapes(CFAllocator!, CFString!, CFString!) -> CFString!](./cfurlcreatestringbyreplacingpercentescapes%28_,_,_%29.md)
   Creates a new string by replacing any percent escape sequences with their character equivalent.
-- [func CFURLCreateStringByReplacingPercentEscapesUsingEncoding(CFAllocator!, CFString!, CFString!, CFStringEncoding) -> CFString!](cfurlcreatestringbyreplacingpercentescapesusingencoding(_:_:_:_:).md)
+- [func CFURLCreateStringByReplacingPercentEscapesUsingEncoding(CFAllocator!, CFString!, CFString!, CFStringEncoding) -> CFString!](./cfurlcreatestringbyreplacingpercentescapesusingencoding%28_,_,_,_%29.md)
   Creates a new string by replacing any percent escape sequences with their character equivalent.
-- [func CFURLGetFSRef(CFURL!, OpaquePointer!) -> Bool](cfurlgetfsref(_:_:).md)
+- [func CFURLGetFSRef(CFURL!, OpaquePointer!) -> Bool](./cfurlgetfsref%28_,_%29.md)
   Converts a given URL to a file or directory object.
-- [func CFURLGetString(CFURL!) -> CFString!](cfurlgetstring(_:).md)
+- [func CFURLGetString(CFURL!) -> CFString!](./cfurlgetstring%28_%29.md)
   Returns the URL as a `CFString` object.
 
 

@@ -1,7 +1,8 @@
 # init(id:episodeTitle:showName:releaseDate:type:duration:artwork:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates podcast episode content.
 

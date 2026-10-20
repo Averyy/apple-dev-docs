@@ -1,7 +1,8 @@
 # code
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The system’s best understanding of the code that can be used for verification purposes.
 

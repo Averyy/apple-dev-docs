@@ -1,7 +1,8 @@
 # SystemCoordinator.ParticipantState.Seat
 
 **Framework**: Group Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A seat assigned to a single participant in a spatial template.
 
@@ -21,18 +22,18 @@ You can use this structure to inspect the initial position of a participant in y
 ## Topics
 
 ### Instance Properties
-- [let pose: Pose3D](systemcoordinator/participantstate/seat-swift.struct/pose.md)
+- [let pose: Pose3D](./seat-swift.struct/pose.md)
   The position and rotation of the seat.
-- [let role: (any SpatialTemplateRole)?](systemcoordinator/participantstate/seat-swift.struct/role.md)
+- [let role: (any SpatialTemplateRole)?](./seat-swift.struct/role.md)
   The role attached to this seat, if any.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

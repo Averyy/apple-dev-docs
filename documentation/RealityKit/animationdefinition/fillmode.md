@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An option that determines which data displays outside of the normal duration.
@@ -12,7 +13,7 @@ An option that determines which data displays outside of the normal duration.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,17 +25,18 @@ var fillMode: AnimationFillMode { get set }
 
 This property determines what to display when the framework samples the animation outside of the range defined by its underlying duration. The animation applies this property when:
 
-- Playback progresses toward, but hasn’t yet reached, a nonzero [`offset`](animationdefinition/offset.md). - A range determined by [`trimStart`](animationdefinition/trimstart.md), [`trimEnd`](animationdefinition/trimend.md), or [`trimDuration`](animationdefinition/trimduration.md) exceeds the animation’s underlying duration.
+- Playback progresses toward, but hasn’t yet reached, a nonzero [`offset`](./offset.md). - A range determined by [`trimStart`](./trimstart.md), [`trimEnd`](./trimend.md), or [`trimDuration`](./trimduration.md) exceeds the animation’s underlying duration.
 
 ## See Also
 
-- [var repeatMode: AnimationRepeatMode](animationdefinition/repeatmode.md)
+### Repeating animation playback
+- [var repeatMode: AnimationRepeatMode](./repeatmode.md)
   An option that determines how the animation repeats.
-- [func repeated(count: TimeInterval) -> Self](animationdefinition/repeated(count:)-937w.md)
+- [func repeated(count: TimeInterval) -> Self](./repeated%28count%29-937w.md)
   Repeats an animation the number of times specified by an irrational number.
-- [func repeated(count: Int) -> Self](animationdefinition/repeated(count:)-941x8.md)
+- [func repeated(count: Int) -> Self](./repeated%28count%29-941x8.md)
   Repeats an animation the number of times specified by a whole number.
-- [func repeatingForever() -> Self](animationdefinition/repeatingforever.md)
+- [func repeatingForever() -> Self](./repeatingforever%28%29.md)
   Repeats the animation infinitely.
 
 

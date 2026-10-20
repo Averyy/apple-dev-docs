@@ -1,7 +1,8 @@
 # all
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Convenience mask representing all stages of GPU work.
 
@@ -17,6 +18,10 @@ Convenience mask representing all stages of GPU work.
 
 ```swift
 static var all: MTLStages { get }
+```
+
+```c
+MTLStageAll
 ```
 
 

@@ -1,7 +1,8 @@
 # ink
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ink used by this inking tool.
 
@@ -20,11 +21,12 @@ var ink: PKInk { get }
 
 ## See Also
 
-- [var color: UIColor](pkinkingtool-swift.struct/color-5xmlo.md)
+### Getting the inking tool attributes
+- [var color: UIColor](./color-5xmlo.md)
   The color of the ink.
-- [var color: NSColor](pkinkingtool-swift.struct/color-22zaw.md)
+- [var color: NSColor](./color-22zaw.md)
   The color of the ink.
-- [var width: CGFloat](pkinkingtool-swift.struct/width.md)
+- [var width: CGFloat](./width.md)
   The width of the ink.
 
 

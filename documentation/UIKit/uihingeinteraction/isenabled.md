@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the interaction is enabled.
 
@@ -16,6 +17,10 @@ Whether the interaction is enabled.
 
 ```swift
 var isEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
 #### Discussion

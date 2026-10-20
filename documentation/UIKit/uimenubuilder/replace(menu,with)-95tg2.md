@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Replace an identified menu with a menu.
@@ -17,6 +18,10 @@ Replace an identified menu with a menu.
 
 ```swift
 func replace(menu replacedIdentifier: UIMenu.Identifier, with replacementMenu: UIMenu)
+```
+
+```objc
+- (void) replaceMenuForIdentifier:(UIMenuIdentifier) replacedIdentifier withMenu:(UIMenu *) replacementMenu;
 ```
 
 ## Parameters

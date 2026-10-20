@@ -1,17 +1,22 @@
 # handleClose(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles the Close AppleScript command by attempting to close the document.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func handleClose(_ command: NSCloseCommand) -> Any?
+```
+
+```objc
+- (id) handleCloseScriptCommand:(NSCloseCommand *) command;
 ```
 
 #### Discussion
@@ -24,13 +29,14 @@ Extracts Close command arguments from the `command` object and uses them to dete
 
 ## See Also
 
-- [func handlePrint(NSScriptCommand) -> Any?](nsdocument/handleprint(_:).md)
+### Handling Script Commands
+- [func handlePrint(NSScriptCommand) -> Any?](./handleprint%28_%29.md)
   Handles the Print AppleScript command by attempting to print the document.
-- [func handleSave(NSScriptCommand) -> Any?](nsdocument/handlesave(_:).md)
+- [func handleSave(NSScriptCommand) -> Any?](./handlesave%28_%29.md)
   Handles the Save AppleScript command by attempting to save the document.
-- [var objectSpecifier: NSScriptObjectSpecifier](nsdocument/objectspecifier.md)
+- [var objectSpecifier: NSScriptObjectSpecifier](./objectspecifier.md)
   Returns the object specifier that represents the document.
-- [var lastComponentOfFileName: String](nsdocument/lastcomponentoffilename.md)
+- [var lastComponentOfFileName: String](./lastcomponentoffilename.md)
   The name of the document seen by the user in AppleScript.
 
 

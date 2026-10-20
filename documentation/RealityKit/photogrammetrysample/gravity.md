@@ -1,7 +1,8 @@
 # gravity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An image’s gravity vector.
 
@@ -23,13 +24,14 @@ Some cameras, including iPhone cameras, capture a gravity vector for each image.
 
 ## See Also
 
-- [let image: CVPixelBuffer](photogrammetrysample/image.md)
+### Describing the sample
+- [let image: CVPixelBuffer](./image.md)
   The image data for this sample.
-- [var metadata: [String : Any]](photogrammetrysample/metadata.md)
+- [var metadata: [String : Any]](./metadata.md)
   An image’s EXIF metadata.
-- [var depthDataMap: CVPixelBuffer?](photogrammetrysample/depthdatamap.md)
+- [var depthDataMap: CVPixelBuffer?](./depthdatamap.md)
   The image’s depth data.
-- [var objectMask: CVPixelBuffer?](photogrammetrysample/objectmask.md)
+- [var objectMask: CVPixelBuffer?](./objectmask.md)
   The image’s object mask.
 
 

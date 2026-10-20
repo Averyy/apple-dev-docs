@@ -1,7 +1,8 @@
 # appExtension
 
 **Framework**: ExtensionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app extension for this configuration object.
 
@@ -19,7 +20,8 @@ var appExtension: AppExtensionIdentity
 
 ## See Also
 
-- [var sceneID: String](exhostviewcontroller/configuration-swift.struct/sceneid.md)
+### Identifying the scene to display
+- [var sceneID: String](./sceneid.md)
   The unique identifier for this configuration object’s user interface.
 
 

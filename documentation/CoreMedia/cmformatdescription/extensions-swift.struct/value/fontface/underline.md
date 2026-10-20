@@ -1,7 +1,8 @@
 # underline
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,9 +21,10 @@ static let underline: CMFormatDescription.Extensions.Value.FontFace
 
 ## See Also
 
-- [static let all: CMFormatDescription.Extensions.Value.FontFace](cmformatdescription/extensions-swift.struct/value/fontface/all.md)
-- [static let bold: CMFormatDescription.Extensions.Value.FontFace](cmformatdescription/extensions-swift.struct/value/fontface/bold.md)
-- [static let italic: CMFormatDescription.Extensions.Value.FontFace](cmformatdescription/extensions-swift.struct/value/fontface/italic.md)
+### Font Faces
+- [static let all: CMFormatDescription.Extensions.Value.FontFace](./all.md)
+- [static let bold: CMFormatDescription.Extensions.Value.FontFace](./bold.md)
+- [static let italic: CMFormatDescription.Extensions.Value.FontFace](./italic.md)
 
 
 ---

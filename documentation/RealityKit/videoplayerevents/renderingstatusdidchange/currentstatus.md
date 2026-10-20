@@ -1,7 +1,8 @@
 # currentStatus
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Current rendering status
 

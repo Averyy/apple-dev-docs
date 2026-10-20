@@ -1,7 +1,8 @@
 # open(forContainerIdentifier:)
 
 **Framework**: GameSave  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Requests an instance of the game-save directory.
 
@@ -18,9 +19,13 @@ Requests an instance of the game-save directory.
 class func open(forContainerIdentifier containerIdentifier: String?) -> GSSyncedDirectory
 ```
 
+```objc
++ (GSSyncedDirectory *) openDirectoryForContainerIdentifier:(NSString *) containerIdentifier;
+```
+
 #### Discussion
 
-This method returns immediately, and starts syncing the directory in the background. To wait for syncing to complete, call the [`finishSyncing(completionHandler:)`](gssynceddirectory/finishsyncing(completionhandler:).md) method.
+This method returns immediately, and starts syncing the directory in the background. To wait for syncing to complete, call the [`finishSyncing(completionHandler:)`](./finishsyncing%28completionhandler%29.md) method.
 
 ## Parameters
 
@@ -28,9 +33,10 @@ This method returns immediately, and starts syncing the directory in the backgro
 
 ## See Also
 
-- [var directoryState: GSSyncedDirectoryState](gssynceddirectory/directorystate.md)
+### Accessing a directory
+- [var directoryState: GSSyncedDirectoryState](./directorystate.md)
   The state of the directory.
-- [class GSSyncedDirectoryState](gssynceddirectorystate.md)
+- [class GSSyncedDirectoryState](../gssynceddirectorystate.md)
   Represents the state and its associated properties of the directory
 
 

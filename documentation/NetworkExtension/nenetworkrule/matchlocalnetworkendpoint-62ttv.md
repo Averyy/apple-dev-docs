@@ -1,7 +1,8 @@
 # matchLocalNetworkEndpoint
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+

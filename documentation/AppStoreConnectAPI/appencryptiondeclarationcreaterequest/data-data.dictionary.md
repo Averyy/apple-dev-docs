@@ -1,7 +1,8 @@
 # AppEncryptionDeclarationCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,23 +11,23 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object AppEncryptionDeclarationCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppEncryptionDeclarationCreateRequest.Data.Attributes](appencryptiondeclarationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppEncryptionDeclarationCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The attributes you set that describe the new app encryption declaration.
 ### Dictionaries
-- [object AppEncryptionDeclarationCreateRequest.Data.Relationships](appencryptiondeclarationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object AppEncryptionDeclarationCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
 
 ## Properties
 
 - `attributes` (AppEncryptionDeclarationCreateRequest.Data.Attributes) *(required)*
 - `relationships` (AppEncryptionDeclarationCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appEncryptionDeclarations`
 
 
 ---

@@ -1,7 +1,8 @@
 # PaginatedResourceCollectionResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response object composed of paginated resource objects for the request.
 
@@ -10,7 +11,7 @@ A response object composed of paginated resource objects for the request.
 
 ## Declaration
 
-```swift
+```
 object PaginatedResourceCollectionResponse
 ```
 

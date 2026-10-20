@@ -1,7 +1,8 @@
 # selectionIndexes
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The indexes of the currently selected items.
 
@@ -14,23 +15,28 @@ The indexes of the currently selected items.
 var selectionIndexes: IndexSet { get set }
 ```
 
+```objc
+@property (copy) NSIndexSet * selectionIndexes;
+```
+
 #### Discussion
 
-Whenever possible, use the [`selectionIndexPaths`](nscollectionview/selectionindexpaths.md) property instead of this one to set selections.
+Whenever possible, use the [`selectionIndexPaths`](./selectionindexpaths.md) property instead of this one to set selections.
 
 This property is observable using key-value observing.
 
 ## See Also
 
-- [func item(at: Int) -> NSCollectionViewItem?](nscollectionview/item(at:)-80xze.md)
+### Legacy Collection View Support
+- [func item(at: Int) -> NSCollectionViewItem?](./item%28at%29-80xze.md)
   Returns the collection view item for the represented object at the specified index.
-- [func frameForItem(at: Int) -> NSRect](nscollectionview/frameforitem(at:).md)
+- [func frameForItem(at: Int) -> NSRect](./frameforitem%28at%29.md)
   Returns the frame of the collection view item at the specified index.
-- [func frameForItem(at: Int, withNumberOfItems: Int) -> NSRect](nscollectionview/frameforitem(at:withnumberofitems:).md)
+- [func frameForItem(at: Int, withNumberOfItems: Int) -> NSRect](./frameforitem%28at,withnumberofitems%29.md)
   Returns the frame of an item based on the number of items in the collection view.
-- [func draggingImageForItems(at: IndexSet, with: NSEvent, offset: NSPointPointer) -> NSImage](nscollectionview/draggingimageforitems(at:with:offset:)-951w7.md)
+- [func draggingImageForItems(at: IndexSet, with: NSEvent, offset: NSPointPointer) -> NSImage](./draggingimageforitems%28at,with,offset%29-951w7.md)
   This method computes and returns an image to use for dragging.
-- [func setDraggingSourceOperationMask(NSDragOperation, forLocal: Bool)](nscollectionview/setdraggingsourceoperationmask(_:forlocal:).md)
+- [func setDraggingSourceOperationMask(NSDragOperation, forLocal: Bool)](./setdraggingsourceoperationmask%28_,forlocal%29.md)
   Configures the drag operation mask.
 
 

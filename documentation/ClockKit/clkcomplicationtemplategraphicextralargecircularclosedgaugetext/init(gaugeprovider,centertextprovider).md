@@ -1,17 +1,24 @@
 # init(gaugeProvider:centerTextProvider:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new template with a closed circular gauge with text in the center.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
 ```swift
 init(gaugeProvider: CLKGaugeProvider, centerTextProvider: CLKTextProvider)
+```
+
+```objc
+- (instancetype) initWithGaugeProvider:(CLKGaugeProvider *) gaugeProvider centerTextProvider:(CLKTextProvider *) centerTextProvider;
 ```
 
 ## Parameters

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOATASectorCount16Bit](1646131-anonymous/kioatasectorcount16bit.md)
-- [kIOATASectorCount8Bit](1646131-anonymous/kioatasectorcount8bit.md)
+- [kIOATASectorCount16Bit](./api-1646131-anonymous/kioatasectorcount16bit.md)
+- [kIOATASectorCount8Bit](./api-1646131-anonymous/kioatasectorcount8bit.md)
 
 
 ---

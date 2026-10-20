@@ -1,7 +1,8 @@
 # CiTestResultResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that read a single test result from an Xcode Cloud build action.
 
@@ -10,7 +11,7 @@ The response body for endpoints that read a single test result from an Xcode Clo
 
 ## Declaration
 
-```swift
+```
 object CiTestResultResponse
 ```
 
@@ -21,7 +22,8 @@ object CiTestResultResponse
 
 ## See Also
 
-- [object CiTestResult](citestresult.md)
+### Objects and types
+- [object CiTestResult](./citestresult.md)
   The outcome of a single test case in an Xcode Cloud test action, including its pass/fail status and duration.
 
 

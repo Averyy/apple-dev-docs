@@ -1,7 +1,8 @@
 # kColorSyncProfileMD5Digest
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key for the profile’s MD5 digest.
 
@@ -20,13 +21,18 @@ A key for the profile’s MD5 digest.
 var kColorSyncProfileMD5Digest: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncProfileMD5Digest;
+```
+
 ## See Also
 
-- [func ColorSyncProfileGetMD5(ColorSyncProfile!) -> ColorSyncMD5](colorsyncprofilegetmd5(_:).md)
+### Computing profile digests
+- [func ColorSyncProfileGetMD5(ColorSyncProfile!) -> ColorSyncMD5](./colorsyncprofilegetmd5%28_%29.md)
   Returns the MD5 digest for a profile.
-- [struct ColorSyncMD5](colorsyncmd5.md)
+- [struct ColorSyncMD5](./colorsyncmd5.md)
   An MD5 digest that uniquely identifies a profile, as defined by the ICC specification.
-- [var COLORSYNC_MD5_LENGTH: Int32](colorsync_md5_length.md)
+- [var COLORSYNC_MD5_LENGTH: Int32](./colorsync_md5_length.md)
 
 
 ---

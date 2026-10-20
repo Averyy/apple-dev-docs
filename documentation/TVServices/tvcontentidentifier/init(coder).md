@@ -1,17 +1,24 @@
 # init(coder:)
 
 **Framework**: TV Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an object initialized from data in a given unarchiver.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 13.0
+
+> **Deprecated**: TVContentIdentifier has been replaced by TVTopShelfContentProvider
 
 ## Declaration
 
 ```swift
 init?(coder: NSCoder)
+```
+
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
 ```
 
 #### Return Value
@@ -24,7 +31,8 @@ A newly initialized content identifier object.
 
 ## See Also
 
-- [init(identifier: String, container: TVContentIdentifier?)](tvcontentidentifier/init(identifier:container:).md)
+### Initializing a Content Identifier
+- [init(identifier: String, container: TVContentIdentifier?)](./init%28identifier,container%29.md)
   Creates a new content identifier.
 
 

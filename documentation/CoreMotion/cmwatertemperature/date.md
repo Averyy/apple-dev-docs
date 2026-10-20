@@ -1,7 +1,8 @@
 # date
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time and date when the system recorded the measurements.
 
@@ -18,11 +19,16 @@ The time and date when the system recorded the measurements.
 var date: Date { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDate * date;
+```
+
 ## See Also
 
-- [var temperature: Measurement<UnitTemperature>](cmwatertemperature/temperature.md)
+### Accessing the data
+- [var temperature: Measurement<UnitTemperature>](./temperature.md)
   The water temperature.
-- [var temperatureUncertainty: Measurement<UnitTemperature>](cmwatertemperature/temperatureuncertainty.md)
+- [var temperatureUncertainty: Measurement<UnitTemperature>](./temperatureuncertainty.md)
   The amount of uncertainty in the measurement of the water temperature.
 
 

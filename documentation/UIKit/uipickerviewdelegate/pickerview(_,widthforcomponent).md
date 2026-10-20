@@ -1,7 +1,8 @@
 # pickerView(_:widthForComponent:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called by the picker view when it needs the row width to use for drawing row content.
 
@@ -17,6 +18,10 @@ Called by the picker view when it needs the row width to use for drawing row con
 optional func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat
 ```
 
+```objc
+- (CGFloat) pickerView:(UIPickerView *) pickerView widthForComponent:(NSInteger) component;
+```
+
 #### Return Value
 
 A float value indicating the width of the row in points.
@@ -28,7 +33,8 @@ A float value indicating the width of the row in points.
 
 ## See Also
 
-- [func pickerView(UIPickerView, rowHeightForComponent: Int) -> CGFloat](uipickerviewdelegate/pickerview(_:rowheightforcomponent:).md)
+### Setting the dimensions of the picker view
+- [func pickerView(UIPickerView, rowHeightForComponent: Int) -> CGFloat](./pickerview%28_,rowheightforcomponent%29.md)
   Called by the picker view when it needs the row height to use for drawing row content.
 
 

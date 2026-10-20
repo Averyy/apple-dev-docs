@@ -1,7 +1,8 @@
 # Span.BorrowingIterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that provides the sequence’s iteration interface and encapsulates its iteration state.
 
@@ -24,21 +25,21 @@ struct BorrowingIterator
 ## Topics
 
 ### Initializers
-- [init(Span<Element>)](span/borrowingiterator/init(_:).md)
+- [init(Span<Element>)](./borrowingiterator/init%28_%29.md)
 ### Instance Methods
-- [func nextSpan(maxCount: Int) -> Span<Element>](span/borrowingiterator/nextspan(maxcount:).md)
+- [func nextSpan(maxCount: Int) -> Span<Element>](./borrowingiterator/nextspan%28maxcount%29.md)
   Returns a span over the next group of elements that are ready to by visited, up to the specifed maximum.
-- [func skip(by: Int) -> Int](span/borrowingiterator/skip(by:).md)
+- [func skip(by: Int) -> Int](./borrowingiterator/skip%28by%29.md)
   Advances the position of this iterator by the specified offset, or until the end of the underlying type’s elements.
 ### Type Aliases
-- [Span.BorrowingIterator.Failure](span/borrowingiterator/failure.md)
+- [Span.BorrowingIterator.Failure](./borrowingiterator/failure.md)
 ### Default Implementations
-- [BorrowingIteratorProtocol Implementations](span/borrowingiterator/borrowingiteratorprotocol-implementations.md)
+- [BorrowingIteratorProtocol Implementations](./borrowingiterator/borrowingiteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BorrowingIteratorProtocol](borrowingiteratorprotocol.md)
+- [BorrowingIteratorProtocol](../borrowingiteratorprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # deviceVerificationNonce
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The UUID for computing the device verification value.
 
@@ -22,13 +23,14 @@ let deviceVerificationNonce: UUID
 
 #### Discussion
 
-Use the lowercased nonce when computing the [`deviceVerification`](transaction/deviceverification.md) value.
+Use the lowercased nonce when computing the [`deviceVerification`](./deviceverification.md) value.
 
 ## See Also
 
-- [let deviceVerification: Data](transaction/deviceverification.md)
+### Verifying transactions
+- [let deviceVerification: Data](./deviceverification.md)
   The device verification value you use to verify whether the transaction belongs to the device.
-- [let signedDate: Date](transaction/signeddate.md)
+- [let signedDate: Date](./signeddate.md)
   The date that the App Store signed the JWS transaction.
 
 

@@ -1,7 +1,8 @@
 # GCInputDirectionalCardinalDpad
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the controller’s optional secondary directional pad element.
 
@@ -19,13 +20,18 @@ The name of the controller’s optional secondary directional pad element.
 let GCInputDirectionalCardinalDpad: String
 ```
 
+```c
+extern NSString * const GCInputDirectionalCardinalDpad;
+```
+
 #### Discussion
 
 This input element is an eight-way digital directional pad with physical up, down, left, and right buttons. For the second-generation Siri Remote and later, this represents the outer ring of the touch surface.
 
 ## See Also
 
-- [let GCInputDirectionalDpad: String](gcinputdirectionaldpad.md)
+### Directional Pad Names
+- [let GCInputDirectionalDpad: String](./gcinputdirectionaldpad.md)
   The name of the controller’s primary directional pad element.
 
 

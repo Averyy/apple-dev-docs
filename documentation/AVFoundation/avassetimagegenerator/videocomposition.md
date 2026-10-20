@@ -1,7 +1,8 @@
 # videoComposition
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A video composition to use when extracting images from assets with multiple video tracks.
 
@@ -20,22 +21,27 @@ A video composition to use when extracting images from assets with multiple vide
 var videoComposition: AVVideoComposition? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) AVVideoComposition * videoComposition;
+```
+
 #### Discussion
 
 If you don’t specify a video composition, the generator only uses the first enabled video track.
 
-If specify a video composition, the image generator ignores the value of the [`appliesPreferredTrackTransform`](avassetimagegenerator/appliespreferredtracktransform.md) property.
+If specify a video composition, the image generator ignores the value of the [`appliesPreferredTrackTransform`](./appliespreferredtracktransform.md) property.
 
 Setting a video composition with any of the following attributes generates an exception:
 
-- A [`renderScale`](avvideocomposition/renderscale.md) not equal to `1.0`.
-- A [`renderSize`](avvideocomposition/rendersize.md) with a width or height less than `0`.
-- A [`frameDuration`](avvideocomposition/frameduration.md) that’s invalid, or less than or equal to [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero).
-- A [`sourceTrackIDForFrameTiming`](avvideocomposition/sourcetrackidforframetiming.md) less than [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero).
+- A [`renderScale`](../avvideocomposition/renderscale.md) not equal to `1.0`.
+- A [`renderSize`](../avvideocomposition/rendersize.md) with a width or height less than `0`.
+- A [`frameDuration`](../avvideocomposition/frameduration.md) that’s invalid, or less than or equal to [`zero`](../../CoreMedia/cmtime/zero.md).
+- A [`sourceTrackIDForFrameTiming`](../avvideocomposition/sourcetrackidforframetiming.md) less than [`zero`](../../CoreMedia/cmtime/zero.md).
 
 ## See Also
 
-- [var customVideoCompositor: (any AVVideoCompositing)?](avassetimagegenerator/customvideocompositor.md)
+### Configuring compositing
+- [var customVideoCompositor: (any AVVideoCompositing)?](./customvideocompositor.md)
   A custom video compositor to use when extracting images from assets with multiple video tracks.
 
 

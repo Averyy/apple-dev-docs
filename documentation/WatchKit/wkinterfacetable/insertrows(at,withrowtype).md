@@ -1,7 +1,8 @@
 # insertRows(at:withRowType:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts rows into the table at the specified indexes.
 
@@ -14,9 +15,13 @@ Inserts rows into the table at the specified indexes.
 func insertRows(at rows: IndexSet, withRowType rowType: String)
 ```
 
+```objc
+- (void) insertRowsAtIndexes:(NSIndexSet *) rows withRowType:(NSString *) rowType;
+```
+
 #### Discussion
 
-This method inserts the new row controllers into the existing array of row controllers using the semantics defined by the [`insert(_:at:)`](https://developer.apple.com/documentation/foundation/nsmutablearray/insert(_:at:)-73pln) method of [`NSMutableArray`](https://developer.apple.com/documentation/foundation/nsmutablearray).
+This method inserts the new row controllers into the existing array of row controllers using the semantics defined by the [`insert(_:at:)`](../../Foundation/nsmutablearray/insert%28_,at%29-73pln.md) method of [`NSMutableArray`](../../Foundation/nsmutablearray.md).
 
 ## Parameters
 
@@ -25,7 +30,8 @@ This method inserts the new row controllers into the existing array of row contr
 
 ## See Also
 
-- [func removeRows(at: IndexSet)](wkinterfacetable/removerows(at:).md)
+### Inserting and Removing Rows
+- [func removeRows(at: IndexSet)](./removerows%28at%29.md)
   Removes the specified rows from the table.
 
 

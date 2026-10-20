@@ -1,7 +1,8 @@
 # MTRCommissioningParameters
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,40 +19,44 @@
 class MTRCommissioningParameters
 ```
 
+```objc
+@interface MTRCommissioningParameters : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var attestationNonce: Data?](mtrcommissioningparameters/attestationnonce.md)
-- [var countryCode: String?](mtrcommissioningparameters/countrycode.md)
-- [var csrNonce: Data?](mtrcommissioningparameters/csrnonce-9eaxq.md)
-- [var deviceAttestationDelegate: (any MTRDeviceAttestationDelegate)?](mtrcommissioningparameters/deviceattestationdelegate.md)
-- [var failSafeExpiryTimeoutSecs: NSNumber?](mtrcommissioningparameters/failsafeexpirytimeoutsecs.md)
-- [var failSafeTimeout: NSNumber?](mtrcommissioningparameters/failsafetimeout.md)
-- [var skipCommissioningComplete: Bool](mtrcommissioningparameters/skipcommissioningcomplete.md)
-- [var threadOperationalDataset: Data?](mtrcommissioningparameters/threadoperationaldataset.md)
-- [var wifiCredentials: Data?](mtrcommissioningparameters/wificredentials.md)
-- [var wifiSSID: Data?](mtrcommissioningparameters/wifissid.md)
-- [var csrNonce: Data?](mtrcommissioningparameters/csrnonce-8gx94.md)
-- [var extraAttributesToRead: [MTRAttributeRequestPath]?](mtrcommissioningparameters/extraattributestoread.md)
+- [var attestationNonce: Data?](./mtrcommissioningparameters/attestationnonce.md)
+- [var countryCode: String?](./mtrcommissioningparameters/countrycode.md)
+- [var csrNonce: Data?](./mtrcommissioningparameters/csrnonce-9eaxq.md)
+- [var deviceAttestationDelegate: (any MTRDeviceAttestationDelegate)?](./mtrcommissioningparameters/deviceattestationdelegate.md)
+- [var failSafeExpiryTimeoutSecs: NSNumber?](./mtrcommissioningparameters/failsafeexpirytimeoutsecs.md)
+- [var failSafeTimeout: NSNumber?](./mtrcommissioningparameters/failsafetimeout.md)
+- [var skipCommissioningComplete: Bool](./mtrcommissioningparameters/skipcommissioningcomplete.md)
+- [var threadOperationalDataset: Data?](./mtrcommissioningparameters/threadoperationaldataset.md)
+- [var wifiCredentials: Data?](./mtrcommissioningparameters/wificredentials.md)
+- [var wifiSSID: Data?](./mtrcommissioningparameters/wifissid.md)
+- [var csrNonce: Data?](./mtrcommissioningparameters/csrnonce-8gx94.md)
+- [var extraAttributesToRead: [MTRAttributeRequestPath]?](./mtrcommissioningparameters/extraattributestoread.md)
   List of attribute paths to read from the commissionee (in addition to whatever attributes are already read to handle readEndpointInformation being YES, or to handle other commissioning tasks).
-- [var forceThreadScan: Bool](mtrcommissioningparameters/forcethreadscan.md)
+- [var forceThreadScan: Bool](./mtrcommissioningparameters/forcethreadscan.md)
   Whether to force a network scan before requesting Thread credentials. The default is NO.
-- [var forceWiFiScan: Bool](mtrcommissioningparameters/forcewifiscan.md)
+- [var forceWiFiScan: Bool](./mtrcommissioningparameters/forcewifiscan.md)
   Whether to force a network scan before requesting Wi-Fi credentials. The default is NO.
-- [var readEndpointInformation: Bool](mtrcommissioningparameters/readendpointinformation.md)
+- [var readEndpointInformation: Bool](./mtrcommissioningparameters/readendpointinformation.md)
   Read device type information from all endpoints during commissioning. Defaults to NO.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # role
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The role of the button.
 
@@ -18,13 +19,18 @@ The role of the button.
 var role: UIButton.Role { get set }
 ```
 
+```objc
+@property (nonatomic) UIButtonRole role;
+```
+
 #### Discussion
 
-Set the [`UIButton.Role`](uibutton/role-swift.enum.md) to define a button as the primary action or the cancel action in a view. Catalyst apps use this role to set the appearance and default key-binding of the buttons.
+Set the [`UIButton.Role`](./role-swift.enum.md) to define a button as the primary action or the cancel action in a view. Catalyst apps use this role to set the appearance and default key-binding of the buttons.
 
 ## See Also
 
-- [UIButton.Role](uibutton/role-swift.enum.md)
+### Specifying the role
+- [UIButton.Role](./role-swift.enum.md)
   Constants that describe the role of the button.
 
 

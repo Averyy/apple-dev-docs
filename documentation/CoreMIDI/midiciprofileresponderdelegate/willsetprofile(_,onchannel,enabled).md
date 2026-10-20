@@ -1,21 +1,28 @@
 # willSetProfile(_:onChannel:enabled:)
 
 **Framework**: Core MIDI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides an opportunity to perform an action before the system sets the profile.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: No longer supported for CoreMIDI
 
 ## Declaration
 
 ```swift
 optional func willSetProfile(_ aProfile: MIDICIProfile, onChannel channel: MIDIChannelNumber, enabled shouldEnable: Bool) -> Bool
+```
+
+```objc
+- (BOOL) willSetProfile:(MIDICIProfile *) aProfile onChannel:(MIDIChannelNumber) channel enabled:(BOOL) shouldEnable;
 ```
 
 #### Return Value
@@ -30,11 +37,12 @@ A Boolean value that indicates whether the system enabled the profile.
 
 ## See Also
 
-- [func connectInitiator(MIDICIInitiatiorMUID, with: MIDICIDeviceInfo) -> Bool](midiciprofileresponderdelegate/connectinitiator(_:with:).md)
+### Protocol Methods
+- [func connectInitiator(MIDICIInitiatiorMUID, with: MIDICIDeviceInfo) -> Bool](./connectinitiator%28_,with%29.md)
   Enables a MIDI-CI initiator to create a session or reject the connection attempt.
-- [func handleData(for: MIDICIProfile, onChannel: MIDIChannelNumber, data: Data)](midiciprofileresponderdelegate/handledata(for:onchannel:data:).md)
+- [func handleData(for: MIDICIProfile, onChannel: MIDIChannelNumber, data: Data)](./handledata%28for,onchannel,data%29.md)
   Processes MIDI data for a profile and channel.
-- [func initiatorDisconnected(MIDICIInitiatiorMUID)](midiciprofileresponderdelegate/initiatordisconnected(_:).md)
+- [func initiatorDisconnected(MIDICIInitiatiorMUID)](./initiatordisconnected%28_%29.md)
   Provides an opportunity to perform an action after the system disconnects the initiator.
 
 

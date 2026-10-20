@@ -1,7 +1,8 @@
 # accessibilityTextInputResponder
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that handles text input calls for this accessibility element.
 
@@ -18,9 +19,13 @@ The object that handles text input calls for this accessibility element.
 weak var accessibilityTextInputResponder: (any UITextInput)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UITextInput> accessibilityTextInputResponder;
+```
+
 #### Discussion
 
-If your accessibility element represents a view that supports text operations using the [`UITextInput`](https://developer.apple.com/documentation/uikit/uitextinput) protocol, use this property to forward `UITextInput` calls to your backing view.
+If your accessibility element represents a view that supports text operations using the [`UITextInput`](../../UIKit/uitextinput.md) protocol, use this property to forward `UITextInput` calls to your backing view.
 
 
 ---

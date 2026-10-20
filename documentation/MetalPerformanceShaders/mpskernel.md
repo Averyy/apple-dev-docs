@@ -1,7 +1,8 @@
 # MPSKernel
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A standard interface for Metal Performance Shaders kernels.
 
@@ -19,13 +20,17 @@ A standard interface for Metal Performance Shaders kernels.
 class MPSKernel
 ```
 
+```objc
+@interface MPSKernel : NSObject
+```
+
 ## Mentions
 
-- [The MPSKernel Class](the-mpskernel-class.md)
+- [The MPSKernel Class](./the-mpskernel-class.md)
 
 #### Overview
 
-You should not use the [`MPSKernel`](mpskernel.md) class directly. Instead, a number of subclasses are available that define specific high-performance data-parallel operations.
+You should not use the [`MPSKernel`](./mpskernel.md) class directly. Instead, a number of subclasses are available that define specific high-performance data-parallel operations.
 
 The basic sequence for applying a kernel to an image is as follows:
 
@@ -68,9 +73,9 @@ if(returnVal < 0)
     MyShowError(returnVal);
 ```
 
-Encoding the kernel merely encodes the operation into a command buffer. It does not modify any pixels, yet. All kernel state has been copied to the command buffer. Kernels may be reused. If the texture was previously operated on by another command encoder (e.g. a render command encoder), you should call the [`endEncoding()`](https://developer.apple.com/documentation/metal/mtlcommandencoder/endencoding()) method on the other encoder before encoding the filter.
+Encoding the kernel merely encodes the operation into a command buffer. It does not modify any pixels, yet. All kernel state has been copied to the command buffer. Kernels may be reused. If the texture was previously operated on by another command encoder (e.g. a render command encoder), you should call the [`endEncoding()`](../Metal/mtlcommandencoder/endencoding%28%29.md) method on the other encoder before encoding the filter.
 
-Some kernels work in place, even in situations where Metal might not normally allow in-place operation on textures. If in-place operation is desired, you may attempt to call the [`encode(commandBuffer:inPlaceTexture:fallbackCopyAllocator:)`](mpsunaryimagekernel/encode(commandbuffer:inplacetexture:fallbackcopyallocator:).md) method. If the operation cannot be completed in place, then [`false`](https://developer.apple.com/documentation/swift/false) will be returned and you will have to create a new result texture and try again. To make an in-place image filter reliable, pass a fallback [`MPSCopyAllocator`](mpscopyallocator.md) block to the method to create a new texture to write to in the event that a filter cannot operate in place.
+Some kernels work in place, even in situations where Metal might not normally allow in-place operation on textures. If in-place operation is desired, you may attempt to call the [`encode(commandBuffer:inPlaceTexture:fallbackCopyAllocator:)`](./mpsunaryimagekernel/encode%28commandbuffer,inplacetexture,fallbackcopyallocator%29.md) method. If the operation cannot be completed in place, then [`false`](../Swift/false.md) will be returned and you will have to create a new result texture and try again. To make an in-place image filter reliable, pass a fallback [`MPSCopyAllocator`](./mpscopyallocator.md) block to the method to create a new texture to write to in the event that a filter cannot operate in place.
 
 You may repeat step 2 to encode more kernels, as desired. 3. After encoding any additional work to the command buffer using other encoders, submit the command buffer to your command queue, using:
 
@@ -91,65 +96,65 @@ commandBuffer.commit()
 ## Topics
 
 ### Initializers
-- [convenience init?(coder: NSCoder)](mpskernel/init(coder:).md)
-- [init?(coder: NSCoder, device: any MTLDevice)](mpskernel/init(coder:device:).md)
+- [convenience init?(coder: NSCoder)](./mpskernel/init%28coder%29.md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpskernel/init%28coder,device%29.md)
 ### Methods
-- [init(device: any MTLDevice)](mpskernel/init(device:).md)
+- [init(device: any MTLDevice)](./mpskernel/init%28device%29.md)
   Initializes a new kernel object.
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpskernel/copy(with:device:).md)
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](./mpskernel/copy%28with,device%29.md)
   Makes a copy of this kernel object for a new device.
 ### Properties
-- [var options: MPSKernelOptions](mpskernel/options.md)
+- [var options: MPSKernelOptions](./mpskernel/options.md)
   The set of options used to run the kernel.
-- [struct MPSKernelOptions](mpskerneloptions.md)
+- [struct MPSKernelOptions](./mpskerneloptions.md)
   The options used when creating a kernel.
-- [var device: any MTLDevice](mpskernel/device.md)
+- [var device: any MTLDevice](./mpskernel/device.md)
   The device on which the kernel will be used.
-- [var label: String?](mpskernel/label.md)
+- [var label: String?](./mpskernel/label.md)
   The string that identifies the kernel.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MPSAccelerationStructure](mpsaccelerationstructure.md)
-- [MPSBinaryImageKernel](mpsbinaryimagekernel.md)
-- [MPSCNNBinaryKernel](mpscnnbinarykernel.md)
-- [MPSCNNKernel](mpscnnkernel.md)
-- [MPSCNNMultiaryKernel](mpscnnmultiarykernel.md)
-- [MPSImageCopyToMatrix](mpsimagecopytomatrix.md)
-- [MPSImageEDLines](mpsimageedlines.md)
-- [MPSImageFindKeypoints](mpsimagefindkeypoints.md)
-- [MPSImageGuidedFilter](mpsimageguidedfilter.md)
-- [MPSImageHistogram](mpsimagehistogram.md)
-- [MPSImageNormalizedHistogram](mpsimagenormalizedhistogram.md)
-- [MPSMatrixBinaryKernel](mpsmatrixbinarykernel.md)
-- [MPSMatrixCopy](mpsmatrixcopy.md)
-- [MPSMatrixCopyToImage](mpsmatrixcopytoimage.md)
-- [MPSMatrixMultiplication](mpsmatrixmultiplication.md)
-- [MPSMatrixRandom](mpsmatrixrandom.md)
-- [MPSMatrixSum](mpsmatrixsum.md)
-- [MPSMatrixUnaryKernel](mpsmatrixunarykernel.md)
-- [MPSNDArrayMultiaryBase](mpsndarraymultiarybase.md)
-- [MPSNNGraph](mpsnngraph.md)
-- [MPSNNOptimizer](mpsnnoptimizer.md)
-- [MPSRNNMatrixInferenceLayer](mpsrnnmatrixinferencelayer.md)
-- [MPSRNNMatrixTrainingLayer](mpsrnnmatrixtraininglayer.md)
-- [MPSRayIntersector](mpsrayintersector.md)
-- [MPSSVGF](mpssvgf.md)
-- [MPSTemporalAA](mpstemporalaa.md)
-- [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+- [MPSAccelerationStructure](./mpsaccelerationstructure.md)
+- [MPSBinaryImageKernel](./mpsbinaryimagekernel.md)
+- [MPSCNNBinaryKernel](./mpscnnbinarykernel.md)
+- [MPSCNNKernel](./mpscnnkernel.md)
+- [MPSCNNMultiaryKernel](./mpscnnmultiarykernel.md)
+- [MPSImageCopyToMatrix](./mpsimagecopytomatrix.md)
+- [MPSImageEDLines](./mpsimageedlines.md)
+- [MPSImageFindKeypoints](./mpsimagefindkeypoints.md)
+- [MPSImageGuidedFilter](./mpsimageguidedfilter.md)
+- [MPSImageHistogram](./mpsimagehistogram.md)
+- [MPSImageNormalizedHistogram](./mpsimagenormalizedhistogram.md)
+- [MPSMatrixBinaryKernel](./mpsmatrixbinarykernel.md)
+- [MPSMatrixCopy](./mpsmatrixcopy.md)
+- [MPSMatrixCopyToImage](./mpsmatrixcopytoimage.md)
+- [MPSMatrixMultiplication](./mpsmatrixmultiplication.md)
+- [MPSMatrixRandom](./mpsmatrixrandom.md)
+- [MPSMatrixSum](./mpsmatrixsum.md)
+- [MPSMatrixUnaryKernel](./mpsmatrixunarykernel.md)
+- [MPSNDArrayMultiaryBase](./mpsndarraymultiarybase.md)
+- [MPSNNGraph](./mpsnngraph.md)
+- [MPSNNOptimizer](./mpsnnoptimizer.md)
+- [MPSRNNMatrixInferenceLayer](./mpsrnnmatrixinferencelayer.md)
+- [MPSRNNMatrixTrainingLayer](./mpsrnnmatrixtraininglayer.md)
+- [MPSRayIntersector](./mpsrayintersector.md)
+- [MPSSVGF](./mpssvgf.md)
+- [MPSTemporalAA](./mpstemporalaa.md)
+- [MPSUnaryImageKernel](./mpsunaryimagekernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

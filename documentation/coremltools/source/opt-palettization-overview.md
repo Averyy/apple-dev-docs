@@ -6,28 +6,13 @@ url: https://apple.github.io/coremltools/docs-guides/source/opt-palettization-ov
 
 # Palettization Overview
 
-**
-
-- [.md](../_sources/source/opt-palettization-overview.md)
-- **
-
-.pdf
-
-**
-
-# Palettization Overview
-
- Table of contents 
-
-## Contents
-
-# Palettization Overview
-
 Palettization, also referred to as weight clustering,  compresses a model by clustering the model’s `float` weights and creating a [lookup table (LUT)](https://en.wikipedia.org/wiki/Lookup_table) of centroids, and then storing the original weight values with indices pointing to the entries in the LUT.
 
 Weights with similar values are grouped together and represented using the value of the cluster centroid they belong to, as shown in the following figure. The original weight matrix is converted to an index table in which each element points to the corresponding cluster center.
 
 `N={1,2,3,4,6,8}` are supported, where `N` is the number of bits used for palettization.
+
+![Non-uniform lowering of precision using clustering](https://apple.github.io/coremltools/docs-guides/_images/palettization-overview.png)
 
 Non-uniform lowering of precision using clustering
 
@@ -35,6 +20,8 @@ Non-uniform lowering of precision using clustering
 
 The figure above shows what is referred to as `per_tensor` granularity, where the entire tensor shares a single LUT. This can lead to high approximation error for large matrices.
 Starting with `iOS18/macOS15`, a mode called `per_grouped_channel` is available. It allows a group of channels, specified by the parameter `group_size`, to share a single LUT, thereby having multiple LUTs for the whole weight matrix. For example, a weight of shape `(1024, 1024)`, with `group_size=16`, will have `64` LUTs.
+
+![Palettization granularity](https://apple.github.io/coremltools/docs-guides/_images/palettization-granularity.png)
 
 Palettization granularity
 
@@ -54,5 +41,3 @@ The values in LUT are by default `float`. However, starting from `iOS18/macOS15`
 Feature Availability
 
 Palettized weight representation for Core ML `mlprogram` models is available in `iOS16`/`macOS13`/`watchOS9`/`tvOS16` and newer deployment target formats.
-
-** Contents

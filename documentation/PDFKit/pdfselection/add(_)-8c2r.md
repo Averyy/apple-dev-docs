@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified selection to the receiving selection.
 
@@ -19,17 +20,22 @@ Adds the specified selection to the receiving selection.
 func add(_ selection: PDFSelection)
 ```
 
+```objc
+- (void) addSelection:(PDFSelection *) selection;
+```
+
 #### Discussion
 
 Selections do not have to be contiguous. If the selection to be added overlaps with the receiving selection, the overlap is removed in a process called normalization.
 
 ## See Also
 
-- [func add([PDFSelection])](pdfselection/add(_:)-3fyld.md)
+### Modifying a Selection
+- [func add([PDFSelection])](./add%28_%29-3fyld.md)
   Adds the specified array of selections to the receiving selection.
-- [func extend(atEnd: Int)](pdfselection/extend(atend:).md)
+- [func extend(atEnd: Int)](./extend%28atend%29.md)
   Extends the selection from its end toward the end of the document.
-- [func extend(atStart: Int)](pdfselection/extend(atstart:).md)
+- [func extend(atStart: Int)](./extend%28atstart%29.md)
   Extends the selection from its start toward the beginning of the document.
 
 

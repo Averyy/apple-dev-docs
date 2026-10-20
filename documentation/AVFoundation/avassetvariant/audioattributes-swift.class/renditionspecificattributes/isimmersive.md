@@ -1,7 +1,8 @@
 # isImmersive
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this variant contains virtualized or otherwise preprocessed audio content suitable for various purposes.
 
@@ -20,17 +21,22 @@ A Boolean value that indicates whether this variant contains virtualized or othe
 var isImmersive: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isImmersive) BOOL immersive;
+```
+
 #### Discussion
 
 If a variant audio redition is immersive it’s eligible for rendering to headphones or speakers.
 
 ## See Also
 
-- [var channelCount: Int?](avassetvariant/audioattributes-swift.class/renditionspecificattributes/channelcount.md)
+### Accessing attributes
+- [var channelCount: Int?](./channelcount.md)
   The count of audio channels in the rendition.
-- [var isBinaural: Bool](avassetvariant/audioattributes-swift.class/renditionspecificattributes/isbinaural.md)
+- [var isBinaural: Bool](./isbinaural.md)
   A Boolean value that indicates the variant is best suited for delivery to headphones.
-- [var isDownmix: Bool](avassetvariant/audioattributes-swift.class/renditionspecificattributes/isdownmix.md)
+- [var isDownmix: Bool](./isdownmix.md)
   A Boolean value that indicates whether the variant is a downmix derivative of other media of greater channel count.
 
 

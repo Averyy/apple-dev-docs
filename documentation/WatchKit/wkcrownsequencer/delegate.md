@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object you use to monitor changes to the crown state.
 
@@ -14,9 +15,13 @@ The object you use to monitor changes to the crown state.
 weak var delegate: (any WKCrownDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<WKCrownDelegate> delegate;
+```
+
 #### Discussion
 
-Assign a delegate object to receive notifications about crown rotation events. For more information about receiving crown-related data, see [`WKCrownDelegate`](wkcrowndelegate.md).
+Assign a delegate object to receive notifications about crown rotation events. For more information about receiving crown-related data, see [`WKCrownDelegate`](../wkcrowndelegate.md).
 
 
 ---

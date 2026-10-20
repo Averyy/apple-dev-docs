@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that uniquely identifies the app entity.
 

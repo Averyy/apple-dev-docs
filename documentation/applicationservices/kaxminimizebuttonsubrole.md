@@ -1,7 +1,8 @@
 # kAXMinimizeButtonSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A minimize button (that is, the yellow button in a window’s title bar that minimizes the window into the Dock).
 
@@ -12,6 +13,10 @@ A minimize button (that is, the yellow button in a window’s title bar that min
 
 ```swift
 var kAXMinimizeButtonSubrole: String { get }
+```
+
+```c
+#define kAXMinimizeButtonSubrole
 ```
 
 

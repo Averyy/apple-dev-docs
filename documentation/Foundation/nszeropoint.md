@@ -1,7 +1,8 @@
 # NSZeroPoint
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An `NSPoint` structure with both x and y coordinates set to `0`.
 
@@ -13,6 +14,10 @@ An `NSPoint` structure with both x and y coordinates set to `0`.
 
 ```swift
 let NSZeroPoint: NSPoint
+```
+
+```c
+extern const NSPoint NSZeroPoint;
 ```
 
 

@@ -1,7 +1,8 @@
 # BasicChart3DSymbolShape
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A basic chart symbol shape.
 
@@ -21,11 +22,12 @@ struct BasicChart3DSymbolShape
 ## Relationships
 
 ### Conforms To
-- [Chart3DSymbolShape](chart3dsymbolshape.md)
+- [Chart3DSymbolShape](./chart3dsymbolshape.md)
 
 ## See Also
 
-- [protocol Chart3DSymbolShape](chart3dsymbolshape.md)
+### Configuring chart shapes
+- [protocol Chart3DSymbolShape](./chart3dsymbolshape.md)
   A type that can act as a shape for the marks that you add to a chart.
 
 

@@ -1,7 +1,8 @@
 # right
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A set containing only the right direction.
 

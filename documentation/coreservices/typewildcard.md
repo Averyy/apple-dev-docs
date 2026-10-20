@@ -1,7 +1,8 @@
 # typeWildCard
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Matches any type.
 

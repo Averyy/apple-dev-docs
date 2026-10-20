@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a given object from the set.
 
@@ -20,23 +21,29 @@ Removes a given object from the set.
 func remove(_ object: Any)
 ```
 
+```objc
+- (void) removeObject:(ObjectType) object;
+```
+
 ## Parameters
 
 - `object`: The object to remove from the set.
 
 ## See Also
 
-- [func minus(Set<AnyHashable>)](nsmutableset/minus(_:).md)
+### Related Documentation
+- [func minus(Set<AnyHashable>)](./minus%28_%29.md)
   Removes each object in another given set from the receiving set, if present.
-- [func intersect(Set<AnyHashable>)](nsmutableset/intersect(_:).md)
+- [func intersect(Set<AnyHashable>)](./intersect%28_%29.md)
   Removes from the receiving set each object that isn’t a member of another given set.
-- [func add(Any)](nsmutableset/add(_:).md)
+### Adding and removing entries
+- [func add(Any)](./add%28_%29.md)
   Adds a given object to the set, if it is not already a member.
-- [func filter(using: NSPredicate)](nsmutableset/filter(using:).md)
+- [func filter(using: NSPredicate)](./filter%28using%29.md)
   Evaluates a given predicate against the set’s content and removes from the set those objects for which the predicate returns false.
-- [func removeAllObjects()](nsmutableset/removeallobjects.md)
+- [func removeAllObjects()](./removeallobjects%28%29.md)
   Empties the set of all of its members.
-- [func addObjects(from: [Any])](nsmutableset/addobjects(from:).md)
+- [func addObjects(from: [Any])](./addobjects%28from%29.md)
   Adds to the set each object contained in a given array that is not already a member.
 
 

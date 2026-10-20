@@ -1,14 +1,15 @@
 # accessibilityLabel(for:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A localized accessibility label converting a specific detection type into a broad category such as a person, pet, and so on.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 

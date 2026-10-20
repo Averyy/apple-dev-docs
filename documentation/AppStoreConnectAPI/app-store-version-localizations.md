@@ -1,6 +1,7 @@
 # App Store Version Localizations
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: API Collection
 
 Create and maintain version-specific App Store metadata that’s localized.
 
@@ -16,76 +17,77 @@ Use `appStoreVersionLocalizations` to create and maintain your App Store metadat
 - Support URL
 - What’s New Text
 
-You can update the Promotional Text for your version at any time. Update other attributes when your app is in an editable state. For information about required, localized, and editable metadata, see [`Required, localized, and editable properties`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/required-localizable-and-editable-properties).
+You can update the Promotional Text for your version at any time. Update other attributes when your app is in an editable state. For information about required, localized, and editable metadata, see [Required, localized, and editable properties](https://developer.apple.com/help/app-store-connect/reference/required-localizable-and-editable-properties).
 
-> **Note**:  Manage version media with the [`App Asset Library`](app-asset-library.md) and [`App Asset Library placements`](app-asset-library-placements.md). The app preview set and app screenshot set relationships are deprecated.
+> **Note**:  Manage version media with the [App Asset Library](./app-asset-library.md) and [placements](./app-asset-library-placements.md). The app preview set and app screenshot set relationships are deprecated.
 
 ## Topics
 
 ### Getting Version Localizations
-- [List all app store version localizations for an app store version](get-v1-appstoreversions-_id_-appstoreversionlocalizations.md)
+- [List all app store version localizations for an app store version](./get-v1-appstoreversions-_id_-appstoreversionlocalizations.md)
   Get a list of localized, version-level information about an app, for all locales.
-- [Read app store version localization information](get-v1-appstoreversionlocalizations-_id_.md)
+- [Read app store version localization information](./get-v1-appstoreversionlocalizations-_id_.md)
   Read localized version-level information.
 ### Creating, Modifying, and Deleting Version Localizations
-- [Create an app store version localization](post-v1-appstoreversionlocalizations.md)
+- [Create an app store version localization](./post-v1-appstoreversionlocalizations.md)
   Add localized version-level information for a new locale.
-- [Modify an app store version localization](patch-v1-appstoreversionlocalizations-_id_.md)
+- [Modify an app store version localization](./patch-v1-appstoreversionlocalizations-_id_.md)
   Modify localized version-level information for a particular language.
-- [Delete an app store version localization](delete-v1-appstoreversionlocalizations-_id_.md)
+- [Delete an app store version localization](./delete-v1-appstoreversionlocalizations-_id_.md)
   Delete a language from your version metadata.
 ### Getting Information from a Localization
-- [List all app preview sets for an app store version localization](get-v1-appstoreversionlocalizations-_id_-apppreviewsets.md)
+- [List all app preview sets for an app store version localization](./get-v1-appstoreversionlocalizations-_id_-apppreviewsets.md)
   List all app preview sets for a specific localization.
-- [List all app screenshot sets for an app store version localization](get-v1-appstoreversionlocalizations-_id_-appscreenshotsets.md)
+- [List all app screenshot sets for an app store version localization](./get-v1-appstoreversionlocalizations-_id_-appscreenshotsets.md)
   List all screenshot sets for a specific localization.
-- [List preview set IDs for an App Store version localization](get-v1-appstoreversionlocalizations-_id_-relationships-apppreviewsets.md)
-- [List screenshot set IDs for an App Store version localization](get-v1-appstoreversionlocalizations-_id_-relationships-appscreenshotsets.md)
+- [List preview set IDs for an App Store version localization](./get-v1-appstoreversionlocalizations-_id_-relationships-apppreviewsets.md)
+- [List screenshot set IDs for an App Store version localization](./get-v1-appstoreversionlocalizations-_id_-relationships-appscreenshotsets.md)
 ### Search Keywords
-- [List all search keywords for an app store version localization](get-v1-appstoreversionlocalizations-_id_-searchkeywords.md)
+- [List all search keywords for an app store version localization](./get-v1-appstoreversionlocalizations-_id_-searchkeywords.md)
   Get search keywords for a specific App Store version localization.
-- [List search keyword IDs for an app store version localization](get-v1-appstoreversionlocalizations-_id_-relationships-searchkeywords.md)
+- [List search keyword IDs for an app store version localization](./get-v1-appstoreversionlocalizations-_id_-relationships-searchkeywords.md)
   Get a list of search keyword IDs for a specific App Store version localization.
-- [Add search keywords to an app store version localization](post-v1-appstoreversionlocalizations-_id_-relationships-searchkeywords.md)
+- [Add search keywords to an app store version localization](./post-v1-appstoreversionlocalizations-_id_-relationships-searchkeywords.md)
   Add search keywords to a specific App Store version localization.
-- [Remove search keywords from an app store version localization](delete-v1-appstoreversionlocalizations-_id_-relationships-searchkeywords.md)
+- [Remove search keywords from an app store version localization](./delete-v1-appstoreversionlocalizations-_id_-relationships-searchkeywords.md)
   Remove search keywords from a specific App Store version localization.
 ### Getting asset library placements
-- [List related placements](get-v1-appstoreversionlocalizations-_id_-placements.md)
+- [List related placements](./get-v1-appstoreversionlocalizations-_id_-placements.md)
   List the placements for an App Store version localization.
-- [List the placement IDs for an App Store version localization](get-v1-appstoreversionlocalizations-_id_-relationships-placements.md)
+- [List the placement IDs for an App Store version localization](./get-v1-appstoreversionlocalizations-_id_-relationships-placements.md)
   Get a list of placement resource IDs for a specific App Store version localization.
 ### Objects
-- [object AppStoreVersionLocalization](appstoreversionlocalization.md)
+- [object AppStoreVersionLocalization](./appstoreversionlocalization.md)
   The data structure that represent an App Store Version Localizations resource.
-- [object AppStoreVersionLocalizationCreateRequest](appstoreversionlocalizationcreaterequest.md)
+- [object AppStoreVersionLocalizationCreateRequest](./appstoreversionlocalizationcreaterequest.md)
   The request body you use to create an App Store Version Localization.
-- [object AppStoreVersionLocalizationResponse](appstoreversionlocalizationresponse.md)
+- [object AppStoreVersionLocalizationResponse](./appstoreversionlocalizationresponse.md)
   The response body for endpoints that create, read, or modify a localized App Store version entry.
-- [object AppStoreVersionLocalizationsResponse](appstoreversionlocalizationsresponse.md)
+- [object AppStoreVersionLocalizationsResponse](./appstoreversionlocalizationsresponse.md)
   The response body for endpoints that list localized App Store version entries.
-- [object AppStoreVersionLocalizationUpdateRequest](appstoreversionlocalizationupdaterequest.md)
+- [object AppStoreVersionLocalizationUpdateRequest](./appstoreversionlocalizationupdaterequest.md)
   The request body you use to update an App Store Version Localization
-- [object AppStoreVersionLocalizationSearchKeywordsLinkagesRequest](appstoreversionlocalizationsearchkeywordslinkagesrequest.md)
+- [object AppStoreVersionLocalizationSearchKeywordsLinkagesRequest](./appstoreversionlocalizationsearchkeywordslinkagesrequest.md)
   The request body for updating the list of search keywords linked to an App Store version localization.
-- [object AppStoreVersionLocalizationSearchKeywordsLinkagesResponse](appstoreversionlocalizationsearchkeywordslinkagesresponse.md)
+- [object AppStoreVersionLocalizationSearchKeywordsLinkagesResponse](./appstoreversionlocalizationsearchkeywordslinkagesresponse.md)
   A response containing the resource identifiers of search keywords linked to an App Store version localization.
-- [object AppStoreVersionLocalizationPlacementsLinkagesResponse](appstoreversionlocalizationplacementslinkagesresponse.md)
+- [object AppStoreVersionLocalizationPlacementsLinkagesResponse](./appstoreversionlocalizationplacementslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
 
 ## See Also
 
-- [App Infos](app-infos.md)
+### Managing App Information and Versions
+- [App Infos](./app-infos.md)
   Manage or read the app metadata that applies across all versions of your app.
-- [App Info Localizations](app-info-localizations.md)
+- [App Info Localizations](./app-info-localizations.md)
   Manage the app metadata that is localized and appears on the App Store.
-- [App Store Versions](app-store-versions.md)
+- [App Store Versions](./app-store-versions.md)
   Manage versions of your app that are available in App Store.
-- [App tags](app-tags.md)
+- [App tags](./app-tags.md)
   Read or modify Apple created app tags.
-- [Routing App Coverages](routing-app-coverages.md)
+- [Routing App Coverages](./routing-app-coverages.md)
   Manage geographic coverage files for apps that use location to provide routing information.
-- [Accessibility declarations](accessibility-declarations.md)
+- [Accessibility declarations](./accessibility-declarations.md)
   Manage accessibility metadata for your apps per device family.
 
 

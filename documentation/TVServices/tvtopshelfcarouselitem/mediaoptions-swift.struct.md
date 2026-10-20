@@ -1,7 +1,8 @@
 # TVTopShelfCarouselItem.MediaOptions
 
 **Framework**: TV Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants indicating the item’s audio and video capabilities.
 
@@ -14,43 +15,48 @@ Constants indicating the item’s audio and video capabilities.
 struct MediaOptions
 ```
 
+```c
+enum TVTopShelfCarouselItemMediaOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Media Options
-- [static var videoResolutionHD: TVTopShelfCarouselItem.MediaOptions](tvtopshelfcarouselitem/mediaoptions-swift.struct/videoresolutionhd.md)
+- [static var videoResolutionHD: TVTopShelfCarouselItem.MediaOptions](./mediaoptions-swift.struct/videoresolutionhd.md)
   High-definition video resolution.
-- [static var videoResolution4K: TVTopShelfCarouselItem.MediaOptions](tvtopshelfcarouselitem/mediaoptions-swift.struct/videoresolution4k.md)
+- [static var videoResolution4K: TVTopShelfCarouselItem.MediaOptions](./mediaoptions-swift.struct/videoresolution4k.md)
   Ultra-high-definition 4K video resolution.
-- [static var videoColorSpaceHDR: TVTopShelfCarouselItem.MediaOptions](tvtopshelfcarouselitem/mediaoptions-swift.struct/videocolorspacehdr.md)
+- [static var videoColorSpaceHDR: TVTopShelfCarouselItem.MediaOptions](./mediaoptions-swift.struct/videocolorspacehdr.md)
   High-dynamic-range video.
-- [static var videoColorSpaceDolbyVision: TVTopShelfCarouselItem.MediaOptions](tvtopshelfcarouselitem/mediaoptions-swift.struct/videocolorspacedolbyvision.md)
+- [static var videoColorSpaceDolbyVision: TVTopShelfCarouselItem.MediaOptions](./mediaoptions-swift.struct/videocolorspacedolbyvision.md)
   Dolby Vision video.
-- [static var audioDolbyAtmos: TVTopShelfCarouselItem.MediaOptions](tvtopshelfcarouselitem/mediaoptions-swift.struct/audiodolbyatmos.md)
+- [static var audioDolbyAtmos: TVTopShelfCarouselItem.MediaOptions](./mediaoptions-swift.struct/audiodolbyatmos.md)
   Audio content with Dolby Atmos.
-- [static var audioTranscriptionClosedCaptioning: TVTopShelfCarouselItem.MediaOptions](tvtopshelfcarouselitem/mediaoptions-swift.struct/audiotranscriptionclosedcaptioning.md)
+- [static var audioTranscriptionClosedCaptioning: TVTopShelfCarouselItem.MediaOptions](./mediaoptions-swift.struct/audiotranscriptionclosedcaptioning.md)
   Audio content with closed captioning.
-- [static var audioTranscriptionSDH: TVTopShelfCarouselItem.MediaOptions](tvtopshelfcarouselitem/mediaoptions-swift.struct/audiotranscriptionsdh.md)
+- [static var audioTranscriptionSDH: TVTopShelfCarouselItem.MediaOptions](./mediaoptions-swift.struct/audiotranscriptionsdh.md)
   Audio content with subtitles for people who are deaf or hard of hearing.
-- [static var audioDescription: TVTopShelfCarouselItem.MediaOptions](tvtopshelfcarouselitem/mediaoptions-swift.struct/audiodescription.md)
+- [static var audioDescription: TVTopShelfCarouselItem.MediaOptions](./mediaoptions-swift.struct/audiodescription.md)
   Audio content with audio descriptions.
 ### Initializers
-- [init(rawValue: UInt)](tvtopshelfcarouselitem/mediaoptions-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./mediaoptions-swift.struct/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var mediaOptions: TVTopShelfCarouselItem.MediaOptions](tvtopshelfcarouselitem/mediaoptions-swift.property.md)
+### Adding Media Badges
+- [var mediaOptions: TVTopShelfCarouselItem.MediaOptions](./mediaoptions-swift.property.md)
   Information about the media format and presentation options.
 
 

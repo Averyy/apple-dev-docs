@@ -1,7 +1,8 @@
 # ToolExpectation.PartiallyGenerated.anyOrder(expectations:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A partially generated group of tool expectations that can match in any order.
 

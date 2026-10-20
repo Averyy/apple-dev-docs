@@ -1,7 +1,8 @@
 # CKDatabase.DatabaseChange.Deletion.Reason
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that represent why a record zone was deleted.
 
@@ -11,7 +12,7 @@ Constants that represent why a record zone was deleted.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,20 +24,20 @@ enum Reason
 ## Topics
 
 ### Enumeration Cases
-- [CKDatabase.DatabaseChange.Deletion.Reason.deleted](ckdatabase/databasechange/deletion/reason-swift.enum/deleted.md)
+- [CKDatabase.DatabaseChange.Deletion.Reason.deleted](./reason-swift.enum/deleted.md)
   Your app deleted the record zone.
-- [CKDatabase.DatabaseChange.Deletion.Reason.encryptedDataReset](ckdatabase/databasechange/deletion/reason-swift.enum/encrypteddatareset.md)
+- [CKDatabase.DatabaseChange.Deletion.Reason.encryptedDataReset](./reason-swift.enum/encrypteddatareset.md)
   The user chose to reset all encrypted data for their account.
-- [CKDatabase.DatabaseChange.Deletion.Reason.purged](ckdatabase/databasechange/deletion/reason-swift.enum/purged.md)
+- [CKDatabase.DatabaseChange.Deletion.Reason.purged](./reason-swift.enum/purged.md)
   A deletion from the user via the iCloud storage UI.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

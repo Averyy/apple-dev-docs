@@ -1,7 +1,8 @@
 # cmNoSpace
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The ColorSync Manager does not use this constant.
 

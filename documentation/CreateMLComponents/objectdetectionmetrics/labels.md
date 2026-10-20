@@ -1,7 +1,8 @@
 # labels
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of labels present in the dataset.
 
@@ -21,7 +22,8 @@ var labels: Set<Label>
 
 ## See Also
 
-- [var defaultConfidenceThreshold: Float](objectdetectionmetrics/defaultconfidencethreshold.md)
+### Getting the properties Properties
+- [var defaultConfidenceThreshold: Float](./defaultconfidencethreshold.md)
   The default confidence threshold. It is used as the confidence threshold for any label which does not have an explicit confidence threshold, while calculating averagePrecision and meanAveragePrecision.
 
 

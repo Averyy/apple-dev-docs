@@ -1,7 +1,8 @@
 # capturedRoom(from:)
 
 **Framework**: RoomPlan  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Processes the specified raw scan results and returns a detailed representation of the room.
 
@@ -24,8 +25,8 @@ A captured-room object that provides the key details of a scanned room.
 
 You retrieve the argument `capturedRoomData` in one of the following ways:
 
-- The [`captureView(shouldPresent:error:)`](roomcaptureviewdelegate/captureview(shouldpresent:error:).md) callback for an app that scans rooms using the framework-provided view ([`RoomCaptureView`](roomcaptureview.md)).
-- The [`captureSession(_:didEndWith:error:)`](roomcapturesessiondelegate/capturesession(_:didendwith:error:).md) callback for an app that implements its own room-scanning view.
+- The [`captureView(shouldPresent:error:)`](../roomcaptureviewdelegate/captureview%28shouldpresent,error%29.md) callback for an app that scans rooms using the framework-provided view ([`RoomCaptureView`](../roomcaptureview.md)).
+- The [`captureSession(_:didEndWith:error:)`](../roomcapturesessiondelegate/capturesession%28_,didendwith,error%29.md) callback for an app that implements its own room-scanning view.
 
 ## Parameters
 

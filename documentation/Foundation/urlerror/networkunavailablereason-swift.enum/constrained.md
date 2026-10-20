@@ -1,7 +1,8 @@
 # URLError.NetworkUnavailableReason.constrained
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reason that indicates network is unavailable because the user enabled “Low Data Mode” in the Settings app.
 
@@ -26,13 +27,14 @@ This reason occurs when the following conditions are true:
 
 - The only available network is cellular.
 - The user has enabled “Low Data Mode” option in the Cellular Data Options section of the Settings app.
-- The [`URLSessionConfiguration`](urlsessionconfiguration.md) property [`allowsConstrainedNetworkAccess`](urlsessionconfiguration/allowsconstrainednetworkaccess.md) is [`false`](https://developer.apple.com/documentation/swift/false).
+- The [`URLSessionConfiguration`](../../urlsessionconfiguration.md) property [`allowsConstrainedNetworkAccess`](../../urlsessionconfiguration/allowsconstrainednetworkaccess.md) is [`false`](../../../Swift/false.md).
 
 ## See Also
 
-- [URLError.NetworkUnavailableReason.cellular](urlerror/networkunavailablereason-swift.enum/cellular.md)
+### Unavailability reasons
+- [URLError.NetworkUnavailableReason.cellular](./cellular.md)
   A reason that indicates network is unavailable because the interface is cellular and cellular network is disabled.
-- [URLError.NetworkUnavailableReason.expensive](urlerror/networkunavailablereason-swift.enum/expensive.md)
+- [URLError.NetworkUnavailableReason.expensive](./expensive.md)
   A reason that indicates network is unavailable because the system marked the interface as expensive.
 
 

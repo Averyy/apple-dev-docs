@@ -1,7 +1,8 @@
 # audioLevel
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio level of the speech.
 
@@ -16,15 +17,20 @@ The audio level of the speech.
 var audioLevel: SRAudioLevel? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) SRAudioLevel * audioLevel;
+```
+
 ## See Also
 
-- [class SRAudioLevel](sraudiolevel.md)
+### Getting speech metrics and analytics
+- [class SRAudioLevel](../sraudiolevel.md)
   An object that represents the audio level for a range of speech.
-- [var speechRecognition: SFSpeechRecognitionResult?](srspeechmetrics/speechrecognition.md)
+- [var speechRecognition: SFSpeechRecognitionResult?](./speechrecognition.md)
   The partial or final results of the speech recognition request.
-- [var soundClassification: SNClassificationResult?](srspeechmetrics/soundclassification.md)
+- [var soundClassification: SNClassificationResult?](./soundclassification.md)
   The highest-ranking classifications in the time range.
-- [var speechExpression: SRSpeechExpression?](srspeechmetrics/speechexpression.md)
+- [var speechExpression: SRSpeechExpression?](./speechexpression.md)
   The metrics and voice analytics for the range of speech.
 
 

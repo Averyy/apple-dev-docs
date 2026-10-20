@@ -1,7 +1,8 @@
 # executeAndReturnError(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes the receiver, compiling it first if it is not already compiled.
 
@@ -13,6 +14,10 @@ Executes the receiver, compiling it first if it is not already compiled.
 
 ```swift
 func executeAndReturnError(_ errorInfo: AutoreleasingUnsafeMutablePointer<NSDictionary?>?) -> NSAppleEventDescriptor
+```
+
+```objc
+- (NSAppleEventDescriptor *) executeAndReturnError:(NSDictionary<NSString *,id> **) errorInfo;
 ```
 
 #### Return Value
@@ -29,9 +34,10 @@ Any changes to property values caused by executing the script do not persist.
 
 ## See Also
 
-- [func compileAndReturnError(AutoreleasingUnsafeMutablePointer<NSDictionary?>?) -> Bool](nsapplescript/compileandreturnerror(_:).md)
+### Compiling and Executing a Script
+- [func compileAndReturnError(AutoreleasingUnsafeMutablePointer<NSDictionary?>?) -> Bool](./compileandreturnerror%28_%29.md)
   Compiles the receiver, if it is not already compiled.
-- [func executeAppleEvent(NSAppleEventDescriptor, error: AutoreleasingUnsafeMutablePointer<NSDictionary?>?) -> NSAppleEventDescriptor](nsapplescript/executeappleevent(_:error:).md)
+- [func executeAppleEvent(NSAppleEventDescriptor, error: AutoreleasingUnsafeMutablePointer<NSDictionary?>?) -> NSAppleEventDescriptor](./executeappleevent%28_,error%29.md)
   Executes an Apple event in the context of the receiver, as a means of allowing the application to invoke a handler in the script.
 
 

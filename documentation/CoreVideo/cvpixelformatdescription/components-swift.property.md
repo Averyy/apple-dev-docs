@@ -1,7 +1,8 @@
 # components
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Color components carried by the pixel buffer
 

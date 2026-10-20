@@ -1,7 +1,8 @@
 # init(position:rotation:projection:viewportArrayIndex:renderTargetArrayIndex:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a camera with the given position, rotation, projection, and viewport/render-target indices.
 

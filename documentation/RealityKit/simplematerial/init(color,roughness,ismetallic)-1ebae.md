@@ -1,7 +1,8 @@
 # init(color:roughness:isMetallic:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a simple material with specific characteristics in macOS.
 
@@ -9,6 +10,12 @@ Creates a simple material with specific characteristics in macOS.
 - macOS 10.15+
 
 ## Declaration
+
+```swift
+init(color: SimpleMaterial.Color, roughness: MaterialScalarParameter = 0.0, isMetallic: Bool)
+```
+
+**Other overloads**:
 
 ```swift
 init(color: SimpleMaterial.Color, roughness: MaterialScalarParameter = 0.0, isMetallic: Bool)
@@ -22,7 +29,8 @@ init(color: SimpleMaterial.Color, roughness: MaterialScalarParameter = 0.0, isMe
 
 ## See Also
 
-- [init()](simplematerial/init.md)
+### Creating a simple material
+- [init()](./init%28%29.md)
   Creates a simple material.
 
 

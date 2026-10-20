@@ -1,6 +1,8 @@
 # WWDC22 Challenge: Learn Switch Control through gaming
 
-**Framework**: Accessibility
+**Framework**: Accessibility  
+**Role**: Sample Code  
+**Download**: [WWDC22ChallengeLearnSwitchControlThroughGaming.zip](https://docs-assets.developer.apple.com/published/70429c924eac/WWDC22ChallengeLearnSwitchControlThroughGaming.zip)
 
 Play a card-matching game using Switch Control.
 
@@ -12,13 +14,13 @@ Play a card-matching game using Switch Control.
 
 #### Overview
 
-> **Note**: This is a companion project for WWDC22 Challenge [`Learn Switch Control through gaming`](https://developer.apple.comhttps://developer.apple.com/news/?id=2nfiv7v0).
+> **Note**: This is a companion project for WWDC22 Challenge [Learn Switch Control through gaming](https://developer.apple.com/news/?id=2nfiv7v0).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 This project requires an iPhone or iPad, that’s running iOS 16 or iPadOS 16. It doesn’t support running in Simulator.
 
-##### Configure and Enable Switch Control
+##### Configure and enable switch control
 
 You need to enable and configure Switch Control to play this game. Switch Control is an accessibility feature that helps you interact with your device using a variety of software and hardware switches. These can be located on the screen, and can use the camera, sounds, or connected accessories.
 
@@ -39,11 +41,12 @@ You can now triple-click the Side button or Home button on your device to trigge
 
 ## See Also
 
-- [WWDC21 Challenge: Large Text Challenge](wwdc21_challenge_large_text_challenge.md)
+### WWDC Challenges
+- [WWDC21 Challenge: Large Text Challenge](./wwdc21_challenge_large_text_challenge.md)
   Design for large text sizes by modifying the user interface.
-- [WWDC21 Challenge: Speech Synthesizer Simulator](wwdc21_challenge_speech_synthesizer_simulator.md)
+- [WWDC21 Challenge: Speech Synthesizer Simulator](./wwdc21_challenge_speech_synthesizer_simulator.md)
   Simulate a conversation using speech synthesis.
-- [WWDC21 Challenge: VoiceOver Maze](wwdc21_challenge_voiceover_maze.md)
+- [WWDC21 Challenge: VoiceOver Maze](./wwdc21_challenge_voiceover_maze.md)
   Navigate to the end of a dark maze using VoiceOver as your guide.
 
 

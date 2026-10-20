@@ -1,21 +1,28 @@
 # defaultInvitationMessage
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default invitation message sent to a player.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 5.0+
-- macOS 10.8+
-- visionOS 1.0+
+- iOS 5.0+ - Deprecated in 7.0
+- iPadOS 5.0+ - Deprecated in 7.0
+- Mac Catalyst 5.0+ - Deprecated in 7.0
+- macOS 10.8+ - Deprecated in 10.10
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use the [`inviteMessage`](../gkmatchrequest/invitemessage.md) property instead.
 
 ## Declaration
 
 ```swift
 var defaultInvitationMessage: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * defaultInvitationMessage;
 ```
 
 #### Discussion
@@ -24,9 +31,10 @@ Your game sets this property to change the default invitation text displayed whe
 
 ## See Also
 
-- [func setHostedPlayer(String, connected: Bool)](gkmatchmakerviewcontroller/sethostedplayer(_:connected:).md)
+### Deprecated
+- [func setHostedPlayer(String, connected: Bool)](./sethostedplayer%28_,connected%29.md)
   Updates a player’s status on the view to show that the player has connected or disconnected from your server.
-- [func setHostedPlayerReady(String)](gkmatchmakerviewcontroller/sethostedplayerready(_:).md)
+- [func setHostedPlayerReady(String)](./sethostedplayerready%28_%29.md)
   Informs the controller that a player has joined a hosted match.
 
 

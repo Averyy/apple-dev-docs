@@ -1,11 +1,12 @@
 # Estimator Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [OrdinalEncoder.Transformer](ordinalencoder/transformer.md)
+- [OrdinalEncoder.Transformer](./transformer.md)
   A transformer that encodes a category as an integer.
 
 

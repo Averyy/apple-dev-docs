@@ -1,14 +1,15 @@
 # Info Dictionary Keys
 
-**Framework**: InputMethodKit
+**Framework**: InputMethodKit  
+**Role**: API Collection
 
 Constants for keys used to look up information in the info dictionary.
 
 ## Topics
 
 ### Constants
-- [let kIMKCommandMenuItemName: String](kimkcommandmenuitemname.md)
-- [let kIMKCommandClientName: String](kimkcommandclientname.md)
+- [let kIMKCommandMenuItemName: String](./kimkcommandmenuitemname.md)
+- [let kIMKCommandClientName: String](./kimkcommandclientname.md)
 
 
 ---

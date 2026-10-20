@@ -1,22 +1,27 @@
 # organizationName
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the organization that creates the pass.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var organizationName: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * organizationName;
 ```
 
 #### Discussion
@@ -25,13 +30,14 @@ You can use this property to display information about the organization that cre
 
 ## See Also
 
-- [var icon: UIImage](pkpass/icon.md)
+### Getting the display attributes
+- [var icon: UIImage](./icon.md)
   The pass icon.
-- [func localizedValue(forFieldKey: String) -> Any?](pkpass/localizedvalue(forfieldkey:).md)
+- [func localizedValue(forFieldKey: String) -> Any?](./localizedvalue%28forfieldkey%29.md)
   Returns the localized value for a specified field of the pass.
-- [var relevantDate: Date?](pkpass/relevantdate.md)
+- [var relevantDate: Date?](./relevantdate.md)
   The date when the pass is most likely to be useful or necessary.
-- [class PKPassRelevantDate](pkpassrelevantdate.md)
+- [class PKPassRelevantDate](../pkpassrelevantdate.md)
 
 
 ---

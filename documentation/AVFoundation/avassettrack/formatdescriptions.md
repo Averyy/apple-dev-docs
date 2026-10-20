@@ -1,18 +1,21 @@
 # formatDescriptions
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format descriptions of the media samples that a track references.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 1.0+
+- iOS 4.0+ - Deprecated in 16.0
+- iPadOS 4.0+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+- macOS 10.7+ - Deprecated in 13.0
+- tvOS 9.0+ - Deprecated in 16.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 1.0+ - Deprecated in 9.0
+
+> **Deprecated**: Load the value of [`formatDescriptions`](../avpartialasyncproperty/formatdescriptions.md) asynchronously instead.
 
 ## Declaration
 
@@ -20,17 +23,21 @@ The format descriptions of the media samples that a track references.
 var formatDescriptions: [Any] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray * formatDescriptions;
+```
+
 ## Mentions
 
-- [Tagging media with video color information](tagging-media-with-video-color-information.md)
+- [Tagging media with video color information](../tagging-media-with-video-color-information.md)
 
 #### Discussion
 
-The array contains [`CMFormatDescription`](https://developer.apple.com/documentation/coremedia/cmformatdescription) objects that indicate the format of media samples the track references.
+The array contains [`CMFormatDescription`](../../CoreMedia/cmformatdescription.md) objects that indicate the format of media samples the track references.
 
-Asset tracks typically present uniform media (for example, media that uses the same encoding settings) and contain a single format description. However, in some cases, an asset track may contain multiple format descriptions. For example, an H.264-encoded video track may have some segments that use the Main profile and others that use the High profile. Also, an individual [`AVCompositionTrack`](avcompositiontrack.md), which subclasses [`AVAssetTrack`](avassettrack.md), may contain audio or video segments using different codecs.
+Asset tracks typically present uniform media (for example, media that uses the same encoding settings) and contain a single format description. However, in some cases, an asset track may contain multiple format descriptions. For example, an H.264-encoded video track may have some segments that use the Main profile and others that use the High profile. Also, an individual [`AVCompositionTrack`](../avcompositiontrack.md), which subclasses [`AVAssetTrack`](../avassettrack.md), may contain audio or video segments using different codecs.
 
-You can use [`CMFormatDescription`](https://developer.apple.com/documentation/coremedia/cmformatdescription) to access low-level details about the media the track references. For example, you can retrieve the details of track’s media type and subtype as the code below shows:
+You can use [`CMFormatDescription`](../../CoreMedia/cmformatdescription.md) to access low-level details about the media the track references. For example, you can retrieve the details of track’s media type and subtype as the code below shows:
 
 ```swift
 extension AVAssetTrack {

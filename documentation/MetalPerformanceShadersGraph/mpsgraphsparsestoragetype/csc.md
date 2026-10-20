@@ -1,7 +1,8 @@
 # MPSGraphSparseStorageType.CSC
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 CSC Storage
 
@@ -17,6 +18,10 @@ CSC Storage
 
 ```swift
 case CSC
+```
+
+```c
+MPSGraphSparseStorageCSC
 ```
 
 

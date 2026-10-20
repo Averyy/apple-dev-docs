@@ -1,7 +1,8 @@
 # init(dataRepresentation:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a P-256 private key for signing from the specified data representation.
 

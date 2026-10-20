@@ -1,7 +1,8 @@
 # Activities
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A resource object that represents an activity curator.
 
@@ -10,29 +11,32 @@ A resource object that represents an activity curator.
 
 ## Declaration
 
-```swift
+```
 object Activities
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Activities.Attributes](activities/attributes-data.dictionary.md)
+- [object Activities.Attributes](./activities/attributes-data.dictionary.md)
   The attributes for an activities resource.
-- [object Activities.Relationships](activities/relationships-data.dictionary.md)
+- [object Activities.Relationships](./activities/relationships-data.dictionary.md)
   The relationships for an activity resource.
 
 ## Properties
 
 - `id` (string) *(required)*: The identifier for the activity.
 - `type` (string) *(required)*: This value must always be `activities`.
+
+  **Allowed Values**: `activities`
 - `href` (string) *(required)*: The relative location for the activity resource.
 - `attributes` (Activities.Attributes): The attributes for the activity.
 - `relationships` (Activities.Relationships): The relationships for the activity.
 
 ## See Also
 
-- [object ActivitiesResponse](activitiesresponse.md)
+### Handling the Response
+- [object ActivitiesResponse](./activitiesresponse.md)
   The response to a request for activities.
 
 

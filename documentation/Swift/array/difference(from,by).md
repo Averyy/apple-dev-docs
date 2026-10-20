@@ -1,7 +1,8 @@
 # difference(from:by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the difference needed to produce this collection’s ordered elements from the given collection, using the given predicate as an equivalence test.
 
@@ -28,7 +29,7 @@ The difference needed to produce the receiver’s state from the parameter’s s
 
 This function does not infer element moves. If you need to infer moves, call the `inferringMoves()` method on the resulting difference.
 
-> **Note**: Worst case performance is O(*n* * *m*), where *n* is the count of this collection and *m* is `other.count`. You can expect faster execution when the collections share many common elements.
+> **Complexity**: Worst case performance is O(*n* * *m*), where *n* is the count of this collection and *m* is `other.count`. You can expect faster execution when the collections share many common elements.
 
 ## Parameters
 
@@ -37,9 +38,10 @@ This function does not infer element moves. If you need to infer moves, call the
 
 ## See Also
 
-- [func applying(CollectionDifference<Self.Element>) -> Self?](array/applying(_:).md)
+### Creating and Applying Differences
+- [func applying(CollectionDifference<Self.Element>) -> Self?](./applying%28_%29.md)
   Applies the given difference to this collection.
-- [func difference<C>(from: C) -> CollectionDifference<Self.Element>](array/difference(from:).md)
+- [func difference<C>(from: C) -> CollectionDifference<Self.Element>](./difference%28from%29.md)
   Returns the difference needed to produce this collection’s ordered elements from the given collection.
 
 

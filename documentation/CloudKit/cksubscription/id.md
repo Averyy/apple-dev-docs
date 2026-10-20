@@ -1,7 +1,8 @@
 # CKSubscription.ID
 
 **Framework**: CloudKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents a subscription’s identifier.
 
@@ -11,7 +12,7 @@ A type that represents a subscription’s identifier.
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 - Swift 4.2+
 
@@ -23,11 +24,12 @@ typealias ID = String
 
 ## See Also
 
-- [var subscriptionID: CKSubscription.ID](cksubscription/subscriptionid-6fp3j.md)
+### Accessing the Subscription Metadata
+- [var subscriptionID: CKSubscription.ID](./subscriptionid-6fp3j.md)
   The subscription’s unique identifier.
-- [var subscriptionType: CKSubscription.SubscriptionType](cksubscription/subscriptiontype-swift.property.md)
+- [var subscriptionType: CKSubscription.SubscriptionType](./subscriptiontype-swift.property.md)
   The behavior that a subscription provides.
-- [CKSubscription.SubscriptionType](cksubscription/subscriptiontype-swift.enum.md)
+- [CKSubscription.SubscriptionType](./subscriptiontype-swift.enum.md)
   Constants that identify a subscription’s behavior.
 
 

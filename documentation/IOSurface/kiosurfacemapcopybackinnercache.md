@@ -1,7 +1,8 @@
 # kIOSurfaceMapCopybackInnerCache
 
 **Framework**: IOSurface  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var kIOSurfaceMapCopybackInnerCache: Int { get }
+```
+
+```c
+kIOSurfaceMapCopybackInnerCache
 ```
 
 

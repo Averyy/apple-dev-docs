@@ -1,7 +1,8 @@
 # open(rootLayer:sessionLayer:options:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Opens a stage rooted at a given layer.
 
@@ -21,7 +22,7 @@ static func open(rootLayer: USDLayer, sessionLayer: USDLayer? = nil, options: US
 
 #### Discussion
 
-Recursively follows the composition rules described by `rootLayer`, opening any files referenced by the layer and assembling a hierarchy of [`USDPrim`](usdprim.md)s from the combined contents of all layers.
+Recursively follows the composition rules described by `rootLayer`, opening any files referenced by the layer and assembling a hierarchy of [`USDPrim`](../usdprim.md)s from the combined contents of all layers.
 
 This function creates a new, independent stage object even if there is already a stage opened with `rootLayer` as its root layer.
 
@@ -33,13 +34,14 @@ Parameters:
 
 ## See Also
 
-- [static func open(FilePath, sessionLayer: USDLayer?, options: USDStage.OpenOptions) throws -> USDStage](usdstage/open(_:sessionlayer:options:).md)
+### Opening a stage
+- [static func open(FilePath, sessionLayer: USDLayer?, options: USDStage.OpenOptions) throws -> USDStage](./open%28_,sessionlayer,options%29.md)
   Opens a stage using a file as the root layer.
-- [static func open(URL, loadingPayloads: USDStage.InitialLoadRule) throws -> USDStage](usdstage/open(_:loadingpayloads:).md)
+- [static func open(URL, loadingPayloads: USDStage.InitialLoadRule) throws -> USDStage](./open%28_,loadingpayloads%29.md)
   Opens a stage using the file at a URL as its root layer.
-- [USDStage.OpenOptions](usdstage/openoptions.md)
+- [USDStage.OpenOptions](./openoptions.md)
   Options that specify behavior related to opening a stage.
-- [USDStage.InitialLoadRule](usdstage/initialloadrule.md)
+- [USDStage.InitialLoadRule](./initialloadrule.md)
   Specifies the rule used when opening a stage to determine if referenced payloads are loaded.
 
 

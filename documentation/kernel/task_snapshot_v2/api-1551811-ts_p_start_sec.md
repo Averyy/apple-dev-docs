@@ -1,14 +1,15 @@
 # ts_p_start_sec
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 uint64_t ts_p_start_sec;
 ```
 

@@ -1,16 +1,17 @@
 # ContentSizeCategory.extraExtraExtraLarge
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.2 (renamed: DynamicTypeSize)
+- iPadOS 13.0+ - Deprecated in 27.2 (renamed: DynamicTypeSize)
+- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: DynamicTypeSize)
+- macOS 10.15+ - Deprecated in 27.2 (renamed: DynamicTypeSize)
+- tvOS 13.0+ - Deprecated in 27.2 (renamed: DynamicTypeSize)
+- visionOS 1.0+ - Deprecated in 27.2 (renamed: DynamicTypeSize)
+- watchOS 6.0+ - Deprecated in 27.2 (renamed: DynamicTypeSize)
 
 ## Declaration
 
@@ -20,17 +21,18 @@ case extraExtraExtraLarge
 
 ## See Also
 
-- [ContentSizeCategory.accessibilityExtraExtraExtraLarge](contentsizecategory/accessibilityextraextraextralarge.md)
-- [ContentSizeCategory.accessibilityExtraExtraLarge](contentsizecategory/accessibilityextraextralarge.md)
-- [ContentSizeCategory.accessibilityExtraLarge](contentsizecategory/accessibilityextralarge.md)
-- [ContentSizeCategory.accessibilityLarge](contentsizecategory/accessibilitylarge.md)
-- [ContentSizeCategory.accessibilityMedium](contentsizecategory/accessibilitymedium.md)
-- [ContentSizeCategory.extraExtraLarge](contentsizecategory/extraextralarge.md)
-- [ContentSizeCategory.extraLarge](contentsizecategory/extralarge.md)
-- [ContentSizeCategory.extraSmall](contentsizecategory/extrasmall.md)
-- [ContentSizeCategory.large](contentsizecategory/large.md)
-- [ContentSizeCategory.medium](contentsizecategory/medium.md)
-- [ContentSizeCategory.small](contentsizecategory/small.md)
+### Content size categories
+- [ContentSizeCategory.accessibilityExtraExtraExtraLarge](./accessibilityextraextraextralarge.md)
+- [ContentSizeCategory.accessibilityExtraExtraLarge](./accessibilityextraextralarge.md)
+- [ContentSizeCategory.accessibilityExtraLarge](./accessibilityextralarge.md)
+- [ContentSizeCategory.accessibilityLarge](./accessibilitylarge.md)
+- [ContentSizeCategory.accessibilityMedium](./accessibilitymedium.md)
+- [ContentSizeCategory.extraExtraLarge](./extraextralarge.md)
+- [ContentSizeCategory.extraLarge](./extralarge.md)
+- [ContentSizeCategory.extraSmall](./extrasmall.md)
+- [ContentSizeCategory.large](./large.md)
+- [ContentSizeCategory.medium](./medium.md)
+- [ContentSizeCategory.small](./small.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kSKIndexInverted
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies an inverted index, mapping terms to documents.
 

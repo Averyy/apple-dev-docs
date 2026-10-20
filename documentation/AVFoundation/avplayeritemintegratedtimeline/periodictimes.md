@@ -1,7 +1,8 @@
 # AVPlayerItemIntegratedTimeline.PeriodicTimes
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence of periodic time values.
 
@@ -23,24 +24,25 @@ struct PeriodicTimes
 ## Topics
 
 ### Iterating elements
-- [AVPlayerItemIntegratedTimeline.PeriodicTimes.Iterator](avplayeritemintegratedtimeline/periodictimes/iterator.md)
+- [AVPlayerItemIntegratedTimeline.PeriodicTimes.Iterator](./periodictimes/iterator.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func periodicTimes(forInterval: CMTime) -> AVPlayerItemIntegratedTimeline.PeriodicTimes](avplayeritemintegratedtimeline/periodictimes(forinterval:).md)
+### Observing time changes
+- [func periodicTimes(forInterval: CMTime) -> AVPlayerItemIntegratedTimeline.PeriodicTimes](./periodictimes%28forinterval%29.md)
   Returns an asynchronous sequence of times periodically as playback progresses.
-- [func boundaryTimes(for: AVPlayerItemSegment, offsetsIntoSegment: [CMTime]) -> AVPlayerItemIntegratedTimeline.BoundaryTimes](avplayeritemintegratedtimeline/boundarytimes(for:offsetsintosegment:).md)
+- [func boundaryTimes(for: AVPlayerItemSegment, offsetsIntoSegment: [CMTime]) -> AVPlayerItemIntegratedTimeline.BoundaryTimes](./boundarytimes%28for,offsetsintosegment%29.md)
   Returns an asynchronous sequence of times whenever playback reaches a segment time in the segment.
-- [AVPlayerItemIntegratedTimeline.BoundaryTimes](avplayeritemintegratedtimeline/boundarytimes.md)
+- [AVPlayerItemIntegratedTimeline.BoundaryTimes](./boundarytimes.md)
   An asynchronous sequence of boundary time values.
-- [protocol AVPlayerItemIntegratedTimelineObserver](avplayeritemintegratedtimelineobserver.md)
+- [protocol AVPlayerItemIntegratedTimelineObserver](../avplayeritemintegratedtimelineobserver.md)
   A protocol for objects that perform timeline observations.
 
 

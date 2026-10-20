@@ -1,7 +1,8 @@
 # NSStringFromCPRerouteReason(_:)
 
 **Framework**: CarPlay  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 26.4+
@@ -12,6 +13,10 @@
 
 ```swift
 func NSStringFromCPRerouteReason(_ reason: CPRerouteReason) -> String!
+```
+
+```c
+NSString *NSStringFromCPRerouteReason(CPRerouteReason reason);
 ```
 
 

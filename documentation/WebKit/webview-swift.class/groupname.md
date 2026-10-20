@@ -1,17 +1,24 @@
 # groupName
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s group name.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
+
+> **Deprecated**: No longer supported; please adopt WKWebView.
 
 ## Declaration
 
 ```swift
 var groupName: String! { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSString * groupName;
 ```
 
 #### Discussion
@@ -20,7 +27,8 @@ You might use this to set the group name of a `WebView` object after it is loade
 
 ## See Also
 
-- [init!(frame: NSRect, frameName: String!, groupName: String!)](webview-swift.class/init(frame:framename:groupname:).md)
+### Related Documentation
+- [init!(frame: NSRect, frameName: String!, groupName: String!)](./init%28frame,framename,groupname%29.md)
   Initializes the receiver with a frame rectangle, frame name, and group name.
 
 

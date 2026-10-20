@@ -1,7 +1,8 @@
 # AppInfoLocalizationResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that create, read, or modify a localized app info entry.
 
@@ -10,7 +11,7 @@ The response body for endpoints that create, read, or modify a localized app inf
 
 ## Declaration
 
-```swift
+```
 object AppInfoLocalizationResponse
 ```
 
@@ -22,13 +23,14 @@ object AppInfoLocalizationResponse
 
 ## See Also
 
-- [object AppInfoLocalization](appinfolocalization.md)
+### Objects
+- [object AppInfoLocalization](./appinfolocalization.md)
   The data structure that represent an App Info Localizations resource.
-- [object AppInfoLocalizationCreateRequest](appinfolocalizationcreaterequest.md)
+- [object AppInfoLocalizationCreateRequest](./appinfolocalizationcreaterequest.md)
   The request body you use to create an App Info Localization.
-- [object AppInfoLocalizationUpdateRequest](appinfolocalizationupdaterequest.md)
+- [object AppInfoLocalizationUpdateRequest](./appinfolocalizationupdaterequest.md)
   The request body you use to update an App Info Localization.
-- [object AppInfoLocalizationsResponse](appinfolocalizationsresponse.md)
+- [object AppInfoLocalizationsResponse](./appinfolocalizationsresponse.md)
   The response body for endpoints that list localized app info entries for an app.
 
 

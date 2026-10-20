@@ -1,7 +1,8 @@
 # NFCReaderError.Code.readerErrorIneligible
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 case readerErrorIneligible
+```
+
+```c
+NFCReaderErrorIneligible
 ```
 
 

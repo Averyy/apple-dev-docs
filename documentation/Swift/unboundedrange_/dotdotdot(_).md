@@ -1,7 +1,8 @@
 # ...(_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Creates an unbounded range expression.
 
@@ -26,7 +27,8 @@ The unbounded range operator (`...`) is valid only within a collection’s subsc
 
 ## See Also
 
-- [typealias UnboundedRange](unboundedrange.md)
+### Creating an Unbounded Range
+- [typealias UnboundedRange](../unboundedrange.md)
   The type of an unbounded range operator.
 
 

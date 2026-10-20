@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a bezier path to the ink annotation.
 
@@ -10,13 +11,33 @@ Adds a bezier path to the ink annotation.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+func add(_ path: UIBezierPath)
+```
+
+*macOS*
+
 ```swift
 func add(_ path: NSBezierPath)
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+- (void) addBezierPath:(UIBezierPath *) path;
+```
+
+*macOS*
+
+```objc
+- (void) addBezierPath:(NSBezierPath *) path;
 ```
 
 ## Parameters
@@ -25,9 +46,10 @@ func add(_ path: NSBezierPath)
 
 ## See Also
 
-- [var paths: [UIBezierPath]?](pdfannotation/paths.md)
+### Configuring Ink Annotations
+- [var paths: [UIBezierPath]?](./paths.md)
   An array of bezier paths, in annotation-space coordinates, that compose the annotation.
-- [func remove(UIBezierPath)](pdfannotation/remove(_:).md)
+- [func remove(UIBezierPath)](./remove%28_%29.md)
   Removes a bezier path from an ink annotation.
 
 

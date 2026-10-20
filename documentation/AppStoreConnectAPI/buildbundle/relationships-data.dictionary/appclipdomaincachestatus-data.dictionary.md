@@ -1,7 +1,8 @@
 # BuildBundle.Relationships.AppClipDomainCacheStatus
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the Build Bundles and the App Clip Domain Cache Statuses resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the Build Bundles and 
 
 ## Declaration
 
-```swift
+```
 object BuildBundle.Relationships.AppClipDomainCacheStatus
 ```
 
 ## Topics
 
 ### Objects
-- [object BuildBundle.Relationships.AppClipDomainCacheStatus.Data](buildbundle/relationships-data.dictionary/appclipdomaincachestatus-data.dictionary/data-data.dictionary.md)
+- [object BuildBundle.Relationships.AppClipDomainCacheStatus.Data](./appclipdomaincachestatus-data.dictionary/data-data.dictionary.md)
   The type and ID of a related App Clip Domain Cache Status resource.
 
 ## Properties
@@ -27,11 +28,12 @@ object BuildBundle.Relationships.AppClipDomainCacheStatus
 
 ## See Also
 
-- [object BuildBundle.Relationships.AppClipDomainDebugStatus](buildbundle/relationships-data.dictionary/appclipdomaindebugstatus-data.dictionary.md)
+### Objects
+- [object BuildBundle.Relationships.AppClipDomainDebugStatus](./appclipdomaindebugstatus-data.dictionary.md)
   The data and links that describe the relationship between the Build Bundles and the App Clip Domain Debug Statuses resources.
-- [object BuildBundle.Relationships.BetaAppClipInvocations](buildbundle/relationships-data.dictionary/betaappclipinvocations-data.dictionary.md)
+- [object BuildBundle.Relationships.BetaAppClipInvocations](./betaappclipinvocations-data.dictionary.md)
   The data, links, and paging information that describe the relationship between the Build Bundles and the Beta App Clip Invocations resources.
-- [object BuildBundle.Relationships.BuildBundleFileSizes](buildbundle/relationships-data.dictionary/buildbundlefilesizes-data.dictionary.md)
+- [object BuildBundle.Relationships.BuildBundleFileSizes](./buildbundlefilesizes-data.dictionary.md)
   The data, links, and paging information that describe the relationship between the Build Bundles and the Build Bundle File Sizes resources.
 
 

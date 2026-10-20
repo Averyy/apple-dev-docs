@@ -1,7 +1,8 @@
 # errSecCSNoSuchCode
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Code signing host has no guest code with the requested attributes.
 
@@ -13,6 +14,10 @@ Code signing host has no guest code with the requested attributes.
 
 ```swift
 var errSecCSNoSuchCode: OSStatus { get }
+```
+
+```c
+errSecCSNoSuchCode
 ```
 
 

@@ -1,7 +1,8 @@
 # finishTrip()
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the navigation session to finish the trip.
 
@@ -16,16 +17,21 @@ Tells the navigation session to finish the trip.
 func finishTrip()
 ```
 
+```objc
+- (void) finishTrip;
+```
+
 ## See Also
 
-- [func cancelTrip()](cpnavigationsession/canceltrip.md)
+### Managing Trip Navigation
+- [func cancelTrip()](./canceltrip%28%29.md)
   Tells the navigation session to cancel the trip.
-- [func pauseTrip(for: CPNavigationSession.PauseReason, description: String?)](cpnavigationsession/pausetrip(for:description:).md)
+- [func pauseTrip(for: CPNavigationSession.PauseReason, description: String?)](./pausetrip%28for,description%29.md)
   Tells the navigation session to pause the trip for the specified reason.
-- [func pauseTrip(for: CPNavigationSession.PauseReason, description: String?, turnCardColor: UIColor?)](cpnavigationsession/pausetrip(for:description:turncardcolor:).md)
-- [CPNavigationSession.PauseReason](cpnavigationsession/pausereason.md)
+- [func pauseTrip(for: CPNavigationSession.PauseReason, description: String?, turnCardColor: UIColor?)](./pausetrip%28for,description,turncardcolor%29.md)
+- [CPNavigationSession.PauseReason](./pausereason.md)
   A set of reasons for pausing a trip.
-- [func resumeTrip(updatedRouteInformation: CPRouteInformation)](cpnavigationsession/resumetrip(updatedrouteinformation:).md)
+- [func resumeTrip(updatedRouteInformation: CPRouteInformation)](./resumetrip%28updatedrouteinformation%29.md)
   Resumes the current trip with updated route information.
 
 

@@ -1,7 +1,8 @@
 # withState(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new context from another one with a state that you provide.
 

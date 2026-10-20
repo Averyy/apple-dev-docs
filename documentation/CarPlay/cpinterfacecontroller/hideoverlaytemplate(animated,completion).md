@@ -1,7 +1,8 @@
 # hideOverlayTemplate(animated:completion:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismiss the current overlay template, optionally animating the dismissal.
 
@@ -13,7 +14,15 @@ Dismiss the current overlay template, optionally animating the dismissal.
 ## Declaration
 
 ```swift
+func hideOverlayTemplate(animated: Bool, completion: ((Bool, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 func hideOverlayTemplate(animated: Bool) async throws -> Bool
+```
+
+```objc
+- (void) hideOverlayTemplateAnimated:(BOOL) animated completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
 #### Discussion

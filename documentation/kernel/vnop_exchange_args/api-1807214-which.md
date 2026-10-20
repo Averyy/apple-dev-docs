@@ -7,13 +7,14 @@ What kind of I/O is desired: FREAD, FWRITE.
 
 ## See Also
 
-- [vp](vnop_exchange_args/1807210-vp.md)
+### Fields
+- [vp](./api-1807210-vp.md)
   The vnode to check for I/O readiness.
-- [fflags](vnop_exchange_args/1807216-fflags.md)
+- [fflags](./api-1807216-fflags.md)
   Flags from fileglob as seen in fcntl.h, e.g. O_NONBLOCK, O_APPEND.
-- [wql](vnop_exchange_args/1807221-wql.md)
+- [wql](./api-1807221-wql.md)
   Opaque object to pass to selrecord().
-- [ctx](vnop_exchange_args/1807223-ctx.md)
+- [ctx](./api-1807223-ctx.md)
   Context to authenticate for select request.
 
 

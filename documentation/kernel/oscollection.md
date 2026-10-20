@@ -1,7 +1,8 @@
 # OSCollection
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 The abstract superclass for Libkern collections.
 
@@ -10,7 +11,7 @@ The abstract superclass for Libkern collections.
 
 ## Declaration
 
-```swift
+```cpp
 class OSCollection : OSObject
 ```
 
@@ -27,68 +28,69 @@ OSCollection provides no concurrency protection; it's up to the usage context to
 ## Topics
 
 ### Miscellaneous
-- [copyCollection](oscollection/1808206-copycollection.md)
+- [copyCollection](./oscollection/api-1808206-copycollection.md)
   Creates a deep copy of a collection.
-- [ensureCapacity](oscollection/1808212-ensurecapacity.md)
+- [ensureCapacity](./oscollection/api-1808212-ensurecapacity.md)
   Ensures the collection has enough space to store the requested number of objects.
-- [flushCollection](oscollection/1808219-flushcollection.md)
+- [flushCollection](./oscollection/api-1808219-flushcollection.md)
   Empties the collection, releasing any objects retained.
-- [getCapacity](oscollection/1808225-getcapacity.md)
+- [getCapacity](./oscollection/api-1808225-getcapacity.md)
   Returns the number of objects the collection can store without reallocating.
-- [getCapacityIncrement](oscollection/1808233-getcapacityincrement.md)
+- [getCapacityIncrement](./oscollection/api-1808233-getcapacityincrement.md)
   Returns the storage increment of the collection.
-- [getCount](oscollection/1808238-getcount.md)
+- [getCount](./oscollection/api-1808238-getcount.md)
   Returns the number of objects in the collection.
-- [getNextObjectForIterator](oscollection/1808244-getnextobjectforiterator.md)
+- [getNextObjectForIterator](./oscollection/api-1808244-getnextobjectforiterator.md)
   Returns the next member of a collection.
-- [haveUpdated](oscollection/1808248-haveupdated.md)
+- [haveUpdated](./oscollection/api-1808248-haveupdated.md)
   Tracks updates to the collection.
-- [init](oscollection/1808252-init.md)
+- [init](./oscollection/api-1808252-init.md)
   Initializes the OSCollection object.
-- [initIterator](oscollection/1808258-inititerator.md)
+- [initIterator](./oscollection/api-1808258-inititerator.md)
   Initializes the iteration context for a collection subclass.
-- [iteratorSize](oscollection/1808262-iteratorsize.md)
+- [iteratorSize](./oscollection/api-1808262-iteratorsize.md)
   Returns the size in bytes of a subclass's iteration context.
-- [setCapacityIncrement](oscollection/1808267-setcapacityincrement.md)
+- [setCapacityIncrement](./oscollection/api-1808267-setcapacityincrement.md)
   Sets the storage increment of the collection.
 ### DataTypes
-- [_OSCollectionFlags](oscollection/oscollectionflags.md)
+- [_OSCollectionFlags](./oscollection/oscollectionflags.md)
 ### Instance Methods
-- [- copyCollection](oscollection/1569367-copycollection.md)
-- [- ensureCapacity](oscollection/3438145-ensurecapacity.md)
-- [- flushCollection](oscollection/3438146-flushcollection.md)
-- [- getCapacity](oscollection/3438147-getcapacity.md)
-- [- getCapacityIncrement](oscollection/1569369-getcapacityincrement.md)
-- [- getCount](oscollection/3438148-getcount.md)
-- [- getMetaClass](oscollection/1569378-getmetaclass.md)
-- [- getNextObjectForIterator](oscollection/1569375-getnextobjectforiterator.md)
-- [- haveUpdated](oscollection/1569376-haveupdated.md)
-- [- init](oscollection/1569374-init.md)
-- [- initIterator](oscollection/1569368-inititerator.md)
-- [- iterateObjects](oscollection/2967351-iterateobjects.md)
-- [- iterateObjects](oscollection/3516833-iterateobjects.md)
-- [- iteratorSize](oscollection/1569370-iteratorsize.md)
-- [- setCapacityIncrement](oscollection/1569371-setcapacityincrement.md)
-- [- setOptions](oscollection/1569373-setoptions.md)
+- [- copyCollection](./oscollection/api-1569367-copycollection.md)
+- [- ensureCapacity](./oscollection/api-3438145-ensurecapacity.md)
+- [- flushCollection](./oscollection/api-3438146-flushcollection.md)
+- [- getCapacity](./oscollection/api-3438147-getcapacity.md)
+- [- getCapacityIncrement](./oscollection/api-1569369-getcapacityincrement.md)
+- [- getCount](./oscollection/api-3438148-getcount.md)
+- [- getMetaClass](./oscollection/api-1569378-getmetaclass.md)
+- [- getNextObjectForIterator](./oscollection/api-1569375-getnextobjectforiterator.md)
+- [- haveUpdated](./oscollection/api-1569376-haveupdated.md)
+- [- init](./oscollection/api-1569374-init.md)
+- [- initIterator](./oscollection/api-1569368-inititerator.md)
+- [- iterateObjects](./oscollection/api-2967351-iterateobjects.md)
+- [- iterateObjects](./oscollection/api-3516833-iterateobjects.md)
+- [- iteratorSize](./oscollection/api-1569370-iteratorsize.md)
+- [- setCapacityIncrement](./oscollection/api-1569371-setcapacityincrement.md)
+- [- setOptions](./oscollection/api-1569373-setoptions.md)
   Recursively sets option bits in this collection and all child collections.
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
 
 ## See Also
 
-- [OSArray](osarray.md)
+### Collections
+- [OSArray](./osarray.md)
   OSArray provides an indexed store of objects.
-- [OSDictionary](osdictionary.md)
+- [OSDictionary](./osdictionary.md)
   OSDictionary provides an associative store using strings for keys.
-- [OSSet](osset.md)
+- [OSSet](./osset.md)
   OSSet provides an unordered set store of objects.
-- [OSOrderedSet](osorderedset.md)
+- [OSOrderedSet](./osorderedset.md)
   OSOrderedSet provides an ordered set store of objects.
-- [OSCollectionIterator](oscollectioniterator.md)
-- [OSIterator](ositerator.md)
+- [OSCollectionIterator](./oscollectioniterator.md)
+- [OSIterator](./ositerator.md)
   The abstract superclass for Libkern iterators.
 
 

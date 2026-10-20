@@ -1,10 +1,11 @@
 # kIOBluetoothUserNotificationChannelDirectionIncoming
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kIOBluetoothUserNotificationChannelDirectionIncoming: IOBluetoothUserNotificationChannelDirection { get }
 ```
 
+```c
+kIOBluetoothUserNotificationChannelDirectionIncoming
+```
+
 ## See Also
 
-- [var kIOBluetoothUserNotificationChannelDirectionAny: IOBluetoothUserNotificationChannelDirection](kiobluetoothusernotificationchanneldirectionany.md)
-- [var kIOBluetoothUserNotificationChannelDirectionOutgoing: IOBluetoothUserNotificationChannelDirection](kiobluetoothusernotificationchanneldirectionoutgoing.md)
+### Constants
+- [var kIOBluetoothUserNotificationChannelDirectionAny: IOBluetoothUserNotificationChannelDirection](./kiobluetoothusernotificationchanneldirectionany.md)
+- [var kIOBluetoothUserNotificationChannelDirectionOutgoing: IOBluetoothUserNotificationChannelDirection](./kiobluetoothusernotificationchanneldirectionoutgoing.md)
 
 
 ---

@@ -1,12 +1,13 @@
 # prepareForDragOperation(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when the image is released, allowing the receiver to agree to or refuse drag operation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,15 +16,19 @@ Invoked when the image is released, allowing the receiver to agree to or refuse 
 optional func prepareForDragOperation(_ sender: any NSDraggingInfo) -> Bool
 ```
 
+```objc
+- (BOOL) prepareForDragOperation:(id<NSDraggingInfo>) sender;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver agrees to perform the drag operation and [`false`](https://developer.apple.com/documentation/swift/false) if not.
+[`true`](../../Swift/true.md) if the receiver agrees to perform the drag operation and [`false`](../../Swift/false.md) if not.
 
 #### Discussion
 
-This method is invoked only if the most recent [`draggingEntered(_:)`](nsdraggingdestination/draggingentered(_:).md) or [`draggingUpdated(_:)`](nsdraggingdestination/draggingupdated(_:).md) message returned an acceptable drag-operation value.
+This method is invoked only if the most recent [`draggingEntered(_:)`](./draggingentered%28_%29.md) or [`draggingUpdated(_:)`](./draggingupdated%28_%29.md) message returned an acceptable drag-operation value.
 
-If you want the drag items to animate from their current location on screen to their final location in your view, set the sender object’s [`animatesToDestination`](nsdragginginfo/animatestodestination.md) property to [`true`](https://developer.apple.com/documentation/swift/true) in your implementation of this method.
+If you want the drag items to animate from their current location on screen to their final location in your view, set the sender object’s [`animatesToDestination`](../nsdragginginfo/animatestodestination.md) property to [`true`](../../Swift/true.md) in your implementation of this method.
 
 ## Parameters
 
@@ -31,9 +36,10 @@ If you want the drag items to animate from their current location on screen to t
 
 ## See Also
 
-- [func performDragOperation(any NSDraggingInfo) -> Bool](nsdraggingdestination/performdragoperation(_:).md)
+### Managing a Dragging Session After an Image Is Released
+- [func performDragOperation(any NSDraggingInfo) -> Bool](./performdragoperation%28_%29.md)
   Invoked after the released image has been removed from the screen, signaling the receiver to import the pasteboard data.
-- [func concludeDragOperation((any NSDraggingInfo)?)](nsdraggingdestination/concludedragoperation(_:).md)
+- [func concludeDragOperation((any NSDraggingInfo)?)](./concludedragoperation%28_%29.md)
   Invoked when the dragging operation is complete, signaling the receiver to perform any necessary clean-up.
 
 

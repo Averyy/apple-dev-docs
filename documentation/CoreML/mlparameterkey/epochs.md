@@ -1,7 +1,8 @@
 # epochs
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key you use to access the optimizer’s epochs parameter.
 
@@ -20,27 +21,32 @@ The key you use to access the optimizer’s epochs parameter.
 class var epochs: MLParameterKey { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) MLParameterKey * epochs;
+```
+
 #### Discussion
 
-The value type for the [`epochs`](mlparameterkey/epochs.md) key is an [`Int64`](https://developer.apple.com/documentation/swift/int64).
+The value type for the [`epochs`](./epochs.md) key is an [`Int64`](../../Swift/int64.md).
 
 ## See Also
 
-- [class var learningRate: MLParameterKey](mlparameterkey/learningrate.md)
+### Accessing model update parameters
+- [class var learningRate: MLParameterKey](./learningrate.md)
   The key you use to access the optimizer’s learning rate parameter.
-- [class var momentum: MLParameterKey](mlparameterkey/momentum.md)
+- [class var momentum: MLParameterKey](./momentum.md)
   The key you use to access the stochastic gradient descent (SGD) optimizer’s momentum parameter.
-- [class var miniBatchSize: MLParameterKey](mlparameterkey/minibatchsize.md)
+- [class var miniBatchSize: MLParameterKey](./minibatchsize.md)
   The key you use to access the optimizer’s mini batch-size parameter.
-- [class var beta1: MLParameterKey](mlparameterkey/beta1.md)
+- [class var beta1: MLParameterKey](./beta1.md)
   The key you use to access the Adam optimizer’s first beta parameter.
-- [class var beta2: MLParameterKey](mlparameterkey/beta2.md)
+- [class var beta2: MLParameterKey](./beta2.md)
   The key you use to access the Adam optimizer’s second beta parameter.
-- [class var eps: MLParameterKey](mlparameterkey/eps.md)
+- [class var eps: MLParameterKey](./eps.md)
   The key you use to access the Adam optimizer’s epsilon parameter.
-- [class var shuffle: MLParameterKey](mlparameterkey/shuffle.md)
+- [class var shuffle: MLParameterKey](./shuffle.md)
   The key you use to access the shuffle parameter, a Boolean value that determines whether the model randomizes the data between epochs.
-- [class var seed: MLParameterKey](mlparameterkey/seed.md)
+- [class var seed: MLParameterKey](./seed.md)
   The key you use to access the seed parameter that initializes the random number generator for the shuffle option.
 
 

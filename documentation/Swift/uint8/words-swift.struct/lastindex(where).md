@@ -1,7 +1,8 @@
 # lastIndex(where:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index of the last element in the collection that matches the given predicate.
 
@@ -36,7 +37,7 @@ if let i = students.lastIndex(where: { $0.hasPrefix("A") }) {
 // Prints "Akosua starts with 'A'!"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # foundRange(_:searchString:document:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a text range to the set of matches.
 
@@ -9,7 +10,7 @@ Adds a text range to the set of matches.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -29,13 +30,14 @@ Call this method to add a text range found in your document to the set of matche
 
 ## See Also
 
-- [func invalidateFoundRange(UITextRange, document: DocumentIdentifier)](uitextsearchaggregator-swift.struct/invalidatefoundrange(_:document:).md)
+### Tracking search results
+- [func invalidateFoundRange(UITextRange, document: DocumentIdentifier)](./invalidatefoundrange%28_,document%29.md)
   Removes a text range from the set of matches.
-- [func invalidate()](uitextsearchaggregator-swift.struct/invalidate.md)
+- [func invalidate()](./invalidate%28%29.md)
   Invalidates all currently shown ranges.
-- [func finishedSearching()](uitextsearchaggregator-swift.struct/finishedsearching.md)
+- [func finishedSearching()](./finishedsearching%28%29.md)
   Finishes the search for text ranges.
-- [var allFoundRanges: [UITextRange]](uitextsearchaggregator-swift.struct/allfoundranges.md)
+- [var allFoundRanges: [UITextRange]](./allfoundranges.md)
   An ordered set of all the text ranges that match the search.
 
 

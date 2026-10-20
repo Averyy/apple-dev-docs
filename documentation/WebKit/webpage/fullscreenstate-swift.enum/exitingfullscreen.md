@@ -1,7 +1,8 @@
 # WebPage.FullscreenState.exitingFullscreen
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The page is exiting fullscreen.
 

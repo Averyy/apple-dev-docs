@@ -1,7 +1,8 @@
 # vertexLinkingDescriptor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls properties for linking the vertex stage of the render pipeline.
 
@@ -17,6 +18,10 @@ Controls properties for linking the vertex stage of the render pipeline.
 
 ```swift
 var vertexLinkingDescriptor: MTL4PipelineStageDynamicLinkingDescriptor { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTL4PipelineStageDynamicLinkingDescriptor * vertexLinkingDescriptor;
 ```
 
 

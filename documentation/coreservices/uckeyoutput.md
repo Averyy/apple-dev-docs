@@ -1,7 +1,8 @@
 # UCKeyOutput
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Specifies values in key-code-to-character tables in a `'uchr'` resource.
 
@@ -15,6 +16,10 @@ Specifies values in key-code-to-character tables in a `'uchr'` resource.
 typealias UCKeyOutput = UInt16
 ```
 
+```c
+typedef UInt16 UCKeyOutput;
+```
+
 #### Discussion
 
 The Unicode keyboard-layout ( `'uchr'`) resource contains the data necessary to map virtual key codes to Unicode character codes for a given keyboard layout. The `'uchr'` format consists of a header information section and five key mapping data sections. The `UCKeyOutput` type is a 16-bit value used in the second key mapping section of a `'uchr'` resource to specify values in key-code-to-character tables.
@@ -23,9 +28,9 @@ You use a `UCKeyOutput` value in a key-code-to-character table to represent one 
 
 The interpretation of a `UCKeyOutput` value depends on bits 15 and 14.
 
-If they are 01 (that is, for values in the range of 0x4000-0x7FFF), then bits 0-13 are an index into the `keyStateRecordOffsets` field of a structure of type  [`UCKeyStateRecordsIndex`](uckeystaterecordsindex.md) , which contains offsets to a separate resource-wide list of dead-key state records.
+If they are 01 (that is, for values in the range of 0x4000-0x7FFF), then bits 0-13 are an index into the `keyStateRecordOffsets` field of a structure of type  [`UCKeyStateRecordsIndex`](./uckeystaterecordsindex.md) , which contains offsets to a separate resource-wide list of dead-key state records.
 
-If they are 10 (that is, for values in the range of 0x8000-0xBFFF), then bits 0-13 are an index into the `charSequenceOffsets` field of a structure of type  [`UCKeySequenceDataIndex`](uckeysequencedataindex.md) , which contains offsets to a separate resource-wide list of Unicode character sequences. If a `UCKeySequenceDataIndex` structure is not present in the resource or the index is beyond the end of the list, then the entire value (that is, bits 0-15) is a single Unicode character to emit.
+If they are 10 (that is, for values in the range of 0x8000-0xBFFF), then bits 0-13 are an index into the `charSequenceOffsets` field of a structure of type  [`UCKeySequenceDataIndex`](./uckeysequencedataindex.md) , which contains offsets to a separate resource-wide list of Unicode character sequences. If a `UCKeySequenceDataIndex` structure is not present in the resource or the index is beyond the end of the list, then the entire value (that is, bits 0-15) is a single Unicode character to emit.
 
 Otherwise (for values in the range of 0x0000-0x3FFF and 0xC000-0xFFFD), bits 0-15 are a single Unicode character, with the exception that a value of 0xFFFE-0xFFFF means no character output (these are invalid Unicode codes).
 

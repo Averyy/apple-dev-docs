@@ -1,7 +1,8 @@
 # kUSBLowLatencyFrameListBuffer
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 A low-latency frame list buffer.
 
@@ -10,7 +11,7 @@ A low-latency frame list buffer.
 
 ## Declaration
 
-```swift
+```c
 kUSBLowLatencyFrameListBuffer = 2
 ```
 

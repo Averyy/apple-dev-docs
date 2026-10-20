@@ -1,7 +1,8 @@
 # CVImageLogTransferFunction
 
 **Framework**: Core Video  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Identifies the specific log curve transfer function or gamma of the content.
 
@@ -33,33 +34,34 @@ As described above, a Log video format defines a whole color space (even though 
 ## Topics
 
 ### Enumeration Cases
-- [CVImageLogTransferFunction.appleLog](cvimagelogtransferfunction/applelog.md)
+- [CVImageLogTransferFunction.appleLog](./cvimagelogtransferfunction/applelog.md)
   Apple log profile.
-- [CVImageLogTransferFunction.appleLog2](cvimagelogtransferfunction/applelog2.md)
+- [CVImageLogTransferFunction.appleLog2](./cvimagelogtransferfunction/applelog2.md)
   Apple log 2 profile.
 
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](cvattachmentvaluerepresentable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVAttachmentValueRepresentable](./cvattachmentvaluerepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum CVImageColorPrimaries](cvimagecolorprimaries.md)
+### Color and signal characteristics
+- [enum CVImageColorPrimaries](./cvimagecolorprimaries.md)
   Color primaries describe the gamut used for the rendering intent of an image.
-- [enum CVImageTransferFunction](cvimagetransferfunction.md)
-  The transfer function describes the tonality of an image for use in color matching operations. This value is used along with a color primaries gamut [`CVImageColorPrimaries`](cvimagecolorprimaries.md). Most apps should use the [`CVImageTransferFunction.itu_R_709_2`](cvimagetransferfunction/itu_r_709_2.md) transfer function.
-- [enum CVImageYCbCrMatrix](cvimageycbcrmatrix.md)
+- [enum CVImageTransferFunction](./cvimagetransferfunction.md)
+  The transfer function describes the tonality of an image for use in color matching operations. This value is used along with a color primaries gamut [`CVImageColorPrimaries`](./cvimagecolorprimaries.md). Most apps should use the [`CVImageTransferFunction.itu_R_709_2`](./cvimagetransferfunction/itu_r_709_2.md) transfer function.
+- [enum CVImageYCbCrMatrix](./cvimageycbcrmatrix.md)
   Indicates color matrix used for converting image buffer from YCbCr to RGB.
-- [enum CVImageAlphaChannelMode](cvimagealphachannelmode.md)
-- [enum CVImageFieldDetail](cvimagefielddetail.md)
+- [enum CVImageAlphaChannelMode](./cvimagealphachannelmode.md)
+- [enum CVImageFieldDetail](./cvimagefielddetail.md)
 
 
 ---

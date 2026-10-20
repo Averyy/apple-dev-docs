@@ -1,7 +1,8 @@
 # ARRaycastQuery.TargetAlignment.any
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The case that indicates a target may be aligned in any way with respect to gravity.
 
@@ -13,6 +14,10 @@ The case that indicates a target may be aligned in any way with respect to gravi
 
 ```swift
 case any
+```
+
+```c
+ARRaycastTargetAlignmentAny
 ```
 
 

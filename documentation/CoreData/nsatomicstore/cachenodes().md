@@ -1,7 +1,8 @@
 # cacheNodes()
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the set of cache nodes registered with the receiver.
 
@@ -10,7 +11,7 @@ Returns the set of cache nodes registered with the receiver.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,19 +21,24 @@ Returns the set of cache nodes registered with the receiver.
 func cacheNodes() -> Set<NSAtomicStoreCacheNode>
 ```
 
+```objc
+- (NSSet<__kindof NSAtomicStoreCacheNode *> *) cacheNodes;
+```
+
 #### Return Value
 
 The set of cache nodes registered with the receiver.
 
 #### Discussion
 
-You should modify this collection using [`addCacheNodes(_:)`](nsatomicstore/addcachenodes(_:).md): and [`willRemoveCacheNodes(_:)`](nsatomicstore/willremovecachenodes(_:).md).
+You should modify this collection using [`addCacheNodes(_:)`](./addcachenodes%28_%29.md): and [`willRemoveCacheNodes(_:)`](./willremovecachenodes%28_%29.md).
 
 ## See Also
 
-- [func cacheNode(for: NSManagedObjectID) -> NSAtomicStoreCacheNode?](nsatomicstore/cachenode(for:).md)
+### Utility Methods
+- [func cacheNode(for: NSManagedObjectID) -> NSAtomicStoreCacheNode?](./cachenode%28for%29.md)
   Returns the cache node for a given managed object ID.
-- [func referenceObject(for: NSManagedObjectID) -> Any](nsatomicstore/referenceobject(for:).md)
+- [func referenceObject(for: NSManagedObjectID) -> Any](./referenceobject%28for%29.md)
   Returns the reference object for a given managed object ID.
 
 

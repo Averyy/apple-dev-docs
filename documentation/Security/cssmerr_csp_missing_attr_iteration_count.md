@@ -1,7 +1,8 @@
 # CSSMERR_CSP_MISSING_ATTR_ITERATION_COUNT
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSMERR_CSP_MISSING_ATTR_ITERATION_COUNT: Int { get }
+```
+
+```c
+CSSMERR_CSP_MISSING_ATTR_ITERATION_COUNT
 ```
 
 

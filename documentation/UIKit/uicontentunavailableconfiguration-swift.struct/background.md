@@ -1,7 +1,8 @@
 # background
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration for the background.
 
@@ -10,7 +11,7 @@ The configuration for the background.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

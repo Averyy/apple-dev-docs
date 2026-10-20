@@ -1,10 +1,13 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 27.2
+
+> **Deprecated**: Use `BorderlessButtonMenuStyle` instead.
 
 ## Declaration
 

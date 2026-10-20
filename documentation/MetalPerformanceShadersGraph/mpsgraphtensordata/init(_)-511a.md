@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a tensor data with an MPS image batch.
 
@@ -17,6 +18,10 @@ Initializes a tensor data with an MPS image batch.
 
 ```swift
 init(_ imageBatch: [MPSImage])
+```
+
+```objc
+- (instancetype) initWithMPSImageBatch:(MPSImageBatch *) imageBatch;
 ```
 
 #### Return Value

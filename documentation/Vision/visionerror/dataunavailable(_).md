@@ -1,7 +1,8 @@
 # VisionError.dataUnavailable(_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the required data is missing.
 

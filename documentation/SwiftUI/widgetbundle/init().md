@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a widget bundle using the bundle’s body as its content.
@@ -23,7 +24,8 @@ Creates a widget bundle using the bundle’s body as its content.
 
 ## See Also
 
-- [static func main()](widgetbundle/main.md)
+### Running a widget bundle
+- [static func main()](./main%28%29.md)
   Initializes and runs the widget bundle.
 
 

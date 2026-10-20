@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 15.4+
@@ -14,7 +15,8 @@ init(rawValue: UInt64)
 
 ## See Also
 
-- [init(UInt64)](fsdirectoryverifier/init(_:).md)
+### Initializing a verifier
+- [init(UInt64)](./init%28_%29.md)
 
 
 ---

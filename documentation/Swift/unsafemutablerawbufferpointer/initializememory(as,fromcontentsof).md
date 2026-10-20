@@ -1,7 +1,8 @@
 # initializeMemory(as:fromContentsOf:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the buffer’s memory with every element of the source, binding the initialized memory to the elements’ type.
 

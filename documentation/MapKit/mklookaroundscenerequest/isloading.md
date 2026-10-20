@@ -1,7 +1,8 @@
 # isLoading
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a scene request is loading.
 
@@ -18,9 +19,14 @@ A Boolean value that indicates whether a scene request is loading.
 var isLoading: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isLoading) BOOL loading;
+```
+
 ## See Also
 
-- [var isCancelled: Bool](mklookaroundscenerequest/iscancelled.md)
+### Monitoring the progress of scene requests
+- [var isCancelled: Bool](./iscancelled.md)
   A Boolean value that indicates if the cancellation of a scene request was successful.
 
 

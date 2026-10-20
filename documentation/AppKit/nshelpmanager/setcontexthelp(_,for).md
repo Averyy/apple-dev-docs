@@ -1,17 +1,22 @@
 # setContextHelp(_:for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Associates help content with an object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setContextHelp(_ attrString: NSAttributedString, for object: Any)
+```
+
+```objc
+- (void) setContextHelp:(NSAttributedString *) attrString forObject:(id) object;
 ```
 
 #### Discussion
@@ -25,7 +30,8 @@ When the application enters context-sensitive help mode, if `object` is clicked,
 
 ## See Also
 
-- [func removeContextHelp(for: Any)](nshelpmanager/removecontexthelp(for:).md)
+### Configuring Context-Sensitive Help
+- [func removeContextHelp(for: Any)](./removecontexthelp%28for%29.md)
   Removes the association between an object and its context-sensitive help.
 
 

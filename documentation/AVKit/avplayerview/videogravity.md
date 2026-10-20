@@ -1,7 +1,8 @@
 # videoGravity
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that determines how the player view displays video content within its bounds.
 
@@ -14,23 +15,28 @@ A value that determines how the player view displays video content within its bo
 var videoGravity: AVLayerVideoGravity { get set }
 ```
 
+```objc
+@property (copy) AVLayerVideoGravity videoGravity;
+```
+
 #### Discussion
 
 The video gravity determines how the player view scales or stretches the video content within the player view’s bounds. The player view supports the following video gravity values:
 
-- [`resizeAspect`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resizeaspect)
-- [`resizeAspectFill`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resizeaspectfill)
-- [`resize`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resize)
+- [`resizeAspect`](../../AVFoundation/avlayervideogravity/resizeaspect.md)
+- [`resizeAspectFill`](../../AVFoundation/avlayervideogravity/resizeaspectfill.md)
+- [`resize`](../../AVFoundation/avlayervideogravity/resize.md)
 
-The default value is [`resizeAspect`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resizeaspect).
+The default value is [`resizeAspect`](../../AVFoundation/avlayervideogravity/resizeaspect.md).
 
 This property is animatable.
 
 ## See Also
 
-- [var isReadyForDisplay: Bool](avplayerview/isreadyfordisplay.md)
+### Customizing the video presentation
+- [var isReadyForDisplay: Bool](./isreadyfordisplay.md)
   A Boolean value that indicates whether the current player item’s first video frame is ready for display.
-- [var videoBounds: NSRect](avplayerview/videobounds.md)
+- [var videoBounds: NSRect](./videobounds.md)
   The current size and position of the video image that displays within the player view’s bounds.
 
 

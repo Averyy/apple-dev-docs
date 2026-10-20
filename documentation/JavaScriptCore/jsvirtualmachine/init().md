@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a JavaScript virtual machine.
 
@@ -19,13 +20,17 @@ Initializes a JavaScript virtual machine.
 init!()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A new, independent JavaScript virtual machine.
 
 #### Discussion
 
-Use this initializer to create a virtual machine for use with more than one JavaScript context. By default, creating a [`JSContext`](jscontext.md) object automatically creates an independent virtual machine—to share a virtual machine between contexts, obtain a [`JSVirtualMachine`](jsvirtualmachine.md) instance and then create contexts using the [`init(virtualMachine:)`](jscontext/init(virtualmachine:).md) initializer.
+Use this initializer to create a virtual machine for use with more than one JavaScript context. By default, creating a [`JSContext`](../jscontext.md) object automatically creates an independent virtual machine—to share a virtual machine between contexts, obtain a [`JSVirtualMachine`](../jsvirtualmachine.md) instance and then create contexts using the [`init(virtualMachine:)`](../jscontext/init%28virtualmachine%29.md) initializer.
 
 
 ---

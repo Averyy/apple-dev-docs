@@ -1,7 +1,8 @@
 # seek(to:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the current playback time to the time specified by the date object.
 
@@ -14,6 +15,8 @@ Sets the current playback time to the time specified by the date object.
 - visionOS 1.0+
 - watchOS 9.0+
 
+> **Deprecated**: Use [`seek(to:completionHandler:)`](./seek%28to,completionhandler%29-1dibq.md) instead.
+
 ## Declaration
 
 ```swift
@@ -23,11 +26,11 @@ func seek(to date: Date) async -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the playhead was moved to `date`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the playhead was moved to `date`, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-For playback content that is associated with a range of dates, this method moves the playhead to point within that range. This method will fail (return [`false`](https://developer.apple.com/documentation/swift/false)) if `date` is outside the range or if the content is not associated with a range of dates.
+For playback content that is associated with a range of dates, this method moves the playhead to point within that range. This method will fail (return [`false`](../../Swift/false.md)) if `date` is outside the range or if the content is not associated with a range of dates.
 
 ## Parameters
 
@@ -35,15 +38,17 @@ For playback content that is associated with a range of dates, this method moves
 
 ## See Also
 
-- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: ((Bool) -> Void)?)](avplayeritem/seek(to:tolerancebefore:toleranceafter:completionhandler:).md)
+### Related Documentation
+- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: ((Bool) -> Void)?)](./seek%28to,tolerancebefore,toleranceafter,completionhandler%29.md)
   Sets the current playback time within a specified time bound and invokes the specified block when the seek operation completes or is interrupted.
-- [func seek(to: CMTime, completionHandler: ((Bool) -> Void)?)](avplayeritem/seek(to:completionhandler:)-91gnw.md)
+- [func seek(to: CMTime, completionHandler: ((Bool) -> Void)?)](./seek%28to,completionhandler%29-91gnw.md)
   Sets the current playback time to the specified time.
-- [func seek(to: CMTime)](avplayeritem/seek(to:)-1dpto.md)
+### Seeking through media
+- [func seek(to: CMTime)](./seek%28to%29-1dpto.md)
   Sets the current playback time to the specified time.
-- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime)](avplayeritem/seek(to:tolerancebefore:toleranceafter:).md)
+- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime)](./seek%28to,tolerancebefore,toleranceafter%29.md)
   Sets the current playback time within a specified time bound.
-- [func seek(to: Date) -> Bool](avplayeritem/seek(to:)-3s9d8.md)
+- [func seek(to: Date) -> Bool](./seek%28to%29-3s9d8.md)
   Sets the current playback time to the time specified by the date object.
 
 

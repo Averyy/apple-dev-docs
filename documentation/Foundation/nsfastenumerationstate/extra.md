@@ -1,7 +1,8 @@
 # extra
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A C array that you can use to hold returned values.
 
@@ -18,6 +19,10 @@ A C array that you can use to hold returned values.
 
 ```swift
 var extra: (UInt, UInt, UInt, UInt, UInt)
+```
+
+```c
+unsigned long extra[5];
 ```
 
 

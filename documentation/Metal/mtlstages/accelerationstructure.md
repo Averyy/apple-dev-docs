@@ -1,7 +1,8 @@
 # accelerationStructure
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Represents all acceleration structure operations.
 
@@ -19,13 +20,18 @@ Represents all acceleration structure operations.
 static var accelerationStructure: MTLStages { get }
 ```
 
+```c
+MTLStageAccelerationStructure
+```
+
 ## See Also
 
-- [static var dispatch: MTLStages](mtlstages/dispatch.md)
+### Compute pass stages
+- [static var dispatch: MTLStages](./dispatch.md)
   Represents all compute dispatches in a compute pass.
-- [static var blit: MTLStages](mtlstages/blit.md)
+- [static var blit: MTLStages](./blit.md)
   Represents all blit operations in a pass.
-- [static var machineLearning: MTLStages](mtlstages/machinelearning.md)
+- [static var machineLearning: MTLStages](./machinelearning.md)
   Represents all machine learning network dispatch operations.
 
 

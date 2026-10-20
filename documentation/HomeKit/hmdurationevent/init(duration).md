@@ -1,7 +1,8 @@
 # init(duration:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a duration event with the specified time duration.
 
@@ -17,6 +18,10 @@ Creates a duration event with the specified time duration.
 
 ```swift
 init(duration: TimeInterval)
+```
+
+```objc
+- (instancetype) initWithDuration:(NSTimeInterval) duration;
 ```
 
 #### Return Value

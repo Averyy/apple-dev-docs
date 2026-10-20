@@ -1,14 +1,15 @@
 # kCSRClockTickPeriodLoAddress
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kCSRClockTickPeriodLoAddress = kCSRCoreRegistersBaseAddress + 0x0064
 ```
 

@@ -1,7 +1,8 @@
 # UpdateMediaAffinityMediaItemResolutionResult.Disambiguation
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A result that requires the user to choose from multiple media items before proceeding.
 
@@ -10,7 +11,7 @@ A result that requires the user to choose from multiple media items before proce
 
 ## Declaration
 
-```swift
+```
 object UpdateMediaAffinityMediaItemResolutionResult.Disambiguation
 ```
 
@@ -20,11 +21,12 @@ object UpdateMediaAffinityMediaItemResolutionResult.Disambiguation
 
 ## See Also
 
-- [object UpdateMediaAffinityMediaItemResolutionResult.Success](updatemediaaffinitymediaitemresolutionresult/success-data.dictionary.md)
+### Specifying the Result
+- [object UpdateMediaAffinityMediaItemResolutionResult.Success](./success-data.dictionary.md)
   A media item that successfully matches the intent.
-- [object UpdateMediaAffinityMediaItemResolutionResult.Unsupported](updatemediaaffinitymediaitemresolutionresult/unsupported-data.dictionary.md)
+- [object UpdateMediaAffinityMediaItemResolutionResult.Unsupported](./unsupported-data.dictionary.md)
   The reason your service can’t update information about the requested media item.
-- [object UpdateMediaAffinityMediaItemResolutionResult.ConfirmationRequired](updatemediaaffinitymediaitemresolutionresult/confirmationrequired-data.dictionary.md)
+- [object UpdateMediaAffinityMediaItemResolutionResult.ConfirmationRequired](./confirmationrequired-data.dictionary.md)
   A result that requires the user to confirm the media item before proceeding.
 
 

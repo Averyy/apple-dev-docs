@@ -1,14 +1,15 @@
 # MasterAudioFunctions
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 typedef struct MasterAudioFunctions {
     ...
 } MasterAudioFunctions;
@@ -17,9 +18,9 @@ typedef struct MasterAudioFunctions {
 ## Topics
 
 ### Instance Properties
-- [decrementMasterVolume](masteraudiofunctions/1571503-decrementmastervolume.md)
-- [incrementMasterVolume](masteraudiofunctions/1571548-incrementmastervolume.md)
-- [toggleMasterMute](masteraudiofunctions/1571535-togglemastermute.md)
+- [decrementMasterVolume](./masteraudiofunctions/api-1571503-decrementmastervolume.md)
+- [incrementMasterVolume](./masteraudiofunctions/api-1571548-incrementmastervolume.md)
+- [toggleMasterMute](./masteraudiofunctions/api-1571535-togglemastermute.md)
 
 
 ---

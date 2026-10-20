@@ -1,7 +1,8 @@
 # UserPreferences
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures iCloud password preferences.
 
@@ -10,7 +11,7 @@ The payload that configures iCloud password preferences.
 
 ## Declaration
 
-```swift
+```
 object UserPreferences
 ```
 
@@ -18,7 +19,7 @@ object UserPreferences
 
 Specify `com.apple.preference.users` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.preference.users` as the payload type.
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -70,9 +71,12 @@ Specify `com.apple.preference.users` as the payload type.
 
 - `DisableUsingiCloudPassword` (boolean): If `true`, disables the iCloud password for local accounts.
 
+  **Default**: `false`
+
 ## See Also
 
-- [object GlobalPreferences](globalpreferences.md)
+### Preferences
+- [object GlobalPreferences](./globalpreferences.md)
   The payload to configure global preferences.
 
 

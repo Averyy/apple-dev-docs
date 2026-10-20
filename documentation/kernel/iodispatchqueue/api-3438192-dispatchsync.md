@@ -1,7 +1,8 @@
 # DispatchSync
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Schedule a block for synchronous execution on the current queue.
 
@@ -11,7 +12,7 @@ Schedule a block for synchronous execution on the current queue.
 
 ## Declaration
 
-```swift
+```c
 void DispatchSync(IODispatchBlock block);
 ```
 
@@ -25,7 +26,8 @@ This method schedules the block for execution on the queue and waits for it to c
 
 ## See Also
 
-- [- DispatchSync_f](iodispatchqueue/3438193-dispatchsync_f.md)
+### Executing a Task Synchronously
+- [- DispatchSync_f](./api-3438193-dispatchsync_f.md)
   Schedule a C-style function for synchronous execution on the current queue.
 
 

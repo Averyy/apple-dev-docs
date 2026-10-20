@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/model-prediction.htm
 
 # Model Prediction
 
-**
-
-- [.md](../_sources/source/model-prediction.md)
-- **
-
-.pdf
-
-**
-
-# Model Prediction
-
- Table of contents 
-
-## Contents
-
-# Model Prediction
-
 After converting a source model to a Core ML model, you can evaluate the Core ML model by verifying that the predictions made by the Core ML model match the predictions made by the source model.
 
 The following example makes predictions for the `HousePricer.mlmodel` using the [predict()](https://apple.github.io/coremltools/source/coremltools.models.html#coremltools.models.model.MLModel.predict) method.
@@ -41,11 +24,11 @@ macOS Required for Model Prediction
 
 For the prediction API, coremltools interacts with the Core ML framework which is available on macOS only. The prediction API is not available on Linux.
 
-However, Core ML models can be [imported and executed with TVM](https://tvm.apache.org/docs/tutorials/frontend/from_coreml.md), which may provide a way to test Core ML models on non-macOS systems.
+However, Core ML models can be [imported and executed with TVM](https://tvm.apache.org/docs/tutorials/frontend/from_coreml.html), which may provide a way to test Core ML models on non-macOS systems.
 
 ## Types of Inputs and Outputs
 
-Core ML supports several [feature types](https://apple.github.io/coremltools/mlmodel/Format/FeatureTypes.md) for inputs and outputs. The following are two feature types that are commonly used with neural network models:
+Core ML supports several [feature types](https://apple.github.io/coremltools/mlmodel/Format/FeatureTypes.html) for inputs and outputs. The following are two feature types that are commonly used with neural network models:
 
 - `ArrayFeatureType`, which maps to the MLMultiArray Feature Value in Swift
 - `ImageFeatureType`, which maps to the Image Feature Value in Swift
@@ -77,7 +60,7 @@ Deprecated Flag
 
 In previous versions of coremltools, you would restrict execution to the CPU by specifying the `useCPUOnly=True` flag. This flag is now deprecated. Instead, use the `compute_units` parameter .
 
-For more information and values for this parameter, see [Set the Compute Units](load-and-convert-model.html#set-the-compute-units).
+For more information and values for this parameter, see [Set the Compute Units](load-and-convert-model.md#set-the-compute-units).
 
 ## Fast Predictions
 
@@ -195,7 +178,7 @@ You can’t modify a compiled model like you can an [MLModel](https://apple.gith
 
 When you initialize a model using (in Python) `model=ct.models.MLModel("model.mlpackge")`, the Core ML Framework is invoked and the following steps occur, as shown in the following diagram.
 
-![Initialize MLModel](../_images/model-lifecycle.png)
+![Initialize MLModel](https://apple.github.io/coremltools/docs-guides/_images/model-lifecycle.png)
 
 This diagram is from [Improve Core ML integration with async prediction](https://developer.apple.com/videos/play/wwdc2023/10049/),
 presented at the Apple 2023 World Wide Developer Conference.
@@ -217,20 +200,29 @@ By storing the `mlmodelc` file to a fixed location first, and then initializing 
 To use a compiled model file, follow these steps:
 
 1. Load a saved MLModel, or convert a model from a training framework (such as TensorFlow or PyTorch).
-For instructions on converting a model, see [Load and Convert Model Workflow](load-and-convert-model.md). This example uses the [regnet_y_128fg](https://pytorch.org/vision/main/models/generated/torchvision.models.regnet_y_128gf.md) torchvision model and assumes that you have already converted it to a Core ML `mlpackage`.
+For instructions on converting a model, see [Load and Convert Model Workflow](load-and-convert-model.md). This example uses the [regnet_y_128fg](https://pytorch.org/vision/main/models/generated/torchvision.models.regnet_y_128gf.html) torchvision model and assumes that you have already converted it to a Core ML `mlpackage`.
 2. Get the compiled model directory by calling its `get_compiled_model_path` method.
 For example, the following code snippet loads a saved MLModel (`"regnet_y_128gf.mlpackage"`) and gets the compiled path:
-mlmodel = ct.models.MLModel("regnet_y_128gf.mlpackage")
-compiled_model_path = mlmodel.get_compiled_model_path()
-3. The returned directory in `compiled_model_path` is only temporary. Copy that directory to a new persistent location (as in the following example, `regnet_y_128gf` with the extension `.mlmodelc` in the same directory) using the [shutil.copytree()](https://docs.python.org/3/library/shutil.md) method. You can then use CompiledMLModel to load the compiled model from `"regnet_y_128gf.mlmodelc"`:
-from shutil import copytree
-copytree(compiled_model_path, "regnet_y_128gf.mlmodelc", dirs_exist_ok=True)
 
-mlmodel = ct.models.CompiledMLModel("regnet_y_128gf.mlmodelc")
+   ```
+   mlmodel = ct.models.MLModel("regnet_y_128gf.mlpackage")
+   compiled_model_path = mlmodel.get_compiled_model_path()
+   ```
+3. The returned directory in `compiled_model_path` is only temporary. Copy that directory to a new persistent location (as in the following example, `regnet_y_128gf` with the extension `.mlmodelc` in the same directory) using the [shutil.copytree()](https://docs.python.org/3/library/shutil.html) method. You can then use CompiledMLModel to load the compiled model from `"regnet_y_128gf.mlmodelc"`:
+
+   ```
+   from shutil import copytree
+   copytree(compiled_model_path, "regnet_y_128gf.mlmodelc", dirs_exist_ok=True)
+
+   mlmodel = ct.models.CompiledMLModel("regnet_y_128gf.mlmodelc")
+   ```
 
 This step includes compiling for device specialization. Therefore, the first load can still take a long time. However, since the location of the `mlmodelc` folder is fixed, the cache is able to work, so subsequent calls to model using CompiledMLModel are quick.
 4. For each prediction, use the `mlmodel` object to take advantage of this caching:
-prediction = mlmodel.predict({'x': 2})
+
+   ```
+   prediction = mlmodel.predict({'x': 2})
+   ```
 
 With most large models, it should be very quick to use the compiled model again after the first call.
 
@@ -294,5 +286,3 @@ time taken to load using ct.models.CompiledMLModel: 0.1 secs
 ```
 
 These results show that it takes relatively the same time to load an MLModel after the first load, while loading a CompiledMLModel takes much less time after the first load.
-
-** Contents

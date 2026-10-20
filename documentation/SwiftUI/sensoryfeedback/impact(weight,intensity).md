@@ -1,7 +1,8 @@
 # impact(weight:intensity:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Provides a physical metaphor you can use to complement a visual experience.
 
@@ -30,13 +31,14 @@ Only plays feedback on iOS and watchOS.
 
 ## See Also
 
-- [static let impact: SensoryFeedback](sensoryfeedback/impact.md)
+### Producing a physical impact
+- [static let impact: SensoryFeedback](./impact.md)
   Provides a physical metaphor you can use to complement a visual experience.
-- [static func impact(flexibility: SensoryFeedback.Flexibility, intensity: Double) -> SensoryFeedback](sensoryfeedback/impact(flexibility:intensity:).md)
+- [static func impact(flexibility: SensoryFeedback.Flexibility, intensity: Double) -> SensoryFeedback](./impact%28flexibility,intensity%29.md)
   Provides a physical metaphor you can use to complement a visual experience.
-- [SensoryFeedback.Flexibility](sensoryfeedback/flexibility.md)
+- [SensoryFeedback.Flexibility](./flexibility.md)
   The flexibility to be represented by a type of feedback.
-- [SensoryFeedback.Weight](sensoryfeedback/weight.md)
+- [SensoryFeedback.Weight](./weight.md)
   The weight to be represented by a type of feedback.
 
 

@@ -1,7 +1,8 @@
 # AnalyserNode
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,27 +10,27 @@
 
 ## Declaration
 
-```swift
+```
 interface AnalyserNode
 ```
 
 ## Topics
 
 ### Instance Properties
-- [fftSize](analysernode/1634324-fftsize.md)
-- [frequencyBinCount](analysernode/1629444-frequencybincount.md)
-- [maxDecibels](analysernode/1629461-maxdecibels.md)
-- [minDecibels](analysernode/1629664-mindecibels.md)
-- [smoothingTimeConstant](analysernode/1632949-smoothingtimeconstant.md)
+- [fftSize](./analysernode/api-1634324-fftsize.md)
+- [frequencyBinCount](./analysernode/api-1629444-frequencybincount.md)
+- [maxDecibels](./analysernode/api-1629461-maxdecibels.md)
+- [minDecibels](./analysernode/api-1629664-mindecibels.md)
+- [smoothingTimeConstant](./analysernode/api-1632949-smoothingtimeconstant.md)
 ### Instance Methods
-- [getByteFrequencyData](analysernode/1630445-getbytefrequencydata.md)
-- [getByteTimeDomainData](analysernode/1632499-getbytetimedomaindata.md)
-- [getFloatFrequencyData](analysernode/1631149-getfloatfrequencydata.md)
+- [getByteFrequencyData](./analysernode/api-1630445-getbytefrequencydata.md)
+- [getByteTimeDomainData](./analysernode/api-1632499-getbytetimedomaindata.md)
+- [getFloatFrequencyData](./analysernode/api-1631149-getfloatfrequencydata.md)
 
 ## Relationships
 
 ### Inherits From
-- [AudioNode](audionode.md)
+- [AudioNode](./audionode.md)
 
 
 ---

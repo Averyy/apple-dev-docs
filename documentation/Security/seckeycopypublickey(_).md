@@ -1,7 +1,8 @@
 # SecKeyCopyPublicKey(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the public key associated with the given private key.
 
@@ -20,15 +21,19 @@ Gets the public key associated with the given private key.
 func SecKeyCopyPublicKey(_ key: SecKey) -> SecKey?
 ```
 
+```c
+SecKeyRefSecKeyCopyPublicKey(SecKeyRef key);
+```
+
 ## Mentions
 
-- [Generating New Cryptographic Keys](generating-new-cryptographic-keys.md)
-- [Getting an Existing Key](getting-an-existing-key.md)
-- [Protecting keys with the Secure Enclave](protecting-keys-with-the-secure-enclave.md)
+- [Generating New Cryptographic Keys](./generating-new-cryptographic-keys.md)
+- [Getting an Existing Key](./getting-an-existing-key.md)
+- [Protecting keys with the Secure Enclave](./protecting-keys-with-the-secure-enclave.md)
 
 #### Return Value
 
-The public key corresponding to the given private key. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free this key’s memory when you are done with it.
+The public key corresponding to the given private key. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free this key’s memory when you are done with it.
 
 #### Discussion
 

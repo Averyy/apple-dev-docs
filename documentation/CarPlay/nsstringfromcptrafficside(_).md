@@ -1,7 +1,8 @@
 # NSStringFromCPTrafficSide(_:)
 
 **Framework**: CarPlay  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 17.4+
@@ -12,6 +13,10 @@
 
 ```swift
 func NSStringFromCPTrafficSide(_ trafficSide: CPTrafficSide) -> String!
+```
+
+```c
+NSString *NSStringFromCPTrafficSide(CPTrafficSide trafficSide);
 ```
 
 

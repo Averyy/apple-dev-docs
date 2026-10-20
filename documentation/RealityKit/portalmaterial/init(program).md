@@ -1,7 +1,8 @@
 # init(program:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a portal material from a previously compiled program.
 
@@ -21,9 +22,9 @@ init(program: PortalMaterial.Program)
 
 #### Discussion
 
-Because [`init(descriptor:)`](portalmaterial/program-swift.struct/init(descriptor:).md) is asynchronous, preload the programs your scene needs once during setup, then use this initializer to instantiate portal materials from them synchronously at runtime — for example, when populating a model component each frame.
+Because [`init(descriptor:)`](./program-swift.struct/init%28descriptor%29.md) is asynchronous, preload the programs your scene needs once during setup, then use this initializer to instantiate portal materials from them synchronously at runtime — for example, when populating a model component each frame.
 
-After creating the material, bind its shader inputs by calling [`setParameter(name:value:)`](portalmaterial/setparameter(name:value:).md) or [`setParameter(handle:value:)`](portalmaterial/setparameter(handle:value:).md).
+After creating the material, bind its shader inputs by calling [`setParameter(name:value:)`](./setparameter%28name,value%29.md) or [`setParameter(handle:value:)`](./setparameter%28handle,value%29.md).
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # day
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The day of the year, in UTC.
 

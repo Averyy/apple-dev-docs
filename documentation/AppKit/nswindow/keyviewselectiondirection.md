@@ -1,12 +1,13 @@
 # keyViewSelectionDirection
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction the window is currently using to change the key view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,28 @@ The direction the window is currently using to change the key view.
 var keyViewSelectionDirection: NSWindow.SelectionDirection { get }
 ```
 
+```objc
+@property (readonly) NSSelectionDirection keyViewSelectionDirection;
+```
+
 #### Discussion
 
-The value of this property can be one of the values described in [`NSWindow.SelectionDirection`](nswindow/selectiondirection.md).
+The value of this property can be one of the values described in [`NSWindow.SelectionDirection`](./selectiondirection.md).
 
 ## See Also
 
-- [func selectKeyView(preceding: NSView)](nswindow/selectkeyview(preceding:).md)
+### Managing the Key View Loop
+- [func selectKeyView(preceding: NSView)](./selectkeyview%28preceding%29.md)
   Gives key view status to the view that precedes the given view.
-- [func selectKeyView(following: NSView)](nswindow/selectkeyview(following:).md)
+- [func selectKeyView(following: NSView)](./selectkeyview%28following%29.md)
   Gives key view status to the view that follows the given view.
-- [func selectPreviousKeyView(Any?)](nswindow/selectpreviouskeyview(_:).md)
+- [func selectPreviousKeyView(Any?)](./selectpreviouskeyview%28_%29.md)
   Searches for a candidate previous key view and, if it finds one, tries to make it the first responder.
-- [func selectNextKeyView(Any?)](nswindow/selectnextkeyview(_:).md)
+- [func selectNextKeyView(Any?)](./selectnextkeyview%28_%29.md)
   Searches for a candidate next key view and, if it finds one, tries to make it the first responder.
-- [var autorecalculatesKeyViewLoop: Bool](nswindow/autorecalculateskeyviewloop.md)
+- [var autorecalculatesKeyViewLoop: Bool](./autorecalculateskeyviewloop.md)
   A Boolean value that indicates whether the window automatically recalculates the key view loop when views are added.
-- [func recalculateKeyViewLoop()](nswindow/recalculatekeyviewloop.md)
+- [func recalculateKeyViewLoop()](./recalculatekeyviewloop%28%29.md)
   Marks the key view loop as “dirty” and in need of recalculation.
 
 

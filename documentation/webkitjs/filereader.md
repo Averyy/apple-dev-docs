@@ -1,7 +1,8 @@
 # FileReader
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,32 +10,32 @@
 
 ## Declaration
 
-```swift
+```
 interface FileReader
 ```
 
 ## Topics
 
 ### Instance Properties
-- [error](filereader/1629843-error.md)
-- [onabort](filereader/1631587-onabort.md)
-- [onerror](filereader/1631828-onerror.md)
-- [onload](filereader/1632056-onload.md)
-- [onloadend](filereader/1631279-onloadend.md)
-- [onloadstart](filereader/1632064-onloadstart.md)
-- [onprogress](filereader/1631488-onprogress.md)
-- [readyState](filereader/1632200-readystate.md)
-- [result](filereader/1633053-result.md)
+- [error](./filereader/api-1629843-error.md)
+- [onabort](./filereader/api-1631587-onabort.md)
+- [onerror](./filereader/api-1631828-onerror.md)
+- [onload](./filereader/api-1632056-onload.md)
+- [onloadend](./filereader/api-1631279-onloadend.md)
+- [onloadstart](./filereader/api-1632064-onloadstart.md)
+- [onprogress](./filereader/api-1631488-onprogress.md)
+- [readyState](./filereader/api-1632200-readystate.md)
+- [result](./filereader/api-1633053-result.md)
 ### Instance Methods
-- [abort](filereader/1633369-abort.md)
-- [readAsArrayBuffer](filereader/1633856-readasarraybuffer.md)
-- [readAsBinaryString](filereader/1634345-readasbinarystring.md)
-- [readAsDataURL](filereader/1634236-readasdataurl.md)
-- [readAsText](filereader/1634379-readastext.md)
+- [abort](./filereader/api-1633369-abort.md)
+- [readAsArrayBuffer](./filereader/api-1633856-readasarraybuffer.md)
+- [readAsBinaryString](./filereader/api-1634345-readasbinarystring.md)
+- [readAsDataURL](./filereader/api-1634236-readasdataurl.md)
+- [readAsText](./filereader/api-1634379-readastext.md)
 ### Miscellaneous
-- [DONE](filereader/1631188-done.md)
-- [EMPTY](filereader/1630998-empty.md)
-- [LOADING](filereader/1633222-loading.md)
+- [DONE](./filereader/api-1631188-done.md)
+- [EMPTY](./filereader/api-1630998-empty.md)
+- [LOADING](./filereader/api-1633222-loading.md)
 
 ## Relationships
 

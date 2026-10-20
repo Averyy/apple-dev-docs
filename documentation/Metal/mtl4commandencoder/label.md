@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Provides an optional label to assign to the command encoder for debug purposes.
@@ -18,6 +19,10 @@ Provides an optional label to assign to the command encoder for debug purposes.
 
 ```swift
 var label: String? { get set }
+```
+
+```objc
+@property (atomic, copy, nullable) NSString * label;
 ```
 
 

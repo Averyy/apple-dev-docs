@@ -1,7 +1,8 @@
 # table
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 6.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var table: NSTextTable { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSTextTable * table;
 ```
 
 

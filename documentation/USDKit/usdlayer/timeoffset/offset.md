@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time shift applied during composition.
 

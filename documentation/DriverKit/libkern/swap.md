@@ -1,17 +1,18 @@
 # swap
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void swap(safe_allocation<T, Allocator, TrappingPolicy> & a, safe_allocation<T, Allocator, TrappingPolicy> & b) noexcept;
 ```
 

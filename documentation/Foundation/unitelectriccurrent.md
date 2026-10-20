@@ -1,7 +1,8 @@
 # UnitElectricCurrent
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A unit of measure for electric current.
 
@@ -20,65 +21,70 @@ A unit of measure for electric current.
 class UnitElectricCurrent
 ```
 
+```objc
+@interface NSUnitElectricCurrent : NSDimension
+```
+
 #### Overview
 
-You typically use instances of [`UnitElectricCurrent`](unitelectriccurrent.md) to represent specific quantities of electric current using the [`NSMeasurement`](nsmeasurement.md) class.
+You typically use instances of [`UnitElectricCurrent`](./unitelectriccurrent.md) to represent specific quantities of electric current using the [`NSMeasurement`](./nsmeasurement.md) class.
 
 ##### Electric Current
 
 Electric current is the flow of electric charge. The SI unit for electric current is the ampere (A), which is defined in terms the production of electromagnetic force between two parallel linear conductors. It can also be expressed as the flow of one coulomb per second (1A = 1C / s).
 
-The [`UnitElectricCurrent`](unitelectriccurrent.md) class defines its [`baseUnit()`](dimension/baseunit().md) as [`amperes`](unitelectriccurrent/amperes.md), and provides the following units, which are initialized using [`UnitConverterLinear`](unitconverterlinear.md) converters with the specified coefficients:
+The [`UnitElectricCurrent`](./unitelectriccurrent.md) class defines its [`baseUnit()`](./dimension/baseunit%28%29.md) as [`amperes`](./unitelectriccurrent/amperes.md), and provides the following units, which are initialized using [`UnitConverterLinear`](./unitconverterlinear.md) converters with the specified coefficients:
 
 | Name | Method | Symbol | Coefficient |
 | --- | --- | --- | --- |
-| Megaamperes | [`megaamperes`](unitelectriccurrent/megaamperes.md) | MA | `1000000.0` |
-| Kiloamperes | [`kiloamperes`](unitelectriccurrent/kiloamperes.md) | kA | `1000.0` |
-| Amperes | [`amperes`](unitelectriccurrent/amperes.md) | A | `1.0` |
-| Milliamperes | [`milliamperes`](unitelectriccurrent/milliamperes.md) | mA | `0.001` |
-| Microamperes | [`microamperes`](unitelectriccurrent/microamperes.md) | µA | `0.000001` |
+| Megaamperes | [`megaamperes`](./unitelectriccurrent/megaamperes.md) | MA | `1000000.0` |
+| Kiloamperes | [`kiloamperes`](./unitelectriccurrent/kiloamperes.md) | kA | `1000.0` |
+| Amperes | [`amperes`](./unitelectriccurrent/amperes.md) | A | `1.0` |
+| Milliamperes | [`milliamperes`](./unitelectriccurrent/milliamperes.md) | mA | `0.001` |
+| Microamperes | [`microamperes`](./unitelectriccurrent/microamperes.md) | µA | `0.000001` |
 
 ## Topics
 
 ### Accessing the Base Unit
-- [class func baseUnit() -> Self](dimension/baseunit.md)
+- [class func baseUnit() -> Self](./dimension/baseunit%28%29.md)
   Returns the base unit.
 ### Accessing Predefined Units
-- [class var megaamperes: UnitElectricCurrent](unitelectriccurrent/megaamperes.md)
+- [class var megaamperes: UnitElectricCurrent](./unitelectriccurrent/megaamperes.md)
   The megaamperes unit of electric current.
-- [class var kiloamperes: UnitElectricCurrent](unitelectriccurrent/kiloamperes.md)
+- [class var kiloamperes: UnitElectricCurrent](./unitelectriccurrent/kiloamperes.md)
   The kiloamperes unit of electric current.
-- [class var amperes: UnitElectricCurrent](unitelectriccurrent/amperes.md)
+- [class var amperes: UnitElectricCurrent](./unitelectriccurrent/amperes.md)
   The amperes unit of electric current.
-- [class var milliamperes: UnitElectricCurrent](unitelectriccurrent/milliamperes.md)
+- [class var milliamperes: UnitElectricCurrent](./unitelectriccurrent/milliamperes.md)
   The milliamperes unit of electric current.
-- [class var microamperes: UnitElectricCurrent](unitelectriccurrent/microamperes.md)
+- [class var microamperes: UnitElectricCurrent](./unitelectriccurrent/microamperes.md)
   The microamperes unit of electric current.
 
 ## Relationships
 
 ### Inherits From
-- [Dimension](dimension.md)
+- [Dimension](./dimension.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UnitElectricCharge](unitelectriccharge.md)
+### Electricity
+- [class UnitElectricCharge](./unitelectriccharge.md)
   A unit of measure for electric charge.
-- [class UnitElectricPotentialDifference](unitelectricpotentialdifference.md)
+- [class UnitElectricPotentialDifference](./unitelectricpotentialdifference.md)
   A unit of measure for electric potential difference.
-- [class UnitElectricResistance](unitelectricresistance.md)
+- [class UnitElectricResistance](./unitelectricresistance.md)
   A unit of measure for electric resistance.
 
 

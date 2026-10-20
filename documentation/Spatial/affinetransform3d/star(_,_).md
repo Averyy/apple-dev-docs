@@ -1,7 +1,8 @@
 # *(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns the concatenation of two affine transforms.
 
@@ -11,7 +12,7 @@ Returns the concatenation of two affine transforms.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,7 +28,8 @@ static func * (lhs: AffineTransform3D, rhs: AffineTransform3D) -> AffineTransfor
 
 ## See Also
 
-- [static func *= (inout AffineTransform3D, AffineTransform3D)](affinetransform3d/*=(_:_:).md)
+### Applying arithmetic operations
+- [static func *= (inout AffineTransform3D, AffineTransform3D)](./stareq%28_,_%29.md)
   Concatenates two affine transforms and stores the result in the left-hand-side variable.
 
 

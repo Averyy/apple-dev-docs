@@ -1,7 +1,8 @@
 # NETunnelProvider
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract base class shared by NEPacketTunnelProvider and NEAppProxyProvider.
 
@@ -19,15 +20,19 @@ An abstract base class shared by NEPacketTunnelProvider and NEAppProxyProvider.
 class NETunnelProvider
 ```
 
+```objc
+@interface NETunnelProvider : NEProvider
+```
+
 ## Mentions
 
-- [Routing your VPN network traffic](routing-your-vpn-network-traffic.md)
+- [Routing your VPN network traffic](./routing-your-vpn-network-traffic.md)
 
 #### Overview
 
-Each [`NETunnelProvider`](netunnelprovider.md) instance corresponds to a single tunneling session, with a single associated configuration.
+Each [`NETunnelProvider`](./netunnelprovider.md) instance corresponds to a single tunneling session, with a single associated configuration.
 
-> ❗ **Important**:  The `com.apple.developer.networking.networkextension` entitlement is required in order to use the [`NETunnelProvider`](netunnelprovider.md) class. Enable this entitlement when creating an App ID in your developer account.
+> ❗ **Important**:  The `com.apple.developer.networking.networkextension` entitlement is required in order to use the [`NETunnelProvider`](./netunnelprovider.md) class. Enable this entitlement when creating an App ID in your developer account.
 
 ##### Subclassing Notes
 
@@ -35,56 +40,57 @@ The `NETunnelProvider` class should not be subclassed directly. Instead, you sho
 
 ###### Methods to Override
 
-- [`handleAppMessage(_:completionHandler:)`](netunnelprovider/handleappmessage(_:completionhandler:).md)
+- [`handleAppMessage(_:completionHandler:)`](./netunnelprovider/handleappmessage%28_,completionhandler%29.md)
 
 ## Topics
 
 ### Getting the tunnel configuration
-- [var protocolConfiguration: NEVPNProtocol](netunnelprovider/protocolconfiguration.md)
+- [var protocolConfiguration: NEVPNProtocol](./netunnelprovider/protocolconfiguration.md)
   The configuration of the current tunneling session.
-- [var routingMethod: NETunnelProviderRoutingMethod](netunnelprovider/routingmethod.md)
+- [var routingMethod: NETunnelProviderRoutingMethod](./netunnelprovider/routingmethod.md)
   The method by which network traffic is routed to the tunnel.
-- [var appRules: [NEAppRule]?](netunnelprovider/apprules.md)
+- [var appRules: [NEAppRule]?](./netunnelprovider/apprules.md)
   The app rules dictating which apps use the current tunneling session.
 ### Configuring the tunnel interface
-- [func setTunnelNetworkSettings(NETunnelNetworkSettings?, completionHandler: (((any Error)?) -> Void)?)](netunnelprovider/settunnelnetworksettings(_:completionhandler:).md)
+- [func setTunnelNetworkSettings(NETunnelNetworkSettings?, completionHandler: (((any Error)?) -> Void)?)](./netunnelprovider/settunnelnetworksettings%28_,completionhandler%29.md)
   Specify the network settings for the current tunneling session.
 ### Communicating with the containing app
-- [func handleAppMessage(Data, completionHandler: ((Data?) -> Void)?)](netunnelprovider/handleappmessage(_:completionhandler:).md)
+- [func handleAppMessage(Data, completionHandler: ((Data?) -> Void)?)](./netunnelprovider/handleappmessage%28_,completionhandler%29.md)
   Handle messages sent by the tunnel provider extension’s containing app.
 ### Setting tunnel status
-- [var reasserting: Bool](netunnelprovider/reasserting.md)
+- [var reasserting: Bool](./netunnelprovider/reasserting.md)
   Indicate to the system that the tunnel is being re-established.
 ### Errors
-- [NETunnelProviderError.Code](netunnelprovidererror-swift.struct/code.md)
+- [NETunnelProviderError.Code](./netunnelprovidererror-swift.struct/code.md)
   Error codes that the tunnel provider declares.
-- [let NETunnelProviderErrorDomain: String](netunnelprovidererrordomain.md)
+- [let NETunnelProviderErrorDomain: String](./netunnelprovidererrordomain.md)
   The domain used for Tunnel Provider errors.
-- [NETunnelProviderError.Code](netunnelprovidererror-swift.struct/code.md)
+- [NETunnelProviderError.Code](./netunnelprovidererror-swift.struct/code.md)
   Error codes that the tunnel provider declares.
 
 ## Relationships
 
 ### Inherits From
-- [NEProvider](neprovider.md)
+- [NEProvider](./neprovider.md)
 ### Inherited By
-- [NEAppProxyProvider](neappproxyprovider.md)
-- [NEPacketTunnelProvider](nepackettunnelprovider.md)
+- [NEAppProxyProvider](./neappproxyprovider.md)
+- [NEPacketTunnelProvider](./nepackettunnelprovider.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NEAppProxyProvider](neappproxyprovider.md)
+### App proxy provider
+- [class NEAppProxyProvider](./neappproxyprovider.md)
   The principal class for an app proxy provider app extension.
-- [class NEProvider](neprovider.md)
+- [class NEProvider](./neprovider.md)
   An abstract base class for all NetworkExtension providers.
-- [class NETunnelNetworkSettings](netunnelnetworksettings.md)
+- [class NETunnelNetworkSettings](./netunnelnetworksettings.md)
   The configuration for a tunnel provider’s virtual interface.
 
 

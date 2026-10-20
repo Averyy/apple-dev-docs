@@ -1,14 +1,15 @@
 # ExpressibleByFloatLiteral Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(floatLiteral: Double)](double/init(floatliteral:).md)
+- [init(floatLiteral: Double)](./init%28floatliteral%29.md)
   Creates an instance initialized to the specified floating-point value.
 ### Type Aliases
-- [typealias FloatLiteralType](double/floatliteraltype.md)
+- [typealias FloatLiteralType](./floatliteraltype.md)
   A type that represents a floating-point literal.
 
 

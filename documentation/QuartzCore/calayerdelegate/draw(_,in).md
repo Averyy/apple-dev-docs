@@ -1,7 +1,8 @@
 # draw(_:in:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate to implement the display process using the layer’s context.
 
@@ -19,11 +20,15 @@ Tells the delegate to implement the display process using the layer’s context.
 optional func draw(_ layer: CALayer, in ctx: CGContext)
 ```
 
+```objc
+- (void) drawLayer:(CALayer *) layer inContext:(CGContextRef) ctx;
+```
+
 #### Discussion
 
-The [`draw(_:in:)`](calayerdelegate/draw(_:in:).md) method is called when the layer is marked for its content to be reloaded, typically with the [`setNeedsDisplay()`](calayer/setneedsdisplay().md) method. It is not called if the delegate implements the [`display(_:)`](calayerdelegate/display(_:).md) method. You can use the context to draw vectors, such as curves and lines, or images with the [`draw(_:in:byTiling:)`](https://developer.apple.com/documentation/coregraphics/cgcontext/draw(_:in:bytiling:)) method.
+The [`draw(_:in:)`](./draw%28_,in%29.md) method is called when the layer is marked for its content to be reloaded, typically with the [`setNeedsDisplay()`](../calayer/setneedsdisplay%28%29.md) method. It is not called if the delegate implements the [`display(_:)`](./display%28_%29.md) method. You can use the context to draw vectors, such as curves and lines, or images with the [`draw(_:in:byTiling:)`](../../CoreGraphics/cgcontext/draw%28_,in,bytiling%29.md) method.
 
-The following code shows how you can create a class named `LayerDelegate` that implements [`CALayerDelegate`](calayerdelegate.md) and sets it as a layer’s (named `sublayer`) delegate. When [`setNeedsDisplay()`](calayer/setneedsdisplay().md) is called on `sublayer`, the delegate’s [`draw(_:in:)`](calayerdelegate/draw(_:in:).md) method draws an ellipse fitting the bounding box of the layer using the [`boundingBoxOfClipPath`](https://developer.apple.com/documentation/coregraphics/cgcontext/boundingboxofclippath) function.
+The following code shows how you can create a class named `LayerDelegate` that implements [`CALayerDelegate`](../calayerdelegate.md) and sets it as a layer’s (named `sublayer`) delegate. When [`setNeedsDisplay()`](../calayer/setneedsdisplay%28%29.md) is called on `sublayer`, the delegate’s [`draw(_:in:)`](./draw%28_,in%29.md) method draws an ellipse fitting the bounding box of the layer using the [`boundingBoxOfClipPath`](../../CoreGraphics/cgcontext/boundingboxofclippath.md) function.
 
 ```swift
 let delegate = LayerDelegate()
@@ -46,7 +51,7 @@ class LayerDelegate: NSObject, CALayerDelegate {
 }
 ```
 
-> ❗ **Important**:  This method is not called if the delegate implements [`display(_:)`](calayerdelegate/display(_:).md).
+> ❗ **Important**:  This method is not called if the delegate implements [`display(_:)`](./display%28_%29.md).
 
 ## Parameters
 
@@ -55,9 +60,10 @@ class LayerDelegate: NSObject, CALayerDelegate {
 
 ## See Also
 
-- [func display(CALayer)](calayerdelegate/display(_:).md)
+### Providing the Layer’s Content
+- [func display(CALayer)](./display%28_%29.md)
   Tells the delegate to implement the display process.
-- [func layerWillDraw(CALayer)](calayerdelegate/layerwilldraw(_:).md)
+- [func layerWillDraw(CALayer)](./layerwilldraw%28_%29.md)
   Notifies the delegate of an imminent draw.
 
 

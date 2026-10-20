@@ -1,7 +1,8 @@
 # NSPersistentHistoryTransaction
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A set of changes in the persistent history based on a context save or batch operation.
 
@@ -20,58 +21,63 @@ A set of changes in the persistent history based on a context save or batch oper
 class NSPersistentHistoryTransaction
 ```
 
+```objc
+@interface NSPersistentHistoryTransaction : NSObject
+```
+
 ## Mentions
 
-- [Consuming relevant store changes](consuming-relevant-store-changes.md)
+- [Consuming relevant store changes](./consuming-relevant-store-changes.md)
 
 ## Topics
 
 ### Requesting Notifications
-- [func objectIDNotification() -> Notification](nspersistenthistorytransaction/objectidnotification.md)
+- [func objectIDNotification() -> Notification](./nspersistenthistorytransaction/objectidnotification%28%29.md)
   Obtains a notification for use in merging the transaction’s changes into a managed object context.
 ### Customizing History Fetch Requests
-- [class var fetchRequest: NSFetchRequest<any NSFetchRequestResult>?](nspersistenthistorytransaction/fetchrequest.md)
+- [class var fetchRequest: NSFetchRequest<any NSFetchRequestResult>?](./nspersistenthistorytransaction/fetchrequest.md)
   A fetch request that has the persistent history transaction as the entity.
-- [class var entityDescription: NSEntityDescription?](nspersistenthistorytransaction/entitydescription.md)
+- [class var entityDescription: NSEntityDescription?](./nspersistenthistorytransaction/entitydescription.md)
   The entity description of the persistent history transaction entity.
-- [class func entityDescription(with: NSManagedObjectContext) -> NSEntityDescription?](nspersistenthistorytransaction/entitydescription(with:).md)
+- [class func entityDescription(with: NSManagedObjectContext) -> NSEntityDescription?](./nspersistenthistorytransaction/entitydescription%28with%29.md)
   Requests an entity description using the provided context for the managed object type affected by the transaction.
 ### Inspecting Transaction Details
-- [var author: String?](nspersistenthistorytransaction/author.md)
+- [var author: String?](./nspersistenthistorytransaction/author.md)
   A granular description of the context that made the persistent history change, if available.
-- [var bundleID: String](nspersistenthistorytransaction/bundleid.md)
+- [var bundleID: String](./nspersistenthistorytransaction/bundleid.md)
   The originating bundle’s identifier.
-- [var changes: [NSPersistentHistoryChange]?](nspersistenthistorytransaction/changes.md)
+- [var changes: [NSPersistentHistoryChange]?](./nspersistenthistorytransaction/changes.md)
   The array of persistent history changes.
-- [var contextName: String?](nspersistenthistorytransaction/contextname.md)
+- [var contextName: String?](./nspersistenthistorytransaction/contextname.md)
   The originating context’s name.
-- [var processID: String](nspersistenthistorytransaction/processid.md)
+- [var processID: String](./nspersistenthistorytransaction/processid.md)
   The originating process’s identifier.
-- [var storeID: String](nspersistenthistorytransaction/storeid.md)
+- [var storeID: String](./nspersistenthistorytransaction/storeid.md)
   The originating store’s identifier.
-- [var timestamp: Date](nspersistenthistorytransaction/timestamp.md)
+- [var timestamp: Date](./nspersistenthistorytransaction/timestamp.md)
   The date of the persistent history change.
-- [var token: NSPersistentHistoryToken](nspersistenthistorytransaction/token.md)
+- [var token: NSPersistentHistoryToken](./nspersistenthistorytransaction/token.md)
   The token that represents this transaction in the persistent history.
-- [var transactionNumber: Int64](nspersistenthistorytransaction/transactionnumber.md)
+- [var transactionNumber: Int64](./nspersistenthistorytransaction/transactionnumber.md)
   The transaction’s numeric identifier.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSPersistentHistoryChange](nspersistenthistorychange.md)
+### Reading History
+- [class NSPersistentHistoryChange](./nspersistenthistorychange.md)
   A change representing the insertion, update, or deletion of a managed object in the persistent store.
 
 

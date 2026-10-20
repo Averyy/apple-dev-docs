@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an import manager instance.
 
@@ -20,7 +21,7 @@ init()
 
 #### Discussion
 
-Create an instance of this class when the system launches your app with an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) of type `ASCredentialExchangeActivityType`, then call [`importCredentials(token:)`](ascredentialimportmanager/importcredentials(token:).md) to import credentials from the source app.
+Create an instance of this class when the system launches your app with an [`NSUserActivity`](../../Foundation/nsuseractivity.md) of type `ASCredentialExchangeActivityType`, then call [`importCredentials(token:)`](./importcredentials%28token%29.md) to import credentials from the source app.
 
 
 ---

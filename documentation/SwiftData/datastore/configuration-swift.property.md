@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -22,10 +23,11 @@ var configuration: Self.Configuration { get }
 
 ## See Also
 
-- [associatedtype Configuration : DataStoreConfiguration](datastore/configuration-swift.associatedtype.md)
-- [protocol DataStoreConfiguration](datastoreconfiguration.md)
-- [var identifier: String](datastore/identifier.md)
-- [var schema: Schema](datastore/schema.md)
+### Accessing store information
+- [associatedtype Configuration : DataStoreConfiguration](./configuration-swift.associatedtype.md)
+- [protocol DataStoreConfiguration](../datastoreconfiguration.md)
+- [var identifier: String](./identifier.md)
+- [var schema: Schema](./schema.md)
 
 
 ---

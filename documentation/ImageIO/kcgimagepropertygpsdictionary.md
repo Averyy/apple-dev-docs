@@ -1,7 +1,8 @@
 # kCGImagePropertyGPSDictionary
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary of key-value pairs for an image that has Global Positioning System (GPS) information.
 
@@ -18,6 +19,10 @@ A dictionary of key-value pairs for an image that has Global Positioning System 
 
 ```swift
 let kCGImagePropertyGPSDictionary: CFString
+```
+
+```c
+extern CFStringRef const kCGImagePropertyGPSDictionary;
 ```
 
 

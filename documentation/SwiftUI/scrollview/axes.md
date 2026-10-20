@@ -1,7 +1,8 @@
 # axes
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scrollable axes of the scroll view.
 
@@ -23,13 +24,14 @@ var axes: Axis.Set { get set }
 
 #### Discussion
 
-The default value is [`Axis.vertical`](axis/vertical.md).
+The default value is [`Axis.vertical`](../axis/vertical.md).
 
 ## See Also
 
-- [var content: Content](scrollview/content.md)
+### Configuring a scroll view
+- [var content: Content](./content.md)
   The scroll view’s content.
-- [var showsIndicators: Bool](scrollview/showsindicators.md)
+- [var showsIndicators: Bool](./showsindicators.md)
   A value that indicates whether the scroll view displays the scrollable component of the content offset, in a way that’s suitable for the platform.
 
 

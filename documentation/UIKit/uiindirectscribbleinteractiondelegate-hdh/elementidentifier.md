@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A unique identifier for a control that isn’t a text field in a Scribble interaction.
@@ -10,7 +11,7 @@ A unique identifier for a control that isn’t a text field in a Scribble intera
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,10 @@ associatedtype ElementIdentifier : Hashable = String
 
 ## See Also
 
-- [class UIIndirectScribbleInteraction](uiindirectscribbleinteraction-1nfjm.md)
+### Custom views
+- [class UIIndirectScribbleInteraction](../uiindirectscribbleinteraction-1nfjm.md)
   An interaction for using Scribble to enter text by writing on a view that isn’t formally a text input.
-- [protocol UIIndirectScribbleInteractionDelegate](uiindirectscribbleinteractiondelegate-hdh.md)
+- [protocol UIIndirectScribbleInteractionDelegate](../uiindirectscribbleinteractiondelegate-hdh.md)
   Methods that customize behavior on views that aren’t formally text input views.
 
 

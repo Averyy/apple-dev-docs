@@ -2,20 +2,25 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 - watchOS 10.4+
 
 ## Declaration
 
 ```swift
 static var additionalTrailingReadableTypeIdentifiersForItemProvider: [String] { get }
+```
+
+```objc
+@property (class, nonatomic, copy, readonly) NSArray<NSString *> * additionalTrailingReadableTypeIdentifiersForItemProvider;
 ```
 
 

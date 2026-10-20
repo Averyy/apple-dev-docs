@@ -1,7 +1,8 @@
 # GCMouseInput
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A controller profile that tracks input from a mouse.
 
@@ -19,6 +20,10 @@ A controller profile that tracks input from a mouse.
 class GCMouseInput
 ```
 
+```objc
+@interface GCMouseInput : GCPhysicalInputProfile
+```
+
 #### Overview
 
 This profile supports a mouse with the following features:
@@ -29,67 +34,68 @@ This profile supports a mouse with the following features:
 - An optional middle button
 - An optional set of auxiliary buttons
 
-This profile provides only raw mouse movement delta values. For the cursor position at a specific time, use the [`UIHoverGestureRecognizer`](https://developer.apple.com/documentation/uikit/uihovergesturerecognizer) class and the `NSEvent` [`mouseLocation`](https://developer.apple.com/documentation/appkit/nsevent/mouselocation) method.
+This profile provides only raw mouse movement delta values. For the cursor position at a specific time, use the [`UIHoverGestureRecognizer`](../UIKit/uihovergesturerecognizer.md) class and the `NSEvent` [`mouseLocation`](../AppKit/nsevent/mouselocation.md) method.
 
 ## Topics
 
 ### Getting Change Information
-- [var mouseMovedHandler: GCMouseMoved?](gcmouseinput/mousemovedhandler.md)
+- [var mouseMovedHandler: GCMouseMoved?](./gcmouseinput/mousemovedhandler.md)
   The block that the profile calls when the mouse moves.
-- [typealias GCMouseMoved](gcmousemoved.md)
+- [typealias GCMouseMoved](./gcmousemoved.md)
   The signature for the block that the mouse input profile calls when the mouse moves.
 ### Accessing Buttons
-- [var leftButton: GCControllerButtonInput](gcmouseinput/leftbutton.md)
+- [var leftButton: GCControllerButtonInput](./gcmouseinput/leftbutton.md)
   The left button on the mouse.
-- [var rightButton: GCControllerButtonInput?](gcmouseinput/rightbutton.md)
+- [var rightButton: GCControllerButtonInput?](./gcmouseinput/rightbutton.md)
   The optional right button on the mouse.
-- [var middleButton: GCControllerButtonInput?](gcmouseinput/middlebutton.md)
+- [var middleButton: GCControllerButtonInput?](./gcmouseinput/middlebutton.md)
   The optional middle button on the mouse.
-- [var auxiliaryButtons: [GCControllerButtonInput]?](gcmouseinput/auxiliarybuttons.md)
+- [var auxiliaryButtons: [GCControllerButtonInput]?](./gcmouseinput/auxiliarybuttons.md)
   The optional additional buttons on the mouse.
 ### Scrolling
-- [var scroll: GCDeviceCursor](gcmouseinput/scroll.md)
+- [var scroll: GCDeviceCursor](./gcmouseinput/scroll.md)
   The location of the directional pad cursor with an undefined range.
 
 ## Relationships
 
 ### Inherits From
-- [GCPhysicalInputProfile](gcphysicalinputprofile.md)
+- [GCPhysicalInputProfile](./gcphysicalinputprofile.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var extendedGamepad: GCExtendedGamepad?](gccontroller/extendedgamepad.md)
+### Accessing controller profiles
+- [var extendedGamepad: GCExtendedGamepad?](./gccontroller/extendedgamepad.md)
   The extended gamepad profile.
-- [class GCPhysicalInputProfile](gcphysicalinputprofile.md)
+- [class GCPhysicalInputProfile](./gcphysicalinputprofile.md)
   The base class for controller profiles that support physical buttons, thumbsticks, and directional pads.
-- [class GCKeyboardInput](gckeyboardinput.md)
+- [class GCKeyboardInput](./gckeyboardinput.md)
   A controller profile that uses the keyboard as the input device.
-- [class GCExtendedGamepad](gcextendedgamepad.md)
+- [class GCExtendedGamepad](./gcextendedgamepad.md)
   A controller profile that supports the extended set of gamepad controls.
-- [class GCDualShockGamepad](gcdualshockgamepad.md)
+- [class GCDualShockGamepad](./gcdualshockgamepad.md)
   A controller profile that supports the DualShock 4 controller.
-- [class GCXboxGamepad](gcxboxgamepad.md)
+- [class GCXboxGamepad](./gcxboxgamepad.md)
   A controller profile that supports the Xbox controller.
-- [class GCDualSenseGamepad](gcdualsensegamepad.md)
+- [class GCDualSenseGamepad](./gcdualsensegamepad.md)
   A controller profile that supported the DualSense controller.
-- [var microGamepad: GCMicroGamepad?](gccontroller/microgamepad.md)
+- [var microGamepad: GCMicroGamepad?](./gccontroller/microgamepad.md)
   The micro gamepad profile.
-- [class GCMicroGamepad](gcmicrogamepad.md)
+- [class GCMicroGamepad](./gcmicrogamepad.md)
   A controller profile that supports the Siri Remote.
-- [class GCDirectionalGamepad](gcdirectionalgamepad.md)
+- [class GCDirectionalGamepad](./gcdirectionalgamepad.md)
   A profile that supports only the directional pad, without motion or rotation.
-- [var motion: GCMotion?](gccontroller/motion.md)
+- [var motion: GCMotion?](./gccontroller/motion.md)
   The motion input profile.
-- [var physicalInputProfile: GCPhysicalInputProfile](gccontroller/physicalinputprofile.md)
+- [var physicalInputProfile: GCPhysicalInputProfile](./gccontroller/physicalinputprofile.md)
   The physical input profile for the controller.
-- [var gamepad: GCGamepad?](gccontroller/gamepad.md)
+- [var gamepad: GCGamepad?](./gccontroller/gamepad.md)
   The gamepad profile.
 
 

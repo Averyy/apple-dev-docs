@@ -1,7 +1,8 @@
 # decodeAtomicRepresentation(_:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Recovers the logical atomic type `Self` by destroying some `AtomicRepresentation` storage instance returned from an atomic operation.
 

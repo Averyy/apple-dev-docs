@@ -1,7 +1,8 @@
 # suggestedCompletionTime
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A suggested time range to complete a task, measured in minutes.
 
@@ -16,6 +17,10 @@ A suggested time range to complete a task, measured in minutes.
 
 ```swift
 var suggestedCompletionTime: NSRange { get set }
+```
+
+```objc
+@property (nonatomic, assign, readwrite) NSRange suggestedCompletionTime;
 ```
 
 #### Discussion
@@ -36,13 +41,14 @@ takeHomeExam.suggestedAge = NSRange(0...Int.max - 1) // No suggestion provided.
 
 By default, new contexts use the extreme values to avoid indicating a suggested time range.
 
-> **Note**:  Because [`NSRange`](https://developer.apple.com/documentation/foundation/nsrange-c.struct) defines its upper bound as one more than the last value contained in the range, use `Int.max - 1` to indicate the unbounded case and prevent the upper bound from overflowing.
+> **Note**:  Because [`NSRange`](../../Foundation/nsrange-c.struct.md) defines its upper bound as one more than the last value contained in the range, use `Int.max - 1` to indicate the unbounded case and prevent the upper bound from overflowing.
 
 ## See Also
 
-- [var suggestedAge: NSRange](clscontext/suggestedage.md)
+### Characterizing the context
+- [var suggestedAge: NSRange](./suggestedage.md)
   The range of ages, measured in years, for which you deem a context’s content suitable.
-- [var isAssignable: Bool](clscontext/isassignable.md)
+- [var isAssignable: Bool](./isassignable.md)
   A Boolean that indicates whether teachers can assign the context as a task.
 
 

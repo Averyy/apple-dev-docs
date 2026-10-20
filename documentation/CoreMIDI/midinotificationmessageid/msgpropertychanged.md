@@ -1,18 +1,19 @@
 # MIDINotificationMessageID.msgPropertyChanged
 
 **Framework**: Core MIDI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An object’s property value changed.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,23 +21,28 @@ An object’s property value changed.
 case msgPropertyChanged
 ```
 
+```c
+kMIDIMsgPropertyChanged
+```
+
 #### Discussion
 
-This type’s data is [`MIDIObjectPropertyChangeNotification`](midiobjectpropertychangenotification.md).
+This type’s data is [`MIDIObjectPropertyChangeNotification`](../midiobjectpropertychangenotification.md).
 
 ## See Also
 
-- [MIDINotificationMessageID.msgSetupChanged](midinotificationmessageid/msgsetupchanged.md)
+### Change Types
+- [MIDINotificationMessageID.msgSetupChanged](./msgsetupchanged.md)
   Some aspect of the current MIDI setup changed.
-- [MIDINotificationMessageID.msgObjectAdded](midinotificationmessageid/msgobjectadded.md)
+- [MIDINotificationMessageID.msgObjectAdded](./msgobjectadded.md)
   The system added a device, entity, or endpoint.
-- [MIDINotificationMessageID.msgObjectRemoved](midinotificationmessageid/msgobjectremoved.md)
+- [MIDINotificationMessageID.msgObjectRemoved](./msgobjectremoved.md)
   The system removed a device, entity, or endpoint.
-- [MIDINotificationMessageID.msgThruConnectionsChanged](midinotificationmessageid/msgthruconnectionschanged.md)
+- [MIDINotificationMessageID.msgThruConnectionsChanged](./msgthruconnectionschanged.md)
   The system created or disposed of a persistent MIDI Thru connection.
-- [MIDINotificationMessageID.msgSerialPortOwnerChanged](midinotificationmessageid/msgserialportownerchanged.md)
+- [MIDINotificationMessageID.msgSerialPortOwnerChanged](./msgserialportownerchanged.md)
   The system changed a serial port owner.
-- [MIDINotificationMessageID.msgIOError](midinotificationmessageid/msgioerror.md)
+- [MIDINotificationMessageID.msgIOError](./msgioerror.md)
   A driver I/O error occurred.
 
 

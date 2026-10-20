@@ -1,7 +1,8 @@
 # documentType
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The document type.
 
@@ -22,15 +23,16 @@ static let documentType: NSAttributedString.DocumentAttributeKey
 
 #### Discussion
 
-The value of this attribute is one of the document types declared in [`NSAttributedString.DocumentType`](nsattributedstring/documenttype.md). For reader methods, this key in options can specify the document type for interpreting the contents. Upon return, the document attributes can contain this key for indicating the actual format used to read the contents. For write methods, this key specifies the format for generating the data.
+The value of this attribute is one of the document types declared in [`NSAttributedString.DocumentType`](../documenttype.md). For reader methods, this key in options can specify the document type for interpreting the contents. Upon return, the document attributes can contain this key for indicating the actual format used to read the contents. For write methods, this key specifies the format for generating the data.
 
 The string constant in macOS 10.3 and earlier is `@"DocumentType"`.
 
 ## See Also
 
-- [static let fileType: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/filetype.md)
+### Getting document type keys
+- [static let fileType: NSAttributedString.DocumentAttributeKey](./filetype.md)
   The document type for interpreting the document.
-- [static let textEncodingName: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/textencodingname.md)
+- [static let textEncodingName: NSAttributedString.DocumentAttributeKey](./textencodingname.md)
   The name of the text encoding to use.
 
 

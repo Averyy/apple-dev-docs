@@ -1,7 +1,8 @@
 # Get Equivalent Catalog Songs by ID
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch the equivalent, available content in the storefront for the provided songs’ identifiers.
 
@@ -10,13 +11,13 @@ Fetch the equivalent, available content in the storefront for the provided songs
 
 #### Discussion
 
-If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [`Handling Requests and Responses`](handling-requests-and-responses.md).
+If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/catalog/jp/songs?filter[equivalents]=1613600188
 ```
 
@@ -112,25 +113,41 @@ https://api.music.apple.com/v1/catalog/jp/songs?filter[equivalents]=1613600188
 
 ## Parameters
 
+### Path Parameters
+
+- `storefront` (string) *(required)*: An iTunes Store territory, specified by an ISO 3166 alpha-2 country code. The possible values are the `id` attributes of `Storefront` objects.
+
+### Query Parameters
+
 - `filter[equivalents]` ([string]) *(required)*: A filter to apply to the request. The maximum fetch limit is 300.
 - `include` ([string]): Additional relationships to include in the fetch.
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 - `restrict` ([string]): A set of restrictions (for example, to restrict explicit content).
+
+  **Allowed Values**: `explicit`
 - `extend` ([string]): A list of attribute extensions to apply to resources in the response.
+
+## Responses
+
+- `200` OK (`SongsResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
 
 ## See Also
 
-- [object Songs](songs.md)
+### Related Documentation
+- [object Songs](./songs.md)
   A resource object that represents a song.
-- [object SongsResponse](songsresponse.md)
+- [object SongsResponse](./songsresponse.md)
   The response to a songs request.
-- [Get a Catalog Song](get-a-catalog-song.md)
+### Requesting a Catalog Song
+- [Get a Catalog Song](./get-a-catalog-song.md)
   Fetch a song by using its identifier.
-- [Get a Catalog Song's Relationship Directly by Name](fetch-a-relationship-on-this-resource-by-name-56rq7.md)
+- [Get a Catalog Song's Relationship Directly by Name](./fetch-a-relationship-on-this-resource-by-name-56rq7.md)
   Fetch a song’s relationship by using its identifier.
-- [Get Multiple Catalog Songs by ID](get-multiple-catalog-songs-by-id.md)
+- [Get Multiple Catalog Songs by ID](./get-multiple-catalog-songs-by-id.md)
   Fetch one or more songs by using their identifiers.
-- [Get Multiple Catalog Songs by ISRC](get-multiple-catalog-songs-by-isrc.md)
+- [Get Multiple Catalog Songs by ISRC](./get-multiple-catalog-songs-by-isrc.md)
   Fetch one or more songs by using their International Standard Recording Code (ISRC) values.
 
 

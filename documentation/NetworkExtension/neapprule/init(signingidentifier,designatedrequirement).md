@@ -1,7 +1,8 @@
 # init(signingIdentifier:designatedRequirement:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an app rule that matches an app with a given signing identifier and a given designated requirement.
 
@@ -12,6 +13,10 @@ Create an app rule that matches an app with a given signing identifier and a giv
 
 ```swift
 init(signingIdentifier: String, designatedRequirement: String)
+```
+
+```objc
+- (instancetype) initWithSigningIdentifier:(NSString *) signingIdentifier designatedRequirement:(NSString *) designatedRequirement;
 ```
 
 #### Return Value
@@ -25,7 +30,8 @@ A newly-initialized `NEAppRule` object.
 
 ## See Also
 
-- [init(signingIdentifier: String)](neapprule/init(signingidentifier:).md)
+### Initializing an app rule
+- [init(signingIdentifier: String)](./init%28signingidentifier%29.md)
   Create an app rule that matches an app with a given signing identifier.
 
 

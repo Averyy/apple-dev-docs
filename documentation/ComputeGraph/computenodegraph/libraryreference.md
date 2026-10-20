@@ -1,7 +1,8 @@
 # ComputeNodeGraph.LibraryReference
 
 **Framework**: Compute Graph  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A Metal library and an optional bundle identifier that locates shader functions.
 
@@ -12,7 +13,7 @@ A Metal library and an optional bundle identifier that locates shader functions.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -27,30 +28,31 @@ Use `addLibrary(_:bundle:)` rather than constructing this type directly.
 ## Topics
 
 ### Initializers
-- [init(library: any MTLLibrary, bundle: String?)](computenodegraph/libraryreference/init(library:bundle:).md)
+- [init(library: any MTLLibrary, bundle: String?)](./libraryreference/init%28library,bundle%29.md)
 ### Instance Properties
-- [var bundle: String?](computenodegraph/libraryreference/bundle.md)
+- [var bundle: String?](./libraryreference/bundle.md)
   The bundle identifier used to scope shader function lookup, or `nil` if the library does not require one.
-- [var library: any MTLLibrary](computenodegraph/libraryreference/library.md)
+- [var library: any MTLLibrary](./libraryreference/library.md)
   The Metal library containing compiled shader functions.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ComputeNodeGraph](computenodegraph.md)
-- [ComputeNodeGraph.Assembly](computenodegraph/assembly.md)
+### Graph definition and assembly
+- [struct ComputeNodeGraph](../computenodegraph.md)
+- [ComputeNodeGraph.Assembly](./assembly.md)
   Fully assembled configuration of compute graph nodes.
-- [ComputeNodeGraph.Pipelines](computenodegraph/pipelines.md)
+- [ComputeNodeGraph.Pipelines](./pipelines.md)
   Fully-compiled shaders for a compute graph.
-- [ComputeNodeGraph.PipelinesDescriptor](computenodegraph/pipelinesdescriptor.md)
+- [ComputeNodeGraph.PipelinesDescriptor](./pipelinesdescriptor.md)
   Specifies the configuration used to compile a set of compute pipelines for a compute graph effect.
-- [ComputeNodeGraph.NodeDefinition](computenodegraph/nodedefinition.md)
-- [ComputeNodeGraph.Library](computenodegraph/library.md)
+- [ComputeNodeGraph.NodeDefinition](./nodedefinition.md)
+- [ComputeNodeGraph.Library](./library.md)
   A class defining a library of node definitions that can be added to a ComputeNodeGraph
 
 

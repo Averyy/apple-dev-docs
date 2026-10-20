@@ -1,7 +1,8 @@
 # CFStringIsHyphenationAvailableForLocale(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether hyphenation data is available.
 
@@ -20,13 +21,18 @@ Returns a Boolean value that indicates whether hyphenation data is available.
 func CFStringIsHyphenationAvailableForLocale(_ locale: CFLocale!) -> Bool
 ```
 
+```c
+extern Boolean CFStringIsHyphenationAvailableForLocale(CFLocaleRef locale);
+```
+
 ## Parameters
 
 - `locale`: A valid locale that specifies which language’s hyphenation conventions to use. Hyphenation data is not available for all locales.
 
 ## See Also
 
-- [func CFStringGetHyphenationLocationBeforeIndex(CFString!, CFIndex, CFRange, CFOptionFlags, CFLocale!, UnsafeMutablePointer<UTF32Char>!) -> CFIndex](cfstringgethyphenationlocationbeforeindex(_:_:_:_:_:_:).md)
+### Working With Hyphenation
+- [func CFStringGetHyphenationLocationBeforeIndex(CFString!, CFIndex, CFRange, CFOptionFlags, CFLocale!, UnsafeMutablePointer<UTF32Char>!) -> CFIndex](./cfstringgethyphenationlocationbeforeindex%28_,_,_,_,_,_%29.md)
   Retrieve the first potential hyphenation location found before the specified location.
 
 

@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.Credentials.none
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No credentials are available for the Wi-Fi network.
 

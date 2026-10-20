@@ -1,7 +1,8 @@
 # NSRegularExpression
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An immutable representation of a compiled regular expression that you apply to Unicode strings.
 
@@ -20,19 +21,23 @@ An immutable representation of a compiled regular expression that you apply to U
 class NSRegularExpression
 ```
 
+```objc
+@interface NSRegularExpression : NSObject
+```
+
 #### Overview
 
-The fundamental matching method for [`NSRegularExpression`](nsregularexpression.md) is a Block iterator method that allows clients to supply a Block object which will be invoked each time the regular expression matches a portion of the target string.  There are additional convenience methods for returning all the matches as an array, the total number of matches, the first match, and the range of the first match.
+The fundamental matching method for [`NSRegularExpression`](./nsregularexpression.md) is a Block iterator method that allows clients to supply a Block object which will be invoked each time the regular expression matches a portion of the target string.  There are additional convenience methods for returning all the matches as an array, the total number of matches, the first match, and the range of the first match.
 
-An individual match is represented by an instance of the [`NSTextCheckingResult`](nstextcheckingresult.md) class, which carries information about the overall matched range (via its [`range`](nstextcheckingresult/range.md) property), and the range of each individual capture group (via the [`range(at:)`](nstextcheckingresult/range(at:).md) method).  For basic [`NSRegularExpression`](nsregularexpression.md) objects, these match results will be of type [`regularExpression`](nstextcheckingresult/checkingtype/regularexpression.md), but subclasses may use other types.
+An individual match is represented by an instance of the [`NSTextCheckingResult`](./nstextcheckingresult.md) class, which carries information about the overall matched range (via its [`range`](./nstextcheckingresult/range.md) property), and the range of each individual capture group (via the [`range(at:)`](./nstextcheckingresult/range%28at%29.md) method).  For basic [`NSRegularExpression`](./nsregularexpression.md) objects, these match results will be of type [`regularExpression`](./nstextcheckingresult/checkingtype/regularexpression.md), but subclasses may use other types.
 
-> **Note**:  [`NSRegularExpression`](nsregularexpression.md) conforms to the International Components for Unicode ([`ICU`](https://developer.apple.comhttps://unicode-org.github.io/icu/)) specification for [`regular expressions`](https://developer.apple.comhttps://unicode-org.github.io/icu/userguide/strings/regexp.html).
+> **Note**:  [`NSRegularExpression`](./nsregularexpression.md) conforms to the International Components for Unicode ([ICU](https://unicode-org.github.io/icu/)) specification for [regular expressions](https://unicode-org.github.io/icu/userguide/strings/regexp.html).
 
-##### Examples Using Nsregularexpression
+##### Examples Using NSRegularExpression
 
 What follows are a set of graduated examples for using the `NSRegularExpression` class. All these examples use the regular expression `\\b(a|b)(c|d)\\b` as their regular expression.
 
-This snippet creates a regular expression to match two-letter words, in which the first letter is “a” or “b” and the second letter is “c” or “d”. Specifying [`caseInsensitive`](nsregularexpression/options-swift.struct/caseinsensitive.md) means that matches will be case-insensitive, so this will match “BC”, “aD”, and so forth, as well as their lower-case equivalents.
+This snippet creates a regular expression to match two-letter words, in which the first letter is “a” or “b” and the second letter is “c” or “d”. Specifying [`caseInsensitive`](./nsregularexpression/options-swift.struct/caseinsensitive.md) means that matches will be case-insensitive, so this will match “BC”, “aD”, and so forth, as well as their lower-case equivalents.
 
 **Swift**:
 
@@ -53,7 +58,7 @@ NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@
                                                                          error:&error];
 ```
 
-The [`numberOfMatches(in:options:range:)`](nsregularexpression/numberofmatches(in:options:range:).md) method provides a simple mechanism for counting the number of matches in a given range of a string.
+The [`numberOfMatches(in:options:range:)`](./nsregularexpression/numberofmatches%28in,options,range%29.md) method provides a simple mechanism for counting the number of matches in a given range of a string.
 
 **Swift**:
 
@@ -70,9 +75,9 @@ NSUInteger numberOfMatches = [regex numberOfMatchesInString:string
                                                       range:NSMakeRange(0, [string length])];
 ```
 
-If you are interested only in the overall range of the first match, the [`rangeOfFirstMatch(in:options:range:)`](nsregularexpression/rangeoffirstmatch(in:options:range:).md) method provides it for you.  Some regular expressions (though not the example pattern) can successfully match a zero-length range, so the comparison of the resulting range with `{NSNotFound, 0}` is the most reliable way to determine whether there was a match or not.
+If you are interested only in the overall range of the first match, the [`rangeOfFirstMatch(in:options:range:)`](./nsregularexpression/rangeoffirstmatch%28in,options,range%29.md) method provides it for you.  Some regular expressions (though not the example pattern) can successfully match a zero-length range, so the comparison of the resulting range with `{NSNotFound, 0}` is the most reliable way to determine whether there was a match or not.
 
-The example regular expression contains two capture groups, corresponding to the two sets of parentheses, one for the first letter, and one for the second.  If you are interested in more than just the overall matched range, you want to obtain an [`NSTextCheckingResult`](nstextcheckingresult.md) object corresponding to a given match.  This object provides information about the overall matched range, via its [`range`](nstextcheckingresult/range.md) property, and also supplies the capture group ranges, via the [`range(at:)`](nstextcheckingresult/range(at:).md) method.  The first capture group range is given by `[result rangeAtIndex:1]`, the second by `[result rangeAtIndex:2]`.  Sending a result the  [`range(at:)`](nstextcheckingresult/range(at:).md) message and passing `0` is equivalent to `[result range]`.
+The example regular expression contains two capture groups, corresponding to the two sets of parentheses, one for the first letter, and one for the second.  If you are interested in more than just the overall matched range, you want to obtain an [`NSTextCheckingResult`](./nstextcheckingresult.md) object corresponding to a given match.  This object provides information about the overall matched range, via its [`range`](./nstextcheckingresult/range.md) property, and also supplies the capture group ranges, via the [`range(at:)`](./nstextcheckingresult/range%28at%29.md) method.  The first capture group range is given by `[result rangeAtIndex:1]`, the second by `[result rangeAtIndex:2]`.  Sending a result the  [`range(at:)`](./nstextcheckingresult/range%28at%29.md) message and passing `0` is equivalent to `[result range]`.
 
 If the result returned is non-`nil`, then `[result range]` will always be a valid range, so it is not necessary to compare it against `{NSNotFound, 0}`.  However, for some regular expressions (though not the example pattern) some capture groups may or may not participate in a given match.  If a given capture group does not participate in a given match, then `[result rangeAtIndex:idx]` will return `{NSNotFound, 0}`.
 
@@ -94,7 +99,7 @@ if (!NSEqualRanges(rangeOfFirstMatch, NSMakeRange(NSNotFound, 0))) {
 }
 ```
 
-The [`matches(in:options:range:)`](nsregularexpression/matches(in:options:range:).md) returns all the matching results.
+The [`matches(in:options:range:)`](./nsregularexpression/matches%28in,options,range%29.md) returns all the matching results.
 
 **Swift**:
 
@@ -121,7 +126,7 @@ for (NSTextCheckingResult *match in matches) {
 }
 ```
 
-The [`firstMatch(in:options:range:)`](nsregularexpression/firstmatch(in:options:range:).md) method is similar to [`matches(in:options:range:)`](nsregularexpression/matches(in:options:range:).md) but it returns only the first match.
+The [`firstMatch(in:options:range:)`](./nsregularexpression/firstmatch%28in,options,range%29.md) method is similar to [`matches(in:options:range:)`](./nsregularexpression/matches%28in,options,range%29.md) but it returns only the first match.
 
 **Swift**:
 
@@ -147,9 +152,9 @@ if (match) {
  
 ```
 
-The Block enumeration method [`enumerateMatches(in:options:range:using:)`](nsregularexpression/enumeratematches(in:options:range:using:).md) is the most general and flexible of the matching methods of `NSRegularExpression`.  It allows you to iterate through matches in a string, performing arbitrary actions on each as specified by the code in the Block and to stop partway through if desired.  In the following example case, the iteration is stopped after a certain number of matches have been found.
+The Block enumeration method [`enumerateMatches(in:options:range:using:)`](./nsregularexpression/enumeratematches%28in,options,range,using%29.md) is the most general and flexible of the matching methods of `NSRegularExpression`.  It allows you to iterate through matches in a string, performing arbitrary actions on each as specified by the code in the Block and to stop partway through if desired.  In the following example case, the iteration is stopped after a certain number of matches have been found.
 
-If neither of the special options [`reportProgress`](nsregularexpression/matchingoptions/reportprogress.md) or [`reportCompletion`](nsregularexpression/matchingoptions/reportcompletion.md) is specified, then the result argument to the Block is guaranteed to be non-`nil`, and as mentioned before, it is guaranteed to have a valid overall range.  See [`NSRegularExpression.MatchingOptions`](nsregularexpression/matchingoptions.md) for the significance of [`reportProgress`](nsregularexpression/matchingoptions/reportprogress.md) or [`reportCompletion`](nsregularexpression/matchingoptions/reportcompletion.md).
+If neither of the special options [`reportProgress`](./nsregularexpression/matchingoptions/reportprogress.md) or [`reportCompletion`](./nsregularexpression/matchingoptions/reportcompletion.md) is specified, then the result argument to the Block is guaranteed to be non-`nil`, and as mentioned before, it is guaranteed to have a valid overall range.  See [`NSRegularExpression.MatchingOptions`](./nsregularexpression/matchingoptions.md) for the significance of [`reportProgress`](./nsregularexpression/matchingoptions/reportprogress.md) or [`reportCompletion`](./nsregularexpression/matchingoptions/reportcompletion.md).
 
 **Swift**:
 
@@ -204,7 +209,7 @@ NSString *modifiedString = [regex stringByReplacingMatchesInString:string
 
 ##### Regular Expression Syntax
 
-The following tables describe the character expressions used by the regular expression to match patterns within a string, the pattern operators that specify how many times a pattern is matched and additional matching restrictions, and the last table specifies flags that can be included in the regular expression pattern that specify search behavior over multiple lines (these flags can also be specified using the [`NSRegularExpression.Options`](nsregularexpression/options-swift.struct.md) option flags.
+The following tables describe the character expressions used by the regular expression to match patterns within a string, the pattern operators that specify how many times a pattern is matched and additional matching restrictions, and the last table specifies flags that can be included in the regular expression pattern that specify search behavior over multiple lines (these flags can also be specified using the [`NSRegularExpression.Options`](./nsregularexpression/options-swift.struct.md) option flags.
 
 ###### Regular Expression Metacharacters
 
@@ -214,7 +219,7 @@ Table 1: Character sequences used to match characters within a string.
 | --- | --- |
 | `\a` | Match a BELL, `\u0007` |
 | `\A` | Match at the beginning of the input. Differs from `^` in that `\A` will not match after a new line within the input. |
-| `\b, outside of a [Set]` | Match if the current position is a word boundary. Boundaries occur at the transitions between word (`\w`) and non-word (`\W`) characters, with combining marks ignored. For better word boundaries, see [`useUnicodeWordBoundaries`](nsregularexpression/options-swift.struct/useunicodewordboundaries.md). |
+| `\b, outside of a [Set]` | Match if the current position is a word boundary. Boundaries occur at the transitions between word (`\w`) and non-word (`\W`) characters, with combining marks ignored. For better word boundaries, see [`useUnicodeWordBoundaries`](./nsregularexpression/options-swift.struct/useunicodewordboundaries.md). |
 | `\b, within a [Set]` | Match a BACKSPACE, `\u0008`. |
 | `\B` | Match if the current position is not a word boundary. |
 | `\cX` | Match a `control-X` character |
@@ -245,9 +250,9 @@ Table 1: Character sequences used to match characters within a string.
 | `\`*n* | Back Reference. Match whatever the _n_th capturing group matched. *n* must be a number `≥ 1` and `≤` total number of capture groups in the pattern. |
 | `\0`*ooo* | Match an Octal character.  *ooo* is from one to three octal digits.  `0377` is the largest allowed Octal character.  The leading zero is required; it distinguishes Octal constants from back references. |
 | `[`*pattern*`]` | Match any one character from the pattern. |
-| `.` | Match any character. See [`dotMatchesLineSeparators`](nsregularexpression/options-swift.struct/dotmatcheslineseparators.md) and the `s` character expression in Table 4. |
-| `^` | Match at the beginning of a line. See [`anchorsMatchLines`](nsregularexpression/options-swift.struct/anchorsmatchlines.md) and the `\m` character expression in Table 4. |
-| `$` | Match at the end of a line. See [`anchorsMatchLines`](nsregularexpression/options-swift.struct/anchorsmatchlines.md) and the `m` character expression in Table 4. |
+| `.` | Match any character. See [`dotMatchesLineSeparators`](./nsregularexpression/options-swift.struct/dotmatcheslineseparators.md) and the `s` character expression in Table 4. |
+| `^` | Match at the beginning of a line. See [`anchorsMatchLines`](./nsregularexpression/options-swift.struct/anchorsmatchlines.md) and the `\m` character expression in Table 4. |
+| `$` | Match at the end of a line. See [`anchorsMatchLines`](./nsregularexpression/options-swift.struct/anchorsmatchlines.md) and the `m` character expression in Table 4. |
 | `\` | Quotes the following character. Characters that must be quoted to be treated as literals are `* ? + [ ( ) { } ^ $ |
 
 ###### Regular Expression Operators
@@ -283,8 +288,8 @@ Table 2: Regular expression operators.
 | `(?! ... )` | Negative look-ahead assertion. True if the parenthesized pattern does not match at the current input position. Does not advance the input position. |
 | `(?<= ... )` | Look-behind assertion. True if the parenthesized pattern matches text preceding the current input position, with the last character of the match being the input character just before the current position. Does not alter the input position. The length of possible strings matched by the look-behind pattern must not be unbounded (no * or + operators.) |
 | `(?<! ... )` | Negative Look-behind assertion. True if the parenthesized pattern does not match text preceding the current input position, with the last character of the match being the input character just before the current position. Does not alter the input position. The length of possible strings matched by the look-behind pattern must not be unbounded (no * or + operators.) |
-| `(?ismwx-ismwx:` `...` `)` | Flag settings. Evaluate the parenthesized expression with the specified flags enabled or -disabled. The flags are defined in [`Flag Options`](nsregularexpression#Flag-Options.md). |
-| `(?ismwx-ismwx)` | Flag settings. Change the flag settings. Changes apply to the portion of the pattern following the setting. For example, (?i) changes to a case insensitive match.The flags are defined in [`Flag Options`](nsregularexpression#Flag-Options.md). |
+| `(?ismwx-ismwx:` `...` `)` | Flag settings. Evaluate the parenthesized expression with the specified flags enabled or -disabled. The flags are defined in [Flag Options](./nsregularexpression.md#Flag-Options). |
+| `(?ismwx-ismwx)` | Flag settings. Change the flag settings. Changes apply to the portion of the pattern following the setting. For example, (?i) changes to a case insensitive match.The flags are defined in [Flag Options](./nsregularexpression.md#Flag-Options). |
 
 ###### Template Matching Format
 
@@ -301,7 +306,7 @@ The replacement string is treated as a template, with `$0` being replaced by the
 
 ###### Flag Options
 
-The following flags control various aspects of regular expression matching. These flag values may be specified within the pattern using the `(?ismx-ismx)` pattern options.  Equivalent behaviors can be specified for the entire pattern when an `NSRegularExpression` is initialized, using the [`NSRegularExpression.Options`](nsregularexpression/options-swift.struct.md) option flags.
+The following flags control various aspects of regular expression matching. These flag values may be specified within the pattern using the `(?ismx-ismx)` pattern options.  Equivalent behaviors can be specified for the entire pattern when an `NSRegularExpression` is initialized, using the [`NSRegularExpression.Options`](./nsregularexpression/options-swift.struct.md) option flags.
 
 Table 4: Regular expression matching flags.
 
@@ -315,9 +320,9 @@ Table 4: Regular expression matching flags.
 
 ##### Performance
 
-`NSRegularExpression` implements a nondeterministic finite automaton matching engine. As such, complex regular expression patterns containing multiple `*` or `+` operators may result in poor performance when attempting to perform matches — particularly failing to match a given input. For more information, see the [`“Performance Tips” section of the ICU User Guide`](https://developer.apple.comhttp://userguide.icu-project.org/strings/regexp#TOC-Performance-Tips).
+`NSRegularExpression` implements a nondeterministic finite automaton matching engine. As such, complex regular expression patterns containing multiple `*` or `+` operators may result in poor performance when attempting to perform matches — particularly failing to match a given input. For more information, see the [“Performance Tips” section of the ICU User Guide](http://userguide.icu-project.org/strings/regexp#TOC-Performance-Tips).
 
-##### Icu License
+##### ICU License
 
 Tables 1, 2, 3, and 4 are reproduced from the ICU User Guide, Copyright (c) 2000 - 2009 IBM and Others, which are licensed under the following terms:
 
@@ -336,77 +341,78 @@ All trademarks and registered trademarks mentioned herein are the property of th
 ## Topics
 
 ### Creating Regular Expressions
-- [init(pattern: String, options: NSRegularExpression.Options) throws](nsregularexpression/init(pattern:options:).md)
+- [init(pattern: String, options: NSRegularExpression.Options) throws](./nsregularexpression/init%28pattern,options%29.md)
   Returns an initialized NSRegularExpression instance with the specified regular expression pattern and options.
 ### Getting the Regular Expression and Options
-- [var pattern: String](nsregularexpression/pattern.md)
+- [var pattern: String](./nsregularexpression/pattern.md)
   Returns the regular expression pattern.
-- [var options: NSRegularExpression.Options](nsregularexpression/options-swift.property.md)
+- [var options: NSRegularExpression.Options](./nsregularexpression/options-swift.property.md)
   Returns the options used when the regular expression option was created.
-- [var numberOfCaptureGroups: Int](nsregularexpression/numberofcapturegroups.md)
+- [var numberOfCaptureGroups: Int](./nsregularexpression/numberofcapturegroups.md)
   Returns the number of capture groups in the regular expression.
 ### Searching Strings Using Regular Expressions
-- [func numberOfMatches(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange) -> Int](nsregularexpression/numberofmatches(in:options:range:).md)
+- [func numberOfMatches(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange) -> Int](./nsregularexpression/numberofmatches%28in,options,range%29.md)
   Returns the number of matches of the regular expression within the specified range of the string.
-- [func enumerateMatches(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange, using: (NSTextCheckingResult?, NSRegularExpression.MatchingFlags, UnsafeMutablePointer<ObjCBool>) -> Void)](nsregularexpression/enumeratematches(in:options:range:using:).md)
+- [func enumerateMatches(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange, using: (NSTextCheckingResult?, NSRegularExpression.MatchingFlags, UnsafeMutablePointer<ObjCBool>) -> Void)](./nsregularexpression/enumeratematches%28in,options,range,using%29.md)
   Enumerates the string allowing the Block to handle each regular expression match.
-- [func matches(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange) -> [NSTextCheckingResult]](nsregularexpression/matches(in:options:range:).md)
+- [func matches(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange) -> [NSTextCheckingResult]](./nsregularexpression/matches%28in,options,range%29.md)
   Returns an array containing all the matches of the regular expression in the string.
-- [func firstMatch(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange) -> NSTextCheckingResult?](nsregularexpression/firstmatch(in:options:range:).md)
+- [func firstMatch(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange) -> NSTextCheckingResult?](./nsregularexpression/firstmatch%28in,options,range%29.md)
   Returns the first match of the regular expression within the specified range of the string.
-- [func rangeOfFirstMatch(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange) -> NSRange](nsregularexpression/rangeoffirstmatch(in:options:range:).md)
+- [func rangeOfFirstMatch(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange) -> NSRange](./nsregularexpression/rangeoffirstmatch%28in,options,range%29.md)
   Returns the range of the first match of the regular expression within the specified range of the string.
 ### Replacing Strings Using Regular Expressions
-- [func replaceMatches(in: NSMutableString, options: NSRegularExpression.MatchingOptions, range: NSRange, withTemplate: String) -> Int](nsregularexpression/replacematches(in:options:range:withtemplate:).md)
+- [func replaceMatches(in: NSMutableString, options: NSRegularExpression.MatchingOptions, range: NSRange, withTemplate: String) -> Int](./nsregularexpression/replacematches%28in,options,range,withtemplate%29.md)
   Replaces regular expression matches within the mutable string using the template string.
-- [func stringByReplacingMatches(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange, withTemplate: String) -> String](nsregularexpression/stringbyreplacingmatches(in:options:range:withtemplate:).md)
+- [func stringByReplacingMatches(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange, withTemplate: String) -> String](./nsregularexpression/stringbyreplacingmatches%28in,options,range,withtemplate%29.md)
   Returns a new string containing matching regular expressions replaced with the template string.
 ### Escaping Characters in a String
-- [class func escapedTemplate(for: String) -> String](nsregularexpression/escapedtemplate(for:).md)
+- [class func escapedTemplate(for: String) -> String](./nsregularexpression/escapedtemplate%28for%29.md)
   Returns a template string by adding backslash escapes as necessary to protect any characters that would match as pattern metacharacters
-- [class func escapedPattern(for: String) -> String](nsregularexpression/escapedpattern(for:).md)
+- [class func escapedPattern(for: String) -> String](./nsregularexpression/escapedpattern%28for%29.md)
   Returns a string by adding backslash escapes as necessary to protect any characters that would match as pattern metacharacters.
 ### Custom Replace Functionality
-- [func replacementString(for: NSTextCheckingResult, in: String, offset: Int, template: String) -> String](nsregularexpression/replacementstring(for:in:offset:template:).md)
+- [func replacementString(for: NSTextCheckingResult, in: String, offset: Int, template: String) -> String](./nsregularexpression/replacementstring%28for,in,offset,template%29.md)
   Used to perform template substitution for a single result for clients implementing their own replace functionality.
 ### Constants
-- [NSRegularExpression.Options](nsregularexpression/options-swift.struct.md)
-  These constants define the regular expression options. These constants are used by the property [`options`](nsregularexpression/options-swift.property.md), [`regularExpressionWithPattern:options:error:`](nsregularexpression/regularexpressionwithpattern:options:error:.md), and [`init(pattern:options:)`](nsregularexpression/init(pattern:options:).md).
-- [NSRegularExpression.MatchingFlags](nsregularexpression/matchingflags.md)
-  Set by the Block as the matching progresses, completes, or fails. Used by the method [`enumerateMatches(in:options:range:using:)`](nsregularexpression/enumeratematches(in:options:range:using:).md).
-- [NSRegularExpression.MatchingOptions](nsregularexpression/matchingoptions.md)
+- [NSRegularExpression.Options](./nsregularexpression/options-swift.struct.md)
+  These constants define the regular expression options. These constants are used by the property [`options`](./nsregularexpression/options-swift.property.md), [`regularExpressionWithPattern:options:error:`](./nsregularexpression/regularexpressionwithpattern_options_error_.md), and [`init(pattern:options:)`](./nsregularexpression/init%28pattern,options%29.md).
+- [NSRegularExpression.MatchingFlags](./nsregularexpression/matchingflags.md)
+  Set by the Block as the matching progresses, completes, or fails. Used by the method [`enumerateMatches(in:options:range:using:)`](./nsregularexpression/enumeratematches%28in,options,range,using%29.md).
+- [NSRegularExpression.MatchingOptions](./nsregularexpression/matchingoptions.md)
   The matching options constants specify the reporting, completion and matching rules to the expression matching methods. These constants are used by all methods that search for, or replace values, using a regular expression.
 ### Initializers
-- [init?(coder: NSCoder)](nsregularexpression/init(coder:).md)
+- [init?(coder: NSCoder)](./nsregularexpression/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [NSDataDetector](nsdatadetector.md)
+- [NSDataDetector](./nsdatadetector.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class Scanner](scanner.md)
+### Pattern Matching
+- [class Scanner](./scanner.md)
   A string parser that scans for substrings or characters in a character set, and for numeric values from decimal, hexadecimal, and floating-point representations.
-- [class NSDataDetector](nsdatadetector.md)
+- [class NSDataDetector](./nsdatadetector.md)
   A specialized regular expression object that matches natural language text for predefined data patterns.
-- [class NSTextCheckingResult](nstextcheckingresult.md)
+- [class NSTextCheckingResult](./nstextcheckingresult.md)
   An occurrence of textual content found during the analysis of a block of text, such as when matching a regular expression.
-- [var NSNotFound: Int](nsnotfound-4qp9h.md)
+- [var NSNotFound: Int](./nsnotfound-4qp9h.md)
   A value indicating that a requested item couldn’t be found or doesn’t exist.
 
 

@@ -1,7 +1,8 @@
 # kCGImagePropertyMakerCanonAspectRatioInfo
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The image aspect ratio.
 
@@ -20,11 +21,16 @@ The image aspect ratio.
 let kCGImagePropertyMakerCanonAspectRatioInfo: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyMakerCanonAspectRatioInfo;
+```
+
 ## See Also
 
-- [let kCGImagePropertyMakerCanonFlashExposureComp: CFString](kcgimagepropertymakercanonflashexposurecomp.md)
+### Program Settings
+- [let kCGImagePropertyMakerCanonFlashExposureComp: CFString](./kcgimagepropertymakercanonflashexposurecomp.md)
   The flash exposure compensation setting.
-- [let kCGImagePropertyMakerCanonContinuousDrive: CFString](kcgimagepropertymakercanoncontinuousdrive.md)
+- [let kCGImagePropertyMakerCanonContinuousDrive: CFString](./kcgimagepropertymakercanoncontinuousdrive.md)
   The presence of a continuous drive.
 
 

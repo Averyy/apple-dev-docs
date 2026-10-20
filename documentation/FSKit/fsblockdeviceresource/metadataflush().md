@@ -1,7 +1,8 @@
 # metadataFlush()
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Synchronously flushes the resource’s buffer cache.
 
@@ -14,25 +15,30 @@ Synchronously flushes the resource’s buffer cache.
 func metadataFlush() throws
 ```
 
+```objc
+- (BOOL) metadataFlushWithError:(NSError **) error;
+```
+
 #### Discussion
 
-This method flushes data previously written with [`delayedMetadataWriteFrom:startingAt:length:error:`](fsblockdeviceresource/delayedmetadatawritefrom:startingat:length:error:.md) to the resource.
+This method flushes data previously written with [`delayedMetadataWriteFrom:startingAt:length:error:`](./delayedmetadatawritefrom_startingat_length_error_.md) to the resource.
 
 ## See Also
 
-- [func metadataRead(into: UnsafeMutableRawBufferPointer, startingAt: off_t, length: Int) throws](fsblockdeviceresource/metadataread(into:startingat:length:).md)
+### Reading and writing data with kernel buffer cache
+- [func metadataRead(into: UnsafeMutableRawBufferPointer, startingAt: off_t, length: Int) throws](./metadataread%28into,startingat,length%29.md)
   Synchronously reads file system metadata from the resource into a buffer.
-- [func metadataWrite(from: UnsafeRawBufferPointer, startingAt: off_t, length: Int) throws](fsblockdeviceresource/metadatawrite(from:startingat:length:).md)
+- [func metadataWrite(from: UnsafeRawBufferPointer, startingAt: off_t, length: Int) throws](./metadatawrite%28from,startingat,length%29.md)
   Synchronously writes file system metadata from a buffer to the resource.
-- [func delayedMetadataWrite(from: UnsafeRawBufferPointer, startingAt: off_t, length: Int) throws](fsblockdeviceresource/delayedmetadatawrite(from:startingat:length:).md)
+- [func delayedMetadataWrite(from: UnsafeRawBufferPointer, startingAt: off_t, length: Int) throws](./delayedmetadatawrite%28from,startingat,length%29.md)
   Writes file system metadata from a buffer to a cache, prior to flushing it to the resource.
-- [func asynchronousMetadataFlush() throws](fsblockdeviceresource/asynchronousmetadataflush.md)
+- [func asynchronousMetadataFlush() throws](./asynchronousmetadataflush%28%29.md)
   Asynchronously flushes the resource’s buffer cache.
-- [func metadataClear([FSMetadataRange], withDelayedWrites: Bool) throws](fsblockdeviceresource/metadataclear(_:withdelayedwrites:).md)
+- [func metadataClear([FSMetadataRange], withDelayedWrites: Bool) throws](./metadataclear%28_,withdelayedwrites%29.md)
   Clears the given ranges within the buffer cache.
-- [func metadataPurge([FSMetadataRange]) throws](fsblockdeviceresource/metadatapurge(_:).md)
+- [func metadataPurge([FSMetadataRange]) throws](./metadatapurge%28_%29.md)
   Synchronously purges the given ranges from the buffer cache.
-- [class FSMetadataRange](fsmetadatarange.md)
+- [class FSMetadataRange](../fsmetadatarange.md)
   A range that describes contiguous metadata segments on disk.
 
 

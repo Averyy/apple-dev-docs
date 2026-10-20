@@ -1,7 +1,8 @@
 # updateValue(_:forKey:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the value stored in the dictionary for the given key, or adds a new key-value pair if the key does not exist.
 
@@ -20,6 +21,8 @@ Updates the value stored in the dictionary for the given key, or adds a new key-
 @discardableResult
 mutating func updateValue(_ value: Value, forKey key: Key) -> Value?
 ```
+
+Available when `Key` conforms to `Hashable`.
 
 #### Return Value
 
@@ -56,7 +59,8 @@ if let oldValue = hues.updateValue(330, forKey: "Cerise") {
 
 ## See Also
 
-- [func reserveCapacity(Int)](dictionary/reservecapacity(_:).md)
+### Adding Keys and Values
+- [func reserveCapacity(Int)](./reservecapacity%28_%29.md)
   Reserves enough space to store the specified number of key-value pairs.
 
 

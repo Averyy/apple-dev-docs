@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct vfs_fsentry {
     ...
 };
@@ -17,13 +17,13 @@ struct vfs_fsentry {
 ## Topics
 
 ### Instance Properties
-- [vfe_flags](vfs_fsentry/1523144-vfe_flags.md)
-- [vfe_fsname](vfs_fsentry/1523249-vfe_fsname.md)
-- [vfe_fstypenum](vfs_fsentry/1523366-vfe_fstypenum.md)
-- [vfe_opvdescs](vfs_fsentry/1523321-vfe_opvdescs.md)
-- [vfe_reserv](vfs_fsentry/1523529-vfe_reserv.md)
-- [vfe_vfsops](vfs_fsentry/1523535-vfe_vfsops.md)
-- [vfe_vopcnt](vfs_fsentry/1523388-vfe_vopcnt.md)
+- [vfe_flags](./vfs_fsentry/api-1523144-vfe_flags.md)
+- [vfe_fsname](./vfs_fsentry/api-1523249-vfe_fsname.md)
+- [vfe_fstypenum](./vfs_fsentry/api-1523366-vfe_fstypenum.md)
+- [vfe_opvdescs](./vfs_fsentry/api-1523321-vfe_opvdescs.md)
+- [vfe_reserv](./vfs_fsentry/api-1523529-vfe_reserv.md)
+- [vfe_vfsops](./vfs_fsentry/api-1523535-vfe_vfsops.md)
+- [vfe_vopcnt](./vfs_fsentry/api-1523388-vfe_vopcnt.md)
 
 
 ---

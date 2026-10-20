@@ -1,7 +1,8 @@
 # Framer
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An instance of a Framer protocol to load into a protocol stack.
 
@@ -23,24 +24,24 @@ struct Framer<T> where T : FramerProtocol
 ## Topics
 
 ### Initializers
-- [init<BelowProtocol>(() -> BelowProtocol)](framer/init(_:)-4jsj5.md)
+- [init<BelowProtocol>(() -> BelowProtocol)](./framer/init%28_%29-4jsj5.md)
   Create a Framer protocol for use in a protocol stack.
-- [init<BelowProtocol>(() -> BelowProtocol)](framer/init(_:)-7946z.md)
+- [init<BelowProtocol>(() -> BelowProtocol)](./framer/init%28_%29-7946z.md)
   Create a Framer protocol for use in a protocol stack.
-- [init<BelowProtocol>(using: T.Type, () -> BelowProtocol)](framer/init(using:_:)-16qam.md)
+- [init<BelowProtocol>(using: T.Type, () -> BelowProtocol)](./framer/init%28using,_%29-16qam.md)
   Create a Framer protocol for use in a protocol stack.
-- [init<BelowProtocol>(using: T.Type, () -> BelowProtocol)](framer/init(using:_:)-94t7p.md)
+- [init<BelowProtocol>(using: T.Type, () -> BelowProtocol)](./framer/init%28using,_%29-94t7p.md)
   Create a Framer protocol for use in a protocol stack.
 ### Instance Properties
-- [var options: NWProtocolFramer.Options](framer/options.md)
+- [var options: NWProtocolFramer.Options](./framer/options.md)
   The framer options to use with this framer.
 
 ## Relationships
 
 ### Conforms To
-- [MessageProtocol](messageprotocol.md)
-- [NetworkProtocolOptions](networkprotocoloptions.md)
-- [OneToOneProtocol](onetooneprotocol.md)
+- [MessageProtocol](./messageprotocol.md)
+- [NetworkProtocolOptions](./networkprotocoloptions.md)
+- [OneToOneProtocol](./onetooneprotocol.md)
 
 
 ---

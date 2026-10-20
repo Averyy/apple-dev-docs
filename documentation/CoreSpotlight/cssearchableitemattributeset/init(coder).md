@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: Core Spotlight  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 9.0+
@@ -18,7 +19,8 @@ init?(coder: NSCoder)
 
 ## See Also
 
-- [init(contentType: UTType)](cssearchableitemattributeset/init(contenttype:).md)
+### Creating an attribute set
+- [init(contentType: UTType)](./init%28contenttype%29.md)
   Creates an attribute set for the specified content type.
 
 

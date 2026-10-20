@@ -1,7 +1,8 @@
 # session
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that validates the identity of a merchant for the payment request.
 
@@ -19,11 +20,16 @@ An object that validates the identity of a merchant for the payment request.
 var session: PKPaymentMerchantSession? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) PKPaymentMerchantSession * session;
+```
+
 ## See Also
 
-- [var status: PKPaymentAuthorizationStatus](pkpaymentrequestmerchantsessionupdate/status.md)
+### Getting information for the merchant session update
+- [var status: PKPaymentAuthorizationStatus](./status.md)
   The current authorization status for the payment.
-- [class PKPaymentMerchantSession](pkpaymentmerchantsession.md)
+- [class PKPaymentMerchantSession](../pkpaymentmerchantsession.md)
   An object that validates the identity of a merchant for a payment request.
 
 

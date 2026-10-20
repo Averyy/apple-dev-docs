@@ -1,26 +1,28 @@
 # kIOUSB30HubExtStatusRxSublinkSpeedIDPhase
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30HubExtStatusRxSublinkSpeedIDPhase
 ```
 
 ## See Also
 
-- [kIOUSB30HubExtStatusRxSublinkSpeedID](tiousb30hubextstatus/kiousb30hubextstatusrxsublinkspeedid.md)
-- [kIOUSB30HubExtStatusTxSublinkSpeedID](tiousb30hubextstatus/kiousb30hubextstatustxsublinkspeedid.md)
-- [kIOUSB30HubExtStatusTxSublinkSpeedIDPhase](tiousb30hubextstatus/kiousb30hubextstatustxsublinkspeedidphase.md)
-- [kIOUSB30HubExtStatusRxLaneCount](tiousb30hubextstatus/kiousb30hubextstatusrxlanecount.md)
-- [kIOUSB30HubExtStatusRxLaneCountPhase](tiousb30hubextstatus/kiousb30hubextstatusrxlanecountphase.md)
-- [kIOUSB30HubExtStatusTxLaneCount](tiousb30hubextstatus/kiousb30hubextstatustxlanecount.md)
-- [kIOUSB30HubExtStatusTxLaneCountPhase](tiousb30hubextstatus/kiousb30hubextstatustxlanecountphase.md)
+### Getting the Extended Status Codes
+- [kIOUSB30HubExtStatusRxSublinkSpeedID](./kiousb30hubextstatusrxsublinkspeedid.md)
+- [kIOUSB30HubExtStatusTxSublinkSpeedID](./kiousb30hubextstatustxsublinkspeedid.md)
+- [kIOUSB30HubExtStatusTxSublinkSpeedIDPhase](./kiousb30hubextstatustxsublinkspeedidphase.md)
+- [kIOUSB30HubExtStatusRxLaneCount](./kiousb30hubextstatusrxlanecount.md)
+- [kIOUSB30HubExtStatusRxLaneCountPhase](./kiousb30hubextstatusrxlanecountphase.md)
+- [kIOUSB30HubExtStatusTxLaneCount](./kiousb30hubextstatustxlanecount.md)
+- [kIOUSB30HubExtStatusTxLaneCountPhase](./kiousb30hubextstatustxlanecountphase.md)
 
 
 ---

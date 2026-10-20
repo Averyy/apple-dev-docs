@@ -1,7 +1,8 @@
 # CSIdentityGetImageDataType(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentityGetImageDataType(_ identity: CSIdentity!) -> Unmanaged<CFString>!
+```
+
+```c
+CFStringRef CSIdentityGetImageDataType(CSIdentityRef identity);
 ```
 
 

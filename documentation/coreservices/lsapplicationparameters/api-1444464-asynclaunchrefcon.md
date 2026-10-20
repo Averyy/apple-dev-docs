@@ -1,7 +1,8 @@
 # asyncLaunchRefCon
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The client `refCon` thatis to appear in subsequent launch notifications.
 
@@ -12,6 +13,10 @@ The client `refCon` thatis to appear in subsequent launch notifications.
 
 ```swift
 var asyncLaunchRefCon: UnsafeMutableRawPointer!
+```
+
+```c
+void *asyncLaunchRefCon;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: AVKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The segment containing the current playback position.

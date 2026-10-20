@@ -1,7 +1,8 @@
 # CarKeyErrorCode
 
 **Framework**: CarKey  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The errors that can occur when you perform remote-keyless entry operations on a vehicle.
 
@@ -21,41 +22,41 @@ enum CarKeyErrorCode
 ## Topics
 
 ### Getting the Error Code
-- [CarKeyErrorCode.AnotherRequestInProgress](carkeyerrorcode/anotherrequestinprogress.md)
+- [CarKeyErrorCode.AnotherRequestInProgress](./carkeyerrorcode/anotherrequestinprogress.md)
   An error that indicates a previous request is still in progress.
-- [CarKeyErrorCode.ClientInBackground](carkeyerrorcode/clientinbackground.md)
+- [CarKeyErrorCode.ClientInBackground](./carkeyerrorcode/clientinbackground.md)
   An error that indicates the operation occurred when the app was in the background.
-- [CarKeyErrorCode.EnduringRequestUsingEventMethod](carkeyerrorcode/enduringrequestusingeventmethod.md)
+- [CarKeyErrorCode.EnduringRequestUsingEventMethod](./carkeyerrorcode/enduringrequestusingeventmethod.md)
   An error that indicates a mismatch between the initial request type and the results.
-- [CarKeyErrorCode.FeatureNotSupported](carkeyerrorcode/featurenotsupported.md)
+- [CarKeyErrorCode.FeatureNotSupported](./carkeyerrorcode/featurenotsupported.md)
   An error that indicates the specified feature isn’t supported in the current environment.
-- [CarKeyErrorCode.FunctionUnknown](carkeyerrorcode/functionunknown.md)
+- [CarKeyErrorCode.FunctionUnknown](./carkeyerrorcode/functionunknown.md)
   An error that indicates the vehicle didn’t recognize the specified function identifier.
-- [CarKeyErrorCode.Internal](carkeyerrorcode/internal.md)
+- [CarKeyErrorCode.Internal](./carkeyerrorcode/internal.md)
   An error that indicates an unknown error occurred.
-- [CarKeyErrorCode.MessageTooLong](carkeyerrorcode/messagetoolong.md)
+- [CarKeyErrorCode.MessageTooLong](./carkeyerrorcode/messagetoolong.md)
   An error that indicates the command you sent was too long.
-- [CarKeyErrorCode.RequestNotInProgress](carkeyerrorcode/requestnotinprogress.md)
+- [CarKeyErrorCode.RequestNotInProgress](./carkeyerrorcode/requestnotinprogress.md)
   An error that indicates an enduring operation wasn’t running.
-- [CarKeyErrorCode.RequestTimedOut](carkeyerrorcode/requesttimedout.md)
+- [CarKeyErrorCode.RequestTimedOut](./carkeyerrorcode/requesttimedout.md)
   An error that indicates the request didn’t complete in time.
-- [CarKeyErrorCode.SecurityViolation](carkeyerrorcode/securityviolation.md)
+- [CarKeyErrorCode.SecurityViolation](./carkeyerrorcode/securityviolation.md)
   An error that indicates your app doesn’t have the required entitlements.
-- [CarKeyErrorCode.SessionNotActive](carkeyerrorcode/sessionnotactive.md)
+- [CarKeyErrorCode.SessionNotActive](./carkeyerrorcode/sessionnotactive.md)
   An error that indicates an active session is currently inactive.
-- [CarKeyErrorCode.VehicleNotConnected](carkeyerrorcode/vehiclenotconnected.md)
+- [CarKeyErrorCode.VehicleNotConnected](./carkeyerrorcode/vehiclenotconnected.md)
   An error that indicates the vehicle isn’t available to respond to the request.
-- [CarKeyErrorCode.VehicleNotFound](carkeyerrorcode/vehiclenotfound.md)
+- [CarKeyErrorCode.VehicleNotFound](./carkeyerrorcode/vehiclenotfound.md)
   An error that indicates a vehicle with the specified ID wasn’t found.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

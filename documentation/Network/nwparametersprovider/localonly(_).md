@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Limit inbound connections to peers attached to the local link.
@@ -28,6 +29,12 @@ Listeners will only advertise services on the local link and will only accept co
 ## Parameters
 
 - `local`: True if limited to local peers, false otherwise.
+
+## Default Implementations
+
+### NWParametersProvider Implementations
+- [func localOnly(Bool) -> Self](./localonly%28_%29-8osdn.md)
+  Limit inbound connections to peers attached to the local link.
 
 
 ---

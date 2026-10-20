@@ -1,7 +1,8 @@
 # init(device:conversion:functionName:sourceRange:options:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, conversion: CGColorConversionInfo?, functionName name: String, sourceRange: UnsafePointer<MPSFunctions_AABB>?, options: MPSFColorConversionOptions = []) throws
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device conversion:(CGColorConversionInfoRef) conversion functionName:(NSString *) name sourceRange:(const MPSFunctions_AABB *) sourceRange options:(MPSFColorConversionOptions) options error:(NSError **) error;
 ```
 
 #### Return Value

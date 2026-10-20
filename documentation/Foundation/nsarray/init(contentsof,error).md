@@ -1,7 +1,8 @@
 # init(contentsOf:error:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -16,6 +17,10 @@
 
 ```swift
 convenience init(contentsOf url: URL, error: ()) throws
+```
+
+```objc
+- (NSArray<id> *) initWithContentsOfURL:(NSURL *) url error:(NSError **) error;
 ```
 
 

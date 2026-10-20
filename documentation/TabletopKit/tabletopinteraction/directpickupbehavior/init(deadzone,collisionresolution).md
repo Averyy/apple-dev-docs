@@ -1,7 +1,8 @@
 # init(deadZone:collisionResolution:)
 
 **Framework**: TabletopKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - visionOS 26.0+
@@ -14,7 +15,8 @@ init(deadZone: TabletopInteraction.DeadZone, collisionResolution: TabletopIntera
 
 ## See Also
 
-- [TabletopInteraction.DirectPickupBehavior.CollisionResolutionBehavior](tabletopinteraction/directpickupbehavior/collisionresolutionbehavior.md)
+### Creating a pickup behavior
+- [TabletopInteraction.DirectPickupBehavior.CollisionResolutionBehavior](./collisionresolutionbehavior.md)
   An object that represent the behavior that the object should have when colliding with the collision targets during the pickup phase.
 
 

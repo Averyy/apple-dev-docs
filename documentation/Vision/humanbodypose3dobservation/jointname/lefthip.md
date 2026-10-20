@@ -1,7 +1,8 @@
 # HumanBodyPose3DObservation.JointName.leftHip
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -19,21 +20,22 @@ case leftHip
 
 ## See Also
 
-- [HumanBodyPose3DObservation.JointName.centerHead](humanbodypose3dobservation/jointname/centerhead.md)
-- [HumanBodyPose3DObservation.JointName.centerShoulder](humanbodypose3dobservation/jointname/centershoulder.md)
-- [HumanBodyPose3DObservation.JointName.leftAnkle](humanbodypose3dobservation/jointname/leftankle.md)
-- [HumanBodyPose3DObservation.JointName.leftElbow](humanbodypose3dobservation/jointname/leftelbow.md)
-- [HumanBodyPose3DObservation.JointName.leftKnee](humanbodypose3dobservation/jointname/leftknee.md)
-- [HumanBodyPose3DObservation.JointName.leftShoulder](humanbodypose3dobservation/jointname/leftshoulder.md)
-- [HumanBodyPose3DObservation.JointName.leftWrist](humanbodypose3dobservation/jointname/leftwrist.md)
-- [HumanBodyPose3DObservation.JointName.rightAnkle](humanbodypose3dobservation/jointname/rightankle.md)
-- [HumanBodyPose3DObservation.JointName.rightElbow](humanbodypose3dobservation/jointname/rightelbow.md)
-- [HumanBodyPose3DObservation.JointName.rightHip](humanbodypose3dobservation/jointname/righthip.md)
-- [HumanBodyPose3DObservation.JointName.rightKnee](humanbodypose3dobservation/jointname/rightknee.md)
-- [HumanBodyPose3DObservation.JointName.rightShoulder](humanbodypose3dobservation/jointname/rightshoulder.md)
-- [HumanBodyPose3DObservation.JointName.rightWrist](humanbodypose3dobservation/jointname/rightwrist.md)
-- [HumanBodyPose3DObservation.JointName.root](humanbodypose3dobservation/jointname/root.md)
-- [HumanBodyPose3DObservation.JointName.spine](humanbodypose3dobservation/jointname/spine.md)
+### Getting the joint names
+- [HumanBodyPose3DObservation.JointName.centerHead](./centerhead.md)
+- [HumanBodyPose3DObservation.JointName.centerShoulder](./centershoulder.md)
+- [HumanBodyPose3DObservation.JointName.leftAnkle](./leftankle.md)
+- [HumanBodyPose3DObservation.JointName.leftElbow](./leftelbow.md)
+- [HumanBodyPose3DObservation.JointName.leftKnee](./leftknee.md)
+- [HumanBodyPose3DObservation.JointName.leftShoulder](./leftshoulder.md)
+- [HumanBodyPose3DObservation.JointName.leftWrist](./leftwrist.md)
+- [HumanBodyPose3DObservation.JointName.rightAnkle](./rightankle.md)
+- [HumanBodyPose3DObservation.JointName.rightElbow](./rightelbow.md)
+- [HumanBodyPose3DObservation.JointName.rightHip](./righthip.md)
+- [HumanBodyPose3DObservation.JointName.rightKnee](./rightknee.md)
+- [HumanBodyPose3DObservation.JointName.rightShoulder](./rightshoulder.md)
+- [HumanBodyPose3DObservation.JointName.rightWrist](./rightwrist.md)
+- [HumanBodyPose3DObservation.JointName.root](./root.md)
+- [HumanBodyPose3DObservation.JointName.spine](./spine.md)
 
 
 ---

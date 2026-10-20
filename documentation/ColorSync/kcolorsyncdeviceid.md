@@ -1,7 +1,8 @@
 # kColorSyncDeviceID
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is the `CFUUIDRef` identifying the device.
 
@@ -15,19 +16,24 @@ A key whose value is the `CFUUIDRef` identifying the device.
 var kColorSyncDeviceID: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncDeviceID;
+```
+
 ## See Also
 
-- [var kColorSyncDeviceDescription: Unmanaged<CFString>!](kcolorsyncdevicedescription.md)
+### Describing devices
+- [var kColorSyncDeviceDescription: Unmanaged<CFString>!](./kcolorsyncdevicedescription.md)
   A key whose value is the device’s localized name in the current locale.
-- [var kColorSyncDeviceDescriptions: Unmanaged<CFString>!](kcolorsyncdevicedescriptions.md)
+- [var kColorSyncDeviceDescriptions: Unmanaged<CFString>!](./kcolorsyncdevicedescriptions.md)
   A key whose value is a `CFDictionary` of the device’s localized names.
-- [var kColorSyncDeviceModeDescription: Unmanaged<CFString>!](kcolorsyncdevicemodedescription.md)
+- [var kColorSyncDeviceModeDescription: Unmanaged<CFString>!](./kcolorsyncdevicemodedescription.md)
   A key whose value is the device mode’s localized name in the current locale.
-- [var kColorSyncDeviceModeDescriptions: Unmanaged<CFString>!](kcolorsyncdevicemodedescriptions.md)
+- [var kColorSyncDeviceModeDescriptions: Unmanaged<CFString>!](./kcolorsyncdevicemodedescriptions.md)
   A key whose value is a `CFDictionary` of the device mode’s localized names.
-- [var kColorSyncDeviceHostScope: Unmanaged<CFString>!](kcolorsyncdevicehostscope.md)
+- [var kColorSyncDeviceHostScope: Unmanaged<CFString>!](./kcolorsyncdevicehostscope.md)
   A key specifying the host preference scope of a device; currently only `kCFPreferencesCurrentHost` is supported.
-- [var kColorSyncDeviceUserScope: Unmanaged<CFString>!](kcolorsyncdeviceuserscope.md)
+- [var kColorSyncDeviceUserScope: Unmanaged<CFString>!](./kcolorsyncdeviceuserscope.md)
   A key specifying the user preference scope of a device; one of `kCFPreferencesCurrentUser` or `kCFPreferencesAnyUser`.
 
 

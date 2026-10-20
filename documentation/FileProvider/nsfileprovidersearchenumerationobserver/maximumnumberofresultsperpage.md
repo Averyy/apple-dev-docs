@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The maximum number of results to return in a single page enumeration.
@@ -13,6 +14,10 @@ The maximum number of results to return in a single page enumeration.
 
 ```swift
 var maximumNumberOfResultsPerPage: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSInteger maximumNumberOfResultsPerPage;
 ```
 
 #### Discussion

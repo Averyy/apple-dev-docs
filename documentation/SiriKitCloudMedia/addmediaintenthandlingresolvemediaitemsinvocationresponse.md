@@ -1,7 +1,8 @@
 # AddMediaIntentHandlingResolveMediaItemsInvocationResponse
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Your service’s response to a request to resolve media items in an update media affinity intent.
 
@@ -10,14 +11,14 @@ Your service’s response to a request to resolve media items in an update media
 
 ## Declaration
 
-```swift
+```
 object AddMediaIntentHandlingResolveMediaItemsInvocationResponse
 ```
 
 ## Topics
 
 ### Providing the Result
-- [object AddMediaIntentHandlingResolveMediaItemsInvocationResponse.Result](addmediaintenthandlingresolvemediaitemsinvocationresponse/result-data.dictionary.md)
+- [object AddMediaIntentHandlingResolveMediaItemsInvocationResponse.Result](./addmediaintenthandlingresolvemediaitemsinvocationresponse/result-data.dictionary.md)
   The result of attempting to identify the media items to add to the user’s library or to a playlist.
 
 ## Properties
@@ -25,14 +26,17 @@ object AddMediaIntentHandlingResolveMediaItemsInvocationResponse
 - `result` (AddMediaIntentHandlingResolveMediaItemsInvocationResponse.Result) *(required)*: The results of processing the intent.
 - `method` (string) *(required)*: The action your service takes to process this intent.
 
+  **Allowed Values**: `AddMediaIntentHandling.resolveMediaItems`
+
 ## Relationships
 
 ### Inherits From
-- [InvocationResponse](invocationresponse.md)
+- [InvocationResponse](./invocationresponse.md)
 
 ## See Also
 
-- [object AddMediaMediaItemResolutionResult](addmediamediaitemresolutionresult.md)
+### Identifying a Media Item
+- [object AddMediaMediaItemResolutionResult](./addmediamediaitemresolutionresult.md)
   A media item that matches an add media intent, or information about why your service can’t provide a media item.
 
 

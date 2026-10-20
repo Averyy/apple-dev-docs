@@ -1,18 +1,19 @@
 # AVMetricPlaybackMode.local
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that playback is local.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ Indicates that playback is local.
 case local
 ```
 
+```c
+AVMetricPlaybackModeLocal
+```
+
 ## See Also
 
-- [AVMetricPlaybackMode.airPlayVideo](avmetricplaybackmode/airplayvideo.md)
+### Playback modes
+- [AVMetricPlaybackMode.airPlayVideo](./airplayvideo.md)
   Indicates that playback is via AirPlay Video.
 
 

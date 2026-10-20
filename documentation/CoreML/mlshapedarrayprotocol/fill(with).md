@@ -1,7 +1,8 @@
 # fill(with:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fills the array with a value.
 
@@ -20,13 +21,20 @@ Fills the array with a value.
 mutating func fill(with value: Self.Scalar)
 ```
 
+**Other overloads**:
+
+```swift
+mutating func fill<C>(with collection: C) where C : Collection, Self.Scalar == C.Element
+```
+
 ## Parameters
 
 - `value`: The filling value
 
 ## See Also
 
-- [func withUnsafeMutableShapedBufferPointer<R>((inout UnsafeMutableBufferPointer<Self.Scalar>, [Int], [Int]) throws -> R) rethrows -> R](mlshapedarrayprotocol/withunsafemutableshapedbufferpointer(_:).md)
+### Modifying a shaped array type
+- [func withUnsafeMutableShapedBufferPointer<R>((inout UnsafeMutableBufferPointer<Self.Scalar>, [Int], [Int]) throws -> R) rethrows -> R](./withunsafemutableshapedbufferpointer%28_%29.md)
   Provides read-write access of the shaped array’s underlying memory to a closure.
 
 

@@ -1,7 +1,8 @@
 # badge
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number that your app’s icon displays.
 
@@ -21,6 +22,18 @@ The number that your app’s icon displays.
 var badge: NSNumber? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSNumber * badge;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readwrite, nullable) NSNumber * badge;
+```
+
 #### Discussion
 
 Use this property to specify the number to apply to the app’s icon when the notification arrives. If your app isn’t authorized to display badge-based notifications, the system ignores this property.
@@ -29,9 +42,10 @@ Specify the number `0` to remove the current badge, if present. Specify a number
 
 ## See Also
 
-- [var launchImageName: String](unmutablenotificationcontent/launchimagename.md)
+### Configuring app behavior
+- [var launchImageName: String](./launchimagename.md)
   The name of the image or storyboard to use when your app launches because of the notification.
-- [var targetContentIdentifier: String?](unmutablenotificationcontent/targetcontentidentifier.md)
+- [var targetContentIdentifier: String?](./targetcontentidentifier.md)
   The value your app uses to determine which scene to display to handle the notification.
 
 

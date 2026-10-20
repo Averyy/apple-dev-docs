@@ -1,49 +1,65 @@
 # SFAuthenticationError.Code
 
 **Framework**: Safari Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Messages that describe an authentication error.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
+- iOS 11.0+ - Deprecated in 12.0
+- iPadOS 11.0+ - Deprecated in 12.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use [`ASWebAuthenticationSessionError.Code`](../../AuthenticationServices/aswebauthenticationsessionerror/code.md) instead.
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst*
+
+```swift
+enum Code
+```
+
+*Mac Catalyst*
 
 ```swift
 enum SFAuthenticationError
 ```
 
+```c
+enum SFAuthenticationError : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [SFAuthenticationError.Code.canceledLogin](sfauthenticationerror-swift.struct/code/canceledlogin.md)
+- [SFAuthenticationError.Code.canceledLogin](./code/canceledlogin.md)
 ### Initializers
-- [init?(rawValue: Int)](sfauthenticationerror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let SFContentBlockerErrorDomain: String](sfcontentblockererrordomain.md)
+### Deprecated
+- [let SFContentBlockerErrorDomain: String](../sfcontentblockererrordomain.md)
   The domain for content blocker errors.
-- [enum SFContentBlockerErrorCode](sfcontentblockererrorcode.md)
+- [enum SFContentBlockerErrorCode](../sfcontentblockererrorcode.md)
   Messages that describe a content blocker error.
-- [class SFAuthenticationSession](sfauthenticationsession.md)
+- [class SFAuthenticationSession](../sfauthenticationsession.md)
   A class that manages sharing a one-time login between Safari and an app, which can also provide automatic login for associated apps.
-- [struct SFAuthenticationError](sfauthenticationerror-swift.struct.md)
+- [struct SFAuthenticationError](../sfauthenticationerror-swift.struct.md)
   An authentication error.
-- [let SFAuthenticationErrorDomain: String](sfauthenticationerrordomain.md)
+- [let SFAuthenticationErrorDomain: String](../sfauthenticationerrordomain.md)
   The domain for authentication errors.
 
 

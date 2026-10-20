@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,10 +19,15 @@
 var sourceHeadroom: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float sourceHeadroom;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](citonemapheadroom/inputimage.md)
-- [var targetHeadroom: Float](citonemapheadroom/targetheadroom.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
+- [var targetHeadroom: Float](./targetheadroom.md)
 
 
 ---

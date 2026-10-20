@@ -1,7 +1,8 @@
 # setWeekDayScheduleWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func setWeekDayScheduleWith(_ params: MTRDoorLockClusterSetWeekDayScheduleParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setWeekDayScheduleWith(_ params: MTRDoorLockClusterSetWeekDayScheduleParams) async throws
+```
+
+```objc
+- (void) setWeekDayScheduleWithParams:(MTRDoorLockClusterSetWeekDayScheduleParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # totalBytes
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for the total size, in bytes, of the volume.
 
@@ -12,6 +13,10 @@ A property for the total size, in bytes, of the volume.
 
 ```swift
 var totalBytes: UInt64 { get set }
+```
+
+```objc
+@property uint64_t totalBytes;
 ```
 
 

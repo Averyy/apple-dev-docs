@@ -1,7 +1,8 @@
 # rename(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Renames the current document in response to the user choosing the Rename menu item.
 
@@ -13,6 +14,10 @@ Renames the current document in response to the user choosing the Rename menu it
 ```swift
 @IBAction
 func rename(_ sender: Any?)
+```
+
+```objc
+- (void) renameDocument:(id) sender;
 ```
 
 #### Discussion

@@ -1,18 +1,23 @@
 # color
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the background color for content in the view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @NSCopying
 var color: NSColor { get set }
+```
+
+```objc
+@property (copy) NSColor * color;
 ```
 
 

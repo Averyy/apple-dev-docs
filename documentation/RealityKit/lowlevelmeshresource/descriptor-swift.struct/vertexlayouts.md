@@ -1,7 +1,8 @@
 # vertexLayouts
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vertex buffer layouts.
 
@@ -19,7 +20,7 @@ var vertexLayouts: [LowLevelMeshResource.Layout] { get set }
 
 #### Discussion
 
-You assign a layout to each vertex attribute with [`layoutIndex`](lowlevelmeshresource/attribute/layoutindex.md).
+You assign a layout to each vertex attribute with [`layoutIndex`](../attribute/layoutindex.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # tabBarController(_:sidebarAvailabilityDidChange:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate when `UITabBarController.Sidebar.isAvailable` changes.
 
@@ -15,6 +16,10 @@ Notifies the delegate when `UITabBarController.Sidebar.isAvailable` changes.
 
 ```swift
 optional func tabBarController(_ tabBarController: UITabBarController, sidebarAvailabilityDidChange sidebar: UITabBarController.Sidebar)
+```
+
+```objc
+- (void) tabBarController:(UITabBarController *) tabBarController sidebarAvailabilityDidChange:(UITabBarControllerSidebar *) sidebar;
 ```
 
 

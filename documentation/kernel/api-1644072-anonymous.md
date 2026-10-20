@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kATADisableWriteCache](1644072-anonymous/katadisablewritecache.md)
-- [kATAEnableAPM](1644072-anonymous/kataenableapm.md)
-- [kATAEnableReadAhead](1644072-anonymous/kataenablereadahead.md)
-- [kATAEnableWriteCache](1644072-anonymous/kataenablewritecache.md)
-- [kATASetPIOMode](1644072-anonymous/katasetpiomode.md)
-- [kATASetTransferMode](1644072-anonymous/katasettransfermode.md)
+- [kATADisableWriteCache](./api-1644072-anonymous/katadisablewritecache.md)
+- [kATAEnableAPM](./api-1644072-anonymous/kataenableapm.md)
+- [kATAEnableReadAhead](./api-1644072-anonymous/kataenablereadahead.md)
+- [kATAEnableWriteCache](./api-1644072-anonymous/kataenablewritecache.md)
+- [kATASetPIOMode](./api-1644072-anonymous/katasetpiomode.md)
+- [kATASetTransferMode](./api-1644072-anonymous/katasettransfermode.md)
 
 
 ---

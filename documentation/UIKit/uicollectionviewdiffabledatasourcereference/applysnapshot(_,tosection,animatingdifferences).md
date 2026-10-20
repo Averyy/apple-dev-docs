@@ -1,7 +1,8 @@
 # applySnapshot(_:toSection:animatingDifferences:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the section UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes.
 
@@ -18,11 +19,16 @@ Updates the section UI to reflect the state of the data in the specified snapsho
 func applySnapshot(_ snapshot: NSDiffableDataSourceSectionSnapshotReference, toSection sectionIdentifier: Any, animatingDifferences: Bool)
 ```
 
+```objc
+- (void) applySnapshot:(NSDiffableDataSourceSectionSnapshot<id> *) snapshot toSection:(SectionIdentifierType) sectionIdentifier animatingDifferences:(BOOL) animatingDifferences;
+```
+
 ## See Also
 
-- [func snapshot(forSection: Any) -> NSDiffableDataSourceSectionSnapshotReference](uicollectionviewdiffabledatasourcereference/snapshot(forsection:).md)
+### Updating section data
+- [func snapshot(forSection: Any) -> NSDiffableDataSourceSectionSnapshotReference](./snapshot%28forsection%29.md)
   Returns a representation of the current state of the data in the specified section of the collection view.
-- [func applySnapshot(NSDiffableDataSourceSectionSnapshotReference, toSection: Any, animatingDifferences: Bool, completion: (() -> Void)?)](uicollectionviewdiffabledatasourcereference/applysnapshot(_:tosection:animatingdifferences:completion:).md)
+- [func applySnapshot(NSDiffableDataSourceSectionSnapshotReference, toSection: Any, animatingDifferences: Bool, completion: (() -> Void)?)](./applysnapshot%28_,tosection,animatingdifferences,completion%29.md)
   Updates the section UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes and executing a completion handler.
 
 

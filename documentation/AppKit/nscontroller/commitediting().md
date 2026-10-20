@@ -1,12 +1,13 @@
 # commitEditing()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to commit any pending edits.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,25 +16,30 @@ Attempts to commit any pending edits.
 func commitEditing() -> Bool
 ```
 
+```objc
+- (BOOL) commitEditing;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful or no edits were pending.
+[`true`](../../Swift/true.md) if successful or no edits were pending.
 
 #### Discussion
 
-The receiver invokes [`commitEditing`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/commitediting) on any current editors, returning their response. A commit is denied if the receiver fails to apply the changes to the model object, perhaps due to a validation error.
+The receiver invokes [`commitEditing`](../../ObjectiveC/nsobject-swift.class/commitediting.md) on any current editors, returning their response. A commit is denied if the receiver fails to apply the changes to the model object, perhaps due to a validation error.
 
 ## See Also
 
-- [func objectDidBeginEditing(any NSEditor)](nscontroller/objectdidbeginediting(_:).md)
+### Managing editing
+- [func objectDidBeginEditing(any NSEditor)](./objectdidbeginediting%28_%29.md)
   Invoked to inform the receiver that `editor` has uncommitted changes that can affect the receiver.
-- [func objectDidEndEditing(any NSEditor)](nscontroller/objectdidendediting(_:).md)
+- [func objectDidEndEditing(any NSEditor)](./objectdidendediting%28_%29.md)
   Invoked to inform the receiver that `editor` has committed or discarded its changes.
-- [func commitEditing(withDelegate: Any?, didCommit: Selector?, contextInfo: UnsafeMutableRawPointer?)](nscontroller/commitediting(withdelegate:didcommit:contextinfo:).md)
+- [func commitEditing(withDelegate: Any?, didCommit: Selector?, contextInfo: UnsafeMutableRawPointer?)](./commitediting%28withdelegate,didcommit,contextinfo%29.md)
   Attempts to commit any pending changes in known editors of the receiver.
-- [func discardEditing()](nscontroller/discardediting.md)
+- [func discardEditing()](./discardediting%28%29.md)
   Discards any pending changes by registered editors.
-- [var isEditing: Bool](nscontroller/isediting.md)
+- [var isEditing: Bool](./isediting.md)
   A Boolean value indicating if any editors are registered with the controller.
 
 

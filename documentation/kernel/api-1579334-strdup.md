@@ -1,22 +1,24 @@
 # STRDUP
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 char * STRDUP(const char *, int);
 ```
 
 ## See Also
 
-- [strlcpy](1579349-strlcpy.md)
-- [strncpy](1579331-strncpy.md)
-- [bcopy](1579339-bcopy.md)
+### Copy
+- [strlcpy](./api-1579349-strlcpy.md)
+- [strncpy](./api-1579331-strncpy.md)
+- [bcopy](./api-1579339-bcopy.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The camera device view delegate.
 
@@ -15,9 +16,13 @@ The camera device view delegate.
 unowned(unsafe) var delegate: (any IKCameraDeviceViewDelegate)! { get set }
 ```
 
+```objc
+@property (assign) id<IKCameraDeviceViewDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate must conform to the [`IKCameraDeviceViewDelegate`](ikcameradeviceviewdelegate.md) protocol.
+The delegate must conform to the [`IKCameraDeviceViewDelegate`](../ikcameradeviceviewdelegate.md) protocol.
 
 
 ---

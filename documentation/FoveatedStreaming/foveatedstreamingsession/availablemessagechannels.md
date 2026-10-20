@@ -1,7 +1,8 @@
 # availableMessageChannels
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of all available message channels in this session.
 
@@ -19,7 +20,7 @@ final var availableMessageChannels: Set<FoveatedStreamingSession.MessageChannel.
 
 Observe this property to know when the endpoint creates a new message channel. Message channels can only be initialized by the endpoint.
 
-For example, you can observe the available message channels by employing [`withObservationTracking(_:onChange:)`](https://developer.apple.com/documentation/observation/withobservationtracking(_:onchange:)).
+For example, you can observe the available message channels by employing [`withObservationTracking(_:onChange:)`](../../Observation/withobservationtracking%28_,onchange%29.md).
 
 ```swift
 @MainActor

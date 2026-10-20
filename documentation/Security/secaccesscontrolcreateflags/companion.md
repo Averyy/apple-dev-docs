@@ -1,7 +1,8 @@
 # companion
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static var companion: SecAccessControlCreateFlags { get }
+```
+
+```c
+kSecAccessControlCompanion
 ```
 
 

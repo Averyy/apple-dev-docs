@@ -1,7 +1,8 @@
 # fi
 
 **Framework**: Apple Pay on the Web  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 case fi
 ```
 

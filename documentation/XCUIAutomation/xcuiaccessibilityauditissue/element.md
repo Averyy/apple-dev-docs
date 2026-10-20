@@ -1,7 +1,8 @@
 # element
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -17,6 +18,10 @@
 
 ```swift
 var element: XCUIElement? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) XCUIElement * element;
 ```
 
 

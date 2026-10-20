@@ -1,7 +1,8 @@
 # SecExternalItemType.itemTypeAggregate
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a set of certificates or certificates and private keys.
 
@@ -14,9 +15,13 @@ Indicates a set of certificates or certificates and private keys.
 case itemTypeAggregate
 ```
 
+```c
+kSecItemTypeAggregate
+```
+
 #### Discussion
 
-Possible values include [`SecExternalFormat.formatPKCS7`](secexternalformat/formatpkcs7.md), [`SecExternalFormat.formatPKCS12`](secexternalformat/formatpkcs12.md), or [`SecExternalFormat.formatPEMSequence`](secexternalformat/formatpemsequence.md) formats (see [`SecExternalFormat`](secexternalformat.md)).
+Possible values include [`SecExternalFormat.formatPKCS7`](../secexternalformat/formatpkcs7.md), [`SecExternalFormat.formatPKCS12`](../secexternalformat/formatpkcs12.md), or [`SecExternalFormat.formatPEMSequence`](../secexternalformat/formatpemsequence.md) formats (see [`SecExternalFormat`](../secexternalformat.md)).
 
 
 ---

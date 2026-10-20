@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An overlay’s attributes; for example, its position on the screen.
 
@@ -18,15 +19,20 @@ An overlay’s attributes; for example, its position on the screen.
 var configuration: SKOverlay.Configuration { get }
 ```
 
+```objc
+@property (copy, readonly) SKOverlayConfiguration * configuration;
+```
+
 ## See Also
 
-- [init(configuration: SKOverlay.Configuration)](skoverlay/init(configuration:).md)
+### Creating an overlay
+- [init(configuration: SKOverlay.Configuration)](./init%28configuration%29.md)
   Creates an overlay you use to recommend another app on the App Store.
-- [SKOverlay.AppConfiguration](skoverlay/appconfiguration.md)
+- [SKOverlay.AppConfiguration](./appconfiguration.md)
   An object that represents the attributes of an overlay you use to recommend another app on the App Store.
-- [SKOverlay.AppClipConfiguration](skoverlay/appclipconfiguration.md)
+- [SKOverlay.AppClipConfiguration](./appclipconfiguration.md)
   An object that represents the attributes of an overlay you use to recommend an App Clip’s corresponding full app.
-- [SKOverlay.Configuration](skoverlay/configuration-swift.class.md)
+- [SKOverlay.Configuration](./configuration-swift.class.md)
   The abstract superclass for all classes that represent an overlay’s attributes.
 
 

@@ -1,7 +1,8 @@
 # exportPackage(options:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Packages the stage into a USDZ archive and returns it as in-memory data.
 

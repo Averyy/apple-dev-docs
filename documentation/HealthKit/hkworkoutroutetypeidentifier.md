@@ -1,7 +1,8 @@
 # HKWorkoutRouteTypeIdentifier
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A series sample containing location data that defines the route the user took during a workout.
 
@@ -19,9 +20,14 @@ A series sample containing location data that defines the route the user took du
 let HKWorkoutRouteTypeIdentifier: String
 ```
 
+```c
+extern NSString * const HKWorkoutRouteTypeIdentifier;
+```
+
 ## See Also
 
-- [let HKWorkoutTypeIdentifier: String](hkworkouttypeidentifier.md)
+### Workouts
+- [let HKWorkoutTypeIdentifier: String](./hkworkouttypeidentifier.md)
   The workout type identifier.
 
 

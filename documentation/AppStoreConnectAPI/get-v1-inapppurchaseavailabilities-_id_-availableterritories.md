@@ -1,7 +1,8 @@
 # List the Territory Availablity of an In-App Purchase
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 List all the territories where an In-App Purchase is available.
 
@@ -14,7 +15,7 @@ List all the territories where an In-App Purchase is available.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/inAppPurchaseAvailabilities/6447501593/availableTerritories
 ```
 
@@ -50,15 +51,31 @@ https://api.appstoreconnect.apple.com/v1/inAppPurchaseAvailabilities/6447501593/
 
 ## Parameters
 
-- `fields[territories]` ([string])
-- `limit` (integer)
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the In-App Purchase resource ID from the [`List all In-App Purchases for an app`](./get-v1-apps-_id_-inapppurchasesv2.md) response.
+
+### Query Parameters
+
+- `fields[territories]` ([string]): **Allowed Values**: `currency`
+- `limit` (integer): **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`TerritoriesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read information about the availablity of an In-App Purchase](get-v1-inapppurchaseavailabilities-_id_.md)
+### Endpoints
+- [Read information about the availablity of an In-App Purchase](./get-v1-inapppurchaseavailabilities-_id_.md)
   Get information about the territory availablity for an In-App Purchase.
-- [List available territory IDs for an In-App Purchase availability](get-v1-inapppurchaseavailabilities-_id_-relationships-availableterritories.md)
-- [Modify the Territory Availablity of an In-App Purchase](post-v1-inapppurchaseavailabilities.md)
+- [List available territory IDs for an In-App Purchase availability](./get-v1-inapppurchaseavailabilities-_id_-relationships-availableterritories.md)
+- [Modify the Territory Availablity of an In-App Purchase](./post-v1-inapppurchaseavailabilities.md)
   Update the territory availablity of a specific In-App Purchase.
 
 

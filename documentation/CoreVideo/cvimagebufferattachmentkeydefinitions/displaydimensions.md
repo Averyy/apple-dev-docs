@@ -1,7 +1,8 @@
 # displayDimensions
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Display dimensions for the image buffer.
 

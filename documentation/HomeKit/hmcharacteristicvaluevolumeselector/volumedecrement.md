@@ -1,7 +1,8 @@
 # HMCharacteristicValueVolumeSelector.volumeDecrement
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A decrease in volume.
 
@@ -19,9 +20,14 @@ A decrease in volume.
 case volumeDecrement
 ```
 
+```c
+HMCharacteristicValueVolumeSelectorVolumeDecrement
+```
+
 ## See Also
 
-- [HMCharacteristicValueVolumeSelector.volumeIncrement](hmcharacteristicvaluevolumeselector/volumeincrement.md)
+### Volume cases
+- [HMCharacteristicValueVolumeSelector.volumeIncrement](./volumeincrement.md)
   An increase in volume.
 
 

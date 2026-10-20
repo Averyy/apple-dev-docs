@@ -1,7 +1,8 @@
 # write(to:atomically:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Archives a filter generator object to a filter generator file.
 
@@ -12,6 +13,10 @@ Archives a filter generator object to a filter generator file.
 
 ```swift
 func write(to aURL: URL, atomically flag: Bool) -> Bool
+```
+
+```objc
+- (BOOL) writeToURL:(NSURL *) aURL atomically:(BOOL) flag;
 ```
 
 #### Return Value

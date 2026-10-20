@@ -1,7 +1,8 @@
 # isUndefined
 
 **Framework**: JavaScriptCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the instance corresponds to the JavaScript `undefined` value.
 
@@ -19,27 +20,32 @@ A Boolean value that indicates whether the instance corresponds to the JavaScrip
 var isUndefined: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL isUndefined;
+```
+
 #### Discussion
 
 The JavaScript `undefined` value is used for variables that have not yet been assigned a value, for formal parameters in functions for which no actual parameter has been passed, and as the result of expressions or function calls that do not explicitly return a value. Note that `undefined` is not the same as `null`.
 
 ## See Also
 
-- [var isNull: Bool](jsvalue/isnull.md)
+### Determining the Type of a JavaScript Value
+- [var isNull: Bool](./isnull.md)
   A Boolean value that indicates whether the instance corresponds to the JavaScript `null` value.
-- [var isBoolean: Bool](jsvalue/isboolean.md)
+- [var isBoolean: Bool](./isboolean.md)
   A Boolean value that indicates whether the instance is a JavaScript Boolean value.
-- [var isNumber: Bool](jsvalue/isnumber.md)
+- [var isNumber: Bool](./isnumber.md)
   A Boolean value that indicates whether the instance is a JavaScript numeric value.
-- [var isString: Bool](jsvalue/isstring.md)
+- [var isString: Bool](./isstring.md)
   A Boolean value that indicates whether the instance is a JavaScript `String` object.
-- [var isObject: Bool](jsvalue/isobject.md)
+- [var isObject: Bool](./isobject.md)
   A Boolean value that indicates whether the instance is a JavaScript object.
-- [var isArray: Bool](jsvalue/isarray.md)
+- [var isArray: Bool](./isarray.md)
   A Boolean value that indicates whether the instance is a JavaScript array value.
-- [var isDate: Bool](jsvalue/isdate.md)
+- [var isDate: Bool](./isdate.md)
   A Boolean value that indicates whether the instance is a JavaScript `Date` object.
-- [var isSymbol: Bool](jsvalue/issymbol.md)
+- [var isSymbol: Bool](./issymbol.md)
   A Boolean value that indicates whether the instance is a symbol.
 
 

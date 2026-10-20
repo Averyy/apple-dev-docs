@@ -1,7 +1,8 @@
 # ComponentEvents.DidAdd
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Event raised after a component has been added to an entity,
 
@@ -11,7 +12,7 @@ Event raised after a component has been added to an entity,
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,23 +23,24 @@ struct DidAdd
 ## Topics
 
 ### Instance Properties
-- [let componentType: any Component.Type](componentevents/didadd/componenttype.md)
+- [let componentType: any Component.Type](./didadd/componenttype.md)
   The component type.
-- [let entity: Entity](componentevents/didadd/entity.md)
+- [let entity: Entity](./didadd/entity.md)
   The component’s entity.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ComponentEvents.DidChange](componentevents/didchange.md)
+### Detecting component changes
+- [ComponentEvents.DidChange](./didchange.md)
   Event raised after a component has been modified.
-- [ComponentEvents.WillRemove](componentevents/willremove.md)
+- [ComponentEvents.WillRemove](./willremove.md)
   Event raised before a component is removed from an entity.
 
 

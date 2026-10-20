@@ -1,7 +1,8 @@
 # HKElectrocardiogram.Classification
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Classifications returned by Apple Watch’s ECG algorithm.
 
@@ -19,47 +20,52 @@ Classifications returned by Apple Watch’s ECG algorithm.
 enum Classification
 ```
 
+```c
+enum HKElectrocardiogramClassification : NSInteger;
+```
+
 ## Topics
 
 ### Classifications
-- [HKElectrocardiogram.Classification.sinusRhythm](hkelectrocardiogram/classification-swift.enum/sinusrhythm.md)
+- [HKElectrocardiogram.Classification.sinusRhythm](./classification-swift.enum/sinusrhythm.md)
   The sample exhibits no signs of atrial fibrillation.
-- [HKElectrocardiogram.Classification.atrialFibrillation](hkelectrocardiogram/classification-swift.enum/atrialfibrillation.md)
+- [HKElectrocardiogram.Classification.atrialFibrillation](./classification-swift.enum/atrialfibrillation.md)
   The sample exhibits signs of atrial fibrillation.
-- [HKElectrocardiogram.Classification.inconclusiveHighHeartRate](hkelectrocardiogram/classification-swift.enum/inconclusivehighheartrate.md)
+- [HKElectrocardiogram.Classification.inconclusiveHighHeartRate](./classification-swift.enum/inconclusivehighheartrate.md)
   An unclassifiable sample caused by a rapid heart rate.
-- [HKElectrocardiogram.Classification.inconclusiveLowHeartRate](hkelectrocardiogram/classification-swift.enum/inconclusivelowheartrate.md)
+- [HKElectrocardiogram.Classification.inconclusiveLowHeartRate](./classification-swift.enum/inconclusivelowheartrate.md)
   An unclassifiable sample caused by a heart rate below 50 bpm.
-- [HKElectrocardiogram.Classification.inconclusivePoorReading](hkelectrocardiogram/classification-swift.enum/inconclusivepoorreading.md)
+- [HKElectrocardiogram.Classification.inconclusivePoorReading](./classification-swift.enum/inconclusivepoorreading.md)
   An unclassifiable sample caused by an unclear signal.
-- [HKElectrocardiogram.Classification.inconclusiveOther](hkelectrocardiogram/classification-swift.enum/inconclusiveother.md)
+- [HKElectrocardiogram.Classification.inconclusiveOther](./classification-swift.enum/inconclusiveother.md)
   An unclassifiable sample caused by an unknown issue.
-- [HKElectrocardiogram.Classification.unrecognized](hkelectrocardiogram/classification-swift.enum/unrecognized.md)
+- [HKElectrocardiogram.Classification.unrecognized](./classification-swift.enum/unrecognized.md)
   A sample classification that this version of HealthKit doesn’t recognize.
-- [HKElectrocardiogram.Classification.notSet](hkelectrocardiogram/classification-swift.enum/notset.md)
+- [HKElectrocardiogram.Classification.notSet](./classification-swift.enum/notset.md)
   A sample that doesn’t have an assigned classification.
 ### Initializers
-- [init?(rawValue: Int)](hkelectrocardiogram/classification-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./classification-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var classification: HKElectrocardiogram.Classification](hkelectrocardiogram/classification-swift.property.md)
+### Accessing Overview Information
+- [var classification: HKElectrocardiogram.Classification](./classification-swift.property.md)
   The ECG’s classification.
-- [var averageHeartRate: HKQuantity?](hkelectrocardiogram/averageheartrate.md)
+- [var averageHeartRate: HKQuantity?](./averageheartrate.md)
   The user’s average heart rate during the ECG.
-- [var symptomsStatus: HKElectrocardiogram.SymptomsStatus](hkelectrocardiogram/symptomsstatus-swift.property.md)
+- [var symptomsStatus: HKElectrocardiogram.SymptomsStatus](./symptomsstatus-swift.property.md)
   A value that indicates whether the user entered a symptom when they recorded the ECG.
-- [HKElectrocardiogram.SymptomsStatus](hkelectrocardiogram/symptomsstatus-swift.enum.md)
+- [HKElectrocardiogram.SymptomsStatus](./symptomsstatus-swift.enum.md)
   Values indicating whether the user entered a symptom when they recorded the ECG.
 
 

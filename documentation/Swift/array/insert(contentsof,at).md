@@ -1,7 +1,8 @@
 # insert(contentsOf:at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the elements of a sequence into the collection at the specified position.
 
@@ -35,7 +36,7 @@ print(numbers)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(*n* + *m*), where *n* is length of this collection and *m* is the length of `newElements`. If `i == endIndex`, this method is equivalent to `append(contentsOf:)`.
+> **Complexity**: O(*n* + *m*), where *n* is length of this collection and *m* is the length of `newElements`. If `i == endIndex`, this method is equivalent to `append(contentsOf:)`.
 
 ## Parameters
 
@@ -44,15 +45,16 @@ Calling this method may invalidate any existing indices for use with this collec
 
 ## See Also
 
-- [func append(Element)](array/append(_:).md)
+### Adding Elements
+- [func append(Element)](./append%28_%29.md)
   Adds a new element at the end of the array.
-- [func insert(Element, at: Int)](array/insert(_:at:).md)
+- [func insert(Element, at: Int)](./insert%28_,at%29.md)
   Inserts a new element at the specified position.
-- [func replaceSubrange<C>(Range<Int>, with: C)](array/replacesubrange(_:with:).md)
+- [func replaceSubrange<C>(Range<Int>, with: C)](./replacesubrange%28_,with%29.md)
   Replaces a range of elements with the elements in the specified collection.
-- [func replaceSubrange<C, R>(R, with: C)](array/replacesubrange(_:with:)-7293p.md)
+- [func replaceSubrange<C, R>(R, with: C)](./replacesubrange%28_,with%29-7293p.md)
   Replaces the specified subrange of elements with the given collection.
-- [func reserveCapacity(Int)](array/reservecapacity(_:).md)
+- [func reserveCapacity(Int)](./reservecapacity%28_%29.md)
   Reserves enough space to store the specified number of elements.
 
 

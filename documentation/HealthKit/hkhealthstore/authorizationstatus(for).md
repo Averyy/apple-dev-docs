@@ -1,7 +1,8 @@
 # authorizationStatus(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the app’s authorization status for sharing the specified data type.
 
@@ -19,51 +20,56 @@ Returns the app’s authorization status for sharing the specified data type.
 func authorizationStatus(for type: HKObjectType) -> HKAuthorizationStatus
 ```
 
+```objc
+- (HKAuthorizationStatus) authorizationStatusForType:(HKObjectType *) type;
+```
+
 ## Mentions
 
-- [Authorizing access to health data](authorizing-access-to-health-data.md)
+- [Authorizing access to health data](../authorizing-access-to-health-data.md)
 
 #### Return Value
 
-A value indicating the app’s authorization status for this type. For a list of possible values, see [`HKAuthorizationStatus`](hkauthorizationstatus.md).
+A value indicating the app’s authorization status for this type. For a list of possible values, see [`HKAuthorizationStatus`](../hkauthorizationstatus.md).
 
 #### Discussion
 
 This method checks the authorization status for saving data to the HealthKit store.
 
-> ❗ **Important**:  An app’s permissions don’t change when an app runs in a Guest User session. Therefore, [`authorizationStatus(for:)`](hkhealthstore/authorizationstatus(for:).md) returns [`true`](https://developer.apple.com/documentation/swift/true) if the owner previously granted authorization to write the data, even though the app can’t write it during a Guest User session. For more information, refer to [`Authorizing access to health data`](authorizing-access-to-health-data.md).
+> ❗ **Important**:  An app’s permissions don’t change when an app runs in a Guest User session. Therefore, [`authorizationStatus(for:)`](./authorizationstatus%28for%29.md) returns [`true`](../../Swift/true.md) if the owner previously granted authorization to write the data, even though the app can’t write it during a Guest User session. For more information, refer to [Authorizing access to health data](../authorizing-access-to-health-data.md).
 
 To help prevent possible leaks of sensitive health information, your app cannot determine whether or not a user has granted permission to read data. If you are not given permission, it  simply appears as if there is no data of the requested type in the HealthKit store. If your app is given share permission but not read permission, you see only the data that your app has written to the store. Data from other sources remains hidden.
 
 ## Parameters
 
-- `type`: The type of data. This can be any concrete subclass of the [`HKObjectType`](hkobjecttype.md) class (any of the [`HKCharacteristicType`](hkcharacteristictype.md) , [`HKQuantityType`](hkquantitytype.md), [`HKCategoryType`](hkcategorytype.md), [`HKWorkoutType`](hkworkouttype.md) or [`HKCorrelationType`](hkcorrelationtype.md) classes).
+- `type`: The type of data. This can be any concrete subclass of the [`HKObjectType`](../hkobjecttype.md) class (any of the [`HKCharacteristicType`](../hkcharacteristictype.md) , [`HKQuantityType`](../hkquantitytype.md), [`HKCategoryType`](../hkcategorytype.md), [`HKWorkoutType`](../hkworkouttype.md) or [`HKCorrelationType`](../hkcorrelationtype.md) classes).
 
 ## See Also
 
-- [enum HKAuthorizationStatus](hkauthorizationstatus.md)
+### Accessing HealthKit
+- [enum HKAuthorizationStatus](../hkauthorizationstatus.md)
   Constants indicating the authorization status for a particular data type.
-- [func getRequestStatusForAuthorization(toShare: Set<HKSampleType>, read: Set<HKObjectType>, completion: (HKAuthorizationRequestStatus, (any Error)?) -> Void)](hkhealthstore/getrequeststatusforauthorization(toshare:read:completion:).md)
+- [func getRequestStatusForAuthorization(toShare: Set<HKSampleType>, read: Set<HKObjectType>, completion: (HKAuthorizationRequestStatus, (any Error)?) -> Void)](./getrequeststatusforauthorization%28toshare,read,completion%29.md)
   Indicates whether the system presents the user with a permission sheet if your app requests authorization for the provided types.
-- [enum HKAuthorizationRequestStatus](hkauthorizationrequeststatus.md)
+- [enum HKAuthorizationRequestStatus](../hkauthorizationrequeststatus.md)
   Values that indicate whether your app needs to request authorization from the user.
-- [class func isHealthDataAvailable() -> Bool](hkhealthstore/ishealthdataavailable.md)
+- [class func isHealthDataAvailable() -> Bool](./ishealthdataavailable%28%29.md)
   Returns a Boolean value that indicates whether HealthKit is available on this device.
-- [func supportsHealthRecords() -> Bool](hkhealthstore/supportshealthrecords.md)
+- [func supportsHealthRecords() -> Bool](./supportshealthrecords%28%29.md)
   Returns a Boolean value that indicates whether the current device supports clinical records.
-- [func requestAuthorization(toShare: Set<HKSampleType>?, read: Set<HKObjectType>?, completion: (Bool, (any Error)?) -> Void)](hkhealthstore/requestauthorization(toshare:read:completion:).md)
+- [func requestAuthorization(toShare: Set<HKSampleType>?, read: Set<HKObjectType>?, completion: (Bool, (any Error)?) -> Void)](./requestauthorization%28toshare,read,completion%29.md)
   Requests permission to save and read the specified data types.
-- [func requestAuthorization(toShare: Set<HKSampleType>, read: Set<HKObjectType>) async throws](hkhealthstore/requestauthorization(toshare:read:).md)
+- [func requestAuthorization(toShare: Set<HKSampleType>, read: Set<HKObjectType>) async throws](./requestauthorization%28toshare,read%29.md)
   Asynchronously requests permission to save and read the specified data types.
-- [func requestPerObjectReadAuthorization(for: HKObjectType, predicate: NSPredicate?, completion: (Bool, (any Error)?) -> Void)](hkhealthstore/requestperobjectreadauthorization(for:predicate:completion:).md)
+- [func requestPerObjectReadAuthorization(for: HKObjectType, predicate: NSPredicate?, completion: (Bool, (any Error)?) -> Void)](./requestperobjectreadauthorization%28for,predicate,completion%29.md)
   Asynchronously requests permission to read a data type that requires per-object authorization (such as vision prescriptions).
-- [func handleAuthorizationForExtension(completion: (Bool, (any Error)?) -> Void)](hkhealthstore/handleauthorizationforextension(completion:).md)
+- [func handleAuthorizationForExtension(completion: (Bool, (any Error)?) -> Void)](./handleauthorizationforextension%28completion%29.md)
   Requests permission to save and read the data types specified by an extension.
-- [var authorizationViewControllerPresenter: UIViewController?](hkhealthstore/authorizationviewcontrollerpresenter.md)
+- [var authorizationViewControllerPresenter: UIViewController?](./authorizationviewcontrollerpresenter.md)
   The view controller that presents HealthKit authorization sheets.
-- [func getEarliestAuthorizedSampleDate(for: Set<HKObjectType>, completion: ([HKObjectType : Date]?, (any Error)?) -> Void)](hkhealthstore/getearliestauthorizedsampledate(for:completion:).md)
+- [func getEarliestAuthorizedSampleDate(for: Set<HKObjectType>, completion: ([HKObjectType : Date]?, (any Error)?) -> Void)](./getearliestauthorizedsampledate%28for,completion%29.md)
   Returns the earliest date that the person permits your app to read samples for the given data types.
-- [func earliestPermittedSampleDate() -> Date](hkhealthstore/earliestpermittedsampledate.md)
+- [func earliestPermittedSampleDate() -> Date](./earliestpermittedsampledate%28%29.md)
   Returns the earliest date that the framework permits your app to save or read samples.
 
 

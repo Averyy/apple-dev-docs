@@ -1,14 +1,15 @@
 # UpdateLBAProvisionStatus
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 IOReturn UpdateLBAProvisionStatus(UInt32 *extentsCount, IOBlockStorageProvisionDeviceExtent *extents, IOMemoryDescriptor *dataBuffer, UInt32 transferLength);
 ```
 

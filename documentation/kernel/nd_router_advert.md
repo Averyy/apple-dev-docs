@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct nd_router_advert {
     ...
 };
@@ -17,9 +17,9 @@ struct nd_router_advert {
 ## Topics
 
 ### Instance Properties
-- [nd_ra_hdr](nd_router_advert/3754180-nd_ra_hdr.md)
-- [nd_ra_reachable](nd_router_advert/3754181-nd_ra_reachable.md)
-- [nd_ra_retransmit](nd_router_advert/3754182-nd_ra_retransmit.md)
+- [nd_ra_hdr](./nd_router_advert/api-3754180-nd_ra_hdr.md)
+- [nd_ra_reachable](./nd_router_advert/api-3754181-nd_ra_reachable.md)
+- [nd_ra_retransmit](./nd_router_advert/api-3754182-nd_ra_retransmit.md)
 
 
 ---

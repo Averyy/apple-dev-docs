@@ -1,15 +1,16 @@
 # tabBarController(_:interactionControllerFor:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Called to allow the delegate to return a [`UIViewControllerInteractiveTransitioning`](uiviewcontrollerinteractivetransitioning.md) delegate object for use during an animated tab bar transition.
+Called to allow the delegate to return a [`UIViewControllerInteractiveTransitioning`](../uiviewcontrollerinteractivetransitioning.md) delegate object for use during an animated tab bar transition.
 
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 
 ## Declaration
 
@@ -17,9 +18,13 @@ Called to allow the delegate to return a [`UIViewControllerInteractiveTransition
 optional func tabBarController(_ tabBarController: UITabBarController, interactionControllerFor animationController: any UIViewControllerAnimatedTransitioning) -> (any UIViewControllerInteractiveTransitioning)?
 ```
 
+```objc
+- (id<UIViewControllerInteractiveTransitioning>) tabBarController:(UITabBarController *) tabBarController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>) animationController;
+```
+
 #### Return Value
 
-The [`UIViewControllerInteractiveTransitioning`](uiviewcontrollerinteractivetransitioning.md) delegate object responsible for managing the user interaction in an animated tab bar transition.
+The [`UIViewControllerInteractiveTransitioning`](../uiviewcontrollerinteractivetransitioning.md) delegate object responsible for managing the user interaction in an animated tab bar transition.
 
 ## Parameters
 
@@ -28,8 +33,9 @@ The [`UIViewControllerInteractiveTransitioning`](uiviewcontrollerinteractivetran
 
 ## See Also
 
-- [func tabBarController(UITabBarController, animationControllerForTransitionFrom: UIViewController, to: UIViewController) -> (any UIViewControllerAnimatedTransitioning)?](uitabbarcontrollerdelegate/tabbarcontroller(_:animationcontrollerfortransitionfrom:to:).md)
-  Called to allow the delegate to return a [`UIViewControllerAnimatedTransitioning`](uiviewcontrolleranimatedtransitioning.md) delegate object for use during a noninteractive tab bar view controller transition.
+### Supporting custom tab bar transition animations
+- [func tabBarController(UITabBarController, animationControllerForTransitionFrom: UIViewController, to: UIViewController) -> (any UIViewControllerAnimatedTransitioning)?](./tabbarcontroller%28_,animationcontrollerfortransitionfrom,to%29.md)
+  Called to allow the delegate to return a [`UIViewControllerAnimatedTransitioning`](../uiviewcontrolleranimatedtransitioning.md) delegate object for use during a noninteractive tab bar view controller transition.
 
 
 ---

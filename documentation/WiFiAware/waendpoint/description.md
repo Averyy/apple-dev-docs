@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The description of the object.
 

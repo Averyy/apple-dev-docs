@@ -1,14 +1,15 @@
 # kIOFBMaxCursorWidth
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14.1+
 
 ## Declaration
 
-```swift
+```c
 kIOFBMaxCursorWidth = 256
 ```
 

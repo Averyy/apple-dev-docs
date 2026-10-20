@@ -1,7 +1,8 @@
 # string
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The MAC address as a formatted string.
 
@@ -14,13 +15,18 @@ The MAC address as a formatted string.
 var string: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * string;
+```
+
 #### Discussion
 
 The string contains the 6 hexadecimal bytes of the MAC address, separated by colon characters. Alphabetical characters are lowercase in the string. An example string is `01:23:45:ab:cd:ef`.
 
 ## See Also
 
-- [var ethernetAddress: ether_addr_t](vzmacaddress/ethernetaddress.md)
+### Getting the address
+- [var ethernetAddress: ether_addr_t](./ethernetaddress.md)
   The MAC address as an Ethernet data structure.
 
 

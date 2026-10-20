@@ -1,7 +1,8 @@
 # NSLayoutXAxisAnchor
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A factory class for creating horizontal layout constraint objects using a fluent API.
 
@@ -19,9 +20,13 @@ A factory class for creating horizontal layout constraint objects using a fluent
 class NSLayoutXAxisAnchor
 ```
 
+```objc
+@interface NSLayoutXAxisAnchor : NSLayoutAnchor
+```
+
 #### Overview
 
-[`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md) adds type information to the methods inherited from [`NSLayoutAnchor`](nslayoutanchor.md). Specifically, the generic methods declared by [`NSLayoutAnchor`](nslayoutanchor.md) must now take a matching [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md) object.
+[`NSLayoutXAxisAnchor`](./nslayoutxaxisanchor.md) adds type information to the methods inherited from [`NSLayoutAnchor`](./nslayoutanchor.md). Specifically, the generic methods declared by [`NSLayoutAnchor`](./nslayoutanchor.md) must now take a matching [`NSLayoutXAxisAnchor`](./nslayoutxaxisanchor.md) object.
 
 **Swift**:
 
@@ -43,49 +48,51 @@ cancelButton.leadingAnchor.constraintEqualToAnchor(saveButton.topAnchor, constan
 [self.cancelButton.leadingAnchor constraintEqualToAnchor:self.saveButton.topAnchor constant: 8.0].active = true;
 ```
 
-For more information on using layout anchors, see [`NSLayoutAnchor`](nslayoutanchor.md).
+For more information on using layout anchors, see [`NSLayoutAnchor`](./nslayoutanchor.md).
 
 ## Topics
 
 ### Building system spacing constraints
-- [func constraint(equalToSystemSpacingAfter: NSLayoutXAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint](nslayoutxaxisanchor/constraint(equaltosystemspacingafter:multiplier:).md)
+- [func constraint(equalToSystemSpacingAfter: NSLayoutXAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint](./nslayoutxaxisanchor/constraint%28equaltosystemspacingafter,multiplier%29.md)
   Returns a constraint that defines by how much the current anchor trails the specified anchor.
-- [func constraint(greaterThanOrEqualToSystemSpacingAfter: NSLayoutXAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint](nslayoutxaxisanchor/constraint(greaterthanorequaltosystemspacingafter:multiplier:).md)
+- [func constraint(greaterThanOrEqualToSystemSpacingAfter: NSLayoutXAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint](./nslayoutxaxisanchor/constraint%28greaterthanorequaltosystemspacingafter,multiplier%29.md)
   Returns a constraint that defines the minimum amount by which the current anchor trails the specified anchor.
-- [func constraint(lessThanOrEqualToSystemSpacingAfter: NSLayoutXAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint](nslayoutxaxisanchor/constraint(lessthanorequaltosystemspacingafter:multiplier:).md)
+- [func constraint(lessThanOrEqualToSystemSpacingAfter: NSLayoutXAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint](./nslayoutxaxisanchor/constraint%28lessthanorequaltosystemspacingafter,multiplier%29.md)
   Returns a constraint that defines the maximum amount by which the current anchor trails the specified anchor.
-- [Creating self-sizing table view cells](creating-self-sizing-table-view-cells.md)
+- [Creating self-sizing table view cells](./creating-self-sizing-table-view-cells.md)
   Create table view cells that support Dynamic Type and use system spacing constraints to adjust the spacing surrounding text labels.
 ### Creating a layout dimension
-- [func anchorWithOffset(to: NSLayoutXAxisAnchor) -> NSLayoutDimension](nslayoutxaxisanchor/anchorwithoffset(to:).md)
+- [func anchorWithOffset(to: NSLayoutXAxisAnchor) -> NSLayoutDimension](./nslayoutxaxisanchor/anchorwithoffset%28to%29.md)
   Creates a layout dimension object from two anchors.
 
 ## Relationships
 
 ### Inherits From
-- [NSLayoutAnchor](nslayoutanchor.md)
+- [NSLayoutAnchor](./nslayoutanchor.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSLayoutConstraint](nslayoutconstraint.md)
+### Related Documentation
+- [class NSLayoutConstraint](./nslayoutconstraint.md)
   The relationship between two user interface objects that must be satisfied by the constraint-based layout system.
-- [Auto Layout Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html?language=swift#//apple_ref/doc/uid/TP40010853)
-- [class NSLayoutAnchor](nslayoutanchor.md)
+- [Auto Layout Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html?language=swift#//apple_ref/doc/uid/TP40010853)
+### Anchors
+- [class NSLayoutAnchor](./nslayoutanchor.md)
   A factory class for creating layout constraint objects using a fluent API.
-- [class NSLayoutYAxisAnchor](nslayoutyaxisanchor.md)
+- [class NSLayoutYAxisAnchor](./nslayoutyaxisanchor.md)
   A factory class for creating vertical layout constraint objects using a fluent API.
-- [var NSLAYOUTANCHOR_H: Int32](nslayoutanchor_h.md)
+- [var NSLAYOUTANCHOR_H: Int32](./nslayoutanchor_h.md)
 
 
 ---

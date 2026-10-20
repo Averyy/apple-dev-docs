@@ -1,12 +1,13 @@
 # statusBar
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status bar that displays the status item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The status bar that displays the status item.
 weak var statusBar: NSStatusBar? { get }
 ```
 
+```objc
+@property (weak, readonly) NSStatusBar * statusBar;
+```
+
 ## See Also
 
-- [Status Bar Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/StatusBar/StatusBar.html#//apple_ref/doc/uid/10000073i)
+### Related Documentation
+- [Status Bar Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/StatusBar/StatusBar.html#//apple_ref/doc/uid/10000073i)
 
 
 ---

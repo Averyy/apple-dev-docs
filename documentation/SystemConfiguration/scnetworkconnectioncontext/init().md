@@ -1,17 +1,18 @@
 # init()
 
 **Framework**: System Configuration  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a network connection context.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 

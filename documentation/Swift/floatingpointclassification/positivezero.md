@@ -1,7 +1,8 @@
 # FloatingPointClassification.positiveZero
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value equal to zero with a positive sign.
 

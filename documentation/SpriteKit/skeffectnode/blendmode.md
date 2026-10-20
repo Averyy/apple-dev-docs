@@ -1,18 +1,19 @@
 # blendMode
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The blend mode used to draw the node’s contents into its parent’s framebuffer.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ The blend mode used to draw the node’s contents into its parent’s framebuffe
 var blendMode: SKBlendMode { get set }
 ```
 
+```objc
+@property (nonatomic) SKBlendMode blendMode;
+```
+
 #### Discussion
 
-The default value is [`SKBlendMode.alpha`](skblendmode/alpha.md).
+The default value is [`SKBlendMode.alpha`](../skblendmode/alpha.md).
 
 
 ---

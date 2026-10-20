@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Describes this shape as a path within a rectangular frame of reference.
@@ -32,7 +33,8 @@ A path that describes this shape.
 
 ## See Also
 
-- [func sizeThatFits(ProposedViewSize) -> CGSize](shape/sizethatfits(_:).md)
+### Defining a shape’s size and path
+- [func sizeThatFits(ProposedViewSize) -> CGSize](./sizethatfits%28_%29.md)
   Returns the size of the view that will render the shape, given a proposed size.
 
 

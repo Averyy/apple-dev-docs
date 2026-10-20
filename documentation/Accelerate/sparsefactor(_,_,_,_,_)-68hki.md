@@ -1,7 +1,8 @@
 # SparseFactor(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the factorization of a sparse matrix of double-precision values that corresponds to the supplied symbolic factorization using user-defined workspace and factor storage.
 
@@ -20,15 +21,19 @@ Returns the factorization of a sparse matrix of double-precision values that cor
 func SparseFactor(_ symbolicFactor: SparseOpaqueSymbolicFactorization, _ Matrix: SparseMatrix_Double, _ nfoptions: SparseNumericFactorOptions, _ factorStorage: UnsafeMutableRawPointer?, _ workspace: UnsafeMutableRawPointer?) -> SparseOpaqueFactorization_Double
 ```
 
+```c
+static SparseOpaqueFactorization_Double SparseFactor(SparseOpaqueSymbolicFactorization SymbolicFactor, SparseMatrix_Double Matrix, SparseNumericFactorOptions nfoptions, void *factorStorage, void *workspace);
+```
+
 #### Return Value
 
-A [`SparseOpaqueFactorization_Double`](sparseopaquefactorization_double.md) structure that represents the matrix factorization.
+A [`SparseOpaqueFactorization_Double`](./sparseopaquefactorization_double.md) structure that represents the matrix factorization.
 
 #### Discussion
 
-Use this function to solve a system of linear equations using a symbolic factorization that [`SparseFactor(_:_:)`](sparsefactor(_:_:)-3697o.md) creates.
+Use this function to solve a system of linear equations using a symbolic factorization that [`SparseFactor(_:_:)`](./sparsefactor%28_,_%29-3697o.md) creates.
 
-![A mathematical equation that has one set of three simultaneous equations on the left. Each equation has three unknowns. The same set of simultaneous equations appears on the right as a single matrix equation, A x equals B. The single matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.](/images/com.apple.accelerate/media-3703945@2x.png)
+![A mathematical equation that has one set of three simultaneous equations on the left. Each equation has three unknowns. The same set of simultaneous equations appears on the right as a single matrix equation, A x equals B. The single matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3703945@2x.png)
 
 The following code creates the workspace and factor storage that this function requires, and solves this system with a QR factorization of the coefficient matrix:
 
@@ -134,19 +139,20 @@ free(factorStorage);
 
 On return, `bValues` contains the values `[1.0, 2.0, 3.0].`
 
-Note that internal memory allocations may occur in the case of pivoted factorizations that result in delayed pivots. If you require closer control over memory allocations, supply a [`malloc`](sparsesymbolicfactoroptions/malloc.md) function that implements the required behavior, or use an alternative that nonpivoted factorization returns. Note that if [`malloc`](sparsesymbolicfactoroptions/malloc.md) returns `NULL`, the factorization aborts immediately.
+Note that internal memory allocations may occur in the case of pivoted factorizations that result in delayed pivots. If you require closer control over memory allocations, supply a [`malloc`](./sparsesymbolicfactoroptions/malloc.md) function that implements the required behavior, or use an alternative that nonpivoted factorization returns. Note that if [`malloc`](./sparsesymbolicfactoroptions/malloc.md) returns `NULL`, the factorization aborts immediately.
 
 ## Parameters
 
-- `symbolicFactor`: A symbolic factorization that returns by calling [`SparseFactor(_:_:_:_:_:)`](sparsefactor(_:_:_:_:_:)-68hki.md).
+- `symbolicFactor`: A symbolic factorization that returns by calling [`SparseFactor(_:_:_:_:_:)`](./sparsefactor%28_,_,_,_,_%29-68hki.md).
 - `Matrix`: The matrix to factorize.
 - `nfoptions`: The numeric factor options, such as pivoting parameters.
-- `factorStorage`: A pointer to space for storing the factorization of size at least [`factorSize_Double`](sparseopaquesymbolicfactorization/factorsize_double.md) bytes. Don’t alter this storage during the lifetime of the return value.
-- `workspace`: A pointer to a workspace of size at least [`workspaceSize_Double`](sparseopaquesymbolicfactorization/workspacesize_double.md) bytes. You can reuse or deallocate the workspace storage after the function returns.
+- `factorStorage`: A pointer to space for storing the factorization of size at least [`factorSize_Double`](./sparseopaquesymbolicfactorization/factorsize_double.md) bytes. Don’t alter this storage during the lifetime of the return value.
+- `workspace`: A pointer to a workspace of size at least [`workspaceSize_Double`](./sparseopaquesymbolicfactorization/workspacesize_double.md) bytes. You can reuse or deallocate the workspace storage after the function returns.
 
 ## See Also
 
-- [func SparseFactor(SparseOpaqueSymbolicFactorization, SparseMatrix_Float, SparseNumericFactorOptions, UnsafeMutableRawPointer?, UnsafeMutableRawPointer?) -> SparseOpaqueFactorization_Float](sparsefactor(_:_:_:_:_:)-8afz.md)
+### Matrix factorizations using precalculated symbolic factorization with user-defined workspace
+- [func SparseFactor(SparseOpaqueSymbolicFactorization, SparseMatrix_Float, SparseNumericFactorOptions, UnsafeMutableRawPointer?, UnsafeMutableRawPointer?) -> SparseOpaqueFactorization_Float](./sparsefactor%28_,_,_,_,_%29-8afz.md)
   Returns the factorization of a sparse matrix of single-precision values that corresponds to the supplied symbolic factorization using user-defined workspace and factor storage.
 
 

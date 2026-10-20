@@ -1,7 +1,8 @@
 # urlIsBlocked
 
 **Framework**: Screen Time  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether a parent or guardian has blocked the URL.
 
@@ -17,19 +18,24 @@ A Boolean that indicates whether a parent or guardian has blocked the URL.
 var urlIsBlocked: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL URLIsBlocked;
+```
+
 #### Discussion
 
-When a parent or guardian blocks the webpage’s URL, the webpage controller displays a blocking UI and then sets this property to [`YES`](https://developer.apple.com/documentation/objectivec/yes).
+When a parent or guardian blocks the webpage’s URL, the webpage controller displays a blocking UI and then sets this property to [`YES`](../../ObjectiveC/yes.md).
 
 ## See Also
 
-- [var suppressUsageRecording: Bool](stwebpagecontroller/suppressusagerecording.md)
+### Instance properties
+- [var suppressUsageRecording: Bool](./suppressusagerecording.md)
   A Boolean that indicates whether the webpage controller is not recording web usage.
-- [var url: URL?](stwebpagecontroller/url.md)
+- [var url: URL?](./url.md)
   The URL for the webpage.
-- [var urlIsPictureInPicture: Bool](stwebpagecontroller/urlispictureinpicture.md)
+- [var urlIsPictureInPicture: Bool](./urlispictureinpicture.md)
   A Boolean that indicates whether the webpage is currently displaying a floating picture in picture window.
-- [var urlIsPlayingVideo: Bool](stwebpagecontroller/urlisplayingvideo.md)
+- [var urlIsPlayingVideo: Bool](./urlisplayingvideo.md)
   A Boolean that indicates whether there are one or more videos currently playing in the webpage.
 
 

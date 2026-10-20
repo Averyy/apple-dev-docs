@@ -1,7 +1,8 @@
 # SKStoreProductParameterAdNetworkAttributionSignature
 
 **Framework**: StoreKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key that represents the advertising network’s cryptographic signature to use for install validation.
 
@@ -17,24 +18,29 @@ The key that represents the advertising network’s cryptographic signature to u
 let SKStoreProductParameterAdNetworkAttributionSignature: String
 ```
 
+```c
+extern NSString * const SKStoreProductParameterAdNetworkAttributionSignature;
+```
+
 ## Mentions
 
-- [Generating the signature to validate StoreKit-rendered ads](generating-the-signature-to-validate-storekit-rendered-ads.md)
-- [Signing and providing ads](signing-and-providing-ads.md)
+- [Generating the signature to validate StoreKit-rendered ads](./generating-the-signature-to-validate-storekit-rendered-ads.md)
+- [Signing and providing ads](./signing-and-providing-ads.md)
 
 #### Discussion
 
-The value for this key is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring). The ad network creates the cryptographic signature, used to sign ads. For instructions on generating this value, see [`Generating the signature to validate StoreKit-rendered ads`](generating-the-signature-to-validate-storekit-rendered-ads.md).
+The value for this key is an [`NSString`](../Foundation/nsstring.md). The ad network creates the cryptographic signature, used to sign ads. For instructions on generating this value, see [Generating the signature to validate StoreKit-rendered ads](./generating-the-signature-to-validate-storekit-rendered-ads.md).
 
 ## See Also
 
-- [let SKStoreProductParameterAdNetworkIdentifier: String](skstoreproductparameteradnetworkidentifier.md)
+### Required keys
+- [let SKStoreProductParameterAdNetworkIdentifier: String](./skstoreproductparameteradnetworkidentifier.md)
   The key that represents the advertising network’s unique identifier.
-- [let SKStoreProductParameterAdNetworkCampaignIdentifier: String](skstoreproductparameteradnetworkcampaignidentifier.md)
+- [let SKStoreProductParameterAdNetworkCampaignIdentifier: String](./skstoreproductparameteradnetworkcampaignidentifier.md)
   The key that represents the advertising network’s campaign.
-- [let SKStoreProductParameterAdNetworkTimestamp: String](skstoreproductparameteradnetworktimestamp.md)
+- [let SKStoreProductParameterAdNetworkTimestamp: String](./skstoreproductparameteradnetworktimestamp.md)
   The key that represents the UNIX time, in milliseconds, of the ad impression.
-- [let SKStoreProductParameterAdNetworkNonce: String](skstoreproductparameteradnetworknonce.md)
+- [let SKStoreProductParameterAdNetworkNonce: String](./skstoreproductparameteradnetworknonce.md)
   The key that represents a random value to use for added security.
 
 

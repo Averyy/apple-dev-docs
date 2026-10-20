@@ -1,12 +1,15 @@
 # maxTextLines
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of lines of text allowed inside of the element.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,19 +17,24 @@ The maximum number of lines of text allowed inside of the element.
 var maxTextLines: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger maxTextLines;
+```
+
 ## See Also
 
-- [var fontSize: CGFloat](tvviewelementstyle/fontsize.md)
+### Changing the Text of an Element
+- [var fontSize: CGFloat](./fontsize.md)
   The font size applied to any text contained in the element.
-- [var fontWeight: String?](tvviewelementstyle/fontweight.md)
+- [var fontWeight: String?](./fontweight.md)
   A string indicating how thick or thin the font is.
-- [var textAlignment: NSTextAlignment](tvviewelementstyle/textalignment.md)
+- [var textAlignment: NSTextAlignment](./textalignment.md)
   The horizontal alignment of text within an element.
-- [var textHighlightStyle: String?](tvviewelementstyle/texthighlightstyle.md)
+- [var textHighlightStyle: String?](./texthighlightstyle.md)
   A string indicating how a label reacts when it is in focus.
-- [var textMinimumScaleFactor: CGFloat](tvviewelementstyle/textminimumscalefactor.md)
+- [var textMinimumScaleFactor: CGFloat](./textminimumscalefactor.md)
   The minimum size text can be if the original text size does not fit in an element.
-- [var textStyle: String?](tvviewelementstyle/textstyle.md)
+- [var textStyle: String?](./textstyle.md)
   The style applied to the text in an element.
 
 

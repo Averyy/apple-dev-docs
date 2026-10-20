@@ -1,7 +1,8 @@
 # kSecPropertyKeyType
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the type of certificate property.
 
@@ -14,9 +15,13 @@ A key whose value indicates the type of certificate property.
 let kSecPropertyKeyType: CFString
 ```
 
+```c
+extern CFStringRef const kSecPropertyKeyType;
+```
+
 #### Discussion
 
-Possible values for this key are described in [`Certificate Property Type Values`](certificate-property-type-values.md).
+Possible values for this key are described in [Certificate Property Type Values](./certificate-property-type-values.md).
 
 
 ---

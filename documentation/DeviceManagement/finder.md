@@ -1,7 +1,8 @@
 # Finder
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures Finder settings.
 
@@ -10,7 +11,7 @@ The payload that configures Finder settings.
 
 ## Declaration
 
-```swift
+```
 object Finder
 ```
 
@@ -18,7 +19,7 @@ object Finder
 
 Specify `com.apple.finder` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.finder` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -87,34 +88,53 @@ Specify `com.apple.finder` as the payload type.
 ## Properties
 
 - `ProhibitBurn` (boolean): If `true`, the system disables the Finder’s burn support.
+
+  **Default**: `false`
 - `ProhibitConnectTo` (boolean): If `true`, the system disables Connect to Server.
+
+  **Default**: `false`
 - `ProhibitEject` (boolean): If `true`, the system disables Eject.
+
+  **Default**: `false`
 - `ProhibitGoToFolder` (boolean): If `true`, the system disables Go to Folder.
+
+  **Default**: `false`
 - `ShowExternalHardDrivesOnDesktop` (boolean): If `false`, the system doesn’t show external hard drives on the Desktop.
+
+  **Default**: `true`
 - `ShowHardDrivesOnDesktop` (boolean): If `false`, the system doesn’t show internal hard drives on the Desktop.
+
+  **Default**: `false`
 - `ShowMountedServersOnDesktop` (boolean): If `false`, the system doesn’t show mounted file servers on the Desktop.
+
+  **Default**: `false`
 - `ShowRemovableMediaOnDesktop` (boolean): If `false`, the system doesn’t show removable media items on the Desktop.
+
+  **Default**: `true`
 - `WarnOnEmptyTrash` (boolean): If `false`, the system doesn’t warn the user before emptying the trash.
+
+  **Default**: `true`
 
 ## See Also
 
-- [object Accessibility](accessibility.md)
+### User experience
+- [object Accessibility](./accessibility.md)
   The payload that configures the accessibility features of the device.
-- [object Desktop](desktop.md)
+- [object Desktop](./desktop.md)
   The payload that configures the desktop wallpaper.
-- [object Dock](dock.md)
+- [object Dock](./dock.md)
   The payload that configures the Dock.
-- [object HomeScreenLayout](homescreenlayout.md)
+- [object HomeScreenLayout](./homescreenlayout.md)
   The payload that configures the Home Screen layout.
-- [object ManagedMenuExtras](managedmenuextras.md)
+- [object ManagedMenuExtras](./managedmenuextras.md)
   The payload that configures menu extras.
-- [object Notifications](notifications.md)
+- [object Notifications](./notifications.md)
   The payload that configures notifications.
-- [object ScreensaverUser](screensaveruser.md)
+- [object ScreensaverUser](./screensaveruser.md)
   The payload that configures a user’s screen saver settings.
-- [object SetupAssistant](setupassistant.md)
+- [object SetupAssistant](./setupassistant.md)
   The payload that configures Setup Assistant settings.
-- [object TimeMachine](timemachine.md)
+- [object TimeMachine](./timemachine.md)
   The payload that configures Time Machine.
 
 

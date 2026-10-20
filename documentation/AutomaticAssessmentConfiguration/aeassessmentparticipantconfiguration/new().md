@@ -1,7 +1,8 @@
 # new()
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new assessment participant configuration instance.
 
@@ -17,13 +18,18 @@ Creates a new assessment participant configuration instance.
 class func new() -> Self
 ```
 
+```objc
++ (instancetype) new;
+```
+
 #### Return Value
 
 A new assessment participant configuration instance.
 
 ## See Also
 
-- [init()](aeassessmentparticipantconfiguration/init.md)
+### Creating participant configuration instances
+- [init()](./init%28%29.md)
   Initializes an assessment participant configuration instance.
 
 

@@ -1,7 +1,8 @@
 # Package.Dependency.SourceControlRequirement.revision(_:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A commit based requirement.
 

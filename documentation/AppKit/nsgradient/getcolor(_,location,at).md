@@ -1,7 +1,8 @@
 # getColor(_:location:at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns information about the color stop at the specified index in the receiverâ€™s color array.
 
@@ -12,6 +13,10 @@ Returns information about the color stop at the specified index in the receiverâ
 
 ```swift
 func getColor(_ color: AutoreleasingUnsafeMutablePointer<NSColor>?, location: UnsafeMutablePointer<CGFloat>?, at index: Int)
+```
+
+```objc
+- (void) getColor:(NSColor **) color location:(CGFloat *) location atIndex:(NSInteger) index;
 ```
 
 #### Discussion
@@ -26,11 +31,12 @@ This method returns the color stop information that was used to create the recei
 
 ## See Also
 
-- [var colorSpace: NSColorSpace](nsgradient/colorspace.md)
+### Getting Gradient Properties
+- [var colorSpace: NSColorSpace](./colorspace.md)
   The color space of the colors associated with the gradient.
-- [var numberOfColorStops: Int](nsgradient/numberofcolorstops.md)
+- [var numberOfColorStops: Int](./numberofcolorstops.md)
   The number of color stops associated with the gradient.
-- [func interpolatedColor(atLocation: CGFloat) -> NSColor](nsgradient/interpolatedcolor(atlocation:).md)
+- [func interpolatedColor(atLocation: CGFloat) -> NSColor](./interpolatedcolor%28atlocation%29.md)
   Returns the color of the rendered gradient at the specified relative location.
 
 

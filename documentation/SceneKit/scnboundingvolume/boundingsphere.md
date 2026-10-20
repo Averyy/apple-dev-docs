@@ -1,18 +1,19 @@
 # boundingSphere
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The center point and radius of the object’s bounding sphere.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -28,7 +29,8 @@ The coordinates provided when reading this property are valid only if the object
 
 ## See Also
 
-- [var boundingBox: (min: SCNVector3, max: SCNVector3)](scnboundingvolume/boundingbox.md)
+### Measuring an Object’s Bounding Volume
+- [var boundingBox: (min: SCNVector3, max: SCNVector3)](./boundingbox.md)
   The minimum and maximum corner points of the object’s bounding box.
 
 

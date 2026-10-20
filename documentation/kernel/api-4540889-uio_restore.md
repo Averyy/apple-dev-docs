@@ -1,14 +1,15 @@
 # uio_restore
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 int uio_restore(uio_t uio, uio_t snapshot_uio);
 ```
 

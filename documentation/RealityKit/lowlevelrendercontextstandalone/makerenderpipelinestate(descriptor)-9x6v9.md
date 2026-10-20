@@ -1,7 +1,8 @@
 # makeRenderPipelineState(descriptor:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously compiles a Metal render pipeline state from the given descriptor.
 
@@ -18,15 +19,21 @@ nonisolated
 (nonsending) final func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) async throws -> sending LowLevelRenderPipelineState
 ```
 
+**Other overloads**:
+
+```swift
+final func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) throws -> sending LowLevelRenderPipelineState
+```
+
 #### Return Value
 
-A compiled [`LowLevelRenderPipelineState`](lowlevelrenderpipelinestate.md).
+A compiled [`LowLevelRenderPipelineState`](../lowlevelrenderpipelinestate.md).
 
 #### Discussion
 
 The descriptor’s mesh format, material, and render target configuration are baked into the pipeline at compile time. Create pipeline states once and reuse them across frames.
 
-> **Note**: An error if pipeline compilation fails.
+> **Throws**: An error if pipeline compilation fails.
 
 ## Parameters
 

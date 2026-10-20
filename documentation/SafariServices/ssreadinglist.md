@@ -1,7 +1,8 @@
 # SSReadingList
 
 **Framework**: Safari Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object for adding items to a user’s Safari Reading List.
 
@@ -17,42 +18,47 @@ An object for adding items to a user’s Safari Reading List.
 class SSReadingList
 ```
 
+```objc
+@interface SSReadingList : NSObject
+```
+
 ## Topics
 
 ### Getting the Reading List Singleton Object
-- [class func `default`() -> SSReadingList?](ssreadinglist/default.md)
+- [class func `default`() -> SSReadingList?](./ssreadinglist/default%28%29.md)
   Returns the Safari Reading List singleton object.
 ### Checking Whether a URL is Supported by Reading List
-- [class func supportsURL(URL) -> Bool](ssreadinglist/supportsurl(_:).md)
+- [class func supportsURL(URL) -> Bool](./ssreadinglist/supportsurl%28_%29.md)
   Determines whether a URL can be added to the Reading List.
 ### Adding an Item to the Reading List
-- [func addItem(with: URL, title: String?, previewText: String?) throws](ssreadinglist/additem(with:title:previewtext:).md)
+- [func addItem(with: URL, title: String?, previewText: String?) throws](./ssreadinglist/additem%28with,title,previewtext%29.md)
   Adds an item to the Reading List.
 ### Constants
-- [Reading List Error Domain](reading-list-error-domain.md)
+- [Reading List Error Domain](./reading-list-error-domain.md)
   The domain used for Reading List errors.
-- [SSReadingListError.Code](ssreadinglisterror/code.md)
+- [SSReadingListError.Code](./ssreadinglisterror/code.md)
   Messages that describe a Safari Reading List error.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [let SSReadingListErrorDomain: String](ssreadinglisterrordomain.md)
+### Safari Reading List
+- [let SSReadingListErrorDomain: String](./ssreadinglisterrordomain.md)
   The domain for Safari Reading List errors.
-- [SSReadingListError.Code](ssreadinglisterror/code.md)
+- [SSReadingListError.Code](./ssreadinglisterror/code.md)
   Messages that describe a Safari Reading List error.
-- [struct SSReadingListError](ssreadinglisterror.md)
+- [struct SSReadingListError](./ssreadinglisterror.md)
   A Safari Reading List error.
 
 

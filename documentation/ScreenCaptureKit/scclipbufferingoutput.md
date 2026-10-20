@@ -1,7 +1,8 @@
 # SCClipBufferingOutput
 
 **Framework**: ScreenCaptureKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,10 @@
 class SCClipBufferingOutput
 ```
 
+```objc
+@interface SCClipBufferingOutput : NSObject
+```
+
 #### Overview
 
 SCClipBufferingOutput
@@ -26,31 +31,32 @@ SCClipBufferingOutput represents a clip buffering session on a SCStream.
 ## Topics
 
 ### Initializers
-- [init(delegate: (any SCClipBufferingOutputDelegate)?)](scclipbufferingoutput/init(delegate:).md)
+- [init(delegate: (any SCClipBufferingOutputDelegate)?)](./scclipbufferingoutput/init%28delegate%29.md)
 ### Instance Methods
-- [func exportClip(to: URL, duration: TimeInterval, completionHandler: (((any Error)?) -> Void)?)](scclipbufferingoutput/exportclip(to:duration:completionhandler:).md)
+- [func exportClip(to: URL, duration: TimeInterval, completionHandler: (((any Error)?) -> Void)?)](./scclipbufferingoutput/exportclip%28to,duration,completionhandler%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol SCStreamOutput](scstreamoutput.md)
+### Output processing
+- [protocol SCStreamOutput](./scstreamoutput.md)
   A delegate protocol your app implements to receive capture stream output events.
-- [enum SCStreamOutputType](scstreamoutputtype.md)
+- [enum SCStreamOutputType](./scstreamoutputtype.md)
   Constants that represent output types for a stream frame.
-- [struct SCStreamFrameInfo](scstreamframeinfo.md)
+- [struct SCStreamFrameInfo](./scstreamframeinfo.md)
   An instance that defines metadata keys for a stream frame.
-- [enum SCFrameStatus](scframestatus.md)
+- [enum SCFrameStatus](./scframestatus.md)
   Status values for a frame from a stream.
 
 

@@ -1,7 +1,8 @@
 # MTROperationalCertificateIssuer
 
 **Framework**: Matter  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 16.4+
@@ -18,16 +19,20 @@
 protocol MTROperationalCertificateIssuer
 ```
 
+```objc
+@protocol MTROperationalCertificateIssuer
+```
+
 ## Mentions
 
-- [Onboarding a Matter device](onboarding-a-matter-device.md)
+- [Onboarding a Matter device](./onboarding-a-matter-device.md)
 
 ## Topics
 
 ### Instance Properties
-- [var shouldSkipAttestationCertificateValidation: Bool](mtroperationalcertificateissuer/shouldskipattestationcertificatevalidation.md)
+- [var shouldSkipAttestationCertificateValidation: Bool](./mtroperationalcertificateissuer/shouldskipattestationcertificatevalidation.md)
 ### Instance Methods
-- [func issueOperationalCertificate(forRequest: MTROperationalCSRInfo, attestationInfo: MTRDeviceAttestationInfo, controller: MTRDeviceController, completion: (MTROperationalCertificateChain?, (any Error)?) -> Void)](mtroperationalcertificateissuer/issueoperationalcertificate(forrequest:attestationinfo:controller:completion:).md)
+- [func issueOperationalCertificate(forRequest: MTROperationalCSRInfo, attestationInfo: MTRDeviceAttestationInfo, controller: MTRDeviceController, completion: (MTROperationalCertificateChain?, (any Error)?) -> Void)](./mtroperationalcertificateissuer/issueoperationalcertificate%28forrequest,attestationinfo,controller,completion%29.md)
 
 
 ---

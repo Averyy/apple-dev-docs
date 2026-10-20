@@ -1,7 +1,8 @@
 # minimumZ
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum zoom level for a tile overlay.
 
@@ -10,7 +11,7 @@ The minimum zoom level for a tile overlay.
 
 ## Declaration
 
-```swift
+```
 get minimumZ(): number | null;
 set minimumZ(minimumZ: number | null);
 ```
@@ -23,9 +24,10 @@ The default value is `null`.
 
 ## See Also
 
-- [opacity](tileoverlay/opacity.md)
+### Setting overlay appearance
+- [opacity](./opacity.md)
   A number that indicates a tile’s opacity.
-- [maximumZ](tileoverlay/maximumz.md)
+- [maximumZ](./maximumz.md)
   The maximum zoom level for a tile overlay.
 
 

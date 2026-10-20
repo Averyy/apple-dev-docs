@@ -1,7 +1,8 @@
 # ScrollTransitionPhase
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The phases that a view transitions between when it scrolls among other views.
 
@@ -30,32 +31,33 @@ In the `identity` phase, scroll transitions should generally not make any visual
 ## Topics
 
 ### Getting the phase
-- [ScrollTransitionPhase.identity](scrolltransitionphase/identity.md)
+- [ScrollTransitionPhase.identity](./scrolltransitionphase/identity.md)
   The scroll transition is being applied to a view that is in the visible area.
-- [ScrollTransitionPhase.topLeading](scrolltransitionphase/topleading.md)
+- [ScrollTransitionPhase.topLeading](./scrolltransitionphase/topleading.md)
   The scroll transition is being applied to a view that is about to move into the visible area at the top edge of a vertical scroll view, or the leading edge of a horizont scroll view.
-- [ScrollTransitionPhase.bottomTrailing](scrolltransitionphase/bottomtrailing.md)
+- [ScrollTransitionPhase.bottomTrailing](./scrolltransitionphase/bottomtrailing.md)
   The scroll transition is being applied to a view that is about to move into the visible area at the bottom edge of a vertical scroll view, or the trailing edge of a horizontal scroll view.
 ### Accessing the phase state
-- [var isIdentity: Bool](scrolltransitionphase/isidentity.md)
-- [var value: Double](scrolltransitionphase/value.md)
+- [var isIdentity: Bool](./scrolltransitionphase/isidentity.md)
+- [var value: Double](./scrolltransitionphase/value.md)
   A phase-derived value that can be used to scale or otherwise modify effects.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [func scrollTransition(ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](view/scrolltransition(_:axis:transition:).md)
+### Animating scroll transitions
+- [func scrollTransition(ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](./view/scrolltransition%28_,axis,transition%29.md)
   Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
-- [func scrollTransition(topLeading: ScrollTransitionConfiguration, bottomTrailing: ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](view/scrolltransition(topleading:bottomtrailing:axis:transition:).md)
+- [func scrollTransition(topLeading: ScrollTransitionConfiguration, bottomTrailing: ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](./view/scrolltransition%28topleading,bottomtrailing,axis,transition%29.md)
   Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
-- [struct ScrollTransitionConfiguration](scrolltransitionconfiguration.md)
+- [struct ScrollTransitionConfiguration](./scrolltransitionconfiguration.md)
   The configuration of a scroll transition that controls how a transition is applied as a view is scrolled through the visible region of a containing scroll view or other container.
 
 

@@ -1,7 +1,8 @@
 # HKGAD7Assessment
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -17,48 +18,53 @@
 class HKGAD7Assessment
 ```
 
+```objc
+@interface HKGAD7Assessment : HKScoredAssessment
+```
+
 ## Topics
 
 ### Initializers
-- [convenience init(date: Date, answers: [HKGAD7Assessment.Answer], metadata: [String : Any]?)](hkgad7assessment/init(date:answers:metadata:).md)
+- [convenience init(date: Date, answers: [HKGAD7Assessment.Answer], metadata: [String : Any]?)](./hkgad7assessment/init%28date,answers,metadata%29.md)
 ### Instance Properties
-- [var answers: [HKGAD7Assessment.Answer]](hkgad7assessment/answers-1zj1.md)
-- [var risk: HKGAD7Assessment.Risk](hkgad7assessment/risk-swift.property.md)
+- [var answers: [HKGAD7Assessment.Answer]](./hkgad7assessment/answers-1zj1.md)
+- [var risk: HKGAD7Assessment.Risk](./hkgad7assessment/risk-swift.property.md)
 
 ## Relationships
 
 ### Inherits From
-- [HKScoredAssessment](hkscoredassessment.md)
+- [HKScoredAssessment](./hkscoredassessment.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKAudiogramSensitivityPointClampingRange](hkaudiogramsensitivitypointclampingrange.md)
+### Classes
+- [class HKAudiogramSensitivityPointClampingRange](./hkaudiogramsensitivitypointclampingrange.md)
   Defines the range within which an ear’s sensitivity point may have been clamped, if any.
-- [class HKAudiogramSensitivityTest](hkaudiogramsensitivitytest.md)
-- [class HKBiologicalSexObject](hkbiologicalsexobject.md)
-  This class acts as a wrapper for the [`HKBiologicalSex`](hkbiologicalsex.md) enumeration.
-- [class HKBloodTypeObject](hkbloodtypeobject.md)
-  This class acts as a wrapper for the [`HKBloodType`](hkbloodtype.md) enumeration.
-- [class HKFitzpatrickSkinTypeObject](hkfitzpatrickskintypeobject.md)
-  This class acts as a wrapper for the [`HKFitzpatrickSkinType`](hkfitzpatrickskintype.md) enumeration.
-- [class HKPHQ9Assessment](hkphq9assessment.md)
-- [class HKScoredAssessment](hkscoredassessment.md)
-- [class HKScoredAssessmentType](hkscoredassessmenttype.md)
-- [class HKStateOfMind](hkstateofmind.md)
-- [class HKStateOfMindType](hkstateofmindtype.md)
-- [class HKWheelchairUseObject](hkwheelchairuseobject.md)
+- [class HKAudiogramSensitivityTest](./hkaudiogramsensitivitytest.md)
+- [class HKBiologicalSexObject](./hkbiologicalsexobject.md)
+  This class acts as a wrapper for the [`HKBiologicalSex`](./hkbiologicalsex.md) enumeration.
+- [class HKBloodTypeObject](./hkbloodtypeobject.md)
+  This class acts as a wrapper for the [`HKBloodType`](./hkbloodtype.md) enumeration.
+- [class HKFitzpatrickSkinTypeObject](./hkfitzpatrickskintypeobject.md)
+  This class acts as a wrapper for the [`HKFitzpatrickSkinType`](./hkfitzpatrickskintype.md) enumeration.
+- [class HKPHQ9Assessment](./hkphq9assessment.md)
+- [class HKScoredAssessment](./hkscoredassessment.md)
+- [class HKScoredAssessmentType](./hkscoredassessmenttype.md)
+- [class HKStateOfMind](./hkstateofmind.md)
+- [class HKStateOfMindType](./hkstateofmindtype.md)
+- [class HKWheelchairUseObject](./hkwheelchairuseobject.md)
   This class acts as a wrapper for the wheelchair use enumeration.
 
 

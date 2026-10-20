@@ -1,7 +1,8 @@
 # bootLoader
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The guest system to boot when the VM starts.
 
@@ -14,9 +15,13 @@ The guest system to boot when the VM starts.
 var bootLoader: VZBootLoader? { get set }
 ```
 
+```objc
+@property (strong, nullable) VZBootLoader * bootLoader;
+```
+
 #### Discussion
 
-Assign the boot loader object that contains information about how to load your guest operating system. For example, to configure your VM with a Linux operating system, assign a [`VZLinuxBootLoader`](vzlinuxbootloader.md) object.
+Assign the boot loader object that contains information about how to load your guest operating system. For example, to configure your VM with a Linux operating system, assign a [`VZLinuxBootLoader`](../vzlinuxbootloader.md) object.
 
 
 ---

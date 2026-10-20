@@ -1,7 +1,8 @@
 # filename
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The item’s filename.
 
@@ -18,9 +19,14 @@ The item’s filename.
 static var filename: NSFileProviderItemFields { get }
 ```
 
+```c
+NSFileProviderItemFilename
+```
+
 ## See Also
 
-- [static var contents: NSFileProviderItemFields](nsfileprovideritemfields/contents.md)
+### Specifying the Required Fields
+- [static var contents: NSFileProviderItemFields](./contents.md)
   The item’s content.
 
 

@@ -1,7 +1,8 @@
 # errSecNetworkFailure
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A network failure occurred.
 
@@ -18,6 +19,10 @@ A network failure occurred.
 
 ```swift
 var errSecNetworkFailure: OSStatus { get }
+```
+
+```c
+errSecNetworkFailure
 ```
 
 

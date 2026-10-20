@@ -1,7 +1,8 @@
 # mutableRawView
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a mutable raw view over the same data.
 
@@ -19,9 +20,12 @@ Returns a mutable raw view over the same data.
 var mutableRawView: NDArray.MutableRawView { get }
 ```
 
+Available when `Element` conforms to `BitwiseCopyable`.
+
 ## See Also
 
-- [var view: NDArray.View<Element>](ndarray/mutableview/view.md)
+### Converting to other views
+- [var view: NDArray.View<Element>](./view.md)
   An immutable view of this mutable view.
 
 

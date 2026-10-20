@@ -1,23 +1,25 @@
 # USBIdlePolicyTypeInterface
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An idle policy that applies to the interface connected to the device.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 USBIdlePolicyTypeInterface
 ```
 
 ## See Also
 
-- [USBIdlePolicyTypePipe](usbidlepolicytype/usbidlepolicytypepipe.md)
+### Getting the Idle Policy
+- [USBIdlePolicyTypePipe](./usbidlepolicytypepipe.md)
   An idle policy that applies to the pipe that communicates with the device.
 
 

@@ -1,7 +1,8 @@
 # animated(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new configuration that discretely animates the transition when the view becomes visible.
 
@@ -34,13 +35,14 @@ Unlike the interactive configuration, the transition isn’t interpolated as the
 
 ## See Also
 
-- [static let identity: ScrollTransitionConfiguration](scrolltransitionconfiguration/identity.md)
+### Getting the configuration
+- [static let identity: ScrollTransitionConfiguration](./identity.md)
   Creates a new configuration that does not change the appearance of the view.
-- [static let animated: ScrollTransitionConfiguration](scrolltransitionconfiguration/animated.md)
+- [static let animated: ScrollTransitionConfiguration](./animated.md)
   Creates a new configuration that discretely animates the transition when the view becomes visible.
-- [static let interactive: ScrollTransitionConfiguration](scrolltransitionconfiguration/interactive.md)
+- [static let interactive: ScrollTransitionConfiguration](./interactive.md)
   Creates a new configuration that interactively interpolates the transition’s effect as the view is scrolled into the visible region of the container.
-- [static func interactive(timingCurve: UnitCurve) -> ScrollTransitionConfiguration](scrolltransitionconfiguration/interactive(timingcurve:).md)
+- [static func interactive(timingCurve: UnitCurve) -> ScrollTransitionConfiguration](./interactive%28timingcurve%29.md)
   Creates a new configuration that interactively interpolates the transition’s effect as the view is scrolled into the visible region of the container.
 
 

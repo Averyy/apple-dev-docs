@@ -1,17 +1,22 @@
 # setAssociatedPoints(_:at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the points associated with the specified path element.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setAssociatedPoints(_ points: NSPointArray?, at index: Int)
+```
+
+```objc
+- (void) setAssociatedPoints:(NSPointArray) points atIndex:(NSInteger) index;
 ```
 
 #### Discussion
@@ -32,7 +37,7 @@ NSPoint newPoint = NSMakePoint(50.0, 50.0);
 [bezierPath setAssociatedPoints: &newPoint atIndex: 1];
 ```
 
-> **Note**:  If you specify too few points for a path element of type [`NSCurveToBezierPathElement`](nscurvetobezierpathelement.md), the behavior of this method is undefined.
+> **Note**:  If you specify too few points for a path element of type [`NSCurveToBezierPathElement`](../nscurvetobezierpathelement.md), the behavior of this method is undefined.
 
 ## Parameters
 
@@ -41,14 +46,15 @@ NSPoint newPoint = NSMakePoint(50.0, 50.0);
 
 ## See Also
 
-- [var cgPath: CGPath](nsbezierpath/cgpath.md)
-- [var elementCount: Int](nsbezierpath/elementcount.md)
+### Accessing Elements of a Path
+- [var cgPath: CGPath](./cgpath.md)
+- [var elementCount: Int](./elementcount.md)
   The total number of path elements in the path.
-- [func element(at: Int) -> NSBezierPath.ElementType](nsbezierpath/element(at:).md)
+- [func element(at: Int) -> NSBezierPath.ElementType](./element%28at%29.md)
   Returns the type of path element at the specified index.
-- [func element(at: Int, associatedPoints: NSPointArray?) -> NSBezierPath.ElementType](nsbezierpath/element(at:associatedpoints:).md)
+- [func element(at: Int, associatedPoints: NSPointArray?) -> NSBezierPath.ElementType](./element%28at,associatedpoints%29.md)
   Gets the element type and (and optionally) the associated points for the path element at the specified index.
-- [func removeAllPoints()](nsbezierpath/removeallpoints.md)
+- [func removeAllPoints()](./removeallpoints%28%29.md)
   Removes all path elements from the path, effectively clearing the path.
 
 

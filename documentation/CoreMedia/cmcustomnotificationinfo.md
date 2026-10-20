@@ -1,7 +1,8 @@
 # CMCustomNotificationInfo
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Holds custom userInfo for notification sent for a buffer event.
 
@@ -23,17 +24,17 @@ struct CMCustomNotificationInfo
 ## Topics
 
 ### Initializers
-- [init(userInfo: [String : any Sendable])](cmcustomnotificationinfo/init(userinfo:).md)
+- [init(userInfo: [String : any Sendable])](./cmcustomnotificationinfo/init%28userinfo%29.md)
 ### Instance Properties
-- [var userInfo: [String : any Sendable]](cmcustomnotificationinfo/userinfo.md)
+- [var userInfo: [String : any Sendable]](./cmcustomnotificationinfo/userinfo.md)
 
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](../corevideo/cvattachmentvaluerepresentable.md)
-- [ExpressibleByDictionaryLiteral](../swift/expressiblebydictionaryliteral.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/cvattachmentvaluerepresentable.md)
+- [ExpressibleByDictionaryLiteral](../Swift/expressiblebydictionaryliteral.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

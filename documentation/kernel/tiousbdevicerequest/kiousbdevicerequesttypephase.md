@@ -1,7 +1,8 @@
 # kIOUSBDeviceRequestTypePhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The type phase.
 
@@ -10,7 +11,7 @@ The type phase.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestTypePhase = IOUSBBitRangePhase(5, 6)
 ```
 

@@ -1,15 +1,16 @@
 # kAudioUnitProperty_DeferredRendererExtraLatency
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 var kAudioUnitProperty_DeferredRendererExtraLatency: AudioUnitPropertyID { get }
 ```
 
+```c
+kAudioUnitProperty_DeferredRendererExtraLatency
+```
+
 ## See Also
 
-- [var kAudioUnitProperty_DeferredRendererPullSize: AudioUnitPropertyID](kaudiounitproperty_deferredrendererpullsize.md)
-- [var kAudioUnitProperty_DeferredRendererWaitFrames: AudioUnitPropertyID](kaudiounitproperty_deferredrendererwaitframes.md)
+### Constants
+- [var kAudioUnitProperty_DeferredRendererPullSize: AudioUnitPropertyID](./kaudiounitproperty_deferredrendererpullsize.md)
+- [var kAudioUnitProperty_DeferredRendererWaitFrames: AudioUnitPropertyID](./kaudiounitproperty_deferredrendererwaitframes.md)
 
 
 ---

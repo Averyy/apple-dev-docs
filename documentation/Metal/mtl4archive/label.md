@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A label that you can associate with this archive.
@@ -18,6 +19,10 @@ A label that you can associate with this archive.
 
 ```swift
 var label: String? { get set }
+```
+
+```objc
+@property (atomic, copy, nullable) NSString * label;
 ```
 
 

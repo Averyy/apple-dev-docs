@@ -1,7 +1,8 @@
 # NSURLErrorBackgroundTaskCancelledReasonKey
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key in the error dictionary that provides the reason for canceling a background task.
 
@@ -20,23 +21,28 @@ A key in the error dictionary that provides the reason for canceling a backgroun
 let NSURLErrorBackgroundTaskCancelledReasonKey: String
 ```
 
+```c
+extern NSString * const NSURLErrorBackgroundTaskCancelledReasonKey;
+```
+
 #### Discussion
 
-The value associated with this key is an [`NSNumber`](nsnumber.md). For a list of possible values, see URL Session Background Task Cancellation Reasons.
+The value associated with this key is an [`NSNumber`](./nsnumber.md). For a list of possible values, see URL Session Background Task Cancellation Reasons.
 
 ## See Also
 
-- [let NSURLErrorFailingURLErrorKey: String](nsurlerrorfailingurlerrorkey.md)
+### Keys
+- [let NSURLErrorFailingURLErrorKey: String](./nsurlerrorfailingurlerrorkey.md)
   The URL which caused a load to fail.
-- [let NSURLErrorFailingURLPeerTrustErrorKey: String](nsurlerrorfailingurlpeertrusterrorkey.md)
+- [let NSURLErrorFailingURLPeerTrustErrorKey: String](./nsurlerrorfailingurlpeertrusterrorkey.md)
   The state of a failed SSL handshake.
-- [let NSURLErrorFailingURLStringErrorKey: String](nsurlerrorfailingurlstringerrorkey.md)
+- [let NSURLErrorFailingURLStringErrorKey: String](./nsurlerrorfailingurlstringerrorkey.md)
   The URL which caused a load to fail.
-- [URL Session Background Task Cancellation Reasons](url-session-background-task-cancellation-reasons.md)
+- [URL Session Background Task Cancellation Reasons](./url-session-background-task-cancellation-reasons.md)
   Reasons that indicate why the system canceled a background task.
-- [let NSURLErrorNetworkUnavailableReasonKey: String](nsurlerrornetworkunavailablereasonkey.md)
+- [let NSURLErrorNetworkUnavailableReasonKey: String](./nsurlerrornetworkunavailablereasonkey.md)
   The reason the network was unavailable for a task.
-- [URLError.NetworkUnavailableReason](urlerror/networkunavailablereason-swift.enum.md)
+- [URLError.NetworkUnavailableReason](./urlerror/networkunavailablereason-swift.enum.md)
   An enumeration of reasons explaining why a task couldn’t satisfy networking constraints.
 
 

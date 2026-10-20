@@ -1,7 +1,8 @@
 # pageIndex
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the zero-based page index referenced by the remote go-to action.
 
@@ -17,6 +18,10 @@ Returns the zero-based page index referenced by the remote go-to action.
 
 ```swift
 var pageIndex: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger pageIndex;
 ```
 
 #### Return Value

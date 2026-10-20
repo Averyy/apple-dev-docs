@@ -1,7 +1,8 @@
 # cloudCover
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The percentage of the sky covered with clouds.
 
@@ -26,11 +27,12 @@ The value is from `0` (no cloud cover)  to `1` (complete cloud cover).
 
 ## See Also
 
-- [var condition: WeatherCondition](hourweather/condition.md)
+### Getting conditions
+- [var condition: WeatherCondition](./condition.md)
   A description of the weather condition for this hour.
-- [var isDaylight: Bool](hourweather/isdaylight.md)
+- [var isDaylight: Bool](./isdaylight.md)
   The presence or absence of daylight at the requested location and hour.
-- [var visibility: Measurement<UnitLength>](hourweather/visibility.md)
+- [var visibility: Measurement<UnitLength>](./visibility.md)
   The distance at which an object can be clearly seen.
 
 

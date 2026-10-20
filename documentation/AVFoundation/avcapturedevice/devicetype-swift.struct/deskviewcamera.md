@@ -1,7 +1,8 @@
 # deskViewCamera
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A virtual overhead camera that captures a user’s desk.
 
@@ -14,11 +15,15 @@ A virtual overhead camera that captures a user’s desk.
 static let deskViewCamera: AVCaptureDevice.DeviceType
 ```
 
+```c
+extern AVCaptureDeviceType const AVCaptureDeviceTypeDeskViewCamera;
+```
+
 #### Discussion
 
 This device type provides a distortion-corrected cut out from an ultra wide camera that approximates an overhead view of a user’s physical desktop.
 
-You can use this device type with [`AVCaptureMultiCamSession`](avcapturemulticamsession.md).
+You can use this device type with [`AVCaptureMultiCamSession`](../../avcapturemulticamsession.md).
 
 
 ---

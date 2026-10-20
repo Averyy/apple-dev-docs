@@ -1,7 +1,8 @@
 # VNAnimalIdentifier
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An animal identifier string.
 
@@ -11,31 +12,36 @@ An animal identifier string.
 struct VNAnimalIdentifier
 ```
 
+```c
+typedef NSString * VNAnimalIdentifier;
+```
+
 ## Topics
 
 ### Animals
-- [static let cat: VNAnimalIdentifier](vnanimalidentifier/cat.md)
+- [static let cat: VNAnimalIdentifier](./vnanimalidentifier/cat.md)
   An animal identifier for cats.
-- [static let dog: VNAnimalIdentifier](vnanimalidentifier/dog.md)
+- [static let dog: VNAnimalIdentifier](./vnanimalidentifier/dog.md)
   An animal identifier for dogs.
 ### Initializers
-- [init(rawValue: String)](vnanimalidentifier/init(rawvalue:).md)
+- [init(rawValue: String)](./vnanimalidentifier/init%28rawvalue%29.md)
   Creates an identifier with a string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func supportedIdentifiers() throws -> [VNAnimalIdentifier]](vnrecognizeanimalsrequest/supportedidentifiers.md)
+### Identifying Animals
+- [func supportedIdentifiers() throws -> [VNAnimalIdentifier]](./vnrecognizeanimalsrequest/supportedidentifiers%28%29.md)
   Returns the identifiers of the animals that the request detects.
-- [class func knownAnimalIdentifiers(forRevision: Int) throws -> [VNAnimalIdentifier]](vnrecognizeanimalsrequest/knownanimalidentifiers(forrevision:).md)
+- [class func knownAnimalIdentifiers(forRevision: Int) throws -> [VNAnimalIdentifier]](./vnrecognizeanimalsrequest/knownanimalidentifiers%28forrevision%29.md)
   Returns a list of animal identifiers the recognition algorithm supports for the specified revision.
 
 

@@ -1,7 +1,8 @@
 # viewSafeAreaInsetsDidChange()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to notify the view controller that the safe area insets of its root view changed.
 
@@ -18,9 +19,13 @@ Called to notify the view controller that the safe area insets of its root view 
 func viewSafeAreaInsetsDidChange()
 ```
 
+```objc
+- (void) viewSafeAreaInsetsDidChange;
+```
+
 ## Mentions
 
-- [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
+- [Displaying and managing views with a view controller](../displaying-and-managing-views-with-a-view-controller.md)
 
 #### Discussion
 
@@ -28,9 +33,10 @@ Use this method to update your interface to accommodate the new safe area. UIKit
 
 ## See Also
 
-- [Positioning content relative to the safe area](positioning-content-relative-to-the-safe-area.md)
+### Extending the view’s safe area
+- [Positioning content relative to the safe area](../positioning-content-relative-to-the-safe-area.md)
   Position views so that they aren’t obstructed by other content.
-- [var additionalSafeAreaInsets: UIEdgeInsets](uiviewcontroller/additionalsafeareainsets.md)
+- [var additionalSafeAreaInsets: UIEdgeInsets](./additionalsafeareainsets.md)
   Custom insets that you specify to modify the view controller’s safe area.
 
 

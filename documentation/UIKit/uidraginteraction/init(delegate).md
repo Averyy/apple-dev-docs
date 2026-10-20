@@ -1,7 +1,8 @@
 # init(delegate:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a drag interaction object with a custom delegate object.
 
@@ -15,6 +16,10 @@ Initializes a drag interaction object with a custom delegate object.
 
 ```swift
 init(delegate: any UIDragInteractionDelegate)
+```
+
+```objc
+- (instancetype) initWithDelegate:(id<UIDragInteractionDelegate>) delegate;
 ```
 
 #### Return Value

@@ -1,13 +1,14 @@
 # SpatialPreviewSessionError.invalidSpatialPreviewEndpoint
 
 **Framework**: Spatial Preview  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use of an invalid spatial preview device
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

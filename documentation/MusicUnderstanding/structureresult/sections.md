@@ -1,7 +1,8 @@
 # sections
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time ranges of each section in the song.
 

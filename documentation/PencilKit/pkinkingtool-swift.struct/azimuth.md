@@ -1,7 +1,8 @@
 # azimuth
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The base angle of the ink.
 

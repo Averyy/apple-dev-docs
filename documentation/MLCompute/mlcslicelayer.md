@@ -1,21 +1,26 @@
 # MLCSliceLayer
 
 **Framework**: ML Compute  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A layer that extracts a slice from a tensor.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 class MLCSliceLayer
+```
+
+```objc
+@interface MLCSliceLayer : MLCLayer
 ```
 
 #### Overview
@@ -27,45 +32,46 @@ Use a slice layer to slice a given source. Slicing won’t decrease the tensor d
 ## Topics
 
 ### Creating Slice Layers
-- [convenience init?(start: [Int], end: [Int], stride: [Int]?)](mlcslicelayer/init(start:end:stride:).md)
+- [convenience init?(start: [Int], end: [Int], stride: [Int]?)](./mlcslicelayer/init%28start,end,stride%29.md)
   Creates a slice layer with the start, end, and stride you specify.
 ### Inspecting Slice Layers
-- [var start: [Int]](mlcslicelayer/start-6wsh6.md)
+- [var start: [Int]](./mlcslicelayer/start-6wsh6.md)
   The start vector.
-- [var end: [Int]](mlcslicelayer/end-9xw91.md)
+- [var end: [Int]](./mlcslicelayer/end-9xw91.md)
   The end vector.
-- [var stride: [Int]?](mlcslicelayer/stride-84fhb.md)
+- [var stride: [Int]?](./mlcslicelayer/stride-84fhb.md)
   The stride vector.
 
 ## Relationships
 
 ### Inherits From
-- [MLCLayer](mlclayer.md)
+- [MLCLayer](./mlclayer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MLCTransposeLayer](mlctransposelayer.md)
+### Transformation Layers
+- [class MLCTransposeLayer](./mlctransposelayer.md)
   A layer that permutes the dimensions you specify.
-- [class MLCConcatenationLayer](mlcconcatenationlayer.md)
+- [class MLCConcatenationLayer](./mlcconcatenationlayer.md)
   A layer that combines tensors into a single tensor.
-- [class MLCReshapeLayer](mlcreshapelayer.md)
+- [class MLCReshapeLayer](./mlcreshapelayer.md)
   A layer that reshapes a tensor with the shape you specify.
-- [class MLCSplitLayer](mlcsplitlayer.md)
+- [class MLCSplitLayer](./mlcsplitlayer.md)
   A layer that splits a tensor value into a list of subtensors.
-- [class MLCPaddingLayer](mlcpaddinglayer.md)
+- [class MLCPaddingLayer](./mlcpaddinglayer.md)
   A layer that pads a tensor with the padding sizes you specify.
-- [class MLCScatterLayer](mlcscatterlayer.md)
+- [class MLCScatterLayer](./mlcscatterlayer.md)
   A layer that updates the output at an index you specify.
-- [class MLCSelectionLayer](mlcselectionlayer.md)
+- [class MLCSelectionLayer](./mlcselectionlayer.md)
   A layer for selecting elements from two tensors.
-- [class MLCGatherLayer](mlcgatherlayer.md)
+- [class MLCGatherLayer](./mlcgatherlayer.md)
   A layer that fetches data at the locations you specify.
 
 

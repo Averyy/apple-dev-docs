@@ -1,7 +1,8 @@
 # max
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A function for pooling that computes the maximum of each element in the pooling kernel.
 
@@ -11,8 +12,10 @@ A function for pooling that computes the maximum of each element in the pooling 
 - Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,7 +25,8 @@ static var max: BNNSPoolingFunction { get }
 
 ## See Also
 
-- [static var average: BNNSPoolingFunction](bnnspoolingfunction/average.md)
+### Pooling Functions
+- [static var average: BNNSPoolingFunction](./average.md)
   A function for pooling that computes the average of each element in the pooling kernel.
 
 

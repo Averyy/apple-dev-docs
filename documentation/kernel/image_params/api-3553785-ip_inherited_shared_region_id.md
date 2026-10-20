@@ -1,14 +1,15 @@
 # ip_inherited_shared_region_id
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 char *ip_inherited_shared_region_id;
 ```
 

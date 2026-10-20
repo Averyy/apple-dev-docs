@@ -1,7 +1,8 @@
 # cc
 
 **Framework**: Message UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 3.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var cc: [String] { get }
+```
+
+```objc
+@property (nonatomic, readonly, nonnull) NSArray<NSString *> * cc;
 ```
 
 

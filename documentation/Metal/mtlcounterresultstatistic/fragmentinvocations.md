@@ -1,7 +1,8 @@
 # fragmentInvocations
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of times a render pass calls fragment shaders.
 
@@ -19,21 +20,26 @@ The number of times a render pass calls fragment shaders.
 var fragmentInvocations: UInt64
 ```
 
+```c
+uint64_t fragmentInvocations;
+```
+
 ## See Also
 
-- [var tessellationInputPatches: UInt64](mtlcounterresultstatistic/tessellationinputpatches.md)
+### Statistics values
+- [var tessellationInputPatches: UInt64](./tessellationinputpatches.md)
   The number of tessellation patches a render pass sends to the tessellation stage.
-- [var vertexInvocations: UInt64](mtlcounterresultstatistic/vertexinvocations.md)
+- [var vertexInvocations: UInt64](./vertexinvocations.md)
   The number of times a render pass calls any vertex shader.
-- [var postTessellationVertexInvocations: UInt64](mtlcounterresultstatistic/posttessellationvertexinvocations.md)
+- [var postTessellationVertexInvocations: UInt64](./posttessellationvertexinvocations.md)
   The number of vertices a render pass sends to a post-tessellation vertex shader.
-- [var clipperInvocations: UInt64](mtlcounterresultstatistic/clipperinvocations.md)
+- [var clipperInvocations: UInt64](./clipperinvocations.md)
   The number of primitives a render pass sends to the clip stage.
-- [var clipperPrimitivesOut: UInt64](mtlcounterresultstatistic/clipperprimitivesout.md)
+- [var clipperPrimitivesOut: UInt64](./clipperprimitivesout.md)
   The number of primitives the clip stage produces during a render pass.
-- [var fragmentsPassed: UInt64](mtlcounterresultstatistic/fragmentspassed.md)
+- [var fragmentsPassed: UInt64](./fragmentspassed.md)
   The number of fragments a render pass sends to the visibility and blend stages because they pass the scissor, depth, and stencil tests.
-- [var computeKernelInvocations: UInt64](mtlcounterresultstatistic/computekernelinvocations.md)
+- [var computeKernelInvocations: UInt64](./computekernelinvocations.md)
   The number of times a pass calls any compute kernel.
 
 

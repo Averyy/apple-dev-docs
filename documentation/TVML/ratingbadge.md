@@ -17,38 +17,39 @@ The `ratingBadge` element contains a link to an image that is to be displayed. T
 </reviewCard>
 ```
 
-##### Contained in
+##### Contained In
 
-- [`organizer`](organizer.md)
-- [`ratingCard`](ratingcard.md)
-- [`reviewCard`](reviewcard.md)
+- [organizer](./organizer.md)
+- [ratingCard](./ratingcard.md)
+- [reviewCard](./reviewcard.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [margin](margin.md)
+- [margin](./margin.md)
   Specifies the spacing around an element.
-- [tv-rating-style](tv-rating-style.md)
+- [tv-rating-style](./tv-rating-style.md)
   Sets the displayed image for rating a product.
-- [tv-tint-color](tv-tint-color.md)
+- [tv-tint-color](./tv-tint-color.md)
   Sets the tint color for an element.
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
-- [value](value.md)
+- [value](./value.md)
   Specifies the value used for a fillable element.
 
 ## See Also
 
-- [badge](badge.md)
+### Badge Elements
+- [badge](./badge.md)
   A small image displayed alongside or on top of another image.
-- [seasonBadge](seasonbadge.md)
+- [seasonBadge](./seasonbadge.md)
   Displays an image that indicates the season for an associated media item.
-- [textBadge](textbadge.md)
+- [textBadge](./textbadge.md)
   Displays text associated with an image.
 
 

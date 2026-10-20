@@ -1,7 +1,8 @@
 # kAudioChannelLayoutTag_Atmos_7_1_4
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 13.0+
@@ -18,12 +19,17 @@
 var kAudioChannelLayoutTag_Atmos_7_1_4: AudioChannelLayoutTag { get }
 ```
 
+```c
+kAudioChannelLayoutTag_Atmos_7_1_4
+```
+
 ## See Also
 
-- [var kAudioChannelLayoutTag_Atmos_5_1_2: AudioChannelLayoutTag](kaudiochannellayouttag_atmos_5_1_2.md)
-- [var kAudioChannelLayoutTag_Atmos_5_1_4: AudioChannelLayoutTag](kaudiochannellayouttag_atmos_5_1_4.md)
-- [var kAudioChannelLayoutTag_Atmos_7_1_2: AudioChannelLayoutTag](kaudiochannellayouttag_atmos_7_1_2.md)
-- [var kAudioChannelLayoutTag_Atmos_9_1_6: AudioChannelLayoutTag](kaudiochannellayouttag_atmos_9_1_6.md)
+### Atmos Layouts
+- [var kAudioChannelLayoutTag_Atmos_5_1_2: AudioChannelLayoutTag](./kaudiochannellayouttag_atmos_5_1_2.md)
+- [var kAudioChannelLayoutTag_Atmos_5_1_4: AudioChannelLayoutTag](./kaudiochannellayouttag_atmos_5_1_4.md)
+- [var kAudioChannelLayoutTag_Atmos_7_1_2: AudioChannelLayoutTag](./kaudiochannellayouttag_atmos_7_1_2.md)
+- [var kAudioChannelLayoutTag_Atmos_9_1_6: AudioChannelLayoutTag](./kaudiochannellayouttag_atmos_9_1_6.md)
 
 
 ---

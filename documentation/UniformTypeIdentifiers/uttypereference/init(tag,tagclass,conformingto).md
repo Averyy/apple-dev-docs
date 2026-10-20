@@ -1,7 +1,8 @@
 # init(tag:tagClass:conformingTo:)
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 14.0+
@@ -16,6 +17,10 @@
 
 ```swift
 convenience init?(tag: String, tagClass: String, conformingTo supertype: UTType?)
+```
+
+```objc
++ (instancetype) typeWithTag:(NSString *) tag tagClass:(NSString *) tagClass conformingToType:(UTType *) supertype;
 ```
 
 #### Return Value

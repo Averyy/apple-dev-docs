@@ -1,7 +1,8 @@
 # setPredicate(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value of the views according to the given predicate.
 
@@ -14,9 +15,13 @@ Sets the value of the views according to the given predicate.
 func setPredicate(_ predicate: NSPredicate)
 ```
 
+```objc
+- (void) setPredicate:(NSPredicate *) predicate;
+```
+
 #### Discussion
 
-This method is only called if [`match(for:)`](nspredicateeditorrowtemplate/match(for:).md) returned a positive value for the receiver.
+This method is only called if [`match(for:)`](./match%28for%29.md) returned a positive value for the receiver.
 
 You can override this to set the values of custom views.
 
@@ -26,13 +31,14 @@ You can override this to set the values of custom views.
 
 ## See Also
 
-- [func match(for: NSPredicate) -> Double](nspredicateeditorrowtemplate/match(for:).md)
+### Primitive Methods
+- [func match(for: NSPredicate) -> Double](./match%28for%29.md)
   Returns a positive number if the receiver can represent a given predicate, and `0` if it cannot.
-- [var templateViews: [NSView]](nspredicateeditorrowtemplate/templateviews.md)
+- [var templateViews: [NSView]](./templateviews.md)
   Returns the views that display this template’s predicate.
-- [func displayableSubpredicates(of: NSPredicate) -> [NSPredicate]?](nspredicateeditorrowtemplate/displayablesubpredicates(of:).md)
+- [func displayableSubpredicates(of: NSPredicate) -> [NSPredicate]?](./displayablesubpredicates%28of%29.md)
   Returns the subpredicates that should be made sub-rows of a given predicate.
-- [func predicate(withSubpredicates: [NSPredicate]?) -> NSPredicate](nspredicateeditorrowtemplate/predicate(withsubpredicates:).md)
+- [func predicate(withSubpredicates: [NSPredicate]?) -> NSPredicate](./predicate%28withsubpredicates%29.md)
   Returns the predicate represented by the receiver’s views’ values and the given sub-predicates.
 
 

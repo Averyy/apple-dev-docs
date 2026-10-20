@@ -1,7 +1,8 @@
 # versionHash
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The relationship’s unique identity.
 
@@ -10,7 +11,7 @@ The relationship’s unique identity.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ The relationship’s unique identity.
 var versionHash: Data { get }
 ```
 
+```objc
+@property (copy, readonly) NSData * versionHash;
+```
+
 #### Discussion
 
-To calculate its version hash, the relationship combines its superclass’s [`versionHash`](nspropertydescription/versionhash.md) property with the values of [`inverseRelationship`](nsrelationshipdescription/inverserelationship.md), [`destinationEntity`](nsrelationshipdescription/destinationentity.md), [`minCount`](nsrelationshipdescription/mincount.md), and [`maxCount`](nsrelationshipdescription/maxcount.md).
+To calculate its version hash, the relationship combines its superclass’s [`versionHash`](../nspropertydescription/versionhash.md) property with the values of [`inverseRelationship`](./inverserelationship.md), [`destinationEntity`](./destinationentity.md), [`minCount`](./mincount.md), and [`maxCount`](./maxcount.md).
 
 
 ---

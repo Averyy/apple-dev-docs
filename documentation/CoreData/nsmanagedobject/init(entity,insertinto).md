@@ -1,7 +1,8 @@
 # init(entity:insertInto:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a managed object from an entity description and inserts it into the specified managed object context.
 
@@ -10,7 +11,7 @@ Initializes a managed object from an entity description and inserts it into the 
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Initializes a managed object from an entity description and inserts it into the 
 
 ```swift
 init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?)
+```
+
+```objc
+- (NSManagedObject *) initWithEntity:(NSEntityDescription *) entity insertIntoManagedObjectContext:(NSManagedObjectContext *) context;
 ```
 
 #### Return Value
@@ -28,17 +33,17 @@ An initialized instance of the appropriate class for `entity`.
 
 `NSManagedObject` uses dynamic class generation to support the Objective-C 2 properties feature (see Declared Properties) by automatically creating a subclass of the class appropriate for `entity`. `initWithEntity:insertIntoManagedObjectContext:` therefore returns an instance of the appropriate class for `entity`. The dynamically-generated subclass will be based on the class specified by the entity, so specifying a custom class in your model will supersede the class passed to `alloc`.
 
-If `context` is not `nil`, this method invokes `[context insertObject:self]` (which causes [`awakeFromInsert()`](nsmanagedobject/awakefrominsert().md) to be invoked).
+If `context` is not `nil`, this method invokes `[context insertObject:self]` (which causes [`awakeFromInsert()`](./awakefrominsert%28%29.md) to be invoked).
 
-You are discouraged from overriding this method—you should instead override [`awakeFromInsert()`](nsmanagedobject/awakefrominsert().md) and/or [`awakeFromFetch()`](nsmanagedobject/awakefromfetch().md) (if there is logic common to these methods, it should be factored into a third method which is invoked from both). If you do perform custom initialization in this method, you may cause problems with undo and redo operations.
+You are discouraged from overriding this method—you should instead override [`awakeFromInsert()`](./awakefrominsert%28%29.md) and/or [`awakeFromFetch()`](./awakefromfetch%28%29.md) (if there is logic common to these methods, it should be factored into a third method which is invoked from both). If you do perform custom initialization in this method, you may cause problems with undo and redo operations.
 
-In many applications, there is no need to subsequently assign a newly-created managed object to a particular store—see [`assign(_:to:)`](nsmanagedobjectcontext/assign(_:to:).md). If your application has multiple stores and you do need to assign an object to a specific store, you should not do so in a managed object’s initializer method. Such an assignment is controller- not model-level logic.
+In many applications, there is no need to subsequently assign a newly-created managed object to a particular store—see [`assign(_:to:)`](../nsmanagedobjectcontext/assign%28_,to%29.md). If your application has multiple stores and you do need to assign an object to a specific store, you should not do so in a managed object’s initializer method. Such an assignment is controller- not model-level logic.
 
 > ❗ **Important**:  This method is the designated initializer for `NSManagedObject`. You must not initialize a managed object simply by sending it `init`.
 
 ##### Special Considerations
 
-If you override [`init(entity:insertInto:)`](nsmanagedobject/init(entity:insertinto:).md), you *must* ensure that you set `self` to the return value from invocation of `super`’s implementation, as shown in the following example:
+If you override [`init(entity:insertInto:)`](./init%28entity,insertinto%29.md), you *must* ensure that you set `self` to the return value from invocation of `super`’s implementation, as shown in the following example:
 
 ```objc
 - (id)initWithEntity:(NSEntityDescription*)entity insertIntoManagedObjectContext:(NSManagedObjectContext*)context
@@ -53,15 +58,19 @@ If you override [`init(entity:insertInto:)`](nsmanagedobject/init(entity:inserti
 
 ## Parameters
 
-- `entity`: The entity of which to create an instance. The model associated with `context`’s persistent store coordinator must contain `entity`.
+- `entity`: The entity of which to create an instance.
+
+  The model associated with `context`’s persistent store coordinator must contain `entity`.
 - `context`: The context into which the new instance is inserted.
 
 ## See Also
 
-- [Core Data Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)
-- [class func insertNewObject(forEntityName: String, into: NSManagedObjectContext) -> NSManagedObject](nsentitydescription/insertnewobject(forentityname:into:).md)
+### Related Documentation
+- [Core Data Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)
+- [class func insertNewObject(forEntityName: String, into: NSManagedObjectContext) -> NSManagedObject](../nsentitydescription/insertnewobject%28forentityname,into%29.md)
   Creates, configures, and returns an instance of the class for the entity with a given name.
-- [convenience init(context: NSManagedObjectContext)](nsmanagedobject/init(context:).md)
+### Creating a Managed Object
+- [convenience init(context: NSManagedObjectContext)](./init%28context%29.md)
   Initializes a managed object subclass and inserts it into the specified managed object context.
 
 

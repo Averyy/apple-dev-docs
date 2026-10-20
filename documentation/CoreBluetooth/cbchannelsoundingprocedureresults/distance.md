@@ -1,7 +1,8 @@
 # distance
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The measured distance in meters of a CBPeripheral.
 
@@ -14,6 +15,10 @@ The measured distance in meters of a CBPeripheral.
 
 ```swift
 var distance: Double { get }
+```
+
+```objc
+@property (nonatomic, readonly) double distance;
 ```
 
 

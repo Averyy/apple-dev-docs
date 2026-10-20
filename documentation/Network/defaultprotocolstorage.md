@@ -1,7 +1,8 @@
 # DefaultProtocolStorage
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -21,9 +22,9 @@ struct DefaultProtocolStorage
 ## Relationships
 
 ### Conforms To
-- [ConnectionStorage](connectionstorage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ConnectionStorage](./connectionstorage.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

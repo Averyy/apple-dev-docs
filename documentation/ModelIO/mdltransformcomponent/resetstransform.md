@@ -2,6 +2,7 @@
 
 **Framework**: Model I/O  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 var resetsTransform: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL resetsTransform;
 ```
 
 

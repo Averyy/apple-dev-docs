@@ -1,7 +1,8 @@
 # rightHip
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A joint name that represents the right hip.
 
@@ -19,21 +20,26 @@ A joint name that represents the right hip.
 static let rightHip: VNHumanBodyPose3DObservation.JointName
 ```
 
+```c
+extern VNHumanBodyPose3DObservationJointName const VNHumanBodyPose3DObservationJointNameRightHip;
+```
+
 ## Mentions
 
-- [Identifying 3D human body poses in images](identifying-3d-human-body-poses-in-images.md)
+- [Identifying 3D human body poses in images](../../identifying-3d-human-body-poses-in-images.md)
 
 ## See Also
 
-- [static let leftHip: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/lefthip.md)
+### Getting the Leg Joint Names
+- [static let leftHip: VNHumanBodyPose3DObservation.JointName](./lefthip.md)
   A joint name that represents the left hip.
-- [static let leftKnee: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/leftknee.md)
+- [static let leftKnee: VNHumanBodyPose3DObservation.JointName](./leftknee.md)
   A joint name that represents the left knee.
-- [static let rightKnee: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/rightknee.md)
+- [static let rightKnee: VNHumanBodyPose3DObservation.JointName](./rightknee.md)
   A joint name that represents the right knee.
-- [static let leftAnkle: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/leftankle.md)
+- [static let leftAnkle: VNHumanBodyPose3DObservation.JointName](./leftankle.md)
   A joint name that represents the left ankle.
-- [static let rightAnkle: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/rightankle.md)
+- [static let rightAnkle: VNHumanBodyPose3DObservation.JointName](./rightankle.md)
   A joint name that represents the right ankle.
 
 

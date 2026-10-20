@@ -1,7 +1,8 @@
 # UIPressesEvent
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event that describes the state of a set of physical buttons that are available to the device, such as those on an associated remote or game controller.
 
@@ -19,31 +20,36 @@ An event that describes the state of a set of physical buttons that are availabl
 class UIPressesEvent
 ```
 
+```objc
+@interface UIPressesEvent : UIEvent
+```
+
 ## Topics
 
 ### Reading the event button presses
-- [var allPresses: Set<UIPress>](uipressesevent/allpresses.md)
+- [var allPresses: Set<UIPress>](./uipressesevent/allpresses.md)
   The state of all physical buttons in the event.
-- [func presses(for: UIGestureRecognizer) -> Set<UIPress>](uipressesevent/presses(for:).md)
+- [func presses(for: UIGestureRecognizer) -> Set<UIPress>](./uipressesevent/presses%28for%29.md)
   Returns the state of all physical buttons in the event that are associated with a particular gesture recognizer.
 
 ## Relationships
 
 ### Inherits From
-- [UIEvent](uievent.md)
+- [UIEvent](./uievent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UIPress](uipress.md)
+### Button presses
+- [class UIPress](./uipress.md)
   An object that represents the presence or movement of a button press on the screen for a particular event.
 
 

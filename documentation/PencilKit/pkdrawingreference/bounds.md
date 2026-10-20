@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The smallest rectangle used to represent the content’s bounds, taking into account line widths of that content.
 
@@ -16,6 +17,10 @@ The smallest rectangle used to represent the content’s bounds, taking into acc
 
 ```swift
 var bounds: CGRect { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGRect bounds;
 ```
 
 

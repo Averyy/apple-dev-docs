@@ -1,7 +1,8 @@
 # kVTDecompressionProperty_DeinterlaceMode_Temporal
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A temporal deinterlace mode.
 
@@ -19,15 +20,20 @@ A temporal deinterlace mode.
 let kVTDecompressionProperty_DeinterlaceMode_Temporal: CFString
 ```
 
+```c
+extern CFStringRef const kVTDecompressionProperty_DeinterlaceMode_Temporal;
+```
+
 #### Discussion
 
 Applies a filter that uses a window of multiple frames to generate deinterlaced results, and provides a better result at the expense of a pipeline delay.
 
-This mode is only used if [`kVTDecodeFrame_EnableTemporalProcessing`](vtdecodeframeflags/kvtdecodeframe_enabletemporalprocessing.md) is set, otherwise a non-temporal mode will be used instead.
+This mode is only used if [`kVTDecodeFrame_EnableTemporalProcessing`](./vtdecodeframeflags/kvtdecodeframe_enabletemporalprocessing.md) is set, otherwise a non-temporal mode will be used instead.
 
 ## See Also
 
-- [let kVTDecompressionProperty_DeinterlaceMode_VerticalFilter: CFString](kvtdecompressionproperty_deinterlacemode_verticalfilter.md)
+### Deinterlace Modes
+- [let kVTDecompressionProperty_DeinterlaceMode_VerticalFilter: CFString](./kvtdecompressionproperty_deinterlacemode_verticalfilter.md)
   A vertical filter deinterlace mode.
 
 

@@ -1,7 +1,8 @@
 # HKCategoryValueSleepAnalysis.asleepDeep
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user is in deep sleep.
 
@@ -19,19 +20,24 @@ The user is in deep sleep.
 case asleepDeep
 ```
 
+```c
+HKCategoryValueSleepAnalysisAsleepDeep
+```
+
 #### Discussion
 
 This value corresponds to stage N3 of the American Academy of Sleep Medicine’s scoring model.
 
 ## See Also
 
-- [HKCategoryValueSleepAnalysis.awake](hkcategoryvaluesleepanalysis/awake.md)
+### Values for Tracking Sleep States
+- [HKCategoryValueSleepAnalysis.awake](./awake.md)
   The user is awake.
-- [HKCategoryValueSleepAnalysis.asleepCore](hkcategoryvaluesleepanalysis/asleepcore.md)
+- [HKCategoryValueSleepAnalysis.asleepCore](./asleepcore.md)
   The user is in light or intermediate sleep.
-- [HKCategoryValueSleepAnalysis.asleepREM](hkcategoryvaluesleepanalysis/asleeprem.md)
+- [HKCategoryValueSleepAnalysis.asleepREM](./asleeprem.md)
   The user is in REM sleep.
-- [HKCategoryValueSleepAnalysis.asleepUnspecified](hkcategoryvaluesleepanalysis/asleepunspecified.md)
+- [HKCategoryValueSleepAnalysis.asleepUnspecified](./asleepunspecified.md)
   The user is asleep, but the specific stage isn’t known.
 
 

@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the highlight.
 
@@ -20,9 +21,14 @@ The unique identifier for the highlight.
 var identifier: any NSCopying & NSSecureCoding { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) id<NSCopying,NSSecureCoding> identifier;
+```
+
 ## See Also
 
-- [var url: URL](swhighlight/url.md)
+### Viewing highlight attributes
+- [var url: URL](./url.md)
   The surfaced content URL for the highlight.
 
 

@@ -1,7 +1,8 @@
 # g
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var g: [Any] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray * g;
 ```
 
 

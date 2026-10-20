@@ -1,7 +1,8 @@
 # HKSamplePredicate
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A predicate for queries that return a collection of matching sample objects.
 
@@ -10,7 +11,7 @@ A predicate for queries that return a collection of matching sample objects.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -21,9 +22,9 @@ struct HKSamplePredicate<Sample> where Sample : HKSample
 
 #### Overview
 
-The [`HKSamplePredicate`](hksamplepredicate.md) structure bundles an [`HKSampleType`](hksampletype.md) and an optional [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate). The structure is generic. You can create it for any [`HKSampleType`](hksampletype.md) subclass, and it automatically sets the `Sample` type to the matching [`HKSampleType`](hksampletype.md) subtype. As a result, any query that you build using this structure returns properly typed results.
+The [`HKSamplePredicate`](./hksamplepredicate.md) structure bundles an [`HKSampleType`](./hksampletype.md) and an optional [`NSPredicate`](../Foundation/nspredicate.md). The structure is generic. You can create it for any [`HKSampleType`](./hksampletype.md) subclass, and it automatically sets the `Sample` type to the matching [`HKSampleType`](./hksampletype.md) subtype. As a result, any query that you build using this structure returns properly typed results.
 
-To create an [`HKSamplePredicate`](hksamplepredicate.md) instance, call one of its constructor methods.
+To create an [`HKSamplePredicate`](./hksamplepredicate.md) instance, call one of its constructor methods.
 
 ```swift
 let stepType = HKQuantityType(.stepCount)
@@ -41,53 +42,54 @@ let results = try await descriptor.result(for: store)
 ## Topics
 
 ### Creating Sample Predicates
-- [static func audiogram(NSPredicate?) -> HKSamplePredicate<HKAudiogramSample>](hksamplepredicate/audiogram(_:).md)
+- [static func audiogram(NSPredicate?) -> HKSamplePredicate<HKAudiogramSample>](./hksamplepredicate/audiogram%28_%29.md)
   Returns a sample predicate that matches audiogram samples.
-- [static func categorySample(type: HKCategoryType, predicate: NSPredicate?) -> HKSamplePredicate<HKCategorySample>](hksamplepredicate/categorysample(type:predicate:).md)
+- [static func categorySample(type: HKCategoryType, predicate: NSPredicate?) -> HKSamplePredicate<HKCategorySample>](./hksamplepredicate/categorysample%28type,predicate%29.md)
   Returns a sample predicate that matches category samples.
-- [static func clinicalRecord(type: HKClinicalType, predicate: NSPredicate?) -> HKSamplePredicate<HKClinicalRecord>](hksamplepredicate/clinicalrecord(type:predicate:).md)
+- [static func clinicalRecord(type: HKClinicalType, predicate: NSPredicate?) -> HKSamplePredicate<HKClinicalRecord>](./hksamplepredicate/clinicalrecord%28type,predicate%29.md)
   Returns a sample predicate that matches clinical record samples.
-- [static func correlation(type: HKCorrelationType, predicate: NSPredicate?) -> HKSamplePredicate<HKCorrelation>](hksamplepredicate/correlation(type:predicate:).md)
+- [static func correlation(type: HKCorrelationType, predicate: NSPredicate?) -> HKSamplePredicate<HKCorrelation>](./hksamplepredicate/correlation%28type,predicate%29.md)
   Returns a sample predicate that matches samples that contain correlated data.
-- [static func electrocardiogram(NSPredicate?) -> HKSamplePredicate<HKElectrocardiogram>](hksamplepredicate/electrocardiogram(_:).md)
+- [static func electrocardiogram(NSPredicate?) -> HKSamplePredicate<HKElectrocardiogram>](./hksamplepredicate/electrocardiogram%28_%29.md)
   Returns a sample predicate that matches electrocardiogram samples.
-- [static func heartbeatSeries(NSPredicate?) -> HKSamplePredicate<HKHeartbeatSeriesSample>](hksamplepredicate/heartbeatseries(_:).md)
+- [static func heartbeatSeries(NSPredicate?) -> HKSamplePredicate<HKHeartbeatSeriesSample>](./hksamplepredicate/heartbeatseries%28_%29.md)
   Returns a sample predicate that matches heartbeat series samples.
-- [static func quantitySample(type: HKQuantityType, predicate: NSPredicate?) -> HKSamplePredicate<HKQuantitySample>](hksamplepredicate/quantitysample(type:predicate:).md)
+- [static func quantitySample(type: HKQuantityType, predicate: NSPredicate?) -> HKSamplePredicate<HKQuantitySample>](./hksamplepredicate/quantitysample%28type,predicate%29.md)
   Returns a sample predicate that matches quantity samples.
-- [static func sample(type: HKSampleType, predicate: NSPredicate?) -> HKSamplePredicate<HKSample>](hksamplepredicate/sample(type:predicate:).md)
+- [static func sample(type: HKSampleType, predicate: NSPredicate?) -> HKSamplePredicate<HKSample>](./hksamplepredicate/sample%28type,predicate%29.md)
   Returns a sample predicate that matches samples.
-- [static func visionPrescription(NSPredicate?) -> HKSamplePredicate<HKVisionPrescription>](hksamplepredicate/visionprescription(_:).md)
+- [static func visionPrescription(NSPredicate?) -> HKSamplePredicate<HKVisionPrescription>](./hksamplepredicate/visionprescription%28_%29.md)
   Returns a predicate that matches prescription samples.
-- [static func workout(NSPredicate?) -> HKSamplePredicate<HKWorkout>](hksamplepredicate/workout(_:).md)
+- [static func workout(NSPredicate?) -> HKSamplePredicate<HKWorkout>](./hksamplepredicate/workout%28_%29.md)
   Returns a sample predicate that matches workout samples.
-- [static func workoutRoute(NSPredicate?) -> HKSamplePredicate<HKWorkoutRoute>](hksamplepredicate/workoutroute(_:).md)
+- [static func workoutRoute(NSPredicate?) -> HKSamplePredicate<HKWorkoutRoute>](./hksamplepredicate/workoutroute%28_%29.md)
   Returns a sample predicate that matches samples containing workout route data.
 ### Accessing Sample Predicate Data
-- [let nsPredicate: NSPredicate?](hksamplepredicate/nspredicate.md)
+- [let nsPredicate: NSPredicate?](./hksamplepredicate/nspredicate.md)
   An optional predicate that further restricts the results that the query returns.
-- [let sampleType: HKSampleType](hksamplepredicate/sampletype.md)
+- [let sampleType: HKSampleType](./hksamplepredicate/sampletype.md)
   The type of samples that the query returns.
 ### Type Methods
-- [static func gad7Assessment(NSPredicate?) -> HKSamplePredicate<HKGAD7Assessment>](hksamplepredicate/gad7assessment(_:).md)
-- [static func phq9Assessment(NSPredicate?) -> HKSamplePredicate<HKPHQ9Assessment>](hksamplepredicate/phq9assessment(_:).md)
-- [static func stateOfMind(NSPredicate?) -> HKSamplePredicate<HKStateOfMind>](hksamplepredicate/stateofmind(_:).md)
+- [static func gad7Assessment(NSPredicate?) -> HKSamplePredicate<HKGAD7Assessment>](./hksamplepredicate/gad7assessment%28_%29.md)
+- [static func phq9Assessment(NSPredicate?) -> HKSamplePredicate<HKPHQ9Assessment>](./hksamplepredicate/phq9assessment%28_%29.md)
+- [static func stateOfMind(NSPredicate?) -> HKSamplePredicate<HKStateOfMind>](./hksamplepredicate/stateofmind%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Running Queries with Swift Concurrency](running-queries-with-swift-concurrency.md)
+### Swift concurrency support
+- [Running Queries with Swift Concurrency](./running-queries-with-swift-concurrency.md)
   Use Swift concurrency to manage one-shot and long-running queries.
-- [protocol HKAsyncQuery](hkasyncquery.md)
+- [protocol HKAsyncQuery](./hkasyncquery.md)
   A protocol that defines an asynchronous method for running queries.
-- [protocol HKAsyncSequenceQuery](hkasyncsequencequery.md)
+- [protocol HKAsyncSequenceQuery](./hkasyncsequencequery.md)
   A protocol that defines a method for running queries that returns results using an asynchronous sequence.
 
 

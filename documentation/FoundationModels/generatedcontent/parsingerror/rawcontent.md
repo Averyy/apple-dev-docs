@@ -1,7 +1,8 @@
 # rawContent
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw content that could not be parsed.
 
@@ -21,9 +22,10 @@ var rawContent: String
 
 ## See Also
 
-- [var underlyingError: (any Error)?](generatedcontent/parsingerror/underlyingerror.md)
+### Inspecting the instance
+- [var underlyingError: (any Error)?](./underlyingerror.md)
   The underlying error that caused the parsing failure, if any.
-- [var debugDescription: String](generatedcontent/parsingerror/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A debug description of what failed to parse.
 
 

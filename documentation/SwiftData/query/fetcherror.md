@@ -1,7 +1,8 @@
 # fetchError
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An error encountered during the most recent attempt to fetch data.
 
@@ -40,7 +41,8 @@ struct RecipeList: View {
 
 ## See Also
 
-- [var modelContext: ModelContext](query/modelcontext.md)
+### Getting query configuration
+- [var modelContext: ModelContext](./modelcontext.md)
   Current model context `Query` interacts with.
 
 

@@ -1,21 +1,26 @@
 # UIWindow.Level
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The positioning of windows relative to each other.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 struct Level
+```
+
+```c
+typedef CGFloat UIWindowLevel;
 ```
 
 #### Overview
@@ -25,40 +30,41 @@ The stacking of levels takes precedence over the stacking of windows within each
 ## Topics
 
 ### Window levels
-- [static let normal: UIWindow.Level](uiwindow/level/normal.md)
+- [static let normal: UIWindow.Level](./level/normal.md)
   The default level.
-- [static let statusBar: UIWindow.Level](uiwindow/level/statusbar.md)
+- [static let statusBar: UIWindow.Level](./level/statusbar.md)
   The level for a status window.
-- [static let alert: UIWindow.Level](uiwindow/level/alert.md)
+- [static let alert: UIWindow.Level](./level/alert.md)
   The level for an alert view.
 ### Initializers
-- [init(CGFloat)](uiwindow/level/init(_:).md)
+- [init(CGFloat)](./level/init%28_%29.md)
   Creates a window level structure.
-- [init(rawValue: CGFloat)](uiwindow/level/init(rawvalue:).md)
+- [init(rawValue: CGFloat)](./level/init%28rawvalue%29.md)
   Creates a window level structure with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Comparable](../swift/comparable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Comparable](../../Swift/comparable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var rootViewController: UIViewController?](uiwindow/rootviewcontroller.md)
+### Configuring the window
+- [var rootViewController: UIViewController?](./rootviewcontroller.md)
   The root view controller for the window.
-- [var windowLevel: UIWindow.Level](uiwindow/windowlevel.md)
+- [var windowLevel: UIWindow.Level](./windowlevel.md)
   The position of the window in the z-axis.
-- [var canResizeToFitContent: Bool](uiwindow/canresizetofitcontent.md)
+- [var canResizeToFitContent: Bool](./canresizetofitcontent.md)
   A Boolean value that indicates whether the window’s constraint-based content determines its size.
-- [var screen: UIScreen](uiwindow/screen.md)
+- [var screen: UIScreen](./screen.md)
   The screen to display the window on.
 
 

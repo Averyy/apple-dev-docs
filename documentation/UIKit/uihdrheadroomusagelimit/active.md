@@ -1,22 +1,27 @@
 # UIHDRHeadroomUsageLimit.active
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Headroom usage limits are in effect, HDR headroom usage should be restricted
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 case active
+```
+
+```c
+UIHDRHeadroomUsageLimitActive
 ```
 
 

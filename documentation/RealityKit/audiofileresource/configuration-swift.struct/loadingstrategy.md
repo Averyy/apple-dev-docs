@@ -1,7 +1,8 @@
 # loadingStrategy
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Stores the strategy the system uses for handling an audio resource’s data before and during playback.
 

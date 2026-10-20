@@ -1,15 +1,20 @@
 # OOBDataPresence
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var OOBDataPresence: BluetoothOOBDataPresence
+```
+
+```c
+BluetoothOOBDataPresence OOBDataPresence;
 ```
 
 

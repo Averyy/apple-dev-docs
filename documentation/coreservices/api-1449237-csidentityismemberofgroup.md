@@ -1,7 +1,8 @@
 # CSIdentityIsMemberOfGroup(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentityIsMemberOfGroup(_ identity: CSIdentity!, _ group: CSIdentity!) -> Bool
+```
+
+```c
+Boolean CSIdentityIsMemberOfGroup(CSIdentityRef identity, CSIdentityRef group);
 ```
 
 

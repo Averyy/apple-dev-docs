@@ -1,7 +1,8 @@
 # preferredLayoutAttributesFitting(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gives the cell a chance to modify the attributes provided by the layout object.
 
@@ -9,13 +10,17 @@ Gives the cell a chance to modify the attributes provided by the layout object.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes
+```
+
+```objc
+- (UICollectionViewLayoutAttributes *) preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *) layoutAttributes;
 ```
 
 #### Return Value
@@ -32,11 +37,12 @@ The default implementation of this method adjusts the size values to accommodate
 
 ## See Also
 
-- [func apply(UICollectionViewLayoutAttributes)](uicollectionreusableview/apply(_:).md)
+### Managing layout changes
+- [func apply(UICollectionViewLayoutAttributes)](./apply%28_%29.md)
   Applies the specified layout attributes to the view.
-- [func willTransition(from: UICollectionViewLayout, to: UICollectionViewLayout)](uicollectionreusableview/willtransition(from:to:).md)
+- [func willTransition(from: UICollectionViewLayout, to: UICollectionViewLayout)](./willtransition%28from,to%29.md)
   Tells your view that the layout object of the collection view is about to change.
-- [func didTransition(from: UICollectionViewLayout, to: UICollectionViewLayout)](uicollectionreusableview/didtransition(from:to:).md)
+- [func didTransition(from: UICollectionViewLayout, to: UICollectionViewLayout)](./didtransition%28from,to%29.md)
   Tells your view that the layout object of the collection view changed.
 
 

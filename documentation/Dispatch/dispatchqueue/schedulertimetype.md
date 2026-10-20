@@ -1,7 +1,8 @@
 # DispatchQueue.SchedulerTimeType
 
 **Framework**: Dispatch  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The scheduler time type used by the dispatch queue.
 
@@ -11,7 +12,7 @@ The scheduler time type used by the dispatch queue.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -23,30 +24,31 @@ struct SchedulerTimeType
 ## Topics
 
 ### Creating Scheduler Times
-- [init(DispatchTime)](dispatchqueue/schedulertimetype/init(_:).md)
+- [init(DispatchTime)](./schedulertimetype/init%28_%29.md)
   Creates a dispatch queue time type instance.
 ### Working with Scheduler Time Intervals
-- [func advanced(by: DispatchQueue.SchedulerTimeType.Stride) -> DispatchQueue.SchedulerTimeType](dispatchqueue/schedulertimetype/advanced(by:).md)
-- [func distance(to: DispatchQueue.SchedulerTimeType) -> DispatchQueue.SchedulerTimeType.Stride](dispatchqueue/schedulertimetype/distance(to:).md)
+- [func advanced(by: DispatchQueue.SchedulerTimeType.Stride) -> DispatchQueue.SchedulerTimeType](./schedulertimetype/advanced%28by%29.md)
+- [func distance(to: DispatchQueue.SchedulerTimeType) -> DispatchQueue.SchedulerTimeType.Stride](./schedulertimetype/distance%28to%29.md)
 ### Inspecting Scheduler Time Properties
-- [var dispatchTime: DispatchTime](dispatchqueue/schedulertimetype/dispatchtime.md)
+- [var dispatchTime: DispatchTime](./schedulertimetype/dispatchtime.md)
   The dispatch time represented by this type.
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Strideable](../swift/strideable.md)
+- [Comparable](../../Swift/comparable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Strideable](../../Swift/strideable.md)
 
 ## See Also
 
-- [DispatchQueue.SchedulerOptions](dispatchqueue/scheduleroptions.md)
+### Scheduling Combine Publishers
+- [DispatchQueue.SchedulerOptions](./scheduleroptions.md)
   A set of options that affect the operation of the dispatch queue scheduler.
 
 

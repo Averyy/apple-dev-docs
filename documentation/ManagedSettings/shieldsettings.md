@@ -1,7 +1,8 @@
 # ShieldSettings
 
 **Framework**: Managed Settings  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constraints that indicate what apps and websites to cover with a shielding view.
 
@@ -19,54 +20,55 @@ struct ShieldSettings
 ## Topics
 
 ### Blocking apps and websites
-- [var applications: Set<ApplicationToken>?](shieldsettings/applications-swift.property.md)
+- [var applications: Set<ApplicationToken>?](./shieldsettings/applications-swift.property.md)
   Applications for the system to cover with a shielding view.
-- [static let applications: SettingMetadata<Set<ApplicationToken>>](shieldsettings/applications-swift.type.property.md)
+- [static let applications: SettingMetadata<Set<ApplicationToken>>](./shieldsettings/applications-swift.type.property.md)
   The metadata for the configuration that specifies apps for the system to cover with a shielding view.
-- [var webDomains: Set<WebDomainToken>?](shieldsettings/webdomains-swift.property.md)
+- [var webDomains: Set<WebDomainToken>?](./shieldsettings/webdomains-swift.property.md)
   Websites for the system to cover with a shielding view.
-- [static let webDomains: SettingMetadata<Set<WebDomainToken>>](shieldsettings/webdomains-swift.type.property.md)
+- [static let webDomains: SettingMetadata<Set<WebDomainToken>>](./shieldsettings/webdomains-swift.type.property.md)
   The metadata for the configuration that specifies websites for the system to shield.
 ### Blocking categories of apps and websites
-- [ShieldSettings.ActivityCategoryPolicy](shieldsettings/activitycategorypolicy.md)
+- [ShieldSettings.ActivityCategoryPolicy](./shieldsettings/activitycategorypolicy.md)
   Policies available for shielding activities based on their category.
-- [var applicationCategories: ShieldSettings.ActivityCategoryPolicy<Application>?](shieldsettings/applicationcategories-swift.property.md)
+- [var applicationCategories: ShieldSettings.ActivityCategoryPolicy<Application>?](./shieldsettings/applicationcategories-swift.property.md)
   Categories of apps for the system to cover with a shielding view.
-- [static let applicationCategories: SettingMetadata<ShieldSettings.ActivityCategoryPolicy<Application>>](shieldsettings/applicationcategories-swift.type.property.md)
+- [static let applicationCategories: SettingMetadata<ShieldSettings.ActivityCategoryPolicy<Application>>](./shieldsettings/applicationcategories-swift.type.property.md)
   The metadata for the configuration that specifies categories of apps for the system to cover with a shielding view.
-- [var webDomainCategories: ShieldSettings.ActivityCategoryPolicy<WebDomain>?](shieldsettings/webdomaincategories-swift.property.md)
+- [var webDomainCategories: ShieldSettings.ActivityCategoryPolicy<WebDomain>?](./shieldsettings/webdomaincategories-swift.property.md)
   Categories of websites for the system to cover with a shielding view.
-- [static let webDomainCategories: SettingMetadata<ShieldSettings.ActivityCategoryPolicy<WebDomain>>](shieldsettings/webdomaincategories-swift.type.property.md)
+- [static let webDomainCategories: SettingMetadata<ShieldSettings.ActivityCategoryPolicy<WebDomain>>](./shieldsettings/webdomaincategories-swift.type.property.md)
   The metadata for the configuration that specifies categories of websites for the system to shield.
 
 ## Relationships
 
 ### Conforms To
-- [ManagedSettingsGroup](managedsettingsgroup.md)
+- [ManagedSettingsGroup](./managedsettingsgroup.md)
 
 ## See Also
 
-- [var account: AccountSettings](managedsettingsstore/account.md)
+### Restricting device settings
+- [var account: AccountSettings](./managedsettingsstore/account.md)
   Settings that affect accounts.
-- [struct AccountSettings](accountsettings.md)
+- [struct AccountSettings](./accountsettings.md)
   An object that configures whether a user can modify their device’s account settings.
-- [var cellular: CellularSettings](managedsettingsstore/cellular.md)
+- [var cellular: CellularSettings](./managedsettingsstore/cellular.md)
   Settings that affect cellular networking.
-- [struct CellularSettings](cellularsettings.md)
+- [struct CellularSettings](./cellularsettings.md)
   Constraints on the user’s cellular networking settings.
-- [var dateAndTime: DateAndTimeSettings](managedsettingsstore/dateandtime.md)
+- [var dateAndTime: DateAndTimeSettings](./managedsettingsstore/dateandtime.md)
   Settings that affect the date and time.
-- [struct DateAndTimeSettings](dateandtimesettings.md)
+- [struct DateAndTimeSettings](./dateandtimesettings.md)
   Constraints on the device’s date and time settings.
-- [var passcode: PasscodeSettings](managedsettingsstore/passcode.md)
+- [var passcode: PasscodeSettings](./managedsettingsstore/passcode.md)
   Settings that affect the device passcode.
-- [struct PasscodeSettings](passcodesettings.md)
+- [struct PasscodeSettings](./passcodesettings.md)
   Constraints on a user’s ability to change their device’s passcode.
-- [var shield: ShieldSettings](managedsettingsstore/shield.md)
+- [var shield: ShieldSettings](./managedsettingsstore/shield.md)
   Settings that affect what activities the system covers with a shielding view on this device.
-- [var siri: SiriSettings](managedsettingsstore/siri.md)
+- [var siri: SiriSettings](./managedsettingsstore/siri.md)
   Settings that affect Siri.
-- [struct SiriSettings](sirisettings.md)
+- [struct SiriSettings](./sirisettings.md)
   Constraints on the device’s Siri settings.
 
 

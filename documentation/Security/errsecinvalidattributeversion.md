@@ -1,7 +1,8 @@
 # errSecInvalidAttributeVersion
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A version attribute is not valid.
 
@@ -18,6 +19,10 @@ A version attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeVersion: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeVersion
 ```
 
 

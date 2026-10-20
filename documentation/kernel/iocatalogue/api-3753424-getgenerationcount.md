@@ -1,14 +1,15 @@
 # getGenerationCount
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 SInt32 getGenerationCount(void);
 ```
 

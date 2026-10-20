@@ -1,7 +1,8 @@
 # kCGImagePropertyImages
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An array of dictionaries, each of which contains metadata for one of the images in the file.
 
@@ -20,26 +21,31 @@ An array of dictionaries, each of which contains metadata for one of the images 
 let kCGImagePropertyImages: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyImages;
+```
+
 #### Discussion
 
-The value of this property is a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray). Each element in the array is a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) that contains metadata for one of the images. For example, the dictionary might contain the width and height of the image, the image’s color space name, thumbnail image information, and any auxiliary data.
+The value of this property is a [`CFArray`](../CoreFoundation/cfarray.md). Each element in the array is a [`CFDictionary`](../CoreFoundation/cfdictionary.md) that contains metadata for one of the images. For example, the dictionary might contain the width and height of the image, the image’s color space name, thumbnail image information, and any auxiliary data.
 
 ## See Also
 
-- [let kCGImagePropertyImageCount: CFString](kcgimagepropertyimagecount.md)
+### Image Information
+- [let kCGImagePropertyImageCount: CFString](./kcgimagepropertyimagecount.md)
   The number of images in the file.
-- [let kCGImagePropertyIsIndexed: CFString](kcgimagepropertyisindexed.md)
+- [let kCGImagePropertyIsIndexed: CFString](./kcgimagepropertyisindexed.md)
   A Boolean value that indicates whether the image contains indexed pixel samples.
-- [let kCGImagePropertyThumbnailImages: CFString](kcgimagepropertythumbnailimages.md)
-- [let kCGImagePropertyPrimaryImage: CFString](kcgimagepropertyprimaryimage.md)
+- [let kCGImagePropertyThumbnailImages: CFString](./kcgimagepropertythumbnailimages.md)
+- [let kCGImagePropertyPrimaryImage: CFString](./kcgimagepropertyprimaryimage.md)
   The index of the primary image in the file.
-- [let kCGImagePropertyIsFloat: CFString](kcgimagepropertyisfloat.md)
+- [let kCGImagePropertyIsFloat: CFString](./kcgimagepropertyisfloat.md)
   A Boolean value that indicates whether the image contains floating-point pixel samples.
-- [let kCGImagePropertyOrientation: CFString](kcgimagepropertyorientation.md)
+- [let kCGImagePropertyOrientation: CFString](./kcgimagepropertyorientation.md)
   The intended display orientation of the image.
-- [Individual Image Properties](individual-image-properties.md)
+- [Individual Image Properties](./individual-image-properties.md)
   Properties that apply to an individual image in an image source.
-- [enum CGImagePropertyOrientation](cgimagepropertyorientation.md)
+- [enum CGImagePropertyOrientation](./cgimagepropertyorientation.md)
   A value describing the intended display orientation for an image.
 
 

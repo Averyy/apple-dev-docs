@@ -1,7 +1,8 @@
 # isActive
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether this prim is active in composition, or `nil` if not authored.
 

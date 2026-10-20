@@ -1,7 +1,8 @@
 # init(for:)
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a provider for the specified accessory.
 
@@ -18,16 +19,18 @@ init(for accessory: ASAccessory) async throws
 
 #### Return Value
 
-A new [`WINetworkSharingProvider`](winetworksharingprovider.md) configured for the specified accessory.
+A new [`WINetworkSharingProvider`](../winetworksharingprovider.md) configured for the specified accessory.
 
 #### Discussion
 
 Use this initializer to establish a connection with the system for sharing networks with your accessory.
 
-> **Note**: A [`WINetworkSharingError`](winetworksharingerror.md) for various conditions: - [`WINetworkSharingError.accessoryTransportNotSecured`](winetworksharingerror/accessorytransportnotsecured.md): The accessory doesn’t use a secure Bluetooth transport.
-- [`WINetworkSharingError.accessoryNotAuthorized`](winetworksharingerror/accessorynotauthorized.md): The person hasn’t authorized network data sharing to the accessory.
-- [`WINetworkSharingError.accessoryNotConnected`](winetworksharingerror/accessorynotconnected.md): The accessory isn’t connected when making this request.
-- [`WINetworkSharingError.wifiNetworkSharingUnsupported`](winetworksharingerror/wifinetworksharingunsupported.md): The device doesn’t support network sharing.
+> **Throws**: A [`WINetworkSharingError`](../winetworksharingerror.md) for various conditions:
+>
+> - [`WINetworkSharingError.accessoryTransportNotSecured`](../winetworksharingerror/accessorytransportnotsecured.md): The accessory doesn’t use a secure Bluetooth transport.
+> - [`WINetworkSharingError.accessoryNotAuthorized`](../winetworksharingerror/accessorynotauthorized.md): The person hasn’t authorized network data sharing to the accessory.
+> - [`WINetworkSharingError.accessoryNotConnected`](../winetworksharingerror/accessorynotconnected.md): The accessory isn’t connected when making this request.
+> - [`WINetworkSharingError.wifiNetworkSharingUnsupported`](../winetworksharingerror/wifinetworksharingunsupported.md): The device doesn’t support network sharing.
 
 ## Parameters
 

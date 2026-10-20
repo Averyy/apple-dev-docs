@@ -1,7 +1,8 @@
 # rect(ofColumn:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the rectangle containing the specified column.
 
@@ -14,6 +15,10 @@ Returns the rectangle containing the specified column.
 func rect(ofColumn columnIndex: Int) -> NSRect
 ```
 
+```objc
+- (NSRect) rectOfColumn:(NSUInteger) columnIndex;
+```
+
 #### Return Value
 
 A rectangle containing the column. Specified in the view’s coordinate system.
@@ -24,15 +29,16 @@ A rectangle containing the column. Specified in the view’s coordinate system.
 
 ## See Also
 
-- [func numberOfColumns() -> Int](ikimagebrowserview/numberofcolumns.md)
+### Getting Columns and Rows Information
+- [func numberOfColumns() -> Int](./numberofcolumns%28%29.md)
   Returns the current number of columns.
-- [func numberOfRows() -> Int](ikimagebrowserview/numberofrows.md)
+- [func numberOfRows() -> Int](./numberofrows%28%29.md)
   Returns the current number of rows.
-- [func columnIndexes(in: NSRect) -> IndexSet!](ikimagebrowserview/columnindexes(in:).md)
+- [func columnIndexes(in: NSRect) -> IndexSet!](./columnindexes%28in%29.md)
   Returns the column indexes in the specified rectangle.
-- [func rect(ofRow: Int) -> NSRect](ikimagebrowserview/rect(ofrow:).md)
+- [func rect(ofRow: Int) -> NSRect](./rect%28ofrow%29.md)
   Returns the rectangle containing the specified row.
-- [func rowIndexes(in: NSRect) -> IndexSet!](ikimagebrowserview/rowindexes(in:).md)
+- [func rowIndexes(in: NSRect) -> IndexSet!](./rowindexes%28in%29.md)
   Returns the row indexes in the specified rectangle.
 
 

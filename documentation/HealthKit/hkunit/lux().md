@@ -1,7 +1,8 @@
 # lux()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring illuminance in lux.
 
@@ -17,6 +18,10 @@ Returns a HealthKit unit for measuring illuminance in lux.
 
 ```swift
 class func lux() -> Self
+```
+
+```objc
++ (instancetype) luxUnit;
 ```
 
 #### Return Value

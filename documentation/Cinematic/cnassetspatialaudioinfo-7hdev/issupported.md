@@ -1,14 +1,15 @@
 # isSupported
 
 **Framework**: Cinematic  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates whether the current device supports Audio Mix
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 - tvOS 26.0+
 

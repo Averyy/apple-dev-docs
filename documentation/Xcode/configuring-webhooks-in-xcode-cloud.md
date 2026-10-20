@@ -1,6 +1,7 @@
 # Configuring webhooks in Xcode Cloud
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Send build events to external services and tools using webhooks.
 
@@ -12,13 +13,13 @@ To connect Xcode Cloud with a custom tool or service, configure an HTTPS endpoin
 
 Xcode Cloud sends an HTTP request to each webhook’s configured HTTPS endpoint every time it creates, starts, and finishes a build.
 
-![An illustration that shows the different moments when Xcode Cloud sends a JSON payload to the configured endpoint: when it creates, starts, and finishes a new build.](/images/com.apple.Xcode/Configuring-Webhooks-in-Xcode-Cloud-1@2x.png)
+![An illustration that shows the different moments when Xcode Cloud sends a JSON payload to the configured endpoint: when it creates, starts, and finishes a new build.](https://developer.apple.com/tutorials/images/com.apple.Xcode/Configuring-Webhooks-in-Xcode-Cloud-1@2x.png)
 
-For more information about creating webhooks in Xcode Cloud, see [`Customize your advanced Xcode Cloud workflows`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10269).
+For more information about creating webhooks in Xcode Cloud, see [Customize your advanced Xcode Cloud workflows](https://developer.apple.com/videos/play/wwdc2021/10269).
 
 > **Note**: Configure your project or workspace to use Xcode Cloud before you create webhooks. You can configure up to five webhooks per Xcode Cloud product.
 
-#### Create an Xcode Cloud Webhook
+#### Create an Xcode Cloud webhook
 
 You need to provide the following information when creating a webhook:
 
@@ -35,16 +36,16 @@ To create a webhook using Xcode:
 4. In the Add Webhook dialog, enter a name and payload URL for the webhook, and click Add.
 5. Click Done.
 
-![A screenshot that shows the Add Webhook dialog with the name and URL text fields, and Add button.](/images/com.apple.Xcode/add-webhook@2x.png)
+![A screenshot that shows the Add Webhook dialog with the name and URL text fields, and Add button.](https://developer.apple.com/tutorials/images/com.apple.Xcode/add-webhook@2x.png)
 
-Alternatively, create a webhook using [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com):
+Alternatively, create a webhook using [App Store Connect](https://appstoreconnect.apple.com):
 
 1. In App Store Connect, choose an app and select the Xcode Cloud tab.
 2. Click Settings in the sidebar and select the Webhooks tab on the right.
 3. Click the Add button (+) next to Webhooks.
 4. In the sheet, enter a name and payload URL for the webhook, and click Save.
 
-#### View Webhook Delivery History and Metadata
+#### View webhook delivery history and metadata
 
 After Xcode Cloud builds your app, you can see webhook delivery history and other details in Xcode. Use the delivery history to confirm that your service or tool parses the JSON payload that Xcode Cloud sends.
 
@@ -60,11 +61,11 @@ To access webhook delivery reports in App Store Connect:
 2. Click Settings in the sidebar and select the Webhooks tab on the right.
 3. Choose a webhook and review its delivery reports.
 
-#### Review the Payload
+#### Review the payload
 
 With each webhook request, Xcode Cloud includes detailed information about the app you configured in App Store Connect, the workflow that started the build, the build itself, your Git repository, and more. Use this information to provide functionality in your custom tool or service. For example, use the payload information to display Xcode Cloud build information on your team’s dashboard.
 
-For more information on webhook payloads, see [`Xcode Cloud webhook payload reference`](webhook-payload.md).
+For more information on webhook payloads, see [Xcode Cloud webhook payload reference](./webhook-payload.md).
 
 The following code snippet shows the payload Xcode Cloud sends with a request:
 
@@ -232,9 +233,10 @@ The following code snippet shows the payload Xcode Cloud sends with a request:
 
 ## See Also
 
-- [Xcode Cloud webhook payload reference](webhook-payload.md)
+### Notifications
+- [Xcode Cloud webhook payload reference](./webhook-payload.md)
   Review details of the webhook payload that Xcode Cloud sends, including the product, workflow, build, actions, results, and SCM metadata associated with it.
-- [Connecting Xcode Cloud to Slack](connecting-xcode-cloud-to-slack.md)
+- [Connecting Xcode Cloud to Slack](./connecting-xcode-cloud-to-slack.md)
   Connect Xcode Cloud to Slack to keep your team informed about the latest Xcode Cloud builds.
 
 

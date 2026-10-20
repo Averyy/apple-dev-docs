@@ -1,7 +1,8 @@
 # convert(to:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts the contents of the 8-bit-per-channel, 4-channel interleaved pixel buffer to 32-bit-per-channel format.
 
@@ -11,7 +12,7 @@ Converts the contents of the 8-bit-per-channel, 4-channel interleaved pixel buff
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Converts the contents of the 8-bit-per-channel, 4-channel interleaved pixel buff
 ```swift
 func convert(to destination: vImage.PixelBuffer<vImage.InterleavedFx4>)
 ```
+
+Available when `Format` is `vImage.Interleaved8x4`.
 
 #### Discussion
 
@@ -30,9 +33,10 @@ This function converts the source values in the range `[0, 255]` to the destinat
 
 ## See Also
 
-- [func convert(to: vImage.PixelBuffer<vImage.PlanarF>)](vimage/pixelbuffer/convert(to:)-7src4.md)
+### Conversion from 8-bit to 32-bit
+- [func convert(to: vImage.PixelBuffer<vImage.PlanarF>)](./convert%28to%29-7src4.md)
   Converts the contents of the 8-bit planar pixel buffer to 32-bit planar format.
-- [func convert(to: vImage.PixelBuffer<vImage.InterleavedFx3>)](vimage/pixelbuffer/convert(to:)-8hivu.md)
+- [func convert(to: vImage.PixelBuffer<vImage.InterleavedFx3>)](./convert%28to%29-8hivu.md)
   Converts the contents of the 8-bit-per-channel, 3-channel interleaved pixel buffer to 32-bit-per-channel format.
 
 

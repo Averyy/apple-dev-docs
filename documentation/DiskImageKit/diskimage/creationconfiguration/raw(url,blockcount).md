@@ -1,7 +1,8 @@
 # raw(url:blockCount:)
 
 **Framework**: DiskImageKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a RAW configuration for standalone or base images.
 
@@ -14,9 +15,11 @@ Returns a RAW configuration for standalone or base images.
 static func raw(url: URL, blockCount: Int) -> Self
 ```
 
+Available when `Self` is `RAWCreationConfiguration`.
+
 #### Return Value
 
-A [`RAWCreationConfiguration`](rawcreationconfiguration.md) instance.
+A [`RAWCreationConfiguration`](../../rawcreationconfiguration.md) instance.
 
 #### Discussion
 
@@ -24,13 +27,13 @@ The framework only supports the 512-byte block size for RAW images.
 
 The following example demonstrates how to create a RAW disk image.
 
-```None
+```
 _ = try DiskImage(creating: .raw(url: imageURL, blockCount: blockCount))
 ```
 
 ## Parameters
 
-- `url`: The [`URL`](https://developer.apple.com/documentation/foundation/url) for the disk image file.
+- `url`: The [`URL`](../../../Foundation/url.md) for the disk image file.
 - `blockCount`: Size of the disk image in blocks.
 
 

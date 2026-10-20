@@ -1,7 +1,8 @@
 # UIAttachmentBehavior.AttachmentType
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the type of the attachment behavior object.
 
@@ -9,7 +10,7 @@ Constants indicating the type of the attachment behavior object.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,33 +19,38 @@ Constants indicating the type of the attachment behavior object.
 enum AttachmentType
 ```
 
+```c
+enum UIAttachmentBehaviorType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIAttachmentBehavior.AttachmentType.items](uiattachmentbehavior/attachmenttype/items.md)
+- [UIAttachmentBehavior.AttachmentType.items](./attachmenttype/items.md)
   Designates an attachment behavior that connects a dynamic item to another dynamic item.
-- [UIAttachmentBehavior.AttachmentType.anchor](uiattachmentbehavior/attachmenttype/anchor.md)
+- [UIAttachmentBehavior.AttachmentType.anchor](./attachmenttype/anchor.md)
   Designates an attachment behavior that connects a dynamic item to an anchor point.
 ### Initializers
-- [init?(rawValue: Int)](uiattachmentbehavior/attachmenttype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./attachmenttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct UIFloatRange](uifloatrange.md)
+### Constants
+- [struct UIFloatRange](../uifloatrange.md)
   The range of motion for attached objects.
-- [Float range constants](float-range-constants.md)
+- [Float range constants](../float-range-constants.md)
   Constants for specifying standard ranges.
-- [struct UIOffset](uioffset.md)
+- [struct UIOffset](../uioffset.md)
   A structure that specifies an amount to offset a position.
 
 

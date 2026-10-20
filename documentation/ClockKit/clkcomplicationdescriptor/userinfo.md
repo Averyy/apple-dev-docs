@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of data that your data source can use to generate timeline entries.
 
@@ -14,23 +15,28 @@ A dictionary of data that your data source can use to generate timeline entries.
 var userInfo: [AnyHashable : Any]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDictionary * userInfo;
+```
+
 #### Discussion
 
-The system passes the user info dictionary to methods like your data source’s [`getCurrentTimelineEntry(for:withHandler:)`](clkcomplicationdatasource/getcurrenttimelineentry(for:withhandler:).md) method as part of the complication. Your data source can use the information in the user info dictionary when creating these complications.
+The system passes the user info dictionary to methods like your data source’s [`getCurrentTimelineEntry(for:withHandler:)`](../clkcomplicationdatasource/getcurrenttimelineentry%28for,withhandler%29.md) method as part of the complication. Your data source can use the information in the user info dictionary when creating these complications.
 
 Because the system can pass configurations as part of a shared watch face, only include data in the user info dictionary that any instance of the app can use. For example, avoid using identifiers that might change between users, like an index into the user’s favorites list. Instead, use items that remain constant across all copies of the app, like unique string identifiers.
 
-When the user taps your complication, ClockKit includes the content of the `userInfo` property in the dictionary passed to the extension delegate’s [`handleUserActivity(_:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handleuseractivity(_:)) method.
+When the user taps your complication, ClockKit includes the content of the `userInfo` property in the dictionary passed to the extension delegate’s [`handleUserActivity(_:)`](../../WatchKit/wkextensiondelegate/handleuseractivity%28_%29.md) method.
 
 ## See Also
 
-- [var identifier: String](clkcomplicationdescriptor/identifier.md)
+### Accessing the descriptor’s data
+- [var identifier: String](./identifier.md)
   A string that uniquely identifies the descriptor.
-- [var displayName: String](clkcomplicationdescriptor/displayname.md)
+- [var displayName: String](./displayname.md)
   A localized string that identifies complications from the descriptor to the user.
-- [var supportedFamilies: [CLKComplicationFamily]](clkcomplicationdescriptor/supportedfamilies-4ckbx.md)
+- [var supportedFamilies: [CLKComplicationFamily]](./supportedfamilies-4ckbx.md)
   The families that support this type of complication.
-- [var userActivity: NSUserActivity?](clkcomplicationdescriptor/useractivity.md)
+- [var userActivity: NSUserActivity?](./useractivity.md)
   A user activity object that represents the state of the app at a moment in time.
 
 

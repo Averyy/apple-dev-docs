@@ -1,9 +1,10 @@
 # window
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-A  background placement inside a [`Window`](window.md) or [`WindowGroup`](windowgroup.md)
+A  background placement inside a [`Window`](../window.md) or [`WindowGroup`](../windowgroup.md)
 
 **Availability**:
 - macOS 15.0+

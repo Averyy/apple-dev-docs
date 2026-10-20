@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kExtInt9_NMIIntSource](1646660-anonymous/kextint9_nmiintsource.md)
-- [kNMIIntLevelMask](1646660-anonymous/knmiintlevelmask.md)
-- [kNMIIntMask](1646660-anonymous/knmiintmask.md)
+- [kExtInt9_NMIIntSource](./api-1646660-anonymous/kextint9_nmiintsource.md)
+- [kNMIIntLevelMask](./api-1646660-anonymous/knmiintlevelmask.md)
+- [kNMIIntMask](./api-1646660-anonymous/knmiintmask.md)
 
 
 ---

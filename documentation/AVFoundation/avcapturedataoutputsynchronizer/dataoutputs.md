@@ -1,7 +1,8 @@
 # dataOutputs
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of data outputs governed by this data output synchronizer.
 
@@ -17,15 +18,20 @@ The list of data outputs governed by this data output synchronizer.
 var dataOutputs: [AVCaptureOutput] { get }
 ```
 
+```objc
+@property (retain, readonly) NSArray<AVCaptureOutput *> * dataOutputs;
+```
+
 #### Discussion
 
-This array is read-only. You configure the list of data outputs to synchronize only when you create an [`AVCaptureDataOutputSynchronizer`](avcapturedataoutputsynchronizer.md) object.
+This array is read-only. You configure the list of data outputs to synchronize only when you create an [`AVCaptureDataOutputSynchronizer`](../avcapturedataoutputsynchronizer.md) object.
 
-> **Note**:  The [`AVCaptureDataOutputSynchronizer`](avcapturedataoutputsynchronizer.md) class overrides the delegate (and delegate dispatch queue) settings of all of its data outputs, but video and depth data outputs still honor their [`alwaysDiscardsLateVideoFrames`](avcapturevideodataoutput/alwaysdiscardslatevideoframes.md) and [`alwaysDiscardsLateDepthData`](avcapturedepthdataoutput/alwaysdiscardslatedepthdata.md) properties.
+> **Note**:  The [`AVCaptureDataOutputSynchronizer`](../avcapturedataoutputsynchronizer.md) class overrides the delegate (and delegate dispatch queue) settings of all of its data outputs, but video and depth data outputs still honor their [`alwaysDiscardsLateVideoFrames`](../avcapturevideodataoutput/alwaysdiscardslatevideoframes.md) and [`alwaysDiscardsLateDepthData`](../avcapturedepthdataoutput/alwaysdiscardslatedepthdata.md) properties.
 
 ## See Also
 
-- [init(dataOutputs: [AVCaptureOutput])](avcapturedataoutputsynchronizer/init(dataoutputs:).md)
+### Configuring synchronized capture
+- [init(dataOutputs: [AVCaptureOutput])](./init%28dataoutputs%29.md)
   Creates a capture output synchronizer for the specified capture outputs.
 
 

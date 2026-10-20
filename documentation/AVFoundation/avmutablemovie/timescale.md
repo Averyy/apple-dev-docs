@@ -1,7 +1,8 @@
 # timescale
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time scale of the movie.
 
@@ -19,17 +20,22 @@ The time scale of the movie.
 var timescale: CMTimeScale { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) CMTimeScale timescale;
+```
+
 #### Discussion
 
 The default movie time scale is `600`. In certain cases, you may want to set this to a different value. For example, a movie that contains a single audio track should set the movie time scale to the media time scale of that track. Set the value of this property on a new empty movie before you perform any edits on it.
 
 ## See Also
 
-- [var isModified: Bool](avmutablemovie/ismodified.md)
+### Configuring a movie
+- [var isModified: Bool](./ismodified.md)
   A Boolean value that indicates whether the movie is in a modified state.
-- [var interleavingPeriod: CMTime](avmutablemovie/interleavingperiod.md)
+- [var interleavingPeriod: CMTime](./interleavingperiod.md)
   A time period indicating the duration for interleaving runs of samples for each track.
-- [var defaultMediaDataStorage: AVMediaDataStorage?](avmutablemovie/defaultmediadatastorage.md)
+- [var defaultMediaDataStorage: AVMediaDataStorage?](./defaultmediadatastorage.md)
   The default storage container for media data that you add to a movie.
 
 

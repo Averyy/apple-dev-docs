@@ -1,7 +1,8 @@
 # HIDDeviceClient.Notification.elementUpdates(values:)
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A notification that elements of the device were updated.
 
@@ -16,11 +17,11 @@ case elementUpdates(values: [HIDElement.Value])
 
 ## Mentions
 
-- [Communicating with human interface devices](communicatingwithhiddevices.md)
+- [Communicating with human interface devices](../../communicatingwithhiddevices.md)
 
 #### Discussion
 
-This is typically received in response to input reports, and is another way to receive the data in a different format than [`HIDDeviceClient.Notification.inputReport(id:data:timestamp:)`](hiddeviceclient/notification/inputreport(id:data:timestamp:).md).
+This is typically received in response to input reports, and is another way to receive the data in a different format than [`HIDDeviceClient.Notification.inputReport(id:data:timestamp:)`](./inputreport%28id,data,timestamp%29.md).
 
 ## Parameters
 

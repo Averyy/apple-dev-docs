@@ -1,7 +1,8 @@
 # EnvironmentBlendingComponent.BlendingMode
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A struct that encapsulates the different environment-blending modes that can be applied to an entity.
 
@@ -17,19 +18,19 @@ struct BlendingMode
 ## Topics
 
 ### Type Properties
-- [static var `default`: EnvironmentBlendingComponent.BlendingMode](environmentblendingcomponent/blendingmode/default.md)
+- [static var `default`: EnvironmentBlendingComponent.BlendingMode](./blendingmode/default.md)
   No special blending is applied.
 ### Type Methods
-- [static func occluded(by: EnvironmentBlendingComponent.EnvironmentType) -> EnvironmentBlendingComponent.BlendingMode](environmentblendingcomponent/blendingmode/occluded(by:).md)
+- [static func occluded(by: EnvironmentBlendingComponent.EnvironmentType) -> EnvironmentBlendingComponent.BlendingMode](./blendingmode/occluded%28by%29.md)
   The entity receives a depth-based occlusion treatment within the specified environment type.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

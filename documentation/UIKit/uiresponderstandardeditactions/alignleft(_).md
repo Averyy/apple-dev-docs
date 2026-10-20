@@ -1,7 +1,8 @@
 # alignLeft(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +15,10 @@
 
 ```swift
 optional func alignLeft(_ sender: Any?)
+```
+
+```objc
+- (void) alignLeft:(id) sender;
 ```
 
 

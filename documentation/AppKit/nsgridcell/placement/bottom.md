@@ -1,7 +1,8 @@
 # bottom
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 10.12+
@@ -12,15 +13,20 @@
 static var bottom: NSGridCell.Placement { get }
 ```
 
+```c
+NSGridCellPlacementBottom
+```
+
 ## See Also
 
-- [static var top: NSGridCell.Placement](nsgridcell/placement/top.md)
-- [NSGridCell.Placement.center](nsgridcell/placement/center.md)
-- [NSGridCell.Placement.fill](nsgridcell/placement/fill.md)
-- [NSGridCell.Placement.inherited](nsgridcell/placement/inherited.md)
-- [NSGridCell.Placement.leading](nsgridcell/placement/leading.md)
-- [NSGridCell.Placement.none](nsgridcell/placement/none.md)
-- [NSGridCell.Placement.trailing](nsgridcell/placement/trailing.md)
+### Placement Options
+- [static var top: NSGridCell.Placement](./top.md)
+- [NSGridCell.Placement.center](./center.md)
+- [NSGridCell.Placement.fill](./fill.md)
+- [NSGridCell.Placement.inherited](./inherited.md)
+- [NSGridCell.Placement.leading](./leading.md)
+- [NSGridCell.Placement.none](./none.md)
+- [NSGridCell.Placement.trailing](./trailing.md)
 
 
 ---

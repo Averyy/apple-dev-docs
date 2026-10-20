@@ -1,7 +1,8 @@
 # init(imageFileURL:)
 
 **Framework**: Quick Look Thumbnailing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new thumbnail for a custom file type using a file at the given URL.
 
@@ -18,13 +19,17 @@ Creates a new thumbnail for a custom file type using a file at the given URL.
 convenience init(imageFileURL fileURL: URL)
 ```
 
+```objc
++ (instancetype) replyWithImageFileURL:(NSURL *) fileURL;
+```
+
 #### Return Value
 
 An initialized reply object for a requested thumbnail.
 
 #### Discussion
 
-The image is scaled down to fit the provided size by the [`QLFileThumbnailRequest`](qlfilethumbnailrequest.md) if necessary.
+The image is scaled down to fit the provided size by the [`QLFileThumbnailRequest`](../qlfilethumbnailrequest.md) if necessary.
 
 ## Parameters
 
@@ -32,9 +37,10 @@ The image is scaled down to fit the provided size by the [`QLFileThumbnailReques
 
 ## See Also
 
-- [convenience init(contextSize: CGSize, currentContextDrawing: () -> Bool)](qlthumbnailreply/init(contextsize:currentcontextdrawing:).md)
+### Creating a Thumbnail
+- [convenience init(contextSize: CGSize, currentContextDrawing: () -> Bool)](./init%28contextsize,currentcontextdrawing%29.md)
   Creates a new thumbnail for a custom file type in the current context.
-- [convenience init(contextSize: CGSize, drawing: (CGContext) -> Bool)](qlthumbnailreply/init(contextsize:drawing:).md)
+- [convenience init(contextSize: CGSize, drawing: (CGContext) -> Bool)](./init%28contextsize,drawing%29.md)
   Creates a new thumbnail for a custom file type in the given context.
 
 

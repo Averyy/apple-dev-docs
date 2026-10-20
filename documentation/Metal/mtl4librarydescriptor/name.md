@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns an optional name to the Metal library.
 
@@ -17,6 +18,10 @@ Assigns an optional name to the Metal library.
 
 ```swift
 var name: String? { get set }
+```
+
+```objc
+@property (atomic, copy, nullable) NSString * name;
 ```
 
 

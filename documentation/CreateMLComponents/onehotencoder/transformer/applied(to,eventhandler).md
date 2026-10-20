@@ -1,7 +1,8 @@
 # applied(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a one-hot encoding on a single input.
 
@@ -26,12 +27,15 @@ A one-hot encoded array.
 
 #### Discussion
 
-- Parameters - input: A category to encode.
-- eventHandler: An event handler.
+- Parameters
+
+  - input: A category to encode.
+  - eventHandler: An event handler.
 
 ## See Also
 
-- [func applied<S>(S, eventHandler: EventHandler?) throws -> [[Int]]](onehotencoder/transformer/applied(_:eventhandler:).md)
+### Performing the transformation
+- [func applied<S>(S, eventHandler: EventHandler?) throws -> [[Int]]](./applied%28_,eventhandler%29.md)
   Performs a one-hot encoding on a sequence of inputs.
 
 

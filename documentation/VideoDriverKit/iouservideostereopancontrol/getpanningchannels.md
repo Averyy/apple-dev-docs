@@ -1,7 +1,8 @@
 # GetPanningChannels
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the current stereo panning channels.
 
@@ -10,7 +11,7 @@ Gets the current stereo panning channels.
 
 ## Declaration
 
-```swift
+```c
 void GetPanningChannels(IOUserVideoObjectPropertyElement *out_left_channel, IOUserVideoObjectPropertyElement *out_right_channel);
 ```
 
@@ -25,11 +26,12 @@ The object’s work queue synchronizes access to this value.
 
 ## See Also
 
-- [SetControlValue](iouservideostereopancontrol/setcontrolvalue.md)
+### Accessing the value
+- [SetControlValue](./setcontrolvalue.md)
   Sets the current control value.
-- [GetControlValue](iouservideostereopancontrol/getcontrolvalue.md)
+- [GetControlValue](./getcontrolvalue.md)
   Gets the current value of the control.
-- [SetPanningChannels](iouservideostereopancontrol/setpanningchannels.md)
+- [SetPanningChannels](./setpanningchannels.md)
   Sets the current stereo panning channels.
 
 

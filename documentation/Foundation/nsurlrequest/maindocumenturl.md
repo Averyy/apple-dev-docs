@@ -1,7 +1,8 @@
 # mainDocumentURL
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The main document URL associated with the request.
 
@@ -20,21 +21,27 @@ The main document URL associated with the request.
 var mainDocumentURL: URL? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSURL * mainDocumentURL;
+```
+
 #### Discussion
 
 This URL is used for the cookie “same domain as main document” policy.
 
 ## See Also
 
-- [var mainDocumentURL: URL?](nsmutableurlrequest/maindocumenturl.md)
+### Related Documentation
+- [var mainDocumentURL: URL?](../nsmutableurlrequest/maindocumenturl.md)
   The main document URL.
-- [var httpMethod: String?](nsurlrequest/httpmethod.md)
+### Accessing request components
+- [var httpMethod: String?](./httpmethod.md)
   The HTTP request method.
-- [var url: URL?](nsurlrequest/url.md)
+- [var url: URL?](./url.md)
   The URL being requested.
-- [var httpBody: Data?](nsurlrequest/httpbody.md)
+- [var httpBody: Data?](./httpbody.md)
   The request body.
-- [var httpBodyStream: InputStream?](nsurlrequest/httpbodystream.md)
+- [var httpBodyStream: InputStream?](./httpbodystream.md)
   The request body as an input stream.
 
 

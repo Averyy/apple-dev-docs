@@ -1,7 +1,8 @@
 # syncToken
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A point in the database’s change history.
 
@@ -10,19 +11,20 @@ A point in the database’s change history.
 
 ## Declaration
 
-```swift
+```
 readonly attribute String syncToken;
 ```
 
 #### Discussion
 
-If [`moreComing`](cloudkit.databasechangesresponse/morecoming.md) is `true` in the response, use the this property in the next request until [`moreComing`](cloudkit.databasechangesresponse/morecoming.md) is `false`.
+If [`moreComing`](./morecoming.md) is `true` in the response, use the this property in the next request until [`moreComing`](./morecoming.md) is `false`.
 
 ## See Also
 
-- [moreComing](cloudkit.databasechangesresponse/morecoming.md)
+### Response Properties
+- [moreComing](./morecoming.md)
   A Boolean value that indicates there are more database changes to fetch.
-- [zones](cloudkit.databasechangesresponse/zones.md)
+- [zones](./zones.md)
   The zones in the database where the changes occurred.
 
 

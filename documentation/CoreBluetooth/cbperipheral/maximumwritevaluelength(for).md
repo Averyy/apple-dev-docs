@@ -1,7 +1,8 @@
 # maximumWriteValueLength(for:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The maximum amount of data, in bytes, you can send to a characteristic in a single write type.
 
@@ -20,17 +21,22 @@ The maximum amount of data, in bytes, you can send to a characteristic in a sing
 func maximumWriteValueLength(for type: CBCharacteristicWriteType) -> Int
 ```
 
+```objc
+- (NSUInteger) maximumWriteValueLengthForType:(CBCharacteristicWriteType) type;
+```
+
 ## Parameters
 
 - `type`: The characteristic write type to inspect.
 
 ## See Also
 
-- [func writeValue(Data, for: CBCharacteristic, type: CBCharacteristicWriteType)](cbperipheral/writevalue(_:for:type:).md)
+### Writing Characteristic and Descriptor Values
+- [func writeValue(Data, for: CBCharacteristic, type: CBCharacteristicWriteType)](./writevalue%28_,for,type%29.md)
   Writes the value of a characteristic.
-- [func writeValue(Data, for: CBDescriptor)](cbperipheral/writevalue(_:for:).md)
+- [func writeValue(Data, for: CBDescriptor)](./writevalue%28_,for%29.md)
   Writes the value of a characteristic descriptor.
-- [enum CBCharacteristicWriteType](cbcharacteristicwritetype.md)
+- [enum CBCharacteristicWriteType](../cbcharacteristicwritetype.md)
   Values representing the possible write types to a characteristic’s value.
 
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ifnet_traffic_rule_action {
     ...
 };
@@ -17,8 +17,8 @@ struct ifnet_traffic_rule_action {
 ## Topics
 
 ### Instance Properties
-- [ra_len](ifnet_traffic_rule_action/3944296-ra_len.md)
-- [ra_type](ifnet_traffic_rule_action/3944297-ra_type.md)
+- [ra_len](./ifnet_traffic_rule_action/api-3944296-ra_len.md)
+- [ra_type](./ifnet_traffic_rule_action/api-3944297-ra_type.md)
 
 
 ---

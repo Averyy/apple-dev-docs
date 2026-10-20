@@ -1,7 +1,8 @@
 # init(center:name:object:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that emits events when broadcasting notifications.
 

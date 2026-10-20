@@ -1,7 +1,8 @@
 # skipHandshake(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configure the WebSocket protocol to skip the opening handshake and begin framing data as soon as the underlying connection is established.
 

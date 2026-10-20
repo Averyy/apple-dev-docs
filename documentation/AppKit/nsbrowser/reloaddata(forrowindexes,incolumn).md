@@ -1,7 +1,8 @@
 # reloadData(forRowIndexes:inColumn:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the rows in the column with the specified column index with indexes in the specified set.
 
@@ -14,6 +15,10 @@ Updates the rows in the column with the specified column index with indexes in t
 func reloadData(forRowIndexes rowIndexes: IndexSet, inColumn column: Int)
 ```
 
+```objc
+- (void) reloadDataForRowIndexes:(NSIndexSet *) rowIndexes inColumn:(NSInteger) column;
+```
+
 ## Parameters
 
 - `rowIndexes`: The set of row indexes of the rows to be updated.
@@ -21,7 +26,8 @@ func reloadData(forRowIndexes rowIndexes: IndexSet, inColumn column: Int)
 
 ## See Also
 
-- [func noteHeightOfRowsWithIndexesChanged(IndexSet, inColumn: Int)](nsbrowser/noteheightofrowswithindexeschanged(_:incolumn:).md)
+### Updating Browsers
+- [func noteHeightOfRowsWithIndexesChanged(IndexSet, inColumn: Int)](./noteheightofrowswithindexeschanged%28_,incolumn%29.md)
   Immediately retiles the browser’s columns using row heights specified by the browser’s delegate.
 
 

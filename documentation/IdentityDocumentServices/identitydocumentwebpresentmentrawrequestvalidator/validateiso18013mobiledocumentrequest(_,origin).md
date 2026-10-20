@@ -1,14 +1,15 @@
 # validateISO18013MobileDocumentRequest(_:origin:)
 
 **Framework**: IdentityDocumentServices  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Validates an incoming raw ISO 18013-5 request.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 
 ## Declaration

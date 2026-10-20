@@ -1,18 +1,19 @@
 # fogColor
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of the fog effect to be rendered with the scene. Animatable.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,19 +21,24 @@ The color of the fog effect to be rendered with the scene. Animatable.
 var fogColor: Any { get set }
 ```
 
+```objc
+@property (nonatomic, retain) id fogColor;
+```
+
 #### Discussion
 
-This property’s value can be an [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) object (in macOS), a [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) object (in iOS), or a [`CGColor`](https://developer.apple.com/documentation/coregraphics/cgcolor) object. The default fog color is white.
+This property’s value can be an [`NSColor`](../../AppKit/nscolor.md) object (in macOS), a [`UIColor`](../../UIKit/uicolor.md) object (in iOS), or a [`CGColor`](../../CoreGraphics/cgcolor.md) object. The default fog color is white.
 
-You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
+You can animate changes to this property’s value. See [Animating SceneKit Content](../animating-scenekit-content.md).
 
 ## See Also
 
-- [var fogStartDistance: CGFloat](scnscene/fogstartdistance.md)
+### Adding Fog to a Scene
+- [var fogStartDistance: CGFloat](./fogstartdistance.md)
   The distance from a point of view at which the scene’s contents begin to be obscured by fog. Animatable.
-- [var fogEndDistance: CGFloat](scnscene/fogenddistance.md)
+- [var fogEndDistance: CGFloat](./fogenddistance.md)
   The distance from a point of view at which the scene’s contents are completely obscured by fog. Animatable.
-- [var fogDensityExponent: CGFloat](scnscene/fogdensityexponent.md)
+- [var fogDensityExponent: CGFloat](./fogdensityexponent.md)
   The transition curve for the fog’s intensity between its start and end distances. Animatable.
 
 

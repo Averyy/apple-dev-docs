@@ -1,7 +1,8 @@
 # orthographic(left:right:bottom:top:nearZ:farZ:reverseZ:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an off-axis orthographic projection from explicit frustum planes.
 
@@ -19,7 +20,7 @@ static func orthographic(left: Float, right: Float, bottom: Float, top: Float, n
 
 #### Return Value
 
-An off-axis orthographic [`LowLevelRenderer.Camera.Projection`](lowlevelrenderer/camera/projection-swift.struct.md).
+An off-axis orthographic [`LowLevelRenderer.Camera.Projection`](../projection-swift.struct.md).
 
 ## Parameters
 
@@ -33,7 +34,8 @@ An off-axis orthographic [`LowLevelRenderer.Camera.Projection`](lowlevelrenderer
 
 ## See Also
 
-- [static func orthographic(height: Float, aspectRatio: Float, nearZ: Float, farZ: Float, reverseZ: Bool) -> LowLevelRenderer.Camera.Projection](lowlevelrenderer/camera/projection-swift.struct/orthographic(height:aspectratio:nearz:farz:reversez:).md)
+### Creating orthographic projections
+- [static func orthographic(height: Float, aspectRatio: Float, nearZ: Float, farZ: Float, reverseZ: Bool) -> LowLevelRenderer.Camera.Projection](./orthographic%28height,aspectratio,nearz,farz,reversez%29.md)
   Creates a symmetric orthographic projection.
 
 

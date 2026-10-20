@@ -1,7 +1,8 @@
 # GCControllerHomeButtonSettingInAppAction.defer
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system defers its handling to your app’s preference.
 
@@ -18,11 +19,15 @@ The system defers its handling to your app’s preference.
 case `defer`
 ```
 
+```c
+GCControllerHomeButtonSettingInAppActionDefer
+```
+
 #### Discussion
 
 The system reponse to the game controller Home button press is disabled when the app indicates that it wants to handle the Home button press.  The app indicates that it wants to handle the Home button press by setting:
 
-```None
+```
 controller.physicalInputProfile.buttons[GCInputButtonHome].preferredSystemGestureState = GCSystemGestureStateDisabled;
 ```
 

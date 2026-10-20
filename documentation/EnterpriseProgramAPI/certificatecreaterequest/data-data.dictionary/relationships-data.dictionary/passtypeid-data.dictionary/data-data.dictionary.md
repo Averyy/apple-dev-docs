@@ -1,18 +1,19 @@
 # CertificateCreateRequest.Data.Relationships.PassTypeId.Data
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object CertificateCreateRequest.Data.Relationships.PassTypeId.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `passTypeIds`
 
 
 ---

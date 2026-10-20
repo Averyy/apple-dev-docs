@@ -1,12 +1,15 @@
 # Read In-App Purchase information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about an In-App Purchase.
 
 **Availability**:
-- App Store Connect API 1.2+
+- App Store Connect API 1.2+ - Deprecated in 3.0
+
+> **Deprecated**: Use [`Read In-App Purchase information`](./get-v2-inapppurchases-_id_.md) instead.
 
 #### Discussion
 
@@ -14,7 +17,7 @@ Get information about an In-App Purchase.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/inAppPurchases/6446998023
 ```
 
@@ -97,16 +100,32 @@ https://api.appstoreconnect.apple.com/v1/inAppPurchases/6446998023
 
 ## Parameters
 
-- `fields[inAppPurchases]` ([string])
-- `include` ([string])
-- `limit[apps]` (integer)
-- `fields[apps]` ([string])
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List apps`](./get-v1-apps.md) response.
+
+### Query Parameters
+
+- `fields[inAppPurchases]` ([string]): **Allowed Values**: `referenceName`, `productId`, `inAppPurchaseType`, `state`, `apps`
+- `include` ([string]): **Allowed Values**: `apps`
+- `limit[apps]` (integer): **Maximum**: `50`
+- `fields[apps]` ([string]): **Allowed Values**: `accessibilityUrl`, `name`, `bundleId`, `sku`, `primaryLocale`, `isOrEverWasMadeForKids`, `subscriptionStatusUrl`, `subscriptionStatusUrlVersion`, `subscriptionStatusUrlForSandbox`, `subscriptionStatusUrlVersionForSandbox`, `contentRightsDeclaration`, `streamlinedPurchasingEnabled`, `accessibilityDeclarations`, `appEncryptionDeclarations`, `appStoreIcon`, `ciProduct`, `betaTesters`, `betaGroups`, `appStoreVersions`, `appTags`, `preReleaseVersions`, `betaAppLocalizations`, `builds`, `betaLicenseAgreement`, `betaAppReviewDetail`, `appInfos`, `appClips`, `appPricePoints`, `endUserLicenseAgreement`, `appPriceSchedule`, `appAvailabilityV2`, `inAppPurchases`, `subscriptionGroups`, `gameCenterEnabledVersions`, `performanceOverviews`, `perfPowerMetrics`, `appCustomProductPages`, `inAppPurchasesV2`, `promotedPurchases`, `appEvents`, `reviewSubmissions`, `subscriptionGracePeriod`, `customerReviews`, `customerReviewSummarizations`, `gameCenterDetail`, `appStoreVersionExperimentsV2`, `alternativeDistributionKey`, `analyticsReportRequests`, `marketplaceSearchDetail`, `buildUploads`, `backgroundAssets`, `assetLibrary`, `betaFeedbackScreenshotSubmissions`, `betaFeedbackCrashSubmissions`, `searchKeywords`, `webhooks`, `androidToIosAppMappingDetails`
+
+## Responses
+
+- `200` OK (`InAppPurchaseResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List all promoted purchases for an app](get-v1-apps-_id_-promotedpurchases.md)
+### Getting In-App Purchase information
+- [List all promoted purchases for an app](./get-v1-apps-_id_-promotedpurchases.md)
   Get a list of promoted In-App Purchases, including promoted auto-renewable subscriptions, for an app.
-- [List all In-App Purchases for an app v1](get-v1-apps-_id_-inapppurchases.md)
+- [List all In-App Purchases for an app v1](./get-v1-apps-_id_-inapppurchases.md)
   List the In-App Purchases that are available for your app.
 
 

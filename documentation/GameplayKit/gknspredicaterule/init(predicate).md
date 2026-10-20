@@ -1,7 +1,8 @@
 # init(predicate:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a rule with the specified predicate.
 
@@ -19,13 +20,17 @@ Initializes a rule with the specified predicate.
 init(predicate: NSPredicate)
 ```
 
+```objc
+- (instancetype) initWithPredicate:(NSPredicate *) predicate;
+```
+
 #### Return Value
 
 A new predicate-based rule object.
 
 #### Discussion
 
-Rules based on [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) objects typically test information in the [`state`](gkrulesystem/state.md) dictionary of the rule system evaluating the rule. For example, the following code creates a rule you might use to determine whether an enemy character in a game behaves aggressively.
+Rules based on [`NSPredicate`](../../Foundation/nspredicate.md) objects typically test information in the [`state`](../gkrulesystem/state.md) dictionary of the rule system evaluating the rule. For example, the following code creates a rule you might use to determine whether an enemy character in a game behaves aggressively.
 
 **Swift**:
 
@@ -43,9 +48,9 @@ NSPredicate *healthTest = [NSPredicate predicateWithFormat:@"$player.health > 50
 MyNSPredicateRule *rule = [MyNSPredicateRule alloc] initWithPredicate:healthTest];
 ```
 
-This example presumes the rule system’s state dictionary contains an object for the key `player`, which in turn exposes a numeric value for the key `health`. The [`GKNSPredicateRule`](gknspredicaterule.md) class by itself does nothing in its [`performAction(in:)`](gkrule/performaction(in:).md) method—to create actions for predicate-based rules, you must subclass [`GKNSPredicateRule`](gknspredicaterule.md).
+This example presumes the rule system’s state dictionary contains an object for the key `player`, which in turn exposes a numeric value for the key `health`. The [`GKNSPredicateRule`](../gknspredicaterule.md) class by itself does nothing in its [`performAction(in:)`](../gkrule/performaction%28in%29.md) method—to create actions for predicate-based rules, you must subclass [`GKNSPredicateRule`](../gknspredicaterule.md).
 
-For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Parameters
 

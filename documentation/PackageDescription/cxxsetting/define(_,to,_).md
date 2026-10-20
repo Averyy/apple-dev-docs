@@ -1,7 +1,8 @@
 # define(_:to:_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Defines a value for a macro.
 
@@ -18,7 +19,7 @@ static func define(_ name: String, to value: String? = nil, _ condition: BuildSe
 
 If you don’t specify a value, the macro’s default value is 1.
 
-> **Note**: First available in PackageDescription 5.0.
+> **Since**: First available in PackageDescription 5.0.
 
 ## Parameters
 
@@ -28,9 +29,10 @@ If you don’t specify a value, the macro’s default value is 1.
 
 ## See Also
 
-- [static func headerSearchPath(String, BuildSettingCondition?) -> CXXSetting](cxxsetting/headersearchpath(_:_:).md)
+### Configuring CXX Settings
+- [static func headerSearchPath(String, BuildSettingCondition?) -> CXXSetting](./headersearchpath%28_,_%29.md)
   Provides a header search path relative to the target’s directory.
-- [static func unsafeFlags([String], BuildSettingCondition?) -> CXXSetting](cxxsetting/unsafeflags(_:_:).md)
+- [static func unsafeFlags([String], BuildSettingCondition?) -> CXXSetting](./unsafeflags%28_,_%29.md)
   Sets unsafe flags to pass arbitrary command-line flags to the corresponding build tool.
 
 

@@ -1,7 +1,8 @@
 # TopLevelEncoder
 
 **Framework**: Combine  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that defines methods for encoding.
 
@@ -23,15 +24,16 @@ protocol TopLevelEncoder
 ## Topics
 
 ### Declaring supporting types
-- [associatedtype Output](toplevelencoder/output.md)
+- [associatedtype Output](./toplevelencoder/output.md)
   The type this encoder produces.
 ### Encoding
-- [func encode<T>(T) throws -> Self.Output](toplevelencoder/encode(_:).md)
+- [func encode<T>(T) throws -> Self.Output](./toplevelencoder/encode%28_%29.md)
   Encodes an instance of the indicated type.
 
 ## See Also
 
-- [protocol TopLevelDecoder](topleveldecoder.md)
+### Encoders and Decoders
+- [protocol TopLevelDecoder](./topleveldecoder.md)
   A type that defines methods for decoding.
 
 

@@ -1,7 +1,8 @@
 # IOUserVideoObjectPropertyElement
 
 **Framework**: VideoDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An integer that identifies, along with the property selector and scope, a specific piece of information about a video object.
 
@@ -10,7 +11,7 @@ An integer that identifies, along with the property selector and scope, a specif
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOUserVideoObjectPropertyElement;
 ```
 
@@ -20,13 +21,14 @@ The element selects one of possibly many items in the section of the object in w
 
 ## See Also
 
-- [Create](iouservideobooleancontrol/create.md)
+### Creating a Boolean control
+- [Create](../iouservideobooleancontrol/create.md)
   A static factory method that allocates and initializes a video Boolean control.
-- [init](iouservideobooleancontrol/init.md)
+- [init](../iouservideobooleancontrol/init.md)
   Initializes an IOUserVideoBooleanControl.
-- [IOUserVideoDriver](iouservideodriver.md)
+- [IOUserVideoDriver](../iouservideodriver.md)
   A video driver.
-- [IOUserVideoObjectPropertyScope](videodriverkit/iouservideoobjectpropertyscope.md)
+- [IOUserVideoObjectPropertyScope](./iouservideoobjectpropertyscope.md)
   A four character code which, along with the selector and element, identifies a specific piece of information about a video object.
 
 

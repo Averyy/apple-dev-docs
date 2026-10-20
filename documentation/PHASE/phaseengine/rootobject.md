@@ -1,7 +1,8 @@
 # rootObject
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The main object to which the app adds child objects.
 
@@ -19,9 +20,13 @@ The main object to which the app adds child objects.
 var rootObject: PHASEObject { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) PHASEObject * rootObject;
+```
+
 ## Mentions
 
-- [Playing sound from a location in a 3D scene](playing-sound-from-a-location-in-a-3d-scene.md)
+- [Playing sound from a location in a 3D scene](../playing-sound-from-a-location-in-a-3d-scene.md)
 
 #### Discussion
 

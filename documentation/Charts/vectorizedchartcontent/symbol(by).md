@@ -1,7 +1,8 @@
 # symbol(by:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Represents data using different kinds of symbols.
 
@@ -27,11 +28,12 @@ func symbol(by value: PlottableProjection<Self.DataElement, some Plottable>) -> 
 
 ## See Also
 
+### Setting symbol appearance
 - [func symbolSize(KeyPath<Self.DataElement, CGSize>) -> some VectorizedChartContent<Self.DataElement>
-](vectorizedchartcontent/symbolsize(_:)-12tl1.md)
+](./symbolsize%28_%29-12tl1.md)
   Sets the plotting symbol size for the chart content.
 - [func symbolSize(KeyPath<Self.DataElement, CGFloat>) -> some VectorizedChartContent<Self.DataElement>
-](vectorizedchartcontent/symbolsize(_:)-3nwop.md)
+](./symbolsize%28_%29-3nwop.md)
   Sets the plotting symbol size for the chart content according to a perceived area.
 
 

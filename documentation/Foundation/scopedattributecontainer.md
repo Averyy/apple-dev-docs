@@ -1,7 +1,8 @@
 # ScopedAttributeContainer
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An attribute container that allows dynamic member lookup of its contents within the specified attribute scope.
 
@@ -23,25 +24,26 @@ struct ScopedAttributeContainer<S> where S : AttributeScope
 
 #### Overview
 
-Use a [`ScopedAttributeContainer`](scopedattributecontainer.md) when you need to disambiguate between attributes that exist in several attribute scopes that your app uses.
+Use a [`ScopedAttributeContainer`](./scopedattributecontainer.md) when you need to disambiguate between attributes that exist in several attribute scopes that your app uses.
 
 ## Topics
 
 ### Accessing Attribute Keys
-- [subscript<T>(dynamicMember _: KeyPath<S, T>) -> T.Value?](scopedattributecontainer/subscript(dynamicmember:).md)
+- [subscript<T>(dynamicMember _: KeyPath<S, T>) -> T.Value?](./scopedattributecontainer/subscript%28dynamicmember%29.md)
   Returns the value of the attribute that the specified key path indicates.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum AttributeScopes](attributescopes.md)
+### Using Defined Attributes
+- [enum AttributeScopes](./attributescopes.md)
   Collections of attributes that system frameworks define.
-- [enum AttributeDynamicLookup](attributedynamiclookup.md)
+- [enum AttributeDynamicLookup](./attributedynamiclookup.md)
   A type to support dynamic member lookup of attributes and containers.
 
 

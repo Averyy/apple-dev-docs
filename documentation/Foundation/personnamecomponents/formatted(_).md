@@ -1,7 +1,8 @@
 # formatted(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a locale-aware string representation of an instance of person name components using the provided format style.
 
@@ -26,7 +27,7 @@ A string, formatted according to the provided style.
 
 #### Discussion
 
-Use the [`formatted(_:)`](personnamecomponents/formatted(_:).md) method to create a string representation of a person’s name with a customized length for specific uses. You can use the [`PersonNameComponents.FormatStyle`](personnamecomponents/formatstyle.md) static factory method [`name(style:)`](formatstyle/name(style:).md) to create a custom format style as a parameter to the method.
+Use the [`formatted(_:)`](./formatted%28_%29.md) method to create a string representation of a person’s name with a customized length for specific uses. You can use the [`PersonNameComponents.FormatStyle`](./formatstyle.md) static factory method [`name(style:)`](../formatstyle/name%28style%29.md) to create a custom format style as a parameter to the method.
 
 For example:
 
@@ -54,13 +55,14 @@ tlc.formatted(.name(style: .abbreviated))
 
 ## Parameters
 
-- `style`: Specifies the [`PersonNameComponents.FormatStyle`](personnamecomponents/formatstyle.md) applied to the person name components.
+- `style`: Specifies the [`PersonNameComponents.FormatStyle`](./formatstyle.md) applied to the person name components.
 
 ## See Also
 
-- [func formatted() -> String](personnamecomponents/formatted.md)
+### Formatting Person Name Components
+- [func formatted() -> String](./formatted%28%29.md)
   Generates a locale-aware string representation of an instance of person name components using the default format style.
-- [PersonNameComponents.FormatStyle](personnamecomponents/formatstyle.md)
+- [PersonNameComponents.FormatStyle](./formatstyle.md)
   A type used to format a person’s name with a style appropriate for the given locale.
 
 

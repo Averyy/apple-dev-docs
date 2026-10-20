@@ -1,7 +1,8 @@
 # relationship(named:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the relationship with a given name on this prim.
 
@@ -25,11 +26,12 @@ If no relationship named `name` exists on this prim, returns an invalid relation
 
 ## See Also
 
-- [func relationship(at: USDLayer.Path) -> USDPrim.Relationship](usdprim/relationship(at:).md)
+### Accessing relationships
+- [func relationship(at: USDLayer.Path) -> USDPrim.Relationship](./relationship%28at%29.md)
   Returns the relationship at a given path, relative to this prim.
-- [func hasRelationship(named: USDToken) -> Bool](usdprim/hasrelationship(named:).md)
+- [func hasRelationship(named: USDToken) -> Bool](./hasrelationship%28named%29.md)
   Returns true if a relationship with a given name exists on this prim.
-- [USDPrim.Relationship](usdprim/relationship.md)
+- [USDPrim.Relationship](./relationship.md)
   A property that connects a prim to one or more other objects in the stage by their paths.
 
 

@@ -1,6 +1,7 @@
 # Preloading Textures into Memory
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Decompress images ahead of time to avoid performance issues during gameplay.
 
@@ -12,7 +13,7 @@ This process happens automatically in the background, but it isn’t free. If to
 
 ##### Preload Texture Objects
 
-The following code shows how to preload an array of [`SKTexture`](sktexture.md) objects. The [`preload(_:withCompletionHandler:)`](sktexture/preload(_:withcompletionhandler:).md) method calls the completion handler after all of the textures are loaded into memory. In this example, all of the textures for a particular level of the game are preloaded in a single operation. When the textures are all in memory, the completion handler is called. It creates the scene and presents it. (You need to add code to provide these texture objects to the scene; that code isn’t shown here).
+The following code shows how to preload an array of [`SKTexture`](./sktexture.md) objects. The [`preload(_:withCompletionHandler:)`](./sktexture/preload%28_,withcompletionhandler%29.md) method calls the completion handler after all of the textures are loaded into memory. In this example, all of the textures for a particular level of the game are preloaded in a single operation. When the textures are all in memory, the completion handler is called. It creates the scene and presents it. (You need to add code to provide these texture objects to the scene; that code isn’t shown here).
 
 **Swift**:
 
@@ -49,9 +50,10 @@ Because you are intimately familiar with the design of your game or app, you are
 
 ## See Also
 
-- [func preload(completionHandler: () -> Void)](sktexture/preload(completionhandler:).md)
+### Preloading a Texture for Performance
+- [func preload(completionHandler: () -> Void)](./sktexture/preload%28completionhandler%29.md)
   Load texture data into memory, calling a completion handler after the task completes.
-- [class func preload([SKTexture], withCompletionHandler: () -> Void)](sktexture/preload(_:withcompletionhandler:).md)
+- [class func preload([SKTexture], withCompletionHandler: () -> Void)](./sktexture/preload%28_,withcompletionhandler%29.md)
   Load the data of multiple textures into memory.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -15,6 +16,11 @@
 @MainActor
 func textFormattingViewController(_ viewController: UITextFormattingViewController, shouldPresentColorPicker colorPicker: UIColorPickerViewController) -> Bool
 ```
+
+## Default Implementations
+
+### UITextFormattingViewController.Delegate Implementations
+- [func textFormattingViewController(UITextFormattingViewController, shouldPresentColorPicker: UIColorPickerViewController) -> Bool](./textformattingviewcontroller%28_,shouldpresentcolorpicker%29-58rps.md)
 
 
 ---

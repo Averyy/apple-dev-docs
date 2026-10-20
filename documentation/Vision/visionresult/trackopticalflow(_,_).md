@@ -1,7 +1,8 @@
 # VisionResult.trackOpticalFlow(_:_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result from performing a track optical flow request.
 
@@ -21,9 +22,10 @@ case trackOpticalFlow(TrackOpticalFlowRequest, OpticalFlowObservation?)
 
 ## See Also
 
-- [case detectRectangles(DetectRectanglesRequest, [RectangleObservation])](visionresult/detectrectangles(_:_:).md)
+### Getting the optical flow, rectangle and barcode detection result
+- [case detectRectangles(DetectRectanglesRequest, [RectangleObservation])](./detectrectangles%28_,_%29.md)
   A result from performing a detect rectangles request.
-- [case detectBarcodes(DetectBarcodesRequest, [BarcodeObservation])](visionresult/detectbarcodes(_:_:).md)
+- [case detectBarcodes(DetectBarcodesRequest, [BarcodeObservation])](./detectbarcodes%28_,_%29.md)
   A result from performing a detect barcodes request.
 
 

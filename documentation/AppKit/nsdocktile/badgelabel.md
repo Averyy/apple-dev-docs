@@ -1,7 +1,8 @@
 # badgeLabel
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string to be displayed in the tile’s badging area.
 
@@ -14,13 +15,18 @@ The string to be displayed in the tile’s badging area.
 var badgeLabel: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * badgeLabel;
+```
+
 #### Discussion
 
 The appearance of the badge area is system defined.
 
 ## See Also
 
-- [var showsApplicationBadge: Bool](nsdocktile/showsapplicationbadge.md)
+### Applying Badge Icons to the Tile
+- [var showsApplicationBadge: Bool](./showsapplicationbadge.md)
   A Boolean showing whether the tile is badged with the application’s icon
 
 

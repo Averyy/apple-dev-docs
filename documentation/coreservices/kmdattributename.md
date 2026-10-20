@@ -1,7 +1,8 @@
 # kMDAttributeName
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A string containing the name of the metadataattribute key.
 
@@ -12,6 +13,10 @@ A string containing the name of the metadataattribute key.
 
 ```swift
 let kMDAttributeName: CFString!
+```
+
+```c
+const CFStringRef kMDAttributeName;
 ```
 
 

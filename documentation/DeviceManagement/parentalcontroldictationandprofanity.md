@@ -1,16 +1,17 @@
 # ParentalControlDictationAndProfanity
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures parental control for dictation and profanity.
 
 **Availability**:
-- macOS 10.9+
+- macOS 10.9+ - Deprecated in 10.13
 
 ## Declaration
 
-```swift
+```
 object ParentalControlDictationAndProfanity
 ```
 
@@ -18,7 +19,7 @@ object ParentalControlDictationAndProfanity
 
 Specify `com.apple.ironwood.support` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -32,20 +33,29 @@ Specify `com.apple.ironwood.support` as the payload type.
 
 ## Properties
 
-- `Ironwood Allowed` (boolean): If `false`, disables dictation. Use `allowDictation` in Restrictions instead. Deprecated: macOS 10.13+
-- `Profanity Allowed` (boolean): If `false`, suppresses profanity. Use `forceAssistantProfanityFilter` in Restrictions instead. Deprecated: macOS 10.13+
+- `Ironwood Allowed` (boolean) *(deprecated)*: If `false`, disables dictation. Use `allowDictation` in Restrictions instead.
+
+  Deprecated: macOS 10.13+
+
+  **Default**: `true`
+- `Profanity Allowed` (boolean) *(deprecated)*: If `false`, suppresses profanity. Use `forceAssistantProfanityFilter` in Restrictions instead.
+
+  Deprecated: macOS 10.13+
+
+  **Default**: `true`
 
 ## See Also
 
-- [object APN](apn.md)
+### Deprecated
+- [object APN](./apn.md)
   The payload that configures access point names.
-- [object FDERecoveryKeyRedirection](fderecoverykeyredirection.md)
+- [object FDERecoveryKeyRedirection](./fderecoverykeyredirection.md)
   The payload that configures FileVault recovery key redirection.
-- [object MediaManagementAllowedMedia](mediamanagementallowedmedia.md)
+- [object MediaManagementAllowedMedia](./mediamanagementallowedmedia.md)
   The payload that configures media management.
-- [object ShareKit](sharekit.md)
+- [object ShareKit](./sharekit.md)
   The payload that configures ShareKit.
-- [object SystemPreferences](systempreferences.md)
+- [object SystemPreferences](./systempreferences.md)
   The payload that configures the preference panes.
 
 

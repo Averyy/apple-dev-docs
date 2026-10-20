@@ -1,7 +1,8 @@
 # displayDocument(_:options:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A request that displays document elements onscreen.
 
@@ -15,6 +16,8 @@ A request that displays document elements onscreen.
 ```swift
 static func displayDocument(_ elements: [MobileDocumentDisplayRequest.Element], options: MobileDocumentDisplayRequest.Options) -> Self
 ```
+
+Available when `Self` is `MobileDocumentDisplayRequest`.
 
 
 ---

@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fetched results of the fetch request.
 
@@ -23,14 +24,14 @@ The fetched results of the fetch request.
 
 #### Discussion
 
-SwiftUI returns the value associated with this property when you use [`FetchRequest`](fetchrequest.md) as a property wrapper, and then access the wrapped property by name. For example, consider the following `quakes` property declaration that fetches a `Quake` type that the [`Loading and displaying a large data feed`](loading-and-displaying-a-large-data-feed.md) sample code project defines:
+SwiftUI returns the value associated with this property when you use [`FetchRequest`](../fetchrequest.md) as a property wrapper, and then access the wrapped property by name. For example, consider the following `quakes` property declaration that fetches a `Quake` type that the [Loading and displaying a large data feed](../loading-and-displaying-a-large-data-feed.md) sample code project defines:
 
 ```swift
 @FetchRequest(fetchRequest: request)
 private var quakes: FetchedResults<Quake>
 ```
 
-You access the request’s `wrappedValue`, which contains a [`FetchedResults`](fetchedresults.md) instance, by referring to the `quakes` property by name:
+You access the request’s `wrappedValue`, which contains a [`FetchedResults`](../fetchedresults.md) instance, by referring to the `quakes` property by name:
 
 ```swift
 Text("Found \(quakes.count) earthquakes")
@@ -47,7 +48,8 @@ The `wrappedValue` property returns an empty array when there are no fetched res
 
 ## See Also
 
-- [func update()](fetchrequest/update.md)
+### Getting the fetched results
+- [func update()](./update%28%29.md)
   Updates the fetched results.
 
 

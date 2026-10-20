@@ -1,7 +1,8 @@
 # freeBytes
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for the amount of free space, in bytes, in the volume.
 
@@ -12,6 +13,10 @@ A property for the amount of free space, in bytes, in the volume.
 
 ```swift
 var freeBytes: UInt64 { get set }
+```
+
+```objc
+@property uint64_t freeBytes;
 ```
 
 

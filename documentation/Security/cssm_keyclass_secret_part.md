@@ -1,7 +1,8 @@
 # CSSM_KEYCLASS_SECRET_PART
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_KEYCLASS_SECRET_PART: UInt32 { get }
+```
+
+```c
+CSSM_KEYCLASS_SECRET_PART
 ```
 
 

@@ -1,7 +1,8 @@
 # BGTaskSchedulerPermittedIdentifiers
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An array of strings containing developer-specified task identifiers in reverse URL notation.
 
@@ -11,19 +12,22 @@ An array of strings containing developer-specified task identifiers in reverse U
 - tvOS 13.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `BGTaskSchedulerPermittedIdentifiers` (Permitted background task scheduler identifiers)
+- **Type**: array of string 
 
 ## See Also
 
-- [class BGTaskScheduler](../backgroundtasks/bgtaskscheduler.md)
+### Related Documentation
+- [class BGTaskScheduler](../../BackgroundTasks/bgtaskscheduler.md)
   A class for scheduling tasks that add background support to your app’s most critical work.
-- [UIBackgroundModes](information-property-list/uibackgroundmodes.md)
+### Background execution
+- [UIBackgroundModes](./uibackgroundmodes.md)
   Services provided by an app that require it to run in the background.
-- [WKBackgroundModes](information-property-list/wkbackgroundmodes.md)
+- [WKBackgroundModes](./wkbackgroundmodes.md)
   The services a watchOS app provides that require it to continue running in the background.
-- [LSBackgroundOnly](information-property-list/lsbackgroundonly.md)
+- [LSBackgroundOnly](./lsbackgroundonly.md)
   A Boolean value indicating whether the app runs only in the background.
 
 

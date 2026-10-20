@@ -1,12 +1,13 @@
 # draw()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Implemented by subclasses to draw the image in the current coordinate system.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,25 +15,30 @@ Implemented by subclasses to draw the image in the current coordinate system.
 func draw() -> Bool
 ```
 
+```objc
+- (BOOL) draw;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the image was successfully drawn; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) if there was a problem. The default version of this method simply returns [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](../../Swift/true.md) if the image was successfully drawn; otherwise, [`false`](../../Swift/false.md) if there was a problem. The default version of this method simply returns [`true`](../../Swift/true.md).
 
 #### Discussion
 
 Subclass override this method to draw the image using the image data. By the time this method is called, the graphics state is already configured for you to draw the image at location (0.0, 0.0) in the current coordinate system.
 
-The standard Application Kit subclasses all draw the image using the `NSCompositeCopy` composite operation defined in the `Constants` section of `NSImage`. Using the copy operator, the image data overwrites the destination without any blending effects. Transparent (alpha) regions in the source image appear black. To use other composite operations, you must place the representation into an `NSImage` object and use its [`draw(at:from:operation:fraction:)`](nsimage/draw(at:from:operation:fraction:).md) or [`draw(in:from:operation:fraction:)`](nsimage/draw(in:from:operation:fraction:).md) methods.
+The standard Application Kit subclasses all draw the image using the `NSCompositeCopy` composite operation defined in the `Constants` section of `NSImage`. Using the copy operator, the image data overwrites the destination without any blending effects. Transparent (alpha) regions in the source image appear black. To use other composite operations, you must place the representation into an `NSImage` object and use its [`draw(at:from:operation:fraction:)`](../nsimage/draw%28at,from,operation,fraction%29.md) or [`draw(in:from:operation:fraction:)`](../nsimage/draw%28in,from,operation,fraction%29.md) methods.
 
 ## See Also
 
-- [func draw(at: NSPoint) -> Bool](nsimagerep/draw(at:).md)
+### Drawing Images
+- [func draw(at: NSPoint) -> Bool](./draw%28at%29.md)
   Draws the image representation’s image data at the specified point in the current coordinate system.
-- [func draw(in: NSRect) -> Bool](nsimagerep/draw(in:).md)
+- [func draw(in: NSRect) -> Bool](./draw%28in%29.md)
   Draws the image, scaling it (as needed) to fit the specified rectangle.
-- [func draw(in: NSRect, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat, respectFlipped: Bool, hints: [NSImageRep.HintKey : Any]?) -> Bool](nsimagerep/draw(in:from:operation:fraction:respectflipped:hints:).md)
+- [func draw(in: NSRect, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat, respectFlipped: Bool, hints: [NSImageRep.HintKey : Any]?) -> Bool](./draw%28in,from,operation,fraction,respectflipped,hints%29.md)
   Draws all or part of the image in the specified rectangle in the current coordinate system.
-- [NSImageRep.HintKey](nsimagerep/hintkey.md)
+- [NSImageRep.HintKey](./hintkey.md)
   Constants for the keys to include in a hints dictionary when drawing the image.
 
 

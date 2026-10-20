@@ -1,7 +1,8 @@
 # isHidden
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the virtual controller hides the element.
 
@@ -16,11 +17,16 @@ A Boolean value that determines whether the virtual controller hides the element
 var isHidden: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isHidden) BOOL hidden;
+```
+
 ## See Also
 
-- [var path: UIBezierPath?](gcvirtualcontroller/elementconfiguration/path.md)
+### Configuring elements
+- [var path: UIBezierPath?](./path.md)
   The Bezier path for the shape of an element.
-- [var actsAsTouchpad: Bool](gcvirtualcontroller/elementconfiguration/actsastouchpad.md)
+- [var actsAsTouchpad: Bool](./actsastouchpad.md)
   A Boolean value that determines whether the thumbstick element behaves as a touchpad.
 
 

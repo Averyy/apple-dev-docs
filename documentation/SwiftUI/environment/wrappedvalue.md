@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current value of the environment property.
 
@@ -22,7 +23,7 @@ var wrappedValue: Value { get }
 
 #### Discussion
 
-The wrapped value property provides primary access to the value’s data. However, you don’t access `wrappedValue` directly. Instead, you read the property variable created with the [`Environment`](environment.md) property wrapper:
+The wrapped value property provides primary access to the value’s data. However, you don’t access `wrappedValue` directly. Instead, you read the property variable created with the [`Environment`](../environment.md) property wrapper:
 
 ```swift
 @Environment(\.colorScheme) var colorScheme: ColorScheme

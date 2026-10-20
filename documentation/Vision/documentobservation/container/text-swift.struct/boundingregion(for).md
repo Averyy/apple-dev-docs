@@ -1,7 +1,8 @@
 # boundingRegion(for:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates a bounding region around the range of characters within a string.
 

@@ -1,7 +1,8 @@
 # activationData
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request’s activation data.
 
@@ -9,7 +10,7 @@ The request’s activation data.
 - iOS 9.0+
 - iPadOS 9.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ The request’s activation data.
 var activationData: Data? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSData * activationData;
+```
+
 #### Discussion
 
 This property contains the data provided to the payment network as a cryptographic one-time pad (OTP), per the Payment Network API specification. The cryptographic OTP is not interpreted by Apple or iOS. The OTP should be verified by the issuer and/or payment network upon receipt of the provisioning request to ensure the request’s authenticity. For more information about the activation data’s content, contact your payment network.
 
-> **Note**:  This is the same type of activation data that is accepted by the pass library’s [`activate(_:withActivationData:completion:)`](pkpasslibrary/activate(_:withactivationdata:completion:).md) method.
+> **Note**:  This is the same type of activation data that is accepted by the pass library’s [`activate(_:withActivationData:completion:)`](../pkpasslibrary/activate%28_,withactivationdata,completion%29.md) method.
 
 ## See Also
 
-- [var encryptedPassData: Data?](pkaddpaymentpassrequest/encryptedpassdata.md)
+### Accessing request data
+- [var encryptedPassData: Data?](./encryptedpassdata.md)
   An encrypted JSON file containing the sensitive information needed to add a card to Apple Pay.
-- [var ephemeralPublicKey: Data?](pkaddpaymentpassrequest/ephemeralpublickey.md)
+- [var ephemeralPublicKey: Data?](./ephemeralpublickey.md)
   The ephemeral public key used by elliptic curve cryptography (ECC).
-- [var wrappedKey: Data?](pkaddpaymentpassrequest/wrappedkey.md)
+- [var wrappedKey: Data?](./wrappedkey.md)
 
 
 ---

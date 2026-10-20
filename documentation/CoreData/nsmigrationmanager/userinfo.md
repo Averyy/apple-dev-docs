@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user info for the migration manager.
 
@@ -10,7 +11,7 @@ The user info for the migration manager.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ The user info for the migration manager.
 var userInfo: [AnyHashable : Any]? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSDictionary * userInfo;
+```
+
 #### Discussion
 
 You can use the user info dictionary to aid the customization of your migration process.
 
 ## See Also
 
-- [var usesStoreSpecificMigrationManager: Bool](nsmigrationmanager/usesstorespecificmigrationmanager.md)
+### Customizing the Manager
+- [var usesStoreSpecificMigrationManager: Bool](./usesstorespecificmigrationmanager.md)
   A Boolean value that indicates whether the migration manager tries to use a store specific migration manager to perform the  migration.
 
 

@@ -1,7 +1,8 @@
 # appearsActive
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether views and styles in this environment should prefer an active appearance over an inactive appearance.
 
@@ -57,33 +58,34 @@ This is bridged with `UITraitCollection.activeAppearance` for UIKit hosted conte
 
 ## See Also
 
-- [var colorScheme: ColorScheme](environmentvalues/colorscheme.md)
+### Display characteristics
+- [var colorScheme: ColorScheme](./colorscheme.md)
   The color scheme of this environment.
-- [var colorSchemeContrast: ColorSchemeContrast](environmentvalues/colorschemecontrast.md)
+- [var colorSchemeContrast: ColorSchemeContrast](./colorschemecontrast.md)
   The contrast associated with the color scheme of this environment.
-- [var displayScale: CGFloat](environmentvalues/displayscale.md)
+- [var displayScale: CGFloat](./displayscale.md)
   The display scale of this environment.
-- [var horizontalSizeClass: UserInterfaceSizeClass?](environmentvalues/horizontalsizeclass.md)
+- [var horizontalSizeClass: UserInterfaceSizeClass?](./horizontalsizeclass.md)
   The horizontal size class of this environment.
-- [var imageScale: Image.Scale](environmentvalues/imagescale.md)
+- [var imageScale: Image.Scale](./imagescale.md)
   The image scale for this environment.
-- [var pixelLength: CGFloat](environmentvalues/pixellength.md)
+- [var pixelLength: CGFloat](./pixellength.md)
   The size of a pixel on the screen.
-- [var sidebarRowSize: SidebarRowSize](environmentvalues/sidebarrowsize.md)
+- [var sidebarRowSize: SidebarRowSize](./sidebarrowsize.md)
   The current size of sidebar rows.
-- [var verticalSizeClass: UserInterfaceSizeClass?](environmentvalues/verticalsizeclass.md)
+- [var verticalSizeClass: UserInterfaceSizeClass?](./verticalsizeclass.md)
   The vertical size class of this environment.
-- [var immersiveSpaceDisplacement: Pose3D](environmentvalues/immersivespacedisplacement.md)
+- [var immersiveSpaceDisplacement: Pose3D](./immersivespacedisplacement.md)
   The displacement that the system applies to the immersive space when moving the space away from its default position, in meters.
-- [var labelsVisibility: Visibility](environmentvalues/labelsvisibility.md)
-  The labels visibility set by [`labelsVisibility(_:)`](view/labelsvisibility(_:).md).
-- [var materialActiveAppearance: MaterialActiveAppearance](environmentvalues/materialactiveappearance.md)
+- [var labelsVisibility: Visibility](./labelsvisibility.md)
+  The labels visibility set by [`labelsVisibility(_:)`](../view/labelsvisibility%28_%29.md).
+- [var materialActiveAppearance: MaterialActiveAppearance](./materialactiveappearance.md)
   The behavior materials should use for their active state, defaulting to `automatic`.
-- [struct TabBarPlacement](tabbarplacement.md)
+- [struct TabBarPlacement](../tabbarplacement.md)
   A placement for tabs in a tab view.
-- [var toolbarLabelStyle: ToolbarLabelStyle?](environmentvalues/toolbarlabelstyle.md)
+- [var toolbarLabelStyle: ToolbarLabelStyle?](./toolbarlabelstyle.md)
   The label style to apply to controls within a toolbar.
-- [var toolbarVerticalEdge: HorizontalEdge?](environmentvalues/toolbarverticaledge.md)
+- [var toolbarVerticalEdge: HorizontalEdge?](./toolbarverticaledge.md)
   This value reflects the system’s preferred edge for the vertical bar in the current context, regardless of whether a vertical bar is currently visible. Use it to position custom bars or other UI relative to the system’s bar placement.
 
 

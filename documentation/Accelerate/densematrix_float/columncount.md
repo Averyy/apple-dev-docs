@@ -1,18 +1,19 @@
 # columnCount
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of columns in the matrix.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ The number of columns in the matrix.
 var columnCount: Int32
 ```
 
+```c
+int columnCount;
+```
+
 ## See Also
 
-- [var rowCount: Int32](densematrix_float/rowcount.md)
+### Inspecting a Matrix’s Structure and Data
+- [var rowCount: Int32](./rowcount.md)
   The number of rows in the matrix.
-- [var columnStride: Int32](densematrix_float/columnstride.md)
+- [var columnStride: Int32](./columnstride.md)
   The stride between matrix columns, in elements.
-- [var attributes: SparseAttributes_t](densematrix_float/attributes.md)
+- [var attributes: SparseAttributes_t](./attributes.md)
   The attributes of the matrix, such as whether it’s symmetrical or triangular.
-- [struct SparseAttributes_t](sparseattributes_t.md)
+- [struct SparseAttributes_t](../sparseattributes_t.md)
   A structure that represents the attributes of a matrix.
-- [var data: UnsafeMutablePointer<Float>](densematrix_float/data.md)
+- [var data: UnsafeMutablePointer<Float>](./data.md)
   The array of single-precision, floating-point values in column-major order.
 
 

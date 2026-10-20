@@ -1,7 +1,8 @@
 # numberOfImages
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of images for batch processing.
 
@@ -19,37 +20,42 @@ The number of images for batch processing.
 var numberOfImages: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger numberOfImages;
+```
+
 ## See Also
 
-- [var device: any MTLDevice](mpsimage/device.md)
+### Properties
+- [var device: any MTLDevice](./device.md)
   The device on which the image will be used.
-- [var width: Int](mpsimage/width.md)
+- [var width: Int](./width.md)
   The formal width of the image, in pixels.
-- [var height: Int](mpsimage/height.md)
+- [var height: Int](./height.md)
   The formal height of the image, in pixels.
-- [var featureChannels: Int](mpsimage/featurechannels.md)
+- [var featureChannels: Int](./featurechannels.md)
   The number of feature channels per pixel.
-- [var textureType: MTLTextureType](mpsimage/texturetype.md)
+- [var textureType: MTLTextureType](./texturetype.md)
   The type of the underlying texture.
-- [enum MTLTextureType](../metal/mtltexturetype.md)
+- [enum MTLTextureType](../../Metal/mtltexturetype.md)
   The dimension of each image, including whether multiple images are arranged into an array or a cube.
-- [var pixelFormat: MTLPixelFormat](mpsimage/pixelformat.md)
+- [var pixelFormat: MTLPixelFormat](./pixelformat.md)
   The pixel format of the underlying texture.
-- [enum MTLPixelFormat](../metal/mtlpixelformat.md)
+- [enum MTLPixelFormat](../../Metal/mtlpixelformat.md)
   The data formats that describe the organization and characteristics of individual pixels in a texture.
-- [var precision: Int](mpsimage/precision.md)
+- [var precision: Int](./precision.md)
   The number of bits of numeric precision available for each feature channel.
-- [var usage: MTLTextureUsage](mpsimage/usage.md)
+- [var usage: MTLTextureUsage](./usage.md)
   The intended usage of the underlying texture.
-- [struct MTLTextureUsage](../metal/mtltextureusage.md)
+- [struct MTLTextureUsage](../../Metal/mtltextureusage.md)
   An enumeration for the various options that determine how you can use a texture.
-- [var pixelSize: Int](mpsimage/pixelsize.md)
+- [var pixelSize: Int](./pixelsize.md)
   The number of bytes from the first byte of one pixel to the first byte of the next pixel, in storage order. (Includes padding.)
-- [var texture: any MTLTexture](mpsimage/texture.md)
+- [var texture: any MTLTexture](./texture.md)
   The underlying texture.
-- [protocol MTLTexture](../metal/mtltexture.md)
+- [protocol MTLTexture](../../Metal/mtltexture.md)
   A resource that holds formatted image data.
-- [var label: String?](mpsimage/label.md)
+- [var label: String?](./label.md)
   A string to help identify this object.
 
 

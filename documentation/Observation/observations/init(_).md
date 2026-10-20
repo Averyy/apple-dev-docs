@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Observation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Constructs an asynchronous sequence for a given closure by tracking changes of `@Observable` types.
 

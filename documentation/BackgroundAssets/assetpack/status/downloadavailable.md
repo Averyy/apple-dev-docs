@@ -1,7 +1,8 @@
 # downloadAvailable
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A status value that indicates that the asset pack is available to download.
 
@@ -21,9 +22,10 @@ static let downloadAvailable: AssetPack.Status
 
 ## See Also
 
-- [static let downloading: AssetPack.Status](assetpack/status/downloading.md)
+### Tracking downloads
+- [static let downloading: AssetPack.Status](./downloading.md)
   A status value that indicates that the system is currently downloading the asset pack.
-- [static let downloaded: AssetPack.Status](assetpack/status/downloaded.md)
+- [static let downloaded: AssetPack.Status](./downloaded.md)
   A status value that indicates that the system finished downloading the asset pack.
 
 

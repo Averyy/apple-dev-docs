@@ -1,7 +1,8 @@
 # HPKE.Errors.unexpectedPSK
 
 **Framework**: Apple CryptoKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The PSK isn’t nil and the object is in base mode, or in authentication mode.
 

@@ -1,22 +1,27 @@
 # AUScheduleMIDIEventBlock
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block to schedule MIDI events.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias AUScheduleMIDIEventBlock = (AUEventSampleTime, UInt8, Int, UnsafePointer<UInt8>) -> Void
+```
+
+```c
+typedef void (^)(long long, unsigned char, long, const unsigned char *) __attribute__((nonblocking)) AUScheduleMIDIEventBlock;
 ```
 
 #### Discussion
@@ -30,16 +35,17 @@ The block takes the following parameters:
 
 ## See Also
 
-- [var isMusicDeviceOrEffect: Bool](auaudiounit/ismusicdeviceoreffect.md)
+### Managing MIDI Events
+- [var isMusicDeviceOrEffect: Bool](./auaudiounit/ismusicdeviceoreffect.md)
   Specifies whether an audio unit responds to MIDI events.
-- [var virtualMIDICableCount: Int](auaudiounit/virtualmidicablecount.md)
+- [var virtualMIDICableCount: Int](./auaudiounit/virtualmidicablecount.md)
   The number of virtual MIDI cables implemented by a music device or effect.
-- [var scheduleMIDIEventBlock: AUScheduleMIDIEventBlock?](auaudiounit/schedulemidieventblock.md)
+- [var scheduleMIDIEventBlock: AUScheduleMIDIEventBlock?](./auaudiounit/schedulemidieventblock.md)
   A block used to schedule MIDI events.
-- [var midiOutputEventBlock: AUMIDIOutputEventBlock?](auaudiounit/midioutputeventblock.md)
-- [var midiOutputNames: [String]](auaudiounit/midioutputnames.md)
+- [var midiOutputEventBlock: AUMIDIOutputEventBlock?](./auaudiounit/midioutputeventblock.md)
+- [var midiOutputNames: [String]](./auaudiounit/midioutputnames.md)
   The names of the MIDI outputs.
-- [typealias AUMIDIOutputEventBlock](aumidioutputeventblock.md)
+- [typealias AUMIDIOutputEventBlock](./aumidioutputeventblock.md)
 
 
 ---

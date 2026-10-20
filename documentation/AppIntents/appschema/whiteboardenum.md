@@ -1,7 +1,8 @@
 # AppSchema.WhiteboardEnum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies enum schemas in the whiteboard domain.
 
@@ -21,23 +22,24 @@ protocol WhiteboardEnum : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var color: some AppSchemaEnum](appschema/whiteboardenum/color.md)
+- [var color: some AppSchemaEnum](./whiteboardenum/color.md)
   An enum schema for a color parameter.
-- [var itemType: some AppSchemaEnum](appschema/whiteboardenum/itemtype.md)
+- [var itemType: some AppSchemaEnum](./whiteboardenum/itemtype.md)
   An enum schema for an item type parameter.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Enum](appschema/enum.md)
+- [AppSchema.Enum](./enum.md)
 
 ## See Also
 
-- [var color: some AppSchemaEnum](appschema/whiteboardenum/color.md)
+### Types for static parameters
+- [var color: some AppSchemaEnum](./whiteboardenum/color.md)
   An enum schema for a color parameter.
-- [var itemType: some AppSchemaEnum](appschema/whiteboardenum/itemtype.md)
+- [var itemType: some AppSchemaEnum](./whiteboardenum/itemtype.md)
   An enum schema for an item type parameter.
 
 

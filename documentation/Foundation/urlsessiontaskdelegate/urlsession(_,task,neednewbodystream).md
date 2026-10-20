@@ -1,7 +1,8 @@
 # urlSession(_:task:needNewBodyStream:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when a task requires a new request body stream to send to the remote server.
 
@@ -17,18 +18,26 @@ Tells the delegate when a task requires a new request body stream to send to the
 ## Declaration
 
 ```swift
+optional func urlSession(_ session: URLSession, task: URLSessionTask, needNewBodyStream completionHandler: @escaping @Sendable (InputStream?) -> Void)
+```
+
+```swift
 optional func urlSession(_ session: URLSession, needNewBodyStreamForTask task: URLSessionTask) async -> InputStream?
+```
+
+```objc
+- (void) URLSession:(NSURLSession *) session task:(NSURLSessionTask *) task needNewBodyStream:(void (^)(NSInputStream *bodyStream)) completionHandler;
 ```
 
 ## Mentions
 
-- [Uploading streams of data](uploading-streams-of-data.md)
+- [Uploading streams of data](../uploading-streams-of-data.md)
 
 #### Discussion
 
 The task calls this delegate method under two circumstances:
 
-- To provide the initial request body stream if the task was created with [`uploadTask(withStreamedRequest:)`](urlsession/uploadtask(withstreamedrequest:).md)
+- To provide the initial request body stream if the task was created with [`uploadTask(withStreamedRequest:)`](../urlsession/uploadtask%28withstreamedrequest%29.md)
 - To provide a replacement request body stream if the task needs to resend a request that has a body stream because of an authentication challenge or other recoverable server error.
 
 > **Note**:  You don’t need to implement this method if your code provides the request body using a file URL or a data object.
@@ -41,7 +50,8 @@ The task calls this delegate method under two circumstances:
 
 ## See Also
 
-- [func urlSession(URLSession, task: URLSessionTask, didSendBodyData: Int64, totalBytesSent: Int64, totalBytesExpectedToSend: Int64)](urlsessiontaskdelegate/urlsession(_:task:didsendbodydata:totalbytessent:totalbytesexpectedtosend:).md)
+### Working with upload tasks
+- [func urlSession(URLSession, task: URLSessionTask, didSendBodyData: Int64, totalBytesSent: Int64, totalBytesExpectedToSend: Int64)](./urlsession%28_,task,didsendbodydata,totalbytessent,totalbytesexpectedtosend%29.md)
   Periodically informs the delegate of the progress of sending body content to the server.
 
 

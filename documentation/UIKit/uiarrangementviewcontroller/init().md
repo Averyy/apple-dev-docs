@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an arrangement view controller.
 
@@ -16,6 +17,10 @@ Creates an arrangement view controller.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

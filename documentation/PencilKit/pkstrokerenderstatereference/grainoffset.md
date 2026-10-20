@@ -1,7 +1,8 @@
 # grainOffset
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pre-transform position of the grain texture for strokes with a backing grain texture such as crayon.
 
@@ -16,6 +17,10 @@ The pre-transform position of the grain texture for strokes with a backing grain
 
 ```swift
 var grainOffset: CGPoint { get set }
+```
+
+```objc
+@property (nonatomic, assign) CGPoint grainOffset;
 ```
 
 

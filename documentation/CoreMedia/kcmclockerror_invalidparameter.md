@@ -1,18 +1,19 @@
 # kCMClockError_InvalidParameter
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A clock error that indicates a parameter isn’t valid.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ A clock error that indicates a parameter isn’t valid.
 var kCMClockError_InvalidParameter: OSStatus { get }
 ```
 
+```c
+kCMClockError_InvalidParameter
+```
+
 ## See Also
 
-- [var kCMClockError_MissingRequiredParameter: OSStatus](kcmclockerror_missingrequiredparameter.md)
+### Constants
+- [var kCMClockError_MissingRequiredParameter: OSStatus](./kcmclockerror_missingrequiredparameter.md)
   A clock error that indicates a parameter is missing.
-- [var kCMClockError_AllocationFailed: OSStatus](kcmclockerror_allocationfailed.md)
+- [var kCMClockError_AllocationFailed: OSStatus](./kcmclockerror_allocationfailed.md)
   A clock error that indicates the memory allocation fails.
-- [var kCMClockError_UnsupportedOperation: OSStatus](kcmclockerror_unsupportedoperation.md)
+- [var kCMClockError_UnsupportedOperation: OSStatus](./kcmclockerror_unsupportedoperation.md)
   A clock error that indicates the operation isn’t supported.
 
 

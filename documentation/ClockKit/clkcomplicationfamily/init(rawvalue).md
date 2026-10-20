@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - watchOS 2.0+

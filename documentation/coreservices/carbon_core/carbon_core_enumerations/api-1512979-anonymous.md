@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kCSIdentityClassGroup: Int](kcsidentityclassgroup.md)
-- [var kCSIdentityClassUser: Int](kcsidentityclassuser.md)
+- [var kCSIdentityClassGroup: Int](../../kcsidentityclassgroup.md)
+- [var kCSIdentityClassUser: Int](../../kcsidentityclassuser.md)
 
 
 ---

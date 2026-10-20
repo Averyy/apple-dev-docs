@@ -1,7 +1,8 @@
 # init(x:y:z:w:)
 
 **Framework**: Game Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a quaternion structure with the specified values.
 

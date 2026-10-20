@@ -1,15 +1,16 @@
 # mediaURL
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The filesystem URL for the movie.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,29 +18,34 @@ The filesystem URL for the movie.
 static let mediaURL: UIImagePickerController.InfoKey
 ```
 
+```c
+extern UIImagePickerControllerInfoKey const UIImagePickerControllerMediaURL;
+```
+
 #### Discussion
 
-The value for this key is an [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object.
+The value for this key is an [`NSURL`](../../../Foundation/nsurl.md) object.
 
 ## See Also
 
-- [static let cropRect: UIImagePickerController.InfoKey](uiimagepickercontroller/infokey/croprect.md)
+### Constants
+- [static let cropRect: UIImagePickerController.InfoKey](./croprect.md)
   The cropping rectangle that was applied to the original image.
-- [static let editedImage: UIImagePickerController.InfoKey](uiimagepickercontroller/infokey/editedimage.md)
+- [static let editedImage: UIImagePickerController.InfoKey](./editedimage.md)
   An image edited by the user.
-- [static let imageURL: UIImagePickerController.InfoKey](uiimagepickercontroller/infokey/imageurl.md)
+- [static let imageURL: UIImagePickerController.InfoKey](./imageurl.md)
   The URL of the image file.
-- [static let livePhoto: UIImagePickerController.InfoKey](uiimagepickercontroller/infokey/livephoto.md)
+- [static let livePhoto: UIImagePickerController.InfoKey](./livephoto.md)
   The Live Photo representation of the selected or captured photo.
-- [static let mediaMetadata: UIImagePickerController.InfoKey](uiimagepickercontroller/infokey/mediametadata.md)
+- [static let mediaMetadata: UIImagePickerController.InfoKey](./mediametadata.md)
   Metadata for a newly-captured photograph.
-- [static let mediaType: UIImagePickerController.InfoKey](uiimagepickercontroller/infokey/mediatype.md)
+- [static let mediaType: UIImagePickerController.InfoKey](./mediatype.md)
   The media type selected by the user.
-- [static let originalImage: UIImagePickerController.InfoKey](uiimagepickercontroller/infokey/originalimage.md)
+- [static let originalImage: UIImagePickerController.InfoKey](./originalimage.md)
   The original, uncropped image selected by the user.
-- [static let phAsset: UIImagePickerController.InfoKey](uiimagepickercontroller/infokey/phasset.md)
+- [static let phAsset: UIImagePickerController.InfoKey](./phasset.md)
   A Photos asset for the image.
-- [static let referenceURL: UIImagePickerController.InfoKey](uiimagepickercontroller/infokey/referenceurl.md)
+- [static let referenceURL: UIImagePickerController.InfoKey](./referenceurl.md)
   The Assets Library URL for the original version of the picked item.
 
 

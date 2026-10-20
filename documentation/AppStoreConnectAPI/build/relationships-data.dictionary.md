@@ -1,7 +1,8 @@
 # Build.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,39 +11,39 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object Build.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object Build.Relationships.App](build/relationships-data.dictionary/app-data.dictionary.md)
+- [object Build.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Build.Relationships.AppEncryptionDeclaration](build/relationships-data.dictionary/appencryptiondeclaration-data.dictionary.md)
+- [object Build.Relationships.AppEncryptionDeclaration](./relationships-data.dictionary/appencryptiondeclaration-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Build.Relationships.AppStoreVersion](build/relationships-data.dictionary/appstoreversion-data.dictionary.md)
+- [object Build.Relationships.AppStoreVersion](./relationships-data.dictionary/appstoreversion-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Build.Relationships.BetaBuildLocalizations](build/relationships-data.dictionary/betabuildlocalizations-data.dictionary.md)
+- [object Build.Relationships.BetaBuildLocalizations](./relationships-data.dictionary/betabuildlocalizations-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Build.Relationships.BetaGroups](build/relationships-data.dictionary/betagroups-data.dictionary.md)
+- [object Build.Relationships.BetaGroups](./relationships-data.dictionary/betagroups-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Build.Relationships.BuildBetaDetail](build/relationships-data.dictionary/buildbetadetail-data.dictionary.md)
+- [object Build.Relationships.BuildBetaDetail](./relationships-data.dictionary/buildbetadetail-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Build.Relationships.BuildBundles](build/relationships-data.dictionary/buildbundles-data.dictionary.md)
+- [object Build.Relationships.BuildBundles](./relationships-data.dictionary/buildbundles-data.dictionary.md)
   The data, links, and paging information that describe the relationship between the Builds and the Build Bundles resources.
-- [object Build.Relationships.Icons](build/relationships-data.dictionary/icons-data.dictionary.md)
+- [object Build.Relationships.Icons](./relationships-data.dictionary/icons-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Build.Relationships.IndividualTesters](build/relationships-data.dictionary/individualtesters-data.dictionary.md)
+- [object Build.Relationships.IndividualTesters](./relationships-data.dictionary/individualtesters-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Build.Relationships.PreReleaseVersion](build/relationships-data.dictionary/prereleaseversion-data.dictionary.md)
+- [object Build.Relationships.PreReleaseVersion](./relationships-data.dictionary/prereleaseversion-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Build.Relationships.BetaAppReviewSubmission](build/relationships-data.dictionary/betaappreviewsubmission-data.dictionary.md)
+- [object Build.Relationships.BetaAppReviewSubmission](./relationships-data.dictionary/betaappreviewsubmission-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 ### Dictionaries
-- [object Build.Relationships.BuildUpload](build/relationships-data.dictionary/buildupload-data.dictionary.md)
-- [object Build.Relationships.DiagnosticSignatures](build/relationships-data.dictionary/diagnosticsignatures-data.dictionary.md)
-- [object Build.Relationships.PerfPowerMetrics](build/relationships-data.dictionary/perfpowermetrics-data.dictionary.md)
+- [object Build.Relationships.BuildUpload](./relationships-data.dictionary/buildupload-data.dictionary.md)
+- [object Build.Relationships.DiagnosticSignatures](./relationships-data.dictionary/diagnosticsignatures-data.dictionary.md)
+- [object Build.Relationships.PerfPowerMetrics](./relationships-data.dictionary/perfpowermetrics-data.dictionary.md)
 
 ## Properties
 
@@ -63,7 +64,8 @@ object Build.Relationships
 
 ## See Also
 
-- [object Build.Attributes](build/attributes-data.dictionary.md)
+### Attributes and Relationships
+- [object Build.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a Builds resource.
 
 

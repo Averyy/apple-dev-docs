@@ -1,7 +1,8 @@
 # append(repeating:count:as:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends the given value’s bytes repeatedly to this span’s bytes.
 

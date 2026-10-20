@@ -1,7 +1,8 @@
 # maximum
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum amount of snowfall as depth of snow crystals for the period.
 

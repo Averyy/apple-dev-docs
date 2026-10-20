@@ -1,7 +1,8 @@
 # init(bufferClass:minimumCapacity:makingHeaderWith:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create with new storage containing an initial `Header` and space for at least `minimumCapacity` `element`s.
 
@@ -22,7 +23,7 @@ init(bufferClass: AnyClass, minimumCapacity: Int, makingHeaderWith factory: (Any
 
 #### Discussion
 
-> **Note**: `minimumCapacity >= 0`, and the type indicated by `bufferClass` is a non-`@objc` class with no declared stored properties.  The `deinit` of `bufferClass` must destroy its stored `Header` and any constructed `Element`s.
+> **Precondition**: `minimumCapacity >= 0`, and the type indicated by `bufferClass` is a non-`@objc` class with no declared stored properties.  The `deinit` of `bufferClass` must destroy its stored `Header` and any constructed `Element`s.
 
 ## Parameters
 
@@ -32,7 +33,8 @@ init(bufferClass: AnyClass, minimumCapacity: Int, makingHeaderWith factory: (Any
 
 ## See Also
 
-- [init(unsafeBufferObject: AnyObject)](managedbufferpointer/init(unsafebufferobject:).md)
+### Creating a Buffer
+- [init(unsafeBufferObject: AnyObject)](./init%28unsafebufferobject%29.md)
   Manage the given `buffer`.
 
 

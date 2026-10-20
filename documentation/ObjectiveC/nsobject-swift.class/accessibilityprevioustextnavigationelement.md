@@ -1,7 +1,8 @@
 # accessibilityPreviousTextNavigationElement
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An accessibility element that contains text that is semantically previous to this element’s text.
 
@@ -16,6 +17,10 @@ An accessibility element that contains text that is semantically previous to thi
 ```swift
 @MainActor
 var accessibilityPreviousTextNavigationElement: Any? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) id accessibilityPreviousTextNavigationElement;
 ```
 
 #### Discussion

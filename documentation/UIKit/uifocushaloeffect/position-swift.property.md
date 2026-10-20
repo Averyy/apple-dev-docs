@@ -1,7 +1,8 @@
 # position
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the halo effect relative to its shape.
 
@@ -17,17 +18,22 @@ The position of the halo effect relative to its shape.
 var position: UIFocusHaloEffect.Position { get set }
 ```
 
+```objc
+@property (nonatomic) UIFocusHaloEffectPosition position;
+```
+
 #### Discussion
 
-The default value of this property is [`UIFocusHaloEffect.Position.automatic`](uifocushaloeffect/position-swift.enum/automatic.md).
+The default value of this property is [`UIFocusHaloEffect.Position.automatic`](./position-swift.enum/automatic.md).
 
 ## See Also
 
-- [var containerView: UIView?](uifocushaloeffect/containerview.md)
+### Configuring a halo effect
+- [var containerView: UIView?](./containerview.md)
   The container view to place the halo effect into.
-- [var referenceView: UIView?](uifocushaloeffect/referenceview.md)
+- [var referenceView: UIView?](./referenceview.md)
   The view to place the halo effect above.
-- [UIFocusHaloEffect.Position](uifocushaloeffect/position-swift.enum.md)
+- [UIFocusHaloEffect.Position](./position-swift.enum.md)
   Constants that describe positions for drawing the halo focus effect.
 
 

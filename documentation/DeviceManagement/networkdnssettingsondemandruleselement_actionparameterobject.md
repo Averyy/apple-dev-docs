@@ -1,7 +1,8 @@
 # NetworkDNSSettingsOnDemandRulesElement_ActionParameterObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary that provides per-connection rules.
 
@@ -14,7 +15,7 @@ A dictionary that provides per-connection rules.
 
 ## Declaration
 
-```swift
+```
 object NetworkDNSSettingsOnDemandRulesElement_ActionParameterObject
 ```
 
@@ -24,8 +25,12 @@ The keys allowed in each dictionary are described below. Note: This array is onl
 
 ## Properties
 
-- `DomainAction` (string) *(required)*: The DNS settings behavior for the specified domains. Allowed values: - ‘NeverConnect’: Don’t use the DNS Settings for the specified domains.
-- ‘ConnectIfNeeded’: Allow using the DNS Settings for the specified domains.
+- `DomainAction` (string) *(required)*: The DNS settings behavior for the specified domains. Allowed values:
+
+  - ‘NeverConnect’: Don’t use the DNS Settings for the specified domains.
+  - ‘ConnectIfNeeded’: Allow using the DNS Settings for the specified domains.
+
+  **Allowed Values**: `NeverConnect`, `ConnectIfNeeded`
 - `Domains` ([string]) *(required)*: The domains for which this evaluation applies.
 
 

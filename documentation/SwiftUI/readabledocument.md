@@ -1,7 +1,8 @@
 # ReadableDocument
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A document type that supports reading from file.
 
@@ -20,7 +21,7 @@ protocol ReadableDocument : AnyObject
 
 #### Overview
 
-Conform to `ReadableDocument` to build a read-only document viewer, or combine with [`WritableDocument`](writabledocument.md) (via the [`Document`](document.md) protocol) for full read-write support.
+Conform to `ReadableDocument` to build a read-only document viewer, or combine with [`WritableDocument`](./writabledocument.md) (via the [`Document`](./document.md) protocol) for full read-write support.
 
 A readable document is a reference type so that SwiftUI can maintain a stable identity across updates. Use `@Observable` to enable per-property change tracking:
 
@@ -50,7 +51,7 @@ final class MarkdownViewer: ReadableDocument {
 }
 ```
 
-Present a read-only document with [`DocumentGroup`](documentgroup.md) using the viewer initializer:
+Present a read-only document with [`DocumentGroup`](./documentgroup.md) using the viewer initializer:
 
 ```swift
 DocumentGroup { document in
@@ -65,35 +66,36 @@ Set `CFBundleTypeRole` to `Viewer` in your Info.plist for read-only document typ
 ## Topics
 
 ### Reading a document
-- [static var readableContentTypes: [UTType]](readabledocument/readablecontenttypes.md)
+- [static var readableContentTypes: [UTType]](./readabledocument/readablecontenttypes.md)
   The content types this document can open.
-- [ReadableDocument.ReadConfiguration](readabledocument/readconfiguration.md)
+- [ReadableDocument.ReadConfiguration](./readabledocument/readconfiguration.md)
   The configuration for reading document contents.
-- [associatedtype Reader : DocumentReader](readabledocument/reader.md)
+- [associatedtype Reader : DocumentReader](./readabledocument/reader.md)
   A type that implements reading from disk.
-- [func reader(configuration: sending Self.ReadConfiguration) -> sending Self.Reader](readabledocument/reader(configuration:).md)
+- [func reader(configuration: sending Self.ReadConfiguration) -> sending Self.Reader](./readabledocument/reader%28configuration%29.md)
   Creates a reader to load this document from disk.
-- [func apply(snapshot: sending Self.Reader.Snapshot, previous: sending Self.Reader.Snapshot?) async throws](readabledocument/apply(snapshot:previous:).md)
+- [func apply(snapshot: sending Self.Reader.Snapshot, previous: sending Self.Reader.Snapshot?) async throws](./readabledocument/apply%28snapshot,previous%29.md)
   Applies a loaded snapshot to the document model.
-- [static var writableContentTypes: [UTType]](readabledocument/writablecontenttypes.md)
+- [static var writableContentTypes: [UTType]](./readabledocument/writablecontenttypes.md)
   By default, a document that supports reading also supports writing the same content types.
 
 ## Relationships
 
 ### Inherited By
-- [Document](document.md)
+- [Document](./document.md)
 
 ## See Also
 
-- [protocol Document](document.md)
+### Storing document data in a reference type instance
+- [protocol Document](./document.md)
   A document that supports both reading and writing.
-- [protocol WritableDocument](writabledocument.md)
+- [protocol WritableDocument](./writabledocument.md)
   A document type that supports writing to file.
-- [class URLDocumentConfiguration](urldocumentconfiguration.md)
+- [class URLDocumentConfiguration](./urldocumentconfiguration.md)
   The configuration of an open document that stores its file URL, last modification date, and related metadata.
-- [struct DocumentCreationContext](documentcreationcontext.md)
+- [struct DocumentCreationContext](./documentcreationcontext.md)
   Context about how a document was created.
-- [protocol DocumentBaseBox](documentbasebox.md)
+- [protocol DocumentBaseBox](./documentbasebox.md)
   A Box that allows setting its Document base not requiring the caller to know the exact types of the box and its base.
 
 

@@ -1,7 +1,8 @@
 # UserInvitationCreateRequest.Data.Relationships.VisibleApps
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
@@ -10,14 +11,14 @@ The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object UserInvitationCreateRequest.Data.Relationships.VisibleApps
 ```
 
 ## Topics
 
 ### Objects
-- [object UserInvitationCreateRequest.Data.Relationships.VisibleApps.Data](userinvitationcreaterequest/data-data.dictionary/relationships-data.dictionary/visibleapps-data.dictionary/data-data.dictionary.md)
+- [object UserInvitationCreateRequest.Data.Relationships.VisibleApps.Data](./visibleapps-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
 ## Properties

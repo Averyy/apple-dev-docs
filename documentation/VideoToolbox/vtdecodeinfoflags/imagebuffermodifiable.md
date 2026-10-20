@@ -1,7 +1,8 @@
 # imageBufferModifiable
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that indicates the image buffer is safe to modify.
 
@@ -19,13 +20,18 @@ A flag that indicates the image buffer is safe to modify.
 static var imageBufferModifiable: VTDecodeInfoFlags { get }
 ```
 
+```c
+kVTDecodeInfo_ImageBufferModifiable
+```
+
 ## See Also
 
-- [static var asynchronous: VTDecodeInfoFlags](vtdecodeinfoflags/asynchronous.md)
+### Flag values
+- [static var asynchronous: VTDecodeInfoFlags](./asynchronous.md)
   A flag that indicates the decode operation ran asynchronously.
-- [static var frameDropped: VTDecodeInfoFlags](vtdecodeinfoflags/framedropped.md)
+- [static var frameDropped: VTDecodeInfoFlags](./framedropped.md)
   A flag that indicates the decode operation dropped a frame.
-- [static var skippedLeadingFrameDropped: VTDecodeInfoFlags](vtdecodeinfoflags/skippedleadingframedropped.md)
+- [static var skippedLeadingFrameDropped: VTDecodeInfoFlags](./skippedleadingframedropped.md)
   A flag that indicates whether the decode process skips leading frames after dropping a synchronization frame.
 
 

@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw value of the selected enumeration option.
 
@@ -22,11 +23,12 @@ var rawValue: String { get set }
 
 ## See Also
 
-- [init(typeIdentifier: String, rawValue: String)](anyappenum/init(typeidentifier:rawvalue:).md)
+### Creating an enum
+- [init(typeIdentifier: String, rawValue: String)](./init%28typeidentifier,rawvalue%29.md)
   Creates a new instance with the specified enumeration identifier and raw value.
-- [init(typeIdentifier: String, value: any LosslessStringConvertible)](anyappenum/init(typeidentifier:value:).md)
+- [init(typeIdentifier: String, value: any LosslessStringConvertible)](./init%28typeidentifier,value%29.md)
   Creates an enumeration with a typed raw value.
-- [var typeIdentifier: String](anyappenum/typeidentifier.md)
+- [var typeIdentifier: String](./typeidentifier.md)
   The enumeration’s type identifier.
 
 

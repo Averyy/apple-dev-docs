@@ -1,7 +1,8 @@
 # kMDItemParticipants
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The list of people who are visible in an image or movie or written about in a document. A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ The list of people who are visible in an image or movie or written about in a do
 
 ```swift
 let kMDItemParticipants: CFString!
+```
+
+```c
+const CFStringRef kMDItemParticipants;
 ```
 
 

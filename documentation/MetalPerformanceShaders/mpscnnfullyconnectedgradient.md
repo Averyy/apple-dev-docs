@@ -1,7 +1,8 @@
 # MPSCNNFullyConnectedGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A gradient fully connected convolution layer.
 
@@ -19,32 +20,37 @@ A gradient fully connected convolution layer.
 class MPSCNNFullyConnectedGradient
 ```
 
+```objc
+@interface MPSCNNFullyConnectedGradient : MPSCNNConvolutionGradient
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnfullyconnectedgradient/init(coder:device:).md)
-- [init(device: any MTLDevice, weights: any MPSCNNConvolutionDataSource)](mpscnnfullyconnectedgradient/init(device:weights:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpscnnfullyconnectedgradient/init%28coder,device%29.md)
+- [init(device: any MTLDevice, weights: any MPSCNNConvolutionDataSource)](./mpscnnfullyconnectedgradient/init%28device,weights%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNConvolutionGradient](mpscnnconvolutiongradient.md)
+- [MPSCNNConvolutionGradient](./mpscnnconvolutiongradient.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSCNNBinaryFullyConnected](mpscnnbinaryfullyconnected.md)
+### Fully Connected Layers
+- [class MPSCNNBinaryFullyConnected](./mpscnnbinaryfullyconnected.md)
   A fully connected convolution layer with binary weights and optionally binarized input image.
-- [class MPSCNNFullyConnected](mpscnnfullyconnected.md)
+- [class MPSCNNFullyConnected](./mpscnnfullyconnected.md)
   A fully connected convolution layer, also known as an inner product layer.
 
 

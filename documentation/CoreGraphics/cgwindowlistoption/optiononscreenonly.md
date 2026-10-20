@@ -1,11 +1,12 @@
 # optionOnScreenOnly
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,17 +14,22 @@
 static var optionOnScreenOnly: CGWindowListOption { get }
 ```
 
+```c
+kCGWindowListOptionOnScreenOnly
+```
+
 #### Discussion
 
-List all windows that are currently onscreen. Windows are returned in order from front to back. When retrieving a list with this option, the `relativeToWindow` parameter should be set to [`kCGNullWindowID`](kcgnullwindowid.md).
+List all windows that are currently onscreen. Windows are returned in order from front to back. When retrieving a list with this option, the `relativeToWindow` parameter should be set to [`kCGNullWindowID`](../kcgnullwindowid.md).
 
 ## See Also
 
-- [static var excludeDesktopElements: CGWindowListOption](cgwindowlistoption/excludedesktopelements.md)
-- [static var optionAll: CGWindowListOption](cgwindowlistoption/optionall.md)
-- [static var optionIncludingWindow: CGWindowListOption](cgwindowlistoption/optionincludingwindow.md)
-- [static var optionOnScreenAboveWindow: CGWindowListOption](cgwindowlistoption/optiononscreenabovewindow.md)
-- [static var optionOnScreenBelowWindow: CGWindowListOption](cgwindowlistoption/optiononscreenbelowwindow.md)
+### Type Properties
+- [static var excludeDesktopElements: CGWindowListOption](./excludedesktopelements.md)
+- [static var optionAll: CGWindowListOption](./optionall.md)
+- [static var optionIncludingWindow: CGWindowListOption](./optionincludingwindow.md)
+- [static var optionOnScreenAboveWindow: CGWindowListOption](./optiononscreenabovewindow.md)
+- [static var optionOnScreenBelowWindow: CGWindowListOption](./optiononscreenbelowwindow.md)
 
 
 ---

@@ -1,18 +1,19 @@
 # CFBitVectorCreateMutableCopy(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new mutable bit vector from a pre-existing bit vector.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,21 +21,29 @@ Creates a new mutable bit vector from a pre-existing bit vector.
 func CFBitVectorCreateMutableCopy(_ allocator: CFAllocator!, _ capacity: CFIndex, _ bv: CFBitVector!) -> CFMutableBitVector!
 ```
 
+```c
+extern CFMutableBitVectorRefCFBitVectorCreateMutableCopy(CFAllocatorRef allocator, CFIndex capacity, CFBitVectorRef bv);
+```
+
 #### Return Value
 
-A new bit vector holding the same bit values as `bv`. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029)
+A new bit vector holding the same bit values as `bv`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029)
 
 ## Parameters
 
 - `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
-- `capacity`: The maximum number of values that can be contained by the new bit vector. The bit vector starts with the same number of values as `bv` and can grow to this number of values (it can have less). Pass `0` to specify that the maximum capacity is not limited. If non-`0`, `capacity` must be large enough to hold all bit values from `bv`.
+- `capacity`: The maximum number of values that can be contained by the new bit vector. The bit vector starts with the same number of values as `bv` and can grow to this number of values (it can have less).
+
+  Pass `0` to specify that the maximum capacity is not limited. If non-`0`, `capacity` must be large enough to hold all bit values from `bv`.
 - `bv`: The bit vector to copy.
 
 ## See Also
 
-- [func CFBitVectorSetCount(CFMutableBitVector!, CFIndex)](cfbitvectorsetcount(_:_:).md)
+### Related Documentation
+- [func CFBitVectorSetCount(CFMutableBitVector!, CFIndex)](./cfbitvectorsetcount%28_,_%29.md)
   Changes the size of a mutable bit vector.
-- [func CFBitVectorCreateMutable(CFAllocator!, CFIndex) -> CFMutableBitVector!](cfbitvectorcreatemutable(_:_:).md)
+### Creating a CFMutableBitVector Object
+- [func CFBitVectorCreateMutable(CFAllocator!, CFIndex) -> CFMutableBitVector!](./cfbitvectorcreatemutable%28_,_%29.md)
   Creates a mutable bit vector.
 
 

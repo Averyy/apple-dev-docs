@@ -1,7 +1,8 @@
 # removeEdge(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an edge from the graph.
 
@@ -19,7 +20,7 @@ final func removeEdge(_ edge: ShaderGraph.Edge) throws
 
 #### Discussion
 
-> **Note**: If the edge does not exist in the graph.
+> **Throws**: If the edge does not exist in the graph.
 
 
 ---

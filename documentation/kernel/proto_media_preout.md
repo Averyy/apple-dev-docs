@@ -1,18 +1,19 @@
 # proto_media_preout
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*proto_media_preout)(ifnet_t ifp, protocol_family_t protocol, mbuf_t *packet, const struct sockaddr *dest, void *route, char *frame_type, char *link_layer_dest);
 ```
 
-#### Return_value
+#### Return Value
 
 If the result is zero, processing will continue normally. If the result is non-zero, processing will stop. If the result is non-zero and not EJUSTRETURN, the packet will be freed by the caller.
 

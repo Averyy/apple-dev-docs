@@ -1,7 +1,8 @@
 # formatted(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a locale-aware string representation of a date using the specified date format style.
 
@@ -26,7 +27,7 @@ A string, formatted according to the specified style.
 
 #### Discussion
 
-For full customization of the string representation of a date, use the [`formatted(_:)`](date/formatted(_:).md) instance method of [`Date`](date.md) and provide a [`Date.FormatStyle`](date/formatstyle.md) object.
+For full customization of the string representation of a date, use the [`formatted(_:)`](./formatted%28_%29.md) instance method of [`Date`](../date.md) and provide a [`Date.FormatStyle`](./formatstyle.md) object.
 
 You can achieve any customization of date and time representation your app requires by appying a series of convenience modifiers to your format style. This example applies a series of modifiers to the format style to precisely define the formatting of the year, month, day, hour, minute, and timezone components of the resulting string.
 
@@ -51,9 +52,9 @@ birthday.formatted(
 // Sun, Jan 17, 2021 Anno Domini (week: 4), 11:18 AM America/Chicago
 ```
 
-For the default date formatting, use the [`formatted()`](date/formatted().md) method. For basic customization of the formatted date string, use the [`formatted(date:time:)`](date/formatted(date:time:).md) and include a date and time style.
+For the default date formatting, use the [`formatted()`](./formatted%28%29.md) method. For basic customization of the formatted date string, use the [`formatted(date:time:)`](./formatted%28date,time%29.md) and include a date and time style.
 
-For more information about formatting dates, see [`Date.FormatStyle`](date/formatstyle.md).
+For more information about formatting dates, see [`Date.FormatStyle`](./formatstyle.md).
 
 ## Parameters
 
@@ -61,19 +62,20 @@ For more information about formatting dates, see [`Date.FormatStyle`](date/forma
 
 ## See Also
 
-- [func formatted() -> String](date/formatted.md)
+### Formatting a Date
+- [func formatted() -> String](./formatted%28%29.md)
   Generates a locale-aware string representation of a date using the default date format style.
-- [func formatted(date: Date.FormatStyle.DateStyle, time: Date.FormatStyle.TimeStyle) -> String](date/formatted(date:time:).md)
+- [func formatted(date: Date.FormatStyle.DateStyle, time: Date.FormatStyle.TimeStyle) -> String](./formatted%28date,time%29.md)
   Generates a locale-aware string representation of a date using specified date and time format styles.
-- [struct FormatStyle](date/formatstyle.md)
+- [struct FormatStyle](./formatstyle.md)
   A structure that creates a locale-appropriate string representation of a date instance and converts strings of dates and times into date instances.
-- [struct RelativeFormatStyle](date/relativeformatstyle.md)
+- [struct RelativeFormatStyle](./relativeformatstyle.md)
   A format style that forms locale-aware string representations of a relative date or time.
-- [struct IntervalFormatStyle](date/intervalformatstyle.md)
+- [struct IntervalFormatStyle](./intervalformatstyle.md)
   A format style that creates string representations of date intervals.
-- [func ISO8601Format(Date.ISO8601FormatStyle) -> String](date/iso8601format(_:).md)
+- [func ISO8601Format(Date.ISO8601FormatStyle) -> String](./iso8601format%28_%29.md)
   Generates a locale-aware string representation of a date using the ISO 8601 date format.
-- [struct ISO8601FormatStyle](date/iso8601formatstyle.md)
+- [struct ISO8601FormatStyle](./iso8601formatstyle.md)
   A type that converts between dates and their ISO-8601 string representations.
 
 

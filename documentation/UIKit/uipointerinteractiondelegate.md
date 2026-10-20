@@ -1,7 +1,8 @@
 # UIPointerInteractionDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for handling pointer movements within the interaction’s view.
 
@@ -18,31 +19,36 @@ An interface for handling pointer movements within the interaction’s view.
 protocol UIPointerInteractionDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UIPointerInteractionDelegate <NSObject>
+```
+
 ## Topics
 
 ### Defining pointer styles for regions
-- [func pointerInteraction(UIPointerInteraction, regionFor: UIPointerRegionRequest, defaultRegion: UIPointerRegion) -> UIPointerRegion?](uipointerinteractiondelegate/pointerinteraction(_:regionfor:defaultregion:).md)
+- [func pointerInteraction(UIPointerInteraction, regionFor: UIPointerRegionRequest, defaultRegion: UIPointerRegion) -> UIPointerRegion?](./uipointerinteractiondelegate/pointerinteraction%28_,regionfor,defaultregion%29.md)
   Asks the delegate for a region as the pointer moves within the interaction’s view.
-- [func pointerInteraction(UIPointerInteraction, styleFor: UIPointerRegion) -> UIPointerStyle?](uipointerinteractiondelegate/pointerinteraction(_:stylefor:).md)
+- [func pointerInteraction(UIPointerInteraction, styleFor: UIPointerRegion) -> UIPointerStyle?](./uipointerinteractiondelegate/pointerinteraction%28_,stylefor%29.md)
   Asks the delegate for a pointer style after an interaction receives a new region.
 ### Handling animations for pointer regions
-- [func pointerInteraction(UIPointerInteraction, willEnter: UIPointerRegion, animator: any UIPointerInteractionAnimating)](uipointerinteractiondelegate/pointerinteraction(_:willenter:animator:).md)
+- [func pointerInteraction(UIPointerInteraction, willEnter: UIPointerRegion, animator: any UIPointerInteractionAnimating)](./uipointerinteractiondelegate/pointerinteraction%28_,willenter,animator%29.md)
   Informs the delegate when the pointer enters a given region.
-- [func pointerInteraction(UIPointerInteraction, willExit: UIPointerRegion, animator: any UIPointerInteractionAnimating)](uipointerinteractiondelegate/pointerinteraction(_:willexit:animator:).md)
+- [func pointerInteraction(UIPointerInteraction, willExit: UIPointerRegion, animator: any UIPointerInteractionAnimating)](./uipointerinteractiondelegate/pointerinteraction%28_,willexit,animator%29.md)
   Informs the delegate when the pointer exits a given region.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class UIPointerInteraction](uipointerinteraction.md)
+### Essentials
+- [class UIPointerInteraction](./uipointerinteraction.md)
   An interaction that enables support for effects on a view or customizes the pointer’s appearance within a region of an app.
-- [Integrating pointer interactions into your iPad app](integrating-pointer-interactions-into-your-ipad-app.md)
+- [Integrating pointer interactions into your iPad app](./integrating-pointer-interactions-into-your-ipad-app.md)
   Support touch interactions in your iPad app by adding pointer interactions to your views.
-- [Enhancing your iPad app with pointer interactions](enhancing-your-ipad-app-with-pointer-interactions.md)
+- [Enhancing your iPad app with pointer interactions](./enhancing-your-ipad-app-with-pointer-interactions.md)
   Provide a great user experience with pointing devices, by incorporating pointer content effects and shape customizations.
 
 

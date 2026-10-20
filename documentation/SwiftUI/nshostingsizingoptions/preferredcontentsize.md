@@ -1,7 +1,8 @@
 # preferredContentSize
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The hosting controller creates and updates constraints that represent its content’s ideal size. These constraints in turn influence the hosting controller’s `preferredContentSize`.
 
@@ -22,13 +23,14 @@ The constraints reflect the size that fits a proposal of `.unspecified`.
 
 ## See Also
 
-- [static let intrinsicContentSize: NSHostingSizingOptions](nshostingsizingoptions/intrinsiccontentsize.md)
+### Geting sizing options
+- [static let intrinsicContentSize: NSHostingSizingOptions](./intrinsiccontentsize.md)
   The hosting view creates and updates constraints that represent its content’s ideal size. These constraints in turn influence the hosting view’s `intrinsicContentSize`.
-- [static let maxSize: NSHostingSizingOptions](nshostingsizingoptions/maxsize.md)
+- [static let maxSize: NSHostingSizingOptions](./maxsize.md)
   The hosting view creates and updates constraints that represent its content’s maximum size.
-- [static let minSize: NSHostingSizingOptions](nshostingsizingoptions/minsize.md)
+- [static let minSize: NSHostingSizingOptions](./minsize.md)
   The hosting view creates and updates constraints that represent its content’s minimum size.
-- [static let standardBounds: NSHostingSizingOptions](nshostingsizingoptions/standardbounds.md)
+- [static let standardBounds: NSHostingSizingOptions](./standardbounds.md)
   The hosting view creates constraints for its minimum, ideal, and maximum sizes.
 
 

@@ -1,7 +1,8 @@
 # blocks
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Nested blocks for loops and conditionals, e.g., a conditional block will have two entries here.
 
@@ -22,11 +23,12 @@ let blocks: [MLModelStructure.Program.Block]
 
 ## See Also
 
-- [let inputs: [String : MLModelStructure.Program.Argument]](mlmodelstructure-swift.enum/program/operation/inputs.md)
+### Accessing the properties
+- [let inputs: [String : MLModelStructure.Program.Argument]](./inputs.md)
   The arguments to the Operation.
-- [let operatorName: String](mlmodelstructure-swift.enum/program/operation/operatorname.md)
+- [let operatorName: String](./operatorname.md)
   The name of the operator, e.g., “conv”, “pool”, “softmax”, etc.
-- [let outputs: [MLModelStructure.Program.NamedValueType]](mlmodelstructure-swift.enum/program/operation/outputs.md)
+- [let outputs: [MLModelStructure.Program.NamedValueType]](./outputs.md)
   The outputs of the Operation.
 
 

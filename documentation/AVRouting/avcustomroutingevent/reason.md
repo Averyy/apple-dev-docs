@@ -1,7 +1,8 @@
 # reason
 
 **Framework**: AVRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A reason for an event, such as a user request to activate or deactivate a route.
 
@@ -17,13 +18,18 @@ A reason for an event, such as a user request to activate or deactivate a route.
 var reason: AVCustomRoutingEventReason { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCustomRoutingEventReason reason;
+```
+
 ## See Also
 
-- [var route: AVCustomDeviceRoute](avcustomroutingevent/route.md)
+### Inspecting an event
+- [var route: AVCustomDeviceRoute](./route.md)
   A route for the event.
-- [class AVCustomDeviceRoute](avcustomdeviceroute.md)
+- [class AVCustomDeviceRoute](../avcustomdeviceroute.md)
   An object that represents a custom device route.
-- [enum AVCustomRoutingEventReason](avcustomroutingeventreason.md)
+- [enum AVCustomRoutingEventReason](../avcustomroutingeventreason.md)
   Values that indicate the reason for a routing event.
 
 

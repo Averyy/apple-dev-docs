@@ -1,7 +1,8 @@
 # SubscriptionAppStoreReviewScreenshot.Relationships.Subscription.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a subscription app store review screenshot.
 
@@ -10,14 +11,14 @@ The request body you use to update a subscription app store review screenshot.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionAppStoreReviewScreenshot.Relationships.Subscription.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptions`
 
 
 ---

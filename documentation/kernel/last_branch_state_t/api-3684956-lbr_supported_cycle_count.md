@@ -1,14 +1,15 @@
 # lbr_supported_cycle_count
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 __uint32_t lbr_supported_cycle_count:1;
 ```
 

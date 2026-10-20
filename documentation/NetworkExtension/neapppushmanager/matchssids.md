@@ -1,7 +1,8 @@
 # matchSSIDs
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of Wi-Fi SSID strings that the system matches for local push activation.
 
@@ -17,19 +18,24 @@ An array of Wi-Fi SSID strings that the system matches for local push activation
 var matchSSIDs: [String] { get set }
 ```
 
+```objc
+@property (copy) NSArray<NSString *> * matchSSIDs;
+```
+
 ## Mentions
 
-- [Maintaining a Reliable Network Connection](maintaining-a-reliable-network-connection.md)
+- [Maintaining a Reliable Network Connection](../maintaining-a-reliable-network-connection.md)
 
 #### Discussion
 
-If the SSID string of the current Wi-Fi network matches a member of this array, the framework starts the [`NEAppPushProvider`](neapppushprovider.md). The array must contain at least one SSID to start the provider, and has an upper limit of 10 SSIDs.
+If the SSID string of the current Wi-Fi network matches a member of this array, the framework starts the [`NEAppPushProvider`](../neapppushprovider.md). The array must contain at least one SSID to start the provider, and has an upper limit of 10 SSIDs.
 
 ## See Also
 
-- [var matchPrivateLTENetworks: [NEPrivateLTENetwork]](neapppushmanager/matchprivateltenetworks.md)
+### Matching Wi-Fi networks
+- [var matchPrivateLTENetworks: [NEPrivateLTENetwork]](./matchprivateltenetworks.md)
   An array of private LTE networks that the system matches for local push activation.
-- [class NEPrivateLTENetwork](neprivateltenetwork.md)
+- [class NEPrivateLTENetwork](../neprivateltenetwork.md)
   The parameters of a private LTE network.
 
 

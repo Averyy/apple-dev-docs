@@ -1,7 +1,8 @@
 # init(parentImage:sliceRange:featureChannels:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+
@@ -17,13 +18,18 @@
 init(parentImage parent: MPSImage, sliceRange: NSRange, featureChannels: Int)
 ```
 
+```objc
+- (instancetype) initWithParentImage:(MPSImage *) parent sliceRange:(NSRange) sliceRange featureChannels:(NSUInteger) featureChannels;
+```
+
 ## See Also
 
-- [convenience init(device: any MTLDevice, imageDescriptor: MPSImageDescriptor)](mpsimage/init(device:imagedescriptor:).md)
+### Initializers
+- [convenience init(device: any MTLDevice, imageDescriptor: MPSImageDescriptor)](./init%28device,imagedescriptor%29.md)
   Initializes an empty image.
-- [class MPSImageDescriptor](mpsimagedescriptor.md)
-  A description of the attributes used to create an [`MPSImage`](mpsimage.md).
-- [convenience init(texture: any MTLTexture, featureChannels: Int)](mpsimage/init(texture:featurechannels:).md)
+- [class MPSImageDescriptor](../mpsimagedescriptor.md)
+  A description of the attributes used to create an [`MPSImage`](../mpsimage.md).
+- [convenience init(texture: any MTLTexture, featureChannels: Int)](./init%28texture,featurechannels%29.md)
   Initializes an image from a texture. The user-allocated texture has been created for a specific number of feature channels and number of images.
 
 

@@ -1,7 +1,8 @@
 # UITextSmartDashesType.no
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Disable smart dashes.
 
@@ -18,11 +19,16 @@ Disable smart dashes.
 case no
 ```
 
+```c
+UITextSmartDashesTypeNo
+```
+
 ## See Also
 
-- [UITextSmartDashesType.default](uitextsmartdashestype/default.md)
+### Constants
+- [UITextSmartDashesType.default](./default.md)
   Use the default smart dash behavior.
-- [UITextSmartDashesType.yes](uitextsmartdashestype/yes.md)
+- [UITextSmartDashesType.yes](./yes.md)
   Enable smart dashes.
 
 

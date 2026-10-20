@@ -2,6 +2,7 @@
 
 **Framework**: Touch Controller  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Handles a touch ended event at the specified point.
@@ -17,15 +18,20 @@ Handles a touch ended event at the specified point.
 func handleTouchEnded(at point: CGPoint)
 ```
 
+```objc
+- (void) handleTouchEndedAtPoint:(CGPoint) point;
+```
+
 ## Parameters
 
 - `point`: The point where the touch ended.
 
 ## See Also
 
-- [func handleTouchBegan(at: CGPoint)](tccontrol/handletouchbegan(at:).md)
+### Handling touches
+- [func handleTouchBegan(at: CGPoint)](./handletouchbegan%28at%29.md)
   Handles a touch began event at the specified point.
-- [func handleTouchMoved(at: CGPoint)](tccontrol/handletouchmoved(at:).md)
+- [func handleTouchMoved(at: CGPoint)](./handletouchmoved%28at%29.md)
   Handles a touch moved event at the specified point.
 
 

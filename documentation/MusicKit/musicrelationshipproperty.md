@@ -1,7 +1,8 @@
 # MusicRelationshipProperty
 
 **Framework**: MusicKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An identifier for a music item relationship property from a specific root type to a specific value type for the element of the resulting collection.
 
@@ -23,33 +24,34 @@ class MusicRelationshipProperty<Root, RelatedMusicItemType> where RelatedMusicIt
 ## Relationships
 
 ### Inherits From
-- [PartialMusicAsyncProperty](partialmusicasyncproperty.md)
+- [PartialMusicAsyncProperty](./partialmusicasyncproperty.md)
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol MusicItem](musicitem.md)
+### Utility
+- [protocol MusicItem](./musicitem.md)
   A protocol with basic requirements for music items.
-- [struct MusicItemID](musicitemid.md)
+- [struct MusicItemID](./musicitemid.md)
   An object that represents a unique identifier for a music item.
-- [struct MusicItemCollection](musicitemcollection.md)
+- [struct MusicItemCollection](./musicitemcollection.md)
   A collection of music items.
-- [protocol MusicPropertyContainer](musicpropertycontainer.md)
+- [protocol MusicPropertyContainer](./musicpropertycontainer.md)
   A protocol for music items that allow loading additional properties that you can fetch asynchronously.
-- [class MusicExtendedAttributeProperty](musicextendedattributeproperty.md)
+- [class MusicExtendedAttributeProperty](./musicextendedattributeproperty.md)
   An identifier for a music item extended attribute property from a specific root type to a specific resulting value type.
-- [class MusicAttributeProperty](musicattributeproperty.md)
+- [class MusicAttributeProperty](./musicattributeproperty.md)
   An identifier for a music item attribute property from a specific root type to a specific resulting value type.
-- [class PartialMusicAsyncProperty](partialmusicasyncproperty.md)
+- [class PartialMusicAsyncProperty](./partialmusicasyncproperty.md)
   A partially type-erased identifier for a music item property that you can fetch asynchronously from a concrete root type to any resulting value type.
-- [class PartialMusicProperty](partialmusicproperty.md)
+- [class PartialMusicProperty](./partialmusicproperty.md)
   A partially type-erased identifier for a music item property from a concrete root type to any resulting value type.
-- [class AnyMusicProperty](anymusicproperty.md)
+- [class AnyMusicProperty](./anymusicproperty.md)
   A type-erased identifier for a music item property, from any root type to any resulting value type.
 
 

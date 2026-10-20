@@ -1,17 +1,18 @@
 # OPTIMAL_TRANSFER_LENGTH_GRANULARITY
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 UInt16 OPTIMAL_TRANSFER_LENGTH_GRANULARITY;
 ```
 

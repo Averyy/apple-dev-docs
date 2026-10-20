@@ -1,7 +1,8 @@
 # List device IDs for a profile
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -12,17 +13,33 @@
 
 ## Parameters
 
-- `limit` (integer)
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `limit` (integer): **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`ProfileDevicesLinkagesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read the bundle id in a profile](get-v1-profiles-_id_-bundleid.md)
+### Getting Related Data
+- [Read the bundle id in a profile](./get-v1-profiles-_id_-bundleid.md)
   Get the bundle ID information for a specific provisioning profile.
-- [Get the bundle ID for a profile](get-v1-profiles-_id_-relationships-bundleid.md)
-- [List all certificates in a profile](get-v1-profiles-_id_-certificates.md)
+- [Get the bundle ID for a profile](./get-v1-profiles-_id_-relationships-bundleid.md)
+- [List all certificates in a profile](./get-v1-profiles-_id_-certificates.md)
   Get a list of all certificates and their data for a specific provisioning profile.
-- [List certificate IDs for a profile](get-v1-profiles-_id_-relationships-certificates.md)
-- [List all devices in a profile](get-v1-profiles-_id_-devices.md)
+- [List certificate IDs for a profile](./get-v1-profiles-_id_-relationships-certificates.md)
+- [List all devices in a profile](./get-v1-profiles-_id_-devices.md)
   Get a list of all devices for a specific provisioning profile.
 
 

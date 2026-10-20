@@ -1,7 +1,8 @@
 # padding
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of spacing to add around the annotation when showing items.
 
@@ -10,7 +11,7 @@ The amount of spacing to add around the annotation when showing items.
 
 ## Declaration
 
-```swift
+```
 get padding(): Padding;
 ```
 

@@ -1,7 +1,8 @@
 # PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse.Result
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The result of resolving the queue location for a play media intent.
 
@@ -10,7 +11,7 @@ The result of resolving the queue location for a play media intent.
 
 ## Declaration
 
-```swift
+```
 object PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse.Result
 ```
 

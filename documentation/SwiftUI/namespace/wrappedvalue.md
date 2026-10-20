@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 14.0+
@@ -20,7 +21,8 @@ var wrappedValue: Namespace.ID { get }
 
 ## See Also
 
-- [Namespace.ID](namespace/id.md)
+### Getting the namespace
+- [Namespace.ID](./id.md)
   A namespace defined by the persistent identity of an `@Namespace` dynamic property.
 
 

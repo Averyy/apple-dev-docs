@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: OpenGL ES  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 2.0+

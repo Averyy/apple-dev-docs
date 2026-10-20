@@ -1,7 +1,8 @@
 # shouldBeActive
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the tab should be the active tab.
 
@@ -16,6 +17,10 @@ Indicates whether the tab should be the active tab.
 
 ```swift
 var shouldBeActive: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL shouldBeActive;
 ```
 
 #### Discussion

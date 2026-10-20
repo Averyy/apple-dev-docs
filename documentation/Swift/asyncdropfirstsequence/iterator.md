@@ -1,7 +1,8 @@
 # AsyncDropFirstSequence.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The iterator that produces elements of the drop-first sequence.
 
@@ -20,24 +21,26 @@ The iterator that produces elements of the drop-first sequence.
 struct Iterator
 ```
 
+Available when `Base` conforms to `AsyncSequence`.
+
 ## Topics
 
 ### Instance Methods
-- [func next() async rethrows -> Base.Element?](asyncdropfirstsequence/iterator/next.md)
+- [func next() async rethrows -> Base.Element?](./iterator/next%28%29.md)
   Produces the next element in the drop-first sequence.
-- [func next(isolation: isolated (any Actor)?) async throws(AsyncDropFirstSequence<Base>.Failure) -> Base.Element?](asyncdropfirstsequence/iterator/next(isolation:).md)
+- [func next(isolation: isolated (any Actor)?) async throws(AsyncDropFirstSequence<Base>.Failure) -> Base.Element?](./iterator/next%28isolation%29.md)
   Produces the next element in the drop-first sequence.
 ### Type Aliases
-- [AsyncDropFirstSequence.Iterator.Element](asyncdropfirstsequence/iterator/element.md)
+- [AsyncDropFirstSequence.Iterator.Element](./iterator/element.md)
 ### Default Implementations
-- [AsyncIteratorProtocol Implementations](asyncdropfirstsequence/iterator/asynciteratorprotocol-implementations.md)
+- [AsyncIteratorProtocol Implementations](./iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](asynciteratorprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [AsyncIteratorProtocol](../asynciteratorprotocol.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

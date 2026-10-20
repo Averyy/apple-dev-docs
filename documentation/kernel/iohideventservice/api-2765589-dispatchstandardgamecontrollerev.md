@@ -1,14 +1,15 @@
 # dispatchStandardGameControllerEvent
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12.2+ - Deprecated in 10.15.1
 
 ## Declaration
 
-```swift
+```cpp
 virtual void dispatchStandardGameControllerEvent(AbsoluteTime timeStamp, IOFixed dpadUp, IOFixed dpadDown, IOFixed dpadLeft, IOFixed dpadRight, IOFixed faceX, IOFixed faceY, IOFixed faceA, IOFixed faceB, IOFixed shoulderL, IOFixed shoulderR, IOOptionBits options);
 ```
 

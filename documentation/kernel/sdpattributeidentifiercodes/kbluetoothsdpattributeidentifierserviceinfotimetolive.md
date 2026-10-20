@@ -1,14 +1,15 @@
 # kBluetoothSDPAttributeIdentifierServiceInfoTimeToLive
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPAttributeIdentifierServiceInfoTimeToLive = 0x0007
 ```
 

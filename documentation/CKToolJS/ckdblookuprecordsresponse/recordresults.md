@@ -1,7 +1,8 @@
 # recordResults
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of `CKDBRecordResult` objects that represent a record.
 
@@ -10,7 +11,7 @@ The array of `CKDBRecordResult` objects that represent a record.
 
 ## Declaration
 
-```swift
+```
 attribute CKDBRecordResult[] recordResults;
 ```
 

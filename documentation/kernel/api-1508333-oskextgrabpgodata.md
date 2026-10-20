@@ -1,42 +1,44 @@
 # OSKextGrabPgoData
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 int OSKextGrabPgoData(uuid_t uuid, uint64_t *pSize, char *pBuffer, uint64_t bufferSize, int wait_for_unload, int metadata);
 ```
 
 ## See Also
 
-- [kext_alloc](1577598-kext_alloc.md)
-- [kext_alloc_init](1577599-kext_alloc_init.md)
-- [kext_free](1577600-kext_free.md)
-- [kext_request](1588829-kext_request.md)
-- [kextd_ping](1520989-kextd_ping.md)
-- [OSKextCancelRequest](1508350-oskextcancelrequest.md)
+### kext
+- [kext_alloc](./api-1577598-kext_alloc.md)
+- [kext_alloc_init](./api-1577599-kext_alloc_init.md)
+- [kext_free](./api-1577600-kext_free.md)
+- [kext_request](./api-1588829-kext_request.md)
+- [kextd_ping](./api-1520989-kextd_ping.md)
+- [OSKextCancelRequest](./api-1508350-oskextcancelrequest.md)
   Cancels a pending user-space kext request without invoking the callback.
-- [OSKextGetCurrentIdentifier](1508305-oskextgetcurrentidentifier.md)
+- [OSKextGetCurrentIdentifier](./api-1508305-oskextgetcurrentidentifier.md)
   Returns the CFBundleIdentifier for the calling kext as a C string.
-- [OSKextGetCurrentLoadTag](1508336-oskextgetcurrentloadtag.md)
+- [OSKextGetCurrentLoadTag](./api-1508336-oskextgetcurrentloadtag.md)
   Returns the run-time load tag for the calling kext as an `OSKextLoadTag`.
-- [OSKextGetCurrentVersionString](1508326-oskextgetcurrentversionstring.md)
+- [OSKextGetCurrentVersionString](./api-1508326-oskextgetcurrentversionstring.md)
   Returns the CFBundleVersion for the calling kext as a C string.
-- [OSKextLoadKextWithIdentifier](1508323-oskextloadkextwithidentifier.md)
+- [OSKextLoadKextWithIdentifier](./api-1508323-oskextloadkextwithidentifier.md)
   Request that a kext be loaded.
-- [OSKextReleaseKextWithLoadTag](1508339-oskextreleasekextwithloadtag.md)
+- [OSKextReleaseKextWithLoadTag](./api-1508339-oskextreleasekextwithloadtag.md)
   Release a loaded kext based on its load tag.
-- [OSKextRequestResource](1508294-oskextrequestresource.md)
+- [OSKextRequestResource](./api-1508294-oskextrequestresource.md)
   Requests data from a nonlocalized resource file in a kext bundle on disk.
-- [OSKextResetPgoCounters](1646298-oskextresetpgocounters.md)
-- [OSKextResetPgoCountersLock](1646299-oskextresetpgocounterslock.md)
-- [OSKextResetPgoCountersUnlock](1646297-oskextresetpgocountersunlock.md)
-- [OSKextRetainKextWithLoadTag](1508272-oskextretainkextwithloadtag.md)
+- [OSKextResetPgoCounters](./api-1646298-oskextresetpgocounters.md)
+- [OSKextResetPgoCountersLock](./api-1646299-oskextresetpgocounterslock.md)
+- [OSKextResetPgoCountersUnlock](./api-1646297-oskextresetpgocountersunlock.md)
+- [OSKextRetainKextWithLoadTag](./api-1508272-oskextretainkextwithloadtag.md)
   Retain a loaded kext based on its load tag, and enable autounload for that kext.
 
 

@@ -1,7 +1,8 @@
 # UITextDropProposal.Action.replaceSelection
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A text drop action style specifying that if the target text view contains a selection, dropped text replaces it.
 
@@ -17,15 +18,20 @@ A text drop action style specifying that if the target text view contains a sele
 case replaceSelection
 ```
 
+```c
+UITextDropActionReplaceSelection
+```
+
 #### Discussion
 
 If the text view does not contain a selection, dropped text is inserted at the provided location, without altering the surrounding text.
 
 ## See Also
 
-- [UITextDropProposal.Action.insert](uitextdropproposal/action/insert.md)
+### Text drop actions
+- [UITextDropProposal.Action.insert](./insert.md)
   A text drop action style specifying that text is inserted at the provided location, without altering the surrounding text.
-- [UITextDropProposal.Action.replaceAll](uitextdropproposal/action/replaceall.md)
+- [UITextDropProposal.Action.replaceAll](./replaceall.md)
   A text drop action style specifying that the dropped text replaces all text in the target text view.
 
 

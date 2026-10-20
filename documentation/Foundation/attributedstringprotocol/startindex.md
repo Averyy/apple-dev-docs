@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The position of the first character in a nonempty attributed string.
@@ -23,27 +24,28 @@ var startIndex: AttributedString.Index { get }
 
 ## See Also
 
-- [var endIndex: AttributedString.Index](attributedstringprotocol/endindex.md)
+### Accessing Indices
+- [var endIndex: AttributedString.Index](./endindex.md)
   A string’s past-the-end position — the position one greater than the last valid subscript argument.
-- [func index(AttributedString.Index, offsetByCharacters: Int) -> AttributedString.Index](attributedstringprotocol/index(_:offsetbycharacters:).md)
+- [func index(AttributedString.Index, offsetByCharacters: Int) -> AttributedString.Index](./index%28_,offsetbycharacters%29.md)
   Returns the position of the character offset a given distance, measured in characters, from a given string index.
-- [func index(AttributedString.Index, offsetByRuns: Int) -> AttributedString.Index](attributedstringprotocol/index(_:offsetbyruns:).md)
+- [func index(AttributedString.Index, offsetByRuns: Int) -> AttributedString.Index](./index%28_,offsetbyruns%29.md)
   Returns the position of the run offset a given number of runs from a given string index.
-- [func index(AttributedString.Index, offsetByUnicodeScalars: Int) -> AttributedString.Index](attributedstringprotocol/index(_:offsetbyunicodescalars:).md)
+- [func index(AttributedString.Index, offsetByUnicodeScalars: Int) -> AttributedString.Index](./index%28_,offsetbyunicodescalars%29.md)
   Returns the position of the Unicode scalar offset a given distance, measured in Unicode scalars, from a given string index.
-- [func index(afterCharacter: AttributedString.Index) -> AttributedString.Index](attributedstringprotocol/index(aftercharacter:).md)
+- [func index(afterCharacter: AttributedString.Index) -> AttributedString.Index](./index%28aftercharacter%29.md)
   Returns the position of the character immediately after another charcter indicated by an index.
-- [func index(afterRun: AttributedString.Index) -> AttributedString.Index](attributedstringprotocol/index(afterrun:).md)
+- [func index(afterRun: AttributedString.Index) -> AttributedString.Index](./index%28afterrun%29.md)
   Returns the position of the run immediately after a run indicated by an index.
-- [func index(afterUnicodeScalar: AttributedString.Index) -> AttributedString.Index](attributedstringprotocol/index(afterunicodescalar:).md)
+- [func index(afterUnicodeScalar: AttributedString.Index) -> AttributedString.Index](./index%28afterunicodescalar%29.md)
   Returns the position of the Unicode scalar immediately after a Unicode scalar indicated by an index.
-- [func index(beforeCharacter: AttributedString.Index) -> AttributedString.Index](attributedstringprotocol/index(beforecharacter:).md)
+- [func index(beforeCharacter: AttributedString.Index) -> AttributedString.Index](./index%28beforecharacter%29.md)
   Returns the position of the character immediately before another charcter indicated by an index.
-- [func index(beforeRun: AttributedString.Index) -> AttributedString.Index](attributedstringprotocol/index(beforerun:).md)
+- [func index(beforeRun: AttributedString.Index) -> AttributedString.Index](./index%28beforerun%29.md)
   Returns the position of the run immediately before a run indicated by an index.
-- [func index(beforeUnicodeScalar: AttributedString.Index) -> AttributedString.Index](attributedstringprotocol/index(beforeunicodescalar:).md)
+- [func index(beforeUnicodeScalar: AttributedString.Index) -> AttributedString.Index](./index%28beforeunicodescalar%29.md)
   Returns the position of the Unicode scalar immediately before a Unicode scalar indicated by an index.
-- [AttributedString.Index](attributedstring/index.md)
+- [AttributedString.Index](../attributedstring/index.md)
   A type that represents the position of a character or code unit within an attributed string.
 
 

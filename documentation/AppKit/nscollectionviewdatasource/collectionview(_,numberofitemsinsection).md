@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks your data source object to provide the number of items in the specified section.
@@ -16,6 +17,10 @@ Asks your data source object to provide the number of items in the specified sec
 func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int
 ```
 
+```objc
+- (NSInteger) collectionView:(NSCollectionView *) collectionView numberOfItemsInSection:(NSInteger) section;
+```
+
 #### Return Value
 
 The number of items in the specified section.
@@ -24,7 +29,7 @@ The number of items in the specified section.
 
 All data source objects must implement this method. Your implementation should quickly return the number of items in the specified section.
 
-Make sure the number of items you return is accurate. The [`collectionView(_:itemForRepresentedObjectAt:)`](nscollectionviewdatasource/collectionview(_:itemforrepresentedobjectat:).md) method of your data source object must be able to provide a visual representation for each item in the section.
+Make sure the number of items you return is accurate. The [`collectionView(_:itemForRepresentedObjectAt:)`](./collectionview%28_,itemforrepresentedobjectat%29.md) method of your data source object must be able to provide a visual representation for each item in the section.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ Make sure the number of items you return is accurate. The [`collectionView(_:ite
 
 ## See Also
 
-- [func numberOfSections(in: NSCollectionView) -> Int](nscollectionviewdatasource/numberofsections(in:).md)
+### Getting the Number of Sections and Items
+- [func numberOfSections(in: NSCollectionView) -> Int](./numberofsections%28in%29.md)
   Asks your data source object to provide the total number of sections.
 
 

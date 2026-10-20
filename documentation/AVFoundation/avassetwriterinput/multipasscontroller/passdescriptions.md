@@ -1,7 +1,8 @@
 # passDescriptions
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An async sequence of pass descriptions to iterate over if multi-pass is supported. This property is nil when multi-pass is not supported.
 

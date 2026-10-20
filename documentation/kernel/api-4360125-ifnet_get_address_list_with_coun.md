@@ -1,14 +1,15 @@
 # ifnet_get_address_list_with_count
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 errno_t ifnet_get_address_list_with_count(ifnet_t interface, ifaddr_t **addresses, uint16_t *addresses_count);
 ```
 

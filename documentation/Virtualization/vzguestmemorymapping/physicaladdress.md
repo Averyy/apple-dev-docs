@@ -1,7 +1,8 @@
 # physicalAddress
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The guest’s physical memory base address of this guest memory mapping object.
 
@@ -12,6 +13,10 @@ The guest’s physical memory base address of this guest memory mapping object.
 
 ```swift
 var physicalAddress: UInt64 { get }
+```
+
+```objc
+@property (readonly) uint64_t physicalAddress;
 ```
 
 

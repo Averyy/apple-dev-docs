@@ -1,7 +1,8 @@
 # init(items:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that plays a queue of items.
 
@@ -19,6 +20,10 @@ Creates an object that plays a queue of items.
 ```swift
 nonisolated
 init(items: [AVPlayerItem])
+```
+
+```objc
+- (instancetype) initWithItems:(NSArray<AVPlayerItem *> *) items;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # AVAssetVariant
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a bit rate variant.
 
@@ -20,45 +21,50 @@ An object that represents a bit rate variant.
 class AVAssetVariant
 ```
 
+```objc
+@interface AVAssetVariant : NSObject
+```
+
 ## Topics
 
 ### Configuring attributes
-- [var audioAttributes: AVAssetVariant.AudioAttributes?](avassetvariant/audioattributes-swift.property.md)
+- [var audioAttributes: AVAssetVariant.AudioAttributes?](./avassetvariant/audioattributes-swift.property.md)
   The audio rendition attributes for the variant.
-- [AVAssetVariant.AudioAttributes](avassetvariant/audioattributes-swift.class.md)
+- [AVAssetVariant.AudioAttributes](./avassetvariant/audioattributes-swift.class.md)
   An object that defines the audio attributes for an asset variant.
-- [var videoAttributes: AVAssetVariant.VideoAttributes?](avassetvariant/videoattributes-swift.property.md)
+- [var videoAttributes: AVAssetVariant.VideoAttributes?](./avassetvariant/videoattributes-swift.property.md)
   The video rendition attributes for the variant.
-- [AVAssetVariant.VideoAttributes](avassetvariant/videoattributes-swift.class.md)
+- [AVAssetVariant.VideoAttributes](./avassetvariant/videoattributes-swift.class.md)
   An object that defines the video attributes for an asset variant.
 ### Configuring bit rate
-- [var averageBitRate: Double?](avassetvariant/averagebitrate-5p1oh.md)
+- [var averageBitRate: Double?](./avassetvariant/averagebitrate-5p1oh.md)
   The average bit rate for the variant.
-- [var peakBitRate: Double?](avassetvariant/peakbitrate-9hzpi.md)
+- [var peakBitRate: Double?](./avassetvariant/peakbitrate-9hzpi.md)
   The peak bit rate for the variant.
 ### Accessing the URL
-- [var url: URL](avassetvariant/url.md)
+- [var url: URL](./avassetvariant/url.md)
   Provides URL to media playlist corresponding to variant
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [convenience init(variant: AVAssetVariant)](avassetvariantqualifier/init(variant:).md)
+### Creating a variant qualifier
+- [convenience init(variant: AVAssetVariant)](./avassetvariantqualifier/init%28variant%29.md)
   Creates a variant qualifier with an asset variant.
-- [convenience init(predicate: NSPredicate)](avassetvariantqualifier/init(predicate:).md)
+- [convenience init(predicate: NSPredicate)](./avassetvariantqualifier/init%28predicate%29.md)
   Creates a variant qualifier with a predicate.
 
 

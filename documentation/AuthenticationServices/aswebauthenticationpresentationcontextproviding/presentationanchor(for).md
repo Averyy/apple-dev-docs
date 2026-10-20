@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate from which window it should present content to the user.
@@ -19,9 +20,13 @@ Tells the delegate from which window it should present content to the user.
 func presentationAnchor(for session: ASWebAuthenticationSession) -> ASPresentationAnchor
 ```
 
+```objc
+- (ASPresentationAnchor) presentationAnchorForWebAuthenticationSession:(ASWebAuthenticationSession *) session;
+```
+
 ## Mentions
 
-- [Authenticating a User Through a Web Service](authenticating-a-user-through-a-web-service.md)
+- [Authenticating a User Through a Web Service](../authenticating-a-user-through-a-web-service.md)
 
 #### Return Value
 
@@ -33,7 +38,8 @@ A user interface element that can act as the anchor for the authentication prese
 
 ## See Also
 
-- [typealias ASPresentationAnchor](aspresentationanchor.md)
+### Specifying the Anchor
+- [typealias ASPresentationAnchor](../aspresentationanchor.md)
   A platform-specific type that indicates the kind of user interface element to use as a presentation anchor.
 
 

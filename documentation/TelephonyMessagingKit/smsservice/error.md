@@ -1,7 +1,8 @@
 # SMSService.Error
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type to define errors that can occur when performing SMS operations.
 
@@ -17,26 +18,26 @@ enum Error
 ## Topics
 
 ### Identifying errors
-- [SMSService.Error.notSupported](smsservice/error/notsupported.md)
+- [SMSService.Error.notSupported](./error/notsupported.md)
   The operation isn’t supported.
-- [SMSService.Error.permanentFailure](smsservice/error/permanentfailure.md)
+- [SMSService.Error.permanentFailure](./error/permanentfailure.md)
   The operation failed permanently.
-- [SMSService.Error.temporaryFailure](smsservice/error/temporaryfailure.md)
+- [SMSService.Error.temporaryFailure](./error/temporaryfailure.md)
   The operation failed temporarily.
-- [SMSService.Error.unknown](smsservice/error/unknown.md)
+- [SMSService.Error.unknown](./error/unknown.md)
   An unknown problem caused the error.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

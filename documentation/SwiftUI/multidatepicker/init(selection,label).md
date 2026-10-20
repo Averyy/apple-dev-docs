@@ -1,7 +1,8 @@
 # init(selection:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that selects multiple dates with an unbounded range.
 
@@ -18,6 +19,8 @@ nonisolated
 init(selection: Binding<Set<DateComponents>>, @ContentBuilder label: () -> Label)
 ```
 
+Available when `Label` conforms to `View`.
+
 ## Parameters
 
 - `selection`: The date values being displayed and selected.
@@ -25,7 +28,8 @@ init(selection: Binding<Set<DateComponents>>, @ContentBuilder label: () -> Label
 
 ## See Also
 
-- [init(_:selection:)](multidatepicker/init(_:selection:).md)
+### Picking dates
+- [init(_:selection:)](./init%28_,selection%29.md)
   Creates an instance that selects multiple dates with an unbounded range.
 
 

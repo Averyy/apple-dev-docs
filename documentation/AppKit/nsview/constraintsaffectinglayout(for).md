@@ -1,7 +1,8 @@
 # constraintsAffectingLayout(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the constraints impacting the layout of the view for a given orientation.
 
@@ -12,6 +13,10 @@ Returns the constraints impacting the layout of the view for a given orientation
 
 ```swift
 func constraintsAffectingLayout(for orientation: NSLayoutConstraint.Orientation) -> [NSLayoutConstraint]
+```
+
+```objc
+- (NSArray<NSLayoutConstraint *> *) constraintsAffectingLayoutForOrientation:(NSLayoutConstraintOrientation) orientation;
 ```
 
 #### Return Value
@@ -30,9 +35,10 @@ This method should only be used for debugging constraint-based layout. No applic
 
 ## See Also
 
-- [var hasAmbiguousLayout: Bool](nsview/hasambiguouslayout.md)
+### Debugging Auto Layout
+- [var hasAmbiguousLayout: Bool](./hasambiguouslayout.md)
   A Boolean value indicating whether the constraints impacting the layout of the view incompletely specify the location of the view.
-- [func exerciseAmbiguityInLayout()](nsview/exerciseambiguityinlayout.md)
+- [func exerciseAmbiguityInLayout()](./exerciseambiguityinlayout%28%29.md)
   Randomly changes the frame of a view with an ambiguous layout between the different valid values.
 
 

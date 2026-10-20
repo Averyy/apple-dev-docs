@@ -1,7 +1,8 @@
 # Form
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container for grouping controls used for data entry, such as in settings or inspectors.
 
@@ -23,8 +24,8 @@ struct Form<Content> where Content : View
 
 ## Mentions
 
-- [Picking container views for your content](picking-container-views-for-your-content.md)
-- [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
+- [Picking container views for your content](./picking-container-views-for-your-content.md)
+- [Grouping data with lazy stack views](./grouping-data-with-lazy-stack-views.md)
 
 #### Overview
 
@@ -58,9 +59,9 @@ var body: some View {
 }
 ```
 
-![A form on iOS, presented as a grouped list with two sections. The](/images/com.apple.SwiftUI/SwiftUI-Form-iOS@2x.png)
+![A form on iOS, presented as a grouped list with two sections. The](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-Form-iOS@2x.png)
 
-On macOS, a similar form renders as a vertical stack. To adhere to macOS platform conventions, this version doesn’t use sections, and uses colons at the end of its labels. It also sets the picker to use the [`inline`](pickerstyle/inline.md) style, which produces radio buttons on macOS.
+On macOS, a similar form renders as a vertical stack. To adhere to macOS platform conventions, this version doesn’t use sections, and uses colons at the end of its labels. It also sets the picker to use the [`inline`](./pickerstyle/inline.md) style, which produces radio buttons on macOS.
 
 ```swift
 var body: some View {
@@ -91,29 +92,30 @@ var body: some View {
 }
 ```
 
-![A form on iOS, presented as a vertical stack of views. At top, it shows](/images/com.apple.SwiftUI/SwiftUI-Form-macOS@2x.png)
+![A form on iOS, presented as a vertical stack of views. At top, it shows](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-Form-macOS@2x.png)
 
 ## Topics
 
 ### Creating a form
-- [init(content: () -> Content)](form/init(content:).md)
+- [init(content: () -> Content)](./form/init%28content%29.md)
   Creates a form with the provided content.
 ### Creating a form from a configuration
-- [init(FormStyleConfiguration)](form/init(_:).md)
+- [init(FormStyleConfiguration)](./form/init%28_%29.md)
   Creates a form based on a form style configuration.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [func formStyle<S>(S) -> some View](view/formstyle(_:).md)
+### Grouping inputs
+- [func formStyle<S>(S) -> some View](./view/formstyle%28_%29.md)
   Sets the style for forms in a view hierarchy.
-- [struct LabeledContent](labeledcontent.md)
+- [struct LabeledContent](./labeledcontent.md)
   A container for attaching a label to a value-bearing view.
-- [func labeledContentStyle<S>(S) -> some View](view/labeledcontentstyle(_:).md)
+- [func labeledContentStyle<S>(S) -> some View](./view/labeledcontentstyle%28_%29.md)
   Sets a style for labeled content.
 
 

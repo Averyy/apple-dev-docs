@@ -1,17 +1,22 @@
 # handleClose(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles the AppleScript command to close the window (and its associated document, if any).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func handleClose(_ command: NSCloseCommand) -> Any?
+```
+
+```objc
+- (id) handleCloseScriptCommand:(NSCloseCommand *) command;
 ```
 
 #### Discussion
@@ -22,9 +27,10 @@ If there’s a corresponding document and the window is the main window of the d
 
 ## See Also
 
-- [func handlePrint(NSScriptCommand) -> Any?](nswindow/handleprint(_:).md)
+### Handling Script Commands
+- [func handlePrint(NSScriptCommand) -> Any?](./handleprint%28_%29.md)
   Handles the AppleScript command to print the contents of the window (or its associated document, if any).
-- [func handleSave(NSScriptCommand) -> Any?](nswindow/handlesave(_:).md)
+- [func handleSave(NSScriptCommand) -> Any?](./handlesave%28_%29.md)
   Handles the AppleScript command to save the window (and its associated document, if any).
 
 

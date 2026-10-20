@@ -1,7 +1,8 @@
 # MTRRVCOperationalStateOperationalState.error
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@
 
 ```swift
 case error
+```
+
+```c
+MTRRVCOperationalStateOperationalStateError
 ```
 
 

@@ -1,7 +1,8 @@
 # didChangeAttributeTimeSamples
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether an attribute’s time samples changed.
 

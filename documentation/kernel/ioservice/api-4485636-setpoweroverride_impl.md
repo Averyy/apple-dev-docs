@@ -1,14 +1,15 @@
 # SetPowerOverride_Impl
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.2+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetPowerOverride_Impl(bool enable);
 ```
 

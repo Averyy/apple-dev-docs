@@ -1,7 +1,8 @@
 # blendMode
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The blend mode used by drawing operations in the context.
 
@@ -22,13 +23,14 @@ var blendMode: GraphicsContext.BlendMode { get set }
 
 #### Discussion
 
-Set this value to affect how any content that you subsequently draw into the context blends with content that’s already in the context. Use one of the [`GraphicsContext.BlendMode`](graphicscontext/blendmode-swift.struct.md) values.
+Set this value to affect how any content that you subsequently draw into the context blends with content that’s already in the context. Use one of the [`GraphicsContext.BlendMode`](./blendmode-swift.struct.md) values.
 
 ## See Also
 
-- [var opacity: Double](graphicscontext/opacity.md)
+### Setting opacity and the blend mode
+- [var opacity: Double](./opacity.md)
   The opacity of drawing operations in the context.
-- [GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct.md)
+- [GraphicsContext.BlendMode](./blendmode-swift.struct.md)
   The ways that a graphics context combines new content with background content.
 
 

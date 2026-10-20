@@ -1,7 +1,8 @@
 # fillPath(using:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Paints the area within the current path, as determined by the specified fill rule.
 
@@ -22,21 +23,24 @@ func fillPath(using rule: CGPathFillRule = .winding)
 
 #### Discussion
 
-If the current path contains any non-closed subpaths, this method treats each subpath as if it had been closed with the [`closePath()`](cgcontext/closepath().md) method, then applies the specified rule to determine which areas to fill.
+If the current path contains any non-closed subpaths, this method treats each subpath as if it had been closed with the [`closePath()`](./closepath%28%29.md) method, then applies the specified rule to determine which areas to fill.
 
 After filling the path, this method clears the context’s current path.
 
 ## Parameters
 
-- `rule`: The rule for determining which areas to treat as the interior of the path. See [`CGPathFillRule`](cgpathfillrule.md). This parameter defaults to the [`CGPathFillRule.winding`](cgpathfillrule/winding.md) rule if unspecified.
+- `rule`: The rule for determining which areas to treat as the interior of the path. See [`CGPathFillRule`](../cgpathfillrule.md).
+
+  This parameter defaults to the [`CGPathFillRule.winding`](../cgpathfillrule/winding.md) rule if unspecified.
 
 ## See Also
 
-- [func drawPath(using: CGPathDrawingMode)](cgcontext/drawpath(using:).md)
+### Drawing the Current Graphics Path
+- [func drawPath(using: CGPathDrawingMode)](./drawpath%28using%29.md)
   Draws the current path using the provided drawing mode.
-- [enum CGPathDrawingMode](cgpathdrawingmode.md)
+- [enum CGPathDrawingMode](../cgpathdrawingmode.md)
   Options for rendering a path.
-- [func strokePath()](cgcontext/strokepath.md)
+- [func strokePath()](./strokepath%28%29.md)
   Paints a line along the current path.
 
 

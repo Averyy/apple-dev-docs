@@ -1,7 +1,8 @@
 # init(shape:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a cloth force volume component with the given shape.
 

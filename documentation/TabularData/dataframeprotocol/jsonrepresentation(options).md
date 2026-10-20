@@ -1,7 +1,8 @@
 # jsonRepresentation(options:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a JSON data instance of the data frame.
 
@@ -22,7 +23,7 @@ func jsonRepresentation(options: JSONWritingOptions = .init()) throws -> Data
 
 ## Parameters
 
-- `options`: A [`JSONWritingOptions`](jsonwritingoptions.md) instance.
+- `options`: A [`JSONWritingOptions`](../jsonwritingoptions.md) instance.
 
 
 ---

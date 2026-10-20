@@ -1,7 +1,8 @@
 # NSDisplayGamut.sRGB
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.12+
@@ -12,9 +13,14 @@
 case sRGB
 ```
 
+```c
+NSDisplayGamutSRGB
+```
+
 ## See Also
 
-- [NSDisplayGamut.p3](nsdisplaygamut/p3.md)
+### Gamuts
+- [NSDisplayGamut.p3](./p3.md)
 
 
 ---

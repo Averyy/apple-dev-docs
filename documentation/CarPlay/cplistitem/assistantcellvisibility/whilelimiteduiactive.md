@@ -1,7 +1,8 @@
 # CPListItem.AssistantCellVisibility.whileLimitedUIActive
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The assistant cell is visible only while Limited UI mode is active.
 
@@ -16,11 +17,16 @@ The assistant cell is visible only while Limited UI mode is active.
 case whileLimitedUIActive
 ```
 
+```c
+CPAssistantCellVisibilityWhileLimitedUIActive
+```
+
 ## See Also
 
-- [CPListItem.AssistantCellVisibility.off](cplistitem/assistantcellvisibility/off.md)
+### Controlling the Assistant Cell Visibility
+- [CPListItem.AssistantCellVisibility.off](./off.md)
   The assistant cell isn’t visible.
-- [CPListItem.AssistantCellVisibility.always](cplistitem/assistantcellvisibility/always.md)
+- [CPListItem.AssistantCellVisibility.always](./always.md)
   The assistant cell is always visible.
 
 

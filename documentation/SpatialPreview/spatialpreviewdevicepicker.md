@@ -1,13 +1,14 @@
 # SpatialPreviewDevicePicker
 
 **Framework**: Spatial Preview  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Presents nearby companion devices and allows the user to make a selection.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,21 +20,22 @@ Presents nearby companion devices and allows the user to make a selection.
 ## Topics
 
 ### Initializers
-- [init(isPresented: Binding<Bool>, onSelect: (SpatialPreviewEndpoint) -> Void)](spatialpreviewdevicepicker/init(ispresented:onselect:).md)
+- [init(isPresented: Binding<Bool>, onSelect: (SpatialPreviewEndpoint) -> Void)](./spatialpreviewdevicepicker/init%28ispresented,onselect%29.md)
   Creates a device picker.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [struct SpatialPreviewEndpoint](spatialpreviewendpoint.md)
+### Nearby devices
+- [struct SpatialPreviewEndpoint](./spatialpreviewendpoint.md)
   An endpoint representing a visionOS device you can connect to for spatial preview.
-- [class ConnectedSpatialEndpointObserver](connectedspatialendpointobserver.md)
+- [class ConnectedSpatialEndpointObserver](./connectedspatialendpointobserver.md)
   An observer that provides access to the endpoint for a device connected via Mac Virtual Display.
 
 

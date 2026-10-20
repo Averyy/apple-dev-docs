@@ -1,7 +1,8 @@
 # confidence
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The level of confidence in the observation’s accuracy of smudge detection on a lens.
 
@@ -22,13 +23,14 @@ let confidence: Float
 
 #### Discussion
 
-The framework normalizes this value to `[0, 1]`, where `1` represents the most confident. When results come from a [`CoreMLRequest`](coremlrequest.md), the relevant [`Core ML`](https://developer.apple.com/documentation/coreml) models forward the confidence values.
+The framework normalizes this value to `[0, 1]`, where `1` represents the most confident. When results come from a [`CoreMLRequest`](../coremlrequest.md), the relevant [Core ML](../../CoreML/CoreML.md) models forward the confidence values.
 
 ## See Also
 
-- [var description: String](smudgeobservation/description.md)
+### Inspecting an observation
+- [var description: String](./description.md)
   A textual representation of this instance.
-- [enum RequestDescriptor](requestdescriptor.md)
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
 
 

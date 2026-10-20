@@ -1,7 +1,8 @@
 # castsShadow
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether an entity casts a shadow.
 

@@ -1,7 +1,8 @@
 # MaterialParameters.Value
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -20,28 +21,28 @@ enum Value
 ## Topics
 
 ### Enumeration Cases
-- [MaterialParameters.Value.bool(_:)](materialparameters/value/bool(_:).md)
-- [MaterialParameters.Value.color(_:)](materialparameters/value/color(_:)-swift.enum.case.md)
-- [MaterialParameters.Value.float(_:)](materialparameters/value/float(_:).md)
-- [MaterialParameters.Value.float2x2(_:)](materialparameters/value/float2x2(_:).md)
-- [MaterialParameters.Value.float3x3(_:)](materialparameters/value/float3x3(_:).md)
-- [MaterialParameters.Value.float4x4(_:)](materialparameters/value/float4x4(_:).md)
-- [MaterialParameters.Value.int(_:)](materialparameters/value/int(_:).md)
-- [MaterialParameters.Value.simd2Float(_:)](materialparameters/value/simd2float(_:).md)
-- [MaterialParameters.Value.simd3Float(_:)](materialparameters/value/simd3float(_:).md)
-- [MaterialParameters.Value.simd4Float(_:)](materialparameters/value/simd4float(_:).md)
-- [case texture(MaterialParameters.Texture)](materialparameters/value/texture(_:).md)
-- [MaterialParameters.Value.textureResource(_:)](materialparameters/value/textureresource(_:).md)
+- [MaterialParameters.Value.bool(_:)](./value/bool%28_%29.md)
+- [MaterialParameters.Value.color(_:)](./value/color%28_%29-swift.enum.case.md)
+- [MaterialParameters.Value.float(_:)](./value/float%28_%29.md)
+- [MaterialParameters.Value.float2x2(_:)](./value/float2x2%28_%29.md)
+- [MaterialParameters.Value.float3x3(_:)](./value/float3x3%28_%29.md)
+- [MaterialParameters.Value.float4x4(_:)](./value/float4x4%28_%29.md)
+- [MaterialParameters.Value.int(_:)](./value/int%28_%29.md)
+- [MaterialParameters.Value.simd2Float(_:)](./value/simd2float%28_%29.md)
+- [MaterialParameters.Value.simd3Float(_:)](./value/simd3float%28_%29.md)
+- [MaterialParameters.Value.simd4Float(_:)](./value/simd4float%28_%29.md)
+- [case texture(MaterialParameters.Texture)](./value/texture%28_%29.md)
+- [MaterialParameters.Value.textureResource(_:)](./value/textureresource%28_%29.md)
 ### Instance Properties
-- [var colorValue: NSColor?](materialparameters/value/colorvalue-12h12.md)
-- [var colorValue: UIColor?](materialparameters/value/colorvalue-1j7y0.md)
+- [var colorValue: NSColor?](./value/colorvalue-12h12.md)
+- [var colorValue: UIColor?](./value/colorvalue-1j7y0.md)
 ### Type Methods
-- [static color(_:)](materialparameters/value/color(_:)-6bk3t.md)
+- [static color(_:)](./value/color%28_%29-6bk3t.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 
 ---

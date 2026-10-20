@@ -1,7 +1,8 @@
 # NSMetadataQueryUserHomeScope
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Search the user’s home directory.
 
@@ -14,21 +15,26 @@ Search the user’s home directory.
 let NSMetadataQueryUserHomeScope: String
 ```
 
+```c
+extern NSString * const NSMetadataQueryUserHomeScope;
+```
+
 ## See Also
 
-- [let NSMetadataQueryLocalComputerScope: String](nsmetadataquerylocalcomputerscope.md)
+### Constants
+- [let NSMetadataQueryLocalComputerScope: String](./nsmetadataquerylocalcomputerscope.md)
   Search all local mounted volumes, including the user home directory. The user’s home directory is searched even if it is a remote volume.
-- [let NSMetadataQueryNetworkScope: String](nsmetadataquerynetworkscope.md)
+- [let NSMetadataQueryNetworkScope: String](./nsmetadataquerynetworkscope.md)
   Search all user-mounted remote volumes.
-- [let NSMetadataQueryUbiquitousDocumentsScope: String](nsmetadataqueryubiquitousdocumentsscope.md)
+- [let NSMetadataQueryUbiquitousDocumentsScope: String](./nsmetadataqueryubiquitousdocumentsscope.md)
   Search all files in the `Documents` directories of the app’s iCloud container directories.
-- [let NSMetadataQueryUbiquitousDataScope: String](nsmetadataqueryubiquitousdatascope.md)
+- [let NSMetadataQueryUbiquitousDataScope: String](./nsmetadataqueryubiquitousdatascope.md)
   Search all files not in the `Documents` directories of the app’s iCloud container directories.
-- [let NSMetadataQueryAccessibleUbiquitousExternalDocumentsScope: String](nsmetadataqueryaccessibleubiquitousexternaldocumentsscope.md)
-  Search for documents outside the app’s container. This search can locate iCloud documents that the user previously opened using a document picker view controller. This lets your app access the documents again without requiring direct user interaction. The result’s [`NSMetadataItemURLKey`](nsmetadataitemurlkey.md) attributes return security-scoped NSURLs. For more information on working with security-scoped URLs, see [`Security-Scoped URLs`](nsurl#Security-Scoped-URLs.md) in [`NSURL`](nsurl.md).
-- [let NSMetadataQueryIndexedLocalComputerScope: String](nsmetadataqueryindexedlocalcomputerscope.md)
+- [let NSMetadataQueryAccessibleUbiquitousExternalDocumentsScope: String](./nsmetadataqueryaccessibleubiquitousexternaldocumentsscope.md)
+  Search for documents outside the app’s container. This search can locate iCloud documents that the user previously opened using a document picker view controller. This lets your app access the documents again without requiring direct user interaction. The result’s [`NSMetadataItemURLKey`](./nsmetadataitemurlkey.md) attributes return security-scoped NSURLs. For more information on working with security-scoped URLs, see [Security-Scoped URLs](./nsurl.md#Security-Scoped-URLs) in [`NSURL`](./nsurl.md).
+- [let NSMetadataQueryIndexedLocalComputerScope: String](./nsmetadataqueryindexedlocalcomputerscope.md)
   Search all indexed local mounted volumes including the current user’s home directory (even if the home directory is remote).
-- [let NSMetadataQueryIndexedNetworkScope: String](nsmetadataqueryindexednetworkscope.md)
+- [let NSMetadataQueryIndexedNetworkScope: String](./nsmetadataqueryindexednetworkscope.md)
   Search all indexed user-mounted remote volumes.
 
 

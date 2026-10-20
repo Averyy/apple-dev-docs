@@ -1,19 +1,22 @@
 # deleteAllData()
 
 **Framework**: SwiftData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all persisted model data from the app’s persistent storage.
 
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
-- Mac Catalyst 17.0+
-- macOS 14.0+
-- tvOS 17.0+
-- visionOS 1.0+
-- watchOS 10.0+
+- iOS 17.0+ - Deprecated in 27.2 (renamed: erase)
+- iPadOS 17.0+ - Deprecated in 27.2 (renamed: erase)
+- Mac Catalyst 17.0+ - Deprecated in 27.2 (renamed: erase)
+- macOS 14.0+ - Deprecated in 27.2 (renamed: erase)
+- tvOS 17.0+ - Deprecated in 27.2 (renamed: erase)
+- visionOS 1.0+ - Deprecated in 27.2 (renamed: erase)
+- watchOS 10.0+ - Deprecated in 27.2 (renamed: erase)
 - Swift 5.9+
+
+> **Deprecated**: deleteAllData has been replaced by `erase`. Use `erase` to completely remove all of the data from a store.
 
 ## Declaration
 

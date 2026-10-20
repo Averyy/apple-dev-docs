@@ -1,7 +1,8 @@
 # ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type to represent the output of the requested large binary object operation, which returns in a passkey sign-in response.
 
@@ -25,21 +26,22 @@ For a read operation, this type contains the saved blob, if one is present and t
 ## Topics
 
 ### Inspecting the result
-- [var result: ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult](asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/result.md)
+- [var result: ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult](./asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/result.md)
   The result of the requested large binary object operation.
-- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult](asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/operationresult.md)
+- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput.OperationResult](./asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/operationresult.md)
   A type that represents the result of the requested binary large object operation.
 ### Type Methods
-- [static func read(data: Data?) -> ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput](asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/read(data:).md)
-- [static func write(success: Bool) -> ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput](asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/write(success:).md)
+- [static func read(data: Data?) -> ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput](./asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/read%28data%29.md)
+- [static func write(success: Bool) -> ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput](./asauthorizationpublickeycredentiallargeblobassertionoutput-swift.struct/write%28success%29.md)
 
 ## See Also
 
-- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput?](aspasskeyassertioncredentialextensionoutput-swift.struct/largeblob.md)
+### Inspecting properties
+- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput?](./aspasskeyassertioncredentialextensionoutput-swift.struct/largeblob.md)
   The output for a large binary object operation during passkey assertion.
-- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionOutput?](aspasskeyassertioncredentialextensionoutput-swift.struct/prf.md)
+- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionOutput?](./aspasskeyassertioncredentialextensionoutput-swift.struct/prf.md)
   The outputs of the WebAuthn PRF extension in passkey assertion requests.
-- [struct ASAuthorizationPublicKeyCredentialPRFAssertionOutput](asauthorizationpublickeycredentialprfassertionoutput-swift.struct.md)
+- [struct ASAuthorizationPublicKeyCredentialPRFAssertionOutput](./asauthorizationpublickeycredentialprfassertionoutput-swift.struct.md)
   A type to represent outputs of the web authentication PRF extension, when requesting them during an assertion.
 
 

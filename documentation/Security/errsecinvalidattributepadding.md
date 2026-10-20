@@ -1,7 +1,8 @@
 # errSecInvalidAttributePadding
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A padding attribute is not valid.
 
@@ -18,6 +19,10 @@ A padding attribute is not valid.
 
 ```swift
 var errSecInvalidAttributePadding: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributePadding
 ```
 
 

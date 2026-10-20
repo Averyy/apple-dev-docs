@@ -1,7 +1,8 @@
 # SFSafariExtensionManager
 
 **Framework**: Safari Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that your app uses to find out the current state of a Safari extension.
 
@@ -18,6 +19,10 @@ A class that your app uses to find out the current state of a Safari extension.
 class SFSafariExtensionManager
 ```
 
+```objc
+@interface SFSafariExtensionManager : NSObject
+```
+
 #### Overview
 
 In macOS, use this class to find out the current state of either a Safari app extension or Safari web extension. In iOS and visionOS, use this class to find out the current state of a Safari web extension.
@@ -25,44 +30,45 @@ In macOS, use this class to find out the current state of either a Safari app ex
 ## Topics
 
 ### Checking on the state of an extension
-- [class func getStateOfSafariExtension(withIdentifier: String, completionHandler: (SFSafariExtensionState?, (any Error)?) -> Void)](sfsafariextensionmanager/getstateofsafariextension(withidentifier:completionhandler:).md)
+- [class func getStateOfSafariExtension(withIdentifier: String, completionHandler: (SFSafariExtensionState?, (any Error)?) -> Void)](./sfsafariextensionmanager/getstateofsafariextension%28withidentifier,completionhandler%29.md)
   Returns the current state of a Safari extension.
-- [class func getStateOfExtension(withIdentifier: String, completionHandler: (SFSafariExtensionState?, (any Error)?) -> Void)](sfsafariextensionmanager/getstateofextension(withidentifier:completionhandler:).md)
+- [class func getStateOfExtension(withIdentifier: String, completionHandler: (SFSafariExtensionState?, (any Error)?) -> Void)](./sfsafariextensionmanager/getstateofextension%28withidentifier,completionhandler%29.md)
   Returns the current state of a Safari web extension.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Using injected style sheets and scripts](using-injected-style-sheets-and-scripts.md)
+### Injected style sheets and scripts
+- [Using injected style sheets and scripts](./using-injected-style-sheets-and-scripts.md)
   Learn how you can affect the appearance or behavior of a webpage by using injected style sheets and scripts.
-- [Injecting a script into a webpage](injecting-a-script-into-a-webpage.md)
+- [Injecting a script into a webpage](./injecting-a-script-into-a-webpage.md)
   Inject a script that you write for a Safari app extension into a webpage.
-- [Injecting CSS style sheets into a webpage](injecting-css-style-sheets-into-a-webpage.md)
+- [Injecting CSS style sheets into a webpage](./injecting-css-style-sheets-into-a-webpage.md)
   Add to or override styles by injecting CSS style sheets into webpages.
-- [Passing messages between Safari app extensions and injected scripts](passing-messages-between-safari-app-extensions-and-injected-scripts.md)
+- [Passing messages between Safari app extensions and injected scripts](./passing-messages-between-safari-app-extensions-and-injected-scripts.md)
   Communicate between your Safari app extension and injected scripts.
-- [class SFSafariExtensionHandler](sfsafariextensionhandler.md)
+- [class SFSafariExtensionHandler](./sfsafariextensionhandler.md)
   A base class that you subclass to handle events in your Safari app extension.
-- [class SFSafariExtensionState](sfsafariextensionstate.md)
+- [class SFSafariExtensionState](./sfsafariextensionstate.md)
   The state of a Safari extension.
-- [class SFSafariPageProperties](sfsafaripageproperties.md)
+- [class SFSafariPageProperties](./sfsafaripageproperties.md)
   An object that captures information about a webpage.
-- [protocol SFSafariExtensionHandling](sfsafariextensionhandling.md)
+- [protocol SFSafariExtensionHandling](./sfsafariextensionhandling.md)
   A protocol for implementing event handling in a Safari app extension.
-- [let SFExtensionProfileKey: String](sfextensionprofilekey.md)
+- [let SFExtensionProfileKey: String](./sfextensionprofilekey.md)
   A string the system uses as a key in a user info dictionary to identify a profile identifier.
 
 

@@ -1,14 +1,15 @@
 # kAVCSignalModeSDL525_60
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 kAVCSignalModeSDL525_60 = 0x04
 ```
 

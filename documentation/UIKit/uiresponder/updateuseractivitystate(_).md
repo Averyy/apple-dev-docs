@@ -1,7 +1,8 @@
 # updateUserActivityState(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the state of the given user activity.
 
@@ -9,7 +10,7 @@ Updates the state of the given user activity.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,15 @@ Updates the state of the given user activity.
 func updateUserActivityState(_ activity: NSUserActivity)
 ```
 
+```objc
+- (void) updateUserActivityState:(NSUserActivity *) activity;
+```
+
 #### Discussion
 
-Subclasses override this method to update the state of the given user activity. You should add state representing the user’s activity into the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object using its [`addUserInfoEntries(from:)`](https://developer.apple.com/documentation/foundation/nsuseractivity/adduserinfoentries(from:)) method. When the state is dirty, you should set the [`needsSave`](https://developer.apple.com/documentation/foundation/nsuseractivity/needssave) property of the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) to [`true`](https://developer.apple.com/documentation/swift/true), and this method will be called at an appropriate time.
+Subclasses override this method to update the state of the given user activity. You should add state representing the user’s activity into the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object using its [`addUserInfoEntries(from:)`](../../Foundation/nsuseractivity/adduserinfoentries%28from%29.md) method. When the state is dirty, you should set the [`needsSave`](../../Foundation/nsuseractivity/needssave.md) property of the [`NSUserActivity`](../../Foundation/nsuseractivity.md) to [`true`](../../Swift/true.md), and this method will be called at an appropriate time.
 
-When an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object managed by UIKit is updated, an empty `userInfo` dictionary is given to the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object, and all of the objects associated with the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) are then sent an [`updateUserActivityState(_:)`](uiresponder/updateuseractivitystate(_:).md) message.
+When an [`NSUserActivity`](../../Foundation/nsuseractivity.md) object managed by UIKit is updated, an empty `userInfo` dictionary is given to the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object, and all of the objects associated with the [`NSUserActivity`](../../Foundation/nsuseractivity.md) are then sent an [`updateUserActivityState(_:)`](./updateuseractivitystate%28_%29.md) message.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ When an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/
 
 ## See Also
 
-- [var userActivity: NSUserActivity?](uiresponder/useractivity.md)
+### Supporting user activities
+- [var userActivity: NSUserActivity?](./useractivity.md)
   An object encapsulating a user activity supported by this responder.
-- [func restoreUserActivityState(NSUserActivity)](uiresponder/restoreuseractivitystate(_:).md)
+- [func restoreUserActivityState(NSUserActivity)](./restoreuseractivitystate%28_%29.md)
   Restores the state needed to continue the given user activity.
 
 

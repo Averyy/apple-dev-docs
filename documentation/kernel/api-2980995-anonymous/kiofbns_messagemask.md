@@ -1,14 +1,15 @@
 # kIOFBNS_MessageMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 kIOFBNS_MessageMask = 0x0000000f
 ```
 

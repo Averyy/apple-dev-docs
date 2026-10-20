@@ -1,10 +1,11 @@
 # kEnableSniffMode
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,14 +13,19 @@
 var kEnableSniffMode: BluetoothHCILinkPolicySettingsValues { get }
 ```
 
+```c
+kEnableSniffMode
+```
+
 ## See Also
 
-- [var kDisableAllLMModes: BluetoothHCILinkPolicySettingsValues](kdisablealllmmodes.md)
-- [var kEnableHoldMode: BluetoothHCILinkPolicySettingsValues](kenableholdmode.md)
-- [var kEnableMasterSlaveSwitch: BluetoothHCILinkPolicySettingsValues](kenablemasterslaveswitch.md)
-- [var kEnableParkMode: BluetoothHCILinkPolicySettingsValues](kenableparkmode.md)
-- [var kReservedForFutureUse: BluetoothHCILinkPolicySettingsValues](kreservedforfutureuse.md)
-- [var kEnableCentralPeripheralSwitch: BluetoothHCILinkPolicySettingsValues](kenablecentralperipheralswitch.md)
+### Constants
+- [var kDisableAllLMModes: BluetoothHCILinkPolicySettingsValues](./kdisablealllmmodes.md)
+- [var kEnableHoldMode: BluetoothHCILinkPolicySettingsValues](./kenableholdmode.md)
+- [var kEnableMasterSlaveSwitch: BluetoothHCILinkPolicySettingsValues](./kenablemasterslaveswitch.md)
+- [var kEnableParkMode: BluetoothHCILinkPolicySettingsValues](./kenableparkmode.md)
+- [var kReservedForFutureUse: BluetoothHCILinkPolicySettingsValues](./kreservedforfutureuse.md)
+- [var kEnableCentralPeripheralSwitch: BluetoothHCILinkPolicySettingsValues](./kenablecentralperipheralswitch.md)
 
 
 ---

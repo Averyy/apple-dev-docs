@@ -1,7 +1,8 @@
 # leftFoot
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A skeletal joint that ARKit tracks representing the left foot.
 
@@ -15,21 +16,26 @@ A skeletal joint that ARKit tracks representing the left foot.
 static let leftFoot: ARSkeleton.JointName
 ```
 
+```c
+extern ARSkeletonJointName const ARSkeletonJointNameLeftFoot;
+```
+
 ## See Also
 
-- [static let root: ARSkeleton.JointName](arskeleton/jointname/root.md)
+### Identifying Joints
+- [static let root: ARSkeleton.JointName](./root.md)
   A skeletal joint that’s the root of all other joints.
-- [static let head: ARSkeleton.JointName](arskeleton/jointname/head.md)
+- [static let head: ARSkeleton.JointName](./head.md)
   A skeletal joint that ARKit tracks representing the head.
-- [static let leftHand: ARSkeleton.JointName](arskeleton/jointname/lefthand.md)
+- [static let leftHand: ARSkeleton.JointName](./lefthand.md)
   A skeletal joint that ARKit tracks representing the left hand.
-- [static let leftShoulder: ARSkeleton.JointName](arskeleton/jointname/leftshoulder.md)
+- [static let leftShoulder: ARSkeleton.JointName](./leftshoulder.md)
   A skeletal joint that ARKit tracks representing the left shoulder.
-- [static let rightFoot: ARSkeleton.JointName](arskeleton/jointname/rightfoot.md)
+- [static let rightFoot: ARSkeleton.JointName](./rightfoot.md)
   A skeletal joint that ARKit tracks representing the right foot.
-- [static let rightHand: ARSkeleton.JointName](arskeleton/jointname/righthand.md)
+- [static let rightHand: ARSkeleton.JointName](./righthand.md)
   A skeletal joint that ARKit tracks representing the right hand.
-- [static let rightShoulder: ARSkeleton.JointName](arskeleton/jointname/rightshoulder.md)
+- [static let rightShoulder: ARSkeleton.JointName](./rightshoulder.md)
   A skeletal joint that ARKit tracks representing the right shoulder.
 
 

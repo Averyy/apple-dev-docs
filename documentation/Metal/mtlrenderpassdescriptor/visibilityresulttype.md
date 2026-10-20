@@ -1,7 +1,8 @@
 # visibilityResultType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies if Metal accumulates visibility results between render encoders or resets them.
 
@@ -17,6 +18,10 @@ Specifies if Metal accumulates visibility results between render encoders or res
 
 ```swift
 var visibilityResultType: MTLVisibilityResultType { get set }
+```
+
+```objc
+@property (nonatomic) MTLVisibilityResultType visibilityResultType;
 ```
 
 

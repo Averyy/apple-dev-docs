@@ -1,13 +1,14 @@
 # ARObjectScanningConfiguration
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration that recognizes objects and collects high-fidelity data about specific objects using the rear-facing camera.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS
+- iPadOS
 
 ## Declaration
 
@@ -15,38 +16,42 @@ A configuration that recognizes objects and collects high-fidelity data about sp
 class ARObjectScanningConfiguration
 ```
 
+```objc
+@interface ARObjectScanningConfiguration : ARConfiguration
+```
+
 #### Overview
 
-To create an app that recognizes objects in the physical environment, first you scan them during development using `ARObjectScanningConfiguration`. After you’ve scanned an object, call [`createReferenceObject(transform:center:extent:completionHandler:)`](arsession/createreferenceobject(transform:center:extent:completionhandler:).md) to turn it into an [`ARReferenceObject`](arreferenceobject.md) that you can use to detect it again at run-time. When users run your app, you ask ARKit to look for your scanned obects by running a world tracking configuration and assigning reference objects to its [`detectionObjects`](arworldtrackingconfiguration/detectionobjects.md) property.
+To create an app that recognizes objects in the physical environment, first you scan them during development using `ARObjectScanningConfiguration`. After you’ve scanned an object, call [`createReferenceObject(transform:center:extent:completionHandler:)`](./arsession/createreferenceobject%28transform,center,extent,completionhandler%29.md) to turn it into an [`ARReferenceObject`](./arreferenceobject.md) that you can use to detect it again at run-time. When users run your app, you ask ARKit to look for your scanned obects by running a world tracking configuration and assigning reference objects to its [`detectionObjects`](./arworldtrackingconfiguration/detectionobjects.md) property.
 
 > ❗ **Important**:  `ARObjectScanningConfiguration` is for use only in development scenarios. Because the high-fidelity spatial mapping required by object scanning has a high performance and energy cost, many ARKit features are disabled that aren’t required for object scanning.
 
 ## Topics
 
 ### Creating a Configuration
-- [init()](arobjectscanningconfiguration/init.md)
+- [init()](./arobjectscanningconfiguration/init%28%29.md)
   Initializes a new object scanning configuration.
 ### Enabling Plane Detection
-- [var planeDetection: ARWorldTrackingConfiguration.PlaneDetection](arobjectscanningconfiguration/planedetection.md)
+- [var planeDetection: ARWorldTrackingConfiguration.PlaneDetection](./arobjectscanningconfiguration/planedetection.md)
   A value specifying whether and how the session attempts to automatically detect flat surfaces in the camera-captured image.
-- [ARWorldTrackingConfiguration.PlaneDetection](arworldtrackingconfiguration/planedetection-swift.struct.md)
+- [ARWorldTrackingConfiguration.PlaneDetection](./arworldtrackingconfiguration/planedetection-swift.struct.md)
   Options for whether and how the framework detects flat surfaces in captured images.
 ### Managing Device Camera Behavior
-- [var isAutoFocusEnabled: Bool](arobjectscanningconfiguration/isautofocusenabled.md)
+- [var isAutoFocusEnabled: Bool](./arobjectscanningconfiguration/isautofocusenabled.md)
   A Boolean value that determines whether the device camera uses fixed focus or autofocus behavior.
 
 ## Relationships
 
 ### Inherits From
-- [ARConfiguration](arconfiguration.md)
+- [ARConfiguration](./arconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

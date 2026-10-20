@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum NVRAMPartitionType : unsigned int {
     ...
 };
@@ -17,9 +17,9 @@ enum NVRAMPartitionType : unsigned int {
 ## Topics
 
 ### Constants
-- [kIONVRAMPartitionCommon](nvrampartitiontype/kionvrampartitioncommon.md)
-- [kIONVRAMPartitionSystem](nvrampartitiontype/kionvrampartitionsystem.md)
-- [kIONVRAMPartitionTypeUnknown](nvrampartitiontype/kionvrampartitiontypeunknown.md)
+- [kIONVRAMPartitionCommon](./nvrampartitiontype/kionvrampartitioncommon.md)
+- [kIONVRAMPartitionSystem](./nvrampartitiontype/kionvrampartitionsystem.md)
+- [kIONVRAMPartitionTypeUnknown](./nvrampartitiontype/kionvrampartitiontypeunknown.md)
 
 
 ---

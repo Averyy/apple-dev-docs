@@ -1,7 +1,8 @@
 # includedKeys
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key names that are represented by a key-value pair, even if they are not present in the receiver’s content dictionary.
 
@@ -14,9 +15,14 @@ The key names that are represented by a key-value pair, even if they are not pre
 var includedKeys: [String] { get set }
 ```
 
+```objc
+@property (copy) NSArray<NSString *> * includedKeys;
+```
+
 ## See Also
 
-- [var excludedKeys: [String]](nsdictionarycontroller/excludedkeys.md)
+### Keys to Display
+- [var excludedKeys: [String]](./excludedkeys.md)
   The key names that are never displayed in the user interface items bound to the receiver.
 
 

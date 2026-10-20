@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the player item presents the track’s media during playback.
 
@@ -19,6 +20,10 @@ A Boolean value that indicates whether the player item presents the track’s me
 ```swift
 nonisolated
 var isEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, getter=isEnabled) BOOL enabled;
 ```
 
 #### Discussion

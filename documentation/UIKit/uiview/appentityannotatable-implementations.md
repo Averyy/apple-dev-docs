@@ -1,11 +1,12 @@
 # AppEntityAnnotatable Implementations
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var appEntityIdentifier: EntityIdentifier?](uiview/appentityidentifier.md)
+- [var appEntityIdentifier: EntityIdentifier?](./appentityidentifier.md)
   The identifier of an app entity that you associate with a custom view.
 
 

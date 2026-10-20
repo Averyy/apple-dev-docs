@@ -1,7 +1,8 @@
 # logicallyComplete(after:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Causes the animation to report logical completion after the specified duration, if it has not already logically completed.
 

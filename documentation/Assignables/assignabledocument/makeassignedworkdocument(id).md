@@ -1,15 +1,16 @@
 # makeAssignedWorkDocument(id:)
 
 **Framework**: Assignables  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Create a new instance of an [`AssignedWorkDocument`](assignedworkdocument.md) based on this assignable document.
+Create a new instance of an [`AssignedWorkDocument`](../assignedworkdocument.md) based on this assignable document.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

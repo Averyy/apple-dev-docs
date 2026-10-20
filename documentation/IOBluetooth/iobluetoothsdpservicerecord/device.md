@@ -1,17 +1,22 @@
 # device
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the IOBluetoothDevice that the target service belongs to.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var device: IOBluetoothDevice! { get }
+```
+
+```objc
+@property (retain, readonly) IOBluetoothDevice * device;
 ```
 
 #### Return Value

@@ -1,15 +1,18 @@
 # maximumDistance
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum distance for the shadow.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
+- iOS 13.0+ - Deprecated in 18.0
+- iPadOS 13.0+ - Deprecated in 18.0
+- Mac Catalyst 13.0+ - Deprecated in 18.0
+- macOS 10.15+ - Deprecated in 15.0
+
+> **Deprecated**: Use .shadowProjection = .automatic(maximumDistance:)
 
 ## Declaration
 
@@ -19,11 +22,12 @@ var maximumDistance: Float { get set }
 
 ## See Also
 
-- [var depthBias: Float](directionallightcomponent/shadow/depthbias.md)
+### Configuring the shadow
+- [var depthBias: Float](./depthbias.md)
   A constant value that RealityKit applies as a bias to its shadow calculations.
-- [var cullModeOverride: DirectionalLightComponent.Shadow.ShadowMapCullMode?](directionallightcomponent/shadow/cullmodeoverride.md)
+- [var cullModeOverride: DirectionalLightComponent.Shadow.ShadowMapCullMode?](./cullmodeoverride.md)
   The light’s culling mode for shadow map rendering.
-- [var shadowProjection: DirectionalLightComponent.Shadow.ShadowProjectionType](directionallightcomponent/shadow/shadowprojection.md)
+- [var shadowProjection: DirectionalLightComponent.Shadow.ShadowProjectionType](./shadowprojection.md)
   Sets the shadow projection used for shadow map rendering
 
 

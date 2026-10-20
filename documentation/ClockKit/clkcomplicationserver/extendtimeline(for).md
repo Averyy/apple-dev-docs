@@ -1,12 +1,15 @@
 # extendTimeline(for:)
 
 **Framework**: ClockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the system to extend the data in your complication’s timeline.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Asks the system to extend the data in your complication’s timeline.
 func extendTimeline(for complication: CLKComplication)
 ```
 
+```objc
+- (void) extendTimelineForComplication:(CLKComplication *) complication;
+```
+
 ## Mentions
 
-- [Keeping your complications up to date](keeping-your-complications-up-to-date.md)
+- [Keeping your complications up to date](../keeping-your-complications-up-to-date.md)
 
 #### Discussion
 
@@ -28,7 +35,8 @@ Call this method when your existing complication data is still valid and you’v
 
 ## See Also
 
-- [func reloadTimeline(for: CLKComplication)](clkcomplicationserver/reloadtimeline(for:).md)
+### Updating Your Timeline Data
+- [func reloadTimeline(for: CLKComplication)](./reloadtimeline%28for%29.md)
   Invalidates your existing timeline data and triggers an update session to reload it.
 
 

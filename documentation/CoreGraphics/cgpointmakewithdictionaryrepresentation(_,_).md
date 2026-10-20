@@ -1,7 +1,8 @@
 # CGPointMakeWithDictionaryRepresentation(_:_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Fills in a point using the contents of the specified dictionary.
 
@@ -10,7 +11,7 @@ Fills in a point using the contents of the specified dictionary.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,20 +21,25 @@ Fills in a point using the contents of the specified dictionary.
 func CGPointMakeWithDictionaryRepresentation(_ dict: CFDictionary, _ point: UnsafeMutablePointer<CGPoint>) -> Bool
 ```
 
+```c
+extern bool CGPointMakeWithDictionaryRepresentation(CFDictionaryRef dict, CGPoint *point);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../Swift/true.md) if successful; otherwise [`false`](../Swift/false.md).
 
 ## Parameters
 
-- `dict`: A dictionary that was previously returned from the function [`CGPointCreateDictionaryRepresentation(_:)`](cgpointcreatedictionaryrepresentation(_:).md).
+- `dict`: A dictionary that was previously returned from the function [`CGPointCreateDictionaryRepresentation(_:)`](./cgpointcreatedictionaryrepresentation%28_%29.md).
 - `point`: On return, the point created from the provided dictionary.
 
 ## See Also
 
-- [func CGSizeMakeWithDictionaryRepresentation(CFDictionary, UnsafeMutablePointer<CGSize>) -> Bool](cgsizemakewithdictionaryrepresentation(_:_:).md)
+### Creating a Geometric Primitive from a Dictionary Representation
+- [func CGSizeMakeWithDictionaryRepresentation(CFDictionary, UnsafeMutablePointer<CGSize>) -> Bool](./cgsizemakewithdictionaryrepresentation%28_,_%29.md)
   Fills in a size using the contents of the specified dictionary.
-- [func CGRectMakeWithDictionaryRepresentation(CFDictionary, UnsafeMutablePointer<CGRect>) -> Bool](cgrectmakewithdictionaryrepresentation(_:_:).md)
+- [func CGRectMakeWithDictionaryRepresentation(CFDictionary, UnsafeMutablePointer<CGRect>) -> Bool](./cgrectmakewithdictionaryrepresentation%28_,_%29.md)
   Fills in a rectangle using the contents of the specified dictionary.
 
 

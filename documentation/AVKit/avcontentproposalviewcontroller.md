@@ -1,7 +1,8 @@
 # AVContentProposalViewController
 
 **Framework**: AVKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view controller that proposes content to watch next.
 
@@ -15,9 +16,13 @@ A view controller that proposes content to watch next.
 class AVContentProposalViewController
 ```
 
+```objc
+@interface AVContentProposalViewController : UIViewController
+```
+
 ## Mentions
 
-- [Presenting content proposals in tvOS](presenting-content-proposals-in-tvos.md)
+- [Presenting content proposals in tvOS](./presenting-content-proposals-in-tvos.md)
 
 #### Overview
 
@@ -26,57 +31,58 @@ Subclass this class to define the user interface for your content proposal.
 ## Topics
 
 ### Configuring the proposal
-- [var contentProposal: AVContentProposal?](avcontentproposalviewcontroller/contentproposal.md)
+- [var contentProposal: AVContentProposal?](./avcontentproposalviewcontroller/contentproposal.md)
   A prosal of content to play.
-- [class AVContentProposal](avcontentproposal.md)
+- [class AVContentProposal](./avcontentproposal.md)
   An object that describes the content to propose playing after the current item finishes.
-- [var dateOfAutomaticAcceptance: Date?](avcontentproposalviewcontroller/dateofautomaticacceptance.md)
+- [var dateOfAutomaticAcceptance: Date?](./avcontentproposalviewcontroller/dateofautomaticacceptance.md)
   The date that the system automatically accepts a proposal if the user doesn’t intervene.
-- [var playerLayoutGuide: UILayoutGuide](avcontentproposalviewcontroller/playerlayoutguide.md)
+- [var playerLayoutGuide: UILayoutGuide](./avcontentproposalviewcontroller/playerlayoutguide.md)
   A layout guide that tracks the size and location of the player view.
-- [var preferredPlayerViewFrame: CGRect](avcontentproposalviewcontroller/preferredplayerviewframe.md)
+- [var preferredPlayerViewFrame: CGRect](./avcontentproposalviewcontroller/preferredplayerviewframe.md)
   The preferred presentation frame of the player view while the content proposal is active.
 ### Dismissing the proposal
-- [func dismissContentProposal(for: AVContentProposalAction, animated: Bool, completion: (() -> Void)?)](avcontentproposalviewcontroller/dismisscontentproposal(for:animated:completion:).md)
+- [func dismissContentProposal(for: AVContentProposalAction, animated: Bool, completion: (() -> Void)?)](./avcontentproposalviewcontroller/dismisscontentproposal%28for,animated,completion%29.md)
   Dismisses the current content proposal.
-- [enum AVContentProposalAction](avcontentproposalaction.md)
+- [enum AVContentProposalAction](./avcontentproposalaction.md)
   Constant that indicate the action a user takes when dismissing a content proposal.
 ### Accessing the player view controller
-- [var playerViewController: AVPlayerViewController?](avcontentproposalviewcontroller/playerviewcontroller.md)
+- [var playerViewController: AVPlayerViewController?](./avcontentproposalviewcontroller/playerviewcontroller.md)
   The player view controller that presents a content proposal.
 
 ## Relationships
 
 ### Inherits From
-- [UIViewController](../uikit/uiviewcontroller.md)
+- [UIViewController](../UIKit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UIContentContainer](../uikit/uicontentcontainer.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIStateRestoring](../uikit/uistaterestoring.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UIContentContainer](../UIKit/uicontentcontainer.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../UIKit/uistaterestoring.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [Presenting content proposals in tvOS](presenting-content-proposals-in-tvos.md)
+### Content proposals and parental controls
+- [Presenting content proposals in tvOS](./presenting-content-proposals-in-tvos.md)
   Display a preview of an upcoming media item at the conclusion of the currently playing media item.
-- [Working with overlays and parental controls in tvOS](working-with-overlays-and-parental-controls-in-tvos.md)
+- [Working with overlays and parental controls in tvOS](./working-with-overlays-and-parental-controls-in-tvos.md)
   Add interactive overlays, parental controls, and livestream channel flipping using a player view controller.
-- [class AVContentProposal](avcontentproposal.md)
+- [class AVContentProposal](./avcontentproposal.md)
   An object that describes the content to propose playing after the current item finishes.
-- [enum AVContentProposalAction](avcontentproposalaction.md)
+- [enum AVContentProposalAction](./avcontentproposalaction.md)
   Constant that indicate the action a user takes when dismissing a content proposal.
 
 

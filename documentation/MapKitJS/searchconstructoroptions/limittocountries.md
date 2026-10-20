@@ -1,7 +1,8 @@
 # limitToCountries
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A string that constrains search results to within the provided countries.
 
@@ -10,7 +11,7 @@ A string that constrains search results to within the provided countries.
 
 ## Declaration
 
-```swift
+```
 limitToCountries?: string;
 ```
 
@@ -20,11 +21,12 @@ The string is a comma-separated list of two-digit ISO 3166-2 country and region 
 
 ## See Also
 
-- [includePhysicalFeatures](searchconstructoroptions/includephysicalfeatures.md)
+### Search filtering
+- [includePhysicalFeatures](./includephysicalfeatures.md)
   A Boolean value that indicates whether the search results include physical features, such as mountain ranges, rivers, and ocean basins.
-- [includeQueries](searchconstructoroptions/includequeries.md)
+- [includeQueries](./includequeries.md)
   A Boolean value that indicates whether the search results include queries.
-- [regionPriority](searchconstructoroptions/regionpriority.md)
+- [regionPriority](./regionpriority.md)
   A region priority value that controls whether results occur outside, or strictly within, the region.
 
 

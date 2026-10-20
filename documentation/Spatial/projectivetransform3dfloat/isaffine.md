@@ -1,7 +1,8 @@
 # isAffine
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var isAffine: Bool { get }
+```
+
+```c
+static bool SPProjectiveTransform3DFloatIsAffine(SPProjectiveTransform3DFloat transform);
 ```
 
 #### Discussion

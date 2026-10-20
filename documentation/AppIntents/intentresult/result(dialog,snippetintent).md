@@ -1,7 +1,8 @@
 # result(dialog:snippetIntent:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Indicates that a completed app intent displays an interactive snippet and a success dialog.
 

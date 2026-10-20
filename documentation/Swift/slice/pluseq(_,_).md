@@ -1,7 +1,8 @@
 # +=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Appends the elements of a sequence to a range-replaceable collection.
 
@@ -31,7 +32,7 @@ print(numbers)
 // Prints "[1, 2, 3, 4, 5, 10, 11, 12, 13, 14, 15]"
 ```
 
-> **Note**: O(*m*), where *m* is the length of the right-hand-side argument.
+> **Complexity**: O(*m*), where *m* is the length of the right-hand-side argument.
 
 ## Parameters
 

@@ -1,10 +1,11 @@
 # disableScreenFontSubstitution
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.11
 
 ## Declaration
 

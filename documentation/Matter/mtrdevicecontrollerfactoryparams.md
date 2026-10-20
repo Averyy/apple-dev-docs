@@ -1,7 +1,8 @@
 # MTRDeviceControllerFactoryParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,35 +19,39 @@
 class MTRDeviceControllerFactoryParams
 ```
 
+```objc
+@interface MTRDeviceControllerFactoryParams : NSObject
+```
+
 ## Mentions
 
-- [Onboarding a Matter device](onboarding-a-matter-device.md)
+- [Onboarding a Matter device](./onboarding-a-matter-device.md)
 
 ## Topics
 
 ### Initializers
-- [init(storage: any MTRStorage)](mtrdevicecontrollerfactoryparams/init(storage:).md)
+- [init(storage: any MTRStorage)](./mtrdevicecontrollerfactoryparams/init%28storage%29.md)
 ### Instance Properties
-- [var certificationDeclarationCertificates: [Data]?](mtrdevicecontrollerfactoryparams/certificationdeclarationcertificates.md)
-- [var otaProviderDelegate: (any MTROTAProviderDelegate)?](mtrdevicecontrollerfactoryparams/otaproviderdelegate.md)
-- [var port: NSNumber?](mtrdevicecontrollerfactoryparams/port.md)
-- [var productAttestationAuthorityCertificates: [Data]?](mtrdevicecontrollerfactoryparams/productattestationauthoritycertificates.md)
-- [var shouldStartServer: Bool](mtrdevicecontrollerfactoryparams/shouldstartserver.md)
-- [var storage: any MTRStorage](mtrdevicecontrollerfactoryparams/storage.md)
+- [var certificationDeclarationCertificates: [Data]?](./mtrdevicecontrollerfactoryparams/certificationdeclarationcertificates.md)
+- [var otaProviderDelegate: (any MTROTAProviderDelegate)?](./mtrdevicecontrollerfactoryparams/otaproviderdelegate.md)
+- [var port: NSNumber?](./mtrdevicecontrollerfactoryparams/port.md)
+- [var productAttestationAuthorityCertificates: [Data]?](./mtrdevicecontrollerfactoryparams/productattestationauthoritycertificates.md)
+- [var shouldStartServer: Bool](./mtrdevicecontrollerfactoryparams/shouldstartserver.md)
+- [var storage: any MTRStorage](./mtrdevicecontrollerfactoryparams/storage.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRControllerFactoryParams](mtrcontrollerfactoryparams.md)
+- [MTRControllerFactoryParams](./mtrcontrollerfactoryparams.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # InputTargetComponent.InputType
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type of input that the `InputTargetComponent`’s entity can receive.
 
@@ -22,21 +23,21 @@ struct InputType
 ## Topics
 
 ### Type Properties
-- [static let all: InputTargetComponent.InputType](inputtargetcomponent/inputtype/all.md)
+- [static let all: InputTargetComponent.InputType](./inputtype/all.md)
   All forms of input.
-- [static let direct: InputTargetComponent.InputType](inputtargetcomponent/inputtype/direct.md)
+- [static let direct: InputTargetComponent.InputType](./inputtype/direct.md)
   All forms of input that target content by querying proximity from the input device to the content.
-- [static let indirect: InputTargetComponent.InputType](inputtargetcomponent/inputtype/indirect.md)
+- [static let indirect: InputTargetComponent.InputType](./inputtype/indirect.md)
   All forms of input that target content using an indirect targeting mechanism.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

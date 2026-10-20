@@ -1,14 +1,15 @@
 # d_write
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 read_write_fcn_t *d_write;
 ```
 

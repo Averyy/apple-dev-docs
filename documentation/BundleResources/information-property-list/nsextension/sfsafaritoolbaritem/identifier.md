@@ -1,24 +1,27 @@
 # Identifier
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The identifier for a Safari extension’s toolbar item.
 
 **Availability**:
 - macOS 10.11.5+
 
+## Details
 
-
-**Type**: string
+- **Name**: `Identifier`
+- **Type**: string
 
 ## See Also
 
-- [Action](information-property-list/nsextension/sfsafaritoolbaritem/action.md)
+### Toolbar Item Configuration
+- [Action](./action.md)
   The properties of an app extension’s toolbar item that’s been added to the Safari window.
-- [Image](information-property-list/nsextension/sfsafaritoolbaritem/image.md)
+- [Image](./image.md)
   An image that represents a Safari extension’s toolbar item.
-- [Label](information-property-list/nsextension/sfsafaritoolbaritem/label.md)
+- [Label](./label.md)
   The label for the Safari extension’s toolbar item.
 
 

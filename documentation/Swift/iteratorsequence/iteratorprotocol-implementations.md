@@ -1,14 +1,15 @@
 # IteratorProtocol Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func next() -> Base.Element?](iteratorsequence/next.md)
+- [func next() -> Base.Element?](./next%28%29.md)
   Advances to the next element and returns it, or `nil` if no next element exists.
 ### Type Aliases
-- [IteratorSequence.Element](iteratorsequence/element.md)
+- [IteratorSequence.Element](./element.md)
   The type of element traversed by the iterator.
 
 

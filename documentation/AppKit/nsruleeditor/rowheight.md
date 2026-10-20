@@ -1,12 +1,13 @@
 # rowHeight
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rule editor’s row height.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The rule editor’s row height.
 var rowHeight: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat rowHeight;
+```
+
 ## See Also
 
-- [var isEditable: Bool](nsruleeditor/iseditable.md)
+### Configuring a Rule Editor
+- [var isEditable: Bool](./iseditable.md)
   A Boolean value that determines whether the rule editor is editable.
-- [var nestingMode: NSRuleEditor.NestingMode](nsruleeditor/nestingmode-swift.property.md)
+- [var nestingMode: NSRuleEditor.NestingMode](./nestingmode-swift.property.md)
   The rule editor’s nesting mode.
-- [NSRuleEditor.NestingMode](nsruleeditor/nestingmode-swift.enum.md)
+- [NSRuleEditor.NestingMode](./nestingmode-swift.enum.md)
   Specifies a type for nesting modes.
-- [var canRemoveAllRows: Bool](nsruleeditor/canremoveallrows.md)
+- [var canRemoveAllRows: Bool](./canremoveallrows.md)
   A Boolean value that indicates whether all the rows can be removed.
 
 

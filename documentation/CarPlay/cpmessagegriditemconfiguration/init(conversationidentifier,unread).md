@@ -1,7 +1,8 @@
 # init(conversationIdentifier:unread:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a @c CPMessageGridItemConfiguration for use in a @c CPListTemplate.
 
@@ -14,6 +15,10 @@ Initialize a @c CPMessageGridItemConfiguration for use in a @c CPListTemplate.
 
 ```swift
 init(conversationIdentifier: String, unread: Bool)
+```
+
+```objc
+- (instancetype) initWithConversationIdentifier:(NSString *) conversationIdentifier unread:(BOOL) unread;
 ```
 
 ## Parameters

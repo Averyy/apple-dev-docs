@@ -1,7 +1,8 @@
 # run()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Puts the receiver into a permanent loop, during which time it processes data from all attached input sources.
 
@@ -20,9 +21,13 @@ Puts the receiver into a permanent loop, during which time it processes data fro
 func run()
 ```
 
+```objc
+- (void) run;
+```
+
 #### Discussion
 
-If no input sources or timers are attached to the run loop, this method exits immediately; otherwise, it runs the receiver in the `NSDefaultRunLoopMode` by repeatedly invoking [`run(mode:before:)`](runloop/run(mode:before:).md). In other words, this method effectively begins an infinite loop that processes data from the run loop’s input sources and timers.
+If no input sources or timers are attached to the run loop, this method exits immediately; otherwise, it runs the receiver in the `NSDefaultRunLoopMode` by repeatedly invoking [`run(mode:before:)`](./run%28mode,before%29.md). In other words, this method effectively begins an infinite loop that processes data from the run loop’s input sources and timers.
 
 Manually removing all known input sources and timers from the run loop is not a guarantee that the run loop will exit. macOS can install and remove additional input sources as needed to process requests targeted at the receiver’s thread. Those sources could therefore prevent the run loop from exiting.
 
@@ -34,15 +39,16 @@ NSRunLoop *theRL = [NSRunLoop currentRunLoop];
 while (shouldKeepRunning && [theRL runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]]);
 ```
 
-where `shouldKeepRunning` is set to [`false`](https://developer.apple.com/documentation/swift/false) somewhere else in the program.
+where `shouldKeepRunning` is set to [`false`](../../Swift/false.md) somewhere else in the program.
 
 ## See Also
 
-- [func run(mode: RunLoop.Mode, before: Date) -> Bool](runloop/run(mode:before:).md)
+### Running a Loop
+- [func run(mode: RunLoop.Mode, before: Date) -> Bool](./run%28mode,before%29.md)
   Runs the loop once, blocking for input in the specified mode until a given date.
-- [func run(until: Date)](runloop/run(until:).md)
+- [func run(until: Date)](./run%28until%29.md)
   Runs the loop until the specified date, during which time it processes data from all attached input sources.
-- [func acceptInput(forMode: RunLoop.Mode, before: Date)](runloop/acceptinput(formode:before:).md)
+- [func acceptInput(forMode: RunLoop.Mode, before: Date)](./acceptinput%28formode,before%29.md)
   Runs the loop once or until the specified date, accepting input only for the specified mode.
 
 

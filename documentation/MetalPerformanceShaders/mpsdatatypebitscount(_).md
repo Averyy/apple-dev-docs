@@ -1,20 +1,25 @@
 # MPSDataTypeBitsCount(_:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func MPSDataTypeBitsCount(_ t: MPSDataType) -> Int
+```
+
+```c
+static size_t MPSDataTypeBitsCount(MPSDataType t);
 ```
 
 

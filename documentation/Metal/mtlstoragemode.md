@@ -1,7 +1,8 @@
 # MTLStorageMode
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for the memory location and access permissions for a resource.
 
@@ -19,51 +20,56 @@ Options for the memory location and access permissions for a resource.
 enum MTLStorageMode
 ```
 
+```c
+enum MTLStorageMode : NSUInteger;
+```
+
 ## Mentions
 
-- [Setting resource storage modes](setting-resource-storage-modes.md)
+- [Setting resource storage modes](./setting-resource-storage-modes.md)
 
 #### Overview
 
-For more guidance on how to choose storage modes, see [`Setting resource storage modes`](setting-resource-storage-modes.md).
+For more guidance on how to choose storage modes, see [Setting resource storage modes](./setting-resource-storage-modes.md).
 
 ## Topics
 
 ### Storage mode options
-- [MTLStorageMode.shared](mtlstoragemode/shared.md)
+- [MTLStorageMode.shared](./mtlstoragemode/shared.md)
   The CPU and GPU share access to the resource, allocated in system memory.
-- [MTLStorageMode.managed](mtlstoragemode/managed.md)
+- [MTLStorageMode.managed](./mtlstoragemode/managed.md)
   The CPU and GPU may maintain separate copies of the resource, and any changes need to be explicitly synchronized.
-- [MTLStorageMode.private](mtlstoragemode/private.md)
+- [MTLStorageMode.private](./mtlstoragemode/private.md)
   The resource is only available to the GPU.
-- [MTLStorageMode.memoryless](mtlstoragemode/memoryless.md)
+- [MTLStorageMode.memoryless](./mtlstoragemode/memoryless.md)
   The resource’s contents are only available to the GPU, and only exist temporarily during a render pass.
 ### Initializers
-- [init?(rawValue: UInt)](mtlstoragemode/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtlstoragemode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var cpuCacheMode: MTLCPUCacheMode](mtlresource/cpucachemode.md)
+### Reading memory and storage properties
+- [var cpuCacheMode: MTLCPUCacheMode](./mtlresource/cpucachemode.md)
   The CPU cache mode that defines the CPU mapping of the resource.
-- [var storageMode: MTLStorageMode](mtlresource/storagemode.md)
+- [var storageMode: MTLStorageMode](./mtlresource/storagemode.md)
   The location and access permissions of the resource.
-- [var hazardTrackingMode: MTLHazardTrackingMode](mtlresource/hazardtrackingmode.md)
+- [var hazardTrackingMode: MTLHazardTrackingMode](./mtlresource/hazardtrackingmode.md)
   A mode that determines whether Metal tracks and synchronizes resource access.
-- [var resourceOptions: MTLResourceOptions](mtlresource/resourceoptions.md)
+- [var resourceOptions: MTLResourceOptions](./mtlresource/resourceoptions.md)
   The storage mode, CPU cache mode, and hazard tracking mode of the resource.
-- [enum MTLCPUCacheMode](mtlcpucachemode.md)
+- [enum MTLCPUCacheMode](./mtlcpucachemode.md)
   Options for the CPU cache mode that define the CPU mapping of the resource.
-- [enum MTLHazardTrackingMode](mtlhazardtrackingmode.md)
+- [enum MTLHazardTrackingMode](./mtlhazardtrackingmode.md)
   Options that control whether Metal automatically tracks and prevents memory hazards for resources.
 
 

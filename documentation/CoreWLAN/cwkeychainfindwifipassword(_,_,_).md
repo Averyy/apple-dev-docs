@@ -1,7 +1,8 @@
 # CWKeychainFindWiFiPassword(_:_:_:)
 
 **Framework**: Core WLAN  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Finds and returns, by reference, the password for the SSID and keychain domain you specify.
 
@@ -14,21 +15,26 @@ Finds and returns, by reference, the password for the SSID and keychain domain y
 func CWKeychainFindWiFiPassword(_ domain: CWKeychainDomain, _ ssid: Data, _ password: AutoreleasingUnsafeMutablePointer<NSString?>?) -> OSStatus
 ```
 
+```c
+OSStatus CWKeychainFindWiFiPassword(CWKeychainDomain domain, NSData *ssid, NSString **password);
+```
+
 ## See Also
 
-- [func CWKeychainCopyWiFiEAPIdentity(CWKeychainDomain, Data, UnsafeMutablePointer<Unmanaged<SecIdentity>?>?) -> OSStatus](cwkeychaincopywifieapidentity(_:_:_:).md)
+### Functions
+- [func CWKeychainCopyWiFiEAPIdentity(CWKeychainDomain, Data, UnsafeMutablePointer<Unmanaged<SecIdentity>?>?) -> OSStatus](./cwkeychaincopywifieapidentity%28_,_,_%29.md)
   Finds and returns the identity stored for the SSID and keychain domain you specify.
-- [func CWKeychainDeleteWiFiEAPUsernameAndPassword(CWKeychainDomain, Data) -> OSStatus](cwkeychaindeletewifieapusernameandpassword(_:_:).md)
+- [func CWKeychainDeleteWiFiEAPUsernameAndPassword(CWKeychainDomain, Data) -> OSStatus](./cwkeychaindeletewifieapusernameandpassword%28_,_%29.md)
   Deletes the 802.1X username and password for the SSID and keychain domain you specify.
-- [func CWKeychainDeleteWiFiPassword(CWKeychainDomain, Data) -> OSStatus](cwkeychaindeletewifipassword(_:_:).md)
+- [func CWKeychainDeleteWiFiPassword(CWKeychainDomain, Data) -> OSStatus](./cwkeychaindeletewifipassword%28_,_%29.md)
   Deletes the password for the SSID and keychain domain you specify.
-- [func CWKeychainFindWiFiEAPUsernameAndPassword(CWKeychainDomain, Data, AutoreleasingUnsafeMutablePointer<NSString?>?, AutoreleasingUnsafeMutablePointer<NSString?>?) -> OSStatus](cwkeychainfindwifieapusernameandpassword(_:_:_:_:).md)
+- [func CWKeychainFindWiFiEAPUsernameAndPassword(CWKeychainDomain, Data, AutoreleasingUnsafeMutablePointer<NSString?>?, AutoreleasingUnsafeMutablePointer<NSString?>?) -> OSStatus](./cwkeychainfindwifieapusernameandpassword%28_,_,_,_%29.md)
   Finds and returns the 802.1X username and password stored for the SSID and keychain domain you specify.
-- [func CWKeychainSetWiFiEAPIdentity(CWKeychainDomain, Data, SecIdentity?) -> OSStatus](cwkeychainsetwifieapidentity(_:_:_:).md)
+- [func CWKeychainSetWiFiEAPIdentity(CWKeychainDomain, Data, SecIdentity?) -> OSStatus](./cwkeychainsetwifieapidentity%28_,_,_%29.md)
   Associates an identity to the SSID and keychain domain you specify.
-- [func CWKeychainSetWiFiEAPUsernameAndPassword(CWKeychainDomain, Data, String?, String?) -> OSStatus](cwkeychainsetwifieapusernameandpassword(_:_:_:_:).md)
+- [func CWKeychainSetWiFiEAPUsernameAndPassword(CWKeychainDomain, Data, String?, String?) -> OSStatus](./cwkeychainsetwifieapusernameandpassword%28_,_,_,_%29.md)
   Sets the 802.1X username and password for the SSID and keychain domain you specify.
-- [func CWKeychainSetWiFiPassword(CWKeychainDomain, Data, String) -> OSStatus](cwkeychainsetwifipassword(_:_:_:).md)
+- [func CWKeychainSetWiFiPassword(CWKeychainDomain, Data, String) -> OSStatus](./cwkeychainsetwifipassword%28_,_,_%29.md)
   Sets the Wi-Fi network keychain password for the SSID and keychain domain you specify.
 
 

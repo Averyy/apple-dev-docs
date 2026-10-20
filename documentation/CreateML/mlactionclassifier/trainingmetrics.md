@@ -1,7 +1,8 @@
 # trainingMetrics
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Measurements of the action classifier’s performance on the training dataset.
 
@@ -16,9 +17,10 @@ var trainingMetrics: MLClassifierMetrics { get }
 
 ## See Also
 
-- [func evaluation(on: MLActionClassifier.DataSource) throws -> MLClassifierMetrics](mlactionclassifier/evaluation(on:).md)
+### Evaluating an action classifier
+- [func evaluation(on: MLActionClassifier.DataSource) throws -> MLClassifierMetrics](./evaluation%28on%29.md)
   Generates metrics describing the action classifier’s performance on labeled videos represented by a data source.
-- [var validationMetrics: MLClassifierMetrics](mlactionclassifier/validationmetrics.md)
+- [var validationMetrics: MLClassifierMetrics](./validationmetrics.md)
   Measurements of the action classifier’s performance on the validation dataset.
 
 

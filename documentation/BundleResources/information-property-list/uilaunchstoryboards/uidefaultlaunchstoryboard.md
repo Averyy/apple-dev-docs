@@ -1,7 +1,8 @@
 # UIDefaultLaunchStoryboard
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The identifier of the default launch storyboard to use.
 
@@ -9,13 +10,15 @@ The identifier of the default launch storyboard to use.
 - iOS 9.0+
 - iPadOS 9.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `UIDefaultLaunchStoryboard`
+- **Type**: string
 
 ## See Also
 
-- [UILaunchStoryboardDefinitions](information-property-list/uilaunchstoryboards/uilaunchstoryboarddefinitions.md)
+### Specifying Launch Storyboards
+- [UILaunchStoryboardDefinitions](./uilaunchstoryboarddefinitions.md)
   An array of dictionaries mapping launch storyboard identifiers to storyboards.
 
 

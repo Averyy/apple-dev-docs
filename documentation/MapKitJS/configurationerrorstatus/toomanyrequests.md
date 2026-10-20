@@ -1,7 +1,8 @@
 # TooManyRequests
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An error status that indicates the Maps ID for the authorization token provided exceeded its allowed daily usage.
 
@@ -10,7 +11,7 @@ An error status that indicates the Maps ID for the authorization token provided 
 
 ## Declaration
 
-```swift
+```
 readonly TooManyRequests: "Too Many Requests";
 ```
 

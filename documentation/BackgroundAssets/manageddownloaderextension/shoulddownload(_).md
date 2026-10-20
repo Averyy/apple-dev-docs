@@ -2,6 +2,7 @@
 
 **Framework**: Background Assets  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Determines whether to download an asset pack.
@@ -22,7 +23,7 @@ func shouldDownload(_ assetPack: AssetPack) -> Bool
 
 ## Mentions
 
-- [Downloading Apple-hosted asset packs](downloading-apple-hosted-asset-packs.md)
+- [Downloading Apple-hosted asset packs](../downloading-apple-hosted-asset-packs.md)
 
 #### Return Value
 
@@ -35,6 +36,12 @@ By default, the system automatically downloads all applicable asset packs with e
 ## Parameters
 
 - `assetPack`: An asset pack that’s being considered as a candidate to be downloaded.
+
+## Default Implementations
+
+### ManagedDownloaderExtension Implementations
+- [func shouldDownload(AssetPack) -> Bool](./shoulddownload%28_%29-7vrtd.md)
+  Determines whether a particular asset pack should be downloaded.
 
 
 ---

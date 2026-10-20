@@ -1,7 +1,8 @@
 # MIDIDeviceDispose(_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Disposes of a MIDI device.
 
@@ -18,15 +19,19 @@ Disposes of a MIDI device.
 func MIDIDeviceDispose(_ device: MIDIDeviceRef) -> OSStatus
 ```
 
+```c
+extern OSStatus MIDIDeviceDispose(MIDIDeviceRef device);
+```
+
 #### Return Value
 
 An `OSStatus` result code.
 
 #### Discussion
 
-Drivers may call this function to dispose of device objects that they haven’t already added to the system using [`MIDISetupAddDevice(_:)`](midisetupadddevice(_:).md). To remove a device after adding it to the session, call [`MIDISetupRemoveDevice(_:)`](midisetupremovedevice(_:).md).
+Drivers may call this function to dispose of device objects that they haven’t already added to the system using [`MIDISetupAddDevice(_:)`](./midisetupadddevice%28_%29.md). To remove a device after adding it to the session, call [`MIDISetupRemoveDevice(_:)`](./midisetupremovedevice%28_%29.md).
 
-Nondrivers can’t call this function, and instead must call [`MIDISetupAddDevice(_:)`](midisetupadddevice(_:).md) and [`MIDISetupRemoveDevice(_:)`](midisetupremovedevice(_:).md).
+Nondrivers can’t call this function, and instead must call [`MIDISetupAddDevice(_:)`](./midisetupadddevice%28_%29.md) and [`MIDISetupRemoveDevice(_:)`](./midisetupremovedevice%28_%29.md).
 
 ## Parameters
 
@@ -34,9 +39,10 @@ Nondrivers can’t call this function, and instead must call [`MIDISetupAddDevic
 
 ## See Also
 
-- [func MIDIDeviceCreate(MIDIDriverRef?, CFString, CFString, CFString, UnsafeMutablePointer<MIDIDeviceRef>) -> OSStatus](mididevicecreate(_:_:_:_:_:).md)
+### Managing Device Lifecyle
+- [func MIDIDeviceCreate(MIDIDriverRef?, CFString, CFString, CFString, UnsafeMutablePointer<MIDIDeviceRef>) -> OSStatus](./mididevicecreate%28_,_,_,_,_%29.md)
   Creates a new device object that corresponds to the available hardware.
-- [typealias MIDIDeviceRef](midideviceref.md)
+- [typealias MIDIDeviceRef](./midideviceref.md)
   A MIDI device that contains entities.
 
 

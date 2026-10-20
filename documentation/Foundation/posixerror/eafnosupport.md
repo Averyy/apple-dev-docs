@@ -1,7 +1,8 @@
 # EAFNOSUPPORT
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Address family not supported by protocol family.
 

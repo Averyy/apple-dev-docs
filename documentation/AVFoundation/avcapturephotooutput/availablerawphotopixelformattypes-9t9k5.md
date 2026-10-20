@@ -1,7 +1,8 @@
 # availableRawPhotoPixelFormatTypes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel formats the capture output supports for RAW photo capture.
 
@@ -21,23 +22,26 @@ var availableRawPhotoPixelFormatTypes: [OSType] { get }
 
 #### Discussion
 
-To capture a photo in RAW format, use the [`init(rawPixelFormatType:)`](avcapturephotosettings/init(rawpixelformattype:).md) or [`init(rawPixelFormatType:processedFormat:)`](avcapturephotosettings/init(rawpixelformattype:processedformat:).md) initializer to create your photo settings object. The value for that initializer’s `rawPixelFormatType` parameter must be one of the Bayer RAW format identifiers listed in this array.
+To capture a photo in RAW format, use the [`init(rawPixelFormatType:)`](../avcapturephotosettings/init%28rawpixelformattype%29.md) or [`init(rawPixelFormatType:processedFormat:)`](../avcapturephotosettings/init%28rawpixelformattype,processedformat%29.md) initializer to create your photo settings object. The value for that initializer’s `rawPixelFormatType` parameter must be one of the Bayer RAW format identifiers listed in this array.
 
-> **Note**:  Read this property only after adding the photo capture output to an [`AVCaptureSession`](avcapturesession.md) object containing a video source. If the photo capture output isn’t connected to a session with a video source, this array is empty. Not all devices support RAW image capture. If the current device doesn’t support RAW capture, this array is empty.
+> **Note**:  Read this property only after adding the photo capture output to an [`AVCaptureSession`](../avcapturesession.md) object containing a video source. If the photo capture output isn’t connected to a session with a video source, this array is empty.
+>
+> Not all devices support RAW image capture. If the current device doesn’t support RAW capture, this array is empty.
 
 This property supports key-value observing.
 
 ## See Also
 
-- [var availablePhotoPixelFormatTypes: [OSType]](avcapturephotooutput/availablephotopixelformattypes-3ydgm.md)
+### Determining supported pixel formats
+- [var availablePhotoPixelFormatTypes: [OSType]](./availablephotopixelformattypes-3ydgm.md)
   The pixel formats the capture output supports for photo capture.
-- [func supportedPhotoPixelFormatTypes(for: AVFileType) -> [OSType]](avcapturephotooutput/supportedphotopixelformattypes(for:).md)
+- [func supportedPhotoPixelFormatTypes(for: AVFileType) -> [OSType]](./supportedphotopixelformattypes%28for%29.md)
   Returns the list of uncompressed pixel formats supported for photo data in the specified file type.
-- [func supportedRawPhotoPixelFormatTypes(for: AVFileType) -> [OSType]](avcapturephotooutput/supportedrawphotopixelformattypes(for:).md)
+- [func supportedRawPhotoPixelFormatTypes(for: AVFileType) -> [OSType]](./supportedrawphotopixelformattypes%28for%29.md)
   Returns the list of Bayer RAW pixel formats supported for photo data in the specified file type.
-- [class func isAppleProRAWPixelFormat(OSType) -> Bool](avcapturephotooutput/isappleprorawpixelformat(_:).md)
+- [class func isAppleProRAWPixelFormat(OSType) -> Bool](./isappleprorawpixelformat%28_%29.md)
   Returns a Boolean value that indicates whether the pixel format is an Apple ProRAW format.
-- [class func isBayerRAWPixelFormat(OSType) -> Bool](avcapturephotooutput/isbayerrawpixelformat(_:).md)
+- [class func isBayerRAWPixelFormat(OSType) -> Bool](./isbayerrawpixelformat%28_%29.md)
   Returns a Boolean value that indicates whether the pixel format is a Bayer RAW format.
 
 

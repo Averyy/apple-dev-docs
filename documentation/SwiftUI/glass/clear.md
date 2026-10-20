@@ -1,7 +1,8 @@
 # clear
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The clear variant of glass.
 

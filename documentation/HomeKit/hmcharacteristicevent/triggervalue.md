@@ -1,7 +1,8 @@
 # triggerValue
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the characteristic that triggers the event.
 
@@ -20,13 +21,18 @@ The value of the characteristic that triggers the event.
 var triggerValue: TriggerValueType? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) TriggerValueType triggerValue;
+```
+
 #### Discussion
 
 A value of `nil` corresponds to any change in the value of the characteristic.
 
 ## See Also
 
-- [var characteristic: HMCharacteristic](hmcharacteristicevent/characteristic.md)
+### Inspecting the event
+- [var characteristic: HMCharacteristic](./characteristic.md)
   The characteristic associated with the event.
 
 

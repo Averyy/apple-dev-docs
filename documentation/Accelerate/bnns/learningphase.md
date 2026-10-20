@@ -1,7 +1,8 @@
 # BNNS.LearningPhase
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the learning phase of a normalization operation.
 
@@ -11,8 +12,10 @@ Constants that describe the learning phase of a normalization operation.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -24,20 +27,20 @@ enum LearningPhase
 ## Topics
 
 ### Learning Phases
-- [BNNS.LearningPhase.inference](bnns/learningphase/inference.md)
+- [BNNS.LearningPhase.inference](./learningphase/inference.md)
   The layer apply context is inference.
-- [BNNS.LearningPhase.training](bnns/learningphase/training.md)
+- [BNNS.LearningPhase.training](./learningphase/training.md)
   The layer apply context is training.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

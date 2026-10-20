@@ -1,7 +1,8 @@
 # setCustomDataByKey(_:value:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the custom data value at the given key path.
 

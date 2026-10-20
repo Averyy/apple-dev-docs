@@ -1,7 +1,8 @@
 # MPSCNNNormalizationGammaAndBetaState
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that stores gamma and beta terms used to apply a scale and bias in instance- or batch-normalization operations.
 
@@ -19,59 +20,64 @@ An object that stores gamma and beta terms used to apply a scale and bias in ins
 class MPSCNNNormalizationGammaAndBetaState
 ```
 
+```objc
+@interface MPSCNNNormalizationGammaAndBetaState : MPSState
+```
+
 ## Topics
 
 ### Initializers
-- [init(gamma: any MTLBuffer, beta: any MTLBuffer)](mpscnnnormalizationgammaandbetastate/init(gamma:beta:).md)
+- [init(gamma: any MTLBuffer, beta: any MTLBuffer)](./mpscnnnormalizationgammaandbetastate/init%28gamma,beta%29.md)
 ### Instance Properties
-- [var beta: any MTLBuffer](mpscnnnormalizationgammaandbetastate/beta.md)
-- [var gamma: any MTLBuffer](mpscnnnormalizationgammaandbetastate/gamma.md)
+- [var beta: any MTLBuffer](./mpscnnnormalizationgammaandbetastate/beta.md)
+- [var gamma: any MTLBuffer](./mpscnnnormalizationgammaandbetastate/gamma.md)
 ### Type Methods
-- [class func temporaryState(with: any MTLCommandBuffer, numberOfFeatureChannels: Int) -> Self](mpscnnnormalizationgammaandbetastate/temporarystate(with:numberoffeaturechannels:).md)
+- [class func temporaryState(with: any MTLCommandBuffer, numberOfFeatureChannels: Int) -> Self](./mpscnnnormalizationgammaandbetastate/temporarystate%28with,numberoffeaturechannels%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSState](mpsstate.md)
+- [MPSState](./mpsstate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNCrossChannelNormalization](mpscnncrosschannelnormalization.md)
+### Normalization Layers
+- [class MPSCNNCrossChannelNormalization](./mpscnncrosschannelnormalization.md)
   A normalization kernel applied across feature channels.
-- [class MPSCNNCrossChannelNormalizationGradient](mpscnncrosschannelnormalizationgradient.md)
+- [class MPSCNNCrossChannelNormalizationGradient](./mpscnncrosschannelnormalizationgradient.md)
   A gradient normalization kernel applied across feature channels.
-- [class MPSCNNLocalContrastNormalization](mpscnnlocalcontrastnormalization.md)
+- [class MPSCNNLocalContrastNormalization](./mpscnnlocalcontrastnormalization.md)
   A local-contrast normalization kernel.
-- [class MPSCNNLocalContrastNormalizationGradient](mpscnnlocalcontrastnormalizationgradient.md)
+- [class MPSCNNLocalContrastNormalizationGradient](./mpscnnlocalcontrastnormalizationgradient.md)
   A gradient local-contrast normalization kernel.
-- [class MPSCNNSpatialNormalization](mpscnnspatialnormalization.md)
+- [class MPSCNNSpatialNormalization](./mpscnnspatialnormalization.md)
   A spatial normalization kernel.
-- [class MPSCNNSpatialNormalizationGradient](mpscnnspatialnormalizationgradient.md)
+- [class MPSCNNSpatialNormalizationGradient](./mpscnnspatialnormalizationgradient.md)
   A gradient spatial normalization kernel.
-- [class MPSCNNBatchNormalization](mpscnnbatchnormalization.md)
+- [class MPSCNNBatchNormalization](./mpscnnbatchnormalization.md)
   A batch normalization kernel.
-- [class MPSCNNBatchNormalizationGradient](mpscnnbatchnormalizationgradient.md)
+- [class MPSCNNBatchNormalizationGradient](./mpscnnbatchnormalizationgradient.md)
   A gradient batch normalization kernel.
-- [class MPSCNNBatchNormalizationState](mpscnnbatchnormalizationstate.md)
+- [class MPSCNNBatchNormalizationState](./mpscnnbatchnormalizationstate.md)
   An object that stores data required to execute batch normalization.
-- [class MPSCNNNormalizationMeanAndVarianceState](mpscnnnormalizationmeanandvariancestate.md)
+- [class MPSCNNNormalizationMeanAndVarianceState](./mpscnnnormalizationmeanandvariancestate.md)
   An object that stores mean and variance terms used to execute batch normalization.
-- [class MPSCNNBatchNormalizationStatistics](mpscnnbatchnormalizationstatistics.md)
+- [class MPSCNNBatchNormalizationStatistics](./mpscnnbatchnormalizationstatistics.md)
   An object that stores statistics required to execute batch normalization.
-- [class MPSCNNBatchNormalizationStatisticsGradient](mpscnnbatchnormalizationstatisticsgradient.md)
+- [class MPSCNNBatchNormalizationStatisticsGradient](./mpscnnbatchnormalizationstatisticsgradient.md)
   An object that stores the gradient of the loss function with respect to the batch statistics and batch normalization weights.
-- [class MPSCNNInstanceNormalization](mpscnninstancenormalization.md)
+- [class MPSCNNInstanceNormalization](./mpscnninstancenormalization.md)
   An instance normalization kernel.
-- [class MPSCNNInstanceNormalizationGradient](mpscnninstancenormalizationgradient.md)
+- [class MPSCNNInstanceNormalizationGradient](./mpscnninstancenormalizationgradient.md)
   A gradient instance normalization kernel.
-- [class MPSCNNInstanceNormalizationGradientState](mpscnninstancenormalizationgradientstate.md)
+- [class MPSCNNInstanceNormalizationGradientState](./mpscnninstancenormalizationgradientstate.md)
   An object that stores information required to execute a gradient pass for instance normalization.
 
 

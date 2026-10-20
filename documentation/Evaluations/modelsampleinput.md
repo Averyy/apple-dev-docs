@@ -1,7 +1,8 @@
 # ModelSampleInput
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The data a language model receives for evaluation.
 
@@ -40,36 +41,37 @@ synthesizes text representations for display, logging, and synthetic data.
 ## Topics
 
 ### Initializers
-- [init(prompt: Prompt, instructions: Instructions?, generationSchema: GenerationSchema?)](modelsampleinput/init(prompt:instructions:generationschema:).md)
+- [init(prompt: Prompt, instructions: Instructions?, generationSchema: GenerationSchema?)](./modelsampleinput/init%28prompt,instructions,generationschema%29.md)
   Creates a model sample input with the given prompt, instructions, and schema.
 ### Instance Properties
-- [var description: String](modelsampleinput/description.md)
+- [var description: String](./modelsampleinput/description.md)
   A text representation of this input, equivalent to `promptDescription`.
-- [var generationSchema: GenerationSchema?](modelsampleinput/generationschema.md)
+- [var generationSchema: GenerationSchema?](./modelsampleinput/generationschema.md)
   The output schema for the assistant’s response.
-- [var instructions: Instructions?](modelsampleinput/instructions.md)
+- [var instructions: Instructions?](./modelsampleinput/instructions.md)
   The optional FoundationModels instructions for this input.
-- [var instructionsDescription: String?](modelsampleinput/instructionsdescription.md)
+- [var instructionsDescription: String?](./modelsampleinput/instructionsdescription.md)
   A text representation of the instructions, synthesized from instruction segments.
-- [var prompt: Prompt](modelsampleinput/prompt.md)
+- [var prompt: Prompt](./modelsampleinput/prompt.md)
   The FoundationModels prompt for this input.
-- [var promptDescription: String](modelsampleinput/promptdescription.md)
+- [var promptDescription: String](./modelsampleinput/promptdescription.md)
   A text representation of the prompt, synthesized from prompt segments.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ModelSampleOutput](modelsampleoutput.md)
+### Bundled input and output
+- [struct ModelSampleOutput](./modelsampleoutput.md)
   The expected output value and evaluation expectations for a sample.
 
 

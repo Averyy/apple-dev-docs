@@ -1,7 +1,8 @@
 # ContentCachingInformationResponse.StatusResponse.DataMigrationError.UserInfo
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that contains additional information about a data migration error.
 
@@ -10,7 +11,7 @@ A dictionary that contains additional information about a data migration error.
 
 ## Declaration
 
-```swift
+```
 object ContentCachingInformationResponse.StatusResponse.DataMigrationError.UserInfo
 ```
 

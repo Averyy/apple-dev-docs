@@ -1,7 +1,8 @@
 # FontAssoc
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
@@ -12,13 +13,19 @@
 struct FontAssoc
 ```
 
+```c
+typedef struct FontAssoc {
+    ...
+} FontAssoc;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](fontassoc/1462765-init.md)
-- [init(numAssoc: Int16)](fontassoc/1460328-init.md)
+- [init()](./fontassoc/api-1462765-init.md)
+- [init(numAssoc: Int16)](./fontassoc/api-1460328-init.md)
 ### Instance Properties
-- [var numAssoc: Int16](fontassoc/1462375-numassoc.md)
+- [var numAssoc: Int16](./fontassoc/api-1462375-numassoc.md)
 
 
 ---

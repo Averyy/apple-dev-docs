@@ -1,12 +1,13 @@
 # validation
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Validation data.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 14.0
 
 ## Declaration
 
@@ -20,11 +21,12 @@ The default is `.split(strategy: .automatic)`, which automatically generates the
 
 ## See Also
 
-- [var convergenceThreshold: Double](mlsupportvectorclassifier/modelparameters-swift.struct/convergencethreshold.md)
-- [var featureRescaling: Bool](mlsupportvectorclassifier/modelparameters-swift.struct/featurerescaling.md)
-- [var maxIterations: Int](mlsupportvectorclassifier/modelparameters-swift.struct/maxiterations.md)
-- [var penalty: Double](mlsupportvectorclassifier/modelparameters-swift.struct/penalty.md)
-- [var validationData: MLDataTable?](mlsupportvectorclassifier/modelparameters-swift.struct/validationdata-swift.property.md)
+### Accessing parameters
+- [var convergenceThreshold: Double](./convergencethreshold.md)
+- [var featureRescaling: Bool](./featurerescaling.md)
+- [var maxIterations: Int](./maxiterations.md)
+- [var penalty: Double](./penalty.md)
+- [var validationData: MLDataTable?](./validationdata-swift.property.md)
   Validation data represented as a `MLDataTable`.
 
 

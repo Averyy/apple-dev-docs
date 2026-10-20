@@ -1,7 +1,8 @@
 # VNHumanBodyPose3DObservation.JointName
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The joint names for a 3D body pose.
 
@@ -19,79 +20,84 @@ The joint names for a 3D body pose.
 struct JointName
 ```
 
+```c
+typedef VNRecognizedPointKey VNHumanBodyPose3DObservationJointName;
+```
+
 ## Topics
 
 ### Getting the Head Joint Names
-- [static let topHead: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/tophead.md)
+- [static let topHead: VNHumanBodyPose3DObservation.JointName](./jointname/tophead.md)
   A joint name that represents the top of the head.
-- [static let centerHead: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/centerhead.md)
+- [static let centerHead: VNHumanBodyPose3DObservation.JointName](./jointname/centerhead.md)
   A joint name that represents the center of the head.
 ### Getting the Arm Joint Names
-- [static let centerShoulder: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/centershoulder.md)
+- [static let centerShoulder: VNHumanBodyPose3DObservation.JointName](./jointname/centershoulder.md)
   A joint name that represents the point between the shoulders.
-- [static let leftShoulder: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/leftshoulder.md)
+- [static let leftShoulder: VNHumanBodyPose3DObservation.JointName](./jointname/leftshoulder.md)
   A joint name that represents the left shoulder.
-- [static let rightShoulder: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/rightshoulder.md)
+- [static let rightShoulder: VNHumanBodyPose3DObservation.JointName](./jointname/rightshoulder.md)
   A joint name that represents the right shoulder.
-- [static let leftElbow: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/leftelbow.md)
+- [static let leftElbow: VNHumanBodyPose3DObservation.JointName](./jointname/leftelbow.md)
   A joint name that represents the left elbow.
-- [static let rightElbow: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/rightelbow.md)
+- [static let rightElbow: VNHumanBodyPose3DObservation.JointName](./jointname/rightelbow.md)
   A joint name that represents the right elbow.
-- [static let leftWrist: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/leftwrist.md)
+- [static let leftWrist: VNHumanBodyPose3DObservation.JointName](./jointname/leftwrist.md)
   A joint name that represents the left wrist.
-- [static let rightWrist: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/rightwrist.md)
+- [static let rightWrist: VNHumanBodyPose3DObservation.JointName](./jointname/rightwrist.md)
   A joint name that represents the right wrist.
 ### Getting the Leg Joint Names
-- [static let leftHip: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/lefthip.md)
+- [static let leftHip: VNHumanBodyPose3DObservation.JointName](./jointname/lefthip.md)
   A joint name that represents the left hip.
-- [static let rightHip: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/righthip.md)
+- [static let rightHip: VNHumanBodyPose3DObservation.JointName](./jointname/righthip.md)
   A joint name that represents the right hip.
-- [static let leftKnee: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/leftknee.md)
+- [static let leftKnee: VNHumanBodyPose3DObservation.JointName](./jointname/leftknee.md)
   A joint name that represents the left knee.
-- [static let rightKnee: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/rightknee.md)
+- [static let rightKnee: VNHumanBodyPose3DObservation.JointName](./jointname/rightknee.md)
   A joint name that represents the right knee.
-- [static let leftAnkle: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/leftankle.md)
+- [static let leftAnkle: VNHumanBodyPose3DObservation.JointName](./jointname/leftankle.md)
   A joint name that represents the left ankle.
-- [static let rightAnkle: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/rightankle.md)
+- [static let rightAnkle: VNHumanBodyPose3DObservation.JointName](./jointname/rightankle.md)
   A joint name that represents the right ankle.
 ### Getting the Root Joint Name
-- [static let root: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/root.md)
+- [static let root: VNHumanBodyPose3DObservation.JointName](./jointname/root.md)
   A joint name that represents the point between the left hip and right hip.
 ### Getting the Spine
-- [static let spine: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/spine.md)
+- [static let spine: VNHumanBodyPose3DObservation.JointName](./jointname/spine.md)
   A joint name that represents the spine.
 ### Creating a Joint Name
-- [init(rawValue: VNRecognizedPointKey)](vnhumanbodypose3dobservation/jointname/init(rawvalue:).md)
+- [init(rawValue: VNRecognizedPointKey)](./jointname/init%28rawvalue%29.md)
   Creates a joint name with the key you specify.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Identifying 3D human body poses in images](identifying-3d-human-body-poses-in-images.md)
+### 3D body pose detection
+- [Identifying 3D human body poses in images](../identifying-3d-human-body-poses-in-images.md)
   Detect three-dimensional human body poses using the Vision framework.
-- [Detecting human body poses in 3D with Vision](detecting-human-body-poses-in-3d-with-vision.md)
+- [Detecting human body poses in 3D with Vision](../detecting-human-body-poses-in-3d-with-vision.md)
   Render skeletons of 3D body pose points in a scene overlaying the input image.
-- [class VNDetectHumanBodyPose3DRequest](vndetecthumanbodypose3drequest.md)
+- [class VNDetectHumanBodyPose3DRequest](../vndetecthumanbodypose3drequest.md)
   A request that detects points on human bodies in 3D space, relative to the camera.
-- [class VNHumanBodyPose3DObservation](vnhumanbodypose3dobservation.md)
+- [class VNHumanBodyPose3DObservation](../vnhumanbodypose3dobservation.md)
   An observation that provides the 3D body points the request recognizes.
-- [class VNRecognizedPoints3DObservation](vnrecognizedpoints3dobservation.md)
+- [class VNRecognizedPoints3DObservation](../vnrecognizedpoints3dobservation.md)
   An observation that provides the 3D points for a request.
-- [class VNHumanBodyRecognizedPoint3D](vnhumanbodyrecognizedpoint3d.md)
+- [class VNHumanBodyRecognizedPoint3D](../vnhumanbodyrecognizedpoint3d.md)
   A recognized 3D point that includes a parent joint.
-- [class VNPoint3D](vnpoint3d.md)
+- [class VNPoint3D](../vnpoint3d.md)
   An object that represents a 3D point in an image.
-- [class VNRecognizedPoint3D](vnrecognizedpoint3d.md)
+- [class VNRecognizedPoint3D](../vnrecognizedpoint3d.md)
   A 3D point that includes an identifier to the point.
-- [VNHumanBodyPose3DObservation.JointsGroupName](vnhumanbodypose3dobservation/jointsgroupname.md)
+- [VNHumanBodyPose3DObservation.JointsGroupName](./jointsgroupname.md)
   The joint group names for a 3D body pose.
 
 

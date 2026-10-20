@@ -1,7 +1,8 @@
 # min
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The minimum representable integer in this type.
 

@@ -1,7 +1,8 @@
 # skeleton
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that contains the screen position of a body’s joints.
 
@@ -13,6 +14,10 @@ An object that contains the screen position of a body’s joints.
 
 ```swift
 var skeleton: ARSkeleton2D { get }
+```
+
+```objc
+@property (nonatomic, readonly) ARSkeleton2D * skeleton;
 ```
 
 

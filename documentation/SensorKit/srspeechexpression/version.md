@@ -1,7 +1,8 @@
 # version
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of the algorithm that the system uses to generate the metrics and analytics.
 
@@ -16,9 +17,14 @@ The version of the algorithm that the system uses to generate the metrics and an
 var version: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * version;
+```
+
 ## See Also
 
-- [var timeRange: CMTimeRange](srspeechexpression/timerange.md)
+### Getting speech metrics
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range in the audio stream that the metrics and analytics apply to.
 
 

@@ -1,21 +1,22 @@
 # InAppPurchaseAvailability.Relationships.AvailableTerritories
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.3+
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseAvailability.Relationships.AvailableTerritories
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseAvailability.Relationships.AvailableTerritories.Data](inapppurchaseavailability/relationships-data.dictionary/availableterritories-data.dictionary/data-data.dictionary.md)
+- [object InAppPurchaseAvailability.Relationships.AvailableTerritories.Data](./availableterritories-data.dictionary/data-data.dictionary.md)
   The request body you use to update an In-App Purchase availability.
 
 ## Properties

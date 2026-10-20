@@ -1,7 +1,8 @@
 # Entity
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An element of a RealityKit scene to which you attach components that provide appearance and behavior characteristics for the entity.
 
@@ -11,7 +12,7 @@ An element of a RealityKit scene to which you attach components that provide app
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,270 +23,271 @@ An element of a RealityKit scene to which you attach components that provide app
 
 ## Mentions
 
-- [Improving the Accessibility of RealityKit Apps](improving-the-accessibility-of-realitykit-apps.md)
-- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+- [Improving the Accessibility of RealityKit Apps](./improving-the-accessibility-of-realitykit-apps.md)
+- [Automatically animating RealityKit entities](./automatically-animating-realitykit-entities.md)
 
 #### Overview
 
-You create and configure entities to embody objects that you want to place in the real world in an AR app. You do this by adding [`Entity`](entity.md) instances to the [`Scene`](scene.md) instance associated with an [`ARView`](arview.md).
+You create and configure entities to embody objects that you want to place in the real world in an AR app. You do this by adding [`Entity`](./entity.md) instances to the [`Scene`](./scene.md) instance associated with an [`ARView`](./arview.md).
 
-RealityKit defines a few concrete subclasses of [`Entity`](entity.md) that provide commonly used functionality. For example, you typically start by creating an instance of [`AnchorEntity`](anchorentity.md) to anchor your content, and add the anchor to a scene’s [`anchors`](scene/anchors.md) collection. You might then instantiate a [`ModelEntity`](modelentity.md) to represent a physical object in the scene, and add that as a child entity to the anchor. You can also create custom entities, and add them either to an anchor, or as children of another entity.
+RealityKit defines a few concrete subclasses of [`Entity`](./entity.md) that provide commonly used functionality. For example, you typically start by creating an instance of [`AnchorEntity`](./anchorentity.md) to anchor your content, and add the anchor to a scene’s [`anchors`](./scene/anchors.md) collection. You might then instantiate a [`ModelEntity`](./modelentity.md) to represent a physical object in the scene, and add that as a child entity to the anchor. You can also create custom entities, and add them either to an anchor, or as children of another entity.
 
-![Block diagram showing how entity hierarchies, composed of different kinds](/images/com.apple.RealityKit/Entity-1@2x.png)
+![Block diagram showing how entity hierarchies, composed of different kinds](https://developer.apple.com/tutorials/images/com.apple.RealityKit/Entity-1@2x.png)
 
-You can load predefined entities or a hierarchy of entities from your app’s bundle, or from a file on disk, using the methods in [`Stored entities`](stored-entities.md). Alternatively, you can create entities programmatically.
+You can load predefined entities or a hierarchy of entities from your app’s bundle, or from a file on disk, using the methods in [Stored entities](./stored-entities.md). Alternatively, you can create entities programmatically.
 
-Entities contain components (instances conforming to the [`Component`](component.md) protocol) that provide appearance and behaviors for the entity. For example, the [`Transform`](transform.md) component contains the scale, rotation, and translation information needed to position an entity in space. You store components in the entity’s [`components`](entity/components.md) collection, which can hold exactly one of any component type. It makes sense to have only a single [`Transform`](transform.md) component, one [`ModelComponent`](modelcomponent.md) (specifying the visual appearance of the entity), and so on.
+Entities contain components (instances conforming to the [`Component`](./component.md) protocol) that provide appearance and behaviors for the entity. For example, the [`Transform`](./transform.md) component contains the scale, rotation, and translation information needed to position an entity in space. You store components in the entity’s [`components`](./entity/components.md) collection, which can hold exactly one of any component type. It makes sense to have only a single [`Transform`](./transform.md) component, one [`ModelComponent`](./modelcomponent.md) (specifying the visual appearance of the entity), and so on.
 
-![Diagram showing the components present in the base entity class, as well](/images/com.apple.RealityKit/Entity-2@2x.png)
+![Diagram showing the components present in the base entity class, as well](https://developer.apple.com/tutorials/images/com.apple.RealityKit/Entity-2@2x.png)
 
-All entities inherit a few common components from the [`Entity`](entity.md) base class: the [`Transform`](transform.md) component for spatial positioning, and [`SynchronizationComponent`](synchronizationcomponent.md), which enables synchronization of the entity among networked peers. Specific types of entities define additional behaviors. For example, the model entity has components for visual appearance ([`ModelComponent`](modelcomponent.md)), collision detection ([`CollisionComponent`](collisioncomponent.md)), and physics simulations ([`PhysicsBodyComponent`](physicsbodycomponent.md) and [`PhysicsMotionComponent`](physicsmotioncomponent.md)).
+All entities inherit a few common components from the [`Entity`](./entity.md) base class: the [`Transform`](./transform.md) component for spatial positioning, and [`SynchronizationComponent`](./synchronizationcomponent.md), which enables synchronization of the entity among networked peers. Specific types of entities define additional behaviors. For example, the model entity has components for visual appearance ([`ModelComponent`](./modelcomponent.md)), collision detection ([`CollisionComponent`](./collisioncomponent.md)), and physics simulations ([`PhysicsBodyComponent`](./physicsbodycomponent.md) and [`PhysicsMotionComponent`](./physicsmotioncomponent.md)).
 
 ## Topics
 
 ### Creating an entity
-- [init()](entity/init.md)
+- [init()](./entity/init%28%29.md)
   Creates a new entity.
-- [convenience init(components: [any Component])](entity/init(components:)-1lmhe.md)
+- [convenience init(components: [any Component])](./entity/init%28components%29-1lmhe.md)
   Creates an entity with multiple components.
-- [convenience init(components: [any Component])](entity/init(components:)-1lmhe.md)
+- [convenience init(components: [any Component])](./entity/init%28components%29-1lmhe.md)
   Creates an entity with multiple components.
-- [func clone(recursive: Bool) -> Self](entity/clone(recursive:).md)
+- [func clone(recursive: Bool) -> Self](./entity/clone%28recursive%29.md)
   Duplicates an entity to create a new entity.
-- [func didClone(from: Entity)](entity/didclone(from:).md)
+- [func didClone(from: Entity)](./entity/didclone%28from%29.md)
   Tells a newly cloned entity that cloning is complete.
 ### Loading an entity from a file
-- [Generating procedural textures](../visionos/generating-procedural-textures-in-visionos.md)
+- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
   Display a 3D model that generates procedural textures in a reality view.
-- [protocol Resource](resource.md)
+- [protocol Resource](./resource.md)
   A shared resource you use to configure a component, like a material, mesh, or texture.
-- [Loading entities from a file](loading-entities-from-a-file.md)
+- [Loading entities from a file](./loading-entities-from-a-file.md)
   Retrieve an entity from storage on disk using a synchronous or an asynchronous load operation.
-- [Stored entities](stored-entities.md)
+- [Stored entities](./stored-entities.md)
   Manage entities that you store as assets on disk.
-- [Creating USD files for Apple devices](../usd/creating-usd-files-for-apple-devices.md)
+- [Creating USD files for Apple devices](../USD/creating-usd-files-for-apple-devices.md)
   Generate 3D assets that render as expected.
-- [convenience init(contentsOf: URL, withName: String?) async throws](entity/init(contentsof:withname:).md)
+- [convenience init(contentsOf: URL, withName: String?) async throws](./entity/init%28contentsof,withname%29.md)
   Creates an entity by asynchronously loading it from a file URL.
-- [convenience init(named: String, in: Bundle?) async throws](entity/init(named:in:).md)
+- [convenience init(named: String, in: Bundle?) async throws](./entity/init%28named,in%29.md)
   Creates an entity by asynchronously loading it from a bundle.
-- [struct ReferenceComponent](referencecomponent.md)
+- [struct ReferenceComponent](./referencecomponent.md)
   A component that can load another entity from a file.
 ### Loading an entity from a configuration catalog
-- [convenience init(from: Entity.ConfigurationCatalog, configurations: [String : String]?) async throws](entity/init(from:configurations:).md)
+- [convenience init(from: Entity.ConfigurationCatalog, configurations: [String : String]?) async throws](./entity/init%28from,configurations%29.md)
   Loads an entity from a configuration catalog and a dictionary of configuration choices.
-- [Entity.ConfigurationCatalog](entity/configurationcatalog.md)
+- [Entity.ConfigurationCatalog](./entity/configurationcatalog.md)
   A collection of alternative representations of an entity you can choose from.
 ### Positioning entities in space
-- [protocol HasTransform](hastransform.md)
+- [protocol HasTransform](./hastransform.md)
   An interface that enables manipulating the scale, rotation, and translation of an entity.
-- [struct Transform](transform.md)
+- [struct Transform](./transform.md)
   A component that defines the scale, rotation, and translation of an entity.
-- [func transformMatrix(relativeTo: Entity.CoordinateSpaceReference) -> float4x4?](entity/transformmatrix(relativeto:).md)
+- [func transformMatrix(relativeTo: Entity.CoordinateSpaceReference) -> float4x4?](./entity/transformmatrix%28relativeto%29.md)
   Returns the 4 x 4 transform matrix of an entity relative to the given coordinate space.
-- [Entity.CoordinateSpaceReference](entity/coordinatespacereference.md)
+- [Entity.CoordinateSpaceReference](./entity/coordinatespacereference.md)
   Defines the coordinate space reference for transform conversion.
-- [Entity.ForwardDirection](entity/forwarddirection.md)
+- [Entity.ForwardDirection](./entity/forwarddirection.md)
   Defines the forward direction for an entity.
 ### Relating entities
-- [var parameters: Entity.ParameterSet](entity/parameters.md)
+- [var parameters: Entity.ParameterSet](./entity/parameters.md)
   Represents a reference to the parameters for a particular entity.
-- [Entity.ChildCollection](entity/childcollection.md)
+- [Entity.ChildCollection](./entity/childcollection.md)
   A collection of child entities.
-- [protocol HasHierarchy](hashierarchy.md)
+- [protocol HasHierarchy](./hashierarchy.md)
   An interface that provides access to a parent entity and child entities.
 ### Managing components
-- [var components: Entity.ComponentSet](entity/components.md)
+- [var components: Entity.ComponentSet](./entity/components.md)
   All the components that an entity stores.
-- [Entity.ComponentSet](entity/componentset.md)
+- [Entity.ComponentSet](./entity/componentset.md)
   A collection of components that an entity stores.
 ### Inspecting an entity
-- [var scene: Scene?](entity/scene.md)
+- [var scene: Scene?](./entity/scene.md)
   The scene that owns the entity.
-- [var name: String](entity/name.md)
+- [var name: String](./entity/name.md)
   The name of the entity.
-- [func findEntity(named: String) -> Entity?](entity/findentity(named:).md)
+- [func findEntity(named: String) -> Entity?](./entity/findentity%28named%29.md)
   Recursively searches all descendant entities for one with the given name.
-- [var debugDescription: String](entity/debugdescription.md)
+- [var debugDescription: String](./entity/debugdescription.md)
   A human readable description of the entity.
 ### Managing the entity’s state
-- [var isEnabled: Bool](entity/isenabled.md)
+- [var isEnabled: Bool](./entity/isenabled.md)
   A Boolean that you set to enable or disable the entity and its descendants.
-- [var isEnabledInHierarchy: Bool](entity/isenabledinhierarchy.md)
+- [var isEnabledInHierarchy: Bool](./entity/isenabledinhierarchy.md)
   A Boolean that indicates whether the entity and all of its ancestors are enabled.
-- [var isActive: Bool](entity/isactive.md)
+- [var isActive: Bool](./entity/isactive.md)
   A Boolean that indicates whether the entity is active.
-- [var isAnchored: Bool](entity/isanchored.md)
+- [var isAnchored: Bool](./entity/isanchored.md)
   A Boolean that indicates whether the entity is anchored.
 ### Synchronizing entities with other devices
-- [struct SynchronizationComponent](synchronizationcomponent.md)
+- [struct SynchronizationComponent](./synchronizationcomponent.md)
   A component that synchronizes an entity between processes and networked applications.
 ### Finding the nearest anchor
-- [var anchor: (any HasAnchoring)?](entity/anchor.md)
+- [var anchor: (any HasAnchoring)?](./entity/anchor.md)
   The nearest ancestor entity that can act as an anchor.
 ### Creating a collision shape
-- [func generateCollisionShapes(recursive: Bool)](entity/generatecollisionshapes(recursive:).md)
+- [func generateCollisionShapes(recursive: Bool)](./entity/generatecollisionshapes%28recursive%29.md)
   Creates the shape used to detect collisions between two entities that have collision components.
-- [func generateCollisionShapes(recursive: Bool, static: Bool)](entity/generatecollisionshapes(recursive:static:).md)
+- [func generateCollisionShapes(recursive: Bool, static: Bool)](./entity/generatecollisionshapes%28recursive,static%29.md)
   Creates the shape used to detect collisions between two entities that have collision components.
 ### Animating an entity
-- [var availableAnimations: [AnimationResource]](entity/availableanimations.md)
+- [var availableAnimations: [AnimationResource]](./entity/availableanimations.md)
   The list of animations associated with the entity.
-- [func playAnimation(AnimationResource, transitionDuration: TimeInterval, blendLayerOffset: Int, separateAnimatedValue: Bool, startsPaused: Bool, clock: CMClockOrTimebase?) -> AnimationPlaybackController](entity/playanimation(_:transitionduration:blendlayeroffset:separateanimatedvalue:startspaused:clock:).md)
+- [func playAnimation(AnimationResource, transitionDuration: TimeInterval, blendLayerOffset: Int, separateAnimatedValue: Bool, startsPaused: Bool, clock: CMClockOrTimebase?) -> AnimationPlaybackController](./entity/playanimation%28_,transitionduration,blendlayeroffset,separateanimatedvalue,startspaused,clock%29.md)
   Plays an animation with the specified options.
-- [func playAnimation(AnimationResource, transitionDuration: TimeInterval, blendLayerOffset: Int, separateAnimatedValue: Bool, startsPaused: Bool, clock: CMClockOrTimebase?, handoffType: AnimationHandoffType) -> AnimationPlaybackController](entity/playanimation(_:transitionduration:blendlayeroffset:separateanimatedvalue:startspaused:clock:handofftype:).md)
+- [func playAnimation(AnimationResource, transitionDuration: TimeInterval, blendLayerOffset: Int, separateAnimatedValue: Bool, startsPaused: Bool, clock: CMClockOrTimebase?, handoffType: AnimationHandoffType) -> AnimationPlaybackController](./entity/playanimation%28_,transitionduration,blendlayeroffset,separateanimatedvalue,startspaused,clock,handofftype%29.md)
   Plays an animation with the specified options.
-- [func playAnimation(AnimationResource, transitionDuration: TimeInterval, startsPaused: Bool) -> AnimationPlaybackController](entity/playanimation(_:transitionduration:startspaused:).md)
+- [func playAnimation(AnimationResource, transitionDuration: TimeInterval, startsPaused: Bool) -> AnimationPlaybackController](./entity/playanimation%28_,transitionduration,startspaused%29.md)
   Plays the given animation on the entity.
-- [func stopAllAnimations(recursive: Bool)](entity/stopallanimations(recursive:).md)
+- [func stopAllAnimations(recursive: Bool)](./entity/stopallanimations%28recursive%29.md)
   Stops all playing of animations on this entity.
-- [var defaultAnimationClock: CMClockOrTimebase](entity/defaultanimationclock.md)
+- [var defaultAnimationClock: CMClockOrTimebase](./entity/defaultanimationclock.md)
   Returns the default animation clock for this entity.
-- [var parameters: Entity.ParameterSet](entity/parameters.md)
+- [var parameters: Entity.ParameterSet](./entity/parameters.md)
   Represents a reference to the parameters for a particular entity.
-- [Entity.ParameterSet](entity/parameterset.md)
+- [Entity.ParameterSet](./entity/parameterset.md)
   Represents a reference to the parameters for a particular entity.
-- [func playAnimation(named: String, transitionDuration: TimeInterval, startsPaused: Bool, recursive: Bool) -> AnimationPlaybackController](entity/playanimation(named:transitionduration:startspaused:recursive:).md)
+- [func playAnimation(named: String, transitionDuration: TimeInterval, startsPaused: Bool, recursive: Bool) -> AnimationPlaybackController](./entity/playanimation%28named,transitionduration,startspaused,recursive%29.md)
   Plays all the animations with the given name on the entity.
-- [var bindableValues: BindableValuesReference](entity/bindablevalues.md)
-- [subscript(BindTarget.EntityPath) -> Entity?](entity/subscript(_:).md)
+- [var bindableValues: BindableValuesReference](./entity/bindablevalues.md)
+- [subscript(BindTarget.EntityPath) -> Entity?](./entity/subscript%28_%29.md)
   Resolves the entity from the given entity path.
 ### Animating and controlling characters
-- [var characterController: CharacterControllerComponent?](entity/charactercontroller.md)
+- [var characterController: CharacterControllerComponent?](./entity/charactercontroller.md)
   The character controller component for the entity.
-- [var characterControllerState: CharacterControllerStateComponent?](entity/charactercontrollerstate.md)
+- [var characterControllerState: CharacterControllerStateComponent?](./entity/charactercontrollerstate.md)
   The character controller state for  the entity.
-- [func moveCharacter(by: SIMD3<Float>, deltaTime: Float, relativeTo: Entity?, collisionHandler: ((CharacterControllerComponent.Collision) -> Void)?) -> CharacterControllerComponent.CollisionFlags](entity/movecharacter(by:deltatime:relativeto:collisionhandler:).md)
+- [func moveCharacter(by: SIMD3<Float>, deltaTime: Float, relativeTo: Entity?, collisionHandler: ((CharacterControllerComponent.Collision) -> Void)?) -> CharacterControllerComponent.CollisionFlags](./entity/movecharacter%28by,deltatime,relativeto,collisionhandler%29.md)
   Moves the character along a specified vector over a period of time.
-- [func teleportCharacter(to: SIMD3<Float>, relativeTo: Entity?)](entity/teleportcharacter(to:relativeto:).md)
+- [func teleportCharacter(to: SIMD3<Float>, relativeTo: Entity?)](./entity/teleportcharacter%28to,relativeto%29.md)
   Moves the character instantly to a new position.
 ### Playing audio
-- [func playAudio(AudioResource) -> AudioPlaybackController](entity/playaudio(_:).md)
+- [func playAudio(AudioResource) -> AudioPlaybackController](./entity/playaudio%28_%29.md)
   Prepares and plays a new audio playback instance on this entity.
-- [func playAudio(configuration: AudioGeneratorConfiguration, Audio.GeneratorRenderHandler) throws -> AudioGeneratorController](entity/playaudio(configuration:_:).md)
+- [func playAudio(configuration: AudioGeneratorConfiguration, Audio.GeneratorRenderHandler) throws -> AudioGeneratorController](./entity/playaudio%28configuration,_%29.md)
   Prepares and plays a real-time audio playback instance.
-- [func prepareAudio(configuration: AudioGeneratorConfiguration, Audio.GeneratorRenderHandler) throws -> AudioGeneratorController](entity/prepareaudio(configuration:_:).md)
+- [func prepareAudio(configuration: AudioGeneratorConfiguration, Audio.GeneratorRenderHandler) throws -> AudioGeneratorController](./entity/prepareaudio%28configuration,_%29.md)
   Prepares a real-time audio playback instances.
-- [func prepareAudio(AudioResource) -> AudioPlaybackController](entity/prepareaudio(_:).md)
+- [func prepareAudio(AudioResource) -> AudioPlaybackController](./entity/prepareaudio%28_%29.md)
   Prepares an audio resource for playback.
-- [func stopAllAudio()](entity/stopallaudio.md)
+- [func stopAllAudio()](./entity/stopallaudio%28%29.md)
   Stops playback for all audio on this entity.
-- [var spatialAudio: SpatialAudioComponent?](entity/spatialaudio.md)
+- [var spatialAudio: SpatialAudioComponent?](./entity/spatialaudio.md)
   The component that configures the spatial rendering of sounds from this entity.
-- [var ambientAudio: AmbientAudioComponent?](entity/ambientaudio.md)
+- [var ambientAudio: AmbientAudioComponent?](./entity/ambientaudio.md)
   The component that configures the ambient rendering of sounds from this entity.
-- [var channelAudio: ChannelAudioComponent?](entity/channelaudio.md)
+- [var channelAudio: ChannelAudioComponent?](./entity/channelaudio.md)
   The component that configures the channel-based rendering of sounds from this entity.
 ### Saving an entity and its descendants
-- [func write(to: URL) async throws](entity/write(to:).md)
+- [func write(to: URL) async throws](./entity/write%28to%29.md)
   Exports the entity as a RealityKit file to a location in the file system.
 ### Configuring accessibility features
-- [Improving the Accessibility of RealityKit Apps](improving-the-accessibility-of-realitykit-apps.md)
+- [Improving the Accessibility of RealityKit Apps](./improving-the-accessibility-of-realitykit-apps.md)
   Incorporate assistive technologies in your augmented reality app.
-- [var isAccessibilityElement: Bool](entity/isaccessibilityelement.md)
+- [var isAccessibilityElement: Bool](./entity/isaccessibilityelement.md)
   A Boolean value indicating whether the receiver is an accessibility element that an assistive application can access.
-- [var accessibilityLabelKey: LocalizedStringResource?](entity/accessibilitylabelkey.md)
+- [var accessibilityLabelKey: LocalizedStringResource?](./entity/accessibilitylabelkey.md)
   A succinct label that identifies the entity, in a localized string key.
-- [var accessibilityCustomActions: [LocalizedStringResource]](entity/accessibilitycustomactions.md)
+- [var accessibilityCustomActions: [LocalizedStringResource]](./entity/accessibilitycustomactions.md)
   An array of custom actions supported by the entity, identified by their localized string key.
-- [var accessibilityCustomContent: [AccessibilityComponent.CustomContent]](entity/accessibilitycustomcontent.md)
+- [var accessibilityCustomContent: [AccessibilityComponent.CustomContent]](./entity/accessibilitycustomcontent.md)
   The Custom Content API is useful for delivering accessibility information from complex data sets to your users in measured portions. Using this API allows you to leverage assistive technologies to present only the accessible content your app’s users need, when they need it.
-- [var accessibilityCustomRotors: [AccessibilityComponent.RotorType]](entity/accessibilitycustomrotors.md)
+- [var accessibilityCustomRotors: [AccessibilityComponent.RotorType]](./entity/accessibilitycustomrotors.md)
   An array of supported rotors.
-- [var accessibilityLabelKey: LocalizedStringResource?](entity/accessibilitylabelkey.md)
+- [var accessibilityLabelKey: LocalizedStringResource?](./entity/accessibilitylabelkey.md)
   A succinct label that identifies the entity, in a localized string key.
-- [var accessibilitySystemActions: AccessibilityComponent.SupportedActions](entity/accessibilitysystemactions.md)
+- [var accessibilitySystemActions: AccessibilityComponent.SupportedActions](./entity/accessibilitysystemactions.md)
   The set of supported accessibility actions.
-- [var accessibilityTraits: UIAccessibilityTraits](entity/accessibilitytraits.md)
+- [var accessibilityTraits: UIAccessibilityTraits](./entity/accessibilitytraits.md)
   The combination of accessibility traits that best characterize the entity.
-- [var accessibilityValue: LocalizedStringResource?](entity/accessibilityvalue.md)
+- [var accessibilityValue: LocalizedStringResource?](./entity/accessibilityvalue.md)
   A localized string key that represents the current value of the entity.
-- [var accessibilityDescription: String?](entity/accessibilitydescription.md)
+- [var accessibilityDescription: String?](./entity/accessibilitydescription.md)
   A longer description of the entity for use by assistive technologies.
-- [var accessibilityLabel: String?](entity/accessibilitylabel.md)
+- [var accessibilityLabel: String?](./entity/accessibilitylabel.md)
   A succinct label that identifies the purpose of the image.
-- [var accessibilityDescription: String?](entity/accessibilitydescription.md)
+- [var accessibilityDescription: String?](./entity/accessibilitydescription.md)
   A longer description of the entity for use by assistive technologies.
 ### Creating an entity from data
-- [convenience init(from: Data, named: String?, contentType: UTType) async throws](entity/init(from:named:contenttype:).md)
+- [convenience init(from: Data, named: String?, contentType: UTType) async throws](./entity/init%28from,named,contenttype%29.md)
   Creates an entity by asynchronously loading it from the in-memory contents of a file stored in a Data object.
 ### Writing an entity to a file
-- [func write(to: URL, options: Entity.WriteOptions) async throws](entity/write(to:options:).md)
-- [static func write([Entity], to: URL, options: Entity.WriteOptions) async throws](entity/write(_:to:options:).md)
+- [func write(to: URL, options: Entity.WriteOptions) async throws](./entity/write%28to,options%29.md)
+- [static func write([Entity], to: URL, options: Entity.WriteOptions) async throws](./entity/write%28_,to,options%29.md)
   Exports an array of entities as separate scenes within a single RealityKit file.
-- [Entity.WriteOptions](entity/writeoptions.md)
+- [Entity.WriteOptions](./entity/writeoptions.md)
   A set of options that control how RealityKit writes entities to a reality file.
 ### Playing spatial audio
-- [func playAudio(AudioResource, at: AVAudioTime) throws -> AudioPlaybackController](entity/playaudio(_:at:).md)
+- [func playAudio(AudioResource, at: AVAudioTime) throws -> AudioPlaybackController](./entity/playaudio%28_,at%29.md)
   Asynchronously prepares and plays a new audio playback instance at a specified time on this entity.
 ### Structures
-- [Entity.Observable](entity/observable-swift.struct.md)
+- [Entity.Observable](./entity/observable-swift.struct.md)
   An observable interface to an entity’s properties and components, enabling reactive updates using Swift’s Observation framework.
 ### Initializers
-- [convenience(components:)](entity/init(components:).md)
+- [convenience(components:)](./entity/init%28components%29.md)
   Creates an entity with multiple components.
-- [convenience init(from: Data, named: String?) async throws](entity/init(from:named:).md)
+- [convenience init(from: Data, named: String?) async throws](./entity/init%28from,named%29.md)
   Creates an entity by asynchronously loading it from the in-memory contents of a file stored in a Data object.
 ### Instance Properties
-- [var observable: Entity.Observable](entity/observable-swift.property.md)
+- [var observable: Entity.Observable](./entity/observable-swift.property.md)
   The version of the entity observable by Swift.
-- [var pins: EntityGeometricPins](entity/pins.md)
+- [var pins: EntityGeometricPins](./entity/pins.md)
   The entity’s geometric pins.
 ### Instance Methods
-- [func applyTapForBehaviors() -> Bool](entity/applytapforbehaviors.md)
+- [func applyTapForBehaviors() -> Bool](./entity/applytapforbehaviors%28%29.md)
   Apply a tap to an Entity or one of its ancestors to trigger a RealityComposer behavior if one is present.
-- [func attach(GeometricPin?, to: GeometricPin)](entity/attach(_:to:).md)
+- [func attach(GeometricPin?, to: GeometricPin)](./entity/attach%28_,to%29.md)
   Attach an entity to a target pin owned by another entity with an optional specified source pin This utility function has the same effect of adding an AttachedTransformComponent created with the same parameter to the entity you are calling upon
 ### Type Methods
-- [static func animate(Animation, body: () -> Void, completion: (() -> Void)?)](entity/animate(_:body:completion:).md)
+- [static func animate(Animation, body: () -> Void, completion: (() -> Void)?)](./entity/animate%28_,body,completion%29.md)
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](entity/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](entity/equatable-implementations.md)
-- [Hashable Implementations](entity/hashable-implementations.md)
+- [CustomDebugStringConvertible Implementations](./entity/customdebugstringconvertible-implementations.md)
+- [Equatable Implementations](./entity/equatable-implementations.md)
+- [Hashable Implementations](./entity/hashable-implementations.md)
 
 ## Relationships
 
 ### Inherited By
-- [AnchorEntity](anchorentity.md)
-- [BodyTrackedEntity](bodytrackedentity.md)
-- [DirectionalLight](directionallight.md)
-- [HasAnchoring](hasanchoring.md)
-- [HasHierarchy](hashierarchy.md)
-- [HasPhysicsMotion](hasphysicsmotion.md)
-- [HasSceneUnderstanding](hassceneunderstanding.md)
-- [HasSynchronization](hassynchronization.md)
-- [HasTransform](hastransform.md)
-- [ModelEntity](modelentity.md)
-- [PerspectiveCamera](perspectivecamera.md)
-- [PointLight](pointlight.md)
-- [SpotLight](spotlight.md)
-- [TriggerVolume](triggervolume.md)
-- [ViewAttachmentEntity](viewattachmententity.md)
+- [AnchorEntity](./anchorentity.md)
+- [BodyTrackedEntity](./bodytrackedentity.md)
+- [DirectionalLight](./directionallight.md)
+- [HasAnchoring](./hasanchoring.md)
+- [HasHierarchy](./hashierarchy.md)
+- [HasPhysicsMotion](./hasphysicsmotion.md)
+- [HasSceneUnderstanding](./hassceneunderstanding.md)
+- [HasSynchronization](./hassynchronization.md)
+- [HasTransform](./hastransform.md)
+- [ModelEntity](./modelentity.md)
+- [PerspectiveCamera](./perspectivecamera.md)
+- [PointLight](./pointlight.md)
+- [SpotLight](./spotlight.md)
+- [TriggerVolume](./triggervolume.md)
+- [ViewAttachmentEntity](./viewattachmententity.md)
 ### Conforms To
-- [CoordinateSpace3D](../spatial/coordinatespace3d.md)
-- [CoordinateSpace3DFloat](../spatial/coordinatespace3dfloat.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [EventSource](eventsource.md)
-- [HasHierarchy](hashierarchy.md)
-- [HasSynchronization](hassynchronization.md)
-- [HasTransform](hastransform.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Observable](../observation/observable.md)
-- [RealityCoordinateSpace](realitycoordinatespace.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CoordinateSpace3D](../Spatial/coordinatespace3d.md)
+- [CoordinateSpace3DFloat](../Spatial/coordinatespace3dfloat.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [EventSource](./eventsource.md)
+- [HasHierarchy](./hashierarchy.md)
+- [HasSynchronization](./hassynchronization.md)
+- [HasTransform](./hastransform.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Observable](../Observation/observable.md)
+- [RealityCoordinateSpace](./realitycoordinatespace.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Understanding the modular architecture of RealityKit](../visionos/understanding-the-realitykit-modular-architecture.md)
+### Essentials
+- [Understanding the modular architecture of RealityKit](../visionOS/understanding-the-realitykit-modular-architecture.md)
   Learn how everything fits together in RealityKit.
-- [Building an immersive experience with RealityKit](building-an-immersive-experience-with-realitykit.md)
+- [Building an immersive experience with RealityKit](./building-an-immersive-experience-with-realitykit.md)
   Use systems and postprocessing effects to create a realistic underwater scene.
-- [protocol Component](component.md)
+- [protocol Component](./component.md)
   A representation of a geometry or a behavior that you apply to an entity.
 
 

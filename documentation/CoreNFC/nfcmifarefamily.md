@@ -1,7 +1,8 @@
 # NFCMiFareFamily
 
 **Framework**: Core NFC  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Identifiers for the MIFARE product families.
 
@@ -16,37 +17,42 @@ Identifiers for the MIFARE product families.
 enum NFCMiFareFamily
 ```
 
+```c
+enum NFCMiFareFamily : NSUInteger;
+```
+
 ## Topics
 
 ### Product Families
-- [NFCMiFareFamily.unknown](nfcmifarefamily/unknown.md)
+- [NFCMiFareFamily.unknown](./nfcmifarefamily/unknown.md)
   An identifier that indicates a compatible ISO14443 Type A tag.
-- [NFCMiFareFamily.ultralight](nfcmifarefamily/ultralight.md)
+- [NFCMiFareFamily.ultralight](./nfcmifarefamily/ultralight.md)
   An identifier that indicates the MIFARE Ultralight® product family.
-- [NFCMiFareFamily.plus](nfcmifarefamily/plus.md)
+- [NFCMiFareFamily.plus](./nfcmifarefamily/plus.md)
   An identifier that indicates the MIFARE Plus® product family.
-- [NFCMiFareFamily.desfire](nfcmifarefamily/desfire.md)
+- [NFCMiFareFamily.desfire](./nfcmifarefamily/desfire.md)
   An identifier that indicates the MIFARE® DESFire® product family.
 ### Initializers
-- [init?(rawValue: UInt)](nfcmifarefamily/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./nfcmifarefamily/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var mifareFamily: NFCMiFareFamily](nfcmifaretag/mifarefamily.md)
+### Getting Tag Information
+- [var mifareFamily: NFCMiFareFamily](./nfcmifaretag/mifarefamily.md)
   The MIFARE product family identifier for the tag.
-- [var identifier: Data](nfcmifaretag/identifier.md)
+- [var identifier: Data](./nfcmifaretag/identifier.md)
   The unique hardware identifier of the tag.
-- [var historicalBytes: Data?](nfcmifaretag/historicalbytes.md)
+- [var historicalBytes: Data?](./nfcmifaretag/historicalbytes.md)
   The historical bytes extracted from an Answer To Select response.
 
 

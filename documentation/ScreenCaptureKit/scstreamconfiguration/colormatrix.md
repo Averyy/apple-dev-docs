@@ -1,7 +1,8 @@
 # colorMatrix
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A color matrix to apply to the output surface.
 
@@ -15,17 +16,22 @@ A color matrix to apply to the output surface.
 unowned(unsafe) var colorMatrix: CFString { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CFStringRef colorMatrix;
+```
+
 #### Discussion
 
-You can specify a value for this property if your pixel format is `420v` or `420f`. The value must be one of the strings specified in [`Display Stream YCbCr to RGB conversion Matrix Options`](https://developer.apple.com/documentation/coregraphics/display-stream-ycbcr-to-rgb-conversion-matrix-options).
+You can specify a value for this property if your pixel format is `420v` or `420f`. The value must be one of the strings specified in [Display Stream YCbCr to RGB conversion Matrix Options](../../CoreGraphics/display-stream-ycbcr-to-rgb-conversion-matrix-options.md).
 
 ## See Also
 
-- [var pixelFormat: OSType](scstreamconfiguration/pixelformat.md)
+### Configuring colors
+- [var pixelFormat: OSType](./pixelformat.md)
   A pixel format for sample buffers that a stream outputs.
-- [var colorSpaceName: CFString](scstreamconfiguration/colorspacename.md)
+- [var colorSpaceName: CFString](./colorspacename.md)
   A color space to use for the output buffer.
-- [var backgroundColor: CGColor](scstreamconfiguration/backgroundcolor.md)
+- [var backgroundColor: CGColor](./backgroundcolor.md)
   A background color for the output.
 
 

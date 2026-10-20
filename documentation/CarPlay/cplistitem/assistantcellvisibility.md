@@ -1,7 +1,8 @@
 # CPListItem.AssistantCellVisibility
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants to specify the visibility of the assistant cell.
 
@@ -16,31 +17,36 @@ Constants to specify the visibility of the assistant cell.
 enum AssistantCellVisibility
 ```
 
+```c
+enum CPAssistantCellVisibility : NSInteger;
+```
+
 ## Topics
 
 ### Controlling the Assistant Cell Visibility
-- [CPListItem.AssistantCellVisibility.off](cplistitem/assistantcellvisibility/off.md)
+- [CPListItem.AssistantCellVisibility.off](./assistantcellvisibility/off.md)
   The assistant cell isn’t visible.
-- [CPListItem.AssistantCellVisibility.always](cplistitem/assistantcellvisibility/always.md)
+- [CPListItem.AssistantCellVisibility.always](./assistantcellvisibility/always.md)
   The assistant cell is always visible.
-- [CPListItem.AssistantCellVisibility.whileLimitedUIActive](cplistitem/assistantcellvisibility/whilelimiteduiactive.md)
+- [CPListItem.AssistantCellVisibility.whileLimitedUIActive](./assistantcellvisibility/whilelimiteduiactive.md)
   The assistant cell is visible only while Limited UI mode is active.
 ### Initializers
-- [init?(rawValue: Int)](cplistitem/assistantcellvisibility/init(rawvalue:).md)
+- [init?(rawValue: Int)](./assistantcellvisibility/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CPListItem.AssistantCellPosition](cplistitem/assistantcellposition.md)
+### Managing the Assistant Cell
+- [CPListItem.AssistantCellPosition](./assistantcellposition.md)
   Constants to specify the position of the assistant cell.
 
 

@@ -1,7 +1,8 @@
 # MKLocalSearchCompletion
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A fully formed string that completes a partial string.
 
@@ -20,55 +21,60 @@ A fully formed string that completes a partial string.
 class MKLocalSearchCompletion
 ```
 
+```objc
+@interface MKLocalSearchCompletion : NSObject
+```
+
 #### Overview
 
-You don’t create instances of this class directly. Instead, you use an [`MKLocalSearchCompleter`](mklocalsearchcompleter.md) to initiate a search based on a set of partial search strings. That object stores any matches in its results property. Retrieve any `MKLocalSearchCompletion` objects from that property and display the search terms in your interface, or use one to initiate a search for content based on that search term.
+You don’t create instances of this class directly. Instead, you use an [`MKLocalSearchCompleter`](./mklocalsearchcompleter.md) to initiate a search based on a set of partial search strings. That object stores any matches in its results property. Retrieve any `MKLocalSearchCompletion` objects from that property and display the search terms in your interface, or use one to initiate a search for content based on that search term.
 
 When displaying text completions for a partial search term in your user interface, you might want to use a bold version of a font or add some other highlighting to the portion of the completion string that causes it to match the partial search term. To help you add this styling, the completion object includes highlight ranges for the title and subtitle strings.
 
 ## Topics
 
 ### Getting the search completions
-- [var title: String](mklocalsearchcompletion/title.md)
+- [var title: String](./mklocalsearchcompletion/title.md)
   The title string associated with the point of interest.
-- [var subtitle: String](mklocalsearchcompletion/subtitle.md)
+- [var subtitle: String](./mklocalsearchcompletion/subtitle.md)
   The subtitle (if any) associated with the point of interest.
-- [var titleHighlightRanges: [NSValue]](mklocalsearchcompletion/titlehighlightranges.md)
+- [var titleHighlightRanges: [NSValue]](./mklocalsearchcompletion/titlehighlightranges.md)
   The ranges of characters to highlight in the title string.
-- [var subtitleHighlightRanges: [NSValue]](mklocalsearchcompletion/subtitlehighlightranges.md)
+- [var subtitleHighlightRanges: [NSValue]](./mklocalsearchcompletion/subtitlehighlightranges.md)
   The ranges of characters to highlight in the subtitle string.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Interacting with nearby points of interest](interacting-with-nearby-points-of-interest.md)
+### Local search
+- [Interacting with nearby points of interest](./interacting-with-nearby-points-of-interest.md)
   Provide automatic search completions for a partial search query, search the map for relevant locations nearby, and retrieve details for selected points of interest.
-- [enum MKLocalSearchRegionPriority](mklocalsearchregionpriority.md)
+- [enum MKLocalSearchRegionPriority](./mklocalsearchregionpriority.md)
   A value that indicates the importance of the configured region.
-- [MKLocalSearch.ResultType](mklocalsearch/resulttype.md)
+- [MKLocalSearch.ResultType](./mklocalsearch/resulttype.md)
   Options that indicate types of search results.
-- [class MKLocalSearch](mklocalsearch.md)
+- [class MKLocalSearch](./mklocalsearch.md)
   A utility object for initiating map-based searches and processing the results.
-- [MKAddressFilter.Options](mkaddressfilter/options.md)
+- [MKAddressFilter.Options](./mkaddressfilter/options.md)
   A structure that contains options for filtering results in a search.
-- [class MKAddressFilter](mkaddressfilter.md)
+- [class MKAddressFilter](./mkaddressfilter.md)
   An object that filters which address options to include or exclude in search results.
-- [MKLocalSearchCompleter.ResultType](mklocalsearchcompleter/resulttype.md)
+- [MKLocalSearchCompleter.ResultType](./mklocalsearchcompleter/resulttype.md)
   Options that indicate types of search completions.
-- [class MKLocalSearchCompleter](mklocalsearchcompleter.md)
+- [class MKLocalSearchCompleter](./mklocalsearchcompleter.md)
   A utility object for generating a list of completion strings based on a partial search string that you provide.
-- [class MKLocalPointsOfInterestRequest](mklocalpointsofinterestrequest.md)
+- [class MKLocalPointsOfInterestRequest](./mklocalpointsofinterestrequest.md)
   A structured request to use when searching for points of interest.
 
 

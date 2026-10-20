@@ -1,7 +1,8 @@
 # revision(_:supportsConstellation:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether a revision supports a constellation.
 
@@ -19,9 +20,13 @@ Returns a Boolean value that indicates whether a revision supports a constellati
 class func revision(_ requestRevision: Int, supportsConstellation constellation: VNRequestFaceLandmarksConstellation) -> Bool
 ```
 
+```objc
++ (BOOL) revision:(NSUInteger) requestRevision supportsConstellation:(VNRequestFaceLandmarksConstellation) constellation;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the revision supports the constellation, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the revision supports the constellation, otherwise [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -30,11 +35,12 @@ class func revision(_ requestRevision: Int, supportsConstellation constellation:
 
 ## See Also
 
-- [var VNDetectFaceLandmarksRequestRevision3: Int](vndetectfacelandmarksrequestrevision3.md)
+### Identifying Request Revisions
+- [var VNDetectFaceLandmarksRequestRevision3: Int](../vndetectfacelandmarksrequestrevision3.md)
   A constant for specifying revision 3 of the face landmarks detection request.
-- [var VNDetectFaceLandmarksRequestRevision2: Int](vndetectfacelandmarksrequestrevision2.md)
+- [var VNDetectFaceLandmarksRequestRevision2: Int](../vndetectfacelandmarksrequestrevision2.md)
   A constant for specifying revision 2 of the face landmarks detection request.
-- [var VNDetectFaceLandmarksRequestRevision1: Int](vndetectfacelandmarksrequestrevision1.md)
+- [var VNDetectFaceLandmarksRequestRevision1: Int](../vndetectfacelandmarksrequestrevision1.md)
   A constant for specifying revision 1 of the face landmarks detection request.
 
 

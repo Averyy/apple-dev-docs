@@ -7,11 +7,11 @@ Check that the collection hasn't been modified during iteration.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool isValid() = 0;
 ```
 
-#### Return_value
+#### Return Value
 
 `true` if the iterator is valid for continued use, `false` otherwise (typically because the collection being iterated has been modified).
 
@@ -21,9 +21,10 @@ Subclasses must implement this pure virtual member function.
 
 ## See Also
 
-- [getNextObject](ositerator/1808048-getnextobject.md)
+### Miscellaneous
+- [getNextObject](./api-1808048-getnextobject.md)
   Advances to and returns the next object in the iteration.
-- [reset](ositerator/1808074-reset.md)
+- [reset](./api-1808074-reset.md)
   Resets the iterator to the beginning of the collection, as if it had just been created.
 
 

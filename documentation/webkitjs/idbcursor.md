@@ -1,7 +1,8 @@
 # IDBCursor
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,23 +10,23 @@
 
 ## Declaration
 
-```swift
+```
 interface IDBCursor
 ```
 
 ## Topics
 
 ### Instance Properties
-- [direction](idbcursor/1632956-direction.md)
-- [key](idbcursor/1632548-key.md)
-- [primaryKey](idbcursor/1631944-primarykey.md)
-- [source](idbcursor/1633788-source.md)
+- [direction](./idbcursor/api-1632956-direction.md)
+- [key](./idbcursor/api-1632548-key.md)
+- [primaryKey](./idbcursor/api-1631944-primarykey.md)
+- [source](./idbcursor/api-1633788-source.md)
 ### Instance Methods
-- [advance](idbcursor/1630052-advance.md)
-- [continue](idbcursor/1632424-continue.md)
-- [continuePrimaryKey](idbcursor/2871318-continueprimarykey.md)
-- [delete](idbcursor/1631595-delete.md)
-- [update](idbcursor/1630563-update.md)
+- [advance](./idbcursor/api-1630052-advance.md)
+- [continue](./idbcursor/api-1632424-continue.md)
+- [continuePrimaryKey](./idbcursor/api-2871318-continueprimarykey.md)
+- [delete](./idbcursor/api-1631595-delete.md)
+- [update](./idbcursor/api-1630563-update.md)
 
 
 ---

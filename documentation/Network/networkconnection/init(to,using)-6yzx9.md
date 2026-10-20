@@ -1,7 +1,8 @@
 # init(to:using:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new outbound connection to an endpoint, with parameters. The parameters determine the protocols to be used for the connection, and their options.
 
@@ -19,6 +20,8 @@ Create a new outbound connection to an endpoint, with parameters. The parameters
 ```swift
 convenience init(to provider: any Connectable, using builder: NWParametersBuilder<ApplicationProtocol>)
 ```
+
+Available when `ApplicationProtocol` conforms to `OneToOneProtocol`.
 
 
 ---

@@ -1,7 +1,8 @@
 # errSecAuthFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Authorization and/or authentication failed.
 
@@ -18,6 +19,10 @@ Authorization and/or authentication failed.
 
 ```swift
 var errSecAuthFailed: OSStatus { get }
+```
+
+```c
+errSecAuthFailed
 ```
 
 

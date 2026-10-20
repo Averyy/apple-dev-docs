@@ -1,7 +1,8 @@
 # rootMotion
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The root motion bind target for this entity.
 

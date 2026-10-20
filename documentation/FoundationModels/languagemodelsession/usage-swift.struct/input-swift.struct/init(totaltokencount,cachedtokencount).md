@@ -1,7 +1,8 @@
 # init(totalTokenCount:cachedTokenCount:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an input token count.
 

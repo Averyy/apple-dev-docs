@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of threads the render pass applies to a SIMD group for a mesh shader.
@@ -20,15 +21,20 @@ The number of threads the render pass applies to a SIMD group for a mesh shader.
 var meshThreadExecutionWidth: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger meshThreadExecutionWidth;
+```
+
 #### Discussion
 
-You can access the value of this property in your shader code by adding an integer parameter with the `[[threads_per_simdgroup]]` attribute. For more information about this attribute, see the [`Metal Shading Language Specification (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
+You can access the value of this property in your shader code by adding an integer parameter with the `[[threads_per_simdgroup]]` attribute. For more information about this attribute, see the [Metal Shading Language Specification (PDF)](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 
 ## See Also
 
-- [var maxTotalThreadsPerMeshThreadgroup: Int](mtlrenderpipelinestate/maxtotalthreadspermeshthreadgroup.md)
+### Checking mesh shader memory requirements
+- [var maxTotalThreadsPerMeshThreadgroup: Int](./maxtotalthreadspermeshthreadgroup.md)
   The largest number of threads the pipeline state can have in a single mesh shader threadgroup.
-- [var maxTotalThreadgroupsPerMeshGrid: Int](mtlrenderpipelinestate/maxtotalthreadgroupspermeshgrid.md)
+- [var maxTotalThreadgroupsPerMeshGrid: Int](./maxtotalthreadgroupspermeshgrid.md)
   The largest number of threadgroups the pipeline state can have in a single mesh shader grid.
 
 

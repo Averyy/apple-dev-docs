@@ -1,9 +1,10 @@
 # resolvesNaturalAlignmentWithBaseWritingDirection
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Specifies the behavior for resolving [`NSTextAlignment.natural`](nstextalignment/natural.md) to the visual alignment.
+Specifies the behavior for resolving [`NSTextAlignment.natural`](../nstextalignment/natural.md) to the visual alignment.
 
 **Availability**:
 - macOS 26.0+
@@ -12,6 +13,10 @@ Specifies the behavior for resolving [`NSTextAlignment.natural`](nstextalignment
 
 ```swift
 var resolvesNaturalAlignmentWithBaseWritingDirection: Bool { get set }
+```
+
+```objc
+@property BOOL resolvesNaturalAlignmentWithBaseWritingDirection;
 ```
 
 #### Discussion

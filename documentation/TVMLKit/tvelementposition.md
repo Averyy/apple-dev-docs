@@ -1,12 +1,15 @@
 # TVElementPosition
 
 **Framework**: TVMLKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Location of an element relative to the screen or its containing element.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,77 +17,82 @@ Location of an element relative to the screen or its containing element.
 enum TVElementPosition
 ```
 
+```c
+enum TVElementPosition : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [TVElementPosition.undefined](tvelementposition/undefined.md)
+- [TVElementPosition.undefined](./tvelementposition/undefined.md)
   The position has not been defined.
-- [TVElementPosition.center](tvelementposition/center.md)
+- [TVElementPosition.center](./tvelementposition/center.md)
   Position the element in the center of its containing element.
-- [TVElementPosition.top](tvelementposition/top.md)
+- [TVElementPosition.top](./tvelementposition/top.md)
   Position the element at the top of the containing element.
-- [TVElementPosition.bottom](tvelementposition/bottom.md)
+- [TVElementPosition.bottom](./tvelementposition/bottom.md)
   Position the element at the bottom of the containing element.
-- [TVElementPosition.left](tvelementposition/left.md)
+- [TVElementPosition.left](./tvelementposition/left.md)
   Position the element along the left side of the containing element.
-- [TVElementPosition.right](tvelementposition/right.md)
+- [TVElementPosition.right](./tvelementposition/right.md)
   Position the element along the right side of the containing element.
-- [TVElementPosition.topLeft](tvelementposition/topleft.md)
+- [TVElementPosition.topLeft](./tvelementposition/topleft.md)
   Position the element in the top-left of the containing element.
-- [TVElementPosition.topRight](tvelementposition/topright.md)
+- [TVElementPosition.topRight](./tvelementposition/topright.md)
   Position the element in the top-right of the containing element.
-- [TVElementPosition.bottomLeft](tvelementposition/bottomleft.md)
+- [TVElementPosition.bottomLeft](./tvelementposition/bottomleft.md)
   Position the element in the bottom-left of the containing element.
-- [TVElementPosition.bottomRight](tvelementposition/bottomright.md)
+- [TVElementPosition.bottomRight](./tvelementposition/bottomright.md)
   Position the element in the bottom-right of the containing element.
-- [TVElementPosition.header](tvelementposition/header.md)
+- [TVElementPosition.header](./tvelementposition/header.md)
   Position the element in the header area of the containing element.
-- [TVElementPosition.footer](tvelementposition/footer.md)
+- [TVElementPosition.footer](./tvelementposition/footer.md)
   Position the element in the footer area of the containing element.
-- [TVElementPosition.leading](tvelementposition/leading.md)
+- [TVElementPosition.leading](./tvelementposition/leading.md)
   Position the element in the leading edge of the containing element.
-- [TVElementPosition.trailing](tvelementposition/trailing.md)
+- [TVElementPosition.trailing](./tvelementposition/trailing.md)
   Position the element in the trailing edge of the containing element.
-- [TVElementPosition.topLeading](tvelementposition/topleading.md)
+- [TVElementPosition.topLeading](./tvelementposition/topleading.md)
   Position the element in the top-leading edge of the containing element.
-- [TVElementPosition.topTrailing](tvelementposition/toptrailing.md)
+- [TVElementPosition.topTrailing](./tvelementposition/toptrailing.md)
   Position the element in the top-trailing edge of the containing element.
-- [TVElementPosition.bottomLeading](tvelementposition/bottomleading.md)
+- [TVElementPosition.bottomLeading](./tvelementposition/bottomleading.md)
   Position the element in the bottom-leading edge of the containing element.
-- [TVElementPosition.bottomTrailing](tvelementposition/bottomtrailing.md)
+- [TVElementPosition.bottomTrailing](./tvelementposition/bottomtrailing.md)
   Position the element in the bottom-trailing edge of the containing element.
 ### Initializers
-- [init?(rawValue: Int)](tvelementposition/init(rawvalue:).md)
+- [init?(rawValue: Int)](./tvelementposition/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var alignment: TVElementAlignment](tvviewelementstyle/alignment.md)
+### Aligning and Positioning an Element
+- [var alignment: TVElementAlignment](./tvviewelementstyle/alignment.md)
   A value indicating how an item is aligned inside of an element.
-- [enum TVElementAlignment](tvelementalignment.md)
+- [enum TVElementAlignment](./tvelementalignment.md)
   Location of an item inside of an element on the horizontal axis.
-- [var contentAlignment: TVElementContentAlignment](tvviewelementstyle/contentalignment.md)
+- [var contentAlignment: TVElementContentAlignment](./tvviewelementstyle/contentalignment.md)
   A value indicating how items inside of an element are aligned.
-- [enum TVElementContentAlignment](tvelementcontentalignment.md)
+- [enum TVElementContentAlignment](./tvelementcontentalignment.md)
   Location of items inside of an element on the vertical axis.
-- [var focusMargin: UIEdgeInsets](tvviewelementstyle/focusmargin.md)
+- [var focusMargin: UIEdgeInsets](./tvviewelementstyle/focusmargin.md)
   The amount of space, in pixels, a custom cell requires when it comes into focus.
-- [var interitemSpacing: CGFloat](tvviewelementstyle/interitemspacing.md)
+- [var interitemSpacing: CGFloat](./tvviewelementstyle/interitemspacing.md)
   The spacing, in pixels, between items inside of an element.
-- [var margin: UIEdgeInsets](tvviewelementstyle/margin.md)
+- [var margin: UIEdgeInsets](./tvviewelementstyle/margin.md)
   The amount of space, in pixels, between the element and other elements.
-- [var padding: UIEdgeInsets](tvviewelementstyle/padding.md)
+- [var padding: UIEdgeInsets](./tvviewelementstyle/padding.md)
   The amount of space, in pixels, between the border and the contents of the element.
-- [var position: TVElementPosition](tvviewelementstyle/position.md)
+- [var position: TVElementPosition](./tvviewelementstyle/position.md)
   A value indicating the position of the element relative to the screen or its containing element.
 
 

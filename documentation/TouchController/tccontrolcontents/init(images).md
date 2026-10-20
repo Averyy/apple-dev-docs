@@ -1,7 +1,8 @@
 # init(images:)
 
 **Framework**: Touch Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the specified images.
 
@@ -14,6 +15,10 @@ Creates a new instance with the specified images.
 
 ```swift
 convenience init(images: [TCControlImage])
+```
+
+```objc
++ (instancetype) contentsWithImages:(NSArray<TCControlImage *> *) images;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # allJoints
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All of the joints in a hand skeleton.
 
@@ -16,9 +17,10 @@ var allJoints: [HandSkeleton.Joint] { get }
 
 ## See Also
 
-- [static var neutralPose: HandSkeleton](handskeleton/neutralpose.md)
+### Inspecting hand skeletons
+- [static var neutralPose: HandSkeleton](./neutralpose.md)
   A hand pose that you can use as a reference.
-- [var description: String](handskeleton/description.md)
+- [var description: String](./description.md)
   A textual representation of this Skeleton.
 
 

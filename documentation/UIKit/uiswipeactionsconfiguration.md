@@ -1,7 +1,8 @@
 # UISwipeActionsConfiguration
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The set of actions to perform when swiping on rows of a table.
 
@@ -18,41 +19,46 @@ The set of actions to perform when swiping on rows of a table.
 class UISwipeActionsConfiguration
 ```
 
+```objc
+@interface UISwipeActionsConfiguration : NSObject
+```
+
 #### Overview
 
-Create a [`UISwipeActionsConfiguration`](uiswipeactionsconfiguration.md) object to associate custom swipe actions with a row of your table view. Users swipe horizontally left or right in a table view to reveal the actions associated with a row. Each swipe-actions object contains the set of actions to display for each type of swipe.
+Create a [`UISwipeActionsConfiguration`](./uiswipeactionsconfiguration.md) object to associate custom swipe actions with a row of your table view. Users swipe horizontally left or right in a table view to reveal the actions associated with a row. Each swipe-actions object contains the set of actions to display for each type of swipe.
 
-To add custom actions to your table view’s rows, implement the [`tableView(_:leadingSwipeActionsConfigurationForRowAt:)`](uitableviewdelegate/tableview(_:leadingswipeactionsconfigurationforrowat:).md) or [`tableView(_:trailingSwipeActionsConfigurationForRowAt:)`](uitableviewdelegate/tableview(_:trailingswipeactionsconfigurationforrowat:).md) method of your table view’s delegate. In those methods, create and return the actions for the indicated row. The table displays your action buttons and executes the appropriate handler block when the user taps one of them.
+To add custom actions to your table view’s rows, implement the [`tableView(_:leadingSwipeActionsConfigurationForRowAt:)`](./uitableviewdelegate/tableview%28_,leadingswipeactionsconfigurationforrowat%29.md) or [`tableView(_:trailingSwipeActionsConfigurationForRowAt:)`](./uitableviewdelegate/tableview%28_,trailingswipeactionsconfigurationforrowat%29.md) method of your table view’s delegate. In those methods, create and return the actions for the indicated row. The table displays your action buttons and executes the appropriate handler block when the user taps one of them.
 
 ## Topics
 
 ### Initializing the swipe actions
-- [convenience init(actions: [UIContextualAction])](uiswipeactionsconfiguration/init(actions:).md)
+- [convenience init(actions: [UIContextualAction])](./uiswipeactionsconfiguration/init%28actions%29.md)
   Creates a swipe action configuration object with the specified set of actions.
 ### Getting the swipe action information
-- [var actions: [UIContextualAction]](uiswipeactionsconfiguration/actions.md)
+- [var actions: [UIContextualAction]](./uiswipeactionsconfiguration/actions.md)
   The swipe actions.
-- [var performsFirstActionWithFullSwipe: Bool](uiswipeactionsconfiguration/performsfirstactionwithfullswipe.md)
+- [var performsFirstActionWithFullSwipe: Bool](./uiswipeactionsconfiguration/performsfirstactionwithfullswipe.md)
   A Boolean value indicating whether a full swipe automatically performs the first action.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIContextualAction](uicontextualaction.md)
+### Row actions
+- [class UIContextualAction](./uicontextualaction.md)
   An action to display when the user swipes a table row.
-- [class UITableViewRowAction](uitableviewrowaction.md)
+- [class UITableViewRowAction](./uitableviewrowaction.md)
   A single action to present when the user swipes horizontally in a table row.
 
 

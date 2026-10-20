@@ -1,7 +1,8 @@
 # generateConvex(from:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a convex shape from the given mesh.
 
@@ -11,13 +12,30 @@ Creates a convex shape from the given mesh.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
 ```swift
 @MainActor
 @preconcurrency static func generateConvex(from mesh: MeshResource) -> ShapeResource
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency static func generateConvex(from points: [SIMD3<Float>]) -> ShapeResource
+```
+
+```swift
+nonisolated
+static func generateConvex(from mesh: MeshResource) async throws -> ShapeResource
+```
+
+```swift
+nonisolated
+static func generateConvex(from points: [SIMD3<Float>]) async throws -> ShapeResource
 ```
 
 #### Return Value

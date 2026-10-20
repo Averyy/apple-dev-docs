@@ -1,7 +1,8 @@
 # isPlaying
 
 **Framework**: LivePhotosKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether or not the Player is playing.
 
@@ -10,45 +11,46 @@ A Boolean value that indicates whether or not the Player is playing.
 
 ## Declaration
 
-```swift
+```
 readonly attribute Boolean isPlaying;
 ```
 
 #### Discussion
 
-If this Boolean value is `true`, the Player is advancing [`currentTime`](livephotoskit.player/currenttime.md) automatically, as close to every one-sixtieth of a second as it can achieve.
+If this Boolean value is `true`, the Player is advancing [`currentTime`](./currenttime.md) automatically, as close to every one-sixtieth of a second as it can achieve.
 
 ## See Also
 
-- [currentTime](livephotoskit.player/currenttime.md)
+### Instance Properties
+- [currentTime](./currenttime.md)
   The current time, in seconds, of the play head.
-- [duration](livephotoskit.player/duration.md)
+- [duration](./duration.md)
   The duration, in seconds, of the entire Live Photo.
-- [photoHeight](livephotoskit.player/photoheight.md)
+- [photoHeight](./photoheight.md)
   The height, in pixels, of the photo component.
-- [photoTime](livephotoskit.player/phototime.md)
+- [photoTime](./phototime.md)
   The nominated time, in seconds, of where the photo component should be within the Live Photo video component.
-- [photoWidth](livephotoskit.player/photowidth.md)
+- [photoWidth](./photowidth.md)
   The width, in pixels, of the photo component.
-- [canPlay](livephotoskit.player/canplay.md)
+- [canPlay](./canplay.md)
   A Boolean value that indicates whether the Player is able to begin playback.
-- [errors](livephotoskit.player/errors.md)
+- [errors](./errors.md)
   An array of errors that occurred when attempting to load resources.
-- [frameTimes](livephotoskit.player/frametimes.md)
+- [frameTimes](./frametimes.md)
   An array of timestamps for each second from the beginning of a Live Photo for which the frames reside in the Live Photo.
-- [loadProgress](livephotoskit.player/loadprogress.md)
+- [loadProgress](./loadprogress.md)
   A numeric value that indicates the progress of loading the Live Photo.
-- [metadataVideoSrc](livephotoskit.player/metadatavideosrc.md)
+- [metadataVideoSrc](./metadatavideosrc.md)
   A string or array buffer that contains metadata about the properties of a Live Photo.
-- [photo](livephotoskit.player/photo.md)
+- [photo](./photo.md)
   The renderable, image-bearing DOM element (either an image or a canvas) that the Player consumes to render itself to the screen.
-- [photoMimeType](livephotoskit.player/photomimetype.md)
+- [photoMimeType](./photomimetype.md)
   The MIME type of a photo asset.
-- [photoSrc](livephotoskit.player/photosrc.md)
+- [photoSrc](./photosrc.md)
   The source of the photo component of the Live Photo.
-- [playbackStyle](livephotoskit.player/playbackstyle.md)
+- [playbackStyle](./playbackstyle.md)
   The style of playback that determines the nature of an animation.
-- [proactivelyLoadsVideo](livephotoskit.player/proactivelyloadsvideo.md)
+- [proactivelyLoadsVideo](./proactivelyloadsvideo.md)
   A boolean value that indicates whether the Player downloads bytes before the user begins playback.
 
 

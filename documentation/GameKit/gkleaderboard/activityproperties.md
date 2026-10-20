@@ -1,7 +1,8 @@
 # activityProperties
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The properties when associating this leaderboard with a game activity, as configured by the developer in App Store Connect.
 
@@ -18,6 +19,10 @@ The properties when associating this leaderboard with a game activity, as config
 
 ```swift
 var activityProperties: [String : String] { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSDictionary<NSString *,NSString *> * activityProperties;
 ```
 
 

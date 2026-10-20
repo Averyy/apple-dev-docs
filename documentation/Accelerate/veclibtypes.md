@@ -1,6 +1,7 @@
 # vecLibTypes
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Create and work with 128-bit vector data types.
 
@@ -13,38 +14,38 @@ The type names all begin with the letter “v,” followed by a mnemonic for the
 ## Topics
 
 ### Type Aliases
-- [typealias la_attribute_t](la_attribute_t.md)
-- [typealias la_count_t](la_count_t.md)
-- [typealias la_deallocator_t](la_deallocator_t.md)
-- [typealias la_hint_t](la_hint_t.md)
-- [typealias la_index_t](la_index_t.md)
-- [typealias la_norm_t](la_norm_t.md)
-- [typealias la_object_t](la_object_t.md)
-- [typealias la_scalar_type_t](la_scalar_type_t.md)
-- [typealias la_status_t](la_status_t.md)
-- [protocol OS_la_object](os_la_object.md)
+- [typealias la_attribute_t](./la_attribute_t.md)
+- [typealias la_count_t](./la_count_t.md)
+- [typealias la_deallocator_t](./la_deallocator_t.md)
+- [typealias la_hint_t](./la_hint_t.md)
+- [typealias la_index_t](./la_index_t.md)
+- [typealias la_norm_t](./la_norm_t.md)
+- [typealias la_object_t](./la_object_t.md)
+- [typealias la_scalar_type_t](./la_scalar_type_t.md)
+- [typealias la_status_t](./la_status_t.md)
+- [protocol OS_la_object](./os_la_object.md)
 ### vecLibTypes
-- [typealias vUInt8](vuint8.md)
+- [typealias vUInt8](./vuint8.md)
   A 128-bit vector packed with `unsigned char` values.
-- [typealias vSInt8](vsint8.md)
+- [typealias vSInt8](./vsint8.md)
   A 128-bit vector packed with `signed char` values.
-- [typealias vUInt16](vuint16.md)
+- [typealias vUInt16](./vuint16.md)
   A 128-bit vector packed with `unsigned short` values.
-- [typealias vSInt16](vsint16.md)
+- [typealias vSInt16](./vsint16.md)
   A 128-bit vector packed with `signed short` values.
-- [typealias vUInt32](vuint32.md)
+- [typealias vUInt32](./vuint32.md)
   A 128-bit vector packed with `unsigned int` values.
-- [typealias vSInt32](vsint32.md)
+- [typealias vSInt32](./vsint32.md)
   A 128-bit vector packed with `signed int` values.
-- [typealias vUInt64](vuint64.md)
+- [typealias vUInt64](./vuint64.md)
   A 128-bit vector packed with `uint64_t` values.
-- [typealias vSInt64](vsint64.md)
+- [typealias vSInt64](./vsint64.md)
   A 128-bit vector packed with `int64_t` values.
-- [typealias vFloat](vfloat.md)
+- [typealias vFloat](./vfloat.md)
   A 128-bit vector packed with `float` values.
-- [typealias vDouble](vdouble.md)
+- [typealias vDouble](./vdouble.md)
   A 128-bit vector packed with `double` values.
-- [typealias vBool32](vbool32.md)
+- [typealias vBool32](./vbool32.md)
   A 128-bit vector packed with `bool int` values.
 
 

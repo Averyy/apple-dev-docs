@@ -1,7 +1,8 @@
 # scaleType
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scale for the axis.
 
@@ -20,15 +21,20 @@ The scale for the axis.
 var scaleType: AXNumericDataAxisDescriptor.ScaleType { get set }
 ```
 
+```objc
+@property (nonatomic, assign) AXNumericDataAxisDescriptorScale scaleType;
+```
+
 #### Discussion
 
 Match the value of this property to the visual representation in the chart.
 
-The default value is [`AXNumericDataAxisDescriptor.ScaleType.linear`](axnumericdataaxisdescriptor/scaletype-swift.enum/linear.md).
+The default value is [`AXNumericDataAxisDescriptor.ScaleType.linear`](./scaletype-swift.enum/linear.md).
 
 ## See Also
 
-- [AXNumericDataAxisDescriptor.ScaleType](axnumericdataaxisdescriptor/scaletype-swift.enum.md)
+### Configuring the axis scale
+- [AXNumericDataAxisDescriptor.ScaleType](./scaletype-swift.enum.md)
   Constants that describe the scale of a numeric axis.
 
 

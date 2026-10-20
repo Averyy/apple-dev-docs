@@ -1,7 +1,8 @@
 # noMessage
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No message of desired type.
 
@@ -22,7 +23,7 @@ static var noMessage: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,25 +33,26 @@ The corresponding C error is `ENOMSG`.
 
 ## See Also
 
-- [static var badMessage: Errno](errno/badmessage.md)
+### General Errors
+- [static var badMessage: Errno](./badmessage.md)
   Bad message.
-- [static var canceled: Errno](errno/canceled.md)
+- [static var canceled: Errno](./canceled.md)
   Operation canceled.
-- [static var illegalByteSequence: Errno](errno/illegalbytesequence.md)
+- [static var illegalByteSequence: Errno](./illegalbytesequence.md)
   Illegal byte sequence.
-- [static var noData: Errno](errno/nodata.md)
+- [static var noData: Errno](./nodata.md)
   No message available.
-- [static var noSuchPolicy: Errno](errno/nosuchpolicy.md)
+- [static var noSuchPolicy: Errno](./nosuchpolicy.md)
   No such policy registered.
-- [static var notPermitted: Errno](errno/notpermitted.md)
+- [static var notPermitted: Errno](./notpermitted.md)
   Operation not permitted.
-- [static var notRecoverable: Errno](errno/notrecoverable.md)
+- [static var notRecoverable: Errno](./notrecoverable.md)
   State not recoverable.
-- [static var outputQueueFull: Errno](errno/outputqueuefull.md)
+- [static var outputQueueFull: Errno](./outputqueuefull.md)
   Interface output queue is full.
-- [static var tooManyReferences: Errno](errno/toomanyreferences.md)
+- [static var tooManyReferences: Errno](./toomanyreferences.md)
   Too many references: can’t splice.
-- [static var tooManyUsers: Errno](errno/toomanyusers.md)
+- [static var tooManyUsers: Errno](./toomanyusers.md)
   Too many users.
 
 

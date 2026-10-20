@@ -1,7 +1,8 @@
 # ASAuthorizationPlatformPublicKeyCredentialAssertionRequest
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The concrete assertion request type for platform credentials.
 
@@ -19,9 +20,13 @@ The concrete assertion request type for platform credentials.
 class ASAuthorizationPlatformPublicKeyCredentialAssertionRequest
 ```
 
+```objc
+@interface ASAuthorizationPlatformPublicKeyCredentialAssertionRequest : ASAuthorizationRequest
+```
+
 ## Mentions
 
-- [Supporting passkeys](supporting-passkeys.md)
+- [Supporting passkeys](./supporting-passkeys.md)
 
 #### Overview
 
@@ -30,45 +35,46 @@ Use this class to sign in with an existing credential that the system stores in 
 ## Topics
 
 ### Accessing request properties
-- [var allowedCredentials: [ASAuthorizationPlatformPublicKeyCredentialDescriptor]](asauthorizationplatformpublickeycredentialassertionrequest/allowedcredentials.md)
+- [var allowedCredentials: [ASAuthorizationPlatformPublicKeyCredentialDescriptor]](./asauthorizationplatformpublickeycredentialassertionrequest/allowedcredentials.md)
   The array of allowed credentials.
-- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput?](asauthorizationplatformpublickeycredentialassertionrequest/largeblob-9kvvl.md)
+- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput?](./asauthorizationplatformpublickeycredentialassertionrequest/largeblob-9kvvl.md)
   The request’s binary large object value.
-- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?](asauthorizationplatformpublickeycredentialassertionrequest/prf-47uoa.md)
+- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?](./asauthorizationplatformpublickeycredentialassertionrequest/prf-47uoa.md)
 
 ## Relationships
 
 ### Inherits From
-- [ASAuthorizationRequest](asauthorizationrequest.md)
+- [ASAuthorizationRequest](./asauthorizationrequest.md)
 ### Conforms To
-- [ASAuthorizationPublicKeyCredentialAssertionRequest](asauthorizationpublickeycredentialassertionrequest.md)
-- [ASAuthorizationWebBrowserExternallyAuthenticatableRequest](asauthorizationwebbrowserexternallyauthenticatablerequest.md)
-- [ASAuthorizationWebBrowserPlatformPublicKeyCredentialAssertionRequest](asauthorizationwebbrowserplatformpublickeycredentialassertionrequest.md)
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ASAuthorizationPublicKeyCredentialAssertionRequest](./asauthorizationpublickeycredentialassertionrequest.md)
+- [ASAuthorizationWebBrowserExternallyAuthenticatableRequest](./asauthorizationwebbrowserexternallyauthenticatablerequest.md)
+- [ASAuthorizationWebBrowserPlatformPublicKeyCredentialAssertionRequest](./asauthorizationwebbrowserplatformpublickeycredentialassertionrequest.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol ASAuthorizationPublicKeyCredentialAssertion](asauthorizationpublickeycredentialassertion.md)
+### Account authentication
+- [protocol ASAuthorizationPublicKeyCredentialAssertion](./asauthorizationpublickeycredentialassertion.md)
   An interface for establishing a public key-based assertion.
-- [class ASAuthorizationPlatformPublicKeyCredentialAssertion](asauthorizationplatformpublickeycredentialassertion.md)
+- [class ASAuthorizationPlatformPublicKeyCredentialAssertion](./asauthorizationplatformpublickeycredentialassertion.md)
   A class that represents the platform credential assertion type.
-- [class ASAuthorizationSecurityKeyPublicKeyCredentialAssertion](asauthorizationsecuritykeypublickeycredentialassertion.md)
+- [class ASAuthorizationSecurityKeyPublicKeyCredentialAssertion](./asauthorizationsecuritykeypublickeycredentialassertion.md)
   A class that represents the security key credential assertion type.
-- [protocol ASAuthorizationPublicKeyCredentialAssertionRequest](asauthorizationpublickeycredentialassertionrequest.md)
+- [protocol ASAuthorizationPublicKeyCredentialAssertionRequest](./asauthorizationpublickeycredentialassertionrequest.md)
   An interface for requesting a public key-based credential assertion.
-- [class ASAuthorizationSecurityKeyPublicKeyCredentialAssertionRequest](asauthorizationsecuritykeypublickeycredentialassertionrequest.md)
+- [class ASAuthorizationSecurityKeyPublicKeyCredentialAssertionRequest](./asauthorizationsecuritykeypublickeycredentialassertionrequest.md)
   A class that defines the assertion request type for security key credentials.
 
 

@@ -1,7 +1,8 @@
 # tint
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The white balance tint value in the range of `-150.0` through `+150.0`.
 
@@ -17,9 +18,14 @@ The white balance tint value in the range of `-150.0` through `+150.0`.
 var tint: Float
 ```
 
+```c
+float tint;
+```
+
 ## See Also
 
-- [var temperature: Float](avcapturedevice/whitebalancetemperatureandtintvalues/temperature.md)
+### Inspecting the values
+- [var temperature: Float](./temperature.md)
   The white balance color correlated temperature in kelvin.
 
 

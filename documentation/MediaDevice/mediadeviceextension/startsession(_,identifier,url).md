@@ -2,6 +2,7 @@
 
 **Framework**: Media Device  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when media playback or a remote application should be started on a remote device.
@@ -20,7 +21,7 @@ func startSession(_ session: MediaOutputSession, identifier: String?, url: URL)
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 ## Parameters
 

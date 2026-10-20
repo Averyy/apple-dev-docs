@@ -1,7 +1,8 @@
 # ComponentEvents.WillDeactivate
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Event raised before a component is deactivated.
 
@@ -11,7 +12,7 @@ Event raised before a component is deactivated.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,21 +23,22 @@ struct WillDeactivate
 ## Topics
 
 ### Instance Properties
-- [let componentType: any Component.Type](componentevents/willdeactivate/componenttype.md)
+- [let componentType: any Component.Type](./willdeactivate/componenttype.md)
   The component type.
-- [let entity: Entity](componentevents/willdeactivate/entity.md)
+- [let entity: Entity](./willdeactivate/entity.md)
   The component’s entity.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ComponentEvents.DidActivate](componentevents/didactivate.md)
+### Detecting component activations
+- [ComponentEvents.DidActivate](./didactivate.md)
   Event raised after a component has been activated.
 
 

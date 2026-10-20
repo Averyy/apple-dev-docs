@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the receiver.
 
@@ -10,7 +11,7 @@ The name of the receiver.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ The name of the receiver.
 
 ```swift
 var name: String { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSString * name;
 ```
 
 #### Discussion
@@ -30,15 +35,16 @@ Setting the name raises an exception if the receiver’s model has been used by 
 
 ## See Also
 
-- [var entity: NSEntityDescription](nspropertydescription/entity.md)
+### Accessing Features of a Property
+- [var entity: NSEntityDescription](./entity.md)
   The entity description of the receiver.
-- [var isIndexed: Bool](nspropertydescription/isindexed.md)
+- [var isIndexed: Bool](./isindexed.md)
   A Boolean value that indicates whether the receiver should be indexed for searching.
-- [var isOptional: Bool](nspropertydescription/isoptional.md)
+- [var isOptional: Bool](./isoptional.md)
   A Boolean value that indicates whether the receiver is optional.
-- [var isTransient: Bool](nspropertydescription/istransient.md)
+- [var isTransient: Bool](./istransient.md)
   A Boolean value that indicates whether the receiver is transient.
-- [var userInfo: [AnyHashable : Any]?](nspropertydescription/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   The user info dictionary of the receiver.
 
 

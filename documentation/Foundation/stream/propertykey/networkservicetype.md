@@ -1,7 +1,8 @@
 # networkServiceType
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The type of service for the stream. Providing the service type allows the system to properly handle certain attributes of the stream, including routing and suspension behavior. Most streams do not need to set this property. See `Stream Service Types` for a list of possible values.
 
@@ -20,14 +21,19 @@ The type of service for the stream. Providing the service type allows the system
 static let networkServiceType: Stream.PropertyKey
 ```
 
+```c
+extern NSStreamPropertyKey const NSStreamNetworkServiceType;
+```
+
 ## See Also
 
-- [static let dataWrittenToMemoryStreamKey: Stream.PropertyKey](stream/propertykey/datawrittentomemorystreamkey.md)
+### Type Properties
+- [static let dataWrittenToMemoryStreamKey: Stream.PropertyKey](./datawrittentomemorystreamkey.md)
   Value is an `NSData` instance containing the data written to a memory stream.
-- [static let fileCurrentOffsetKey: Stream.PropertyKey](stream/propertykey/filecurrentoffsetkey.md)
+- [static let fileCurrentOffsetKey: Stream.PropertyKey](./filecurrentoffsetkey.md)
   Value is an `NSNumber` object containing the current absolute offset of the stream.
-- [static let socketSecurityLevelKey: Stream.PropertyKey](stream/propertykey/socketsecuritylevelkey.md)
-- [static let socksProxyConfigurationKey: Stream.PropertyKey](stream/propertykey/socksproxyconfigurationkey.md)
+- [static let socketSecurityLevelKey: Stream.PropertyKey](./socketsecuritylevelkey.md)
+- [static let socksProxyConfigurationKey: Stream.PropertyKey](./socksproxyconfigurationkey.md)
   Value is an `NSDictionary` object containing SOCKS proxy configuration information.
 
 

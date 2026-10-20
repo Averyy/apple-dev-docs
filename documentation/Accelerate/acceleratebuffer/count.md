@@ -2,6 +2,7 @@
 
 **Framework**: Accelerate  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of elements in the buffer.
@@ -12,7 +13,7 @@ The number of elements in the buffer.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kAnalogSetupExpectedBit](1644564-anonymous/kanalogsetupexpectedbit.md)
-- [kAnalogSetupExpectedMask](1644564-anonymous/kanalogsetupexpectedmask.md)
-- [kDigitalSignalBit](1644564-anonymous/kdigitalsignalbit.md)
-- [kDigitalSignalMask](1644564-anonymous/kdigitalsignalmask.md)
-- [kInterlacedCEA861SyncModeBit](1644564-anonymous/kinterlacedcea861syncmodebit.md)
-- [kInterlacedCEA861SyncModeMask](1644564-anonymous/kinterlacedcea861syncmodemask.md)
+- [kAnalogSetupExpectedBit](./api-1644564-anonymous/kanalogsetupexpectedbit.md)
+- [kAnalogSetupExpectedMask](./api-1644564-anonymous/kanalogsetupexpectedmask.md)
+- [kDigitalSignalBit](./api-1644564-anonymous/kdigitalsignalbit.md)
+- [kDigitalSignalMask](./api-1644564-anonymous/kdigitalsignalmask.md)
+- [kInterlacedCEA861SyncModeBit](./api-1644564-anonymous/kinterlacedcea861syncmodebit.md)
+- [kInterlacedCEA861SyncModeMask](./api-1644564-anonymous/kinterlacedcea861syncmodemask.md)
 
 
 ---

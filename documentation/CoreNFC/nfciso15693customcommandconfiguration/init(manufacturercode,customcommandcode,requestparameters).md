@@ -1,7 +1,8 @@
 # init(manufacturerCode:customCommandCode:requestParameters:)
 
 **Framework**: Core NFC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -12,6 +13,10 @@
 
 ```swift
 init(manufacturerCode: Int, customCommandCode: Int, requestParameters: Data?)
+```
+
+```objc
+- (instancetype) initWithManufacturerCode:(NSUInteger) manufacturerCode customCommandCode:(NSUInteger) customCommandCode requestParameters:(NSData *) requestParameters;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # AppAssetLibraryRefDatumResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that read an app asset library reference data resource.
 
@@ -10,7 +11,7 @@ The response body for endpoints that read an app asset library reference data re
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryRefDatumResponse
 ```
 
@@ -21,9 +22,10 @@ object AppAssetLibraryRefDatumResponse
 
 ## See Also
 
-- [object AppAssetLibraryRefDatum](appassetlibraryrefdatum.md)
+### Objects and types
+- [object AppAssetLibraryRefDatum](./appassetlibraryrefdatum.md)
   Reference data that describes the valid asset specifications, placement groups, and limits for the asset library.
-- [object AppAssetLibraryRefDataResponse](appassetlibraryrefdataresponse.md)
+- [object AppAssetLibraryRefDataResponse](./appassetlibraryrefdataresponse.md)
   The response body for endpoints that list app asset library reference data.
 
 

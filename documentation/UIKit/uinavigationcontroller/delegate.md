@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate of the navigation controller object.
 
@@ -9,7 +10,7 @@ The delegate of the navigation controller object.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The delegate of the navigation controller object.
 weak var delegate: (any UINavigationControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UINavigationControllerDelegate> delegate;
+```
+
 #### Discussion
 
-You can use the navigation delegate to perform additional actions in response to changes in the navigation interface. For more information about implementing the delegate, see [`UINavigationControllerDelegate`](uinavigationcontrollerdelegate.md).
+You can use the navigation delegate to perform additional actions in response to changes in the navigation interface. For more information about implementing the delegate, see [`UINavigationControllerDelegate`](../uinavigationcontrollerdelegate.md).
 
 ## See Also
 
-- [protocol UINavigationControllerDelegate](uinavigationcontrollerdelegate.md)
+### Customizing the navigation interface behavior
+- [protocol UINavigationControllerDelegate](../uinavigationcontrollerdelegate.md)
   The interface for an object that serves as a navigation controller’s delegate.
 
 

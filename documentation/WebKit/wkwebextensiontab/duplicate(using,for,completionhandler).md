@@ -1,7 +1,8 @@
 # duplicate(using:for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to duplicate the tab.
 
@@ -15,7 +16,15 @@ Called to duplicate the tab.
 ## Declaration
 
 ```swift
+optional func duplicate(using configuration: WKWebExtension.TabConfiguration, for context: WKWebExtensionContext, completionHandler: @escaping ((any WKWebExtensionTab)?, (any Error)?) -> Void)
+```
+
+```swift
 optional func duplicate(using configuration: WKWebExtension.TabConfiguration, for context: WKWebExtensionContext) async throws -> (any WKWebExtensionTab)?
+```
+
+```objc
+- (void) duplicateUsingConfiguration:(WKWebExtensionTabConfiguration *) configuration forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(id<WKWebExtensionTab>duplicatedTab, NSError *error)) completionHandler;
 ```
 
 #### Discussion

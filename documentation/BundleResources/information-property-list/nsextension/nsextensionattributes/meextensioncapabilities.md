@@ -1,18 +1,28 @@
 # MEExtensionCapabilities
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - macOS 12.0+
 
+## Details
 
+- **Name**: `MEExtensionCapabilities`
+- **Type**: array of string 
 
-**Type**: string 
+## Possible Values
+
+- `MEComposeSessionHandler`
+- `MEMessageActionHandler`
+- `MEContentBlocker`
+- `MEMessageSecurityHandler`
 
 ## See Also
 
-- [MEComposeSession](information-property-list/nsextension/nsextensionattributes/mecomposesession.md)
+### Mail
+- [MEComposeSession](./mecomposesession.md)
 
 
 ---

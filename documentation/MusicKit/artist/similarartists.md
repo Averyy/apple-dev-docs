@@ -1,7 +1,8 @@
 # similarArtists
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of artists similar to this artist.
 

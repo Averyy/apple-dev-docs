@@ -1,7 +1,8 @@
 # AssistantSchemaEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 18.0+
@@ -21,35 +22,36 @@ protocol AssistantSchemaEntity : AssistantEntity
 ## Topics
 
 ### Type Properties
-- [static var isAssistantOnly: Bool](assistantschemaentity/isassistantonly.md)
+- [static var isAssistantOnly: Bool](./assistantschemaentity/isassistantonly.md)
 
 ## Relationships
 
 ### Inherits From
-- [AppEntity](appentity.md)
-- [AppValue](appvalue.md)
-- [AssistantEntity](assistantentity.md)
-- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
-- [DisplayRepresentable](displayrepresentable.md)
-- [Identifiable](../swift/identifiable.md)
-- [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TypeDisplayRepresentable](typedisplayrepresentable.md)
+- [AppEntity](./appentity.md)
+- [AppValue](./appvalue.md)
+- [AssistantEntity](./assistantentity.md)
+- [CustomLocalizedStringResourceConvertible](../Foundation/customlocalizedstringresourceconvertible.md)
+- [DisplayRepresentable](./displayrepresentable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [InstanceDisplayRepresentable](./instancedisplayrepresentable.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TypeDisplayRepresentable](./typedisplayrepresentable.md)
 
 ## See Also
 
-- [protocol AssistantEnum](assistantenum.md)
+### Previous schema types
+- [protocol AssistantEnum](./assistantenum.md)
   A value that Apple Intelligence and Siri use to fulfill a person’s request.
-- [protocol AssistantEntity](assistantentity.md)
+- [protocol AssistantEntity](./assistantentity.md)
   An app entity that Apple Intelligence can discover to fulfill a person’s request.
-- [protocol AssistantIntent](assistantintent.md)
+- [protocol AssistantIntent](./assistantintent.md)
   An app intent that Siri performs to fulfill a person’s request.
-- [protocol AssistantSchemaEnum](assistantschemaenum.md)
-- [protocol AssistantSchemaIntent](assistantschemaintent.md)
-- [struct AssistantSchema](assistantschema.md)
-- [enum AssistantSchemas](assistantschemas.md)
+- [protocol AssistantSchemaEnum](./assistantschemaenum.md)
+- [protocol AssistantSchemaIntent](./assistantschemaintent.md)
+- [struct AssistantSchema](./assistantschema.md)
+- [enum AssistantSchemas](./assistantschemas.md)
 
 
 ---

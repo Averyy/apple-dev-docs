@@ -1,18 +1,19 @@
 # Dictionary Services
 
-**Framework**: Core Services
+**Framework**: Core Services  
+**Role**: API Collection
 
 Look for words and phrases in system dictionaries.
 
 ## Topics
 
 ### Functions
-- [func DCSGetTermRangeInString(DCSDictionary?, CFString, CFIndex) -> CFRange](1450556-dcsgettermrangeinstring.md)
+- [func DCSGetTermRangeInString(DCSDictionary?, CFString, CFIndex) -> CFRange](./api-1450556-dcsgettermrangeinstring.md)
   Determines the range of the longest word or phrase with respect to an offset.
-- [func DCSCopyTextDefinition(DCSDictionary?, CFString, CFRange) -> Unmanaged<CFString>?](1446842-dcscopytextdefinition.md)
+- [func DCSCopyTextDefinition(DCSDictionary?, CFString, CFRange) -> Unmanaged<CFString>?](./api-1446842-dcscopytextdefinition.md)
   Returns the definition associated with the provided text range.
 ### Data Types
-- [class DCSDictionary](dcsdictionary.md)
+- [class DCSDictionary](./dcsdictionary.md)
   An opaque object that represents a dictionary file.
 
 

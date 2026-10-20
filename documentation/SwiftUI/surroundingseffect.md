@@ -1,7 +1,8 @@
 # SurroundingsEffect
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Effects that the system can apply to passthrough video.
 
@@ -17,38 +18,39 @@ struct SurroundingsEffect
 
 #### Overview
 
-Use one of these values with the [`preferredSurroundingsEffect(_:)`](view/preferredsurroundingseffect(_:).md) view modifier to indicate what effect to apply to passthrough video when the modified view is displayed.
+Use one of these values with the [`preferredSurroundingsEffect(_:)`](./view/preferredsurroundingseffect%28_%29.md) view modifier to indicate what effect to apply to passthrough video when the modified view is displayed.
 
 ## Topics
 
 ### Getting the effect
-- [static var systemDark: SurroundingsEffect](surroundingseffect/systemdark.md)
+- [static var systemDark: SurroundingsEffect](./surroundingseffect/systemdark.md)
   An effect that dims passthrough video.
 ### Type Properties
-- [static var dark: SurroundingsEffect](surroundingseffect/dark.md)
+- [static var dark: SurroundingsEffect](./surroundingseffect/dark.md)
   An effect that dims passthrough video.
-- [static var semiDark: SurroundingsEffect](surroundingseffect/semidark.md)
-  An effect that dims passthrough video less than [`dark`](surroundingseffect/dark.md).
-- [static var ultraDark: SurroundingsEffect](surroundingseffect/ultradark.md)
-  An effect that dims passthrough video more than [`dark`](surroundingseffect/dark.md)
+- [static var semiDark: SurroundingsEffect](./surroundingseffect/semidark.md)
+  An effect that dims passthrough video less than [`dark`](./surroundingseffect/dark.md).
+- [static var ultraDark: SurroundingsEffect](./surroundingseffect/ultradark.md)
+  An effect that dims passthrough video more than [`dark`](./surroundingseffect/dark.md)
 ### Type Methods
-- [static func colorMultiply(Color) -> SurroundingsEffect](surroundingseffect/colormultiply(_:).md)
-  An effect that applies a custom tint to the passthrough video by multiplying the passthrough with a [`Color`](color.md).
-- [static func dim(intensity: Double) -> SurroundingsEffect](surroundingseffect/dim(intensity:).md)
+- [static func colorMultiply(Color) -> SurroundingsEffect](./surroundingseffect/colormultiply%28_%29.md)
+  An effect that applies a custom tint to the passthrough video by multiplying the passthrough with a [`Color`](./color.md).
+- [static func dim(intensity: Double) -> SurroundingsEffect](./surroundingseffect/dim%28intensity%29.md)
   An effect that dims the passthrough video a custom amount.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [func preferredSurroundingsEffect(SurroundingsEffect?) -> some View](view/preferredsurroundingseffect(_:).md)
+### Configuring passthrough
+- [func preferredSurroundingsEffect(SurroundingsEffect?) -> some View](./view/preferredsurroundingseffect%28_%29.md)
   Applies an effect to passthrough video.
-- [func breakthroughEffect(BreakthroughEffect) -> some View](view/breakthrougheffect(_:).md)
+- [func breakthroughEffect(BreakthroughEffect) -> some View](./view/breakthrougheffect%28_%29.md)
   Ensures that the view is always visible to the user, even when other content is occluding it, like 3D models.
-- [struct BreakthroughEffect](breakthrougheffect.md)
+- [struct BreakthroughEffect](./breakthrougheffect.md)
   The way a presentation shows through content in front of it.
 
 

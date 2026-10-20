@@ -1,7 +1,8 @@
 # init(cgColor:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color from a Core Graphics color.
 
@@ -22,15 +23,16 @@ init(cgColor: CGColor)
 
 ## Parameters
 
-- `cgColor`: A [`CGColor`](https://developer.apple.com/documentation/coregraphics/cgcolor) instance from which to create a color.
+- `cgColor`: A [`CGColor`](../../CoreGraphics/cgcolor.md) instance from which to create a color.
 
 ## See Also
 
-- [init(uiColor: UIColor)](color/init(uicolor:).md)
+### Creating a color from another color
+- [init(uiColor: UIColor)](./init%28uicolor%29.md)
   Creates a color from a UIKit color.
-- [init(nsColor: NSColor)](color/init(nscolor:).md)
+- [init(nsColor: NSColor)](./init%28nscolor%29.md)
   Creates a color from an AppKit color.
-- [var cgColor: CGColor?](color/cgcolor.md)
+- [var cgColor: CGColor?](./cgcolor.md)
   A Core Graphics representation of the color, if available.
 
 

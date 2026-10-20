@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a camera boundary using the provided coder.
 
@@ -19,15 +20,20 @@ Creates a camera boundary using the provided coder.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## Parameters
 
 - `coder`: The decoder to use during initialization.
 
 ## See Also
 
-- [init?(coordinateRegion: MKCoordinateRegion)](mkmapview/cameraboundary-swift.class/init(coordinateregion:).md)
+### Creating a camera boundary
+- [init?(coordinateRegion: MKCoordinateRegion)](./init%28coordinateregion%29.md)
   Creates a camera boundary using the provided coordinate region.
-- [init?(mapRect: MKMapRect)](mkmapview/cameraboundary-swift.class/init(maprect:).md)
+- [init?(mapRect: MKMapRect)](./init%28maprect%29.md)
   Creates a camera boundary using the provided map rectangle.
 
 

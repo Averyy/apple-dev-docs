@@ -1,7 +1,8 @@
 # memoryCapacity
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capacity of the in-memory cache, in bytes.
 
@@ -20,9 +21,13 @@ The capacity of the in-memory cache, in bytes.
 var memoryCapacity: Int { get set }
 ```
 
+```objc
+@property NSUInteger memoryCapacity;
+```
+
 ## Mentions
 
-- [Accessing cached data](accessing-cached-data.md)
+- [Accessing cached data](../accessing-cached-data.md)
 
 #### Discussion
 
@@ -30,7 +35,8 @@ At the time this property is set, the in-memory cache will truncate its contents
 
 ## See Also
 
-- [var currentMemoryUsage: Int](urlcache/currentmemoryusage.md)
+### Getting and setting in-memory cache properties
+- [var currentMemoryUsage: Int](./currentmemoryusage.md)
   The current size of the in-memory cache, in bytes.
 
 

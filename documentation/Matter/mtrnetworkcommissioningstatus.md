@@ -1,7 +1,8 @@
 # MTRNetworkCommissioningStatus
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,34 +19,38 @@
 enum MTRNetworkCommissioningStatus
 ```
 
+```c
+enum MTRNetworkCommissioningStatus : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRNetworkCommissioningStatus.authFailure](mtrnetworkcommissioningstatus/authfailure.md)
-- [MTRNetworkCommissioningStatus.boundsExceeded](mtrnetworkcommissioningstatus/boundsexceeded.md)
-- [MTRNetworkCommissioningStatus.duplicateNetworkID](mtrnetworkcommissioningstatus/duplicatenetworkid.md)
-- [MTRNetworkCommissioningStatus.ipBindFailed](mtrnetworkcommissioningstatus/ipbindfailed.md)
-- [MTRNetworkCommissioningStatus.ipv6Failed](mtrnetworkcommissioningstatus/ipv6failed.md)
-- [MTRNetworkCommissioningStatus.networkIDNotFound](mtrnetworkcommissioningstatus/networkidnotfound.md)
-- [MTRNetworkCommissioningStatus.networkNotFound](mtrnetworkcommissioningstatus/networknotfound.md)
-- [MTRNetworkCommissioningStatus.otherConnectionFailure](mtrnetworkcommissioningstatus/otherconnectionfailure.md)
-- [MTRNetworkCommissioningStatus.outOfRange](mtrnetworkcommissioningstatus/outofrange.md)
-- [MTRNetworkCommissioningStatus.regulatoryError](mtrnetworkcommissioningstatus/regulatoryerror.md)
-- [MTRNetworkCommissioningStatus.success](mtrnetworkcommissioningstatus/success.md)
-- [MTRNetworkCommissioningStatus.unknownError](mtrnetworkcommissioningstatus/unknownerror.md)
-- [MTRNetworkCommissioningStatus.unsupportedSecurity](mtrnetworkcommissioningstatus/unsupportedsecurity.md)
+- [MTRNetworkCommissioningStatus.authFailure](./mtrnetworkcommissioningstatus/authfailure.md)
+- [MTRNetworkCommissioningStatus.boundsExceeded](./mtrnetworkcommissioningstatus/boundsexceeded.md)
+- [MTRNetworkCommissioningStatus.duplicateNetworkID](./mtrnetworkcommissioningstatus/duplicatenetworkid.md)
+- [MTRNetworkCommissioningStatus.ipBindFailed](./mtrnetworkcommissioningstatus/ipbindfailed.md)
+- [MTRNetworkCommissioningStatus.ipv6Failed](./mtrnetworkcommissioningstatus/ipv6failed.md)
+- [MTRNetworkCommissioningStatus.networkIDNotFound](./mtrnetworkcommissioningstatus/networkidnotfound.md)
+- [MTRNetworkCommissioningStatus.networkNotFound](./mtrnetworkcommissioningstatus/networknotfound.md)
+- [MTRNetworkCommissioningStatus.otherConnectionFailure](./mtrnetworkcommissioningstatus/otherconnectionfailure.md)
+- [MTRNetworkCommissioningStatus.outOfRange](./mtrnetworkcommissioningstatus/outofrange.md)
+- [MTRNetworkCommissioningStatus.regulatoryError](./mtrnetworkcommissioningstatus/regulatoryerror.md)
+- [MTRNetworkCommissioningStatus.success](./mtrnetworkcommissioningstatus/success.md)
+- [MTRNetworkCommissioningStatus.unknownError](./mtrnetworkcommissioningstatus/unknownerror.md)
+- [MTRNetworkCommissioningStatus.unsupportedSecurity](./mtrnetworkcommissioningstatus/unsupportedsecurity.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrnetworkcommissioningstatus/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrnetworkcommissioningstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

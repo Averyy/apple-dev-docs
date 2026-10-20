@@ -1,7 +1,8 @@
 # applicationData
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Base64-encoded string for application-specific data.
 
@@ -11,7 +12,7 @@ A Base64-encoded string for application-specific data.
 
 ## Declaration
 
-```swift
+```
 DOMString applicationData;
 ```
 
@@ -21,9 +22,9 @@ Use this property to contain additional data as may be appropriate for your webs
 
 You’re responsible for sending the full application data to your server, if needed.
 
-> ❗ **Important**:  If you use [`RegisterMerchantRequest`](https://developer.apple.com/documentation/applepaywebmerchantregistrationapi/registermerchantrequest) in the [`Apple Pay Web Merchant Registration API`](https://developer.apple.com/documentation/applepaywebmerchantregistrationapi) to register merchants, you must include the merchant domain in [`applicationData`](applepayrequest/applicationdata.md). The payment service provider can use the domain in [`applicationData`](applepayrequest/applicationdata.md) to ensure they know which merchant the payment token is for. The payment service provider uses the value in [`applicationData`](applepayrequest/applicationdata.md) in a step necessary to validate the payment data. For more information, see [`Payment token format reference`](https://developer.apple.com/documentation/passkit/payment-token-format-reference).
+> ❗ **Important**:  If you use [`RegisterMerchantRequest`](../../ApplePayWebMerchantRegistrationAPI/registermerchantrequest.md) in the [Apple Pay Web Merchant Registration API](../../ApplePayWebMerchantRegistrationAPI/ApplePayWebMerchantRegistrationAPI.md) to register merchants, you must include the merchant domain in [`applicationData`](../applepayrequest/applicationdata.md). The payment service provider can use the domain in [`applicationData`](../applepayrequest/applicationdata.md) to ensure they know which merchant the payment token is for. The payment service provider uses the value in [`applicationData`](../applepayrequest/applicationdata.md) in a step necessary to validate the payment data. For more information, see [Payment token format reference](../../PassKit/payment-token-format-reference.md).
 
-The [`applicationData`](applepaypaymentrequest/applicationdata.md) string must be Base64-encoded; otherwise, the system ignores it.
+The [`applicationData`](./applicationdata.md) string must be Base64-encoded; otherwise, the system ignores it.
 
 
 ---

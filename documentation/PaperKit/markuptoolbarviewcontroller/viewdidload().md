@@ -1,7 +1,8 @@
 # viewDidLoad()
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - Mac Catalyst 26.0+

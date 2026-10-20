@@ -1,7 +1,8 @@
 # askToShare()
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Signals your app extension to run and process the request to share a network.
 
@@ -28,12 +29,14 @@ If the person authorizes the system to “Automatically Share” networks to you
 
 > ❗ **Important**: Your container app needs to run in the foreground to submit a new sharing request to your app extension using this API.
 
-– Returns: The [`WINetworkSharingAskToShareState`](winetworksharingasktosharestate.md), indicating a response from the person.
+– Returns: The [`WINetworkSharingAskToShareState`](../winetworksharingasktosharestate.md), indicating a response from the person.
 
-> **Note**: A [`WINetworkSharingError`](winetworksharingerror.md) for various conditions: - [`WINetworkSharingError.appNotInForeground`](winetworksharingerror/appnotinforeground.md): The container app can’t submit a new sharing request because it’s not in the foreground.
-- [`WINetworkSharingError.timeout`](winetworksharingerror/timeout.md): Your app extension didn’t call the [`presentAskToShareUI(scanProvider:)`](winetworksharingprovider/presentasktoshareui(scanprovider:).md) API in response to this call.
-- [`WINetworkSharingError.accessoryNotAuthorized`](winetworksharingerror/accessorynotauthorized.md): The person hasn’t authorized to share network data to the accessory.
-- [`WINetworkSharingError.accessoryNotConnected`](winetworksharingerror/accessorynotconnected.md): The accessory isn’t connected when your container app calls this method.
+> **Throws**: A [`WINetworkSharingError`](../winetworksharingerror.md) for various conditions:
+>
+> - [`WINetworkSharingError.appNotInForeground`](../winetworksharingerror/appnotinforeground.md): The container app can’t submit a new sharing request because it’s not in the foreground.
+> - [`WINetworkSharingError.timeout`](../winetworksharingerror/timeout.md): Your app extension didn’t call the [`presentAskToShareUI(scanProvider:)`](../winetworksharingprovider/presentasktoshareui%28scanprovider%29.md) API in response to this call.
+> - [`WINetworkSharingError.accessoryNotAuthorized`](../winetworksharingerror/accessorynotauthorized.md): The person hasn’t authorized to share network data to the accessory.
+> - [`WINetworkSharingError.accessoryNotConnected`](../winetworksharingerror/accessorynotconnected.md): The accessory isn’t connected when your container app calls this method.
 
 
 ---

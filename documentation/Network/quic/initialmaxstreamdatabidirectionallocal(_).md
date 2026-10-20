@@ -1,7 +1,8 @@
 # initialMaxStreamDataBidirectionalLocal(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the initial_max_stream_data_bidi_local transport parameter on a QUIC connection.
 

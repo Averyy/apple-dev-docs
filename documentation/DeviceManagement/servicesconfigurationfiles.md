@@ -1,7 +1,8 @@
 # ServicesConfigurationFiles
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure managed configuration files for services.
 
@@ -10,7 +11,7 @@ The declaration to configure managed configuration files for services.
 
 ## Declaration
 
-```swift
+```
 object ServicesConfigurationFiles
 ```
 
@@ -46,7 +47,7 @@ The files in the zip archive need to mirror the folder structure and configurati
 
 For example, a configuration with `ServiceType`: `com.apple.sshd` configures sshd to use the files that the `DataAssetReference` provides, instead of the files located at /etc/ssh. The corresponding zip archive needs to contain:
 
-```None
+```
 etc/
 └ ssh/
   ├ moduli
@@ -61,7 +62,7 @@ You can create an executable that uses service configuration files by calling th
 
 > ❗ **Important**:  The system reserves the `com.apple` prefix for built-in services.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -73,7 +74,7 @@ You can create an executable that uses service configuration files by calling th
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration Example
+##### Configuration example
 
 This configuration deploys configuration files for a system service.
 
@@ -91,42 +92,47 @@ This configuration deploys configuration files for a system service.
 
 ## Properties
 
-- `DataAssetReference` (string) *(required)*: The identifier of an asset declaration that contains a reference to the files to use for system service configuration. Ensure that the corresponding asset: - Is of type `com.apple.asset.data`
-- Is a zip archive of an entire directory
-- Has a `Reference` key that includes the `ContentType` and `Hash-SHA-256` keys, which the system requires The system expands the zip archive and stores the data in a well-known location for the service.
+- `DataAssetReference` (string) *(required)*: The identifier of an asset declaration that contains a reference to the files to use for system service configuration. Ensure that the corresponding asset:
+
+  - Is of type `com.apple.asset.data`
+  - Is a zip archive of an entire directory
+  - Has a `Reference` key that includes the `ContentType` and `Hash-SHA-256` keys, which the system requires
+
+  The system expands the zip archive and stores the data in a well-known location for the service.
 - `ServiceType` (string) *(required)*: The identifier of the system service with managed configuration files. Use a reverse DNS style for this identifier.
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
 
 

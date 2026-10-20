@@ -1,7 +1,8 @@
 # NegativeKeyword.Status
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Advertiser-configurable active state for this negative keyword.
 
@@ -10,9 +11,14 @@ Advertiser-configurable active state for this negative keyword.
 
 ## Declaration
 
-```swift
+```
 string NegativeKeyword.Status
 ```
+
+## Possible Values
+
+- `ENABLED`: The negative keyword is active and will suppress ad delivery for matching search queries.
+- `PAUSED`: The negative keyword is paused and will not suppress any search queries until re-enabled.
 
 #### Discussion
 
@@ -26,7 +32,7 @@ This field controls suppression directly; pausing it lets matching search querie
 }
 ```
 
-See [`NegativeKeywordStatus`](negativekeywordstatus.md) for additional context.
+See [`NegativeKeywordStatus`](../negativekeywordstatus.md) for additional context.
 
 
 ---

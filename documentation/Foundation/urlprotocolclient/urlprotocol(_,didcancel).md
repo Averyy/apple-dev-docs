@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the client that an authentication challenge has been canceled.
@@ -21,6 +22,10 @@ Tells the client that an authentication challenge has been canceled.
 func urlProtocol(_ protocol: URLProtocol, didCancel challenge: URLAuthenticationChallenge)
 ```
 
+```objc
+- (void) URLProtocol:(NSURLProtocol *) protocol didCancelAuthenticationChallenge:(NSURLAuthenticationChallenge *) challenge;
+```
+
 ## Parameters
 
 - `protocol`: The URL protocol object sending the message.
@@ -28,7 +33,8 @@ func urlProtocol(_ protocol: URLProtocol, didCancel challenge: URLAuthentication
 
 ## See Also
 
-- [func urlProtocol(URLProtocol, didReceive: URLAuthenticationChallenge)](urlprotocolclient/urlprotocol(_:didreceive:).md)
+### Handling authentication challenges
+- [func urlProtocol(URLProtocol, didReceive: URLAuthenticationChallenge)](./urlprotocol%28_,didreceive%29.md)
   Tells the client that the URL Loading System received an authentication challenge.
 
 

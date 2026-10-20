@@ -1,7 +1,8 @@
 # captureDevicePosition
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the capture device.
 
@@ -15,11 +16,16 @@ The position of the capture device.
 var captureDevicePosition: AVCaptureDevice.Position { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCaptureDevicePosition captureDevicePosition;
+```
+
 ## See Also
 
-- [AVCaptureDevice.Position](../avfoundation/avcapturedevice/position-swift.enum.md)
+### Inspecting the video source
+- [AVCaptureDevice.Position](../../../AVFoundation/avcapturedevice/position-swift.enum.md)
   Constants that indicate the physical position of a capture device.
-- [var captureDeviceType: AVCaptureDevice.DeviceType](arconfiguration/videoformat-swift.class/capturedevicetype.md)
+- [var captureDeviceType: AVCaptureDevice.DeviceType](./capturedevicetype.md)
   The camera that supplies the video format.
 
 

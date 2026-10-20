@@ -1,7 +1,8 @@
 # HumanBodyPoseObservation.JointName.neck
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A joint name that represents the neck.
 
@@ -21,35 +22,36 @@ case neck
 
 ## See Also
 
-- [HumanBodyPoseObservation.JointName.leftAnkle](humanbodyposeobservation/jointname/leftankle.md)
+### Getting the joint names
+- [HumanBodyPoseObservation.JointName.leftAnkle](./leftankle.md)
   A joint name that represents the left ankle.
-- [HumanBodyPoseObservation.JointName.leftEar](humanbodyposeobservation/jointname/leftear.md)
+- [HumanBodyPoseObservation.JointName.leftEar](./leftear.md)
   A joint name that represents the left ear.
-- [HumanBodyPoseObservation.JointName.leftElbow](humanbodyposeobservation/jointname/leftelbow.md)
+- [HumanBodyPoseObservation.JointName.leftElbow](./leftelbow.md)
   A joint name that represents the left elbow.
-- [HumanBodyPoseObservation.JointName.leftEye](humanbodyposeobservation/jointname/lefteye.md)
+- [HumanBodyPoseObservation.JointName.leftEye](./lefteye.md)
   A joint name that represents the left eye.
-- [HumanBodyPoseObservation.JointName.leftHip](humanbodyposeobservation/jointname/lefthip.md)
+- [HumanBodyPoseObservation.JointName.leftHip](./lefthip.md)
   A joint name that represents the left hip.
-- [HumanBodyPoseObservation.JointName.leftKnee](humanbodyposeobservation/jointname/leftknee.md)
+- [HumanBodyPoseObservation.JointName.leftKnee](./leftknee.md)
   A joint name that represents the left knee.
-- [HumanBodyPoseObservation.JointName.leftShoulder](humanbodyposeobservation/jointname/leftshoulder.md)
+- [HumanBodyPoseObservation.JointName.leftShoulder](./leftshoulder.md)
   A joint name that represents the left shoulder.
-- [HumanBodyPoseObservation.JointName.leftWrist](humanbodyposeobservation/jointname/leftwrist.md)
+- [HumanBodyPoseObservation.JointName.leftWrist](./leftwrist.md)
   A joint name that represents the left wrist.
-- [HumanBodyPoseObservation.JointName.nose](humanbodyposeobservation/jointname/nose.md)
+- [HumanBodyPoseObservation.JointName.nose](./nose.md)
   A joint name that represents the nose.
-- [HumanBodyPoseObservation.JointName.rightAnkle](humanbodyposeobservation/jointname/rightankle.md)
+- [HumanBodyPoseObservation.JointName.rightAnkle](./rightankle.md)
   A joint name that represents the right ankle.
-- [HumanBodyPoseObservation.JointName.rightEar](humanbodyposeobservation/jointname/rightear.md)
+- [HumanBodyPoseObservation.JointName.rightEar](./rightear.md)
   A joint name that represents the right ear.
-- [HumanBodyPoseObservation.JointName.rightElbow](humanbodyposeobservation/jointname/rightelbow.md)
+- [HumanBodyPoseObservation.JointName.rightElbow](./rightelbow.md)
   A joint name that represents the right elbow.
-- [HumanBodyPoseObservation.JointName.rightEye](humanbodyposeobservation/jointname/righteye.md)
+- [HumanBodyPoseObservation.JointName.rightEye](./righteye.md)
   A joint name that represents the right eye.
-- [HumanBodyPoseObservation.JointName.rightHip](humanbodyposeobservation/jointname/righthip.md)
+- [HumanBodyPoseObservation.JointName.rightHip](./righthip.md)
   A joint name that represents the right hip.
-- [HumanBodyPoseObservation.JointName.rightKnee](humanbodyposeobservation/jointname/rightknee.md)
+- [HumanBodyPoseObservation.JointName.rightKnee](./rightknee.md)
   A joint name that represents the right knee.
 
 

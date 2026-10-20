@@ -1,7 +1,8 @@
 # repeatCount(_:autoreverses:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Repeats the animation for a specific number of times.
 
@@ -56,6 +57,8 @@ struct ContentView: View {
 }
 ```
 
+[Video: A video that shows a box truck moving from the leading edge of a view to the trailing edge, and back again before looping in the opposite direction.](https://developer.apple.com/tutorials/videos/com.apple.SwiftUI/animation-16-repeat-count.mp4)
+
 The first time the animation runs, the truck moves from the leading edge to the trailing edge of the view. The second time the animation runs, the truck moves from the trailing edge to the leading edge because `autoreverse` is `true`. If `autoreverse` were `false`, the truck would jump back to leading edge before moving to the trailing edge. The third time the animation runs, the truck moves from the leading to the trailing edge of the view.
 
 ## Parameters
@@ -65,11 +68,12 @@ The first time the animation runs, the truck moves from the leading edge to the 
 
 ## See Also
 
-- [func delay(TimeInterval) -> Animation](animation/delay(_:).md)
+### Configuring an animation
+- [func delay(TimeInterval) -> Animation](./delay%28_%29.md)
   Delays the start of the animation by the specified number of seconds.
-- [func repeatForever(autoreverses: Bool) -> Animation](animation/repeatforever(autoreverses:).md)
+- [func repeatForever(autoreverses: Bool) -> Animation](./repeatforever%28autoreverses%29.md)
   Repeats the animation for the lifespan of the view containing the animation.
-- [func speed(Double) -> Animation](animation/speed(_:).md)
+- [func speed(Double) -> Animation](./speed%28_%29.md)
   Changes the duration of an animation by adjusting its speed.
 
 

@@ -1,7 +1,8 @@
 # additionalSafeAreaInsets
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Custom insets that you specify to modify the view controller’s safe area.
 
@@ -18,10 +19,14 @@ Custom insets that you specify to modify the view controller’s safe area.
 var additionalSafeAreaInsets: UIEdgeInsets { get set }
 ```
 
+```objc
+@property (nonatomic) UIEdgeInsets additionalSafeAreaInsets;
+```
+
 ## Mentions
 
-- [Creating a custom container view controller](creating-a-custom-container-view-controller.md)
-- [Positioning content relative to the safe area](positioning-content-relative-to-the-safe-area.md)
+- [Creating a custom container view controller](../creating-a-custom-container-view-controller.md)
+- [Positioning content relative to the safe area](../positioning-content-relative-to-the-safe-area.md)
 
 #### Discussion
 
@@ -31,9 +36,10 @@ You might use this property to extend the safe area to include custom content in
 
 ## See Also
 
-- [Positioning content relative to the safe area](positioning-content-relative-to-the-safe-area.md)
+### Extending the view’s safe area
+- [Positioning content relative to the safe area](../positioning-content-relative-to-the-safe-area.md)
   Position views so that they aren’t obstructed by other content.
-- [func viewSafeAreaInsetsDidChange()](uiviewcontroller/viewsafeareainsetsdidchange.md)
+- [func viewSafeAreaInsetsDidChange()](./viewsafeareainsetsdidchange%28%29.md)
   Called to notify the view controller that the safe area insets of its root view changed.
 
 

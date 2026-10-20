@@ -1,7 +1,8 @@
 # coordinate(alongAxisTensor:withShapeTensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a get-coordindate operation and returns the result tensor.
 
@@ -19,13 +20,17 @@ Creates a get-coordindate operation and returns the result tensor.
 func coordinate(alongAxisTensor axisTensor: MPSGraphTensor, withShapeTensor shapeTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
 ```
 
+```objc
+- (MPSGraphTensor *) coordinateAlongAxisTensor:(MPSGraphTensor *) axisTensor withShapeTensor:(MPSGraphTensor *) shapeTensor name:(NSString *) name;
+```
+
 #### Return Value
 
 A valid MPSGraphTensor object.
 
 #### Discussion
 
-See [`coordinate(alongAxis:withShape:name:)`](mpsgraph/coordinate(alongaxis:withshape:name:).md).
+See [`coordinate(alongAxis:withShape:name:)`](./coordinate%28alongaxis,withshape,name%29.md).
 
 ## Parameters
 

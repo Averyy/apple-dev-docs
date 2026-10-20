@@ -1,7 +1,8 @@
 # dismiss(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.10+
@@ -13,6 +14,10 @@
 func dismiss(_ sender: Any?)
 ```
 
+```objc
+- (void) dismissController:(id) sender;
+```
+
 #### Discussion
 
 ## Parameters
@@ -21,7 +26,8 @@ func dismiss(_ sender: Any?)
 
 ## See Also
 
-- [var storyboard: NSStoryboard?](nsviewcontroller/storyboard.md)
+### Using a Storyboard
+- [var storyboard: NSStoryboard?](./storyboard.md)
   The storyboard from which the view controller was loaded.
 
 

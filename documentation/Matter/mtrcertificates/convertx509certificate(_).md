@@ -1,7 +1,8 @@
 # convertX509Certificate(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 class func convertX509Certificate(_ x509Certificate: Data) -> Data?
+```
+
+```objc
++ (MTRCertificateTLVBytes) convertX509Certificate:(MTRCertificateDERBytes) x509Certificate;
 ```
 
 

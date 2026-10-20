@@ -1,7 +1,8 @@
 # reference
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional closure that provides labeled reference data to include in the model prompt.
 
@@ -26,9 +27,10 @@ The closure receives both the input sample and the model’s response, allowing 
 
 ## See Also
 
-- [let instructions: String](modeljudgeprompt/instructions.md)
+### Customizing judge input
+- [let instructions: String](./instructions.md)
   The system instructions for the model judge.
-- [let evaluationTarget: ((Input.ExpectedValue) -> String)?](modeljudgeprompt/evaluationtarget.md)
+- [let evaluationTarget: ((Input.ExpectedValue) -> String)?](./evaluationtarget.md)
   An optional closure that converts the model’s response to a string for the model prompt.
 
 

@@ -1,7 +1,8 @@
 # AEAssessmentError.Code.multipleParticipantsNotSupported
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A session fails to begin or update with a configuration that contains one or more participant applications because mulitple participant configurations are not supported by the device or platform.
 
@@ -17,13 +18,18 @@ A session fails to begin or update with a configuration that contains one or mor
 case multipleParticipantsNotSupported
 ```
 
+```c
+AEAssessmentErrorMultipleParticipantsNotSupported
+```
+
 ## See Also
 
-- [AEAssessmentError.Code.configurationUpdatesNotSupported](aeassessmenterror/code/configurationupdatesnotsupported.md)
+### Possible errors
+- [AEAssessmentError.Code.configurationUpdatesNotSupported](./configurationupdatesnotsupported.md)
   An active session fails to update its configuration because configuration updates are not supported by the current device or platform.
-- [AEAssessmentError.Code.unknown](aeassessmenterror/code/unknown.md)
+- [AEAssessmentError.Code.unknown](./unknown.md)
   The session encountered an unknown error.
-- [AEAssessmentError.Code.unsupportedPlatform](aeassessmenterror/code/unsupportedplatform.md)
+- [AEAssessmentError.Code.unsupportedPlatform](./unsupportedplatform.md)
   The feature isn’t supported on this platform.
 
 

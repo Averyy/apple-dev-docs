@@ -1,7 +1,8 @@
 # surfaceID
 
 **Framework**: IOSurface  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var surfaceID: UInt32 { get }
+```
+
+```objc
+@property (readonly) uint32_t surfaceID;
 ```
 
 

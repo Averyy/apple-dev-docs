@@ -1,7 +1,8 @@
 # nameAlias
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The normative formal alias of the scalar.
 
@@ -26,7 +27,7 @@ The name of a scalar is immutable and never changed in future versions of the Un
 
 If a scalar has no alias, this property is `nil`.
 
-This property corresponds to the “Name_Alias” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Name_Alias” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

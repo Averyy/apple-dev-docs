@@ -1,7 +1,8 @@
 # init(planarBuffers:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a 4-channel, 32-bit-per-channel interleaved buffer from four 32-bit planar buffers.
 
@@ -11,7 +12,7 @@ Creates a 4-channel, 32-bit-per-channel interleaved buffer from four 32-bit plan
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Creates a 4-channel, 32-bit-per-channel interleaved buffer from four 32-bit plan
 ```swift
 init(planarBuffers: [vImage.PixelBuffer<vImage.PlanarF>])
 ```
+
+Available when `Format` is `vImage.InterleavedFx4`.
 
 #### Discussion
 
@@ -54,23 +57,24 @@ print(interleaved.array)
 
 ## See Also
 
-- [init(planarBuffers: [vImage.PixelBuffer<vImage.Planar8>])](vimage/pixelbuffer/init(planarbuffers:)-727d.md)
+### Creating an interleaved buffer from another buffer
+- [init(planarBuffers: [vImage.PixelBuffer<vImage.Planar8>])](./init%28planarbuffers%29-727d.md)
   Creates a 2-channel, 8-bit-per-channel interleaved buffer from two 8-bit planar buffers.
-- [init(planarBuffers: [vImage.PixelBuffer<vImage.Planar8>])](vimage/pixelbuffer/init(planarbuffers:)-6r9p0.md)
+- [init(planarBuffers: [vImage.PixelBuffer<vImage.Planar8>])](./init%28planarbuffers%29-6r9p0.md)
   Creates a 3-channel, 8-bit-per-channel interleaved buffer from three 8-bit planar buffers.
-- [init(planarBuffers: [vImage.PixelBuffer<vImage.Planar8>])](vimage/pixelbuffer/init(planarbuffers:)-6hkso.md)
+- [init(planarBuffers: [vImage.PixelBuffer<vImage.Planar8>])](./init%28planarbuffers%29-6hkso.md)
   Creates a 4-channel, 8-bit-per-channel interleaved buffer from four 8-bit planar buffers.
-- [init(planarBuffers: [vImage.PixelBuffer<vImage.PlanarF>])](vimage/pixelbuffer/init(planarbuffers:)-8nt2j.md)
+- [init(planarBuffers: [vImage.PixelBuffer<vImage.PlanarF>])](./init%28planarbuffers%29-8nt2j.md)
   Creates a 4-channel, 8-bit-per-channel interleaved buffer from four 32-bit planar buffers.
-- [init(planarBuffers: [vImage.PixelBuffer<vImage.PlanarF>])](vimage/pixelbuffer/init(planarbuffers:)-n2mq.md)
+- [init(planarBuffers: [vImage.PixelBuffer<vImage.PlanarF>])](./init%28planarbuffers%29-n2mq.md)
   Creates a 2-channel, 32-bit-per-channel interleaved buffer from two 32-bit planar buffers.
-- [init(planarBuffers: [vImage.PixelBuffer<vImage.PlanarF>])](vimage/pixelbuffer/init(planarbuffers:)-7wt24.md)
+- [init(planarBuffers: [vImage.PixelBuffer<vImage.PlanarF>])](./init%28planarbuffers%29-7wt24.md)
   Creates a 3-channel, 32-bit-per-channel interleaved buffer from three 32-bit planar buffers.
-- [init(planarBuffers: [vImage.PixelBuffer<vImage.Planar16U>])](vimage/pixelbuffer/init(planarbuffers:)-2575t.md)
+- [init(planarBuffers: [vImage.PixelBuffer<vImage.Planar16U>])](./init%28planarbuffers%29-2575t.md)
   Creates a 4-channel, 16-bit-per-channel interleaved buffer from four 16-bit planar buffers.
-- [init(lumaSource: vImage.PixelBuffer<vImage.Planar8>, chromaSource: vImage.PixelBuffer<vImage.Interleaved8x2>, conversionInfo: vImage_YpCbCrToARGB)](vimage/pixelbuffer/init(lumasource:chromasource:conversioninfo:).md)
+- [init(lumaSource: vImage.PixelBuffer<vImage.Planar8>, chromaSource: vImage.PixelBuffer<vImage.Interleaved8x2>, conversionInfo: vImage_YpCbCrToARGB)](./init%28lumasource,chromasource,conversioninfo%29.md)
   Creates a 4-channel, 8-bit-per-channel interleaved buffer from a planar Yp buffer and a two-channel interleaved CbCr buffer.
-- [init(interleavedBuffer: vImage.PixelBuffer<vImage.Interleaved8x4>)](vimage/pixelbuffer/init(interleavedbuffer:)-35or3.md)
+- [init(interleavedBuffer: vImage.PixelBuffer<vImage.Interleaved8x4>)](./init%28interleavedbuffer%29-35or3.md)
   Creates a 4-channel, 32-bit-per-channel interleaved buffer from a 4-channel, 8-bit-per-channel interleaved buffer.
 
 

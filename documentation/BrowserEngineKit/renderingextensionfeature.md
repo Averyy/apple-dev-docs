@@ -1,7 +1,8 @@
 # RenderingExtensionFeature
 
 **Framework**: BrowserEngineKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Features of a rendering extension.
 
@@ -18,31 +19,32 @@ enum RenderingExtensionFeature
 
 #### Overview
 
-The [`enableFeature(_:)`](renderingextension/enablefeature(_:).md) method of the [`RenderingExtension`](renderingextension.md) protocol takes an argument of this type.
+The [`enableFeature(_:)`](./renderingextension/enablefeature%28_%29.md) method of the [`RenderingExtension`](./renderingextension.md) protocol takes an argument of this type.
 
 ## Topics
 
 ### Rendering features
-- [RenderingExtensionFeature.coreML](renderingextensionfeature/coreml.md)
+- [RenderingExtensionFeature.coreML](./renderingextensionfeature/coreml.md)
   A rendering extension feature that enables the CoreML framework.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [enum ProcessCapability](processcapability.md)
+### Extension capabilities
+- [enum ProcessCapability](./processcapability.md)
   Capabilities of a helper extension process.
-- [class BEProcessCapability](beprocesscapability-76ijx.md)
+- [class BEProcessCapability](./beprocesscapability-76ijx.md)
   Capabilities of a helper extension process.
-- [struct MediaEnvironment](mediaenvironment.md)
+- [struct MediaEnvironment](./mediaenvironment.md)
   An object that identifies a media playback or streaming environment.
-- [class BEMediaEnvironment](bemediaenvironment-15xci.md)
+- [class BEMediaEnvironment](./bemediaenvironment-15xci.md)
   An object that identifies a media playback or streaming environment.
-- [class BEWebContentFilter](bewebcontentfilter.md)
+- [class BEWebContentFilter](./bewebcontentfilter.md)
   An object that represents a web content filter.
 
 

@@ -1,7 +1,8 @@
 # ASImportableCollection
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of items and subcollections for use in import and export.
 
@@ -22,56 +23,57 @@ struct ASImportableCollection
 
 A collection represents a group of items such as a vault or folder.
 
-This type is a representation of `Collection` as defined in the Credential Exchange Format (CXF) specification. You can supply a JSON representation of a CXF `Collection` to initialize an instance of this struct by using a [`JSONDecoder`](https://developer.apple.com/documentation/foundation/jsondecoder) and calling [`decode(_:from:)`](https://developer.apple.com/documentation/foundation/jsondecoder/decode(_:from:)).
+This type is a representation of `Collection` as defined in the Credential Exchange Format (CXF) specification. You can supply a JSON representation of a CXF `Collection` to initialize an instance of this struct by using a [`JSONDecoder`](../Foundation/jsondecoder.md) and calling [`decode(_:from:)`](../Foundation/jsondecoder/decode%28_,from%29.md).
 
 ## Topics
 
 ### Accessing collection properties
-- [var id: Data](asimportablecollection/id.md)
+- [var id: Data](./asimportablecollection/id.md)
   A unique identifier for the collection.
-- [var title: String](asimportablecollection/title.md)
+- [var title: String](./asimportablecollection/title.md)
   The title of the collection.
-- [var subtitle: String?](asimportablecollection/subtitle.md)
+- [var subtitle: String?](./asimportablecollection/subtitle.md)
   The subtitle of the collection, if any.
-- [var items: [ASImportableLinkedItem]](asimportablecollection/items.md)
+- [var items: [ASImportableLinkedItem]](./asimportablecollection/items.md)
   The items that are part of the collection.
-- [struct ASImportableLinkedItem](asimportablelinkeditem.md)
+- [struct ASImportableLinkedItem](./asimportablelinkeditem.md)
   A linked item for use in import and export.
-- [var subcollections: [ASImportableCollection]](asimportablecollection/subcollections.md)
+- [var subcollections: [ASImportableCollection]](./asimportablecollection/subcollections.md)
   Subcollections that are part of the collection.
 ### Initializers
-- [init(id: Data, created: Date?, lastModified: Date?, title: String, subtitle: String?, items: [ASImportableLinkedItem], subcollections: [ASImportableCollection])](asimportablecollection/init(id:created:lastmodified:title:subtitle:items:subcollections:).md)
+- [init(id: Data, created: Date?, lastModified: Date?, title: String, subtitle: String?, items: [ASImportableLinkedItem], subcollections: [ASImportableCollection])](./asimportablecollection/init%28id,created,lastmodified,title,subtitle,items,subcollections%29.md)
 ### Instance Properties
-- [var created: Date?](asimportablecollection/created.md)
+- [var created: Date?](./asimportablecollection/created.md)
   The date and time when the collection was created.
-- [var lastModified: Date?](asimportablecollection/lastmodified.md)
+- [var lastModified: Date?](./asimportablecollection/lastmodified.md)
   The date and time when the collection was last modified.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var id: Data](asimportableaccount/id.md)
+### Accessing account properties
+- [var id: Data](./asimportableaccount/id.md)
   A unique identifier for the account.
-- [var userName: String](asimportableaccount/username.md)
+- [var userName: String](./asimportableaccount/username.md)
   The username associated with the account.
-- [var email: String](asimportableaccount/email.md)
+- [var email: String](./asimportableaccount/email.md)
   The email address associated with this account.
-- [var fullName: String?](asimportableaccount/fullname.md)
+- [var fullName: String?](./asimportableaccount/fullname.md)
   The full name of the account owner, if provided.
-- [var collections: [ASImportableCollection]](asimportableaccount/collections.md)
+- [var collections: [ASImportableCollection]](./asimportableaccount/collections.md)
   The collections stored in this account.
-- [var items: [ASImportableItem]](asimportableaccount/items.md)
+- [var items: [ASImportableItem]](./asimportableaccount/items.md)
   All items stored in the account.
-- [struct ASImportableItem](asimportableitem.md)
+- [struct ASImportableItem](./asimportableitem.md)
   An item for use in import and export.
 
 

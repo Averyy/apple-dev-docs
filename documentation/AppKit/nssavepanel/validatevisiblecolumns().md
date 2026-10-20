@@ -1,17 +1,22 @@
 # validateVisibleColumns()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Validates and reloads the browser columns visible in the panel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func validateVisibleColumns()
+```
+
+```objc
+- (void) validateVisibleColumns;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ Call this method to validate the contents of the panel. For example, you might c
 
 ## See Also
 
-- [func beginSheetModal(for: NSWindow, completionHandler: (NSApplication.ModalResponse) -> Void)](nssavepanel/beginsheetmodal(for:completionhandler:).md)
+### Showing the Panel
+- [func beginSheetModal(for: NSWindow, completionHandler: (NSApplication.ModalResponse) -> Void)](./beginsheetmodal%28for,completionhandler%29.md)
   Presents the panel as a sheet modal to the specified window.
-- [func begin(completionHandler: (NSApplication.ModalResponse) -> Void)](nssavepanel/begin(completionhandler:).md)
+- [func begin(completionHandler: (NSApplication.ModalResponse) -> Void)](./begin%28completionhandler%29.md)
   Presents the panel as a modeless window.
-- [func runModal() -> NSApplication.ModalResponse](nssavepanel/runmodal.md)
+- [func runModal() -> NSApplication.ModalResponse](./runmodal%28%29.md)
   Displays the panel and begins its event loop with the current working (or last-selected) directory as the default starting point.
 
 

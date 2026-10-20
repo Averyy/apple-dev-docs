@@ -1,7 +1,8 @@
 # selectionMode
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,11 +16,16 @@
 var selectionMode: NSPickerTouchBarItem.SelectionMode { get set }
 ```
 
+```objc
+@property NSPickerTouchBarItemSelectionMode selectionMode;
+```
+
 ## See Also
 
-- [var selectedIndex: Int](nspickertouchbaritem/selectedindex.md)
-- [var selectionColor: UIColor?](nspickertouchbaritem/selectioncolor.md)
-- [NSPickerTouchBarItem.SelectionMode](nspickertouchbaritem/selectionmode-swift.enum.md)
+### Handling selection
+- [var selectedIndex: Int](./selectedindex.md)
+- [var selectionColor: UIColor?](./selectioncolor.md)
+- [NSPickerTouchBarItem.SelectionMode](./selectionmode-swift.enum.md)
   Constants that specify selection modes for picker bar items.
 
 

@@ -1,22 +1,23 @@
 # ColorSpec
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct ColorSpec ColorSpec;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [rgb](colorspec/1401382-rgb.md)
-- [value](colorspec/1401508-value.md)
+- [rgb](./colorspec/api-1401382-rgb.md)
+- [value](./colorspec/api-1401508-value.md)
 
 
 ---

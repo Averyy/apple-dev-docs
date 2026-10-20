@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOBlitBeamSyncSwaps](1638318-anonymous/kioblitbeamsyncswaps.md)
-- [kIOBlitFixedSource](1638318-anonymous/kioblitfixedsource.md)
-- [kIOBlitHasCGSSurface](1638318-anonymous/kioblithascgssurface.md)
-- [kIOBlitReferenceSource](1638318-anonymous/kioblitreferencesource.md)
+- [kIOBlitBeamSyncSwaps](./api-1638318-anonymous/kioblitbeamsyncswaps.md)
+- [kIOBlitFixedSource](./api-1638318-anonymous/kioblitfixedsource.md)
+- [kIOBlitHasCGSSurface](./api-1638318-anonymous/kioblithascgssurface.md)
+- [kIOBlitReferenceSource](./api-1638318-anonymous/kioblitreferencesource.md)
 
 
 ---

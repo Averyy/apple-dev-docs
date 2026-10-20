@@ -1,19 +1,20 @@
 # isEqualTo
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the data with a pointer to bytes
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool isEqualTo(const void *bytes, size_t numBytes) const;
 ```
 
@@ -32,11 +33,12 @@ If the passed data has the same length and all bytes are identical, true is retu
 
 ## See Also
 
-- [isEqualTo](osdata/isequalto-2kdml.md)
+### Comparing Data Objects
+- [isEqualTo](./isequalto-2kdml.md)
   Compares the data with an OSData
-- [isEqualTo](osdata/isequalto-4xz0j.md)
+- [isEqualTo](./isequalto-4xz0j.md)
   Compares the data with an OSObject
-- [isEqualTo](osdata/isequalto-5ssf5.md)
+- [isEqualTo](./isequalto-5ssf5.md)
   Compares the data with an OSString
 
 

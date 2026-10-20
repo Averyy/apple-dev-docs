@@ -1,7 +1,8 @@
 # accept(configuration:constants:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Return `accept` to indicate that the interaction should be allowed to start and to specify its constants and initial configuration
 

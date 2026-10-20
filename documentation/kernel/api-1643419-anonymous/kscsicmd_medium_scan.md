@@ -1,7 +1,8 @@
 # kSCSICmd_MEDIUM_SCAN
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSCSICmd_MEDIUM_SCAN = 0x38
 ```
 

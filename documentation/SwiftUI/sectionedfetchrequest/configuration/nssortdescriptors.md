@@ -1,7 +1,8 @@
 # nsSortDescriptors
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request’s sort descriptors, accessed as reference types.
 
@@ -22,13 +23,14 @@ var nsSortDescriptors: [NSSortDescriptor]
 
 #### Discussion
 
-Set this configuration value to cause a [`SectionedFetchRequest`](sectionedfetchrequest.md) to execute a fetch with a new collection of [`NSSortDescriptor`](https://developer.apple.com/documentation/foundation/nssortdescriptor) instances. If you want to use [`SortDescriptor`](https://developer.apple.com/documentation/foundation/sortdescriptor) instances, set [`sortDescriptors`](sectionedfetchrequest/configuration/sortdescriptors.md) instead. Use care to coordinate section and sort updates, as described in [`SectionedFetchRequest.Configuration`](sectionedfetchrequest/configuration.md).
+Set this configuration value to cause a [`SectionedFetchRequest`](../../sectionedfetchrequest.md) to execute a fetch with a new collection of [`NSSortDescriptor`](../../../Foundation/nssortdescriptor.md) instances. If you want to use [`SortDescriptor`](../../../Foundation/sortdescriptor.md) instances, set [`sortDescriptors`](./sortdescriptors.md) instead. Use care to coordinate section and sort updates, as described in [`SectionedFetchRequest.Configuration`](../configuration.md).
 
-Access this value for a given request by using the [`nsSortDescriptors`](sectionedfetchresults/nssortdescriptors.md) property on the associated [`SectionedFetchResults`](sectionedfetchresults.md) instance, either directly or with a [`Binding`](binding.md).
+Access this value for a given request by using the [`nsSortDescriptors`](../../sectionedfetchresults/nssortdescriptors.md) property on the associated [`SectionedFetchResults`](../../sectionedfetchresults.md) instance, either directly or with a [`Binding`](../../binding.md).
 
 ## See Also
 
-- [var sortDescriptors: [SortDescriptor<Result>]](sectionedfetchrequest/configuration/sortdescriptors.md)
+### Setting sort descriptors
+- [var sortDescriptors: [SortDescriptor<Result>]](./sortdescriptors.md)
   The request’s sort descriptors, accessed as value types.
 
 

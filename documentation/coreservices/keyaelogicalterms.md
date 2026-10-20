@@ -1,7 +1,8 @@
 # keyAELogicalTerms
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies a descriptor of type `typeAEList` containing one or more comparison or logical descriptors.
 

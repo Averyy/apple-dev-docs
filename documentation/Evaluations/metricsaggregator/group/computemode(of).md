@@ -1,7 +1,8 @@
 # computeMode(of:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the mode of a metric and adds it to the group.
 

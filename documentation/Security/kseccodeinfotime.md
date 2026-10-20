@@ -1,7 +1,8 @@
 # kSecCodeInfoTime
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is the signing date embedded in the code signature.
 
@@ -15,11 +16,15 @@ A key whose value is the signing date embedded in the code signature.
 let kSecCodeInfoTime: CFString
 ```
 
+```c
+extern CFStringRef const kSecCodeInfoTime;
+```
+
 #### Discussion
 
-The value is a [`CFDate`](https://developer.apple.com/documentation/corefoundation/cfdate) object. Note that a signer is able to omit this date or pre-date it. Therefore, this is not necessarily the date the code was actually signed. However, you do know that this is the date the signer wanted you to see. Ad-hoc signatures never have secured signing dates.
+The value is a [`CFDate`](../CoreFoundation/cfdate.md) object. Note that a signer is able to omit this date or pre-date it. Therefore, this is not necessarily the date the code was actually signed. However, you do know that this is the date the signer wanted you to see. Ad-hoc signatures never have secured signing dates.
 
-Specify the [`kSecCSSigningInformation`](kseccssigninginformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](seccodecopysigninginformation(_:_:_:).md) function to get this information.
+Specify the [`kSecCSSigningInformation`](./kseccssigninginformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](./seccodecopysigninginformation%28_,_,_%29.md) function to get this information.
 
 
 ---

@@ -1,7 +1,8 @@
 # skipForward()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Advance `currentCodeUnitOffset` to the end of the current `Character`, without constructing it.
 

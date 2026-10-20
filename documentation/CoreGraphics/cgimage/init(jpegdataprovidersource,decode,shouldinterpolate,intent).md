@@ -1,7 +1,8 @@
 # init(jpegDataProviderSource:decode:shouldInterpolate:intent:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a bitmap image using JPEG-encoded data supplied by a data provider.
 
@@ -10,7 +11,7 @@ Creates a bitmap image using JPEG-encoded data supplied by a data provider.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Creates a bitmap image using JPEG-encoded data supplied by a data provider.
 init?(jpegDataProviderSource source: CGDataProvider, decode: UnsafePointer<CGFloat>?, shouldInterpolate: Bool, intent: CGColorRenderingIntent)
 ```
 
+```c
+extern CGImageRefCGImageCreateWithJPEGDataProvider(CGDataProviderRef source, const CGFloat *decode, bool shouldInterpolate, CGColorRenderingIntent intent);
+```
+
 #### Return Value
 
-A new CGImage. In Objective-C, you’re responsible for releasing this object by calling [`CGImageRelease`](cgimagerelease.md).
+A new CGImage. In Objective-C, you’re responsible for releasing this object by calling [`CGImageRelease`](../cgimagerelease.md).
 
 ## Parameters
 
@@ -33,11 +38,12 @@ A new CGImage. In Objective-C, you’re responsible for releasing this object by
 
 ## See Also
 
-- [init?(width: Int, height: Int, bitsPerComponent: Int, bitsPerPixel: Int, bytesPerRow: Int, space: CGColorSpace, bitmapInfo: CGBitmapInfo, provider: CGDataProvider, decode: UnsafePointer<CGFloat>?, shouldInterpolate: Bool, intent: CGColorRenderingIntent)](cgimage/init(width:height:bitspercomponent:bitsperpixel:bytesperrow:space:bitmapinfo:provider:decode:shouldinterpolate:intent:).md)
+### Creating images
+- [init?(width: Int, height: Int, bitsPerComponent: Int, bitsPerPixel: Int, bytesPerRow: Int, space: CGColorSpace, bitmapInfo: CGBitmapInfo, provider: CGDataProvider, decode: UnsafePointer<CGFloat>?, shouldInterpolate: Bool, intent: CGColorRenderingIntent)](./init%28width,height,bitspercomponent,bitsperpixel,bytesperrow,space,bitmapinfo,provider,decode,shouldinterpolate,intent%29.md)
   Creates a bitmap image from data supplied by a data provider.
-- [init?(pngDataProviderSource: CGDataProvider, decode: UnsafePointer<CGFloat>?, shouldInterpolate: Bool, intent: CGColorRenderingIntent)](cgimage/init(pngdataprovidersource:decode:shouldinterpolate:intent:).md)
+- [init?(pngDataProviderSource: CGDataProvider, decode: UnsafePointer<CGFloat>?, shouldInterpolate: Bool, intent: CGColorRenderingIntent)](./init%28pngdataprovidersource,decode,shouldinterpolate,intent%29.md)
   Creates a bitmap image using PNG-encoded data supplied by a data provider.
-- [init?(headroom: Float, width: Int, height: Int, bitsPerComponent: Int, bitsPerPixel: Int, bytesPerRow: Int, space: CGColorSpace, bitmapInfo: CGBitmapInfo, provider: CGDataProvider, decode: UnsafePointer<CGFloat>?, shouldInterpolate: Bool, intent: CGColorRenderingIntent)](cgimage/init(headroom:width:height:bitspercomponent:bitsperpixel:bytesperrow:space:bitmapinfo:provider:decode:shouldinterpolate:intent:).md)
+- [init?(headroom: Float, width: Int, height: Int, bitsPerComponent: Int, bitsPerPixel: Int, bytesPerRow: Int, space: CGColorSpace, bitmapInfo: CGBitmapInfo, provider: CGDataProvider, decode: UnsafePointer<CGFloat>?, shouldInterpolate: Bool, intent: CGColorRenderingIntent)](./init%28headroom,width,height,bitspercomponent,bitsperpixel,bytesperrow,space,bitmapinfo,provider,decode,shouldinterpolate,intent%29.md)
 
 
 ---

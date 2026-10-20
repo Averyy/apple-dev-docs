@@ -1,7 +1,8 @@
 # writingToolsCoordinator(_:willChangeTo:completion:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies your delegate of relevant state changes when Writing Tools is running in your view.
 
@@ -14,16 +15,24 @@ Notifies your delegate of relevant state changes when Writing Tools is running i
 ## Declaration
 
 ```swift
+optional func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinator, willChangeTo newState: UIWritingToolsCoordinator.State, completion: @escaping @Sendable () -> Void)
+```
+
+```swift
 optional func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinator, willChangeTo newState: UIWritingToolsCoordinator.State) async
+```
+
+```objc
+- (void) writingToolsCoordinator:(UIWritingToolsCoordinator *) writingToolsCoordinator willChangeToState:(UIWritingToolsCoordinatorState) newState completion:(void (^)()) completion;
 ```
 
 ## Mentions
 
-- [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
+- [Adding Writing Tools support to a custom UIKit view](../../adding-writing-tools-support-to-a-custom-uiview.md)
 
 #### Discussion
 
-Use state transitions to perform actions related to your view or text storage. When Writing Tools is active, it updates its state to indicate what task it’s currently performing. Writing Tools starts in the [`UIWritingToolsCoordinator.State.inactive`](uiwritingtoolscoordinator/state-swift.enum/inactive.md) state and moves to other states as it presents UI and starts interacting with your view’s content. For example, it moves to the [`UIWritingToolsCoordinator.State.interactiveStreaming`](uiwritingtoolscoordinator/state-swift.enum/interactivestreaming.md) state when it’s making changes to your view’s text storage.
+Use state transitions to perform actions related to your view or text storage. When Writing Tools is active, it updates its state to indicate what task it’s currently performing. Writing Tools starts in the [`UIWritingToolsCoordinator.State.inactive`](../state-swift.enum/inactive.md) state and moves to other states as it presents UI and starts interacting with your view’s content. For example, it moves to the [`UIWritingToolsCoordinator.State.interactiveStreaming`](../state-swift.enum/interactivestreaming.md) state when it’s making changes to your view’s text storage.
 
 ## Parameters
 

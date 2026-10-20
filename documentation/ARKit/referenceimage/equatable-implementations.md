@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (ReferenceImage, ReferenceImage) -> Bool](referenceimage/==(_:_:).md)
+- [static func == (ReferenceImage, ReferenceImage) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two reference images are equal.
 
 

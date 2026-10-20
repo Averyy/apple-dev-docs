@@ -1,7 +1,8 @@
 # MTKMesh
 
 **Framework**: MetalKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for the vertex data of a Model I/O mesh, suitable for use in a Metal app.
 
@@ -19,53 +20,58 @@ A container for the vertex data of a Model I/O mesh, suitable for use in a Metal
 class MTKMesh
 ```
 
+```objc
+@interface MTKMesh : NSObject
+```
+
 ## Topics
 
 ### Initialization
-- [init(mesh: MDLMesh, device: any MTLDevice) throws](mtkmesh/init(mesh:device:).md)
+- [init(mesh: MDLMesh, device: any MTLDevice) throws](./mtkmesh/init%28mesh,device%29.md)
   Initializes a MetalKit mesh and its submeshes from a Model I/O mesh.
 ### Loading Meshes from an Asset
-- [class func newMeshes(asset: MDLAsset, device: any MTLDevice) throws -> (modelIOMeshes: [MDLMesh], metalKitMeshes: [MTKMesh])](mtkmesh/newmeshes(asset:device:).md)
+- [class func newMeshes(asset: MDLAsset, device: any MTLDevice) throws -> (modelIOMeshes: [MDLMesh], metalKitMeshes: [MTKMesh])](./mtkmesh/newmeshes%28asset,device%29.md)
 ### Submeshes
-- [var submeshes: [MTKSubmesh]](mtkmesh/submeshes.md)
+- [var submeshes: [MTKSubmesh]](./mtkmesh/submeshes.md)
   An array of submeshes containing index buffers referencing the mesh vertices.
 ### Vertex Properties
-- [var vertexBuffers: [MTKMeshBuffer]](mtkmesh/vertexbuffers.md)
+- [var vertexBuffers: [MTKMeshBuffer]](./mtkmesh/vertexbuffers.md)
   An array of buffers in which mesh vertex data resides.
-- [var vertexCount: Int](mtkmesh/vertexcount.md)
+- [var vertexCount: Int](./mtkmesh/vertexcount.md)
   The number of vertices in the vertex buffers.
-- [var vertexDescriptor: MDLVertexDescriptor](mtkmesh/vertexdescriptor.md)
+- [var vertexDescriptor: MDLVertexDescriptor](./mtkmesh/vertexdescriptor.md)
   A Model I/O vertex descriptor specifying the data layout in the vertex buffers.
 ### Identifying Properties
-- [var name: String](mtkmesh/name.md)
+- [var name: String](./mtkmesh/name.md)
   The name of the mesh.
 ### Constants
-- [Mesh Error Handling](mesh-error-handling.md)
-  Strings used when handling [`NSError`](https://developer.apple.com/documentation/foundation/nserror) messages returned from a mesh initialization method.
+- [Mesh Error Handling](./mesh-error-handling.md)
+  Strings used when handling [`NSError`](../Foundation/nserror.md) messages returned from a mesh initialization method.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTKMeshBuffer](mtkmeshbuffer.md)
+### Model Handling
+- [class MTKMeshBuffer](./mtkmeshbuffer.md)
   A buffer that backs the vertex data of a Model I/O mesh, suitable for use in a Metal app.
-- [class MTKMeshBufferAllocator](mtkmeshbufferallocator.md)
+- [class MTKMeshBufferAllocator](./mtkmeshbufferallocator.md)
   An interface for allocating a MetalKit buffer that backs the vertex data of a Model I/O mesh, suitable for use in a Metal app.
-- [class MTKSubmesh](mtksubmesh.md)
+- [class MTKSubmesh](./mtksubmesh.md)
   A container for the index data of a Model I/O submesh, suitable for use in a Metal app.
-- [Conversion Functions](conversion-functions.md)
+- [Conversion Functions](./conversion-functions.md)
   Convert between Metal and Model I/O vertex representations.
-- [Model Errors](model-errors.md)
+- [Model Errors](./model-errors.md)
   Learn about errors thrown by model handling methods.
 
 

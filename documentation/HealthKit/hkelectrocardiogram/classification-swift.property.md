@@ -1,7 +1,8 @@
 # classification
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ECG’s classification.
 
@@ -19,15 +20,20 @@ The ECG’s classification.
 var classification: HKElectrocardiogram.Classification { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) HKElectrocardiogramClassification classification;
+```
+
 ## See Also
 
-- [HKElectrocardiogram.Classification](hkelectrocardiogram/classification-swift.enum.md)
+### Accessing Overview Information
+- [HKElectrocardiogram.Classification](./classification-swift.enum.md)
   Classifications returned by Apple Watch’s ECG algorithm.
-- [var averageHeartRate: HKQuantity?](hkelectrocardiogram/averageheartrate.md)
+- [var averageHeartRate: HKQuantity?](./averageheartrate.md)
   The user’s average heart rate during the ECG.
-- [var symptomsStatus: HKElectrocardiogram.SymptomsStatus](hkelectrocardiogram/symptomsstatus-swift.property.md)
+- [var symptomsStatus: HKElectrocardiogram.SymptomsStatus](./symptomsstatus-swift.property.md)
   A value that indicates whether the user entered a symptom when they recorded the ECG.
-- [HKElectrocardiogram.SymptomsStatus](hkelectrocardiogram/symptomsstatus-swift.enum.md)
+- [HKElectrocardiogram.SymptomsStatus](./symptomsstatus-swift.enum.md)
   Values indicating whether the user entered a symptom when they recorded the ECG.
 
 

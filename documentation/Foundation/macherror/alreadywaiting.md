@@ -1,7 +1,8 @@
 # alreadyWaiting
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A thread is attempting to wait for an event for which there is already a waiting thread.
 

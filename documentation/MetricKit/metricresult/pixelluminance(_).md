@@ -1,7 +1,8 @@
 # MetricResult.pixelLuminance(_:)
 
 **Framework**: MetricKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -15,8 +16,9 @@ case pixelLuminance(PixelLuminanceMetric)
 
 ## See Also
 
-- [case gpuTime(GPUTimeMetric)](metricresult/gputime(_:).md)
-- [case metalFrameRate(MetalFrameRateMetric)](metricresult/metalframerate(_:).md)
+### Display and GPU
+- [case gpuTime(GPUTimeMetric)](./gputime%28_%29.md)
+- [case metalFrameRate(MetalFrameRateMetric)](./metalframerate%28_%29.md)
 
 
 ---

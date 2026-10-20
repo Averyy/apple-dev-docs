@@ -1,7 +1,8 @@
 # GLKMatrix3MultiplyVector3Array(_:_:_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Multiplies a `3x3` matrix by an array of vectors.
 
@@ -17,6 +18,10 @@ Multiplies a `3x3` matrix by an array of vectors.
 func GLKMatrix3MultiplyVector3Array(_ matrix: GLKMatrix3, _ vectors: UnsafeMutablePointer<GLKVector3>, _ vectorCount: Int)
 ```
 
+```c
+static void GLKMatrix3MultiplyVector3Array(GLKMatrix3 matrix, GLKVector3 *vectors, size_t vectorCount);
+```
+
 ## Parameters
 
 - `matrix`: The matrix multiplicand.
@@ -25,7 +30,8 @@ func GLKMatrix3MultiplyVector3Array(_ matrix: GLKMatrix3, _ vectors: UnsafeMutab
 
 ## See Also
 
-- [func GLKMatrix3MultiplyVector3(GLKMatrix3, GLKVector3) -> GLKVector3](glkmatrix3multiplyvector3(_:_:).md)
+### Performing Mathematical Operations on Vectors
+- [func GLKMatrix3MultiplyVector3(GLKMatrix3, GLKVector3) -> GLKVector3](./glkmatrix3multiplyvector3%28_,_%29.md)
   Multiplies a `3x3` matrix by a vector.
 
 

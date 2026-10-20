@@ -1,7 +1,8 @@
 # VTRAWProcessingSession.Parameter.ListParameter.Element
 
 **Framework**: Video Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 15.0+
@@ -15,15 +16,15 @@ struct Element
 ## Topics
 
 ### Instance Properties
-- [var details: VTRAWProcessingSession.Parameter.Details](vtrawprocessingsession/parameter/listparameter/element/details.md)
-- [var id: Int](vtrawprocessingsession/parameter/listparameter/element/id.md)
+- [var details: VTRAWProcessingSession.Parameter.Details](./element/details.md)
+- [var id: Int](./element/id.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

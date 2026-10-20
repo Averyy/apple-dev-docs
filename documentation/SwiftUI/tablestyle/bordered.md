@@ -1,7 +1,8 @@
 # bordered
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The table style that describes the behavior and appearance of a table with standard border.
 
@@ -15,21 +16,24 @@ The table style that describes the behavior and appearance of a table with stand
 @export(implementation) @preconcurrency static var bordered: BorderedTableStyle { get }
 ```
 
+Available when `Self` is `BorderedTableStyle`.
+
 #### Discussion
 
 Bordered tables are expected to be inset from their outer containers, but do not have inset style rows or selection.
 
-To customize whether the rows of the table should alternate their backgrounds, use [`alternatingRowBackgrounds(_:)`](view/alternatingrowbackgrounds(_:).md).
+To customize whether the rows of the table should alternate their backgrounds, use [`alternatingRowBackgrounds(_:)`](../view/alternatingrowbackgrounds%28_%29.md).
 
 ## See Also
 
-- [static var automatic: AutomaticTableStyle](tablestyle/automatic.md)
+### Getting built-in table styles
+- [static var automatic: AutomaticTableStyle](./automatic.md)
   The default table style in the current context.
-- [static var inset: InsetTableStyle](tablestyle/inset.md)
+- [static var inset: InsetTableStyle](./inset.md)
   The table style that describes the behavior and appearance of a table with its content and selection inset from the table edges.
-- [static func inset(alternatesRowBackgrounds: Bool) -> InsetTableStyle](tablestyle/inset(alternatesrowbackgrounds:).md)
+- [static func inset(alternatesRowBackgrounds: Bool) -> InsetTableStyle](./inset%28alternatesrowbackgrounds%29.md)
   The table style that describes the behavior and appearance of a table with its content and selection inset from the table edges.
-- [static func bordered(alternatesRowBackgrounds: Bool) -> BorderedTableStyle](tablestyle/bordered(alternatesrowbackgrounds:).md)
+- [static func bordered(alternatesRowBackgrounds: Bool) -> BorderedTableStyle](./bordered%28alternatesrowbackgrounds%29.md)
   The table style that describes the behavior and appearance of a table with standard border.
 
 

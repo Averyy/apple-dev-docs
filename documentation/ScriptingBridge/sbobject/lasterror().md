@@ -1,7 +1,8 @@
 # lastError()
 
 **Framework**: Scripting Bridge  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The error from the last event this object sent, or nil if it succeeded.
 
@@ -12,6 +13,10 @@ The error from the last event this object sent, or nil if it succeeded.
 
 ```swift
 func lastError() -> (any Error)?
+```
+
+```objc
+- (NSError *) lastError;
 ```
 
 

@@ -1,7 +1,8 @@
 # unregisterImage(with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unregisters the image with the specified image configuration details from the image asset.
 
@@ -9,13 +10,17 @@ Unregisters the image with the specified image configuration details from the im
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func unregisterImage(with configuration: UIImage.Configuration)
+```
+
+```objc
+- (void) unregisterImageWithConfiguration:(UIImageConfiguration *) configuration;
 ```
 
 #### Discussion
@@ -28,11 +33,12 @@ This method searches for an image whose configuration details match the informat
 
 ## See Also
 
-- [func register(UIImage, with: UITraitCollection)](uiimageasset/register(_:with:)-2plm5.md)
+### Registering and unregistering images
+- [func register(UIImage, with: UITraitCollection)](./register%28_,with%29-2plm5.md)
   Registers an image with the specified trait collection.
-- [func register(UIImage, with: UIImage.Configuration)](uiimageasset/register(_:with:)-89c5b.md)
+- [func register(UIImage, with: UIImage.Configuration)](./register%28_,with%29-89c5b.md)
   Registers an image with the specified image configuration details.
-- [func unregister(imageWith: UITraitCollection)](uiimageasset/unregister(imagewith:).md)
+- [func unregister(imageWith: UITraitCollection)](./unregister%28imagewith%29.md)
   Unregisters the image with the specified trait collection from the image asset.
 
 

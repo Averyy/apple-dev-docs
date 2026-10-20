@@ -1,17 +1,22 @@
 # setDocumentEdited(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the document edited flag for the window controller.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setDocumentEdited(_ dirtyFlag: Bool)
+```
+
+```objc
+- (void) setDocumentEdited:(BOOL) dirtyFlag;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ The window controller uses this flag to control whether its associated window sh
 
 ## Parameters
 
-- `dirtyFlag`: [`true`](https://developer.apple.com/documentation/swift/true) if the document has been edited since its last save, [`false`](https://developer.apple.com/documentation/swift/false) if it hasn’t.
+- `dirtyFlag`: [`true`](../../Swift/true.md) if the document has been edited since its last save, [`false`](../../Swift/false.md) if it hasn’t.
 
 ## See Also
 
-- [var document: AnyObject?](nswindowcontroller/document.md)
+### Accessing the Document
+- [var document: AnyObject?](./document.md)
   The document associated with the window controller.
 
 

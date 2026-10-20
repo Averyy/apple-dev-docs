@@ -1,7 +1,8 @@
 # UIAccessibilityTextualContext
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe a named context that helps identify and classify the type of text inside an element.
 
@@ -19,47 +20,52 @@ Constants that describe a named context that helps identify and classify the typ
 struct UIAccessibilityTextualContext
 ```
 
+```c
+typedef NSString * UIAccessibilityTextualContext;
+```
+
 ## Topics
 
 ### Constants
-- [static let console: UIAccessibilityTextualContext](uiaccessibilitytextualcontext/console.md)
+- [static let console: UIAccessibilityTextualContext](./uiaccessibilitytextualcontext/console.md)
   A constant that indicates the text appears in a console context.
-- [static let fileSystem: UIAccessibilityTextualContext](uiaccessibilitytextualcontext/filesystem.md)
+- [static let fileSystem: UIAccessibilityTextualContext](./uiaccessibilitytextualcontext/filesystem.md)
   A constant that indicates the text appears in a file-system context.
-- [static let messaging: UIAccessibilityTextualContext](uiaccessibilitytextualcontext/messaging.md)
+- [static let messaging: UIAccessibilityTextualContext](./uiaccessibilitytextualcontext/messaging.md)
   A constant that indicates the text appears in a messaging context.
-- [static let narrative: UIAccessibilityTextualContext](uiaccessibilitytextualcontext/narrative.md)
+- [static let narrative: UIAccessibilityTextualContext](./uiaccessibilitytextualcontext/narrative.md)
   A constant that indicates the text appears in a narrative speech context.
-- [static let sourceCode: UIAccessibilityTextualContext](uiaccessibilitytextualcontext/sourcecode.md)
+- [static let sourceCode: UIAccessibilityTextualContext](./uiaccessibilitytextualcontext/sourcecode.md)
   A constant that indicates the text appears in a source-code context.
-- [static let spreadsheet: UIAccessibilityTextualContext](uiaccessibilitytextualcontext/spreadsheet.md)
+- [static let spreadsheet: UIAccessibilityTextualContext](./uiaccessibilitytextualcontext/spreadsheet.md)
   A constant that indicates the text appears in a spreadsheet context.
-- [static let wordProcessing: UIAccessibilityTextualContext](uiaccessibilitytextualcontext/wordprocessing.md)
+- [static let wordProcessing: UIAccessibilityTextualContext](./uiaccessibilitytextualcontext/wordprocessing.md)
   A constant that indicates the text appears in a word-processing context.
 ### Initializers
-- [init(String)](uiaccessibilitytextualcontext/init(_:).md)
+- [init(String)](./uiaccessibilitytextualcontext/init%28_%29.md)
   Creates a textual context.
-- [init(rawValue: String)](uiaccessibilitytextualcontext/init(rawvalue:).md)
+- [init(rawValue: String)](./uiaccessibilitytextualcontext/init%28rawvalue%29.md)
   Creates a textual context with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UIAccessibilityFocus](../objectivec/uiaccessibilityfocus.md)
+### Behaviors
+- [UIAccessibilityFocus](../ObjectiveC/uiaccessibilityfocus.md)
   An informal protocol that provides a way to determine whether an assistive app, such as VoiceOver, has focus on an accessible element.
-- [protocol UIAccessibilityIdentification](uiaccessibilityidentification.md)
+- [protocol UIAccessibilityIdentification](./uiaccessibilityidentification.md)
   Methods that associate a unique identifier with elements in your user interface.
-- [protocol UIAccessibilityReadingContent](uiaccessibilityreadingcontent.md)
+- [protocol UIAccessibilityReadingContent](./uiaccessibilityreadingcontent.md)
   Methods to implement for an object that represents content that users read, such as a book or an article.
-- [protocol UIAccessibilityContentSizeCategoryImageAdjusting](uiaccessibilitycontentsizecategoryimageadjusting.md)
+- [protocol UIAccessibilityContentSizeCategoryImageAdjusting](./uiaccessibilitycontentsizecategoryimageadjusting.md)
   Methods to determine when to adjust images for different content size categories.
 
 

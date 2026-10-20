@@ -1,7 +1,8 @@
 # VZDiskImageSynchronizationMode.fsync
 
 **Framework**: Virtualization  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Synchronizes data to the drive using the system’s best-effort synchronization mode.
 
@@ -14,6 +15,10 @@ Synchronizes data to the drive using the system’s best-effort synchronization 
 case fsync
 ```
 
+```c
+VZDiskImageSynchronizationModeFsync
+```
+
 #### Discussion
 
 This mode synchronizes the data with the drive, but doesn’t ensure the data moves from the disk’s internal cache to permanent storage.
@@ -22,9 +27,10 @@ This is a best-effort mode with the same guarantees as the `fsync(_:)` system ca
 
 ## See Also
 
-- [VZDiskImageSynchronizationMode.full](vzdiskimagesynchronizationmode/full.md)
+### Disk image synchronization modes
+- [VZDiskImageSynchronizationMode.full](./full.md)
   Synchronizes data to the permanent storage holding the disk image.
-- [VZDiskImageSynchronizationMode.none](vzdiskimagesynchronizationmode/none.md)
+- [VZDiskImageSynchronizationMode.none](./none.md)
   Disables data synchronization with the permanent storage.
 
 

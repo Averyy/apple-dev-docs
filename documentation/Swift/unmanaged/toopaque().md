@@ -1,7 +1,8 @@
 # toOpaque()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unsafely converts an unmanaged class reference to a pointer.
 

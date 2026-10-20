@@ -1,12 +1,15 @@
 # NSScroller.UsableParts.noScrollerParts
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the scroller has neither a knob nor scroll buttons, only the knob slot.
 
 **Availability**:
-- macOS ?+
+- macOS
+
+> **Deprecated**: This enum is not needed in macOS 10.7 and later.
 
 ## Declaration
 
@@ -14,11 +17,16 @@ Specifies that the scroller has neither a knob nor scroll buttons, only the knob
 case noScrollerParts
 ```
 
+```c
+NSNoScrollerParts
+```
+
 ## See Also
 
-- [NSScroller.UsableParts.allScrollerParts](nsscroller/usableparts-swift.enum/allscrollerparts.md)
+### Constants
+- [NSScroller.UsableParts.allScrollerParts](./allscrollerparts.md)
   Specifies that the scroller has at least a knob, possibly also scroll buttons.
-- [NSScroller.UsableParts.onlyScrollerArrows](nsscroller/usableparts-swift.enum/onlyscrollerarrows.md)
+- [NSScroller.UsableParts.onlyScrollerArrows](./onlyscrollerarrows.md)
   Specifies that the scroller has only scroll buttons, no knob.
 
 

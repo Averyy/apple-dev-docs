@@ -1,7 +1,8 @@
 # Managed Application List
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the status of all managed apps on a device.
 
@@ -16,7 +17,7 @@ Get the status of all managed apps on a device.
 
 ## Mentions
 
-- [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
+- [Implementing Platform SSO for unattended device enrollment](./implementing-platform-sso-for-unattended-device-enrollment.md)
 
 #### Discussion
 
@@ -28,7 +29,7 @@ This command doesn’t return apps that Declarative Device Management is managin
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -38,7 +39,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowAppInstallation |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -96,9 +97,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object ManagedApplicationListCommand](managedapplicationlistcommand.md)
+- [object ManagedApplicationListCommand](./managedapplicationlistcommand.md)
   The command to get the status of all managed apps on a device.
-- [object ManagedApplicationListResponse](managedapplicationlistresponse.md)
+- [object ManagedApplicationListResponse](./managedapplicationlistresponse.md)
   A response from the device after it processes the command to get the status of all managed apps on a device.
 
 ## Endpoint
@@ -107,27 +108,35 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `ManagedApplicationListCommand`
+
 The request object the server returns for the Managed Application List Command.
+
+## Responses
+
+- `200` OK (`ManagedApplicationListResponse`, `application/xml`): The response object the system returns for the Managed Application List Command.
 
 ## See Also
 
-- [Install Application](install-application-command.md)
+### Managed apps
+- [Install Application](./install-application-command.md)
   Install a third-party app on a device.
-- [Install Enterprise Application](install-enterprise-application-command.md)
+- [Install Enterprise Application](./install-enterprise-application-command.md)
   Install an enterprise app on a device.
-- [Installed Application List](installed-application-list-command.md)
+- [Installed Application List](./installed-application-list-command.md)
   Get a list of the installed apps on a device.
-- [Remove Application](remove-application-command.md)
+- [Remove Application](./remove-application-command.md)
   Remove an app.
-- [Apply Redemption Code](apply-redemption-code-command.md)
+- [Apply Redemption Code](./apply-redemption-code-command.md)
   Complete the installation of an app using a redemption code.
-- [Validate Applications](validate-applications-command.md)
+- [Validate Applications](./validate-applications-command.md)
   Force validation of developer and universal provisioning profiles for enterprise apps.
-- [Managed Application Attributes](managed-application-attributes-command.md)
+- [Managed Application Attributes](./managed-application-attributes-command.md)
   Query attributes in managed apps on a device.
-- [Managed Application Configuration](managed-application-configuration-command.md)
+- [Managed Application Configuration](./managed-application-configuration-command.md)
   Get app configurations from managed apps on a device.
-- [Managed Application Feedback](managed-application-feedback-command.md)
+- [Managed Application Feedback](./managed-application-feedback-command.md)
   Get app feedback from a managed app on the device.
 
 

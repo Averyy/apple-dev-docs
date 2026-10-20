@@ -1,7 +1,8 @@
 # MTLTensorDataType.uint2
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 2-bit unsigned integer data type.
 
@@ -17,6 +18,10 @@ A 2-bit unsigned integer data type.
 
 ```swift
 case uint2
+```
+
+```c
+MTLTensorDataTypeUInt2
 ```
 
 

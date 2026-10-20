@@ -1,7 +1,8 @@
 # CPTrafficSide
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that represent which side of the road the traffic drives on.
 
@@ -16,37 +17,42 @@ Values that represent which side of the road the traffic drives on.
 enum CPTrafficSide
 ```
 
+```c
+enum CPTrafficSide : NSUInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init?(rawValue: UInt)](cptrafficside/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./cptrafficside/init%28rawvalue%29.md)
   Creates a traffic side-of-the-road enumeration item with the provided value.
 ### Lane statuses
-- [CPTrafficSide.right](cptrafficside/right.md)
+- [CPTrafficSide.right](./cptrafficside/right.md)
   Indicates the traffic drives on the right side of the roadway.
-- [CPTrafficSide.left](cptrafficside/left.md)
+- [CPTrafficSide.left](./cptrafficside/left.md)
   Indicates the traffic drives on the left side of the roadway.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum CPInstrumentClusterSetting](cpinstrumentclustersetting.md)
-- [enum CPJunctionType](cpjunctiontype.md)
+### Enumerations
+- [enum CPInstrumentClusterSetting](./cpinstrumentclustersetting.md)
+- [enum CPJunctionType](./cpjunctiontype.md)
   Values that represent types of roadway junctions.
-- [enum CPManeuverState](cpmaneuverstate.md)
+- [enum CPManeuverState](./cpmaneuverstate.md)
   Values that describe the state of a maneuver.
-- [enum CPManeuverType](cpmaneuvertype.md)
+- [enum CPManeuverType](./cpmaneuvertype.md)
   Values that describe types of navigation maneuvers.
-- [enum CPLaneStatus](cplanestatus.md)
+- [enum CPLaneStatus](./cplanestatus.md)
   Values that describe the status or preferability of a lane.
 
 

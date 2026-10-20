@@ -1,7 +1,8 @@
 # init(positiveX:negativeX:positiveY:negativeY:positiveZ:negativeZ:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+

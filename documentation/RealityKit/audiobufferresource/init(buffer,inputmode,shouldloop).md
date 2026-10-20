@@ -1,15 +1,18 @@
 # init(buffer:inputMode:shouldLoop:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Init an AudioBufferResource from an `AVAudioBuffer` instead of a file location. This is intended for use with `AVSpeechSynthesisVoice`.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
+- iOS 15.0+ - Deprecated in 18.0
+- iPadOS 15.0+ - Deprecated in 18.0
+- Mac Catalyst 15.0+ - Deprecated in 18.0
+- macOS 12.0+ - Deprecated in 15.0
+
+> **Deprecated**: Use AudioBufferResource.init(buffer:configuration:) instead.
 
 ## Declaration
 
@@ -20,7 +23,7 @@ Init an AudioBufferResource from an `AVAudioBuffer` instead of a file location. 
 
 #### Discussion
 
-> **Note**: This function throws an error when the `AVAudioBuffer`  cannot be cast or converted to `AVAudioPCMBuffer`.
+> **Throws**: This function throws an error when the `AVAudioBuffer`  cannot be cast or converted to `AVAudioPCMBuffer`.
 
 ## Parameters
 
@@ -29,7 +32,8 @@ Init an AudioBufferResource from an `AVAudioBuffer` instead of a file location. 
 
 ## See Also
 
-- [var shouldLoop: Bool](audiobufferresource/shouldloop.md)
+### Deprecated
+- [var shouldLoop: Bool](./shouldloop.md)
   Whether or not this file loops during playback. This should be set for assets that are prepared as seamless loops. A looping resource will play forever until it is explicitly told to stop.
 
 

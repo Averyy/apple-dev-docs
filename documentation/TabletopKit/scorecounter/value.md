@@ -1,7 +1,8 @@
 # value
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current value of the score counter.
 

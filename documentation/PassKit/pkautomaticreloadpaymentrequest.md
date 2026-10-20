@@ -1,7 +1,8 @@
 # PKAutomaticReloadPaymentRequest
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents a request to set up an automatic reload payment, such as a store card top-up or a prepaid account.
 
@@ -18,56 +19,61 @@ A class that represents a request to set up an automatic reload payment, such as
 class PKAutomaticReloadPaymentRequest
 ```
 
+```objc
+@interface PKAutomaticReloadPaymentRequest : NSObject
+```
+
 #### Overview
 
-> ❗ **Important**:  You must set the [`automaticReloadPaymentRequest`](pkpaymentrequest/automaticreloadpaymentrequest.md) property on a [`PKPaymentRequest`](pkpaymentrequest.md) object to use the [`PKAutomaticReloadPaymentRequest`](pkautomaticreloadpaymentrequest.md) class and set up an automatic reload payment.
+> ❗ **Important**:  You must set the [`automaticReloadPaymentRequest`](./pkpaymentrequest/automaticreloadpaymentrequest.md) property on a [`PKPaymentRequest`](./pkpaymentrequest.md) object to use the [`PKAutomaticReloadPaymentRequest`](./pkautomaticreloadpaymentrequest.md) class and set up an automatic reload payment.
 
 Apple Pay issues an Apple Pay Merchant Token if the user’s payment network supports merchant-specific payment tokens. Otherwise, Apple Pay issues a device token for the payment request.
 
-Use a [`PKAutomaticReloadPaymentRequest`](pkautomaticreloadpaymentrequest.md) object to provide the user with payment details and a way to manage payment methods for an automatic reload payment. You can optionally display a billing agreement and set up merchant token life cycle notifications for the request.
+Use a [`PKAutomaticReloadPaymentRequest`](./pkautomaticreloadpaymentrequest.md) object to provide the user with payment details and a way to manage payment methods for an automatic reload payment. You can optionally display a billing agreement and set up merchant token life cycle notifications for the request.
 
 ## Topics
 
 ### Creating an automatic reload payment request
-- [init(paymentDescription: String, automaticReloadBilling: PKAutomaticReloadPaymentSummaryItem, managementURL: URL)](pkautomaticreloadpaymentrequest/init(paymentdescription:automaticreloadbilling:managementurl:).md)
+- [init(paymentDescription: String, automaticReloadBilling: PKAutomaticReloadPaymentSummaryItem, managementURL: URL)](./pkautomaticreloadpaymentrequest/init%28paymentdescription,automaticreloadbilling,managementurl%29.md)
   Create an automatic reload payment object with a description, automatic billing information, and a management URL.
 ### Describing an automatic reload payment
-- [var paymentDescription: String](pkautomaticreloadpaymentrequest/paymentdescription.md)
+- [var paymentDescription: String](./pkautomaticreloadpaymentrequest/paymentdescription.md)
   A description that you provide of the automatic reload payment and that Apple Pay displays to the user in the payment sheet.
-- [var billingAgreement: String?](pkautomaticreloadpaymentrequest/billingagreement.md)
+- [var billingAgreement: String?](./pkautomaticreloadpaymentrequest/billingagreement.md)
   A localized billing agreement that the payment sheet displays to the user before the user authorizes the payment.
 ### Setting the payment summary items
-- [var automaticReloadBilling: PKAutomaticReloadPaymentSummaryItem](pkautomaticreloadpaymentrequest/automaticreloadbilling.md)
+- [var automaticReloadBilling: PKAutomaticReloadPaymentSummaryItem](./pkautomaticreloadpaymentrequest/automaticreloadbilling.md)
   Summary items that contain the top-up amount and balance threshold amount for the automatic reload payment.
-- [class PKAutomaticReloadPaymentSummaryItem](pkautomaticreloadpaymentsummaryitem.md)
+- [class PKAutomaticReloadPaymentSummaryItem](./pkautomaticreloadpaymentsummaryitem.md)
   An object that defines a summary item for an automatic reload or refill payment, such as a store card top-up.
 ### Managing payment tokens
-- [var managementURL: URL](pkautomaticreloadpaymentrequest/managementurl.md)
+- [var managementURL: URL](./pkautomaticreloadpaymentrequest/managementurl.md)
   A URL to a web page where the user can manage and delete the payment method for the automatic reload payment.
-- [var tokenNotificationURL: URL?](pkautomaticreloadpaymentrequest/tokennotificationurl.md)
+- [var tokenNotificationURL: URL?](./pkautomaticreloadpaymentrequest/tokennotificationurl.md)
   A URL you provide to receive life-cycle notifications from the Apple Pay servers about the Apple Pay merchant token for the automatic reload payment.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PKPaymentRequest](pkpaymentrequest.md)
+### Payment requests
+- [class PKPaymentRequest](./pkpaymentrequest.md)
   An object that represents a request for payment, including details about payment-processing capabilities, the payment amount, and shipping information.
-- [class PKRecurringPaymentRequest](pkrecurringpaymentrequest.md)
+- [class PKRecurringPaymentRequest](./pkrecurringpaymentrequest.md)
   A class that represents a request to set up a recurring payment, typically a subscription.
-- [class PKDeferredPaymentRequest](pkdeferredpaymentrequest.md)
+- [class PKDeferredPaymentRequest](./pkdeferredpaymentrequest.md)
   An object that represents a request to set up a deferred payment, such as a hotel booking or a pre-order.
-- [class PKPaymentTokenContext](pkpaymenttokencontext.md)
+- [class PKPaymentTokenContext](./pkpaymenttokencontext.md)
   A class that defines the context for a single payment token in a payment request for multimerchant payments.
 
 

@@ -1,7 +1,8 @@
 # CLMonitor.Event.State
 
 **Framework**: Core Location  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that represents the state of the monitoring event.
 

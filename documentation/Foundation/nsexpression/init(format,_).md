@@ -1,7 +1,8 @@
 # init(format:_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the expression with the expression format and arguments list you specify.
 
@@ -27,13 +28,14 @@ convenience init(format expressionFormat: String, _ args: any CVarArg...)
 
 ## See Also
 
-- [init(expressionType: NSExpression.ExpressionType)](nsexpression/init(expressiontype:).md)
+### Creating an Expression
+- [init(expressionType: NSExpression.ExpressionType)](./init%28expressiontype%29.md)
   Creates the expression with the specified expression type.
-- [init(format: String, argumentArray: [Any])](nsexpression/init(format:argumentarray:).md)
+- [init(format: String, argumentArray: [Any])](./init%28format,argumentarray%29.md)
   Creates the expression with the specified expression format and array of arguments.
-- [init(format: String, arguments: CVaListPointer)](nsexpression/init(format:arguments:).md)
+- [init(format: String, arguments: CVaListPointer)](./init%28format,arguments%29.md)
   Creates the expression with the specified expression format and arguments list.
-- [init?(coder: NSCoder)](nsexpression/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates an expression by decoding from the coder you specify.
 
 

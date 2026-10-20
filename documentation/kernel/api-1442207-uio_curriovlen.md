@@ -1,14 +1,15 @@
 # uio_curriovlen
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 user_size_t uio_curriovlen(uio_t a_uio);
 ```
 

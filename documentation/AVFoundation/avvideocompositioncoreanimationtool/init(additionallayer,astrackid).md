@@ -1,7 +1,8 @@
 # init(additionalLayer:asTrackID:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Adds a Core Animation layer to the video composition.
 
@@ -19,6 +20,10 @@ Adds a Core Animation layer to the video composition.
 convenience init(additionalLayer layer: sending CALayer, asTrackID trackID: CMPersistentTrackID)
 ```
 
+```objc
++ (instancetype) videoCompositionCoreAnimationToolWithAdditionalLayer:(CALayer *) layer asTrackID:(CMPersistentTrackID) trackID;
+```
+
 #### Return Value
 
 A new Core Animation tool for the layer.
@@ -32,17 +37,20 @@ Video composition instructions should reference `trackID` where the rendered ani
 ## Parameters
 
 - `layer`: The Core Animation layer to add.
-- `trackID`: A track ID to identify the track. `trackID` should not match any real trackID in the source.
+- `trackID`: A track ID to identify the track.
+
+  `trackID` should not match any real trackID in the source.
 
 ## See Also
 
-- [convenience init(postProcessingAsVideoLayer: CALayer, in: CALayer)](avvideocompositioncoreanimationtool/init(postprocessingasvideolayer:in:).md)
+### Creating a composition tool
+- [convenience init(postProcessingAsVideoLayer: CALayer, in: CALayer)](./init%28postprocessingasvideolayer,in%29.md)
   Composes the composited video frame with a Core Animation layer.
-- [convenience init(postProcessingAsVideoLayers: [CALayer], in: CALayer)](avvideocompositioncoreanimationtool/init(postprocessingasvideolayers:in:).md)
+- [convenience init(postProcessingAsVideoLayers: [CALayer], in: CALayer)](./init%28postprocessingasvideolayers,in%29.md)
   Composes the composited video frames with the Core Animation layer.
-- [convenience init(configuration: sending AVVideoCompositionCoreAnimationTool.Configuration)](avvideocompositioncoreanimationtool/init(configuration:).md)
+- [convenience init(configuration: sending AVVideoCompositionCoreAnimationTool.Configuration)](./init%28configuration%29.md)
   Compose the composited video frames with the Core Animation layer.
-- [AVVideoCompositionCoreAnimationTool.Configuration](avvideocompositioncoreanimationtool/configuration.md)
+- [AVVideoCompositionCoreAnimationTool.Configuration](./configuration.md)
   Configurable properties for initializing a new AVVideoCompositionCoreAnimationTool instance.
 
 

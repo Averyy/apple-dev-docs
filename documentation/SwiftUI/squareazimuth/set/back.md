@@ -1,9 +1,10 @@
 # back
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-A set containing only [`SquareAzimuth.back`](squareazimuth/back.md).
+A set containing only [`SquareAzimuth.back`](../back.md).
 
 **Availability**:
 - visionOS 2.0+

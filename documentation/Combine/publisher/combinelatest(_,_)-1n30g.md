@@ -1,7 +1,8 @@
 # combineLatest(_:_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Subscribes to an additional publisher and invokes a closure upon receiving output from either publisher.
 
@@ -69,15 +70,16 @@ All upstream publishers need to finish for this publisher to finish. If an upstr
 
 ## See Also
 
-- [func combineLatest<P>(P) -> Publishers.CombineLatest<Self, P>](publisher/combinelatest(_:).md)
+### Collecting and republishing the latest elements from multiple publishers
+- [func combineLatest<P>(P) -> Publishers.CombineLatest<Self, P>](./combinelatest%28_%29.md)
   Subscribes to an additional publisher and publishes a tuple upon receiving output from either publisher.
-- [func combineLatest<P, Q, T>(P, Q, (Self.Output, P.Output, Q.Output) -> T) -> Publishers.Map<Publishers.CombineLatest3<Self, P, Q>, T>](publisher/combinelatest(_:_:_:)-6ekpz.md)
+- [func combineLatest<P, Q, T>(P, Q, (Self.Output, P.Output, Q.Output) -> T) -> Publishers.Map<Publishers.CombineLatest3<Self, P, Q>, T>](./combinelatest%28_,_,_%29-6ekpz.md)
   Subscribes to two additional publishers and invokes a closure upon receiving output from any of the publishers.
-- [func combineLatest<P, Q>(P, Q) -> Publishers.CombineLatest3<Self, P, Q>](publisher/combinelatest(_:_:)-5crqg.md)
+- [func combineLatest<P, Q>(P, Q) -> Publishers.CombineLatest3<Self, P, Q>](./combinelatest%28_,_%29-5crqg.md)
   Subscribes to two additional publishers and publishes a tuple upon receiving output from any of the publishers.
-- [func combineLatest<P, Q, R, T>(P, Q, R, (Self.Output, P.Output, Q.Output, R.Output) -> T) -> Publishers.Map<Publishers.CombineLatest4<Self, P, Q, R>, T>](publisher/combinelatest(_:_:_:_:).md)
+- [func combineLatest<P, Q, R, T>(P, Q, R, (Self.Output, P.Output, Q.Output, R.Output) -> T) -> Publishers.Map<Publishers.CombineLatest4<Self, P, Q, R>, T>](./combinelatest%28_,_,_,_%29.md)
   Subscribes to three additional publishers and invokes a closure upon receiving output from any of the publishers.
-- [func combineLatest<P, Q, R>(P, Q, R) -> Publishers.CombineLatest4<Self, P, Q, R>](publisher/combinelatest(_:_:_:)-48buc.md)
+- [func combineLatest<P, Q, R>(P, Q, R) -> Publishers.CombineLatest4<Self, P, Q, R>](./combinelatest%28_,_,_%29-48buc.md)
   Subscribes to three additional publishers and publishes a tuple upon receiving output from any of the publishers.
 
 

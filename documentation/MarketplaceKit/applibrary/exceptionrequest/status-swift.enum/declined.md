@@ -1,7 +1,8 @@
 # AppLibrary.ExceptionRequest.Status.declined
 
 **Framework**: MarketplaceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates the parent or guardian disallows a specific app installation.
 
@@ -17,9 +18,10 @@ case declined
 
 ## See Also
 
-- [AppLibrary.ExceptionRequest.Status.approved](applibrary/exceptionrequest/status-swift.enum/approved.md)
+### Determining the status
+- [AppLibrary.ExceptionRequest.Status.approved](./approved.md)
   A status that indicates the parent or guardian allows a specific app installation.
-- [AppLibrary.ExceptionRequest.Status.pending](applibrary/exceptionrequest/status-swift.enum/pending.md)
+- [AppLibrary.ExceptionRequest.Status.pending](./pending.md)
   A status that indicates an app installation awaits the decision of a parent or guardian.
 
 

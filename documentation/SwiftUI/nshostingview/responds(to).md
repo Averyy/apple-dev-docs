@@ -1,7 +1,8 @@
 # responds(to:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
@@ -15,8 +16,9 @@
 
 ## See Also
 
-- [func forwardingTarget(for: Selector!) -> Any?](nshostingview/forwardingtarget(for:).md)
-- [func doCommand(by: Selector)](nshostingview/docommand(by:).md)
+### Responding to actions
+- [func forwardingTarget(for: Selector!) -> Any?](./forwardingtarget%28for%29.md)
+- [func doCommand(by: Selector)](./docommand%28by%29.md)
 
 
 ---

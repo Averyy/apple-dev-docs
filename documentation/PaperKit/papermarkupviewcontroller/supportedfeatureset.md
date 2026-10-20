@@ -1,7 +1,8 @@
 # supportedFeatureSet
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The supported PaperKit features on this canvas.
 
@@ -14,6 +15,15 @@ The supported PaperKit features on this canvas.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+@MainActor
+@preconcurrency var supportedFeatureSet: FeatureSet { get }
+```
+
+*macOS*
+
 ```swift
 @MainActor
 @preconcurrency final let supportedFeatureSet: FeatureSet
@@ -21,11 +31,12 @@ The supported PaperKit features on this canvas.
 
 ## See Also
 
-- [var markup: PaperMarkup?](papermarkupviewcontroller/markup.md)
+### Displaying markup
+- [var markup: PaperMarkup?](./markup.md)
   The paper data that this view controller displays.
-- [var contentView: UIView?](papermarkupviewcontroller/contentview-4aeda.md)
+- [var contentView: UIView?](./contentview-4aeda.md)
   The content that markup appears on top of.
-- [var contentView: NSView?](papermarkupviewcontroller/contentview-4hbkf.md)
+- [var contentView: NSView?](./contentview-4hbkf.md)
   The content that markup appears on top of.
 
 

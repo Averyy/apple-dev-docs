@@ -1,7 +1,8 @@
 # fetchAllSubscriptions
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches all subscriptions in the schema.
 
@@ -10,25 +11,26 @@ Fetches all subscriptions in the schema.
 
 ## Declaration
 
-```swift
+```
 Promise<CloudKit.SubscriptionsResponse, CloudKit.CKError> fetchAllSubscriptions();
 ```
 
 #### Return Value
 
-A `Promise` object that resolves to a [`CloudKit.SubscriptionsResponse`](cloudkit.subscriptionsresponse.md) object , or rejects to a [`CKError`](cloudkit/ckerror.md) object.
+A `Promise` object that resolves to a [`CloudKit.SubscriptionsResponse`](../cloudkit.subscriptionsresponse.md) object , or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
 #### Discussion
 
-See [`Fetching Subscriptions (subscriptions/list)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/GetSubscriptions.html#//apple_ref/doc/uid/TP40015240-CH16) in [`CloudKit Web Services Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/index.html#//apple_ref/doc/uid/TP40015240).
+See [Fetching Subscriptions (subscriptions/list)](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/GetSubscriptions.html#//apple_ref/doc/uid/TP40015240-CH16) in [CloudKit Web Services Reference](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/index.html#//apple_ref/doc/uid/TP40015240).
 
 ## See Also
 
-- [saveSubscriptions](cloudkit.database/savesubscriptions.md)
+### Subscribing to Changes
+- [saveSubscriptions](./savesubscriptions.md)
   Saves one or more subscriptions to record changes.
-- [fetchSubscriptions](cloudkit.database/fetchsubscriptions.md)
+- [fetchSubscriptions](./fetchsubscriptions.md)
   Fetches one or more subscriptions.
-- [deleteSubscriptions](cloudkit.database/deletesubscriptions.md)
+- [deleteSubscriptions](./deletesubscriptions.md)
   Deletes one or more subscriptions.
 
 

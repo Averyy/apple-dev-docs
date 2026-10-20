@@ -1,7 +1,8 @@
 # appliesPerFrameHDRDisplayMetadata
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the player item applies per-frame HDR display metadata during playback.
 
@@ -18,6 +19,10 @@ A Boolean value that indicates whether the player item applies per-frame HDR dis
 ```swift
 nonisolated
 var appliesPerFrameHDRDisplayMetadata: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL appliesPerFrameHDRDisplayMetadata;
 ```
 
 

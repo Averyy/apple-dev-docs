@@ -1,7 +1,8 @@
 # SettingsCommand.Command.Settings.ApplicationConfiguration.Configuration
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that contains the configurations to apply to the app.
 
@@ -16,7 +17,7 @@ A dictionary that contains the configurations to apply to the app.
 
 ## Declaration
 
-```swift
+```
 object SettingsCommand.Command.Settings.ApplicationConfiguration.Configuration
 ```
 

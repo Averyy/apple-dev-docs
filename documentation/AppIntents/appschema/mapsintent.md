@@ -1,7 +1,8 @@
 # AppSchema.MapsIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies intent schemas in the maps domain.
 
@@ -21,39 +22,40 @@ protocol MapsIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var reportIncident: some AppSchemaIntent](appschema/mapsintent/reportincident.md)
+- [var reportIncident: some AppSchemaIntent](./mapsintent/reportincident.md)
   An intent schema that reports a traffic incident on the route.
-- [var shareETA: some AppSchemaIntent](appschema/mapsintent/shareeta.md)
+- [var shareETA: some AppSchemaIntent](./mapsintent/shareeta.md)
   An intent schema that shares ETA to a contact while navigating.
-- [var startNavigation: some AppSchemaIntent](appschema/mapsintent/startnavigation.md)
+- [var startNavigation: some AppSchemaIntent](./mapsintent/startnavigation.md)
   An intent schema that starts navigation.
-- [var stopNavigation: some AppSchemaIntent](appschema/mapsintent/stopnavigation.md)
+- [var stopNavigation: some AppSchemaIntent](./mapsintent/stopnavigation.md)
   An intent schema that ends navigation.
-- [var stopShareETA: some AppSchemaIntent](appschema/mapsintent/stopshareeta.md)
+- [var stopShareETA: some AppSchemaIntent](./mapsintent/stopshareeta.md)
   An intent schema that stops sharing ETA.
-- [var updateNavigationWaypoints: some AppSchemaIntent](appschema/mapsintent/updatenavigationwaypoints.md)
+- [var updateNavigationWaypoints: some AppSchemaIntent](./mapsintent/updatenavigationwaypoints.md)
   An intent schema that updates the list of waypoints for a navigation session.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Intent](appschema/intent.md)
+- [AppSchema.Intent](./intent.md)
 
 ## See Also
 
-- [var reportIncident: some AppSchemaIntent](appschema/mapsintent/reportincident.md)
+### Actions
+- [var reportIncident: some AppSchemaIntent](./mapsintent/reportincident.md)
   An intent schema that reports a traffic incident on the route.
-- [var shareETA: some AppSchemaIntent](appschema/mapsintent/shareeta.md)
+- [var shareETA: some AppSchemaIntent](./mapsintent/shareeta.md)
   An intent schema that shares ETA to a contact while navigating.
-- [var startNavigation: some AppSchemaIntent](appschema/mapsintent/startnavigation.md)
+- [var startNavigation: some AppSchemaIntent](./mapsintent/startnavigation.md)
   An intent schema that starts navigation.
-- [var stopNavigation: some AppSchemaIntent](appschema/mapsintent/stopnavigation.md)
+- [var stopNavigation: some AppSchemaIntent](./mapsintent/stopnavigation.md)
   An intent schema that ends navigation.
-- [var stopShareETA: some AppSchemaIntent](appschema/mapsintent/stopshareeta.md)
+- [var stopShareETA: some AppSchemaIntent](./mapsintent/stopshareeta.md)
   An intent schema that stops sharing ETA.
-- [var updateNavigationWaypoints: some AppSchemaIntent](appschema/mapsintent/updatenavigationwaypoints.md)
+- [var updateNavigationWaypoints: some AppSchemaIntent](./mapsintent/updatenavigationwaypoints.md)
   An intent schema that updates the list of waypoints for a navigation session.
 
 

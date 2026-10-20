@@ -1,7 +1,8 @@
 # init(headroom:colorSpace:colorComponents:locations:count:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init?(headroom: Float, colorSpace space: CGColorSpace, colorComponents components: UnsafePointer<CGFloat>, locations: UnsafePointer<CGFloat>?, count: Int)
+```
+
+```c
+extern CGGradientRefCGGradientCreateWithContentHeadroom(float headroom, CGColorSpaceRef space, const CGFloat *components, const CGFloat *locations, size_t count);
 ```
 
 

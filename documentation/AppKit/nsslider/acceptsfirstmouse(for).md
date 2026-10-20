@@ -1,12 +1,13 @@
 # acceptsFirstMouse(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether a mouse-down event both activates the window and starts dragging the slider’s knob.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns a Boolean value indicating whether a mouse-down event both activates the
 func acceptsFirstMouse(for event: NSEvent?) -> Bool
 ```
 
+```objc
+- (BOOL) acceptsFirstMouse:(NSEvent *) event;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver accepts the first mouse-down event; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). Returns [`true`](https://developer.apple.com/documentation/swift/true) by default.
+[`true`](../../Swift/true.md) if the receiver accepts the first mouse-down event; otherwise, [`false`](../../Swift/false.md). Returns [`true`](../../Swift/true.md) by default.
 
 #### Discussion
 

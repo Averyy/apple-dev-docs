@@ -1,7 +1,8 @@
 # split(separator:maxSplits:omittingEmptySubsequences:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.0+
@@ -17,6 +18,8 @@
 ```swift
 func split(separator: String, maxSplits: Int = .max, omittingEmptySubsequences: Bool = true) -> [Substring]
 ```
+
+Available when `SubSequence` is `Substring`.
 
 
 ---

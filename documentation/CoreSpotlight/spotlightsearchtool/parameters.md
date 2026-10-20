@@ -1,7 +1,8 @@
 # parameters
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The schema for the parameters this tool accepts.
 
@@ -20,11 +21,12 @@ var parameters: GenerationSchema { get }
 
 #### Discussion
 
-The Spotlight search tool implements this property as part of its conformance to the [`Tool`](https://developer.apple.com/documentation/foundationmodels/tool) protocol.
+The Spotlight search tool implements this property as part of its conformance to the [`Tool`](../../FoundationModels/tool.md) protocol.
 
 ## See Also
 
-- [var includesSchemaInInstructions: Bool](spotlightsearchtool/includesschemaininstructions.md)
+### Getting tool-specific properties
+- [var includesSchemaInInstructions: Bool](./includesschemaininstructions.md)
   A Boolean value that indicates whether to inject the model’s name, description, and parameters schema into the instructions of sessions.
 
 

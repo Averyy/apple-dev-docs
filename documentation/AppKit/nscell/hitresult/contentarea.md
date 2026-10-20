@@ -1,7 +1,8 @@
 # contentArea
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A content area in the cell.
 
@@ -14,11 +15,16 @@ A content area in the cell.
 static var contentArea: NSCell.HitResult { get }
 ```
 
+```c
+NSCellHitContentArea
+```
+
 ## See Also
 
-- [static var editableTextArea: NSCell.HitResult](nscell/hitresult/editabletextarea.md)
+### Constants
+- [static var editableTextArea: NSCell.HitResult](./editabletextarea.md)
   An editable text area of the cell.
-- [static var trackableArea: NSCell.HitResult](nscell/hitresult/trackablearea.md)
+- [static var trackableArea: NSCell.HitResult](./trackablearea.md)
   A trackable area in the cell.
 
 

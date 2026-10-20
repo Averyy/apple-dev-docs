@@ -1,7 +1,8 @@
 # UIAlertControllerSeverity.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the system should present the alert using the standard alert style.
 
@@ -18,9 +19,14 @@ Indicates that the system should present the alert using the standard alert styl
 case `default`
 ```
 
+```c
+UIAlertControllerSeverityDefault
+```
+
 ## See Also
 
-- [UIAlertControllerSeverity.critical](uialertcontrollerseverity/critical.md)
+### Constants
+- [UIAlertControllerSeverity.critical](./critical.md)
   Indicates that the system should present the alert using the critical, or caution, style.
 
 

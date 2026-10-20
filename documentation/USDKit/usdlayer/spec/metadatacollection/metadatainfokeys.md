@@ -1,7 +1,8 @@
 # metadataInfoKeys
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subset of info keys an inspector should treat as user-visible metadata. Excludes structural fields.
 

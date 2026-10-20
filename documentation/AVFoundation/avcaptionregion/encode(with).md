@@ -1,7 +1,8 @@
 # encode(with:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the region using the specified encoder.
 
@@ -17,9 +18,13 @@ Encodes the region using the specified encoder.
 func encode(with encoder: NSCoder)
 ```
 
+```objc
+- (void) encodeWithCoder:(NSCoder *) encoder;
+```
+
 #### Discussion
 
-This method throws an exception if the caption region’s [`size`](avcaptionregion/size.md) has different units for [`width`](avcaptionsize/width.md) and [`height`](avcaptionsize/height.md), or if the units are unrecognizeable.
+This method throws an exception if the caption region’s [`size`](./size.md) has different units for [`width`](../avcaptionsize/width.md) and [`height`](../avcaptionsize/height.md), or if the units are unrecognizeable.
 
 ## Parameters
 
@@ -27,9 +32,10 @@ This method throws an exception if the caption region’s [`size`](avcaptionregi
 
 ## See Also
 
-- [func mutableCopy(with: NSZone?) -> Any](avcaptionregion/mutablecopy(with:).md)
+### Processing regions
+- [func mutableCopy(with: NSZone?) -> Any](./mutablecopy%28with%29.md)
   Creates a mutable copy of a caption region.
-- [func isEqual(Any) -> Bool](avcaptionregion/isequal(_:).md)
+- [func isEqual(Any) -> Bool](./isequal%28_%29.md)
   Returns a Boolean value that indicates whether an object equals another.
 
 

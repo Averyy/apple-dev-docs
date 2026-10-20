@@ -1,7 +1,8 @@
 # NEFilterPacketHandler
 
 **Framework**: Network Extension  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type for Swift closures or ObjectiveC blocks that make filtering decisions about network packets.
 
@@ -14,9 +15,13 @@ A type for Swift closures or ObjectiveC blocks that make filtering decisions abo
 typealias NEFilterPacketHandler = (NEFilterPacketContext, nw_interface_t, NETrafficDirection, UnsafeRawPointer, Int) -> NEFilterPacketProvider.Verdict
 ```
 
+```c
+typedef enum NEFilterPacketProviderVerdict (^)(NEFilterPacketContext *, NSObject<OS_nw_interface> *, enum NETrafficDirection, const void *, unsigned long) NEFilterPacketHandler;
+```
+
 #### Return Value
 
-A verdict on whether the framework should allow, drop, or delay the packet. If the verdict is [`NEFilterPacketProvider.Verdict.delay`](nefilterpacketprovider/verdict/delay.md), the framework assumes the handler already called [`delayCurrentPacket(_:)`](nefilterpacketprovider/delaycurrentpacket(_:).md).
+A verdict on whether the framework should allow, drop, or delay the packet. If the verdict is [`NEFilterPacketProvider.Verdict.delay`](./nefilterpacketprovider/verdict/delay.md), the framework assumes the handler already called [`delayCurrentPacket(_:)`](./nefilterpacketprovider/delaycurrentpacket%28_%29.md).
 
 ## Parameters
 
@@ -28,13 +33,14 @@ A verdict on whether the framework should allow, drop, or delay the packet. If t
 
 ## See Also
 
-- [var packetHandler: NEFilterPacketHandler?](nefilterpacketprovider/packethandler.md)
+### Filtering packets
+- [var packetHandler: NEFilterPacketHandler?](./nefilterpacketprovider/packethandler.md)
   A Swift closure or an ObjectiveC block that handles each packet received by the filter.
-- [class NEFilterPacketContext](nefilterpacketcontext.md)
+- [class NEFilterPacketContext](./nefilterpacketcontext.md)
   The context object provided to the filter packet handler.
-- [enum NETrafficDirection](netrafficdirection.md)
+- [enum NETrafficDirection](./netrafficdirection.md)
   A type to represent the direction of network traffic.
-- [NEFilterPacketProvider.Verdict](nefilterpacketprovider/verdict.md)
+- [NEFilterPacketProvider.Verdict](./nefilterpacketprovider/verdict.md)
   The verdict returned by a packet handler indicating what the framework should do with a packet.
 
 

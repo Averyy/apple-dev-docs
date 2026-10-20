@@ -1,7 +1,8 @@
 # mapMissing(_:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new column of typed values by applying the given thread-safe transform to every element of this untyped column, including missing elements.
 
@@ -25,15 +26,16 @@ A new `MLDataColumn` column.
 
 ## Parameters
 
-- `lazyTransform`: A thread-safe element transformation function. The implementation of the transform you provide should accept an element of the column and return a transformed value of a type that conforms to [`MLDataValueConvertible`](mldatavalueconvertible.md). If the transform returns `nil` for a given element, the corresponding element in the new column will have a missing value.
+- `lazyTransform`: A thread-safe element transformation function. The implementation of the transform you provide should accept an element of the column and return a transformed value of a type that conforms to [`MLDataValueConvertible`](../mldatavalueconvertible.md). If the transform returns `nil` for a given element, the corresponding element in the new column will have a missing value.
 
 ## See Also
 
-- [func map(_:)](mluntypedcolumn/map(_:).md)
+### Transforming elements to generate a data column
+- [func map(_:)](./map%28_%29.md)
   Creates a new column of typed values by applying the given thread-safe transform to every non-missing element of this untyped column.
-- [func map<T>((MLDataValue) -> T) -> MLDataColumn<T>](mluntypedcolumn/map(_:)-139qy.md)
+- [func map<T>((MLDataValue) -> T) -> MLDataColumn<T>](./map%28_%29-139qy.md)
   Creates a new column of typed values by applying the given thread-safe transform to every non-missing element of this untyped column.
-- [func map<T>((MLDataValue) -> T?) -> MLDataColumn<T>](mluntypedcolumn/map(_:)-9v61j.md)
+- [func map<T>((MLDataValue) -> T?) -> MLDataColumn<T>](./map%28_%29-9v61j.md)
   Creates a new column of typed values, potentially with missing values, by applying the given thread-safe transform to every non-missing element of this untyped column.
 
 

@@ -1,7 +1,8 @@
 # canModifyOrder
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates if the display order of the input media sources can be modified.
 
@@ -21,13 +22,14 @@ final let canModifyOrder: Bool
 
 ## See Also
 
-- [func writeOrder([Int]) async throws](hmmediasourcedisplayorderprofile/writeorder(_:).md)
+### Managing input source order
+- [func writeOrder([Int]) async throws](./writeorder%28_%29.md)
   Writes the display order of the media sources to the accessory.
-- [var delegate: (any HMMediaSourceDisplayOrderProfile.Delegate)?](hmmediasourcedisplayorderprofile/delegate-swift.property.md)
+- [var delegate: (any HMMediaSourceDisplayOrderProfile.Delegate)?](./delegate-swift.property.md)
   The property that handles updates to the display order.
-- [var order: [Int]](hmmediasourcedisplayorderprofile/order.md)
+- [var order: [Int]](./order.md)
   The display order of input media sources.
-- [HMMediaSourceDisplayOrderProfile.Delegate](hmmediasourcedisplayorderprofile/delegate-swift.protocol.md)
+- [HMMediaSourceDisplayOrderProfile.Delegate](./delegate-swift.protocol.md)
   The protocol through which a delegate receives updates on the order of input media sources.
 
 

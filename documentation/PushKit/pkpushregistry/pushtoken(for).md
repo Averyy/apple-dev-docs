@@ -1,7 +1,8 @@
 # pushToken(for:)
 
 **Framework**: PushKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the locally cached push token for the specified push type.
 
@@ -19,6 +20,10 @@ Retrieves the locally cached push token for the specified push type.
 func pushToken(for type: PKPushType) -> Data?
 ```
 
+```objc
+- (NSData *) pushTokenForType:(PKPushType) type;
+```
+
 #### Return Value
 
 The push token used to send pushes to the device or `nil` if no token is available for the specified type.
@@ -29,11 +34,12 @@ If registration for a specific push type is successful, the push registry delive
 
 ## Parameters
 
-- `type`: A push type requested by this push registry object. For a list of possible types, see [`PKPushType`](pkpushtype.md).
+- `type`: A push type requested by this push registry object. For a list of possible types, see [`PKPushType`](../pkpushtype.md).
 
 ## See Also
 
-- [var desiredPushTypes: Set<PKPushType>?](pkpushregistry/desiredpushtypes.md)
+### Managing the Push Registry
+- [var desiredPushTypes: Set<PKPushType>?](./desiredpushtypes.md)
   Registers the push types for this push registry object.
 
 

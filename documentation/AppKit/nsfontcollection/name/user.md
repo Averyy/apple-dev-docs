@@ -1,7 +1,8 @@
 # user
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Per-user unmodifiable collection.
 
@@ -14,13 +15,18 @@ Per-user unmodifiable collection.
 static let user: NSFontCollection.Name
 ```
 
+```c
+extern NSFontCollectionName const NSFontCollectionUser;
+```
+
 ## See Also
 
-- [static let allFonts: NSFontCollection.Name](nsfontcollection/name/allfonts.md)
+### Type Properties
+- [static let allFonts: NSFontCollection.Name](./allfonts.md)
   All fonts in the system.
-- [static let favorites: NSFontCollection.Name](nsfontcollection/name/favorites.md)
+- [static let favorites: NSFontCollection.Name](./favorites.md)
   Font collection of the user’s preferred font descriptors.
-- [static let recentlyUsed: NSFontCollection.Name](nsfontcollection/name/recentlyused.md)
+- [static let recentlyUsed: NSFontCollection.Name](./recentlyused.md)
   Font collection automatically maintained by NSFontManager.
 
 

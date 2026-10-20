@@ -1,7 +1,8 @@
 # startNote(_:withVelocity:onChannel:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a MIDI Note On event to the instrument.
 
@@ -19,6 +20,10 @@ Sends a MIDI Note On event to the instrument.
 func startNote(_ note: UInt8, withVelocity velocity: UInt8, onChannel channel: UInt8)
 ```
 
+```objc
+- (void) startNote:(uint8_t) note withVelocity:(uint8_t) velocity onChannel:(uint8_t) channel;
+```
+
 ## Parameters
 
 - `note`: The note number (key) to play. The valid range is `0` to `127`.
@@ -27,7 +32,8 @@ func startNote(_ note: UInt8, withVelocity velocity: UInt8, onChannel channel: U
 
 ## See Also
 
-- [func stopNote(UInt8, onChannel: UInt8)](avaudiounitmidiinstrument/stopnote(_:onchannel:).md)
+### Starting and stopping play
+- [func stopNote(UInt8, onChannel: UInt8)](./stopnote%28_,onchannel%29.md)
   Sends a MIDI Note Off event to the instrument.
 
 

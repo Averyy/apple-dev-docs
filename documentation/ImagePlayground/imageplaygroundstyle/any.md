@@ -1,7 +1,8 @@
 # any
 
 **Framework**: Image Playground  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that yields images in a style inferred from the prompt.
 

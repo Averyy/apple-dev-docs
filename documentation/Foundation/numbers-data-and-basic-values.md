@@ -1,69 +1,71 @@
 # Numbers, Data, and Basic Values
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 Work with primitive values and other fundamental types used throughout Cocoa.
 
 ## Topics
 
 ### Numbers
-- [struct Int](../swift/int.md)
+- [struct Int](../Swift/int.md)
   A signed integer value type.
-- [struct Double](../swift/double.md)
+- [struct Double](../Swift/double.md)
   A double-precision (64-bit), floating-point value type.
-- [struct Decimal](decimal.md)
+- [struct Decimal](./decimal.md)
   A structure representing a base-10 number.
-- [class NumberFormatter](numberformatter.md)
+- [class NumberFormatter](./numberformatter.md)
   A formatter that converts between numeric values and their textual representations.
 ### Binary Data
-- [struct Data](data.md)
+- [struct Data](./data.md)
   A byte buffer in memory.
-- [protocol DataProtocol](dataprotocol.md)
+- [protocol DataProtocol](./dataprotocol.md)
   A protocol that provides consistent data access to the bytes underlying contiguous and noncontiguous data buffers.
-- [protocol MutableDataProtocol](mutabledataprotocol.md)
+- [protocol MutableDataProtocol](./mutabledataprotocol.md)
   A protocol that provides consistent data access to the bytes underlying contiguous and noncontiguous mutable data buffers.
-- [protocol ContiguousBytes](contiguousbytes.md)
+- [protocol ContiguousBytes](./contiguousbytes.md)
   A protocol that declares the type offers direct access to the underlying raw bytes in a contiguous manner.
 ### URLs
-- [struct URL](url.md)
+- [struct URL](./url.md)
   A value that identifies the location of a resource, such as an item on a remote server or the path to a local file.
-- [struct URLComponents](urlcomponents.md)
+- [struct URLComponents](./urlcomponents.md)
   A structure that parses URLs into and constructs URLs from their constituent parts.
-- [struct URLQueryItem](urlqueryitem.md)
+- [struct URLQueryItem](./urlqueryitem.md)
   A single name-value pair from the query portion of a URL.
 ### Unique Identifiers
-- [struct UUID](uuid.md)
+- [struct UUID](./uuid.md)
   A universally unique value to identify types, interfaces, and other items.
 ### Geometry
-- [struct CGFloat](../corefoundation/cgfloat-swift.struct.md)
+- [struct CGFloat](../CoreFoundation/cgfloat-swift.struct.md)
   The basic type for floating-point scalar values in Core Graphics and related frameworks.
-- [typealias NSPoint](nspoint.md)
+- [typealias NSPoint](./nspoint.md)
   A point in a Cartesian coordinate system.
-- [typealias NSSize](nssize.md)
+- [typealias NSSize](./nssize.md)
   A two-dimensional size.
-- [typealias NSRect](nsrect.md)
+- [typealias NSRect](./nsrect.md)
   A rectangle.
-- [struct AffineTransform](affinetransform.md)
+- [struct AffineTransform](./affinetransform.md)
   A graphics coordinate transformation.
-- [struct NSEdgeInsets](nsedgeinsets.md)
+- [struct NSEdgeInsets](./nsedgeinsets.md)
   A description of the distance between the edges of two rectangles.
 ### Ranges
-- [typealias NSRange](nsrange-swift.typealias.md)
+- [typealias NSRange](./nsrange-swift.typealias.md)
   A structure used to describe a portion of a series, such as characters in a string or objects in an array.
 
 ## See Also
 
-- [Strings and Text](strings-and-text.md)
+### Fundamentals
+- [Strings and Text](./strings-and-text.md)
   Create and process strings of Unicode characters, use regular expressions to find patterns, and perform natural language analysis of text.
-- [Collections](collections.md)
+- [Collections](./collections.md)
   Use arrays, dictionaries, sets, and specialized collections to store and iterate groups of objects or values.
-- [Dates and Times](dates-and-times.md)
+- [Dates and Times](./dates-and-times.md)
   Compare dates and times, and perform calendar and time zone calculations.
-- [Units and Measurement](units-and-measurement.md)
+- [Units and Measurement](./units-and-measurement.md)
   Label numeric quantities with physical dimensions to allow locale-aware formatting and conversion between related units.
-- [Data Formatting](data-formatting.md)
+- [Data Formatting](./data-formatting.md)
   Convert numbers, dates, measurements, and other values to and from locale-aware string representations.
-- [Filters and Sorting](filters-and-sorting.md)
+- [Filters and Sorting](./filters-and-sorting.md)
   Use predicates, expressions, and sort descriptors to examine elements in collections and other services.
 
 

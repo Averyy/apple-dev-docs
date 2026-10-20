@@ -1,7 +1,8 @@
 # IOItemCount
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.4+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias IOItemCount = UInt32
+```
+
+```c
+typedef UInt32 IOItemCount;
 ```
 
 

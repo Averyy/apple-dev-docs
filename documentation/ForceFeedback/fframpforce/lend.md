@@ -1,7 +1,8 @@
 # lEnd
 
 **Framework**: Force Feedback  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Magnitude at the end of the effect, in the range from -10,000 through 10,000.
 
@@ -15,9 +16,14 @@ Magnitude at the end of the effect, in the range from -10,000 through 10,000.
 var lEnd: LONG
 ```
 
+```c
+LONG lEnd;
+```
+
 ## See Also
 
-- [var lStart: LONG](fframpforce/lstart.md)
+### Instance Properties
+- [var lStart: LONG](./lstart.md)
 
 
 ---

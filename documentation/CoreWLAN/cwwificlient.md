@@ -1,7 +1,8 @@
 # CWWiFiClient
 
 **Framework**: Core WLAN  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A wrapper around the entire Wi-Fi subsystem that you use to access interfaces and set up event notifications.
 
@@ -14,69 +15,74 @@ A wrapper around the entire Wi-Fi subsystem that you use to access interfaces an
 class CWWiFiClient
 ```
 
+```objc
+@interface CWWiFiClient : NSObject
+```
+
 #### Overview
 
-Wi-Fi client objects are heavy. Therefore, it’s more efficient to use a single, long-running client instance, rather than creating several short-lived instances. For convenience, you can use the singleton instance returned by the [`shared()`](cwwificlient/shared().md) class method.
+Wi-Fi client objects are heavy. Therefore, it’s more efficient to use a single, long-running client instance, rather than creating several short-lived instances. For convenience, you can use the singleton instance returned by the [`shared()`](./cwwificlient/shared%28%29.md) class method.
 
-Instead of instantiating [`CWInterface`](cwinterface.md) objects directly, use the ones provided by the instance methods of this class. For example, the [`interface()`](cwwificlient/interface().md) method returns the default Wi-Fi interface.
+Instead of instantiating [`CWInterface`](./cwinterface.md) objects directly, use the ones provided by the instance methods of this class. For example, the [`interface()`](./cwwificlient/interface%28%29.md) method returns the default Wi-Fi interface.
 
 ## Topics
 
 ### Getting the Shared Instance
-- [class func shared() -> CWWiFiClient](cwwificlient/shared.md)
+- [class func shared() -> CWWiFiClient](./cwwificlient/shared%28%29.md)
   The shared Wi-Fi client object.
 ### Initializing a Wi-Fi Client
-- [init()](cwwificlient/init.md)
+- [init()](./cwwificlient/init%28%29.md)
   Initializes a Wi-Fi client object.
 ### Setting a Delegate
-- [var delegate: AnyObject?](cwwificlient/delegate.md)
+- [var delegate: AnyObject?](./cwwificlient/delegate.md)
   An object that provides Wi-Fi event handling.
 ### Getting Interfaces
-- [func interface() -> CWInterface?](cwwificlient/interface.md)
+- [func interface() -> CWInterface?](./cwwificlient/interface%28%29.md)
   Returns the default Wi-Fi interface.
-- [func interface(withName: String?) -> CWInterface?](cwwificlient/interface(withname:).md)
+- [func interface(withName: String?) -> CWInterface?](./cwwificlient/interface%28withname%29.md)
   Returns the Wi-Fi interface with the given name.
-- [func interfaces() -> [CWInterface]?](cwwificlient/interfaces.md)
+- [func interfaces() -> [CWInterface]?](./cwwificlient/interfaces%28%29.md)
   Returns all available Wi-Fi interfaces.
-- [class func interfaceNames() -> [String]?](cwwificlient/interfacenames-swift.type.method.md)
+- [class func interfaceNames() -> [String]?](./cwwificlient/interfacenames%28%29-swift.type.method.md)
   Returns the list of the names of available Wi-Fi interfaces.
 ### Monitoring Events
-- [func startMonitoringEvent(with: CWEventType) throws](cwwificlient/startmonitoringevent(with:).md)
+- [func startMonitoringEvent(with: CWEventType) throws](./cwwificlient/startmonitoringevent%28with%29.md)
   Register for specific Wi-Fi event notifications.
-- [func stopMonitoringAllEvents() throws](cwwificlient/stopmonitoringallevents.md)
+- [func stopMonitoringAllEvents() throws](./cwwificlient/stopmonitoringallevents%28%29.md)
   Unregister for all Wi-Fi event notifications.
-- [func stopMonitoringEvent(with: CWEventType) throws](cwwificlient/stopmonitoringevent(with:).md)
+- [func stopMonitoringEvent(with: CWEventType) throws](./cwwificlient/stopmonitoringevent%28with%29.md)
   Unregister for specific Wi-Fi event notifications.
 ### Instance Methods
-- [func interfaceNames() -> [String]?](cwwificlient/interfacenames-swift.method.md)
+- [func interfaceNames() -> [String]?](./cwwificlient/interfacenames%28%29-swift.method.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CWChannel](cwchannel.md)
+### Classes
+- [class CWChannel](./cwchannel.md)
   Encapsulates an IEEE 802.11 channel.
-- [class CWConfiguration](cwconfiguration.md)
+- [class CWConfiguration](./cwconfiguration.md)
   Encapsulates an immutable configuration for an AirPort WLAN interface.
-- [class CWInterface](cwinterface.md)
+- [class CWInterface](./cwinterface.md)
   Encapsulates an IEEE 802.11 interface.
-- [class CWMutableConfiguration](cwmutableconfiguration.md)
+- [class CWMutableConfiguration](./cwmutableconfiguration.md)
   Encapsulates a mutable configuration for an AirPort WLAN interface.
-- [class CWMutableNetworkProfile](cwmutablenetworkprofile.md)
+- [class CWMutableNetworkProfile](./cwmutablenetworkprofile.md)
   Encapsulates a mutable network profile entry.
-- [class CWNetwork](cwnetwork.md)
+- [class CWNetwork](./cwnetwork.md)
   Encapsulates an IEEE 802.11 network, providing read-only accessors to various properties of the network.
-- [class CWNetworkProfile](cwnetworkprofile.md)
+- [class CWNetworkProfile](./cwnetworkprofile.md)
   Encapsulates an immutable network profile entry.
 
 

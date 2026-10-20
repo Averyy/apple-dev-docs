@@ -1,7 +1,8 @@
 # MPSGraphPaddingMode.antiPeriodic
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Anti Periodic `x[-2] -> -x[L-3]`
 
@@ -17,6 +18,10 @@ Anti Periodic `x[-2] -> -x[L-3]`
 
 ```swift
 case antiPeriodic
+```
+
+```c
+MPSGraphPaddingModeAntiPeriodic
 ```
 
 

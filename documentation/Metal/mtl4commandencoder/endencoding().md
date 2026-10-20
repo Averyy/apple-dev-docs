@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Declares that all command generation from this encoder is complete.
@@ -20,9 +21,13 @@ Declares that all command generation from this encoder is complete.
 func endEncoding()
 ```
 
+```objc
+- (void) endEncoding;
+```
+
 ## Mentions
 
-- [Synchronizing stages within a pass](synchronizing-stages-within-a-pass.md)
+- [Synchronizing stages within a pass](../synchronizing-stages-within-a-pass.md)
 
 
 ---

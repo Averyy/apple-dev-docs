@@ -1,7 +1,8 @@
 # negativeInfinitySymbol
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string used to represent a negative infinity symbol.
 
@@ -20,29 +21,34 @@ The string used to represent a negative infinity symbol.
 var negativeInfinitySymbol: String { get set }
 ```
 
+```objc
+@property (copy) NSString * negativeInfinitySymbol;
+```
+
 #### Discussion
 
 By default, this property is set to the string “`-∞`”.
 
 ## See Also
 
-- [var percentSymbol: String!](numberformatter/percentsymbol.md)
+### Configuring Numeric Symbols
+- [var percentSymbol: String!](./percentsymbol.md)
   The string used to represent a percent symbol.
-- [var perMillSymbol: String!](numberformatter/permillsymbol.md)
+- [var perMillSymbol: String!](./permillsymbol.md)
   The string used to represent a per-mill (per-thousand) symbol.
-- [var minusSign: String!](numberformatter/minussign.md)
+- [var minusSign: String!](./minussign.md)
   The string used to represent a minus sign.
-- [var plusSign: String!](numberformatter/plussign.md)
+- [var plusSign: String!](./plussign.md)
   The string used to represent a plus sign.
-- [var exponentSymbol: String!](numberformatter/exponentsymbol.md)
+- [var exponentSymbol: String!](./exponentsymbol.md)
   The string used to represent an exponent symbol.
-- [var zeroSymbol: String?](numberformatter/zerosymbol.md)
+- [var zeroSymbol: String?](./zerosymbol.md)
   The string used to represent a zero value.
-- [var nilSymbol: String](numberformatter/nilsymbol.md)
+- [var nilSymbol: String](./nilsymbol.md)
   The string used to represent a `nil` value.
-- [var notANumberSymbol: String!](numberformatter/notanumbersymbol.md)
+- [var notANumberSymbol: String!](./notanumbersymbol.md)
   The string used to represent a NaN (“not a number”) value.
-- [var positiveInfinitySymbol: String](numberformatter/positiveinfinitysymbol.md)
+- [var positiveInfinitySymbol: String](./positiveinfinitysymbol.md)
   The string used to represent a positive infinity symbol.
 
 

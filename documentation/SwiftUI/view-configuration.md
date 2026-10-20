@@ -1,6 +1,7 @@
 # View configuration
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 Adjust the characteristics of views in a hierarchy.
 
@@ -8,102 +9,103 @@ Adjust the characteristics of views in a hierarchy.
 
 SwiftUI enables you to tune the appearance and behavior of views using view modifiers.
 
-![None](/images/com.apple.SwiftUI/view-configuration-hero@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/view-configuration-hero@2x.png)
 
 Many modifiers apply to specific kinds of views or behaviors, but some apply more generally. For example, you can conditionally hide any view by dynamically setting its opacity, display contextual help when people hover over a view, or request the light or dark appearance for a view.
 
 ## Topics
 
 ### Hiding views
-- [func opacity(Double) -> some View](view/opacity(_:).md)
+- [func opacity(Double) -> some View](./view/opacity%28_%29.md)
   Sets the transparency of this view.
-- [func hidden() -> some View](view/hidden.md)
+- [func hidden() -> some View](./view/hidden%28%29.md)
   Hides this view unconditionally.
 ### Hiding system elements
-- [func labelsHidden() -> some View](view/labelshidden.md)
+- [func labelsHidden() -> some View](./view/labelshidden%28%29.md)
   Hides the labels of any controls contained within this view.
-- [func labelsVisibility(Visibility) -> some View](view/labelsvisibility(_:).md)
+- [func labelsVisibility(Visibility) -> some View](./view/labelsvisibility%28_%29.md)
   Controls the visibility of labels of any controls contained within this view.
-- [var labelsVisibility: Visibility](environmentvalues/labelsvisibility.md)
-  The labels visibility set by [`labelsVisibility(_:)`](view/labelsvisibility(_:).md).
-- [func menuIndicator(Visibility) -> some View](view/menuindicator(_:).md)
+- [var labelsVisibility: Visibility](./environmentvalues/labelsvisibility.md)
+  The labels visibility set by [`labelsVisibility(_:)`](./view/labelsvisibility%28_%29.md).
+- [func menuIndicator(Visibility) -> some View](./view/menuindicator%28_%29.md)
   Sets the menu indicator visibility for controls within this view.
-- [func persistentSystemOverlays(Visibility) -> some View](view/persistentsystemoverlays(_:).md)
+- [func persistentSystemOverlays(Visibility) -> some View](./view/persistentsystemoverlays%28_%29.md)
   Sets the preferred visibility of the non-transient system views overlaying the app.
-- [enum Visibility](visibility.md)
+- [enum Visibility](./visibility.md)
   The visibility of a UI element, chosen automatically based on the platform, current context, and other factors.
-- [func statusBarHidden(Bool) -> some View](view/statusbarhidden(_:).md)
+- [func statusBarHidden(Bool) -> some View](./view/statusbarhidden%28_%29.md)
   Sets the visibility of the status bar.
 ### Managing view interaction
-- [func disabled(Bool) -> some View](view/disabled(_:).md)
+- [func disabled(Bool) -> some View](./view/disabled%28_%29.md)
   Adds a condition that controls whether someone can interact with this view.
-- [var isEnabled: Bool](environmentvalues/isenabled.md)
+- [var isEnabled: Bool](./environmentvalues/isenabled.md)
   A Boolean value that indicates whether the view associated with this environment allows user interaction.
-- [func interactionActivityTrackingTag(String) -> some View](view/interactionactivitytrackingtag(_:).md)
+- [func interactionActivityTrackingTag(String) -> some View](./view/interactionactivitytrackingtag%28_%29.md)
   Sets a tag that you use for tracking interactivity.
-- [func invalidatableContent(Bool) -> some View](view/invalidatablecontent(_:).md)
+- [func invalidatableContent(Bool) -> some View](./view/invalidatablecontent%28_%29.md)
   Mark the receiver as their content might be invalidated.
 ### Providing contextual help
-- [func help(_:)](view/help(_:).md)
+- [func help(_:)](./view/help%28_%29.md)
   Adds help text to a view using a localized string resource that you provide.
 ### Detecting and requesting the light or dark appearance
-- [func preferredColorScheme(ColorScheme?) -> some View](view/preferredcolorscheme(_:).md)
+- [func preferredColorScheme(ColorScheme?) -> some View](./view/preferredcolorscheme%28_%29.md)
   Sets the preferred color scheme for this presentation.
-- [var colorScheme: ColorScheme](environmentvalues/colorscheme.md)
+- [var colorScheme: ColorScheme](./environmentvalues/colorscheme.md)
   The color scheme of this environment.
-- [enum ColorScheme](colorscheme.md)
+- [enum ColorScheme](./colorscheme.md)
   The possible color schemes, corresponding to the light and dark appearances.
 ### Getting the color scheme contrast
-- [var colorSchemeContrast: ColorSchemeContrast](environmentvalues/colorschemecontrast.md)
+- [var colorSchemeContrast: ColorSchemeContrast](./environmentvalues/colorschemecontrast.md)
   The contrast associated with the color scheme of this environment.
-- [enum ColorSchemeContrast](colorschemecontrast.md)
+- [enum ColorSchemeContrast](./colorschemecontrast.md)
   The contrast between the app’s foreground and background colors.
 ### Configuring passthrough
-- [func preferredSurroundingsEffect(SurroundingsEffect?) -> some View](view/preferredsurroundingseffect(_:).md)
+- [func preferredSurroundingsEffect(SurroundingsEffect?) -> some View](./view/preferredsurroundingseffect%28_%29.md)
   Applies an effect to passthrough video.
-- [struct SurroundingsEffect](surroundingseffect.md)
+- [struct SurroundingsEffect](./surroundingseffect.md)
   Effects that the system can apply to passthrough video.
-- [func breakthroughEffect(BreakthroughEffect) -> some View](view/breakthrougheffect(_:).md)
+- [func breakthroughEffect(BreakthroughEffect) -> some View](./view/breakthrougheffect%28_%29.md)
   Ensures that the view is always visible to the user, even when other content is occluding it, like 3D models.
-- [struct BreakthroughEffect](breakthrougheffect.md)
+- [struct BreakthroughEffect](./breakthrougheffect.md)
   The way a presentation shows through content in front of it.
 ### Redacting private content
-- [Designing your app for the Always On state](../watchos-apps/designing-your-app-for-the-always-on-state.md)
+- [Designing your app for the Always On state](../watchOS-Apps/designing-your-app-for-the-always-on-state.md)
   Customize your watchOS app’s user interface for continuous display.
-- [Protecting sensitive content when screen sharing and remote control are active](protecting-sensitive-content-when-screen-sharing.md)
+- [Protecting sensitive content when screen sharing and remote control are active](./protecting-sensitive-content-when-screen-sharing.md)
   Detect active screen capture sessions and respond appropriately to protect sensitive content in your app.
-- [func privacySensitive(Bool) -> some View](view/privacysensitive(_:).md)
+- [func privacySensitive(Bool) -> some View](./view/privacysensitive%28_%29.md)
   Marks the view as containing sensitive, private user data.
-- [func redacted(reason: RedactionReasons) -> some View](view/redacted(reason:).md)
+- [func redacted(reason: RedactionReasons) -> some View](./view/redacted%28reason%29.md)
   Adds a reason to apply a redaction to this view hierarchy.
-- [func unredacted() -> some View](view/unredacted.md)
+- [func unredacted() -> some View](./view/unredacted%28%29.md)
   Removes any reason to apply a redaction to this view hierarchy.
-- [var redactionReasons: RedactionReasons](environmentvalues/redactionreasons.md)
+- [var redactionReasons: RedactionReasons](./environmentvalues/redactionreasons.md)
   The current redaction reasons applied to the view hierarchy.
-- [var isSceneCaptured: Bool](environmentvalues/isscenecaptured.md)
+- [var isSceneCaptured: Bool](./environmentvalues/isscenecaptured.md)
   The current capture state.
-- [struct RedactionReasons](redactionreasons.md)
+- [struct RedactionReasons](./redactionreasons.md)
   The reasons to apply a redaction to data displayed on screen.
 
 ## See Also
 
-- [View fundamentals](view-fundamentals.md)
+### Views
+- [View fundamentals](./view-fundamentals.md)
   Define the visual elements of your app using a hierarchy of views.
-- [View styles](view-styles.md)
+- [View styles](./view-styles.md)
   Apply built-in and custom appearances and behaviors to different types of views.
-- [Animations](animations.md)
+- [Animations](./animations.md)
   Create smooth visual updates in response to state changes.
-- [Text input and output](text-input-and-output.md)
+- [Text input and output](./text-input-and-output.md)
   Display formatted text and get text input from the user.
-- [Images](images.md)
+- [Images](./images.md)
   Add images and symbols to your app’s user interface.
-- [Controls and indicators](controls-and-indicators.md)
+- [Controls and indicators](./controls-and-indicators.md)
   Display values and get user selections.
-- [Menus and commands](menus-and-commands.md)
+- [Menus and commands](./menus-and-commands.md)
   Provide space-efficient, context-dependent access to commands and controls.
-- [Shapes](shapes.md)
+- [Shapes](./shapes.md)
   Trace and fill built-in and custom shapes with a color, gradient, or other pattern.
-- [Drawing and graphics](drawing-and-graphics.md)
+- [Drawing and graphics](./drawing-and-graphics.md)
   Enhance your views with graphical effects and customized drawings.
 
 

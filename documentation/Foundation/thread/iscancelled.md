@@ -1,7 +1,8 @@
 # isCancelled
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver is cancelled.
 
@@ -20,19 +21,25 @@ A Boolean value that indicates whether the receiver is cancelled.
 var isCancelled: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isCancelled) BOOL cancelled;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver has been cancelled, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver has been cancelled, otherwise [`false`](../../Swift/false.md).
 
-If your thread supports cancellation, it should check this property periodically and exit if it ever returns [`true`](https://developer.apple.com/documentation/swift/true).
+If your thread supports cancellation, it should check this property periodically and exit if it ever returns [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [func cancel()](thread/cancel.md)
+### Related Documentation
+- [func cancel()](./cancel%28%29.md)
   Changes the cancelled state of the receiver to indicate that it should exit.
-- [var isExecuting: Bool](thread/isexecuting.md)
+### Determining the Thread’s Execution State
+- [var isExecuting: Bool](./isexecuting.md)
   A Boolean value that indicates whether the receiver is executing.
-- [var isFinished: Bool](thread/isfinished.md)
+- [var isFinished: Bool](./isfinished.md)
   A Boolean value that indicates whether the receiver has finished execution.
 
 

@@ -1,7 +1,8 @@
 # NSToolbar.DisplayMode
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate whether the toolbar displays items using a name, icon, or combination of elements.
 
@@ -9,7 +10,7 @@ Constants that indicate whether the toolbar displays items using a name, icon, o
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -17,39 +18,44 @@ Constants that indicate whether the toolbar displays items using a name, icon, o
 enum DisplayMode
 ```
 
+```c
+enum NSToolbarDisplayMode : NSUInteger;
+```
+
 ## Topics
 
 ### Display modes
-- [NSToolbar.DisplayMode.default](nstoolbar/displaymode-swift.enum/default.md)
+- [NSToolbar.DisplayMode.default](./displaymode-swift.enum/default.md)
   The default display mode.
-- [NSToolbar.DisplayMode.iconAndLabel](nstoolbar/displaymode-swift.enum/iconandlabel.md)
+- [NSToolbar.DisplayMode.iconAndLabel](./displaymode-swift.enum/iconandlabel.md)
   The toolbar displays an icon and label for each item.
-- [NSToolbar.DisplayMode.iconOnly](nstoolbar/displaymode-swift.enum/icononly.md)
+- [NSToolbar.DisplayMode.iconOnly](./displaymode-swift.enum/icononly.md)
   The toolbar displays only an icon for each item.
-- [NSToolbar.DisplayMode.labelOnly](nstoolbar/displaymode-swift.enum/labelonly.md)
+- [NSToolbar.DisplayMode.labelOnly](./displaymode-swift.enum/labelonly.md)
   The toolbar displays only a label for each item.
 ### Initializers
-- [init?(rawValue: UInt)](nstoolbar/displaymode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./displaymode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isVisible: Bool](nstoolbar/isvisible.md)
+### Configuring the toolbar’s behavior
+- [var isVisible: Bool](./isvisible.md)
   A Boolean value that indicates whether the toolbar is visible.
-- [var displayMode: NSToolbar.DisplayMode](nstoolbar/displaymode-swift.property.md)
+- [var displayMode: NSToolbar.DisplayMode](./displaymode-swift.property.md)
   A value that indicates whether the toolbar displays items using a name, icon, or combination of elements.
-- [var allowsUserCustomization: Bool](nstoolbar/allowsusercustomization.md)
+- [var allowsUserCustomization: Bool](./allowsusercustomization.md)
   A Boolean value that indicates whether users can modify the contents of the toolbar.
-- [var allowsExtensionItems: Bool](nstoolbar/allowsextensionitems.md)
+- [var allowsExtensionItems: Bool](./allowsextensionitems.md)
   A Boolean value that indicates whether the toolbar can add items for Action extensions.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Associates an argument table with a set of render stages.
@@ -20,14 +21,18 @@ Associates an argument table with a set of render stages.
 func setArgumentTable(_ argumentTable: (any MTL4ArgumentTable)?, stages: MTLRenderStages)
 ```
 
+```objc
+- (void) setArgumentTable:(id<MTL4ArgumentTable>) argumentTable atStages:(MTLRenderStages) stages;
+```
+
 #### Discussion
 
 Metal takes a snapshot of the resources in the argument table when you encode a draw, dispatch, or execute command. This snapshot becomes available to the `stages` you specify to this method.
 
 ## Parameters
 
-- `argumentTable`: [`MTL4ArgumentTable`](mtl4argumenttable.md) to set.
-- `stages`: A [`MTLRenderStages`](mtlrenderstages.md) bitmask that specifies the shader stages with visibility over the table.
+- `argumentTable`: [`MTL4ArgumentTable`](../mtl4argumenttable.md) to set.
+- `stages`: A [`MTLRenderStages`](../mtlrenderstages.md) bitmask that specifies the shader stages with visibility over the table.
 
 
 ---

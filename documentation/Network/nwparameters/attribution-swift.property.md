@@ -1,7 +1,8 @@
 # attribution
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -20,7 +21,7 @@ final var attribution: NWParameters.Attribution { get set }
 
 ## Mentions
 
-- [Indicating the source of network activity](indicating-the-source-of-network-activity.md)
+- [Indicating the source of network activity](../indicating-the-source-of-network-activity.md)
 
 
 ---

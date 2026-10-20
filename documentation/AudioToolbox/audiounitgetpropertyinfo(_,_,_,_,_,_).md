@@ -1,7 +1,8 @@
 # AudioUnitGetPropertyInfo(_:_:_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets information about an audio unit property.
 
@@ -19,6 +20,10 @@ Gets information about an audio unit property.
 func AudioUnitGetPropertyInfo(_ inUnit: AudioUnit, _ inID: AudioUnitPropertyID, _ inScope: AudioUnitScope, _ inElement: AudioUnitElement, _ outDataSize: UnsafeMutablePointer<UInt32>?, _ outWritable: UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioUnitGetPropertyInfo(AudioUnit inUnit, AudioUnitPropertyID inID, AudioUnitScope inScope, AudioUnitElement inElement, UInt32 *outDataSize, Boolean *outWritable);
+```
+
 #### Return Value
 
 A result code.
@@ -34,17 +39,18 @@ Some properties that have read/write access when an audio unit is uninitialized 
 - `inScope`: The audio unit scope for the property.
 - `inElement`: The audio unit element for the property.
 - `outDataSize`: On successful output, the maximum size for the audio unit property. Can be `NULL` on input, in which case no value is returned.
-- `outWritable`: On successful output, a Boolean value indicating whether the property can be written to ([`true`](https://developer.apple.com/documentation/swift/true)) or not ([`false`](https://developer.apple.com/documentation/swift/false)). Can be `NULL` on input, in which case no value is returned.
+- `outWritable`: On successful output, a Boolean value indicating whether the property can be written to ([`true`](../Swift/true.md)) or not ([`false`](../Swift/false.md)). Can be `NULL` on input, in which case no value is returned.
 
 ## See Also
 
-- [func AudioUnitGetProperty(AudioUnit, AudioUnitPropertyID, AudioUnitScope, AudioUnitElement, UnsafeMutableRawPointer, UnsafeMutablePointer<UInt32>) -> OSStatus](audiounitgetproperty(_:_:_:_:_:_:).md)
+### Configuring Audio Unit Properties
+- [func AudioUnitGetProperty(AudioUnit, AudioUnitPropertyID, AudioUnitScope, AudioUnitElement, UnsafeMutableRawPointer, UnsafeMutablePointer<UInt32>) -> OSStatus](./audiounitgetproperty%28_,_,_,_,_,_%29.md)
   Gets the value of an audio unit property.
-- [func AudioUnitSetProperty(AudioUnit, AudioUnitPropertyID, AudioUnitScope, AudioUnitElement, UnsafeRawPointer?, UInt32) -> OSStatus](audiounitsetproperty(_:_:_:_:_:_:).md)
+- [func AudioUnitSetProperty(AudioUnit, AudioUnitPropertyID, AudioUnitScope, AudioUnitElement, UnsafeRawPointer?, UInt32) -> OSStatus](./audiounitsetproperty%28_,_,_,_,_,_%29.md)
   Sets the value of an audio unit property.
-- [func AudioUnitAddPropertyListener(AudioUnit, AudioUnitPropertyID, AudioUnitPropertyListenerProc, UnsafeMutableRawPointer?) -> OSStatus](audiounitaddpropertylistener(_:_:_:_:).md)
+- [func AudioUnitAddPropertyListener(AudioUnit, AudioUnitPropertyID, AudioUnitPropertyListenerProc, UnsafeMutableRawPointer?) -> OSStatus](./audiounitaddpropertylistener%28_,_,_,_%29.md)
   Registers a callback to receive audio unit property change notifications.
-- [func AudioUnitRemovePropertyListenerWithUserData(AudioUnit, AudioUnitPropertyID, AudioUnitPropertyListenerProc, UnsafeMutableRawPointer?) -> OSStatus](audiounitremovepropertylistenerwithuserdata(_:_:_:_:).md)
+- [func AudioUnitRemovePropertyListenerWithUserData(AudioUnit, AudioUnitPropertyID, AudioUnitPropertyListenerProc, UnsafeMutableRawPointer?) -> OSStatus](./audiounitremovepropertylistenerwithuserdata%28_,_,_,_%29.md)
   Unregisters a previously-registered property listener callback function.
 
 

@@ -1,7 +1,8 @@
 # NETrafficDirection.outbound
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The outbound traffic direction.
 
@@ -18,11 +19,16 @@ The outbound traffic direction.
 case outbound
 ```
 
+```c
+NETrafficDirectionOutbound
+```
+
 ## See Also
 
-- [NETrafficDirection.inbound](netrafficdirection/inbound.md)
+### Directions
+- [NETrafficDirection.inbound](./inbound.md)
   The inbound traffic direction.
-- [NETrafficDirection.any](netrafficdirection/any.md)
+- [NETrafficDirection.any](./any.md)
   A direction that matches either inbound or outbound traffic.
 
 

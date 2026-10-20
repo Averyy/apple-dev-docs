@@ -1,14 +1,15 @@
 # total_uncompressed_pages_in_compressor
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 uint64_t total_uncompressed_pages_in_compressor;
 ```
 

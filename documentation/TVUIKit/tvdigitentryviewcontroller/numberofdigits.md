@@ -1,7 +1,8 @@
 # numberOfDigits
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of required digits.
 
@@ -14,17 +15,22 @@ The number of required digits.
 var numberOfDigits: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSUInteger numberOfDigits;
+```
+
 #### Discussion
 
 The default value is 4.
 
 ## See Also
 
-- [var titleText: String?](tvdigitentryviewcontroller/titletext.md)
+### Configuring the Digit Entry View
+- [var titleText: String?](./titletext.md)
   The title of the digit entry view.
-- [var promptText: String?](tvdigitentryviewcontroller/prompttext.md)
+- [var promptText: String?](./prompttext.md)
   A prompt that displays any additional required information.
-- [var isSecureDigitEntry: Bool](tvdigitentryviewcontroller/issecuredigitentry.md)
+- [var isSecureDigitEntry: Bool](./issecuredigitentry.md)
   A Boolean value that indicates whether an entered digit is immediately obscured.
 
 

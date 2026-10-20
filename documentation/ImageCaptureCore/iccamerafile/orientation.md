@@ -1,7 +1,8 @@
 # orientation
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The orientation to use when downloading the image.
 
@@ -18,17 +19,22 @@ The orientation to use when downloading the image.
 var orientation: ICEXIFOrientationType { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) ICEXIFOrientationType orientation;
+```
+
 #### Discussion
 
-This property is initially set to [`ICEXIFOrientationType.orientation1`](icexiforientationtype/orientation1.md) If the format of the file supports the `EXIF` orientation tag, then this property updates to match the value of that tag on receipt of the thumbnail or metadata for this file.
+This property is initially set to [`ICEXIFOrientationType.orientation1`](../icexiforientationtype/orientation1.md) If the format of the file supports the `EXIF` orientation tag, then this property updates to match the value of that tag on receipt of the thumbnail or metadata for this file.
 
 ## See Also
 
-- [enum ICEXIFOrientationType](icexiforientationtype.md)
+### Inspecting a File’s EXIF Data
+- [enum ICEXIFOrientationType](../icexiforientationtype.md)
   The file’s orientation type.
-- [var exifCreationDate: Date?](iccamerafile/exifcreationdate.md)
+- [var exifCreationDate: Date?](./exifcreationdate.md)
   The `EXIF` creation date of the file.
-- [var exifModificationDate: Date?](iccamerafile/exifmodificationdate.md)
+- [var exifModificationDate: Date?](./exifmodificationdate.md)
   The `EXIF` modification date of the file.
 
 

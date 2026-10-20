@@ -1,7 +1,8 @@
 # url
 
 **Framework**: System Extensions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file URL of the extension bundle.
 
@@ -12,6 +13,10 @@ The file URL of the extension bundle.
 
 ```swift
 var url: URL { get }
+```
+
+```objc
+@property (strong, readonly) NSURL * URL;
 ```
 
 

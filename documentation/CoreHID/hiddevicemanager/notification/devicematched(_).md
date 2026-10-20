@@ -1,7 +1,8 @@
 # HIDDeviceManager.Notification.deviceMatched(_:)
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A notification that a device matched the device criteria.
 

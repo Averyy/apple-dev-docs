@@ -1,13 +1,14 @@
 # init()
 
 **Framework**: Spatial Preview  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new observer for monitoring connected device endpoint availability.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

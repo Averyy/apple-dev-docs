@@ -1,7 +1,8 @@
 # itemMenu
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,11 +14,16 @@
 var itemMenu: UIMenu { get set }
 ```
 
+```objc
+@property (nonatomic, copy) UIMenu * itemMenu;
+```
+
 ## See Also
 
-- [var showsIndicator: Bool](nsmenutoolbaritem/showsindicator.md)
+### Configuring a menu toolbar item
+- [var showsIndicator: Bool](./showsindicator.md)
   A Boolean value that determines whether the toolbar item displays an indicator of additional functionality.
-- [var menu: NSMenu](nsmenutoolbaritem/menu.md)
+- [var menu: NSMenu](./menu.md)
   The menu presented from the toolbar item.
 
 

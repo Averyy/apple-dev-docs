@@ -2,6 +2,7 @@
 
 **Framework**: Media Setup  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 A window that presents the system’s HomePod configuration view to the user.
@@ -18,13 +19,18 @@ A window that presents the system’s HomePod configuration view to the user.
 func presentationAnchor() -> MSPresentationAnchor?
 ```
 
+```objc
+- (MSPresentationAnchor) presentationAnchor;
+```
+
 #### Return Value
 
 The interface element in your app that the system uses to display HomePod configuration information.
 
 ## See Also
 
-- [typealias MSPresentationAnchor](mspresentationanchor.md)
+### Displaying the Media Setup View
+- [typealias MSPresentationAnchor](../mspresentationanchor.md)
   A window that presents a Media Setup configuration view.
 
 

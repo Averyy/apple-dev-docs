@@ -1,7 +1,8 @@
 # parameter
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional parameter data available to the event handler at the time of the event.
 

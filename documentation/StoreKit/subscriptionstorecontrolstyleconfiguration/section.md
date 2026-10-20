@@ -1,7 +1,8 @@
 # SubscriptionStoreControlStyleConfiguration.Section
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The properties of a section of subscription options within a subscription store control.
 
@@ -22,44 +23,45 @@ struct Section
 
 #### Overview
 
-Each value represents an instance of [`SubscriptionOptionSection`](subscriptionoptionsection.md) when the system creates a [`SubscriptionStoreView`](subscriptionstoreview.md).
+Each value represents an instance of [`SubscriptionOptionSection`](../subscriptionoptionsection.md) when the system creates a [`SubscriptionStoreView`](../subscriptionstoreview.md).
 
-Even if a subscription store instance doesn’t declare sections using [`SubscriptionOptionSection`](subscriptionoptionsection.md), the instance always has at least one implicit section that contains the options within the group. Implicit sections have `nil` for the [`header`](subscriptionstorecontrolstyleconfiguration/section/header-swift.property.md) and [`footer`](subscriptionstorecontrolstyleconfiguration/section/footer-swift.property.md) accessory views.
+Even if a subscription store instance doesn’t declare sections using [`SubscriptionOptionSection`](../subscriptionoptionsection.md), the instance always has at least one implicit section that contains the options within the group. Implicit sections have `nil` for the [`header`](./section/header-swift.property.md) and [`footer`](./section/footer-swift.property.md) accessory views.
 
 ## Topics
 
 ### Getting a section’s content
-- [var options: [SubscriptionStoreControlStyleConfiguration.Option]](subscriptionstorecontrolstyleconfiguration/section/options.md)
+- [var options: [SubscriptionStoreControlStyleConfiguration.Option]](./section/options.md)
   The subscription options to merchandise within a section.
 ### Getting accessory views
-- [var header: SubscriptionStoreControlStyleConfiguration.Section.Header?](subscriptionstorecontrolstyleconfiguration/section/header-swift.property.md)
+- [var header: SubscriptionStoreControlStyleConfiguration.Section.Header?](./section/header-swift.property.md)
   A decorative header view for a section that displays before the options.
-- [var footer: SubscriptionStoreControlStyleConfiguration.Section.Footer?](subscriptionstorecontrolstyleconfiguration/section/footer-swift.property.md)
+- [var footer: SubscriptionStoreControlStyleConfiguration.Section.Footer?](./section/footer-swift.property.md)
   A decorative footer view for a section that displays after the options.
-- [SubscriptionStoreControlStyleConfiguration.Section.Header](subscriptionstorecontrolstyleconfiguration/section/header-swift.struct.md)
+- [SubscriptionStoreControlStyleConfiguration.Section.Header](./section/header-swift.struct.md)
   A type-erased header of a section of subscription options.
-- [SubscriptionStoreControlStyleConfiguration.Section.Footer](subscriptionstorecontrolstyleconfiguration/section/footer-swift.struct.md)
+- [SubscriptionStoreControlStyleConfiguration.Section.Footer](./section/footer-swift.struct.md)
   A type-erased footer of a section of subscription options.
 ### Identifying a section
-- [SubscriptionStoreControlStyleConfiguration.Section.ID](subscriptionstorecontrolstyleconfiguration/section/id.md)
+- [SubscriptionStoreControlStyleConfiguration.Section.ID](./section/id.md)
   The stable identity of a section of subscription options.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
+- [Identifiable](../../Swift/identifiable.md)
 
 ## See Also
 
-- [var options: [SubscriptionStoreControlStyleConfiguration.Option]](subscriptionstorecontrolstyleconfiguration/options.md)
+### Getting subscription options to merchandise
+- [var options: [SubscriptionStoreControlStyleConfiguration.Option]](./options.md)
   An array of subscription options for the subscription store view to merchandise.
-- [var sections: [SubscriptionStoreControlStyleConfiguration.Section]](subscriptionstorecontrolstyleconfiguration/sections.md)
+- [var sections: [SubscriptionStoreControlStyleConfiguration.Section]](./sections.md)
   The subscription options to merchandise by sections.
-- [SubscriptionStoreControlStyleConfiguration.Option](subscriptionstorecontrolstyleconfiguration/option.md)
+- [SubscriptionStoreControlStyleConfiguration.Option](./option.md)
   Properties of an auto-renewable subscription option to merchandise.
-- [SubscriptionStoreControlStyleConfiguration.PickerOption](subscriptionstorecontrolstyleconfiguration/pickeroption.md)
+- [SubscriptionStoreControlStyleConfiguration.PickerOption](./pickeroption.md)
   The properties of a picker option to use for selecting a subscription.
-- [SubscriptionStoreControlStyleConfiguration.Icon](subscriptionstorecontrolstyleconfiguration/icon.md)
+- [SubscriptionStoreControlStyleConfiguration.Icon](./icon.md)
   A type-erased icon of a subscription option.
 
 

@@ -1,7 +1,8 @@
 # IndexingIterator.Element
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element traversed by the iterator.
 
@@ -19,6 +20,8 @@ The type of element traversed by the iterator.
 ```swift
 typealias Element = Elements.Element
 ```
+
+Available when `Elements` conforms to `Collection`.
 
 
 ---

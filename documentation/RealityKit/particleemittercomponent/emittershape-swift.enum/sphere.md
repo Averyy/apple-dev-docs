@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.EmitterShape.sphere
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Particles emit from a sphere centered on the origin.
 

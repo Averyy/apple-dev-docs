@@ -1,7 +1,8 @@
 # pskc
 
 **Framework**: ThreadNetwork  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Thread network pre-shared key (PSKC) for the Commissioner.
 
@@ -19,21 +20,26 @@ The Thread network pre-shared key (PSKC) for the Commissioner.
 var pskc: Data? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSData * PSKC;
+```
+
 ## See Also
 
-- [var activeOperationalDataSet: Data?](thcredentials/activeoperationaldataset.md)
+### Getting the Thread Parameters
+- [var activeOperationalDataSet: Data?](./activeoperationaldataset.md)
   The essential operational parameters for the Thread network.
-- [var borderAgentID: Data?](thcredentials/borderagentid.md)
+- [var borderAgentID: Data?](./borderagentid.md)
   The identifier of an active Thread network Border Agent.
-- [var channel: UInt8](thcredentials/channel.md)
+- [var channel: UInt8](./channel.md)
   The Thread network radio channel.
-- [var extendedPANID: Data?](thcredentials/extendedpanid.md)
+- [var extendedPANID: Data?](./extendedpanid.md)
   The Thread network extended PAN identifier.
-- [var networkKey: Data?](thcredentials/networkkey.md)
+- [var networkKey: Data?](./networkkey.md)
   The Thread network key.
-- [var networkName: String?](thcredentials/networkname.md)
+- [var networkName: String?](./networkname.md)
   The Thread network name.
-- [var panID: Data?](thcredentials/panid.md)
+- [var panID: Data?](./panid.md)
   The Thread network PAN identifier.
 
 

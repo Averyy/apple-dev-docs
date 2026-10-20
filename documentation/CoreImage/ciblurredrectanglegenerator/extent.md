@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,10 +19,15 @@
 var extent: CGRect { get set }
 ```
 
+```objc
+@property (nonatomic) CGRect extent;
+```
+
 ## See Also
 
-- [var color: CIColor](ciblurredrectanglegenerator/color.md)
-- [var sigma: Float](ciblurredrectanglegenerator/sigma.md)
+### Instance Properties
+- [var color: CIColor](./color.md)
+- [var sigma: Float](./sigma.md)
 
 
 ---

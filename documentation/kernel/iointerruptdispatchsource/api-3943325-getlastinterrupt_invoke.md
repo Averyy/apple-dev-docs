@@ -1,14 +1,15 @@
 # GetLastInterrupt_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t GetLastInterrupt_Invoke(const IORPC rpc, OSMetaClassBase *target, GetLastInterrupt_Handler func);
 ```
 

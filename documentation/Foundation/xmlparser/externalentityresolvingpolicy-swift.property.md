@@ -1,7 +1,8 @@
 # externalEntityResolvingPolicy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The external entity resolving policy for the parser.
 
@@ -18,6 +19,10 @@ The external entity resolving policy for the parser.
 
 ```swift
 var externalEntityResolvingPolicy: XMLParser.ExternalEntityResolvingPolicy { get set }
+```
+
+```objc
+@property NSXMLParserExternalEntityResolvingPolicy externalEntityResolvingPolicy;
 ```
 
 #### Discussion

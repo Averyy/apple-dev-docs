@@ -1,7 +1,8 @@
 # *(_:_:)
 
 **Framework**: Foundation  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns the result of multiplying the values of the two arguments.
 

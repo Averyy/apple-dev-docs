@@ -1,7 +1,8 @@
 # result(actionButtonIntent:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Indicates the Intent finished performing with an `AppIntent` to continue with
 
@@ -11,7 +12,7 @@ Indicates the Intent finished performing with an `AppIntent` to continue with
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ static func result<Intent>(actionButtonIntent: Intent) -> Self where Self == Int
 
 ## Mentions
 
-- [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
+- [Responding to the Action button on Apple Watch Ultra](../actionbuttonarticle.md)
 
 ## Parameters
 

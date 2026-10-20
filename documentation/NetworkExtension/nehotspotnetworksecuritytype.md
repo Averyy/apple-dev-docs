@@ -1,7 +1,8 @@
 # NEHotspotNetworkSecurityType
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of constants that define Wi-Fi hotspot network security types.
 
@@ -18,49 +19,54 @@ An enumeration of constants that define Wi-Fi hotspot network security types.
 enum NEHotspotNetworkSecurityType
 ```
 
+```c
+enum NEHotspotNetworkSecurityType : NSInteger;
+```
+
 ## Topics
 
 ### Security types
-- [NEHotspotNetworkSecurityType.open](nehotspotnetworksecuritytype/open.md)
+- [NEHotspotNetworkSecurityType.open](./nehotspotnetworksecuritytype/open.md)
   A security type to represent an open network with no security protocol.
-- [NEHotspotNetworkSecurityType.WEP](nehotspotnetworksecuritytype/wep.md)
+- [NEHotspotNetworkSecurityType.WEP](./nehotspotnetworksecuritytype/wep.md)
   A security type to represent use of Wired Equivalent Privacy (WEP).
-- [NEHotspotNetworkSecurityType.personal](nehotspotnetworksecuritytype/personal.md)
+- [NEHotspotNetworkSecurityType.personal](./nehotspotnetworksecuritytype/personal.md)
   A security type to represent use of Wi-Fi protected access (WPA), WPA2, and WPA3 standards using a pre-shared secret.
-- [NEHotspotNetworkSecurityType.enterprise](nehotspotnetworksecuritytype/enterprise.md)
+- [NEHotspotNetworkSecurityType.enterprise](./nehotspotnetworksecuritytype/enterprise.md)
   A security type to represent use of Wi-Fi protected access (WPA), WPA2, and WPA3 standards using enterprise-level seciurity.
-- [NEHotspotNetworkSecurityType.unknown](nehotspotnetworksecuritytype/unknown.md)
+- [NEHotspotNetworkSecurityType.unknown](./nehotspotnetworksecuritytype/unknown.md)
   A value that represents an unknown security type.
 ### Initializers
-- [init?(rawValue: Int)](nehotspotnetworksecuritytype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nehotspotnetworksecuritytype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var ssid: String](nehotspotnetwork/ssid.md)
+### Network information
+- [var ssid: String](./nehotspotnetwork/ssid.md)
   The SSID for the Wi-Fi network.
-- [var bssid: String](nehotspotnetwork/bssid.md)
+- [var bssid: String](./nehotspotnetwork/bssid.md)
   The BSSID for the Wi-Fi network.
-- [var signalStrength: Double](nehotspotnetwork/signalstrength.md)
+- [var signalStrength: Double](./nehotspotnetwork/signalstrength.md)
   The recent signal strength for the Wi-Fi network.
-- [var isSecure: Bool](nehotspotnetwork/issecure.md)
+- [var isSecure: Bool](./nehotspotnetwork/issecure.md)
   Indicates whether the network is secure
-- [var didAutoJoin: Bool](nehotspotnetwork/didautojoin.md)
+- [var didAutoJoin: Bool](./nehotspotnetwork/didautojoin.md)
   Indicates whether the network was joined automatically or was joined explicitly by the user.
-- [var didJustJoin: Bool](nehotspotnetwork/didjustjoin.md)
+- [var didJustJoin: Bool](./nehotspotnetwork/didjustjoin.md)
   Indicates whether the network was just joined.
-- [var isChosenHelper: Bool](nehotspotnetwork/ischosenhelper.md)
+- [var isChosenHelper: Bool](./nehotspotnetwork/ischosenhelper.md)
   Indicates whether the calling Hotspot Helper is the chosen helper for this network.
-- [var securityType: NEHotspotNetworkSecurityType](nehotspotnetwork/securitytype.md)
+- [var securityType: NEHotspotNetworkSecurityType](./nehotspotnetwork/securitytype.md)
   The type of security used by the Wi-Fi network.
 
 

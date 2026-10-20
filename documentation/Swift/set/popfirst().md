@@ -1,7 +1,8 @@
 # popFirst()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes and returns the first element of the set.
 
@@ -20,6 +21,8 @@ Removes and returns the first element of the set.
 mutating func popFirst() -> Element?
 ```
 
+Available when `Element` conforms to `Hashable`.
+
 #### Return Value
 
 A member of the set. If the set is empty, returns `nil`.
@@ -30,11 +33,12 @@ Because a set is not an ordered collection, the “first” element may not be t
 
 ## See Also
 
-- [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](set/drop(while:).md)
+### Excluding Elements
+- [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](./drop%28while%29.md)
   Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.
-- [func dropFirst(Int) -> Self.SubSequence](set/dropfirst(_:).md)
+- [func dropFirst(Int) -> Self.SubSequence](./dropfirst%28_%29.md)
   Returns a subsequence containing all but the given number of initial elements.
-- [func dropLast(Int) -> Self.SubSequence](set/droplast(_:).md)
+- [func dropLast(Int) -> Self.SubSequence](./droplast%28_%29.md)
   Returns a subsequence containing all but the specified number of final elements.
 
 

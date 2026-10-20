@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type for the internal content of this `AccessibilityRotorContent`.
@@ -23,7 +24,8 @@ associatedtype Body : AccessibilityRotorContent
 
 ## See Also
 
-- [var body: Self.Body](accessibilityrotorcontent/body-swift.property.md)
+### Supporting types
+- [var body: Self.Body](./body-swift.property.md)
   The internal content of this `AccessibilityRotorContent`.
 
 

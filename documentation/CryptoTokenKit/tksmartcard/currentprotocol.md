@@ -1,9 +1,10 @@
 # currentProtocol
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The protocol used for communication with the Smart Card. Returns [`TKSmartCardProtocolNone`](tksmartcardprotocol/tksmartcardprotocolnone.md) if no session is currently established.
+The protocol used for communication with the Smart Card. Returns [`TKSmartCardProtocolNone`](../tksmartcardprotocol/tksmartcardprotocolnone.md) if no session is currently established.
 
 **Availability**:
 - iOS 9.0+
@@ -20,11 +21,16 @@ The protocol used for communication with the Smart Card. Returns [`TKSmartCardPr
 var currentProtocol: TKSmartCardProtocol { get }
 ```
 
+```objc
+@property (readonly) TKSmartCardProtocol currentProtocol;
+```
+
 ## See Also
 
-- [var allowedProtocols: TKSmartCardProtocol](tksmartcard/allowedprotocols.md)
-  The protocols allowed for communication with the Smart Card. [`any`](tksmartcardprotocol/any.md) by default.
-- [struct TKSmartCardProtocol](tksmartcardprotocol.md)
+### Setting the Communication Protocol
+- [var allowedProtocols: TKSmartCardProtocol](./allowedprotocols.md)
+  The protocols allowed for communication with the Smart Card. [`any`](../tksmartcardprotocol/any.md) by default.
+- [struct TKSmartCardProtocol](../tksmartcardprotocol.md)
   Smart Card transmission protocols.
 
 

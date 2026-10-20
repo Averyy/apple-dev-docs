@@ -1,7 +1,8 @@
 # ApplePayErrorCode
 
 **Framework**: Apple Pay on the Web  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The error code that indicates whether an error on the payment sheet is for shipping or billing information, or for another kind of error.
 
@@ -11,16 +12,20 @@ The error code that indicates whether an error on the payment sheet is for shipp
 
 ## Declaration
 
-```swift
+```
 enum ApplePayErrorCode
 ```
 
 #### Overview
 
-Use the following error codes in the [`code`](applepayerror/code.md) property of [`ApplePayError`](applepayerror.md):
+Use the following error codes in the [`code`](./applepayerror/code.md) property of [`ApplePayError`](./applepayerror.md):
 
-- **`"shippingContactInvalid"`**: The code that indicates that the shipping address or contact information is invalid or missing. Use with [`contactField`](applepayerror/contactfield.md).
-- **`"billingContactInvalid"`**: The code that indicates that the billing address information is invalid or missing. Use with [`contactField`](applepayerror/contactfield.md).
+- **`"shippingContactInvalid"`**: The code that indicates that the shipping address or contact information is invalid or missing.
+
+  Use with [`contactField`](./applepayerror/contactfield.md).
+- **`"billingContactInvalid"`**: The code that indicates that the billing address information is invalid or missing.
+
+  Use with [`contactField`](./applepayerror/contactfield.md).
 - **`"addressUnserviceable"`**: The code that indicates that the merchant can’t provide service to the shipping address (for example, can’t deliver to a P.O. Box).
 - **`"couponCodeInvalid"`**: The code that indicates an invalid coupon.
 - **`"couponCodeExpired"`**: The code that indicates an expired coupon.
@@ -29,20 +34,21 @@ Use the following error codes in the [`code`](applepayerror/code.md) property of
 ## Topics
 
 ### Enumeration Cases
-- [addressUnserviceable](applepayerrorcode/addressunserviceable.md)
-- [billingContactInvalid](applepayerrorcode/billingcontactinvalid.md)
-- [couponCodeExpired](applepayerrorcode/couponcodeexpired.md)
-- [couponCodeInvalid](applepayerrorcode/couponcodeinvalid.md)
-- [shippingContactInvalid](applepayerrorcode/shippingcontactinvalid.md)
-- [unknown](applepayerrorcode/unknown.md)
+- [addressUnserviceable](./applepayerrorcode/addressunserviceable.md)
+- [billingContactInvalid](./applepayerrorcode/billingcontactinvalid.md)
+- [couponCodeExpired](./applepayerrorcode/couponcodeexpired.md)
+- [couponCodeInvalid](./applepayerrorcode/couponcodeinvalid.md)
+- [shippingContactInvalid](./applepayerrorcode/shippingcontactinvalid.md)
+- [unknown](./applepayerrorcode/unknown.md)
 
 ## See Also
 
-- [ApplePayError](applepayerror.md)
+### Status and errors
+- [ApplePayError](./applepayerror.md)
   A customizable error type that you create to indicate problems with the address or contact information on an Apple Pay sheet.
-- [ApplePayErrorContactField](applepayerrorcontactfield.md)
+- [ApplePayErrorContactField](./applepayerrorcontactfield.md)
   Names of the fields in the shipping or billing contact information, used to locate errors in the payment sheet.
-- [Apple Pay Status Codes](apple-pay-status-codes.md)
+- [Apple Pay Status Codes](./apple-pay-status-codes.md)
   Codes used to report the status of an Apple Pay session after a callback.
 
 

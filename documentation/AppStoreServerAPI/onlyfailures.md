@@ -1,7 +1,8 @@
 # onlyFailures
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A Boolean value that indicates whether the response includes only notifications that failed to reach your server.
 
@@ -10,13 +11,13 @@ A Boolean value that indicates whether the response includes only notifications 
 
 ## Declaration
 
-```swift
+```
 boolean onlyFailures
 ```
 
 ## Mentions
 
-- [App Store Server API changelog](app-store-server-api-changelog.md)
+- [App Store Server API changelog](./app-store-server-api-changelog.md)
 
 #### Discussion
 
@@ -24,13 +25,14 @@ A value of `true` indicates that you want to receive just the App Store server n
 
 ## See Also
 
-- [type startDate](startdate.md)
+### Data types
+- [type startDate](./startdate.md)
   The start date of a timespan, expressed in UNIX time, in milliseconds.
-- [type endDate](enddate.md)
+- [type endDate](./enddate.md)
   The end date of a timespan, expressed in UNIX time, in milliseconds.
-- [type notificationType](notificationtype.md)
+- [type notificationType](./notificationtype.md)
   A notification type value that App Store Server Notifications 2 uses.
-- [type notificationSubtype](notificationsubtype.md)
+- [type notificationSubtype](./notificationsubtype.md)
   A notification subtype value that App Store Server Notifications 2 uses.
 
 

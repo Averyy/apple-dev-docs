@@ -1,7 +1,8 @@
 # position
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the element in the shared coordinate space.
 
@@ -20,9 +21,10 @@ This property contains the distance from the coordinate space’s origin along t
 
 ## See Also
 
-- [let direction: SpatialTemplateElementDirection](spatialtemplateseatelement/direction.md)
+### Getting the element details
+- [let direction: SpatialTemplateElementDirection](./direction.md)
   The initial orientation of the element in the shared coordinate space.
-- [let role: (any SpatialTemplateRole)?](spatialtemplateseatelement/role.md)
+- [let role: (any SpatialTemplateRole)?](./role.md)
   An optional role you associate with this element.
 
 

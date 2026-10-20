@@ -1,7 +1,8 @@
 # options
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of options used to run the kernel.
 
@@ -19,13 +20,18 @@ The set of options used to run the kernel.
 var options: MPSKernelOptions { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MPSKernelOptions options;
+```
+
 ## See Also
 
-- [struct MPSKernelOptions](mpskerneloptions.md)
+### Properties
+- [struct MPSKernelOptions](../mpskerneloptions.md)
   The options used when creating a kernel.
-- [var device: any MTLDevice](mpskernel/device.md)
+- [var device: any MTLDevice](./device.md)
   The device on which the kernel will be used.
-- [var label: String?](mpskernel/label.md)
+- [var label: String?](./label.md)
   The string that identifies the kernel.
 
 

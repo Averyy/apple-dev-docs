@@ -1,7 +1,8 @@
 # removeObject(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a given key and its associated value from the dictionary.
 
@@ -20,6 +21,10 @@ Removes a given key and its associated value from the dictionary.
 func removeObject(forKey aKey: Any)
 ```
 
+```objc
+- (void) removeObjectForKey:(KeyType) aKey;
+```
+
 #### Discussion
 
 Does nothing if `aKey` does not exist.
@@ -36,13 +41,16 @@ stations = [[NSMutableDictionary alloc]
 
 ## Parameters
 
-- `aKey`: The key to remove. > ❗ **Important**:  Raises an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md) if `aKey` is `nil`.
+- `aKey`: The key to remove.
+
+  > ❗ **Important**:  Raises an [`invalidArgumentException`](../nsexceptionname/invalidargumentexception.md) if `aKey` is `nil`.
 
 ## See Also
 
-- [func removeAllObjects()](nsmutabledictionary/removeallobjects.md)
+### Removing Entries From a Mutable Dictionary
+- [func removeAllObjects()](./removeallobjects%28%29.md)
   Empties the dictionary of its entries.
-- [func removeObjects(forKeys: [Any])](nsmutabledictionary/removeobjects(forkeys:).md)
+- [func removeObjects(forKeys: [Any])](./removeobjects%28forkeys%29.md)
   Removes from the dictionary entries specified by elements in a given array.
 
 

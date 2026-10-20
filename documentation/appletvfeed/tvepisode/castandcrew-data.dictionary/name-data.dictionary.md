@@ -1,7 +1,8 @@
 # TvEpisode.CastAndCrew.Name
 
 **Framework**: Apple TV Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A mapping of locale to localized names for the cast or crew member.
 
@@ -10,7 +11,7 @@ A mapping of locale to localized names for the cast or crew member.
 
 ## Declaration
 
-```swift
+```
 object TvEpisode.CastAndCrew.Name
 ```
 

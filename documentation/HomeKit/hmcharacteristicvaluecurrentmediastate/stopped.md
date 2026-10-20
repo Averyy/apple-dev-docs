@@ -1,7 +1,8 @@
 # HMCharacteristicValueCurrentMediaState.stopped
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The current media stopped playing.
 
@@ -19,17 +20,22 @@ The current media stopped playing.
 case stopped
 ```
 
+```c
+HMCharacteristicValueCurrentMediaStateStopped
+```
+
 ## See Also
 
-- [HMCharacteristicValueCurrentMediaState.interrupted](hmcharacteristicvaluecurrentmediastate/interrupted.md)
+### Current media states
+- [HMCharacteristicValueCurrentMediaState.interrupted](./interrupted.md)
   The current media is interrupted.
-- [HMCharacteristicValueCurrentMediaState.loading](hmcharacteristicvaluecurrentmediastate/loading.md)
+- [HMCharacteristicValueCurrentMediaState.loading](./loading.md)
   The current media is loading.
-- [HMCharacteristicValueCurrentMediaState.paused](hmcharacteristicvaluecurrentmediastate/paused.md)
+- [HMCharacteristicValueCurrentMediaState.paused](./paused.md)
   The current media is paused.
-- [HMCharacteristicValueCurrentMediaState.playing](hmcharacteristicvaluecurrentmediastate/playing.md)
+- [HMCharacteristicValueCurrentMediaState.playing](./playing.md)
   The current media is playing.
-- [HMCharacteristicValueCurrentMediaState.unknown](hmcharacteristicvaluecurrentmediastate/unknown.md)
+- [HMCharacteristicValueCurrentMediaState.unknown](./unknown.md)
   The current media state is unknown.
 
 

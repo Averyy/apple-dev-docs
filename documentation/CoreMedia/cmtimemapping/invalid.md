@@ -1,7 +1,8 @@
 # invalid
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An invalid time mapping.
 
@@ -20,11 +21,16 @@ An invalid time mapping.
 static let invalid: CMTimeMapping
 ```
 
+```c
+extern const CMTimeMapping kCMTimeMappingInvalid;
+```
+
 ## See Also
 
-- [let kCMTimeMappingSourceKey: CFString](kcmtimemappingsourcekey.md)
+### Constants
+- [let kCMTimeMappingSourceKey: CFString](../kcmtimemappingsourcekey.md)
   A dictionary key for a source time range.
-- [let kCMTimeMappingTargetKey: CFString](kcmtimemappingtargetkey.md)
+- [let kCMTimeMappingTargetKey: CFString](../kcmtimemappingtargetkey.md)
   A dictionary key for a target time range.
 
 

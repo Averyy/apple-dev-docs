@@ -1,7 +1,8 @@
 # CLSDataStore
 
 **Framework**: ClassKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for all the ClassKit data in your app.
 
@@ -18,76 +19,81 @@ A container for all the ClassKit data in your app.
 class CLSDataStore
 ```
 
+```objc
+@interface CLSDataStore : NSObject
+```
+
 #### Overview
 
-Use the ClassKit data store to build and access contexts ([`CLSContext`](clscontext.md) instances) that you use to advertise your app’s assignable content. Contexts in turn provide access to activities ([`CLSActivity`](clsactivity.md) instances) and activity items ([`CLSScoreItem`](clsscoreitem.md), [`CLSBinaryItem`](clsbinaryitem.md), and [`CLSQuantityItem`](clsquantityitem.md) instances) that you use to record progress through assignments. You don’t instantiate a data store yourself. Instead, use the single [`shared`](clsdatastore/shared.md) data store instance throughout your app.
+Use the ClassKit data store to build and access contexts ([`CLSContext`](./clscontext.md) instances) that you use to advertise your app’s assignable content. Contexts in turn provide access to activities ([`CLSActivity`](./clsactivity.md) instances) and activity items ([`CLSScoreItem`](./clsscoreitem.md), [`CLSBinaryItem`](./clsbinaryitem.md), and [`CLSQuantityItem`](./clsquantityitem.md) instances) that you use to record progress through assignments. You don’t instantiate a data store yourself. Instead, use the single [`shared`](./clsdatastore/shared.md) data store instance throughout your app.
 
-The data store provides access to the app’s one and only main context through the [`mainAppContext`](clsdatastore/mainappcontext.md) property. This property acts as the root context in your context hierarchy that you can use as a starting point when searching for descendant contexts.
+The data store provides access to the app’s one and only main context through the [`mainAppContext`](./clsdatastore/mainappcontext.md) property. This property acts as the root context in your context hierarchy that you can use as a starting point when searching for descendant contexts.
 
-To build contexts, you adopt the [`CLSDataStoreDelegate`](clsdatastoredelegate.md) protocol in one of your classes, typically one that exists for the lifetime of your app, and assign an instance of that class as the shared data store’s [`delegate`](clsdatastore/delegate.md) property. Then, when the data store needs a context that it’s never seen before, it asks your delegate to build it.
+To build contexts, you adopt the [`CLSDataStoreDelegate`](./clsdatastoredelegate.md) protocol in one of your classes, typically one that exists for the lifetime of your app, and assign an instance of that class as the shared data store’s [`delegate`](./clsdatastore/delegate.md) property. Then, when the data store needs a context that it’s never seen before, it asks your delegate to build it.
 
-After you make changes to any context, activity, or activity item, call the data store’s [`save(completion:)`](clsdatastore/save(completion:).md) method to commit the changes, and propagate them through the network.
+After you make changes to any context, activity, or activity item, call the data store’s [`save(completion:)`](./clsdatastore/save%28completion%29.md) method to commit the changes, and propagate them through the network.
 
 ## Topics
 
 ### Accessing the shared data store
-- [class var shared: CLSDataStore](clsdatastore/shared.md)
+- [class var shared: CLSDataStore](./clsdatastore/shared.md)
   The shared data store object.
 ### Managing the delegate
-- [Building missing contexts](building-missing-contexts.md)
+- [Building missing contexts](./building-missing-contexts.md)
   Create and initialize missing contexts.
-- [var delegate: (any CLSDataStoreDelegate)?](clsdatastore/delegate.md)
+- [var delegate: (any CLSDataStoreDelegate)?](./clsdatastore/delegate.md)
   The data store delegate instance.
-- [protocol CLSDataStoreDelegate](clsdatastoredelegate.md)
+- [protocol CLSDataStoreDelegate](./clsdatastoredelegate.md)
   An interface the data store uses to request new contexts.
 ### Accessing specific contexts and activities
-- [var mainAppContext: CLSContext](clsdatastore/mainappcontext.md)
+- [var mainAppContext: CLSContext](./clsdatastore/mainappcontext.md)
   The app’s top-level context.
-- [var activeContext: CLSContext?](clsdatastore/activecontext.md)
+- [var activeContext: CLSContext?](./clsdatastore/activecontext.md)
   The currently active context.
-- [var runningActivity: CLSActivity?](clsdatastore/runningactivity.md)
+- [var runningActivity: CLSActivity?](./clsdatastore/runningactivity.md)
   The currently running activity within the currently active context.
-- [func fetchActivity(for: URL, completion: (CLSActivity?, (any Error)?) -> Void)](clsdatastore/fetchactivity(for:completion:).md)
+- [func fetchActivity(for: URL, completion: (CLSActivity?, (any Error)?) -> Void)](./clsdatastore/fetchactivity%28for,completion%29.md)
   Fetches an activity for a given document so you can record progress on the associated task.
-- [func completeAllAssignedActivities(matching: [String])](clsdatastore/completeallassignedactivities(matching:).md)
+- [func completeAllAssignedActivities(matching: [String])](./clsdatastore/completeallassignedactivities%28matching%29.md)
   Marks all of the assigned and active activities for the given context path as complete.
 ### Finding contexts that match criteria
-- [func contexts(matchingIdentifierPath: [String], completion: ([CLSContext], (any Error)?) -> Void)](clsdatastore/contexts(matchingidentifierpath:completion:).md)
+- [func contexts(matchingIdentifierPath: [String], completion: ([CLSContext], (any Error)?) -> Void)](./clsdatastore/contexts%28matchingidentifierpath,completion%29.md)
   Fetches all the contexts along a given identifier path.
-- [func contexts(matching: NSPredicate, completion: ([CLSContext], (any Error)?) -> Void)](clsdatastore/contexts(matching:completion:).md)
+- [func contexts(matching: NSPredicate, completion: ([CLSContext], (any Error)?) -> Void)](./clsdatastore/contexts%28matching,completion%29.md)
   Fetches all the contexts matching a predicate.
-- [struct CLSPredicateKeyPath](clspredicatekeypath.md)
+- [struct CLSPredicateKeyPath](./clspredicatekeypath.md)
   The set of possible key paths you use to search for contexts.
 ### Removing contexts
-- [func remove(CLSContext)](clsdatastore/remove(_:).md)
+- [func remove(CLSContext)](./clsdatastore/remove%28_%29.md)
   Marks a context for removal.
 ### Saving changes
-- [func save(completion: (((any Error)?) -> Void)?)](clsdatastore/save(completion:).md)
+- [func save(completion: (((any Error)?) -> Void)?)](./clsdatastore/save%28completion%29.md)
   Saves any changes you’ve made in the data store.
 ### Instance Methods
-- [func checkIsAssignedDocument(URL, completion: (Bool, (any Error)?) -> Void)](clsdatastore/checkisassigneddocument(_:completion:).md)
+- [func checkIsAssignedDocument(URL, completion: (Bool, (any Error)?) -> Void)](./clsdatastore/checkisassigneddocument%28_,completion%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Enabling ClassKit in your app](enabling-classkit-in-your-app.md)
+### Essentials
+- [Enabling ClassKit in your app](./enabling-classkit-in-your-app.md)
   Prepare your app and your development environment to adopt ClassKit.
-- [ClassKit Environment Entitlement](../bundleresources/entitlements/com.apple.developer.classkit-environment.md)
+- [ClassKit Environment Entitlement](../BundleResources/entitlements/com.apple.developer.classkit-environment.md)
   The ClassKit development or production environment for an education app that works with the Schoolwork app.
-- [Incorporating ClassKit into an Educational App](incorporating-classkit-into-an-educational-app.md)
+- [Incorporating ClassKit into an Educational App](./incorporating-classkit-into-an-educational-app.md)
   Walk through the process of setting up assignments and recording student progress.
-- [ClassKit UI](../classkitui/classkitui.md)
+- [ClassKit UI](../ClassKitUI/ClassKitUI.md)
   Display views that enable students to submit and withdraw assigned documents in your app.
 
 

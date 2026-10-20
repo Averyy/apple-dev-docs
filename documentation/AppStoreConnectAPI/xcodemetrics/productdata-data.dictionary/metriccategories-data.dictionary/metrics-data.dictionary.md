@@ -1,7 +1,8 @@
 # xcodeMetrics.ProductData.MetricCategories.Metrics
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Data that relates to power and performance measurements for an app, including its datasets, goal keys, metrics identifier, and unit of measurement.
 
@@ -10,22 +11,22 @@ Data that relates to power and performance measurements for an app, including it
 
 ## Declaration
 
-```swift
+```
 object xcodeMetrics.ProductData.MetricCategories.Metrics
 ```
 
 ## Mentions
 
-- [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
+- [App Store Connect API 4.4 release notes](../../../app-store-connect-api-4-4-release-notes.md)
 
 ## Topics
 
 ### Objects
-- [object xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets](xcodemetrics/productdata-data.dictionary/metriccategories-data.dictionary/metrics-data.dictionary/datasets-data.dictionary.md)
+- [object xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets](./metrics-data.dictionary/datasets-data.dictionary.md)
   A set of data containing metric values for each app version, filtered by percentile and device type.
-- [object xcodeMetrics.ProductData.MetricCategories.Metrics.GoalKeys](xcodemetrics/productdata-data.dictionary/metriccategories-data.dictionary/metrics-data.dictionary/goalkeys-data.dictionary.md)
+- [object xcodeMetrics.ProductData.MetricCategories.Metrics.GoalKeys](./metrics-data.dictionary/goalkeys-data.dictionary.md)
   A classification of a metrics value and the lower- and upper-bound values that qualify a metrics value for the classification.
-- [object xcodeMetrics.ProductData.MetricCategories.Metrics.Unit](xcodemetrics/productdata-data.dictionary/metriccategories-data.dictionary/metrics-data.dictionary/unit-data.dictionary.md)
+- [object xcodeMetrics.ProductData.MetricCategories.Metrics.Unit](./metrics-data.dictionary/unit-data.dictionary.md)
   A unit of measurement and its display name.
 
 ## Properties

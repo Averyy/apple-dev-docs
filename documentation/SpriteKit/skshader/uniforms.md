@@ -1,7 +1,8 @@
 # uniforms
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of uniforms associated with the shader.
 
@@ -10,7 +11,7 @@ The list of uniforms associated with the shader.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ The list of uniforms associated with the shader.
 var uniforms: [SKUniform] { get set }
 ```
 
+```objc
+@property (copy) NSArray<SKUniform *> * uniforms;
+```
+
 ## Mentions
 
-- [Creating a Custom Fragment Shader](creating-a-custom-fragment-shader.md)
+- [Creating a Custom Fragment Shader](../creating-a-custom-fragment-shader.md)
 
 #### Discussion
 
@@ -30,11 +35,12 @@ This property is not read-only, so you can also use it to provide all of the uni
 
 ## See Also
 
-- [func addUniform(SKUniform)](skshader/adduniform(_:).md)
+### Providing Uniform Data to a Shader
+- [func addUniform(SKUniform)](./adduniform%28_%29.md)
   Adds a uniform to the shader.
-- [func removeUniformNamed(String)](skshader/removeuniformnamed(_:).md)
+- [func removeUniformNamed(String)](./removeuniformnamed%28_%29.md)
   Removes a uniform from the shader.
-- [func uniformNamed(String) -> SKUniform?](skshader/uniformnamed(_:).md)
+- [func uniformNamed(String) -> SKUniform?](./uniformnamed%28_%29.md)
   Returns the uniform object corresponding to a particular uniform variable.
 
 

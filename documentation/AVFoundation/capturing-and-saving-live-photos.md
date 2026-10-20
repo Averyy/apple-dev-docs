@@ -1,16 +1,17 @@
 # Capturing and saving Live Photos
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Article
 
 Capture Live Photos like those created in the system Camera app and save them to the Photos library.
 
 #### Overview
 
-A Live Photo is a picture that includes motion and sound from the moments just before and after its capture. Your app can capture and record Live Photos using the AVFoundation capture system and the [`AVCapturePhotoOutput`](avcapturephotooutput.md) class.
+A Live Photo is a picture that includes motion and sound from the moments just before and after its capture. Your app can capture and record Live Photos using the AVFoundation capture system and the [`AVCapturePhotoOutput`](./avcapturephotooutput.md) class.
 
-> **Note**:  If you’re not already familiar with capture sessions, input setup, and photo capture, see [`Setting up a capture session`](setting-up-a-capture-session.md) and [`Capturing still and Live Photos`](capturing-still-and-live-photos.md).
+> **Note**:  If you’re not already familiar with capture sessions, input setup, and photo capture, see [Setting up a capture session](./setting-up-a-capture-session.md) and [Capturing still and Live Photos](./capturing-still-and-live-photos.md).
 
-##### Enable Live Photo Capture
+##### Enable Live Photo capture
 
 For a still photo your capture session needs only a video input, but a Live Photo includes sound, so you’ll need to also connect an audio capture device to your session:
 
@@ -42,9 +43,9 @@ func configureSession() throws {
 }
 ```
 
-Because you’re already using a built-in camera device for video (see [`Setting up a capture session`](setting-up-a-capture-session.md)), you can simply use the default audio capture device—the system automatically uses the best microphone configuration for the camera position.
+Because you’re already using a built-in camera device for video (see [Setting up a capture session](./setting-up-a-capture-session.md)), you can simply use the default audio capture device—the system automatically uses the best microphone configuration for the camera position.
 
-Capturing Live Photos requires an internal reconfiguration of the capture pipeline, which takes time and interrupts any in-progress captures. Before shooting your first Live Photo, make sure you’ve configured the pipeline appropriately by enabling Live Photo capture on your [`AVCapturePhotoOutput`](avcapturephotooutput.md) object:
+Capturing Live Photos requires an internal reconfiguration of the capture pipeline, which takes time and interrupts any in-progress captures. Before shooting your first Live Photo, make sure you’ve configured the pipeline appropriately by enabling Live Photo capture on your [`AVCapturePhotoOutput`](./avcapturephotooutput.md) object:
 
 ```swift
 let photoOutput = AVCapturePhotoOutput()
@@ -67,7 +68,7 @@ captureSession.startRunning()
 
 ##### Capture a Live Photo
 
-Once your photo output is ready for Live Photos, you can choose still image or Live Photo capture for each shot. To capture a Live Photo, create an [`AVCapturePhotoSettings`](avcapturephotosettings.md) object, choosing the format for the still image portion of the Live Photo and providing a URL for writing the movie portion of the Live Photo. Then, call [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) to trigger capture:
+Once your photo output is ready for Live Photos, you can choose still image or Live Photo capture for each shot. To capture a Live Photo, create an [`AVCapturePhotoSettings`](./avcapturephotosettings.md) object, choosing the format for the still image portion of the Live Photo and providing a URL for writing the movie portion of the Live Photo. Then, call [`capturePhoto(with:delegate:)`](./avcapturephotooutput/capturephoto%28with,delegate%29.md) to trigger capture:
 
 ```swift
 let photoSettings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.hevc])
@@ -78,11 +79,11 @@ let captureProcessor = LivePhotoCaptureProcessor()
 photoOutput.capturePhoto(with: photoSettings, delegate: captureProcessor)
 ```
 
-##### Handle Live Photo Results
+##### Handle Live Photo results
 
 A Live Photo appears to users in the Photos app as a single asset, but it’s actually composed of separate files: the primary still image, and a movie file containing motion and sound from the moments before and after. The capture system delivers these results separately, as soon as each becomes available.
 
-The [`photoOutput(_:didFinishProcessingPhoto:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingphoto:error:).md) method delivers the still image portion of the Live Photo as an [`AVCapturePhoto`](avcapturephoto.md) object. Because you’ll need to save the still image and movie files together, it’s best to extract the image file data from the [`AVCapturePhoto`](avcapturephoto.md) and keep it until the movie file finishes recording, as shown below. (You can also use this method to indicate in your UI that the still image has been captured.)
+The [`photoOutput(_:didFinishProcessingPhoto:error:)`](./avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md) method delivers the still image portion of the Live Photo as an [`AVCapturePhoto`](./avcapturephoto.md) object. Because you’ll need to save the still image and movie files together, it’s best to extract the image file data from the [`AVCapturePhoto`](./avcapturephoto.md) and keep it until the movie file finishes recording, as shown below. (You can also use this method to indicate in your UI that the still image has been captured.)
 
 ```swift
 func photoOutput(_ output: AVCapturePhotoOutput,
@@ -98,7 +99,7 @@ func photoOutput(_ output: AVCapturePhotoOutput,
 }
 ```
 
-The [`photoOutput(_:didFinishProcessingLivePhotoToMovieFileAt:duration:photoDisplayTime:resolvedSettings:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessinglivephototomoviefileat:duration:photodisplaytime:resolvedsettings:error:).md) method fires later, indicating that the URL you specified when triggering the capture now contains a complete movie file. Once you have both the still image and movie portions of your Live Photo, you can save them together:
+The [`photoOutput(_:didFinishProcessingLivePhotoToMovieFileAt:duration:photoDisplayTime:resolvedSettings:error:)`](./avcapturephotocapturedelegate/photooutput%28_,didfinishprocessinglivephototomoviefileat,duration,photodisplaytime,resolvedsettings,error%29.md) method fires later, indicating that the URL you specified when triggering the capture now contains a complete movie file. Once you have both the still image and movie portions of your Live Photo, you can save them together:
 
 ```swift
 func photoOutput(_ output: AVCapturePhotoOutput,
@@ -123,9 +124,9 @@ func photoOutput(_ output: AVCapturePhotoOutput,
 
 > **Note**:  To display Live Photos after capture, see [`PHLivePhoto`](https://developer.apple.com/documentation/photos/phlivephoto) and [`PHLivePhotoView`](https://developer.apple.com/documentation/photosui/phlivephotoview).
 
-##### Save a Live Photo to the Photos Library
+##### Save a Live Photo to the photos library
 
-Use the [`PHAssetCreationRequest`](https://developer.apple.com/documentation/photos/phassetcreationrequest) class to create a single Photos asset consisting of media from multiple files—in the case of a Live Photo, the still image and its paired video. As in [`Saving captured photos`](saving-captured-photos.md), you’ll need to wrap that request in a [`PHPhotoLibrary`](https://developer.apple.com/documentation/photos/phphotolibrary) change block, and first make sure that your app has the user’s permission to access Photos.
+Use the [`PHAssetCreationRequest`](https://developer.apple.com/documentation/photos/phassetcreationrequest) class to create a single Photos asset consisting of media from multiple files—in the case of a Live Photo, the still image and its paired video. As in [Saving captured photos](./saving-captured-photos.md), you’ll need to wrap that request in a [`PHPhotoLibrary`](https://developer.apple.com/documentation/photos/phphotolibrary) change block, and first make sure that your app has the user’s permission to access Photos.
 
 ```swift
 func saveLivePhotoToPhotosLibrary(stillImageData: Data, livePhotoMovieURL: URL) {    PHPhotoLibrary.requestAuthorization { status in
@@ -149,16 +150,16 @@ func saveLivePhotoToPhotosLibrary(stillImageData: Data, livePhotoMovieURL: URL) 
 
 > 💡 **Tip**:  Use the [`shouldMoveFile`](https://developer.apple.com/documentation/photos/phassetresourcecreationoptions/shouldmovefile) option so that iOS can transfer the movie file from your app’s sandbox to the system Photos library without an expensive data-copying operation.
 
-##### Track Live Photo Progress
+##### Track Live Photo progress
 
-Capturing Live Photos adds two additional steps to the process shown in [`Tracking photo capture progress`](tracking-photo-capture-progress.md): after delivery of the still photo result (step 4), the photo output notifies you of movie capture status (step 5) and delivers the movie result (step 6). (Final cleanup becomes step 7.)
+Capturing Live Photos adds two additional steps to the process shown in [Tracking photo capture progress](./tracking-photo-capture-progress.md): after delivery of the still photo result (step 4), the photo output notifies you of movie capture status (step 5) and delivers the movie result (step 6). (Final cleanup becomes step 7.)
 
-![Diagram of numbered Live Photo capture process steps after calling capturePhoto().](/images/com.apple.avfoundation/media-2961960@2x.png)
+![Diagram of numbered Live Photo capture process steps after calling capturePhoto().](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-2961960@2x.png)
 
 When the user captures a Live Photo in the system Camera app, a “Live” indicator appears for a few seconds to let the user know that video and audio are still being recorded. To provide a similar interface in your app, implement these methods in your photo capture delegate:
 
-- The [`photoOutput(_:willBeginCaptureFor:)`](avcapturephotocapturedelegate/photooutput(_:willbegincapturefor:).md) method tells you that capture has started: implement this method to show a recording indicator.
-- The [`photoOutput(_:didFinishRecordingLivePhotoMovieForEventualFileAt:resolvedSettings:)`](avcapturephotocapturedelegate/photooutput(_:didfinishrecordinglivephotomovieforeventualfileat:resolvedsettings:).md) method tells you that a Live Photo movie is no longer recording: implement this method to hide the indicator. (Note that the movie file is not yet available at this time.)
+- The [`photoOutput(_:willBeginCaptureFor:)`](./avcapturephotocapturedelegate/photooutput%28_,willbegincapturefor%29.md) method tells you that capture has started: implement this method to show a recording indicator.
+- The [`photoOutput(_:didFinishRecordingLivePhotoMovieForEventualFileAt:resolvedSettings:)`](./avcapturephotocapturedelegate/photooutput%28_,didfinishrecordinglivephotomovieforeventualfileat,resolvedsettings%29.md) method tells you that a Live Photo movie is no longer recording: implement this method to hide the indicator. (Note that the movie file is not yet available at this time.)
 
 You can have multiple Live Photo captures running at the same time, so it’s best to use these methods to keep track of the number of captures “in flight” and hide your indicator only when that number reaches zero:
 
@@ -193,9 +194,10 @@ class LivePhotoCaptureProcessor: NSObject, AVCapturePhotoCaptureDelegate {
 
 ## See Also
 
-- [Saving captured photos](saving-captured-photos.md)
+### Next steps
+- [Saving captured photos](./saving-captured-photos.md)
   Add an image and other data from a photo capture to the photo library.
-- [Tracking photo capture progress](tracking-photo-capture-progress.md)
+- [Tracking photo capture progress](./tracking-photo-capture-progress.md)
   Monitor key events during capture to provide feedback in your camera UI.
 
 

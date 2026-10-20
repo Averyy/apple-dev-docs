@@ -1,7 +1,8 @@
 # UIRegion
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A shape for use in UIKit Dynamics.
 
@@ -19,6 +20,10 @@ A shape for use in UIKit Dynamics.
 class UIRegion
 ```
 
+```objc
+@interface UIRegion : NSObject
+```
+
 #### Overview
 
 When creating animations, you use regions to define the effective area of a field behavior such as a magnetic or gravitational force. Most regions are rectangular or elliptical in shape, but you can use the methods of this class to create more complex shapes by adding, subtracting, and intersecting other regions.
@@ -28,41 +33,41 @@ When creating a new region, you specify only the size of the corresponding recta
 ## Topics
 
 ### Creating and initializing regions
-- [class var infinite: UIRegion](uiregion/infinite.md)
+- [class var infinite: UIRegion](./uiregion/infinite.md)
   Returns the region that encloses all points.
-- [init(size: CGSize)](uiregion/init(size:).md)
+- [init(size: CGSize)](./uiregion/init%28size%29.md)
   Initializes and returns a rectangular region of the specified size.
-- [init(radius: CGFloat)](uiregion/init(radius:).md)
+- [init(radius: CGFloat)](./uiregion/init%28radius%29.md)
   Initializes and returns a region with a circular shape of the specified radius.
 ### Creating complex regions
-- [func inverse() -> Self](uiregion/inverse.md)
+- [func inverse() -> Self](./uiregion/inverse%28%29.md)
   Returns a new region that’s the mathematical inverse of the current region.
-- [func byDifference(from: UIRegion) -> Self](uiregion/bydifference(from:).md)
+- [func byDifference(from: UIRegion) -> Self](./uiregion/bydifference%28from%29.md)
   Returns a new region created by subtracting the specified region from the current region.
-- [func byIntersection(with: UIRegion) -> Self](uiregion/byintersection(with:).md)
+- [func byIntersection(with: UIRegion) -> Self](./uiregion/byintersection%28with%29.md)
   Returns a new region containing only the area occupied by both the specified region and current region.
-- [func byUnion(with: UIRegion) -> Self](uiregion/byunion(with:).md)
+- [func byUnion(with: UIRegion) -> Self](./uiregion/byunion%28with%29.md)
   Returns a new region containing the combined areas of the specified region and the current region.
 ### Interacting with a region
-- [func contains(CGPoint) -> Bool](uiregion/contains(_:).md)
+- [func contains(CGPoint) -> Bool](./uiregion/contains%28_%29.md)
   Returns a Boolean indicating whether the specified point is inside of the current region.
 ### Initializers
-- [init?(coder: NSCoder)](uiregion/init(coder:).md)
+- [init?(coder: NSCoder)](./uiregion/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

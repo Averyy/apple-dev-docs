@@ -1,7 +1,8 @@
 # commandBuffer
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The command buffer to encode simulation commands into.
 
@@ -12,7 +13,7 @@ The command buffer to encode simulation commands into.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # hasAttendees
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the calendar item has attendees.
 
@@ -19,14 +20,19 @@ A Boolean value that indicates whether the calendar item has attendees.
 var hasAttendees: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasAttendees;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the calendar item has attendees; otherwise it does not.
+If [`true`](../../Swift/true.md), the calendar item has attendees; otherwise it does not.
 
 ## See Also
 
-- [var attendees: [EKParticipant]?](ekcalendaritem/attendees.md)
-  The attendees associated with the calendar item, as an array of [`EKParticipant`](ekparticipant.md) objects.
+### Displaying Attendees
+- [var attendees: [EKParticipant]?](./attendees.md)
+  The attendees associated with the calendar item, as an array of [`EKParticipant`](../ekparticipant.md) objects.
 
 
 ---

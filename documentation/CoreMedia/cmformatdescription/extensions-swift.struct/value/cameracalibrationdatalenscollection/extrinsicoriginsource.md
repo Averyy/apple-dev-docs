@@ -1,7 +1,8 @@
 # CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.ExtrinsicOriginSource
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Identifies how the origin of the camera system’s extrinsics are determined.
 
@@ -23,17 +24,17 @@ enum ExtrinsicOriginSource
 ## Topics
 
 ### Enumeration Cases
-- [CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.ExtrinsicOriginSource.stereoCameraSystemBaseline](cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/extrinsicoriginsource/stereocamerasystembaseline.md)
+- [CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.ExtrinsicOriginSource.stereoCameraSystemBaseline](./extrinsicoriginsource/stereocamerasystembaseline.md)
   Center of transform is determined by the point mid way along the dimensions indicated by the StereoCameraSystemBaselineBox held in the StereoCameraSystemBox.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [Hashable](../../../../../Swift/hashable.md)
+- [RawRepresentable](../../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 
 
 ---

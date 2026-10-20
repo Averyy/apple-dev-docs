@@ -1,7 +1,8 @@
 # curveEndCaps
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An end-cap type for the curves in the geometry.
 
@@ -19,9 +20,13 @@ An end-cap type for the curves in the geometry.
 var curveEndCaps: MTLCurveEndCaps { get set }
 ```
 
+```objc
+@property (nonatomic) MTLCurveEndCaps curveEndCaps;
+```
+
 #### Discussion
 
-The default value is [`MTLCurveEndCaps.none`](mtlcurveendcaps/none.md).
+The default value is [`MTLCurveEndCaps.none`](../mtlcurveendcaps/none.md).
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Decodes a value from the provided decoder.
@@ -32,6 +33,12 @@ This method throws an error if reading from the decoder fails, or if the data re
 ## Parameters
 
 - `decoder`: The decoder to read data from.
+
+## Default Implementations
+
+### MarkdownDecodableAttributedStringKey Implementations
+- [static func decodeMarkdown(from: any Decoder) throws -> Self.Value](./decodemarkdown%28from%29-8vpq6.md)
+  Decodes a value from the provided decoder, using a default implementation.
 
 
 ---

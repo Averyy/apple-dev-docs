@@ -1,7 +1,8 @@
 # withExtractStream(extractingTo:selectUsing:flags:threadCount:_:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calls the given closure with an extract output archive stream.
 
@@ -11,7 +12,7 @@ Calls the given closure with an extract output archive stream.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -26,7 +27,7 @@ The result of the closure.
 
 #### Discussion
 
-This function opens a stream created by [`extractStream(extractingTo:selectUsing:flags:threadCount:)`](archivestream/extractstream(extractingto:selectusing:flags:threadcount:).md), calls the specified closure, and closes the stream.
+This function opens a stream created by [`extractStream(extractingTo:selectUsing:flags:threadCount:)`](./extractstream%28extractingto,selectusing,flags,threadcount%29.md), calls the specified closure, and closes the stream.
 
 ## Parameters
 
@@ -38,7 +39,8 @@ This function opens a stream created by [`extractStream(extractingTo:selectUsing
 
 ## See Also
 
-- [static func extractStream(extractingTo: FilePath, selectUsing: ArchiveHeader.EntryFilter?, flags: ArchiveFlags, threadCount: Int) -> ArchiveStream?](archivestream/extractstream(extractingto:selectusing:flags:threadcount:).md)
+### Extracting Data
+- [static func extractStream(extractingTo: FilePath, selectUsing: ArchiveHeader.EntryFilter?, flags: ArchiveFlags, threadCount: Int) -> ArchiveStream?](./extractstream%28extractingto,selectusing,flags,threadcount%29.md)
   Opens an extract output archive stream.
 
 

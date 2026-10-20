@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Purpose.accountCreation
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value indicating the merchant is requesting information for the customer to create an account.
 

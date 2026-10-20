@@ -1,7 +1,8 @@
 # UIFocusAnimationContext
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Information about focusing animations being performed by the system.
 
@@ -19,28 +20,33 @@ Information about focusing animations being performed by the system.
 protocol UIFocusAnimationContext : NSObjectProtocol
 ```
 
+```objc
+@protocol UIFocusAnimationContext <NSObject>
+```
+
 #### Overview
 
-You don’t adopt this protocol in your custom classes. When a focus update occurs and the system provides you with a [`UIFocusAnimationCoordinator`](uifocusanimationcoordinator.md) object, you can use that object to specify custom focus-related animations. When the time comes for the system to execute your animations, it delivers an object that adopts this protocol to your animation block. The context object contains information about the system animations that you can use to configure the behavior of your own animations. For example, you might configure your animations to be exactly half the duration of the system animations.
+You don’t adopt this protocol in your custom classes. When a focus update occurs and the system provides you with a [`UIFocusAnimationCoordinator`](./uifocusanimationcoordinator.md) object, you can use that object to specify custom focus-related animations. When the time comes for the system to execute your animations, it delivers an object that adopts this protocol to your animation block. The context object contains information about the system animations that you can use to configure the behavior of your own animations. For example, you might configure your animations to be exactly half the duration of the system animations.
 
 ## Topics
 
 ### Getting the animation attributes
-- [var duration: TimeInterval](uifocusanimationcontext/duration.md)
+- [var duration: TimeInterval](./uifocusanimationcontext/duration.md)
   The duration (measured in seconds) of the focus animation.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func addCoordinatedFocusingAnimations(((any UIFocusAnimationContext) -> Void)?, completion: (() -> Void)?)](uifocusanimationcoordinator/addcoordinatedfocusinganimations(_:completion:).md)
+### Adding animations to focus updates
+- [func addCoordinatedFocusingAnimations(((any UIFocusAnimationContext) -> Void)?, completion: (() -> Void)?)](./uifocusanimationcoordinator/addcoordinatedfocusinganimations%28_,completion%29.md)
   Runs the specified set of animations together with the system animations for adding focus to an item.
-- [func addCoordinatedUnfocusingAnimations(((any UIFocusAnimationContext) -> Void)?, completion: (() -> Void)?)](uifocusanimationcoordinator/addcoordinatedunfocusinganimations(_:completion:).md)
+- [func addCoordinatedUnfocusingAnimations(((any UIFocusAnimationContext) -> Void)?, completion: (() -> Void)?)](./uifocusanimationcoordinator/addcoordinatedunfocusinganimations%28_,completion%29.md)
   Runs the specified set of animations together with the system animations for removing focus from an item.
-- [func addCoordinatedAnimations((() -> Void)?, completion: (() -> Void)?)](uifocusanimationcoordinator/addcoordinatedanimations(_:completion:).md)
+- [func addCoordinatedAnimations((() -> Void)?, completion: (() -> Void)?)](./uifocusanimationcoordinator/addcoordinatedanimations%28_,completion%29.md)
   Specifies the animations to coordinate with the active focus animation.
 
 

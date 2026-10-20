@@ -1,7 +1,8 @@
 # leftElbow
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key associated with left elbow joint in a body pose.
 
@@ -21,7 +22,8 @@ static let leftElbow: JointKey
 
 ## See Also
 
-- [static let rightElbow: JointKey](jointkey/rightelbow.md)
+### Getting elbow properties
+- [static let rightElbow: JointKey](./rightelbow.md)
   A key associated with right elbow joint in a body pose.
 
 

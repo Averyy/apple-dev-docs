@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom object from your app that provides the items to share.
 
@@ -14,15 +15,20 @@ The custom object from your app that provides the items to share.
 weak var delegate: (any NSSharingServicePickerToolbarItemDelegate)? { get set }
 ```
 
+```objc
+@property (weak) id<NSSharingServicePickerToolbarItemDelegate> delegate;
+```
+
 #### Discussion
 
 Use your delegate object to provide the set of items you want to share from your window. If this property is `nil`, AppKit disables the toolbar item.
 
 ## See Also
 
-- [protocol NSSharingServicePickerToolbarItemDelegate](nssharingservicepickertoolbaritemdelegate.md)
+### Getting the Toolbar Items
+- [protocol NSSharingServicePickerToolbarItemDelegate](../nssharingservicepickertoolbaritemdelegate.md)
   An interface that provides the content to share from the macOS share sheet.
-- [var activityItemsConfiguration: (any UIActivityItemsConfigurationReading)?](nssharingservicepickertoolbaritem/activityitemsconfiguration.md)
+- [var activityItemsConfiguration: (any UIActivityItemsConfigurationReading)?](./activityitemsconfiguration.md)
   The custom object from an app built with Mac Catalyst that provides the items to share.
 
 

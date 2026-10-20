@@ -1,7 +1,8 @@
 # SubtleCrypto
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,25 +10,25 @@
 
 ## Declaration
 
-```swift
+```
 interface SubtleCrypto
 ```
 
 ## Topics
 
 ### Instance Methods
-- [decrypt](subtlecrypto/1633929-decrypt.md)
-- [deriveBits](subtlecrypto/2871178-derivebits.md)
-- [deriveKey](subtlecrypto/2871243-derivekey.md)
-- [digest](subtlecrypto/1630765-digest.md)
-- [encrypt](subtlecrypto/1632571-encrypt.md)
-- [exportKey](subtlecrypto/1630770-exportkey.md)
-- [generateKey](subtlecrypto/1629915-generatekey.md)
-- [importKey](subtlecrypto/1631330-importkey.md)
-- [sign](subtlecrypto/1631087-sign.md)
-- [unwrapKey](subtlecrypto/1633652-unwrapkey.md)
-- [verify](subtlecrypto/1632701-verify.md)
-- [wrapKey](subtlecrypto/1629708-wrapkey.md)
+- [decrypt](./subtlecrypto/api-1633929-decrypt.md)
+- [deriveBits](./subtlecrypto/api-2871178-derivebits.md)
+- [deriveKey](./subtlecrypto/api-2871243-derivekey.md)
+- [digest](./subtlecrypto/api-1630765-digest.md)
+- [encrypt](./subtlecrypto/api-1632571-encrypt.md)
+- [exportKey](./subtlecrypto/api-1630770-exportkey.md)
+- [generateKey](./subtlecrypto/api-1629915-generatekey.md)
+- [importKey](./subtlecrypto/api-1631330-importkey.md)
+- [sign](./subtlecrypto/api-1631087-sign.md)
+- [unwrapKey](./subtlecrypto/api-1633652-unwrapkey.md)
+- [verify](./subtlecrypto/api-1632701-verify.md)
+- [wrapKey](./subtlecrypto/api-1629708-wrapkey.md)
 
 
 ---

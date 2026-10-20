@@ -1,7 +1,8 @@
 # isCancelled
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the current task was canceled.
 
@@ -24,9 +25,9 @@ var isCancelled: Bool { get }
 
 After the value of this property becomes `true`, it remains `true` indefinitely. There is no way to uncancel a task.
 
-This property returns the actual cancellation state of the task, regardless of whether a cancellation shield is active. Use [`isCancelled`](task/iscancelled-swift.type.property.md) (the static property) if you need cancellation checking that respects active shields.
+This property returns the actual cancellation state of the task, regardless of whether a cancellation shield is active. Use [`isCancelled`](../task/iscancelled-swift.type.property.md) (the static property) if you need cancellation checking that respects active shields.
 
-##### Instance Property Iscancelled Ignores Task Cancellation Shields
+##### Instance property isCancelled ignores Task Cancellation Shields
 
 The instance property `task.isCancelled` is not contextual and therefore does not respect cancellation shields. If a task was cancelled and is executing with an active cancellation shield, this property will return the *actual* cancellation status of the specific task.
 
@@ -49,15 +50,15 @@ Which is equivalent to the contextually aware static `Task.isCancelled` property
 Task.isCancelled
 ```
 
-Prefer using [`isCancelled`](task/iscancelled-swift.type.property.md) (the static property) in most situations when checking the cancellation status from inside the task.
+Prefer using [`isCancelled`](../task/iscancelled-swift.type.property.md) (the static property) in most situations when checking the cancellation status from inside the task.
 
-> **Note**: [`isCancelled`](task/iscancelled-swift.type.property.md)
+> **See Also**: [`isCancelled`](../task/iscancelled-swift.type.property.md)
 
-> **Note**: [`checkCancellation()`](task/checkcancellation().md)
+> **See Also**: [`checkCancellation()`](../task/checkcancellation%28%29.md)
 
-> **Note**: [`hasActiveCancellationShield`](task/hasactivecancellationshield.md)
+> **See Also**: [`hasActiveCancellationShield`](../task/hasactivecancellationshield.md)
 
-> **Note**: `withTaskCancellationShield(operation:)-(()->Value)`
+> **See Also**: `withTaskCancellationShield(operation:)-(()->Value)`
 
 
 ---

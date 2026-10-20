@@ -1,7 +1,8 @@
 # MPMediaItemAnimatedArtwork
 
 **Framework**: Media Player  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An animated image, such as an animated music album cover art, for a media item.
 
@@ -20,9 +21,13 @@ An animated image, such as an animated music album cover art, for a media item.
 class MPMediaItemAnimatedArtwork
 ```
 
+```objc
+@interface MPMediaItemAnimatedArtwork : NSObject
+```
+
 ## Mentions
 
-- [Providing animated artwork for media items](providing-animated-artwork-for-media-items.md)
+- [Providing animated artwork for media items](./providing-animated-artwork-for-media-items.md)
 
 #### Overview
 
@@ -30,47 +35,48 @@ A single instance of animated artwork is comprised of two assets: an artwork vid
 
 Both the preview image and artwork video can be fetched asynchronously and will only be requested when required at point of display. Aim to provide preview images as quickly as possible once requested, and ideally synchronously.
 
-Video asset `URL`s you provide must be local file `URL`s. You should make the associated assets available locally before providing them via the relevant handler, for example by fetching the associated video asset over the network. The `URL`s should remain valid for the lifetime of the [`MPMediaItemAnimatedArtwork`](mpmediaitemanimatedartwork.md), once provided.
+Video asset `URL`s you provide must be local file `URL`s. You should make the associated assets available locally before providing them via the relevant handler, for example by fetching the associated video asset over the network. The `URL`s should remain valid for the lifetime of the [`MPMediaItemAnimatedArtwork`](./mpmediaitemanimatedartwork.md), once provided.
 
-[`MPMediaItemAnimatedArtwork`](mpmediaitemanimatedartwork.md) should not be subclassed.
+[`MPMediaItemAnimatedArtwork`](./mpmediaitemanimatedartwork.md) should not be subclassed.
 
 ## Topics
 
 ### Initializers
-- [convenience init(artworkID: String, previewImageRequestHandler: (CGSize) async -> UIImage?, videoAssetFileURLRequestHandler: (CGSize) async -> URL?)](mpmediaitemanimatedartwork/init(artworkid:previewimagerequesthandler:videoassetfileurlrequesthandler:)-7bb3j.md)
+- [convenience init(artworkID: String, previewImageRequestHandler: (CGSize) async -> UIImage?, videoAssetFileURLRequestHandler: (CGSize) async -> URL?)](./mpmediaitemanimatedartwork/init%28artworkid,previewimagerequesthandler,videoassetfileurlrequesthandler%29-7bb3j.md)
   Creates an animated artwork.
-- [convenience init(artworkID: String, previewImageRequestHandler: (CGSize) async -> NSImage?, videoAssetFileURLRequestHandler: (CGSize) async -> URL?)](mpmediaitemanimatedartwork/init(artworkid:previewimagerequesthandler:videoassetfileurlrequesthandler:)-7n23z.md)
+- [convenience init(artworkID: String, previewImageRequestHandler: (CGSize) async -> NSImage?, videoAssetFileURLRequestHandler: (CGSize) async -> URL?)](./mpmediaitemanimatedartwork/init%28artworkid,previewimagerequesthandler,videoassetfileurlrequesthandler%29-7n23z.md)
   Creates an animated artwork.
-- [init(artworkID: String, previewImageRequestHandler: (CGSize, (UIImage?) -> Void) -> Void, videoAssetFileURLRequestHandler: (CGSize, (URL?) -> Void) -> Void)](mpmediaitemanimatedartwork/init(artworkid:previewimagerequesthandler:videoassetfileurlrequesthandler:)-ieue.md)
+- [init(artworkID: String, previewImageRequestHandler: (CGSize, (UIImage?) -> Void) -> Void, videoAssetFileURLRequestHandler: (CGSize, (URL?) -> Void) -> Void)](./mpmediaitemanimatedartwork/init%28artworkid,previewimagerequesthandler,videoassetfileurlrequesthandler%29-ieue.md)
   Creates an animated artwork.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Providing animated artwork for media items](providing-animated-artwork-for-media-items.md)
+### Media items and playlists
+- [Providing animated artwork for media items](./providing-animated-artwork-for-media-items.md)
   Display animated artwork for your app’s media in system views, such as the lock screen, by providing video assets through your now playing info.
-- [class MPMediaItem](mpmediaitem.md)
+- [class MPMediaItem](./mpmediaitem.md)
   A collection of properties that represents a single item in the media library.
-- [class MPMediaItemArtwork](mpmediaitemartwork.md)
+- [class MPMediaItemArtwork](./mpmediaitemartwork.md)
   A graphical image, such as music album cover art, associated with a media item.
-- [class MPMediaItemCollection](mpmediaitemcollection.md)
+- [class MPMediaItemCollection](./mpmediaitemcollection.md)
   A sorted set of media items from the media library.
-- [class MPMediaPlaylist](mpmediaplaylist.md)
+- [class MPMediaPlaylist](./mpmediaplaylist.md)
   A playable collection of related media items.
-- [class MPMediaPlaylistCreationMetadata](mpmediaplaylistcreationmetadata.md)
+- [class MPMediaPlaylistCreationMetadata](./mpmediaplaylistcreationmetadata.md)
   A set of attributes for describing a playlist when creating it.
-- [class MPMediaEntity](mpmediaentity.md)
+- [class MPMediaEntity](./mpmediaentity.md)
   The abstract superclass for media items, media item collections, and media playlist instances.
 
 

@@ -1,7 +1,8 @@
 # dispatchQueue
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dispatch queue used for the compilation.
 
@@ -17,6 +18,10 @@ The dispatch queue used for the compilation.
 
 ```swift
 var dispatchQueue: dispatch_queue_t { get set }
+```
+
+```objc
+@property (atomic, retain, readwrite) dispatch_queue_t dispatchQueue;
 ```
 
 #### Discussion

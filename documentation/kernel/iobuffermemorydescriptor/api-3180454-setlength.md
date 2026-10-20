@@ -1,7 +1,8 @@
 # SetLength
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Changes the length of the memory buffer.
 
@@ -11,13 +12,21 @@ Changes the length of the memory buffer.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+virtual kern_return_t SetLength(uint64_t length);
+```
+
+*macOS*
+
+```cpp
 kern_return_t SetLength(uint64_t length, OSDispatchMethod supermethod);
 ```
 
-#### Return_value
+#### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes). 
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md). 
 
 #### Discussion
 
@@ -29,9 +38,10 @@ Use this method to truncate an existing memory buffer. For example, you might ca
 
 ## See Also
 
-- [- GetAddressRange](iobuffermemorydescriptor/3180453-getaddressrange.md)
+### Managing the Buffer Contents
+- [- GetAddressRange](./api-3180453-getaddressrange.md)
   Returns the address and length of the memory buffer.
-- [IOAddressSegment](../driverkit/ioaddresssegment.md)
+- [IOAddressSegment](../../DriverKit/ioaddresssegment.md)
   A structure that describes the location and size of a block of memory.
 
 

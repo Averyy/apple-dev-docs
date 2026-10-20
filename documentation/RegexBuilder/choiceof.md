@@ -1,7 +1,8 @@
 # ChoiceOf
 
 **Framework**: RegexBuilder  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A regex component that chooses exactly one of its constituent regex components when matching.
 
@@ -11,7 +12,7 @@ A regex component that chooses exactly one of its constituent regex components w
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -39,25 +40,26 @@ print(match?.0 as Any)
 ## Topics
 
 ### Initializers
-- [init(() -> ChoiceOf<Output>)](choiceof/init(_:).md)
+- [init(() -> ChoiceOf<Output>)](./choiceof/init%28_%29.md)
   Creates a regex component that chooses exactly one of the regex components provided by the builder closure.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [RegexComponent](../swift/regexcomponent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [RegexComponent](../Swift/regexcomponent.md)
 
 ## See Also
 
-- [struct CharacterClass](characterclass.md)
+### Components
+- [struct CharacterClass](./characterclass.md)
   A class of characters that match in a regex.
-- [struct Anchor](anchor.md)
+- [struct Anchor](./anchor.md)
   A regex component that matches a specific condition at a particular position in an input string.
-- [struct Lookahead](lookahead.md)
+- [struct Lookahead](./lookahead.md)
   A regex component that allows a match to continue only if its contents match at the given location.
-- [struct NegativeLookahead](negativelookahead.md)
+- [struct NegativeLookahead](./negativelookahead.md)
   A regex component that allows a match to continue only if its contents do not match at the given location.
 
 

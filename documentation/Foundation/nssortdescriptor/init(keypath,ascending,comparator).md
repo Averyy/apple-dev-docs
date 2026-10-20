@@ -1,7 +1,8 @@
 # init(keyPath:ascending:comparator:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sort descriptor with a specified key path and ordering, and a comparator block.
 
@@ -23,22 +24,23 @@ convenience init<Root, Value>(keyPath: KeyPath<Root, Value>, ascending: Bool, co
 ## Parameters
 
 - `keyPath`: The key path to the property to compare.
-- `ascending`: If `true`, the sort descriptor compares using the [`SortOrder.forward`](sortorder/forward.md) sort order; otherwise, it uses [`SortOrder.reverse`](sortorder/reverse.md).
+- `ascending`: If `true`, the sort descriptor compares using the [`SortOrder.forward`](../sortorder/forward.md) sort order; otherwise, it uses [`SortOrder.reverse`](../sortorder/reverse.md).
 - `cmptr`: A comparator block.
 
 ## See Also
 
-- [init(key: String?, ascending: Bool)](nssortdescriptor/init(key:ascending:).md)
+### Creating a Sort Descriptor
+- [init(key: String?, ascending: Bool)](./init%28key,ascending%29.md)
   Creates a sort descriptor with a specified string key path and sort order.
-- [init(key: String?, ascending: Bool, selector: Selector?)](nssortdescriptor/init(key:ascending:selector:).md)
+- [init(key: String?, ascending: Bool, selector: Selector?)](./init%28key,ascending,selector%29.md)
   Creates a sort descriptor with a specified string key path, ordering, and comparison selector.
-- [convenience init<Root, Value>(keyPath: KeyPath<Root, Value>, ascending: Bool)](nssortdescriptor/init(keypath:ascending:).md)
+- [convenience init<Root, Value>(keyPath: KeyPath<Root, Value>, ascending: Bool)](./init%28keypath,ascending%29.md)
   Creates a sort descriptor with a specified key path and ordering.
-- [init(key: String?, ascending: Bool, comparator: Comparator)](nssortdescriptor/init(key:ascending:comparator:).md)
+- [init(key: String?, ascending: Bool, comparator: Comparator)](./init%28key,ascending,comparator%29.md)
   Creates a sort descriptor with a specified string key path and ordering, and a comparator block.
-- [init?(coder: NSCoder)](nssortdescriptor/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a sort descriptor by decoding from the coder you specify.
-- [convenience init<Compared>(SortDescriptor<Compared>)](nssortdescriptor/init(_:)-7qf91.md)
+- [convenience init<Compared>(SortDescriptor<Compared>)](./init%28_%29-7qf91.md)
   Creates a sort descriptor using a sort descriptor you specify.
 
 

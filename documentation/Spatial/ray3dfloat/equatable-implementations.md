@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (Ray3DFloat, Ray3DFloat) -> Bool](ray3dfloat/==(_:_:).md)
+- [static func == (Ray3DFloat, Ray3DFloat) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two rays are equal.
 
 

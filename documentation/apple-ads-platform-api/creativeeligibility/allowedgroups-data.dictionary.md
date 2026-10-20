@@ -1,7 +1,8 @@
 # CreativeEligibility.AllowedGroups
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The supply sources and placements where this ad creative is eligible to serve.
 
@@ -10,7 +11,7 @@ The supply sources and placements where this ad creative is eligible to serve.
 
 ## Declaration
 
-```swift
+```
 object CreativeEligibility.AllowedGroups
 ```
 
@@ -18,7 +19,7 @@ object CreativeEligibility.AllowedGroups
 
 Each entry pairs a set of supply placements with the country or region codes where the ad creative can serve.
 
-See [`CreativeEligibility`](creativeeligibility.md) for the full field reference.
+See [`CreativeEligibility`](../creativeeligibility.md) for the full field reference.
 
 
 ---

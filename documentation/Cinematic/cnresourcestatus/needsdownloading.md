@@ -1,7 +1,8 @@
 # CNResourceStatus.needsDownloading
 
 **Framework**: Cinematic  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Configuration is supported but requires download of resources
 
@@ -16,6 +17,10 @@ Configuration is supported but requires download of resources
 
 ```swift
 case needsDownloading
+```
+
+```c
+CNResourceStatusNeedsDownloading
 ```
 
 

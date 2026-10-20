@@ -1,7 +1,8 @@
 # init(white:alpha:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color object with the specified brightness and alpha channel values.
 
@@ -14,11 +15,15 @@ Creates a color object with the specified brightness and alpha channel values.
 init(white: CGFloat, alpha: CGFloat)
 ```
 
+```objc
++ (NSColor *) colorWithWhite:(CGFloat) white alpha:(CGFloat) alpha;
+```
+
 #### Discussion
 
-This method accepts extended color component values. If the alpha or white values are outside of the `0-1.0` range, the method creates a color in the extended range or [`extendedGenericGamma22Gray`](nscolorspace/extendedgenericgamma22gray.md) color space that is compatible with the sRGB colorspace. This method is provided for easier reuse of code that uses [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) in iOS.
+This method accepts extended color component values. If the alpha or white values are outside of the `0-1.0` range, the method creates a color in the extended range or [`extendedGenericGamma22Gray`](../nscolorspace/extendedgenericgamma22gray.md) color space that is compatible with the sRGB colorspace. This method is provided for easier reuse of code that uses [`UIColor`](../../UIKit/uicolor.md) in iOS.
 
-Where possible, it is preferable to specify the colorspace explicitly using the [`init(srgbRed:green:blue:alpha:)`](nscolor/init(srgbred:green:blue:alpha:)-9oz51.md) or [`init(genericGamma22White:alpha:)`](nscolor/init(genericgamma22white:alpha:).md) method.
+Where possible, it is preferable to specify the colorspace explicitly using the [`init(srgbRed:green:blue:alpha:)`](./init%28srgbred,green,blue,alpha%29-9oz51.md) or [`init(genericGamma22White:alpha:)`](./init%28genericgamma22white,alpha%29.md) method.
 
 ## Parameters
 
@@ -27,11 +32,12 @@ Where possible, it is preferable to specify the colorspace explicitly using the 
 
 ## See Also
 
-- [init(calibratedWhite: CGFloat, alpha: CGFloat)](nscolor/init(calibratedwhite:alpha:).md)
+### Creating a color using white components
+- [init(calibratedWhite: CGFloat, alpha: CGFloat)](./init%28calibratedwhite,alpha%29.md)
   Creates a color object using the given opacity and grayscale values.
-- [init(deviceWhite: CGFloat, alpha: CGFloat)](nscolor/init(devicewhite:alpha:).md)
+- [init(deviceWhite: CGFloat, alpha: CGFloat)](./init%28devicewhite,alpha%29.md)
   Creates a color object using the given opacity and grayscale values.
-- [init(genericGamma22White: CGFloat, alpha: CGFloat)](nscolor/init(genericgamma22white:alpha:).md)
+- [init(genericGamma22White: CGFloat, alpha: CGFloat)](./init%28genericgamma22white,alpha%29.md)
   Returns a color object with the specified white and alpha values in the GenericGamma22 colorspace.
 
 

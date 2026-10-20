@@ -1,7 +1,8 @@
 # gain
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of sound the source emanates.
 
@@ -17,6 +18,10 @@ The amount of sound the source emanates.
 
 ```swift
 var gain: Double { get set }
+```
+
+```objc
+@property (nonatomic, assign) double gain;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # DeviceActivityEvent.Name
 
 **Framework**: Device Activity  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The unique name of an event.
 
@@ -23,23 +24,24 @@ struct Name
 ## Topics
 
 ### Creating an Instance
-- [init(rawValue: String)](deviceactivityevent/name/init(rawvalue:).md)
+- [init(rawValue: String)](./name/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
-- [init(String)](deviceactivityevent/name/init(_:).md)
+- [init(String)](./name/init%28_%29.md)
   Creates a new instance with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [init(applications: Set<ApplicationToken>, categories: Set<ActivityCategoryToken>, webDomains: Set<WebDomainToken>, threshold: DateComponents)](deviceactivityevent/init(applications:categories:webdomains:threshold:).md)
+### Creating an Event
+- [init(applications: Set<ApplicationToken>, categories: Set<ActivityCategoryToken>, webDomains: Set<WebDomainToken>, threshold: DateComponents)](./init%28applications,categories,webdomains,threshold%29.md)
   Creates a new event.
-- [var includesAllActivity: Bool](deviceactivityevent/includesallactivity.md)
+- [var includesAllActivity: Bool](./includesallactivity.md)
   A Boolean value that indicates whether the event includes all applications, categories, and web domains.
 
 

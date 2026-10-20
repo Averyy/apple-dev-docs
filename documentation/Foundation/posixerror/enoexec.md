@@ -1,7 +1,8 @@
 # ENOEXEC
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Exec format error.
 

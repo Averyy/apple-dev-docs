@@ -1,7 +1,8 @@
 # mode
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the display mode of the camera device view.
 
@@ -14,17 +15,22 @@ Specifies the display mode of the camera device view.
 var mode: IKCameraDeviceViewDisplayMode { get set }
 ```
 
+```objc
+@property IKCameraDeviceViewDisplayMode mode;
+```
+
 #### Discussion
 
-The possible values are listed in [`IKCameraDeviceViewDisplayMode`](ikcameradeviceviewdisplaymode.md)
+The possible values are listed in [`IKCameraDeviceViewDisplayMode`](../ikcameradeviceviewdisplaymode.md)
 
 ## See Also
 
-- [var iconSize: Int](ikcameradeviceview/iconsize.md)
+### View Display Mode
+- [var iconSize: Int](./iconsize.md)
   Specifies the icon size.
-- [var hasDisplayModeIcon: Bool](ikcameradeviceview/hasdisplaymodeicon.md)
+- [var hasDisplayModeIcon: Bool](./hasdisplaymodeicon.md)
   Returns whether the device view is being displayed in icon mode.
-- [var hasDisplayModeTable: Bool](ikcameradeviceview/hasdisplaymodetable.md)
+- [var hasDisplayModeTable: Bool](./hasdisplaymodetable.md)
   Returns whether the device view is being displayed in table mode.
 
 

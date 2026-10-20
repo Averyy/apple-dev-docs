@@ -1,6 +1,7 @@
 # The QTVR flattener
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Optimize a movie for delivery over the web.
 
@@ -49,7 +50,8 @@ The import preview atom is a Boolean value that is used to indicate that the pre
 
 ## See Also
 
-- [Sample atom container for the QTVR flattener](sample_atom_container_for_the_qtvr_flattener.md)
+### Optimizations
+- [Sample atom container for the QTVR flattener](./sample_atom_container_for_the_qtvr_flattener.md)
   Specify an import preview file for the flattener with atoms.
 
 

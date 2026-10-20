@@ -1,7 +1,8 @@
 # MTRThermostatScheduleTypeFeaturesBitmap
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.4+
@@ -18,27 +19,31 @@
 struct MTRThermostatScheduleTypeFeaturesBitmap
 ```
 
+```c
+enum MTRThermostatScheduleTypeFeaturesBitmap : uint16_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt16)](mtrthermostatscheduletypefeaturesbitmap/init(rawvalue:).md)
+- [init(rawValue: UInt16)](./mtrthermostatscheduletypefeaturesbitmap/init%28rawvalue%29.md)
 ### Type Properties
-- [static var supportsNames: MTRThermostatScheduleTypeFeaturesBitmap](mtrthermostatscheduletypefeaturesbitmap/supportsnames.md)
-- [static var supportsOff: MTRThermostatScheduleTypeFeaturesBitmap](mtrthermostatscheduletypefeaturesbitmap/supportsoff.md)
-- [static var supportsPresets: MTRThermostatScheduleTypeFeaturesBitmap](mtrthermostatscheduletypefeaturesbitmap/supportspresets.md)
-- [static var supportsSetpoints: MTRThermostatScheduleTypeFeaturesBitmap](mtrthermostatscheduletypefeaturesbitmap/supportssetpoints.md)
+- [static var supportsNames: MTRThermostatScheduleTypeFeaturesBitmap](./mtrthermostatscheduletypefeaturesbitmap/supportsnames.md)
+- [static var supportsOff: MTRThermostatScheduleTypeFeaturesBitmap](./mtrthermostatscheduletypefeaturesbitmap/supportsoff.md)
+- [static var supportsPresets: MTRThermostatScheduleTypeFeaturesBitmap](./mtrthermostatscheduletypefeaturesbitmap/supportspresets.md)
+- [static var supportsSetpoints: MTRThermostatScheduleTypeFeaturesBitmap](./mtrthermostatscheduletypefeaturesbitmap/supportssetpoints.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

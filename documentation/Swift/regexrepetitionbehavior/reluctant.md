@@ -1,7 +1,8 @@
 # reluctant
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Match as little of the input string as possible, expanding the matched region as necessary to complete a match.
 

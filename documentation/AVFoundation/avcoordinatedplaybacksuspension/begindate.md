@@ -1,7 +1,8 @@
 # beginDate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time the suspension begins.
 
@@ -19,11 +20,16 @@ The time the suspension begins.
 var beginDate: Date { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDate * beginDate;
+```
+
 ## See Also
 
-- [var reason: AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.property.md)
+### Inspecting a suspension
+- [var reason: AVCoordinatedPlaybackSuspension.Reason](./reason-swift.property.md)
   The reason for the suspension.
-- [AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.struct.md)
+- [AVCoordinatedPlaybackSuspension.Reason](./reason-swift.struct.md)
   Constants that identify playback suspension reasons.
 
 

@@ -1,7 +1,8 @@
 # CGImagePropertyTGACompression.tgaCompressionNone
 
 **Framework**: Image I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 4.0+
@@ -18,9 +19,14 @@
 case tgaCompressionNone
 ```
 
+```c
+kCGImageTGACompressionNone
+```
+
 ## See Also
 
-- [CGImagePropertyTGACompression.tgaCompressionRLE](cgimagepropertytgacompression/tgacompressionrle.md)
+### Compression Options
+- [CGImagePropertyTGACompression.tgaCompressionRLE](./tgacompressionrle.md)
 
 
 ---

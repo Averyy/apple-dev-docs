@@ -1,7 +1,8 @@
 # localizedCallerDisplayName
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized display name of the app making the request.
 
@@ -18,15 +19,20 @@ The localized display name of the app making the request.
 var localizedCallerDisplayName: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * localizedCallerDisplayName;
+```
+
 ## See Also
 
-- [var callerBundleIdentifier: String](asauthorizationproviderextensionauthorizationrequest/callerbundleidentifier.md)
+### Getting Context
+- [var callerBundleIdentifier: String](./callerbundleidentifier.md)
   The bundle ID of the app making the request.
-- [var callerTeamIdentifier: String](asauthorizationproviderextensionauthorizationrequest/callerteamidentifier.md)
+- [var callerTeamIdentifier: String](./callerteamidentifier.md)
   The team identifier of the app making the request.
-- [var isCallerManaged: Bool](asauthorizationproviderextensionauthorizationrequest/iscallermanaged.md)
+- [var isCallerManaged: Bool](./iscallermanaged.md)
   A Boolean value that indicates whether the app making the request is managed.
-- [var extensionData: [AnyHashable : Any]](asauthorizationproviderextensionauthorizationrequest/extensiondata.md)
+- [var extensionData: [AnyHashable : Any]](./extensiondata.md)
   Extension data from the Mobile Device Management (MDM) configuration.
 
 

@@ -1,7 +1,8 @@
 # JavaScriptCore
 
 **Framework**: JavaScriptCore  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Evaluate JavaScript programs from within an app, and support JavaScript scripting of your app.
 
@@ -20,41 +21,41 @@ The JavaScriptCore framework provides the ability to evaluate JavaScript program
 ## Topics
 
 ### Execution Environment
-- [class JSVirtualMachine](jsvirtualmachine.md)
+- [class JSVirtualMachine](./jsvirtualmachine.md)
   A self-contained environment for JavaScript execution.
-- [class JSContext](jscontext.md)
+- [class JSContext](./jscontext.md)
   A JavaScript execution environment.
 ### JavaScript Code
-- [class JSValue](jsvalue.md)
+- [class JSValue](./jsvalue.md)
   A JavaScript value.
-- [class JSManagedValue](jsmanagedvalue.md)
+- [class JSManagedValue](./jsmanagedvalue.md)
   A JavaScript value with conditional retain behavior to provide automatic memory management.
 ### Native Code
-- [protocol JSExport](jsexport.md)
+- [protocol JSExport](./jsexport.md)
   The protocol for exporting Objective-C objects to JavaScript.
 ### C API
-- [C JavaScriptCore API](c-javascriptcore-api.md)
+- [C JavaScriptCore API](./c-javascriptcore-api.md)
   Browse the alternative C-based APIs for JavaScriptCore.
 ### Reference
-- [JavaScriptCore Constants](javascriptcore-constants.md)
+- [JavaScriptCore Constants](./javascriptcore-constants.md)
 ### Variables
-- [var kJSTypeBigInt: JSType](kjstypebigint.md)
+- [var kJSTypeBigInt: JSType](./kjstypebigint.md)
 ### Functions
-- [func JSBigIntCreateWithDouble(JSContextRef, Double, UnsafeMutablePointer<JSValueRef?>?) -> JSValueRef](jsbigintcreatewithdouble(_:_:_:).md)
-- [func JSBigIntCreateWithInt64(JSContextRef, Int64, UnsafeMutablePointer<JSValueRef?>?) -> JSValueRef](jsbigintcreatewithint64(_:_:_:).md)
-- [func JSBigIntCreateWithString(JSContextRef, JSStringRef, UnsafeMutablePointer<JSValueRef?>?) -> JSValueRef](jsbigintcreatewithstring(_:_:_:).md)
-- [func JSBigIntCreateWithUInt64(JSContextRef, UInt64, UnsafeMutablePointer<JSValueRef?>?) -> JSValueRef](jsbigintcreatewithuint64(_:_:_:).md)
-- [func JSValueCompare(JSContextRef, JSValueRef, JSValueRef, UnsafeMutablePointer<JSValueRef?>?) -> JSRelationCondition](jsvaluecompare(_:_:_:_:).md)
-- [func JSValueCompareDouble(JSContextRef, JSValueRef, Double, UnsafeMutablePointer<JSValueRef?>?) -> JSRelationCondition](jsvaluecomparedouble(_:_:_:_:).md)
-- [func JSValueCompareInt64(JSContextRef, JSValueRef, Int64, UnsafeMutablePointer<JSValueRef?>?) -> JSRelationCondition](jsvaluecompareint64(_:_:_:_:).md)
-- [func JSValueCompareUInt64(JSContextRef, JSValueRef, UInt64, UnsafeMutablePointer<JSValueRef?>?) -> JSRelationCondition](jsvaluecompareuint64(_:_:_:_:).md)
-- [func JSValueIsBigInt(JSContextRef, JSValueRef) -> Bool](jsvalueisbigint(_:_:).md)
-- [func JSValueToInt32(JSContextRef, JSValueRef, UnsafeMutablePointer<JSValueRef?>?) -> Int32](jsvaluetoint32(_:_:_:).md)
-- [func JSValueToInt64(JSContextRef, JSValueRef, UnsafeMutablePointer<JSValueRef?>?) -> Int64](jsvaluetoint64(_:_:_:).md)
-- [func JSValueToUInt32(JSContextRef, JSValueRef, UnsafeMutablePointer<JSValueRef?>?) -> UInt32](jsvaluetouint32(_:_:_:).md)
-- [func JSValueToUInt64(JSContextRef, JSValueRef, UnsafeMutablePointer<JSValueRef?>?) -> UInt64](jsvaluetouint64(_:_:_:).md)
+- [func JSBigIntCreateWithDouble(JSContextRef, Double, UnsafeMutablePointer<JSValueRef?>?) -> JSValueRef](./jsbigintcreatewithdouble%28_,_,_%29.md)
+- [func JSBigIntCreateWithInt64(JSContextRef, Int64, UnsafeMutablePointer<JSValueRef?>?) -> JSValueRef](./jsbigintcreatewithint64%28_,_,_%29.md)
+- [func JSBigIntCreateWithString(JSContextRef, JSStringRef, UnsafeMutablePointer<JSValueRef?>?) -> JSValueRef](./jsbigintcreatewithstring%28_,_,_%29.md)
+- [func JSBigIntCreateWithUInt64(JSContextRef, UInt64, UnsafeMutablePointer<JSValueRef?>?) -> JSValueRef](./jsbigintcreatewithuint64%28_,_,_%29.md)
+- [func JSValueCompare(JSContextRef, JSValueRef, JSValueRef, UnsafeMutablePointer<JSValueRef?>?) -> JSRelationCondition](./jsvaluecompare%28_,_,_,_%29.md)
+- [func JSValueCompareDouble(JSContextRef, JSValueRef, Double, UnsafeMutablePointer<JSValueRef?>?) -> JSRelationCondition](./jsvaluecomparedouble%28_,_,_,_%29.md)
+- [func JSValueCompareInt64(JSContextRef, JSValueRef, Int64, UnsafeMutablePointer<JSValueRef?>?) -> JSRelationCondition](./jsvaluecompareint64%28_,_,_,_%29.md)
+- [func JSValueCompareUInt64(JSContextRef, JSValueRef, UInt64, UnsafeMutablePointer<JSValueRef?>?) -> JSRelationCondition](./jsvaluecompareuint64%28_,_,_,_%29.md)
+- [func JSValueIsBigInt(JSContextRef, JSValueRef) -> Bool](./jsvalueisbigint%28_,_%29.md)
+- [func JSValueToInt32(JSContextRef, JSValueRef, UnsafeMutablePointer<JSValueRef?>?) -> Int32](./jsvaluetoint32%28_,_,_%29.md)
+- [func JSValueToInt64(JSContextRef, JSValueRef, UnsafeMutablePointer<JSValueRef?>?) -> Int64](./jsvaluetoint64%28_,_,_%29.md)
+- [func JSValueToUInt32(JSContextRef, JSValueRef, UnsafeMutablePointer<JSValueRef?>?) -> UInt32](./jsvaluetouint32%28_,_,_%29.md)
+- [func JSValueToUInt64(JSContextRef, JSValueRef, UnsafeMutablePointer<JSValueRef?>?) -> UInt64](./jsvaluetouint64%28_,_,_%29.md)
 ### Enumerations
-- [enum JSRelationCondition](jsrelationcondition.md)
+- [enum JSRelationCondition](./jsrelationcondition.md)
 
 
 ---

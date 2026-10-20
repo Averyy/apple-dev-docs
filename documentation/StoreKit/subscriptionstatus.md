@@ -1,7 +1,8 @@
 # SubscriptionStatus
 
 **Framework**: StoreKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Represents the renewal status information for an auto-renewable subscription.
 
@@ -22,17 +23,18 @@ typealias SubscriptionStatus = Product.SubscriptionInfo.Status
 
 ## See Also
 
-- [Implementing a store in your app using the StoreKit API](implementing-a-store-in-your-app-using-the-storekit-api.md)
+### Product and subscription information
+- [Implementing a store in your app using the StoreKit API](./implementing-a-store-in-your-app-using-the-storekit-api.md)
   Offer Apple In-App Purchases and manage entitlements using signed transactions and status information.
-- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Supporting monthly subscriptions with a 12-month commitment](./supporting-monthly-subscriptions-with-a-12-month-commitment.md)
   Configure, merchandise, and grant access to a monthly subscription with a 12-month commitment.
-- [Managing the life cycle of monthly subscriptions with a 12-month commitment](managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.md)
+- [Managing the life cycle of monthly subscriptions with a 12-month commitment](./managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment.md)
   Handle renewals, cancellations, billing issues, refund requests, and price changes, and test subscriptions with a commitment plan.
-- [struct Product](product.md)
+- [struct Product](./product.md)
   Information about a product that you configure in App Store Connect.
-- [Product.SubscriptionInfo](product/subscriptioninfo.md)
+- [Product.SubscriptionInfo](./product/subscriptioninfo.md)
   Information about an auto-renewable subscription, such as its status, period, subscription group, and subscription offer details.
-- [typealias SubscriptionInfo](subscriptioninfo.md)
+- [typealias SubscriptionInfo](./subscriptioninfo.md)
   Information about an auto-renewable subscription.
 
 

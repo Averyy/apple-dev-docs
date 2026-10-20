@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a sampler state instance.
@@ -11,7 +12,7 @@ Creates a sampler state instance.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,19 +21,24 @@ Creates a sampler state instance.
 func makeSamplerState(descriptor: MTLSamplerDescriptor) -> (any MTLSamplerState)?
 ```
 
+```objc
+- (id<MTLSamplerState>) newSamplerStateWithDescriptor:(MTLSamplerDescriptor *) descriptor;
+```
+
 #### Return Value
 
-A new [`MTLSamplerState`](mtlsamplerstate.md) instance if the method completed successfully; otherwise `nil`.
+A new [`MTLSamplerState`](../mtlsamplerstate.md) instance if the method completed successfully; otherwise `nil`.
 
 ## Parameters
 
-- `descriptor`: An [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) instance.
+- `descriptor`: An [`MTLSamplerDescriptor`](../mtlsamplerdescriptor.md) instance.
 
 ## See Also
 
-- [func supportsTextureSampleCount(Int) -> Bool](mtldevice/supportstexturesamplecount(_:).md)
+### Creating samplers
+- [func supportsTextureSampleCount(Int) -> Bool](./supportstexturesamplecount%28_%29.md)
   Returns a Boolean value that indicates whether the GPU can sample a texture with a specific number of sample points.
-- [func getDefaultSamplePositions(sampleCount: Int) -> [MTLSamplePosition]](mtldevice/getdefaultsamplepositions(samplecount:).md)
+- [func getDefaultSamplePositions(sampleCount: Int) -> [MTLSamplePosition]](./getdefaultsamplepositions%28samplecount%29.md)
   Returns the default sample locations based on the number of samples.
 
 

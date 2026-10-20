@@ -1,7 +1,8 @@
 # GameCenterAchievementCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a Game Center achievement.
 
@@ -10,23 +11,23 @@ The request body you use to create a Game Center achievement.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterAchievementCreateRequest.Data.Attributes](gamecenterachievementcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterAchievementCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a achievement resource.
-- [object GameCenterAchievementCreateRequest.Data.Relationships](gamecenterachievementcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object GameCenterAchievementCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `attributes` (GameCenterAchievementCreateRequest.Data.Attributes) *(required)*
 - `relationships` (GameCenterAchievementCreateRequest.Data.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterAchievements`
 
 
 ---

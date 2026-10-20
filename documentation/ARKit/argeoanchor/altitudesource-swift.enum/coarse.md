@@ -1,7 +1,8 @@
 # ARGeoAnchor.AltitudeSource.coarse
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework sets the altitude using a coarse digital-elevation model.
 
@@ -15,17 +16,22 @@ The framework sets the altitude using a coarse digital-elevation model.
 case coarse
 ```
 
+```c
+ARAltitudeSourceCoarse
+```
+
 #### Discussion
 
 The accuracy of this altitude is noticeably imprecise at close range, but it’s sufficient from far away. Use this option to save computational resources for anchors that are far off in the distance.
 
 ## See Also
 
-- [ARGeoAnchor.AltitudeSource.precise](argeoanchor/altitudesource-swift.enum/precise.md)
+### Sources
+- [ARGeoAnchor.AltitudeSource.precise](./precise.md)
   The framework sets the altitude using a high-resolution digital-elevation model.
-- [ARGeoAnchor.AltitudeSource.userDefined](argeoanchor/altitudesource-swift.enum/userdefined.md)
+- [ARGeoAnchor.AltitudeSource.userDefined](./userdefined.md)
   The app defines the altitude.
-- [ARGeoAnchor.AltitudeSource.unknown](argeoanchor/altitudesource-swift.enum/unknown.md)
+- [ARGeoAnchor.AltitudeSource.unknown](./unknown.md)
   Altitude isn’t yet set.
 
 

@@ -1,18 +1,19 @@
 # sampleHasDependentSamples
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the sample has dependent samples.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,21 +21,26 @@ A Boolean value that determines whether the sample has dependent samples.
 var sampleHasDependentSamples: ObjCBool
 ```
 
+```c
+BOOL sampleHasDependentSamples;
+```
+
 #### Discussion
 
-This value indicates the sample has dependent samples when [`sampleIndicatesWhetherItHasDependentSamples`](avsamplecursordependencyinfo/sampleindicateswhetherithasdependentsamples.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+This value indicates the sample has dependent samples when [`sampleIndicatesWhetherItHasDependentSamples`](./sampleindicateswhetherithasdependentsamples.md) is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var sampleIndicatesWhetherItHasDependentSamples: ObjCBool](avsamplecursordependencyinfo/sampleindicateswhetherithasdependentsamples.md)
+### Dependency information
+- [var sampleIndicatesWhetherItHasDependentSamples: ObjCBool](./sampleindicateswhetherithasdependentsamples.md)
   A Boolean value that determines whether the sample indicates if other samples depend on it.
-- [var sampleIndicatesWhetherItDependsOnOthers: ObjCBool](avsamplecursordependencyinfo/sampleindicateswhetheritdependsonothers.md)
+- [var sampleIndicatesWhetherItDependsOnOthers: ObjCBool](./sampleindicateswhetheritdependsonothers.md)
   A Boolean value that determines whether the sample indicates that it depends on other samples.
-- [var sampleDependsOnOthers: ObjCBool](avsamplecursordependencyinfo/sampledependsonothers.md)
+- [var sampleDependsOnOthers: ObjCBool](./sampledependsonothers.md)
   A Boolean value that determines whether the sample depends on other samples.
-- [var sampleIndicatesWhetherItHasRedundantCoding: ObjCBool](avsamplecursordependencyinfo/sampleindicateswhetherithasredundantcoding.md)
+- [var sampleIndicatesWhetherItHasRedundantCoding: ObjCBool](./sampleindicateswhetherithasredundantcoding.md)
   A Boolean value that determines whether the sample indicates that it has redundant coding.
-- [var sampleHasRedundantCoding: ObjCBool](avsamplecursordependencyinfo/samplehasredundantcoding.md)
+- [var sampleHasRedundantCoding: ObjCBool](./samplehasredundantcoding.md)
   A Boolean value that determines whether the sample has redundant coding.
 
 

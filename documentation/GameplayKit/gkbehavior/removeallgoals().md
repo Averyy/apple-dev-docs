@@ -1,7 +1,8 @@
 # removeAllGoals()
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all goals from the behavior.
 
@@ -19,15 +20,20 @@ Removes all goals from the behavior.
 func removeAllGoals()
 ```
 
+```objc
+- (void) removeAllGoals;
+```
+
 ## See Also
 
-- [func setWeight(Float, for: GKGoal)](gkbehavior/setweight(_:for:).md)
+### Managing a Behavior’s Set of Goals
+- [func setWeight(Float, for: GKGoal)](./setweight%28_,for%29.md)
   Sets the weight for the specified goal’s influence on agents, adding that goal to the behavior if not already present.
-- [func weight(for: GKGoal) -> Float](gkbehavior/weight(for:).md)
+- [func weight(for: GKGoal) -> Float](./weight%28for%29.md)
   Returns the weight for the specified goal’s influence on agents.
-- [func remove(GKGoal)](gkbehavior/remove(_:).md)
+- [func remove(GKGoal)](./remove%28_%29.md)
   Removes the specified goal from the behavior.
-- [var goalCount: Int](gkbehavior/goalcount.md)
+- [var goalCount: Int](./goalcount.md)
   The number of goals in the behavior.
 
 

@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of this activity instance.
 
@@ -17,6 +18,10 @@ The identifier of this activity instance.
 
 ```swift
 var identifier: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
 ```
 
 

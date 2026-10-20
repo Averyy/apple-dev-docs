@@ -1,26 +1,41 @@
 # setExposureNotificationEnabled(_:completionHandler:)
 
 **Framework**: Exposure Notification  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables or disables exposure notification.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
+
+```swift
+func setExposureNotificationEnabled(_ enabled: Bool, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
 
 ```swift
 func setExposureNotificationEnabled(_ enabled: Bool) async throws
 ```
 
+```objc
+- (void) setExposureNotificationEnabled:(BOOL) enabled completionHandler:(ENErrorHandler) completionHandler;
+```
+
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func setExposureNotificationEnabled(_ enabled: Bool) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func setExposureNotificationEnabled(_ enabled: Bool) async throws
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 > ❗ **Important**:  This method is available in iOS 12.5, and in iOS 13.5 and later.
 
@@ -35,13 +50,14 @@ If the user hasn’t authorized exposure notification, this method displays a us
 
 ## See Also
 
-- [func activate(completionHandler: ((any Error)?) -> Void)](enmanager/activate(completionhandler:).md)
+### Activating the Manager
+- [func activate(completionHandler: ((any Error)?) -> Void)](./activate%28completionhandler%29.md)
   Prepares the manager for use.
-- [var activityHandler: ENActivityHandler?](enmanager/activityhandler.md)
+- [var activityHandler: ENActivityHandler?](./activityhandler.md)
   The handler that the framework invokes when the app activates a notification manager.
-- [typealias ENActivityHandler](enactivityhandler.md)
+- [typealias ENActivityHandler](../enactivityhandler.md)
   The handler the system invokes to report activities that occurred while the app wasn’t running.
-- [struct ENActivityFlags](enactivityflags.md)
+- [struct ENActivityFlags](../enactivityflags.md)
   Activities that occur while the app isn’t running.
 
 

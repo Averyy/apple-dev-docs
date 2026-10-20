@@ -1,7 +1,8 @@
 # clock
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of intent schemas in the clock domain.
 
@@ -17,6 +18,8 @@ The collection of intent schemas in the clock domain.
 ```swift
 static var clock: some AppSchema.ClockIntent { get }
 ```
+
+Available when `Self` is `AppSchema.Intent`.
 
 
 ---

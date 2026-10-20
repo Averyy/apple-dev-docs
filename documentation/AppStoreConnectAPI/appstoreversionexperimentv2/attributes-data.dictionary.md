@@ -1,7 +1,8 @@
 # AppStoreVersionExperimentV2.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an app store version experiment v2 resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an app store version experiment v2 resource.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperimentV2.Attributes
 ```
 
@@ -21,12 +22,13 @@ object AppStoreVersionExperimentV2.Attributes
 - `platform` (Platform)
 - `reviewRequired` (boolean)
 - `startDate` (date-time)
-- `state` (string)
+- `state` (string): **Allowed Values**: `PREPARE_FOR_SUBMISSION`, `READY_FOR_REVIEW`, `WAITING_FOR_REVIEW`, `IN_REVIEW`, `ACCEPTED`, `APPROVED`, `REJECTED`, `COMPLETED`, `STOPPED`
 - `trafficProportion` (integer)
 
 ## See Also
 
-- [object AppStoreVersionExperimentV2.Relationships](appstoreversionexperimentv2/relationships-data.dictionary.md)
+### Objects
+- [object AppStoreVersionExperimentV2.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

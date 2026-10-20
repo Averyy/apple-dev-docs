@@ -1,7 +1,8 @@
 # kABSocialProfileUsernameKey
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Social profile username.
 
@@ -14,13 +15,18 @@ Social profile username.
 let kABSocialProfileUsernameKey: String
 ```
 
+```c
+extern NSString * const kABSocialProfileUsernameKey;
+```
+
 ## See Also
 
-- [let kABSocialProfileURLKey: String](kabsocialprofileurlkey.md)
+### Keys
+- [let kABSocialProfileURLKey: String](./kabsocialprofileurlkey.md)
   Social profile URL.
-- [let kABSocialProfileServiceKey: String](kabsocialprofileservicekey.md)
+- [let kABSocialProfileServiceKey: String](./kabsocialprofileservicekey.md)
   Social profile service.
-- [let kABSocialProfileUserIdentifierKey: String](kabsocialprofileuseridentifierkey.md)
+- [let kABSocialProfileUserIdentifierKey: String](./kabsocialprofileuseridentifierkey.md)
   Social profile user identifier.
 
 

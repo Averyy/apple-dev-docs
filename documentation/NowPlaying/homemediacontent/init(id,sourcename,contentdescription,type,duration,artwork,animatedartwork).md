@@ -1,7 +1,8 @@
 # init(id:sourceName:contentDescription:type:duration:artwork:animatedArtwork:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates home media content with static and animated artwork.
 

@@ -1,7 +1,8 @@
 # NSInternalSpecifierError
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Other internal error.
 
@@ -15,19 +16,24 @@ Other internal error.
 var NSInternalSpecifierError: Int { get }
 ```
 
+```c
+NSInternalSpecifierError
+```
+
 ## See Also
 
-- [var NSNoSpecifierError: Int](nsnospecifiererror.md)
+### Constants
+- [var NSNoSpecifierError: Int](./nsnospecifiererror.md)
   No error encountered.
-- [var NSNoTopLevelContainersSpecifierError: Int](nsnotoplevelcontainersspecifiererror.md)
+- [var NSNoTopLevelContainersSpecifierError: Int](./nsnotoplevelcontainersspecifiererror.md)
   Someone called `evaluate` with `nil`.
-- [var NSContainerSpecifierError: Int](nscontainerspecifiererror.md)
+- [var NSContainerSpecifierError: Int](./nscontainerspecifiererror.md)
   Error evaluating container specifier.
-- [var NSUnknownKeySpecifierError: Int](nsunknownkeyspecifiererror.md)
+- [var NSUnknownKeySpecifierError: Int](./nsunknownkeyspecifiererror.md)
   Receivers do not understand the key.
-- [var NSInvalidIndexSpecifierError: Int](nsinvalidindexspecifiererror.md)
+- [var NSInvalidIndexSpecifierError: Int](./nsinvalidindexspecifiererror.md)
   Index out of bounds.
-- [var NSOperationNotSupportedForKeySpecifierError: Int](nsoperationnotsupportedforkeyspecifiererror.md)
+- [var NSOperationNotSupportedForKeySpecifierError: Int](./nsoperationnotsupportedforkeyspecifiererror.md)
   Attempt made to perform an unsupported operation on some key.
 
 

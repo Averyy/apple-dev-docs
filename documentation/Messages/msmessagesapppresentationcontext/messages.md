@@ -1,7 +1,8 @@
 # MSMessagesAppPresentationContext.messages
 
 **Framework**: Messages  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates the iMessage app appears in Messages in the list of iMessage apps that appears when you press the plus button.
 
@@ -16,9 +17,13 @@ A constant that indicates the iMessage app appears in Messages in the list of iM
 case messages
 ```
 
+```c
+MSMessagesAppPresentationContextMessages
+```
+
 ## Mentions
 
-- [Adding Sticker packs and iMessage apps to the system Stickers app, Messages camera, and FaceTime](adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.md)
+- [Adding Sticker packs and iMessage apps to the system Stickers app, Messages camera, and FaceTime](../adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.md)
 
 #### Discussion
 
@@ -26,7 +31,8 @@ iMessage apps presented in a messages context have access to the full iMessage A
 
 ## See Also
 
-- [MSMessagesAppPresentationContext.media](msmessagesapppresentationcontext/media.md)
+### Presentation Contexts
+- [MSMessagesAppPresentationContext.media](./media.md)
   A constant that indicates the iMessage app appears inside the Stickers app throughout iOS including in Messages, FaceTime, the emoji keyboard, and Markup.
 
 

@@ -1,7 +1,8 @@
 # NIDLTDOACoordinatesType
 
 **Framework**: Nearby Interaction  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible coordinate types for Downlink Time-Difference-of-Arrival measurement updates.
 
@@ -16,38 +17,43 @@ The possible coordinate types for Downlink Time-Difference-of-Arrival measuremen
 enum NIDLTDOACoordinatesType
 ```
 
+```c
+enum NIDLTDOACoordinatesType : NSInteger;
+```
+
 #### Overview
 
-The [`NIDLTDOAMeasurement`](nidltdoameasurement.md) class [`coordinates`](nidltdoameasurement/coordinates.md) property is of this type.
+The [`NIDLTDOAMeasurement`](./nidltdoameasurement.md) class [`coordinates`](./nidltdoameasurement/coordinates.md) property is of this type.
 
-For more information on Downlink Time-Difference-of-Arrival measurements, see [`NIDLTDOAConfiguration`](nidltdoaconfiguration.md).
+For more information on Downlink Time-Difference-of-Arrival measurements, see [`NIDLTDOAConfiguration`](./nidltdoaconfiguration.md).
 
 ## Topics
 
 ### Identifying a coordinate type
-- [NIDLTDOACoordinatesType.geodetic](nidltdoacoordinatestype/geodetic.md)
+- [NIDLTDOACoordinatesType.geodetic](./nidltdoacoordinatestype/geodetic.md)
   A coordinate type that specifies a latitude, longitude, and altitude triplet.
-- [NIDLTDOACoordinatesType.relative](nidltdoacoordinatestype/relative.md)
+- [NIDLTDOACoordinatesType.relative](./nidltdoacoordinatestype/relative.md)
   A coordinate type that specifies a 3D Cartesian triplet.
 ### Creating a coordinate type
-- [init?(rawValue: Int)](nidltdoacoordinatestype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nidltdoacoordinatestype/init%28rawvalue%29.md)
   Initializes a coordinate type for a Downlink Time-Difference-of-Arrival measurement.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NIDLTDOAMeasurement](nidltdoameasurement.md)
+### Measurements
+- [class NIDLTDOAMeasurement](./nidltdoameasurement.md)
   Information from a Downlink Time-Difference-of-Arrival anchor that you use to derive a range estimate.
-- [enum NIDLTDOAMeasurementType](nidltdoameasurementtype.md)
+- [enum NIDLTDOAMeasurementType](./nidltdoameasurementtype.md)
   The possible phases of downlink positioning signals.
 
 

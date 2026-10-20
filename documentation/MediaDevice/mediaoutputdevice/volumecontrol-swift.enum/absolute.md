@@ -1,9 +1,10 @@
 # MediaOutputDevice.VolumeControl.absolute
 
 **Framework**: Media Device  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Full volume control is supported, [`setVolume(_:for:)`](mediadeviceextension/setvolume(_:for:).md) may be used to set the volume.
+Full volume control is supported, [`setVolume(_:for:)`](../../mediadeviceextension/setvolume%28_,for%29.md) may be used to set the volume.
 
 **Availability**:
 - iOS 27.0+
@@ -18,7 +19,7 @@ case absolute
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../../creating-a-media-device-extension.md)
 
 #### Discussion
 

@@ -1,15 +1,18 @@
 # UIImagePickerController.ImageURLExportPreset.compatible
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A preset for converting HEIF formatted images to JPEG.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 27.0
+- iPadOS 11.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) instead.
 
 ## Declaration
 
@@ -17,9 +20,14 @@ A preset for converting HEIF formatted images to JPEG.
 case compatible
 ```
 
+```c
+UIImagePickerControllerImageURLExportPresetCompatible
+```
+
 ## See Also
 
-- [UIImagePickerController.ImageURLExportPreset.current](uiimagepickercontroller/imageurlexportpreset/current.md)
+### Constants
+- [UIImagePickerController.ImageURLExportPreset.current](./current.md)
   A preset for passing image data as-is to the client.
 
 

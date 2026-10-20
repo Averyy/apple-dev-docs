@@ -1,7 +1,8 @@
 # network
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string, suitable for display, that is the name of the payment network backing the card.
 
@@ -11,23 +12,24 @@ A string, suitable for display, that is the name of the payment network backing 
 
 ## Declaration
 
-```swift
+```
 DOMString network;
 ```
 
 #### Discussion
 
-The value is one of the supported networks specified in the [`supportedNetworks`](applepaypaymentrequest/supportednetworks.md) property of the [`ApplePayPaymentRequest`](applepaypaymentrequest.md).
+The value is one of the supported networks specified in the [`supportedNetworks`](../applepaypaymentrequest/supportednetworks.md) property of the [`ApplePayPaymentRequest`](../applepaypaymentrequest.md).
 
 ## See Also
 
-- [displayName](applepaypaymentmethod/displayname.md)
+### Accessing payment method data
+- [displayName](./displayname.md)
   A string, suitable for display, that describes the card.
-- [type](applepaypaymentmethod/type.md)
+- [type](./type.md)
   A string value representing the card’s type of payment.
-- [paymentPass](applepaypaymentmethod/paymentpass.md)
+- [paymentPass](./paymentpass.md)
   The payment pass object currently selected to complete the payment.
-- [billingContact](applepaypaymentmethod/billingcontact.md)
+- [billingContact](./billingcontact.md)
   The billing contact associated with the card.
 
 

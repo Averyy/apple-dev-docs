@@ -1,7 +1,8 @@
 # makeArray(of:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array that contains a copy of this `BNNSTensor`’s elements.
 

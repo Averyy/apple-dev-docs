@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: Assignables  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration for a taker work which contains an optional manual score for the document.
 
@@ -9,7 +10,7 @@ The configuration for a taker work which contains an optional manual score for t
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,7 +20,8 @@ var configuration: any AssignedWorkDocumentConfiguration { get set }
 
 ## See Also
 
-- [AssignedWorkDocument.Configuration](assignedworkdocument/configuration-swift.typealias.md)
+### Getting the configuration
+- [AssignedWorkDocument.Configuration](./configuration-swift.typealias.md)
   The configuration for an assessment taker work which contains an optional manual score for the document.
 
 

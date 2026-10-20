@@ -1,7 +1,8 @@
 # TupleMapContent
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view created from a Swift tuple of map content values.
 
@@ -11,7 +12,7 @@ A view created from a Swift tuple of map content values.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -24,30 +25,31 @@ A view created from a Swift tuple of map content values.
 ## Topics
 
 ### Accessing the tuple value
-- [var value: T](tuplemapcontent/value.md)
+- [var value: T](./tuplemapcontent/value.md)
   The contents of the tuple.
 ### Type aliases
-- [associatedtype Body : MapContent](mapcontent/body-swift.associatedtype.md)
+- [associatedtype Body : MapContent](./mapcontent/body-swift.associatedtype.md)
   The content and behavior of the view.
 
 ## Relationships
 
 ### Conforms To
-- [MapContent](mapcontent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [MapContent](./mapcontent.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct DefaultUserAnnotationContent](defaultuserannotationcontent.md)
+### Structures
+- [struct DefaultUserAnnotationContent](./defaultuserannotationcontent.md)
   A structure that represents the view to show at the user’s location on the map.
-- [struct EmptyMapContent](emptymapcontent.md)
+- [struct EmptyMapContent](./emptymapcontent.md)
   A map content element that doesn’t contain any content.
-- [struct MapProxy](mapproxy.md)
+- [struct MapProxy](./mapproxy.md)
   A proxy for accessing sizing information about a given map view.
-- [struct MapReader](mapreader.md)
+- [struct MapReader](./mapreader.md)
   A container view that defines its contents as a function of information about the first contained map.
-- [struct MapSelectableContentView](mapselectablecontentview.md)
+- [struct MapSelectableContentView](./mapselectablecontentview.md)
 
 
 ---

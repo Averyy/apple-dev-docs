@@ -1,7 +1,8 @@
 # transcode(_:from:to:stoppingOnError:into:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Translates the given input from one Unicode encoding to another by calling the given closure.
 

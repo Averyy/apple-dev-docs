@@ -1,7 +1,8 @@
 # MTLTessellationPartitionMode.fractionalOdd
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A fractional odd partitioning mode.
 
@@ -19,13 +20,18 @@ A fractional odd partitioning mode.
 case fractionalOdd
 ```
 
+```c
+MTLTessellationPartitionModeFractionalOdd
+```
+
 ## See Also
 
-- [MTLTessellationPartitionMode.pow2](mtltessellationpartitionmode/pow2.md)
+### Partition modes
+- [MTLTessellationPartitionMode.pow2](./pow2.md)
   A power of two partitioning mode.
-- [MTLTessellationPartitionMode.integer](mtltessellationpartitionmode/integer.md)
+- [MTLTessellationPartitionMode.integer](./integer.md)
   An integer partitioning mode.
-- [MTLTessellationPartitionMode.fractionalEven](mtltessellationpartitionmode/fractionaleven.md)
+- [MTLTessellationPartitionMode.fractionalEven](./fractionaleven.md)
   A fractional even partitioning mode.
 
 

@@ -1,7 +1,8 @@
 # orientation
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The orientation of the throttle.
 
@@ -16,9 +17,14 @@ The orientation of the throttle.
 var orientation: TCThrottle.Orientation { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) TCThrottleOrientation orientation;
+```
+
 ## See Also
 
-- [TCThrottle.Orientation](tcthrottle/orientation-swift.enum.md)
+### Getting the orientation
+- [TCThrottle.Orientation](./orientation-swift.enum.md)
   Defines the orientation of the throttle.
 
 

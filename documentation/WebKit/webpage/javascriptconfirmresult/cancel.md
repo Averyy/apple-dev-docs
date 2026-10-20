@@ -1,7 +1,8 @@
 # WebPage.JavaScriptConfirmResult.cancel
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Signals a negative action was produced by the invocation.
 

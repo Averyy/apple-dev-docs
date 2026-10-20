@@ -1,7 +1,8 @@
 # kColorSyncProfileClass
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key for the profile’s class.
 
@@ -20,19 +21,24 @@ A key for the profile’s class.
 var kColorSyncProfileClass: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncProfileClass;
+```
+
 ## See Also
 
-- [var kColorSyncProfileColorSpace: Unmanaged<CFString>!](kcolorsyncprofilecolorspace.md)
+### Accessing profile properties
+- [var kColorSyncProfileColorSpace: Unmanaged<CFString>!](./kcolorsyncprofilecolorspace.md)
   A key for the profile’s color space.
-- [var kColorSyncProfileDescription: Unmanaged<CFString>!](kcolorsyncprofiledescription.md)
+- [var kColorSyncProfileDescription: Unmanaged<CFString>!](./kcolorsyncprofiledescription.md)
   A key for the profile’s localized description.
-- [var kColorSyncProfileHeader: Unmanaged<CFString>!](kcolorsyncprofileheader.md)
+- [var kColorSyncProfileHeader: Unmanaged<CFString>!](./kcolorsyncprofileheader.md)
   A key for the profile’s header data.
-- [var kColorSyncProfileIsValid: Unmanaged<CFString>!](kcolorsyncprofileisvalid.md)
+- [var kColorSyncProfileIsValid: Unmanaged<CFString>!](./kcolorsyncprofileisvalid.md)
   A key indicating whether the profile is valid.
-- [var kColorSyncProfilePCS: Unmanaged<CFString>!](kcolorsyncprofilepcs.md)
+- [var kColorSyncProfilePCS: Unmanaged<CFString>!](./kcolorsyncprofilepcs.md)
   A key for the profile’s connection space (PCS).
-- [var kColorSyncProfileURL: Unmanaged<CFString>!](kcolorsyncprofileurl.md)
+- [var kColorSyncProfileURL: Unmanaged<CFString>!](./kcolorsyncprofileurl.md)
   A key for the profile’s URL.
 
 

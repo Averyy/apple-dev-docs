@@ -1,14 +1,15 @@
 # kREPORT_LUNS_ADDRESS_METHOD_OFFSET
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kREPORT_LUNS_ADDRESS_METHOD_OFFSET = 14
 ```
 

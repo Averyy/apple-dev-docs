@@ -1,7 +1,8 @@
 # NSManagedObjectContext.ScheduledTaskType.immediate
 
 **Framework**: Core Data  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The immediate scheduled task type.
 
@@ -11,7 +12,7 @@ The immediate scheduled task type.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -26,7 +27,8 @@ Immediate tasks execute right away if the context operates within the current sc
 
 ## See Also
 
-- [NSManagedObjectContext.ScheduledTaskType.enqueued](nsmanagedobjectcontext/scheduledtasktype/enqueued.md)
+### Scheduled Task Types
+- [NSManagedObjectContext.ScheduledTaskType.enqueued](./enqueued.md)
   The enqueued scheduled task type.
 
 

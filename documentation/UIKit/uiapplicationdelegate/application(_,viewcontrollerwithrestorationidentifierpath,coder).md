@@ -1,7 +1,8 @@
 # application(_:viewControllerWithRestorationIdentifierPath:coder:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to provide the specified view controller.
 
@@ -9,7 +10,7 @@ Asks the delegate to provide the specified view controller.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Asks the delegate to provide the specified view controller.
 optional func application(_ application: UIApplication, viewControllerWithRestorationIdentifierPath identifierComponents: [String], coder: NSCoder) -> UIViewController?
 ```
 
+```objc
+- (UIViewController *) application:(UIApplication *) application viewControllerWithRestorationIdentifierPath:(NSArray<NSString *> *) identifierComponents coder:(NSCoder *) coder;
+```
+
 ## Mentions
 
-- [About the UI restoration process](about-the-ui-restoration-process.md)
+- [About the UI restoration process](../about-the-ui-restoration-process.md)
 
 #### Return Value
 
@@ -34,35 +39,36 @@ You use the strings in the `identifierComponents` parameter to identify the view
 
 It is not always necessary to create a new view controller object in your implementation of this method. You can also return an existing view controller object that was created by another means. For example, you would always return the existing view controllers loaded from your app’s main storyboard file rather than create new objects.
 
-Your implementation of this method may use any data in the provided `coder` to assist in the restoration process. However, you usually do not need to restore the entire state of the view controller at this point. During a later pass, view controllers that define a [`decodeRestorableState(with:)`](uiviewcontroller/decoderestorablestate(with:).md) method are normally given a chance to restore their state form the same coder object. Similarly, the app delegate itself has a [`application(_:didDecodeRestorableStateWith:)`](uiapplicationdelegate/application(_:diddecoderestorablestatewith:).md) method that you can use to restore app-level state information.
+Your implementation of this method may use any data in the provided `coder` to assist in the restoration process. However, you usually do not need to restore the entire state of the view controller at this point. During a later pass, view controllers that define a [`decodeRestorableState(with:)`](../uiviewcontroller/decoderestorablestate%28with%29.md) method are normally given a chance to restore their state form the same coder object. Similarly, the app delegate itself has a [`application(_:didDecodeRestorableStateWith:)`](./application%28_,diddecoderestorablestatewith%29.md) method that you can use to restore app-level state information.
 
-> **Note**:  If you return an object whose class does not match the class of the originally preserved object, or whose class is not a direct subclass of the original, the restoration system does not call the [`decodeRestorableState(with:)`](uiviewcontroller/decoderestorablestate(with:).md) method of the view controller.
+> **Note**:  If you return an object whose class does not match the class of the originally preserved object, or whose class is not a direct subclass of the original, the restoration system does not call the [`decodeRestorableState(with:)`](../uiviewcontroller/decoderestorablestate%28with%29.md) method of the view controller.
 
 ## Parameters
 
 - `application`: Your singleton app object.
-- `identifierComponents`: An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects corresponding to the restoration identifiers of the desired view controller and all of its ancestors in the view controller hierarchy. The last value in the array is the restoration identifier of the desired view controller. Earlier entries represent the restoration identifiers of its ancestors.
+- `identifierComponents`: An array of [`NSString`](../../Foundation/nsstring.md) objects corresponding to the restoration identifiers of the desired view controller and all of its ancestors in the view controller hierarchy. The last value in the array is the restoration identifier of the desired view controller. Earlier entries represent the restoration identifiers of its ancestors.
 - `coder`: The keyed archiver containing the app’s saved state information.
 
 ## See Also
 
-- [func application(UIApplication, shouldSaveSecureApplicationState: NSCoder) -> Bool](uiapplicationdelegate/application(_:shouldsavesecureapplicationstate:).md)
+### Managing app state restoration
+- [func application(UIApplication, shouldSaveSecureApplicationState: NSCoder) -> Bool](./application%28_,shouldsavesecureapplicationstate%29.md)
   Asks the delegate whether to securely preserve the app’s state.
-- [func application(UIApplication, shouldRestoreSecureApplicationState: NSCoder) -> Bool](uiapplicationdelegate/application(_:shouldrestoresecureapplicationstate:).md)
+- [func application(UIApplication, shouldRestoreSecureApplicationState: NSCoder) -> Bool](./application%28_,shouldrestoresecureapplicationstate%29.md)
   Asks the delegate whether to restore the app’s saved state.
-- [func application(UIApplication, willEncodeRestorableStateWith: NSCoder)](uiapplicationdelegate/application(_:willencoderestorablestatewith:).md)
+- [func application(UIApplication, willEncodeRestorableStateWith: NSCoder)](./application%28_,willencoderestorablestatewith%29.md)
   Tells your delegate to save any high-level state information at the beginning of the state preservation process.
-- [func application(UIApplication, didDecodeRestorableStateWith: NSCoder)](uiapplicationdelegate/application(_:diddecoderestorablestatewith:).md)
+- [func application(UIApplication, didDecodeRestorableStateWith: NSCoder)](./application%28_,diddecoderestorablestatewith%29.md)
   Tells your delegate to restore any high-level state information as part of the state restoration process.
-- [class let stateRestorationBundleVersionKey: String](uiapplication/staterestorationbundleversionkey.md)
+- [class let stateRestorationBundleVersionKey: String](../uiapplication/staterestorationbundleversionkey.md)
   The version of your app responsible for creating the restoration archive.
-- [class let stateRestorationSystemVersionKey: String](uiapplication/staterestorationsystemversionkey.md)
+- [class let stateRestorationSystemVersionKey: String](../uiapplication/staterestorationsystemversionkey.md)
   The version of the system on which your app created the restoration archive.
-- [class let stateRestorationTimestampKey: String](uiapplication/staterestorationtimestampkey.md)
+- [class let stateRestorationTimestampKey: String](../uiapplication/staterestorationtimestampkey.md)
   The time your app created the restoration archive.
-- [class let stateRestorationUserInterfaceIdiomKey: String](uiapplication/staterestorationuserinterfaceidiomkey.md)
+- [class let stateRestorationUserInterfaceIdiomKey: String](../uiapplication/staterestorationuserinterfaceidiomkey.md)
   The user interface idiom that was in effect when your app created the restoration archive.
-- [class let stateRestorationViewControllerStoryboardKey: String](uiapplication/staterestorationviewcontrollerstoryboardkey.md)
+- [class let stateRestorationViewControllerStoryboardKey: String](../uiapplication/staterestorationviewcontrollerstoryboardkey.md)
   A reference to the storyboard that contains the view controller.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: XPC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 A closure that receives a message from a client and optionally provides a reply.
@@ -12,7 +13,7 @@ A closure that receives a message from a client and optionally provides a reply.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,17 +24,18 @@ func handleIncomingRequest(_: Self.Input) -> Self.Output?
 
 #### Return Value
 
-A response message, if any, to send back to the client; otherwise [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
+A response message, if any, to send back to the client; otherwise [`nil`](../../ObjectiveC/nil-227m0.md).
 
 #### Discussion
 
-If the closure returns [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0), you can still send use [`send(message:)`](xpcsession/send(message:).md) to send an asynchronous reply after handling the message.
+If the closure returns [`nil`](../../ObjectiveC/nil-227m0.md), you can still send use [`send(message:)`](../xpcsession/send%28message%29.md) to send an asynchronous reply after handling the message.
 
 ## See Also
 
-- [associatedtype Input](xpcpeerhandler/input.md)
+### Receiving client messages
+- [associatedtype Input](./input.md)
   A type that represents a message from a client.
-- [associatedtype Output](xpcpeerhandler/output.md)
+- [associatedtype Output](./output.md)
   A type that represents a response to an incoming request.
 
 

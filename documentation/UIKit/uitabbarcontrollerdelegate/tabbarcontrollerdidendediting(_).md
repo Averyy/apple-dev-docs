@@ -1,7 +1,8 @@
 # tabBarControllerDidEndEditing(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate when the tab bar controller’s current editing state has ended.
 
@@ -15,6 +16,10 @@ Notifies the delegate when the tab bar controller’s current editing state has 
 
 ```swift
 optional func tabBarControllerDidEndEditing(_ tabBarController: UITabBarController)
+```
+
+```objc
+- (void) tabBarControllerDidEndEditing:(UITabBarController *) tabBarController;
 ```
 
 

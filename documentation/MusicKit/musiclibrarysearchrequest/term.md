@@ -1,7 +1,8 @@
 # term
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The search term for the request.
 

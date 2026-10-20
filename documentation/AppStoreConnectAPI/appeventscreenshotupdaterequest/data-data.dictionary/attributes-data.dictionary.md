@@ -1,16 +1,19 @@
 # AppEventScreenshotUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an app event screenshot update request resource.
 
 **Availability**:
-- App Store Connect API 1.7+
+- App Store Connect API 1.7+ - Deprecated in 4.5
+
+> **Deprecated**: This object is deprecated. Use [`AppAssetLibraryImageUpdateRequest`](../../appassetlibraryimageupdaterequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object AppEventScreenshotUpdateRequest.Data.Attributes
 ```
 

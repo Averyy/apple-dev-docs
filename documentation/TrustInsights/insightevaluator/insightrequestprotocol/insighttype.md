@@ -2,6 +2,7 @@
 
 **Framework**: Trust Insights  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 An associated type that represents an insight.

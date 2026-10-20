@@ -1,7 +1,8 @@
 # setTitle(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the title of the interface.
 
@@ -12,6 +13,10 @@ Sets the title of the interface.
 
 ```swift
 func setTitle(_ title: String?)
+```
+
+```objc
+- (void) setTitle:(NSString *) title;
 ```
 
 #### Discussion
@@ -26,9 +31,10 @@ To localize the title, use the value in the `title` parameter as the lookup key 
 
 ## See Also
 
-- [init()](wkinterfacecontroller/init.md)
+### Creating the interface controller
+- [init()](./init%28%29.md)
   Returns an initialized interface controller object.
-- [func awake(withContext: Any?)](wkinterfacecontroller/awake(withcontext:).md)
+- [func awake(withContext: Any?)](./awake%28withcontext%29.md)
   Initializes the interface controller with the specified context data.
 
 

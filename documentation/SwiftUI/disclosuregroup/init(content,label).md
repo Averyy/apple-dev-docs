@@ -1,7 +1,8 @@
 # init(content:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a disclosure group with the given label and content views.
 
@@ -26,11 +27,12 @@ init(@ContentBuilder content: @escaping () -> Content, @ContentBuilder label: ()
 
 ## See Also
 
-- [init(_:content:)](disclosuregroup/init(_:content:).md)
+### Creating a disclosure group
+- [init(_:content:)](./init%28_,content%29.md)
   Creates a disclosure group, using a provided localized string resource to create a text view for the label.
-- [init(_:isExpanded:content:)](disclosuregroup/init(_:isexpanded:content:).md)
+- [init(_:isExpanded:content:)](./init%28_,isexpanded,content%29.md)
   Creates a disclosure group, using a provided localized string resource to create a text view for the label, and a binding to the expansion state (expanded or collapsed).
-- [init(isExpanded: Binding<Bool>, content: () -> Content, label: () -> Label)](disclosuregroup/init(isexpanded:content:label:).md)
+- [init(isExpanded: Binding<Bool>, content: () -> Content, label: () -> Label)](./init%28isexpanded,content,label%29.md)
   Creates a disclosure group with the given label and content views, and a binding to the expansion state (expanded or collapsed).
 
 

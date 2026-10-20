@@ -1,7 +1,8 @@
 # makeReference(identifier:)
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an app entity instance of the given entity type.
 
@@ -22,7 +23,7 @@ func makeReference(identifier: String) -> AnyAppEntity
 
 ## Mentions
 
-- [Testing your App Intents code](testing-your-app-intents-code.md)
+- [Testing your App Intents code](../testing-your-app-intents-code.md)
 
 #### Discussion
 

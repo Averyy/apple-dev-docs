@@ -1,7 +1,8 @@
 # Calendar.RecurrenceRule.Weekday
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -21,22 +22,22 @@ enum Weekday
 ## Topics
 
 ### Enumeration Cases
-- [Calendar.RecurrenceRule.Weekday.every(_:)](calendar/recurrencerule/weekday/every(_:).md)
+- [Calendar.RecurrenceRule.Weekday.every(_:)](./weekday/every%28_%29.md)
   Repeat on every weekday
-- [Calendar.RecurrenceRule.Weekday.nth(_:_:)](calendar/recurrencerule/weekday/nth(_:_:).md)
+- [Calendar.RecurrenceRule.Weekday.nth(_:_:)](./weekday/nth%28_,_%29.md)
   Repeat on the n-th instance of the specified weekday in a month, if the recurrence has a monthly frequency. If the recurrence has a yearly frequency, repeat on the n-th week of the year.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

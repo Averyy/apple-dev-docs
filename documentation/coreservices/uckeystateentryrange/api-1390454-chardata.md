@@ -1,7 +1,8 @@
 # charData
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A value of type `UCKeyCharSeq`. This base character value is used to determine the actual Unicode character(s) produced when a given dead-key state terminates. 
 
@@ -13,6 +14,10 @@ A value of type `UCKeyCharSeq`. This base character value is used to determine t
 
 ```swift
 var charData: UCKeyCharSeq
+```
+
+```c
+UCKeyCharSeq charData;
 ```
 
 

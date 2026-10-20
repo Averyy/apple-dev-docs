@@ -1,7 +1,8 @@
 # wantsAdaptiveBackgroundStyle
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether to use a custom background style.
 
@@ -14,6 +15,10 @@ A Boolean value that determines whether to use a custom background style.
 
 ```swift
 var wantsAdaptiveBackgroundStyle: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, getter=wantsAdaptiveBackgroundStyle) BOOL adaptiveBackgroundStyle;
 ```
 
 #### Discussion

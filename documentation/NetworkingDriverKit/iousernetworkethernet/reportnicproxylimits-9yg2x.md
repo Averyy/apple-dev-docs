@@ -1,14 +1,15 @@
 # ReportNicProxyLimits
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 20.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t ReportNicProxyLimits(nicproxy_limits_info_s nicproxy_limits_info);
 ```
 

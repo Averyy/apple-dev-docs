@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/convert-to-ml-progra
 
 # Convert Models to ML Programs
 
-**
-
-- [.md](../_sources/source/convert-to-ml-program.md)
-- **
-
-.pdf
-
-**
-
-# Convert Models to ML Programs
-
- Table of contents 
-
-## Contents
-
-# Convert Models to ML Programs
-
 This section describes the `ML program` model type. It is an evolution of the neural network model type that has been available since the first version of Core ML.
 
 The ML program model type is a foundation for future improvements. ML programs are available for the iOS15, macOS12, watchOS8, and tvOS15 deployment targets. For details, see [Availability of ML Programs](#availability-of-ml-programs).
@@ -103,6 +86,4 @@ The ML program model type is available as summarized in the following table:
 |  | Neural Network | ML Program |
 | --- | --- | --- |
 | Minimum deployment target | macOS 10.13, iOS 11, watchOS 4, tvOS 11 | macOS 12, iOS 15, watchOS 8, tvOS 15 |
-| Supported file formats | .mlmodelor.mlpackage | .mlpackage |
-
-** Contents
+| Supported file formats | `.mlmodel` or `.mlpackage` | `.mlpackage` |

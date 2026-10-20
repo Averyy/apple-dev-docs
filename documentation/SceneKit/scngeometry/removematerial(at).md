@@ -1,18 +1,19 @@
 # removeMaterial(at:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a material attached to the geometry.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,21 +21,28 @@ Removes a material attached to the geometry.
 func removeMaterial(at index: Int)
 ```
 
+```objc
+- (void) removeMaterialAtIndex:(NSUInteger) index;
+```
+
 ## Parameters
 
-- `index`: The index of the attached material to be removed. > ❗ **Important**:  Raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if `index` is beyond the bounds of the [`materials`](scngeometry/materials.md) array.
+- `index`: The index of the attached material to be removed.
+
+  > ❗ **Important**:  Raises an exception ([`rangeException`](../../Foundation/nsexceptionname/rangeexception.md)) if `index` is beyond the bounds of the [`materials`](./materials.md) array.
 
 ## See Also
 
-- [var materials: [SCNMaterial]](scngeometry/materials.md)
-  An array of [`SCNMaterial`](scnmaterial.md) objects that determine the geometry’s appearance when rendered.
-- [var firstMaterial: SCNMaterial?](scngeometry/firstmaterial.md)
+### Managing a Geometry’s Materials
+- [var materials: [SCNMaterial]](./materials.md)
+  An array of [`SCNMaterial`](../scnmaterial.md) objects that determine the geometry’s appearance when rendered.
+- [var firstMaterial: SCNMaterial?](./firstmaterial.md)
   The first material attached to the geometry.
-- [func material(named: String) -> SCNMaterial?](scngeometry/material(named:).md)
+- [func material(named: String) -> SCNMaterial?](./material%28named%29.md)
   Returns the first material attached to the geometry with the specified name.
-- [func insertMaterial(SCNMaterial, at: Int)](scngeometry/insertmaterial(_:at:).md)
+- [func insertMaterial(SCNMaterial, at: Int)](./insertmaterial%28_,at%29.md)
   Attaches a material to the geometry at the specified index.
-- [func replaceMaterial(at: Int, with: SCNMaterial)](scngeometry/replacematerial(at:with:).md)
+- [func replaceMaterial(at: Int, with: SCNMaterial)](./replacematerial%28at,with%29.md)
   Replaces a material attached to the geometry with another.
 
 

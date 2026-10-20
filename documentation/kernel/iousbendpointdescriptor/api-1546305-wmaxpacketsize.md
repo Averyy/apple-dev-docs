@@ -1,7 +1,8 @@
 # wMaxPacketSize
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The maximum packet size that the endpoint supports.
 
@@ -10,21 +11,22 @@ The maximum packet size that the endpoint supports.
 
 ## Declaration
 
-```swift
+```c
 uint16_t wMaxPacketSize;
 ```
 
 ## See Also
 
-- [bLength](iousbendpointdescriptor/1546156-blength.md)
+### Getting the Properties
+- [bLength](./api-1546156-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbendpointdescriptor/1545995-bdescriptortype.md)
+- [bDescriptorType](./api-1545995-bdescriptortype.md)
   The type of the descriptor.
-- [bEndpointAddress](iousbendpointdescriptor/1546243-bendpointaddress.md)
+- [bEndpointAddress](./api-1546243-bendpointaddress.md)
   The address of the endpoint.
-- [bmAttributes](iousbendpointdescriptor/1546048-bmattributes.md)
+- [bmAttributes](./api-1546048-bmattributes.md)
   The attributes of the endpoint.
-- [bInterval](iousbendpointdescriptor/1546209-binterval.md)
+- [bInterval](./api-1546209-binterval.md)
   The interval to use when polling the endpoint for data transfers.
 
 

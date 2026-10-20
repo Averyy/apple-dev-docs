@@ -1,12 +1,13 @@
 # action
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The menu item’s action-method selector.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The menu item’s action-method selector.
 var action: Selector? { get set }
 ```
 
+```objc
+@property (nullable) SEL action;
+```
+
 ## See Also
 
-- [var target: AnyObject?](nsmenuitem/target.md)
+### Managing the target and action
+- [var target: AnyObject?](./target.md)
   The menu item’s target.
 
 

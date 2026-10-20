@@ -1,7 +1,8 @@
 # subscribe(to:_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Subscribes to a serializable action event and returns a `ActionResult`.
 
@@ -18,6 +19,13 @@ Subscribes to a serializable action event and returns a `ActionResult`.
 ```swift
 @MainActor
 @preconcurrency static func subscribe(to eventType: ActionEventType, _ handler: @escaping @MainActor (ActionEvent<Self>) -> ActionResult)
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency static func subscribe(to eventType: ActionEventType, _ handler: @escaping @MainActor (ActionEvent<Self>) -> Void)
 ```
 
 #### Discussion

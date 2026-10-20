@@ -1,7 +1,8 @@
 # init(sourceIdentifier:destinationURL:sourceDescription:purchaser:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new event attribution object.
 
@@ -15,6 +16,10 @@ Initializes a new event attribution object.
 
 ```swift
 init(sourceIdentifier: UInt8, destinationURL: URL, sourceDescription: String, purchaser: String)
+```
+
+```objc
+- (instancetype) initWithSourceIdentifier:(uint8_t) sourceIdentifier destinationURL:(NSURL *) destinationURL sourceDescription:(NSString *) sourceDescription purchaser:(NSString *) purchaser;
 ```
 
 ## Parameters

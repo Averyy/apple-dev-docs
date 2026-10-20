@@ -2,18 +2,19 @@
 
 **Framework**: XCUIAutomation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The raw value attribute of the element.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -22,17 +23,22 @@ The raw value attribute of the element.
 var value: Any? { get }
 ```
 
+```objc
+@property (readonly, nullable) id value;
+```
+
 #### Discussion
 
 The exact type of `value` varies based on the type of the element.
 
 ## See Also
 
-- [var placeholderValue: String?](xcuielementattributes/placeholdervalue.md)
+### Value
+- [var placeholderValue: String?](./placeholdervalue.md)
   The value displayed when the element has no value.
-- [var title: String](xcuielementattributes/title.md)
+- [var title: String](./title.md)
   The title attribute of the element.
-- [var label: String](xcuielementattributes/label.md)
+- [var label: String](./label.md)
   The label attribute of the element.
 
 

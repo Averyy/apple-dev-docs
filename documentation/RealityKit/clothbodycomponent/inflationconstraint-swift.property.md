@@ -1,7 +1,8 @@
 # inflationConstraint
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional inflation constraint for representing inflatable bodies (must be watertight).
 
@@ -24,11 +25,12 @@ Setting this to `nil` disables the inflation constraint (equivalent to a stiffne
 
 ## See Also
 
-- [var externalForces: PerClothVertexData<ClothBodyComponent.ExternalForce>](clothbodycomponent/externalforces.md)
+### Applying external forces
+- [var externalForces: PerClothVertexData<ClothBodyComponent.ExternalForce>](./externalforces.md)
   The external forces applied to the particles in the body (in Newtons).
-- [ClothBodyComponent.ExternalForce](clothbodycomponent/externalforce.md)
+- [ClothBodyComponent.ExternalForce](./externalforce.md)
   An external force applied to a single particle, in Newtons.
-- [ClothBodyComponent.InflationConstraint](clothbodycomponent/inflationconstraint-swift.struct.md)
+- [ClothBodyComponent.InflationConstraint](./inflationconstraint-swift.struct.md)
   Configuration for an inflatable cloth body.
 
 

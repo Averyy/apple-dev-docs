@@ -1,7 +1,8 @@
 # stillImageLensStabilizationInfo
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates information about the lens stabilization applied to the current still image buffer.
 

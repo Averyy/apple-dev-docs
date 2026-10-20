@@ -1,14 +1,15 @@
 # kMMCCmd_READ_TRACK_INFORMATION
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kMMCCmd_READ_TRACK_INFORMATION = 0x52
 ```
 

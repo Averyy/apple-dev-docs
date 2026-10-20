@@ -1,7 +1,8 @@
 # featureID
 
 **Framework**: Accessory Live Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant you use to configure your data provider extension’s capability to forward Live Activities to your accessory.
 
@@ -21,11 +22,12 @@ This constant’s value is `AccessoryLiveActivities.LiveActivityForwarding`, the
 
 ## See Also
 
-- [init(() -> any LiveActivityForwarding.AccessoryLiveActivitiesHandler)](liveactivityforwarding/init(_:).md)
+### Requesting Live Activity forwarding
+- [init(() -> any LiveActivityForwarding.AccessoryLiveActivitiesHandler)](./init%28_%29.md)
   Creates an object you use to manage Live Activity forwarding for your accessory.
-- [static func authorization(forAccessory: ASAccessory) async throws -> AccessoryAuthorizationResult](liveactivityforwarding/authorization(foraccessory:).md)
+- [static func authorization(forAccessory: ASAccessory) async throws -> AccessoryAuthorizationResult](./authorization%28foraccessory%29.md)
   Checks whether someone permits the system to forward Live Activities to the given accessory.
-- [static func presentAuthorizationSheet(forAccessory: ASAccessory) async throws -> AccessoryAuthorizationResult](liveactivityforwarding/presentauthorizationsheet(foraccessory:).md)
+- [static func presentAuthorizationSheet(forAccessory: ASAccessory) async throws -> AccessoryAuthorizationResult](./presentauthorizationsheet%28foraccessory%29.md)
   Presents the system UI that allows people to manage their permission to forward Live Activities to an accessory.
 
 

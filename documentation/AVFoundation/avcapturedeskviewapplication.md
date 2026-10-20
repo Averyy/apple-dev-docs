@@ -1,7 +1,8 @@
 # AVCaptureDeskViewApplication
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that programmatically presents Desk View.
 
@@ -13,6 +14,10 @@ An object that programmatically presents Desk View.
 
 ```swift
 class AVCaptureDeskViewApplication
+```
+
+```objc
+@interface AVCaptureDeskViewApplication : NSObject
 ```
 
 #### Overview
@@ -42,30 +47,31 @@ deskView.present(launchConfiguration: configuration) { error in
 ## Topics
 
 ### Presenting the Desk View app
-- [func present(completionHandler: (((any Error)?) -> Void)?)](avcapturedeskviewapplication/present(completionhandler:).md)
+- [func present(completionHandler: (((any Error)?) -> Void)?)](./avcapturedeskviewapplication/present%28completionhandler%29.md)
   Launches Desk View with no additional configuration and then performs a completion handler if you specify it.
-- [func present(launchConfiguration: AVCaptureDeskViewApplication.LaunchConfiguration, completionHandler: (((any Error)?) -> Void)?)](avcapturedeskviewapplication/present(launchconfiguration:completionhandler:).md)
+- [func present(launchConfiguration: AVCaptureDeskViewApplication.LaunchConfiguration, completionHandler: (((any Error)?) -> Void)?)](./avcapturedeskviewapplication/present%28launchconfiguration,completionhandler%29.md)
   Launches Desk View with the configuration and completion handler that you specify.
-- [AVCaptureDeskViewApplication.LaunchConfiguration](avcapturedeskviewapplication/launchconfiguration.md)
+- [AVCaptureDeskViewApplication.LaunchConfiguration](./avcapturedeskviewapplication/launchconfiguration.md)
   An object that configures how to present Desk View.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Supporting Continuity Camera in your tvOS app](../avkit/supporting-continuity-camera-in-your-tvos-app.md)
+### Continuity Camera
+- [Supporting Continuity Camera in your tvOS app](../AVKit/supporting-continuity-camera-in-your-tvos-app.md)
   Capture high-quality photos, video, and audio in your Apple TV app by connecting an iPhone or iPad as a continuity device.
-- [Supporting Continuity Camera in your macOS app](supporting-continuity-camera-in-your-macos-app.md)
+- [Supporting Continuity Camera in your macOS app](./supporting-continuity-camera-in-your-macos-app.md)
   Enable high-quality photo and video capture by using an iPhone camera as an external capture device.
 
 

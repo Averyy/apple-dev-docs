@@ -1,16 +1,17 @@
 # UITextAlternativeStyle
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A constant that determines if the system highlights alternative phrases during text input.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,29 +19,34 @@ A constant that determines if the system highlights alternative phrases during t
 enum UITextAlternativeStyle
 ```
 
+```c
+enum UITextAlternativeStyle : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UITextAlternativeStyle.lowConfidence](uitextalternativestyle/lowconfidence.md)
+- [UITextAlternativeStyle.lowConfidence](./uitextalternativestyle/lowconfidence.md)
   A constant that indicates that the text input should highlight alternatives because the input text may be incorrect.
-- [UITextAlternativeStyle.none](uitextalternativestyle/none.md)
+- [UITextAlternativeStyle.none](./uitextalternativestyle/none.md)
   A constant that indicates that the text input shouldn’t highlight alternatives because the input text is expected to be correct.
 ### Initializers
-- [init?(rawValue: Int)](uitextalternativestyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uitextalternativestyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func insertText(String, alternatives: [String], style: UITextAlternativeStyle)](uitextinput/inserttext(_:alternatives:style:).md)
+### Supporting text-phrase alternatives
+- [func insertText(String, alternatives: [String], style: UITextAlternativeStyle)](./uitextinput/inserttext%28_,alternatives,style%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # rotate
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Randomly rotate the pose in a video.
 
@@ -20,17 +21,18 @@ static let rotate: MLHandActionClassifier.VideoAugmentationOptions
 
 ## See Also
 
-- [static let dropFrames: MLHandActionClassifier.VideoAugmentationOptions](mlhandactionclassifier/videoaugmentationoptions/dropframes.md)
+### Augmentations supporting types
+- [static let dropFrames: MLHandActionClassifier.VideoAugmentationOptions](./dropframes.md)
   Randomly drop frames from a video.
-- [static let horizontallyFlip: MLHandActionClassifier.VideoAugmentationOptions](mlhandactionclassifier/videoaugmentationoptions/horizontallyflip.md)
+- [static let horizontallyFlip: MLHandActionClassifier.VideoAugmentationOptions](./horizontallyflip.md)
   Apply left-right flips to the pose in a video.
-- [static let interpolateFrames: MLHandActionClassifier.VideoAugmentationOptions](mlhandactionclassifier/videoaugmentationoptions/interpolateframes.md)
+- [static let interpolateFrames: MLHandActionClassifier.VideoAugmentationOptions](./interpolateframes.md)
   Random time interpolation through a video.
-- [static let scale: MLHandActionClassifier.VideoAugmentationOptions](mlhandactionclassifier/videoaugmentationoptions/scale.md)
+- [static let scale: MLHandActionClassifier.VideoAugmentationOptions](./scale.md)
   Randomly scale the pose in a video.
-- [static let translate: MLHandActionClassifier.VideoAugmentationOptions](mlhandactionclassifier/videoaugmentationoptions/translate.md)
+- [static let translate: MLHandActionClassifier.VideoAugmentationOptions](./translate.md)
   Randomly translate the pose in a video.
-- [Option set support](option-set-support.md)
+- [Option set support](../../option-set-support.md)
   Inspect and modify a video augmentation option set with the properties and methods it inherits from standard protocols.
 
 

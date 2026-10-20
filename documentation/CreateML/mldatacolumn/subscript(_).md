@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Create ML  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the element at the given row.
 
@@ -19,6 +20,26 @@ Accesses the element at the given row.
 subscript(index: Int) -> Element { get }
 ```
 
+Available when `Element` conforms to `MLDataValueConvertible`.
+
+**Other overloads**:
+
+```swift
+subscript(mask: MLDataColumn<Bool>) -> MLDataColumn<Element> { get }
+```
+
+```swift
+subscript(mask: MLUntypedColumn) -> MLDataColumn<Element> { get }
+```
+
+```swift
+subscript(slice: Range<Int>) -> MLDataColumn<Element> { get }
+```
+
+```swift
+subscript<R>(slice: R) -> MLDataColumn<Element> where R : RangeExpression, R.Bound == Int { get }
+```
+
 #### Return Value
 
 The `Element` at the given index.
@@ -29,7 +50,8 @@ The `Element` at the given index.
 
 ## See Also
 
-- [func element(at: Int) -> Element?](mldatacolumn/element(at:).md)
+### Getting an element
+- [func element(at: Int) -> Element?](./element%28at%29.md)
   Accesses the element at the given index.
 
 

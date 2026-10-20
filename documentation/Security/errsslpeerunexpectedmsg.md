@@ -1,7 +1,8 @@
 # errSSLPeerUnexpectedMsg
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An unexpected message was received.
 
@@ -18,6 +19,10 @@ An unexpected message was received.
 
 ```swift
 var errSSLPeerUnexpectedMsg: OSStatus { get }
+```
+
+```c
+errSSLPeerUnexpectedMsg
 ```
 
 

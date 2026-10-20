@@ -1,7 +1,8 @@
 # intersects(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the receiver intersects with the specified date interval.
 
@@ -20,9 +21,13 @@ Indicates whether the receiver intersects with the specified date interval.
 func intersects(_ dateInterval: DateInterval) -> Bool
 ```
 
+```objc
+- (BOOL) intersectsDateInterval:(NSDateInterval *) dateInterval;
+```
+
 #### Discussion
 
-See [`intersection(with:)`](nsdateinterval/intersection(with:).md) for more information about determining whether two date intervals intersect.
+See [`intersection(with:)`](./intersection%28with%29.md) for more information about determining whether two date intervals intersect.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ See [`intersection(with:)`](nsdateinterval/intersection(with:).md) for more info
 
 ## See Also
 
-- [func intersection(with: DateInterval) -> DateInterval?](nsdateinterval/intersection(with:).md)
+### Determining Intersections
+- [func intersection(with: DateInterval) -> DateInterval?](./intersection%28with%29.md)
   Returns the intersection between the receiver and the specified date interval.
 
 

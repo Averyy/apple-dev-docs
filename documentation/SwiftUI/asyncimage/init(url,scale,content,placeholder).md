@@ -1,7 +1,8 @@
 # init(url:scale:content:placeholder:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Loads and displays a modifiable image from the specified URL using a custom placeholder until the image loads.
 
@@ -33,7 +34,7 @@ AsyncImage(url: URL(string: "https://example.com/icon.png")) { image in
 }
 ```
 
-If the load operation fails, SwiftUI continues to display the placeholder. To be able to display a different view on a load error, use the [`init(url:scale:transaction:content:)`](asyncimage/init(url:scale:transaction:content:).md) initializer instead.
+If the load operation fails, SwiftUI continues to display the placeholder. To be able to display a different view on a load error, use the [`init(url:scale:transaction:content:)`](./init%28url,scale,transaction,content%29.md) initializer instead.
 
 ## Parameters
 
@@ -44,7 +45,8 @@ If the load operation fails, SwiftUI continues to display the placeholder. To be
 
 ## See Also
 
-- [init(url: URL?, scale: CGFloat)](asyncimage/init(url:scale:).md)
+### Loading an image
+- [init(url: URL?, scale: CGFloat)](./init%28url,scale%29.md)
   Loads and displays an image from the specified URL.
 
 

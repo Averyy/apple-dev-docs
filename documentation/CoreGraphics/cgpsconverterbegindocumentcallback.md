@@ -1,13 +1,14 @@
 # CGPSConverterBeginDocumentCallback
 
 **Framework**: Core Graphics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Performs custom tasks at the beginning of a PostScript conversion process.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Performs custom tasks at the beginning of a PostScript conversion process.
 typealias CGPSConverterBeginDocumentCallback = (UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(void *) CGPSConverterBeginDocumentCallback;
+```
+
 ## Parameters
 
-- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(info:callbacks:options:)`](cgpsconverter/init(info:callbacks:options:).md).
+- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(info:callbacks:options:)`](./cgpsconverter/init%28info,callbacks,options%29.md).
 
 
 ---

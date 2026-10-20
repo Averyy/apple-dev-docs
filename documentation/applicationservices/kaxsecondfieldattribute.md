@@ -1,7 +1,8 @@
 # kAXSecondFieldAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The second field of a time field represented by this accessibility object. This attribute is required for accessibility objects that represent time fields that display seconds.
 
@@ -12,6 +13,10 @@ The second field of a time field represented by this accessibility object. This 
 
 ```swift
 var kAXSecondFieldAttribute: String { get }
+```
+
+```c
+#define kAXSecondFieldAttribute
 ```
 
 

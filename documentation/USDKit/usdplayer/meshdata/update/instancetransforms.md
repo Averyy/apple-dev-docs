@@ -1,7 +1,8 @@
 # instanceTransforms
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Updated world-space instance transforms.
 

@@ -1,7 +1,8 @@
 # consume()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Consumes the unique box and returns the instance of `Value` that was within the box.
 

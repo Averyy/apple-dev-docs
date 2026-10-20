@@ -1,7 +1,8 @@
 # HIDReportType.input
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An input report is data dispatched from the device to the system, typically sent in response to human interaction with one of the device controls.
 
@@ -16,7 +17,7 @@ case input
 
 ## Mentions
 
-- [Communicating with human interface devices](communicatingwithhiddevices.md)
+- [Communicating with human interface devices](../communicatingwithhiddevices.md)
 
 
 ---

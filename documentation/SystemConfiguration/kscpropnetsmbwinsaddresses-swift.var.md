@@ -1,7 +1,8 @@
 # kSCPropNetSMBWINSAddresses
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The SMB key `WINSAddresses`, whose value is of type `CFArray`, containing elements of type `CFString`.
 
@@ -14,13 +15,18 @@ The SMB key `WINSAddresses`, whose value is of type `CFArray`, containing elemen
 let kSCPropNetSMBWINSAddresses: CFString
 ```
 
+```c
+extern CFStringRef const kSCPropNetSMBWINSAddresses;
+```
+
 ## See Also
 
-- [let kSCPropNetSMBNetBIOSName: CFString](kscpropnetsmbnetbiosname-swift.var.md)
+### Constants
+- [let kSCPropNetSMBNetBIOSName: CFString](./kscpropnetsmbnetbiosname-swift.var.md)
   The SMB key `NetBIOSName`, whose value is of type `CFString`.
-- [let kSCPropNetSMBNetBIOSNodeType: CFString](kscpropnetsmbnetbiosnodetype-swift.var.md)
+- [let kSCPropNetSMBNetBIOSNodeType: CFString](./kscpropnetsmbnetbiosnodetype-swift.var.md)
   The SMB key `NetBIOSNodeType`, whose value is of type `CFString`.
-- [let kSCPropNetSMBWorkgroup: CFString](kscpropnetsmbworkgroup-swift.var.md)
+- [let kSCPropNetSMBWorkgroup: CFString](./kscpropnetsmbworkgroup-swift.var.md)
   The SMB key `Workgroup`, whose value is of type `CFString`.
 
 

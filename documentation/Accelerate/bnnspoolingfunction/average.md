@@ -1,18 +1,21 @@
 # average
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A function for pooling that computes the average of each element in the pooling kernel.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS ?+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 15.0
+- iPadOS 13.0+ - Deprecated in 15.0
+- Mac Catalyst 13.0+ - Deprecated in 15.0
+- macOS 10.15+ - Deprecated in 12.0
+- tvOS 13.0+ - Deprecated in 15.0
+- visionOS
+- watchOS 6.0+ - Deprecated in 8.0
+
+> **Deprecated**: Use ‘BNNSPoolingFunctionAverageCountIncludePadding’ instead.
 
 ## Declaration
 
@@ -22,7 +25,8 @@ static var average: BNNSPoolingFunction { get }
 
 ## See Also
 
-- [static var max: BNNSPoolingFunction](bnnspoolingfunction/max.md)
+### Pooling Functions
+- [static var max: BNNSPoolingFunction](./max.md)
   A function for pooling that computes the maximum of each element in the pooling kernel.
 
 

@@ -1,7 +1,8 @@
 # removeCharacters(in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes from the receiver the characters in a given string.
 
@@ -20,6 +21,10 @@ Removes from the receiver the characters in a given string.
 func removeCharacters(in aString: String)
 ```
 
+```objc
+- (void) removeCharactersInString:(NSString *) aString;
+```
+
 #### Discussion
 
 This method has no effect if `aString` is empty.
@@ -30,11 +35,12 @@ This method has no effect if `aString` is empty.
 
 ## See Also
 
-- [func addCharacters(in: NSRange)](nsmutablecharacterset/addcharacters(in:)-4ppyw.md)
+### Adding and Removing Characters
+- [func addCharacters(in: NSRange)](./addcharacters%28in%29-4ppyw.md)
   Adds to the receiver the characters whose Unicode values are in a given range.
-- [func removeCharacters(in: NSRange)](nsmutablecharacterset/removecharacters(in:)-70nqp.md)
+- [func removeCharacters(in: NSRange)](./removecharacters%28in%29-70nqp.md)
   Removes from the receiver the characters whose Unicode values are in a given range.
-- [func addCharacters(in: String)](nsmutablecharacterset/addcharacters(in:)-7q02.md)
+- [func addCharacters(in: String)](./addcharacters%28in%29-7q02.md)
   Adds to the receiver the characters in a given string.
 
 

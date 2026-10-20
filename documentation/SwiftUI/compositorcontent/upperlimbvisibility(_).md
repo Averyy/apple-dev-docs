@@ -1,9 +1,10 @@
 # upperLimbVisibility(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Sets the preferred visibility of the user’s upper limbs, while an [`ImmersiveSpace`](immersivespace.md) scene is presented.
+Sets the preferred visibility of the user’s upper limbs, while an [`ImmersiveSpace`](../immersivespace.md) scene is presented.
 
 **Availability**:
 - macOS 26.0+

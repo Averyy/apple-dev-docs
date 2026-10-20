@@ -1,7 +1,8 @@
 # numberStyle
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number style used by the receiver.
 
@@ -20,20 +21,25 @@ The number style used by the receiver.
 var numberStyle: NumberFormatter.Style { get set }
 ```
 
+```objc
+@property NSNumberFormatterStyle numberStyle;
+```
+
 #### Discussion
 
 Styles are essentially predetermined sets of values for certain properties. Examples of number-formatter styles are those used for decimal values, percentage values, and currency.
 
 ## See Also
 
-- [var formatterBehavior: NumberFormatter.Behavior](numberformatter/formatterbehavior.md)
+### Configuring Formatter Behavior and Style
+- [var formatterBehavior: NumberFormatter.Behavior](./formatterbehavior.md)
   The formatter behavior of the receiver.
-- [class func setDefaultFormatterBehavior(NumberFormatter.Behavior)](numberformatter/setdefaultformatterbehavior(_:).md)
+- [class func setDefaultFormatterBehavior(NumberFormatter.Behavior)](./setdefaultformatterbehavior%28_%29.md)
   Sets the default formatter behavior for new instances of `NSNumberFormatter` .
-- [class func defaultFormatterBehavior() -> NumberFormatter.Behavior](numberformatter/defaultformatterbehavior.md)
+- [class func defaultFormatterBehavior() -> NumberFormatter.Behavior](./defaultformatterbehavior%28%29.md)
   Returns an `NSNumberFormatterBehavior` constant that indicates default formatter behavior for new instances of `NSNumberFormatter`.
-- [var generatesDecimalNumbers: Bool](numberformatter/generatesdecimalnumbers.md)
-  Determines whether the receiver creates instances of [`NSDecimalNumber`](nsdecimalnumber.md) when it converts strings to number objects.
+- [var generatesDecimalNumbers: Bool](./generatesdecimalnumbers.md)
+  Determines whether the receiver creates instances of [`NSDecimalNumber`](../nsdecimalnumber.md) when it converts strings to number objects.
 
 
 ---

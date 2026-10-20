@@ -1,7 +1,8 @@
 # bundle
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bundle containing the resource.
 
@@ -22,11 +23,12 @@ let bundle: Bundle
 
 ## See Also
 
-- [let name: String](urlresource/name.md)
+### Accessing resource properties
+- [let name: String](./name.md)
   The name of the resource in the bundle.
-- [let subdirectory: String?](urlresource/subdirectory.md)
+- [let subdirectory: String?](./subdirectory.md)
   The subdirectory, if any, of the resource.
-- [var locale: Locale](urlresource/locale.md)
+- [var locale: Locale](./locale.md)
   The bundle containing the resource.
 
 

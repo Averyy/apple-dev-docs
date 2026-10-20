@@ -1,7 +1,8 @@
 # CKShare.ParticipantRole.administrator
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The participant has the administrator role.
 
@@ -20,11 +21,15 @@ The participant has the administrator role.
 case administrator
 ```
 
+```c
+CKShareParticipantRoleAdministrator
+```
+
 #### Discussion
 
 An administrator of a share can add and remove participants and change their permissions.
 
-CloudKit returns shares with `administrator` participants as read-only to devices running OS versions prior to this role being introduced. CloudKit returns administrator participants on such read-only shares as [`CKShare.ParticipantRole.privateUser`](ckshare/participantrole/privateuser.md).
+CloudKit returns shares with `administrator` participants as read-only to devices running OS versions prior to this role being introduced. CloudKit returns administrator participants on such read-only shares as [`CKShare.ParticipantRole.privateUser`](./privateuser.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # JournalingSuggestionsPicker
 
 **Framework**: Journaling Suggestions  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that lists different types of recent events in a person’s life.
 
@@ -17,8 +18,8 @@ A view that lists different types of recent events in a person’s life.
 
 ## Mentions
 
-- [Presenting the suggestions picker and processing a selection](presenting-the-suggestions-picker-and-processing-a-selection.md)
-- [Receiving journaling suggestions system notifications](receiving-journaling-suggestions-from-system-notifications.md)
+- [Presenting the suggestions picker and processing a selection](./presenting-the-suggestions-picker-and-processing-a-selection.md)
+- [Receiving journaling suggestions system notifications](./receiving-journaling-suggestions-from-system-notifications.md)
 
 #### Overview
 
@@ -26,30 +27,31 @@ This interface displays several grids of content that layout visual mementos, ea
 
 The first time the picker appears, a modal sheet introduces the concept of journaling suggestions. After a person selects a suggestion in the picker, the system shares only the information associated with the chosen suggestion with your app.
 
-For more information, see [`Presenting the suggestions picker and processing a selection`](presenting-the-suggestions-picker-and-processing-a-selection.md).
+For more information, see [Presenting the suggestions picker and processing a selection](./presenting-the-suggestions-picker-and-processing-a-selection.md).
 
 ## Topics
 
 ### Creating a suggestions picker
-- [init(label: () -> Label, onCompletion: (JournalingSuggestion) async -> Void)](journalingsuggestionspicker/init(label:oncompletion:).md)
+- [init(label: () -> Label, onCompletion: (JournalingSuggestion) async -> Void)](./journalingsuggestionspicker/init%28label,oncompletion%29.md)
   Creates a suggestions picker within the given view.
-- [init(LocalizedStringKey, onCompletion: (JournalingSuggestion) async -> Void)](journalingsuggestionspicker/init(_:oncompletion:)-7uxov.md)
+- [init(LocalizedStringKey, onCompletion: (JournalingSuggestion) async -> Void)](./journalingsuggestionspicker/init%28_,oncompletion%29-7uxov.md)
   Creates a suggestions picker with button text defined by the given localized string key.
-- [init<S>(S, onCompletion: (JournalingSuggestion) async -> Void)](journalingsuggestionspicker/init(_:oncompletion:)-4e82p.md)
+- [init<S>(S, onCompletion: (JournalingSuggestion) async -> Void)](./journalingsuggestionspicker/init%28_,oncompletion%29-4e82p.md)
   Creates a suggestions picker with button text defined by the given string.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [struct JournalingSuggestion](journalingsuggestion.md)
+### Implementation
+- [struct JournalingSuggestion](./journalingsuggestion.md)
   High-level information about a suggestion that a person chooses in the journaling suggestions picker.
-- [protocol JournalingSuggestionAsset](journalingsuggestionasset.md)
+- [protocol JournalingSuggestionAsset](./journalingsuggestionasset.md)
   An interface for the content that the suggestions picker presents.
 
 

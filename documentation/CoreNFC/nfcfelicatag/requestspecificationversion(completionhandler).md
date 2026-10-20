@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sends the Request Specification Version command, as defined by the FeliCa card specification, to the tag.
@@ -14,7 +15,15 @@ Sends the Request Specification Version command, as defined by the FeliCa card s
 ## Declaration
 
 ```swift
+func requestSpecificationVersion(completionHandler: @escaping @Sendable (Int, Int, Data, Data, (any Error)?) -> Void)
+```
+
+```swift
 func requestSpecificationVersion() async throws -> (Int, Int, Data, Data)
+```
+
+```objc
+- (void) requestSpecificationVersionWithCompletionHandler:(void (^)(NSInteger statusFlag1, NSInteger statusFlag2, NSData *basicVersion, NSData *optionVersion, NSError *error)) completionHandler;
 ```
 
 

@@ -1,12 +1,13 @@
 # WKUserNotificationInterfaceType.custom
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant indicating that the system should display your dynamic notification interface.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ A constant indicating that the system should display your dynamic notification i
 case custom
 ```
 
+```c
+WKUserNotificationInterfaceTypeCustom
+```
+
 ## See Also
 
-- [WKUserNotificationInterfaceType.default](wkusernotificationinterfacetype/default.md)
+### Constants
+- [WKUserNotificationInterfaceType.default](./default.md)
   A constant indicating that the system should display the corresponding static interface instead. When you return this value, the system takes responsibility for displaying the notification’s content.
 
 

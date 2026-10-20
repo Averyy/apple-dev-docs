@@ -1,7 +1,8 @@
 # init(textMarkupAttributes:textSelector:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text style rule object with the specified style attributes and text range information.
 
@@ -19,6 +20,10 @@ Creates a text style rule object with the specified style attributes and text ra
 init?(textMarkupAttributes: [String : Any] = [:], textSelector: String?)
 ```
 
+```objc
+- (instancetype) initWithTextMarkupAttributes:(NSDictionary<NSString *,id> *) textMarkupAttributes textSelector:(NSString *) textSelector;
+```
+
 #### Return Value
 
 A text style rule object initialized with the specified attributes and range information.
@@ -30,9 +35,10 @@ A text style rule object initialized with the specified attributes and range inf
 
 ## See Also
 
-- [class func textStyleRules(fromPropertyList: Any) -> [AVTextStyleRule]?](avtextstylerule/textstylerules(frompropertylist:).md)
+### Creating and initializing style rules
+- [class func textStyleRules(fromPropertyList: Any) -> [AVTextStyleRule]?](./textstylerules%28frompropertylist%29.md)
   Creates an array of text style rule objects from the specified property-list object.
-- [convenience init?(textMarkupAttributes: [String : Any])](avtextstylerule/init(textmarkupattributes:).md)
+- [convenience init?(textMarkupAttributes: [String : Any])](./init%28textmarkupattributes%29.md)
   Creates a text style rule object with the specified style attributes.
 
 

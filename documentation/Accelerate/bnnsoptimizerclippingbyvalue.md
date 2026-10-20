@@ -1,7 +1,8 @@
 # BNNSOptimizerClippingByValue
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that specifes clipping to minimum and maximum values.
 
@@ -20,21 +21,27 @@ A constant that specifes clipping to minimum and maximum values.
 var BNNSOptimizerClippingByValue: BNNSOptimizerClippingFunction { get }
 ```
 
+```c
+BNNSOptimizerClippingByValue
+```
+
 ## See Also
 
-- [func BNNSClipByValue(UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, Float, Float) -> Int32](bnnsclipbyvalue(_:_:_:_:).md)
+### Related Documentation
+- [func BNNSClipByValue(UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, Float, Float) -> Int32](./bnnsclipbyvalue%28_,_,_,_%29.md)
   Clips a tensor’s values to the specified minimum and maximum values.
-- [init(UInt32)](bnnsoptimizerclippingfunction/init(_:).md)
+### Clipping Functions
+- [init(UInt32)](./bnnsoptimizerclippingfunction/init%28_%29.md)
   Creates a new instance with the specified raw value.
-- [init(rawValue: UInt32)](bnnsoptimizerclippingfunction/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./bnnsoptimizerclippingfunction/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
-- [var rawValue: UInt32](bnnsoptimizerclippingfunction/rawvalue.md)
+- [var rawValue: UInt32](./bnnsoptimizerclippingfunction/rawvalue.md)
   The corresponding value of the raw type.
-- [var BNNSOptimizerClippingNone: BNNSOptimizerClippingFunction](bnnsoptimizerclippingnone.md)
+- [var BNNSOptimizerClippingNone: BNNSOptimizerClippingFunction](./bnnsoptimizerclippingnone.md)
   A constant that specifes no clipping.
-- [var BNNSOptimizerClippingByNorm: BNNSOptimizerClippingFunction](bnnsoptimizerclippingbynorm.md)
+- [var BNNSOptimizerClippingByNorm: BNNSOptimizerClippingFunction](./bnnsoptimizerclippingbynorm.md)
   A constant that specifes clipping to a maximum Euclidean norm.
-- [var BNNSOptimizerClippingByGlobalNorm: BNNSOptimizerClippingFunction](bnnsoptimizerclippingbyglobalnorm.md)
+- [var BNNSOptimizerClippingByGlobalNorm: BNNSOptimizerClippingFunction](./bnnsoptimizerclippingbyglobalnorm.md)
   A constant that specifes clipping to a maximum global Euclidean norm.
 
 

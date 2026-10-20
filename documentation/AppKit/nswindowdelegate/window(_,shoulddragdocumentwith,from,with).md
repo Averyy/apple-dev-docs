@@ -1,7 +1,8 @@
 # window(_:shouldDragDocumentWith:from:with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether a user can drag the document icon from the window’s title bar.
 
@@ -15,15 +16,19 @@ Asks the delegate whether a user can drag the document icon from the window’s 
 optional func window(_ window: NSWindow, shouldDragDocumentWith event: NSEvent, from dragImageLocation: NSPoint, with pasteboard: NSPasteboard) -> Bool
 ```
 
+```objc
+- (BOOL) window:(NSWindow *) window shouldDragDocumentWithEvent:(NSEvent *) event from:(NSPoint) dragImageLocation withPasteboard:(NSPasteboard *) pasteboard;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the drag to proceed; [`false`](https://developer.apple.com/documentation/swift/false) to prevent it. Before turning no the delegate can implement its own dragging behavior as described below.
+[`true`](../../Swift/true.md) to allow the drag to proceed; [`false`](../../Swift/false.md) to prevent it. Before turning no the delegate can implement its own dragging behavior as described below.
 
 #### Discussion
 
-Implementing this method enables an application to customize the process of dragging the window’s document icon. The delegate can prohibit the drag by returning [`false`](https://developer.apple.com/documentation/swift/false). Before returning [`false`](https://developer.apple.com/documentation/swift/false), the delegate can implement its own dragging behavior using  [`drag(_:at:offset:event:pasteboard:source:slideBack:)`](nswindow/drag(_:at:offset:event:pasteboard:source:slideback:).md).
+Implementing this method enables an application to customize the process of dragging the window’s document icon. The delegate can prohibit the drag by returning [`false`](../../Swift/false.md). Before returning [`false`](../../Swift/false.md), the delegate can implement its own dragging behavior using  [`drag(_:at:offset:event:pasteboard:source:slideBack:)`](../nswindow/drag%28_,at,offset,event,pasteboard,source,slideback%29.md).
 
-Alternatively, the delegate can enable a drag by returning [`true`](https://developer.apple.com/documentation/swift/true), for example, to override the default `NSWindow` behavior of prohibiting the drag of an edited document. In addition, the delegate can customize the pasteboard contents before returning [`true`](https://developer.apple.com/documentation/swift/true).
+Alternatively, the delegate can enable a drag by returning [`true`](../../Swift/true.md), for example, to override the default `NSWindow` behavior of prohibiting the drag of an edited document. In addition, the delegate can customize the pasteboard contents before returning [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -34,7 +39,8 @@ Alternatively, the delegate can enable a drag by returning [`true`](https://deve
 
 ## See Also
 
-- [var representedURL: URL?](nswindow/representedurl.md)
+### Related Documentation
+- [var representedURL: URL?](../nswindow/representedurl.md)
   The URL of the file the window represents.
 
 

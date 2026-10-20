@@ -1,7 +1,8 @@
 # GL_MATRIX_INDEX_ARRAY_SIZE_OES
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_MATRIX_INDEX_ARRAY_SIZE_OES: Int32 { get }
+```
+
+```c
+#define GL_MATRIX_INDEX_ARRAY_SIZE_OES
 ```
 
 

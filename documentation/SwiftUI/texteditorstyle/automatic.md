@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default text editor style, based on the text editor’s context.
 
@@ -19,15 +20,18 @@ The default text editor style, based on the text editor’s context.
 @export(implementation) @preconcurrency static var automatic: AutomaticTextEditorStyle { get }
 ```
 
+Available when `Self` is `AutomaticTextEditorStyle`.
+
 #### Discussion
 
 The default style represents the recommended style based on the current platform and the text editor’s context within the view hierarchy.
 
 ## See Also
 
-- [static var plain: PlainTextEditorStyle](texteditorstyle/plain.md)
+### Getting built-in styles
+- [static var plain: PlainTextEditorStyle](./plain.md)
   A text editor style with no decoration.
-- [static var roundedBorder: RoundedBorderTextEditorStyle](texteditorstyle/roundedborder.md)
+- [static var roundedBorder: RoundedBorderTextEditorStyle](./roundedborder.md)
   A text editor style with a system-defined rounded border.
 
 

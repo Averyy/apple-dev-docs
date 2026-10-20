@@ -1,7 +1,8 @@
 # expectedTravelTime
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expected travel time, in seconds.
 
@@ -10,7 +11,7 @@ The expected travel time, in seconds.
 
 ## Declaration
 
-```swift
+```
 expectedTravelTime: number;
 ```
 
@@ -20,15 +21,16 @@ This expected travel time reflects the time it takes to traverse the route under
 
 ## See Also
 
-- [steps](route/steps.md)
+### Route details
+- [steps](./steps.md)
   An array of steps that compose the overall route.
-- [name](route/name.md)
+- [name](./name.md)
   The name assigned to the route.
-- [distance](route/distance.md)
+- [distance](./distance.md)
   The route distance, in meters.
-- [transportType](route/transporttype.md)
+- [transportType](./transporttype.md)
   The overall route transport type.
-- [hasTolls](route/hastolls.md)
+- [hasTolls](./hastolls.md)
   A Boolean value that indicates whether a route has tolls.
 
 

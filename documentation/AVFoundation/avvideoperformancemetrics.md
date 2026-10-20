@@ -1,7 +1,8 @@
 # AVVideoPerformanceMetrics
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides metrics related to video playback quality.
 
@@ -19,47 +20,52 @@ An object that provides metrics related to video playback quality.
 class AVVideoPerformanceMetrics
 ```
 
+```objc
+@interface AVVideoPerformanceMetrics : NSObject
+```
+
 ## Topics
 
 ### Inspecting metrics
-- [var numberOfCorruptedFrames: Int](avvideoperformancemetrics/numberofcorruptedframes.md)
+- [var numberOfCorruptedFrames: Int](./avvideoperformancemetrics/numberofcorruptedframes.md)
   The total number of corrupted frames.
-- [var numberOfDroppedFrames: Int](avvideoperformancemetrics/numberofdroppedframes.md)
+- [var numberOfDroppedFrames: Int](./avvideoperformancemetrics/numberofdroppedframes.md)
   The total number of frames the system drops prior to decoding or from missing the display deadline.
-- [var numberOfFramesDisplayedUsingOptimizedCompositing: Int](avvideoperformancemetrics/numberofframesdisplayedusingoptimizedcompositing.md)
+- [var numberOfFramesDisplayedUsingOptimizedCompositing: Int](./avvideoperformancemetrics/numberofframesdisplayedusingoptimizedcompositing.md)
   The total number of full screen frames rendered in a special power-efficient mode that didn’t require compositing with other UI elements.
-- [var totalAccumulatedFrameDelay: TimeInterval](avvideoperformancemetrics/totalaccumulatedframedelay.md)
+- [var totalAccumulatedFrameDelay: TimeInterval](./avvideoperformancemetrics/totalaccumulatedframedelay.md)
   The accumulated amount of time between the prescribed presentation times of displayed video frames and their actual time of display.
-- [var totalNumberOfFrames: Int](avvideoperformancemetrics/totalnumberofframes.md)
+- [var totalNumberOfFrames: Int](./avvideoperformancemetrics/totalnumberofframes.md)
   The total number of frames that display if no frames drop.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AVMetrics](avmetrics.md)
+### Metrics
+- [struct AVMetrics](./avmetrics.md)
   An asynchronous stream of metric information.
-- [struct AVMergedMetrics](avmergedmetrics.md)
+- [struct AVMergedMetrics](./avmergedmetrics.md)
   An asynchronous stream of metric information from different publishers.
-- [protocol AVMetricEventStreamPublisher](avmetriceventstreampublisher.md)
+- [protocol AVMetricEventStreamPublisher](./avmetriceventstreampublisher.md)
   A type for objects that publish metric events to the event stream.
-- [class AVMetricEvent](avmetricevent.md)
+- [class AVMetricEvent](./avmetricevent.md)
   A base class that represents a metric event.
-- [class AVMetricErrorEvent](avmetricerrorevent.md)
+- [class AVMetricErrorEvent](./avmetricerrorevent.md)
   An object that represents a metric event when an error occurs.
-- [Metric event types](metric-event-types.md)
+- [Metric event types](./metric-event-types.md)
 
 
 ---

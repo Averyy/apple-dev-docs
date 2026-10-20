@@ -1,7 +1,8 @@
 # httpBodyStream
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request body as an input stream.
 
@@ -20,25 +21,31 @@ The request body as an input stream.
 var httpBodyStream: InputStream? { get }
 ```
 
+```objc
+@property (retain, readonly, nullable) NSInputStream * HTTPBodyStream;
+```
+
 #### Discussion
 
 `nil` if the body stream has not been set. The returned stream is for examination only—it is not safe to manipulate the stream in any way.
 
-The receiver will have either an HTTP body or an HTTP body stream, only one may be set for a request. A HTTP body stream is preserved when copying an [`NSURLRequest`](nsurlrequest.md) object, but is lost when a request is archived using the [`NSCoding`](nscoding.md) protocol.
+The receiver will have either an HTTP body or an HTTP body stream, only one may be set for a request. A HTTP body stream is preserved when copying an [`NSURLRequest`](../nsurlrequest.md) object, but is lost when a request is archived using the [`NSCoding`](../nscoding.md) protocol.
 
 ## See Also
 
-- [var httpBodyStream: InputStream?](nsmutableurlrequest/httpbodystream.md)
+### Related Documentation
+- [var httpBodyStream: InputStream?](../nsmutableurlrequest/httpbodystream.md)
   The request body as an input stream.
-- [var httpBody: Data?](nsmutableurlrequest/httpbody.md)
+- [var httpBody: Data?](../nsmutableurlrequest/httpbody.md)
   The request body.
-- [var httpMethod: String?](nsurlrequest/httpmethod.md)
+### Accessing request components
+- [var httpMethod: String?](./httpmethod.md)
   The HTTP request method.
-- [var url: URL?](nsurlrequest/url.md)
+- [var url: URL?](./url.md)
   The URL being requested.
-- [var httpBody: Data?](nsurlrequest/httpbody.md)
+- [var httpBody: Data?](./httpbody.md)
   The request body.
-- [var mainDocumentURL: URL?](nsurlrequest/maindocumenturl.md)
+- [var mainDocumentURL: URL?](./maindocumenturl.md)
   The main document URL associated with the request.
 
 

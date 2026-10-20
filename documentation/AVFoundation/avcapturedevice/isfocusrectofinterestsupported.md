@@ -1,7 +1,8 @@
 # isFocusRectOfInterestSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the receiver supports focus rectangles of interest.
 
@@ -18,17 +19,22 @@ Whether the receiver supports focus rectangles of interest.
 var isFocusRectOfInterestSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isFocusRectOfInterestSupported) BOOL focusRectOfInterestSupported;
+```
+
 #### Discussion
 
-You may only set the device’s [`focusRectOfInterest`](avcapturedevice/focusrectofinterest.md) property if this property returns `true`.
+You may only set the device’s [`focusRectOfInterest`](./focusrectofinterest.md) property if this property returns `true`.
 
 ## See Also
 
-- [var focusRectOfInterest: CGRect](avcapturedevice/focusrectofinterest.md)
+### Setting a focus rectangle of interest
+- [var focusRectOfInterest: CGRect](./focusrectofinterest.md)
   The device’s current focus rectangle of interest, if it has one.
-- [var minFocusRectOfInterestSize: CGSize](avcapturedevice/minfocusrectofinterestsize.md)
+- [var minFocusRectOfInterestSize: CGSize](./minfocusrectofinterestsize.md)
   The minimum size you may use when specifying a rectangle of interest.
-- [func defaultRectForFocusPoint(ofInterest: CGPoint) -> CGRect](avcapturedevice/defaultrectforfocuspoint(ofinterest:).md)
+- [func defaultRectForFocusPoint(ofInterest: CGPoint) -> CGRect](./defaultrectforfocuspoint%28ofinterest%29.md)
   The default rectangle of interest used for a given focus point of interest.
 
 

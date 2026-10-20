@@ -1,7 +1,8 @@
 # setTag
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Set the tag for the memory descriptor.
 
@@ -10,7 +11,7 @@ Set the tag for the memory descriptor.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void setTag(IOOptionBits tag);
 ```
 
@@ -24,14 +25,15 @@ This method sets the tag for the memory descriptor. Tag bits are not interpreted
 
 ## See Also
 
-- [getTag](iomemorydescriptor/1812815-gettag.md)
+### Accessing the Buffer's Tag
+- [getTag](./api-1812815-gettag.md)
   Accessor to the retrieve the tag for the memory descriptor.
-- [- getTag](iomemorydescriptor/1442070-gettag.md)
+- [- getTag](./api-1442070-gettag.md)
   Accessor to the retrieve the tag for the memory descriptor.
-- [setTag](iomemorydescriptor/1812873-settag.md)
+- [setTag](./api-1812873-settag.md)
   Set the tag for the memory descriptor.
-- [- getVMTag](iomemorydescriptor/3131493-getvmtag.md)
-- [- setVMTags](iomemorydescriptor/3131494-setvmtags.md)
+- [- getVMTag](./api-3131493-getvmtag.md)
+- [- setVMTags](./api-3131494-setvmtags.md)
 
 
 ---

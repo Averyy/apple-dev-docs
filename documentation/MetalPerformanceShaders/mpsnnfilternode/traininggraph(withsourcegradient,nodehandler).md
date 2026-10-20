@@ -1,7 +1,8 @@
 # trainingGraph(withSourceGradient:nodeHandler:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func trainingGraph(withSourceGradient gradientImage: MPSNNImageNode?, nodeHandler: MPSGradientNodeBlock? = nil) -> [MPSNNFilterNode]?
+```
+
+```objc
+- (NSArray<MPSNNFilterNode *> *) trainingGraphWithSourceGradient:(MPSNNImageNode *) gradientImage nodeHandler:(MPSGradientNodeBlock) nodeHandler;
 ```
 
 

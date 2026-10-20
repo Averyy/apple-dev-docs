@@ -1,7 +1,8 @@
 # performSDPQuery(_:uuids:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs an SDP query on the target device with the specified service UUIDs.
 
@@ -12,6 +13,10 @@ Performs an SDP query on the target device with the specified service UUIDs.
 
 ```swift
 func performSDPQuery(_ target: Any!, uuids uuidArray: [Any]!) -> IOReturn
+```
+
+```objc
+- (IOReturn) performSDPQuery:(id) target uuids:(NSArray *) uuidArray;
 ```
 
 #### Return Value

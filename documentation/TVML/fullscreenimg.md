@@ -12,41 +12,42 @@ The `fullscreenImg` element contains a link to an image that is to be displayed 
 <fullscreenImg src="path to server/image" />
 ```
 
-##### Contained in
+##### Contained In
 
-- [`lockup`](lockup.md)
+- [lockup](./lockup.md)
 
 ## Topics
 
 ### Valid TVML Attributes
-- [accessibilityText](accessibilitytext.md)
+- [accessibilityText](./accessibilitytext.md)
   Adds hidden text to an element that is used when VoiceOver is enabled.
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [contentsMode](contentsmode.md)
+- [contentsMode](./contentsmode.md)
   Specifies how an image is expanded to fill its containing element.
-- [height](image-attributes-height.md)
+- [height](./image-attributes-height.md)
   Specifies the maximum height for an image.
-- [opaque](opaque.md)
+- [opaque](./opaque.md)
   Indicates whether an image has a transparent background.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [src](src.md)
+- [src](./src.md)
   Specifies the URL for an image.
-- [srcset](srcset.md)
+- [srcset](./srcset.md)
   Specifies multiple URLs for an image.
-- [width](image-attributes-width.md)
+- [width](./image-attributes-width.md)
   Specifies the maximum width for an image element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [decorationImage](decorationimage.md)
+### Image Elements
+- [decorationImage](./decorationimage.md)
   Displays images inside of other elements.
-- [heroImg](heroimg.md)
+- [heroImg](./heroimg.md)
   Displays an image that is usually large and detailed.
-- [img](img.md)
+- [img](./img.md)
   Displays an image.
 
 

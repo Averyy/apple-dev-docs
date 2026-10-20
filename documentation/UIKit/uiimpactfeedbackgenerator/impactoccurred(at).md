@@ -1,7 +1,8 @@
 # impactOccurred(at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Triggers impact feedback at the specified location.
 
@@ -16,13 +17,18 @@ Triggers impact feedback at the specified location.
 func impactOccurred(at location: CGPoint)
 ```
 
+```objc
+- (void) impactOccurredAtLocation:(CGPoint) location;
+```
+
 ## See Also
 
-- [func impactOccurred()](uiimpactfeedbackgenerator/impactoccurred.md)
+### Reporting impacts
+- [func impactOccurred()](./impactoccurred%28%29.md)
   Triggers impact feedback.
-- [func impactOccurred(intensity: CGFloat)](uiimpactfeedbackgenerator/impactoccurred(intensity:).md)
+- [func impactOccurred(intensity: CGFloat)](./impactoccurred%28intensity%29.md)
   Triggers impact feedback with a specific intensity.
-- [func impactOccurred(intensity: CGFloat, at: CGPoint)](uiimpactfeedbackgenerator/impactoccurred(intensity:at:).md)
+- [func impactOccurred(intensity: CGFloat, at: CGPoint)](./impactoccurred%28intensity,at%29.md)
   Triggers impact feedback with a specific intensity at the specified location.
 
 

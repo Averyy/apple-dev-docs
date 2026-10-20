@@ -1,18 +1,23 @@
 # insertValue(_:inPropertyWithKey:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts an object in the collection specified by the passed key.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 func insertValue(_ value: Any, inPropertyWithKey key: String)
+```
+
+```objc
+- (void) insertValue:(id) value inPropertyWithKey:(NSString *) key;
 ```
 
 #### Discussion
@@ -21,9 +26,10 @@ The method `insertIn<Key>:` is used if it exists. Otherwise, raises an `NSUndefi
 
 ## See Also
 
-- [func value(withName: String, inPropertyWithKey: String) -> Any?](nsobject-swift.class/value(withname:inpropertywithkey:).md)
+### Access by name, key, or ID
+- [func value(withName: String, inPropertyWithKey: String) -> Any?](./value%28withname,inpropertywithkey%29.md)
   Retrieves a named object from the collection specified by the passed key.
-- [func value(withUniqueID: Any, inPropertyWithKey: String) -> Any?](nsobject-swift.class/value(withuniqueid:inpropertywithkey:).md)
+- [func value(withUniqueID: Any, inPropertyWithKey: String) -> Any?](./value%28withuniqueid,inpropertywithkey%29.md)
   Retrieves an object by ID from the collection specified by the passed key.
 
 

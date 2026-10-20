@@ -1,14 +1,15 @@
 # HV_TASK_TRAP
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 HV_TASK_TRAP = 0
 ```
 

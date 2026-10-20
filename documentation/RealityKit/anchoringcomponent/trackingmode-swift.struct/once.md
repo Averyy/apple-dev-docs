@@ -1,7 +1,8 @@
 # once
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Anchors the entity to the target on the first frame the target is found.
 

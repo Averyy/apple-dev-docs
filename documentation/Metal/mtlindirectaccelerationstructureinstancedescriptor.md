@@ -1,7 +1,8 @@
 # MTLIndirectAccelerationStructureInstanceDescriptor
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A description of an instance in an instanced geometry acceleration structure that the GPU can populate.
 
@@ -19,43 +20,48 @@ A description of an instance in an instanced geometry acceleration structure tha
 struct MTLIndirectAccelerationStructureInstanceDescriptor
 ```
 
+```c
+typedef struct { ... } MTLIndirectAccelerationStructureInstanceDescriptor;
+```
+
 #### Overview
 
-This memory layout corresponds to the [`MTLAccelerationStructureInstanceDescriptorType.indirect`](mtlaccelerationstructureinstancedescriptortype/indirect.md) instance type.
+This memory layout corresponds to the [`MTLAccelerationStructureInstanceDescriptorType.indirect`](./mtlaccelerationstructureinstancedescriptortype/indirect.md) instance type.
 
 ## Topics
 
 ### Initializers
-- [init()](mtlindirectaccelerationstructureinstancedescriptor/init.md)
-- [init(transformationMatrix: MTLPackedFloat4x3, options: MTLAccelerationStructureInstanceOptions, mask: UInt32, intersectionFunctionTableOffset: UInt32, userID: UInt32, accelerationStructureID: MTLResourceID)](mtlindirectaccelerationstructureinstancedescriptor/init(transformationmatrix:options:mask:intersectionfunctiontableoffset:userid:accelerationstructureid:).md)
+- [init()](./mtlindirectaccelerationstructureinstancedescriptor/init%28%29.md)
+- [init(transformationMatrix: MTLPackedFloat4x3, options: MTLAccelerationStructureInstanceOptions, mask: UInt32, intersectionFunctionTableOffset: UInt32, userID: UInt32, accelerationStructureID: MTLResourceID)](./mtlindirectaccelerationstructureinstancedescriptor/init%28transformationmatrix,options,mask,intersectionfunctiontableoffset,userid,accelerationstructureid%29.md)
 ### Instance Properties
-- [var accelerationStructureID: MTLResourceID](mtlindirectaccelerationstructureinstancedescriptor/accelerationstructureid.md)
-- [var intersectionFunctionTableOffset: UInt32](mtlindirectaccelerationstructureinstancedescriptor/intersectionfunctiontableoffset.md)
-- [var mask: UInt32](mtlindirectaccelerationstructureinstancedescriptor/mask.md)
-- [var options: MTLAccelerationStructureInstanceOptions](mtlindirectaccelerationstructureinstancedescriptor/options.md)
-- [var transformationMatrix: MTLPackedFloat4x3](mtlindirectaccelerationstructureinstancedescriptor/transformationmatrix.md)
-- [var userID: UInt32](mtlindirectaccelerationstructureinstancedescriptor/userid.md)
+- [var accelerationStructureID: MTLResourceID](./mtlindirectaccelerationstructureinstancedescriptor/accelerationstructureid.md)
+- [var intersectionFunctionTableOffset: UInt32](./mtlindirectaccelerationstructureinstancedescriptor/intersectionfunctiontableoffset.md)
+- [var mask: UInt32](./mtlindirectaccelerationstructureinstancedescriptor/mask.md)
+- [var options: MTLAccelerationStructureInstanceOptions](./mtlindirectaccelerationstructureinstancedescriptor/options.md)
+- [var transformationMatrix: MTLPackedFloat4x3](./mtlindirectaccelerationstructureinstancedescriptor/transformationmatrix.md)
+- [var userID: UInt32](./mtlindirectaccelerationstructureinstancedescriptor/userid.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct MTLAccelerationStructureInstanceDescriptor](mtlaccelerationstructureinstancedescriptor.md)
+### Instance descriptors
+- [struct MTLAccelerationStructureInstanceDescriptor](./mtlaccelerationstructureinstancedescriptor.md)
   A description of an instance in an instanced geometry acceleration structure.
-- [struct MTLAccelerationStructureUserIDInstanceDescriptor](mtlaccelerationstructureuseridinstancedescriptor.md)
+- [struct MTLAccelerationStructureUserIDInstanceDescriptor](./mtlaccelerationstructureuseridinstancedescriptor.md)
   A description of an instance in an instanced geometry acceleration structure, with the instance including a user identifier for the instance.
-- [struct MTLAccelerationStructureMotionInstanceDescriptor](mtlaccelerationstructuremotioninstancedescriptor.md)
+- [struct MTLAccelerationStructureMotionInstanceDescriptor](./mtlaccelerationstructuremotioninstancedescriptor.md)
   A description of an instance in an instanced geometry acceleration structure, with the instance including a user identifier and motion data for the instance.
-- [struct MTLAccelerationStructureInstanceOptions](mtlaccelerationstructureinstanceoptions.md)
+- [struct MTLAccelerationStructureInstanceOptions](./mtlaccelerationstructureinstanceoptions.md)
   Options for adjusting the behavior of an instanced acceleration structure.
-- [class MTL4IndirectInstanceAccelerationStructureDescriptor](mtl4indirectinstanceaccelerationstructuredescriptor.md)
+- [class MTL4IndirectInstanceAccelerationStructureDescriptor](./mtl4indirectinstanceaccelerationstructuredescriptor.md)
   Descriptor for an “indirect” instance acceleration structure that allows providing the instance count and motion transform count indirectly, through buffer references.
-- [class MTLIndirectInstanceAccelerationStructureDescriptor](mtlindirectinstanceaccelerationstructuredescriptor.md)
+- [class MTLIndirectInstanceAccelerationStructureDescriptor](./mtlindirectinstanceaccelerationstructuredescriptor.md)
   A description of an acceleration structure that Metal derives from instances of primitive acceleration structures that the GPU can populate.
-- [struct MTLIndirectAccelerationStructureMotionInstanceDescriptor](mtlindirectaccelerationstructuremotioninstancedescriptor.md)
+- [struct MTLIndirectAccelerationStructureMotionInstanceDescriptor](./mtlindirectaccelerationstructuremotioninstancedescriptor.md)
   A description of an instance in an acceleration structure that the GPU can populate, with motion data for the instance.
 
 

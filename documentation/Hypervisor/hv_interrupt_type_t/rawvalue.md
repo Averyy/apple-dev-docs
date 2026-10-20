@@ -1,12 +1,13 @@
 # rawValue
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An unisgned 32-bit integer that describes the interrupts.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

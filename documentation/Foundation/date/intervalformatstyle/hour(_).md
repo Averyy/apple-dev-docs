@@ -1,7 +1,8 @@
 # hour(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the date interval format style to use the specified hour format style.
 
@@ -28,9 +29,9 @@ A date interval format style that includes the specified hour style.
 
 The values of `Date.FormatStyle.Symbol.Hour` are `defaultDigitsNoAMPM` and `twoDigitsNoAMPM`.
 
-The static methods that return [`Date.FormatStyle.Symbol.Hour`](date/formatstyle/symbol/hour.md) objects include [`conversationalDefaultDigits(amPM:)`](date/formatstyle/symbol/hour/conversationaldefaultdigits(ampm:).md), [`conversationalTwoDigits(amPM:)`](date/formatstyle/symbol/hour/conversationaltwodigits(ampm:).md), and [`defaultDigits(amPM:)`](date/formatstyle/symbol/hour/defaultdigits(ampm:).md).
+The static methods that return [`Date.FormatStyle.Symbol.Hour`](../formatstyle/symbol/hour.md) objects include [`conversationalDefaultDigits(amPM:)`](../formatstyle/symbol/hour/conversationaldefaultdigits%28ampm%29.md), [`conversationalTwoDigits(amPM:)`](../formatstyle/symbol/hour/conversationaltwodigits%28ampm%29.md), and [`defaultDigits(amPM:)`](../formatstyle/symbol/hour/defaultdigits%28ampm%29.md).
 
-This example shows a variety of [`Date.FormatStyle.Symbol.Hour`](date/formatstyle/symbol/hour.md) format styles for a date interval:
+This example shows a variety of [`Date.FormatStyle.Symbol.Hour`](../formatstyle/symbol/hour.md) format styles for a date interval:
 
 ```swift
 if let today = Calendar.current.date(byAdding: .day, value: -140, to: Date()),
@@ -59,17 +60,18 @@ if let today = Calendar.current.date(byAdding: .day, value: -140, to: Date()),
 
 ## See Also
 
-- [func day() -> Date.IntervalFormatStyle](date/intervalformatstyle/day.md)
+### Modifying Date Interval Format Styles
+- [func day() -> Date.IntervalFormatStyle](./day%28%29.md)
   Modifies the date interval format style to include the day.
-- [func minute() -> Date.IntervalFormatStyle](date/intervalformatstyle/minute.md)
+- [func minute() -> Date.IntervalFormatStyle](./minute%28%29.md)
   Modifies the date interval format style to include the minutes.
-- [func month(Date.IntervalFormatStyle.Symbol.Month) -> Date.IntervalFormatStyle](date/intervalformatstyle/month(_:).md)
+- [func month(Date.IntervalFormatStyle.Symbol.Month) -> Date.IntervalFormatStyle](./month%28_%29.md)
   Modifies the date interval format style to include the month.
-- [func second() -> Date.IntervalFormatStyle](date/intervalformatstyle/second.md)
+- [func second() -> Date.IntervalFormatStyle](./second%28%29.md)
   Modifies the date interval format style to include the seconds.
-- [func weekday(Date.IntervalFormatStyle.Symbol.Weekday) -> Date.IntervalFormatStyle](date/intervalformatstyle/weekday(_:).md)
+- [func weekday(Date.IntervalFormatStyle.Symbol.Weekday) -> Date.IntervalFormatStyle](./weekday%28_%29.md)
   Modifies the date interval format style to include the specified weekday style.
-- [func year() -> Date.IntervalFormatStyle](date/intervalformatstyle/year.md)
+- [func year() -> Date.IntervalFormatStyle](./year%28%29.md)
   Modifies the date interval format style to include the year.
 
 

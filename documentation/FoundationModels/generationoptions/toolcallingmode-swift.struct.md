@@ -1,7 +1,8 @@
 # GenerationOptions.ToolCallingMode
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value that describes how the model uses tools.
 
@@ -21,17 +22,17 @@ struct ToolCallingMode
 
 ## Mentions
 
-- [Expanding generation with tool calling](expanding-generation-with-tool-calling.md)
+- [Expanding generation with tool calling](../expanding-generation-with-tool-calling.md)
 
 #### Overview
 
 Use this to control how the model interacts with tools for a given request. Tool calling mode supports three modes:
 
-- **[`allowed`](generationoptions/toolcallingmode-swift.struct/allowed.md)**: The model may call tools. This is the default behavior.
-- **[`required`](generationoptions/toolcallingmode-swift.struct/required.md)**: The model must call one or more tools before it can respond.
-- **[`disallowed`](generationoptions/toolcallingmode-swift.struct/disallowed.md)**: The model can’t call any tools and responds using only its own knowledge.
+- **[`allowed`](./toolcallingmode-swift.struct/allowed.md)**: The model may call tools. This is the default behavior.
+- **[`required`](./toolcallingmode-swift.struct/required.md)**: The model must call one or more tools before it can respond.
+- **[`disallowed`](./toolcallingmode-swift.struct/disallowed.md)**: The model can’t call any tools and responds using only its own knowledge.
 
-The following changes the mode from [`required`](generationoptions/toolcallingmode-swift.struct/required.md) to [`allowed`](generationoptions/toolcallingmode-swift.struct/allowed.md) after the first tool call, which lets the model produce a final response:
+The following changes the mode from [`required`](./toolcallingmode-swift.struct/required.md) to [`allowed`](./toolcallingmode-swift.struct/allowed.md) after the first tool call, which lets the model produce a final response:
 
 ```swift
 extension SessionPropertyValues {
@@ -54,43 +55,44 @@ struct RecipeDynamicProfile: LanguageModelSession.DynamicProfile {
 }
 ```
 
-> ❗ **Important**: When you set the mode to [`required`](generationoptions/toolcallingmode-swift.struct/required.md), you must define an exit condition by either throwing an error from a tool’s [`call(arguments:)`](tool/call(arguments:).md) method or by changing the mode dynamically using a [`LanguageModelSession.DynamicProfile`](languagemodelsession/dynamicprofile.md); otherwise, the model continues to call the tool.
+> ❗ **Important**: When you set the mode to [`required`](./toolcallingmode-swift.struct/required.md), you must define an exit condition by either throwing an error from a tool’s [`call(arguments:)`](../tool/call%28arguments%29.md) method or by changing the mode dynamically using a [`LanguageModelSession.DynamicProfile`](../languagemodelsession/dynamicprofile.md); otherwise, the model continues to call the tool.
 
 ## Topics
 
 ### Getting the tool calling modes
-- [static let allowed: GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct/allowed.md)
+- [static let allowed: GenerationOptions.ToolCallingMode](./toolcallingmode-swift.struct/allowed.md)
   The model may or may not call tools.
-- [static let disallowed: GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct/disallowed.md)
+- [static let disallowed: GenerationOptions.ToolCallingMode](./toolcallingmode-swift.struct/disallowed.md)
   The model may not call any tool.
-- [static let required: GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct/required.md)
+- [static let required: GenerationOptions.ToolCallingMode](./toolcallingmode-swift.struct/required.md)
   The model must call one or multiple tools.
 ### Accessing the content
-- [var kind: GenerationOptions.ToolCallingMode.Kind](generationoptions/toolcallingmode-swift.struct/kind-swift.property.md)
+- [var kind: GenerationOptions.ToolCallingMode.Kind](./toolcallingmode-swift.struct/kind-swift.property.md)
   The tool-calling behavior this mode represents.
-- [GenerationOptions.ToolCallingMode.Kind](generationoptions/toolcallingmode-swift.struct/kind-swift.enum.md)
+- [GenerationOptions.ToolCallingMode.Kind](./toolcallingmode-swift.struct/kind-swift.enum.md)
   A representation of the different ways a model can use tools.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var temperature: Double?](generationoptions/temperature.md)
+### Configuring options
+- [var temperature: Double?](./temperature.md)
   A value that influences the confidence of the model’s response.
-- [var sampling: GenerationOptions.SamplingMode?](generationoptions/sampling.md)
+- [var sampling: GenerationOptions.SamplingMode?](./sampling.md)
   A sampling strategy for how the model picks tokens when generating a response.
-- [var samplingMode: GenerationOptions.SamplingMode?](generationoptions/samplingmode-swift.property.md)
+- [var samplingMode: GenerationOptions.SamplingMode?](./samplingmode-swift.property.md)
   A sampling strategy for how the model picks tokens when generating a response.
-- [GenerationOptions.SamplingMode](generationoptions/samplingmode-swift.struct.md)
+- [GenerationOptions.SamplingMode](./samplingmode-swift.struct.md)
   A type that defines how values are sampled from a probability distribution.
-- [var toolCallingMode: GenerationOptions.ToolCallingMode?](generationoptions/toolcallingmode-swift.property.md)
+- [var toolCallingMode: GenerationOptions.ToolCallingMode?](./toolcallingmode-swift.property.md)
   The tool calling requirements.
-- [var maximumResponseTokens: Int?](generationoptions/maximumresponsetokens.md)
+- [var maximumResponseTokens: Int?](./maximumresponsetokens.md)
   The maximum number of tokens the model is allowed to produce in its response.
 
 

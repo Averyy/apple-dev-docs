@@ -1,7 +1,8 @@
 # AudioReader.Configuration
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The configuration of the audio reader.
 
@@ -22,25 +23,26 @@ struct Configuration
 ## Topics
 
 ### Creating a configuration
-- [init()](audioreader/configuration-swift.struct/init.md)
+- [init()](./configuration-swift.struct/init%28%29.md)
   Creates an AudioReader Configuration
-- [init(frameCount: Int)](audioreader/configuration-swift.struct/init(framecount:).md)
+- [init(frameCount: Int)](./configuration-swift.struct/init%28framecount%29.md)
   Creates an AudioReader Configuration
 ### Getting the frame count
-- [var frameCount: Int](audioreader/configuration-swift.struct/framecount.md)
+- [var frameCount: Int](./configuration-swift.struct/framecount.md)
   The maximum size of each buffer in frames. The default value is `4096`.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AudioReader.AsyncBuffers](audioreader/asyncbuffers.md)
+### Managing buffers
+- [AudioReader.AsyncBuffers](./asyncbuffers.md)
   An async sequence of audio buffers read from an audio file.
-- [AudioReader.MicrophoneAsyncBuffers](audioreader/microphoneasyncbuffers.md)
+- [AudioReader.MicrophoneAsyncBuffers](./microphoneasyncbuffers.md)
   An async sequence of audio frames.
 
 

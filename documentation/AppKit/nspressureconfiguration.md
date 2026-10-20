@@ -1,7 +1,8 @@
 # NSPressureConfiguration
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An encapsulation of the behavior and progression of a Force Touch trackpad as it responds to specific events.
 
@@ -14,36 +15,41 @@ An encapsulation of the behavior and progression of a Force Touch trackpad as it
 class NSPressureConfiguration
 ```
 
+```objc
+@interface NSPressureConfiguration : NSObject
+```
+
 #### Overview
 
-Use an [`NSPressureConfiguration`](nspressureconfiguration.md) object to configure the behavior and progression of a Force Touch trackpad when it responds to a mouse drag or pressure event sequence. Pressure configurations are assigned to views ([`NSView`](nsview.md)) and gesture recognizers ([`NSGestureRecognizer`](nsgesturerecognizer.md)).
+Use an [`NSPressureConfiguration`](./nspressureconfiguration.md) object to configure the behavior and progression of a Force Touch trackpad when it responds to a mouse drag or pressure event sequence. Pressure configurations are assigned to views ([`NSView`](./nsview.md)) and gesture recognizers ([`NSGestureRecognizer`](./nsgesturerecognizer.md)).
 
 ## Topics
 
 ### Creating a Pressure Configuration Object
-- [init(pressureBehavior: NSEvent.PressureBehavior)](nspressureconfiguration/init(pressurebehavior:).md)
+- [init(pressureBehavior: NSEvent.PressureBehavior)](./nspressureconfiguration/init%28pressurebehavior%29.md)
   Initializes a pressure configuration object with a specified pressure behavior.
-- [func set()](nspressureconfiguration/set.md)
+- [func set()](./nspressureconfiguration/set%28%29.md)
   Changes the pressure configuration of the trackpad to the initialized pressure configuration.
 ### Accessing Pressure Configuration Object Properties
-- [var pressureBehavior: NSEvent.PressureBehavior](nspressureconfiguration/pressurebehavior.md)
+- [var pressureBehavior: NSEvent.PressureBehavior](./nspressureconfiguration/pressurebehavior.md)
   The pressure behavior of the pressure configuration object.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSHapticFeedbackManager](nshapticfeedbackmanager.md)
+### Trackpad
+- [class NSHapticFeedbackManager](./nshapticfeedbackmanager.md)
   An object that provides access to the haptic feedback management attributes on a system with a Force Touch trackpad.
 
 

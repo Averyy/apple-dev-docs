@@ -1,7 +1,8 @@
 # threeDContent
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A base type that represents 3D content.
 
@@ -24,13 +25,14 @@ static var threeDContent: UTType { get }
 
 The identifier for this type is `public.3d-content`.
 
-This type conforms to [`UTTypeContent`](uttypecontent.md).
+This type conforms to [`UTTypeContent`](../uttypecontent.md).
 
 ## See Also
 
-- [static var usd: UTType](uttype-swift.struct/usd.md)
+### 3D content
+- [static var usd: UTType](./usd.md)
   A type that represents Universal Scene Description content.
-- [static var usdz: UTType](uttype-swift.struct/usdz.md)
+- [static var usdz: UTType](./usdz.md)
   A type that represents Universal Scene Description Package content.
 
 

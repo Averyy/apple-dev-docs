@@ -1,7 +1,8 @@
 # Scene.AnchorCollection.Index
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents a position in the collection.
 
@@ -11,7 +12,7 @@ A type that represents a position in the collection.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,11 +22,12 @@ typealias Index = Int
 
 ## See Also
 
-- [var startIndex: Int](scene/anchorcollection/startindex.md)
+### Manipulating indices
+- [var startIndex: Int](./startindex.md)
   The position of the first element in a nonempty collection.
-- [var endIndex: Int](scene/anchorcollection/endindex.md)
+- [var endIndex: Int](./endindex.md)
   The position one greater than the last valid subscript argument.
-- [func index(after: Int) -> Int](scene/anchorcollection/index(after:).md)
+- [func index(after: Int) -> Int](./index%28after%29.md)
   Returns the position immediately after the given index.
 
 

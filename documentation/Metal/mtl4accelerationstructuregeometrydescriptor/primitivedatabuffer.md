@@ -1,7 +1,8 @@
 # primitiveDataBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns optional buffer containing data to associate with each primitive in this geometry.
 
@@ -17,6 +18,10 @@ Assigns optional buffer containing data to associate with each primitive in this
 
 ```swift
 var primitiveDataBuffer: MTL4BufferRange { get set }
+```
+
+```objc
+@property (nonatomic) MTL4BufferRange primitiveDataBuffer;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # argListTooLong
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The argument list is too long.
 
@@ -22,7 +23,7 @@ static var argListTooLong: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,15 +33,16 @@ The corresponding C error is `E2BIG`.
 
 ## See Also
 
-- [static var identifierRemoved: Errno](errno/identifierremoved.md)
+### Process Errors
+- [static var identifierRemoved: Errno](./identifierremoved.md)
   Identifier removed.
-- [static var noChildProcess: Errno](errno/nochildprocess.md)
+- [static var noChildProcess: Errno](./nochildprocess.md)
   No child processes.
-- [static var noSuchProcess: Errno](errno/nosuchprocess.md)
+- [static var noSuchProcess: Errno](./nosuchprocess.md)
   No such process.
-- [static var previousOwnerDied: Errno](errno/previousownerdied.md)
+- [static var previousOwnerDied: Errno](./previousownerdied.md)
   Previous pthread mutex owner died.
-- [static var tooManyProcesses: Errno](errno/toomanyprocesses.md)
+- [static var tooManyProcesses: Errno](./toomanyprocesses.md)
   Too many processes.
 
 

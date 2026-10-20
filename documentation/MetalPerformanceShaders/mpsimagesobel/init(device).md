@@ -1,7 +1,8 @@
 # init(device:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a Sobel filter on a given device using the default color transform.
 
@@ -19,6 +20,10 @@ Initializes a Sobel filter on a given device using the default color transform.
 convenience init(device: any MTLDevice)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device;
+```
+
 #### Return Value
 
 An initialized Sobel filter object.
@@ -33,7 +38,8 @@ The default color transform matrix is an array of 3 floats set to the *BT.601/JP
 
 ## See Also
 
-- [init(device: any MTLDevice, linearGrayColorTransform: UnsafePointer<Float>)](mpsimagesobel/init(device:lineargraycolortransform:).md)
+### Methods
+- [init(device: any MTLDevice, linearGrayColorTransform: UnsafePointer<Float>)](./init%28device,lineargraycolortransform%29.md)
   Initializes a Sobel filter on a given device using a specific color transform.
 
 

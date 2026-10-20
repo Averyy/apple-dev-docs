@@ -1,7 +1,8 @@
 # requestIconAndKind
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Not used.
 

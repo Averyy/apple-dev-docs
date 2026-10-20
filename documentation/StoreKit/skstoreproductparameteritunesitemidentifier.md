@@ -1,7 +1,8 @@
 # SKStoreProductParameterITunesItemIdentifier
 
 **Framework**: StoreKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key representing the iTunes identifier for the item you want the store to display when the view controller is presented.
 
@@ -17,16 +18,20 @@ The key representing the iTunes identifier for the item you want the store to di
 let SKStoreProductParameterITunesItemIdentifier: String
 ```
 
+```c
+extern NSString * const SKStoreProductParameterITunesItemIdentifier;
+```
+
 ## Mentions
 
-- [Combining parameters to generate a signature for SKAdNetwork 1](combining-parameters-to-generate-a-signature-for-skadnetwork-1.md)
-- [Generating the signature to validate StoreKit-rendered ads](generating-the-signature-to-validate-storekit-rendered-ads.md)
+- [Combining parameters to generate a signature for SKAdNetwork 1](./combining-parameters-to-generate-a-signature-for-skadnetwork-1.md)
+- [Generating the signature to validate StoreKit-rendered ads](./generating-the-signature-to-validate-storekit-rendered-ads.md)
 
 #### Discussion
 
-The value for this key, an iTunes item identifier, is an instance of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+The value for this key, an iTunes item identifier, is an instance of [`NSNumber`](../Foundation/nsnumber.md).
 
-To find a product’s iTunes identifier, go to [`linkmaker.itunes.apple.com`](https://developer.apple.comhttp://linkmaker.itunes.apple.com/us/) and search for the product, then locate the iTunes identifier in the link URL. For example, the iTunes identifier for the iBooks app is 364709193.
+To find a product’s iTunes identifier, go to [linkmaker.itunes.apple.com](http://linkmaker.itunes.apple.com/us/) and search for the product, then locate the iTunes identifier in the link URL. For example, the iTunes identifier for the iBooks app is 364709193.
 
 
 ---

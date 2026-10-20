@@ -1,7 +1,8 @@
 # init(_:content:marketingContent:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -19,23 +20,26 @@
 @preconcurrency init(_ label: LocalizedStringKey, @StoreContentBuilder content: () -> Content, @ViewBuilder marketingContent: () -> MarketingContent)
 ```
 
+Available when `Content` conforms to `StoreContent`, `Label` is `Text`, and `MarketingContent` conforms to `View`.
+
 ## See Also
 
-- [init(LocalizedStringKey, content: () -> Content)](subscriptionoptiongroup/init(_:content:)-2nlpw.md)
-- [init(some StringProtocol, content: () -> Content)](subscriptionoptiongroup/init(_:content:)-24grh.md)
-- [init(some StringProtocol, content: () -> Content, marketingContent: () -> MarketingContent)](subscriptionoptiongroup/init(_:content:marketingcontent:)-550q0.md)
-- [init(LocalizedStringKey, isIncluded: (Product) -> Bool)](subscriptionoptiongroup/init(_:isincluded:)-uhqa.md)
-- [init(some StringProtocol, isIncluded: (Product) -> Bool)](subscriptionoptiongroup/init(_:isincluded:)-5f3ml.md)
-- [init(LocalizedStringKey, isIncluded: (Product) -> Bool, marketingContent: () -> MarketingContent)](subscriptionoptiongroup/init(_:isincluded:marketingcontent:)-8vmdm.md)
-- [init(some StringProtocol, isIncluded: (Product) -> Bool, marketingContent: () -> MarketingContent)](subscriptionoptiongroup/init(_:isincluded:marketingcontent:)-4d72a.md)
-- [init(content: () -> Content)](subscriptionoptiongroup/init(content:).md)
-- [init(content: () -> Content, label: () -> Label)](subscriptionoptiongroup/init(content:label:).md)
-- [init(content: () -> Content, label: () -> Label, marketingContent: () -> MarketingContent)](subscriptionoptiongroup/init(content:label:marketingcontent:).md)
-- [init(content: () -> Content, marketingContent: () -> MarketingContent)](subscriptionoptiongroup/init(content:marketingcontent:).md)
-- [init(isIncluded: (Product) -> Bool)](subscriptionoptiongroup/init(isincluded:).md)
-- [init(isIncluded: (Product) -> Bool, label: () -> Label)](subscriptionoptiongroup/init(isincluded:label:).md)
-- [init(isIncluded: (Product) -> Bool, label: () -> Label, marketingContent: () -> MarketingContent)](subscriptionoptiongroup/init(isincluded:label:marketingcontent:).md)
-- [init(isIncluded: (Product) -> Bool, marketingContent: () -> MarketingContent)](subscriptionoptiongroup/init(isincluded:marketingcontent:).md)
+### Creating subscription option groups
+- [init(LocalizedStringKey, content: () -> Content)](./init%28_,content%29-2nlpw.md)
+- [init(some StringProtocol, content: () -> Content)](./init%28_,content%29-24grh.md)
+- [init(some StringProtocol, content: () -> Content, marketingContent: () -> MarketingContent)](./init%28_,content,marketingcontent%29-550q0.md)
+- [init(LocalizedStringKey, isIncluded: (Product) -> Bool)](./init%28_,isincluded%29-uhqa.md)
+- [init(some StringProtocol, isIncluded: (Product) -> Bool)](./init%28_,isincluded%29-5f3ml.md)
+- [init(LocalizedStringKey, isIncluded: (Product) -> Bool, marketingContent: () -> MarketingContent)](./init%28_,isincluded,marketingcontent%29-8vmdm.md)
+- [init(some StringProtocol, isIncluded: (Product) -> Bool, marketingContent: () -> MarketingContent)](./init%28_,isincluded,marketingcontent%29-4d72a.md)
+- [init(content: () -> Content)](./init%28content%29.md)
+- [init(content: () -> Content, label: () -> Label)](./init%28content,label%29.md)
+- [init(content: () -> Content, label: () -> Label, marketingContent: () -> MarketingContent)](./init%28content,label,marketingcontent%29.md)
+- [init(content: () -> Content, marketingContent: () -> MarketingContent)](./init%28content,marketingcontent%29.md)
+- [init(isIncluded: (Product) -> Bool)](./init%28isincluded%29.md)
+- [init(isIncluded: (Product) -> Bool, label: () -> Label)](./init%28isincluded,label%29.md)
+- [init(isIncluded: (Product) -> Bool, label: () -> Label, marketingContent: () -> MarketingContent)](./init%28isincluded,label,marketingcontent%29.md)
+- [init(isIncluded: (Product) -> Bool, marketingContent: () -> MarketingContent)](./init%28isincluded,marketingcontent%29.md)
 
 
 ---

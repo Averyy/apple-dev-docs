@@ -1,7 +1,8 @@
 # init(rawCategory:valueForTagValue:tagValueForValue:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new tag category instance with defined mappings between a raw and typed tag value.
 
@@ -22,7 +23,7 @@ init(rawCategory: CMTypedTag<TypedValue>.RawCategory, valueForTagValue: @escapin
 
 #### Discussion
 
-> ❗ **Important**:  To ensure that your category is valid, use an existing static category listed in [`Creating Typed Categories`](cmtypedtag/category-swift.struct#Creating-Typed-Categories.md) rather than creating an instance yourself.
+> ❗ **Important**:  To ensure that your category is valid, use an existing static category listed in [Creating Typed Categories](../category-swift.struct.md#Creating-Typed-Categories) rather than creating an instance yourself.
 
 ## Parameters
 

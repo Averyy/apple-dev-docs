@@ -1,7 +1,8 @@
 # UIContentUnavailableConfiguration.ImageProperties
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Properties to configure the image for a content-unavailable view.
 
@@ -10,7 +11,7 @@ Properties to configure the image for a content-unavailable view.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,27 +22,27 @@ struct ImageProperties
 ## Topics
 
 ### Instance Properties
-- [var accessibilityIgnoresInvertColors: Bool](uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct/accessibilityignoresinvertcolors.md)
+- [var accessibilityIgnoresInvertColors: Bool](./imageproperties-swift.struct/accessibilityignoresinvertcolors.md)
   A Boolean value that determines whether the image inverts its colors with the Invert Colors accessibility feature enabled.
-- [var cornerRadius: CGFloat](uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct/cornerradius.md)
+- [var cornerRadius: CGFloat](./imageproperties-swift.struct/cornerradius.md)
   The preferred corner radius for the image.
-- [var maximumSize: CGSize](uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct/maximumsize.md)
+- [var maximumSize: CGSize](./imageproperties-swift.struct/maximumsize.md)
   A maximum size for the image.
-- [var preferredSymbolConfiguration: UIImage.SymbolConfiguration?](uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct/preferredsymbolconfiguration.md)
+- [var preferredSymbolConfiguration: UIImage.SymbolConfiguration?](./imageproperties-swift.struct/preferredsymbolconfiguration.md)
   The symbol configuration for the image.
-- [var tintColor: UIColor?](uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct/tintcolor.md)
+- [var tintColor: UIColor?](./imageproperties-swift.struct/tintcolor.md)
   The tint color applied to the image view.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../../Swift/customreflectable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

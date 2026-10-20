@@ -1,7 +1,8 @@
 # deviceDirections
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current direction of each camera the coordinator monitors, in relation to its view.
 
@@ -16,15 +17,19 @@ The current direction of each camera the coordinator monitors, in relation to it
 var deviceDirections: AVCaptureDeviceDirectionMap { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCaptureDeviceDirectionMap * deviceDirections;
+```
+
 ## Mentions
 
-- [Choosing a camera by the direction it faces](choosing-a-camera-by-the-direction-it-faces.md)
+- [Choosing a camera by the direction it faces](../choosing-a-camera-by-the-direction-it-faces.md)
 
 #### Discussion
 
 The map groups the device types you passed at initialization by the direction they face. One array holds the devices that face the same direction as the view, and the other holds the devices that face away from it. Reading this property gives you the state at that moment. The change handler reports later changes.
 
-> **Note**: This property is an empty [`AVCaptureDeviceDirectionMap`](avcapturedevicedirectionmap.md) until the coordinator calls its change handler for the first time. Treat that first callback, rather than initialization, as the point at which you know the directions.
+> **Note**: This property is an empty [`AVCaptureDeviceDirectionMap`](../avcapturedevicedirectionmap.md) until the coordinator calls its change handler for the first time. Treat that first callback, rather than initialization, as the point at which you know the directions.
 
 
 ---

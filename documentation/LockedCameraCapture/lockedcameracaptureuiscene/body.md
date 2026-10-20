@@ -1,7 +1,8 @@
 # body
 
 **Framework**: LockedCameraCapture  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content and behavior of the locked camera capture extension’s UI.
 

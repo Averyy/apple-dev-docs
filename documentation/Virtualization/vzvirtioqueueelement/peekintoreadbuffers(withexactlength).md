@@ -1,7 +1,8 @@
 # peekIntoReadBuffers(withExactLength:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Peeks into the read buffers and copy exactLength bytes from the read buffer into the data object it returns.
 
@@ -14,13 +15,17 @@ Peeks into the read buffers and copy exactLength bytes from the read buffer into
 func peekIntoReadBuffers(withExactLength exactLength: Int) throws -> Data
 ```
 
+```objc
+- (NSData *) peekIntoReadBuffersWithExactLength:(NSUInteger) exactLength error:(NSError **) error;
+```
+
 #### Return Value
 
-An [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object filled with the memory that the framework copied, or `nil` if the peek failed.
+An [`NSData`](../../Foundation/nsdata.md) object filled with the memory that the framework copied, or `nil` if the peek failed.
 
 #### Discussion
 
-This method allows you to peek into the read buffers without consuming any of the memory, [`readBuffersAvailableByteCount`](vzvirtioqueueelement/readbuffersavailablebytecount.md) does not change after this call.
+This method allows you to peek into the read buffers without consuming any of the memory, [`readBuffersAvailableByteCount`](./readbuffersavailablebytecount.md) does not change after this call.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # KeyPress.Result.ignored
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The action ignored the event, allowing dispatch to continue.
 
@@ -21,7 +22,8 @@ case ignored
 
 ## See Also
 
-- [KeyPress.Result.handled](keypress/result/handled.md)
+### Getting the result
+- [KeyPress.Result.handled](./handled.md)
   The action consumed the event, preventing dispatch from continuing.
 
 

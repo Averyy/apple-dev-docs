@@ -1,7 +1,8 @@
 # HSV Adjust
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 Adjusts the hue, saturation and value of an RGB color by a vector .
 
@@ -15,7 +16,29 @@ Adjusts the hue, saturation and value of an RGB color by a vector .
 
 #### Parameter Types
 
-#### Parameter Descriptions
+**HSV Adjust (color3f)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Color3 |
+| `Amount` | Vector3f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color3 |
+
+**HSV Adjust (color4f)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Color4 |
+| `Amount` | Vector3f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+#### Parameter descriptions
 
 - **`In`**: The input color the node adjusts.
 - **`Amount`**: The adjustment of the HSV. The default value is `(0,1,1)`, which causes no change.
@@ -28,23 +51,24 @@ The HSV Adjust node adjusts the hue, saturation, and value of the color passed t
 
 ## See Also
 
-- [Remap](adjustment/remap.md)
+### Nodes
+- [Remap](./remap.md)
   Linearly remaps incoming values from one range to another.
-- [Smooth Step](adjustment/smooth-step.md)
+- [Smooth Step](./smooth-step.md)
   Outputs a smooth remapping from low-high to 0-1.
-- [Luminance](adjustment/luminance.md)
+- [Luminance](./luminance.md)
   Outputs a grayscale value containing the luminance of the incoming RGB color in all color channels.
-- [RGB to HSV](adjustment/rgb-to-hsv.md)
+- [RGB to HSV](./rgb-to-hsv.md)
   Converts a color from RGB to HSV space.
-- [HSV to RGB](adjustment/hsv-to-rgb.md)
+- [HSV to RGB](./hsv-to-rgb.md)
   Converts a color from HSV to RGB space.
-- [Contrast](adjustment/contrast.md)
+- [Contrast](./contrast.md)
   Increases or decreases contrast of values using a linear slope multiplier.
-- [Range](adjustment/range.md)
+- [Range](./range.md)
   Remaps incoming values from one range to another.
-- [Saturate](adjustment/saturate.md)
+- [Saturate](./saturate.md)
   Adjusts the saturation of a color.
-- [Step (RealityKit)](adjustment/step-(realitykit).md)
+- [Step (RealityKit)](./step-%28realitykit%29.md)
   Outputs a 1 or a 0 depending on whether the input is greater than or less than the edge value.
 
 

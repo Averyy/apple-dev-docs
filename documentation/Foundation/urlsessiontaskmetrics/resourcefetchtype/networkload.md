@@ -1,7 +1,8 @@
 # URLSessionTaskMetrics.ResourceFetchType.networkLoad
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The resource was loaded over the network.
 
@@ -20,13 +21,18 @@ The resource was loaded over the network.
 case networkLoad
 ```
 
+```c
+NSURLSessionTaskMetricsResourceFetchTypeNetworkLoad
+```
+
 ## See Also
 
-- [URLSessionTaskMetrics.ResourceFetchType.unknown](urlsessiontaskmetrics/resourcefetchtype/unknown.md)
+### Fetch types
+- [URLSessionTaskMetrics.ResourceFetchType.unknown](./unknown.md)
   The manner in which the resource was fetched could not be determined.
-- [URLSessionTaskMetrics.ResourceFetchType.serverPush](urlsessiontaskmetrics/resourcefetchtype/serverpush.md)
+- [URLSessionTaskMetrics.ResourceFetchType.serverPush](./serverpush.md)
   The resource was pushed by the server to the client.
-- [URLSessionTaskMetrics.ResourceFetchType.localCache](urlsessiontaskmetrics/resourcefetchtype/localcache.md)
+- [URLSessionTaskMetrics.ResourceFetchType.localCache](./localcache.md)
   The resource was retrieved from the local storage.
 
 

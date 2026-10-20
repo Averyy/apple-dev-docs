@@ -1,7 +1,8 @@
 # secondary
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that represents the secondary button on the input device.
 
@@ -17,9 +18,14 @@ A constant that represents the secondary button on the input device.
 static var secondary: UIEvent.ButtonMask { get }
 ```
 
+```c
+UIEventButtonMaskSecondary
+```
+
 ## See Also
 
-- [static var primary: UIEvent.ButtonMask](uievent/buttonmask-swift.struct/primary.md)
+### Accessing button masks
+- [static var primary: UIEvent.ButtonMask](./primary.md)
   A constant that represents the primary button on the input device.
 
 

@@ -1,7 +1,8 @@
 # elapsedTime
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The duration of the transition, in seconds, since this event was sent. This value is not affected by the value of the CSS `transition-delay` property.
 
@@ -11,13 +12,14 @@ The duration of the transition, in seconds, since this event was sent. This valu
 
 ## Declaration
 
-```swift
+```
 readonly attribute double elapsedTime;
 ```
 
 ## See Also
 
-- [propertyName](webkittransitionevent/1630487-propertyname.md)
+### Accessing Properties
+- [propertyName](./api-1630487-propertyname.md)
   The name of the CSS property associated with the transition.
 
 

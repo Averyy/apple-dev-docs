@@ -1,7 +1,8 @@
 # kAEEquals
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The value of `operand1` is equal to the value of `operand2`
 

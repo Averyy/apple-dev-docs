@@ -1,7 +1,8 @@
 # MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege.VehicleRestriction
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents a restriction on a driving privilege.
 
@@ -19,18 +20,18 @@ struct VehicleRestriction
 ## Topics
 
 ### Instance Properties
-- [let code: String?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/aamvadrivingprivilege/vehiclerestriction/code.md)
+- [let code: String?](./vehiclerestriction/code.md)
   The code of the vehicle restriction.
-- [let description: String](mobiledriverslicensedatarequest/response/documentelements-swift.struct/aamvadrivingprivilege/vehiclerestriction/description.md)
+- [let description: String](./vehiclerestriction/description.md)
   The description of the vehicle restriction.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [Hashable](../../../../../Swift/hashable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 
 
 ---

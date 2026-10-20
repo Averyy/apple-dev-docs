@@ -1,7 +1,8 @@
 # init(for:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a web extension context initialized with a specified extension.
 
@@ -16,6 +17,10 @@ Returns a web extension context initialized with a specified extension.
 
 ```swift
 init(for extension: WKWebExtension)
+```
+
+```objc
+- (instancetype) initForExtension:(WKWebExtension *) extension;
 ```
 
 #### Return Value

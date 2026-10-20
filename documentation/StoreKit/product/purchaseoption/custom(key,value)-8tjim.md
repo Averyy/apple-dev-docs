@@ -1,7 +1,8 @@
 # custom(key:value:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Adds a Boolean value for a custom key to a purchase.
 
@@ -31,11 +32,12 @@ This custom purchase option doesn’t have any effect.
 
 ## See Also
 
-- [static func custom(key: String, value: Data) -> Product.PurchaseOption](product/purchaseoption/custom(key:value:)-80cvh.md)
+### Setting custom purchase options
+- [static func custom(key: String, value: Data) -> Product.PurchaseOption](./custom%28key,value%29-80cvh.md)
   Adds data for a custom key to a purchase.
-- [static func custom(key: String, value: String) -> Product.PurchaseOption](product/purchaseoption/custom(key:value:)-3g3nc.md)
+- [static func custom(key: String, value: String) -> Product.PurchaseOption](./custom%28key,value%29-3g3nc.md)
   Adds a string for a custom key to a purchase.
-- [static func custom(key: String, value: Double) -> Product.PurchaseOption](product/purchaseoption/custom(key:value:)-7rju9.md)
+- [static func custom(key: String, value: Double) -> Product.PurchaseOption](./custom%28key,value%29-7rju9.md)
   Adds a number for a custom key to a purchase.
 
 

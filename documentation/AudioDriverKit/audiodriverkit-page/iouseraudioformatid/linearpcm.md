@@ -1,7 +1,8 @@
 # LinearPCM
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The linear Pulse-Code Modulation (PCM) format.
 
@@ -10,7 +11,7 @@ The linear Pulse-Code Modulation (PCM) format.
 
 ## Declaration
 
-```swift
+```c
 LinearPCM
 ```
 
@@ -20,9 +21,10 @@ This format uses the standard flags.
 
 ## See Also
 
-- [AppleIMA4](audiodriverkit/iouseraudioformatid/appleima4.md)
+### Pulse Code Modulation Formats
+- [AppleIMA4](./appleima4.md)
   The Apple implementation of IMA 4:1 Adaptive Differential Pulse-Code Modulation (ADPCM) format.
-- [DVIIntelIMA](audiodriverkit/iouseraudioformatid/dviintelima.md)
+- [DVIIntelIMA](./dviintelima.md)
   The DVI/Intel IMA Adaptive Differential Pulse-Code Modulation (ADPCM) format.
 
 

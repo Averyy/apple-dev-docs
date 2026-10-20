@@ -1,7 +1,8 @@
 # MTRSubscribeParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,35 +19,39 @@
 class MTRSubscribeParams
 ```
 
+```objc
+@interface MTRSubscribeParams : MTRReadParams
+```
+
 ## Topics
 
 ### Initializers
-- [init(minInterval: NSNumber, maxInterval: NSNumber)](mtrsubscribeparams/init(mininterval:maxinterval:).md)
+- [init(minInterval: NSNumber, maxInterval: NSNumber)](./mtrsubscribeparams/init%28mininterval,maxinterval%29.md)
 ### Instance Properties
-- [var autoResubscribe: NSNumber?](mtrsubscribeparams/autoresubscribe.md)
-- [var keepPreviousSubscriptions: NSNumber?](mtrsubscribeparams/keepprevioussubscriptions.md)
-- [var maxInterval: NSNumber](mtrsubscribeparams/maxinterval.md)
-- [var minInterval: NSNumber](mtrsubscribeparams/mininterval.md)
-- [var shouldReplaceExistingSubscriptions: Bool](mtrsubscribeparams/shouldreplaceexistingsubscriptions.md)
-- [var shouldReportEventsUrgently: Bool](mtrsubscribeparams/shouldreporteventsurgently.md)
-- [var shouldResubscribeAutomatically: Bool](mtrsubscribeparams/shouldresubscribeautomatically.md)
+- [var autoResubscribe: NSNumber?](./mtrsubscribeparams/autoresubscribe.md)
+- [var keepPreviousSubscriptions: NSNumber?](./mtrsubscribeparams/keepprevioussubscriptions.md)
+- [var maxInterval: NSNumber](./mtrsubscribeparams/maxinterval.md)
+- [var minInterval: NSNumber](./mtrsubscribeparams/mininterval.md)
+- [var shouldReplaceExistingSubscriptions: Bool](./mtrsubscribeparams/shouldreplaceexistingsubscriptions.md)
+- [var shouldReportEventsUrgently: Bool](./mtrsubscribeparams/shouldreporteventsurgently.md)
+- [var shouldResubscribeAutomatically: Bool](./mtrsubscribeparams/shouldresubscribeautomatically.md)
 ### Type Methods
-- [class func new() -> Self](mtrsubscribeparams/new.md)
+- [class func new() -> Self](./mtrsubscribeparams/new%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRReadParams](mtrreadparams.md)
+- [MTRReadParams](./mtrreadparams.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # IOPhysicalAddress64
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.4+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias IOPhysicalAddress64 = UInt64
+```
+
+```c
+typedef UInt64 IOPhysicalAddress64;
 ```
 
 

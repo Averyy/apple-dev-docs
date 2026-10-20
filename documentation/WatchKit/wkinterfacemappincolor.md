@@ -1,12 +1,13 @@
 # WKInterfaceMapPinColor
 
 **Framework**: WatchKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants for map pin colors.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
@@ -14,37 +15,42 @@ Constants for map pin colors.
 enum WKInterfaceMapPinColor
 ```
 
+```c
+enum WKInterfaceMapPinColor : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [WKInterfaceMapPinColor.red](wkinterfacemappincolor/red.md)
+- [WKInterfaceMapPinColor.red](./wkinterfacemappincolor/red.md)
   A red pin.
-- [WKInterfaceMapPinColor.green](wkinterfacemappincolor/green.md)
+- [WKInterfaceMapPinColor.green](./wkinterfacemappincolor/green.md)
   A green pin.
-- [WKInterfaceMapPinColor.purple](wkinterfacemappincolor/purple.md)
+- [WKInterfaceMapPinColor.purple](./wkinterfacemappincolor/purple.md)
   A purple pin.
 ### Initializers
-- [init?(rawValue: Int)](wkinterfacemappincolor/init(rawvalue:).md)
+- [init?(rawValue: Int)](./wkinterfacemappincolor/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func addAnnotation(CLLocationCoordinate2D, with: UIImage?, centerOffset: CGPoint)](wkinterfacemap/addannotation(_:with:centeroffset:).md)
+### Managing Map Annotations
+- [func addAnnotation(CLLocationCoordinate2D, with: UIImage?, centerOffset: CGPoint)](./wkinterfacemap/addannotation%28_,with,centeroffset%29.md)
   Displays the specified image on top of the map.
-- [func addAnnotation(CLLocationCoordinate2D, withImageNamed: String?, centerOffset: CGPoint)](wkinterfacemap/addannotation(_:withimagenamed:centeroffset:).md)
+- [func addAnnotation(CLLocationCoordinate2D, withImageNamed: String?, centerOffset: CGPoint)](./wkinterfacemap/addannotation%28_,withimagenamed,centeroffset%29.md)
   Displays an image from the WatchKit app’s bundle on top of the map.
-- [func addAnnotation(CLLocationCoordinate2D, with: WKInterfaceMapPinColor)](wkinterfacemap/addannotation(_:with:).md)
+- [func addAnnotation(CLLocationCoordinate2D, with: WKInterfaceMapPinColor)](./wkinterfacemap/addannotation%28_,with%29.md)
   Adds a pin to the map at the specified location.
-- [func removeAllAnnotations()](wkinterfacemap/removeallannotations.md)
+- [func removeAllAnnotations()](./wkinterfacemap/removeallannotations%28%29.md)
   Removes all annotations from the map.
 
 

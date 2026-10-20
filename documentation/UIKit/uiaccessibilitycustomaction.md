@@ -1,7 +1,8 @@
 # UIAccessibilityCustomAction
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A custom action to perform on an accessible object.
 
@@ -9,7 +10,7 @@ A custom action to perform on an accessible object.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,74 +20,79 @@ A custom action to perform on an accessible object.
 class UIAccessibilityCustomAction
 ```
 
+```objc
+@interface UIAccessibilityCustomAction : NSObject
+```
+
 #### Overview
 
 Apps that support custom actions can create instances of this class, specifying the user-readable name of the action and the object and selector to use when performing the action. Assistive apps display custom actions in response to specific user cues. For example, VoiceOver lets users access actions quickly using the Actions rotor.
 
-After creating an instance of this class, add it to the [`accessibilityCustomActions`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/accessibilitycustomactions) property of an appropriate accessible object.
+After creating an instance of this class, add it to the [`accessibilityCustomActions`](../ObjectiveC/nsobject-swift.class/accessibilitycustomactions.md) property of an appropriate accessible object.
 
 ## Topics
 
 ### Creating a custom action
-- [init(name: String, actionHandler: UIAccessibilityCustomAction.Handler)](uiaccessibilitycustomaction/init(name:actionhandler:).md)
+- [init(name: String, actionHandler: UIAccessibilityCustomAction.Handler)](./uiaccessibilitycustomaction/init%28name,actionhandler%29.md)
   Creates a custom action object with the specified name and action handler.
-- [init(name: String, target: Any?, selector: Selector)](uiaccessibilitycustomaction/init(name:target:selector:).md)
+- [init(name: String, target: Any?, selector: Selector)](./uiaccessibilitycustomaction/init%28name,target,selector%29.md)
   Creates a custom action object with the specified name, target, and selector.
-- [init(name: String, image: UIImage?, actionHandler: UIAccessibilityCustomAction.Handler)](uiaccessibilitycustomaction/init(name:image:actionhandler:).md)
+- [init(name: String, image: UIImage?, actionHandler: UIAccessibilityCustomAction.Handler)](./uiaccessibilitycustomaction/init%28name,image,actionhandler%29.md)
   Creates a custom action object with the specified name, image, and action handler.
-- [init(name: String, image: UIImage?, target: Any?, selector: Selector)](uiaccessibilitycustomaction/init(name:image:target:selector:).md)
+- [init(name: String, image: UIImage?, target: Any?, selector: Selector)](./uiaccessibilitycustomaction/init%28name,image,target,selector%29.md)
   Creates a custom action object with the specified name, image, target, and selector.
-- [init(attributedName: NSAttributedString, actionHandler: UIAccessibilityCustomAction.Handler)](uiaccessibilitycustomaction/init(attributedname:actionhandler:).md)
+- [init(attributedName: NSAttributedString, actionHandler: UIAccessibilityCustomAction.Handler)](./uiaccessibilitycustomaction/init%28attributedname,actionhandler%29.md)
   Creates a custom action object with the specified attributed name and action handler.
-- [init(attributedName: NSAttributedString, target: Any?, selector: Selector)](uiaccessibilitycustomaction/init(attributedname:target:selector:).md)
+- [init(attributedName: NSAttributedString, target: Any?, selector: Selector)](./uiaccessibilitycustomaction/init%28attributedname,target,selector%29.md)
   Creates a custom action object with the specified attributed name, target, and selector.
-- [init(attributedName: NSAttributedString, image: UIImage?, actionHandler: UIAccessibilityCustomAction.Handler)](uiaccessibilitycustomaction/init(attributedname:image:actionhandler:).md)
+- [init(attributedName: NSAttributedString, image: UIImage?, actionHandler: UIAccessibilityCustomAction.Handler)](./uiaccessibilitycustomaction/init%28attributedname,image,actionhandler%29.md)
   Creates a custom action object with the specified attributed name, image, and action handler.
-- [init(attributedName: NSAttributedString, image: UIImage?, target: Any?, selector: Selector)](uiaccessibilitycustomaction/init(attributedname:image:target:selector:).md)
+- [init(attributedName: NSAttributedString, image: UIImage?, target: Any?, selector: Selector)](./uiaccessibilitycustomaction/init%28attributedname,image,target,selector%29.md)
   Creates a custom action object with the specified attributed name, image, target, and selector.
 ### Accessing the action parameters
-- [var name: String](uiaccessibilitycustomaction/name.md)
+- [var name: String](./uiaccessibilitycustomaction/name.md)
   The localized name of the action.
-- [var attributedName: NSAttributedString](uiaccessibilitycustomaction/attributedname.md)
+- [var attributedName: NSAttributedString](./uiaccessibilitycustomaction/attributedname.md)
   The localized name of the action as an attributed string.
-- [var image: UIImage?](uiaccessibilitycustomaction/image.md)
+- [var image: UIImage?](./uiaccessibilitycustomaction/image.md)
   An image that represents the action in assistive apps.
-- [var actionHandler: UIAccessibilityCustomAction.Handler?](uiaccessibilitycustomaction/actionhandler.md)
+- [var actionHandler: UIAccessibilityCustomAction.Handler?](./uiaccessibilitycustomaction/actionhandler.md)
   A handler to perform for the action.
-- [var target: AnyObject?](uiaccessibilitycustomaction/target.md)
+- [var target: AnyObject?](./uiaccessibilitycustomaction/target.md)
   The object that performs the action.
-- [var selector: Selector](uiaccessibilitycustomaction/selector.md)
+- [var selector: Selector](./uiaccessibilitycustomaction/selector.md)
   The method that performs the action.
-- [UIAccessibilityCustomAction.Handler](uiaccessibilitycustomaction/handler.md)
+- [UIAccessibilityCustomAction.Handler](./uiaccessibilitycustomaction/handler.md)
   A closure type that defines a handler to perform for an action.
 ### Type Properties
-- [class let editCategory: String](uiaccessibilitycustomaction/editcategory.md)
+- [class let editCategory: String](./uiaccessibilitycustomaction/editcategory.md)
   A constant that an app specifies through the category property on a UIKit accessibility custom action.
-- [class let editCategory: String](uiaccessibilitycustomaction/editcategory.md)
+- [class let editCategory: String](./uiaccessibilitycustomaction/editcategory.md)
   A constant that an app specifies through the category property on a UIKit accessibility custom action.
 ### Instance Properties
-- [var category: String?](uiaccessibilitycustomaction/category.md)
+- [var category: String?](./uiaccessibilitycustomaction/category.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [UIAccessibilityAction](../objectivec/uiaccessibilityaction.md)
+### Actions
+- [UIAccessibilityAction](../ObjectiveC/uiaccessibilityaction.md)
   A set of methods that accessibility elements can use to support specific actions.
-- [UIAccessibilityCustomAction.Handler](uiaccessibilitycustomaction/handler.md)
+- [UIAccessibilityCustomAction.Handler](./uiaccessibilitycustomaction/handler.md)
   A closure type that defines a handler to perform for an action.
-- [Delivering an exceptional accessibility experience](../accessibility/delivering_an_exceptional_accessibility_experience.md)
+- [Delivering an exceptional accessibility experience](../Accessibility/delivering_an_exceptional_accessibility_experience.md)
   Make improvements to your app’s interaction model to support assistive technologies such as VoiceOver.
 
 

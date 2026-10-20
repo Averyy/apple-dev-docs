@@ -1,7 +1,8 @@
 # append(contentsOf:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the contents of a PencilKit drawing on top of this paper.
 
@@ -24,7 +25,8 @@ mutating func append(contentsOf drawing: PKDrawing)
 
 ## See Also
 
-- [func append(contentsOf: PaperMarkup)](papermarkup/append(contentsof:)-5668.md)
+### Appending content
+- [func append(contentsOf: PaperMarkup)](./append%28contentsof%29-5668.md)
   Adds the contents of a data model on top of this paper.
 
 

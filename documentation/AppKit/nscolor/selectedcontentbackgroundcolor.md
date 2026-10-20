@@ -1,7 +1,8 @@
 # selectedContentBackgroundColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The color to use for the background of selected and emphasized content.
 
@@ -14,13 +15,18 @@ The color to use for the background of selected and emphasized content.
 class var selectedContentBackgroundColor: NSColor { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSColor * selectedContentBackgroundColor;
+```
+
 ## See Also
 
-- [class var linkColor: NSColor](nscolor/linkcolor.md)
+### Content colors
+- [class var linkColor: NSColor](./linkcolor.md)
   The color to use for links.
-- [class var separatorColor: NSColor](nscolor/separatorcolor.md)
+- [class var separatorColor: NSColor](./separatorcolor.md)
   The color to use for separators between different sections of content.
-- [class var unemphasizedSelectedContentBackgroundColor: NSColor](nscolor/unemphasizedselectedcontentbackgroundcolor.md)
+- [class var unemphasizedSelectedContentBackgroundColor: NSColor](./unemphasizedselectedcontentbackgroundcolor.md)
   The color to use for selected and unemphasized content.
 
 

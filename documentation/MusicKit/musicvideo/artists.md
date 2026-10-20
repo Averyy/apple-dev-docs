@@ -1,7 +1,8 @@
 # artists
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The music video’s associated artists.
 

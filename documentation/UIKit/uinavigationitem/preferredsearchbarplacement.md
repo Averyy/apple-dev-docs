@@ -1,7 +1,8 @@
 # preferredSearchBarPlacement
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred placement of the search bar in the navigation bar.
 
@@ -17,31 +18,36 @@ The preferred placement of the search bar in the navigation bar.
 var preferredSearchBarPlacement: UINavigationItem.SearchBarPlacement { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) UINavigationItemSearchBarPlacement preferredSearchBarPlacement;
+```
+
 ## Mentions
 
-- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
+- [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
 #### Discussion
 
-Use this property to specify the search bar placement. If the value of the property is [`UINavigationItem.SearchBarPlacement.automatic`](uinavigationitem/searchbarplacement-swift.enum/automatic.md), use the [`searchBarPlacement`](uinavigationitem/searchbarplacement-swift.property.md) property to determine the actual placement. The default value of this property is [`UINavigationItem.SearchBarPlacement.automatic`](uinavigationitem/searchbarplacement-swift.enum/automatic.md).
+Use this property to specify the search bar placement. If the value of the property is [`UINavigationItem.SearchBarPlacement.automatic`](./searchbarplacement-swift.enum/automatic.md), use the [`searchBarPlacement`](./searchbarplacement-swift.property.md) property to determine the actual placement. The default value of this property is [`UINavigationItem.SearchBarPlacement.automatic`](./searchbarplacement-swift.enum/automatic.md).
 
-This property only applies when the navigation item has a [`searchController`](uinavigationitem/searchcontroller.md).
+This property only applies when the navigation item has a [`searchController`](./searchcontroller.md).
 
 ## See Also
 
-- [var searchController: UISearchController?](uinavigationitem/searchcontroller.md)
+### Integrating search into your interface
+- [var searchController: UISearchController?](./searchcontroller.md)
   The search controller to integrate into your navigation interface.
-- [var hidesSearchBarWhenScrolling: Bool](uinavigationitem/hidessearchbarwhenscrolling.md)
+- [var hidesSearchBarWhenScrolling: Bool](./hidessearchbarwhenscrolling.md)
   A Boolean value that indicates whether the app hides the integrated search bar when scrolling any underlying content.
-- [var searchBarPlacement: UINavigationItem.SearchBarPlacement](uinavigationitem/searchbarplacement-swift.property.md)
+- [var searchBarPlacement: UINavigationItem.SearchBarPlacement](./searchbarplacement-swift.property.md)
   The placement of the search bar in the navigation bar.
-- [UINavigationItem.SearchBarPlacement](uinavigationitem/searchbarplacement-swift.enum.md)
+- [UINavigationItem.SearchBarPlacement](./searchbarplacement-swift.enum.md)
   Constants that determine where the search bar appears in the navigation bar.
-- [var searchBarPlacementAllowsExternalIntegration: Bool](uinavigationitem/searchbarplacementallowsexternalintegration.md)
+- [var searchBarPlacementAllowsExternalIntegration: Bool](./searchbarplacementallowsexternalintegration.md)
   A Boolean value that indicates whether an alternate object may integrate the search bar somewhere other than the navigation bar or toolbar.
-- [var searchBarPlacementAllowsToolbarIntegration: Bool](uinavigationitem/searchbarplacementallowstoolbarintegration.md)
+- [var searchBarPlacementAllowsToolbarIntegration: Bool](./searchbarplacementallowstoolbarintegration.md)
   A Boolean value that indicates whether the system can place the search bar among other toolbar items on iPhone.
-- [var searchBarPlacementBarButtonItem: UIBarButtonItem](uinavigationitem/searchbarplacementbarbuttonitem.md)
+- [var searchBarPlacementBarButtonItem: UIBarButtonItem](./searchbarplacementbarbuttonitem.md)
   An item you use to control the placement of the search bar in a toolbar on iPhone.
 
 

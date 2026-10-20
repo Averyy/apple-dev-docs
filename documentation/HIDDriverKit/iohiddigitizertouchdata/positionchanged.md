@@ -1,37 +1,39 @@
 # positionChanged
 
 **Framework**: HIDDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A single-bit Boolean that indicates whether the x or y position changed since the last event was dispatched.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 uint32_t positionChanged;
 ```
 
 ## See Also
 
-- [identifier](iohiddigitizertouchdata/identifier.md)
+### Getting the Touch Data
+- [identifier](./identifier.md)
   A unique contact identifier.
-- [x](iohiddigitizertouchdata/x.md)
+- [x](./x.md)
   An x-coordinate value in the range `0.0` to `1.0`.
-- [y](iohiddigitizertouchdata/y.md)
+- [y](./y.md)
   A y-coordinate value in the range `0.0` to `1.0`.
-- [inRange](iohiddigitizertouchdata/inrange.md)
+- [inRange](./inrange.md)
   A single-bit Boolean that indicates whether the finger is in range.
-- [touch](iohiddigitizertouchdata/touch.md)
+- [touch](./touch.md)
   A single-bit Boolean that indicates whether the finger is in contact with the surface of the digitizer.
-- [touchValid](iohiddigitizertouchdata/touchvalid.md)
+- [touchValid](./touchvalid.md)
   A single-bit Boolean that indicates whether the touch contact was intended.
-- [touchChanged](iohiddigitizertouchdata/touchchanged.md)
+- [touchChanged](./touchchanged.md)
   A single-bit Boolean that indicates whether the touch variable changed since the last event was dispatched.
-- [rangeChanged](iohiddigitizertouchdata/rangechanged.md)
+- [rangeChanged](./rangechanged.md)
   A single-bit Boolean that indicates whether the range variable changed since the last event was dispatched.
 
 

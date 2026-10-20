@@ -1,23 +1,28 @@
 # CTRun
 
 **Framework**: Core Text  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A glyph run.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class CTRun
+```
+
+```c
+typedef const struct __CTRun * CTRunRef;
 ```
 
 #### Overview
@@ -29,80 +34,81 @@ The typesetter creates glyph runs as it produces lines from character strings, a
 ## Topics
 
 ### Getting Glyph Run Data
-- [func CTRunGetGlyphCount(CTRun) -> CFIndex](ctrungetglyphcount(_:).md)
+- [func CTRunGetGlyphCount(CTRun) -> CFIndex](./ctrungetglyphcount%28_%29.md)
   Gets the glyph count for the run.
-- [func CTRunGetAttributes(CTRun) -> CFDictionary](ctrungetattributes(_:).md)
+- [func CTRunGetAttributes(CTRun) -> CFDictionary](./ctrungetattributes%28_%29.md)
   Returns the attribute dictionary that was used to create the glyph run.
-- [func CTRunGetStatus(CTRun) -> CTRunStatus](ctrungetstatus(_:).md)
+- [func CTRunGetStatus(CTRun) -> CTRunStatus](./ctrungetstatus%28_%29.md)
   Returns the run’s status.
-- [func CTRunGetGlyphsPtr(CTRun) -> UnsafePointer<CGGlyph>?](ctrungetglyphsptr(_:).md)
+- [func CTRunGetGlyphsPtr(CTRun) -> UnsafePointer<CGGlyph>?](./ctrungetglyphsptr%28_%29.md)
   Returns a direct pointer for the glyph array stored in the run.
-- [func CTRunGetGlyphs(CTRun, CFRange, UnsafeMutablePointer<CGGlyph>)](ctrungetglyphs(_:_:_:).md)
+- [func CTRunGetGlyphs(CTRun, CFRange, UnsafeMutablePointer<CGGlyph>)](./ctrungetglyphs%28_,_,_%29.md)
   Copies a range of glyphs into a user-provided buffer.
-- [func CTRunGetPositionsPtr(CTRun) -> UnsafePointer<CGPoint>?](ctrungetpositionsptr(_:).md)
+- [func CTRunGetPositionsPtr(CTRun) -> UnsafePointer<CGPoint>?](./ctrungetpositionsptr%28_%29.md)
   Returns a direct pointer for the glyph position array stored in the run.
-- [func CTRunGetPositions(CTRun, CFRange, UnsafeMutablePointer<CGPoint>)](ctrungetpositions(_:_:_:).md)
+- [func CTRunGetPositions(CTRun, CFRange, UnsafeMutablePointer<CGPoint>)](./ctrungetpositions%28_,_,_%29.md)
   Copies a range of glyph positions into a user-provided buffer.
-- [func CTRunGetAdvancesPtr(CTRun) -> UnsafePointer<CGSize>?](ctrungetadvancesptr(_:).md)
+- [func CTRunGetAdvancesPtr(CTRun) -> UnsafePointer<CGSize>?](./ctrungetadvancesptr%28_%29.md)
   Returns a direct pointer for the glyph advance array stored in the run.
-- [func CTRunGetAdvances(CTRun, CFRange, UnsafeMutablePointer<CGSize>)](ctrungetadvances(_:_:_:).md)
+- [func CTRunGetAdvances(CTRun, CFRange, UnsafeMutablePointer<CGSize>)](./ctrungetadvances%28_,_,_%29.md)
   Copies a range of glyph advances into a user-provided buffer.
-- [func CTRunGetStringIndicesPtr(CTRun) -> UnsafePointer<CFIndex>?](ctrungetstringindicesptr(_:).md)
+- [func CTRunGetStringIndicesPtr(CTRun) -> UnsafePointer<CFIndex>?](./ctrungetstringindicesptr%28_%29.md)
   Returns a direct pointer for the string indices stored in the run.
-- [func CTRunGetStringIndices(CTRun, CFRange, UnsafeMutablePointer<CFIndex>)](ctrungetstringindices(_:_:_:).md)
+- [func CTRunGetStringIndices(CTRun, CFRange, UnsafeMutablePointer<CFIndex>)](./ctrungetstringindices%28_,_,_%29.md)
   Copies a range of string indices into a user-provided buffer.
-- [func CTRunGetStringRange(CTRun) -> CFRange](ctrungetstringrange(_:).md)
+- [func CTRunGetStringRange(CTRun) -> CFRange](./ctrungetstringrange%28_%29.md)
   Gets the range of characters that originally spawned the glyphs in the run.
 ### Measuring the Glyph Run
-- [func CTLineGetBoundsWithOptions(CTLine, CTLineBoundsOptions) -> CGRect](ctlinegetboundswithoptions(_:_:).md)
+- [func CTLineGetBoundsWithOptions(CTLine, CTLineBoundsOptions) -> CGRect](./ctlinegetboundswithoptions%28_,_%29.md)
   Calculates the bounds for a line.
-- [func CTRunGetTypographicBounds(CTRun, CFRange, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?) -> Double](ctrungettypographicbounds(_:_:_:_:_:).md)
+- [func CTRunGetTypographicBounds(CTRun, CFRange, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?) -> Double](./ctrungettypographicbounds%28_,_,_,_,_%29.md)
   Gets the typographic bounds of the run.
-- [func CTRunGetImageBounds(CTRun, CGContext?, CFRange) -> CGRect](ctrungetimagebounds(_:_:_:).md)
+- [func CTRunGetImageBounds(CTRun, CGContext?, CFRange) -> CGRect](./ctrungetimagebounds%28_,_,_%29.md)
   Calculates the image bounds for a glyph range.
-- [func CTRunGetBaseAdvancesAndOrigins(CTRun, CFRange, UnsafeMutablePointer<CGSize>?, UnsafeMutablePointer<CGPoint>?)](ctrungetbaseadvancesandorigins(_:_:_:_:).md)
+- [func CTRunGetBaseAdvancesAndOrigins(CTRun, CFRange, UnsafeMutablePointer<CGSize>?, UnsafeMutablePointer<CGPoint>?)](./ctrungetbaseadvancesandorigins%28_,_,_,_%29.md)
   Copies a range of base advances and origins into user-provided buffers.
 ### Drawing the Glyph Run
-- [func CTRunDraw(CTRun, CGContext, CFRange)](ctrundraw(_:_:_:).md)
+- [func CTRunDraw(CTRun, CGContext, CFRange)](./ctrundraw%28_,_,_%29.md)
   Draws a complete run or part of one.
-- [func CTRunGetTextMatrix(CTRun) -> CGAffineTransform](ctrungettextmatrix(_:).md)
+- [func CTRunGetTextMatrix(CTRun) -> CGAffineTransform](./ctrungettextmatrix%28_%29.md)
   Returns the text matrix needed to draw this run.
 ### Getting the Type Identifier
-- [func CTRunGetTypeID() -> CFTypeID](ctrungettypeid().md)
+- [func CTRunGetTypeID() -> CFTypeID](./ctrungettypeid%28%29.md)
   Returns the Core Foundation type identifier of the run object.
 ### Constants
-- [struct CTRunStatus](ctrunstatus.md)
+- [struct CTRunStatus](./ctrunstatus.md)
   A bitfield that represents the disposition of the run.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [class CTFont](ctfont.md)
+### Opaque Types
+- [class CTFont](./ctfont.md)
   A font object.
-- [class CTFontCollection](ctfontcollection.md)
+- [class CTFontCollection](./ctfontcollection.md)
   A font collection.
-- [class CTFontDescriptor](ctfontdescriptor.md)
+- [class CTFontDescriptor](./ctfontdescriptor.md)
   A font descriptor.
-- [class CTFrame](ctframe.md)
+- [class CTFrame](./ctframe.md)
   A frame.
-- [class CTFramesetter](ctframesetter.md)
+- [class CTFramesetter](./ctframesetter.md)
   Generate text frames.
-- [class CTGlyphInfo](ctglyphinfo.md)
+- [class CTGlyphInfo](./ctglyphinfo.md)
   Override a font’s specified mapping from Unicode to the glyph ID.
-- [class CTLine](ctline.md)
+- [class CTLine](./ctline.md)
   A line of text.
-- [class CTParagraphStyle](ctparagraphstyle.md)
+- [class CTParagraphStyle](./ctparagraphstyle.md)
   Paragraph or ruler attributes in an attributed string.
-- [class CTRunDelegate](ctrundelegate.md)
+- [class CTRunDelegate](./ctrundelegate.md)
   A run delegate.
-- [class CTTextTab](cttexttab.md)
+- [class CTTextTab](./cttexttab.md)
   A tab in a paragraph style, storing an alignment type and location.
-- [class CTTypesetter](cttypesetter.md)
+- [class CTTypesetter](./cttypesetter.md)
   A typesetter which performs line layout.
 
 

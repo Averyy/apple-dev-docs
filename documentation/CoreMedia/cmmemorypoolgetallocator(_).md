@@ -1,7 +1,8 @@
 # CMMemoryPoolGetAllocator(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the allocator for the memory pool.
 
@@ -20,6 +21,10 @@ Returns the allocator for the memory pool.
 func CMMemoryPoolGetAllocator(_ pool: CMMemoryPool) -> CFAllocator
 ```
 
+```c
+extern CFAllocatorRefCMMemoryPoolGetAllocator(CMMemoryPoolRef pool);
+```
+
 #### Return Value
 
 The memory pool’s allocator.
@@ -30,9 +35,10 @@ The memory pool’s allocator.
 
 ## See Also
 
-- [func CMMemoryPoolFlush(CMMemoryPool)](cmmemorypoolflush(_:).md)
+### Managing a Memory Pool
+- [func CMMemoryPoolFlush(CMMemoryPool)](./cmmemorypoolflush%28_%29.md)
   Deallocates all memory the pool holds.
-- [func CMMemoryPoolInvalidate(CMMemoryPool)](cmmemorypoolinvalidate(_:).md)
+- [func CMMemoryPoolInvalidate(CMMemoryPool)](./cmmemorypoolinvalidate%28_%29.md)
   Invalidates the memory pool, which causes its allocator to stop recycling memory.
 
 

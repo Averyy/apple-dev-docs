@@ -1,7 +1,8 @@
 # readAttributeFloatDouble(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeFloatDouble(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeFloatDouble() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeFloatDoubleWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

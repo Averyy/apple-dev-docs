@@ -1,7 +1,8 @@
 # unitWidth
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the unit and the spacing between the value and the unit.
 
@@ -22,7 +23,8 @@ var unitWidth: Duration.UnitsFormatStyle.UnitWidth
 
 ## See Also
 
-- [Duration.UnitsFormatStyle.UnitWidth](duration/unitsformatstyle/unitwidth-swift.struct.md)
+### Working with unit widths
+- [Duration.UnitsFormatStyle.UnitWidth](./unitwidth-swift.struct.md)
   The width of a unit to use in formatting a duration.
 
 

@@ -1,7 +1,8 @@
 # controller(_:statusUpdate:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 optional func controller(_ controller: MTRDeviceController, statusUpdate status: MTRCommissioningStatus)
+```
+
+```objc
+- (void) controller:(MTRDeviceController *) controller statusUpdate:(MTRCommissioningStatus) status;
 ```
 
 

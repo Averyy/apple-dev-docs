@@ -1,11 +1,12 @@
 # kAudioStereoPanControlPropertyPanningChannels
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,9 +14,14 @@
 var kAudioStereoPanControlPropertyPanningChannels: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioStereoPanControlPropertyPanningChannels
+```
+
 ## See Also
 
-- [var kAudioStereoPanControlPropertyValue: AudioObjectPropertySelector](kaudiostereopancontrolpropertyvalue.md)
+### Constants
+- [var kAudioStereoPanControlPropertyValue: AudioObjectPropertySelector](./kaudiostereopancontrolpropertyvalue.md)
 
 
 ---

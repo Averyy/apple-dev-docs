@@ -1,7 +1,8 @@
 # MKCircleRenderer
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The visual representation of a circular overlay.
 
@@ -19,41 +20,46 @@ The visual representation of a circular overlay.
 class MKCircleRenderer
 ```
 
+```objc
+@interface MKCircleRenderer : MKOverlayPathRenderer
+```
+
 #### Overview
 
 This renderer fills and strokes the circular region that the overlay object represents. You can change the color and other drawing attributes of the circle by modifying the properties it inherits from the main class. You typically use this class as-is and don’t subclass it.
 
-You create an instance of this class in your map view delegate’s [`mapView(_:rendererFor:)`](mkmapviewdelegate/mapview(_:rendererfor:).md) method.
+You create an instance of this class in your map view delegate’s [`mapView(_:rendererFor:)`](./mkmapviewdelegate/mapview%28_,rendererfor%29.md) method.
 
 ## Topics
 
 ### Creating a circle renderer
-- [init(circle: MKCircle)](mkcirclerenderer/init(circle:).md)
+- [init(circle: MKCircle)](./mkcirclerenderer/init%28circle%29.md)
   Creates a new overlay view using the specified circle overlay object.
 ### Accessing the overlay object
-- [var circle: MKCircle](mkcirclerenderer/circle.md)
+- [var circle: MKCircle](./mkcirclerenderer/circle.md)
   The circle overlay object that contains the information for drawing the overlay.
 ### Accessing the stroke
-- [var strokeStart: CGFloat](mkcirclerenderer/strokestart.md)
+- [var strokeStart: CGFloat](./mkcirclerenderer/strokestart.md)
   The unit distance along the circle where the stroke starts.
-- [var strokeEnd: CGFloat](mkcirclerenderer/strokeend.md)
+- [var strokeEnd: CGFloat](./mkcirclerenderer/strokeend.md)
   The unit distance along the circle where the stroke ends.
 
 ## Relationships
 
 ### Inherits From
-- [MKOverlayPathRenderer](mkoverlaypathrenderer.md)
+- [MKOverlayPathRenderer](./mkoverlaypathrenderer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKCircle](mkcircle.md)
+### Circular overlays
+- [class MKCircle](./mkcircle.md)
   A circular overlay with a configurable radius that you center on a geographic coordinate.
 
 

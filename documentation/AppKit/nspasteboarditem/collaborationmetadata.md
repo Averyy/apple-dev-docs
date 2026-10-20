@@ -1,7 +1,8 @@
 # collaborationMetadata
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A model object you use for conveying data during a collaboration.
 
@@ -13,6 +14,10 @@ A model object you use for conveying data during a collaboration.
 ```swift
 @NSCopying
 var collaborationMetadata: SWCollaborationMetadata? { get set }
+```
+
+```objc
+@property (copy, readwrite, nullable) SWCollaborationMetadata * collaborationMetadata;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The options for resources created by the heap.
@@ -20,21 +21,26 @@ The options for resources created by the heap.
 var resourceOptions: MTLResourceOptions { get }
 ```
 
+```objc
+@property (readonly) MTLResourceOptions resourceOptions;
+```
+
 #### Discussion
 
-The value of this property aggregates the values of [`storageMode`](mtlheap/storagemode.md), [`cpuCacheMode`](mtlheap/cpucachemode.md), and [`hazardTrackingMode`](mtlheap/hazardtrackingmode.md).
+The value of this property aggregates the values of [`storageMode`](./storagemode.md), [`cpuCacheMode`](./cpucachemode.md), and [`hazardTrackingMode`](./hazardtrackingmode.md).
 
 ## See Also
 
-- [var device: any MTLDevice](mtlheap/device.md)
+### Checking a heap’s permanent configuration
+- [var device: any MTLDevice](./device.md)
   The device object that created the heap.
-- [var type: MTLHeapType](mtlheap/type.md)
+- [var type: MTLHeapType](./type.md)
   The heap’s type.
-- [var storageMode: MTLStorageMode](mtlheap/storagemode.md)
+- [var storageMode: MTLStorageMode](./storagemode.md)
   The heap’s storage mode.
-- [var cpuCacheMode: MTLCPUCacheMode](mtlheap/cpucachemode.md)
+- [var cpuCacheMode: MTLCPUCacheMode](./cpucachemode.md)
   The heap’s CPU cache mode.
-- [var hazardTrackingMode: MTLHazardTrackingMode](mtlheap/hazardtrackingmode.md)
+- [var hazardTrackingMode: MTLHazardTrackingMode](./hazardtrackingmode.md)
   The heap’s hazard tracking mode.
 
 

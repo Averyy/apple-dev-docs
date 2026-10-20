@@ -1,7 +1,8 @@
 # largeRoomTreated
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The reverb of a large room with acoustical treatment.
 

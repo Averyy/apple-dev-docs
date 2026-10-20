@@ -1,7 +1,8 @@
 # sourceFormatHint
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A hint about the format of the sample buffers to append to the input.
 
@@ -19,6 +20,10 @@ A hint about the format of the sample buffers to append to the input.
 var sourceFormatHint: CMFormatDescription? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CMFormatDescriptionRef sourceFormatHint;
+```
+
 #### Discussion
 
 An input may use this hint to fill in missing output settings or perform additional upfront validation of samples.
@@ -27,9 +32,10 @@ An input may use this hint to fill in missing output settings or perform additio
 
 ## See Also
 
-- [var mediaType: AVMediaType](avassetwriterinput/mediatype.md)
+### Inspecting an input
+- [var mediaType: AVMediaType](./mediatype.md)
   The media type of the samples that the input accepts.
-- [var outputSettings: [String : Any]?](avassetwriterinput/outputsettings.md)
+- [var outputSettings: [String : Any]?](./outputsettings.md)
   The settings to use for encoding media data you append to the output.
 
 

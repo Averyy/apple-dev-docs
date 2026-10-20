@@ -1,7 +1,8 @@
 # hashValue
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hash value.
 
@@ -20,6 +21,8 @@ The hash value.
 var hashValue: Int { get }
 ```
 
+Available when `Success` conforms to `Sendable` and `Failure` conforms to `Error`.
+
 #### Discussion
 
 Hash values are not guaranteed to be equal across different executions of your program. Do not save hash values to use during a future execution.
@@ -28,11 +31,12 @@ Hash values are not guaranteed to be equal across different executions of your p
 
 ## See Also
 
-- [static func == (Task<Success, Failure>, Task<Success, Failure>) -> Bool](task/==(_:_:).md)
+### Comparing Tasks
+- [static func == (Task<Success, Failure>, Task<Success, Failure>) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (borrowing Self, borrowing Self) -> Bool](task/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [func hash(into: inout Hasher)](task/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

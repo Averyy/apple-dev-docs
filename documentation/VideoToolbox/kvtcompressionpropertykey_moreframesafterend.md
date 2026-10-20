@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_MoreFramesAfterEnd
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value indicating whether and how a compression session concatenates frames with other compressed frames to form a longer series.
 
@@ -19,6 +20,10 @@ A Boolean value indicating whether and how a compression session concatenates fr
 let kVTCompressionPropertyKey_MoreFramesAfterEnd: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_MoreFramesAfterEnd;
+```
+
 #### Discussion
 
 This value is `true` if frames compressed in a separate session will be concatenated following the end of the current session. This value is `false` if the current session is a stand-alone session, or if this session will encode the last segment of a multi-segment compression.
@@ -27,24 +32,25 @@ The default value is `false`.
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_AverageBitRate: CFString](kvtcompressionpropertykey_averagebitrate.md)
+### Rate Control
+- [let kVTCompressionPropertyKey_AverageBitRate: CFString](./kvtcompressionpropertykey_averagebitrate.md)
   The long-term desired average bit rate in bits per second.
-- [let kVTCompressionPropertyKey_ConstantBitRate: CFString](kvtcompressionpropertykey_constantbitrate.md)
+- [let kVTCompressionPropertyKey_ConstantBitRate: CFString](./kvtcompressionpropertykey_constantbitrate.md)
   Requires that the encoder use a Constant Bit Rate algorithm.
-- [let kVTCompressionPropertyKey_DataRateLimits: CFString](kvtcompressionpropertykey_dataratelimits.md)
+- [let kVTCompressionPropertyKey_DataRateLimits: CFString](./kvtcompressionpropertykey_dataratelimits.md)
   Zero, one, or two hard limits on data rate.
-- [let kVTCompressionPropertyKey_EstimatedAverageBytesPerFrame: CFString](kvtcompressionpropertykey_estimatedaveragebytesperframe.md)
+- [let kVTCompressionPropertyKey_EstimatedAverageBytesPerFrame: CFString](./kvtcompressionpropertykey_estimatedaveragebytesperframe.md)
   An estimate of the expected size in bytes of a single encoded frame based on the current configuration.
-- [let kVTCompressionPropertyKey_MoreFramesBeforeStart: CFString](kvtcompressionpropertykey_moreframesbeforestart.md)
+- [let kVTCompressionPropertyKey_MoreFramesBeforeStart: CFString](./kvtcompressionpropertykey_moreframesbeforestart.md)
   A Boolean value that indicates whether and how a compression session concatenates frames with other compressed frames to form a longer series.
-- [let kVTCompressionPropertyKey_Quality: CFString](kvtcompressionpropertykey_quality.md)
+- [let kVTCompressionPropertyKey_Quality: CFString](./kvtcompressionpropertykey_quality.md)
   The desired compression quality.
-- [let kVTCompressionPropertyKey_TargetQualityForAlpha: CFString](kvtcompressionpropertykey_targetqualityforalpha.md)
+- [let kVTCompressionPropertyKey_TargetQualityForAlpha: CFString](./kvtcompressionpropertykey_targetqualityforalpha.md)
   The target quality to use for encoding the alpha channel.
-- [let kVTCompressionPropertyKey_VariableBitRate: CFString](kvtcompressionpropertykey_variablebitrate.md)
-- [let kVTCompressionPropertyKey_VBVBufferDuration: CFString](kvtcompressionpropertykey_vbvbufferduration.md)
-- [let kVTCompressionPropertyKey_VBVInitialDelayPercentage: CFString](kvtcompressionpropertykey_vbvinitialdelaypercentage.md)
-- [let kVTCompressionPropertyKey_VBVMaxBitRate: CFString](kvtcompressionpropertykey_vbvmaxbitrate.md)
+- [let kVTCompressionPropertyKey_VariableBitRate: CFString](./kvtcompressionpropertykey_variablebitrate.md)
+- [let kVTCompressionPropertyKey_VBVBufferDuration: CFString](./kvtcompressionpropertykey_vbvbufferduration.md)
+- [let kVTCompressionPropertyKey_VBVInitialDelayPercentage: CFString](./kvtcompressionpropertykey_vbvinitialdelaypercentage.md)
+- [let kVTCompressionPropertyKey_VBVMaxBitRate: CFString](./kvtcompressionpropertykey_vbvmaxbitrate.md)
 
 
 ---

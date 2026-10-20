@@ -1,7 +1,8 @@
 # BindableData
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An opaque base protocol for bindable data objects.
 
@@ -11,7 +12,7 @@ An opaque base protocol for bindable data objects.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,16 +22,17 @@ protocol BindableData
 
 #### Overview
 
-The templated bindable-value object, [`BindableValue`](bindablevalue.md) `<T>`, determines that the value you choose for type `T` adopts this protocol. The types that the framework accepts are: [`Transform`](transform.md), [`Float`](https://developer.apple.com/documentation/swift/float), [`Double`](https://developer.apple.com/documentation/swift/double), [`SIMD2`](https://developer.apple.com/documentation/swift/simd2), [`SIMD3`](https://developer.apple.com/documentation/swift/simd3), [`SIMD4`](https://developer.apple.com/documentation/swift/simd4), [`simd_quatf`](https://developer.apple.com/documentation/simd/simd_quatf), [`Bool`](https://developer.apple.com/documentation/swift/bool), [`Int`](https://developer.apple.com/documentation/swift/int), and [`String`](https://developer.apple.com/documentation/swift/string).
+The templated bindable-value object, [`BindableValue`](./bindablevalue.md) `<T>`, determines that the value you choose for type `T` adopts this protocol. The types that the framework accepts are: [`Transform`](./transform.md), [`Float`](../Swift/float.md), [`Double`](../Swift/double.md), [`SIMD2`](../Swift/simd2.md), [`SIMD3`](../Swift/simd3.md), [`SIMD4`](../Swift/simd4.md), [`simd_quatf`](https://developer.apple.com/documentation/simd/simd_quatf), [`Bool`](../Swift/bool.md), [`Int`](../Swift/int.md), and [`String`](../Swift/string.md).
 
 ## Relationships
 
 ### Conforming Types
-- [Transform](transform.md)
+- [Transform](./transform.md)
 
 ## See Also
 
-- [protocol AnimatableData](animatabledata.md)
+### Compliance-related protocols
+- [protocol AnimatableData](./animatabledata.md)
   A functionality specification that animatable data types adopt.
 
 

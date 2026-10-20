@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the entity that results from applying a pose.
@@ -12,7 +13,7 @@ Returns the entity that results from applying a pose.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,27 +28,28 @@ func applying(_ pose: Pose3D) -> Self
 
 ## See Also
 
-- [func apply(AffineTransform3D)](primitive3d/apply(_:)-1nv9y.md)
+### Transforming primitives
+- [func apply(AffineTransform3D)](./apply%28_%29-1nv9y.md)
   Applies an affine transform.
-- [func apply(ProjectiveTransform3D)](primitive3d/apply(_:)-64cgp.md)
+- [func apply(ProjectiveTransform3D)](./apply%28_%29-64cgp.md)
   Applies a projective transform.
-- [func applying(AffineTransform3D) -> Self](primitive3d/applying(_:)-6264n.md)
+- [func applying(AffineTransform3D) -> Self](./applying%28_%29-6264n.md)
   Returns the entity that results from applying an affine transform.
-- [func applying(ProjectiveTransform3D) -> Self](primitive3d/applying(_:)-6icvg.md)
+- [func applying(ProjectiveTransform3D) -> Self](./applying%28_%29-6icvg.md)
   Returns the entity that results from applying a projective transform.
-- [func apply(Pose3D)](primitive3d/apply(_:)-4ic73.md)
+- [func apply(Pose3D)](./apply%28_%29-4ic73.md)
   Applies a pose.
-- [func unapply(AffineTransform3D)](primitive3d/unapply(_:)-4z6og.md)
+- [func unapply(AffineTransform3D)](./unapply%28_%29-4z6og.md)
   Unapplies an affine transform.
-- [func unapply(ProjectiveTransform3D)](primitive3d/unapply(_:)-5haxp.md)
+- [func unapply(ProjectiveTransform3D)](./unapply%28_%29-5haxp.md)
   Unapplies a projective transform.
-- [func unapplying(AffineTransform3D) -> Self](primitive3d/unapplying(_:)-8ihh5.md)
+- [func unapplying(AffineTransform3D) -> Self](./unapplying%28_%29-8ihh5.md)
   Returns the entity that results from unapplying an affine transform.
-- [func unapplying(ProjectiveTransform3D) -> Self](primitive3d/unapplying(_:)-5ppqi.md)
+- [func unapplying(ProjectiveTransform3D) -> Self](./unapplying%28_%29-5ppqi.md)
   Returns the entity that results from unapplying a projective transform.
-- [func unapply(Pose3D)](primitive3d/unapply(_:)-2992s.md)
+- [func unapply(Pose3D)](./unapply%28_%29-2992s.md)
   Unapplies a pose.
-- [func unapplying(Pose3D) -> Self](primitive3d/unapplying(_:)-37fbg.md)
+- [func unapplying(Pose3D) -> Self](./unapplying%28_%29-37fbg.md)
   Returns the entity that results from unapplying a pose.
 
 

@@ -1,7 +1,8 @@
 # NetworkChannel.State.preparing
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Preparing connections are actively establishing the connection
 

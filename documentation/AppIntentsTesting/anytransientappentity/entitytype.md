@@ -1,7 +1,8 @@
 # entityType
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of transient app entity represented by this identifier.
 

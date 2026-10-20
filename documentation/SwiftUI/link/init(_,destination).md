@@ -1,7 +1,8 @@
 # init(_:destination:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a control, consisting of a URL and a title resource, used to navigate to a URL.
 
@@ -21,9 +22,23 @@ Creates a control, consisting of a URL and a title resource, used to navigate to
 nonisolated init(_ titleResource: LocalizedStringResource, destination: URL)
 ```
 
+Available when `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, destination: URL)
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, destination: URL) where S : StringProtocol
+```
+
 #### Discussion
 
-Use [`Link`](link.md) to create a control that your app uses to navigate to a URL that you provide. The example below creates a link to `example.com` and uses `Visit Example Co` as the title key to generate a link-styled view in your app:
+Use [`Link`](../link.md) to create a control that your app uses to navigate to a URL that you provide. The example below creates a link to `example.com` and uses `Visit Example Co` as the title key to generate a link-styled view in your app:
 
 ```swift
 Link("Visit Example Co",
@@ -37,7 +52,8 @@ Link("Visit Example Co",
 
 ## See Also
 
-- [init(destination: URL, label: () -> Label)](link/init(destination:label:).md)
+### Creating a link
+- [init(destination: URL, label: () -> Label)](./init%28destination,label%29.md)
   Creates a control, consisting of a URL and a label, used to navigate to the given URL.
 
 

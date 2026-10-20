@@ -1,14 +1,15 @@
 # BEGestureType.forceTouch
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A gesture that represents a deep press using 3D Touch or Force Touch.
 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- macOS ?+
+- macOS
 - tvOS 17.4+
 - visionOS 1.1+
 
@@ -18,11 +19,16 @@ A gesture that represents a deep press using 3D Touch or Force Touch.
 case forceTouch
 ```
 
+```c
+BEGestureTypeForceTouch
+```
+
 ## See Also
 
-- [BEGestureType.doubleTapAndHold](begesturetype/doubletapandhold.md)
+### Press and hold gestures
+- [BEGestureType.doubleTapAndHold](./doubletapandhold.md)
   A gesture for a double tap followed by holding the second tap.
-- [BEGestureType.loupe](begesturetype/loupe.md)
+- [BEGestureType.loupe](./loupe.md)
   A gesture for touch interactions with the magnifying glass tool.
 
 

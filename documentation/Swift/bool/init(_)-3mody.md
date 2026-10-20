@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -11,7 +12,7 @@
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
-- Swift ?+
+- Swift - Deprecated in 4.0 (renamed: init(truncating:))
 
 ## Declaration
 
@@ -21,8 +22,9 @@ init(_ number: NSNumber)
 
 ## See Also
 
-- [init?(exactly: NSNumber)](bool/init(exactly:).md)
-- [init(truncating: NSNumber)](bool/init(truncating:).md)
+### Converting an NSNumber to a Boolean
+- [init?(exactly: NSNumber)](./init%28exactly%29.md)
+- [init(truncating: NSNumber)](./init%28truncating%29.md)
 
 
 ---

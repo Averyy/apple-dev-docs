@@ -1,7 +1,8 @@
 # cannotConfigureAudioSystem
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The audio source could not be configured.
 

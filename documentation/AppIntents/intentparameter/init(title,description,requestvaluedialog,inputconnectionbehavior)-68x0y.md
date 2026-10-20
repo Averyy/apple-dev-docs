@@ -1,7 +1,8 @@
 # init(title:description:requestValueDialog:inputConnectionBehavior:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an app intent parameter.
 
@@ -19,6 +20,8 @@ Creates an app intent parameter.
 ```swift
 convenience init(title: LocalizedStringResource, description: LocalizedStringResource? = nil, requestValueDialog: IntentDialog? = nil, inputConnectionBehavior: InputConnectionBehavior = .default)
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Calendar.RecurrenceRule`.
 
 ## Parameters
 

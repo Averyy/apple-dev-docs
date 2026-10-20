@@ -1,6 +1,7 @@
 # Overlays
 
-**Framework**: MapKit JS
+**Framework**: MapKit JS  
+**Role**: API Collection
 
 Create overlays to highlight geographic regions or paths.
 
@@ -8,9 +9,9 @@ Create overlays to highlight geographic regions or paths.
 
 You can enhance your maps by adding *overlays,* shapes that appear on top of the map. There are three overlay shapes:
 
-- Circle ([`CircleOverlay`](circleoverlay.md))
-- Polyline ([`PolylineOverlay`](polylineoverlay.md))
-- Polygon ([`PolygonOverlay`](polygonoverlay.md))
+- Circle ([`CircleOverlay`](./circleoverlay.md))
+- Polyline ([`PolylineOverlay`](./polylineoverlay.md))
+- Polygon ([`PolygonOverlay`](./polygonoverlay.md))
 
 These three objects can satisfy a wide variety of purposes, such as outlining routes, highlighting map areas, enabling users to make selections, and more.
 
@@ -23,28 +24,29 @@ Overlays belong to their own layer that lies above map tiles and below annotatio
 ## Topics
 
 ### Overlays
-- [Adding interactivity to overlays](adding-interactivity-to-overlays.md)
+- [Adding interactivity to overlays](./adding-interactivity-to-overlays.md)
   Configure and respond to overlays to make them interactive.
-- [class Overlay](overlay.md)
+- [class Overlay](./overlay.md)
   An abstract base object that defines the methods and properties for map overlays.
-- [class Style](style.md)
+- [class Style](./style.md)
   A set of observable style properties for overlays, including the color and opacity of strokes and fills, and line styles.
-- [class CircleOverlay](circleoverlay.md)
+- [class CircleOverlay](./circleoverlay.md)
   A circular overlay with a configurable radius that centers on a specific geographic coordinate.
-- [class PolylineOverlay](polylineoverlay.md)
+- [class PolylineOverlay](./polylineoverlay.md)
   An overlay of connected line segments that don’t form a closed shape.
-- [class PolygonOverlay](polygonoverlay.md)
+- [class PolygonOverlay](./polygonoverlay.md)
   An overlay consisting of one or more points that forms a closed shape.
-- [interface OverlayOptions](overlayoptions.md)
+- [interface OverlayOptions](./overlayoptions.md)
   A dictionary of options that determines an overlay’s data, and indicates whether it’s visible, in an enabled state, and in a selected state.
-- [class TileOverlay](tileoverlay.md)
+- [class TileOverlay](./tileoverlay.md)
   An overlay that covers an area of the map with bitmapped tiles.
-- [type TileOverlayUrlTemplate](tileoverlayurltemplate.md)
+- [type TileOverlayUrlTemplate](./tileoverlayurltemplate.md)
   A type that specifies the URL template for a tile overlay.
 
 ## See Also
 
-- [Annotations](annotations.md)
+### Annotations and overlays
+- [Annotations](./annotations.md)
   Create annotations to add indicators and additional details for specific locations on a map.
 
 

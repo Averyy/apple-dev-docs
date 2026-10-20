@@ -1,7 +1,8 @@
 # device
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device associated with the workout.
 
@@ -9,7 +10,7 @@ The device associated with the workout.
 - iOS 12.0+
 - iPadOS 12.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 5.0+
 
@@ -20,11 +21,16 @@ The device associated with the workout.
 var device: HKDevice? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) HKDevice * device;
+```
+
 ## See Also
 
-- [init(healthStore: HKHealthStore, configuration: HKWorkoutConfiguration, device: HKDevice?)](hkworkoutbuilder/init(healthstore:configuration:device:).md)
+### Creating the builder
+- [init(healthStore: HKHealthStore, configuration: HKWorkoutConfiguration, device: HKDevice?)](./init%28healthstore,configuration,device%29.md)
   Returns a new workout builder object that is not connected to a workout session or other data source.
-- [var workoutConfiguration: HKWorkoutConfiguration](hkworkoutbuilder/workoutconfiguration.md)
+- [var workoutConfiguration: HKWorkoutConfiguration](./workoutconfiguration.md)
   The configuration information for the workout.
 
 

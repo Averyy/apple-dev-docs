@@ -1,7 +1,8 @@
 # kCTFramePathWidthAttributeName
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key used to specify the frame width.
 
@@ -20,21 +21,26 @@ The key used to specify the frame width.
 let kCTFramePathWidthAttributeName: CFString
 ```
 
+```c
+extern CFStringRef const kCTFramePathWidthAttributeName;
+```
+
 #### Discussion
 
-The value must be a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object containing a value specifying the frame width. The default width value is zero.
+The value must be a [`CFNumber`](../CoreFoundation/cfnumber.md) object containing a value specifying the frame width. The default width value is zero.
 
 ## See Also
 
-- [enum CTFrameProgression](ctframeprogression.md)
+### Constants
+- [enum CTFrameProgression](./ctframeprogression.md)
   Constants that specify frame progression types.
-- [let kCTFrameProgressionAttributeName: CFString](kctframeprogressionattributename.md)
+- [let kCTFrameProgressionAttributeName: CFString](./kctframeprogressionattributename.md)
   Specifies progression for a frame.
-- [let kCTFramePathFillRuleAttributeName: CFString](kctframepathfillruleattributename.md)
+- [let kCTFramePathFillRuleAttributeName: CFString](./kctframepathfillruleattributename.md)
   The key used to specify the fill rule for a frame.
-- [let kCTFrameClippingPathsAttributeName: CFString](kctframeclippingpathsattributename.md)
+- [let kCTFrameClippingPathsAttributeName: CFString](./kctframeclippingpathsattributename.md)
   Specifies array of paths to clip frame.
-- [let kCTFramePathClippingPathAttributeName: CFString](kctframepathclippingpathattributename.md)
+- [let kCTFramePathClippingPathAttributeName: CFString](./kctframepathclippingpathattributename.md)
   Specifies clipping path.
 
 

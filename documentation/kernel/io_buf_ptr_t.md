@@ -1,14 +1,15 @@
 # io_buf_ptr_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef char *io_buf_ptr_t;
 ```
 

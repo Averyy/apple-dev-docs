@@ -1,7 +1,8 @@
 # resultCount
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of results returned by the result group.
 
@@ -20,21 +21,26 @@ The number of results returned by the result group.
 var resultCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger resultCount;
+```
+
 #### Discussion
 
-For performance reasons, you should use this property rather than checking the `count` property on [`results`](nsmetadataqueryresultgroup/results.md).
+For performance reasons, you should use this property rather than checking the `count` property on [`results`](./results.md).
 
 ## See Also
 
-- [var attribute: String](nsmetadataqueryresultgroup/attribute.md)
+### Getting Query Results
+- [var attribute: String](./attribute.md)
   The result group’s attribute name.
-- [var value: Any](nsmetadataqueryresultgroup/value.md)
+- [var value: Any](./value.md)
   The result group’s value.
-- [var results: [Any]](nsmetadataqueryresultgroup/results.md)
+- [var results: [Any]](./results.md)
   An array containing the result group’s result objects.
-- [func result(at: Int) -> Any](nsmetadataqueryresultgroup/result(at:).md)
+- [func result(at: Int) -> Any](./result%28at%29.md)
   Returns the query result at a specific index.
-- [var subgroups: [NSMetadataQueryResultGroup]?](nsmetadataqueryresultgroup/subgroups.md)
+- [var subgroups: [NSMetadataQueryResultGroup]?](./subgroups.md)
   An array containing the result group’s subgroups.
 
 

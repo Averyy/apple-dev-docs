@@ -1,7 +1,8 @@
 # formatDescription
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object describing the capture format.
 
@@ -19,13 +20,18 @@ An object describing the capture format.
 var formatDescription: CMFormatDescription { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMFormatDescriptionRef formatDescription;
+```
+
 #### Discussion
 
-Calling this method doesn’t assume ownership of the returned [`CMFormatDescription`](https://developer.apple.com/documentation/coremedia/cmformatdescription).
+Calling this method doesn’t assume ownership of the returned [`CMFormatDescription`](../../../CoreMedia/cmformatdescription.md).
 
 ## See Also
 
-- [var mediaType: AVMediaType](avcapturedevice/format/mediatype.md)
+### Determining supported media formats
+- [var mediaType: AVMediaType](./mediatype.md)
   A constant describing the media type of an `AVCaptureDevice` active or supported format.
 
 

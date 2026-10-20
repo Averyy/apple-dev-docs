@@ -1,7 +1,8 @@
 # NetworkCompatibilityToken.Compatibility
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Indicates whether two devices running RealityKit are compatible and able to connect and sync scenes.
 
@@ -10,7 +11,7 @@ Indicates whether two devices running RealityKit are compatible and able to conn
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
 - macOS 10.15.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,26 +22,27 @@ enum Compatibility
 ## Topics
 
 ### Compatibility indicators
-- [NetworkCompatibilityToken.Compatibility.compatible](networkcompatibilitytoken/compatibility/compatible.md)
+- [NetworkCompatibilityToken.Compatibility.compatible](./compatibility/compatible.md)
   An indication that the compared devices are running compatible versions of RealityKit.
-- [NetworkCompatibilityToken.Compatibility.sessionProtocolVersionMismatch](networkcompatibilitytoken/compatibility/sessionprotocolversionmismatch.md)
+- [NetworkCompatibilityToken.Compatibility.sessionProtocolVersionMismatch](./compatibility/sessionprotocolversionmismatch.md)
   An indication that two peers running incompatible versions of RealityKit can’t sync.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [Loading remote assets in multiplayer apps](loading-remote-assets.md)
+### Multipeer synchronization
+- [Loading remote assets in multiplayer apps](../loading-remote-assets.md)
   Ensure assets load on all connected peers before using them.
-- [class MultipeerConnectivityService](multipeerconnectivityservice.md)
+- [class MultipeerConnectivityService](../multipeerconnectivityservice.md)
   A service that provides scene synchronization among all peers in a multipeer connectivity session.
-- [class NetworkCompatibilityToken](networkcompatibilitytoken.md)
+- [class NetworkCompatibilityToken](../networkcompatibilitytoken.md)
   An opaque token used to check the networking compatibility between two peers in a multipeer connection.
-- [protocol TransientComponent](transientcomponent.md)
+- [protocol TransientComponent](../transientcomponent.md)
   An interface for components that aren’t saved to file or cloned.
 
 

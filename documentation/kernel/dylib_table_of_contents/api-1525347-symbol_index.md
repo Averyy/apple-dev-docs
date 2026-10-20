@@ -1,7 +1,8 @@
 # symbol_index
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An index into the symbol table indicating the defined external symbol to which this entry refers.
 
@@ -10,7 +11,7 @@ An index into the symbol table indicating the defined external symbol to which t
 
 ## Declaration
 
-```swift
+```c
 uint32_t symbol_index;
 ```
 

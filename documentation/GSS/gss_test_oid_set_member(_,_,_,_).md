@@ -1,7 +1,8 @@
 # gss_test_oid_set_member(_:_:_:_:)
 
 **Framework**: GSS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a flag that indicates if an OID is present in an OID set.
 
@@ -18,9 +19,13 @@ Returns a flag that indicates if an OID is present in an OID set.
 func gss_test_oid_set_member(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ member: gss_const_OID, _ set: gss_OID_set, _ present: UnsafeMutablePointer<Int32>) -> OM_uint32
 ```
 
+```c
+OM_uint32 gss_test_oid_set_member(OM_uint32 *minor_status, gss_const_OID member, gss_OID_set const set, int *present);
+```
+
 #### Return Value
 
-A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Function Status`](function-status.md) for a complete enumeration of status outputs.
+A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 
 ## Parameters
 
@@ -31,11 +36,12 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Fun
 
 ## See Also
 
-- [func gss_oid_to_str(UnsafeMutablePointer<OM_uint32>, gss_OID, gss_buffer_t) -> OM_uint32](gss_oid_to_str(_:_:_:).md)
+### Conversion and Duplication
+- [func gss_oid_to_str(UnsafeMutablePointer<OM_uint32>, gss_OID, gss_buffer_t) -> OM_uint32](./gss_oid_to_str%28_,_,_%29.md)
   Converts an OID object to a human-readable string.
-- [func gss_oid_equal(gss_const_OID?, gss_const_OID?) -> Int32](gss_oid_equal(_:_:).md)
+- [func gss_oid_equal(gss_const_OID?, gss_const_OID?) -> Int32](./gss_oid_equal%28_,_%29.md)
   Returns a flag that indicates whether two object identifiers are the same.
-- [func gss_duplicate_oid(UnsafeMutablePointer<OM_uint32>, gss_OID, UnsafeMutablePointer<gss_OID?>) -> OM_uint32](gss_duplicate_oid(_:_:_:).md)
+- [func gss_duplicate_oid(UnsafeMutablePointer<OM_uint32>, gss_OID, UnsafeMutablePointer<gss_OID?>) -> OM_uint32](./gss_duplicate_oid%28_,_,_%29.md)
   Copies an OID into a new object.
 
 

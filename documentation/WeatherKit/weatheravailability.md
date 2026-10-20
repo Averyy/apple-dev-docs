@@ -1,7 +1,8 @@
 # WeatherAvailability
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that indicates the availability of data at the requested location.
 
@@ -27,35 +28,36 @@ struct WeatherAvailability
 ## Topics
 
 ### Getting the properties
-- [var alertAvailability: WeatherAvailability.AvailabilityKind](weatheravailability/alertavailability.md)
+- [var alertAvailability: WeatherAvailability.AvailabilityKind](./weatheravailability/alertavailability.md)
   The weather alerts availability.
-- [var minuteAvailability: WeatherAvailability.AvailabilityKind](weatheravailability/minuteavailability.md)
+- [var minuteAvailability: WeatherAvailability.AvailabilityKind](./weatheravailability/minuteavailability.md)
   The minute forecast availability.
-- [WeatherAvailability.AvailabilityKind](weatheravailability/availabilitykind.md)
+- [WeatherAvailability.AvailabilityKind](./weatheravailability/availabilitykind.md)
   The availability kind.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WeatherAlert](weatheralert.md)
+### Alerts and forecasts
+- [struct WeatherAlert](./weatheralert.md)
   A weather alert issued for the requested  location by a governmental authority.
-- [struct Forecast](forecast.md)
+- [struct Forecast](./forecast.md)
   A forecast collection for minute, hourly, and daily forecasts.
-- [struct MinuteWeather](minuteweather.md)
+- [struct MinuteWeather](./minuteweather.md)
   A structure that represents the next hour minute forecasts.
-- [struct HourWeather](hourweather.md)
+- [struct HourWeather](./hourweather.md)
   A structure that represents the weather conditions for the hour.
-- [struct DayWeather](dayweather.md)
+- [struct DayWeather](./dayweather.md)
   A structure that represents the weather conditions for the day.
 
 

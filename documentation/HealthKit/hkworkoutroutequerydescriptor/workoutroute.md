@@ -1,7 +1,8 @@
 # workoutRoute
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A workout route sample that contains locations.
 
@@ -10,7 +11,7 @@ A workout route sample that contains locations.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration

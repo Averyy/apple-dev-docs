@@ -1,7 +1,8 @@
 # iCloud Key-Value Store Entitlement
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The container identifier to use for iCloud key-value storage.
 
@@ -12,9 +13,10 @@ The container identifier to use for iCloud key-value storage.
 - tvOS 9.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `com.apple.developer.ubiquity-kvstore-identifier` (iCloud Key-Value Store)
+- **Type**: string
 
 #### Discussion
 
@@ -22,13 +24,14 @@ To add this entitlement to your app, enable the iCloud capability and “Key-val
 
 ## See Also
 
-- [com.apple.developer.icloud-container-development-container-identifiers](entitlements/com.apple.developer.icloud-container-development-container-identifiers.md)
+### iCloud
+- [com.apple.developer.icloud-container-development-container-identifiers](./com.apple.developer.icloud-container-development-container-identifiers.md)
   The container identifiers for the iCloud development environment.
-- [com.apple.developer.icloud-container-environment](entitlements/com.apple.developer.icloud-container-environment.md)
+- [com.apple.developer.icloud-container-environment](./com.apple.developer.icloud-container-environment.md)
   The development or production environment to use for the iCloud containers.
-- [iCloud Container Identifiers Entitlement](entitlements/com.apple.developer.icloud-container-identifiers.md)
+- [iCloud Container Identifiers Entitlement](./com.apple.developer.icloud-container-identifiers.md)
   The container identifiers for the iCloud production environment.
-- [iCloud Services Entitlement](entitlements/com.apple.developer.icloud-services.md)
+- [iCloud Services Entitlement](./com.apple.developer.icloud-services.md)
   The iCloud services used by the app.
 
 

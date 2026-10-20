@@ -1,7 +1,8 @@
 # UIPrintInfo.OutputType.photoGrayscale
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the printed content is a grayscale image. Set the output type to this value when your printable content contains no color—for example, it’s black text only. The default paper is Letter/A4. Output is high quality grayscale, duplex.
 
@@ -17,13 +18,18 @@ Specifies that the printed content is a grayscale image. Set the output type to 
 case photoGrayscale
 ```
 
+```c
+UIPrintInfoOutputPhotoGrayscale
+```
+
 ## See Also
 
-- [UIPrintInfo.OutputType.general](uiprintinfo/outputtype-swift.enum/general.md)
+### Constants
+- [UIPrintInfo.OutputType.general](./general.md)
   Specifies that the printed content consists of mixed text, graphics, and images. The default paper is Letter, A4, or similar locale-specific designation. Output is normal quality, duplex.
-- [UIPrintInfo.OutputType.photo](uiprintinfo/outputtype-swift.enum/photo.md)
+- [UIPrintInfo.OutputType.photo](./photo.md)
   Specifies that the printed content consists of black-and-white or color images. The default paper is 4x6, A6, or similar locale-specific designation. Output is high quality, simplex.
-- [UIPrintInfo.OutputType.grayscale](uiprintinfo/outputtype-swift.enum/grayscale.md)
+- [UIPrintInfo.OutputType.grayscale](./grayscale.md)
   Specifies that the printed content is grayscale. Set the output type to this value when your printable content contains no color—for example, it’s black text only. The default paper is Letter/A4. Output is grayscale quality, duplex. This content type can produce a performance improvement in some cases.
 
 

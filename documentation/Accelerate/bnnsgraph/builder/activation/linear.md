@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.Activation.linear
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Linear activation.
 

@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the test checks for the expected failure.
 
@@ -11,15 +12,20 @@ A Boolean value that indicates whether the test checks for the expected failure.
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
 The default is `true`. Set this property to `false` to disable the expected failure check.
 
 ## See Also
 
-- [class func nonStrict() -> XCTExpectedFailure.Options](xctexpectedfailure/options/nonstrict.md)
+### Specifying Options
+- [class func nonStrict() -> XCTExpectedFailure.Options](./nonstrict%28%29.md)
   Options that specify that an unfulfilled expected failure doesn’t generate a test failure.
-- [var isStrict: Bool](xctexpectedfailure/options/isstrict.md)
+- [var isStrict: Bool](./isstrict.md)
   A Boolean value that indicates whether the test reports an error if the expected failure doesn’t occur.
 
 

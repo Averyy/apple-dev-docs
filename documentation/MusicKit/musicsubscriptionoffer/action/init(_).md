@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action with the specified raw value.
 

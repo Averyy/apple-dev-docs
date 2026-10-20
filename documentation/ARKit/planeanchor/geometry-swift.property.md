@@ -1,7 +1,8 @@
 # geometry
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get the geometry of the plane in the anchor’s coordinate system.
 
@@ -16,7 +17,8 @@ var geometry: PlaneAnchor.Geometry { get }
 
 ## See Also
 
-- [PlaneAnchor.Geometry](planeanchor/geometry-swift.struct.md)
+### Getting the shape of a plane anchor
+- [PlaneAnchor.Geometry](./geometry-swift.struct.md)
   The geometry of a plane anchor.
 
 

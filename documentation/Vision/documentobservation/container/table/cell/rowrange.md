@@ -1,7 +1,8 @@
 # rowRange
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of row indices that the cell spans.
 
@@ -21,9 +22,10 @@ var rowRange: ClosedRange<Int> { get }
 
 ## See Also
 
-- [var columnRange: ClosedRange<Int>](documentobservation/container/table/cell/columnrange.md)
+### Inspecting a cell
+- [var columnRange: ClosedRange<Int>](./columnrange.md)
   The range of column indices that the cell spans.
-- [var content: DocumentObservation.Container](documentobservation/container/table/cell/content.md)
+- [var content: DocumentObservation.Container](./content.md)
   The contents of a cell.
 
 

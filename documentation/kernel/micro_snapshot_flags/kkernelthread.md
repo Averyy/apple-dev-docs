@@ -1,14 +1,15 @@
 # kKernelThread
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 kKernelThread = 0x40
 ```
 

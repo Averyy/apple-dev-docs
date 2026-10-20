@@ -1,7 +1,8 @@
 # homeManagerDidUpdateHomes(_:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the home manager updated its collection of homes.
 
@@ -19,6 +20,10 @@ Tells the delegate that the home manager updated its collection of homes.
 optional func homeManagerDidUpdateHomes(_ manager: HMHomeManager)
 ```
 
+```objc
+- (void) homeManagerDidUpdateHomes:(HMHomeManager *) manager;
+```
+
 #### Discussion
 
 The home manager calls this method to inform an application of significant changes to the home configuration, including when the manager finishes its first load of data from the HomeKit database on initialization. Use this method as a cue to invalidate any references to HomeKit objects and refresh your app’s views with the new list of homes.
@@ -29,11 +34,12 @@ The home manager calls this method to inform an application of significant chang
 
 ## See Also
 
-- [func homeManager(HMHomeManager, didAdd: HMHome)](hmhomemanagerdelegate/homemanager(_:didadd:).md)
+### Adding and removing homes
+- [func homeManager(HMHomeManager, didAdd: HMHome)](./homemanager%28_,didadd%29.md)
   Tells the delegate that the home manager added a home.
-- [func homeManager(HMHomeManager, didRemove: HMHome)](hmhomemanagerdelegate/homemanager(_:didremove:).md)
+- [func homeManager(HMHomeManager, didRemove: HMHome)](./homemanager%28_,didremove%29.md)
   Tells the delegate that the home manager removed a home.
-- [func homeManagerDidUpdatePrimaryHome(HMHomeManager)](hmhomemanagerdelegate/homemanagerdidupdateprimaryhome(_:).md)
+- [func homeManagerDidUpdatePrimaryHome(HMHomeManager)](./homemanagerdidupdateprimaryhome%28_%29.md)
   Tells the delegate that the home manager updated its primary home.
 
 

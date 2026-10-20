@@ -1,7 +1,8 @@
 # SecProtocolType.SOCKS
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates SOCKS.
 
@@ -13,6 +14,10 @@ Indicates SOCKS.
 
 ```swift
 case SOCKS
+```
+
+```c
+kSecProtocolTypeSOCKS
 ```
 
 

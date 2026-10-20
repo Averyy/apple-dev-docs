@@ -1,14 +1,15 @@
 # registerPrioritySleepWakeInterest
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```c
 IONotifier * registerPrioritySleepWakeInterest(IOServiceInterestHandler handler, void *self, void *ref);
 ```
 

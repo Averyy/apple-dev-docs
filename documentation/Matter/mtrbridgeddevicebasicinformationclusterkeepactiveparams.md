@@ -1,7 +1,8 @@
 # MTRBridgedDeviceBasicInformationClusterKeepActiveParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.4+
@@ -18,28 +19,32 @@
 class MTRBridgedDeviceBasicInformationClusterKeepActiveParams
 ```
 
+```objc
+@interface MTRBridgedDeviceBasicInformationClusterKeepActiveParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var serverSideProcessingTimeout: NSNumber?](mtrbridgeddevicebasicinformationclusterkeepactiveparams/serversideprocessingtimeout.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrbridgeddevicebasicinformationclusterkeepactiveparams/serversideprocessingtimeout.md)
   Controls how much time, in seconds, we will allow for the server to process the command.
-- [var stayActiveDuration: NSNumber](mtrbridgeddevicebasicinformationclusterkeepactiveparams/stayactiveduration.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrbridgeddevicebasicinformationclusterkeepactiveparams/timedinvoketimeoutms.md)
+- [var stayActiveDuration: NSNumber](./mtrbridgeddevicebasicinformationclusterkeepactiveparams/stayactiveduration.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrbridgeddevicebasicinformationclusterkeepactiveparams/timedinvoketimeoutms.md)
   Controls whether the command is a timed command (using Timed Invoke).
-- [var timeoutMs: NSNumber](mtrbridgeddevicebasicinformationclusterkeepactiveparams/timeoutms.md)
+- [var timeoutMs: NSNumber](./mtrbridgeddevicebasicinformationclusterkeepactiveparams/timeoutms.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

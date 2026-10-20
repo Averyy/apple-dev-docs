@@ -1,7 +1,8 @@
 # CVTimeFlags
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 4.0+
@@ -18,31 +19,36 @@
 struct CVTimeFlags
 ```
 
+```c
+enum CVTimeFlags : int32_t;
+```
+
 ## Topics
 
 ### Constants
-- [static var isIndefinite: CVTimeFlags](cvtimeflags/isindefinite.md)
+- [static var isIndefinite: CVTimeFlags](./cvtimeflags/isindefinite.md)
   The time value is unknown.
 ### Initializers
-- [init(rawValue: Int32)](cvtimeflags/init(rawvalue:).md)
+- [init(rawValue: Int32)](./cvtimeflags/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [enum CVSMPTETimeType](cvsmptetimetype.md)
-- [struct CVSMPTETimeFlags](cvsmptetimeflags.md)
-- [struct CVTimeStampFlags](cvtimestampflags.md)
+### Enumerations
+- [enum CVSMPTETimeType](./cvsmptetimetype.md)
+- [struct CVSMPTETimeFlags](./cvsmptetimeflags.md)
+- [struct CVTimeStampFlags](./cvtimestampflags.md)
 
 
 ---

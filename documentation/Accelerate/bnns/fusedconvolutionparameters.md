@@ -1,7 +1,8 @@
 # BNNS.FusedConvolutionParameters
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains the parameters for a fused convolution layer.
 
@@ -11,8 +12,10 @@ A structure that contains the parameters for a fused convolution layer.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,44 +26,45 @@ struct FusedConvolutionParameters
 ## Topics
 
 ### Creating a Fused Convolution Parameters Structure
-- [init(type: BNNS.ConvolutionType, weights: BNNSNDArrayDescriptor, bias: BNNSNDArrayDescriptor?, stride: (x: Int, y: Int), dilationStride: (x: Int, y: Int), groupSize: Int, padding: BNNS.ConvolutionPadding)](bnns/fusedconvolutionparameters/init(type:weights:bias:stride:dilationstride:groupsize:padding:).md)
+- [init(type: BNNS.ConvolutionType, weights: BNNSNDArrayDescriptor, bias: BNNSNDArrayDescriptor?, stride: (x: Int, y: Int), dilationStride: (x: Int, y: Int), groupSize: Int, padding: BNNS.ConvolutionPadding)](./fusedconvolutionparameters/init%28type,weights,bias,stride,dilationstride,groupsize,padding%29.md)
   Returns a new fused convolution parameters structure.
 ### Inspecting the Properties of a Fused Convolution Parameters Structure
-- [var type: BNNS.ConvolutionType](bnns/fusedconvolutionparameters/type.md)
+- [var type: BNNS.ConvolutionType](./fusedconvolutionparameters/type.md)
   An enumeration that specifies the convolution type.
-- [var weights: BNNSNDArrayDescriptor](bnns/fusedconvolutionparameters/weights.md)
+- [var weights: BNNSNDArrayDescriptor](./fusedconvolutionparameters/weights.md)
   The descriptor of the weights.
-- [var bias: BNNSNDArrayDescriptor?](bnns/fusedconvolutionparameters/bias.md)
+- [var bias: BNNSNDArrayDescriptor?](./fusedconvolutionparameters/bias.md)
   The descriptor of the bias.
-- [var stride: (x: Int, y: Int)](bnns/fusedconvolutionparameters/stride.md)
+- [var stride: (x: Int, y: Int)](./fusedconvolutionparameters/stride.md)
   The width and height increments of the input image.
-- [var dilationStride: (x: Int, y: Int)](bnns/fusedconvolutionparameters/dilationstride.md)
+- [var dilationStride: (x: Int, y: Int)](./fusedconvolutionparameters/dilationstride.md)
   The width and height increments between elements in the input image during convolution.
-- [var groupSize: Int](bnns/fusedconvolutionparameters/groupsize.md)
+- [var groupSize: Int](./fusedconvolutionparameters/groupsize.md)
   The convolution group size.
-- [var padding: BNNS.ConvolutionPadding](bnns/fusedconvolutionparameters/padding.md)
+- [var padding: BNNS.ConvolutionPadding](./fusedconvolutionparameters/padding.md)
   The number of zeros that the operation virtually adds to the edges of the input.
 
 ## Relationships
 
 ### Conforms To
-- [FusableLayerParameters](fusablelayerparameters.md)
+- [FusableLayerParameters](../fusablelayerparameters.md)
 
 ## See Also
 
-- [struct FusedUnaryArithmeticParameters](bnns/fusedunaryarithmeticparameters.md)
+### Specifying a Layer Parameter
+- [struct FusedUnaryArithmeticParameters](./fusedunaryarithmeticparameters.md)
   A structure that contains the parameters for a fused unary arithmetic layer.
-- [struct FusedBinaryArithmeticParameters](bnns/fusedbinaryarithmeticparameters.md)
+- [struct FusedBinaryArithmeticParameters](./fusedbinaryarithmeticparameters.md)
   A structure that contains the parameters for a fused binary arithmetic layer.
-- [struct FusedTernaryArithmeticParameters](bnns/fusedternaryarithmeticparameters.md)
+- [struct FusedTernaryArithmeticParameters](./fusedternaryarithmeticparameters.md)
   A structure that contains the parameters for a fused ternary arithmetic layer.
-- [struct FusedQuantizationParameters](bnns/fusedquantizationparameters.md)
+- [struct FusedQuantizationParameters](./fusedquantizationparameters.md)
   A structure that contains the parameters for a fused quantization layer.
-- [struct FusedDequantizationParameters](bnns/fuseddequantizationparameters.md)
+- [struct FusedDequantizationParameters](./fuseddequantizationparameters.md)
   A structure that contains the parameters for a fused dequantization layer.
-- [struct FusedFullyConnectedParameters](bnns/fusedfullyconnectedparameters.md)
+- [struct FusedFullyConnectedParameters](./fusedfullyconnectedparameters.md)
   A structure that contains the parameters for a fused fully connected layer.
-- [struct FusedNormalizationParameters](bnns/fusednormalizationparameters.md)
+- [struct FusedNormalizationParameters](./fusednormalizationparameters.md)
   A structure that contains the parameters for a fused normalization layer.
 
 

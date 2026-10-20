@@ -1,7 +1,8 @@
 # BetaBuildLocalization.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object BetaBuildLocalization.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaBuildLocalization.Relationships.Build](betabuildlocalization/relationships-data.dictionary/build-data.dictionary.md)
+- [object BetaBuildLocalization.Relationships.Build](./relationships-data.dictionary/build-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -26,7 +27,8 @@ object BetaBuildLocalization.Relationships
 
 ## See Also
 
-- [object BetaBuildLocalization.Attributes](betabuildlocalization/attributes-data.dictionary.md)
+### Objects
+- [object BetaBuildLocalization.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a Beta Build Localizations resource.
 
 

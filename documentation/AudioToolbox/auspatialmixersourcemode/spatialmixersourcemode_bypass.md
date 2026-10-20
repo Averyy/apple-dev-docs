@@ -1,15 +1,16 @@
 # AUSpatialMixerSourceMode.spatialMixerSourceMode_Bypass
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@
 case spatialMixerSourceMode_Bypass
 ```
 
+```c
+kSpatialMixerSourceMode_Bypass
+```
+
 ## See Also
 
-- [AUSpatialMixerSourceMode.spatialMixerSourceMode_AmbienceBed](auspatialmixersourcemode/spatialmixersourcemode_ambiencebed.md)
-- [AUSpatialMixerSourceMode.spatialMixerSourceMode_PointSource](auspatialmixersourcemode/spatialmixersourcemode_pointsource.md)
-- [AUSpatialMixerSourceMode.spatialMixerSourceMode_SpatializeIfMono](auspatialmixersourcemode/spatialmixersourcemode_spatializeifmono.md)
+### Modes
+- [AUSpatialMixerSourceMode.spatialMixerSourceMode_AmbienceBed](./spatialmixersourcemode_ambiencebed.md)
+- [AUSpatialMixerSourceMode.spatialMixerSourceMode_PointSource](./spatialmixersourcemode_pointsource.md)
+- [AUSpatialMixerSourceMode.spatialMixerSourceMode_SpatializeIfMono](./spatialmixersourcemode_spatializeifmono.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # BNNS.PaddingLayer
 
 **Framework**: Accelerate  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A layer object that wraps a padding filter and manages its deinitialization.
 
@@ -11,8 +12,10 @@ A layer object that wraps a padding filter and manages its deinitialization.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,24 +26,25 @@ class PaddingLayer
 ## Topics
 
 ### Creating a Padding Layer
-- [convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, mode: BNNS.PaddingMode, size: [(x: Int, y: Int)], filterParameters: BNNSFilterParameters?)](bnns/paddinglayer/init(input:output:mode:size:filterparameters:).md)
+- [convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, mode: BNNS.PaddingMode, size: [(x: Int, y: Int)], filterParameters: BNNSFilterParameters?)](./paddinglayer/init%28input,output,mode,size,filterparameters%29.md)
   Returns a new padding layer.
 ### Specifying the Padding Mode
-- [BNNS.PaddingMode](bnns/paddingmode.md)
+- [BNNS.PaddingMode](./paddingmode.md)
   Constants that define padding modes.
 
 ## Relationships
 
 ### Inherits From
-- [BNNS.UnaryLayer](bnns/unarylayer.md)
+- [BNNS.UnaryLayer](./unarylayer.md)
 
 ## See Also
 
-- [struct BNNSPaddingMode](bnnspaddingmode.md)
+### Padding layers
+- [struct BNNSPaddingMode](../bnnspaddingmode.md)
   Constants that define padding modes.
-- [struct BNNSLayerParametersPadding](bnnslayerparameterspadding.md)
+- [struct BNNSLayerParametersPadding](../bnnslayerparameterspadding.md)
   A structure that contains the parameters of a padding layer.
-- [func BNNSFilterCreateLayerPadding(UnsafePointer<BNNSLayerParametersPadding>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayerpadding(_:_:).md)
+- [func BNNSFilterCreateLayerPadding(UnsafePointer<BNNSLayerParametersPadding>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](../bnnsfiltercreatelayerpadding%28_,_%29.md)
   Returns a new loss layer.
 
 

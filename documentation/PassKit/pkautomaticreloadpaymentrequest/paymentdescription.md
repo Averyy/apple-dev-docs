@@ -1,7 +1,8 @@
 # paymentDescription
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description that you provide of the automatic reload payment and that Apple Pay displays to the user in the payment sheet.
 
@@ -18,13 +19,18 @@ A description that you provide of the automatic reload payment and that Apple Pa
 var paymentDescription: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * paymentDescription;
+```
+
 #### Discussion
 
 Provide a display name for the automatic reload, for example, “Gift Card Reload”.
 
 ## See Also
 
-- [var billingAgreement: String?](pkautomaticreloadpaymentrequest/billingagreement.md)
+### Describing an automatic reload payment
+- [var billingAgreement: String?](./billingagreement.md)
   A localized billing agreement that the payment sheet displays to the user before the user authorizes the payment.
 
 

@@ -1,6 +1,7 @@
 # Xcode 11.3.1 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes
 
@@ -12,7 +13,9 @@ Xcode 11.3.1 supports developing apps for iOS 13.3, iPadOS 13.3, tvOS 13.3, watc
 
 ###### Known Issues
 
-- When you create an Objective-C category file by choosing File > New > File, the newly created file includes an import of the AppKit framework. This causes a compilation error for iOS, tvOS, and watchOS. (55977950) (FB7346800) **Workaround:** Remove the import of AppKit from the source file.
+- When you create an Objective-C category file by choosing File > New > File, the newly created file includes an import of the AppKit framework. This causes a compilation error for iOS, tvOS, and watchOS. (55977950) (FB7346800)
+
+  **Workaround:** Remove the import of AppKit from the source file.
 
 ##### Debugging
 
@@ -24,7 +27,7 @@ Xcode 11.3.1 supports developing apps for iOS 13.3, iPadOS 13.3, tvOS 13.3, watc
 
 ###### Resolved Issues
 
-- Fixed a crash that could occur when using an attributed string in a [`UILabel`](https://developer.apple.com/documentation/uikit/uilabel). (55737956, 57990674)
+- Fixed a crash that could occur when using an attributed string in a [`UILabel`](../UIKit/uilabel.md). (55737956, 57990674)
 - Fixed a crash that could occur after dragging a toolbar item out of the Allowed set in the canvas. (18133890, 57982132)
 
 ##### Simulator
@@ -48,25 +51,26 @@ Xcode 11.3.1 supports developing apps for iOS 13.3, iPadOS 13.3, tvOS 13.3, watc
 
 ## See Also
 
-- [Xcode 11.7 Release Notes](xcode-11_7-release-notes.md)
+### Xcode 11
+- [Xcode 11.7 Release Notes](./xcode-11_7-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.6 Release Notes](xcode-11_6-release-notes.md)
+- [Xcode 11.6 Release Notes](./xcode-11_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.5 Release Notes](xcode-11_5-release-notes.md)
+- [Xcode 11.5 Release Notes](./xcode-11_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.4.1 Release Notes](xcode-11_4_1-release-notes.md)
+- [Xcode 11.4.1 Release Notes](./xcode-11_4_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.4 Release Notes](xcode-11_4-release-notes.md)
+- [Xcode 11.4 Release Notes](./xcode-11_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.3 Release Notes](xcode-11_3-release-notes.md)
+- [Xcode 11.3 Release Notes](./xcode-11_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes
-- [Xcode 11.2.1 Release Notes](xcode-11_2_1-release-notes.md)
+- [Xcode 11.2.1 Release Notes](./xcode-11_2_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.2 Release Notes](xcode-11_2-release-notes.md)
+- [Xcode 11.2 Release Notes](./xcode-11_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.1 Release Notes](xcode-11_1-release-notes.md)
+- [Xcode 11.1 Release Notes](./xcode-11_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11 Release Notes](xcode-11-release-notes.md)
+- [Xcode 11 Release Notes](./xcode-11-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

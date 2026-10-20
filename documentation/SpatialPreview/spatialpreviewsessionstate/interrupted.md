@@ -1,13 +1,14 @@
 # SpatialPreviewSessionState.interrupted
 
 **Framework**: Spatial Preview  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session connection has been interrupted, but may resume.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -17,7 +18,7 @@ case interrupted
 
 ## Mentions
 
-- [Bridging an external USD runtime to Spatial Preview](bridging-an-external-usd-runtime-to-spatial-preview.md)
+- [Bridging an external USD runtime to Spatial Preview](../bridging-an-external-usd-runtime-to-spatial-preview.md)
 
 
 ---

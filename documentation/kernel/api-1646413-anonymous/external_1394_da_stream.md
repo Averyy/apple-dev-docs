@@ -1,14 +1,15 @@
 # EXTERNAL_1394_DA_STREAM
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 EXTERNAL_1394_DA_STREAM = 0x0606
 ```
 

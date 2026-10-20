@@ -1,7 +1,8 @@
 # location
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the drag in the coordinate space of the drop view.
 

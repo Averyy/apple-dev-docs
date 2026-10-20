@@ -1,14 +1,15 @@
 # kBluetoothL2CAPPSMAACP
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothL2CAPPSMAACP = 0x1001
 ```
 

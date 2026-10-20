@@ -1,7 +1,8 @@
 # PersonNameComponents.FormatStyle.Style.short
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies a short person name components style.
 
@@ -26,11 +27,12 @@ The rawValue of `short` is 1.
 
 ## See Also
 
-- [PersonNameComponents.FormatStyle.Style.abbreviated](personnamecomponents/formatstyle/style-swift.enum/abbreviated.md)
+### Enumeration Cases
+- [PersonNameComponents.FormatStyle.Style.abbreviated](./abbreviated.md)
   Specifies an abbreviated person name components style.
-- [PersonNameComponents.FormatStyle.Style.long](personnamecomponents/formatstyle/style-swift.enum/long.md)
+- [PersonNameComponents.FormatStyle.Style.long](./long.md)
   Specifies a long person name components style.
-- [PersonNameComponents.FormatStyle.Style.medium](personnamecomponents/formatstyle/style-swift.enum/medium.md)
+- [PersonNameComponents.FormatStyle.Style.medium](./medium.md)
   Specifies a medium person name components style.
 
 

@@ -1,12 +1,13 @@
 # isEditable
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the user can drag a new image into the image view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A Boolean value indicating whether the user can drag a new image into the image 
 var isEditable: Bool { get set }
 ```
 
+```objc
+@property (getter=isEditable) BOOL editable;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the user can set the displayed image by dragging an image onto the image view. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which causes the image view to display only the programmatically set image.
+When the value of this property is [`true`](../../Swift/true.md), the user can set the displayed image by dragging an image onto the image view. The default value of this property is [`false`](../../Swift/false.md), which causes the image view to display only the programmatically set image.
 
 ## See Also
 
-- [var allowsCutCopyPaste: Bool](nsimageview/allowscutcopypaste.md)
+### Responding to user events
+- [var allowsCutCopyPaste: Bool](./allowscutcopypaste.md)
   A Boolean value indicating whether the image view lets the user cut, copy, and paste the image contents.
 
 

@@ -1,7 +1,8 @@
 # critical
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An attribute that indicates a critical notification.
 
@@ -16,9 +17,10 @@ static let critical: AccessoryNotification.Attributes
 
 ## See Also
 
-- [static let priority: AccessoryNotification.Attributes](accessorynotification/attributes-swift.struct/priority.md)
+### Identifying attribute types
+- [static let priority: AccessoryNotification.Attributes](./priority.md)
   An attribute that indicates a priority notification.
-- [static let timeSensitive: AccessoryNotification.Attributes](accessorynotification/attributes-swift.struct/timesensitive.md)
+- [static let timeSensitive: AccessoryNotification.Attributes](./timesensitive.md)
   An attribute that indicates a time-sensitive notification.
 
 

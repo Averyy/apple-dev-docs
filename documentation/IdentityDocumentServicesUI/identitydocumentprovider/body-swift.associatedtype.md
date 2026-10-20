@@ -2,6 +2,7 @@
 
 **Framework**: IdentityDocumentServicesUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type for this provider’s body.
@@ -9,7 +10,7 @@ The type for this provider’s body.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # HMHomeManagerAuthorizationStatus
 
 **Framework**: HomeKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The possible home-access states.
 
@@ -19,38 +20,43 @@ The possible home-access states.
 struct HMHomeManagerAuthorizationStatus
 ```
 
+```c
+enum HMHomeManagerAuthorizationStatus : NSUInteger;
+```
+
 #### Overview
 
-Inspect the home manager’s [`authorizationStatus`](hmhomemanager/authorizationstatus.md) property for one or more of the bits defined by [`HMHomeManagerAuthorizationStatus`](hmhomemanagerauthorizationstatus.md).
+Inspect the home manager’s [`authorizationStatus`](./hmhomemanager/authorizationstatus.md) property for one or more of the bits defined by [`HMHomeManagerAuthorizationStatus`](./hmhomemanagerauthorizationstatus.md).
 
 ## Topics
 
 ### Recognizing Status Values
-- [static var determined: HMHomeManagerAuthorizationStatus](hmhomemanagerauthorizationstatus/determined.md)
+- [static var determined: HMHomeManagerAuthorizationStatus](./hmhomemanagerauthorizationstatus/determined.md)
   The user has set the app’s level of access to home data.
-- [static var authorized: HMHomeManagerAuthorizationStatus](hmhomemanagerauthorizationstatus/authorized.md)
+- [static var authorized: HMHomeManagerAuthorizationStatus](./hmhomemanagerauthorizationstatus/authorized.md)
   The app has access to home data.
-- [static var restricted: HMHomeManagerAuthorizationStatus](hmhomemanagerauthorizationstatus/restricted.md)
+- [static var restricted: HMHomeManagerAuthorizationStatus](./hmhomemanagerauthorizationstatus/restricted.md)
   The app doesn’t have access to home data.
 ### Creating an Authorization Status
-- [init(rawValue: UInt)](hmhomemanagerauthorizationstatus/init(rawvalue:).md)
+- [init(rawValue: UInt)](./hmhomemanagerauthorizationstatus/init%28rawvalue%29.md)
   Creates an access status from a raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var authorizationStatus: HMHomeManagerAuthorizationStatus](hmhomemanager/authorizationstatus.md)
+### Inspecting authorization status
+- [var authorizationStatus: HMHomeManagerAuthorizationStatus](./hmhomemanager/authorizationstatus.md)
   The current state of the app’s access to home data.
 
 

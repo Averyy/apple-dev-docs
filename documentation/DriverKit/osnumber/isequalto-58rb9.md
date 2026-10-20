@@ -1,19 +1,20 @@
 # isEqualTo
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the number with an OSNumber.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool isEqualTo(const OSNumber *aNumber) const;
 ```
 
@@ -31,7 +32,8 @@ If the passed OSNumber object has the same value, regardless of size, true is re
 
 ## See Also
 
-- [isEqualTo](osnumber/isequalto-333kh.md)
+### Comparing Numbers
+- [isEqualTo](./isequalto-333kh.md)
   Compares the string with an OSObject
 
 

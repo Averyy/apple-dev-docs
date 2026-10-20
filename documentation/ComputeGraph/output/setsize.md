@@ -1,13 +1,14 @@
 # output::setSize
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the size of the rendered output.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void output::setSize(float2 size)
 
 This function directly sets the dimensions of the rendered particle output in world or screen space units. This affects only the rendered appearance and does not modify the particle itself.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/output__setSize.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/output__setSize.svg)
 
 ## Parameters
 

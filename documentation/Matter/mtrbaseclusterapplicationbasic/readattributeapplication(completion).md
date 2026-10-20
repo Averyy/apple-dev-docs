@@ -1,7 +1,8 @@
 # readAttributeApplication(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeApplication(completion: @escaping @Sendable (MTRApplicationBasicClusterApplicationStruct?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeApplication() async throws -> MTRApplicationBasicClusterApplicationStruct
+```
+
+```objc
+- (void) readAttributeApplicationWithCompletion:(void (^)(MTRApplicationBasicClusterApplicationStruct *value, NSError *error)) completion;
 ```
 
 

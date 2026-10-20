@@ -1,7 +1,8 @@
 # moreComing
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether there are more changes to request.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether there are more changes to request.
 
 ## Declaration
 
-```swift
+```
 attribute boolean moreComing;
 ```
 

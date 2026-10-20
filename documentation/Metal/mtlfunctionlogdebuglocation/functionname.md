@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The name of the shader function.
@@ -20,13 +21,18 @@ The name of the shader function.
 var functionName: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * functionName;
+```
+
 ## See Also
 
-- [var url: URL?](mtlfunctionlogdebuglocation/url.md)
+### Inspecting the location details
+- [var url: URL?](./url.md)
   The URL of the file that contains the shader function.
-- [var line: Int](mtlfunctionlogdebuglocation/line.md)
+- [var line: Int](./line.md)
   The line that the log message appears on.
-- [var column: Int](mtlfunctionlogdebuglocation/column.md)
+- [var column: Int](./column.md)
   The column where the log message appears.
 
 

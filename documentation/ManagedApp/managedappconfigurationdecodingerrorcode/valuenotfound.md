@@ -1,7 +1,8 @@
 # valueNotFound
 
 **Framework**: ManagedApp  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error code that indicates a coding key yields no value.
 

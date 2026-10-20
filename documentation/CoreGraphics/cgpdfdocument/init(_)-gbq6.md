@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Core Graphics PDF document using a data provider.
 
@@ -10,7 +11,7 @@ Creates a Core Graphics PDF document using a data provider.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Creates a Core Graphics PDF document using a data provider.
 init?(_ provider: CGDataProvider)
 ```
 
+```c
+extern CGPDFDocumentRefCGPDFDocumentCreateWithProvider(CGDataProviderRef provider);
+```
+
 #### Return Value
 
-A new Core Graphics PDF document, or `NULL` if a document can not be created. In Objective-C, you’re responsible for releasing the object using [`CGPDFDocumentRelease`](cgpdfdocumentrelease.md).
+A new Core Graphics PDF document, or `NULL` if a document can not be created. In Objective-C, you’re responsible for releasing the object using [`CGPDFDocumentRelease`](../cgpdfdocumentrelease.md).
 
 #### Discussion
 
@@ -34,8 +39,10 @@ Distributing individual pages of a PDF document to separate threads is not suppo
 
 ## See Also
 
-- [Quartz 2D Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066)
-- [init?(CFURL)](cgpdfdocument/init(_:)-2gtsd.md)
+### Related Documentation
+- [Quartz 2D Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066)
+### Creating PDF Documents
+- [init?(CFURL)](./init%28_%29-2gtsd.md)
   Creates a Core Graphics PDF document using data specified by a URL.
 
 

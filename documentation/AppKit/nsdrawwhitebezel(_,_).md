@@ -1,17 +1,22 @@
 # NSDrawWhiteBezel(_:_:)
 
 **Framework**: AppKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Draws a white-filled rectangle with a bezel border.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func NSDrawWhiteBezel(_ rect: NSRect, _ clipRect: NSRect)
+```
+
+```c
+extern void NSDrawWhiteBezel(NSRect rect, NSRect clipRect);
 ```
 
 ## Parameters
@@ -21,13 +26,15 @@ func NSDrawWhiteBezel(_ rect: NSRect, _ clipRect: NSRect)
 
 ## See Also
 
-- [func NSDrawTiledRects(NSRect, NSRect, UnsafePointer<NSRectEdge>, UnsafePointer<CGFloat>, Int) -> NSRect](nsdrawtiledrects(_:_:_:_:_:).md)
+### Related Documentation
+- [func NSDrawTiledRects(NSRect, NSRect, UnsafePointer<NSRectEdge>, UnsafePointer<CGFloat>, Int) -> NSRect](./nsdrawtiledrects%28_,_,_,_,_%29.md)
   Draws rectangles with borders.
-- [func NSDrawDarkBezel(NSRect, NSRect)](nsdrawdarkbezel(_:_:).md)
+### Drawing Bezels
+- [func NSDrawDarkBezel(NSRect, NSRect)](./nsdrawdarkbezel%28_,_%29.md)
   Draws a dark gray-filled rectangle with a bezel border.
-- [func NSDrawGrayBezel(NSRect, NSRect)](nsdrawgraybezel(_:_:).md)
+- [func NSDrawGrayBezel(NSRect, NSRect)](./nsdrawgraybezel%28_,_%29.md)
   Draws a gray-filled rectangle with a bezel border.
-- [func NSDrawLightBezel(NSRect, NSRect)](nsdrawlightbezel(_:_:).md)
+- [func NSDrawLightBezel(NSRect, NSRect)](./nsdrawlightbezel%28_,_%29.md)
   Draws a white-filled rectangle with a bezel border.
 
 

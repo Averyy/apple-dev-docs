@@ -1,7 +1,8 @@
 # CFBundleVersion
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The version of the build that identifies an iteration of the bundle.
 
@@ -13,9 +14,10 @@ The version of the build that identifies an iteration of the bundle.
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `CFBundleVersion` (Bundle version)
+- **Type**: string
 
 #### Discussion
 
@@ -35,11 +37,12 @@ This key is required by the App Store and is used throughout the system to ident
 
 ## See Also
 
-- [CFBundleShortVersionString](information-property-list/cfbundleshortversionstring.md)
+### Bundle version
+- [CFBundleShortVersionString](./cfbundleshortversionstring.md)
   The release or version number of the bundle.
-- [CFBundleInfoDictionaryVersion](information-property-list/cfbundleinfodictionaryversion.md)
+- [CFBundleInfoDictionaryVersion](./cfbundleinfodictionaryversion.md)
   The current version of the Information Property List structure.
-- [NSHumanReadableCopyright](information-property-list/nshumanreadablecopyright.md)
+- [NSHumanReadableCopyright](./nshumanreadablecopyright.md)
   A human-readable copyright notice for the bundle.
 
 

@@ -1,7 +1,8 @@
 # ConfigurationErrorStatus
 
 **Framework**: MapKit JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that represents the status of a configuration error.
 
@@ -10,7 +11,7 @@ A value that represents the status of a configuration error.
 
 ## Declaration
 
-```swift
+```
 const ConfigurationErrorStatus: Readonly<{
     readonly BadRequest: "Bad Request";
     readonly Unauthorized: "Unauthorized";
@@ -27,24 +28,25 @@ type ConfigurationErrorStatus =
 ## Topics
 
 ### Enumeration Cases
-- [BadRequest](configurationerrorstatus/badrequest.md)
+- [BadRequest](./configurationerrorstatus/badrequest.md)
   An error status value that indicates the service returned a bad request response when initializing.
-- [MalformedResponse](configurationerrorstatus/malformedresponse.md)
+- [MalformedResponse](./configurationerrorstatus/malformedresponse.md)
   An error status that indicates the service returned a malformed response when initializing.
-- [NetworkError](configurationerrorstatus/networkerror.md)
+- [NetworkError](./configurationerrorstatus/networkerror.md)
   An error status that indicates MapKit JS encountered a network error during initialization.
-- [Timeout](configurationerrorstatus/timeout.md)
+- [Timeout](./configurationerrorstatus/timeout.md)
   An error status that indicates the service timed out when initializing.
-- [TooManyRequests](configurationerrorstatus/toomanyrequests.md)
+- [TooManyRequests](./configurationerrorstatus/toomanyrequests.md)
   An error status that indicates the Maps ID for the authorization token provided exceeded its allowed daily usage.
-- [Unauthorized](configurationerrorstatus/unauthorized.md)
+- [Unauthorized](./configurationerrorstatus/unauthorized.md)
   An error status that indicates the provided authorization token is invalid.
-- [Unknown](configurationerrorstatus/unknown.md)
+- [Unknown](./configurationerrorstatus/unknown.md)
   An error status that indicates MapKit JS encountered an unknown error during initialization.
 
 ## See Also
 
-- [const ConfigurationChangeStatus](configurationchangestatus.md)
+### Initialization and error status
+- [const ConfigurationChangeStatus](./configurationchangestatus.md)
   Values that represent the status of a configuration change.
 
 

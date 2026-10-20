@@ -1,7 +1,8 @@
 # SKSummary
 
 **Framework**: Core Services  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 Defines an opaque data type representing summarization information.
 

@@ -1,7 +1,8 @@
 # tvOS(_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Configures the minimum deployment target version for the tvOS platform.
 
@@ -17,7 +18,7 @@ A `SupportedPlatform` instance.
 
 #### Discussion
 
-> **Note**: First available in PackageDescription 5.0
+> **Since**: First available in PackageDescription 5.0
 
 ## Parameters
 
@@ -25,11 +26,12 @@ A `SupportedPlatform` instance.
 
 ## See Also
 
-- [static func tvOS(String) -> SupportedPlatform](supportedplatform/tvos(_:)-3k8sy.md)
+### Supporting tvOS
+- [static func tvOS(String) -> SupportedPlatform](./tvos%28_%29-3k8sy.md)
   Configures the minimum deployment target version for the tvOS platform using a custom version string.
-- [static let tvOS: Platform](platform/tvos.md)
+- [static let tvOS: Platform](../platform/tvos.md)
   The tvOS platform.
-- [SupportedPlatform.TVOSVersion](supportedplatform/tvosversion.md)
+- [SupportedPlatform.TVOSVersion](./tvosversion.md)
   The supported tvOS version.
 
 

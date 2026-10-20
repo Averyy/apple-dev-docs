@@ -1,7 +1,8 @@
 # init(id:content:onConnection:)
 
 **Framework**: ExtensionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the primitive app extension scene with the specified ID and closure for the content.
 
@@ -25,7 +26,7 @@ Initializes the primitive app extension scene with the specified ID and closure 
 
 Use this method to initialize the type and provide the scene contents. The following example shows the typical code you use to create this type and specify its parameters. Replace the comments with the actual SwiftUI views and XPC connection code your app supports.
 
-```None
+```
 public var body: some AppExtensionScene {
     PrimitiveAppExtensionScene(id: “MyScene”) {
         // SwiftUI views and behavior.
@@ -36,7 +37,7 @@ public var body: some AppExtensionScene {
 }
 ```
 
-For more information about creating scenes for your app extension, see [`Including extension-based UI in your interface`](including-extension-based-ui-in-your-interface.md).
+For more information about creating scenes for your app extension, see [Including extension-based UI in your interface](../including-extension-based-ui-in-your-interface.md).
 
 ## Parameters
 

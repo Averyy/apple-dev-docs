@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of commands contained in the indirect command buffer.
@@ -18,6 +19,10 @@ The number of commands contained in the indirect command buffer.
 
 ```swift
 var size: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger size;
 ```
 
 #### Discussion

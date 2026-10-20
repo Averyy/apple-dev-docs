@@ -1,7 +1,8 @@
 # init(date:time:locale:calendar:timeZone:capitalizationContext:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance using the provided date, time, locale, calendar, time zone, and capitalization context.
 
@@ -24,16 +25,16 @@ init(date: Date.FormatStyle.DateStyle? = nil, time: Date.FormatStyle.TimeStyle? 
 
 Customize the date string by providing a date style, time style, locale, calendar, time zone, and capitalization scheme.
 
-Date style values are [`complete`](date/formatstyle/datestyle/complete.md), [`long`](date/formatstyle/datestyle/long.md), `abbreviated`, [`numeric`](date/formatstyle/datestyle/numeric.md), [`omitted`](date/formatstyle/datestyle/omitted.md), or `none`. Time style values are [`complete`](date/formatstyle/timestyle/complete.md), [`standard`](date/formatstyle/timestyle/standard.md), [`shortened`](date/formatstyle/timestyle/shortened.md), [`omitted`](date/formatstyle/timestyle/omitted.md), or `none`.
+Date style values are [`complete`](./datestyle/complete.md), [`long`](./datestyle/long.md), `abbreviated`, [`numeric`](./datestyle/numeric.md), [`omitted`](./datestyle/omitted.md), or `none`. Time style values are [`complete`](./timestyle/complete.md), [`standard`](./timestyle/standard.md), [`shortened`](./timestyle/shortened.md), [`omitted`](./timestyle/omitted.md), or `none`.
 
 ## Parameters
 
-- `date`: The [`Date.FormatStyle.DateStyle`](date/formatstyle/datestyle.md) used to create the string representation of the date.
-- `time`: The [`Date.FormatStyle.TimeStyle`](date/formatstyle/timestyle.md) used to create the string representation of the date.
-- `locale`: The [`Locale`](locale.md) used to create the string representation of the date.
-- `calendar`: The [`Calendar`](calendar.md) used to create the string representation of the date.
-- `timeZone`: The [`TimeZone`](timezone.md) used to create the string representation of the date.
-- `capitalizationContext`: The [`FormatStyleCapitalizationContext`](formatstylecapitalizationcontext.md) used to create the string representation of the date.
+- `date`: The [`Date.FormatStyle.DateStyle`](./datestyle.md) used to create the string representation of the date.
+- `time`: The [`Date.FormatStyle.TimeStyle`](./timestyle.md) used to create the string representation of the date.
+- `locale`: The [`Locale`](../../locale.md) used to create the string representation of the date.
+- `calendar`: The [`Calendar`](../../calendar.md) used to create the string representation of the date.
+- `timeZone`: The [`TimeZone`](../../timezone.md) used to create the string representation of the date.
+- `capitalizationContext`: The [`FormatStyleCapitalizationContext`](../../formatstylecapitalizationcontext.md) used to create the string representation of the date.
 
 
 ---

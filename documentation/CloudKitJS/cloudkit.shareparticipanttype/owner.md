@@ -1,7 +1,8 @@
 # OWNER
 
 **Framework**: CloudKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The owner of the shared record who can add private users but not add public users.
 
@@ -10,17 +11,18 @@ The owner of the shared record who can add private users but not add public user
 
 ## Declaration
 
-```swift
+```
 const String OWNER;
 ```
 
 ## See Also
 
-- [PRIVATE_USER](cloudkit.shareparticipanttype/private_user.md)
+### Enumeration Cases
+- [PRIVATE_USER](./private_user.md)
   Participants who were invited to share the record by the owner.
-- [PUBLIC_USER](cloudkit.shareparticipanttype/public_user.md)
+- [PUBLIC_USER](./public_user.md)
   Participants who accepted a shared record by accessing the share URL.
-- [UNKNOWN](cloudkit.shareparticipanttype/unknown.md)
+- [UNKNOWN](./unknown.md)
   Unknown type of participant.
 
 

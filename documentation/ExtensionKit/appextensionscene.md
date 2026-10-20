@@ -1,7 +1,8 @@
 # AppExtensionScene
 
 **Framework**: ExtensionKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface you use to provide a specific scene from your app extension’s UI.
 
@@ -23,15 +24,15 @@ An interface you use to provide a specific scene from your app extension’s UI.
 
 ## Mentions
 
-- [Including extension-based UI in your interface](including-extension-based-ui-in-your-interface.md)
+- [Including extension-based UI in your interface](./including-extension-based-ui-in-your-interface.md)
 
 #### Overview
 
 When your app extension provides custom UI, use this type to define a specific scene for that UI. An app extension can define multiple scene types in coordination with the host app. When the host app displays the app extension’s UI, it provides a unique string identifier for the scene it wants to display. The app extension responds by providing an instance of this type that contains that scene’s contents.
 
-When defining a scene, provide the body of that scene using the [`PrimitiveAppExtensionScene`](primitiveappextensionscene.md) type. This type contains the unique identifier of the scene and the content to display. The following code shows an implementation of a scene capable of displaying content you supply at initialization time using a closure. The scene’s [`body`](appextensionscene/body-swift.property.md) property repackages that content inside the [`PrimitiveAppExtensionScene`](primitiveappextensionscene.md) structure. You can also use this type to accept a scene-specific XPC connection, which you might use to communicate custom data related to managing UI-related interactions.
+When defining a scene, provide the body of that scene using the [`PrimitiveAppExtensionScene`](./primitiveappextensionscene.md) type. This type contains the unique identifier of the scene and the content to display. The following code shows an implementation of a scene capable of displaying content you supply at initialization time using a closure. The scene’s [`body`](./appextensionscene/body-swift.property.md) property repackages that content inside the [`PrimitiveAppExtensionScene`](./primitiveappextensionscene.md) structure. You can also use this type to accept a scene-specific XPC connection, which you might use to communicate custom data related to managing UI-related interactions.
 
-```None
+```
 struct MyScene<Content: View>: AppExtensionScene {
 
     public init(content: @escaping () ->  Content) {
@@ -51,26 +52,27 @@ struct MyScene<Content: View>: AppExtensionScene {
 }
 ```
 
-For more information about creating UI-based app extensions, see [`Including extension-based UI in your interface`](including-extension-based-ui-in-your-interface.md).
+For more information about creating UI-based app extensions, see [Including extension-based UI in your interface](./including-extension-based-ui-in-your-interface.md).
 
 ## Topics
 
 ### Configuring the app extension
-- [var body: Self.Body](appextensionscene/body-swift.property.md)
+- [var body: Self.Body](./appextensionscene/body-swift.property.md)
   The content and behavior of the scene’s interface.
-- [associatedtype Body : AppExtensionScene](appextensionscene/body-swift.associatedtype.md)
+- [associatedtype Body : AppExtensionScene](./appextensionscene/body-swift.associatedtype.md)
   The type for this scene’s body.
 
 ## Relationships
 
 ### Conforming Types
-- [PrimitiveAppExtensionScene](primitiveappextensionscene.md)
+- [PrimitiveAppExtensionScene](./primitiveappextensionscene.md)
 
 ## See Also
 
-- [struct PrimitiveAppExtensionScene](primitiveappextensionscene.md)
+### UI definition
+- [struct PrimitiveAppExtensionScene](./primitiveappextensionscene.md)
   A type you use to deliver the contents of your app-extension-based UI.
-- [struct AppExtensionSceneBuilder](appextensionscenebuilder.md)
+- [struct AppExtensionSceneBuilder](./appextensionscenebuilder.md)
   A custom parameter attribute that constructs extension scenes from closures.
 
 

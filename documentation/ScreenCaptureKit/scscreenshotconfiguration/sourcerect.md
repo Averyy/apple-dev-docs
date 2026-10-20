@@ -1,7 +1,8 @@
 # sourceRect
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A rectangle that specifies that the screenshot only samples a subset of the frame input.
 
@@ -13,6 +14,10 @@ A rectangle that specifies that the screenshot only samples a subset of the fram
 
 ```swift
 var sourceRect: CGRect { get set }
+```
+
+```objc
+@property (nonatomic, assign) CGRect sourceRect;
 ```
 
 #### Discussion

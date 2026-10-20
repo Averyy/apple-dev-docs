@@ -1,7 +1,8 @@
 # currentLaneGuidance
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A lane guidance object that describes the current lane guidance.
 
@@ -17,17 +18,22 @@ A lane guidance object that describes the current lane guidance.
 var currentLaneGuidance: CPLaneGuidance { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) CPLaneGuidance * currentLaneGuidance;
+```
+
 ## See Also
 
-- [var currentManeuvers: [CPManeuver]](cprouteinformation/currentmaneuvers.md)
+### Properties
+- [var currentManeuvers: [CPManeuver]](./currentmaneuvers.md)
   An array of maneuver objects that describes the current maneuvers.
-- [var laneGuidances: [CPLaneGuidance]](cprouteinformation/laneguidances.md)
+- [var laneGuidances: [CPLaneGuidance]](./laneguidances.md)
   An array of lane guidance objects.
-- [var maneuverTravelEstimates: CPTravelEstimates](cprouteinformation/maneuvertravelestimates.md)
+- [var maneuverTravelEstimates: CPTravelEstimates](./maneuvertravelestimates.md)
   An object that describes the time and distance estimates for a maneuver.
-- [var maneuvers: [CPManeuver]](cprouteinformation/maneuvers.md)
+- [var maneuvers: [CPManeuver]](./maneuvers.md)
   An array of maneuver objects.
-- [var tripTravelEstimates: CPTravelEstimates](cprouteinformation/triptravelestimates.md)
+- [var tripTravelEstimates: CPTravelEstimates](./triptravelestimates.md)
   A travel estimates object that describes the estimated time and distance for the current trip.
 
 

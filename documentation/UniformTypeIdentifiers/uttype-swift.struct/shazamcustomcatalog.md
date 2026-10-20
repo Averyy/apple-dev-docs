@@ -1,7 +1,8 @@
 # shazamCustomCatalog
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents a custom catalog.
 
@@ -24,11 +25,12 @@ static var shazamCustomCatalog: UTType { get }
 
 The identifier for this type is `com.apple.shazamcatalog`.
 
-This type conforms to [`UTTypeData`](uttypedata.md) and [`UTTypeItem`](uttypeitem.md).
+This type conforms to [`UTTypeData`](../uttypedata.md) and [`UTTypeItem`](../uttypeitem.md).
 
 ## See Also
 
-- [static var shazamSignature: UTType](uttype-swift.struct/shazamsignature.md)
+### Shazam
+- [static var shazamSignature: UTType](./shazamsignature.md)
   A type that represents a signature.
 
 

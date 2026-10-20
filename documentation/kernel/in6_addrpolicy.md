@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct in6_addrpolicy {
     ...
 };
@@ -17,11 +17,11 @@ struct in6_addrpolicy {
 ## Topics
 
 ### Instance Properties
-- [addr](in6_addrpolicy/3755254-addr.md)
-- [addrmask](in6_addrpolicy/3755255-addrmask.md)
-- [label](in6_addrpolicy/3755256-label.md)
-- [preced](in6_addrpolicy/3755257-preced.md)
-- [use](in6_addrpolicy/3755258-use.md)
+- [addr](./in6_addrpolicy/api-3755254-addr.md)
+- [addrmask](./in6_addrpolicy/api-3755255-addrmask.md)
+- [label](./in6_addrpolicy/api-3755256-label.md)
+- [preced](./in6_addrpolicy/api-3755257-preced.md)
+- [use](./in6_addrpolicy/api-3755258-use.md)
 
 
 ---

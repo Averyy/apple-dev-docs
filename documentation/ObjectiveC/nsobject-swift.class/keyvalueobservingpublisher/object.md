@@ -1,7 +1,8 @@
 # object
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that contains the property to publish.
 
@@ -11,7 +12,7 @@ The object that contains the property to publish.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ let object: Subject
 
 ## See Also
 
-- [let keyPath: KeyPath<Subject, Value>](nsobject-swift.class/keyvalueobservingpublisher/keypath.md)
+### Inspecting KVO Publisher Properties
+- [let keyPath: KeyPath<Subject, Value>](./keypath.md)
   The key path, relative to the object receiving this message, of the property to publish.
-- [let options: NSKeyValueObservingOptions](nsobject-swift.class/keyvalueobservingpublisher/options.md)
+- [let options: NSKeyValueObservingOptions](./options.md)
   Options that determine which elements the publisher produces.
 
 

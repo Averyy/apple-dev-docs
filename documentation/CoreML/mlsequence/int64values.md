@@ -1,7 +1,8 @@
 # int64Values
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of 64-bit integers in the sequence.
 
@@ -20,13 +21,18 @@ An array of 64-bit integers in the sequence.
 var int64Values: [NSNumber] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSNumber *> * int64Values;
+```
+
 #### Discussion
 
-Only use this property when the sequence’s [`type`](mlsequence/type.md) is [`MLFeatureType.int64`](mlfeaturetype/int64.md).
+Only use this property when the sequence’s [`type`](./type.md) is [`MLFeatureType.int64`](../mlfeaturetype/int64.md).
 
 ## See Also
 
-- [var stringValues: [String]](mlsequence/stringvalues.md)
+### Retrieving the Sequence’s Values
+- [var stringValues: [String]](./stringvalues.md)
   An array of strings in the sequence.
 
 

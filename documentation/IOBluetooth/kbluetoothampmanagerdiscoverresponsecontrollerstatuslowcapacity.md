@@ -1,10 +1,11 @@
 # kBluetoothAMPManagerDiscoverResponseControllerStatusLowCapacity
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,14 +13,19 @@
 var kBluetoothAMPManagerDiscoverResponseControllerStatusLowCapacity: BluetoothAMPDiscoverResponseControllerStatus { get }
 ```
 
+```c
+kBluetoothAMPManagerDiscoverResponseControllerStatusLowCapacity
+```
+
 ## See Also
 
-- [var kBluetoothAMPManagerDiscoverResponseControllerStatusBluetoothOnly: BluetoothAMPDiscoverResponseControllerStatus](kbluetoothampmanagerdiscoverresponsecontrollerstatusbluetoothonly.md)
-- [var kBluetoothAMPManagerDiscoverResponseControllerStatusFullCapacity: BluetoothAMPDiscoverResponseControllerStatus](kbluetoothampmanagerdiscoverresponsecontrollerstatusfullcapacity.md)
-- [var kBluetoothAMPManagerDiscoverResponseControllerStatusHighCapacity: BluetoothAMPDiscoverResponseControllerStatus](kbluetoothampmanagerdiscoverresponsecontrollerstatushighcapacity.md)
-- [var kBluetoothAMPManagerDiscoverResponseControllerStatusMediumCapacity: BluetoothAMPDiscoverResponseControllerStatus](kbluetoothampmanagerdiscoverresponsecontrollerstatusmediumcapacity.md)
-- [var kBluetoothAMPManagerDiscoverResponseControllerStatusNoCapacity: BluetoothAMPDiscoverResponseControllerStatus](kbluetoothampmanagerdiscoverresponsecontrollerstatusnocapacity.md)
-- [var kBluetoothAMPManagerDiscoverResponseControllerStatusPoweredDown: BluetoothAMPDiscoverResponseControllerStatus](kbluetoothampmanagerdiscoverresponsecontrollerstatuspowereddown.md)
+### Constants
+- [var kBluetoothAMPManagerDiscoverResponseControllerStatusBluetoothOnly: BluetoothAMPDiscoverResponseControllerStatus](./kbluetoothampmanagerdiscoverresponsecontrollerstatusbluetoothonly.md)
+- [var kBluetoothAMPManagerDiscoverResponseControllerStatusFullCapacity: BluetoothAMPDiscoverResponseControllerStatus](./kbluetoothampmanagerdiscoverresponsecontrollerstatusfullcapacity.md)
+- [var kBluetoothAMPManagerDiscoverResponseControllerStatusHighCapacity: BluetoothAMPDiscoverResponseControllerStatus](./kbluetoothampmanagerdiscoverresponsecontrollerstatushighcapacity.md)
+- [var kBluetoothAMPManagerDiscoverResponseControllerStatusMediumCapacity: BluetoothAMPDiscoverResponseControllerStatus](./kbluetoothampmanagerdiscoverresponsecontrollerstatusmediumcapacity.md)
+- [var kBluetoothAMPManagerDiscoverResponseControllerStatusNoCapacity: BluetoothAMPDiscoverResponseControllerStatus](./kbluetoothampmanagerdiscoverresponsecontrollerstatusnocapacity.md)
+- [var kBluetoothAMPManagerDiscoverResponseControllerStatusPoweredDown: BluetoothAMPDiscoverResponseControllerStatus](./kbluetoothampmanagerdiscoverresponsecontrollerstatuspowereddown.md)
 
 
 ---

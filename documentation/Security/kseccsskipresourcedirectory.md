@@ -1,7 +1,8 @@
 # kSecCSSkipResourceDirectory
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Suppress validating the resource directory.
 
@@ -13,6 +14,10 @@ Suppress validating the resource directory.
 
 ```swift
 var kSecCSSkipResourceDirectory: UInt32 { get }
+```
+
+```c
+kSecCSSkipResourceDirectory
 ```
 
 

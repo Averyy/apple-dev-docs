@@ -1,17 +1,20 @@
 # featureIdentifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key for identifying a font feature type.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- tvOS ?+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 7.0+ - Deprecated in 15.0
+- iPadOS 7.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- tvOS - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 8.0
+
+> **Deprecated**: Use [`type`](./type.md) instead.
 
 ## Declaration
 
@@ -19,13 +22,18 @@ A key for identifying a font feature type.
 static let featureIdentifier: UIFontDescriptor.FeatureKey
 ```
 
+```c
+extern UIFontDescriptorFeatureKey const UIFontFeatureTypeIdentifierKey;
+```
+
 ## See Also
 
-- [static let type: UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey/type.md)
+### Keys
+- [static let type: UIFontDescriptor.FeatureKey](./type.md)
   A key for identifying the font feature type.
-- [static let selector: UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey/selector.md)
+- [static let selector: UIFontDescriptor.FeatureKey](./selector.md)
   A key for identifying the font feature selector.
-- [static let typeIdentifier: UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey/typeidentifier.md)
+- [static let typeIdentifier: UIFontDescriptor.FeatureKey](./typeidentifier.md)
   A key for identifying the font feature selector.
 
 

@@ -1,7 +1,8 @@
 # CMPedometerEventType.pause
 
 **Framework**: Core Motion  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user’s pedestrian activity stopped.
 
@@ -19,9 +20,14 @@ The user’s pedestrian activity stopped.
 case pause
 ```
 
+```c
+CMPedometerEventTypePause
+```
+
 ## See Also
 
-- [CMPedometerEventType.resume](cmpedometereventtype/resume.md)
+### Enumeration Cases
+- [CMPedometerEventType.resume](./resume.md)
   The user’s pedestrian activity resumed.
 
 

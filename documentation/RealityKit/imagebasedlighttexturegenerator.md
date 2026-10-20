@@ -1,7 +1,8 @@
 # ImageBasedLightTextureGenerator
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that generates image-based-lighting diffuse and specular cube textures from a skybox.
 
@@ -24,27 +25,28 @@ Image-based lighting (IBL) approximates how an environment lights a surface by c
 ## Topics
 
 ### Creating a generator
-- [init(device: any MTLDevice)](imagebasedlighttexturegenerator/init(device:)-22qce.md)
-- [init(device: any MTLDevice) async](imagebasedlighttexturegenerator/init(device:)-5yjyb.md)
+- [init(device: any MTLDevice)](./imagebasedlighttexturegenerator/init%28device%29-22qce.md)
+- [init(device: any MTLDevice) async](./imagebasedlighttexturegenerator/init%28device%29-5yjyb.md)
 ### Generating IBL textures
-- [func generateDiffuse(using: any MTLCommandBuffer, fromSkyboxCube: any MTLTexture, quality: TextureSamplingQuality, into: any MTLTexture) throws](imagebasedlighttexturegenerator/generatediffuse(using:fromskyboxcube:quality:into:).md)
+- [func generateDiffuse(using: any MTLCommandBuffer, fromSkyboxCube: any MTLTexture, quality: TextureSamplingQuality, into: any MTLTexture) throws](./imagebasedlighttexturegenerator/generatediffuse%28using,fromskyboxcube,quality,into%29.md)
   Adds commands for generating an image based light diffuse texture from a skybox cube.
-- [func generateSpecular(using: any MTLCommandBuffer, fromSkyboxCube: any MTLTexture, quality: TextureSamplingQuality, into: any MTLTexture) throws](imagebasedlighttexturegenerator/generatespecular(using:fromskyboxcube:quality:into:).md)
+- [func generateSpecular(using: any MTLCommandBuffer, fromSkyboxCube: any MTLTexture, quality: TextureSamplingQuality, into: any MTLTexture) throws](./imagebasedlighttexturegenerator/generatespecular%28using,fromskyboxcube,quality,into%29.md)
   Adds commands for generating an image based light specular texture from a skybox cube.
 ### Describing output textures
-- [func makeDiffuseDescriptor(fromCube: any MTLTexture) throws -> MTLTextureDescriptor](imagebasedlighttexturegenerator/makediffusedescriptor(fromcube:).md)
-  Returns a recommended image based light diffuse cube texture descriptor (for [`generateDiffuse(using:fromSkyboxCube:quality:into:)`](imagebasedlighttexturegenerator/generatediffuse(using:fromskyboxcube:quality:into:).md)).
-- [func makeSpecularDescriptor(fromCube: any MTLTexture) throws -> MTLTextureDescriptor](imagebasedlighttexturegenerator/makespeculardescriptor(fromcube:).md)
-  Returns a recommended image based light specular cube texture descriptor (for [`generateSpecular(using:fromSkyboxCube:quality:into:)`](imagebasedlighttexturegenerator/generatespecular(using:fromskyboxcube:quality:into:).md)).
+- [func makeDiffuseDescriptor(fromCube: any MTLTexture) throws -> MTLTextureDescriptor](./imagebasedlighttexturegenerator/makediffusedescriptor%28fromcube%29.md)
+  Returns a recommended image based light diffuse cube texture descriptor (for [`generateDiffuse(using:fromSkyboxCube:quality:into:)`](./imagebasedlighttexturegenerator/generatediffuse%28using,fromskyboxcube,quality,into%29.md)).
+- [func makeSpecularDescriptor(fromCube: any MTLTexture) throws -> MTLTextureDescriptor](./imagebasedlighttexturegenerator/makespeculardescriptor%28fromcube%29.md)
+  Returns a recommended image based light specular cube texture descriptor (for [`generateSpecular(using:fromSkyboxCube:quality:into:)`](./imagebasedlighttexturegenerator/generatespecular%28using,fromskyboxcube,quality,into%29.md)).
 ### Initializers
-- [init(device:)](imagebasedlighttexturegenerator/init(device:).md)
+- [init(device:)](./imagebasedlighttexturegenerator/init%28device%29.md)
 
 ## See Also
 
-- [class SkyboxGenerator](skyboxgenerator.md)
+### Environment texture generation
+- [class SkyboxGenerator](./skyboxgenerator.md)
   An object that generates a skybox cube texture from an equirectangular source.
-- [enum TextureSamplingQuality](texturesamplingquality.md)
-  A discrete trade-off between generation time and texture quality, used by [`SkyboxGenerator`](skyboxgenerator.md) and [`ImageBasedLightTextureGenerator`](imagebasedlighttexturegenerator.md).
+- [enum TextureSamplingQuality](./texturesamplingquality.md)
+  A discrete trade-off between generation time and texture quality, used by [`SkyboxGenerator`](./skyboxgenerator.md) and [`ImageBasedLightTextureGenerator`](./imagebasedlighttexturegenerator.md).
 
 
 ---

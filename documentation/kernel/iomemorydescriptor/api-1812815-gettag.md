@@ -7,12 +7,12 @@ Accessor to the retrieve the tag for the memory descriptor.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOOptionBits getTag(
  void );
 ```
 
-#### Return_value
+#### Return Value
 
 The tag.
 
@@ -22,14 +22,15 @@ This method returns the tag for the memory descriptor. Tag bits are not interpre
 
 ## See Also
 
-- [- getTag](iomemorydescriptor/1442070-gettag.md)
+### Accessing the Buffer's Tag
+- [- getTag](./api-1442070-gettag.md)
   Accessor to the retrieve the tag for the memory descriptor.
-- [setTag](iomemorydescriptor/1812873-settag.md)
+- [setTag](./api-1812873-settag.md)
   Set the tag for the memory descriptor.
-- [- setTag](iomemorydescriptor/1441787-settag.md)
+- [- setTag](./api-1441787-settag.md)
   Set the tag for the memory descriptor.
-- [- getVMTag](iomemorydescriptor/3131493-getvmtag.md)
-- [- setVMTags](iomemorydescriptor/3131494-setvmtags.md)
+- [- getVMTag](./api-3131493-getvmtag.md)
+- [- setVMTags](./api-3131494-setvmtags.md)
 
 
 ---

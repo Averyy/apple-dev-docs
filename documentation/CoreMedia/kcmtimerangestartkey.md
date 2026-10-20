@@ -1,7 +1,8 @@
 # kCMTimeRangeStartKey
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key for the start field of a time range.
 
@@ -20,9 +21,14 @@ The key for the start field of a time range.
 let kCMTimeRangeStartKey: CFString
 ```
 
+```c
+extern CFStringRef const kCMTimeRangeStartKey;
+```
+
 ## See Also
 
-- [let kCMTimeRangeDurationKey: CFString](kcmtimerangedurationkey.md)
+### Constants
+- [let kCMTimeRangeDurationKey: CFString](./kcmtimerangedurationkey.md)
   The key for the timescale of a time range.
 
 

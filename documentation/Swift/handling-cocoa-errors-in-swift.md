@@ -1,12 +1,13 @@
 # Handling Cocoa Errors in Swift
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Throw and catch errors that use Cocoa’s error types.
 
 #### Overview
 
-You use Swift’s `throw` statement and `do`-`catch` statement to throw and catch errors from Cocoa APIs.  Swift imports Cocoa methods with error parameters as throwing methods, as described in [`About Imported Cocoa Error Parameters`](about-imported-cocoa-error-parameters.md).
+You use Swift’s `throw` statement and `do`-`catch` statement to throw and catch errors from Cocoa APIs.  Swift imports Cocoa methods with error parameters as throwing methods, as described in [About Imported Cocoa Error Parameters](./about-imported-cocoa-error-parameters.md).
 
 ##### Catch Errors
 
@@ -60,7 +61,7 @@ throw NSError(domain: NSURLErrorDomain, code: NSURLErrorCannotOpenFile, userInfo
 
 If Objective-C code calls a Swift method that throws an error, the error is automatically propagated to the error pointer argument of the bridged Objective-C method.
 
-##### Throw and Catch Errors From Custom Error Domains
+##### Throw and Catch Errors from Custom Error Domains
 
 You use custom error domains in Cocoa to group related categories of errors. The example below uses the `NS_ERROR_ENUM` macro to group error constants:
 
@@ -101,21 +102,22 @@ do {
 }
 ```
 
-##### Handle Exceptions in Objective C Only
+##### Handle Exceptions in Objective-C Only
 
-In Objective-C, exceptions are distinct from errors. Objective-C exception handling uses the `@try`, `@catch`, and `@throw` syntax to indicate unrecoverable programmer errors. This is distinct from the Cocoa pattern—described above—that uses a trailing [`NSError`](https://developer.apple.com/documentation/foundation/nserror) parameter to indicate recoverable errors that you plan for during development.
+In Objective-C, exceptions are distinct from errors. Objective-C exception handling uses the `@try`, `@catch`, and `@throw` syntax to indicate unrecoverable programmer errors. This is distinct from the Cocoa pattern—described above—that uses a trailing [`NSError`](../Foundation/nserror.md) parameter to indicate recoverable errors that you plan for during development.
 
-In Swift, you can recover from errors passed using Cocoa’s error pattern, as described above in [`Catch Errors`](handling-cocoa-errors-in-swift#Catch-Errors.md). However, there’s no safe way to recover from Objective-C exceptions in Swift. To handle Objective-C exceptions, write Objective-C code that catches exceptions before they reach any Swift code.
+In Swift, you can recover from errors passed using Cocoa’s error pattern, as described above in [Catch Errors](./handling-cocoa-errors-in-swift.md#Catch-Errors). However, there’s no safe way to recover from Objective-C exceptions in Swift. To handle Objective-C exceptions, write Objective-C code that catches exceptions before they reach any Swift code.
 
 ## See Also
 
-- [Using Key-Value Observing in Swift](using-key-value-observing-in-swift.md)
+### Common Patterns
+- [Using Key-Value Observing in Swift](./using-key-value-observing-in-swift.md)
   Notify objects about changes to the properties of other objects.
-- [Using Delegates to Customize Object Behavior](using-delegates-to-customize-object-behavior.md)
+- [Using Delegates to Customize Object Behavior](./using-delegates-to-customize-object-behavior.md)
   Respond to events on behalf of a delegator.
-- [Managing a Shared Resource Using a Singleton](managing-a-shared-resource-using-a-singleton.md)
+- [Managing a Shared Resource Using a Singleton](./managing-a-shared-resource-using-a-singleton.md)
   Provide access to a shared resource using a single, shared class instance.
-- [About Imported Cocoa Error Parameters](about-imported-cocoa-error-parameters.md)
+- [About Imported Cocoa Error Parameters](./about-imported-cocoa-error-parameters.md)
   Learn how Cocoa error parameters are converted to Swift throwing methods.
 
 

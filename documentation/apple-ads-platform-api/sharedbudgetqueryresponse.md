@@ -1,7 +1,8 @@
 # SharedBudgetQueryResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response object for a budget order query.
 
@@ -10,7 +11,7 @@ The response object for a budget order query.
 
 ## Declaration
 
-```swift
+```
 object SharedBudgetQueryResponse
 ```
 
@@ -64,27 +65,27 @@ The budget order query endpoint returns `SharedBudgetQueryResponse`, which conta
 
 - `result` ([SharedBudget]): Array of `SharedBudget` objects matching the query filters. Omitted entirely on failure rather than returned as `null`. Read-only.
 - `pagination` (QueryPaginationResult): Pagination metadata for the result set, including `pageSize` (number of results per page), `offset` (zero-based offset of the first result), and `totalCount` (total number of matching records, only populated when the request sends `fetchTotalCount: true`). Read-only.
-- `error` (Error): Error details if the request failed. Omitted entirely on success and never returned as `"error": null`. Only appears when the operation fails. See [`Error`](error.md). Read-only.
+- `error` (Error): Error details if the request failed. Omitted entirely on success and never returned as `"error": null`. Only appears when the operation fails. See [`Error`](./error.md). Read-only.
 
 ## See Also
 
-- [object SharedBudget](sharedbudget.md)
+- [object SharedBudget](./sharedbudget.md)
   A budget order.
-- [object SharedBudgetCreate](sharedbudgetcreate.md)
+- [object SharedBudgetCreate](./sharedbudgetcreate.md)
   The request body for creating a new budget order.
-- [object SharedBudgetUpdate](sharedbudgetupdate.md)
+- [object SharedBudgetUpdate](./sharedbudgetupdate.md)
   Request body for updating an existing budget order.
-- [object SharedBudgetResponse](sharedbudgetresponse.md)
+- [object SharedBudgetResponse](./sharedbudgetresponse.md)
   The response object for a single budget order operation.
-- [object SharedBudgetAssignment](sharedbudgetassignment.md)
+- [object SharedBudgetAssignment](./sharedbudgetassignment.md)
   Represents a single budget order assignment within a campaign’s `sharedBudgets` array.
-- [object SharedBudgetAssignmentCreate](sharedbudgetassignmentcreate.md)
+- [object SharedBudgetAssignmentCreate](./sharedbudgetassignmentcreate.md)
   Request payload for assigning a campaign to a budget order at campaign creation time.
-- [object SharedBudgetAssignmentUpdate](sharedbudgetassignmentupdate.md)
+- [object SharedBudgetAssignmentUpdate](./sharedbudgetassignmentupdate.md)
   Request payload for changing or removing a campaign’s budget order assignment.
-- [object InvoiceDetail](invoicedetail.md)
+- [object InvoiceDetail](./invoicedetail.md)
   Invoice billing details for accounts on the Line of Credit (LOC) payment model.
-- [object InvoiceDetailUpdate](invoicedetailupdate.md)
+- [object InvoiceDetailUpdate](./invoicedetailupdate.md)
   The request body for updating the invoice details of a budget order.
 
 

@@ -1,6 +1,7 @@
 # Merge Policies
 
-**Framework**: Core Data
+**Framework**: Core Data  
+**Role**: API Collection
 
 Define standard ways to handle conflicts during a save operation.
 
@@ -11,30 +12,31 @@ Define standard ways to handle conflicts during a save operation.
 ## Topics
 
 ### Policies
-- [var NSErrorMergePolicy: AnyObject](nserrormergepolicy.md)
+- [var NSErrorMergePolicy: AnyObject](./nserrormergepolicy.md)
   The default merge policy for all managed object contexts.
-- [var NSMergeByPropertyStoreTrumpMergePolicy: AnyObject](nsmergebypropertystoretrumpmergepolicy.md)
+- [var NSMergeByPropertyStoreTrumpMergePolicy: AnyObject](./nsmergebypropertystoretrumpmergepolicy.md)
   A property-based merge policy that applies external changes.
-- [var NSMergeByPropertyObjectTrumpMergePolicy: AnyObject](nsmergebypropertyobjecttrumpmergepolicy.md)
+- [var NSMergeByPropertyObjectTrumpMergePolicy: AnyObject](./nsmergebypropertyobjecttrumpmergepolicy.md)
   A property-based merge policy that applies in-memory changes.
-- [var NSOverwriteMergePolicy: AnyObject](nsoverwritemergepolicy.md)
+- [var NSOverwriteMergePolicy: AnyObject](./nsoverwritemergepolicy.md)
   A merge policy that overwrites the entire stored object.
-- [var NSRollbackMergePolicy: AnyObject](nsrollbackmergepolicy.md)
+- [var NSRollbackMergePolicy: AnyObject](./nsrollbackmergepolicy.md)
   A merge policy that discards unsaved changes.
-- [enum NSMergePolicyType](nsmergepolicytype.md)
+- [enum NSMergePolicyType](./nsmergepolicytype.md)
   Constants that define merge policy types.
 
 ## See Also
 
-- [class var error: NSMergePolicy](nsmergepolicy/error.md)
+### Defining Merge Policies
+- [class var error: NSMergePolicy](./nsmergepolicy/error.md)
   The default merge policy for all managed object contexts.
-- [class var mergeByPropertyStoreTrump: NSMergePolicy](nsmergepolicy/mergebypropertystoretrump.md)
+- [class var mergeByPropertyStoreTrump: NSMergePolicy](./nsmergepolicy/mergebypropertystoretrump.md)
   A property-based merge policy that applies external changes.
-- [class var mergeByPropertyObjectTrump: NSMergePolicy](nsmergepolicy/mergebypropertyobjecttrump.md)
+- [class var mergeByPropertyObjectTrump: NSMergePolicy](./nsmergepolicy/mergebypropertyobjecttrump.md)
   A property-based merge policy that applies in-memory changes.
-- [class var overwrite: NSMergePolicy](nsmergepolicy/overwrite.md)
+- [class var overwrite: NSMergePolicy](./nsmergepolicy/overwrite.md)
   A merge policy that overwrites the entire stored object.
-- [class var rollback: NSMergePolicy](nsmergepolicy/rollback.md)
+- [class var rollback: NSMergePolicy](./nsmergepolicy/rollback.md)
   A merge policy that discards unsaved changes.
 
 

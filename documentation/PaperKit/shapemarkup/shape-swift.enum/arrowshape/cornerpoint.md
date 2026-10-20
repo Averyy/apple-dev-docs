@@ -1,7 +1,8 @@
 # cornerPoint
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the arrow’s corner (where the two sides meet) in unit coordinate space.
 

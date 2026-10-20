@@ -1,7 +1,8 @@
 # tanh
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An activation function that returns the hyperbolic tangent of its input.
 
@@ -11,8 +12,10 @@ An activation function that returns the hyperbolic tangent of its input.
 - Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,7 +25,7 @@ static var tanh: BNNSActivationFunction { get }
 
 ## Mentions
 
-- [Using Long Short-Term Memory Layers (LSTM)](using-long-short-term-memory-layers-lstm.md)
+- [Using Long Short-Term Memory Layers (LSTM)](../using-long-short-term-memory-layers-lstm.md)
 
 #### Discussion
 
@@ -34,31 +37,32 @@ tanh(x)
 
 The following illustrates the output that the activation function generates from inputs in the range `-10...10`:
 
-![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis.](/images/com.apple.accelerate/media-3401563@2x.png)
+![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3401563@2x.png)
 
 ## See Also
 
-- [static var abs: BNNSActivationFunction](bnnsactivationfunction/abs.md)
+### Activation Functions
+- [static var abs: BNNSActivationFunction](./abs.md)
   An activation function that returns the absolute value of its input.
-- [static var clamp: BNNSActivationFunction](bnnsactivationfunction/clamp.md)
+- [static var clamp: BNNSActivationFunction](./clamp.md)
   An activation function that returns its input clamped to a specified range.
-- [static var identity: BNNSActivationFunction](bnnsactivationfunction/identity.md)
+- [static var identity: BNNSActivationFunction](./identity.md)
   An activation function that returns its input.
-- [static var integerLinearSaturate: BNNSActivationFunction](bnnsactivationfunction/integerlinearsaturate.md)
+- [static var integerLinearSaturate: BNNSActivationFunction](./integerlinearsaturate.md)
   An activation function that returns an arithmetic shift, preserving sign.
-- [static var integerLinearSaturatePerChannel: BNNSActivationFunction](bnnsactivationfunction/integerlinearsaturateperchannel.md)
+- [static var integerLinearSaturatePerChannel: BNNSActivationFunction](./integerlinearsaturateperchannel.md)
   An activation function that returns an arithmetic shift, preserving sign for each channel.
-- [static var leakyRectifiedLinear: BNNSActivationFunction](bnnsactivationfunction/leakyrectifiedlinear.md)
+- [static var leakyRectifiedLinear: BNNSActivationFunction](./leakyrectifiedlinear.md)
   An activation function that returns its input when that is greater than or equal to zero, otherwise it returns its input multiplied by a specified value.
-- [static var linear: BNNSActivationFunction](bnnsactivationfunction/linear.md)
+- [static var linear: BNNSActivationFunction](./linear.md)
   An activation function that returns its input multiplied by a specified value.
-- [static var rectifiedLinear: BNNSActivationFunction](bnnsactivationfunction/rectifiedlinear.md)
+- [static var rectifiedLinear: BNNSActivationFunction](./rectifiedlinear.md)
   An activation function that returns its input when that is greater than or equal to zero, otherwise it returns zero.
-- [static var scaledTanh: BNNSActivationFunction](bnnsactivationfunction/scaledtanh.md)
+- [static var scaledTanh: BNNSActivationFunction](./scaledtanh.md)
   An activation function that returns the scaled hyperbolic tangent of its input.
-- [static var sigmoid: BNNSActivationFunction](bnnsactivationfunction/sigmoid.md)
+- [static var sigmoid: BNNSActivationFunction](./sigmoid.md)
   An activation function that returns the sigmoid function of its input.
-- [static var softmax: BNNSActivationFunction](bnnsactivationfunction/softmax.md)
+- [static var softmax: BNNSActivationFunction](./softmax.md)
   An activation function that returns the softmax function of its input.
 
 

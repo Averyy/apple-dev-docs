@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns the GPU device that this command buffer belongs to.
@@ -18,6 +19,10 @@ Returns the GPU device that this command buffer belongs to.
 
 ```swift
 var device: any MTLDevice { get }
+```
+
+```objc
+@property (readonly) id<MTLDevice> device;
 ```
 
 

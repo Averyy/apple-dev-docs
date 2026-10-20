@@ -1,7 +1,8 @@
 # menu(contents:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.4+
@@ -12,8 +13,28 @@
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+func menu(contents: AVLegibleMediaOptionsMenuController.MenuContents = []) -> UIMenu?
+```
+
+*macOS*
+
 ```swift
 func menu(contents: AVLegibleMediaOptionsMenuController.MenuContents = []) -> NSMenu?
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+- (UIMenu *) menuWithContents:(AVLegibleMediaOptionsMenuContents) contents;
+```
+
+*macOS*
+
+```objc
+- (NSMenu *) menuWithContents:(AVLegibleMediaOptionsMenuContents) contents;
 ```
 
 #### Return Value
@@ -32,10 +53,11 @@ Returns nil if the requested menu type cannot be built due to missing content (e
 
 ## See Also
 
-- [var menuState: AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenucontroller/menustate.md)
-- [AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents.md)
-- [struct AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenustate.md)
-- [AVLegibleMediaOptionsMenuController.StateChangeReason](avlegiblemediaoptionsmenucontroller/statechangereason.md)
+### Managing the menu
+- [var menuState: AVLegibleMediaOptionsMenuState](./menustate.md)
+- [AVLegibleMediaOptionsMenuController.MenuContents](./menucontents.md)
+- [struct AVLegibleMediaOptionsMenuState](../avlegiblemediaoptionsmenustate.md)
+- [AVLegibleMediaOptionsMenuController.StateChangeReason](./statechangereason.md)
 
 
 ---

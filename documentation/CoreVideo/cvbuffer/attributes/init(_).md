@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Convert CreationAttributes to Attributes
 

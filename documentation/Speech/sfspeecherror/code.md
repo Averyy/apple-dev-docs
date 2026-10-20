@@ -1,7 +1,8 @@
 # SFSpeechError.Code
 
 **Framework**: Speech  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes that can be thrown under the Speech framework’s error domain.
 
@@ -19,63 +20,68 @@ Error codes that can be thrown under the Speech framework’s error domain.
 enum Code
 ```
 
+```c
+enum SFSpeechErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Audio input errors
-- [static var audioDisordered: SFSpeechError.Code](sfspeecherror/code/audiodisordered.md)
+- [static var audioDisordered: SFSpeechError.Code](./code/audiodisordered.md)
   The audio input time-code overlaps or precedes prior audio input.
-- [SFSpeechError.Code.audioReadFailed](sfspeecherror/code/audioreadfailed.md)
+- [SFSpeechError.Code.audioReadFailed](./code/audioreadfailed.md)
   The audio source could not be read.
 ### Audio format errors
-- [static var incompatibleAudioFormats: SFSpeechError.Code](sfspeecherror/code/incompatibleaudioformats.md)
+- [static var incompatibleAudioFormats: SFSpeechError.Code](./code/incompatibleaudioformats.md)
   The selected modules do not have an audio format in common or do not support an audio format.
-- [static var unexpectedAudioFormat: SFSpeechError.Code](sfspeecherror/code/unexpectedaudioformat.md)
+- [static var unexpectedAudioFormat: SFSpeechError.Code](./code/unexpectedaudioformat.md)
   The audio input is in unexpected format.
 ### Asset errors
-- [static var assetLocaleNotAllocated: SFSpeechError.Code](sfspeecherror/code/assetlocalenotallocated.md)
+- [static var assetLocaleNotAllocated: SFSpeechError.Code](./code/assetlocalenotallocated.md)
   The asset locale has not been allocated, but module requires it.
-- [static var cannotAllocateUnsupportedLocale: SFSpeechError.Code](sfspeecherror/code/cannotallocateunsupportedlocale.md)
+- [static var cannotAllocateUnsupportedLocale: SFSpeechError.Code](./code/cannotallocateunsupportedlocale.md)
   The asset locale being requested is not supported by SpeechFramework.
-- [static var noModel: SFSpeechError.Code](sfspeecherror/code/nomodel.md)
+- [static var noModel: SFSpeechError.Code](./code/nomodel.md)
   The selected locale/options does not have an appropriate model available or downloadable.
-- [SFSpeechError.Code.timeout](sfspeecherror/code/timeout.md)
+- [SFSpeechError.Code.timeout](./code/timeout.md)
   The operation timed out.
-- [static var tooManyAssetLocalesAllocated: SFSpeechError.Code](sfspeecherror/code/toomanyassetlocalesallocated.md)
+- [static var tooManyAssetLocalesAllocated: SFSpeechError.Code](./code/toomanyassetlocalesallocated.md)
   The application has allocated too many locales.
 ### Custom language model errors
-- [SFSpeechError.Code.malformedSupplementalModel](sfspeecherror/code/malformedsupplementalmodel.md)
+- [SFSpeechError.Code.malformedSupplementalModel](./code/malformedsupplementalmodel.md)
   The custom language model file was malformed.
-- [SFSpeechError.Code.missingParameter](sfspeecherror/code/missingparameter.md)
+- [SFSpeechError.Code.missingParameter](./code/missingparameter.md)
   A required parameter is missing/nil.
-- [SFSpeechError.Code.undefinedTemplateClassName](sfspeecherror/code/undefinedtemplateclassname.md)
+- [SFSpeechError.Code.undefinedTemplateClassName](./code/undefinedtemplateclassname.md)
   The custom language model templates were malformed.
 ### Other errors
-- [static var insufficientResources: SFSpeechError.Code](sfspeecherror/code/insufficientresources.md)
+- [static var insufficientResources: SFSpeechError.Code](./code/insufficientresources.md)
   There are not sufficient resources available on-device to process the incoming transcription request.
-- [SFSpeechError.Code.internalServiceError](sfspeecherror/code/internalserviceerror.md)
+- [SFSpeechError.Code.internalServiceError](./code/internalserviceerror.md)
   There was an internal error.
-- [static var moduleOutputFailed: SFSpeechError.Code](sfspeecherror/code/moduleoutputfailed.md)
+- [static var moduleOutputFailed: SFSpeechError.Code](./code/moduleoutputfailed.md)
   The module’s result task failed.
 ### Initializers
-- [init?(rawValue: Int)](sfspeecherror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 ### Type Properties
-- [static var cannotConfigureAudioSystem: SFSpeechError.Code](sfspeecherror/code/cannotconfigureaudiosystem.md)
+- [static var cannotConfigureAudioSystem: SFSpeechError.Code](./code/cannotconfigureaudiosystem.md)
   The audio source could not be configured.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let SFSpeechErrorDomain: String](sfspeecherrordomain.md)
-- [struct SFSpeechError](sfspeecherror.md)
+### Errors
+- [let SFSpeechErrorDomain: String](../sfspeecherrordomain.md)
+- [struct SFSpeechError](../sfspeecherror.md)
 
 
 ---

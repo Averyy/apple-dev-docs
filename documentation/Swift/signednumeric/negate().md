@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Replaces this value with its additive inverse.
@@ -38,6 +39,12 @@ var y = Int8.min
 y.negate()
 // Overflow error
 ```
+
+## Default Implementations
+
+### SignedNumeric Implementations
+- [func negate()](./negate%28%29-4f1ov.md)
+  Replaces this value with its additive inverse.
 
 
 ---

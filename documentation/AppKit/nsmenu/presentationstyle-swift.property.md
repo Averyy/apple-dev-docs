@@ -1,7 +1,8 @@
 # presentationStyle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The presentation style of the menu.
 
@@ -14,13 +15,18 @@ The presentation style of the menu.
 var presentationStyle: NSMenu.PresentationStyle { get set }
 ```
 
+```objc
+@property NSMenuPresentationStyle presentationStyle;
+```
+
 #### Discussion
 
 This property isn’t respected if the menu is the main menu of the app.
 
 ## See Also
 
-- [NSMenu.PresentationStyle](nsmenu/presentationstyle-swift.enum.md)
+### Managing Presentation Styles
+- [NSMenu.PresentationStyle](./presentationstyle-swift.enum.md)
   Specifies the style of a menu.
 
 

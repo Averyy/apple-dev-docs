@@ -1,14 +1,15 @@
 # deviceID
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device’s unique stable identifier.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -26,7 +27,8 @@ The max length is `64 UTF-8` bytes. UUID strings are permitted. The following ar
 
 ## See Also
 
-- [var deviceName: String](electrichvacloadevent/devicename.md)
+### Getting device information
+- [var deviceName: String](./devicename.md)
   A human-readable name for the device.
 
 

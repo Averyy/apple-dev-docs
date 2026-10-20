@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty time mapping.
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [init(source: CMTimeRange, target: CMTimeRange)](cmtimemapping/init(source:target:).md)
+### Creating a Timebase
+- [init(source: CMTimeRange, target: CMTimeRange)](./init%28source,target%29.md)
   Creates a time mapping with a source and target time range.
 
 

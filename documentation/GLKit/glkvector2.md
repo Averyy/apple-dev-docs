@@ -1,7 +1,8 @@
 # GLKVector2
 
 **Framework**: GLKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A representation of a 2-component vector.
 
@@ -15,6 +16,10 @@ A representation of a 2-component vector.
 
 ```swift
 typealias GLKVector2 = _GLKVector2
+```
+
+```c
+typedef union _GLKVector2 GLKVector2;
 ```
 
 #### Overview

@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/image-inputs.html
 
 # Image Input and Output
 
-**
-
-- [.md](../_sources/source/image-inputs.md)
-- **
-
-.pdf
-
-**
-
-# Image Input and Output
-
- Table of contents 
-
-## Contents
-
-# Image Input and Output
-
 The Core ML Tools [Unified Conversion API](unified-conversion-api.md) generates by default a Core ML model with a multidimensional array ([MLMultiArray](https://developer.apple.com/documentation/coreml/mlmultiarray)) as the type for input and output. If your model uses images for input, you can instead specify  [ImageType](https://apple.github.io/coremltools/source/coremltools.converters.mil.input_types.html#coremltools.converters.mil.input_types.ImageType) for the input. Starting in coremltools version 6, you can also specify `ImageType` for the output.
 
 ImageType Now Supported for Output
@@ -67,7 +50,9 @@ model.save("MobileNetV2.mlmodel")
 
 View the resulting model, saved as `MobileNetV2.mlmodel`, in Xcode. As you can see in the following figure, the input is called `image_array` and is a `MultiArray(1 x 224 x 224 x 3)` of type `Float32`:
 
-You can rename the inputs and outputs using the [rename_feature()](https://apple.github.io/coremltools/source/coremltools.models.html#coremltools.models.utils.rename_feature) method. For an example, see [Rename a Feature](mlmodel-utilities.html#rename-a-feature).
+![MLMultiArray](https://apple.github.io/coremltools/docs-guides/_images/mobilenet-image-array.png)
+
+You can rename the inputs and outputs using the [rename_feature()](https://apple.github.io/coremltools/source/coremltools.models.html#coremltools.models.utils.rename_feature) method. For an example, see [Rename a Feature](mlmodel-utilities.md#rename-a-feature).
 
 One benefit of using the `MLMultiArray` type that is not available with `ImageType` is that the `MLMultiArray` lets you pass a batch of data. In the previous example, if you convert a model with input shape `(10, 224, 224, 3)`, input values can be passed as a batch of 10.
 
@@ -120,6 +105,8 @@ model.save("MobileNetV2.mlmodel")
 ```
 
 The following figure shows the model preview in Xcode. The `image` input is of type `Image` with attributes set to `(Color, 224 224)`. You can rename the inputs and outputs using the [rename_feature()](https://apple.github.io/coremltools/source/coremltools.models.html#coremltools.models.utils.rename_feature) method.
+
+![Image input](https://apple.github.io/coremltools/docs-guides/_images/mobilenet-image-2.png)
 
 In the above figure, the `image` input is of type `Image` with attributes set to `(Color, 224 224)`.
 
@@ -175,7 +162,7 @@ class ImageFilteringModel(torch.nn.Module):
 
 #### Trace the PyTorch Model
 
-The following code snippet traces the model instantiated from `ImageFilteringModel`, using  a 256 x 256 pixel image as its shape. The code uses `jit` ([JIT tracer](https://pytorch.org/docs/stable/generated/torch.jit.trace.md)) to generate TorchScript. For details about tracing PyTorch models before converting them, see [Model Tracing](model-tracing.md).
+The following code snippet traces the model instantiated from `ImageFilteringModel`, using  a 256 x 256 pixel image as its shape. The code uses `jit` ([JIT tracer](https://pytorch.org/docs/stable/generated/torch.jit.trace.html)) to generate TorchScript. For details about tracing PyTorch models before converting them, see [Model Tracing](model-tracing.md).
 
 ```
 torch_model = ImageFilteringModel()
@@ -213,7 +200,7 @@ display(img)
 img.save("palmtrees_256_by_256.jpg")
 ```
 
-![Test image of palm trees](../_images/palmtrees_256_by_256.jpg)
+![Test image of palm trees](https://apple.github.io/coremltools/docs-guides/_images/palmtrees_256_by_256.jpg)
 
 Photo of palm trees and moon.
 
@@ -223,7 +210,7 @@ display(output)
 output.save("palmtrees_result.png")
 ```
 
-![Resulting image](../_images/palmtrees_result.png)
+![Resulting image](https://apple.github.io/coremltools/docs-guides/_images/palmtrees_result.png)
 
 Same photo, whitened by the blanching model.
 
@@ -239,7 +226,11 @@ coreml_model.save("ColorToColorModel.mlpackage")
 
 You can now double-click the ML package to open it in Xcode. Open the **Preview** tab and drag an image to the input well to test it:
 
+![Drag palmtrees image](https://apple.github.io/coremltools/docs-guides/_images/xcode-drag-palmtrees-preview.png)
+
 Click the **Stylized** button in the preview:
+
+![Click Stylize](https://apple.github.io/coremltools/docs-guides/_images/xcode-palmtrees-stylized-preview.png)
 
 The Xcode preview verifies that the converted model transforms any JPEG image.
 
@@ -332,7 +323,7 @@ Torch specifies preprocessing with [torchvision.transform.Normalize](https://pyt
 
 *output[channel]* = (*input[channel]* - **mean** *[channel])* / **std** *[channel]*
 
-For all pre-trained [torchvision](https://pytorch.org/vision/stable/index.md) models, including MobileNetV2, the values are as follows:
+For all pre-trained [torchvision](https://pytorch.org/vision/stable/index.html) models, including MobileNetV2, the values are as follows:
 
 - **mean** is `[0.485, 0.456, 0.406]`.
 - **std** (standard deviation) is `[0.229, 0.224, 0.225]` .
@@ -392,5 +383,3 @@ model = ct.convert(
     inputs=[image_input]
 )
 ```
-
-** Contents

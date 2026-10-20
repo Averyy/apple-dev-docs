@@ -1,7 +1,8 @@
 # kJSClassDefinitionEmpty
 
 **Framework**: JavaScriptCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A class definition structure of the current version that contains null pointers and has no attributes.
 
@@ -19,6 +20,10 @@ A class definition structure of the current version that contains null pointers 
 let kJSClassDefinitionEmpty: JSClassDefinition
 ```
 
+```c
+extern const JSClassDefinition kJSClassDefinitionEmpty;
+```
+
 #### Discussion
 
 Use this constant as a convenience when creating class definitions. For example, to create a class definition with only a finalize method.
@@ -30,15 +35,16 @@ definition.finalize = Finalize;
 
 ## See Also
 
-- [func JSClassCreate(UnsafePointer<JSClassDefinition>!) -> JSClassRef!](jsclasscreate(_:).md)
+### Working with Classes
+- [func JSClassCreate(UnsafePointer<JSClassDefinition>!) -> JSClassRef!](./jsclasscreate%28_%29.md)
   Creates a JavaScript class.
-- [func JSClassRelease(JSClassRef!)](jsclassrelease(_:).md)
+- [func JSClassRelease(JSClassRef!)](./jsclassrelease%28_%29.md)
   Releases a JavaScript class.
-- [func JSClassRetain(JSClassRef!) -> JSClassRef!](jsclassretain(_:).md)
+- [func JSClassRetain(JSClassRef!) -> JSClassRef!](./jsclassretain%28_%29.md)
   Retains a JavaScript class.
-- [struct JSClassDefinition](jsclassdefinition.md)
+- [struct JSClassDefinition](./jsclassdefinition.md)
   A structure that contains properties and callbacks that define a type of object.
-- [JSClassAttribute](jsclassattribute.md)
+- [JSClassAttribute](./jsclassattribute.md)
   A JavaScript class attribute.
 
 

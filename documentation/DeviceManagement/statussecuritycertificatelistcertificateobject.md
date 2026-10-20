@@ -1,7 +1,8 @@
 # StatusSecurityCertificateListCertificateObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A security certificate.
 
@@ -16,13 +17,15 @@ A security certificate.
 
 ## Declaration
 
-```swift
+```
 object StatusSecurityCertificateListCertificateObject
 ```
 
 ## Properties
 
 - `_removed` (boolean): If `true`, the system removed the certificate and only this key and the `identifier` key are present in the status item object.
+
+  **Default**: `false`
 - `data` (string) *(required)*: The certificate data in DER-encoded X.509 format.
 - `declaration-identifier` (string): The identifier of the asset declaration that installed the certificate, which is only present if a declaration installed the certificate.
 - `identifier` (string) *(required)*: The unique identifier of the certificate which the system uses as the primary key.

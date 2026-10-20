@@ -1,21 +1,22 @@
 # GameCenterLeaderboardImage.Relationships.GameCenterLeaderboardLocalization
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.0+
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardImage.Relationships.GameCenterLeaderboardLocalization
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterLeaderboardImage.Relationships.GameCenterLeaderboardLocalization.Data](gamecenterleaderboardimage/relationships-data.dictionary/gamecenterleaderboardlocalization-data.dictionary/data-data.dictionary.md)
+- [object GameCenterLeaderboardImage.Relationships.GameCenterLeaderboardLocalization.Data](./gamecenterleaderboardlocalization-data.dictionary/data-data.dictionary.md)
   The request body you use to update a leaderboard.
 
 ## Properties

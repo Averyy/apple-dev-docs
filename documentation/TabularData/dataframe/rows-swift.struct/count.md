@@ -1,7 +1,8 @@
 # count
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of rows in the collection.
 

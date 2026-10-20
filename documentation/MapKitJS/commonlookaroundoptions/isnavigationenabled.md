@@ -1,7 +1,8 @@
 # isNavigationEnabled
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A Boolean value that indicates whether someone can navigate inside the Look Around view.
 
@@ -10,23 +11,24 @@ A Boolean value that indicates whether someone can navigate inside the Look Arou
 
 ## Declaration
 
-```swift
+```
 isNavigationEnabled?: boolean;
 ```
 
 ## See Also
 
-- [isScrollEnabled](commonlookaroundoptions/isscrollenabled.md)
+### Controlling Look Around behavior
+- [isScrollEnabled](./isscrollenabled.md)
   A Boolean value that indicates whether someone can scroll the Look Around view.
-- [isZoomEnabled](commonlookaroundoptions/iszoomenabled.md)
+- [isZoomEnabled](./iszoomenabled.md)
   A Boolean value that indicates whether someone can scroll the Look Around view.
-- [openDialog](commonlookaroundoptions/opendialog.md)
+- [openDialog](./opendialog.md)
   A Boolean value that indicates whether someone can scroll the Look Around view.
-- [padding](commonlookaroundoptions/padding.md)
+- [padding](./padding.md)
   The values that define content padding within the Look Around view frame.
-- [showsPointsOfInterest](commonlookaroundoptions/showspointsofinterest.md)
+- [showsPointsOfInterest](./showspointsofinterest.md)
   A Boolean value that indicates whether the Look Around view display points of interest (POIs).
-- [showsRoadLabels](commonlookaroundoptions/showsroadlabels.md)
+- [showsRoadLabels](./showsroadlabels.md)
   A Boolean value that indicates whether the Look Around view display road labels.
 
 

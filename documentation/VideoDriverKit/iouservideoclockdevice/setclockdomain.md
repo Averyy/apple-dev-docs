@@ -1,7 +1,8 @@
 # SetClockDomain
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the clock domain value of the clock device.
 
@@ -10,7 +11,7 @@ Sets the clock domain value of the clock device.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetClockDomain(uint32_t in_clock_domain);
 ```
 
@@ -30,7 +31,8 @@ Drivers can change the clock domain of the clock device dynamically. If successf
 
 ## See Also
 
-- [GetClockDomain](iouservideoclockdevice/getclockdomain.md)
+### Working with the clock domain
+- [GetClockDomain](./getclockdomain.md)
   Gets the clock domain value of the clock device.
 
 

@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_GammaLevel
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -17,18 +18,23 @@
 let kVTCompressionPropertyKey_GammaLevel: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_GammaLevel;
+```
+
 ## See Also
 
-- [let kVTCompressionPropertyKey_AlphaChannelMode: CFString](kvtcompressionpropertykey_alphachannelmode.md)
-- [let kVTCompressionPropertyKey_ColorPrimaries: CFString](kvtcompressionpropertykey_colorprimaries.md)
+### Color
+- [let kVTCompressionPropertyKey_AlphaChannelMode: CFString](./kvtcompressionpropertykey_alphachannelmode.md)
+- [let kVTCompressionPropertyKey_ColorPrimaries: CFString](./kvtcompressionpropertykey_colorprimaries.md)
   The color primaries for compressed content.
-- [let kVTCompressionPropertyKey_ContentLightLevelInfo: CFString](kvtcompressionpropertykey_contentlightlevelinfo.md)
-- [let kVTCompressionPropertyKey_ICCProfile: CFString](kvtcompressionpropertykey_iccprofile.md)
+- [let kVTCompressionPropertyKey_ContentLightLevelInfo: CFString](./kvtcompressionpropertykey_contentlightlevelinfo.md)
+- [let kVTCompressionPropertyKey_ICCProfile: CFString](./kvtcompressionpropertykey_iccprofile.md)
   The ICC profile for compressed content.
-- [let kVTCompressionPropertyKey_MasteringDisplayColorVolume: CFString](kvtcompressionpropertykey_masteringdisplaycolorvolume.md)
-- [let kVTCompressionPropertyKey_TransferFunction: CFString](kvtcompressionpropertykey_transferfunction.md)
+- [let kVTCompressionPropertyKey_MasteringDisplayColorVolume: CFString](./kvtcompressionpropertykey_masteringdisplaycolorvolume.md)
+- [let kVTCompressionPropertyKey_TransferFunction: CFString](./kvtcompressionpropertykey_transferfunction.md)
   The transfer function for compressed content.
-- [let kVTCompressionPropertyKey_YCbCrMatrix: CFString](kvtcompressionpropertykey_ycbcrmatrix.md)
+- [let kVTCompressionPropertyKey_YCbCrMatrix: CFString](./kvtcompressionpropertykey_ycbcrmatrix.md)
   The YCbCr matrix for compressed content.
 
 

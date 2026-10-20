@@ -1,7 +1,8 @@
 # callStackTree
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The call stack tree that caused the memory exception.
 

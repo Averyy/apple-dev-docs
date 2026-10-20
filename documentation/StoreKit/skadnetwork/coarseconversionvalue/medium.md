@@ -1,7 +1,8 @@
 # medium
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A string constant value for indicating a medium coarse conversion value.
 
@@ -16,17 +17,22 @@ A string constant value for indicating a medium coarse conversion value.
 static let medium: SKAdNetwork.CoarseConversionValue
 ```
 
+```c
+extern SKAdNetworkCoarseConversionValue const SKAdNetworkCoarseConversionValueMedium;
+```
+
 #### Discussion
 
 This constant has no special meaning. It’s up to the app or ad network to determine its meaning as needed.
 
 ## See Also
 
-- [static let high: SKAdNetwork.CoarseConversionValue](skadnetwork/coarseconversionvalue/high.md)
+### Providing coarse conversion values
+- [static let high: SKAdNetwork.CoarseConversionValue](./high.md)
   A string constant value for indicating a high coarse conversion value.
-- [static let low: SKAdNetwork.CoarseConversionValue](skadnetwork/coarseconversionvalue/low.md)
+- [static let low: SKAdNetwork.CoarseConversionValue](./low.md)
   A string constant value for indicating a low coarse conversion value.
-- [init(rawValue: String)](skadnetwork/coarseconversionvalue/init(rawvalue:).md)
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates a coarse conversion value from the raw value.
 
 

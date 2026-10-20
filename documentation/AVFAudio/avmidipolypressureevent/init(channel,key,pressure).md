@@ -1,7 +1,8 @@
 # init(channel:key:pressure:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an event with a channel, MIDI key number, and a key pressure value.
 
@@ -17,6 +18,10 @@ Creates an event with a channel, MIDI key number, and a key pressure value.
 
 ```swift
 init(channel: UInt32, key: UInt32, pressure: UInt32)
+```
+
+```objc
+- (instancetype) initWithChannel:(UInt32) channel key:(UInt32) key pressure:(UInt32) pressure;
 ```
 
 ## Parameters

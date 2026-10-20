@@ -1,7 +1,8 @@
 # CMMetadataDataTypeRegistryRegisterDataType(_:description:conformingDataTypes:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Register a data type with the data type registry.
 
@@ -20,9 +21,13 @@ Register a data type with the data type registry.
 func CMMetadataDataTypeRegistryRegisterDataType(_ dataType: CFString, description: CFString, conformingDataTypes: CFArray) -> OSStatus
 ```
 
+```c
+extern OSStatus CMMetadataDataTypeRegistryRegisterDataType(CFStringRef dataType, CFStringRef description, CFArrayRef conformingDataTypes);
+```
+
 #### Return Value
 
-If successful, a nonzero result code. See [`Metadata Registry Error Codes`](metadata-registry-errors.md).
+If successful, a nonzero result code. See [Metadata Registry Error Codes](./metadata-registry-errors.md).
 
 #### Discussion
 

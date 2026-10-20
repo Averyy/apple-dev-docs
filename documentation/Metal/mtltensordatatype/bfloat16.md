@@ -1,7 +1,8 @@
 # MTLTensorDataType.bfloat16
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 16-bit floating point data type with 8 exponent bits, 7 mantissa bits, and 1 sign bit.
 
@@ -17,6 +18,10 @@ A 16-bit floating point data type with 8 exponent bits, 7 mantissa bits, and 1 s
 
 ```swift
 case bfloat16
+```
+
+```c
+MTLTensorDataTypeBFloat16
 ```
 
 

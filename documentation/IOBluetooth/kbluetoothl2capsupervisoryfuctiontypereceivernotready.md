@@ -1,10 +1,11 @@
 # kBluetoothL2CAPSupervisoryFuctionTypeReceiverNotReady
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kBluetoothL2CAPSupervisoryFuctionTypeReceiverNotReady: BluetoothL2CAPSupervisoryFuctionType { get }
 ```
 
+```c
+kBluetoothL2CAPSupervisoryFuctionTypeReceiverNotReady
+```
+
 ## See Also
 
-- [var kBluetoothL2CAPSupervisoryFuctionTypeReceiverReady: BluetoothL2CAPSupervisoryFuctionType](kbluetoothl2capsupervisoryfuctiontypereceiverready.md)
-- [var kBluetoothL2CAPSupervisoryFuctionTypeReject: BluetoothL2CAPSupervisoryFuctionType](kbluetoothl2capsupervisoryfuctiontypereject.md)
-- [var kBluetoothL2CAPSupervisoryFuctionTypeSelectiveReject: BluetoothL2CAPSupervisoryFuctionType](kbluetoothl2capsupervisoryfuctiontypeselectivereject.md)
+### Constants
+- [var kBluetoothL2CAPSupervisoryFuctionTypeReceiverReady: BluetoothL2CAPSupervisoryFuctionType](./kbluetoothl2capsupervisoryfuctiontypereceiverready.md)
+- [var kBluetoothL2CAPSupervisoryFuctionTypeReject: BluetoothL2CAPSupervisoryFuctionType](./kbluetoothl2capsupervisoryfuctiontypereject.md)
+- [var kBluetoothL2CAPSupervisoryFuctionTypeSelectiveReject: BluetoothL2CAPSupervisoryFuctionType](./kbluetoothl2capsupervisoryfuctiontypeselectivereject.md)
 
 
 ---

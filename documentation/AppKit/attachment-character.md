@@ -1,13 +1,14 @@
 # Attachment Character
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 A character that denotes an attachment.
 
 ## Topics
 
 ### Constants
-- [class var character: Int](nstextattachment/character.md)
+- [class var character: Int](./nstextattachment/character.md)
   Specifies a character that denotes an attachment.
 
 

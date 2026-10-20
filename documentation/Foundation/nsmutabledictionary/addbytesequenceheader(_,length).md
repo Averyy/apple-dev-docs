@@ -1,7 +1,8 @@
 # addByteSequenceHeader(_:length:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func addByteSequenceHeader(_ inHeaderData: UnsafeRawPointer!, length inHeaderDataLength: UInt32) -> OBEXError
+```
+
+```objc
+- (OBEXError) addByteSequenceHeader:(const void *) inHeaderData length:(uint32_t) inHeaderDataLength;
 ```
 
 

@@ -1,7 +1,8 @@
 # MLHandPoseClassifier.DataSource.directoryWithImagesAndAnnotation(at:annotationFile:imageColumn:labelColumn:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Creates a data source from a folder that contains images and an annotation file.
 
@@ -30,17 +31,18 @@ case directoryWithImagesAndAnnotation(at: URL, annotationFile: URL, imageColumn:
 
 ## See Also
 
-- [MLHandPoseClassifier.DataSource.labeledDirectories(at:)](mlhandposeclassifier/datasource/labeleddirectories(at:).md)
+### Creating a data source
+- [MLHandPoseClassifier.DataSource.labeledDirectories(at:)](./labeleddirectories%28at%29.md)
   Creates a data source from a folder with subfolders that each contain images of a hand pose.
-- [MLHandPoseClassifier.DataSource.labeledFiles(at:)](mlhandposeclassifier/datasource/labeledfiles(at:).md)
+- [MLHandPoseClassifier.DataSource.labeledFiles(at:)](./labeledfiles%28at%29.md)
   Creates a data source from a folder that contains images, each named after the hand pose it represents.
-- [MLHandPoseClassifier.DataSource.labeledImageDataFrame(_:imageColumn:labelColumn:)](mlhandposeclassifier/datasource/labeledimagedataframe(_:imagecolumn:labelcolumn:).md)
+- [MLHandPoseClassifier.DataSource.labeledImageDataFrame(_:imageColumn:labelColumn:)](./labeledimagedataframe%28_,imagecolumn,labelcolumn%29.md)
   Creates a data source from a data frame that contains the location and annotation for a set of image files.
-- [case labeledKeypointsDataFrame(DataFrame, sessionIdColumn: String, labelColumn: String, featureColumn: String)](mlhandposeclassifier/datasource/labeledkeypointsdataframe(_:sessionidcolumn:labelcolumn:featurecolumn:).md)
+- [case labeledKeypointsDataFrame(DataFrame, sessionIdColumn: String, labelColumn: String, featureColumn: String)](./labeledkeypointsdataframe%28_,sessionidcolumn,labelcolumn,featurecolumn%29.md)
   Creates a data source from a data frame of hand pose observations that each contain the locations of each hand joint and an annotation.
-- [case labeledImageData(table: MLDataTable, imageColumn: String, labelColumn: String)](mlhandposeclassifier/datasource/labeledimagedata(table:imagecolumn:labelcolumn:).md)
+- [case labeledImageData(table: MLDataTable, imageColumn: String, labelColumn: String)](./labeledimagedata%28table,imagecolumn,labelcolumn%29.md)
   Creates a data source from a data table that contains the hand joint locations and annotation for a set of image files.
-- [case labeledKeypointsData(table: MLDataTable, sessionIdColumn: String, labelColumn: String, featureColumn: String)](mlhandposeclassifier/datasource/labeledkeypointsdata(table:sessionidcolumn:labelcolumn:featurecolumn:).md)
+- [case labeledKeypointsData(table: MLDataTable, sessionIdColumn: String, labelColumn: String, featureColumn: String)](./labeledkeypointsdata%28table,sessionidcolumn,labelcolumn,featurecolumn%29.md)
   Creates a data source from a data table of hand pose observations that each contain the locations of each hand joint and an annotation.
 
 

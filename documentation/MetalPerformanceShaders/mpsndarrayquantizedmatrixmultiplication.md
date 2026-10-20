@@ -1,7 +1,8 @@
 # MPSNDArrayQuantizedMatrixMultiplication
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -17,25 +18,29 @@
 class MPSNDArrayQuantizedMatrixMultiplication
 ```
 
+```objc
+@interface MPSNDArrayQuantizedMatrixMultiplication : MPSNDArrayMatrixMultiplication
+```
+
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, leftQuantizationDescriptor: MPSNDArrayQuantizationDescriptor?, rightQuantizationDescriptor: MPSNDArrayQuantizationDescriptor?)](mpsndarrayquantizedmatrixmultiplication/init(device:leftquantizationdescriptor:rightquantizationdescriptor:).md)
+- [init(device: any MTLDevice, leftQuantizationDescriptor: MPSNDArrayQuantizationDescriptor?, rightQuantizationDescriptor: MPSNDArrayQuantizationDescriptor?)](./mpsndarrayquantizedmatrixmultiplication/init%28device,leftquantizationdescriptor,rightquantizationdescriptor%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNDArrayMatrixMultiplication](mpsndarraymatrixmultiplication.md)
+- [MPSNDArrayMatrixMultiplication](./mpsndarraymatrixmultiplication.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

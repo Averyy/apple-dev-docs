@@ -1,6 +1,7 @@
 # Diagnosing Issues with Entitlements
 
-**Framework**: Bundle Resources
+**Framework**: Bundle Resources  
+**Role**: Article
 
 Verify your app’s entitlements at every stage of development to track down errors during distribution.
 
@@ -14,7 +15,7 @@ Before submitting your app for review, limit entitlements to the minimum require
 
 ##### Check Target Capabilities
 
-Adding Capabilities to your Xcode project will sometimes add entries into your project’s entitlements files. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app). In those cases, you may need to manually edit your entitlements file after you turn off those Capabilities to remove the corresponding entries from your entitlements file in cases where Xcode is unable to.
+Adding Capabilities to your Xcode project will sometimes add entries into your project’s entitlements files. For more information, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md). In those cases, you may need to manually edit your entitlements file after you turn off those Capabilities to remove the corresponding entries from your entitlements file in cases where Xcode is unable to.
 
 In your Capabilities tab, make sure you’ve only enabled the minimum set of capabilities needed for your app to function.
 
@@ -26,7 +27,7 @@ Sometimes, error messages involving entitlements may not be specific. If the an 
 
 ##### Check Your Provisioning Profile
 
-You can inspect the entitlements associated with your provisioning profile inside of Xcode by clicking the info button (a small, gray disk with a lowercase “i” in the center) next to the Provisioning Profile field in the Signing editor, in your [`developer account`](https://developer.apple.comhttps://developer.apple.com) online, or by downloading your provisioning profile and viewing its contents using a command-line tool in the Terminal.
+You can inspect the entitlements associated with your provisioning profile inside of Xcode by clicking the info button (a small, gray disk with a lowercase “i” in the center) next to the Provisioning Profile field in the Signing editor, in your [developer account](https://developer.apple.com) online, or by downloading your provisioning profile and viewing its contents using a command-line tool in the Terminal.
 
 Every App ID listed in your developer account can have a number of capabilities associated with it and some of those capabilities are paired with entitlements. Compare the capabilities listed for your App ID with the capabilities selected in your app’s Signing & Capabilities tab and the entitlements appearing in your app’s entitlements file or files.
 
@@ -59,7 +60,7 @@ When you run this command, the `security` tool returns a `plist` file that descr
 </dict>
 ```
 
-##### Check the Entitlements in Your Build Log and App
+##### Check the Entitlements In Your Build Log and App
 
 Verify that Xcode is using the provisioning profile you expect when building your app by inspecting the signing step in your build log. You’ll find the name of the provisioning profile Xcode used to sign your app in the invocation of the `codesign` tool’s command-line parameters.
 
@@ -75,7 +76,7 @@ This command prints a `plist` that contains all of the entitlements built into t
 
 When you submit your app to Apple, Xcode displays a list of entitlements associated with your app in the confirmation window for uploading your app. Verify that all of the entitlements shown are consistent with the entitlements you’ve selected in your project.
 
-##### Fix Installation Failure Entitlement Issues
+##### Fix Installation-Failure Entitlement Issues
 
 You can remove following entitlements from your entitlements file if they are present and cause an error during installation. These may be present in older projects for legacy reasons.
 
@@ -84,15 +85,16 @@ You can remove following entitlements from your entitlements file if they are pr
 
 If you receive the error message “Upgrade’s application-identifier entitlement string [….] does not match installed application’s application-identifier string [….]; rejecting upgrade.” and you’ve changed your application’s id, then you need to add a previous-application-identifiers entitlement to your provisioning profile. Contact Apple Developer programs for assistance using your account’s Developer Contact page > Membership > Enrollment and Account > Apple Developer Program Support form.
 
-##### Fix Problems with Special Entitlements
+##### Fix Problems With Special Entitlements
 
 If you received authorization to use a specific entitlement from a group at Apple and you’re having difficulty with that entitlement, contact that group for troubleshooting assistance.
 
 ## See Also
 
-- [Adding capabilities to your app](../xcode/adding-capabilities-to-your-app.md)
+### Essentials
+- [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md)
   Configure your target to include and customize capabilities that provide access to Apple’s app services.
-- [Signing a daemon with a restricted entitlement](../xcode/signing-a-daemon-with-a-restricted-entitlement.md)
+- [Signing a daemon with a restricted entitlement](../Xcode/signing-a-daemon-with-a-restricted-entitlement.md)
   Wrap a daemon in an app-like structure to use an entitlement thatʼs authorized by a provisioning profile.
 
 

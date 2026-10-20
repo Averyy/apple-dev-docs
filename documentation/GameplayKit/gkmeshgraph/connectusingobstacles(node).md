@@ -1,7 +1,8 @@
 # connectUsingObstacles(node:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified node to the graph, connecting it to its nearest neighbors without creating connections that pass through obstacles or their buffer regions.
 
@@ -19,9 +20,13 @@ Adds the specified node to the graph, connecting it to its nearest neighbors wit
 func connectUsingObstacles(node: NodeType)
 ```
 
+```objc
+- (void) connectNodeUsingObstacles:(NodeType) node;
+```
+
 #### Discussion
 
-The [`GKMeshGraph`](gkmeshgraph.md) class maintains a network of nodes that describes the navigable areas around its collection of obstacles. Adding a new node to the graph connects it to these nodes, such that the resulting network can be used to find paths around the obstacles to the position of the new node. GameplayKit adds new connections only if those connections do not represent a path through any obstacles (or through the buffer region around them, as specified by the [`bufferRadius`](gkmeshgraph/bufferradius.md) property.)
+The [`GKMeshGraph`](../gkmeshgraph.md) class maintains a network of nodes that describes the navigable areas around its collection of obstacles. Adding a new node to the graph connects it to these nodes, such that the resulting network can be used to find paths around the obstacles to the position of the new node. GameplayKit adds new connections only if those connections do not represent a path through any obstacles (or through the buffer region around them, as specified by the [`bufferRadius`](./bufferradius.md) property.)
 
 ## Parameters
 
@@ -29,7 +34,8 @@ The [`GKMeshGraph`](gkmeshgraph.md) class maintains a network of nodes that desc
 
 ## See Also
 
-- [var bufferRadius: Float](gkmeshgraph/bufferradius.md)
+### Working with Nodes
+- [var bufferRadius: Float](./bufferradius.md)
   The distance from obstacle edges that should also be considered impassable.
 
 

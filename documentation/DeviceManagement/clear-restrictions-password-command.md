@@ -1,7 +1,8 @@
 # Clear Restrictions Password
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Clear the Screen Time password and the restrictions on a device.
 
@@ -18,7 +19,7 @@ In iOS 12.2 and later, if Screen Time uses iCloud to share its settings (Share A
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -28,7 +29,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -68,9 +69,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object ClearRestrictionsPasswordCommand](clearrestrictionspasswordcommand.md)
+- [object ClearRestrictionsPasswordCommand](./clearrestrictionspasswordcommand.md)
   The command to clear the Screen Time password and the restrictions on a device.
-- [object ClearRestrictionsPasswordResponse](clearrestrictionspasswordresponse.md)
+- [object ClearRestrictionsPasswordResponse](./clearrestrictionspasswordresponse.md)
   A response from the device after it processes the command to clear the Screen Time password and the restrictions on a device.
 
 ## Endpoint
@@ -79,19 +80,27 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `ClearRestrictionsPasswordCommand`
+
 The request object the server returns for the Clear Restrictions Password Command.
+
+## Responses
+
+- `200` OK (`ClearRestrictionsPasswordResponse`, `application/xml`): The response object the system returns for the Clear Restrictions Password Command.
 
 ## See Also
 
-- [Clear Passcode](clear-passcode-command.md)
+### Passwords
+- [Clear Passcode](./clear-passcode-command.md)
   Remove the passcode from a device.
-- [Unlock User Account](unlock-user-account-command.md)
+- [Unlock User Account](./unlock-user-account-command.md)
   Unlock a user account that the system locked because of too many failed password attempts.
-- [Set Auto Admin Password](set-auto-admin-password-command.md)
+- [Set Auto Admin Password](./set-auto-admin-password-command.md)
   Update the local administrator account password.
-- [Set Firmware Password](set-firmware-password-command.md)
+- [Set Firmware Password](./set-firmware-password-command.md)
   Change or clear the firmware password on a device.
-- [Verify Firmware Password](verify-firmware-password-command.md)
+- [Verify Firmware Password](./verify-firmware-password-command.md)
   Verify the firmware password on a device.
 
 

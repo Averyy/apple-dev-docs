@@ -1,7 +1,8 @@
 # rect
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The coordinates of the subject in the frame.
 
@@ -23,11 +24,12 @@ This is a unit rectangle with coordinate values between `0` and `1`.
 
 ## See Also
 
-- [let faceYawAngle: Measurement<UnitAngle>?](dockaccessory/observation/faceyawangle.md)
+### Getting properties
+- [let faceYawAngle: Measurement<UnitAngle>?](./faceyawangle.md)
   The angle of the face in radians.
-- [let type: DockAccessory.Observation.ObservationType](dockaccessory/observation/type.md)
+- [let type: DockAccessory.Observation.ObservationType](./type.md)
   The type of subject in the frame.
-- [let identifier: Int](dockaccessory/observation/identifier.md)
+- [let identifier: Int](./identifier.md)
   A unique identifier representing the subject in the frame.
 
 

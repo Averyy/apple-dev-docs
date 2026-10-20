@@ -1,7 +1,8 @@
 # PKLassoToolReference
 
 **Framework**: PencilKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A tool for selecting stroked lines and shapes in a canvas view.
 
@@ -18,30 +19,34 @@ A tool for selecting stroked lines and shapes in a canvas view.
 class PKLassoToolReference
 ```
 
+```objc
+@interface PKLassoTool : PKTool
+```
+
 #### Overview
 
-A [`PKLassoToolReference`](pklassotoolreference.md) object supports the selection of content on a [`PKCanvasView`](pkcanvasview.md). When active, the canvas uses incoming touch events to determine what content to add to the selection.
+A [`PKLassoToolReference`](./pklassotoolreference.md) object supports the selection of content on a [`PKCanvasView`](./pkcanvasview.md). When active, the canvas uses incoming touch events to determine what content to add to the selection.
 
-Create a lasso tool programmatically or display a [`PKToolPicker`](pktoolpicker.md) object from which the user selects the tool. Assign the resulting object to the [`tool`](pkcanvasview/tool-6str6.md) property of your [`PKCanvasView`](pkcanvasview.md) object. The canvas uses any subsequent touch sequences to select content on the canvas.
+Create a lasso tool programmatically or display a [`PKToolPicker`](./pktoolpicker.md) object from which the user selects the tool. Assign the resulting object to the [`tool`](./pkcanvasview/tool-6str6.md) property of your [`PKCanvasView`](./pkcanvasview.md) object. The canvas uses any subsequent touch sequences to select content on the canvas.
 
 ## Topics
 
 ### Creating a lasso tool
-- [init()](pklassotoolreference/init.md)
+- [init()](./pklassotoolreference/init%28%29.md)
   Creates a lasso tool object for selecting content on a canvas view.
 
 ## Relationships
 
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

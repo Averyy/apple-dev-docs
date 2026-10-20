@@ -1,25 +1,27 @@
 # incrementValue
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 IOReturn incrementValue(uint64_t channel_id, int64_t increment);
 ```
 
 ## See Also
 
-- [getValue](iosimplereporter/getvalue.md)
-- [initWith](iosimplereporter/initwith.md)
-- [setValue](iosimplereporter/setvalue.md)
+### Instance Methods
+- [getValue](./getvalue.md)
+- [initWith](./initwith.md)
+- [setValue](./setvalue.md)
 
 
 ---

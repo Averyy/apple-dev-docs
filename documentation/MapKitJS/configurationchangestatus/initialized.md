@@ -1,7 +1,8 @@
 # Initialized
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A status value that indicates the initialization of the configuration is successful.
 
@@ -10,7 +11,7 @@ A status value that indicates the initialization of the configuration is success
 
 ## Declaration
 
-```swift
+```
 readonly Initialized: "Initialized";
 ```
 

@@ -1,12 +1,13 @@
 # oneTimeCode
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A one-time code.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A one-time code.
 static let oneTimeCode: WKTextContentType
 ```
 
+```c
+extern WKTextContentType const WKTextContentTypeOneTimeCode;
+```
+
 ## See Also
 
-- [static let username: WKTextContentType](wktextcontenttype/username.md)
+### Login Credentials
+- [static let username: WKTextContentType](./username.md)
   An account or login name.
-- [static let password: WKTextContentType](wktextcontenttype/password.md)
+- [static let password: WKTextContentType](./password.md)
   An existing password.
-- [static let newPassword: WKTextContentType](wktextcontenttype/newpassword.md)
+- [static let newPassword: WKTextContentType](./newpassword.md)
   A new password.
 
 

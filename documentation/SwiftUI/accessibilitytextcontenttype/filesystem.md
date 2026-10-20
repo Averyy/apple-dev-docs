@@ -1,7 +1,8 @@
 # fileSystem
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents text used by a file browser, like in the Finder app in macOS.
 
@@ -22,19 +23,20 @@ static let fileSystem: AccessibilityTextContentType
 
 ## See Also
 
-- [static let console: AccessibilityTextContentType](accessibilitytextcontenttype/console.md)
+### Getting content types
+- [static let console: AccessibilityTextContentType](./console.md)
   A type that represents text used for input, like in the Terminal app.
-- [static let messaging: AccessibilityTextContentType](accessibilitytextcontenttype/messaging.md)
+- [static let messaging: AccessibilityTextContentType](./messaging.md)
   A type that represents text used in a message, like in the Messages app.
-- [static let narrative: AccessibilityTextContentType](accessibilitytextcontenttype/narrative.md)
+- [static let narrative: AccessibilityTextContentType](./narrative.md)
   A type that represents text used in a story or poem, like in the Books app.
-- [static let plain: AccessibilityTextContentType](accessibilitytextcontenttype/plain.md)
+- [static let plain: AccessibilityTextContentType](./plain.md)
   A type that represents generic text that has no specific type.
-- [static let sourceCode: AccessibilityTextContentType](accessibilitytextcontenttype/sourcecode.md)
+- [static let sourceCode: AccessibilityTextContentType](./sourcecode.md)
   A type that represents text used in source code, like in Swift Playgrounds.
-- [static let spreadsheet: AccessibilityTextContentType](accessibilitytextcontenttype/spreadsheet.md)
+- [static let spreadsheet: AccessibilityTextContentType](./spreadsheet.md)
   A type that represents text used in a grid of data, like in the Numbers app.
-- [static let wordProcessing: AccessibilityTextContentType](accessibilitytextcontenttype/wordprocessing.md)
+- [static let wordProcessing: AccessibilityTextContentType](./wordprocessing.md)
   A type that represents text used in a document, like in the Pages app.
 
 

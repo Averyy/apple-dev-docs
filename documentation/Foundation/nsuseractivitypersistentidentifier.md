@@ -1,7 +1,8 @@
 # NSUserActivityPersistentIdentifier
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that defines a persistent identifier value for an activity.
 
@@ -20,21 +21,26 @@ The type that defines a persistent identifier value for an activity.
 typealias NSUserActivityPersistentIdentifier = String
 ```
 
+```c
+typedef NSString * NSUserActivityPersistentIdentifier;
+```
+
 #### Discussion
 
-In Objective-C, [`NSUserActivity`](nsuseractivity.md) persistent identifiers are a type alias of [`NSString`](nsstring.md). In Swift, [`NSUserActivity`](nsuseractivity.md) persistent identifiers use the [`NSUserActivityPersistentIdentifier`](nsuseractivitypersistentidentifier.md) structure.
+In Objective-C, [`NSUserActivity`](./nsuseractivity.md) persistent identifiers are a type alias of [`NSString`](./nsstring.md). In Swift, [`NSUserActivity`](./nsuseractivity.md) persistent identifiers use the [`NSUserActivityPersistentIdentifier`](./nsuseractivitypersistentidentifier.md) structure.
 
 ## See Also
 
-- [var activityType: String](nsuseractivity/activitytype.md)
+### Describing the activity
+- [var activityType: String](./nsuseractivity/activitytype.md)
   The user activity object’s activity type.
-- [var title: String?](nsuseractivity/title.md)
+- [var title: String?](./nsuseractivity/title.md)
   An optional, user-visible title for this activity, such as a document name or web page title.
-- [var keywords: Set<String>](nsuseractivity/keywords.md)
+- [var keywords: Set<String>](./nsuseractivity/keywords.md)
   A set of localized keywords that can help users find the activity in search results.
-- [var persistentIdentifier: NSUserActivityPersistentIdentifier?](nsuseractivity/persistentidentifier.md)
+- [var persistentIdentifier: NSUserActivityPersistentIdentifier?](./nsuseractivity/persistentidentifier.md)
   A unique and persistent value you use to identify the activity.
-- [var contentAttributeSet: CSSearchableItemAttributeSet?](nsuseractivity/contentattributeset.md)
+- [var contentAttributeSet: CSSearchableItemAttributeSet?](./nsuseractivity/contentattributeset.md)
   A set of properties that describe the activity.
 
 

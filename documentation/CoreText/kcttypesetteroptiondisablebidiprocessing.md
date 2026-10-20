@@ -1,20 +1,27 @@
 # kCTTypesetterOptionDisableBidiProcessing
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 3.2+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 3.2+ - Deprecated in 6.0
+- iPadOS 3.2+ - Deprecated in 6.0
+- Mac Catalyst 3.2+ - Deprecated in 6.0
+- tvOS 9.0+ - Deprecated in 9.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: Deprecated
 
 ## Declaration
 
 ```swift
 let kCTTypesetterOptionDisableBidiProcessing: CFString
+```
+
+```c
+extern CFStringRef const kCTTypesetterOptionDisableBidiProcessing;
 ```
 
 #### Discussion
@@ -23,9 +30,10 @@ Disables bidirectional processing. Value must be a CFBoolean object. Default val
 
 ## See Also
 
-- [let kCTTypesetterOptionForcedEmbeddingLevel: CFString](kcttypesetteroptionforcedembeddinglevel.md)
+### Constants
+- [let kCTTypesetterOptionForcedEmbeddingLevel: CFString](./kcttypesetteroptionforcedembeddinglevel.md)
   A key that specifies the embedding level of the typesetter’s text.
-- [let kCTTypesetterOptionAllowUnboundedLayout: CFString](kcttypesetteroptionallowunboundedlayout.md)
+- [let kCTTypesetterOptionAllowUnboundedLayout: CFString](./kcttypesetteroptionallowunboundedlayout.md)
   A key that specifies whether the text system lays out text that requires unreasonable effort.
 
 

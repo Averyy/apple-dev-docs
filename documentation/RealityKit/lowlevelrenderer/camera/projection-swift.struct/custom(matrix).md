@@ -1,7 +1,8 @@
 # custom(matrix:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a projection using a caller-supplied matrix.
 
@@ -19,7 +20,7 @@ static func custom(matrix: simd_float4x4) -> LowLevelRenderer.Camera.Projection
 
 #### Return Value
 
-A custom [`LowLevelRenderer.Camera.Projection`](lowlevelrenderer/camera/projection-swift.struct.md).
+A custom [`LowLevelRenderer.Camera.Projection`](../projection-swift.struct.md).
 
 ## Parameters
 

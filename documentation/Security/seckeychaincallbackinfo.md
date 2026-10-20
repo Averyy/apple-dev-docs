@@ -1,7 +1,8 @@
 # SecKeychainCallbackInfo
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about a keychain event that keychain services deliver to your app via a callback function.
 
@@ -14,29 +15,33 @@ Information about a keychain event that keychain services deliver to your app vi
 struct SecKeychainCallbackInfo
 ```
 
+```c
+struct SecKeychainCallbackInfo;
+```
+
 #### Overview
 
-This structure contains information about the keychain event of which your application wants to be notified. Keychain services pass a pointer to this structure in the `info` parameter of your callback function. For information on how to write a keychain event callback function, see [`SecKeychainCallback`](seckeychaincallback.md).
+This structure contains information about the keychain event of which your application wants to be notified. Keychain services pass a pointer to this structure in the `info` parameter of your callback function. For information on how to write a keychain event callback function, see [`SecKeychainCallback`](./seckeychaincallback.md).
 
 ## Topics
 
 ### Instance Properties
-- [var item: Unmanaged<SecKeychainItem>](seckeychaincallbackinfo/item.md)
+- [var item: Unmanaged<SecKeychainItem>](./seckeychaincallbackinfo/item.md)
   A reference to the keychain item in which the event occurred. If the event did not involve an item, this field is not valid.
-- [var keychain: Unmanaged<SecKeychain>](seckeychaincallbackinfo/keychain.md)
+- [var keychain: Unmanaged<SecKeychain>](./seckeychaincallbackinfo/keychain.md)
   A reference to the keychain in which the event occurred. If the event did not involve a keychain, this field is not valid.
-- [var pid: pid_t](seckeychaincallbackinfo/pid.md)
+- [var pid: pid_t](./seckeychaincallbackinfo/pid.md)
   The ID of the process that generated this event.
-- [var version: UInt32](seckeychaincallbackinfo/version.md)
+- [var version: UInt32](./seckeychaincallbackinfo/version.md)
   The version of this structure.
 ### Initializers
-- [init(version: UInt32, item: Unmanaged<SecKeychainItem>, keychain: Unmanaged<SecKeychain>, pid: pid_t)](seckeychaincallbackinfo/init(version:item:keychain:pid:).md)
+- [init(version: UInt32, item: Unmanaged<SecKeychainItem>, keychain: Unmanaged<SecKeychain>, pid: pid_t)](./seckeychaincallbackinfo/init%28version,item,keychain,pid%29.md)
   Creates a new keychain callback information structure.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

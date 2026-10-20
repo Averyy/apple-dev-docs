@@ -1,7 +1,8 @@
 # phoneOrEmail
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contact’s phone number or email address.
 
@@ -14,6 +15,10 @@ The contact’s phone number or email address.
 
 ```swift
 var phoneOrEmail: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * phoneOrEmail;
 ```
 
 #### Discussion

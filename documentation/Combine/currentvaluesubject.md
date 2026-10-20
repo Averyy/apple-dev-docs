@@ -1,7 +1,8 @@
 # CurrentValueSubject
 
 **Framework**: Combine  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A subject that wraps a single value and publishes a new element whenever the value changes.
 
@@ -22,34 +23,35 @@ final class CurrentValueSubject<Output, Failure> where Failure : Error
 
 ## Mentions
 
-- [Using Combine for Your App’s Asynchronous Code](using-combine-for-your-app-s-asynchronous-code.md)
+- [Using Combine for Your App’s Asynchronous Code](./using-combine-for-your-app-s-asynchronous-code.md)
 
 #### Overview
 
-Unlike [`PassthroughSubject`](passthroughsubject.md), [`CurrentValueSubject`](currentvaluesubject.md) maintains a buffer of the most recently published element.
+Unlike [`PassthroughSubject`](./passthroughsubject.md), [`CurrentValueSubject`](./currentvaluesubject.md) maintains a buffer of the most recently published element.
 
-Calling [`send(_:)`](subject/send(_:).md) on a [`CurrentValueSubject`](currentvaluesubject.md) also updates the current value, making it equivalent to updating the [`value`](currentvaluesubject/value.md) directly.
+Calling [`send(_:)`](./subject/send%28_%29.md) on a [`CurrentValueSubject`](./currentvaluesubject.md) also updates the current value, making it equivalent to updating the [`value`](./currentvaluesubject/value.md) directly.
 
 ## Topics
 
 ### Creating a current value subject
-- [init(Output)](currentvaluesubject/init(_:).md)
+- [init(Output)](./currentvaluesubject/init%28_%29.md)
   Creates a current value subject with the given initial value.
 ### Accessing the current value
-- [var value: Output](currentvaluesubject/value.md)
+- [var value: Output](./currentvaluesubject/value.md)
   The value wrapped by this subject, published as a new element whenever it changes.
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
-- [Subject](subject.md)
+- [Publisher](./publisher.md)
+- [Subject](./subject.md)
 
 ## See Also
 
-- [protocol Subject](subject.md)
+### Subjects
+- [protocol Subject](./subject.md)
   A publisher that exposes a method for outside callers to publish elements.
-- [class PassthroughSubject](passthroughsubject.md)
+- [class PassthroughSubject](./passthroughsubject.md)
   A subject that broadcasts elements to downstream subscribers.
 
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for the tool picker.
 
@@ -15,6 +16,10 @@ The delegate for the tool picker.
 
 ```swift
 weak var delegate: (any PKToolPicker.Delegate)? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) id<PKToolPickerDelegate> delegate;
 ```
 
 

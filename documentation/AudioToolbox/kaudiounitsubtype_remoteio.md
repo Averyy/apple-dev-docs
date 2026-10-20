@@ -1,19 +1,24 @@
 # kAudioUnitSubType_RemoteIO
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var kAudioUnitSubType_RemoteIO: UInt32 { get }
+```
+
+```c
+kAudioUnitSubType_RemoteIO
 ```
 
 

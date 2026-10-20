@@ -1,7 +1,8 @@
 # source
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A time range on the source timeline.
 
@@ -20,13 +21,18 @@ A time range on the source timeline.
 var source: CMTimeRange
 ```
 
+```c
+CMTimeRange source;
+```
+
 #### Discussion
 
 For an empty edit, `source.start` is an invalid `CMTime`, in which case the system ignores `source.duration`. Otherwise, `source.start` is the starting time within the source, and `source.duration` is the duration of the source timeline to map to the target time range.
 
 ## See Also
 
-- [var target: CMTimeRange](cmtimemapping/target.md)
+### Accessing Time Ranges
+- [var target: CMTimeRange](./target.md)
   A time range on the target timeline.
 
 

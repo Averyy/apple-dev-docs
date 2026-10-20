@@ -1,7 +1,8 @@
 # CBPeripheralManagerConnectionLatency
 
 **Framework**: Core Bluetooth  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values representing the connection latency of the peripheral manager.
 
@@ -20,31 +21,36 @@ Values representing the connection latency of the peripheral manager.
 enum CBPeripheralManagerConnectionLatency
 ```
 
+```c
+enum CBPeripheralManagerConnectionLatency : NSInteger;
+```
+
 ## Topics
 
 ### Latency Values
-- [CBPeripheralManagerConnectionLatency.low](cbperipheralmanagerconnectionlatency/low.md)
+- [CBPeripheralManagerConnectionLatency.low](./cbperipheralmanagerconnectionlatency/low.md)
   A latency setting indicating that prioritizes rapid communication over battery life.
-- [CBPeripheralManagerConnectionLatency.medium](cbperipheralmanagerconnectionlatency/medium.md)
+- [CBPeripheralManagerConnectionLatency.medium](./cbperipheralmanagerconnectionlatency/medium.md)
   A latency setting that balances communication frequency and battery life.
-- [CBPeripheralManagerConnectionLatency.high](cbperipheralmanagerconnectionlatency/high.md)
+- [CBPeripheralManagerConnectionLatency.high](./cbperipheralmanagerconnectionlatency/high.md)
   A latency setting that prioritizes extending battery life over rapid communication.
 ### Initializers
-- [init?(rawValue: Int)](cbperipheralmanagerconnectionlatency/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cbperipheralmanagerconnectionlatency/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setDesiredConnectionLatency(CBPeripheralManagerConnectionLatency, for: CBCentral)](cbperipheralmanager/setdesiredconnectionlatency(_:for:).md)
+### Setting Connection Latency
+- [func setDesiredConnectionLatency(CBPeripheralManagerConnectionLatency, for: CBCentral)](./cbperipheralmanager/setdesiredconnectionlatency%28_,for%29.md)
   Sets the desired connection latency for an existing connection to a central device.
 
 

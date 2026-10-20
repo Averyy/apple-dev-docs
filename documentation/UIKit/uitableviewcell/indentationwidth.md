@@ -1,7 +1,8 @@
 # indentationWidth
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width for each level of indentation of a cell’s content.
 
@@ -9,7 +10,7 @@ The width for each level of indentation of a cell’s content.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ The width for each level of indentation of a cell’s content.
 var indentationWidth: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat indentationWidth;
+```
+
 #### Discussion
 
 The default indentation width is `10.0` points.
 
 ## See Also
 
-- [var indentationLevel: Int](uitableviewcell/indentationlevel.md)
+### Managing content indentation
+- [var indentationLevel: Int](./indentationlevel.md)
   The indentation level of the cell’s content.
-- [var shouldIndentWhileEditing: Bool](uitableviewcell/shouldindentwhileediting.md)
+- [var shouldIndentWhileEditing: Bool](./shouldindentwhileediting.md)
   A Boolean value that controls whether the cell background is indented when the table view is in editing mode.
-- [var separatorInset: UIEdgeInsets](uitableviewcell/separatorinset.md)
+- [var separatorInset: UIEdgeInsets](./separatorinset.md)
   The inset values for the separator line drawn beneath the cell.
-- [UITableViewCell.SeparatorStyle](uitableviewcell/separatorstyle.md)
+- [UITableViewCell.SeparatorStyle](./separatorstyle.md)
   The style for cells to use as separators.
 
 

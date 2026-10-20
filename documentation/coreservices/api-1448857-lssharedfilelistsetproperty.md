@@ -1,7 +1,8 @@
 # LSSharedFileListSetProperty(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+ - Deprecated in 10.11
@@ -10,6 +11,10 @@
 
 ```swift
 func LSSharedFileListSetProperty(_ inList: LSSharedFileList, _ inPropertyName: CFString, _ inPropertyData: CFTypeRef?) -> OSStatus
+```
+
+```c
+OSStatus LSSharedFileListSetProperty(LSSharedFileListRef inList, CFStringRef inPropertyName, CFTypeRef inPropertyData);
 ```
 
 

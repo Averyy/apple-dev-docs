@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance.
 

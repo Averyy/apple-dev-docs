@@ -1,7 +1,8 @@
 # UIViewController.Transition.ZoomOptions.InteractionContext
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Data you can use to determine whether an interactive dismissal can begin.
 
@@ -18,31 +19,36 @@ Data you can use to determine whether an interactive dismissal can begin.
 class InteractionContext
 ```
 
+```objc
+@interface UIZoomTransitionInteractionContext : NSObject
+```
+
 ## Topics
 
 ### Accessing the context
-- [var location: CGPoint](uiviewcontroller/transition/zoomoptions/interactioncontext/location.md)
+- [var location: CGPoint](./interactioncontext/location.md)
   The touch’s location.
-- [var velocity: CGVector](uiviewcontroller/transition/zoomoptions/interactioncontext/velocity.md)
+- [var velocity: CGVector](./interactioncontext/velocity.md)
   The touch’s velocity.
-- [var willBegin: Bool](uiviewcontroller/transition/zoomoptions/interactioncontext/willbegin.md)
+- [var willBegin: Bool](./interactioncontext/willbegin.md)
   A Boolean value that indicates whether the transition is beginning.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../../../Swift/customstringconvertible.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [NSObjectProtocol](../../../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var interactiveDismissShouldBegin: ((UIViewController.Transition.ZoomOptions.InteractionContext) -> Bool)?](uiviewcontroller/transition/zoomoptions/interactivedismissshouldbegin.md)
+### Accessing the animation state
+- [var interactiveDismissShouldBegin: ((UIViewController.Transition.ZoomOptions.InteractionContext) -> Bool)?](./interactivedismissshouldbegin.md)
   A closure that determines whether an interactive dismissal can begin.
 
 

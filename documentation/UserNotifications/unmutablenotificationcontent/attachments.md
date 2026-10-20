@@ -1,7 +1,8 @@
 # attachments
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The visual and audio attachments to display alongside the notification’s main content.
 
@@ -19,17 +20,30 @@ The visual and audio attachments to display alongside the notification’s main 
 var attachments: [UNNotificationAttachment] { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readwrite) NSArray<UNNotificationAttachment *> * attachments;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readwrite) NSArray<UNNotificationAttachment *> * attachments;
+```
+
 #### Discussion
 
 Use this property to include images or movies, or to include playable audio files, with the contents of an alert. The system displays the attachments alongside the title and body of your alert. You can also customize the presentation of attachments using a notification content app extension.
 
 All attachments must reside locally on the current device before your app adds them. For local notifications, modify this property before scheduling the notification. For remote notifications, use a notification service app extension to locate and download the specified files and modify the notification content before it’s delivered.
 
-For more information on how to specify attachments, see [`UNNotificationAttachment`](unnotificationattachment.md).
+For more information on how to specify attachments, see [`UNNotificationAttachment`](../unnotificationattachment.md).
 
 ## See Also
 
-- [var userInfo: [AnyHashable : Any]](unmutablenotificationcontent/userinfo.md)
+### Providing supplementary content
+- [var userInfo: [AnyHashable : Any]](./userinfo.md)
   The custom data to associate with the notification.
 
 

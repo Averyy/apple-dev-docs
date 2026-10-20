@@ -1,7 +1,8 @@
 # curveBasis
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls the curve basis function, determining how Metal interpolates the control points.
 
@@ -17,6 +18,10 @@ Controls the curve basis function, determining how Metal interpolates the contro
 
 ```swift
 var curveBasis: MTLCurveBasis { get set }
+```
+
+```objc
+@property (nonatomic) MTLCurveBasis curveBasis;
 ```
 
 #### Discussion

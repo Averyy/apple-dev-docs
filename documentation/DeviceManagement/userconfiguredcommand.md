@@ -1,7 +1,8 @@
 # UserConfiguredCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to inform the device that it can continue past Setup Assistant and finish login.
 
@@ -12,14 +13,14 @@ The command to inform the device that it can continue past Setup Assistant and f
 
 ## Declaration
 
-```swift
+```
 object UserConfiguredCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object UserConfiguredCommand.Command](userconfiguredcommand/command-data.dictionary.md)
+- [object UserConfiguredCommand.Command](./userconfiguredcommand/command-data.dictionary.md)
   The command to inform the device that it can continue past Setup Assistant and finish login.
 
 ## Properties
@@ -29,7 +30,8 @@ object UserConfiguredCommand
 
 ## See Also
 
-- [object UserConfiguredResponse](userconfiguredresponse.md)
+### Commands and responses
+- [object UserConfiguredResponse](./userconfiguredresponse.md)
   A response from the device after it processes the command to inform the device that it can continue past Setup Assistant and finish login.
 
 

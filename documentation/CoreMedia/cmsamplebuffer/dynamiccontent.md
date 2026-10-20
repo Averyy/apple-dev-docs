@@ -1,7 +1,8 @@
 # CMSampleBuffer.DynamicContent
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Sample buffer content not known at compile time.
 
@@ -23,19 +24,19 @@ enum DynamicContent
 ## Topics
 
 ### Enumeration Cases
-- [CMSampleBuffer.DynamicContent.dataBuffer(_:)](cmsamplebuffer/dynamiccontent/databuffer(_:).md)
-- [CMSampleBuffer.DynamicContent.markerOnly](cmsamplebuffer/dynamiccontent/markeronly.md)
-- [CMSampleBuffer.DynamicContent.pixelBuffer(_:)](cmsamplebuffer/dynamiccontent/pixelbuffer(_:).md)
-- [CMSampleBuffer.DynamicContent.sampleReference(_:)](cmsamplebuffer/dynamiccontent/samplereference(_:).md)
-- [CMSampleBuffer.DynamicContent.taggedBuffers(_:)](cmsamplebuffer/dynamiccontent/taggedbuffers(_:).md)
+- [CMSampleBuffer.DynamicContent.dataBuffer(_:)](./dynamiccontent/databuffer%28_%29.md)
+- [CMSampleBuffer.DynamicContent.markerOnly](./dynamiccontent/markeronly.md)
+- [CMSampleBuffer.DynamicContent.pixelBuffer(_:)](./dynamiccontent/pixelbuffer%28_%29.md)
+- [CMSampleBuffer.DynamicContent.sampleReference(_:)](./dynamiccontent/samplereference%28_%29.md)
+- [CMSampleBuffer.DynamicContent.taggedBuffers(_:)](./dynamiccontent/taggedbuffers%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [CMSampleBuffer.Content](cmsamplebuffer/content.md)
-- [CMSampleBuffer.MultiSampleContent](cmsamplebuffer/multisamplecontent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CMSampleBuffer.Content](./content.md)
+- [CMSampleBuffer.MultiSampleContent](./multisamplecontent.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

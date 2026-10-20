@@ -1,7 +1,8 @@
 # supportedSentenceEmbeddingRevisions(for:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Retrieves all version numbers of a sentence embedding for the given language.
 
@@ -20,21 +21,26 @@ Retrieves all version numbers of a sentence embedding for the given language.
 class func supportedSentenceEmbeddingRevisions(for language: NLLanguage) -> IndexSet
 ```
 
+```objc
++ (NSIndexSet *) supportedSentenceEmbeddingRevisionsForLanguage:(NLLanguage) language;
+```
+
 #### Return Value
 
 An index set representing all of the supported version numbers of the sentence embedding.
 
 ## Parameters
 
-- `language`: A language supported by the Natural Language framework. For possible values, see [`NLLanguage`](nllanguage.md).
+- `language`: A language supported by the Natural Language framework. For possible values, see [`NLLanguage`](../nllanguage.md).
 
 ## See Also
 
-- [class func currentRevision(for: NLLanguage) -> Int](nlembedding/currentrevision(for:).md)
+### Checking for Natural Language support
+- [class func currentRevision(for: NLLanguage) -> Int](./currentrevision%28for%29.md)
   Retrieves the current version of a word embedding for the given language.
-- [class func supportedRevisions(for: NLLanguage) -> IndexSet](nlembedding/supportedrevisions(for:).md)
+- [class func supportedRevisions(for: NLLanguage) -> IndexSet](./supportedrevisions%28for%29.md)
   Retrieves all version numbers of a word embedding for the given language.
-- [class func currentSentenceEmbeddingRevision(for: NLLanguage) -> Int](nlembedding/currentsentenceembeddingrevision(for:).md)
+- [class func currentSentenceEmbeddingRevision(for: NLLanguage) -> Int](./currentsentenceembeddingrevision%28for%29.md)
   Retrieves the current version of a sentence embedding for the given language.
 
 

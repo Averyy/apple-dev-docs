@@ -1,16 +1,17 @@
 # init(rawValue:)
 
 **Framework**: ImageCaptureCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an ImageCaptureCore device capability.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 

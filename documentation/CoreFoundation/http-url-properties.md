@@ -1,6 +1,7 @@
 # HTTP URL Properties
 
-**Framework**: Core Foundation
+**Framework**: Core Foundation  
+**Role**: API Collection
 
 Properties for HTTP URL resources.
 
@@ -11,16 +12,17 @@ In addition to the above properties, each field within an HTTP request or respon
 ## Topics
 
 ### Constants
-- [let kCFURLHTTPStatusCode: CFString!](kcfurlhttpstatuscode.md)
+- [let kCFURLHTTPStatusCode: CFString!](./kcfurlhttpstatuscode.md)
   A `CFNumber` object holding the status code of an HTTP request.
-- [let kCFURLHTTPStatusLine: CFString!](kcfurlhttpstatusline.md)
+- [let kCFURLHTTPStatusLine: CFString!](./kcfurlhttpstatusline.md)
   A `CFString` object holding the status line of an HTTP request.
 
 ## See Also
 
-- [enum CFURLError](cfurlerror.md)
+### Constants
+- [enum CFURLError](./cfurlerror.md)
   `CFURL` error codes.
-- [File URL Properties](file-url-properties.md)
+- [File URL Properties](./file-url-properties.md)
   Properties for file URL resources.
 
 

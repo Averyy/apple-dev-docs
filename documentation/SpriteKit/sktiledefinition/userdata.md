@@ -1,7 +1,8 @@
 # userData
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary containing arbitrary data.
 
@@ -18,6 +19,10 @@ A dictionary containing arbitrary data.
 
 ```swift
 var userData: NSMutableDictionary? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) NSMutableDictionary * userData;
 ```
 
 #### Discussion

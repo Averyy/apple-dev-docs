@@ -1,7 +1,8 @@
 # ASAuthorizationSingleSignOnRequest
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An OpenID authorization request that provides single sign-on (SSO) functionality.
 
@@ -18,37 +19,42 @@ An OpenID authorization request that provides single sign-on (SSO) functionality
 class ASAuthorizationSingleSignOnRequest
 ```
 
+```objc
+@interface ASAuthorizationSingleSignOnRequest : ASAuthorizationOpenIDRequest
+```
+
 ## Topics
 
 ### Setting Options
-- [var isUserInterfaceEnabled: Bool](asauthorizationsinglesignonrequest/isuserinterfaceenabled.md)
-- [var authorizationOptions: [URLQueryItem]](asauthorizationsinglesignonrequest/authorizationoptions.md)
+- [var isUserInterfaceEnabled: Bool](./asauthorizationsinglesignonrequest/isuserinterfaceenabled.md)
+- [var authorizationOptions: [URLQueryItem]](./asauthorizationsinglesignonrequest/authorizationoptions.md)
   Options that control the authorization process.
 
 ## Relationships
 
 ### Inherits From
-- [ASAuthorizationOpenIDRequest](asauthorizationopenidrequest.md)
+- [ASAuthorizationOpenIDRequest](./asauthorizationopenidrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var canPerformAuthorization: Bool](asauthorizationsinglesignonprovider/canperformauthorization.md)
+### Creating Authorization Requests
+- [var canPerformAuthorization: Bool](./asauthorizationsinglesignonprovider/canperformauthorization.md)
   A Boolean value that indicates if the provider is capable of performing authorization within a given configuration.
-- [func createRequest() -> ASAuthorizationSingleSignOnRequest](asauthorizationsinglesignonprovider/createrequest.md)
+- [func createRequest() -> ASAuthorizationSingleSignOnRequest](./asauthorizationsinglesignonprovider/createrequest%28%29.md)
   Creates a single sign-on (SSO) authorization request.
-- [class ASAuthorizationOpenIDRequest](asauthorizationopenidrequest.md)
+- [class ASAuthorizationOpenIDRequest](./asauthorizationopenidrequest.md)
   An OpenID authorization request.
 
 

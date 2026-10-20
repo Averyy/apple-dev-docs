@@ -1,7 +1,8 @@
 # init(_:size3D:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new window placement with an optional position and 3D size. Depth is ignored on scenes that don’t support it.
 

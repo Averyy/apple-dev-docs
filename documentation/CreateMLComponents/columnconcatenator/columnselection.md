@@ -1,7 +1,8 @@
 # columnSelection
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The selection of columns to concatenate.
 
@@ -22,7 +23,8 @@ var columnSelection: ColumnSelection
 
 ## See Also
 
-- [var concatenatedColumnName: String](columnconcatenator/concatenatedcolumnname.md)
+### Getting the properties
+- [var concatenatedColumnName: String](./concatenatedcolumnname.md)
   The name of the concatenated column containing the shaped arrays.
 
 

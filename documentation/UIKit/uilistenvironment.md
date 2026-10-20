@@ -1,7 +1,8 @@
 # UIListEnvironment
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the style of the containing list in a collection view or table view.
 
@@ -18,47 +19,52 @@ Constants that indicate the style of the containing list in a collection view or
 enum UIListEnvironment
 ```
 
+```c
+enum UIListEnvironment : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIListEnvironment.unspecified](uilistenvironment/unspecified.md)
+- [UIListEnvironment.unspecified](./uilistenvironment/unspecified.md)
   A constant that indicates the absence of information about a containing list.
-- [UIListEnvironment.none](uilistenvironment/none.md)
+- [UIListEnvironment.none](./uilistenvironment/none.md)
   A constant that indicates there isn’t a containing list.
-- [UIListEnvironment.plain](uilistenvironment/plain.md)
+- [UIListEnvironment.plain](./uilistenvironment/plain.md)
   A constant that indicates the containing list is a plain-style list.
-- [UIListEnvironment.grouped](uilistenvironment/grouped.md)
+- [UIListEnvironment.grouped](./uilistenvironment/grouped.md)
   A constant that indicates the containing list is a grouped-style list.
-- [UIListEnvironment.insetGrouped](uilistenvironment/insetgrouped.md)
+- [UIListEnvironment.insetGrouped](./uilistenvironment/insetgrouped.md)
   A constant that indicates the containing list is an inset-grouped-style list.
-- [UIListEnvironment.sidebar](uilistenvironment/sidebar.md)
+- [UIListEnvironment.sidebar](./uilistenvironment/sidebar.md)
   A constant that indicates the containing list is a sidebar-style list.
-- [UIListEnvironment.sidebarPlain](uilistenvironment/sidebarplain.md)
+- [UIListEnvironment.sidebarPlain](./uilistenvironment/sidebarplain.md)
   A constant that indicates the containing list is a sidebar-plain-style list.
 ### Initializers
-- [init?(rawValue: Int)](uilistenvironment/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uilistenvironment/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var listEnvironment: UIListEnvironment](uitraitcollection/listenvironment.md)
+### Retrieving layout environment traits
+- [var listEnvironment: UIListEnvironment](./uitraitcollection/listenvironment.md)
   The list environment represents whether a given trait collection is from a view in a UITableView or a UICollectionView list section.
-- [var splitViewControllerLayoutEnvironment: UISplitViewController.LayoutEnvironment](uitraitcollection/splitviewcontrollerlayoutenvironment.md)
+- [var splitViewControllerLayoutEnvironment: UISplitViewController.LayoutEnvironment](./uitraitcollection/splitviewcontrollerlayoutenvironment.md)
   The split view controller layout environment represents whether an ancestor split view controller is expanded or collapsed.
-- [UISplitViewController.LayoutEnvironment](uisplitviewcontroller/layoutenvironment.md)
+- [UISplitViewController.LayoutEnvironment](./uisplitviewcontroller/layoutenvironment.md)
   Constants that indicate the current layout of the containing split view controller.
-- [var tabAccessoryEnvironment: UITabAccessory.Environment](uitraitcollection/tabaccessoryenvironment.md)
+- [var tabAccessoryEnvironment: UITabAccessory.Environment](./uitraitcollection/tabaccessoryenvironment.md)
   The tab accessory environment represents whether a given trait collection is from a view in a `UITabAccessory` content view.
-- [UITabAccessory.Environment](uitabaccessory/environment.md)
+- [UITabAccessory.Environment](./uitabaccessory/environment.md)
 
 
 ---

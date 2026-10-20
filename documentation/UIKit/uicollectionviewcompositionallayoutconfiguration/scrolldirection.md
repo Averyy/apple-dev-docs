@@ -1,7 +1,8 @@
 # scrollDirection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The axis that the content in the collection view layout scrolls along.
 
@@ -18,9 +19,13 @@ The axis that the content in the collection view layout scrolls along.
 var scrollDirection: UICollectionView.ScrollDirection { get set }
 ```
 
+```objc
+@property (nonatomic) UICollectionViewScrollDirection scrollDirection;
+```
+
 #### Discussion
 
-The default value of this property is [`UICollectionView.ScrollDirection.vertical`](uicollectionview/scrolldirection/vertical.md).
+The default value of this property is [`UICollectionView.ScrollDirection.vertical`](../uicollectionview/scrolldirection/vertical.md).
 
 
 ---

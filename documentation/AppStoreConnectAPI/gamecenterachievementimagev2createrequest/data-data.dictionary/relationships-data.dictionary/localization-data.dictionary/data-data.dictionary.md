@@ -1,14 +1,15 @@
 # GameCenterAchievementImageV2CreateRequest.Data.Relationships.Localization.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementImageV2CreateRequest.Data.Relationships.Localization.Data
 ```
 
@@ -20,7 +21,7 @@ object GameCenterAchievementImageV2CreateRequest.Data.Relationships.Localization
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterAchievementLocalizations`
 
 
 ---

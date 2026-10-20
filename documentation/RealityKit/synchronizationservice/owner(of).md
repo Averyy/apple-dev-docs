@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Gets the device that owns a given entity, if any.
@@ -12,7 +13,7 @@ Gets the device that owns a given entity, if any.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -31,7 +32,8 @@ The networked device that owns the entity. The value is `nil` if the entity isnâ
 
 ## See Also
 
-- [func giveOwnership(of: Entity, toPeer: any SynchronizationPeerID) -> Bool](synchronizationservice/giveownership(of:topeer:).md)
+### Managing ownership
+- [func giveOwnership(of: Entity, toPeer: any SynchronizationPeerID) -> Bool](./giveownership%28of,topeer%29.md)
   Transfers ownership of the given entity to the named network device.
 
 

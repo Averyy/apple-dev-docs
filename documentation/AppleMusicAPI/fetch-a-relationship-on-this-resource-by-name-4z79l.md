@@ -1,7 +1,8 @@
 # Get a Catalog Music Video's Relationship Directly by Name
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch a music video’s relationship by using its identifier.
 
@@ -10,13 +11,13 @@ Fetch a music video’s relationship by using its identifier.
 
 #### Discussion
 
-If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [`Handling Requests and Responses`](handling-requests-and-responses.md).
+If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/catalog/us/music-videos/1555764127/artists
 ```
 
@@ -190,26 +191,45 @@ https://api.music.apple.com/v1/catalog/us/music-videos/1555764127/artists
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The unique identifier for the music video.
+- `relationship` (string) *(required)*: The name of the relationship you want to fetch for this resource.
+
+  **Allowed Values**: `albums`, `artists`, `genres`, `library`, `songs`
+- `storefront` (string) *(required)*: An iTunes Store territory, specified by an ISO 3166 alpha-2 country code. The possible values are the `id` attributes of `Storefront` objects.
+
+### Query Parameters
+
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 - `include` ([string]): Additional relationships to include in the fetch.
 - `limit` (integer): The number of objects or number of objects in the specified relationship returned.
 - `extend` ([string]): A list of attribute extensions to apply to resources in the response.
 
+## Responses
+
+- `200` OK (`RelationshipResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `403` Forbidden (`ForbiddenResponse`, `application/json`): A response indicating invalid or insufficient authentication.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
+
 ## See Also
 
-- [object MusicVideos](musicvideos.md)
+### Related Documentation
+- [object MusicVideos](./musicvideos.md)
   A resource object that represents a music video.
-- [object MusicVideosResponse](musicvideosresponse.md)
+- [object MusicVideosResponse](./musicvideosresponse.md)
   The response to a music videos request.
-- [Get a Catalog Music Video](get-a-catalog-music-video.md)
+### Requesting a Catalog Music Video
+- [Get a Catalog Music Video](./get-a-catalog-music-video.md)
   Fetch a music video by using its identifier.
-- [Get a Catalog Music Video’s Relationship View Directly by Name](fetch-a-view-on-this-resource-by-name-5657g.md)
+- [Get a Catalog Music Video’s Relationship View Directly by Name](./fetch-a-view-on-this-resource-by-name-5657g.md)
   Fetch related resources for a single music video’s relationship view.
-- [Get Multiple Catalog Music Videos by ID](get-multiple-catalog-music-videos-by-id.md)
+- [Get Multiple Catalog Music Videos by ID](./get-multiple-catalog-music-videos-by-id.md)
   Fetch one or more music videos by using their identifiers.
-- [Get Multiple Catalog Music Videos by ISRC](get-multiple-catalog-music-videos-by-isrc.md)
+- [Get Multiple Catalog Music Videos by ISRC](./get-multiple-catalog-music-videos-by-isrc.md)
   Fetch one or more music videos by using their International Standard Recording Code (ISRC) values.
-- [Get Equivalent Catalog Music Videos by ID](get-equivalent-ids-for-the-albums-8tp4l.md)
+- [Get Equivalent Catalog Music Videos by ID](./get-equivalent-ids-for-the-albums-8tp4l.md)
   Fetch the equivalent, available content in the storefront for the provided music videos’ identifiers.
 
 

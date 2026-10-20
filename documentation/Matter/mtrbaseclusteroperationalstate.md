@@ -1,7 +1,8 @@
 # MTRBaseClusterOperationalState
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.4+
@@ -18,65 +19,69 @@
 class MTRBaseClusterOperationalState
 ```
 
+```objc
+@interface MTRBaseClusterOperationalState : MTRGenericBaseCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrbaseclusteroperationalstate/init(device:endpointid:queue:).md)
+- [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrbaseclusteroperationalstate/init%28device,endpointid,queue%29.md)
 ### Instance Methods
-- [func pause(completion: (MTROperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/pause(completion:).md)
-- [func pause(with: MTROperationalStateClusterPauseParams?, completion: (MTROperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/pause(with:completion:).md)
-- [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributeacceptedcommandlist(completion:).md)
-- [func readAttributeAttributeList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributeattributelist(completion:).md)
-- [func readAttributeClusterRevision(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributeclusterrevision(completion:).md)
-- [func readAttributeCountdownTime(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributecountdowntime(completion:).md)
-- [func readAttributeCurrentPhase(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributecurrentphase(completion:).md)
-- [func readAttributeFeatureMap(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributefeaturemap(completion:).md)
-- [func readAttributeGeneratedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributegeneratedcommandlist(completion:).md)
-- [func readAttributeOperationalError(completion: (MTROperationalStateClusterErrorStateStruct?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributeoperationalerror(completion:).md)
-- [func readAttributeOperationalState(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributeoperationalstate(completion:).md)
-- [func readAttributeOperationalStateList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributeoperationalstatelist(completion:).md)
-- [func readAttributePhaseList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributephaselist(completion:).md)
-- [func resume(completion: (MTROperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/resume(completion:).md)
-- [func resume(with: MTROperationalStateClusterResumeParams?, completion: (MTROperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/resume(with:completion:).md)
-- [func start(completion: (MTROperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/start(completion:).md)
-- [func start(with: MTROperationalStateClusterStartParams?, completion: (MTROperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/start(with:completion:).md)
-- [func stop(completion: (MTROperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/stop(completion:).md)
-- [func stop(with: MTROperationalStateClusterStopParams?, completion: (MTROperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/stop(with:completion:).md)
-- [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/subscribeattributeacceptedcommandlist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/subscribeattributeattributelist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeClusterRevision(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/subscribeattributeclusterrevision(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeCountdownTime(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/subscribeattributecountdowntime(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeCurrentPhase(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/subscribeattributecurrentphase(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeFeatureMap(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/subscribeattributefeaturemap(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeGeneratedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/subscribeattributegeneratedcommandlist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeOperationalError(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (MTROperationalStateClusterErrorStateStruct?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/subscribeattributeoperationalerror(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeOperationalState(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/subscribeattributeoperationalstate(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeOperationalStateList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/subscribeattributeoperationalstatelist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributePhaseList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/subscribeattributephaselist(with:subscriptionestablished:reporthandler:).md)
+- [func pause(completion: (MTROperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/pause%28completion%29.md)
+- [func pause(with: MTROperationalStateClusterPauseParams?, completion: (MTROperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/pause%28with,completion%29.md)
+- [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributeacceptedcommandlist%28completion%29.md)
+- [func readAttributeAttributeList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributeattributelist%28completion%29.md)
+- [func readAttributeClusterRevision(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributeclusterrevision%28completion%29.md)
+- [func readAttributeCountdownTime(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributecountdowntime%28completion%29.md)
+- [func readAttributeCurrentPhase(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributecurrentphase%28completion%29.md)
+- [func readAttributeFeatureMap(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributefeaturemap%28completion%29.md)
+- [func readAttributeGeneratedCommandList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributegeneratedcommandlist%28completion%29.md)
+- [func readAttributeOperationalError(completion: (MTROperationalStateClusterErrorStateStruct?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributeoperationalerror%28completion%29.md)
+- [func readAttributeOperationalState(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributeoperationalstate%28completion%29.md)
+- [func readAttributeOperationalStateList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributeoperationalstatelist%28completion%29.md)
+- [func readAttributePhaseList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributephaselist%28completion%29.md)
+- [func resume(completion: (MTROperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/resume%28completion%29.md)
+- [func resume(with: MTROperationalStateClusterResumeParams?, completion: (MTROperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/resume%28with,completion%29.md)
+- [func start(completion: (MTROperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/start%28completion%29.md)
+- [func start(with: MTROperationalStateClusterStartParams?, completion: (MTROperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/start%28with,completion%29.md)
+- [func stop(completion: (MTROperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/stop%28completion%29.md)
+- [func stop(with: MTROperationalStateClusterStopParams?, completion: (MTROperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/stop%28with,completion%29.md)
+- [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/subscribeattributeacceptedcommandlist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/subscribeattributeattributelist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeClusterRevision(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/subscribeattributeclusterrevision%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeCountdownTime(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/subscribeattributecountdowntime%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeCurrentPhase(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/subscribeattributecurrentphase%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeFeatureMap(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/subscribeattributefeaturemap%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeGeneratedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/subscribeattributegeneratedcommandlist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeOperationalError(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (MTROperationalStateClusterErrorStateStruct?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/subscribeattributeoperationalerror%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeOperationalState(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/subscribeattributeoperationalstate%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeOperationalStateList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/subscribeattributeoperationalstatelist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributePhaseList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/subscribeattributephaselist%28with,subscriptionestablished,reporthandler%29.md)
 ### Type Methods
-- [class func readAttributeAcceptedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributeacceptedcommandlist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeAttributeList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributeattributelist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeClusterRevision(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributeclusterrevision(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeCountdownTime(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributecountdowntime(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeCurrentPhase(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributecurrentphase(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeFeatureMap(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributefeaturemap(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeGeneratedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributegeneratedcommandlist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeOperationalError(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (MTROperationalStateClusterErrorStateStruct?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributeoperationalerror(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeOperationalState(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributeoperationalstate(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeOperationalStateList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributeoperationalstatelist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributePhaseList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusteroperationalstate/readattributephaselist(withclusterstatecache:endpoint:queue:completion:).md)
+- [class func readAttributeAcceptedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributeacceptedcommandlist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeAttributeList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributeattributelist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeClusterRevision(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributeclusterrevision%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeCountdownTime(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributecountdowntime%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeCurrentPhase(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributecurrentphase%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeFeatureMap(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributefeaturemap%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeGeneratedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributegeneratedcommandlist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeOperationalError(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (MTROperationalStateClusterErrorStateStruct?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributeoperationalerror%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeOperationalState(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributeoperationalstate%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeOperationalStateList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributeoperationalstatelist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributePhaseList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusteroperationalstate/readattributephaselist%28withclusterstatecache,endpoint,queue,completion%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericBaseCluster](mtrgenericbasecluster.md)
+- [MTRGenericBaseCluster](./mtrgenericbasecluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

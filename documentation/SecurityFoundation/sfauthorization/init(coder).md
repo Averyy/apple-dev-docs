@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: Security Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.3+

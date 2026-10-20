@@ -1,20 +1,21 @@
 # ProfileCreateRequest
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a Profile.
 
 ## Declaration
 
-```swift
+```
 object ProfileCreateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object ProfileCreateRequest.Data](profilecreaterequest/data-data.dictionary.md)
+- [object ProfileCreateRequest.Data](./profilecreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
 ## Properties
@@ -23,13 +24,14 @@ object ProfileCreateRequest
 
 ## See Also
 
-- [object Profile](profile.md)
+### Objects
+- [object Profile](./profile.md)
   The data structure that represents a Profiles  resource.
-- [object ProfileResponse](profileresponse.md)
+- [object ProfileResponse](./profileresponse.md)
   A response that contains a single Profiles resource.
-- [object ProfilesResponse](profilesresponse.md)
+- [object ProfilesResponse](./profilesresponse.md)
   A response that contains a list of Profiles resources.
-- [object ProfilesWithoutIncludesResponse](profileswithoutincludesresponse.md)
+- [object ProfilesWithoutIncludesResponse](./profileswithoutincludesresponse.md)
 
 
 ---

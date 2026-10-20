@@ -1,7 +1,8 @@
 # init(color:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an unlit material with the given base color.
 
@@ -14,9 +15,15 @@ Creates an unlit material with the given base color.
 init(color: NSColor)
 ```
 
+**Other overloads**:
+
+```swift
+init(color: UIColor)
+```
+
 #### Discussion
 
-> **Note**: The blending mode of `UnlitMaterial` materials should be configured explicitly with the [`blending`](unlitmaterial/blending-swift.property.md) property for transparent or translucent surfaces.  The `opaque` mode is used when unset.
+> **Note**: The blending mode of `UnlitMaterial` materials should be configured explicitly with the [`blending`](./blending-swift.property.md) property for transparent or translucent surfaces.  The `opaque` mode is used when unset.
 
 ## Parameters
 

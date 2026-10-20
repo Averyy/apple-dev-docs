@@ -2,6 +2,7 @@
 
 **Framework**: Group Activities  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 An app-defined string that uniquely identifies the activity.
@@ -22,8 +23,8 @@ static var activityIdentifier: String { get }
 
 ## Mentions
 
-- [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
-- [Defining your app’s SharePlay activities](defining-your-apps-shareplay-activities.md)
+- [Adding spatial Persona support to an activity](../adding-spatial-persona-support-to-an-activity.md)
+- [Defining your app’s SharePlay activities](../defining-your-apps-shareplay-activities.md)
 
 #### Discussion
 
@@ -47,9 +48,16 @@ If you don’t implement this property yourself, the default implementation comp
 
 Make activity identifiers as granular as needed to differentiate the activities within your app. Don’t create one activity type that serves multiple purposes. Instead, define separate types and give them unique activity identifiers. For example, if your video player supports playing both movies and television shows, create separate activities for each.
 
+## Default Implementations
+
+### GroupActivity Implementations
+- [static var activityIdentifier: String](./activityidentifier-4jgfp.md)
+  An app-defined string that uniquely identifies the activity.
+
 ## See Also
 
-- [var metadata: GroupActivityMetadata](groupactivity/metadata.md)
+### Specifying the activity details
+- [var metadata: GroupActivityMetadata](./metadata.md)
   A description of the activity, and optional image to display to the user.
 
 

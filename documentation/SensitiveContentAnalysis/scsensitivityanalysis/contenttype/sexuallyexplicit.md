@@ -1,7 +1,8 @@
 # sexuallyExplicit
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A content type that indicates the presence of nudity or sexually explicit material.
 
@@ -18,17 +19,22 @@ A content type that indicates the presence of nudity or sexually explicit materi
 static let sexuallyExplicit: SCSensitivityAnalysis.ContentType
 ```
 
+```c
+extern SCSensitiveContentType const SCSensitiveContentTypeSexuallyExplicit;
+```
+
 ## Mentions
 
-- [Testing your app’s response to sensitive media](testing-your-app-s-response-to-sensitive-media.md)
+- [Testing your app’s response to sensitive media](../../testing-your-app-s-response-to-sensitive-media.md)
 
 #### Discussion
 
-The Sensitive Content Analysis framework includes this value in [`detectedTypes`](scsensitivityanalysis/detectedtypes.md) when it detects nudity or sexually explicit content in analyzed media.
+The Sensitive Content Analysis framework includes this value in [`detectedTypes`](../detectedtypes.md) when it detects nudity or sexually explicit content in analyzed media.
 
 ## See Also
 
-- [static let goreOrViolence: SCSensitivityAnalysis.ContentType](scsensitivityanalysis/contenttype/goreorviolence.md)
+### Identifying content categories
+- [static let goreOrViolence: SCSensitivityAnalysis.ContentType](./goreorviolence.md)
   A content type that indicates the presence of graphic violence or gore.
 
 

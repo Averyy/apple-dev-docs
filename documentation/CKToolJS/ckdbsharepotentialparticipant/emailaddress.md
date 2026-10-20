@@ -1,7 +1,8 @@
 # emailAddress
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The participant’s email address.
 
@@ -10,7 +11,7 @@ The participant’s email address.
 
 ## Declaration
 
-```swift
+```
 attribute string? emailAddress;
 ```
 

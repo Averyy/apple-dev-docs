@@ -1,7 +1,8 @@
 # ClientRect
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface ClientRect
 ```
 
 ## Topics
 
 ### Instance Properties
-- [bottom](clientrect/1631346-bottom.md)
-- [height](clientrect/1634465-height.md)
-- [left](clientrect/1631910-left.md)
-- [right](clientrect/1630388-right.md)
-- [serializer](clientrect/2871220-serializer.md)
-- [top](clientrect/1632197-top.md)
-- [width](clientrect/1633496-width.md)
+- [bottom](./clientrect/api-1631346-bottom.md)
+- [height](./clientrect/api-1634465-height.md)
+- [left](./clientrect/api-1631910-left.md)
+- [right](./clientrect/api-1630388-right.md)
+- [serializer](./clientrect/api-2871220-serializer.md)
+- [top](./clientrect/api-1632197-top.md)
+- [width](./clientrect/api-1633496-width.md)
 
 
 ---

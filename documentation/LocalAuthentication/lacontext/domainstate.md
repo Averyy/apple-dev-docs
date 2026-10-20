@@ -1,7 +1,8 @@
 # domainState
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Contains authentication domain state.
 
@@ -16,6 +17,10 @@ Contains authentication domain state.
 
 ```swift
 var domainState: LADomainState { get }
+```
+
+```objc
+@property (nonatomic, readonly) LADomainState * domainState;
 ```
 
 

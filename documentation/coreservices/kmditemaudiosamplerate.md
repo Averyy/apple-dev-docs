@@ -1,7 +1,8 @@
 # kMDItemAudioSampleRate
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Sample rate of the audio data contained in the file. The sample rate is a float value representing hz (audio_frames/second). For example: 44100.0, 22254.54. A CFNumber.
 
@@ -12,6 +13,10 @@ Sample rate of the audio data contained in the file. The sample rate is a float 
 
 ```swift
 let kMDItemAudioSampleRate: CFString!
+```
+
+```c
+const CFStringRef kMDItemAudioSampleRate;
 ```
 
 

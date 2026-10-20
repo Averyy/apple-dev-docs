@@ -1,12 +1,11 @@
 ---
-layout: page
-title: Supported Features and Constraints of C++ Interoperability
-official_url: https://swift.org/documentation/cxx-interop/status/
-redirect_from: 
-- /documentation/cxx-interop/status.html
+source: swiftlang/swift-org-website
+url: https://swift.org/documentation/cxx-interop/status/
 ---
 
-Swift [supports](/documentation/cxx-interop) bidirectional interoperability with C++. This page
+# Supported Features and Constraints of C++ Interoperability
+
+Swift [supports](https://swift.org/documentation/cxx-interop) bidirectional interoperability with C++. This page
 describes which C++ interoperability features are currently supported.
 It also talks about the limitations
 in the current support for C++ interoperability. Additionally, it lists the set
@@ -24,7 +23,7 @@ interoperability features.
 ## Platform Support
 
 C++ interoperability is supported for development and deployment
-on [all platforms that Swift supports](/platform-support/).
+on [all platforms that Swift supports](https://swift.org/platform-support/).
 
 ### Minimum Deployment Version for Mixed-Language Application
 
@@ -34,12 +33,12 @@ uses
 [C++ classes or structures that become reference types](#minimum-deployment-version-for-reference-types-imported-from-c).
 The minimum deployment version for an application that does not use such
 reference types is the same as Swift's regular
-[minimum deployment version](/platform-support#minimum-deployment-version).
+[minimum deployment version](https://swift.org/platform-support#minimum-deployment-version).
 
 #### Minimum Deployment Version for Reference Types Imported from C++
 
 The table below shows the minimum OS version for which a mixed Swift and
-C++ application that uses [C++ classes or structures that become reference types](/documentation/cxx-interop#mapping-c-types-to-swift-reference-types)
+C++ application that uses [C++ classes or structures that become reference types](https://swift.org/documentation/cxx-interop#mapping-c-types-to-swift-reference-types)
 can be deployed. Any deployment platform not listed in the table below
 is supported automatically, so the imported reference types do not
 impose addition deployment version requirements for platforms like Ubuntu or CentOS.
@@ -180,7 +179,7 @@ Swift.
 Class and structure templates are not directly available in Swift. The
 instantiated specializations of a class or structure template are available
 in Swift. Swift code can access template specialization types by [using a type
-alias defined in a C++ header](/documentation/cxx-interop#using-class-templates).
+alias defined in a C++ header](https://swift.org/documentation/cxx-interop#using-class-templates).
 
 Public data members of a C++ structure or class are available in Swift when the
 type of such data member is supported in Swift.
@@ -283,7 +282,7 @@ type can be represented in C++ only when:
   `Optional<UnsafePointer>` / `Optional<UnsafeMutablePointer>` 
   that points to
   any type from the supported three type categories listed above.
-  
+
 Functions or initializers that have a parameter type or a return type that's
 not listed above cannot be represented in C++ yet. Properties of type
 that's not listed above cannot be represented in C++ yet.
@@ -318,7 +317,7 @@ Swift is able to represent the following Swift standard library types in C++:
 
 For more details on using Swift types like `String` in C++, check out
 the section that describes how to
-[use Swift standard library types from C++](/documentation/cxx-interop#using-swift-standard-library-types-from-c).
+[use Swift standard library types from C++](https://swift.org/documentation/cxx-interop#using-swift-standard-library-types-from-c).
 
 Note that Swift tuples are not currently supported in C++.
 
@@ -380,7 +379,7 @@ A Swift GitHub issue tracks the status of this constraint:
 ### Performance Constraints
 
 Swift's current
-[support for C++ container types](/documentation/cxx-interop#working-with-c-containers) 
+[support for C++ container types](https://swift.org/documentation/cxx-interop#working-with-c-containers) 
 does not provide explicit
 performance guarantees. Most notably, Swift can make a deep copy of a
 collection when it's used in a `for-in` loop in Swift.
@@ -402,7 +401,7 @@ to import C or Objective-C headers in C++ mode are listed below:
   named `class` is not a valid C++ function.
 - Existing C or Objective-C headers might try to import another Clang module
   inside of an `extern "C"` block. That's not allowed in C++ mode. 
-  
+
 In cases like this you're advised to fix these issues in
 your C or Objective-C headers. If these headers come from a dependency
 that you don't control, you should report an issue to the vendor that vends

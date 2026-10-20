@@ -1,7 +1,8 @@
 # scaledTanh(alpha:beta:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a scaled tanh activation operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a scaled tanh activation operation to the current graph.
 ```swift
 func scaledTanh(alpha: Float, beta: Float) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

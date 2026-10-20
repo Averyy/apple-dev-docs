@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current 3D affine transform applied by an active manipulation gesture.
 

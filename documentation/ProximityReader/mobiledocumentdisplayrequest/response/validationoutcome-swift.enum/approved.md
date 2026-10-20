@@ -1,7 +1,8 @@
 # MobileDocumentDisplayRequest.Response.ValidationOutcome.approved
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A message that indicates the user approved the document response.
 

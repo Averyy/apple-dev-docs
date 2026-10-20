@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Synchronizes the volume with its underlying resource.
@@ -12,7 +13,15 @@ Synchronizes the volume with its underlying resource.
 ## Declaration
 
 ```swift
+func synchronize(flags: FSSyncFlags, replyHandler reply: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func synchronize(flags: FSSyncFlags) async throws
+```
+
+```objc
+- (void) synchronizeWithFlags:(FSSyncFlags) flags replyHandler:(void (^)(NSError *error)) reply;
 ```
 
 #### Discussion

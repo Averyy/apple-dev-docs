@@ -1,9 +1,10 @@
 # imageData
 
 **Framework**: iTunes Library  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The raw image data of the artwork in the format that [`imageDataFormat`](itlibartwork/imagedataformat.md) specifies.
+The raw image data of the artwork in the format that [`imageDataFormat`](./imagedataformat.md) specifies.
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -15,12 +16,17 @@ The raw image data of the artwork in the format that [`imageDataFormat`](itlibar
 var imageData: Data? { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly, nullable) NSData * imageData;
+```
+
 ## See Also
 
-- [var image: NSImage?](itlibartwork/image.md)
+### Getting Artwork Info
+- [var image: NSImage?](./image.md)
   The artwork image.
-- [var imageDataFormat: ITLibArtworkFormat](itlibartwork/imagedataformat.md)
-  The format of the artwork image data that [`imageData`](itlibartwork/imagedata.md) returns.
+- [var imageDataFormat: ITLibArtworkFormat](./imagedataformat.md)
+  The format of the artwork image data that [`imageData`](./imagedata.md) returns.
 
 
 ---

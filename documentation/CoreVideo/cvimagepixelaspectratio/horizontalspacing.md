@@ -1,7 +1,8 @@
 # horizontalSpacing
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The horizontal component of the image buffer aspect ratio.
 

@@ -1,7 +1,8 @@
 # playgroundDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the gazetteer settings shown in a playground.
 
@@ -16,9 +17,10 @@ var playgroundDescription: Any { get }
 
 ## See Also
 
-- [var description: String](mlgazetteer/modelparameters-swift.struct/description.md)
+### Describing parameters
+- [var description: String](./description.md)
   A text representation of the gazetteer settings.
-- [var debugDescription: String](mlgazetteer/modelparameters-swift.struct/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the gazetteer settings that’s suitable for output during debugging.
 
 

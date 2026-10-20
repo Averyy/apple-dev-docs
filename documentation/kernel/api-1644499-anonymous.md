@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOHIDStandardTypeANSI](1644499-anonymous/kiohidstandardtypeansi.md)
-- [kIOHIDStandardTypeISO](1644499-anonymous/kiohidstandardtypeiso.md)
-- [kIOHIDStandardTypeJIS](1644499-anonymous/kiohidstandardtypejis.md)
-- [kIOHIDStandardTypeUnspecified](1644499-anonymous/kiohidstandardtypeunspecified.md)
+- [kIOHIDStandardTypeANSI](./api-1644499-anonymous/kiohidstandardtypeansi.md)
+- [kIOHIDStandardTypeISO](./api-1644499-anonymous/kiohidstandardtypeiso.md)
+- [kIOHIDStandardTypeJIS](./api-1644499-anonymous/kiohidstandardtypejis.md)
+- [kIOHIDStandardTypeUnspecified](./api-1644499-anonymous/kiohidstandardtypeunspecified.md)
 
 
 ---

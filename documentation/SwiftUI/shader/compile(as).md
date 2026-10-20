@@ -1,7 +1,8 @@
 # compile(as:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to asynchronously compile a shader function, to minimize the chance of stalling when it is first used for rendering.
 
@@ -43,7 +44,7 @@ Circle().fill(
     ShaderLibrary.example(.color(.orange), .float(32)))
 ```
 
-> **Note**: An error describing why compilation failed.
+> **Throws**: An error describing why compilation failed.
 
 ## Parameters
 

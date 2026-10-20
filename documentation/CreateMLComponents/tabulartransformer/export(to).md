@@ -1,7 +1,8 @@
 # export(to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports this transformer as a CoreML model.
 
@@ -29,7 +30,8 @@ func export(to url: URL) throws
 
 ## See Also
 
-- [func export(to: URL, metadata: ModelMetadata) throws](tabulartransformer/export(to:metadata:).md)
+### Exporting
+- [func export(to: URL, metadata: ModelMetadata) throws](./export%28to,metadata%29.md)
   Exports this tabular transformer as a CoreML model with userInfo.
 
 

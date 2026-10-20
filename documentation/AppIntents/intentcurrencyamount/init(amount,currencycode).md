@@ -1,7 +1,8 @@
 # init(amount:currencyCode:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a IntentCurrencyAmount from a monetary amount and a currency code.
 
@@ -11,7 +12,7 @@ Creates a IntentCurrencyAmount from a monetary amount and a currency code.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

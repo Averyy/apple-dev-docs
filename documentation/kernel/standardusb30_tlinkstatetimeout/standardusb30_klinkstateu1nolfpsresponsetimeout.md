@@ -1,14 +1,15 @@
 # StandardUSB30::kLinkStateU1NoLFPSResponseTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 StandardUSB30::kLinkStateU1NoLFPSResponseTimeout = kIOUSB30LinkStateU1NoLFPSResponseTimeout
 ```
 

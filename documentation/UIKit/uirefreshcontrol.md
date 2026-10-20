@@ -1,7 +1,8 @@
 # UIRefreshControl
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A standard control that can initiate the refreshing of a scroll view’s contents.
 
@@ -18,13 +19,17 @@ A standard control that can initiate the refreshing of a scroll view’s content
 class UIRefreshControl
 ```
 
+```objc
+@interface UIRefreshControl : UIControl
+```
+
 #### Overview
 
-A [`UIRefreshControl`](uirefreshcontrol.md) object is a standard control that you attach to any [`UIScrollView`](uiscrollview.md) object, including table views and collection views. Add this control to scrollable views to give your users a standard way to refresh their contents. When the user drags the top of the scrollable content area downward, the scroll view reveals the refresh control, begins animating its progress indicator, and notifies your app. You use that notification to update your content and dismiss the refresh control.
+A [`UIRefreshControl`](./uirefreshcontrol.md) object is a standard control that you attach to any [`UIScrollView`](./uiscrollview.md) object, including table views and collection views. Add this control to scrollable views to give your users a standard way to refresh their contents. When the user drags the top of the scrollable content area downward, the scroll view reveals the refresh control, begins animating its progress indicator, and notifies your app. You use that notification to update your content and dismiss the refresh control.
 
-![Illustration showing a refresh control. The control displays an animated progress indicator at the top of a scroll view's content area.](/images/com.apple.uikit/ui-refresh-control@2x.png)
+![Illustration showing a refresh control. The control displays an animated progress indicator at the top of a scroll view's content area.](https://developer.apple.com/tutorials/images/com.apple.uikit/ui-refresh-control@2x.png)
 
-The refresh control lets you know when to update your content using the target-action mechanism of [`UIControl`](uicontrol.md). Upon activation, the refresh control calls the action method you provided at configuration time. When adding your action method, configure it to listen for the [`valueChanged`](uicontrol/event/valuechanged.md) event, as shown in the following example code. Use your action method to update your content, and call the refresh control’s [`endRefreshing()`](uirefreshcontrol/endrefreshing().md) method when you’re done.
+The refresh control lets you know when to update your content using the target-action mechanism of [`UIControl`](./uicontrol.md). Upon activation, the refresh control calls the action method you provided at configuration time. When adding your action method, configure it to listen for the [`valueChanged`](./uicontrol/event/valuechanged.md) event, as shown in the following example code. Use your action method to update your content, and call the refresh control’s [`endRefreshing()`](./uirefreshcontrol/endrefreshing%28%29.md) method when you’re done.
 
 ```swift
 func configureRefreshControl () {
@@ -46,83 +51,84 @@ func configureRefreshControl () {
 
 ```
 
-If you’re using a [`UITableViewController`](uitableviewcontroller.md), assign its [`refreshControl`](uitableviewcontroller/refreshcontrol.md) property to an instance of [`UIRefreshControl`](uirefreshcontrol.md). Then associate a target and action method for the [`valueChanged`](uicontrol/event/valuechanged.md) event to manage the refresh behavior of the associated table view.
+If you’re using a [`UITableViewController`](./uitableviewcontroller.md), assign its [`refreshControl`](./uitableviewcontroller/refreshcontrol.md) property to an instance of [`UIRefreshControl`](./uirefreshcontrol.md). Then associate a target and action method for the [`valueChanged`](./uicontrol/event/valuechanged.md) event to manage the refresh behavior of the associated table view.
 
 ## Topics
 
 ### Initializing a refresh control
-- [init()](uirefreshcontrol/init.md)
+- [init()](./uirefreshcontrol/init%28%29.md)
   Initializes and returns a standard refresh control.
 ### Accessing the control attributes
-- [var tintColor: UIColor!](uirefreshcontrol/tintcolor.md)
+- [var tintColor: UIColor!](./uirefreshcontrol/tintcolor.md)
   The tint color for the refresh control.
-- [var attributedTitle: NSAttributedString?](uirefreshcontrol/attributedtitle.md)
+- [var attributedTitle: NSAttributedString?](./uirefreshcontrol/attributedtitle.md)
   The styled title text to display in the refresh control.
 ### Managing the refresh status
-- [func beginRefreshing()](uirefreshcontrol/beginrefreshing.md)
+- [func beginRefreshing()](./uirefreshcontrol/beginrefreshing%28%29.md)
   Tells the control that a refresh operation was started programmatically.
-- [func endRefreshing()](uirefreshcontrol/endrefreshing.md)
+- [func endRefreshing()](./uirefreshcontrol/endrefreshing%28%29.md)
   Tells the control that a refresh operation has ended.
-- [var isRefreshing: Bool](uirefreshcontrol/isrefreshing.md)
+- [var isRefreshing: Bool](./uirefreshcontrol/isrefreshing.md)
   A Boolean value indicating whether a refresh operation has been triggered and is in progress.
 
 ## Relationships
 
 ### Inherits From
-- [UIControl](uicontrol.md)
+- [UIControl](./uicontrol.md)
 ### Conforms To
-- [CALayerDelegate](../quartzcore/calayerdelegate.md)
-- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
-- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIAccessibilityIdentification](uiaccessibilityidentification.md)
-- [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
-- [UIAppearance](uiappearance.md)
-- [UIAppearanceContainer](uiappearancecontainer.md)
-- [UIContextMenuInteractionDelegate](uicontextmenuinteractiondelegate.md)
-- [UICoordinateSpace](uicoordinatespace.md)
-- [UIDynamicItem](uidynamicitem.md)
-- [UIFocusEnvironment](uifocusenvironment.md)
-- [UIFocusItem](uifocusitem.md)
-- [UIFocusItemContainer](uifocusitemcontainer.md)
-- [UILargeContentViewerItem](uilargecontentvieweritem.md)
-- [UIPasteConfigurationSupporting](uipasteconfigurationsupporting.md)
-- [UIPopoverPresentationControllerSourceItem](uipopoverpresentationcontrollersourceitem.md)
-- [UIResponderStandardEditActions](uiresponderstandardeditactions.md)
-- [UITraitChangeObservable](uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](uitraitenvironment.md)
-- [UIUserActivityRestoring](uiuseractivityrestoring.md)
+- [CALayerDelegate](../QuartzCore/calayerdelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/cmbodyidentifiable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIAccessibilityIdentification](./uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](./uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](./uiappearance.md)
+- [UIAppearanceContainer](./uiappearancecontainer.md)
+- [UIContextMenuInteractionDelegate](./uicontextmenuinteractiondelegate.md)
+- [UICoordinateSpace](./uicoordinatespace.md)
+- [UIDynamicItem](./uidynamicitem.md)
+- [UIFocusEnvironment](./uifocusenvironment.md)
+- [UIFocusItem](./uifocusitem.md)
+- [UIFocusItemContainer](./uifocusitemcontainer.md)
+- [UILargeContentViewerItem](./uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](./uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](./uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](./uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](./uitraitenvironment.md)
+- [UIUserActivityRestoring](./uiuseractivityrestoring.md)
 
 ## See Also
 
-- [var indicatorStyle: UIScrollView.IndicatorStyle](uiscrollview/indicatorstyle-swift.property.md)
+### Managing the scroll indicator and refresh control
+- [var indicatorStyle: UIScrollView.IndicatorStyle](./uiscrollview/indicatorstyle-swift.property.md)
   The style of the scroll indicators.
-- [UIScrollView.IndicatorStyle](uiscrollview/indicatorstyle-swift.enum.md)
+- [UIScrollView.IndicatorStyle](./uiscrollview/indicatorstyle-swift.enum.md)
   Defines constants that represent the styles of the scroll indicators.
-- [var showsHorizontalScrollIndicator: Bool](uiscrollview/showshorizontalscrollindicator.md)
+- [var showsHorizontalScrollIndicator: Bool](./uiscrollview/showshorizontalscrollindicator.md)
   A Boolean value that controls whether the horizontal scroll indicator is visible.
-- [var showsVerticalScrollIndicator: Bool](uiscrollview/showsverticalscrollindicator.md)
+- [var showsVerticalScrollIndicator: Bool](./uiscrollview/showsverticalscrollindicator.md)
   A Boolean value that controls whether the vertical scroll indicator is visible.
-- [var horizontalScrollIndicatorInsets: UIEdgeInsets](uiscrollview/horizontalscrollindicatorinsets.md)
+- [var horizontalScrollIndicatorInsets: UIEdgeInsets](./uiscrollview/horizontalscrollindicatorinsets.md)
   The horizontal distance the scroll indicators are inset from the edge of the scroll view.
-- [var verticalScrollIndicatorInsets: UIEdgeInsets](uiscrollview/verticalscrollindicatorinsets.md)
+- [var verticalScrollIndicatorInsets: UIEdgeInsets](./uiscrollview/verticalscrollindicatorinsets.md)
   The vertical distance the scroll indicators are inset from the edge of the scroll view.
-- [var automaticallyAdjustsScrollIndicatorInsets: Bool](uiscrollview/automaticallyadjustsscrollindicatorinsets.md)
+- [var automaticallyAdjustsScrollIndicatorInsets: Bool](./uiscrollview/automaticallyadjustsscrollindicatorinsets.md)
   A Boolean value that indicates whether the system automatically adjusts the scroll indicator insets.
-- [func flashScrollIndicators()](uiscrollview/flashscrollindicators.md)
+- [func flashScrollIndicators()](./uiscrollview/flashscrollindicators%28%29.md)
   Displays the scroll indicators momentarily.
-- [func withScrollIndicatorsShown(forContentOffsetChanges: () -> Void)](uiscrollview/withscrollindicatorsshown(forcontentoffsetchanges:).md)
+- [func withScrollIndicatorsShown(forContentOffsetChanges: () -> Void)](./uiscrollview/withscrollindicatorsshown%28forcontentoffsetchanges%29.md)
   Displays the scroll indicators during updates to the scroll view’s content offset.
-- [var refreshControl: UIRefreshControl?](uiscrollview/refreshcontrol.md)
+- [var refreshControl: UIRefreshControl?](./uiscrollview/refreshcontrol.md)
   The refresh control associated with the scroll view.
 
 

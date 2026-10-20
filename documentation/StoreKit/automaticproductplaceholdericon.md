@@ -1,7 +1,8 @@
 # AutomaticProductPlaceholderIcon
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that represents the default placeholder icon for an in-app store product.
 
@@ -22,14 +23,14 @@ A view that represents the default placeholder icon for an in-app store product.
 
 #### Overview
 
-You don’t use this type directly. Instead, create a [`ProductView`](productview.md) or [`StoreView`](storeview.md) and provide product identifiers without a custom placeholder icon.
+You don’t use this type directly. Instead, create a [`ProductView`](./productview.md) or [`StoreView`](./storeview.md) and provide product identifiers without a custom placeholder icon.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(floatLiteral:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an opacity object from a single value.
 
@@ -38,9 +39,10 @@ The following Metal code demonstrates how to set the entity’s opacity in the m
 
 ## See Also
 
-- [init(scale: Float, texture: CustomMaterial.Texture?)](custommaterial/opacity/init(scale:texture:).md)
+### Creating an opacity object
+- [init(scale: Float, texture: CustomMaterial.Texture?)](./init%28scale,texture%29.md)
   Creates an object that defines the opacity of an entity using a single value, a UV-mapped image texture, or both.
-- [init(PhysicallyBasedMaterial.Opacity)](custommaterial/opacity/init(_:).md)
+- [init(PhysicallyBasedMaterial.Opacity)](./init%28_%29.md)
   Creates an object from the opacity property of an existing physically based material.
 
 

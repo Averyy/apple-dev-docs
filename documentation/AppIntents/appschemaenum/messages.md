@@ -1,7 +1,8 @@
 # messages
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of enum schemas in the messages domain.
 
@@ -17,6 +18,8 @@ The collection of enum schemas in the messages domain.
 ```swift
 static var messages: some AppSchema.MessagesEnum { get }
 ```
+
+Available when `Self` is `AppSchema.Enum`.
 
 
 ---

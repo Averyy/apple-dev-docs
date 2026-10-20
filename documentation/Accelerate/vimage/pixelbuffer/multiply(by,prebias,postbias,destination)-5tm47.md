@@ -1,7 +1,8 @@
 # multiply(by:preBias:postBias:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Multiplies each four channel pixel in a 32-bit-per channel, 4-channel pixel buffer by a 4 x 4 matrix to produce a four channel result.
 
@@ -11,7 +12,7 @@ Multiplies each four channel pixel in a 32-bit-per channel, 4-channel pixel buff
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Multiplies each four channel pixel in a 32-bit-per channel, 4-channel pixel buff
 ```swift
 func multiply<Matrix>(by matrix: Matrix, preBias: (Float, Float, Float, Float), postBias: (Float, Float, Float, Float), destination: vImage.PixelBuffer<vImage.InterleavedFx4>) where Matrix : AccelerateBuffer, Matrix.Element == Float
 ```
+
+Available when `Format` is `vImage.InterleavedFx4`.
 
 #### Discussion
 
@@ -41,13 +44,14 @@ destination = (p + postBias)
 
 ## See Also
 
-- [func multiply<Matrix>(by: Matrix, divisor: Int, preBias: (Int, Int, Int, Int), postBias: (Int, Int, Int, Int), destination: vImage.PixelBuffer<vImage.Interleaved8x4>)](vimage/pixelbuffer/multiply(by:divisor:prebias:postbias:destination:)-7ikb7.md)
+### Matrix Multiplication
+- [func multiply<Matrix>(by: Matrix, divisor: Int, preBias: (Int, Int, Int, Int), postBias: (Int, Int, Int, Int), destination: vImage.PixelBuffer<vImage.Interleaved8x4>)](./multiply%28by,divisor,prebias,postbias,destination%29-7ikb7.md)
   Multiplies each four channel pixel in an 8-bit-per channel, 4-channel pixel buffer by a 4 x 4 matrix to produce a four channel result.
-- [func multiply(by: simd_float4x4, preBias: (Float, Float, Float, Float), postBias: (Float, Float, Float, Float), destination: vImage.PixelBuffer<vImage.InterleavedFx4>)](vimage/pixelbuffer/multiply(by:prebias:postbias:destination:)-5tq68.md)
+- [func multiply(by: simd_float4x4, preBias: (Float, Float, Float, Float), postBias: (Float, Float, Float, Float), destination: vImage.PixelBuffer<vImage.InterleavedFx4>)](./multiply%28by,prebias,postbias,destination%29-5tq68.md)
   Multiplies each four channel pixel in a 32-bit-per channel, 4-channel pixel buffer by a 4 x 4 simd matrix to produce a four channel result.
-- [func multiply<Matrix, DestFormat>(by: Matrix, divisor: Int, preBias: [Int], postBias: [Int], destination: vImage.PixelBuffer<DestFormat>)](vimage/pixelbuffer/multiply(by:divisor:prebias:postbias:destination:)-86hbw.md)
+- [func multiply<Matrix, DestFormat>(by: Matrix, divisor: Int, preBias: [Int], postBias: [Int], destination: vImage.PixelBuffer<DestFormat>)](./multiply%28by,divisor,prebias,postbias,destination%29-86hbw.md)
   Multiplies each four channel pixel in an 8-bit multiple-plane pixel buffer by a 4 x 4 matrix to produce a four channel result.
-- [func multiply<Matrix, DestFormat>(by: Matrix, preBias: [Float], postBias: [Float], destination: vImage.PixelBuffer<DestFormat>)](vimage/pixelbuffer/multiply(by:prebias:postbias:destination:)-3kltz.md)
+- [func multiply<Matrix, DestFormat>(by: Matrix, preBias: [Float], postBias: [Float], destination: vImage.PixelBuffer<DestFormat>)](./multiply%28by,prebias,postbias,destination%29-3kltz.md)
   Multiplies each four channel pixel in a 32-bit multiple-plane pixel buffer by a 4 x 4 matrix to produce a four channel result.
 
 

@@ -1,7 +1,8 @@
 # TransactionPicker
 
 **Framework**: FinanceKitUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that displays a transaction picker for choosing transactions from FinanceKit.
 
@@ -19,15 +20,15 @@ A view that displays a transaction picker for choosing transactions from Finance
 ## Topics
 
 ### Initializers
-- [init(selection: Binding<[Transaction]>, label: () -> Label)](transactionpicker/init(selection:label:).md)
+- [init(selection: Binding<[Transaction]>, label: () -> Label)](./transactionpicker/init%28selection,label%29.md)
   Creates a picker that selects a collection of transactions.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 
 ---

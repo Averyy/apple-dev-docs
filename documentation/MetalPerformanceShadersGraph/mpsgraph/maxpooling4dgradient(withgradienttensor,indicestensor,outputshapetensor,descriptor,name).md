@@ -1,7 +1,8 @@
 # maxPooling4DGradient(withGradientTensor:indicesTensor:outputShapeTensor:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a max-pooling gradient operation and returns the result tensor.
 
@@ -19,6 +20,10 @@ Creates a max-pooling gradient operation and returns the result tensor.
 func maxPooling4DGradient(withGradientTensor gradient: MPSGraphTensor, indicesTensor indices: MPSGraphTensor, outputShapeTensor outputShape: MPSGraphTensor, descriptor: MPSGraphPooling4DOpDescriptor, name: String?) -> MPSGraphTensor
 ```
 
+```objc
+- (MPSGraphTensor *) maxPooling4DGradientWithGradientTensor:(MPSGraphTensor *) gradient indicesTensor:(MPSGraphTensor *) indices outputShapeTensor:(MPSGraphTensor *) outputShape descriptor:(MPSGraphPooling4DOpDescriptor *) descriptor name:(NSString *) name;
+```
+
 #### Return Value
 
 Destination gradient tensor.
@@ -30,7 +35,7 @@ With this API MPSGraph computes the max-pooling gradient efficiently by reusing 
 ## Parameters
 
 - `gradient`: An input gradient tensor.
-- `indices`: The indices tensor returned from [`maxPooling4DReturnIndices(_:descriptor:name:)`](mpsgraph/maxpooling4dreturnindices(_:descriptor:name:).md).
+- `indices`: The indices tensor returned from [`maxPooling4DReturnIndices(_:descriptor:name:)`](./maxpooling4dreturnindices%28_,descriptor,name%29.md).
 - `outputShape`: A tensor containing the shape of the destination gradient.
 - `descriptor`: A pooling operation descriptor that specifies pooling window sizes, strides, dilation rates, paddings and layouts.
 - `name`: The name for the operation.

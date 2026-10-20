@@ -1,6 +1,8 @@
 # Bringing Photos picker to your SwiftUI app
 
-**Framework**: PhotoKit
+**Framework**: PhotoKit  
+**Role**: Sample Code  
+**Download**: [BringingPhotosPickerToYourSwiftUIApp.zip](https://docs-assets.developer.apple.com/published/00f942c6d60a/BringingPhotosPickerToYourSwiftUIApp.zip)
 
 Select media assets by using a Photos picker view that SwiftUI provides.
 
@@ -14,9 +16,9 @@ Select media assets by using a Photos picker view that SwiftUI provides.
 
 #### Overview
 
-This sample shows how to use the SwiftUI Photos picker to browse and select a photo from your photo library. The app displays an interface that allows you to fill in customer profile details, and includes a button to select a photo from the Photos library. The sample explores how to retrieve a SwiftUI image by using [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) — a new SwiftUI protocol you use to move data.
+This sample shows how to use the SwiftUI Photos picker to browse and select a photo from your photo library. The app displays an interface that allows you to fill in customer profile details, and includes a button to select a photo from the Photos library. The sample explores how to retrieve a SwiftUI image by using [`Transferable`](../CoreTransferable/transferable.md) — a new SwiftUI protocol you use to move data.
 
-> **Note**: This sample code project is associated with WWDC22 session [`10023: What’s new in the Photos picker`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10023).
+> **Note**: This sample code project is associated with WWDC22 session [10023: What’s new in the Photos picker](https://developer.apple.com/wwdc22/10023).
 
 ##### Configure the Sample Code Project
 
@@ -24,7 +26,7 @@ Before you run the sample code project in Xcode, ensure you’re using iOS 16 or
 
 You must use a physical device when building the watchOS target in Xcode.
 
-##### Add a Photos Picker View
+##### Add a Photos picker view
 
 To display the picker, the sample adds a [`PhotosPicker`](https://developer.apple.com/documentation/photosui/photospicker) view as an overlay to a profile image. The view provides a label that describes the action of choosing an item from the photo library. The sample displays assets that match the image type. In iOS 16 or later, [`PHPickerFilter`](https://developer.apple.com/documentation/photosui/phpickerfilter-swift.struct) contains new filters for [`bursts`](https://developer.apple.com/documentation/photosui/phpickerfilter-swift.struct/bursts), [`cinematicVideos`](https://developer.apple.com/documentation/photosui/phpickerfilter-swift.struct/cinematicvideos), and [`depthEffectPhotos`](https://developer.apple.com/documentation/photosui/phpickerfilter-swift.struct/deptheffectphotos).
 
@@ -43,7 +45,7 @@ CircularProfileImage(imageState: viewModel.imageState)
 	}
 ```
 
-##### Load an Image From the Selection
+##### Load an image from the selection
 
 The sample contains an [`PhotosPickerItem`](https://developer.apple.com/documentation/photosui/photospickeritem) that contains the selection. The selection only contains a placeholder object. Some large files may take a long time to download, so the sample shows an inline loading indicator instead of an indicator that blocks execution.
 
@@ -60,7 +62,7 @@ The sample contains an [`PhotosPickerItem`](https://developer.apple.com/document
 }
 ```
 
-To load the asset data, [`PhotosPickerItem`](https://developer.apple.com/documentation/photosui/photospickeritem) adopts [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable). The sample attempts to retrieve the SwiftUI [`Image`](https://developer.apple.com/documentation/swiftui/image) from the item. A failure can occur when the system attempts to retrieve the data. For example, if the picker tries to download data from iCloud Photos without a network connection.
+To load the asset data, [`PhotosPickerItem`](https://developer.apple.com/documentation/photosui/photospickeritem) adopts [`Transferable`](../CoreTransferable/transferable.md). The sample attempts to retrieve the SwiftUI [`Image`](../SwiftUI/image.md) from the item. A failure can occur when the system attempts to retrieve the data. For example, if the picker tries to download data from iCloud Photos without a network connection.
 
 ```swift
 private func loadTransferable(from imageSelection: PhotosPickerItem) -> Progress {
@@ -83,7 +85,7 @@ private func loadTransferable(from imageSelection: PhotosPickerItem) -> Progress
 }
 ```
 
-In advanced data transfer cases, an app can control the type of data to load by defining a custom model object that conforms to the `Transferable` protocol. The sample creates a model `ProfileImage` to handle loading a [`DataRepresentation`](https://developer.apple.com/documentation/coretransferable/datarepresentation) of an image, and converts it to a `UIImage` or `NSImage`.
+In advanced data transfer cases, an app can control the type of data to load by defining a custom model object that conforms to the `Transferable` protocol. The sample creates a model `ProfileImage` to handle loading a [`DataRepresentation`](../CoreTransferable/datarepresentation.md) of an image, and converts it to a `UIImage` or `NSImage`.
 
 ```swift
 struct ProfileImage: Transferable {
@@ -111,17 +113,18 @@ struct ProfileImage: Transferable {
 }
 ```
 
-When handling many items at the same time, or large assets, use [`FileRepresentation`](https://developer.apple.com/documentation/coretransferable/filerepresentation) to load assets as files and reduce memory usage. When loading assets as files, copy them to an app directory and remove them when they’re no longer needed.
+When handling many items at the same time, or large assets, use [`FileRepresentation`](../CoreTransferable/filerepresentation.md) to load assets as files and reduce memory usage. When loading assets as files, copy them to an app directory and remove them when they’re no longer needed.
 
 ## See Also
 
-- [Browsing and Modifying Photo Albums](browsing-and-modifying-photo-albums.md)
+### Sample code
+- [Browsing and Modifying Photo Albums](./browsing-and-modifying-photo-albums.md)
   Help people organize their photos into albums and browse photo collections in a grid-based layout using PhotoKit.
-- [Selecting Photos and Videos in iOS](selecting-photos-and-videos-in-ios.md)
+- [Selecting Photos and Videos in iOS](./selecting-photos-and-videos-in-ios.md)
   Improve the user experience of finding and selecting assets by using the Photos picker.
-- [Implementing an inline Photos picker](implementing-an-inline-photos-picker.md)
+- [Implementing an inline Photos picker](./implementing-an-inline-photos-picker.md)
   Embed a system-provided, half-height Photos picker into your app’s view.
-- [Creating a Slideshow Project Extension for Photos](creating-a-slideshow-project-extension-for-photos.md)
+- [Creating a Slideshow Project Extension for Photos](./creating-a-slideshow-project-extension-for-photos.md)
   Augment the macOS Photos app with extensions that support project creation.
 
 

@@ -1,7 +1,8 @@
 # menuItems
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The menu items provided by the extension for this action.
 
@@ -14,8 +15,28 @@ The menu items provided by the extension for this action.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+var menuItems: [UIMenuElement] { get }
+```
+
+*macOS*
+
 ```swift
 var menuItems: [NSMenuItem] { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<UIMenuElement *> * menuItems;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSMenuItem *> * menuItems;
 ```
 
 #### Discussion

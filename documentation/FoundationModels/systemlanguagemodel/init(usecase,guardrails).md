@@ -1,7 +1,8 @@
 # init(useCase:guardrails:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a system language model instance for a specific use case.
 
@@ -20,9 +21,10 @@ convenience init(useCase: SystemLanguageModel.UseCase = .general, guardrails: Sy
 
 ## See Also
 
-- [SystemLanguageModel.UseCase](systemlanguagemodel/usecase.md)
+### Creating a model for a use case
+- [SystemLanguageModel.UseCase](./usecase.md)
   A type that represents the use case for prompting.
-- [SystemLanguageModel.Guardrails](systemlanguagemodel/guardrails.md)
+- [SystemLanguageModel.Guardrails](./guardrails.md)
   A set of controls that flag sensitive content from model input and output.
 
 

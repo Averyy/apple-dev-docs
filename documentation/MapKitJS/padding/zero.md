@@ -1,7 +1,8 @@
 # Zero
 
 **Framework**: MapKit JS  
-**Kind**: var
+**Kind**: var  
+**Role**: Static Property
 
 An object that represents zero padding values.
 
@@ -10,7 +11,7 @@ An object that represents zero padding values.
 
 ## Declaration
 
-```swift
+```
 static readonly Zero: Padding;
 ```
 

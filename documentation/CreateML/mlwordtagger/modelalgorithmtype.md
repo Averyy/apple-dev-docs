@@ -1,7 +1,8 @@
 # MLWordTagger.ModelAlgorithmType
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The algorithm type.
 
@@ -17,38 +18,39 @@ enum ModelAlgorithmType
 ## Topics
 
 ### Selecting an algorithm type
-- [MLWordTagger.ModelAlgorithmType.crf(revision:)](mlwordtagger/modelalgorithmtype/crf(revision:).md)
+- [MLWordTagger.ModelAlgorithmType.crf(revision:)](./modelalgorithmtype/crf%28revision%29.md)
   A conditional random field algorithm.
-- [case transferLearning(MLWordTagger.FeatureExtractorType, revision: Int)](mlwordtagger/modelalgorithmtype/transferlearning(_:revision:).md)
+- [case transferLearning(MLWordTagger.FeatureExtractorType, revision: Int)](./modelalgorithmtype/transferlearning%28_,revision%29.md)
   A transfer-learning algorithm.
-- [MLWordTagger.FeatureExtractorType](mlwordtagger/featureextractortype.md)
+- [MLWordTagger.FeatureExtractorType](./featureextractortype.md)
   The feature extractors that are available to train a word tagger using with the transfer-learning algorithm option.
 ### Describing an algorithm type
-- [var description: String](mlwordtagger/modelalgorithmtype/description.md)
+- [var description: String](./modelalgorithmtype/description.md)
   A text representation of the model algorithm type.
-- [var debugDescription: String](mlwordtagger/modelalgorithmtype/debugdescription.md)
+- [var debugDescription: String](./modelalgorithmtype/debugdescription.md)
   A text representation of the algorithm type that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlwordtagger/modelalgorithmtype/playgrounddescription.md)
+- [var playgroundDescription: Any](./modelalgorithmtype/playgrounddescription.md)
   A description of the algorithm type in a playground.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlwordtagger/modelalgorithmtype/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlwordtagger/modelalgorithmtype/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlwordtagger/modelalgorithmtype/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./modelalgorithmtype/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./modelalgorithmtype/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./modelalgorithmtype/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLWordTagger.FeatureExtractorType](mlwordtagger/featureextractortype.md)
+### Supporting types
+- [MLWordTagger.FeatureExtractorType](./featureextractortype.md)
   The feature extractors that are available to train a word tagger using with the transfer-learning algorithm option.
 
 

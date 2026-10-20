@@ -1,7 +1,8 @@
 # CTFontCopyCharacterSet(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the Unicode character set of the font.
 
@@ -20,6 +21,10 @@ Returns the Unicode character set of the font.
 func CTFontCopyCharacterSet(_ font: CTFont) -> CFCharacterSet
 ```
 
+```c
+extern CFCharacterSetRefCTFontCopyCharacterSet(CTFontRef font);
+```
+
 #### Return Value
 
 A retained reference to the font’s character set.
@@ -34,9 +39,10 @@ The returned character set covers the nominal referenced by the font’s Unicode
 
 ## See Also
 
-- [func CTFontGetStringEncoding(CTFont) -> CFStringEncoding](ctfontgetstringencoding(_:).md)
+### Working With Encoding
+- [func CTFontGetStringEncoding(CTFont) -> CFStringEncoding](./ctfontgetstringencoding%28_%29.md)
   Returns the best string encoding for legacy format support.
-- [func CTFontCopySupportedLanguages(CTFont) -> CFArray](ctfontcopysupportedlanguages(_:).md)
+- [func CTFontCopySupportedLanguages(CTFont) -> CFArray](./ctfontcopysupportedlanguages%28_%29.md)
   Returns an array of languages supported by the font.
 
 

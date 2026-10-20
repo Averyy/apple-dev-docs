@@ -1,7 +1,8 @@
 # all
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collision group that represents all groups.
 
@@ -11,7 +12,7 @@ The collision group that represents all groups.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ static let all: CollisionGroup
 
 ## See Also
 
-- [static let `default`: CollisionGroup](collisiongroup/default.md)
+### Standard collision groups
+- [static let `default`: CollisionGroup](./default.md)
   The default collision group for objects.
-- [static let sceneUnderstanding: CollisionGroup](collisiongroup/sceneunderstanding.md)
+- [static let sceneUnderstanding: CollisionGroup](./sceneunderstanding.md)
   The default collision group for scene-understanding meshes.
 
 

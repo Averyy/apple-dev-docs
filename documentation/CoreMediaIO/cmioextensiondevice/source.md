@@ -1,7 +1,8 @@
 # source
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A source object for a device.
 
@@ -13,6 +14,10 @@ A source object for a device.
 
 ```swift
 weak var source: (any CMIOExtensionDeviceSource)? { get }
+```
+
+```objc
+@property (atomic, weak, readonly) id<CMIOExtensionDeviceSource> source;
 ```
 
 

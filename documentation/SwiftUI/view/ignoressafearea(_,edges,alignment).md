@@ -1,7 +1,8 @@
 # ignoresSafeArea(_:edges:alignment:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Expands the safe area of a view aligning content within the new bounds using the provided alignment.
 
@@ -31,7 +32,7 @@ By default, the SwiftUI layout system sizes and positions views to avoid certain
 
 When expanding the safe area, the SwiftUI layout system proposes the expanded size to the view. If your view has a fixed size, you can use the alignment property to determine how the fixed size view should be aligned in the expanded bounds.
 
-For examples of how to use this modifier, see [`Adding a background to your view`](adding-a-background-to-your-view.md).
+For examples of how to use this modifier, see [Adding a background to your view](../adding-a-background-to-your-view.md).
 
 ## Parameters
 
@@ -41,15 +42,16 @@ For examples of how to use this modifier, see [`Adding a background to your view
 
 ## See Also
 
-- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set) -> some View](view/ignoressafearea(_:edges:).md)
+### Staying in the safe areas
+- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set) -> some View](./ignoressafearea%28_,edges%29.md)
   Expands the safe area of a view.
-- [func safeAreaInset(edge:alignment:spacing:content:)](view/safeareainset(edge:alignment:spacing:content:).md)
+- [func safeAreaInset(edge:alignment:spacing:content:)](./safeareainset%28edge,alignment,spacing,content%29.md)
   Shows the specified content beside the modified view.
-- [func safeAreaPadding(_:)](view/safeareapadding(_:).md)
+- [func safeAreaPadding(_:)](./safeareapadding%28_%29.md)
   Adds the provided insets into the safe area of this view.
-- [func safeAreaPadding(Edge.Set, CGFloat?) -> some View](view/safeareapadding(_:_:).md)
+- [func safeAreaPadding(Edge.Set, CGFloat?) -> some View](./safeareapadding%28_,_%29.md)
   Adds the provided insets into the safe area of this view.
-- [struct SafeAreaRegions](safearearegions.md)
+- [struct SafeAreaRegions](../safearearegions.md)
   A set of symbolic safe area regions.
 
 

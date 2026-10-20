@@ -1,7 +1,8 @@
 # encode(to:sourceArrays:resultState:destinationArray:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func encode(to cmdBuf: any MTLCommandBuffer, sourceArrays: [MPSNDArray], resultState outGradientState: MPSState?, destinationArray destination: MPSNDArray)
+```
+
+```objc
+- (void) encodeToCommandBuffer:(id<MTLCommandBuffer>) cmdBuf sourceArrays:(NSArray<MPSNDArray *> *) sourceArrays resultState:(MPSState *) outGradientState destinationArray:(MPSNDArray *) destination;
 ```
 
 

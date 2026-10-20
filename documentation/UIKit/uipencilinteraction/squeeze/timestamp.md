@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timestamp of the squeeze interaction.
 
@@ -17,15 +18,20 @@ The timestamp of the squeeze interaction.
 var timestamp: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSTimeInterval timestamp;
+```
+
 ## See Also
 
-- [var phase: UIPencilInteraction.Phase](uipencilinteraction/squeeze/phase.md)
+### Getting information about a squeeze interaction
+- [var phase: UIPencilInteraction.Phase](./phase.md)
   The phase of a squeeze interaction on Apple Pencil.
-- [UIPencilInteraction.Phase](uipencilinteraction/phase.md)
+- [UIPencilInteraction.Phase](../phase.md)
   Constants that describe the phases of an interaction on Apple Pencil.
-- [var hoverPose: UIPencilHoverPose?](uipencilinteraction/squeeze/hoverpose.md)
+- [var hoverPose: UIPencilHoverPose?](./hoverpose.md)
   The hover pose of Apple Pencil during a squeeze interaction.
-- [class UIPencilHoverPose](uipencilhoverpose.md)
+- [class UIPencilHoverPose](../../uipencilhoverpose.md)
   An object that describes the hover pose of Apple Pencil during an interaction like double tap or squeeze.
 
 

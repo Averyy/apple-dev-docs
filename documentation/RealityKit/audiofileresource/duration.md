@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of this `AudioFileResource`.
 
@@ -22,9 +23,10 @@ The duration of this `AudioFileResource`.
 
 ## See Also
 
-- [let configuration: AudioFileResource.Configuration](audiofileresource/configuration-swift.property.md)
+### Describing the resource
+- [let configuration: AudioFileResource.Configuration](./configuration-swift.property.md)
   The configuration of this `AudioFileResource`.
-- [let name: String](audiofileresource/name.md)
+- [let name: String](./name.md)
   The name of this `AudioFileResource`.
 
 

@@ -1,7 +1,8 @@
 # Operation.QueuePriority.veryLow
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Operations receive very low priority for execution.
 
@@ -20,15 +21,20 @@ Operations receive very low priority for execution.
 case veryLow
 ```
 
+```c
+NSOperationQueuePriorityVeryLow
+```
+
 ## See Also
 
-- [Operation.QueuePriority.low](operation/queuepriority-swift.enum/low.md)
+### Constants
+- [Operation.QueuePriority.low](./low.md)
   Operations receive low priority for execution.
-- [Operation.QueuePriority.normal](operation/queuepriority-swift.enum/normal.md)
+- [Operation.QueuePriority.normal](./normal.md)
   Operations receive the normal priority for execution.
-- [Operation.QueuePriority.high](operation/queuepriority-swift.enum/high.md)
+- [Operation.QueuePriority.high](./high.md)
   Operations receive high priority for execution.
-- [Operation.QueuePriority.veryHigh](operation/queuepriority-swift.enum/veryhigh.md)
+- [Operation.QueuePriority.veryHigh](./veryhigh.md)
   Operations receive very high priority for execution.
 
 

@@ -1,7 +1,8 @@
 # nw_link_quality_t
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 12.0+
@@ -18,6 +19,10 @@
 struct nw_link_quality_t
 ```
 
+```c
+typedef enum { ... } nw_link_quality_t;
+```
+
 #### Overview
 
 Link quality measurement is a representation of the expected capabilities of the link layer network attachment. Use this value to tune initial values for algorithms that can scale with the capabilities of the network. Do not use this value to gate connection attempts or to override adjustments that would be made based on actual network performance.
@@ -25,19 +30,19 @@ Link quality measurement is a representation of the expected capabilities of the
 ## Topics
 
 ### Initializers
-- [init(UInt8)](nw_link_quality_t/init(_:).md)
-- [init(rawValue: UInt8)](nw_link_quality_t/init(rawvalue:).md)
+- [init(UInt8)](./nw_link_quality_t/init%28_%29.md)
+- [init(rawValue: UInt8)](./nw_link_quality_t/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt8](nw_link_quality_t/rawvalue.md)
+- [var rawValue: UInt8](./nw_link_quality_t/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

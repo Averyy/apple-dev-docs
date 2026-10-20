@@ -1,7 +1,8 @@
 # showManageSubscriptions(in:subscriptionGroupID:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Presents the App Store sheet for managing subscriptions for a subscription group.
 
@@ -20,17 +21,18 @@ static func showManageSubscriptions(in scene: UIWindowScene, subscriptionGroupID
 
 ## Mentions
 
-- [Choosing a StoreKit API for Apple In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
-- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Choosing a StoreKit API for Apple In-App Purchases](../choosing-a-storekit-api-for-in-app-purchases.md)
+- [Supporting monthly subscriptions with a 12-month commitment](../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
 ## Parameters
 
-- `scene`: The [`UIWindowScene`](https://developer.apple.com/documentation/uikit/uiwindowscene) that the system displays the sheet on.
+- `scene`: The [`UIWindowScene`](../../UIKit/uiwindowscene.md) that the system displays the sheet on.
 - `subscriptionGroupID`: The subscription group identifier that the subscription belongs to.
 
 ## See Also
 
-- [static func showManageSubscriptions(in: UIWindowScene) async throws](appstore/showmanagesubscriptions(in:).md)
+### Managing subscriptions
+- [static func showManageSubscriptions(in: UIWindowScene) async throws](./showmanagesubscriptions%28in%29.md)
   Presents the App Store sheet for managing subscriptions.
 
 

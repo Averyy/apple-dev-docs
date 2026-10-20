@@ -1,7 +1,8 @@
 # errSecUnsupportedVectorOfBuffers
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The vector of buffers is not supported.
 
@@ -18,6 +19,10 @@ The vector of buffers is not supported.
 
 ```swift
 var errSecUnsupportedVectorOfBuffers: OSStatus { get }
+```
+
+```c
+errSecUnsupportedVectorOfBuffers
 ```
 
 

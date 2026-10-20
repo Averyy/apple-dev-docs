@@ -1,16 +1,21 @@
 # AudioObjectPropertyElement
 
 **Framework**: Core Audio  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 typealias AudioObjectPropertyElement = UInt32
+```
+
+```c
+typedef UInt32 AudioObjectPropertyElement;
 ```
 
 #### Discussion
@@ -21,21 +26,22 @@ The element selects one of possibly many items in the section of the object in w
 
 ## See Also
 
-- [typealias AudioClassID](audioclassid.md)
-- [typealias AudioDeviceID](audiodeviceid.md)
-- [typealias AudioDeviceIOBlock](audiodeviceioblock.md)
-- [typealias AudioDeviceIOProc](audiodeviceioproc.md)
-- [typealias AudioDeviceIOProcID](audiodeviceioprocid.md)
-- [typealias AudioDevicePropertyID](audiodevicepropertyid.md)
-- [typealias AudioDevicePropertyListenerProc](audiodevicepropertylistenerproc.md)
-- [typealias AudioHardwarePropertyID](audiohardwarepropertyid.md)
-- [typealias AudioHardwarePropertyListenerProc](audiohardwarepropertylistenerproc.md)
-- [typealias AudioObjectID](audioobjectid.md)
-- [typealias AudioObjectPropertyListenerBlock](audioobjectpropertylistenerblock.md)
-- [typealias AudioObjectPropertyListenerProc](audioobjectpropertylistenerproc.md)
-- [typealias AudioObjectPropertyScope](audioobjectpropertyscope.md)
-- [typealias AudioObjectPropertySelector](audioobjectpropertyselector.md)
-- [typealias AudioStreamID](audiostreamid.md)
+### Data Types
+- [typealias AudioClassID](./audioclassid.md)
+- [typealias AudioDeviceID](./audiodeviceid.md)
+- [typealias AudioDeviceIOBlock](./audiodeviceioblock.md)
+- [typealias AudioDeviceIOProc](./audiodeviceioproc.md)
+- [typealias AudioDeviceIOProcID](./audiodeviceioprocid.md)
+- [typealias AudioDevicePropertyID](./audiodevicepropertyid.md)
+- [typealias AudioDevicePropertyListenerProc](./audiodevicepropertylistenerproc.md)
+- [typealias AudioHardwarePropertyID](./audiohardwarepropertyid.md)
+- [typealias AudioHardwarePropertyListenerProc](./audiohardwarepropertylistenerproc.md)
+- [typealias AudioObjectID](./audioobjectid.md)
+- [typealias AudioObjectPropertyListenerBlock](./audioobjectpropertylistenerblock.md)
+- [typealias AudioObjectPropertyListenerProc](./audioobjectpropertylistenerproc.md)
+- [typealias AudioObjectPropertyScope](./audioobjectpropertyscope.md)
+- [typealias AudioObjectPropertySelector](./audioobjectpropertyselector.md)
+- [typealias AudioStreamID](./audiostreamid.md)
 
 
 ---

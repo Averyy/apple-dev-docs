@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that you set to enable or disable the entity and its descendants.
 
@@ -11,7 +12,7 @@ A Boolean that you set to enable or disable the entity and its descendants.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,19 +23,20 @@ A Boolean that you set to enable or disable the entity and its descendants.
 
 #### Discussion
 
-Set this value to `true` to enable the entity. Unless an ancestor is disabled, the entity and all of its enabled descendants, up to the first that’s disabled, report [`isEnabledInHierarchy`](entity/isenabledinhierarchy.md) of `true`. If an ancestor is disabled, they all report `false`. The state of [`isActive`](entity/isactive.md) for enabled entities is `true` if they are anchored, or `false` otherwise.
+Set this value to `true` to enable the entity. Unless an ancestor is disabled, the entity and all of its enabled descendants, up to the first that’s disabled, report [`isEnabledInHierarchy`](./isenabledinhierarchy.md) of `true`. If an ancestor is disabled, they all report `false`. The state of [`isActive`](./isactive.md) for enabled entities is `true` if they are anchored, or `false` otherwise.
 
-If you disable an entity, it and all of its descendants become both disabled ([`isEnabledInHierarchy`](entity/isenabledinhierarchy.md) returns `false`) and inactive ([`isActive`](entity/isactive.md) returns `false`), regardless of any other state.
+If you disable an entity, it and all of its descendants become both disabled ([`isEnabledInHierarchy`](./isenabledinhierarchy.md) returns `false`) and inactive ([`isActive`](./isactive.md) returns `false`), regardless of any other state.
 
-When an entity is disabled, it’s no longer visible in your scene. However, the entity is still included in an [`EntityQuery`](entityquery.md).
+When an entity is disabled, it’s no longer visible in your scene. However, the entity is still included in an [`EntityQuery`](../entityquery.md).
 
 ## See Also
 
-- [var isEnabledInHierarchy: Bool](entity/isenabledinhierarchy.md)
+### Managing the entity’s state
+- [var isEnabledInHierarchy: Bool](./isenabledinhierarchy.md)
   A Boolean that indicates whether the entity and all of its ancestors are enabled.
-- [var isActive: Bool](entity/isactive.md)
+- [var isActive: Bool](./isactive.md)
   A Boolean that indicates whether the entity is active.
-- [var isAnchored: Bool](entity/isanchored.md)
+- [var isAnchored: Bool](./isanchored.md)
   A Boolean that indicates whether the entity is anchored.
 
 

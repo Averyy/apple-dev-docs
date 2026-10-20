@@ -1,11 +1,12 @@
 # Generable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [typealias PartiallyGenerated](array/partiallygenerated.md)
+- [typealias PartiallyGenerated](./partiallygenerated.md)
   A representation of partially generated content, as an array of partially generated elements.
 
 

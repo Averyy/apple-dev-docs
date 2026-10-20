@@ -1,7 +1,8 @@
 # NOT_LIST_CONTAINS
 
 **Framework**: CloudKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Finds records not containing values not in its list field.
 
@@ -10,41 +11,42 @@ Finds records not containing values not in its list field.
 
 ## Declaration
 
-```swift
+```
 const String NOT_LIST_CONTAINS;
 ```
 
 ## See Also
 
-- [BEGINS_WITH](cloudkit.queryfiltercomparator/begins_with.md)
+### Enumeration Cases
+- [BEGINS_WITH](./begins_with.md)
   Finds records with a string field that begins with a substring.
-- [CONTAINS_ALL_TOKENS](cloudkit.queryfiltercomparator/contains_all_tokens.md)
+- [CONTAINS_ALL_TOKENS](./contains_all_tokens.md)
   Finds records with text fields containing all tokens.
-- [CONTAINS_ANY_TOKENS](cloudkit.queryfiltercomparator/contains_any_tokens.md)
+- [CONTAINS_ANY_TOKENS](./contains_any_tokens.md)
   Finds records with text fields containing any token.
-- [EQUALS](cloudkit.queryfiltercomparator/equals.md)
+- [EQUALS](./equals.md)
   The value on the left is equal to the value on the right.
-- [GREATER_THAN](cloudkit.queryfiltercomparator/greater_than.md)
+- [GREATER_THAN](./greater_than.md)
   The value on the left is greater than the value on the right.
-- [GREATER_THAN_OR_EQUALS](cloudkit.queryfiltercomparator/greater_than_or_equals.md)
+- [GREATER_THAN_OR_EQUALS](./greater_than_or_equals.md)
   The value on the left is greater than or equal to the value on the right.
-- [IN](cloudkit.queryfiltercomparator/in.md)
+- [IN](./in.md)
   The value on the left is in the list on the right.
-- [LESS_THAN](cloudkit.queryfiltercomparator/less_than.md)
+- [LESS_THAN](./less_than.md)
   The value on the left is less than the value on the right.
-- [LESS_THAN_OR_EQUALS](cloudkit.queryfiltercomparator/less_than_or_equals.md)
+- [LESS_THAN_OR_EQUALS](./less_than_or_equals.md)
   The value on the left is less than or equal to the value on the right.
-- [LIST_CONTAINS](cloudkit.queryfiltercomparator/list_contains.md)
+- [LIST_CONTAINS](./list_contains.md)
   Finds records containing values in its list field.
-- [LIST_CONTAINS_ALL](cloudkit.queryfiltercomparator/list_contains_all.md)
+- [LIST_CONTAINS_ALL](./list_contains_all.md)
   Finds records containing all values in its list field.
-- [LIST_CONTAINS_ANY](cloudkit.queryfiltercomparator/list_contains_any.md)
+- [LIST_CONTAINS_ANY](./list_contains_any.md)
   Finds records that contain any of the values in its list field.
-- [LIST_MEMBER_BEGINS_WITH](cloudkit.queryfiltercomparator/list_member_begins_with.md)
+- [LIST_MEMBER_BEGINS_WITH](./list_member_begins_with.md)
   Finds records containing a value as the first item in its list field.
-- [NEAR](cloudkit.queryfiltercomparator/near.md)
+- [NEAR](./near.md)
   The location on the left is within the specified distance of the location on the right.
-- [NOT_BEGINS_WITH](cloudkit.queryfiltercomparator/not_begins_with.md)
+- [NOT_BEGINS_WITH](./not_begins_with.md)
   Finds records with a string field that doesn’t begin with a substring.
 
 

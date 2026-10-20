@@ -1,7 +1,8 @@
 # suspend()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Temporarily suspends a task.
 
@@ -20,26 +21,32 @@ Temporarily suspends a task.
 func suspend()
 ```
 
+```objc
+- (void) suspend;
+```
+
 #### Discussion
 
-A task, while suspended, produces no network traffic and isn’t subject to timeouts. Call [`resume()`](urlsessiontask/resume().md) to resume data transfer.
+A task, while suspended, produces no network traffic and isn’t subject to timeouts. Call [`resume()`](./resume%28%29.md) to resume data transfer.
 
 ## See Also
 
-- [func cancel(byProducingResumeData: (Data?) -> Void)](urlsessiondownloadtask/cancel(byproducingresumedata:).md)
+### Related Documentation
+- [func cancel(byProducingResumeData: (Data?) -> Void)](../urlsessiondownloadtask/cancel%28byproducingresumedata%29.md)
   Cancels a download and calls a callback with resume data for later use.
-- [func cancel()](urlsessiontask/cancel.md)
+### Controlling the task state
+- [func cancel()](./cancel%28%29.md)
   Cancels the task.
-- [func resume()](urlsessiontask/resume.md)
+- [func resume()](./resume%28%29.md)
   Resumes the task, if it is suspended.
-- [var state: URLSessionTask.State](urlsessiontask/state-swift.property.md)
+- [var state: URLSessionTask.State](./state-swift.property.md)
   The current state of the task—active, suspended, in the process of being canceled, or completed.
-- [URLSessionTask.State](urlsessiontask/state-swift.enum.md)
+- [URLSessionTask.State](./state-swift.enum.md)
   Constants for determining the current state of a task.
-- [var priority: Float](urlsessiontask/priority.md)
+- [var priority: Float](./priority.md)
   The relative priority at which you’d like a host to handle the task, specified as a floating point value between `0.0` (lowest priority) and `1.0` (highest priority).
-- [URL session task priority](url-session-task-priority.md)
-  Constants for providing task priority hints to a host, used with the [`priority`](urlsessiontask/priority.md) property.
+- [URL session task priority](../url-session-task-priority.md)
+  Constants for providing task priority hints to a host, used with the [`priority`](./priority.md) property.
 
 
 ---

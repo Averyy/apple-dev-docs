@@ -1,17 +1,22 @@
 # favoriteDevices()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Gets an array of the user’s favorite devices.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func favoriteDevices() -> [Any]!
+```
+
+```objc
++ (NSArray *) favoriteDevices;
 ```
 
 #### Return Value

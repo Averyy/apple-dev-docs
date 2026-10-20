@@ -1,14 +1,15 @@
 # initWithPool
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool initWithPool(IOUserNetworkPacketBufferPool *pool, IOUserNetworkPacketDescriptor *descriptor, IOOptionBits options);
 ```
 

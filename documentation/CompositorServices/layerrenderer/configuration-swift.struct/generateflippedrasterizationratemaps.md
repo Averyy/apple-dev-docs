@@ -1,7 +1,8 @@
 # generateFlippedRasterizationRateMaps
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the layer renderer provides rasterization rate maps flipped around the y-axis.
 
@@ -23,7 +24,8 @@ To generate flipped rasterization rate maps, the system must perform extra compu
 
 ## See Also
 
-- [var isFoveationEnabled: Bool](layerrenderer/configuration-swift.struct/isfoveationenabled.md)
+### Configuring the foveation setting
+- [var isFoveationEnabled: Bool](./isfoveationenabled.md)
   A value that indicates if the layer is using variable rasterization rates.
 
 

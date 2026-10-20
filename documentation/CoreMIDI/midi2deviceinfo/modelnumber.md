@@ -1,7 +1,8 @@
 # modelNumber
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var modelNumber: MIDIUInteger14 { get }
+```
+
+```objc
+@property (nonatomic, readonly) MIDIUInteger14 modelNumber;
 ```
 
 

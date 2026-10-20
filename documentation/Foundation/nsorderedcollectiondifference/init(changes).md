@@ -1,7 +1,8 @@
 # init(changes:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an ordered collection difference using an array of ordered collection changes.
 
@@ -20,15 +21,20 @@ Creates an ordered collection difference using an array of ordered collection ch
 convenience init(changes: [NSOrderedCollectionChange])
 ```
 
+```objc
+- (instancetype) initWithChanges:(NSArray<NSOrderedCollectionChange<id> *> *) changes;
+```
+
 ## Parameters
 
 - `changes`: An array of ordered collection changes.
 
 ## See Also
 
-- [convenience init(insert: IndexSet, insertedObjects: [Any]?, remove: IndexSet, removedObjects: [Any]?)](nsorderedcollectiondifference/init(insert:insertedobjects:remove:removedobjects:).md)
+### Creating a Collection Difference Object
+- [convenience init(insert: IndexSet, insertedObjects: [Any]?, remove: IndexSet, removedObjects: [Any]?)](./init%28insert,insertedobjects,remove,removedobjects%29.md)
   Creates an ordered collection difference from arrays of inserted and removed objects with corresponding sets of indices.
-- [init(insert: IndexSet, insertedObjects: [Any]?, remove: IndexSet, removedObjects: [Any]?, additionalChanges: [NSOrderedCollectionChange])](nsorderedcollectiondifference/init(insert:insertedobjects:remove:removedobjects:additionalchanges:).md)
+- [init(insert: IndexSet, insertedObjects: [Any]?, remove: IndexSet, removedObjects: [Any]?, additionalChanges: [NSOrderedCollectionChange])](./init%28insert,insertedobjects,remove,removedobjects,additionalchanges%29.md)
   Creates an ordered collection difference from arrays of inserted and removed objects with corresponding sets of indices, in addition to an array of ordered collection changes.
 
 

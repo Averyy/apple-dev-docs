@@ -1,13 +1,14 @@
 # init(name:floatVector3:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- macOS 10.8+
-- tvOS ?+
+- iOS 7.0+ - Deprecated in 10.0
+- iPadOS 7.0+ - Deprecated in 10.0
+- macOS 10.8+ - Deprecated in 10.12
+- tvOS - Deprecated in 10.0
 
 ## Declaration
 

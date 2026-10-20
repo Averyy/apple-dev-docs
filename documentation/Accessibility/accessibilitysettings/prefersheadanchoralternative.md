@@ -1,7 +1,8 @@
 # prefersHeadAnchorAlternative
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates the person’s preference for content that follows their head position.
 
@@ -24,7 +25,8 @@ If your app contains head-anchored content, call this function before you displa
 
 ## See Also
 
-- [static var prefersHeadAnchorAlternativeDidChangeNotification: Notification.Name](accessibilitysettings/prefersheadanchoralternativedidchangenotification.md)
+### Head-anchored content
+- [static var prefersHeadAnchorAlternativeDidChangeNotification: Notification.Name](./prefersheadanchoralternativedidchangenotification.md)
   A notification that posts when the system setting for head-anchored content changes.
 
 

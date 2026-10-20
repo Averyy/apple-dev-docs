@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDVDStructureFormatCopyrightInfo](1646171-anonymous/kdvdstructureformatcopyrightinfo.md)
-- [kDVDStructureFormatDiscKeyInfo](1646171-anonymous/kdvdstructureformatdisckeyinfo.md)
-- [kDVDStructureFormatManufacturingInfo](1646171-anonymous/kdvdstructureformatmanufacturinginfo.md)
-- [kDVDStructureFormatPhysicalFormatInfo](1646171-anonymous/kdvdstructureformatphysicalformatinfo.md)
+- [kDVDStructureFormatCopyrightInfo](./api-1646171-anonymous/kdvdstructureformatcopyrightinfo.md)
+- [kDVDStructureFormatDiscKeyInfo](./api-1646171-anonymous/kdvdstructureformatdisckeyinfo.md)
+- [kDVDStructureFormatManufacturingInfo](./api-1646171-anonymous/kdvdstructureformatmanufacturinginfo.md)
+- [kDVDStructureFormatPhysicalFormatInfo](./api-1646171-anonymous/kdvdstructureformatphysicalformatinfo.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # HandleChangeSampleRate
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The system calls this virtual method when the device’s sample rate changes.
 
@@ -10,7 +11,7 @@ The system calls this virtual method when the device’s sample rate changes.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t HandleChangeSampleRate(double in_sample_rate);
 ```
 

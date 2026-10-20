@@ -1,7 +1,8 @@
 # pressure
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The atmospheric pressure at sea level at a given location.
 
@@ -26,7 +27,8 @@ This is a reduced pressure calculated by using observed conditions to remove the
 
 ## See Also
 
-- [var pressureTrend: PressureTrend](hourweather/pressuretrend.md)
+### Getting pressure
+- [var pressureTrend: PressureTrend](./pressuretrend.md)
   The kind and amount of atmospheric pressure change over time.
 
 

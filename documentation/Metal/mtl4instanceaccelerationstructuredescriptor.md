@@ -1,7 +1,8 @@
 # MTL4InstanceAccelerationStructureDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Descriptor for an instance acceleration structure.
 
@@ -19,70 +20,75 @@ Descriptor for an instance acceleration structure.
 class MTL4InstanceAccelerationStructureDescriptor
 ```
 
+```objc
+@interface MTL4InstanceAccelerationStructureDescriptor : MTL4AccelerationStructureDescriptor
+```
+
 #### Overview
 
 An instance acceleration structure references other acceleration structures, and provides the ability to “instantiate” them multiple times, each one with potentially a different transformation matrix.
 
-You specify the properties of the instances in the acceleration structure this descriptor builds by providing a buffer of `structs` via its [`instanceDescriptorBuffer`](mtl4instanceaccelerationstructuredescriptor/instancedescriptorbuffer.md) property.
+You specify the properties of the instances in the acceleration structure this descriptor builds by providing a buffer of `structs` via its [`instanceDescriptorBuffer`](./mtl4instanceaccelerationstructuredescriptor/instancedescriptorbuffer.md) property.
 
-Use a [`MTLResidencySet`](mtlresidencyset.md) to mark residency of all buffers and acceleration structures this descriptor references when you build this acceleration structure.
+Use a [`MTLResidencySet`](./mtlresidencyset.md) to mark residency of all buffers and acceleration structures this descriptor references when you build this acceleration structure.
 
 ## Topics
 
 ### Instance Properties
-- [var instanceCount: Int](mtl4instanceaccelerationstructuredescriptor/instancecount.md)
+- [var instanceCount: Int](./mtl4instanceaccelerationstructuredescriptor/instancecount.md)
   Controls the number of instance descriptors in the instance descriptor buffer references.
-- [var instanceDescriptorBuffer: MTL4BufferRange](mtl4instanceaccelerationstructuredescriptor/instancedescriptorbuffer.md)
+- [var instanceDescriptorBuffer: MTL4BufferRange](./mtl4instanceaccelerationstructuredescriptor/instancedescriptorbuffer.md)
   Assigns a reference to a buffer containing instance descriptors for acceleration structures to reference.
-- [var instanceDescriptorStride: Int](mtl4instanceaccelerationstructuredescriptor/instancedescriptorstride.md)
+- [var instanceDescriptorStride: Int](./mtl4instanceaccelerationstructuredescriptor/instancedescriptorstride.md)
   Sets the stride, in bytes, between instance descriptors the instance descriptor buffer references.
-- [var instanceDescriptorType: MTLAccelerationStructureInstanceDescriptorType](mtl4instanceaccelerationstructuredescriptor/instancedescriptortype.md)
+- [var instanceDescriptorType: MTLAccelerationStructureInstanceDescriptorType](./mtl4instanceaccelerationstructuredescriptor/instancedescriptortype.md)
   The type of instance descriptor that the instance descriptor buffer references.
-- [var instanceTransformationMatrixLayout: MTLMatrixLayout](mtl4instanceaccelerationstructuredescriptor/instancetransformationmatrixlayout.md)
+- [var instanceTransformationMatrixLayout: MTLMatrixLayout](./mtl4instanceaccelerationstructuredescriptor/instancetransformationmatrixlayout.md)
   Specifies the layout for the transformation matrices in the instance descriptor buffer and the motion transformation matrix buffer.
-- [var motionTransformBuffer: MTL4BufferRange](mtl4instanceaccelerationstructuredescriptor/motiontransformbuffer.md)
+- [var motionTransformBuffer: MTL4BufferRange](./mtl4instanceaccelerationstructuredescriptor/motiontransformbuffer.md)
   A buffer containing transformation information for instance motion keyframes, formatted according to the motion transform type.
-- [var motionTransformCount: Int](mtl4instanceaccelerationstructuredescriptor/motiontransformcount.md)
+- [var motionTransformCount: Int](./mtl4instanceaccelerationstructuredescriptor/motiontransformcount.md)
   Controls the total number of motion transforms in the motion transform buffer.
-- [var motionTransformStride: Int](mtl4instanceaccelerationstructuredescriptor/motiontransformstride.md)
+- [var motionTransformStride: Int](./mtl4instanceaccelerationstructuredescriptor/motiontransformstride.md)
   Specify the stride for motion transform.
-- [var motionTransformType: MTLTransformType](mtl4instanceaccelerationstructuredescriptor/motiontransformtype.md)
+- [var motionTransformType: MTLTransformType](./mtl4instanceaccelerationstructuredescriptor/motiontransformtype.md)
   Controls the type of motion transforms, either as a matrix or individual components.
 
 ## Relationships
 
 ### Inherits From
-- [MTL4AccelerationStructureDescriptor](mtl4accelerationstructuredescriptor.md)
+- [MTL4AccelerationStructureDescriptor](./mtl4accelerationstructuredescriptor.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Improving ray-tracing data access using per-primitive data](improving-ray-tracing-data-access-using-per-primitive-data.md)
+### Acceleration structures
+- [Improving ray-tracing data access using per-primitive data](./improving-ray-tracing-data-access-using-per-primitive-data.md)
   Simplify data access and improve GPU utilization by storing custom primitive data directly in the acceleration structure.
-- [protocol MTLAccelerationStructure](mtlaccelerationstructure.md)
+- [protocol MTLAccelerationStructure](./mtlaccelerationstructure.md)
   A collection of model data for GPU-accelerated intersection of rays with the model.
-- [class MTL4AccelerationStructureDescriptor](mtl4accelerationstructuredescriptor.md)
+- [class MTL4AccelerationStructureDescriptor](./mtl4accelerationstructuredescriptor.md)
   Base class for Metal 4 acceleration structure descriptors.
-- [class MTLAccelerationStructureDescriptor](mtlaccelerationstructuredescriptor.md)
+- [class MTLAccelerationStructureDescriptor](./mtlaccelerationstructuredescriptor.md)
   A base class for classes that define the configuration for a new acceleration structure.
-- [class MTL4PrimitiveAccelerationStructureDescriptor](mtl4primitiveaccelerationstructuredescriptor.md)
+- [class MTL4PrimitiveAccelerationStructureDescriptor](./mtl4primitiveaccelerationstructuredescriptor.md)
   Descriptor for a primitive acceleration structure that directly references geometric shapes, such as triangles and bounding boxes.
-- [class MTLPrimitiveAccelerationStructureDescriptor](mtlprimitiveaccelerationstructuredescriptor.md)
+- [class MTLPrimitiveAccelerationStructureDescriptor](./mtlprimitiveaccelerationstructuredescriptor.md)
   A description of an acceleration structure that contains geometry primitives.
-- [class MTLInstanceAccelerationStructureDescriptor](mtlinstanceaccelerationstructuredescriptor.md)
+- [class MTLInstanceAccelerationStructureDescriptor](./mtlinstanceaccelerationstructuredescriptor.md)
   A description of an acceleration structure that derives from instances of primitive acceleration structures.
-- [protocol MTLAccelerationStructureCommandEncoder](mtlaccelerationstructurecommandencoder.md)
+- [protocol MTLAccelerationStructureCommandEncoder](./mtlaccelerationstructurecommandencoder.md)
   Encodes commands that build and refit acceleration structures for a single pass.
-- [struct MTLAccelerationStructureUsage](mtlaccelerationstructureusage.md)
+- [struct MTLAccelerationStructureUsage](./mtlaccelerationstructureusage.md)
   Options that affect how Metal builds an acceleration structure and the behavior of that acceleration structure.
-- [struct MTLAccelerationStructureRefitOptions](mtlaccelerationstructurerefitoptions.md)
+- [struct MTLAccelerationStructureRefitOptions](./mtlaccelerationstructurerefitoptions.md)
 
 
 ---

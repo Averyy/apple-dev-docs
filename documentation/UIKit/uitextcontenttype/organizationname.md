@@ -1,7 +1,8 @@
 # organizationName
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that defines the content in a text input area as an organization name.
 
@@ -18,23 +19,28 @@ A property that defines the content in a text input area as an organization name
 static let organizationName: UITextContentType
 ```
 
+```c
+extern UITextContentType const UITextContentTypeOrganizationName;
+```
+
 ## See Also
 
-- [static let namePrefix: UITextContentType](uitextcontenttype/nameprefix.md)
+### Identifying contacts
+- [static let namePrefix: UITextContentType](./nameprefix.md)
   A property that defines the content in a text input area as a prefix or title, such as *Dr*.
-- [static let name: UITextContentType](uitextcontenttype/name.md)
+- [static let name: UITextContentType](./name.md)
   A property that defines the content in a text input area as a name.
-- [static let nameSuffix: UITextContentType](uitextcontenttype/namesuffix.md)
+- [static let nameSuffix: UITextContentType](./namesuffix.md)
   A property that defines the content in a text input area as a suffix, such as *Jr*.
-- [static let givenName: UITextContentType](uitextcontenttype/givenname.md)
+- [static let givenName: UITextContentType](./givenname.md)
   A property that defines the content in a text input area as a first name.
-- [static let middleName: UITextContentType](uitextcontenttype/middlename.md)
+- [static let middleName: UITextContentType](./middlename.md)
   A property that defines the content in a text input area as a middle name.
-- [static let familyName: UITextContentType](uitextcontenttype/familyname.md)
+- [static let familyName: UITextContentType](./familyname.md)
   A property that defines the content in a text input area as a family name, or last name.
-- [static let nickname: UITextContentType](uitextcontenttype/nickname.md)
+- [static let nickname: UITextContentType](./nickname.md)
   A property that defines the content in a text input area as a nickname.
-- [static let jobTitle: UITextContentType](uitextcontenttype/jobtitle.md)
+- [static let jobTitle: UITextContentType](./jobtitle.md)
   A property that defines the content in a text input area as a job title.
 
 

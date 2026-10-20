@@ -1,7 +1,8 @@
 # dailyStatistics(for:startDay:endDay:including:)
 
 **Framework**: WeatherKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns daily weather statistics for the requested location, for each day from the start day to the end day, inclusively.
 
@@ -26,13 +27,13 @@ The requested daily weather statistics
 
 #### Discussion
 
-> **Note**: Weather data error `WeatherError`
+> **Throws**: Weather data error `WeatherError`
 
 The statistics returned for each day are derived from weather data recorded over the past decades, to the present date. Each item returned represents statistics for a particular day of the year, in UTC.
 
 This is a variadic API in which any combination of data sets can be requested and returned as a tuple. The following example will return statistics for the first 10 days of the year.
 
-```None
+```
 let (dailyPrecipitationStatistics, dailyTemperatureStatistics) = try await service.dailyStatistics(for: newYork, startDay: 1, endDay: 10, including: .precipitation, .temperature)
 ```
 
@@ -42,7 +43,7 @@ If `startDay` is greater than `endDay`, then a wrap around will occur. This next
 let (dailyPrecipitationStatistics, dailyTemperatureStatistics) = try await service.dailyStatistics(for: newYork, startDay: 365, endDay: 2, including: .precipitation, .temperature)
 ```
 
-> **Note**: `startDay in 1...366 && endDay in 1...366`
+> **Precondition**: `startDay in 1...366 && endDay in 1...366`
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # windowScene
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scene containing the window.
 
@@ -18,13 +19,18 @@ The scene containing the window.
 weak var windowScene: UIWindowScene? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) UIWindowScene * windowScene;
+```
+
 #### Discussion
 
 Changing the value of this property moves the window to the newly specified scene. Setting the property to `nil` removes the window from its current scene.
 
 ## See Also
 
-- [var avDisplayManager: AVDisplayManager](uiwindow/avdisplaymanager.md)
+### Getting related objects
+- [var avDisplayManager: AVDisplayManager](./avdisplaymanager.md)
   The display manager that handles requests for screen resolution, refresh rate, and HDR mode information.
 
 

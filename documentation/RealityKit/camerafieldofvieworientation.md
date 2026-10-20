@@ -1,7 +1,8 @@
 # CameraFieldOfViewOrientation
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The orientations that a camera’s field-of-view degrees can apply.
 
@@ -22,26 +23,27 @@ enum CameraFieldOfViewOrientation
 ## Topics
 
 ### Enumeration Cases
-- [CameraFieldOfViewOrientation.horizontal](camerafieldofvieworientation/horizontal.md)
+- [CameraFieldOfViewOrientation.horizontal](./camerafieldofvieworientation/horizontal.md)
   Applies the field-of-view degrees in the camera’s horizontal axis.
-- [CameraFieldOfViewOrientation.vertical](camerafieldofvieworientation/vertical.md)
+- [CameraFieldOfViewOrientation.vertical](./camerafieldofvieworientation/vertical.md)
   Applies the field-of-view degrees in the camera’s vertical axis.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [struct PerspectiveCameraComponent](perspectivecameracomponent.md)
+### Cameras
+- [struct PerspectiveCameraComponent](./perspectivecameracomponent.md)
   A component that defines a virtual camera and its controls.
-- [struct OrthographicCameraComponent](orthographiccameracomponent.md)
+- [struct OrthographicCameraComponent](./orthographiccameracomponent.md)
   A component that defines an orthographic virtual camera and its settings.
-- [struct ProjectiveTransformCameraComponent](projectivetransformcameracomponent.md)
+- [struct ProjectiveTransformCameraComponent](./projectivetransformcameracomponent.md)
   A component that defines a virtual camera with a custom projection matrix.
-- [class PerspectiveCamera](perspectivecamera.md)
+- [class PerspectiveCamera](./perspectivecamera.md)
   A virtual camera that establishes the rendering perspective.
 
 

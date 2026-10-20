@@ -1,6 +1,7 @@
 # Supporting types and conventions
 
-**Framework**: ColorSync
+**Framework**: ColorSync  
+**Role**: API Collection
 
 Reference the signatures and conventions that support the color-management APIs.
 
@@ -11,14 +12,14 @@ These symbols support the main color-management tasks rather than being entry po
 ## Topics
 
 ### Identifying profile tags and signatures
-- [Profile tags and signatures](profile-tags-and-signatures.md)
+- [Profile tags and signatures](./profile-tags-and-signatures.md)
   Identify the four-character signatures that describe an ICC profile’s tags, class, and color space.
 ### Versioning
-- [var COLORSYNC_API_VERSION: Int](colorsync_api_version.md)
-- [func ColorSyncAPIVersion() -> UInt32](colorsyncapiversion().md)
+- [var COLORSYNC_API_VERSION: Int](./colorsync_api_version.md)
+- [func ColorSyncAPIVersion() -> UInt32](./colorsyncapiversion%28%29.md)
   Returns the version of the ColorSync API.
-- [var icVersion4Number: Int](icversion4number.md)
-- [var icVersion4Point4Number: Int](icversion4point4number.md)
+- [var icVersion4Number: Int](./icversion4number.md)
+- [var icVersion4Point4Number: Int](./icversion4point4number.md)
 
 
 ---

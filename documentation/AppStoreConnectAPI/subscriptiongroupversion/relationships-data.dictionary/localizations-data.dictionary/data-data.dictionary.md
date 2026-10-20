@@ -1,7 +1,8 @@
 # SubscriptionGroupVersion.Relationships.Localizations.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to modify a subscription group version.
 
@@ -10,14 +11,14 @@ The request body you use to modify a subscription group version.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupVersion.Relationships.Localizations.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionGroupLocalizations`
 
 
 ---

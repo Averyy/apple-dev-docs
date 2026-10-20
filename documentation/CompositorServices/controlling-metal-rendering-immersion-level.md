@@ -1,6 +1,7 @@
 # Controlling Metal rendering immersion level
 
-**Framework**: Compositor Services
+**Framework**: Compositor Services  
+**Role**: Article
 
 Enable flexible immersive rendering by supporting progressive immersion when rendering your Metal content.
 
@@ -8,7 +9,7 @@ Enable flexible immersive rendering by supporting progressive immersion when ren
 
 Immersion is the degeree to which your rendered content from your app replaces the viewing area. Compositor Services supports full and mixed immersion styles by default. People using your app can control the immersion level by rotating the Digital Crown on Apple Vision Pro. For some content, people may prefer progressive immersion, where the viewing area is only partially replaced by rendered content, for viewing comfort. This helps them retain the context of their environment when they’re viewing content with complex scenes with movement.
 
-#### Enable Progressive Immersion
+#### Enable progressive immersion
 
 To support progressive immersion requires some additional adoption from your app provide a mask that represents the progressive immersion level. When you attach the mask to the same render encoder where your content renders the system provides performant, single pass rendering. The mask also allows the system to avoid rendering content outside of the masked area for additional performance savings. The system provides support for smoothing and fading the edge of the progressive portal into your surroundings.
 
@@ -24,7 +25,7 @@ ImmersiveSpace(id: "MyImmersiveSpace") {
 
 After allowing both progressive and full immersion styles, your app can switch between them.
 
-#### Configure the Compositor Layer
+#### Configure the compositor layer
 
 After your app supports progressive immersion, configure the compositor layer. Check that the layer capabilities support your preferred stencil format with `drawableRenderContextSupportedStencilformats`. Set the `drawableRenderContextStencilFormat` property for the stencil format to the layer configuration. Configure the `drawableRenderContextRasterSampleCount` with the appropriate sample count depending on your app’s use of multisample antialiasing:
 
@@ -48,7 +49,7 @@ After your app supports progressive immersion, configure the compositor layer. C
 
 > **Note**: The progressive immersion style only works with the layered layout configuration.
 
-#### Apply a Stencil Mask
+#### Apply a stencil mask
 
 Apply the portal stencil mask to the layer render drawable by adding a render context to your command buffer with `addRenderContext(commandBuffer:)`. This step is a requirement for the system to efficiently draw the faded edges of the portal over your rendered 3D content. Use the same command buffer for your subsequent drawing commands. Draw your mask on the stencil with `drawMaskOnStencilAttachment(commandEncoder:value:)` to prevent invisible pixels from rendering and then select an available stencil value. After rendering the scene, use `endEncoding(commandEncoder:)` to cease rendering, rather than directly ending the command encoder. This allows the portal effect to apply efficiently over your content.
 

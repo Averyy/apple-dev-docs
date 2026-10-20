@@ -1,7 +1,8 @@
 # MTRUnitTestingClusterTestStructArrayArgumentRequestParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,32 +19,36 @@
 class MTRUnitTestingClusterTestStructArrayArgumentRequestParams
 ```
 
+```objc
+@interface MTRUnitTestingClusterTestStructArrayArgumentRequestParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var arg1: [Any]](mtrunittestingclusterteststructarrayargumentrequestparams/arg1.md)
-- [var arg2: [Any]](mtrunittestingclusterteststructarrayargumentrequestparams/arg2.md)
-- [var arg3: [Any]](mtrunittestingclusterteststructarrayargumentrequestparams/arg3.md)
-- [var arg4: [Any]](mtrunittestingclusterteststructarrayargumentrequestparams/arg4.md)
-- [var arg5: NSNumber](mtrunittestingclusterteststructarrayargumentrequestparams/arg5.md)
-- [var arg6: NSNumber](mtrunittestingclusterteststructarrayargumentrequestparams/arg6.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrunittestingclusterteststructarrayargumentrequestparams/serversideprocessingtimeout.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrunittestingclusterteststructarrayargumentrequestparams/timedinvoketimeoutms.md)
+- [var arg1: [Any]](./mtrunittestingclusterteststructarrayargumentrequestparams/arg1.md)
+- [var arg2: [Any]](./mtrunittestingclusterteststructarrayargumentrequestparams/arg2.md)
+- [var arg3: [Any]](./mtrunittestingclusterteststructarrayargumentrequestparams/arg3.md)
+- [var arg4: [Any]](./mtrunittestingclusterteststructarrayargumentrequestparams/arg4.md)
+- [var arg5: NSNumber](./mtrunittestingclusterteststructarrayargumentrequestparams/arg5.md)
+- [var arg6: NSNumber](./mtrunittestingclusterteststructarrayargumentrequestparams/arg6.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrunittestingclusterteststructarrayargumentrequestparams/serversideprocessingtimeout.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrunittestingclusterteststructarrayargumentrequestparams/timedinvoketimeoutms.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRTestClusterClusterTestStructArrayArgumentRequestParams](mtrtestclusterclusterteststructarrayargumentrequestparams.md)
+- [MTRTestClusterClusterTestStructArrayArgumentRequestParams](./mtrtestclusterclusterteststructarrayargumentrequestparams.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

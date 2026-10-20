@@ -1,20 +1,21 @@
 # Responsive Design Mode
 
-**Framework**: Safari Developer Features
+**Framework**: Safari Developer Features  
+**Role**: Article
 
 Use Responsive Design Mode to test your `media` queries and other dynamic styles to ensure your webpages look great on any screen.
 
 #### Overview
 
-![Screenshot of Responsive Design Mode, opened to developer.apple.com, with a viewport size of 800 by 600 pixels with a 2x pixel ratio.](/images/com.apple.safari.developer-tools/ResponsiveDesignMode@2x.png)
+![Screenshot of Responsive Design Mode, opened to developer.apple.com, with a viewport size of 800 by 600 pixels with a 2x pixel ratio.](https://developer.apple.com/tutorials/images/com.apple.safari.developer-tools/ResponsiveDesignMode@2x.png)
 
 Responsive Design Mode lets you quickly preview how your webpage responds to changes in width and height, as well as differences in the pixel ratio of displays. Use Responsive Design Mode to ensure all visitors to your webpage get a great experience, no matter the size of their screen.
 
 #### Opening Responsive Design Mode
 
-While focused on the webpage you want to test in Responsive Design Mode, choose **Enter Responsive Design Mode** (⌃⌘R) from the [`Develop menu`](develop-menu.md).
+While focused on the webpage you want to test in Responsive Design Mode, choose **Enter Responsive Design Mode** (⌃⌘R) from the [Develop menu](./develop-menu.md).
 
-> 💡 **Tip**: You can use Responsive Design Mode with [`Web Inspector`](web-inspector.md) to debug your page’s layout while resizing the page in Responsive Design Mode.
+> 💡 **Tip**: You can use Responsive Design Mode with [Web Inspector](./web-inspector.md) to debug your page’s layout while resizing the page in Responsive Design Mode.
 
 #### Using Responsive Design Mode
 
@@ -22,7 +23,7 @@ While focused on the webpage you want to test in Responsive Design Mode, choose 
 
 You can pick from a list of viewport size presets to quickly preview how your webpage layout will adapt to various device screen sizes.
 
-Viewport size presets offer a good approximation, but they don’t represent exact layout, rendering, and behavior as experienced on an actual device. For example, the webpage layout on a device might be influenced by the browser address bar, the on-screen keyboard, or by device-specific behavior for form fields. For a more accurate preview, use the [`Open with Simulator`](responsive-design-mode#Open-with-Simulator.md) menu to view your webpage in a Simulator.
+Viewport size presets offer a good approximation, but they don’t represent exact layout, rendering, and behavior as experienced on an actual device. For example, the webpage layout on a device might be influenced by the browser address bar, the on-screen keyboard, or by device-specific behavior for form fields. For a more accurate preview, use the [Open with Simulator](./responsive-design-mode.md#Open-with-Simulator) menu to view your webpage in a Simulator.
 
 ##### Rotate Viewport
 
@@ -67,19 +68,20 @@ You may also want to provide alternative styles for displays with different pixe
 
 ##### Open with Simulator
 
-iOS, iPadOS, and visionOS have different rendering behaviors than macOS, as they are optimized for different form-factor devices and interaction models. It is important to test your webpages in such an environment, and simulators provide an accurate way to do so without additional devices. If you don’t have Xcode installed, or want to add more simulators, see [`Installing Xcode and Simulators`](installing-xcode-and-simulators.md) and [`Adding additional simulators`](adding-additional-simulators.md).
+iOS, iPadOS, and visionOS have different rendering behaviors than macOS, as they are optimized for different form-factor devices and interaction models. It is important to test your webpages in such an environment, and simulators provide an accurate way to do so without additional devices. If you don’t have Xcode installed, or want to add more simulators, see [Installing Xcode and Simulators](./installing-xcode-and-simulators.md) and [Adding additional simulators](./adding-additional-simulators.md).
 
 ## See Also
 
-- [Develop menu](develop-menu.md)
+### Tools
+- [Develop menu](./develop-menu.md)
   Access tools for debugging webpages in Safari, as well as tools for debugging web content in other apps and on other devices.
-- [Web Inspector](web-inspector.md)
+- [Web Inspector](./web-inspector.md)
   Use Web Inspector to inspect and debug your HTML, CSS, and JavaScript.
-- [Inspect Apps and Devices](inspect-apps-and-devices.md)
+- [Inspect Apps and Devices](./inspect-apps-and-devices.md)
   Discover all inspectable web content in Safari and other apps on your Mac and on connected devices.
-- [Connecting an AI agent to Safari](connecting-an-ai-agent-to-safari.md)
+- [Connecting an AI agent to Safari](./connecting-an-ai-agent-to-safari.md)
   Inspect, test, and debug your website with an AI agent connected to the Safari MCP server.
-- [WebDriver](webdriver.md)
+- [WebDriver](./webdriver.md)
   Use WebDriver to write robust, comprehensive tests and run them against any browser that has a WebDriver-compliant driver, including Safari.
 
 

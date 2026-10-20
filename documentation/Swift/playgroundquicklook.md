@@ -1,7 +1,8 @@
 # PlaygroundQuickLook
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The sum of types that can be used as a Quick Look representation.
 
@@ -13,7 +14,9 @@ The sum of types that can be used as a Quick Look representation.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
-- Swift ?+
+- Swift - Deprecated in 4.2
+
+> **Deprecated**: PlaygroundQuickLook will be removed in a future Swift version. For customizing how types are presented in playgrounds, use CustomPlaygroundDisplayConvertible instead.
 
 ## Declaration
 
@@ -39,13 +42,14 @@ If you need to provide a customized playground representation in Swift 4.0 or Sw
 
 ## See Also
 
-- [protocol CustomReflectable](customreflectable.md)
+### Customizing Your Type’s Reflection
+- [protocol CustomReflectable](./customreflectable.md)
   A type that explicitly supplies its own mirror.
-- [protocol CustomLeafReflectable](customleafreflectable.md)
+- [protocol CustomLeafReflectable](./customleafreflectable.md)
   A type that explicitly supplies its own mirror, but whose descendant classes are not represented in the mirror unless they also override `customMirror`.
-- [protocol CustomPlaygroundDisplayConvertible](customplaygrounddisplayconvertible.md)
+- [protocol CustomPlaygroundDisplayConvertible](./customplaygrounddisplayconvertible.md)
   A type that supplies a custom description for playground logging.
-- [macro DebugDescription()](debugdescription().md)
+- [macro DebugDescription()](./debugdescription%28%29.md)
   Converts description definitions to a debugger Type Summary.
 
 

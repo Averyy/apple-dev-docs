@@ -1,7 +1,8 @@
 # split(maxSplits:omittingEmptySubsequences:separator:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the longest possible subsequences of the collection, in order, around subsequence that match the regex created by the given closure.
 
@@ -19,6 +20,8 @@ Returns the longest possible subsequences of the collection, in order, around su
 ```swift
 func split(maxSplits: Int = Int.max, omittingEmptySubsequences: Bool = true, @RegexComponentBuilder separator: () -> some RegexComponent) -> [Self.SubSequence]
 ```
+
+Available when `SubSequence` is `Substring`.
 
 #### Return Value
 

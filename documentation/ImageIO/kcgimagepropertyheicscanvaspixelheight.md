@@ -1,7 +1,8 @@
 # kCGImagePropertyHEICSCanvasPixelHeight
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The height of the main image, in pixels.
 
@@ -20,11 +21,16 @@ The height of the main image, in pixels.
 let kCGImagePropertyHEICSCanvasPixelHeight: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyHEICSCanvasPixelHeight;
+```
+
 ## See Also
 
-- [let kCGImagePropertyHEICSCanvasPixelWidth: CFString](kcgimagepropertyheicscanvaspixelwidth.md)
+### Image Properties
+- [let kCGImagePropertyHEICSCanvasPixelWidth: CFString](./kcgimagepropertyheicscanvaspixelwidth.md)
   The width of the main image, in pixels.
-- [let kCGImagePropertyNamedColorSpace: CFString](kcgimagepropertynamedcolorspace.md)
+- [let kCGImagePropertyNamedColorSpace: CFString](./kcgimagepropertynamedcolorspace.md)
   The name of the image’s color space.
 
 

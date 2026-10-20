@@ -1,7 +1,8 @@
 # init(frame:zIndex:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom item with the specified frame and vertical stacking order in relation to other items in the group.
 
@@ -14,9 +15,14 @@ Creates a custom item with the specified frame and vertical stacking order in re
 convenience init(frame: NSRect, zIndex: Int)
 ```
 
+```objc
++ (instancetype) customItemWithFrame:(NSRect) frame zIndex:(NSInteger) zIndex;
+```
+
 ## See Also
 
-- [convenience init(frame: NSRect)](nscollectionlayoutgroupcustomitem/init(frame:).md)
+### Creating a custom item
+- [convenience init(frame: NSRect)](./init%28frame%29.md)
   Creates a custom item with the specified frame.
 
 

@@ -1,7 +1,8 @@
 # CKOperationGroup.TransferSize
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that represent possible data transfer sizes.
 
@@ -20,51 +21,56 @@ Constants that represent possible data transfer sizes.
 enum TransferSize
 ```
 
+```c
+enum CKOperationGroupTransferSize : NSInteger;
+```
+
 ## Topics
 
 ### Transfer Sizes
-- [CKOperationGroup.TransferSize.kilobytes](ckoperationgroup/transfersize/kilobytes.md)
+- [CKOperationGroup.TransferSize.kilobytes](./transfersize/kilobytes.md)
   A transfer size that represents 1 or more kilobytes.
-- [CKOperationGroup.TransferSize.megabytes](ckoperationgroup/transfersize/megabytes.md)
+- [CKOperationGroup.TransferSize.megabytes](./transfersize/megabytes.md)
   A transfer size that represents 1 or more megabytes.
-- [CKOperationGroup.TransferSize.gigabytes](ckoperationgroup/transfersize/gigabytes.md)
+- [CKOperationGroup.TransferSize.gigabytes](./transfersize/gigabytes.md)
   A transfer size that represents 1 or more gigabytes.
-- [CKOperationGroup.TransferSize.tensOfMegabytes](ckoperationgroup/transfersize/tensofmegabytes.md)
+- [CKOperationGroup.TransferSize.tensOfMegabytes](./transfersize/tensofmegabytes.md)
   A transfer size that represents tens of megabytes.
-- [CKOperationGroup.TransferSize.tensOfGigabytes](ckoperationgroup/transfersize/tensofgigabytes.md)
+- [CKOperationGroup.TransferSize.tensOfGigabytes](./transfersize/tensofgigabytes.md)
   A transfer size that represents tens of gigabytes.
-- [CKOperationGroup.TransferSize.hundredsOfMegabytes](ckoperationgroup/transfersize/hundredsofmegabytes.md)
+- [CKOperationGroup.TransferSize.hundredsOfMegabytes](./transfersize/hundredsofmegabytes.md)
   A transfer size that represents hundreds of megabytes.
-- [CKOperationGroup.TransferSize.hundredsOfGigabytes](ckoperationgroup/transfersize/hundredsofgigabytes.md)
+- [CKOperationGroup.TransferSize.hundredsOfGigabytes](./transfersize/hundredsofgigabytes.md)
   A transfer size that represents hundreds of gigabytes.
-- [CKOperationGroup.TransferSize.unknown](ckoperationgroup/transfersize/unknown.md)
+- [CKOperationGroup.TransferSize.unknown](./transfersize/unknown.md)
   An unknown transfer size.
 ### Initializers
-- [init?(rawValue: Int)](ckoperationgroup/transfersize/init(rawvalue:).md)
+- [init?(rawValue: Int)](./transfersize/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var defaultConfiguration: CKOperation.Configuration!](ckoperationgroup/defaultconfiguration.md)
+### Configuring an Operation Group
+- [var defaultConfiguration: CKOperation.Configuration!](./defaultconfiguration.md)
   The default configuration for operations in the group.
-- [var expectedReceiveSize: CKOperationGroup.TransferSize](ckoperationgroup/expectedreceivesize.md)
+- [var expectedReceiveSize: CKOperationGroup.TransferSize](./expectedreceivesize.md)
   The estimated size of traffic to download from CloudKit.
-- [var expectedSendSize: CKOperationGroup.TransferSize](ckoperationgroup/expectedsendsize.md)
+- [var expectedSendSize: CKOperationGroup.TransferSize](./expectedsendsize.md)
   The estimated size of traffic to upload to CloudKit.
-- [var name: String?](ckoperationgroup/name.md)
+- [var name: String?](./name.md)
   The operation group’s name.
-- [var operationGroupID: String](ckoperationgroup/operationgroupid.md)
+- [var operationGroupID: String](./operationgroupid.md)
   The operation group’s unique identifier.
-- [var quantity: Int](ckoperationgroup/quantity.md)
+- [var quantity: Int](./quantity.md)
   The number of operations in the operation group.
 
 

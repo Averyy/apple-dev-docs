@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A description of the item that changed.
@@ -19,15 +20,20 @@ A description of the item that changed.
 var item: NSFileProviderItem? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSFileProviderItem item;
+```
+
 #### Discussion
 
 This property is `nil` for deletion events.
 
 ## See Also
 
-- [var itemIdentifier: NSFileProviderItemIdentifier](nsfileprovidertestingingestion/itemidentifier.md)
+### Accessing the Operation’s Data
+- [var itemIdentifier: NSFileProviderItemIdentifier](./itemidentifier.md)
   The unique identifier for the item that changed.
-- [var side: NSFileProviderTestingOperationSide](nsfileprovidertestingingestion/side.md)
+- [var side: NSFileProviderTestingOperationSide](./side.md)
   The location where the change occurred.
 
 

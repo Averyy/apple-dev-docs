@@ -1,7 +1,8 @@
 # sourceAppStoreItemIdentifier
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The App Store ID of the app that displays the ad.
 
@@ -16,10 +17,14 @@ The App Store ID of the app that displays the ad.
 var sourceAppStoreItemIdentifier: NSNumber { get set }
 ```
 
+```objc
+@property (nonatomic, strong) NSNumber * sourceAppStoreItemIdentifier;
+```
+
 ## Mentions
 
-- [Generating the signature to validate view-through ads](generating-the-signature-to-validate-view-through-ads.md)
-- [Identifying the parameters in install-validation postbacks](identifying-the-parameters-in-install-validation-postbacks.md)
+- [Generating the signature to validate view-through ads](../generating-the-signature-to-validate-view-through-ads.md)
+- [Identifying the parameters in install-validation postbacks](../identifying-the-parameters-in-install-validation-postbacks.md)
 
 #### Discussion
 
@@ -29,21 +34,22 @@ If you’re using a development-signed build to display the ads and not an app f
 
 ## See Also
 
-- [init(sourceAppStoreItemIdentifier: NSNumber, advertisedAppStoreItemIdentifier: NSNumber, adNetworkIdentifier: String, adCampaignIdentifier: NSNumber, adImpressionIdentifier: String, timestamp: NSNumber, signature: String, version: String)](skadimpression/init(sourceappstoreitemidentifier:advertisedappstoreitemidentifier:adnetworkidentifier:adcampaignidentifier:adimpressionidentifier:timestamp:signature:version:).md)
+### Creating a signature
+- [init(sourceAppStoreItemIdentifier: NSNumber, advertisedAppStoreItemIdentifier: NSNumber, adNetworkIdentifier: String, adCampaignIdentifier: NSNumber, adImpressionIdentifier: String, timestamp: NSNumber, signature: String, version: String)](./init%28sourceappstoreitemidentifier,advertisedappstoreitemidentifier,adnetworkidentifier,adcampaignidentifier,adimpressionidentifier,timestamp,signature,version%29.md)
   Creates an ad impression object using the supplied values.
-- [var version: String](skadimpression/version.md)
+- [var version: String](./version.md)
   The version of the SKAdNetwork API.
-- [var adNetworkIdentifier: String](skadimpression/adnetworkidentifier.md)
+- [var adNetworkIdentifier: String](./adnetworkidentifier.md)
   A string that represents the advertising network’s unique identifier.
-- [var sourceIdentifier: NSNumber](skadimpression/sourceidentifier.md)
+- [var sourceIdentifier: NSNumber](./sourceidentifier.md)
   A four-digit integer that ad networks define to represent the ad campaign.
-- [var adCampaignIdentifier: NSNumber](skadimpression/adcampaignidentifier.md)
+- [var adCampaignIdentifier: NSNumber](./adcampaignidentifier.md)
   A number that represents the advertising network’s campaign.
-- [var advertisedAppStoreItemIdentifier: NSNumber](skadimpression/advertisedappstoreitemidentifier.md)
+- [var advertisedAppStoreItemIdentifier: NSNumber](./advertisedappstoreitemidentifier.md)
   The App Store ID of the app that the ad impression advertises.
-- [var adImpressionIdentifier: String](skadimpression/adimpressionidentifier.md)
+- [var adImpressionIdentifier: String](./adimpressionidentifier.md)
   A random value to use for added security.
-- [var timestamp: NSNumber](skadimpression/timestamp.md)
+- [var timestamp: NSNumber](./timestamp.md)
   A number that represents the UNIX time, in milliseconds, of the ad impression.
 
 

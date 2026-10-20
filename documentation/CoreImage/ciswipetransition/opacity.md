@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The opacity of the swipe.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The opacity of the swipe.
 var opacity: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float opacity;
+```
+
 ## See Also
 
-- [var angle: Float](ciswipetransition/angle.md)
+### Instance Properties
+- [var angle: Float](./angle.md)
   The angle of the swipe.
-- [var color: CIColor](ciswipetransition/color.md)
+- [var color: CIColor](./color.md)
   The color of the swipe.
-- [var extent: CGRect](ciswipetransition/extent.md)
+- [var extent: CGRect](./extent.md)
   The extent of the effect.
-- [var width: Float](ciswipetransition/width.md)
+- [var width: Float](./width.md)
   The width of the swipe.
 
 

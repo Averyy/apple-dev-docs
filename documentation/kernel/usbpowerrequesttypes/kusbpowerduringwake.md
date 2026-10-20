@@ -1,7 +1,8 @@
 # kUSBPowerDuringWake
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The system uses the power while it’s awake.
 
@@ -10,7 +11,7 @@ The system uses the power while it’s awake.
 
 ## Declaration
 
-```swift
+```c
 kUSBPowerDuringWake = 1
 ```
 

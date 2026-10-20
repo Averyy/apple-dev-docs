@@ -1,7 +1,8 @@
 # threadDictionary
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The thread object’s dictionary.
 
@@ -20,17 +21,22 @@ The thread object’s dictionary.
 var threadDictionary: NSMutableDictionary { get }
 ```
 
+```objc
+@property (retain, readonly) NSMutableDictionary * threadDictionary;
+```
+
 #### Discussion
 
 You can use the returned dictionary to store thread-specific data. The thread dictionary is not used during any manipulations of the `NSThread` object—it is simply a place where you can store any interesting data. For example, Foundation uses it to store the thread’s default `NSConnection` and `NSAssertionHandler` instances. You may define your own keys for the dictionary.
 
 ## See Also
 
-- [let NSAssertionHandlerKey: String](nsassertionhandlerkey.md)
+### Working with Thread Properties
+- [let NSAssertionHandlerKey: String](../nsassertionhandlerkey.md)
   A key with a corresponding value in the thread dictionary.
-- [var name: String?](thread/name.md)
+- [var name: String?](./name.md)
   The name of the receiver.
-- [var stackSize: Int](thread/stacksize.md)
+- [var stackSize: Int](./stacksize.md)
   The stack size of the receiver, in bytes.
 
 

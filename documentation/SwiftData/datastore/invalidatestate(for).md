@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -20,11 +21,17 @@
 func invalidateState(for editingState: EditingState)
 ```
 
+## Default Implementations
+
+### DataStore Implementations
+- [func invalidateState(for: EditingState)](./invalidatestate%28for%29-8z39v.md)
+
 ## See Also
 
-- [func initializeState(for: EditingState)](datastore/initializestate(for:).md)
-- [struct EditingState](editingstate.md)
-- [func cachedSnapshots(for: [PersistentIdentifier], editingState: EditingState) throws -> [PersistentIdentifier : Self.Snapshot]](datastore/cachedsnapshots(for:editingstate:).md)
+### Sharing cached data between model contexts
+- [func initializeState(for: EditingState)](./initializestate%28for%29.md)
+- [struct EditingState](../editingstate.md)
+- [func cachedSnapshots(for: [PersistentIdentifier], editingState: EditingState) throws -> [PersistentIdentifier : Self.Snapshot]](./cachedsnapshots%28for,editingstate%29.md)
 
 
 ---

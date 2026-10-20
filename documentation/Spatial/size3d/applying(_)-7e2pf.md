@@ -1,7 +1,8 @@
 # applying(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a size that’s transformed by the specified scaled pose.
 
@@ -11,7 +12,7 @@ Returns a size that’s transformed by the specified scaled pose.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,19 +23,20 @@ func applying(_ scaledPose: ScaledPose3D) -> Size3D
 
 ## See Also
 
-- [func applying(Pose3D) -> Size3D](size3d/applying(_:)-85mlm.md)
+### Transforming a 3D size structure
+- [func applying(Pose3D) -> Size3D](./applying%28_%29-85mlm.md)
   Returns a size that results from applying the specified pose.
-- [func applying(Pose3D) -> Size3D](size3d/applying(_:)-85mlm.md)
+- [func applying(Pose3D) -> Size3D](./applying%28_%29-85mlm.md)
   Returns a size that results from applying the specified pose.
-- [func unapplying(AffineTransform3D) -> Size3D](size3d/unapplying(_:)-7qam3.md)
+- [func unapplying(AffineTransform3D) -> Size3D](./unapplying%28_%29-7qam3.md)
   Returns a size that results from unapplying the specified affine transform.
-- [func unapplying(ProjectiveTransform3D) -> Size3D](size3d/unapplying(_:)-yock.md)
+- [func unapplying(ProjectiveTransform3D) -> Size3D](./unapplying%28_%29-yock.md)
   Returns a size that results from unapplying the specified projective transform.
-- [func unapplying(Pose3D) -> Size3D](size3d/unapplying(_:)-3ip2e.md)
+- [func unapplying(Pose3D) -> Size3D](./unapplying%28_%29-3ip2e.md)
   Returns a size that results from unapplying the specified pose.
-- [func sheared(AxisWithFactors) -> Size3D](size3d/sheared(_:).md)
+- [func sheared(AxisWithFactors) -> Size3D](./sheared%28_%29.md)
   Returns a size that results from shearing over an axis by shear factors for the other two axes.
-- [func unapplying(ScaledPose3D) -> Size3D](size3d/unapplying(_:)-42rsa.md)
+- [func unapplying(ScaledPose3D) -> Size3D](./unapplying%28_%29-42rsa.md)
   Returns a size that’s transformed by the inverse of the specified scaled pose.
 
 

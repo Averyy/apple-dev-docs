@@ -1,7 +1,8 @@
 # activate(timeToTargetOverride:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies settings with an overriden fade duration.
 
@@ -19,13 +20,18 @@ Applies settings with an overriden fade duration.
 func activate(timeToTargetOverride: Double)
 ```
 
+```objc
+- (void) activateWithTimeToTargetOverride:(double) timeToTargetOverride;
+```
+
 ## Parameters
 
-- `timeToTargetOverride`: A duration in which the engine fades the settings from their original value to their new value. Overrides [`timeToTarget`](phasegrouppreset/timetotarget.md).
+- `timeToTargetOverride`: A duration in which the engine fades the settings from their original value to their new value. Overrides [`timeToTarget`](./timetotarget.md).
 
 ## See Also
 
-- [func activate()](phasegrouppreset/activate.md)
+### Activating a Group Preset
+- [func activate()](./activate%28%29.md)
   Applies settings to the designated groups.
 
 

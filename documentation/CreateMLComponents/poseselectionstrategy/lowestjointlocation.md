@@ -1,7 +1,8 @@
 # PoseSelectionStrategy.lowestJointLocation
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The strategy to choose a pose where a joint in it has the lowest y coordinate location.
 
@@ -21,13 +22,14 @@ case lowestJointLocation
 
 ## See Also
 
-- [PoseSelectionStrategy.maximumBoundingBoxArea](poseselectionstrategy/maximumboundingboxarea.md)
+### Selection strategies
+- [PoseSelectionStrategy.maximumBoundingBoxArea](./maximumboundingboxarea.md)
   The strategy to choose a pose with the maximum bounding box area.
-- [PoseSelectionStrategy.highestJointLocation](poseselectionstrategy/highestjointlocation.md)
+- [PoseSelectionStrategy.highestJointLocation](./highestjointlocation.md)
   The strategy to choose a pose where a joint in it has the higest y coordinate location.
-- [PoseSelectionStrategy.leftmostJointLocation](poseselectionstrategy/leftmostjointlocation.md)
+- [PoseSelectionStrategy.leftmostJointLocation](./leftmostjointlocation.md)
   The strategy to choose a pose where a joint in it has the leftmost x coordinate location.
-- [PoseSelectionStrategy.rightmostJointLocation](poseselectionstrategy/rightmostjointlocation.md)
+- [PoseSelectionStrategy.rightmostJointLocation](./rightmostjointlocation.md)
   The strategy to choose a pose where a joint in it has the leftmost x coordinate location.
 
 

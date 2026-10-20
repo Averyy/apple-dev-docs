@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -18,9 +19,10 @@ init(rawValue: Int)
 
 ## See Also
 
-- [init(Int)](uibarbuttonitemvisibilitypriority/init(_:).md)
-- [init(higherThan: UIBarButtonItemVisibilityPriority)](uibarbuttonitemvisibilitypriority/init(higherthan:).md)
-- [init(lowerThan: UIBarButtonItemVisibilityPriority)](uibarbuttonitemvisibilitypriority/init(lowerthan:).md)
+### Creating a visibility priority
+- [init(Int)](./init%28_%29.md)
+- [init(higherThan: UIBarButtonItemVisibilityPriority)](./init%28higherthan%29.md)
+- [init(lowerThan: UIBarButtonItemVisibilityPriority)](./init%28lowerthan%29.md)
 
 
 ---

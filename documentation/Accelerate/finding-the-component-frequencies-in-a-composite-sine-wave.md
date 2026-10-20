@@ -1,6 +1,7 @@
 # Finding the component frequencies in a composite sine wave
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Article
 
 Use 1D fast Fourier transform to compute the frequency components of a signal.
 
@@ -8,11 +9,11 @@ Use 1D fast Fourier transform to compute the frequency components of a signal.
 
 Accelerate’s vDSP module provides functions to perform 1D fast Fourier transforms (FFTs) on vectors of data, such as audio signals. The example below shows an input signal (left) and its frequency domain representation (right) after transforming the signal with a forward FFT.
 
-![A diagram that shows, on the left, a plot of the original signal, and, on the right, a plot of the component frequencies as a series of vertical lines.](/images/com.apple.accelerate/media-4264723@2x.png)
+![A diagram that shows, on the left, a plot of the original signal, and, on the right, a plot of the component frequencies as a series of vertical lines.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4264723@2x.png)
 
 You can inspect the frequency-domain data of a forward FFT to compute the individual sine wave components of a composite wave. The technique described in this article is applicable to many digital signal processing applications, for example, finding the dominant frequencies in a dual-tone multi-frequency (DTMF) signal or removing noise from a signal.
 
-##### Synthesize a Test Signal
+##### Synthesize a test signal
 
 The function below generates a composite sine wave from a supplied array of component frequencies and amplitudes:
 
@@ -32,7 +33,7 @@ static func synthesizeSignal(frequencyAmplitudePairs: [(f: Float, a: Float)],
 }
 ```
 
-##### Create the Composite Signal
+##### Create the composite signal
 
 Create an array that contains frequency-amplitude tuples. You define the frequencies as the number of cycles per `n`. The highest measurable frequency, known as the Nyquist frequency, is the element with index `n/2`, which is `1023` in a zero-based array that contains `2048` elements.
 
@@ -52,9 +53,9 @@ let signal = synthesizeSignal(frequencyAmplitudePairs: frequencyAmplitudePairs,
 
 The image below is a visualization of composite sine waves in `signal`:
 
-![A diagram that shows a plot of the original signal in the time domain.](/images/com.apple.accelerate/media-4264725@2x.png)
+![A diagram that shows a plot of the original signal in the time domain.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4264725@2x.png)
 
-##### Create the Fft Setup
+##### Create the FFT setup
 
 Create a setup object that contains a precalculated weights array of complex exponentials required to perform the FFT operations. The values in the weights array simplify the FFT calculation. Creating this setup object can be expensive, so do it only once, for example, when starting your app. After creating the setup object, you can reuse it later.
 
@@ -72,7 +73,7 @@ guard let fftSetUp = vDSP.FFT(log2n: log2n,
 
 You can use this setup object for similarly sized smaller FFTs. However, using a weights array built for an FFT that processes a large number of elements can degrade performance for an FFT that processes a significantly smaller number of elements.
 
-##### Create the Source and Destination Arrays for the Forward Fft
+##### Create the source and destination arrays for the forward FFT
 
 The FFT operates on complex numbers. That is, it operates on numbers that contain a real part and an imaginary part. Create two arrays — one for the real parts and one for the imaginary parts — for the input and output to the FFT operation:
 
@@ -91,15 +92,15 @@ var forwardOutputImag = [Float](repeating: 0,
 
 Because each complex value stores two real values, the length of each array is half that of `signal`.
 
-##### Perform the Forward Fft
+##### Perform the forward FFT
 
-You use [`DSPSplitComplex`](dspsplitcomplex.md) structures to pass the separate real and imaginary arrays of the input and the output data to the FFT transform function.
+You use [`DSPSplitComplex`](./dspsplitcomplex.md) structures to pass the separate real and imaginary arrays of the input and the output data to the FFT transform function.
 
 The steps below perform the forward FFT:
 
-1. Create a [`DSPSplitComplex`](dspsplitcomplex.md) structure to store a copy of `signal` that’s represented as complex numbers.
-2. Use [`convert(interleavedComplexVector:toSplitComplexVector:)`](vdsp/convert(interleavedcomplexvector:tosplitcomplexvector:)-4lnrf.md) to convert the real values in `signal` to complex numbers. The conversion stores the even values in `signal` as the real components in `forwardInput`, and the odd values in `signal` as the imaginary components in `forwardInput`.
-3. Create a [`DSPSplitComplex`](dspsplitcomplex.md) structure with pointers to `forwardOutputReal` and `forwardOutputImag` to receive the FFT result.
+1. Create a [`DSPSplitComplex`](./dspsplitcomplex.md) structure to store a copy of `signal` that’s represented as complex numbers.
+2. Use [`convert(interleavedComplexVector:toSplitComplexVector:)`](./vdsp/convert%28interleavedcomplexvector,tosplitcomplexvector%29-4lnrf.md) to convert the real values in `signal` to complex numbers. The conversion stores the even values in `signal` as the real components in `forwardInput`, and the odd values in `signal` as the imaginary components in `forwardInput`.
+3. Create a [`DSPSplitComplex`](./dspsplitcomplex.md) structure with pointers to `forwardOutputReal` and `forwardOutputImag` to receive the FFT result.
 4. Perform the forward FFT.
 
 The code below shows how to perform the forward FFT using the steps described above:
@@ -135,9 +136,9 @@ forwardInputReal.withUnsafeMutableBufferPointer { forwardInputRealPtr in
 
 On return, `forwardOutputReal` contains the real parts of the forward FFT, and `forwardOutputImag` contains the imaginary parts of the frequency-domain representation of the original signal.
 
-##### Compute Component Frequencies in the Frequency Domain Data
+##### Compute component frequencies in the frequency-domain data
 
-Use the [`vDSP_zaspec`](vdsp_zaspec.md) function to compute the autospectrum of the frequency-domain data in the `forwardOutputReal` and `forwardOutputImag` arrays. The autospectrum is the sum of squares of the complex and real parts of each complex frequency-domain element. The code below computes the autospectrum:
+Use the [`vDSP_zaspec`](./vdsp_zaspec.md) function to compute the autospectrum of the frequency-domain data in the `forwardOutputReal` and `forwardOutputImag` arrays. The autospectrum is the sum of squares of the complex and real parts of each complex frequency-domain element. The code below computes the autospectrum:
 
 **Swift**:
 
@@ -184,9 +185,9 @@ vDSP_zaspec(&frequencyDomain,
 
 The autospectrum of the forward FFT contains a series of high-magnitude items, rendered as vertical lines in the graph below:
 
-![A diagram that shows a plot of the power spectrum of the original signal in the frequency domain.](/images/com.apple.accelerate/media-4264726@2x.png)
+![A diagram that shows a plot of the power spectrum of the original signal in the frequency domain.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4264726@2x.png)
 
-The autospectrum values correspond to the frequencies and amplitudes you specified in the `frequencies` array. The code below scales the amplitudes to consider the autospectrum calculation and the inverse-transform step. To learn more about scaling time- and frequency-domain data, see [`Understanding data packing for Fourier transforms`](understanding-data-packing-for-fourier-transforms.md).
+The autospectrum values correspond to the frequencies and amplitudes you specified in the `frequencies` array. The code below scales the amplitudes to consider the autospectrum calculation and the inverse-transform step. To learn more about scaling time- and frequency-domain data, see [Understanding data packing for Fourier transforms](./understanding-data-packing-for-fourier-transforms.md).
 
 ```swift
 let componentFrequencyAmplitudePairs = autospectrum.enumerated().filter {
@@ -204,14 +205,14 @@ print(componentFrequencyAmplitudePairs.map {
 })
 ```
 
-##### Recreate the Original Signal
+##### Recreate the original signal
 
 Use an inverse FFT to recreate a signal in the time domain, using the frequency-domain data returned by the forward FFT.
 
 The steps below perform the inverse FFT:
 
 1. Create the source of the inverse FFT, with pointers to `forwardOutputReal` and `forwardOutputImag`.
-2. Create a [`DSPSplitComplex`](dspsplitcomplex.md) structure to receive the FFT result.
+2. Create a [`DSPSplitComplex`](./dspsplitcomplex.md) structure to receive the FFT result.
 3. Perform the inverse FFT.
 4. Return an array of real values from the FFT result. Because the forward transform has a scaling factor of `2` and the inverse transform has a scaling factor of the number of items, divide each result by `2 * n`:
 
@@ -253,23 +254,24 @@ On return, `recreatedSignal` is approximately equal to `signal`.
 
 ## See Also
 
-- [Understanding data packing for Fourier transforms](understanding-data-packing-for-fourier-transforms.md)
+### Fourier and Cosine Transforms
+- [Understanding data packing for Fourier transforms](./understanding-data-packing-for-fourier-transforms.md)
   Format source data for the vDSP Fourier functions, and interpret the results.
-- [Performing Fourier transforms on interleaved-complex data](performing-fourier-transforms-on-interleaved-complex-data.md)
+- [Performing Fourier transforms on interleaved-complex data](./performing-fourier-transforms-on-interleaved-complex-data.md)
   Optimize discrete Fourier transform (DFT) performance with the vDSP interleaved DFT routines.
-- [Reducing spectral leakage with windowing](reducing-spectral-leakage-with-windowing.md)
+- [Reducing spectral leakage with windowing](./reducing-spectral-leakage-with-windowing.md)
   Multiply signal data by window sequence values when performing transforms with noninteger period signals.
-- [Signal extraction from noise](signal-extraction-from-noise.md)
+- [Signal extraction from noise](./signal-extraction-from-noise.md)
   Use Accelerate’s discrete cosine transform to remove noise from a signal.
-- [Performing Fourier Transforms on Multiple Signals](performing-fourier-transforms-on-multiple-signals.md)
+- [Performing Fourier Transforms on Multiple Signals](./performing-fourier-transforms-on-multiple-signals.md)
   Use Accelerate’s multiple-signal fast Fourier transform (FFT) functions to transform multiple signals with a single function call.
-- [Halftone descreening with 2D fast Fourier transform](halftone-descreening-with-2d-fast-fourier-transform.md)
+- [Halftone descreening with 2D fast Fourier transform](./halftone-descreening-with-2d-fast-fourier-transform.md)
   Reduce or remove periodic artifacts from images.
-- [Fast Fourier transforms](fast-fourier-transforms.md)
+- [Fast Fourier transforms](./fast-fourier-transforms.md)
   Transform vectors and matrices of temporal and spatial domain complex values to the frequency domain, and vice versa.
-- [Discrete Fourier transforms](discrete-fourier-transforms.md)
+- [Discrete Fourier transforms](./discrete-fourier-transforms.md)
   Transform vectors of temporal and spatial domain complex values to the frequency domain, and vice versa.
-- [Discrete Cosine transforms](discrete-cosine-transforms.md)
+- [Discrete Cosine transforms](./discrete-cosine-transforms.md)
   Transform vectors of temporal and spatial domain real values to the frequency domain, and vice versa.
 
 

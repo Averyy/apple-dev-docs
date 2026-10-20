@@ -1,7 +1,8 @@
 # NSFileProviderPartialContentFetching
 
 **Framework**: File Provider  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Support for fetching part of a file’s content.
 
@@ -12,6 +13,10 @@ Support for fetching part of a file’s content.
 
 ```swift
 protocol NSFileProviderPartialContentFetching : NSObjectProtocol
+```
+
+```objc
+@protocol NSFileProviderPartialContentFetching <NSObject>
 ```
 
 #### Overview
@@ -25,35 +30,36 @@ For example, a photo app could read just the metadata from each picture in a lar
 ## Topics
 
 ### Fetching Ranges from a File
-- [func fetchPartialContents(for: NSFileProviderItemIdentifier, version: NSFileProviderItemVersion, request: NSFileProviderRequest, minimalRange: NSRange, aligningTo: Int, options: NSFileProviderFetchContentsOptions, completionHandler: (URL?, NSFileProviderItem?, NSRange, NSFileProviderMaterializationFlags, (any Error)?) -> Void) -> Progress](nsfileproviderpartialcontentfetching/fetchpartialcontents(for:version:request:minimalrange:aligningto:options:completionhandler:).md)
+- [func fetchPartialContents(for: NSFileProviderItemIdentifier, version: NSFileProviderItemVersion, request: NSFileProviderRequest, minimalRange: NSRange, aligningTo: Int, options: NSFileProviderFetchContentsOptions, completionHandler: (URL?, NSFileProviderItem?, NSRange, NSFileProviderMaterializationFlags, (any Error)?) -> Void) -> Progress](./nsfileproviderpartialcontentfetching/fetchpartialcontents%28for,version,request,minimalrange,aligningto,options,completionhandler%29.md)
   Tells the file provider to download the requested item from remote storage.
-- [struct NSFileProviderFetchContentsOptions](nsfileproviderfetchcontentsoptions.md)
+- [struct NSFileProviderFetchContentsOptions](./nsfileproviderfetchcontentsoptions.md)
   Options for fetching a range of data from a file.
-- [struct NSFileProviderMaterializationFlags](nsfileprovidermaterializationflags.md)
+- [struct NSFileProviderMaterializationFlags](./nsfileprovidermaterializationflags.md)
   Flags that provides additional information about the provided content.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol NSFileProviderReplicatedExtension](nsfileproviderreplicatedextension.md)
+### File Provider protocols
+- [protocol NSFileProviderReplicatedExtension](./nsfileproviderreplicatedextension.md)
   A File Provider extension in which the system replicates the contents on disk.
-- [protocol NSFileProviderEnumerating](nsfileproviderenumerating.md)
+- [protocol NSFileProviderEnumerating](./nsfileproviderenumerating.md)
   Support for enumerating the file provider’s contents.
-- [protocol NSFileProviderIncrementalContentFetching](nsfileproviderincrementalcontentfetching.md)
+- [protocol NSFileProviderIncrementalContentFetching](./nsfileproviderincrementalcontentfetching.md)
   Support for fetching changes to the item’s content.
-- [protocol NSFileProviderServicing](nsfileproviderservicing.md)
+- [protocol NSFileProviderServicing](./nsfileproviderservicing.md)
   Support for providing a custom service source.
-- [protocol NSFileProviderCustomAction](nsfileprovidercustomaction.md)
+- [protocol NSFileProviderCustomAction](./nsfileprovidercustomaction.md)
   Support for custom actions.
-- [struct NSFileProviderExtensionActionIdentifier](nsfileproviderextensionactionidentifier.md)
+- [struct NSFileProviderExtensionActionIdentifier](./nsfileproviderextensionactionidentifier.md)
   An identifier for custom actions.
-- [protocol NSFileProviderThumbnailing](nsfileproviderthumbnailing.md)
+- [protocol NSFileProviderThumbnailing](./nsfileproviderthumbnailing.md)
   Support for item thumbnails.
-- [protocol NSFileProviderPendingSetEnumerator](nsfileproviderpendingsetenumerator.md)
+- [protocol NSFileProviderPendingSetEnumerator](./nsfileproviderpendingsetenumerator.md)
   A protocol for enumerating pending items.
 
 

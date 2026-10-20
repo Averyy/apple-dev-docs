@@ -1,7 +1,8 @@
 # KeyResult.Tonic
 
 **Framework**: Music Understanding  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The root note of a musical key.
 
@@ -24,54 +25,54 @@ enum Tonic
 ## Topics
 
 ### Enumeration Cases
-- [KeyResult.Tonic.a](keyresult/tonic/a.md)
+- [KeyResult.Tonic.a](./tonic/a.md)
   Indicates that the song is in an A key.
-- [KeyResult.Tonic.aFlat](keyresult/tonic/aflat.md)
+- [KeyResult.Tonic.aFlat](./tonic/aflat.md)
   Indicates that the song is in an A-flat key.
-- [KeyResult.Tonic.aSharp](keyresult/tonic/asharp.md)
+- [KeyResult.Tonic.aSharp](./tonic/asharp.md)
   Indicates that the song is in an A-sharp key.
-- [KeyResult.Tonic.b](keyresult/tonic/b.md)
+- [KeyResult.Tonic.b](./tonic/b.md)
   Indicates that the song is in a B key.
-- [KeyResult.Tonic.bFlat](keyresult/tonic/bflat.md)
+- [KeyResult.Tonic.bFlat](./tonic/bflat.md)
   Indicates that the song is in a B-flat key.
-- [KeyResult.Tonic.c](keyresult/tonic/c.md)
+- [KeyResult.Tonic.c](./tonic/c.md)
   Indicates that the song is in a C key.
-- [KeyResult.Tonic.cSharp](keyresult/tonic/csharp.md)
+- [KeyResult.Tonic.cSharp](./tonic/csharp.md)
   Indicates that the song is in a C-sharp key.
-- [KeyResult.Tonic.d](keyresult/tonic/d.md)
+- [KeyResult.Tonic.d](./tonic/d.md)
   Indicates that the song is in a D key.
-- [KeyResult.Tonic.dFlat](keyresult/tonic/dflat.md)
+- [KeyResult.Tonic.dFlat](./tonic/dflat.md)
   Indicates that the song is in a D-flat key.
-- [KeyResult.Tonic.dSharp](keyresult/tonic/dsharp.md)
+- [KeyResult.Tonic.dSharp](./tonic/dsharp.md)
   Indicates that the song is in a D-sharp key.
-- [KeyResult.Tonic.e](keyresult/tonic/e.md)
+- [KeyResult.Tonic.e](./tonic/e.md)
   Indicates that the song is in an E key.
-- [KeyResult.Tonic.eFlat](keyresult/tonic/eflat.md)
+- [KeyResult.Tonic.eFlat](./tonic/eflat.md)
   Indicates that the song is in an E-flat key.
-- [KeyResult.Tonic.f](keyresult/tonic/f.md)
+- [KeyResult.Tonic.f](./tonic/f.md)
   Indicates that the song is in an F key.
-- [KeyResult.Tonic.fSharp](keyresult/tonic/fsharp.md)
+- [KeyResult.Tonic.fSharp](./tonic/fsharp.md)
   Indicates that the song is in an F-sharp key.
-- [KeyResult.Tonic.g](keyresult/tonic/g.md)
+- [KeyResult.Tonic.g](./tonic/g.md)
   Indicates that the song is in a G key.
-- [KeyResult.Tonic.gFlat](keyresult/tonic/gflat.md)
+- [KeyResult.Tonic.gFlat](./tonic/gflat.md)
   Indicates that the song is in a G-flat key.
-- [KeyResult.Tonic.gSharp](keyresult/tonic/gsharp.md)
+- [KeyResult.Tonic.gSharp](./tonic/gsharp.md)
   Indicates that the song is in a G-sharp key.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

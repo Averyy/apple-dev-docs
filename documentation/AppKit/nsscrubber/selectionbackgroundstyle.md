@@ -1,7 +1,8 @@
 # selectionBackgroundStyle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style applied to the background of selected items.
 
@@ -14,17 +15,22 @@ The style applied to the background of selected items.
 var selectionBackgroundStyle: NSScrubberSelectionStyle? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSScrubberSelectionStyle * selectionBackgroundStyle;
+```
+
 #### Discussion
 
 The default value is `nil`, which specifies no background decoration.
 
-You can either choose from one of the built-in selection styles ([`outlineOverlay`](nsscrubberselectionstyle/outlineoverlay.md) or [`roundedBackground`](nsscrubberselectionstyle/roundedbackground.md)), or you can subclass [`NSScrubberSelectionStyle`](nsscrubberselectionstyle.md) to create your own custom selection style.
+You can either choose from one of the built-in selection styles ([`outlineOverlay`](../nsscrubberselectionstyle/outlineoverlay.md) or [`roundedBackground`](../nsscrubberselectionstyle/roundedbackground.md)), or you can subclass [`NSScrubberSelectionStyle`](../nsscrubberselectionstyle.md) to create your own custom selection style.
 
 ## See Also
 
-- [var floatsSelectionViews: Bool](nsscrubber/floatsselectionviews.md)
+### Configuring the selection appearance
+- [var floatsSelectionViews: Bool](./floatsselectionviews.md)
   A Boolean value that determines the behavior of the item selection decorations as the scrubber’s selection changes.
-- [var selectionOverlayStyle: NSScrubberSelectionStyle?](nsscrubber/selectionoverlaystyle.md)
+- [var selectionOverlayStyle: NSScrubberSelectionStyle?](./selectionoverlaystyle.md)
   The style overlaid on selected items.
 
 

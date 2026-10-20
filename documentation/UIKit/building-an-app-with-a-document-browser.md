@@ -1,6 +1,8 @@
 # Building an app with a document browser
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [BuildingAnAppWithADocumentBrowser.zip](https://docs-assets.developer.apple.com/published/af1183140aac/BuildingAnAppWithADocumentBrowser.zip)
 
 Provide access to on-device and cloud files by adding a document browser to your app.
 
@@ -12,7 +14,7 @@ Provide access to on-device and cloud files by adding a document browser to your
 
 #### Overview
 
-The Document Browser sample code uses a [`UIDocumentBrowserViewController`](uidocumentbrowserviewcontroller.md) as the app’s root view controller. The browser defines the structure of the app, and the app displays the browser view when it launches. A person can then use the browser to:
+The Document Browser sample code uses a [`UIDocumentBrowserViewController`](./uidocumentbrowserviewcontroller.md) as the app’s root view controller. The browser defines the structure of the app, and the app displays the browser view when it launches. A person can then use the browser to:
 
 - Browse all the text files on the person’s device, in their iCloud drive, or in any supported third-party file providers.
 - Create new text files.
@@ -22,19 +24,19 @@ When someone opens a file, the app transitions to an editor view. There, the per
 
 This sample code project demonstrates all the required steps to set up the document browser, to work with the person’s files, and to enable system animations. The following sections describe these steps in more detail.
 
-##### Setting Up the Document Browser
+##### Setting up the document browser
 
 The Document Browser app performs the following setup and configuration steps:
 
-1. Assigns a [`UIDocumentBrowserViewController`](uidocumentbrowserviewcontroller.md) subclass as the window’s [`rootViewController`](uiwindow/rootviewcontroller.md).
+1. Assigns a [`UIDocumentBrowserViewController`](./uidocumentbrowserviewcontroller.md) subclass as the window’s [`rootViewController`](./uiwindow/rootviewcontroller.md).
 2. Specifies the supported document types.
 3. Customizes the document browser’s behavior.
 
-Apps based on a document browser assign a [`UIDocumentBrowserViewController`](uidocumentbrowserviewcontroller.md) instance as the app’s [`rootViewController`](uiwindow/rootviewcontroller.md), ensuring that the browser remains in memory throughout the app’s lifetime.
+Apps based on a document browser assign a [`UIDocumentBrowserViewController`](./uidocumentbrowserviewcontroller.md) instance as the app’s [`rootViewController`](./uiwindow/rootviewcontroller.md), ensuring that the browser remains in memory throughout the app’s lifetime.
 
 The sample code defines a `UIDocumentBrowserViewController` subclass named  `DocumentBrowserViewController`. It then marks the subclass as the app’s initial view controller in the `Main.storyboard` storyboard, and  displays the browser view when launched.
 
-Apps based on a document browser also declare the document types that they can open. The sample code app declares support for text files in the project editor’s Info pane. For more information on setting the document type, see [`Setting up a document browser app`](setting-up-a-document-browser-app.md).
+Apps based on a document browser also declare the document types that they can open. The sample code app declares support for text files in the project editor’s Info pane. For more information on setting the document type, see [Setting up a document browser app](./setting-up-a-document-browser-app.md).
 
 Finally, the sample code configures the document browser in the `DocumentBrowserViewController` class’s `viewDidLoad()` method. Specifically, it enables document creation, and disables multiple document selection. This lets users create new documents from the browser, while also preventing them from opening more than one document at a time.
 
@@ -43,11 +45,11 @@ allowsDocumentCreation = true
 allowsPickingMultipleItems = false
 ```
 
-For more information on configuring a document browser, see [`Customizing the document browser`](customizing-the-browser.md).
+For more information on configuring a document browser, see [Customizing the document browser](./customizing-the-browser.md).
 
-##### Creating New Documents
+##### Creating new documents
 
-When the user creates a new document, the system calls the document browser delegate’s [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didrequestdocumentcreationwithhandler:).md) method.
+When the user creates a new document, the system calls the document browser delegate’s [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](./uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,didrequestdocumentcreationwithhandler%29.md) method.
 
 ```swift
 // Create a new document.
@@ -92,29 +94,29 @@ func documentBrowser(_ controller: UIDocumentBrowserViewController,
 
 In this method, the app creates, saves, and then closes a new text document. If successful, the app passes the URL to the method’s import handler, requesting that the system move the document to its final location. Otherwise, it passes `nil` to the import handler, canceling document creation.
 
-##### Opening and Importing Documents
+##### Opening and importing documents.
 
 People can open documents in multiple ways. The sample code handles the following situations:
 
-- If the app imports a document (including successfully creating a new document), the system calls the [`documentBrowser(_:didImportDocumentAt:toDestinationURL:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didimportdocumentat:todestinationurl:).md) method.
-- If someone selects a document from the browser, the system calls the [`documentBrowser(_:didPickDocumentURLs:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didpickdocumenturls:).md) method.
-- If someone shares a document with the app, or drags a document into the app, the system calls the app delegate’s [`application(_:open:options:)`](uiapplicationdelegate/application(_:open:options:).md) method.
+- If the app imports a document (including successfully creating a new document), the system calls the [`documentBrowser(_:didImportDocumentAt:toDestinationURL:)`](./uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,didimportdocumentat,todestinationurl%29.md) method.
+- If someone selects a document from the browser, the system calls the [`documentBrowser(_:didPickDocumentURLs:)`](./uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,didpickdocumenturls%29.md) method.
+- If someone shares a document with the app, or drags a document into the app, the system calls the app delegate’s [`application(_:open:options:)`](./uiapplicationdelegate/application%28_,open,options%29.md) method.
 
-In the first two cases, the app calls the custom `presentDocuments(at:)` method. In the third case, the app calls the browser’s [`revealDocument(at:importIfNeeded:completion:)`](uidocumentbrowserviewcontroller/revealdocument(at:importifneeded:completion:).md) method to import the document, if needed. It then calls the `presentDocuments(at:)` method.
+In the first two cases, the app calls the custom `presentDocuments(at:)` method. In the third case, the app calls the browser’s [`revealDocument(at:importIfNeeded:completion:)`](./uidocumentbrowserviewcontroller/revealdocument%28at,importifneeded,completion%29.md) method to import the document, if needed. It then calls the `presentDocuments(at:)` method.
 
-The `presentDocuments(at:)` method instantiates a `TextDocumentViewController`, sets up the document’s animation, opens the document, and then presents the view controller by calling the browser’s [`present(_:animated:completion:)`](uiviewcontroller/present(_:animated:completion:).md) method.
+The `presentDocuments(at:)` method instantiates a `TextDocumentViewController`, sets up the document’s animation, opens the document, and then presents the view controller by calling the browser’s [`present(_:animated:completion:)`](./uiviewcontroller/present%28_,animated,completion%29.md) method.
 
-##### Enabling Animations
+##### Enabling animations
 
 The document browser provides two built-in animations: one for loading a file, another for transitioning to and from the document view.
 
-To enable either of the system-provided document browser animations, first you need to request a transition controller for the document by calling the [`transitionController(forDocumentURL:)`](uidocumentbrowserviewcontroller/transitioncontroller(fordocumenturl:).md) method.
+To enable either of the system-provided document browser animations, first you need to request a transition controller for the document by calling the [`transitionController(forDocumentURL:)`](./uidocumentbrowserviewcontroller/transitioncontroller%28fordocumenturl%29.md) method.
 
 ```swift
 transitionController = transitionController(forDocumentAt: documentURL)
 ```
 
-To enable the loading animation, assign a [`Progress`](https://developer.apple.com/documentation/foundation/progress) object to the transition controller when you begin to load the document.
+To enable the loading animation, assign a [`Progress`](../Foundation/progress.md) object to the transition controller when you begin to load the document.
 
 ```swift
 // Set up the loading animation.
@@ -125,21 +127,22 @@ Increment the progress as the document loads, making sure to mark it as complete
 
 ## See Also
 
-- [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
+### Documents and directories
+- [Customizing a document-based app’s launch experience](./customizing-a-document-based-app-s-launch-experience.md)
   Add unique elements to your app’s document launch scene.
-- [Adding a document browser to your app](adding-a-document-browser-to-your-app.md)
+- [Adding a document browser to your app](./adding-a-document-browser-to-your-app.md)
   Give people access to their local or remote documents from within your app.
-- [Providing access to directories](providing-access-to-directories.md)
+- [Providing access to directories](./providing-access-to-directories.md)
   Use a document picker to access the content of a directory outside your app’s container.
-- [Building a document browser app for custom file formats](building-a-document-browser-app-for-custom-file-formats.md)
+- [Building a document browser app for custom file formats](./building-a-document-browser-app-for-custom-file-formats.md)
   Implement a custom document file format to manage user interactions with files on different cloud storage providers.
-- [class UIDocumentViewController](uidocumentviewcontroller.md)
+- [class UIDocumentViewController](./uidocumentviewcontroller.md)
   A view controller that manages and presents a document stored locally or in the cloud.
-- [class UIDocumentBrowserViewController](uidocumentbrowserviewcontroller.md)
+- [class UIDocumentBrowserViewController](./uidocumentbrowserviewcontroller.md)
   A view controller for browsing and performing actions on documents that you store locally and in the cloud.
-- [class UIDocumentPickerViewController](uidocumentpickerviewcontroller.md)
+- [class UIDocumentPickerViewController](./uidocumentpickerviewcontroller.md)
   A view controller that provides access to documents or destinations outside your app’s sandbox.
-- [class UIDocumentInteractionController](uidocumentinteractioncontroller.md)
+- [class UIDocumentInteractionController](./uidocumentinteractioncontroller.md)
   A view controller that previews, opens, or prints files with a file format that your app can’t handle directly.
 
 

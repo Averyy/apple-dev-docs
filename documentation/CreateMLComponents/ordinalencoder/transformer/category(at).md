@@ -1,7 +1,8 @@
 # category(at:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the category at the ordinal encoding index.
 
@@ -30,7 +31,8 @@ The category at the specified index.
 
 ## See Also
 
-- [var categories: Set<Category?>](ordinalencoder/transformer/categories.md)
+### Getting the categories
+- [var categories: Set<Category?>](./categories.md)
   Unique values to encode
 
 

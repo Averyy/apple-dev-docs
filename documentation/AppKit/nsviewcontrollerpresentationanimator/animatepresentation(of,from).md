@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when the specified view controller is about to be presented.
@@ -16,6 +17,10 @@ Called when the specified view controller is about to be presented.
 func animatePresentation(of viewController: NSViewController, from fromViewController: NSViewController)
 ```
 
+```objc
+- (void) animatePresentationOfViewController:(NSViewController *) viewController fromViewController:(NSViewController *) fromViewController;
+```
+
 #### Discussion
 
 To add custom presentation animation, Implement it in this method.
@@ -27,7 +32,8 @@ To add custom presentation animation, Implement it in this method.
 
 ## See Also
 
-- [func animateDismissal(of: NSViewController, from: NSViewController)](nsviewcontrollerpresentationanimator/animatedismissal(of:from:).md)
+### Animating Presentation and Dismissal of View Controllers
+- [func animateDismissal(of: NSViewController, from: NSViewController)](./animatedismissal%28of,from%29.md)
   Called when a previously-presented view controller is about to be dismissed.
 
 

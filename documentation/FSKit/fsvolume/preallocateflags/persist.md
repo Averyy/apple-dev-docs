@@ -1,7 +1,8 @@
 # persist
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Allocates space that isn’t freed when deleting the descriptor.
 
@@ -14,17 +15,22 @@ Allocates space that isn’t freed when deleting the descriptor.
 static var persist: FSVolume.PreallocateFlags { get }
 ```
 
+```c
+FSPreallocateFlagsPersist
+```
+
 #### Discussion
 
 This space remains allocated even after calling `close(2)`.
 
 ## See Also
 
-- [static var contiguous: FSVolume.PreallocateFlags](fsvolume/preallocateflags/contiguous.md)
+### Declaring preallocation behaviors
+- [static var contiguous: FSVolume.PreallocateFlags](./contiguous.md)
   Allocates contiguous space.
-- [static var all: FSVolume.PreallocateFlags](fsvolume/preallocateflags/all.md)
+- [static var all: FSVolume.PreallocateFlags](./all.md)
   Allocates all requested space or no space at all.
-- [static var fromEOF: FSVolume.PreallocateFlags](fsvolume/preallocateflags/fromeof.md)
+- [static var fromEOF: FSVolume.PreallocateFlags](./fromeof.md)
   Allocates space from the physical end of file.
 
 

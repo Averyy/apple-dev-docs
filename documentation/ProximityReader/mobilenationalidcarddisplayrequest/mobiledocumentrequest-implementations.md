@@ -1,11 +1,12 @@
 # MobileDocumentRequest Implementations
 
-**Framework**: ProximityReader
+**Framework**: ProximityReader  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [MobileNationalIDCardDisplayRequest.Response](mobilenationalidcarddisplayrequest/response.md)
+- [MobileNationalIDCardDisplayRequest.Response](./response.md)
   A type that contains the response information from a successful mobile national ID card display request.
 
 

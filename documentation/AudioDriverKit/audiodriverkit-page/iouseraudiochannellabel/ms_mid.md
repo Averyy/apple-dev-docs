@@ -1,7 +1,8 @@
 # MS_Mid
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The Mid/Side recording mid channel.
 
@@ -10,13 +11,14 @@ The Mid/Side recording mid channel.
 
 ## Declaration
 
-```swift
+```c
 MS_Mid
 ```
 
 ## See Also
 
-- [MS_Side](audiodriverkit/iouseraudiochannellabel/ms_side.md)
+### Mid/Side Recording
+- [MS_Side](./ms_side.md)
   The Mid/Side recording side channel.
 
 

@@ -5,10 +5,10 @@
 ## Topics
 
 ### Constants
-- [var kAEOSAXSizeResource: OSType](kaeosaxsizeresource.md)
-- [var kAEScriptingSizeResource: OSType](kaescriptingsizeresource.md)
-- [var kAETerminologyExtension: OSType](kaeterminologyextension.md)
-- [var kAEUserTerminology: OSType](kaeuserterminology.md)
+- [var kAEOSAXSizeResource: OSType](../kaeosaxsizeresource.md)
+- [var kAEScriptingSizeResource: OSType](../kaescriptingsizeresource.md)
+- [var kAETerminologyExtension: OSType](../kaeterminologyextension.md)
+- [var kAEUserTerminology: OSType](../kaeuserterminology.md)
 
 
 ---

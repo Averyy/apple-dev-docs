@@ -1,7 +1,8 @@
 # XCUIProtectedResource.camera
 
 **Framework**: XCUIAutomation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The protected resource case for access to the camera.
 
@@ -21,37 +22,42 @@ The protected resource case for access to the camera.
 case camera
 ```
 
+```c
+XCUIProtectedResourceCamera
+```
+
 ## See Also
 
-- [XCUIProtectedResource.location](xcuiprotectedresource/location.md)
+### Protected resources
+- [XCUIProtectedResource.location](./location.md)
   The protected resource case for Location Services.
-- [XCUIProtectedResource.userTracking](xcuiprotectedresource/usertracking.md)
+- [XCUIProtectedResource.userTracking](./usertracking.md)
   The protected resource case for access to tracking data.
-- [XCUIProtectedResource.contacts](xcuiprotectedresource/contacts.md)
+- [XCUIProtectedResource.contacts](./contacts.md)
   The protected resource case for access to Contacts.
-- [XCUIProtectedResource.calendar](xcuiprotectedresource/calendar.md)
+- [XCUIProtectedResource.calendar](./calendar.md)
   The protected resource case for acces to Calendar data.
-- [XCUIProtectedResource.reminders](xcuiprotectedresource/reminders.md)
+- [XCUIProtectedResource.reminders](./reminders.md)
   The protected resource case for access to Reminders data.
-- [XCUIProtectedResource.photos](xcuiprotectedresource/photos.md)
+- [XCUIProtectedResource.photos](./photos.md)
   The protected resource case for access to Photos.
-- [XCUIProtectedResource.bluetooth](xcuiprotectedresource/bluetooth.md)
+- [XCUIProtectedResource.bluetooth](./bluetooth.md)
   The protected resource case for Bluetooth utilization.
-- [XCUIProtectedResource.localNetwork](xcuiprotectedresource/localnetwork.md)
+- [XCUIProtectedResource.localNetwork](./localnetwork.md)
   The protected resource case for finding and communicating with devices on the local network.
-- [XCUIProtectedResource.microphone](xcuiprotectedresource/microphone.md)
+- [XCUIProtectedResource.microphone](./microphone.md)
   The protected resource case for access to the microphone.
-- [XCUIProtectedResource.health](xcuiprotectedresource/health.md)
+- [XCUIProtectedResource.health](./health.md)
   The protected resource case for access to Health data.
-- [XCUIProtectedResource.homeKit](xcuiprotectedresource/homekit.md)
+- [XCUIProtectedResource.homeKit](./homekit.md)
   The protected resource case for access to Home data.
-- [XCUIProtectedResource.mediaLibrary](xcuiprotectedresource/medialibrary.md)
+- [XCUIProtectedResource.mediaLibrary](./medialibrary.md)
   The protected resource case for access to the media library.
-- [XCUIProtectedResource.keyboardNetwork](xcuiprotectedresource/keyboardnetwork.md)
+- [XCUIProtectedResource.keyboardNetwork](./keyboardnetwork.md)
   The protected resource case for access to the keyboard network.
-- [XCUIProtectedResource.systemRootDirectory](xcuiprotectedresource/systemrootdirectory.md)
+- [XCUIProtectedResource.systemRootDirectory](./systemrootdirectory.md)
   The protected resource case for access to the system root directory.
-- [XCUIProtectedResource.userDesktopDirectory](xcuiprotectedresource/userdesktopdirectory.md)
+- [XCUIProtectedResource.userDesktopDirectory](./userdesktopdirectory.md)
   The protected resource case for access to the Desktop directory.
 
 

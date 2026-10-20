@@ -1,20 +1,27 @@
 # init(forWritingWith:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an archiver, initialized to encode stream and version information into a given mutable data object.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.0+
+- iOS 2.0+ - Deprecated in 11.0
+- iPadOS 2.0+ - Deprecated in 11.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.0+ - Deprecated in 10.13
+
+> **Deprecated**: Use NSKeyedArchiver instead
 
 ## Declaration
 
 ```swift
 init(forWritingWith mdata: NSMutableData)
+```
+
+```objc
+- (instancetype) initForWritingWithMutableData:(NSMutableData *) mdata;
 ```
 
 #### Return Value
@@ -31,9 +38,10 @@ Raises an `NSInvalidArgumentException` if `data` is `nil`.
 
 ## See Also
 
-- [var archiverData: NSMutableData](nsarchiver/archiverdata.md)
+### Related Documentation
+- [var archiverData: NSMutableData](./archiverdata.md)
   The receiver’s archive data.
-- [Archives and Serializations Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i)
+- [Archives and Serializations Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i)
 
 
 ---

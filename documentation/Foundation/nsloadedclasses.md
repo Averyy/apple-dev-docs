@@ -1,9 +1,10 @@
 # NSLoadedClasses
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-A constant used as a key for the `userInfo` dictionary of a [`didLoadNotification`](bundle/didloadnotification.md) notification that corresponds to an array of names of each class that was loaded.
+A constant used as a key for the `userInfo` dictionary of a [`didLoadNotification`](./bundle/didloadnotification.md) notification that corresponds to an array of names of each class that was loaded.
 
 **Availability**:
 - iOS 2.0+
@@ -20,15 +21,20 @@ A constant used as a key for the `userInfo` dictionary of a [`didLoadNotificatio
 let NSLoadedClasses: String
 ```
 
+```c
+extern NSString * const NSLoadedClasses;
+```
+
 ## See Also
 
-- [func classNamed(String) -> AnyClass?](bundle/classnamed(_:).md)
+### Getting classes from a bundle
+- [func classNamed(String) -> AnyClass?](./bundle/classnamed%28_%29.md)
   Returns the `Class` object for the specified name.
-- [var principalClass: AnyClass?](bundle/principalclass.md)
+- [var principalClass: AnyClass?](./bundle/principalclass.md)
   The bundle’s principal class.
-- [class let didLoadNotification: NSNotification.Name](bundle/didloadnotification.md)
+- [class let didLoadNotification: NSNotification.Name](./bundle/didloadnotification.md)
   A notification that lets observers know when classes are dynamically loaded.
-- [Bundle.DidLoadMessage](bundle/didloadmessage.md)
+- [Bundle.DidLoadMessage](./bundle/didloadmessage.md)
   A message a bundle sends when it dynamically loads a class.
 
 

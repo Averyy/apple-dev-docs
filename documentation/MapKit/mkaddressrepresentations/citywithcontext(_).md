@@ -1,7 +1,8 @@
 # cityWithContext(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The city name and, optionally and if applicable, state and region to provide additional disambiguating context.
 
@@ -20,13 +21,18 @@ The city name and, optionally and if applicable, state and region to provide add
 func cityWithContext(_ style: MKAddressRepresentations.ContextStyle) -> String?
 ```
 
+```objc
+- (NSString *) cityWithContextUsingStyle:(MKAddressRepresentationsContextStyle) style;
+```
+
 ## Parameters
 
-- `style`: The [`MKAddressRepresentations.ContextStyle`](mkaddressrepresentations/contextstyle.md) to apply.
+- `style`: The [`MKAddressRepresentations.ContextStyle`](./contextstyle.md) to apply.
 
 ## See Also
 
-- [func fullAddress(includingRegion: Bool, singleLine: Bool) -> String?](mkaddressrepresentations/fulladdress(includingregion:singleline:).md)
+### Getting a full address and city name
+- [func fullAddress(includingRegion: Bool, singleLine: Bool) -> String?](./fulladdress%28includingregion,singleline%29.md)
   Returns the the location’s full address, optionally including the country or on a single link without line breaks.
 
 

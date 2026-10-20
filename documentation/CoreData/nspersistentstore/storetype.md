@@ -1,7 +1,8 @@
 # NSPersistentStore.StoreType
 
 **Framework**: Core Data  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The types of persistent stores that Core Data supports.
 
@@ -11,7 +12,7 @@ The types of persistent stores that Core Data supports.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -23,33 +24,34 @@ struct StoreType
 ## Topics
 
 ### Store Types
-- [static let binary: NSPersistentStore.StoreType](nspersistentstore/storetype/binary.md)
+- [static let binary: NSPersistentStore.StoreType](./storetype/binary.md)
   A store that reads from and writes to a persistent binary file.
-- [static let inMemory: NSPersistentStore.StoreType](nspersistentstore/storetype/inmemory.md)
+- [static let inMemory: NSPersistentStore.StoreType](./storetype/inmemory.md)
   An ephemeral store that reads from and writes to memory only.
-- [static let sqlite: NSPersistentStore.StoreType](nspersistentstore/storetype/sqlite.md)
+- [static let sqlite: NSPersistentStore.StoreType](./storetype/sqlite.md)
   A store that reads from and writes to a persistent SQLite database.
-- [static let xml: NSPersistentStore.StoreType](nspersistentstore/storetype/xml.md)
+- [static let xml: NSPersistentStore.StoreType](./storetype/xml.md)
   A store that reads from and writes to a persistent XML file.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [var configurationName: String](nspersistentstore/configurationname.md)
+### Getting Store Configuration
+- [var configurationName: String](./configurationname.md)
   The name of the managed object model configuration that creates the persistent store.
-- [var options: [AnyHashable : Any]?](nspersistentstore/options.md)
+- [var options: [AnyHashable : Any]?](./options.md)
   The options that Core Data uses to create the store.
-- [var persistentStoreCoordinator: NSPersistentStoreCoordinator?](nspersistentstore/persistentstorecoordinator.md)
+- [var persistentStoreCoordinator: NSPersistentStoreCoordinator?](./persistentstorecoordinator.md)
   The persistent store coordinator that loads the persistent store.
-- [var type: String](nspersistentstore/type.md)
+- [var type: String](./type.md)
   The type string of the persistent store.
-- [Persistent Store Types](persistent-store-types.md)
+- [Persistent Store Types](../persistent-store-types.md)
   Persist data through the available store types.
 
 

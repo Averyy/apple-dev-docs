@@ -1,7 +1,8 @@
 # ASWebAuthenticationSessionRequestDelegate
 
 **Framework**: Authentication Services  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface through which the session request can inform its delegate, which is typically a browser, about the outcome of the authentication attempt.
 
@@ -14,22 +15,27 @@ An interface through which the session request can inform its delegate, which is
 protocol ASWebAuthenticationSessionRequestDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol ASWebAuthenticationSessionRequestDelegate <NSObject>
+```
+
 ## Topics
 
 ### Responding to Completion Events
-- [func authenticationSessionRequest(ASWebAuthenticationSessionRequest, didCompleteWithCallbackURL: URL)](aswebauthenticationsessionrequestdelegate/authenticationsessionrequest(_:didcompletewithcallbackurl:).md)
+- [func authenticationSessionRequest(ASWebAuthenticationSessionRequest, didCompleteWithCallbackURL: URL)](./aswebauthenticationsessionrequestdelegate/authenticationsessionrequest%28_,didcompletewithcallbackurl%29.md)
   Tells the delegate, typically a browser, that the authentication completed successfully.
-- [func authenticationSessionRequest(ASWebAuthenticationSessionRequest, didCancelWithError: any Error)](aswebauthenticationsessionrequestdelegate/authenticationsessionrequest(_:didcancelwitherror:).md)
+- [func authenticationSessionRequest(ASWebAuthenticationSessionRequest, didCancelWithError: any Error)](./aswebauthenticationsessionrequestdelegate/authenticationsessionrequest%28_,didcancelwitherror%29.md)
   Tells the delegate, typically a browser, that the authentication was canceled.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any ASWebAuthenticationSessionRequestDelegate)?](aswebauthenticationsessionrequest/delegate.md)
+### Indicating completion
+- [var delegate: (any ASWebAuthenticationSessionRequestDelegate)?](./aswebauthenticationsessionrequest/delegate.md)
   A delegate that the session request instance informs about authentication completion.
 
 

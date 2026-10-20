@@ -1,7 +1,8 @@
 # NavigationSplitViewStyle
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that specifies the appearance and interaction of navigation split views within a view hierarchy.
 
@@ -23,7 +24,7 @@ A type that specifies the appearance and interaction of navigation split views w
 
 #### Overview
 
-To configure the navigation split view style for a view hierarchy, use the [`navigationSplitViewStyle(_:)`](view/navigationsplitviewstyle(_:).md) modifier.
+To configure the navigation split view style for a view hierarchy, use the [`navigationSplitViewStyle(_:)`](./view/navigationsplitviewstyle%28_%29.md) modifier.
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is included in the type’s base declaration:
 
@@ -44,43 +45,44 @@ extension MyCustomType: Transition {
 ## Topics
 
 ### Creating built-in styles
-- [static var automatic: AutomaticNavigationSplitViewStyle](navigationsplitviewstyle/automatic.md)
+- [static var automatic: AutomaticNavigationSplitViewStyle](./navigationsplitviewstyle/automatic.md)
   A navigation split style that resolves its appearance automatically based on the current context.
-- [static var balanced: BalancedNavigationSplitViewStyle](navigationsplitviewstyle/balanced.md)
+- [static var balanced: BalancedNavigationSplitViewStyle](./navigationsplitviewstyle/balanced.md)
   A navigation split style that reduces the size of the detail content to make room when showing the leading column or columns.
-- [static var prominentDetail: ProminentDetailNavigationSplitViewStyle](navigationsplitviewstyle/prominentdetail.md)
+- [static var prominentDetail: ProminentDetailNavigationSplitViewStyle](./navigationsplitviewstyle/prominentdetail.md)
   A navigation split style that attempts to maintain the size of the detail content when hiding or showing the leading columns.
 ### Creating custom styles
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](navigationsplitviewstyle/makebody(configuration:).md)
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./navigationsplitviewstyle/makebody%28configuration%29.md)
   Creates a view that represents the body of a navigation split view.
-- [NavigationSplitViewStyle.Configuration](navigationsplitviewstyle/configuration.md)
+- [NavigationSplitViewStyle.Configuration](./navigationsplitviewstyle/configuration.md)
   The properties of a navigation split view instance.
-- [associatedtype Body : View](navigationsplitviewstyle/body.md)
+- [associatedtype Body : View](./navigationsplitviewstyle/body.md)
   A view that represents the body of a navigation split view.
 ### Supporting types
-- [struct AutomaticNavigationSplitViewStyle](automaticnavigationsplitviewstyle.md)
+- [struct AutomaticNavigationSplitViewStyle](./automaticnavigationsplitviewstyle.md)
   A navigation split style that resolves its appearance automatically based on the current context.
-- [struct BalancedNavigationSplitViewStyle](balancednavigationsplitviewstyle.md)
+- [struct BalancedNavigationSplitViewStyle](./balancednavigationsplitviewstyle.md)
   A navigation split style that reduces the size of the detail content to make room when showing the leading column or columns.
-- [struct ProminentDetailNavigationSplitViewStyle](prominentdetailnavigationsplitviewstyle.md)
+- [struct ProminentDetailNavigationSplitViewStyle](./prominentdetailnavigationsplitviewstyle.md)
   A navigation split style that attempts to maintain the size of the detail content when hiding or showing the leading columns.
-- [struct NavigationSplitViewStyleConfiguration](navigationsplitviewstyleconfiguration.md)
+- [struct NavigationSplitViewStyleConfiguration](./navigationsplitviewstyleconfiguration.md)
   The properties of a navigation split view instance.
 
 ## Relationships
 
 ### Conforming Types
-- [AutomaticNavigationSplitViewStyle](automaticnavigationsplitviewstyle.md)
-- [BalancedNavigationSplitViewStyle](balancednavigationsplitviewstyle.md)
-- [ProminentDetailNavigationSplitViewStyle](prominentdetailnavigationsplitviewstyle.md)
+- [AutomaticNavigationSplitViewStyle](./automaticnavigationsplitviewstyle.md)
+- [BalancedNavigationSplitViewStyle](./balancednavigationsplitviewstyle.md)
+- [ProminentDetailNavigationSplitViewStyle](./prominentdetailnavigationsplitviewstyle.md)
 
 ## See Also
 
-- [func navigationSplitViewStyle<S>(S) -> some View](view/navigationsplitviewstyle(_:).md)
+### Styling navigation views
+- [func navigationSplitViewStyle<S>(S) -> some View](./view/navigationsplitviewstyle%28_%29.md)
   Sets the style for navigation split views within this view.
-- [func tabViewStyle<S>(S) -> some View](view/tabviewstyle(_:).md)
+- [func tabViewStyle<S>(S) -> some View](./view/tabviewstyle%28_%29.md)
   Sets the style for the tab view within the current environment.
-- [protocol TabViewStyle](tabviewstyle.md)
+- [protocol TabViewStyle](./tabviewstyle.md)
   A specification for the appearance and interaction of a tab view.
 
 

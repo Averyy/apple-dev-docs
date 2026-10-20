@@ -1,7 +1,8 @@
 # tokenRange(for:unit:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds the entire range of all tokens of the specified linguistic unit contained completely or partially within the specified range.
 
@@ -23,18 +24,19 @@ func tokenRange(for range: Range<String.Index>, unit: NLTokenUnit) -> Range<Stri
 
 #### Return Value
 
-The smallest possible range that contains all of the tokens of the specified linguistic unit within the range specified in `range`. This result includes a token’s entire range if any part of that token is included within `range`. If the length of `range` is 0, this return value is equivalent to [`tokenRangeAtIndex:unit:`](nltagger/tokenrangeatindex:unit:.md).
+The smallest possible range that contains all of the tokens of the specified linguistic unit within the range specified in `range`. This result includes a token’s entire range if any part of that token is included within `range`. If the length of `range` is 0, this return value is equivalent to [`tokenRangeAtIndex:unit:`](./tokenrangeatindex_unit_.md).
 
 ## Parameters
 
 - `range`: The range within the string to search for tokens.
-- `unit`: The linguistic unit. For possible values, see [`NLTokenUnit`](nltokenunit.md).
+- `unit`: The linguistic unit. For possible values, see [`NLTokenUnit`](../nltokenunit.md).
 
 ## See Also
 
-- [func tokenRange(at: String.Index, unit: NLTokenUnit) -> Range<String.Index>](nltagger/tokenrange(at:unit:).md)
+### Determining the range of a unit token
+- [func tokenRange(at: String.Index, unit: NLTokenUnit) -> Range<String.Index>](./tokenrange%28at,unit%29.md)
   Returns the range of the linguistic unit containing the specified character index.
-- [enum NLTokenUnit](nltokenunit.md)
+- [enum NLTokenUnit](../nltokenunit.md)
   Constants representing linguistic units.
 
 

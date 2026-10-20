@@ -1,7 +1,8 @@
 # MediaAffinityTypeResolutionResult.Success
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A media affinity that successfully matches the intent.
 
@@ -10,7 +11,7 @@ A media affinity that successfully matches the intent.
 
 ## Declaration
 
-```swift
+```
 object MediaAffinityTypeResolutionResult.Success
 ```
 
@@ -20,7 +21,8 @@ object MediaAffinityTypeResolutionResult.Success
 
 ## See Also
 
-- [object MediaAffinityTypeResolutionResult.ConfirmationRequired](mediaaffinitytyperesolutionresult/confirmationrequired-data.dictionary.md)
+### Specifying the Result
+- [object MediaAffinityTypeResolutionResult.ConfirmationRequired](./confirmationrequired-data.dictionary.md)
   A result that requires the user to confirm the media affinity before proceeding.
 
 

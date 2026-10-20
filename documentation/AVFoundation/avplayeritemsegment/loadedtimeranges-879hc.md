@@ -1,7 +1,8 @@
 # loadedTimeRanges
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time ranges for the segment that have media data is readily available.
 
@@ -27,11 +28,12 @@ The loaded time ranges might be discontinuous.
 
 ## See Also
 
-- [var timeMapping: CMTimeMapping](avplayeritemsegment/timemapping.md)
+### Inspecting the segment
+- [var timeMapping: CMTimeMapping](./timemapping.md)
   The time mapping for this segment.
-- [var startDate: Date?](avplayeritemsegment/startdate.md)
+- [var startDate: Date?](./startdate.md)
   The date at which a segment starts.
-- [var interstitialEvent: AVPlayerInterstitialEvent?](avplayeritemsegment/interstitialevent.md)
+- [var interstitialEvent: AVPlayerInterstitialEvent?](./interstitialevent.md)
   The associated interstitial event for this segment.
 
 

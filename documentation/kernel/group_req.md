@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct group_req {
     ...
 };
@@ -17,8 +17,8 @@ struct group_req {
 ## Topics
 
 ### Instance Properties
-- [gr_group](group_req/1475976-gr_group.md)
-- [gr_interface](group_req/1475912-gr_interface.md)
+- [gr_group](./group_req/api-1475976-gr_group.md)
+- [gr_interface](./group_req/api-1475912-gr_interface.md)
 
 
 ---

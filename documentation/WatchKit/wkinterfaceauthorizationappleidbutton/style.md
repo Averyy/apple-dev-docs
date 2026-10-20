@@ -1,7 +1,8 @@
 # WKInterfaceAuthorizationAppleIDButton.Style
 
 **Framework**: WatchKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that define an authorization button’s style.
 
@@ -14,35 +15,40 @@ Values that define an authorization button’s style.
 enum Style
 ```
 
+```c
+enum WKInterfaceAuthorizationAppleIDButtonStyle : NSInteger;
+```
+
 ## Topics
 
 ### Styles
-- [WKInterfaceAuthorizationAppleIDButton.Style.default](wkinterfaceauthorizationappleidbutton/style/default.md)
+- [WKInterfaceAuthorizationAppleIDButton.Style.default](./style/default.md)
   The system’s default button style.
-- [WKInterfaceAuthorizationAppleIDButton.Style.white](wkinterfaceauthorizationappleidbutton/style/white.md)
+- [WKInterfaceAuthorizationAppleIDButton.Style.white](./style/white.md)
   A white button with black lettering.
-- [WKInterfaceAuthorizationAppleIDButton.Style.default](wkinterfaceauthorizationappleidbutton/style/default.md)
+- [WKInterfaceAuthorizationAppleIDButton.Style.default](./style/default.md)
   The system’s default button style.
-- [WKInterfaceAuthorizationAppleIDButton.Style.white](wkinterfaceauthorizationappleidbutton/style/white.md)
+- [WKInterfaceAuthorizationAppleIDButton.Style.white](./style/white.md)
   A white button with black lettering.
 ### Initializers
-- [init?(rawValue: Int)](wkinterfaceauthorizationappleidbutton/style/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(style: WKInterfaceAuthorizationAppleIDButton.Style, target: Any?, action: Selector)](wkinterfaceauthorizationappleidbutton/init(style:target:action:).md)
+### Initializing for SwiftUI
+- [init(style: WKInterfaceAuthorizationAppleIDButton.Style, target: Any?, action: Selector)](./init%28style,target,action%29.md)
   Creates an authorization button for use in SwiftUI.
-- [init(target: Any?, action: Selector)](wkinterfaceauthorizationappleidbutton/init(target:action:).md)
+- [init(target: Any?, action: Selector)](./init%28target,action%29.md)
   Creates an authorization button for use in SwiftUI.
 
 

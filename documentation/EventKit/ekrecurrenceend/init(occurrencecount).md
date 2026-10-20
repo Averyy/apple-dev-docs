@@ -1,7 +1,8 @@
 # init(occurrenceCount:)
 
 **Framework**: EventKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a count-based recurrence end with a given maximum occurrence count.
 
@@ -19,6 +20,10 @@ Initializes and returns a count-based recurrence end with a given maximum occurr
 convenience init(occurrenceCount: Int)
 ```
 
+```objc
++ (instancetype) recurrenceEndWithOccurrenceCount:(NSUInteger) occurrenceCount;
+```
+
 #### Return Value
 
 The initialized recurrence end.
@@ -33,7 +38,8 @@ The maximum occurrence count argument must be a positive integer and not `0`; ot
 
 ## See Also
 
-- [convenience init(end: Date)](ekrecurrenceend/init(end:).md)
+### Creating a Recurrence End
+- [convenience init(end: Date)](./init%28end%29.md)
   Initializes and returns a date-based recurrence end with a given end date.
 
 

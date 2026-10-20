@@ -1,11 +1,12 @@
 # CustomDebugStringConvertible Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](string/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A representation of the string that is suitable for debugging.
 
 

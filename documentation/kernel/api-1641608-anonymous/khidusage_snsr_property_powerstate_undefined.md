@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Property_PowerState_Undefined
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Property_PowerState_Undefined = 0x0850
 ```
 

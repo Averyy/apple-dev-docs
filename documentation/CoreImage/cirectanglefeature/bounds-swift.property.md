@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A rectangle indicating the position and extent of the feature in image coordinates.
 
@@ -10,7 +11,7 @@ A rectangle indicating the position and extent of the feature in image coordinat
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ A rectangle indicating the position and extent of the feature in image coordinat
 var bounds: CGRect { get }
 ```
 
+```objc
+@property (readonly) CGRect bounds;
+```
+
 #### Discussion
 
-This property identifies the rectangular region *of the image* containing the detected rectangle, not necessarily the shape of the rectangle. A detected feature is rectangular in space, but may appear in perspective in the image. Use the properties listed in [`CIRectangleFeature`](cirectanglefeature.md) to find the corners of the rectangle as it appears in perspective.
+This property identifies the rectangular region *of the image* containing the detected rectangle, not necessarily the shape of the rectangle. A detected feature is rectangular in space, but may appear in perspective in the image. Use the properties listed in [`CIRectangleFeature`](../cirectanglefeature.md) to find the corners of the rectangle as it appears in perspective.
 
 
 ---

@@ -1,7 +1,8 @@
 # CSSM_APPLE_TP_SSL_OPTIONS
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
@@ -12,21 +13,25 @@
 struct CSSM_APPLE_TP_SSL_OPTIONS
 ```
 
+```c
+typedef struct { ... } CSSM_APPLE_TP_SSL_OPTIONS;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cssm_apple_tp_ssl_options/init.md)
-- [init(Version: uint32, ServerNameLen: uint32, ServerName: UnsafePointer<CChar>!, Flags: uint32)](cssm_apple_tp_ssl_options/init(version:servernamelen:servername:flags:).md)
+- [init()](./cssm_apple_tp_ssl_options/init%28%29.md)
+- [init(Version: uint32, ServerNameLen: uint32, ServerName: UnsafePointer<CChar>!, Flags: uint32)](./cssm_apple_tp_ssl_options/init%28version,servernamelen,servername,flags%29.md)
 ### Instance Properties
-- [var Flags: uint32](cssm_apple_tp_ssl_options/flags.md)
-- [var ServerName: UnsafePointer<CChar>!](cssm_apple_tp_ssl_options/servername.md)
-- [var ServerNameLen: uint32](cssm_apple_tp_ssl_options/servernamelen.md)
-- [var Version: uint32](cssm_apple_tp_ssl_options/version.md)
+- [var Flags: uint32](./cssm_apple_tp_ssl_options/flags.md)
+- [var ServerName: UnsafePointer<CChar>!](./cssm_apple_tp_ssl_options/servername.md)
+- [var ServerNameLen: uint32](./cssm_apple_tp_ssl_options/servernamelen.md)
+- [var Version: uint32](./cssm_apple_tp_ssl_options/version.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

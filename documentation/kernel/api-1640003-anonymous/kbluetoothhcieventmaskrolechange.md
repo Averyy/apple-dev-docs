@@ -1,14 +1,15 @@
 # kBluetoothHCIEventMaskRoleChange
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCIEventMaskRoleChange = 0x00020000
 ```
 

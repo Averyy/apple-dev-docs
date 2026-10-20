@@ -1,7 +1,8 @@
 # Artists.Views.ArtistsSimilarArtistsView.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Other artists similar to this artist.
 
@@ -10,7 +11,7 @@ Other artists similar to this artist.
 
 ## Declaration
 
-```swift
+```
 object Artists.Views.ArtistsSimilarArtistsView.Attributes
 ```
 

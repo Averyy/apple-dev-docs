@@ -1,7 +1,8 @@
 # USDLayer.SpecType.variant
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A variant spec.
 

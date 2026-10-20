@@ -1,7 +1,8 @@
 # InstallConfirmationResult
 
 **Framework**: MarketplaceKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options that indicate whether the installation of an app proceeds when a person interacts with an app installation button.
 
@@ -17,37 +18,38 @@ enum InstallConfirmationResult
 
 #### Overview
 
-The [`InstallConfiguration`](installconfiguration.md) initializer [`init(install:confirmInstall:)`](installconfiguration/init(install:confirminstall:).md) takes a closure as a parameter that returns a case of this enumeration.
+The [`InstallConfiguration`](./installconfiguration.md) initializer [`init(install:confirmInstall:)`](./installconfiguration/init%28install,confirminstall%29.md) takes a closure as a parameter that returns a case of this enumeration.
 
-Your marketplace app supplies code in the closure that facilitates any prerequisites a person needs to satisfy to download the app, such as completing a payment flow. The result of the prerequisites flow helps you determine the case to return, ([`InstallConfirmationResult.cancel`](installconfirmationresult/cancel.md) or [`InstallConfirmationResult.confirmed(installVerificationToken:authenticationContext:)`](installconfirmationresult/confirmed(installverificationtoken:authenticationcontext:).md).
+Your marketplace app supplies code in the closure that facilitates any prerequisites a person needs to satisfy to download the app, such as completing a payment flow. The result of the prerequisites flow helps you determine the case to return, ([`InstallConfirmationResult.cancel`](./installconfirmationresult/cancel.md) or [`InstallConfirmationResult.confirmed(installVerificationToken:authenticationContext:)`](./installconfirmationresult/confirmed%28installverificationtoken,authenticationcontext%29.md).
 
 ## Topics
 
 ### Enumeration Cases
-- [InstallConfirmationResult.cancel](installconfirmationresult/cancel.md)
-- [InstallConfirmationResult.confirmed(installVerificationToken:authenticationContext:)](installconfirmationresult/confirmed(installverificationtoken:authenticationcontext:).md)
+- [InstallConfirmationResult.cancel](./installconfirmationresult/cancel.md)
+- [InstallConfirmationResult.confirmed(installVerificationToken:authenticationContext:)](./installconfirmationresult/confirmed%28installverificationtoken,authenticationcontext%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ActionButton](actionbutton.md)
+### App distribution UI
+- [class ActionButton](./actionbutton.md)
   A user-interface element that enables a person to install, update, or launch apps by tapping the element.
-- [struct InstallMetadata](installmetadata.md)
+- [struct InstallMetadata](./installmetadata.md)
   Information about a specific app to install or update and the person who initiates it.
-- [struct InstallConfiguration](installconfiguration.md)
+- [struct InstallConfiguration](./installconfiguration.md)
   Information that describes a requested app installation or app update.
-- [struct BatchInstallConfiguration](batchinstallconfiguration.md)
+- [struct BatchInstallConfiguration](./batchinstallconfiguration.md)
   Information that describes multiple app installations or app updates.
-- [enum BatchInstallConfirmationResult](batchinstallconfirmationresult.md)
+- [enum BatchInstallConfirmationResult](./batchinstallconfirmationresult.md)
   Options that indicate whether the installation of multiple apps proceeds when a person interacts with an app installation button.
-- [enum MarketplaceDisplayOption](marketplacedisplayoption.md)
+- [enum MarketplaceDisplayOption](./marketplacedisplayoption.md)
   The kinds of deep links that the operating system makes into your marketplace.
-- [protocol MarketplaceSceneDelegate](marketplacescenedelegate.md)
+- [protocol MarketplaceSceneDelegate](./marketplacescenedelegate.md)
   A delegate that handles deep link requests into your marketplace app.
 
 

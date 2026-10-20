@@ -1,7 +1,8 @@
 # kSecCodeInfoTimestamp
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the actual signing date.
 
@@ -15,9 +16,13 @@ A key whose value indicates the actual signing date.
 let kSecCodeInfoTimestamp: CFString
 ```
 
+```c
+extern CFStringRef const kSecCodeInfoTimestamp;
+```
+
 #### Discussion
 
-The value is a [`CFDate`](https://developer.apple.com/documentation/corefoundation/cfdate) object describing the signing date as (securely) certified by a timestamp authority service. This timestamp cannot be falsified by the signer, and is trusted to the same degree as the timestamp service that created the timestamp.
+The value is a [`CFDate`](../CoreFoundation/cfdate.md) object describing the signing date as (securely) certified by a timestamp authority service. This timestamp cannot be falsified by the signer, and is trusted to the same degree as the timestamp service that created the timestamp.
 
 
 ---

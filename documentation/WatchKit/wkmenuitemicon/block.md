@@ -1,12 +1,13 @@
 # WKMenuItemIcon.block
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The icon indicating an action to block or prevent something from happening.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 7.0
 
 ## Declaration
 
@@ -14,37 +15,42 @@ The icon indicating an action to block or prevent something from happening.
 case block
 ```
 
+```c
+WKMenuItemIconBlock
+```
+
 ## See Also
 
-- [WKMenuItemIcon.accept](wkmenuitemicon/accept.md)
+### Constants
+- [WKMenuItemIcon.accept](./accept.md)
   The icon indicating an action to accept an event or item.
-- [WKMenuItemIcon.add](wkmenuitemicon/add.md)
+- [WKMenuItemIcon.add](./add.md)
   The icon indicating an action for adding an item.
-- [WKMenuItemIcon.decline](wkmenuitemicon/decline.md)
+- [WKMenuItemIcon.decline](./decline.md)
   The icon indicating an action to decline or cancel an event.
-- [WKMenuItemIcon.info](wkmenuitemicon/info.md)
+- [WKMenuItemIcon.info](./info.md)
   The icon indicating an action to retrieve more information.
-- [WKMenuItemIcon.maybe](wkmenuitemicon/maybe.md)
+- [WKMenuItemIcon.maybe](./maybe.md)
   The icon indicating an answer of maybe for an action.
-- [WKMenuItemIcon.more](wkmenuitemicon/more.md)
+- [WKMenuItemIcon.more](./more.md)
   The icon indicating that more actions or options are available.
-- [WKMenuItemIcon.mute](wkmenuitemicon/mute.md)
+- [WKMenuItemIcon.mute](./mute.md)
   The icon indicating an action to mute the sound.
-- [WKMenuItemIcon.pause](wkmenuitemicon/pause.md)
+- [WKMenuItemIcon.pause](./pause.md)
   The icon indicating an action to pause playback.
-- [WKMenuItemIcon.play](wkmenuitemicon/play.md)
+- [WKMenuItemIcon.play](./play.md)
   The icon indicating an action to play some content.
-- [WKMenuItemIcon.repeat](wkmenuitemicon/repeat.md)
+- [WKMenuItemIcon.repeat](./repeat.md)
   The icon indicating that played content should repeat in a loop.
-- [WKMenuItemIcon.resume](wkmenuitemicon/resume.md)
+- [WKMenuItemIcon.resume](./resume.md)
   The icon indicating an action to resume playing some content.
-- [WKMenuItemIcon.share](wkmenuitemicon/share.md)
+- [WKMenuItemIcon.share](./share.md)
   The icon indicating an action to share content.
-- [WKMenuItemIcon.shuffle](wkmenuitemicon/shuffle.md)
+- [WKMenuItemIcon.shuffle](./shuffle.md)
   The icon indicating an action to shuffle content.
-- [WKMenuItemIcon.speaker](wkmenuitemicon/speaker.md)
+- [WKMenuItemIcon.speaker](./speaker.md)
   The icon indicating audio output.
-- [WKMenuItemIcon.trash](wkmenuitemicon/trash.md)
+- [WKMenuItemIcon.trash](./trash.md)
   The icon indicating an action to delete some content.
 
 

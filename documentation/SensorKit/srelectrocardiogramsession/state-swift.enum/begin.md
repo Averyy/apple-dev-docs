@@ -1,7 +1,8 @@
 # SRElectrocardiogramSession.State.begin
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session begins.
 
@@ -16,11 +17,16 @@ The session begins.
 case begin
 ```
 
+```c
+SRElectrocardiogramSessionStateBegin
+```
+
 ## See Also
 
-- [SRElectrocardiogramSession.State.active](srelectrocardiogramsession/state-swift.enum/active.md)
+### States
+- [SRElectrocardiogramSession.State.active](./active.md)
   The session is ongoing.
-- [SRElectrocardiogramSession.State.end](srelectrocardiogramsession/state-swift.enum/end.md)
+- [SRElectrocardiogramSession.State.end](./end.md)
   The session ends.
 
 

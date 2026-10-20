@@ -1,14 +1,15 @@
 # PayWithApplePayButtonStyle
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,24 +21,25 @@ struct PayWithApplePayButtonStyle
 ## Topics
 
 ### Type Properties
-- [static let automatic: PayWithApplePayButtonStyle](paywithapplepaybuttonstyle/automatic.md)
-- [static let black: PayWithApplePayButtonStyle](paywithapplepaybuttonstyle/black.md)
-- [static let white: PayWithApplePayButtonStyle](paywithapplepaybuttonstyle/white.md)
-- [static let whiteOutline: PayWithApplePayButtonStyle](paywithapplepaybuttonstyle/whiteoutline.md)
+- [static let automatic: PayWithApplePayButtonStyle](./paywithapplepaybuttonstyle/automatic.md)
+- [static let black: PayWithApplePayButtonStyle](./paywithapplepaybuttonstyle/black.md)
+- [static let white: PayWithApplePayButtonStyle](./paywithapplepaybuttonstyle/white.md)
+- [static let whiteOutline: PayWithApplePayButtonStyle](./paywithapplepaybuttonstyle/whiteoutline.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [class PKPaymentButton](pkpaymentbutton.md)
+### Apple Pay buttons
+- [class PKPaymentButton](./pkpaymentbutton.md)
   An object that displays a button either to trigger payments through Apple Pay or to prompt the user to set up a card.
-- [struct PayWithApplePayButton](paywithapplepaybutton.md)
+- [struct PayWithApplePayButton](./paywithapplepaybutton.md)
   A type that provides a button to pay with Apple pay.
-- [struct PayWithApplePayButtonLabel](paywithapplepaybuttonlabel.md)
-- [struct PayWithApplePayButtonLabel](paywithapplepaybuttonlabel.md)
+- [struct PayWithApplePayButtonLabel](./paywithapplepaybuttonlabel.md)
+- [struct PayWithApplePayButtonLabel](./paywithapplepaybuttonlabel.md)
 
 
 ---

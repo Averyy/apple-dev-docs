@@ -1,7 +1,8 @@
 # MTRDeviceControllerExternalCertificateParameters
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.6+
@@ -18,25 +19,29 @@
 class MTRDeviceControllerExternalCertificateParameters
 ```
 
+```objc
+@interface MTRDeviceControllerExternalCertificateParameters : MTRDeviceControllerParameters
+```
+
 ## Topics
 
 ### Initializers
-- [init(storageDelegate: any MTRDeviceControllerStorageDelegate, storageDelegateQueue: dispatch_queue_t, uniqueIdentifier: UUID, ipk: Data, vendorID: NSNumber, operationalKeypair: any MTRKeypair, operationalCertificate: Data, intermediateCertificate: Data?, rootCertificate: Data)](mtrdevicecontrollerexternalcertificateparameters/init(storagedelegate:storagedelegatequeue:uniqueidentifier:ipk:vendorid:operationalkeypair:operationalcertificate:intermediatecertificate:rootcertificate:).md)
+- [init(storageDelegate: any MTRDeviceControllerStorageDelegate, storageDelegateQueue: dispatch_queue_t, uniqueIdentifier: UUID, ipk: Data, vendorID: NSNumber, operationalKeypair: any MTRKeypair, operationalCertificate: Data, intermediateCertificate: Data?, rootCertificate: Data)](./mtrdevicecontrollerexternalcertificateparameters/init%28storagedelegate,storagedelegatequeue,uniqueidentifier,ipk,vendorid,operationalkeypair,operationalcertificate,intermediatecertificate,rootcertificate%29.md)
 ### Instance Properties
-- [var rootCertificate: Data](mtrdevicecontrollerexternalcertificateparameters/rootcertificate.md)
+- [var rootCertificate: Data](./mtrdevicecontrollerexternalcertificateparameters/rootcertificate.md)
   The root certificate we were initialized with.
 
 ## Relationships
 
 ### Inherits From
-- [MTRDeviceControllerParameters](mtrdevicecontrollerparameters.md)
+- [MTRDeviceControllerParameters](./mtrdevicecontrollerparameters.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

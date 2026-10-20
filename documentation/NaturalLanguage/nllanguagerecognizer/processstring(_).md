@@ -1,7 +1,8 @@
 # processString(_:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Analyzes the piece of text to determine its dominant language.
 
@@ -20,23 +21,28 @@ Analyzes the piece of text to determine its dominant language.
 func processString(_ string: String)
 ```
 
+```objc
+- (void) processString:(NSString *) string;
+```
+
 ## Mentions
 
-- [Identifying the language in text](identifying-the-language-in-text.md)
+- [Identifying the language in text](../identifying-the-language-in-text.md)
 
 #### Discussion
 
-Use this method to process the provided text and to update the [`dominantLanguage`](nllanguagerecognizer/dominantlanguage.md) result and `languageHypotheses(withMaximum:)` probabilities.
+Use this method to process the provided text and to update the [`dominantLanguage`](./dominantlanguage.md) result and `languageHypotheses(withMaximum:)` probabilities.
 
 ## See Also
 
-- [class func dominantLanguage(for: String) -> NLLanguage?](nllanguagerecognizer/dominantlanguage(for:).md)
+### Determining the language
+- [class func dominantLanguage(for: String) -> NLLanguage?](./dominantlanguage%28for%29.md)
   Finds the most likely language of a piece of text.
-- [var dominantLanguage: NLLanguage?](nllanguagerecognizer/dominantlanguage.md)
+- [var dominantLanguage: NLLanguage?](./dominantlanguage.md)
   The most likely language for the processed text.
-- [func languageHypotheses(withMaximum: Int) -> [NLLanguage : Double]](nllanguagerecognizer/languagehypotheses(withmaximum:).md)
+- [func languageHypotheses(withMaximum: Int) -> [NLLanguage : Double]](./languagehypotheses%28withmaximum%29.md)
   Generates the probabilities of possible languages for the processed text.
-- [func reset()](nllanguagerecognizer/reset.md)
+- [func reset()](./reset%28%29.md)
   Resets the recognizer to its initial state.
 
 

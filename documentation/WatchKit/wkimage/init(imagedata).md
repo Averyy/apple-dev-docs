@@ -1,7 +1,8 @@
 # init(imageData:)
 
 **Framework**: WatchKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image with the specified raw image data.
 
@@ -12,6 +13,10 @@ Creates an image with the specified raw image data.
 
 ```swift
 convenience init(imageData: Data)
+```
+
+```objc
++ (instancetype) imageWithImageData:(NSData *) imageData;
 ```
 
 #### Return Value
@@ -28,9 +33,10 @@ Use this method when you already have raw PNG or JPG data and want to use it for
 
 ## See Also
 
-- [convenience init(image: UIImage)](wkimage/init(image:).md)
+### Creating Image Objects
+- [convenience init(image: UIImage)](./init%28image%29.md)
   Creates and returns an image object using the specified UIKit image.
-- [convenience init(imageName: String)](wkimage/init(imagename:).md)
+- [convenience init(imageName: String)](./init%28imagename%29.md)
   Creates an image by loading an image file from the Watch app bundle.
 
 

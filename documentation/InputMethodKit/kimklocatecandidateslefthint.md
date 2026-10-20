@@ -1,7 +1,8 @@
 # kIMKLocateCandidatesLeftHint
 
 **Framework**: InputMethodKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.5+
@@ -12,15 +13,20 @@
 var kIMKLocateCandidatesLeftHint: Int { get }
 ```
 
+```c
+kIMKLocateCandidatesLeftHint
+```
+
 #### Discussion
 
 Place the candidates window to the left of the current text selection.
 
 ## See Also
 
-- [var kIMKLocateCandidatesAboveHint: Int](kimklocatecandidatesabovehint.md)
-- [var kIMKLocateCandidatesBelowHint: Int](kimklocatecandidatesbelowhint.md)
-- [var kIMKLocateCandidatesRightHint: Int](kimklocatecandidatesrighthint.md)
+### Constants
+- [var kIMKLocateCandidatesAboveHint: Int](./kimklocatecandidatesabovehint.md)
+- [var kIMKLocateCandidatesBelowHint: Int](./kimklocatecandidatesbelowhint.md)
+- [var kIMKLocateCandidatesRightHint: Int](./kimklocatecandidatesrighthint.md)
 
 
 ---

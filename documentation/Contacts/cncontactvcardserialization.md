@@ -1,7 +1,8 @@
 # CNContactVCardSerialization
 
 **Framework**: Contacts  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object you use to convert to and from a vCard representation of the user’s contacts.
 
@@ -19,37 +20,42 @@ An object you use to convert to and from a vCard representation of the user’s 
 class CNContactVCardSerialization
 ```
 
+```objc
+@interface CNContactVCardSerialization : NSObject
+```
+
 ## Topics
 
 ### Extracting Contacts from a vCard
-- [class func contacts(with: Data) throws -> [CNContact]](cncontactvcardserialization/contacts(with:).md)
+- [class func contacts(with: Data) throws -> [CNContact]](./cncontactvcardserialization/contacts%28with%29.md)
   Returns the contacts from the vCard data.
 ### Getting a vCard for Contacts
-- [class func data(with: [CNContact]) throws -> Data](cncontactvcardserialization/data(with:).md)
+- [class func data(with: [CNContact]) throws -> Data](./cncontactvcardserialization/data%28with%29.md)
   Returns the vCard representation of the specified contacts.
 ### Getting a Descriptor
-- [class func descriptorForRequiredKeys() -> any CNKeyDescriptor](cncontactvcardserialization/descriptorforrequiredkeys.md)
+- [class func descriptorForRequiredKeys() -> any CNKeyDescriptor](./cncontactvcardserialization/descriptorforrequiredkeys%28%29.md)
   Use to fetch all contact keys required to create vCard data from a contact.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CNContactFormatter](cncontactformatter.md)
+### Formatters
+- [class CNContactFormatter](./cncontactformatter.md)
   An object that you use to format contact information before displaying it to the user.
-- [class CNPostalAddressFormatter](cnpostaladdressformatter.md)
+- [class CNPostalAddressFormatter](./cnpostaladdressformatter.md)
   An object that you use to format a contact’s postal addresses.
-- [class CNContactsUserDefaults](cncontactsuserdefaults.md)
+- [class CNContactsUserDefaults](./cncontactsuserdefaults.md)
   An object that defines the default options to use when displaying contacts.
 
 

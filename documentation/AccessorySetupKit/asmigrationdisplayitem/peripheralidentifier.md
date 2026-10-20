@@ -1,7 +1,8 @@
 # peripheralIdentifier
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Bluetooth identifier of the accessory to migrate.
 
@@ -15,15 +16,20 @@ The Bluetooth identifier of the accessory to migrate.
 var peripheralIdentifier: UUID? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSUUID * peripheralIdentifier;
+```
+
 ## Mentions
 
-- [Discovering and configuring accessories](discovering-and-configuring-accessories.md)
+- [Discovering and configuring accessories](../discovering-and-configuring-accessories.md)
 
 ## See Also
 
-- [var hotspotSSID: String?](asmigrationdisplayitem/hotspotssid.md)
+### Accessory identifiers
+- [var hotspotSSID: String?](./hotspotssid.md)
   The Wi-Fi hotspot SSID of the accessory to migrate.
-- [var wifiAwarePairedDeviceID: ASAccessory.WiFiAwarePairedDeviceID](asmigrationdisplayitem/wifiawarepaireddeviceid.md)
+- [var wifiAwarePairedDeviceID: ASAccessory.WiFiAwarePairedDeviceID](./wifiawarepaireddeviceid.md)
   The Wi-Fi Aware paired device identififer of the accessory to migrate.
 
 

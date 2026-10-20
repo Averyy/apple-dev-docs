@@ -1,7 +1,8 @@
 # MDLMaterialMipMapFilterMode.nearest
 
 **Framework**: Model I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sampling a texture at a size between mipmap levels should return a texel value from the nearest mipmap level.
 
@@ -19,9 +20,14 @@ Sampling a texture at a size between mipmap levels should return a texel value f
 case nearest
 ```
 
+```c
+MDLMaterialMipMapFilterModeNearest
+```
+
 ## See Also
 
-- [MDLMaterialMipMapFilterMode.linear](mdlmaterialmipmapfiltermode/linear.md)
+### Constants
+- [MDLMaterialMipMapFilterMode.linear](./linear.md)
   Sampling a texture at a size between mipmap levels should linearly interpolate between mipmap levels.
 
 

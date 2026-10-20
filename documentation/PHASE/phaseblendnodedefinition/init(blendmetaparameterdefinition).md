@@ -1,7 +1,8 @@
 # init(blendMetaParameterDefinition:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a blend node with a maxiumum blend range value.
 
@@ -19,17 +20,22 @@ Creates a blend node with a maxiumum blend range value.
 init(blendMetaParameterDefinition: PHASENumberMetaParameterDefinition)
 ```
 
+```objc
+- (instancetype) initWithBlendMetaParameterDefinition:(PHASENumberMetaParameterDefinition *) blendMetaParameterDefinition;
+```
+
 ## Parameters
 
 - `blendMetaParameterDefinition`: A maximum value for the blend range. The sound event’s blend meta parameter across a range from `0` to this value produces an active cross-fade along the child nodes.
 
 ## See Also
 
-- [convenience init(blendMetaParameterDefinition: PHASENumberMetaParameterDefinition, identifier: String)](phaseblendnodedefinition/init(blendmetaparameterdefinition:identifier:).md)
+### Creating a Blend Node
+- [convenience init(blendMetaParameterDefinition: PHASENumberMetaParameterDefinition, identifier: String)](./init%28blendmetaparameterdefinition,identifier%29.md)
   Creates a named blend node with a maxiumum blend range value.
-- [init(spatialMixerDefinition: PHASESpatialMixerDefinition)](phaseblendnodedefinition/init(spatialmixerdefinition:).md)
+- [init(spatialMixerDefinition: PHASESpatialMixerDefinition)](./init%28spatialmixerdefinition%29.md)
   Creates a blend node for spatial audio output.
-- [convenience init(spatialMixerDefinition: PHASESpatialMixerDefinition, identifier: String)](phaseblendnodedefinition/init(spatialmixerdefinition:identifier:).md)
+- [convenience init(spatialMixerDefinition: PHASESpatialMixerDefinition, identifier: String)](./init%28spatialmixerdefinition,identifier%29.md)
   Creates a named blend node for spatial audio output.
 
 

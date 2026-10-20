@@ -1,7 +1,8 @@
 # bytes
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Construct a raw span over the memory represented by this span.
 

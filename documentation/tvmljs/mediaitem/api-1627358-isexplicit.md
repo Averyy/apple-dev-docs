@@ -1,7 +1,8 @@
 # isExplicit
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A Boolean value indicating whether the item has explicit lyrics.
 
@@ -10,7 +11,7 @@ A Boolean value indicating whether the item has explicit lyrics.
 
 ## Declaration
 
-```swift
+```
 attribute Boolean isExplicit;
 ```
 
@@ -20,9 +21,10 @@ This property is ignored if the `MediaItem` object type is `video`.
 
 ## See Also
 
-- [contentRatingDomain](mediaitem/1627422-contentratingdomain.md)
+### Rating Media Content
+- [contentRatingDomain](./api-1627422-contentratingdomain.md)
   The domain that the rating applies to.
-- [contentRatingRanking](mediaitem/1627366-contentratingranking.md)
+- [contentRatingRanking](./api-1627366-contentratingranking.md)
   The rating for a video item.
 
 

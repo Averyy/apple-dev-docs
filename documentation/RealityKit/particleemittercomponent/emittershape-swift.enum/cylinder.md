@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.EmitterShape.cylinder
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Particles emit from a cylinder oriented vertically along the y-axis, centered on the origin.
 

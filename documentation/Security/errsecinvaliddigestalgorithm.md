@@ -1,7 +1,8 @@
 # errSecInvalidDigestAlgorithm
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid digest algorithm was detected.
 
@@ -18,6 +19,10 @@ An invalid digest algorithm was detected.
 
 ```swift
 var errSecInvalidDigestAlgorithm: OSStatus { get }
+```
+
+```c
+errSecInvalidDigestAlgorithm
 ```
 
 

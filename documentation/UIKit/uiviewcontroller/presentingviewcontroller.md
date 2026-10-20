@@ -1,7 +1,8 @@
 # presentingViewController
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view controller that presented this view controller.
 
@@ -9,7 +10,7 @@ The view controller that presented this view controller.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,23 +19,28 @@ The view controller that presented this view controller.
 var presentingViewController: UIViewController? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIViewController * presentingViewController;
+```
+
 #### Discussion
 
-When you present a view controller modally (either explicitly or implicitly) using the [`present(_:animated:completion:)`](uiviewcontroller/present(_:animated:completion:).md) method, the view controller that was presented has this property set to the view controller that presented it. If the view controller was not presented modally, but one of its ancestors was, this property contains the view controller that presented the ancestor. If neither the current view controller or any of its ancestors were presented modally, the value in this property is `nil`.
+When you present a view controller modally (either explicitly or implicitly) using the [`present(_:animated:completion:)`](./present%28_,animated,completion%29.md) method, the view controller that was presented has this property set to the view controller that presented it. If the view controller was not presented modally, but one of its ancestors was, this property contains the view controller that presented the ancestor. If neither the current view controller or any of its ancestors were presented modally, the value in this property is `nil`.
 
 ## See Also
 
-- [var presentedViewController: UIViewController?](uiviewcontroller/presentedviewcontroller.md)
+### Getting other related view controllers
+- [var presentedViewController: UIViewController?](./presentedviewcontroller.md)
   The view controller that is presented by this view controller, or one of its ancestors in the view controller hierarchy.
-- [var parent: UIViewController?](uiviewcontroller/parent.md)
+- [var parent: UIViewController?](./parent.md)
   The parent view controller of the recipient.
-- [var splitViewController: UISplitViewController?](uiviewcontroller/splitviewcontroller.md)
+- [var splitViewController: UISplitViewController?](./splitviewcontroller.md)
   The nearest ancestor in the view controller hierarchy that is a split view controller.
-- [var navigationController: UINavigationController?](uiviewcontroller/navigationcontroller.md)
+- [var navigationController: UINavigationController?](./navigationcontroller.md)
   The nearest ancestor in the view controller hierarchy that is a navigation controller.
-- [var tabBarController: UITabBarController?](uiviewcontroller/tabbarcontroller.md)
+- [var tabBarController: UITabBarController?](./tabbarcontroller.md)
   The nearest ancestor in the view controller hierarchy that is a tab bar controller.
-- [var arrangementViewController: UIArrangementViewController?](uiviewcontroller/arrangementviewcontroller.md)
+- [var arrangementViewController: UIArrangementViewController?](./arrangementviewcontroller.md)
   The nearest ancestor arrangement view controller.
 
 

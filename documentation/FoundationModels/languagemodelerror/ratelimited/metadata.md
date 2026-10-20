@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional information about the failure, keyed by name.
 
@@ -21,9 +22,10 @@ var metadata: [String : any Sendable]
 
 ## See Also
 
-- [var resetDate: Date?](languagemodelerror/ratelimited/resetdate.md)
+### Inspecting rate-limit errors
+- [var resetDate: Date?](./resetdate.md)
   The date after which retrying is likely to succeed, if known.
-- [var debugDescription: String](languagemodelerror/ratelimited/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A debug description to help developers diagnose issues during development.
 
 

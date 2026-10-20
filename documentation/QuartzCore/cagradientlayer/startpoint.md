@@ -1,7 +1,8 @@
 # startPoint
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start point of the gradient when drawn in the layer’s coordinate space. Animatable.
 
@@ -19,6 +20,10 @@ The start point of the gradient when drawn in the layer’s coordinate space. An
 var startPoint: CGPoint { get set }
 ```
 
+```objc
+@property CGPoint startPoint;
+```
+
 #### Discussion
 
 The start point corresponds to the first stop of the gradient. The point is defined in the unit coordinate space and is then mapped to the layer’s bounds rectangle when drawn.
@@ -27,13 +32,14 @@ Default value is `(0.5,0.0)`.
 
 ## See Also
 
-- [var colors: [Any]?](cagradientlayer/colors.md)
+### Gradient Style Properties
+- [var colors: [Any]?](./colors.md)
   An array of `CGColorRef` objects defining the color of each gradient stop. Animatable.
-- [var locations: [NSNumber]?](cagradientlayer/locations.md)
+- [var locations: [NSNumber]?](./locations.md)
   An optional array of NSNumber objects defining the location of each gradient stop. Animatable.
-- [var endPoint: CGPoint](cagradientlayer/endpoint.md)
+- [var endPoint: CGPoint](./endpoint.md)
   The end point of the gradient when drawn in the layer’s coordinate space. Animatable.
-- [var type: CAGradientLayerType](cagradientlayer/type.md)
+- [var type: CAGradientLayerType](./type.md)
   Style of gradient drawn by the layer.
 
 

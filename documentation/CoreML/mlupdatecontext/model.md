@@ -1,7 +1,8 @@
 # model
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying Core ML model stored in memory.
 
@@ -20,9 +21,14 @@ The underlying Core ML model stored in memory.
 var model: any MLModel & MLWritable { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MLModel<MLWritable> * model;
+```
+
 ## See Also
 
-- [protocol MLWritable](mlwritable.md)
+### Saving an updated model
+- [protocol MLWritable](../mlwritable.md)
   A set of methods that saves a machine learning type to the file system.
 
 

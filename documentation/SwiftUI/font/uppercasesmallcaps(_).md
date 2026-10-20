@@ -1,7 +1,8 @@
 # uppercaseSmallCaps(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adjusts the font to enable/disable uppercase small capitals.
 

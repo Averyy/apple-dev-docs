@@ -1,7 +1,8 @@
 # denoiseStrengthMaskTextureFormat
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format of the input denoise strength mask texture for the scaler you create with this descriptor.
 
@@ -16,6 +17,10 @@ The pixel format of the input denoise strength mask texture for the scaler you c
 
 ```swift
 var denoiseStrengthMaskTextureFormat: MTLPixelFormat { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLPixelFormat denoiseStrengthMaskTextureFormat;
 ```
 
 #### Discussion

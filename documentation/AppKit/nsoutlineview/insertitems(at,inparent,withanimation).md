@@ -1,7 +1,8 @@
 # insertItems(at:inParent:withAnimation:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts new items at the given indexes in the given parent with the specified optional animations.
 
@@ -14,13 +15,17 @@ Inserts new items at the given indexes in the given parent with the specified op
 func insertItems(at indexes: IndexSet, inParent parent: Any?, withAnimation animationOptions: NSTableView.AnimationOptions = [])
 ```
 
+```objc
+- (void) insertItemsAtIndexes:(NSIndexSet *) indexes inParent:(id) parent withAnimation:(NSTableViewAnimationOptions) animationOptions;
+```
+
 #### Discussion
 
-This method parallels the [`insertRows(at:withAnimation:)`](nstableview/insertrows(at:withanimation:).md) method of [`NSTableView`](nstableview.md) and is used in a way similar to the [`insert(_:at:)`](https://developer.apple.com/documentation/foundation/nsmutablearray/insert(_:at:)-73pln) method of [`NSMutableArray`](https://developer.apple.com/documentation/foundation/nsmutablearray). The method does nothing if `parent` is not expanded. The actual item values are determined by the data source’s [`outlineView(_:child:ofItem:)`](nsoutlineviewdatasource/outlineview(_:child:ofitem:).md) method (which is called only after [`endUpdates()`](nstableview/endupdates().md) to ensure data source integrity).
+This method parallels the [`insertRows(at:withAnimation:)`](../nstableview/insertrows%28at,withanimation%29.md) method of [`NSTableView`](../nstableview.md) and is used in a way similar to the [`insert(_:at:)`](../../Foundation/nsmutablearray/insert%28_,at%29-73pln.md) method of [`NSMutableArray`](../../Foundation/nsmutablearray.md). The method does nothing if `parent` is not expanded. The actual item values are determined by the data source’s [`outlineView(_:child:ofItem:)`](../nsoutlineviewdatasource/outlineview%28_,child,ofitem%29.md) method (which is called only after [`endUpdates()`](../nstableview/endupdates%28%29.md) to ensure data source integrity).
 
-> **Note**:  [`NSCell`](nscell.md)-based outline views must first call [`beginUpdates()`](nstableview/beginupdates().md) before calling this method.
+> **Note**:  [`NSCell`](../nscell.md)-based outline views must first call [`beginUpdates()`](../nstableview/beginupdates%28%29.md) before calling this method.
 
-You can call this method multiple times within the same [`beginUpdates()`](nstableview/beginupdates().md)/[`endUpdates()`](nstableview/endupdates().md) block; new insertions move previously inserted new items, just like modifying an array. Inserting an index beyond what is available throws an exception.
+You can call this method multiple times within the same [`beginUpdates()`](../nstableview/beginupdates%28%29.md)/[`endUpdates()`](../nstableview/endupdates%28%29.md) block; new insertions move previously inserted new items, just like modifying an array. Inserting an index beyond what is available throws an exception.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ You can call this method multiple times within the same [`beginUpdates()`](nstab
 
 ## See Also
 
-- [func moveItem(at: Int, inParent: Any?, to: Int, inParent: Any?)](nsoutlineview/moveitem(at:inparent:to:inparent:).md)
+### Manipulating Items
+- [func moveItem(at: Int, inParent: Any?, to: Int, inParent: Any?)](./moveitem%28at,inparent,to,inparent%29.md)
   Moves an item at a given index in the given parent to a new index in a new parent.
-- [func removeItems(at: IndexSet, inParent: Any?, withAnimation: NSTableView.AnimationOptions)](nsoutlineview/removeitems(at:inparent:withanimation:).md)
+- [func removeItems(at: IndexSet, inParent: Any?, withAnimation: NSTableView.AnimationOptions)](./removeitems%28at,inparent,withanimation%29.md)
   Removes items at the given indexes in the given parent with the specified optional animations.
 
 

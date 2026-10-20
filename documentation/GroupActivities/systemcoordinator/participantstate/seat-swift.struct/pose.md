@@ -1,7 +1,8 @@
 # pose
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position and rotation of the seat.
 

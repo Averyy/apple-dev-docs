@@ -1,7 +1,8 @@
 # linear
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An animation that moves at a constant speed.
 
@@ -51,11 +52,14 @@ struct ContentView: View {
 }
 ```
 
-The `linear` animation has a default duration of 0.35 seconds. To specify a different duration, use [`linear(duration:)`](animation/linear(duration:).md).
+[Video: A video that shows a circle moving from the leading edge of the view to the trailing edge. The color of the circle also changes from red to blue as it moves across the view. Then the circle moves from the trailing edge back to the leading edge while also changing colors from blue to red.](https://developer.apple.com/tutorials/videos/com.apple.SwiftUI/animation-06-linear.mp4)
+
+The `linear` animation has a default duration of 0.35 seconds. To specify a different duration, use [`linear(duration:)`](./linear%28duration%29.md).
 
 ## See Also
 
-- [static func linear(duration: TimeInterval) -> Animation](animation/linear(duration:).md)
+### Getting linear animations
+- [static func linear(duration: TimeInterval) -> Animation](./linear%28duration%29.md)
   An animation that moves at a constant speed during a specified duration.
 
 

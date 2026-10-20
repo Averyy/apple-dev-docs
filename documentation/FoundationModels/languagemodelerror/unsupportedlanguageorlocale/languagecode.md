@@ -1,7 +1,8 @@
 # languageCode
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language code that the model doesn’t support.
 
@@ -21,9 +22,10 @@ var languageCode: Locale.LanguageCode
 
 ## See Also
 
-- [var metadata: [String : any Sendable]](languagemodelerror/unsupportedlanguageorlocale/metadata.md)
+### Inspecting unsupported language or locale errors
+- [var metadata: [String : any Sendable]](./metadata.md)
   Additional information about the failure, keyed by name.
-- [var debugDescription: String](languagemodelerror/unsupportedlanguageorlocale/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A debug description to help developers diagnose issues during development.
 
 

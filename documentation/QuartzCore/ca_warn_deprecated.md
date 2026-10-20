@@ -1,21 +1,26 @@
 # CA_WARN_DEPRECATED
 
 **Framework**: Core Animation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var CA_WARN_DEPRECATED: Int32 { get }
+```
+
+```c
+#define CA_WARN_DEPRECATED
 ```
 
 

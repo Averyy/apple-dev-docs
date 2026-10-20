@@ -1,7 +1,8 @@
 # PlaneAnchor
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An anchor that represents horizontal and vertical planes.
 
@@ -17,51 +18,52 @@ struct PlaneAnchor
 ## Topics
 
 ### Inspecting a plane anchor
-- [var originFromAnchorTransform: simd_float4x4](planeanchor/originfromanchortransform.md)
+- [var originFromAnchorTransform: simd_float4x4](./planeanchor/originfromanchortransform.md)
   The location and orientation of a plane in world space.
-- [var alignment: PlaneAnchor.Alignment](planeanchor/alignment-swift.property.md)
+- [var alignment: PlaneAnchor.Alignment](./planeanchor/alignment-swift.property.md)
   The general orientation of the detected plane with respect to gravity.
-- [PlaneAnchor.Alignment](planeanchor/alignment-swift.enum.md)
+- [PlaneAnchor.Alignment](./planeanchor/alignment-swift.enum.md)
   Values describing possible general orientations of a detected plane with respect to gravity.
-- [var classification: PlaneAnchor.Classification](planeanchor/classification-swift.property.md)
+- [var classification: PlaneAnchor.Classification](./planeanchor/classification-swift.property.md)
   Get the classification of this plane.
-- [PlaneAnchor.Classification](planeanchor/classification-swift.enum.md)
+- [PlaneAnchor.Classification](./planeanchor/classification-swift.enum.md)
   The kinds of object classification a plane anchor can have.
-- [var description: String](planeanchor/description.md)
+- [var description: String](./planeanchor/description.md)
   A textual representation of this anchor.
 ### Getting the shape of a plane anchor
-- [var geometry: PlaneAnchor.Geometry](planeanchor/geometry-swift.property.md)
+- [var geometry: PlaneAnchor.Geometry](./planeanchor/geometry-swift.property.md)
   Get the geometry of the plane in the anchor’s coordinate system.
-- [PlaneAnchor.Geometry](planeanchor/geometry-swift.struct.md)
+- [PlaneAnchor.Geometry](./planeanchor/geometry-swift.struct.md)
   The geometry of a plane anchor.
 ### Identifying a plane anchor
-- [var id: UUID](planeanchor/id.md)
+- [var id: UUID](./planeanchor/id.md)
   The unique identifier of this anchor.
 ### Instance Properties
-- [var surfaceClassification: SurfaceClassification](planeanchor/surfaceclassification.md)
+- [var surfaceClassification: SurfaceClassification](./planeanchor/surfaceclassification.md)
   Get the surface classification of this plane.
 ### Default Implementations
-- [ARKitCoordinateSpaceProviding Implementations](planeanchor/arkitcoordinatespaceproviding-implementations.md)
-- [Equatable Implementations](planeanchor/equatable-implementations.md)
+- [ARKitCoordinateSpaceProviding Implementations](./planeanchor/arkitcoordinatespaceproviding-implementations.md)
+- [Equatable Implementations](./planeanchor/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
-- [Anchor](anchor.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ARKitCoordinateSpaceProviding](./arkitcoordinatespaceproviding.md)
+- [Anchor](./anchor.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Placing content on detected planes](../visionos/placing-content-on-detected-planes.md)
+### Plane detection
+- [Placing content on detected planes](../visionOS/placing-content-on-detected-planes.md)
   Detect horizontal surfaces like tables and floors, as well as vertical planes like walls and doors.
-- [class PlaneDetectionProvider](planedetectionprovider.md)
+- [class PlaneDetectionProvider](./planedetectionprovider.md)
   A source of live data about planes in a person’s surroundings.
 
 

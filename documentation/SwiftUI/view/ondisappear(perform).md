@@ -1,7 +1,8 @@
 # onDisappear(perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform after this view disappears.
 
@@ -35,7 +36,8 @@ The exact moment that SwiftUI calls this method depends on the specific view typ
 
 ## See Also
 
-- [func onAppear(perform: (() -> Void)?) -> some View](view/onappear(perform:).md)
+### Responding to view life cycle updates
+- [func onAppear(perform: (() -> Void)?) -> some View](./onappear%28perform%29.md)
   Adds an action to perform before this view appears.
 
 

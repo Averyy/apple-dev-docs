@@ -1,14 +1,15 @@
 # task_throughput_qos_tier
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 task_throughput_qos_t task_throughput_qos_tier;
 ```
 

@@ -1,7 +1,8 @@
 # kIOServiceNotificationTypeTerminated
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kIOServiceNotificationTypeTerminated = 0x00000000
 ```
 

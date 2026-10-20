@@ -1,25 +1,26 @@
 # CFSocket Name Server Keys
 
-**Framework**: Core Foundation
+**Framework**: Core Foundation  
+**Role**: API Collection
 
 Not used.
 
 ## Topics
 
 ### Constants
-- [let kCFSocketCommandKey: CFString!](kcfsocketcommandkey.md)
+- [let kCFSocketCommandKey: CFString!](./kcfsocketcommandkey.md)
   Not used.
-- [let kCFSocketNameKey: CFString!](kcfsocketnamekey.md)
+- [let kCFSocketNameKey: CFString!](./kcfsocketnamekey.md)
   Not used.
-- [let kCFSocketValueKey: CFString!](kcfsocketvaluekey.md)
+- [let kCFSocketValueKey: CFString!](./kcfsocketvaluekey.md)
   Not used.
-- [let kCFSocketResultKey: CFString!](kcfsocketresultkey.md)
+- [let kCFSocketResultKey: CFString!](./kcfsocketresultkey.md)
   Not used.
-- [let kCFSocketErrorKey: CFString!](kcfsocketerrorkey.md)
+- [let kCFSocketErrorKey: CFString!](./kcfsocketerrorkey.md)
   Not used.
-- [let kCFSocketRegisterCommand: CFString!](kcfsocketregistercommand.md)
+- [let kCFSocketRegisterCommand: CFString!](./kcfsocketregistercommand.md)
   Not used.
-- [let kCFSocketRetrieveCommand: CFString!](kcfsocketretrievecommand.md)
+- [let kCFSocketRetrieveCommand: CFString!](./kcfsocketretrievecommand.md)
   Not used.
 
 

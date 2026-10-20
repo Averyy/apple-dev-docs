@@ -1,7 +1,8 @@
 # all
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A set containing the top and bottom vertical edges.
 
@@ -22,9 +23,10 @@ static let all: VerticalEdge.Set
 
 ## See Also
 
-- [static let top: VerticalEdge.Set](verticaledge/set/top.md)
+### Getting edge sets
+- [static let top: VerticalEdge.Set](./top.md)
   A set containing only the top vertical edge.
-- [static let bottom: VerticalEdge.Set](verticaledge/set/bottom.md)
+- [static let bottom: VerticalEdge.Set](./bottom.md)
   A set containing only the bottom vertical edge.
 
 

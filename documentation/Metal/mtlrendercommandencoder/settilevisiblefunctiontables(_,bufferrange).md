@@ -1,7 +1,8 @@
 # setTileVisibleFunctionTables(_:bufferRange:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assigns multiple visible function tables to a range of entries in the tile shader argument table.
 
@@ -11,7 +12,7 @@ Assigns multiple visible function tables to a range of entries in the tile shade
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,16 +24,17 @@ func setTileVisibleFunctionTables(_ functionTables: [(any MTLVisibleFunctionTabl
 
 By default, the visible function table at each index is `nil`.
 
-> **Note**:  The Objective-C version of this method is [`setTileVisibleFunctionTables:withBufferRange:`](mtlrendercommandencoder/settilevisiblefunctiontables:withbufferrange:.md).
+> **Note**:  The Objective-C version of this method is [`setTileVisibleFunctionTables:withBufferRange:`](./settilevisiblefunctiontables_withbufferrange_.md).
 
 ## Parameters
 
-- `functionTables`: An array of [`MTLVisibleFunctionTable`](mtlvisiblefunctiontable.md) instances the command assigns to entries in the tile shader argument table for visible function tables.
+- `functionTables`: An array of [`MTLVisibleFunctionTable`](../mtlvisiblefunctiontable.md) instances the command assigns to entries in the tile shader argument table for visible function tables.
 - `bufferRange`: A span of integers that represent the entries in the tile shader argument table for visible function tables. Each entry stores a record of the corresponding element in `functionTables`.
 
 ## See Also
 
-- [func setTileVisibleFunctionTable((any MTLVisibleFunctionTable)?, bufferIndex: Int)](mtlrendercommandencoder/settilevisiblefunctiontable(_:bufferindex:).md)
+### Assigning visible function tables
+- [func setTileVisibleFunctionTable((any MTLVisibleFunctionTable)?, bufferIndex: Int)](./settilevisiblefunctiontable%28_,bufferindex%29.md)
   Assigns a visible function table to an entry in the tile shader argument table.
 
 

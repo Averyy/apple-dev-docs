@@ -1,7 +1,8 @@
 # kSecOIDSRVName
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.8+
@@ -10,6 +11,10 @@
 
 ```swift
 let kSecOIDSRVName: CFString
+```
+
+```c
+extern CFStringRef const kSecOIDSRVName;
 ```
 
 

@@ -1,7 +1,8 @@
 # notificationUUID
 
 **Framework**: App Store Server Notifications  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A unique identifier for the notification.
 
@@ -10,7 +11,7 @@ A unique identifier for the notification.
 
 ## Declaration
 
-```swift
+```
 string notificationUUID
 ```
 
@@ -20,13 +21,14 @@ The App Store server assigns a unique identifier to each notification it sends. 
 
 ## See Also
 
-- [type notificationType](notificationtype.md)
+### Response types
+- [type notificationType](./notificationtype.md)
   The type that describes the In-App Purchase or external purchase event for which the App Store sends the version 2 notification.
-- [type subtype](subtype.md)
+- [type subtype](./subtype.md)
   A string that provides details about select notification types in version 2.
-- [type version](version.md)
+- [type version](./version.md)
   A string that indicates the notification’s App Store Server Notifications version number.
-- [type signedDate](signeddate.md)
+- [type signedDate](./signeddate.md)
   The UNIX time, in milliseconds, that the App Store signed the JSON Web Signature data.
 
 

@@ -1,7 +1,8 @@
 # category
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The category to which the accessory belongs.
 
@@ -19,13 +20,18 @@ The category to which the accessory belongs.
 var category: HMAccessoryCategory { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) HMAccessoryCategory * category;
+```
+
 #### Discussion
 
-The accessory’s [`category`](hmaccessory/category.md) property contains an instance of the [`HMAccessoryCategory`](hmaccessorycategory.md) class that indicates the kind of accessory, like light bulb, garage door opener, or faucet. Use this information to help users distinguish among different accessories in their environment.
+The accessory’s [`category`](./category.md) property contains an instance of the [`HMAccessoryCategory`](../hmaccessorycategory.md) class that indicates the kind of accessory, like light bulb, garage door opener, or faucet. Use this information to help users distinguish among different accessories in their environment.
 
 ## See Also
 
-- [class HMAccessoryCategory](hmaccessorycategory.md)
+### Categorizing an accessory
+- [class HMAccessoryCategory](../hmaccessorycategory.md)
   A category for a HomeKit accessory.
 
 

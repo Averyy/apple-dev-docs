@@ -1,7 +1,8 @@
 # CategoricalImputer.Strategy.constant(_:)
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Imputation strategy that replaces missing elements with a constant.
 
@@ -22,7 +23,8 @@ case constant(Element)
 
 ## See Also
 
-- [CategoricalImputer.Strategy.mode](categoricalimputer/strategy-swift.enum/mode.md)
+### Imputer strategies
+- [CategoricalImputer.Strategy.mode](./mode.md)
   Imputation strategy that replaces missing elements with the mode.
 
 

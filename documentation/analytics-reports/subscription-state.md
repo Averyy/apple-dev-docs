@@ -1,6 +1,7 @@
 # App Store Subscription State
 
-**Framework**: Analytics Reports
+**Framework**: Analytics Reports  
+**Role**: Article
 
 Analyze your App Store subscription performance.
 
@@ -10,12 +11,14 @@ The Subscription State report includes the count of active and churned subscript
 
 - Territories: Worldwide
 - Platforms: iOS, iPadOS, macOS, tvOS, visionOS, watchOS
-- Availability: - Daily: Every day
+- Availability:
+
+  - Daily: Every day
 - Completeness: Within 3 days.
 - History: On request, data is available beginning from January 1, 2025.
-- Privacy: Data is available in two reports: standard and detailed. Standard reports include fields not easily related to uniquely identifiable user data. Detailed reports include all fields and also include additional privacy measures for the data, to help protect uniquely identifiable information for individuals. Download the standard report unless you need to analyze the unique fields in the detailed report. To learn more, see [`Protecting user privacy in report data`](privacy.md).
+- Privacy: Data is available in two reports: standard and detailed. Standard reports include fields not easily related to uniquely identifiable user data. Detailed reports include all fields and also include additional privacy measures for the data, to help protect uniquely identifiable information for individuals. Download the standard report unless you need to analyze the unique fields in the detailed report. To learn more, see [Protecting user privacy in report data](./privacy.md).
 
-The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections. To learn more, see [`Data Completeness and Corrections`](data-completeness-corrections.md).
+The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections. To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
 #### Report Fields
 
@@ -30,7 +33,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Subscription Identifier | The unique identifier assigned to the subscription by Apple. | `integer` | ✔ | ✔ |
 | Subscription Duration | Standard duration of the subscription. | `string` | ✔ | ✔ |
 | Billing Frequency | The frequency at which a user is charged for their subscription. | `string` | ✔ | ✔ |
-| Billing Period | The current installment period within a 12-month commitment, ranging from the 1st through the 12th period. This dimension applies exclusively to [`Monthly Subscriptions with a 12-Month Commitment`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-availability-for-an-auto-renewable-subscription). | `string` | ✔ | ✔ |
+| Billing Period | The current installment period within a 12-month commitment, ranging from the 1st through the 12th period. This dimension applies exclusively to [Monthly Subscriptions with a 12-Month Commitment](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-availability-for-an-auto-renewable-subscription). | `string` | ✔ | ✔ |
 | Subscription Group | The group that the subscription belongs to. Subscription group name appears as provided by you during setup in App Store Connect. | `string` | ✔ | ✔ |
 | Subscription Group Identifier | The unique identifier assigned to the subscription group by Apple. | `integer` | ✔ | ✔ |
 | Offer Type | Type of subscription offer the user has redeemed. | `string` | ✔ | ✔ |
@@ -78,11 +81,11 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Cancel Reason | Unavailable | The cancelation reason is not available. |
 | Source Type | App Store search | Users who discovered your app within search results on the App Store. Includes Search Ads results. Doesn’t include the Suggested section of the search landing page. |
 | Source Type | App Store browse | Users who viewed your app or tapped to download it while browsing the App Store (for example, in the Today, Games, or Apps tabs, and results in the Suggested section of the search landing page). |
-| Source Type | App referrer | Users who discovered your app from within another app. Includes downloads of your app from within a [`store sheet`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/skstoreproductviewcontroller). |
+| Source Type | App referrer | Users who discovered your app from within another app. Includes downloads of your app from within a [store sheet](../StoreKit/skstoreproductviewcontroller.md). |
 | Source Type | Web referrer | Users who tapped a link from a website that brought them to your App Store product page. If a chain of redirects in Safari leads to your App Store product page, the referring website will be the last URL in the chain. For iOS apps, taps from websites in non-Safari web browsers, such as Chrome, are attributed as that web browser app in App Referrers. For macOS apps, taps from non-Safari web browsers are attributed to Web Referrers. |
 | Source Type | App Clip | Users who discovered your app from within an App Clip. |
 | Source Type | Unavailable | The source from which the user downloaded your app is unavailable. |
-| Source Type | Institutional purchase | The user who downloaded your app from [`Apple Business Manager`](https://developer.apple.comhttps://support.apple.com/guide/apple-business-manager/welcome/web) or [`Apple School Manager`](https://developer.apple.comhttps://support.apple.com/guide/apple-school-manager/welcome/web). |
+| Source Type | Institutional purchase | The user who downloaded your app from [Apple Business Manager](https://support.apple.com/guide/apple-business-manager/welcome/web) or [Apple School Manager](https://support.apple.com/guide/apple-school-manager/welcome/web). |
 | Page Type | Product page | Users who downloaded your app from your app’s product page. |
 | Page Type | In-App event | Users who downloaded your app from an in-app event page. |
 | Page Type | Store sheet | Users who downloaded your app from a store sheet in the App Store. |
@@ -90,13 +93,14 @@ The Analytics Reports framework delivers new portions of report content as insta
 
 ## See Also
 
-- [App Store Downloads](app-download.md)
+### App Store Commerce
+- [App Store Downloads](./app-download.md)
   Analyze how many times people download your app on the App Store.
-- [App Store Pre-orders](app-store-pre-order.md)
+- [App Store Pre-orders](./app-store-pre-order.md)
   Analyze details on the number of pre-orders that people place and cancel for your app on the App Store.
-- [App Store Purchases](app-store-purchase.md)
+- [App Store Purchases](./app-store-purchase.md)
   Analyze total revenue generated by your apps on the App Store.
-- [App Store Subscription Event](subscription-event.md)
+- [App Store Subscription Event](./subscription-event.md)
   Analyze and track changes throughout your users’ subscription lifecycle.
 
 

@@ -1,7 +1,8 @@
 # Read subscription image information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the metadata for a subscription image configured with the v2 API, including the asset upload state.
 
@@ -10,7 +11,7 @@ Get the metadata for a subscription image configured with the v2 API, including 
 
 ## Mentions
 
-- [Working with subscription versions](working-with-subscription-versions.md)
+- [Working with subscription versions](./working-with-subscription-versions.md)
 
 ## Endpoint
 
@@ -18,15 +19,31 @@ Get the metadata for a subscription image configured with the v2 API, including 
 
 ## Parameters
 
-- `fields[subscriptionImages]` ([string])
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `fields[subscriptionImages]` ([string]): **Allowed Values**: `fileSize`, `fileName`, `assetToken`, `imageAsset`, `uploadOperations`, `assetDeliveryState`
+
+## Responses
+
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `200` OK (`SubscriptionImageV2Response`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create a subscription image](post-v2-subscriptionimages.md)
+### Endpoints
+- [Create a subscription image](./post-v2-subscriptionimages.md)
   Reserve a promotion image for an auto-renewable subscription configured with the v2 API and prepare its asset upload.
-- [Modify a subscription image](patch-v2-subscriptionimages-_id_.md)
+- [Modify a subscription image](./patch-v2-subscriptionimages-_id_.md)
   Commit the asset upload for a subscription image configured with the v2 API.
-- [Delete a subscription image](delete-v2-subscriptionimages-_id_.md)
+- [Delete a subscription image](./delete-v2-subscriptionimages-_id_.md)
   Delete a subscription image configured with the v2 API.
 
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct dyld_chained_ptr_64_bind {
     ...
 };
@@ -17,11 +17,11 @@ struct dyld_chained_ptr_64_bind {
 ## Topics
 
 ### Instance Properties
-- [addend](dyld_chained_ptr_64_bind/3553619-addend.md)
-- [bind](dyld_chained_ptr_64_bind/3553620-bind.md)
-- [next](dyld_chained_ptr_64_bind/3553621-next.md)
-- [ordinal](dyld_chained_ptr_64_bind/3553622-ordinal.md)
-- [reserved](dyld_chained_ptr_64_bind/3553623-reserved.md)
+- [addend](./dyld_chained_ptr_64_bind/api-3553619-addend.md)
+- [bind](./dyld_chained_ptr_64_bind/api-3553620-bind.md)
+- [next](./dyld_chained_ptr_64_bind/api-3553621-next.md)
+- [ordinal](./dyld_chained_ptr_64_bind/api-3553622-ordinal.md)
+- [reserved](./dyld_chained_ptr_64_bind/api-3553623-reserved.md)
 
 
 ---

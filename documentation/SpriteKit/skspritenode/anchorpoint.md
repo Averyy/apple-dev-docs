@@ -1,18 +1,19 @@
 # anchorPoint
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the point in the sprite that corresponds to the node’s position.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,10 +21,14 @@ Defines the point in the sprite that corresponds to the node’s position.
 var anchorPoint: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic) CGPoint anchorPoint;
+```
+
 ## Mentions
 
-- [Animating a Sprite by Changing its Texture](animating-a-sprite-by-changing-its-texture.md)
-- [Using the Anchor Point to Move a Sprite](using-the-anchor-point-to-move-a-sprite.md)
+- [Animating a Sprite by Changing its Texture](../animating-a-sprite-by-changing-its-texture.md)
+- [Using the Anchor Point to Move a Sprite](../using-the-anchor-point-to-move-a-sprite.md)
 
 #### Discussion
 
@@ -31,11 +36,12 @@ You specify the value for this property in the unit coordinate space. The defaul
 
 ## See Also
 
-- [Using the Anchor Point to Move a Sprite](using-the-anchor-point-to-move-a-sprite.md)
+### Setting a Sprite’s Size and Position
+- [Using the Anchor Point to Move a Sprite](../using-the-anchor-point-to-move-a-sprite.md)
   Learn how the anchor point affects a sprite’s position.
-- [var size: CGSize](skspritenode/size.md)
+- [var size: CGSize](./size.md)
   The dimensions of the sprite, in points.
-- [func scale(to: CGSize)](skspritenode/scale(to:).md)
+- [func scale(to: CGSize)](./scale%28to%29.md)
   Scales the sprite node to a specified size.
 
 

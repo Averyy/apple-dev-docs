@@ -1,7 +1,8 @@
 # .!=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Pointwise compare not equal to.
 
@@ -19,6 +20,8 @@ Pointwise compare not equal to.
 ```swift
 static func .!= (a: SIMD3<Scalar>, b: SIMD3<Scalar>) -> SIMDMask<SIMD3<Scalar>.MaskStorage>
 ```
+
+Available when `Scalar` is `Double`.
 
 #### Discussion
 

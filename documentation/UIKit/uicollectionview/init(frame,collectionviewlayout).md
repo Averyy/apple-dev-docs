@@ -1,7 +1,8 @@
 # init(frame:collectionViewLayout:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a collection view object with the specified frame and layout.
 
@@ -9,13 +10,17 @@ Creates a collection view object with the specified frame and layout.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout)
+```
+
+```objc
+- (instancetype) initWithFrame:(CGRect) frame collectionViewLayout:(UICollectionViewLayout *) layout;
 ```
 
 #### Return Value
@@ -35,7 +40,8 @@ This method is the designated initializer.
 
 ## See Also
 
-- [init?(coder: NSCoder)](uicollectionview/init(coder:).md)
+### Creating a collection view
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a collection view object from data in a given unarchiver.
 
 

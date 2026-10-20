@@ -1,7 +1,8 @@
 # deviceTypes
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var deviceTypes: [MTRDeviceTypeRevision] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<MTRDeviceTypeRevision *> * deviceTypes;
 ```
 
 

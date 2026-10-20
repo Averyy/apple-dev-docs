@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The point’s identifier label.
 
@@ -17,6 +18,10 @@ The point’s identifier label.
 
 ```swift
 var identifier: VNRecognizedPointKey { get }
+```
+
+```objc
+@property (copy, readonly) VNRecognizedPointKey identifier;
 ```
 
 

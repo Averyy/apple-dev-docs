@@ -1,7 +1,8 @@
 # browser
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for types you use for web browsing functionality.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for types you use for web browsing functionality.
 ```swift
 static var browser: some AssistantSchemas.BrowserEnum { get }
 ```
+
+Available when `Self` is `AssistantSchemas.EnumSchema`.
 
 
 ---

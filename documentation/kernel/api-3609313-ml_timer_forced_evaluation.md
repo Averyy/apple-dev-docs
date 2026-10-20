@@ -1,14 +1,15 @@
 # ml_timer_forced_evaluation
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 boolean_t ml_timer_forced_evaluation(void);
 ```
 

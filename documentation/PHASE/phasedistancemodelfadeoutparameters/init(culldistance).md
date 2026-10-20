@@ -1,7 +1,8 @@
 # init(cullDistance:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a distance beyond which sound sources stop playing.
 
@@ -17,6 +18,10 @@ Creates a distance beyond which sound sources stop playing.
 
 ```swift
 init(cullDistance: Double)
+```
+
+```objc
+- (instancetype) initWithCullDistance:(double) cullDistance;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # MTLDynamicLibraryError.Code
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes that Metal can generate when creating dynamic libraries.
 
@@ -19,59 +20,64 @@ Error codes that Metal can generate when creating dynamic libraries.
 enum Code
 ```
 
+```c
+enum MTLDynamicLibraryError : NSUInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [MTLDynamicLibraryError.Code.none](mtldynamiclibraryerror-swift.struct/code/none.md)
+- [MTLDynamicLibraryError.Code.none](./code/none.md)
   An error code that represents the absence of any problems.
-- [MTLDynamicLibraryError.Code.invalidFile](mtldynamiclibraryerror-swift.struct/code/invalidfile.md)
+- [MTLDynamicLibraryError.Code.invalidFile](./code/invalidfile.md)
   An error code that indicates an app is using an invalid reference to a library file, typically related to a URL.
-- [MTLDynamicLibraryError.Code.compilationFailure](mtldynamiclibraryerror-swift.struct/code/compilationfailure.md)
+- [MTLDynamicLibraryError.Code.compilationFailure](./code/compilationfailure.md)
   An error code that indicates Metal couldn’t compile a dynamic library.
-- [MTLDynamicLibraryError.Code.unresolvedInstallName](mtldynamiclibraryerror-swift.struct/code/unresolvedinstallname.md)
+- [MTLDynamicLibraryError.Code.unresolvedInstallName](./code/unresolvedinstallname.md)
   An error code that indicates Metal couldn’t resolve the installation name for a new dynamic library.
-- [MTLDynamicLibraryError.Code.dependencyLoadFailure](mtldynamiclibraryerror-swift.struct/code/dependencyloadfailure.md)
+- [MTLDynamicLibraryError.Code.dependencyLoadFailure](./code/dependencyloadfailure.md)
   An error code that indicates a dynamic library couldn’t link to other dynamic libraries.
-- [MTLDynamicLibraryError.Code.unsupported](mtldynamiclibraryerror-swift.struct/code/unsupported.md)
+- [MTLDynamicLibraryError.Code.unsupported](./code/unsupported.md)
   An error code that indicates the GPU device doesn’t support dynamic libraries.
-- [MTLDynamicLibraryError.Code.none](mtldynamiclibraryerror-swift.struct/code/none.md)
+- [MTLDynamicLibraryError.Code.none](./code/none.md)
   An error code that represents the absence of any problems.
-- [MTLDynamicLibraryError.Code.invalidFile](mtldynamiclibraryerror-swift.struct/code/invalidfile.md)
+- [MTLDynamicLibraryError.Code.invalidFile](./code/invalidfile.md)
   An error code that indicates an app is using an invalid reference to a library file, typically related to a URL.
-- [MTLDynamicLibraryError.Code.compilationFailure](mtldynamiclibraryerror-swift.struct/code/compilationfailure.md)
+- [MTLDynamicLibraryError.Code.compilationFailure](./code/compilationfailure.md)
   An error code that indicates Metal couldn’t compile a dynamic library.
-- [MTLDynamicLibraryError.Code.unresolvedInstallName](mtldynamiclibraryerror-swift.struct/code/unresolvedinstallname.md)
+- [MTLDynamicLibraryError.Code.unresolvedInstallName](./code/unresolvedinstallname.md)
   An error code that indicates Metal couldn’t resolve the installation name for a new dynamic library.
-- [MTLDynamicLibraryError.Code.dependencyLoadFailure](mtldynamiclibraryerror-swift.struct/code/dependencyloadfailure.md)
+- [MTLDynamicLibraryError.Code.dependencyLoadFailure](./code/dependencyloadfailure.md)
   An error code that indicates a dynamic library couldn’t link to other dynamic libraries.
-- [MTLDynamicLibraryError.Code.unsupported](mtldynamiclibraryerror-swift.struct/code/unsupported.md)
+- [MTLDynamicLibraryError.Code.unsupported](./code/unsupported.md)
   An error code that indicates the GPU device doesn’t support dynamic libraries.
 ### Initializers
-- [init?(rawValue: UInt)](mtldynamiclibraryerror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var none: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/none.md)
+### Error codes
+- [static var none: MTLDynamicLibraryError.Code](./none.md)
   An error code that represents the absence of any problems.
-- [static var invalidFile: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/invalidfile.md)
+- [static var invalidFile: MTLDynamicLibraryError.Code](./invalidfile.md)
   An error code that indicates an app is using an invalid reference to a library file, typically related to a URL.
-- [static var compilationFailure: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/compilationfailure.md)
+- [static var compilationFailure: MTLDynamicLibraryError.Code](./compilationfailure.md)
   An error code that indicates Metal couldn’t compile a dynamic library.
-- [static var unresolvedInstallName: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/unresolvedinstallname.md)
+- [static var unresolvedInstallName: MTLDynamicLibraryError.Code](./unresolvedinstallname.md)
   An error code that indicates Metal couldn’t resolve the installation name for a new dynamic library.
-- [static var dependencyLoadFailure: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/dependencyloadfailure.md)
+- [static var dependencyLoadFailure: MTLDynamicLibraryError.Code](./dependencyloadfailure.md)
   An error code that indicates a dynamic library couldn’t link to other dynamic libraries.
-- [static var unsupported: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/unsupported.md)
+- [static var unsupported: MTLDynamicLibraryError.Code](./unsupported.md)
   An error code that indicates the GPU device doesn’t support dynamic libraries.
 
 

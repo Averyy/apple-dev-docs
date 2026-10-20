@@ -1,7 +1,8 @@
 # ScmPullRequestResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that read a single SCM pull request linked to Xcode Cloud.
 
@@ -10,7 +11,7 @@ The response body for endpoints that read a single SCM pull request linked to Xc
 
 ## Declaration
 
-```swift
+```
 object ScmPullRequestResponse
 ```
 
@@ -22,9 +23,10 @@ object ScmPullRequestResponse
 
 ## See Also
 
-- [object ScmPullRequest](scmpullrequest.md)
+### Objects
+- [object ScmPullRequest](./scmpullrequest.md)
   A pull request in a source code repository connected to Xcode Cloud, which can automatically trigger workflow builds.
-- [object ScmPullRequestsResponse](scmpullrequestsresponse.md)
+- [object ScmPullRequestsResponse](./scmpullrequestsresponse.md)
   The response body for endpoints that list SCM pull requests linked to Xcode Cloud.
 
 

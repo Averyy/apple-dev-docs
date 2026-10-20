@@ -1,7 +1,8 @@
 # automaticallyPlaysDefaultAnimation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether to automatically play the default animation when the entity is added to a scene and enabled. Default value is false, meaning the default animation will not be automatically played by default. This value can only be set when initializing `AnimationLibraryComponent`
 
@@ -26,11 +27,11 @@ var automaticallyPlaysDefaultAnimation: Bool { get }
 
 #### Discussion
 
-When set to `true`, the animation system automatically plays the default animation when the entity is added to a scene and enabled. The animation that auto-plays is determined by [`defaultKey`](animationlibrarycomponent/defaultkey.md). If `defaultKey` is set, the system plays the animation stored under that key. If `defaultKey` is not set, the system plays the first animation in the library. If the library contains no animations, auto-play has no effect.
+When set to `true`, the animation system automatically plays the default animation when the entity is added to a scene and enabled. The animation that auto-plays is determined by [`defaultKey`](./defaultkey.md). If `defaultKey` is set, the system plays the animation stored under that key. If `defaultKey` is not set, the system plays the first animation in the library. If the library contains no animations, auto-play has no effect.
 
 This is useful for background objects with looping animations, idle character states, or any entity whose animation should start without requiring code.
 
-When set to `false`, animations require manual playback using [`playAnimation(_:transitionDuration:startsPaused:)`](entity/playanimation(_:transitionduration:startspaused:).md). Use manual playback when you need to control timing, pass custom parameters, or coordinate animation start with other game logic.
+When set to `false`, animations require manual playback using [`playAnimation(_:transitionDuration:startsPaused:)`](../entity/playanimation%28_,transitionduration,startspaused%29.md). Use manual playback when you need to control timing, pass custom parameters, or coordinate animation start with other game logic.
 
 Disabling the entity or removing the `AnimationLibraryComponent` will stop any auto-playing animation.
 
@@ -46,9 +47,10 @@ entity.components.set(library)
 
 ## See Also
 
-- [init(automaticallyPlaysDefaultAnimation: Bool)](animationlibrarycomponent/init(automaticallyplaysdefaultanimation:).md)
+### Configuring default playback
+- [init(automaticallyPlaysDefaultAnimation: Bool)](./init%28automaticallyplaysdefaultanimation%29.md)
   Creates an empty animation library.
-- [init(animations: [String : AnimationResource], automaticallyPlaysDefaultAnimation: Bool)](animationlibrarycomponent/init(animations:automaticallyplaysdefaultanimation:).md)
+- [init(animations: [String : AnimationResource], automaticallyPlaysDefaultAnimation: Bool)](./init%28animations,automaticallyplaysdefaultanimation%29.md)
   Creates an animation library from a dictionary that associates an animation’s data with its name.
 
 

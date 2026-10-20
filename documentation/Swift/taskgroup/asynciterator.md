@@ -1,7 +1,8 @@
 # TaskGroup.AsyncIterator
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of asynchronous iterator that produces elements of this asynchronous sequence.
 
@@ -20,11 +21,14 @@ The type of asynchronous iterator that produces elements of this asynchronous se
 typealias AsyncIterator = TaskGroup<ChildTaskResult>.Iterator
 ```
 
+Available when `ChildTaskResult` conforms to `Sendable`.
+
 ## See Also
 
-- [TaskGroup.Element](taskgroup/element.md)
+### Supporting Types
+- [TaskGroup.Element](./element.md)
   The type of element produced by this asynchronous sequence.
-- [TaskGroup.Iterator](taskgroup/iterator.md)
+- [TaskGroup.Iterator](./iterator.md)
   A type that provides an iteration interface over the results of tasks added to the group.
 
 

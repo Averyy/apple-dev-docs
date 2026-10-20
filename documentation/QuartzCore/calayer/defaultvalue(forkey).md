@@ -1,7 +1,8 @@
 # defaultValue(forKey:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Specifies the default value associated with the specified key.
 
@@ -19,13 +20,17 @@ Specifies the default value associated with the specified key.
 class func defaultValue(forKey key: String) -> Any?
 ```
 
+```objc
++ (id) defaultValueForKey:(NSString *) key;
+```
+
 #### Return Value
 
 The default value for the named property. Returns `nil` if no default value has been set.
 
 #### Discussion
 
-If you define custom properties for a layer but do not set a value, this method returns a suitable “zero” default value based on the expected value of the `key`. For example, if the value for `key` is a [`CGSize`](https://developer.apple.com/documentation/corefoundation/cgsize) struct, the method returns a size struct containing (0.0,0.0) wrapped in an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object. For a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) an empty rectangle is returned. For [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) and [`CATransform3D`](catransform3d.md), the appropriate identity matrix is returned.
+If you define custom properties for a layer but do not set a value, this method returns a suitable “zero” default value based on the expected value of the `key`. For example, if the value for `key` is a [`CGSize`](../../CoreFoundation/cgsize.md) struct, the method returns a size struct containing (0.0,0.0) wrapped in an [`NSValue`](../../Foundation/nsvalue.md) object. For a [`CGRect`](../../CoreFoundation/cgrect.md) an empty rectangle is returned. For [`CGAffineTransform`](../../CoreFoundation/cgaffinetransform.md) and [`CATransform3D`](../catransform3d.md), the appropriate identity matrix is returned.
 
 ##### Special Considerations
 
@@ -37,7 +42,8 @@ If `key` is not a known for property of the class, the result of the method is u
 
 ## See Also
 
-- [func shouldArchiveValue(forKey: String) -> Bool](calayer/shouldarchivevalue(forkey:).md)
+### Key-value coding extensions
+- [func shouldArchiveValue(forKey: String) -> Bool](./shouldarchivevalue%28forkey%29.md)
   Returns a Boolean indicating whether the value of the specified key should be archived.
 
 

@@ -1,7 +1,8 @@
 # ContactProviderError.cannotEnumerate
 
 **Framework**: ContactProvider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The extension is unable to enumerate.
 
@@ -17,7 +18,8 @@ case cannotEnumerate
 
 ## See Also
 
-- [ContactProviderError.enumerationTimeout](contactprovidererror/enumerationtimeout.md)
+### Enumeration errors
+- [ContactProviderError.enumerationTimeout](./enumerationtimeout.md)
   The extension enumeration timed out.
 
 

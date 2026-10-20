@@ -1,7 +1,8 @@
 # isASCII
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the static string represents only ASCII code units (or an ASCII scalar value).
 

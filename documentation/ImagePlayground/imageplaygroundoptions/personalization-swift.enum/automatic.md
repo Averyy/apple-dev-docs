@@ -1,7 +1,8 @@
 # ImagePlaygroundOptions.Personalization.automatic
 
 **Framework**: Image Playground  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to choose the most appropriate personalization behavior.
 
@@ -20,7 +21,7 @@ case automatic
 
 #### Discussion
 
-This value equals [`ImagePlaygroundOptions.Personalization.enabled`](imageplaygroundoptions/personalization-swift.enum/enabled.md) by default.
+This value equals [`ImagePlaygroundOptions.Personalization.enabled`](./enabled.md) by default.
 
 
 ---

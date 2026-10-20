@@ -1,7 +1,8 @@
 # inverseBindPoses
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Inverse bind-pose transformation matrix for each joint.
 

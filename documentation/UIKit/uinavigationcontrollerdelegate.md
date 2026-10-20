@@ -1,16 +1,17 @@
 # UINavigationControllerDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for an object that serves as a navigation controller’s delegate.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,38 +20,43 @@ The interface for an object that serves as a navigation controller’s delegate.
 protocol UINavigationControllerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UINavigationControllerDelegate <NSObject>
+```
+
 #### Overview
 
-Use a navigation controller delegate (a custom object that implements this protocol) to modify behavior when a view controller is pushed or popped from the navigation stack of a [`UINavigationController`](uinavigationcontroller.md) object.
+Use a navigation controller delegate (a custom object that implements this protocol) to modify behavior when a view controller is pushed or popped from the navigation stack of a [`UINavigationController`](./uinavigationcontroller.md) object.
 
 ## Topics
 
 ### Responding to a view controller being shown
-- [func navigationController(UINavigationController, willShow: UIViewController, animated: Bool)](uinavigationcontrollerdelegate/navigationcontroller(_:willshow:animated:).md)
+- [func navigationController(UINavigationController, willShow: UIViewController, animated: Bool)](./uinavigationcontrollerdelegate/navigationcontroller%28_,willshow,animated%29.md)
   Notifies the delegate before the navigation controller displays a view controller’s view and navigation item properties.
-- [func navigationController(UINavigationController, didShow: UIViewController, animated: Bool)](uinavigationcontrollerdelegate/navigationcontroller(_:didshow:animated:).md)
+- [func navigationController(UINavigationController, didShow: UIViewController, animated: Bool)](./uinavigationcontrollerdelegate/navigationcontroller%28_,didshow,animated%29.md)
   Notifies the delegate after the navigation controller displays a view controller’s view and navigation item properties.
 ### Supporting custom transition animations
-- [func navigationController(UINavigationController, animationControllerFor: UINavigationController.Operation, from: UIViewController, to: UIViewController) -> (any UIViewControllerAnimatedTransitioning)?](uinavigationcontrollerdelegate/navigationcontroller(_:animationcontrollerfor:from:to:).md)
+- [func navigationController(UINavigationController, animationControllerFor: UINavigationController.Operation, from: UIViewController, to: UIViewController) -> (any UIViewControllerAnimatedTransitioning)?](./uinavigationcontrollerdelegate/navigationcontroller%28_,animationcontrollerfor,from,to%29.md)
   Allows the delegate to return a noninteractive animator object for use during view controller transitions.
-- [func navigationController(UINavigationController, interactionControllerFor: any UIViewControllerAnimatedTransitioning) -> (any UIViewControllerInteractiveTransitioning)?](uinavigationcontrollerdelegate/navigationcontroller(_:interactioncontrollerfor:).md)
+- [func navigationController(UINavigationController, interactionControllerFor: any UIViewControllerAnimatedTransitioning) -> (any UIViewControllerInteractiveTransitioning)?](./uinavigationcontrollerdelegate/navigationcontroller%28_,interactioncontrollerfor%29.md)
   Allows the delegate to return an interactive animator object for use during view controller transitions.
-- [func navigationControllerPreferredInterfaceOrientationForPresentation(UINavigationController) -> UIInterfaceOrientation](uinavigationcontrollerdelegate/navigationcontrollerpreferredinterfaceorientationforpresentation(_:).md)
+- [func navigationControllerPreferredInterfaceOrientationForPresentation(UINavigationController) -> UIInterfaceOrientation](./uinavigationcontrollerdelegate/navigationcontrollerpreferredinterfaceorientationforpresentation%28_%29.md)
   Returns the preferred orientation for presentation of the navigation controller, as determined by the delegate.
-- [func navigationControllerSupportedInterfaceOrientations(UINavigationController) -> UIInterfaceOrientationMask](uinavigationcontrollerdelegate/navigationcontrollersupportedinterfaceorientations(_:).md)
+- [func navigationControllerSupportedInterfaceOrientations(UINavigationController) -> UIInterfaceOrientationMask](./uinavigationcontrollerdelegate/navigationcontrollersupportedinterfaceorientations%28_%29.md)
   Returns the complete set of supported interface orientations for the navigation controller, as determined by the delegate.
 ### Constants
-- [UINavigationController.Operation](uinavigationcontroller/operation.md)
+- [UINavigationController.Operation](./uinavigationcontroller/operation.md)
   Constants that define the type of navigation controller transitions that can occur.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any UINavigationControllerDelegate)?](uinavigationcontroller/delegate.md)
+### Customizing the navigation interface behavior
+- [var delegate: (any UINavigationControllerDelegate)?](./uinavigationcontroller/delegate.md)
   The delegate of the navigation controller object.
 
 

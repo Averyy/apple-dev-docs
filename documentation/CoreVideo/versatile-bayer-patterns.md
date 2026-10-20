@@ -1,19 +1,21 @@
 # Versatile bayer patterns
 
-**Framework**: Core Video
+**Framework**: Core Video  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var kCVVersatileBayer_BayerPattern_BGGR: Int](kcvversatilebayer_bayerpattern_bggr.md)
-- [var kCVVersatileBayer_BayerPattern_GBRG: Int](kcvversatilebayer_bayerpattern_gbrg.md)
-- [var kCVVersatileBayer_BayerPattern_GRBG: Int](kcvversatilebayer_bayerpattern_grbg.md)
-- [var kCVVersatileBayer_BayerPattern_RGGB: Int](kcvversatilebayer_bayerpattern_rggb.md)
+- [var kCVVersatileBayer_BayerPattern_BGGR: Int](./kcvversatilebayer_bayerpattern_bggr.md)
+- [var kCVVersatileBayer_BayerPattern_GBRG: Int](./kcvversatilebayer_bayerpattern_gbrg.md)
+- [var kCVVersatileBayer_BayerPattern_GRBG: Int](./kcvversatilebayer_bayerpattern_grbg.md)
+- [var kCVVersatileBayer_BayerPattern_RGGB: Int](./kcvversatilebayer_bayerpattern_rggb.md)
 
 ## See Also
 
-- [Lossless Pixel Formats](lossless-pixel-formats.md)
-- [Lossy Pixel Formats](lossy-pixel-formats.md)
+### Enumerations
+- [Lossless Pixel Formats](./lossless-pixel-formats.md)
+- [Lossy Pixel Formats](./lossy-pixel-formats.md)
 
 
 ---

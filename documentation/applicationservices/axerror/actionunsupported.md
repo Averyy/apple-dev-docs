@@ -1,7 +1,8 @@
 # AXError.actionUnsupported
 
 **Framework**: Application Services  
-**Kind**: enumelt
+**Kind**: enumelt  
+**Role**: Enumeration Case
 
 The referenced action is not supported. Alternatively, you can return the `eventNotHandledErr` error.
 
@@ -16,19 +17,20 @@ case actionUnsupported = -25206
 
 ## See Also
 
-- [AXError.illegalArgument](axerror/illegalargument.md)
+### Result Codes
+- [AXError.illegalArgument](./illegalargument.md)
   The value received in this event is an invalid value for this attribute. This also applies for invalid parameters in parameterized attributes.
-- [AXError.invalidUIElement](axerror/invaliduielement.md)
+- [AXError.invalidUIElement](./invaliduielement.md)
   The accessibility object received in this event is invalid.
-- [AXError.invalidUIElementObserver](axerror/invaliduielementobserver.md)
+- [AXError.invalidUIElementObserver](./invaliduielementobserver.md)
   The observer for the accessibility object received in this event is invalid.
-- [AXError.cannotComplete](axerror/cannotcomplete.md)
+- [AXError.cannotComplete](./cannotcomplete.md)
   A fundamental error has occurred, such as a failure to allocate memory during processing.
-- [AXError.attributeUnsupported](axerror/attributeunsupported.md)
+- [AXError.attributeUnsupported](./attributeunsupported.md)
   The referenced attribute is not supported. Alternatively, you can return the `eventNotHandledErr` error.
-- [AXError.apiDisabled](axerror/apidisabled.md)
+- [AXError.apiDisabled](./apidisabled.md)
   Assistive applications are not enabled in System Preferences.
-- [AXError.parameterizedAttributeUnsupported](axerror/parameterizedattributeunsupported.md)
+- [AXError.parameterizedAttributeUnsupported](./parameterizedattributeunsupported.md)
   The parameterized attribute is not supported. Alternatively, you can return the `eventNotHandledErr` error.
 
 

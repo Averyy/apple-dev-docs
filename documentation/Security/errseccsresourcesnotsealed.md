@@ -1,7 +1,8 @@
 # errSecCSResourcesNotSealed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Resources are not sealed by the signature.
 
@@ -13,6 +14,10 @@ Resources are not sealed by the signature.
 
 ```swift
 var errSecCSResourcesNotSealed: OSStatus { get }
+```
+
+```c
+errSecCSResourcesNotSealed
 ```
 
 

@@ -1,7 +1,8 @@
 # depthAttachmentPixelFormat
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format of the attachment that stores depth data.
 
@@ -10,7 +11,7 @@ The pixel format of the attachment that stores depth data.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,22 @@ The pixel format of the attachment that stores depth data.
 var depthAttachmentPixelFormat: MTLPixelFormat { get set }
 ```
 
+```objc
+@property (nonatomic) MTLPixelFormat depthAttachmentPixelFormat;
+```
+
 #### Discussion
 
 By default, the pixel format of the rendering pipeline state for each attachment is `MTLPixelFormatInvalid`.
 
 ## See Also
 
-- [func reset()](mtlrenderpipelinedescriptor/reset.md)
+### Specifying rendering pipeline state
+- [func reset()](./reset%28%29.md)
   Specifies the default rendering pipeline state values for the descriptor.
-- [var colorAttachments: MTLRenderPipelineColorAttachmentDescriptorArray](mtlrenderpipelinedescriptor/colorattachments.md)
+- [var colorAttachments: MTLRenderPipelineColorAttachmentDescriptorArray](./colorattachments.md)
   An array of attachments that store color data.
-- [var stencilAttachmentPixelFormat: MTLPixelFormat](mtlrenderpipelinedescriptor/stencilattachmentpixelformat.md)
+- [var stencilAttachmentPixelFormat: MTLPixelFormat](./stencilattachmentpixelformat.md)
   The pixel format of the attachment that stores stencil data.
 
 

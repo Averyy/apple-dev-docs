@@ -1,14 +1,15 @@
 # kHIDUsage_Dig_CapacitiveHeatMapProtocolVersion
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Dig_CapacitiveHeatMapProtocolVersion = 0x6B
 ```
 

@@ -12,39 +12,40 @@ The `strike` element creates a single, unbroken line that is displayed through t
 <text>Example of <strike>strike through</strike> text</text>
 ```
 
-##### Contained in
+##### Contained In
 
-- [`description`](description.md)
-- [`text`](text.md)
-- [`title`](title.md)
+- [description](./description.md)
+- [text](./text.md)
+- [title](./title.md)
 
 ## Topics
 
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [decorationLabel](decorationlabel.md)
+### Text Elements
+- [decorationLabel](./decorationlabel.md)
   Displays text that describes a displayed element.
-- [description](description.md)
+- [description](./description.md)
   Displays multiple lines of text.
-- [date](date.md)
+- [date](./date.md)
   Displays a date.
-- [monogram](monogram.md)
+- [monogram](./monogram.md)
   Displays information below a `monogramLockup` element.
-- [ordinal](ordinal.md)
+- [ordinal](./ordinal.md)
   Displays a number.
-- [subtitle](subtitle.md)
+- [subtitle](./subtitle.md)
   Displays text below the subtitle’s containing element.
-- [text](text.md)
+- [text](./text.md)
   Displays text on the screen.
-- [title](title.md)
+- [title](./title.md)
   Displays a short amount of text.
 
 

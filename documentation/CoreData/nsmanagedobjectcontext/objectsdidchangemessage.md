@@ -1,7 +1,8 @@
 # NSManagedObjectContext.ObjectsDidChangeMessage
 
 **Framework**: Core Data  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Posted when objects in a main queue context change (inserted, updated, deleted, refreshed, or invalidated).
 
@@ -27,25 +28,25 @@ Only use this message type for contexts with `NSMainQueueConcurrencyType`.
 ## Topics
 
 ### Instance Properties
-- [let context: NSManagedObjectContext](nsmanagedobjectcontext/objectsdidchangemessage/context.md)
-- [var deleted: Set<NSManagedObject>](nsmanagedobjectcontext/objectsdidchangemessage/deleted.md)
+- [let context: NSManagedObjectContext](./objectsdidchangemessage/context.md)
+- [var deleted: Set<NSManagedObject>](./objectsdidchangemessage/deleted.md)
   Objects that were deleted.
-- [var inserted: Set<NSManagedObject>](nsmanagedobjectcontext/objectsdidchangemessage/inserted.md)
+- [var inserted: Set<NSManagedObject>](./objectsdidchangemessage/inserted.md)
   Objects that were inserted.
-- [var invalidated: Set<NSManagedObject>](nsmanagedobjectcontext/objectsdidchangemessage/invalidated.md)
+- [var invalidated: Set<NSManagedObject>](./objectsdidchangemessage/invalidated.md)
   Objects that were invalidated.
-- [let invalidatedAll: Bool?](nsmanagedobjectcontext/objectsdidchangemessage/invalidatedall.md)
+- [let invalidatedAll: Bool?](./objectsdidchangemessage/invalidatedall.md)
   True if all objects in the context were invalidated.
-- [var refreshed: Set<NSManagedObject>](nsmanagedobjectcontext/objectsdidchangemessage/refreshed.md)
+- [var refreshed: Set<NSManagedObject>](./objectsdidchangemessage/refreshed.md)
   Objects that were refreshed.
-- [var updated: Set<NSManagedObject>](nsmanagedobjectcontext/objectsdidchangemessage/updated.md)
+- [var updated: Set<NSManagedObject>](./objectsdidchangemessage/updated.md)
   Objects that were updated.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

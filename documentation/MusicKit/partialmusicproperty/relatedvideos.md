@@ -1,7 +1,8 @@
 # relatedVideos
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the association property that returns a collection of related music videos for the album.
 
@@ -19,6 +20,8 @@ An identifier for the association property that returns a collection of related 
 ```swift
 static let relatedVideos: MusicRelationshipProperty<Album, MusicVideo>
 ```
+
+Available when `Root` is `Album`.
 
 
 ---

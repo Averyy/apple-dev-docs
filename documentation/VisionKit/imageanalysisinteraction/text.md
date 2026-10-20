@@ -1,7 +1,8 @@
 # text
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text contents of the current image analysis.
 
@@ -20,17 +21,18 @@ final var text: String { get }
 
 ## See Also
 
-- [var selectedText: String](imageanalysisinteraction/selectedtext.md)
+### Accessing text information
+- [var selectedText: String](./selectedtext.md)
   The current selected text.
-- [var selectedAttributedText: AttributedString](imageanalysisinteraction/selectedattributedtext.md)
+- [var selectedAttributedText: AttributedString](./selectedattributedtext.md)
   The current selected attributed text.
-- [func hasText(at: CGPoint) -> Bool](imageanalysisinteraction/hastext(at:).md)
+- [func hasText(at: CGPoint) -> Bool](./hastext%28at%29.md)
   Returns a Boolean value that indicates whether active text exists at the specified point.
-- [var hasActiveTextSelection: Bool](imageanalysisinteraction/hasactivetextselection.md)
+- [var hasActiveTextSelection: Bool](./hasactivetextselection.md)
   A Boolean value that indicates whether a person or the app has text selected within the image.
-- [func analysisHasText(at: CGPoint) -> Bool](imageanalysisinteraction/analysishastext(at:).md)
+- [func analysisHasText(at: CGPoint) -> Bool](./analysishastext%28at%29.md)
   Returns a Boolean value that indicates whether the analysis finds text at the specified point.
-- [func hasDataDetector(at: CGPoint) -> Bool](imageanalysisinteraction/hasdatadetector(at:).md)
+- [func hasDataDetector(at: CGPoint) -> Bool](./hasdatadetector%28at%29.md)
   Returns a Boolean value that indicates whether the analysis detects data at the specified point.
 
 

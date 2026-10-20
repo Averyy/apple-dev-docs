@@ -1,7 +1,8 @@
 # result
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value the request returns after it executes.
 
@@ -20,9 +21,13 @@ The value the request returns after it executes.
 var result: Any? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) id result;
+```
+
 #### Discussion
 
-Use [`resultType`](nsbatchdeleteresult/resulttype.md) to determine the kind of value this property contains, and then cast to the appropriate type as the following example shows:
+Use [`resultType`](./resulttype.md) to determine the kind of value this property contains, and then cast to the appropriate type as the following example shows:
 
 ```swift
 // resultType is .resultTypeCount.
@@ -38,9 +43,10 @@ guard let status = batchDeleteResult.result as? Bool else { return }
 
 ## See Also
 
-- [var resultType: NSBatchDeleteRequestResultType](nsbatchdeleteresult/resulttype.md)
+### Accessing the Result
+- [var resultType: NSBatchDeleteRequestResultType](./resulttype.md)
   The data type of the request’s result value.
-- [enum NSBatchDeleteRequestResultType](nsbatchdeleterequestresulttype.md)
+- [enum NSBatchDeleteRequestResultType](../nsbatchdeleterequestresulttype.md)
   The types of result a batch delete request can provide when it executes.
 
 

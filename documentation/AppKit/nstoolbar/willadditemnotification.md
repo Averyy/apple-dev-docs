@@ -1,7 +1,8 @@
 # willAddItemNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posts before the toolbar adds a new item.
 
@@ -9,12 +10,16 @@ Posts before the toolbar adds a new item.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class let willAddItemNotification: NSNotification.Name
+```
+
+```c
+extern NSNotificationName NSToolbarWillAddItemNotification;
 ```
 
 #### Discussion
@@ -23,25 +28,27 @@ The notification item is the `NSToolbar` object that’s about to add the item. 
 
 | Key | Value |
 | --- | --- |
-| [`itemKey`](nstoolbaruserinfokey/itemkey.md) | The `NSToolbarItem` object being added. |
+| [`itemKey`](../nstoolbaruserinfokey/itemkey.md) | The `NSToolbarItem` object being added. |
 
 ## See Also
 
-- [func toolbarWillAddItem(Notification)](nstoolbardelegate/toolbarwilladditem(_:).md)
+### Related Documentation
+- [func toolbarWillAddItem(Notification)](../nstoolbardelegate/toolbarwilladditem%28_%29.md)
   Tells the delegate that the toolbar is about to add the specified item.
-- [var items: [NSToolbarItem]](nstoolbar/items.md)
+### Managing items on the toolbar
+- [var items: [NSToolbarItem]](./items.md)
   An array containing the toolbar’s current items, in order.
-- [var visibleItems: [NSToolbarItem]?](nstoolbar/visibleitems.md)
+- [var visibleItems: [NSToolbarItem]?](./visibleitems.md)
   An array containing the toolbar’s currently visible items.
-- [var centeredItemIdentifiers: Set<NSToolbarItem.Identifier>](nstoolbar/centereditemidentifiers.md)
+- [var centeredItemIdentifiers: Set<NSToolbarItem.Identifier>](./centereditemidentifiers.md)
   The set of custom items to display in the center of the toolbar.
-- [var selectedItemIdentifier: NSToolbarItem.Identifier?](nstoolbar/selecteditemidentifier.md)
+- [var selectedItemIdentifier: NSToolbarItem.Identifier?](./selecteditemidentifier.md)
   The identifier of the toolbar’s currently selected item.
-- [class let didRemoveItemNotification: NSNotification.Name](nstoolbar/didremoveitemnotification.md)
+- [class let didRemoveItemNotification: NSNotification.Name](./didremoveitemnotification.md)
   Posted after an item is removed from a toolbar.
-- [func insertItem(withItemIdentifier: NSToolbarItem.Identifier, at: Int)](nstoolbar/insertitem(withitemidentifier:at:).md)
+- [func insertItem(withItemIdentifier: NSToolbarItem.Identifier, at: Int)](./insertitem%28withitemidentifier,at%29.md)
   Inserts an item into the toolbar at the specified index.
-- [func removeItem(at: Int)](nstoolbar/removeitem(at:).md)
+- [func removeItem(at: Int)](./removeitem%28at%29.md)
   Removes the item at the specified index in the toolbar.
 
 

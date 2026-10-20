@@ -1,7 +1,8 @@
 # kMDItemRecipientEmailAddresses
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 This attribute indicates the recipients email addresses. (This is always the email address, and not the human readable version). A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ This attribute indicates the recipients email addresses. (This is always the ema
 
 ```swift
 let kMDItemRecipientEmailAddresses: CFString!
+```
+
+```c
+const CFStringRef kMDItemRecipientEmailAddresses;
 ```
 
 

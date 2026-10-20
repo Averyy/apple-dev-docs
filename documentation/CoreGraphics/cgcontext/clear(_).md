@@ -1,7 +1,8 @@
 # clear(_:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Paints a transparent rectangle.
 
@@ -10,7 +11,7 @@ Paints a transparent rectangle.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Paints a transparent rectangle.
 
 ```swift
 func clear(_ rect: CGRect)
+```
+
+```c
+extern void CGContextClearRect(CGContextRef c, CGRect rect);
 ```
 
 #### Discussion
@@ -30,19 +35,20 @@ If the provided context is a window or bitmap context, Core Graphics clears the 
 
 ## See Also
 
-- [func fill(CGRect)](cgcontext/fill(_:)-7a0rk.md)
+### Drawing Shapes
+- [func fill(CGRect)](./fill%28_%29-7a0rk.md)
   Paints the area contained within the provided rectangle, using the fill color in the current graphics state.
-- [func fill([CGRect])](cgcontext/fill(_:)-6jc4y.md)
+- [func fill([CGRect])](./fill%28_%29-6jc4y.md)
   Paints the areas contained within the provided rectangles, using the fill color in the current graphics state.
-- [func fillEllipse(in: CGRect)](cgcontext/fillellipse(in:).md)
+- [func fillEllipse(in: CGRect)](./fillellipse%28in%29.md)
   Paints the area of the ellipse that fits inside the provided rectangle, using the fill color in the current graphics state.
-- [func stroke(CGRect)](cgcontext/stroke(_:).md)
+- [func stroke(CGRect)](./stroke%28_%29.md)
   Paints a rectangular path.
-- [func stroke(CGRect, width: CGFloat)](cgcontext/stroke(_:width:).md)
+- [func stroke(CGRect, width: CGFloat)](./stroke%28_,width%29.md)
   Paints a rectangular path, using the specified line width.
-- [func strokeEllipse(in: CGRect)](cgcontext/strokeellipse(in:).md)
+- [func strokeEllipse(in: CGRect)](./strokeellipse%28in%29.md)
   Strokes an ellipse that fits inside the specified rectangle.
-- [func strokeLineSegments(between: [CGPoint])](cgcontext/strokelinesegments(between:).md)
+- [func strokeLineSegments(between: [CGPoint])](./strokelinesegments%28between%29.md)
   Strokes a sequence of line segments.
 
 

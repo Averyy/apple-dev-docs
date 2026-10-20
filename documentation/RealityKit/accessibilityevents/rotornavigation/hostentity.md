@@ -1,7 +1,8 @@
 # hostEntity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity containing the component declaring support for this rotor type.
 
@@ -10,7 +11,7 @@ The entity containing the component declaring support for this rotor type.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

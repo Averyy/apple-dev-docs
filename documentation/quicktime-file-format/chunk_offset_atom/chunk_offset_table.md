@@ -1,7 +1,8 @@
 # Chunk offset table
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A chunk offset table consisting of an array of offset values.
 
@@ -21,15 +22,16 @@ An example chunk offset table is as follows.
 
 ## See Also
 
-- [Size](chunk_offset_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this chunk offset atom.
-- [Type](chunk_offset_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Version](chunk_offset_atom/version.md)
+- [Version](./version.md)
   A 1-byte specification of the version of this chunk offset atom.
-- [Flags](chunk_offset_atom/flags.md)
+- [Flags](./flags.md)
   A 3-byte space for chunk offset flags.
-- [Number of entries](chunk_offset_atom/number_of_entries.md)
+- [Number of entries](./number_of_entries.md)
   A 32-bit integer containing the count of entries in the chunk offset table.
 
 

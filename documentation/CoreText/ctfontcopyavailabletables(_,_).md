@@ -1,7 +1,8 @@
 # CTFontCopyAvailableTables(_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an array of font table tags.
 
@@ -20,9 +21,13 @@ Returns an array of font table tags.
 func CTFontCopyAvailableTables(_ font: CTFont, _ options: CTFontTableOptions) -> CFArray?
 ```
 
+```c
+extern CFArrayRefCTFontCopyAvailableTables(CTFontRef font, CTFontTableOptions options);
+```
+
 #### Return Value
 
-An array of [`CTFontTableTag`](ctfonttabletag.md) values for the given font and the supplied options.
+An array of [`CTFontTableTag`](./ctfonttabletag.md) values for the given font and the supplied options.
 
 #### Discussion
 
@@ -39,7 +44,8 @@ CTFontTableTag tag = (CTFontTableTag)(uintptr_t)CFArrayGetValueAtIndex(tags, ind
 
 ## See Also
 
-- [func CTFontCopyTable(CTFont, CTFontTableTag, CTFontTableOptions) -> CFData?](ctfontcopytable(_:_:_:).md)
+### Getting Font Table Data
+- [func CTFontCopyTable(CTFont, CTFontTableTag, CTFontTableOptions) -> CFData?](./ctfontcopytable%28_,_,_%29.md)
   Returns a reference to the font table data.
 
 

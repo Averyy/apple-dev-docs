@@ -1,7 +1,8 @@
 # unproject(_:ontoPlane:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Maps a 2D point from the view’s coordinate system onto the given plane in 3D space.
 
@@ -30,13 +31,14 @@ The 3D position in world coordinates, or `nil` if the mapping isn’t possible.
 
 ## See Also
 
-- [func project(SIMD3<Float>) -> CGPoint?](arview/project(_:).md)
+### Mapping between coordinate spaces
+- [func project(SIMD3<Float>) -> CGPoint?](./project%28_%29.md)
   Projects a point from the 3D world coordinate system of the scene to the 2D pixel coordinate system of the view.
-- [func unproject(CGPoint, ontoPlane: float4x4, relativeToCamera: Bool) -> SIMD3<Float>?](arview/unproject(_:ontoplane:relativetocamera:).md)
+- [func unproject(CGPoint, ontoPlane: float4x4, relativeToCamera: Bool) -> SIMD3<Float>?](./unproject%28_,ontoplane,relativetocamera%29.md)
   Unproject a 2D point from the view onto a plane in 3D world coordinates.
-- [func unproject(CGPoint, viewport: CGRect) -> SIMD3<Float>?](arview/unproject(_:viewport:).md)
+- [func unproject(CGPoint, viewport: CGRect) -> SIMD3<Float>?](./unproject%28_,viewport%29.md)
   Maps a 2D point from the pixel coordinate system of a viewport into a 3D coordinate space. The point lies on this view’s near clipping plane.
-- [func ray(through: CGPoint) -> (origin: SIMD3<Float>, direction: SIMD3<Float>)?](arview/ray(through:).md)
+- [func ray(through: CGPoint) -> (origin: SIMD3<Float>, direction: SIMD3<Float>)?](./ray%28through%29.md)
   Determines the position and direction of a ray through the given point in the 2D space of the view.
 
 

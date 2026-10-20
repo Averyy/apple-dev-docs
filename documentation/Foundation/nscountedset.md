@@ -1,7 +1,8 @@
 # NSCountedSet
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mutable, unordered collection of distinct objects that may appear more than once in the collection.
 
@@ -20,76 +21,81 @@ A mutable, unordered collection of distinct objects that may appear more than on
 class NSCountedSet
 ```
 
+```objc
+@interface NSCountedSet : NSMutableSet
+```
+
 #### Overview
 
-Each distinct object inserted into an [`NSCountedSet`](nscountedset.md) object has a counter associated with it. [`NSCountedSet`](nscountedset.md) keeps track of the number of times objects are inserted and requires that objects be removed the same number of times. Thus, there is only one instance of an object in an [`NSSet`](nsset.md) object even if the object has been added to the set multiple times. The [`count`](nsset/count.md) method defined by the superclass [`NSSet`](nsset.md) has special significance; it returns the number of distinct objects, not the total number of times objects are represented in the set. The [`NSSet`](nsset.md) and [`NSMutableSet`](nsmutableset.md) classes are provided for static and dynamic sets, respectively, whose elements are distinct.
+Each distinct object inserted into an [`NSCountedSet`](./nscountedset.md) object has a counter associated with it. [`NSCountedSet`](./nscountedset.md) keeps track of the number of times objects are inserted and requires that objects be removed the same number of times. Thus, there is only one instance of an object in an [`NSSet`](./nsset.md) object even if the object has been added to the set multiple times. The [`count`](./nsset/count.md) method defined by the superclass [`NSSet`](./nsset.md) has special significance; it returns the number of distinct objects, not the total number of times objects are represented in the set. The [`NSSet`](./nsset.md) and [`NSMutableSet`](./nsmutableset.md) classes are provided for static and dynamic sets, respectively, whose elements are distinct.
 
-While [`NSCountedSet`](nscountedset.md) and [`CFBag`](https://developer.apple.com/documentation/corefoundation/cfbag) are not toll-free bridged, they provide similar functionality. For more information about `CFBag`, see the [`CFBag`](https://developer.apple.com/documentation/corefoundation/cfbag).
+While [`NSCountedSet`](./nscountedset.md) and [`CFBag`](../CoreFoundation/cfbag.md) are not toll-free bridged, they provide similar functionality. For more information about `CFBag`, see the [`CFBag`](../CoreFoundation/cfbag.md).
 
 ##### Subclassing Notes
 
-Because [`NSCountedSet`](nscountedset.md) is not a class cluster, it does not have primitive methods that provide the basis for its implementation. In general, there should be little need for subclassing.
+Because [`NSCountedSet`](./nscountedset.md) is not a class cluster, it does not have primitive methods that provide the basis for its implementation. In general, there should be little need for subclassing.
 
 ###### Methods to Override
 
-If you subclass [`NSCountedSet`](nscountedset.md), you must override any method of which you want to change the behavior.
+If you subclass [`NSCountedSet`](./nscountedset.md), you must override any method of which you want to change the behavior.
 
-If you change the primitive behavior of an [`NSCountedSet`](nscountedset.md), for instance if you change how objects are stored, you must override all of the affected methods. These include:
+If you change the primitive behavior of an [`NSCountedSet`](./nscountedset.md), for instance if you change how objects are stored, you must override all of the affected methods. These include:
 
-- [`add(_:)`](nscountedset/add(_:).md)
-- [`remove(_:)`](nscountedset/remove(_:).md)
-- [`objectEnumerator()`](nscountedset/objectenumerator().md)
-- [`count(for:)`](nscountedset/count(for:).md)
+- [`add(_:)`](./nscountedset/add%28_%29.md)
+- [`remove(_:)`](./nscountedset/remove%28_%29.md)
+- [`objectEnumerator()`](./nscountedset/objectenumerator%28%29.md)
+- [`count(for:)`](./nscountedset/count%28for%29.md)
 
-If you change the primitive behavior, you must also override the primitive methods of [`NSSet`](nsset.md) and [`NSMutableSet`](nsmutableset.md).
+If you change the primitive behavior, you must also override the primitive methods of [`NSSet`](./nsset.md) and [`NSMutableSet`](./nsmutableset.md).
 
 ## Topics
 
 ### Initializing a Counted Set
-- [convenience init(array: [Any])](nscountedset/init(array:).md)
+- [convenience init(array: [Any])](./nscountedset/init%28array%29.md)
   Returns a counted set object initialized with the contents of a given array.
-- [convenience init(set: Set<AnyHashable>)](nscountedset/init(set:).md)
+- [convenience init(set: Set<AnyHashable>)](./nscountedset/init%28set%29.md)
   Returns a counted set object initialized with the contents of a given set.
-- [init(capacity: Int)](nscountedset/init(capacity:).md)
+- [init(capacity: Int)](./nscountedset/init%28capacity%29.md)
   Returns a counted set object initialized with enough memory to hold a given number of objects.
 ### Adding and Removing Entries
-- [func add(Any)](nscountedset/add(_:).md)
+- [func add(Any)](./nscountedset/add%28_%29.md)
   Adds a given object to the set.
-- [func remove(Any)](nscountedset/remove(_:).md)
+- [func remove(Any)](./nscountedset/remove%28_%29.md)
   Removes a given object from the set.
 ### Examining a Counted Set
-- [func count(for: Any) -> Int](nscountedset/count(for:).md)
+- [func count(for: Any) -> Int](./nscountedset/count%28for%29.md)
   Returns the count associated with a given object in the set.
-- [func objectEnumerator() -> NSEnumerator](nscountedset/objectenumerator.md)
+- [func objectEnumerator() -> NSEnumerator](./nscountedset/objectenumerator%28%29.md)
   Returns an enumerator object that lets you access each object in the set once, independent of its count.
 
 ## Relationships
 
 ### Inherits From
-- [NSMutableSet](nsmutableset.md)
+- [NSMutableSet](./nsmutableset.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSFastEnumeration](nsfastenumeration.md)
-- [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSFastEnumeration](./nsfastenumeration.md)
+- [NSMutableCopying](./nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [class NSOrderedSet](nsorderedset.md)
+### Specialized Sets
+- [class NSOrderedSet](./nsorderedset.md)
   A static, ordered collection of unique objects.
-- [class NSMutableOrderedSet](nsmutableorderedset.md)
+- [class NSMutableOrderedSet](./nsmutableorderedset.md)
   A dynamic, ordered collection of unique objects.
 
 

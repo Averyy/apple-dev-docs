@@ -7,7 +7,7 @@ Outputs the given segment into the output segments array in little endian byte o
 
 ## Declaration
 
-```swift
+```c
 static void outputSegment(
  PhysicalSegmentsegment, 
  void *segments, 
@@ -22,11 +22,12 @@ static void outputSegment(
 
 ## See Also
 
-- [getPhysicalSegments](iolittlememorycursor/1812505-getphysicalsegments.md)
+### Miscellaneous
+- [getPhysicalSegments](./api-1812505-getphysicalsegments.md)
   Generates a little endian physical scatter/gather list given a memory descriptor.
-- [initWithSpecification](iolittlememorycursor/1812512-initwithspecification.md)
+- [initWithSpecification](./api-1812512-initwithspecification.md)
   Primary initializer for the IOLittleMemoryCursor class.
-- [withSpecification](iolittlememorycursor/1812526-withspecification.md)
+- [withSpecification](./api-1812526-withspecification.md)
   Creates and initializes an IOLittleMemoryCursor in one operation.
 
 

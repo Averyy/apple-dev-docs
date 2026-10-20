@@ -1,7 +1,8 @@
 # findEntity(named:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Recursively searches all descendant entities for one with the given name.
 
@@ -11,7 +12,7 @@ Recursively searches all descendant entities for one with the given name.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,7 +27,7 @@ An entity with the given name, or `nil` if no entity is found.
 
 #### Discussion
 
-The [`findEntity(named:)`](entity/findentity(named:).md) method conducts a depth-first, recursive search over all of the entity’s descendants for one whose [`name`](entity/name.md) property matches the given name. The method returns the first match. Entity names need not be unique.
+The [`findEntity(named:)`](./findentity%28named%29.md) method conducts a depth-first, recursive search over all of the entity’s descendants for one whose [`name`](./name.md) property matches the given name. The method returns the first match. Entity names need not be unique.
 
 ## Parameters
 
@@ -34,11 +35,12 @@ The [`findEntity(named:)`](entity/findentity(named:).md) method conducts a depth
 
 ## See Also
 
-- [var scene: Scene?](entity/scene.md)
+### Inspecting an entity
+- [var scene: Scene?](./scene.md)
   The scene that owns the entity.
-- [var name: String](entity/name.md)
+- [var name: String](./name.md)
   The name of the entity.
-- [var debugDescription: String](entity/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A human readable description of the entity.
 
 

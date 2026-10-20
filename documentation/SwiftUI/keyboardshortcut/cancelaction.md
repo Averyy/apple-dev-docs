@@ -1,7 +1,8 @@
 # cancelAction
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard keyboard shortcut for cancelling the in-progress action or dismissing a prompt, consisting of the Escape (⎋) key and no modifiers.
 
@@ -20,7 +21,8 @@ static let cancelAction: KeyboardShortcut
 
 ## See Also
 
-- [static let defaultAction: KeyboardShortcut](keyboardshortcut/defaultaction.md)
+### Getting standard shortcuts
+- [static let defaultAction: KeyboardShortcut](./defaultaction.md)
   The standard keyboard shortcut for the default button, consisting of the Return (↩) key and no modifiers.
 
 

@@ -1,7 +1,8 @@
 # subgroup
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subgroup that the user removed from the group.
 
@@ -19,9 +20,14 @@ The subgroup that the user removed from the group.
 var subgroup: CNGroup { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) CNGroup * subgroup;
+```
+
 ## See Also
 
-- [var group: CNGroup](cnchangehistoryremovesubgroupfromgroupevent/group.md)
+### Getting event details
+- [var group: CNGroup](./group.md)
   The group where the user removed a subgroup.
 
 

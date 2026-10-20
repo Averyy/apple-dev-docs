@@ -1,17 +1,18 @@
 # kSCNetworkConnectionSelectionOptionOnDemandHostName
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key associated with a host name used to select the “best” network connection.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ The key associated with a host name used to select the “best” network connec
 var kSCNetworkConnectionSelectionOptionOnDemandHostName: String { get }
 ```
 
+```c
+#define kSCNetworkConnectionSelectionOptionOnDemandHostName
+```
+
 ## See Also
 
-- [var kSCNetworkConnectionSelectionOptionOnDemandRetry: String](kscnetworkconnectionselectionoptionondemandretry.md)
+### Constants
+- [var kSCNetworkConnectionSelectionOptionOnDemandRetry: String](./kscnetworkconnectionselectionoptionondemandretry.md)
   The key associated with a Boolean value used to indicate whether a DNS query has already been issued for the specified on-demand host name.
 
 

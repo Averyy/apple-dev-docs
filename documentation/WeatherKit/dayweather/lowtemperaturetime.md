@@ -1,7 +1,8 @@
 # lowTemperatureTime
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time at which the low temperature occurs on this day.
 

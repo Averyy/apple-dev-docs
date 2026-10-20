@@ -1,7 +1,8 @@
 # downloadDidFinish(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the download finished.
 
@@ -18,15 +19,20 @@ Tells the delegate that the download finished.
 optional func downloadDidFinish(_ download: WKDownload)
 ```
 
+```objc
+- (void) downloadDidFinish:(WKDownload *) download;
+```
+
 ## Parameters
 
 - `download`: The download that finished.
 
 ## See Also
 
-- [func download(WKDownload, decideDestinationUsing: URLResponse, suggestedFilename: String, completionHandler: (URL?) -> Void)](wkdownloaddelegate/download(_:decidedestinationusing:suggestedfilename:completionhandler:).md)
+### Tracking Download Progress
+- [func download(WKDownload, decideDestinationUsing: URLResponse, suggestedFilename: String, completionHandler: (URL?) -> Void)](./download%28_,decidedestinationusing,suggestedfilename,completionhandler%29.md)
   Asks the delegate to provide a file destination where the system should write the download data.
-- [func download(WKDownload, didFailWithError: any Error, resumeData: Data?)](wkdownloaddelegate/download(_:didfailwitherror:resumedata:).md)
+- [func download(WKDownload, didFailWithError: any Error, resumeData: Data?)](./download%28_,didfailwitherror,resumedata%29.md)
   Tells the delegate that the download failed, with error information and data you can use to restart the download.
 
 

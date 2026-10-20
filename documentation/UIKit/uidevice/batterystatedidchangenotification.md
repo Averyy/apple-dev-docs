@@ -1,7 +1,8 @@
 # batteryStateDidChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts when battery state changes.
 
@@ -18,23 +19,28 @@ nonisolated
 class let batteryStateDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIDeviceBatteryStateDidChangeNotification;
+```
+
 ## Mentions
 
-- [Processing queued notifications](processing-queued-notifications.md)
+- [Processing queued notifications](../processing-queued-notifications.md)
 
 #### Discussion
 
-For this notification to be sent, you must set the [`isBatteryMonitoringEnabled`](uidevice/isbatterymonitoringenabled.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+For this notification to be sent, you must set the [`isBatteryMonitoringEnabled`](./isbatterymonitoringenabled.md) property to [`true`](../../Swift/true.md).
 
-You can obtain the battery state by getting the value of the [`batteryState`](uidevice/batterystate-swift.property.md) property.
+You can obtain the battery state by getting the value of the [`batteryState`](./batterystate-swift.property.md) property.
 
 ## See Also
 
-- [class let batteryLevelDidChangeNotification: NSNotification.Name](uidevice/batteryleveldidchangenotification.md)
+### Managing notifications
+- [class let batteryLevelDidChangeNotification: NSNotification.Name](./batteryleveldidchangenotification.md)
   A notification that posts when the battery level changes.
-- [class let orientationDidChangeNotification: NSNotification.Name](uidevice/orientationdidchangenotification.md)
+- [class let orientationDidChangeNotification: NSNotification.Name](./orientationdidchangenotification.md)
   A notification that posts when the orientation of the device changes.
-- [class let proximityStateDidChangeNotification: NSNotification.Name](uidevice/proximitystatedidchangenotification.md)
+- [class let proximityStateDidChangeNotification: NSNotification.Name](./proximitystatedidchangenotification.md)
   A notification that posts when the state of the proximity sensor changes.
 
 

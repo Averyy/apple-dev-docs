@@ -1,7 +1,8 @@
 # targets
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the targets in this product.
 

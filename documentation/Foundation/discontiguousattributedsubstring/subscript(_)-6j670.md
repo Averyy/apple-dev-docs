@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Foundation  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns a discontiguous substring of this discontiguous attributed string using a range to indicate the discontiguous substring bounds.
 

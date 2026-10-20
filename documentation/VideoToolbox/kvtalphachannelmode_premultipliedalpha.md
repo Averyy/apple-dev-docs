@@ -1,7 +1,8 @@
 # kVTAlphaChannelMode_PremultipliedAlpha
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 13.0+
@@ -17,9 +18,14 @@
 let kVTAlphaChannelMode_PremultipliedAlpha: CFString
 ```
 
+```c
+extern CFStringRef const kVTAlphaChannelMode_PremultipliedAlpha;
+```
+
 ## See Also
 
-- [let kVTAlphaChannelMode_StraightAlpha: CFString](kvtalphachannelmode_straightalpha.md)
+### Modes
+- [let kVTAlphaChannelMode_StraightAlpha: CFString](./kvtalphachannelmode_straightalpha.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NEAppPushManagerError.Code.configurationNotLoaded
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error code that indicates the manager hasn’t loaded the app push configuration.
 
@@ -17,13 +18,18 @@ An error code that indicates the manager hasn’t loaded the app push configurat
 case configurationNotLoaded
 ```
 
+```c
+NEAppPushManagerErrorConfigurationNotLoaded
+```
+
 ## See Also
 
-- [NEAppPushManagerError.Code.configurationInvalid](neapppushmanagererror-swift.struct/code/configurationinvalid.md)
+### Error codes
+- [NEAppPushManagerError.Code.configurationInvalid](./configurationinvalid.md)
   An error code that indicates the app push configuration is invalid.
-- [NEAppPushManagerError.Code.inactiveSession](neapppushmanagererror-swift.struct/code/inactivesession.md)
+- [NEAppPushManagerError.Code.inactiveSession](./inactivesession.md)
   An error code that indicates an invalid attempt to perform an operation on an inactive session.
-- [NEAppPushManagerError.Code.internalError](neapppushmanagererror-swift.struct/code/internalerror.md)
+- [NEAppPushManagerError.Code.internalError](./internalerror.md)
   An error code that indicates an internal error in the local push connectivity framework.
 
 

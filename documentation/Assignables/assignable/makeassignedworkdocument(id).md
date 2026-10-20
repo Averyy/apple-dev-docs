@@ -2,15 +2,16 @@
 
 **Framework**: Assignables  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
-Create a new instance of an [`AssignedWorkDocument`](assignedworkdocument.md).
+Create a new instance of an [`AssignedWorkDocument`](../assignedworkdocument.md).
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

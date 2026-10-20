@@ -1,22 +1,27 @@
 # anchorDate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The anchor date for the collection’s time intervals.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var anchorDate: Date { get }
+```
+
+```objc
+@property (strong, readonly) NSDate * anchorDate;
 ```
 
 #### Discussion
@@ -29,9 +34,10 @@ Technically, the anchor sets the start time for a single time interval. All othe
 
 ## See Also
 
-- [var intervalComponents: DateComponents](hkstatisticscollectionquery/intervalcomponents.md)
+### Getting Property Data
+- [var intervalComponents: DateComponents](./intervalcomponents.md)
   The date components that define the time interval for each statistics object in the collection.
-- [var options: HKStatisticsOptions](hkstatisticscollectionquery/options.md)
+- [var options: HKStatisticsOptions](./options.md)
   A list of options that define the type of statistical calculations performed and the way in which data from multiple sources are merged.
 
 

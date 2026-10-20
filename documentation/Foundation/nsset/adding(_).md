@@ -1,7 +1,8 @@
 # adding(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new set formed by adding a given object to the receiving set.
 
@@ -20,6 +21,10 @@ Returns a new set formed by adding a given object to the receiving set.
 func adding(_ anObject: Any) -> Set<AnyHashable>
 ```
 
+```objc
+- (NSSet<id> *) setByAddingObject:(ObjectType) anObject;
+```
+
 #### Return Value
 
 A new set formed by adding `anObject` to the receiving set.
@@ -30,13 +35,14 @@ A new set formed by adding `anObject` to the receiving set.
 
 ## See Also
 
-- [convenience init(object: Any)](nsset/init(object:).md)
+### Creating a Set
+- [convenience init(object: Any)](./init%28object%29.md)
   Creates and returns a set that contains a single given object.
-- [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](nsset/init(objects:count:)-65ni4.md)
+- [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](./init%28objects,count%29-65ni4.md)
   Creates and returns a set containing a specified number of objects from a given C array of objects.
-- [func addingObjects(from: Set<AnyHashable>) -> Set<AnyHashable>](nsset/addingobjects(from:)-2i31h.md)
+- [func addingObjects(from: Set<AnyHashable>) -> Set<AnyHashable>](./addingobjects%28from%29-2i31h.md)
   Returns a new set formed by adding the objects in a given set to the receiving set.
-- [func addingObjects(from: [Any]) -> Set<AnyHashable>](nsset/addingobjects(from:)-544m9.md)
+- [func addingObjects(from: [Any]) -> Set<AnyHashable>](./addingobjects%28from%29-544m9.md)
   Returns a new set formed by adding the objects in a given array to the receiving set.
 
 

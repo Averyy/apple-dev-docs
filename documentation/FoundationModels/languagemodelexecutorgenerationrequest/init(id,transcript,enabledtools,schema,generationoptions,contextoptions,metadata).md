@@ -1,7 +1,8 @@
 # init(id:transcript:enabledTools:schema:generationOptions:contextOptions:metadata:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a generation request.
 

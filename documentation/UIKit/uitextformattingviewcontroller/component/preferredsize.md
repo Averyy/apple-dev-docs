@@ -1,7 +1,8 @@
 # preferredSize
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies preferred size of the component in text formatting view.
 
@@ -15,6 +16,10 @@ Specifies preferred size of the component in text formatting view.
 
 ```swift
 var preferredSize: UITextFormattingViewController.ComponentSize { get }
+```
+
+```objc
+@property (nonatomic, readonly) UITextFormattingViewControllerComponentSize preferredSize;
 ```
 
 

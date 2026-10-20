@@ -1,7 +1,8 @@
 # container
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the container specifier of the receiver.
 
@@ -15,17 +16,22 @@ Sets the container specifier of the receiver.
 var container: NSScriptObjectSpecifier? { get set }
 ```
 
+```objc
+@property (retain, nullable) NSScriptObjectSpecifier * containerSpecifier;
+```
+
 ## Parameters
 
 - `objSpecifier`: The container specifier for the receiver.
 
 ## See Also
 
-- [var containerClassDescription: NSScriptClassDescription?](nsscriptobjectspecifier/containerclassdescription.md)
+### Getting, testing, and setting containers
+- [var containerClassDescription: NSScriptClassDescription?](./containerclassdescription.md)
   Sets the class description of the receiver’s container specifier to a given specifier.
-- [var containerIsObjectBeingTested: Bool](nsscriptobjectspecifier/containerisobjectbeingtested.md)
+- [var containerIsObjectBeingTested: Bool](./containerisobjectbeingtested.md)
   Sets whether the receiver’s container should be an object involved in a filter reference or the top-level object.
-- [var containerIsRangeContainerObject: Bool](nsscriptobjectspecifier/containerisrangecontainerobject.md)
+- [var containerIsRangeContainerObject: Bool](./containerisrangecontainerobject.md)
   Sets whether the receiver’s container is to be the container for a range specifier or a top-level object.
 
 

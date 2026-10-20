@@ -1,7 +1,8 @@
 # OpenConfiguration.Mode.readOnly
 
 **Framework**: DiskImageKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Open the disk image in read-only mode.
 

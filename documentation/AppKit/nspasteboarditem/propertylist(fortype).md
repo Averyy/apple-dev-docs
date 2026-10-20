@@ -1,7 +1,8 @@
 # propertyList(forType:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value for the specified type as a property list.
 
@@ -14,6 +15,10 @@ Returns the value for the specified type as a property list.
 func propertyList(forType type: NSPasteboard.PasteboardType) -> Any?
 ```
 
+```objc
+- (id) propertyListForType:(NSPasteboardType) type;
+```
+
 #### Return Value
 
 The value for the specified type as a property list.
@@ -24,9 +29,10 @@ The value for the specified type as a property list.
 
 ## See Also
 
-- [func data(forType: NSPasteboard.PasteboardType) -> Data?](nspasteboarditem/data(fortype:).md)
+### Getting values
+- [func data(forType: NSPasteboard.PasteboardType) -> Data?](./data%28fortype%29.md)
   Returns the value for the specified type as a data object.
-- [func string(forType: NSPasteboard.PasteboardType) -> String?](nspasteboarditem/string(fortype:).md)
+- [func string(forType: NSPasteboard.PasteboardType) -> String?](./string%28fortype%29.md)
   Returns the value for the specified type as a string.
 
 

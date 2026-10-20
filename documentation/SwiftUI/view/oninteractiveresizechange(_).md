@@ -1,7 +1,8 @@
 # onInteractiveResizeChange(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform when the enclosing window is being interactively resized.
 
@@ -48,9 +49,10 @@ struct RootView: View {
 
 ## See Also
 
-- [func onGeometryChange(for:of:action:)](view/ongeometrychange(for:of:action:).md)
+### Geometry
+- [func onGeometryChange(for:of:action:)](./ongeometrychange%28for,of,action%29.md)
   Adds an action to be performed when a value, created from a geometry proxy, changes.
-- [func onGeometryChange3D(for:of:action:)](view/ongeometrychange3d(for:of:action:).md)
+- [func onGeometryChange3D(for:of:action:)](./ongeometrychange3d%28for,of,action%29.md)
   Returns a new view that arranges to call `action(value)` whenever the value computed by `transform(proxy)` changes, where `proxy` provides access to the view’s 3D geometry properties.
 
 

@@ -1,7 +1,8 @@
 # priceIncreaseInfo
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A structure that describes the details of a subscription price increase, such as the price, customer acceptance status, and any dependent SKUs.
 
@@ -22,7 +23,8 @@ let priceIncreaseInfo: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo
 
 ## See Also
 
-- [let details: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.Details](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/item/details-swift.property.md)
+### Instance Properties
+- [let details: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.Details](./details-swift.property.md)
   The item’s details.
 
 

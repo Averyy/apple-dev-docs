@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locale to use when formatting strings.
 
@@ -20,19 +21,32 @@ The locale to use when formatting strings.
 var locale: Locale! { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, null_resettable) NSLocale * locale;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, null_resettable) NSLocale * locale;
+```
+
 #### Discussion
 
 If you don’t specify an explicit locale, the formatter uses the user’s current locale information.
 
 ## See Also
 
-- [var units: MKDistanceFormatter.Units](mkdistanceformatter/units-swift.property.md)
+### Specifying the format
+- [var units: MKDistanceFormatter.Units](./units-swift.property.md)
   The measuring system — imperial or metric — to use for units.
-- [MKDistanceFormatter.Units](mkdistanceformatter/units-swift.enum.md)
+- [MKDistanceFormatter.Units](./units-swift.enum.md)
   Constants that reflect the type of units to use in the string.
-- [var unitStyle: MKDistanceFormatter.DistanceUnitStyle](mkdistanceformatter/unitstyle.md)
+- [var unitStyle: MKDistanceFormatter.DistanceUnitStyle](./unitstyle.md)
   The preferred style for units.
-- [MKDistanceFormatter.DistanceUnitStyle](mkdistanceformatter/distanceunitstyle.md)
+- [MKDistanceFormatter.DistanceUnitStyle](./distanceunitstyle.md)
   Constants that indicate the format style to use for strings.
 
 

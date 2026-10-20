@@ -1,18 +1,19 @@
 # removeAllBehaviors()
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all behaviors affecting bodies in the physics world.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,13 +21,18 @@ Removes all behaviors affecting bodies in the physics world.
 func removeAllBehaviors()
 ```
 
+```objc
+- (void) removeAllBehaviors;
+```
+
 ## See Also
 
-- [func addBehavior(SCNPhysicsBehavior)](scnphysicsworld/addbehavior(_:).md)
+### Registering Physics Behaviors
+- [func addBehavior(SCNPhysicsBehavior)](./addbehavior%28_%29.md)
   Adds a behavior to the physics world.
-- [func removeBehavior(SCNPhysicsBehavior)](scnphysicsworld/removebehavior(_:).md)
+- [func removeBehavior(SCNPhysicsBehavior)](./removebehavior%28_%29.md)
   Removes a behavior from the physics world.
-- [var allBehaviors: [SCNPhysicsBehavior]](scnphysicsworld/allbehaviors.md)
+- [var allBehaviors: [SCNPhysicsBehavior]](./allbehaviors.md)
   The list of behaviors affecting bodies in the physics world.
 
 

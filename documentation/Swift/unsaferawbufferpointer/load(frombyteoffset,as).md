@@ -1,7 +1,8 @@
 # load(fromByteOffset:as:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new instance of the given type, read from the buffer pointer’s raw memory at the specified byte offset.
 

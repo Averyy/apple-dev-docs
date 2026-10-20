@@ -1,7 +1,8 @@
 # presenterOverlayPrivacyAlertSetting
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value indicating if alerts appear to presenters while using Presenter Overlay.
 
@@ -15,13 +16,18 @@ A value indicating if alerts appear to presenters while using Presenter Overlay.
 var presenterOverlayPrivacyAlertSetting: SCPresenterOverlayAlertSetting { get set }
 ```
 
+```objc
+@property (nonatomic, assign) SCPresenterOverlayAlertSetting presenterOverlayPrivacyAlertSetting;
+```
+
 #### Discussion
 
-The default value is [`SCPresenterOverlayAlertSetting.system`](scpresenteroverlayalertsetting/system.md).
+The default value is [`SCPresenterOverlayAlertSetting.system`](../scpresenteroverlayalertsetting/system.md).
 
 ## See Also
 
-- [enum SCPresenterOverlayAlertSetting](scpresenteroverlayalertsetting.md)
+### Notifying presenters
+- [enum SCPresenterOverlayAlertSetting](../scpresenteroverlayalertsetting.md)
   Configures how to present streaming notifications to a streamer of Presenter Overlay.
 
 

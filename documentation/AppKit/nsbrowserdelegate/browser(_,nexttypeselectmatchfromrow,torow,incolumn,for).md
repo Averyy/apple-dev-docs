@@ -1,7 +1,8 @@
 # browser(_:nextTypeSelectMatchFromRow:toRow:inColumn:for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the delegate to customize a browser’s keyboard-based selection (type select) behavior.
 
@@ -13,6 +14,10 @@ Sent to the delegate to customize a browser’s keyboard-based selection (type s
 ```swift
 @MainActor
 optional func browser(_ browser: NSBrowser, nextTypeSelectMatchFromRow startRow: Int, toRow endRow: Int, inColumn column: Int, for searchString: String?) -> Int
+```
+
+```objc
+- (NSInteger) browser:(NSBrowser *) browser nextTypeSelectMatchFromRow:(NSInteger) startRow toRow:(NSInteger) endRow inColumn:(NSInteger) column forString:(NSString *) searchString;
 ```
 
 #### Return Value
@@ -29,9 +34,10 @@ The index of the first row that matches `searchString` between `startRowIndex` a
 
 ## See Also
 
-- [func browser(NSBrowser, shouldTypeSelectFor: NSEvent, withCurrentSearch: String?) -> Bool](nsbrowserdelegate/browser(_:shouldtypeselectfor:withcurrentsearch:).md)
+### Managing Selection Behavior
+- [func browser(NSBrowser, shouldTypeSelectFor: NSEvent, withCurrentSearch: String?) -> Bool](./browser%28_,shouldtypeselectfor,withcurrentsearch%29.md)
   Sent to the delegate to determine whether keyboard-based selection (type select) for a given event and search string should proceed.
-- [func browser(NSBrowser, typeSelectStringForRow: Int, inColumn: Int) -> String?](nsbrowserdelegate/browser(_:typeselectstringforrow:incolumn:).md)
+- [func browser(NSBrowser, typeSelectStringForRow: Int, inColumn: Int) -> String?](./browser%28_,typeselectstringforrow,incolumn%29.md)
   Sent to the delegate to get the keyboard-based selection (type select) string for the specified row and column.
 
 

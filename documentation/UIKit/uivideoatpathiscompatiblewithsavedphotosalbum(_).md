@@ -1,7 +1,8 @@
 # UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(_:)
 
 **Framework**: UIKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether the specified video is compatible to save to the user’s Camera Roll album.
 
@@ -17,13 +18,17 @@ Returns a Boolean value that indicates whether the specified video is compatible
 func UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(_ videoPath: String) -> Bool
 ```
 
+```c
+extern BOOL UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(NSString *videoPath);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the video can be saved to the Camera Roll album or [`false`](https://developer.apple.com/documentation/swift/false) if it cannot.
+[`true`](../Swift/true.md) if the video can be saved to the Camera Roll album or [`false`](../Swift/false.md) if it cannot.
 
 #### Discussion
 
-Not all devices are able to play video files placed in the user’s Camera Roll album. Before attempting to save a video, call this function and check its return value to ensure that saving the video is supported for the current device. For a code example, refer to [`Camera Programming Topics for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/CameraAndPhotoLib_TopicsForIOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010400).
+Not all devices are able to play video files placed in the user’s Camera Roll album. Before attempting to save a video, call this function and check its return value to ensure that saving the video is supported for the current device. For a code example, refer to [Camera Programming Topics for iOS](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/CameraAndPhotoLib_TopicsForIOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010400).
 
 When used on an iOS device without a camera, this method indicates whether the specified movie can be saved to the Saved Photos album rather than to the Camera Roll album.
 
@@ -33,9 +38,10 @@ When used on an iOS device without a camera, this method indicates whether the s
 
 ## See Also
 
-- [func UIImageWriteToSavedPhotosAlbum(UIImage, Any?, Selector?, UnsafeMutableRawPointer?)](uiimagewritetosavedphotosalbum(_:_:_:_:).md)
+### Photo album
+- [func UIImageWriteToSavedPhotosAlbum(UIImage, Any?, Selector?, UnsafeMutableRawPointer?)](./uiimagewritetosavedphotosalbum%28_,_,_,_%29.md)
   Adds the specified image to the user’s Camera Roll album.
-- [func UISaveVideoAtPathToSavedPhotosAlbum(String, Any?, Selector?, UnsafeMutableRawPointer?)](uisavevideoatpathtosavedphotosalbum(_:_:_:_:).md)
+- [func UISaveVideoAtPathToSavedPhotosAlbum(String, Any?, Selector?, UnsafeMutableRawPointer?)](./uisavevideoatpathtosavedphotosalbum%28_,_,_,_%29.md)
   Adds the movie from the specified path to the user’s Camera Roll album.
 
 

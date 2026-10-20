@@ -1,7 +1,8 @@
 # init(content:modifier:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 A structure that defines the content and modifier needed to produce a new view or view modifier.
 
@@ -23,7 +24,7 @@ init(content: Content, modifier: Modifier)
 
 #### Discussion
 
-If `content` is a [`View`](view.md) and `modifier` is a [`ViewModifier`](viewmodifier.md), the result is a [`View`](view.md). If `content` and `modifier` are both view modifiers, then the result is a new [`ViewModifier`](viewmodifier.md) combining them.
+If `content` is a [`View`](../view.md) and `modifier` is a [`ViewModifier`](../viewmodifier.md), the result is a [`View`](../view.md). If `content` and `modifier` are both view modifiers, then the result is a new [`ViewModifier`](../viewmodifier.md) combining them.
 
 ## Parameters
 
@@ -32,9 +33,10 @@ If `content` is a [`View`](view.md) and `modifier` is a [`ViewModifier`](viewmod
 
 ## See Also
 
-- [var content: Content](modifiedcontent/content.md)
+### Creating a modified content view
+- [var content: Content](./content.md)
   The content that the modifier transforms into a new view or new view modifier.
-- [var modifier: Modifier](modifiedcontent/modifier.md)
+- [var modifier: Modifier](./modifier.md)
   The view modifier.
 
 

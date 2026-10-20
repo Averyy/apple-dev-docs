@@ -2,6 +2,7 @@
 
 **Framework**: ARKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A unique identifier that distinguishes this anchor from all other anchors.
@@ -18,8 +19,9 @@ var id: UUID { get }
 
 ## See Also
 
-- [var timestamp: TimeInterval](anchor/timestamp.md)
-- [var originFromAnchorTransform: simd_float4x4](anchor/originfromanchortransform.md)
+### Inspecting an anchor
+- [var timestamp: TimeInterval](./timestamp.md)
+- [var originFromAnchorTransform: simd_float4x4](./originfromanchortransform.md)
   The position and orientation of this anchor in world space.
 
 

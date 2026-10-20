@@ -1,7 +1,8 @@
 # birthTime
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The creation time attribute.
 
@@ -14,17 +15,22 @@ The creation time attribute.
 static var birthTime: FSItem.Attribute { get }
 ```
 
+```c
+FSItemAttributeBirthTime
+```
+
 ## See Also
 
-- [static var accessTime: FSItem.Attribute](fsitem/attribute/accesstime.md)
+### Working with time attributes
+- [static var accessTime: FSItem.Attribute](./accesstime.md)
   The last-accessed time attribute.
-- [static var modifyTime: FSItem.Attribute](fsitem/attribute/modifytime.md)
+- [static var modifyTime: FSItem.Attribute](./modifytime.md)
   The last-modified time attribute.
-- [static var changeTime: FSItem.Attribute](fsitem/attribute/changetime.md)
+- [static var changeTime: FSItem.Attribute](./changetime.md)
   The last-changed time attribute.
-- [static var backupTime: FSItem.Attribute](fsitem/attribute/backuptime.md)
+- [static var backupTime: FSItem.Attribute](./backuptime.md)
   The backup time attribute.
-- [static var addedTime: FSItem.Attribute](fsitem/attribute/addedtime.md)
+- [static var addedTime: FSItem.Attribute](./addedtime.md)
   The time added attribute.
 
 

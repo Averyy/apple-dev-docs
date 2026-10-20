@@ -1,7 +1,8 @@
 # free
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Frees the clock device.
 
@@ -10,7 +11,7 @@ Frees the clock device.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 

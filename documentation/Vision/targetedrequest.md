@@ -1,7 +1,8 @@
 # TargetedRequest
 
 **Framework**: Vision  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type for analyzing two images together.
 
@@ -23,33 +24,34 @@ protocol TargetedRequest : VisionRequest
 ## Relationships
 
 ### Inherits From
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionRequest](visionrequest.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionRequest](./visionrequest.md)
 ### Conforming Types
-- [TrackHomographicImageRegistrationRequest](trackhomographicimageregistrationrequest.md)
-- [TrackOpticalFlowRequest](trackopticalflowrequest.md)
-- [TrackTranslationalImageRegistrationRequest](tracktranslationalimageregistrationrequest.md)
+- [TrackHomographicImageRegistrationRequest](./trackhomographicimageregistrationrequest.md)
+- [TrackOpticalFlowRequest](./trackopticalflowrequest.md)
+- [TrackTranslationalImageRegistrationRequest](./tracktranslationalimageregistrationrequest.md)
 
 ## See Also
 
-- [protocol ImageProcessingRequest](imageprocessingrequest.md)
+### Protocols
+- [protocol ImageProcessingRequest](./imageprocessingrequest.md)
   A type for image-analysis requests that focus on a specific part of an image.
-- [protocol PoseProviding](poseproviding.md)
+- [protocol PoseProviding](./poseproviding.md)
   An observation that provides a collection of joints that make up a pose.
-- [protocol StatefulRequest](statefulrequest.md)
+- [protocol StatefulRequest](./statefulrequest.md)
   The protocol for a type that builds evidence of a condition over time.
-- [protocol VisionObservation](visionobservation.md)
+- [protocol VisionObservation](./visionobservation.md)
   A type for objects produced by image-analysis requests.
-- [protocol VisionRequest](visionrequest.md)
+- [protocol VisionRequest](./visionrequest.md)
   A type for image-analysis requests.
-- [protocol DownloadableAssetsRequest](downloadableassetsrequest.md)
+- [protocol DownloadableAssetsRequest](./downloadableassetsrequest.md)
   A request whose execution depends on assets that may need to be downloaded.
-- [enum DownloadableAssetsRequestStatus](downloadableassetsrequeststatus.md)
-  The status of the assets required by a [`DownloadableAssetsRequest`](downloadableassetsrequest.md).
+- [enum DownloadableAssetsRequestStatus](./downloadableassetsrequeststatus.md)
+  The status of the assets required by a [`DownloadableAssetsRequest`](./downloadableassetsrequest.md).
 
 
 ---

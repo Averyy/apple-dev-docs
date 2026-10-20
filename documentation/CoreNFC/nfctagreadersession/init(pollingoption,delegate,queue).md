@@ -1,14 +1,17 @@
 # init(pollingOption:delegate:queue:)
 
 **Framework**: Core NFC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an NFC tag reader session.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
+- iOS 13.0+ - Deprecated in 26.4
+- iPadOS 13.0+ - Deprecated in 26.4
+- Mac Catalyst 13.0+ - Deprecated in 26.4
+
+> **Deprecated**: Use init(configuration:delegate:queue) instead
 
 ## Declaration
 
@@ -24,9 +27,10 @@ convenience init?(pollingOption: NFCTagReaderSession.PollingOption, delegate: an
 
 ## See Also
 
-- [NFCTagReaderSession.PollingOption](nfctagreadersession/pollingoption.md)
+### Creating a Tag Reader Session
+- [NFCTagReaderSession.PollingOption](./pollingoption.md)
   Options that determine the type of tags that a reader session should detect during a polling sequence.
-- [protocol NFCTagReaderSessionDelegate](nfctagreadersessiondelegate-2joku.md)
+- [protocol NFCTagReaderSessionDelegate](../nfctagreadersessiondelegate-2joku.md)
   A protocol that an object implements to receive callbacks sent from an NFC tag reader session.
 
 

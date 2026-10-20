@@ -1,22 +1,23 @@
 # UserGetDMASpecification
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the controller-specific direct memory access (DMA) specification in response to a call from the framework.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t UserGetDMASpecification(uint64_t *maxTransferSize, uint32_t *alignment, uint8_t *numAddressBits, DMAOutputSegmentType *segmentType);
 ```
 
 #### Return Value
 
-A value that indicates the result of getting the DMA specification. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+A value that indicates the result of getting the DMA specification. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
 ## Parameters
 
@@ -27,7 +28,8 @@ A value that indicates the result of getting the DMA specification. [`kIOReturnS
 
 ## See Also
 
-- [DMAOutputSegmentType](dmaoutputsegmenttype.md)
+### Managing direct memory access
+- [DMAOutputSegmentType](../dmaoutputsegmenttype.md)
   The size and endianness that the system uses for direct memory access (DMA).
 
 

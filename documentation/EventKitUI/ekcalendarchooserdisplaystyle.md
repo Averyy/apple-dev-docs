@@ -1,7 +1,8 @@
 # EKCalendarChooserDisplayStyle
 
 **Framework**: EventKit UI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Indicates whether to display all calendars or writable calendars only.
 
@@ -17,33 +18,38 @@ Indicates whether to display all calendars or writable calendars only.
 enum EKCalendarChooserDisplayStyle
 ```
 
+```c
+enum EKCalendarChooserDisplayStyle : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [EKCalendarChooserDisplayStyle.allCalendars](ekcalendarchooserdisplaystyle/allcalendars.md)
+- [EKCalendarChooserDisplayStyle.allCalendars](./ekcalendarchooserdisplaystyle/allcalendars.md)
   Displays writable and read-only calendars.
-- [EKCalendarChooserDisplayStyle.writableCalendarsOnly](ekcalendarchooserdisplaystyle/writablecalendarsonly.md)
+- [EKCalendarChooserDisplayStyle.writableCalendarsOnly](./ekcalendarchooserdisplaystyle/writablecalendarsonly.md)
   Displays writable calendars only.
 ### Initializers
-- [init?(rawValue: Int)](ekcalendarchooserdisplaystyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./ekcalendarchooserdisplaystyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var selectedCalendars: Set<EKCalendar>](ekcalendarchooser/selectedcalendars.md)
+### Selecting a Calendar Type
+- [var selectedCalendars: Set<EKCalendar>](./ekcalendarchooser/selectedcalendars.md)
   The calendars selected by the user.
-- [var selectionStyle: EKCalendarChooserSelectionStyle](ekcalendarchooser/selectionstyle.md)
+- [var selectionStyle: EKCalendarChooserSelectionStyle](./ekcalendarchooser/selectionstyle.md)
   Determines whether to allow selection of multiple calendars.
-- [enum EKCalendarChooserSelectionStyle](ekcalendarchooserselectionstyle.md)
+- [enum EKCalendarChooserSelectionStyle](./ekcalendarchooserselectionstyle.md)
   Indicates whether users may select a single calendar, or multiple calendars.
 
 

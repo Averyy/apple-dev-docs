@@ -1,7 +1,8 @@
 # kSecTrustSettingsPolicy
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A policy object specifying the certificate verification policy.
 
@@ -15,9 +16,13 @@ A policy object specifying the certificate verification policy.
 var kSecTrustSettingsPolicy: String { get }
 ```
 
+```c
+#define kSecTrustSettingsPolicy
+```
+
 #### Discussion
 
-The value is a [`SecPolicy`](secpolicy.md) object.
+The value is a [`SecPolicy`](./secpolicy.md) object.
 
 
 ---

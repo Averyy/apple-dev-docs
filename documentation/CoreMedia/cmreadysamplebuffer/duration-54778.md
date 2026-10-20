@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Duration of the sample buffer.
 
@@ -19,6 +20,8 @@ Duration of the sample buffer.
 ```swift
 var duration: CMTime { get set }
 ```
+
+Available when `Content` is `Never`.
 
 
 ---

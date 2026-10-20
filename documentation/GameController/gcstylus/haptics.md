@@ -1,7 +1,8 @@
 # haptics
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Gets the haptics profile for the stylus, if supported.
 
@@ -14,6 +15,10 @@ Gets the haptics profile for the stylus, if supported.
 var haptics: GCDeviceHaptics? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) GCDeviceHaptics * haptics;
+```
+
 #### Discussion
 
 The haptics profile is represented as a `GCDeviceHaptics` instance, from which you can create `CHHapticEngine` instances targeting the haptic actuator(s) in the accessory.
@@ -24,7 +29,8 @@ Not all stylus accessories support haptic feedback.  If the accessory does not s
 
 ## See Also
 
-- [var input: (any GCDevicePhysicalInput)?](gcstylus/input.md)
+### Getting input values and haptics
+- [var input: (any GCDevicePhysicalInput)?](./input.md)
   Gets the input profile for the stylus.
 
 

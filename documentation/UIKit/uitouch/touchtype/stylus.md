@@ -1,7 +1,8 @@
 # stylus
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A touch from a stylus.
 
@@ -12,10 +13,16 @@ A touch from a stylus.
 - tvOS 9.0+
 - visionOS 1.0+
 
+> **Deprecated**: Use [`UITouch.TouchType.pencil`](./pencil.md) instead.
+
 ## Declaration
 
 ```swift
 static var stylus: UITouch.TouchType { get }
+```
+
+```c
+UITouchTypeStylus
 ```
 
 

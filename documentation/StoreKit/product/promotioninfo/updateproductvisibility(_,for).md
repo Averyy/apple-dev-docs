@@ -1,7 +1,8 @@
 # updateProductVisibility(_:for:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Updates a value that indicates whether a promoted Apple In-App Purchase appears in the App Store on the user’s device.
 
@@ -18,7 +19,7 @@ static func updateProductVisibility(_ visibility: Product.PromotionInfo.Visibili
 
 ## Mentions
 
-- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
+- [Supporting promoted Apple In-App Purchases in your app](../../supporting-promoted-in-app-purchases-in-your-app.md)
 
 #### Discussion
 
@@ -40,14 +41,15 @@ catch {
 
 ## Parameters
 
-- `visibility`: A visibility value of [`Product.PromotionInfo.Visibility`](product/promotioninfo/visibility-swift.enum.md) that determines whether a promoted Apple In-App Purchase appears in the App Store on the user’s device.
+- `visibility`: A visibility value of [`Product.PromotionInfo.Visibility`](./visibility-swift.enum.md) that determines whether a promoted Apple In-App Purchase appears in the App Store on the user’s device.
 - `productID`: The product identifier of the promoted Apple In-App Purchase.
 
 ## See Also
 
-- [var visibility: Product.PromotionInfo.Visibility](product/promotioninfo/visibility-swift.property.md)
+### Managing promotion visibility
+- [var visibility: Product.PromotionInfo.Visibility](./visibility-swift.property.md)
   A value that indicates whether the promoted Apple In-App Purchase is visible or hidden on the user’s device.
-- [Product.PromotionInfo.Visibility](product/promotioninfo/visibility-swift.enum.md)
+- [Product.PromotionInfo.Visibility](./visibility-swift.enum.md)
   The visibility states for product promotion information.
 
 

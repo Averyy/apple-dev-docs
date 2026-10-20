@@ -1,17 +1,22 @@
 # NSOpenPanel
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A panel that prompts the user to select a file to open.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class NSOpenPanel
+```
+
+```objc
+@interface NSOpenPanel : NSSavePanel
 ```
 
 #### Overview
@@ -21,58 +26,59 @@ Apps use the Open panel as a convenient way to query the user for the name of a 
 ## Topics
 
 ### Configuring the Open Panel
-- [var canChooseFiles: Bool](nsopenpanel/canchoosefiles.md)
+- [var canChooseFiles: Bool](./nsopenpanel/canchoosefiles.md)
   A Boolean that indicates whether the user can choose files in the panel.
-- [var canChooseDirectories: Bool](nsopenpanel/canchoosedirectories.md)
+- [var canChooseDirectories: Bool](./nsopenpanel/canchoosedirectories.md)
   A Boolean that indicates whether the user can choose directories in the panel.
-- [var resolvesAliases: Bool](nsopenpanel/resolvesaliases.md)
+- [var resolvesAliases: Bool](./nsopenpanel/resolvesaliases.md)
   A Boolean that indicates whether the panel resolves aliases.
-- [var allowsMultipleSelection: Bool](nsopenpanel/allowsmultipleselection.md)
+- [var allowsMultipleSelection: Bool](./nsopenpanel/allowsmultipleselection.md)
   A Boolean that indicates whether the user may select multiple files and directories.
-- [var isAccessoryViewDisclosed: Bool](nsopenpanel/isaccessoryviewdisclosed.md)
+- [var isAccessoryViewDisclosed: Bool](./nsopenpanel/isaccessoryviewdisclosed.md)
   A Boolean value that indicates whether the panel’s accessory view is visible.
 ### Accessing User Selection
-- [var urls: [URL]](nsopenpanel/urls.md)
+- [var urls: [URL]](./nsopenpanel/urls.md)
   An array of URLs, each of which contains the fully specified location of a selected file or directory.
 ### Supporting iCloud Documents
-- [var canDownloadUbiquitousContents: Bool](nsopenpanel/candownloadubiquitouscontents.md)
+- [var canDownloadUbiquitousContents: Bool](./nsopenpanel/candownloadubiquitouscontents.md)
   A Boolean value that indicates how the panel responds to iCloud documents that aren’t fully downloaded locally.
-- [var canResolveUbiquitousConflicts: Bool](nsopenpanel/canresolveubiquitousconflicts.md)
+- [var canResolveUbiquitousConflicts: Bool](./nsopenpanel/canresolveubiquitousconflicts.md)
   A Boolean value that indicates how the panel responds to iCloud documents that have conflicting versions.
 ### Deprecated
-- [Deprecated symbols](nsopenpanel-deprecated-symbols.md)
+- [Deprecated symbols](./nsopenpanel-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 
 ### Inherits From
-- [NSSavePanel](nssavepanel.md)
+- [NSSavePanel](./nssavepanel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSMenuItemValidation](nsmenuitemvalidation.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](nstouchbarprovider.md)
-- [NSUserActivityRestoring](nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](./nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](./nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](./nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](./nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSMenuItemValidation](./nsmenuitemvalidation.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](./nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](./nstouchbarprovider.md)
+- [NSUserActivityRestoring](./nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
+- [NSUserInterfaceValidations](./nsuserinterfacevalidations.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSSavePanel](nssavepanel.md)
+### Open and Save Panels
+- [class NSSavePanel](./nssavepanel.md)
   A panel that prompts the user for information about where to save a file.
-- [protocol NSOpenSavePanelDelegate](nsopensavepaneldelegate.md)
+- [protocol NSOpenSavePanelDelegate](./nsopensavepaneldelegate.md)
   A set of methods for managing interactions with an open or save panel.
 
 

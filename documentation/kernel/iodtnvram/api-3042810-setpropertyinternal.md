@@ -1,14 +1,15 @@
 # setPropertyInternal
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 IOReturn setPropertyInternal(const OSSymbol *aKey, OSObject *anObject);
 ```
 

@@ -1,7 +1,8 @@
 # BNNS.ArithmeticUnaryFunction.atan
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An operation that calculates the element-wise inverse tangent of its input.
 
@@ -11,8 +12,10 @@ An operation that calculates the element-wise inverse tangent of its input.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,35 +25,36 @@ case atan
 
 ## See Also
 
-- [BNNS.ArithmeticUnaryFunction.acos](bnns/arithmeticunaryfunction/acos.md)
+### Unary Arithmetic Functions
+- [BNNS.ArithmeticUnaryFunction.acos](./acos.md)
   An operation that calculates the element-wise inverse cosine of its input.
-- [BNNS.ArithmeticUnaryFunction.acosh](bnns/arithmeticunaryfunction/acosh.md)
+- [BNNS.ArithmeticUnaryFunction.acosh](./acosh.md)
   An operation that calculates the element-wise inverse hyperbolic cosine of its input.
-- [BNNS.ArithmeticUnaryFunction.asin](bnns/arithmeticunaryfunction/asin.md)
+- [BNNS.ArithmeticUnaryFunction.asin](./asin.md)
   An operation that calculates the element-wise inverse sine of its input.
-- [BNNS.ArithmeticUnaryFunction.asinh](bnns/arithmeticunaryfunction/asinh.md)
+- [BNNS.ArithmeticUnaryFunction.asinh](./asinh.md)
   An operation that calculates the element-wise inverse hyperbolic sine of its input.
-- [BNNS.ArithmeticUnaryFunction.atanh](bnns/arithmeticunaryfunction/atanh.md)
+- [BNNS.ArithmeticUnaryFunction.atanh](./atanh.md)
   An operation that calculates the element-wise inverse hyperbolic tangent of its input.
-- [BNNS.ArithmeticUnaryFunction.ceil](bnns/arithmeticunaryfunction/ceil.md)
+- [BNNS.ArithmeticUnaryFunction.ceil](./ceil.md)
   An operation that calculates the element-wise ceiling of its input.
-- [BNNS.ArithmeticUnaryFunction.cos](bnns/arithmeticunaryfunction/cos.md)
+- [BNNS.ArithmeticUnaryFunction.cos](./cos.md)
   An operation that calculates the element-wise cosine of its input.
-- [BNNS.ArithmeticUnaryFunction.cosh](bnns/arithmeticunaryfunction/cosh.md)
+- [BNNS.ArithmeticUnaryFunction.cosh](./cosh.md)
   An operation that calculates the element-wise hyperbolic cosine of its input.
-- [BNNS.ArithmeticUnaryFunction.exp](bnns/arithmeticunaryfunction/exp.md)
+- [BNNS.ArithmeticUnaryFunction.exp](./exp.md)
   An operation that calculates the element-wise result of *e* raised to the power of its input.
-- [BNNS.ArithmeticUnaryFunction.exp2](bnns/arithmeticunaryfunction/exp2.md)
+- [BNNS.ArithmeticUnaryFunction.exp2](./exp2.md)
   An operation that calculates the element-wise result of 2 raised to the power of its input.
-- [BNNS.ArithmeticUnaryFunction.floor](bnns/arithmeticunaryfunction/floor.md)
+- [BNNS.ArithmeticUnaryFunction.floor](./floor.md)
   An operation that calculates the element-wise floor of its input.
-- [BNNS.ArithmeticUnaryFunction.log](bnns/arithmeticunaryfunction/log.md)
+- [BNNS.ArithmeticUnaryFunction.log](./log.md)
   An operation that calculates the element-wise natural logarithm of its input.
-- [BNNS.ArithmeticUnaryFunction.log2](bnns/arithmeticunaryfunction/log2.md)
+- [BNNS.ArithmeticUnaryFunction.log2](./log2.md)
   An operation that calculates the element-wise base 2 logarithm of its input.
-- [BNNS.ArithmeticUnaryFunction.reciprocalSquareRoot](bnns/arithmeticunaryfunction/reciprocalsquareroot.md)
+- [BNNS.ArithmeticUnaryFunction.reciprocalSquareRoot](./reciprocalsquareroot.md)
   An operation that calculates the element-wise reciprocal square root of its input.
-- [BNNS.ArithmeticUnaryFunction.round](bnns/arithmeticunaryfunction/round.md)
+- [BNNS.ArithmeticUnaryFunction.round](./round.md)
   An operation that calculates the element-wise rounding of its input.
 
 

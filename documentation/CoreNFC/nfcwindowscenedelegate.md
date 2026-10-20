@@ -1,7 +1,8 @@
 # NFCWindowSceneDelegate
 
 **Framework**: Core NFC  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol to notify your app’s user interface about NFC-related events.
 
@@ -18,21 +19,22 @@ protocol NFCWindowSceneDelegate
 
 #### Overview
 
-When the device is eligible to receive NFC-related events, use this protocol to update your user interface. The received [`NFCWindowSceneEvent`](nfcwindowsceneevent.md) indicates whether the event represents the presence of a card reader or a gesture to initiate a contactless transaction by the person using the app.
+When the device is eligible to receive NFC-related events, use this protocol to update your user interface. The received [`NFCWindowSceneEvent`](./nfcwindowsceneevent.md) indicates whether the event represents the presence of a card reader or a gesture to initiate a contactless transaction by the person using the app.
 
-You typically add conformance to this protocol in your app’s main scene delegate, where you already conform to [`UIWindowSceneDelegate`](https://developer.apple.com/documentation/uikit/uiwindowscenedelegate).
+You typically add conformance to this protocol in your app’s main scene delegate, where you already conform to [`UIWindowSceneDelegate`](../UIKit/uiwindowscenedelegate.md).
 
 ## Topics
 
 ### Handling events
-- [func windowScene(UIWindowScene, didReceiveNFCWindowSceneEvent: NFCWindowSceneEvent)](nfcwindowscenedelegate/windowscene(_:didreceivenfcwindowsceneevent:).md)
+- [func windowScene(UIWindowScene, didReceiveNFCWindowSceneEvent: NFCWindowSceneEvent)](./nfcwindowscenedelegate/windowscene%28_,didreceivenfcwindowsceneevent%29.md)
   Informs your app that the system has received an NFC-related event.
-- [enum NFCWindowSceneEvent](nfcwindowsceneevent.md)
+- [enum NFCWindowSceneEvent](./nfcwindowsceneevent.md)
   An NFC-related event that your app uses to update its user interface.
 
 ## See Also
 
-- [enum NFCWindowSceneEvent](nfcwindowsceneevent.md)
+### NFC window scenes
+- [enum NFCWindowSceneEvent](./nfcwindowsceneevent.md)
   An NFC-related event that your app uses to update its user interface.
 
 

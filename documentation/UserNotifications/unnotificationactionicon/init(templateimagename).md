@@ -1,7 +1,8 @@
 # init(templateImageName:)
 
 **Framework**: User Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action icon based on an image in your app’s bundle, preferably in an asset catalog.
 
@@ -20,17 +21,24 @@ Creates an action icon based on an image in your app’s bundle, preferably in a
 convenience init(templateImageName: String)
 ```
 
+```objc
++ (instancetype) iconWithTemplateImageName:(NSString *) templateImageName;
+```
+
 #### Return Value
 
 An action icon initialized with the specified template image provided by your app.
 
 ## Parameters
 
-- `templateImageName`: The name of a custom image in the app’s asset catalog. If the image isn’t in your app’s asset catalog, this method searches the app bundle for the image. You don’t need to specify the filename extension or the `@2x` or `@3x` modifiers for this name. This method retrieves the appropriate image based on the system and the available image resources.
+- `templateImageName`: The name of a custom image in the app’s asset catalog. If the image isn’t in your app’s asset catalog, this method searches the app bundle for the image.
+
+  You don’t need to specify the filename extension or the `@2x` or `@3x` modifiers for this name. This method retrieves the appropriate image based on the system and the available image resources.
 
 ## See Also
 
-- [convenience init(systemImageName: String)](unnotificationactionicon/init(systemimagename:).md)
+### Essentials
+- [convenience init(systemImageName: String)](./init%28systemimagename%29.md)
   Creates an action icon by using a system symbol image.
 
 

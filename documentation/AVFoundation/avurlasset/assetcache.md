@@ -1,7 +1,8 @@
 # assetCache
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The asset’s associated asset cache, if it exists.
 
@@ -19,9 +20,13 @@ The asset’s associated asset cache, if it exists.
 var assetCache: AVAssetCache? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVAssetCache * assetCache;
+```
+
 #### Discussion
 
-This property provides access to an instance of [`AVAssetCache`](avassetcache.md) to use for inspection of locally cached media data. The value of this property is `nil` if you haven’t configured the asset to store or access media data from disk.
+This property provides access to an instance of [`AVAssetCache`](../avassetcache.md) to use for inspection of locally cached media data. The value of this property is `nil` if you haven’t configured the asset to store or access media data from disk.
 
 
 ---

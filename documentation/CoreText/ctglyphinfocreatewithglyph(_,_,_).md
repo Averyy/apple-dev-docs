@@ -1,7 +1,8 @@
 # CTGlyphInfoCreateWithGlyph(_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an immutable glyph info object with a glyph index.
 
@@ -20,6 +21,10 @@ Creates an immutable glyph info object with a glyph index.
 func CTGlyphInfoCreateWithGlyph(_ glyph: CGGlyph, _ font: CTFont, _ baseString: CFString) -> CTGlyphInfo?
 ```
 
+```c
+extern CTGlyphInfoRefCTGlyphInfoCreateWithGlyph(CGGlyph glyph, CTFontRef font, CFStringRef baseString);
+```
+
 #### Return Value
 
 A valid reference to an immutable CTGlyphInfo object, If glyph info creation was successful; otherwise, `NULL`.
@@ -36,9 +41,10 @@ This function creates an immutable glyph info object for a glyph index using a s
 
 ## See Also
 
-- [func CTGlyphInfoCreateWithGlyphName(CFString, CTFont, CFString) -> CTGlyphInfo?](ctglyphinfocreatewithglyphname(_:_:_:).md)
+### Creating GlyphInfo Objects
+- [func CTGlyphInfoCreateWithGlyphName(CFString, CTFont, CFString) -> CTGlyphInfo?](./ctglyphinfocreatewithglyphname%28_,_,_%29.md)
   Creates an immutable glyph info object with a glyph name.
-- [func CTGlyphInfoCreateWithCharacterIdentifier(CGFontIndex, CTCharacterCollection, CFString) -> CTGlyphInfo?](ctglyphinfocreatewithcharacteridentifier(_:_:_:).md)
+- [func CTGlyphInfoCreateWithCharacterIdentifier(CGFontIndex, CTCharacterCollection, CFString) -> CTGlyphInfo?](./ctglyphinfocreatewithcharacteridentifier%28_,_,_%29.md)
   Creates an immutable glyph info object with a character identifier.
 
 

@@ -1,7 +1,8 @@
 # layoutIfNeeded()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the layout of views in the window based on the current views and constraints.
 
@@ -14,15 +15,20 @@ Updates the layout of views in the window based on the current views and constra
 func layoutIfNeeded()
 ```
 
+```objc
+- (void) layoutIfNeeded;
+```
+
 #### Discussion
 
-Before displaying a window that uses constraints-based layout the system invokes this method to ensure that the layout of all views is up to date. This method updates the layout if needed, first invoking [`updateConstraintsIfNeeded()`](nswindow/updateconstraintsifneeded().md) to ensure that all constraints are up to date. This method is called automatically by the system, but may be invoked manually if you need to examine the most up to date layout.
+Before displaying a window that uses constraints-based layout the system invokes this method to ensure that the layout of all views is up to date. This method updates the layout if needed, first invoking [`updateConstraintsIfNeeded()`](./updateconstraintsifneeded%28%29.md) to ensure that all constraints are up to date. This method is called automatically by the system, but may be invoked manually if you need to examine the most up to date layout.
 
 Subclasses should not override this method.
 
 ## See Also
 
-- [func updateConstraintsIfNeeded()](nswindow/updateconstraintsifneeded.md)
+### Triggering Constraint-Based Layout
+- [func updateConstraintsIfNeeded()](./updateconstraintsifneeded%28%29.md)
   Updates the constraints based on changes to views in the window since the last layout.
 
 

@@ -1,12 +1,13 @@
 # NSWindow.ButtonType.zoomButton
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The zoom button.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ The zoom button.
 case zoomButton
 ```
 
+```c
+NSWindowZoomButton
+```
+
 ## See Also
 
-- [NSWindow.ButtonType.closeButton](nswindow/buttontype/closebutton.md)
+### Constants
+- [NSWindow.ButtonType.closeButton](./closebutton.md)
   The close button.
-- [NSWindow.ButtonType.miniaturizeButton](nswindow/buttontype/miniaturizebutton.md)
+- [NSWindow.ButtonType.miniaturizeButton](./miniaturizebutton.md)
   The minimize button.
-- [NSWindow.ButtonType.toolbarButton](nswindow/buttontype/toolbarbutton.md)
+- [NSWindow.ButtonType.toolbarButton](./toolbarbutton.md)
   The toolbar button.
-- [NSWindow.ButtonType.documentIconButton](nswindow/buttontype/documenticonbutton.md)
+- [NSWindow.ButtonType.documentIconButton](./documenticonbutton.md)
   The document icon button.
-- [NSWindow.ButtonType.documentVersionsButton](nswindow/buttontype/documentversionsbutton.md)
+- [NSWindow.ButtonType.documentVersionsButton](./documentversionsbutton.md)
   The document versions button.
-- [static var fullScreenButton: NSWindow.ButtonType](nswindow/buttontype/fullscreenbutton.md)
+- [static var fullScreenButton: NSWindow.ButtonType](./fullscreenbutton.md)
   The fullscreen icon button.
 
 

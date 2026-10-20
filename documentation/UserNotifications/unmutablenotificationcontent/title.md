@@ -1,7 +1,8 @@
 # title
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized text that provides the notification’s primary description.
 
@@ -19,6 +20,18 @@ The localized text that provides the notification’s primary description.
 var title: String { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readwrite) NSString * title;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readwrite) NSString * title;
+```
+
 #### Discussion
 
 Use this property to specify the title of your notification alert. If your app isn’t authorized to display alert-based notifications, the system ignores this property.
@@ -27,9 +40,10 @@ Title strings should be short, usually only a couple of words describing the rea
 
 ## See Also
 
-- [var subtitle: String](unmutablenotificationcontent/subtitle.md)
+### Providing the primary content
+- [var subtitle: String](./subtitle.md)
   The localized text that provides the notification’s secondary description.
-- [var body: String](unmutablenotificationcontent/body.md)
+- [var body: String](./body.md)
   The localized text that provides the notification’s main content.
 
 

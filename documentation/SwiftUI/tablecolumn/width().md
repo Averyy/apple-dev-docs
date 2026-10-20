@@ -1,7 +1,8 @@
 # width()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the column’s width.
 
@@ -12,6 +13,8 @@ Sets the column’s width.
 - macOS 12.0+
 - visionOS 1.0+
 
+> **Deprecated**: Use [`width(_:)`](./width%28_%29.md) or [`width(min:ideal:max:)`](./width%28min,ideal,max%29.md) instead.
+
 ## Declaration
 
 ```swift
@@ -19,11 +22,14 @@ Sets the column’s width.
 nonisolated func width() -> TableColumn<RowValue, Sort, Content, Label>
 ```
 
+Available when `RowValue` conforms to `Identifiable`, `Sort` conforms to `SortComparator`, `Content` conforms to `View`, and `Label` conforms to `View`.
+
 ## See Also
 
-- [func width(CGFloat?) -> TableColumn<RowValue, Sort, Content, Label>](tablecolumn/width(_:).md)
+### Setting the column width
+- [func width(CGFloat?) -> TableColumn<RowValue, Sort, Content, Label>](./width%28_%29.md)
   Creates a fixed width table column that isn’t user resizable.
-- [func width(min: CGFloat?, ideal: CGFloat?, max: CGFloat?) -> TableColumn<RowValue, Sort, Content, Label>](tablecolumn/width(min:ideal:max:).md)
+- [func width(min: CGFloat?, ideal: CGFloat?, max: CGFloat?) -> TableColumn<RowValue, Sort, Content, Label>](./width%28min,ideal,max%29.md)
   Creates a resizable table column with the provided constraints.
 
 

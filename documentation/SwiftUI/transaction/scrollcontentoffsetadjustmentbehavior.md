@@ -1,7 +1,8 @@
 # scrollContentOffsetAdjustmentBehavior
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The behavior a scroll view will have regarding content offset adjustments for the current transaction.
 

@@ -1,14 +1,15 @@
 # kHIDUsage_Tfon_ReorderTone
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Tfon_ReorderTone = 0x98
 ```
 

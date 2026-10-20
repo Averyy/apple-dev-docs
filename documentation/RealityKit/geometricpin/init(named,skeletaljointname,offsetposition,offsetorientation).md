@@ -1,7 +1,8 @@
 # init(named:skeletalJointName:offsetPosition:offsetOrientation:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a geometric pin that attaches to a skeletal joint.
 

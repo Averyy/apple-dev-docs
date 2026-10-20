@@ -1,7 +1,8 @@
 # SCDynamicStoreRemoveValue(_:_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Removes the value of the specified key from the dynamic store.
 
@@ -12,6 +13,10 @@ Removes the value of the specified key from the dynamic store.
 
 ```swift
 func SCDynamicStoreRemoveValue(_ store: SCDynamicStore?, _ key: CFString) -> Bool
+```
+
+```c
+Boolean SCDynamicStoreRemoveValue(SCDynamicStoreRef store, CFStringRef key);
 ```
 
 #### Return Value

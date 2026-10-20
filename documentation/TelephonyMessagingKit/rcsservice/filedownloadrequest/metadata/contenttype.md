@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content type provided by the content server.
 
@@ -16,7 +17,8 @@ let contentType: UTType?
 
 ## See Also
 
-- [let suggestedFileName: String?](rcsservice/filedownloadrequest/metadata/suggestedfilename.md)
+### Accessing download request properties
+- [let suggestedFileName: String?](./suggestedfilename.md)
   The file name provided by the content server.
 
 

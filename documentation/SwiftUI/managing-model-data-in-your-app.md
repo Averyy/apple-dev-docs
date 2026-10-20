@@ -1,6 +1,8 @@
 # Managing model data in your app
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Sample Code  
+**Download**: [ManagingModelDataSample.zip](https://docs-assets.developer.apple.com/published/6c08da4d9562/ManagingModelDataSample.zip)
 
 Create connections between your app’s data model and views.
 
@@ -17,13 +19,13 @@ A SwiftUI app can display data that people can change using the app’s user int
 
 Keeping the model data (that is, an instance of a data model) in sync with what appears on the screen can be challenging, especially when the data appears in multiple views of the UI at the same time.
 
-SwiftUI helps keep your app’s UI up to date with changes made to the data thanks to Observation. With [`Observation`](https://developer.apple.com/documentation/observation), a view in SwiftUI can form dependencies on observable data models and update the UI when data changes.
+SwiftUI helps keep your app’s UI up to date with changes made to the data thanks to Observation. With [Observation](../Observation/Observation.md), a view in SwiftUI can form dependencies on observable data models and update the UI when data changes.
 
-> **Note**: [`Observation`](https://developer.apple.com/documentation/observation) support in SwiftUI is available starting with iOS 17, iPadOS 17, macOS 14, tvOS 17, and watchOS 10. For information about adopting Observation in existing apps, see [`Migrating from the Observable Object protocol to the Observable macro`](migrating-from-the-observable-object-protocol-to-the-observable-macro.md).
+> **Note**: [Observation](../Observation/Observation.md) support in SwiftUI is available starting with iOS 17, iPadOS 17, macOS 14, tvOS 17, and watchOS 10. For information about adopting Observation in existing apps, see [Migrating from the Observable Object protocol to the Observable macro](./migrating-from-the-observable-object-protocol-to-the-observable-macro.md).
 
-##### Make Model Data Observable
+##### Make model data observable
 
-To make data changes visible to SwiftUI, apply the [`Observable()`](https://developer.apple.com/documentation/observation/observable()) macro to your data model. This macro generates code that adds observation support to your data model at compile time, keeping your data model code focused on the properties that store data. For example, the following code defines a data model for books:
+To make data changes visible to SwiftUI, apply the [`Observable()`](../Observation/observable%28%29.md) macro to your data model. This macro generates code that adds observation support to your data model at compile time, keeping your data model code focused on the properties that store data. For example, the following code defines a data model for books:
 
 ```swift
 @Observable class Book: Identifiable {
@@ -33,13 +35,13 @@ To make data changes visible to SwiftUI, apply the [`Observable()`](https://deve
 }
 ```
 
-> ❗ **Important**: The [`Observable()`](https://developer.apple.com/documentation/observation/observable()) macro, in addition to adding observation functionality, also conforms your data model type to the [`Observable`](https://developer.apple.com/documentation/observation/observable) protocol, which serves as a signal to other APIs that your type supports observation. Don’t apply the `Observable` protocol by itself to your data model type, since that alone doesn’t add any observation functionality. Instead, always use the `Observable` macro when adding observation support to your type.
+> ❗ **Important**: The [`Observable()`](../Observation/observable%28%29.md) macro, in addition to adding observation functionality, also conforms your data model type to the [`Observable`](../Observation/observable.md) protocol, which serves as a signal to other APIs that your type supports observation. Don’t apply the `Observable` protocol by itself to your data model type, since that alone doesn’t add any observation functionality. Instead, always use the `Observable` macro when adding observation support to your type.
 
-##### Observe Model Data in a View
+##### Observe model data in a view
 
-In SwiftUI, a view forms a dependency on an observable data model object, such as an instance of `Book`, when the view’s [`body`](view/body-8kl5o.md) property reads a property of the object. If `body` doesn’t read any properties of an observable data model object, the view doesn’t track any dependencies.
+In SwiftUI, a view forms a dependency on an observable data model object, such as an instance of `Book`, when the view’s [`body`](./view/body-8kl5o.md) property reads a property of the object. If `body` doesn’t read any properties of an observable data model object, the view doesn’t track any dependencies.
 
-When a tracked property changes, SwiftUI updates the view. If other properties change that [`body`](view/body-8kl5o.md) doesn’t read, the view is unaffected and avoids unnecessary updates. For example, the view in the following code updates only when a book’s `title` changes but not when `author` or `isAvailable` changes:
+When a tracked property changes, SwiftUI updates the view. If other properties change that [`body`](./view/body-8kl5o.md) doesn’t read, the view is unaffected and avoids unnecessary updates. For example, the view in the following code updates only when a book’s `title` changes but not when `author` or `isAvailable` changes:
 
 ```swift
 struct BookView: View {
@@ -102,11 +104,11 @@ struct LibraryView: View {
 }
 ```
 
-However, `LibraryView` doesn’t form a dependency on the property `title` because the view’s [`body`](view/body-8kl5o.md) doesn’t read it directly. The view stores the [`List`](list.md) content closure as an `@escaping` closure that SwiftUI calls when lazily creating list items before they appear on the screen. This means that instead of `LibraryView` depending on a book’s `title`, each [`Text`](text.md) item of the list depends on `title`. Any changes to a `title` updates only the individual [`Text`](text.md) representing the book and not the others.
+However, `LibraryView` doesn’t form a dependency on the property `title` because the view’s [`body`](./view/body-8kl5o.md) doesn’t read it directly. The view stores the [`List`](./list.md) content closure as an `@escaping` closure that SwiftUI calls when lazily creating list items before they appear on the screen. This means that instead of `LibraryView` depending on a book’s `title`, each [`Text`](./text.md) item of the list depends on `title`. Any changes to a `title` updates only the individual [`Text`](./text.md) representing the book and not the others.
 
-> **Note**: Observation tracks changes to any observable property that appears in the execution scope of a view’s [`body`](view/body-8kl5o.md) property.
+> **Note**: Observation tracks changes to any observable property that appears in the execution scope of a view’s [`body`](./view/body-8kl5o.md) property.
 
-You can also share an observable model data object with another view. The receiving view forms a dependency if it reads any properties of the object in its [`body`](view/body-8kl5o.md). For example, in the following code `LibraryView` shares an instance of `Book` with `BookView`, and `BookView` displays the book’s `title`. If the book’s `title` changes, SwiftUI updates only `BookView`, and not `LibraryView`, because only `BookView` reads the `title` property.
+You can also share an observable model data object with another view. The receiving view forms a dependency if it reads any properties of the object in its [`body`](./view/body-8kl5o.md). For example, in the following code `LibraryView` shares an instance of `Book` with `BookView`, and `BookView` displays the book’s `title`. If the book’s `title` changes, SwiftUI updates only `BookView`, and not `LibraryView`, because only `BookView` reads the `title` property.
 
 ```swift
 struct LibraryView: View {
@@ -189,9 +191,9 @@ struct LibraryItemView: View {
 }
 ```
 
-##### Create the Source of Truth for Model Data
+##### Create the source of truth for model data
 
-To create and store the source of truth for model data, declare a private variable and initialize it with a instance of an observable data model type. Then add the [`State()`](state().md) macro to declare that SwiftUI manages the property. For example, the following code stores an instance of the data model type `Book` in the state variable `book`:
+To create and store the source of truth for model data, declare a private variable and initialize it with a instance of an observable data model type. Then add the [`State()`](./state%28%29.md) macro to declare that SwiftUI manages the property. For example, the following code stores an instance of the data model type `Book` in the state variable `book`:
 
 ```swift
 struct BookView: View {
@@ -203,9 +205,9 @@ struct BookView: View {
 }
 ```
 
-By wrapping the book with [`State()`](state().md), you’re telling SwiftUI to manage the storage of the instance. Each time SwiftUI re-creates `BookView`, it connects the `book` variable to the managed instance, providing the view a single source of truth for the model data.
+By wrapping the book with [`State()`](./state%28%29.md), you’re telling SwiftUI to manage the storage of the instance. Each time SwiftUI re-creates `BookView`, it connects the `book` variable to the managed instance, providing the view a single source of truth for the model data.
 
-You can also create a state object in your top-level [`App`](app.md) instance or in one of your app’s [`Scene`](scene.md) instances. For example, the following code creates an instance of `Library` in the app’s top-level structure:
+You can also create a state object in your top-level [`App`](./app.md) instance or in one of your app’s [`Scene`](./scene.md) instances. For example, the following code creates an instance of `Library` in the app’s top-level structure:
 
 ```swift
 @main
@@ -221,7 +223,7 @@ struct BookReaderApp: App {
 }
 ```
 
-##### Share Model Data Throughout a View Hierarchy
+##### Share model data throughout a view hierarchy
 
 If you have a data model object, like `Library`, that you want to share throughout your app, you can either:
 
@@ -230,9 +232,9 @@ If you have a data model object, like `Library`, that you want to share througho
 
 Passing model data to each view is convenient when you have a shallow view hierarchy; for example, when a view doesn’t share the object with its subviews. However, you usually don’t know if a view needs to pass the object to subviews, and you may not know if a subview deep inside the layers of the hierarchy needs the model data.
 
-To share model data throughout a view hierarchy without needing to pass it to each view, add the model data to the view’s environment. You can add the data to the environment using either [`environment(_:_:)`](view/environment(_:_:).md) or the [`environment(_:)`](view/environment(_:).md) modifier, passing in the model data.
+To share model data throughout a view hierarchy without needing to pass it to each view, add the model data to the view’s environment. You can add the data to the environment using either [`environment(_:_:)`](./view/environment%28_,_%29.md) or the [`environment(_:)`](./view/environment%28_%29.md) modifier, passing in the model data.
 
-Before you can use the [`environment(_:_:)`](view/environment(_:_:).md) modifier, you need to create a custom [`EnvironmentKey`](environmentkey.md). Then extend [`EnvironmentValues`](environmentvalues.md) to include a custom environment property that gets and sets the value for the custom key. For instance, the following code creates an environment key and property for `library`:
+Before you can use the [`environment(_:_:)`](./view/environment%28_,_%29.md) modifier, you need to create a custom [`EnvironmentKey`](./environmentkey.md). Then extend [`EnvironmentValues`](./environmentvalues.md) to include a custom environment property that gets and sets the value for the custom key. For instance, the following code creates an environment key and property for `library`:
 
 ```swift
 extension EnvironmentValues {
@@ -247,7 +249,7 @@ private struct LibraryKey: EnvironmentKey {
 }
 ```
 
-With the custom environment key and property in place, a view can add model data to its environment. For example, `LibraryView` adds the source of truth for a `Library` instance to its environment using the [`environment(_:_:)`](view/environment(_:_:).md) modifier:
+With the custom environment key and property in place, a view can add model data to its environment. For example, `LibraryView` adds the source of truth for a `Library` instance to its environment using the [`environment(_:_:)`](./view/environment%28_,_%29.md) modifier:
 
 ```swift
 @main
@@ -263,7 +265,7 @@ struct BookReaderApp: App {
 }
 ```
 
-To retrieve the `Library` instance from the environment, a view defines a local variable that stores a reference to the instance, and then wraps the variable with the [`Environment`](environment.md) property wrapper, passing in the key path to the custom environment value.
+To retrieve the `Library` instance from the environment, a view defines a local variable that stores a reference to the instance, and then wraps the variable with the [`Environment`](./environment.md) property wrapper, passing in the key path to the custom environment value.
 
 ```swift
 struct LibraryView: View {
@@ -275,7 +277,7 @@ struct LibraryView: View {
 }
 ```
 
-You can also store model data directly in the environment without defining a custom environment value by using the [`environment(_:)`](view/environment(_:).md) modifier. For instance, the following code adds a `Library` instance to the environment using this modifier:
+You can also store model data directly in the environment without defining a custom environment value by using the [`environment(_:)`](./view/environment%28_%29.md) modifier. For instance, the following code adds a `Library` instance to the environment using this modifier:
 
 ```swift
 @main
@@ -291,7 +293,7 @@ struct BookReaderApp: App {
 }
 ```
 
-To retrieve the instance from the environment, another view defines a local variable to store the instance and wraps it with the [`Environment`](environment.md) property wrapper. But instead of providing a key path to the environment value, you can provide the model data type, as shown in the following code:
+To retrieve the instance from the environment, another view defines a local variable to store the instance and wraps it with the [`Environment`](./environment.md) property wrapper. But instead of providing a key path to the environment value, you can provide the model data type, as shown in the following code:
 
 ```swift
 struct LibraryView: View {
@@ -303,7 +305,7 @@ struct LibraryView: View {
 }
 ```
 
-By default, reading an object from the environment returns a non-optional object when using the object type as the key. This default behavior assumes that a view in the current hierarchy previously stored a non-optional instance of the type using the [`environment(_:)`](view/environment(_:).md) modifier. If a view attempts to retrieve an object using its type and that object isn’t in the environment, SwiftUI throws exception.
+By default, reading an object from the environment returns a non-optional object when using the object type as the key. This default behavior assumes that a view in the current hierarchy previously stored a non-optional instance of the type using the [`environment(_:)`](./view/environment%28_%29.md) modifier. If a view attempts to retrieve an object using its type and that object isn’t in the environment, SwiftUI throws exception.
 
 In cases where there is no guarantee that an object is in the environment, retrieve an optional version of the object as shown in the following code. If the object isn’t available in the environment, SwiftUI returns `nil` instead of throwing an exception.
 
@@ -311,7 +313,7 @@ In cases where there is no guarantee that an object is in the environment, retri
 @Environment(Library.self) private var library: Library?
 ```
 
-##### Change Model Data in a View
+##### Change model data in a view
 
 In most apps, people can change data that the app presents. When data changes, any views that display the data should update to reflect the changed data. With Observation in SwiftUI, a view can support data changes without using property wrappers or bindings. For example, the following toggles the `isAvailable` property of a book in the action closure of a button:
 
@@ -334,7 +336,7 @@ struct BookView: View {
 }
 ```
 
-However, there may be times when a view expects a binding before it can change the value of a mutable property. To provide a binding, wrap the model data with the [`Bindable`](bindable.md) property wrapper. For example, the following code wraps the `book` variable with `@Bindable`. Then it uses a [`TextField`](textfield.md) to change the `title` property of a book, and a [`Toggle`](toggle.md) to change the `isAvailable` property, using the `$` syntax to pass a binding to each property.
+However, there may be times when a view expects a binding before it can change the value of a mutable property. To provide a binding, wrap the model data with the [`Bindable`](./bindable.md) property wrapper. For example, the following code wraps the `book` variable with `@Bindable`. Then it uses a [`TextField`](./textfield.md) to change the `title` property of a book, and a [`Toggle`](./toggle.md) to change the `isAvailable` property, using the `$` syntax to pass a binding to each property.
 
 ```swift
 struct BookEditView: View {
@@ -366,7 +368,7 @@ struct BookEditView: View {
 }
 ```
 
-You can use the [`Bindable`](bindable.md) property wrapper on properties and variables to an [`Observable`](https://developer.apple.com/documentation/observation/observable) object. This includes global variables, properties that exist outside of SwiftUI types, or even local variables. For example, you can create a `@Bindable` variable within a view’s [`body`](view/body-8kl5o.md):
+You can use the [`Bindable`](./bindable.md) property wrapper on properties and variables to an [`Observable`](../Observation/observable.md) object. This includes global variables, properties that exist outside of SwiftUI types, or even local variables. For example, you can create a `@Bindable` variable within a view’s [`body`](./view/body-8kl5o.md):
 
 ```swift
 struct LibraryView: View {
@@ -381,21 +383,22 @@ struct LibraryView: View {
 }
 ```
 
-The `@Bindable` variable `book` provides a binding that connects [`TextField`](textfield.md) to the `title` property of a book so that a person can make changes directly to the model data.
+The `@Bindable` variable `book` provides a binding that connects [`TextField`](./textfield.md) to the `title` property of a book so that a person can make changes directly to the model data.
 
 ## See Also
 
-- [Migrating from the Observable Object protocol to the Observable macro](migrating-from-the-observable-object-protocol-to-the-observable-macro.md)
+### Creating model data
+- [Migrating from the Observable Object protocol to the Observable macro](./migrating-from-the-observable-object-protocol-to-the-observable-macro.md)
   Update your existing app to leverage the benefits of Observation in Swift.
-- [macro Observable()](../observation/observable().md)
+- [macro Observable()](../Observation/observable%28%29.md)
   Defines and implements conformance of the Observable protocol.
-- [Monitoring data changes in your app](monitoring-model-data-changes-in-your-app.md)
+- [Monitoring data changes in your app](./monitoring-model-data-changes-in-your-app.md)
   Show changes to data in your app’s user interface by using observable objects.
-- [struct StateObject](stateobject.md)
+- [struct StateObject](./stateobject.md)
   A property wrapper type that instantiates an observable object.
-- [struct ObservedObject](observedobject.md)
+- [struct ObservedObject](./observedobject.md)
   A property wrapper type that subscribes to an observable object and invalidates a view whenever the observable object changes.
-- [protocol ObservableObject](../combine/observableobject.md)
+- [protocol ObservableObject](../Combine/observableobject.md)
   A type of object with a publisher that emits before the object has changed.
 
 

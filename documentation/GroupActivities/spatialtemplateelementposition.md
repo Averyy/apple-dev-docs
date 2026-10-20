@@ -1,7 +1,8 @@
 # SpatialTemplateElementPosition
 
 **Framework**: Group Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that defines the position of an element in a spatial template.
 
@@ -30,35 +31,36 @@ struct BasicTemplate: SpatialTemplate {
 ## Topics
 
 ### Getting the app’s position
-- [static var app: SpatialTemplateElementPosition](spatialtemplateelementposition/app.md)
+- [static var app: SpatialTemplateElementPosition](./spatialtemplateelementposition/app.md)
   The position of the app’s content in the shared coordinate space.
 ### Modifying a position
-- [func offsetBy(x: Double, z: Double) -> SpatialTemplateElementPosition](spatialtemplateelementposition/offsetby(x:z:).md)
+- [func offsetBy(x: Double, z: Double) -> SpatialTemplateElementPosition](./spatialtemplateelementposition/offsetby%28x,z%29.md)
   Returns a new position at the specified distance from the origin of the shared coordinate space.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Building a guessing game for visionOS](building-a-guessing-game-for-visionos.md)
+### Custom spatial templates
+- [Building a guessing game for visionOS](./building-a-guessing-game-for-visionos.md)
   Create a team-based guessing game for visionOS using Group Activities.
-- [protocol SpatialTemplate](spatialtemplate.md)
+- [protocol SpatialTemplate](./spatialtemplate.md)
   An interface you use to create custom arrangements of spatial Personas in a scene.
-- [struct SpatialTemplatePreference](spatialtemplatepreference.md)
+- [struct SpatialTemplatePreference](./spatialtemplatepreference.md)
   A structure that specifies the preferred arrangement of participant spatial Personas in a shared simulation space.
-- [struct SpatialTemplateSeatElement](spatialtemplateseatelement.md)
+- [struct SpatialTemplateSeatElement](./spatialtemplateseatelement.md)
   A spatial template element that represents a seat for a participant in the activity.
-- [protocol SpatialTemplateElement](spatialtemplateelement.md)
+- [protocol SpatialTemplateElement](./spatialtemplateelement.md)
   An interface that defines an element in your spatial template.
-- [struct SpatialTemplateElementDirection](spatialtemplateelementdirection.md)
+- [struct SpatialTemplateElementDirection](./spatialtemplateelementdirection.md)
   The initial direction a participant faces when an activity starts.
-- [protocol SpatialTemplateRole](spatialtemplaterole.md)
+- [protocol SpatialTemplateRole](./spatialtemplaterole.md)
   An interface for defining roles that you assign to the participants of a group activity.
 
 

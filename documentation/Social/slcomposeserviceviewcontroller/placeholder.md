@@ -1,7 +1,8 @@
 # placeholder
 
 **Framework**: Social  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that’s displayed in the compose view’s text view when the text view is empty.
 
@@ -17,11 +18,24 @@ A string that’s displayed in the compose view’s text view when the text view
 var placeholder: String! { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst*
+
+```objc
+@property (nonatomic, copy) NSString * placeholder;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy) NSString * placeholder;
+```
+
 ## See Also
 
-- [var contentText: String!](slcomposeserviceviewcontroller/contenttext.md)
+### Managing the Contents of the Post
+- [var contentText: String!](./contenttext.md)
   A string that represents the text which the user entered into the compose view’s text view.
-- [var textView: UITextView!](slcomposeserviceviewcontroller/textview.md)
+- [var textView: UITextView!](./textview.md)
   The editable text view in the compose view.
 
 

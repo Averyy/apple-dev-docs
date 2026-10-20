@@ -1,20 +1,25 @@
 # accessibilityElementCount()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 @MainActor
 func accessibilityElementCount() -> Int
+```
+
+```objc
+- (NSInteger) accessibilityElementCount;
 ```
 
 

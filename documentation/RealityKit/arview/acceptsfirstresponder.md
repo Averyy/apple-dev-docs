@@ -1,12 +1,13 @@
 # acceptsFirstResponder
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the view accepts first responder status.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -17,13 +18,14 @@ A Boolean value that indicates whether the view accepts first responder status.
 
 #### Discussion
 
-An [`ARView`](arview.md) instance sets this value to `true` by default to indicate that it does accept first responder status. See [`NSResponder`](https://developer.apple.com/documentation/appkit/nsresponder) for more information about the responder chain.
+An [`ARView`](../arview.md) instance sets this value to `true` by default to indicate that it does accept first responder status. See [`NSResponder`](../../AppKit/nsresponder.md) for more information about the responder chain.
 
 ## See Also
 
-- [func keyDown(with: NSEvent)](arview/keydown(with:).md)
+### Handling keyboard input
+- [func keyDown(with: NSEvent)](./keydown%28with%29.md)
   Informs the view that the user has pressed a key.
-- [func keyUp(with: NSEvent)](arview/keyup(with:).md)
+- [func keyUp(with: NSEvent)](./keyup%28with%29.md)
   Informs the view that the user has released a key.
 
 

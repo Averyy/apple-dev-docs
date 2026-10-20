@@ -1,16 +1,17 @@
 # MortSwashSubtable
 
 **Framework**: Core Text  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,36 +19,41 @@
 struct MortSwashSubtable
 ```
 
+```c
+struct MortSwashSubtable;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](mortswashsubtable/init.md)
-- [init(lookup: SFNTLookupTable)](mortswashsubtable/init(lookup:).md)
+- [init()](./mortswashsubtable/init%28%29.md)
+- [init(lookup: SFNTLookupTable)](./mortswashsubtable/init%28lookup%29.md)
 ### Instance Properties
-- [var lookup: SFNTLookupTable](mortswashsubtable/lookup.md)
+- [var lookup: SFNTLookupTable](./mortswashsubtable/lookup.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct AnchorPoint](anchorpoint.md)
-- [struct AnchorPointTable](anchorpointtable.md)
-- [struct AnkrTable](ankrtable.md)
-- [struct BslnFormat0Part](bslnformat0part.md)
-- [struct BslnFormat1Part](bslnformat1part.md)
-- [struct BslnFormat2Part](bslnformat2part.md)
-- [struct BslnFormat3Part](bslnformat3part.md)
-- [struct BslnFormatUnion](bslnformatunion.md)
-- [struct BslnTable](bslntable.md)
-- [struct FontVariation](fontvariation.md)
-- [struct JustDirectionTable](justdirectiontable.md)
-- [struct JustPCAction](justpcaction.md)
-- [struct JustPCActionSubrecord](justpcactionsubrecord.md)
-- [struct JustPCConditionalAddAction](justpcconditionaladdaction.md)
-- [struct JustPCDecompositionAction](justpcdecompositionaction.md)
+### Structures
+- [struct AnchorPoint](./anchorpoint.md)
+- [struct AnchorPointTable](./anchorpointtable.md)
+- [struct AnkrTable](./ankrtable.md)
+- [struct BslnFormat0Part](./bslnformat0part.md)
+- [struct BslnFormat1Part](./bslnformat1part.md)
+- [struct BslnFormat2Part](./bslnformat2part.md)
+- [struct BslnFormat3Part](./bslnformat3part.md)
+- [struct BslnFormatUnion](./bslnformatunion.md)
+- [struct BslnTable](./bslntable.md)
+- [struct FontVariation](./fontvariation.md)
+- [struct JustDirectionTable](./justdirectiontable.md)
+- [struct JustPCAction](./justpcaction.md)
+- [struct JustPCActionSubrecord](./justpcactionsubrecord.md)
+- [struct JustPCConditionalAddAction](./justpcconditionaladdaction.md)
+- [struct JustPCDecompositionAction](./justpcdecompositionaction.md)
 
 
 ---

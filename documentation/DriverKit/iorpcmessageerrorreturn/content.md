@@ -1,23 +1,25 @@
 # content
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 IORPCMessageErrorReturnContent content;
 ```
 
 ## See Also
 
-- [mach](iorpcmessageerrorreturn/mach.md)
+### Getting the Properties
+- [mach](./mach.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # timeSamples(in:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns time samples authored within the specified interval.
 

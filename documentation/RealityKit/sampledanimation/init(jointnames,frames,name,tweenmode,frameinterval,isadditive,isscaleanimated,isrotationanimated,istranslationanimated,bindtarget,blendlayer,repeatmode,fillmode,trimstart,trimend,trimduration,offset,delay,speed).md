@@ -1,7 +1,8 @@
 # init(jointNames:frames:name:tweenMode:frameInterval:isAdditive:isScaleAnimated:isRotationAnimated:isTranslationAnimated:bindTarget:blendLayer:repeatMode:fillMode:trimStart:trimEnd:trimDuration:offset:delay:speed:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an animation that interpolates between two configurations of the given joints.
 
@@ -11,13 +12,15 @@ Creates an animation that interpolates between two configurations of the given j
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
 ```swift
 init(jointNames: [String], frames: [Value], name: String = "", tweenMode: TweenMode = .linear, frameInterval: Float = 1.0 / 30.0, isAdditive: Bool = false, isScaleAnimated: Bool = true, isRotationAnimated: Bool = true, isTranslationAnimated: Bool = true, bindTarget: BindTarget? = nil, blendLayer: Int32 = 0, repeatMode: AnimationRepeatMode = .none, fillMode: AnimationFillMode = [], trimStart: TimeInterval? = nil, trimEnd: TimeInterval? = nil, trimDuration: TimeInterval? = nil, offset: TimeInterval = 0, delay: TimeInterval = 0, speed: Float = 1.0)
 ```
+
+Available when `Value` is `JointTransforms`.
 
 ## Parameters
 
@@ -43,7 +46,8 @@ init(jointNames: [String], frames: [Value], name: String = "", tweenMode: TweenM
 
 ## See Also
 
-- [init(frames: [Value], name: String, tweenMode: TweenMode, frameInterval: Float, isAdditive: Bool, bindTarget: BindTarget?, blendLayer: Int32, repeatMode: AnimationRepeatMode, fillMode: AnimationFillMode, trimStart: TimeInterval?, trimEnd: TimeInterval?, trimDuration: TimeInterval?, offset: TimeInterval, delay: TimeInterval, speed: Float)](sampledanimation/init(frames:name:tweenmode:frameinterval:isadditive:bindtarget:blendlayer:repeatmode:fillmode:trimstart:trimend:trimduration:offset:delay:speed:).md)
+### Creating an animation
+- [init(frames: [Value], name: String, tweenMode: TweenMode, frameInterval: Float, isAdditive: Bool, bindTarget: BindTarget?, blendLayer: Int32, repeatMode: AnimationRepeatMode, fillMode: AnimationFillMode, trimStart: TimeInterval?, trimEnd: TimeInterval?, trimDuration: TimeInterval?, offset: TimeInterval, delay: TimeInterval, speed: Float)](./init%28frames,name,tweenmode,frameinterval,isadditive,bindtarget,blendlayer,repeatmode,fillmode,trimstart,trimend,trimduration,offset,delay,speed%29.md)
   Creates an animation with a collection of frames that represent incremental steps in the overall timeline.
 
 

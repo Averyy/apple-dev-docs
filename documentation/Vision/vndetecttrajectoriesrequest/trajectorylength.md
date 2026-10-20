@@ -1,7 +1,8 @@
 # trajectoryLength
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of points to detect before calculating a trajectory.
 
@@ -19,17 +20,22 @@ The number of points to detect before calculating a trajectory.
 var trajectoryLength: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger trajectoryLength;
+```
+
 ## See Also
 
-- [var targetFrameTime: CMTime](vndetecttrajectoriesrequest/targetframetime.md)
+### Configuring the Request
+- [var targetFrameTime: CMTime](./targetframetime.md)
   The requested target frame time for processing trajectory detection.
-- [var objectMinimumNormalizedRadius: Float](vndetecttrajectoriesrequest/objectminimumnormalizedradius.md)
+- [var objectMinimumNormalizedRadius: Float](./objectminimumnormalizedradius.md)
   The minimum radius of the bounding circle of the object to track.
-- [var objectMaximumNormalizedRadius: Float](vndetecttrajectoriesrequest/objectmaximumnormalizedradius.md)
+- [var objectMaximumNormalizedRadius: Float](./objectmaximumnormalizedradius.md)
   The maximum radius of the bounding circle of the object to track.
-- [var minimumObjectSize: Float](vndetecttrajectoriesrequest/minimumobjectsize.md)
+- [var minimumObjectSize: Float](./minimumobjectsize.md)
   The minimum radius of the tracked shape’s bounding circle.
-- [var maximumObjectSize: Float](vndetecttrajectoriesrequest/maximumobjectsize.md)
+- [var maximumObjectSize: Float](./maximumobjectsize.md)
   The maximum radius of the tracked shape’s bounding circle.
 
 

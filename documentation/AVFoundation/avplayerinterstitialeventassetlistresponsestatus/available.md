@@ -1,7 +1,8 @@
 # AVPlayerInterstitialEventAssetListResponseStatus.available
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that a valid asset list response is available.
 
@@ -20,15 +21,20 @@ Indicates that a valid asset list response is available.
 case available
 ```
 
+```c
+AVPlayerInterstitialEventAssetListResponseStatusAvailable
+```
+
 #### Discussion
 
-You can retrieve the value by querying the [`assetListResponse`](avplayerinterstitialevent/assetlistresponse.md) property of the interstitial event.
+You can retrieve the value by querying the [`assetListResponse`](../avplayerinterstitialevent/assetlistresponse.md) property of the interstitial event.
 
 ## See Also
 
-- [AVPlayerInterstitialEventAssetListResponseStatus.cleared](avplayerinterstitialeventassetlistresponsestatus/cleared.md)
+### Status values
+- [AVPlayerInterstitialEventAssetListResponseStatus.cleared](./cleared.md)
   Indicates that the system cleared the asset list response.
-- [AVPlayerInterstitialEventAssetListResponseStatus.unavailable](avplayerinterstitialeventassetlistresponsestatus/unavailable.md)
+- [AVPlayerInterstitialEventAssetListResponseStatus.unavailable](./unavailable.md)
   Indicates that the asset list response is unavailable.
 
 

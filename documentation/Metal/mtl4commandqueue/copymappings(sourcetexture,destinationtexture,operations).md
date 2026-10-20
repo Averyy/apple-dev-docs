@@ -1,7 +1,8 @@
 # copyMappings(sourceTexture:destinationTexture:operations:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies multiple regions within a source placement sparse texture to a destination placement sparse texture.
 
@@ -21,7 +22,7 @@ func copyMappings(sourceTexture: any MTLTexture, destinationTexture: any MTLText
 
 #### Discussion
 
-You are responsible for ensuring the source and destination textures have the same [`placementSparsePageSize`](mtltexturedescriptor/placementsparsepagesize.md).
+You are responsible for ensuring the source and destination textures have the same [`placementSparsePageSize`](../mtltexturedescriptor/placementsparsepagesize.md).
 
 Additionally, you are responsible for ensuring that the source and destination textures don’t use the same aliased tiles at the same time.
 
@@ -29,9 +30,9 @@ Additionally, you are responsible for ensuring that the source and destination t
 
 ## Parameters
 
-- `sourceTexture`: The source placement sparse [`MTLTexture`](mtltexture.md).
-- `destinationTexture`: The destination placement sparse [`MTLTexture`](mtltexture.md).
-- `operations`: An array of [`MTL4CopySparseTextureMappingOperation`](mtl4copysparsetexturemappingoperation.md) instances to perform.
+- `sourceTexture`: The source placement sparse [`MTLTexture`](../mtltexture.md).
+- `destinationTexture`: The destination placement sparse [`MTLTexture`](../mtltexture.md).
+- `operations`: An array of [`MTL4CopySparseTextureMappingOperation`](../mtl4copysparsetexturemappingoperation.md) instances to perform.
 
 
 ---

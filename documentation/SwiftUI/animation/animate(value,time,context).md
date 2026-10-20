@@ -1,7 +1,8 @@
 # animate(value:time:context:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates the current value of the animation.
 

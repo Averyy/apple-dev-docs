@@ -1,7 +1,8 @@
 # typeIEEE32BitFloatingPoint
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 32-bit floating point value.
 

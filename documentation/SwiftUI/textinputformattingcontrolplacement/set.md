@@ -1,7 +1,8 @@
 # TextInputFormattingControlPlacement.Set
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of system text formatting controls.
 
@@ -23,27 +24,27 @@ struct Set
 ## Topics
 
 ### Type Properties
-- [static let accessoryBar: TextInputFormattingControlPlacement.Set](textinputformattingcontrolplacement/set/accessorybar.md)
+- [static let accessoryBar: TextInputFormattingControlPlacement.Set](./set/accessorybar.md)
   Text formatting controls placed beneath the window toolbar on macOS.
-- [static let all: TextInputFormattingControlPlacement.Set](textinputformattingcontrolplacement/set/all.md)
-- [static let contextMenu: TextInputFormattingControlPlacement.Set](textinputformattingcontrolplacement/set/contextmenu.md)
+- [static let all: TextInputFormattingControlPlacement.Set](./set/all.md)
+- [static let contextMenu: TextInputFormattingControlPlacement.Set](./set/contextmenu.md)
   Text formatting controls placed in the context menu, and the edit menu on iOS.
-- [static let `default`: TextInputFormattingControlPlacement.Set](textinputformattingcontrolplacement/set/default.md)
-- [static let fontPanel: TextInputFormattingControlPlacement.Set](textinputformattingcontrolplacement/set/fontpanel.md)
+- [static let `default`: TextInputFormattingControlPlacement.Set](./set/default.md)
+- [static let fontPanel: TextInputFormattingControlPlacement.Set](./set/fontpanel.md)
   Text formatting controls for choosing fonts that appear in a dedicated window on macOS.
-- [static let inputAssistant: TextInputFormattingControlPlacement.Set](textinputformattingcontrolplacement/set/inputassistant.md)
+- [static let inputAssistant: TextInputFormattingControlPlacement.Set](./set/inputassistant.md)
   Expanded text formatting controls which appear in the shortcuts bar on iPadOS or in the bottom ornament on visionOS.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

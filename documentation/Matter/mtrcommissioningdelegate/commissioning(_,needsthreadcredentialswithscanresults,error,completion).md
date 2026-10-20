@@ -1,7 +1,8 @@
 # commissioning(_:needsThreadCredentialsWithScanResults:error:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Callback that gets called for a commissionee that supports Thread if Thread network commissioning is required and an operational dataset was not provided in MTRCommissioningParameters.
 
@@ -17,7 +18,15 @@ Callback that gets called for a commissionee that supports Thread if Thread netw
 ## Declaration
 
 ```swift
+optional func commissioning(_ commissioning: MTRCommissioningOperation, needsThreadCredentialsWithScanResults networks: [MTRNetworkCommissioningClusterThreadInterfaceScanResultStruct]?, error: (any Error)?, completion: @escaping @Sendable (Data) -> Void)
+```
+
+```swift
 optional func commissioning(_ commissioning: MTRCommissioningOperation, needsThreadCredentialsWithScanResults networks: [MTRNetworkCommissioningClusterThreadInterfaceScanResultStruct]?, error: (any Error)?) async -> Data
+```
+
+```objc
+- (void) commissioning:(MTRCommissioningOperation *) commissioning needsThreadCredentialsWithScanResults:(NSArray<MTRNetworkCommissioningClusterThreadInterfaceScanResultStruct *> *) networks error:(NSError *) error completion:(void (^)(NSData *operationalDataset)) completion;
 ```
 
 #### Discussion

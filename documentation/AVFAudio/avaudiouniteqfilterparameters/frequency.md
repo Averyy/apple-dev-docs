@@ -1,7 +1,8 @@
 # frequency
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frequency of the equalizer filter, in hertz.
 
@@ -20,21 +21,26 @@ The frequency of the equalizer filter, in hertz.
 var frequency: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float frequency;
+```
+
 #### Discussion
 
 The valid range of values is `20 Hz` through `(SampleRate/2)`.
 
 ## See Also
 
-- [var bandwidth: Float](avaudiouniteqfilterparameters/bandwidth.md)
+### Configuring a filter band
+- [var bandwidth: Float](./bandwidth.md)
   The bandwidth of the equalizer filter, in octaves.
-- [var bypass: Bool](avaudiouniteqfilterparameters/bypass.md)
+- [var bypass: Bool](./bypass.md)
   The bypass state of the equalizer filter band.
-- [var filterType: AVAudioUnitEQFilterType](avaudiouniteqfilterparameters/filtertype.md)
+- [var filterType: AVAudioUnitEQFilterType](./filtertype.md)
   The equalizer filter type.
-- [enum AVAudioUnitEQFilterType](avaudiouniteqfiltertype.md)
+- [enum AVAudioUnitEQFilterType](../avaudiouniteqfiltertype.md)
   Filter types available to use with the filter type property.
-- [var gain: Float](avaudiouniteqfilterparameters/gain.md)
+- [var gain: Float](./gain.md)
   The gain of the equalizer filter, in decibels.
 
 

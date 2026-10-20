@@ -1,7 +1,8 @@
 # CSSM_ALGID_GOST
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_ALGID_GOST: UInt32 { get }
+```
+
+```c
+CSSM_ALGID_GOST
 ```
 
 

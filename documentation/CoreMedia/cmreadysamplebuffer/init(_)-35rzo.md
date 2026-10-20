@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Convert a ready sample buffer to dynamic content.
 
@@ -19,6 +20,8 @@ Convert a ready sample buffer to dynamic content.
 ```swift
 init(_ other: CMReadySampleBuffer<some CMSampleBuffer.Content>)
 ```
+
+Available when `Content` is `CMSampleBuffer.DynamicContent`.
 
 
 ---

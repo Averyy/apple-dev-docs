@@ -1,7 +1,8 @@
 # UIMenu
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for grouping related menu elements in an app menu or contextual menu.
 
@@ -19,9 +20,13 @@ A container for grouping related menu elements in an app menu or contextual menu
 class UIMenu
 ```
 
+```objc
+@interface UIMenu : UIMenuElement
+```
+
 #### Overview
 
-Create [`UIMenu`](uimenu.md) objects and use them to construct the menus and submenus your app displays. You provide menus for your app when it runs on macOS, and key command elements in those menus also appear in the discoverability HUD on iPad when someone presses the Command key. You also use menus to display contextual actions in response to specific interactions with one of your views. Every menu has a title, an optional image, and an optional set of child elements. When someone selects an element from the menu, the system executes the code you provide. The code sample below illustrates adding a menu group that contains two menu elements — New and Open — to the File menu.
+Create [`UIMenu`](./uimenu.md) objects and use them to construct the menus and submenus your app displays. You provide menus for your app when it runs on macOS, and key command elements in those menus also appear in the discoverability HUD on iPad when someone presses the Command key. You also use menus to display contextual actions in response to specific interactions with one of your views. Every menu has a title, an optional image, and an optional set of child elements. When someone selects an element from the menu, the system executes the code you provide. The code sample below illustrates adding a menu group that contains two menu elements — New and Open — to the File menu.
 
 ```swift
 // Ensure that the builder is modifying the menu bar system.
@@ -45,74 +50,75 @@ let newMenu = UIMenu(title: "", options: .displayInline, children: [newDocument,
 builder.insertChild(newMenu, atStartOfMenu: .file)
 ```
 
-For examples of how you use [`UIMenu`](uimenu.md), see [`Adding menus and shortcuts to the menu bar and user interface`](adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md).
+For examples of how you use [`UIMenu`](./uimenu.md), see [Adding menus and shortcuts to the menu bar and user interface](./adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md).
 
 ## Topics
 
 ### Creating a menu object
-- [convenience init(title: String, image: UIImage?, identifier: UIMenu.Identifier?, options: UIMenu.Options, children: [UIMenuElement])](uimenu/init(title:image:identifier:options:children:).md)
+- [convenience init(title: String, image: UIImage?, identifier: UIMenu.Identifier?, options: UIMenu.Options, children: [UIMenuElement])](./uimenu/init%28title,image,identifier,options,children%29.md)
   Creates a new menu with the specified values.
-- [convenience init(title: String, subtitle: String?, image: UIImage?, identifier: UIMenu.Identifier?, options: UIMenu.Options, children: [UIMenuElement])](uimenu/init(title:subtitle:image:identifier:options:children:).md)
+- [convenience init(title: String, subtitle: String?, image: UIImage?, identifier: UIMenu.Identifier?, options: UIMenu.Options, children: [UIMenuElement])](./uimenu/init%28title,subtitle,image,identifier,options,children%29.md)
   Creates a new menu with the specified title, subtitle, image, identifier, menu options, and child elements.
-- [convenience init(title: String, subtitle: String?, image: UIImage?, identifier: UIMenu.Identifier?, options: UIMenu.Options, preferredElementSize: UIMenu.ElementSize, children: [UIMenuElement])](uimenu/init(title:subtitle:image:identifier:options:preferredelementsize:children:).md)
+- [convenience init(title: String, subtitle: String?, image: UIImage?, identifier: UIMenu.Identifier?, options: UIMenu.Options, preferredElementSize: UIMenu.ElementSize, children: [UIMenuElement])](./uimenu/init%28title,subtitle,image,identifier,options,preferredelementsize,children%29.md)
   Creates a new menu with the specified title, subtitle, image, identifier, menu options, element size, and child elements.
-- [UIMenu.Identifier](uimenu/identifier-swift.struct.md)
+- [UIMenu.Identifier](./uimenu/identifier-swift.struct.md)
   Constants you use to identify an app’s standard menus.
-- [UIMenu.Options](uimenu/options-swift.struct.md)
+- [UIMenu.Options](./uimenu/options-swift.struct.md)
   Options you use to configure a menu’s appearance.
-- [init?(coder: NSCoder)](uimenu/init(coder:).md)
+- [init?(coder: NSCoder)](./uimenu/init%28coder%29.md)
   Creates a menu from data in an unarchiver.
 ### Accessing child elements
-- [var children: [UIMenuElement]](uimenu/children.md)
+- [var children: [UIMenuElement]](./uimenu/children.md)
   The contents of the menu.
-- [func replacingChildren([UIMenuElement]) -> UIMenu](uimenu/replacingchildren(_:).md)
+- [func replacingChildren([UIMenuElement]) -> UIMenu](./uimenu/replacingchildren%28_%29.md)
   Creates a new menu with the same configuration as the current menu, but with a new set of child elements.
 ### Accessing selected elements
-- [var selectedElements: [UIMenuElement]](uimenu/selectedelements.md)
+- [var selectedElements: [UIMenuElement]](./uimenu/selectedelements.md)
   The elements in the menu and its sub-menus that are in the on state.
 ### Getting menu details
-- [var identifier: UIMenu.Identifier](uimenu/identifier-swift.property.md)
+- [var identifier: UIMenu.Identifier](./uimenu/identifier-swift.property.md)
   The unique identifier for the current menu.
-- [var options: UIMenu.Options](uimenu/options-swift.property.md)
+- [var options: UIMenu.Options](./uimenu/options-swift.property.md)
   The configuration options for the current menu.
 ### Specifying size of menu elements
-- [var preferredElementSize: UIMenu.ElementSize](uimenu/preferredelementsize.md)
+- [var preferredElementSize: UIMenu.ElementSize](./uimenu/preferredelementsize.md)
   The size of the menu’s child elements.
-- [UIMenu.ElementSize](uimenu/elementsize.md)
+- [UIMenu.ElementSize](./uimenu/elementsize.md)
   Constants that determine the size of an element in a menu.
 ### Customizing menu display
-- [var displayPreferences: UIMenuDisplayPreferences?](uimenu/displaypreferences.md)
+- [var displayPreferences: UIMenuDisplayPreferences?](./uimenu/displaypreferences.md)
   An object that configures how UIKit displays the menu.
-- [class UIMenuDisplayPreferences](uimenudisplaypreferences.md)
+- [class UIMenuDisplayPreferences](./uimenudisplaypreferences.md)
   An object that contains information for configuring a menu’s display.
 ### Initializers
-- [convenience init(title: String, subtitle: String?, image: UIImage?, preferredImageVisibility: UIMenuElement.ImageVisibility, identifier: UIMenu.Identifier?, options: UIMenu.Options, preferredElementSize: UIMenu.ElementSize, children: [UIMenuElement])](uimenu/init(title:subtitle:image:preferredimagevisibility:identifier:options:preferredelementsize:children:).md)
+- [convenience init(title: String, subtitle: String?, image: UIImage?, preferredImageVisibility: UIMenuElement.ImageVisibility, identifier: UIMenu.Identifier?, options: UIMenu.Options, preferredElementSize: UIMenu.ElementSize, children: [UIMenuElement])](./uimenu/init%28title,subtitle,image,preferredimagevisibility,identifier,options,preferredelementsize,children%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [UIMenuElement](uimenuelement.md)
+- [UIMenuElement](./uimenuelement.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIAccessibilityIdentification](uiaccessibilityidentification.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIAccessibilityIdentification](./uiaccessibilityidentification.md)
 
 ## See Also
 
-- [protocol UIMenuBuilder](uimenubuilder.md)
+### App menus
+- [protocol UIMenuBuilder](./uimenubuilder.md)
   An interface for adding and removing menus from a menu system.
-- [class UIMenuSystem](uimenusystem.md)
+- [class UIMenuSystem](./uimenusystem.md)
   An object representing a main or contextual menu system.
-- [class UIMainMenuSystem](uimainmenusystem.md)
+- [class UIMainMenuSystem](./uimainmenusystem.md)
   The main menu system.
 
 

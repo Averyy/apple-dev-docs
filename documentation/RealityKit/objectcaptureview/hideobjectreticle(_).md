@@ -1,7 +1,8 @@
 # hideObjectReticle(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hides the object selection reticle when the session is in `.ready` state if set to true. Example: ObjectCaptureView(session: mySession) .hideObjectReticle()
 
@@ -15,6 +16,8 @@ Hides the object selection reticle when the session is in `.ready` state if set 
 @MainActor
 @preconcurrency func hideObjectReticle(_ value: Bool = true) -> ObjectCaptureView<Overlay>
 ```
+
+Available when `Overlay` conforms to `View`.
 
 #### Discussion
 

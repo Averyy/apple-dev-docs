@@ -1,7 +1,8 @@
 # HKStatisticsQueryDescriptor
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A query descriptor that calculates the minimum, maximum, average, or sum over a set of samples from the HealthKit store.
 
@@ -10,7 +11,7 @@ A query descriptor that calculates the minimum, maximum, average, or sum over a 
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -21,11 +22,11 @@ struct HKStatisticsQueryDescriptor
 
 ## Mentions
 
-- [Reading data from HealthKit](reading-data-from-healthkit.md)
+- [Reading data from HealthKit](./reading-data-from-healthkit.md)
 
 #### Overview
 
-Use the [`HKStatisticsQueryDescriptor`](hkstatisticsquerydescriptor.md) to perform calculations over sets of samples currently saved in the HealthKit store.
+Use the [`HKStatisticsQueryDescriptor`](./hkstatisticsquerydescriptor.md) to perform calculations over sets of samples currently saved in the HealthKit store.
 
 ```swift
 // Create a predicate for today's samples.
@@ -50,43 +51,44 @@ let stepCount = try await sumOfStepsQuery.result(for: store)?
 ## Topics
 
 ### Creating Query Descriptors
-- [init(predicate: HKSamplePredicate<HKQuantitySample>, options: HKStatisticsOptions)](hkstatisticsquerydescriptor/init(predicate:options:).md)
+- [init(predicate: HKSamplePredicate<HKQuantitySample>, options: HKStatisticsOptions)](./hkstatisticsquerydescriptor/init%28predicate,options%29.md)
   Creates a statistics query descriptor.
 ### Running Queries
-- [func result(for: HKHealthStore) async throws -> HKStatistics?](hkstatisticsquerydescriptor/result(for:).md)
+- [func result(for: HKHealthStore) async throws -> HKStatistics?](./hkstatisticsquerydescriptor/result%28for%29.md)
   Runs a one-shot query and asynchronously returns a snapshot of the current matching results.
 ### Accessing Query Properties
-- [var predicate: HKSamplePredicate<HKQuantitySample>](hkstatisticsquerydescriptor/predicate.md)
+- [var predicate: HKSamplePredicate<HKQuantitySample>](./hkstatisticsquerydescriptor/predicate.md)
   A predicate that defines the set of data that the query uses to calculate the statistics.
-- [var options: HKStatisticsOptions](hkstatisticsquerydescriptor/options.md)
+- [var options: HKStatisticsOptions](./hkstatisticsquerydescriptor/options.md)
   A list of options that define the type of statistical calculations performed and the way in which HealthKit merges data from multiple sources.
 ### Default Implementations
-- [HKAsyncQuery Implementations](hkstatisticsquerydescriptor/hkasyncquery-implementations.md)
+- [HKAsyncQuery Implementations](./hkstatisticsquerydescriptor/hkasyncquery-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [HKAsyncQuery](hkasyncquery.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [HKAsyncQuery](./hkasyncquery.md)
 
 ## See Also
 
-- [Executing Statistical Queries](executing-statistical-queries.md)
+### Statistics
+- [Executing Statistical Queries](./executing-statistical-queries.md)
   Create and run statistical queries.
-- [Executing Statistics Collection Queries](executing-statistics-collection-queries.md)
+- [Executing Statistics Collection Queries](./executing-statistics-collection-queries.md)
   Calculate statistical data for graphs and charts.
-- [class HKStatisticsQuery](hkstatisticsquery.md)
+- [class HKStatisticsQuery](./hkstatisticsquery.md)
   A query that performs statistical calculations over a set of matching quantity samples, and returns the results.
-- [struct HKStatisticsCollectionQueryDescriptor](hkstatisticscollectionquerydescriptor.md)
+- [struct HKStatisticsCollectionQueryDescriptor](./hkstatisticscollectionquerydescriptor.md)
   A query descriptor that gathers a collection of statistics calculated over a series of fixed-length time intervals.
-- [class HKStatisticsCollectionQuery](hkstatisticscollectionquery.md)
+- [class HKStatisticsCollectionQuery](./hkstatisticscollectionquery.md)
   A query that performs multiple statistics queries over a series of fixed-length time intervals.
-- [class HKStatistics](hkstatistics.md)
+- [class HKStatistics](./hkstatistics.md)
   An object that represents the result of calculating the minimum, maximum, average, or sum over a set of samples from the HealthKit store.
-- [class HKStatisticsCollection](hkstatisticscollection.md)
+- [class HKStatisticsCollection](./hkstatisticscollection.md)
   An object that manages a collection of statistics, representing the results calculated over separate time intervals.
-- [struct HKStatisticsOptions](hkstatisticsoptions.md)
+- [struct HKStatisticsOptions](./hkstatisticsoptions.md)
   Options for specifying the statistic to calculate.
 
 

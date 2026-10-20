@@ -1,7 +1,8 @@
 # isAutoShutdownEnabled
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the haptic engine starts and stops automatically on request from one of its pattern players, or when idle.
 
@@ -19,13 +20,17 @@ A Boolean value that indicates whether the haptic engine starts and stops automa
 var isAutoShutdownEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isAutoShutdownEnabled) BOOL autoShutdownEnabled;
+```
+
 #### Discussion
 
-If you manually manage the engine’s life cycle, save power by stopping the engine when it’s not in use. You can enable the engine to automatically manage this behavior by setting the value to [`true`](https://developer.apple.com/documentation/swift/true). When this property is enabled, the engine shuts down after approximately two minutes of inactivity.
+If you manually manage the engine’s life cycle, save power by stopping the engine when it’s not in use. You can enable the engine to automatically manage this behavior by setting the value to [`true`](../../Swift/true.md). When this property is enabled, the engine shuts down after approximately two minutes of inactivity.
 
 Delegating this responsibility to the framework makes the engine more manageable, but you no longer have fine-grained control of its life cycle.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 
 ---

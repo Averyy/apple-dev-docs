@@ -1,7 +1,8 @@
 # PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Your service’s response to a request to resolve the repeat mode in a play media intent.
 
@@ -10,14 +11,14 @@ Your service’s response to a request to resolve the repeat mode in a play medi
 
 ## Declaration
 
-```swift
+```
 object PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse
 ```
 
 ## Topics
 
 ### Specifying a Result
-- [object PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse.Result](playmediaintenthandlingresolveplaybackrepeatmodeinvocationresponse/result-data.dictionary.md)
+- [object PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse.Result](./playmediaintenthandlingresolveplaybackrepeatmodeinvocationresponse/result-data.dictionary.md)
   The result of resolving the repeat mode for a play media intent.
 
 ## Properties
@@ -25,18 +26,21 @@ object PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse
 - `result` (PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse.Result) *(required)*: The result of processing the intent.
 - `method` (string) *(required)*: The action your service takes to process this intent.
 
+  **Allowed Values**: `PlayMediaIntentHandling.resolvePlaybackRepeatMode`
+
 ## Relationships
 
 ### Inherits From
-- [InvocationResponse](invocationresponse.md)
+- [InvocationResponse](./invocationresponse.md)
 
 ## See Also
 
-- [object PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse.Result](playmediaintenthandlingresolveplaybackrepeatmodeinvocationresponse/result-data.dictionary.md)
+### Resolving the Intended Repeat Mode
+- [object PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse.Result](./playmediaintenthandlingresolveplaybackrepeatmodeinvocationresponse/result-data.dictionary.md)
   The result of resolving the repeat mode for a play media intent.
-- [object PlaybackRepeatModeResolutionResult](playbackrepeatmoderesolutionresult.md)
+- [object PlaybackRepeatModeResolutionResult](./playbackrepeatmoderesolutionresult.md)
   Information about whether your service can identify the specified repeat mode.
-- [type PlaybackRepeatMode](playbackrepeatmode.md)
+- [type PlaybackRepeatMode](./playbackrepeatmode.md)
   The possible repeat modes for a media queue.
 
 

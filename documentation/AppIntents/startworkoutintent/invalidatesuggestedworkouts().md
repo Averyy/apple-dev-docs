@@ -1,7 +1,8 @@
 # invalidateSuggestedWorkouts()
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Tells the system when the list of suggested workouts changes.
 
@@ -11,7 +12,7 @@ Tells the system when the list of suggested workouts changes.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,19 +23,20 @@ static func invalidateSuggestedWorkouts()
 
 ## Mentions
 
-- [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
+- [Responding to the Action button on Apple Watch Ultra](../actionbuttonarticle.md)
 
 #### Discussion
 
-Call this method when you change the value of the [`suggestedWorkouts`](startworkoutintent/suggestedworkouts.md) property.
+Call this method when you change the value of the [`suggestedWorkouts`](./suggestedworkouts.md) property.
 
 ## See Also
 
-- [associatedtype WorkoutStyle : AppValue](startworkoutintent/workoutstyle-swift.associatedtype.md)
+### Defining supported workouts
+- [associatedtype WorkoutStyle : AppValue](./workoutstyle-swift.associatedtype.md)
   The type to use for defining the intent’s workout style.
-- [var workoutStyle: Self.WorkoutStyle](startworkoutintent/workoutstyle-swift.property.md)
+- [var workoutStyle: Self.WorkoutStyle](./workoutstyle-swift.property.md)
   The workout style for the intent.
-- [static var suggestedWorkouts: [Self]](startworkoutintent/suggestedworkouts.md)
+- [static var suggestedWorkouts: [Self]](./suggestedworkouts.md)
   A list of the supported workout styles.
 
 

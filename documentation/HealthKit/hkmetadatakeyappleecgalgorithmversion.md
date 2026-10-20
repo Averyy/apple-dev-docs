@@ -1,7 +1,8 @@
 # HKMetadataKeyAppleECGAlgorithmVersion
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key for metadata indicating the version number of the algorithm Apple Watch uses to generate an ECG reading.
 
@@ -19,13 +20,18 @@ A key for metadata indicating the version number of the algorithm Apple Watch us
 let HKMetadataKeyAppleECGAlgorithmVersion: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyAppleECGAlgorithmVersion;
+```
+
 #### Discussion
 
-Apple Watch sets this key on the [`HKElectrocardiogram`](hkelectrocardiogram.md) samples it creates. The key is read-only.
+Apple Watch sets this key on the [`HKElectrocardiogram`](./hkelectrocardiogram.md) samples it creates. The key is read-only.
 
 ## See Also
 
-- [enum HKAppleECGAlgorithmVersion](hkappleecgalgorithmversion.md)
+### Specifying Metadata
+- [enum HKAppleECGAlgorithmVersion](./hkappleecgalgorithmversion.md)
   Version numbers for the algorithm Apple Watch uses to generate an ECG reading.
 
 

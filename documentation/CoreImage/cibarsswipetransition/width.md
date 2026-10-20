@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The width of each bar.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The width of each bar.
 var width: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float width;
+```
+
 ## See Also
 
-- [var angle: Float](cibarsswipetransition/angle.md)
+### Instance Properties
+- [var angle: Float](./angle.md)
   The angle, in radians, of the bars.
-- [var barOffset: Float](cibarsswipetransition/baroffset.md)
+- [var barOffset: Float](./baroffset.md)
   The offset of one bar with respect to another.
 
 

@@ -1,7 +1,8 @@
 # maximumRelativeValue
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that maps to the maximum viewer offset.
 
@@ -9,7 +10,7 @@ The value that maps to the maximum viewer offset.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ The value that maps to the maximum viewer offset.
 var maximumRelativeValue: Any? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id maximumRelativeValue;
+```
+
 #### Discussion
 
 The value in this property is the value returned when the viewer offset value along the given axis is 1.
 
 ## See Also
 
-- [var keyPath: String](uiinterpolatingmotioneffect/keypath.md)
+### Accessing the motion attributes
+- [var keyPath: String](./keypath.md)
   The key path you want to modify on the view.
-- [var type: UIInterpolatingMotionEffect.EffectType](uiinterpolatingmotioneffect/type.md)
+- [var type: UIInterpolatingMotionEffect.EffectType](./type.md)
   The tilt direction to monitor.
-- [var minimumRelativeValue: Any?](uiinterpolatingmotioneffect/minimumrelativevalue.md)
+- [var minimumRelativeValue: Any?](./minimumrelativevalue.md)
   The value that maps to the minimum viewer offset.
 
 

@@ -1,7 +1,8 @@
 # CGImageSourceUpdateDataProvider(_:_:_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Updates an incremental image source with a new data provider.
 
@@ -20,6 +21,10 @@ Updates an incremental image source with a new data provider.
 func CGImageSourceUpdateDataProvider(_ isrc: CGImageSource, _ provider: CGDataProvider, _ final: Bool)
 ```
 
+```c
+extern void CGImageSourceUpdateDataProvider(CGImageSourceRef isrc, CGDataProviderRef provider, bool final);
+```
+
 ## Parameters
 
 - `isrc`: The image source to modify.
@@ -28,7 +33,8 @@ func CGImageSourceUpdateDataProvider(_ isrc: CGImageSource, _ provider: CGDataPr
 
 ## See Also
 
-- [func CGImageSourceUpdateData(CGImageSource, CFData, Bool)](cgimagesourceupdatedata(_:_:_:).md)
+### Updating an Incremental Image
+- [func CGImageSourceUpdateData(CGImageSource, CFData, Bool)](./cgimagesourceupdatedata%28_,_,_%29.md)
   Updates the data in an incremental image source.
 
 

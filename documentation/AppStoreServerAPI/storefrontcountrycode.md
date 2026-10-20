@@ -1,7 +1,8 @@
 # storefrontCountryCode
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The three-letter code that represents the country or region associated with the App Store storefront.
 
@@ -10,9 +11,13 @@ The three-letter code that represents the country or region associated with the 
 
 ## Declaration
 
-```swift
+```
 string storefrontCountryCode
 ```
+
+
+
+**Maximum Length**: `3`
 
 #### Discussion
 
@@ -20,15 +25,16 @@ This type uses the ISO 3166-1 Alpha-3 country code representation.
 
 ## See Also
 
-- [type extendByDays](extendbydays.md)
+### Data types
+- [type extendByDays](./extendbydays.md)
   The number of days to extend the subscription renewal date.
-- [type extendReasonCode](extendreasoncode.md)
+- [type extendReasonCode](./extendreasoncode.md)
   The code that represents the reason for the subscription-renewal-date extension.
-- [type productId](../appstoreservernotifications/productid.md)
+- [type productId](../AppStoreServerNotifications/productid.md)
   The product identifier of the In-App Purchase.
-- [type requestIdentifier](requestidentifier.md)
+- [type requestIdentifier](./requestidentifier.md)
   A string that contains a unique identifier you provide to track each subscription-renewal-date extension request.
-- [type storefrontCountryCodes](storefrontcountrycodes.md)
+- [type storefrontCountryCodes](./storefrontcountrycodes.md)
   A list of storefront country codes you provide to limit the storefronts for a subscription-renewal-date extension.
 
 

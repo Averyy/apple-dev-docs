@@ -1,7 +1,8 @@
 # baselineStartDate
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The year the statistics collection began.
 

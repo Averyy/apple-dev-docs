@@ -1,13 +1,14 @@
 # Sequence Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [typealias Element](range/element.md)
+- [typealias Element](./element.md)
   A type representing the sequence’s elements.
-- [typealias Iterator](range/iterator.md)
+- [typealias Iterator](./iterator.md)
   A type that provides the sequence’s iteration interface and encapsulates its iteration state.
 
 

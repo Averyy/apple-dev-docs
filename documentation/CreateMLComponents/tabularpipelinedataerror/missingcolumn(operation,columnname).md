@@ -1,7 +1,8 @@
 # TabularPipelineDataError.missingColumn(operation:columnName:)
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A column is missing from the data frame.
 
@@ -22,9 +23,10 @@ case missingColumn(operation: String, columnName: String)
 
 ## See Also
 
-- [case incorrectType(operation: String, columnName: String, actual: String, expected: String)](tabularpipelinedataerror/incorrecttype(operation:columnname:actual:expected:).md)
+### Getting the cases
+- [case incorrectType(operation: String, columnName: String, actual: String, expected: String)](./incorrecttype%28operation,columnname,actual,expected%29.md)
   A column has an incorrect type.
-- [TabularPipelineDataError.missingValues(operation:columnName:)](tabularpipelinedataerror/missingvalues(operation:columnname:).md)
+- [TabularPipelineDataError.missingValues(operation:columnName:)](./missingvalues%28operation,columnname%29.md)
   The selected column has missing values.
 
 

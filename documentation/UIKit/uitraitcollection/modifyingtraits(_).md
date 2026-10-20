@@ -1,14 +1,15 @@
 # modifyingTraits(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,8 +19,9 @@ func modifyingTraits(_ mutations: UITraitCollection.TraitMutations) -> UITraitCo
 
 ## See Also
 
-- [convenience init(mutations: UITraitCollection.TraitMutations)](uitraitcollection/init(mutations:).md)
-- [UITraitCollection.TraitMutations](uitraitcollection/traitmutations.md)
+### Modifying traits
+- [convenience init(mutations: UITraitCollection.TraitMutations)](./init%28mutations%29.md)
+- [UITraitCollection.TraitMutations](./traitmutations.md)
 
 
 ---

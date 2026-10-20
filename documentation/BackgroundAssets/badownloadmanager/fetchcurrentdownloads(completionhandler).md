@@ -1,7 +1,8 @@
 # fetchCurrentDownloads(completionHandler:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the contents of the manager’s download queue.
 
@@ -16,7 +17,15 @@ Fetches the contents of the manager’s download queue.
 ## Declaration
 
 ```swift
+func fetchCurrentDownloads(completionHandler: @escaping @Sendable ([BADownload], (any Error)?) -> Void)
+```
+
+```swift
 var currentDownloads: [BADownload] { get async throws }
+```
+
+```objc
+- (void) fetchCurrentDownloadsWithCompletionHandler:(void (^)(NSArray<BADownload *> *downloads, NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -32,7 +41,8 @@ The completion handler takes the following parameters:
 
 ## See Also
 
-- [func fetchCurrentDownloads() throws -> [BADownload]](badownloadmanager/fetchcurrentdownloads.md)
+### Fetching in-progress downloads
+- [func fetchCurrentDownloads() throws -> [BADownload]](./fetchcurrentdownloads%28%29.md)
 
 
 ---

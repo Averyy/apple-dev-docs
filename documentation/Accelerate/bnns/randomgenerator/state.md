@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of the random number generator.
 
@@ -11,7 +12,7 @@ The state of the random number generator.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,9 +23,9 @@ var state: BNNS.RandomGeneratorState { get set }
 
 #### Discussion
 
-Use the random number generator’s [`state`](bnns/randomgenerator/state.md) property to save and restore the generator.
+Use the random number generator’s [`state`](./state.md) property to save and restore the generator.
 
-The following code creates a random number generator and captures its initial state. The code calls [`allocate(randomUniformUsing:range:shape:batchSize:)`](bnnsndarraydescriptor/allocate(randomuniformusing:range:shape:batchsize:)-761hg.md) twice to populate the arrays `a` and `b` with different random values. Before allocating the array `c` with random values, the code resets the generator’s state to create identical random values in arrays `a` and `c`:
+The following code creates a random number generator and captures its initial state. The code calls [`allocate(randomUniformUsing:range:shape:batchSize:)`](../../bnnsndarraydescriptor/allocate%28randomuniformusing,range,shape,batchsize%29-761hg.md) twice to populate the arrays `a` and `b` with different random values. Before allocating the array `c` with random values, the code resets the generator’s state to create identical random values in arrays `a` and `c`:
 
 ```swift
 guard
@@ -62,7 +63,8 @@ print(a.elementsEqual(c))
 
 ## See Also
 
-- [class RandomGeneratorState](bnns/randomgeneratorstate.md)
+### Saving and Restoring a Randon Generator’s State
+- [class RandomGeneratorState](../randomgeneratorstate.md)
   An opaque object that contains the state of a random number generator.
 
 

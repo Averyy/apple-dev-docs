@@ -1,7 +1,8 @@
 # AIModelAsset.Summary.StorageType
 
 **Framework**: Core AI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A scalar storage type and the number of elements that use it.
 
@@ -21,22 +22,23 @@ struct StorageType
 ## Topics
 
 ### Inspecting type details
-- [var typeName: String](aimodelasset/summary/storagetype/typename.md)
+- [var typeName: String](./storagetype/typename.md)
   The name of the scalar type.
-- [var count: Int](aimodelasset/summary/storagetype/count.md)
+- [var count: Int](./storagetype/count.md)
   The number of storage elements that use this type.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AIModelAsset.Summary.OperationCount](aimodelasset/summary/operationcount.md)
+### Supporting types
+- [AIModelAsset.Summary.OperationCount](./operationcount.md)
   A model operation and the number of times it occurs.
 
 

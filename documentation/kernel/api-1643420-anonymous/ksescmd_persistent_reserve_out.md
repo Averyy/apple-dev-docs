@@ -1,7 +1,8 @@
 # kSESCmd_PERSISTENT_RESERVE_OUT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSESCmd_PERSISTENT_RESERVE_OUT = 0x5F
 ```
 

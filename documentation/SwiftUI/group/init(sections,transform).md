@@ -1,7 +1,8 @@
 # init(sections:transform:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Constructs a group from the sections of the given view.
 
@@ -88,9 +89,10 @@ SectionedStack {
 
 ## See Also
 
-- [init(content:)](group/init(content:).md)
+### Creating a group
+- [init(content:)](./init%28content%29.md)
   Creates a group of content.
-- [init<Base, Result>(subviews: Base, transform: (SubviewsCollection) -> Result)](group/init(subviews:transform:).md)
+- [init<Base, Result>(subviews: Base, transform: (SubviewsCollection) -> Result)](./init%28subviews,transform%29.md)
   Constructs a group from the subviews of the given view.
 
 

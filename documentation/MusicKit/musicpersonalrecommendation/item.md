@@ -1,7 +1,8 @@
 # MusicPersonalRecommendation.Item
 
 **Framework**: MusicKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An item that represents an album, a playlist, or a station for a personal recommendation.
 
@@ -23,37 +24,37 @@ enum Item
 ## Topics
 
 ### Enumeration Cases
-- [MusicPersonalRecommendation.Item.album(_:)](musicpersonalrecommendation/item/album(_:).md)
+- [MusicPersonalRecommendation.Item.album(_:)](./item/album%28_%29.md)
   An item that corresponds to an album.
-- [MusicPersonalRecommendation.Item.playlist(_:)](musicpersonalrecommendation/item/playlist(_:).md)
+- [MusicPersonalRecommendation.Item.playlist(_:)](./item/playlist%28_%29.md)
   An item that corresponds to a playlist.
-- [MusicPersonalRecommendation.Item.station(_:)](musicpersonalrecommendation/item/station(_:).md)
+- [MusicPersonalRecommendation.Item.station(_:)](./item/station%28_%29.md)
   An item that corresponds to a station.
 ### Instance Properties
-- [var artwork: Artwork?](musicpersonalrecommendation/item/artwork.md)
+- [var artwork: Artwork?](./item/artwork.md)
   The artwork of this item.
-- [var id: MusicItemID](musicpersonalrecommendation/item/id.md)
+- [var id: MusicItemID](./item/id.md)
   The unique identifier of this item.
-- [var subtitle: String?](musicpersonalrecommendation/item/subtitle.md)
+- [var subtitle: String?](./item/subtitle.md)
   The subtitle of this item.
-- [var title: String](musicpersonalrecommendation/item/title.md)
+- [var title: String](./item/title.md)
   The title of this item.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [MusicItem](musicitem.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [MusicItem](../musicitem.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

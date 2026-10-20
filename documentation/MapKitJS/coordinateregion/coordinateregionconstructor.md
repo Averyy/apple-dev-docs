@@ -1,7 +1,8 @@
 # new CoordinateRegion(center, span)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 A rectangular geographic region that centers around a latitude and longitude coordinate.
 
@@ -10,7 +11,7 @@ A rectangular geographic region that centers around a latitude and longitude coo
 
 ## Declaration
 
-```swift
+```
 constructor(center?: CoordinateData, span?: CoordinateSpanData);
 ```
 
@@ -26,12 +27,13 @@ const region = new mapkit.CoordinateRegion(coordinate, span);
 
 ## Parameters
 
-- `center`: A [`Coordinate`](coordinate.md) that’s the center point of the region.
-- `span`: A [`CoordinateSpan`](coordinatespan.md) that represents the amount of map to display. The span also defines the current zoom level that the map object uses.
+- `center`: A [`Coordinate`](../coordinate.md) that’s the center point of the region.
+- `span`: A [`CoordinateSpan`](../coordinatespan.md) that represents the amount of map to display. The span also defines the current zoom level that the map object uses.
 
 ## See Also
 
-- [interface CoordinateRegionData](coordinateregiondata.md)
+### Creating a coordinate region
+- [interface CoordinateRegionData](../coordinateregiondata.md)
   A plain object representation of a coordinate region.
 
 

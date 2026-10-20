@@ -1,7 +1,8 @@
 # writeAttributeWrongCodeEntryLimit(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeWrongCodeEntryLimit(withValue value: NSNumber, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeWrongCodeEntryLimit(withValue value: NSNumber) async throws
+```
+
+```objc
+- (void) writeAttributeWrongCodeEntryLimitWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

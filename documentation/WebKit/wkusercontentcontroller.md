@@ -1,7 +1,8 @@
 # WKUserContentController
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object for managing interactions between JavaScript code and your web view, and for filtering content in your web view.
 
@@ -19,90 +20,95 @@ An object for managing interactions between JavaScript code and your web view, a
 class WKUserContentController
 ```
 
+```objc
+@interface WKUserContentController : NSObject
+```
+
 #### Overview
 
-A [`WKUserContentController`](wkusercontentcontroller.md) object provides a bridge between your app and the JavaScript code running in the web view. Use this object to do the following:
+A [`WKUserContentController`](./wkusercontentcontroller.md) object provides a bridge between your app and the JavaScript code running in the web view. Use this object to do the following:
 
 - Inject JavaScript code into webpages running in your web view.
 - Install custom JavaScript functions that call through to your app’s native code.
 - Specify custom filters to prevent the webpage from loading restricted content.
 
-Create and configure a [`WKUserContentController`](wkusercontentcontroller.md) object as part of your overall web view setup. Assign the object to the [`userContentController`](wkwebviewconfiguration/usercontentcontroller.md) property of your [`WKWebViewConfiguration`](wkwebviewconfiguration.md) object before creating your web view.
+Create and configure a [`WKUserContentController`](./wkusercontentcontroller.md) object as part of your overall web view setup. Assign the object to the [`userContentController`](./wkwebviewconfiguration/usercontentcontroller.md) property of your [`WKWebViewConfiguration`](./wkwebviewconfiguration.md) object before creating your web view.
 
 ## Topics
 
 ### Adding and Removing Custom Scripts
-- [func addUserScript(WKUserScript)](wkusercontentcontroller/adduserscript(_:).md)
+- [func addUserScript(WKUserScript)](./wkusercontentcontroller/adduserscript%28_%29.md)
   Injects the specified script into the webpage’s content.
-- [func removeAllUserScripts()](wkusercontentcontroller/removealluserscripts.md)
+- [func removeAllUserScripts()](./wkusercontentcontroller/removealluserscripts%28%29.md)
   Removes all user scripts from the web view.
-- [var userScripts: [WKUserScript]](wkusercontentcontroller/userscripts.md)
+- [var userScripts: [WKUserScript]](./wkusercontentcontroller/userscripts.md)
   The user scripts associated with the user content controller.
 ### Adding and Removing Message Handlers
-- [func add(any WKScriptMessageHandler, name: String)](wkusercontentcontroller/add(_:name:).md)
+- [func add(any WKScriptMessageHandler, name: String)](./wkusercontentcontroller/add%28_,name%29.md)
   Installs a message handler that you can call from your JavaScript code.
-- [func add(any WKScriptMessageHandler, contentWorld: WKContentWorld, name: String)](wkusercontentcontroller/add(_:contentworld:name:).md)
+- [func add(any WKScriptMessageHandler, contentWorld: WKContentWorld, name: String)](./wkusercontentcontroller/add%28_,contentworld,name%29.md)
   Installs a message handler that you can call from the specified content world in your JavaScript code.
-- [func addScriptMessageHandler(any WKScriptMessageHandlerWithReply, contentWorld: WKContentWorld, name: String)](wkusercontentcontroller/addscriptmessagehandler(_:contentworld:name:).md)
+- [func addScriptMessageHandler(any WKScriptMessageHandlerWithReply, contentWorld: WKContentWorld, name: String)](./wkusercontentcontroller/addscriptmessagehandler%28_,contentworld,name%29.md)
   Installs a message handler that returns a reply to your JavaScript code.
-- [func removeScriptMessageHandler(forName: String)](wkusercontentcontroller/removescriptmessagehandler(forname:).md)
+- [func removeScriptMessageHandler(forName: String)](./wkusercontentcontroller/removescriptmessagehandler%28forname%29.md)
   Uninstalls the custom message handler with the specified name from your JavaScript code.
-- [func removeScriptMessageHandler(forName: String, contentWorld: WKContentWorld)](wkusercontentcontroller/removescriptmessagehandler(forname:contentworld:).md)
+- [func removeScriptMessageHandler(forName: String, contentWorld: WKContentWorld)](./wkusercontentcontroller/removescriptmessagehandler%28forname,contentworld%29.md)
   Uninstalls a custom message handler from the specified content world in your JavaScript code.
-- [func removeAllScriptMessageHandlers(from: WKContentWorld)](wkusercontentcontroller/removeallscriptmessagehandlers(from:).md)
+- [func removeAllScriptMessageHandlers(from: WKContentWorld)](./wkusercontentcontroller/removeallscriptmessagehandlers%28from%29.md)
   Uninstalls all custom message handlers from the specified content world in your JavaScript code.
-- [func removeAllScriptMessageHandlers()](wkusercontentcontroller/removeallscriptmessagehandlers.md)
+- [func removeAllScriptMessageHandlers()](./wkusercontentcontroller/removeallscriptmessagehandlers%28%29.md)
   Uninstalls all custom message handlers associated with the user content controller.
-- [protocol WKScriptMessageHandler](wkscriptmessagehandler.md)
+- [protocol WKScriptMessageHandler](./wkscriptmessagehandler.md)
   An interface for receiving messages from JavaScript code running in a webpage.
-- [protocol WKScriptMessageHandlerWithReply](wkscriptmessagehandlerwithreply.md)
+- [protocol WKScriptMessageHandlerWithReply](./wkscriptmessagehandlerwithreply.md)
   An interface for responding to messages from JavaScript code running in a webpage.
 ### Adding and Removing Content Rules
-- [func add(WKContentRuleList)](wkusercontentcontroller/add(_:).md)
+- [func add(WKContentRuleList)](./wkusercontentcontroller/add%28_%29.md)
   Adds the specified content rule list to the content controller object.
-- [func remove(WKContentRuleList)](wkusercontentcontroller/remove(_:).md)
+- [func remove(WKContentRuleList)](./wkusercontentcontroller/remove%28_%29.md)
   Removes the specified rule list from the content controller object.
-- [func removeAllContentRuleLists()](wkusercontentcontroller/removeallcontentrulelists.md)
+- [func removeAllContentRuleLists()](./wkusercontentcontroller/removeallcontentrulelists%28%29.md)
   Removes all rules lists from the content controller.
-- [class WKContentRuleList](wkcontentrulelist.md)
+- [class WKContentRuleList](./wkcontentrulelist.md)
   A compiled list of rules to apply to web content.
 ### Initializers
-- [init?(coder: NSCoder)](wkusercontentcontroller/init(coder:).md)
+- [init?(coder: NSCoder)](./wkusercontentcontroller/init%28coder%29.md)
 ### Instance Methods
-- [func addBuffer(RawSpan, name: String, to: WKContentWorld)](wkusercontentcontroller/addbuffer(_:name:to:).md)
+- [func addBuffer(RawSpan, name: String, to: WKContentWorld)](./wkusercontentcontroller/addbuffer%28_,name,to%29.md)
   Adds a data buffer that will be available to JavaScript through the `window.webkit.buffers` object.
-- [func removeBuffer(named: String, from: WKContentWorld)](wkusercontentcontroller/removebuffer(named:from:).md)
+- [func removeBuffer(named: String, from: WKContentWorld)](./wkusercontentcontroller/removebuffer%28named,from%29.md)
   Removes a previously added data buffer from the given `WKContentWorld`.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class WKContentRuleListStore](wkcontentruleliststore.md)
+### Page content
+- [class WKContentRuleListStore](./wkcontentruleliststore.md)
   An object that contains the rules for how to load and filter content in the web view.
-- [class WKContentWorld](wkcontentworld.md)
+- [class WKContentWorld](./wkcontentworld.md)
   An object that defines a scope of execution for JavaScript code, and which you use to prevent conflicts between different scripts.
-- [class WKFrameInfo](wkframeinfo.md)
+- [class WKFrameInfo](./wkframeinfo.md)
   An object that contains information about a frame on a webpage.
-- [class WKSecurityOrigin](wksecurityorigin.md)
+- [class WKSecurityOrigin](./wksecurityorigin.md)
   An object that identifies the origin of a particular resource.
-- [class WKUserScript](wkuserscript.md)
+- [class WKUserScript](./wkuserscript.md)
   A script that the web view injects into a webpage.
-- [WKContentWorld.Configuration](wkcontentworld/configuration.md)
-- [class WKJSHandle](wkjshandle.md)
+- [WKContentWorld.Configuration](./wkcontentworld/configuration.md)
+- [class WKJSHandle](./wkjshandle.md)
   A WKJSHandle object contains a reference to a JavaScript object.
 
 

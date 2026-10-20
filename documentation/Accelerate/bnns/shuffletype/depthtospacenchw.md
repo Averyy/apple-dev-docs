@@ -1,7 +1,8 @@
 # BNNS.ShuffleType.depthToSpaceNCHW
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The pixel shuffle for the NCHW format, equivalent to depth-to-space in Column Row Depth (CRD) mode.
 
@@ -11,8 +12,10 @@ The pixel shuffle for the NCHW format, equivalent to depth-to-space in Column Ro
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,9 +25,11 @@ case depthToSpaceNCHW
 
 ## See Also
 
-- [var BNNSShuffleTypePixelShuffleNCHW: BNNSShuffleType](bnnsshuffletypepixelshufflenchw.md)
+### Related Documentation
+- [var BNNSShuffleTypePixelShuffleNCHW: BNNSShuffleType](../../bnnsshuffletypepixelshufflenchw.md)
   The pixel shuffle for the NCHW (batch, channels, height, width) format, equivalent to depth-to-space in Column Row Depth (CRD) mode.
-- [BNNS.ShuffleType.spaceToDepthNCHW](bnns/shuffletype/spacetodepthnchw.md)
+### Enumeration Cases
+- [BNNS.ShuffleType.spaceToDepthNCHW](./spacetodepthnchw.md)
   The pixel shuffle for the NCHW format, equivalent to space-to-depth in Column Row Depth (CRD) mode.
 
 

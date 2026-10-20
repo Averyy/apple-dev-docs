@@ -1,12 +1,13 @@
 # currentPage
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The page currently displayed by the image representation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The page currently displayed by the image representation.
 var currentPage: Int { get set }
 ```
 
+```objc
+@property NSInteger currentPage;
+```
+
 ## See Also
 
-- [var bounds: NSRect](nspdfimagerep/bounds.md)
+### Getting Data
+- [var bounds: NSRect](./bounds.md)
   The image representation’s bounding rectangle.
-- [var pageCount: Int](nspdfimagerep/pagecount.md)
+- [var pageCount: Int](./pagecount.md)
   The number of pages in the image representation.
-- [var pdfRepresentation: Data](nspdfimagerep/pdfrepresentation.md)
+- [var pdfRepresentation: Data](./pdfrepresentation.md)
   The PDF representation of the representation’s image.
 
 

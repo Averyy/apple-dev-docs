@@ -1,7 +1,8 @@
 # quad
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The axis-aligned bounding rectangle represented by the node.
 
@@ -19,9 +20,13 @@ The axis-aligned bounding rectangle represented by the node.
 var quad: GKQuad { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GKQuad quad;
+```
+
 #### Discussion
 
-You can use this rectangle to find elements in the tree with the [`elements(in:)`](gkquadtree/elements(in:).md) method.
+You can use this rectangle to find elements in the tree with the [`elements(in:)`](../gkquadtree/elements%28in%29.md) method.
 
 
 ---

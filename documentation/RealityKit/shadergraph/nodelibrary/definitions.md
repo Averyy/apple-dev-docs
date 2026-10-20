@@ -1,7 +1,8 @@
 # definitions
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All node definitions in this library.
 

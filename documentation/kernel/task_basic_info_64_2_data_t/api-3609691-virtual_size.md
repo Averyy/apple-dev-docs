@@ -1,14 +1,15 @@
 # virtual_size
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 mach_vm_size_t virtual_size;
 ```
 

@@ -1,7 +1,8 @@
 # errSessionInvalidAttributes
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Detected an invalid set of request attribute bits.
 
@@ -18,6 +19,10 @@ Detected an invalid set of request attribute bits.
 
 ```swift
 var errSessionInvalidAttributes: OSStatus { get }
+```
+
+```c
+errSessionInvalidAttributes
 ```
 
 

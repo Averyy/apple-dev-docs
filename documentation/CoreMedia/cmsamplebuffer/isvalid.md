@@ -1,7 +1,8 @@
 # isValid
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the sample buffer is valid.
 
@@ -22,9 +23,10 @@ var isValid: Bool { get }
 
 ## See Also
 
-- [func setInvalidateHandler((CMSampleBuffer) throws -> Void) throws](cmsamplebuffer/setinvalidatehandler(_:).md)
+### Invalidating Sample Buffers
+- [func setInvalidateHandler((CMSampleBuffer) throws -> Void) throws](./setinvalidatehandler%28_%29.md)
   Sets a closure for the sample buffer to call when it’s invalidated.
-- [func invalidate() throws](cmsamplebuffer/invalidate.md)
+- [func invalidate() throws](./invalidate%28%29.md)
   Invalidates a sample buffer by calling its invalidation handler.
 
 

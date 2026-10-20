@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Attempt to recover from this error when the user selected the option at the given index. Returns true to indicate successful recovery, and false otherwise.

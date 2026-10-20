@@ -1,7 +1,8 @@
 # AsyncFlatMapSequence.Failure
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of error produced by this asynchronous sequence.
 
@@ -19,6 +20,8 @@ The type of error produced by this asynchronous sequence.
 ```swift
 typealias Failure = Base.Failure
 ```
+
+Available when `Base` conforms to `AsyncSequence` and `SegmentOfResult` conforms to `AsyncSequence`.
 
 #### Discussion
 

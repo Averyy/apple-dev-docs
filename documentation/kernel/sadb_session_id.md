@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sadb_session_id {
     ...
 };
@@ -17,9 +17,9 @@ struct sadb_session_id {
 ## Topics
 
 ### Instance Properties
-- [sadb_session_id_exttype](sadb_session_id/1588310-sadb_session_id_exttype.md)
-- [sadb_session_id_len](sadb_session_id/1588191-sadb_session_id_len.md)
-- [sadb_session_id_v](sadb_session_id/1588140-sadb_session_id_v.md)
+- [sadb_session_id_exttype](./sadb_session_id/api-1588310-sadb_session_id_exttype.md)
+- [sadb_session_id_len](./sadb_session_id/api-1588191-sadb_session_id_len.md)
+- [sadb_session_id_v](./sadb_session_id/api-1588140-sadb_session_id_v.md)
 
 
 ---

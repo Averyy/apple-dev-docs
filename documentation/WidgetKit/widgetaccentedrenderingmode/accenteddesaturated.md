@@ -1,7 +1,8 @@
 # accentedDesaturated
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Maps the luminance of the `Image` in to the alpha channel, replacing color channels with the color applied to the accent group.
 
@@ -21,7 +22,7 @@ static let accentedDesaturated: WidgetAccentedRenderingMode
 
 ## Mentions
 
-- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
+- [Optimizing your widget for accented rendering mode and Liquid Glass](../optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # collectionView(_:dragSessionDidEnd:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies you that a drag session ended for the collection view.
 
@@ -17,11 +18,15 @@ Notifies you that a drag session ended for the collection view.
 optional func collectionView(_ collectionView: UICollectionView, dragSessionDidEnd session: any UIDragSession)
 ```
 
+```objc
+- (void) collectionView:(UICollectionView *) collectionView dragSessionDidEnd:(id<UIDragSession>) session;
+```
+
 #### Discussion
 
 This method is called after the drag session ended, usually because the content was dropped but possibly because the drag was terminated. Use this method to close out any tasks related to the management of the drag session in your app.
 
-Each call to this method is always balanced by a call to the [`collectionView(_:dragSessionWillBegin:)`](uicollectionviewdragdelegate/collectionview(_:dragsessionwillbegin:).md) method.
+Each call to this method is always balanced by a call to the [`collectionView(_:dragSessionWillBegin:)`](./collectionview%28_,dragsessionwillbegin%29.md) method.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ Each call to this method is always balanced by a call to the [`collectionView(_:
 
 ## See Also
 
-- [func collectionView(UICollectionView, dragSessionWillBegin: any UIDragSession)](uicollectionviewdragdelegate/collectionview(_:dragsessionwillbegin:).md)
+### Tracking the drag session
+- [func collectionView(UICollectionView, dragSessionWillBegin: any UIDragSession)](./collectionview%28_,dragsessionwillbegin%29.md)
   Notifies you that a drag session is about to begin for the collection view.
 
 

@@ -1,7 +1,8 @@
 # leading
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A guide that marks the leading edge of the view.
 
@@ -22,15 +23,15 @@ static let leading: HorizontalAlignment
 
 ## Mentions
 
-- [Building layouts with stack views](building-layouts-with-stack-views.md)
+- [Building layouts with stack views](../building-layouts-with-stack-views.md)
 
 #### Discussion
 
 Use this guide to align the leading edges of views. For a device that uses a left-to-right language, the leading edge is on the left:
 
-![A box that contains the word, Leading. Vertical](/images/com.apple.SwiftUI/HorizontalAlignment-leading-1-iOS@2x.png)
+![A box that contains the word, Leading. Vertical](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/HorizontalAlignment-leading-1-iOS@2x.png)
 
-The following code generates the image above using a [`VStack`](vstack.md):
+The following code generates the image above using a [`VStack`](../vstack.md):
 
 ```swift
 struct HorizontalAlignmentLeading: View {
@@ -46,13 +47,14 @@ struct HorizontalAlignmentLeading: View {
 
 ## See Also
 
-- [static let center: HorizontalAlignment](horizontalalignment/center.md)
+### Getting guides
+- [static let center: HorizontalAlignment](./center.md)
   A guide that marks the horizontal center of the view.
-- [static let trailing: HorizontalAlignment](horizontalalignment/trailing.md)
+- [static let trailing: HorizontalAlignment](./trailing.md)
   A guide that marks the trailing edge of the view.
-- [static let listRowSeparatorLeading: HorizontalAlignment](horizontalalignment/listrowseparatorleading.md)
+- [static let listRowSeparatorLeading: HorizontalAlignment](./listrowseparatorleading.md)
   A guide marking the leading edge of a `List` row separator.
-- [static let listRowSeparatorTrailing: HorizontalAlignment](horizontalalignment/listrowseparatortrailing.md)
+- [static let listRowSeparatorTrailing: HorizontalAlignment](./listrowseparatortrailing.md)
   A guide marking the trailing edge of a `List` row separator.
 
 

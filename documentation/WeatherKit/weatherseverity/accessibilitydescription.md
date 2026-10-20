@@ -1,7 +1,8 @@
 # accessibilityDescription
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized accessibility description describing the weather severity.
 
@@ -26,7 +27,8 @@ The description is suitable for Voice Over and other assistive technologies.
 
 ## See Also
 
-- [var description: String](weatherseverity/description.md)
+### Describing the weather severity
+- [var description: String](./description.md)
   A localized string describing the weather severity.
 
 

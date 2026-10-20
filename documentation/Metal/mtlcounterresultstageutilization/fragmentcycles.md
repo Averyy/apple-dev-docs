@@ -1,7 +1,8 @@
 # fragmentCycles
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of cycles the GPU uses to run fragment shaders during a pass.
 
@@ -19,17 +20,22 @@ The number of cycles the GPU uses to run fragment shaders during a pass.
 var fragmentCycles: UInt64
 ```
 
+```c
+uint64_t fragmentCycles;
+```
+
 ## See Also
 
-- [var totalCycles: UInt64](mtlcounterresultstageutilization/totalcycles.md)
+### Stage utilization values
+- [var totalCycles: UInt64](./totalcycles.md)
   The total number of cycles the GPU uses to run a pass.
-- [var vertexCycles: UInt64](mtlcounterresultstageutilization/vertexcycles.md)
+- [var vertexCycles: UInt64](./vertexcycles.md)
   The number of cycles the GPU uses to run vertex shaders during a pass.
-- [var tessellationCycles: UInt64](mtlcounterresultstageutilization/tessellationcycles.md)
+- [var tessellationCycles: UInt64](./tessellationcycles.md)
   The number of cycles the GPU uses to run the tessellation stage during a pass.
-- [var postTessellationVertexCycles: UInt64](mtlcounterresultstageutilization/posttessellationvertexcycles.md)
+- [var postTessellationVertexCycles: UInt64](./posttessellationvertexcycles.md)
   The number of cycles the GPU uses to run post-tessellation vertex shaders during a pass.
-- [var renderTargetCycles: UInt64](mtlcounterresultstageutilization/rendertargetcycles.md)
+- [var renderTargetCycles: UInt64](./rendertargetcycles.md)
   The number of cycles the GPU uses to write data to render targets during a render pass.
 
 

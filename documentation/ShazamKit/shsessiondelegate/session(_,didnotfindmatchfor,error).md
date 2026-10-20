@@ -1,7 +1,8 @@
 # session(_:didNotFindMatchFor:error:)
 
 **Framework**: ShazamKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the query signature doesn’t match an item in the catalog, or that there’s an error.
 
@@ -20,13 +21,17 @@ Tells the delegate that the query signature doesn’t match an item in the catal
 optional func session(_ session: SHSession, didNotFindMatchFor signature: SHSignature, error: (any Error)?)
 ```
 
+```objc
+- (void) session:(SHSession *) session didNotFindMatchForSignature:(SHSignature *) signature error:(NSError *) error;
+```
+
 ## Mentions
 
-- [Matching audio using the built-in microphone](matching-audio-using-the-built-in-microphone.md)
+- [Matching audio using the built-in microphone](../matching-audio-using-the-built-in-microphone.md)
 
 #### Discussion
 
-You can retry the match if the error indicates an issue in communicating with the catalog server, such as [`SHError.Code.matchAttemptFailed`](sherror/code/matchattemptfailed.md).
+You can retry the match if the error indicates an issue in communicating with the catalog server, such as [`SHError.Code.matchAttemptFailed`](../sherror/code/matchattemptfailed.md).
 
 ## Parameters
 
@@ -36,7 +41,8 @@ You can retry the match if the error indicates an issue in communicating with th
 
 ## See Also
 
-- [func session(SHSession, didFind: SHMatch)](shsessiondelegate/session(_:didfind:).md)
+### Handling matches
+- [func session(SHSession, didFind: SHMatch)](./session%28_,didfind%29.md)
   Tells the delegate that the query signature matches an item in the catalog.
 
 

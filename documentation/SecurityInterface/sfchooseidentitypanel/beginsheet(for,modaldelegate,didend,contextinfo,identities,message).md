@@ -1,7 +1,8 @@
 # beginSheet(for:modalDelegate:didEnd:contextInfo:identities:message:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a list of identities in a modal sheet from which the user can select an identity.
 
@@ -12,6 +13,10 @@ Displays a list of identities in a modal sheet from which the user can select an
 
 ```swift
 func beginSheet(for docWindow: NSWindow!, modalDelegate delegate: Any!, didEnd didEndSelector: Selector!, contextInfo: UnsafeMutableRawPointer!, identities: [Any]!, message: String!)
+```
+
+```objc
+- (void) beginSheetForWindow:(NSWindow *) docWindow modalDelegate:(id) delegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo identities:(NSArray *) identities message:(NSString *) message;
 ```
 
 #### Discussion
@@ -29,7 +34,7 @@ The delegate method has the following signature:
 The parameters for the delegate method are:
 
 - **`sheet`**: The window to which the sheet was attached.
-- **`returnCode`**: The result code indicating which button the user clicked: either [`NSFileHandlingPanelOKButton`](https://developer.apple.com/documentation/appkit/nsfilehandlingpanelokbutton) or [`NSFileHandlingPanelCancelButton`](https://developer.apple.com/documentation/appkit/nsfilehandlingpanelcancelbutton).
+- **`returnCode`**: The result code indicating which button the user clicked: either [`NSFileHandlingPanelOKButton`](../../AppKit/nsfilehandlingpanelokbutton.md) or [`NSFileHandlingPanelCancelButton`](../../AppKit/nsfilehandlingpanelcancelbutton.md).
 - **`contextInfo`**: Client-defined contextual data that is passed in the `contextInfo` parameter of the `beginSheetForWindow:...` method.
 
 The sheet is dismissed on return from the `beginSheetForWindow:...` method.
@@ -40,16 +45,18 @@ The sheet is dismissed on return from the `beginSheetForWindow:...` method.
 - `delegate`: The delegate object in which the method specified in the `didEndSelector` parameter is implemented.
 - `didEndSelector`: A method selector for a delegate method called when the sheet has been dismissed. Implementation of this delegate method is optional.
 - `contextInfo`: A pointer to data that is passed to the delegate method. You can use this data pointer for any purpose you wish.
-- `identities`: An array of identity objects (objects of type [`SecIdentity`](https://developer.apple.com/documentation/security/secidentity)). Use the [`SecIdentitySearchCopyNext`](https://developer.apple.com/documentation/security/secidentitysearchcopynext) function (in Security/SecIdentitySearch.h) to find identity objects.
+- `identities`: An array of identity objects (objects of type [`SecIdentity`](../../Security/secidentity.md)). Use the [`SecIdentitySearchCopyNext`](../../Security/secidentitysearchcopynext.md) function (in Security/SecIdentitySearch.h) to find identity objects.
 - `message`: A message string to display in the sheet.
 
 ## See Also
 
-- [func runModal(forIdentities: [Any]!, message: String!) -> Int](sfchooseidentitypanel/runmodal(foridentities:message:).md)
+### Related Documentation
+- [func runModal(forIdentities: [Any]!, message: String!) -> Int](./runmodal%28foridentities,message%29.md)
   Displays a list of identities in a modal panel.
-- [func identity() -> Unmanaged<SecIdentity>!](sfchooseidentitypanel/identity.md)
+- [func identity() -> Unmanaged<SecIdentity>!](./identity%28%29.md)
   Returns the identity that the user chose in the panel or sheet.
-- [func runModal(forIdentities: [Any]!, message: String!) -> Int](sfchooseidentitypanel/runmodal(foridentities:message:).md)
+### Displaying a Sheet or Panel
+- [func runModal(forIdentities: [Any]!, message: String!) -> Int](./runmodal%28foridentities,message%29.md)
   Displays a list of identities in a modal panel.
 
 

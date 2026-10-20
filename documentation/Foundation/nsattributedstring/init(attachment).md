@@ -1,7 +1,8 @@
 # init(attachment:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attributed string with an attachment.
 
@@ -20,13 +21,17 @@ Creates an attributed string with an attachment.
 init(attachment: NSTextAttachment)
 ```
 
+```objc
++ (NSAttributedString *) attributedStringWithAttachment:(NSTextAttachment *) attachment;
+```
+
 #### Return Value
 
 An attributed string containing the attachment.
 
 #### Discussion
 
-This is a convenience method for creating an attributed string containing an attachment using [`character`](https://developer.apple.com/documentation/appkit/nstextattachment/character) as the base character.
+This is a convenience method for creating an attributed string containing an attachment using [`character`](../../AppKit/nstextattachment/character.md) as the base character.
 
 ## Parameters
 
@@ -34,9 +39,10 @@ This is a convenience method for creating an attributed string containing an att
 
 ## See Also
 
-- [convenience init(attachment: NSTextAttachment, attributes: [NSAttributedString.Key : Any])](nsattributedstring/init(attachment:attributes:).md)
+### Creating a string with an attachment
+- [convenience init(attachment: NSTextAttachment, attributes: [NSAttributedString.Key : Any])](./init%28attachment,attributes%29.md)
   Creates an attributed string with an attachment and applies the specified attributes to it.
-- [convenience init(adaptiveImageGlyph: NSAdaptiveImageGlyph, attributes: [NSAttributedString.Key : Any])](nsattributedstring/init(adaptiveimageglyph:attributes:).md)
+- [convenience init(adaptiveImageGlyph: NSAdaptiveImageGlyph, attributes: [NSAttributedString.Key : Any])](./init%28adaptiveimageglyph,attributes%29.md)
   Creates an attributed string with an adaptive image glyph and applies the specified attributes to it.
 
 

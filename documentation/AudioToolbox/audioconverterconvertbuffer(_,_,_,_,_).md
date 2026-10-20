@@ -1,7 +1,8 @@
 # AudioConverterConvertBuffer(_:_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts audio data from one linear PCM format to another.
 
@@ -19,13 +20,17 @@ Converts audio data from one linear PCM format to another.
 func AudioConverterConvertBuffer(_ inAudioConverter: AudioConverterRef, _ inInputDataSize: UInt32, _ inInputData: UnsafeRawPointer, _ ioOutputDataSize: UnsafeMutablePointer<UInt32>, _ outOutputData: UnsafeMutableRawPointer) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioConverterConvertBuffer(AudioConverterRef inAudioConverter, UInt32 inInputDataSize, const void *inInputData, UInt32 *ioOutputDataSize, void *outOutputData);
+```
+
 #### Return Value
 
 A result code.
 
 #### Discussion
 
-This function is for the special case of converting from one linear PCM format to another. This function cannot perform sample rate conversions and cannot be used for conversion to or from most compressed formats. To perform these types of conversion, use [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](audioconverterfillcomplexbuffer(_:_:_:_:_:_:).md) instead.
+This function is for the special case of converting from one linear PCM format to another. This function cannot perform sample rate conversions and cannot be used for conversion to or from most compressed formats. To perform these types of conversion, use [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](./audioconverterfillcomplexbuffer%28_,_,_,_,_,_%29.md) instead.
 
 ## Parameters
 
@@ -37,11 +42,12 @@ This function is for the special case of converting from one linear PCM format t
 
 ## See Also
 
-- [Encoding and decoding audio](encoding-and-decoding-audio.md)
+### Performing Conversions
+- [Encoding and decoding audio](./encoding-and-decoding-audio.md)
   Convert audio formats to efficiently manage data and quality.
-- [func AudioConverterFillComplexBuffer(AudioConverterRef, AudioConverterComplexInputDataProc, UnsafeMutableRawPointer?, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioBufferList>, UnsafeMutablePointer<AudioStreamPacketDescription>?) -> OSStatus](audioconverterfillcomplexbuffer(_:_:_:_:_:_:).md)
+- [func AudioConverterFillComplexBuffer(AudioConverterRef, AudioConverterComplexInputDataProc, UnsafeMutableRawPointer?, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioBufferList>, UnsafeMutablePointer<AudioStreamPacketDescription>?) -> OSStatus](./audioconverterfillcomplexbuffer%28_,_,_,_,_,_%29.md)
   Converts audio data supplied by a callback function, supporting non-interleaved and packetized formats.
-- [func AudioConverterConvertComplexBuffer(AudioConverterRef, UInt32, UnsafePointer<AudioBufferList>, UnsafeMutablePointer<AudioBufferList>) -> OSStatus](audioconverterconvertcomplexbuffer(_:_:_:_:).md)
+- [func AudioConverterConvertComplexBuffer(AudioConverterRef, UInt32, UnsafePointer<AudioBufferList>, UnsafeMutablePointer<AudioBufferList>) -> OSStatus](./audioconverterconvertcomplexbuffer%28_,_,_,_%29.md)
   Converts audio data from one linear PCM format to another, where both use the same sample rate.
 
 

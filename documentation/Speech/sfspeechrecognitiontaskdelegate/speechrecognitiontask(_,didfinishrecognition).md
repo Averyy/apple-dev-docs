@@ -1,7 +1,8 @@
 # speechRecognitionTask(_:didFinishRecognition:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the final utterance is recognized.
 
@@ -18,22 +19,27 @@ Tells the delegate when the final utterance is recognized.
 optional func speechRecognitionTask(_ task: SFSpeechRecognitionTask, didFinishRecognition recognitionResult: SFSpeechRecognitionResult)
 ```
 
+```objc
+- (void) speechRecognitionTask:(SFSpeechRecognitionTask *) task didFinishRecognition:(SFSpeechRecognitionResult *) recognitionResult;
+```
+
 #### Discussion
 
 When this method is called, the delegate should expect no further information about the utterance to be reported.
 
 ## Parameters
 
-- `task`: The speech recognition task (an [`SFSpeechRecognitionTask`](sfspeechrecognitiontask.md) object) that represents the request.
-- `recognitionResult`: A recognized utterance that contains one or more transcription hypotheses in an [`SFSpeechRecognitionResult`](sfspeechrecognitionresult.md) object.
+- `task`: The speech recognition task (an [`SFSpeechRecognitionTask`](../sfspeechrecognitiontask.md) object) that represents the request.
+- `recognitionResult`: A recognized utterance that contains one or more transcription hypotheses in an [`SFSpeechRecognitionResult`](../sfspeechrecognitionresult.md) object.
 
 ## See Also
 
-- [func speechRecognitionTask(SFSpeechRecognitionTask, didFinishSuccessfully: Bool)](sfspeechrecognitiontaskdelegate/speechrecognitiontask(_:didfinishsuccessfully:).md)
+### Finishing a speech recognition task
+- [func speechRecognitionTask(SFSpeechRecognitionTask, didFinishSuccessfully: Bool)](./speechrecognitiontask%28_,didfinishsuccessfully%29.md)
   Tells the delegate when the recognition of all requested utterances is finished.
-- [func speechRecognitionTask(SFSpeechRecognitionTask, didProcessAudioDuration: TimeInterval)](sfspeechrecognitiontaskdelegate/speechrecognitiontask(_:didprocessaudioduration:).md)
+- [func speechRecognitionTask(SFSpeechRecognitionTask, didProcessAudioDuration: TimeInterval)](./speechrecognitiontask%28_,didprocessaudioduration%29.md)
   Tells the delegate how much audio has been processed by the task.
-- [func speechRecognitionTaskWasCancelled(SFSpeechRecognitionTask)](sfspeechrecognitiontaskdelegate/speechrecognitiontaskwascancelled(_:).md)
+- [func speechRecognitionTaskWasCancelled(SFSpeechRecognitionTask)](./speechrecognitiontaskwascancelled%28_%29.md)
   Tells the delegate that the task has been canceled.
 
 

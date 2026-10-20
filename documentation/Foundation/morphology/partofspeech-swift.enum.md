@@ -1,7 +1,8 @@
 # Morphology.PartOfSpeech
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A representation of grammatical parts of speech, used for inflecting strings.
 
@@ -23,61 +24,62 @@ enum PartOfSpeech
 ## Topics
 
 ### Determining Part of Speech
-- [Morphology.PartOfSpeech.determiner](morphology/partofspeech-swift.enum/determiner.md)
+- [Morphology.PartOfSpeech.determiner](./partofspeech-swift.enum/determiner.md)
   A determiner, as used as a part of speech.
-- [Morphology.PartOfSpeech.pronoun](morphology/partofspeech-swift.enum/pronoun.md)
+- [Morphology.PartOfSpeech.pronoun](./partofspeech-swift.enum/pronoun.md)
   A pronoun, as used as a part of speech.
-- [Morphology.PartOfSpeech.letter](morphology/partofspeech-swift.enum/letter.md)
+- [Morphology.PartOfSpeech.letter](./partofspeech-swift.enum/letter.md)
   A letter, as used as a part of speech.
-- [Morphology.PartOfSpeech.adverb](morphology/partofspeech-swift.enum/adverb.md)
+- [Morphology.PartOfSpeech.adverb](./partofspeech-swift.enum/adverb.md)
   An adverb, as used as a part of speech.
-- [Morphology.PartOfSpeech.particle](morphology/partofspeech-swift.enum/particle.md)
+- [Morphology.PartOfSpeech.particle](./partofspeech-swift.enum/particle.md)
   A particle, as used as a part of speech.
-- [Morphology.PartOfSpeech.adjective](morphology/partofspeech-swift.enum/adjective.md)
+- [Morphology.PartOfSpeech.adjective](./partofspeech-swift.enum/adjective.md)
   An adjective, as used as a part of speech.
-- [Morphology.PartOfSpeech.adposition](morphology/partofspeech-swift.enum/adposition.md)
+- [Morphology.PartOfSpeech.adposition](./partofspeech-swift.enum/adposition.md)
   An adposition, as used as a part of speech.
-- [Morphology.PartOfSpeech.verb](morphology/partofspeech-swift.enum/verb.md)
+- [Morphology.PartOfSpeech.verb](./partofspeech-swift.enum/verb.md)
   A verb, as used as a part of speech.
-- [Morphology.PartOfSpeech.noun](morphology/partofspeech-swift.enum/noun.md)
+- [Morphology.PartOfSpeech.noun](./partofspeech-swift.enum/noun.md)
   A noun, as used as a part of speech.
-- [Morphology.PartOfSpeech.conjunction](morphology/partofspeech-swift.enum/conjunction.md)
+- [Morphology.PartOfSpeech.conjunction](./partofspeech-swift.enum/conjunction.md)
   A conjunction, as used as a part of speech.
-- [Morphology.PartOfSpeech.numeral](morphology/partofspeech-swift.enum/numeral.md)
+- [Morphology.PartOfSpeech.numeral](./partofspeech-swift.enum/numeral.md)
   A numeral, as used as a part of speech.
-- [Morphology.PartOfSpeech.interjection](morphology/partofspeech-swift.enum/interjection.md)
+- [Morphology.PartOfSpeech.interjection](./partofspeech-swift.enum/interjection.md)
   An interjection, as used as a part of speech.
-- [Morphology.PartOfSpeech.preposition](morphology/partofspeech-swift.enum/preposition.md)
+- [Morphology.PartOfSpeech.preposition](./partofspeech-swift.enum/preposition.md)
   A preposition, as used as a part of speech.
-- [Morphology.PartOfSpeech.abbreviation](morphology/partofspeech-swift.enum/abbreviation.md)
+- [Morphology.PartOfSpeech.abbreviation](./partofspeech-swift.enum/abbreviation.md)
   An abbreviation, as used as a part of speech.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isUnspecified: Bool](morphology/isunspecified.md)
+### Accessing Grammatical Properties
+- [var isUnspecified: Bool](./isunspecified.md)
   A Boolean value that indicates whether this instance specifies no particular grammar.
-- [var grammaticalGender: Morphology.GrammaticalGender?](morphology/grammaticalgender-swift.property.md)
+- [var grammaticalGender: Morphology.GrammaticalGender?](./grammaticalgender-swift.property.md)
   The grammatical gender used for inflecting strings with this morphology.
-- [Morphology.GrammaticalGender](morphology/grammaticalgender-swift.enum.md)
+- [Morphology.GrammaticalGender](./grammaticalgender-swift.enum.md)
   A representation of grammatical gender, used for inflecting strings.
-- [var number: Morphology.GrammaticalNumber?](morphology/number.md)
+- [var number: Morphology.GrammaticalNumber?](./number.md)
   The grammatical number used for inflecting strings with this morphology.
-- [Morphology.GrammaticalNumber](morphology/grammaticalnumber.md)
+- [Morphology.GrammaticalNumber](./grammaticalnumber.md)
   A representation of grammatical number, used for inflecting strings.
-- [var partOfSpeech: Morphology.PartOfSpeech?](morphology/partofspeech-swift.property.md)
+- [var partOfSpeech: Morphology.PartOfSpeech?](./partofspeech-swift.property.md)
   The grammatical part of speech used for inflecting strings with this morphology.
 
 

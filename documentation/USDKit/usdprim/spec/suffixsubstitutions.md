@@ -1,7 +1,8 @@
 # suffixSubstitutions
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The suffix substitutions dictionary.
 

@@ -1,14 +1,15 @@
 # fuword
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 long fuword(user_addr_t addr);
 ```
 

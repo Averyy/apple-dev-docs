@@ -1,22 +1,27 @@
 # AudioQueueInputCallback
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Called by the system when a recording audio queue has finished filling an audio queue buffer.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias AudioQueueInputCallback = (UnsafeMutableRawPointer?, AudioQueueRef, AudioQueueBufferRef, UnsafePointer<AudioTimeStamp>, UInt32, UnsafePointer<AudioStreamPacketDescription>?) -> Void
+```
+
+```c
+typedef void (*)(void *, struct OpaqueAudioQueue *, struct AudioQueueBuffer *, const struct AudioTimeStamp *, unsigned int, const struct AudioStreamPacketDescription *) AudioQueueInputCallback;
 ```
 
 #### Discussion
@@ -25,11 +30,11 @@ If you name your callback function `MyAudioQueueInputCallback`, you would declar
 
 ##### Discussion
 
-You specify a recording audio queue callback when calling the [`AudioQueueNewInput(_:_:_:_:_:_:_:)`](audioqueuenewinput(_:_:_:_:_:_:_:).md) function. The callback is invoked each time its recording audio queue has filled an audio queue buffer with fresh audio data. Typically, your callback writes the data to a file or other buffer, and then reenqueues the audio queue buffer to receive more data.
+You specify a recording audio queue callback when calling the [`AudioQueueNewInput(_:_:_:_:_:_:_:)`](./audioqueuenewinput%28_,_,_,_,_,_,_%29.md) function. The callback is invoked each time its recording audio queue has filled an audio queue buffer with fresh audio data. Typically, your callback writes the data to a file or other buffer, and then reenqueues the audio queue buffer to receive more data.
 
 ## Parameters
 
-- `inUserData`: The custom data you’ve specified in the `inUserData` parameter of the [`AudioQueueNewInput(_:_:_:_:_:_:_:)`](audioqueuenewinput(_:_:_:_:_:_:_:).md) function. Typically, this includes format and state information for the audio queue.
+- `inUserData`: The custom data you’ve specified in the `inUserData` parameter of the [`AudioQueueNewInput(_:_:_:_:_:_:_:)`](./audioqueuenewinput%28_,_,_,_,_,_,_%29.md) function. Typically, this includes format and state information for the audio queue.
 - `inAQ`: The recording audio queue that invoked the callback.
 - `inBuffer`: An audio queue buffer, newly filled by the recording audio queue, containing the new audio data your callback needs to write.
 - `inStartTime`: The sample time for the start of the audio queue buffer. This parameter is not used in basic recording.
@@ -38,9 +43,10 @@ You specify a recording audio queue callback when calling the [`AudioQueueNewInp
 
 ## See Also
 
-- [typealias AudioQueueOutputCallback](audioqueueoutputcallback.md)
+### Callbacks
+- [typealias AudioQueueOutputCallback](./audioqueueoutputcallback.md)
   Called by the system when an audio queue buffer is available for reuse.
-- [typealias AudioQueuePropertyListenerProc](audioqueuepropertylistenerproc.md)
+- [typealias AudioQueuePropertyListenerProc](./audioqueuepropertylistenerproc.md)
   Called by the system when a specified audio queue property changes value.
 
 

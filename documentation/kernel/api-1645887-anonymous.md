@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOHIDEventQueueTypeKernel](1645887-anonymous/kiohideventqueuetypekernel.md)
-- [kIOHIDEventQueueTypeUser](1645887-anonymous/kiohideventqueuetypeuser.md)
+- [kIOHIDEventQueueTypeKernel](./api-1645887-anonymous/kiohideventqueuetypekernel.md)
+- [kIOHIDEventQueueTypeUser](./api-1645887-anonymous/kiohideventqueuetypeuser.md)
 
 
 ---

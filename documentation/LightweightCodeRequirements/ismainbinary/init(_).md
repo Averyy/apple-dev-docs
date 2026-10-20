@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Matches if the process or file is or isn’t a main binary depending on the specified value.
 

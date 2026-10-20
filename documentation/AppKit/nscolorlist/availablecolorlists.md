@@ -1,17 +1,22 @@
 # availableColorLists
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns an array of all color lists found in the standard color list directories.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var availableColorLists: [NSColorList] { get }
+```
+
+```objc
+@property (class, copy, readonly) NSArray<NSColorList *> * availableColorLists;
 ```
 
 #### Return Value
@@ -20,7 +25,8 @@ An array of `NSColorList` objects representing all of the color lists found in t
 
 ## See Also
 
-- [init?(named: NSColorList.Name)](nscolorlist/init(named:).md)
+### Getting Lists of Colors
+- [init?(named: NSColorList.Name)](./init%28named%29.md)
   Searches the available color lists array and returns the color list with the specified name.
 
 

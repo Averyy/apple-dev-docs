@@ -1,7 +1,8 @@
 # BloomOptionsComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that sets the properties for the bloom post-processing effects.
 
@@ -28,28 +29,29 @@ It’s best to maintain a single BloomOptionsComponent in your scene. If more th
 ## Topics
 
 ### Configuring the bloom effect
-- [var strength: Float](bloomoptionscomponent/strength.md)
+- [var strength: Float](./bloomoptionscomponent/strength.md)
   The intensity of the bloom effect.
-- [var threshold: Float](bloomoptionscomponent/threshold.md)
+- [var threshold: Float](./bloomoptionscomponent/threshold.md)
   The brightness threshold for bloom activation.
-- [var blurRadius: Float](bloomoptionscomponent/blurradius.md)
+- [var blurRadius: Float](./bloomoptionscomponent/blurradius.md)
   The width of the bloom blur kernel as a percentage of viewport height
 ### Initializers
-- [init()](bloomoptionscomponent/init.md)
+- [init()](./bloomoptionscomponent/init%28%29.md)
   Creates a Bloom Options Component with default settings.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
+- [Component](./component.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
 
 ## See Also
 
-- [struct BloomComponent](bloomcomponent.md)
+### Bloom and tone mapping
+- [struct BloomComponent](./bloomcomponent.md)
   The `BloomComponent` adds a luminous glow effect around bright objects in the scene by extracting and blurring the brightest parts of the image, then combining them back with the original rendering. If scope is set to `unbounded` Bloom will be computed on the entire screen. If scope is set to `hierarchical` multiple Bloom Components can be used to opt in only the regions around certain objects for blooming.
-- [struct ToneMappingComponent](tonemappingcomponent.md)
+- [struct ToneMappingComponent](./tonemappingcomponent.md)
 
 
 ---

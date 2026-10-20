@@ -1,7 +1,8 @@
 # baseForegroundColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A color for the paste button’s icon and text.
 
@@ -17,13 +18,18 @@ A color for the paste button’s icon and text.
 var baseForegroundColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIColor * baseForegroundColor;
+```
+
 #### Discussion
 
-The [`displayMode`](uipastecontrol/configuration-swift.class/displaymode.md) you choose determines whether this property colors an icon, text, or both.
+The [`displayMode`](./displaymode.md) you choose determines whether this property colors an icon, text, or both.
 
 ## See Also
 
-- [var baseBackgroundColor: UIColor?](uipastecontrol/configuration-swift.class/basebackgroundcolor.md)
+### Coloring the button
+- [var baseBackgroundColor: UIColor?](./basebackgroundcolor.md)
   A color for the paste button’s background.
 
 

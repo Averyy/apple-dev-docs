@@ -1,7 +1,8 @@
 # update(from:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deforms the SceneKit geometry to match the specified face mesh.
 
@@ -15,11 +16,15 @@ Deforms the SceneKit geometry to match the specified face mesh.
 func update(from faceGeometry: ARFaceGeometry)
 ```
 
+```objc
+- (void) updateFromFaceGeometry:(ARFaceGeometry *) faceGeometry;
+```
+
 #### Discussion
 
-To update a SceneKit model of a face actively tracked in an AR session, call this method in your [`ARSCNViewDelegate`](arscnviewdelegate.md) object’s [`renderer(_:didUpdate:for:)`](arscnviewdelegate/renderer(_:didupdate:for:).md) callback, passing the [`geometry`](arfaceanchor/geometry.md) property from the [`ARFaceAnchor`](arfaceanchor.md) object that callback provides.
+To update a SceneKit model of a face actively tracked in an AR session, call this method in your [`ARSCNViewDelegate`](../arscnviewdelegate.md) object’s [`renderer(_:didUpdate:for:)`](../arscnviewdelegate/renderer%28_,didupdate,for%29.md) callback, passing the [`geometry`](../arfaceanchor/geometry.md) property from the [`ARFaceAnchor`](../arfaceanchor.md) object that callback provides.
 
-Alternatively, you can create, configure, and visualize face models independent of an AR session by creating face geometry objects using the [`ARFaceGeometry`](arfacegeometry.md) [`init(blendShapes:)`](arfacegeometry/init(blendshapes:).md) initializer and passing them to this method.
+Alternatively, you can create, configure, and visualize face models independent of an AR session by creating face geometry objects using the [`ARFaceGeometry`](../arfacegeometry.md) [`init(blendShapes:)`](../arfacegeometry/init%28blendshapes%29.md) initializer and passing them to this method.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a strongly-typed options value from raw C options.
 

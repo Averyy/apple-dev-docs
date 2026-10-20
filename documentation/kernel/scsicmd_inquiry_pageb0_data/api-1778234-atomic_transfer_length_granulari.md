@@ -1,7 +1,8 @@
 # ATOMIC_TRANSFER_LENGTH_GRANULARITY
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 UInt32 ATOMIC_TRANSFER_LENGTH_GRANULARITY;
 ```
 

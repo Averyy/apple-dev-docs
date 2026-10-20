@@ -1,7 +1,8 @@
 # didHide
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didHide: NotificationCenter.BaseMessageIdentifier<NSApplication.DidHideMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSApplication.DidHideMessage>`.
 
 
 ---

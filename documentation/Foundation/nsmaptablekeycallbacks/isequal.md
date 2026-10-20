@@ -1,7 +1,8 @@
 # isEqual
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Points to the function which compares second and third parameters. If `NULL`, then == is used for comparison.
 
@@ -18,6 +19,10 @@ Points to the function which compares second and third parameters. If `NULL`, th
 
 ```swift
 var isEqual: ((NSMapTable<AnyObject, AnyObject>, UnsafeRawPointer, UnsafeRawPointer) -> ObjCBool)?
+```
+
+```c
+_Bool (*)(NSMapTable *, const void *, const void *) isEqual;
 ```
 
 

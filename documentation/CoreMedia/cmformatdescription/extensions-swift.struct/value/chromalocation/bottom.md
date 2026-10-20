@@ -1,7 +1,8 @@
 # bottom
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,12 +21,13 @@ static let bottom: CMFormatDescription.Extensions.Value.ChromaLocation
 
 ## See Also
 
-- [static let bottomLeft: CMFormatDescription.Extensions.Value.ChromaLocation](cmformatdescription/extensions-swift.struct/value/chromalocation/bottomleft.md)
-- [static let center: CMFormatDescription.Extensions.Value.ChromaLocation](cmformatdescription/extensions-swift.struct/value/chromalocation/center.md)
-- [static let dv420: CMFormatDescription.Extensions.Value.ChromaLocation](cmformatdescription/extensions-swift.struct/value/chromalocation/dv420.md)
-- [static let left: CMFormatDescription.Extensions.Value.ChromaLocation](cmformatdescription/extensions-swift.struct/value/chromalocation/left.md)
-- [static let top: CMFormatDescription.Extensions.Value.ChromaLocation](cmformatdescription/extensions-swift.struct/value/chromalocation/top.md)
-- [static let topLeft: CMFormatDescription.Extensions.Value.ChromaLocation](cmformatdescription/extensions-swift.struct/value/chromalocation/topleft.md)
+### Chroma Locations
+- [static let bottomLeft: CMFormatDescription.Extensions.Value.ChromaLocation](./bottomleft.md)
+- [static let center: CMFormatDescription.Extensions.Value.ChromaLocation](./center.md)
+- [static let dv420: CMFormatDescription.Extensions.Value.ChromaLocation](./dv420.md)
+- [static let left: CMFormatDescription.Extensions.Value.ChromaLocation](./left.md)
+- [static let top: CMFormatDescription.Extensions.Value.ChromaLocation](./top.md)
+- [static let topLeft: CMFormatDescription.Extensions.Value.ChromaLocation](./topleft.md)
 
 
 ---

@@ -1,18 +1,19 @@
 # XCUIIdentifierMinimizeWindow
 
 **Framework**: XCUIAutomation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The identifier for a window’s minimize button.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,13 +22,18 @@ The identifier for a window’s minimize button.
 let XCUIIdentifierMinimizeWindow: String
 ```
 
+```c
+extern NSString * XCUIIdentifierMinimizeWindow;
+```
+
 ## See Also
 
-- [let XCUIIdentifierCloseWindow: String](xcuiidentifierclosewindow.md)
+### Identifying window buttons
+- [let XCUIIdentifierCloseWindow: String](./xcuiidentifierclosewindow.md)
   The identifier for a window’s close button.
-- [let XCUIIdentifierFullScreenWindow: String](xcuiidentifierfullscreenwindow.md)
+- [let XCUIIdentifierFullScreenWindow: String](./xcuiidentifierfullscreenwindow.md)
   The identifier for a window’s full-screen button.
-- [let XCUIIdentifierZoomWindow: String](xcuiidentifierzoomwindow.md)
+- [let XCUIIdentifierZoomWindow: String](./xcuiidentifierzoomwindow.md)
   The identifier for a window’s zoom button.
 
 

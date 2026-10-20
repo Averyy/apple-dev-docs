@@ -1,7 +1,8 @@
 # getsUserLocation
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the request returns results near a person’s location.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the request returns results near a person
 
 ## Declaration
 
-```swift
+```
 get getsUserLocation(): boolean;
 set getsUserLocation(value: boolean);
 ```
@@ -21,11 +22,12 @@ When set to `true`, the request returns results that are near the user’s curre
 
 ## See Also
 
-- [new Geocoder(options)](geocoder/geocoderconstructor.md)
+### Creating a geocoder object
+- [new Geocoder(options)](../geocoder/geocoderconstructor.md)
   Creates a geocoder object and sets optional language and user location properties.
-- [interface ServiceConstructorOptions](serviceconstructoroptions.md)
+- [interface ServiceConstructorOptions](../serviceconstructoroptions.md)
   Common options you provide when you create a service object.
-- [language](service/language.md)
+- [language](./language.md)
   A language ID that determines the language to use for displaying addresses.
 
 

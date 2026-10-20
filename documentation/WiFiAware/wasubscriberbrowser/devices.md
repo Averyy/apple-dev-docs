@@ -1,7 +1,8 @@
 # WASubscriberBrowser.Devices
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The structure that determines the devices to connect to.
 
@@ -33,30 +34,31 @@ NetworkBrowser(for: .wifiAware( .connecting(to:.selected(devices),  from:service
 ## Topics
 
 ### Selecting devices to connect to
-- [static func selected(WAPairedDevice.Devices) -> WASubscriberBrowser.Devices](wasubscriberbrowser/devices/selected(_:)-8myz8.md)
+- [static func selected(WAPairedDevice.Devices) -> WASubscriberBrowser.Devices](./devices/selected%28_%29-8myz8.md)
   Includes only the preselected paired devices in the provided dictionary.
-- [static func selected(some Sequence<WAPairedDevice>) -> WASubscriberBrowser.Devices](wasubscriberbrowser/devices/selected(_:)-5arv0.md)
+- [static func selected(some Sequence<WAPairedDevice>) -> WASubscriberBrowser.Devices](./devices/selected%28_%29-5arv0.md)
   Includes only the preselected paired devices in the provided list.
-- [static let userSpecifiedDevices: WASubscriberBrowser.Devices](wasubscriberbrowser/devices/userspecifieddevices.md)
+- [static let userSpecifiedDevices: WASubscriberBrowser.Devices](./devices/userspecifieddevices.md)
   Includes only devices the user selects or pairs in DeviceDiscoveryUI’s `DevicePicker()`.
 ### Using a live matching filter
-- [static func matching(Predicate<WAPairedDevice>) -> WASubscriberBrowser.Devices](wasubscriberbrowser/devices/matching(_:).md)
+- [static func matching(Predicate<WAPairedDevice>) -> WASubscriberBrowser.Devices](./devices/matching%28_%29.md)
   Includes only paired devices matching the provided live filter predicate.
 ### Connecting to all paired devices
-- [static let allPairedDevices: WASubscriberBrowser.Devices](wasubscriberbrowser/devices/allpaireddevices.md)
+- [static let allPairedDevices: WASubscriberBrowser.Devices](./devices/allpaireddevices.md)
   The property that includes all paired devices that your app has access to.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WASubscriberBrowser](wasubscriberbrowser.md)
+### Subscriber
+- [struct WASubscriberBrowser](../wasubscriberbrowser.md)
   The structure that configures a network browser to subscribe to a Wi-Fi Aware service and make outgoing connections to paired devices.
-- [WASubscriberBrowser.Action](wasubscriberbrowser/action.md)
+- [WASubscriberBrowser.Action](./action.md)
   The structure that configures the Wi-Fi Aware subscriber operation the network browser performs.
 
 

@@ -1,7 +1,8 @@
 # UITextView.BorderStyle.roundedRect
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Displays a rounded-style border for the text view.
 
@@ -12,6 +13,10 @@ Displays a rounded-style border for the text view.
 
 ```swift
 case roundedRect
+```
+
+```c
+UITextViewBorderStyleRoundedRect
 ```
 
 

@@ -1,7 +1,8 @@
 # init(ikResources:blendMasks:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an `AnimationEvaluation` bundle with the given IK resources and blend masks.
 

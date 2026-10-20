@@ -1,7 +1,8 @@
 # ActivityContent
 
 **Framework**: ActivityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes the state and configuration of a Live Activity.
 
@@ -17,50 +18,51 @@ struct ActivityContent<State> where State : Decodable, State : Encodable, State 
 
 ## Mentions
 
-- [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
+- [Displaying live data with Live Activities](./displaying-live-data-with-live-activities.md)
 
 ## Topics
 
 ### Describing a Live Activity
-- [init(state: State, staleDate: Date?, relevanceScore: Double)](activitycontent/init(state:staledate:relevancescore:).md)
+- [init(state: State, staleDate: Date?, relevanceScore: Double)](./activitycontent/init%28state,staledate,relevancescore%29.md)
   Creates the object that describes the state and configuration of a Live Activity.
-- [let state: State](activitycontent/state.md)
+- [let state: State](./activitycontent/state.md)
   The current state of a Live Activity in its life cycle.
-- [let staleDate: Date?](activitycontent/staledate.md)
+- [let staleDate: Date?](./activitycontent/staledate.md)
   The date when the system considers the Live Activity to be out of date.
-- [let relevanceScore: Double](activitycontent/relevancescore.md)
+- [let relevanceScore: Double](./activitycontent/relevancescore.md)
   A score you assign that determines the order in which your Live Activities appear when you start several Live Activities for your app.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:).md)
+### Starting a Live Activity
+- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?) throws -> Activity<Attributes>](./activity/request%28attributes,content,pushtype%29.md)
   Requests and starts a standard Live Activity.
-- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:style:).md)
+- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle) throws -> Activity<Attributes>](./activity/request%28attributes,content,pushtype,style%29.md)
   Requests and starts a Live Activity.
-- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle, alertConfiguration: AlertConfiguration, start: Date) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:style:alertconfiguration:start:).md)
+- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle, alertConfiguration: AlertConfiguration, start: Date) throws -> Activity<Attributes>](./activity/request%28attributes,content,pushtype,style,alertconfiguration,start%29.md)
   Requests and schedules a Live Activity for a specific date.
-- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle, alertConfiguration: AlertConfiguration, startDate: Date) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:style:alertconfiguration:startdate:).md)
-- [let attributes: Attributes](activity/attributes.md)
+- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle, alertConfiguration: AlertConfiguration, startDate: Date) throws -> Activity<Attributes>](./activity/request%28attributes,content,pushtype,style,alertconfiguration,startdate%29.md)
+- [let attributes: Attributes](./activity/attributes.md)
   A set of attributes that describe a Live Activity and its content.
-- [protocol ActivityAttributes](activityattributes.md)
+- [protocol ActivityAttributes](./activityattributes.md)
   The protocol you implement to describe the content of a Live Activity.
-- [enum ActivityStyle](activitystyle.md)
-- [var content: ActivityContent<Activity<Attributes>.ContentState>](activity/content.md)
+- [enum ActivityStyle](./activitystyle.md)
+- [var content: ActivityContent<Activity<Attributes>.ContentState>](./activity/content.md)
   The dynamic content of a Live Activity.
-- [typealias ContentState](activity/contentstate-swift.typealias.md)
+- [typealias ContentState](./activity/contentstate-swift.typealias.md)
   The type alias for the structure that describes the dynamic content of a Live Activity.
-- [struct PushType](pushtype.md)
+- [struct PushType](./pushtype.md)
   The structure that offers constants you use to configure a Live Activity to receive updates through ActivityKit push notifications.
-- [enum ActivityAuthorizationError](activityauthorizationerror.md)
+- [enum ActivityAuthorizationError](./activityauthorizationerror.md)
   An error that indicates why the request to start a Live Activity failed.
 
 

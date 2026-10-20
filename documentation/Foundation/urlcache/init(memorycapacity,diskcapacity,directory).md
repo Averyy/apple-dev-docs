@@ -1,7 +1,8 @@
 # init(memoryCapacity:diskCapacity:directory:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL cache object with the specified memory and disk capacities, in the specified directory.
 
@@ -32,7 +33,8 @@ A disk cache measured in the tens of megabytes is acceptable in most cases.
 
 ## See Also
 
-- [init(memoryCapacity: Int, diskCapacity: Int, diskPath: String?)](urlcache/init(memorycapacity:diskcapacity:diskpath:).md)
+### Creating a new cache object
+- [init(memoryCapacity: Int, diskCapacity: Int, diskPath: String?)](./init%28memorycapacity,diskcapacity,diskpath%29.md)
   Creates a URL cache object with the specified values.
 
 

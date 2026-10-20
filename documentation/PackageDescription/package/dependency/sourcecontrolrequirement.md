@@ -1,7 +1,8 @@
 # Package.Dependency.SourceControlRequirement
 
 **Framework**: PackageDescription  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enum that represents the requirement for a package dependency.
 
@@ -20,7 +21,7 @@ The dependency requirement can be defined as one of three different version requ
 
 **A version-based requirement.**
 
-Decide whether your project accepts updates to a package dependency up to the next major version or up to the next minor version. To be more restrictive, select a specific version range or an exact version. Major versions tend to have more significant changes than minor versions, and may require you to modify your code when they update. The version rule requires Swift packages to conform to semantic versioning. To learn more about the semantic versioning standard, see the [`Semantic Versioning 2.0.0`](https://developer.apple.comhttps://semver.org) website.
+Decide whether your project accepts updates to a package dependency up to the next major version or up to the next minor version. To be more restrictive, select a specific version range or an exact version. Major versions tend to have more significant changes than minor versions, and may require you to modify your code when they update. The version rule requires Swift packages to conform to semantic versioning. To learn more about the semantic versioning standard, see the [Semantic Versioning 2.0.0](https://semver.org) website.
 
 Selecting the version requirement is the recommended way to add a package dependency. It allows you to create a balance between restricting changes and obtaining improvements and features.
 
@@ -39,26 +40,27 @@ Note that packages which use commit-based dependency requirements can’t be add
 ## Topics
 
 ### Enumeration Cases
-- [Package.Dependency.SourceControlRequirement.branch(_:)](package/dependency/sourcecontrolrequirement/branch(_:).md)
+- [Package.Dependency.SourceControlRequirement.branch(_:)](./sourcecontrolrequirement/branch%28_%29.md)
   A branch based requirement.
-- [Package.Dependency.SourceControlRequirement.exact(_:)](package/dependency/sourcecontrolrequirement/exact(_:).md)
+- [Package.Dependency.SourceControlRequirement.exact(_:)](./sourcecontrolrequirement/exact%28_%29.md)
   An exact version based requirement.
-- [Package.Dependency.SourceControlRequirement.range(_:)](package/dependency/sourcecontrolrequirement/range(_:).md)
+- [Package.Dependency.SourceControlRequirement.range(_:)](./sourcecontrolrequirement/range%28_%29.md)
   A requirement based on a range of versions.
-- [Package.Dependency.SourceControlRequirement.revision(_:)](package/dependency/sourcecontrolrequirement/revision(_:).md)
+- [Package.Dependency.SourceControlRequirement.revision(_:)](./sourcecontrolrequirement/revision%28_%29.md)
   A commit based requirement.
 
 ## See Also
 
-- [let traits: Set<Package.Dependency.Trait>](package/dependency/traits.md)
+### Declaring Requirements
+- [let traits: Set<Package.Dependency.Trait>](./traits.md)
   The dependencies traits configuration.
-- [Package.Dependency.Trait](package/dependency/trait.md)
+- [Package.Dependency.Trait](./trait.md)
   An enabled trait of a dependency.
-- [Package.Dependency.RegistryRequirement](package/dependency/registryrequirement.md)
+- [Package.Dependency.RegistryRequirement](./registryrequirement.md)
   An enum that represents the requirement for a package dependency.
-- [var requirement: Package.Dependency.Requirement](package/dependency/requirement-swift.property.md)
+- [var requirement: Package.Dependency.Requirement](./requirement-swift.property.md)
   The dependency requirement of the package dependency.
-- [Package.Dependency.Requirement](package/dependency/requirement-swift.enum.md)
+- [Package.Dependency.Requirement](./requirement-swift.enum.md)
   An enum that represents the requirement for a package dependency.
 
 

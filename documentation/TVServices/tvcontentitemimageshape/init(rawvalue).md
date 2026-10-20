@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: TV Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - tvOS 9.0+

@@ -1,32 +1,35 @@
 # AppScreenshotCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
 **Availability**:
-- App Store Connect API 1.2+
+- App Store Connect API 1.2+ - Deprecated in 4.5
+
+> **Deprecated**: This object is deprecated. Use [`AppAssetLibraryImageCreateRequest`](../appassetlibraryimagecreaterequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object AppScreenshotCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppScreenshotCreateRequest.Data.Attributes](appscreenshotcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppScreenshotCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
-- [object AppScreenshotCreateRequest.Data.Relationships](appscreenshotcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object AppScreenshotCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
 
 - `attributes` (AppScreenshotCreateRequest.Data.Attributes) *(required)*
 - `relationships` (AppScreenshotCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appScreenshots`
 
 
 ---

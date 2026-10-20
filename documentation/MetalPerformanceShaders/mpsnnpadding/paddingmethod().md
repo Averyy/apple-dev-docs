@@ -2,15 +2,16 @@
 
 **Framework**: Metal Performance Shaders  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,19 +19,24 @@
 func paddingMethod() -> MPSNNPaddingMethod
 ```
 
+```objc
+- (MPSNNPaddingMethod) paddingMethod;
+```
+
 ## See Also
 
-- [func destinationImageDescriptor(forSourceImages: [MPSImage], sourceStates: [MPSState]?, for: MPSKernel, suggestedDescriptor: MPSImageDescriptor) -> MPSImageDescriptor](mpsnnpadding/destinationimagedescriptor(forsourceimages:sourcestates:for:suggesteddescriptor:).md)
-- [class MPSImage](mpsimage.md)
+### Instance Methods
+- [func destinationImageDescriptor(forSourceImages: [MPSImage], sourceStates: [MPSState]?, for: MPSKernel, suggestedDescriptor: MPSImageDescriptor) -> MPSImageDescriptor](./destinationimagedescriptor%28forsourceimages,sourcestates,for,suggesteddescriptor%29.md)
+- [class MPSImage](../mpsimage.md)
   A texture that may have more than four channels for use in convolutional neural networks.
-- [class MPSState](mpsstate.md)
+- [class MPSState](../mpsstate.md)
   An opaque data container for large storage in MPS CNN filters.
-- [class MPSKernel](mpskernel.md)
+- [class MPSKernel](../mpskernel.md)
   A standard interface for Metal Performance Shaders kernels.
-- [class MPSImageDescriptor](mpsimagedescriptor.md)
-  A description of the attributes used to create an [`MPSImage`](mpsimage.md).
-- [func label() -> String](mpsnnpadding/label.md)
-- [func inverse() -> Self?](mpsnnpadding/inverse.md)
+- [class MPSImageDescriptor](../mpsimagedescriptor.md)
+  A description of the attributes used to create an [`MPSImage`](../mpsimage.md).
+- [func label() -> String](./label%28%29.md)
+- [func inverse() -> Self?](./inverse%28%29.md)
 
 
 ---

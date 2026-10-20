@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The download manager’s delegate.
 
@@ -19,9 +20,14 @@ The download manager’s delegate.
 weak var delegate: (any BADownloadManagerDelegate)? { get set }
 ```
 
+```objc
+@property (weak) id<BADownloadManagerDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol BADownloadManagerDelegate](badownloadmanagerdelegate.md)
+### Monitoring downloads
+- [protocol BADownloadManagerDelegate](../badownloadmanagerdelegate.md)
   An interface for reacting to asset download events and processing concluded downloads.
 
 

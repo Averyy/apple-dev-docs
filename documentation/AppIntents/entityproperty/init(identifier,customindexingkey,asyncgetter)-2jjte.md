@@ -1,7 +1,8 @@
 # init(identifier:customIndexingKey:asyncGetter:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an app intent entity property.  Do not call this directly, use @Property
 
@@ -17,6 +18,8 @@ Creates an app intent entity property.  Do not call this directly, use @Property
 ```swift
 convenience init<Entity>(identifier: String, customIndexingKey: CSCustomAttributeKey, asyncGetter: @escaping @Sendable (Entity) async throws -> Value) where Entity : AppEntity
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Double`.
 
 ## Parameters
 

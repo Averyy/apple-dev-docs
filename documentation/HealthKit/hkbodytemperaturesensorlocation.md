@@ -1,7 +1,8 @@
 # HKBodyTemperatureSensorLocation
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate where on the body a temperature reading was taken.
 
@@ -19,45 +20,49 @@ Constants that indicate where on the body a temperature reading was taken.
 enum HKBodyTemperatureSensorLocation
 ```
 
+```c
+enum HKBodyTemperatureSensorLocation : NSInteger;
+```
+
 ## Topics
 
 ### Locations
-- [HKBodyTemperatureSensorLocation.other](hkbodytemperaturesensorlocation/other.md)
+- [HKBodyTemperatureSensorLocation.other](./hkbodytemperaturesensorlocation/other.md)
   The temperature was taken at a location that is not otherwise in this list.
-- [HKBodyTemperatureSensorLocation.armpit](hkbodytemperaturesensorlocation/armpit.md)
+- [HKBodyTemperatureSensorLocation.armpit](./hkbodytemperaturesensorlocation/armpit.md)
   The temperature was taken in the armpit.
-- [HKBodyTemperatureSensorLocation.body](hkbodytemperaturesensorlocation/body.md)
+- [HKBodyTemperatureSensorLocation.body](./hkbodytemperaturesensorlocation/body.md)
   The temperature was taken on the body.
-- [HKBodyTemperatureSensorLocation.ear](hkbodytemperaturesensorlocation/ear.md)
+- [HKBodyTemperatureSensorLocation.ear](./hkbodytemperaturesensorlocation/ear.md)
   The temperature was taken in the ear.
-- [HKBodyTemperatureSensorLocation.finger](hkbodytemperaturesensorlocation/finger.md)
+- [HKBodyTemperatureSensorLocation.finger](./hkbodytemperaturesensorlocation/finger.md)
   The temperature was taken at the finger.
-- [HKBodyTemperatureSensorLocation.gastroIntestinal](hkbodytemperaturesensorlocation/gastrointestinal.md)
+- [HKBodyTemperatureSensorLocation.gastroIntestinal](./hkbodytemperaturesensorlocation/gastrointestinal.md)
   The temperature was taken inside the gastrointestinal tract.
-- [HKBodyTemperatureSensorLocation.mouth](hkbodytemperaturesensorlocation/mouth.md)
+- [HKBodyTemperatureSensorLocation.mouth](./hkbodytemperaturesensorlocation/mouth.md)
   The temperature was taken in the mouth.
-- [HKBodyTemperatureSensorLocation.rectum](hkbodytemperaturesensorlocation/rectum.md)
+- [HKBodyTemperatureSensorLocation.rectum](./hkbodytemperaturesensorlocation/rectum.md)
   The temperature was taken in the rectum.
-- [HKBodyTemperatureSensorLocation.toe](hkbodytemperaturesensorlocation/toe.md)
+- [HKBodyTemperatureSensorLocation.toe](./hkbodytemperaturesensorlocation/toe.md)
   The temperature was taken at the toe.
-- [HKBodyTemperatureSensorLocation.earDrum](hkbodytemperaturesensorlocation/eardrum.md)
+- [HKBodyTemperatureSensorLocation.earDrum](./hkbodytemperaturesensorlocation/eardrum.md)
   The temperature was taken on the eardrum.
-- [HKBodyTemperatureSensorLocation.temporalArtery](hkbodytemperaturesensorlocation/temporalartery.md)
+- [HKBodyTemperatureSensorLocation.temporalArtery](./hkbodytemperaturesensorlocation/temporalartery.md)
   The temperature was taken at the temporal artery.
-- [HKBodyTemperatureSensorLocation.forehead](hkbodytemperaturesensorlocation/forehead.md)
+- [HKBodyTemperatureSensorLocation.forehead](./hkbodytemperaturesensorlocation/forehead.md)
   The temperature was taken on the forehead.
 ### Initializers
-- [init?(rawValue: Int)](hkbodytemperaturesensorlocation/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkbodytemperaturesensorlocation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

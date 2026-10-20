@@ -1,7 +1,8 @@
 # relationshipKeyPathsForPrefetching
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key paths that identify any related models to include as part of the fetch.
 
@@ -31,7 +32,8 @@ The default value is an empty array.
 
 ## See Also
 
-- [var propertiesToFetch: [PartialKeyPath<T>]](fetchdescriptor/propertiestofetch.md)
+### Specifying the fetched attributes
+- [var propertiesToFetch: [PartialKeyPath<T>]](./propertiestofetch.md)
   The specific subset of attributes to fetch if you don’t require them all.
 
 

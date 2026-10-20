@@ -1,7 +1,8 @@
 # HMServiceTypeWiFiRouter
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A WiFi router service.
 
@@ -19,9 +20,14 @@ A WiFi router service.
 let HMServiceTypeWiFiRouter: String
 ```
 
+```c
+extern NSString * const HMServiceTypeWiFiRouter;
+```
+
 ## See Also
 
-- [let HMServiceTypeWiFiSatellite: String](hmservicetypewifisatellite.md)
+### Network
+- [let HMServiceTypeWiFiSatellite: String](./hmservicetypewifisatellite.md)
   A Satellite WiFi router service.
 
 

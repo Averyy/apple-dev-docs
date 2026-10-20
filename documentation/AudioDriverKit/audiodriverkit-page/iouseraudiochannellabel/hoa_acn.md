@@ -1,7 +1,8 @@
 # HOA_ACN
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A generic high order ambisonics (HOA) Ambisonic Channel Number (ACN).
 
@@ -10,7 +11,7 @@ A generic high order ambisonics (HOA) Ambisonic Channel Number (ACN).
 
 ## Declaration
 
-```swift
+```c
 HOA_ACN
 ```
 

@@ -1,7 +1,8 @@
 # disabled(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether people can interact with this control.
 
@@ -21,7 +22,7 @@ Determines whether people can interact with this control.
 
 #### Discussion
 
-Controls also respect the [`disabled(_:)`](view/disabled(_:).md) modifier applied to the control’s label. That modifier only disables the label, however. To disable the control overall, apply this modifier to the control template:
+Controls also respect the [`disabled(_:)`](../view/disabled%28_%29.md) modifier applied to the control’s label. That modifier only disables the label, however. To disable the control overall, apply this modifier to the control template:
 
 ```swift
 struct GarageDoorOpener: ControlWidget {

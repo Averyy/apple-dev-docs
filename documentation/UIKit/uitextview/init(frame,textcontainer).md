@@ -1,7 +1,8 @@
 # init(frame:textContainer:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new text view with the specified text container.
 
@@ -9,13 +10,17 @@ Creates a new text view with the specified text container.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init(frame: CGRect, textContainer: NSTextContainer?)
+```
+
+```objc
+- (instancetype) initWithFrame:(CGRect) frame textContainer:(NSTextContainer *) textContainer;
 ```
 
 #### Return Value
@@ -33,9 +38,10 @@ This is the designated initializer for `UITextView` objects.
 
 ## See Also
 
-- [convenience init(usingTextLayoutManager: Bool)](uitextview/init(usingtextlayoutmanager:).md)
+### Initializing the text view
+- [convenience init(usingTextLayoutManager: Bool)](./init%28usingtextlayoutmanager%29.md)
   Creates a new text view, with or without a text layout manager depending on the Boolean value you specify.
-- [init?(coder: NSCoder)](uitextview/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a text view from data in an unarchiver.
 
 

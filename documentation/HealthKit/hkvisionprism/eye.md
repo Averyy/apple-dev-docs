@@ -1,7 +1,8 @@
 # eye
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value indicating which eye the correction applies to.
 
@@ -19,23 +20,28 @@ A value indicating which eye the correction applies to.
 var eye: HKVisionEye { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) HKVisionEye eye;
+```
+
 ## See Also
 
-- [enum HKVisionEye](hkvisioneye.md)
+### Accessing lens specification data
+- [enum HKVisionEye](../hkvisioneye.md)
   A value that specifies the eye for a vision prescription.
-- [var amount: HKQuantity](hkvisionprism/amount.md)
+- [var amount: HKQuantity](./amount.md)
   The strength of the correction.
-- [var angle: HKQuantity](hkvisionprism/angle.md)
+- [var angle: HKQuantity](./angle.md)
   The orientation of the adjustment.
-- [var horizontalAmount: HKQuantity](hkvisionprism/horizontalamount.md)
+- [var horizontalAmount: HKQuantity](./horizontalamount.md)
   The strength of the horizontal correction.
-- [var horizontalBase: HKPrismBase](hkvisionprism/horizontalbase.md)
+- [var horizontalBase: HKPrismBase](./horizontalbase.md)
   The orientation of the horizontal portion of the correction.
-- [var verticalAmount: HKQuantity](hkvisionprism/verticalamount.md)
+- [var verticalAmount: HKQuantity](./verticalamount.md)
   The strength of the vertical correction.
-- [var verticalBase: HKPrismBase](hkvisionprism/verticalbase.md)
+- [var verticalBase: HKPrismBase](./verticalbase.md)
   The orientation of the vertical portion of the correction.
-- [enum HKPrismBase](hkprismbase.md)
+- [enum HKPrismBase](../hkprismbase.md)
   The orientation of the prism correction, represented by the location of the prism’s base (the thickest part of the prism).
 
 

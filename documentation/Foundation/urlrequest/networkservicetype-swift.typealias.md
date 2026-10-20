@@ -1,7 +1,8 @@
 # URLRequest.NetworkServiceType
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An alias for the network service type.
 
@@ -22,13 +23,14 @@ typealias NetworkServiceType = NSURLRequest.NetworkServiceType
 
 #### Discussion
 
-This Swift type is aliased to [`NSURLRequest.NetworkServiceType`](nsurlrequest/networkservicetype-swift.enum.md).
+This Swift type is aliased to [`NSURLRequest.NetworkServiceType`](../nsurlrequest/networkservicetype-swift.enum.md).
 
 ## See Also
 
-- [var networkServiceType: URLRequest.NetworkServiceType](urlrequest/networkservicetype-swift.property.md)
+### Accessing the service type
+- [var networkServiceType: URLRequest.NetworkServiceType](./networkservicetype-swift.property.md)
   The type of network service for all tasks within network sessions to enable Cellular Network Slicing.
-- [NSURLRequest.NetworkServiceType](nsurlrequest/networkservicetype-swift.enum.md)
+- [NSURLRequest.NetworkServiceType](../nsurlrequest/networkservicetype-swift.enum.md)
   Constants that specify how a request uses network resources.
 
 

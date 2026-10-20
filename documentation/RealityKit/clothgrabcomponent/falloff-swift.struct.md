@@ -1,7 +1,8 @@
 # ClothGrabComponent.Falloff
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Controls whether grab strength falls off based on particle distance from the volume surface.
 
@@ -23,21 +24,22 @@ When grabbing particles using a volume, falloff determines how strongly particle
 ## Topics
 
 ### Type Properties
-- [static var disabled: ClothGrabComponent.Falloff](clothgrabcomponent/falloff-swift.struct/disabled.md)
+- [static var disabled: ClothGrabComponent.Falloff](./falloff-swift.struct/disabled.md)
   No falloff is applied.
-- [static var enabled: ClothGrabComponent.Falloff](clothgrabcomponent/falloff-swift.struct/enabled.md)
+- [static var enabled: ClothGrabComponent.Falloff](./falloff-swift.struct/enabled.md)
   Grab strength decreases as particles approach the volume surface.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var falloff: ClothGrabComponent.Falloff](clothgrabcomponent/falloff-swift.property.md)
+### Configuring the falloff
+- [var falloff: ClothGrabComponent.Falloff](./falloff-swift.property.md)
   Controls whether the grabbing strength falls off based on distance from the volume surface.
 
 

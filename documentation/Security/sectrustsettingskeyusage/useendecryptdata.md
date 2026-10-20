@@ -1,7 +1,8 @@
 # useEnDecryptData
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key can be used to encrypt or decrypt data.
 
@@ -13,6 +14,10 @@ The key can be used to encrypt or decrypt data.
 
 ```swift
 static var useEnDecryptData: SecTrustSettingsKeyUsage { get }
+```
+
+```c
+kSecTrustSettingsKeyUseEnDecryptData
 ```
 
 

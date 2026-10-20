@@ -1,7 +1,8 @@
 # readAttributeCatalogList(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeCatalogList(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeCatalogList() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeCatalogListWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

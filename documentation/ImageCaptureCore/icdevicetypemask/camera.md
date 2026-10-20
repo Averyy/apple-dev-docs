@@ -1,7 +1,8 @@
 # ICDeviceTypeMask.camera
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mask for detecting a camera.
 
@@ -18,9 +19,14 @@ A mask for detecting a camera.
 case camera
 ```
 
+```c
+ICDeviceTypeMaskCamera
+```
+
 ## See Also
 
-- [ICDeviceTypeMask.scanner](icdevicetypemask/scanner.md)
+### Constants
+- [ICDeviceTypeMask.scanner](./scanner.md)
   A mask for detecting a scanner.
 
 

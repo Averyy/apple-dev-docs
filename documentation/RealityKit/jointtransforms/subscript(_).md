@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a single joint transform in the collection at the given index.
 
@@ -11,7 +12,7 @@ Accesses a single joint transform in the collection at the given index.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,14 @@ subscript(index: JointTransforms.Index) -> Transform { get set }
 
 #### Overview
 
-For more on accessing elements by index, see [`subscript(_:)`](https://developer.apple.com/documentation/swift/array/subscript(_:)-25iat).
+For more on accessing elements by index, see [`subscript(_:)`](../../Swift/array/subscript%28_%29-25iat.md).
 
 ## See Also
 
-- [func index(after: JointTransforms.Index) -> JointTransforms.Index](jointtransforms/index(after:).md)
+### Accessing joint transforms
+- [func index(after: JointTransforms.Index) -> JointTransforms.Index](./index%28after%29.md)
   Returns the position in the sequence of the joint that follows the given position.
-- [func index(before: JointTransforms.Index) -> JointTransforms.Index](jointtransforms/index(before:).md)
+- [func index(before: JointTransforms.Index) -> JointTransforms.Index](./index%28before%29.md)
   Returns the position in the sequence of the joint that preceeds the given position.
 
 

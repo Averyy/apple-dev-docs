@@ -1,7 +1,8 @@
 # MPChangeLanguageOptionSetting
 
 **Framework**: Media Player  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The states that determine when language option changes take effect.
 
@@ -20,33 +21,38 @@ The states that determine when language option changes take effect.
 enum MPChangeLanguageOptionSetting
 ```
 
+```c
+enum MPChangeLanguageOptionSetting : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPChangeLanguageOptionSetting.none](mpchangelanguageoptionsetting/none.md)
+- [MPChangeLanguageOptionSetting.none](./mpchangelanguageoptionsetting/none.md)
   No language option change is to be made.
-- [MPChangeLanguageOptionSetting.nowPlayingItemOnly](mpchangelanguageoptionsetting/nowplayingitemonly.md)
+- [MPChangeLanguageOptionSetting.nowPlayingItemOnly](./mpchangelanguageoptionsetting/nowplayingitemonly.md)
   The language option change is applied to the now playing item only.
-- [MPChangeLanguageOptionSetting.permanent](mpchangelanguageoptionsetting/permanent.md)
+- [MPChangeLanguageOptionSetting.permanent](./mpchangelanguageoptionsetting/permanent.md)
   The language option change is applied to all future playback items.
 ### Initializers
-- [init?(rawValue: Int)](mpchangelanguageoptionsetting/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mpchangelanguageoptionsetting/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var languageOption: MPNowPlayingInfoLanguageOption](mpchangelanguageoptioncommandevent/languageoption.md)
+### Changing the language option
+- [var languageOption: MPNowPlayingInfoLanguageOption](./mpchangelanguageoptioncommandevent/languageoption.md)
   The requested language option to change.
-- [var setting: MPChangeLanguageOptionSetting](mpchangelanguageoptioncommandevent/setting.md)
+- [var setting: MPChangeLanguageOptionSetting](./mpchangelanguageoptioncommandevent/setting.md)
   The extent of the language setting change.
 
 

@@ -1,7 +1,8 @@
 # title
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Primary title or name of the media content.
 

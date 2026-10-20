@@ -1,7 +1,8 @@
 # P256.Signing
 
 **Framework**: Apple CryptoKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A mechanism used to create or verify a cryptographic signature using the NIST P-256 elliptic curve digital signature algorithm (ECDSA).
 
@@ -23,23 +24,24 @@ enum Signing
 ## Topics
 
 ### Using keys
-- [P256.Signing.PrivateKey](p256/signing/privatekey.md)
+- [P256.Signing.PrivateKey](./signing/privatekey.md)
   A P-256 private key used to create cryptographic signatures.
-- [P256.Signing.PublicKey](p256/signing/publickey.md)
+- [P256.Signing.PublicKey](./signing/publickey.md)
   A P-256 public key used to verify cryptographic signatures.
 ### Structures
-- [P256.Signing.ECDSASignature](p256/signing/ecdsasignature.md)
+- [P256.Signing.ECDSASignature](./signing/ecdsasignature.md)
   A P-256 elliptic curve digital signature algorithm (ECDSA) signature.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [P256.KeyAgreement](p256/keyagreement.md)
+### Performing operations
+- [P256.KeyAgreement](./keyagreement.md)
   A mechanism used to create a shared secret between two users by performing NIST P-256 elliptic curve Diffie Hellman (ECDH) key exchange.
 
 

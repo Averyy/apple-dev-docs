@@ -1,7 +1,8 @@
 # PreviewRegistry
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that the system uses to locate previews at runtime.
 
@@ -22,29 +23,30 @@ protocol PreviewRegistry
 
 #### Overview
 
-Preview macros make use of this protocol on your behalf. Don’t use it directly. Instead, use one of the preview macros, like [`Preview(_:body:)`](https://developer.apple.com/documentation/swiftui/preview(_:body:)).
+Preview macros make use of this protocol on your behalf. Don’t use it directly. Instead, use one of the preview macros, like [`Preview(_:body:)`](../SwiftUI/preview%28_,body%29.md).
 
 > ❗ **Important**: If you define a preview registry directly, the behavior is undefined.
 
 ## Topics
 
 ### Making a preview
-- [static func makePreview() throws -> Preview](previewregistry/makepreview.md)
-- [static var preview: Preview](previewregistry/preview.md)
-- [static var column: Int](previewregistry/column.md)
-- [static var fileID: String](previewregistry/fileid.md)
-- [static var line: Int](previewregistry/line.md)
+- [static func makePreview() throws -> Preview](./previewregistry/makepreview%28%29.md)
+- [static var preview: Preview](./previewregistry/preview.md)
+- [static var column: Int](./previewregistry/column.md)
+- [static var fileID: String](./previewregistry/fileid.md)
+- [static var line: Int](./previewregistry/line.md)
 ### Getting errors
-- [struct PreviewUnavailable](previewunavailable.md)
+- [struct PreviewUnavailable](./previewunavailable.md)
   An error that the system throws when a preview is unavailable at runtime.
 
 ## See Also
 
-- [struct Preview](preview.md)
+### Preview definition
+- [struct Preview](./preview.md)
   A base type that preview macros use to create previews.
-- [enum PreviewLayout](previewlayout.md)
+- [enum PreviewLayout](./previewlayout.md)
   A size constraint for a preview.
-- [struct PreviewTrait](previewtrait.md)
+- [struct PreviewTrait](./previewtrait.md)
   Customizations that you can apply to a preview.
 
 

@@ -1,7 +1,8 @@
 # locations
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of location indexes that correspond to their respective colors.
 
@@ -11,7 +12,7 @@ An array of location indexes that correspond to their respective colors.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,11 +22,12 @@ var locations: [CGFloat] { get }
 
 ## See Also
 
-- [func setColors([UIColor], locations: [CGFloat])](mkgradientpolylinerenderer/setcolors(_:locations:)-3xrou.md)
+### Accessing the gradient colors
+- [func setColors([UIColor], locations: [CGFloat])](./setcolors%28_,locations%29-3xrou.md)
   Sets the iOS colors and corresponding unit distance values to create gradients.
-- [func setColors([NSColor], locations: [CGFloat])](mkgradientpolylinerenderer/setcolors(_:locations:)-1tuft.md)
+- [func setColors([NSColor], locations: [CGFloat])](./setcolors%28_,locations%29-1tuft.md)
   Sets the macOS colors and corresponding unit distance values to create gradients.
-- [var colors: [UIColor]](mkgradientpolylinerenderer/colors.md)
+- [var colors: [UIColor]](./colors.md)
   An array that represents the gradient’s color transition points.
 
 

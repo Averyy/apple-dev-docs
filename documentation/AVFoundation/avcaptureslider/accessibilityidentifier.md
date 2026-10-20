@@ -1,7 +1,8 @@
 # accessibilityIdentifier
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string identifier for the slider.
 
@@ -16,6 +17,10 @@ A string identifier for the slider.
 
 ```swift
 var accessibilityIdentifier: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * accessibilityIdentifier;
 ```
 
 

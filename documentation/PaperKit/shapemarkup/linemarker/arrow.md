@@ -1,7 +1,8 @@
 # ShapeMarkup.LineMarker.arrow
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An arrow marker pointing in the direction of the line.
 

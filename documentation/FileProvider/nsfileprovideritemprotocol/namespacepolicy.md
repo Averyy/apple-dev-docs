@@ -1,7 +1,8 @@
 # namespacePolicy
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Declarative API to define the item namespace policy according to the available NSFileProviderNamespacePolicy
 
@@ -16,6 +17,10 @@ Declarative API to define the item namespace policy according to the available N
 
 ```swift
 optional var namespacePolicy: NSFileProviderNamespacePolicy { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSFileProviderNamespacePolicy namespacePolicy;
 ```
 
 

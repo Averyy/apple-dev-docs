@@ -1,7 +1,8 @@
 # DispatchSync_f
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Schedule a C-style function for synchronous execution on the current queue.
 
@@ -11,7 +12,7 @@ Schedule a C-style function for synchronous execution on the current queue.
 
 ## Declaration
 
-```swift
+```c
 void DispatchSync_f(void *context, IODispatchFunction function);
 ```
 
@@ -26,7 +27,8 @@ This method schedules the function for execution on the queue and waits for it t
 
 ## See Also
 
-- [- DispatchSync](iodispatchqueue/3438192-dispatchsync.md)
+### Executing a Task Synchronously
+- [- DispatchSync](./api-3438192-dispatchsync.md)
   Schedule a block for synchronous execution on the current queue.
 
 

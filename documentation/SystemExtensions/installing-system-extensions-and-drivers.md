@@ -1,6 +1,7 @@
 # Installing System Extensions and Drivers
 
-**Framework**: System Extensions
+**Framework**: System Extensions  
+**Role**: Article
 
 Activate system extensions and drivers to make them available to the system, and update or deactivate them as needed.
 
@@ -12,7 +13,7 @@ System extensions reside inside your app’s `Contents/Library/SystemExtensions`
 
 ##### Activate a New System Extension
 
-To start the activation process for your system extension, create an activation request by calling the [`activationRequest(forExtensionWithIdentifier:queue:)`](ossystemextensionrequest/activationrequest(forextensionwithidentifier:queue:).md) method of [`OSSystemExtensionRequest`](ossystemextensionrequest.md). When you submit that request object to the [`OSSystemExtensionManager`](ossystemextensionmanager.md), the system begins the activation process and reports the results back to the delegate object you specify. The following code shows the activation steps for a DriverKit extension.
+To start the activation process for your system extension, create an activation request by calling the [`activationRequest(forExtensionWithIdentifier:queue:)`](./ossystemextensionrequest/activationrequest%28forextensionwithidentifier,queue%29.md) method of [`OSSystemExtensionRequest`](./ossystemextensionrequest.md). When you submit that request object to the [`OSSystemExtensionManager`](./ossystemextensionmanager.md), the system begins the activation process and reports the results back to the delegate object you specify. The following code shows the activation steps for a DriverKit extension.
 
 ```swift
 // Create an activation request and assign a delegate to
@@ -35,19 +36,19 @@ During the activation process, the system verifies:
 - The identifer in your activation request matches the one in your system extension bundle.
 - The identifier isn’t already in use by another system extension.
 
-If the verification process fails, the system reports the error back to your delegate’s [`request(_:didFailWithError:)`](ossystemextensionrequestdelegate/request(_:didfailwitherror:).md) method. Use the error code to identify the reason for the failure so that you can correct it.
+If the verification process fails, the system reports the error back to your delegate’s [`request(_:didFailWithError:)`](./ossystemextensionrequestdelegate/request%28_,didfailwitherror%29.md) method. Use the error code to identify the reason for the failure so that you can correct it.
 
 > **Note**:  During development, you can disable some verification checks to simplify testing your system extensions. For more information, see Debugging and Testing System Extensions.
 
 ##### Update an Existing System Extension
 
-To update a driver, increment the driver’s version and activate it using the same process for new system extensions. When the system detects an existing extension with the same identifier, it passes the version information for both extensions to the [`request(_:actionForReplacingExtension:withExtension:)`](ossystemextensionrequestdelegate/request(_:actionforreplacingextension:withextension:).md) method of your request delegate. Use that information to determine whether you want to install the new extension or keep the old one.
+To update a driver, increment the driver’s version and activate it using the same process for new system extensions. When the system detects an existing extension with the same identifier, it passes the version information for both extensions to the [`request(_:actionForReplacingExtension:withExtension:)`](./ossystemextensionrequestdelegate/request%28_,actionforreplacingextension,withextension%29.md) method of your request delegate. Use that information to determine whether you want to install the new extension or keep the old one.
 
-For more information about implementing the delegate methods for your request, see [`OSSystemExtensionRequestDelegate`](ossystemextensionrequestdelegate.md).
+For more information about implementing the delegate methods for your request, see [`OSSystemExtensionRequestDelegate`](./ossystemextensionrequestdelegate.md).
 
 ##### Uninstall a System Extension
 
-The system automatically uninstalls any system extensions when the user deletes the corresponding app. You can also uninstall a system extension by creating a deactivation request. Call the [`deactivationRequest(forExtensionWithIdentifier:queue:)`](ossystemextensionrequest/deactivationrequest(forextensionwithidentifier:queue:).md) method of [`OSSystemExtensionRequest`](ossystemextensionrequest.md) and submit the resulting object to the [`OSSystemExtensionManager`](ossystemextensionmanager.md).
+The system automatically uninstalls any system extensions when the user deletes the corresponding app. You can also uninstall a system extension by creating a deactivation request. Call the [`deactivationRequest(forExtensionWithIdentifier:queue:)`](./ossystemextensionrequest/deactivationrequest%28forextensionwithidentifier,queue%29.md) method of [`OSSystemExtensionRequest`](./ossystemextensionrequest.md) and submit the resulting object to the [`OSSystemExtensionManager`](./ossystemextensionmanager.md).
 
 ##### Examine the Installed System Extensions
 
@@ -59,11 +60,12 @@ For more information about how to use the `systemextensionsctl` tool, see the ma
 
 ## See Also
 
-- [class OSSystemExtensionManager](ossystemextensionmanager.md)
+### Extension activation and deactivation
+- [class OSSystemExtensionManager](./ossystemextensionmanager.md)
   A type that facilitates activation and deactivation of system extensions.
-- [class OSSystemExtensionRequest](ossystemextensionrequest.md)
+- [class OSSystemExtensionRequest](./ossystemextensionrequest.md)
   A request to activate or deactivate a system extension.
-- [System Extension Redistributable Entitlement](../bundleresources/entitlements/com.apple.developer.system-extension.redistributable.md)
+- [System Extension Redistributable Entitlement](../BundleResources/entitlements/com.apple.developer.system-extension.redistributable.md)
   A Boolean value that indicates whether other development teams may distribute a system extension you create.
 
 

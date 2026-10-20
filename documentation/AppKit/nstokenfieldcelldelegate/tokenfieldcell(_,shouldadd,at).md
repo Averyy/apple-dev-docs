@@ -1,18 +1,23 @@
 # tokenFieldCell(_:shouldAdd:at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the delegate to validate the tokens to be added to the receiver at a given index.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 optional func tokenFieldCell(_ tokenFieldCell: NSTokenFieldCell, shouldAdd tokens: [Any], at index: Int) -> [Any]
+```
+
+```objc
+- (NSArray *) tokenFieldCell:(NSTokenFieldCell *) tokenFieldCell shouldAddObjects:(NSArray *) tokens atIndex:(NSUInteger) index;
 ```
 
 #### Return Value
@@ -31,11 +36,12 @@ The delegate can return the array unchanged or return a modified array of tokens
 
 ## See Also
 
-- [func tokenFieldCell(NSTokenFieldCell, completionsForSubstring: String, indexOfToken: Int, indexOfSelectedItem: UnsafeMutablePointer<Int>) -> [Any]](nstokenfieldcelldelegate/tokenfieldcell(_:completionsforsubstring:indexoftoken:indexofselecteditem:).md)
+### Editing a Tokenized Strings
+- [func tokenFieldCell(NSTokenFieldCell, completionsForSubstring: String, indexOfToken: Int, indexOfSelectedItem: UnsafeMutablePointer<Int>) -> [Any]](./tokenfieldcell%28_,completionsforsubstring,indexoftoken,indexofselecteditem%29.md)
   Allows the delegate to provide an array of appropriate completions for the contents of the receiver.
-- [func tokenFieldCell(NSTokenFieldCell, editingStringForRepresentedObject: Any) -> String?](nstokenfieldcelldelegate/tokenfieldcell(_:editingstringforrepresentedobject:).md)
+- [func tokenFieldCell(NSTokenFieldCell, editingStringForRepresentedObject: Any) -> String?](./tokenfieldcell%28_,editingstringforrepresentedobject%29.md)
   Allows the delegate to provide a string to be edited as a proxy for the represented object.
-- [func tokenFieldCell(NSTokenFieldCell, representedObjectForEditing: String) -> Any?](nstokenfieldcelldelegate/tokenfieldcell(_:representedobjectforediting:).md)
+- [func tokenFieldCell(NSTokenFieldCell, representedObjectForEditing: String) -> Any?](./tokenfieldcell%28_,representedobjectforediting%29.md)
   Allows the delegate to provide a represented object for the string being edited.
 
 

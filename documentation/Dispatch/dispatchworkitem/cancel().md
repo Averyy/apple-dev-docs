@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the current work item asynchronously.
 
@@ -10,9 +11,9 @@ Cancels the current work item asynchronously.
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -30,7 +31,8 @@ Release of any resources associated with the block object is delayed until execu
 
 ## See Also
 
-- [var isCancelled: Bool](dispatchworkitem/iscancelled.md)
+### Canceling a Work Item
+- [var isCancelled: Bool](./iscancelled.md)
   A Boolean value indicating whether the work item has been canceled.
 
 

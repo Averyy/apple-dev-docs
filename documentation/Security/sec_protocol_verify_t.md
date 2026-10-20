@@ -1,7 +1,8 @@
 # sec_protocol_verify_t
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -18,11 +19,15 @@
 typealias sec_protocol_verify_t = (sec_protocol_metadata_t, sec_trust_t, @escaping sec_protocol_verify_complete_t) -> Void
 ```
 
+```c
+typedef void (^)(NSObject<OS_sec_protocol_metadata> *, NSObject<OS_sec_trust> *, void (^)(_Bool)) sec_protocol_verify_t;
+```
+
 #### Discussion
 
 Block to be invoked when the protocol instance must verify the peer.
 
-```None
+```
  NOTE: this may be called one or more times for a given connection.
 ```
 

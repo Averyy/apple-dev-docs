@@ -1,7 +1,8 @@
 # collision
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The `.collision` option means that the reconstructed geometry can be used for collision queries (i.e. raycasting)
 

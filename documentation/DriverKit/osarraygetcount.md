@@ -1,27 +1,29 @@
 # OSArrayGetCount
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 uint32_t OSArrayGetCount(OSArrayPtr obj);
 ```
 
 ## See Also
 
-- [getCount](osarray/getcount.md)
+### Inspecting an Array
+- [getCount](./osarray/getcount.md)
   Returns count of members in array.
-- [getCapacity](osarray/getcapacity.md)
+- [getCapacity](./osarray/getcapacity.md)
   Returns count of currently allocated capacity for members in array.
-- [ensureCapacity](osarray/ensurecapacity.md)
+- [ensureCapacity](./osarray/ensurecapacity.md)
   Allocates capacity for members in array.
 
 

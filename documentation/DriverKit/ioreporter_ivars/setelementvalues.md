@@ -1,17 +1,18 @@
 # setElementValues
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn setElementValues(int element_index, IOReportElementValues *values, uint64_t record_time);
 ```
 
@@ -29,9 +30,15 @@ Locking: Caller must ensure that the reporter (data) lock is held.
 
 ## Parameters
 
-- `element_index`: - index of the _element in internal array
-- `values`: - IORepoterElementValues to replace those at _elements[idx]
-- `record_time`: - optional mach_absolute_time to be used for metadata
+- `element_index`:
+
+  - index of the _element in internal array
+- `values`:
+
+  - IORepoterElementValues to replace those at _elements[idx]
+- `record_time`:
+
+  - optional mach_absolute_time to be used for metadata
 
 
 ---

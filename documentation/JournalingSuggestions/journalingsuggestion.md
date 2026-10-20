@@ -1,7 +1,8 @@
 # JournalingSuggestion
 
 **Framework**: Journaling Suggestions  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 High-level information about a suggestion that a person chooses in the journaling suggestions picker.
 
@@ -16,69 +17,70 @@ struct JournalingSuggestion
 
 ## Mentions
 
-- [Receiving journaling suggestions system notifications](receiving-journaling-suggestions-from-system-notifications.md)
+- [Receiving journaling suggestions system notifications](./receiving-journaling-suggestions-from-system-notifications.md)
 
 #### Overview
 
-When a person chooses a particular suggestion in the [`JournalingSuggestionsPicker`](journalingsuggestionspicker.md), the system provides your app with more information about the event by passing an instance of this structure to your picker’s `onCompletion` handler.
+When a person chooses a particular suggestion in the [`JournalingSuggestionsPicker`](./journalingsuggestionspicker.md), the system provides your app with more information about the event by passing an instance of this structure to your picker’s `onCompletion` handler.
 
 ## Topics
 
 ### Inspecting suggestion details
-- [let date: DateInterval?](journalingsuggestion/date.md)
+- [let date: DateInterval?](./journalingsuggestion/date.md)
   The range of time in which the suggested event takes place.
-- [let title: String](journalingsuggestion/title.md)
+- [let title: String](./journalingsuggestion/title.md)
   The title for the suggestion.
 ### Accessing suggestion data by type
-- [let items: [JournalingSuggestion.ItemContent]](journalingsuggestion/items.md)
+- [let items: [JournalingSuggestion.ItemContent]](./journalingsuggestion/items.md)
   The individual items that compose the suggestion’s content.
-- [JournalingSuggestion.ItemContent](journalingsuggestion/itemcontent.md)
+- [JournalingSuggestion.ItemContent](./journalingsuggestion/itemcontent.md)
   A container for the information about a specific suggestion.
-- [func content<Content>(forType: Content.Type) async -> [Content]](journalingsuggestion/content(fortype:).md)
+- [func content<Content>(forType: Content.Type) async -> [Content]](./journalingsuggestion/content%28fortype%29.md)
   Searches a suggestion’s items for information of the given type.
 ### Interacting with suggestion types
-- [JournalingSuggestion.Contact](journalingsuggestion/contact.md)
+- [JournalingSuggestion.Contact](./journalingsuggestion/contact.md)
   A suggestion for a connection a person makes with someone else.
-- [JournalingSuggestion.EventPoster](journalingsuggestion/eventposter.md)
+- [JournalingSuggestion.EventPoster](./journalingsuggestion/eventposter.md)
   A suggestion for a poster image of an event.
-- [JournalingSuggestion.GenericMedia](journalingsuggestion/genericmedia.md)
+- [JournalingSuggestion.GenericMedia](./journalingsuggestion/genericmedia.md)
   A suggestion describing now playable media that a person listened to.
-- [JournalingSuggestion.LivePhoto](journalingsuggestion/livephoto.md)
+- [JournalingSuggestion.LivePhoto](./journalingsuggestion/livephoto.md)
   A suggestion for a Live Photo from a person’s library.
-- [JournalingSuggestion.Location](journalingsuggestion/location.md)
+- [JournalingSuggestion.Location](./journalingsuggestion/location.md)
   A suggestion that represents a location that a person visits.
-- [JournalingSuggestion.LocationGroup](journalingsuggestion/locationgroup.md)
+- [JournalingSuggestion.LocationGroup](./journalingsuggestion/locationgroup.md)
   A suggestion that contains multiple visited locations that a person chooses in the picker.
-- [JournalingSuggestion.MotionActivity](journalingsuggestion/motionactivity.md)
+- [JournalingSuggestion.MotionActivity](./journalingsuggestion/motionactivity.md)
   A suggestion that describes motion activity, including the number of steps a person takes.
-- [JournalingSuggestion.Photo](journalingsuggestion/photo.md)
+- [JournalingSuggestion.Photo](./journalingsuggestion/photo.md)
   A suggestion for a photo from a person’s library.
-- [JournalingSuggestion.Podcast](journalingsuggestion/podcast.md)
+- [JournalingSuggestion.Podcast](./journalingsuggestion/podcast.md)
   A suggestion that describes a podcast episode a person listened to.
-- [JournalingSuggestion.Reflection](journalingsuggestion/reflection.md)
+- [JournalingSuggestion.Reflection](./journalingsuggestion/reflection.md)
   A suggestion for a reflection prompt.
-- [JournalingSuggestion.StateOfMind](journalingsuggestion/stateofmind.md)
+- [JournalingSuggestion.StateOfMind](./journalingsuggestion/stateofmind.md)
   A suggestion that describes a state of mind reflection in the Health app.
-- [JournalingSuggestion.Song](journalingsuggestion/song.md)
+- [JournalingSuggestion.Song](./journalingsuggestion/song.md)
   A suggestion for a song from a person’s music library.
-- [JournalingSuggestion.Video](journalingsuggestion/video.md)
+- [JournalingSuggestion.Video](./journalingsuggestion/video.md)
   A suggestion for a video from a person’s library.
-- [JournalingSuggestion.Workout](journalingsuggestion/workout.md)
+- [JournalingSuggestion.Workout](./journalingsuggestion/workout.md)
   A suggestion that describes a workout that a person completed.
-- [JournalingSuggestion.WorkoutGroup](journalingsuggestion/workoutgroup.md)
+- [JournalingSuggestion.WorkoutGroup](./journalingsuggestion/workoutgroup.md)
   A suggestion that contains multiple workouts that a person chooses in the picker.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [struct JournalingSuggestionsPicker](journalingsuggestionspicker.md)
+### Implementation
+- [struct JournalingSuggestionsPicker](./journalingsuggestionspicker.md)
   A view that lists different types of recent events in a person’s life.
-- [protocol JournalingSuggestionAsset](journalingsuggestionasset.md)
+- [protocol JournalingSuggestionAsset](./journalingsuggestionasset.md)
   An interface for the content that the suggestions picker presents.
 
 

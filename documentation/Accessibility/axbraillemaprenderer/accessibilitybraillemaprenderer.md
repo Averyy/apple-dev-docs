@@ -1,7 +1,8 @@
 # accessibilityBrailleMapRenderer
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A handler that the system calls to let you update the Braille map.
 
@@ -20,11 +21,15 @@ A handler that the system calls to let you update the Braille map.
 optional var accessibilityBrailleMapRenderer: (AXBrailleMap) -> Void { get set }
 ```
 
+```objc
+@property (nonatomic, copy) void (^accessibilityBrailleMapRenderer)(AXBrailleMap *map);
+```
+
 #### Discussion
 
 When the accessibility element that implements this property has focus, the system calls this handler to let you update the braille map manually.
 
-Use this handler to modify the braille map that the system passes in with the new data you want to display. The following code shows a basic implementation of [`accessibilityBrailleMapRenderer`](axbraillemaprenderer/accessibilitybraillemaprenderer.md):
+Use this handler to modify the braille map that the system passes in with the new data you want to display. The following code shows a basic implementation of [`accessibilityBrailleMapRenderer`](./accessibilitybraillemaprenderer.md):
 
 ```swift
 self.accessibilityBrailleMapRenderer = { map in

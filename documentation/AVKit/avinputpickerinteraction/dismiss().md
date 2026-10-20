@@ -1,7 +1,8 @@
 # dismiss()
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the input picker.
 
@@ -16,11 +17,16 @@ Dismisses the input picker.
 func dismiss()
 ```
 
+```objc
+- (void) dismiss;
+```
+
 ## See Also
 
-- [var isPresented: Bool](avinputpickerinteraction/ispresented.md)
+### Managing presentation
+- [var isPresented: Bool](./ispresented.md)
   A Boolean value that indicates whether the picker is currently visible.
-- [func present()](avinputpickerinteraction/present.md)
+- [func present()](./present%28%29.md)
   Presents the input picker.
 
 

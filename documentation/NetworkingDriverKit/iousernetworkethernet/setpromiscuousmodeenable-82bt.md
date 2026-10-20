@@ -1,16 +1,17 @@
 # SetPromiscuousModeEnable
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables or disables support for monitoriong all network packets.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t SetPromiscuousModeEnable(bool enable);
 ```
 
@@ -28,21 +29,22 @@ Override this method and use it to enable promiscuous mode on your device.
 
 ## See Also
 
-- [SetTxPacketHeadroom](iousernetworkethernet/settxpacketheadroom.md)
+### Configuring Link Attributes
+- [SetTxPacketHeadroom](./settxpacketheadroom.md)
   Reserves the specified number of bytes at the front of each packet.
-- [SetTxPacketTailroom](iousernetworkethernet/settxpackettailroom.md)
+- [SetTxPacketTailroom](./settxpackettailroom.md)
   Reserves the specified number of bytes at the end of each packet.
-- [SetSoftwareVlanSupport](iousernetworkethernet/setsoftwarevlansupport.md)
+- [SetSoftwareVlanSupport](./setsoftwarevlansupport.md)
   Enables software VLAN support.
-- [SetMulticastAddresses](iousernetworkethernet/setmulticastaddresses-7wjbn.md)
+- [SetMulticastAddresses](./setmulticastaddresses-7wjbn.md)
   Sets the device addresses to use for multicast filtering.
-- [SetAllMulticastModeEnable](iousernetworkethernet/setallmulticastmodeenable-5rtva.md)
+- [SetAllMulticastModeEnable](./setallmulticastmodeenable-5rtva.md)
   Enables or disables multicast support for your service.
-- [SetWakeOnMagicPacketSupport](iousernetworkethernet/setwakeonmagicpacketsupport.md)
+- [SetWakeOnMagicPacketSupport](./setwakeonmagicpacketsupport.md)
   Tells the system whether the device supports being woken up when a specially formatted packet arrives.
-- [SetWakeOnMagicPacketEnable](iousernetworkethernet/setwakeonmagicpacketenable.md)
+- [SetWakeOnMagicPacketEnable](./setwakeonmagicpacketenable.md)
   Enables or disables support for waking up the device when a specially formatted packet arrives.
-- [IOUserNetworkMACAddress](iousernetworkmacaddress.md)
+- [IOUserNetworkMACAddress](../iousernetworkmacaddress.md)
   A hardware address for a device.
 
 

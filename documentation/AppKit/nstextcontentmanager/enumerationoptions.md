@@ -1,7 +1,8 @@
 # NSTextContentManager.EnumerationOptions
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values that control the order in which the framework enumerates text elements.
 
@@ -14,32 +15,37 @@ Values that control the order in which the framework enumerates text elements.
 struct EnumerationOptions
 ```
 
+```c
+enum NSTextContentManagerEnumerationOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Creating text element provider enumeration options
-- [init(rawValue: UInt)](nstextcontentmanager/enumerationoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./enumerationoptions/init%28rawvalue%29.md)
   Creates a new text element provider with the provided raw value.
 ### Accessing the enumeration setting
-- [static var reverse: NSTextContentManager.EnumerationOptions](nstextcontentmanager/enumerationoptions/reverse.md)
+- [static var reverse: NSTextContentManager.EnumerationOptions](./enumerationoptions/reverse.md)
   Returns whether enumerations start from the end of the text element.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var delegate: (any NSTextContentManagerDelegate)?](nstextcontentmanager/delegate.md)
+### Customizing and validating text elements
+- [var delegate: (any NSTextContentManagerDelegate)?](./delegate.md)
   The delegate for the content manager object.
-- [protocol NSTextContentManagerDelegate](nstextcontentmanagerdelegate.md)
+- [protocol NSTextContentManagerDelegate](../nstextcontentmanagerdelegate.md)
   The optional methods that delegates of content manager objects implement for customizing or validating text elements.
 
 

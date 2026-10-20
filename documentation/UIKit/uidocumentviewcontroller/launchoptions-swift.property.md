@@ -1,7 +1,8 @@
 # launchOptions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Options that customize a document-based app’s launch view.
 
@@ -17,13 +18,18 @@ Options that customize a document-based app’s launch view.
 var launchOptions: UIDocumentViewController.LaunchOptions { get set }
 ```
 
+```objc
+@property (nonatomic, strong) UIDocumentViewControllerLaunchOptions * launchOptions;
+```
+
 ## Mentions
 
-- [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
+- [Customizing a document-based app’s launch experience](../customizing-a-document-based-app-s-launch-experience.md)
 
 ## See Also
 
-- [UIDocumentViewController.LaunchOptions](uidocumentviewcontroller/launchoptions-swift.class.md)
+### Customizing the launch experience
+- [UIDocumentViewController.LaunchOptions](./launchoptions-swift.class.md)
   Options for customizing the document launch view.
 
 

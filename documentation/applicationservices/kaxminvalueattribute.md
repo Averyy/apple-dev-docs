@@ -1,7 +1,8 @@
 # kAXMinValueAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The minimum value this accessibility object can display (for example, the minimum value of a scroller control). This attribute is used only in conjunction with the `AXValue` attribute. 
 
@@ -12,6 +13,10 @@ The minimum value this accessibility object can display (for example, the minimu
 
 ```swift
 var kAXMinValueAttribute: String { get }
+```
+
+```c
+#define kAXMinValueAttribute
 ```
 
 

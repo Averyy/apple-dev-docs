@@ -1,7 +1,8 @@
 # unsafeSequence()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 14.0+
@@ -15,6 +16,8 @@
 ```swift
 func unsafeSequence() -> MIDIEventList.UnsafeSequence
 ```
+
+Available when `Pointee` is `MIDIEventList`.
 
 
 ---

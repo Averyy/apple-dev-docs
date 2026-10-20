@@ -1,7 +1,8 @@
 # browser
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The browser role.
 
@@ -23,9 +24,10 @@ Use this role for content that can be navigated forwards and backwards. In iPadO
 
 ## See Also
 
-- [static var editor: ToolbarRole](toolbarrole/editor.md)
+### Behavior-specific roles
+- [static var editor: ToolbarRole](./editor.md)
   The editor role.
-- [static var navigationStack: ToolbarRole](toolbarrole/navigationstack.md)
+- [static var navigationStack: ToolbarRole](./navigationstack.md)
   The navigationStack role.
 
 

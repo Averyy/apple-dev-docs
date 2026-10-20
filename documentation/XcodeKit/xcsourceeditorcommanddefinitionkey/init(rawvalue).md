@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: XcodeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the key for a source-editor command by using the string value you specify.
 

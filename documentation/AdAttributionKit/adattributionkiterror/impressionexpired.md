@@ -1,7 +1,8 @@
 # AdAttributionKitError.impressionExpired
 
 **Framework**: AdAttributionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The attribution failed because the impression expired.
 

@@ -1,7 +1,8 @@
 # init(truncating:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init(truncating matrix: simd_float4x4)
+```
+
+```c
+static SPAffineTransform3DFloat SPAffineTransform3DFloatMakeWithTruncated4x4Matrix(simd_float4x4 matrix);
 ```
 
 #### Return Value

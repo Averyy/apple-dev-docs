@@ -1,7 +1,8 @@
 # init(properties:)
 
 **Framework**: ShazamKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a media item object with a dictionary of properties and their associated values.
 

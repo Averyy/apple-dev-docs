@@ -1,7 +1,8 @@
 # playerViewController(_:timeToSeekAfterUserNavigatedFrom:to:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the user skips, scrubs, or otherwise navigates to a new time and wants to resume playback at the target time.
 
@@ -14,9 +15,13 @@ Tells the delegate when the user skips, scrubs, or otherwise navigates to a new 
 optional func playerViewController(_ playerViewController: AVPlayerViewController, timeToSeekAfterUserNavigatedFrom oldTime: CMTime, to targetTime: CMTime) -> CMTime
 ```
 
+```objc
+- (CMTime) playerViewController:(AVPlayerViewController *) playerViewController timeToSeekAfterUserNavigatedFromTime:(CMTime) oldTime toTime:(CMTime) targetTime;
+```
+
 ## Mentions
 
-- [Working with interstitial content](working-with-interstitial-content.md)
+- [Working with interstitial content](../working-with-interstitial-content.md)
 
 #### Return Value
 
@@ -34,11 +39,12 @@ The framework calls this method prior to beginning playback after a user-initiat
 
 ## See Also
 
-- [func playerViewController(AVPlayerViewController, willResumePlaybackAfterUserNavigatedFrom: CMTime, to: CMTime)](avplayerviewcontrollerdelegate/playerviewcontroller(_:willresumeplaybackafterusernavigatedfrom:to:).md)
+### Responding to navigation events
+- [func playerViewController(AVPlayerViewController, willResumePlaybackAfterUserNavigatedFrom: CMTime, to: CMTime)](./playerviewcontroller%28_,willresumeplaybackafterusernavigatedfrom,to%29.md)
   Tells the delegate when the user navigates to a new time and playback is about to begin.
-- [func skipToPreviousItem(for: AVPlayerViewController)](avplayerviewcontrollerdelegate/skiptopreviousitem(for:).md)
+- [func skipToPreviousItem(for: AVPlayerViewController)](./skiptopreviousitem%28for%29.md)
   Tells the delegate when the user requests skipping to the previous item in the timeline.
-- [func skipToNextItem(for: AVPlayerViewController)](avplayerviewcontrollerdelegate/skiptonextitem(for:).md)
+- [func skipToNextItem(for: AVPlayerViewController)](./skiptonextitem%28for%29.md)
   Tells the delegate when the user requests skipping to the next item in the timeline.
 
 

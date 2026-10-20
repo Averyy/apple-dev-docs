@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: WebKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the item at the relative offset from the current item.
 

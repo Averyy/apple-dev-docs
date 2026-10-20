@@ -1,7 +1,8 @@
 # NSTextSelectionNavigation.LayoutOrientation.horizontal
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that defines horizontal layout orientation.
 
@@ -18,9 +19,14 @@ The value that defines horizontal layout orientation.
 case horizontal
 ```
 
+```c
+NSTextSelectionNavigationLayoutOrientationHorizontal
+```
+
 ## See Also
 
-- [NSTextSelectionNavigation.LayoutOrientation.vertical](nstextselectionnavigation/layoutorientation/vertical.md)
+### Layout orientations
+- [NSTextSelectionNavigation.LayoutOrientation.vertical](./vertical.md)
   The value that defines vertical layout orientation.
 
 

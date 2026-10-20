@@ -1,7 +1,8 @@
 # NotificationCenter.Notifications.Element
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element produced by this asynchronous sequence.
 
@@ -22,7 +23,7 @@ typealias Element = Notification
 
 #### Discussion
 
-The sequence produces [`Notification`](notification.md) elements.
+The sequence produces [`Notification`](../../notification.md) elements.
 
 
 ---

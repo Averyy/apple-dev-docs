@@ -1,7 +1,8 @@
 # LowLevelMeshResource.VertexSemantic
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The intended usage of a vertex attribute.
 
@@ -19,59 +20,60 @@ enum VertexSemantic
 
 #### Overview
 
-The renderer consults the vertex semantic when interpreting the data in a `LowLevelMeshResource`. For example, an attribute with the semantic value of [`LowLevelMeshResource.VertexSemantic.position`](lowlevelmeshresource/vertexsemantic/position.md) determines the position of a vertex.
+The renderer consults the vertex semantic when interpreting the data in a `LowLevelMeshResource`. For example, an attribute with the semantic value of [`LowLevelMeshResource.VertexSemantic.position`](./vertexsemantic/position.md) determines the position of a vertex.
 
 ## Topics
 
 ### Identifying geometric attributes
-- [LowLevelMeshResource.VertexSemantic.position](lowlevelmeshresource/vertexsemantic/position.md)
+- [LowLevelMeshResource.VertexSemantic.position](./vertexsemantic/position.md)
   The semantic for vertex position data.
-- [LowLevelMeshResource.VertexSemantic.normal](lowlevelmeshresource/vertexsemantic/normal.md)
+- [LowLevelMeshResource.VertexSemantic.normal](./vertexsemantic/normal.md)
   The semantic for surface normal data.
-- [LowLevelMeshResource.VertexSemantic.tangent](lowlevelmeshresource/vertexsemantic/tangent.md)
+- [LowLevelMeshResource.VertexSemantic.tangent](./vertexsemantic/tangent.md)
   The semantic for surface tangent vector data.
-- [LowLevelMeshResource.VertexSemantic.bitangent](lowlevelmeshresource/vertexsemantic/bitangent.md)
+- [LowLevelMeshResource.VertexSemantic.bitangent](./vertexsemantic/bitangent.md)
   The semantic for surface bitangent vector data.
-- [LowLevelMeshResource.VertexSemantic.color](lowlevelmeshresource/vertexsemantic/color.md)
+- [LowLevelMeshResource.VertexSemantic.color](./vertexsemantic/color.md)
   The semantic for per-vertex color data.
 ### Identifying texture coordinates
-- [LowLevelMeshResource.VertexSemantic.uv0](lowlevelmeshresource/vertexsemantic/uv0.md)
+- [LowLevelMeshResource.VertexSemantic.uv0](./vertexsemantic/uv0.md)
   The semantic for the first UV channel (UV0).
-- [LowLevelMeshResource.VertexSemantic.uv1](lowlevelmeshresource/vertexsemantic/uv1.md)
+- [LowLevelMeshResource.VertexSemantic.uv1](./vertexsemantic/uv1.md)
   The semantic for the second UV channel (UV1). A shader can access this generic data.
-- [LowLevelMeshResource.VertexSemantic.uv2](lowlevelmeshresource/vertexsemantic/uv2.md)
+- [LowLevelMeshResource.VertexSemantic.uv2](./vertexsemantic/uv2.md)
   The semantic for the third UV channel (UV2). A shader can access this generic data.
-- [LowLevelMeshResource.VertexSemantic.uv3](lowlevelmeshresource/vertexsemantic/uv3.md)
+- [LowLevelMeshResource.VertexSemantic.uv3](./vertexsemantic/uv3.md)
   The semantic for the fourth UV channel (UV3). A shader can access this generic data.
-- [LowLevelMeshResource.VertexSemantic.uv4](lowlevelmeshresource/vertexsemantic/uv4.md)
+- [LowLevelMeshResource.VertexSemantic.uv4](./vertexsemantic/uv4.md)
   The semantic for the fifth UV channel (UV4). A shader can access this generic data.
-- [LowLevelMeshResource.VertexSemantic.uv5](lowlevelmeshresource/vertexsemantic/uv5.md)
+- [LowLevelMeshResource.VertexSemantic.uv5](./vertexsemantic/uv5.md)
   The semantic for the sixth UV channel (UV5). A shader can access this generic data.
-- [LowLevelMeshResource.VertexSemantic.uv6](lowlevelmeshresource/vertexsemantic/uv6.md)
+- [LowLevelMeshResource.VertexSemantic.uv6](./vertexsemantic/uv6.md)
   The semantic for the seventh UV channel (UV6). A shader can access this generic data.
-- [LowLevelMeshResource.VertexSemantic.uv7](lowlevelmeshresource/vertexsemantic/uv7.md)
+- [LowLevelMeshResource.VertexSemantic.uv7](./vertexsemantic/uv7.md)
   The semantic for the eighth UV channel (UV7). A shader can access this generic data.
 ### Handling unspecified semantics
-- [LowLevelMeshResource.VertexSemantic.unspecified](lowlevelmeshresource/vertexsemantic/unspecified.md)
+- [LowLevelMeshResource.VertexSemantic.unspecified](./vertexsemantic/unspecified.md)
   A semantic that doesn’t specify the role of the vertex.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var descriptor: LowLevelMeshResource.Descriptor](lowlevelmeshresource/descriptor-swift.property.md)
+### Describing the mesh layout
+- [var descriptor: LowLevelMeshResource.Descriptor](./descriptor-swift.property.md)
   The descriptor used to create this mesh resource.
-- [LowLevelMeshResource.Descriptor](lowlevelmeshresource/descriptor-swift.struct.md)
+- [LowLevelMeshResource.Descriptor](./descriptor-swift.struct.md)
   An object that describes the data format and layout of the buffers in a low-level mesh.
-- [LowLevelMeshResource.Layout](lowlevelmeshresource/layout.md)
+- [LowLevelMeshResource.Layout](./layout.md)
   An object that describes a set of attributes that share a buffer index, offset, and stride.
-- [LowLevelMeshResource.Attribute](lowlevelmeshresource/attribute.md)
+- [LowLevelMeshResource.Attribute](./attribute.md)
   An object that determines how to store vertex attribute data in memory and map it to RealityKit custom shader attributes.
 
 

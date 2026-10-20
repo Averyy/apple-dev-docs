@@ -1,7 +1,8 @@
 # isGeometricDistortionCorrectionSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this device supports geometric distortion correction.
 
@@ -17,13 +18,18 @@ A Boolean value that indicates whether this device supports geometric distortion
 var isGeometricDistortionCorrectionSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isGeometricDistortionCorrectionSupported) BOOL geometricDistortionCorrectionSupported;
+```
+
 #### Discussion
 
 Some devices benefit from geometric distortion correction (GDC), such as devices with a very wide field of view. GDC lessens the fisheye effect at the outer edge of the frame at the cost of losing a small amount of the horizontal field of view. When you enable GDC, the device upscales the corrected image to the original image size.
 
 ## See Also
 
-- [var isGeometricDistortionCorrectionEnabled: Bool](avcapturedevice/isgeometricdistortioncorrectionenabled.md)
+### Enabling geometric distortion correction
+- [var isGeometricDistortionCorrectionEnabled: Bool](./isgeometricdistortioncorrectionenabled.md)
   A Boolean value that indicates whether geometric distortion correction is enabled for this device.
 
 

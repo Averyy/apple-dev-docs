@@ -1,7 +1,8 @@
 # AXPriority
 
 **Framework**: Application Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.9+
@@ -12,17 +13,23 @@
 enum AXPriority
 ```
 
+```c
+typedef enum AXPriority : CFIndex {
+    ...
+} AXPriority;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [AXPriority.high](axpriority/high.md)
-- [AXPriority.low](axpriority/low.md)
-- [AXPriority.medium](axpriority/medium.md)
+- [AXPriority.high](./axpriority/high.md)
+- [AXPriority.low](./axpriority/low.md)
+- [AXPriority.medium](./axpriority/medium.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

@@ -1,6 +1,7 @@
 # Improving control flow integrity with pointer authentication
 
-**Framework**: Apple silicon
+**Framework**: Apple silicon  
+**Role**: Article
 
 Increase confidence that your code uses pointers correctly.
 
@@ -11,7 +12,7 @@ Many common attacks against software use techniques that compromise control flow
 - **Return-oriented programming (ROP)**: The attacker manipulates the call stack to cause functions to return to the wrong locations.
 - **Jump-oriented programming (JOP)**: The attacker manipulates the heap to cause an indirect jump instruction to jump to the wrong location.
 
-Pointer authentication provides probabilistic protection of control flow integrity (CFI) by annotating pointers with signatures. You sign a raw pointer to produce a signed pointer, which contains an embedded pointer authentication code (PAC). To use a signed pointer, you authenticate it, which validates the PAC and, if valid, returns the raw pointer. Otherwise, if the authentication operation detects that the pointer is invalid, it returns a value that represents an invalid raw pointer. Your process generates a segmentation fault and a crash report when it uses the invalid raw pointer. For more information, see “Recognize pointer authentication failures” in [`Preparing your app to work with pointer authentication`](https://developer.apple.com/documentation/security/preparing-your-app-to-work-with-pointer-authentication).
+Pointer authentication provides probabilistic protection of control flow integrity (CFI) by annotating pointers with signatures. You sign a raw pointer to produce a signed pointer, which contains an embedded pointer authentication code (PAC). To use a signed pointer, you authenticate it, which validates the PAC and, if valid, returns the raw pointer. Otherwise, if the authentication operation detects that the pointer is invalid, it returns a value that represents an invalid raw pointer. Your process generates a segmentation fault and a crash report when it uses the invalid raw pointer. For more information, see “Recognize pointer authentication failures” in [Preparing your app to work with pointer authentication](../Security/preparing-your-app-to-work-with-pointer-authentication.md).
 
 > **Note**:  The authentication operation might fail to detect that a value is invalid, and return a usable value even though its input is invalid. The authentication check is a probabilistic signal of confidence, not a guarantee that the pointer isn’t compromised.
 
@@ -24,7 +25,7 @@ You identify a signing key by name; the CPU keeps the key’s data secret and ca
 
 The pointer-signing key names intrinsic operations are defined in the header file `<ptrauth.h>`.
 
-#### Generate a Discriminator
+#### Generate a discriminator
 
 Signing pointers requires an arbitrary value called the *discriminator*, that the processor uses as a salt for the signing operation to ensure that signed pointers for different purposes aren’t interchangeable. Using different discriminators in different places makes it more difficult for an attacker to compromise your code by replacing a valid signed pointer value with a different valid signed pointer.
 
@@ -46,7 +47,7 @@ const int discriminator = ptrauth_blend_discriminator(pointer, SEED_VALUE);
 
 When you use a discriminator that incorporates the pointer’s memory location, you can’t copy the pointer or a data structure that contains the pointer using `memcpy` and related functions because the discriminator isn’t valid to verify the pointer at the new memory location.
 
-#### Select a Key
+#### Select a key
 
 The cryptographic key that the system uses to generate a PAC for a pointer is known as the *signing key*. You identify which signing key to use by name, and the system doesn’t give you access to the signing key’s value. Choose from the four different signing keys, depending on whether you’re protecting a code pointer and whether you need a process-dependent or process-independent signing key:
 
@@ -67,7 +68,7 @@ The header file `ptrauth.h` also provides these names that are synonyms for the 
 - **`ptrauth_key_block_function`**: A key you use to sign pointers to block functions.
 - **`ptrauth_key_cxx_vtable_pointer`**: A key you use to sign C++ v-table entries.
 
-#### Annotate Pointers with the Pointer Authentication Type Qualifiers
+#### Annotate pointers with the pointer-authentication type qualifiers
 
 Use the `__ptrauth` type qualifier to tell the compiler to generate a PAC for your data pointer or function pointer, and to validate the PAC when you dereference the pointer. The type qualifier takes three arguments:
 
@@ -81,7 +82,7 @@ For example, to declare a data pointer that the system signs using the constant 
 void *__ptrauth(ptrauth_key_process_dependent_data, 0, 0x1f35) *pointer = &data;
 ```
 
-#### Sign a Pointer
+#### Sign a pointer
 
 To sign a pointer, you need three pieces of information:
 
@@ -99,7 +100,7 @@ void *signed_pointer = ptrauth_sign_constant(pointer, ptrauth_key_process_depend
 
 The returned signed pointer is the same size and type as a raw pointer, and the signature information is stored in unused bits of the pointer value.
 
-#### Authenticate a Signed Pointer
+#### Authenticate a signed pointer
 
 To recover the raw pointer value, if the signed pointer passes validity checks, call `ptr_auth_data`:
 

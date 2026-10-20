@@ -1,7 +1,8 @@
 # always
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A strategy that always displays decimal separators.
 
@@ -22,7 +23,8 @@ static var always: NumberFormatStyleConfiguration.DecimalSeparatorDisplayStrateg
 
 ## See Also
 
-- [static var automatic: NumberFormatStyleConfiguration.DecimalSeparatorDisplayStrategy](numberformatstyleconfiguration/decimalseparatordisplaystrategy/automatic.md)
+### Decimal separator display strategies
+- [static var automatic: NumberFormatStyleConfiguration.DecimalSeparatorDisplayStrategy](./automatic.md)
   A strategy to automatically configure locale-appropriate decimal separator display behavior.
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a merchant capability using the raw value you provide.
 

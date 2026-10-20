@@ -6,21 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/opt-pruning-overview
 
 # Overview
 
-**
-
-- [.md](../_sources/source/opt-pruning-overview.md)
-- **
-
-.pdf
-
-**
-
-# Overview
-
- Table of contents 
-
-# Overview
-
 Pruning a model is the process of sparsifying the weight
 matrices of the model’s layers, thereby reducing its storage size by
 packing weights more efficiently.
@@ -37,7 +22,7 @@ locations where the value is non-zero: `01000001b`.
 This is accompanied by the non-zero data, which in the
 following example is a size-2 vector of value `{7, 56.3}`.
 
-![Creating a sparse representation](../_images/sparse_weights.png)
+![Creating a sparse representation](https://apple.github.io/coremltools/docs-guides/_images/sparse_weights.png)
 
 Creating a sparse representation.
 

@@ -1,7 +1,8 @@
 # scalingAbsorption(by:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scale the absorption data by a frequency-dependent scalar value between -1 and 1.
 
@@ -33,7 +34,7 @@ Audio material with absorption data scaled by the frequency-dependent scaling fu
 
 Example usage:
 
-```None
+```
 // Make a generic carpet material more absorptive by making it thicker.
 // Below 1000Hz, the absorption remains the same. Above 1000Hz, the absorption is increased.
 let thickCarpet: Audio.Material = .carpet.scalingAbsorption { frequency in
@@ -47,7 +48,8 @@ let thickCarpet: Audio.Material = .carpet.scalingAbsorption { frequency in
 
 ## See Also
 
-- [func scalingScattering(by: (Float) -> Float) -> Audio.Material](audio/material/scalingscattering(by:).md)
+### Adjusting acoustic properties
+- [func scalingScattering(by: (Float) -> Float) -> Audio.Material](./scalingscattering%28by%29.md)
   Scale the scattering data by a frequency-dependent scalar value between -1 and 1.
 
 

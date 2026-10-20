@@ -1,7 +1,8 @@
 # recommendedAppItems
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An index for app-provided menu items.
 

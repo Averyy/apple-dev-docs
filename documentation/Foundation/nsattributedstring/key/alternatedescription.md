@@ -1,7 +1,8 @@
 # alternateDescription
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An alternate description for a URL or image.
 
@@ -20,21 +21,26 @@ An alternate description for a URL or image.
 static let alternateDescription: NSAttributedString.Key
 ```
 
+```c
+extern NSAttributedStringKey const NSAlternateDescriptionAttributeName;
+```
+
 #### Discussion
 
-The value of this key is an [`NSString`](nsstring.md) with the alternate description of the URL or image.
+The value of this key is an [`NSString`](../../nsstring.md) with the alternate description of the URL or image.
 
 When a Markdown link contains a title string, the system adds this key to the link text and sets the value to the title. For example, in the Markdown tect `[Visit the Apple Store](https://store.apple.com “The Apple Store website”)`, the system sets the value of this key to `The Apple Store website`.
 
 ## See Also
 
-- [static let inlinePresentationIntent: NSAttributedString.Key](nsattributedstring/key/inlinepresentationintent.md)
+### Getting Markdown attribute keys
+- [static let inlinePresentationIntent: NSAttributedString.Key](./inlinepresentationintent.md)
   An attribute that provides details for an inline Markdown element.
-- [static let presentationIntentAttributeName: NSAttributedString.Key](nsattributedstring/key/presentationintentattributename.md)
+- [static let presentationIntentAttributeName: NSAttributedString.Key](./presentationintentattributename.md)
   An attribute that provides details for a block-level Markdown element.
-- [static let markdownSourcePosition: NSAttributedString.Key](nsattributedstring/key/markdownsourceposition.md)
+- [static let markdownSourcePosition: NSAttributedString.Key](./markdownsourceposition.md)
   The position in a Markdown source string corresponding to some attributed text.
-- [static let imageURL: NSAttributedString.Key](nsattributedstring/key/imageurl.md)
+- [static let imageURL: NSAttributedString.Key](./imageurl.md)
   The URL for an image in Markdown text.
 
 

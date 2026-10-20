@@ -1,7 +1,8 @@
 # PortalComponent.ClippingMode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies the mode of clipping for a portal.
 
@@ -21,29 +22,29 @@ enum ClippingMode
 
 #### Overview
 
-This type can be passed into [`clippingMode`](portalcomponent/clippingmode-swift.property.md) to configure the portal component’s clipping feature.
+This type can be passed into [`clippingMode`](./clippingmode-swift.property.md) to configure the portal component’s clipping feature.
 
-With [`PortalComponent.ClippingMode.disabled`](portalcomponent/clippingmode-swift.enum/disabled.md), contents in portal world are not clipped.
+With [`PortalComponent.ClippingMode.disabled`](./clippingmode-swift.enum/disabled.md), contents in portal world are not clipped.
 
-With [`PortalComponent.ClippingMode.plane(_:)`](portalcomponent/clippingmode-swift.enum/plane(_:).md), contents within portal are clipped by a plane.
+With [`PortalComponent.ClippingMode.plane(_:)`](./clippingmode-swift.enum/plane%28_%29.md), contents within portal are clipped by a plane.
 
-With [`PortalComponent.ClippingMode.volume(_:)`](portalcomponent/clippingmode-swift.enum/volume(_:).md), contents within portal are clipped by a volumetric box.
+With [`PortalComponent.ClippingMode.volume(_:)`](./clippingmode-swift.enum/volume%28_%29.md), contents within portal are clipped by a volumetric box.
 
 ## Topics
 
 ### Clipping to a volume
-- [PortalComponent.ClippingMode.volume(_:)](portalcomponent/clippingmode-swift.enum/volume(_:).md)
+- [PortalComponent.ClippingMode.volume(_:)](./clippingmode-swift.enum/volume%28_%29.md)
   Clips the contents within the portal to a box-shaped region.
 ### Enumeration Cases
-- [PortalComponent.ClippingMode.disabled](portalcomponent/clippingmode-swift.enum/disabled.md)
+- [PortalComponent.ClippingMode.disabled](./clippingmode-swift.enum/disabled.md)
   Disables clipping of the contents within the portal.
-- [PortalComponent.ClippingMode.plane(_:)](portalcomponent/clippingmode-swift.enum/plane(_:).md)
+- [PortalComponent.ClippingMode.plane(_:)](./clippingmode-swift.enum/plane%28_%29.md)
   Clips the contents within the portal by the edge of the plane.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 
 ---

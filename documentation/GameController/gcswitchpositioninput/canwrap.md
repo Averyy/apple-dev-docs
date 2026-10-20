@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the position value wraps when it reaches the range’s minimum or maximum value.
@@ -20,15 +21,20 @@ A Boolean value that indicates whether the position value wraps when it reaches 
 var canWrap: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL canWrap;
+```
+
 #### Discussion
 
-For non-sequential switches, this property is always [`true`](https://developer.apple.com/documentation/swift/true).
+For non-sequential switches, this property is always [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var positionRange: NSRange](gcswitchpositioninput/positionrange.md)
+### Getting the characteristics
+- [var positionRange: NSRange](./positionrange.md)
   The range of possible values for the switch.
-- [var isSequential: Bool](gcswitchpositioninput/issequential.md)
+- [var isSequential: Bool](./issequential.md)
   A Boolean value that indicates whether the position change is sequential.
 
 

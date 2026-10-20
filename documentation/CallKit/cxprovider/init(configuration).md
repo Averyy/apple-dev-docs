@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new provider with the specified configuration.
 
@@ -16,6 +17,10 @@ Initializes a new provider with the specified configuration.
 
 ```swift
 init(configuration: CXProviderConfiguration)
+```
+
+```objc
+- (instancetype) initWithConfiguration:(CXProviderConfiguration *) configuration;
 ```
 
 #### Return Value

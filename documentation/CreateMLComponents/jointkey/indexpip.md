@@ -1,7 +1,8 @@
 # indexPIP
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key associated with index finger’s proximal interphalangeal (PIP) joint in a hand pose.
 
@@ -21,11 +22,12 @@ static let indexPIP: JointKey
 
 ## See Also
 
-- [static let indexDIP: JointKey](jointkey/indexdip.md)
+### Getting index finger properties
+- [static let indexDIP: JointKey](./indexdip.md)
   A key associated with index finger’s distal interphalangeal (DIP) joint in a hand pose.
-- [static let indexMCP: JointKey](jointkey/indexmcp.md)
+- [static let indexMCP: JointKey](./indexmcp.md)
   A key associated with index finger’s metacarpophalangeal (MCP) joint in a hand pose.
-- [static let indexTip: JointKey](jointkey/indextip.md)
+- [static let indexTip: JointKey](./indextip.md)
   A key associated with index finger tip joint in a hand pose.
 
 

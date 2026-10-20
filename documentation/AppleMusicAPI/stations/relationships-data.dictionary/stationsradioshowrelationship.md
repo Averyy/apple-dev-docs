@@ -1,7 +1,8 @@
 # Stations.Relationships.StationsRadioShowRelationship
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 For radio show episodes, this relationship is the Apple Curator that represents the radio show.
 
@@ -10,7 +11,7 @@ For radio show episodes, this relationship is the Apple Curator that represents 
 
 ## Declaration
 
-```swift
+```
 object Stations.Relationships.StationsRadioShowRelationship
 ```
 

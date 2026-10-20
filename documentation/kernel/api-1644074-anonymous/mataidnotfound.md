@@ -1,14 +1,15 @@
 # mATAIDNotFound
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 mATAIDNotFound = 1 << bATAIDNotFound
 ```
 

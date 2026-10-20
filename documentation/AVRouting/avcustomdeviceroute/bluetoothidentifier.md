@@ -1,7 +1,8 @@
 # bluetoothIdentifier
 
 **Framework**: AVRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier to use to establish a connection to a Bluetooth device.
 
@@ -17,9 +18,14 @@ An identifier to use to establish a connection to a Bluetooth device.
 var bluetoothIdentifier: UUID? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSUUID * bluetoothIdentifier;
+```
+
 ## See Also
 
-- [var networkEndpoint: nw_endpoint_t?](avcustomdeviceroute/networkendpoint.md)
+### Identifying routes
+- [var networkEndpoint: nw_endpoint_t?](./networkendpoint.md)
   A local or remote endpoint to connect to.
 
 

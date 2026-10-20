@@ -1,7 +1,8 @@
 # Timecode sample data
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that represents timecode sample data.
 
@@ -16,24 +17,25 @@ If the Counter flag is set to `0` in the timecode sample description, the sample
 ## Topics
 
 ### Data fields
-- [Hours](timecode_sample_data/hours.md)
+- [Hours](./timecode_sample_data/hours.md)
   An 8-bit unsigned integer that indicates the starting number of hours.
-- [Negative](timecode_sample_data/negative.md)
+- [Negative](./timecode_sample_data/negative.md)
   A 1-bit value indicating the time’s sign.
-- [Minutes](timecode_sample_data/minutes.md)
+- [Minutes](./timecode_sample_data/minutes.md)
   A 7-bit integer that contains the starting number of minutes.
-- [Seconds](timecode_sample_data/seconds.md)
+- [Seconds](./timecode_sample_data/seconds.md)
   An 8-bit unsigned integer indicating the starting number of seconds.
-- [Frames](timecode_sample_data/frames.md)
+- [Frames](./timecode_sample_data/frames.md)
   An 8-bit unsigned integer that specifies the starting number of frames.
 
 ## See Also
 
-- [Timecode sample description](timecode_sample_description.md)
+### Storing time code data
+- [Timecode sample description](./timecode_sample_description.md)
   An atom that defines how to interpret time code media data.
-- [Timecode media information atom ('tcmi')](timecode_media_information_atom.md)
+- [Timecode media information atom ('tcmi')](./timecode_media_information_atom.md)
   An atom that governs how the timecode text is displayed.
-- [Creating a timecode track for 29.97 FPS video](creating_a_timecode_track_for_2997_fps_video.md)
+- [Creating a timecode track for 29.97 FPS video](./creating_a_timecode_track_for_2997_fps_video.md)
   Configure a timecode track to specify timecode information for other tracks.
 
 

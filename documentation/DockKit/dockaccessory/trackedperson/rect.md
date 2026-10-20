@@ -1,7 +1,8 @@
 # rect
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounding box rectangle of the tracked person’s face in the frame.
 

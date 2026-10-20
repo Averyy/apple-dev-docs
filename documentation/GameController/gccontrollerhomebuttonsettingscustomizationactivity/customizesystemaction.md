@@ -1,7 +1,8 @@
 # GCControllerHomeButtonSettingsCustomizationActivity.customizeSystemAction
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Customize the system action.
 
@@ -16,6 +17,10 @@ Customize the system action.
 
 ```swift
 case customizeSystemAction
+```
+
+```c
+GCControllerHomeButtonSettingsCustomizeSystemActionActivity
 ```
 
 

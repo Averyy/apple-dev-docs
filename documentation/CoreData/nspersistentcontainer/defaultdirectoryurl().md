@@ -1,7 +1,8 @@
 # defaultDirectoryURL()
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the location of the directory that contains the persistent stores.
 
@@ -20,17 +21,22 @@ Returns the location of the directory that contains the persistent stores.
 class func defaultDirectoryURL() -> URL
 ```
 
+```objc
++ (NSURL *) defaultDirectoryURL;
+```
+
 #### Return Value
 
-An [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) that references the directory in which the persistent store(s) will be located or are currently located.
+An [`NSURL`](../../Foundation/nsurl.md) that references the directory in which the persistent store(s) will be located or are currently located.
 
 #### Discussion
 
-This method returns a platform-dependent [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) at which the persistent store(s) will be located or are currently located. This method can be overridden in a subclass of [`NSPersistentContainer`](nspersistentcontainer.md).
+This method returns a platform-dependent [`NSURL`](../../Foundation/nsurl.md) at which the persistent store(s) will be located or are currently located. This method can be overridden in a subclass of [`NSPersistentContainer`](../nspersistentcontainer.md).
 
 ## See Also
 
-- [class var defaultDirectoryURL: URL](nspersistentcontainer/defaultdirectoryurl-swift.type.property.md)
+### Accessing the Default Directory
+- [class var defaultDirectoryURL: URL](./defaultdirectoryurl-swift.type.property.md)
   The location of the directory that contains the persistent stores.
 
 

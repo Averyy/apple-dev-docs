@@ -1,7 +1,8 @@
 # networkList
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of networks associated with the command.
 
@@ -17,17 +18,22 @@ The list of networks associated with the command.
 var networkList: [NEHotspotNetwork]? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSArray<NEHotspotNetwork *> * networkList;
+```
+
 #### Discussion
 
 This property will be nil unless `commandType` is `kNEHotspotHelperCommandTypeFilterScanList`.
 
 ## See Also
 
-- [var commandType: NEHotspotHelperCommandType](nehotspothelpercommand/commandtype.md)
+### Command information
+- [var commandType: NEHotspotHelperCommandType](./commandtype.md)
   The type of the command
-- [enum NEHotspotHelperCommandType](nehotspothelpercommandtype.md)
+- [enum NEHotspotHelperCommandType](../nehotspothelpercommandtype.md)
   An enumeration of hotspot command types.
-- [var network: NEHotspotNetwork?](nehotspothelpercommand/network.md)
+- [var network: NEHotspotNetwork?](./network.md)
   The network associated with the command.
 
 

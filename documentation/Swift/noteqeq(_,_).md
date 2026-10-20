@@ -1,7 +1,8 @@
 # !==(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two references point to different object instances.
 
@@ -31,7 +32,8 @@ This operator tests whether two instances have different identities, not differe
 
 ## See Also
 
-- [func === (AnyObject?, AnyObject?) -> Bool](===(_:_:).md)
+### Comparing Identity
+- [func === (AnyObject?, AnyObject?) -> Bool](./eqeqeq%28_,_%29.md)
 
 
 ---

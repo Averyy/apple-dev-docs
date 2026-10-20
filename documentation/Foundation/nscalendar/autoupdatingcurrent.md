@@ -1,7 +1,8 @@
 # autoupdatingCurrent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A calendar that tracks changes to user’s preferred calendar.
 
@@ -20,23 +21,29 @@ A calendar that tracks changes to user’s preferred calendar.
 class var autoupdatingCurrent: Calendar { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSCalendar * autoupdatingCurrentCalendar;
+```
+
 #### Return Value
 
 The current logical calendar for the current user.
 
 #### Discussion
 
-Settings you get from this calendar do change as the user’s settings change (contrast with [`current`](nscalendar/current.md)).
+Settings you get from this calendar do change as the user’s settings change (contrast with [`current`](./current.md)).
 
 Note that if you cache values based on the calendar or related information those caches will of course not be automatically updated by the updating of the calendar object.
 
 ## See Also
 
-- [init?(calendarIdentifier: NSCalendar.Identifier)](nscalendar/init(calendaridentifier:).md)
+### Related Documentation
+- [init?(calendarIdentifier: NSCalendar.Identifier)](./init%28calendaridentifier%29.md)
   Initializes a calendar according to a given identifier.
-- [var calendarIdentifier: NSCalendar.Identifier](nscalendar/calendaridentifier.md)
+- [var calendarIdentifier: NSCalendar.Identifier](./calendaridentifier.md)
   An identifier for the calendar.
-- [class var current: Calendar](nscalendar/current.md)
+### Getting the User’s Calendar
+- [class var current: Calendar](./current.md)
   The user’s current calendar.
 
 

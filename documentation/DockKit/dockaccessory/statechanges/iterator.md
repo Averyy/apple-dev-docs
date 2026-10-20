@@ -1,7 +1,8 @@
 # DockAccessory.StateChanges.Iterator
 
 **Framework**: DockKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that allows iteration over dock accessory state changes.
 
@@ -20,19 +21,20 @@ struct Iterator
 ## Topics
 
 ### Iterating over state changes
-- [func next() async -> DockAccessory.StateChange?](dockaccessory/statechanges/iterator/next.md)
+- [func next() async -> DockAccessory.StateChange?](./iterator/next%28%29.md)
   Provide the next dock accessory state change in the list.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> DockAccessory.StateChanges.Iterator](dockaccessory/statechanges/makeasynciterator.md)
+### Iterating over state changes
+- [func makeAsyncIterator() -> DockAccessory.StateChanges.Iterator](./makeasynciterator%28%29.md)
   Creates and returns an iterator that traverses the list of dock accessory state changes.
-- [DockAccessory.StateChanges.Element](dockaccessory/statechanges/element.md)
+- [DockAccessory.StateChanges.Element](./element.md)
   A dock accessory state change.
 
 

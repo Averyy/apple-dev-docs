@@ -1,7 +1,8 @@
 # style
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style that fills this view’s shape.
 
@@ -23,11 +24,12 @@ nonisolated var style: Style { get set }
 
 ## See Also
 
-- [var background: Background](fillshapeview/background.md)
+### Getting shape view properties
+- [var background: Background](./background.md)
   The background shown beneath this view.
-- [var fillStyle: FillStyle](fillshapeview/fillstyle.md)
+- [var fillStyle: FillStyle](./fillstyle.md)
   The fill style used when filling this view’s shape.
-- [var shape: Content](fillshapeview/shape.md)
+- [var shape: Content](./shape.md)
   The shape that this type draws and provides for other drawing operations.
 
 

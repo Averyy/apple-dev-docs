@@ -1,7 +1,8 @@
 # CMTimeMappingMake(source:target:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a time mapping with a source and target time range.
 
@@ -20,6 +21,10 @@ Creates a time mapping with a source and target time range.
 func CMTimeMappingMake(source: CMTimeRange, target: CMTimeRange) -> CMTimeMapping
 ```
 
+```c
+extern CMTimeMapping CMTimeMappingMake(CMTimeRange source, CMTimeRange target);
+```
+
 #### Return Value
 
 A new time mapping.
@@ -35,9 +40,10 @@ The source and target parameters must have durations whose epoch is `0`, otherwi
 
 ## See Also
 
-- [func CMTimeMappingMakeEmpty(target: CMTimeRange) -> CMTimeMapping](cmtimemappingmakeempty(target:).md)
+### Creating Time Mappings
+- [func CMTimeMappingMakeEmpty(target: CMTimeRange) -> CMTimeMapping](./cmtimemappingmakeempty%28target%29.md)
   Creates a valid time mapping with an empty source.
-- [func CMTimeMappingMakeFromDictionary(CFDictionary) -> CMTimeMapping](cmtimemappingmakefromdictionary(_:).md)
+- [func CMTimeMappingMakeFromDictionary(CFDictionary) -> CMTimeMapping](./cmtimemappingmakefromdictionary%28_%29.md)
   Creates a time mapping from a dictionary representation.
 
 

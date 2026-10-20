@@ -1,7 +1,8 @@
 # enclosingBox(depth:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a boundary style that uses a box enclosing the portal surface.
 
@@ -21,11 +22,11 @@ static func enclosingBox(depth: Float) -> PortalComponent.BoundaryStyle
 
 #### Discussion
 
-The box is centered on the portal entity’s origin. Its X and Y extents come from the accompanying [`PortalComponent.SurfaceStyle`](portalcomponent/surfacestyle.md); its Z extent is the `depth` you provide.
+The box is centered on the portal entity’s origin. Its X and Y extents come from the accompanying [`PortalComponent.SurfaceStyle`](../surfacestyle.md); its Z extent is the `depth` you provide.
 
-Use this style for room-sized portals and other bounded portal spaces where content shouldn’t extend infinitely behind the surface. Entities with [`PortalCrossingComponent`](portalcrossingcomponent.md) cross the box’s faces rather than an infinite plane.
+Use this style for room-sized portals and other bounded portal spaces where content shouldn’t extend infinitely behind the surface. Entities with [`PortalCrossingComponent`](../../portalcrossingcomponent.md) cross the box’s faces rather than an infinite plane.
 
-This boundary corresponds to [`PortalComponent.ClippingMode.volume(_:)`](portalcomponent/clippingmode-swift.enum/volume(_:).md) and [`PortalComponent.CrossingMode.volume(_:)`](portalcomponent/crossingmode-swift.enum/volume(_:).md). To offset the box from the portal entity’s origin, configure those modes directly with a [`PortalComponent.Volume`](portalcomponent/volume.md) that has a non-zero `position`.
+This boundary corresponds to [`PortalComponent.ClippingMode.volume(_:)`](../clippingmode-swift.enum/volume%28_%29.md) and [`PortalComponent.CrossingMode.volume(_:)`](../crossingmode-swift.enum/volume%28_%29.md). To offset the box from the portal entity’s origin, configure those modes directly with a [`PortalComponent.Volume`](../volume.md) that has a non-zero `position`.
 
 ## Parameters
 

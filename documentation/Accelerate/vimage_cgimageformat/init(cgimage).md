@@ -1,7 +1,8 @@
 # init(cgImage:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Core Graphics image format of the specified image.
 
@@ -11,7 +12,7 @@ Creates a Core Graphics image format of the specified image.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ init?(cgImage: CGImage)
 
 ## Mentions
 
-- [Converting bitmap data between Core Graphics images and vImage buffers](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
+- [Converting bitmap data between Core Graphics images and vImage buffers](../converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
 
 ## Parameters
 
@@ -30,11 +31,12 @@ init?(cgImage: CGImage)
 
 ## See Also
 
-- [init(bitsPerComponent: UInt32, bitsPerPixel: UInt32, colorSpace: Unmanaged<CGColorSpace>!, bitmapInfo: CGBitmapInfo, version: UInt32, decode: UnsafePointer<CGFloat>!, renderingIntent: CGColorRenderingIntent)](vimage_cgimageformat/init(bitspercomponent:bitsperpixel:colorspace:bitmapinfo:version:decode:renderingintent:).md)
+### Initializers
+- [init(bitsPerComponent: UInt32, bitsPerPixel: UInt32, colorSpace: Unmanaged<CGColorSpace>!, bitmapInfo: CGBitmapInfo, version: UInt32, decode: UnsafePointer<CGFloat>!, renderingIntent: CGColorRenderingIntent)](./init%28bitspercomponent,bitsperpixel,colorspace,bitmapinfo,version,decode,renderingintent%29.md)
   Creates a Core Graphics image format.
-- [init?(bitsPerComponent: Int, bitsPerPixel: Int, colorSpace: CGColorSpace, bitmapInfo: CGBitmapInfo, renderingIntent: CGColorRenderingIntent)](vimage_cgimageformat/init(bitspercomponent:bitsperpixel:colorspace:bitmapinfo:renderingintent:).md)
+- [init?(bitsPerComponent: Int, bitsPerPixel: Int, colorSpace: CGColorSpace, bitmapInfo: CGBitmapInfo, renderingIntent: CGColorRenderingIntent)](./init%28bitspercomponent,bitsperpixel,colorspace,bitmapinfo,renderingintent%29.md)
   Creates a Core Graphics image format with a color space instance and default decode array.
-- [init()](vimage_cgimageformat/init.md)
+- [init()](./init%28%29.md)
   Creates an empty Core Graphics image format.
 
 

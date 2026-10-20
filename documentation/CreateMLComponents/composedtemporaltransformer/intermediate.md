@@ -1,7 +1,8 @@
 # ComposedTemporalTransformer.Intermediate
 
 **Framework**: Create ML Components  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The intermediate type.
 
@@ -22,13 +23,14 @@ typealias Intermediate = Inner.Output
 
 ## See Also
 
-- [func applied<S>(to: S, eventHandler: EventHandler?) async throws -> ComposedTemporalTransformer<Inner, Outer>.OutputSequence](composedtemporaltransformer/applied(to:eventhandler:).md)
+### Applying a transformer
+- [func applied<S>(to: S, eventHandler: EventHandler?) async throws -> ComposedTemporalTransformer<Inner, Outer>.OutputSequence](./applied%28to,eventhandler%29.md)
   Performs the composed transformation on an input sequence.
-- [ComposedTemporalTransformer.Input](composedtemporaltransformer/input.md)
+- [ComposedTemporalTransformer.Input](./input.md)
   The input type.
-- [ComposedTemporalTransformer.Output](composedtemporaltransformer/output.md)
+- [ComposedTemporalTransformer.Output](./output.md)
   The output type.
-- [ComposedTemporalTransformer.OutputSequence](composedtemporaltransformer/outputsequence.md)
+- [ComposedTemporalTransformer.OutputSequence](./outputsequence.md)
   The output sequence type.
 
 

@@ -1,7 +1,8 @@
 # MTRCommissioningOperation
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.2+
@@ -18,31 +19,35 @@
 class MTRCommissioningOperation
 ```
 
+```objc
+@interface MTRCommissioningOperation : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(parameters: MTRCommissioningParameters, setupPayload: String, delegate: any MTRCommissioningDelegate, queue: dispatch_queue_t)](mtrcommissioningoperation/init(parameters:setuppayload:delegate:queue:).md)
+- [init?(parameters: MTRCommissioningParameters, setupPayload: String, delegate: any MTRCommissioningDelegate, queue: dispatch_queue_t)](./mtrcommissioningoperation/init%28parameters,setuppayload,delegate,queue%29.md)
   Prepare to commission a device with the given parameters and the given setup payload (QR code, manual pairing code, etc).  Returns nil if the payload is not valid.
 ### Instance Properties
-- [var matchedPayload: MTRSetupPayload?](mtrcommissioningoperation/matchedpayload.md)
+- [var matchedPayload: MTRSetupPayload?](./mtrcommissioningoperation/matchedpayload.md)
   If not nil, the payload (from possibly multiple payloads represented by the provided setupPayload) that represents the commissionee we successfully established PASE with.  This will only be non-nil after successful PASE establishment.
 ### Instance Methods
-- [func start(with: MTRDeviceController)](mtrcommissioningoperation/start(with:).md)
+- [func start(with: MTRDeviceController)](./mtrcommissioningoperation/start%28with%29.md)
   Start commissioning with the given controller (which identifies the fabric the commissionee should be commissioned into).  The delegate will be notified if there are any failures.
-- [func stop() -> Bool](mtrcommissioningoperation/stop.md)
+- [func stop() -> Bool](./mtrcommissioningoperation/stop%28%29.md)
   Stop commissioning.  This will typically result in commissioning:failedWithError: callbacks to delegates.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

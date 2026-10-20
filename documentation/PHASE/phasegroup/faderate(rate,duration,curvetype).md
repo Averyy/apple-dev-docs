@@ -1,7 +1,8 @@
 # fadeRate(rate:duration:curveType:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adjusts the playback speed of the sounds in a group gradually.
 
@@ -19,15 +20,20 @@ Adjusts the playback speed of the sounds in a group gradually.
 func fadeRate(rate: Double, duration: Double, curveType: PHASECurveType)
 ```
 
+```objc
+- (void) fadeRate:(double) rate duration:(double) duration curveType:(PHASECurveType) curveType;
+```
+
 ## Parameters
 
 - `rate`: The target playback speed.
-- `duration`: The total time to adjust the playback speed. The framework scales this value by [`unitsPerSecond`](phaseengine/unitspersecond.md).
+- `duration`: The total time to adjust the playback speed. The framework scales this value by [`unitsPerSecond`](../phaseengine/unitspersecond.md).
 - `curveType`: A selection that specifies a mathematical curve that shapes the playback speed adjustment over time.
 
 ## See Also
 
-- [var rate: Double](phasegroup/rate.md)
+### Adjusting Playback Speed
+- [var rate: Double](./rate.md)
   The group’s playback speed.
 
 

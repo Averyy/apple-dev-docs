@@ -1,7 +1,8 @@
 # subscript(visibility:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 The visibility of the column identified by its identifier.
 
@@ -37,7 +38,8 @@ If the ID isn’t associated with the state, a default value of `.automatic` is 
 
 ## See Also
 
-- [func resetOrder()](tablecolumncustomization/resetorder.md)
+### Managing the customization
+- [func resetOrder()](./resetorder%28%29.md)
   Resets the column order back to the default, preserving the customized visibility and size.
 
 

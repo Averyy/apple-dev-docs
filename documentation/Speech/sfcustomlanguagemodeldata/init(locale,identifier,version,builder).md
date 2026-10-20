@@ -1,7 +1,8 @@
 # init(locale:identifier:version:builder:)
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Constructs a data container using a builder
 
@@ -32,9 +33,10 @@ The `SFCustomLanguageModelData` class accumulates language model training and cu
 
 ## See Also
 
-- [init(locale: Locale, identifier: String, version: String)](sfcustomlanguagemodeldata/init(locale:identifier:version:).md)
+### Creating a model data container
+- [init(locale: Locale, identifier: String, version: String)](./init%28locale,identifier,version%29.md)
   Constructs an empty data container.
-- [SFCustomLanguageModelData.DataInsertableBuilder](sfcustomlanguagemodeldata/datainsertablebuilder.md)
+- [SFCustomLanguageModelData.DataInsertableBuilder](./datainsertablebuilder.md)
   A custom parameter attribute that constructs custom language model data from closures.
 
 

@@ -1,7 +1,8 @@
 # zero
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The zero value.
 

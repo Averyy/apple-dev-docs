@@ -1,7 +1,8 @@
 # logarithm(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the natural logarithm to the input tensor elements.
 
@@ -17,6 +18,10 @@ Computes the natural logarithm to the input tensor elements.
 
 ```swift
 func logarithm(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) logarithmWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

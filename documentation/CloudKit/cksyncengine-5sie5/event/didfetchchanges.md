@@ -1,7 +1,8 @@
 # CKSyncEngine.Event.DidFetchChanges
 
 **Framework**: CloudKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that provides information about a finished database fetch.
 
@@ -11,7 +12,7 @@ A type that provides information about a finished database fetch.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,33 +24,34 @@ struct DidFetchChanges
 ## Topics
 
 ### Debugging the event
-- [var description: String](cksyncengine-5sie5/event/didfetchchanges/description.md)
+- [var description: String](./didfetchchanges/description.md)
   The textual description of the event that’s suitable for logging.
 ### Instance Properties
-- [let context: CKSyncEngine.FetchChangesContext](cksyncengine-5sie5/event/didfetchchanges/context.md)
+- [let context: CKSyncEngine.FetchChangesContext](./didfetchchanges/context.md)
 ### Default Implementations
-- [CustomStringConvertible Implementations](cksyncengine-5sie5/event/didfetchchanges/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./didfetchchanges/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case willFetchChanges(CKSyncEngine.Event.WillFetchChanges)](cksyncengine-5sie5/event/willfetchchanges(_:).md)
+### Remote database changes
+- [case willFetchChanges(CKSyncEngine.Event.WillFetchChanges)](./willfetchchanges%28_%29.md)
   The sync engine is about to fetch changes from the server.
-- [CKSyncEngine.Event.WillFetchChanges](cksyncengine-5sie5/event/willfetchchanges.md)
+- [CKSyncEngine.Event.WillFetchChanges](./willfetchchanges.md)
   The sync engine is about to fetch changes from the server.
-- [case fetchedDatabaseChanges(CKSyncEngine.Event.FetchedDatabaseChanges)](cksyncengine-5sie5/event/fetcheddatabasechanges(_:).md)
+- [case fetchedDatabaseChanges(CKSyncEngine.Event.FetchedDatabaseChanges)](./fetcheddatabasechanges%28_%29.md)
   The sync engine has fetched new database changes from the server.
-- [CKSyncEngine.Event.FetchedDatabaseChanges](cksyncengine-5sie5/event/fetcheddatabasechanges.md)
+- [CKSyncEngine.Event.FetchedDatabaseChanges](./fetcheddatabasechanges.md)
   A type that provides information about fetched database changes.
-- [case didFetchChanges(CKSyncEngine.Event.DidFetchChanges)](cksyncengine-5sie5/event/didfetchchanges(_:).md)
+- [case didFetchChanges(CKSyncEngine.Event.DidFetchChanges)](./didfetchchanges%28_%29.md)
   The sync engine finished fetching changes from the server.
 
 

@@ -1,7 +1,8 @@
 # ARPlaneAnchor.Alignment
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The kinds of alignment — horizontal or vertical — that a plane anchor can have.
 
@@ -15,29 +16,34 @@ The kinds of alignment — horizontal or vertical — that a plane anchor can ha
 enum Alignment
 ```
 
+```c
+enum ARPlaneAnchorAlignment : NSInteger;
+```
+
 ## Topics
 
 ### Alignment Values
-- [ARPlaneAnchor.Alignment.horizontal](arplaneanchor/alignment-swift.enum/horizontal.md)
+- [ARPlaneAnchor.Alignment.horizontal](./alignment-swift.enum/horizontal.md)
   The plane is perpendicular to gravity.
-- [ARPlaneAnchor.Alignment.vertical](arplaneanchor/alignment-swift.enum/vertical.md)
+- [ARPlaneAnchor.Alignment.vertical](./alignment-swift.enum/vertical.md)
   The plane is parallel to gravity.
 ### Initializers
-- [init?(rawValue: Int)](arplaneanchor/alignment-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./alignment-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var alignment: ARPlaneAnchor.Alignment](arplaneanchor/alignment-swift.property.md)
+### Orientation
+- [var alignment: ARPlaneAnchor.Alignment](./alignment-swift.property.md)
   The general orientation of the detected plane with respect to gravity.
 
 

@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of unsigned-integer elements that specify the size of the shape.
 
@@ -20,9 +21,14 @@ An array of unsigned-integer elements that specify the size of the shape.
 var shape: UnsafeMutablePointer<UInt64>?
 ```
 
+```c
+uint64_t * shape;
+```
+
 ## See Also
 
-- [var rank: Int](bnns_graph_shape_t/rank.md)
+### Specifying a shape’s properties
+- [var rank: Int](./rank.md)
   The rank of the shape.
 
 

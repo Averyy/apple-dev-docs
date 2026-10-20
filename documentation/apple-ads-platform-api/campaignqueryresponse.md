@@ -1,7 +1,8 @@
 # CampaignQueryResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response object for a Campaign query, containing matched results and pagination metadata.
 
@@ -10,7 +11,7 @@ The response object for a Campaign query, containing matched results and paginat
 
 ## Declaration
 
-```swift
+```
 object CampaignQueryResponse
 ```
 
@@ -75,41 +76,41 @@ The campaign query endpoint returns `CampaignQueryResponse`, which contains the 
 
 ## Properties
 
-- `result` ([Campaign]): The list of campaigns matching the query filters. See [`Campaign`](campaign.md). Read-only.
-- `pagination` (QueryPaginationResult): Pagination metadata for the response, including `offset`, `pageSize`, and `totalCount`. See [`QueryPaginationResult`](querypaginationresult.md). Read-only.
-- `error` (Error): Error information if the request encountered an error. See [`Error`](error.md). Read-only.
+- `result` ([Campaign]): The list of campaigns matching the query filters. See [`Campaign`](./campaign.md). Read-only.
+- `pagination` (QueryPaginationResult): Pagination metadata for the response, including `offset`, `pageSize`, and `totalCount`. See [`QueryPaginationResult`](./querypaginationresult.md). Read-only.
+- `error` (Error): Error information if the request encountered an error. See [`Error`](./error.md). Read-only.
 
 ## See Also
 
-- [object Campaign](campaign.md)
+- [object Campaign](./campaign.md)
   The top-level container that defines a campaign’s promoted object, billing, scheduling, and targeting.
-- [object CampaignCreate](campaigncreate.md)
+- [object CampaignCreate](./campaigncreate.md)
   The request body for creating a new campaign.
-- [object CampaignUpdate](campaignupdate.md)
+- [object CampaignUpdate](./campaignupdate.md)
   The request body for updating an existing Campaign object.
-- [object CampaignResponse](campaignresponse.md)
+- [object CampaignResponse](./campaignresponse.md)
   The response object for a Campaign operation.
-- [object CampaignTargeting](campaigntargeting.md)
+- [object CampaignTargeting](./campaigntargeting.md)
   Defines where a campaign is eligible to serve ads, including supply source, placement, and geographic markets.
-- [object CampaignTargetingCreate](campaigntargetingcreate.md)
+- [object CampaignTargetingCreate](./campaigntargetingcreate.md)
   Targeting configuration supplied when creating a campaign.
-- [object DailyBudget](dailybudget.md)
+- [object DailyBudget](./dailybudget.md)
   Daily budget cap for a campaign.
-- [object DailyBudgetCreate](dailybudgetcreate.md)
+- [object DailyBudgetCreate](./dailybudgetcreate.md)
   Request wrapper for setting a campaign’s daily budget at creation time.
-- [object Money](money.md)
+- [object Money](./money.md)
   Monetary representation with currency.
-- [object InvoiceDetailCreate](invoicedetailcreate.md)
+- [object InvoiceDetailCreate](./invoicedetailcreate.md)
   Invoice billing contact details supplied when creating a campaign or budget order.
-- [object LegacyAppLimitedStatusReasonDetailsResponse](legacyapplimitedstatusreasondetailsresponse.md)
+- [object LegacyAppLimitedStatusReasonDetailsResponse](./legacyapplimitedstatusreasondetailsresponse.md)
   Response wrapper returning per-country or per-region limited-status reasons for legacy app campaigns.
-- [object CampaignTargetingUpdate](campaigntargetingupdate.md)
+- [object CampaignTargetingUpdate](./campaigntargetingupdate.md)
   Targeting configuration for updating an existing campaign’s supply source, placement, and geographic markets.
-- [object DailyBudgetUpdate](dailybudgetupdate.md)
+- [object DailyBudgetUpdate](./dailybudgetupdate.md)
   Request wrapper for updating a campaign’s daily budget amount.
-- [object LegacyAppLimitedStatusReasonDetails](legacyapplimitedstatusreasondetails.md)
+- [object LegacyAppLimitedStatusReasonDetails](./legacyapplimitedstatusreasondetails.md)
   Per-country or per-region limited-status reasons for legacy app campaigns.
-- [object ResponsePagination](responsepagination.md)
+- [object ResponsePagination](./responsepagination.md)
   Pagination metadata returned in Campaign list responses, supporting offset-based navigation.
 
 

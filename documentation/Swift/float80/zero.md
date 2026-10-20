@@ -1,7 +1,8 @@
 # zero
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The zero value.
 
@@ -13,6 +14,8 @@ The zero value.
 ```swift
 static var zero: Self { get }
 ```
+
+Available when `Self` conforms to `ExpressibleByIntegerLiteral`.
 
 #### Discussion
 

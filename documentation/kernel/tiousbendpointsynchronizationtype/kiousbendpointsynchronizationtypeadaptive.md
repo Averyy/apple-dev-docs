@@ -1,7 +1,8 @@
 # kIOUSBEndpointSynchronizationTypeAdaptive
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The adaptive type.
 
@@ -10,7 +11,7 @@ The adaptive type.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBEndpointSynchronizationTypeAdaptive = (kIOUSBEndpointDescriptorSynchronizationTypeAdaptive >> kIOUSBEndpointDescriptorSynchronizationTypePhase)
 ```
 

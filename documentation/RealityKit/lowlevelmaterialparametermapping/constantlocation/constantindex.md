@@ -1,7 +1,8 @@
 # constantIndex
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the constant within the buffer slot’s constant array.
 

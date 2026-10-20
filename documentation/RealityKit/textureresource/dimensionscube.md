@@ -1,7 +1,8 @@
 # TextureResource.DimensionsCube
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The dimensions of the cube texture.
 
@@ -26,16 +27,16 @@ This specifies the face size of the cube texture.
 ## Topics
 
 ### Creating the cube dimensions
-- [static func dimensions(faceSize: Int) -> TextureResource.DimensionsCube](textureresource/dimensionscube/dimensions(facesize:).md)
+- [static func dimensions(faceSize: Int) -> TextureResource.DimensionsCube](./dimensionscube/dimensions%28facesize%29.md)
   Specifies the dimensions of the cube texture.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # heatStage2
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@
 
 ```swift
 static var heatStage2: MTRThermostatRelayStateBitmap { get }
+```
+
+```c
+MTRThermostatRelayStateBitmapHeatStage2
 ```
 
 

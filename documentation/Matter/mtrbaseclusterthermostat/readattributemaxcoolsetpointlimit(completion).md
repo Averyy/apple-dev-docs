@@ -1,7 +1,8 @@
 # readAttributeMaxCoolSetpointLimit(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeMaxCoolSetpointLimit(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeMaxCoolSetpointLimit() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeMaxCoolSetpointLimitWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

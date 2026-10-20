@@ -1,7 +1,8 @@
 # HIMutableShape
 
 **Framework**: Application Services  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.2+
@@ -15,7 +16,7 @@ class HIMutableShape : HIShape
 ## Relationships
 
 ### Inherits From
-- [HIShape](hishape.md)
+- [HIShape](./hishape.md)
 
 
 ---

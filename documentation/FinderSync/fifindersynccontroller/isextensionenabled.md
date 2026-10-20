@@ -1,7 +1,8 @@
 # isExtensionEnabled
 
 **Framework**: Finder Sync  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 10.14+
@@ -10,6 +11,10 @@
 
 ```swift
 class var isExtensionEnabled: Bool { get }
+```
+
+```objc
+@property (class, readonly, getter=isExtensionEnabled) BOOL extensionEnabled;
 ```
 
 

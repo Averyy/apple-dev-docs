@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the size of the view that will render the shape, given a proposed size.
@@ -30,15 +31,22 @@ A size that indicates how much space the shape needs.
 
 Implement this method to tell the container of the shape how much space the shape needs to render itself, given a size proposal.
 
-See [`sizeThatFits(proposal:subviews:cache:)`](layout/sizethatfits(proposal:subviews:cache:).md) for more details about how the layout system chooses the size of views.
+See [`sizeThatFits(proposal:subviews:cache:)`](../layout/sizethatfits%28proposal,subviews,cache%29.md) for more details about how the layout system chooses the size of views.
 
 ## Parameters
 
 - `proposal`: A size proposal for the container.
 
+## Default Implementations
+
+### Shape Implementations
+- [func sizeThatFits(ProposedViewSize) -> CGSize](./sizethatfits%28_%29-2vtnh.md)
+  Returns the original proposal, with nil components replaced by a small positive value.
+
 ## See Also
 
-- [func path(in: CGRect) -> Path](shape/path(in:).md)
+### Defining a shape’s size and path
+- [func path(in: CGRect) -> Path](./path%28in%29.md)
   Describes this shape as a path within a rectangular frame of reference.
 
 

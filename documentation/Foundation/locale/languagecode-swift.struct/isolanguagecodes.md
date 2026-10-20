@@ -1,7 +1,8 @@
 # isoLanguageCodes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns an array of ISO-defined language codes.
 

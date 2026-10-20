@@ -1,7 +1,8 @@
 # isValid
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver is valid.
 
@@ -20,16 +21,21 @@ A Boolean value that indicates whether the receiver is valid.
 var isValid: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isValid) BOOL valid;
+```
+
 #### Discussion
 
-[`false`](https://developer.apple.com/documentation/swift/false) if the receiver is known to be invalid, otherwise [`true`](https://developer.apple.com/documentation/swift/true).
+[`false`](../../Swift/false.md) if the receiver is known to be invalid, otherwise [`true`](../../Swift/true.md).
 
 An `NSPort` object becomes invalid when its underlying communication resource, which is operating system dependent, is closed or damaged.
 
 ## See Also
 
-- [func invalidate()](port/invalidate.md)
-  Marks the receiver as invalid and posts an [`didBecomeInvalidNotification`](port/didbecomeinvalidnotification.md) to the default notification center.
+### Validation
+- [func invalidate()](./invalidate%28%29.md)
+  Marks the receiver as invalid and posts an [`didBecomeInvalidNotification`](./didbecomeinvalidnotification.md) to the default notification center.
 
 
 ---

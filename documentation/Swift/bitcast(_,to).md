@@ -1,7 +1,8 @@
 # bitCast(_:to:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the bits of the given instance, interpreted as having the specified type.
 
@@ -35,13 +36,14 @@ A new instance of type `U`, cast from `original`.
 
 ## See Also
 
-- [typealias FullyInhabited](fullyinhabited.md)
+### Safe Access to Raw Bytes
+- [typealias FullyInhabited](./fullyinhabited.md)
   A protocol for types whose memory can safely be written as or read from raw bytes.
-- [protocol ConvertibleFromBytes](convertiblefrombytes.md)
+- [protocol ConvertibleFromBytes](./convertiblefrombytes.md)
   A protocol for types whose memory can safely be populated from raw bytes, resulting in a valid instance.
-- [protocol ConvertibleToBytes](convertibletobytes.md)
+- [protocol ConvertibleToBytes](./convertibletobytes.md)
   A protocol for types whose memory can safely be read as individual raw bytes.
-- [enum ByteOrder](byteorder.md)
+- [enum ByteOrder](./byteorder.md)
   A byte ordering in memory.
 
 

@@ -1,7 +1,8 @@
 # transportType
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An enum schema for a transport type parameter.
 
@@ -20,7 +21,7 @@ var transportType: some AppSchemaEnum { get }
 
 #### Discussion
 
-To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `maps` domain and a parameter type matches the `transportType` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum( .maps.transportType)` Swift macro. To make your app work with Siri, see [`Apple Intelligence and Siri AI`](apple-intelligence-and-siri-ai.md).
+To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `maps` domain and a parameter type matches the `transportType` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum( .maps.transportType)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
 The following example shows an app enum that conforms to the `transportType` schema:
 
@@ -40,23 +41,24 @@ The schema supports the following system experiences:
 - Siri
 - Shortcuts
 
-For more information about the App Intents framework and the experiences it supports, see [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md).
+For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
 
 ## See Also
 
-- [var amenity: some AppSchemaEnum](appschema/mapsenum/amenity.md)
+### Types for static parameters
+- [var amenity: some AppSchemaEnum](./amenity.md)
   An enum schema for an amenity parameter.
-- [var incident: some AppSchemaEnum](appschema/mapsenum/incident.md)
+- [var incident: some AppSchemaEnum](./incident.md)
   An enum schema for an incident parameter.
-- [var navigationPreferences: some AppSchemaEnum](appschema/mapsenum/navigationpreferences.md)
+- [var navigationPreferences: some AppSchemaEnum](./navigationpreferences.md)
   An enum schema for a navigation preferences parameter.
-- [var operatingStatus: some AppSchemaEnum](appschema/mapsenum/operatingstatus.md)
+- [var operatingStatus: some AppSchemaEnum](./operatingstatus.md)
   An enum schema for an operating status parameter.
-- [var priceRange: some AppSchemaEnum](appschema/mapsenum/pricerange.md)
+- [var priceRange: some AppSchemaEnum](./pricerange.md)
   An enum schema for a price range parameter.
-- [var ratingDescriptor: some AppSchemaEnum](appschema/mapsenum/ratingdescriptor.md)
+- [var ratingDescriptor: some AppSchemaEnum](./ratingdescriptor.md)
   An enum schema for a rating descriptor parameter.
-- [AppSchema.MapsEnum](appschema/mapsenum.md)
+- [AppSchema.MapsEnum](../mapsenum.md)
   Identifies enum schemas in the maps domain.
 
 

@@ -1,14 +1,15 @@
 # ri_cpu_time_qos_legacy
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 uint64_t ri_cpu_time_qos_legacy;
 ```
 

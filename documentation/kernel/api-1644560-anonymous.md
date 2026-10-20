@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,26 +18,26 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [eightBitMode](1644560-anonymous/eightbitmode.md)
-- [fourBitMode](1644560-anonymous/fourbitmode.md)
-- [mBaseOffset](1644560-anonymous/mbaseoffset.md)
-- [mBounds](1644560-anonymous/mbounds.md)
-- [mCmpCount](1644560-anonymous/mcmpcount.md)
-- [mCmpSize](1644560-anonymous/mcmpsize.md)
-- [mDevType](1644560-anonymous/mdevtype.md)
-- [mHRes](1644560-anonymous/mhres.md)
-- [mPageCnt](1644560-anonymous/mpagecnt.md)
-- [mPixelSize](1644560-anonymous/mpixelsize.md)
-- [mPixelType](1644560-anonymous/mpixeltype.md)
-- [mPlaneBytes](1644560-anonymous/mplanebytes.md)
-- [mRowBytes](1644560-anonymous/mrowbytes.md)
-- [mTable](1644560-anonymous/mtable.md)
-- [mVRes](1644560-anonymous/mvres.md)
-- [mVersion](1644560-anonymous/mversion.md)
-- [mVertRefRate](1644560-anonymous/mvertrefrate.md)
-- [mVidParams](1644560-anonymous/mvidparams.md)
-- [oneBitMode](1644560-anonymous/onebitmode.md)
-- [twoBitMode](1644560-anonymous/twobitmode.md)
+- [eightBitMode](./api-1644560-anonymous/eightbitmode.md)
+- [fourBitMode](./api-1644560-anonymous/fourbitmode.md)
+- [mBaseOffset](./api-1644560-anonymous/mbaseoffset.md)
+- [mBounds](./api-1644560-anonymous/mbounds.md)
+- [mCmpCount](./api-1644560-anonymous/mcmpcount.md)
+- [mCmpSize](./api-1644560-anonymous/mcmpsize.md)
+- [mDevType](./api-1644560-anonymous/mdevtype.md)
+- [mHRes](./api-1644560-anonymous/mhres.md)
+- [mPageCnt](./api-1644560-anonymous/mpagecnt.md)
+- [mPixelSize](./api-1644560-anonymous/mpixelsize.md)
+- [mPixelType](./api-1644560-anonymous/mpixeltype.md)
+- [mPlaneBytes](./api-1644560-anonymous/mplanebytes.md)
+- [mRowBytes](./api-1644560-anonymous/mrowbytes.md)
+- [mTable](./api-1644560-anonymous/mtable.md)
+- [mVRes](./api-1644560-anonymous/mvres.md)
+- [mVersion](./api-1644560-anonymous/mversion.md)
+- [mVertRefRate](./api-1644560-anonymous/mvertrefrate.md)
+- [mVidParams](./api-1644560-anonymous/mvidparams.md)
+- [oneBitMode](./api-1644560-anonymous/onebitmode.md)
+- [twoBitMode](./api-1644560-anonymous/twobitmode.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # tool
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A tool for drawing on a PKCanvasView.
 

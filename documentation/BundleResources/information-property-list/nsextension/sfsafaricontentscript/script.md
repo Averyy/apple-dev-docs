@@ -1,16 +1,18 @@
 # Script
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The path to the content script, relative to the Resources folder in the app extension’s bundle.
 
 **Availability**:
 - macOS 10.11.5+
 
+## Details
 
-
-**Type**: string
+- **Name**: `Script`
+- **Type**: string
 
 
 ---

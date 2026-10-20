@@ -1,7 +1,8 @@
 # loadTextures(using:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads textures using resolver for string paths and NSURLs.
 
@@ -19,9 +20,13 @@ Loads textures using resolver for string paths and NSURLs.
 func loadTextures(using resolver: any MDLAssetResolver)
 ```
 
+```objc
+- (void) loadTexturesUsingResolver:(id<MDLAssetResolver>) resolver;
+```
+
 #### Discussion
 
-Iterates all material properties. If there are string values or NSURL values, and you can resolve the values as textures, then [`MDLTextureSampler`](mdltexturesampler.md) values replaces the string and NSURL values.
+Iterates all material properties. If there are string values or NSURL values, and you can resolve the values as textures, then [`MDLTextureSampler`](../mdltexturesampler.md) values replaces the string and NSURL values.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ Iterates all material properties. If there are string values or NSURL values, an
 
 ## See Also
 
-- [func resolveTextures(with: any MDLAssetResolver)](mdlmaterial/resolvetextures(with:).md)
+### Working with textures using resolvers
+- [func resolveTextures(with: any MDLAssetResolver)](./resolvetextures%28with%29.md)
   Resolves all texture string paths as NSURLs with resolver.
 
 

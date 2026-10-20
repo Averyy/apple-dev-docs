@@ -1,7 +1,8 @@
 # isValidSignature(_:for:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Verifies an elliptic curve digital signature algorithm (ECDSA) signature on a block of data over the P-256 elliptic curve.
 
@@ -31,9 +32,10 @@ A Boolean value that’s `true` if the signature is valid for the given data; ot
 
 ## See Also
 
-- [func isValidSignature<D>(P256.Signing.ECDSASignature, for: D) -> Bool](p256/signing/publickey/isvalidsignature(_:for:)-2rsb5.md)
+### Verifying a signature
+- [func isValidSignature<D>(P256.Signing.ECDSASignature, for: D) -> Bool](./isvalidsignature%28_,for%29-2rsb5.md)
   Verifies an elliptic curve digital signature algorithm (ECDSA) signature on a digest over the P-256 elliptic curve.
-- [P256.Signing.ECDSASignature](p256/signing/ecdsasignature.md)
+- [P256.Signing.ECDSASignature](../ecdsasignature.md)
   A P-256 elliptic curve digital signature algorithm (ECDSA) signature.
 
 

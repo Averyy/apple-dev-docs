@@ -1,7 +1,8 @@
 # RotateFileVaultKeyCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to change the FileVault primary password on a device.
 
@@ -10,14 +11,14 @@ The command to change the FileVault primary password on a device.
 
 ## Declaration
 
-```swift
+```
 object RotateFileVaultKeyCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object RotateFileVaultKeyCommand.Command](rotatefilevaultkeycommand/command-data.dictionary.md)
+- [object RotateFileVaultKeyCommand.Command](./rotatefilevaultkeycommand/command-data.dictionary.md)
   The command to change the FileVault primary password on a device.
 
 ## Properties
@@ -27,7 +28,8 @@ object RotateFileVaultKeyCommand
 
 ## See Also
 
-- [object RotateFileVaultKeyResponse](rotatefilevaultkeyresponse.md)
+### Commands and responses
+- [object RotateFileVaultKeyResponse](./rotatefilevaultkeyresponse.md)
   A response from the device after it processes the command to change the FileVault primary password on a device.
 
 

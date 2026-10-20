@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Game Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a two dimensional point with coordinates `(0, 0)`.
 
@@ -21,11 +22,12 @@ init()
 
 ## See Also
 
-- [init(x: Float, y: Float)](gcpoint2/init(x:y:).md)
+### Creating a point
+- [init(x: Float, y: Float)](./init%28x,y%29.md)
   Creates a two dimensional point with the given coordinates.
-- [func GCPoint2Make(Float, Float) -> GCPoint2](gcpoint2make(_:_:).md)
+- [func GCPoint2Make(Float, Float) -> GCPoint2](../gcpoint2make%28_,_%29.md)
   Returns a point with the specified coordinates in a two-dimensional coordinate system.
-- [let GCPoint2Zero: GCPoint2](gcpoint2zero.md)
+- [let GCPoint2Zero: GCPoint2](../gcpoint2zero.md)
   The origin for a two dimensional point.
 
 

@@ -1,17 +1,18 @@
 # kSequenceTrackProperty_TrackLength
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The time of the last music event in a music track, plus time required for note fade-outs and so on.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,23 +20,28 @@ The time of the last music event in a music track, plus time required for note f
 var kSequenceTrackProperty_TrackLength: UInt32 { get }
 ```
 
+```c
+kSequenceTrackProperty_TrackLength
+```
+
 #### Discussion
 
-If this property is not set, music track length equals the end of the last active event in the track and is adjusted dynamically as events are added or removed. The value of this property is the specified track length, or the calculated length—whichever is greater. A read/write [`MusicTimeStamp`](musictimestamp.md) value.
+If this property is not set, music track length equals the end of the last active event in the track and is adjusted dynamically as events are added or removed. The value of this property is the specified track length, or the calculated length—whichever is greater. A read/write [`MusicTimeStamp`](./musictimestamp.md) value.
 
 ## See Also
 
-- [var kSequenceTrackProperty_LoopInfo: UInt32](ksequencetrackproperty_loopinfo.md)
+### Constants
+- [var kSequenceTrackProperty_LoopInfo: UInt32](./ksequencetrackproperty_loopinfo.md)
   Looping information for a music track.
-- [var kSequenceTrackProperty_OffsetTime: UInt32](ksequencetrackproperty_offsettime.md)
+- [var kSequenceTrackProperty_OffsetTime: UInt32](./ksequencetrackproperty_offsettime.md)
   A music track’s start time in terms of beat number.
-- [var kSequenceTrackProperty_MuteStatus: UInt32](ksequencetrackproperty_mutestatus.md)
+- [var kSequenceTrackProperty_MuteStatus: UInt32](./ksequencetrackproperty_mutestatus.md)
   The mute/unmute state of a music track. By default this value is `false` (not muted). A read/write Boolean value.
-- [var kSequenceTrackProperty_SoloStatus: UInt32](ksequencetrackproperty_solostatus.md)
+- [var kSequenceTrackProperty_SoloStatus: UInt32](./ksequencetrackproperty_solostatus.md)
   The solo/unsolo state of a music track. By default this value is `false` (not soloed). A read/write Boolean value.
-- [var kSequenceTrackProperty_AutomatedParameters: UInt32](ksequencetrackproperty_automatedparameters.md)
+- [var kSequenceTrackProperty_AutomatedParameters: UInt32](./ksequencetrackproperty_automatedparameters.md)
   Indicates whether or not a music track’s purpose is audio unit parameter automation. If this property’s value is other than 0, music events in the track can only indicate points in an automation curve. A read/write `UInt32` value, where a value other than 0 indicates that the track is for parameter automation.
-- [var kSequenceTrackProperty_TimeResolution: UInt32](ksequencetrackproperty_timeresolution.md)
+- [var kSequenceTrackProperty_TimeResolution: UInt32](./ksequencetrackproperty_timeresolution.md)
   The time resolution for a sequence of music events. For example, this value can indicate the time resolution that was specified by the MIDI file used to construct a sequence.
 
 

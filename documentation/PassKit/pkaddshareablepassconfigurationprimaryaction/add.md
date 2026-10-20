@@ -1,7 +1,8 @@
 # PKAddShareablePassConfigurationPrimaryAction.add
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates the system adds a pass to a device.
 
@@ -9,7 +10,7 @@ A constant that indicates the system adds a pass to a device.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,14 @@ A constant that indicates the system adds a pass to a device.
 case add
 ```
 
+```c
+PKAddShareablePassConfigurationPrimaryActionAdd
+```
+
 ## See Also
 
-- [PKAddShareablePassConfigurationPrimaryAction.share](pkaddshareablepassconfigurationprimaryaction/share.md)
+### Shareable pass configuration actions
+- [PKAddShareablePassConfigurationPrimaryAction.share](./share.md)
   A constant that indicates the system shares the pass with another user.
 
 

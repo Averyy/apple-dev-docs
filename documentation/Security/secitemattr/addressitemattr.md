@@ -1,7 +1,8 @@
 # SecItemAttr.addressItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the address attribute.
 
@@ -13,6 +14,10 @@ Identifies the address attribute.
 
 ```swift
 case addressItemAttr
+```
+
+```c
+kSecAddressItemAttr
 ```
 
 #### Discussion

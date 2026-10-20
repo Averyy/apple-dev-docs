@@ -1,17 +1,18 @@
 # MergeableDocument Implementations
 
-**Framework**: Assignables
+**Framework**: Assignables  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [AssignableDocument.Page](assignabledocument/page.md)
+- [AssignableDocument.Page](./page.md)
   A page within this assignable document.
 ### Instance Properties
-- [var pages: [AssignableDocument.Page]](assignabledocument/pages.md)
+- [var pages: [AssignableDocument.Page]](./pages.md)
   The collection of pages in this document.
 ### Instance Methods
-- [func exportToPDF(visibleParts: [MergeablePartsContainerPartID]) async -> PDFDocument](assignabledocument/exporttopdf(visibleparts:).md)
+- [func exportToPDF(visibleParts: [MergeablePartsContainerPartID]) async -> PDFDocument](./exporttopdf%28visibleparts%29.md)
   Exports the indicated parts of this document into a single `PDFDocument`.
 
 

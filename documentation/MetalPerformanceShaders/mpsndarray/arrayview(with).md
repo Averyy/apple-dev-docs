@@ -1,7 +1,8 @@
 # arrayView(with:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func arrayView(with descriptor: MPSNDArrayDescriptor) -> MPSNDArray?
+```
+
+```objc
+- (MPSNDArray *) arrayViewWithDescriptor:(MPSNDArrayDescriptor *) descriptor;
 ```
 
 

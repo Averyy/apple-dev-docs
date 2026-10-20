@@ -1,7 +1,8 @@
 # contactFieldUserInfoKey
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The contact field the error relates to.
 
@@ -16,6 +17,10 @@ The contact field the error relates to.
 
 ```swift
 static let contactFieldUserInfoKey: PKDisbursementErrorKey
+```
+
+```c
+extern PKDisbursementErrorKey const PKDisbursementErrorContactFieldUserInfoKey;
 ```
 
 

@@ -1,7 +1,8 @@
 # VTFrameProcessorOpticalFlow
 
 **Framework**: Video Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class to wrap bidirectional optical flow to send to the processor.
 
@@ -19,6 +20,10 @@ A class to wrap bidirectional optical flow to send to the processor.
 class VTFrameProcessorOpticalFlow
 ```
 
+```objc
+@interface VTFrameProcessorOpticalFlow : NSObject
+```
+
 #### Overview
 
 Instances retain the buffers backing them.
@@ -26,31 +31,32 @@ Instances retain the buffers backing them.
 ## Topics
 
 ### Creating an optical flow configuration
-- [init?(forwardFlow: CVPixelBuffer, backwardFlow: CVPixelBuffer)](vtframeprocessoropticalflow/init(forwardflow:backwardflow:).md)
+- [init?(forwardFlow: CVPixelBuffer, backwardFlow: CVPixelBuffer)](./vtframeprocessoropticalflow/init%28forwardflow,backwardflow%29.md)
   Creates an object with forward and backward optical flow pixel buffers.
 ### Inspecting the configuration
-- [var backwardFlow: CVPixelBuffer](vtframeprocessoropticalflow/backwardflow.md)
+- [var backwardFlow: CVPixelBuffer](./vtframeprocessoropticalflow/backwardflow.md)
   The backward optical flow pixel buffer that was provided when the object was created.
-- [var forwardFlow: CVPixelBuffer](vtframeprocessoropticalflow/forwardflow.md)
+- [var forwardFlow: CVPixelBuffer](./vtframeprocessoropticalflow/forwardflow.md)
   The forward optical flow pixel that was provided when the object was created.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VTOpticalFlowConfiguration](vtopticalflowconfiguration.md)
+### Optical flow
+- [class VTOpticalFlowConfiguration](./vtopticalflowconfiguration.md)
   A configuration object that enables optical flow on a frame processing session.
-- [class VTOpticalFlowParameters](vtopticalflowparameters.md)
+- [class VTOpticalFlowParameters](./vtopticalflowparameters.md)
   An object that describes frame-level optical flow parameters.
 
 

@@ -1,7 +1,8 @@
 # CPTimeRemainingColor.green
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A shade of green.
 
@@ -16,13 +17,18 @@ A shade of green.
 case green
 ```
 
+```c
+CPTimeRemainingColorGreen
+```
+
 ## See Also
 
-- [CPTimeRemainingColor.default](cptimeremainingcolor/default.md)
+### Colors
+- [CPTimeRemainingColor.default](./default.md)
   The system default color.
-- [CPTimeRemainingColor.orange](cptimeremainingcolor/orange.md)
+- [CPTimeRemainingColor.orange](./orange.md)
   A shade of orange.
-- [CPTimeRemainingColor.red](cptimeremainingcolor/red.md)
+- [CPTimeRemainingColor.red](./red.md)
   A shade of red.
 
 

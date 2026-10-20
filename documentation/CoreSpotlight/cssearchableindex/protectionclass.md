@@ -1,7 +1,8 @@
 # protectionClass
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var protectionClass: FileProtectionType { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSFileProtectionType protectionClass;
 ```
 
 

@@ -1,7 +1,8 @@
 # EntityQueryPropertyDeclaration
 
 **Framework**: App Intents  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that identifies a specific entity property and the query comparators it supports.
 
@@ -11,7 +12,7 @@ An object that identifies a specific entity property and the query comparators i
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,11 +24,12 @@ class EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>
 ## Relationships
 
 ### Inherited By
-- [EntityQueryProperty](entityqueryproperty.md)
+- [EntityQueryProperty](./entityqueryproperty.md)
 
 ## See Also
 
-- [static func buildBlock(EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>...) -> [EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>]](entityquerypropertiesbuilder/buildblock(_:).md)
+### Building queryable properties
+- [static func buildBlock(EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>...) -> [EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>]](./entityquerypropertiesbuilder/buildblock%28_%29.md)
 
 
 ---

@@ -1,18 +1,19 @@
 # callAsFunction(count:)
 
 **Framework**: Swift Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Confirm this confirmation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -24,7 +25,7 @@ func callAsFunction(count: Int = 1)
 
 #### Discussion
 
-Calling a confirmation as a function is shorthand for calling its [`confirm(count:)`](confirmation/confirm(count:).md) method.
+Calling a confirmation as a function is shorthand for calling its [`confirm(count:)`](./confirm%28count%29.md) method.
 
 ## Parameters
 

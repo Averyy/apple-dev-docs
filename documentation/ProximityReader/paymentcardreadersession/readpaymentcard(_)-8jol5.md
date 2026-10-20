@@ -1,7 +1,8 @@
 # readPaymentCard(_:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a sheet to read a contactless payment card for a purchase or a refund, and returns the encrypted card data.
 
@@ -18,13 +19,13 @@ func readPaymentCard(_ request: PaymentCardTransactionRequest) async throws -> P
 
 #### Return Value
 
-A [`PaymentCardReadResult`](paymentcardreadresult.md) if the read operation was successful.
+A [`PaymentCardReadResult`](../paymentcardreadresult.md) if the read operation was successful.
 
 #### Discussion
 
 Call this method as the first step in a financial transaction involving Tap to Pay with iPhone. This method displays a system-provided sheet with instructions on what the person needs to do. This UI remains onscreen until the system reads the person’s card, you cancel the operation, or an error occurs. After the read operation concludes successfully, deliver the returned card information to your payment service provider.
 
-> **Note**: This method throws a [`PaymentCardReaderSession.ReadError`](paymentcardreadersession/readerror.md) if a person dismisses the sheet or the sheet fails to appear.
+> **Throws**: This method throws a [`PaymentCardReaderSession.ReadError`](./readerror.md) if a person dismisses the sheet or the sheet fails to appear.
 
 ## Parameters
 
@@ -32,7 +33,8 @@ Call this method as the first step in a financial transaction involving Tap to P
 
 ## See Also
 
-- [func readPaymentCard(PaymentCardVerificationRequest) async throws -> PaymentCardReadResult](paymentcardreadersession/readpaymentcard(_:)-hr97.md)
+### Reading a payment card
+- [func readPaymentCard(PaymentCardVerificationRequest) async throws -> PaymentCardReadResult](./readpaymentcard%28_%29-hr97.md)
   Presents a sheet to verify a contactless payment card, and returns the card data.
 
 

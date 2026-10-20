@@ -1,7 +1,8 @@
 # lastReportedDate
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The last time your game reported progress on the achievement for the player.
 
@@ -20,19 +21,32 @@ The last time your game reported progress on the achievement for the player.
 var lastReportedDate: Date { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSDate * lastReportedDate;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSDate * lastReportedDate;
+```
+
 #### Discussion
 
 GameKit initializes this property to the current date.
 
 ## See Also
 
-- [var identifier: String](gkachievement/identifier.md)
+### Accessing Achievement Properties
+- [var identifier: String](./identifier.md)
   The identifier for the achievement that you enter in App Store Connect.
-- [var player: GKPlayer](gkachievement/player.md)
+- [var player: GKPlayer](./player.md)
   The player who earned the achievement.
-- [var percentComplete: Double](gkachievement/percentcomplete.md)
+- [var percentComplete: Double](./percentcomplete.md)
   A percentage value that states how far the player has progressed on the achievement.
-- [var isCompleted: Bool](gkachievement/iscompleted.md)
+- [var isCompleted: Bool](./iscompleted.md)
   A Boolean value that states whether the player has completed the achievement.
 
 

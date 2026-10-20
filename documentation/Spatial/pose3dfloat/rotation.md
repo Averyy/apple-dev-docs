@@ -1,7 +1,8 @@
 # rotation
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rotation
 
@@ -18,6 +19,10 @@ The rotation
 
 ```swift
 var rotation: Rotation3DFloat
+```
+
+```c
+SPRotation3DFloat rotation;
 ```
 
 

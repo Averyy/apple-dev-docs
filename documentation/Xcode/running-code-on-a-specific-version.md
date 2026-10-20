@@ -1,6 +1,7 @@
 # Running code on a specific platform or OS version
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Add conditional compilation markers around code that requires a particular family of devices or minimum operating system version to run.
 
@@ -8,7 +9,7 @@ Add conditional compilation markers around code that requires a particular famil
 
 When you invest time developing a new feature for an app, you want to get the maximum value out of the code you write. Creating a new project to support a new platform or operating system version adds unnecessary work, especially if most of your code stays the same. The best solution is to maintain one version of your app that runs on multiple platforms and operating system versions. To achieve this, compile code conditionally for the target platform, or use availability condition checks to run code based on operating system version.
 
-##### Compile Code for a Specific Platform
+##### Compile code for a specific platform
 
 Apple platforms support many of the same technologies, but some features might not be available on every platform. For example, features on iOS devices might not make sense on a macOS devices. To prevent code from compiling on an operating system that doesn’t support the corresponding feature, add a conditional compilation block to specify the target operating system.
 
@@ -64,9 +65,9 @@ If your Swift code relies on a specific Swift package or framework, you can chec
 #endif
 ```
 
-For more information on the compiler control statements and the platforms conditions they support, see [`Compiler Control Statements`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/statements/#Compiler-Control-Statements) in the Swift language documentation.
+For more information on the compiler control statements and the platforms conditions they support, see [Compiler Control Statements](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/statements/#Compiler-Control-Statements) in the Swift language documentation.
 
-##### Require a Minimum Operating System Version for a Feature
+##### Require a minimum operating system version for a feature
 
 Your app’s minimum deployment target defines the range of operating system versions your app supports. Rather than require the latest system software for each app update, target one or two older operating system versions to give people time to transition gradually. When you implement features found only in the most recent operating system version, wrap your code with availability markers.
 
@@ -119,9 +120,9 @@ if (@available(iOS 15, macOS 12, *)) {
 }
 ```
 
-For more information on the availability condition statement, see [`Availability Condition`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/statements/#Availability-Condition) in the Swift language documentation.
+For more information on the availability condition statement, see [Availability Condition](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/statements/#Availability-Condition) in the Swift language documentation.
 
-##### Annotate Declarations in Your Code
+##### Annotate declarations in your code
 
 You can reduce the number of conditional runtime checks your app performs by factoring code with common requirements together and annotating your declarations.
 
@@ -143,17 +144,18 @@ func newMethod() {
 
 With the above annotation in place, calling `newMethod` might still require a compiler control statement, but you remove the need to check again inside the body.
 
-For more information about marking availability in Swift, see [`available`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes/#available).
+For more information about marking availability in Swift, see [available](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes/#available).
 
 ## See Also
 
-- [Customizing the build schemes for a project](customizing-the-build-schemes-for-a-project.md)
+### Build customization
+- [Customizing the build schemes for a project](./customizing-the-build-schemes-for-a-project.md)
   Specify which targets to build, and customize the settings Xcode uses to build, run, test, and profile those targets.
-- [Customizing the build phases of a target](customizing-the-build-phases-of-a-target.md)
+- [Customizing the build phases of a target](./customizing-the-build-phases-of-a-target.md)
   Specify the tasks to perform during a build, including the source files to compile, the scripts to run, and the resources to include in the final product.
-- [Creating build rules for custom file types](creating-build-rules-for-custom-file-types.md)
+- [Creating build rules for custom file types](./creating-build-rules-for-custom-file-types.md)
   Tell Xcode how to build your project’s custom file types, and provide dependency information to optimize the build process for each file.
-- [Running custom scripts during a build](running-custom-scripts-during-a-build.md)
+- [Running custom scripts during a build](./running-custom-scripts-during-a-build.md)
   Execute custom shell scripts during the build process, and run tools or other commands that your project requires.
 
 

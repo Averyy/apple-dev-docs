@@ -1,7 +1,8 @@
 # signatureMissingFidelityType
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The signature is missing the fidelity type, in the testing environment.
 
@@ -18,29 +19,30 @@ static var signatureMissingFidelityType: SKAdTestError.Code { get }
 
 ## See Also
 
-- [static var missingSignature: SKAdTestError.Code](skadtesterror/missingsignature.md)
+### Getting Signature Errors
+- [static var missingSignature: SKAdTestError.Code](./missingsignature.md)
   The signature for the ad is missing, in the testing environment.
-- [static var signatureInvalidKey: SKAdTestError.Code](skadtesterror/signatureinvalidkey.md)
+- [static var signatureInvalidKey: SKAdTestError.Code](./signatureinvalidkey.md)
   The public key isn’t a valid cryptographic key, in the testing environment.
-- [static var signatureInvalidOrder: SKAdTestError.Code](skadtesterror/signatureinvalidorder.md)
+- [static var signatureInvalidOrder: SKAdTestError.Code](./signatureinvalidorder.md)
   The order of the parameters in the signature is invalid, in the testing environment.
-- [static var signatureMissingAdNetworkId: SKAdTestError.Code](skadtesterror/signaturemissingadnetworkid.md)
+- [static var signatureMissingAdNetworkId: SKAdTestError.Code](./signaturemissingadnetworkid.md)
   The signature is missing an ad network identifier, in the testing environment.
-- [static var signatureMissingAppAdamId: SKAdTestError.Code](skadtesterror/signaturemissingappadamid.md)
+- [static var signatureMissingAppAdamId: SKAdTestError.Code](./signaturemissingappadamid.md)
   The signature is missing the app item identifier for the advertised app, in the testing environment.
-- [static var signatureMissingNonce: SKAdTestError.Code](skadtesterror/signaturemissingnonce.md)
+- [static var signatureMissingNonce: SKAdTestError.Code](./signaturemissingnonce.md)
   The signature is missing the nonce, in the testing environment.
-- [static var signatureMissingSourceAppAdamId: SKAdTestError.Code](skadtesterror/signaturemissingsourceappadamid.md)
+- [static var signatureMissingSourceAppAdamId: SKAdTestError.Code](./signaturemissingsourceappadamid.md)
   The signature is missing the source app item identifier, in the testing environment.
-- [static var signatureMissingSourceDomain: SKAdTestError.Code](skadtesterror/signaturemissingsourcedomain.md)
+- [static var signatureMissingSourceDomain: SKAdTestError.Code](./signaturemissingsourcedomain.md)
   The signature is missing the source domain, in the testing environment.
-- [static var signatureMissingSourceIdentifier: SKAdTestError.Code](skadtesterror/signaturemissingsourceidentifier.md)
+- [static var signatureMissingSourceIdentifier: SKAdTestError.Code](./signaturemissingsourceidentifier.md)
   The signature is missing the source identifier, in the testing environment.
-- [static var signatureMissingTimestamp: SKAdTestError.Code](skadtesterror/signaturemissingtimestamp.md)
+- [static var signatureMissingTimestamp: SKAdTestError.Code](./signaturemissingtimestamp.md)
   The signature is missing a timestamp, in the testing environment.
-- [static var signatureUnknownError: SKAdTestError.Code](skadtesterror/signatureunknownerror.md)
+- [static var signatureUnknownError: SKAdTestError.Code](./signatureunknownerror.md)
   An unknown error occurred with the signature in the testing environment.
-- [static var signatureVerificationFailed: SKAdTestError.Code](skadtesterror/signatureverificationfailed.md)
+- [static var signatureVerificationFailed: SKAdTestError.Code](./signatureverificationfailed.md)
   The signature verification failed in the testing environment.
 
 

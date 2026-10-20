@@ -1,7 +1,8 @@
 # VZUSBKeyboardConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A device that defines the configuration for a USB keyboard.
 
@@ -14,34 +15,39 @@ A device that defines the configuration for a USB keyboard.
 class VZUSBKeyboardConfiguration
 ```
 
+```objc
+@interface VZUSBKeyboardConfiguration : VZKeyboardConfiguration
+```
+
 #### Overview
 
-A [`VZVirtualMachineView`](vzvirtualmachineview.md) can use this device to send key events to the VM.
+A [`VZVirtualMachineView`](./vzvirtualmachineview.md) can use this device to send key events to the VM.
 
 ## Topics
 
 ### Creating a USB keyboard
-- [init()](vzusbkeyboardconfiguration/init.md)
+- [init()](./vzusbkeyboardconfiguration/init%28%29.md)
   Creates a USB keyboard configuration.
 
 ## Relationships
 
 ### Inherits From
-- [VZKeyboardConfiguration](vzkeyboardconfiguration.md)
+- [VZKeyboardConfiguration](./vzkeyboardconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZKeyboardConfiguration](vzkeyboardconfiguration.md)
+### Keyboards
+- [class VZKeyboardConfiguration](./vzkeyboardconfiguration.md)
   The base class for a configuring a keyboard.
-- [class VZMacKeyboardConfiguration](vzmackeyboardconfiguration.md)
+- [class VZMacKeyboardConfiguration](./vzmackeyboardconfiguration.md)
   A device that defines the configuration for a Mac keyboard.
 
 

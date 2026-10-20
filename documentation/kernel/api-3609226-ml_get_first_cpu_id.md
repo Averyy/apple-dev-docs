@@ -1,14 +1,15 @@
 # ml_get_first_cpu_id
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned int ml_get_first_cpu_id(unsigned int cluster_id);
 ```
 

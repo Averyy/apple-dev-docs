@@ -1,7 +1,8 @@
 # defaultChoice
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default answer choice associated with the question.
 
@@ -22,11 +23,12 @@ final var defaultChoice: PermissionChoice { get }
 
 This default choice will default to the most restrictive choice.
 
-> **Note**: This default answer choice must also be present in the list of possible choices provided in the question.
+> **Requires**: This default answer choice must also be present in the list of possible choices provided in the question.
 
 ## See Also
 
-- [var choices: [PermissionChoice]](permissionquestion/choices.md)
+### Working with choices
+- [var choices: [PermissionChoice]](./choices.md)
   The possible answer choices associated with this question.
 
 

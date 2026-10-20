@@ -1,7 +1,8 @@
 # withUnsafeTaggedBuffer(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+

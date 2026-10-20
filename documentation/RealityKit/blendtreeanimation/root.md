@@ -1,7 +1,8 @@
 # root
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The first node in a tree of animations.
 
@@ -11,7 +12,7 @@ The first node in a tree of animations.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,19 +22,20 @@ var root: any BlendTreeNode { get set }
 
 #### Discussion
 
-This property defines the node that represents the root of a blend tree. If you assign this property a [`BlendTreeBlendNode`](blendtreeblendnode.md) instance, the root branches for every member you add to the instance’s [`sources`](blendtreeblendnode/sources.md) property.
+This property defines the node that represents the root of a blend tree. If you assign this property a [`BlendTreeBlendNode`](../blendtreeblendnode.md) instance, the root branches for every member you add to the instance’s [`sources`](../blendtreeblendnode/sources.md) property.
 
-If you define a [`BlendTreeSourceNode`](blendtreesourcenode.md) instance to this property, the tree contains a single animation, which blends with no other animations.
+If you define a [`BlendTreeSourceNode`](../blendtreesourcenode.md) instance to this property, the tree contains a single animation, which blends with no other animations.
 
 ## See Also
 
-- [var name: String](blendtreeanimation/name.md)
+### Configuring the animation
+- [var name: String](./name.md)
   A textual name for the animation.
-- [var bindTarget: BindTarget](blendtreeanimation/bindtarget.md)
+- [var bindTarget: BindTarget](./bindtarget.md)
   A textual name that identifies the particular property that animates.
-- [var blendLayer: Int32](blendtreeanimation/blendlayer.md)
+- [var blendLayer: Int32](./blendlayer.md)
   The order in which the framework composites the animation.
-- [var isAdditive: Bool](blendtreeanimation/isadditive.md)
+- [var isAdditive: Bool](./isadditive.md)
   A Boolean value that indicates whether the animation builds on the current state of the target entity or resets the state before running.
 
 

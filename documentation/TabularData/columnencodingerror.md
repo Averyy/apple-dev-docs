@@ -1,7 +1,8 @@
 # ColumnEncodingError
 
 **Framework**: TabularData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A column encoding error.
 
@@ -22,43 +23,44 @@ struct ColumnEncodingError
 
 #### Overview
 
-An error bundles an [`EncodingError`](https://developer.apple.com/documentation/swift/encodingerror) with the row and column that produces the error.
+An error bundles an [`EncodingError`](../Swift/encodingerror.md) with the row and column that produces the error.
 
 ## Topics
 
 ### Creating an Encoding Error
-- [init(columnName: String, rowIndex: Int, encodingError: EncodingError)](columnencodingerror/init(columnname:rowindex:encodingerror:).md)
+- [init(columnName: String, rowIndex: Int, encodingError: EncodingError)](./columnencodingerror/init%28columnname,rowindex,encodingerror%29.md)
   Creates a column encoding error.
 ### Getting Error Information
-- [var columnName: String](columnencodingerror/columnname.md)
+- [var columnName: String](./columnencodingerror/columnname.md)
   The name of the column with the error.
-- [var debugDescription: String](columnencodingerror/debugdescription.md)
+- [var debugDescription: String](./columnencodingerror/debugdescription.md)
   A text representation of the column encoding error suitable for debugging.
-- [var encodingError: EncodingError](columnencodingerror/encodingerror.md)
+- [var encodingError: EncodingError](./columnencodingerror/encodingerror.md)
   The underlying encoding error.
-- [var rowIndex: Int](columnencodingerror/rowindex.md)
+- [var rowIndex: Int](./columnencodingerror/rowindex.md)
   The index of the column’s element with the error.
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Error](../Swift/error.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum JSONReadingError](jsonreadingerror.md)
+### Errors
+- [enum JSONReadingError](./jsonreadingerror.md)
   A JSON reading error.
-- [enum CSVReadingError](csvreadingerror.md)
+- [enum CSVReadingError](./csvreadingerror.md)
   A CSV reading error.
-- [enum CSVWritingError](csvwritingerror.md)
+- [enum CSVWritingError](./csvwritingerror.md)
   A CSV writing error.
-- [struct ColumnDecodingError](columndecodingerror.md)
+- [struct ColumnDecodingError](./columndecodingerror.md)
   A column decoding error.
-- [enum SFrameReadingError](sframereadingerror.md)
+- [enum SFrameReadingError](./sframereadingerror.md)
   An error when reading a Turi Create scalable data frame.
 
 

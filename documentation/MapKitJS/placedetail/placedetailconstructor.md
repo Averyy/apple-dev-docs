@@ -1,7 +1,8 @@
 # new PlaceDetail(parent, place, options)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 A representation of a place detail.
 
@@ -10,7 +11,7 @@ A representation of a place detail.
 
 ## Declaration
 
-```swift
+```
 constructor(
     parent: HTMLElement,
     place?: Place | null,
@@ -20,9 +21,10 @@ constructor(
 
 ## See Also
 
-- [interface PlaceDetailOptions](placedetailoptions.md)
+### Creating and terminating a place detail
+- [interface PlaceDetailOptions](../placedetailoptions.md)
   Options that you may provide when constructing place detail views.
-- [destroy()](placedetail/destroy.md)
+- [destroy()](./destroy.md)
   Terminates a place detail.
 
 

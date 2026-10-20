@@ -1,7 +1,8 @@
 # ManagedApplicationFeedbackCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get app feedback from a managed app on the device.
 
@@ -15,14 +16,14 @@ The command to get app feedback from a managed app on the device.
 
 ## Declaration
 
-```swift
+```
 object ManagedApplicationFeedbackCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object ManagedApplicationFeedbackCommand.Command](managedapplicationfeedbackcommand/command-data.dictionary.md)
+- [object ManagedApplicationFeedbackCommand.Command](./managedapplicationfeedbackcommand/command-data.dictionary.md)
   The command to get app feedback from a managed app on the device.
 
 ## Properties
@@ -32,7 +33,8 @@ object ManagedApplicationFeedbackCommand
 
 ## See Also
 
-- [object ManagedApplicationFeedbackResponse](managedapplicationfeedbackresponse.md)
+### Commands and responses
+- [object ManagedApplicationFeedbackResponse](./managedapplicationfeedbackresponse.md)
   A response from the device after it processes the command to get app feedback from a managed app on the device.
 
 

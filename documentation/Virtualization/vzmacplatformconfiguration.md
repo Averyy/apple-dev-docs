@@ -1,7 +1,8 @@
 # VZMacPlatformConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The platform configuration for booting macOS on Apple silicon.
 
@@ -14,61 +15,66 @@ The platform configuration for booting macOS on Apple silicon.
 class VZMacPlatformConfiguration
 ```
 
+```objc
+@interface VZMacPlatformConfiguration : VZPlatformConfiguration
+```
+
 ## Mentions
 
-- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
+- [Installing macOS on a Virtual Machine](./installing-macos-on-a-virtual-machine.md)
 
 #### Overview
 
-When creating a VM, the [`hardwareModel`](vzmacplatformconfiguration/hardwaremodel.md) and [`auxiliaryStorage`](vzmacplatformconfiguration/auxiliarystorage.md) depend on the restore image that you use to install macOS.
+When creating a VM, the [`hardwareModel`](./vzmacplatformconfiguration/hardwaremodel.md) and [`auxiliaryStorage`](./vzmacplatformconfiguration/auxiliarystorage.md) depend on the restore image that you use to install macOS.
 
-To choose the hardware model, start from `VZMacOSRestoreImage`.[`mostFeaturefulSupportedConfiguration`](vzmacosrestoreimage/mostfeaturefulsupportedconfiguration.md) to get a supported configuration, then use its `VZMacOSConfigurationRequirements`.[`hardwareModel`](vzmacosconfigurationrequirements/hardwaremodel.md) property to get the hardware model.
+To choose the hardware model, start from `VZMacOSRestoreImage`.[`mostFeaturefulSupportedConfiguration`](./vzmacosrestoreimage/mostfeaturefulsupportedconfiguration.md) to get a supported configuration, then use its `VZMacOSConfigurationRequirements`.[`hardwareModel`](./vzmacosconfigurationrequirements/hardwaremodel.md) property to get the hardware model.
 
-Use the hardware model to set up `VZMacPlatformConfiguration` and to initialize a new auxiliary storage with [`init(creatingStorageAt:hardwareModel:options:)`](vzmacauxiliarystorage/init(creatingstorageat:hardwaremodel:options:).md).
+Use the hardware model to set up `VZMacPlatformConfiguration` and to initialize a new auxiliary storage with [`init(creatingStorageAt:hardwareModel:options:)`](./vzmacauxiliarystorage/init%28creatingstorageat,hardwaremodel,options%29.md).
 
-When you save a VM to disk and load it again, you must restore the [`hardwareModel`](vzmacosconfigurationrequirements/hardwaremodel.md), [`machineIdentifier`](vzmacplatformconfiguration/machineidentifier.md) and [`auxiliaryStorage`](vzmacplatformconfiguration/auxiliarystorage.md) properties to their original values.
+When you save a VM to disk and load it again, you must restore the [`hardwareModel`](./vzmacosconfigurationrequirements/hardwaremodel.md), [`machineIdentifier`](./vzmacplatformconfiguration/machineidentifier.md) and [`auxiliaryStorage`](./vzmacplatformconfiguration/auxiliarystorage.md) properties to their original values.
 
 If you create multiple VMs from the same configuration, each should have a unique `auxiliaryStorage` and `machineIdentifier`.
 
 ## Topics
 
 ### Creating a platform configuration
-- [init()](vzmacplatformconfiguration/init.md)
+- [init()](./vzmacplatformconfiguration/init%28%29.md)
   Creates a new Mac platform configuration.
 ### Getting platform properties
-- [var auxiliaryStorage: VZMacAuxiliaryStorage?](vzmacplatformconfiguration/auxiliarystorage.md)
+- [var auxiliaryStorage: VZMacAuxiliaryStorage?](./vzmacplatformconfiguration/auxiliarystorage.md)
   The Mac auxiliary storage.
-- [var hardwareModel: VZMacHardwareModel](vzmacplatformconfiguration/hardwaremodel.md)
+- [var hardwareModel: VZMacHardwareModel](./vzmacplatformconfiguration/hardwaremodel.md)
   The Mac hardware model.
-- [var machineIdentifier: VZMacMachineIdentifier](vzmacplatformconfiguration/machineidentifier.md)
+- [var machineIdentifier: VZMacMachineIdentifier](./vzmacplatformconfiguration/machineidentifier.md)
   The Mac machine identifier.
 
 ## Relationships
 
 ### Inherits From
-- [VZPlatformConfiguration](vzplatformconfiguration.md)
+- [VZPlatformConfiguration](./vzplatformconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtualMachineConfiguration](vzvirtualmachineconfiguration.md)
+### Platform components
+- [class VZVirtualMachineConfiguration](./vzvirtualmachineconfiguration.md)
   The environment attributes and list of devices to use during the configuration of macOS or Linux VMs.
-- [class VZMacOSVirtualMachineStartOptions](vzmacosvirtualmachinestartoptions.md)
+- [class VZMacOSVirtualMachineStartOptions](./vzmacosvirtualmachinestartoptions.md)
   A class that describes start options for macOS VMs.
-- [class VZPlatformConfiguration](vzplatformconfiguration.md)
+- [class VZPlatformConfiguration](./vzplatformconfiguration.md)
   The base class for a platform configuration.
-- [class VZMacHardwareModel](vzmachardwaremodel.md)
+- [class VZMacHardwareModel](./vzmachardwaremodel.md)
   A specification for the hardware elements and configurations present in a particular Mac hardware model.
-- [class VZMacMachineIdentifier](vzmacmachineidentifier.md)
+- [class VZMacMachineIdentifier](./vzmacmachineidentifier.md)
   A unique identifier for a VM.
-- [class VZMacAuxiliaryStorage](vzmacauxiliarystorage.md)
+- [class VZMacAuxiliaryStorage](./vzmacauxiliarystorage.md)
   An object that contains information the boot loader needs for booting macOS as a guest operating system.
 
 

@@ -1,7 +1,8 @@
 # CSSearchQuery.Results
 
 **Framework**: Core Spotlight  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence that contains the results that match the query string.
 
@@ -20,26 +21,27 @@ struct Results
 
 #### Discussion
 
-A `CSSearchQuery/Results-swift.struct` structure contains the results of a query. Fetch this structure from the [`results`](cssearchquery/results-swift.property.md) property of your query object to execute the query automatically and begin the delivery of the results. Use each instance of the structure to get the details for a single result.
+A `CSSearchQuery/Results-swift.struct` structure contains the results of a query. Fetch this structure from the [`results`](./results-swift.property.md) property of your query object to execute the query automatically and begin the delivery of the results. Use each instance of the structure to get the details for a single result.
 
-For more information about how to use this structure, see the [`results`](cssearchquery/results-swift.property.md) property.
+For more information about how to use this structure, see the [`results`](./results-swift.property.md) property.
 
 ## Topics
 
 ### Structures
-- [CSSearchQuery.Results.Item](cssearchquery/results-swift.struct/item.md)
-- [CSSearchQuery.Results.Iterator](cssearchquery/results-swift.struct/iterator.md)
+- [CSSearchQuery.Results.Item](./results-swift.struct/item.md)
+- [CSSearchQuery.Results.Iterator](./results-swift.struct/iterator.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var results: CSSearchQuery.Results](cssearchquery/results-swift.property.md)
+### Executing the query automatically
+- [var results: CSSearchQuery.Results](./results-swift.property.md)
   The results that match the current query string.
 
 

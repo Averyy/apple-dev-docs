@@ -1,17 +1,22 @@
 # windowController
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The window’s window controller.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 weak var windowController: NSWindowController? { get set }
+```
+
+```objc
+@property (weak, nullable) NSWindowController * windowController;
 ```
 
 

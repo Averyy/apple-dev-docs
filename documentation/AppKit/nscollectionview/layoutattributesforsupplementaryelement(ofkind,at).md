@@ -1,7 +1,8 @@
 # layoutAttributesForSupplementaryElement(ofKind:at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the layout information for the supplementary view at the specified index path.
 
@@ -12,6 +13,10 @@ Returns the layout information for the supplementary view at the specified index
 
 ```swift
 func layoutAttributesForSupplementaryElement(ofKind kind: NSCollectionView.SupplementaryElementKind, at indexPath: IndexPath) -> NSCollectionViewLayoutAttributes?
+```
+
+```objc
+- (NSCollectionViewLayoutAttributes *) layoutAttributesForSupplementaryElementOfKind:(NSCollectionViewSupplementaryElementKind) kind atIndexPath:(NSIndexPath *) indexPath;
 ```
 
 #### Return Value
@@ -29,7 +34,8 @@ This method updates the layout information as needed before returning the specif
 
 ## See Also
 
-- [func layoutAttributesForItem(at: IndexPath) -> NSCollectionViewLayoutAttributes?](nscollectionview/layoutattributesforitem(at:).md)
+### Getting Layout Information
+- [func layoutAttributesForItem(at: IndexPath) -> NSCollectionViewLayoutAttributes?](./layoutattributesforitem%28at%29.md)
   Returns the layout information for the item at the specified index path.
 
 

@@ -1,7 +1,8 @@
 # init(identifier:name:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new configuration with an identifier and a name.
 

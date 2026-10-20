@@ -1,14 +1,15 @@
 # supportsPointerInteraction
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the device supports pointer interaction.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 - Xcode 16.3+
 
 ## Declaration
@@ -17,11 +18,16 @@ A Boolean value that indicates if the device supports pointer interaction.
 var supportsPointerInteraction: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL supportsPointerInteraction;
+```
+
 ## See Also
 
-- [class var shared: XCUIDevice](xcuidevice/shared.md)
+### Accessing the current device
+- [class var shared: XCUIDevice](./shared.md)
   The current device.
-- [var supportsHandGestures: Bool](xcuidevice/supportshandgestures.md)
+- [var supportsHandGestures: Bool](./supportshandgestures.md)
   A Boolean value that indicates if the device supports hand gestures.
 
 

@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var threadNotFoundErr: Int](threadnotfounderr.md)
-- [var threadProtocolErr: Int](threadprotocolerr.md)
-- [var threadTooManyReqsErr: Int](threadtoomanyreqserr.md)
+- [var threadNotFoundErr: Int](../../threadnotfounderr.md)
+- [var threadProtocolErr: Int](../../threadprotocolerr.md)
+- [var threadTooManyReqsErr: Int](../../threadtoomanyreqserr.md)
 
 
 ---

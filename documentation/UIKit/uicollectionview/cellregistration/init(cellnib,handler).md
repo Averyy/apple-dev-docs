@@ -1,7 +1,8 @@
 # init(cellNib:handler:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a cell registration with the specified registration handler and nib file.
 
@@ -10,7 +11,9 @@ Creates a cell registration with the specified registration handler and nib file
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS 1.0+
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Loading Interface Builder products will not be supported in a future version of visionOS.
 
 ## Declaration
 
@@ -20,9 +23,10 @@ init(cellNib: UINib, handler: @escaping UICollectionView.CellRegistration<Cell, 
 
 ## See Also
 
-- [init(handler: UICollectionView.CellRegistration<Cell, Item>.Handler)](uicollectionview/cellregistration/init(handler:).md)
+### Creating a cell registration
+- [init(handler: UICollectionView.CellRegistration<Cell, Item>.Handler)](./init%28handler%29.md)
   Creates a cell registration with the specified registration handler.
-- [UICollectionView.CellRegistration.Handler](uicollectionview/cellregistration/handler.md)
+- [UICollectionView.CellRegistration.Handler](./handler.md)
   A closure that handles the cell registration and configuration.
 
 

@@ -1,7 +1,8 @@
 # font
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The font for the badge text.
 
@@ -16,13 +17,14 @@ var font: UIFont { get set }
 
 ## See Also
 
-- [var color: UIColor](tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.struct/color.md)
+### Customizing Content
+- [var color: UIColor](./color.md)
   The color of the badge text.
-- [var backgroundColor: UIColor](tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.struct/backgroundcolor.md)
+- [var backgroundColor: UIColor](./backgroundcolor.md)
   The background tint color of the badge.
-- [var transform: TVMediaItemContentConfiguration.TextProperties.TextTransform](tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.struct/transform.md)
+- [var transform: TVMediaItemContentConfiguration.TextProperties.TextTransform](./transform.md)
   The transform to apply to the text before displaying it.
-- [TVMediaItemContentConfiguration.TextProperties.TextTransform](tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform.md)
+- [TVMediaItemContentConfiguration.TextProperties.TextTransform](../textproperties-swift.struct/texttransform.md)
   Constants that specify the transform to apply to the text.
 
 

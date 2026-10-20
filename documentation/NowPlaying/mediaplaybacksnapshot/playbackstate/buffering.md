@@ -1,7 +1,8 @@
 # MediaPlaybackSnapshot.PlaybackState.buffering
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Playback is buffering content.
 

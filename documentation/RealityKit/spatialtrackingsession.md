@@ -1,7 +1,8 @@
 # SpatialTrackingSession
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that incorporates spatial tracking capabilities into your RealityKit apps.
 
@@ -18,17 +19,17 @@ final class SpatialTrackingSession
 
 ## Mentions
 
-- [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
+- [Implementing scene understanding and reconstruction in your RealityKit app](./realitykit-scene-understanding.md)
 
 #### Overview
 
-`SpatialTrackingSession` helps you manage spatial tracking capabilities, such as world and hand tracking, in your RealityKit app. You can decide which AR data you need and how you want to use them by running a corresponding [`SpatialTrackingSession.Configuration`](spatialtrackingsession/configuration.md).
+`SpatialTrackingSession` helps you manage spatial tracking capabilities, such as world and hand tracking, in your RealityKit app. You can decide which AR data you need and how you want to use them by running a corresponding [`SpatialTrackingSession.Configuration`](./spatialtrackingsession/configuration.md).
 
 You can specify the following spatial tracking capabilities in a configuration:
 
 - The anchoring targets you want RealityKit to track, such as planes, images, and hands.
 - In iOS, the scene-understanding data that system behaviors have access to, such as shadows, occlusion, and physics.
-- In iOS, the camera feed (front or back) that [`spatialTracking`](realityviewcamera/spatialtracking.md) uses.
+- In iOS, the camera feed (front or back) that [`spatialTracking`](./realityviewcamera/spatialtracking.md) uses.
 
 The following is an example of how to enable the camera, implement plane anchoring, use scene-understanding data for shadow and occlusion, and use the back camera in iOS:
 
@@ -43,7 +44,7 @@ await session.run(configuration)
 
 `SpatialTrackingSession` configures ARKit for you based on the configuration you pass in. It also checks whether a device supports certain requested capabilities, and requests user authorizations if needed.
 
-As an asynchronous function call, [`run(_:)`](spatialtrackingsession/run(_:).md) returns an optional [`SpatialTrackingSession.UnavailableCapabilities`](spatialtrackingsession/unavailablecapabilities.md), which contains both unsupported capabilities and unauthorized capabilities. This can help you to handle errors gracefully, such as informing someone to turn on the relevant permissions or reduce the feature set. Here’s an example in iOS:
+As an asynchronous function call, [`run(_:)`](./spatialtrackingsession/run%28_%29.md) returns an optional [`SpatialTrackingSession.UnavailableCapabilities`](./spatialtrackingsession/unavailablecapabilities.md), which contains both unsupported capabilities and unauthorized capabilities. This can help you to handle errors gracefully, such as informing someone to turn on the relevant permissions or reduce the feature set. Here’s an example in iOS:
 
 ```swift
 let configuration = SpatialTrackingSession.Configuration(
@@ -67,20 +68,22 @@ if let unavailableCapabilities = await session.run(configuration) {
 
 After running `SpatialTrackingSession`, RealityKit apps start using the AR data in the following ways:
 
-- Anchor tracking starts to work for the chosen capabilities as follows: - In visionOS, you can access the transform information of the entities with [`AnchoringComponent`](anchoringcomponent.md).
-- In iOS, entities with [`AnchoringComponent`](anchoringcomponent.md) start to get the real-world anchors to anchor onto.
-- System behavior starts to use scene-understanding data. In the example above, virtual contents start to cast shadows onto real-world meshes, and experience occlusion from those meshes.
-- Setting [`camera`](realityviewcameracontent/camera.md) to `.spatialTracking` starts to show the configured camera feed as a [`RealityView`](realityview.md) background.
+- Anchor tracking starts to work for the chosen capabilities as follows:
 
-To modify the configuration, run `SpatialTrackingSession` again with the new configuration. To stop `SpatialTrackingSession`, you can call [`stop()`](spatialtrackingsession/stop().md).
+  - In visionOS, you can access the transform information of the entities with [`AnchoringComponent`](./anchoringcomponent.md).
+  - In iOS, entities with [`AnchoringComponent`](./anchoringcomponent.md) start to get the real-world anchors to anchor onto.
+- System behavior starts to use scene-understanding data. In the example above, virtual contents start to cast shadows onto real-world meshes, and experience occlusion from those meshes.
+- Setting [`camera`](./realityviewcameracontent/camera.md) to `.spatialTracking` starts to show the configured camera feed as a [`RealityView`](./realityview.md) background.
+
+To modify the configuration, run `SpatialTrackingSession` again with the new configuration. To stop `SpatialTrackingSession`, you can call [`stop()`](./spatialtrackingsession/stop%28%29.md).
 
 > **Note**: RealityKit stops `SpatialTrackingSession` automatically when it goes out of scope and deinitializes.
 
-##### Other Methods for Incorporating Ar Content in Your Apps
+##### Other methods for incorporating AR content in your apps
 
 Although `SpatialTrackingSession` offers you an easy way to configure AR capabilities in your app, there are other options available.
 
-###### Use the Default Spatial Tracking Session
+###### Use the default spatial tracking session
 
 In iOS, if you don’t set up `SpatialTrackingSession` manually, RealityKit runs the default session with the following configuration:
 
@@ -91,57 +94,58 @@ SpatialTrackingSession.Configuration(
     camera: .back)
 ```
 
-###### Use an Anchor Entity Alone in Visionos
+###### Use an anchor entity alone in visionOS
 
-In visionOS, if you don’t set up a spatial tracking session manually, the system anchors your [`AnchorEntity`](anchorentity.md) in a privacy-preserving manner. In other words, the app doesn’t get read access to any transform information from the [`AnchorEntity`](anchorentity.md).
+In visionOS, if you don’t set up a spatial tracking session manually, the system anchors your [`AnchorEntity`](./anchorentity.md) in a privacy-preserving manner. In other words, the app doesn’t get read access to any transform information from the [`AnchorEntity`](./anchorentity.md).
 
 The app requests permission to read transform information when you set up a spatial tracking session.
 
-> ❗ **Important**: In visionOS, avoid applying a transform that a spatial tracking session provides to an [`AnchorEntity`](anchorentity.md) instance to an entity because it makes the entity lag behind the anchor by one frame.
+> ❗ **Important**: In visionOS, avoid applying a transform that a spatial tracking session provides to an [`AnchorEntity`](./anchorentity.md) instance to an entity because it makes the entity lag behind the anchor by one frame.
 
-You can avoid the one frame lag when rendering an entity with the transform of an [`AnchorEntity`](anchorentity.md) by adding it as a descendent of that anchor entity. Alternatively, you can add a [`ModelComponent`](modelcomponent.md) instance that contains the relevant content for rendering directly to the anchor entity.
+You can avoid the one frame lag when rendering an entity with the transform of an [`AnchorEntity`](./anchorentity.md) by adding it as a descendent of that anchor entity. Alternatively, you can add a [`ModelComponent`](./modelcomponent.md) instance that contains the relevant content for rendering directly to the anchor entity.
 
 > 💡 **Tip**: Only apply the transform from a spatial tracking session instance to non-rendering purposes, such as collision detection or custom gestures.
 
-###### Use an Arkit Session for Tracking
+###### Use an ARKit session for tracking
 
-You can set up an ARKit session manually and receive an anchor transform directly from ARKit by subscribing to the ARKit updates. You can then set the transform of your entities manually. This gives you full access to the anchor properties, but requires more setup on your part. With `SpatialTrackingSession`, RealityKit handles that for you and maintains your [`AnchorEntity`](anchorentity.md) alignment to the target anchor. In iOS, you manage and run the ARKit session if you run `SpatialTrackingSession` with [`run(_:session:arConfiguration:)`](spatialtrackingsession/run(_:session:arconfiguration:).md).
+You can set up an ARKit session manually and receive an anchor transform directly from ARKit by subscribing to the ARKit updates. You can then set the transform of your entities manually. This gives you full access to the anchor properties, but requires more setup on your part. With `SpatialTrackingSession`, RealityKit handles that for you and maintains your [`AnchorEntity`](./anchorentity.md) alignment to the target anchor. In iOS, you manage and run the ARKit session if you run `SpatialTrackingSession` with [`run(_:session:arConfiguration:)`](./spatialtrackingsession/run%28_,session,arconfiguration%29.md).
 
 ## Topics
 
 ### Structures
-- [SpatialTrackingSession.Configuration](spatialtrackingsession/configuration.md)
+- [SpatialTrackingSession.Configuration](./spatialtrackingsession/configuration.md)
   A type for configuring the spatial tracking session.
-- [SpatialTrackingSession.UnavailableCapabilities](spatialtrackingsession/unavailablecapabilities.md)
+- [SpatialTrackingSession.UnavailableCapabilities](./spatialtrackingsession/unavailablecapabilities.md)
   A type that contains the unavailable capabilities of the current spatial tracking session.
 ### Initializers
-- [init()](spatialtrackingsession/init.md)
+- [init()](./spatialtrackingsession/init%28%29.md)
   Creates a spatial tracking session with default settings.
 ### Instance Methods
-- [func run(SpatialTrackingSession.Configuration) async -> SpatialTrackingSession.UnavailableCapabilities?](spatialtrackingsession/run(_:).md)
+- [func run(SpatialTrackingSession.Configuration) async -> SpatialTrackingSession.UnavailableCapabilities?](./spatialtrackingsession/run%28_%29.md)
   Runs the spatial tracking session with the specified configuration.
-- [func run(SpatialTrackingSession.Configuration, session: ARSession, arConfiguration: ARConfiguration) async -> SpatialTrackingSession.UnavailableCapabilities?](spatialtrackingsession/run(_:session:arconfiguration:).md)
+- [func run(SpatialTrackingSession.Configuration, session: ARSession, arConfiguration: ARConfiguration) async -> SpatialTrackingSession.UnavailableCapabilities?](./spatialtrackingsession/run%28_,session,arconfiguration%29.md)
   Runs the spatial tracking session with a spatial tracking configuration, an AR session, and an AR configuration.
-- [func stop() async](spatialtrackingsession/stop.md)
+- [func stop() async](./spatialtrackingsession/stop%28%29.md)
   Stops the current spatial tracking session.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [SpatialTrackingSession.Configuration](spatialtrackingsession/configuration.md)
+### Spatial tracking
+- [SpatialTrackingSession.Configuration](./spatialtrackingsession/configuration.md)
   A type for configuring the spatial tracking session.
-- [SpatialTrackingSession.Configuration.AnchorCapability](spatialtrackingsession/configuration/anchorcapability.md)
+- [SpatialTrackingSession.Configuration.AnchorCapability](./spatialtrackingsession/configuration/anchorcapability.md)
   A type that defines various anchor tracking capabilities.
-- [SpatialTrackingSession.Configuration.SceneUnderstandingCapability](spatialtrackingsession/configuration/sceneunderstandingcapability.md)
+- [SpatialTrackingSession.Configuration.SceneUnderstandingCapability](./spatialtrackingsession/configuration/sceneunderstandingcapability.md)
   Defines how system behaviors use scene understanding.
-- [SpatialTrackingSession.Configuration.Camera](spatialtrackingsession/configuration/camera.md)
+- [SpatialTrackingSession.Configuration.Camera](./spatialtrackingsession/configuration/camera.md)
   Defines the camera feed the RealityView renders.
-- [SpatialTrackingSession.UnavailableCapabilities](spatialtrackingsession/unavailablecapabilities.md)
+- [SpatialTrackingSession.UnavailableCapabilities](./spatialtrackingsession/unavailablecapabilities.md)
   A type that contains the unavailable capabilities of the current spatial tracking session.
 
 

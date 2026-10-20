@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+
@@ -16,6 +17,8 @@
 ```swift
 init?(from dictionaryType: MLDataValue.DictionaryType)
 ```
+
+Available when `Key` conforms to `MLDataValueConvertible`, `Key` conforms to `Hashable`, and `Value` conforms to `MLDataValueConvertible`.
 
 
 ---

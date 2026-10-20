@@ -1,7 +1,8 @@
 # useTexture
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the shader samples a texture from the argument table and multiplies it with the surface output.
 
@@ -19,7 +20,8 @@ var useTexture: Bool { get set }
 
 ## See Also
 
-- [var useTintColor: Bool](lowlevelmaterialresource/simplesurfacedescriptor/usetintcolor.md)
+### Configuring color sources
+- [var useTintColor: Bool](./usetintcolor.md)
   A Boolean value that indicates whether the shader reads a tint color from the argument table and multiplies it with the surface output.
 
 

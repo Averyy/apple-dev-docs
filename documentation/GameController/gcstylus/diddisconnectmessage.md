@@ -1,7 +1,8 @@
 # GCStylus.DidDisconnectMessage
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message that posts after a stylus accessory disconnects from the device.
 
@@ -18,7 +19,7 @@ struct DidDisconnectMessage
 
 Use the `.didDisconnect` identifier with `NotificationCenter` to listen for this message.
 
-```None
+```
 let observation = NotificationCenter.default.addObserver(of: GCStylus.self, for: .didDisconnect) { message in
    let stylus = message.stylus
 }
@@ -27,16 +28,16 @@ let observation = NotificationCenter.default.addObserver(of: GCStylus.self, for:
 ## Topics
 
 ### Initializers
-- [init(stylus: GCStylus)](gcstylus/diddisconnectmessage/init(stylus:).md)
+- [init(stylus: GCStylus)](./diddisconnectmessage/init%28stylus%29.md)
 ### Instance Properties
-- [var stylus: GCStylus](gcstylus/diddisconnectmessage/stylus.md)
+- [var stylus: GCStylus](./diddisconnectmessage/stylus.md)
   The stylus object that disconnected from the device.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

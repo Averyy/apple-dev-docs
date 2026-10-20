@@ -1,7 +1,8 @@
 # machineLearning
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A tensor context that applies to machine learning encoders.
 
@@ -19,9 +20,13 @@ A tensor context that applies to machine learning encoders.
 static var machineLearning: MTLTensorUsage { get }
 ```
 
+```c
+MTLTensorUsageMachineLearning
+```
+
 #### Discussion
 
-You can use tensors with this context in [`MTL4MachineLearningCommandEncoder`](mtl4machinelearningcommandencoder.md) instances.
+You can use tensors with this context in [`MTL4MachineLearningCommandEncoder`](../mtl4machinelearningcommandencoder.md) instances.
 
 
 ---

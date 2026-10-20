@@ -1,7 +1,8 @@
 # allTransactions
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All transactions associated with the generic product ID.
 
@@ -22,9 +23,10 @@ var allTransactions: Transaction.Transactions { get }
 
 ## See Also
 
-- [var currentEntitlements: Transaction.Transactions](advancedcommerceproduct/currententitlements.md)
+### Getting transactions and entitlements
+- [var currentEntitlements: Transaction.Transactions](./currententitlements.md)
   The transactions that entitle the customer to Advanced Commerce Items purchased using the generic product ID.
-- [var latestTransaction: VerificationResult<Transaction>?](advancedcommerceproduct/latesttransaction.md)
+- [var latestTransaction: VerificationResult<Transaction>?](./latesttransaction.md)
   The most recent transaction associated with the generic product ID, if it exists.
 
 

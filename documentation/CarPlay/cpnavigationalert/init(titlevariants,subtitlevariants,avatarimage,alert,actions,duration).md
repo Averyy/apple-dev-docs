@@ -1,7 +1,8 @@
 # init(titleVariants:subtitleVariants:avatarImage:alert:actions:duration:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a @c CPNavigationAlert with a title, image, an array of actions, and duration.
 
@@ -14,6 +15,10 @@ Initialize a @c CPNavigationAlert with a title, image, an array of actions, and 
 
 ```swift
 init(titleVariants: [String], subtitleVariants: [String], avatarImage: UIImage?, alert alertImage: UIImage?, actions: [CPAlertAction], duration: TimeInterval)
+```
+
+```objc
+- (instancetype) initWithTitleVariants:(NSArray<NSString *> *) titleVariants subtitleVariants:(NSArray<NSString *> *) subtitleVariants avatarImage:(UIImage *) avatarImage alertImage:(UIImage *) alertImage actions:(NSArray<CPAlertAction *> *) actions duration:(NSTimeInterval) duration;
 ```
 
 #### Return Value

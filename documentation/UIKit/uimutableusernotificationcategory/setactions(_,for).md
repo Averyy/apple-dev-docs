@@ -1,19 +1,26 @@
 # setActions(_:for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the actions to display for different alert styles.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
+- iOS 8.0+ - Deprecated in 10.0
+- iPadOS 8.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UIMutableUserNotificationCategory`](../uimutableusernotificationcategory.md).
 
 ## Declaration
 
 ```swift
 func setActions(_ actions: [UIUserNotificationAction]?, for context: UIUserNotificationActionContext)
+```
+
+```objc
+- (void) setActions:(NSArray<UIUserNotificationAction *> *) actions forContext:(UIUserNotificationActionContext) context;
 ```
 
 #### Discussion
@@ -22,12 +29,13 @@ Use this method to set or change the actions associated with a specific context.
 
 ## Parameters
 
-- `actions`: An array of [`UIUserNotificationAction`](uiusernotificationaction.md) objects representing the actions to display for the given context. When displaying the notification to the user, the system displays the action buttons using the same order as the items in this array. If you specify `nil` or an empty array, this method removes the actions for the specified context.
-- `context`: The context in which the alert is displayed. For a list of possible values, see [`UIUserNotificationActionContext`](uiusernotificationactioncontext.md).
+- `actions`: An array of [`UIUserNotificationAction`](../uiusernotificationaction.md) objects representing the actions to display for the given context. When displaying the notification to the user, the system displays the action buttons using the same order as the items in this array. If you specify `nil` or an empty array, this method removes the actions for the specified context.
+- `context`: The context in which the alert is displayed. For a list of possible values, see [`UIUserNotificationActionContext`](../uiusernotificationactioncontext.md).
 
 ## See Also
 
-- [var identifier: String?](uimutableusernotificationcategory/identifier.md)
+### Modifying the action settings
+- [var identifier: String?](./identifier.md)
   The name of the action group.
 
 

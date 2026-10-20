@@ -1,7 +1,8 @@
 # UIPointerAccessory
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Constants that describe accessories to display alongside the primary pointer.
 
@@ -18,46 +19,51 @@ Constants that describe accessories to display alongside the primary pointer.
 class UIPointerAccessory
 ```
 
+```objc
+@interface UIPointerAccessory : NSObject
+```
+
 ## Topics
 
 ### Creating a pointer accessory
-- [convenience init(UIPointerShape, position: UIPointerAccessory.Position)](uipointeraccessory/init(_:position:).md)
+- [convenience init(UIPointerShape, position: UIPointerAccessory.Position)](./uipointeraccessory/init%28_,position%29.md)
   Creates a pointer accessory with the specified shape and position.
-- [class func arrow(UIPointerAccessory.Position) -> Self](uipointeraccessory/arrow(_:).md)
+- [class func arrow(UIPointerAccessory.Position) -> Self](./uipointeraccessory/arrow%28_%29.md)
   Creates a pointer accessory with an arrow shape at the specified position.
 ### Matching the angle
-- [var orientationMatchesAngle: Bool](uipointeraccessory/orientationmatchesangle.md)
+- [var orientationMatchesAngle: Bool](./uipointeraccessory/orientationmatchesangle.md)
   A Boolean value that indicates whether the system rotates the accessory to match its angle.
 ### Getting the shape
-- [var shape: UIPointerShape](uipointeraccessory/shape-8pp0a.md)
+- [var shape: UIPointerShape](./uipointeraccessory/shape-8pp0a.md)
   The shape of the accessory.
 ### Getting the position
-- [var position: __UIPointerAccessoryPosition](uipointeraccessory/position-swift.property.md)
+- [var position: __UIPointerAccessoryPosition](./uipointeraccessory/position-swift.property.md)
   The position of the accessory relative to the primary pointer.
-- [UIPointerAccessory.Position](uipointeraccessory/position-swift.struct.md)
+- [UIPointerAccessory.Position](./uipointeraccessory/position-swift.struct.md)
   A structure that specifies the position of the accessory relative to the primary pointer.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIPointerStyle](uipointerstyle.md)
+### Pointer styles
+- [class UIPointerStyle](./uipointerstyle.md)
   An object that defines the pointer shape and effect.
-- [enum UIPointerShape](uipointershape-swift.enum.md)
+- [enum UIPointerShape](./uipointershape-swift.enum.md)
   An object that defines the shape of custom pointers.
-- [enum UIPointerEffect](uipointereffect-swift.enum.md)
+- [enum UIPointerEffect](./uipointereffect-swift.enum.md)
   An effect that alters a view’s appearance when a pointer enters the current region.
 
 

@@ -1,7 +1,8 @@
 # Metadata header atom ('mhdr')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that holds the integer value for the next unique item identifier to assign.
 
@@ -22,22 +23,23 @@ The metadata header atom is a full atom with an atom type of `‘mhdr’`.
 ## Topics
 
 ### Data fields
-- [Size](metadata_header_atom/size.md)
+- [Size](./metadata_header_atom/size.md)
   A 32-bit unsigned integer that indicates the size in bytes of the atom structure.
-- [Type](metadata_header_atom/type.md)
+- [Type](./metadata_header_atom/type.md)
   A 32-bit unsigned integer value.
-- [Version](metadata_header_atom/version.md)
+- [Version](./metadata_header_atom/version.md)
   One byte.
-- [Flags](metadata_header_atom/flags.md)
+- [Flags](./metadata_header_atom/flags.md)
   Three bytes.
-- [nextItemID](metadata_header_atom/nextitemid.md)
+- [nextItemID](./metadata_header_atom/nextitemid.md)
   A 32-bit unsigned integer indicating the value to use for the item ID of the next item created or assigned an item ID.
 
 ## See Also
 
-- [Metadata atom ('meta')](metadata_atom.md)
+### Metadata structure
+- [Metadata atom ('meta')](./metadata_atom.md)
   An atom that is the container for carrying metadata.
-- [Metadata handler atom ('hdlr')](metadata_handler_atom.md)
+- [Metadata handler atom ('hdlr')](./metadata_handler_atom.md)
   An atom that defines the structure used for all types of metadata stored within the metadata atom.
 
 

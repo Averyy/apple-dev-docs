@@ -1,7 +1,8 @@
 # submitTaskRequest(_:completionHandler:)
 
 **Framework**: Background Tasks  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Submits a background task request to be scheduled with a completion handler.
 
@@ -15,7 +16,15 @@ Submits a background task request to be scheduled with a completion handler.
 ## Declaration
 
 ```swift
+func submitTaskRequest(_ taskRequest: BGTaskRequest, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func submitTaskRequest(_ taskRequest: BGTaskRequest) async throws
+```
+
+```objc
+- (void) submitTaskRequest:(BGTaskRequest *) taskRequest completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -24,26 +33,28 @@ This method asynchronously submits the task request and invokes the completion h
 
 Submitting a task request for an unexecuted task that’s already in the queue replaces the previous task request.
 
-There can be a total of 1 refresh task and 10 processing tasks scheduled at any time. Trying to schedule more tasks will result in an error with code [`BGTaskScheduler.Error.Code.tooManyPendingTaskRequests`](bgtaskscheduler/error/code/toomanypendingtaskrequests.md).
+There can be a total of 1 refresh task and 10 processing tasks scheduled at any time. Trying to schedule more tasks will result in an error with code [`BGTaskScheduler.Error.Code.tooManyPendingTaskRequests`](./error/code/toomanypendingtaskrequests.md).
 
 Common errors include:
 
-- [`BGTaskScheduler.Error.Code.notPermitted`](bgtaskscheduler/error/code/notpermitted.md): Task identifier not permitted or unsupported resources requested
-- [`BGTaskScheduler.Error.Code.tooManyPendingTaskRequests`](bgtaskscheduler/error/code/toomanypendingtaskrequests.md): Too many pending tasks of this type
-- [`BGTaskScheduler.Error.Code.unavailable`](bgtaskscheduler/error/code/unavailable.md): Background refresh disabled or app not permitted
-- [`BGTaskScheduler.Error.Code.immediateRunIneligible`](bgtaskscheduler/error/code/immediaterunineligible.md): Immediate run not eligible due to system conditions
+- [`BGTaskScheduler.Error.Code.notPermitted`](./error/code/notpermitted.md): Task identifier not permitted or unsupported resources requested
+- [`BGTaskScheduler.Error.Code.tooManyPendingTaskRequests`](./error/code/toomanypendingtaskrequests.md): Too many pending tasks of this type
+- [`BGTaskScheduler.Error.Code.unavailable`](./error/code/unavailable.md): Background refresh disabled or app not permitted
+- [`BGTaskScheduler.Error.Code.immediateRunIneligible`](./error/code/immediaterunineligible.md): Immediate run not eligible due to system conditions
 
 The completion handler is called on an arbitrary queue.
 
 > **Note**: The completion handler may be invoked on an arbitrary queue after an arbitrary amount of delay. Do not call this method from the main thread or performance-critical contexts.
 
-This method replaces the deprecated [`submit(_:)`](bgtaskscheduler/submit(_:).md) method.
+This method replaces the deprecated [`submit(_:)`](./submit%28_%29.md) method.
 
 ## Parameters
 
 - `taskRequest`: The task request object representing the parameters of the background task to be scheduled.
-- `completionHandler`: A block that is called when submission completes. The block receives an optional error parameter: - `nil` if the task was submitted successfully
-- An `NSError` if submission failed
+- `completionHandler`: A block that is called when submission completes. The block receives an optional error parameter:
+
+  - `nil` if the task was submitted successfully
+  - An `NSError` if submission failed
 
 
 ---

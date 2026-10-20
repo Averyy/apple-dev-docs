@@ -1,17 +1,22 @@
 # availableType(from:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scans the specified types for a type that the receiver supports.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func availableType(from types: [NSPasteboard.PasteboardType]) -> NSPasteboard.PasteboardType?
+```
+
+```objc
+- (NSPasteboardType) availableTypeFromArray:(NSArray<NSString *> *) types;
 ```
 
 #### Return Value
@@ -31,7 +36,7 @@ NSString *bestType = [[NSPasteboard generalPasteboard]
 
 If the pasteboard contains RTF and string data, then `bestType` would contain `NSRTFPboardType`. If the pasteboard contains none of the types in `supportedTypes`, then `bestType` would be `nil`.
 
-You must send a [`types`](nspasteboard/types.md) or [`availableType(from:)`](nspasteboard/availabletype(from:).md) message before reading any data from an `NSPasteboard` object. If you need to see if a type in the returned array matches a type string you have stored locally, use the [`isEqual(to:)`](https://developer.apple.com/documentation/foundation/nsstring/isequal(to:)) method to perform the comparison.
+You must send a [`types`](./types.md) or [`availableType(from:)`](./availabletype%28from%29.md) message before reading any data from an `NSPasteboard` object. If you need to see if a type in the returned array matches a type string you have stored locally, use the [`isEqual(to:)`](../../Foundation/nsstring/isequal%28to%29.md) method to perform the comparison.
 
 ## Parameters
 
@@ -39,13 +44,14 @@ You must send a [`types`](nspasteboard/types.md) or [`availableType(from:)`](nsp
 
 ## See Also
 
-- [func canReadItem(withDataConformingToTypes: [String]) -> Bool](nspasteboard/canreaditem(withdataconformingtotypes:).md)
+### Validating contents
+- [func canReadItem(withDataConformingToTypes: [String]) -> Bool](./canreaditem%28withdataconformingtotypes%29.md)
   Returns a Boolean value that indicates whether the receiver contains any items that conform to the specified UTIs.
-- [func canReadObject(forClasses: [AnyClass], options: [NSPasteboard.ReadingOptionKey : Any]?) -> Bool](nspasteboard/canreadobject(forclasses:options:).md)
+- [func canReadObject(forClasses: [AnyClass], options: [NSPasteboard.ReadingOptionKey : Any]?) -> Bool](./canreadobject%28forclasses,options%29.md)
   Returns a Boolean value that indicates whether the receiver contains any items that can be represented as an instance of any class in a given array.
-- [var types: [NSPasteboard.PasteboardType]?](nspasteboard/types.md)
+- [var types: [NSPasteboard.PasteboardType]?](./types.md)
   An array of the receiver’s supported data types.
-- [class func types(filterableTo: NSPasteboard.PasteboardType) -> [NSPasteboard.PasteboardType]](nspasteboard/types(filterableto:).md)
+- [class func types(filterableTo: NSPasteboard.PasteboardType) -> [NSPasteboard.PasteboardType]](./types%28filterableto%29.md)
   Returns the data types that can be converted to the specified type using the available filter services.
 
 

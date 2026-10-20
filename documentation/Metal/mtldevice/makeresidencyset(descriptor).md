@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a residency set, which can move resources in and out of memory residency.
@@ -20,19 +21,23 @@ Creates a residency set, which can move resources in and out of memory residency
 func makeResidencySet(descriptor desc: MTLResidencySetDescriptor) throws -> any MTLResidencySet
 ```
 
+```objc
+- (id<MTLResidencySet>) newResidencySetWithDescriptor:(MTLResidencySetDescriptor *) desc error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md)
 
 #### Return Value
 
-A new [`MTLResidencySet`](mtlresidencyset.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
+A new [`MTLResidencySet`](../mtlresidencyset.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 
 #### Discussion
 
-Create an [`MTLResidencySet`](mtlresidencyset.md) by creating and configuring an [`MTLResidencySetDescriptor`](mtlresidencysetdescriptor.md) instance and pass it to this method.
+Create an [`MTLResidencySet`](../mtlresidencyset.md) by creating and configuring an [`MTLResidencySetDescriptor`](../mtlresidencysetdescriptor.md) instance and pass it to this method.
 
-See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-resource-management-with-residency-sets.md) for more information.
+See [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md) for more information.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # scalar
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scalar (non-array) type corresponding to this type.
 

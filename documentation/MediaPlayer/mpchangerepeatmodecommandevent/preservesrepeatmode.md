@@ -1,7 +1,8 @@
 # preservesRepeatMode
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the chosen repeat mode is preserved between playback sessions.
 
@@ -20,13 +21,18 @@ A Boolean value that indicates whether the chosen repeat mode is preserved betwe
 var preservesRepeatMode: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL preservesRepeatMode;
+```
+
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the chosen repeat mode is preserved between playback sessions.
+When set to [`true`](../../Swift/true.md), the chosen repeat mode is preserved between playback sessions.
 
 ## See Also
 
-- [var repeatType: MPRepeatType](mpchangerepeatmodecommandevent/repeattype.md)
+### Changing the repeat type
+- [var repeatType: MPRepeatType](./repeattype.md)
   The repeat type used when fulfilling the event request.
 
 

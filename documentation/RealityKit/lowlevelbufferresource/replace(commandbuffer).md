@@ -1,7 +1,8 @@
 # replace(commandBuffer:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Metal buffer you populate on the GPU with the new contents of the buffer resource.
 
@@ -31,7 +32,8 @@ Upon return the buffer’s contents are undefined; the caller is responsible for
 
 ## See Also
 
-- [func replace<R, E>((inout MutableRawSpan) throws(E) -> R) throws(E) -> R](lowlevelbufferresource/replace(_:).md)
+### Replacing buffer contents
+- [func replace<R, E>((inout MutableRawSpan) throws(E) -> R) throws(E) -> R](./replace%28_%29.md)
   Replaces the entire contents of the buffer resource synchronously on the CPU.
 
 

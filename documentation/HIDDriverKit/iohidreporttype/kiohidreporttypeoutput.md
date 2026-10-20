@@ -1,23 +1,25 @@
 # kIOHIDReportTypeOutput
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOHIDReportTypeOutput
 ```
 
 ## See Also
 
-- [kIOHIDReportTypeCount](iohidreporttype/kiohidreporttypecount.md)
-- [kIOHIDReportTypeFeature](iohidreporttype/kiohidreporttypefeature.md)
-- [kIOHIDReportTypeInput](iohidreporttype/kiohidreporttypeinput.md)
+### Getting the Report Types
+- [kIOHIDReportTypeCount](./kiohidreporttypecount.md)
+- [kIOHIDReportTypeFeature](./kiohidreporttypefeature.md)
+- [kIOHIDReportTypeInput](./kiohidreporttypeinput.md)
 
 
 ---

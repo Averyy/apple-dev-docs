@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the operation as a keyed container with a `type` discriminator and either `metric` (the metric name) or `label` (for custom operations).
 

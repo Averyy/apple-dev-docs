@@ -1,15 +1,20 @@
 # init(ciColor:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(ciColor color: CIColor)
+```
+
+```objc
++ (NSColor *) colorWithCIColor:(CIColor *) color;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a sampler into the argument buffer.
@@ -20,14 +21,19 @@ Encodes a sampler into the argument buffer.
 func setSamplerState(_ sampler: (any MTLSamplerState)?, index: Int)
 ```
 
+```objc
+- (void) setSamplerState:(id<MTLSamplerState>) sampler atIndex:(NSUInteger) index;
+```
+
 ## Parameters
 
 - `sampler`: A sampler the method encodes.
-- `index`: The index of a sampler within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instance.
+- `index`: The index of a sampler within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](../mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](../mtlargumentdescriptor.md) instance.
 
 ## See Also
 
-- [func setSamplerStates([(any MTLSamplerState)?], range: Range<Int>)](mtlargumentencoder/setsamplerstates(_:range:).md)
+### Encoding samplers
+- [func setSamplerStates([(any MTLSamplerState)?], range: Range<Int>)](./setsamplerstates%28_,range%29.md)
   Encodes an array of samplers into the argument buffer.
 
 

@@ -1,7 +1,8 @@
 # min(by:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -20,10 +21,11 @@ func min(by areInIncreasingOrder: (Output, Output) -> Bool) -> Just<Output>
 
 ## See Also
 
-- [func count() -> Just<Int>](just/count.md)
-- [func max() -> Just<Output>](just/max.md)
-- [func max(by: (Output, Output) -> Bool) -> Just<Output>](just/max(by:).md)
-- [func min() -> Just<Output>](just/min.md)
+### Applying mathematical operations on elements
+- [func count() -> Just<Int>](./count%28%29.md)
+- [func max() -> Just<Output>](./max%28%29.md)
+- [func max(by: (Output, Output) -> Bool) -> Just<Output>](./max%28by%29.md)
+- [func min() -> Just<Output>](./min%28%29.md)
 
 
 ---

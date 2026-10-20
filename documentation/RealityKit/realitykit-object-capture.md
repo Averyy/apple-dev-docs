@@ -1,6 +1,7 @@
 # Object capture
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: API Collection
 
 Create 3D objects from a series of photographs using photogrammetry.
 
@@ -11,42 +12,43 @@ In iOS 17 and macOS 12 and later, you can create 3D objects from photographs usi
 ## Topics
 
 ### Model creation
-- [Capturing photographs for RealityKit Object Capture](capturing-photographs-for-realitykit-object-capture.md)
+- [Capturing photographs for RealityKit Object Capture](./capturing-photographs-for-realitykit-object-capture.md)
   Take high-quality images of objects to generate 3D models.
-- [Creating 3D objects from photographs](creating-3d-objects-from-photographs.md)
+- [Creating 3D objects from photographs](./creating-3d-objects-from-photographs.md)
   Construct virtual objects to use in your AR experiences.
-- [Scanning objects using Object Capture](scanning-objects-using-object-capture.md)
+- [Scanning objects using Object Capture](./scanning-objects-using-object-capture.md)
   Implement a full scanning workflow for capturing objects on iOS devices.
-- [Building an object reconstruction app](building-an-object-reconstruction-app.md)
+- [Building an object reconstruction app](./building-an-object-reconstruction-app.md)
   Reconstruct objects from user-selected input images by using photogrammetry.
-- [Creating a photogrammetry command-line app](creating-a-photogrammetry-command-line-app.md)
+- [Creating a photogrammetry command-line app](./creating-a-photogrammetry-command-line-app.md)
   Generate 3D objects from images using RealityKit Object Capture.
-- [Using object capture assets in RealityKit](using-object-capture-assets-in-realitykit.md)
+- [Using object capture assets in RealityKit](./using-object-capture-assets-in-realitykit.md)
   Create a chess game using RealityKit and assets created using Object Capture.
-- [class PhotogrammetrySession](photogrammetrysession.md)
+- [class PhotogrammetrySession](./photogrammetrysession.md)
   Manages the creation of a 3D model from a set of images.
-- [struct PhotogrammetrySample](photogrammetrysample.md)
+- [struct PhotogrammetrySample](./photogrammetrysample.md)
   An object that represents one image and its corresponding metadata.
-- [struct ObjectCaptureView](objectcaptureview.md)
+- [struct ObjectCaptureView](./objectcaptureview.md)
   A view that guides a user through capturing images for object capture.
-- [class ObjectCaptureSession](objectcapturesession.md)
+- [class ObjectCaptureSession](./objectcapturesession.md)
   A session object that monitors and controls image capture for photogrammetry.
-- [struct ObjectCapturePointCloudView](objectcapturepointcloudview.md)
+- [struct ObjectCapturePointCloudView](./objectcapturepointcloudview.md)
   Renders the current state of the point cloud from an object capture session.
 
 ## See Also
 
-- [Reality Composer Pro](../realitycomposerpro/realitycomposerpro.md)
+### Asset creation
+- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
   Build, design, and orchestrate 3D content for your RealityKit apps.
-- [Swift Splash](../visionos/swift-splash.md)
+- [Swift Splash](../visionOS/swift-splash.md)
   Use RealityKit to create an interactive ride in visionOS.
-- [Diorama](../visionos/diorama.md)
+- [Diorama](../visionOS/diorama.md)
   Design scenes for your visionOS app using Reality Composer Pro.
-- [Presenting an artist’s scene](presenting-an-artists-scene.md)
+- [Presenting an artist’s scene](./presenting-an-artists-scene.md)
   Display a scene from Reality Composer Pro in visionOS.
-- [USD](../usd/usd.md)
+- [USD](../USD/USD.md)
   An efficient and scalable way to represent 3D scenes.
-- [Composing interactive 3D content with RealityKit and Reality Composer Pro](composing-interactive-3d-content-with-realitykit-and-reality-composer-pro.md)
+- [Composing interactive 3D content with RealityKit and Reality Composer Pro](./composing-interactive-3d-content-with-realitykit-and-reality-composer-pro.md)
   Build an interactive scene using an animation timeline.
 
 

@@ -1,7 +1,8 @@
 # NSWritingToolsCoordinator.ContextScope.visibleArea
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to provide only the text in the currently visible portion of your view.
 
@@ -14,15 +15,20 @@ An option to provide only the text in the currently visible portion of your view
 case visibleArea
 ```
 
+```c
+NSWritingToolsCoordinatorContextScopeVisibleArea
+```
+
 #### Discussion
 
 With this option, include only the currently visible text, along with some additional text before and after the visible text.
 
 ## See Also
 
-- [NSWritingToolsCoordinator.ContextScope.userSelection](nswritingtoolscoordinator/contextscope/userselection.md)
+### Getting the scope
+- [NSWritingToolsCoordinator.ContextScope.userSelection](./userselection.md)
   An option to provide only the view’s currently selected text.
-- [NSWritingToolsCoordinator.ContextScope.fullDocument](nswritingtoolscoordinator/contextscope/fulldocument.md)
+- [NSWritingToolsCoordinator.ContextScope.fullDocument](./fulldocument.md)
   An option to provide all of your view’s text.
 
 

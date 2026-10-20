@@ -1,7 +1,8 @@
 # isLoaded
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 True if the prim is active and none of its loadable ancestors are unloaded.
 

@@ -1,7 +1,8 @@
 # CarPlayErrorDomain
 
 **Framework**: CarPlay  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain that CarPlay uses for any errors it provides.
 
@@ -16,11 +17,16 @@ The domain that CarPlay uses for any errors it provides.
 let CarPlayErrorDomain: String
 ```
 
+```c
+extern NSString * const CarPlayErrorDomain;
+```
+
 ## See Also
 
-- [class CPButton](cpbutton.md)
+### Related Types
+- [class CPButton](./cpbutton.md)
   A button that displays an image and invokes a handler when the user taps it.
-- [class CPImageSet](cpimageset.md)
+- [class CPImageSet](./cpimageset.md)
   Light and dark representations of an image.
 
 

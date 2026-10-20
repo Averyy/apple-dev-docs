@@ -1,7 +1,8 @@
 # AnyGradient
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A color gradient.
 
@@ -23,54 +24,55 @@ struct AnyGradient
 
 #### Overview
 
-When used as a [`ShapeStyle`](shapestyle.md), this type draws a linear gradient with start-point [0.5, 0] and end-point [0.5, 1].
+When used as a [`ShapeStyle`](./shapestyle.md), this type draws a linear gradient with start-point [0.5, 0] and end-point [0.5, 1].
 
 ## Topics
 
 ### Creating a gradient
-- [init(Gradient)](anygradient/init(_:).md)
+- [init(Gradient)](./anygradient/init%28_%29.md)
   Creates a new instance from the specified gradient.
 ### Working with color spaces
-- [func colorSpace(Gradient.ColorSpace) -> AnyGradient](anygradient/colorspace(_:).md)
+- [func colorSpace(Gradient.ColorSpace) -> AnyGradient](./anygradient/colorspace%28_%29.md)
   Returns a version of the gradient that will use a specified color space for interpolating between its colors.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [ScaleRange](../charts/scalerange.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [ShapeStyle](shapestyle.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [ScaleRange](../Charts/scalerange.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [ShapeStyle](./shapestyle.md)
 
 ## See Also
 
-- [func border<S>(S, width: CGFloat) -> some View](view/border(_:width:).md)
+### Styling content
+- [func border<S>(S, width: CGFloat) -> some View](./view/border%28_,width%29.md)
   Adds a border to this view with the specified style and width.
-- [func foregroundStyle<S>(S) -> some View](view/foregroundstyle(_:).md)
+- [func foregroundStyle<S>(S) -> some View](./view/foregroundstyle%28_%29.md)
   Sets a view’s foreground elements to use a given style.
-- [func foregroundStyle<S1, S2>(S1, S2) -> some View](view/foregroundstyle(_:_:).md)
+- [func foregroundStyle<S1, S2>(S1, S2) -> some View](./view/foregroundstyle%28_,_%29.md)
   Sets the primary and secondary levels of the foreground style in the child view.
-- [func foregroundStyle<S1, S2, S3>(S1, S2, S3) -> some View](view/foregroundstyle(_:_:_:).md)
+- [func foregroundStyle<S1, S2, S3>(S1, S2, S3) -> some View](./view/foregroundstyle%28_,_,_%29.md)
   Sets the primary, secondary, and tertiary levels of the foreground style.
-- [func backgroundStyle<S>(S) -> some View](view/backgroundstyle(_:).md)
+- [func backgroundStyle<S>(S) -> some View](./view/backgroundstyle%28_%29.md)
   Sets the specified style to render backgrounds within the view.
-- [var backgroundStyle: AnyShapeStyle?](environmentvalues/backgroundstyle.md)
+- [var backgroundStyle: AnyShapeStyle?](./environmentvalues/backgroundstyle.md)
   An optional style that overrides the default system background style when set.
-- [protocol ShapeStyle](shapestyle.md)
+- [protocol ShapeStyle](./shapestyle.md)
   A color or pattern to use when rendering a shape.
-- [struct AnyShapeStyle](anyshapestyle.md)
+- [struct AnyShapeStyle](./anyshapestyle.md)
   A type-erased ShapeStyle value.
-- [struct Gradient](gradient.md)
+- [struct Gradient](./gradient.md)
   A color gradient represented as an array of color stops, each having a parametric location value.
-- [struct MeshGradient](meshgradient.md)
+- [struct MeshGradient](./meshgradient.md)
   A two-dimensional gradient defined by a 2D grid of positioned colors.
-- [struct ShadowStyle](shadowstyle.md)
+- [struct ShadowStyle](./shadowstyle.md)
   A style to use when rendering shadows.
-- [struct Glass](glass.md)
+- [struct Glass](./glass.md)
   A structure that defines the configuration of the Liquid Glass material.
 
 

@@ -1,6 +1,7 @@
 # Ads Data Objects
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Reference the request and response objects used by ad endpoints.
 
@@ -9,22 +10,23 @@ Reference the request and response objects used by ad endpoints.
 
 ## Topics
 
-- [object Ad](ad.md)
+- [object Ad](./ad.md)
   Ad entity that links an ad creative to an ad group for serving.
-- [object AdCreate](adcreate.md)
+- [object AdCreate](./adcreate.md)
   The request body for creating a new Ad object.
-- [object AdUpdate](adupdate.md)
+- [object AdUpdate](./adupdate.md)
   The request body for updating an existing Ad object.
-- [object AdResponse](adresponse.md)
+- [object AdResponse](./adresponse.md)
   The response object for an Ad operation.
-- [object AdQueryResponse](adqueryresponse.md)
+- [object AdQueryResponse](./adqueryresponse.md)
   The response object for an Ad query, containing matched results and pagination metadata.
 
 ## See Also
 
-- [Ads Endpoints](ads-endpoints.md)
+### Ads
+- [Ads Endpoints](./ads-endpoints.md)
   Create, retrieve, update, and delete ads using these endpoints.
-- [Ads Data Types](ads-data-types.md)
+- [Ads Data Types](./ads-data-types.md)
   Reference the enumerations and scalar types used by ad objects and endpoints.
 
 

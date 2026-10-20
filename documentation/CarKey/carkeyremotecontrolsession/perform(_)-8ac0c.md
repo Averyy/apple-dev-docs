@@ -1,7 +1,8 @@
 # perform(_:)
 
 **Framework**: CarKey  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a request to the vehicle to perform a one-time action.
 
@@ -34,7 +35,8 @@ Use the returned object to get the execution status of the specified request. Th
 
 ## See Also
 
-- [func perform(RemoteKeylessEntryEnduringAction) throws -> RemoteKeylessEntryEnduringAction.EnduringExecutionRequest](carkeyremotecontrolsession/perform(_:)-7mpsy.md)
+### Performing Vehicle-Related Actions
+- [func perform(RemoteKeylessEntryEnduringAction) throws -> RemoteKeylessEntryEnduringAction.EnduringExecutionRequest](./perform%28_%29-7mpsy.md)
   Sends a request to the vehicle to start an action that has a separate stopping point.
 
 

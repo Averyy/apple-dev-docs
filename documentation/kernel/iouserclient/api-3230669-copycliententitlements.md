@@ -1,14 +1,15 @@
 # copyClientEntitlements
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 static OSPtr<OSDictionary> copyClientEntitlements(task_t task);
 ```
 

@@ -1,14 +1,15 @@
 # writeExtRegister
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void writeExtRegister(volatile UInt8 *inRegister, UInt16 inValue);
 ```
 

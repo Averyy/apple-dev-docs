@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOStorageSynchronizeOptionBarrier](1644753-anonymous/kiostoragesynchronizeoptionbarrier.md)
-- [kIOStorageSynchronizeOptionNone](1644753-anonymous/kiostoragesynchronizeoptionnone.md)
-- [kIOStorageSynchronizeOptionReserved](1644753-anonymous/kiostoragesynchronizeoptionreserved.md)
+- [kIOStorageSynchronizeOptionBarrier](./api-1644753-anonymous/kiostoragesynchronizeoptionbarrier.md)
+- [kIOStorageSynchronizeOptionNone](./api-1644753-anonymous/kiostoragesynchronizeoptionnone.md)
+- [kIOStorageSynchronizeOptionReserved](./api-1644753-anonymous/kiostoragesynchronizeoptionreserved.md)
 
 
 ---

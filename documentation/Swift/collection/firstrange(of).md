@@ -1,7 +1,8 @@
 # firstRange(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds and returns the range of the first occurrence of a given collection within this collection.
 
@@ -19,6 +20,8 @@ Finds and returns the range of the first occurrence of a given collection within
 ```swift
 func firstRange<C>(of other: C) -> Range<Self.Index>? where C : Collection, Self.Element == C.Element
 ```
+
+Available when `Element` conforms to `Equatable`.
 
 #### Return Value
 

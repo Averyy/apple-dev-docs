@@ -1,7 +1,8 @@
 # UNAuthorizationStatus.ephemeral
 
 **Framework**: User Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app is authorized to schedule or receive notifications for a limited amount of time.
 
@@ -17,19 +18,24 @@ The app is authorized to schedule or receive notifications for a limited amount 
 case ephemeral
 ```
 
+```c
+UNAuthorizationStatusEphemeral
+```
+
 #### Discussion
 
-An App Clip may have the ability to schedule or receive notifications for a limited amount of time. For more information, see [`Enabling notifications in App Clips`](https://developer.apple.com/documentation/appclip/enabling-notifications-in-app-clips).
+An App Clip may have the ability to schedule or receive notifications for a limited amount of time. For more information, see [Enabling notifications in App Clips](../../AppClip/enabling-notifications-in-app-clips.md).
 
 ## See Also
 
-- [UNAuthorizationStatus.notDetermined](unauthorizationstatus/notdetermined.md)
+### Status
+- [UNAuthorizationStatus.notDetermined](./notdetermined.md)
   The user hasn’t yet made a choice about whether the app is allowed to schedule notifications.
-- [UNAuthorizationStatus.denied](unauthorizationstatus/denied.md)
+- [UNAuthorizationStatus.denied](./denied.md)
   The app isn’t authorized to schedule or receive notifications.
-- [UNAuthorizationStatus.authorized](unauthorizationstatus/authorized.md)
+- [UNAuthorizationStatus.authorized](./authorized.md)
   The app is authorized to schedule or receive notifications.
-- [UNAuthorizationStatus.provisional](unauthorizationstatus/provisional.md)
+- [UNAuthorizationStatus.provisional](./provisional.md)
   The application is provisionally authorized to post noninterruptive user notifications.
 
 

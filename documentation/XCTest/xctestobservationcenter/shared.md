@@ -1,14 +1,19 @@
 # shared
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The shared [`XCTestObservationCenter`](xctestobservationcenter.md) singleton instance.
+The shared [`XCTestObservationCenter`](../xctestobservationcenter.md) singleton instance.
 
 ## Declaration
 
 ```swift
 class var shared: XCTestObservationCenter { get }
+```
+
+```objc
+@property (class, readonly) XCTestObservationCenter * sharedTestObservationCenter;
 ```
 
 

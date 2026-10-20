@@ -1,7 +1,8 @@
 # UnregisterMerchantRequest
 
 **Framework**: Apple Pay Web Merchant Registration API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to unregister one or more merchant domains.
 
@@ -10,7 +11,7 @@ The request body you use to unregister one or more merchant domains.
 
 ## Declaration
 
-```swift
+```
 object UnregisterMerchantRequest
 ```
 
@@ -32,11 +33,16 @@ The following example shows the format of an `UnregisterMerchant` request.
 
 - `domainNames` ([string]) *(required)*: A list of fully qualified domain names to unregister. If a merchant has no remaining domain names after this request removes domains, Apple Pay server deletes the merchant’s registration.
 - `partnerInternalMerchantIdentifier` (string) *(required)*: A merchant identifier that you create to uniquely identify the registered merchant, and which you use in Apple Pay transactions and in this API.
+
+  **Maximum Length**: `1024`; **Allowed Values**: `/a-zA-Z0-9~-_+&@$!|,.;/`
 - `reason` (string) *(required)*: A short, human-readable phrase that describes the cause of unregistration.
+
+  **Maximum Length**: `1024`
 
 ## See Also
 
-- [Unregister Merchant](unregister-merchant.md)
+### Web Merchant Unregistration
+- [Unregister Merchant](./unregister-merchant.md)
   Unregister one or more domains associated with a previously registered merchant.
 
 

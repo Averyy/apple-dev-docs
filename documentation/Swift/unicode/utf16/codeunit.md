@@ -1,7 +1,8 @@
 # Unicode.UTF16.CodeUnit
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The basic unit of encoding
 

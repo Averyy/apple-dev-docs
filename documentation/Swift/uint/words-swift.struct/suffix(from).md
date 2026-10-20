@@ -1,7 +1,8 @@
 # suffix(from:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a subsequence from the specified position to the end of the collection.
 
@@ -52,7 +53,7 @@ if let i = numbers.firstIndex(of: 40) {
 // Prints "[40, 50, 60]"
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

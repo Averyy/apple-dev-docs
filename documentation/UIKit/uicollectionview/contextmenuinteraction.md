@@ -1,7 +1,8 @@
 # contextMenuInteraction
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection view’s context menu interaction.
 
@@ -16,6 +17,10 @@ The collection view’s context menu interaction.
 
 ```swift
 var contextMenuInteraction: UIContextMenuInteraction? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) UIContextMenuInteraction * contextMenuInteraction;
 ```
 
 

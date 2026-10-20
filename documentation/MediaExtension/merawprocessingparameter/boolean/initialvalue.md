@@ -1,7 +1,8 @@
 # initialValue
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The initial value for this parameter as defined in the sequence metadata.
 
@@ -14,9 +15,14 @@ The initial value for this parameter as defined in the sequence metadata.
 var initialValue: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL initialValue;
+```
+
 ## See Also
 
-- [var currentValue: Bool](merawprocessingparameter/boolean/currentvalue.md)
+### Properties
+- [var currentValue: Bool](./currentvalue.md)
   Get or set the current value for this parameter.
 
 

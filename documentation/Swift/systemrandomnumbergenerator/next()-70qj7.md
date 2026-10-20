@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a value from a uniform, independent distribution of binary data.
 

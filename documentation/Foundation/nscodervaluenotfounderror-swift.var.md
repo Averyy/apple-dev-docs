@@ -1,7 +1,8 @@
 # NSCoderValueNotFoundError
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The requested data wasn’t found.
 
@@ -22,13 +23,14 @@ var NSCoderValueNotFoundError: Int { get }
 
 ## See Also
 
-- [var NSCoderErrorMaximum: Int](nscodererrormaximum-swift.var.md)
+### Error Codes
+- [var NSCoderErrorMaximum: Int](./nscodererrormaximum-swift.var.md)
   The end of the range of error codes reserved for coder errors.
-- [var NSCoderErrorMinimum: Int](nscodererrorminimum-swift.var.md)
+- [var NSCoderErrorMinimum: Int](./nscodererrorminimum-swift.var.md)
   The start of the range of error codes reserved for coder errors.
-- [var NSCoderReadCorruptError: Int](nscoderreadcorrupterror-swift.var.md)
+- [var NSCoderReadCorruptError: Int](./nscoderreadcorrupterror-swift.var.md)
   Decoding failed due to corrupt data.
-- [var NSCoderInvalidValueError: Int](nscoderinvalidvalueerror-swift.var.md)
+- [var NSCoderInvalidValueError: Int](./nscoderinvalidvalueerror-swift.var.md)
   Data wasn’t valid to encode.
 
 

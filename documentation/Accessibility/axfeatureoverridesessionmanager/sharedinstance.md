@@ -1,7 +1,8 @@
 # sharedInstance
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.2+
@@ -11,6 +12,10 @@
 
 ```swift
 class var sharedInstance: AXFeatureOverrideSessionManager { get }
+```
+
+```objc
+@property (class, readonly) AXFeatureOverrideSessionManager * sharedInstance;
 ```
 
 

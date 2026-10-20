@@ -1,7 +1,8 @@
 # triggerActivationState
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current activation state of the trigger.
 
@@ -19,13 +20,18 @@ The current activation state of the trigger.
 var triggerActivationState: HMEventTriggerActivationState { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) HMEventTriggerActivationState triggerActivationState;
+```
+
 #### Discussion
 
 Specifies whether the trigger is currently active, or describes the problem.
 
 ## See Also
 
-- [enum HMEventTriggerActivationState](hmeventtriggeractivationstate.md)
+### Querying trigger activation state
+- [enum HMEventTriggerActivationState](../hmeventtriggeractivationstate.md)
   The activation state of an event trigger.
 
 

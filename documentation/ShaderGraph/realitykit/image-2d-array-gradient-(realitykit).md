@@ -1,7 +1,8 @@
 # Image 2D Array Gradient (RealityKit)
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 A texture with RealityKit properties.
 
@@ -18,39 +19,121 @@ Level of detail gradient
 
 #### Parameter Types
 
-> ❗ **Important**: This node requires a device with a [`MTLGPUFamily.apple3`](https://developer.apple.com/documentation/metal/mtlgpufamily/apple3) or later GPU and may not be available on certain devices. To determine GPU feature support at runtime, see [`Detecting GPU features and Metal software versions`](https://developer.apple.com/documentation/metal/detecting-gpu-features-and-metal-software-versions).
+**Image 2D Array Gradient (vector4f)**:
+
+| Input | Type |
+| --- | --- |
+| `File` | AssetPath |
+| `U Wrap Mode` | String |
+| `V Wrap Mode` | String |
+| `Border Color` | String |
+| `Mag Filter` | String |
+| `Min Filter` | String |
+| `Mip Filter` | String |
+| `Max Anisotropy` | Int32 |
+| `Max Lod Clamp` | Float |
+| `Min Lod Clamp` | Float |
+| `Default` | Vector4f |
+| `Texture Coordinates` | Vector2f |
+| `Index` | Int32 |
+| `Use MaterialX V Origin` | Bool |
+| `Dynamic Min Lod Clamp` | Float |
+| `Gradient D Pdx` | Vector2f |
+| `Gradient D Pdy` | Vector2f |
+| `Offset` | Integer2 |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4f |
+
+**Image 2D Array Gradient (color4)**:
+
+| Input | Type |
+| --- | --- |
+| `File` | AssetPath |
+| `U Wrap Mode` | String |
+| `V Wrap Mode` | String |
+| `Border Color` | String |
+| `Mag Filter` | String |
+| `Min Filter` | String |
+| `Mip Filter` | String |
+| `Max Anisotropy` | Int32 |
+| `Max Lod Clamp` | Float |
+| `Min Lod Clamp` | Float |
+| `Default` | Color4 |
+| `Texture Coordinates` | Vector2f |
+| `Index` | Int32 |
+| `Use MaterialX V Origin` | Bool |
+| `Dynamic Min Lod Clamp` | Float |
+| `Gradient D Pdx` | Vector2f |
+| `Gradient D Pdy` | Vector2f |
+| `Offset` | Integer2 |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+**Image 2D Array Gradient (color3)**:
+
+| Input | Type |
+| --- | --- |
+| `File` | AssetPath |
+| `U Wrap Mode` | String |
+| `V Wrap Mode` | String |
+| `Border Color` | String |
+| `Mag Filter` | String |
+| `Min Filter` | String |
+| `Mip Filter` | String |
+| `Max Anisotropy` | Int32 |
+| `Max Lod Clamp` | Float |
+| `Min Lod Clamp` | Float |
+| `Default` | Color3 |
+| `Texture Coordinates` | Vector2f |
+| `Index` | Int32 |
+| `Use MaterialX V Origin` | Bool |
+| `Dynamic Min Lod Clamp` | Float |
+| `Gradient D Pdx` | Vector2f |
+| `Gradient D Pdy` | Vector2f |
+| `Offset` | Integer2 |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color3 |
+
+> ❗ **Important**: This node requires a device with a [`MTLGPUFamily.apple3`](../../Metal/mtlgpufamily/apple3.md) or later GPU and may not be available on certain devices. To determine GPU feature support at runtime, see [Detecting GPU features and Metal software versions](../../Metal/detecting-gpu-features-and-metal-software-versions.md).
 
 ## See Also
 
-- [Unlit Surface (RealityKit)](realitykit/unlit-surface-(realitykit).md)
+### Nodes
+- [Unlit Surface (RealityKit)](./unlit-surface-%28realitykit%29.md)
   A surface shader that defines properties for a RealityKit Unlit material.
-- [PBR Surface (RealityKit)](realitykit/pbr-surface-(realitykit).md)
+- [PBR Surface (RealityKit)](./pbr-surface-%28realitykit%29.md)
   A surface shader that defines properties for a RealityKit Physically Based Rendering material.
-- [Hair Surface (RealityKit)](realitykit/hair-surface-(realitykit).md)
+- [Hair Surface (RealityKit)](./hair-surface-%28realitykit%29.md)
   A surface shader that defines properties for a RealityKit Hair material.
-- [Occlusion Surface (RealityKit)](realitykit/occlusion-surface-(realitykit).md)
+- [Occlusion Surface (RealityKit)](./occlusion-surface-%28realitykit%29.md)
   A surface shader that defines properties for a RealityKit Occlusion material that does not receive dynamic lighting.
-- [Shadow Receiving Occlusion Surface (RealityKit)](realitykit/shadow-receiving-occlusion-surface-(realitykit).md)
+- [Shadow Receiving Occlusion Surface (RealityKit)](./shadow-receiving-occlusion-surface-%28realitykit%29.md)
   A surface shader that defines properties for a RealityKit Occlusion material that receives dynamic lighting.
-- [View Direction (RealityKit)](realitykit/view-direction-(realitykit).md)
+- [View Direction (RealityKit)](./view-direction-%28realitykit%29.md)
   A vector from a position in the scene to the view reference point.
-- [Camera Position (RealityKit)](realitykit/camera-position-(realitykit).md)
+- [Camera Position (RealityKit)](./camera-position-%28realitykit%29.md)
   The position of the camera in the scene.
-- [Geometry Modifier Model To World (RealityKit)](realitykit/geometry-modifier-model-to-world-(realitykit).md)
+- [Geometry Modifier Model To World (RealityKit)](./geometry-modifier-model-to-world-%28realitykit%29.md)
   The model-to-world transformation Matrix4x4 (Float).
-- [Geometry Modifier World To Model (RealityKit)](realitykit/geometry-modifier-world-to-model-(realitykit).md)
+- [Geometry Modifier World To Model (RealityKit)](./geometry-modifier-world-to-model-%28realitykit%29.md)
   The world-to-model transformation Matrix4x4 (Float).
-- [Geometry Modifier Normal To World (RealityKit)](realitykit/geometry-modifier-normal-to-world-(realitykit).md)
+- [Geometry Modifier Normal To World (RealityKit)](./geometry-modifier-normal-to-world-%28realitykit%29.md)
   The normal-to-world transformation Matrix3x3 (Float).
-- [Geometry Modifier Model To View (RealityKit)](realitykit/geometry-modifier-model-to-view-(realitykit).md)
+- [Geometry Modifier Model To View (RealityKit)](./geometry-modifier-model-to-view-%28realitykit%29.md)
   The model-to-view transformation Matrix4x4 (Float).
-- [Geometry Modifier View To Projection (RealityKit)](realitykit/geometry-modifier-view-to-projection-(realitykit).md)
+- [Geometry Modifier View To Projection (RealityKit)](./geometry-modifier-view-to-projection-%28realitykit%29.md)
   The view-to-projection transformation Matrix4x4 (Float).
-- [Geometry Modifier Projection To View (RealityKit)](realitykit/geometry-modifier-projection-to-view-(realitykit).md)
+- [Geometry Modifier Projection To View (RealityKit)](./geometry-modifier-projection-to-view-%28realitykit%29.md)
   The projection-to-view transformation Matrix4x4 (Float).
-- [Geometry Modifier Vertex ID (RealityKit)](realitykit/geometry-modifier-vertex-id-(realitykit).md)
+- [Geometry Modifier Vertex ID (RealityKit)](./geometry-modifier-vertex-id-%28realitykit%29.md)
   The integer index of the vertex.
-- [Surface Model To World (RealityKit)](realitykit/surface-model-to-world-(realitykit).md)
+- [Surface Model To World (RealityKit)](./surface-model-to-world-%28realitykit%29.md)
   The model-to-world transformation Matrix4x4 (Float).
 
 

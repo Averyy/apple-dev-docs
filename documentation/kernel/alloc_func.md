@@ -1,14 +1,15 @@
 # alloc_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 typedef voidpf (*alloc_func)(voidpf opaque, uInt items, uInt size);
 ```
 

@@ -1,7 +1,8 @@
 # urlAsset
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The asset that this task downloads.
 
@@ -19,13 +20,18 @@ The asset that this task downloads.
 var urlAsset: AVURLAsset { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVURLAsset * URLAsset;
+```
+
 ## See Also
 
-- [var loadedTimeRanges: [NSValue]](avassetdownloadtask/loadedtimeranges.md)
+### Accessing task information
+- [var loadedTimeRanges: [NSValue]](./loadedtimeranges.md)
   The time ranges of the downloaded media that are ready for playback.
-- [var options: [String : Any]?](avassetdownloadtask/options.md)
+- [var options: [String : Any]?](./options.md)
   The configuration options for the task.
-- [var destinationURL: URL](avassetdownloadtask/destinationurl.md)
+- [var destinationURL: URL](./destinationurl.md)
   The local file URL to where the task downloads the asset.
 
 

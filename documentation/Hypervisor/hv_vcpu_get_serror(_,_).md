@@ -1,7 +1,8 @@
 # hv_vcpu_get_serror(_:_:)
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func hv_vcpu_get_serror(_ vcpu: hv_vcpu_t, _ pending: UnsafeMutablePointer<Bool>) -> hv_return_t
+```
+
+```c
+extern hv_return_t hv_vcpu_get_serror(hv_vcpu_t vcpu, bool *pending);
 ```
 
 #### Discussion

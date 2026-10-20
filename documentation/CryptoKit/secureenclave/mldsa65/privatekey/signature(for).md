@@ -1,7 +1,8 @@
 # signature(for:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a MLDSA65 signature
 
@@ -26,7 +27,7 @@ The MLDSA65 signature
 
 #### Discussion
 
-> **Note**: If there is a failure producing the signature
+> **Throws**: If there is a failure producing the signature
 
 ## Parameters
 

@@ -1,6 +1,8 @@
 # Visualizing HealthKit State of Mind in visionOS
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: Sample Code  
+**Download**: [VisualizingHealthKitStateOfMindInVisionOS.zip](https://docs-assets.developer.apple.com/published/7227217a75ce/VisualizingHealthKitStateOfMindInVisionOS.zip)
 
 Incorporate HealthKit State of Mind into your app and visualize the data in visionOS.
 
@@ -13,32 +15,33 @@ Incorporate HealthKit State of Mind into your app and visualize the data in visi
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC24 session 10083: [`Get started with HealthKit in visionOS`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10083) and session 10109: [`Explore wellbeing APIs in HealthKit`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10109).
+> **Note**: This sample code project is associated with WWDC24 session 10083: [Get started with HealthKit in visionOS](https://developer.apple.com/wwdc24/10083) and session 10109: [Explore wellbeing APIs in HealthKit](https://developer.apple.com/wwdc24/10109).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Before you run the sample code project:
 
 1. Open the sample with the latest version of Xcode.
-2. Set the developer team for the project target to let Xcode automatically manage the provisioning profile. For more information, see [`Assign a project to a team`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev23aab79b4).
+2. Set the developer team for the project target to let Xcode automatically manage the provisioning profile. For more information, see [Assign a project to a team](https://help.apple.com/xcode/mac/current/#/dev23aab79b4).
 
 ## See Also
 
-- [Saving data to HealthKit](saving-data-to-healthkit.md)
+### Health data
+- [Saving data to HealthKit](./saving-data-to-healthkit.md)
   Create and share HealthKit samples.
-- [Reading data from HealthKit](reading-data-from-healthkit.md)
+- [Reading data from HealthKit](./reading-data-from-healthkit.md)
   Use queries to request sample data from HealthKit.
-- [class HKHealthStore](hkhealthstore.md)
+- [class HKHealthStore](./hkhealthstore.md)
   The access point for all data managed by HealthKit.
-- [Creating a Mobility Health App](creating-a-mobility-health-app.md)
+- [Creating a Mobility Health App](./creating-a-mobility-health-app.md)
   Create a health app that allows a clinical care team to send and receive mobility data.
-- [Data types](data-types.md)
+- [Data types](./data-types.md)
   Specify the kind of data used in HealthKit.
-- [Samples](samples.md)
+- [Samples](./samples.md)
   Create and save health and fitness samples.
-- [Queries](queries.md)
+- [Queries](./queries.md)
   Query health and fitness data.
-- [Logging symptoms associated with a medication](logging-symptoms-associated-with-a-medication.md)
+- [Logging symptoms associated with a medication](./logging-symptoms-associated-with-a-medication.md)
   Fetch medications and dose events from the HealthKit store, and create symptom samples to associate with them.
 
 

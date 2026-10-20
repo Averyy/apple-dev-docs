@@ -1,7 +1,8 @@
 # checkCanAuthorize(completion:)
 
 **Framework**: Local Authentication  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks whether the right has permission to perform authorization.
 
@@ -15,24 +16,39 @@ Checks whether the right has permission to perform authorization.
 ## Declaration
 
 ```swift
+func checkCanAuthorize(completion handler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func checkCanAuthorize() async throws
+```
+
+```objc
+- (void) checkCanAuthorizeWithCompletion:(void (^)(NSError *error)) handler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func checkCanAuthorize() async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func checkCanAuthorize() async throws
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 ## Parameters
 
-- `handler`: A completion handler called when the authorization check finishes. - **`error`**: If `nil`, the right can be authorized.
+- `handler`: A completion handler called when the authorization check finishes.
+
+  - **`error`**: If `nil`, the right can be authorized.
 
 ## See Also
 
-- [var state: LARight.State](laright/state-swift.property.md)
+### Monitoring authorization status
+- [var state: LARight.State](./state-swift.property.md)
   The current authorization state for a right.
-- [LARight.State](laright/state-swift.enum.md)
+- [LARight.State](./state-swift.enum.md)
   The possible states for a right during authorization.
 
 

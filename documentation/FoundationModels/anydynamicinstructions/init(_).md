@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance from the dynamic instructions you specify.
 
@@ -25,7 +26,8 @@ init(_ dynamicInstructions: any DynamicInstructions)
 
 ## See Also
 
-- [init(erasing: some DynamicInstructions)](anydynamicinstructions/init(erasing:).md)
+### Creating dynamic instructions
+- [init(erasing: some DynamicInstructions)](./init%28erasing%29.md)
   Creates an instance from the dynamic instructions you specify.
 
 

@@ -1,7 +1,8 @@
 # maxSysEx8Streams
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var maxSysEx8Streams: UInt8 { get }
+```
+
+```objc
+@property (nonatomic, readonly) UInt8 maxSysEx8Streams;
 ```
 
 

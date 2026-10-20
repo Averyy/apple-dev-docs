@@ -1,7 +1,8 @@
 # extractKeypoints()
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Extracts key points from video files if necessary.
 

@@ -1,7 +1,8 @@
 # AUAudioMixRenderingStyle.audioMixRenderingStyle_Studio
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -13,6 +14,10 @@
 
 ```swift
 case audioMixRenderingStyle_Studio
+```
+
+```c
+kAudioMixRenderingStyle_Studio
 ```
 
 

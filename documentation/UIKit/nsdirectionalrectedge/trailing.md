@@ -1,7 +1,8 @@
 # trailing
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The trailing edge.
 
@@ -19,15 +20,20 @@ The trailing edge.
 static var trailing: NSDirectionalRectEdge { get }
 ```
 
+```c
+NSDirectionalRectEdgeTrailing
+```
+
 ## See Also
 
-- [static var top: NSDirectionalRectEdge](nsdirectionalrectedge/top.md)
+### Constants
+- [static var top: NSDirectionalRectEdge](./top.md)
   The top edge.
-- [static var leading: NSDirectionalRectEdge](nsdirectionalrectedge/leading.md)
+- [static var leading: NSDirectionalRectEdge](./leading.md)
   The leading edge.
-- [static var bottom: NSDirectionalRectEdge](nsdirectionalrectedge/bottom.md)
+- [static var bottom: NSDirectionalRectEdge](./bottom.md)
   The bottom edge.
-- [static var all: NSDirectionalRectEdge](nsdirectionalrectedge/all.md)
+- [static var all: NSDirectionalRectEdge](./all.md)
   All edges.
 
 

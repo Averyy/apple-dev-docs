@@ -1,7 +1,8 @@
 # getOperationalDataset(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command GetOperationalDataset
 
@@ -17,7 +18,15 @@ Command GetOperationalDataset
 ## Declaration
 
 ```swift
+func getOperationalDataset(with params: MTRThreadNetworkDirectoryClusterGetOperationalDatasetParams, completion: @escaping @Sendable (MTRThreadNetworkDirectoryClusterOperationalDatasetResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func operationalDataset(with params: MTRThreadNetworkDirectoryClusterGetOperationalDatasetParams) async throws -> MTRThreadNetworkDirectoryClusterOperationalDatasetResponseParams
+```
+
+```objc
+- (void) getOperationalDatasetWithParams:(MTRThreadNetworkDirectoryClusterGetOperationalDatasetParams *) params completion:(void (^)(MTRThreadNetworkDirectoryClusterOperationalDatasetResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

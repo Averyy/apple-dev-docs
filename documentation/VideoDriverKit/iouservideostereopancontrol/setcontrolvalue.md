@@ -1,7 +1,8 @@
 # SetControlValue
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the current control value.
 
@@ -10,7 +11,7 @@ Sets the current control value.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetControlValue(float in_control_value);
 ```
 
@@ -24,11 +25,12 @@ Changing the control value will send a notification to the host to update the ob
 
 ## See Also
 
-- [GetControlValue](iouservideostereopancontrol/getcontrolvalue.md)
+### Accessing the value
+- [GetControlValue](./getcontrolvalue.md)
   Gets the current value of the control.
-- [SetPanningChannels](iouservideostereopancontrol/setpanningchannels.md)
+- [SetPanningChannels](./setpanningchannels.md)
   Sets the current stereo panning channels.
-- [GetPanningChannels](iouservideostereopancontrol/getpanningchannels.md)
+- [GetPanningChannels](./getpanningchannels.md)
   Gets the current stereo panning channels.
 
 

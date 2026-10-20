@@ -1,21 +1,28 @@
 # delegate
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for the event handler.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 6.0+
-- macOS 10.8+
-- visionOS 1.0+
+- iOS 6.0+ - Deprecated in 7.0
+- iPadOS 6.0+ - Deprecated in 7.0
+- Mac Catalyst 6.0+ - Deprecated in 7.0
+- macOS 10.8+ - Deprecated in 10.10
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 weak var delegate: (any GKChallengeEventHandlerDelegate)! { get set }
+```
+
+```objc
+@property (nonatomic, weak) id<GKChallengeEventHandlerDelegate> delegate;
 ```
 
 #### Discussion

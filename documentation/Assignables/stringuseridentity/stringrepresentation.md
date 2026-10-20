@@ -1,7 +1,8 @@
 # stringRepresentation
 
 **Framework**: Assignables  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 String representation of this user identity for display or debugging purposes.
 
@@ -9,7 +10,7 @@ String representation of this user identity for display or debugging purposes.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,12 @@ var stringRepresentation: String { get }
 
 ## See Also
 
-- [var typeID: String](stringuseridentity/typeid-swift.property.md)
+### Inspecting an identity
+- [var typeID: String](./typeid-swift.property.md)
   A unique type identifier for this user identity.
-- [static var typeID: String](stringuseridentity/typeid-swift.type.property.md)
+- [static var typeID: String](./typeid-swift.type.property.md)
   A unique type identifier for this user identity.
-- [var value: String](stringuseridentity/value.md)
+- [var value: String](./value.md)
   The value of the string to contain in this user identity.
 
 

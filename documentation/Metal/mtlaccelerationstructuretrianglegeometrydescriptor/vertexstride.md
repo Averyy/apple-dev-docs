@@ -1,7 +1,8 @@
 # vertexStride
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stride, in bytes, between vertices in the vertex buffer.
 
@@ -19,17 +20,22 @@ The stride, in bytes, between vertices in the vertex buffer.
 var vertexStride: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger vertexStride;
+```
+
 #### Discussion
 
 The stride needs to be at least 12 bytes and needs to be a multiple of 4 bytes. The default value is 12 bytes.
 
 ## See Also
 
-- [var vertexFormat: MTLAttributeFormat](mtlaccelerationstructuretrianglegeometrydescriptor/vertexformat.md)
+### Configuring vertex data
+- [var vertexFormat: MTLAttributeFormat](./vertexformat.md)
   The format of each vertex position in the vertex buffer property.
-- [var vertexBuffer: (any MTLBuffer)?](mtlaccelerationstructuretrianglegeometrydescriptor/vertexbuffer.md)
+- [var vertexBuffer: (any MTLBuffer)?](./vertexbuffer.md)
   A buffer that contains vertex data.
-- [var vertexBufferOffset: Int](mtlaccelerationstructuretrianglegeometrydescriptor/vertexbufferoffset.md)
+- [var vertexBufferOffset: Int](./vertexbufferoffset.md)
   The offset, in bytes, for the first vertex in the vertex buffer.
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Managed Settings  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance of a store.
 

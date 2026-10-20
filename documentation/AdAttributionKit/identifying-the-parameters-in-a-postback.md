@@ -1,14 +1,15 @@
 # Identifying the parameters in a postback
 
-**Framework**: AdAttributionKit
+**Framework**: AdAttributionKit  
+**Role**: Article
 
 Interpret postback properties to understand the attribution report.
 
 #### Overview
 
-The lists in this article describe all the possible parameters you can get in a postback. To verify that Apple signed the postback, see [`Verifying a postback`](verifying-a-postback.md).
+The lists in this article describe all the possible parameters you can get in a postback. To verify that Apple signed the postback, see [Verifying a postback](./verifying-a-postback.md).
 
-#### Understand the Json Stanza the Framework Sends
+#### Understand the JSON stanza the framework sends
 
 The JSON stanza your servers receive resembles the following:
 
@@ -23,13 +24,13 @@ The JSON stanza your servers receive resembles the following:
 
 The keys in this stanza may include:
 
-- **`conversion-value`**: (optional) An unsigned 6-bit value that the advertised app sets by calling a method to update the conversion value, such as [`updateConversionValue(_:lockPostback:)`](postback/updateconversionvalue(_:lockpostback:).md).
-- **`coarse-conversion-value`**: (optional) Possible values are the strings `low`, `medium`, and `high`. The advertised app sets this value by calling a method to update conversion values, such as [`updateConversionValue(_:coarseConversionValue:lockPostback:)`](postback/updateconversionvalue(_:coarseconversionvalue:lockpostback:).md).
+- **`conversion-value`**: (optional) An unsigned 6-bit value that the advertised app sets by calling a method to update the conversion value, such as [`updateConversionValue(_:lockPostback:)`](./postback/updateconversionvalue%28_,lockpostback%29.md).
+- **`coarse-conversion-value`**: (optional) Possible values are the strings `low`, `medium`, and `high`. The advertised app sets this value by calling a method to update conversion values, such as [`updateConversionValue(_:coarseConversionValue:lockPostback:)`](./postback/updateconversionvalue%28_,coarseconversionvalue,lockpostback%29.md).
 - **`ad-interaction-type`**: The string *view*, indicating that the postback is the result of a view-through impression, or the string *click*, indicating that it’s the result of a click-through impression.
 - **`jws-string`**: A compact JSON web signature (JWS) of the Apple-signed postback contents.
-- **`country-code`**: An ISO 3166-2 two-letter country identifier. For apps installed from the App Store, it comes from the location of the signed-in account at the time of the app install. For third-party marketplaces, it comes from the proof of download (POD) token the marketplace provides and represents the country the app is installed from. For more information on POD tokens, see [`Supplying an install verification token`](https://developer.apple.com/documentation/marketplacekit/supplying-an-install-verification-token).
+- **`country-code`**: An ISO 3166-2 two-letter country identifier. For apps installed from the App Store, it comes from the location of the signed-in account at the time of the app install. For third-party marketplaces, it comes from the proof of download (POD) token the marketplace provides and represents the country the app is installed from. For more information on POD tokens, see [Supplying an install verification token](../MarketplaceKit/supplying-an-install-verification-token.md).
 
-#### Examine the Jws Header for the Encryption Algorithm and Key Identifier
+#### Examine the JWS header for the encryption algorithm and key identifier
 
 The JWS header of the postback consists of two parameters and resembles the following structure:
 
@@ -45,7 +46,7 @@ The keys for this structure are:
 - **`alg`**: The encryption algorithm Apple uses to sign the postback.
 - **`kid`**: The identifier of the key Apple uses to sign the postback.
 
-#### Examine the Jws Payload of the Postback
+#### Examine the JWS payload of the postback
 
 The JWS decoded payload of the postback resembles the following structure:
 
@@ -71,19 +72,19 @@ The keys the framework delivers in this structure may include the following:
 - **`marketplace-identifier`**: (optional) The bundle ID of the alternative marketplace the advertised app is installed from.
 - **`ad-network-identifier`**: The string that identifies the ad network.
 - **`impression-type`**: The string `app-impression`.
-- **`postback-sequence-index`**: The possible integer values of `0`, `1`, and `2` signify the order of postbacks that result from the three conversion windows. For more information, see [`Receiving postbacks in multiple conversion windows`](receiving-postbacks-in-multiple-conversion-windows.md).
+- **`postback-sequence-index`**: The possible integer values of `0`, `1`, and `2` signify the order of postbacks that result from the three conversion windows. For more information, see [Receiving postbacks in multiple conversion windows](./receiving-postbacks-in-multiple-conversion-windows.md).
 - **`source-identifier`**: The hierarchical source identifier with two, three, or four digits.
 - **`did-win`**: A Boolean value that’s `true` if the ad network wins the attribution, or `false` if the postback represents a qualifying ad impression that doesn’t win the attribution.
 - **`postback-identifier`**: The postback’s unique identifier.
 - **`publisher-item-identifier`**: (optional) The app ID of the app that displays the ad.
 
-#### Examine the Postbacks Jws Signature
+#### Examine the postback’s JWS signature
 
 The signature is a combination of the JSON Web Signature (JWS) header and payload components that Apple signs using its private key.
 
-For more information about verifying the postback’s signature, see [`Verifying a postback`](verifying-a-postback.md). For more information about receiving postbacks, see [`Receiving postbacks in multiple conversion windows`](receiving-postbacks-in-multiple-conversion-windows.md).
+For more information about verifying the postback’s signature, see [Verifying a postback](./verifying-a-postback.md). For more information about receiving postbacks, see [Receiving postbacks in multiple conversion windows](./receiving-postbacks-in-multiple-conversion-windows.md).
 
-#### Understand the Crowd Anonymity Controlled Properties
+#### Understand the crowd anonymity controlled properties
 
 To help ensure crowd anonymity, Apple assigns a postback data tier to app downloads. The postback data tier determines whether certain parameters appear in the postback, as well as the number of digits in the hierarchical source identifier. The following postback parameters are subject to the postback data tier:
 
@@ -96,7 +97,8 @@ To help ensure crowd anonymity, Apple assigns a postback data tier to app downlo
 
 ## See Also
 
-- [Verifying a postback](verifying-a-postback.md)
+### Postback verification and parameter identification
+- [Verifying a postback](./verifying-a-postback.md)
   Ensure the validity of a postback you receive after an ad conversion by verifying its cryptographic signature.
 
 

@@ -1,7 +1,8 @@
 # scanHexDouble(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scans for a double value from a hexadecimal representation, returning a found value by reference.
 
@@ -20,9 +21,13 @@ Scans for a double value from a hexadecimal representation, returning a found va
 func scanHexDouble(_ result: UnsafeMutablePointer<Double>?) -> Bool
 ```
 
+```objc
+- (BOOL) scanHexDouble:(double *) result;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver finds a valid double-point representation, otherwise [`false`](https://developer.apple.com/documentation/swift/false). Overflow or underflow are both considered valid floating-point representations.
+[`true`](../../Swift/true.md) if the receiver finds a valid double-point representation, otherwise [`false`](../../Swift/false.md). Overflow or underflow are both considered valid floating-point representations.
 
 #### Discussion
 
@@ -38,25 +43,26 @@ Invoke this method with `NULL` as `result` to simply scan past a hexadecimal dou
 
 ## See Also
 
-- [func scanDecimal(UnsafeMutablePointer<Decimal>?) -> Bool](scanner/scandecimal(_:).md)
+### Scanning Numeric Values
+- [func scanDecimal(UnsafeMutablePointer<Decimal>?) -> Bool](./scandecimal%28_%29.md)
   Scans for an `NSDecimal` value, returning a found value by reference.
-- [func scanDouble(UnsafeMutablePointer<Double>?) -> Bool](scanner/scandouble(_:).md)
+- [func scanDouble(UnsafeMutablePointer<Double>?) -> Bool](./scandouble%28_%29.md)
   Scans for a double value, returning a found value by reference.
-- [func scanFloat(UnsafeMutablePointer<Float>?) -> Bool](scanner/scanfloat(_:).md)
+- [func scanFloat(UnsafeMutablePointer<Float>?) -> Bool](./scanfloat%28_%29.md)
   Scans for a float value, returning a found value by reference.
-- [func scanHexFloat(UnsafeMutablePointer<Float>?) -> Bool](scanner/scanhexfloat(_:).md)
+- [func scanHexFloat(UnsafeMutablePointer<Float>?) -> Bool](./scanhexfloat%28_%29.md)
   Scans for a double value from a hexadecimal representation, returning a found value by reference.
-- [func scanHexInt32(UnsafeMutablePointer<UInt32>?) -> Bool](scanner/scanhexint32(_:).md)
+- [func scanHexInt32(UnsafeMutablePointer<UInt32>?) -> Bool](./scanhexint32%28_%29.md)
   Scans for an unsigned value from a hexadecimal representation, returning a found value by reference.
-- [func scanHexInt64(UnsafeMutablePointer<UInt64>?) -> Bool](scanner/scanhexint64(_:).md)
+- [func scanHexInt64(UnsafeMutablePointer<UInt64>?) -> Bool](./scanhexint64%28_%29.md)
   Scans for a long long value from a hexadecimal representation, returning a found value by reference.
-- [func scanInt(UnsafeMutablePointer<Int>?) -> Bool](scanner/scanint(_:).md)
+- [func scanInt(UnsafeMutablePointer<Int>?) -> Bool](./scanint%28_%29.md)
   Scans for an NSInteger value from a decimal representation, returning a found value by reference
-- [func scanInt32(UnsafeMutablePointer<Int32>?) -> Bool](scanner/scanint32(_:).md)
+- [func scanInt32(UnsafeMutablePointer<Int32>?) -> Bool](./scanint32%28_%29.md)
   Scans for an int value from a decimal representation, returning a found value by reference.
-- [func scanInt64(UnsafeMutablePointer<Int64>?) -> Bool](scanner/scanint64(_:).md)
+- [func scanInt64(UnsafeMutablePointer<Int64>?) -> Bool](./scanint64%28_%29.md)
   Scans for a long long value from a decimal representation, returning a found value by reference.
-- [func scanUnsignedLongLong(UnsafeMutablePointer<UInt64>?) -> Bool](scanner/scanunsignedlonglong(_:).md)
+- [func scanUnsignedLongLong(UnsafeMutablePointer<UInt64>?) -> Bool](./scanunsignedlonglong%28_%29.md)
   Scans for an unsigned long long value from a decimal representation, returning a found value by reference.
 
 

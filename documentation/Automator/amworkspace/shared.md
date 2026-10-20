@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Automator  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared workspace object.
 
@@ -13,6 +14,10 @@ The shared workspace object.
 
 ```swift
 class var shared: AMWorkspace! { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) AMWorkspace * sharedWorkspace;
 ```
 
 

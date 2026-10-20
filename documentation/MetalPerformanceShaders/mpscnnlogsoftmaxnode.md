@@ -1,7 +1,8 @@
 # MPSCNNLogSoftMaxNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a logarithmic softmax filter kernel.
 
@@ -19,30 +20,35 @@ A representation of a logarithmic softmax filter kernel.
 class MPSCNNLogSoftMaxNode
 ```
 
+```objc
+@interface MPSCNNLogSoftMaxNode : MPSNNFilterNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpscnnlogsoftmaxnode/init(source:).md)
+- [init(source: MPSNNImageNode)](./mpscnnlogsoftmaxnode/init%28source%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNFilterNode](mpsnnfilternode.md)
+- [MPSNNFilterNode](./mpsnnfilternode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNSoftMaxNode](mpscnnsoftmaxnode.md)
+### Softmax Layer Nodes
+- [class MPSCNNSoftMaxNode](./mpscnnsoftmaxnode.md)
   A representation of a softmax filter.
-- [class MPSCNNLogSoftMaxGradientNode](mpscnnlogsoftmaxgradientnode.md)
+- [class MPSCNNLogSoftMaxGradientNode](./mpscnnlogsoftmaxgradientnode.md)
   A representation of a gradient logarithmic softmax filter kernel.
-- [class MPSCNNSoftMaxGradientNode](mpscnnsoftmaxgradientnode.md)
+- [class MPSCNNSoftMaxGradientNode](./mpscnnsoftmaxgradientnode.md)
   A representation of a gradient softmax filter.
 
 

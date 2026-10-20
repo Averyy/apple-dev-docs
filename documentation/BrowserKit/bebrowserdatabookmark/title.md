@@ -1,7 +1,8 @@
 # title
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized title for a bookmark.
 
@@ -15,13 +16,18 @@ A localized title for a bookmark.
 var title: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * title;
+```
+
 ## See Also
 
-- [var identifier: String](bebrowserdatabookmark/identifier.md)
+### Accessing bookmark properties
+- [var identifier: String](./identifier.md)
   A unique identifier for a bookmark.
-- [var isFolder: Bool](bebrowserdatabookmark/isfolder.md)
+- [var isFolder: Bool](./isfolder.md)
   A Boolean value that indicates whether a bookmark represents a folder.
-- [var url: URL?](bebrowserdatabookmark/url.md)
+- [var url: URL?](./url.md)
   A URL to which a bookmark points.
 
 

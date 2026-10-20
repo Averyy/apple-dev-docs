@@ -1,7 +1,8 @@
 # MLHandPoseClassifier.ModelParameters.ModelAlgorithmType
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The hand pose classifier training algorithm options.
 
@@ -21,22 +22,23 @@ enum ModelAlgorithmType
 ## Topics
 
 ### Choosing an algorithm type
-- [MLHandPoseClassifier.ModelParameters.ModelAlgorithmType.gcn](mlhandposeclassifier/modelparameters-swift.struct/modelalgorithmtype/gcn.md)
+- [MLHandPoseClassifier.ModelParameters.ModelAlgorithmType.gcn](./modelalgorithmtype/gcn.md)
   Selects the graph convolutional neural-network algorithm for a hand pose classifier.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLHandPoseClassifier.ImageAugmentationOptions](mlhandposeclassifier/imageaugmentationoptions.md)
+### Parameter supporting types
+- [MLHandPoseClassifier.ImageAugmentationOptions](../imageaugmentationoptions.md)
   Options a hand pose classification training session can use to generate additional training data from the images you provide.
-- [MLHandPoseClassifier.ModelParameters.ValidationData](mlhandposeclassifier/modelparameters-swift.struct/validationdata.md)
+- [MLHandPoseClassifier.ModelParameters.ValidationData](./validationdata.md)
   A dataset a hand pose classifier task uses to validate the model during a training session.
 
 

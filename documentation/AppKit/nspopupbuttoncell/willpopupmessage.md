@@ -1,7 +1,8 @@
 # NSPopUpButtonCell.WillPopUpMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,15 +16,15 @@ struct WillPopUpMessage
 ## Topics
 
 ### Initializers
-- [init(popUpButtonCell: NSPopUpButtonCell)](nspopupbuttoncell/willpopupmessage/init(popupbuttoncell:).md)
+- [init(popUpButtonCell: NSPopUpButtonCell)](./willpopupmessage/init%28popupbuttoncell%29.md)
 ### Instance Properties
-- [var popUpButtonCell: NSPopUpButtonCell](nspopupbuttoncell/willpopupmessage/popupbuttoncell.md)
+- [var popUpButtonCell: NSPopUpButtonCell](./willpopupmessage/popupbuttoncell.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

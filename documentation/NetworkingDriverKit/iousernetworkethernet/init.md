@@ -1,16 +1,17 @@
 # init
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles the basic initialization of the service.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
@@ -20,15 +21,16 @@ virtual bool init();
 
 #### Discussion
 
-The system calls this method shortly after it instantiates your [`IOUserNetworkEthernet`](iousernetworkethernet.md) subclass, and before it calls the [`Start`](https://developer.apple.com/documentation/driverkit/ioservice/start) method of your service. Limit the work you do in this method to simple tasks that must occur before your service stats. For example, you might use this method to allocate memory for your `ivars` structure.
+The system calls this method shortly after it instantiates your [`IOUserNetworkEthernet`](../iousernetworkethernet.md) subclass, and before it calls the [`Start`](../../DriverKit/ioservice/start.md) method of your service. Limit the work you do in this method to simple tasks that must occur before your service stats. For example, you might use this method to allocate memory for your `ivars` structure.
 
 Always call the `super` implementation of this method at some point.
 
 ## See Also
 
-- [free](iousernetworkethernet/free.md)
+### Configuring the Driver Service
+- [free](./free.md)
   Performs any final cleanup for the service.
-- [RegisterEthernetInterface](iousernetworkethernet/registerethernetinterface-4jqw8.md)
+- [RegisterEthernetInterface](./registerethernetinterface-4jqw8.md)
   Registers your driver with the networking stack.
 
 

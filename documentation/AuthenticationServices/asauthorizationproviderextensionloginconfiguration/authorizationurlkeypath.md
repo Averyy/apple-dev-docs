@@ -1,7 +1,8 @@
 # authorizationURLKeypath
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 27.0+
@@ -12,9 +13,13 @@
 var authorizationURLKeypath: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * authorizationURLKeypath;
+```
+
 ## Mentions
 
-- [Implementing web-based authentication with Platform Single Sign-on](implementing-web-based-authentication.md)
+- [Implementing web-based authentication with Platform Single Sign-on](../implementing-web-based-authentication.md)
 
 #### Discussion
 

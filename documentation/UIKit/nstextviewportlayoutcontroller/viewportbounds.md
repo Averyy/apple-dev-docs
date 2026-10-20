@@ -1,7 +1,8 @@
 # viewportBounds
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the visible bounds of the view, plus the overdraw area.
 
@@ -18,15 +19,20 @@ Returns the visible bounds of the view, plus the overdraw area.
 var viewportBounds: CGRect { get }
 ```
 
+```objc
+@property (readonly) CGRect viewportBounds;
+```
+
 ## See Also
 
-- [var viewportRange: NSTextRange?](nstextviewportlayoutcontroller/viewportrange.md)
+### Accessing the viewport characteristics
+- [var viewportRange: NSTextRange?](./viewportrange.md)
   Returns the text range of the current viewport layout.
-- [func adjustViewport(byVerticalOffset: CGFloat)](nstextviewportlayoutcontroller/adjustviewport(byverticaloffset:).md)
+- [func adjustViewport(byVerticalOffset: CGFloat)](./adjustviewport%28byverticaloffset%29.md)
   Adjusts the viewport rect by the specified offset if needed.
-- [func layoutViewport()](nstextviewportlayoutcontroller/layoutviewport.md)
+- [func layoutViewport()](./layoutviewport%28%29.md)
   Performs layout in the viewport.
-- [func relocateViewport(to: any NSTextLocation) -> CGFloat](nstextviewportlayoutcontroller/relocateviewport(to:).md)
+- [func relocateViewport(to: any NSTextLocation) -> CGFloat](./relocateviewport%28to%29.md)
   Relocates the viewport to the location you specify.
 
 

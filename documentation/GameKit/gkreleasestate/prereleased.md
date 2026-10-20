@@ -1,7 +1,8 @@
 # prereleased
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The resource has been created in App Store Connect but isn’t yet associated with a released version of an App.
 
@@ -18,6 +19,10 @@ The resource has been created in App Store Connect but isn’t yet associated wi
 
 ```swift
 static var prereleased: GKReleaseState { get }
+```
+
+```c
+GKReleaseStatePrereleased
 ```
 
 

@@ -1,13 +1,14 @@
 # es_event_remount_t
 
 **Framework**: Endpoint Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type for an event that indicates the unmounting of a file system.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,29 +16,34 @@ A type for an event that indicates the unmounting of a file system.
 struct es_event_remount_t
 ```
 
+```c
+typedef struct { ... } es_event_remount_t;
+```
+
 ## Topics
 
 ### Inspecting Event Properties
-- [var statfs: UnsafeMutablePointer<statfs>](es_event_remount_t/statfs.md)
+- [var statfs: UnsafeMutablePointer<statfs>](./es_event_remount_t/statfs.md)
   The statistics of the remounted file system.
-- [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](es_event_remount_t/reserved.md)
+- [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](./es_event_remount_t/reserved.md)
   An unused field reserved for future use.
 ### Initializers
-- [init(statfs: UnsafeMutablePointer<statfs>, remount_flags: UInt64, disposition: es_mount_disposition_t, reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8))](es_event_remount_t/init(statfs:remount_flags:disposition:reserved:).md)
+- [init(statfs: UnsafeMutablePointer<statfs>, remount_flags: UInt64, disposition: es_mount_disposition_t, reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8))](./es_event_remount_t/init%28statfs,remount_flags,disposition,reserved%29.md)
 ### Instance Properties
-- [var disposition: es_mount_disposition_t](es_event_remount_t/disposition.md)
-- [var remount_flags: UInt64](es_event_remount_t/remount_flags.md)
+- [var disposition: es_mount_disposition_t](./es_event_remount_t/disposition.md)
+- [var remount_flags: UInt64](./es_event_remount_t/remount_flags.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct es_event_mount_t](es_event_mount_t.md)
+### File System Mounting Event Types
+- [struct es_event_mount_t](./es_event_mount_t.md)
   A type for an event that indicates the mounting of a file system.
-- [struct es_event_unmount_t](es_event_unmount_t.md)
+- [struct es_event_unmount_t](./es_event_unmount_t.md)
   A type for an event that indicates the unmounting of a file system.
 
 

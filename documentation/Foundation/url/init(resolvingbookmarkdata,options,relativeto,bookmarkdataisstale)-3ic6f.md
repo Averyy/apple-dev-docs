@@ -1,7 +1,8 @@
 # init(resolvingBookmarkData:options:relativeTo:bookmarkDataIsStale:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL that refers to a location specified by resolving bookmark data.
 
@@ -24,20 +25,29 @@ init(resolvingBookmarkData data: Data, options: URL.BookmarkResolutionOptions = 
 ## Parameters
 
 - `data`: The bookmark data used to construct a URL.
-- `options`: Options taken into account when resolving the bookmark data. To resolve a security-scoped bookmark to support App Sandbox, include the [`withSecurityScope`](nsurl/bookmarkresolutionoptions/withsecurityscope.md) option.
-- `url`: The base URL that the bookmark data is relative to. If you’re resolving a security-scoped bookmark to obtain a security-scoped URL, use this parameter as follows: - To resolve an app-scoped bookmark, use a value of `nil`.
-- To resolve a document-scoped bookmark, use the *absolute* path (despite this parameter’s name) to the document from which you retrieved the bookmark. App Sandbox doesn’t restrict which URL values you can pass to this parameter.
+- `options`: Options taken into account when resolving the bookmark data.
+
+  To resolve a security-scoped bookmark to support App Sandbox, include the [`withSecurityScope`](../nsurl/bookmarkresolutionoptions/withsecurityscope.md) option.
+- `url`: The base URL that the bookmark data is relative to.
+
+  If you’re resolving a security-scoped bookmark to obtain a security-scoped URL, use this parameter as follows:
+
+  - To resolve an app-scoped bookmark, use a value of `nil`.
+  - To resolve a document-scoped bookmark, use the *absolute* path (despite this parameter’s name) to the document from which you retrieved the bookmark.
+
+  App Sandbox doesn’t restrict which URL values you can pass to this parameter.
 - `bookmarkDataIsStale`: On return, if `true`, the bookmark data is stale. Your app should create a new bookmark using the returned URL and use it in place of any stored copies of the existing bookmark.
 
 ## See Also
 
-- [init?(string: String)](url/init(string:).md)
+### Creating a URL from a string
+- [init?(string: String)](./init%28string%29.md)
   Creates a URL instance from the provided string.
-- [init?(string: String, encodingInvalidCharacters: Bool)](url/init(string:encodinginvalidcharacters:).md)
+- [init?(string: String, encodingInvalidCharacters: Bool)](./init%28string,encodinginvalidcharacters%29.md)
   Creates a URL instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
-- [init?(string: String, relativeTo: URL?)](url/init(string:relativeto:).md)
+- [init?(string: String, relativeTo: URL?)](./init%28string,relativeto%29.md)
   Creates a URL instance from the provided string, relative to another URL.
-- [init?(resolvingBookmarkData: Data, options: URL.BookmarkResolutionOptions, relativeTo: URL?, bookmarkDataIsStale: inout Bool) throws](url/init(resolvingbookmarkdata:options:relativeto:bookmarkdataisstale:)-97e6x.md)
+- [init?(resolvingBookmarkData: Data, options: URL.BookmarkResolutionOptions, relativeTo: URL?, bookmarkDataIsStale: inout Bool) throws](./init%28resolvingbookmarkdata,options,relativeto,bookmarkdataisstale%29-97e6x.md)
   Initializes a URL that refers to a location specified by resolving bookmark data.
 
 

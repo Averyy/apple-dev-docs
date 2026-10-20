@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foveated Streaming  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the FoveatedStreamingSession.
 
@@ -17,7 +18,7 @@ init()
 
 #### Discussion
 
-To attempt a connection, call [`connect(endpoint:)`](foveatedstreamingsession/connect(endpoint:).md).
+To attempt a connection, call [`connect(endpoint:)`](./connect%28endpoint%29.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # UINavigationBar.NSToolbarSection.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that disables hosting the navigation bar in the toolbar.
 
@@ -17,17 +18,22 @@ A constant that disables hosting the navigation bar in the toolbar.
 case none
 ```
 
+```c
+UINavigationBarNSToolbarSectionNone
+```
+
 #### Discussion
 
-Use this value to disable [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) hosting. This value is equivalent to setting the [`preferredBehavioralStyle`](uinavigationbar/preferredbehavioralstyle.md) of the navigation bar to [`UIBehavioralStyle.pad`](uibehavioralstyle/pad.md).
+Use this value to disable [`NSToolbar`](../../../AppKit/nstoolbar.md) hosting. This value is equivalent to setting the [`preferredBehavioralStyle`](../preferredbehavioralstyle.md) of the navigation bar to [`UIBehavioralStyle.pad`](../../uibehavioralstyle/pad.md).
 
 ## See Also
 
-- [UINavigationBar.NSToolbarSection.sidebar](uinavigationbar/nstoolbarsection/sidebar.md)
+### Constants
+- [UINavigationBar.NSToolbarSection.sidebar](./sidebar.md)
   A constant that hosts the navigation bar in the toolbar’s sidebar column.
-- [UINavigationBar.NSToolbarSection.supplementary](uinavigationbar/nstoolbarsection/supplementary.md)
+- [UINavigationBar.NSToolbarSection.supplementary](./supplementary.md)
   A constant that hosts the navigation bar in the toolbar’s supplementary column.
-- [UINavigationBar.NSToolbarSection.content](uinavigationbar/nstoolbarsection/content.md)
+- [UINavigationBar.NSToolbarSection.content](./content.md)
   A constant that hosts the navigation bar in the toolbar’s content column.
 
 

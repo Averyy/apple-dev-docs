@@ -1,7 +1,8 @@
 # onshippingmethodselected
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An event handler to call when the user selects a shipping method.
 
@@ -11,7 +12,7 @@ An event handler to call when the user selects a shipping method.
 
 ## Declaration
 
-```swift
+```
 attribute EventHandler onshippingmethodselected;
 ```
 
@@ -19,17 +20,18 @@ attribute EventHandler onshippingmethodselected;
 
 This attribute must be set to a function that accepts an `events` argument; for example, `session.onshippingmethodselected = function(event) {}`.
 
-The event parameter contains the [`shippingMethod`](applepayshippingmethodselectedevent/shippingmethod.md) attribute.
+The event parameter contains the [`shippingMethod`](../applepayshippingmethodselectedevent/shippingmethod.md) attribute.
 
-The [`onshippingmethodselected`](applepaysession/onshippingmethodselected.md) function must respond by calling [`completeShippingMethodSelection`](applepaysession/completeshippingmethodselection.md) before the 30 second timeout, after which a message appears stating that the payment could not be completed.
+The [`onshippingmethodselected`](./onshippingmethodselected.md) function must respond by calling [`completeShippingMethodSelection`](./completeshippingmethodselection.md) before the 30 second timeout, after which a message appears stating that the payment could not be completed.
 
 ## See Also
 
-- [completeShippingMethodSelection](applepaysession/completeshippingmethodselection.md)
+### Handling shipping method updates
+- [completeShippingMethodSelection](./completeshippingmethodselection.md)
   Completes the selection of a shipping method with an update.
-- [ApplePayShippingMethodSelectedEvent](applepayshippingmethodselectedevent.md)
+- [ApplePayShippingMethodSelectedEvent](../applepayshippingmethodselectedevent.md)
   An event object that contains the shipping method.
-- [ApplePayShippingMethodUpdate](applepayshippingmethodupdate.md)
+- [ApplePayShippingMethodUpdate](../applepayshippingmethodupdate.md)
   Updated transaction details that result from a change in shipping method.
 
 

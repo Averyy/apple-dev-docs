@@ -1,7 +1,8 @@
 # EndUserLicenseAgreementUpdateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update an End User License Agreement.
 
@@ -10,14 +11,14 @@ The request body you use to update an End User License Agreement.
 
 ## Declaration
 
-```swift
+```
 object EndUserLicenseAgreementUpdateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object EndUserLicenseAgreementUpdateRequest.Data](enduserlicenseagreementupdaterequest/data-data.dictionary.md)
+- [object EndUserLicenseAgreementUpdateRequest.Data](./enduserlicenseagreementupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
 ## Properties
@@ -26,16 +27,17 @@ object EndUserLicenseAgreementUpdateRequest
 
 ## See Also
 
-- [object EndUserLicenseAgreement](enduserlicenseagreement.md)
+### Objects
+- [object EndUserLicenseAgreement](./enduserlicenseagreement.md)
   A custom end-user license agreement (EULA) for an app, targeting specific territories where it applies.
-- [object EndUserLicenseAgreementCreateRequest](enduserlicenseagreementcreaterequest.md)
+- [object EndUserLicenseAgreementCreateRequest](./enduserlicenseagreementcreaterequest.md)
   The request body you use to create an End User License Agreement.
-- [object EndUserLicenseAgreementResponse](enduserlicenseagreementresponse.md)
+- [object EndUserLicenseAgreementResponse](./enduserlicenseagreementresponse.md)
   The response body for endpoints that read or modify a custom end user license agreement for an app.
-- [object EndUserLicenseAgreementWithoutIncludesResponse](enduserlicenseagreementwithoutincludesresponse.md)
+- [object EndUserLicenseAgreementWithoutIncludesResponse](./enduserlicenseagreementwithoutincludesresponse.md)
   A response containing a single EULA, without including territory details.
-- [object AppEndUserLicenseAgreementLinkageResponse](appenduserlicenseagreementlinkageresponse.md)
-- [object EndUserLicenseAgreementTerritoriesLinkagesResponse](enduserlicenseagreementterritorieslinkagesresponse.md)
+- [object AppEndUserLicenseAgreementLinkageResponse](./appenduserlicenseagreementlinkageresponse.md)
+- [object EndUserLicenseAgreementTerritoriesLinkagesResponse](./enduserlicenseagreementterritorieslinkagesresponse.md)
 
 
 ---

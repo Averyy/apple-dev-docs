@@ -1,7 +1,8 @@
 # MediaDestinationLibrary
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The user’s library as a destination for an add media intent.
 
@@ -10,7 +11,7 @@ The user’s library as a destination for an add media intent.
 
 ## Declaration
 
-```swift
+```
 object MediaDestinationLibrary
 ```
 
@@ -18,18 +19,21 @@ object MediaDestinationLibrary
 
 - `mediaDestinationType` (string) *(required)*: The type of collection the user wants to store their media items in.
 
+  **Allowed Values**: `library`
+
 ## Relationships
 
 ### Inherits From
-- [MediaDestination](mediadestination.md)
+- [MediaDestination](./mediadestination.md)
 
 ## See Also
 
-- [object AddMediaMediaDestinationResolutionResult.Success](addmediamediadestinationresolutionresult/success-data.dictionary.md)
+### Providing a Destination
+- [object AddMediaMediaDestinationResolutionResult.Success](./addmediamediadestinationresolutionresult/success-data.dictionary.md)
   A media destination that successfully matches an intent.
-- [object MediaDestination](mediadestination.md)
+- [object MediaDestination](./mediadestination.md)
   The user’s library or a playlist.
-- [object MediaDestinationPlaylist](mediadestinationplaylist.md)
+- [object MediaDestinationPlaylist](./mediadestinationplaylist.md)
   A playlist as a destination for an add media intent.
 
 

@@ -1,7 +1,8 @@
 # compare(byRank:)
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares two items by rank and returns the result.
 
@@ -16,6 +17,10 @@ Compares two items by rank and returns the result.
 
 ```swift
 func compare(byRank other: CSSearchableItem) -> ComparisonResult
+```
+
+```objc
+- (NSComparisonResult) compareByRank:(CSSearchableItem *) other;
 ```
 
 #### Return Value

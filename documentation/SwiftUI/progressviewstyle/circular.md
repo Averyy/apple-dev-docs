@@ -1,7 +1,8 @@
 # circular
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The style of a progress view that uses a circular gauge to indicate the partial completion of an activity.
 
@@ -21,17 +22,20 @@ The style of a progress view that uses a circular gauge to indicate the partial 
 nonisolated static var circular: CircularProgressViewStyle { get }
 ```
 
+Available when `Self` is `CircularProgressViewStyle`.
+
 #### Discussion
 
-On watchOS, and in widgets and complications, a circular progress view appears as a gauge with the [`accessoryCircularCapacity`](gaugestyle/accessorycircularcapacity.md) style. If the progress view is indeterminate, the gauge is empty.
+On watchOS, and in widgets and complications, a circular progress view appears as a gauge with the [`accessoryCircularCapacity`](../gaugestyle/accessorycircularcapacity.md) style. If the progress view is indeterminate, the gauge is empty.
 
 In cases where no determinate circular progress view style is available, circular progress views use an indeterminate style.
 
 ## See Also
 
-- [static var automatic: DefaultProgressViewStyle](progressviewstyle/automatic.md)
+### Getting built-in progress view styles
+- [static var automatic: DefaultProgressViewStyle](./automatic.md)
   The default progress view style in the current context of the view being styled.
-- [static var linear: LinearProgressViewStyle](progressviewstyle/linear.md)
+- [static var linear: LinearProgressViewStyle](./linear.md)
   A progress view that visually indicates its progress using a horizontal bar.
 
 

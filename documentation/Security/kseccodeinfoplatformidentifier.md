@@ -1,7 +1,8 @@
 # kSecCodeInfoPlatformIdentifier
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value identifies the operating system release with which the code is associated, if any.
 
@@ -13,6 +14,10 @@ A key whose value identifies the operating system release with which the code is
 
 ```swift
 let kSecCodeInfoPlatformIdentifier: CFString
+```
+
+```c
+extern CFStringRef const kSecCodeInfoPlatformIdentifier;
 ```
 
 #### Discussion

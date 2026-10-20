@@ -1,7 +1,8 @@
 # checkerboardGenerator()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Generates a checkerboard image.
 
@@ -19,6 +20,10 @@ Generates a checkerboard image.
 class func checkerboardGenerator() -> any CIFilter & CICheckerboardGenerator
 ```
 
+```objc
++ (CIFilter<CICheckerboardGenerator> *) checkerboardGeneratorFilter;
+```
+
 #### Return Value
 
 The generated image.
@@ -29,11 +34,11 @@ This method generates a checkerboard pattern as an image. The effect requires th
 
 The checkerboard generator filter uses the following properties:
 
-- **`center`**: A `vector` representing the center of the image as a [`CIVector`](civector.md).
-- **`color0`**: A [`CIColor`](cicolor.md) representing the first color of the pattern.
-- **`color1`**: A [`CIColor`](cicolor.md) representing the second color of the pattern.
-- **`sharpness`**: A `float` representing the sharpness of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`width`**: A `float` representing the width of the checkerboard squares as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`center`**: A `vector` representing the center of the image as a [`CIVector`](../civector.md).
+- **`color0`**: A [`CIColor`](../cicolor.md) representing the first color of the pattern.
+- **`color1`**: A [`CIColor`](../cicolor.md) representing the second color of the pattern.
+- **`sharpness`**: A `float` representing the sharpness of the pattern as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`width`**: A `float` representing the width of the checkerboard squares as an [`NSNumber`](../../Foundation/nsnumber.md).
 
 The following code creates a filter that generates a black-and-white checkered pattern:
 
@@ -50,39 +55,40 @@ func checkerBoard() -> CIImage {
 }
 ```
 
-![An image of small black-and-white squares repeating, creating a checkerboard pattern.](/images/com.apple.coreimage/media-3590970@2x.png)
+![An image of small black-and-white squares repeating, creating a checkerboard pattern.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-3590970@2x.png)
 
 ## See Also
 
-- [class func attributedTextImageGenerator() -> any CIFilter & CIAttributedTextImageGenerator](cifilter-swift.class/attributedtextimagegenerator.md)
+### Filters
+- [class func attributedTextImageGenerator() -> any CIFilter & CIAttributedTextImageGenerator](./attributedtextimagegenerator%28%29.md)
   Generates an attributed-text image.
-- [class func aztecCodeGenerator() -> any CIFilter & CIAztecCodeGenerator](cifilter-swift.class/azteccodegenerator.md)
+- [class func aztecCodeGenerator() -> any CIFilter & CIAztecCodeGenerator](./azteccodegenerator%28%29.md)
   Generates a low-density barcode.
-- [class func barcodeGenerator() -> any CIFilter & CIBarcodeGenerator](cifilter-swift.class/barcodegenerator.md)
+- [class func barcodeGenerator() -> any CIFilter & CIBarcodeGenerator](./barcodegenerator%28%29.md)
   Generates a barcode as an image from the descriptor.
-- [class func blurredRectangleGenerator() -> any CIFilter & CIBlurredRectangleGenerator](cifilter-swift.class/blurredrectanglegenerator.md)
+- [class func blurredRectangleGenerator() -> any CIFilter & CIBlurredRectangleGenerator](./blurredrectanglegenerator%28%29.md)
   Generates a blurred rectangle.
-- [class func code128BarcodeGenerator() -> any CIFilter & CICode128BarcodeGenerator](cifilter-swift.class/code128barcodegenerator.md)
+- [class func code128BarcodeGenerator() -> any CIFilter & CICode128BarcodeGenerator](./code128barcodegenerator%28%29.md)
   Generates a high-density, linear barcode.
-- [class func lenticularHaloGenerator() -> any CIFilter & CILenticularHaloGenerator](cifilter-swift.class/lenticularhalogenerator.md)
+- [class func lenticularHaloGenerator() -> any CIFilter & CILenticularHaloGenerator](./lenticularhalogenerator%28%29.md)
   Generates a lenticular halo image.
-- [class func meshGenerator() -> any CIFilter & CIMeshGenerator](cifilter-swift.class/meshgenerator.md)
+- [class func meshGenerator() -> any CIFilter & CIMeshGenerator](./meshgenerator%28%29.md)
   Generates a pattern made from an array of line segments.
-- [class func pdf417BarcodeGenerator() -> any CIFilter & CIPDF417BarcodeGenerator](cifilter-swift.class/pdf417barcodegenerator.md)
+- [class func pdf417BarcodeGenerator() -> any CIFilter & CIPDF417BarcodeGenerator](./pdf417barcodegenerator%28%29.md)
   Generates a high-density linear barcode.
-- [class func qrCodeGenerator() -> any CIFilter & CIQRCodeGenerator](cifilter-swift.class/qrcodegenerator.md)
+- [class func qrCodeGenerator() -> any CIFilter & CIQRCodeGenerator](./qrcodegenerator%28%29.md)
   Generates a quick response (QR) code image.
-- [class func randomGenerator() -> any CIFilter & CIRandomGenerator](cifilter-swift.class/randomgenerator.md)
+- [class func randomGenerator() -> any CIFilter & CIRandomGenerator](./randomgenerator%28%29.md)
   Generates a random filter image.
-- [class func roundedRectangleGenerator() -> any CIFilter & CIRoundedRectangleGenerator](cifilter-swift.class/roundedrectanglegenerator.md)
+- [class func roundedRectangleGenerator() -> any CIFilter & CIRoundedRectangleGenerator](./roundedrectanglegenerator%28%29.md)
   Generates a rounded rectangle image.
-- [class func roundedRectangleStrokeGenerator() -> any CIFilter & CIRoundedRectangleStrokeGenerator](cifilter-swift.class/roundedrectanglestrokegenerator.md)
+- [class func roundedRectangleStrokeGenerator() -> any CIFilter & CIRoundedRectangleStrokeGenerator](./roundedrectanglestrokegenerator%28%29.md)
   Creates an image containing the outline of a rounded rectangle.
-- [class func starShineGenerator() -> any CIFilter & CIStarShineGenerator](cifilter-swift.class/starshinegenerator.md)
+- [class func starShineGenerator() -> any CIFilter & CIStarShineGenerator](./starshinegenerator%28%29.md)
   Generates a star-shine image.
-- [class func stripesGenerator() -> any CIFilter & CIStripesGenerator](cifilter-swift.class/stripesgenerator.md)
+- [class func stripesGenerator() -> any CIFilter & CIStripesGenerator](./stripesgenerator%28%29.md)
   Generates a line of stripes as an image
-- [class func sunbeamsGenerator() -> any CIFilter & CISunbeamsGenerator](cifilter-swift.class/sunbeamsgenerator.md)
+- [class func sunbeamsGenerator() -> any CIFilter & CISunbeamsGenerator](./sunbeamsgenerator%28%29.md)
   Generates an image resembling the sun.
 
 

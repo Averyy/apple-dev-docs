@@ -1,7 +1,8 @@
 # CATransformLayer
 
 **Framework**: Core Animation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Objects used to create true 3D layer hierarchies, rather than the flattened hierarchy rendering model used by other layer types.
 
@@ -19,6 +20,10 @@ Objects used to create true 3D layer hierarchies, rather than the flattened hier
 class CATransformLayer
 ```
 
+```objc
+@interface CATransformLayer : CALayer
+```
+
 #### Overview
 
 Unlike normal layers, transform layers do not flatten their sublayers into the plane at `Z=0`. Due to this, they do not support many of the features of the `CALayer` class compositing model:
@@ -26,13 +31,13 @@ Unlike normal layers, transform layers do not flatten their sublayers into the p
 - Only the sublayers of a transform layer are rendered. The `CALayer` properties that are rendered by a layer are ignored, including: `backgroundColor`, `contents`, border style properties, stroke style properties, etc.
 - The properties that assume 2D image processing are also ignored, including: `filters`, `backgroundFilters`, `compositingFilter`, `mask`, `masksToBounds`, and shadow style properties.
 - The `opacity` property is applied to each sublayer individually, the transform layer does not form a compositing group.
-- The [`hitTest(_:)`](calayer/hittest(_:).md) method should never be called on a transform layer as they do not have a 2D coordinate space into which the point can be mapped.
+- The [`hitTest(_:)`](./calayer/hittest%28_%29.md) method should never be called on a transform layer as they do not have a 2D coordinate space into which the point can be mapped.
 
-##### Example Displaying Layers in 3d
+##### Example: Displaying layers in 3D
 
-Because [`CATransformLayer`](catransformlayer.md) creates true 3D layer hierarchies, you can display otherwise hidden layers when applying 3D transforms.
+Because [`CATransformLayer`](./catransformlayer.md) creates true 3D layer hierarchies, you can display otherwise hidden layers when applying 3D transforms.
 
-The following code shows three layers with different colors but identical sizes added at the same position to `layer`. The blue layer is visible because it has the highest [`zPosition`](calayer/zposition.md). Defining the layer’s transform rotates the viewpoint in 3D space and, because `layer` is a [`CATransformLayer`](catransformlayer.md), all three layers are visible as illustrated below.
+The following code shows three layers with different colors but identical sizes added at the same position to `layer`. The blue layer is visible because it has the highest [`zPosition`](./calayer/zposition.md). Defining the layer’s transform rotates the viewpoint in 3D space and, because `layer` is a [`CATransformLayer`](./catransformlayer.md), all three layers are visible as illustrated below.
 
 ```swift
 let layer = CATransformLayer()
@@ -57,36 +62,37 @@ perspective.m34 = -1 / 100
 layer.transform = CATransform3DRotate(perspective, 0.1, 0, 1, 0)
 ```
 
-![Hidden layers made visible in 3D with CATransformLayer](/images/com.apple.quartzcore/media-2826921@2x.png)
+![Hidden layers made visible in 3D with CATransformLayer](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2826921@2x.png)
 
-However, if `layer` is created as a [`CALayer`](calayer.md), the green and red layers, being hidden by the blue layer, are not rendered as illustrated in the following figure.
+However, if `layer` is created as a [`CALayer`](./calayer.md), the green and red layers, being hidden by the blue layer, are not rendered as illustrated in the following figure.
 
-![Hidden layers remain hidden in 3D with CALayer](/images/com.apple.quartzcore/media-2826922@2x.png)
+![Hidden layers remain hidden in 3D with CALayer](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2826922@2x.png)
 
 ## Relationships
 
 ### Inherits From
-- [CALayer](calayer.md)
+- [CALayer](./calayer.md)
 ### Conforms To
-- [CAMediaTiming](camediatiming.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CAMediaTiming](./camediatiming.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CAScrollLayer](cascrolllayer.md)
+### Advanced Layer Options
+- [class CAScrollLayer](./cascrolllayer.md)
   A layer that displays scrollable content larger than its own bounds.
-- [class CATiledLayer](catiledlayer.md)
+- [class CATiledLayer](./catiledlayer.md)
   A layer that provides a way to asynchronously provide tiles of the layer’s content, potentially cached at multiple levels of detail.
-- [class CAReplicatorLayer](careplicatorlayer.md)
+- [class CAReplicatorLayer](./careplicatorlayer.md)
   A layer that creates a specified number of sublayer copies with varying geometric, temporal, and color transformations.
 
 

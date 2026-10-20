@@ -1,7 +1,8 @@
 # EnableLostModeCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to enable Lost Mode on a device, which provides a message and phone number on the Lock Screen.
 
@@ -12,14 +13,14 @@ The command to enable Lost Mode on a device, which provides a message and phone 
 
 ## Declaration
 
-```swift
+```
 object EnableLostModeCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object EnableLostModeCommand.Command](enablelostmodecommand/command-data.dictionary.md)
+- [object EnableLostModeCommand.Command](./enablelostmodecommand/command-data.dictionary.md)
   The command to enable Lost Mode on a device, which provides a message and phone number on the Lock Screen.
 
 ## Properties
@@ -29,7 +30,8 @@ object EnableLostModeCommand
 
 ## See Also
 
-- [object EnableLostModeResponse](enablelostmoderesponse.md)
+### Commands and responses
+- [object EnableLostModeResponse](./enablelostmoderesponse.md)
   A response from the device after it processes the command to enable Lost Mode on a device, which provides a message and phone number on the Lock Screen.
 
 

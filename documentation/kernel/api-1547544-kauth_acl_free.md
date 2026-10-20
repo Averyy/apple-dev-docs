@@ -1,14 +1,15 @@
 # kauth_acl_free
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void kauth_acl_free(kauth_acl_t fsp);
 ```
 

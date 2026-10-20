@@ -1,7 +1,8 @@
 # streamResponse(to:options:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Produces a response stream to a prompt.
 
@@ -19,10 +20,16 @@ Produces a response stream to a prompt.
 final func streamResponse(to prompt: Prompt, options: GenerationOptions = GenerationOptions()) -> sending LanguageModelSession.ResponseStream<String>
 ```
 
+**Other overloads**:
+
+```swift
+final func streamResponse(to prompt: String, options: GenerationOptions = GenerationOptions()) -> sending LanguageModelSession.ResponseStream<String>
+```
+
 ## Mentions
 
-- [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
-- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
+- [Composing dynamic sessions with instructions and profiles](../composing-dynamic-sessions-with-instructions-and-profiles.md)
+- [Running a Core AI model in a Foundation Models session](../running-a-core-ai-model-in-a-foundation-models-session.md)
 
 #### Return Value
 
@@ -30,7 +37,7 @@ A response stream that produces aggregated tokens.
 
 #### Discussion
 
-> ❗ **Important**: If running in the background, use the non-streaming [`respond(to:options:)`](languagemodelsession/respond(to:options:)-6a2gb.md) method to reduce the likelihood of encountering [`LanguageModelError.rateLimited(_:)`](languagemodelerror/ratelimited(_:).md) errors.
+> ❗ **Important**: If running in the background, use the non-streaming [`respond(to:options:)`](./respond%28to,options%29-6a2gb.md) method to reduce the likelihood of encountering [`LanguageModelError.rateLimited(_:)`](../languagemodelerror/ratelimited%28_%29.md) errors.
 
 ## Parameters
 
@@ -39,17 +46,18 @@ A response stream that produces aggregated tokens.
 
 ## See Also
 
-- [func streamResponse(options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<String>](languagemodelsession/streamresponse(options:prompt:).md)
+### Streaming a response
+- [func streamResponse(options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<String>](./streamresponse%28options,prompt%29.md)
   Produces a response stream to a prompt.
-- [func streamResponse<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<Content>](languagemodelsession/streamresponse(generating:includeschemainprompt:options:prompt:).md)
+- [func streamResponse<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<Content>](./streamresponse%28generating,includeschemainprompt,options,prompt%29.md)
   Produces a response stream to a prompt.
-- [func streamResponse(schema: GenerationSchema, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<GeneratedContent>](languagemodelsession/streamresponse(schema:includeschemainprompt:options:prompt:).md)
+- [func streamResponse(schema: GenerationSchema, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<GeneratedContent>](./streamresponse%28schema,includeschemainprompt,options,prompt%29.md)
   Produces a response stream to a prompt and schema.
-- [func streamResponse(to:generating:includeSchemaInPrompt:options:)](languagemodelsession/streamresponse(to:generating:includeschemainprompt:options:).md)
+- [func streamResponse(to:generating:includeSchemaInPrompt:options:)](./streamresponse%28to,generating,includeschemainprompt,options%29.md)
   Produces a response stream to a prompt.
-- [func streamResponse(to:schema:includeSchemaInPrompt:options:)](languagemodelsession/streamresponse(to:schema:includeschemainprompt:options:).md)
+- [func streamResponse(to:schema:includeSchemaInPrompt:options:)](./streamresponse%28to,schema,includeschemainprompt,options%29.md)
   Produces a response stream to a prompt and schema.
-- [LanguageModelSession.ResponseStream](languagemodelsession/responsestream.md)
+- [LanguageModelSession.ResponseStream](./responsestream.md)
   An async sequence of snapshots of partially generated content.
 
 

@@ -1,7 +1,8 @@
 # disableSecureBoot()
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disables Secure Boot while preserving the existing configuration.
 
@@ -12,6 +13,10 @@ Disables Secure Boot while preserving the existing configuration.
 
 ```swift
 func disableSecureBoot() throws
+```
+
+```objc
+- (BOOL) disableSecureBootWithError:(NSError **) error;
 ```
 
 #### Discussion

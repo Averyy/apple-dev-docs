@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,7 +18,7 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [IFNET_WAKE_ON_MAGIC_PACKET](1644628-anonymous/ifnet_wake_on_magic_packet.md)
+- [IFNET_WAKE_ON_MAGIC_PACKET](./api-1644628-anonymous/ifnet_wake_on_magic_packet.md)
 
 
 ---

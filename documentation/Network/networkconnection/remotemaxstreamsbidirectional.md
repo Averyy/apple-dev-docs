@@ -1,7 +1,8 @@
 # remoteMaxStreamsBidirectional
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get the maximum number of bidirectional streams advertised by peer that an application is allowed to create.
 
@@ -19,6 +20,8 @@ Get the maximum number of bidirectional streams advertised by peer that an appli
 ```swift
 final var remoteMaxStreamsBidirectional: Int { get }
 ```
+
+Available when `ApplicationProtocol` is `QUIC`.
 
 #### Discussion
 

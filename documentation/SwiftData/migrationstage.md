@@ -1,7 +1,8 @@
 # MigrationStage
 
 **Framework**: SwiftData  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes a migration between two versions of the same schema.
 
@@ -24,18 +25,19 @@ enum MigrationStage
 ## Topics
 
 ### Migration stages
-- [case lightweight(fromVersion: any VersionedSchema.Type, toVersion: any VersionedSchema.Type)](migrationstage/lightweight(fromversion:toversion:).md)
-- [case custom(fromVersion: any VersionedSchema.Type, toVersion: any VersionedSchema.Type, willMigrate: ((ModelContext) throws -> Void)?, didMigrate: ((ModelContext) throws -> Void)?)](migrationstage/custom(fromversion:toversion:willmigrate:didmigrate:).md)
+- [case lightweight(fromVersion: any VersionedSchema.Type, toVersion: any VersionedSchema.Type)](./migrationstage/lightweight%28fromversion,toversion%29.md)
+- [case custom(fromVersion: any VersionedSchema.Type, toVersion: any VersionedSchema.Type, willMigrate: ((ModelContext) throws -> Void)?, didMigrate: ((ModelContext) throws -> Void)?)](./migrationstage/custom%28fromversion,toversion,willmigrate,didmigrate%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var stages: [MigrationStage]](schemamigrationplan/stages.md)
+### Managing migration stages
+- [static var stages: [MigrationStage]](./schemamigrationplan/stages.md)
 
 
 ---

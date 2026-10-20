@@ -1,7 +1,8 @@
 # HKWorkoutActivityType.americanFootball
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constant for playing American football.
 
@@ -19,35 +20,40 @@ The constant for playing American football.
 case americanFootball
 ```
 
+```c
+HKWorkoutActivityTypeAmericanFootball
+```
+
 #### Discussion
 
 HealthKit estimates calories for this activity based on the data from Apple Watch’s sensors. This rate is never lower than the brisk walk burn rate when moving.
 
 ## See Also
 
-- [HKWorkoutActivityType.australianFootball](hkworkoutactivitytype/australianfootball.md)
+### Team sports
+- [HKWorkoutActivityType.australianFootball](./australianfootball.md)
   The constant for playing Australian football.
-- [HKWorkoutActivityType.baseball](hkworkoutactivitytype/baseball.md)
+- [HKWorkoutActivityType.baseball](./baseball.md)
   The constant for playing baseball.
-- [HKWorkoutActivityType.basketball](hkworkoutactivitytype/basketball.md)
+- [HKWorkoutActivityType.basketball](./basketball.md)
   The constant for playing basketball.
-- [HKWorkoutActivityType.cricket](hkworkoutactivitytype/cricket.md)
+- [HKWorkoutActivityType.cricket](./cricket.md)
   The constant for playing cricket.
-- [HKWorkoutActivityType.discSports](hkworkoutactivitytype/discsports.md)
+- [HKWorkoutActivityType.discSports](./discsports.md)
   The constant for playing disc sports such as Ultimate and Disc Golf.
-- [HKWorkoutActivityType.handball](hkworkoutactivitytype/handball.md)
+- [HKWorkoutActivityType.handball](./handball.md)
   The constant for playing handball.
-- [HKWorkoutActivityType.hockey](hkworkoutactivitytype/hockey.md)
+- [HKWorkoutActivityType.hockey](./hockey.md)
   The constant for playing hockey, including ice hockey, field hockey, and related sports.
-- [HKWorkoutActivityType.lacrosse](hkworkoutactivitytype/lacrosse.md)
+- [HKWorkoutActivityType.lacrosse](./lacrosse.md)
   The constant for playing lacrosse.
-- [HKWorkoutActivityType.rugby](hkworkoutactivitytype/rugby.md)
+- [HKWorkoutActivityType.rugby](./rugby.md)
   The constant for playing rugby.
-- [HKWorkoutActivityType.soccer](hkworkoutactivitytype/soccer.md)
+- [HKWorkoutActivityType.soccer](./soccer.md)
   The constant for playing soccer.
-- [HKWorkoutActivityType.softball](hkworkoutactivitytype/softball.md)
+- [HKWorkoutActivityType.softball](./softball.md)
   The constant for playing softball.
-- [HKWorkoutActivityType.volleyball](hkworkoutactivitytype/volleyball.md)
+- [HKWorkoutActivityType.volleyball](./volleyball.md)
   The constant for playing volleyball.
 
 

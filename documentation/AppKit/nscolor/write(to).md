@@ -1,17 +1,22 @@
 # write(to:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the color object’s data to the specified pasteboard.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func write(to pasteBoard: NSPasteboard)
+```
+
+```objc
+- (void) writeToPasteboard:(NSPasteboard *) pasteBoard;
 ```
 
 ## Parameters
@@ -20,7 +25,8 @@ func write(to pasteBoard: NSPasteboard)
 
 ## See Also
 
-- [init?(from: NSPasteboard)](nscolor/init(from:).md)
+### Copying and pasting color Information
+- [init?(from: NSPasteboard)](./init%28from%29.md)
   Creates a color object from color data currently on the pasteboard.
 
 

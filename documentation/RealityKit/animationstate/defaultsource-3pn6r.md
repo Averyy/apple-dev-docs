@@ -1,9 +1,10 @@
 # defaultSource
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-See: [`defaultSource`](animationstateprotocol/defaultsource.md)
+See: [`defaultSource`](../animationstateprotocol/defaultsource.md)
 
 **Availability**:
 - iOS 18.0+

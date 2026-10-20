@@ -1,7 +1,8 @@
 # ATSUStyleRunInfo
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.2+
@@ -12,14 +13,20 @@
 struct ATSUStyleRunInfo
 ```
 
+```c
+typedef struct ATSUStyleRunInfo {
+    ...
+} ATSUStyleRunInfo;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](atsustyleruninfo/1460482-init.md)
-- [init(runLength: UInt32, styleObjectIndex: UInt32)](atsustyleruninfo/1462702-init.md)
+- [init()](./atsustyleruninfo/api-1460482-init.md)
+- [init(runLength: UInt32, styleObjectIndex: UInt32)](./atsustyleruninfo/api-1462702-init.md)
 ### Instance Properties
-- [var runLength: UInt32](atsustyleruninfo/1458993-runlength.md)
-- [var styleObjectIndex: UInt32](atsustyleruninfo/1462152-styleobjectindex.md)
+- [var runLength: UInt32](./atsustyleruninfo/api-1458993-runlength.md)
+- [var styleObjectIndex: UInt32](./atsustyleruninfo/api-1462152-styleobjectindex.md)
 
 
 ---

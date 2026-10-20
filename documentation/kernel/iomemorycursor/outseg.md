@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 SegmentFunction outSeg;
 ```
 
@@ -15,9 +15,10 @@ The action method called when an event has been delivered
 
 ## See Also
 
-- [maxTransferSize](iomemorycursor/maxtransfersize.md)
-- [maxSegmentSize](iomemorycursor/maxsegmentsize.md)
-- [alignMask](iomemorycursor/alignmask.md)
+### Instance Variables
+- [maxTransferSize](./maxtransfersize.md)
+- [maxSegmentSize](./maxsegmentsize.md)
+- [alignMask](./alignmask.md)
 
 
 ---

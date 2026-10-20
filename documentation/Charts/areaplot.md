@@ -1,7 +1,8 @@
 # AreaPlot
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Chart content that represents a function or a collection of data using the area of one or more regions.
 
@@ -22,9 +23,9 @@ struct AreaPlot<Content>
 
 #### Overview
 
-Use `AreaPlot` when you want to visualize data in the same way as with [`AreaMark`](areamark.md), but you want to plot a function or visualize an entire data collection with a single plot.
+Use `AreaPlot` when you want to visualize data in the same way as with [`AreaMark`](./areamark.md), but you want to plot a function or visualize an entire data collection with a single plot.
 
-##### Plotting Areas From a Collection
+##### Plotting areas from a collection
 
 You can initialize and style the plot with simple values or key paths. Add modifiers with `KeyPath` before adding modifiers with simple values.
 
@@ -41,7 +42,7 @@ Chart {
 }
 ```
 
-##### Plotting Functions
+##### Plotting functions
 
 In addition to providing data points, you can provide a function to an `AreaPlot` to plot a function. For example, you can plot the area between y = x and y = x^2 - 1 with:
 
@@ -66,61 +67,62 @@ Chart {
 ## Topics
 
 ### Plotting areas from a collection
-- [init<Data>(Data, x: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>, y: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>, stacking: MarkStackingMethod)](areaplot/init(_:x:y:stacking:).md)
-- [init<Data>(Data, x: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>, y: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>, series: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>, stacking: MarkStackingMethod)](areaplot/init(_:x:y:series:stacking:).md)
-- [init<Data, X>(Data, xStart: PlottableProjection<AreaPlot<Content>.DataElement, X>, xEnd: PlottableProjection<AreaPlot<Content>.DataElement, X>, y: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>)](areaplot/init(_:xstart:xend:y:).md)
-- [init<Data, X>(Data, xStart: PlottableProjection<AreaPlot<Content>.DataElement, X>, xEnd: PlottableProjection<AreaPlot<Content>.DataElement, X>, y: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>, series: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>)](areaplot/init(_:xstart:xend:y:series:).md)
-- [init<Data, Y>(Data, x: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>, yStart: PlottableProjection<AreaPlot<Content>.DataElement, Y>, yEnd: PlottableProjection<AreaPlot<Content>.DataElement, Y>)](areaplot/init(_:x:ystart:yend:).md)
-- [init<Data, Y>(Data, x: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>, yStart: PlottableProjection<AreaPlot<Content>.DataElement, Y>, yEnd: PlottableProjection<AreaPlot<Content>.DataElement, Y>, series: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>)](areaplot/init(_:x:ystart:yend:series:).md)
+- [init<Data>(Data, x: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>, y: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>, stacking: MarkStackingMethod)](./areaplot/init%28_,x,y,stacking%29.md)
+- [init<Data>(Data, x: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>, y: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>, series: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>, stacking: MarkStackingMethod)](./areaplot/init%28_,x,y,series,stacking%29.md)
+- [init<Data, X>(Data, xStart: PlottableProjection<AreaPlot<Content>.DataElement, X>, xEnd: PlottableProjection<AreaPlot<Content>.DataElement, X>, y: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>)](./areaplot/init%28_,xstart,xend,y%29.md)
+- [init<Data, X>(Data, xStart: PlottableProjection<AreaPlot<Content>.DataElement, X>, xEnd: PlottableProjection<AreaPlot<Content>.DataElement, X>, y: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>, series: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>)](./areaplot/init%28_,xstart,xend,y,series%29.md)
+- [init<Data, Y>(Data, x: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>, yStart: PlottableProjection<AreaPlot<Content>.DataElement, Y>, yEnd: PlottableProjection<AreaPlot<Content>.DataElement, Y>)](./areaplot/init%28_,x,ystart,yend%29.md)
+- [init<Data, Y>(Data, x: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>, yStart: PlottableProjection<AreaPlot<Content>.DataElement, Y>, yEnd: PlottableProjection<AreaPlot<Content>.DataElement, Y>, series: PlottableProjection<AreaPlot<Content>.DataElement, some Plottable>)](./areaplot/init%28_,x,ystart,yend,series%29.md)
 ### Plotting functions
-- [init(x: Text, y: Text, domain: ClosedRange<Double>?, function: (Double) -> Double)](areaplot/init(x:y:domain:function:)-2fab1.md)
+- [init(x: Text, y: Text, domain: ClosedRange<Double>?, function: (Double) -> Double)](./areaplot/init%28x,y,domain,function%29-2fab1.md)
   Creates a mark that fills the area between zero and the given function.
-- [init(x: LocalizedStringResource, y: LocalizedStringResource, domain: ClosedRange<Double>?, function: (Double) -> Double)](areaplot/init(x:y:domain:function:)-1jmpp.md)
+- [init(x: LocalizedStringResource, y: LocalizedStringResource, domain: ClosedRange<Double>?, function: (Double) -> Double)](./areaplot/init%28x,y,domain,function%29-1jmpp.md)
   Creates a mark that fills the area between zero and the given function.
-- [init(x: LocalizedStringKey, y: LocalizedStringKey, domain: ClosedRange<Double>?, function: (Double) -> Double)](areaplot/init(x:y:domain:function:)-etud.md)
+- [init(x: LocalizedStringKey, y: LocalizedStringKey, domain: ClosedRange<Double>?, function: (Double) -> Double)](./areaplot/init%28x,y,domain,function%29-etud.md)
   Creates a mark that fills the area between zero and the given function.
-- [init<S1, S2>(x: S1, y: S2, domain: ClosedRange<Double>?, function: (Double) -> Double)](areaplot/init(x:y:domain:function:)-39eit.md)
+- [init<S1, S2>(x: S1, y: S2, domain: ClosedRange<Double>?, function: (Double) -> Double)](./areaplot/init%28x,y,domain,function%29-39eit.md)
   Creates a mark that fills the area between zero and the given function.
-- [init(x: Text, yStart: Text, yEnd: Text, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](areaplot/init(x:ystart:yend:domain:function:)-etcn.md)
+- [init(x: Text, yStart: Text, yEnd: Text, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](./areaplot/init%28x,ystart,yend,domain,function%29-etcn.md)
   Creates a mark that fills the area between two functions (yStart, yEnd) = f(x).
-- [init(x: LocalizedStringResource, yStart: LocalizedStringResource, yEnd: LocalizedStringResource, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](areaplot/init(x:ystart:yend:domain:function:)-9gui6.md)
+- [init(x: LocalizedStringResource, yStart: LocalizedStringResource, yEnd: LocalizedStringResource, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](./areaplot/init%28x,ystart,yend,domain,function%29-9gui6.md)
   Creates a mark that fills the area between two functions (yStart, yEnd) = f(x).
-- [init(x: LocalizedStringKey, yStart: LocalizedStringKey, yEnd: LocalizedStringKey, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](areaplot/init(x:ystart:yend:domain:function:)-5akqm.md)
+- [init(x: LocalizedStringKey, yStart: LocalizedStringKey, yEnd: LocalizedStringKey, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](./areaplot/init%28x,ystart,yend,domain,function%29-5akqm.md)
   Creates a mark that fills the area between two functions (yStart, yEnd) = f(x).
-- [init<S1, S2, S3>(x: S1, yStart: S2, yEnd: S3, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](areaplot/init(x:ystart:yend:domain:function:)-23gxe.md)
+- [init<S1, S2, S3>(x: S1, yStart: S2, yEnd: S3, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](./areaplot/init%28x,ystart,yend,domain,function%29-23gxe.md)
   Creates a mark that fills the area between two functions (yStart, yEnd) = f(x).
 ### Supporting types
-- [var body: Self.Body](chartcontent/body-swift.property.md)
+- [var body: Self.Body](./chartcontent/body-swift.property.md)
   The content and behavior of the chart content.
-- [struct VectorizedAreaPlotContent](vectorizedareaplotcontent.md)
+- [struct VectorizedAreaPlotContent](./vectorizedareaplotcontent.md)
   An opaque vectorized chart content type.
-- [struct FunctionAreaPlotContent](functionareaplotcontent.md)
+- [struct FunctionAreaPlotContent](./functionareaplotcontent.md)
 
 ## Relationships
 
 ### Conforms To
-- [ChartContent](chartcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [VectorizedChartContent](vectorizedchartcontent.md)
+- [ChartContent](./chartcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [VectorizedChartContent](./vectorizedchartcontent.md)
 
 ## See Also
 
-- [Creating a data visualization dashboard with Swift Charts](creating-a-data-visualization-dashboard-with-swift-charts.md)
+### Vectorized plots
+- [Creating a data visualization dashboard with Swift Charts](./creating-a-data-visualization-dashboard-with-swift-charts.md)
   Visualize an entire data collection efficiently by instantiating a single vectorized plot in Swift Charts.
-- [struct LinePlot](lineplot.md)
+- [struct LinePlot](./lineplot.md)
   Chart content that represents a function or a collection of data using a sequence of connected line segments.
-- [struct PointPlot](pointplot.md)
+- [struct PointPlot](./pointplot.md)
   Chart content that represents a collection of data using points.
-- [struct RectanglePlot](rectangleplot.md)
+- [struct RectanglePlot](./rectangleplot.md)
   Chart content that represents a collection of data using rectangles.
-- [struct RulePlot](ruleplot.md)
+- [struct RulePlot](./ruleplot.md)
   Chart content that represents a collection of data using a single horizontal or vertical rule.
-- [struct BarPlot](barplot.md)
+- [struct BarPlot](./barplot.md)
   Chart content that represents a collection of data using bars.
-- [struct SectorPlot](sectorplot.md)
+- [struct SectorPlot](./sectorplot.md)
   Chart content that represents a collection of data using a sector of a pie or donut chart, which shows how individual categories make up a meaningful total.
-- [protocol VectorizedChartContent](vectorizedchartcontent.md)
+- [protocol VectorizedChartContent](./vectorizedchartcontent.md)
   A generic type that represents content conveyed via a chart.
 
 

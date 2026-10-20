@@ -1,7 +1,8 @@
 # hasAlarms
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the calendar item has alarms.
 
@@ -19,18 +20,23 @@ A Boolean value that indicates whether the calendar item has alarms.
 var hasAlarms: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasAlarms;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the calendar item has alarms; otherwise it does not.
+If [`true`](../../Swift/true.md), the calendar item has alarms; otherwise it does not.
 
 ## See Also
 
-- [func addAlarm(EKAlarm)](ekcalendaritem/addalarm(_:).md)
+### Adding and Removing Alarms
+- [func addAlarm(EKAlarm)](./addalarm%28_%29.md)
   Adds an alarm to the receiver.
-- [func removeAlarm(EKAlarm)](ekcalendaritem/removealarm(_:).md)
+- [func removeAlarm(EKAlarm)](./removealarm%28_%29.md)
   Removes an alarm from the calendar item.
-- [var alarms: [EKAlarm]?](ekcalendaritem/alarms.md)
-  The alarms associated with the calendar item, as an array of [`EKAlarm`](ekalarm.md) objects.
+- [var alarms: [EKAlarm]?](./alarms.md)
+  The alarms associated with the calendar item, as an array of [`EKAlarm`](../ekalarm.md) objects.
 
 
 ---

@@ -1,7 +1,8 @@
 # safeAreaInsets
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The safe area inset of this display.
 

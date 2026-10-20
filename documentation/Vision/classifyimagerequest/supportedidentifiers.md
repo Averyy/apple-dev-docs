@@ -1,7 +1,8 @@
 # supportedIdentifiers
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The classification identifiers the request supports.
 
@@ -22,9 +23,10 @@ var supportedIdentifiers: [String] { get }
 
 ## See Also
 
-- [var cropAndScaleAction: ImageCropAndScaleAction](classifyimagerequest/cropandscaleaction.md)
+### Configuring a request
+- [var cropAndScaleAction: ImageCropAndScaleAction](./cropandscaleaction.md)
   An optional setting that tells the algorithm how to scale an input image before generating the result.
-- [enum ImageCropAndScaleAction](imagecropandscaleaction.md)
+- [enum ImageCropAndScaleAction](../imagecropandscaleaction.md)
   A scale to apply to an input image before performing a request.
 
 

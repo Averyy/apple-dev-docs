@@ -1,7 +1,8 @@
 # MapCircle
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A circular overlay with a configurable radius that you center on a geographic coordinate.
 
@@ -11,7 +12,7 @@ A circular overlay with a configurable radius that you center on a geographic co
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,53 +23,54 @@ struct MapCircle
 
 #### Overview
 
-Use this view to create circular overlays in the closure you provide to the `content` parameter in [`Map`](map.md) initializers.
+Use this view to create circular overlays in the closure you provide to the `content` parameter in [`Map`](./map.md) initializers.
 
 ## Topics
 
 ### Creating a map circle
-- [init(MKCircle)](mapcircle/init(_:).md)
+- [init(MKCircle)](./mapcircle/init%28_%29.md)
   Creates a circle overlay from an existing map circle object.
-- [init(center: CLLocationCoordinate2D, radius: CLLocationDistance)](mapcircle/init(center:radius:).md)
+- [init(center: CLLocationCoordinate2D, radius: CLLocationDistance)](./mapcircle/init%28center,radius%29.md)
   Creates a circle with the center coordinate and radius you specify.
-- [init(mapRect: MKMapRect)](mapcircle/init(maprect:).md)
+- [init(mapRect: MKMapRect)](./mapcircle/init%28maprect%29.md)
   Creates the largest possible circle centered within the given map rectangle.
 ### Styling the circle
-- [func foregroundStyle(some ShapeStyle) -> some MapContent](mapcontent/foregroundstyle(_:).md)
+- [func foregroundStyle(some ShapeStyle) -> some MapContent](./mapcontent/foregroundstyle%28_%29.md)
   Specifies the shape style used to fill content in drawing map overlays.
-- [func stroke(some ShapeStyle, lineWidth: CGFloat) -> some MapContent](mapcontent/stroke(_:linewidth:).md)
+- [func stroke(some ShapeStyle, lineWidth: CGFloat) -> some MapContent](./mapcontent/stroke%28_,linewidth%29.md)
   Applies the given shape style to drawn map overlays using the line width you specify.
-- [func stroke(some ShapeStyle, style: StrokeStyle) -> some MapContent](mapcontent/stroke(_:style:).md)
+- [func stroke(some ShapeStyle, style: StrokeStyle) -> some MapContent](./mapcontent/stroke%28_,style%29.md)
   Applies the given shape style to drawn map overlays using the stroke style you specify.
-- [func stroke(lineWidth: CGFloat) -> some MapContent](mapcontent/stroke(linewidth:).md)
+- [func stroke(lineWidth: CGFloat) -> some MapContent](./mapcontent/stroke%28linewidth%29.md)
   Applies the given stoke drawn map overlays using the line width you specify.
-- [func strokeStyle(style: StrokeStyle) -> some MapContent](mapcontent/strokestyle(style:).md)
+- [func strokeStyle(style: StrokeStyle) -> some MapContent](./mapcontent/strokestyle%28style%29.md)
   Applies the given stroke style to drawn map overlays.
 ### Setting the overlay level
-- [func mapOverlayLevel(level: MKOverlayLevel) -> some MapContent](mapcontent/mapoverlaylevel(level:).md)
+- [func mapOverlayLevel(level: MKOverlayLevel) -> some MapContent](./mapcontent/mapoverlaylevel%28level%29.md)
   Specifies the position of overlays relative to other map content.
 ### Type aliases
-- [associatedtype Body : MapContent](mapcontent/body-swift.associatedtype.md)
+- [associatedtype Body : MapContent](./mapcontent/body-swift.associatedtype.md)
   The content and behavior of the view.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [MapContent](mapcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [MapContent](./mapcontent.md)
 
 ## See Also
 
-- [struct Annotation](annotation.md)
+### Annotations and overlays
+- [struct Annotation](./annotation.md)
   A customizable annotation used to indicate a location on a map.
-- [struct MapPolygon](mappolygon.md)
+- [struct MapPolygon](./mappolygon.md)
   A closed polygon overlay.
-- [struct MapPolyline](mappolyline.md)
+- [struct MapPolyline](./mappolyline.md)
   An open polygon overlay consisting of one or more connected line segments.
-- [struct Marker](marker.md)
+- [struct Marker](./marker.md)
   A balloon-shaped annotation that marks a map location.
-- [struct UserAnnotation](userannotation.md)
+- [struct UserAnnotation](./userannotation.md)
   Displays the person’s current location on the map.
 
 

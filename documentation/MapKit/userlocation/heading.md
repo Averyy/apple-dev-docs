@@ -1,7 +1,8 @@
 # heading
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates the heading of the person’s device.
 
@@ -20,7 +21,8 @@ var heading: CLHeading? { get }
 
 ## See Also
 
-- [var location: CLLocation?](userlocation/location.md)
+### Accessing the user’s location and heading
+- [var location: CLLocation?](./location.md)
   An object that describes the current location of the persons’s device, including the latitude and longitude.
 
 

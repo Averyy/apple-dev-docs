@@ -1,7 +1,8 @@
 # boundingBoxBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 References a buffer containing bounding box data in `MTLAxisAlignedBoundingBoxes` format.
 
@@ -17,6 +18,10 @@ References a buffer containing bounding box data in `MTLAxisAlignedBoundingBoxes
 
 ```swift
 var boundingBoxBuffer: MTL4BufferRange { get set }
+```
+
+```objc
+@property (nonatomic) MTL4BufferRange boundingBoxBuffer;
 ```
 
 #### Discussion

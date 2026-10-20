@@ -1,7 +1,8 @@
 # URLSessionTask.State.completed
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The task has completed (without being canceled), and the task’s delegate receives no further callbacks.
 
@@ -20,17 +21,22 @@ The task has completed (without being canceled), and the task’s delegate recei
 case completed
 ```
 
+```c
+NSURLSessionTaskStateCompleted
+```
+
 #### Discussion
 
-If the task completed successfully, the task’s [`error`](urlsessiontask/error.md) property is `nil`. Otherwise, it provides an error object that tells what went wrong. A task in this state is not subject to timeouts.
+If the task completed successfully, the task’s [`error`](../error.md) property is `nil`. Otherwise, it provides an error object that tells what went wrong. A task in this state is not subject to timeouts.
 
 ## See Also
 
-- [URLSessionTask.State.running](urlsessiontask/state-swift.enum/running.md)
+### Task states
+- [URLSessionTask.State.running](./running.md)
   The task is currently being serviced by the session.
-- [URLSessionTask.State.suspended](urlsessiontask/state-swift.enum/suspended.md)
+- [URLSessionTask.State.suspended](./suspended.md)
   The task was suspended by the app.
-- [URLSessionTask.State.canceling](urlsessiontask/state-swift.enum/canceling.md)
+- [URLSessionTask.State.canceling](./canceling.md)
   The task has received a `cancel` message.
 
 

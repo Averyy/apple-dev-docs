@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a MAC Address from the provided octet components.
 
@@ -26,7 +27,8 @@ The mac address, or `nil` if the input data was invalid and it could not be cons
 
 ## See Also
 
-- [var components: [UInt8]](wimacaddress/components.md)
+### Working with MAC Addresses as octet components
+- [var components: [UInt8]](./components.md)
   The MAC Address as a list of octets.
 
 

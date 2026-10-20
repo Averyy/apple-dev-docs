@@ -1,7 +1,8 @@
 # init(purgeConditions:)
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a policy with the specified purge conditions.
 

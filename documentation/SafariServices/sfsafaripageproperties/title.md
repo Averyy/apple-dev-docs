@@ -1,7 +1,8 @@
 # title
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the page.
 
@@ -14,13 +15,18 @@ The title of the page.
 var title: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * title;
+```
+
 ## See Also
 
-- [var isActive: Bool](sfsafaripageproperties/isactive.md)
+### Getting the Safari Page Properties
+- [var isActive: Bool](./isactive.md)
   A Boolean value that indicates whether the page is currently active.
-- [var url: URL?](sfsafaripageproperties/url.md)
+- [var url: URL?](./url.md)
   Indicates the URL of the page.
-- [var usesPrivateBrowsing: Bool](sfsafaripageproperties/usesprivatebrowsing.md)
+- [var usesPrivateBrowsing: Bool](./usesprivatebrowsing.md)
   A Boolean value that indicates whether the page is using Safari Private Browsing.
 
 

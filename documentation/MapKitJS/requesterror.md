@@ -1,7 +1,8 @@
 # RequestError
 
 **Framework**: MapKit JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The error that a service method’s returned promise rejects with when a request fails.
 
@@ -10,17 +11,17 @@ The error that a service method’s returned promise rejects with when a request
 
 ## Declaration
 
-```swift
+```
 class RequestError extends Error
 ```
 
 ## Mentions
 
-- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
+- [Migrating from Version 5 to Version 6](./migrating-from-version-5-to-version-6.md)
 
 #### Discussion
 
-When a [`Service`](service.md) method’s returned promise rejects, the rejection value is a [`RequestError`](requesterror.md). The [`message`](requesterror/message.md) property contains a [`ConfigurationErrorStatus`](configurationerrorstatus.md) value that describes the error.
+When a [`Service`](./service.md) method’s returned promise rejects, the rejection value is a [`RequestError`](./requesterror.md). The [`message`](./requesterror/message.md) property contains a [`ConfigurationErrorStatus`](./configurationerrorstatus.md) value that describes the error.
 
 ```javascript
 const search = new mapkit.Search();
@@ -37,17 +38,18 @@ try {
 ## Topics
 
 ### Properties
-- [message](requesterror/message.md)
+- [message](./requesterror/message.md)
   The error message describing the request failure.
 
 ## Relationships
 
 ### Inherits From
-- [Error](doc://com.apple.mapkitjs/__unknown__/Error)
+- Error
 
 ## See Also
 
-- [class Service](service.md)
+### Service
+- [class Service](./service.md)
   An abstract class that provides common interfaces for service objects.
 
 

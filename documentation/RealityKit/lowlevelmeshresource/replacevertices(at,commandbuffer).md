@@ -1,7 +1,8 @@
 # replaceVertices(at:commandBuffer:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Metal buffer you populate on the GPU with the new contents of the vertex buffer.
 
@@ -32,13 +33,14 @@ Upon return the buffer’s contents are undefined; the caller is responsible for
 
 ## See Also
 
-- [func readVertices<R, E>(at: Int, (RawSpan) throws(E) -> R) throws(E) -> R](lowlevelmeshresource/readvertices(at:_:).md)
+### Accessing vertex data
+- [func readVertices<R, E>(at: Int, (RawSpan) throws(E) -> R) throws(E) -> R](./readvertices%28at,_%29.md)
   Reads the current contents of a vertex buffer synchronously on the CPU.
-- [func updateVertices<R, E>(at: Int, (inout MutableRawSpan) throws(E) -> R) throws(E) -> R](lowlevelmeshresource/updatevertices(at:_:).md)
+- [func updateVertices<R, E>(at: Int, (inout MutableRawSpan) throws(E) -> R) throws(E) -> R](./updatevertices%28at,_%29.md)
   Updates a vertex buffer in place synchronously on the CPU.
-- [func replaceVertices<R, E>(at: Int, (inout MutableRawSpan) throws(E) -> R) throws(E) -> R](lowlevelmeshresource/replacevertices(at:_:).md)
+- [func replaceVertices<R, E>(at: Int, (inout MutableRawSpan) throws(E) -> R) throws(E) -> R](./replacevertices%28at,_%29.md)
   Replaces the entire contents of a vertex buffer synchronously on the CPU.
-- [func readVertices(at: Int, commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelmeshresource/readvertices(at:commandbuffer:).md)
+- [func readVertices(at: Int, commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](./readvertices%28at,commandbuffer%29.md)
   Returns a Metal buffer containing the current contents of the vertex buffer for GPU read operations.
 
 

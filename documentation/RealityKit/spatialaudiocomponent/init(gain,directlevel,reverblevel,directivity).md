@@ -1,7 +1,8 @@
 # init(gain:directLevel:reverbLevel:directivity:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a spatial audio component from a gain value, a direct level, a reverb level, and a directivity value.
 

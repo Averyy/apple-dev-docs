@@ -1,7 +1,8 @@
 # visibilityPriority(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Defines the visibility priority for a toolbar item.
 
@@ -22,7 +23,7 @@ func visibilityPriority(_ priority: ToolbarItemVisibilityPriority) -> some Custo
 
 #### Discussion
 
-When toolbar space is limited, items with a lower priority move into the overflow menu before items with a higher priority. The default is [`automatic`](toolbaritemvisibilitypriority/automatic.md).
+When toolbar space is limited, items with a lower priority move into the overflow menu before items with a higher priority. The default is [`automatic`](../toolbaritemvisibilitypriority/automatic.md).
 
 In the following example, `PrimaryControl` stays visible in the toolbar longer than `SecondaryControl`:
 
@@ -49,9 +50,10 @@ struct RootView: View {
 
 ## See Also
 
-- [func hidden(Bool) -> some CustomizableToolbarContent](customizabletoolbarcontent/hidden(_:).md)
+### Setting visibility
+- [func hidden(Bool) -> some CustomizableToolbarContent](./hidden%28_%29.md)
   Hides a toolbar item within its toolbar.
-- [func sharedBackgroundVisibility(Visibility) -> some CustomizableToolbarContent](customizabletoolbarcontent/sharedbackgroundvisibility(_:).md)
+- [func sharedBackgroundVisibility(Visibility) -> some CustomizableToolbarContent](./sharedbackgroundvisibility%28_%29.md)
   Controls the visibility of the glass background effect on items in the toolbar. In certain contexts, such as the navigation bar on iOS and the window toolbar on macOS, toolbar items will be given a glass background effect that is shared with other items in the same logical grouping.
 
 

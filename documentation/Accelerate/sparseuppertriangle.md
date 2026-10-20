@@ -1,7 +1,8 @@
 # SparseUpperTriangle
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that specifies the upper triangle.
 
@@ -20,9 +21,14 @@ A constant that specifies the upper triangle.
 var SparseUpperTriangle: SparseTriangle_t { get }
 ```
 
+```c
+SparseUpperTriangle
+```
+
 ## See Also
 
-- [var SparseLowerTriangle: SparseTriangle_t](sparselowertriangle.md)
+### Constants
+- [var SparseLowerTriangle: SparseTriangle_t](./sparselowertriangle.md)
   A constant that specifies the lower triangle.
 
 

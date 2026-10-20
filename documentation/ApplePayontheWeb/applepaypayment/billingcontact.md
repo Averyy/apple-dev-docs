@@ -1,7 +1,8 @@
 # billingContact
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The billing contact selected by the user for this transaction.
 
@@ -11,23 +12,24 @@ The billing contact selected by the user for this transaction.
 
 ## Declaration
 
-```swift
+```
 ApplePayPaymentContact billingContact;
 ```
 
 #### Discussion
 
-The billing contact information is populated if it is requested in [`ApplePayPaymentRequest`](applepaypaymentrequest.md).
+The billing contact information is populated if it is requested in [`ApplePayPaymentRequest`](../applepaypaymentrequest.md).
 
-After the user authorizes the transaction with Touch ID, Face ID, or passcode, `billingContact` contains the complete billing contact data. See [`ApplePayPaymentContact`](applepaypaymentcontact.md) for the billing contact field values.
+After the user authorizes the transaction with Touch ID, Face ID, or passcode, `billingContact` contains the complete billing contact data. See [`ApplePayPaymentContact`](../applepaypaymentcontact.md) for the billing contact field values.
 
 > **Note**:  Address information can come from a wide range of sources. Always validate the information before you use it.
 
 ## See Also
 
-- [shippingContact](applepaypayment/shippingcontact.md)
+### Billing and shipping contacts
+- [shippingContact](./shippingcontact.md)
   The shipping contact selected by the user for this transaction.
-- [ApplePayPaymentContact](applepaypaymentcontact.md)
+- [ApplePayPaymentContact](../applepaypaymentcontact.md)
   Contact information fields to use for billing and shipping contact information.
 
 

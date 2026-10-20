@@ -1,7 +1,8 @@
 # MPSGraphPoolingReturnIndicesMode.globalFlatten4D
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Returns indices flattened in 4 innermost dimensions.
 
@@ -17,6 +18,10 @@ Returns indices flattened in 4 innermost dimensions.
 
 ```swift
 case globalFlatten4D
+```
+
+```c
+MPSGraphPoolingReturnIndicesGlobalFlatten4D
 ```
 
 

@@ -1,7 +1,8 @@
 # serverTrust
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A representation of the server’s SSL transaction state.
 
@@ -20,9 +21,13 @@ A representation of the server’s SSL transaction state.
 var serverTrust: SecTrust? { get }
 ```
 
+```objc
+@property (readonly, nullable) SecTrustRef serverTrust;
+```
+
 ## Mentions
 
-- [Performing manual server trust authentication](performing-manual-server-trust-authentication.md)
+- [Performing manual server trust authentication](../performing-manual-server-trust-authentication.md)
 
 #### Discussion
 
@@ -30,21 +35,22 @@ This value is `nil` if the authentication method of the protection space is not 
 
 ## See Also
 
-- [var authenticationMethod: String](urlprotectionspace/authenticationmethod.md)
+### Getting protection space properties
+- [var authenticationMethod: String](./authenticationmethod.md)
   The authentication method used by the receiver.
-- [var distinguishedNames: [Data]?](urlprotectionspace/distinguishednames.md)
+- [var distinguishedNames: [Data]?](./distinguishednames.md)
   The acceptable certificate-issuing authorities for client certificate authentication.
-- [var host: String](urlprotectionspace/host.md)
+- [var host: String](./host.md)
   The receiver’s host.
-- [var port: Int](urlprotectionspace/port.md)
+- [var port: Int](./port.md)
   The receiver’s port.
-- [var `protocol`: String?](urlprotectionspace/protocol.md)
+- [var `protocol`: String?](./protocol.md)
   The receiver’s protocol.
-- [var proxyType: String?](urlprotectionspace/proxytype.md)
+- [var proxyType: String?](./proxytype.md)
   The receiver’s proxy type.
-- [var realm: String?](urlprotectionspace/realm.md)
+- [var realm: String?](./realm.md)
   The receiver’s authentication realm
-- [var receivesCredentialSecurely: Bool](urlprotectionspace/receivescredentialsecurely.md)
+- [var receivesCredentialSecurely: Bool](./receivescredentialsecurely.md)
   A Boolean value that indicates whether the credentials for the protection space can be sent securely.
 
 

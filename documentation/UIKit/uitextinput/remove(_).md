@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a placeholder object from the text input view.
 
@@ -18,15 +19,20 @@ Removes a placeholder object from the text input view.
 optional func remove(_ textPlaceholder: UITextPlaceholder)
 ```
 
+```objc
+- (void) removeTextPlaceholder:(UITextPlaceholder *) textPlaceholder;
+```
+
 ## Parameters
 
 - `textPlaceholder`: The placeholder object to remove.
 
 ## See Also
 
-- [func insertTextPlaceholder(with: CGSize) -> UITextPlaceholder](uitextinput/inserttextplaceholder(with:).md)
+### Managing placeholders
+- [func insertTextPlaceholder(with: CGSize) -> UITextPlaceholder](./inserttextplaceholder%28with%29.md)
   Inserts a placeholder object to reserve visual space during text input.
-- [class UITextPlaceholder](uitextplaceholder.md)
+- [class UITextPlaceholder](../uitextplaceholder.md)
   A placeholder object that reserves visual space in a text input view.
 
 

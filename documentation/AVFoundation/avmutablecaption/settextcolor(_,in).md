@@ -1,7 +1,8 @@
 # setTextColor(_:in:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the text color for a range of text.
 
@@ -25,11 +26,12 @@ func setTextColor(_ textColor: CGColor, in range: NSRange)
 
 ## See Also
 
-- [func removeTextColor(in: NSRange)](avmutablecaption/removetextcolor(in:).md)
+### Configuring colors
+- [func removeTextColor(in: NSRange)](./removetextcolor%28in%29.md)
   Removes the text color for a range of text.
-- [func setBackgroundColor(CGColor, in: NSRange)](avmutablecaption/setbackgroundcolor(_:in:).md)
+- [func setBackgroundColor(CGColor, in: NSRange)](./setbackgroundcolor%28_,in%29.md)
   Sets the background color for a range of text.
-- [func removeBackgroundColor(in: NSRange)](avmutablecaption/removebackgroundcolor(in:).md)
+- [func removeBackgroundColor(in: NSRange)](./removebackgroundcolor%28in%29.md)
   Removes a background color from a range of text.
 
 

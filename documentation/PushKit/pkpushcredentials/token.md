@@ -1,7 +1,8 @@
 # token
 
 **Framework**: PushKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique device token to use when sending push notifications to the current device.
 
@@ -19,13 +20,18 @@ A unique device token to use when sending push notifications to the current devi
 var token: Data { get }
 ```
 
+```objc
+@property (copy, readonly) NSData * token;
+```
+
 #### Discussion
 
 Forward this token to the server you use to generate push notifications. When preparing to deliver a push notification to the current device, include the token in the HTTP request you send to Apple Push Notification service (APNs).
 
 ## See Also
 
-- [var type: PKPushType](pkpushcredentials/type.md)
+### Getting the Token
+- [var type: PKPushType](./type.md)
   The push type constant associated with the token.
 
 

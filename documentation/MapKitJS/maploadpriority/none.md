@@ -1,7 +1,8 @@
 # None
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Signifies no preference for what to prioritize when loading the map.
 
@@ -10,19 +11,20 @@ Signifies no preference for what to prioritize when loading the map.
 
 ## Declaration
 
-```swift
+```
 readonly None: null;
 ```
 
 #### Discussion
 
-When you use this value, MapKit JS applies its default prioritization, [`PointsOfInterest`](maploadpriority/pointsofinterest.md).
+When you use this value, MapKit JS applies its default prioritization, [`PointsOfInterest`](./pointsofinterest.md).
 
 ## See Also
 
-- [LandCover](maploadpriority/landcover.md)
+### Prioritizations
+- [LandCover](./landcover.md)
   Prioritizes loading of the map land cover and borders, without POIs or labels.
-- [PointsOfInterest](maploadpriority/pointsofinterest.md)
+- [PointsOfInterest](./pointsofinterest.md)
   Prioritizes loading of the full standard map, with rendered POIs.
 
 

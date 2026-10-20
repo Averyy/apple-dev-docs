@@ -1,7 +1,8 @@
 # destinationOfSymbolicLink(atPath:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the path of the item pointed to by a symbolic link.
 
@@ -20,13 +21,19 @@ Returns the path of the item pointed to by a symbolic link.
 func destinationOfSymbolicLink(atPath path: String) throws -> String
 ```
 
+```objc
+- (NSString *) destinationOfSymbolicLinkAtPath:(NSString *) path error:(NSError **) error;
+```
+
 #### Return Value
 
-An [`NSString`](nsstring.md) object containing the path of the directory or file to which the symbolic link `path` refers. When using Objective-C, returns `nil` upon failure. If the symbolic link is specified as a relative path, that relative path is returned.
+An [`NSString`](../nsstring.md) object containing the path of the directory or file to which the symbolic link `path` refers. When using Objective-C, returns `nil` upon failure. If the symbolic link is specified as a relative path, that relative path is returned.
 
 #### Discussion
 
-> **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -34,13 +41,14 @@ An [`NSString`](nsstring.md) object containing the path of the directory or file
 
 ## See Also
 
-- [func createSymbolicLink(at: URL, withDestinationURL: URL) throws](filemanager/createsymboliclink(at:withdestinationurl:).md)
+### Creating symbolic and hard links
+- [func createSymbolicLink(at: URL, withDestinationURL: URL) throws](./createsymboliclink%28at,withdestinationurl%29.md)
   Creates a symbolic link at the specified URL that points to an item at the given URL.
-- [func createSymbolicLink(atPath: String, withDestinationPath: String) throws](filemanager/createsymboliclink(atpath:withdestinationpath:).md)
+- [func createSymbolicLink(atPath: String, withDestinationPath: String) throws](./createsymboliclink%28atpath,withdestinationpath%29.md)
   Creates a symbolic link that points to the specified destination.
-- [func linkItem(at: URL, to: URL) throws](filemanager/linkitem(at:to:).md)
+- [func linkItem(at: URL, to: URL) throws](./linkitem%28at,to%29.md)
   Creates a hard link between the items at the specified URLs.
-- [func linkItem(atPath: String, toPath: String) throws](filemanager/linkitem(atpath:topath:).md)
+- [func linkItem(atPath: String, toPath: String) throws](./linkitem%28atpath,topath%29.md)
   Creates a hard link between the items at the specified paths.
 
 

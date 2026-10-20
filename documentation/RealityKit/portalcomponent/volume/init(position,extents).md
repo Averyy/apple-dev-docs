@@ -1,7 +1,8 @@
 # init(position:extents:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a volume with the given center position and extents.
 

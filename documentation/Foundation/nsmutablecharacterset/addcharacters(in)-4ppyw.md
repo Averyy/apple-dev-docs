@@ -1,7 +1,8 @@
 # addCharacters(in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds to the receiver the characters whose Unicode values are in a given range.
 
@@ -18,6 +19,10 @@ Adds to the receiver the characters whose Unicode values are in a given range.
 
 ```swift
 func addCharacters(in aRange: NSRange)
+```
+
+```objc
+- (void) addCharactersInRange:(NSRange) aRange;
 ```
 
 #### Discussion
@@ -39,12 +44,14 @@ lcEnglishRange.length = 26;
 
 ## See Also
 
-- [String Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/introStrings.html#//apple_ref/doc/uid/10000035i)
-- [func removeCharacters(in: NSRange)](nsmutablecharacterset/removecharacters(in:)-70nqp.md)
+### Related Documentation
+- [String Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/introStrings.html#//apple_ref/doc/uid/10000035i)
+### Adding and Removing Characters
+- [func removeCharacters(in: NSRange)](./removecharacters%28in%29-70nqp.md)
   Removes from the receiver the characters whose Unicode values are in a given range.
-- [func addCharacters(in: String)](nsmutablecharacterset/addcharacters(in:)-7q02.md)
+- [func addCharacters(in: String)](./addcharacters%28in%29-7q02.md)
   Adds to the receiver the characters in a given string.
-- [func removeCharacters(in: String)](nsmutablecharacterset/removecharacters(in:)-762gt.md)
+- [func removeCharacters(in: String)](./removecharacters%28in%29-762gt.md)
   Removes from the receiver the characters in a given string.
 
 

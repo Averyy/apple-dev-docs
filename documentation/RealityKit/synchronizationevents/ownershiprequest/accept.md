@@ -1,7 +1,8 @@
 # accept
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The callback function that the current owner calls to grant ownership to the requesting peer.
 
@@ -11,7 +12,7 @@ The callback function that the current owner calls to grant ownership to the req
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,9 @@ let accept: () -> Void
 
 #### Discussion
 
-If an entity’s [`ownershipTransferMode`](synchronizationcomponent/ownershiptransfermode-swift.property.md) property is set to [`SynchronizationComponent.OwnershipTransferMode.autoAccept`](synchronizationcomponent/ownershiptransfermode-swift.enum/autoaccept.md), the entity automatically grants ownership to any other entity that requests it.
+If an entity’s [`ownershipTransferMode`](../../synchronizationcomponent/ownershiptransfermode-swift.property.md) property is set to [`SynchronizationComponent.OwnershipTransferMode.autoAccept`](../../synchronizationcomponent/ownershiptransfermode-swift.enum/autoaccept.md), the entity automatically grants ownership to any other entity that requests it.
 
-In case you configure an entity to have a transfer mode of [`SynchronizationComponent.OwnershipTransferMode.manual`](synchronizationcomponent/ownershiptransfermode-swift.enum/manual.md), then when you receive an [`SynchronizationEvents.OwnershipRequest`](synchronizationevents/ownershiprequest.md) event, call the [`accept`](synchronizationevents/ownershiprequest/accept.md) method to complete the transfer of ownership.
+In case you configure an entity to have a transfer mode of [`SynchronizationComponent.OwnershipTransferMode.manual`](../../synchronizationcomponent/ownershiptransfermode-swift.enum/manual.md), then when you receive an [`SynchronizationEvents.OwnershipRequest`](../ownershiprequest.md) event, call the [`accept`](./accept.md) method to complete the transfer of ownership.
 
 
 ---

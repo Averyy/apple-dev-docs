@@ -1,11 +1,12 @@
 # ExpressibleByIntegerLiteral Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(integerLiteral: Int)](decimal/init(integerliteral:).md)
+- [init(integerLiteral: Int)](./init%28integerliteral%29.md)
   Creates and initializes a decimal with the provided integer value.
 
 

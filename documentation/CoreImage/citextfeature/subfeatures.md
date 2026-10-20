@@ -1,7 +1,8 @@
 # subFeatures
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing additional features detected within the feature.
 
@@ -19,11 +20,15 @@ An array containing additional features detected within the feature.
 var subFeatures: [Any]? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSArray * subFeatures;
+```
+
 #### Discussion
 
 A text detector can identify both a major region that is likely to contain text as well as the areas within that region that likely to contain individual text features. Such features might be single characters, groups of closely-packed characters, or entire words.
 
-To detect sub-features, `/CIDetector/featuresInImage:options:` needs to be called with the [`CIDetectorReturnSubFeatures`](cidetectorreturnsubfeatures.md) option set to true.
+To detect sub-features, `/CIDetector/featuresInImage:options:` needs to be called with the [`CIDetectorReturnSubFeatures`](../cidetectorreturnsubfeatures.md) option set to true.
 
 
 ---

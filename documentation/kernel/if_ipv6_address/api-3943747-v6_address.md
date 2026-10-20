@@ -1,14 +1,15 @@
 # v6_address
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 struct in6_addr v6_address;
 ```
 

@@ -1,7 +1,8 @@
 # Create an Ad Creative
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Add a new ad creative that defines the visual presentation and tap destination for an ad.
 
@@ -16,7 +17,7 @@ This endpoint creates an ad creative that defines the visual presentation of an 
 - The `creativeSpec` structure varies by type and carries the type-specific content payload.
 - The `destination` field defines where a tap on the ad leads. For App Ads ad creatives (`DEFAULT_PRODUCT_PAGE`, `CUSTOM_PRODUCT_PAGE`), set the app identifier and optional product page identifier inside `destination.parameters`, not at the root of the request body.
 - After creation, `systemStatus` reflects the review state.
-- The response returns the ad creative identifier in the `result.id` field. This value is what you supply as `creativeId` in the body of a [`Create an Ad`](post-ads.md) request.
+- The response returns the ad creative identifier in the `result.id` field. This value is what you supply as `creativeId` in the body of a [`Create an Ad`](./post-ads.md) request.
 
 #### Payload Examples
 
@@ -198,17 +199,34 @@ POST /v1/creatives
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `CreativeCreate`
+
+## Responses
+
+- `200` OK (`CreativeResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Query Ad Creatives](post-creatives-query.md)
+- [Query Ad Creatives](./post-creatives-query.md)
   Retrieve ad creatives that match structured filter, sort, and pagination criteria.
-- [Get an Ad Creative](get-creatives-_id_.md)
+- [Get an Ad Creative](./get-creatives-_id_.md)
   Fetch a single ad creative by its unique identifier.
-- [Update an Ad Creative](put-creatives-_id_.md)
+- [Update an Ad Creative](./put-creatives-_id_.md)
   Change an ad creative’s name or creative spec by its unique identifier.
-- [Delete an Ad Creative](delete-creatives-_id_.md)
+- [Delete an Ad Creative](./delete-creatives-_id_.md)
   Remove an ad creative by its unique identifier.
 
 

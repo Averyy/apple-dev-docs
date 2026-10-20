@@ -1,7 +1,8 @@
 # visibleScrollIndicators
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The axes for which scroll indicators are visible.
 
@@ -24,7 +25,8 @@ Scroll indicators appear while tracking and fade out after tracking. Default is 
 
 ## See Also
 
-- [PaperMarkupViewController.ScrollConfiguration.Axis](papermarkupviewcontroller/scrollconfiguration-swift.class/axis.md)
+### Configuring scroll indicators
+- [PaperMarkupViewController.ScrollConfiguration.Axis](./axis.md)
   The axes you use to specify scroll view behavior.
 
 

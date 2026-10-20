@@ -1,7 +1,8 @@
 # MKMapType
 
 **Framework**: MapKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of map to display.
 
@@ -13,45 +14,52 @@ The type of map to display.
 - tvOS 9.2+
 - visionOS 1.0+
 
+> **Deprecated**: Use the map view’s [`preferredConfiguration`](./mkmapview/preferredconfiguration.md) property with one of the [`MKMapConfiguration`](./mkmapconfiguration.md) subclasses to select a specific map style instead.
+
 ## Declaration
 
 ```swift
 enum MKMapType
 ```
 
+```c
+enum MKMapType : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MKMapType.standard](mkmaptype/standard.md)
+- [MKMapType.standard](./mkmaptype/standard.md)
   A street map that shows the position of all roads and some road names.
-- [MKMapType.satellite](mkmaptype/satellite.md)
+- [MKMapType.satellite](./mkmaptype/satellite.md)
   Satellite imagery of the area.
-- [MKMapType.hybrid](mkmaptype/hybrid.md)
+- [MKMapType.hybrid](./mkmaptype/hybrid.md)
   A satellite image of the area with road and road name information layered on top.
-- [MKMapType.satelliteFlyover](mkmaptype/satelliteflyover.md)
+- [MKMapType.satelliteFlyover](./mkmaptype/satelliteflyover.md)
   A satellite image of the area with flyover data where available.
-- [MKMapType.hybridFlyover](mkmaptype/hybridflyover.md)
+- [MKMapType.hybridFlyover](./mkmaptype/hybridflyover.md)
   A hybrid satellite image with flyover data where available.
-- [MKMapType.mutedStandard](mkmaptype/mutedstandard.md)
+- [MKMapType.mutedStandard](./mkmaptype/mutedstandard.md)
   A street map where MapKit emphasizes your data over the underlying map details.
 ### Initializers
-- [init?(rawValue: UInt)](mkmaptype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mkmaptype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MKLocalSearchCompleter.FilterType](mklocalsearchcompleter/filtertype-swift.enum.md)
+### Enumerations
+- [MKLocalSearchCompleter.FilterType](./mklocalsearchcompleter/filtertype-swift.enum.md)
   Constants indicating the types of search completions to return.
-- [enum MKPinAnnotationColor](mkpinannotationcolor.md)
+- [enum MKPinAnnotationColor](./mkpinannotationcolor.md)
   The supported colors for pin annotations.
 
 

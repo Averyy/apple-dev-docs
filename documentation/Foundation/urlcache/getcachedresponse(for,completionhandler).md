@@ -1,7 +1,8 @@
 # getCachedResponse(for:completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the cached URL response for a data task, passing it to the provided completion handler.
 
@@ -17,7 +18,15 @@ Gets the cached URL response for a data task, passing it to the provided complet
 ## Declaration
 
 ```swift
+func getCachedResponse(for dataTask: URLSessionDataTask, completionHandler: @escaping @Sendable (CachedURLResponse?) -> Void)
+```
+
+```swift
 func cachedResponse(for dataTask: URLSessionDataTask) async -> CachedURLResponse?
+```
+
+```objc
+- (void) getCachedResponseForDataTask:(NSURLSessionDataTask *) dataTask completionHandler:(void (^)(NSCachedURLResponse *cachedResponse)) completionHandler;
 ```
 
 ## Parameters
@@ -27,11 +36,12 @@ func cachedResponse(for dataTask: URLSessionDataTask) async -> CachedURLResponse
 
 ## See Also
 
-- [func cachedResponse(for: URLRequest) -> CachedURLResponse?](urlcache/cachedresponse(for:).md)
+### Getting and storing cached objects
+- [func cachedResponse(for: URLRequest) -> CachedURLResponse?](./cachedresponse%28for%29.md)
   Returns the cached URL response in the cache for the specified URL request.
-- [func storeCachedResponse(CachedURLResponse, for: URLRequest)](urlcache/storecachedresponse(_:for:)-7p7bl.md)
+- [func storeCachedResponse(CachedURLResponse, for: URLRequest)](./storecachedresponse%28_,for%29-7p7bl.md)
   Stores a cached URL response for a specified request.
-- [func storeCachedResponse(CachedURLResponse, for: URLSessionDataTask)](urlcache/storecachedresponse(_:for:)-8uq91.md)
+- [func storeCachedResponse(CachedURLResponse, for: URLSessionDataTask)](./storecachedresponse%28_,for%29-8uq91.md)
   Stores a cached URL response for a specified data task.
 
 

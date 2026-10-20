@@ -1,7 +1,8 @@
 # blendMode(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a new style based on the current style that uses `mode` as its blend mode when drawing.
 
@@ -21,6 +22,8 @@ Returns a new style based on the current style that uses `mode` as its blend mod
 static func blendMode(_ mode: BlendMode) -> some ShapeStyle
 ```
 
+Available when `Self` is `AnyShapeStyle`.
+
 #### Discussion
 
 In most contexts the current style is the foreground but e.g. when setting the value of the background style, that becomes the current implicit style.
@@ -33,9 +36,10 @@ Circle().fill(.blendMode(.overlay))
 
 ## See Also
 
-- [static func opacity(Double) -> some ShapeStyle](shapestyle/opacity(_:)-swift.type.method.md)
+### Configuring the default shape style
+- [static func opacity(Double) -> some ShapeStyle](./opacity%28_%29-swift.type.method.md)
   Returns a new style based on the current style that multiplies by `opacity` when drawing.
-- [static func shadow(ShadowStyle) -> some ShapeStyle](shapestyle/shadow(_:)-swift.type.method.md)
+- [static func shadow(ShadowStyle) -> some ShapeStyle](./shadow%28_%29-swift.type.method.md)
   Returns a shape style that applies the specified shadow style to the current style.
 
 

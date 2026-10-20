@@ -1,7 +1,8 @@
 # preferredWidthForSearchField
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred width for the toolbar item when it has keyboard focus.
 
@@ -14,11 +15,16 @@ The preferred width for the toolbar item when it has keyboard focus.
 var preferredWidthForSearchField: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat preferredWidthForSearchField;
+```
+
 ## See Also
 
-- [var resignsFirstResponderWithCancel: Bool](nssearchtoolbaritem/resignsfirstresponderwithcancel.md)
+### Configuring a search item
+- [var resignsFirstResponderWithCancel: Bool](./resignsfirstresponderwithcancel.md)
   A Boolean value that enables the cancel button in the search field to resign the first responder in addition to clearing the contents.
-- [var searchField: NSSearchField](nssearchtoolbaritem/searchfield.md)
+- [var searchField: NSSearchField](./searchfield.md)
   The search field inside the toolbar item.
 
 

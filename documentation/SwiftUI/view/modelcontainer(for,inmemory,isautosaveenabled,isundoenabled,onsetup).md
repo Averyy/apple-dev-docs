@@ -1,7 +1,8 @@
 # modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the model container in this view for storing the provided model type, creating a new container if necessary, and also sets a model context for that container in this view’s environment.
 
@@ -20,6 +21,13 @@ Sets the model container in this view for storing the provided model type, creat
 @preconcurrency func modelContainer(for modelType: any PersistentModel.Type, inMemory: Bool = false, isAutosaveEnabled: Bool = true, isUndoEnabled: Bool = false, onSetup: @escaping (Result<ModelContainer, any Error>) -> Void = { _ in }) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency func modelContainer(for modelTypes: [any PersistentModel.Type], inMemory: Bool = false, isAutosaveEnabled: Bool = true, isUndoEnabled: Bool = false, onSetup: @escaping (Result<ModelContainer, any Error>) -> Void = { _ in }) -> some View
+```
+
 #### Discussion
 
 In this example, the `RecipesList` view sets a model container to use for all of its contents, configured to store instances of `Recipe`:
@@ -31,7 +39,7 @@ RecipesList()
     .modelContainer(for: Recipe.self)
 ```
 
-The environment’s [`modelContext`](environmentvalues/modelcontext.md) property will be assigned a new context associated with this container. All implicit model context operations in this view, such as `Query` properties, will use the environment’s context.
+The environment’s [`modelContext`](../environmentvalues/modelcontext.md) property will be assigned a new context associated with this container. All implicit model context operations in this view, such as `Query` properties, will use the environment’s context.
 
 By default, the container stores its model data persistently on disk. To only store data in memory for the lifetime of the app’s process, pass `true` to the `inMemory:` parameter.
 
@@ -47,9 +55,10 @@ The container will only be created once. New values that are passed to the `mode
 
 ## See Also
 
-- [func modelContext(ModelContext) -> some View](view/modelcontext(_:).md)
+### Configuring a model
+- [func modelContext(ModelContext) -> some View](./modelcontext%28_%29.md)
   Sets the model context in this view’s environment.
-- [func modelContainer(ModelContainer) -> some View](view/modelcontainer(_:).md)
+- [func modelContainer(ModelContainer) -> some View](./modelcontainer%28_%29.md)
   Sets the model container and associated model context in this view’s environment.
 
 

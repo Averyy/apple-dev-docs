@@ -1,7 +1,8 @@
 # editor
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The editor role.
 
@@ -24,9 +25,10 @@ Use this role for a toolbar that primarily displays controls geared towards edit
 
 ## See Also
 
-- [static var browser: ToolbarRole](toolbarrole/browser.md)
+### Behavior-specific roles
+- [static var browser: ToolbarRole](./browser.md)
   The browser role.
-- [static var navigationStack: ToolbarRole](toolbarrole/navigationstack.md)
+- [static var navigationStack: ToolbarRole](./navigationstack.md)
   The navigationStack role.
 
 

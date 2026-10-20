@@ -1,7 +1,8 @@
 # totalTokenCount
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of output tokens.
 
@@ -21,7 +22,8 @@ var totalTokenCount: Int
 
 ## See Also
 
-- [var reasoningTokenCount: Int](languagemodelsession/usage-swift.struct/output-swift.struct/reasoningtokencount.md)
+### Getting the token count
+- [var reasoningTokenCount: Int](./reasoningtokencount.md)
   The number of output tokens that were part of the model’s reasoning output.
 
 

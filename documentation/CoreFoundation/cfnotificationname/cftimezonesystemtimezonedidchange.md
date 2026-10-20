@@ -1,7 +1,8 @@
 # cfTimeZoneSystemTimeZoneDidChange
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Name of the notification posted when the system time zone changes.
 
@@ -18,6 +19,10 @@ Name of the notification posted when the system time zone changes.
 
 ```swift
 static let cfTimeZoneSystemTimeZoneDidChange: CFNotificationName!
+```
+
+```c
+extern CFNotificationName const kCFTimeZoneSystemTimeZoneDidChangeNotification;
 ```
 
 #### Discussion

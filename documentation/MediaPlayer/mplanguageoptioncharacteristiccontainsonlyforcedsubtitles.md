@@ -1,7 +1,8 @@
 # MPLanguageOptionCharacteristicContainsOnlyForcedSubtitles
 
 **Framework**: Media Player  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates that the language option presents only forced subtitles.
 
@@ -20,29 +21,34 @@ Indicates that the language option presents only forced subtitles.
 let MPLanguageOptionCharacteristicContainsOnlyForcedSubtitles: String
 ```
 
+```c
+extern NSString * const MPLanguageOptionCharacteristicContainsOnlyForcedSubtitles;
+```
+
 #### Discussion
 
 Language options with forced-only subtitles are typically selected when the user hasn’t selected a legible option with an accessibility characteristic or an auxiliary purpose and its locale matches the locale of the selected audible language option. The system infers the presence of this characteristic for a legible language option from the format description of the associated track that presents the subtitle media.
 
 ## See Also
 
-- [let MPLanguageOptionCharacteristicDescribesMusicAndSound: String](mplanguageoptioncharacteristicdescribesmusicandsound.md)
+### Language option characteristic constants
+- [let MPLanguageOptionCharacteristicDescribesMusicAndSound: String](./mplanguageoptioncharacteristicdescribesmusicandsound.md)
   Indicates that the language option includes legible content in the language of its specified locale that describes music and sound effects occurring in program audio.
-- [let MPLanguageOptionCharacteristicDescribesVideo: String](mplanguageoptioncharacteristicdescribesvideo.md)
+- [let MPLanguageOptionCharacteristicDescribesVideo: String](./mplanguageoptioncharacteristicdescribesvideo.md)
   Indicates that the language option includes audible content that describes the visual portion of the presentation.
-- [let MPLanguageOptionCharacteristicDubbedTranslation: String](mplanguageoptioncharacteristicdubbedtranslation.md)
+- [let MPLanguageOptionCharacteristicDubbedTranslation: String](./mplanguageoptioncharacteristicdubbedtranslation.md)
   Indicates that the language option includes content that contains a dubbed translation.
-- [let MPLanguageOptionCharacteristicEasyToRead: String](mplanguageoptioncharacteristiceasytoread.md)
+- [let MPLanguageOptionCharacteristicEasyToRead: String](./mplanguageoptioncharacteristiceasytoread.md)
   Indicates that the language option provides legible content in the language of its specified locale and that the content was edited for ease of reading.
-- [let MPLanguageOptionCharacteristicIsAuxiliaryContent: String](mplanguageoptioncharacteristicisauxiliarycontent.md)
+- [let MPLanguageOptionCharacteristicIsAuxiliaryContent: String](./mplanguageoptioncharacteristicisauxiliarycontent.md)
   Indicates that the language option includes content that’s marked by the content author as auxiliary to the presentation of the language option.
-- [let MPLanguageOptionCharacteristicIsMainProgramContent: String](mplanguageoptioncharacteristicismainprogramcontent.md)
+- [let MPLanguageOptionCharacteristicIsMainProgramContent: String](./mplanguageoptioncharacteristicismainprogramcontent.md)
   Indicates that the language option includes content that’s marked by the content author as intrinsic to the presentation of the language option.
-- [let MPLanguageOptionCharacteristicLanguageTranslation: String](mplanguageoptioncharacteristiclanguagetranslation.md)
+- [let MPLanguageOptionCharacteristicLanguageTranslation: String](./mplanguageoptioncharacteristiclanguagetranslation.md)
   Indicates that the language option contains a translation in the language of its specified locale.
-- [let MPLanguageOptionCharacteristicTranscribesSpokenDialog: String](mplanguageoptioncharacteristictranscribesspokendialog.md)
+- [let MPLanguageOptionCharacteristicTranscribesSpokenDialog: String](./mplanguageoptioncharacteristictranscribesspokendialog.md)
   Indicates that the language option includes legible content in the language of its specified locale that transcribes spoken dialog.
-- [let MPLanguageOptionCharacteristicVoiceOverTranslation: String](mplanguageoptioncharacteristicvoiceovertranslation.md)
+- [let MPLanguageOptionCharacteristicVoiceOverTranslation: String](./mplanguageoptioncharacteristicvoiceovertranslation.md)
   Indicates that the language option includes voice over content in the language of its specified locale describes translated dialog.
 
 

@@ -1,7 +1,8 @@
 # copy()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a copy of the object.
 
@@ -21,13 +22,18 @@ nonisolated
 func copy() -> Any
 ```
 
+```objc
+- (id) copy;
+```
+
 #### Return Value
 
 A copy of the original asset instance.
 
 ## See Also
 
-- [func copy(with: NSZone?) -> Any](avplayeritem/copy(with:).md)
+### Copying an player item
+- [func copy(with: NSZone?) -> Any](./copy%28with%29.md)
   Creates a copy of the object with the specified zone.
 
 

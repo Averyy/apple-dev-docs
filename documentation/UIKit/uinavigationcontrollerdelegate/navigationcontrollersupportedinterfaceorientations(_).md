@@ -1,7 +1,8 @@
 # navigationControllerSupportedInterfaceOrientations(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the complete set of supported interface orientations for the navigation controller, as determined by the delegate.
 
@@ -17,9 +18,13 @@ Returns the complete set of supported interface orientations for the navigation 
 optional func navigationControllerSupportedInterfaceOrientations(_ navigationController: UINavigationController) -> UIInterfaceOrientationMask
 ```
 
+```objc
+- (UIInterfaceOrientationMask) navigationControllerSupportedInterfaceOrientations:(UINavigationController *) navigationController;
+```
+
 #### Return Value
 
-One of the [`UIInterfaceOrientationMask`](uiinterfaceorientationmask.md) constants that represents the set of interface orientations supported by the navigation controller.
+One of the [`UIInterfaceOrientationMask`](../uiinterfaceorientationmask.md) constants that represents the set of interface orientations supported by the navigation controller.
 
 ## Parameters
 
@@ -27,11 +32,12 @@ One of the [`UIInterfaceOrientationMask`](uiinterfaceorientationmask.md) constan
 
 ## See Also
 
-- [func navigationController(UINavigationController, animationControllerFor: UINavigationController.Operation, from: UIViewController, to: UIViewController) -> (any UIViewControllerAnimatedTransitioning)?](uinavigationcontrollerdelegate/navigationcontroller(_:animationcontrollerfor:from:to:).md)
+### Supporting custom transition animations
+- [func navigationController(UINavigationController, animationControllerFor: UINavigationController.Operation, from: UIViewController, to: UIViewController) -> (any UIViewControllerAnimatedTransitioning)?](./navigationcontroller%28_,animationcontrollerfor,from,to%29.md)
   Allows the delegate to return a noninteractive animator object for use during view controller transitions.
-- [func navigationController(UINavigationController, interactionControllerFor: any UIViewControllerAnimatedTransitioning) -> (any UIViewControllerInteractiveTransitioning)?](uinavigationcontrollerdelegate/navigationcontroller(_:interactioncontrollerfor:).md)
+- [func navigationController(UINavigationController, interactionControllerFor: any UIViewControllerAnimatedTransitioning) -> (any UIViewControllerInteractiveTransitioning)?](./navigationcontroller%28_,interactioncontrollerfor%29.md)
   Allows the delegate to return an interactive animator object for use during view controller transitions.
-- [func navigationControllerPreferredInterfaceOrientationForPresentation(UINavigationController) -> UIInterfaceOrientation](uinavigationcontrollerdelegate/navigationcontrollerpreferredinterfaceorientationforpresentation(_:).md)
+- [func navigationControllerPreferredInterfaceOrientationForPresentation(UINavigationController) -> UIInterfaceOrientation](./navigationcontrollerpreferredinterfaceorientationforpresentation%28_%29.md)
   Returns the preferred orientation for presentation of the navigation controller, as determined by the delegate.
 
 

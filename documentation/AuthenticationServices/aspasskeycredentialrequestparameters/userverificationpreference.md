@@ -1,7 +1,8 @@
 # userVerificationPreference
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The relying party’s preference for user verification.
 
@@ -18,13 +19,18 @@ The relying party’s preference for user verification.
 var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) ASAuthorizationPublicKeyCredentialUserVerificationPreference userVerificationPreference;
+```
+
 ## See Also
 
-- [var allowedCredentials: [Data]](aspasskeycredentialrequestparameters/allowedcredentials.md)
+### Viewing credential request parameters
+- [var allowedCredentials: [Data]](./allowedcredentials.md)
   A list of passkey credentials that the relying party accepts for this challenge.
-- [var clientDataHash: Data](aspasskeycredentialrequestparameters/clientdatahash.md)
+- [var clientDataHash: Data](./clientdatahash.md)
   The client data that you sign as part of the response.
-- [var relyingPartyIdentifier: String](aspasskeycredentialrequestparameters/relyingpartyidentifier.md)
+- [var relyingPartyIdentifier: String](./relyingpartyidentifier.md)
   The relying party that issues the challenge.
 
 

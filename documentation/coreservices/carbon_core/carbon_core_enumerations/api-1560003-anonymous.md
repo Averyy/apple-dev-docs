@@ -5,14 +5,14 @@
 ## Topics
 
 ### Constants
-- [var errAborted: Int](erraborted.md)
-- [var errAttention: Int](errattention.md)
-- [var errDSPQueueSize: Int](errdspqueuesize.md)
-- [var errFwdReset: Int](errfwdreset.md)
-- [var errOpenDenied: Int](erropendenied.md)
-- [var errOpening: Int](erropening.md)
-- [var errRefNum: Int](errrefnum.md)
-- [var errState: Int](errstate.md)
+- [var errAborted: Int](../../erraborted.md)
+- [var errAttention: Int](../../errattention.md)
+- [var errDSPQueueSize: Int](../../errdspqueuesize.md)
+- [var errFwdReset: Int](../../errfwdreset.md)
+- [var errOpenDenied: Int](../../erropendenied.md)
+- [var errOpening: Int](../../erropening.md)
+- [var errRefNum: Int](../../errrefnum.md)
+- [var errState: Int](../../errstate.md)
 
 
 ---

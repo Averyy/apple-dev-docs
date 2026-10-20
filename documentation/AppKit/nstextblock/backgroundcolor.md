@@ -1,7 +1,8 @@
 # backgroundColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background color of the text block.
 
@@ -15,11 +16,16 @@ The background color of the text block.
 var backgroundColor: NSColor? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSColor * backgroundColor;
+```
+
 ## See Also
 
-- [func setBorderColor(NSColor?)](nstextblock/setbordercolor(_:).md)
+### Working with color
+- [func setBorderColor(NSColor?)](./setbordercolor%28_%29.md)
   Sets the color of all borders of the text block.
-- [func setBorderColor(NSColor?, rectEdge: CGRectEdge)](nstextblock/setbordercolor(_:rectedge:).md)
+- [func setBorderColor(NSColor?, rectEdge: CGRectEdge)](./setbordercolor%28_,rectedge%29.md)
 
 
 ---

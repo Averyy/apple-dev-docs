@@ -1,7 +1,8 @@
 # normalize
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An option that resizes loudness of the audio stream for consistency.
 
@@ -19,9 +20,13 @@ An option that resizes loudness of the audio stream for consistency.
 var normalize: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL normalize;
+```
+
 #### Discussion
 
-The default value is `false`. When `true`, the engine *normalizes* the audio stream — that is, it dynamically resizes loudness within a given range for a consistent listening experience. Normalization serves the benefit of assisting output level calibration. Apps that leave the value `false` need to normalize stream data manually before passing it into the framework (see [`pushStreamNodes`](phasesoundevent/pushstreamnodes.md)).
+The default value is `false`. When `true`, the engine *normalizes* the audio stream — that is, it dynamically resizes loudness within a given range for a consistent listening experience. Normalization serves the benefit of assisting output level calibration. Apps that leave the value `false` need to normalize stream data manually before passing it into the framework (see [`pushStreamNodes`](../phasesoundevent/pushstreamnodes.md)).
 
 
 ---

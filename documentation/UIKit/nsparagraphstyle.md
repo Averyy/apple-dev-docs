@@ -1,7 +1,8 @@
 # NSParagraphStyle
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The paragraph or ruler attributes for an attributed string.
 
@@ -19,109 +20,114 @@ The paragraph or ruler attributes for an attributed string.
 class NSParagraphStyle
 ```
 
+```objc
+@interface NSParagraphStyle : NSObject
+```
+
 #### Overview
 
-An [`NSParagraphStyle`](nsparagraphstyle.md) object stores formatting information for a paragraph of text. The formatting information includes the amount of space between lines, indentations for lines of text, line heights, tab-stop positions, and more. Apply paragraph styles to the text of an attributed string by adding the [`paragraphStyle`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/paragraphstyle) attribute in Swift or the [`NSParagraphStyleAttributeName`](nsparagraphstyleattributename.md) attribute in Objective-C and setting its value to an instance of this class. The text-rendering system uses the paragraph style information in an attributed string to lay out and render the text.
+An [`NSParagraphStyle`](./nsparagraphstyle.md) object stores formatting information for a paragraph of text. The formatting information includes the amount of space between lines, indentations for lines of text, line heights, tab-stop positions, and more. Apply paragraph styles to the text of an attributed string by adding the [`paragraphStyle`](../Foundation/nsattributedstring/key/paragraphstyle.md) attribute in Swift or the [`NSParagraphStyleAttributeName`](./nsparagraphstyleattributename.md) attribute in Objective-C and setting its value to an instance of this class. The text-rendering system uses the paragraph style information in an attributed string to lay out and render the text.
 
-The [`NSParagraphStyle`](nsparagraphstyle.md) class manages an immutable set of style information, but you can create an [`NSMutableParagraphStyle`](nsmutableparagraphstyle.md) when you want to modify the style information before applying it to your text.
+The [`NSParagraphStyle`](./nsparagraphstyle.md) class manages an immutable set of style information, but you can create an [`NSMutableParagraphStyle`](./nsmutableparagraphstyle.md) when you want to modify the style information before applying it to your text.
 
 ## Topics
 
 ### Creating a paragraph style
-- [class var `default`: NSParagraphStyle](nsparagraphstyle/default.md)
+- [class var `default`: NSParagraphStyle](./nsparagraphstyle/default.md)
   The default paragraph style.
 ### Accessing style information
-- [var alignment: NSTextAlignment](nsparagraphstyle/alignment.md)
+- [var alignment: NSTextAlignment](./nsparagraphstyle/alignment.md)
   The text alignment of the paragraph.
-- [enum NSTextAlignment](nstextalignment.md)
+- [enum NSTextAlignment](./nstextalignment.md)
   Constants that specify text alignment.
-- [var firstLineHeadIndent: CGFloat](nsparagraphstyle/firstlineheadindent.md)
+- [var firstLineHeadIndent: CGFloat](./nsparagraphstyle/firstlineheadindent.md)
   The indentation of the first line of the paragraph.
-- [var headIndent: CGFloat](nsparagraphstyle/headindent.md)
+- [var headIndent: CGFloat](./nsparagraphstyle/headindent.md)
   The indentation of the paragraph’s lines other than the first.
-- [var tailIndent: CGFloat](nsparagraphstyle/tailindent.md)
+- [var tailIndent: CGFloat](./nsparagraphstyle/tailindent.md)
   The trailing indentation of the paragraph.
-- [var lineHeightMultiple: CGFloat](nsparagraphstyle/lineheightmultiple.md)
+- [var lineHeightMultiple: CGFloat](./nsparagraphstyle/lineheightmultiple.md)
   The line height multiple.
-- [var maximumLineHeight: CGFloat](nsparagraphstyle/maximumlineheight.md)
+- [var maximumLineHeight: CGFloat](./nsparagraphstyle/maximumlineheight.md)
   The paragraph’s maximum line height.
-- [var minimumLineHeight: CGFloat](nsparagraphstyle/minimumlineheight.md)
+- [var minimumLineHeight: CGFloat](./nsparagraphstyle/minimumlineheight.md)
   The paragraph’s minimum line height.
-- [var lineSpacing: CGFloat](nsparagraphstyle/linespacing.md)
+- [var lineSpacing: CGFloat](./nsparagraphstyle/linespacing.md)
   The distance in points between the bottom of one line fragment and the top of the next.
-- [var paragraphSpacing: CGFloat](nsparagraphstyle/paragraphspacing.md)
+- [var paragraphSpacing: CGFloat](./nsparagraphstyle/paragraphspacing.md)
   Distance between the bottom of this paragraph and top of next.
-- [var paragraphSpacingBefore: CGFloat](nsparagraphstyle/paragraphspacingbefore.md)
+- [var paragraphSpacingBefore: CGFloat](./nsparagraphstyle/paragraphspacingbefore.md)
   The distance between the paragraph’s top and the beginning of its text content.
 ### Accessing tab information
-- [var tabStops: [NSTextTab]](nsparagraphstyle/tabstops.md)
+- [var tabStops: [NSTextTab]](./nsparagraphstyle/tabstops.md)
   The text tab objects that represent the paragraph’s tab stops.
-- [NSParagraphStyle.TextTabType](../appkit/nsparagraphstyle/texttabtype.md)
+- [NSParagraphStyle.TextTabType](../AppKit/nsparagraphstyle/texttabtype.md)
   Constants that specify the type of tab stop.
-- [var defaultTabInterval: CGFloat](nsparagraphstyle/defaulttabinterval.md)
+- [var defaultTabInterval: CGFloat](./nsparagraphstyle/defaulttabinterval.md)
   The documentwide default tab interval.
 ### Getting text block and list information
-- [var textBlocks: [NSTextBlock]](nsparagraphstyle/textblocks.md)
+- [var textBlocks: [NSTextBlock]](./nsparagraphstyle/textblocks.md)
   The text blocks that contain the paragraph, nested from outermost to innermost.
-- [var textLists: [NSTextList]](nsparagraphstyle/textlists.md)
+- [var textLists: [NSTextList]](./nsparagraphstyle/textlists.md)
   The text lists that contain the paragraph.
 ### Getting line-break information
-- [var lineBreakMode: NSLineBreakMode](nsparagraphstyle/linebreakmode.md)
+- [var lineBreakMode: NSLineBreakMode](./nsparagraphstyle/linebreakmode.md)
   The mode for breaking lines in the paragraph that don’t fit within a container.
-- [enum NSLineBreakMode](nslinebreakmode.md)
+- [enum NSLineBreakMode](./nslinebreakmode.md)
   Constants that specify what happens when a line is too long for a container.
-- [var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy](nsparagraphstyle/linebreakstrategy-swift.property.md)
+- [var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy](./nsparagraphstyle/linebreakstrategy-swift.property.md)
   The strategy for breaking lines while laying out paragraphs.
-- [NSParagraphStyle.LineBreakStrategy](nsparagraphstyle/linebreakstrategy-swift.struct.md)
+- [NSParagraphStyle.LineBreakStrategy](./nsparagraphstyle/linebreakstrategy-swift.struct.md)
   Constants that specify how the text system breaks lines while laying out paragraphs.
-- [var hyphenationFactor: Float](nsparagraphstyle/hyphenationfactor.md)
+- [var hyphenationFactor: Float](./nsparagraphstyle/hyphenationfactor.md)
   The paragraph’s threshold for hyphenation.
-- [var usesDefaultHyphenation: Bool](nsparagraphstyle/usesdefaulthyphenation.md)
+- [var usesDefaultHyphenation: Bool](./nsparagraphstyle/usesdefaulthyphenation.md)
   A Boolean value that indicates whether the paragraph style uses the system hyphenation settings.
-- [var tighteningFactorForTruncation: Float](../appkit/nsparagraphstyle/tighteningfactorfortruncation.md)
+- [var tighteningFactorForTruncation: Float](../AppKit/nsparagraphstyle/tighteningfactorfortruncation.md)
   The threshold for using tightening as an alternative to truncation.
-- [var allowsDefaultTighteningForTruncation: Bool](nsparagraphstyle/allowsdefaulttighteningfortruncation.md)
+- [var allowsDefaultTighteningForTruncation: Bool](./nsparagraphstyle/allowsdefaulttighteningfortruncation.md)
   A Boolean value that indicates whether the system tightens character spacing before truncating text.
 ### Getting the HTML header level
-- [var headerLevel: Int](../appkit/nsparagraphstyle/headerlevel.md)
+- [var headerLevel: Int](../AppKit/nsparagraphstyle/headerlevel.md)
   The paragraph’s header level for HTML generation.
 ### Determining writing direction
-- [class func defaultWritingDirection(forLanguage: String?) -> NSWritingDirection](nsparagraphstyle/defaultwritingdirection(forlanguage:).md)
+- [class func defaultWritingDirection(forLanguage: String?) -> NSWritingDirection](./nsparagraphstyle/defaultwritingdirection%28forlanguage%29.md)
   Returns the default writing direction for the specified language.
-- [var baseWritingDirection: NSWritingDirection](nsparagraphstyle/basewritingdirection.md)
+- [var baseWritingDirection: NSWritingDirection](./nsparagraphstyle/basewritingdirection.md)
   The base writing direction for the paragraph.
-- [enum NSWritingDirection](nswritingdirection.md)
+- [enum NSWritingDirection](./nswritingdirection.md)
   Constants that specify the writing direction.
 ### Initializers
-- [init?(coder: NSCoder)](nsparagraphstyle/init(coder:).md)
+- [init?(coder: NSCoder)](./nsparagraphstyle/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [NSMutableParagraphStyle](nsmutableparagraphstyle.md)
+- [NSMutableParagraphStyle](./nsmutableparagraphstyle.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NSMutableParagraphStyle](nsmutableparagraphstyle.md)
+### Formatting and attributes
+- [class NSMutableParagraphStyle](./nsmutableparagraphstyle.md)
   An object for changing the values of the subattributes in a paragraph style attribute.
-- [class NSTextTab](nstexttab.md)
+- [class NSTextTab](./nstexttab.md)
   A tab in a paragraph.
-- [class NSTextList](nstextlist.md)
+- [class NSTextList](./nstextlist.md)
   A section of text that forms a single list.
-- [Adding tables to attributed strings in UIKit](adding-tables-to-attributed-strings.md)
+- [Adding tables to attributed strings in UIKit](./adding-tables-to-attributed-strings.md)
   Create and configure tables in attributed strings and display them in a text view.
 
 

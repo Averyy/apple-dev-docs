@@ -1,11 +1,12 @@
 # MTRDeviceControllerStartupParams Implementations
 
-**Framework**: Matter
+**Framework**: Matter  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(signingKeypair: any MTRKeypair, fabricId: UInt64, ipk: Data)](mtrdevicecontrollerstartupparams/init(signingkeypair:fabricid:ipk:).md)
+- [init(signingKeypair: any MTRKeypair, fabricId: UInt64, ipk: Data)](./init%28signingkeypair,fabricid,ipk%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Feedback.objectTooFar
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The camera is too far from the object and it cannot be captured well.
 

@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dictionary’s “past the end” position—that is, the position one greater than the last valid subscript argument.
 
@@ -20,11 +21,13 @@ The dictionary’s “past the end” position—that is, the position one great
 var endIndex: Dictionary<Key, Value>.Index { get }
 ```
 
+Available when `Key` conforms to `Hashable`.
+
 #### Discussion
 
 If the collection is empty, `endIndex` is equal to `startIndex`.
 
-> **Note**: Amortized O(1) if the dictionary does not wrap a bridged `NSDictionary`; otherwise, the performance is unspecified.
+> **Complexity**: Amortized O(1) if the dictionary does not wrap a bridged `NSDictionary`; otherwise, the performance is unspecified.
 
 
 ---

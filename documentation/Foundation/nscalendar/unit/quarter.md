@@ -1,7 +1,8 @@
 # quarter
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Identifier for the quarter of the calendar.
 
@@ -20,6 +21,10 @@ Identifier for the quarter of the calendar.
 static var quarter: NSCalendar.Unit { get }
 ```
 
+```c
+NSCalendarUnitQuarter
+```
+
 #### Discussion
 
 The corresponding value is an `NSInteger`. Equal to `kCFCalendarUnitQuarter`.
@@ -28,15 +33,16 @@ The corresponding value is an `NSInteger`. Equal to `kCFCalendarUnitQuarter`.
 
 ## See Also
 
-- [static var era: NSCalendar.Unit](nscalendar/unit/era.md)
+### Specifying Years and Months
+- [static var era: NSCalendar.Unit](./era.md)
   Identifier for the era unit.
-- [static var year: NSCalendar.Unit](nscalendar/unit/year.md)
+- [static var year: NSCalendar.Unit](./year.md)
   Identifier for the year unit.
-- [static var yearForWeekOfYear: NSCalendar.Unit](nscalendar/unit/yearforweekofyear.md)
+- [static var yearForWeekOfYear: NSCalendar.Unit](./yearforweekofyear.md)
   Identifier for the week-counting year unit.
-- [static var month: NSCalendar.Unit](nscalendar/unit/month.md)
+- [static var month: NSCalendar.Unit](./month.md)
   Identifier for the month unit.
-- [static var isLeapMonth: NSCalendar.Unit](nscalendar/unit/isleapmonth.md)
+- [static var isLeapMonth: NSCalendar.Unit](./isleapmonth.md)
   Identifier for the time zone of a date components object.
 
 

@@ -1,7 +1,8 @@
 # MPSGraphNonMaximumSuppressionCoordinateMode
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The non-maximum suppression coordinate mode.
 
@@ -17,6 +18,10 @@ The non-maximum suppression coordinate mode.
 
 ```swift
 enum MPSGraphNonMaximumSuppressionCoordinateMode
+```
+
+```c
+enum MPSGraphNonMaximumSuppressionCoordinateMode : NSUInteger;
 ```
 
 #### Overview
@@ -37,22 +42,22 @@ CentersWidthFirst:
 ## Topics
 
 ### Enumeration Cases
-- [MPSGraphNonMaximumSuppressionCoordinateMode.centersHeightFirst](mpsgraphnonmaximumsuppressioncoordinatemode/centersheightfirst.md)
-- [MPSGraphNonMaximumSuppressionCoordinateMode.centersWidthFirst](mpsgraphnonmaximumsuppressioncoordinatemode/centerswidthfirst.md)
-- [MPSGraphNonMaximumSuppressionCoordinateMode.cornersWidthFirst](mpsgraphnonmaximumsuppressioncoordinatemode/cornerswidthfirst.md)
-- [MPSGraphNonMaximumSuppressionCoordinateMode.explicit](mpsgraphnonmaximumsuppressioncoordinatemode/explicit.md)
+- [MPSGraphNonMaximumSuppressionCoordinateMode.centersHeightFirst](./mpsgraphnonmaximumsuppressioncoordinatemode/centersheightfirst.md)
+- [MPSGraphNonMaximumSuppressionCoordinateMode.centersWidthFirst](./mpsgraphnonmaximumsuppressioncoordinatemode/centerswidthfirst.md)
+- [MPSGraphNonMaximumSuppressionCoordinateMode.cornersWidthFirst](./mpsgraphnonmaximumsuppressioncoordinatemode/cornerswidthfirst.md)
+- [MPSGraphNonMaximumSuppressionCoordinateMode.explicit](./mpsgraphnonmaximumsuppressioncoordinatemode/explicit.md)
 ### Initializers
-- [init?(rawValue: UInt)](mpsgraphnonmaximumsuppressioncoordinatemode/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mpsgraphnonmaximumsuppressioncoordinatemode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

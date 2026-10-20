@@ -1,7 +1,8 @@
 # maxTotalThreadsPerThreadgroup
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of threads in a threadgroup when dispatching a command using the pipeline.
 
@@ -17,6 +18,10 @@ The maximum number of threads in a threadgroup when dispatching a command using 
 
 ```swift
 var maxTotalThreadsPerThreadgroup: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger maxTotalThreadsPerThreadgroup;
 ```
 
 

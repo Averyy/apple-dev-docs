@@ -1,7 +1,8 @@
 # destinationURL
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The destination URL to attribute.
 
@@ -17,6 +18,10 @@ The destination URL to attribute.
 var destinationURL: URL { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSURL * destinationURL;
+```
+
 #### Discussion
 
 This property contains the URL associated with the event; for example, the `destinationURL` for an advertisement contains the external link opened when the user taps the ad.
@@ -25,13 +30,14 @@ This field corresponds to the `attributed_on_site` field of a web attribution.
 
 ## See Also
 
-- [var purchaser: String](uieventattribution/purchaser.md)
+### Setting attribution details
+- [var purchaser: String](./purchaser.md)
   The entity that purchased the ad or content.
-- [var reportEndpoint: URL?](uieventattribution/reportendpoint.md)
+- [var reportEndpoint: URL?](./reportendpoint.md)
   The URL that receives attribution data.
-- [var sourceDescription: String](uieventattribution/sourcedescription.md)
+- [var sourceDescription: String](./sourcedescription.md)
   A string describing the source tapped to launch the external link.
-- [var sourceIdentifier: UInt8](uieventattribution/sourceidentifier.md)
+- [var sourceIdentifier: UInt8](./sourceidentifier.md)
   A number that identifies the source of the attribution.
 
 

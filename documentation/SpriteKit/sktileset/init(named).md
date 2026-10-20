@@ -1,7 +1,8 @@
 # init(named:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a tile set by searching the app bundle for an archived `.sks` file by name.
 
@@ -20,6 +21,10 @@ Initializes a tile set by searching the app bundle for an archived `.sks` file b
 convenience init?(named name: String)
 ```
 
+```objc
++ (instancetype) tileSetNamed:(NSString *) name;
+```
+
 #### Return Value
 
 A new tile set or `nil` if a tile set with a matching name cannot be found.
@@ -30,7 +35,8 @@ A new tile set or `nil` if a tile set with a matching name cannot be found.
 
 ## See Also
 
-- [convenience init?(from: URL)](sktileset/init(from:).md)
+### Creating a Tile Set from a File
+- [convenience init?(from: URL)](./init%28from%29.md)
   Initializes a tile set from a URL to an archived .sks file.
 
 

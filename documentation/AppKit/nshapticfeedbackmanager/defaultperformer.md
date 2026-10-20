@@ -1,7 +1,8 @@
 # defaultPerformer
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Requests a haptic feedback performer object that is based on the current input device, accessibility settings, and user preferences.
 
@@ -14,13 +15,18 @@ Requests a haptic feedback performer object that is based on the current input d
 class var defaultPerformer: any NSHapticFeedbackPerformer { get }
 ```
 
+```objc
+@property (class, strong, readonly) id<NSHapticFeedbackPerformer> defaultPerformer;
+```
+
 #### Discussion
 
 This method returns a haptic feedback performer object of type `NSHapticFeedbackPerformer` that is based on the current input device, accessibility settings, and user preferences. Because the current input device may change at any time, you should request the default performer whenever you need to provide haptic feedback to the user.
 
 ## See Also
 
-- [protocol NSHapticFeedbackPerformer](nshapticfeedbackperformer.md)
+### Related Documentation
+- [protocol NSHapticFeedbackPerformer](../nshapticfeedbackperformer.md)
   A set of methods and constants that a haptic feedback performer implements.
 
 

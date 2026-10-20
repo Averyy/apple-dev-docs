@@ -1,14 +1,15 @@
 # Generating a URL and Signature to Create a Maps Web Snapshot
 
-**Framework**: Maps Web Snapshots
+**Framework**: Maps Web Snapshots  
+**Role**: Article
 
 Create a Snapshot URL and generate a signature to validate the request.
 
 #### Overview
 
-You can use the Maps Web Snapshots service to retrieve static map images using a URL, in which you set the parameters that define the image. Begin by gathering your credentials, then create a snapshot URL using the parameters described in [`Create a Maps Web Snapshot`](get-a-map-snapshot.md). Next, generate a signature by signing the URL string with your credentials. Finally, append the `signature` parameter to your Snapshot URL setting its value to the signature that you generated.
+You can use the Maps Web Snapshots service to retrieve static map images using a URL, in which you set the parameters that define the image. Begin by gathering your credentials, then create a snapshot URL using the parameters described in [`Create a Maps Web Snapshot`](./get-a-map-snapshot.md). Next, generate a signature by signing the URL string with your credentials. Finally, append the `signature` parameter to your Snapshot URL setting its value to the signature that you generated.
 
-You can also obtain HTML to show information about a place using [`Create a Map`](https://developer.apple.comhttps://developer.apple.com/maps/create-a-map/).
+You can also obtain HTML to show information about a place using [Create a Map](https://developer.apple.com/maps/create-a-map/).
 
 ##### Gather Credentials
 
@@ -18,17 +19,17 @@ All snapshot URLs must include a signature. To create your signature, gather the
 - The Key ID for a key with the MapKit JS service enabled
 - Your private key file (.p8) for the key
 
-If you don’t have a MapKit JS key, learn how to obtain one in [`Creating a Maps identifier and a private key`](https://developer.apple.com/documentation/applemapsserverapi/creating-a-maps-identifier-and-a-private-key).
+If you don’t have a MapKit JS key, learn how to obtain one in [Creating a Maps identifier and a private key](../AppleMapsServerAPI/creating-a-maps-identifier-and-a-private-key.md).
 
-> 💡 **Tip**:  To locate your Team ID, sign in to your [`Apple Developer account`](https://developer.apple.comhttps://developer.apple.com/account) and click Membership in the left sidebar.
+> 💡 **Tip**:  To locate your Team ID, sign in to your [Apple Developer account](https://developer.apple.com/account) and click Membership in the left sidebar.
 
-##### Create a Snapshot Url and Signature
+##### Create a Snapshot URL and Signature
 
-Once you have your Team ID, Key ID, and private key file, use these credentials to generate a signature for a Maps Web Snapshots URL. You generate the signature using your credentials plus the snapshot URL request path and all query parameters, as described in [`Create a Maps Web Snapshot`](get-a-map-snapshot.md).
+Once you have your Team ID, Key ID, and private key file, use these credentials to generate a signature for a Maps Web Snapshots URL. You generate the signature using your credentials plus the snapshot URL request path and all query parameters, as described in [`Create a Maps Web Snapshot`](./get-a-map-snapshot.md).
 
 Using the query parameters to describe the characteristics of your map—such as its center, size, language, and so on—construct a snapshot URL. For example, this snapshot URL uses the `center` parameter to set the center point of the map image to Apple Park:
 
-```None
+```
 https://snapshot.apple-mapkit.com/api/v1/snapshot?center=apple+park
 ```
 
@@ -36,7 +37,7 @@ https://snapshot.apple-mapkit.com/api/v1/snapshot?center=apple+park
 
 Add the `teamID` and `keyID` parameters to the URL, setting the values of the parameters to your own Team ID and Key ID. For example:
 
-```None
+```
 https://snapshot.apple-mapkit.com/api/v1/snapshot?center=apple+park&teamId=<your_team_id>&keyId=<your_key_id>
 ```
 
@@ -44,17 +45,17 @@ To generate a signature, sign the string with your private key using a ES256 alg
 
 The generated signature allows you to access the exact request path and query parameters used in the signing process. If you modify or reorder the query parameters, you must generate a new signature.
 
-##### Append the Signature to a Maps Snapshot Url
+##### Append the Signature to a Maps Snapshot URL
 
 Append the `signature` parameter to your snapshots URL, and set the value of this parameter to the signature you generated. The `signature` parameter should always be the final parameter in a snapshots URL, as in this example:
 
-```None
+```
 https://snapshot.apple-mapkit.com/api/v1/snapshot?center=apple+park&teamId=<your_team_id>&keyId=<your_key_id>&signature=<your_generated_signature>
 ```
 
 If the signature is the not the last query parameter, the request returns `401 Authorization Error`.
 
-##### Generate a Signed Url with Example Code
+##### Generate a Signed URL with Example Code
 
 This example script uses JavaScript to do the following:
 
@@ -95,13 +96,14 @@ signRequest("center=apple+park")
 
 ## See Also
 
-- [object Annotation](annotation.md)
+### Essentials
+- [object Annotation](./annotation.md)
   An object for a Snapshot URL that describes annotation characteristics.
-- [object Overlay](overlay.md)
+- [object Overlay](./overlay.md)
   A JSON object for a Snapshot URL that describes overlay shape characteristics, including points for the overlay and styles such as width, color, and dash pattern.
-- [object OverlayStyle](overlaystyle.md)
+- [object OverlayStyle](./overlaystyle.md)
   A  JSON object that describes reusable styles for an overlay.
-- [object Image](image.md)
+- [object Image](./image.md)
   A JSON object for a Snapshot URL that describes the characteristics of custom images to use for map annotations.
 
 

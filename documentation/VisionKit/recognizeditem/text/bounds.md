@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounds of the recognized item in view coordinates.
 
@@ -18,7 +19,8 @@ var bounds: RecognizedItem.Bounds { get }
 
 ## See Also
 
-- [var observation: VNRecognizedTextObservation](recognizeditem/text/observation.md)
+### Locating text
+- [var observation: VNRecognizedTextObservation](./observation.md)
   An object that contains details about the location and content of text and glyphs in an image.
 
 

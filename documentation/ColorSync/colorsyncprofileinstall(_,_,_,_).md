@@ -1,7 +1,8 @@
 # ColorSyncProfileInstall(_:_:_:_:)
 
 **Framework**: ColorSync  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Installs a profile in the specified domain.
 
@@ -15,13 +16,17 @@ Installs a profile in the specified domain.
 func ColorSyncProfileInstall(_ profile: ColorSyncProfile!, _ domain: CFString!, _ subpath: CFString!, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool
 ```
 
+```c
+extern bool ColorSyncProfileInstall(ColorSyncProfileRef profile, CFStringRef domain, CFStringRef subpath, CFErrorRef*error);
+```
+
 #### Return Value
 
 `true` on success, or `false` in case of error.
 
 #### Discussion
 
-The `domain` is either [`kColorSyncProfileComputerDomain`](kcolorsyncprofilecomputerdomain.md) or [`kColorSyncProfileUserDomain`](kcolorsyncprofileuserdomain.md). [`kColorSyncProfileComputerDomain`](kcolorsyncprofilecomputerdomain.md) is for sharing the profiles (from `/Library/ColorSync/Profiles`). [`kColorSyncProfileUserDomain`](kcolorsyncprofileuserdomain.md) is for user custom profiles (installed under the home directory, that is, in `~/Library/ColorSync/Profiles`). `NULL` is the same as [`kColorSyncProfileUserDomain`](kcolorsyncprofileuserdomain.md).
+The `domain` is either [`kColorSyncProfileComputerDomain`](./kcolorsyncprofilecomputerdomain.md) or [`kColorSyncProfileUserDomain`](./kcolorsyncprofileuserdomain.md). [`kColorSyncProfileComputerDomain`](./kcolorsyncprofilecomputerdomain.md) is for sharing the profiles (from `/Library/ColorSync/Profiles`). [`kColorSyncProfileUserDomain`](./kcolorsyncprofileuserdomain.md) is for user custom profiles (installed under the home directory, that is, in `~/Library/ColorSync/Profiles`). `NULL` is the same as [`kColorSyncProfileUserDomain`](./kcolorsyncprofileuserdomain.md).
 
 The `subpath` is the file system representation of the path of the file to contain the installed profile. The function interprets the last component of the path as a file name if it ends with the extension `.icc`. Otherwise, the function interprets the subpath as the directory path and creates the file name from the profile description tag, appended with the `.icc` extension.
 
@@ -30,20 +35,21 @@ Using this function requires `COLORSYNC_PROFILE_INSTALL_ENTITLEMENT`.
 ## Parameters
 
 - `profile`: The profile to install.
-- `domain`: The domain to install into, either [`kColorSyncProfileComputerDomain`](kcolorsyncprofilecomputerdomain.md) or [`kColorSyncProfileUserDomain`](kcolorsyncprofileuserdomain.md).
+- `domain`: The domain to install into, either [`kColorSyncProfileComputerDomain`](./kcolorsyncprofilecomputerdomain.md) or [`kColorSyncProfileUserDomain`](./kcolorsyncprofileuserdomain.md).
 - `subpath`: A string created from the file system representation of the path of the file to contain the installed profile.
 - `error`: On failure, a pointer to an error describing the problem. Optional.
 
 ## See Also
 
-- [func ColorSyncProfileUninstall(ColorSyncProfile!, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool](colorsyncprofileuninstall(_:_:).md)
+### Installing profiles
+- [func ColorSyncProfileUninstall(ColorSyncProfile!, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool](./colorsyncprofileuninstall%28_,_%29.md)
   Uninstalls a profile.
-- [func ColorSyncIterateInstalledProfilesWithOptions(ColorSyncProfileIterateCallback?, UnsafeMutablePointer<UInt32>?, UnsafeMutableRawPointer?, CFDictionary?, UnsafeMutablePointer<Unmanaged<CFError>?>?)](colorsynciterateinstalledprofileswithoptions(_:_:_:_:_:).md)
+- [func ColorSyncIterateInstalledProfilesWithOptions(ColorSyncProfileIterateCallback?, UnsafeMutablePointer<UInt32>?, UnsafeMutableRawPointer?, CFDictionary?, UnsafeMutablePointer<Unmanaged<CFError>?>?)](./colorsynciterateinstalledprofileswithoptions%28_,_,_,_,_%29.md)
   Iterates over the installed profiles, using the given options.
-- [var COLORSYNC_PROFILE_INSTALL_ENTITLEMENT: String](colorsync_profile_install_entitlement.md)
-- [var kColorSyncProfileComputerDomain: Unmanaged<CFString>!](kcolorsyncprofilecomputerdomain.md)
+- [var COLORSYNC_PROFILE_INSTALL_ENTITLEMENT: String](./colorsync_profile_install_entitlement.md)
+- [var kColorSyncProfileComputerDomain: Unmanaged<CFString>!](./kcolorsyncprofilecomputerdomain.md)
   The profile domain for profiles shared by all users of the computer.
-- [var kColorSyncProfileUserDomain: Unmanaged<CFString>!](kcolorsyncprofileuserdomain.md)
+- [var kColorSyncProfileUserDomain: Unmanaged<CFString>!](./kcolorsyncprofileuserdomain.md)
   The profile domain for the current user’s profiles.
 
 

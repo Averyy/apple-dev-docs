@@ -1,7 +1,8 @@
 # healthDataAccessRequest(store:objectType:predicate:trigger:completion:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously requests permission to read a data type that requires per-object authorization (such as vision prescriptions).
 
@@ -80,7 +81,7 @@ Based on the results, you can then decide whether you need to request authorizat
 trigger.toggle()
 ```
 
-> ❗ **Important**: Using the [`healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:)`](view/healthdataaccessrequest(store:sharetypes:readtypes:trigger:completion:).md) method to request read access to any data types that require per-object authorization fails with an [`errorInvalidArgument`](https://developer.apple.com/documentation/healthkit/hkerror/errorinvalidargument) error.
+> ❗ **Important**: Using the [`healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:)`](./healthdataaccessrequest%28store,sharetypes,readtypes,trigger,completion%29.md) method to request read access to any data types that require per-object authorization fails with an [`errorInvalidArgument`](../../HealthKit/hkerror/errorinvalidargument.md) error.
 
 When your app calls this method, HealthKit displays an authorization sheet that asks for permission to read the samples that match the predicate and object type. The person using your app can then select individual samples to share with your app. The system always asks for permission, regardless of whether the user previously granted it.
 
@@ -91,16 +92,17 @@ People can individually enable each of the prescriptions. After they respond, th
 - `store`: The HealthKit store where you’re requesting authorization.
 - `objectType`: The data type you want to read. This type must be a type that requires per-object authorization.
 - `predicate`: An optional predicate that further restricts the objects of interest.
-- `trigger`: A value used to trigger the request. This value must be a [`State`](state.md) variable. Any change to the variable triggers a request.
+- `trigger`: A value used to trigger the request. This value must be a [`State`](../state.md) variable. Any change to the variable triggers a request.
 - `completion`: A block that the system calls after the request is complete. The system passes the result parameter.
 
 ## See Also
 
-- [func healthDataAccessRequest(store: HKHealthStore, readTypes: Set<HKObjectType>, trigger: some Equatable, completion: (Result<Bool, any Error>) -> Void) -> some View](view/healthdataaccessrequest(store:readtypes:trigger:completion:).md)
+### Accessing health data
+- [func healthDataAccessRequest(store: HKHealthStore, readTypes: Set<HKObjectType>, trigger: some Equatable, completion: (Result<Bool, any Error>) -> Void) -> some View](./healthdataaccessrequest%28store,readtypes,trigger,completion%29.md)
   Requests permission to read the specified HealthKit data types.
-- [func healthDataAccessRequest(store: HKHealthStore, shareTypes: Set<HKSampleType>, readTypes: Set<HKObjectType>?, trigger: some Equatable, completion: (Result<Bool, any Error>) -> Void) -> some View](view/healthdataaccessrequest(store:sharetypes:readtypes:trigger:completion:).md)
+- [func healthDataAccessRequest(store: HKHealthStore, shareTypes: Set<HKSampleType>, readTypes: Set<HKObjectType>?, trigger: some Equatable, completion: (Result<Bool, any Error>) -> Void) -> some View](./healthdataaccessrequest%28store,sharetypes,readtypes,trigger,completion%29.md)
   Requests permission to save and read the specified HealthKit data types.
-- [func workoutPreview(WorkoutPlan, isPresented: Binding<Bool>) -> some View](view/workoutpreview(_:ispresented:).md)
+- [func workoutPreview(WorkoutPlan, isPresented: Binding<Bool>) -> some View](./workoutpreview%28_,ispresented%29.md)
   Presents a preview of the workout contents as a modal sheet
 
 

@@ -1,7 +1,8 @@
 # makeContainer(context:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a container that represents this optional intent value.
 
@@ -19,6 +20,8 @@ Creates a container that represents this optional intent value.
 ```swift
 func makeContainer(context: IntentValueContainer.ConversionContext) -> IntentValueContainer
 ```
+
+Available when `Wrapped` conforms to `IntentValueConvertible`.
 
 #### Return Value
 

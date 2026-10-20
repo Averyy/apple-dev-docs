@@ -1,7 +1,8 @@
 # commissioning(_:read:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Callback that gets called after various information (product identity, optionally endpoint structure information, optionally other attributes that were requested) has been read from the commissionee.
 
@@ -18,6 +19,10 @@ Callback that gets called after various information (product identity, optionall
 
 ```swift
 optional func commissioning(_ commissioning: MTRCommissioningOperation, read info: MTRCommissioneeInfo)
+```
+
+```objc
+- (void) commissioning:(MTRCommissioningOperation *) commissioning readCommissioneeInfo:(MTRCommissioneeInfo *) info;
 ```
 
 

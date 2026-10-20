@@ -1,7 +1,8 @@
 # normal
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The normal map for the entity.
 
@@ -11,7 +12,7 @@ The normal map for the entity.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ var normal: PhysicallyBasedMaterial.Normal { get set }
 
 ## Mentions
 
-- [Applying realistic material and lighting effects to entities](applying-realistic-material-and-lighting-effects-to-entities.md)
+- [Applying realistic material and lighting effects to entities](../applying-realistic-material-and-lighting-effects-to-entities.md)
 
 #### Discussion
 
@@ -41,21 +42,22 @@ if let normalResource = try? TextureResource.load(named:
 
 ## See Also
 
-- [var baseColor: PhysicallyBasedMaterial.BaseColor](physicallybasedmaterial/basecolor-swift.property.md)
+### Setting the core properties
+- [var baseColor: PhysicallyBasedMaterial.BaseColor](./basecolor-swift.property.md)
   The color of an entity unmodified by lighting.
-- [var roughness: PhysicallyBasedMaterial.Roughness](physicallybasedmaterial/roughness-swift.property.md)
+- [var roughness: PhysicallyBasedMaterial.Roughness](./roughness-swift.property.md)
   The amount the surface of the 3D object scatters reflected light.
-- [var metallic: PhysicallyBasedMaterial.Metallic](physicallybasedmaterial/metallic-swift.property.md)
+- [var metallic: PhysicallyBasedMaterial.Metallic](./metallic-swift.property.md)
   The reflectiveness of an entity.
-- [var ambientOcclusion: PhysicallyBasedMaterial.AmbientOcclusion](physicallybasedmaterial/ambientocclusion-swift.property.md)
+- [var ambientOcclusion: PhysicallyBasedMaterial.AmbientOcclusion](./ambientocclusion-swift.property.md)
   The ambient occlusion values for a material.
-- [var specular: PhysicallyBasedMaterial.Specular](physicallybasedmaterial/specular-swift.property.md)
+- [var specular: PhysicallyBasedMaterial.Specular](./specular-swift.property.md)
   The specular highlight applied to the entity.
-- [var clearcoat: PhysicallyBasedMaterial.Clearcoat](physicallybasedmaterial/clearcoat-swift.property.md)
+- [var clearcoat: PhysicallyBasedMaterial.Clearcoat](./clearcoat-swift.property.md)
   The transparent highlights that simulate a clear, shiny coating on an entity.
-- [var clearcoatRoughness: PhysicallyBasedMaterial.ClearcoatRoughness](physicallybasedmaterial/clearcoatroughness-swift.property.md)
+- [var clearcoatRoughness: PhysicallyBasedMaterial.ClearcoatRoughness](./clearcoatroughness-swift.property.md)
   The degree to which an entity’s clear, shiny coating scatters light to create soft highlights.
-- [var clearcoatNormal: PhysicallyBasedMaterial.ClearcoatNormal](physicallybasedmaterial/clearcoatnormal-swift.property.md)
+- [var clearcoatNormal: PhysicallyBasedMaterial.ClearcoatNormal](./clearcoatnormal-swift.property.md)
   Waviness and imperfections for the top clearcoat.
 
 

@@ -1,7 +1,8 @@
 # iso8601DateComponents(timeZone:dateSeparator:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a regex component to match an ISO 8601 date string, such as “2015-11-14”, and capture the string as a `DateComponents`. The captured `DateComponents` would be at midnight in the specified `timeZone`.
 
@@ -19,6 +20,8 @@ Creates a regex component to match an ISO 8601 date string, such as “2015-11-1
 ```swift
 static func iso8601DateComponents(timeZone: TimeZone, dateSeparator: Date.ISO8601FormatStyle.DateSeparator = .dash) -> Self
 ```
+
+Available when `Self` is `DateComponents.ISO8601FormatStyle`.
 
 #### Return Value
 

@@ -10,7 +10,7 @@ An event that is fired when LivePhotosKit JS is loaded.
 
 ## Declaration
 
-```swift
+```
 const String LIVEPHOTOSKIT_LOADED;
 ```
 
@@ -28,7 +28,8 @@ document.addEventListener('livephotoskitloaded', function(e) {
 
 ## See Also
 
-- [VERSION](livephotoskit/version.md)
+### Constants
+- [VERSION](./version.md)
   The version of LivePhotosKit JS.
 
 

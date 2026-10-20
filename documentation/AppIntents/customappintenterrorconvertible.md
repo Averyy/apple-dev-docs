@@ -1,7 +1,8 @@
 # CustomAppIntentErrorConvertible
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that the system automatically converts to an app intent error.
 
@@ -22,18 +23,19 @@ protocol CustomAppIntentErrorConvertible
 
 #### Overview
 
-Conform your custom type to this protocol when you need full control over the [`AppIntentError`](appintenterror.md) that the system produces — including the error kind and localized description. When you throw a conforming error from a method such as [`perform()`](appintent/perform().md) or [`entities(for:)`](entityquery/entities(for:).md), the framework reads the [`appIntentError`](customappintenterrorconvertible/appintenterror.md) property and uses it directly.
+Conform your custom type to this protocol when you need full control over the [`AppIntentError`](./appintenterror.md) that the system produces — including the error kind and localized description. When you throw a conforming error from a method such as [`perform()`](./appintent/perform%28%29.md) or [`entities(for:)`](./entityquery/entities%28for%29.md), the framework reads the [`appIntentError`](./customappintenterrorconvertible/appintenterror.md) property and uses it directly.
 
-If an error conforms to both [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/foundation/customlocalizedstringresourceconvertible) and [`CustomAppIntentErrorConvertible`](customappintenterrorconvertible.md), the system uses only [`CustomAppIntentErrorConvertible`](customappintenterrorconvertible.md).
+If an error conforms to both [`CustomLocalizedStringResourceConvertible`](../Foundation/customlocalizedstringresourceconvertible.md) and [`CustomAppIntentErrorConvertible`](./customappintenterrorconvertible.md), the system uses only [`CustomAppIntentErrorConvertible`](./customappintenterrorconvertible.md).
 
 ## Topics
 
 ### Instance Properties
-- [var appIntentError: AppIntentError](customappintenterrorconvertible/appintenterror.md)
+- [var appIntentError: AppIntentError](./customappintenterrorconvertible/appintenterror.md)
 
 ## See Also
 
-- [struct AppIntentError](appintenterror.md)
+### Errors
+- [struct AppIntentError](./appintenterror.md)
   An error that indicates a problem occurred while performing an app intent.
 
 

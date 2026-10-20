@@ -1,7 +1,8 @@
 # CKServerChangeToken
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An opaque token that represents a specific point in a database’s history.
 
@@ -10,7 +11,7 @@ An opaque token that represents a specific point in a database’s history.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,15 +21,19 @@ An opaque token that represents a specific point in a database’s history.
 class CKServerChangeToken
 ```
 
+```objc
+@interface CKServerChangeToken : NSObject
+```
+
 #### Overview
 
 CloudKit uses server change tokens to record significant events in a database’s history, such as record creation, modification, and deletion. Using change tokens helps reduce the cost of a fetch operation — both the time to execute the fetch and the overall number of records it returns.
 
-You don’t create change tokens. Instead, [`CKFetchDatabaseChangesOperation`](ckfetchdatabasechangesoperation.md) and [`CKFetchRecordZoneChangesOperation`](ckfetchrecordzonechangesoperation.md) provide them during their execution and when they complete. Cache each token as you receive it, overwriting any previous token for the database or record zone you’re fetching from. Then, pass the cached token with your next fetch and CloudKit returns only the changes that occur after that point. Don’t infer any behavior or order from a token’s contents.
+You don’t create change tokens. Instead, [`CKFetchDatabaseChangesOperation`](./ckfetchdatabasechangesoperation.md) and [`CKFetchRecordZoneChangesOperation`](./ckfetchrecordzonechangesoperation.md) provide them during their execution and when they complete. Cache each token as you receive it, overwriting any previous token for the database or record zone you’re fetching from. Then, pass the cached token with your next fetch and CloudKit returns only the changes that occur after that point. Don’t infer any behavior or order from a token’s contents.
 
-The change tokens that [`CKFetchDatabaseChangesOperation`](ckfetchdatabasechangesoperation.md) provides aren’t compatible with [`CKFetchRecordZoneChangesOperation`](ckfetchrecordzonechangesoperation.md) and vice versa, so segregate them in your cache.
+The change tokens that [`CKFetchDatabaseChangesOperation`](./ckfetchdatabasechangesoperation.md) provides aren’t compatible with [`CKFetchRecordZoneChangesOperation`](./ckfetchrecordzonechangesoperation.md) and vice versa, so segregate them in your cache.
 
-Change tokens conform to [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding) and are safe to cache on-disk, as the following example shows:
+Change tokens conform to [`NSSecureCoding`](../Foundation/nssecurecoding.md) and are safe to cache on-disk, as the following example shows:
 
 ```swift
 func writeToken(_ token: CKServerChangeToken, to url: URL) throws {
@@ -57,24 +62,24 @@ func readToken(at url: URL) throws -> CKServerChangeToken? {
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](ckserverchangetoken/init(coder:).md)
+- [init?(coder: NSCoder)](./ckserverchangetoken/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

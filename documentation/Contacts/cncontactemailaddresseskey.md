@@ -1,7 +1,8 @@
 # CNContactEmailAddressesKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The email addresses of the contact.
 
@@ -19,17 +20,22 @@ The email addresses of the contact.
 let CNContactEmailAddressesKey: String
 ```
 
+```c
+extern NSString * const CNContactEmailAddressesKey;
+```
+
 #### Discussion
 
 This key takes a string value.
 
 ## See Also
 
-- [let CNContactPostalAddressesKey: String](cncontactpostaladdresseskey.md)
+### Addresses
+- [let CNContactPostalAddressesKey: String](./cncontactpostaladdresseskey.md)
   The postal addresses of the contact.
-- [let CNContactUrlAddressesKey: String](cncontacturladdresseskey.md)
+- [let CNContactUrlAddressesKey: String](./cncontacturladdresseskey.md)
   The URL addresses of the contact.
-- [let CNContactInstantMessageAddressesKey: String](cncontactinstantmessageaddresseskey.md)
+- [let CNContactInstantMessageAddressesKey: String](./cncontactinstantmessageaddresseskey.md)
   The instant message addresses of the contact.
 
 

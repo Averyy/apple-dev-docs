@@ -1,7 +1,8 @@
 # init(kind:intent:content:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration for a control that uses a custom app intent to provide user-configurable options.
 
@@ -18,6 +19,8 @@ Creates a configuration for a control that uses a custom app intent to provide u
 @MainActor
 @preconcurrency init(kind: String, intent: Configuration.Type = Configuration.self, @ControlWidgetTemplateBuilder content: @escaping (Configuration) -> Content)
 ```
+
+Available when `Configuration` conforms to `ControlConfigurationIntent` and `Content` conforms to `ControlWidgetTemplate`.
 
 ## Parameters
 

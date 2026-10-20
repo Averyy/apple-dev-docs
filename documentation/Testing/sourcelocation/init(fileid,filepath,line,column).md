@@ -1,18 +1,19 @@
 # init(fileID:filePath:line:column:)
 
 **Framework**: Swift Testing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an instance of this type with the specified location details.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -24,15 +25,15 @@ init(fileID: String, filePath: String, line: Int, column: Int)
 
 #### Discussion
 
-> **Note**: `fileID` must not be empty and must be formatted as described in the documentation for [`#fileID`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/fileID()).
+> **Precondition**: `fileID` must not be empty and must be formatted as described in the documentation for [#fileID](../../Swift/fileid%28%29.md).
 
-> **Note**: `line` must be greater than `0`.
+> **Precondition**: `line` must be greater than `0`.
 
-> **Note**: `column` must be greater than `0`.
+> **Precondition**: `column` must be greater than `0`.
 
 ## Parameters
 
-- `fileID`: The file ID of the source file, using the format described in the documentation for the [`#fileID`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/fileID()) macro in the Swift standard library.
+- `fileID`: The file ID of the source file, using the format described in the documentation for the [#fileID](../../Swift/fileid%28%29.md) macro in the Swift standard library.
 - `filePath`: The path to the source file.
 - `line`: The line in the source file. Must be greater than `0`.
 - `column`: The column in the source file. Must be greater than `0`.

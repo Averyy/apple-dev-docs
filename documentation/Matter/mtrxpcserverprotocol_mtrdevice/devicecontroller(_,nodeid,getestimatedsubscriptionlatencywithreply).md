@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,7 +17,15 @@
 ## Declaration
 
 ```swift
+func deviceController(_ controller: UUID, nodeID: NSNumber, getEstimatedSubscriptionLatencyWithReply reply: @escaping @Sendable (NSNumber?) -> Void)
+```
+
+```swift
 func deviceControllerGetEstimatedSubscriptionLatency(_ controller: UUID, nodeID: NSNumber) async -> NSNumber?
+```
+
+```objc
+- (void) deviceController:(NSUUID *) controller nodeID:(NSNumber *) nodeID getEstimatedSubscriptionLatencyWithReply:(void (^)(NSNumber *estimatedSubscriptionLatency)) reply;
 ```
 
 

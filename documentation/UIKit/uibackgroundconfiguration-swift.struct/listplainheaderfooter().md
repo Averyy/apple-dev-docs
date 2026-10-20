@@ -1,16 +1,19 @@
 # listPlainHeaderFooter()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates the default configuration you use to style a plain list header or footer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- tvOS 14.0+
-- visionOS ?+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS
+
+> **Deprecated**: Use [`listHeader()`](./listheader%28%29.md) or [`listFooter()`](./listfooter%28%29.md) instead.
 
 ## Declaration
 
@@ -28,14 +31,15 @@ Create this configuration to update the styling for the background of a header o
 
 For an appearance consistent with system defaults, use this background configuration for a header or footer in these contexts:
 
-- A table view that you configure with the [`UITableView.Style.plain`](uitableview/style-swift.enum/plain.md) enumeration case.
-- A collection view list that you configure with the [`UICollectionLayoutListConfiguration.Appearance.plain`](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/plain.md) or [`UICollectionLayoutListConfiguration.Appearance.sidebarPlain`](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebarplain.md) enumeration cases.
+- A table view that you configure with the [`UITableView.Style.plain`](../uitableview/style-swift.enum/plain.md) enumeration case.
+- A collection view list that you configure with the [`UICollectionLayoutListConfiguration.Appearance.plain`](../uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/plain.md) or [`UICollectionLayoutListConfiguration.Appearance.sidebarPlain`](../uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebarplain.md) enumeration cases.
 
 ## See Also
 
-- [static func listGroupedHeaderFooter() -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/listgroupedheaderfooter.md)
+### Creating header and footer background configurations
+- [static func listGroupedHeaderFooter() -> UIBackgroundConfiguration](./listgroupedheaderfooter%28%29.md)
   Creates the default configuration you use to style a grouped list header or footer.
-- [static func listSidebarHeader() -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/listsidebarheader.md)
+- [static func listSidebarHeader() -> UIBackgroundConfiguration](./listsidebarheader%28%29.md)
   Creates the default configuration you use to style a sidebar list header.
 
 

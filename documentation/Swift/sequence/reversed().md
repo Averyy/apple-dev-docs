@@ -1,7 +1,8 @@
 # reversed()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array containing the elements of this sequence in reverse order.
 
@@ -28,13 +29,14 @@ An array containing the elements of this sequence in reverse order.
 
 The sequence must be finite.
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 ## See Also
 
-- [func sorted() -> [Self.Element]](sequence/sorted.md)
+### Sorting Elements
+- [func sorted() -> [Self.Element]](./sorted%28%29.md)
   Returns the elements of the sequence, sorted.
-- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](sequence/sorted(by:).md)
+- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](./sorted%28by%29.md)
   Returns the elements of the sequence, sorted using the given predicate as the comparison between elements.
 
 

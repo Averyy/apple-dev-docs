@@ -1,7 +1,8 @@
 # dialNumber(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the phone number on a hands-free phone or headset.
 
@@ -14,15 +15,20 @@ Calls the phone number on a hands-free phone or headset.
 func dialNumber(_ aNumber: String!)
 ```
 
+```objc
+- (void) dialNumber:(NSString *) aNumber;
+```
+
 ## Parameters
 
 - `aNumber`: A string containing a phone number.
 
 ## See Also
 
-- [func memoryDial(Int32)](iobluetoothhandsfreedevice/memorydial(_:).md)
+### Dialing Calls
+- [func memoryDial(Int32)](./memorydial%28_%29.md)
   Calls the phone number stored in a speed dial or memory slot of the hands-free phone or headset.
-- [func redial()](iobluetoothhandsfreedevice/redial.md)
+- [func redial()](./redial%28%29.md)
   Calls the number stored on the hands-free phone or headset again.
 
 

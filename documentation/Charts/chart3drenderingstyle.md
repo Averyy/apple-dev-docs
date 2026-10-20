@@ -1,7 +1,8 @@
 # Chart3DRenderingStyle
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - visionOS 26.0+
@@ -15,18 +16,18 @@ struct Chart3DRenderingStyle
 ## Topics
 
 ### Type Properties
-- [static var automatic: Chart3DRenderingStyle](chart3drenderingstyle/automatic.md)
+- [static var automatic: Chart3DRenderingStyle](./chart3drenderingstyle/automatic.md)
   Sets the rendering style automatically.
-- [static var flat: Chart3DRenderingStyle](chart3drenderingstyle/flat.md)
+- [static var flat: Chart3DRenderingStyle](./chart3drenderingstyle/flat.md)
   Renders the chart onto a plane.
-- [static var volumetric: Chart3DRenderingStyle](chart3drenderingstyle/volumetric.md)
+- [static var volumetric: Chart3DRenderingStyle](./chart3drenderingstyle/volumetric.md)
   Renders the chart volumetrically for binocular vision.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

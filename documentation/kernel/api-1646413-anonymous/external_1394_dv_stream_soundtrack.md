@@ -1,14 +1,15 @@
 # EXTERNAL_1394_DV_STREAM_SOUNDTRACK
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 EXTERNAL_1394_DV_STREAM_SOUNDTRACK = 0x0607
 ```
 

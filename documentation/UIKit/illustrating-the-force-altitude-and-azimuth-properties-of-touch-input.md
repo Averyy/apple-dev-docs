@@ -1,6 +1,8 @@
 # Illustrating the force, altitude, and azimuth properties of touch input
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [IllustratingTheForceAltitudeAndAzimuthPropertiesOfTouchInput.zip](https://docs-assets.developer.apple.com/published/9afba208ca4a/IllustratingTheForceAltitudeAndAzimuthPropertiesOfTouchInput.zip)
 
 Capture Apple Pencil and touch input in views.
 
@@ -12,15 +14,15 @@ Capture Apple Pencil and touch input in views.
 
 #### Overview
 
-Touch Canvas illustrates responsive handling of Apple Pencil and touch input, focusing on the force, altitude, and azimuth properties of `UITouch`. The sample creates a visualization of force using line thickness, and creates a visualization of altitude and azimuth with an interactive diagram. To build on the concepts demonstrated in this sample and learn about using Apple Pencil and touch input in a drawing app, see [`Leveraging touch input for drawing apps`](leveraging-touch-input-for-drawing-apps.md).
+Touch Canvas illustrates responsive handling of Apple Pencil and touch input, focusing on the force, altitude, and azimuth properties of `UITouch`. The sample creates a visualization of force using line thickness, and creates a visualization of altitude and azimuth with an interactive diagram. To build on the concepts demonstrated in this sample and learn about using Apple Pencil and touch input in a drawing app, see [Leveraging touch input for drawing apps](./leveraging-touch-input-for-drawing-apps.md).
 
-##### Calculate the Force of a Touch
+##### Calculate the force of a touch
 
 You can use the force of a touch applied by a finger on 3D Touch-enabled devices or from the tip of Apple Pencil to create effects in your app. For example, the force of a touch can change the width of a line on a canvas.
 
-![Diagram of how the sample project visualizes force for line width](/images/com.apple.uikit/force@2x.png)
+![Diagram of how the sample project visualizes force for line width](https://developer.apple.com/tutorials/images/com.apple.uikit/force@2x.png)
 
-The current force is reported by the [`force`](uitouch/force.md) property of [`UITouch`](uitouch.md).
+The current force is reported by the [`force`](./uitouch/force.md) property of [`UITouch`](./uitouch.md).
 
 ```swift
 force = touch.force
@@ -40,13 +42,13 @@ This sample uses the magnitude value to affect drawing on the canvas, including 
 context.setLineWidth(point.magnitude)
 ```
 
-##### Create a Visualization of Apple Pencils Altitude and Azimuth
+##### Create a visualization of Apple Pencil’s altitude and azimuth
 
 Touch Canvas contains a visualization of the altitude and azimuth for Apple Pencil as you draw on the screen when the *Debug* mode is enabled.  This visualization is a diagram which continuously updates based on Apple Pencil’s motion.
 
-![Diagram of how the sample project visualizes Apple Pencil's altitude and azimuth](/images/com.apple.uikit/azimuth-altitude@2x.png)
+![Diagram of how the sample project visualizes Apple Pencil's altitude and azimuth](https://developer.apple.com/tutorials/images/com.apple.uikit/azimuth-altitude@2x.png)
 
-Apple Pencil reports its altitude as an angle relative to the device surface through the [`altitudeAngle`](uitouch/altitudeangle.md) property on `UITouch`.
+Apple Pencil reports its altitude as an angle relative to the device surface through the [`altitudeAngle`](./uitouch/altitudeangle.md) property on `UITouch`.
 
 ```swift
 let altitudeAngle = touch.altitudeAngle
@@ -64,7 +66,7 @@ let altitudeRadius = (1.0 - altitudeAngle / (CGFloat.pi / 2)) * radius
 var lineTransform = CGAffineTransform(scaleX: altitudeRadius, y: 1)
 ```
 
-Apple Pencil reports its direction, or azimuth, relative to the view Apple Pencil interacts with. A drawing app might use azimuth information to change the shape or strength of a particular drawing tool. Access the azimuth information with the [`azimuthAngle(in:)`](uitouch/azimuthangle(in:).md) and [`azimuthUnitVector(in:)`](uitouch/azimuthunitvector(in:).md) methods of `UITouch`.
+Apple Pencil reports its direction, or azimuth, relative to the view Apple Pencil interacts with. A drawing app might use azimuth information to change the shape or strength of a particular drawing tool. Access the azimuth information with the [`azimuthAngle(in:)`](./uitouch/azimuthangle%28in%29.md) and [`azimuthUnitVector(in:)`](./uitouch/azimuthunitvector%28in%29.md) methods of `UITouch`.
 
 ```swift
 let azimuthAngle = touch.azimuthAngle(in: canvasView)
@@ -82,11 +84,11 @@ var dotPositionTransform = CGAffineTransform(translationX: -azimuthUnitVector.dx
 dotPositionTransform = dotPositionTransform.concatenating(centeringTransform)
 ```
 
-##### Toggle Debug Drawing
+##### Toggle debug drawing
 
-Touch Canvas contains a debug drawing mode that allows you to view the operation of the properties in detail for different types of input, such as the difference between strokes drawn at different speeds with Apple Pencil. The debug mode enables the interactive diagram for altitude and azimuth, and changes the color of individual line segments to identify if the [`UIEvent`](uievent.md) for the line segment included data from [`predictedTouches(for:)`](uievent/predictedtouches(for:).md) or [`coalescedTouches(for:)`](uievent/coalescedtouches(for:).md).
+Touch Canvas contains a debug drawing mode that allows you to view the operation of the properties in detail for different types of input, such as the difference between strokes drawn at different speeds with Apple Pencil. The debug mode enables the interactive diagram for altitude and azimuth, and changes the color of individual line segments to identify if the [`UIEvent`](./uievent.md) for the line segment included data from [`predictedTouches(for:)`](./uievent/predictedtouches%28for%29.md) or [`coalescedTouches(for:)`](./uievent/coalescedtouches%28for%29.md).
 
-The sample uses the double-tap feature of the second generation Apple Pencil to toggle *Debug* mode when the user configures the preferred double tap action to switch tools. The sample app ignores the other preferred actions. See [`Apple Pencil interactions`](apple-pencil-interactions.md) for more information.
+The sample uses the double-tap feature of the second generation Apple Pencil to toggle *Debug* mode when the user configures the preferred double tap action to switch tools. The sample app ignores the other preferred actions. See [Apple Pencil interactions](./apple-pencil-interactions.md) for more information.
 
 ```swift
 func pencilInteractionDidTap(_ interaction: UIPencilInteraction) {
@@ -102,15 +104,16 @@ func pencilInteractionDidTap(_ interaction: UIPencilInteraction) {
 
 ## See Also
 
-- [Handling touches in your view](handling-touches-in-your-view.md)
+### Touches
+- [Handling touches in your view](./handling-touches-in-your-view.md)
   Use touch events directly on a view subclass if touch handling is intricately linked to the view’s content.
-- [Handling input from Apple Pencil](handling-input-from-apple-pencil.md)
+- [Handling input from Apple Pencil](./handling-input-from-apple-pencil.md)
   Learn how to detect and respond to touches from Apple Pencil.
-- [Tracking the force of 3D Touch events](tracking-the-force-of-3d-touch-events.md)
+- [Tracking the force of 3D Touch events](./tracking-the-force-of-3d-touch-events.md)
   Manipulate your content based on the force of touches.
-- [Leveraging touch input for drawing apps](leveraging-touch-input-for-drawing-apps.md)
+- [Leveraging touch input for drawing apps](./leveraging-touch-input-for-drawing-apps.md)
   Capture touches as a series of strokes and render them efficiently on a drawing canvas.
-- [class UITouch](uitouch.md)
+- [class UITouch](./uitouch.md)
   An object representing the location, size, movement, and force of a touch occurring on the screen.
 
 

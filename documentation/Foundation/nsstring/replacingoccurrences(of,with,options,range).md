@@ -1,7 +1,8 @@
 # replacingOccurrences(of:with:options:range:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new string in which all occurrences of a target string in a specified range of the receiver are replaced by another given string.
 
@@ -20,6 +21,10 @@ Returns a new string in which all occurrences of a target string in a specified 
 func replacingOccurrences(of target: String, with replacement: String, options: NSString.CompareOptions = [], range searchRange: NSRange) -> String
 ```
 
+```objc
+- (NSString *) stringByReplacingOccurrencesOfString:(NSString *) target withString:(NSString *) replacement options:(NSStringCompareOptions) options range:(NSRange) searchRange;
+```
+
 #### Return Value
 
 A new string in which all occurrences of `target`, matched using `options`, in `searchRange` of the receiver are replaced by `replacement`.
@@ -33,11 +38,13 @@ A new string in which all occurrences of `target`, matched using `options`, in `
 
 ## See Also
 
-- [func replacingPercentEscapes(using: UInt) -> String?](nsstring/replacingpercentescapes(using:).md)
+### Related Documentation
+- [func replacingPercentEscapes(using: UInt) -> String?](./replacingpercentescapes%28using%29.md)
   Returns a new string made by replacing in the receiver all percent escapes with the matching characters as determined by a given encoding.
-- [func replacingOccurrences(of: String, with: String) -> String](nsstring/replacingoccurrences(of:with:).md)
+### Replacing Substrings
+- [func replacingOccurrences(of: String, with: String) -> String](./replacingoccurrences%28of,with%29.md)
   Returns a new string in which all occurrences of a target string in the receiver are replaced by another given string.
-- [func replacingCharacters(in: NSRange, with: String) -> String](nsstring/replacingcharacters(in:with:).md)
+- [func replacingCharacters(in: NSRange, with: String) -> String](./replacingcharacters%28in,with%29.md)
   Returns a new string in which the characters in a specified range of the receiver are replaced by a given string.
 
 

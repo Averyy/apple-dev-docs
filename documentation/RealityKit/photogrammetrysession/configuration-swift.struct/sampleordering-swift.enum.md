@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Configuration.SampleOrdering
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The ordering of samples.
 
@@ -20,22 +21,23 @@ enum SampleOrdering
 ## Topics
 
 ### Specifying sample ordering
-- [PhotogrammetrySession.Configuration.SampleOrdering.unordered](photogrammetrysession/configuration-swift.struct/sampleordering-swift.enum/unordered.md)
+- [PhotogrammetrySession.Configuration.SampleOrdering.unordered](./sampleordering-swift.enum/unordered.md)
   Images aren’t in sequential order.
-- [PhotogrammetrySession.Configuration.SampleOrdering.sequential](photogrammetrysession/configuration-swift.struct/sampleordering-swift.enum/sequential.md)
+- [PhotogrammetrySession.Configuration.SampleOrdering.sequential](./sampleordering-swift.enum/sequential.md)
   Images are in sequential order.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var sampleOrdering: PhotogrammetrySession.Configuration.SampleOrdering](photogrammetrysession/configuration-swift.struct/sampleordering-swift.property.md)
+### Configuring sample ordering
+- [var sampleOrdering: PhotogrammetrySession.Configuration.SampleOrdering](./sampleordering-swift.property.md)
   The order of the image samples.
 
 

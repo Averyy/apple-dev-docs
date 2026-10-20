@@ -1,7 +1,8 @@
 # kAXTableRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A table.
 
@@ -12,6 +13,10 @@ A table.
 
 ```swift
 var kAXTableRole: String { get }
+```
+
+```c
+#define kAXTableRole
 ```
 
 

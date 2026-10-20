@@ -1,7 +1,8 @@
 # allowsVirtualMachine
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the assessment allows running inside a virtual machine.
 
@@ -15,13 +16,17 @@ A Boolean value that indicates whether the assessment allows running inside a vi
 var allowsVirtualMachine: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL allowsVirtualMachine;
+```
+
 #### Discussion
 
 When set to `false`, the assessment session will only start if the device is not a virtual machine, and won’t start if that status can’t be determined. Defaults to `true`, which doesn’t enforce the requirement.
 
 > ❗ **Important**: Setting this to `false` may not block a session in every virtualized environment.
 
-> **Note**: [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) for the limits that apply to every enablement requirement.
+> **See Also**: [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) for the limits that apply to every enablement requirement.
 
 
 ---

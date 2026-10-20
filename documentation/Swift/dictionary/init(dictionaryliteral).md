@@ -1,7 +1,8 @@
 # init(dictionaryLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a dictionary initialized with a dictionary literal.
 
@@ -19,6 +20,8 @@ Creates a dictionary initialized with a dictionary literal.
 ```swift
 init(dictionaryLiteral elements: (Key, Value)...)
 ```
+
+Available when `Key` conforms to `Hashable`.
 
 #### Discussion
 
@@ -38,7 +41,8 @@ print(countryCodes)
 
 ## See Also
 
-- [var hashValue: Int](dictionary/hashvalue.md)
+### Infrequently Used Functionality
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
 
 

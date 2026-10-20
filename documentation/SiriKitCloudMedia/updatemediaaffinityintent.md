@@ -1,7 +1,8 @@
 # UpdateMediaAffinityIntent
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that describes a user’s stated preference regarding media items.
 
@@ -10,13 +11,15 @@ An object that describes a user’s stated preference regarding media items.
 
 ## Declaration
 
-```swift
+```
 object UpdateMediaAffinityIntent
 ```
 
 ## Properties
 
 - `class` (string) *(required)*: The specific type of intent.
+
+  **Allowed Values**: `UpdateMediaAffinityIntent`
 - `affinityType` (MediaAffinityType): The user’s preference for the media items.
 - `mediaItems` ([MediaItem]): Specific media items the user expresses a preference for.
 - `mediaSearch` (MediaSearch): The description of the media items the user expresses a preference for.
@@ -24,13 +27,14 @@ object UpdateMediaAffinityIntent
 ## Relationships
 
 ### Inherits From
-- [Intent](intent.md)
+- [Intent](./intent.md)
 
 ## See Also
 
-- [object UpdateMediaAffinityIntentHandlingInvocation](updatemediaaffinityintenthandlinginvocation.md)
+### Processing an Update Media Affinity Intent
+- [object UpdateMediaAffinityIntentHandlingInvocation](./updatemediaaffinityintenthandlinginvocation.md)
   A request to process an update media affinity intent.
-- [type UpdateMediaAffinityIntentHandlingInvocationResponse](updatemediaaffinityintenthandlinginvocationresponse.md)
+- [type UpdateMediaAffinityIntentHandlingInvocationResponse](./updatemediaaffinityintenthandlinginvocationresponse.md)
   The service’s response to a request to process an update media affinity intent.
 
 

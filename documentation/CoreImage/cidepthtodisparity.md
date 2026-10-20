@@ -1,17 +1,18 @@
 # CIDepthToDisparity
 
 **Framework**: Core Image  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The properties you use to configure a depth-to-disparity filter.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,47 +20,53 @@ The properties you use to configure a depth-to-disparity filter.
 protocol CIDepthToDisparity : CIFilterProtocol
 ```
 
+```objc
+@protocol CIDepthToDisparity <CIFilter>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var inputImage: CIImage?](cidepthtodisparity/inputimage.md)
+- [var inputImage: CIImage?](./cidepthtodisparity/inputimage.md)
   The image to use as an input image.
 
 ## Relationships
 
 ### Inherits From
-- [CIFilterProtocol](cifilterprotocol.md)
+- [CIFilterProtocol](./cifilterprotocol.md)
 
 ## See Also
 
-- [class func depthToDisparity() -> any CIFilter & CIDepthToDisparity](cifilter-swift.class/depthtodisparity.md)
+### Related Documentation
+- [class func depthToDisparity() -> any CIFilter & CIDepthToDisparity](./cifilter-swift.class/depthtodisparity%28%29.md)
   Converts from an image containing depth data to an image containing disparity data.
-- [protocol CIColorAbsoluteDifference](cicolorabsolutedifference.md)
-- [protocol CIColorClamp](cicolorclamp.md)
+### Protocols
+- [protocol CIColorAbsoluteDifference](./cicolorabsolutedifference.md)
+- [protocol CIColorClamp](./cicolorclamp.md)
   The properties you use to configure a color clamp filter.
-- [protocol CIColorControls](cicolorcontrols.md)
+- [protocol CIColorControls](./cicolorcontrols.md)
   The properties you use to configure a color controls filter.
-- [protocol CIColorMatrix](cicolormatrix.md)
+- [protocol CIColorMatrix](./cicolormatrix.md)
   The properties you use to configure a color matrix filter.
-- [protocol CIColorPolynomial](cicolorpolynomial.md)
+- [protocol CIColorPolynomial](./cicolorpolynomial.md)
   The properties you use to configure a color polynomial filter.
-- [protocol CIColorThreshold](cicolorthreshold.md)
-- [protocol CIColorThresholdOtsu](cicolorthresholdotsu.md)
-- [protocol CIDisparityToDepth](cidisparitytodepth.md)
+- [protocol CIColorThreshold](./cicolorthreshold.md)
+- [protocol CIColorThresholdOtsu](./cicolorthresholdotsu.md)
+- [protocol CIDisparityToDepth](./cidisparitytodepth.md)
   The properties you use to configure a disparity-to-depth filter.
-- [protocol CIExposureAdjust](ciexposureadjust.md)
+- [protocol CIExposureAdjust](./ciexposureadjust.md)
   The properties you use to configure an exposure adjust filter.
-- [protocol CIGammaAdjust](cigammaadjust.md)
+- [protocol CIGammaAdjust](./cigammaadjust.md)
   The properties you use to configure a gamma adjust filter.
-- [protocol CIHueAdjust](cihueadjust.md)
+- [protocol CIHueAdjust](./cihueadjust.md)
   The properties you use to configure a hue adjust filter.
-- [protocol CILinearToSRGBToneCurve](cilineartosrgbtonecurve.md)
+- [protocol CILinearToSRGBToneCurve](./cilineartosrgbtonecurve.md)
   The properties you use to configure a linear-to-sRGB filter.
-- [protocol CISRGBToneCurveToLinear](cisrgbtonecurvetolinear.md)
+- [protocol CISRGBToneCurveToLinear](./cisrgbtonecurvetolinear.md)
   The properties you use to configure an sRGB-to-linear filter.
-- [protocol CISystemToneMap](cisystemtonemap.md)
+- [protocol CISystemToneMap](./cisystemtonemap.md)
   The protocol for the System Tone Map filter.
-- [protocol CITemperatureAndTint](citemperatureandtint.md)
+- [protocol CITemperatureAndTint](./citemperatureandtint.md)
   The properties you use to configure a temperature and tint filter.
 
 

@@ -1,7 +1,8 @@
 # MPSGraphPaddingStyle.TF_VALID
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 ONNX_SAME_LOWER
 
@@ -17,6 +18,10 @@ ONNX_SAME_LOWER
 
 ```swift
 case TF_VALID
+```
+
+```c
+MPSGraphPaddingStyleTF_VALID
 ```
 
 

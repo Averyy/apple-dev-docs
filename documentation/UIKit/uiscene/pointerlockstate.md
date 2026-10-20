@@ -1,7 +1,8 @@
 # pointerLockState
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pointer lock state for the scene.
 
@@ -17,13 +18,18 @@ The pointer lock state for the scene.
 var pointerLockState: UIPointerLockState? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIPointerLockState * pointerLockState;
+```
+
 #### Discussion
 
 If a scene can’t lock the pointer, this property is `nil`.
 
 ## See Also
 
-- [class UIPointerLockState](uipointerlockstate.md)
+### Getting the pointer lock state
+- [class UIPointerLockState](../uipointerlockstate.md)
   An object that contains information about a scene’s pointer lock state.
 
 

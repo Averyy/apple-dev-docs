@@ -1,7 +1,8 @@
 # AXValueGetTypeID()
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.3+
@@ -12,11 +13,16 @@
 func AXValueGetTypeID() -> CFTypeID
 ```
 
+```c
+CFTypeID AXValueGetTypeID(void);
+```
+
 ## See Also
 
-- [func AXValueCreate(AXValueType, UnsafeRawPointer) -> AXValue?](1459351-axvaluecreate.md)
-- [func AXValueGetType(AXValue) -> AXValueType](1460911-axvaluegettype.md)
-- [func AXValueGetValue(AXValue, AXValueType, UnsafeMutableRawPointer) -> Bool](1462933-axvaluegetvalue.md)
+### Miscellaneous
+- [func AXValueCreate(AXValueType, UnsafeRawPointer) -> AXValue?](./api-1459351-axvaluecreate.md)
+- [func AXValueGetType(AXValue) -> AXValueType](./api-1460911-axvaluegettype.md)
+- [func AXValueGetValue(AXValue, AXValueType, UnsafeMutableRawPointer) -> Bool](./api-1462933-axvaluegetvalue.md)
 
 
 ---

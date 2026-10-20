@@ -1,14 +1,15 @@
 # PE_get_primary_kc_format
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 bool PE_get_primary_kc_format(kc_format_t *type);
 ```
 

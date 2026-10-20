@@ -1,18 +1,19 @@
 # quadrature_status
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that indicate the status of a quadrature operation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,41 +21,46 @@ Constants that indicate the status of a quadrature operation.
 struct quadrature_status
 ```
 
+```c
+typedef enum { ... } quadrature_status;
+```
+
 ## Topics
 
 ### Constants
-- [init(Int32)](quadrature_status/init(_:).md)
-- [init(rawValue: Int32)](quadrature_status/init(rawvalue:).md)
-- [var rawValue: Int32](quadrature_status/rawvalue.md)
-- [var QUADRATURE_ALLOC_ERROR: quadrature_status](quadrature_alloc_error.md)
+- [init(Int32)](./quadrature_status/init%28_%29.md)
+- [init(rawValue: Int32)](./quadrature_status/init%28rawvalue%29.md)
+- [var rawValue: Int32](./quadrature_status/rawvalue.md)
+- [var QUADRATURE_ALLOC_ERROR: quadrature_status](./quadrature_alloc_error.md)
   A constant that indicates that memory allocation failed.
-- [var QUADRATURE_ERROR: quadrature_status](quadrature_error.md)
+- [var QUADRATURE_ERROR: quadrature_status](./quadrature_error.md)
   A constant that indicates that a generic error occurred.
-- [var QUADRATURE_INTEGRATE_BAD_BEHAVIOUR_ERROR: quadrature_status](quadrature_integrate_bad_behaviour_error.md)
+- [var QUADRATURE_INTEGRATE_BAD_BEHAVIOUR_ERROR: quadrature_status](./quadrature_integrate_bad_behaviour_error.md)
   A constant that indicates bad integrand behaviour, or that an excessive roundoff error occurred.
-- [var QUADRATURE_INTEGRATE_MAX_EVAL_ERROR: quadrature_status](quadrature_integrate_max_eval_error.md)
+- [var QUADRATURE_INTEGRATE_MAX_EVAL_ERROR: quadrature_status](./quadrature_integrate_max_eval_error.md)
   A constant that indicates that the requested accuracy limit could not be reached.
-- [var QUADRATURE_INTERNAL_ERROR: quadrature_status](quadrature_internal_error.md)
+- [var QUADRATURE_INTERNAL_ERROR: quadrature_status](./quadrature_internal_error.md)
   A constant that indicates that an internal error occurred.
-- [var QUADRATURE_INVALID_ARG_ERROR: quadrature_status](quadrature_invalid_arg_error.md)
+- [var QUADRATURE_INVALID_ARG_ERROR: quadrature_status](./quadrature_invalid_arg_error.md)
   A constant that indicates that an invalid argument was passed to the operation.
-- [var QUADRATURE_SUCCESS: quadrature_status](quadrature_success.md)
+- [var QUADRATURE_SUCCESS: quadrature_status](./quadrature_success.md)
   A constant that indicates that the Quadrature operation was successful.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct Quadrature](quadrature.md)
+### Quadrature
+- [struct Quadrature](./quadrature.md)
   A structure that approximates the definite integral of a function over a finite interval.
-- [struct quadrature_integrator](quadrature_integrator.md)
+- [struct quadrature_integrator](./quadrature_integrator.md)
   Constants that specify integration algorithms.
 
 

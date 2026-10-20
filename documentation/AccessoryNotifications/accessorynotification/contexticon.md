@@ -1,7 +1,8 @@
 # contextIcon
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A secondary icon that provides additional contextual information about the notification.
 
@@ -20,11 +21,12 @@ For communication notifications, this image might be a message sender’s avatar
 
 ## See Also
 
-- [let attachments: [AccessoryNotification.File]](accessorynotification/attachments.md)
+### Accessing related media
+- [let attachments: [AccessoryNotification.File]](./attachments.md)
   An array of files sent with the notification.
-- [let sourceIcon: AccessoryNotification.File?](accessorynotification/sourceicon.md)
+- [let sourceIcon: AccessoryNotification.File?](./sourceicon.md)
   An icon that represents the app that sent the notification.
-- [AccessoryNotification.File](accessorynotification/file.md)
+- [AccessoryNotification.File](./file.md)
   A file associated with a notification.
 
 

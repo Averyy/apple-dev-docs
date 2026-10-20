@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Reports whether the system supports this processor.
 
@@ -17,6 +18,10 @@ Reports whether the system supports this processor.
 
 ```swift
 class var isSupported: Bool { get }
+```
+
+```objc
+@property (class, nonatomic, readonly, getter=isSupported) BOOL supported;
 ```
 
 

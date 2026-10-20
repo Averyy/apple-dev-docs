@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a memory ballon device configuration object to include with your virtual machine’s configuration data.
 
@@ -14,9 +15,13 @@ Creates a memory ballon device configuration object to include with your virtual
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
-A [`VZVirtioTraditionalMemoryBalloonDeviceConfiguration`](vzvirtiotraditionalmemoryballoondeviceconfiguration.md) object to include in your virtual machine’s configuration data.
+A [`VZVirtioTraditionalMemoryBalloonDeviceConfiguration`](../vzvirtiotraditionalmemoryballoondeviceconfiguration.md) object to include in your virtual machine’s configuration data.
 
 
 ---

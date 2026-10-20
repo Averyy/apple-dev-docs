@@ -1,7 +1,8 @@
 # rotationRate
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rotation rate of the device.
 
@@ -19,13 +20,18 @@ The rotation rate of the device.
 var rotationRate: CMRotationRate { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMRotationRate rotationRate;
+```
+
 #### Discussion
 
-A [`CMRotationRate`](cmrotationrate.md) structure contains data specifying the device’s rate of rotation around three axes. The value of this property contains a measurement of gyroscope data whose bias has been removed by Core Motion algorithms. The identically name property of [`CMGyroData`](cmgyrodata.md), on the other hand, gives the raw data from the gyroscope. The structure type is declared in `CMGyroData.h`.
+A [`CMRotationRate`](../cmrotationrate.md) structure contains data specifying the device’s rate of rotation around three axes. The value of this property contains a measurement of gyroscope data whose bias has been removed by Core Motion algorithms. The identically name property of [`CMGyroData`](../cmgyrodata.md), on the other hand, gives the raw data from the gyroscope. The structure type is declared in `CMGyroData.h`.
 
 ## See Also
 
-- [var attitude: CMAttitude](cmdevicemotion/attitude.md)
+### Getting Attitude and Rotation Rate
+- [var attitude: CMAttitude](./attitude.md)
   The attitude of the device.
 
 

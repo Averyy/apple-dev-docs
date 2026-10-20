@@ -1,12 +1,13 @@
 # MLSupportVectorClassifier.ModelParameters.ValidationData.none
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Do not set validation data.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 14.0
 
 ## Declaration
 
@@ -16,11 +17,12 @@ case none
 
 ## See Also
 
-- [MLSupportVectorClassifier.ModelParameters.ValidationData.split(strategy:)](mlsupportvectorclassifier/modelparameters-swift.struct/validationdata-swift.enum/split(strategy:).md)
+### Specifying validation data
+- [MLSupportVectorClassifier.ModelParameters.ValidationData.split(strategy:)](./split%28strategy%29.md)
   Generate validation data by splitting the training dataset. This is the default.
-- [MLSupportVectorClassifier.ModelParameters.ValidationData.table(_:)](mlsupportvectorclassifier/modelparameters-swift.struct/validationdata-swift.enum/table(_:).md)
+- [MLSupportVectorClassifier.ModelParameters.ValidationData.table(_:)](./table%28_%29.md)
   Set validation data from the MLDataTable provided.
-- [MLSupportVectorClassifier.ModelParameters.ValidationData.dataFrame(_:)](mlsupportvectorclassifier/modelparameters-swift.struct/validationdata-swift.enum/dataframe(_:).md)
+- [MLSupportVectorClassifier.ModelParameters.ValidationData.dataFrame(_:)](./dataframe%28_%29.md)
   Validation data provided in a DataFrame.
 
 

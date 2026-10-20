@@ -1,7 +1,8 @@
 # dropInteraction(_:sessionDidEnter:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate the drop session has moved into the drop interaction’s view.
 
@@ -17,9 +18,13 @@ Tells the delegate the drop session has moved into the drop interaction’s view
 optional func dropInteraction(_ interaction: UIDropInteraction, sessionDidEnter session: any UIDropSession)
 ```
 
+```objc
+- (void) dropInteraction:(UIDropInteraction *) interaction sessionDidEnter:(id<UIDropSession>) session;
+```
+
 ## Mentions
 
-- [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
+- [Making a view into a drop destination](../making-a-view-into-a-drop-destination.md)
 
 ## Parameters
 
@@ -28,11 +33,12 @@ optional func dropInteraction(_ interaction: UIDropInteraction, sessionDidEnter 
 
 ## See Also
 
-- [func dropInteraction(UIDropInteraction, sessionDidUpdate: any UIDropSession) -> UIDropProposal](uidropinteractiondelegate/dropinteraction(_:sessiondidupdate:).md)
+### Tracking the drop movements
+- [func dropInteraction(UIDropInteraction, sessionDidUpdate: any UIDropSession) -> UIDropProposal](./dropinteraction%28_,sessiondidupdate%29.md)
   Tells the delegate the drop session has changed.
-- [func dropInteraction(UIDropInteraction, sessionDidExit: any UIDropSession)](uidropinteractiondelegate/dropinteraction(_:sessiondidexit:).md)
+- [func dropInteraction(UIDropInteraction, sessionDidExit: any UIDropSession)](./dropinteraction%28_,sessiondidexit%29.md)
   Tells the delegate the drop session has moved out of the drop interaction’s view.
-- [func dropInteraction(UIDropInteraction, sessionDidEnd: any UIDropSession)](uidropinteractiondelegate/dropinteraction(_:sessiondidend:).md)
+- [func dropInteraction(UIDropInteraction, sessionDidEnd: any UIDropSession)](./dropinteraction%28_,sessiondidend%29.md)
   Tells the delegate the drop session has ended.
 
 

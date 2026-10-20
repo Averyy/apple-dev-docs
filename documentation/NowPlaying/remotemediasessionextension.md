@@ -1,7 +1,8 @@
 # RemoteMediaSessionExtension
 
 **Framework**: Now Playing  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An app extension that provides remote media sessions.
 
@@ -20,13 +21,13 @@ protocol RemoteMediaSessionExtension<Attributes> : AppExtension
 
 ## Mentions
 
-- [Publishing remote media sessions](publishing-remote-media-sessions.md)
+- [Publishing remote media sessions](./publishing-remote-media-sessions.md)
 
 #### Overview
 
 Implement this protocol in your app extension to handle remote playback sessions.
 
-For more information, see [`Publishing remote media sessions`](publishing-remote-media-sessions.md)
+For more information, see [Publishing remote media sessions](./publishing-remote-media-sessions.md)
 
 The following example shows a basic extension implementation:
 
@@ -46,34 +47,35 @@ struct MyPlaybackExtension: RemoteMediaSessionExtension {
 ## Topics
 
 ### Associated Types
-- [associatedtype Attributes](remotemediasessionextension/attributes.md)
+- [associatedtype Attributes](./remotemediasessionextension/attributes.md)
   The type that represents attributes for your remote sessions.
-- [associatedtype Session : RemoteMediaSessionRepresentable](remotemediasessionextension/session.md)
+- [associatedtype Session : RemoteMediaSessionRepresentable](./remotemediasessionextension/session.md)
   The type of session this extension creates.
 ### Instance Methods
-- [func session(Self.Attributes) async throws -> Self.Session](remotemediasessionextension/session(_:).md)
+- [func session(Self.Attributes) async throws -> Self.Session](./remotemediasessionextension/session%28_%29.md)
   Creates a session configured with the specified attributes.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
 
 ## See Also
 
-- [Publishing remote media sessions](publishing-remote-media-sessions.md)
+### Remote sessions
+- [Publishing remote media sessions](./publishing-remote-media-sessions.md)
   Show media from an external device on the Lock Screen and Control Center.
-- [protocol RemoteMediaSessionRepresentable](remotemediasessionrepresentable.md)
+- [protocol RemoteMediaSessionRepresentable](./remotemediasessionrepresentable.md)
   A session that plays remotely, potentially across multiple devices.
-- [class RemoteMediaSession](remotemediasession.md)
+- [class RemoteMediaSession](./remotemediasession.md)
   A session that manages remote media playback across devices.
-- [class RemoteMediaSessionExtensionConfiguration](remotemediasessionextensionconfiguration.md)
+- [class RemoteMediaSessionExtensionConfiguration](./remotemediasessionextensionconfiguration.md)
   The configuration object for a remote playback extension.
-- [protocol RemoteMediaSessionAttributes](remotemediasessionattributes.md)
+- [protocol RemoteMediaSessionAttributes](./remotemediasessionattributes.md)
   A type that represents attributes for remote sessions.
-- [enum RemoteMediaSessionError](remotemediasessionerror.md)
+- [enum RemoteMediaSessionError](./remotemediasessionerror.md)
   Errors that can occur during remote session operations.
-- [struct MediaDevice](mediadevice.md)
+- [struct MediaDevice](./mediadevice.md)
   A device that plays media in a remote session.
 
 

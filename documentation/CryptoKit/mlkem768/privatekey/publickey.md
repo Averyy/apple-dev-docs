@@ -1,7 +1,8 @@
 # publicKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The corresponding public key.
 
@@ -22,9 +23,10 @@ var publicKey: MLKEM768.PublicKey { get }
 
 ## See Also
 
-- [var integrityCheckedRepresentation: Data](mlkem768/privatekey/integritycheckedrepresentation.md)
+### Inspecting a private key’s properties
+- [var integrityCheckedRepresentation: Data](./integritycheckedrepresentation.md)
   An integrity-checked representation of the private key.
-- [var seedRepresentation: Data](mlkem768/privatekey/seedrepresentation.md)
+- [var seedRepresentation: Data](./seedrepresentation.md)
   The private key’s seed representation.
 
 

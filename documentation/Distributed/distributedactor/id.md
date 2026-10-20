@@ -2,6 +2,7 @@
 
 **Framework**: Distributed  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Logical identity of this distributed actor.
@@ -12,7 +13,7 @@ Logical identity of this distributed actor.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,7 +28,7 @@ Many distributed actor references may be pointing at, logically, the same actor.
 
 Depending on the capabilities of the actor system producing the identifiers, the `ID` may also be used to store instance specific metadata.
 
-#### Synthesized Property
+#### Synthesized property
 
 In concrete distributed actor declarations, a witness for this protocol requirement is synthesized by the compiler.
 

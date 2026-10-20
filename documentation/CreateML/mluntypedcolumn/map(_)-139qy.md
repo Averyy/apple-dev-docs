@@ -1,7 +1,8 @@
 # map(_:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new column of typed values by applying the given thread-safe transform to every non-missing element of this untyped column.
 
@@ -19,21 +20,28 @@ Creates a new column of typed values by applying the given thread-safe transform
 func map<T>(_ lazyTransform: @escaping (MLDataValue) -> T) -> MLDataColumn<T> where T : MLDataValueConvertible
 ```
 
+**Other overloads**:
+
+```swift
+func map<T>(_ lazyTransform: @escaping (MLDataValue) -> T?) -> MLDataColumn<T> where T : MLDataValueConvertible
+```
+
 #### Return Value
 
 A new `MLDataColumn` typed to the return type of `lazyTransform`.
 
 ## Parameters
 
-- `lazyTransform`: A thread-safe element transformation function. The implementation of the transform you provide should accept an `Element` of the column and return a transformed value of a type that conforms to [`MLDataValueConvertible`](mldatavalueconvertible.md).
+- `lazyTransform`: A thread-safe element transformation function. The implementation of the transform you provide should accept an `Element` of the column and return a transformed value of a type that conforms to [`MLDataValueConvertible`](../mldatavalueconvertible.md).
 
 ## See Also
 
-- [func map(_:)](mluntypedcolumn/map(_:).md)
+### Transforming elements to generate a data column
+- [func map(_:)](./map%28_%29.md)
   Creates a new column of typed values by applying the given thread-safe transform to every non-missing element of this untyped column.
-- [func map<T>((MLDataValue) -> T?) -> MLDataColumn<T>](mluntypedcolumn/map(_:)-9v61j.md)
+- [func map<T>((MLDataValue) -> T?) -> MLDataColumn<T>](./map%28_%29-9v61j.md)
   Creates a new column of typed values, potentially with missing values, by applying the given thread-safe transform to every non-missing element of this untyped column.
-- [func mapMissing<T>((MLDataValue) -> T?) -> MLDataColumn<T>](mluntypedcolumn/mapmissing(_:).md)
+- [func mapMissing<T>((MLDataValue) -> T?) -> MLDataColumn<T>](./mapmissing%28_%29.md)
   Creates a new column of typed values by applying the given thread-safe transform to every element of this untyped column, including missing elements.
 
 

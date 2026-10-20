@@ -1,7 +1,8 @@
 # init(insertIndexes:insertedObjects:removeIndexes:removedObjects:additionalChanges:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+

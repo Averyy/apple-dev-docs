@@ -1,7 +1,8 @@
 # setNeedsUpdateConfiguration()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests the system update the button configuration.
 
@@ -18,21 +19,26 @@ Requests the system update the button configuration.
 func setNeedsUpdateConfiguration()
 ```
 
+```objc
+- (void) setNeedsUpdateConfiguration;
+```
+
 #### Discussion
 
-Call this method to make the system call [`updateConfiguration()`](uibutton/updateconfiguration().md). The system calls this method automatically when the button’s state changes. If you call this method multiple times before the system calls [`updateConfiguration()`](uibutton/updateconfiguration().md), the system calls [`updateConfiguration()`](uibutton/updateconfiguration().md) once.
+Call this method to make the system call [`updateConfiguration()`](./updateconfiguration%28%29.md). The system calls this method automatically when the button’s state changes. If you call this method multiple times before the system calls [`updateConfiguration()`](./updateconfiguration%28%29.md), the system calls [`updateConfiguration()`](./updateconfiguration%28%29.md) once.
 
 ## See Also
 
-- [var configuration: UIButton.Configuration?](uibutton/configuration-5rlyb.md)
+### Managing the appearance with a configuration object
+- [var configuration: UIButton.Configuration?](./configuration-5rlyb.md)
   The configuration for the button’s appearance.
-- [var automaticallyUpdatesConfiguration: Bool](uibutton/automaticallyupdatesconfiguration.md)
+- [var automaticallyUpdatesConfiguration: Bool](./automaticallyupdatesconfiguration.md)
   A Boolean value that determines whether the button configuration changes when button’s state changes.
-- [func updateConfiguration()](uibutton/updateconfiguration.md)
+- [func updateConfiguration()](./updateconfiguration%28%29.md)
   Updates the button configuration in response to a button state change.
-- [var configurationUpdateHandler: UIButton.ConfigurationUpdateHandler?](uibutton/configurationupdatehandler-swift.property.md)
+- [var configurationUpdateHandler: UIButton.ConfigurationUpdateHandler?](./configurationupdatehandler-swift.property.md)
   A closure that executes when the button state changes.
-- [typealias ConfigurationUpdateHandler](uibutton/configurationupdatehandler-swift.typealias.md)
+- [typealias ConfigurationUpdateHandler](./configurationupdatehandler-swift.typealias.md)
   A closure to update the configuration of a button.
 
 

@@ -1,7 +1,8 @@
 # init(role:)
 
 **Framework**: Core Bluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 init(role: CBChannelSoundingSessionConfiguration.Role)
+```
+
+```objc
+- (instancetype) initWithRole:(CBChannelSoundingSessionConfigurationRole) role;
 ```
 
 

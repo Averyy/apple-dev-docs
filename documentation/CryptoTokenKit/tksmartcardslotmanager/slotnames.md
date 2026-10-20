@@ -1,7 +1,8 @@
 # slotNames
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of identifiers for all the Smart Card reader slots available to the system.
 
@@ -20,15 +21,20 @@ A list of identifiers for all the Smart Card reader slots available to the syste
 var slotNames: [String] { get }
 ```
 
+```objc
+@property (readonly) NSArray<NSString *> * slotNames;
+```
+
 #### Discussion
 
-Use Key-Value Observing on this property to be notified for changes to available Smart Card reader slots. For more information, see [`Key-Value Observing Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
+Use Key-Value Observing on this property to be notified for changes to available Smart Card reader slots. For more information, see [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 
 ## See Also
 
-- [func getSlot(withName: String, reply: (TKSmartCardSlot?) -> Void)](tksmartcardslotmanager/getslot(withname:reply:).md)
+### Accessing Smart Card Slots
+- [func getSlot(withName: String, reply: (TKSmartCardSlot?) -> Void)](./getslot%28withname,reply%29.md)
   Asynchronously calls a block with a Smart Card reader slot for a specified name.
-- [func slotNamed(String) -> TKSmartCardSlot?](tksmartcardslotmanager/slotnamed(_:).md)
+- [func slotNamed(String) -> TKSmartCardSlot?](./slotnamed%28_%29.md)
   Returns the Smart Card slot with a given name.
 
 

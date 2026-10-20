@@ -1,7 +1,8 @@
 # y
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The positioned y value of the scroll view if configured to be in that position.
 

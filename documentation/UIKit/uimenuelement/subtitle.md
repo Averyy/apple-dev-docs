@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subtitle to display alongside the menu element’s title.
 
@@ -18,15 +19,20 @@ The subtitle to display alongside the menu element’s title.
 var subtitle: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * subtitle;
+```
+
 #### Discussion
 
-Only the [`context`](uimenusystem/context.md) menu system supports the display of a subtitle, and only when the app is running on iOS.
+Only the [`context`](../uimenusystem/context.md) menu system supports the display of a subtitle, and only when the app is running on iOS.
 
 ## See Also
 
-- [var title: String](uimenuelement/title.md)
+### Getting the element attributes
+- [var title: String](./title.md)
   The title of the menu element.
-- [var image: UIImage?](uimenuelement/image.md)
+- [var image: UIImage?](./image.md)
   The image to display alongside the menu element’s title.
 
 

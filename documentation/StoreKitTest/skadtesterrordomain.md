@@ -1,7 +1,8 @@
 # SKAdTestErrorDomain
 
 **Framework**: StoreKit Test  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string that identifies the error domain for SKAdNetwork testing in the testing environment.
 
@@ -17,9 +18,14 @@ A string that identifies the error domain for SKAdNetwork testing in the testing
 let SKAdTestErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const SKAdTestErrorDomain;
+```
+
 ## See Also
 
-- [struct SKAdTestError](skadtesterror.md)
+### Ad impression and postback errors
+- [struct SKAdTestError](./skadtesterror.md)
   An error the testing environment returns for SKAdNetwork testing errors.
 
 

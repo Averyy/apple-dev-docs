@@ -1,7 +1,8 @@
 # HKDevicePlacementSide.right
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A device predominately located on the right side.
 
@@ -19,13 +20,18 @@ A device predominately located on the right side.
 case right
 ```
 
+```c
+HKDevicePlacementSideRight
+```
+
 ## See Also
 
-- [HKDevicePlacementSide.central](hkdeviceplacementside/central.md)
+### Placements
+- [HKDevicePlacementSide.central](./central.md)
   A device predominately located near the center of the body.
-- [HKDevicePlacementSide.left](hkdeviceplacementside/left.md)
+- [HKDevicePlacementSide.left](./left.md)
   A device predominately located on the left side.
-- [HKDevicePlacementSide.unknown](hkdeviceplacementside/unknown.md)
+- [HKDevicePlacementSide.unknown](./unknown.md)
   The system couldn’t determine the device’s placement.
 
 

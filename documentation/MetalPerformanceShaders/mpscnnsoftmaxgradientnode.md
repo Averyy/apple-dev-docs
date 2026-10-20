@@ -1,7 +1,8 @@
 # MPSCNNSoftMaxGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a gradient softmax filter.
 
@@ -19,30 +20,35 @@ A representation of a gradient softmax filter.
 class MPSCNNSoftMaxGradientNode
 ```
 
+```objc
+@interface MPSCNNSoftMaxGradientNode : MPSNNGradientFilterNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](mpscnnsoftmaxgradientnode/init(sourcegradient:sourceimage:gradientstate:).md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)](./mpscnnsoftmaxgradientnode/init%28sourcegradient,sourceimage,gradientstate%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+- [MPSNNGradientFilterNode](./mpsnngradientfilternode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNSoftMaxNode](mpscnnsoftmaxnode.md)
+### Softmax Layer Nodes
+- [class MPSCNNSoftMaxNode](./mpscnnsoftmaxnode.md)
   A representation of a softmax filter.
-- [class MPSCNNLogSoftMaxNode](mpscnnlogsoftmaxnode.md)
+- [class MPSCNNLogSoftMaxNode](./mpscnnlogsoftmaxnode.md)
   A representation of a logarithmic softmax filter kernel.
-- [class MPSCNNLogSoftMaxGradientNode](mpscnnlogsoftmaxgradientnode.md)
+- [class MPSCNNLogSoftMaxGradientNode](./mpscnnlogsoftmaxgradientnode.md)
   A representation of a gradient logarithmic softmax filter kernel.
 
 

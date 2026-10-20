@@ -1,7 +1,8 @@
 # kUSBHubRqGetConfig
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 A request to get a configuration.
 
@@ -10,7 +11,7 @@ A request to get a configuration.
 
 ## Declaration
 
-```swift
+```c
 kUSBHubRqGetConfig = 8
 ```
 

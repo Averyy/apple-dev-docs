@@ -1,7 +1,8 @@
 # numberOfAnchorBoxes
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var numberOfAnchorBoxes: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger numberOfAnchorBoxes;
 ```
 
 

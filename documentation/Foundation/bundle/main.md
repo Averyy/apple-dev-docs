@@ -1,7 +1,8 @@
 # main
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the bundle object that contains the current executable.
 
@@ -20,6 +21,10 @@ Returns the bundle object that contains the current executable.
 class var main: Bundle { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSBundle * mainBundle;
+```
+
 #### Return Value
 
 The `NSBundle` object corresponding to the bundle directory that contains the current executable. This method may return a valid bundle object even for unbundled apps. It may also return `nil` if the bundle object could not be created, so always check the return value.
@@ -30,13 +35,15 @@ The main bundle lets you access the resources in the same directory as the curre
 
 ## See Also
 
-- [Resource Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingResources/Introduction/Introduction.html#//apple_ref/doc/uid/10000051i)
-- [init(for: AnyClass)](bundle/init(for:).md)
+### Related Documentation
+- [Resource Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingResources/Introduction/Introduction.html#//apple_ref/doc/uid/10000051i)
+- [init(for: AnyClass)](./init%28for%29.md)
   Returns the `NSBundle` object with which the specified class is associated.
-- [Bundle Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/Introduction/Introduction.html#//apple_ref/doc/uid/10000123i)
-- [class var allFrameworks: [Bundle]](bundle/allframeworks.md)
+- [Bundle Programming Guide](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/Introduction/Introduction.html#//apple_ref/doc/uid/10000123i)
+### Getting standard bundle objects
+- [class var allFrameworks: [Bundle]](./allframeworks.md)
   Returns an array of all of the application’s bundles that represent frameworks.
-- [class var allBundles: [Bundle]](bundle/allbundles.md)
+- [class var allBundles: [Bundle]](./allbundles.md)
   Returns an array of all the application’s non-framework bundles.
 
 

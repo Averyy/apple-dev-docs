@@ -1,7 +1,8 @@
 # analyze(completionHandler:)
 
 **Framework**: Sound Analysis  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Analyzes the audio file asynchronously.
 
@@ -17,18 +18,26 @@ Analyzes the audio file asynchronously.
 ## Declaration
 
 ```swift
+func analyze(completionHandler: @escaping @Sendable (Bool) -> Void)
+```
+
+```swift
 func analyze() async -> Bool
+```
+
+```objc
+- (void) analyzeWithCompletionHandler:(void (^)(BOOL didReachEndOfFile)) completionHandler;
 ```
 
 ## Mentions
 
-- [Classifying Sounds in an Audio File](classifying-sounds-in-an-audio-file.md)
+- [Classifying Sounds in an Audio File](../classifying-sounds-in-an-audio-file.md)
 
 #### Discussion
 
 The method executes asynchronously and calls the completion handler after the analyzer finishes analyzing the entire file. The audio file analyzer sends errors to each request’s results observer.
 
-If you call the [`cancelAnalysis()`](snaudiofileanalyzer/cancelanalysis().md) method, the analyzer calls your completion handler and passes `false` because it can’t reach the end of the file.
+If you call the [`cancelAnalysis()`](./cancelanalysis%28%29.md) method, the analyzer calls your completion handler and passes `false` because it can’t reach the end of the file.
 
 ## Parameters
 
@@ -36,9 +45,10 @@ If you call the [`cancelAnalysis()`](snaudiofileanalyzer/cancelanalysis().md) me
 
 ## See Also
 
-- [func analyze()](snaudiofileanalyzer/analyze.md)
+### Analyzing Data
+- [func analyze()](./analyze%28%29.md)
   Analyzes the audio file synchronously.
-- [func cancelAnalysis()](snaudiofileanalyzer/cancelanalysis.md)
+- [func cancelAnalysis()](./cancelanalysis%28%29.md)
   Cancels all the asynchronous sound analysis requests the analyzer is currently processing.
 
 

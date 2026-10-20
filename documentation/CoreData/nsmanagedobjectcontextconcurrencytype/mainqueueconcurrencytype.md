@@ -1,7 +1,8 @@
 # NSManagedObjectContextConcurrencyType.mainQueueConcurrencyType
 
 **Framework**: Core Data  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the context will be associated with the main queue.
 
@@ -10,7 +11,7 @@ Specifies that the context will be associated with the main queue.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ Specifies that the context will be associated with the main queue.
 case mainQueueConcurrencyType
 ```
 
+```c
+NSMainQueueConcurrencyType
+```
+
 ## Mentions
 
-- [Using Core Data in the background](using-core-data-in-the-background.md)
+- [Using Core Data in the background](../using-core-data-in-the-background.md)
 
 ## See Also
 
-- [NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType](nsmanagedobjectcontextconcurrencytype/privatequeueconcurrencytype.md)
+### Concurrency Types
+- [NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType](./privatequeueconcurrencytype.md)
   Specifies that the context will be associated with a private dispatch queue.
-- [NSManagedObjectContextConcurrencyType.confinementConcurrencyType](nsmanagedobjectcontextconcurrencytype/confinementconcurrencytype.md)
+- [NSManagedObjectContextConcurrencyType.confinementConcurrencyType](./confinementconcurrencytype.md)
   Specifies that the context will use the thread confinement pattern.
 
 

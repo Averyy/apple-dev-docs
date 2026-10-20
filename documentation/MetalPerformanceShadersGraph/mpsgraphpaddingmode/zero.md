@@ -1,7 +1,8 @@
 # MPSGraphPaddingMode.zero
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Zero
 
@@ -17,6 +18,10 @@ Zero
 
 ```swift
 case zero
+```
+
+```c
+MPSGraphPaddingModeZero
 ```
 
 

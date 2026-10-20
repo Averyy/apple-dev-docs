@@ -1,7 +1,8 @@
 # buttons
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of text buttons to be displayed at the bottom of the card presented to configure waypoints along a route.
 
@@ -14,6 +15,10 @@ An array of text buttons to be displayed at the bottom of the card presented to 
 
 ```swift
 var buttons: [CPTextButton] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<CPTextButton *> * buttons;
 ```
 
 #### Discussion

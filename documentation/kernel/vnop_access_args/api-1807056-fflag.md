@@ -7,9 +7,10 @@ FREAD and/or FWRITE; in the case of a file opened with open(2), fflag correspond
 
 ## See Also
 
-- [vp](vnop_access_args/1807054-vp.md)
+### Fields
+- [vp](./api-1807054-vp.md)
   File to close.
-- [ctx](vnop_access_args/1807060-ctx.md)
+- [ctx](./api-1807060-ctx.md)
   Context against which to authenticate close.
 
 

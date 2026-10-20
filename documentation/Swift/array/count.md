@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of elements in the array.
 
@@ -22,9 +23,10 @@ var count: Int { get }
 
 ## See Also
 
-- [var isEmpty: Bool](array/isempty.md)
+### Inspecting an Array
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value indicating whether the collection is empty.
-- [var capacity: Int](array/capacity.md)
+- [var capacity: Int](./capacity.md)
   The total number of elements that the array can contain without allocating new storage.
 
 

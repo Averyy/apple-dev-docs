@@ -1,7 +1,8 @@
 # imageView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image view that the scrubber item uses to display its image.
 
@@ -14,13 +15,18 @@ The image view that the scrubber item uses to display its image.
 var imageView: NSImageView { get }
 ```
 
+```objc
+@property (strong, readonly) NSImageView * imageView;
+```
+
 #### Discussion
 
-Use this property to access and configure the underlying image view used to display the image in the [`image`](nsscrubberimageitemview/image.md) property.
+Use this property to access and configure the underlying image view used to display the image in the [`image`](./image.md) property.
 
 ## See Also
 
-- [var image: NSImage](nsscrubberimageitemview/image.md)
+### Providing image content
+- [var image: NSImage](./image.md)
   The image displayed by the scrubber item.
 
 

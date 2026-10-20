@@ -1,7 +1,8 @@
 # value(atX:as:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the data value at the given x position, or `nil` if the position does not correspond to a valid X value.
 

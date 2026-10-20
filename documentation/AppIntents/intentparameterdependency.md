@@ -1,7 +1,8 @@
 # IntentParameterDependency
 
 **Framework**: App Intents  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A property wrapper that represents an app intent dependency you use to provide dynamic options.
 
@@ -11,7 +12,7 @@ A property wrapper that represents an app intent dependency you use to provide d
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,7 +24,7 @@ final class IntentParameterDependency<Intent> where Intent : AppIntent
 
 #### Overview
 
-Use the `IntentParameterDependency` property wrapper for properties that represent dynamic options in your [`DynamicOptionsProvider`](dynamicoptionsprovider.md) implementations as shown in the following example:
+Use the `IntentParameterDependency` property wrapper for properties that represent dynamic options in your [`DynamicOptionsProvider`](./dynamicoptionsprovider.md) implementations as shown in the following example:
 
 ```swift
 struct SoupQuery: EntityStringQuery {
@@ -47,48 +48,49 @@ struct SoupQuery: EntityStringQuery {
 ## Topics
 
 ### Initializers
-- [convenience init<V0, P0>(KeyPath<Intent, P0>)](intentparameterdependency/init(_:).md)
-- [convenience init<V0, P0, V1, P1>(KeyPath<Intent, P0>, KeyPath<Intent, P1>)](intentparameterdependency/init(_:_:).md)
-- [convenience init<V0, P0, V1, P1, V2, P2>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>)](intentparameterdependency/init(_:_:_:).md)
-- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>)](intentparameterdependency/init(_:_:_:_:).md)
-- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>)](intentparameterdependency/init(_:_:_:_:_:).md)
-- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>)](intentparameterdependency/init(_:_:_:_:_:_:).md)
-- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>)](intentparameterdependency/init(_:_:_:_:_:_:_:).md)
-- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>)](intentparameterdependency/init(_:_:_:_:_:_:_:_:).md)
-- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7, V8, P8>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>, KeyPath<Intent, P8>)](intentparameterdependency/init(_:_:_:_:_:_:_:_:_:).md)
-- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7, V8, P8, V9, P9>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>, KeyPath<Intent, P8>, KeyPath<Intent, P9>)](intentparameterdependency/init(_:_:_:_:_:_:_:_:_:_:).md)
-- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7, V8, P8, V9, P9, V10, P10>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>, KeyPath<Intent, P8>, KeyPath<Intent, P9>, KeyPath<Intent, P10>)](intentparameterdependency/init(_:_:_:_:_:_:_:_:_:_:_:).md)
-- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7, V8, P8, V9, P9, V10, P10, V11, P11>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>, KeyPath<Intent, P8>, KeyPath<Intent, P9>, KeyPath<Intent, P10>, KeyPath<Intent, P11>)](intentparameterdependency/init(_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7, V8, P8, V9, P9, V10, P10, V11, P11, V12, P12>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>, KeyPath<Intent, P8>, KeyPath<Intent, P9>, KeyPath<Intent, P10>, KeyPath<Intent, P11>, KeyPath<Intent, P12>)](intentparameterdependency/init(_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7, V8, P8, V9, P9, V10, P10, V11, P11, V12, P12, V13, P13>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>, KeyPath<Intent, P8>, KeyPath<Intent, P9>, KeyPath<Intent, P10>, KeyPath<Intent, P11>, KeyPath<Intent, P12>, KeyPath<Intent, P13>)](intentparameterdependency/init(_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7, V8, P8, V9, P9, V10, P10, V11, P11, V12, P12, V13, P13, V14, P14>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>, KeyPath<Intent, P8>, KeyPath<Intent, P9>, KeyPath<Intent, P10>, KeyPath<Intent, P11>, KeyPath<Intent, P12>, KeyPath<Intent, P13>, KeyPath<Intent, P14>)](intentparameterdependency/init(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [convenience init<V0, P0>(KeyPath<Intent, P0>)](./intentparameterdependency/init%28_%29.md)
+- [convenience init<V0, P0, V1, P1>(KeyPath<Intent, P0>, KeyPath<Intent, P1>)](./intentparameterdependency/init%28_,_%29.md)
+- [convenience init<V0, P0, V1, P1, V2, P2>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>)](./intentparameterdependency/init%28_,_,_%29.md)
+- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>)](./intentparameterdependency/init%28_,_,_,_%29.md)
+- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>)](./intentparameterdependency/init%28_,_,_,_,_%29.md)
+- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>)](./intentparameterdependency/init%28_,_,_,_,_,_%29.md)
+- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>)](./intentparameterdependency/init%28_,_,_,_,_,_,_%29.md)
+- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>)](./intentparameterdependency/init%28_,_,_,_,_,_,_,_%29.md)
+- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7, V8, P8>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>, KeyPath<Intent, P8>)](./intentparameterdependency/init%28_,_,_,_,_,_,_,_,_%29.md)
+- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7, V8, P8, V9, P9>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>, KeyPath<Intent, P8>, KeyPath<Intent, P9>)](./intentparameterdependency/init%28_,_,_,_,_,_,_,_,_,_%29.md)
+- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7, V8, P8, V9, P9, V10, P10>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>, KeyPath<Intent, P8>, KeyPath<Intent, P9>, KeyPath<Intent, P10>)](./intentparameterdependency/init%28_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7, V8, P8, V9, P9, V10, P10, V11, P11>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>, KeyPath<Intent, P8>, KeyPath<Intent, P9>, KeyPath<Intent, P10>, KeyPath<Intent, P11>)](./intentparameterdependency/init%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7, V8, P8, V9, P9, V10, P10, V11, P11, V12, P12>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>, KeyPath<Intent, P8>, KeyPath<Intent, P9>, KeyPath<Intent, P10>, KeyPath<Intent, P11>, KeyPath<Intent, P12>)](./intentparameterdependency/init%28_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7, V8, P8, V9, P9, V10, P10, V11, P11, V12, P12, V13, P13>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>, KeyPath<Intent, P8>, KeyPath<Intent, P9>, KeyPath<Intent, P10>, KeyPath<Intent, P11>, KeyPath<Intent, P12>, KeyPath<Intent, P13>)](./intentparameterdependency/init%28_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [convenience init<V0, P0, V1, P1, V2, P2, V3, P3, V4, P4, V5, P5, V6, P6, V7, P7, V8, P8, V9, P9, V10, P10, V11, P11, V12, P12, V13, P13, V14, P14>(KeyPath<Intent, P0>, KeyPath<Intent, P1>, KeyPath<Intent, P2>, KeyPath<Intent, P3>, KeyPath<Intent, P4>, KeyPath<Intent, P5>, KeyPath<Intent, P6>, KeyPath<Intent, P7>, KeyPath<Intent, P8>, KeyPath<Intent, P9>, KeyPath<Intent, P10>, KeyPath<Intent, P11>, KeyPath<Intent, P12>, KeyPath<Intent, P13>, KeyPath<Intent, P14>)](./intentparameterdependency/init%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
 ### Instance Properties
-- [var wrappedValue: IntentProjection<Intent>?](intentparameterdependency/wrappedvalue.md)
+- [var wrappedValue: IntentProjection<Intent>?](./intentparameterdependency/wrappedvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+### Parameters
+- [Adding parameters to an app intent](./adding-parameters-to-an-app-intent.md)
   Enable people to configure app intents with their custom input values.
-- [class IntentParameter](intentparameter.md)
+- [class IntentParameter](./intentparameter.md)
   A property wrapper that indicates the associated property is an input argument of the app intent.
-- [struct IntentParameterContext](intentparametercontext.md)
+- [struct IntentParameterContext](./intentparametercontext.md)
   A type that provides information about an associated parameter during value resolution.
-- [enum InputConnectionBehavior](inputconnectionbehavior.md)
+- [enum InputConnectionBehavior](./inputconnectionbehavior.md)
   Describes the input behaviors for connecting a parameter to the output of the previous App Intent.
-- [protocol DynamicOptionsProvider](dynamicoptionsprovider.md)
+- [protocol DynamicOptionsProvider](./dynamicoptionsprovider.md)
   An interface for providing a dynamic list of options for a parameter of your app intent.
-- [Resolvers](resolvers.md)
+- [Resolvers](./resolvers.md)
   Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
 
 

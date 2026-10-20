@@ -1,7 +1,8 @@
 # reloadConfigurationItems()
 
 **Framework**: Social  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads the list of configuration items.
 
@@ -16,15 +17,20 @@ Reloads the list of configuration items.
 func reloadConfigurationItems()
 ```
 
+```objc
+- (void) reloadConfigurationItems;
+```
+
 #### Discussion
 
-In general, a subclass doesn’t need to call this method, unless it determines its configuration items in a deferred way, such as in [`presentationAnimationDidFinish()`](slcomposeserviceviewcontroller/presentationanimationdidfinish().md). In particular, you don’t need to call this method after you change a configuration item property, because the `SLComposeServiceViewController` base class automatically detects and responds to such changes.
+In general, a subclass doesn’t need to call this method, unless it determines its configuration items in a deferred way, such as in [`presentationAnimationDidFinish()`](./presentationanimationdidfinish%28%29.md). In particular, you don’t need to call this method after you change a configuration item property, because the `SLComposeServiceViewController` base class automatically detects and responds to such changes.
 
 ## See Also
 
-- [func configurationItems() -> [Any]!](slcomposeserviceviewcontroller/configurationitems.md)
+### Configuring the Post Details
+- [func configurationItems() -> [Any]!](./configurationitems%28%29.md)
   Returns configuration items to display in the compose view.
-- [class SLComposeSheetConfigurationItem](slcomposesheetconfigurationitem.md)
+- [class SLComposeSheetConfigurationItem](../slcomposesheetconfigurationitem.md)
   An object that provides additional configuration details to use when configuring a composition interface.
 
 

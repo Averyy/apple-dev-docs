@@ -1,7 +1,8 @@
 # kAXMaxValueAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The maximum value this accessibility object can display (for example, the maximum value of a scroller control). This attribute is used only in conjunction with the `AXValue` attribute.
 
@@ -12,6 +13,10 @@ The maximum value this accessibility object can display (for example, the maximu
 
 ```swift
 var kAXMaxValueAttribute: String { get }
+```
+
+```c
+#define kAXMaxValueAttribute
 ```
 
 

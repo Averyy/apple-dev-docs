@@ -1,7 +1,8 @@
 # addChild(_:withPendingUnitCount:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a process object as a suboperation of a progress tree.
 
@@ -18,6 +19,10 @@ Adds a process object as a suboperation of a progress tree.
 
 ```swift
 func addChild(_ child: Progress, withPendingUnitCount inUnitCount: Int64)
+```
+
+```objc
+- (void) addChild:(NSProgress *) child withPendingUnitCount:(int64_t) inUnitCount;
 ```
 
 #### Discussion

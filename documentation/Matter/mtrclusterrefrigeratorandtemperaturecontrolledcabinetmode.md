@@ -1,7 +1,8 @@
 # MTRClusterRefrigeratorAndTemperatureControlledCabinetMode
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Cluster Refrigerator And Temperature Controlled Cabinet Mode Attributes and commands for selecting a mode from a list of supported options.
 
@@ -20,32 +21,36 @@ Cluster Refrigerator And Temperature Controlled Cabinet Mode Attributes and comm
 class MTRClusterRefrigeratorAndTemperatureControlledCabinetMode
 ```
 
+```objc
+@interface MTRClusterRefrigeratorAndTemperatureControlledCabinetMode : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterrefrigeratorandtemperaturecontrolledcabinetmode/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusterrefrigeratorandtemperaturecontrolledcabinetmode/init%28device,endpointid,queue%29.md)
   For all instance methods that take a completion (i.e. command invocations), the completion will be called on the provided queue.
 ### Instance Methods
-- [func changeToMode(with: MTRRefrigeratorAndTemperatureControlledCabinetModeClusterChangeToModeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRRefrigeratorAndTemperatureControlledCabinetModeClusterChangeToModeResponseParams?, (any Error)?) -> Void)](mtrclusterrefrigeratorandtemperaturecontrolledcabinetmode/changetomode(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterrefrigeratorandtemperaturecontrolledcabinetmode/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterrefrigeratorandtemperaturecontrolledcabinetmode/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterrefrigeratorandtemperaturecontrolledcabinetmode/readattributeclusterrevision(with:).md)
-- [func readAttributeCurrentMode(with: MTRReadParams?) -> [String : Any]?](mtrclusterrefrigeratorandtemperaturecontrolledcabinetmode/readattributecurrentmode(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterrefrigeratorandtemperaturecontrolledcabinetmode/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterrefrigeratorandtemperaturecontrolledcabinetmode/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeSupportedModes(with: MTRReadParams?) -> [String : Any]?](mtrclusterrefrigeratorandtemperaturecontrolledcabinetmode/readattributesupportedmodes(with:).md)
+- [func changeToMode(with: MTRRefrigeratorAndTemperatureControlledCabinetModeClusterChangeToModeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRRefrigeratorAndTemperatureControlledCabinetModeClusterChangeToModeResponseParams?, (any Error)?) -> Void)](./mtrclusterrefrigeratorandtemperaturecontrolledcabinetmode/changetomode%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrefrigeratorandtemperaturecontrolledcabinetmode/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrefrigeratorandtemperaturecontrolledcabinetmode/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrefrigeratorandtemperaturecontrolledcabinetmode/readattributeclusterrevision%28with%29.md)
+- [func readAttributeCurrentMode(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrefrigeratorandtemperaturecontrolledcabinetmode/readattributecurrentmode%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrefrigeratorandtemperaturecontrolledcabinetmode/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrefrigeratorandtemperaturecontrolledcabinetmode/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeSupportedModes(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrefrigeratorandtemperaturecontrolledcabinetmode/readattributesupportedmodes%28with%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

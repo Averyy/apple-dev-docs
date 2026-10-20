@@ -1,7 +1,8 @@
 # useParentedControllers
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether to parent the new animation’s controller to the controller managing this action.
 

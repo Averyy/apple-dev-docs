@@ -1,7 +1,8 @@
 # init(indexOffset:indexCount:topology:materialIndex:bounds:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a low-level mesh part.
 

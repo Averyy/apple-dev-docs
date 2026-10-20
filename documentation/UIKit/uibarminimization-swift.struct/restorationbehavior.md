@@ -1,7 +1,8 @@
 # restorationBehavior
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -18,8 +19,9 @@ var restorationBehavior: UIBarMinimizationRestorationBehavior
 
 ## See Also
 
-- [var minimizationBehavior: UIBarMinimizationBehavior](uibarminimization-swift.struct/minimizationbehavior.md)
-- [var safeAreaAdjustment: UIBarMinimizationSafeAreaAdjustment](uibarminimization-swift.struct/safeareaadjustment.md)
+### Configuring bar minimization
+- [var minimizationBehavior: UIBarMinimizationBehavior](./minimizationbehavior.md)
+- [var safeAreaAdjustment: UIBarMinimizationSafeAreaAdjustment](./safeareaadjustment.md)
 
 
 ---

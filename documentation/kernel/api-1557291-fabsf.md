@@ -1,21 +1,23 @@
 # fabsf
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 float fabsf(float);
 ```
 
 ## See Also
 
-- [fabs](1557277-fabs.md)
-- [fabsl](1557341-fabsl.md)
+### Absolute Value
+- [fabs](./api-1557277-fabs.md)
+- [fabsl](./api-1557341-fabsl.md)
 
 
 ---

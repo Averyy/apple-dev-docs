@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the device supports function pointers in render functions.
@@ -20,9 +21,14 @@ A Boolean value that indicates whether the device supports function pointers in 
 var supportsFunctionPointersFromRender: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL supportsFunctionPointersFromRender;
+```
+
 ## See Also
 
-- [var supportsFunctionPointers: Bool](mtldevice/supportsfunctionpointers.md)
+### Checking function pointer support
+- [var supportsFunctionPointers: Bool](./supportsfunctionpointers.md)
   A Boolean value that indicates whether the device supports function pointers in compute kernel functions.
 
 

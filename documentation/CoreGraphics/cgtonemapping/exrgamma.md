@@ -1,7 +1,8 @@
 # CGToneMapping.exrGamma
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -18,13 +19,18 @@
 case exrGamma
 ```
 
+```c
+kCGToneMappingEXRGamma
+```
+
 ## See Also
 
-- [CGToneMapping.default](cgtonemapping/default.md)
-- [CGToneMapping.imageSpecificLumaScaling](cgtonemapping/imagespecificlumascaling.md)
-- [CGToneMapping.ituRecommended](cgtonemapping/iturecommended.md)
-- [CGToneMapping.none](cgtonemapping/none.md)
-- [CGToneMapping.referenceWhiteBased](cgtonemapping/referencewhitebased.md)
+### Enumeration Cases
+- [CGToneMapping.default](./default.md)
+- [CGToneMapping.imageSpecificLumaScaling](./imagespecificlumascaling.md)
+- [CGToneMapping.ituRecommended](./iturecommended.md)
+- [CGToneMapping.none](./none.md)
+- [CGToneMapping.referenceWhiteBased](./referencewhitebased.md)
 
 
 ---

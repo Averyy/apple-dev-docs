@@ -1,7 +1,8 @@
 # isValidDate(in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the current combination of properties represents a date which exists in the specified calendar.
 
@@ -20,15 +21,19 @@ Returns a Boolean value that indicates whether the current combination of proper
 func isValidDate(in calendar: Calendar) -> Bool
 ```
 
+```objc
+- (BOOL) isValidDateInCalendar:(NSCalendar *) calendar;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the date corresponding to the receiver’s values is valid and exists in the given calendar, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the date corresponding to the receiver’s values is valid and exists in the given calendar, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-If the [`timeZone`](nsdatecomponents/timezone.md) property is set on the receiver, the time zone property value is used.
+If the [`timeZone`](./timezone.md) property is set on the receiver, the time zone property value is used.
 
-This property should not be used for [`NSDateComponents`](nsdatecomponents.md) objects that represent relative quantities of calendar components. To find the the next or previous date that matches a particular set of date components, use the [`NSCalendar`](nscalendar.md) instance method [`nextDate(after:matching:value:options:)`](nscalendar/nextdate(after:matching:value:options:).md) instead.
+This property should not be used for [`NSDateComponents`](../nsdatecomponents.md) objects that represent relative quantities of calendar components. To find the the next or previous date that matches a particular set of date components, use the [`NSCalendar`](../nscalendar.md) instance method [`nextDate(after:matching:value:options:)`](../nscalendar/nextdate%28after,matching,value,options%29.md) instead.
 
 ## Parameters
 
@@ -36,11 +41,12 @@ This property should not be used for [`NSDateComponents`](nsdatecomponents.md) o
 
 ## See Also
 
-- [var isValidDate: Bool](nsdatecomponents/isvaliddate.md)
+### Validating a Date
+- [var isValidDate: Bool](./isvaliddate.md)
   A Boolean value that indicates whether the current combination of properties represents a date which exists in the current calendar.
-- [var date: Date?](nsdatecomponents/date.md)
+- [var date: Date?](./date.md)
   The date calculated from the current components using the stored calendar.
-- [Undefined Components](1430344-undefined-components.md)
+- [Undefined Components](../api-1430344-undefined-components.md)
   Constants that denote that the value of a date component is undefined.
 
 

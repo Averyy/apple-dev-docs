@@ -1,7 +1,8 @@
 # accessoryDidDisconnect(_:)
 
 **Framework**: External Accessory  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the specified accessory was disconnected from the device.
 
@@ -19,11 +20,15 @@ Tells the delegate that the specified accessory was disconnected from the device
 optional func accessoryDidDisconnect(_ accessory: EAAccessory)
 ```
 
+```objc
+- (void) accessoryDidDisconnect:(EAAccessory *) accessory;
+```
+
 #### Discussion
 
-The accessory manager calls this method as a convenience whenever it receives an [`EAAccessoryDidDisconnectNotification`](eaaccessorydiddisconnectnotification.md) notification. You can use this method to remove any references to the specified accessory object and to stop any services currently using the accessory.
+The accessory manager calls this method as a convenience whenever it receives an [`EAAccessoryDidDisconnectNotification`](../eaaccessorydiddisconnectnotification.md) notification. You can use this method to remove any references to the specified accessory object and to stop any services currently using the accessory.
 
-Because this is a convenience method, your delegate does not also need to register as an observer of the [`EAAccessoryDidDisconnectNotification`](eaaccessorydiddisconnectnotification.md) notification. However, if you want your delegate to be notified of newly connected accessories, you should configure it as an observer of the [`EAAccessoryDidConnectNotification`](eaaccessorydidconnectnotification.md) notification.
+Because this is a convenience method, your delegate does not also need to register as an observer of the [`EAAccessoryDidDisconnectNotification`](../eaaccessorydiddisconnectnotification.md) notification. However, if you want your delegate to be notified of newly connected accessories, you should configure it as an observer of the [`EAAccessoryDidConnectNotification`](../eaaccessorydidconnectnotification.md) notification.
 
 ## Parameters
 

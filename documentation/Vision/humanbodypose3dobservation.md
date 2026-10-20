@@ -1,7 +1,8 @@
 # HumanBodyPose3DObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An observation that provides the 3D body points the request recognizes.
 
@@ -22,55 +23,55 @@ struct HumanBodyPose3DObservation
 ## Topics
 
 ### Creating an observation
-- [init(VNHumanBodyPose3DObservation)](humanbodypose3dobservation/init(_:).md)
+- [init(VNHumanBodyPose3DObservation)](./humanbodypose3dobservation/init%28_%29.md)
   Creates a 3D human body pose observation.
 ### Inspecting an observation
-- [enum RequestDescriptor](requestdescriptor.md)
+- [enum RequestDescriptor](./requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let bodyHeight: Measurement<UnitLength>](humanbodypose3dobservation/bodyheight.md)
+- [let bodyHeight: Measurement<UnitLength>](./humanbodypose3dobservation/bodyheight.md)
   The estimated human body height, in meters.
-- [let cameraOriginMatrix: simd_float4x4](humanbodypose3dobservation/cameraoriginmatrix.md)
+- [let cameraOriginMatrix: simd_float4x4](./humanbodypose3dobservation/cameraoriginmatrix.md)
   A transform from the skeleton hip to the camera.
-- [HumanBodyPose3DObservation.EstimationTechnique](humanbodypose3dobservation/estimationtechnique.md)
+- [HumanBodyPose3DObservation.EstimationTechnique](./humanbodypose3dobservation/estimationtechnique.md)
   Constants that identify body height estimation techniques.
-- [let heightEstimationTechnique: HumanBodyPose3DObservation.EstimationTechnique](humanbodypose3dobservation/heightestimationtechnique.md)
+- [let heightEstimationTechnique: HumanBodyPose3DObservation.EstimationTechnique](./humanbodypose3dobservation/heightestimationtechnique.md)
   The technique the framework uses to estimate body height.
 ### Getting the joints
-- [func allJoints(in: HumanBodyPose3DObservation.JointsGroupName?) -> [HumanBodyPose3DObservation.JointName : Joint3D]](humanbodypose3dobservation/alljoints(in:).md)
+- [func allJoints(in: HumanBodyPose3DObservation.JointsGroupName?) -> [HumanBodyPose3DObservation.JointName : Joint3D]](./humanbodypose3dobservation/alljoints%28in%29.md)
   Retrieves a dictionary of all joints in a joint group.
-- [var availableJointsGroupNames: [HumanBodyPose3DObservation.JointsGroupName]](humanbodypose3dobservation/availablejointsgroupnames.md)
+- [var availableJointsGroupNames: [HumanBodyPose3DObservation.JointsGroupName]](./humanbodypose3dobservation/availablejointsgroupnames.md)
   The names of the available joint groupings in the observation.
-- [HumanBodyPose3DObservation.JointsGroupName](humanbodypose3dobservation/jointsgroupname.md)
+- [HumanBodyPose3DObservation.JointsGroupName](./humanbodypose3dobservation/jointsgroupname.md)
   The supported joint group names for the body pose.
-- [func joint(for: HumanBodyPose3DObservation.JointName) -> Joint3D?](humanbodypose3dobservation/joint(for:).md)
+- [func joint(for: HumanBodyPose3DObservation.JointName) -> Joint3D?](./humanbodypose3dobservation/joint%28for%29.md)
   Retrieves a joint for a given joint name.
-- [var availableJointNames: [HumanBodyPose3DObservation.JointName]](humanbodypose3dobservation/availablejointnames.md)
+- [var availableJointNames: [HumanBodyPose3DObservation.JointName]](./humanbodypose3dobservation/availablejointnames.md)
   The names of the available joints in the observation.
-- [HumanBodyPose3DObservation.JointName](humanbodypose3dobservation/jointname.md)
+- [HumanBodyPose3DObservation.JointName](./humanbodypose3dobservation/jointname.md)
   The supported joint names for the body pose.
 ### Getting the joint name
-- [func parentJointName(for: HumanBodyPose3DObservation.JointName) -> HumanBodyPose3DObservation.JointName](humanbodypose3dobservation/parentjointname(for:).md)
+- [func parentJointName(for: HumanBodyPose3DObservation.JointName) -> HumanBodyPose3DObservation.JointName](./humanbodypose3dobservation/parentjointname%28for%29.md)
   Returns the parent joint of the joint name you specify.
 ### Getting the camera position
-- [func cameraRelativePosition(for: HumanBodyPose3DObservation.JointName) -> simd_float4x4](humanbodypose3dobservation/camerarelativeposition(for:).md)
+- [func cameraRelativePosition(for: HumanBodyPose3DObservation.JointName) -> simd_float4x4](./humanbodypose3dobservation/camerarelativeposition%28for%29.md)
   Returns a position relative to the camera for the body joint you specify.
 ### Getting the joint position
-- [func pointInImage(for: HumanBodyPose3DObservation.JointName) -> NormalizedPoint](humanbodypose3dobservation/pointinimage(for:).md)
+- [func pointInImage(for: HumanBodyPose3DObservation.JointName) -> NormalizedPoint](./humanbodypose3dobservation/pointinimage%28for%29.md)
   Returns a 2D point for the joint name you specify, relative to the input image.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

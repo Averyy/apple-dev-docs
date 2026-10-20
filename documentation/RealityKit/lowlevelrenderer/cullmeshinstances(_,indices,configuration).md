@@ -1,7 +1,8 @@
 # cullMeshInstances(_:indices:configuration:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Culls mesh instances against a frustum and returns the surviving indices.
 
@@ -33,13 +34,14 @@ A convenience overload that allocates and returns the surviving indices as an ar
 
 ## See Also
 
-- [static func cullMeshInstances(LowLevelMeshInstanceArray, indices: Span<Int>, outIndices: inout OutputSpan<Int>, configuration: LowLevelRenderer.CullConfiguration)](lowlevelrenderer/cullmeshinstances(_:indices:outindices:configuration:).md)
+### Culling and sorting instances
+- [static func cullMeshInstances(LowLevelMeshInstanceArray, indices: Span<Int>, outIndices: inout OutputSpan<Int>, configuration: LowLevelRenderer.CullConfiguration)](./cullmeshinstances%28_,indices,outindices,configuration%29.md)
   Culls mesh instances against a frustum, writing surviving indices to an output span.
-- [LowLevelRenderer.CullConfiguration](lowlevelrenderer/cullconfiguration.md)
+- [LowLevelRenderer.CullConfiguration](./cullconfiguration.md)
   The configuration for a frustum culling operation.
-- [static func sortMeshInstances(LowLevelMeshInstanceArray, indices: inout MutableSpan<Int>, configuration: LowLevelRenderer.SortConfiguration)](lowlevelrenderer/sortmeshinstances(_:indices:configuration:).md)
+- [static func sortMeshInstances(LowLevelMeshInstanceArray, indices: inout MutableSpan<Int>, configuration: LowLevelRenderer.SortConfiguration)](./sortmeshinstances%28_,indices,configuration%29.md)
   Sorts the given mesh instances by sort category and, for transparent instances, by back-to-front distance from the camera.
-- [LowLevelRenderer.SortConfiguration](lowlevelrenderer/sortconfiguration.md)
+- [LowLevelRenderer.SortConfiguration](./sortconfiguration.md)
   The configuration for a mesh instance sort pass.
 
 

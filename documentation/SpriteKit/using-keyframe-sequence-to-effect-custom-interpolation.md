@@ -1,25 +1,26 @@
 # Using Keyframe Sequence to effect Custom Interpolation
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 See a few examples of what keyframe sequence can do.
 
 #### Overview
 
-The primary use for an [`SKKeyframeSequence`](skkeyframesequence.md) object is to animate properties on particles emitted by an [`SKEmitterNode`](skemitternode.md) object. When a keyframe object is assigned to an appropriate property on the emitter node, particles determine their values by sampling the keyframe sequence. The sequence replaces the normal simulation performed by the emitter node. Only certain properties can be animated using a keyframe sequence. The following table lists the particle emitter properties and the corresponding class for the data that must be stored in the sequence. All value objects stored in a sequence must have the same class.
+The primary use for an [`SKKeyframeSequence`](./skkeyframesequence.md) object is to animate properties on particles emitted by an [`SKEmitterNode`](./skemitternode.md) object. When a keyframe object is assigned to an appropriate property on the emitter node, particles determine their values by sampling the keyframe sequence. The sequence replaces the normal simulation performed by the emitter node. Only certain properties can be animated using a keyframe sequence. The following table lists the particle emitter properties and the corresponding class for the data that must be stored in the sequence. All value objects stored in a sequence must have the same class.
 
-| [`SKEmitterNode`](skemitternode.md) property | Value class |
+| [`SKEmitterNode`](./skemitternode.md) property | Value class |
 | --- | --- |
-| [`particleColorSequence`](skemitternode/particlecolorsequence.md) | `SKColor` |
-| [`particleColorBlendFactorSequence`](skemitternode/particlecolorblendfactorsequence.md) | `NSNumber` containing a floating point value. |
-| [`particleScaleSequence`](skemitternode/particlescalesequence.md) | `NSNumber` containing a floating point value. |
-| [`particleAlphaSequence`](skemitternode/particlealphasequence.md) | `NSNumber` containing a floating point value. |
+| [`particleColorSequence`](./skemitternode/particlecolorsequence.md) | `SKColor` |
+| [`particleColorBlendFactorSequence`](./skemitternode/particlecolorblendfactorsequence.md) | `NSNumber` containing a floating point value. |
+| [`particleScaleSequence`](./skemitternode/particlescalesequence.md) | `NSNumber` containing a floating point value. |
+| [`particleAlphaSequence`](./skemitternode/particlealphasequence.md) | `NSNumber` containing a floating point value. |
 
-The time values stored in the sequence are specified in a normalized range of `0.0` to `1.0`, where `0` is the time when the particle was created and `1.0` is the time when the particle dies. You can provide keyframe values for the entire lifetime of the particle or for a subset of the particle’s lifetime. If you choose to cover only a subset of the particle’s lifetime, the [`repeatMode`](skkeyframesequence/repeatmode.md) property determines how samples are determined for time values that lie outside the specified range.
+The time values stored in the sequence are specified in a normalized range of `0.0` to `1.0`, where `0` is the time when the particle was created and `1.0` is the time when the particle dies. You can provide keyframe values for the entire lifetime of the particle or for a subset of the particle’s lifetime. If you choose to cover only a subset of the particle’s lifetime, the [`repeatMode`](./skkeyframesequence/repeatmode.md) property determines how samples are determined for time values that lie outside the specified range.
 
-The [`interpolationMode`](skkeyframesequence/interpolationmode.md) property determines how samples between the keyframe values are calculated.
+The [`interpolationMode`](./skkeyframesequence/interpolationmode.md) property determines how samples between the keyframe values are calculated.
 
-[`SKKeyframeSequence`](skkeyframesequence.md) isn’t limited to working only with [`SKEmitterNode`](skemitternode.md), you can use the [`sample(atTime:)`](skkeyframesequence/sample(attime:).md) method to generate values interpolated between keyframes for other applications. The following code shows how to create a sequence containing four keyframes and how to iterate over the interpolated values:
+[`SKKeyframeSequence`](./skkeyframesequence.md) isn’t limited to working only with [`SKEmitterNode`](./skemitternode.md), you can use the [`sample(atTime:)`](./skkeyframesequence/sample%28attime%29.md) method to generate values interpolated between keyframes for other applications. The following code shows how to create a sequence containing four keyframes and how to iterate over the interpolated values:
 
 Listing 1. Creating interpolated values
 
@@ -32,11 +33,11 @@ stride(from: 0, to: 1, by: 0.025).forEach {
 }
 ```
 
-Using [`SKInterpolationMode.spline`](skinterpolationmode/spline.md) interpolation, the code above creates the following graph in a playground:
+Using [`SKInterpolationMode.spline`](./skinterpolationmode/spline.md) interpolation, the code above creates the following graph in a playground:
 
-![Playground graph generated by SKKeyframeSequence](/images/com.apple.spritekit/media-2982413@2x.png)
+![Playground graph generated by SKKeyframeSequence](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-2982413@2x.png)
 
-[`SKKeyframeSequence`](skkeyframesequence.md) can also interpolate colors. The following code shows how to initialize a sequence with four colors and sample the interpolated values:
+[`SKKeyframeSequence`](./skkeyframesequence.md) can also interpolate colors. The following code shows how to initialize a sequence with four colors and sample the interpolated values:
 
 Listing 2. Creating interpolated colors
 
@@ -54,15 +55,16 @@ stride(from: 0, to: 1, by: 0.001).forEach {
 
 The samples for each color generated by the code above can be used to create a gradient:
 
-![Gradient generated by keyframe sequence interpolated colors](/images/com.apple.spritekit/media-2982418@2x.png)
+![Gradient generated by keyframe sequence interpolated colors](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-2982418@2x.png)
 
 ## See Also
 
-- [init(keyframeValues: [Any], times: [NSNumber])](skkeyframesequence/init(keyframevalues:times:).md)
+### First Steps
+- [init(keyframeValues: [Any], times: [NSNumber])](./skkeyframesequence/init%28keyframevalues,times%29.md)
   Initializes a keyframe sequence with an initial set of values and times.
-- [convenience init(capacity: Int)](skkeyframesequence/init(capacity:).md)
+- [convenience init(capacity: Int)](./skkeyframesequence/init%28capacity%29.md)
   Initializes a new keyframe sequence.
-- [init?(coder: NSCoder)](skkeyframesequence/init(coder:).md)
+- [init?(coder: NSCoder)](./skkeyframesequence/init%28coder%29.md)
 
 
 ---

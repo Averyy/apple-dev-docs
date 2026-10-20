@@ -1,7 +1,8 @@
 # calculatePerimeter(_:for:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calculates the perimeter of a closed contour.
 
@@ -19,6 +20,10 @@ Calculates the perimeter of a closed contour.
 class func calculatePerimeter(_ perimeter: UnsafeMutablePointer<Double>, for contour: VNContour) throws
 ```
 
+```objc
++ (BOOL) calculatePerimeter:(double *) perimeter forContour:(VNContour *) contour error:(NSError **) error;
+```
+
 ## Parameters
 
 - `perimeter`: The output parameter to populate with the calculated contour perimeter.
@@ -26,7 +31,8 @@ class func calculatePerimeter(_ perimeter: UnsafeMutablePointer<Double>, for con
 
 ## See Also
 
-- [class func calculateArea(UnsafeMutablePointer<Double>, for: VNContour, orientedArea: Bool) throws](vngeometryutils/calculatearea(_:for:orientedarea:).md)
+### Calculating Area and Perimeter
+- [class func calculateArea(UnsafeMutablePointer<Double>, for: VNContour, orientedArea: Bool) throws](./calculatearea%28_,for,orientedarea%29.md)
   Calculates the area for the specified contour.
 
 

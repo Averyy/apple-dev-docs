@@ -1,7 +1,8 @@
 # PaymentCardReaderStore.StoreError.storeAndForwardDeletionTokenInvalid
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The token provided is invalid, try again.
 

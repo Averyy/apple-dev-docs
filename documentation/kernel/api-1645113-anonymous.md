@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOFBLinkPreEmphasisLevel0](1645113-anonymous/kiofblinkpreemphasislevel0.md)
-- [kIOFBLinkPreEmphasisLevel1](1645113-anonymous/kiofblinkpreemphasislevel1.md)
-- [kIOFBLinkPreEmphasisLevel2](1645113-anonymous/kiofblinkpreemphasislevel2.md)
-- [kIOFBLinkPreEmphasisLevel3](1645113-anonymous/kiofblinkpreemphasislevel3.md)
+- [kIOFBLinkPreEmphasisLevel0](./api-1645113-anonymous/kiofblinkpreemphasislevel0.md)
+- [kIOFBLinkPreEmphasisLevel1](./api-1645113-anonymous/kiofblinkpreemphasislevel1.md)
+- [kIOFBLinkPreEmphasisLevel2](./api-1645113-anonymous/kiofblinkpreemphasislevel2.md)
+- [kIOFBLinkPreEmphasisLevel3](./api-1645113-anonymous/kiofblinkpreemphasislevel3.md)
 
 
 ---

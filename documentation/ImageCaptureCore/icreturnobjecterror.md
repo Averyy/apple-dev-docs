@@ -1,16 +1,17 @@
 # ICReturnObjectError
 
 **Framework**: ImageCaptureCore  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object error returned from ImageCaptureCore.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -21,45 +22,46 @@ struct ICReturnObjectError
 ## Topics
 
 ### Error Domain
-- [let ICErrorDomain: String](icerrordomain.md)
+- [let ICErrorDomain: String](./icerrordomain.md)
   An error returned by the ImageCaptureCore framework.
 ### Error Codes
-- [static var codeObjectDoesNotExist: ICReturnObjectError.Code](icreturnobjecterror/codeobjectdoesnotexist.md)
+- [static var codeObjectDoesNotExist: ICReturnObjectError.Code](./icreturnobjecterror/codeobjectdoesnotexist.md)
   The object does not exist.
-- [static var codeObjectDataOffsetInvalid: ICReturnObjectError.Code](icreturnobjecterror/codeobjectdataoffsetinvalid.md)
+- [static var codeObjectDataOffsetInvalid: ICReturnObjectError.Code](./icreturnobjecterror/codeobjectdataoffsetinvalid.md)
   The object data offset is invalid.
-- [static var codeObjectCouldNotBeRead: ICReturnObjectError.Code](icreturnobjecterror/codeobjectcouldnotberead.md)
+- [static var codeObjectCouldNotBeRead: ICReturnObjectError.Code](./icreturnobjecterror/codeobjectcouldnotberead.md)
   The object could not be read.
-- [static var codeObjectDataEmpty: ICReturnObjectError.Code](icreturnobjecterror/codeobjectdataempty.md)
+- [static var codeObjectDataEmpty: ICReturnObjectError.Code](./icreturnobjecterror/codeobjectdataempty.md)
   The object data is empty.
-- [ICReturnObjectError.Code](icreturnobjecterror/code.md)
+- [ICReturnObjectError.Code](./icreturnobjecterror/code.md)
 ### Type Properties
-- [static var codeObjectDataRequestTooLarge: ICReturnObjectError.Code](icreturnobjecterror/codeobjectdatarequesttoolarge.md)
-- [static var errorDomain: String](icreturnobjecterror/errordomain.md)
+- [static var codeObjectDataRequestTooLarge: ICReturnObjectError.Code](./icreturnobjecterror/codeobjectdatarequesttoolarge.md)
+- [static var errorDomain: String](./icreturnobjecterror/errordomain.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ICReturn](icreturn.md)
-- [struct ICLegacyReturn](iclegacyreturn.md)
-- [struct ICReturnConnectionError](icreturnconnectionerror.md)
+### Errors
+- [struct ICReturn](./icreturn.md)
+- [struct ICLegacyReturn](./iclegacyreturn.md)
+- [struct ICReturnConnectionError](./icreturnconnectionerror.md)
   A connection error returned from ImageCaptureCore.
-- [struct ICReturnDownloadError](icreturndownloaderror.md)
+- [struct ICReturnDownloadError](./icreturndownloaderror.md)
   A download error returned from ImageCaptureCore.
-- [struct ICReturnMetadataError](icreturnmetadataerror.md)
+- [struct ICReturnMetadataError](./icreturnmetadataerror.md)
   A metadata error returned from ImageCaptureCore.
-- [struct ICReturnPTPDeviceError](icreturnptpdeviceerror.md)
+- [struct ICReturnPTPDeviceError](./icreturnptpdeviceerror.md)
   A PTP device error returned from ImageCaptureCore.
-- [struct ICReturnThumbnailError](icreturnthumbnailerror.md)
+- [struct ICReturnThumbnailError](./icreturnthumbnailerror.md)
   A thumbnail error returned from ImageCaptureCore.
 
 

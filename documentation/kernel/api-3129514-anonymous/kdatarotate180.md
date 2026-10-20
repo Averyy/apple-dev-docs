@@ -1,14 +1,15 @@
 # kDataRotate180
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14.4+
 
 ## Declaration
 
-```swift
+```c
 kDataRotate180 = 2
 ```
 

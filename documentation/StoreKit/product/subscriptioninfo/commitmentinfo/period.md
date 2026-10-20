@@ -1,7 +1,8 @@
 # period
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.4+
@@ -20,8 +21,9 @@ let period: SubscriptionPeriod
 
 ## See Also
 
-- [let displayPrice: String](product/subscriptioninfo/commitmentinfo/displayprice.md)
-- [let price: Decimal](product/subscriptioninfo/commitmentinfo/price.md)
+### Instance Properties - generated
+- [let displayPrice: String](./displayprice.md)
+- [let price: Decimal](./price.md)
 
 
 ---

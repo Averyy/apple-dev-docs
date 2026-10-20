@@ -1,7 +1,8 @@
 # application(_:configurationForConnecting:options:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the configuration data for UIKit to use when creating a new scene.
 
@@ -18,11 +19,15 @@ Retrieves the configuration data for UIKit to use when creating a new scene.
 optional func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration
 ```
 
+```objc
+- (UISceneConfiguration *) application:(UIApplication *) application configurationForConnectingSceneSession:(UISceneSession *) connectingSceneSession options:(UISceneConnectionOptions *) options;
+```
+
 ## Mentions
 
-- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
-- [Specifying the scenes your app supports](specifying-the-scenes-your-app-supports.md)
+- [Transitioning to the UIKit scene-based life cycle](../transitioning-to-the-uikit-scene-based-life-cycle.md)
+- [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
+- [Specifying the scenes your app supports](../specifying-the-scenes-your-app-supports.md)
 
 #### Return Value
 
@@ -30,7 +35,7 @@ The configuration object containing the information needed to create the scene.
 
 #### Discussion
 
-Implement this method if you don’t include scene-configuration data in your app’s `Info.plist` file, or if you want to alter the scene configuration data dynamically. UIKit calls this method shortly before creating a new scene. In your implementation, return a [`UISceneConfiguration`](uisceneconfiguration.md) object with the scene details, including the type of scene to create, the delegate object you use to manage the scene, and the storyboard containing the initial view controller to display.
+Implement this method if you don’t include scene-configuration data in your app’s `Info.plist` file, or if you want to alter the scene configuration data dynamically. UIKit calls this method shortly before creating a new scene. In your implementation, return a [`UISceneConfiguration`](../uisceneconfiguration.md) object with the scene details, including the type of scene to create, the delegate object you use to manage the scene, and the storyboard containing the initial view controller to display.
 
 If you don’t implement this method, you must provide scene-configuration data in your app’s `Info.plist` file.
 
@@ -42,7 +47,8 @@ If you don’t implement this method, you must provide scene-configuration data 
 
 ## See Also
 
-- [func application(UIApplication, didDiscardSceneSessions: Set<UISceneSession>)](uiapplicationdelegate/application(_:diddiscardscenesessions:).md)
+### Configuring and discarding scenes
+- [func application(UIApplication, didDiscardSceneSessions: Set<UISceneSession>)](./application%28_,diddiscardscenesessions%29.md)
   Tells the delegate that the user closed one or more of the app’s scenes from the app switcher.
 
 

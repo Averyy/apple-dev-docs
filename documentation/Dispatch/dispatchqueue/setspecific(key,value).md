@@ -1,18 +1,19 @@
 # setSpecific(key:value:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the key/value data for the specified dispatch queue.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -28,11 +29,12 @@ func setSpecific<T>(key: DispatchSpecificKey<T>, value: T?) where T : Sendable
 
 ## See Also
 
-- [func getSpecific<T>(key: DispatchSpecificKey<T>) -> T?](dispatchqueue/getspecific(key:)-swift.method.md)
+### Getting and Setting Contextual Data
+- [func getSpecific<T>(key: DispatchSpecificKey<T>) -> T?](./getspecific%28key%29-swift.method.md)
   Returns the value for the key associated with this dispatch queue.
-- [class func getSpecific<T>(key: DispatchSpecificKey<T>) -> T?](dispatchqueue/getspecific(key:)-swift.type.method.md)
+- [class func getSpecific<T>(key: DispatchSpecificKey<T>) -> T?](./getspecific%28key%29-swift.type.method.md)
   Returns the value for the key associated with the current execution context.
-- [class DispatchSpecificKey](dispatchspecifickey.md)
+- [class DispatchSpecificKey](../dispatchspecifickey.md)
   A key associated with a specific contextual value on a dispatch queue.
 
 

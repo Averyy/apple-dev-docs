@@ -1,7 +1,8 @@
 # ColorResource
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A color resource.
 
@@ -23,20 +24,21 @@ struct ColorResource
 ## Topics
 
 ### Creating a color resource
-- [init(name: String, bundle: Bundle)](colorresource/init(name:bundle:).md)
+- [init(name: String, bundle: Bundle)](./colorresource/init%28name,bundle%29.md)
   Creates a color from a resource with the specified name in the given bundle.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ImageResource](imageresource.md)
+### Resource definition
+- [struct ImageResource](./imageresource.md)
   An image resource.
 
 

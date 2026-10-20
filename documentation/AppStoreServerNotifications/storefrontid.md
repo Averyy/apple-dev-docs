@@ -1,7 +1,8 @@
 # storefrontId
 
 **Framework**: App Store Server Notifications  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 An Apple-defined value that uniquely identifies an App Store storefront.
 
@@ -10,21 +11,22 @@ An Apple-defined value that uniquely identifies an App Store storefront.
 
 ## Declaration
 
-```swift
+```
 string storefrontId
 ```
 
 ## Mentions
 
-- [App Store Server Notifications changelog](app-store-server-notifications-changelog.md)
+- [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
 #### Discussion
 
-This value is the same as the [`id`](https://developer.apple.com/documentation/storekit/storefront/id) value in StoreKit.
+This value is the same as the [`id`](../StoreKit/storefront/id.md) value in StoreKit.
 
 ## See Also
 
-- [type storefront](storefront.md)
+### Storefront information
+- [type storefront](./storefront.md)
   The three-letter code that represents the country or region associated with the App Store storefront for the purchase.
 
 

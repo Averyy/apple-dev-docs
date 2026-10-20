@@ -1,7 +1,8 @@
 # type
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file’s type, from the mode’s file-type bits.
 

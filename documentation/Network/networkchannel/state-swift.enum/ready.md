@@ -1,7 +1,8 @@
 # NetworkChannel.State.ready
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Ready connections can send and receive data
 

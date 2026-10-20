@@ -1,7 +1,8 @@
 # init(asset:)
 
 **Framework**: Music Understanding  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a music understanding session from an audio asset.
 
@@ -24,7 +25,7 @@ convenience init(asset: any AVAsset & Sendable) async throws
 
 Use this initializer when your audio source is an `AVAsset` rather than a streaming sequence of audio buffers.
 
-> **Note**:  If the asset is unreadable, does not contain valid audio tracks, or cannot be processed for analysis.
+> **Throws**:  If the asset is unreadable, does not contain valid audio tracks, or cannot be processed for analysis.
 
 > **Note**:  This initializer doesn’t support HTTP livestreams (HLS). The asset must represent locally available media or a complete file.
 
@@ -34,7 +35,8 @@ Use this initializer when your audio source is an `AVAsset` rather than a stream
 
 ## See Also
 
-- [convenience init<Provider>(audioProvider: Provider)](musicunderstandingsession/init(audioprovider:).md)
+### Creating a session
+- [convenience init<Provider>(audioProvider: Provider)](./init%28audioprovider%29.md)
   Creates a music understanding session that accepts streaming audio buffers.
 
 

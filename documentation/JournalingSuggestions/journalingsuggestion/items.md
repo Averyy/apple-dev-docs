@@ -1,7 +1,8 @@
 # items
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The individual items that compose the suggestion’s content.
 
@@ -16,13 +17,14 @@ let items: [JournalingSuggestion.ItemContent]
 
 ## Mentions
 
-- [Presenting the suggestions picker and processing a selection](presenting-the-suggestions-picker-and-processing-a-selection.md)
+- [Presenting the suggestions picker and processing a selection](../presenting-the-suggestions-picker-and-processing-a-selection.md)
 
 ## See Also
 
-- [JournalingSuggestion.ItemContent](journalingsuggestion/itemcontent.md)
+### Accessing suggestion data by type
+- [JournalingSuggestion.ItemContent](./itemcontent.md)
   A container for the information about a specific suggestion.
-- [func content<Content>(forType: Content.Type) async -> [Content]](journalingsuggestion/content(fortype:).md)
+- [func content<Content>(forType: Content.Type) async -> [Content]](./content%28fortype%29.md)
   Searches a suggestion’s items for information of the given type.
 
 

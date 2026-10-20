@@ -1,14 +1,15 @@
 # InvalidateKernel_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 12.1+
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t InvalidateKernel_Invoke(const IORPC rpc, OSMetaClassBase *target, InvalidateKernel_Handler func);
 ```
 

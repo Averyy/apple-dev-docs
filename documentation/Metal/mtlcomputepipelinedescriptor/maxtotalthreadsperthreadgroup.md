@@ -1,7 +1,8 @@
 # maxTotalThreadsPerThreadgroup
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that limits the number of threads you can dispatch in a threadgroup for the compute function.
 
@@ -19,29 +20,34 @@ A property that limits the number of threads you can dispatch in a threadgroup f
 var maxTotalThreadsPerThreadgroup: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger maxTotalThreadsPerThreadgroup;
+```
+
 #### Discussion
 
 Metal automatically selects a maximum threadgroup size when you set this value to `0`.
 
-Your shader can also configure the maximum number of threads per threadgroup with the `[[max_total_threads_per_threadgroup]]` attribute. See the [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) for more information.
+Your shader can also configure the maximum number of threads per threadgroup with the `[[max_total_threads_per_threadgroup]]` attribute. See the [Metal Shading Language Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) for more information.
 
 > ❗ **Important**:  Set this property to the same value as your shader’s `[[max_total_threads_per_threadgroup]]` attribute when setting both values; different values can create a runtime error.
 
 By default, this property’s value is `0`, which instructs Metal to calculate the maximum number of threads per threadgroup based on the device’s capabilities and the compute shader’s memory usage.
 
-The [`maxTotalThreadsPerThreadgroup`](mtlcomputepipelinestate/maxtotalthreadsperthreadgroup.md) property of an [`MTLComputePipelineState`](mtlcomputepipelinestate.md) instance reports the maximum number of threads you can dispatch in a threadgroup for that specific compute shader.
+The [`maxTotalThreadsPerThreadgroup`](../mtlcomputepipelinestate/maxtotalthreadsperthreadgroup.md) property of an [`MTLComputePipelineState`](../mtlcomputepipelinestate.md) instance reports the maximum number of threads you can dispatch in a threadgroup for that specific compute shader.
 
 Metal may return an error if this value exceeds the available resources for the device, or Metal may lower the thread limit when creating the compute pipeline state, which can reduce runtime performance.
 
-> 💡 **Tip**: Verify whether setting this property improves runtime performance by profiling your app. For more information on performance profiling, see [`Analyzing the performance of your Metal app`](https://developer.apple.com/documentation/xcode/analyzing-the-performance-of-your-metal-app).
+> 💡 **Tip**: Verify whether setting this property improves runtime performance by profiling your app. For more information on performance profiling, see [Analyzing the performance of your Metal app](../../Xcode/analyzing-the-performance-of-your-metal-app.md).
 
 ## See Also
 
-- [var computeFunction: (any MTLFunction)?](mtlcomputepipelinedescriptor/computefunction.md)
+### Configuring the compute execution environment
+- [var computeFunction: (any MTLFunction)?](./computefunction.md)
   The compute kernel the pipeline calls.
-- [var threadGroupSizeIsMultipleOfThreadExecutionWidth: Bool](mtlcomputepipelinedescriptor/threadgroupsizeismultipleofthreadexecutionwidth.md)
+- [var threadGroupSizeIsMultipleOfThreadExecutionWidth: Bool](./threadgroupsizeismultipleofthreadexecutionwidth.md)
   A Boolean value that indicates whether the threadgroup size is always a multiple of the thread execution width.
-- [var maxCallStackDepth: Int](mtlcomputepipelinedescriptor/maxcallstackdepth.md)
+- [var maxCallStackDepth: Int](./maxcallstackdepth.md)
   The maximum call stack depth for indirect function calls in compute shaders.
 
 

@@ -1,7 +1,8 @@
 # TrackRectangleRequest.TrackingLevel
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -21,27 +22,28 @@ enum TrackingLevel
 ## Topics
 
 ### Getting the tracking levels
-- [TrackRectangleRequest.TrackingLevel.accurate](trackrectanglerequest/trackinglevel-swift.enum/accurate.md)
-- [TrackRectangleRequest.TrackingLevel.fast](trackrectanglerequest/trackinglevel-swift.enum/fast.md)
+- [TrackRectangleRequest.TrackingLevel.accurate](./trackinglevel-swift.enum/accurate.md)
+- [TrackRectangleRequest.TrackingLevel.fast](./trackinglevel-swift.enum/fast.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let inputObservation: any QuadrilateralProviding & VisionObservation](trackrectanglerequest/inputobservation.md)
+### Configuring a request
+- [let inputObservation: any QuadrilateralProviding & VisionObservation](./inputobservation.md)
   The object to track.
-- [protocol QuadrilateralProviding](quadrilateralproviding.md)
+- [protocol QuadrilateralProviding](../quadrilateralproviding.md)
   A protocol for objects that have a bounding quadrilateral.
-- [var trackingLevel: TrackRectangleRequest.TrackingLevel](trackrectanglerequest/trackinglevel-swift.property.md)
+- [var trackingLevel: TrackRectangleRequest.TrackingLevel](./trackinglevel-swift.property.md)
   The tracking quality preference.
 
 

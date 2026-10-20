@@ -1,7 +1,8 @@
 # UILaunchStoryboardDefinitions
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 An array of dictionaries mapping launch storyboard identifiers to storyboards.
 
@@ -9,25 +10,27 @@ An array of dictionaries mapping launch storyboard identifiers to storyboards.
 - iOS 9.0+
 - iPadOS 9.0+
 
+## Details
 
-
-**Type**: dictionary 
+- **Name**: `UILaunchStoryboardDefinitions`
+- **Type**: array of dictionary 
 
 #### Discussion
 
-Each dictionary has [`UILaunchStoryboardFile`](information-property-list/uilaunchstoryboards/uilaunchstoryboarddefinitions/uilaunchstoryboardfile.md) and [`UILaunchStoryboardIdentifier`](information-property-list/uilaunchstoryboards/uilaunchstoryboarddefinitions/uilaunchstoryboardidentifier.md) keys, associating a storyboard file or xib with an identifier.
+Each dictionary has [`UILaunchStoryboardFile`](./uilaunchstoryboarddefinitions/uilaunchstoryboardfile.md) and [`UILaunchStoryboardIdentifier`](./uilaunchstoryboarddefinitions/uilaunchstoryboardidentifier.md) keys, associating a storyboard file or xib with an identifier.
 
 ## Topics
 
 ### Specifying Storyboard Identifiers
-- [UILaunchStoryboardIdentifier](information-property-list/uilaunchstoryboards/uilaunchstoryboarddefinitions/uilaunchstoryboardidentifier.md)
+- [UILaunchStoryboardIdentifier](./uilaunchstoryboarddefinitions/uilaunchstoryboardidentifier.md)
   A user-specified identifier for a launch storyboard.
-- [UILaunchStoryboardFile](information-property-list/uilaunchstoryboards/uilaunchstoryboarddefinitions/uilaunchstoryboardfile.md)
+- [UILaunchStoryboardFile](./uilaunchstoryboarddefinitions/uilaunchstoryboardfile.md)
   A launch storyboard file or xib.
 
 ## See Also
 
-- [UIDefaultLaunchStoryboard](information-property-list/uilaunchstoryboards/uidefaultlaunchstoryboard.md)
+### Specifying Launch Storyboards
+- [UIDefaultLaunchStoryboard](./uidefaultlaunchstoryboard.md)
   The identifier of the default launch storyboard to use.
 
 

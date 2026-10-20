@@ -1,7 +1,8 @@
 # WKWebExtension.Error.Code.resourceNotFound
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that a specified resource was not found on disk.
 
@@ -16,6 +17,10 @@ Indicates that a specified resource was not found on disk.
 
 ```swift
 case resourceNotFound
+```
+
+```c
+WKWebExtensionErrorResourceNotFound
 ```
 
 

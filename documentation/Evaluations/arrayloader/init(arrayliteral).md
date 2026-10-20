@@ -1,7 +1,8 @@
 # init(arrayLiteral:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a loader from an array literal of samples.
 

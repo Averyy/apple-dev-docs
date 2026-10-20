@@ -1,7 +1,8 @@
 # requestOverviewScan()
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts an overview scan on the selected functional unit.
 
@@ -14,27 +15,32 @@ Starts an overview scan on the selected functional unit.
 func requestOverviewScan()
 ```
 
+```objc
+- (void) requestOverviewScan;
+```
+
 #### Discussion
 
-Once the request to start an overview scan has completed, [`scannerDevice(_:didCompleteOverviewScanWithError:)`](icscannerdevicedelegate/scannerdevice(_:didcompleteoverviewscanwitherror:).md) is called on the delegate.
+Once the request to start an overview scan has completed, [`scannerDevice(_:didCompleteOverviewScanWithError:)`](../icscannerdevicedelegate/scannerdevice%28_,didcompleteoverviewscanwitherror%29.md) is called on the delegate.
 
 ## See Also
 
-- [func requestOpenSession(withCredentials: String, password: String)](icscannerdevice/requestopensession(withcredentials:password:).md)
+### Performing a Scan
+- [func requestOpenSession(withCredentials: String, password: String)](./requestopensession%28withcredentials,password%29.md)
   Opens a session on the protected device with the authorized username and passcode.
-- [func requestScan()](icscannerdevice/requestscan.md)
+- [func requestScan()](./requestscan%28%29.md)
   Starts a scan on the selected functional unit.
-- [func cancelScan()](icscannerdevice/cancelscan.md)
+- [func cancelScan()](./cancelscan%28%29.md)
   Cancels the current scan.
-- [var documentName: String](icscannerdevice/documentname.md)
+- [var documentName: String](./documentname.md)
   The document’s name.
-- [var documentUTI: String](icscannerdevice/documentuti.md)
+- [var documentUTI: String](./documentuti.md)
   The document’s uniform type identifier.
-- [var downloadsDirectory: URL](icscannerdevice/downloadsdirectory.md)
+- [var downloadsDirectory: URL](./downloadsdirectory.md)
   The downloads directory.
-- [var transferMode: ICScannerTransferMode](icscannerdevice/transfermode.md)
+- [var transferMode: ICScannerTransferMode](./transfermode.md)
   The transfer mode for the scanned document.
-- [var maxMemoryBandSize: UInt32](icscannerdevice/maxmemorybandsize.md)
+- [var maxMemoryBandSize: UInt32](./maxmemorybandsize.md)
   The total maximum band size requested when performing a memory-based transfer.
 
 

@@ -1,7 +1,8 @@
 # WKGestureRecognizerState.ended
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - watchOS 3.0+
@@ -10,6 +11,10 @@
 
 ```swift
 case ended
+```
+
+```c
+WKGestureRecognizerStateEnded
 ```
 
 

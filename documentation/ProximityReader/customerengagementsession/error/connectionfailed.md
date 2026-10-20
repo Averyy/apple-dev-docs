@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Error.connectionFailed
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error occurred while connecting to the customer.
 

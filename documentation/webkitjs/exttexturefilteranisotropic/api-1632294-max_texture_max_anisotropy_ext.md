@@ -9,13 +9,14 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned long MAX_TEXTURE_MAX_ANISOTROPY_EXT;
 ```
 
 ## See Also
 
-- [TEXTURE_MAX_ANISOTROPY_EXT](exttexturefilteranisotropic/1633682-texture_max_anisotropy_ext.md)
+### Miscellaneous
+- [TEXTURE_MAX_ANISOTROPY_EXT](./api-1633682-texture_max_anisotropy_ext.md)
 
 
 ---

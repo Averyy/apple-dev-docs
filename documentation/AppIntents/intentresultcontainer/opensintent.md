@@ -1,16 +1,17 @@
 # opensIntent
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
+- iOS 16.0+ - Deprecated in 18.2
+- iPadOS 16.0+ - Deprecated in 18.2
+- Mac Catalyst 16.0+ - Deprecated in 18.2
 - macOS 13.0+
-- tvOS 16.0+
-- visionOS ?+
-- watchOS 9.0+
+- tvOS 16.0+ - Deprecated in 18.2
+- visionOS - Deprecated in 2.2
+- watchOS 9.0+ - Deprecated in 11.2
 
 ## Declaration
 

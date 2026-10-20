@@ -1,7 +1,8 @@
 # init(items:header:sectionIndexTitle:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 12.0+
@@ -16,7 +17,8 @@ convenience init(items: [CPListItem], header: String?, sectionIndexTitle: String
 
 ## See Also
 
-- [convenience init(items: [CPListItem])](cplistsection/init(items:)-32d0q.md)
+### Initializers
+- [convenience init(items: [CPListItem])](./init%28items%29-32d0q.md)
 
 
 ---

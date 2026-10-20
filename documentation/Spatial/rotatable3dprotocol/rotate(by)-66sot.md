@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Rotates the entity rotated by the specified quaternion around the origin.
@@ -24,6 +25,14 @@ mutating func rotate(by quaternion: Self.Quaternion)
 ## Parameters
 
 - `quaternion`: The quaternion that defines the rotation.
+
+## Default Implementations
+
+### Rotatable3DProtocol Implementations
+- [func rotate(by: Self.Quaternion)](./rotate%28by%29-744m4.md)
+  Rotates the entity by the specified quaternion around the origin.
+- [func rotate(by: Self.Rotation)](./rotate%28by%29-86z9d.md)
+  Rotates the entity by the specified rotation around the origin.
 
 
 ---

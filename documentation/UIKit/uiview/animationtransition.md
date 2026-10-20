@@ -1,16 +1,17 @@
 # UIView.AnimationTransition
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Animation transition options for use in an animation block object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,55 +19,60 @@ Animation transition options for use in an animation block object.
 enum AnimationTransition
 ```
 
+```c
+enum UIViewAnimationTransition : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIView.AnimationTransition.none](uiview/animationtransition/none.md)
+- [UIView.AnimationTransition.none](./animationtransition/none.md)
   The option for indicating that no transition is specified.
-- [UIView.AnimationTransition.flipFromLeft](uiview/animationtransition/flipfromleft.md)
+- [UIView.AnimationTransition.flipFromLeft](./animationtransition/flipfromleft.md)
   A transition that flips a view around a vertical axis from left to right. The left side of the view moves towards the front and right side towards the back.
-- [UIView.AnimationTransition.flipFromRight](uiview/animationtransition/flipfromright.md)
+- [UIView.AnimationTransition.flipFromRight](./animationtransition/flipfromright.md)
   A transition that flips a view around a vertical axis from right to left. The right side of the view moves towards the front and left side towards the back.
-- [UIView.AnimationTransition.curlUp](uiview/animationtransition/curlup.md)
+- [UIView.AnimationTransition.curlUp](./animationtransition/curlup.md)
   A transition that curls a view up from the bottom.
-- [UIView.AnimationTransition.curlDown](uiview/animationtransition/curldown.md)
+- [UIView.AnimationTransition.curlDown](./animationtransition/curldown.md)
   A transition that curls a view down from the top.
 ### Initializers
-- [init?(rawValue: Int)](uiview/animationtransition/init(rawvalue:).md)
+- [init?(rawValue: Int)](./animationtransition/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UIView.AnimationCurve](uiview/animationcurve.md)
+### Constants
+- [UIView.AnimationCurve](./animationcurve.md)
   Specifies the supported animation curves.
-- [UIView.AnimationOptions](uiview/animationoptions.md)
+- [UIView.AnimationOptions](./animationoptions.md)
   Options for animating views using block objects.
-- [UIView.SystemAnimation](uiview/systemanimation.md)
+- [UIView.SystemAnimation](./systemanimation.md)
   Option to remove the views from the hierarchy when animation is complete.
-- [UIView.KeyframeAnimationOptions](uiview/keyframeanimationoptions.md)
+- [UIView.KeyframeAnimationOptions](./keyframeanimationoptions.md)
   Options for configuring keyframe-based animations.
-- [NSLayoutConstraint.Axis](nslayoutconstraint/axis.md)
+- [NSLayoutConstraint.Axis](../nslayoutconstraint/axis.md)
   Keys that specify a horizontal or vertical layout constraint between objects.
-- [UIView.TintAdjustmentMode](uiview/tintadjustmentmode-swift.enum.md)
+- [UIView.TintAdjustmentMode](./tintadjustmentmode-swift.enum.md)
   The tint adjustment mode for the view.
-- [class let layoutFittingCompressedSize: CGSize](uiview/layoutfittingcompressedsize.md)
+- [class let layoutFittingCompressedSize: CGSize](./layoutfittingcompressedsize.md)
   The option to use the smallest possible size.
-- [class let layoutFittingExpandedSize: CGSize](uiview/layoutfittingexpandedsize.md)
+- [class let layoutFittingExpandedSize: CGSize](./layoutfittingexpandedsize.md)
   The option to use the largest possible size.
-- [class let noIntrinsicMetric: CGFloat](uiview/nointrinsicmetric.md)
+- [class let noIntrinsicMetric: CGFloat](./nointrinsicmetric.md)
   The absence of an intrinsic metric for a given numeric view property.
-- [UIView.AutoresizingMask](uiview/autoresizingmask-swift.struct.md)
+- [UIView.AutoresizingMask](./autoresizingmask-swift.struct.md)
   Options for automatic view resizing.
-- [enum UISemanticContentAttribute](uisemanticcontentattribute.md)
+- [enum UISemanticContentAttribute](../uisemanticcontentattribute.md)
   A semantic description of the view’s contents, used to determine whether the view should be flipped when switching between left-to-right and right-to-left layouts.
 
 

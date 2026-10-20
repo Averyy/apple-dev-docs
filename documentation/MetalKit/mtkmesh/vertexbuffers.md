@@ -1,7 +1,8 @@
 # vertexBuffers
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of buffers in which mesh vertex data resides.
 
@@ -19,11 +20,16 @@ An array of buffers in which mesh vertex data resides.
 var vertexBuffers: [MTKMeshBuffer] { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nonnull) NSArray<MTKMeshBuffer *> * vertexBuffers;
+```
+
 ## See Also
 
-- [var vertexCount: Int](mtkmesh/vertexcount.md)
+### Vertex Properties
+- [var vertexCount: Int](./vertexcount.md)
   The number of vertices in the vertex buffers.
-- [var vertexDescriptor: MDLVertexDescriptor](mtkmesh/vertexdescriptor.md)
+- [var vertexDescriptor: MDLVertexDescriptor](./vertexdescriptor.md)
   A Model I/O vertex descriptor specifying the data layout in the vertex buffers.
 
 

@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.sweden
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Swedish in the HID specification.
 

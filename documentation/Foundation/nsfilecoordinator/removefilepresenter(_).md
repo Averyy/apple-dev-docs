@@ -1,7 +1,8 @@
 # removeFilePresenter(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Unregisters the specified file presenter object.
 
@@ -20,6 +21,10 @@ Unregisters the specified file presenter object.
 class func removeFilePresenter(_ filePresenter: any NSFilePresenter)
 ```
 
+```objc
++ (void) removeFilePresenter:(id<NSFilePresenter>) filePresenter;
+```
+
 #### Discussion
 
 Call this method to unregister file presenters before those objects are deallocated, even in a garbage-collected application.
@@ -30,11 +35,12 @@ Call this method to unregister file presenters before those objects are dealloca
 
 ## See Also
 
-- [class func addFilePresenter(any NSFilePresenter)](nsfilecoordinator/addfilepresenter(_:).md)
+### Managing File Presenters
+- [class func addFilePresenter(any NSFilePresenter)](./addfilepresenter%28_%29.md)
   Registers the specified file presenter object so that it can receive notifications.
-- [class var filePresenters: [any NSFilePresenter]](nsfilecoordinator/filepresenters.md)
+- [class var filePresenters: [any NSFilePresenter]](./filepresenters.md)
   Returns an array containing the currently registered file presenter objects.
-- [var purposeIdentifier: String](nsfilecoordinator/purposeidentifier.md)
+- [var purposeIdentifier: String](./purposeidentifier.md)
   A string that uniquely identifies the file access that was performed by this file coordinator.
 
 

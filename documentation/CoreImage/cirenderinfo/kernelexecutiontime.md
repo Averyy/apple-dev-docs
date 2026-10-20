@@ -1,7 +1,8 @@
 # kernelExecutionTime
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of time a render spent executing kernels.
 
@@ -19,13 +20,18 @@ The amount of time a render spent executing kernels.
 var kernelExecutionTime: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval kernelExecutionTime;
+```
+
 ## See Also
 
-- [var passCount: Int](cirenderinfo/passcount.md)
+### Instance Properties
+- [var passCount: Int](./passcount.md)
   The number of passes the render took.
-- [var pixelsProcessed: Int](cirenderinfo/pixelsprocessed.md)
+- [var pixelsProcessed: Int](./pixelsprocessed.md)
   The number of pixels the render produced executing kernels.
-- [var kernelCompileTime: TimeInterval](cirenderinfo/kernelcompiletime.md)
+- [var kernelCompileTime: TimeInterval](./kernelcompiletime.md)
 
 
 ---

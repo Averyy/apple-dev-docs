@@ -1,7 +1,8 @@
 # Foreground color
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit RGBA color that specifies the text’s color, 8 bits each for red, green, blue, and alpha (transparency).
 
@@ -11,25 +12,26 @@ For example, this would be `(0,0,0,255)` for opaque black or `(255,255,255,255)`
 
 ## See Also
 
-- [Display flags](subtitle_sample_description/display_flags.md)
+### Data fields
+- [Display flags](./display_flags.md)
   A 32-bit integer containing flags that describe how the subtitle text should be drawn.
-- [Reserved](subtitle_sample_description/reserved.md)
+- [Reserved](./reserved.md)
   An 8-bit integer.
-- [Reserved](subtitle_sample_description/reserved2.md)
+- [Reserved](./reserved2.md)
   An 8-bit integer.
-- [Reserved](subtitle_sample_description/reserved3.md)
+- [Reserved](./reserved3.md)
   A 32-bit integer.
-- [Default text box](subtitle_sample_description/default_text_box.md)
+- [Default text box](./default_text_box.md)
   A 64-bit rectangle that specifies an area to receive text (each 16 bits indicate top, left, bottom, and right, respectively) within the subtitle track.
-- [Reserved](subtitle_sample_description/reserved4.md)
+- [Reserved](./reserved4.md)
   A 32-bit value.
-- [Font identifier](subtitle_sample_description/font_identifier.md)
+- [Font identifier](./font_identifier.md)
   A 16-bit value that must be set to the same font identifier as in the font table.
-- [Font face](subtitle_sample_description/font_face.md)
+- [Font face](./font_face.md)
   An 8-bit integer that indicates the font’s style.
-- [Font size](subtitle_sample_description/font_size.md)
+- [Font size](./font_size.md)
   An 8-bit value for the font size, expressed in points.
-- [Font table](subtitle_sample_description/font_table.md)
+- [Font table](./font_table.md)
   An atom that identifies the font to use to display the text.
 
 

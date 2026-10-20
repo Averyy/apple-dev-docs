@@ -1,7 +1,8 @@
 # windowSize
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Placement for commands that control the size of the window.
 
@@ -27,11 +28,12 @@ By default, this group includes the following commands in macOS:
 
 ## See Also
 
-- [static let singleWindowList: CommandGroupPlacement](commandgroupplacement/singlewindowlist.md)
+### Windows
+- [static let singleWindowList: CommandGroupPlacement](./singlewindowlist.md)
   Placement for commands that describe and reveal any windows that the app defines.
-- [static let windowArrangement: CommandGroupPlacement](commandgroupplacement/windowarrangement.md)
+- [static let windowArrangement: CommandGroupPlacement](./windowarrangement.md)
   Placement for commands that arrange all of an app’s windows.
-- [static let windowList: CommandGroupPlacement](commandgroupplacement/windowlist.md)
+- [static let windowList: CommandGroupPlacement](./windowlist.md)
   Placement for commands that describe and reveal the app’s open windows.
 
 

@@ -1,7 +1,8 @@
 # enableBackgroundDelivery(for:frequency:)
 
 **Framework**: FinanceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables background delivery for the specified types and frequency.
 
@@ -29,9 +30,10 @@ The app’s background delivery extension will receive updates at the specified 
 
 ## See Also
 
-- [func disableAllBackgroundDelivery()](financestore/disableallbackgrounddelivery.md)
+### Instance Methods
+- [func disableAllBackgroundDelivery()](./disableallbackgrounddelivery%28%29.md)
   Disables background delivery for all data types.
-- [func disableBackgroundDelivery(for: [FinanceStore.BackgroundDataType])](financestore/disablebackgrounddelivery(for:).md)
+- [func disableBackgroundDelivery(for: [FinanceStore.BackgroundDataType])](./disablebackgrounddelivery%28for%29.md)
   Disables background delivery for the specified types.
 
 

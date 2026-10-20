@@ -1,7 +1,8 @@
 # range
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range that delineates the text item in an attributed string.
 
@@ -15,6 +16,10 @@ The range that delineates the text item in an attributed string.
 
 ```swift
 var range: NSRange { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) NSRange range;
 ```
 
 

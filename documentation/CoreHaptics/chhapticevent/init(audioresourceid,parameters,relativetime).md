@@ -1,7 +1,8 @@
 # init(audioResourceID:parameters:relativeTime:)
 
 **Framework**: Core Haptics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a haptic event from a previously loaded audio resource, specifying event parameters and start time.
 
@@ -19,9 +20,13 @@ Initializes a haptic event from a previously loaded audio resource, specifying e
 init(audioResourceID resID: CHHapticAudioResourceID, parameters eventParams: [CHHapticEventParameter], relativeTime time: TimeInterval)
 ```
 
+```objc
+- (instancetype) initWithAudioResourceID:(CHHapticAudioResourceID) resID parameters:(NSArray<CHHapticEventParameter *> *) eventParams relativeTime:(NSTimeInterval) time;
+```
+
 #### Discussion
 
-To register an audio resource, call the [`CHHapticEngine`](chhapticengine.md) object’s [`registerAudioResource(_:options:)`](chhapticengine/registeraudioresource(_:options:).md) method.
+To register an audio resource, call the [`CHHapticEngine`](../chhapticengine.md) object’s [`registerAudioResource(_:options:)`](../chhapticengine/registeraudioresource%28_,options%29.md) method.
 
 ## Parameters
 
@@ -31,11 +36,12 @@ To register an audio resource, call the [`CHHapticEngine`](chhapticengine.md) ob
 
 ## See Also
 
-- [init(audioResourceID: CHHapticAudioResourceID, parameters: [CHHapticEventParameter], relativeTime: TimeInterval, duration: TimeInterval)](chhapticevent/init(audioresourceid:parameters:relativetime:duration:).md)
+### Creating Haptic Events
+- [init(audioResourceID: CHHapticAudioResourceID, parameters: [CHHapticEventParameter], relativeTime: TimeInterval, duration: TimeInterval)](./init%28audioresourceid,parameters,relativetime,duration%29.md)
   Initializes a haptic event from a previously loaded audio resource, specifying event parameters, start time, and duration.
-- [init(eventType: CHHapticEvent.EventType, parameters: [CHHapticEventParameter], relativeTime: TimeInterval)](chhapticevent/init(eventtype:parameters:relativetime:).md)
+- [init(eventType: CHHapticEvent.EventType, parameters: [CHHapticEventParameter], relativeTime: TimeInterval)](./init%28eventtype,parameters,relativetime%29.md)
   Initializes a haptic event of the specified type, parameters, and start time.
-- [init(eventType: CHHapticEvent.EventType, parameters: [CHHapticEventParameter], relativeTime: TimeInterval, duration: TimeInterval)](chhapticevent/init(eventtype:parameters:relativetime:duration:).md)
+- [init(eventType: CHHapticEvent.EventType, parameters: [CHHapticEventParameter], relativeTime: TimeInterval, duration: TimeInterval)](./init%28eventtype,parameters,relativetime,duration%29.md)
   Initializes a haptic event of the specified type, parameters, start time, and duration.
 
 

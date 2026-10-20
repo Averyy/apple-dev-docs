@@ -1,12 +1,13 @@
 # init(rawValue:)
 
 **Framework**: Hypervisor  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new Virtual Machine Extensions (VMX) instance with the value you provide.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init(rawValue: UInt32)
 
 ## See Also
 
-- [init(UInt32)](hv_vmx_capability_t/init(_:).md)
+### Initializers
+- [init(UInt32)](./init%28_%29.md)
   Creates a new Virtual Machine Extensions (VMX) instance.
 
 

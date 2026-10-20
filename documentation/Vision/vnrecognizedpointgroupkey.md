@@ -1,7 +1,8 @@
 # VNRecognizedPointGroupKey
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The data type for all recognized-point group keys.
 
@@ -11,62 +12,67 @@ The data type for all recognized-point group keys.
 struct VNRecognizedPointGroupKey
 ```
 
+```c
+typedef NSString * VNRecognizedPointGroupKey;
+```
+
 ## Topics
 
 ### Body Regions
-- [static let bodyLandmarkRegionKeyFace: VNRecognizedPointGroupKey](vnrecognizedpointgroupkey/bodylandmarkregionkeyface.md)
+- [static let bodyLandmarkRegionKeyFace: VNRecognizedPointGroupKey](./vnrecognizedpointgroupkey/bodylandmarkregionkeyface.md)
   A group key identifying the face, which includes the eyes, ears, and nose.
-- [static let bodyLandmarkRegionKeyTorso: VNRecognizedPointGroupKey](vnrecognizedpointgroupkey/bodylandmarkregionkeytorso.md)
+- [static let bodyLandmarkRegionKeyTorso: VNRecognizedPointGroupKey](./vnrecognizedpointgroupkey/bodylandmarkregionkeytorso.md)
   A group key identifying the torso, which includes the neck, shoulders, hips, and root.
-- [static let bodyLandmarkRegionKeyRightArm: VNRecognizedPointGroupKey](vnrecognizedpointgroupkey/bodylandmarkregionkeyrightarm.md)
+- [static let bodyLandmarkRegionKeyRightArm: VNRecognizedPointGroupKey](./vnrecognizedpointgroupkey/bodylandmarkregionkeyrightarm.md)
   A group key identifying the landmarks of the right arm.
-- [static let bodyLandmarkRegionKeyLeftArm: VNRecognizedPointGroupKey](vnrecognizedpointgroupkey/bodylandmarkregionkeyleftarm.md)
+- [static let bodyLandmarkRegionKeyLeftArm: VNRecognizedPointGroupKey](./vnrecognizedpointgroupkey/bodylandmarkregionkeyleftarm.md)
   A group key identifying the landmarks of the left arm.
-- [static let bodyLandmarkRegionKeyRightLeg: VNRecognizedPointGroupKey](vnrecognizedpointgroupkey/bodylandmarkregionkeyrightleg.md)
+- [static let bodyLandmarkRegionKeyRightLeg: VNRecognizedPointGroupKey](./vnrecognizedpointgroupkey/bodylandmarkregionkeyrightleg.md)
   A group key identifying the landmarks of the right leg.
-- [static let bodyLandmarkRegionKeyLeftLeg: VNRecognizedPointGroupKey](vnrecognizedpointgroupkey/bodylandmarkregionkeyleftleg.md)
+- [static let bodyLandmarkRegionKeyLeftLeg: VNRecognizedPointGroupKey](./vnrecognizedpointgroupkey/bodylandmarkregionkeyleftleg.md)
   A group key identifying the landmarks of the left leg.
 ### All Regions
-- [static let all: VNRecognizedPointGroupKey](vnrecognizedpointgroupkey/all.md)
+- [static let all: VNRecognizedPointGroupKey](./vnrecognizedpointgroupkey/all.md)
   A group key identifying all landmarks.
-- [static let point3DGroupKeyAll: VNRecognizedPointGroupKey](vnrecognizedpointgroupkey/point3dgroupkeyall.md)
+- [static let point3DGroupKeyAll: VNRecognizedPointGroupKey](./vnrecognizedpointgroupkey/point3dgroupkeyall.md)
   A group key identifying all three-dimensional landmarks.
 ### Initializers
-- [init(rawValue: String)](vnrecognizedpointgroupkey/init(rawvalue:).md)
+- [init(rawValue: String)](./vnrecognizedpointgroupkey/init%28rawvalue%29.md)
   Creates a recognized point key with a string value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Detecting Human Body Poses in Images](detecting-human-body-poses-in-images.md)
+### Body and hand pose detection
+- [Detecting Human Body Poses in Images](./detecting-human-body-poses-in-images.md)
   Add the capability to detect human body poses to your app using the Vision framework.
-- [Detecting Hand Poses with Vision](detecting-hand-poses-with-vision.md)
+- [Detecting Hand Poses with Vision](./detecting-hand-poses-with-vision.md)
   Create a virtual drawing app by using Vision’s capability to detect hand poses.
-- [class VNDetectHumanBodyPoseRequest](vndetecthumanbodyposerequest.md)
+- [class VNDetectHumanBodyPoseRequest](./vndetecthumanbodyposerequest.md)
   A request that detects a human body pose.
-- [class VNDetectHumanHandPoseRequest](vndetecthumanhandposerequest.md)
+- [class VNDetectHumanHandPoseRequest](./vndetecthumanhandposerequest.md)
   A request that detects a human hand pose.
-- [class VNRecognizedPointsObservation](vnrecognizedpointsobservation.md)
+- [class VNRecognizedPointsObservation](./vnrecognizedpointsobservation.md)
   An observation that provides the points the analysis recognized.
-- [class VNHumanBodyPoseObservation](vnhumanbodyposeobservation.md)
+- [class VNHumanBodyPoseObservation](./vnhumanbodyposeobservation.md)
   An observation that provides the body points the analysis recognized.
-- [class VNHumanHandPoseObservation](vnhumanhandposeobservation.md)
+- [class VNHumanHandPoseObservation](./vnhumanhandposeobservation.md)
   An observation that provides the hand points the analysis recognized.
-- [class VNPoint](vnpoint.md)
+- [class VNPoint](./vnpoint.md)
   An immutable object that represents a single 2D point in an image.
-- [class VNDetectedPoint](vndetectedpoint.md)
+- [class VNDetectedPoint](./vndetectedpoint.md)
   An object that represents a normalized point in an image, along with a confidence value.
-- [class VNRecognizedPoint](vnrecognizedpoint.md)
+- [class VNRecognizedPoint](./vnrecognizedpoint.md)
   An object that represents a normalized point in an image, along with an identifier label and a confidence value.
-- [struct VNRecognizedPointKey](vnrecognizedpointkey.md)
+- [struct VNRecognizedPointKey](./vnrecognizedpointkey.md)
   The data type for all recognized point keys.
 
 

@@ -1,7 +1,8 @@
 # traits
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dependencies traits configuration.
 
@@ -16,15 +17,16 @@ final let traits: Set<Package.Dependency.Trait>
 
 ## See Also
 
-- [Package.Dependency.Trait](package/dependency/trait.md)
+### Declaring Requirements
+- [Package.Dependency.Trait](./trait.md)
   An enabled trait of a dependency.
-- [Package.Dependency.RegistryRequirement](package/dependency/registryrequirement.md)
+- [Package.Dependency.RegistryRequirement](./registryrequirement.md)
   An enum that represents the requirement for a package dependency.
-- [Package.Dependency.SourceControlRequirement](package/dependency/sourcecontrolrequirement.md)
+- [Package.Dependency.SourceControlRequirement](./sourcecontrolrequirement.md)
   An enum that represents the requirement for a package dependency.
-- [var requirement: Package.Dependency.Requirement](package/dependency/requirement-swift.property.md)
+- [var requirement: Package.Dependency.Requirement](./requirement-swift.property.md)
   The dependency requirement of the package dependency.
-- [Package.Dependency.Requirement](package/dependency/requirement-swift.enum.md)
+- [Package.Dependency.Requirement](./requirement-swift.enum.md)
   An enum that represents the requirement for a package dependency.
 
 

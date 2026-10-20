@@ -1,15 +1,16 @@
 # kSMErrorDomainIPC
 
 **Framework**: Service Management  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Service Management IPC error domain.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
-- macOS 10.6+
+- iOS 3.0+ - Deprecated in 8.0
+- iPadOS 3.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.6+ - Deprecated in 10.10
 
 ## Declaration
 
@@ -17,11 +18,16 @@ A Service Management IPC error domain.
 let kSMErrorDomainIPC: CFString!
 ```
 
+```c
+extern CFStringRef const kSMErrorDomainIPC;
+```
+
 ## See Also
 
-- [let kSMErrorDomainFramework: CFString!](ksmerrordomainframework.md)
+### Deprecated Constants
+- [let kSMErrorDomainFramework: CFString!](./ksmerrordomainframework.md)
   A Service Management error domain.
-- [let kSMErrorDomainLaunchd: CFString!](ksmerrordomainlaunchd.md)
+- [let kSMErrorDomainLaunchd: CFString!](./ksmerrordomainlaunchd.md)
   A Service Management `launchd` error domain.
 
 

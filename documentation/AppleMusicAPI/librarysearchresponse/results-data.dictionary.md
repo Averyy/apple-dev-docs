@@ -1,7 +1,8 @@
 # LibrarySearchResponse.Results
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents the results of a library search query.
 
@@ -10,22 +11,22 @@ An object that represents the results of a library search query.
 
 ## Declaration
 
-```swift
+```
 object LibrarySearchResponse.Results
 ```
 
 ## Topics
 
 ### Related Objects
-- [object LibrarySearchResponse.Results.LibraryAlbumsSearchResult](librarysearchresponse/results-data.dictionary/libraryalbumssearchresult.md)
+- [object LibrarySearchResponse.Results.LibraryAlbumsSearchResult](./results-data.dictionary/libraryalbumssearchresult.md)
   The library albums results for a term search for specific resource types.
-- [object LibrarySearchResponse.Results.LibraryArtistsSearchResult](librarysearchresponse/results-data.dictionary/libraryartistssearchresult.md)
+- [object LibrarySearchResponse.Results.LibraryArtistsSearchResult](./results-data.dictionary/libraryartistssearchresult.md)
   The library artists results for a term search for specific resource types.
-- [object LibrarySearchResponse.Results.LibraryMusicVideosSearchResult](librarysearchresponse/results-data.dictionary/librarymusicvideossearchresult.md)
+- [object LibrarySearchResponse.Results.LibraryMusicVideosSearchResult](./results-data.dictionary/librarymusicvideossearchresult.md)
   The library music videos results for a term search for specific resource types.
-- [object LibrarySearchResponse.Results.LibraryPlaylistsSearchResult](librarysearchresponse/results-data.dictionary/libraryplaylistssearchresult.md)
+- [object LibrarySearchResponse.Results.LibraryPlaylistsSearchResult](./results-data.dictionary/libraryplaylistssearchresult.md)
   The library playlists results for a term search for specific resource types.
-- [object LibrarySearchResponse.Results.LibrarySongsSearchResult](librarysearchresponse/results-data.dictionary/librarysongssearchresult.md)
+- [object LibrarySearchResponse.Results.LibrarySongsSearchResult](./results-data.dictionary/librarysongssearchresult.md)
   The library songs results for a term search for specific resource types.
 
 ## Properties

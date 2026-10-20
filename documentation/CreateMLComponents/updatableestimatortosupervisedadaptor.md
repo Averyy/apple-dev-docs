@@ -1,7 +1,8 @@
 # UpdatableEstimatorToSupervisedAdaptor
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An adaptor that exposes an updatable estimator as an updatable supervised estimator.
 
@@ -23,49 +24,50 @@ struct UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation> where Estima
 ## Topics
 
 ### Creating an adaptor
-- [init(Estimator)](updatableestimatortosupervisedadaptor/init(_:).md)
+- [init(Estimator)](./updatableestimatortosupervisedadaptor/init%28_%29.md)
   Creates an estimator adaptor.
 ### Getting the estimator
-- [let estimator: Estimator](updatableestimatortosupervisedadaptor/estimator.md)
+- [let estimator: Estimator](./updatableestimatortosupervisedadaptor/estimator.md)
   The wrapped estimator.
 ### Encoding and decoding
-- [func encode(UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer, to: inout any EstimatorEncoder) throws](updatableestimatortosupervisedadaptor/encode(_:to:).md)
+- [func encode(UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer, to: inout any EstimatorEncoder) throws](./updatableestimatortosupervisedadaptor/encode%28_,to%29.md)
   Does nothing since this estimator uses a pre-defined transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](updatableestimatortosupervisedadaptor/decode(from:).md)
+- [func decode(from: inout any EstimatorDecoder) throws -> UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](./updatableestimatortosupervisedadaptor/decode%28from%29.md)
   Returns the pre-defined transformer.
-- [func encodeWithOptimizer(UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer, to: inout any EstimatorEncoder) throws](updatableestimatortosupervisedadaptor/encodewithoptimizer(_:to:).md)
+- [func encodeWithOptimizer(UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer, to: inout any EstimatorEncoder) throws](./updatableestimatortosupervisedadaptor/encodewithoptimizer%28_,to%29.md)
   Encodes the transformer and optimizer to an encoder.
-- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](updatableestimatortosupervisedadaptor/decodewithoptimizer(from:).md)
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](./updatableestimatortosupervisedadaptor/decodewithoptimizer%28from%29.md)
   Reads the encoded transformer and optimizer.
 ### Fitting and Updating
-- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](updatableestimatortosupervisedadaptor/fitted(to:eventhandler:).md)
+- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](./updatableestimatortosupervisedadaptor/fitted%28to,eventhandler%29.md)
   Fits a transformer to a sequence of examples, ignoring the annotations and the validation.
-- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](updatableestimatortosupervisedadaptor/fitted(to:validateon:eventhandler:).md)
+- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](./updatableestimatortosupervisedadaptor/fitted%28to,validateon,eventhandler%29.md)
   Fits a transformer to a sequence of examples.
-- [func makeTransformer() -> Estimator.Transformer](updatableestimatortosupervisedadaptor/maketransformer.md)
+- [func makeTransformer() -> Estimator.Transformer](./updatableestimatortosupervisedadaptor/maketransformer%28%29.md)
   Creates a default-initialized transformer suitable for incremental fitting.
-- [func update<InputSequence>(inout Estimator.Transformer, with: InputSequence, eventHandler: EventHandler?) async throws](updatableestimatortosupervisedadaptor/update(_:with:eventhandler:).md)
+- [func update<InputSequence>(inout Estimator.Transformer, with: InputSequence, eventHandler: EventHandler?) async throws](./updatableestimatortosupervisedadaptor/update%28_,with,eventhandler%29.md)
   Updates a transformer with a new sequence of examples.
-- [func update<InputSequence, Validation>(inout Estimator.Transformer, with: InputSequence, validateOn: Validation, eventHandler: EventHandler?) async throws](updatableestimatortosupervisedadaptor/update(_:with:validateon:eventhandler:).md)
+- [func update<InputSequence, Validation>(inout Estimator.Transformer, with: InputSequence, validateOn: Validation, eventHandler: EventHandler?) async throws](./updatableestimatortosupervisedadaptor/update%28_,with,validateon,eventhandler%29.md)
   Fits a transformer to a sequence of examples while validating with a validation sequence.
-- [protocol Transformer](transformer.md)
+- [protocol Transformer](./transformer.md)
   A transformer that takes an input and produces an output.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SupervisedEstimator](supervisedestimator.md)
-- [UpdatableSupervisedEstimator](updatablesupervisedestimator.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SupervisedEstimator](./supervisedestimator.md)
+- [UpdatableSupervisedEstimator](./updatablesupervisedestimator.md)
 
 ## See Also
 
-- [struct UpdatableEstimatorToTemporalAdaptor](updatableestimatortotemporaladaptor.md)
+### Updatable adaptors
+- [struct UpdatableEstimatorToTemporalAdaptor](./updatableestimatortotemporaladaptor.md)
   An updatable temporal estimator wrapping an updatable estimator.
-- [struct UpdatableSupervisedEstimatorToTemporalAdaptor](updatablesupervisedestimatortotemporaladaptor.md)
+- [struct UpdatableSupervisedEstimatorToTemporalAdaptor](./updatablesupervisedestimatortotemporaladaptor.md)
   An updatable supervised temporal estimator wrapping an updatable supervised estimator.
-- [struct UpdatableTemporalEstimatorToSupervisedAdaptor](updatabletemporalestimatortosupervisedadaptor.md)
+- [struct UpdatableTemporalEstimatorToSupervisedAdaptor](./updatabletemporalestimatortosupervisedadaptor.md)
   An adaptor that exposes an updatable temporal estimator as an updatable supervised temporal estimator.
 
 

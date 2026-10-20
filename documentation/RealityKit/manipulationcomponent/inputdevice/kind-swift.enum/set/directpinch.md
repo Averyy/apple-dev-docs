@@ -1,7 +1,8 @@
 # directPinch
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A pinching hand in close proximity to content.
 

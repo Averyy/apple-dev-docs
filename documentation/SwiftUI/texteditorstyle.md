@@ -1,7 +1,8 @@
 # TextEditorStyle
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A specification for the appearance and interaction of a text editor.
 
@@ -40,49 +41,50 @@ extension MyCustomType: Transition {
 ## Topics
 
 ### Getting built-in styles
-- [static var automatic: AutomaticTextEditorStyle](texteditorstyle/automatic.md)
+- [static var automatic: AutomaticTextEditorStyle](./texteditorstyle/automatic.md)
   The default text editor style, based on the text editor’s context.
-- [static var plain: PlainTextEditorStyle](texteditorstyle/plain.md)
+- [static var plain: PlainTextEditorStyle](./texteditorstyle/plain.md)
   A text editor style with no decoration.
-- [static var roundedBorder: RoundedBorderTextEditorStyle](texteditorstyle/roundedborder.md)
+- [static var roundedBorder: RoundedBorderTextEditorStyle](./texteditorstyle/roundedborder.md)
   A text editor style with a system-defined rounded border.
 ### Creating custom styles
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](texteditorstyle/makebody(configuration:).md)
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./texteditorstyle/makebody%28configuration%29.md)
   Creates a view that represents the body of a text editor.
-- [TextEditorStyle.Configuration](texteditorstyle/configuration.md)
+- [TextEditorStyle.Configuration](./texteditorstyle/configuration.md)
   The properties of a text editor.
-- [associatedtype Body : View](texteditorstyle/body.md)
+- [associatedtype Body : View](./texteditorstyle/body.md)
   A view that represents the body of a text editor.
 ### Supporting types
-- [struct AutomaticTextEditorStyle](automatictexteditorstyle.md)
+- [struct AutomaticTextEditorStyle](./automatictexteditorstyle.md)
   The default text editor style, based on the text editor’s context.
-- [struct PlainTextEditorStyle](plaintexteditorstyle.md)
+- [struct PlainTextEditorStyle](./plaintexteditorstyle.md)
   A text editor style with no decoration.
-- [struct RoundedBorderTextEditorStyle](roundedbordertexteditorstyle.md)
+- [struct RoundedBorderTextEditorStyle](./roundedbordertexteditorstyle.md)
   A text editor style with a system-defined rounded border.
 
 ## Relationships
 
 ### Conforming Types
-- [AutomaticTextEditorStyle](automatictexteditorstyle.md)
-- [PlainTextEditorStyle](plaintexteditorstyle.md)
-- [RoundedBorderTextEditorStyle](roundedbordertexteditorstyle.md)
+- [AutomaticTextEditorStyle](./automatictexteditorstyle.md)
+- [PlainTextEditorStyle](./plaintexteditorstyle.md)
+- [RoundedBorderTextEditorStyle](./roundedbordertexteditorstyle.md)
 
 ## See Also
 
-- [func labelStyle<S>(S) -> some View](view/labelstyle(_:).md)
+### Styling views that display text
+- [func labelStyle<S>(S) -> some View](./view/labelstyle%28_%29.md)
   Sets the style for labels within this view.
-- [protocol LabelStyle](labelstyle.md)
+- [protocol LabelStyle](./labelstyle.md)
   A type that applies a custom appearance to all labels within a view.
-- [struct LabelStyleConfiguration](labelstyleconfiguration.md)
+- [struct LabelStyleConfiguration](./labelstyleconfiguration.md)
   The properties of a label.
-- [func textFieldStyle<S>(S) -> some View](view/textfieldstyle(_:).md)
+- [func textFieldStyle<S>(S) -> some View](./view/textfieldstyle%28_%29.md)
   Sets the style for text fields within this view.
-- [protocol TextFieldStyle](textfieldstyle.md)
+- [protocol TextFieldStyle](./textfieldstyle.md)
   A specification for the appearance and interaction of a text field.
-- [func textEditorStyle(some TextEditorStyle) -> some View](view/texteditorstyle(_:).md)
+- [func textEditorStyle(some TextEditorStyle) -> some View](./view/texteditorstyle%28_%29.md)
   Sets the style for text editors within this view.
-- [struct TextEditorStyleConfiguration](texteditorstyleconfiguration.md)
+- [struct TextEditorStyleConfiguration](./texteditorstyleconfiguration.md)
   The properties of a text editor.
 
 

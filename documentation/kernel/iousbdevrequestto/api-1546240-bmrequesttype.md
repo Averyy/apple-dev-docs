@@ -1,7 +1,8 @@
 # bmRequestType
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The type of the request.
 
@@ -10,27 +11,28 @@ The type of the request.
 
 ## Declaration
 
-```swift
+```c
 UInt8 bmRequestType;
 ```
 
 ## See Also
 
-- [bRequest](iousbdevrequestto/1546186-brequest.md)
+### Getting the Properties
+- [bRequest](./api-1546186-brequest.md)
   The request code.
-- [wValue](iousbdevrequestto/1546569-wvalue.md)
+- [wValue](./api-1546569-wvalue.md)
   The 16-bit parameter for the request.
-- [wIndex](iousbdevrequestto/1545983-windex.md)
+- [wIndex](./api-1545983-windex.md)
   The 16-bit parameter for the request.
-- [wLength](iousbdevrequestto/1546424-wlength.md)
+- [wLength](./api-1546424-wlength.md)
   The length of the data part of the request.
-- [pData](iousbdevrequestto/1546393-pdata.md)
+- [pData](./api-1546393-pdata.md)
   The pointer to the data for the request.
-- [wLenDone](iousbdevrequestto/1546065-wlendone.md)
+- [wLenDone](./api-1546065-wlendone.md)
   The number of data bytes that the system actually transferred.
-- [completionTimeout](iousbdevrequestto/1546188-completiontimeout.md)
+- [completionTimeout](./api-1546188-completiontimeout.md)
   The value of the completion timeout in milliseconds.
-- [noDataTimeout](iousbdevrequestto/1546538-nodatatimeout.md)
+- [noDataTimeout](./api-1546538-nodatatimeout.md)
   The value of the completion timeout in milliseconds if there’s no data.
 
 

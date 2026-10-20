@@ -1,7 +1,8 @@
 # SensoryFeedback.ReleaseFeedback
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Feedback that can be played in response to a release (touch up) of a control.
 
@@ -23,16 +24,16 @@ struct ReleaseFeedback
 ## Topics
 
 ### Type Properties
-- [static let slider: SensoryFeedback.ReleaseFeedback](sensoryfeedback/releasefeedback/slider.md)
+- [static let slider: SensoryFeedback.ReleaseFeedback](./releasefeedback/slider.md)
   Indicates that a slider’s thumb has been released (touch up).
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

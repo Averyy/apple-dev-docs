@@ -1,7 +1,8 @@
 # regularExpressionCheckingResult(ranges:count:regularExpression:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns a type checking result with the specified regular expression data.
 
@@ -20,9 +21,13 @@ Creates and returns a type checking result with the specified regular expression
 class func regularExpressionCheckingResult(ranges: NSRangePointer, count: Int, regularExpression: NSRegularExpression) -> NSTextCheckingResult
 ```
 
+```objc
++ (NSTextCheckingResult *) regularExpressionCheckingResultWithRanges:(NSRangePointer) ranges count:(NSUInteger) count regularExpression:(NSRegularExpression *) regularExpression;
+```
+
 #### Return Value
 
-Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingresult/range.md) and a [`resultType`](nstextcheckingresult/resulttype.md) of [`regularExpression`](nstextcheckingresult/checkingtype/regularexpression.md).
+Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`regularExpression`](./checkingtype/regularexpression.md).
 
 ## Parameters
 
@@ -32,7 +37,8 @@ Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingres
 
 ## See Also
 
-- [var regularExpression: NSRegularExpression?](nstextcheckingresult/regularexpression.md)
+### Text Checking Results for Regular Expressions
+- [var regularExpression: NSRegularExpression?](./regularexpression.md)
   The regular expression of a type checking result.
 
 

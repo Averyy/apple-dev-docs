@@ -1,12 +1,13 @@
 # tintColor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A tint color applied to the base color.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 12.0 (renamed: color)
 
 ## Declaration
 

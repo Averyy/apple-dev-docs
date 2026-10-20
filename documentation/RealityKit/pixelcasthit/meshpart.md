@@ -1,7 +1,8 @@
 # meshPart
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mesh part id of the entity that was selected by the hit.
 

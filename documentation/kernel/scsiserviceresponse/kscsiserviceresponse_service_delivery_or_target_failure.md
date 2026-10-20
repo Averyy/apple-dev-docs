@@ -1,14 +1,15 @@
 # kSCSIServiceResponse_SERVICE_DELIVERY_OR_TARGET_FAILURE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 kSCSIServiceResponse_SERVICE_DELIVERY_OR_TARGET_FAILURE = 1
 ```
 

@@ -1,7 +1,8 @@
 # exponentBitCount
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The number of bits used to represent the type’s exponent.
 

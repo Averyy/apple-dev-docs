@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum vtype : unsigned int {
     ...
 };
@@ -17,17 +17,17 @@ enum vtype : unsigned int {
 ## Topics
 
 ### Constants
-- [VBAD](vtype/vbad.md)
-- [VBLK](vtype/vblk.md)
-- [VCHR](vtype/vchr.md)
-- [VCPLX](vtype/vcplx.md)
-- [VDIR](vtype/vdir.md)
-- [VFIFO](vtype/vfifo.md)
-- [VLNK](vtype/vlnk.md)
-- [VNON](vtype/vnon.md)
-- [VREG](vtype/vreg.md)
-- [VSOCK](vtype/vsock.md)
-- [VSTR](vtype/vstr.md)
+- [VBAD](./vtype/vbad.md)
+- [VBLK](./vtype/vblk.md)
+- [VCHR](./vtype/vchr.md)
+- [VCPLX](./vtype/vcplx.md)
+- [VDIR](./vtype/vdir.md)
+- [VFIFO](./vtype/vfifo.md)
+- [VLNK](./vtype/vlnk.md)
+- [VNON](./vtype/vnon.md)
+- [VREG](./vtype/vreg.md)
+- [VSOCK](./vtype/vsock.md)
+- [VSTR](./vtype/vstr.md)
 
 
 ---

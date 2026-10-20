@@ -1,7 +1,8 @@
 # footerHeight
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the page footer.
 
@@ -17,13 +18,18 @@ The height of the page footer.
 var footerHeight: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat footerHeight;
+```
+
 #### Discussion
 
-The footer is measured in points from the bottom of [`printableRect`](uiprintpagerenderer/printablerect.md) and is below the content area. The default footer height is 0.0
+The footer is measured in points from the bottom of [`printableRect`](./printablerect.md) and is below the content area. The default footer height is 0.0
 
 ## See Also
 
-- [var headerHeight: CGFloat](uiprintpagerenderer/headerheight.md)
+### Specifying header and footer heights
+- [var headerHeight: CGFloat](./headerheight.md)
   The height of the page header.
 
 

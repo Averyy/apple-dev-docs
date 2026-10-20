@@ -1,55 +1,57 @@
 # Collaboration views
 
-**Framework**: Shared with You
+**Framework**: Shared with You  
+**Role**: API Collection
 
 Create and customize a collaboration view to manage the shared content actions.
 
 ## Topics
 
 ### Collaboration views
-- [class SWCollaborationView](swcollaborationview.md)
+- [class SWCollaborationView](./swcollaborationview.md)
   A view that contains the collaboration content and options.
 ### Collaboration attributes
-- [class SWCollaborationHighlight](swcollaborationhighlight.md)
+- [class SWCollaborationHighlight](./swcollaborationhighlight.md)
   A highlight object that represents an active collaboration.
-- [class SWCollaborationMetadata](../sharedwithyoucore/swcollaborationmetadata.md)
+- [class SWCollaborationMetadata](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationmetadata)
   A model object for conveying data during a collaboration.
-- [struct SWCollaborationIdentifier](../sharedwithyoucore/swcollaborationidentifier.md)
+- [struct SWCollaborationIdentifier](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationidentifier)
   A unique identifier for a collaboration.
-- [struct SWLocalCollaborationIdentifier](../sharedwithyoucore/swlocalcollaborationidentifier.md)
+- [struct SWLocalCollaborationIdentifier](https://developer.apple.com/documentation/sharedwithyoucore/swlocalcollaborationidentifier)
   A local identifier for a collaboration.
-- [let SWCollaborationMetadataTypeIdentifier: String](swcollaborationmetadatatypeidentifier.md)
+- [let SWCollaborationMetadataTypeIdentifier: String](./swcollaborationmetadatatypeidentifier.md)
   A string constant for the metadata type identifier.
 ### Collaboration management
-- [protocol SWCollaborationViewDelegate](swcollaborationviewdelegate.md)
+- [protocol SWCollaborationViewDelegate](./swcollaborationviewdelegate.md)
   A delegate object that the system notifies about changes to the collaboration popover state.
-- [class SWCollaborationCoordinator](../sharedwithyoucore/swcollaborationcoordinator.md)
+- [class SWCollaborationCoordinator](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationcoordinator)
   An object that contains the shared collaboration coordinator.
-- [class SWCollaborationOption](../sharedwithyoucore/swcollaborationoption.md)
+- [class SWCollaborationOption](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationoption)
   An object that determines how the system shares a document in a collaboration.
-- [class SWCollaborationOptionsGroup](../sharedwithyoucore/swcollaborationoptionsgroup.md)
+- [class SWCollaborationOptionsGroup](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationoptionsgroup)
   An object that represents a group of collaboration options that the system displays together.
-- [class SWCollaborationOptionsPickerGroup](../sharedwithyoucore/swcollaborationoptionspickergroup.md)
+- [class SWCollaborationOptionsPickerGroup](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationoptionspickergroup)
   An object that represents a group of collaboration options that the system displays together with mutually exclusive options.
-- [class SWCollaborationShareOptions](../sharedwithyoucore/swcollaborationshareoptions.md)
+- [class SWCollaborationShareOptions](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationshareoptions)
   An object that represents the state of the collaboration options for the document.
-- [let UTCollaborationOptionsTypeIdentifier: String](../sharedwithyoucore/utcollaborationoptionstypeidentifier.md)
+- [let UTCollaborationOptionsTypeIdentifier: String](https://developer.apple.com/documentation/sharedwithyoucore/utcollaborationoptionstypeidentifier)
   A string constant for the options type identifier.
 ### Actions
-- [class SWAction](../sharedwithyoucore/swaction.md)
+- [class SWAction](https://developer.apple.com/documentation/sharedwithyoucore/swaction)
   An object that represents a collaboration action.
-- [class SWStartCollaborationAction](../sharedwithyoucore/swstartcollaborationaction.md)
+- [class SWStartCollaborationAction](https://developer.apple.com/documentation/sharedwithyoucore/swstartcollaborationaction)
   An object that represents the first action sent to an app when the user shares a collaboration.
-- [protocol SWCollaborationActionHandler](../sharedwithyoucore/swcollaborationactionhandler.md)
+- [protocol SWCollaborationActionHandler](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationactionhandler)
   A delegate to handle incoming collaboration actions from a collaboration coordinator.
-- [class SWUpdateCollaborationParticipantsAction](../sharedwithyoucore/swupdatecollaborationparticipantsaction.md)
+- [class SWUpdateCollaborationParticipantsAction](https://developer.apple.com/documentation/sharedwithyoucore/swupdatecollaborationparticipantsaction)
   An action that contains the cryptographic identities the system uses to add to or remove from an existing collaboration.
 
 ## See Also
 
-- [Adding shared content collaboration to your app](adding-shared-content-collaboration-to-your-app.md)
+### Collaboration
+- [Adding shared content collaboration to your app](./adding-shared-content-collaboration-to-your-app.md)
   Manage shared content collaboration in your app using CloudKit and iCloud Drive.
-- [Adding custom collaboration to your app](adding-custom-collaboration-to-your-app.md)
+- [Adding custom collaboration to your app](./adding-custom-collaboration-to-your-app.md)
   Integrate your custom collaboration app with Messages.
 
 

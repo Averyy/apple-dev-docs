@@ -1,7 +1,8 @@
 # ComputeNodeGraph.StateType.dataType(type:)
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Legacy. Do not construct in new code.
 
@@ -12,7 +13,7 @@ Legacy. Do not construct in new code.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

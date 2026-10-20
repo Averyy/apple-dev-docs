@@ -1,17 +1,22 @@
 # start()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells inquiry object to begin the inquiry and name updating process, if specified.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func start() -> IOReturn
+```
+
+```objc
+- (IOReturn) start;
 ```
 
 #### Return Value

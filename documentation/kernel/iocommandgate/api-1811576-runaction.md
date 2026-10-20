@@ -7,7 +7,7 @@ Single thread a call to an action with the target work-loop.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn runAction(
  Action action, 
  void *arg0 = 0,
@@ -16,7 +16,7 @@ virtual IOReturn runAction(
  void *arg3 = 0);
 ```
 
-#### Return_value
+#### Return Value
 
 kIOReturnSuccess if successful. kIOReturnBadArgument if action is not defined, kIOReturnAborted if a disabled command gate is free()ed before being reenabled.
 
@@ -34,25 +34,26 @@ Client function that causes the given action to be called in a single threaded m
 
 ## See Also
 
-- [attemptAction](iocommandgate/1811105-attemptaction.md)
+### Miscellaneous
+- [attemptAction](./api-1811105-attemptaction.md)
   Single thread a call to an action with the target work-loop.
-- [attemptCommand](iocommandgate/1811141-attemptcommand.md)
+- [attemptCommand](./api-1811141-attemptcommand.md)
   Single thread a command with the target work-loop.
-- [commandGate](iocommandgate/1811293-commandgate.md)
+- [commandGate](./api-1811293-commandgate.md)
   Factory method to create and initialise an IOCommandGate, See $link init.
-- [commandSleep(void *, AbsoluteTime, UInt32)](iocommandgate/1811482-commandsleep.md)
+- [commandSleep(void *, AbsoluteTime, UInt32)](./api-1811482-commandsleep.md)
   Put a thread that is currently holding the command gate to sleep.
-- [commandSleep(void *, UInt32)](iocommandgate/1811498-commandsleep.md)
+- [commandSleep(void *, UInt32)](./api-1811498-commandsleep.md)
   Put a thread that is currently holding the command gate to sleep.
-- [commandWakeup](iocommandgate/1811517-commandwakeup.md)
+- [commandWakeup](./api-1811517-commandwakeup.md)
   Wakeup one or more threads that are asleep on an event.
-- [disable](iocommandgate/1811531-disable.md)
+- [disable](./api-1811531-disable.md)
   Disable the command gate
-- [enable](iocommandgate/1811547-enable.md)
+- [enable](./api-1811547-enable.md)
   Enable command gate, this will unblock any blocked Commands and Actions.
-- [init](iocommandgate/1811560-init.md)
+- [init](./api-1811560-init.md)
   Class initialiser.
-- [runCommand](iocommandgate/1811585-runcommand.md)
+- [runCommand](./api-1811585-runcommand.md)
   Single thread a command with the target work-loop.
 
 

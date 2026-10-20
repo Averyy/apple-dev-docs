@@ -1,7 +1,8 @@
 # remoteCapabilities(for:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests remote capability discovery for a given handle
 
@@ -24,9 +25,10 @@ Remote capabilities for requested handle, if available.
 
 ## See Also
 
-- [RCSService.RemoteCapabilitiesRequest](rcsservice/remotecapabilitiesrequest.md)
+### Discovering remote capabilities
+- [RCSService.RemoteCapabilitiesRequest](./remotecapabilitiesrequest.md)
   A structure representing a request to retrieve the capabilities of a remote handle.
-- [RCSService.RemoteCapabilities](rcsservice/remotecapabilities.md)
+- [RCSService.RemoteCapabilities](./remotecapabilities.md)
   Structure representing the capabilities of a remote handle.
 
 

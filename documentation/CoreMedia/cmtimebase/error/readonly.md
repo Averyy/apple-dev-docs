@@ -1,7 +1,8 @@
 # readOnly
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A timebase error that indicates the system attempts to modify a read-only timebase.
 
@@ -22,13 +23,14 @@ static let readOnly: NSError
 
 ## See Also
 
-- [static let allocationFailed: NSError](cmtimebase/error/allocationfailed.md)
+### Constants
+- [static let allocationFailed: NSError](./allocationfailed.md)
   A timebase error that indicates the memory allocation fails.
-- [static let invalidParameter: NSError](cmtimebase/error/invalidparameter.md)
+- [static let invalidParameter: NSError](./invalidparameter.md)
   A timebase error that indicates a parameter isn’t valid.
-- [static let missingRequiredParameter: NSError](cmtimebase/error/missingrequiredparameter.md)
+- [static let missingRequiredParameter: NSError](./missingrequiredparameter.md)
   A timebase error that indicates a missing parameter.
-- [static let timerIntervalTooShort: NSError](cmtimebase/error/timerintervaltooshort.md)
+- [static let timerIntervalTooShort: NSError](./timerintervaltooshort.md)
   A timebase error that indicates the time interval is too short.
 
 

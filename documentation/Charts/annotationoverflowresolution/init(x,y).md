@@ -1,7 +1,8 @@
 # init(x:y:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an AnnotationOverflowResolution with strategies for the X and Y dimensions.
 

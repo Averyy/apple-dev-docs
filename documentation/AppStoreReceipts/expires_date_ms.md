@@ -1,22 +1,23 @@
 # expires_date_ms
 
 **Framework**: App Store Receipts  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The time, in milliseconds, a subscription expires or renews.
 
 **Availability**:
-- App Store Receipts 1.0+
+- App Store Receipts 1.0+ - Deprecated in 1.7
 
 ## Declaration
 
-```swift
+```
 string expires_date_ms
 ```
 
 #### Discussion
 
-This field is returned in the JSON response, in the [`responseBody.Latest_receipt_info`](responsebody/latest_receipt_info-data.dictionary.md) and [`responseBody.Receipt.In_app`](responsebody/receipt-data.dictionary/in_app-data.dictionary.md) arrays.
+This field is returned in the JSON response, in the [`responseBody.Latest_receipt_info`](./responsebody/latest_receipt_info-data.dictionary.md) and [`responseBody.Receipt.In_app`](./responsebody/receipt-data.dictionary/in_app-data.dictionary.md) arrays.
 
 The time a subscription expires or when it will renew, in UNIX epoch time format, in milliseconds. Use this time format for processing dates.
 
@@ -28,9 +29,10 @@ You can use this date value to:
 
 ## See Also
 
-- [type expiration_intent](expiration_intent.md)
+### Dates and intent
+- [type expiration_intent](./expiration_intent.md)
   The reason a subscription expires.
-- [type cancellation_date_ms](cancellation_date_ms.md)
+- [type cancellation_date_ms](./cancellation_date_ms.md)
   The time and date that the App Store refunds a transaction or revokes it from Family Sharing.
 
 

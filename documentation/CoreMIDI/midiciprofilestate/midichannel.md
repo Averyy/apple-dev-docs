@@ -1,7 +1,8 @@
 # midiChannel
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The MIDI channel to which this state applies.
 
@@ -16,6 +17,10 @@ The MIDI channel to which this state applies.
 
 ```swift
 var midiChannel: MIDIChannelNumber { get }
+```
+
+```objc
+@property (nonatomic, readonly) MIDIChannelNumber midiChannel;
 ```
 
 

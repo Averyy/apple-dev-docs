@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: DiskImageKit  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Equatable implementation.
 

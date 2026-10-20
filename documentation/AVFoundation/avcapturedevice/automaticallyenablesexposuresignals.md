@@ -1,7 +1,8 @@
 # automaticallyEnablesExposureSignals
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 When true (the default), capture sessions may automatically modify `enabledExposureSignals` based on changes to other device or session properties.
 
@@ -17,22 +18,27 @@ When true (the default), capture sessions may automatically modify `enabledExpos
 var automaticallyEnablesExposureSignals: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL automaticallyEnablesExposureSignals;
+```
+
 #### Discussion
 
 The `enabledExposureSignals` property can only be assigned when `automaticallyEnablesExposureSignals` is false, otherwise assignments to `enabledExposureSignals` will throw an exception.
 
-> **Note**: `NSGenericException` if assigned without first obtaining exclusive access to the receiver using [`lockForConfiguration()`](avcapturedevice/lockforconfiguration().md).
+> **Throws**: `NSGenericException` if assigned without first obtaining exclusive access to the receiver using [`lockForConfiguration()`](./lockforconfiguration%28%29.md).
 
 ## See Also
 
-- [var activeExposureSignals: Set<AVCaptureDeviceExposureSignal>](avcapturedevice/activeexposuresignals.md)
+### Configuring exposure signals
+- [var activeExposureSignals: Set<AVCaptureDeviceExposureSignal>](./activeexposuresignals.md)
   Reports which characteristics the auto exposure system associates with the current scene. Auto exposure may adjust properties such as lens aperture size based on these factors. This property is key-value observable.
-- [var enabledExposureSignals: Set<AVCaptureDeviceExposureSignal>](avcapturedevice/enabledexposuresignals.md)
+- [var enabledExposureSignals: Set<AVCaptureDeviceExposureSignal>](./enabledexposuresignals.md)
   Can be assigned to control which characteristics AE should use in its decision making, must be a subset of supportedExposureSignals.
-- [var supportedExposureSignals: Set<AVCaptureDeviceExposureSignal>](avcapturedevice/supportedexposuresignals.md)
+- [var supportedExposureSignals: Set<AVCaptureDeviceExposureSignal>](./supportedexposuresignals.md)
   Indicates what values can be included in `enabledExposureSignals`. This property is key-value observable.
-- [struct AVCaptureDeviceExposureSignal](avcapturedeviceexposuresignal.md)
-  Values that can be used to configure the auto exposure system via [`enabledExposureSignals`](avcapturedevice/enabledexposuresignals.md) and associated methods.
+- [struct AVCaptureDeviceExposureSignal](../avcapturedeviceexposuresignal.md)
+  Values that can be used to configure the auto exposure system via [`enabledExposureSignals`](./enabledexposuresignals.md) and associated methods.
 
 
 ---

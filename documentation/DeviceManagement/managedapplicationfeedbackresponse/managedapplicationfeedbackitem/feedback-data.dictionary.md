@@ -1,7 +1,8 @@
 # ManagedApplicationFeedbackResponse.ManagedApplicationFeedbackItem.Feedback
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that contains a managed app’s feedback items.
 
@@ -15,7 +16,7 @@ A dictionary that contains a managed app’s feedback items.
 
 ## Declaration
 
-```swift
+```
 object ManagedApplicationFeedbackResponse.ManagedApplicationFeedbackItem.Feedback
 ```
 

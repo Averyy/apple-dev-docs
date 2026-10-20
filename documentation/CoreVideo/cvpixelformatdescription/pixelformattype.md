@@ -1,7 +1,8 @@
 # pixelFormatType
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Pixel format to be use for associating pixel buffers with this format.
 

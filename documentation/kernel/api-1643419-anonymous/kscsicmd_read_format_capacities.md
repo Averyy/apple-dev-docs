@@ -1,7 +1,8 @@
 # kSCSICmd_READ_FORMAT_CAPACITIES
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSCSICmd_READ_FORMAT_CAPACITIES = 0x23
 ```
 

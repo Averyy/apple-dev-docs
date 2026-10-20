@@ -1,7 +1,8 @@
 # init(center:radius:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a circle with the specified center and radius.
 
@@ -27,7 +28,8 @@ init(center: NormalizedPoint, radius: CGFloat)
 
 ## See Also
 
-- [static var zero: NormalizedCircle](normalizedcircle/zero.md)
+### Creating a normalized circle
+- [static var zero: NormalizedCircle](./zero.md)
   A circle object centered at the origin, with a radius of zero.
 
 

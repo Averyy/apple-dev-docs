@@ -1,17 +1,22 @@
 # append(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends the contents of the specified path object to the path.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func append(_ path: NSBezierPath)
+```
+
+```objc
+- (void) appendBezierPath:(NSBezierPath *) path;
 ```
 
 #### Discussion
@@ -24,23 +29,24 @@ This method adds the commands used to create `aPath` to the end of the receiverâ
 
 ## See Also
 
-- [func appendPoints(NSPointArray, count: Int)](nsbezierpath/appendpoints(_:count:).md)
+### Appending Common Shapes to a Path
+- [func appendPoints(NSPointArray, count: Int)](./appendpoints%28_,count%29.md)
   Appends a series of line segments to the path.
-- [func appendOval(in: NSRect)](nsbezierpath/appendoval(in:).md)
+- [func appendOval(in: NSRect)](./appendoval%28in%29.md)
   Appends an oval path to the path, inscribing the oval in the specified rectangle.
-- [func appendArc(from: NSPoint, to: NSPoint, radius: CGFloat)](nsbezierpath/appendarc(from:to:radius:).md)
+- [func appendArc(from: NSPoint, to: NSPoint, radius: CGFloat)](./appendarc%28from,to,radius%29.md)
   Appends an arc to the path.
-- [func appendArc(withCenter: NSPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat)](nsbezierpath/appendarc(withcenter:radius:startangle:endangle:).md)
+- [func appendArc(withCenter: NSPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat)](./appendarc%28withcenter,radius,startangle,endangle%29.md)
   Appends an arc of a circle to the path.
-- [func appendArc(withCenter: NSPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat, clockwise: Bool)](nsbezierpath/appendarc(withcenter:radius:startangle:endangle:clockwise:).md)
+- [func appendArc(withCenter: NSPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat, clockwise: Bool)](./appendarc%28withcenter,radius,startangle,endangle,clockwise%29.md)
   Appends an arc of a circle to the path.
-- [func appendRect(NSRect)](nsbezierpath/appendrect(_:).md)
+- [func appendRect(NSRect)](./appendrect%28_%29.md)
   Appends a rectangular path to the path.
-- [func appendRoundedRect(NSRect, xRadius: CGFloat, yRadius: CGFloat)](nsbezierpath/appendroundedrect(_:xradius:yradius:).md)
+- [func appendRoundedRect(NSRect, xRadius: CGFloat, yRadius: CGFloat)](./appendroundedrect%28_,xradius,yradius%29.md)
   Appends a rounded rectangular path to the path.
-- [func append(withCGGlyph: CGGlyph, in: NSFont)](nsbezierpath/append(withcgglyph:in:).md)
+- [func append(withCGGlyph: CGGlyph, in: NSFont)](./append%28withcgglyph,in%29.md)
   Appends an outline of the specified glyph to the path.
-- [func append(withCGGlyphs: UnsafePointer<CGGlyph>, count: Int, in: NSFont)](nsbezierpath/append(withcgglyphs:count:in:).md)
+- [func append(withCGGlyphs: UnsafePointer<CGGlyph>, count: Int, in: NSFont)](./append%28withcgglyphs,count,in%29.md)
   Appends the outlines of the specified glyphs to the path.
 
 

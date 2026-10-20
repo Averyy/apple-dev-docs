@@ -1,7 +1,8 @@
 # kMDItemAppleLoopsKeyFilterType
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies key filtering information about a loop. Loops are matched against projects that often in a major or minor key. A CFString.
 
@@ -12,6 +13,10 @@ Specifies key filtering information about a loop. Loops are matched against proj
 
 ```swift
 let kMDItemAppleLoopsKeyFilterType: CFString!
+```
+
+```c
+const CFStringRef kMDItemAppleLoopsKeyFilterType;
 ```
 
 #### Discussion

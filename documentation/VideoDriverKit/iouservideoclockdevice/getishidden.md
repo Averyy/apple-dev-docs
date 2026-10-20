@@ -1,7 +1,8 @@
 # GetIsHidden
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets a Boolean value indicating if the device is hidden.
 
@@ -10,7 +11,7 @@ Gets a Boolean value indicating if the device is hidden.
 
 ## Declaration
 
-```swift
+```c
 bool GetIsHidden();
 ```
 
@@ -20,13 +21,14 @@ The object’s work queue synchronizes access to the value. The default value is
 
 ## See Also
 
-- [GetDeviceIsRunning](iouservideoclockdevice/getdeviceisrunning.md)
+### Working with clock device state
+- [GetDeviceIsRunning](./getdeviceisrunning.md)
   Gets bool value indicating if device is running.
-- [SetDeviceIsAlive](iouservideoclockdevice/setdeviceisalive.md)
+- [SetDeviceIsAlive](./setdeviceisalive.md)
   Sets a Boolean value to indicate the device is alive.
-- [GetDeviceIsAlive](iouservideoclockdevice/getdeviceisalive.md)
+- [GetDeviceIsAlive](./getdeviceisalive.md)
   Gets a Boolean value indicating if the device is alive.
-- [SetIsHidden](iouservideoclockdevice/setishidden.md)
+- [SetIsHidden](./setishidden.md)
   Sets a Boolean value indicating if the device is hidden.
 
 

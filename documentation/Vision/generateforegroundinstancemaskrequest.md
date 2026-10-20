@@ -1,7 +1,8 @@
 # GenerateForegroundInstanceMaskRequest
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A request that generates an instance mask of noticeable objects to separate from the background.
 
@@ -22,59 +23,60 @@ struct GenerateForegroundInstanceMaskRequest
 
 #### Overview
 
-This request generates an [`InstanceMaskObservation`](instancemaskobservation.md) object with instance-mask data.
+This request generates an [`InstanceMaskObservation`](./instancemaskobservation.md) object with instance-mask data.
 
 ## Topics
 
 ### Creating a request
-- [init(GenerateForegroundInstanceMaskRequest.Revision?)](generateforegroundinstancemaskrequest/init(_:).md)
+- [init(GenerateForegroundInstanceMaskRequest.Revision?)](./generateforegroundinstancemaskrequest/init%28_%29.md)
   Creates a foreground instance-mask request.
 ### Performing a request
-- [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
+- [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-80bya.md)
   Performs the request on an image URL and produces observations.
-- [func perform(on: Data, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-3f3f1.md)
+- [func perform(on: Data, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-3f3f1.md)
   Performs the request on image data and produces observations.
-- [func perform(on: CGImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-qxxx.md)
+- [func perform(on: CGImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-qxxx.md)
   Performs the request on a Core Graphics image and produces observations.
-- [func perform(on: CVPixelBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-xspx.md)
+- [func perform(on: CVPixelBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-xspx.md)
   Performs the request on a pixel buffer and produces observations.
-- [func perform(on: CMSampleBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-3hddl.md)
+- [func perform(on: CMSampleBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-3hddl.md)
   Performs the request on a Core Media buffer and produces observations.
-- [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
+- [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-85ex1.md)
   Performs the request on a Core Image image and produces observations.
 ### Understanding the result
-- [struct InstanceMaskObservation](instancemaskobservation.md)
+- [struct InstanceMaskObservation](./instancemaskobservation.md)
   An observation that contains an instance mask that labels instances in the mask.
 ### Getting the revision
-- [let revision: GenerateForegroundInstanceMaskRequest.Revision](generateforegroundinstancemaskrequest/revision-swift.property.md)
+- [let revision: GenerateForegroundInstanceMaskRequest.Revision](./generateforegroundinstancemaskrequest/revision-swift.property.md)
   The algorithm or implementation the request uses.
-- [static let supportedRevisions: [GenerateForegroundInstanceMaskRequest.Revision]](generateforegroundinstancemaskrequest/supportedrevisions.md)
+- [static let supportedRevisions: [GenerateForegroundInstanceMaskRequest.Revision]](./generateforegroundinstancemaskrequest/supportedrevisions.md)
   The collection of revisions the request supports.
-- [GenerateForegroundInstanceMaskRequest.Revision](generateforegroundinstancemaskrequest/revision-swift.enum.md)
+- [GenerateForegroundInstanceMaskRequest.Revision](./generateforegroundinstancemaskrequest/revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [ImageProcessingRequest](imageprocessingrequest.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionRequest](visionrequest.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [ImageProcessingRequest](./imageprocessingrequest.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionRequest](./visionrequest.md)
 
 ## See Also
 
-- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+### Image segmentation and subject lifting
+- [Isolating an object from a tap, box, or scribble](./segmenting-objects-with-iterative-refinement.md)
   Generate and refine a mask that isolates an object in an image based on a person’s selection.
-- [Segmenting objects using taps, scribbles or rectangles](segmenting-objects-using-taps-scribbles-or-rectangles.md)
+- [Segmenting objects using taps, scribbles or rectangles](./segmenting-objects-using-taps-scribbles-or-rectangles.md)
   Select objects or regions in a photo using taps, scribbles, or rectangle selection, and generate a segmentation mask using the iterative segmentation API.
-- [struct GeneratePersonInstanceMaskRequest](generatepersoninstancemaskrequest.md)
+- [struct GeneratePersonInstanceMaskRequest](./generatepersoninstancemaskrequest.md)
   A request that produces a mask of individual people it finds in the input image.
-- [class GeneratePersonSegmentationRequest](generatepersonsegmentationrequest.md)
+- [class GeneratePersonSegmentationRequest](./generatepersonsegmentationrequest.md)
   A request that produces a matte image for a person it finds in the input image.
-- [class GenerateIterativeSegmentationRequest](generateiterativesegmentationrequest.md)
+- [class GenerateIterativeSegmentationRequest](./generateiterativesegmentationrequest.md)
   A request that generates a segmentation mask from points, a rectangle, or a scribble.
 
 

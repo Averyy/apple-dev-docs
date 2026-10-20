@@ -1,7 +1,8 @@
 # NSMagnificationGestureRecognizer
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A continuous gesture recognizer that tracks a pinch gesture that magnifies content.
 
@@ -14,42 +15,47 @@ A continuous gesture recognizer that tracks a pinch gesture that magnifies conte
 class NSMagnificationGestureRecognizer
 ```
 
+```objc
+@interface NSMagnificationGestureRecognizer : NSGestureRecognizer
+```
+
 #### Overview
 
 This object tracks pinch gestures on a track pad or other input device and stores the resulting magnification value for you to use in your code.
 
-This gesture recognizer automatically sets the value of the [`delaysMagnificationEvents`](nsgesturerecognizer/delaysmagnificationevents.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+This gesture recognizer automatically sets the value of the [`delaysMagnificationEvents`](./nsgesturerecognizer/delaysmagnificationevents.md) property to [`true`](../Swift/true.md).
 
 ## Topics
 
 ### Finding the magnification factor
-- [var magnification: CGFloat](nsmagnificationgesturerecognizer/magnification.md)
+- [var magnification: CGFloat](./nsmagnificationgesturerecognizer/magnification.md)
   The amount of magnification to apply.
 
 ## Relationships
 
 ### Inherits From
-- [NSGestureRecognizer](nsgesturerecognizer.md)
+- [NSGestureRecognizer](./nsgesturerecognizer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSClickGestureRecognizer](nsclickgesturerecognizer.md)
+### Standard Gestures
+- [class NSClickGestureRecognizer](./nsclickgesturerecognizer.md)
   A discrete gesture recognizer that tracks a specified number of mouse clicks.
-- [class NSPressGestureRecognizer](nspressgesturerecognizer.md)
+- [class NSPressGestureRecognizer](./nspressgesturerecognizer.md)
   A discrete gesture recognizer that tracks whether the user holds down a mouse button for a minimum amount of time before releasing it.
-- [class NSPanGestureRecognizer](nspangesturerecognizer.md)
+- [class NSPanGestureRecognizer](./nspangesturerecognizer.md)
   A continuous gesture recognizer for panning gestures.
-- [class NSRotationGestureRecognizer](nsrotationgesturerecognizer.md)
+- [class NSRotationGestureRecognizer](./nsrotationgesturerecognizer.md)
   A continuous gesture recognizer that tracks two trackpad touches moving opposite each other in a circular motion.
 
 

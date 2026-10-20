@@ -1,18 +1,19 @@
 # QUADRATURE_ALLOC_ERROR
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that indicates that memory allocation failed.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,22 +21,27 @@ A constant that indicates that memory allocation failed.
 var QUADRATURE_ALLOC_ERROR: quadrature_status { get }
 ```
 
+```c
+QUADRATURE_ALLOC_ERROR
+```
+
 ## See Also
 
-- [init(Int32)](quadrature_status/init(_:).md)
-- [init(rawValue: Int32)](quadrature_status/init(rawvalue:).md)
-- [var rawValue: Int32](quadrature_status/rawvalue.md)
-- [var QUADRATURE_ERROR: quadrature_status](quadrature_error.md)
+### Constants
+- [init(Int32)](./quadrature_status/init%28_%29.md)
+- [init(rawValue: Int32)](./quadrature_status/init%28rawvalue%29.md)
+- [var rawValue: Int32](./quadrature_status/rawvalue.md)
+- [var QUADRATURE_ERROR: quadrature_status](./quadrature_error.md)
   A constant that indicates that a generic error occurred.
-- [var QUADRATURE_INTEGRATE_BAD_BEHAVIOUR_ERROR: quadrature_status](quadrature_integrate_bad_behaviour_error.md)
+- [var QUADRATURE_INTEGRATE_BAD_BEHAVIOUR_ERROR: quadrature_status](./quadrature_integrate_bad_behaviour_error.md)
   A constant that indicates bad integrand behaviour, or that an excessive roundoff error occurred.
-- [var QUADRATURE_INTEGRATE_MAX_EVAL_ERROR: quadrature_status](quadrature_integrate_max_eval_error.md)
+- [var QUADRATURE_INTEGRATE_MAX_EVAL_ERROR: quadrature_status](./quadrature_integrate_max_eval_error.md)
   A constant that indicates that the requested accuracy limit could not be reached.
-- [var QUADRATURE_INTERNAL_ERROR: quadrature_status](quadrature_internal_error.md)
+- [var QUADRATURE_INTERNAL_ERROR: quadrature_status](./quadrature_internal_error.md)
   A constant that indicates that an internal error occurred.
-- [var QUADRATURE_INVALID_ARG_ERROR: quadrature_status](quadrature_invalid_arg_error.md)
+- [var QUADRATURE_INVALID_ARG_ERROR: quadrature_status](./quadrature_invalid_arg_error.md)
   A constant that indicates that an invalid argument was passed to the operation.
-- [var QUADRATURE_SUCCESS: quadrature_status](quadrature_success.md)
+- [var QUADRATURE_SUCCESS: quadrature_status](./quadrature_success.md)
   A constant that indicates that the Quadrature operation was successful.
 
 

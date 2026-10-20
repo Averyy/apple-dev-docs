@@ -1,7 +1,8 @@
 # maximumVerticesPerPolygon
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum vertices per polygon used when creating the Navigation Mesh.
 
@@ -21,9 +22,10 @@ var maximumVerticesPerPolygon: Int
 
 ## See Also
 
-- [var maximumEdgeLength: Double](navigationmeshresource/configuration-swift.struct/maximumedgelength.md)
+### Configuring contour meshing
+- [var maximumEdgeLength: Double](./maximumedgelength.md)
   The maximum length of polygon edges in the generated Navigation Mesh, in meters. This value can help modify the resulting Navigation Mesh to have better-looking polygons on maps with long, uninterrupted edges.
-- [var maximumSimplificationError: Double](navigationmeshresource/configuration-swift.struct/maximumsimplificationerror.md)
+- [var maximumSimplificationError: Double](./maximumsimplificationerror.md)
   The maximum deviation that the contours of a generated Navigation Mesh can have from the original mesh, in meters.
 
 

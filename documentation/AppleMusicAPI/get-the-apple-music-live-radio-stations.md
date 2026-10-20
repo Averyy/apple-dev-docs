@@ -1,7 +1,8 @@
 # Get the Apple Music Live Radio Stations
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch the Apple Music live radio stations for the storefront.
 
@@ -10,13 +11,13 @@ Fetch the Apple Music live radio stations for the storefront.
 
 #### Discussion
 
-If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [`Handling Requests and Responses`](handling-requests-and-responses.md).
+If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/catalog/us/stations?filter[featured]=apple-music-live-radio
 ```
 
@@ -176,24 +177,40 @@ https://api.music.apple.com/v1/catalog/us/stations?filter[featured]=apple-music-
 
 ## Parameters
 
+### Path Parameters
+
+- `storefront` (string) *(required)*: An iTunes Store territory, specified by an ISO 3166 alpha-2 country code. The possible values are the `id` attributes of `Storefront` objects.
+
+### Query Parameters
+
 - `filter[featured]` ([string]) *(required)*: A filter to apply to the request. The maximum fetch limit is 1.
+
+  **Allowed Values**: `apple-music-live-radio`
 - `include` ([string]): Additional relationships to include in the fetch.
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 - `extend` ([string]): A list of attribute extensions to apply to resources in the response.
 
+## Responses
+
+- `200` OK (`StationsResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
+
 ## See Also
 
-- [object Stations](stations.md)
+### Related Documentation
+- [object Stations](./stations.md)
   A resource object that represents a station.
-- [object StationsResponse](stationsresponse.md)
+- [object StationsResponse](./stationsresponse.md)
   The response to a stations request.
-- [Get a Catalog Station](get-a-catalog-station.md)
+### Requesting a Catalog Station
+- [Get a Catalog Station](./get-a-catalog-station.md)
   Fetch a station by using its identifier.
-- [Get a Catalog Station's Relationship Directly by Name](fetch-a-relationship-on-this-resource-by-name-38wmf.md)
+- [Get a Catalog Station's Relationship Directly by Name](./fetch-a-relationship-on-this-resource-by-name-38wmf.md)
   Fetch a station’s relationship using its identifier.
-- [Get Multiple Catalog Stations](get-multiple-catalog-stations.md)
+- [Get Multiple Catalog Stations](./get-multiple-catalog-stations.md)
   Fetch one or more stations by using their identifiers.
-- [Get the User's Personal Apple Music Station](get-the-user's-personal-apple-music-station.md)
+- [Get the User's Personal Apple Music Station](./get-the-users-personal-apple-music-station.md)
   Fetch the current user’s personal Apple Music station.
 
 

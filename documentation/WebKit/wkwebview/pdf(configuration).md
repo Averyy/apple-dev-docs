@@ -1,7 +1,8 @@
 # pdf(configuration:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates PDF data from the web view’s contents asynchronously.
 
@@ -10,7 +11,7 @@ Generates PDF data from the web view’s contents asynchronously.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -29,17 +30,18 @@ A data object that contains the PDF data to use for rendering the contents of th
 
 ## See Also
 
-- [func takeSnapshot(with: WKSnapshotConfiguration?, completionHandler: (UIImage?, (any Error)?) -> Void)](wkwebview/takesnapshot(with:completionhandler:).md)
+### Capturing the web view’s content
+- [func takeSnapshot(with: WKSnapshotConfiguration?, completionHandler: (UIImage?, (any Error)?) -> Void)](./takesnapshot%28with,completionhandler%29.md)
   Generates a platform-native image from the web view’s contents asynchronously.
-- [func createPDF(configuration: WKPDFConfiguration, completionHandler: (Result<Data, any Error>) -> Void)](wkwebview/createpdf(configuration:completionhandler:).md)
+- [func createPDF(configuration: WKPDFConfiguration, completionHandler: (Result<Data, any Error>) -> Void)](./createpdf%28configuration,completionhandler%29.md)
   Generates PDF data from the web view’s contents asynchronously.
-- [func createWebArchiveData(completionHandler: (Result<Data, any Error>) -> Void)](wkwebview/createwebarchivedata(completionhandler:).md)
+- [func createWebArchiveData(completionHandler: (Result<Data, any Error>) -> Void)](./createwebarchivedata%28completionhandler%29.md)
   Creates a web archive of the web view’s current contents asynchronously.
-- [func printOperation(with: NSPrintInfo) -> NSPrintOperation](wkwebview/printoperation(with:).md)
+- [func printOperation(with: NSPrintInfo) -> NSPrintOperation](./printoperation%28with%29.md)
   Returns the print operation object to use when printing the contents of the web view.
-- [class WKSnapshotConfiguration](wksnapshotconfiguration.md)
+- [class WKSnapshotConfiguration](../wksnapshotconfiguration.md)
   The configuration data to use when generating an image from a web view’s contents.
-- [class WKPDFConfiguration](wkpdfconfiguration.md)
+- [class WKPDFConfiguration](../wkpdfconfiguration.md)
   The configuration data to use when generating a PDF representation of a web view’s contents.
 
 

@@ -1,23 +1,30 @@
 # init(coordinate:addressDictionary:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a placemark object using the specified coordinate and Address Book dictionary.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
-- macOS 10.9+
-- tvOS 9.2+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 3.0+ - Deprecated in 26.0
+- iPadOS 3.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.9+ - Deprecated in 26.0
+- tvOS 9.2+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 2.0+ - Deprecated in 26.0
+
+> **Deprecated**: Use MKMapItem's location, address and addressRepresentations properties instead. Use MKAddressRepresentations for formatted address strings for MapKit provided MKMapItems
 
 ## Declaration
 
 ```swift
 init(coordinate: CLLocationCoordinate2D, addressDictionary: [String : Any]?)
+```
+
+```objc
+- (instancetype) initWithCoordinate:(CLLocationCoordinate2D) coordinate addressDictionary:(NSDictionary<NSString *,id> *) addressDictionary;
 ```
 
 #### Return Value
@@ -35,10 +42,12 @@ You can create placemark objects manually for entities for which you already hav
 
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
-- [init(coordinate: CLLocationCoordinate2D)](mkplacemark/init(coordinate:).md)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Creating a placemark object
+- [init(coordinate: CLLocationCoordinate2D)](./init%28coordinate%29.md)
   Creates and returns a placemark object using the specified coordinate.
-- [init(coordinate: CLLocationCoordinate2D, postalAddress: CNPostalAddress)](mkplacemark/init(coordinate:postaladdress:).md)
+- [init(coordinate: CLLocationCoordinate2D, postalAddress: CNPostalAddress)](./init%28coordinate,postaladdress%29.md)
   Creates and returns a placemark object with the specified coordinate and postal address from the user’s Contacts database.
 
 

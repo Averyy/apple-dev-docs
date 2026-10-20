@@ -1,7 +1,8 @@
 # cblas_crotg(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Constructs a complex Givens rotation.
 
@@ -20,6 +21,10 @@ Constructs a complex Givens rotation.
 func cblas_crotg(_ A: OpaquePointer, _ B: OpaquePointer, _ C: UnsafeMutablePointer<Float>, _ S: OpaquePointer)
 ```
 
+```c
+void cblas_crotg(__LAPACK_float_complex *A, __LAPACK_float_complex *B, float *C, __LAPACK_float_complex *S);
+```
+
 #### Discussion
 
 Given a vertical matrix containing `a` and `b`, computes the values of `cos θ` and `sin θ` that zero the lower value (`b`). Returns the value of `sin θ` in `s`, the value of `cos θ` in `c`, and the upper value (`r`) in `a`.
@@ -35,35 +40,36 @@ Given a vertical matrix containing `a` and `b`, computes the values of `cos θ` 
 
 ## See Also
 
-- [func cblas_caxpy(__LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](cblas_caxpy(_:_:_:_:_:_:).md)
+### Single-precision complex matrix functions
+- [func cblas_caxpy(__LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](./cblas_caxpy%28_,_,_,_,_,_%29.md)
   Computes a constant times a vector plus a vector (single-precision complex).
-- [func cblas_ccopy(__LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](cblas_ccopy(_:_:_:_:_:).md)
+- [func cblas_ccopy(__LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](./cblas_ccopy%28_,_,_,_,_%29.md)
   Copies a vector to another vector (single-precision complex).
-- [func cblas_cgbmv(CBLAS_ORDER, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](cblas_cgbmv(_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_cgbmv(CBLAS_ORDER, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](./cblas_cgbmv%28_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Scales a general band matrix, then multiplies by a vector, then adds a vector (single-precision complex).
-- [func cblas_cgemm(CBLAS_ORDER, CBLAS_TRANSPOSE, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](cblas_cgemm(_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_cgemm(CBLAS_ORDER, CBLAS_TRANSPOSE, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](./cblas_cgemm%28_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Multiplies two matrices (single-precision complex).
-- [func cblas_cgemv(CBLAS_ORDER, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](cblas_cgemv(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_cgemv(CBLAS_ORDER, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](./cblas_cgemv%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Multiplies a matrix by a vector (single-precision complex).
-- [func cblas_cgerc(CBLAS_ORDER, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](cblas_cgerc(_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_cgerc(CBLAS_ORDER, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](./cblas_cgerc%28_,_,_,_,_,_,_,_,_,_%29.md)
   Multiplies vector X by the conjugate transpose of vector Y, then adds matrix A (single-precision complex).
-- [func cblas_cgeru(CBLAS_ORDER, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](cblas_cgeru(_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_cgeru(CBLAS_ORDER, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](./cblas_cgeru%28_,_,_,_,_,_,_,_,_,_%29.md)
   Multiplies vector X by the transpose of vector Y, then adds matrix A (single-precision complex).
-- [func cblas_chbmv(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](cblas_chbmv(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_chbmv(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](./cblas_chbmv%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Scales a Hermitian band matrix, then multiplies by a vector, then adds a vector (single-precision complex).
-- [func cblas_chemm(CBLAS_ORDER, CBLAS_SIDE, CBLAS_UPLO, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](cblas_chemm(_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_chemm(CBLAS_ORDER, CBLAS_SIDE, CBLAS_UPLO, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](./cblas_chemm%28_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Multiplies two Hermitian matrices (single-precision complex), then adds a third (with scaling).
-- [func cblas_chemv(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](cblas_chemv(_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_chemv(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](./cblas_chemv%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Scales and multiplies a Hermitian matrix by a vector, then adds a second (scaled) vector.
-- [func cblas_cher(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, Float, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](cblas_cher(_:_:_:_:_:_:_:_:).md)
+- [func cblas_cher(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, Float, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](./cblas_cher%28_,_,_,_,_,_,_,_%29.md)
   Hermitian rank 1 update: adds the product of a scaling factor, vector `X`, and the conjugate transpose of `X` to matrix `A`.
-- [func cblas_cher2(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](cblas_cher2(_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_cher2(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](./cblas_cher2%28_,_,_,_,_,_,_,_,_,_%29.md)
   Hermitian rank 2 update: adds the product of a scaling factor, vector `X`, and the conjugate transpose of vector `Y` to the product of the conjugate of the scaling factor, vector `Y`, and the conjugate transpose of vector `X`, and adds the result to matrix `A`.
-- [func cblas_cher2k(CBLAS_ORDER, CBLAS_UPLO, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, Float, OpaquePointer?, __LAPACK_int)](cblas_cher2k(_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_cher2k(CBLAS_ORDER, CBLAS_UPLO, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, Float, OpaquePointer?, __LAPACK_int)](./cblas_cher2k%28_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Performs a rank-2k update of a complex Hermitian matrix (single-precision complex).
-- [func cblas_cherk(CBLAS_ORDER, CBLAS_UPLO, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, Float, OpaquePointer?, __LAPACK_int, Float, OpaquePointer?, __LAPACK_int)](cblas_cherk(_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_cherk(CBLAS_ORDER, CBLAS_UPLO, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, Float, OpaquePointer?, __LAPACK_int, Float, OpaquePointer?, __LAPACK_int)](./cblas_cherk%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Rank-k update—multiplies a Hermitian matrix by its transpose and adds a second matrix (single precision).
-- [func cblas_chpmv(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, OpaquePointer, OpaquePointer?, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](cblas_chpmv(_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_chpmv(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, OpaquePointer, OpaquePointer?, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](./cblas_chpmv%28_,_,_,_,_,_,_,_,_,_%29.md)
   Scales a packed hermitian matrix, multiplies it by a vector, and adds a scaled vector.
 
 

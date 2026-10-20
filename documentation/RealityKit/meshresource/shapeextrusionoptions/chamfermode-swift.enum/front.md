@@ -1,7 +1,8 @@
 # MeshResource.ShapeExtrusionOptions.ChamferMode.front
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Only chamfer the front of the extrusion.
 

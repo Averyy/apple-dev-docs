@@ -1,7 +1,8 @@
 # CMFallDetectionEvent.UserResolution.confirmed
 
 **Framework**: Core Motion  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user confirmed the event.
 
@@ -14,13 +15,18 @@ The user confirmed the event.
 case confirmed
 ```
 
+```c
+CMFallDetectionEventUserResolutionConfirmed
+```
+
 ## See Also
 
-- [CMFallDetectionEvent.UserResolution.dismissed](cmfalldetectionevent/userresolution/dismissed.md)
+### Resolutions
+- [CMFallDetectionEvent.UserResolution.dismissed](./dismissed.md)
   The user dismissed the fall event alert, but didn’t explicitly confirm or reject the event.
-- [CMFallDetectionEvent.UserResolution.rejected](cmfalldetectionevent/userresolution/rejected.md)
+- [CMFallDetectionEvent.UserResolution.rejected](./rejected.md)
   The user rejected the fall event.
-- [CMFallDetectionEvent.UserResolution.unresponsive](cmfalldetectionevent/userresolution/unresponsive.md)
+- [CMFallDetectionEvent.UserResolution.unresponsive](./unresponsive.md)
   The user didn’t respond to the fall event and the system hasn’t detected recovery motions.
 
 

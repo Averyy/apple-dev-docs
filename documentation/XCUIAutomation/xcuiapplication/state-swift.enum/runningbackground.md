@@ -1,18 +1,19 @@
 # XCUIApplication.State.runningBackground
 
 **Framework**: XCUIAutomation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The application is running in the background.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,15 +22,20 @@ The application is running in the background.
 case runningBackground
 ```
 
+```c
+XCUIApplicationStateRunningBackground
+```
+
 ## See Also
 
-- [XCUIApplication.State.unknown](xcuiapplication/state-swift.enum/unknown.md)
+### Enumeration cases
+- [XCUIApplication.State.unknown](./unknown.md)
   The application’s current state is unknown.
-- [XCUIApplication.State.notRunning](xcuiapplication/state-swift.enum/notrunning.md)
+- [XCUIApplication.State.notRunning](./notrunning.md)
   The application isn’t running.
-- [XCUIApplication.State.runningBackgroundSuspended](xcuiapplication/state-swift.enum/runningbackgroundsuspended.md)
+- [XCUIApplication.State.runningBackgroundSuspended](./runningbackgroundsuspended.md)
   The application is running in the background, but is suspended.
-- [XCUIApplication.State.runningForeground](xcuiapplication/state-swift.enum/runningforeground.md)
+- [XCUIApplication.State.runningForeground](./runningforeground.md)
   The application is running in the foreground.
 
 

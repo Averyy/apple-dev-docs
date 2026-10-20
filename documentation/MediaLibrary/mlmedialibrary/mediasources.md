@@ -1,18 +1,25 @@
 # mediaSources
 
 **Framework**: Media Library  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a dictionary of media sources by identifier.
 
 **Availability**:
 - Mac Catalyst 13.0+
-- macOS 10.9+
+- macOS 10.9+ - Deprecated in 10.15
+
+> **Deprecated**: MediaLibrary.framework will be removed in a future OS version. Use Photos.framework or iTunesLibrary.framework instead.
 
 ## Declaration
 
 ```swift
 var mediaSources: [String : MLMediaSource]? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSDictionary<NSString *,MLMediaSource *> * mediaSources;
 ```
 
 #### Discussion

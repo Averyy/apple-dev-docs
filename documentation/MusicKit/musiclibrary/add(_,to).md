@@ -1,7 +1,8 @@
 # add(_:to:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an item to the end of an existing playlist.
 

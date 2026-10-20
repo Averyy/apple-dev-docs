@@ -1,7 +1,8 @@
 # isCanceled
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you canceled the job.
 
@@ -21,7 +22,8 @@ final var isCanceled: Bool { get }
 
 ## See Also
 
-- [func cancel()](mljob/cancel.md)
+### Managing a job
+- [func cancel()](./cancel%28%29.md)
   Stops the training session’s execution.
 
 

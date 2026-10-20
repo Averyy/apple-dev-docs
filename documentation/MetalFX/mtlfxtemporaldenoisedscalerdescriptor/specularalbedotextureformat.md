@@ -1,7 +1,8 @@
 # specularAlbedoTextureFormat
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format of the input specular albedo texture for the scaler you create with this descriptor.
 
@@ -16,6 +17,10 @@ The pixel format of the input specular albedo texture for the scaler you create 
 
 ```swift
 var specularAlbedoTextureFormat: MTLPixelFormat { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLPixelFormat specularAlbedoTextureFormat;
 ```
 
 

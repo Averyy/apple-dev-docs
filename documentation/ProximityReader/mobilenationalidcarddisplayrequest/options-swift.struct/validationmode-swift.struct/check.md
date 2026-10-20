@@ -1,7 +1,8 @@
 # check
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A button that enables the user to perform a single document request.
 

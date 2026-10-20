@@ -1,25 +1,28 @@
 # GameCenterEnabledVersion.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
 **Availability**:
-- App Store Connect API 1.2+
+- App Store Connect API 1.2+ - Deprecated in 3.0
+
+> **Deprecated**: This object is deprecated.
 
 ## Declaration
 
-```swift
+```
 object GameCenterEnabledVersion.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterEnabledVersion.Relationships.App](gamecenterenabledversion/relationships-data.dictionary/app-data.dictionary.md)
+- [object GameCenterEnabledVersion.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object GameCenterEnabledVersion.Relationships.CompatibleVersions](gamecenterenabledversion/relationships-data.dictionary/compatibleversions-data.dictionary.md)
+- [object GameCenterEnabledVersion.Relationships.CompatibleVersions](./relationships-data.dictionary/compatibleversions-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -29,7 +32,8 @@ object GameCenterEnabledVersion.Relationships
 
 ## See Also
 
-- [object GameCenterEnabledVersion.Attributes](gamecenterenabledversion/attributes-data.dictionary.md)
+### Objects
+- [object GameCenterEnabledVersion.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a Game Center Enabled Versions resource.
 
 

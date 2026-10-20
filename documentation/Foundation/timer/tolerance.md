@@ -1,7 +1,8 @@
 # tolerance
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of time after the scheduled fire date that the timer may fire.
 
@@ -18,6 +19,10 @@ The amount of time after the scheduled fire date that the timer may fire.
 
 ```swift
 var tolerance: TimeInterval { get set }
+```
+
+```objc
+@property NSTimeInterval tolerance;
 ```
 
 #### Discussion

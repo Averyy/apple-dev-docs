@@ -1,7 +1,8 @@
 # ASAuthorizationError
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Errors that can occur during authorization.
 
@@ -23,48 +24,49 @@ struct ASAuthorizationError
 ## Topics
 
 ### Getting the Properties
-- [static var notInteractive: ASAuthorizationError.Code](asauthorizationerror-swift.struct/notinteractive.md)
+- [static var notInteractive: ASAuthorizationError.Code](./asauthorizationerror-swift.struct/notinteractive.md)
 ### Error Domain
-- [static var errorDomain: String](asauthorizationerror-swift.struct/errordomain.md)
-- [let ASAuthorizationErrorDomain: String](asauthorizationerrordomain.md)
+- [static var errorDomain: String](./asauthorizationerror-swift.struct/errordomain.md)
+- [let ASAuthorizationErrorDomain: String](./asauthorizationerrordomain.md)
   The domain of authorization errors.
 ### Error Codes
-- [static var canceled: ASAuthorizationError.Code](asauthorizationerror-swift.struct/canceled.md)
+- [static var canceled: ASAuthorizationError.Code](./asauthorizationerror-swift.struct/canceled.md)
   The user canceled the authorization attempt.
-- [static var failed: ASAuthorizationError.Code](asauthorizationerror-swift.struct/failed.md)
+- [static var failed: ASAuthorizationError.Code](./asauthorizationerror-swift.struct/failed.md)
   The authorization attempt failed.
-- [static var invalidResponse: ASAuthorizationError.Code](asauthorizationerror-swift.struct/invalidresponse.md)
+- [static var invalidResponse: ASAuthorizationError.Code](./asauthorizationerror-swift.struct/invalidresponse.md)
   The authorization request received an invalid response.
-- [static var notHandled: ASAuthorizationError.Code](asauthorizationerror-swift.struct/nothandled.md)
+- [static var notHandled: ASAuthorizationError.Code](./asauthorizationerror-swift.struct/nothandled.md)
   The authorization request wasn’t handled.
-- [static var unknown: ASAuthorizationError.Code](asauthorizationerror-swift.struct/unknown.md)
+- [static var unknown: ASAuthorizationError.Code](./asauthorizationerror-swift.struct/unknown.md)
   The authorization attempt failed for an unknown reason.
-- [static var credentialExport: ASAuthorizationError.Code](asauthorizationerror-swift.struct/credentialexport.md)
+- [static var credentialExport: ASAuthorizationError.Code](./asauthorizationerror-swift.struct/credentialexport.md)
   The credential export request failed.
-- [static var credentialImport: ASAuthorizationError.Code](asauthorizationerror-swift.struct/credentialimport.md)
+- [static var credentialImport: ASAuthorizationError.Code](./asauthorizationerror-swift.struct/credentialimport.md)
   The credential import request failed.
-- [ASAuthorizationError.Code](asauthorizationerror-swift.struct/code.md)
+- [ASAuthorizationError.Code](./asauthorizationerror-swift.struct/code.md)
   Codes that authorization errors can have.
 ### Type Properties
-- [static var deviceNotConfiguredForPasskeyCreation: ASAuthorizationError.Code](asauthorizationerror-swift.struct/devicenotconfiguredforpasskeycreation.md)
-- [static var matchedExcludedCredential: ASAuthorizationError.Code](asauthorizationerror-swift.struct/matchedexcludedcredential.md)
-- [static var preferSignInWithApple: ASAuthorizationError.Code](asauthorizationerror-swift.struct/prefersigninwithapple.md)
+- [static var deviceNotConfiguredForPasskeyCreation: ASAuthorizationError.Code](./asauthorizationerror-swift.struct/devicenotconfiguredforpasskeycreation.md)
+- [static var matchedExcludedCredential: ASAuthorizationError.Code](./asauthorizationerror-swift.struct/matchedexcludedcredential.md)
+- [static var preferSignInWithApple: ASAuthorizationError.Code](./asauthorizationerror-swift.struct/prefersigninwithapple.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func authorizationController(controller: ASAuthorizationController, didCompleteWithError: any Error)](asauthorizationcontrollerdelegate/authorizationcontroller(controller:didcompletewitherror:).md)
+### Handling Authorization Errors
+- [func authorizationController(controller: ASAuthorizationController, didCompleteWithError: any Error)](./asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewitherror%29.md)
   Tells the delegate when authorization fails, and provides an error explaining why.
-- [let ASAuthorizationErrorDomain: String](asauthorizationerrordomain.md)
+- [let ASAuthorizationErrorDomain: String](./asauthorizationerrordomain.md)
   The domain of authorization errors.
 
 

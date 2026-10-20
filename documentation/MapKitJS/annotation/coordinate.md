@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The annotation’s coordinate.
 
@@ -10,24 +11,25 @@ The annotation’s coordinate.
 
 ## Declaration
 
-```swift
+```
 get coordinate(): Coordinate;
 set coordinate(value: CoordinateData);
 ```
 
 ## See Also
 
-- [anchorOffset](annotation/anchoroffset.md)
+### Getting and setting annotation appearance
+- [anchorOffset](./anchoroffset.md)
   An offset that changes the annotation’s default anchor point.
-- [appearanceAnimation](annotation/appearanceanimation.md)
+- [appearanceAnimation](./appearanceanimation.md)
   A CSS animation that runs when the annotation appears on the map.
-- [displayPriority](annotation/displaypriority-data.property.md)
+- [displayPriority](./displaypriority-data.property.md)
   A numeric hint that the map uses to prioritize how it displays annotations.
-- [padding](annotation/padding.md)
+- [padding](./padding.md)
   Spacing to add around the annotation when showing items.
-- [size](annotation/size.md)
+- [size](./size.md)
   The desired dimensions of the annotation, in CSS pixels.
-- [visible](annotation/visible.md)
+- [visible](./visible.md)
   A Boolean value that determines whether the annotation is visible or hidden.
 
 

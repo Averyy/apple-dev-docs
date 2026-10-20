@@ -1,16 +1,17 @@
 # setNeedsLayout()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates the current layout of the receiver and triggers a layout update during the next update cycle.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,13 @@ Invalidates the current layout of the receiver and triggers a layout update duri
 func setNeedsLayout()
 ```
 
+```objc
+- (void) setNeedsLayout;
+```
+
 ## Mentions
 
-- [Updating views automatically with observation tracking in UIKit](updating-views-automatically-with-observation-tracking-in-uikit.md)
+- [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md)
 
 #### Discussion
 
@@ -28,13 +33,14 @@ Call this method on your application’s main thread when you want to adjust the
 
 ## See Also
 
-- [func layoutSubviews()](uiview/layoutsubviews.md)
+### Laying out subviews
+- [func layoutSubviews()](./layoutsubviews%28%29.md)
   Lays out subviews.
-- [func layoutIfNeeded()](uiview/layoutifneeded.md)
+- [func layoutIfNeeded()](./layoutifneeded%28%29.md)
   Lays out the subviews immediately, if layout updates are pending.
-- [class var requiresConstraintBasedLayout: Bool](uiview/requiresconstraintbasedlayout.md)
+- [class var requiresConstraintBasedLayout: Bool](./requiresconstraintbasedlayout.md)
   A Boolean value that indicates whether the receiver depends on the constraint-based layout system.
-- [var translatesAutoresizingMaskIntoConstraints: Bool](uiview/translatesautoresizingmaskintoconstraints.md)
+- [var translatesAutoresizingMaskIntoConstraints: Bool](./translatesautoresizingmaskintoconstraints.md)
   A Boolean value that determines whether the view’s autoresizing mask converts to Auto Layout constraints.
 
 

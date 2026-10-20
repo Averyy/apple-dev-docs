@@ -1,7 +1,8 @@
 # SearchScopeActivation
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The ways that searchable modifiers can show or hide search scopes.
 
@@ -22,25 +23,26 @@ struct SearchScopeActivation
 
 ## Mentions
 
-- [Scoping a search operation](scoping-a-search-operation.md)
+- [Scoping a search operation](./scoping-a-search-operation.md)
 
 ## Topics
 
 ### Getting search scope activiation types
-- [static var automatic: SearchScopeActivation](searchscopeactivation/automatic.md)
+- [static var automatic: SearchScopeActivation](./searchscopeactivation/automatic.md)
   The automatic activation of the scope bar.
-- [static var onSearchPresentation: SearchScopeActivation](searchscopeactivation/onsearchpresentation.md)
+- [static var onSearchPresentation: SearchScopeActivation](./searchscopeactivation/onsearchpresentation.md)
   An activation where the system shows search scopes after presenting search and hides search scopes after search cancellation.
-- [static var onTextEntry: SearchScopeActivation](searchscopeactivation/ontextentry.md)
+- [static var onTextEntry: SearchScopeActivation](./searchscopeactivation/ontextentry.md)
   An activation where the system shows search scopes when typing begins in the search field and hides search scopes after search cancellation.
 
 ## See Also
 
-- [Scoping a search operation](scoping-a-search-operation.md)
+### Limiting search scope
+- [Scoping a search operation](./scoping-a-search-operation.md)
   Divide the search space into a few broad categories.
-- [func searchScopes<V, S>(Binding<V>, scopes: () -> S) -> some View](view/searchscopes(_:scopes:).md)
+- [func searchScopes<V, S>(Binding<V>, scopes: () -> S) -> some View](./view/searchscopes%28_,scopes%29.md)
   Configures the search scopes for this view.
-- [func searchScopes<V, S>(Binding<V>, activation: SearchScopeActivation, () -> S) -> some View](view/searchscopes(_:activation:_:).md)
+- [func searchScopes<V, S>(Binding<V>, activation: SearchScopeActivation, () -> S) -> some View](./view/searchscopes%28_,activation,_%29.md)
   Configures the search scopes for this view with the specified activation strategy.
 
 

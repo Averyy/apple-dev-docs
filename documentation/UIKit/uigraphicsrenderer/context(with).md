@@ -1,7 +1,8 @@
 # context(with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a Core Graphics context configured according to the supplied format object.
 
@@ -18,6 +19,10 @@ Creates a Core Graphics context configured according to the supplied format obje
 class func context(with format: UIGraphicsRendererFormat) -> CGContext?
 ```
 
+```objc
++ (CGContextRef) contextWithFormat:(UIGraphicsRendererFormat *) format;
+```
+
 #### Return Value
 
 A Core Graphics context configured to represent the attributes in the format object.
@@ -26,7 +31,7 @@ A Core Graphics context configured to represent the attributes in the format obj
 
 Each time the graphics renderer needs to create a new Core Graphics context, it calls this method, providing the format object supplied at initialization time.
 
-You must override this method when you subclass `UIGraphicsRenderer`. Use the provided [`UIGraphicsRendererFormat`](uigraphicsrendererformat.md) to create and configure a [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) object that is used by the renderer in the drawing routines.
+You must override this method when you subclass `UIGraphicsRenderer`. Use the provided [`UIGraphicsRendererFormat`](../uigraphicsrendererformat.md) to create and configure a [`CGContext`](../../CoreGraphics/cgcontext.md) object that is used by the renderer in the drawing routines.
 
 ## Parameters
 
@@ -34,9 +39,10 @@ You must override this method when you subclass `UIGraphicsRenderer`. Use the pr
 
 ## See Also
 
-- [class func prepare(CGContext, with: UIGraphicsRendererContext)](uigraphicsrenderer/prepare(_:with:).md)
+### Managing graphics contexts
+- [class func prepare(CGContext, with: UIGraphicsRendererContext)](./prepare%28_,with%29.md)
   Applies the configuration specified in the renderer context to the Core Graphics context.
-- [class func rendererContextClass() -> AnyClass](uigraphicsrenderer/renderercontextclass.md)
+- [class func rendererContextClass() -> AnyClass](./renderercontextclass%28%29.md)
   Specifies the drawing context class used by this graphics renderer.
 
 

@@ -1,7 +1,8 @@
 # writeBytes
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Copy data to the IODMACommand's buffer from the specified buffer.
 
@@ -10,11 +11,11 @@ Copy data to the IODMACommand's buffer from the specified buffer.
 
 ## Declaration
 
-```swift
+```c
 UInt64 writeBytes(UInt64 offset, const void *bytes, UInt64 length);
 ```
 
-#### Return_value
+#### Return Value
 
 The number of bytes copied, zero will be returned if the specified offset is beyond the prepared length of the IODMACommand.
 
@@ -30,11 +31,12 @@ This method copies data to the IODMACommand's memory at the given offset, from t
 
 ## See Also
 
-- [readBytes](iodmacommand/1811301-readbytes.md)
+### Transferring Data
+- [readBytes](./api-1811301-readbytes.md)
   Copy data from the IODMACommand's buffer to the specified buffer.
-- [- readBytes](iodmacommand/1547724-readbytes.md)
+- [- readBytes](./api-1547724-readbytes.md)
   Copy data from the IODMACommand's buffer to the specified buffer.
-- [writeBytes](iodmacommand/1811341-writebytes.md)
+- [writeBytes](./api-1811341-writebytes.md)
   Copy data to the IODMACommand's buffer from the specified buffer.
 
 

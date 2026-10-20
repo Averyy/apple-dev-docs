@@ -1,14 +1,15 @@
 # fsobj_id_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 typedef struct fsobj_id {
     ...
 } fsobj_id_t;
@@ -17,8 +18,8 @@ typedef struct fsobj_id {
 ## Topics
 
 ### Instance Properties
-- [fid_generation](fsobj_id_t/1555271-fid_generation.md)
-- [fid_objno](fsobj_id_t/1555279-fid_objno.md)
+- [fid_generation](./fsobj_id_t/api-1555271-fid_generation.md)
+- [fid_objno](./fsobj_id_t/api-1555279-fid_objno.md)
 
 
 ---

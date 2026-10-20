@@ -1,12 +1,13 @@
 # willPopUpNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 This notification is posted just before a pop-up menu is attached to its window frame.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,15 @@ This notification is posted just before a pop-up menu is attached to its window 
 class let willPopUpNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName NSPopUpButtonCellWillPopUpNotification;
+```
+
 #### Discussion
 
 You can use this notification to lazily construct your part’s menus, thus preventing unnecessary calculations until they are needed. The notification object can be either a pop-up button or its enclosed pop-up button cell. This notification does not contain a `userInfo` dictionary.
 
-To observe this notification using Swift concurrency, use [`NSPopUpButtonCell.WillPopUpMessage`](nspopupbuttoncell/willpopupmessage.md).
+To observe this notification using Swift concurrency, use [`NSPopUpButtonCell.WillPopUpMessage`](./willpopupmessage.md).
 
 
 ---

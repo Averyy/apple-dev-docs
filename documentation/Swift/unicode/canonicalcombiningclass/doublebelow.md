@@ -1,7 +1,8 @@
 # doubleBelow
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Distinct marks subtending two bases.
 

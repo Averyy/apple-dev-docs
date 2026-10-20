@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct tlv_descriptor {
     ...
 };
@@ -17,9 +17,9 @@ struct tlv_descriptor {
 ## Topics
 
 ### Instance Properties
-- [key](tlv_descriptor/1525644-key.md)
-- [offset](tlv_descriptor/1525387-offset.md)
-- [thunk](tlv_descriptor/1525502-thunk.md)
+- [key](./tlv_descriptor/api-1525644-key.md)
+- [offset](./tlv_descriptor/api-1525387-offset.md)
+- [thunk](./tlv_descriptor/api-1525502-thunk.md)
 
 
 ---

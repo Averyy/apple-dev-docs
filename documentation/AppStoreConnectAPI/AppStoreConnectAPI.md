@@ -1,7 +1,8 @@
 # App Store Connect API
 
 **Framework**: App Store Connect API  
-**Kind**: module
+**Kind**: module  
+**Role**: Web Service
 
 The data structure that represents an app store connect api resource.
 
@@ -10,16 +11,16 @@ The data structure that represents an app store connect api resource.
 
 ## Mentions
 
-- [Configuring subscription prices across territories](configuring-subscription-prices-across-territories.md)
-- [Creating auto-renewable subscription groups](creating-auto-renewable-subscription-groups.md)
+- [Configuring subscription prices across territories](./configuring-subscription-prices-across-territories.md)
+- [Creating auto-renewable subscription groups](./creating-auto-renewable-subscription-groups.md)
 
 #### Overview
 
 Automate the tasks you perform on the Apple Developer website and in App Store Connect.
 
-The App Store Connect API is a REST API that enables the automation of actions you take in App Store Connect. Click [`OpenAPI specification`](https://developer.apple.comhttps://developer.apple.com/sample-code/app-store-connect/app-store-connect-openapi-specification.zip) to download the specification file.
+The App Store Connect API is a REST API that enables the automation of actions you take in App Store Connect. Click [OpenAPI specification](https://developer.apple.com/sample-code/app-store-connect/app-store-connect-openapi-specification.zip) to download the specification file.
 
-Calls to the API require JSON Web Tokens (JWT) for authorization; you obtain keys to create the tokens from your organization’s App Store Connect account. See [`Creating API Keys for App Store Connect API`](creating-api-keys-for-app-store-connect-api.md) to create your keys and tokens.
+Calls to the API require JSON Web Tokens (JWT) for authorization; you obtain keys to create the tokens from your organization’s App Store Connect account. See [Creating API Keys for App Store Connect API](./creating-api-keys-for-app-store-connect-api.md) to create your keys and tokens.
 
 > ❗ **Important**:  Changes you make using the App Store Connect API affect the production data you use for development and distribution.
 
@@ -41,70 +42,70 @@ The App Store Connect API returns responses from resources that are consistent J
 ## Topics
 
 ### Essentials
-- [Creating API Keys for App Store Connect API](creating-api-keys-for-app-store-connect-api.md)
+- [Creating API Keys for App Store Connect API](./creating-api-keys-for-app-store-connect-api.md)
   Create API keys to sign JSON Web Tokens (JWTs) and authorize API requests.
-- [Generating Tokens for API Requests](generating-tokens-for-api-requests.md)
+- [Generating Tokens for API Requests](./generating-tokens-for-api-requests.md)
   Create JSON Web Tokens (JWTs) signed with your private key to authorize API requests.
-- [Revoking API Keys](revoking-api-keys.md)
+- [Revoking API Keys](./revoking-api-keys.md)
   Revoke unused, lost, or compromised private keys.
-- [Identifying Rate Limits](identifying-rate-limits.md)
+- [Identifying Rate Limits](./identifying-rate-limits.md)
   Recognize the rate limits that REST API responses provide and handle them in your code.
-- [Uploading Assets to App Store Connect](uploading-assets-to-app-store-connect.md)
+- [Uploading Assets to App Store Connect](./uploading-assets-to-app-store-connect.md)
   Upload screenshots, app previews, attachments for App Review, and routing app coverage files to App Store Connect.
-- [App Store Connect API Release Notes](app-store-connect-api-release-notes.md)
+- [App Store Connect API Release Notes](./app-store-connect-api-release-notes.md)
   Learn about new features and updates in the App Store Connect API.
 ### App Store
-- [App Store](app-store.md)
+- [App Store](./app-store.md)
   Manage all aspects of your app, App Clips, In-App Purchases, and customer reviews in the App Store.
 ### TestFlight
-- [Prerelease Versions and Beta Testers](prerelease-versions-and-beta-testers.md)
+- [Prerelease Versions and Beta Testers](./prerelease-versions-and-beta-testers.md)
   Manage your beta testing program, including beta testers and groups, apps, App Clips, and builds.
 ### Game Center
-- [Game Center](game-center.md)
+- [Game Center](./game-center.md)
   Manage Game Center data and configurations for your apps.
 ### Provisioning
-- [Bundle IDs](bundle-ids.md)
+- [Bundle IDs](./bundle-ids.md)
   Manage the bundle IDs that uniquely identify your apps.
-- [Bundle ID Capabilities](bundle-id-capabilities.md)
+- [Bundle ID Capabilities](./bundle-id-capabilities.md)
   Manage the app capabilities for a bundle ID.
-- [Certificates](certificates.md)
+- [Certificates](./certificates.md)
   Create, download, and revoke signing certificates for app development and distribution.
-- [Devices](devices.md)
+- [Devices](./devices.md)
   Register devices for development and testing.
-- [Profiles](profiles.md)
+- [Profiles](./profiles.md)
   Create, delete, and download provisioning profiles that enable app installations for development and distribution.
-- [Merchant ID](merchantids.md)
+- [Merchant ID](./merchantids.md)
   Manage your merchant ID for Apple Pay.
-- [Pass type Ids](pass-type-id.md)
+- [Pass type Ids](./pass-type-id.md)
   Create, download, and revoke pass type ids for app development and distribution.
 ### Xcode Cloud
-- [Xcode Cloud Workflows and Builds](xcode-cloud-workflows-and-builds.md)
+- [Xcode Cloud Workflows and Builds](./xcode-cloud-workflows-and-builds.md)
   Automate reading Xcode Cloud data, managing workflows, and starting builds.
 ### Webhooks
-- [Webhook notifications](webhook-notifications.md)
+- [Webhook notifications](./webhook-notifications.md)
   Manage notifications from App Store about your apps and their statuses.
 ### Reporting
-- [Sales and Finance](sales-and-finance.md)
+- [Sales and Finance](./sales-and-finance.md)
   Download your sales and financial reports.
-- [Power and Performance Metrics and Logs](power-and-performance-metrics-and-logs.md)
+- [Power and Performance Metrics and Logs](./power-and-performance-metrics-and-logs.md)
   Get power and performance metrics, logs, and signatures.
-- [Analytics](analytics.md)
+- [Analytics](./analytics.md)
   Get data about your apps and usage.
 ### Users and Access
-- [Users](users.md)
+- [Users](./users.md)
   Manage users on your App Store Connect team.
-- [User Invitations](user-invitations.md)
+- [User Invitations](./user-invitations.md)
   Email invitations to join your App Store Connect team.
-- [Sandbox Testers](sandbox-testers.md)
+- [Sandbox Testers](./sandbox-testers.md)
   Manage sandbox testers on your App Store Connect team.
 ### Error Handling
-- [Interpreting and Handling Errors](interpreting-and-handling-errors.md)
+- [Interpreting and Handling Errors](./interpreting-and-handling-errors.md)
   Learn how the App Store Connect API returns errors and handle them in your code.
 ### Paging
-- [Large Data Sets](large-data-sets.md)
+- [Large Data Sets](./large-data-sets.md)
   Retrieve large data sets with paging information.
 ### Alternative App Distribution
-- [Alternative Marketplaces and Web Distribution](alternative-marketplaces-and-web-distribution.md)
+- [Alternative Marketplaces and Web Distribution](./alternative-marketplaces-and-web-distribution.md)
   Manage keys, packages, and search for alternative app distribution.
 
 

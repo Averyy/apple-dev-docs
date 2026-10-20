@@ -1,7 +1,8 @@
 # tls_ciphersuite_group_t.default
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -16,6 +17,10 @@
 
 ```swift
 case `default`
+```
+
+```c
+tls_ciphersuite_group_default
 ```
 
 

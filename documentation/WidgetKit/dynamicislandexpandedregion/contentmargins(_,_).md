@@ -1,7 +1,8 @@
 # contentMargins(_:_:)
 
 **Framework**: WidgetKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Overrides default content margins for the provided edges in the Dynamic Island.
 

@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the collection is empty.
 

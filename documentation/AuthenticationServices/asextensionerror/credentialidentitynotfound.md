@@ -1,7 +1,8 @@
 # credentialIdentityNotFound
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The credential identity was not found.
 
@@ -20,13 +21,14 @@ static var credentialIdentityNotFound: ASExtensionError.Code { get }
 
 ## See Also
 
-- [static var failed: ASExtensionError.Code](asextensionerror/failed.md)
+### Error codes
+- [static var failed: ASExtensionError.Code](./failed.md)
   The operation failed.
-- [static var userCanceled: ASExtensionError.Code](asextensionerror/usercanceled.md)
+- [static var userCanceled: ASExtensionError.Code](./usercanceled.md)
   The user canceled the operation.
-- [static var userInteractionRequired: ASExtensionError.Code](asextensionerror/userinteractionrequired.md)
+- [static var userInteractionRequired: ASExtensionError.Code](./userinteractionrequired.md)
   User interaction is required.
-- [ASExtensionError.Code](asextensionerror/code.md)
+- [ASExtensionError.Code](./code.md)
   The codes for a credential provider extension error.
 
 

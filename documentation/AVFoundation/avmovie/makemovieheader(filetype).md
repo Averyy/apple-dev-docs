@@ -1,7 +1,8 @@
 # makeMovieHeader(fileType:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a header for a movie for the specified file type.
 
@@ -19,9 +20,13 @@ Creates a header for a movie for the specified file type.
 func makeMovieHeader(fileType: AVFileType) throws -> Data
 ```
 
+```objc
+- (NSData *) movieHeaderWithFileType:(AVFileType) fileType error:(NSError **) outError;
+```
+
 #### Return Value
 
-An [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object containing the movie header.
+An [`NSData`](../../Foundation/nsdata.md) object containing the movie header.
 
 #### Discussion
 
@@ -33,11 +38,12 @@ The created movie header is a pure reference movie, with no base URL, suitable f
 
 ## See Also
 
-- [func `is`(compatibleWithFileType: AVFileType) -> Bool](avmovie/is(compatiblewithfiletype:).md)
+### Creating and writing headers
+- [func `is`(compatibleWithFileType: AVFileType) -> Bool](./is%28compatiblewithfiletype%29.md)
   Returns a Boolean value that indicates whether the system can create a movie header of the specified type.
-- [func writeHeader(to: URL, fileType: AVFileType, options: AVMovieWritingOptions) throws](avmovie/writeheader(to:filetype:options:).md)
+- [func writeHeader(to: URL, fileType: AVFileType, options: AVMovieWritingOptions) throws](./writeheader%28to,filetype,options%29.md)
   Writes the movie header to the specified URL.
-- [struct AVMovieWritingOptions](avmoviewritingoptions.md)
+- [struct AVMovieWritingOptions](../avmoviewritingoptions.md)
   A structure that defines options to control the writing of a movie header to a destination URL.
 
 

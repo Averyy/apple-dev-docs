@@ -1,15 +1,18 @@
 # MXAppLaunchDiagnostic
 
 **Framework**: MetricKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A diagnostic subclass that encapsulates app launch diagnostic reports.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- visionOS 1.0+
+- iOS 16.0+ - Deprecated in 27.2
+- iPadOS 16.0+ - Deprecated in 27.2
+- Mac Catalyst 16.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`AppLaunchDiagnostic`](./applaunchdiagnostic.md) instead.
 
 ## Declaration
 
@@ -17,37 +20,42 @@ A diagnostic subclass that encapsulates app launch diagnostic reports.
 class MXAppLaunchDiagnostic
 ```
 
+```objc
+@interface MXAppLaunchDiagnostic : MXDiagnostic
+```
+
 ## Topics
 
 ### Reading app launch metrics
-- [var callStackTree: MXCallStackTree](mxapplaunchdiagnostic/callstacktree.md)
+- [var callStackTree: MXCallStackTree](./mxapplaunchdiagnostic/callstacktree.md)
   The call stack tree associated with the app launch.
-- [var launchDuration: Measurement<UnitDuration>](mxapplaunchdiagnostic/launchduration.md)
+- [var launchDuration: Measurement<UnitDuration>](./mxapplaunchdiagnostic/launchduration.md)
   The total app launch duration.
 
 ## Relationships
 
 ### Inherits From
-- [MXDiagnostic](mxdiagnostic.md)
+- [MXDiagnostic](./mxdiagnostic.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MXCPUExceptionDiagnostic](mxcpuexceptiondiagnostic.md)
+### Performance diagnostics
+- [class MXCPUExceptionDiagnostic](./mxcpuexceptiondiagnostic.md)
   An object representing a diagnostic report for a fatal or nonfatal CPU exception.
-- [class MXCrashDiagnostic](mxcrashdiagnostic.md)
+- [class MXCrashDiagnostic](./mxcrashdiagnostic.md)
   An object representing a diagnostic report for an app crash.
-- [class MXHangDiagnostic](mxhangdiagnostic.md)
+- [class MXHangDiagnostic](./mxhangdiagnostic.md)
   An object representing a diagnostic report for an app that is too busy to handle user input responsively.
-- [class MXDiskWriteExceptionDiagnostic](mxdiskwriteexceptiondiagnostic.md)
+- [class MXDiskWriteExceptionDiagnostic](./mxdiskwriteexceptiondiagnostic.md)
   An object representing a diagnostic report for a disk write exception.
 
 

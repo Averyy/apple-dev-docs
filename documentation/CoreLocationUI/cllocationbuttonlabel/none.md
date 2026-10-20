@@ -1,7 +1,8 @@
 # CLLocationButtonLabel.none
 
 **Framework**: CoreLocationUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that doesn’t display a text label.
 
@@ -16,21 +17,26 @@ A style that doesn’t display a text label.
 case none
 ```
 
+```c
+CLLocationButtonLabelNone
+```
+
 #### Discussion
 
-Use a different label style if [`icon`](cllocationbutton/icon.md) is [`CLLocationButtonIcon.none`](cllocationbuttonicon/none.md).
+Use a different label style if [`icon`](../cllocationbutton/icon.md) is [`CLLocationButtonIcon.none`](../cllocationbuttonicon/none.md).
 
 ## See Also
 
-- [CLLocationButtonLabel.currentLocation](cllocationbuttonlabel/currentlocation.md)
+### Customizing label styles
+- [CLLocationButtonLabel.currentLocation](./currentlocation.md)
   A button label with the text *Current Location*.
-- [CLLocationButtonLabel.sendCurrentLocation](cllocationbuttonlabel/sendcurrentlocation.md)
+- [CLLocationButtonLabel.sendCurrentLocation](./sendcurrentlocation.md)
   A button label with the text *Send Current Location*.
-- [CLLocationButtonLabel.sendMyCurrentLocation](cllocationbuttonlabel/sendmycurrentlocation.md)
+- [CLLocationButtonLabel.sendMyCurrentLocation](./sendmycurrentlocation.md)
   A button label with the text *Send My Current Location*.
-- [CLLocationButtonLabel.shareCurrentLocation](cllocationbuttonlabel/sharecurrentlocation.md)
+- [CLLocationButtonLabel.shareCurrentLocation](./sharecurrentlocation.md)
   A button label with the text *Share Current Location*.
-- [CLLocationButtonLabel.shareMyCurrentLocation](cllocationbuttonlabel/sharemycurrentlocation.md)
+- [CLLocationButtonLabel.shareMyCurrentLocation](./sharemycurrentlocation.md)
   A button label with the text *Share My Current Location*.
 
 

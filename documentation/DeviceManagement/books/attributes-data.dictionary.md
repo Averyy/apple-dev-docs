@@ -1,7 +1,8 @@
 # Books.Attributes
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for a books resource.
 
@@ -10,17 +11,17 @@ The attributes for a books resource.
 
 ## Declaration
 
-```swift
+```
 object Books.Attributes
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Books.Attributes.Offers](books/attributes-data.dictionary/offers-data.dictionary.md)
-- [object Books.Attributes.SeriesInfo](books/attributes-data.dictionary/seriesinfo-data.dictionary.md)
-- [object Books.Attributes.TaxExclusivePrices](books/attributes-data.dictionary/taxexclusiveprices-data.dictionary.md)
-- [object Books.Attributes.UserRating](books/attributes-data.dictionary/userrating-data.dictionary.md)
+- [object Books.Attributes.Offers](./attributes-data.dictionary/offers-data.dictionary.md)
+- [object Books.Attributes.SeriesInfo](./attributes-data.dictionary/seriesinfo-data.dictionary.md)
+- [object Books.Attributes.TaxExclusivePrices](./attributes-data.dictionary/taxexclusiveprices-data.dictionary.md)
+- [object Books.Attributes.UserRating](./attributes-data.dictionary/userrating-data.dictionary.md)
 
 ## Properties
 
@@ -38,7 +39,8 @@ object Books.Attributes
 
 ## See Also
 
-- [object Books.Relationships](books/relationships-data.dictionary.md)
+### Related Objects
+- [object Books.Relationships](./relationships-data.dictionary.md)
 
 
 ---

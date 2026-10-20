@@ -1,7 +1,8 @@
 # simpleStructEchoRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func simpleStructEchoRequest(with params: MTRUnitTestingClusterSimpleStructEchoRequestParams, completion: @escaping @Sendable (MTRUnitTestingClusterSimpleStructResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func simpleStructEchoRequest(with params: MTRUnitTestingClusterSimpleStructEchoRequestParams) async throws -> MTRUnitTestingClusterSimpleStructResponseParams
+```
+
+```objc
+- (void) simpleStructEchoRequestWithParams:(MTRUnitTestingClusterSimpleStructEchoRequestParams *) params completion:(void (^)(MTRUnitTestingClusterSimpleStructResponseParams *data, NSError *error)) completion;
 ```
 
 

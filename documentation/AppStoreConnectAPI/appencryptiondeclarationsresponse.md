@@ -1,7 +1,8 @@
 # AppEncryptionDeclarationsResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a list of encryption declarations for an app.
 
@@ -10,7 +11,7 @@ A response containing a list of encryption declarations for an app.
 
 ## Declaration
 
-```swift
+```
 object AppEncryptionDeclarationsResponse
 ```
 
@@ -19,34 +20,36 @@ object AppEncryptionDeclarationsResponse
 - `data` ([AppEncryptionDeclaration]) *(required)*: The resource data.
 - `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
 - `meta` (PagingInformation): Paging information.
-- `included` ([*])
+- `included` ([*]): **Allowed Types**: `AppEncryptionDeclarationDocument`, `App`, `Build`
 
 ## See Also
 
-- [List app encryption declarations](get-v1-appencryptiondeclarations.md)
+### Related Documentation
+- [List app encryption declarations](./get-v1-appencryptiondeclarations.md)
   Find and list all available app encryption declarations.
-- [object AppEncryptionDeclarationCreateRequest](appencryptiondeclarationcreaterequest.md)
+### Objects and Data Types
+- [object AppEncryptionDeclarationCreateRequest](./appencryptiondeclarationcreaterequest.md)
   The request body you use to create an app encryption declaration.
-- [object AppEncryptionDeclarationDocument](appencryptiondeclarationdocument.md)
+- [object AppEncryptionDeclarationDocument](./appencryptiondeclarationdocument.md)
   An uploaded export compliance document supporting an app encryption declaration.
-- [object AppEncryptionDeclarationDocumentCreateRequest](appencryptiondeclarationdocumentcreaterequest.md)
+- [object AppEncryptionDeclarationDocumentCreateRequest](./appencryptiondeclarationdocumentcreaterequest.md)
   The request body for uploading an encryption compliance document for an app.
-- [object AppEncryptionDeclarationDocumentResponse](appencryptiondeclarationdocumentresponse.md)
+- [object AppEncryptionDeclarationDocumentResponse](./appencryptiondeclarationdocumentresponse.md)
   A response containing a single encryption compliance document for an app.
-- [object AppEncryptionDeclarationDocumentUpdateRequest](appencryptiondeclarationdocumentupdaterequest.md)
+- [object AppEncryptionDeclarationDocumentUpdateRequest](./appencryptiondeclarationdocumentupdaterequest.md)
   The request body you use to update an app encryption declaration document update request.
-- [object AppEncryptionDeclaration](appencryptiondeclaration.md)
+- [object AppEncryptionDeclaration](./appencryptiondeclaration.md)
   A declaration of an app’s use of encryption, required for export compliance and App Store submission.
-- [object AppEncryptionDeclarationBuildsLinkagesRequest](appencryptiondeclarationbuildslinkagesrequest.md)
+- [object AppEncryptionDeclarationBuildsLinkagesRequest](./appencryptiondeclarationbuildslinkagesrequest.md)
   A request body you use to add builds to an app encryption declaration.
-- [object AppEncryptionDeclarationResponse](appencryptiondeclarationresponse.md)
+- [object AppEncryptionDeclarationResponse](./appencryptiondeclarationresponse.md)
   A response containing a single app encryption declaration.
-- [object AppEncryptionDeclarationWithoutIncludesResponse](appencryptiondeclarationwithoutincludesresponse.md)
+- [object AppEncryptionDeclarationWithoutIncludesResponse](./appencryptiondeclarationwithoutincludesresponse.md)
   A response containing a single encryption declaration, without related resources.
-- [type AppEncryptionDeclarationState](appencryptiondeclarationstate.md)
+- [type AppEncryptionDeclarationState](./appencryptiondeclarationstate.md)
   Strings that represent the review or acceptance status of an app encryption declaration submitted to Apple.
-- [object AppEncryptionDeclarationAppEncryptionDeclarationDocumentLinkageResponse](appencryptiondeclarationappencryptiondeclarationdocumentlinkageresponse.md)
-- [object AppEncryptionDeclarationAppLinkageResponse](appencryptiondeclarationapplinkageresponse.md)
+- [object AppEncryptionDeclarationAppEncryptionDeclarationDocumentLinkageResponse](./appencryptiondeclarationappencryptiondeclarationdocumentlinkageresponse.md)
+- [object AppEncryptionDeclarationAppLinkageResponse](./appencryptiondeclarationapplinkageresponse.md)
 
 
 ---

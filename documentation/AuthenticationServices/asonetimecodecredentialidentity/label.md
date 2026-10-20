@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var label: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * label;
 ```
 
 #### Discussion

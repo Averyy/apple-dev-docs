@@ -1,7 +1,8 @@
 # receive(on:options:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the scheduler on which to receive elements from the publisher.
 
@@ -22,8 +23,8 @@ func receive<S>(on scheduler: S, options: S.SchedulerOptions? = nil) -> Publishe
 
 ## Mentions
 
-- [Receiving and Handling Events with Combine](receiving-and-handling-events-with-combine.md)
-- [Replacing Foundation Timers with Timer Publishers](replacing-foundation-timers-with-timer-publishers.md)
+- [Receiving and Handling Events with Combine](../receiving-and-handling-events-with-combine.md)
+- [Replacing Foundation Timers with Timer Publishers](../replacing-foundation-timers-with-timer-publishers.md)
 
 #### Return Value
 
@@ -31,9 +32,9 @@ A publisher that delivers elements using the specified scheduler.
 
 #### Discussion
 
-You use the [`receive(on:options:)`](publisher/receive(on:options:).md) operator to receive results and completion on a specific scheduler, such as performing UI work on the main run loop. In contrast with [`subscribe(on:options:)`](publisher/subscribe(on:options:).md), which affects upstream messages, [`receive(on:options:)`](publisher/receive(on:options:).md) changes the execution context of downstream messages.
+You use the [`receive(on:options:)`](./receive%28on,options%29.md) operator to receive results and completion on a specific scheduler, such as performing UI work on the main run loop. In contrast with [`subscribe(on:options:)`](./subscribe%28on,options%29.md), which affects upstream messages, [`receive(on:options:)`](./receive%28on,options%29.md) changes the execution context of downstream messages.
 
-In the following example, the [`subscribe(on:options:)`](publisher/subscribe(on:options:).md) operator causes `jsonPublisher` to receive requests on `backgroundQueue`, while the [`receive(on:options:)`](publisher/receive(on:options:).md) causes `labelUpdater` to receive elements and completion on `RunLoop.main`.
+In the following example, the [`subscribe(on:options:)`](./subscribe%28on,options%29.md) operator causes `jsonPublisher` to receive requests on `backgroundQueue`, while the [`receive(on:options:)`](./receive%28on,options%29.md) causes `labelUpdater` to receive elements and completion on `RunLoop.main`.
 
 ```swift
 let jsonPublisher = MyJSONLoaderPublisher() // Some publisher.
@@ -45,7 +46,7 @@ jsonPublisher
     .subscribe(labelUpdater)
 ```
 
-Prefer [`receive(on:options:)`](publisher/receive(on:options:).md) over explicit use of dispatch queues when performing work in subscribers. For example, instead of the following pattern:
+Prefer [`receive(on:options:)`](./receive%28on,options%29.md) over explicit use of dispatch queues when performing work in subscribers. For example, instead of the following pattern:
 
 ```swift
 pub.sink {
@@ -63,7 +64,7 @@ pub.receive(on: DispatchQueue.main).sink {
 }
 ```
 
-> **Note**: [`receive(on:options:)`](publisher/receive(on:options:).md) doesn’t affect the scheduler used to call the subscriber’s [`receive(subscription:)`](subscriber/receive(subscription:).md) method.
+> **Note**: [`receive(on:options:)`](./receive%28on,options%29.md) doesn’t affect the scheduler used to call the subscriber’s [`receive(subscription:)`](../subscriber/receive%28subscription%29.md) method.
 
 ## Parameters
 
@@ -72,7 +73,8 @@ pub.receive(on: DispatchQueue.main).sink {
 
 ## See Also
 
-- [func subscribe<S>(on: S, options: S.SchedulerOptions?) -> Publishers.SubscribeOn<Self, S>](publisher/subscribe(on:options:).md)
+### Specifying schedulers
+- [func subscribe<S>(on: S, options: S.SchedulerOptions?) -> Publishers.SubscribeOn<Self, S>](./subscribe%28on,options%29.md)
   Specifies the scheduler on which to perform subscribe, cancel, and request operations.
 
 

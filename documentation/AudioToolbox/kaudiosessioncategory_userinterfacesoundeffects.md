@@ -1,16 +1,19 @@
 # kAudioSessionCategory_UserInterfaceSoundEffects
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 For sound effects such as touch feedback, explosions, and so on.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+
+> **Deprecated**: Deprecated in iOS 7.0.
 
 ## Declaration
 
@@ -18,9 +21,14 @@ For sound effects such as touch feedback, explosions, and so on.
 var kAudioSessionCategory_UserInterfaceSoundEffects: Int { get }
 ```
 
+```c
+kAudioSessionCategory_UserInterfaceSoundEffects
+```
+
 ## See Also
 
-- [var kAudioSessionCategory_LiveAudio: Int](kaudiosessioncategory_liveaudio.md)
+### Constants
+- [var kAudioSessionCategory_LiveAudio: Int](./kaudiosessioncategory_liveaudio.md)
   For live performance of music, such as for an app that simulates a piano.
 
 

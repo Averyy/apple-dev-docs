@@ -1,7 +1,8 @@
 # addAppExtensionPoint(_:)
 
 **Framework**: ExtensionFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins the tracking of app extensions that support the specified extension point.
 
@@ -22,11 +23,11 @@ final func addAppExtensionPoint(_ appExtensionPoint: AppExtensionPoint) async th
 
 ## Mentions
 
-- [Discovering app extensions from your app](discovering-app-extensions-from-your-app.md)
+- [Discovering app extensions from your app](../../discovering-app-extensions-from-your-app.md)
 
 #### Discussion
 
-This method updates the state of the monitor, adding the specified extension point to the list of those it’s tracking. If the new extension point has available app extensions, this method updates the contents of the [`identities`](appextensionpoint/monitor/identities.md) property.  You can call this method multiple times to track multiple extension points from your app.
+This method updates the state of the monitor, adding the specified extension point to the list of those it’s tracking. If the new extension point has available app extensions, this method updates the contents of the [`identities`](./identities.md) property.  You can call this method multiple times to track multiple extension points from your app.
 
 ## Parameters
 
@@ -34,7 +35,8 @@ This method updates the state of the monitor, adding the specified extension poi
 
 ## See Also
 
-- [func removeAppExtensionPoint(AppExtensionPoint) async throws](appextensionpoint/monitor/removeappextensionpoint(_:).md)
+### Adding and removing extension points
+- [func removeAppExtensionPoint(AppExtensionPoint) async throws](./removeappextensionpoint%28_%29.md)
   Removes the specified extension point and stops tracking the associated app extensions.
 
 

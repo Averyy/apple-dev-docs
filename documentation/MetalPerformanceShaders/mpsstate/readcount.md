@@ -1,7 +1,8 @@
 # readCount
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,12 +18,17 @@
 var readCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger readCount;
+```
+
 ## See Also
 
-- [var isTemporary: Bool](mpsstate/istemporary.md)
-- [var label: String?](mpsstate/label.md)
-- [var resource: (any MTLResource)?](mpsstate/resource.md)
-- [var resourceCount: Int](mpsstate/resourcecount.md)
+### Instance Properties
+- [var isTemporary: Bool](./istemporary.md)
+- [var label: String?](./label.md)
+- [var resource: (any MTLResource)?](./resource.md)
+- [var resourceCount: Int](./resourcecount.md)
 
 
 ---

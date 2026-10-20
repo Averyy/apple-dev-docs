@@ -1,17 +1,22 @@
 # getAddress()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the Bluetooth device address for the target device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getAddress() -> UnsafePointer<BluetoothDeviceAddress>!
+```
+
+```objc
+- (const BluetoothDeviceAddress *) getAddress;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # countDownDuration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value displayed by the date picker when the mode property is set to show a countdown time.
 
@@ -17,19 +18,24 @@ The value displayed by the date picker when the mode property is set to show a c
 var countDownDuration: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic) NSTimeInterval countDownDuration;
+```
+
 #### Discussion
 
-Use this property to get and set the currently selected value when the date picker’s mode property is set to [`UIDatePicker.Mode.countDownTimer`](uidatepicker/mode/countdowntimer.md). This property is of type [`TimeInterval`](https://developer.apple.com/documentation/foundation/timeinterval) and therefore is measured in seconds, although the date picker displays only hours and minutes. If the mode of the date picker is not [`UIDatePicker.Mode.countDownTimer`](uidatepicker/mode/countdowntimer.md), this value is undefined; refer instead to the [`date`](uidatepicker/date.md) property. The default value is 0.0 and the maximum value is 23:59 (86,340 seconds).
+Use this property to get and set the currently selected value when the date picker’s mode property is set to [`UIDatePicker.Mode.countDownTimer`](./mode/countdowntimer.md). This property is of type [`TimeInterval`](../../Foundation/timeinterval.md) and therefore is measured in seconds, although the date picker displays only hours and minutes. If the mode of the date picker is not [`UIDatePicker.Mode.countDownTimer`](./mode/countdowntimer.md), this value is undefined; refer instead to the [`date`](./date.md) property. The default value is 0.0 and the maximum value is 23:59 (86,340 seconds).
 
 ## See Also
 
-- [var maximumDate: Date?](uidatepicker/maximumdate.md)
+### Configuring temporal attributes
+- [var maximumDate: Date?](./maximumdate.md)
   The maximum date that a date picker can show.
-- [var minimumDate: Date?](uidatepicker/minimumdate.md)
+- [var minimumDate: Date?](./minimumdate.md)
   The minimum date that a date picker can show.
-- [var minuteInterval: Int](uidatepicker/minuteinterval.md)
+- [var minuteInterval: Int](./minuteinterval.md)
   The interval at which the date picker should display minutes.
-- [var roundsToMinuteInterval: Bool](uidatepicker/roundstominuteinterval.md)
+- [var roundsToMinuteInterval: Bool](./roundstominuteinterval.md)
   A Boolean value that determines whether the date rounds to a specific minute interval.
 
 

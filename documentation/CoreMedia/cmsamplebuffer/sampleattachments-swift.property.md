@@ -1,7 +1,8 @@
 # sampleAttachments
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of sample attachments.
 
@@ -22,10 +23,11 @@ var sampleAttachments: CMSampleBuffer.SampleAttachmentsArray { get set }
 
 ## See Also
 
-- [CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey.md)
+### Managing Attachments
+- [CMSampleBuffer.AttachmentKey](./attachmentkey.md)
   Keys that identify sample buffer attachments.
-- [CMSampleBuffer.SampleAttachmentsArray](cmsamplebuffer/sampleattachmentsarray.md)
-- [CMSampleBuffer.PerSampleAttachmentsDictionary](cmsamplebuffer/persampleattachmentsdictionary.md)
+- [CMSampleBuffer.SampleAttachmentsArray](./sampleattachmentsarray.md)
+- [CMSampleBuffer.PerSampleAttachmentsDictionary](./persampleattachmentsdictionary.md)
   A structure that defines keys to identify per-sample attachments.
 
 

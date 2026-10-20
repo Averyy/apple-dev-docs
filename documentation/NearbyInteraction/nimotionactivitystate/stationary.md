@@ -1,7 +1,8 @@
 # NIMotionActivityState.stationary
 
 **Framework**: Nearby Interaction  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates the accessory isn’t moving.
 
@@ -16,15 +17,20 @@ A value that indicates the accessory isn’t moving.
 case stationary
 ```
 
+```c
+NIMotionActivityStateStationary
+```
+
 #### Discussion
 
 Update the session with this state when the accessory stops moving.
 
 ## See Also
 
-- [NIMotionActivityState.moving](nimotionactivitystate/moving.md)
+### Specifying the motion state
+- [NIMotionActivityState.moving](./moving.md)
   A value that indicates the accessory is moving.
-- [NIMotionActivityState.unknown](nimotionactivitystate/unknown.md)
+- [NIMotionActivityState.unknown](./unknown.md)
   A value that indicates the accessory’s motion state is unknown.
 
 

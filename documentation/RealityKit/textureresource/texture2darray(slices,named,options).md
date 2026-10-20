@@ -1,7 +1,8 @@
 # texture2DArray(slices:named:options:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Asynchronously creates a 2D texture array by generating it from images.
 
@@ -20,9 +21,16 @@ Asynchronously creates a 2D texture array by generating it from images.
 @preconcurrency static func texture2DArray(slices: [CGImage], named resourceName: String? = nil, options: TextureResource.CreateOptions) async throws -> TextureResource
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency static func texture2DArray(slices: [CGImage], named resourceName: String? = nil, options: TextureResource.CreateOptions) throws -> TextureResource
+```
+
 #### Discussion
 
-RealityKit creates a [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/metal/mtltexturetype/type2darray) texture with `arrayLength == slices.count` from an array of images.
+RealityKit creates a [`MTLTextureType.type2DArray`](../../Metal/mtltexturetype/type2darray.md) texture with `arrayLength == slices.count` from an array of images.
 
 You can assign the resulting texture to a material you create in Reality Composer Pro that requires a 2D texture array.
 

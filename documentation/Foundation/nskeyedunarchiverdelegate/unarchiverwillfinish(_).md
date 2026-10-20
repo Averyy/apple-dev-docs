@@ -1,7 +1,8 @@
 # unarchiverWillFinish(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate that decoding is about to finish.
 
@@ -20,13 +21,18 @@ Notifies the delegate that decoding is about to finish.
 optional func unarchiverWillFinish(_ unarchiver: NSKeyedUnarchiver)
 ```
 
+```objc
+- (void) unarchiverWillFinish:(NSKeyedUnarchiver *) unarchiver;
+```
+
 ## Parameters
 
 - `unarchiver`: An unarchiver for which the receiver is the delegate.
 
 ## See Also
 
-- [func unarchiverDidFinish(NSKeyedUnarchiver)](nskeyedunarchiverdelegate/unarchiverdidfinish(_:).md)
+### Finishing Decoding
+- [func unarchiverDidFinish(NSKeyedUnarchiver)](./unarchiverdidfinish%28_%29.md)
   Notifies the delegate that decoding has finished.
 
 

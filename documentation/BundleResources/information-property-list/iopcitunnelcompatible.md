@@ -1,16 +1,20 @@
 # IOPCITunnelCompatible
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether your driver supports Thunderbolt devices.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
+
+- **Name**: `IOPCITunnelCompatible`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 

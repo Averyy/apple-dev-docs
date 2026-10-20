@@ -1,7 +1,8 @@
 # AlarmButton
 
 **Framework**: AlarmKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A struct that defines the appearance of buttons.
 
@@ -30,27 +31,27 @@ let alert = AlarmPresentation.Alert(
 ## Topics
 
 ### Creating a button
-- [init(text: LocalizedStringResource, textColor: Color, systemImageName: String)](alarmbutton/init(text:textcolor:systemimagename:).md)
+- [init(text: LocalizedStringResource, textColor: Color, systemImageName: String)](./alarmbutton/init%28text,textcolor,systemimagename%29.md)
   Creates an alarm button.
-- [var systemImageName: String](alarmbutton/systemimagename.md)
+- [var systemImageName: String](./alarmbutton/systemimagename.md)
   The name of the icon you use on the button.
-- [var textColor: Color](alarmbutton/textcolor.md)
+- [var textColor: Color](./alarmbutton/textcolor.md)
   The color for the text on the button.
-- [var text: LocalizedStringResource](alarmbutton/text.md)
+- [var text: LocalizedStringResource](./alarmbutton/text.md)
   Text to show in a label on the button.
 ### Encoding and decoding
-- [func encode(to: any Encoder) throws](alarmbutton/encode(to:).md)
+- [func encode(to: any Encoder) throws](./alarmbutton/encode%28to%29.md)
   Performs encoding to a given encoder.
-- [init(from: any Decoder) throws](alarmbutton/init(from:).md)
+- [init(from: any Decoder) throws](./alarmbutton/init%28from%29.md)
   Creates an alarm button from a decoder.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

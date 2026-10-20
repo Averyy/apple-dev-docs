@@ -1,7 +1,8 @@
 # caseInsensitiveCompare(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the result of invoking `compare:options:` with `NSCaseInsensitiveSearch` as the only option.
 

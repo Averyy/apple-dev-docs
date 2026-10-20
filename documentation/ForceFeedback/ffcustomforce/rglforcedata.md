@@ -1,7 +1,8 @@
 # rglForceData
 
 **Framework**: Force Feedback  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Pointer to an array of force values representing the custom force. If multiple channels are provided, the values are interleaved. For example, if **cChannels** is 3, the first element of the array belongs to the first channel, the second to the second, and the third to the third.
 
@@ -15,13 +16,18 @@ Pointer to an array of force values representing the custom force. If multiple c
 var rglForceData: LPLONG!
 ```
 
+```c
+LPLONG rglForceData;
+```
+
 ## See Also
 
-- [var cChannels: DWORD](ffcustomforce/cchannels.md)
+### Instance Properties
+- [var cChannels: DWORD](./cchannels.md)
   Number of channels (axes) affected by this force.
-- [var cSamples: DWORD](ffcustomforce/csamples.md)
+- [var cSamples: DWORD](./csamples.md)
   Total number of samples in the **rglForceData**. It must be an integral multiple of the **cChannels**.
-- [var dwSamplePeriod: DWORD](ffcustomforce/dwsampleperiod.md)
+- [var dwSamplePeriod: DWORD](./dwsampleperiod.md)
   Sample period, in microseconds.
 
 

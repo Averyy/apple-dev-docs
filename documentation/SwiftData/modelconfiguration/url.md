@@ -1,7 +1,8 @@
 # url
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The on-disk location of the schema’s persistent storage.
 
@@ -23,13 +24,14 @@ let url: URL
 
 ## Mentions
 
-- [Syncing model data across a person’s devices](syncing-model-data-across-a-persons-devices.md)
+- [Syncing model data across a person’s devices](../syncing-model-data-across-a-persons-devices.md)
 
 ## See Also
 
-- [let allowsSave: Bool](modelconfiguration/allowssave.md)
+### Accessing configuration details
+- [let allowsSave: Bool](./allowssave.md)
   A Boolean value that determines whether the associated persistent storage is writable.
-- [let isStoredInMemoryOnly: Bool](modelconfiguration/isstoredinmemoryonly.md)
+- [let isStoredInMemoryOnly: Bool](./isstoredinmemoryonly.md)
   A Boolean value that determines whether the associated persistent storage is ephemeral and exists only in memory.
 
 

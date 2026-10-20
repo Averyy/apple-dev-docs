@@ -1,22 +1,24 @@
 # RegistryEntryIDInit
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 OSStatus RegistryEntryIDInit(RegEntryID *entryID);
 ```
 
 ## See Also
 
-- [RegistryEntryIDCompare](1573064-registryentryidcompare.md)
-- [RegistryEntryIDCopy](1573153-registryentryidcopy.md)
-- [RegistryEntryIDDispose](1573067-registryentryiddispose.md)
+### Entry IDs
+- [RegistryEntryIDCompare](./api-1573064-registryentryidcompare.md)
+- [RegistryEntryIDCopy](./api-1573153-registryentryidcopy.md)
+- [RegistryEntryIDDispose](./api-1573067-registryentryiddispose.md)
 
 
 ---

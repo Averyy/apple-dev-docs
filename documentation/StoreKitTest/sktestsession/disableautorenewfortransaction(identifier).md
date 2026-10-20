@@ -1,7 +1,8 @@
 # disableAutoRenewForTransaction(identifier:)
 
 **Framework**: StoreKit Test  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disables auto-renewing for an auto-renewable subscription in the test environment.
 
@@ -20,25 +21,30 @@ Disables auto-renewing for an auto-renewable subscription in the test environmen
 func disableAutoRenewForTransaction(identifier: Int) throws
 ```
 
+```objc
+- (BOOL) disableAutoRenewForTransactionWithIdentifier:(NSUInteger) identifier error:(NSError **) error;
+```
+
 #### Discussion
 
 Call this method to disable auto-renewing for a subscription. A subscription with auto-renew disabled expires at the end of the billing period and doesn’t renew at the start of the next billing period.
 
 ## Parameters
 
-- `identifier`: The transaction [`identifier`](sktesttransaction/identifier.md) of the auto-renewable subscription.
+- `identifier`: The transaction [`identifier`](../sktesttransaction/identifier.md) of the auto-renewable subscription.
 
 ## See Also
 
-- [var timeRate: SKTestSession.TimeRate](sktestsession/timerate-swift.property.md)
+### Testing subscription renewals
+- [var timeRate: SKTestSession.TimeRate](./timerate-swift.property.md)
   The rate at which time passes for subscriptions in the test environment as compared to real time.
-- [SKTestSession.TimeRate](sktestsession/timerate-swift.enum.md)
+- [SKTestSession.TimeRate](./timerate-swift.enum.md)
   The values for rates of time passing in the test environment.
-- [func enableAutoRenewForTransaction(identifier: Int) throws](sktestsession/enableautorenewfortransaction(identifier:).md)
+- [func enableAutoRenewForTransaction(identifier: Int) throws](./enableautorenewfortransaction%28identifier%29.md)
   Enables auto-renewing for an auto-renewable subscription in the test environment.
-- [func forceRenewalOfSubscription(productIdentifier: String) throws](sktestsession/forcerenewalofsubscription(productidentifier:).md)
+- [func forceRenewalOfSubscription(productIdentifier: String) throws](./forcerenewalofsubscription%28productidentifier%29.md)
   Ends the previous subscription period and begins the next period in the test environment.
-- [func expireSubscription(productIdentifier: String) throws](sktestsession/expiresubscription(productidentifier:).md)
+- [func expireSubscription(productIdentifier: String) throws](./expiresubscription%28productidentifier%29.md)
   Causes the identified auto-renewable subscription to expire immediately in the test environment.
 
 

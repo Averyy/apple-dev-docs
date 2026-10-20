@@ -1,7 +1,8 @@
 # AVPortalViewport
 
 **Framework**: AVKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines the visual parameters for content displayed within a portal frame.
 
@@ -12,6 +13,10 @@ An object that defines the visual parameters for content displayed within a port
 
 ```swift
 class AVPortalViewport
+```
+
+```objc
+@interface AVPortalViewport : NSObject
 ```
 
 #### Overview
@@ -31,34 +36,35 @@ When you don’t explicitly set properties, the system provides sensible default
 ## Topics
 
 ### Configuring the aspect ratio
-- [var aspectRatio: Double?](avportalviewport/aspectratio-4drnq.md)
+- [var aspectRatio: Double?](./avportalviewport/aspectratio-4drnq.md)
   The width-to-height ratio of the portal frame.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Playing immersive media with AVKit](playing-immersive-media-with-avkit.md)
+### Immersive and multiview media
+- [Playing immersive media with AVKit](./playing-immersive-media-with-avkit.md)
   Adopt the system playback interface to provide an immersive video watching experience.
-- [Creating a multiview video playback experience in visionOS](creating-a-multiview-video-playback-experience-in-visionos.md)
+- [Creating a multiview video playback experience in visionOS](./creating-a-multiview-video-playback-experience-in-visionos.md)
   Build an interface that plays multiple videos simultaneously and handles transitions to different experience types gracefully.
-- [class AVExperienceController](avexperiencecontroller.md)
+- [class AVExperienceController](./avexperiencecontroller.md)
   An object that controls video experiences.
-- [class AVMultiviewManager](avmultiviewmanager.md)
+- [class AVMultiviewManager](./avmultiviewmanager.md)
   An object that manages viewing multiple videos at once.
-- [class AVGroupExperienceCoordinator](avgroupexperiencecoordinator.md)
+- [class AVGroupExperienceCoordinator](./avgroupexperiencecoordinator.md)
   An object that synchronizes viewing environment state across participants in a SharePlay session.
-- [class AVViewport](avviewport.md)
+- [class AVViewport](./avviewport.md)
   An object that provides configuration options for how the player displays content in different viewing contexts.
 
 

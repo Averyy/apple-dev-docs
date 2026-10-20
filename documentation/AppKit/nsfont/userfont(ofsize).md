@@ -1,17 +1,22 @@
 # userFont(ofSize:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the font used by default for documents and other text under the user’s control (that is, text whose font the user can normally change), in the specified size.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func userFont(ofSize fontSize: CGFloat) -> NSFont?
+```
+
+```objc
++ (NSFont *) userFontOfSize:(CGFloat) fontSize;
 ```
 
 #### Return Value
@@ -28,11 +33,13 @@ If `fontSize` is 0 or negative, returns the user font at the default size.
 
 ## See Also
 
-- [init?(name: String, size: CGFloat)](nsfont/init(name:size:).md)
+### Related Documentation
+- [init?(name: String, size: CGFloat)](./init%28name,size%29.md)
   Creates a font object for the specified font name and font size.
-- [class func setUser(NSFont?)](nsfont/setuser(_:).md)
+- [class func setUser(NSFont?)](./setuser%28_%29.md)
   Sets the font used by default for documents and other text under the user’s control to the specified font.
-- [class func userFixedPitchFont(ofSize: CGFloat) -> NSFont?](nsfont/userfixedpitchfont(ofsize:).md)
+### Creating User Fonts
+- [class func userFixedPitchFont(ofSize: CGFloat) -> NSFont?](./userfixedpitchfont%28ofsize%29.md)
   Returns the font used by default for documents and other text under the user’s control (that is, text whose font the user can normally change), when that font should be fixed-pitch, in the specified size.
 
 

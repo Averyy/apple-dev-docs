@@ -1,7 +1,8 @@
 # init(applicationVersion:colorVolumeTransform:)
 
 **Framework**: ColorSync  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates Headroom Adaptive Gain Curve metadata.
 
@@ -22,7 +23,7 @@ init(applicationVersion: UInt8 = 0, colorVolumeTransform: ColorSyncProfile.Headr
 
 #### Discussion
 
-> **Note**: [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.unsupportedApplicationVersion(_:)`](colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/unsupportedapplicationversion(_:).md) if `applicationVersion` is not `0`.
+> **Throws**: [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.unsupportedApplicationVersion(_:)`](./error/unsupportedapplicationversion%28_%29.md) if `applicationVersion` is not `0`.
 
 ## Parameters
 

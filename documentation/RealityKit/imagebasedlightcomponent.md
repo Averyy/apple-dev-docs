@@ -1,7 +1,8 @@
 # ImageBasedLightComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -20,27 +21,28 @@ struct ImageBasedLightComponent
 ## Topics
 
 ### Initializers
-- [init(source: ImageBasedLightComponent.Source, intensityExponent: Float)](imagebasedlightcomponent/init(source:intensityexponent:).md)
+- [init(source: ImageBasedLightComponent.Source, intensityExponent: Float)](./imagebasedlightcomponent/init%28source,intensityexponent%29.md)
 ### Instance Properties
-- [var inheritsRotation: Bool](imagebasedlightcomponent/inheritsrotation.md)
+- [var inheritsRotation: Bool](./imagebasedlightcomponent/inheritsrotation.md)
   Whether the IBL inherit the rotation of the Entity
-- [var intensityExponent: Float](imagebasedlightcomponent/intensityexponent.md)
+- [var intensityExponent: Float](./imagebasedlightcomponent/intensityexponent.md)
   The intensity value of the probe An intensityExponent of 0 means using the diffuse/specular intensities as-is Otherwise the intensity is multiplied by 2^intensityExponent
-- [var source: ImageBasedLightComponent.Source](imagebasedlightcomponent/source-swift.property.md)
+- [var source: ImageBasedLightComponent.Source](./imagebasedlightcomponent/source-swift.property.md)
   Image(s) of the lighting environment
 ### Enumerations
-- [ImageBasedLightComponent.Source](imagebasedlightcomponent/source-swift.enum.md)
+- [ImageBasedLightComponent.Source](./imagebasedlightcomponent/source-swift.enum.md)
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Equatable](../swift/equatable.md)
+- [Component](./component.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [ImageBasedLightComponent.Source](imagebasedlightcomponent/source-swift.enum.md)
-- [struct ImageBasedLightReceiverComponent](imagebasedlightreceivercomponent.md)
+### Image-based lights
+- [ImageBasedLightComponent.Source](./imagebasedlightcomponent/source-swift.enum.md)
+- [struct ImageBasedLightReceiverComponent](./imagebasedlightreceivercomponent.md)
 
 
 ---

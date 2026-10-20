@@ -1,7 +1,8 @@
 # init(mapItem:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a map item annotation
 
@@ -17,6 +18,10 @@ Creates a map item annotation
 
 ```swift
 init?(mapItem: MKMapItem)
+```
+
+```objc
+- (instancetype) initWithMapItem:(MKMapItem *) mapItem;
 ```
 
 #### Discussion

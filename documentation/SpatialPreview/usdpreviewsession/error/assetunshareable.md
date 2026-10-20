@@ -1,13 +1,14 @@
 # USDPreviewSession.Error.assetUnshareable
 
 **Framework**: Spatial Preview  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The stage became too complex to sync.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

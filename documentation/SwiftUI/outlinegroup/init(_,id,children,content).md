@@ -1,7 +1,8 @@
 # init(_:id:children:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an outline group from a binding to a collection of root data elements, the key path to a data element’s identifier, and a key path to its children.
 
@@ -16,6 +17,30 @@ Creates an outline group from a binding to a collection of root data elements, t
 
 ```swift
 init<C, E>(_ data: Binding<C>, id: KeyPath<E, ID>, children: WritableKeyPath<E, C?>, @ContentBuilder content: @escaping (Binding<E>) -> Leaf) where Data == Binding<C>, C : MutableCollection, C : RandomAccessCollection, E == C.Element
+```
+
+Available when `Data` conforms to `RandomAccessCollection`, `ID` conforms to `Hashable`, `Parent` conforms to `View`, `Parent` is `Leaf`, and `Subgroup` is `DisclosureGroup<Parent, OutlineSubgroupChildren>`.
+
+**Other overloads**:
+
+```swift
+init<C, E>(_ root: Binding<E>, id: KeyPath<E, ID>, children: WritableKeyPath<E, C?>, @ContentBuilder content: @escaping (Binding<E>) -> Leaf) where Data == Binding<C>, C : MutableCollection, C : RandomAccessCollection, E == C.Element
+```
+
+```swift
+init<DataElement>(_ data: Data, id: KeyPath<DataElement, ID>, children: KeyPath<DataElement, Data?>, @ContentBuilder content: @escaping (DataElement) -> Leaf) where DataElement == Data.Element
+```
+
+```swift
+init<DataElement>(_ data: Data, id: KeyPath<DataElement, ID>, children: KeyPath<DataElement, Data?>, @TableRowBuilder<DataElement> content: @escaping (DataElement) -> Leaf) where ID == DataElement.ID, DataElement == Data.Element
+```
+
+```swift
+init<DataElement>(_ root: DataElement, id: KeyPath<DataElement, ID>, children: KeyPath<DataElement, Data?>, @ContentBuilder content: @escaping (DataElement) -> Leaf) where DataElement == Data.Element
+```
+
+```swift
+init<DataElement>(_ root: DataElement, id: KeyPath<DataElement, ID>, children: KeyPath<DataElement, Data?>, @TableRowBuilder<DataElement> content: @escaping (DataElement) -> Leaf) where ID == DataElement.ID, DataElement == Data.Element
 ```
 
 #### Discussion
@@ -35,9 +60,10 @@ Make sure that the identifier of a data element only changes if you mean to repl
 
 ## See Also
 
-- [init(_:children:)](outlinegroup/init(_:children:).md)
+### Creating an outline group
+- [init(_:children:)](./init%28_,children%29.md)
   Creates an outline group from a collection of root data elements and a key path to element’s children.
-- [init(_:children:content:)](outlinegroup/init(_:children:content:).md)
+- [init(_:children:content:)](./init%28_,children,content%29.md)
   Creates an outline group from a binding to a collection of root data elements and a key path to its children.
 
 

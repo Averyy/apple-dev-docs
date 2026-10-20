@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the visible range of rows.
@@ -19,17 +20,22 @@ Returns the visible range of rows.
 func accessibilityRowRange() -> NSRange
 ```
 
+```objc
+- (NSRange) accessibilityRowRange;
+```
+
 #### Return Value
 
 The visible range of rows.
 
 #### Discussion
 
-Set the location of the range to the first row containing the cell. Use the length of the range to specify the number of rows that the cell spans. If you do not implement this method, the system assumes an initial index of [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound-9t5v2) and a length of `0`.
+Set the location of the range to the first row containing the cell. Use the length of the range to specify the number of rows that the cell spans. If you do not implement this method, the system assumes an initial index of [`NSNotFound`](../../Foundation/nsnotfound-9t5v2.md) and a length of `0`.
 
 ## See Also
 
-- [func accessibilityColumnRange() -> NSRange](uiaccessibilitycontainerdatatablecell/accessibilitycolumnrange.md)
+### Getting the rows and columns
+- [func accessibilityColumnRange() -> NSRange](./accessibilitycolumnrange%28%29.md)
   Returns the columns spanned by the cell.
 
 

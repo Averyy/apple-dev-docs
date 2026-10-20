@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shadow object from data in an unarchiver.
 
@@ -19,9 +20,14 @@ Creates a shadow object from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init()](nsshadow/init.md)
+### Creating a shadow
+- [init()](./init%28%29.md)
   Creates a shadow object with default values.
 
 

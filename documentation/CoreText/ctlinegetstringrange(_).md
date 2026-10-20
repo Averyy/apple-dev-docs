@@ -1,7 +1,8 @@
 # CTLineGetStringRange(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the range of characters that originally spawned the glyphs in the line.
 
@@ -20,9 +21,13 @@ Gets the range of characters that originally spawned the glyphs in the line.
 func CTLineGetStringRange(_ line: CTLine) -> CFRange
 ```
 
+```c
+extern CFRange CTLineGetStringRange(CTLineRef line);
+```
+
 #### Return Value
 
-A [`CFRange`](https://developer.apple.com/documentation/corefoundation/cfrange) structure that contains the range over the backing store string that spawned the glyphs, or if the function fails for any reason, an empty range.
+A [`CFRange`](../CoreFoundation/cfrange.md) structure that contains the range over the backing store string that spawned the glyphs, or if the function fails for any reason, an empty range.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ A [`CFRange`](https://developer.apple.com/documentation/corefoundation/cfrange) 
 
 ## See Also
 
-- [func CTLineGetGlyphCount(CTLine) -> CFIndex](ctlinegetglyphcount(_:).md)
+### Getting Line Data
+- [func CTLineGetGlyphCount(CTLine) -> CFIndex](./ctlinegetglyphcount%28_%29.md)
   Returns the total glyph count for the line object.
-- [func CTLineGetGlyphRuns(CTLine) -> CFArray](ctlinegetglyphruns(_:).md)
+- [func CTLineGetGlyphRuns(CTLine) -> CFArray](./ctlinegetglyphruns%28_%29.md)
   Returns the array of glyph runs that make up the line object.
-- [func CTLineGetPenOffsetForFlush(CTLine, CGFloat, Double) -> Double](ctlinegetpenoffsetforflush(_:_:_:).md)
+- [func CTLineGetPenOffsetForFlush(CTLine, CGFloat, Double) -> Double](./ctlinegetpenoffsetforflush%28_,_,_%29.md)
   Gets the pen offset required to draw flush text.
 
 

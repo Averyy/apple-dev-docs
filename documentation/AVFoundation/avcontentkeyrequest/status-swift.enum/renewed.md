@@ -1,7 +1,8 @@
 # AVContentKeyRequest.Status.renewed
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The key request was renewed.
 
@@ -20,17 +21,22 @@ The key request was renewed.
 case renewed
 ```
 
+```c
+AVContentKeyRequestStatusRenewed
+```
+
 ## See Also
 
-- [AVContentKeyRequest.Status.cancelled](avcontentkeyrequest/status-swift.enum/cancelled.md)
+### Request status
+- [AVContentKeyRequest.Status.cancelled](./cancelled.md)
   The key request was canceled.
-- [AVContentKeyRequest.Status.failed](avcontentkeyrequest/status-swift.enum/failed.md)
+- [AVContentKeyRequest.Status.failed](./failed.md)
   The key request failed.
-- [AVContentKeyRequest.Status.receivedResponse](avcontentkeyrequest/status-swift.enum/receivedresponse.md)
+- [AVContentKeyRequest.Status.receivedResponse](./receivedresponse.md)
   The key request was received, and the key is in use.
-- [AVContentKeyRequest.Status.requestingResponse](avcontentkeyrequest/status-swift.enum/requestingresponse.md)
+- [AVContentKeyRequest.Status.requestingResponse](./requestingresponse.md)
   The key request was just created.
-- [AVContentKeyRequest.Status.retried](avcontentkeyrequest/status-swift.enum/retried.md)
+- [AVContentKeyRequest.Status.retried](./retried.md)
   The key request was retried.
 
 

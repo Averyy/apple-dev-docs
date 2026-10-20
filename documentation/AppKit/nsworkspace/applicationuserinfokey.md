@@ -1,9 +1,10 @@
 # applicationUserInfoKey
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The value corresponding to this key is an instance of [`NSRunningApplication`](nsrunningapplication.md) that reflects the affected app.
+The value corresponding to this key is an instance of [`NSRunningApplication`](../nsrunningapplication.md) that reflects the affected app.
 
 **Availability**:
 - macOS 10.6+
@@ -12,6 +13,10 @@ The value corresponding to this key is an instance of [`NSRunningApplication`](n
 
 ```swift
 class let applicationUserInfoKey: String
+```
+
+```c
+extern NSString * const NSWorkspaceApplicationKey;
 ```
 
 

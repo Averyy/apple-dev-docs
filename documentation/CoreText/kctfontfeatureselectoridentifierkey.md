@@ -1,7 +1,8 @@
 # kCTFontFeatureSelectorIdentifierKey
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 3.2+
@@ -18,21 +19,26 @@
 let kCTFontFeatureSelectorIdentifierKey: CFString
 ```
 
+```c
+extern CFStringRef const kCTFontFeatureSelectorIdentifierKey;
+```
+
 #### Discussion
 
 Key to be used with a selector dictionary corresponding to a feature type to obtain the selector identifier value as a `CFNumberRef` object.
 
 ## See Also
 
-- [let kCTFontFeatureTypeIdentifierKey: CFString](kctfontfeaturetypeidentifierkey.md)
-- [let kCTFontFeatureTypeNameKey: CFString](kctfontfeaturetypenamekey.md)
-- [let kCTFontFeatureTypeExclusiveKey: CFString](kctfontfeaturetypeexclusivekey.md)
-- [let kCTFontFeatureTypeSelectorsKey: CFString](kctfontfeaturetypeselectorskey.md)
-- [let kCTFontFeatureSelectorNameKey: CFString](kctfontfeatureselectornamekey.md)
-- [let kCTFontFeatureSelectorDefaultKey: CFString](kctfontfeatureselectordefaultkey.md)
-- [let kCTFontFeatureSelectorSettingKey: CFString](kctfontfeatureselectorsettingkey.md)
-- [let kCTFontFeatureSampleTextKey: CFString](kctfontfeaturesampletextkey.md)
-- [let kCTFontFeatureTooltipTextKey: CFString](kctfontfeaturetooltiptextkey.md)
+### Constants
+- [let kCTFontFeatureTypeIdentifierKey: CFString](./kctfontfeaturetypeidentifierkey.md)
+- [let kCTFontFeatureTypeNameKey: CFString](./kctfontfeaturetypenamekey.md)
+- [let kCTFontFeatureTypeExclusiveKey: CFString](./kctfontfeaturetypeexclusivekey.md)
+- [let kCTFontFeatureTypeSelectorsKey: CFString](./kctfontfeaturetypeselectorskey.md)
+- [let kCTFontFeatureSelectorNameKey: CFString](./kctfontfeatureselectornamekey.md)
+- [let kCTFontFeatureSelectorDefaultKey: CFString](./kctfontfeatureselectordefaultkey.md)
+- [let kCTFontFeatureSelectorSettingKey: CFString](./kctfontfeatureselectorsettingkey.md)
+- [let kCTFontFeatureSampleTextKey: CFString](./kctfontfeaturesampletextkey.md)
+- [let kCTFontFeatureTooltipTextKey: CFString](./kctfontfeaturetooltiptextkey.md)
 
 
 ---

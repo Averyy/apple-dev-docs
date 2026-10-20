@@ -1,7 +1,8 @@
 # verticalSyncPulseWidth
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Height of vertical sync.
 
@@ -10,7 +11,7 @@ Height of vertical sync.
 
 ## Declaration
 
-```swift
+```c
 UInt32 verticalSyncPulseWidth;
 ```
 

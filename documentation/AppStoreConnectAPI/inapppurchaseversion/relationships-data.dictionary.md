@@ -1,7 +1,8 @@
 # InAppPurchaseVersion.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,20 +11,20 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseVersion.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseVersion.Relationships.InAppPurchase](inapppurchaseversion/relationships-data.dictionary/inapppurchase-data.dictionary.md)
+- [object InAppPurchaseVersion.Relationships.InAppPurchase](./relationships-data.dictionary/inapppurchase-data.dictionary.md)
   The In-App Purchase for the In-App Purchase version.
-- [object InAppPurchaseVersion.Relationships.Image](inapppurchaseversion/relationships-data.dictionary/image-data.dictionary.md)
+- [object InAppPurchaseVersion.Relationships.Image](./relationships-data.dictionary/image-data.dictionary.md)
   The review image for the In-App Purchase version.
-- [object InAppPurchaseVersion.Relationships.Images](inapppurchaseversion/relationships-data.dictionary/images-data.dictionary.md)
+- [object InAppPurchaseVersion.Relationships.Images](./relationships-data.dictionary/images-data.dictionary.md)
   The review images for the In-App Purchase version.
-- [object InAppPurchaseVersion.Relationships.Localizations](inapppurchaseversion/relationships-data.dictionary/localizations-data.dictionary.md)
+- [object InAppPurchaseVersion.Relationships.Localizations](./relationships-data.dictionary/localizations-data.dictionary.md)
   The localizations for the In-App Purchase version.
 
 ## Properties
@@ -35,7 +36,8 @@ object InAppPurchaseVersion.Relationships
 
 ## See Also
 
-- [object InAppPurchaseVersion.Attributes](inapppurchaseversion/attributes-data.dictionary.md)
+### Objects and types
+- [object InAppPurchaseVersion.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an In-App Purchase version resource.
 
 

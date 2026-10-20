@@ -1,7 +1,8 @@
 # OSSystemExtensionsWorkspace
 
 **Framework**: System Extensions  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.4+
@@ -15,6 +16,10 @@
 class OSSystemExtensionsWorkspace
 ```
 
+```objc
+@interface OSSystemExtensionsWorkspace : NSObject
+```
+
 #### Overview
 
 > **Note**: Using the workspace API requires the system extension entitlement
@@ -22,25 +27,25 @@ class OSSystemExtensionsWorkspace
 ## Topics
 
 ### Instance Methods
-- [func addObserver(any OSSystemExtensionsWorkspaceObserver) throws](ossystemextensionsworkspace/addobserver(_:).md)
-- [func removeObserver(any OSSystemExtensionsWorkspaceObserver)](ossystemextensionsworkspace/removeobserver(_:).md)
-- [func systemExtensions(forApplicationWithBundleID: String) throws -> Set<OSSystemExtensionProperties>](ossystemextensionsworkspace/systemextensions(forapplicationwithbundleid:).md)
+- [func addObserver(any OSSystemExtensionsWorkspaceObserver) throws](./ossystemextensionsworkspace/addobserver%28_%29.md)
+- [func removeObserver(any OSSystemExtensionsWorkspaceObserver)](./ossystemextensionsworkspace/removeobserver%28_%29.md)
+- [func systemExtensions(forApplicationWithBundleID: String) throws -> Set<OSSystemExtensionProperties>](./ossystemextensionsworkspace/systemextensions%28forapplicationwithbundleid%29.md)
 ### Type Properties
-- [class var shared: OSSystemExtensionsWorkspace](ossystemextensionsworkspace/shared.md)
+- [class var shared: OSSystemExtensionsWorkspace](./ossystemextensionsworkspace/shared.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

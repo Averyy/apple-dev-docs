@@ -1,14 +1,15 @@
 # kSBCCmd_COPY
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSBCCmd_COPY = 0x18
 ```
 

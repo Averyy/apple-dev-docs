@@ -1,7 +1,8 @@
 # picas
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 10.13+
@@ -12,11 +13,16 @@
 static let picas: NSRulerView.UnitName
 ```
 
+```c
+extern NSRulerViewUnitName const NSRulerViewUnitPicas;
+```
+
 ## See Also
 
-- [static let centimeters: NSRulerView.UnitName](nsrulerview/unitname/centimeters.md)
-- [static let inches: NSRulerView.UnitName](nsrulerview/unitname/inches.md)
-- [static let points: NSRulerView.UnitName](nsrulerview/unitname/points.md)
+### Ruler Units
+- [static let centimeters: NSRulerView.UnitName](./centimeters.md)
+- [static let inches: NSRulerView.UnitName](./inches.md)
+- [static let points: NSRulerView.UnitName](./points.md)
 
 
 ---

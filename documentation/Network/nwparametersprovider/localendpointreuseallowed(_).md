@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Allow local endpoint reuse.
@@ -28,6 +29,12 @@ Allow multiple connections to use the same local address and port (`SO_REUSEADDR
 ## Parameters
 
 - `allowed`: True if allowed, false otherwise.
+
+## Default Implementations
+
+### NWParametersProvider Implementations
+- [func localEndpointReuseAllowed(Bool) -> Self](./localendpointreuseallowed%28_%29-1x9ep.md)
+  Allow local endpoint reuse.
 
 
 ---

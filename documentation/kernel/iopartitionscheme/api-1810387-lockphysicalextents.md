@@ -5,12 +5,12 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool lockPhysicalExtents(
  IOService *client);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns true if the lock was successful, false otherwise.
 
@@ -24,15 +24,16 @@ Lock the contents of the storage object against relocation temporarily, for the 
 
 ## See Also
 
-- [copyPhysicalExtent](iopartitionscheme/1810278-copyphysicalextent.md)
-- [handleClose](iopartitionscheme/1810310-handleclose.md)
-- [handleIsOpen](iopartitionscheme/1810337-handleisopen.md)
-- [handleOpen](iopartitionscheme/1810366-handleopen.md)
-- [read](iopartitionscheme/1810409-read.md)
-- [synchronizeCache](iopartitionscheme/1810446-synchronizecache.md)
-- [unlockPhysicalExtents](iopartitionscheme/1810496-unlockphysicalextents.md)
-- [unmap](iopartitionscheme/1810548-unmap.md)
-- [write](iopartitionscheme/1810601-write.md)
+### Miscellaneous
+- [copyPhysicalExtent](./api-1810278-copyphysicalextent.md)
+- [handleClose](./api-1810310-handleclose.md)
+- [handleIsOpen](./api-1810337-handleisopen.md)
+- [handleOpen](./api-1810366-handleopen.md)
+- [read](./api-1810409-read.md)
+- [synchronizeCache](./api-1810446-synchronizecache.md)
+- [unlockPhysicalExtents](./api-1810496-unlockphysicalextents.md)
+- [unmap](./api-1810548-unmap.md)
+- [write](./api-1810601-write.md)
 
 
 ---

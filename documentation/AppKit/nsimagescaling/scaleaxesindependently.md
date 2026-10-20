@@ -1,7 +1,8 @@
 # NSImageScaling.scaleAxesIndependently
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Scale each dimension to exactly fit destination.
 
@@ -14,17 +15,22 @@ Scale each dimension to exactly fit destination.
 case scaleAxesIndependently
 ```
 
+```c
+NSImageScaleAxesIndependently
+```
+
 #### Discussion
 
 This setting does not preserve the aspect ratio of the image.
 
 ## See Also
 
-- [NSImageScaling.scaleProportionallyDown](nsimagescaling/scaleproportionallydown.md)
+### Constants
+- [NSImageScaling.scaleProportionallyDown](./scaleproportionallydown.md)
   If it is too large for the destination, scale the image down while preserving the aspect ratio.
-- [NSImageScaling.scaleNone](nsimagescaling/scalenone.md)
+- [NSImageScaling.scaleNone](./scalenone.md)
   Do not scale the image.
-- [NSImageScaling.scaleProportionallyUpOrDown](nsimagescaling/scaleproportionallyupordown.md)
+- [NSImageScaling.scaleProportionallyUpOrDown](./scaleproportionallyupordown.md)
   Scale the image to its maximum possible dimensions while both staying within the destination area and preserving its aspect ratio.
 
 

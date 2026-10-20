@@ -1,7 +1,8 @@
 # match(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Match the specified bool value against a bool value.
 

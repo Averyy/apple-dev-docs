@@ -1,7 +1,8 @@
 # dataSource
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that provides view controllers.
 
@@ -9,7 +10,7 @@ The object that provides view controllers.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,14 +19,19 @@ The object that provides view controllers.
 weak var dataSource: (any UIPageViewControllerDataSource)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIPageViewControllerDataSource> dataSource;
+```
+
 #### Discussion
 
 Methods of the data source are called in response to gesture-based navigation. If the value of this property is `nil`, then gesture-based navigation is disabled.
 
 ## See Also
 
-- [protocol UIPageViewControllerDataSource](uipageviewcontrollerdatasource.md)
-  The [`UIPageViewControllerDataSource`](uipageviewcontrollerdatasource.md) protocol is adopted by an object that provides view controllers to the page view controller on an as-needed basis, in response to navigation gestures.
+### Providing the Page Content
+- [protocol UIPageViewControllerDataSource](../uipageviewcontrollerdatasource.md)
+  The [`UIPageViewControllerDataSource`](../uipageviewcontrollerdatasource.md) protocol is adopted by an object that provides view controllers to the page view controller on an as-needed basis, in response to navigation gestures.
 
 
 ---

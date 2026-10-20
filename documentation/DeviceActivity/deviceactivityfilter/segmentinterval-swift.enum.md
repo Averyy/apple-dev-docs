@@ -1,7 +1,8 @@
 # DeviceActivityFilter.SegmentInterval
 
 **Framework**: Device Activity  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type indicating the interval at which the system subdivides device activity data within a specified date interval.
 
@@ -19,18 +20,18 @@ enum SegmentInterval
 ## Topics
 
 ### Enumeration Cases
-- [DeviceActivityFilter.SegmentInterval.daily(during:)](deviceactivityfilter/segmentinterval-swift.enum/daily(during:).md)
+- [DeviceActivityFilter.SegmentInterval.daily(during:)](./segmentinterval-swift.enum/daily%28during%29.md)
   Indicates that the system aggregates data into daily segments within the specified interval.
-- [DeviceActivityFilter.SegmentInterval.hourly(during:)](deviceactivityfilter/segmentinterval-swift.enum/hourly(during:).md)
+- [DeviceActivityFilter.SegmentInterval.hourly(during:)](./segmentinterval-swift.enum/hourly%28during%29.md)
   Indicates that the system aggregates data into hourly segments within the specified interval.
-- [DeviceActivityFilter.SegmentInterval.weekly(during:)](deviceactivityfilter/segmentinterval-swift.enum/weekly(during:).md)
+- [DeviceActivityFilter.SegmentInterval.weekly(during:)](./segmentinterval-swift.enum/weekly%28during%29.md)
   Indicates that the system aggregates data into weekly segments within the specified interval.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

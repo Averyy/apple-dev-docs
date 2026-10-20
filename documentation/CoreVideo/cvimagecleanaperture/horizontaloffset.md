@@ -1,7 +1,8 @@
 # horizontalOffset
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Horizontal offset from the center of the image buffer.
 

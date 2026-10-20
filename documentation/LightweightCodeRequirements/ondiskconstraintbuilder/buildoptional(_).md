@@ -1,7 +1,8 @@
 # buildOptional(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Produces content for a conditional statement in a multi-statement closure when the condition is true and has no else option
 

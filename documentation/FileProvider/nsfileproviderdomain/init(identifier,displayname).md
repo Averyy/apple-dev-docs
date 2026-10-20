@@ -1,7 +1,8 @@
 # init(identifier:displayName:)
 
 **Framework**: File Provider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new file provider domain with the specified identifier and display name.
 
@@ -18,6 +19,10 @@ Creates a new file provider domain with the specified identifier and display nam
 init(identifier: NSFileProviderDomainIdentifier, displayName: String)
 ```
 
+```objc
+- (instancetype) initWithIdentifier:(NSFileProviderDomainIdentifier) identifier displayName:(NSString *) displayName;
+```
+
 ## Parameters
 
 - `identifier`: A string that identifies the domain. The file provider extension can select any string to uniquely identify the domain, as long as it doesn’t contain the colon (:) or slash (/) symbols.
@@ -25,11 +30,12 @@ init(identifier: NSFileProviderDomainIdentifier, displayName: String)
 
 ## See Also
 
-- [init(identifier: NSFileProviderDomainIdentifier, displayName: String, pathRelativeToDocumentStorage: String)](nsfileproviderdomain/init(identifier:displayname:pathrelativetodocumentstorage:).md)
+### Creating domains
+- [init(identifier: NSFileProviderDomainIdentifier, displayName: String, pathRelativeToDocumentStorage: String)](./init%28identifier,displayname,pathrelativetodocumentstorage%29.md)
   Returns a newly instantiated domain.
-- [struct NSFileProviderDomainIdentifier](nsfileproviderdomainidentifier.md)
+- [struct NSFileProviderDomainIdentifier](../nsfileproviderdomainidentifier.md)
   A unique identifier for a file provider’s domain.
-- [init(displayName: String, userInfo: [AnyHashable : Any], volumeURL: URL?)](nsfileproviderdomain/init(displayname:userinfo:volumeurl:).md)
+- [init(displayName: String, userInfo: [AnyHashable : Any], volumeURL: URL?)](./init%28displayname,userinfo,volumeurl%29.md)
   Creates a new file provider domain with the specified URL and display name.
 
 

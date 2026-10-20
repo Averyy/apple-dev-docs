@@ -1,7 +1,8 @@
 # NEURLFilterManager.ReportFormat.json
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 JSON format for reports.
 
@@ -19,7 +20,8 @@ case json
 
 ## See Also
 
-- [NEURLFilterManager.ReportFormat.protobuf](neurlfiltermanager/reportformat-swift.enum/protobuf.md)
+### Report formats
+- [NEURLFilterManager.ReportFormat.protobuf](./protobuf.md)
   Protocol Buffers format for reports.
 
 

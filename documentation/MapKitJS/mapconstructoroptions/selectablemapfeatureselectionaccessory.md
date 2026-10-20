@@ -1,7 +1,8 @@
 # selectableMapFeatureSelectionAccessory
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 An accessory that displays place information when someone selects a map feature.
 
@@ -10,15 +11,15 @@ An accessory that displays place information when someone selects a map feature.
 
 ## Declaration
 
-```swift
+```
 selectableMapFeatureSelectionAccessory?: PlaceSelectionAccessory;
 ```
 
 #### Discussion
 
-This option sets the initial value of [`selectableMapFeatureSelectionAccessory`](map/selectablemapfeatureselectionaccessory.md). The default is `null`.
+This option sets the initial value of [`selectableMapFeatureSelectionAccessory`](../map/selectablemapfeatureselectionaccessory.md). The default is `null`.
 
-The map shows the accessory when the [`selectableMapFeatures`](mapconstructoroptions/selectablemapfeatures.md) includes at least one [`MapFeatureType`](mapfeaturetype.md), and a map feature is selected.
+The map shows the accessory when the [`selectableMapFeatures`](./selectablemapfeatures.md) includes at least one [`MapFeatureType`](../mapfeaturetype.md), and a map feature is selected.
 
 
 ---

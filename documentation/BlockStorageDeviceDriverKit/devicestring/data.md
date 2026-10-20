@@ -1,7 +1,8 @@
 # data
 
 **Framework**: BlockStorageDeviceDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string’s character data.
 
@@ -10,7 +11,7 @@ The string’s character data.
 
 ## Declaration
 
-```swift
+```c
 char data[256];
 ```
 

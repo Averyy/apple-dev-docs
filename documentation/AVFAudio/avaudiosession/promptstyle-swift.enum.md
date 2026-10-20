@@ -1,17 +1,18 @@
 # AVAudioSession.PromptStyle
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the prompt style to use.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,31 +20,36 @@ Constants that indicate the prompt style to use.
 enum PromptStyle
 ```
 
+```c
+enum AVAudioSessionPromptStyle : NSUInteger;
+```
+
 ## Topics
 
 ### Creating a prompt style
-- [init?(rawValue: UInt)](avaudiosession/promptstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./promptstyle-swift.enum/init%28rawvalue%29.md)
 ### Identifying prompt styles
-- [AVAudioSession.PromptStyle.none](avaudiosession/promptstyle-swift.enum/none.md)
+- [AVAudioSession.PromptStyle.none](./promptstyle-swift.enum/none.md)
   Your app shouldn’t issue prompts at this time.
-- [AVAudioSession.PromptStyle.short](avaudiosession/promptstyle-swift.enum/short.md)
+- [AVAudioSession.PromptStyle.short](./promptstyle-swift.enum/short.md)
   Your app should issue short, nonverbal prompts.
-- [AVAudioSession.PromptStyle.normal](avaudiosession/promptstyle-swift.enum/normal.md)
+- [AVAudioSession.PromptStyle.normal](./promptstyle-swift.enum/normal.md)
   Your app may use long, verbal prompts.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var promptStyle: AVAudioSession.PromptStyle](avaudiosession/promptstyle-swift.property.md)
+### Inspecting the audio prompt style
+- [var promptStyle: AVAudioSession.PromptStyle](./promptstyle-swift.property.md)
   A hint to audio sessions that use voice prompt mode to alter the type of prompts they issue in response to other system audio, such as Siri and phone calls.
 
 

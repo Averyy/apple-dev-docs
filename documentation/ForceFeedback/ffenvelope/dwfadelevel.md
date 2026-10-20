@@ -1,7 +1,8 @@
 # dwFadeLevel
 
 **Framework**: Force Feedback  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Amplitude for the end of the envelope, relative to the baseline, in the range from 0 through 10,000. If the effect’s type-specific data does not specify a baseline, the amplitude is relative to 0.
 
@@ -15,15 +16,20 @@ Amplitude for the end of the envelope, relative to the baseline, in the range fr
 var dwFadeLevel: DWORD
 ```
 
+```c
+DWORD dwFadeLevel;
+```
+
 ## See Also
 
-- [var dwAttackLevel: DWORD](ffenvelope/dwattacklevel.md)
+### Instance Properties
+- [var dwAttackLevel: DWORD](./dwattacklevel.md)
   Amplitude for the start of the envelope, relative to the baseline, in the range from 0 through 10,000. If the effect’s type-specific data does not specify a baseline, the amplitude is relative to 0.
-- [var dwAttackTime: DWORD](ffenvelope/dwattacktime.md)
+- [var dwAttackTime: DWORD](./dwattacktime.md)
   The time, in microseconds, to reach the sustain level.
-- [var dwFadeTime: DWORD](ffenvelope/dwfadetime.md)
+- [var dwFadeTime: DWORD](./dwfadetime.md)
   The time, in microseconds, to reach the fade level.
-- [var dwSize: DWORD](ffenvelope/dwsize.md)
+- [var dwSize: DWORD](./dwsize.md)
   Size, in bytes, of this structure. This member must be initialized before the structure is used.
 
 

@@ -1,7 +1,8 @@
 # remove(at:preservingWorldTransform:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified child from this entity.
 
@@ -11,7 +12,7 @@ Removes the specified child from this entity.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -31,10 +32,11 @@ Removes the specified child from this entity.
 
 ## See Also
 
-- [func remove(Entity, preservingWorldTransform: Bool)](entity/childcollection/remove(_:preservingworldtransform:).md)
+### Removing entities
+- [func remove(Entity, preservingWorldTransform: Bool)](./remove%28_,preservingworldtransform%29.md)
   Removes the specified child from this entity.
-- [func removeAll(preservingWorldTransforms: Bool)](entity/childcollection/removeall(preservingworldtransforms:).md)
-- [func removeAll(keepCapacity: Bool, preservingWorldTransforms: Bool)](entity/childcollection/removeall(keepcapacity:preservingworldtransforms:).md)
+- [func removeAll(preservingWorldTransforms: Bool)](./removeall%28preservingworldtransforms%29.md)
+- [func removeAll(keepCapacity: Bool, preservingWorldTransforms: Bool)](./removeall%28keepcapacity,preservingworldtransforms%29.md)
   Removes all children from this entity.
 
 

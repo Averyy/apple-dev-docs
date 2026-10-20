@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -10,7 +11,8 @@ Although these symbols are available for use, Apple is no longer actively develo
 
 ## See Also
 
-- [NSPrinter.TableStatus](nsprinter/tablestatus.md)
+### Deprecated
+- [NSPrinter.TableStatus](./nsprinter/tablestatus.md)
   Constants that describe the state of a printer information table stored by a printer object.
 
 

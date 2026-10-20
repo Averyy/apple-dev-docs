@@ -1,7 +1,8 @@
 # readAttributeOperationalError(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeOperationalError(completion: @escaping @Sendable (MTROperationalStateClusterErrorStateStruct?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeOperationalError() async throws -> MTROperationalStateClusterErrorStateStruct
+```
+
+```objc
+- (void) readAttributeOperationalErrorWithCompletion:(void (^)(MTROperationalStateClusterErrorStateStruct *value, NSError *error)) completion;
 ```
 
 

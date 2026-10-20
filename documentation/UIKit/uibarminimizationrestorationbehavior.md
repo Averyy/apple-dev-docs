@@ -1,7 +1,8 @@
 # UIBarMinimizationRestorationBehavior
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -16,34 +17,39 @@
 enum UIBarMinimizationRestorationBehavior
 ```
 
+```c
+enum UIBarMinimizationRestorationBehavior : NSInteger;
+```
+
 ## Topics
 
 ### Restoring the bar
-- [UIBarMinimizationRestorationBehavior.atScrollEdge](uibarminimizationrestorationbehavior/atscrolledge.md)
+- [UIBarMinimizationRestorationBehavior.atScrollEdge](./uibarminimizationrestorationbehavior/atscrolledge.md)
   The bar restores only when the observed scroll view’s content reaches the scroll edge.
-- [UIBarMinimizationRestorationBehavior.automatic](uibarminimizationrestorationbehavior/automatic.md)
+- [UIBarMinimizationRestorationBehavior.automatic](./uibarminimizationrestorationbehavior/automatic.md)
   The system determines the restoration behavior.
 ### Creating a restoration behavior
-- [init?(rawValue: Int)](uibarminimizationrestorationbehavior/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uibarminimizationrestorationbehavior/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UIAccessibility.ExpandedStatus](uiaccessibility/expandedstatus.md)
-- [UITextFormattingViewController.ComponentSize](uitextformattingviewcontroller/componentsize.md)
+### Enumerations
+- [UIAccessibility.ExpandedStatus](./uiaccessibility/expandedstatus.md)
+- [UITextFormattingViewController.ComponentSize](./uitextformattingviewcontroller/componentsize.md)
   Sizes of text formatting view controller components.
-- [enum UIFocusItemDeferralMode](uifocusitemdeferralmode.md)
-- [enum UIBarMinimizationBehavior](uibarminimizationbehavior.md)
-- [enum UIBarMinimizationSafeAreaAdjustment](uibarminimizationsafeareaadjustment.md)
+- [enum UIFocusItemDeferralMode](./uifocusitemdeferralmode.md)
+- [enum UIBarMinimizationBehavior](./uibarminimizationbehavior.md)
+- [enum UIBarMinimizationSafeAreaAdjustment](./uibarminimizationsafeareaadjustment.md)
 
 
 ---

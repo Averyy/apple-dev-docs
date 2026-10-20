@@ -1,7 +1,8 @@
 # selecting(_:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a data frame that includes only the column selection.
 

@@ -1,7 +1,8 @@
 # bitDepth
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var bitDepth: ICScannerBitDepth { get set }
+```
+
+```objc
+@property (readwrite) ICScannerBitDepth bitDepth;
 ```
 
 

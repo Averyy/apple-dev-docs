@@ -1,7 +1,8 @@
 # plan(_:segmentHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a track plan with manual segment completion control.
 
@@ -21,17 +22,17 @@ func plan(_ trackPlan: AVAssetTrackPlan, segmentHandler: @escaping @Sendable (AV
 
 #### Discussion
 
-This variant provides fine-grained control over segment completion, allowing you to return a [`AVAssetWritingPlanner.SegmentResult`](avassetwritingplanner/segmentresult.md) that explicitly controls how the segment completes.
+This variant provides fine-grained control over segment completion, allowing you to return a [`AVAssetWritingPlanner.SegmentResult`](./segmentresult.md) that explicitly controls how the segment completes.
 
 ## Parameters
 
 - `trackPlan`: The track plan contains information about the track and boundaries of all the segments.
-- `segmentHandler`: Handler that returns a [`AVAssetWritingPlanner.SegmentResult`](avassetwritingplanner/segmentresult.md) for manual control.
+- `segmentHandler`: Handler that returns a [`AVAssetWritingPlanner.SegmentResult`](./segmentresult.md) for manual control.
 
 ## Topics
 
 ### See Also
-- [AVAssetWritingPlanner.SegmentResult](avassetwritingplanner/segmentresult.md)
+- [AVAssetWritingPlanner.SegmentResult](./segmentresult.md)
   Result type for manual segment completion control.
 
 

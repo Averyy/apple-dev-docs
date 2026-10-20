@@ -1,7 +1,8 @@
 # motionStartTime
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures the motion start time for this geometry.
 
@@ -17,6 +18,10 @@ Configures the motion start time for this geometry.
 
 ```swift
 var motionStartTime: Float { get set }
+```
+
+```objc
+@property (nonatomic) float motionStartTime;
 ```
 
 #### Discussion

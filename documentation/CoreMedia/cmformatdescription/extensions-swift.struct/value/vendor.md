@@ -1,7 +1,8 @@
 # CMFormatDescription.Extensions.Value.Vendor
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 13.0+
@@ -21,29 +22,30 @@ struct Vendor
 ## Topics
 
 ### Vendors
-- [static let apple: CMFormatDescription.Extensions.Value.Vendor](cmformatdescription/extensions-swift.struct/value/vendor/apple.md)
+- [static let apple: CMFormatDescription.Extensions.Value.Vendor](./vendor/apple.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [RawRepresentable](../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CMFormatDescription.Extensions.Value.AlphaChannelMode](cmformatdescription/extensions-swift.struct/value/alphachannelmode.md)
-- [CMFormatDescription.Extensions.Value.ChromaLocation](cmformatdescription/extensions-swift.struct/value/chromalocation.md)
-- [CMFormatDescription.Extensions.Value.ColorPrimaries](cmformatdescription/extensions-swift.struct/value/colorprimaries.md)
-- [CMFormatDescription.Extensions.Value.FieldDetail](cmformatdescription/extensions-swift.struct/value/fielddetail.md)
-- [CMFormatDescription.Extensions.Value.FontFace](cmformatdescription/extensions-swift.struct/value/fontface.md)
-- [CMFormatDescription.Extensions.Value.MPEG2VideoProfile](cmformatdescription/extensions-swift.struct/value/mpeg2videoprofile.md)
-- [CMFormatDescription.Extensions.Value.TextDisplayFlags](cmformatdescription/extensions-swift.struct/value/textdisplayflags.md)
-- [CMFormatDescription.Extensions.Value.TextJustification](cmformatdescription/extensions-swift.struct/value/textjustification.md)
-- [CMFormatDescription.Extensions.Value.TransferFunction](cmformatdescription/extensions-swift.struct/value/transferfunction.md)
-- [CMFormatDescription.Extensions.Value.YCbCrMatrix](cmformatdescription/extensions-swift.struct/value/ycbcrmatrix.md)
+### Constants
+- [CMFormatDescription.Extensions.Value.AlphaChannelMode](./alphachannelmode.md)
+- [CMFormatDescription.Extensions.Value.ChromaLocation](./chromalocation.md)
+- [CMFormatDescription.Extensions.Value.ColorPrimaries](./colorprimaries.md)
+- [CMFormatDescription.Extensions.Value.FieldDetail](./fielddetail.md)
+- [CMFormatDescription.Extensions.Value.FontFace](./fontface.md)
+- [CMFormatDescription.Extensions.Value.MPEG2VideoProfile](./mpeg2videoprofile.md)
+- [CMFormatDescription.Extensions.Value.TextDisplayFlags](./textdisplayflags.md)
+- [CMFormatDescription.Extensions.Value.TextJustification](./textjustification.md)
+- [CMFormatDescription.Extensions.Value.TransferFunction](./transferfunction.md)
+- [CMFormatDescription.Extensions.Value.YCbCrMatrix](./ycbcrmatrix.md)
 
 
 ---

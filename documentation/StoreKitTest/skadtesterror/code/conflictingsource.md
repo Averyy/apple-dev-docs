@@ -1,7 +1,8 @@
 # SKAdTestError.Code.conflictingSource
 
 **Framework**: StoreKit Test  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This error code is unused.
 
@@ -16,15 +17,20 @@ This error code is unused.
 case conflictingSource
 ```
 
+```c
+SKAdTestErrorCodeConflictingSource
+```
+
 ## See Also
 
-- [SKAdTestError.Code.invalidCampaignId](skadtesterror/code/invalidcampaignid.md)
+### Older Errors
+- [SKAdTestError.Code.invalidCampaignId](./invalidcampaignid.md)
   The campaign ID isn’t an integer between one and one hundred.
-- [SKAdTestError.Code.signatureMissingCampaignId](skadtesterror/code/signaturemissingcampaignid.md)
+- [SKAdTestError.Code.signatureMissingCampaignId](./signaturemissingcampaignid.md)
   The signature is missing the campaign identifier, in the testing environment.
-- [SKAdTestError.Code.invalidCampaignId](skadtesterror/code/invalidcampaignid.md)
+- [SKAdTestError.Code.invalidCampaignId](./invalidcampaignid.md)
   The campaign ID isn’t an integer between one and one hundred.
-- [SKAdTestError.Code.signatureMissingCampaignId](skadtesterror/code/signaturemissingcampaignid.md)
+- [SKAdTestError.Code.signatureMissingCampaignId](./signaturemissingcampaignid.md)
   The signature is missing the campaign identifier, in the testing environment.
 
 

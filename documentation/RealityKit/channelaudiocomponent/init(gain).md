@@ -1,7 +1,8 @@
 # init(gain:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Configure the behavior of a channel audio source.
 

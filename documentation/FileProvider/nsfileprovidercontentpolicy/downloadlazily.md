@@ -1,7 +1,8 @@
 # NSFileProviderContentPolicy.downloadLazily
 
 **Framework**: File Provider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 13.0+
@@ -12,11 +13,16 @@
 case downloadLazily
 ```
 
+```c
+NSFileProviderContentPolicyDownloadLazily
+```
+
 ## See Also
 
-- [NSFileProviderContentPolicy.downloadEagerlyAndKeepDownloaded](nsfileprovidercontentpolicy/downloadeagerlyandkeepdownloaded.md)
-- [NSFileProviderContentPolicy.downloadLazilyAndEvictOnRemoteUpdate](nsfileprovidercontentpolicy/downloadlazilyandevictonremoteupdate.md)
-- [NSFileProviderContentPolicy.inherited](nsfileprovidercontentpolicy/inherited.md)
+### Policies
+- [NSFileProviderContentPolicy.downloadEagerlyAndKeepDownloaded](./downloadeagerlyandkeepdownloaded.md)
+- [NSFileProviderContentPolicy.downloadLazilyAndEvictOnRemoteUpdate](./downloadlazilyandevictonremoteupdate.md)
+- [NSFileProviderContentPolicy.inherited](./inherited.md)
 
 
 ---

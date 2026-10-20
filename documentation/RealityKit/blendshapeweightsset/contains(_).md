@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks if the set contains a blend shape weights data instance with the given name.
 

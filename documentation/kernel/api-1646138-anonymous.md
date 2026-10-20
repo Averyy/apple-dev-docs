@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kATALogicalSectorAlignmentMask](1646138-anonymous/katalogicalsectoralignmentmask.md)
-- [kATAMultipleLogicalSectorsMask](1646138-anonymous/katamultiplelogicalsectorsmask.md)
-- [kATAPhysicalLogicalEnabledMask](1646138-anonymous/kataphysicallogicalenabledmask.md)
-- [kATAPhysicalLogicalEnabledValue](1646138-anonymous/kataphysicallogicalenabledvalue.md)
-- [kATAPhysicalSectorSizeMask](1646138-anonymous/kataphysicalsectorsizemask.md)
-- [kATAValidLogicalSectorSizeMask](1646138-anonymous/katavalidlogicalsectorsizemask.md)
+- [kATALogicalSectorAlignmentMask](./api-1646138-anonymous/katalogicalsectoralignmentmask.md)
+- [kATAMultipleLogicalSectorsMask](./api-1646138-anonymous/katamultiplelogicalsectorsmask.md)
+- [kATAPhysicalLogicalEnabledMask](./api-1646138-anonymous/kataphysicallogicalenabledmask.md)
+- [kATAPhysicalLogicalEnabledValue](./api-1646138-anonymous/kataphysicallogicalenabledvalue.md)
+- [kATAPhysicalSectorSizeMask](./api-1646138-anonymous/kataphysicalsectorsizemask.md)
+- [kATAValidLogicalSectorSizeMask](./api-1646138-anonymous/katavalidlogicalsectorsizemask.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # monitorNotifications(matchingCriteria:)
 
 **Framework**: Core HID  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an asynchronous stream that receives notifications for devices of interest.
 
@@ -16,7 +17,7 @@ func monitorNotifications(matchingCriteria: [HIDDeviceManager.DeviceMatchingCrit
 
 ## Mentions
 
-- [Communicating with human interface devices](communicatingwithhiddevices.md)
+- [Communicating with human interface devices](../communicatingwithhiddevices.md)
 
 #### Return Value
 
@@ -41,15 +42,16 @@ for await notification in await manager.monitorNotifications(matchingCriteria: [
 }
 ```
 
-> **Note**: [`HIDDeviceError`](hiddeviceerror.md) if there is an issue with setup.
+> **Throws**: [`HIDDeviceError`](../hiddeviceerror.md) if there is an issue with setup.
 
 ## Parameters
 
-- `matchingCriteria`: A set of [`HIDDeviceManager.DeviceMatchingCriteria`](hiddevicemanager/devicematchingcriteria.md) for matching devices connected to the system. Criteria are considered separately, if one set is specified that matches one device, with a second set that matches five other devices, all six devices are matched. Matched devices result in a [`HIDDeviceManager.Notification.deviceMatched(_:)`](hiddevicemanager/notification/devicematched(_:).md) notification. Matched devices are ready for connections using [`HIDDeviceClient`](hiddeviceclient.md) until a [`HIDDeviceManager.Notification.deviceRemoved(_:)`](hiddevicemanager/notification/deviceremoved(_:).md) notification is received for the device.
+- `matchingCriteria`: A set of [`HIDDeviceManager.DeviceMatchingCriteria`](./devicematchingcriteria.md) for matching devices connected to the system. Criteria are considered separately, if one set is specified that matches one device, with a second set that matches five other devices, all six devices are matched. Matched devices result in a [`HIDDeviceManager.Notification.deviceMatched(_:)`](./notification/devicematched%28_%29.md) notification. Matched devices are ready for connections using [`HIDDeviceClient`](../hiddeviceclient.md) until a [`HIDDeviceManager.Notification.deviceRemoved(_:)`](./notification/deviceremoved%28_%29.md) notification is received for the device.
 
 ## See Also
 
-- [HIDDeviceManager.Notification](hiddevicemanager/notification.md)
+### Monitor device notifications
+- [HIDDeviceManager.Notification](./notification.md)
   Notifications for HID devices.
 
 

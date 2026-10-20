@@ -1,7 +1,8 @@
 # getCookiesFor(_:completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches cookies relevant to the specified task and passes them to the completion handler.
 
@@ -17,7 +18,15 @@ Fetches cookies relevant to the specified task and passes them to the completion
 ## Declaration
 
 ```swift
+func getCookiesFor(_ task: URLSessionTask, completionHandler: @escaping @Sendable ([HTTPCookie]?) -> Void)
+```
+
+```swift
 func cookies(for task: URLSessionTask) async -> [HTTPCookie]?
+```
+
+```objc
+- (void) getCookiesForTask:(NSURLSessionTask *) task completionHandler:(void (^)(NSArray<NSHTTPCookie *> *cookies)) completionHandler;
 ```
 
 ## Parameters
@@ -27,11 +36,12 @@ func cookies(for task: URLSessionTask) async -> [HTTPCookie]?
 
 ## See Also
 
-- [var cookies: [HTTPCookie]?](httpcookiestorage/cookies.md)
+### Retrieving cookies
+- [var cookies: [HTTPCookie]?](./cookies.md)
   The cookie storage’s cookies.
-- [func cookies(for: URL) -> [HTTPCookie]?](httpcookiestorage/cookies(for:).md)
+- [func cookies(for: URL) -> [HTTPCookie]?](./cookies%28for%29.md)
   Returns all the cookie storage’s cookies that are sent to a specified URL.
-- [func sortedCookies(using: [NSSortDescriptor]) -> [HTTPCookie]](httpcookiestorage/sortedcookies(using:).md)
+- [func sortedCookies(using: [NSSortDescriptor]) -> [HTTPCookie]](./sortedcookies%28using%29.md)
   Returns all of the cookie storage’s cookies, sorted according to a given set of sort descriptors.
 
 

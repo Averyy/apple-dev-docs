@@ -1,7 +1,8 @@
 # render(using:)
 
 **Framework**: Touch Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Renders the touch controls using the provided Metal render command encoder.
 
@@ -16,13 +17,18 @@ Renders the touch controls using the provided Metal render command encoder.
 func render(using encoder: any MTLRenderCommandEncoder)
 ```
 
+```objc
+- (void) renderUsingRenderCommandEncoder:(id<MTLRenderCommandEncoder>) encoder;
+```
+
 ## Parameters
 
 - `encoder`: The `MTLRenderCommandEncoder` to use for rendering.
 
 ## See Also
 
-- [func automaticallyLayoutControls(for: [TCControlLabel])](tctouchcontroller/automaticallylayoutcontrols(for:).md)
+### Handling layout updates
+- [func automaticallyLayoutControls(for: [TCControlLabel])](./automaticallylayoutcontrols%28for%29.md)
   Automatically lays out the provided control labels, creating them if needed.
 
 

@@ -1,7 +1,8 @@
 # locationManager(_:monitoringDidFailFor:withError:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a region monitoring error occurred.
 
@@ -15,6 +16,10 @@ Tells the delegate that a region monitoring error occurred.
 
 ```swift
 optional func locationManager(_ manager: CLLocationManager, monitoringDidFailFor region: CLRegion?, withError error: any Error)
+```
+
+```objc
+- (void) locationManager:(CLLocationManager *) manager monitoringDidFailForRegion:(CLRegion *) region withError:(NSError *) error;
 ```
 
 #### Discussion
@@ -31,7 +36,8 @@ Although implementation of this method is optional, it is recommended that you i
 
 ## See Also
 
-- [func locationManager(CLLocationManager, didFailWithError: any Error)](cllocationmanagerdelegate/locationmanager(_:didfailwitherror:).md)
+### Related documentation
+- [func locationManager(CLLocationManager, didFailWithError: any Error)](./locationmanager%28_,didfailwitherror%29.md)
   Tells the delegate that the location manager was unable to retrieve a location value.
 
 

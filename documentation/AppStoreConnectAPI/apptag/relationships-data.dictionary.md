@@ -1,7 +1,8 @@
 # AppTag.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppTag.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppTag.Relationships.Territories](apptag/relationships-data.dictionary/territories-data.dictionary.md)
+- [object AppTag.Relationships.Territories](./relationships-data.dictionary/territories-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -26,7 +27,8 @@ object AppTag.Relationships
 
 ## See Also
 
-- [object AppTag.Attributes](apptag/attributes-data.dictionary.md)
+### Dictionaries
+- [object AppTag.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an app tag resource.
 
 

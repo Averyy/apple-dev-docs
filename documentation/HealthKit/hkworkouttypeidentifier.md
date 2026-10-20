@@ -1,7 +1,8 @@
 # HKWorkoutTypeIdentifier
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The workout type identifier.
 
@@ -19,13 +20,18 @@ The workout type identifier.
 let HKWorkoutTypeIdentifier: String
 ```
 
+```c
+extern NSString * const HKWorkoutTypeIdentifier;
+```
+
 #### Discussion
 
 Use this type identifier when requesting permission to read or share workout data.
 
 ## See Also
 
-- [let HKWorkoutRouteTypeIdentifier: String](hkworkoutroutetypeidentifier.md)
+### Workouts
+- [let HKWorkoutRouteTypeIdentifier: String](./hkworkoutroutetypeidentifier.md)
   A series sample containing location data that defines the route the user took during a workout.
 
 

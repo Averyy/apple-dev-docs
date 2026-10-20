@@ -1,7 +1,8 @@
 # isTouchInside
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a tracked touch event is currently inside the control’s bounds.
 
@@ -9,7 +10,7 @@ A Boolean value that indicates whether a tracked touch event is currently inside
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ A Boolean value that indicates whether a tracked touch event is currently inside
 var isTouchInside: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isTouchInside) BOOL touchInside;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the location of the most recent touch event is inside the control’s bounds or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+[`true`](../../Swift/true.md) if the location of the most recent touch event is inside the control’s bounds or [`false`](../../Swift/false.md) if it is not.
 
 #### Discussion
 
@@ -28,15 +33,16 @@ While tracking of a touch event is ongoing, the control updates the value of thi
 
 ## See Also
 
-- [func beginTracking(UITouch, with: UIEvent?) -> Bool](uicontrol/begintracking(_:with:).md)
+### Tracking touches and redrawing controls
+- [func beginTracking(UITouch, with: UIEvent?) -> Bool](./begintracking%28_,with%29.md)
   Notifies the control when a touch event enters the control’s bounds.
-- [func continueTracking(UITouch, with: UIEvent?) -> Bool](uicontrol/continuetracking(_:with:).md)
+- [func continueTracking(UITouch, with: UIEvent?) -> Bool](./continuetracking%28_,with%29.md)
   Notifies the control when a touch event for the control updates.
-- [func endTracking(UITouch?, with: UIEvent?)](uicontrol/endtracking(_:with:).md)
+- [func endTracking(UITouch?, with: UIEvent?)](./endtracking%28_,with%29.md)
   Notifies the control when a touch event associated with the control ends.
-- [func cancelTracking(with: UIEvent?)](uicontrol/canceltracking(with:).md)
+- [func cancelTracking(with: UIEvent?)](./canceltracking%28with%29.md)
   Notifies the control to cancel tracking related to the specified event.
-- [var isTracking: Bool](uicontrol/istracking.md)
+- [var isTracking: Bool](./istracking.md)
   A Boolean value that indicates whether the control is currently tracking touch events.
 
 

@@ -1,18 +1,19 @@
 # serialized
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A trait that serializes the test to which it is applied.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -22,16 +23,20 @@ A trait that serializes the test to which it is applied.
 static var serialized: ParallelizationTrait { get }
 ```
 
+Available when `Self` is `ParallelizationTrait`.
+
 ## Mentions
 
-- [Migrating a test from XCTest](migratingfromxctest.md)
-- [Running tests serially or in parallel](parallelization.md)
+- [Migrating a test from XCTest](../migratingfromxctest.md)
+- [Running tests serially or in parallel](../parallelization.md)
 
 ## See Also
 
-- [struct ParallelizationTrait](parallelizationtrait.md)
+### Related Documentation
+- [struct ParallelizationTrait](../parallelizationtrait.md)
   A type that defines whether the testing library runs this test serially or in parallel.
-- [Running tests serially or in parallel](parallelization.md)
+### Running tests serially or in parallel
+- [Running tests serially or in parallel](../parallelization.md)
   Control whether tests run serially or in parallel.
 
 

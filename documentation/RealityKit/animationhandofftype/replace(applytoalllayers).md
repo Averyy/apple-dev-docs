@@ -1,7 +1,8 @@
 # replace(applyToAllLayers:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Keeps playing the current animation during the transition time and uses the value from that animation as the blend value for the transition to the new animation.
 

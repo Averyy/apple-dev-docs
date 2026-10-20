@@ -1,7 +1,8 @@
 # locale(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the format style to use the specified locale.
 
@@ -30,7 +31,8 @@ A format style with the provided locale.
 
 ## See Also
 
-- [var locale: Locale](duration/timeformatstyle/locale.md)
+### Working with locales
+- [var locale: Locale](./locale.md)
   The locale to use when formatting the duration.
 
 

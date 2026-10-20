@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns `true` for locations representing the same document position.
@@ -18,6 +19,10 @@ Returns `true` for locations representing the same document position.
 
 ```swift
 func isEqual(_ location: Any?) -> Bool
+```
+
+```objc
+- (BOOL) isEqual:(id) location;
 ```
 
 #### Discussion

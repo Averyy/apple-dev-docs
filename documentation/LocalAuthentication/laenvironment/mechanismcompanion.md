@@ -1,7 +1,8 @@
 # LAEnvironment.MechanismCompanion
 
 **Framework**: Local Authentication  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -17,26 +18,30 @@
 class MechanismCompanion
 ```
 
+```objc
+@interface LAEnvironmentMechanismCompanion : LAEnvironmentMechanism
+```
+
 ## Topics
 
 ### Instance Properties
-- [var stateHash: Data?](laenvironment/mechanismcompanion/statehash.md)
-- [var type: LACompanionType](laenvironment/mechanismcompanion/type.md)
+- [var stateHash: Data?](./mechanismcompanion/statehash.md)
+- [var type: LACompanionType](./mechanismcompanion/type.md)
   Type of the companion.
 
 ## Relationships
 
 ### Inherits From
-- [LAEnvironment.Mechanism](laenvironment/mechanism.md)
+- [LAEnvironment.Mechanism](./mechanism.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

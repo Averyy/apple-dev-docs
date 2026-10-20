@@ -1,7 +1,8 @@
 # UnsafeBufferPointer.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An iterator for the elements in the buffer referenced by an `UnsafeBufferPointer` or `UnsafeMutableBufferPointer` instance.
 
@@ -24,14 +25,14 @@ struct Iterator
 ## Topics
 
 ### Default Implementations
-- [IteratorProtocol Implementations](unsafebufferpointer/iterator/iteratorprotocol-implementations.md)
+- [IteratorProtocol Implementations](./iterator/iteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [IteratorProtocol](iteratorprotocol.md)
+- [Copyable](../copyable.md)
+- [Escapable](../escapable.md)
+- [IteratorProtocol](../iteratorprotocol.md)
 
 
 ---

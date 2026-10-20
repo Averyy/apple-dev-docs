@@ -1,7 +1,8 @@
 # unmappedSfSymbolsName
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The element’s system symbol, not the remapped symbol.
 
@@ -19,13 +20,18 @@ The element’s system symbol, not the remapped symbol.
 var unmappedSfSymbolsName: String? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSString * unmappedSfSymbolsName;
+```
+
 #### Discussion
 
-Use this property to get the original unmapped name. Otherwise, use the [`sfSymbolsName`](gccontrollerelement/sfsymbolsname.md) property to get the possibly remapped symbol.
+Use this property to get the original unmapped name. Otherwise, use the [`sfSymbolsName`](./sfsymbolsname.md) property to get the possibly remapped symbol.
 
 ## See Also
 
-- [var sfSymbolsName: String?](gccontrollerelement/sfsymbolsname.md)
+### Displaying a symbol
+- [var sfSymbolsName: String?](./sfsymbolsname.md)
   A system symbol for the element or the remapped element.
 
 

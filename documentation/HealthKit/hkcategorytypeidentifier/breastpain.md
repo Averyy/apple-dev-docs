@@ -1,7 +1,8 @@
 # breastPain
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A category type that records breast pain as a symptom.
 
@@ -19,15 +20,20 @@ A category type that records breast pain as a symptom.
 static let breastPain: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierBreastPain;
+```
+
 #### Discussion
 
-These samples use values from the  [`HKCategoryValueSeverity`](hkcategoryvalueseverity.md) enumeration.
+These samples use values from the  [`HKCategoryValueSeverity`](../hkcategoryvalueseverity.md) enumeration.
 
 ## See Also
 
-- [static let pelvicPain: HKCategoryTypeIdentifier](hkcategorytypeidentifier/pelvicpain.md)
+### Reproduction
+- [static let pelvicPain: HKCategoryTypeIdentifier](./pelvicpain.md)
   A category type that records pelvic pain as a symptom.
-- [static let vaginalDryness: HKCategoryTypeIdentifier](hkcategorytypeidentifier/vaginaldryness.md)
+- [static let vaginalDryness: HKCategoryTypeIdentifier](./vaginaldryness.md)
   A category type that records vaginal dryness as a symptom.
 
 

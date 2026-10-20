@@ -1,7 +1,8 @@
 # Change Subscription Price
 
 **Framework**: Advanced Commerce API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Increase or decrease the price of an auto-renewable subscription, a bundle, or individual items within a subscription at the next renewal.
 
@@ -10,20 +11,20 @@ Increase or decrease the price of an auto-renewable subscription, a bundle, or i
 
 ## Mentions
 
-- [Handling subscription price changes](handling-subscription-price-changes.md)
-- [Authorizing API requests from your server](authorizing-server-calls.md)
-- [Advanced Commerce API changelog](changelog.md)
-- [Identifying rate limits for Advanced Commerce APIs](ratelimits.md)
+- [Handling subscription price changes](./handling-subscription-price-changes.md)
+- [Authorizing API requests from your server](./authorizing-server-calls.md)
+- [Advanced Commerce API changelog](./changelog.md)
+- [Identifying rate limits for Advanced Commerce APIs](./ratelimits.md)
 
 #### Discussion
 
-Call this endpoint when you change the price of a subscription or any bundle or item within it. For information about the customer communication, see [`Handling subscription price changes`](handling-subscription-price-changes.md).
+Call this endpoint when you change the price of a subscription or any bundle or item within it. For information about the customer communication, see [Handling subscription price changes](./handling-subscription-price-changes.md).
 
 Only active subscriptions that aren’t in a billing retry state are eligible for price changes. When you call this endpoint, the price change takes effect at the next subscription renewal. Call the endpoint no later than 24 hours before the renewal date to have it take effect at the renewal.
 
-For information about providing prices, see [`Specifying prices for Advanced Commerce SKUs`](prices.md).
+For information about providing prices, see [Specifying prices for Advanced Commerce SKUs](./prices.md).
 
-##### Example Request and Response
+##### Example request and response
 
 In the following request:
 
@@ -171,17 +172,33 @@ In the following request:
 
 ## Parameters
 
+### Path Parameters
+
 - `transactionId` (string) *(required)*: A transaction identifier of the auto-renewable subscription that is subject to the price change. Use the subscription’s original transaction ID or any subsequent transaction ID of a transaction related to the subscription.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `SubscriptionPriceChangeRequest`
+
 The request body that contains the details of the price change.
+
+## Responses
+
+- `200` OK (`SubscriptionPriceChangeResponse`, `application/json`): Success
+- `400` Bad Request (`(NullRequestInfoError | NullItemsError | NullSKUError | InvalidAppAccountTokenError | NullRequestReferenceIDError | InvalidRequestReferenceIDError | InvalidConsistencyTokenError | InvalidStorefrontError | InvalidCurrencyError | NegativePriceError | SKULengthExceededError | DescriptionLengthExceededError | DisplayNameLengthExceededError | InvalidProductError | InvalidSKUError | MismatchedStorefrontError | MissingPricingConfigForStorefrontError | OperationNotAllowedError | MalformedPayloadError | DependentSKUsCannotBeSharedError | DependentSKUsCannotBeChainedError | ItemCannotBeSpecifiedMultipleTimesError | PriceChangeCannotBeIssuedWhenAlreadyCommunicatedError | InvalidSKUProvidedMustBeCurrentSKUSetToRenewError)`, `application/json`)
+- `401` Unauthorized
+- `403` Forbidden (`(SubscriptionDoesNotExistError | SubscriptionNotEligibleError)`, `application/json`)
+- `404` Not Found (`TransactionIdNotFoundError`, `application/json`)
+- `429` (`RateLimitExceededError`, `application/json`)
+- `500` Internal Server Error (`(GeneralInternalError | GeneralInternalRetryableError)`, `application/json`)
 
 ## See Also
 
-- [object SubscriptionPriceChangeRequest](subscriptionpricechangerequest.md)
+### Subscription price change from the server
+- [object SubscriptionPriceChangeRequest](./subscriptionpricechangerequest.md)
   The request body you use to change the price of an auto-renewable subscription.
-- [object SubscriptionPriceChangeResponse](subscriptionpricechangeresponse.md)
+- [object SubscriptionPriceChangeResponse](./subscriptionpricechangeresponse.md)
   A response that contains signed JWS renewal and JWS transaction information after a subscription price change request.
 
 

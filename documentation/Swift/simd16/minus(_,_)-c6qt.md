@@ -1,7 +1,8 @@
 # -(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 **Availability**:
 - iOS 8.0+
@@ -12,11 +13,15 @@
 - visionOS 1.0+
 - watchOS 2.0+
 
+> **Deprecated**: integer vector types do not support checked arithmetic; use the wrapping operator '&-' instead
+
 ## Declaration
 
 ```swift
 static func - (a: Self, b: Self.Scalar) -> Self
 ```
+
+Available when `Scalar` conforms to `FixedWidthInteger`.
 
 
 ---

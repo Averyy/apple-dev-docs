@@ -1,7 +1,8 @@
 # appleMusicID
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key to access the Apple Music ID of a media item.
 
@@ -20,9 +21,14 @@ The key to access the Apple Music ID of a media item.
 static let appleMusicID: SHMediaItemProperty
 ```
 
+```c
+extern SHMediaItemProperty const SHMediaItemAppleMusicID;
+```
+
 ## See Also
 
-- [static let appleMusicURL: SHMediaItemProperty](shmediaitemproperty/applemusicurl.md)
+### Apple Music property keys
+- [static let appleMusicURL: SHMediaItemProperty](./applemusicurl.md)
   The key to access the Apple Music URL property of a media item.
 
 

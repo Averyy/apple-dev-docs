@@ -1,7 +1,8 @@
 # globalMetaParameters
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of metaparameters that all sound event assets share.
 
@@ -19,15 +20,20 @@ A dictionary of metaparameters that all sound event assets share.
 var globalMetaParameters: [String : PHASEMetaParameter] { get }
 ```
 
+```objc
+@property (atomic, copy, readonly) NSDictionary<NSString *,PHASEMetaParameter *> * globalMetaParameters;
+```
+
 #### Discussion
 
-When you change a value for a metaparameter in this dictionary, every sound event attached to the metaparameter observes the change. The dictionary key is the [`identifier`](phasemetaparameter/identifier.md) of the [`PHASEMetaParameterDefinition`](phasemetaparameterdefinition.md) you pass into [`registerGlobalMetaParameter(metaParameterDefinition:)`](phaseassetregistry/registerglobalmetaparameter(metaparameterdefinition:).md).
+When you change a value for a metaparameter in this dictionary, every sound event attached to the metaparameter observes the change. The dictionary key is the [`identifier`](../phasemetaparameter/identifier.md) of the [`PHASEMetaParameterDefinition`](../phasemetaparameterdefinition.md) you pass into [`registerGlobalMetaParameter(metaParameterDefinition:)`](./registerglobalmetaparameter%28metaparameterdefinition%29.md).
 
-> 💡 **Tip**:  To adjust a value for a single sound event, access the metaparameter through the [`metaParameters`](phasesoundevent/metaparameters.md) property instead.
+> 💡 **Tip**:  To adjust a value for a single sound event, access the metaparameter through the [`metaParameters`](../phasesoundevent/metaparameters.md) property instead.
 
 ## See Also
 
-- [func registerGlobalMetaParameter(metaParameterDefinition: PHASEMetaParameterDefinition) throws -> PHASEGlobalMetaParameterAsset](phaseassetregistry/registerglobalmetaparameter(metaparameterdefinition:).md)
+### Registering Global Metaparameters
+- [func registerGlobalMetaParameter(metaParameterDefinition: PHASEMetaParameterDefinition) throws -> PHASEGlobalMetaParameterAsset](./registerglobalmetaparameter%28metaparameterdefinition%29.md)
   Registers a global metaparameter with the asset registry.
 
 

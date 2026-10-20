@@ -1,7 +1,8 @@
 # allocationFailed
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A sync error that indicates the memory allocation fails.
 
@@ -22,11 +23,12 @@ static let allocationFailed: NSError
 
 ## See Also
 
-- [static let invalidParameter: NSError](cmsync/error/invalidparameter.md)
+### Constants
+- [static let invalidParameter: NSError](./invalidparameter.md)
   A sync error that indicates a parameter isn’t valid.
-- [static let missingRequiredParameter: NSError](cmsync/error/missingrequiredparameter.md)
+- [static let missingRequiredParameter: NSError](./missingrequiredparameter.md)
   A sync error that indicates a missing parameter.
-- [static let rateMustBeNonZero: NSError](cmsync/error/ratemustbenonzero.md)
+- [static let rateMustBeNonZero: NSError](./ratemustbenonzero.md)
   A sync error that indicates the rate must not be zero.
 
 

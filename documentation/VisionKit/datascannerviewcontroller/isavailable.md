@@ -1,7 +1,8 @@
 # isAvailable
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether a person grants your app access to the camera and doesn’t have any restrictions to using the camera.
 
@@ -19,7 +20,7 @@ class var isAvailable: Bool { get }
 
 ## Mentions
 
-- [Scanning data with the camera](scanning-data-with-the-camera.md)
+- [Scanning data with the camera](../scanning-data-with-the-camera.md)
 
 #### Discussion
 
@@ -27,11 +28,12 @@ For example, this property may be `false` if a person has Screen Time restrictio
 
 ## See Also
 
-- [class var isSupported: Bool](datascannerviewcontroller/issupported.md)
+### Handling availability
+- [class var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the device supports data scanning.
-- [class var supportedTextRecognitionLanguages: [String]](datascannerviewcontroller/supportedtextrecognitionlanguages.md)
+- [class var supportedTextRecognitionLanguages: [String]](./supportedtextrecognitionlanguages.md)
   The identifiers for the languages that the data scanner recognizes.
-- [DataScannerViewController.ScanningUnavailable](datascannerviewcontroller/scanningunavailable.md)
+- [DataScannerViewController.ScanningUnavailable](./scanningunavailable.md)
   The possible reasons the data scanner is unavailable.
 
 

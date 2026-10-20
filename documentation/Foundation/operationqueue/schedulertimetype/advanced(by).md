@@ -1,7 +1,8 @@
 # advanced(by:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates an operation queue scheduler time by advancing the scheduler time type’s date by the given interval.
 
@@ -22,19 +23,20 @@ func advanced(by n: OperationQueue.SchedulerTimeType.Stride) -> OperationQueue.S
 
 #### Return Value
 
-An operation queue scheduler time advanced by the given interval from [`date`](operationqueue/schedulertimetype/date.md).
+An operation queue scheduler time advanced by the given interval from [`date`](./date.md).
 
 ## Parameters
 
-- `n`: The time interval to advance [`date`](operationqueue/schedulertimetype/date.md) by.
+- `n`: The time interval to advance [`date`](./date.md) by.
 
 ## See Also
 
-- [var date: Date](operationqueue/schedulertimetype/date.md)
+### Managing Scheduler Time Type Properties
+- [var date: Date](./date.md)
   The date this type represents.
-- [func distance(to: OperationQueue.SchedulerTimeType) -> OperationQueue.SchedulerTimeType.Stride](operationqueue/schedulertimetype/distance(to:).md)
+- [func distance(to: OperationQueue.SchedulerTimeType) -> OperationQueue.SchedulerTimeType.Stride](./distance%28to%29.md)
   The distance to another operation queue scheduler time.
-- [OperationQueue.SchedulerTimeType.Stride](operationqueue/schedulertimetype/stride.md)
+- [OperationQueue.SchedulerTimeType.Stride](./stride.md)
   The interval by which operation queue times advance.
 
 

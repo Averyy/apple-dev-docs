@@ -1,7 +1,8 @@
 # current
 
 **Framework**: Playground Support  
-**Kind**: cldata
+**Kind**: cldata  
+**Role**: Type Property
 
 A reference to the key-value store for the current playground book.
 
@@ -17,7 +18,8 @@ static let current: PlaygroundKeyValueStore
 
 ## See Also
 
-- [subscript(String) -> PlaygroundValue?](playgroundkeyvaluestore/3029534-subscript.md)
+### Persisting Data
+- [subscript(String) -> PlaygroundValue?](./api-3029534-subscript.md)
   Reads or stores the value associated with the given key in the key-value store.
 
 

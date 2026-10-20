@@ -1,7 +1,8 @@
 # ButtonToggleStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A toggle style that displays as a button with its label as the title.
 
@@ -22,7 +23,7 @@ struct ButtonToggleStyle
 
 #### Overview
 
-You can also use [`button`](togglestyle/button.md) to construct this style.
+You can also use [`button`](./togglestyle/button.md) to construct this style.
 
 ```swift
 Toggle(isOn: $isFlagged) {
@@ -34,24 +35,25 @@ Toggle(isOn: $isFlagged) {
 ## Topics
 
 ### Creating the toggle style
-- [init()](buttontogglestyle/init.md)
+- [init()](./buttontogglestyle/init%28%29.md)
   Creates a button toggle style.
 ### Supporting types
-- [func makeBody(configuration: ButtonToggleStyle.Configuration) -> some View](buttontogglestyle/makebody(configuration:).md)
+- [func makeBody(configuration: ButtonToggleStyle.Configuration) -> some View](./buttontogglestyle/makebody%28configuration%29.md)
   Creates a view that represents the body of a toggle button.
 
 ## Relationships
 
 ### Conforms To
-- [ToggleStyle](togglestyle.md)
+- [ToggleStyle](./togglestyle.md)
 
 ## See Also
 
-- [struct DefaultToggleStyle](defaulttogglestyle.md)
+### Supporting types
+- [struct DefaultToggleStyle](./defaulttogglestyle.md)
   The default toggle style.
-- [struct CheckboxToggleStyle](checkboxtogglestyle.md)
+- [struct CheckboxToggleStyle](./checkboxtogglestyle.md)
   A toggle style that displays a checkbox followed by its label.
-- [struct SwitchToggleStyle](switchtogglestyle.md)
+- [struct SwitchToggleStyle](./switchtogglestyle.md)
   A toggle style that displays a leading label and a trailing switch.
 
 

@@ -1,14 +1,15 @@
 # subscript(_:)
 
 **Framework**: Core MIDI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

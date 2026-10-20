@@ -1,6 +1,7 @@
 # Internal symbols
 
-**Framework**: SwiftData
+**Framework**: SwiftData  
+**Role**: API Collection
 
 Restricted-use symbols that the framework requires for macro expansion and other internal tasks.
 
@@ -11,9 +12,9 @@ Restricted-use symbols that the framework requires for macro expansion and other
 ## Topics
 
 ### Properties
-- [protocol SchemaProperty](schemaproperty.md)
+- [protocol SchemaProperty](./schemaproperty.md)
   An interface for describing a property.
-- [protocol RelationshipCollection](relationshipcollection.md)
+- [protocol RelationshipCollection](./relationshipcollection.md)
   An interface for describing a collection of related models.
 
 

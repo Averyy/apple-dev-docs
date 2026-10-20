@@ -1,7 +1,8 @@
 # init(tag:value:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a TLV record with the specified tag and value.
 
@@ -18,6 +19,10 @@ Initializes a TLV record with the specified tag and value.
 
 ```swift
 init(tag: UInt8, value: Data)
+```
+
+```objc
+- (instancetype) initWithTag:(UInt8) tag value:(NSData *) value;
 ```
 
 #### Return Value

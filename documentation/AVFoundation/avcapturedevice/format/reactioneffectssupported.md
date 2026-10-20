@@ -1,7 +1,8 @@
 # reactionEffectsSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device supports reaction effects.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether the device supports reaction effects.
 var reactionEffectsSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL reactionEffectsSupported;
+```
+
 #### Discussion
 
-See [`reactionEffectsEnabled`](avcapturedevice/reactioneffectsenabled.md) for more information.
+See [`reactionEffectsEnabled`](../reactioneffectsenabled.md) for more information.
 
 ## See Also
 
-- [var videoFrameRateRangeForReactionEffectsInProgress: AVFrameRateRange?](avcapturedevice/format/videoframeraterangeforreactioneffectsinprogress.md)
+### Determining reaction effects support
+- [var videoFrameRateRangeForReactionEffectsInProgress: AVFrameRateRange?](./videoframeraterangeforreactioneffectsinprogress.md)
   Indicates the minimum and maximum frame rates available when a reaction effect runs.
 
 

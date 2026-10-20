@@ -1,7 +1,8 @@
 # extractStream(extractingTo:selectUsing:flags:threadCount:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Opens an extract output archive stream.
 
@@ -11,7 +12,7 @@ Opens an extract output archive stream.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -26,15 +27,15 @@ A new archive stream.
 
 #### Discussion
 
-For each entry received by the stream, the operation first calls the `filter` closure with the [`extractBegin`](archiveheader/entrymessage/extractbegin.md) message and `data` referencing an [`ArchiveHeader`](archiveheader.md) instance.
+For each entry received by the stream, the operation first calls the `filter` closure with the [`extractBegin`](../archiveheader/entrymessage/extractbegin.md) message and `data` referencing an [`ArchiveHeader`](../archiveheader.md) instance.
 
-If the `filter` closure returns [`skip`](archiveheader/entrymessagestatus/skip.md), the stream discards the entry. Otherwise, the stream extracts the entry, and then executes the closure with the [`extractAttributes`](archiveheader/entrymessage/extractattributes.md), [`extractXAT`](archiveheader/entrymessage/extractxat.md), [`extractACL`](archiveheader/entrymessage/extractacl.md) messages. Following this closure make modifications to the extracted fields before writing to the filesystem.
+If the `filter` closure returns [`skip`](../archiveheader/entrymessagestatus/skip.md), the stream discards the entry. Otherwise, the stream extracts the entry, and then executes the closure with the [`extractAttributes`](../archiveheader/entrymessage/extractattributes.md), [`extractXAT`](../archiveheader/entrymessage/extractxat.md), [`extractACL`](../archiveheader/entrymessage/extractacl.md) messages. Following this closure make modifications to the extracted fields before writing to the filesystem.
 
-When the stream fully extracts the entry, it then executes the closure with an [`extractEnd`](archiveheader/entrymessage/extractend.md) message. When the entry extraction fails, the stream executes the closure with [`extractFail`](archiveheader/entrymessage/extractfail.md). If the closure returns [`cancel`](archiveheader/entrymessagestatus/cancel.md), the stream aborts processing. Otherwise, processing continues.
+When the stream fully extracts the entry, it then executes the closure with an [`extractEnd`](../archiveheader/entrymessage/extractend.md) message. When the entry extraction fails, the stream executes the closure with [`extractFail`](../archiveheader/entrymessage/extractfail.md). If the closure returns [`cancel`](../archiveheader/entrymessagestatus/cancel.md), the stream aborts processing. Otherwise, processing continues.
 
-The stream calls [`extractBegin`](archiveheader/entrymessage/extractbegin.md) messages in archive order and are always the first call for a given entry.
+The stream calls [`extractBegin`](../archiveheader/entrymessage/extractbegin.md) messages in archive order and are always the first call for a given entry.
 
-The [`extractEnd`](archiveheader/entrymessage/extractend.md) or [`extractFail`](archiveheader/entrymessage/extractfail.md) messages are always the last call for a given entry, and aren’t necessarily called in the same order. In particular, for directories, the stream may call [`extractEnd`](archiveheader/entrymessage/extractend.md) only after extraction of all directory contents is complete.
+The [`extractEnd`](../archiveheader/entrymessage/extractend.md) or [`extractFail`](../archiveheader/entrymessage/extractfail.md) messages are always the last call for a given entry, and aren’t necessarily called in the same order. In particular, for directories, the stream may call [`extractEnd`](../archiveheader/entrymessage/extractend.md) only after extraction of all directory contents is complete.
 
 ## Parameters
 
@@ -45,7 +46,8 @@ The [`extractEnd`](archiveheader/entrymessage/extractend.md) or [`extractFail`](
 
 ## See Also
 
-- [static func withExtractStream<E>(extractingTo: FilePath, selectUsing: ArchiveHeader.EntryFilter?, flags: ArchiveFlags, threadCount: Int, (ArchiveStream) throws -> E) throws -> E](archivestream/withextractstream(extractingto:selectusing:flags:threadcount:_:).md)
+### Extracting Data
+- [static func withExtractStream<E>(extractingTo: FilePath, selectUsing: ArchiveHeader.EntryFilter?, flags: ArchiveFlags, threadCount: Int, (ArchiveStream) throws -> E) throws -> E](./withextractstream%28extractingto,selectusing,flags,threadcount,_%29.md)
   Calls the given closure with an extract output archive stream.
 
 

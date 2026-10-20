@@ -1,7 +1,8 @@
 # closePopup()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Triggers the dismissal process of the pop-up.
 
@@ -18,9 +19,13 @@ Triggers the dismissal process of the pop-up.
 func closePopup()
 ```
 
+```objc
+- (void) closePopup;
+```
+
 #### Discussion
 
-Invoke this method to manage the pop-up’s lifecycle, ensuring the web view is unloaded and resources are released once the pop-up closes. This method is automatically called upon the dismissal of the action’s [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller) or [`NSPopover`](https://developer.apple.com/documentation/appkit/nspopover).  For custom scenarios where the pop-up’s lifecycle is manually managed, it must be explicitly invoked to ensure proper closure.
+Invoke this method to manage the pop-up’s lifecycle, ensuring the web view is unloaded and resources are released once the pop-up closes. This method is automatically called upon the dismissal of the action’s [`UIViewController`](../../../UIKit/uiviewcontroller.md) or [`NSPopover`](../../../AppKit/nspopover.md).  For custom scenarios where the pop-up’s lifecycle is manually managed, it must be explicitly invoked to ensure proper closure.
 
 
 ---

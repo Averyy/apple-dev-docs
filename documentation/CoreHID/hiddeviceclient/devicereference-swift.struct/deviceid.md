@@ -1,7 +1,8 @@
 # deviceID
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique ID for the associated HID device.
 
@@ -16,7 +17,7 @@ let deviceID: UInt64
 
 #### Discussion
 
-A [`HIDDeviceClient.DeviceReference`](hiddeviceclient/devicereference-swift.struct.md)with the same [`deviceID`](hiddeviceclient/devicereference-swift.struct/deviceid.md) is an equivalent reference to the same device, and a [`deviceID`](hiddeviceclient/devicereference-swift.struct/deviceid.md) for a device is equivalent across the system.
+A [`HIDDeviceClient.DeviceReference`](../devicereference-swift.struct.md)with the same [`deviceID`](./deviceid.md) is an equivalent reference to the same device, and a [`deviceID`](./deviceid.md) for a device is equivalent across the system.
 
 
 ---

@@ -1,7 +1,8 @@
 # toCoordinateRegion()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the coordinate region that corresponds to the calling bounding region.
 
@@ -10,17 +11,18 @@ Returns the coordinate region that corresponds to the calling bounding region.
 
 ## Declaration
 
-```swift
+```
 toCoordinateRegion(): CoordinateRegion;
 ```
 
 #### Return Value
 
-A [`CoordinateRegion`](coordinateregion.md) that corresponds to the calling [`BoundingRegion`](boundingregion.md).
+A [`CoordinateRegion`](../coordinateregion.md) that corresponds to the calling [`BoundingRegion`](../boundingregion.md).
 
 ## See Also
 
-- [copy()](boundingregion/copy.md)
+### Copying and converting regions
+- [copy()](./copy.md)
   Returns a copy of the calling bounding region.
 
 

@@ -1,17 +1,18 @@
 # EKEventStatus
 
 **Framework**: EventKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The event’s status.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,33 +20,38 @@ The event’s status.
 enum EKEventStatus
 ```
 
+```c
+enum EKEventStatus : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [EKEventStatus.none](ekeventstatus/none.md)
+- [EKEventStatus.none](./ekeventstatus/none.md)
   The event has no status.
-- [EKEventStatus.confirmed](ekeventstatus/confirmed.md)
+- [EKEventStatus.confirmed](./ekeventstatus/confirmed.md)
   The event is confirmed.
-- [EKEventStatus.tentative](ekeventstatus/tentative.md)
+- [EKEventStatus.tentative](./ekeventstatus/tentative.md)
   The event is tentative.
-- [EKEventStatus.canceled](ekeventstatus/canceled.md)
+- [EKEventStatus.canceled](./ekeventstatus/canceled.md)
   The event is canceled.
 ### Initializers
-- [init?(rawValue: Int)](ekeventstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./ekeventstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum EKEventAvailability](ekeventavailability.md)
+### Scheduling Events
+- [enum EKEventAvailability](./ekeventavailability.md)
   The event’s availability setting for scheduling purposes.
 
 

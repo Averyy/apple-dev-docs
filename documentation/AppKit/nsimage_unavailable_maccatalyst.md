@@ -1,11 +1,12 @@
 # NSIMAGE_UNAVAILABLE_MACCATALYST
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,9 +14,14 @@
 var NSIMAGE_UNAVAILABLE_MACCATALYST: Int32 { get }
 ```
 
+```c
+#define NSIMAGE_UNAVAILABLE_MACCATALYST
+```
+
 ## See Also
 
-- [var NS_USER_ACTIVITY_SUPPORTED: Int32](ns_user_activity_supported.md)
+### Constants
+- [var NS_USER_ACTIVITY_SUPPORTED: Int32](./ns_user_activity_supported.md)
 
 
 ---

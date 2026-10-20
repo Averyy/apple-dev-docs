@@ -2,6 +2,7 @@
 
 **Framework**: Accessory Transport Extension  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Handles incoming messages for transmission to the accessory.
@@ -17,11 +18,11 @@ func messageReceived(_ message: TransportMessage, completion: @escaping @Sendabl
 
 ## Mentions
 
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+- [Receiving iOS notifications on an accessory](../../receiving-ios-notifications-on-an-accessory.md)
 
 #### Discussion
 
-The system calls this method to deliver encrypted notification data for transmission to your accessory. Relay the message’s data to your accessory over Bluetooth or another transport. Call the completion handler with [`AccessoryMessage.Result.success`](accessorymessage/result/success.md) if transmission succeeds, [`AccessoryMessage.Result.failure(_:)`](accessorymessage/result/failure(_:).md) with [`AccessoryMessage.Error.transportFailed`](accessorymessage/error/transportfailed.md) if the transport fails but may recover, or [`AccessoryMessage.Error.transportUnavailable`](accessorymessage/error/transportunavailable.md) if the transport is unavailable.
+The system calls this method to deliver encrypted notification data for transmission to your accessory. Relay the message’s data to your accessory over Bluetooth or another transport. Call the completion handler with [`AccessoryMessage.Result.success`](../../accessorymessage/result/success.md) if transmission succeeds, [`AccessoryMessage.Result.failure(_:)`](../../accessorymessage/result/failure%28_%29.md) with [`AccessoryMessage.Error.transportFailed`](../../accessorymessage/error/transportfailed.md) if the transport fails but may recover, or [`AccessoryMessage.Error.transportUnavailable`](../../accessorymessage/error/transportunavailable.md) if the transport is unavailable.
 
 If you don’t call the completion handler, the system assumes successful delivery and won’t retry the message.
 
@@ -32,7 +33,8 @@ If you don’t call the completion handler, the system assumes successful delive
 
 ## See Also
 
-- [func dataEventHandler(event: AccessoryTransportSession.DataEvent)](accessorytransportsession/eventhandler/dataeventhandler(event:).md)
+### Handling data events
+- [func dataEventHandler(event: AccessoryTransportSession.DataEvent)](./dataeventhandler%28event%29.md)
   Handles events that address incoming data destined for the accessory.
 
 

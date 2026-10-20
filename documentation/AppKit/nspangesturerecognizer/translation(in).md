@@ -1,7 +1,8 @@
 # translation(in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The distance traveled by the mouse during the gesture.
 
@@ -12,6 +13,10 @@ The distance traveled by the mouse during the gesture.
 
 ```swift
 func translation(in view: NSView?) -> NSPoint
+```
+
+```objc
+- (NSPoint) translationInView:(NSView *) view;
 ```
 
 #### Return Value
@@ -28,11 +33,13 @@ The x and y values of the returned point report the total translation over time.
 
 ## See Also
 
-- [func location(in: NSView?) -> NSPoint](nsgesturerecognizer/location(in:).md)
+### Related Documentation
+- [func location(in: NSView?) -> NSPoint](../nsgesturerecognizer/location%28in%29.md)
   Returns the point computed as the location of the gesture.
-- [func setTranslation(NSPoint, in: NSView?)](nspangesturerecognizer/settranslation(_:in:).md)
+### Tracking the location and velocity of the gesture
+- [func setTranslation(NSPoint, in: NSView?)](./settranslation%28_,in%29.md)
   Changes the current translation value of the gesture recognizer.
-- [func velocity(in: NSView?) -> NSPoint](nspangesturerecognizer/velocity(in:).md)
+- [func velocity(in: NSView?) -> NSPoint](./velocity%28in%29.md)
   The velocity of the pan, measured in points per second.
 
 

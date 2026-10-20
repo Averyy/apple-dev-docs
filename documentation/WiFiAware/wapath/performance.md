@@ -1,7 +1,8 @@
 # performance
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current performance metrics for the Wi-Fi Aware data path.
 

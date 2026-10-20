@@ -1,7 +1,8 @@
 # results()
 
 **Framework**: CarKey  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the results of a preceding action request.
 
@@ -24,11 +25,12 @@ A structure that contains the vehicle-specific status code from the vehicle.
 
 #### Discussion
 
-After you call your session’s [`perform(_:)`](carkeyremotecontrolsession/perform(_:)-8ac0c.md) method to send an action request to a vehicle, call this method and await the results of that request. Upon the successful completion of the request, this method returns the vehicle-provided status code. If an error occurs, this method throws the error instead.
+After you call your session’s [`perform(_:)`](../../carkeyremotecontrolsession/perform%28_%29-8ac0c.md) method to send an action request to a vehicle, call this method and await the results of that request. Upon the successful completion of the request, this method returns the vehicle-provided status code. If an error occurs, this method throws the error instead.
 
 ## See Also
 
-- [struct ExecutionStatus](executionstatus.md)
+### Getting the Vehicle’s Response
+- [struct ExecutionStatus](../../executionstatus.md)
   A type that contains the status code a vehicle returns after executing an action.
 
 

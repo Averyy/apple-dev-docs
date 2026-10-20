@@ -1,7 +1,8 @@
 # children
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of view controllers that are hierarchical children of the view controller.
 
@@ -14,24 +15,29 @@ An array of view controllers that are hierarchical children of the view controll
 var children: [NSViewController] { get set }
 ```
 
+```objc
+@property (copy) NSArray<__kindof NSViewController *> * childViewControllers;
+```
+
 #### Discussion
 
-You can add or remove child view controllers by using this property. When you do, the [`addChild(_:)`](nsviewcontroller/addchild(_:).md) or [`removeFromParent()`](nsviewcontroller/removefromparent().md) method gets called accordingly.
+You can add or remove child view controllers by using this property. When you do, the [`addChild(_:)`](./addchild%28_%29.md) or [`removeFromParent()`](./removefromparent%28%29.md) method gets called accordingly.
 
 ## See Also
 
-- [func addChild(NSViewController)](nsviewcontroller/addchild(_:).md)
-  A convenience method for adding a child view controller at the end of the [`children`](nsviewcontroller/children.md) array.
-- [func transition(from: NSViewController, to: NSViewController, options: NSViewController.TransitionOptions, completionHandler: (() -> Void)?)](nsviewcontroller/transition(from:to:options:completionhandler:).md)
+### Managing Child View Controllers in a Custom Container
+- [func addChild(NSViewController)](./addchild%28_%29.md)
+  A convenience method for adding a child view controller at the end of the [`children`](./children.md) array.
+- [func transition(from: NSViewController, to: NSViewController, options: NSViewController.TransitionOptions, completionHandler: (() -> Void)?)](./transition%28from,to,options,completionhandler%29.md)
   Performs a transition between two sibling child view controllers of the view controller.
-- [func insertChild(NSViewController, at: Int)](nsviewcontroller/insertchild(_:at:).md)
-  Inserts a specified child view controller into the [`children`](nsviewcontroller/children.md) array at a specified position.
-- [func removeChild(at: Int)](nsviewcontroller/removechild(at:).md)
+- [func insertChild(NSViewController, at: Int)](./insertchild%28_,at%29.md)
+  Inserts a specified child view controller into the [`children`](./children.md) array at a specified position.
+- [func removeChild(at: Int)](./removechild%28at%29.md)
   Removes a specified child controller from the view controller.
-- [func removeFromParent()](nsviewcontroller/removefromparent.md)
+- [func removeFromParent()](./removefromparent%28%29.md)
   Removes the called view controller from its parent view controller.
-- [func preferredContentSizeDidChange(for: NSViewController)](nsviewcontroller/preferredcontentsizedidchange(for:).md)
-  Called when there is a change in value of the [`preferredContentSize`](nsviewcontroller/preferredcontentsize.md) property of a child view controller or a presented view controller.
+- [func preferredContentSizeDidChange(for: NSViewController)](./preferredcontentsizedidchange%28for%29.md)
+  Called when there is a change in value of the [`preferredContentSize`](./preferredcontentsize.md) property of a child view controller or a presented view controller.
 
 
 ---

@@ -1,7 +1,8 @@
 # kCGImagePropertyAuxiliaryDataType
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The type of the auxiliary data.
 
@@ -20,19 +21,24 @@ The type of the auxiliary data.
 let kCGImagePropertyAuxiliaryDataType: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyAuxiliaryDataType;
+```
+
 #### Discussion
 
-The value of this property is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring). The value of this key might be [`kCGImageAuxiliaryDataTypeDisparity`](kcgimageauxiliarydatatypedisparity.md), [`kCGImageAuxiliaryDataTypeDepth`](kcgimageauxiliarydatatypedepth.md), or another auxiliary data type.
+The value of this property is a [`CFString`](../CoreFoundation/cfstring.md). The value of this key might be [`kCGImageAuxiliaryDataTypeDisparity`](./kcgimageauxiliarydatatypedisparity.md), [`kCGImageAuxiliaryDataTypeDepth`](./kcgimageauxiliarydatatypedepth.md), or another auxiliary data type.
 
 ## See Also
 
-- [let kCGImagePropertyAuxiliaryData: CFString](kcgimagepropertyauxiliarydata.md)
+### Auxiliary Image Data
+- [let kCGImagePropertyAuxiliaryData: CFString](./kcgimagepropertyauxiliarydata.md)
   An array of dictionaries that contain auxiliary data for the images.
-- [let kCGImageAuxiliaryDataInfoData: CFString](kcgimageauxiliarydatainfodata.md)
+- [let kCGImageAuxiliaryDataInfoData: CFString](./kcgimageauxiliarydatainfodata.md)
   The auxiliary data for the image.
-- [let kCGImageAuxiliaryDataInfoDataDescription: CFString](kcgimageauxiliarydatainfodatadescription.md)
+- [let kCGImageAuxiliaryDataInfoDataDescription: CFString](./kcgimageauxiliarydatainfodatadescription.md)
   A dictionary of keys that describe the auxiliary data.
-- [let kCGImageAuxiliaryDataInfoMetadata: CFString](kcgimageauxiliarydatainfometadata.md)
+- [let kCGImageAuxiliaryDataInfoMetadata: CFString](./kcgimageauxiliarydatainfometadata.md)
   The metadata for any auxiliary data.
 
 

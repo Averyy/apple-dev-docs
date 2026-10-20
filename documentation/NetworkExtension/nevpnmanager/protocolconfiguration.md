@@ -1,9 +1,10 @@
 # protocolConfiguration
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-An [`NEVPNProtocol`](nevpnprotocol.md) object containing the configuration settings of the VPN tunneling protocol.
+An [`NEVPNProtocol`](../nevpnprotocol.md) object containing the configuration settings of the VPN tunneling protocol.
 
 **Availability**:
 - iOS 9.0+
@@ -19,21 +20,26 @@ An [`NEVPNProtocol`](nevpnprotocol.md) object containing the configuration setti
 var protocolConfiguration: NEVPNProtocol? { get set }
 ```
 
+```objc
+@property (strong, nullable) NEVPNProtocol * protocolConfiguration;
+```
+
 #### Discussion
 
-For `NEVPNManager` objects, this property can be set to either an [`NEVPNProtocolIPSec`](nevpnprotocolipsec.md) object or an [`NEVPNProtocolIKEv2`](nevpnprotocolikev2.md) object.
+For `NEVPNManager` objects, this property can be set to either an [`NEVPNProtocolIPSec`](../nevpnprotocolipsec.md) object or an [`NEVPNProtocolIKEv2`](../nevpnprotocolikev2.md) object.
 
 ## See Also
 
-- [var isEnabled: Bool](nevpnmanager/isenabled.md)
+### Accessing VPN configuration properties
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean used to toggle the enabled state of the VPN configuration.
-- [var `protocol`: NEVPNProtocol?](nevpnmanager/protocol.md)
+- [var `protocol`: NEVPNProtocol?](./protocol.md)
   An `NEVPNProtocol` object containing the configuration settings of the VPN tunneling protocol.
-- [var localizedDescription: String?](nevpnmanager/localizeddescription.md)
+- [var localizedDescription: String?](./localizeddescription.md)
   A string containing the display name of the VPN configuration.
-- [var isOnDemandEnabled: Bool](nevpnmanager/isondemandenabled.md)
+- [var isOnDemandEnabled: Bool](./isondemandenabled.md)
   A Boolean used to toggle the Connect On Demand capability.
-- [var onDemandRules: [NEOnDemandRule]?](nevpnmanager/ondemandrules.md)
+- [var onDemandRules: [NEOnDemandRule]?](./ondemandrules.md)
   An ordered list of Connect On Demand rules.
 
 

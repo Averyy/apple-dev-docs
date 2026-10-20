@@ -1,16 +1,21 @@
 # authorization_petition
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var authorization_petition: UnsafeMutablePointer<es_event_authorization_petition_t> { get set }
+```
+
+```c
+es_event_authorization_petition_t * authorization_petition;
 ```
 
 

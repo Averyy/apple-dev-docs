@@ -1,7 +1,8 @@
 # searchText
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The search query with which to prepopulate the find panel’s search text field.
 
@@ -17,13 +18,18 @@ The search query with which to prepopulate the find panel’s search text field.
 var searchText: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * searchText;
+```
+
 ## See Also
 
-- [var isFindNavigatorVisible: Bool](uifindinteraction/isfindnavigatorvisible.md)
+### Configuring the find panel
+- [var isFindNavigatorVisible: Bool](./isfindnavigatorvisible.md)
   A Boolean value that indicates when the find panel displays onscreen.
-- [var replacementText: String?](uifindinteraction/replacementtext.md)
+- [var replacementText: String?](./replacementtext.md)
   The replacement string with which to prepopulate the find panel’s replace text field.
-- [var optionsMenuProvider: (([UIMenuElement]) -> UIMenu?)?](uifindinteraction/optionsmenuprovider.md)
+- [var optionsMenuProvider: (([UIMenuElement]) -> UIMenu?)?](./optionsmenuprovider.md)
   A closure that populates the search options for a find interaction.
 
 

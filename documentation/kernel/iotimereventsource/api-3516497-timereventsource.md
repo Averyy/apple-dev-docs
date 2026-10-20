@@ -1,14 +1,15 @@
 # timerEventSource
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```c
 static OSPtr<IOTimerEventSource> timerEventSource(uint32_t options, OSObject *owner, Action action);
 ```
 

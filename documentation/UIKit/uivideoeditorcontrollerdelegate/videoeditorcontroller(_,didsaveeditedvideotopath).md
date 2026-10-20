@@ -1,7 +1,8 @@
 # videoEditorController(_:didSaveEditedVideoToPath:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate after the system finishes saving an edited movie.
 
@@ -17,6 +18,10 @@ Notifies the delegate after the system finishes saving an edited movie.
 optional func videoEditorController(_ editor: UIVideoEditorController, didSaveEditedVideoToPath editedVideoPath: String)
 ```
 
+```objc
+- (void) videoEditorController:(UIVideoEditorController *) editor didSaveEditedVideoToPath:(NSString *) editedVideoPath;
+```
+
 ## Parameters
 
 - `editor`: The video editor that has finished editing and saving a movie.
@@ -24,7 +29,8 @@ optional func videoEditorController(_ editor: UIVideoEditorController, didSaveEd
 
 ## See Also
 
-- [func videoEditorControllerDidCancel(UIVideoEditorController)](uivideoeditorcontrollerdelegate/videoeditorcontrollerdidcancel(_:).md)
+### Closing the video editor
+- [func videoEditorControllerDidCancel(UIVideoEditorController)](./videoeditorcontrollerdidcancel%28_%29.md)
   Notifies the delegate when the user cancels a movie editing operation.
 
 

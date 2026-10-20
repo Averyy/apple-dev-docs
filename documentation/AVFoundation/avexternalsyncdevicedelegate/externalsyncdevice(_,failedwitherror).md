@@ -1,7 +1,8 @@
 # externalSyncDevice(_:failedWithError:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -16,9 +17,14 @@
 optional func externalSyncDevice(_ device: AVExternalSyncDevice, failedWithError error: (any Error)?)
 ```
 
+```objc
+- (void) externalSyncDevice:(AVExternalSyncDevice *) device failedWithError:(NSError *) error;
+```
+
 ## See Also
 
-- [func externalSyncDeviceStatusDidChange(AVExternalSyncDevice)](avexternalsyncdevicedelegate/externalsyncdevicestatusdidchange(_:).md)
+### Responding to device events
+- [func externalSyncDeviceStatusDidChange(AVExternalSyncDevice)](./externalsyncdevicestatusdidchange%28_%29.md)
   Informs your delegate when the external sync device status has changed.
 
 

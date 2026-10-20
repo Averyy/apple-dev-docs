@@ -1,17 +1,24 @@
 # SecTransformCreateFromExternalRepresentation(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a transform instance from a dictionary of parameters.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 12.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
 ```swift
 func SecTransformCreateFromExternalRepresentation(_ dictionary: CFDictionary, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>?) -> SecTransform?
+```
+
+```c
+extern SecTransformRefSecTransformCreateFromExternalRepresentation(CFDictionaryRef dictionary, CFErrorRef*error);
 ```
 
 #### Return Value

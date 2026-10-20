@@ -1,15 +1,18 @@
 # MPPlayableContentDelegate
 
 **Framework**: Media Player  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol used to let external media players send playback commands to an app.
 
 **Availability**:
-- iOS 7.1+
-- iPadOS 7.1+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 7.1+ - Deprecated in 14.0
+- iPadOS 7.1+ - Deprecated in 14.0
+- Mac Catalyst 13.1+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use CarPlay framework
 
 ## Declaration
 
@@ -17,11 +20,15 @@ The protocol used to let external media players send playback commands to an app
 protocol MPPlayableContentDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol MPPlayableContentDelegate <NSObject>
+```
+
 #### Overview
 
 After the media player determines that a media item should play, the app’s content delegate requests to initiate playback.
 
-> ❗ **Important**:  Some features of this protocol are specific to CarPlay, which requires a special entitlement issued by Apple. Apps without the correct entitlement won’t appear on the CarPlay home screen. See [`http://www.apple.com/ios/carplay/`](https://developer.apple.comhttp://www.apple.com/ios/carplay/) for more information.
+> ❗ **Important**:  Some features of this protocol are specific to CarPlay, which requires a special entitlement issued by Apple. Apps without the correct entitlement won’t appear on the CarPlay home screen. See [http://www.apple.com/ios/carplay/](http://www.apple.com/ios/carplay/) for more information.
 
 When creating your CarPlay app, keep the following in mind:
 
@@ -32,25 +39,26 @@ When creating your CarPlay app, keep the following in mind:
 ## Topics
 
 ### Playing a specific media item
-- [func playableContentManager(MPPlayableContentManager, initiatePlaybackOfContentItemAt: IndexPath, completionHandler: ((any Error)?) -> Void)](mpplayablecontentdelegate/playablecontentmanager(_:initiateplaybackofcontentitemat:completionhandler:).md)
+- [func playableContentManager(MPPlayableContentManager, initiatePlaybackOfContentItemAt: IndexPath, completionHandler: ((any Error)?) -> Void)](./mpplayablecontentdelegate/playablecontentmanager%28_,initiateplaybackofcontentitemat,completionhandler%29.md)
   Asks the delegate to begin playback of the specified content item.
 ### Suggesting content for playback
-- [func playableContentManager(MPPlayableContentManager, initializePlaybackQueueWithContentItems: [Any]?, completionHandler: ((any Error)?) -> Void)](mpplayablecontentdelegate/playablecontentmanager(_:initializeplaybackqueuewithcontentitems:completionhandler:).md)
+- [func playableContentManager(MPPlayableContentManager, initializePlaybackQueueWithContentItems: [Any]?, completionHandler: ((any Error)?) -> Void)](./mpplayablecontentdelegate/playablecontentmanager%28_,initializeplaybackqueuewithcontentitems,completionhandler%29.md)
   Asks the delegate to prepare suggested content for playback.
-- [func playableContentManager(MPPlayableContentManager, initializePlaybackQueueWithCompletionHandler: ((any Error)?) -> Void)](mpplayablecontentdelegate/playablecontentmanager(_:initializeplaybackqueuewithcompletionhandler:).md)
+- [func playableContentManager(MPPlayableContentManager, initializePlaybackQueueWithCompletionHandler: ((any Error)?) -> Void)](./mpplayablecontentdelegate/playablecontentmanager%28_,initializeplaybackqueuewithcompletionhandler%29.md)
   Asks the delegate to prepare suggested content for playback.
 ### Responding to context changes
-- [func playableContentManager(MPPlayableContentManager, didUpdate: MPPlayableContentManagerContext)](mpplayablecontentdelegate/playablecontentmanager(_:didupdate:).md)
+- [func playableContentManager(MPPlayableContentManager, didUpdate: MPPlayableContentManagerContext)](./mpplayablecontentdelegate/playablecontentmanager%28_,didupdate%29.md)
   Notifies the delegate that the playable content manager’s context information has changed.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any MPPlayableContentDelegate)?](mpplayablecontentmanager/delegate.md)
+### Responding to playback events
+- [var delegate: (any MPPlayableContentDelegate)?](./mpplayablecontentmanager/delegate.md)
   A delegate that lets the media player manage the app’s playback queue.
 
 

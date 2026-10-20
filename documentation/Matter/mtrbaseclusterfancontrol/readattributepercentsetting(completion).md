@@ -1,7 +1,8 @@
 # readAttributePercentSetting(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributePercentSetting(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributePercentSetting() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributePercentSettingWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

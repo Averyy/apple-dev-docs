@@ -1,15 +1,20 @@
 # linkType
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var linkType: BluetoothLinkType
+```
+
+```c
+BluetoothLinkType linkType;
 ```
 
 

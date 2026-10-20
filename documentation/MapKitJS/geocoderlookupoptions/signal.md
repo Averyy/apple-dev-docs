@@ -1,7 +1,8 @@
 # signal
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A signal object allowing you to cancel the request.
 
@@ -10,7 +11,7 @@ A signal object allowing you to cancel the request.
 
 ## Declaration
 
-```swift
+```
 signal?: AbortSignal;
 ```
 
@@ -20,13 +21,14 @@ Pass an `AbortSignal` from an `AbortController` to allow the controller to cance
 
 ## See Also
 
-- [coordinate](geocoderlookupoptions/coordinate.md)
+### Options
+- [coordinate](./coordinate.md)
   Coordinates for constraining the lookup results.
-- [language](geocoderlookupoptions/language.md)
+- [language](./language.md)
   The language to use when displaying the lookup results.
-- [limitToCountries](geocoderlookupoptions/limittocountries.md)
+- [limitToCountries](./limittocountries.md)
   A list of countries for constraining the lookup results.
-- [region](geocoderlookupoptions/region.md)
+- [region](./region.md)
   A region for constraining lookup results.
 
 

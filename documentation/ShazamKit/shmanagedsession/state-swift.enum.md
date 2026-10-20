@@ -1,7 +1,8 @@
 # SHManagedSession.State
 
 **Framework**: ShazamKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The state of a managed session.
 
@@ -24,26 +25,27 @@ enum State
 ## Topics
 
 ### Getting session states
-- [SHManagedSession.State.idle](shmanagedsession/state-swift.enum/idle.md)
+- [SHManagedSession.State.idle](./state-swift.enum/idle.md)
   The session isn’t recording or making a match attempt.
-- [SHManagedSession.State.matching](shmanagedsession/state-swift.enum/matching.md)
+- [SHManagedSession.State.matching](./state-swift.enum/matching.md)
   The session is recording and making at least one match attempt.
-- [SHManagedSession.State.prerecording](shmanagedsession/state-swift.enum/prerecording.md)
+- [SHManagedSession.State.prerecording](./state-swift.enum/prerecording.md)
   The session has the resources it needs for matching and is prerecording.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var state: SHManagedSession.State](shmanagedsession/state-swift.property.md)
+### Getting the session state
+- [var state: SHManagedSession.State](./state-swift.property.md)
   The current state of the managed session.
 
 

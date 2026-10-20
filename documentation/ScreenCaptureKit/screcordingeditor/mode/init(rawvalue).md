@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - tvOS 27.0+

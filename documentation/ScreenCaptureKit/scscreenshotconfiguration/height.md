@@ -1,7 +1,8 @@
 # height
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer value that specifies the output height, measured in pixels.
 
@@ -13,6 +14,10 @@ An integer value that specifies the output height, measured in pixels.
 
 ```swift
 var height: Int { get set }
+```
+
+```objc
+@property (nonatomic, assign) NSInteger height;
 ```
 
 #### Discussion

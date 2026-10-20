@@ -1,7 +1,8 @@
 # advanced(by:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Advances the time by the specified amount; this is meaningless in the context of an immediate scheduler.
 
@@ -30,7 +31,8 @@ An empty `SchedulerTimeType`.
 
 ## See Also
 
-- [func distance(to: ImmediateScheduler.SchedulerTimeType) -> ImmediateScheduler.SchedulerTimeType.Stride](immediatescheduler/schedulertimetype/distance(to:).md)
+### Calculating time offsets
+- [func distance(to: ImmediateScheduler.SchedulerTimeType) -> ImmediateScheduler.SchedulerTimeType.Stride](./distance%28to%29.md)
   Returns the distance to another immediate scheduler time; this distance is always `0` in the context of an immediate scheduler.
 
 

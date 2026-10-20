@@ -1,7 +1,8 @@
 # kCFURLFileAllocatedSizeKey
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Key for the total size allocated on disk for the file, returned as an `CFNumber` object.
 
@@ -20,17 +21,22 @@ Key for the total size allocated on disk for the file, returned as an `CFNumber`
 let kCFURLFileAllocatedSizeKey: CFString!
 ```
 
+```c
+extern CFStringRef const kCFURLFileAllocatedSizeKey;
+```
+
 ## See Also
 
-- [let kCFURLFileSizeKey: CFString!](kcfurlfilesizekey.md)
+### Constants
+- [let kCFURLFileSizeKey: CFString!](./kcfurlfilesizekey.md)
   Key for the file’s size in bytes, returned as a `CFNumber` object.
-- [let kCFURLIsAliasFileKey: CFString!](kcfurlisaliasfilekey.md)
+- [let kCFURLIsAliasFileKey: CFString!](./kcfurlisaliasfilekey.md)
   Key for determining whether the file is an alias, returned as a `CFBoolean` object.
-- [let kCFURLIsMountTriggerKey: CFString!](kcfurlismounttriggerkey.md)
+- [let kCFURLIsMountTriggerKey: CFString!](./kcfurlismounttriggerkey.md)
   Key for determining whether the URL is a file system trigger directory, returned as a `CFBoolean` object. Traversing or opening a file system trigger directory causes an attempt to mount a file system on the directory.
-- [let kCFURLTotalFileAllocatedSizeKey: CFString!](kcfurltotalfileallocatedsizekey.md)
+- [let kCFURLTotalFileAllocatedSizeKey: CFString!](./kcfurltotalfileallocatedsizekey.md)
   Key for the total allocated size of the file in bytes, returned as a `CFNumber` object. This includes the size of any file metadata.
-- [let kCFURLTotalFileSizeKey: CFString!](kcfurltotalfilesizekey.md)
+- [let kCFURLTotalFileSizeKey: CFString!](./kcfurltotalfilesizekey.md)
   Key for the total displayable size of the file in bytes, returned as a `CFNumber` object. This includes the size of any file metadata.
 
 

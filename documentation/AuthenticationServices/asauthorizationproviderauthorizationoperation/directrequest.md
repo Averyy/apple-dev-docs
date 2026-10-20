@@ -1,7 +1,8 @@
 # directRequest
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -14,6 +15,10 @@
 
 ```swift
 static let directRequest: ASAuthorizationProviderAuthorizationOperation
+```
+
+```c
+extern ASAuthorizationProviderAuthorizationOperation const ASAuthorizationProviderAuthorizationOperationDirectRequest;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a voice trait with the corresponding integer that you specify.
 

@@ -1,7 +1,8 @@
 # PersonalRecommendation.Relationships.PersonalRecommendationContentsRelationship
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A relationship from the recommendation to its recommended content.
 
@@ -10,7 +11,7 @@ A relationship from the recommendation to its recommended content.
 
 ## Declaration
 
-```swift
+```
 object PersonalRecommendation.Relationships.PersonalRecommendationContentsRelationship
 ```
 

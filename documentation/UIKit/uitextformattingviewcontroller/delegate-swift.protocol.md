@@ -1,7 +1,8 @@
 # UITextFormattingViewController.Delegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 18.0+
@@ -18,10 +19,10 @@ protocol Delegate : AnyObject
 ## Topics
 
 ### Instance Methods
-- [func textFormattingDidFinish(UITextFormattingViewController)](uitextformattingviewcontroller/delegate-swift.protocol/textformattingdidfinish(_:).md)
-- [func textFormattingViewController(UITextFormattingViewController, didChangeValue: UITextFormattingViewController.ChangeValue)](uitextformattingviewcontroller/delegate-swift.protocol/textformattingviewcontroller(_:didchangevalue:).md)
-- [func textFormattingViewController(UITextFormattingViewController, shouldPresentColorPicker: UIColorPickerViewController) -> Bool](uitextformattingviewcontroller/delegate-swift.protocol/textformattingviewcontroller(_:shouldpresentcolorpicker:).md)
-- [func textFormattingViewController(UITextFormattingViewController, shouldPresentFontPicker: UIFontPickerViewController) -> Bool](uitextformattingviewcontroller/delegate-swift.protocol/textformattingviewcontroller(_:shouldpresentfontpicker:).md)
+- [func textFormattingDidFinish(UITextFormattingViewController)](./delegate-swift.protocol/textformattingdidfinish%28_%29.md)
+- [func textFormattingViewController(UITextFormattingViewController, didChangeValue: UITextFormattingViewController.ChangeValue)](./delegate-swift.protocol/textformattingviewcontroller%28_,didchangevalue%29.md)
+- [func textFormattingViewController(UITextFormattingViewController, shouldPresentColorPicker: UIColorPickerViewController) -> Bool](./delegate-swift.protocol/textformattingviewcontroller%28_,shouldpresentcolorpicker%29.md)
+- [func textFormattingViewController(UITextFormattingViewController, shouldPresentFontPicker: UIFontPickerViewController) -> Bool](./delegate-swift.protocol/textformattingviewcontroller%28_,shouldpresentfontpicker%29.md)
 
 
 ---

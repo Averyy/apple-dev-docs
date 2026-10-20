@@ -1,7 +1,8 @@
 # MultivariateLinearRegressor
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A multivariate linear regressor.
 
@@ -22,79 +23,80 @@ struct MultivariateLinearRegressor<Scalar> where Scalar : MLShapedArrayScalar, S
 
 #### Overview
 
-Unlike a [`LinearRegressor`](linearregressor.md), a [`MultivariateLinearRegressor`](multivariatelinearregressor.md) supports shaped array outputs with any number of elements. It also provides a wider range of training options better suited for large multi-dimensional regression.
+Unlike a [`LinearRegressor`](./linearregressor.md), a [`MultivariateLinearRegressor`](./multivariatelinearregressor.md) supports shaped array outputs with any number of elements. It also provides a wider range of training options better suited for large multi-dimensional regression.
 
 > **Note**: Only `Float` and `Double` are currently supported as the Scalar type. You may get faster training when using `Float`.
 
 ## Topics
 
 ### Creating a regressor
-- [init(configuration: MultivariateLinearRegressor<Scalar>.Configuration)](multivariatelinearregressor/init(configuration:).md)
+- [init(configuration: MultivariateLinearRegressor<Scalar>.Configuration)](./multivariatelinearregressor/init%28configuration%29.md)
   Creates a multivariate linear regressor.
 ### Getting the configuration
-- [var configuration: MultivariateLinearRegressor<Scalar>.Configuration](multivariatelinearregressor/configuration-swift.property.md)
+- [var configuration: MultivariateLinearRegressor<Scalar>.Configuration](./multivariatelinearregressor/configuration-swift.property.md)
   The linear regressor configuration.
 ### Fitting
-- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> MultivariateLinearRegressor<Scalar>.Model](multivariatelinearregressor/fitted(to:eventhandler:).md)
+- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> MultivariateLinearRegressor<Scalar>.Model](./multivariatelinearregressor/fitted%28to,eventhandler%29.md)
   Fits a linear regressor model to a sequence of annotated features.
-- [func fitted(to:validateOn:eventHandler:)](multivariatelinearregressor/fitted(to:validateon:eventhandler:).md)
+- [func fitted(to:validateOn:eventHandler:)](./multivariatelinearregressor/fitted%28to,validateon,eventhandler%29.md)
   Fits a linear regressor model to shaped arrays of features and annotations.
 ### Fitting Progressively
-- [func makeTransformer() -> MultivariateLinearRegressor<Scalar>.Model](multivariatelinearregressor/maketransformer.md)
+- [func makeTransformer() -> MultivariateLinearRegressor<Scalar>.Model](./multivariatelinearregressor/maketransformer%28%29.md)
   Creates a default-initialized model suitable for incremental fitting.
-- [func update(inout MultivariateLinearRegressor<Scalar>.Model, with: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws](multivariatelinearregressor/update(_:with:eventhandler:).md)
+- [func update(inout MultivariateLinearRegressor<Scalar>.Model, with: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws](./multivariatelinearregressor/update%28_,with,eventhandler%29.md)
   Updates a model with a new sequence of examples.
-- [func update(inout MultivariateLinearRegressor<Scalar>.Model, with: AnnotatedBatch<Scalar>) async throws -> Scalar](multivariatelinearregressor/update(_:with:).md)
+- [func update(inout MultivariateLinearRegressor<Scalar>.Model, with: AnnotatedBatch<Scalar>) async throws -> Scalar](./multivariatelinearregressor/update%28_,with%29.md)
   Updates a model with a new shaped array of examples.
 ### Encoding and decoding
-- [func encodeWithOptimizer(MultivariateLinearRegressor<Scalar>.Model, to: inout any EstimatorEncoder) throws](multivariatelinearregressor/encodewithoptimizer(_:to:).md)
+- [func encodeWithOptimizer(MultivariateLinearRegressor<Scalar>.Model, to: inout any EstimatorEncoder) throws](./multivariatelinearregressor/encodewithoptimizer%28_,to%29.md)
   Encodes the model and optimizer to an encoder.
-- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> MultivariateLinearRegressor<Scalar>.Model](multivariatelinearregressor/decodewithoptimizer(from:).md)
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> MultivariateLinearRegressor<Scalar>.Model](./multivariatelinearregressor/decodewithoptimizer%28from%29.md)
   Reads the encoded model and optimizer with a decoder.
 ### Supporting types
-- [MultivariateLinearRegressor.Model](multivariatelinearregressor/model.md)
+- [MultivariateLinearRegressor.Model](./multivariatelinearregressor/model.md)
   A trained multivariate linear regressor model.
-- [MultivariateLinearRegressor.Annotation](multivariatelinearregressor/annotation.md)
+- [MultivariateLinearRegressor.Annotation](./multivariatelinearregressor/annotation.md)
   The annotation type.
-- [MultivariateLinearRegressor.Configuration](multivariatelinearregressor/configuration-swift.typealias.md)
-- [MultivariateLinearRegressor.Feature](multivariatelinearregressor/feature.md)
+- [MultivariateLinearRegressor.Configuration](./multivariatelinearregressor/configuration-swift.typealias.md)
+- [MultivariateLinearRegressor.Feature](./multivariatelinearregressor/feature.md)
   The feature type.
-- [MultivariateLinearRegressor.Transformer](multivariatelinearregressor/transformer.md)
+- [MultivariateLinearRegressor.Transformer](./multivariatelinearregressor/transformer.md)
   The transformer type created by this estimator.
 ### Default Implementations
-- [UpdatableSupervisedEstimator Implementations](multivariatelinearregressor/updatablesupervisedestimator-implementations.md)
+- [UpdatableSupervisedEstimator Implementations](./multivariatelinearregressor/updatablesupervisedestimator-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SupervisedEstimator](supervisedestimator.md)
-- [UpdatableSupervisedEstimator](updatablesupervisedestimator.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SupervisedEstimator](./supervisedestimator.md)
+- [UpdatableSupervisedEstimator](./updatablesupervisedestimator.md)
 
 ## See Also
 
-- [protocol Regressor](regressor.md)
+### Regressors
+- [protocol Regressor](./regressor.md)
   A transformer that predicts a float value.
-- [struct LinearRegressor](linearregressor.md)
+- [struct LinearRegressor](./linearregressor.md)
   A linear regressor.
-- [struct LinearRegressorModel](linearregressormodel.md)
+- [struct LinearRegressorModel](./linearregressormodel.md)
   A trained linear regressor model.
-- [struct MultivariateLinearRegressorConfiguration](multivariatelinearregressorconfiguration.md)
+- [struct MultivariateLinearRegressorConfiguration](./multivariatelinearregressorconfiguration.md)
   A linear regressor configuration.
-- [MultivariateLinearRegressor.Model](multivariatelinearregressor/model.md)
+- [MultivariateLinearRegressor.Model](./multivariatelinearregressor/model.md)
   A trained multivariate linear regressor model.
-- [struct FullyConnectedNetworkRegressor](fullyconnectednetworkregressor.md)
+- [struct FullyConnectedNetworkRegressor](./fullyconnectednetworkregressor.md)
   A regressor that uses a fully connected network.
-- [struct FullyConnectedNetworkRegressorModel](fullyconnectednetworkregressormodel.md)
+- [struct FullyConnectedNetworkRegressorModel](./fullyconnectednetworkregressormodel.md)
   A regressor model that uses a fully connected network.
-- [struct BoostedTreeRegressor](boostedtreeregressor.md)
+- [struct BoostedTreeRegressor](./boostedtreeregressor.md)
   A gradient boosted decision tree regressor.
-- [struct TreeRegressorModel](treeregressormodel.md)
+- [struct TreeRegressorModel](./treeregressormodel.md)
   A trained tree regressor model.
-- [enum OptimizationStrategy](optimizationstrategy.md)
+- [enum OptimizationStrategy](./optimizationstrategy.md)
   A linear optimization strategy.
 
 

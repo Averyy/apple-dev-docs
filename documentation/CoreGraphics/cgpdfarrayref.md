@@ -1,18 +1,19 @@
 # CGPDFArrayRef
 
 **Framework**: Core Graphics  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An opaque type that encapsulates a PDF array.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,21 +21,25 @@ An opaque type that encapsulates a PDF array.
 struct CGPDFArrayRef
 ```
 
+```c
+typedef struct CGPDFArray * CGPDFArrayRef;
+```
+
 ## Topics
 
 ### Initializers
-- [init(OpaquePointer)](cgpdfarrayref/init(_:).md)
-- [init(rawValue: OpaquePointer)](cgpdfarrayref/init(rawvalue:).md)
+- [init(OpaquePointer)](./cgpdfarrayref/init%28_%29.md)
+- [init(rawValue: OpaquePointer)](./cgpdfarrayref/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

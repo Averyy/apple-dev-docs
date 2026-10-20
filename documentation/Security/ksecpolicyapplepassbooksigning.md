@@ -1,7 +1,8 @@
 # kSecPolicyApplePassbookSigning
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 7.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kSecPolicyApplePassbookSigning: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyApplePassbookSigning;
 ```
 
 

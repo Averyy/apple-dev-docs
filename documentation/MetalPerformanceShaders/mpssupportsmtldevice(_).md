@@ -1,7 +1,8 @@
 # MPSSupportsMTLDevice(_:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determines whether the Metal Performance Shaders framework supports a Metal device.
 
@@ -19,17 +20,21 @@ Determines whether the Metal Performance Shaders framework supports a Metal devi
 func MPSSupportsMTLDevice(_ device: (any MTLDevice)?) -> Bool
 ```
 
+```c
+BOOL MPSSupportsMTLDevice(id<MTLDevice>device);
+```
+
 ## Mentions
 
-- [The MPSKernel Class](the-mpskernel-class.md)
+- [The MPSKernel Class](./the-mpskernel-class.md)
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device is supported. [`false`](https://developer.apple.com/documentation/swift/false) if the device is not supported.
+[`true`](../Swift/true.md) if the device is supported. [`false`](../Swift/false.md) if the device is not supported.
 
 #### Discussion
 
-For a full listing of Metal Performance Shaders feature set support, see [`Feature Availability`](https://developer.apple.comhttps://developer.apple.com/metal/availability/).
+For a full listing of Metal Performance Shaders feature set support, see [Feature Availability](https://developer.apple.com/metal/availability/).
 
 ## Parameters
 

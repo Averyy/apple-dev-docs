@@ -1,7 +1,8 @@
 # strokeColor
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The stroke color of a line.
 
@@ -10,7 +11,7 @@ The stroke color of a line.
 
 ## Declaration
 
-```swift
+```
 strokeColor?: string;
 ```
 
@@ -20,13 +21,14 @@ This can be any valid CSS color value. Set to `null` for no stroke. The default 
 
 ## See Also
 
-- [strokeOpacity](styleconstructoroptions/strokeopacity.md)
+### Setting stroke styles
+- [strokeOpacity](./strokeopacity.md)
   The opacity of the stroke color.
-- [strokeStart](styleconstructoroptions/strokestart.md)
+- [strokeStart](./strokestart.md)
   The unit distance along the line where a stroke begins.
-- [strokeEnd](styleconstructoroptions/strokeend.md)
+- [strokeEnd](./strokeend.md)
   The unit distance along the line where a stroke ends.
-- [lineGradient](styleconstructoroptions/linegradient.md)
+- [lineGradient](./linegradient.md)
   The gradient to apply along the line.
 
 

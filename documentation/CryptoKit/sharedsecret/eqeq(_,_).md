@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Determines whether a shared secret is equivalent to a collection of contiguous bytes.
 

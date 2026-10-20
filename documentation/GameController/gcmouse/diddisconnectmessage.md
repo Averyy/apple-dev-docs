@@ -1,7 +1,8 @@
 # GCMouse.DidDisconnectMessage
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message that posts after a mouse accessory disconnects from the device.
 
@@ -23,7 +24,7 @@ struct DidDisconnectMessage
 
 Use the `didDisconnect` identifier with `NotificationCenter` to listen for this message.
 
-```None
+```
 let observation = NotificationCenter.default.addObserver(of: GCMouse.self, for: .didDisconnect) { message in
    let mouse = message.mouse
 }
@@ -32,16 +33,16 @@ let observation = NotificationCenter.default.addObserver(of: GCMouse.self, for: 
 ## Topics
 
 ### Initializers
-- [init(mouse: GCMouse)](gcmouse/diddisconnectmessage/init(mouse:).md)
+- [init(mouse: GCMouse)](./diddisconnectmessage/init%28mouse%29.md)
 ### Instance Properties
-- [var mouse: GCMouse](gcmouse/diddisconnectmessage/mouse.md)
+- [var mouse: GCMouse](./diddisconnectmessage/mouse.md)
   The mouse object that disconnected from the device.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

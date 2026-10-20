@@ -1,7 +1,8 @@
 # init(content:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a standard labeled element, with a view that conveys the value of the element and a label.
 
@@ -21,6 +22,8 @@ nonisolated
 init(@ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label)
 ```
 
+Available when `Label` conforms to `View` and `Content` conforms to `View`.
+
 ## Parameters
 
 - `content`: The view that conveys the value of the resulting labeled element.
@@ -28,13 +31,14 @@ init(@ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label)
 
 ## See Also
 
-- [init(_:content:)](labeledcontent/init(_:content:).md)
+### Creating labeled content
+- [init(_:content:)](./init%28_,content%29.md)
   Creates a labeled view that generates its label from a localized string key.
-- [init(_:value:)](labeledcontent/init(_:value:).md)
+- [init(_:value:)](./init%28_,value%29.md)
   Creates a labeled informational view.
-- [init(_:value:format:)](labeledcontent/init(_:value:format:).md)
+- [init(_:value:format:)](./init%28_,value,format%29.md)
   Creates a labeled informational view from a formatted value.
-- [init(LabeledContentStyleConfiguration)](labeledcontent/init(_:).md)
+- [init(LabeledContentStyleConfiguration)](./init%28_%29.md)
   Creates labeled content based on a labeled content style configuration.
 
 

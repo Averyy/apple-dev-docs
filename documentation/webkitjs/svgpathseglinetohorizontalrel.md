@@ -1,7 +1,8 @@
 # SVGPathSegLinetoHorizontalRel
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGPathSegLinetoHorizontalRel
 ```
 
 ## Topics
 
 ### Instance Properties
-- [x](svgpathseglinetohorizontalrel/1632288-x.md)
+- [x](./svgpathseglinetohorizontalrel/api-1632288-x.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGPathSeg](svgpathseg.md)
+- [SVGPathSeg](./svgpathseg.md)
 
 
 ---

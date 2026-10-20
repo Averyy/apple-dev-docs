@@ -1,7 +1,8 @@
 # normal
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The surface normal at the point of intersection, in scene space.
 

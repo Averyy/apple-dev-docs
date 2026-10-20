@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/opt-resnet.html
 
 # Optimizing ResNet50 Model
 
-**
-
-- [.md](../_sources/source/opt-resnet.md)
-- **
-
-.pdf
-
-**
-
-# Optimizing ResNet50 Model
-
- Table of contents 
-
-## Contents
-
-# Optimizing ResNet50 Model
-
 In this article we will experiment with various ways to compress a convolutional neural network (CNN) for meeting different performance objectives
 while staying within a specified accuracy loss budget.  In particular, we will consider two scenarios -
 one with the goal to reduce the model size, the other with the goal to reduce runtime latency.
@@ -99,7 +82,7 @@ For this model 4-bit palettization with group_size=8 configuration is a good swe
 ### Palettization using fine tuning
 
 For this particular model, we do not see any benefits of using calibration data based compression w.r.to accuracy.
-So we move on to training time compression workflow, where we will fine tune the model as we compress it. We can do so by using the [DKM algorithm](opt-palettization-algos.html#differentiable-k-means), as follows:
+So we move on to training time compression workflow, where we will fine tune the model as we compress it. We can do so by using the [DKM algorithm](opt-palettization-algos.md#differentiable-k-means), as follows:
 
 ```
 from coremltools.optimize.torch.palettization import (
@@ -217,7 +200,7 @@ You can apply activation quantization with calibration data using
 API on the PyTorch model.
 We use the calibration data to measure statistics of activations and weights without actually
 simulating quantization during model’s forward pass, and without needing to perform a backward pass.
-Learn more about this workflow in the [API Overview](opt-quantization-api.html#id3)
+Learn more about this workflow in the [API Overview](opt-quantization-api.md#id3)
 section.
 
 ```
@@ -254,7 +237,7 @@ quantized_model = quantizer.finalize()
 
 With 128 calibration samples, this gives us an accuracy of `76.1%` and a latency of `1.07ms`.
 
-Note that if you have a Core ML model, you can use the [linear_quantize_activations](opt-quantization-api.html#quantizing-weights-and-activations)
+Note that if you have a Core ML model, you can use the [linear_quantize_activations](opt-quantization-api.md#quantizing-weights-and-activations)
 method to quantize the activations.
 
 ### Summary
@@ -272,5 +255,3 @@ On the other hand, by pruning the model with fine-tuning we are able to get even
 [[1](#id1)]
 
 All latency numbers reported in this article have been measured on iPhone 15 Pro with iOS18 seed build. The latency numbers are sensitive to the device state, and may vary depending on the device state and build versions.
-
-** Contents

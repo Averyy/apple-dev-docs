@@ -1,7 +1,8 @@
 # run(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the spatial tracking session with the specified configuration.
 

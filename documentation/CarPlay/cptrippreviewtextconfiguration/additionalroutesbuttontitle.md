@@ -1,7 +1,8 @@
 # additionalRoutesButtonTitle
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title displayed on the routes button.
 
@@ -16,15 +17,20 @@ The title displayed on the routes button.
 var additionalRoutesButtonTitle: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * additionalRoutesButtonTitle;
+```
+
 #### Discussion
 
 When the title is `nil`, the button displays a system-provided title.
 
 ## See Also
 
-- [var startButtonTitle: String?](cptrippreviewtextconfiguration/startbuttontitle.md)
+### Setting Button Titles
+- [var startButtonTitle: String?](./startbuttontitle.md)
   The title displayed on the start button.
-- [var overviewButtonTitle: String?](cptrippreviewtextconfiguration/overviewbuttontitle.md)
+- [var overviewButtonTitle: String?](./overviewbuttontitle.md)
   The title displayed on the overview button.
 
 

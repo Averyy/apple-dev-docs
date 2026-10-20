@@ -1,6 +1,7 @@
 # Enabling and disabling tests
 
-**Framework**: Swift Testing
+**Framework**: Swift Testing  
+**Role**: Article
 
 Conditionally enable or disable individual tests before they run.
 
@@ -10,9 +11,9 @@ Often, a test is only applicable in specific circumstances. For instance, you mi
 
 > **Note**: A condition may be evaluated multiple times during testing.
 
-##### Disable a Test
+##### Disable a test
 
-If you need to disable a test unconditionally, use the [`disabled(_:sourceLocation:)`](trait/disabled(_:sourcelocation:).md) function. Given the following test function:
+If you need to disable a test unconditionally, use the [`disabled(_:sourceLocation:)`](./trait/disabled%28_,sourcelocation%29.md) function. Given the following test function:
 
 ```swift
 @Test("Food truck sells burritos")
@@ -35,7 +36,7 @@ It’s also possible to add a comment to the trait to present in the output from
 func sellsBurritos() async throws { ... }
 ```
 
-##### Enable or Disable a Test Conditionally
+##### Enable or disable a test conditionally
 
 Sometimes, it makes sense to enable a test only when a certain condition is met. Consider the following test function:
 
@@ -44,7 +45,7 @@ Sometimes, it makes sense to enable a test only when a certain condition is met.
 func isCold() async throws { ... }
 ```
 
-If it’s currently winter, then presumably ice cream won’t be available for sale and this test will fail. It therefore makes sense to only enable it if it’s currently summer. You can conditionally enable a test with [`enabled(if:_:sourceLocation:)`](trait/enabled(if:_:sourcelocation:).md):
+If it’s currently winter, then presumably ice cream won’t be available for sale and this test will fail. It therefore makes sense to only enable it if it’s currently summer. You can conditionally enable a test with [`enabled(if:_:sourceLocation:)`](./trait/enabled%28if,_,sourcelocation%29.md):
 
 ```swift
 @Test("Ice cream is cold", .enabled(if: Season.current == .summer))
@@ -64,9 +65,9 @@ func isCold() async throws { ... }
 
 If a test is disabled because of a problem for which there is a corresponding bug report, you can use one of these functions to show the relationship between the test and the bug report:
 
-- [`bug(_:_:)`](trait/bug(_:_:).md)
-- [`bug(_:id:_:)`](trait/bug(_:id:_:)-10yf5.md)
-- [`bug(_:id:_:)`](trait/bug(_:id:_:)-3vtpl.md)
+- [`bug(_:_:)`](./trait/bug%28_,_%29.md)
+- [`bug(_:id:_:)`](./trait/bug%28_,id,_%29-10yf5.md)
+- [`bug(_:id:_:)`](./trait/bug%28_,id,_%29-3vtpl.md)
 
 For example, the following test cannot run due to bug number `"12345"`:
 
@@ -82,7 +83,7 @@ func isCold() async throws { ... }
 
 If a test has multiple conditions applied to it, they must *all* pass for it to run. Otherwise, the test notes the first condition to fail as the reason the test is skipped.
 
-##### Handle Complex Conditions
+##### Handle complex conditions
 
 If a condition is complex, consider factoring it out into a helper function to improve readability:
 
@@ -97,9 +98,9 @@ func allIngredientsAvailable(for food: Food) -> Bool { ... }
 func makeSundae() async throws { ... }
 ```
 
-##### End a Test After It Has Already Started
+##### End a test after it has already started
 
-If a test is running and you determine it cannot complete and should end early without failing, use [`cancel(_:sourceLocation:)`](test/cancel(_:sourcelocation:).md) to cancel the test:
+If a test is running and you determine it cannot complete and should end early without failing, use [`cancel(_:sourceLocation:)`](./test/cancel%28_,sourcelocation%29.md) to cancel the test:
 
 ```swift
 @Test("Can make sundaes")
@@ -113,19 +114,20 @@ func makeSundae() throws {
 
 ## See Also
 
-- [Limiting the running time of tests](limitingexecutiontime.md)
+### Customizing runtime behaviors
+- [Limiting the running time of tests](./limitingexecutiontime.md)
   Set limits on how long a test can run for until it fails.
-- [static func enabled(if: @autoclosure () throws -> Bool, Comment?, sourceLocation: SourceLocation) -> Self](trait/enabled(if:_:sourcelocation:).md)
+- [static func enabled(if: @autoclosure () throws -> Bool, Comment?, sourceLocation: SourceLocation) -> Self](./trait/enabled%28if,_,sourcelocation%29.md)
   Constructs a condition trait that disables a test if it returns `false`.
-- [static func enabled(Comment?, sourceLocation: SourceLocation, () async throws -> Bool) -> Self](trait/enabled(_:sourcelocation:_:).md)
+- [static func enabled(Comment?, sourceLocation: SourceLocation, () async throws -> Bool) -> Self](./trait/enabled%28_,sourcelocation,_%29.md)
   Constructs a condition trait that disables a test if it returns `false`.
-- [static func disabled(Comment?, sourceLocation: SourceLocation) -> Self](trait/disabled(_:sourcelocation:).md)
+- [static func disabled(Comment?, sourceLocation: SourceLocation) -> Self](./trait/disabled%28_,sourcelocation%29.md)
   Constructs a condition trait that disables a test unconditionally.
-- [static func disabled(if: @autoclosure () throws -> Bool, Comment?, sourceLocation: SourceLocation) -> Self](trait/disabled(if:_:sourcelocation:).md)
+- [static func disabled(if: @autoclosure () throws -> Bool, Comment?, sourceLocation: SourceLocation) -> Self](./trait/disabled%28if,_,sourcelocation%29.md)
   Constructs a condition trait that disables a test if its value is true.
-- [static func disabled(Comment?, sourceLocation: SourceLocation, () async throws -> Bool) -> Self](trait/disabled(_:sourcelocation:_:).md)
+- [static func disabled(Comment?, sourceLocation: SourceLocation, () async throws -> Bool) -> Self](./trait/disabled%28_,sourcelocation,_%29.md)
   Constructs a condition trait that disables a test if its value is true.
-- [static func timeLimit(TimeLimitTrait.Duration) -> Self](trait/timelimit(_:).md)
+- [static func timeLimit(TimeLimitTrait.Duration) -> Self](./trait/timelimit%28_%29.md)
   Construct a time limit trait that causes a test to time out if it runs for too long.
 
 

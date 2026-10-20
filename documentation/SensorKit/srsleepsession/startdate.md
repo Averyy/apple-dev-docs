@@ -1,7 +1,8 @@
 # startDate
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var startDate: Date { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSDate * startDate;
 ```
 
 #### Discussion

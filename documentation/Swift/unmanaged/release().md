@@ -1,7 +1,8 @@
 # release()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs an unbalanced release of the object.
 

@@ -1,16 +1,17 @@
 # loadAsync(contentsOf:withName:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Asynchronously loads a texture resource from a URL.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 18.0 (renamed: init(contentsOf:withName:))
+- iPadOS 13.0+ - Deprecated in 18.0 (renamed: init(contentsOf:withName:))
+- Mac Catalyst 13.0+ - Deprecated in 18.0 (renamed: init(contentsOf:withName:))
+- macOS 10.15+ - Deprecated in 15.0 (renamed: init(contentsOf:withName:))
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: init(contentsOf:withName:))
 
 ## Declaration
 
@@ -34,25 +35,26 @@ RealityKit uses the resource name to distinguish resources locally, and to match
 
 ## See Also
 
-- [convenience init(named: String, in: Bundle?) async throws](textureresource/init(named:in:).md)
+### Loading a texture
+- [convenience init(named: String, in: Bundle?) async throws](./init%28named,in%29.md)
   Asynchronously loads a texture resource from a bundle.
-- [convenience init(named: String, in: Bundle?, options: TextureResource.CreateOptions) async throws](textureresource/init(named:in:options:).md)
+- [convenience init(named: String, in: Bundle?, options: TextureResource.CreateOptions) async throws](./init%28named,in,options%29.md)
   Asynchronously loads a texture resource from a bundle with options.
-- [convenience init(contentsOf: URL, withName: String?, options: TextureResource.CreateOptions) async throws](textureresource/init(contentsof:withname:options:).md)
+- [convenience init(contentsOf: URL, withName: String?, options: TextureResource.CreateOptions) async throws](./init%28contentsof,withname,options%29.md)
   Asynchronously creates a texture resource from a file URL with creation options.
-- [convenience init(contentsOf: URL, withName: String?) async throws](textureresource/init(contentsof:withname:).md)
+- [convenience init(contentsOf: URL, withName: String?) async throws](./init%28contentsof,withname%29.md)
   Asynchronously creates a texture resource from a file URL.
-- [static func load(named: String, in: Bundle?) throws -> TextureResource](textureresource/load(named:in:).md)
+- [static func load(named: String, in: Bundle?) throws -> TextureResource](./load%28named,in%29.md)
   Returns a texture resource by synchronously loading it from a bundle.
-- [static func load(named: String, in: Bundle?, options: TextureResource.CreateOptions) throws -> TextureResource](textureresource/load(named:in:options:).md)
+- [static func load(named: String, in: Bundle?, options: TextureResource.CreateOptions) throws -> TextureResource](./load%28named,in,options%29.md)
   Returns a texture resource by synchronously loading it from a bundle with options.
-- [static func load(contentsOf: URL, withName: String?, options: TextureResource.CreateOptions) throws -> TextureResource](textureresource/load(contentsof:withname:options:).md)
+- [static func load(contentsOf: URL, withName: String?, options: TextureResource.CreateOptions) throws -> TextureResource](./load%28contentsof,withname,options%29.md)
   Synchronously loads a texture resource from a URL with options.
-- [static func load(contentsOf: URL, withName: String?) throws -> TextureResource](textureresource/load(contentsof:withname:).md)
+- [static func load(contentsOf: URL, withName: String?) throws -> TextureResource](./load%28contentsof,withname%29.md)
   Synchronously loads a texture resource from a URL.
-- [static func loadAsync(named: String, in: Bundle?) -> LoadRequest<TextureResource>](textureresource/loadasync(named:in:).md)
+- [static func loadAsync(named: String, in: Bundle?) -> LoadRequest<TextureResource>](./loadasync%28named,in%29.md)
   Returns a load request that creates a texture resource by asynchronously loading it from a bundle.
-- [static func loadAsync(named: String, in: Bundle?, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](textureresource/loadasync(named:in:options:).md)
+- [static func loadAsync(named: String, in: Bundle?, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](./loadasync%28named,in,options%29.md)
   Returns a load request that creates a texture resource by asynchronously loading it from a bundle with options.
 
 

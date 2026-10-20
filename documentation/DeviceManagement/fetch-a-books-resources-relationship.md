@@ -1,7 +1,8 @@
 # Fetch a books resource's relationship
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 **Availability**:
 - VPP License Management 2.2+
@@ -12,18 +13,33 @@
 
 ## Parameters
 
-- `additionalPlatforms` ([string])
+### Path Parameters
+
+- `id` (string) *(required)*
+- `relationship` (string) *(required)*: **Allowed Values**: `genres`
+- `storefront` (string) *(required)*
+
+### Query Parameters
+
+- `additionalPlatforms` ([string]): **Allowed Values**: `appletv`, `ipad`, `iphone`, `mac`, `realityDevice`, `web`
 - `extend` ([string])
 - `include` ([string])
 - `l` (string)
 - `limit` (integer)
-- `platform` (string) *(required)*
+- `platform` (string) *(required)*: **Allowed Values**: `appletv`, `ipad`, `iphone`, `mac`, `realityDevice`, `web`
 - `relate` ([string])
+
+## Responses
+
+- `200` OK (`RelationshipResponse`, `application/json`)
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`)
 
 ## See Also
 
-- [Fetch a apps resource's relationship](fetch-a-apps-resource's-relationship.md)
-- [object RelationshipResponse](relationshipresponse.md)
+### Fetching relationships
+- [Fetch a apps resource's relationship](./fetch-a-apps-resources-relationship.md)
+- [object RelationshipResponse](./relationshipresponse.md)
 
 
 ---

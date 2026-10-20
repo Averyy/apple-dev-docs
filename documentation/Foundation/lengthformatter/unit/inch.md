@@ -1,7 +1,8 @@
 # LengthFormatter.Unit.inch
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The inch unit.
 
@@ -20,21 +21,26 @@ The inch unit.
 case inch
 ```
 
+```c
+NSLengthFormatterUnitInch
+```
+
 ## See Also
 
-- [LengthFormatter.Unit.millimeter](lengthformatter/unit/millimeter.md)
+### Constants
+- [LengthFormatter.Unit.millimeter](./millimeter.md)
   The millimeter unit.
-- [LengthFormatter.Unit.centimeter](lengthformatter/unit/centimeter.md)
+- [LengthFormatter.Unit.centimeter](./centimeter.md)
   The centimeter unit.
-- [LengthFormatter.Unit.meter](lengthformatter/unit/meter.md)
+- [LengthFormatter.Unit.meter](./meter.md)
   The meter unit.
-- [LengthFormatter.Unit.kilometer](lengthformatter/unit/kilometer.md)
+- [LengthFormatter.Unit.kilometer](./kilometer.md)
   The kilometer unit.
-- [LengthFormatter.Unit.foot](lengthformatter/unit/foot.md)
+- [LengthFormatter.Unit.foot](./foot.md)
   The foot unit.
-- [LengthFormatter.Unit.yard](lengthformatter/unit/yard.md)
+- [LengthFormatter.Unit.yard](./yard.md)
   The yard unit.
-- [LengthFormatter.Unit.mile](lengthformatter/unit/mile.md)
+- [LengthFormatter.Unit.mile](./mile.md)
   The mile unit.
 
 

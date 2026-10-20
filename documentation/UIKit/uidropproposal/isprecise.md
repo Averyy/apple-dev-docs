@@ -1,7 +1,8 @@
 # isPrecise
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that proposes that the drop interaction define the drop location precisely, such as at a specific point within existing text.
 
@@ -17,9 +18,14 @@ A Boolean value that proposes that the drop interaction define the drop location
 var isPrecise: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isPrecise) BOOL precise;
+```
+
 ## See Also
 
-- [var prefersFullSizePreview: Bool](uidropproposal/prefersfullsizepreview.md)
+### Configuring a drop proposal
+- [var prefersFullSizePreview: Bool](./prefersfullsizepreview.md)
   A Boolean value that indicates that the drag item preview should be shown at its full, original size.
 
 

@@ -1,7 +1,8 @@
 # ninit_nterm
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Contains both the number of pointers in the module initialization (the low 16 bits) and the number of pointers in the module termination section (the high 16 bits) for this module.
 
@@ -10,7 +11,7 @@ Contains both the number of pointers in the module initialization (the low 16 bi
 
 ## Declaration
 
-```swift
+```c
 uint32_t ninit_nterm;
 ```
 

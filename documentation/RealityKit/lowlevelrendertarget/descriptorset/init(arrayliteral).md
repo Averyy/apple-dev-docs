@@ -1,7 +1,8 @@
 # init(arrayLiteral:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a descriptor set from an array literal of render target descriptors.
 

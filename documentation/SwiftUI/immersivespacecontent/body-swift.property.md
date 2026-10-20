@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -17,7 +18,8 @@
 
 ## See Also
 
-- [associatedtype Body : ImmersiveSpaceContent](immersivespacecontent/body-swift.associatedtype.md)
+### Creating immersive space content
+- [associatedtype Body : ImmersiveSpaceContent](./body-swift.associatedtype.md)
 
 
 ---

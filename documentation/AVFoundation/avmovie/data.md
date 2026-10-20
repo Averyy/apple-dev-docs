@@ -1,7 +1,8 @@
 # data
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A data object that contains the movie file’s data.
 
@@ -19,13 +20,18 @@ A data object that contains the movie file’s data.
 var data: Data? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSData * data;
+```
+
 #### Discussion
 
 The value is `nil` if you didn’t initialize the movie with data.
 
 ## See Also
 
-- [var url: URL?](avmovie/url.md)
+### Accessing movie information
+- [var url: URL?](./url.md)
   A URL to a QuickTime or ISO base media file.
 
 

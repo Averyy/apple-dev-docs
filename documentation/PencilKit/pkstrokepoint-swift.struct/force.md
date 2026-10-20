@@ -1,7 +1,8 @@
 # force
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of force applied by the touch.
 
@@ -24,9 +25,10 @@ This is a value predetermined by the system and isn’t user specific. A value o
 
 ## See Also
 
-- [var altitude: CGFloat](pkstrokepoint-swift.struct/altitude.md)
+### Getting the point’s touch data
+- [var altitude: CGFloat](./altitude.md)
   The altitude of this point in radians.
-- [var azimuth: CGFloat](pkstrokepoint-swift.struct/azimuth.md)
+- [var azimuth: CGFloat](./azimuth.md)
   The azimuth of this point in radians.
 
 

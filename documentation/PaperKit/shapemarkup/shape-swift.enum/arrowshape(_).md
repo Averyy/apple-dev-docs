@@ -1,7 +1,8 @@
 # ShapeMarkup.Shape.arrowShape(_:)
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An arrow shape pointing in a specific direction.
 

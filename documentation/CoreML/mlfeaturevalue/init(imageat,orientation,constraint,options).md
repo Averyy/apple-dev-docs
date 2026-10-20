@@ -1,7 +1,8 @@
 # init(imageAt:orientation:constraint:options:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Construct image feature value from an image on disk using a model specified image constraint. The passed in orientation supersedes any in the file
 
@@ -18,6 +19,10 @@ Construct image feature value from an image on disk using a model specified imag
 
 ```swift
 convenience init(imageAt url: URL, orientation: CGImagePropertyOrientation, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]? = nil) throws
+```
+
+```objc
++ (instancetype) featureValueWithImageAtURL:(NSURL *) url orientation:(CGImagePropertyOrientation) orientation constraint:(MLImageConstraint *) constraint options:(NSDictionary<NSString *,id> *) options error:(NSError **) error;
 ```
 
 

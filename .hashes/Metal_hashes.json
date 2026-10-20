@@ -1971,9 +1971,8 @@
       "hash": "04269d833428ed2b4910cd32899a21623ea75c689043a2b1bb57bfc6f63f1ab7"
     },
     "https://developer.apple.com/documentation/metal/mtl4counterheap/invalidatecounterrange:": {
-      "etag": "W/\"c7e6179d5b4038a336aab33ccd01fb4c\"",
       "file_path": "documentation/Metal/mtl4counterheap/invalidatecounterrange_.md",
-      "hash": "6c58be0fd1830d5c2100f82f5b48471ddc5ee0913e68e3802ac1f2fecc7da7ea"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/metal/mtl4counterheap/label": {
       "etag": "\"1fc8-65d55e33176a6-df\"",
@@ -1986,9 +1985,8 @@
       "hash": "f607327afeb0b68a85ae3d8be859b486e418541a896a9464478673ffb99478d7"
     },
     "https://developer.apple.com/documentation/metal/mtl4counterheap/resolvecounterrange:": {
-      "etag": "W/\"6582e23e0bae4a3e0762a3225e2adbe9\"",
       "file_path": "documentation/Metal/mtl4counterheap/resolvecounterrange_.md",
-      "hash": "1801ef1e5c71791826d792a29b8ba2387e18513ee5a18134a5a19aec37511674"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/metal/mtl4counterheap/type": {
       "etag": "\"1f17-65d55e33176a6-df\"",
@@ -5681,9 +5679,8 @@
       "hash": "8be3ced4634c4abea7e830601e02653e61efd9f794467e375d0c5d4c50895f7e"
     },
     "https://developer.apple.com/documentation/metal/mtlbuffer/didmodifyrange:": {
-      "etag": "W/\"584aa18babd07d84d8b9bedcfb8b88a0\"",
       "file_path": "documentation/Metal/mtlbuffer/didmodifyrange_.md",
-      "hash": "1112cee8c1062fc1edf22a81911cedf447c47f09622e20e931db92e65411c0c1"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/metal/mtlbuffer/gpuaddress": {
       "etag": "\"1d73-65d55e33176a6-df\"",
@@ -7646,9 +7643,8 @@
       "hash": "f06e448370525d9161e857cd11881e321b24fdad370b75213ca5cff6a9c5fb95"
     },
     "https://developer.apple.com/documentation/metal/mtlcountersamplebuffer/resolvecounterrange:": {
-      "etag": "W/\"39f41b0d1ef15a6fe9e433f9cb9ba65d\"",
       "file_path": "documentation/Metal/mtlcountersamplebuffer/resolvecounterrange_.md",
-      "hash": "c6943231139afa7b2c49a8bb3170cbacd05d2f7fd9c8f8b7c38aa63b7df5a322"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/metal/mtlcountersamplebuffer/samplecount": {
       "etag": "\"28fb-65d55e34a9cc6-df\"",
@@ -11396,7 +11392,7 @@
       "hash": "08a55d8a069059ea9f123245468f44fd50508f9afa895adafd7303859de65d02"
     },
     "https://developer.apple.com/documentation/metal/mtlintersectionfunctiontable/setopaquecurveintersectionfunction(signature:index:)": {
-      "etag": "\"2ccc-65d55e3272c99\"",
+      "etag": "\"2ccc-65d55e3272c99-df\"",
       "file_path": "documentation/Metal/mtlintersectionfunctiontable/setopaquecurveintersectionfunction(signature,index).md",
       "hash": "daa632d7e2463c981feed8eea27af8f6409d409b7528d497003971a060bf1769"
     },
@@ -11676,9 +11672,8 @@
       "hash": "77db6580783536b65541973a706e4f6ff08a42f2281410cba21125b1c054bc71"
     },
     "https://developer.apple.com/documentation/metal/mtliocreatecompressioncontext": {
-      "etag": "W/\"3180849cdbbee32c49389c31f74087b5\"",
       "file_path": "documentation/Metal/mtliocreatecompressioncontext.md",
-      "hash": "e670c40668ae8d431e57cf89edcff32f6a2f335a9558c30d4baa77133de73357"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/metal/mtliocreatecompressioncontext(_:_:_:)": {
       "etag": "\"3ad4-65d55e3586421-df\"",
@@ -21351,9 +21346,8 @@
       "hash": "04269d833428ed2b4910cd32899a21623ea75c689043a2b1bb57bfc6f63f1ab7"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4counterheap/invalidatecounterrange:.json": {
-      "etag": "W/\"c7e6179d5b4038a336aab33ccd01fb4c\"",
       "file_path": "documentation/Metal/mtl4counterheap/invalidatecounterrange_.md",
-      "hash": "6c58be0fd1830d5c2100f82f5b48471ddc5ee0913e68e3802ac1f2fecc7da7ea"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4counterheap/label.json": {
       "etag": "\"1fc8-65d55e33176a6-df\"",
@@ -21366,9 +21360,8 @@
       "hash": "f607327afeb0b68a85ae3d8be859b486e418541a896a9464478673ffb99478d7"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4counterheap/resolvecounterrange:.json": {
-      "etag": "W/\"6582e23e0bae4a3e0762a3225e2adbe9\"",
       "file_path": "documentation/Metal/mtl4counterheap/resolvecounterrange_.md",
-      "hash": "1801ef1e5c71791826d792a29b8ba2387e18513ee5a18134a5a19aec37511674"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtl4counterheap/type.json": {
       "etag": "\"1f17-65d55e33176a6-df\"",
@@ -25061,9 +25054,8 @@
       "hash": "8be3ced4634c4abea7e830601e02653e61efd9f794467e375d0c5d4c50895f7e"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlbuffer/didmodifyrange:.json": {
-      "etag": "W/\"584aa18babd07d84d8b9bedcfb8b88a0\"",
       "file_path": "documentation/Metal/mtlbuffer/didmodifyrange_.md",
-      "hash": "1112cee8c1062fc1edf22a81911cedf447c47f09622e20e931db92e65411c0c1"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlbuffer/gpuaddress.json": {
       "etag": "\"1d73-65d55e33176a6-df\"",
@@ -27026,9 +27018,8 @@
       "hash": "f06e448370525d9161e857cd11881e321b24fdad370b75213ca5cff6a9c5fb95"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcountersamplebuffer/resolvecounterrange:.json": {
-      "etag": "W/\"39f41b0d1ef15a6fe9e433f9cb9ba65d\"",
       "file_path": "documentation/Metal/mtlcountersamplebuffer/resolvecounterrange_.md",
-      "hash": "c6943231139afa7b2c49a8bb3170cbacd05d2f7fd9c8f8b7c38aa63b7df5a322"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlcountersamplebuffer/samplecount.json": {
       "etag": "\"28fb-65d55e34a9cc6-df\"",
@@ -30780,7 +30771,7 @@
       "hash": "08a55d8a069059ea9f123245468f44fd50508f9afa895adafd7303859de65d02"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlintersectionfunctiontable/setopaquecurveintersectionfunction(signature:index:).json": {
-      "etag": "\"2ccc-65d55e3272c99\"",
+      "etag": "\"2ccc-65d55e3272c99-df\"",
       "file_path": "documentation/Metal/mtlintersectionfunctiontable/setopaquecurveintersectionfunction(signature,index).md",
       "hash": "daa632d7e2463c981feed8eea27af8f6409d409b7528d497003971a060bf1769"
     },
@@ -31065,9 +31056,8 @@
       "hash": "9491fff4c7743027508238f670cab683cc2107c917034509d27d8c631e50d88c"
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtliocreatecompressioncontext.json": {
-      "etag": "W/\"3180849cdbbee32c49389c31f74087b5\"",
       "file_path": "documentation/Metal/mtliocreatecompressioncontext.md",
-      "hash": "e670c40668ae8d431e57cf89edcff32f6a2f335a9558c30d4baa77133de73357"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/metal/mtlioerror-swift.struct.json": {
       "etag": "\"5314-65d55e3586421-df\"",
@@ -38766,6 +38756,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 7753
   }
 }

@@ -1,17 +1,22 @@
 # webPlugInInitialize()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the plug-in.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func webPlugInInitialize()
+```
+
+```objc
+- (void) webPlugInInitialize;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ Tells the plug-in to perform one-time initialization. This method must be called
 
 ## See Also
 
-- [func webPlugInDestroy()](nsobject-swift.class/webplugindestroy.md)
+### Controlling the Plug-in
+- [func webPlugInDestroy()](./webplugindestroy%28%29.md)
   Prepares the plug-in for deallocation.
-- [func webPlugInStart()](nsobject-swift.class/webpluginstart.md)
+- [func webPlugInStart()](./webpluginstart%28%29.md)
   Tells the plug-in to start normal operation.
-- [func webPlugInStop()](nsobject-swift.class/webpluginstop.md)
+- [func webPlugInStop()](./webpluginstop%28%29.md)
   Tells the plug-in to stop normal operation.
 
 

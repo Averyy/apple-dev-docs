@@ -1,7 +1,8 @@
 # BetaAppReviewSubmission.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Beta App Review Submissions resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a Beta App Review Submissions resource.
 
 ## Declaration
 
-```swift
+```
 object BetaAppReviewSubmission.Attributes
 ```
 
@@ -21,9 +22,11 @@ object BetaAppReviewSubmission.Attributes
 
 ## See Also
 
-- [Beta App Review Submissions](beta-app-review-submissions.md)
+### Related Documentation
+- [Beta App Review Submissions](../beta-app-review-submissions.md)
   The submissions of builds for beta app review, including the status of submissions.
-- [object BetaAppReviewSubmission.Relationships](betaappreviewsubmission/relationships-data.dictionary.md)
+### Objects
+- [object BetaAppReviewSubmission.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

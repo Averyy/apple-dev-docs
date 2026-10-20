@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an option key using its string name.
 

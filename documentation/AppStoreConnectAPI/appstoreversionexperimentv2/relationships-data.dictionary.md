@@ -1,7 +1,8 @@
 # AppStoreVersionExperimentV2.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,17 +11,17 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperimentV2.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionExperimentV2.Relationships.App](appstoreversionexperimentv2/relationships-data.dictionary/app-data.dictionary.md)
-- [object AppStoreVersionExperimentV2.Relationships.AppStoreVersionExperimentTreatments](appstoreversionexperimentv2/relationships-data.dictionary/appstoreversionexperimenttreatments-data.dictionary.md)
-- [object AppStoreVersionExperimentV2.Relationships.ControlVersions](appstoreversionexperimentv2/relationships-data.dictionary/controlversions-data.dictionary.md)
-- [object AppStoreVersionExperimentV2.Relationships.LatestControlVersion](appstoreversionexperimentv2/relationships-data.dictionary/latestcontrolversion-data.dictionary.md)
+- [object AppStoreVersionExperimentV2.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
+- [object AppStoreVersionExperimentV2.Relationships.AppStoreVersionExperimentTreatments](./relationships-data.dictionary/appstoreversionexperimenttreatments-data.dictionary.md)
+- [object AppStoreVersionExperimentV2.Relationships.ControlVersions](./relationships-data.dictionary/controlversions-data.dictionary.md)
+- [object AppStoreVersionExperimentV2.Relationships.LatestControlVersion](./relationships-data.dictionary/latestcontrolversion-data.dictionary.md)
 
 ## Properties
 
@@ -31,7 +32,8 @@ object AppStoreVersionExperimentV2.Relationships
 
 ## See Also
 
-- [object AppStoreVersionExperimentV2.Attributes](appstoreversionexperimentv2/attributes-data.dictionary.md)
+### Objects
+- [object AppStoreVersionExperimentV2.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an app store version experiment v2 resource.
 
 

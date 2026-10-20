@@ -1,7 +1,8 @@
 # intersects(sphereOrigin:sphereRadius:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func intersects(sphereOrigin: Point3DFloat, sphereRadius: Float) -> Bool
+```
+
+```c
+static bool SPRay3DFloatIntersectsSphere(SPRay3DFloat ray, SPPoint3DFloat sphereOrigin, float sphereRadius);
 ```
 
 #### Return Value

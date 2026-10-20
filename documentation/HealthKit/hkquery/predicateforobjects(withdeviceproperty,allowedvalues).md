@@ -1,7 +1,8 @@
 # predicateForObjects(withDeviceProperty:allowedValues:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a predicate that matches all objects created by devices with the specified properties.
 
@@ -17,6 +18,10 @@ Returns a predicate that matches all objects created by devices with the specifi
 
 ```swift
 class func predicateForObjects(withDeviceProperty key: String, allowedValues: Set<String>) -> NSPredicate
+```
+
+```objc
++ (NSPredicate *) predicateForObjectsWithDeviceProperty:(NSString *) key allowedValues:(NSSet<NSString *> *) allowedValues;
 ```
 
 #### Return Value
@@ -49,44 +54,45 @@ NSPredicate *fromDevices = [HKQuery predicateForObjectsWithDeviceProperty:HKDevi
 ## Topics
 
 ### Valid Device Property Keys
-- [let HKDevicePropertyKeyName: String](hkdevicepropertykeyname.md)
+- [let HKDevicePropertyKeyName: String](../hkdevicepropertykeyname.md)
   The device’s name.
-- [let HKDevicePropertyKeyManufacturer: String](hkdevicepropertykeymanufacturer.md)
+- [let HKDevicePropertyKeyManufacturer: String](../hkdevicepropertykeymanufacturer.md)
   The device’s manufacturer.
-- [let HKDevicePropertyKeyModel: String](hkdevicepropertykeymodel.md)
+- [let HKDevicePropertyKeyModel: String](../hkdevicepropertykeymodel.md)
   The device’s model.
-- [let HKDevicePropertyKeyHardwareVersion: String](hkdevicepropertykeyhardwareversion.md)
+- [let HKDevicePropertyKeyHardwareVersion: String](../hkdevicepropertykeyhardwareversion.md)
   The device’s hardware version.
-- [let HKDevicePropertyKeyFirmwareVersion: String](hkdevicepropertykeyfirmwareversion.md)
+- [let HKDevicePropertyKeyFirmwareVersion: String](../hkdevicepropertykeyfirmwareversion.md)
   The device’s firmware version.
-- [let HKDevicePropertyKeySoftwareVersion: String](hkdevicepropertykeysoftwareversion.md)
+- [let HKDevicePropertyKeySoftwareVersion: String](../hkdevicepropertykeysoftwareversion.md)
   The device’s software version.
-- [let HKDevicePropertyKeyLocalIdentifier: String](hkdevicepropertykeylocalidentifier.md)
-  A unique identifier for the device on the hardware running the app. For more information, see [`localIdentifier`](hkdevice/localidentifier.md).
-- [let HKDevicePropertyKeyUDIDeviceIdentifier: String](hkdevicepropertykeyudideviceidentifier.md)
+- [let HKDevicePropertyKeyLocalIdentifier: String](../hkdevicepropertykeylocalidentifier.md)
+  A unique identifier for the device on the hardware running the app. For more information, see [`localIdentifier`](../hkdevice/localidentifier.md).
+- [let HKDevicePropertyKeyUDIDeviceIdentifier: String](../hkdevicepropertykeyudideviceidentifier.md)
   The device’s UDI Device Identifier.
 
 ## See Also
 
-- [class func predicateForObject(with: UUID) -> NSPredicate](hkquery/predicateforobject(with:).md)
+### Creating object predicates
+- [class func predicateForObject(with: UUID) -> NSPredicate](./predicateforobject%28with%29.md)
   Returns a predicate that matches an object with the specified universally unique identifier (UUID).
-- [class func predicateForObjects(with: Set<UUID>) -> NSPredicate](hkquery/predicateforobjects(with:).md)
+- [class func predicateForObjects(with: Set<UUID>) -> NSPredicate](./predicateforobjects%28with%29.md)
   Returns a predicate that matches the objects with the specified  universally unique identifiers (UUIDs).
-- [class func predicateForObjects(from: HKSource) -> NSPredicate](hkquery/predicateforobjects(from:)-7j3p2.md)
+- [class func predicateForObjects(from: HKSource) -> NSPredicate](./predicateforobjects%28from%29-7j3p2.md)
   Returns a predicate that matches all the objects that were created by the provided source.
-- [class func predicateForObjects(from: Set<HKSource>) -> NSPredicate](hkquery/predicateforobjects(from:)-89b4t.md)
+- [class func predicateForObjects(from: Set<HKSource>) -> NSPredicate](./predicateforobjects%28from%29-89b4t.md)
   Returns a predicate that matches all the objects that were created by any of the provided sources.
-- [class func predicateForObjects(from: Set<HKDevice>) -> NSPredicate](hkquery/predicateforobjects(from:)-9h87f.md)
+- [class func predicateForObjects(from: Set<HKDevice>) -> NSPredicate](./predicateforobjects%28from%29-9h87f.md)
   Returns a predicate that matches all the objects that were created by any of the provided devices.
-- [class func predicateForObjects(from: Set<HKSourceRevision>) -> NSPredicate](hkquery/predicateforobjects(from:)-1ar4g.md)
+- [class func predicateForObjects(from: Set<HKSourceRevision>) -> NSPredicate](./predicateforobjects%28from%29-1ar4g.md)
   Returns a predicate that matches all the objects that were created by any of the provided source revisions.
-- [class func predicateForObjects(withMetadataKey: String) -> NSPredicate](hkquery/predicateforobjects(withmetadatakey:).md)
+- [class func predicateForObjects(withMetadataKey: String) -> NSPredicate](./predicateforobjects%28withmetadatakey%29.md)
   Returns a predicate that matches any object whose metadata contains the provided key.
-- [class func predicateForObjects(withMetadataKey: String, allowedValues: [Any]) -> NSPredicate](hkquery/predicateforobjects(withmetadatakey:allowedvalues:).md)
+- [class func predicateForObjects(withMetadataKey: String, allowedValues: [Any]) -> NSPredicate](./predicateforobjects%28withmetadatakey,allowedvalues%29.md)
   Returns a predicate that matches objects based on the provided metadata key and an array of target values.
-- [class func predicateForObjects(withMetadataKey: String, operatorType: NSComparisonPredicate.Operator, value: Any) -> NSPredicate](hkquery/predicateforobjects(withmetadatakey:operatortype:value:).md)
+- [class func predicateForObjects(withMetadataKey: String, operatorType: NSComparisonPredicate.Operator, value: Any) -> NSPredicate](./predicateforobjects%28withmetadatakey,operatortype,value%29.md)
   Returns a predicate that matches objects based on the provided metadata key, value, and operator.
-- [class func predicateForObjectsWithNoCorrelation() -> NSPredicate](hkquery/predicateforobjectswithnocorrelation.md)
+- [class func predicateForObjectsWithNoCorrelation() -> NSPredicate](./predicateforobjectswithnocorrelation%28%29.md)
   Returns a predicate that matches all objects that are not associated with a HealthKit correlation.
 
 

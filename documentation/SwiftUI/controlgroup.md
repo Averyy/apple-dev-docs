@@ -1,7 +1,8 @@
 # ControlGroup
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container view that displays semantically-related controls in a visually-appropriate manner for the context
 
@@ -22,7 +23,7 @@ struct ControlGroup<Content> where Content : View
 
 ## Mentions
 
-- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+- [Populating SwiftUI menus with adaptive controls](./populating-swiftui-menus-with-adaptive-controls.md)
 
 #### Overview
 
@@ -46,32 +47,33 @@ ContentView()
 ## Topics
 
 ### Creating a control group
-- [init(content: () -> Content)](controlgroup/init(content:).md)
+- [init(content: () -> Content)](./controlgroup/init%28content%29.md)
   Creates a new ControlGroup with the specified children
-- [init<C, L>(content: () -> C, label: () -> L)](controlgroup/init(content:label:).md)
+- [init<C, L>(content: () -> C, label: () -> L)](./controlgroup/init%28content,label%29.md)
   Creates a new control group with the specified content and a label.
-- [init(_:content:)](controlgroup/init(_:content:).md)
+- [init(_:content:)](./controlgroup/init%28_,content%29.md)
   Creates a new control group with the specified content that generates its label from a string.
 ### Creating a control group with an image
-- [init(_:image:content:)](controlgroup/init(_:image:content:).md)
+- [init(_:image:content:)](./controlgroup/init%28_,image,content%29.md)
   Creates a new control group with the specified content that generates its label from a localized string resource and image resource.
-- [init(_:systemImage:content:)](controlgroup/init(_:systemimage:content:).md)
+- [init(_:systemImage:content:)](./controlgroup/init%28_,systemimage,content%29.md)
   Creates a new control group with the specified content that generates its label from a string and image name.
 ### Creating a configured control group
-- [init(ControlGroupStyleConfiguration)](controlgroup/init(_:).md)
+- [init(ControlGroupStyleConfiguration)](./controlgroup/init%28_%29.md)
   Creates a control group based on a style configuration.
 ### Supporting types
-- [struct LabeledControlGroupContent](labeledcontrolgroupcontent.md)
+- [struct LabeledControlGroupContent](./labeledcontrolgroupcontent.md)
   A view that represents the body of a control group with a specified label.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [func controlGroupStyle<S>(S) -> some View](view/controlgroupstyle(_:).md)
+### Presenting a group of controls
+- [func controlGroupStyle<S>(S) -> some View](./view/controlgroupstyle%28_%29.md)
   Sets the style for control groups within this view.
 
 

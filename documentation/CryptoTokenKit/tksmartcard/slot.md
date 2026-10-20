@@ -1,7 +1,8 @@
 # slot
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The slot in which the Smart Card is inserted.
 
@@ -20,13 +21,18 @@ The slot in which the Smart Card is inserted.
 var slot: TKSmartCardSlot { get }
 ```
 
+```objc
+@property (nonatomic, readonly) TKSmartCardSlot * slot;
+```
+
 ## See Also
 
-- [var isValid: Bool](tksmartcard/isvalid.md)
+### Configuring the Smart Card
+- [var isValid: Bool](./isvalid.md)
   Whether the Smart Card is valid and accessible from its slot.
-- [var isSensitive: Bool](tksmartcard/issensitive.md)
-  Whether sessions established for the Smart Card should be considered sensitive. [`false`](https://developer.apple.com/documentation/swift/false) by default.
-- [var context: Any?](tksmartcard/context.md)
+- [var isSensitive: Bool](./issensitive.md)
+  Whether sessions established for the Smart Card should be considered sensitive. [`false`](../../Swift/false.md) by default.
+- [var context: Any?](./context.md)
   User-specified information. This property is automatically set to `nil` if the Smart Card is removed or another `TKSmartCard` object begins a session.
 
 

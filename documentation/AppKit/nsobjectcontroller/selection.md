@@ -1,17 +1,22 @@
 # selection
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A proxy object representing the receiver’s selection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var selection: Any { get }
+```
+
+```objc
+@property (strong, readonly) id selection;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ This object is fully key-value coding compliant, but note that it is a proxy and
 
 ## See Also
 
-- [var selectedObjects: [Any]](nsobjectcontroller/selectedobjects.md)
+### Obtaining selections
+- [var selectedObjects: [Any]](./selectedobjects.md)
   An array of all objects to be affected by editing.
 
 

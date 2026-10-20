@@ -1,7 +1,8 @@
 # glyphColor
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The selected glyph color for the place.
 
@@ -10,7 +11,7 @@ The selected glyph color for the place.
 
 ## Declaration
 
-```swift
+```
 get glyphColor(): string;
 ```
 

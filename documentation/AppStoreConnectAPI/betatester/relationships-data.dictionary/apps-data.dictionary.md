@@ -1,7 +1,8 @@
 # BetaTester.Relationships.Apps
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object BetaTester.Relationships.Apps
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaTester.Relationships.Apps.Data](betatester/relationships-data.dictionary/apps-data.dictionary/data-data.dictionary.md)
+- [object BetaTester.Relationships.Apps.Data](./apps-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties
@@ -28,9 +29,10 @@ object BetaTester.Relationships.Apps
 
 ## See Also
 
-- [object BetaTester.Relationships.BetaGroups](betatester/relationships-data.dictionary/betagroups-data.dictionary.md)
+### Objects
+- [object BetaTester.Relationships.BetaGroups](./betagroups-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object BetaTester.Relationships.Builds](betatester/relationships-data.dictionary/builds-data.dictionary.md)
+- [object BetaTester.Relationships.Builds](./builds-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 

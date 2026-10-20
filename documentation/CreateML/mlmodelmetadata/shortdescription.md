@@ -1,7 +1,8 @@
 # shortDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A short text description of the model.
 
@@ -21,13 +22,14 @@ var shortDescription: String
 
 ## See Also
 
-- [var author: String](mlmodelmetadata/author.md)
+### Accessing metadata
+- [var author: String](./author.md)
   The author of the model.
-- [var license: String?](mlmodelmetadata/license.md)
+- [var license: String?](./license.md)
   The license governing the use of the model.
-- [var version: String](mlmodelmetadata/version.md)
+- [var version: String](./version.md)
   The model version.
-- [var additional: [String : String]?](mlmodelmetadata/additional.md)
+- [var additional: [String : String]?](./additional.md)
   A dictionary that encodes key value pairs to hold additional information about the model.
 
 

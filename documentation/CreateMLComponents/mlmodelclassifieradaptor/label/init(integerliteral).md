@@ -1,7 +1,8 @@
 # init(integerLiteral:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Label with an integer literal.
 
@@ -19,6 +20,8 @@ Creates a Label with an integer literal.
 ```swift
 init(integerLiteral value: Int)
 ```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
 
 
 ---

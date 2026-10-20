@@ -1,16 +1,19 @@
 # CampaignListResponse
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response details of campaign requests.
 
 **Availability**:
-- Search Ads 2.0+
+- Search Ads 2.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object CampaignListResponse
 ```
 
@@ -22,15 +25,16 @@ object CampaignListResponse
 
 ## See Also
 
-- [object Campaign](campaign.md)
+### Campaign Request and Response Objects
+- [object Campaign](./campaign.md)
   The response to a request to create and fetch campaigns.
-- [object CampaignResponse](campaignresponse.md)
+- [object CampaignResponse](./campaignresponse.md)
   A container for the campaign response body.
-- [object Campaign.CountryOrRegionServingStateReasons](campaign/countryorregionservingstatereasons-data.dictionary.md)
+- [object Campaign.CountryOrRegionServingStateReasons](./campaign/countryorregionservingstatereasons-data.dictionary.md)
   Reasons why a campaign can’t run.
-- [object CampaignUpdate](campaignupdate.md)
+- [object CampaignUpdate](./campaignupdate.md)
   The list of campaign fields that are updatable.
-- [object UpdateCampaignRequest](updatecampaignrequest.md)
+- [object UpdateCampaignRequest](./updatecampaignrequest.md)
   The payload properties to clear geotargeting from a campaign.
 
 

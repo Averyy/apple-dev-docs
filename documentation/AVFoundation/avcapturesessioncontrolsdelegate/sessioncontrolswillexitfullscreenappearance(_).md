@@ -2,6 +2,7 @@
 
 **Framework**: AVFoundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate when a capture session’s controls are about to exit a fullscreen appearance.
@@ -19,11 +20,15 @@ Tells the delegate when a capture session’s controls are about to exit a fulls
 func sessionControlsWillExitFullscreenAppearance(_ session: AVCaptureSession)
 ```
 
+```objc
+- (void) sessionControlsWillExitFullscreenAppearance:(AVCaptureSession *) session;
+```
+
 #### Discussion
 
 When your app receives this callback, it should resume showing portions of the interface it hid when controls entered a fullscreen appearance.
 
-The system calls this method before [`sessionControlsDidBecomeInactive(_:)`](avcapturesessioncontrolsdelegate/sessioncontrolsdidbecomeinactive(_:).md).
+The system calls this method before [`sessionControlsDidBecomeInactive(_:)`](./sessioncontrolsdidbecomeinactive%28_%29.md).
 
 ## Parameters
 
@@ -31,11 +36,12 @@ The system calls this method before [`sessionControlsDidBecomeInactive(_:)`](avc
 
 ## See Also
 
-- [func sessionControlsDidBecomeActive(AVCaptureSession)](avcapturesessioncontrolsdelegate/sessioncontrolsdidbecomeactive(_:).md)
+### Responding to control events
+- [func sessionControlsDidBecomeActive(AVCaptureSession)](./sessioncontrolsdidbecomeactive%28_%29.md)
   Tells the delegate when a capture session’s controls become active and available for interaction.
-- [func sessionControlsWillEnterFullscreenAppearance(AVCaptureSession)](avcapturesessioncontrolsdelegate/sessioncontrolswillenterfullscreenappearance(_:).md)
+- [func sessionControlsWillEnterFullscreenAppearance(AVCaptureSession)](./sessioncontrolswillenterfullscreenappearance%28_%29.md)
   Tells the delegate when a capture session’s controls are about to enter a fullscreen appearance.
-- [func sessionControlsDidBecomeInactive(AVCaptureSession)](avcapturesessioncontrolsdelegate/sessioncontrolsdidbecomeinactive(_:).md)
+- [func sessionControlsDidBecomeInactive(AVCaptureSession)](./sessioncontrolsdidbecomeinactive%28_%29.md)
   Tells the delegate when a capture session’s controls become inactive and unavailable for interaction.
 
 

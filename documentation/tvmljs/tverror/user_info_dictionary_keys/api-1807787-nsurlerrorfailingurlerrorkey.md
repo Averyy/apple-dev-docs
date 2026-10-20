@@ -3,7 +3,7 @@
 **Framework**: TVMLKit JS  
 **Kind**: clconst
 
-The corresponding value is an NSURL containing the URL which caused a load to fail. This key is only present in the [`NSURLErrorDomain`](https://developer.apple.com/documentation/foundation/nsurlerrordomain).
+The corresponding value is an NSURL containing the URL which caused a load to fail. This key is only present in the [`NSURLErrorDomain`](../../../Foundation/nsurlerrordomain.md).
 
 
 ---

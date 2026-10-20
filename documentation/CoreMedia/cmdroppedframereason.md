@@ -1,7 +1,8 @@
 # CMDroppedFrameReason
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -21,27 +22,27 @@ enum CMDroppedFrameReason
 ## Topics
 
 ### Enumeration Cases
-- [CMDroppedFrameReason.discontinuity](cmdroppedframereason/discontinuity.md)
+- [CMDroppedFrameReason.discontinuity](./cmdroppedframereason/discontinuity.md)
   An unknown number of frames were dropped.
-- [CMDroppedFrameReason.frameWasLate](cmdroppedframereason/framewaslate.md)
+- [CMDroppedFrameReason.frameWasLate](./cmdroppedframereason/framewaslate.md)
   The frame was dropped because it was late.
-- [CMDroppedFrameReason.outOfBuffers](cmdroppedframereason/outofbuffers.md)
+- [CMDroppedFrameReason.outOfBuffers](./cmdroppedframereason/outofbuffers.md)
   The frame was dropped because the module providing frames is out of buffers.
 ### Enumerations
-- [CMDroppedFrameReason.Info](cmdroppedframereason/info.md)
+- [CMDroppedFrameReason.Info](./cmdroppedframereason/info.md)
   Provides additional information regarding the dropped video frame.
 
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](../corevideo/cvattachmentvaluerepresentable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/cvattachmentvaluerepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,16 +1,17 @@
 # KernVersion0SubtableHeader
 
 **Framework**: Core Text  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,39 +19,44 @@
 struct KernVersion0SubtableHeader
 ```
 
+```c
+struct KernVersion0SubtableHeader;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](kernversion0subtableheader/init.md)
-- [init(version: UInt16, length: UInt16, stInfo: KernSubtableInfo, fsHeader: KernFormatSpecificHeader)](kernversion0subtableheader/init(version:length:stinfo:fsheader:).md)
+- [init()](./kernversion0subtableheader/init%28%29.md)
+- [init(version: UInt16, length: UInt16, stInfo: KernSubtableInfo, fsHeader: KernFormatSpecificHeader)](./kernversion0subtableheader/init%28version,length,stinfo,fsheader%29.md)
 ### Instance Properties
-- [var fsHeader: KernFormatSpecificHeader](kernversion0subtableheader/fsheader.md)
-- [var length: UInt16](kernversion0subtableheader/length.md)
-- [var stInfo: KernSubtableInfo](kernversion0subtableheader/stinfo.md)
-- [var version: UInt16](kernversion0subtableheader/version.md)
+- [var fsHeader: KernFormatSpecificHeader](./kernversion0subtableheader/fsheader.md)
+- [var length: UInt16](./kernversion0subtableheader/length.md)
+- [var stInfo: KernSubtableInfo](./kernversion0subtableheader/stinfo.md)
+- [var version: UInt16](./kernversion0subtableheader/version.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct AnchorPoint](anchorpoint.md)
-- [struct AnchorPointTable](anchorpointtable.md)
-- [struct AnkrTable](ankrtable.md)
-- [struct BslnFormat0Part](bslnformat0part.md)
-- [struct BslnFormat1Part](bslnformat1part.md)
-- [struct BslnFormat2Part](bslnformat2part.md)
-- [struct BslnFormat3Part](bslnformat3part.md)
-- [struct BslnFormatUnion](bslnformatunion.md)
-- [struct BslnTable](bslntable.md)
-- [struct FontVariation](fontvariation.md)
-- [struct JustDirectionTable](justdirectiontable.md)
-- [struct JustPCAction](justpcaction.md)
-- [struct JustPCActionSubrecord](justpcactionsubrecord.md)
-- [struct JustPCConditionalAddAction](justpcconditionaladdaction.md)
-- [struct JustPCDecompositionAction](justpcdecompositionaction.md)
+### Structures
+- [struct AnchorPoint](./anchorpoint.md)
+- [struct AnchorPointTable](./anchorpointtable.md)
+- [struct AnkrTable](./ankrtable.md)
+- [struct BslnFormat0Part](./bslnformat0part.md)
+- [struct BslnFormat1Part](./bslnformat1part.md)
+- [struct BslnFormat2Part](./bslnformat2part.md)
+- [struct BslnFormat3Part](./bslnformat3part.md)
+- [struct BslnFormatUnion](./bslnformatunion.md)
+- [struct BslnTable](./bslntable.md)
+- [struct FontVariation](./fontvariation.md)
+- [struct JustDirectionTable](./justdirectiontable.md)
+- [struct JustPCAction](./justpcaction.md)
+- [struct JustPCActionSubrecord](./justpcactionsubrecord.md)
+- [struct JustPCConditionalAddAction](./justpcconditionaladdaction.md)
+- [struct JustPCDecompositionAction](./justpcdecompositionaction.md)
 
 
 ---

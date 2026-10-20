@@ -1,7 +1,8 @@
 # anchor
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The anchor that caused a world-tracking error.
 
@@ -16,11 +17,12 @@ let anchor: WorldAnchor?
 
 ## See Also
 
-- [var code: WorldTrackingProvider.Error.Code](worldtrackingprovider/error/code-swift.property.md)
+### Inspecting world-tracking errors
+- [var code: WorldTrackingProvider.Error.Code](./code-swift.property.md)
   The error code.
-- [WorldTrackingProvider.Error.Code](worldtrackingprovider/error/code-swift.enum.md)
+- [WorldTrackingProvider.Error.Code](./code-swift.enum.md)
   The error codes for errors that world tracking providers throw.
-- [var errorDescription: String?](worldtrackingprovider/error/errordescription.md)
+- [var errorDescription: String?](./errordescription.md)
   A localized message that describes the error that occurred.
 
 

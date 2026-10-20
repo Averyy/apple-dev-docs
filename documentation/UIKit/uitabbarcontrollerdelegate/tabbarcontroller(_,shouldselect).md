@@ -1,7 +1,8 @@
 # tabBarController(_:shouldSelect:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether the specified view controller should be made active.
 
@@ -9,7 +10,7 @@ Asks the delegate whether the specified view controller should be made active.
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Asks the delegate whether the specified view controller should be made active.
 optional func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool
 ```
 
+```objc
+- (BOOL) tabBarController:(UITabBarController *) tabBarController shouldSelectViewController:(UIViewController *) viewController;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the view controller’s tab should be selected or [`false`](https://developer.apple.com/documentation/swift/false) if the current tab should remain active.
+[`true`](../../Swift/true.md) if the view controller’s tab should be selected or [`false`](../../Swift/false.md) if the current tab should remain active.
 
 #### Discussion
 
@@ -33,7 +38,8 @@ The tab bar controller calls this method in response to the user tapping a tab b
 
 ## See Also
 
-- [func tabBarController(UITabBarController, didSelect: UIViewController)](uitabbarcontrollerdelegate/tabbarcontroller(_:didselect:).md)
+### Managing tab bar selections
+- [func tabBarController(UITabBarController, didSelect: UIViewController)](./tabbarcontroller%28_,didselect%29.md)
   Tells the delegate that the user selected an item in the tab bar.
 
 

@@ -1,7 +1,8 @@
 # allowsExpansionToolTips
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether expansion tool tips are shown when the control is hovered over.
 
@@ -14,19 +15,24 @@ A Boolean value that indicates whether expansion tool tips are shown when the co
 var allowsExpansionToolTips: Bool { get set }
 ```
 
+```objc
+@property BOOL allowsExpansionToolTips;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the expansion tool tip will expand; [`false`](https://developer.apple.com/documentation/swift/false) means the tool tip won’t expand. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](../../Swift/true.md), the expansion tool tip will expand; [`false`](../../Swift/false.md) means the tool tip won’t expand. The default value is [`false`](../../Swift/false.md).
 
-Expansion tooltips are shown when the cell cannot show the full content and the user hovers the pointer over the control. This is controlled by the [`NSCell`](nscell.md) class method [`expansionFrame(withFrame:in:)`](nscell/expansionframe(withframe:in:).md) and is drawn by [`draw(withExpansionFrame:in:)`](nscell/draw(withexpansionframe:in:).md). This value is encoded along with the control.
+Expansion tooltips are shown when the cell cannot show the full content and the user hovers the pointer over the control. This is controlled by the [`NSCell`](../nscell.md) class method [`expansionFrame(withFrame:in:)`](../nscell/expansionframe%28withframe,in%29.md) and is drawn by [`draw(withExpansionFrame:in:)`](../nscell/draw%28withexpansionframe,in%29.md). This value is encoded along with the control.
 
-In general, it is recommended to turn this on for [`NSTextField`](nstextfield.md) instances in a view-based [`NSTableView`](nstableview.md).
+In general, it is recommended to turn this on for [`NSTextField`](../nstextfield.md) instances in a view-based [`NSTableView`](../nstableview.md).
 
 ## See Also
 
-- [func draw(withExpansionFrame: NSRect, in: NSView)](nscontrol/draw(withexpansionframe:in:).md)
+### Managing Expansion Tool Tips
+- [func draw(withExpansionFrame: NSRect, in: NSView)](./draw%28withexpansionframe,in%29.md)
   Performs custom expansion tool tip drawing.
-- [func expansionFrame(withFrame: NSRect) -> NSRect](nscontrol/expansionframe(withframe:).md)
+- [func expansionFrame(withFrame: NSRect) -> NSRect](./expansionframe%28withframe%29.md)
   The frame in which a tool tip can be displayed, if needed.
 
 

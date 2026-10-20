@@ -1,7 +1,8 @@
 # dataType
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type of the generated result values.
 
@@ -17,6 +18,10 @@ The data type of the generated result values.
 
 ```swift
 var dataType: MPSDataType { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSDataType dataType;
 ```
 
 #### Discussion

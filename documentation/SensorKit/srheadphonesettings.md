@@ -1,7 +1,8 @@
 # SRHeadphoneSettings
 
 **Framework**: SensorKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 27.0+
@@ -14,39 +15,43 @@
 class SRHeadphoneSettings
 ```
 
+```objc
+@interface SRHeadphoneSettings : NSObject
+```
+
 ## Topics
 
 ### Classes
-- [SRHeadphoneSettings.HearingAssistance](srheadphonesettings/hearingassistance-swift.class.md)
+- [SRHeadphoneSettings.HearingAssistance](./srheadphonesettings/hearingassistance-swift.class.md)
 ### Instance Properties
-- [var adaptiveAudioStrength: SRHeadphoneSettings.AdaptiveAudioStrength](srheadphonesettings/adaptiveaudiostrength-swift.property.md)
-- [var conversationAwarenessEnabled: SRHeadphoneSettings.SettingEnablement](srheadphonesettings/conversationawarenessenabled.md)
-- [var hearingAssistance: SRHeadphoneSettings.HearingAssistance?](srheadphonesettings/hearingassistance-swift.property.md)
-- [var listeningMode: SRHeadphoneSettings.ListeningMode](srheadphonesettings/listeningmode-swift.property.md)
-- [var personalizedSpatialAudioEnabled: SRHeadphoneSettings.SettingEnablement](srheadphonesettings/personalizedspatialaudioenabled.md)
-- [var personalizedVolumeEnabled: SRHeadphoneSettings.SettingEnablement](srheadphonesettings/personalizedvolumeenabled.md)
-- [var spatialAudioEnabled: SRHeadphoneSettings.SettingEnablement](srheadphonesettings/spatialaudioenabled.md)
+- [var adaptiveAudioStrength: SRHeadphoneSettings.AdaptiveAudioStrength](./srheadphonesettings/adaptiveaudiostrength-swift.property.md)
+- [var conversationAwarenessEnabled: SRHeadphoneSettings.SettingEnablement](./srheadphonesettings/conversationawarenessenabled.md)
+- [var hearingAssistance: SRHeadphoneSettings.HearingAssistance?](./srheadphonesettings/hearingassistance-swift.property.md)
+- [var listeningMode: SRHeadphoneSettings.ListeningMode](./srheadphonesettings/listeningmode-swift.property.md)
+- [var personalizedSpatialAudioEnabled: SRHeadphoneSettings.SettingEnablement](./srheadphonesettings/personalizedspatialaudioenabled.md)
+- [var personalizedVolumeEnabled: SRHeadphoneSettings.SettingEnablement](./srheadphonesettings/personalizedvolumeenabled.md)
+- [var spatialAudioEnabled: SRHeadphoneSettings.SettingEnablement](./srheadphonesettings/spatialaudioenabled.md)
 ### Enumerations
-- [SRHeadphoneSettings.AdaptiveAudioStrength](srheadphonesettings/adaptiveaudiostrength-swift.enum.md)
-- [SRHeadphoneSettings.ListeningMode](srheadphonesettings/listeningmode-swift.enum.md)
-- [SRHeadphoneSettings.SettingEnablement](srheadphonesettings/settingenablement.md)
+- [SRHeadphoneSettings.AdaptiveAudioStrength](./srheadphonesettings/adaptiveaudiostrength-swift.enum.md)
+- [SRHeadphoneSettings.ListeningMode](./srheadphonesettings/listeningmode-swift.enum.md)
+- [SRHeadphoneSettings.SettingEnablement](./srheadphonesettings/settingenablement.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

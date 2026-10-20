@@ -1,7 +1,8 @@
 # init(fontAttributes:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a font descriptor with the specified attributes.
 
@@ -9,7 +10,7 @@ Creates a font descriptor with the specified attributes.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -17,6 +18,10 @@ Creates a font descriptor with the specified attributes.
 
 ```swift
 init(fontAttributes attributes: [UIFontDescriptor.AttributeName : Any] = [:])
+```
+
+```objc
+- (instancetype) initWithFontAttributes:(NSDictionary<NSString *,id> *) attributes;
 ```
 
 #### Return Value
@@ -29,9 +34,10 @@ The new font descriptor.
 
 ## See Also
 
-- [convenience init()](uifontdescriptor/init.md)
+### Initializing a font descriptor
+- [convenience init()](./init%28%29.md)
   Creates a font descriptor.
-- [init?(coder: NSCoder)](uifontdescriptor/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a font descriptor from data in an unarchiver.
 
 

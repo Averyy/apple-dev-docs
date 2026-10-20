@@ -1,7 +1,8 @@
 # kSecPolicyKU_DataEncipherment
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 If true, the certificate’s key usage must allow it to be used for data encryption.
 
@@ -12,6 +13,10 @@ If true, the certificate’s key usage must allow it to be used for data encrypt
 
 ```swift
 let kSecPolicyKU_DataEncipherment: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyKU_DataEncipherment;
 ```
 
 

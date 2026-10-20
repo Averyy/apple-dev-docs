@@ -1,7 +1,8 @@
 # predicateForClinicalRecords(from:fhirResourceType:identifier:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a predicate for a specific FHIR resource.
 
@@ -18,9 +19,13 @@ Returns a predicate for a specific FHIR resource.
 class func predicateForClinicalRecords(from source: HKSource, fhirResourceType resourceType: HKFHIRResourceType, identifier: String) -> NSPredicate
 ```
 
+```objc
++ (NSPredicate *) predicateForClinicalRecordsFromSource:(HKSource *) source FHIRResourceType:(HKFHIRResourceType) resourceType identifier:(NSString *) identifier;
+```
+
 ## Mentions
 
-- [Accessing Health Records](accessing-health-records.md)
+- [Accessing Health Records](../accessing-health-records.md)
 
 #### Discussion
 
@@ -28,9 +33,10 @@ The FHIR resource identifier is only unique for a particular resource type from 
 
 ## See Also
 
-- [class func predicateForClinicalRecords(withFHIRResourceType: HKFHIRResourceType) -> NSPredicate](hkquery/predicateforclinicalrecords(withfhirresourcetype:).md)
+### Creating clinical record predicates
+- [class func predicateForClinicalRecords(withFHIRResourceType: HKFHIRResourceType) -> NSPredicate](./predicateforclinicalrecords%28withfhirresourcetype%29.md)
   Returns a predicate for a specific FHIR type.
-- [class func predicateForVerifiableClinicalRecords(withRelevantDateWithin: DateInterval) -> NSPredicate](hkquery/predicateforverifiableclinicalrecords(withrelevantdatewithin:).md)
+- [class func predicateForVerifiableClinicalRecords(withRelevantDateWithin: DateInterval) -> NSPredicate](./predicateforverifiableclinicalrecords%28withrelevantdatewithin%29.md)
   Returns a predicate that finds verifiable health records with a relevant date within the specified range.
 
 

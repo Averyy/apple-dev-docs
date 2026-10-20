@@ -1,7 +1,8 @@
 # PKPassType.any
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A nonspecific pass type.
 
@@ -19,13 +20,18 @@ A nonspecific pass type.
 case any
 ```
 
+```c
+PKPassTypeAny
+```
+
 ## See Also
 
-- [PKPassType.barcode](pkpasstype/barcode.md)
+### Pass types
+- [PKPassType.barcode](./barcode.md)
   A pass that represents a barcode.
-- [PKPassType.secureElement](pkpasstype/secureelement.md)
+- [PKPassType.secureElement](./secureelement.md)
   A pass that represents a credential that the device stores in the Secure Element.
-- [static var payment: PKPassType](pkpasstype/payment.md)
+- [static var payment: PKPassType](./payment.md)
   A pass that represents a credit or debit card
 
 

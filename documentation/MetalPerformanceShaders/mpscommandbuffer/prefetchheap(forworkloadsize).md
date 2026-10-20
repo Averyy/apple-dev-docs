@@ -1,7 +1,8 @@
 # prefetchHeap(forWorkloadSize:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func prefetchHeap(forWorkloadSize size: Int)
+```
+
+```objc
+- (void) prefetchHeapForWorkloadSize:(size_t) size;
 ```
 
 

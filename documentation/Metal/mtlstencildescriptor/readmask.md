@@ -1,7 +1,8 @@
 # readMask
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A bitmask that determines from which bits that stencil comparison tests can read.
 
@@ -10,7 +11,7 @@ A bitmask that determines from which bits that stencil comparison tests can read
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,23 @@ A bitmask that determines from which bits that stencil comparison tests can read
 var readMask: UInt32 { get set }
 ```
 
+```objc
+@property (nonatomic) uint32_t readMask;
+```
+
 #### Discussion
 
-The [`readMask`](mtlstencildescriptor/readmask.md) bits are used for logical AND operations to both the stored stencil value and the reference value.
+The [`readMask`](./readmask.md) bits are used for logical AND operations to both the stored stencil value and the reference value.
 
-The least significant bits of the read mask are used. The default value is all ones. A logical AND operation with the default [`readMask`](mtlstencildescriptor/readmask.md) does not change the value.
+The least significant bits of the read mask are used. The default value is all ones. A logical AND operation with the default [`readMask`](./readmask.md) does not change the value.
 
 ## See Also
 
-- [func setStencilReferenceValue(UInt32)](mtlrendercommandencoder/setstencilreferencevalue(_:).md)
+### Related Documentation
+- [func setStencilReferenceValue(UInt32)](../mtlrendercommandencoder/setstencilreferencevalue%28_%29.md)
   Configures the same comparison value for front- and back-facing primitives.
-- [var writeMask: UInt32](mtlstencildescriptor/writemask.md)
+### Configuring stencil bit mask properties
+- [var writeMask: UInt32](./writemask.md)
   A bitmask that determines to which bits that stencil operations can write.
 
 

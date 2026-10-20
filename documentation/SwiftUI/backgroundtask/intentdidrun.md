@@ -1,7 +1,8 @@
 # intentDidRun
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A background task used to update your app after a SiriKit intent runs.
 
@@ -16,7 +17,8 @@ static var intentDidRun: BackgroundTask<Void, Void> { get }
 
 ## See Also
 
-- [static var relevantShortcut: BackgroundTask<Void, Void>](backgroundtask/relevantshortcut.md)
+### Updating intents and shortcuts
+- [static var relevantShortcut: BackgroundTask<Void, Void>](./relevantshortcut.md)
   A background task used to periodically donate relevant Siri shortcuts.
 
 

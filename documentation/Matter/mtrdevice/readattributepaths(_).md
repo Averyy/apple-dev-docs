@@ -1,7 +1,8 @@
 # readAttributePaths(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Read the attributes identified by the provided attribute paths.  The paths can include wildcards.
 
@@ -18,6 +19,10 @@ Read the attributes identified by the provided attribute paths.  The paths can i
 
 ```swift
 func readAttributePaths(_ attributePaths: [MTRAttributeRequestPath]) -> [[String : Any]]
+```
+
+```objc
+- (NSArray<NSDictionary<NSString *,id> *> *) readAttributePaths:(NSArray<MTRAttributeRequestPath *> *) attributePaths;
 ```
 
 #### Return Value

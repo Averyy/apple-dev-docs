@@ -1,7 +1,8 @@
 # errSecCSOutdated
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The presented data is out of date.
 
@@ -13,6 +14,10 @@ The presented data is out of date.
 
 ```swift
 var errSecCSOutdated: OSStatus { get }
+```
+
+```c
+errSecCSOutdated
 ```
 
 

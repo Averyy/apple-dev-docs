@@ -1,7 +1,8 @@
 # MPSDataLayout
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options that define how buffer data is arranged.
 
@@ -19,31 +20,36 @@ Options that define how buffer data is arranged.
 enum MPSDataLayout
 ```
 
+```c
+enum MPSDataLayout : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPSDataLayout.featureChannelsxHeightxWidth](mpsdatalayout/featurechannelsxheightxwidth.md)
-- [MPSDataLayout.HeightxWidthxFeatureChannels](mpsdatalayout/heightxwidthxfeaturechannels.md)
+- [MPSDataLayout.featureChannelsxHeightxWidth](./mpsdatalayout/featurechannelsxheightxwidth.md)
+- [MPSDataLayout.HeightxWidthxFeatureChannels](./mpsdatalayout/heightxwidthxfeaturechannels.md)
 ### Initializers
-- [init?(rawValue: UInt)](mpsdatalayout/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mpsdatalayout/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func readBytes(UnsafeMutableRawPointer, dataLayout: MPSDataLayout, bytesPerRow: Int, region: MTLRegion, featureChannelInfo: MPSImageReadWriteParams, imageIndex: Int)](mpsimage/readbytes(_:datalayout:bytesperrow:region:featurechannelinfo:imageindex:).md)
-- [func readBytes(UnsafeMutableRawPointer, dataLayout: MPSDataLayout, imageIndex: Int)](mpsimage/readbytes(_:datalayout:imageindex:).md)
-- [func writeBytes(UnsafeRawPointer, dataLayout: MPSDataLayout, bytesPerRow: Int, region: MTLRegion, featureChannelInfo: MPSImageReadWriteParams, imageIndex: Int)](mpsimage/writebytes(_:datalayout:bytesperrow:region:featurechannelinfo:imageindex:).md)
-- [func writeBytes(UnsafeRawPointer, dataLayout: MPSDataLayout, imageIndex: Int)](mpsimage/writebytes(_:datalayout:imageindex:).md)
-- [struct MPSImageReadWriteParams](mpsimagereadwriteparams.md)
+### Methods to Read and Write Raw Data
+- [func readBytes(UnsafeMutableRawPointer, dataLayout: MPSDataLayout, bytesPerRow: Int, region: MTLRegion, featureChannelInfo: MPSImageReadWriteParams, imageIndex: Int)](./mpsimage/readbytes%28_,datalayout,bytesperrow,region,featurechannelinfo,imageindex%29.md)
+- [func readBytes(UnsafeMutableRawPointer, dataLayout: MPSDataLayout, imageIndex: Int)](./mpsimage/readbytes%28_,datalayout,imageindex%29.md)
+- [func writeBytes(UnsafeRawPointer, dataLayout: MPSDataLayout, bytesPerRow: Int, region: MTLRegion, featureChannelInfo: MPSImageReadWriteParams, imageIndex: Int)](./mpsimage/writebytes%28_,datalayout,bytesperrow,region,featurechannelinfo,imageindex%29.md)
+- [func writeBytes(UnsafeRawPointer, dataLayout: MPSDataLayout, imageIndex: Int)](./mpsimage/writebytes%28_,datalayout,imageindex%29.md)
+- [struct MPSImageReadWriteParams](./mpsimagereadwriteparams.md)
   Parameters that control reading and writing of a particular set of feature channels.
 
 

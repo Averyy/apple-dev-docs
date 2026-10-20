@@ -1,7 +1,8 @@
 # languageCode
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language code of the input’s track.
 
@@ -19,13 +20,18 @@ The language code of the input’s track.
 var languageCode: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * languageCode;
+```
+
 #### Discussion
 
 Specify an ISO 639-2/T language code value, or `nil` to prevent the writer from writing a language code.
 
 ## See Also
 
-- [var extendedLanguageTag: String?](avassetwriterinput/extendedlanguagetag.md)
+### Configuring language support
+- [var extendedLanguageTag: String?](./extendedlanguagetag.md)
   The extended language for the input’s track.
 
 

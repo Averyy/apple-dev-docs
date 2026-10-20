@@ -1,12 +1,13 @@
 # completionDelay
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s completion delay.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The receiver’s completion delay.
 var completionDelay: TimeInterval { get set }
 ```
 
+```objc
+@property NSTimeInterval completionDelay;
+```
+
 ## See Also
 
-- [class var defaultCompletionDelay: TimeInterval](nstokenfield/defaultcompletiondelay.md)
+### Configuring the Completion Delay
+- [class var defaultCompletionDelay: TimeInterval](./defaultcompletiondelay.md)
   Returns the default completion delay.
 
 

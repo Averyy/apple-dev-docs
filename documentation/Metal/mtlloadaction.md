@@ -1,7 +1,8 @@
 # MTLLoadAction
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of actions performed for an attachment at the start of a rendering pass.
 
@@ -10,7 +11,7 @@ Types of actions performed for an attachment at the start of a rendering pass.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,39 +20,44 @@ Types of actions performed for an attachment at the start of a rendering pass.
 enum MTLLoadAction
 ```
 
+```c
+enum MTLLoadAction : NSUInteger;
+```
+
 ## Mentions
 
-- [Setting load and store actions](setting-load-and-store-actions.md)
+- [Setting load and store actions](./setting-load-and-store-actions.md)
 
 ## Topics
 
 ### Load actions
-- [MTLLoadAction.dontCare](mtlloadaction/dontcare.md)
+- [MTLLoadAction.dontCare](./mtlloadaction/dontcare.md)
   The GPU has permission to discard the existing contents of the attachment at the start of the render pass, replacing them with arbitrary data.
-- [MTLLoadAction.load](mtlloadaction/load.md)
+- [MTLLoadAction.load](./mtlloadaction/load.md)
   The GPU preserves the existing contents of the attachment at the start of the render pass.
-- [MTLLoadAction.clear](mtlloadaction/clear.md)
+- [MTLLoadAction.clear](./mtlloadaction/clear.md)
   The GPU writes a value to every pixel in the attachment at the start of the render pass.
 ### Initializers
-- [init?(rawValue: UInt)](mtlloadaction/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtlloadaction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol MTLParallelRenderCommandEncoder](mtlparallelrendercommandencoder.md)
+### Encoding a render pass in parallel
+- [protocol MTLParallelRenderCommandEncoder](./mtlparallelrendercommandencoder.md)
   An instance that splits up a single render pass so that it can be simultaneously encoded from multiple threads.
-- [enum MTLStoreAction](mtlstoreaction.md)
+- [enum MTLStoreAction](./mtlstoreaction.md)
   Types of actions performed for an attachment at the end of a rendering pass.
-- [struct MTLStoreActionOptions](mtlstoreactionoptions.md)
+- [struct MTLStoreActionOptions](./mtlstoreactionoptions.md)
   Options that modify a store action.
 
 

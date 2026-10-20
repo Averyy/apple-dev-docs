@@ -1,13 +1,14 @@
 # reserved
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An unused field reserved for future use.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,17 +16,22 @@ An unused field reserved for future use.
 var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)
 ```
 
+```c
+uint8_t reserved[64];
+```
+
 ## See Also
 
-- [var source: UnsafeMutablePointer<es_file_t>](es_event_mmap_t/source.md)
+### Inspecting Event Properties
+- [var source: UnsafeMutablePointer<es_file_t>](./source.md)
   The file to map memory into.
-- [var file_pos: UInt64](es_event_mmap_t/file_pos.md)
+- [var file_pos: UInt64](./file_pos.md)
   The offset into the memory-map file.
-- [var flags: Int32](es_event_mmap_t/flags.md)
+- [var flags: Int32](./flags.md)
   Flags that affect the behavior of the memory mapping operation.
-- [var max_protection: Int32](es_event_mmap_t/max_protection.md)
+- [var max_protection: Int32](./max_protection.md)
   The maximum value you can use for protection flags.
-- [var protection: Int32](es_event_mmap_t/protection.md)
+- [var protection: Int32](./protection.md)
   Options that affect the protection of mapped memory pages.
 
 

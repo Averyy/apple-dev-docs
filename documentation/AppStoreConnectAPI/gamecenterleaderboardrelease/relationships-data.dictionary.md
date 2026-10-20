@@ -1,7 +1,8 @@
 # GameCenterLeaderboardRelease.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,15 +11,15 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardRelease.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterLeaderboardRelease.Relationships.GameCenterDetail](gamecenterleaderboardrelease/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
-- [object GameCenterLeaderboardRelease.Relationships.GameCenterLeaderboard](gamecenterleaderboardrelease/relationships-data.dictionary/gamecenterleaderboard-data.dictionary.md)
+- [object GameCenterLeaderboardRelease.Relationships.GameCenterDetail](./relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
+- [object GameCenterLeaderboardRelease.Relationships.GameCenterLeaderboard](./relationships-data.dictionary/gamecenterleaderboard-data.dictionary.md)
 
 ## Properties
 
@@ -27,7 +28,8 @@ object GameCenterLeaderboardRelease.Relationships
 
 ## See Also
 
-- [object GameCenterLeaderboardRelease.Attributes](gamecenterleaderboardrelease/attributes-data.dictionary.md)
+### Objects
+- [object GameCenterLeaderboardRelease.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a leaderboard resource.
 
 

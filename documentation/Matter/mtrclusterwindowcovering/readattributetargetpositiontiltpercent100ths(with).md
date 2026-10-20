@@ -1,7 +1,8 @@
 # readAttributeTargetPositionTiltPercent100ths(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeTargetPositionTiltPercent100ths(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeTargetPositionTiltPercent100thsWithParams:(MTRReadParams *) params;
 ```
 
 

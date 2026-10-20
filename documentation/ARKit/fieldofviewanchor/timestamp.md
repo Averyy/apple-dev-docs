@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timestamp of this anchor.
 

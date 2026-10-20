@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The x and y position to use as the center of the circular screen pattern.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The x and y position to use as the center of the circular screen pattern.
 var center: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic) CGPoint center;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](cicircularscreen/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var sharpness: Float](cicircularscreen/sharpness.md)
+- [var sharpness: Float](./sharpness.md)
   The sharpness of the circles.
-- [var width: Float](cicircularscreen/width.md)
+- [var width: Float](./width.md)
   The distance between each circle in the pattern.
 
 

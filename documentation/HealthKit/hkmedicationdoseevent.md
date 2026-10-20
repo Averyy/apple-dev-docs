@@ -1,7 +1,8 @@
 # HKMedicationDoseEvent
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.0+
@@ -17,66 +18,71 @@
 class HKMedicationDoseEvent
 ```
 
+```objc
+@interface HKMedicationDoseEvent : HKSample
+```
+
 ## Topics
 
 ### Instance Properties
-- [var doseQuantity: Double?](hkmedicationdoseevent/dosequantity-4cb5m.md)
+- [var doseQuantity: Double?](./hkmedicationdoseevent/dosequantity-4cb5m.md)
   The quantity of the medication taken.
-- [var logStatus: HKMedicationDoseEvent.LogStatus](hkmedicationdoseevent/logstatus-swift.property.md)
+- [var logStatus: HKMedicationDoseEvent.LogStatus](./hkmedicationdoseevent/logstatus-swift.property.md)
   The log status the system assigns to this dose event.
-- [var medicationConceptIdentifier: HKHealthConceptIdentifier](hkmedicationdoseevent/medicationconceptidentifier.md)
+- [var medicationConceptIdentifier: HKHealthConceptIdentifier](./hkmedicationdoseevent/medicationconceptidentifier.md)
   The identifier of the medication concept the system associates with this dose event.
-- [var medicationDoseEventType: HKMedicationDoseEventType](hkmedicationdoseevent/medicationdoseeventtype.md)
+- [var medicationDoseEventType: HKMedicationDoseEventType](./hkmedicationdoseevent/medicationdoseeventtype.md)
   The data type that identified the samples that store medication dose event data.
-- [var scheduleType: HKMedicationDoseEvent.ScheduleType](hkmedicationdoseevent/scheduletype-swift.property.md)
+- [var scheduleType: HKMedicationDoseEvent.ScheduleType](./hkmedicationdoseevent/scheduletype-swift.property.md)
   The scheduling context for this logged dose event.
-- [var scheduledDate: Date?](hkmedicationdoseevent/scheduleddate.md)
+- [var scheduledDate: Date?](./hkmedicationdoseevent/scheduleddate.md)
   The date and time the person takes the medication, if scheduled.
-- [var scheduledDoseQuantity: Double?](hkmedicationdoseevent/scheduleddosequantity-477ge.md)
+- [var scheduledDoseQuantity: Double?](./hkmedicationdoseevent/scheduleddosequantity-477ge.md)
   The quantity of the medication scheduled to be taken.
-- [var unit: HKUnit](hkmedicationdoseevent/unit.md)
+- [var unit: HKUnit](./hkmedicationdoseevent/unit.md)
   The unit that the system associates with the medication when the person logs the dose.
 ### Enumerations
-- [HKMedicationDoseEvent.LogStatus](hkmedicationdoseevent/logstatus-swift.enum.md)
+- [HKMedicationDoseEvent.LogStatus](./hkmedicationdoseevent/logstatus-swift.enum.md)
   The statuses the system assigns to a logged medication dose event.
-- [HKMedicationDoseEvent.ScheduleType](hkmedicationdoseevent/scheduletype-swift.enum.md)
+- [HKMedicationDoseEvent.ScheduleType](./hkmedicationdoseevent/scheduletype-swift.enum.md)
   The kind of schedule the system associates with a logged medication dose event.
 
 ## Relationships
 
 ### Inherits From
-- [HKSample](hksample.md)
+- [HKSample](./hksample.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKClinicalCoding](hkclinicalcoding.md)
+### Medication queries
+- [class HKClinicalCoding](./hkclinicalcoding.md)
   A clinical coding that represents a medical concept using a standardized coding system.
-- [class HKHealthConceptIdentifier](hkhealthconceptidentifier.md)
+- [class HKHealthConceptIdentifier](./hkhealthconceptidentifier.md)
   A unique identifier for a specific health concept within a domain.
-- [class HKMedicationConcept](hkmedicationconcept.md)
+- [class HKMedicationConcept](./hkmedicationconcept.md)
   An object that describes a specific medication concept.
-- [class HKMedicationDoseEventType](hkmedicationdoseeventtype.md)
-- [class HKUserAnnotatedMedication](hkuserannotatedmedication.md)
+- [class HKMedicationDoseEventType](./hkmedicationdoseeventtype.md)
+- [class HKUserAnnotatedMedication](./hkuserannotatedmedication.md)
   A reference to the tracked medication and the details a person can customize.
-- [class HKUserAnnotatedMedicationQuery](hkuserannotatedmedicationquery.md)
-- [class HKUserAnnotatedMedicationType](hkuserannotatedmedicationtype.md)
-- [struct HKHealthConceptDomain](hkhealthconceptdomain.md)
+- [class HKUserAnnotatedMedicationQuery](./hkuserannotatedmedicationquery.md)
+- [class HKUserAnnotatedMedicationType](./hkuserannotatedmedicationtype.md)
+- [struct HKHealthConceptDomain](./hkhealthconceptdomain.md)
   A domain that represents a health concept.
-- [struct HKMedicationGeneralForm](hkmedicationgeneralform.md)
+- [struct HKMedicationGeneralForm](./hkmedicationgeneralform.md)
   The manufactured form of a medication.
-- [struct HKUserAnnotatedMedicationQueryDescriptor](hkuserannotatedmedicationquerydescriptor.md)
+- [struct HKUserAnnotatedMedicationQueryDescriptor](./hkuserannotatedmedicationquerydescriptor.md)
 
 
 ---

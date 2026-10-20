@@ -1,7 +1,8 @@
 # NFCErrorDomain
 
 **Framework**: Core NFC  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for errors associated with Core NFC APIs.
 
@@ -16,13 +17,18 @@ The domain for errors associated with Core NFC APIs.
 let NFCErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const NFCErrorDomain;
+```
+
 ## See Also
 
-- [NFCReaderError.Code](nfcreadererror-swift.struct/code.md)
+### Errors
+- [NFCReaderError.Code](./nfcreadererror-swift.struct/code.md)
   Reader session and tag error codes.
-- [struct NFCReaderError](nfcreadererror-swift.struct.md)
+- [struct NFCReaderError](./nfcreadererror-swift.struct.md)
   An error type that indicates problems with reader sessions or tags.
-- [let NFCTagResponseUnexpectedLengthErrorKey: String](nfctagresponseunexpectedlengtherrorkey.md)
+- [let NFCTagResponseUnexpectedLengthErrorKey: String](./nfctagresponseunexpectedlengtherrorkey.md)
   A user-information dictionary key that indicates an invalid received response packet length.
 
 

@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends a new codable value to the end of this path.
 
@@ -20,17 +21,24 @@ Appends a new codable value to the end of this path.
 mutating func append<V>(_ value: V) where V : Decodable, V : Encodable, V : Hashable
 ```
 
+**Other overloads**:
+
+```swift
+mutating func append<V>(_ value: V) where V : Hashable
+```
+
 ## Mentions
 
-- [Understanding the navigation stack](understanding-the-navigation-stack.md)
+- [Understanding the navigation stack](../understanding-the-navigation-stack.md)
 
 ## See Also
 
-- [var isEmpty: Bool](navigationpath/isempty.md)
+### Managing path contents
+- [var isEmpty: Bool](./isempty.md)
   A Boolean that indicates whether this path is empty.
-- [var count: Int](navigationpath/count.md)
+- [var count: Int](./count.md)
   The number of elements in this path.
-- [func removeLast(Int)](navigationpath/removelast(_:).md)
+- [func removeLast(Int)](./removelast%28_%29.md)
   Removes values from the end of this path.
 
 

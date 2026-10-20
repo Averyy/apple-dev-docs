@@ -1,7 +1,8 @@
 # NSWindowsCP1253StringEncoding
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Microsoft Windows codepage 1253, encoding Greek characters.
 
@@ -20,15 +21,20 @@ Microsoft Windows codepage 1253, encoding Greek characters.
 var NSWindowsCP1253StringEncoding: UInt { get }
 ```
 
+```c
+NSWindowsCP1253StringEncoding
+```
+
 ## See Also
 
-- [var NSWindowsCP1250StringEncoding: UInt](nswindowscp1250stringencoding.md)
+### Windows Code Page Encodings
+- [var NSWindowsCP1250StringEncoding: UInt](./nswindowscp1250stringencoding.md)
   Microsoft Windows codepage 1250; equivalent to WinLatin2.
-- [var NSWindowsCP1251StringEncoding: UInt](nswindowscp1251stringencoding.md)
+- [var NSWindowsCP1251StringEncoding: UInt](./nswindowscp1251stringencoding.md)
   Microsoft Windows codepage 1251, encoding Cyrillic characters; equivalent to AdobeStandardCyrillic font encoding.
-- [var NSWindowsCP1252StringEncoding: UInt](nswindowscp1252stringencoding.md)
+- [var NSWindowsCP1252StringEncoding: UInt](./nswindowscp1252stringencoding.md)
   Microsoft Windows codepage 1252; equivalent to WinLatin1.
-- [var NSWindowsCP1254StringEncoding: UInt](nswindowscp1254stringencoding.md)
+- [var NSWindowsCP1254StringEncoding: UInt](./nswindowscp1254stringencoding.md)
   Microsoft Windows codepage 1254, encoding Turkish characters.
 
 

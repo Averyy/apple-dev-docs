@@ -1,22 +1,29 @@
 # tryNextResolvedEndpoint()
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Mark the current value of resolvedEndpoint as unusable, and try to switch to the next available endpoint.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- macOS 10.11+
-- tvOS 17.0+
-- visionOS 1.0+
+- iOS 9.0+ - Deprecated in 18.0
+- iPadOS 9.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.11+ - Deprecated in 15.0
+- tvOS 17.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use the [`nw_connection_cancel_current_endpoint(_:)`](../../Network/nw_connection_cancel_current_endpoint%28_%29.md) function from the [Network](../../Network/Network.md) framework instead.
 
 ## Declaration
 
 ```swift
 func tryNextResolvedEndpoint()
+```
+
+```objc
+- (void) tryNextResolvedEndpoint;
 ```
 
 #### Discussion
@@ -25,7 +32,8 @@ This should be used when the caller has attempted to communicate with the curren
 
 ## See Also
 
-- [var resolvedEndpoint: NWEndpoint?](nwudpsession/resolvedendpoint.md)
+### Selecting remote endpoints
+- [var resolvedEndpoint: NWEndpoint?](./resolvedendpoint.md)
   The currently targeted remote endpoint.
 
 

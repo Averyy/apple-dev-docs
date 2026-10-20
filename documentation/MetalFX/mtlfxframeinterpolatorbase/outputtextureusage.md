@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The minimal texture usage options that your app’s output color texture needs in order to support this frame interpolator.
@@ -17,6 +18,10 @@ The minimal texture usage options that your app’s output color texture needs i
 
 ```swift
 var outputTextureUsage: MTLTextureUsage { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTLTextureUsage outputTextureUsage;
 ```
 
 

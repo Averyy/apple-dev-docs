@@ -1,7 +1,8 @@
 # RCSMessage.CustomReaction.Operation.add(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An operation type for adding a custom reaction.
 
@@ -16,7 +17,7 @@ case add(RCSFileTransferMetadata)
 
 #### Discussion
 
-The associated value is an instance of [`RCSFileTransferMetadata`](rcsfiletransfermetadata.md) that you obtain as the result of calling [`upload(_:)`](rcsservice/upload(_:).md).
+The associated value is an instance of [`RCSFileTransferMetadata`](../../../rcsfiletransfermetadata.md) that you obtain as the result of calling [`upload(_:)`](../../../rcsservice/upload%28_%29.md).
 
 
 ---

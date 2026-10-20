@@ -1,7 +1,8 @@
 # withUnsafeAudioBufferList(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides scoped read-only access to the audio buffer list.
 
@@ -34,9 +35,10 @@ The value returned by the closure.
 
 ## See Also
 
-- [func channelData(Int) -> AVReadOnlyAudioPCMBuffer.ChannelData](avreadonlyaudiopcmbuffer/channeldata(_:).md)
+### Accessing channel data
+- [func channelData(Int) -> AVReadOnlyAudioPCMBuffer.ChannelData](./channeldata%28_%29.md)
   Returns read-only access to a specific channel’s data.
-- [AVReadOnlyAudioPCMBuffer.ChannelData](avreadonlyaudiopcmbuffer/channeldata.md)
+- [AVReadOnlyAudioPCMBuffer.ChannelData](./channeldata.md)
   Represents read-only channel data.
 
 

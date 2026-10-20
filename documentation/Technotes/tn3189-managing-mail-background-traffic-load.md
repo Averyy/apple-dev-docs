@@ -1,6 +1,7 @@
 # TN3189: Managing Mail background traffic load
 
-**Framework**: Technotes
+**Framework**: Technotes  
+**Role**: Technote
 
 Identify iOS Mail background traffic and manage its impact on your IMAP server.
 
@@ -10,12 +11,12 @@ To enhance the user experience, iOS Mail downloads a user’s email in the backg
 
 This process involves two main steps:
 
-1. **Client identification:** [`RFC 3501`](https://developer.apple.comhttps://tools.ietf.org/html/rfc3501) IMAP email servers can detect if a connection is for a background download. iOS Mail clients identify themselves to the server using the `ID` command. Starting with iOS 18.5, this command includes an `event` field. This field will indicate if the connection is being used for background downloading.
+1. **Client identification:** [RFC 3501](https://tools.ietf.org/html/rfc3501) IMAP email servers can detect if a connection is for a background download. iOS Mail clients identify themselves to the server using the `ID` command. Starting with iOS 18.5, this command includes an `event` field. This field will indicate if the connection is being used for background downloading.
 2. **Load shedding:** If the server needs to limit its load and the client has been identified as a background download, the server should send a `NO [UNAVAILABLE]` tagged response to the `ID` command. This will result in the background download being postponed, after which the client will retry the download.
 
-#### Identify Background Traffic From Mail
+#### Identify background traffic from Mail
 
-Starting with iOS 18.5, the [`RFC 2971`](https://developer.apple.comhttps://tools.ietf.org/html/rfc2971) `ID` command includes an `event` field. The value of this field is either `NIL` or a list of comma-separated identifiers.
+Starting with iOS 18.5, the [RFC 2971](https://tools.ietf.org/html/rfc2971) `ID` command includes an `event` field. The value of this field is either `NIL` or a list of comma-separated identifiers.
 
 The server should only consider the `event` field value if the email client identifies itself with a `name` field that has a `com.apple.` prefix. For example, `"name" "com.apple.email.maild"` indicates that this is the the Mail app.
 
@@ -45,7 +46,7 @@ would indicate background download activity because they include `indexer` or `b
 
 Here’s an example interaction between the client (C) and server (S):
 
-```None
+```
 C: A1 ID ("name" "com.apple.email.maild" "os" "iOS" "vendor" "Apple Inc" "event" NIL)
 S: * ID ("name" "Mail Server" "version" "3")
 S: A1 OK Completed
@@ -63,7 +64,7 @@ S: A1 OK Completed
 
 In this case, the client indicated that it is performing a background download through the `indexer` value of the `event` field.
 
-#### Tell Mail to Back Off
+#### Tell Mail to back off
 
 Since iOS Mail may use an already established connection to perform background activity, iOS Mail might send subsequent `ID` commands with updated `event` fields. These will always contain the full set of fields of the original `ID` command, notably the `name` and `event` field. These subsequent `ID` commands may include switching from non-background to background download.
 
@@ -79,11 +80,11 @@ S: * ID ("name" "Mail Server" "version" "3")
 S: A1 NO [UNAVAILABLE] Completed
 ```
 
-Here the IMAP email server responds with a tagged response containing `NO` and the response code `UNAVAILABLE,` as defined in [`RFC 3501`](https://developer.apple.comhttps://tools.ietf.org/html/rfc3501) and [`RFC 5530`](https://developer.apple.comhttps://tools.ietf.org/html/rfc5530). This informs the iOS Mail app to back off, and it will close the connection.
+Here the IMAP email server responds with a tagged response containing `NO` and the response code `UNAVAILABLE,` as defined in [RFC 3501](https://tools.ietf.org/html/rfc3501) and [RFC 5530](https://tools.ietf.org/html/rfc5530). This informs the iOS Mail app to back off, and it will close the connection.
 
 > **Note**: Mail does not include an event field on macOS. It also doesn’t handle load shedding through the `NO [UNAVAILABLE]` server response.
 
-#### Prioritize Mail Traffic
+#### Prioritize Mail traffic
 
 If the IMAP email server needs to reduce iOS Mail traffic, it should start by shedding traffic identified with `indexer` in the `event` field. This traffic downloads older message content for Apple Intelligence that Mail doesn’t save on the device.
 

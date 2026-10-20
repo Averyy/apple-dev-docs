@@ -1,7 +1,8 @@
 # AudioSearch.Criteria.searchQuery(_:)
 
 **Framework**: Media Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The person’s natural-language search query.
 
@@ -22,7 +23,7 @@ case searchQuery(String)
 
 ## Mentions
 
-- [Responding to audio search and playback requests](responding-to-audio-search-and-playback-requests.md)
+- [Responding to audio search and playback requests](../../responding-to-audio-search-and-playback-requests.md)
 
 #### Discussion
 
@@ -30,9 +31,10 @@ A string representation of a person’s search request. Use it in your app’s s
 
 ## See Also
 
-- [AudioSearch.Criteria.unspecified](audiosearch/criteria-swift.enum/unspecified.md)
+### Audio search types
+- [AudioSearch.Criteria.unspecified](./unspecified.md)
   The request includes a vague search query or no specific search criteria.
-- [AudioSearch.Criteria.url(_:)](audiosearch/criteria-swift.enum/url(_:).md)
+- [AudioSearch.Criteria.url(_:)](./url%28_%29.md)
   URLs that the system provides for matching audio content.
 
 

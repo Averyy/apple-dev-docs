@@ -1,7 +1,8 @@
 # ReferenceComponent.LoadingPolicy.onDemand
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Loads the contents from the referenced entity file when your app tells it to.
 
@@ -21,7 +22,7 @@ case onDemand
 
 #### Discussion
 
-Use [`loadReference(at:)`](referencecomponent/loadreference(at:)-1en8b.md) to load the referenced entity.
+Use [`loadReference(at:)`](../loadreference%28at%29-1en8b.md) to load the referenced entity.
 
 
 ---

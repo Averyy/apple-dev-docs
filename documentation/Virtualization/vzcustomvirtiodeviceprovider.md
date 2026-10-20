@@ -1,7 +1,8 @@
 # VZCustomVirtioDeviceProvider
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A base class that describes the provider of a custom Virtio device.
 
@@ -14,29 +15,35 @@ A base class that describes the provider of a custom Virtio device.
 class VZCustomVirtioDeviceProvider
 ```
 
+```objc
+@interface VZCustomVirtioDeviceProvider : NSObject
+```
+
 #### Overview
 
-A Custom Virtio device provider describes how the custom Virtio device is implemented. Don’t instantiate `VZCustomVirtioDeviceProvider` directly. use one of its subclasses such as [`VZCustomVirtioDeviceDelegateProvider`](vzcustomvirtiodevicedelegateprovider.md) instead.
+A Custom Virtio device provider describes how the custom Virtio device is implemented. Don’t instantiate `VZCustomVirtioDeviceProvider` directly. use one of its subclasses such as [`VZCustomVirtioDeviceDelegateProvider`](./vzcustomvirtiodevicedelegateprovider.md) instead.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [VZCustomVirtioDeviceDelegateProvider](vzcustomvirtiodevicedelegateprovider.md)
+- [VZCustomVirtioDeviceDelegateProvider](./vzcustomvirtiodevicedelegateprovider.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZCustomVirtioDeviceDelegateProvider](vzcustomvirtiodevicedelegateprovider.md)
+### Related Documentation
+- [class VZCustomVirtioDeviceDelegateProvider](./vzcustomvirtiodevicedelegateprovider.md)
   A custom Virtio Device provider for devices that implement a custom Virtio device configuration delegate.
-- [class VZCustomVirtioDeviceDelegateProvider](vzcustomvirtiodevicedelegateprovider.md)
+### Responding to Virtio driver events
+- [class VZCustomVirtioDeviceDelegateProvider](./vzcustomvirtiodevicedelegateprovider.md)
   A custom Virtio Device provider for devices that implement a custom Virtio device configuration delegate.
 
 

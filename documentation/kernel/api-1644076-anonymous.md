@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,7 +18,7 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kATADefaultSectorSize](1644076-anonymous/katadefaultsectorsize.md)
+- [kATADefaultSectorSize](./api-1644076-anonymous/katadefaultsectorsize.md)
 
 
 ---

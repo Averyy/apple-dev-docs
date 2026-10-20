@@ -1,7 +1,8 @@
 # audioMix
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio mix to use with this output.
 
@@ -20,13 +21,18 @@ The audio mix to use with this output.
 var audioMix: AVAudioMix? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) AVAudioMix * audioMix;
+```
+
 #### Discussion
 
 Use an audio mix to specify how an audio track’s volume changes over the media’s timeline.
 
 ## See Also
 
-- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](avassetreaderaudiomixoutput/audiotimepitchalgorithm.md)
+### Configuring audio settings
+- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](./audiotimepitchalgorithm.md)
   The processing algorithm to use for scaled audio edits.
 
 

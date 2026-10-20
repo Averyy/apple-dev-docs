@@ -1,6 +1,8 @@
 # Tracking the User’s Face in Real Time
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: Sample Code  
+**Download**: [TrackingTheUsersFaceInRealTime.zip](https://docs-assets.developer.apple.com/published/16781da1bbec/TrackingTheUsersFaceInRealTime.zip)
 
 Detect and track faces from the selfie cam feed in real time.
 
@@ -12,11 +14,11 @@ Detect and track faces from the selfie cam feed in real time.
 
 #### Overview
 
-The [`Vision`](https://developer.apple.comhttps://developer.apple.com/documentation/vision) framework can detect and track rectangles, faces, and other salient objects across a sequence of images.
+The [Vision](./Vision.md) framework can detect and track rectangles, faces, and other salient objects across a sequence of images.
 
 This sample shows how to create requests to track human faces and interpret the results of those requests.  In order to visualize the geometry of observed facial features, the code draws paths around the primary detected face and its most prominent features.
 
-The sample app applies computer vision algorithms to find a face in the provided image. Once it finds a face, it attempts to track that face across subsequent frames of the video. Finally, it draws a green box around the observed face, as well as yellow paths outlining facial features, on [`Core Animation`](https://developer.apple.comhttps://developer.apple.com/documentation/quartzcore) layers.
+The sample app applies computer vision algorithms to find a face in the provided image. Once it finds a face, it attempts to track that face across subsequent frames of the video. Finally, it draws a green box around the observed face, as well as yellow paths outlining facial features, on [Core Animation](../QuartzCore/QuartzCore.md) layers.
 
 To see this sample app in action, build and run the project on iOS 11.  Grant the app permission to use the camera.
 
@@ -24,18 +26,18 @@ To see this sample app in action, build and run the project on iOS 11.  Grant th
 
 This section shows how to set up a camera capture session using delegates to prepare images for Vision. Configuring the camera involves the following steps.
 
-1. First, create a new [`AVCaptureSession`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avcapturesession) to represent video capture. Channel its output through [`AVCaptureSession`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avcapturesession).
+1. First, create a new [AVCaptureSession](../AVFoundation/avcapturesession.md) to represent video capture. Channel its output through [`AVCaptureVideoDataOutput`](../AVFoundation/avcapturesession.md).
 2. Query the user’s input device and configure it for video data output by specifying its resolution and camera.
-3. Next, create a serial dispatch queue. This queue ensures that video frames, received asynchronously through delegate callback methods, are delivered in order. Establish a capture session with [`AVMediaType`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avmediatype) video and set its device and resolution.
+3. Next, create a serial dispatch queue. This queue ensures that video frames, received asynchronously through delegate callback methods, are delivered in order. Establish a capture session with [AVMediaType](../AVFoundation/avmediatype.md) video and set its device and resolution.
 4. Finally, designate the video’s preview layer and add it to your view hierarchy, so the camera knows where to display video frames as they are captured.
 
 Most of this code is boilerplate setup that enables you to handle video input properly. Tweak the values only if you choose a different camera arrangement.
 
 ##### Parse Face Detection Results
 
-You can provide a completion handler for a Vision request handler to execute when it finishes. The completion handler indicates whether the request succeeded or resulted in an error. If the request succeeded, its [`results`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnrequest/2867238-results) property contains data specific to the type of request that you can use to identify the object’s location and bounding box.
+You can provide a completion handler for a Vision request handler to execute when it finishes. The completion handler indicates whether the request succeeded or resulted in an error. If the request succeeded, its [results](./vnrequest/api-2867238-results.md) property contains data specific to the type of request that you can use to identify the object’s location and bounding box.
 
-For face rectangle requests, the [`VNFaceObservation`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnfaceobservation) provided via callback includes a bounding box for each detected face. The sample uses this bounding box to draw paths around each of the detected face landmarks on top of the preview image.
+For face rectangle requests, the [VNFaceObservation](./vnfaceobservation.md) provided via callback includes a bounding box for each detected face. The sample uses this bounding box to draw paths around each of the detected face landmarks on top of the preview image.
 
 ```swift
 let faceDetectionRequest = VNDetectFaceRectanglesRequest(completionHandler: { (request, error) in
@@ -59,13 +61,13 @@ let faceDetectionRequest = VNDetectFaceRectanglesRequest(completionHandler: { (r
 })
 ```
 
-In addition to drawing paths on [`CALayer`](https://developer.apple.comhttps://developer.apple.com/documentation/quartzcore/calayer) to visualize the feature, you can access specific facial-feature data such as eye, pupil, nose, and lip classifications in the face observation’s [`landmarks`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnfaceobservation/2867250-landmarks) property. Your app can leverage this information to track the user’s face and apply custom effects. For a face landmarks request, the face rectangle detector will also run implicitly.
+In addition to drawing paths on [CALayer](../QuartzCore/calayer.md) to visualize the feature, you can access specific facial-feature data such as eye, pupil, nose, and lip classifications in the face observation’s [landmarks](./vnfaceobservation/api-2867250-landmarks.md) property. Your app can leverage this information to track the user’s face and apply custom effects. For a face landmarks request, the face rectangle detector will also run implicitly.
 
 ##### Preprocess Images
 
-Perform any image preprocessing in the delegate method [`captureOutput:didOutputSampleBuffer:fromConnection:`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avcapturefileoutputdelegate/1390096-captureoutput). In this delegate method, create a pixel buffer to hold image contents, determine the device’s orientation, and check whether you have a face to track.
+Perform any image preprocessing in the delegate method [captureOutput:didOutputSampleBuffer:fromConnection:](../AVFoundation/avcapturefileoutputdelegate/api-1390096-captureoutput.md). In this delegate method, create a pixel buffer to hold image contents, determine the device’s orientation, and check whether you have a face to track.
 
-Before the Vision framework can track an object, it must first know which object to track. Determine which face to track by creating a  [`VNImageRequestHandler`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnimagerequesthandler) and passing it a still image frame. In the case of video, submit individual frames to the request handler as they arrive in the delegate method [`captureOutput:didOutputSampleBuffer:fromConnection:`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avcapturefileoutputdelegate/1390096-captureoutput).
+Before the Vision framework can track an object, it must first know which object to track. Determine which face to track by creating a  [VNImageRequestHandler](./vnimagerequesthandler.md) and passing it a still image frame. In the case of video, submit individual frames to the request handler as they arrive in the delegate method [`captureOutput:didOutputSampleBuffer:fromConnection:`](../AVFoundation/avcapturefileoutputdelegate/api-1390096-captureoutput.md).
 
 ```swift
 let imageRequestHandler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer,
@@ -82,7 +84,7 @@ do {
 }
 ```
 
-The [`VNImageRequestHandler`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnimagerequesthandler) handles detection of faces and objects in still images, but it doesn’t carry information from one frame to the next.  For tracking an object, create a [`VNSequenceRequestHandler`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnsequencerequesthandler), which can handle [`VNTrackObjectRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vntrackobjectrequest).
+The [`VNImageRequestHandler`](./vnimagerequesthandler.md) handles detection of faces and objects in still images, but it doesn’t carry information from one frame to the next.  For tracking an object, create a [VNSequenceRequestHandler](./vnsequencerequesthandler.md), which can handle [VNTrackObjectRequest](./vntrackobjectrequest.md).
 
 ##### Track the Detected Face
 
@@ -94,7 +96,7 @@ try self.sequenceRequestHandler.perform(requests,
                                          orientation: exifOrientation)
 ```
 
-If the detector hasn’t found a face, create an image request handler to detect a face. Once that detection succeeds, and you have a face observation, track it by creating a [`VNTrackObjectRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vntrackobjectrequest).
+If the detector hasn’t found a face, create an image request handler to detect a face. Once that detection succeeds, and you have a face observation, track it by creating a [`VNTrackObjectRequest`](./vntrackobjectrequest.md).
 
 ```swift
 // Setup the next round of tracking.
@@ -120,19 +122,20 @@ for trackingRequest in requests {
 }
 ```
 
-Then call the sequence handler’s [`perform(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnimagerequesthandler/2880297-perform) function. This method runs synchronously, so use a background queue to avoid blocking the main queue as it executes, and call back to the main queue only if you need to perform UI updates such as path drawing.
+Then call the sequence handler’s [perform(_:)](./vnimagerequesthandler/api-2880297-perform.md) function. This method runs synchronously, so use a background queue to avoid blocking the main queue as it executes, and call back to the main queue only if you need to perform UI updates such as path drawing.
 
 ## See Also
 
-- [Tracking Multiple Objects or Rectangles in Video](tracking-multiple-objects-or-rectangles-in-video.md)
+### Object tracking
+- [Tracking Multiple Objects or Rectangles in Video](./tracking-multiple-objects-or-rectangles-in-video.md)
   Apply Vision algorithms to track objects or rectangles throughout a video.
-- [class VNTrackingRequest](vntrackingrequest.md)
+- [class VNTrackingRequest](./vntrackingrequest.md)
   The abstract superclass for image-analysis requests that track unique features across multiple images or video frames.
-- [class VNTrackRectangleRequest](vntrackrectanglerequest.md)
+- [class VNTrackRectangleRequest](./vntrackrectanglerequest.md)
   An image-analysis request that tracks movement of a previously identified rectangular object across multiple images or video frames.
-- [class VNTrackObjectRequest](vntrackobjectrequest.md)
+- [class VNTrackObjectRequest](./vntrackobjectrequest.md)
   An image-analysis request that tracks the movement of a previously identified object across multiple images or video frames.
-- [class VNDetectedObjectObservation](vndetectedobjectobservation.md)
+- [class VNDetectedObjectObservation](./vndetectedobjectobservation.md)
   An observation that provides the position and extent of an image feature that an image- analysis request detects.
 
 

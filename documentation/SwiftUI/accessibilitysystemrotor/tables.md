@@ -1,7 +1,8 @@
 # tables
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 System Rotor allowing users to iterate through all tables.
 
@@ -22,11 +23,12 @@ static var tables: AccessibilitySystemRotor { get }
 
 ## See Also
 
-- [static var images: AccessibilitySystemRotor](accessibilitysystemrotor/images.md)
+### Iterating through other elements
+- [static var images: AccessibilitySystemRotor](./images.md)
   System Rotor allowing users to iterate through all images.
-- [static var landmarks: AccessibilitySystemRotor](accessibilitysystemrotor/landmarks.md)
+- [static var landmarks: AccessibilitySystemRotor](./landmarks.md)
   System Rotor allowing users to iterate through all landmarks.
-- [static var lists: AccessibilitySystemRotor](accessibilitysystemrotor/lists.md)
+- [static var lists: AccessibilitySystemRotor](./lists.md)
   System Rotor allowing users to iterate through all lists.
 
 

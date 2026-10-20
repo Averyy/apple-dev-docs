@@ -1,7 +1,8 @@
 # Publishers.Print
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that prints log messages for all publishing events, optionally prefixed with a given string.
 
@@ -33,30 +34,31 @@ This publisher prints log messages when receiving the following events:
 ## Topics
 
 ### Creating a print publisher
-- [init(upstream: Upstream, prefix: String, to: (any TextOutputStream)?)](publishers/print/init(upstream:prefix:to:).md)
+- [init(upstream: Upstream, prefix: String, to: (any TextOutputStream)?)](./print/init%28upstream,prefix,to%29.md)
   Creates a publisher that prints log messages for all publishing events.
 ### Declaring supporting types
-- [Publishers.Print.Output](publishers/print/output.md)
+- [Publishers.Print.Output](./print/output.md)
   The kind of values published by this publisher.
-- [Publishers.Print.Failure](publishers/print/failure.md)
+- [Publishers.Print.Failure](./print/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/print/upstream.md)
+- [let upstream: Upstream](./print/upstream.md)
   The publisher from which this publisher receives elements.
-- [let prefix: String](publishers/print/prefix.md)
+- [let prefix: String](./print/prefix.md)
   A string with which to prefix all log messages.
-- [let stream: (any TextOutputStream)?](publishers/print/stream.md)
+- [let stream: (any TextOutputStream)?](./print/stream.md)
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.Breakpoint](publishers/breakpoint.md)
+### Debugging
+- [Publishers.Breakpoint](./breakpoint.md)
   A publisher that raises a debugger signal when a provided closure needs to stop the process in the debugger.
-- [Publishers.HandleEvents](publishers/handleevents.md)
+- [Publishers.HandleEvents](./handleevents.md)
   A publisher that performs the specified closures when publisher events occur.
 
 

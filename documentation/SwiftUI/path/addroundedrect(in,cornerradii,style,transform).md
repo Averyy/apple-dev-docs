@@ -1,7 +1,8 @@
 # addRoundedRect(in:cornerRadii:style:transform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a rounded rectangle with uneven corners to the path.
 

@@ -1,7 +1,8 @@
 # NEAppProxyFlowError.Code.notConnected
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The flow is not fully opened.
 
@@ -20,25 +21,30 @@ The flow is not fully opened.
 case notConnected
 ```
 
+```c
+NEAppProxyFlowErrorNotConnected
+```
+
 ## See Also
 
-- [NEAppProxyFlowError.Code.peerReset](neappproxyflowerror-swift.struct/code/peerreset.md)
+### Error Codes
+- [NEAppProxyFlowError.Code.peerReset](./peerreset.md)
   The remote peer closed the flow.
-- [NEAppProxyFlowError.Code.hostUnreachable](neappproxyflowerror-swift.struct/code/hostunreachable.md)
+- [NEAppProxyFlowError.Code.hostUnreachable](./hostunreachable.md)
   An attempt to reach the remote endpoint of the flow failed.
-- [NEAppProxyFlowError.Code.invalidArgument](neappproxyflowerror-swift.struct/code/invalidargument.md)
+- [NEAppProxyFlowError.Code.invalidArgument](./invalidargument.md)
   A proxy flow method received an invalid argument.
-- [NEAppProxyFlowError.Code.aborted](neappproxyflowerror-swift.struct/code/aborted.md)
+- [NEAppProxyFlowError.Code.aborted](./aborted.md)
   The flow was aborted.
-- [NEAppProxyFlowError.Code.refused](neappproxyflowerror-swift.struct/code/refused.md)
+- [NEAppProxyFlowError.Code.refused](./refused.md)
   Connecting the flow to its remote endpoint failed.
-- [NEAppProxyFlowError.Code.timedOut](neappproxyflowerror-swift.struct/code/timedout.md)
+- [NEAppProxyFlowError.Code.timedOut](./timedout.md)
   The flow timed out.
-- [NEAppProxyFlowError.Code.internal](neappproxyflowerror-swift.struct/code/internal.md)
+- [NEAppProxyFlowError.Code.internal](./internal.md)
   An internal error occurred while handling the flow.
-- [NEAppProxyFlowError.Code.datagramTooLarge](neappproxyflowerror-swift.struct/code/datagramtoolarge.md)
+- [NEAppProxyFlowError.Code.datagramTooLarge](./datagramtoolarge.md)
   A caller attempted to write a datagram that was larger than the socket’s receive window.
-- [NEAppProxyFlowError.Code.readAlreadyPending](neappproxyflowerror-swift.struct/code/readalreadypending.md)
+- [NEAppProxyFlowError.Code.readAlreadyPending](./readalreadypending.md)
   A read operation on the flow is already pending.
 
 

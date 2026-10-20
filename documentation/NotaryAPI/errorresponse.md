@@ -1,7 +1,8 @@
 # ErrorResponse
 
 **Framework**: Notary API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The notary service’s response when an error occurs.
 
@@ -10,7 +11,7 @@ The notary service’s response when an error occurs.
 
 ## Declaration
 
-```swift
+```
 object ErrorResponse
 ```
 

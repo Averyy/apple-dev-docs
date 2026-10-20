@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Watch Connectivity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the data transfer.
 
@@ -18,13 +19,18 @@ Cancels the data transfer.
 func cancel()
 ```
 
+```objc
+- (void) cancel;
+```
+
 #### Discussion
 
 Use this method to cancel a transfer before it completes. If the data has already been transferred, calling this method has no effect.
 
 ## See Also
 
-- [var isTransferring: Bool](wcsessionuserinfotransfer/istransferring.md)
+### Managing the Transfer Operation
+- [var isTransferring: Bool](./istransferring.md)
   A Boolean value indicating whether the data is still being transferred.
 
 

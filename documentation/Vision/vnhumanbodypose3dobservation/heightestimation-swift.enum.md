@@ -1,7 +1,8 @@
 # VNHumanBodyPose3DObservation.HeightEstimation
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that identify body height estimation techniques.
 
@@ -11,35 +12,40 @@ Constants that identify body height estimation techniques.
 enum HeightEstimation
 ```
 
+```c
+enum VNHumanBodyPose3DObservationHeightEstimation : NSInteger;
+```
+
 ## Topics
 
 ### Techniques
-- [VNHumanBodyPose3DObservation.HeightEstimation.measured](vnhumanbodypose3dobservation/heightestimation-swift.enum/measured.md)
+- [VNHumanBodyPose3DObservation.HeightEstimation.measured](./heightestimation-swift.enum/measured.md)
   A technique that uses LiDAR depth data to measure body height, in meters.
-- [VNHumanBodyPose3DObservation.HeightEstimation.reference](vnhumanbodypose3dobservation/heightestimation-swift.enum/reference.md)
+- [VNHumanBodyPose3DObservation.HeightEstimation.reference](./heightestimation-swift.enum/reference.md)
   A technique that uses a reference height.
-- [VNHumanBodyPose3DObservation.HeightEstimation.measured](vnhumanbodypose3dobservation/heightestimation-swift.enum/measured.md)
+- [VNHumanBodyPose3DObservation.HeightEstimation.measured](./heightestimation-swift.enum/measured.md)
   A technique that uses LiDAR depth data to measure body height, in meters.
-- [VNHumanBodyPose3DObservation.HeightEstimation.reference](vnhumanbodypose3dobservation/heightestimation-swift.enum/reference.md)
+- [VNHumanBodyPose3DObservation.HeightEstimation.reference](./heightestimation-swift.enum/reference.md)
   A technique that uses a reference height.
 ### Creating a Technique
-- [init?(rawValue: Int)](vnhumanbodypose3dobservation/heightestimation-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./heightestimation-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var heightEstimation: VNHumanBodyPose3DObservation.HeightEstimation](vnhumanbodypose3dobservation/heightestimation-swift.property.md)
+### Getting the Body Height
+- [var heightEstimation: VNHumanBodyPose3DObservation.HeightEstimation](./heightestimation-swift.property.md)
   The technique the framework uses to estimate body height.
-- [var bodyHeight: Float](vnhumanbodypose3dobservation/bodyheight.md)
+- [var bodyHeight: Float](./bodyheight.md)
   The estimated human body height, in meters.
 
 

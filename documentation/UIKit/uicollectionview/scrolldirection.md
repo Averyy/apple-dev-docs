@@ -1,16 +1,17 @@
 # UICollectionView.ScrollDirection
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the direction of scrolling for the layout.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,31 +19,36 @@ Constants that indicate the direction of scrolling for the layout.
 enum ScrollDirection
 ```
 
+```c
+enum UICollectionViewScrollDirection : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UICollectionView.ScrollDirection.vertical](uicollectionview/scrolldirection/vertical.md)
+- [UICollectionView.ScrollDirection.vertical](./scrolldirection/vertical.md)
   The layout scrolls content vertically.
-- [UICollectionView.ScrollDirection.horizontal](uicollectionview/scrolldirection/horizontal.md)
+- [UICollectionView.ScrollDirection.horizontal](./scrolldirection/horizontal.md)
   The layout scrolls content horizontally.
 ### Initializers
-- [init?(rawValue: Int)](uicollectionview/scrolldirection/init(rawvalue:).md)
+- [init?(rawValue: Int)](./scrolldirection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func scrollToItem(at: IndexPath, at: UICollectionView.ScrollPosition, animated: Bool)](uicollectionview/scrolltoitem(at:at:animated:).md)
+### Scrolling an item into view
+- [func scrollToItem(at: IndexPath, at: UICollectionView.ScrollPosition, animated: Bool)](./scrolltoitem%28at,at,animated%29.md)
   Scrolls the collection view contents until the specified item is visible.
-- [UICollectionView.ScrollPosition](uicollectionview/scrollposition.md)
+- [UICollectionView.ScrollPosition](./scrollposition.md)
   Constants that indicate how to scroll an item into the visible portion of the collection view.
 
 

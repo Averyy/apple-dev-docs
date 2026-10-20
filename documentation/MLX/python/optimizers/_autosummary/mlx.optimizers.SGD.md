@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 
 # mlx.optimizers.SGD
 
-**
-
-- [.rst](../../../_sources/python/optimizers/_autosummary/mlx.optimizers.SGD.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.optimizers.SGD
-
- Table of contents 
-
-## Contents
-
-# mlx.optimizers.SGD
-
 **class SGD(*learning_rate: float | Callable[[array], array]*, *momentum: float = 0.0*, *weight_decay: float = 0.0*, *dampening: float = 0.0*, *nesterov: bool = False*)**
 : The stochastic gradient descent optimizer.
 Updates a parameter \(w\) with a gradient \(g\) as follows
@@ -57,5 +30,3 @@ Performs the SGD parameter update and stores \(v\) in the optimizer state.
 
 `init_single`(parameter, state)
 Initialize optimizer state
-
-** Contents

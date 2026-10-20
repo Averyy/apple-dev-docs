@@ -1,7 +1,8 @@
 # arrivalDate
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The arrival date for the trip.
 
@@ -10,13 +11,13 @@ The arrival date for the trip.
 
 ## Declaration
 
-```swift
+```
 arrivalDate?: Date;
 ```
 
 #### Discussion
 
-Specify either a [`departureDate`](etarequestoptions/departuredate.md) or an `arrivalDate`, but don’t set both. If you send both values, MapKit JS logs a warning.
+Specify either a [`departureDate`](./departuredate.md) or an `arrivalDate`, but don’t set both. If you send both values, MapKit JS logs a warning.
 
 
 ---

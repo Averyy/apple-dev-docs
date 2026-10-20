@@ -1,7 +1,8 @@
 # central
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The remote central device that originated the request.
 
@@ -20,17 +21,22 @@ The remote central device that originated the request.
 var central: CBCentral { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CBCentral * central;
+```
+
 #### Overview
 
-For more information, see [`Core Bluetooth Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
+For more information, see [Core Bluetooth Programming Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
 
 ## See Also
 
-- [var characteristic: CBCharacteristic](cbattrequest/characteristic.md)
+### Requesting to Read and Write Characteristic Values
+- [var characteristic: CBCharacteristic](./characteristic.md)
   The characteristic to read or write the value of.
-- [var value: Data?](cbattrequest/value.md)
+- [var value: Data?](./value.md)
   The data that the central reads from or writes to the peripheral.
-- [var offset: Int](cbattrequest/offset.md)
+- [var offset: Int](./offset.md)
   The zero-based index of the first byte for the read or write request.
 
 

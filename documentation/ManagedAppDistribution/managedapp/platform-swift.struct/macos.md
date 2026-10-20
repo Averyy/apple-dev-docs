@@ -1,7 +1,8 @@
 # macOS
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 macOS is a supported platform.
 

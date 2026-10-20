@@ -7,7 +7,7 @@ Create a local isochronous port to run the given DCL program
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOFWLocalIsochPort *createLocalIsochPort(
  bool talking, 
  DCLCommand *opcodes,
@@ -17,7 +17,7 @@ virtual IOFWLocalIsochPort *createLocalIsochPort(
  UInt32 startMask = 0) = 0;
 ```
 
-#### Return_value
+#### Return Value
 
 Returns an IOFWLocalIsochPort on success.
 

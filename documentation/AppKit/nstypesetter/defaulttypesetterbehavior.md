@@ -1,17 +1,22 @@
 # defaultTypesetterBehavior
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the default typesetter behavior.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var defaultTypesetterBehavior: NSLayoutManager.TypesetterBehavior { get }
+```
+
+```objc
+@property (class, readonly) NSTypesetterBehavior defaultTypesetterBehavior;
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ The default typesetter behavior.
 
 #### Discussion
 
-Possible return values are described in the [`NSLayoutManager.TypesetterBehavior`](nslayoutmanager/typesetterbehavior-swift.enum.md) section for [`NSLayoutManager`](nslayoutmanager.md).
+Possible return values are described in the [`NSLayoutManager.TypesetterBehavior`](../nslayoutmanager/typesetterbehavior-swift.enum.md) section for [`NSLayoutManager`](../nslayoutmanager.md).
 
 
 ---

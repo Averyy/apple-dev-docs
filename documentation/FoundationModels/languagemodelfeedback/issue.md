@@ -1,7 +1,8 @@
 # LanguageModelFeedback.Issue
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An issue with the model’s response.
 
@@ -21,25 +22,26 @@ struct Issue
 
 ## Mentions
 
-- [Inspecting session transcripts and reporting model feedback](inspecting-session-transcripts-and-reporting-model-feedback.md)
+- [Inspecting session transcripts and reporting model feedback](../inspecting-session-transcripts-and-reporting-model-feedback.md)
 
 ## Topics
 
 ### Creating an issue
-- [init(category: LanguageModelFeedback.Issue.Category, explanation: String?)](languagemodelfeedback/issue/init(category:explanation:).md)
+- [init(category: LanguageModelFeedback.Issue.Category, explanation: String?)](./issue/init%28category,explanation%29.md)
   Creates an issue.
-- [LanguageModelFeedback.Issue.Category](languagemodelfeedback/issue/category.md)
+- [LanguageModelFeedback.Issue.Category](./issue/category.md)
   Categories for model response issues.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [LanguageModelFeedback.Sentiment](languagemodelfeedback/sentiment.md)
+### Feedback types
+- [LanguageModelFeedback.Sentiment](./sentiment.md)
   A sentiment regarding the model’s response.
 
 

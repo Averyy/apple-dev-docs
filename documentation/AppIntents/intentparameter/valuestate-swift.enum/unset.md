@@ -1,7 +1,8 @@
 # IntentParameter.ValueState.unset
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The parameter was never provided a value
 

@@ -1,14 +1,15 @@
 # KF_INTERRUPT_MASKED_DEBUG_STACKSHOT_OVRD
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 KF_INTERRUPT_MASKED_DEBUG_STACKSHOT_OVRD
 ```
 

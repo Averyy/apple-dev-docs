@@ -1,7 +1,8 @@
 # colorBackground
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background to use for rendering with a camera.
 

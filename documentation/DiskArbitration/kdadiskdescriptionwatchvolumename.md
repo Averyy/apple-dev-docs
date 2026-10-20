@@ -1,7 +1,8 @@
 # kDADiskDescriptionWatchVolumeName
 
 **Framework**: Disk Arbitration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -13,17 +14,22 @@
 var kDADiskDescriptionWatchVolumeName: Unmanaged<CFArray>
 ```
 
+```c
+extern CFArrayRef kDADiskDescriptionWatchVolumeName;
+```
+
 #### Discussion
 
 Predefined CFArray object containing a set of disk description keys appropriate for watching volume name changes using DARegisterDiskDescriptionChangedCallback().
 
 ## See Also
 
-- [var kDADiskDescriptionMatchMediaUnformatted: Unmanaged<CFDictionary>](kdadiskdescriptionmatchmediaunformatted.md)
-- [var kDADiskDescriptionMatchMediaWhole: Unmanaged<CFDictionary>](kdadiskdescriptionmatchmediawhole.md)
-- [var kDADiskDescriptionMatchVolumeMountable: Unmanaged<CFDictionary>](kdadiskdescriptionmatchvolumemountable.md)
-- [var kDADiskDescriptionMatchVolumeUnrecognized: Unmanaged<CFDictionary>](kdadiskdescriptionmatchvolumeunrecognized.md)
-- [var kDADiskDescriptionWatchVolumePath: Unmanaged<CFArray>](kdadiskdescriptionwatchvolumepath.md)
+### Constants
+- [var kDADiskDescriptionMatchMediaUnformatted: Unmanaged<CFDictionary>](./kdadiskdescriptionmatchmediaunformatted.md)
+- [var kDADiskDescriptionMatchMediaWhole: Unmanaged<CFDictionary>](./kdadiskdescriptionmatchmediawhole.md)
+- [var kDADiskDescriptionMatchVolumeMountable: Unmanaged<CFDictionary>](./kdadiskdescriptionmatchvolumemountable.md)
+- [var kDADiskDescriptionMatchVolumeUnrecognized: Unmanaged<CFDictionary>](./kdadiskdescriptionmatchvolumeunrecognized.md)
+- [var kDADiskDescriptionWatchVolumePath: Unmanaged<CFArray>](./kdadiskdescriptionwatchvolumepath.md)
 
 
 ---

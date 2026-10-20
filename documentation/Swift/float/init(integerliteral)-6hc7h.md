@@ -1,7 +1,8 @@
 # init(integerLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -18,18 +19,21 @@
 init(integerLiteral value: Self)
 ```
 
+Available when `Self` conforms to `_ExpressibleByBuiltinIntegerLiteral`.
+
 ## See Also
 
-- [init()](float/init.md)
-- [init(integerLiteral: Int64)](float/init(integerliteral:).md)
+### Infrequently Used Functionality
+- [init()](./init%28%29.md)
+- [init(integerLiteral: Int64)](./init%28integerliteral%29.md)
   Creates an instance initialized to the specified integer value.
-- [init(floatLiteral: Float)](float/init(floatliteral:).md)
+- [init(floatLiteral: Float)](./init%28floatliteral%29.md)
   Creates an instance initialized to the specified floating-point value.
-- [func advanced(by: Float) -> Float](float/advanced(by:).md)
+- [func advanced(by: Float) -> Float](./advanced%28by%29.md)
   Returns a value that is offset the specified distance from this value.
-- [func distance(to: Float) -> Float](float/distance(to:).md)
+- [func distance(to: Float) -> Float](./distance%28to%29.md)
   Returns the distance from this value to the given value, expressed as a stride.
-- [func write<Target>(to: inout Target)](float/write(to:).md)
+- [func write<Target>(to: inout Target)](./write%28to%29.md)
   Writes a textual representation of this instance into the given output stream.
 
 

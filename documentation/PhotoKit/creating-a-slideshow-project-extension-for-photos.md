@@ -1,6 +1,8 @@
 # Creating a Slideshow Project Extension for Photos
 
-**Framework**: PhotoKit
+**Framework**: PhotoKit  
+**Role**: Sample Code  
+**Download**: [CreatingASlideshowProjectExtensionForPhotos.zip](https://docs-assets.developer.apple.com/published/47b788a396e5/CreatingASlideshowProjectExtensionForPhotos.zip)
 
 Augment the macOS Photos app with extensions that support project creation.
 
@@ -73,9 +75,9 @@ func photoLibraryDidChange(_ changeInstance: PHChange) {
 
 ##### Support Copy and Paste
 
-If your extension handles the paste action, implement the [`validateMenuItem:`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/validatemenuitem:) delegate method to handle pasteboard contents.
+If your extension handles the paste action, implement the [`validateMenuItem:`](../ObjectiveC/nsobject-swift.class/validatemenuitem_.md) delegate method to handle pasteboard contents.
 
-```None
+```
 func validateMenuItem(_ menuItem: NSMenuItem) -> Bool {
     var canHandlePaste = false
     if menuItem.action == #selector(paste(_:)) {
@@ -87,13 +89,14 @@ func validateMenuItem(_ menuItem: NSMenuItem) -> Bool {
 
 ## See Also
 
-- [Browsing and Modifying Photo Albums](browsing-and-modifying-photo-albums.md)
+### Sample code
+- [Browsing and Modifying Photo Albums](./browsing-and-modifying-photo-albums.md)
   Help people organize their photos into albums and browse photo collections in a grid-based layout using PhotoKit.
-- [Selecting Photos and Videos in iOS](selecting-photos-and-videos-in-ios.md)
+- [Selecting Photos and Videos in iOS](./selecting-photos-and-videos-in-ios.md)
   Improve the user experience of finding and selecting assets by using the Photos picker.
-- [Bringing Photos picker to your SwiftUI app](bringing-photos-picker-to-your-swiftui-app.md)
+- [Bringing Photos picker to your SwiftUI app](./bringing-photos-picker-to-your-swiftui-app.md)
   Select media assets by using a Photos picker view that SwiftUI provides.
-- [Implementing an inline Photos picker](implementing-an-inline-photos-picker.md)
+- [Implementing an inline Photos picker](./implementing-an-inline-photos-picker.md)
   Embed a system-provided, half-height Photos picker into your app’s view.
 
 

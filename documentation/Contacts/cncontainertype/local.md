@@ -1,7 +1,8 @@
 # CNContainerType.local
 
 **Framework**: Contacts  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A container for contacts only stored locally on the device.
 
@@ -19,17 +20,22 @@ A container for contacts only stored locally on the device.
 case local
 ```
 
+```c
+CNContainerTypeLocal
+```
+
 #### Discussion
 
 There is only one local container for a device.
 
 ## See Also
 
-- [CNContainerType.exchange](cncontainertype/exchange.md)
+### Constants
+- [CNContainerType.exchange](./exchange.md)
   A container for contacts stored in an Exchange folder from an Exchange server.
-- [CNContainerType.cardDAV](cncontainertype/carddav.md)
+- [CNContainerType.cardDAV](./carddav.md)
   A container for contacts stored in an CardDAV server, such as iCloud.
-- [CNContainerType.unassigned](cncontainertype/unassigned.md)
+- [CNContainerType.unassigned](./unassigned.md)
   A container where the system hasn’t assigned the container type.
 
 

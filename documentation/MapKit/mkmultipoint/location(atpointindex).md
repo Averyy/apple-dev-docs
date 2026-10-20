@@ -1,7 +1,8 @@
 # location(atPointIndex:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Translates a point index into a unit distance along the shape.
 
@@ -20,9 +21,13 @@ Translates a point index into a unit distance along the shape.
 func location(atPointIndex index: Int) -> CGFloat
 ```
 
+```objc
+- (CGFloat) locationAtPointIndex:(NSUInteger) index;
+```
+
 #### Return Value
 
-A [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) value that indicates the unit distance along the shape.
+A [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md) value that indicates the unit distance along the shape.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ A [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-s
 
 ## See Also
 
-- [func points() -> UnsafeMutablePointer<MKMapPoint>](mkmultipoint/points.md)
+### Accessing the points in the shape
+- [func points() -> UnsafeMutablePointer<MKMapPoint>](./points%28%29.md)
   Returns an array of map points associated with the shape.
-- [var pointCount: Int](mkmultipoint/pointcount.md)
+- [var pointCount: Int](./pointcount.md)
   The number of points associated with the shape.
-- [func locations(at: IndexSet) -> [CGFloat]](mkmultipoint/locations(at:).md)
+- [func locations(at: IndexSet) -> [CGFloat]](./locations%28at%29.md)
   Translates a point index set into a unit distance along the shape.
 
 

@@ -1,13 +1,14 @@
 # exec
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Properties of an event that indicates the execution of a process.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,19 +16,24 @@ Properties of an event that indicates the execution of a process.
 var exec: es_event_exec_t { get set }
 ```
 
+```c
+es_event_exec_t exec;
+```
+
 ## See Also
 
-- [var chdir: es_event_chdir_t](es_events_t/chdir.md)
+### Process Events
+- [var chdir: es_event_chdir_t](./chdir.md)
   Properties of an event that indicates a change to a process’s working directory.
-- [var chroot: es_event_chroot_t](es_events_t/chroot.md)
+- [var chroot: es_event_chroot_t](./chroot.md)
   Properties of an event that indicates a change to a process’s root directory.
-- [var fork: es_event_fork_t](es_events_t/fork.md)
+- [var fork: es_event_fork_t](./fork.md)
   Properties of an event that indicates the forking of a process.
-- [var proc_check: es_event_proc_check_t](es_events_t/proc_check.md)
+- [var proc_check: es_event_proc_check_t](./proc_check.md)
   Properties of an event that indicate the retrieval of process information.
-- [var signal: es_event_signal_t](es_events_t/signal.md)
+- [var signal: es_event_signal_t](./signal.md)
   Properties of an event that indicates the sending of a signal to a process.
-- [var exit: es_event_exit_t](es_events_t/exit.md)
+- [var exit: es_event_exit_t](./exit.md)
   Properties of an event that indicates a process exiting.
 
 

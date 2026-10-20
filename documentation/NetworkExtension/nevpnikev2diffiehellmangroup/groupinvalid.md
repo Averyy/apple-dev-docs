@@ -1,7 +1,8 @@
 # NEVPNIKEv2DiffieHellmanGroup.groupInvalid
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value indicating the group is not a valid Diffie-Hellman group.
 
@@ -19,27 +20,32 @@ A value indicating the group is not a valid Diffie-Hellman group.
 case groupInvalid
 ```
 
+```c
+NEVPNIKEv2DiffieHellmanGroupInvalid
+```
+
 ## See Also
 
-- [NEVPNIKEv2DiffieHellmanGroup.group14](nevpnikev2diffiehellmangroup/group14.md)
+### Diffie-Hellman groups
+- [NEVPNIKEv2DiffieHellmanGroup.group14](./group14.md)
   Diffie Hellman group 14 (2048-bit modular exponential [MODP]).
-- [NEVPNIKEv2DiffieHellmanGroup.group15](nevpnikev2diffiehellmangroup/group15.md)
+- [NEVPNIKEv2DiffieHellmanGroup.group15](./group15.md)
   Diffie Hellman group 15 (3072-bit modular exponential [MODP]).
-- [NEVPNIKEv2DiffieHellmanGroup.group16](nevpnikev2diffiehellmangroup/group16.md)
+- [NEVPNIKEv2DiffieHellmanGroup.group16](./group16.md)
   Diffie Hellman group 16 (4096-bit modular exponential [MODP]).
-- [NEVPNIKEv2DiffieHellmanGroup.group17](nevpnikev2diffiehellmangroup/group17.md)
+- [NEVPNIKEv2DiffieHellmanGroup.group17](./group17.md)
   Diffie Hellman group 17 (6144-bit modular exponential [MODP]).
-- [NEVPNIKEv2DiffieHellmanGroup.group18](nevpnikev2diffiehellmangroup/group18.md)
+- [NEVPNIKEv2DiffieHellmanGroup.group18](./group18.md)
   Diffie Hellman group 18 (8192-bit modular exponential [MODP]).
-- [NEVPNIKEv2DiffieHellmanGroup.group19](nevpnikev2diffiehellmangroup/group19.md)
+- [NEVPNIKEv2DiffieHellmanGroup.group19](./group19.md)
   Diffie Hellman group 19 (256-bit random elliptic curve group over GF[P] [ECP]).
-- [NEVPNIKEv2DiffieHellmanGroup.group20](nevpnikev2diffiehellmangroup/group20.md)
+- [NEVPNIKEv2DiffieHellmanGroup.group20](./group20.md)
   Diffie Hellman group 20 (384-bit random elliptic curve group over GF[P] [ECP]).
-- [NEVPNIKEv2DiffieHellmanGroup.group21](nevpnikev2diffiehellmangroup/group21.md)
+- [NEVPNIKEv2DiffieHellmanGroup.group21](./group21.md)
   Diffie Hellman group 21 (521-bit random elliptic curve group over GF[P] [ECP]).
-- [NEVPNIKEv2DiffieHellmanGroup.group31](nevpnikev2diffiehellmangroup/group31.md)
+- [NEVPNIKEv2DiffieHellmanGroup.group31](./group31.md)
   Diffie Hellman group 31 (Curve 25519).
-- [NEVPNIKEv2DiffieHellmanGroup.group32](nevpnikev2diffiehellmangroup/group32.md)
+- [NEVPNIKEv2DiffieHellmanGroup.group32](./group32.md)
   Diffie Hellman group 32 (Curve 448).
 
 

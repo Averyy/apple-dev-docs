@@ -1,7 +1,8 @@
 # supplementsPrimaryContent
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether an event supplements the primary content and should present with the primary item.
 
@@ -20,19 +21,24 @@ A Boolean value that indicates whether an event supplements the primary content 
 var supplementsPrimaryContent: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL supplementsPrimaryContent;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var timelineOccupancy: AVPlayerInterstitialEvent.TimelineOccupancy](avplayerinterstitialevent/timelineoccupancy-swift.property.md)
+### Inspecting timeline occupancy
+- [var timelineOccupancy: AVPlayerInterstitialEvent.TimelineOccupancy](./timelineoccupancy-swift.property.md)
   An event’s occupancy on the integrated timeline.
-- [AVPlayerInterstitialEvent.TimelineOccupancy](avplayerinterstitialevent/timelineoccupancy-swift.enum.md)
+- [AVPlayerInterstitialEvent.TimelineOccupancy](./timelineoccupancy-swift.enum.md)
   Constants that specify how an event occupies time on an integrated timeline.
-- [var contentMayVary: Bool](avplayerinterstitialevent/contentmayvary.md)
+- [var contentMayVary: Bool](./contentmayvary.md)
   A Boolean value that indicates whether an event’s content is dynamic and the server may respond with different interstitial assets for other participants in a coordinated playback session.
-- [var plannedDuration: CMTime](avplayerinterstitialevent/plannedduration.md)
+- [var plannedDuration: CMTime](./plannedduration.md)
   The planned duration of the event.
 
 

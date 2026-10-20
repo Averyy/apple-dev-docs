@@ -1,7 +1,8 @@
 # NSAccessibilityElementLoading
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A role-based protocol that declares the minimum interface necessary for an accessibility element to support loading.
 
@@ -14,30 +15,35 @@ A role-based protocol that declares the minimum interface necessary for an acces
 protocol NSAccessibilityElementLoading : NSObjectProtocol
 ```
 
+```objc
+@protocol NSAccessibilityElementLoading <NSObject>
+```
+
 #### Overview
 
-You can further enhance the adopting element by implementing any of the information properties or action methods that the [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) protocol declares.
+You can further enhance the adopting element by implementing any of the information properties or action methods that the [`NSAccessibilityProtocol`](./nsaccessibilityprotocol.md) protocol declares.
 
 > **Note**:  Any class that adopts this protocol must implement all of its methods, and the required methods of any protocol it inherits from. The compiler may require you to override some methods that your ancestors have already implemented. Simply follow the compiler’s warnings, and reimplement these methods as necessary.
 
 ## Topics
 
 ### Supporting Accessibility
-- [func accessibilityElement(withToken: NSAccessibilityLoadingToken) -> (any NSAccessibilityElementProtocol)?](nsaccessibilityelementloading/accessibilityelement(withtoken:).md)
+- [func accessibilityElement(withToken: NSAccessibilityLoadingToken) -> (any NSAccessibilityElementProtocol)?](./nsaccessibilityelementloading/accessibilityelement%28withtoken%29.md)
   Loads the target accessibility element with the specified load token.
-- [func accessibilityRangeInTargetElement(withToken: NSAccessibilityLoadingToken) -> NSRange](nsaccessibilityelementloading/accessibilityrangeintargetelement(withtoken:).md)
+- [func accessibilityRangeInTargetElement(withToken: NSAccessibilityLoadingToken) -> NSRange](./nsaccessibilityelementloading/accessibilityrangeintargetelement%28withtoken%29.md)
   Returns the range that specifies the area of interest in text-based accessibility elements with the specified load token.
-- [typealias NSAccessibilityLoadingToken](nsaccessibilityloadingtoken.md)
+- [typealias NSAccessibilityLoadingToken](./nsaccessibilityloadingtoken.md)
   A token type for loading accessibility elements.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol NSAccessibilityProgressIndicator](nsaccessibilityprogressindicator.md)
+### Loading
+- [protocol NSAccessibilityProgressIndicator](./nsaccessibilityprogressindicator.md)
   A role-based protocol that declares the minimum interface necessary for an accessibility element to act as a progress indicator.
 
 

@@ -1,17 +1,22 @@
 # titleBarFont(ofSize:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the font used for window title bars, in the specified size.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func titleBarFont(ofSize fontSize: CGFloat) -> NSFont
+```
+
+```objc
++ (NSFont *) titleBarFontOfSize:(CGFloat) fontSize;
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ A font object of the specified size.
 
 #### Discussion
 
-If `fontSize` is 0 or negative, returns the title bar font at the default size. This method is equivalent to [`boldSystemFont(ofSize:)`](nsfont/boldsystemfont(ofsize:).md).
+If `fontSize` is 0 or negative, returns the title bar font at the default size. This method is equivalent to [`boldSystemFont(ofSize:)`](./boldsystemfont%28ofsize%29.md).
 
 ## Parameters
 
@@ -28,23 +33,24 @@ If `fontSize` is 0 or negative, returns the title bar font at the default size. 
 
 ## See Also
 
-- [class func labelFont(ofSize: CGFloat) -> NSFont](nsfont/labelfont(ofsize:).md)
+### Creating UI Element Fonts
+- [class func labelFont(ofSize: CGFloat) -> NSFont](./labelfont%28ofsize%29.md)
   Returns the font used for standard interface labels in the specified size.
-- [class func messageFont(ofSize: CGFloat) -> NSFont](nsfont/messagefont(ofsize:).md)
+- [class func messageFont(ofSize: CGFloat) -> NSFont](./messagefont%28ofsize%29.md)
   Returns the font used for standard interface items, such as button labels, menu items, and so on, in the specified size.
-- [class func menuBarFont(ofSize: CGFloat) -> NSFont](nsfont/menubarfont(ofsize:).md)
+- [class func menuBarFont(ofSize: CGFloat) -> NSFont](./menubarfont%28ofsize%29.md)
   Returns the font used for menu bar items, in the specified size.
-- [class func menuFont(ofSize: CGFloat) -> NSFont](nsfont/menufont(ofsize:).md)
+- [class func menuFont(ofSize: CGFloat) -> NSFont](./menufont%28ofsize%29.md)
   Returns the font used for menu items, in the specified size.
-- [class func controlContentFont(ofSize: CGFloat) -> NSFont](nsfont/controlcontentfont(ofsize:).md)
+- [class func controlContentFont(ofSize: CGFloat) -> NSFont](./controlcontentfont%28ofsize%29.md)
   Returns the font used for the content of controls in the specified size.
-- [class func paletteFont(ofSize: CGFloat) -> NSFont](nsfont/palettefont(ofsize:).md)
+- [class func paletteFont(ofSize: CGFloat) -> NSFont](./palettefont%28ofsize%29.md)
   Returns the font used for palette window title bars, in the specified size.
-- [class func toolTipsFont(ofSize: CGFloat) -> NSFont](nsfont/tooltipsfont(ofsize:).md)
+- [class func toolTipsFont(ofSize: CGFloat) -> NSFont](./tooltipsfont%28ofsize%29.md)
   Returns the font used for tool tips labels, in the specified size.
-- [class var labelFontSize: CGFloat](nsfont/labelfontsize.md)
+- [class var labelFontSize: CGFloat](./labelfontsize.md)
   Returns the size of the standard label font.
-- [class func systemFontSize(for: NSControl.ControlSize) -> CGFloat](nsfont/systemfontsize(for:).md)
+- [class func systemFontSize(for: NSControl.ControlSize) -> CGFloat](./systemfontsize%28for%29.md)
   Returns the font size used for the specified control size.
 
 

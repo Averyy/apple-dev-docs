@@ -1,25 +1,27 @@
 # address
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The address of the buffer in the current process’ virtual memory space.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 uint64_t address;
 ```
 
 ## See Also
 
-- [length](ioaddresssegment/length.md)
+### Getting the Address Information
+- [length](./length.md)
   The size of the memory buffer, in bytes.
 
 

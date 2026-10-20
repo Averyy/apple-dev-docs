@@ -1,7 +1,8 @@
 # aeBuildSyntaxBadHex
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A hex string contained characters other than hexadecimal digits.
 

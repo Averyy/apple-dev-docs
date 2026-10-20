@@ -1,7 +1,8 @@
 # default
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default font metrics object for content.
 
@@ -19,15 +20,20 @@ The default font metrics object for content.
 class var `default`: UIFontMetrics { get }
 ```
 
+```objc
+@property (class, strong, readonly) UIFontMetrics * defaultMetrics;
+```
+
 #### Discussion
 
-The font metrics object in this property uses the [`body`](uifont/textstyle/body.md) style.
+The font metrics object in this property uses the [`body`](../uifont/textstyle/body.md) style.
 
 ## See Also
 
-- [init(forTextStyle: UIFont.TextStyle)](uifontmetrics/init(fortextstyle:).md)
+### Creating a Font Metrics Object
+- [init(forTextStyle: UIFont.TextStyle)](./init%28fortextstyle%29.md)
   Creates a font metrics object for the specified text style.
-- [UIFont.TextStyle](uifont/textstyle.md)
+- [UIFont.TextStyle](../uifont/textstyle.md)
   Constants that describe the preferred styles for fonts.
 
 

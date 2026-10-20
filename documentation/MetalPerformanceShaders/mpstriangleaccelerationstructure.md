@@ -1,17 +1,18 @@
 # MPSTriangleAccelerationStructure
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An acceleration structure built over triangles.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 13.0+
-- macOS 10.14+
-- tvOS 12.0+
-- visionOS 1.0+
+- iOS 12.0+ - Deprecated in 17.0
+- iPadOS 12.0+ - Deprecated in 17.0
+- Mac Catalyst 13.0+ - Deprecated in 17.0
+- macOS 10.14+ - Deprecated in 14.0
+- tvOS 12.0+ - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
@@ -19,37 +20,42 @@ An acceleration structure built over triangles.
 class MPSTriangleAccelerationStructure
 ```
 
+```objc
+@interface MPSTriangleAccelerationStructure : MPSPolygonAccelerationStructure
+```
+
 ## Topics
 
 ### Instance Properties
-- [var triangleCount: Int](mpstriangleaccelerationstructure/trianglecount.md)
+- [var triangleCount: Int](./mpstriangleaccelerationstructure/trianglecount.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSPolygonAccelerationStructure](mpspolygonaccelerationstructure.md)
+- [MPSPolygonAccelerationStructure](./mpspolygonaccelerationstructure.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Accelerating ray tracing and motion blur using Metal](../metal/accelerating-ray-tracing-and-motion-blur-using-metal.md)
+### Ray Tracing
+- [Accelerating ray tracing and motion blur using Metal](../Metal/accelerating-ray-tracing-and-motion-blur-using-metal.md)
   Generate ray-traced images with motion blur using GPU-based parallel processing.
-- [class MPSRayIntersector](mpsrayintersector.md)
+- [class MPSRayIntersector](./mpsrayintersector.md)
   A kernel that performs intersection tests between rays and geometry.
-- [class MPSAccelerationStructureGroup](mpsaccelerationstructuregroup.md)
+- [class MPSAccelerationStructureGroup](./mpsaccelerationstructuregroup.md)
   A group of acceleration structures.
-- [class MPSInstanceAccelerationStructure](mpsinstanceaccelerationstructure.md)
+- [class MPSInstanceAccelerationStructure](./mpsinstanceaccelerationstructure.md)
   An acceleration structure built over instances of other acceleration structures.
-- [class MPSAccelerationStructure](mpsaccelerationstructure.md)
+- [class MPSAccelerationStructure](./mpsaccelerationstructure.md)
   The base class for data structures that are built over geometry and used to accelerate ray tracing.
 
 

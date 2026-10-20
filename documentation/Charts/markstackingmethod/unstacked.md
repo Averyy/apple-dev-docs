@@ -1,7 +1,8 @@
 # unstacked
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Don’t stack marks.
 

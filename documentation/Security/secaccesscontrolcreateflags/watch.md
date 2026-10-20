@@ -1,17 +1,22 @@
 # watch
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Constraint to access an item with a watch.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 15.0 (renamed: SecAccessControlCreateFlags.companion)
 
 ## Declaration
 
 ```swift
 static var watch: SecAccessControlCreateFlags { get }
+```
+
+```c
+kSecAccessControlWatch
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # init(errors:paymentSummaryItems:shippingMethods:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shipping contact update with your specified payment summary items and shipping methods.
 
@@ -19,9 +20,13 @@ Creates a shipping contact update with your specified payment summary items and 
 init(errors: [any Error]?, paymentSummaryItems: [PKPaymentSummaryItem], shippingMethods: [PKShippingMethod])
 ```
 
+```objc
+- (instancetype) initWithErrors:(NSArray<NSError *> *) errors paymentSummaryItems:(NSArray<PKPaymentSummaryItem *> *) paymentSummaryItems shippingMethods:(NSArray<PKShippingMethod *> *) shippingMethods;
+```
+
 #### Discussion
 
-Use the `errors` array to specify any errors in the shipping method that the user must resolve. For more information on creating user errors, see [`PKPaymentError`](pkpaymenterror.md).
+Use the `errors` array to specify any errors in the shipping method that the user must resolve. For more information on creating user errors, see [`PKPaymentError`](../pkpaymenterror.md).
 
 ## Parameters
 

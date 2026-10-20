@@ -1,7 +1,8 @@
 # VNCoreMLModel
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for the model to use with Vision requests.
 
@@ -19,41 +20,46 @@ A container for the model to use with Vision requests.
 class VNCoreMLModel
 ```
 
+```objc
+@interface VNCoreMLModel : NSObject
+```
+
 #### Overview
 
-A [`Core ML`](https://developer.apple.com/documentation/coreml) model encapsulates the information trained from a data set used to drive Vision recognition requests. See [`Getting a Core ML Model`](https://developer.apple.com/documentation/coreml/getting-a-core-ml-model) for instructions on training your own model. Once you train the model, use this class to initialize a [`VNCoreMLRequest`](vncoremlrequest.md) for identification.
+A [Core ML](../CoreML/CoreML.md) model encapsulates the information trained from a data set used to drive Vision recognition requests. See [Getting a Core ML Model](../CoreML/getting-a-core-ml-model.md) for instructions on training your own model. Once you train the model, use this class to initialize a [`VNCoreMLRequest`](./vncoremlrequest.md) for identification.
 
 ## Topics
 
 ### Initializing a Model
-- [convenience init(for: MLModel) throws](vncoremlmodel/init(for:).md)
+- [convenience init(for: MLModel) throws](./vncoremlmodel/init%28for%29.md)
   Creates a model container to use with a Core ML request.
-- [convenience init(forMLModel: MLModel) throws](vncoremlmodel/init(formlmodel:).md)
+- [convenience init(forMLModel: MLModel) throws](./vncoremlmodel/init%28formlmodel%29.md)
 ### Providing Features
-- [var featureProvider: (any MLFeatureProvider)?](vncoremlmodel/featureprovider.md)
+- [var featureProvider: (any MLFeatureProvider)?](./vncoremlmodel/featureprovider.md)
   An optional object to support inputs outside Vision.
-- [var inputImageFeatureName: String](vncoremlmodel/inputimagefeaturename.md)
+- [var inputImageFeatureName: String](./vncoremlmodel/inputimagefeaturename.md)
   The name of the feature value that Vision sets from the request handler.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [convenience init(model: VNCoreMLModel)](vncoremlrequest/init(model:).md)
+### Initializing with a Core ML Model
+- [convenience init(model: VNCoreMLModel)](./vncoremlrequest/init%28model%29.md)
   Creates a model container to use with an image analysis request based on the model you provide.
-- [init(model: VNCoreMLModel, completionHandler: VNRequestCompletionHandler?)](vncoremlrequest/init(model:completionhandler:).md)
+- [init(model: VNCoreMLModel, completionHandler: VNRequestCompletionHandler?)](./vncoremlrequest/init%28model,completionhandler%29.md)
   Creates a model container to use with an image analysis request based on the model you provide, with an optional completion handler.
-- [var model: VNCoreMLModel](vncoremlrequest/model.md)
+- [var model: VNCoreMLModel](./vncoremlrequest/model.md)
   The model to base the image analysis request on.
 
 

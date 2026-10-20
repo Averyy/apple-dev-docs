@@ -1,7 +1,8 @@
 # kVTCompressionPreset_ConsistentQuality
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 27.0+
@@ -17,13 +18,17 @@
 let kVTCompressionPreset_ConsistentQuality: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPreset_ConsistentQuality;
+```
+
 #### Discussion
 
 A preset to achieve consistent quality encoding across frames.
 
 An encoder configured using this preset is expected to achieve consistent quality across frames with relaxed rate-control constraints.
 
-```None
+```
 See also kVTCompressionPreset_HighQuality, kVTCompressionPreset_Balanced, kVTCompressionPreset_HighSpeed, kVTCompressionPreset_VideoConferencing.
 ```
 

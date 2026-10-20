@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The version of the structure. The value of thisfield must be `0`.
 
@@ -12,6 +13,10 @@ The version of the structure. The value of thisfield must be `0`.
 
 ```swift
 var version: CFIndex
+```
+
+```c
+CFIndex version;
 ```
 
 

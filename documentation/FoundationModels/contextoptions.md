@@ -1,7 +1,8 @@
 # ContextOptions
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that configure details that should appear in the prompt.
 
@@ -21,50 +22,51 @@ struct ContextOptions
 
 ## Mentions
 
-- [Adding server-side intelligence with Private Cloud Compute](adding-server-side-intelligence-with-private-cloud-compute.md)
+- [Adding server-side intelligence with Private Cloud Compute](./adding-server-side-intelligence-with-private-cloud-compute.md)
 
 #### Overview
 
-Create a [`ContextOptions`](contextoptions.md) structure when you need to bias the model’s behavior by adjusting how the model receives your prompt.
+Create a [`ContextOptions`](./contextoptions.md) structure when you need to bias the model’s behavior by adjusting how the model receives your prompt.
 
-When a property is `nil`, the framework defers to the underlying [`LanguageModel`](languagemodel.md) to select an appropriate value. Each model, and each version of a given model, may pick a different default, and the framework doesn’t guarantee a specific value or that the value remains stable across OS or model updates.
+When a property is `nil`, the framework defers to the underlying [`LanguageModel`](./languagemodel.md) to select an appropriate value. Each model, and each version of a given model, may pick a different default, and the framework doesn’t guarantee a specific value or that the value remains stable across OS or model updates.
 
 ## Topics
 
 ### Creating context options
-- [init(includeSchemaInPrompt: Bool?, reasoningLevel: ContextOptions.ReasoningLevel?)](contextoptions/init(includeschemainprompt:reasoninglevel:).md)
+- [init(includeSchemaInPrompt: Bool?, reasoningLevel: ContextOptions.ReasoningLevel?)](./contextoptions/init%28includeschemainprompt,reasoninglevel%29.md)
   Creates options that control how the model is prompted.
 ### Configuring the reasoning level
-- [var reasoningLevel: ContextOptions.ReasoningLevel?](contextoptions/reasoninglevel-swift.property.md)
+- [var reasoningLevel: ContextOptions.ReasoningLevel?](./contextoptions/reasoninglevel-swift.property.md)
   A value that controls the amount of reasoning the model is allowed to output before producing a response.
-- [ContextOptions.ReasoningLevel](contextoptions/reasoninglevel-swift.enum.md)
+- [ContextOptions.ReasoningLevel](./contextoptions/reasoninglevel-swift.enum.md)
   A level of reasoning the model is allowed to output before producing a response.
 ### Including the schema
-- [var includeSchemaInPrompt: Bool?](contextoptions/includeschemainprompt.md)
+- [var includeSchemaInPrompt: Bool?](./contextoptions/includeschemainprompt.md)
   A Boolean value that indicates whether to inject the schema into the prompt to bias the model.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
+### Sessions and prompts
+- [Prompting an on-device foundation model](./prompting-an-on-device-foundation-model.md)
   Tailor your prompts to get effective results from an on-device model.
-- [Managing the context window](managing-the-context-window.md)
+- [Managing the context window](./managing-the-context-window.md)
   Optimize your app’s token usage when prompting a model with the Foundation Models framework.
-- [Updating prompts for new model versions](updating-prompts-for-new-model-versions.md)
+- [Updating prompts for new model versions](./updating-prompts-for-new-model-versions.md)
   Manage the prompts your app uses by versioning them to make the most out of model improvements.
-- [class LanguageModelSession](languagemodelsession.md)
+- [class LanguageModelSession](./languagemodelsession.md)
   An object that represents a session that interacts with a language model.
-- [struct Instructions](instructions.md)
+- [struct Instructions](./instructions.md)
   Details you provide that define the model’s intended behavior on prompts.
-- [struct Prompt](prompt.md)
+- [struct Prompt](./prompt.md)
   A prompt from a person to the model.
-- [struct GenerationOptions](generationoptions.md)
+- [struct GenerationOptions](./generationoptions.md)
   Options that control how the model generates its response to a prompt.
 
 

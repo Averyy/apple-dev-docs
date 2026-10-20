@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance equivalent to the given `Range`.
 
@@ -19,6 +20,8 @@ Creates an instance equivalent to the given `Range`.
 ```swift
 init(_ other: Range<Bound>)
 ```
+
+Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
 #### Discussion
 

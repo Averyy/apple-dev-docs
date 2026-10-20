@@ -1,7 +1,8 @@
 # unsafeFlags(_:_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sets unsafe flags to pass arbitrary command-line flags to the corresponding build tool.
 
@@ -20,7 +21,7 @@ As the usage of the word “unsafe” implies, Swift Package Manager can’t saf
 
 As some build flags can be exploited for unsupported or malicious behavior, the use of unsafe flags makes the products containing this target ineligible for use by other packages.
 
-> **Note**: First available in PackageDescription 5.0.
+> **Since**: First available in PackageDescription 5.0.
 
 ## Parameters
 
@@ -29,9 +30,10 @@ As some build flags can be exploited for unsupported or malicious behavior, the 
 
 ## See Also
 
-- [static func linkedFramework(String, BuildSettingCondition?) -> LinkerSetting](linkersetting/linkedframework(_:_:).md)
+### Configuring Linker Settings
+- [static func linkedFramework(String, BuildSettingCondition?) -> LinkerSetting](./linkedframework%28_,_%29.md)
   Declares linkage to a system framework.
-- [static func linkedLibrary(String, BuildSettingCondition?) -> LinkerSetting](linkersetting/linkedlibrary(_:_:).md)
+- [static func linkedLibrary(String, BuildSettingCondition?) -> LinkerSetting](./linkedlibrary%28_,_%29.md)
   Declares linkage to a system library.
 
 

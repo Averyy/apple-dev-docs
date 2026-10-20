@@ -1,7 +1,8 @@
 # newInstance
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Requests that a new instance of the application be started, even if one is already running.
 

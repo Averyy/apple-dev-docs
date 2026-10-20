@@ -1,7 +1,8 @@
 # globalGain
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The overall gain adjustment that the audio unit applies to the signal, in decibels.
 
@@ -19,15 +20,20 @@ The overall gain adjustment that the audio unit applies to the signal, in decibe
 var globalGain: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float globalGain;
+```
+
 #### Discussion
 
 The default value is `0 db`. The valid range of values is `-96 db` to `24 db`.
 
 ## See Also
 
-- [class AVAudioUnitEQFilterParameters](avaudiouniteqfilterparameters.md)
+### Configuring equalizer bands
+- [class AVAudioUnitEQFilterParameters](../avaudiouniteqfilterparameters.md)
   An object that encapsulates the parameters that the equalizer uses.
-- [var bands: [AVAudioUnitEQFilterParameters]](avaudiouniteq/bands.md)
+- [var bands: [AVAudioUnitEQFilterParameters]](./bands.md)
   An array of equalizer filter parameters.
 
 

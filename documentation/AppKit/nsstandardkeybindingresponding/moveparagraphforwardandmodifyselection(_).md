@@ -1,10 +1,11 @@
 # moveParagraphForwardAndModifySelection(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,13 +13,18 @@
 optional func moveParagraphForwardAndModifySelection(_ sender: Any?)
 ```
 
+```objc
+- (void) moveParagraphForwardAndModifySelection:(id) sender;
+```
+
 ## See Also
 
-- [func moveParagraphBackwardAndModifySelection(Any?)](nsstandardkeybindingresponding/moveparagraphbackwardandmodifyselection(_:).md)
-- [func moveToBeginningOfParagraph(Any?)](nsstandardkeybindingresponding/movetobeginningofparagraph(_:).md)
-- [func moveToBeginningOfParagraphAndModifySelection(Any?)](nsstandardkeybindingresponding/movetobeginningofparagraphandmodifyselection(_:).md)
-- [func moveToEndOfParagraph(Any?)](nsstandardkeybindingresponding/movetoendofparagraph(_:).md)
-- [func moveToEndOfParagraphAndModifySelection(Any?)](nsstandardkeybindingresponding/movetoendofparagraphandmodifyselection(_:).md)
+### Moving the Selection in Paragraphs
+- [func moveParagraphBackwardAndModifySelection(Any?)](./moveparagraphbackwardandmodifyselection%28_%29.md)
+- [func moveToBeginningOfParagraph(Any?)](./movetobeginningofparagraph%28_%29.md)
+- [func moveToBeginningOfParagraphAndModifySelection(Any?)](./movetobeginningofparagraphandmodifyselection%28_%29.md)
+- [func moveToEndOfParagraph(Any?)](./movetoendofparagraph%28_%29.md)
+- [func moveToEndOfParagraphAndModifySelection(Any?)](./movetoendofparagraphandmodifyselection%28_%29.md)
 
 
 ---

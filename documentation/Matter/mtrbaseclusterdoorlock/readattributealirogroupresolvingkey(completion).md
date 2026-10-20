@@ -1,7 +1,8 @@
 # readAttributeAliroGroupResolvingKey(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeAliroGroupResolvingKey(completion: @escaping @Sendable (Data?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeAliroGroupResolvingKey() async throws -> Data
+```
+
+```objc
+- (void) readAttributeAliroGroupResolvingKeyWithCompletion:(void (^)(NSData *value, NSError *error)) completion;
 ```
 
 

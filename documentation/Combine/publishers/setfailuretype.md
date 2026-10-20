@@ -1,7 +1,8 @@
 # Publishers.SetFailureType
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that appears to send a specified failure type.
 
@@ -27,40 +28,41 @@ The publisher can’t actually fail with the specified type and finishes normall
 ## Topics
 
 ### Creating a set failure type publisher
-- [init(upstream: Upstream)](publishers/setfailuretype/init(upstream:).md)
+- [init(upstream: Upstream)](./setfailuretype/init%28upstream%29.md)
   Creates a publisher that appears to send a specified failure type.
 ### Setting failure type
-- [func setFailureType<E>(to: E.Type) -> Publishers.SetFailureType<Upstream, E>](publishers/setfailuretype/setfailuretype(to:).md)
+- [func setFailureType<E>(to: E.Type) -> Publishers.SetFailureType<Upstream, E>](./setfailuretype/setfailuretype%28to%29.md)
   Changes the failure type declared by the upstream publisher.
 ### Declaring supporting types
-- [Publishers.SetFailureType.Output](publishers/setfailuretype/output.md)
+- [Publishers.SetFailureType.Output](./setfailuretype/output.md)
   The kind of values published by this publisher.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/setfailuretype/upstream.md)
+- [let upstream: Upstream](./setfailuretype/upstream.md)
   The publisher from which this publisher receives elements.
 ### Comparing publishers
-- [static func == (Publishers.SetFailureType<Upstream, Failure>, Publishers.SetFailureType<Upstream, Failure>) -> Bool](publishers/setfailuretype/==(_:_:).md)
+- [static func == (Publishers.SetFailureType<Upstream, Failure>, Publishers.SetFailureType<Upstream, Failure>) -> Bool](./setfailuretype/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
 ### Default Implementations
-- [Equatable Implementations](publishers/setfailuretype/equatable-implementations.md)
+- [Equatable Implementations](./setfailuretype/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Publisher](publisher.md)
+- [Equatable](../../Swift/equatable.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.Map](publishers/map.md)
+### Mapping elements
+- [Publishers.Map](./map.md)
   A publisher that transforms all elements from the upstream publisher with a provided closure.
-- [Publishers.TryMap](publishers/trymap.md)
+- [Publishers.TryMap](./trymap.md)
   A publisher that transforms all elements from the upstream publisher with a provided error-throwing closure.
-- [Publishers.MapError](publishers/maperror.md)
+- [Publishers.MapError](./maperror.md)
   A publisher that converts any failure from the upstream publisher into a new error.
-- [Publishers.Scan](publishers/scan.md)
+- [Publishers.Scan](./scan.md)
   A publisher that transforms elements from the upstream publisher by providing the current element to a closure along with the last value returned by the closure.
-- [Publishers.TryScan](publishers/tryscan.md)
+- [Publishers.TryScan](./tryscan.md)
   A publisher that transforms elements from the upstream publisher by providing the current element to a failable closure along with the last value returned by the closure.
 
 

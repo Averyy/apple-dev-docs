@@ -1,17 +1,18 @@
 # contains(_:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the geographic area contains the specified coordinate.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 9.0+
-- watchOS 2.0+
+- iOS 7.0+ - Deprecated in 27.2
+- iPadOS 7.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.10+ - Deprecated in 27.2
+- tvOS 9.0+ - Deprecated in 27.0
+- watchOS 2.0+ - Deprecated in 27.2
 
 ## Declaration
 
@@ -19,9 +20,13 @@ Returns a Boolean value indicating whether the geographic area contains the spec
 func contains(_ coordinate: CLLocationCoordinate2D) -> Bool
 ```
 
+```objc
+- (BOOL) containsCoordinate:(CLLocationCoordinate2D) coordinate;
+```
+
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the coordinate lies within the region’s boundaries, or [`false`](https://developer.apple.com/documentation/swift/false) if it doesn’t.
+Returns [`true`](../../Swift/true.md) if the coordinate lies within the region’s boundaries, or [`false`](../../Swift/false.md) if it doesn’t.
 
 ## Parameters
 

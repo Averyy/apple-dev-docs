@@ -1,7 +1,8 @@
 # automaticallyUpdatesContentConfiguration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the view automatically updates its content configuration when its state changes.
 
@@ -18,23 +19,28 @@ A Boolean value that determines whether the view automatically updates its conte
 var automaticallyUpdatesContentConfiguration: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL automaticallyUpdatesContentConfiguration;
+```
+
 #### Discussion
 
-When this value is [`true`](https://developer.apple.com/documentation/swift/true), the cell automatically calls [`updated(for:)`](uicontentconfiguration-9eib5/updated(for:).md) on its [`contentConfiguration`](uitableviewheaderfooterview/contentconfiguration-6b4eg.md) when the view’s [`configurationState`](uitableviewheaderfooterview/configurationstate-7xj7r.md) changes, and applies the updated configuration back to the view. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+When this value is [`true`](../../Swift/true.md), the cell automatically calls [`updated(for:)`](../uicontentconfiguration-9eib5/updated%28for%29.md) on its [`contentConfiguration`](./contentconfiguration-6b4eg.md) when the view’s [`configurationState`](./configurationstate-7xj7r.md) changes, and applies the updated configuration back to the view. The default value is [`true`](../../Swift/true.md).
 
-If you override [`updateConfiguration(using:)`](uitableviewheaderfooterview/updateconfiguration(using:).md) to manually update and customize the content configuration, disable automatic updates by setting this property to [`false`](https://developer.apple.com/documentation/swift/false).
+If you override [`updateConfiguration(using:)`](./updateconfiguration%28using%29.md) to manually update and customize the content configuration, disable automatic updates by setting this property to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func defaultContentConfiguration() -> UIListContentConfiguration](uitableviewheaderfooterview/defaultcontentconfiguration.md)
+### Managing the content
+- [func defaultContentConfiguration() -> UIListContentConfiguration](./defaultcontentconfiguration%28%29.md)
   Retrieves a default list content configuration for the view’s style.
-- [var contentConfiguration: (any UIContentConfiguration)?](uitableviewheaderfooterview/contentconfiguration-6b4eg.md)
+- [var contentConfiguration: (any UIContentConfiguration)?](./contentconfiguration-6b4eg.md)
   The current content configuration of the view.
-- [var contentView: UIView](uitableviewheaderfooterview/contentview.md)
+- [var contentView: UIView](./contentview.md)
   The content view of the header or footer.
-- [var textLabel: UILabel?](uitableviewheaderfooterview/textlabel.md)
+- [var textLabel: UILabel?](./textlabel.md)
   A primary text label for the view.
-- [var detailTextLabel: UILabel?](uitableviewheaderfooterview/detailtextlabel.md)
+- [var detailTextLabel: UILabel?](./detailtextlabel.md)
   A detail text label for the view.
 
 

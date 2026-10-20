@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an assessment participant configuration instance.
 
@@ -17,9 +18,14 @@ Initializes an assessment participant configuration instance.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [class func new() -> Self](aeassessmentparticipantconfiguration/new.md)
+### Creating participant configuration instances
+- [class func new() -> Self](./new%28%29.md)
   Creates a new assessment participant configuration instance.
 
 

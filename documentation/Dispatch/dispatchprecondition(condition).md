@@ -1,7 +1,8 @@
 # dispatchPrecondition(condition:)
 
 **Framework**: Dispatch  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Checks a dispatch condition necessary for further execution.
 
@@ -11,7 +12,7 @@ Checks a dispatch condition necessary for further execution.
 - Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 
 ## Declaration
@@ -34,11 +35,12 @@ Use this function to detect conditions about the current execution context that 
 
 ## See Also
 
-- [class DispatchObject](dispatchobject.md)
+### Dispatch Objects
+- [class DispatchObject](./dispatchobject.md)
   The base class for most dispatch types.
-- [enum DispatchPredicate](dispatchpredicate.md)
+- [enum DispatchPredicate](./dispatchpredicate.md)
   Logical conditions to evaluate within a given execution context.
-- [Dispatch Objects](dispatch-objects.md)
+- [Dispatch Objects](./dispatch-objects.md)
   The basic behaviors supported by all dispatch types.
 
 

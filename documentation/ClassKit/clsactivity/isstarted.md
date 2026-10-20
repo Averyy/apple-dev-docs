@@ -1,7 +1,8 @@
 # isStarted
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether an activity is running.
 
@@ -18,13 +19,18 @@ A Boolean that indicates whether an activity is running.
 var isStarted: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly, getter=isStarted) BOOL started;
+```
+
 ## See Also
 
-- [func start()](clsactivity/start.md)
+### Starting and stopping an activity
+- [func start()](./start%28%29.md)
   Tells an activity to start recording duration and progress for a task.
-- [func stop()](clsactivity/stop.md)
+- [func stop()](./stop%28%29.md)
   Tells an activity to stop or pause recording duration and progress for a task.
-- [var duration: TimeInterval](clsactivity/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The cumulative time in seconds that an activity has been active.
 
 

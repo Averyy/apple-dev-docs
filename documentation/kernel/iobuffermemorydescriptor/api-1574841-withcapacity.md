@@ -1,7 +1,8 @@
 # withCapacity
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 Creates a buffer memory descriptor and allocates enough bytes to meet the specified capacity.
 
@@ -10,7 +11,7 @@ Creates a buffer memory descriptor and allocates enough bytes to meet the specif
 
 ## Declaration
 
-```swift
+```c
 static OSPtr<IOBufferMemoryDescriptor> withCapacity(vm_size_t capacity, IODirection withDirection, bool withContiguousMemory);
 ```
 
@@ -22,25 +23,26 @@ static OSPtr<IOBufferMemoryDescriptor> withCapacity(vm_size_t capacity, IODirect
 
 ## See Also
 
-- [inTaskWithOptions](iobuffermemorydescriptor/1813824-intaskwithoptions.md)
+### Creating a Memory Buffer Descriptor
+- [inTaskWithOptions](./api-1813824-intaskwithoptions.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [+ inTaskWithOptions](iobuffermemorydescriptor/1574847-intaskwithoptions.md)
+- [+ inTaskWithOptions](./api-1574847-intaskwithoptions.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [+ inTaskWithOptions](iobuffermemorydescriptor/3516446-intaskwithoptions.md)
+- [+ inTaskWithOptions](./api-3516446-intaskwithoptions.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [inTaskWithPhysicalMask](iobuffermemorydescriptor/1813825-intaskwithphysicalmask.md)
+- [inTaskWithPhysicalMask](./api-1813825-intaskwithphysicalmask.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [+ inTaskWithPhysicalMask](iobuffermemorydescriptor/1574843-intaskwithphysicalmask.md)
+- [+ inTaskWithPhysicalMask](./api-1574843-intaskwithphysicalmask.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [- initWithPhysicalMask](iobuffermemorydescriptor/1574833-initwithphysicalmask.md)
+- [- initWithPhysicalMask](./api-1574833-initwithphysicalmask.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [+ withOptions](iobuffermemorydescriptor/1574835-withoptions.md)
+- [+ withOptions](./api-1574835-withoptions.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [+ withBytes](iobuffermemorydescriptor/1574834-withbytes.md)
+- [+ withBytes](./api-1574834-withbytes.md)
   Creates a buffer memory descriptor and fills it with the specified bytes.
-- [+ withCopy](iobuffermemorydescriptor/3074961-withcopy.md)
+- [+ withCopy](./api-3074961-withcopy.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [- free](iobuffermemorydescriptor/3180456-free.md)
+- [- free](./api-3180456-free.md)
   Performs any final cleanup for the memory buffer descriptor object.
 
 

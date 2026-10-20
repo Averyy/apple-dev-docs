@@ -1,7 +1,8 @@
 # init(format:lenient:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a parse strategy instance using the specified integer format style.
 
@@ -20,16 +21,19 @@ Creates a parse strategy instance using the specified integer format style.
 init<Value>(format: Format, lenient: Bool = true) where Format == IntegerFormatStyle<Value>, Value : BinaryInteger
 ```
 
+Available when `Format` conforms to `FormatStyle` and `Format.FormatInput` conforms to `BinaryInteger`.
+
 ## Parameters
 
-- `format`: A configured [`IntegerFormatStyle`](integerformatstyle.md) that describes the string format to parse.
+- `format`: A configured [`IntegerFormatStyle`](../integerformatstyle.md) that describes the string format to parse.
 - `lenient`: A Boolean value that indicates whether the parse strategy should permit some discrepencies when parsing. Defaults to `true`.
 
 ## See Also
 
-- [init<Value>(format: Format, lenient: Bool)](integerparsestrategy/init(format:lenient:)-7tox3.md)
+### Creating an integer parse strategy
+- [init<Value>(format: Format, lenient: Bool)](./init%28format,lenient%29-7tox3.md)
   Creates a parse strategy instance using the specified integer currency format style.
-- [init<Value>(format: Format, lenient: Bool)](integerparsestrategy/init(format:lenient:)-3gbvo.md)
+- [init<Value>(format: Format, lenient: Bool)](./init%28format,lenient%29-3gbvo.md)
   Creates a parse strategy instance using the specified integer percentage format style.
 
 

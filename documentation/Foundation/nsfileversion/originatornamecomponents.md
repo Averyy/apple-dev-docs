@@ -1,7 +1,8 @@
 # originatorNameComponents
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name components of the user who created this version of the file. Is nil if the file is not shared or if the current user is the originator.
 
@@ -16,6 +17,10 @@ The name components of the user who created this version of the file. Is nil if 
 
 ```swift
 var originatorNameComponents: PersonNameComponents? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSPersonNameComponents * originatorNameComponents;
 ```
 
 

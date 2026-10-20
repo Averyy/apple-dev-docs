@@ -1,7 +1,8 @@
 # PKEraserTool
 
 **Framework**: PencilKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A tool for erasing previously drawn content in a canvas view.
 
@@ -20,50 +21,51 @@ struct PKEraserTool
 
 #### Overview
 
-A [`PKEraserTool`](pkerasertool-swift.struct.md) object supports the deletion of content from a [`PKCanvasView`](pkcanvasview.md) object. The eraser tool’s type determines whether the canvas removes entire items or just the portion of an item that it touches.
+A [`PKEraserTool`](./pkerasertool-swift.struct.md) object supports the deletion of content from a [`PKCanvasView`](./pkcanvasview.md) object. The eraser tool’s type determines whether the canvas removes entire items or just the portion of an item that it touches.
 
-Create an eraser tool programmatically or display a [`PKToolPicker`](pktoolpicker.md) object and let the user select the eraser. Assign the resulting object to the [`tool`](pkcanvasview/tool-6str6.md) property of your [`PKCanvasView`](pkcanvasview.md) object. The canvas uses any subsequent touch sequences to erase content on the canvas.
+Create an eraser tool programmatically or display a [`PKToolPicker`](./pktoolpicker.md) object and let the user select the eraser. Assign the resulting object to the [`tool`](./pkcanvasview/tool-6str6.md) property of your [`PKCanvasView`](./pkcanvasview.md) object. The canvas uses any subsequent touch sequences to erase content on the canvas.
 
 ## Topics
 
 ### Creating an eraser tool
-- [init(PKEraserTool.EraserType)](pkerasertool-swift.struct/init(_:).md)
+- [init(PKEraserTool.EraserType)](./pkerasertool-swift.struct/init%28_%29.md)
   Creates an eraser tool object that removes objects wholly or partially from a canvas view.
-- [init(PKEraserTool.EraserType, width: CGFloat)](pkerasertool-swift.struct/init(_:width:).md)
+- [init(PKEraserTool.EraserType, width: CGFloat)](./pkerasertool-swift.struct/init%28_,width%29.md)
   Creates an eraser tool object with the specified width.
 ### Getting the eraser type
-- [var eraserType: PKEraserTool.EraserType](pkerasertool-swift.struct/erasertype-swift.property.md)
+- [var eraserType: PKEraserTool.EraserType](./pkerasertool-swift.struct/erasertype-swift.property.md)
   The behavior adopted by the eraser when deleting content.
-- [PKEraserTool.EraserType](pkerasertool-swift.struct/erasertype-swift.enum.md)
+- [PKEraserTool.EraserType](./pkerasertool-swift.struct/erasertype-swift.enum.md)
   Constants that indicate the behavior of the eraser.
 ### Specifying the width
-- [var width: CGFloat](pkerasertool-swift.struct/width.md)
+- [var width: CGFloat](./pkerasertool-swift.struct/width.md)
   The width of the eraser.
 ### Using reference types
-- [class PKEraserToolReference](pkerasertoolreference.md)
+- [class PKEraserToolReference](./pkerasertoolreference.md)
   A tool for erasing previously drawn content in a canvas view.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [PKTool](pktool-swift.protocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [PKTool](./pktool-swift.protocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Configuring the PencilKit tool picker](configuring-the-pencilkit-tool-picker.md)
+### Tools
+- [Configuring the PencilKit tool picker](./configuring-the-pencilkit-tool-picker.md)
   Incorporate a custom PencilKit tool picker with a variety of system and custom tools into a drawing app.
-- [class PKToolPicker](pktoolpicker.md)
+- [class PKToolPicker](./pktoolpicker.md)
   A tool palette that displays a selection of drawing tools and colors for tools that a person can choose from.
-- [struct PKInkingTool](pkinkingtool-swift.struct.md)
+- [struct PKInkingTool](./pkinkingtool-swift.struct.md)
   A structure that defines the drawing characteristics (width, color, pen style) to use when drawing lines on a canvas view.
-- [struct PKLassoTool](pklassotool-swift.struct.md)
+- [struct PKLassoTool](./pklassotool-swift.struct.md)
   A tool for selecting stroked lines and shapes in a canvas view.
-- [protocol PKTool](pktool-swift.protocol.md)
+- [protocol PKTool](./pktool-swift.protocol.md)
   An interface adopted by drawing and writing tools used by a canvas view.
 
 

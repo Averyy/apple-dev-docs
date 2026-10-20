@@ -1,14 +1,15 @@
 # kRegEntryNameTerminator
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kRegEntryNameTerminator = 0x00
 ```
 

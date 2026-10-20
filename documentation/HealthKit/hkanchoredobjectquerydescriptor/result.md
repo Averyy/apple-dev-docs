@@ -1,7 +1,8 @@
 # HKAnchoredObjectQueryDescriptor.Result
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of results from an anchored object query.
 
@@ -10,7 +11,7 @@ A set of results from an anchored object query.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -22,20 +23,21 @@ struct Result
 ## Topics
 
 ### Accessing the Results
-- [let addedSamples: [Sample]](hkanchoredobjectquerydescriptor/result/addedsamples.md)
+- [let addedSamples: [Sample]](./result/addedsamples.md)
   An array containing the matching samples added to the HealthKit store.
-- [let deletedObjects: [HKDeletedObject]](hkanchoredobjectquerydescriptor/result/deletedobjects.md)
+- [let deletedObjects: [HKDeletedObject]](./result/deletedobjects.md)
   An array of objects deleted from the HealthKit store.
-- [let newAnchor: HKQueryAnchor](hkanchoredobjectquerydescriptor/result/newanchor.md)
+- [let newAnchor: HKQueryAnchor](./result/newanchor.md)
   A value corresponding to the last sample that the anchor query has returned.
 
 ## See Also
 
-- [func result(for: HKHealthStore) async throws -> HKAnchoredObjectQueryDescriptor<Sample>.Result](hkanchoredobjectquerydescriptor/result(for:).md)
+### Running Queries
+- [func result(for: HKHealthStore) async throws -> HKAnchoredObjectQueryDescriptor<Sample>.Result](./result%28for%29.md)
   Runs a one-shot query and asynchronously returns a snapshot of the current matching results.
-- [func results(for: HKHealthStore) -> HKAnchoredObjectQueryDescriptor<Sample>.Results](hkanchoredobjectquerydescriptor/results(for:).md)
+- [func results(for: HKHealthStore) -> HKAnchoredObjectQueryDescriptor<Sample>.Results](./results%28for%29.md)
   Initiates a long-running query that returns its results using an asynchronous sequence.
-- [HKAnchoredObjectQueryDescriptor.Results](hkanchoredobjectquerydescriptor/results.md)
+- [HKAnchoredObjectQueryDescriptor.Results](./results.md)
   An asynchronous sequence that emits updates from an anchored object query.
 
 

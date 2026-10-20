@@ -1,7 +1,8 @@
 # nw_ws_opcode_close
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A message indicating a close of the connection.
 
@@ -20,13 +21,18 @@ A message indicating a close of the connection.
 var nw_ws_opcode_close: nw_ws_opcode_t { get }
 ```
 
+```c
+nw_ws_opcode_close
+```
+
 ## See Also
 
-- [var nw_ws_opcode_ping: nw_ws_opcode_t](nw_ws_opcode_ping.md)
+### Control Types
+- [var nw_ws_opcode_ping: nw_ws_opcode_t](./nw_ws_opcode_ping.md)
   A Ping message, which requests a Pong from the peer.
-- [var nw_ws_opcode_pong: nw_ws_opcode_t](nw_ws_opcode_pong.md)
+- [var nw_ws_opcode_pong: nw_ws_opcode_t](./nw_ws_opcode_pong.md)
   A Pong message in response to a Ping from the peer.
-- [var nw_ws_opcode_invalid: nw_ws_opcode_t](nw_ws_opcode_invalid.md)
+- [var nw_ws_opcode_invalid: nw_ws_opcode_t](./nw_ws_opcode_invalid.md)
   The message is not valid.
 
 

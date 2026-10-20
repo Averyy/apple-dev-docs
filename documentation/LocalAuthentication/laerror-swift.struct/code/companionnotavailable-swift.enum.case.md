@@ -1,7 +1,8 @@
 # LAError.Code.companionNotAvailable
 
 **Framework**: Local Authentication  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Authentication could not start because there was no paired companion device nearby.
 
@@ -14,6 +15,10 @@ Authentication could not start because there was no paired companion device near
 
 ```swift
 case companionNotAvailable
+```
+
+```c
+LAErrorCompanionNotAvailable
 ```
 
 

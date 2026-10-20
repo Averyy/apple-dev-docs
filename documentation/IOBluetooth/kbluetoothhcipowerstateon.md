@@ -1,10 +1,11 @@
 # kBluetoothHCIPowerStateON
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kBluetoothHCIPowerStateON: BluetoothHCIPowerState { get }
 ```
 
+```c
+kBluetoothHCIPowerStateON
+```
+
 ## See Also
 
-- [var kBluetoothHCIPowerStateOFF: BluetoothHCIPowerState](kbluetoothhcipowerstateoff.md)
-- [var kBluetoothHCIPowerStateUnintialized: BluetoothHCIPowerState](kbluetoothhcipowerstateunintialized.md)
+### Constants
+- [var kBluetoothHCIPowerStateOFF: BluetoothHCIPowerState](./kbluetoothhcipowerstateoff.md)
+- [var kBluetoothHCIPowerStateUnintialized: BluetoothHCIPowerState](./kbluetoothhcipowerstateunintialized.md)
 
 
 ---

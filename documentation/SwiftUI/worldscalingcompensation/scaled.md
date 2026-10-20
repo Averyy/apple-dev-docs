@@ -1,7 +1,8 @@
 # scaled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns metrics that are scaled appropriately to match the coordinate system of their scene, including any world scaling behavior.
 

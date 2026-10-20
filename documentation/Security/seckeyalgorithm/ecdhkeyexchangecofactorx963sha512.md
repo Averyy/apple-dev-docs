@@ -1,7 +1,8 @@
 # ecdhKeyExchangeCofactorX963SHA512
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static let ecdhKeyExchangeCofactorX963SHA512: SecKeyAlgorithm
+```
+
+```c
+extern SecKeyAlgorithm const kSecKeyAlgorithmECDHKeyExchangeCofactorX963SHA512;
 ```
 
 

@@ -1,7 +1,8 @@
 # SpeechSyncUPP
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a universal procedure pointer (UPP) to a synchronization callback function.
 
@@ -14,9 +15,13 @@ Defines a universal procedure pointer (UPP) to a synchronization callback functi
 typealias SpeechSyncUPP = SpeechSyncProcPtr
 ```
 
+```c
+typedef SpeechSyncProcPtr SpeechSyncUPP;
+```
+
 #### Discussion
 
-For more information, see the description of the [`SpeechSyncProcPtr`](speechsyncprocptr.md) callback function.
+For more information, see the description of the [`SpeechSyncProcPtr`](./speechsyncprocptr.md) callback function.
 
 
 ---

@@ -1,7 +1,8 @@
 # restingHeartRate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A quantity sample type that measures the user’s resting heart rate.
 
@@ -19,45 +20,50 @@ A quantity sample type that measures the user’s resting heart rate.
 static let restingHeartRate: HKQuantityTypeIdentifier
 ```
 
+```c
+extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierRestingHeartRate;
+```
+
 #### Discussion
 
-These samples use count/time units (described in [`HKUnit`](hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
+These samples use count/time units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 
-Resting heart rate is commonly correlated with overall cardiovascular health. It is an estimation of  the user’s lowest heart rate during periods of rest, and is intended to be used as a medically relevant metric. A resting heart rate sample is different than a sedentary heart rate sample (that is, a sample using the [`heartRate`](hkquantitytypeidentifier/heartrate.md) identifier with a [`HKHeartRateMotionContext.sedentary`](hkheartratemotioncontext/sedentary.md) motion context). For example, if the user finishes a high-intensity workout, and then sits down to rest, the next heart rate sample may be marked as a sedentary sample, but it is still much higher than the user’s actual resting heart rate. To produce more accurate results, the system estimates the resting heart rate by analyzing sedentary heart rate samples throughout the day.
+Resting heart rate is commonly correlated with overall cardiovascular health. It is an estimation of  the user’s lowest heart rate during periods of rest, and is intended to be used as a medically relevant metric. A resting heart rate sample is different than a sedentary heart rate sample (that is, a sample using the [`heartRate`](./heartrate.md) identifier with a [`HKHeartRateMotionContext.sedentary`](../hkheartratemotioncontext/sedentary.md) motion context). For example, if the user finishes a high-intensity workout, and then sits down to rest, the next heart rate sample may be marked as a sedentary sample, but it is still much higher than the user’s actual resting heart rate. To produce more accurate results, the system estimates the resting heart rate by analyzing sedentary heart rate samples throughout the day.
 
 Because the resting heart rate estimates become more accurate as the day progresses, the system may delete earlier samples and replace them with better estimates. Apple Watch replaces only the samples written by the watch for the current or previous day.
 
 ## See Also
 
-- [static let heartRate: HKQuantityTypeIdentifier](hkquantitytypeidentifier/heartrate.md)
+### Vital signs
+- [static let heartRate: HKQuantityTypeIdentifier](./heartrate.md)
   A quantity sample type that measures the user’s heart rate.
-- [static let lowHeartRateEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/lowheartrateevent.md)
+- [static let lowHeartRateEvent: HKCategoryTypeIdentifier](../hkcategorytypeidentifier/lowheartrateevent.md)
   A category sample type for low heart rate events.
-- [static let highHeartRateEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/highheartrateevent.md)
+- [static let highHeartRateEvent: HKCategoryTypeIdentifier](../hkcategorytypeidentifier/highheartrateevent.md)
   A category sample type for high heart rate events.
-- [static let irregularHeartRhythmEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/irregularheartrhythmevent.md)
+- [static let irregularHeartRhythmEvent: HKCategoryTypeIdentifier](../hkcategorytypeidentifier/irregularheartrhythmevent.md)
   A category sample type for irregular heart rhythm events.
-- [static let heartRateVariabilitySDNN: HKQuantityTypeIdentifier](hkquantitytypeidentifier/heartratevariabilitysdnn.md)
+- [static let heartRateVariabilitySDNN: HKQuantityTypeIdentifier](./heartratevariabilitysdnn.md)
   A quantity sample type that measures the standard deviation of heartbeat intervals.
-- [static let heartRateRecoveryOneMinute: HKQuantityTypeIdentifier](hkquantitytypeidentifier/heartraterecoveryoneminute.md)
+- [static let heartRateRecoveryOneMinute: HKQuantityTypeIdentifier](./heartraterecoveryoneminute.md)
   A quantity sample that records the reduction in heart rate from the peak exercise rate to the rate one minute after exercising ended.
-- [static let atrialFibrillationBurden: HKQuantityTypeIdentifier](hkquantitytypeidentifier/atrialfibrillationburden.md)
+- [static let atrialFibrillationBurden: HKQuantityTypeIdentifier](./atrialfibrillationburden.md)
   A quantity type that measures an estimate of the percentage of time a person’s heart shows signs of atrial fibrillation (AFib) while wearing Apple Watch.
-- [static let walkingHeartRateAverage: HKQuantityTypeIdentifier](hkquantitytypeidentifier/walkingheartrateaverage.md)
+- [static let walkingHeartRateAverage: HKQuantityTypeIdentifier](./walkingheartrateaverage.md)
   A quantity sample type that measures the user’s heart rate while walking.
-- [let HKDataTypeIdentifierHeartbeatSeries: String](hkdatatypeidentifierheartbeatseries.md)
+- [let HKDataTypeIdentifierHeartbeatSeries: String](../hkdatatypeidentifierheartbeatseries.md)
   A series sample containing heartbeat data.
-- [class HKElectrocardiogramType](hkelectrocardiogramtype.md)
+- [class HKElectrocardiogramType](../hkelectrocardiogramtype.md)
   A type that identifies samples containing electrocardiogram data.
-- [static let oxygenSaturation: HKQuantityTypeIdentifier](hkquantitytypeidentifier/oxygensaturation.md)
+- [static let oxygenSaturation: HKQuantityTypeIdentifier](./oxygensaturation.md)
   A quantity sample type that measures the user’s oxygen saturation.
-- [static let bodyTemperature: HKQuantityTypeIdentifier](hkquantitytypeidentifier/bodytemperature.md)
+- [static let bodyTemperature: HKQuantityTypeIdentifier](./bodytemperature.md)
   A quantity sample type that measures the user’s body temperature.
-- [static let bloodPressure: HKCorrelationTypeIdentifier](hkcorrelationtypeidentifier/bloodpressure.md)
+- [static let bloodPressure: HKCorrelationTypeIdentifier](../hkcorrelationtypeidentifier/bloodpressure.md)
   A correlation sample that combines a systolic sample and a diastolic sample into a single blood pressure reading.
-- [static let bloodPressureSystolic: HKQuantityTypeIdentifier](hkquantitytypeidentifier/bloodpressuresystolic.md)
+- [static let bloodPressureSystolic: HKQuantityTypeIdentifier](./bloodpressuresystolic.md)
   A quantity sample type that measures the user’s systolic blood pressure.
-- [static let bloodPressureDiastolic: HKQuantityTypeIdentifier](hkquantitytypeidentifier/bloodpressurediastolic.md)
+- [static let bloodPressureDiastolic: HKQuantityTypeIdentifier](./bloodpressurediastolic.md)
   A quantity sample type that measures the user’s diastolic blood pressure.
 
 

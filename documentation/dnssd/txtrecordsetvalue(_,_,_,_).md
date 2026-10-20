@@ -1,7 +1,8 @@
 # TXTRecordSetValue(_:_:_:_:)
 
 **Framework**: dnssd  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds a key (optionally with value) to a TXTRecordRef.
 
@@ -20,13 +21,17 @@ Adds a key (optionally with value) to a TXTRecordRef.
 func TXTRecordSetValue(_ txtRecord: UnsafeMutablePointer<TXTRecordRef>!, _ key: UnsafePointer<CChar>!, _ valueSize: UInt8, _ value: UnsafeRawPointer!) -> DNSServiceErrorType
 ```
 
+```c
+DNSServiceErrorType TXTRecordSetValue(TXTRecordRef *txtRecord, const char *key, uint8_t valueSize, const void *value);
+```
+
 #### Return Value
 
-Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success. Returns kDNSServiceErr_Invalid if the “key” string contains illegal characters. Returns kDNSServiceErr_NoMemory if adding this key would exceed the available storage.
+Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success. Returns kDNSServiceErr_Invalid if the “key” string contains illegal characters. Returns kDNSServiceErr_NoMemory if adding this key would exceed the available storage.
 
 #### Discussion
 
-If the “key” already exists in the TXTRecordRef, then the current value will be replaced with the new value. Keys may exist in four states with respect to a given TXT record: - Absent (key does not appear at all) - Present with no value (“key” appears alone) - Present with empty value (“key=” appears in TXT record) - Present with non-empty value (“key=value” appears in TXT record) For more details refer to “Data Syntax for DNS-SD TXT Records” in [`dns-sd.org`](https://developer.apple.comhttp://files.dns-sd.org/draft-cheshire-dnsext-dns-sd.txt)
+If the “key” already exists in the TXTRecordRef, then the current value will be replaced with the new value. Keys may exist in four states with respect to a given TXT record: - Absent (key does not appear at all) - Present with no value (“key” appears alone) - Present with empty value (“key=” appears in TXT record) - Present with non-empty value (“key=value” appears in TXT record) For more details refer to “Data Syntax for DNS-SD TXT Records” in [dns-sd.org](http://files.dns-sd.org/draft-cheshire-dnsext-dns-sd.txt)
 
 ## Parameters
 
@@ -37,15 +42,16 @@ If the “key” already exists in the TXTRecordRef, then the current value will
 
 ## See Also
 
-- [func TXTRecordCreate(UnsafeMutablePointer<TXTRecordRef>!, UInt16, UnsafeMutableRawPointer!)](txtrecordcreate(_:_:_:).md)
+### TXT Record Construction Functions
+- [func TXTRecordCreate(UnsafeMutablePointer<TXTRecordRef>!, UInt16, UnsafeMutableRawPointer!)](./txtrecordcreate%28_,_,_%29.md)
   Creates a new empty TXTRecordRef referencing the specified storage.
-- [func TXTRecordDeallocate(UnsafeMutablePointer<TXTRecordRef>!)](txtrecorddeallocate(_:).md)
+- [func TXTRecordDeallocate(UnsafeMutablePointer<TXTRecordRef>!)](./txtrecorddeallocate%28_%29.md)
   Releases resources associated with a TXT record.
-- [func TXTRecordGetBytesPtr(UnsafePointer<TXTRecordRef>!) -> UnsafeRawPointer!](txtrecordgetbytesptr(_:).md)
+- [func TXTRecordGetBytesPtr(UnsafePointer<TXTRecordRef>!) -> UnsafeRawPointer!](./txtrecordgetbytesptr%28_%29.md)
   Allows you to retrieve a pointer to the raw bytes within a TXTRecordRef.
-- [func TXTRecordGetLength(UnsafePointer<TXTRecordRef>!) -> UInt16](txtrecordgetlength(_:).md)
+- [func TXTRecordGetLength(UnsafePointer<TXTRecordRef>!) -> UInt16](./txtrecordgetlength%28_%29.md)
   Allows you to determine the length of the raw bytes within a TXTRecordRef.
-- [func TXTRecordRemoveValue(UnsafeMutablePointer<TXTRecordRef>!, UnsafePointer<CChar>!) -> DNSServiceErrorType](txtrecordremovevalue(_:_:).md)
+- [func TXTRecordRemoveValue(UnsafeMutablePointer<TXTRecordRef>!, UnsafePointer<CChar>!) -> DNSServiceErrorType](./txtrecordremovevalue%28_,_%29.md)
   Removes a key from a TXTRecordRef.
 
 

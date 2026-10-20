@@ -1,7 +1,8 @@
 # ReferenceComponent.ReferenceState.loading
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The reference is loading.
 

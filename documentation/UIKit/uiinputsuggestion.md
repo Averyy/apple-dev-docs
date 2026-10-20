@@ -1,7 +1,8 @@
 # UIInputSuggestion
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A base class you use to handle suggestions from the keyboard or system.
 
@@ -16,44 +17,49 @@ A base class you use to handle suggestions from the keyboard or system.
 class UIInputSuggestion
 ```
 
+```objc
+@interface UIInputSuggestion : NSObject
+```
+
 #### Discussion
 
-To handle photo search suggestions from Smart Actions, use [`UIPhotoSearchSuggestion`](uiphotosearchsuggestion.md), which provides the filter metadata you need to present a pre-populated photo picker or build a custom photo search. To handle Smart Reply suggestions, use [`UISmartReplySuggestion`](uismartreplysuggestion.md), which provides the reply text the person selected to guide a long-form response.
+To handle photo search suggestions from Smart Actions, use [`UIPhotoSearchSuggestion`](./uiphotosearchsuggestion.md), which provides the filter metadata you need to present a pre-populated photo picker or build a custom photo search. To handle Smart Reply suggestions, use [`UISmartReplySuggestion`](./uismartreplysuggestion.md), which provides the reply text the person selected to guide a long-form response.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [UIPhotoSearchSuggestion](uiphotosearchsuggestion.md)
-- [UISmartReplySuggestion](uismartreplysuggestion.md)
+- [UIPhotoSearchSuggestion](./uiphotosearchsuggestion.md)
+- [UISmartReplySuggestion](./uismartreplysuggestion.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Adopting Smart Reply in your messaging or email app](adopting-smart-reply-in-your-messaging-or-email-app.md)
+### Smart Reply for messaging
+- [Adopting Smart Reply in your messaging or email app](./adopting-smart-reply-in-your-messaging-or-email-app.md)
   Generate reply suggestions by using Apple Intelligence and put selected text into your text UI.
-- [class UIConversationContext](uiconversationcontext.md)
+- [class UIConversationContext](./uiconversationcontext.md)
   A base class that represents a conversation between participants, such as in an email or messaging app.
-- [UIConversationContext.Entry](uiconversationcontext/entry.md)
+- [UIConversationContext.Entry](./uiconversationcontext/entry.md)
   A base class that represents a message in a conversation.
-- [class UIMailConversationContext](uimailconversationcontext.md)
+- [class UIMailConversationContext](./uimailconversationcontext.md)
   A class that represents an email conversation.
-- [UIMailConversationContext.MailEntry](uimailconversationcontext/mailentry.md)
+- [UIMailConversationContext.MailEntry](./uimailconversationcontext/mailentry.md)
   A class that represents a specific email in an email thread.
-- [class UIMessageConversationContext](uimessageconversationcontext.md)
+- [class UIMessageConversationContext](./uimessageconversationcontext.md)
   A class that represents a message conversation.
-- [UIMessageConversationContext.MessageEntry](uimessageconversationcontext/messageentry.md)
+- [UIMessageConversationContext.MessageEntry](./uimessageconversationcontext/messageentry.md)
   A class that represents a message in a message conversation.
-- [class UIPhotoSearchSuggestion](uiphotosearchsuggestion.md)
+- [class UIPhotoSearchSuggestion](./uiphotosearchsuggestion.md)
   An input suggestion that carries photo search metadata for people, subjects, locations, and time periods.
-- [class UISmartReplySuggestion](uismartreplysuggestion.md)
+- [class UISmartReplySuggestion](./uismartreplysuggestion.md)
   A class you use to handle a Smart Reply suggestion.
 
 

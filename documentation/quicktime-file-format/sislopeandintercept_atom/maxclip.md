@@ -1,13 +1,15 @@
 # maxClip
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 ## See Also
 
-- [Slope](sislopeandintercept_atom/slope.md)
-- [Intercept](sislopeandintercept_atom/intercept.md)
-- [minClip](sislopeandintercept_atom/minclip.md)
+### Data fields
+- [Slope](./slope.md)
+- [Intercept](./intercept.md)
+- [minClip](./minclip.md)
 
 
 ---

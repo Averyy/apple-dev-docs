@@ -1,7 +1,8 @@
 # withUnsafeBackingIOSurfaceIfPresent(_:)
 
 **Framework**: Core Video  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Access the IOSurface backing the pixel buffer if present.
 

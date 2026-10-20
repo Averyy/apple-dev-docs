@@ -1,7 +1,8 @@
 # kIOUSB30ResetTypicalTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The typical reset timeout.
 
@@ -10,7 +11,7 @@ The typical reset timeout.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30ResetTypicalTimeout = 100
 ```
 

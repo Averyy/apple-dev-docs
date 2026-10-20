@@ -1,7 +1,8 @@
 # kVTDecodeFrameOptionKey_ContentAnalyzerRotation
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,10 @@
 let kVTDecodeFrameOptionKey_ContentAnalyzerRotation: CFString
 ```
 
+```c
+extern CFStringRef const kVTDecodeFrameOptionKey_ContentAnalyzerRotation;
+```
+
 #### Discussion
 
 Clockwise rotation (one of 0, 90, 180, 270) to be applied for proper display orientation.
@@ -25,7 +30,8 @@ This value is used for content analysis to properly orient the image before anal
 
 ## See Also
 
-- [let kVTDecodeFrameOptionKey_ContentAnalyzerCropRectangle: CFString](kvtdecodeframeoptionkey_contentanalyzercroprectangle.md)
+### Per-Frame Decoder Options
+- [let kVTDecodeFrameOptionKey_ContentAnalyzerCropRectangle: CFString](./kvtdecodeframeoptionkey_contentanalyzercroprectangle.md)
 
 
 ---

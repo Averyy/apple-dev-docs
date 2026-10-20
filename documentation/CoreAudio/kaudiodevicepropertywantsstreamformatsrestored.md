@@ -1,16 +1,21 @@
 # kAudioDevicePropertyWantsStreamFormatsRestored
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var kAudioDevicePropertyWantsStreamFormatsRestored: AudioObjectPropertySelector { get }
+```
+
+```c
+kAudioDevicePropertyWantsStreamFormatsRestored
 ```
 
 

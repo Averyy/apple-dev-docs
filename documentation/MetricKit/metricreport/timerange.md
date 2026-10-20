@@ -1,7 +1,8 @@
 # timeRange
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date interval this report covers.
 
@@ -19,11 +20,12 @@ let timeRange: DateInterval
 
 ## Mentions
 
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
 
 ## See Also
 
-- [let environment: MetricReport.Environment?](metricreport/environment-swift.property.md)
+### Report details
+- [let environment: MetricReport.Environment?](./environment-swift.property.md)
   Environment context for the device and app.
 
 

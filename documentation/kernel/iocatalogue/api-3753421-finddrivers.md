@@ -1,14 +1,15 @@
 # findDrivers
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 OSPtr<OSOrderedSet> findDrivers(IOService *service, SInt32 *generationCount);
 ```
 

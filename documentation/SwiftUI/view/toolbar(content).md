@@ -1,7 +1,8 @@
 # toolbar(content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Populates the toolbar or navigation bar with the specified items.
 
@@ -21,11 +22,18 @@ nonisolated
 func toolbar<Content>(@ContentBuilder content: () -> Content) -> some View where Content : ToolbarContent
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func toolbar<Content>(@ContentBuilder content: () -> Content) -> some View where Content : View
+```
+
 #### Discussion
 
 Use this method to populate a toolbar with a collection of views that you provide to a toolbar content builder.
 
-The toolbar modifier expects a collection of toolbar items which you can provide either by supplying a collection of views with each view wrapped in a [`ToolbarItem`](toolbaritem.md), or by providing a collection of views as a [`ToolbarItemGroup`](toolbaritemgroup.md). The example below uses a collection of [`ToolbarItem`](toolbaritem.md) views to create a macOS toolbar that supports text editing features:
+The toolbar modifier expects a collection of toolbar items which you can provide either by supplying a collection of views with each view wrapped in a [`ToolbarItem`](../toolbaritem.md), or by providing a collection of views as a [`ToolbarItemGroup`](../toolbaritemgroup.md). The example below uses a collection of [`ToolbarItem`](../toolbaritem.md) views to create a macOS toolbar that supports text editing features:
 
 ```swift
 struct StructToolbarItemGroupView: View {
@@ -69,9 +77,9 @@ struct StructToolbarItemGroupView: View {
 }
 ```
 
-![A window showing a font size selector, and toggles for bold, italic.](/images/com.apple.SwiftUI/SwiftUI-View-Styling-ToolbarContent@2x.png)
+![A window showing a font size selector, and toggles for bold, italic.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-Styling-ToolbarContent@2x.png)
 
-Although it’s not mandatory, wrapping a related group of toolbar items together in a [`ToolbarItemGroup`](toolbaritemgroup.md) provides a one-to-one mapping between controls and toolbar items which results in the correct layout and spacing on each platform. For design guidance on toolbars, see [`Toolbars`](https://developer.apple.com/design/human-interface-guidelines/toolbars) in the Human Interface Guidelines.
+Although it’s not mandatory, wrapping a related group of toolbar items together in a [`ToolbarItemGroup`](../toolbaritemgroup.md) provides a one-to-one mapping between controls and toolbar items which results in the correct layout and spacing on each platform. For design guidance on toolbars, see [Toolbars](https://developer.apple.com/design/human-interface-guidelines/toolbars) in the Human Interface Guidelines.
 
 ## Parameters
 
@@ -79,23 +87,24 @@ Although it’s not mandatory, wrapping a related group of toolbar items togethe
 
 ## See Also
 
-- [struct ToolbarItem](toolbaritem.md)
+### Populating a toolbar
+- [struct ToolbarItem](../toolbaritem.md)
   A model that represents an item which can be placed in the toolbar or navigation bar.
-- [struct ToolbarItemGroup](toolbaritemgroup.md)
+- [struct ToolbarItemGroup](../toolbaritemgroup.md)
   A model that represents a group of `ToolbarItem`s which can be placed in the toolbar or navigation bar.
-- [struct ToolbarItemPlacement](toolbaritemplacement.md)
+- [struct ToolbarItemPlacement](../toolbaritemplacement.md)
   A structure that defines the placement of a toolbar item.
-- [func toolbarOverflowMenu<C>(content: () -> C) -> some View](view/toolbaroverflowmenu(content:).md)
+- [func toolbarOverflowMenu<C>(content: () -> C) -> some View](./toolbaroverflowmenu%28content%29.md)
   Configures the overflow menu of a toolbar.
-- [struct ToolbarOverflowMenu](toolbaroverflowmenu.md)
+- [struct ToolbarOverflowMenu](../toolbaroverflowmenu.md)
   The overflow menu of a toolbar.
-- [protocol ToolbarContent](toolbarcontent.md)
+- [protocol ToolbarContent](../toolbarcontent.md)
   Conforming types represent items that can be placed in various locations in a toolbar.
-- [struct ToolbarContentBuilder](toolbarcontentbuilder.md)
+- [struct ToolbarContentBuilder](../toolbarcontentbuilder.md)
   Constructs a toolbar item set from multi-expression closures.
-- [struct ToolbarSpacer](toolbarspacer.md)
+- [struct ToolbarSpacer](../toolbarspacer.md)
   A standard space item in toolbars.
-- [struct DefaultToolbarItem](defaulttoolbaritem.md)
+- [struct DefaultToolbarItem](../defaulttoolbaritem.md)
   A toolbar item that represents a system component.
 
 

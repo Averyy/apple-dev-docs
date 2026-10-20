@@ -1,7 +1,8 @@
 # CKShare.ParticipantRole
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that represent the role of a share’s participant.
 
@@ -20,44 +21,49 @@ Constants that represent the role of a share’s participant.
 enum ParticipantRole
 ```
 
+```c
+enum CKShareParticipantRole : NSInteger;
+```
+
 ## Topics
 
 ### Roles
-- [CKShare.ParticipantRole.owner](ckshare/participantrole/owner.md)
+- [CKShare.ParticipantRole.owner](./participantrole/owner.md)
   The participant is the share’s owner.
-- [CKShare.ParticipantRole.privateUser](ckshare/participantrole/privateuser.md)
+- [CKShare.ParticipantRole.privateUser](./participantrole/privateuser.md)
   The participant has the private role.
-- [CKShare.ParticipantRole.publicUser](ckshare/participantrole/publicuser.md)
+- [CKShare.ParticipantRole.publicUser](./participantrole/publicuser.md)
   The participant has the public role.
-- [CKShare.ParticipantRole.unknown](ckshare/participantrole/unknown.md)
+- [CKShare.ParticipantRole.unknown](./participantrole/unknown.md)
   The participant’s role is unknown.
 ### Enumeration Cases
-- [CKShare.ParticipantRole.administrator](ckshare/participantrole/administrator.md)
+- [CKShare.ParticipantRole.administrator](./participantrole/administrator.md)
   The participant has the administrator role.
 ### Initializers
-- [init?(rawValue: Int)](ckshare/participantrole/init(rawvalue:).md)
+- [init?(rawValue: Int)](./participantrole/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var permission: CKShare.ParticipantPermission](ckshare/participant/permission-swift.property.md)
+### Managing the Participant’s Capabilites
+- [var permission: CKShare.ParticipantPermission](./participant/permission-swift.property.md)
   The participant’s permission level for the share.
-- [CKShare.Participant.Permission](ckshare/participant/permission-swift.typealias.md)
+- [CKShare.Participant.Permission](./participant/permission-swift.typealias.md)
   A type that represents the permissions for a participant.
-- [CKShare.ParticipantPermission](ckshare/participantpermission.md)
+- [CKShare.ParticipantPermission](./participantpermission.md)
   Constants that represent the permissions to grant to a share participant.
-- [var role: CKShare.ParticipantRole](ckshare/participant/role-swift.property.md)
+- [var role: CKShare.ParticipantRole](./participant/role-swift.property.md)
   The participant’s role for the share.
-- [CKShare.Participant.Role](ckshare/participant/role-swift.typealias.md)
+- [CKShare.Participant.Role](./participant/role-swift.typealias.md)
   A type that represents the role for a participant.
 
 

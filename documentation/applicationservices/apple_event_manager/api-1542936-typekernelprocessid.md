@@ -15,9 +15,9 @@ pid_t pid = findTheAppPid(); // User supplied routine to get PID. // Now create 
 ## Topics
 
 ### Constants
-- [var typeKernelProcessID: DescType](../coreservices/typekernelprocessid.md)
+- [var typeKernelProcessID: DescType](../../coreservices/typekernelprocessid.md)
   Indicates a descriptor containing a UNIX process ID. A process ID is similar to a PSN (processor serial number) but does not require a Process Manager connection. It is analogous to a 32-bit unsigned integer.
-- [var typeMachPort: DescType](../coreservices/typemachport.md)
+- [var typeMachPort: DescType](../../coreservices/typemachport.md)
   Indicates a descriptor that specifies a Mach port.
 
 

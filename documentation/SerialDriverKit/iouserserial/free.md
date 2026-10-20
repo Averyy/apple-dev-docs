@@ -1,7 +1,8 @@
 # free
 
 **Framework**: SerialDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs any final cleanup for the service.
 
@@ -10,25 +11,26 @@ Performs any final cleanup for the service.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 #### Discussion
 
-Use this method to deallocate the memory associated with your service, or perform other cleanup tasks. The system calls this method at some point after it calls your service’s [`Stop`](iouserserial/stop.md) method.
+Use this method to deallocate the memory associated with your service, or perform other cleanup tasks. The system calls this method at some point after it calls your service’s [`Stop`](./stop.md) method.
 
 Always call `super` at the end of your implementation of this method.
 
 ## See Also
 
-- [init](iouserserial/init.md)
+### Configuring the Service
+- [init](./init.md)
   Handles the basic initialization of the service.
-- [Start](iouserserial/start.md)
+- [Start](./start.md)
   Starts the current service and associates it with the specified provider.
-- [Stop](iouserserial/stop.md)
+- [Stop](./stop.md)
   Stops the service associated with the specified provider.
-- [initWith](iouserserial/initwith.md)
+- [initWith](./initwith.md)
   Initializes the private data structures associated with this class.
 
 

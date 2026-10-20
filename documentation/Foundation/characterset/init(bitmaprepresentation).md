@@ -1,7 +1,8 @@
 # init(bitmapRepresentation:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize with a bitmap representation.
 

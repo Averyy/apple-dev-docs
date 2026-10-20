@@ -1,7 +1,8 @@
 # controller(_:suspendedChangedTo:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notify the delegate when the suspended state changed of the controller, after this happens the controller will be in the specified state.
 
@@ -18,6 +19,10 @@ Notify the delegate when the suspended state changed of the controller, after th
 
 ```swift
 optional func controller(_ controller: MTRDeviceController, suspendedChangedTo suspended: Bool)
+```
+
+```objc
+- (void) controller:(MTRDeviceController *) controller suspendedChangedTo:(BOOL) suspended;
 ```
 
 

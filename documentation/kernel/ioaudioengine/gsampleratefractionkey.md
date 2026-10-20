@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 static const OSSymbol *gSampleRateFractionKey;
 ```
 

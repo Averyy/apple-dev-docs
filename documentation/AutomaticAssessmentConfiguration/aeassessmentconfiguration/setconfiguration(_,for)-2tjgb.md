@@ -1,7 +1,8 @@
 # setConfiguration(_:for:)
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an app to the list of apps available during an assessment.
 
@@ -17,9 +18,13 @@ Adds an app to the list of apps available during an assessment.
 func setConfiguration(_ configuration: AEAssessmentParticipantConfiguration, for application: AEAssessmentApplication)
 ```
 
+```objc
+- (void) setConfiguration:(AEAssessmentParticipantConfiguration *) configuration forApplication:(AEAssessmentApplication *) application;
+```
+
 #### Discussion
 
-Use this method to make an app besides your own available during an assessment. Create a representation of the app that you want to allow as an [`AEAssessmentApplication`](aeassessmentapplication.md) instance, and the configuration for that app using an [`AEAssessmentParticipantConfiguration`](aeassessmentparticipantconfiguration.md) instance:
+Use this method to make an app besides your own available during an assessment. Create a representation of the app that you want to allow as an [`AEAssessmentApplication`](../aeassessmentapplication.md) instance, and the configuration for that app using an [`AEAssessmentParticipantConfiguration`](../aeassessmentparticipantconfiguration.md) instance:
 
 ```swift
 let calculator = AEAssessmentApplication(bundleIdentifier: "com.apple.calculator")
@@ -35,7 +40,7 @@ configuration.setConfiguration(calculatorConfig, for: calculator)
 session.update(to: configuration)
 ```
 
-You can get a list of the currently allowed apps by accessing the [`configurationsByApplication`](aeassessmentconfiguration/configurationsbyapplication.md) property. You can disallow a previously allowed app by using the `AEAssessmentConfiguration/remove(_:)` method.
+You can get a list of the currently allowed apps by accessing the [`configurationsByApplication`](./configurationsbyapplication.md) property. You can disallow a previously allowed app by using the `AEAssessmentConfiguration/remove(_:)` method.
 
 ## Parameters
 

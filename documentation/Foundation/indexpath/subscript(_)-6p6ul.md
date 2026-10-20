@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Foundation  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses one of the index path’s nodes.
 
@@ -22,7 +23,8 @@ subscript(index: IndexPath.Index) -> IndexPath.Element { get set }
 
 ## See Also
 
-- [subscript(Range<IndexPath.Index>) -> IndexPath](indexpath/subscript(_:)-4pgu1.md)
+### Accessing Nodes
+- [subscript(Range<IndexPath.Index>) -> IndexPath](./subscript%28_%29-4pgu1.md)
   Accesses a contiguous subrange of the index path’s nodes.
 
 

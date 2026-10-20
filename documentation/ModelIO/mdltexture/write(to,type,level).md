@@ -1,7 +1,8 @@
 # write(to:type:level:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func write(to nsurl: URL, type: CFString, level: Int) -> Bool
+```
+
+```objc
+- (BOOL) writeToURL:(NSURL *) nsurl type:(CFStringRef) type level:(NSUInteger) level;
 ```
 
 

@@ -1,7 +1,8 @@
 # HKWorkoutActivityType.underwaterDiving
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constant for underwater diving.
 
@@ -19,23 +20,28 @@ The constant for underwater diving.
 case underwaterDiving
 ```
 
+```c
+HKWorkoutActivityTypeUnderwaterDiving
+```
+
 ## See Also
 
-- [HKWorkoutActivityType.paddleSports](hkworkoutactivitytype/paddlesports.md)
+### Water activities
+- [HKWorkoutActivityType.paddleSports](./paddlesports.md)
   The constant for canoeing, kayaking, paddling an outrigger, paddling a stand-up paddle board, and related sports.
-- [HKWorkoutActivityType.rowing](hkworkoutactivitytype/rowing.md)
+- [HKWorkoutActivityType.rowing](./rowing.md)
   The constant for rowing.
-- [HKWorkoutActivityType.sailing](hkworkoutactivitytype/sailing.md)
+- [HKWorkoutActivityType.sailing](./sailing.md)
   The constant for sailing.
-- [HKWorkoutActivityType.surfingSports](hkworkoutactivitytype/surfingsports.md)
+- [HKWorkoutActivityType.surfingSports](./surfingsports.md)
   The constant for a variety of surf sports, including surfing, kite surfing, and wind surfing.
-- [HKWorkoutActivityType.swimming](hkworkoutactivitytype/swimming.md)
+- [HKWorkoutActivityType.swimming](./swimming.md)
   The constant for swimming.
-- [HKWorkoutActivityType.waterFitness](hkworkoutactivitytype/waterfitness.md)
+- [HKWorkoutActivityType.waterFitness](./waterfitness.md)
   The constant for aerobic exercise performed in shallow water.
-- [HKWorkoutActivityType.waterPolo](hkworkoutactivitytype/waterpolo.md)
+- [HKWorkoutActivityType.waterPolo](./waterpolo.md)
   The constant for playing water polo.
-- [HKWorkoutActivityType.waterSports](hkworkoutactivitytype/watersports.md)
+- [HKWorkoutActivityType.waterSports](./watersports.md)
   The constant for a variety of water sports, including water skiing, wake boarding, and related activities.
 
 

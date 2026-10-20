@@ -1,7 +1,8 @@
 # scripts
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that identifies the writing system that the language uses in a contextual embedding.
 
@@ -20,11 +21,16 @@ A key that identifies the writing system that the language uses in a contextual 
 static let scripts: NLContextualEmbeddingKey
 ```
 
+```c
+extern NLContextualEmbeddingKey const NLContextualEmbeddingKeyScripts;
+```
+
 ## See Also
 
-- [static let languages: NLContextualEmbeddingKey](nlcontextualembeddingkey/languages.md)
+### Getting embedding keys
+- [static let languages: NLContextualEmbeddingKey](./languages.md)
   A key that identifies the supported languages in a contextual embedding.
-- [static let revision: NLContextualEmbeddingKey](nlcontextualembeddingkey/revision.md)
+- [static let revision: NLContextualEmbeddingKey](./revision.md)
   A key that identifies the version number the contextual embedding uses.
 
 

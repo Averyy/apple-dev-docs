@@ -1,0 +1,29 @@
+# deviceMotionUpdates()
+
+**Framework**: Core Motion  
+**Kind**: method  
+**Role**: Instance Method
+
+**Availability**:
+- watchOS 10.0+
+
+## Declaration
+
+```swift
+func deviceMotionUpdates() -> CMBatchedSensorManager.DeviceMotionUpdates
+```
+
+## See Also
+
+### Collecting device-motion data
+- [func startDeviceMotionUpdates()](./startdevicemotionupdates%28%29.md)
+- [func startDeviceMotionUpdates(handler: ([CMDeviceMotion]?, (any Error)?) -> Void)](./startdevicemotionupdates%28handler%29.md)
+- [func stopDeviceMotionUpdates()](./stopdevicemotionupdates%28%29.md)
+- [var deviceMotionBatch: [CMDeviceMotion]?](./devicemotionbatch.md)
+- [CMBatchedSensorManager.DeviceMotionUpdates](./devicemotionupdates.md)
+- [var isDeviceMotionActive: Bool](./isdevicemotionactive.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coremotion/cmbatchedsensormanager/devicemotionupdates())*

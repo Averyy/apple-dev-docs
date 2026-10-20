@@ -1,7 +1,8 @@
 # isOrganDonor
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the identity document holder is an organ donor.
 

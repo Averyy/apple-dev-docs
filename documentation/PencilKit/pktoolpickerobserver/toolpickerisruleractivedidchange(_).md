@@ -1,7 +1,8 @@
 # toolPickerIsRulerActiveDidChange(_:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the observer when a person shows or hides the ruler.
 
@@ -17,13 +18,18 @@ Tells the observer when a person shows or hides the ruler.
 optional func toolPickerIsRulerActiveDidChange(_ toolPicker: PKToolPicker)
 ```
 
+```objc
+- (void) toolPickerIsRulerActiveDidChange:(PKToolPicker *) toolPicker;
+```
+
 ## Parameters
 
 - `toolPicker`: The tool picker whose configuration changed.
 
 ## See Also
 
-- [func toolPickerSelectedToolItemDidChange(PKToolPicker)](pktoolpickerobserver/toolpickerselectedtoolitemdidchange(_:).md)
+### Detecting tool configuration changes
+- [func toolPickerSelectedToolItemDidChange(PKToolPicker)](./toolpickerselectedtoolitemdidchange%28_%29.md)
   Tells the observer when a person selects a new tool item.
 
 

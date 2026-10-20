@@ -1,7 +1,8 @@
 # commandIdentifier
 
 **Framework**: XcodeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the command that the user invoked.
 
@@ -14,9 +15,14 @@ The identifier of the command that the user invoked.
 var commandIdentifier: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * commandIdentifier;
+```
+
 ## See Also
 
-- [var buffer: XCSourceTextBuffer](xcsourceeditorcommandinvocation/buffer.md)
+### Responding to Commands
+- [var buffer: XCSourceTextBuffer](./buffer.md)
   The buffer of source text upon which the command can operate.
 
 

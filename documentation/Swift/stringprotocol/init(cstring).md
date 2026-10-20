@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a string from the null-terminated, UTF-8 encoded sequence of bytes at the given pointer.

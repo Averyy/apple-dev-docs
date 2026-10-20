@@ -1,7 +1,8 @@
 # init(languageOptions:defaultLanguageOption:allowEmptySelection:)
 
 **Framework**: Media Player  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new language option group with the supplied language options.
 
@@ -20,6 +21,10 @@ Creates a new language option group with the supplied language options.
 init(languageOptions: [MPNowPlayingInfoLanguageOption], defaultLanguageOption: MPNowPlayingInfoLanguageOption?, allowEmptySelection: Bool)
 ```
 
+```objc
+- (instancetype) initWithLanguageOptions:(NSArray<MPNowPlayingInfoLanguageOption *> *) languageOptions defaultLanguageOption:(MPNowPlayingInfoLanguageOption *) defaultLanguageOption allowEmptySelection:(BOOL) allowEmptySelection;
+```
+
 #### Return Value
 
 A newly created language option group with the passed attributes.
@@ -27,7 +32,7 @@ A newly created language option group with the passed attributes.
 ## Parameters
 
 - `languageOptions`: An array containing the language options to associate with the language option group.
-- `defaultLanguageOption`: The default language option for the group. Set this parameter to [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) to denote there’s no default language option.
+- `defaultLanguageOption`: The default language option for the group. Set this parameter to [`nil`](../../ObjectiveC/nil-227m0.md) to denote there’s no default language option.
 - `allowEmptySelection`: A Boolean that indicates whether the system requires a selection for the language option group.
 
 

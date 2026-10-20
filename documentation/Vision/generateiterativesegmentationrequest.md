@@ -1,7 +1,8 @@
 # GenerateIterativeSegmentationRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request that generates a segmentation mask from points, a rectangle, or a scribble.
 
@@ -21,7 +22,7 @@ final class GenerateIterativeSegmentationRequest
 
 ## Mentions
 
-- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+- [Isolating an object from a tap, box, or scribble](./segmenting-objects-with-iterative-refinement.md)
 
 #### Overview
 
@@ -30,57 +31,58 @@ Initialize with a seed point, a seed rectangle, or a seed scribble buffer to gen
 ## Topics
 
 ### Creating a request
-- [init(seedBox: NormalizedRect, GenerateIterativeSegmentationRequest.Revision?)](generateiterativesegmentationrequest/init(seedbox:_:).md)
+- [init(seedBox: NormalizedRect, GenerateIterativeSegmentationRequest.Revision?)](./generateiterativesegmentationrequest/init%28seedbox,_%29.md)
   Instantiates with a seed box.
-- [init(seedPoint: NormalizedPoint, GenerateIterativeSegmentationRequest.Revision?)](generateiterativesegmentationrequest/init(seedpoint:_:).md)
+- [init(seedPoint: NormalizedPoint, GenerateIterativeSegmentationRequest.Revision?)](./generateiterativesegmentationrequest/init%28seedpoint,_%29.md)
   Instantiates with a seed point.
-- [init(seedScribbleBuffer: CVReadOnlyPixelBuffer, GenerateIterativeSegmentationRequest.Revision?)](generateiterativesegmentationrequest/init(seedscribblebuffer:_:).md)
+- [init(seedScribbleBuffer: CVReadOnlyPixelBuffer, GenerateIterativeSegmentationRequest.Revision?)](./generateiterativesegmentationrequest/init%28seedscribblebuffer,_%29.md)
   Instantiates with a scribble buffer.
-- [GenerateIterativeSegmentationRequest.Result](generateiterativesegmentationrequest/result.md)
+- [GenerateIterativeSegmentationRequest.Result](./generateiterativesegmentationrequest/result.md)
   The result is returned as a gray mask image. It can be nil if there is nothing to segment.
 ### Updating the mask
-- [func addExcludedPoint(NormalizedPoint) throws](generateiterativesegmentationrequest/addexcludedpoint(_:).md)
+- [func addExcludedPoint(NormalizedPoint) throws](./generateiterativesegmentationrequest/addexcludedpoint%28_%29.md)
   Refines the mask with a point that is excluded from the desired segmentation. Throws an error if the total number of added points exceeds the limit. (13 points when seedPoint or seedScribbleBuffer was used, or 11 points when seedBox was used)
-- [func addIncludedPoint(NormalizedPoint) throws](generateiterativesegmentationrequest/addincludedpoint(_:).md)
+- [func addIncludedPoint(NormalizedPoint) throws](./generateiterativesegmentationrequest/addincludedpoint%28_%29.md)
   Refines the mask with a point that is part of the desired segmentation. Throws an error if the total number of added points exceeds the limit. (13 points when seedPoint or seedScribbleBuffer was used, or 11 points when seedBox was used)
 ### Accessing the quality level
-- [var qualityLevel: GenerateIterativeSegmentationRequest.QualityLevel](generateiterativesegmentationrequest/qualitylevel-swift.property.md)
+- [var qualityLevel: GenerateIterativeSegmentationRequest.QualityLevel](./generateiterativesegmentationrequest/qualitylevel-swift.property.md)
   Controls the resolution of the produced mask.
-- [GenerateIterativeSegmentationRequest.QualityLevel](generateiterativesegmentationrequest/qualitylevel-swift.enum.md)
+- [GenerateIterativeSegmentationRequest.QualityLevel](./generateiterativesegmentationrequest/qualitylevel-swift.enum.md)
   The resolution and quality of the segmentation mask the request produces.
 ### Getting the revision
-- [let revision: GenerateIterativeSegmentationRequest.Revision](generateiterativesegmentationrequest/revision-swift.property.md)
+- [let revision: GenerateIterativeSegmentationRequest.Revision](./generateiterativesegmentationrequest/revision-swift.property.md)
   The request’s configured revision.
-- [GenerateIterativeSegmentationRequest.Revision](generateiterativesegmentationrequest/revision-swift.enum.md)
-- [static let supportedRevisions: [GenerateIterativeSegmentationRequest.Revision]](generateiterativesegmentationrequest/supportedrevisions.md)
-  The revisions supported by [`GenerateIterativeSegmentationRequest`](generateiterativesegmentationrequest.md).
+- [GenerateIterativeSegmentationRequest.Revision](./generateiterativesegmentationrequest/revision-swift.enum.md)
+- [static let supportedRevisions: [GenerateIterativeSegmentationRequest.Revision]](./generateiterativesegmentationrequest/supportedrevisions.md)
+  The revisions supported by [`GenerateIterativeSegmentationRequest`](./generateiterativesegmentationrequest.md).
 ### Comparing the request
-- [static func == (GenerateIterativeSegmentationRequest, GenerateIterativeSegmentationRequest) -> Bool](generateiterativesegmentationrequest/==(_:_:).md)
+- [static func == (GenerateIterativeSegmentationRequest, GenerateIterativeSegmentationRequest) -> Bool](./generateiterativesegmentationrequest/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two instances are equal.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [DownloadableAssetsRequest](downloadableassetsrequest.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [ImageProcessingRequest](imageprocessingrequest.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionRequest](visionrequest.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [DownloadableAssetsRequest](./downloadableassetsrequest.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [ImageProcessingRequest](./imageprocessingrequest.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionRequest](./visionrequest.md)
 
 ## See Also
 
-- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+### Image segmentation and subject lifting
+- [Isolating an object from a tap, box, or scribble](./segmenting-objects-with-iterative-refinement.md)
   Generate and refine a mask that isolates an object in an image based on a person’s selection.
-- [Segmenting objects using taps, scribbles or rectangles](segmenting-objects-using-taps-scribbles-or-rectangles.md)
+- [Segmenting objects using taps, scribbles or rectangles](./segmenting-objects-using-taps-scribbles-or-rectangles.md)
   Select objects or regions in a photo using taps, scribbles, or rectangle selection, and generate a segmentation mask using the iterative segmentation API.
-- [struct GenerateForegroundInstanceMaskRequest](generateforegroundinstancemaskrequest.md)
+- [struct GenerateForegroundInstanceMaskRequest](./generateforegroundinstancemaskrequest.md)
   A request that generates an instance mask of noticeable objects to separate from the background.
-- [struct GeneratePersonInstanceMaskRequest](generatepersoninstancemaskrequest.md)
+- [struct GeneratePersonInstanceMaskRequest](./generatepersoninstancemaskrequest.md)
   A request that produces a mask of individual people it finds in the input image.
-- [class GeneratePersonSegmentationRequest](generatepersonsegmentationrequest.md)
+- [class GeneratePersonSegmentationRequest](./generatepersonsegmentationrequest.md)
   A request that produces a matte image for a person it finds in the input image.
 
 

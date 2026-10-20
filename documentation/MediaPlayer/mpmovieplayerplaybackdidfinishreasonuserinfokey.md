@@ -1,13 +1,16 @@
 # MPMoviePlayerPlaybackDidFinishReasonUserInfoKey
 
 **Framework**: Media Player  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
-- tvOS ?+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS - Deprecated in 9.0
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
@@ -15,9 +18,13 @@
 let MPMoviePlayerPlaybackDidFinishReasonUserInfoKey: String
 ```
 
+```c
+extern NSString * const MPMoviePlayerPlaybackDidFinishReasonUserInfoKey;
+```
+
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) containing an integer value that represents one of the [`MPMovieFinishReason`](mpmoviefinishreason.md) constants.
+The value of this key is an [`NSNumber`](../Foundation/nsnumber.md) containing an integer value that represents one of the [`MPMovieFinishReason`](./mpmoviefinishreason.md) constants.
 
 
 ---

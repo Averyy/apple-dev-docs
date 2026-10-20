@@ -1,7 +1,8 @@
 # createXPCRepresentation()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a representation of the transaction coordinator that you send to another process.
 
@@ -15,9 +16,14 @@ Creates a representation of the transaction coordinator that you send to another
 func createXPCRepresentation() -> xpc_object_t
 ```
 
+```objc
+- (xpc_object_t) createXPCRepresentation;
+```
+
 ## See Also
 
-- [init(xpcRepresentation: xpc_object_t?) throws](layerhierarchyhostingtransactioncoordinator/init(xpcrepresentation:).md)
+### Sharing a transaction coordinator using XPC
+- [init(xpcRepresentation: xpc_object_t?) throws](./init%28xpcrepresentation%29.md)
   Creates a transaction coordinator from an XPC object.
 
 

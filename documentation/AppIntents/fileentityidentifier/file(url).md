@@ -1,7 +1,8 @@
 # file(url:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns an identifier with the provided URL to the file on disk.
 

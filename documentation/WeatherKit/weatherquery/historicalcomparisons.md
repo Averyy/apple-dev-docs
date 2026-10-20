@@ -1,7 +1,8 @@
 # historicalComparisons
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The weather historical comparison query.
 

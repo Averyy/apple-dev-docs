@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Watch Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for the session object
 
@@ -18,17 +19,22 @@ The delegate for the session object
 weak var delegate: (any WCSessionDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<WCSessionDelegate> delegate;
+```
+
 #### Discussion
 
-You must assign an object conforming to the [`WCSessionDelegate`](wcsessiondelegate.md) protocol to this property before calling the [`activate()`](wcsession/activate().md) method. The delegate is responsible for responding to session-related changes, for processing incoming data, and for responding to errors.
+You must assign an object conforming to the [`WCSessionDelegate`](../wcsessiondelegate.md) protocol to this property before calling the [`activate()`](./activate%28%29.md) method. The delegate is responsible for responding to session-related changes, for processing incoming data, and for responding to errors.
 
-For more information about implementing your delegate object, see [`WCSessionDelegate`](wcsessiondelegate.md).
+For more information about implementing your delegate object, see [`WCSessionDelegate`](../wcsessiondelegate.md).
 
 ## See Also
 
-- [func activate()](wcsession/activate.md)
+### Configuring the Session
+- [func activate()](./activate%28%29.md)
   Activates the session asynchronously.
-- [var activationState: WCSessionActivationState](wcsession/activationstate.md)
+- [var activationState: WCSessionActivationState](./activationstate.md)
   The current activation state of the session.
 
 

@@ -1,7 +1,8 @@
 # IsProtected
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A Boolean value indicating if box is protected.
 
@@ -10,7 +11,7 @@ A Boolean value indicating if box is protected.
 
 ## Declaration
 
-```swift
+```c
 bool IsProtected();
 ```
 
@@ -20,7 +21,8 @@ The object’s work queue synchronizes access to the value.
 
 ## See Also
 
-- [SetIsProtected](iouservideobox/setisprotected.md)
+### Managing protection state
+- [SetIsProtected](./setisprotected.md)
   Sets the value indicating the box’s protection state.
 
 

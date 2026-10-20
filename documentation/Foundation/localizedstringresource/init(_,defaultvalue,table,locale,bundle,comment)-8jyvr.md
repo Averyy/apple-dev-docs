@@ -1,7 +1,8 @@
 # init(_:defaultValue:table:locale:bundle:comment:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+

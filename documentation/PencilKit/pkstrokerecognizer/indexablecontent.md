@@ -1,7 +1,8 @@
 # indexableContent
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string suitable for indexing the drawing’s recognized text in search systems such as Spotlight.
 
@@ -20,7 +21,7 @@ final var indexableContent: String? { get async }
 
 ## Mentions
 
-- [Recognizing handwriting and converting it to text](recognizing-handwriting-and-converting-to-text.md)
+- [Recognizing handwriting and converting it to text](../recognizing-handwriting-and-converting-to-text.md)
 
 #### Discussion
 
@@ -30,7 +31,8 @@ The string may contain multiple concatenated candidate matches for recognized te
 
 ## See Also
 
-- [func recognizedText(strokeIDs: Set<UUID>?) async -> String?](pkstrokerecognizer/recognizedtext(strokeids:).md)
+### Recognizing handwriting
+- [func recognizedText(strokeIDs: Set<UUID>?) async -> String?](./recognizedtext%28strokeids%29.md)
   Returns the recognized text from the specified strokes in the drawing.
 
 

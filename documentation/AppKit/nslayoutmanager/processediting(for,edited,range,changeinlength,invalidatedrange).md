@@ -1,7 +1,8 @@
 # processEditing(for:edited:range:changeInLength:invalidatedRange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the layout manager when an edit action changes the contents of its text storage object.
 
@@ -14,9 +15,13 @@ Notifies the layout manager when an edit action changes the contents of its text
 func processEditing(for textStorage: NSTextStorage, edited editMask: NSTextStorageEditActions, range newCharRange: NSRange, changeInLength delta: Int, invalidatedRange invalidatedCharRange: NSRange)
 ```
 
+```objc
+- (void) processEditingForTextStorage:(NSTextStorage *) textStorage edited:(NSTextStorageEditActions) editMask range:(NSRange) newCharRange changeInLength:(NSInteger) delta invalidatedRange:(NSRange) invalidatedCharRange;
+```
+
 #### Discussion
 
-The [`processEditing()`](nstextstorage/processediting().md) method of [`NSTextStorage`](nstextstorage.md) calls this method to notify the layout manager of an edit action. Layout managers must not change the contents of the text storage during the execution of this message.
+The [`processEditing()`](../nstextstorage/processediting%28%29.md) method of [`NSTextStorage`](../nstextstorage.md) calls this method to notify the layout manager of an edit action. Layout managers must not change the contents of the text storage during the execution of this message.
 
 ## Parameters
 
@@ -28,13 +33,14 @@ The [`processEditing()`](nstextstorage/processediting().md) method of [`NSTextSt
 
 ## See Also
 
-- [func invalidateDisplay(forCharacterRange: NSRange)](nslayoutmanager/invalidatedisplay(forcharacterrange:).md)
+### Invalidating glyphs and layout
+- [func invalidateDisplay(forCharacterRange: NSRange)](./invalidatedisplay%28forcharacterrange%29.md)
   Invalidates display for the specified character range.
-- [func invalidateDisplay(forGlyphRange: NSRange)](nslayoutmanager/invalidatedisplay(forglyphrange:).md)
+- [func invalidateDisplay(forGlyphRange: NSRange)](./invalidatedisplay%28forglyphrange%29.md)
   Invalidates a range of glyphs, requiring new layout information, and updates the appropriate regions of any text views that display those glyphs.
-- [func invalidateGlyphs(forCharacterRange: NSRange, changeInLength: Int, actualCharacterRange: NSRangePointer?)](nslayoutmanager/invalidateglyphs(forcharacterrange:changeinlength:actualcharacterrange:).md)
+- [func invalidateGlyphs(forCharacterRange: NSRange, changeInLength: Int, actualCharacterRange: NSRangePointer?)](./invalidateglyphs%28forcharacterrange,changeinlength,actualcharacterrange%29.md)
   Invalidates and adjusts the glyphs in the specified character range.
-- [func invalidateLayout(forCharacterRange: NSRange, actualCharacterRange: NSRangePointer?)](nslayoutmanager/invalidatelayout(forcharacterrange:actualcharacterrange:).md)
+- [func invalidateLayout(forCharacterRange: NSRange, actualCharacterRange: NSRangePointer?)](./invalidatelayout%28forcharacterrange,actualcharacterrange%29.md)
   Invalidates the layout information for the glyphs that map to the specified character range.
 
 

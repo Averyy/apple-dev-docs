@@ -1,16 +1,21 @@
 # member_value
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var member_value: es_od_member_id_t.__Unnamed_union_member_value
+```
+
+```c
+union { ... } member_value;
 ```
 
 

@@ -1,7 +1,8 @@
 # kCVImageBufferChromaSubsampling_411
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that indicates the original chroma-subsampled data used 4:1:1 formatting.
 
@@ -20,15 +21,20 @@ A key that indicates the original chroma-subsampled data used 4:1:1 formatting.
 let kCVImageBufferChromaSubsampling_411: CFString
 ```
 
+```c
+extern CFStringRef const kCVImageBufferChromaSubsampling_411;
+```
+
 #### Discussion
 
 Each pixel has a `Y` value, and `U` and `V` values are shared along a horizontal line of 4 pixels.
 
 ## See Also
 
-- [let kCVImageBufferChromaSubsampling_420: CFString](kcvimagebufferchromasubsampling_420.md)
+### Constants
+- [let kCVImageBufferChromaSubsampling_420: CFString](./kcvimagebufferchromasubsampling_420.md)
   A key that indicates the original chroma-subsampled data used 4:2:0 formatting.
-- [let kCVImageBufferChromaSubsampling_422: CFString](kcvimagebufferchromasubsampling_422.md)
+- [let kCVImageBufferChromaSubsampling_422: CFString](./kcvimagebufferchromasubsampling_422.md)
   A key that indicates the original chroma-subsampled data used 4:2:2 formatting.
 
 

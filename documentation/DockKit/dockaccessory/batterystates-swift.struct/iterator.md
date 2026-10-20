@@ -1,7 +1,8 @@
 # DockAccessory.BatteryStates.Iterator
 
 **Framework**: DockKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that allows iteration over dock accessory events.
 
@@ -20,13 +21,13 @@ struct Iterator
 ## Topics
 
 ### Instance Methods
-- [func next() async -> DockAccessory.BatteryState?](dockaccessory/batterystates-swift.struct/iterator/next.md)
+- [func next() async -> DockAccessory.BatteryState?](./iterator/next%28%29.md)
   Provide the next dock accessory event in the list.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 
 ---

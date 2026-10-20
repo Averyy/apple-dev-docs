@@ -1,7 +1,8 @@
 # synthesizeSpeechRequest(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the text to synthesize and the voice to use.
 
@@ -19,9 +20,13 @@ Sets the text to synthesize and the voice to use.
 func synthesizeSpeechRequest(_ speechRequest: AVSpeechSynthesisProviderRequest)
 ```
 
+```objc
+- (void) synthesizeSpeechRequest:(AVSpeechSynthesisProviderRequest *) speechRequest;
+```
+
 #### Discussion
 
-When the synthesizer finishes generating audio buffers for the speech request, use [`AUInternalRenderBlock`](https://developer.apple.com/documentation/audiotoolbox/auinternalrenderblock) to report [`offlineUnitRenderAction_Complete`](https://developer.apple.com/documentation/audiotoolbox/audiounitrenderactionflags/offlineunitrenderaction_complete).
+When the synthesizer finishes generating audio buffers for the speech request, use [`AUInternalRenderBlock`](../../AudioToolbox/auinternalrenderblock.md) to report [`offlineUnitRenderAction_Complete`](../../AudioToolbox/audiounitrenderactionflags/offlineunitrenderaction_complete.md).
 
 ## Parameters
 
@@ -29,7 +34,8 @@ When the synthesizer finishes generating audio buffers for the speech request, u
 
 ## See Also
 
-- [class AVSpeechSynthesisProviderRequest](avspeechsynthesisproviderrequest.md)
+### Rendering speech
+- [class AVSpeechSynthesisProviderRequest](../avspeechsynthesisproviderrequest.md)
   An object that represents the text to synthesize and the voice to use.
 
 

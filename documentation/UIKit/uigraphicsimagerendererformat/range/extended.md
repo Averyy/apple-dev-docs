@@ -1,7 +1,8 @@
 # UIGraphicsImageRendererFormat.Range.extended
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The image renderer context supports wide color.
 
@@ -18,13 +19,18 @@ The image renderer context supports wide color.
 case extended
 ```
 
+```c
+UIGraphicsImageRendererFormatRangeExtended
+```
+
 ## See Also
 
-- [UIGraphicsImageRendererFormat.Range.automatic](uigraphicsimagerendererformat/range/automatic.md)
+### Constants
+- [UIGraphicsImageRendererFormat.Range.automatic](./automatic.md)
   The system automatically chooses the image renderer context’s pixel format according to the color range of its content.
-- [UIGraphicsImageRendererFormat.Range.standard](uigraphicsimagerendererformat/range/standard.md)
+- [UIGraphicsImageRendererFormat.Range.standard](./standard.md)
   The image renderer context doesn’t support extended colors.
-- [UIGraphicsImageRendererFormat.Range.unspecified](uigraphicsimagerendererformat/range/unspecified.md)
+- [UIGraphicsImageRendererFormat.Range.unspecified](./unspecified.md)
   The image renderer context doesn’t specify a color range.
 
 

@@ -1,7 +1,8 @@
 # kPMQualityPhoto
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies to optimize the quality of photos on the page, with speed not a concern.
 

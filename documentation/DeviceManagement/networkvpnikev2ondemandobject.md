@@ -1,7 +1,8 @@
 # NetworkVPNIKEV2OnDemandObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Specifies details about how the system controls on-demand VPN.
 
@@ -15,37 +16,44 @@ Specifies details about how the system controls on-demand VPN.
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNIKEV2OnDemandObject
 ```
 
 ## Topics
 
 ### Objects
-- [object NetworkVPNIKEV2RulesElementObject](networkvpnikev2ruleselementobject.md)
+- [object NetworkVPNIKEV2RulesElementObject](./networkvpnikev2ruleselementobject.md)
   An array of dictionaries defining On Demand Rules.
 
 ## Properties
 
-- `DisableUserOverride` (boolean): If `true`, the device disables the Connect On Demand toggle in Settings for this configuration. Available: iOS 27+ | iPadOS 27+ | tvOS 27+ | visionOS 27+
+- `DisableUserOverride` (boolean): If `true`, the device disables the Connect On Demand toggle in Settings for this configuration.
+
+  Available: iOS 27+ | iPadOS 27+ | tvOS 27+ | visionOS 27+
+
+  **Default**: `false`
 - `Enabled` (boolean): If `true`, enables VPN On Demand.
+
+  **Default**: `false`
 - `Rules` ([NetworkVPNIKEV2RulesElementObject]): An array of dictionaries defining On Demand Rules.
 
 ## See Also
 
-- [object NetworkVPNIKEV2AuthenticationObject](networkvpnikev2authenticationobject.md)
+### Objects
+- [object NetworkVPNIKEV2AuthenticationObject](./networkvpnikev2authenticationobject.md)
   Settings that control authentication.
-- [object NetworkVPNIKEV2DNSObject](networkvpnikev2dnsobject.md)
+- [object NetworkVPNIKEV2DNSObject](./networkvpnikev2dnsobject.md)
   A dictionary to use for all VPN types.
-- [object NetworkVPNIKEV2IdleObject](networkvpnikev2idleobject.md)
+- [object NetworkVPNIKEV2IdleObject](./networkvpnikev2idleobject.md)
   Specifies details about how the system handles idle VPN connections.
-- [object NetworkVPNIKEV2NetworkRoutingObject](networkvpnikev2networkroutingobject.md)
+- [object NetworkVPNIKEV2NetworkRoutingObject](./networkvpnikev2networkroutingobject.md)
   Specifies details about how the VPN routes different types of network traffic.
-- [object NetworkVPNIKEV2PostQuantumKeyExchangeObject](networkvpnikev2postquantumkeyexchangeobject.md)
+- [object NetworkVPNIKEV2PostQuantumKeyExchangeObject](./networkvpnikev2postquantumkeyexchangeobject.md)
   Post Quantum Key Exchange settings.
-- [object NetworkVPNIKEV2ProxiesObject](networkvpnikev2proxiesobject.md)
+- [object NetworkVPNIKEV2ProxiesObject](./networkvpnikev2proxiesobject.md)
   The dictionary to use to configure `Proxies` for use with `VPN`.
-- [object NetworkVPNIKEV2SecurityAssociationParametersObject](networkvpnikev2securityassociationparametersobject.md)
+- [object NetworkVPNIKEV2SecurityAssociationParametersObject](./networkvpnikev2securityassociationparametersobject.md)
   These parameters apply to Child Security Association unless `ChildSecurityAssociationParameters` is specified.
 
 

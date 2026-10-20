@@ -1,7 +1,8 @@
 # levelsOfUndo
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of top-level undo groups the undo manager holds.
 
@@ -20,6 +21,10 @@ The maximum number of top-level undo groups the undo manager holds.
 var levelsOfUndo: Int { get set }
 ```
 
+```objc
+@property NSUInteger levelsOfUndo;
+```
+
 #### Discussion
 
 An integer specifying the number of undo groups. A limit of `0` indicates no limit, so the manager never drops old undo groups.
@@ -30,11 +35,13 @@ If you change the limit to a level below the prior limit, the manager immediatel
 
 ## See Also
 
-- [func enableUndoRegistration()](undomanager/enableundoregistration.md)
+### Related Documentation
+- [func enableUndoRegistration()](./enableundoregistration%28%29.md)
   Enables the recording of undo operations.
-- [var undoCount: Int](undomanager/undocount.md)
+### Managing undo and redo stack depth
+- [var undoCount: Int](./undocount.md)
   The number of times you can invoke undo before there are no actions left to undo.
-- [var redoCount: Int](undomanager/redocount.md)
+- [var redoCount: Int](./redocount.md)
   The number of times you can invoke redo before there are no actions left to redo.
 
 

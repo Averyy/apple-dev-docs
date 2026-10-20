@@ -1,7 +1,8 @@
 # VerticalHeightRight
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 WAVE: “Top Front Right”
 
@@ -10,20 +11,21 @@ WAVE: “Top Front Right”
 
 ## Declaration
 
-```swift
+```c
 VerticalHeightRight
 ```
 
 ## See Also
 
-- [Right](videodriverkit/iouservideochannellabel/right.md)
-- [RightCenter](videodriverkit/iouservideochannellabel/rightcenter.md)
-- [RightTopFront](videodriverkit/iouservideochannellabel/righttopfront.md)
-- [RightTopMiddle](videodriverkit/iouservideochannellabel/righttopmiddle.md)
-- [RightTopRear](videodriverkit/iouservideochannellabel/righttoprear.md)
-- [RightTotal](videodriverkit/iouservideochannellabel/righttotal.md)
+### Right channels
+- [Right](./right.md)
+- [RightCenter](./rightcenter.md)
+- [RightTopFront](./righttopfront.md)
+- [RightTopMiddle](./righttopmiddle.md)
+- [RightTopRear](./righttoprear.md)
+- [RightTotal](./righttotal.md)
   matrix encoded 4 channels
-- [RightWide](videodriverkit/iouservideochannellabel/rightwide.md)
+- [RightWide](./rightwide.md)
 
 
 ---

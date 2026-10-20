@@ -1,14 +1,15 @@
 # NumVersion
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct NumVersion {
     ...
 } NumVersion;
@@ -17,10 +18,10 @@ typedef struct NumVersion {
 ## Topics
 
 ### Instance Properties
-- [majorRev](numversion/1401576-majorrev.md)
-- [minorAndBugRev](numversion/1401560-minorandbugrev.md)
-- [nonRelRev](numversion/1401380-nonrelrev.md)
-- [stage](numversion/1401594-stage.md)
+- [majorRev](./numversion/api-1401576-majorrev.md)
+- [minorAndBugRev](./numversion/api-1401560-minorandbugrev.md)
+- [nonRelRev](./numversion/api-1401380-nonrelrev.md)
+- [stage](./numversion/api-1401594-stage.md)
 
 
 ---

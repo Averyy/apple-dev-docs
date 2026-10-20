@@ -1,7 +1,8 @@
 # characterBounds(at:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the bounds, in page space, of the character at the specified index.
 
@@ -15,8 +16,28 @@ Returns the bounds, in page space, of the character at the specified index.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+func characterBounds(at index: Int) -> CGRect
+```
+
+*macOS*
+
 ```swift
 func characterBounds(at index: Int) -> NSRect
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+- (CGRect) characterBoundsAtIndex:(NSInteger) index;
+```
+
+*macOS*
+
+```objc
+- (NSRect) characterBoundsAtIndex:(NSInteger) index;
 ```
 
 #### Discussion
@@ -27,13 +48,14 @@ Page space is a 72 dpi coordinate system with the origin at the lower-left corne
 
 ## See Also
 
-- [var numberOfCharacters: Int](pdfpage/numberofcharacters.md)
+### Working with Textual Content
+- [var numberOfCharacters: Int](./numberofcharacters.md)
   Returns the number of characters on the page, including whitespace characters.
-- [var string: String?](pdfpage/string.md)
+- [var string: String?](./string.md)
   Returns an `NSString` object representing the text on the page.
-- [var attributedString: NSAttributedString?](pdfpage/attributedstring.md)
+- [var attributedString: NSAttributedString?](./attributedstring.md)
   Returns an `NSAttributedString` object representing the text on the page.
-- [func characterIndex(at: CGPoint) -> Int](pdfpage/characterindex(at:).md)
+- [func characterIndex(at: CGPoint) -> Int](./characterindex%28at%29.md)
   Returns the character index value for the specified point in page space.
 
 

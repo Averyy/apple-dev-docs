@@ -1,7 +1,8 @@
 # curatorName
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display name for the playlist’s curator.
 

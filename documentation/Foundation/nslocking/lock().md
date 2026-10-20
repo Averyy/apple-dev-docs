@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Attempts to acquire a lock, blocking a thread’s execution until the lock can be acquired.
@@ -21,14 +22,20 @@ Attempts to acquire a lock, blocking a thread’s execution until the lock can b
 func lock()
 ```
 
+```objc
+- (void) lock;
+```
+
 #### Discussion
 
-An application protects a critical section of code by requiring a thread to acquire a lock before executing the code. Once the critical section is completed, the thread relinquishes the lock by invoking [`unlock()`](nslocking/unlock().md).
+An application protects a critical section of code by requiring a thread to acquire a lock before executing the code. Once the critical section is completed, the thread relinquishes the lock by invoking [`unlock()`](./unlock%28%29.md).
 
 ## See Also
 
-- [Threading Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i)
-- [func unlock()](nslocking/unlock.md)
+### Related Documentation
+- [Threading Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i)
+### Working with Locks
+- [func unlock()](./unlock%28%29.md)
   Relinquishes a previously acquired lock.
 
 

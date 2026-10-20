@@ -1,7 +1,8 @@
 # errSecFileTooBig
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The file is too big.
 
@@ -18,6 +19,10 @@ The file is too big.
 
 ```swift
 var errSecFileTooBig: OSStatus { get }
+```
+
+```c
+errSecFileTooBig
 ```
 
 

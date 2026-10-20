@@ -1,6 +1,7 @@
 # Applying Rate Limits
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: Article
 
 Track your remaining quota and pace requests.
 
@@ -9,7 +10,7 @@ Track your remaining quota and pace requests.
 
 #### Overview
 
-Rate limits exist in the Apple Ads Platform API to avoid latency and other system problems from too many API calls within a limited time. Every response, successful or not, includes a set of rate-limit headers based on the [`IETF RateLimit header fields draft`](https://developer.apple.comhttps://www.ietf.org/archive/id/draft-polli-ratelimit-headers-02.txt), and reports your remaining request quota so your client can pace requests and back off before hitting a `429` rate limit.
+Rate limits exist in the Apple Ads Platform API to avoid latency and other system problems from too many API calls within a limited time. Every response, successful or not, includes a set of rate-limit headers based on the [IETF RateLimit header fields draft](https://www.ietf.org/archive/id/draft-polli-ratelimit-headers-02.txt), and reports your remaining request quota so your client can pace requests and back off before hitting a `429` rate limit.
 
 #### Read the Rate Limit Headers
 
@@ -23,7 +24,7 @@ The following table details the three header types:
 
 A response looks like the following:
 
-```None
+```
 HTTP/1.1 200 OK
 RateLimit-Limit: 100
 RateLimit-Remaining: 4
@@ -92,19 +93,20 @@ print(headers.get("RateLimit-Reset"))
 
 Apply the same header-aware backoff strategy for every endpoint that returns a `429`, regardless of which HTTP client or SDK you use.
 
-For the full request and response structure reference, see [`Calling the Apple Ads Platform API`](calling-apple-ads-platform-api.md).
+For the full request and response structure reference, see [Calling the Apple Ads Platform API](./calling-apple-ads-platform-api.md).
 
 ## See Also
 
-- [Implementing OAuth for the Apple Ads Platform API](implementing-oauth-for-the-apple-ads-platform-api.md)
+### Essentials
+- [Implementing OAuth for the Apple Ads Platform API](./implementing-oauth-for-the-apple-ads-platform-api.md)
   Generate a key pair and request an access token to authenticate with the Apple Ads Platform API.
-- [Calling the Apple Ads Platform API](calling-apple-ads-platform-api.md)
+- [Calling the Apple Ads Platform API](./calling-apple-ads-platform-api.md)
   Authenticate requests, structure endpoint calls, and interpret responses when using the Apple Ads Platform API.
-- [Using Client Libraries](client-libraries.md)
+- [Using Client Libraries](./client-libraries.md)
   Integrate the Apple Ads Platform API using an Apple-maintained client library instead of a custom HTTP client.
-- [Advertising Your App on the App Store](journey-app-store-ads.md)
+- [Advertising Your App on the App Store](./journey-app-store-ads.md)
   Set up and launch an App Store campaign, from account verification through keyword targeting to performance reporting.
-- [Advertising Your Business on Apple Maps](journey-apple-maps-brand-ads.md)
+- [Advertising Your Business on Apple Maps](./journey-apple-maps-brand-ads.md)
   Identify your brand, upload creative assets, build location groups, and create campaigns, ad groups, creatives, and ads to promote it on Apple Maps.
 
 

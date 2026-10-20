@@ -1,17 +1,22 @@
 # burnProgressPanelWillBegin(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notification sent by the panel before display.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func burnProgressPanelWillBegin(_ aNotification: Notification!)
+```
+
+```objc
+- (void) burnProgressPanelWillBegin:(NSNotification *) aNotification;
 ```
 
 #### Discussion

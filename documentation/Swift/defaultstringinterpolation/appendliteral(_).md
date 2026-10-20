@@ -1,7 +1,8 @@
 # appendLiteral(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends a literal segment of a string interpolation.
 

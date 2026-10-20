@@ -1,7 +1,8 @@
 # isObservationEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 AVPlayer and other AVFoundation types can optionally be observed using Swift Observation.
 
@@ -19,6 +20,10 @@ AVPlayer and other AVFoundation types can optionally be observed using Swift Obs
 ```swift
 nonisolated
 class var isObservationEnabled: Bool { get set }
+```
+
+```objc
+@property (class, readwrite, getter=isObservationEnabled) BOOL observationEnabled;
 ```
 
 #### Discussion

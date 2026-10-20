@@ -1,7 +1,8 @@
 # backgroundSounds
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var backgroundSounds: SRAcousticSettings.Accessibility.BackgroundSounds { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) SRAcousticSettingsAccessibilityBackgroundSounds * backgroundSounds;
 ```
 
 #### Discussion

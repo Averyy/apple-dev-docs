@@ -1,7 +1,8 @@
 # instructionVariants
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of strings that represent the instruction for this lane guidance, arranged from most- to least-preferred.
 
@@ -16,13 +17,18 @@ An array of strings that represent the instruction for this lane guidance, arran
 var instructionVariants: [String] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSString *> * instructionVariants;
+```
+
 #### Discussion
 
 You need to provide at least one variant. Provide the variant strings as localized, displayable content.
 
 ## See Also
 
-- [var lanes: [CPLane]](cplaneguidance/lanes.md)
+### Properties
+- [var lanes: [CPLane]](./lanes.md)
   An array of lane objects, each describing a single lane.
 
 

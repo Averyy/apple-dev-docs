@@ -1,17 +1,18 @@
 # operator=
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Method Template
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 template <typename U, typename Policy, typename = detail::detail::enable_if_t<detail::is_convertible_v<U *, T *>>> bounded_ptr<T, TrappingPolicy> & operator=(const bounded_ptr<U, Policy> & other);
 ```
 

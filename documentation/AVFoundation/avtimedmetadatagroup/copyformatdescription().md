@@ -1,7 +1,8 @@
 # copyFormatDescription()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a format description based on the receiver’s items.
 
@@ -20,13 +21,17 @@ Creates a format description based on the receiver’s items.
 func copyFormatDescription() -> CMMetadataFormatDescription?
 ```
 
+```objc
+- (CMMetadataFormatDescriptionRef) copyFormatDescription;
+```
+
 #### Return Value
 
-An instance of [`CMMetadataFormatDescription`](https://developer.apple.com/documentation/coremedia/cmmetadataformatdescription) sufficient to describe the contents of all the items referenced by the object.
+An instance of [`CMMetadataFormatDescription`](../../CoreMedia/cmmetadataformatdescription.md) sufficient to describe the contents of all the items referenced by the object.
 
 #### Discussion
 
-The returned format description is suitable for use as the format hint parameter when creating an instance of [`AVAssetWriterInput`](avassetwriterinput.md).
+The returned format description is suitable for use as the format hint parameter when creating an instance of [`AVAssetWriterInput`](../avassetwriterinput.md).
 
 Each item referenced by the receiver must carry a non-`nil` value for its `dataType` property.  An exception will be thrown if any item does not have a data type.
 

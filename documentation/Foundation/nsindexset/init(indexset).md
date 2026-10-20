@@ -1,9 +1,10 @@
 # init(indexSet:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Initializes an allocated [`NSIndexSet`](nsindexset.md) object with an index set.
+Initializes an allocated [`NSIndexSet`](../nsindexset.md) object with an index set.
 
 **Availability**:
 - iOS 2.0+
@@ -20,13 +21,17 @@ Initializes an allocated [`NSIndexSet`](nsindexset.md) object with an index set.
 init(indexSet: IndexSet)
 ```
 
+```objc
+- (instancetype) initWithIndexSet:(NSIndexSet *) indexSet;
+```
+
 #### Return Value
 
-Initialized [`NSIndexSet`](nsindexset.md) object with `indexSet`.
+Initialized [`NSIndexSet`](../nsindexset.md) object with `indexSet`.
 
 #### Discussion
 
-This method is a designated initializer for [`NSIndexSet`](nsindexset.md).
+This method is a designated initializer for [`NSIndexSet`](../nsindexset.md).
 
 ## Parameters
 
@@ -34,10 +39,11 @@ This method is a designated initializer for [`NSIndexSet`](nsindexset.md).
 
 ## See Also
 
-- [convenience init(index: Int)](nsindexset/init(index:).md)
-  Initializes an allocated [`NSIndexSet`](nsindexset.md) object with an index.
-- [init(indexesIn: NSRange)](nsindexset/init(indexesin:).md)
-  Initializes an allocated [`NSIndexSet`](nsindexset.md) object with an index range.
+### Creating Index Sets
+- [convenience init(index: Int)](./init%28index%29.md)
+  Initializes an allocated [`NSIndexSet`](../nsindexset.md) object with an index.
+- [init(indexesIn: NSRange)](./init%28indexesin%29.md)
+  Initializes an allocated [`NSIndexSet`](../nsindexset.md) object with an index range.
 
 
 ---

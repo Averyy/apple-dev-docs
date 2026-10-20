@@ -1,7 +1,8 @@
 # setPose(_:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the pose of the controlled `Equipment`.
 
@@ -16,7 +17,8 @@ func setPose(_ pose: Pose3D)
 
 ## See Also
 
-- [func setControlledEquipment(matching: EquipmentIdentifier)](tabletopinteraction/setcontrolledequipment(matching:).md)
+### Setting information about the equipment and pose
+- [func setControlledEquipment(matching: EquipmentIdentifier)](./setcontrolledequipment%28matching%29.md)
   Replace the current controlled equipment with a different one
 
 

@@ -1,7 +1,8 @@
 # LACompanionType.mac
 
 **Framework**: Local Authentication  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Paired Mac
 
@@ -14,6 +15,10 @@ Paired Mac
 
 ```swift
 case mac
+```
+
+```c
+LACompanionTypeMac
 ```
 
 

@@ -1,7 +1,8 @@
 # rightEar
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The right ear.
 
@@ -19,17 +20,22 @@ The right ear.
 static let rightEar: VNHumanBodyPoseObservation.JointName
 ```
 
+```c
+extern VNHumanBodyPoseObservationJointName const VNHumanBodyPoseObservationJointNameRightEar;
+```
+
 ## See Also
 
-- [static let leftEar: VNHumanBodyPoseObservation.JointName](vnhumanbodyposeobservation/jointname/leftear.md)
+### Head
+- [static let leftEar: VNHumanBodyPoseObservation.JointName](./leftear.md)
   The left ear.
-- [static let leftEye: VNHumanBodyPoseObservation.JointName](vnhumanbodyposeobservation/jointname/lefteye.md)
+- [static let leftEye: VNHumanBodyPoseObservation.JointName](./lefteye.md)
   The left eye.
-- [static let rightEye: VNHumanBodyPoseObservation.JointName](vnhumanbodyposeobservation/jointname/righteye.md)
+- [static let rightEye: VNHumanBodyPoseObservation.JointName](./righteye.md)
   The right eye.
-- [static let neck: VNHumanBodyPoseObservation.JointName](vnhumanbodyposeobservation/jointname/neck.md)
+- [static let neck: VNHumanBodyPoseObservation.JointName](./neck.md)
   The neck.
-- [static let nose: VNHumanBodyPoseObservation.JointName](vnhumanbodyposeobservation/jointname/nose.md)
+- [static let nose: VNHumanBodyPoseObservation.JointName](./nose.md)
   The nose.
 
 

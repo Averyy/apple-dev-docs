@@ -1,15 +1,18 @@
 # shouldAutorotate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the view controller’s contents should autorotate.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 6.0+ - Deprecated in 16.0
+- iPadOS 6.0+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Instead, update [`supportedInterfaceOrientations`](./supportedinterfaceorientations.md) and then call [`setNeedsUpdateOfSupportedInterfaceOrientations()`](./setneedsupdateofsupportedinterfaceorientations%28%29.md) to indicate a change to the supported interface orientations.
 
 ## Declaration
 
@@ -17,25 +20,30 @@ A Boolean value that indicates whether the view controller’s contents should a
 var shouldAutorotate: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL shouldAutorotate;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the content should rotate, otherwise [`false`](https://developer.apple.com/documentation/swift/false). This method returns [`true`](https://developer.apple.com/documentation/swift/true) by default.
+[`true`](../../Swift/true.md) if the content should rotate, otherwise [`false`](../../Swift/false.md). This method returns [`true`](../../Swift/true.md) by default.
 
 ## See Also
 
-- [var previewActionItems: [any UIPreviewActionItem]](uiviewcontroller/previewactionitems.md)
+### Deprecated properties
+- [var previewActionItems: [any UIPreviewActionItem]](./previewactionitems.md)
   The quick actions displayed when a user swipes upward on a 3D Touch preview.
-- [var automaticallyAdjustsScrollViewInsets: Bool](uiviewcontroller/automaticallyadjustsscrollviewinsets.md)
+- [var automaticallyAdjustsScrollViewInsets: Bool](./automaticallyadjustsscrollviewinsets.md)
   A Boolean value that indicates whether the view controller should automatically adjust its scroll view insets.
-- [var bottomLayoutGuide: any UILayoutSupport](uiviewcontroller/bottomlayoutguide.md)
+- [var bottomLayoutGuide: any UILayoutSupport](./bottomlayoutguide.md)
   Indicates the lowest vertical extent for your onscreen content, for use with Auto Layout constraints.
-- [var interfaceOrientation: UIInterfaceOrientation](uiviewcontroller/interfaceorientation.md)
+- [var interfaceOrientation: UIInterfaceOrientation](./interfaceorientation.md)
   Convenience property that provides the current orientation of the interface, meaningful only if the view controller is taking up the full screen.
-- [var isModalInPopover: Bool](uiviewcontroller/ismodalinpopover.md)
+- [var isModalInPopover: Bool](./ismodalinpopover.md)
   A Boolean value indicating whether the view controller should be presented modally by a popover.
-- [var searchDisplayController: UISearchDisplayController?](uiviewcontroller/searchdisplaycontroller.md)
+- [var searchDisplayController: UISearchDisplayController?](./searchdisplaycontroller.md)
   The search display controller associated with the view controller.
-- [var topLayoutGuide: any UILayoutSupport](uiviewcontroller/toplayoutguide.md)
+- [var topLayoutGuide: any UILayoutSupport](./toplayoutguide.md)
   Indicates the highest vertical extent for your onscreen content, for use with Auto Layout constraints.
 
 

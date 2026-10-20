@@ -1,7 +1,8 @@
 # naturalSize
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The natural dimensions of the media data that the track references.
 
@@ -20,15 +21,18 @@ The natural dimensions of the media data that the track references.
 static var naturalSize: AVAsyncProperty<Root, CGSize> { get }
 ```
 
+Available when `Root` inherits `AVAssetTrack`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
-For visual tracks, like video or subtitle tracks, this property value is the natural size of the media. For nonvisual tracks, like audio or chapter tracks, the value is [`zero`](https://developer.apple.com/documentation/corefoundation/cgsize/zero).
+For visual tracks, like video or subtitle tracks, this property value is the natural size of the media. For nonvisual tracks, like audio or chapter tracks, the value is [`zero`](../../CoreFoundation/cgsize/zero.md).
 
 ## See Also
 
-- [static var preferredTransform: AVAsyncProperty<Root, CGAffineTransform>](avpartialasyncproperty/preferredtransform-90jdn.md)
+### Loading visual characteristics
+- [static var preferredTransform: AVAsyncProperty<Root, CGAffineTransform>](./preferredtransform-90jdn.md)
   The track’s transform preference to apply to its visual content during presentation or processing.
 
 

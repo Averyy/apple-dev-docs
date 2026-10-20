@@ -1,25 +1,27 @@
 # target
 
 **Framework**: HIDDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target to pass to the action function.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void * target;
 ```
 
 ## See Also
 
-- [action](iohidcompletion/action.md)
+### Getting the Completion Handler Properties
+- [action](./action.md)
   The function to call.
-- [parameter](iohidcompletion/parameter.md)
+- [parameter](./parameter.md)
   The parameter to pass to the action function.
 
 

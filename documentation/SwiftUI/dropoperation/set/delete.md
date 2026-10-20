@@ -1,7 +1,8 @@
 # delete
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Delete the data.
 

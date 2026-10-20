@@ -1,7 +1,8 @@
 # init(components:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a group of components.
 
@@ -15,6 +16,10 @@ Creates a group of components.
 
 ```swift
 init(components: [UITextFormattingViewController.Component])
+```
+
+```objc
+- (instancetype) initWithComponents:(NSArray<UITextFormattingViewControllerComponent *> *) components;
 ```
 
 ## Parameters

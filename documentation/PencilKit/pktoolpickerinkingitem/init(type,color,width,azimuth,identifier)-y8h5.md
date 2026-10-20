@@ -1,7 +1,8 @@
 # init(type:color:width:azimuth:identifier:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new inking tool item.
 

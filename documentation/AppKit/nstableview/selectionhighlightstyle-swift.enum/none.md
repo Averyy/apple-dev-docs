@@ -1,7 +1,8 @@
 # NSTableView.SelectionHighlightStyle.none
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.6+
@@ -12,14 +13,19 @@
 case none
 ```
 
+```c
+NSTableViewSelectionHighlightStyleNone
+```
+
 #### Discussion
 
 Displays no highlight style at all.
 
 ## See Also
 
-- [NSTableView.SelectionHighlightStyle.regular](nstableview/selectionhighlightstyle-swift.enum/regular.md)
-- [NSTableView.SelectionHighlightStyle.sourceList](nstableview/selectionhighlightstyle-swift.enum/sourcelist.md)
+### Constants
+- [NSTableView.SelectionHighlightStyle.regular](./regular.md)
+- [NSTableView.SelectionHighlightStyle.sourceList](./sourcelist.md)
 
 
 ---

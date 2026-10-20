@@ -1,7 +1,8 @@
 # buildPartialBlock(accumulated:next:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 27.0+

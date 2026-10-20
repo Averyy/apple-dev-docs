@@ -1,7 +1,8 @@
 # init(id:value:)
 
 **Framework**: TabletopKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a score counter with a unique identifier and initial value.
 

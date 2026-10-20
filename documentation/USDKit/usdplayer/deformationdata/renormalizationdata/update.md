@@ -1,7 +1,8 @@
 # USDPlayer.DeformationData.RenormalizationData.Update
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Delta update carrying only the adjacency fields that changed since the last frame.
 
@@ -22,18 +23,18 @@ struct Update
 ## Topics
 
 ### Instance Properties
-- [let vertexAdjacencies: [UInt32]?](usdplayer/deformationdata/renormalizationdata/update/vertexadjacencies.md)
+- [let vertexAdjacencies: [UInt32]?](./update/vertexadjacencies.md)
   Changed vertex adjacency data.
-- [let vertexAdjacencyEndIndices: [UInt32]?](usdplayer/deformationdata/renormalizationdata/update/vertexadjacencyendindices.md)
+- [let vertexAdjacencyEndIndices: [UInt32]?](./update/vertexadjacencyendindices.md)
   Changed vertex adjacency end indices.
-- [let vertexIndicesPerTriangle: [UInt32]?](usdplayer/deformationdata/renormalizationdata/update/vertexindicespertriangle.md)
+- [let vertexIndicesPerTriangle: [UInt32]?](./update/vertexindicespertriangle.md)
   Changed vertex indices per triangle.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

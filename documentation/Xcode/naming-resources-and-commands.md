@@ -1,6 +1,7 @@
 # Naming resources and commands
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Enhance the debugging of your Metal app using labels and grouping.
 
@@ -10,20 +11,20 @@ Resource labels and command debug groups are useful when debugging and profiling
 
 > **Note**: The properties and methods described here don’t affect the graphics-rendering or compute-processing behavior of your app.
 
-##### Annotate Resources
+##### Annotate resources
 
-Many Metal objects provide a [`label`](https://developer.apple.com/documentation/metal/mtlresource/label) property where you can assign a meaningful string. These labels appear in each Metal tool, allowing you to easily identify specific objects.
+Many Metal objects provide a [`label`](../Metal/mtlresource/label.md) property where you can assign a meaningful string. These labels appear in each Metal tool, allowing you to easily identify specific objects.
 
-In addition, for [`MTLBuffer`](https://developer.apple.com/documentation/metal/mtlbuffer), the [`addDebugMarker(_:range:)`](https://developer.apple.com/documentation/metal/mtlbuffer/adddebugmarker(_:range:)) method allows you to mark and identify specific data ranges. You can call the [`removeAllDebugMarkers()`](https://developer.apple.com/documentation/metal/mtlbuffer/removealldebugmarkers()) method to clear the existing markers.
+In addition, for [`MTLBuffer`](../Metal/mtlbuffer.md), the [`addDebugMarker(_:range:)`](../Metal/mtlbuffer/adddebugmarker%28_,range%29.md) method allows you to mark and identify specific data ranges. You can call the [`removeAllDebugMarkers()`](../Metal/mtlbuffer/removealldebugmarkers%28%29.md) method to clear the existing markers.
 
-##### Annotate Commands
+##### Annotate commands
 
 Command buffers and command encoders provide the following methods for you to easily identify specific groups of Metal commands in your app:
 
-- On an [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object, call [`pushDebugGroup(_:)`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/pushdebuggroup(_:)) and [`popDebugGroup()`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/popdebuggroup()) to group commands within that buffer.
-- On an [`MTLCommandEncoder`](https://developer.apple.com/documentation/metal/mtlcommandencoder) object, call [`pushDebugGroup(_:)`](https://developer.apple.com/documentation/metal/mtlcommandencoder/pushdebuggroup(_:)) and [`popDebugGroup()`](https://developer.apple.com/documentation/metal/mtlcommandencoder/popdebuggroup()) to group commands within that encoder. In addition, call [`insertDebugSignpost(_:)`](https://developer.apple.com/documentation/metal/mtlcommandencoder/insertdebugsignpost(_:)) to mark interesting locations in the encoder.
+- On an [`MTLCommandBuffer`](../Metal/mtlcommandbuffer.md) object, call [`pushDebugGroup(_:)`](../Metal/mtlcommandbuffer/pushdebuggroup%28_%29.md) and [`popDebugGroup()`](../Metal/mtlcommandbuffer/popdebuggroup%28%29.md) to group commands within that buffer.
+- On an [`MTLCommandEncoder`](../Metal/mtlcommandencoder.md) object, call [`pushDebugGroup(_:)`](../Metal/mtlcommandencoder/pushdebuggroup%28_%29.md) and [`popDebugGroup()`](../Metal/mtlcommandencoder/popdebuggroup%28%29.md) to group commands within that encoder. In addition, call [`insertDebugSignpost(_:)`](../Metal/mtlcommandencoder/insertdebugsignpost%28_%29.md) to mark interesting locations in the encoder.
 
-Xcode pushes and pops debug groups using unique stacks that exist only within the lifetime of their associated [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) or [`MTLCommandEncoder`](https://developer.apple.com/documentation/metal/mtlcommandencoder). You can nest debug groups by pushing multiple groups onto the stack before popping previous groups.
+Xcode pushes and pops debug groups using unique stacks that exist only within the lifetime of their associated [`MTLCommandBuffer`](../Metal/mtlcommandbuffer.md) or [`MTLCommandEncoder`](../Metal/mtlcommandencoder.md). You can nest debug groups by pushing multiple groups onto the stack before popping previous groups.
 
 Use these methods to simplify your app development process, particularly for tasks that involve many Metal commands per buffer or encoder.
 
@@ -58,13 +59,14 @@ func encodeRenderPass(commandBuffer: MTLCommandBuffer, descriptor: MTLRenderPass
 
 The following screenshot shows how the debug groups appear in Xcode’s Debug navigator after you capture a frame:
 
-![A screenshot of Xcode’s Debug navigator showing nested debug groups inside a render pass.](/images/com.apple.Xcode/gputools-metal-debugger-debug-navigator-labels@2x.png)
+![A screenshot of Xcode’s Debug navigator showing nested debug groups inside a render pass.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-debug-navigator-labels@2x.png)
 
 ## See Also
 
-- [Building your project with embedded shader sources](building-your-project-with-embedded-shader-sources.md)
+### Project preparation for debugging
+- [Building your project with embedded shader sources](./building-your-project-with-embedded-shader-sources.md)
   Prepare to debug your project’s shaders by including source code in the build.
-- [Creating and using custom capture scopes](creating-and-using-custom-capture-scopes.md)
+- [Creating and using custom capture scopes](./creating-and-using-custom-capture-scopes.md)
   Capture specific GPU commands by using custom capture scopes.
 
 

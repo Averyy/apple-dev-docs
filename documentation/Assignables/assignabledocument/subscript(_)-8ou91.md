@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Assignables  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Access the page that the identifier denotes, if any.
 
@@ -9,7 +10,7 @@ Access the page that the identifier denotes, if any.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,10 @@ subscript(pageID: AssignableDocument.Page.ID) -> AssignableDocument.Page? { get 
 
 ## See Also
 
-- [subscript(AssignableDocument.QuestionBox.ID) -> AssignableDocument.QuestionBox?](assignabledocument/subscript(_:)-68enn.md)
+### Accessing documents
+- [subscript(AssignableDocument.QuestionBox.ID) -> AssignableDocument.QuestionBox?](./subscript%28_%29-68enn.md)
   Access the question box that the identifier denotes, if any.
-- [subscript(AssignableDocument.Question.ID) -> AssignableDocument.Question?](assignabledocument/subscript(_:)-7fijz.md)
+- [subscript(AssignableDocument.Question.ID) -> AssignableDocument.Question?](./subscript%28_%29-7fijz.md)
   Access the question that the identifier denotes, if any.
 
 

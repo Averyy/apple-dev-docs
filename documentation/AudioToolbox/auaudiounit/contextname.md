@@ -1,7 +1,8 @@
 # contextName
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Information about the host context in which the audio unit is connected, for display in the audio unit’s view.
 
@@ -19,6 +20,18 @@ Information about the host context in which the audio unit is connected, for dis
 var contextName: String? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, copy, nullable) NSString * contextName;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, nullable) NSString * contextName;
+```
+
 #### Discussion
 
 For example—a host could set “track 3” as the context, so that the audio unit’s view could then display “My audio unit on track 3”.
@@ -27,15 +40,16 @@ This version 3 property is bridged to the version 2 `kAudioUnitProperty_ContextN
 
 ## See Also
 
-- [var musicalContextBlock: AUHostMusicalContextBlock?](auaudiounit/musicalcontextblock.md)
+### Providing Data to the Host
+- [var musicalContextBlock: AUHostMusicalContextBlock?](./musicalcontextblock.md)
   A callback to the host for musical context information.
-- [var transportStateBlock: AUHostTransportStateBlock?](auaudiounit/transportstateblock.md)
+- [var transportStateBlock: AUHostTransportStateBlock?](./transportstateblock.md)
   A callback to the host for transport state information.
-- [var supportsMPE: Bool](auaudiounit/supportsmpe.md)
+- [var supportsMPE: Bool](./supportsmpe.md)
   A Boolean value that indicates whether the audio unit supports multi-dimensional polyphonic expression.
-- [typealias AUHostMusicalContextBlock](auhostmusicalcontextblock.md)
+- [typealias AUHostMusicalContextBlock](../auhostmusicalcontextblock.md)
   A block through which hosts provide musical tempo, time signature, and beat position.
-- [typealias AUHostTransportStateBlock](auhosttransportstateblock.md)
+- [typealias AUHostTransportStateBlock](../auhosttransportstateblock.md)
   A block through which hosts provide information about their transport state.
 
 

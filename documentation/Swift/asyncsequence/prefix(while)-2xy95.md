@@ -1,7 +1,8 @@
 # prefix(while:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an asynchronous sequence, containing the initial, consecutive elements of the base sequence that satisfy the given predicate.
 
@@ -46,15 +47,16 @@ for try await number in stream {
 
 ## See Also
 
-- [func prefix(Int) -> AsyncPrefixSequence<Self>](asyncsequence/prefix(_:).md)
+### Selecting Elements
+- [func prefix(Int) -> AsyncPrefixSequence<Self>](./prefix%28_%29.md)
   Returns an asynchronous sequence, up to the specified maximum length, containing the initial elements of the base asynchronous sequence.
-- [struct AsyncPrefixSequence](asyncprefixsequence.md)
+- [struct AsyncPrefixSequence](../asyncprefixsequence.md)
   An asynchronous sequence, up to a specified maximum length, containing the initial elements of a base asynchronous sequence.
-- [struct AsyncPrefixWhileSequence](asyncprefixwhilesequence.md)
+- [struct AsyncPrefixWhileSequence](../asyncprefixwhilesequence.md)
   An asynchronous sequence, containing the initial, consecutive elements of the base sequence that satisfy a given predicate.
-- [func prefix(while: (Self.Element) async throws -> Bool) rethrows -> AsyncThrowingPrefixWhileSequence<Self>](asyncsequence/prefix(while:)-6yp5n.md)
+- [func prefix(while: (Self.Element) async throws -> Bool) rethrows -> AsyncThrowingPrefixWhileSequence<Self>](./prefix%28while%29-6yp5n.md)
   Returns an asynchronous sequence, containing the initial, consecutive elements of the base sequence that satisfy the given error-throwing predicate.
-- [struct AsyncThrowingPrefixWhileSequence](asyncthrowingprefixwhilesequence.md)
+- [struct AsyncThrowingPrefixWhileSequence](../asyncthrowingprefixwhilesequence.md)
   An asynchronous sequence, containing the initial, consecutive elements of the base sequence that satisfy the given error-throwing predicate.
 
 

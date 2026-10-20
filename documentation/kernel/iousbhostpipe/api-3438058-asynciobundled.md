@@ -1,14 +1,15 @@
 # AsyncIOBundled
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 kern_return_t AsyncIOBundled(uint32_t ioTransferIndex, uint32_t ioTransferCount, uint32_t *ioTransferAcceptedCount, const unsigned int *dataBufferLengthArray, int dataBufferLengthArrayCount, OSAction *completion, uint32_t completionTimeoutMs, OSDispatchMethod supermethod);
 ```
 

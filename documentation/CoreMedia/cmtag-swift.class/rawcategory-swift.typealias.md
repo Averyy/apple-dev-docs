@@ -1,7 +1,8 @@
 # CMTag.RawCategory
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The raw 64-bit representation of a tag’s category.
 

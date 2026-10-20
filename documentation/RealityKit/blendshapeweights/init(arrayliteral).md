@@ -1,7 +1,8 @@
 # init(arrayLiteral:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a collection of animatable weights using the argument elements for a blend shape.
 

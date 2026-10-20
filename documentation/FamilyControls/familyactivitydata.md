@@ -1,7 +1,8 @@
 # FamilyActivityData
 
 **Framework**: Family Controls  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interface to a person’s family activity data.
 
@@ -17,26 +18,26 @@ class FamilyActivityData
 
 #### Overview
 
-To fetch a person’s family activity data, use [`installedApplications`](familyactivitydata/installedapplications.md), [`visitedWebDomains`](familyactivitydata/visitedwebdomains.md), or [`activityCategories`](familyactivitydata/activitycategories.md) based on the type of data you need.
+To fetch a person’s family activity data, use [`installedApplications`](./familyactivitydata/installedapplications.md), [`visitedWebDomains`](./familyactivitydata/visitedwebdomains.md), or [`activityCategories`](./familyactivitydata/activitycategories.md) based on the type of data you need.
 
-##### Region Support Authorization and Entitlement
+##### Region support, authorization, and entitlement
 
 You can develop and test an app that uses this class on devices in any region. Customer installations of your app can only use the class on devices located in the EU that are signed in with an Apple Account with an EU country or region.
 
-Your app’s authorization status needs to be [`AuthorizationStatus.approvedWithDataAccess`](authorizationstatus/approvedwithdataaccess.md) to use this class.
+Your app’s authorization status needs to be [`AuthorizationStatus.approvedWithDataAccess`](./authorizationstatus/approvedwithdataaccess.md) to use this class.
 
-Your app needs the  [`Family Controls App and Website Usage`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.family-controls.app-and-website-usage) entitlement to use this class. Enable the capability on your Xcode target to add the entitlement to your app. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
+Your app needs the  [`Family Controls App and Website Usage`](../BundleResources/entitlements/com.apple.developer.family-controls.app-and-website-usage.md) entitlement to use this class. Enable the capability on your Xcode target to add the entitlement to your app. For more information, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 
 ## Topics
 
 ### Accessing activity data
-- [static let shared: FamilyActivityData](familyactivitydata/shared.md)
+- [static let shared: FamilyActivityData](./familyactivitydata/shared.md)
   A shared instance for accessing a person’s family activity data.
-- [var activityCategories: Set<ActivityCategory>](familyactivitydata/activitycategories.md)
+- [var activityCategories: Set<ActivityCategory>](./familyactivitydata/activitycategories.md)
   The set of all possible activity categories.
-- [var installedApplications: [Application]](familyactivitydata/installedapplications.md)
+- [var installedApplications: [Application]](./familyactivitydata/installedapplications.md)
   Applications someone installs on a device.
-- [var visitedWebDomains: [WebDomain]](familyactivitydata/visitedwebdomains.md)
+- [var visitedWebDomains: [WebDomain]](./familyactivitydata/visitedwebdomains.md)
   Web domains someone visits on their device.
 
 

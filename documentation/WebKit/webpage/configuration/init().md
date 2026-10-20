@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new configuration value.
 

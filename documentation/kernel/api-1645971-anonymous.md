@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,16 +18,16 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [sock_evt_bound](1645971-anonymous/sock_evt_bound.md)
-- [sock_evt_cantrecvmore](1645971-anonymous/sock_evt_cantrecvmore.md)
-- [sock_evt_cantsendmore](1645971-anonymous/sock_evt_cantsendmore.md)
-- [sock_evt_closing](1645971-anonymous/sock_evt_closing.md)
-- [sock_evt_connected](1645971-anonymous/sock_evt_connected.md)
-- [sock_evt_connecting](1645971-anonymous/sock_evt_connecting.md)
-- [sock_evt_disconnected](1645971-anonymous/sock_evt_disconnected.md)
-- [sock_evt_disconnecting](1645971-anonymous/sock_evt_disconnecting.md)
-- [sock_evt_flush_read](1645971-anonymous/sock_evt_flush_read.md)
-- [sock_evt_shutdown](1645971-anonymous/sock_evt_shutdown.md)
+- [sock_evt_bound](./api-1645971-anonymous/sock_evt_bound.md)
+- [sock_evt_cantrecvmore](./api-1645971-anonymous/sock_evt_cantrecvmore.md)
+- [sock_evt_cantsendmore](./api-1645971-anonymous/sock_evt_cantsendmore.md)
+- [sock_evt_closing](./api-1645971-anonymous/sock_evt_closing.md)
+- [sock_evt_connected](./api-1645971-anonymous/sock_evt_connected.md)
+- [sock_evt_connecting](./api-1645971-anonymous/sock_evt_connecting.md)
+- [sock_evt_disconnected](./api-1645971-anonymous/sock_evt_disconnected.md)
+- [sock_evt_disconnecting](./api-1645971-anonymous/sock_evt_disconnecting.md)
+- [sock_evt_flush_read](./api-1645971-anonymous/sock_evt_flush_read.md)
+- [sock_evt_shutdown](./api-1645971-anonymous/sock_evt_shutdown.md)
 
 
 ---

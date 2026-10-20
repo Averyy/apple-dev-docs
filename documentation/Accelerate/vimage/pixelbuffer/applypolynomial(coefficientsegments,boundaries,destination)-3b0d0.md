@@ -1,7 +1,8 @@
 # applyPolynomial(coefficientSegments:boundaries:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a set of piecewise polynomials to a 32-bit planar buffer and writes the result to an 8-bit planar buffer.
 
@@ -11,7 +12,7 @@ Applies a set of piecewise polynomials to a 32-bit planar buffer and writes the 
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,9 +21,11 @@ Applies a set of piecewise polynomials to a 32-bit planar buffer and writes the 
 func applyPolynomial(coefficientSegments: [[Float]], boundaries: [Float], destination: vImage.PixelBuffer<vImage.Planar8>)
 ```
 
+Available when `Format` is `vImage.PlanarF`.
+
 #### Discussion
 
-The following code shows an example of applying three polynomials to a [`vImage.PlanarF`](vimage/planarf.md) buffer:
+The following code shows an example of applying three polynomials to a [`vImage.PlanarF`](../planarf.md) buffer:
 
 ```swift
 let src = vImage.PixelBuffer<vImage.PlanarF>(
@@ -57,13 +60,15 @@ print(dest.array)
 
 ## See Also
 
-- [Applying tone curve adjustments to images](applying-tone-curve-adjustments-to-images.md)
+### Related Documentation
+- [Applying tone curve adjustments to images](../../applying-tone-curve-adjustments-to-images.md)
   Use the vImage library’s polynomial transform to apply tone curve adjustments to images.
-- [func applyPolynomial(coefficientSegments: [[Float]], boundaries: [Float], destination: vImage.PixelBuffer<vImage.Interleaved8x2>)](vimage/pixelbuffer/applypolynomial(coefficientsegments:boundaries:destination:)-6uls3.md)
+### Appying polynomial (32-bit source, 8-bit destination)
+- [func applyPolynomial(coefficientSegments: [[Float]], boundaries: [Float], destination: vImage.PixelBuffer<vImage.Interleaved8x2>)](./applypolynomial%28coefficientsegments,boundaries,destination%29-6uls3.md)
   Applies a set of piecewise polynomials to a 2-channel, 32-bit interleaved buffer and writes the result to a 2-channel, 8-bit interleaved buffer.
-- [func applyPolynomial(coefficientSegments: [[Float]], boundaries: [Float], destination: vImage.PixelBuffer<vImage.Interleaved8x3>)](vimage/pixelbuffer/applypolynomial(coefficientsegments:boundaries:destination:)-4r6nf.md)
+- [func applyPolynomial(coefficientSegments: [[Float]], boundaries: [Float], destination: vImage.PixelBuffer<vImage.Interleaved8x3>)](./applypolynomial%28coefficientsegments,boundaries,destination%29-4r6nf.md)
   Applies a set of piecewise polynomials to a 3-channel, 32-bit interleaved buffer and writes the result to a 3-channel, 8-bit interleaved buffer.
-- [func applyPolynomial(coefficientSegments: [[Float]], boundaries: [Float], destination: vImage.PixelBuffer<vImage.Interleaved8x4>)](vimage/pixelbuffer/applypolynomial(coefficientsegments:boundaries:destination:)-1b2nu.md)
+- [func applyPolynomial(coefficientSegments: [[Float]], boundaries: [Float], destination: vImage.PixelBuffer<vImage.Interleaved8x4>)](./applypolynomial%28coefficientsegments,boundaries,destination%29-1b2nu.md)
   Applies a set of piecewise polynomials to a 4-channel, 32-bit interleaved buffer and writes the result to a 4-channel, 8-bit interleaved buffer.
 
 

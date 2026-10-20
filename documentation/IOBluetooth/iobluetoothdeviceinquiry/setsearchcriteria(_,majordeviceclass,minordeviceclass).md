@@ -1,17 +1,22 @@
 # setSearchCriteria(_:majorDeviceClass:minorDeviceClass:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Use this method to set the criteria for the device search.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setSearchCriteria(_ inServiceClassMajor: BluetoothServiceClassMajor, majorDeviceClass inMajorDeviceClass: BluetoothDeviceClassMajor, minorDeviceClass inMinorDeviceClass: BluetoothDeviceClassMinor)
+```
+
+```objc
+- (void) setSearchCriteria:(BluetoothServiceClassMajor) inServiceClassMajor majorDeviceClass:(BluetoothDeviceClassMajor) inMajorDeviceClass minorDeviceClass:(BluetoothDeviceClassMinor) inMinorDeviceClass;
 ```
 
 #### Discussion

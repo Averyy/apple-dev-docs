@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 unsigned long preventIdleSleepFlag;
 ```
 
@@ -15,13 +15,14 @@ used by parent
 
 ## See Also
 
-- [stateKnown](iopowerconnection/stateknown.md)
-- [requestFlag](iopowerconnection/requestflag.md)
-- [readyFlag](iopowerconnection/readyflag.md)
-- [preventSystemSleepFlag](iopowerconnection/preventsystemsleepflag.md)
-- [desiredDomainState](iopowerconnection/desireddomainstate.md)
-- [currentPowerFlags](iopowerconnection/currentpowerflags.md)
-- [awaitingAck](iopowerconnection/awaitingack.md)
+### Instance Variables
+- [stateKnown](./stateknown.md)
+- [requestFlag](./requestflag.md)
+- [readyFlag](./readyflag.md)
+- [preventSystemSleepFlag](./preventsystemsleepflag.md)
+- [desiredDomainState](./desireddomainstate.md)
+- [currentPowerFlags](./currentpowerflags.md)
+- [awaitingAck](./awaitingack.md)
 
 
 ---

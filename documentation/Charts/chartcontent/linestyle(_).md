@@ -1,7 +1,8 @@
 # lineStyle(_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for line marks.
 
@@ -31,17 +32,18 @@ func lineStyle(_ style: StrokeStyle) -> some ChartContent
 
 ## See Also
 
-- [func foregroundStyle<S>(S) -> some ChartContent](chartcontent/foregroundstyle(_:).md)
+### Styling marks
+- [func foregroundStyle<S>(S) -> some ChartContent](./foregroundstyle%28_%29.md)
   Sets the foreground style for the chart content.
-- [func opacity(Double) -> some ChartContent](chartcontent/opacity(_:).md)
+- [func opacity(Double) -> some ChartContent](./opacity%28_%29.md)
   Sets the opacity for the chart content.
-- [func blur(radius: CGFloat) -> some ChartContent](chartcontent/blur(radius:).md)
+- [func blur(radius: CGFloat) -> some ChartContent](./blur%28radius%29.md)
   Applies a Gaussian blur to this chart content.
-- [func cornerRadius(CGFloat, style: RoundedCornerStyle) -> some ChartContent](chartcontent/cornerradius(_:style:).md)
+- [func cornerRadius(CGFloat, style: RoundedCornerStyle) -> some ChartContent](./cornerradius%28_,style%29.md)
   Sets the corner radius of the chart content.
-- [func shadow(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> some ChartContent](chartcontent/shadow(color:radius:x:y:).md)
+- [func shadow(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> some ChartContent](./shadow%28color,radius,x,y%29.md)
   A chart content that adds a shadow to this chart content.
-- [func interpolationMethod(InterpolationMethod) -> some ChartContent](chartcontent/interpolationmethod(_:).md)
+- [func interpolationMethod(InterpolationMethod) -> some ChartContent](./interpolationmethod%28_%29.md)
   Plots line and area marks with the interpolation method that you specify.
 
 

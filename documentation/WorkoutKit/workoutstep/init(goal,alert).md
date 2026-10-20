@@ -1,7 +1,8 @@
 # init(goal:alert:)
 
 **Framework**: WorkoutKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new workout step with the provided goal and alerts.
 

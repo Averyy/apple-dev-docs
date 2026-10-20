@@ -1,7 +1,8 @@
 # BulkKeywordUpdate.Bid
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The updated keyword-level bid amount for a bulk keyword update item.
 
@@ -10,7 +11,7 @@ The updated keyword-level bid amount for a bulk keyword update item.
 
 ## Declaration
 
-```swift
+```
 object BulkKeywordUpdate.Bid
 ```
 
@@ -18,7 +19,7 @@ object BulkKeywordUpdate.Bid
 
 The updated keyword-level bid amount for a bulk keyword update item, expressed as a `Money` object with `amount` and `currency`. It overrides the ad group’s default bid for this keyword. This bid isn’t used with Maximize Conversions bid strategy campaigns.
 
-See [`BulkKeywordUpdate`](bulkkeywordupdate.md) for the full field reference.
+See [`BulkKeywordUpdate`](../bulkkeywordupdate.md) for the full field reference.
 
 ## Properties
 

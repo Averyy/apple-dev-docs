@@ -1,17 +1,22 @@
 # windowLevel()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the window level of the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func windowLevel() -> Int
+```
+
+```objc
+- (NSInteger) windowLevel;
 ```
 
 #### Return Value
@@ -24,9 +29,10 @@ Implementation of this method is optional. A class adopting `NSTextInputClient` 
 
 ## See Also
 
-- [var documentVisibleRect: NSRect](nstextinputclient/documentvisiblerect.md)
-- [var unionRectInVisibleSelectedRange: NSRect](nstextinputclient/unionrectinvisibleselectedrange.md)
-- [func preferredTextAccessoryPlacement() -> NSTextCursorAccessoryPlacement](nstextinputclient/preferredtextaccessoryplacement.md)
+### Placing content
+- [var documentVisibleRect: NSRect](./documentvisiblerect.md)
+- [var unionRectInVisibleSelectedRange: NSRect](./unionrectinvisibleselectedrange.md)
+- [func preferredTextAccessoryPlacement() -> NSTextCursorAccessoryPlacement](./preferredtextaccessoryplacement%28%29.md)
 
 
 ---

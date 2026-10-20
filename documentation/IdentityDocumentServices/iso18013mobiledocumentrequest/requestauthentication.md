@@ -1,14 +1,15 @@
 # ISO18013MobileDocumentRequest.RequestAuthentication
 
 **Framework**: IdentityDocumentServices  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that contains information for authenticating the incoming request.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 
 ## Declaration
@@ -20,17 +21,17 @@ struct RequestAuthentication
 ## Topics
 
 ### Initializers
-- [init(authenticationCertificateChain: [SecCertificate])](iso18013mobiledocumentrequest/requestauthentication/init(authenticationcertificatechain:).md)
+- [init(authenticationCertificateChain: [SecCertificate])](./requestauthentication/init%28authenticationcertificatechain%29.md)
   Initializes a request authentication.
 ### Instance Properties
-- [var authenticationCertificateChain: [SecCertificate]](iso18013mobiledocumentrequest/requestauthentication/authenticationcertificatechain.md)
+- [var authenticationCertificateChain: [SecCertificate]](./requestauthentication/authenticationcertificatechain.md)
   A certificate chain that you use to authenticate the relying party.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

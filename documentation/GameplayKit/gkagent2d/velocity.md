@@ -1,7 +1,8 @@
 # velocity
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current velocity of the agent in 2D space.
 
@@ -19,13 +20,18 @@ The current velocity of the agent in 2D space.
 var velocity: vector_float2 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) vector_float2 velocity;
+```
+
 #### Discussion
 
-An agent’s velocity is a calculated property—the velocity vector is determined by an agent’s facing direction (its [`rotation`](gkagent2d/rotation.md) property) and its [`speed`](gkagent/speed.md) property.
+An agent’s velocity is a calculated property—the velocity vector is determined by an agent’s facing direction (its [`rotation`](./rotation.md) property) and its [`speed`](../gkagent/speed.md) property.
 
 ## See Also
 
-- [func update(deltaTime: TimeInterval)](gkagent2d/update(deltatime:).md)
+### Running the Agent Simulation
+- [func update(deltaTime: TimeInterval)](./update%28deltatime%29.md)
   Causes the agent to evaluate its goals and update its position, rotation, and velocity accordingly.
 
 

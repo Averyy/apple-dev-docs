@@ -1,7 +1,8 @@
 # secret
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The secret associated with this generator.
 
@@ -24,15 +25,16 @@ This value must be Base32-encoded when encoded to JSON.
 
 ## See Also
 
-- [var period: UInt16](asimportablecredential/totp/period.md)
+### Accessing TOTP properties
+- [var period: UInt16](./period.md)
   The period, in seconds, used by the generator to refresh codes.
-- [var digits: UInt16](asimportablecredential/totp/digits.md)
+- [var digits: UInt16](./digits.md)
   The number of digits in the code used by the generator.
-- [var algorithm: ASImportableCredential.TOTP.Algorithm](asimportablecredential/totp/algorithm-swift.property.md)
+- [var algorithm: ASImportableCredential.TOTP.Algorithm](./algorithm-swift.property.md)
   The algorithm used by the generator.
-- [ASImportableCredential.TOTP.Algorithm](asimportablecredential/totp/algorithm-swift.enum.md)
+- [ASImportableCredential.TOTP.Algorithm](./algorithm-swift.enum.md)
   An enumeration of algorithm types that all importers are expected to support.
-- [var issuer: String?](asimportablecredential/totp/issuer.md)
+- [var issuer: String?](./issuer.md)
   The issuer of the generator, if any.
 
 

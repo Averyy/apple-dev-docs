@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique string identifying the HealthKit object type.
 
@@ -19,13 +20,18 @@ A unique string identifying the HealthKit object type.
 var identifier: String { get }
 ```
 
+```objc
+@property (strong, readonly) NSString * identifier;
+```
+
 #### Discussion
 
-Each object type has a unique identifier. The identifiers can be grouped into different categories: [`HKQuantityTypeIdentifier`](hkquantitytypeidentifier.md), [`HKCategoryTypeIdentifier`](hkcategorytypeidentifier.md), [`HKCharacteristicTypeIdentifier`](hkcharacteristictypeidentifier.md), [`HKCorrelationTypeIdentifier`](hkcorrelationtypeidentifier.md), and [`HKDocumentTypeIdentifier`](hkdocumenttypeidentifier.md) Each group of identifiers is associated with a different concrete subclass of `HKObjectType`.
+Each object type has a unique identifier. The identifiers can be grouped into different categories: [`HKQuantityTypeIdentifier`](../hkquantitytypeidentifier.md), [`HKCategoryTypeIdentifier`](../hkcategorytypeidentifier.md), [`HKCharacteristicTypeIdentifier`](../hkcharacteristictypeidentifier.md), [`HKCorrelationTypeIdentifier`](../hkcorrelationtypeidentifier.md), and [`HKDocumentTypeIdentifier`](../hkdocumenttypeidentifier.md) Each group of identifiers is associated with a different concrete subclass of `HKObjectType`.
 
 ## See Also
 
-- [func requiresPerObjectAuthorization() -> Bool](hkobjecttype/requiresperobjectauthorization.md)
+### Getting property data
+- [func requiresPerObjectAuthorization() -> Bool](./requiresperobjectauthorization%28%29.md)
   Returns a Boolean that indicates whether the data type requires per-object authorization.
 
 

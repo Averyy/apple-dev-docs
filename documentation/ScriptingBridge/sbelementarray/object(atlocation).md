@@ -1,7 +1,8 @@
 # object(atLocation:)
 
 **Framework**: Scripting Bridge  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the object at the given location in the receiver.
 
@@ -15,19 +16,24 @@ Returns the object at the given location in the receiver.
 func object(atLocation location: Any) -> Any
 ```
 
+```objc
+- (ObjectType) objectAtLocation:(id) location;
+```
+
 #### Return Value
 
-A reference to the [`SBObject`](sbobject.md) object identified by `loc` or `nil` if the object couldn’t be located.
+A reference to the [`SBObject`](../sbobject.md) object identified by `loc` or `nil` if the object couldn’t be located.
 
 #### Discussion
 
-This method is a generalization of [`object(at:)`](https://developer.apple.com/documentation/foundation/nsarray/object(at:)) for applications where the “index” is not simply an integer. For example, Finder can specify objects using a [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object as a location. In OSA this is known as “absolute position,” a generalization of the notion of “index” in Foundation—it could be an integer, but it doesn’t have to be. A single object may even have a number of different “absolute position” values depending on the container.
+This method is a generalization of [`object(at:)`](../../Foundation/nsarray/object%28at%29.md) for applications where the “index” is not simply an integer. For example, Finder can specify objects using a [`NSURL`](../../Foundation/nsurl.md) object as a location. In OSA this is known as “absolute position,” a generalization of the notion of “index” in Foundation—it could be an integer, but it doesn’t have to be. A single object may even have a number of different “absolute position” values depending on the container.
 
 ## See Also
 
-- [func object(withName: String) -> Any](sbelementarray/object(withname:).md)
+### Getting Objects in the Array
+- [func object(withName: String) -> Any](./object%28withname%29.md)
   Returns the object in the array with the given name.
-- [func object(withID: Any) -> Any](sbelementarray/object(withid:).md)
+- [func object(withID: Any) -> Any](./object%28withid%29.md)
   Returns the object in the array with the given identifier.
 
 

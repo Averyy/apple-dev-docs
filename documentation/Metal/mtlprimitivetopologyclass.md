@@ -1,7 +1,8 @@
 # MTLPrimitiveTopologyClass
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The primitive topologies available for rendering.
 
@@ -19,43 +20,48 @@ The primitive topologies available for rendering.
 enum MTLPrimitiveTopologyClass
 ```
 
+```c
+enum MTLPrimitiveTopologyClass : NSUInteger;
+```
+
 ## Topics
 
 ### Topology classes
-- [MTLPrimitiveTopologyClass.unspecified](mtlprimitivetopologyclass/unspecified.md)
+- [MTLPrimitiveTopologyClass.unspecified](./mtlprimitivetopologyclass/unspecified.md)
   An unspecified primitive.
-- [MTLPrimitiveTopologyClass.point](mtlprimitivetopologyclass/point.md)
+- [MTLPrimitiveTopologyClass.point](./mtlprimitivetopologyclass/point.md)
   A point primitive.
-- [MTLPrimitiveTopologyClass.line](mtlprimitivetopologyclass/line.md)
+- [MTLPrimitiveTopologyClass.line](./mtlprimitivetopologyclass/line.md)
   A line primitive.
-- [MTLPrimitiveTopologyClass.triangle](mtlprimitivetopologyclass/triangle.md)
+- [MTLPrimitiveTopologyClass.triangle](./mtlprimitivetopologyclass/triangle.md)
   A triangle primitive.
 ### Initializers
-- [init?(rawValue: UInt)](mtlprimitivetopologyclass/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtlprimitivetopologyclass/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isAlphaToCoverageEnabled: Bool](mtlrenderpipelinedescriptor/isalphatocoverageenabled.md)
+### Specifying rasterization and visibility state
+- [var isAlphaToCoverageEnabled: Bool](./mtlrenderpipelinedescriptor/isalphatocoverageenabled.md)
   A Boolean value that indicates whether to read and use the alpha channel fragment output for color attachments to compute a sample coverage mask.
-- [var isAlphaToOneEnabled: Bool](mtlrenderpipelinedescriptor/isalphatooneenabled.md)
+- [var isAlphaToOneEnabled: Bool](./mtlrenderpipelinedescriptor/isalphatooneenabled.md)
   A Boolean value that indicates whether to force alpha channel values for color attachments to the largest representable value.
-- [var isRasterizationEnabled: Bool](mtlrenderpipelinedescriptor/israsterizationenabled.md)
+- [var isRasterizationEnabled: Bool](./mtlrenderpipelinedescriptor/israsterizationenabled.md)
   A Boolean value that determines whether the pipeline rasterizes primitives.
-- [var inputPrimitiveTopology: MTLPrimitiveTopologyClass](mtlrenderpipelinedescriptor/inputprimitivetopology.md)
+- [var inputPrimitiveTopology: MTLPrimitiveTopologyClass](./mtlrenderpipelinedescriptor/inputprimitivetopology.md)
   The type of primitive topology the pipeline renders.
-- [var rasterSampleCount: Int](mtlrenderpipelinedescriptor/rastersamplecount.md)
+- [var rasterSampleCount: Int](./mtlrenderpipelinedescriptor/rastersamplecount.md)
   The number of samples the pipeline applies for each fragment.
-- [var sampleCount: Int](mtlrenderpipelinedescriptor/samplecount.md)
+- [var sampleCount: Int](./mtlrenderpipelinedescriptor/samplecount.md)
   The number of samples the pipeline applies for each fragment.
 
 

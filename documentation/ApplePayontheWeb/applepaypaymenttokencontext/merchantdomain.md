@@ -1,7 +1,8 @@
 # merchantDomain
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The merchant’s top-level domain that the Apple Pay server associates with the payment token.
 
@@ -11,7 +12,7 @@ The merchant’s top-level domain that the Apple Pay server associates with the 
 
 ## Declaration
 
-```swift
+```
 DOMString merchantDomain;
 ```
 
@@ -21,11 +22,12 @@ This value is optional; provide the top-level domain for the merchant if it’s 
 
 ## See Also
 
-- [merchantIdentifier](applepaypaymenttokencontext/merchantidentifier.md)
+### Specifying the merchant
+- [merchantIdentifier](./merchantidentifier.md)
   The Apply Pay merchant identifier.
-- [merchantName](applepaypaymenttokencontext/merchantname.md)
+- [merchantName](./merchantname.md)
   The merchant’s display name that the Apple Pay server associates with the payment token.
-- [externalIdentifier](applepaypaymenttokencontext/externalidentifier.md)
+- [externalIdentifier](./externalidentifier.md)
   An external identifier for the merchant.
 
 

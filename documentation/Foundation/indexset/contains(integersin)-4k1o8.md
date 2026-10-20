@@ -1,7 +1,8 @@
 # contains(integersIn:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns `true` if `self` contains all of the integers in `range`.
 

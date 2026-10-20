@@ -1,7 +1,8 @@
 # URLSession.DataTaskPublisher.Failure
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of errors this publisher might publish.
 
@@ -22,7 +23,8 @@ typealias Failure = URLError
 
 ## See Also
 
-- [URLSession.DataTaskPublisher.Output](urlsession/datataskpublisher/output.md)
+### Declaring publisher topography
+- [URLSession.DataTaskPublisher.Output](./output.md)
   The kind of values published by this publisher.
 
 

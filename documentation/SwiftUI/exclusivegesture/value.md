@@ -1,7 +1,8 @@
 # ExclusiveGesture.Value
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The value of an exclusive gesture that indicates which of two gestures succeeded.
 
@@ -24,17 +25,17 @@ enum Value
 ## Topics
 
 ### Getting gesture values
-- [ExclusiveGesture.Value.first(_:)](exclusivegesture/value/first(_:).md)
+- [ExclusiveGesture.Value.first(_:)](./value/first%28_%29.md)
   The first of two gestures succeeded.
-- [ExclusiveGesture.Value.second(_:)](exclusivegesture/value/second(_:).md)
+- [ExclusiveGesture.Value.second(_:)](./value/second%28_%29.md)
   The second of two gestures succeeded.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,12 +1,13 @@
 # shared
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared instance of the AudioHardwareSystem class.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

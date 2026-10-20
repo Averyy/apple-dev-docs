@@ -1,7 +1,8 @@
 # RCSService.Business.Card.Width.small
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Small width.
 
@@ -16,7 +17,8 @@ case small
 
 ## See Also
 
-- [RCSService.Business.Card.Width.medium](rcsservice/business/card/width/medium.md)
+### Determining width
+- [RCSService.Business.Card.Width.medium](./medium.md)
   Medium width.
 
 

@@ -1,14 +1,15 @@
 # ifnet_set_offload_enabled
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 errno_t ifnet_set_offload_enabled(ifnet_t interface, ifnet_offload_t offload);
 ```
 

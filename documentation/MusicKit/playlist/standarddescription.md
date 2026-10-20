@@ -1,7 +1,8 @@
 # standardDescription
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description to show when the playlist is prominently displayed.
 

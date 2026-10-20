@@ -1,12 +1,13 @@
 # NSChangeSpelling
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that responder objects can implement to correct a misspelled word.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,28 @@ A protocol that responder objects can implement to correct a misspelled word.
 protocol NSChangeSpelling
 ```
 
+```objc
+@protocol NSChangeSpelling
+```
+
 ## Topics
 
 ### Changing spellings
-- [func changeSpelling(Any?)](nschangespelling/changespelling(_:).md)
+- [func changeSpelling(Any?)](./nschangespelling/changespelling%28_%29.md)
   Replaces the selected word in the receiver with a corrected version from the Spelling panel.
 
 ## Relationships
 
 ### Conforming Types
-- [NSText](nstext.md)
-- [NSTextView](nstextview.md)
+- [NSText](./nstext.md)
+- [NSTextView](./nstextview.md)
 
 ## See Also
 
-- [class NSSpellChecker](nsspellchecker.md)
+### Spell-checking
+- [class NSSpellChecker](./nsspellchecker.md)
   An interface to the Cocoa spell-checking service.
-- [protocol NSIgnoreMisspelledWords](nsignoremisspelledwords.md)
+- [protocol NSIgnoreMisspelledWords](./nsignoremisspelledwords.md)
   A protocol that enables the Ignore button in the Spelling panel to function properly.
 
 

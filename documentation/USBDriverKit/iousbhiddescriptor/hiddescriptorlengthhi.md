@@ -1,26 +1,28 @@
 # hidDescriptorLengthHi
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t hidDescriptorLengthHi;
 ```
 
 ## See Also
 
-- [descLen](iousbhiddescriptor/desclen.md)
-- [descType](iousbhiddescriptor/desctype.md)
-- [descVersNum](iousbhiddescriptor/descversnum.md)
-- [hidCountryCode](iousbhiddescriptor/hidcountrycode.md)
-- [hidNumDescriptors](iousbhiddescriptor/hidnumdescriptors.md)
-- [hidDescriptorType](iousbhiddescriptor/hiddescriptortype.md)
-- [hidDescriptorLengthLo](iousbhiddescriptor/hiddescriptorlengthlo.md)
+### Accessing the Descriptor Properties
+- [descLen](./desclen.md)
+- [descType](./desctype.md)
+- [descVersNum](./descversnum.md)
+- [hidCountryCode](./hidcountrycode.md)
+- [hidNumDescriptors](./hidnumdescriptors.md)
+- [hidDescriptorType](./hiddescriptortype.md)
+- [hidDescriptorLengthLo](./hiddescriptorlengthlo.md)
 
 
 ---

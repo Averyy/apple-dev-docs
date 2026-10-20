@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asynchronously creates a tile shader’s render pipeline state and reflection information.
@@ -17,20 +18,35 @@ Asynchronously creates a tile shader’s render pipeline state and reflection in
 ## Declaration
 
 ```swift
+func makeRenderPipelineState(tileDescriptor descriptor: MTLTileRenderPipelineDescriptor, options: MTLPipelineOption, completionHandler: @escaping @Sendable ((any MTLRenderPipelineState)?, MTLRenderPipelineReflection?, (any Error)?) -> Void)
+```
+
+```swift
 func makeRenderPipelineState(tileDescriptor descriptor: MTLTileRenderPipelineDescriptor, options: MTLPipelineOption) async throws -> (any MTLRenderPipelineState, MTLRenderPipelineReflection?)
+```
+
+```objc
+- (void) newRenderPipelineStateWithTileDescriptor:(MTLTileRenderPipelineDescriptor *) descriptor options:(MTLPipelineOption) options completionHandler:(MTLNewRenderPipelineStateWithReflectionCompletionHandler) completionHandler;
 ```
 
 ## Parameters
 
-- `descriptor`: An [`MTLTileRenderPipelineDescriptor`](mtltilerenderpipelinedescriptor.md) instance.
-- `options`: An [`MTLPipelineOption`](mtlpipelineoption.md) instance that represents the reflection information you want the method to generate.
+- `descriptor`: An [`MTLTileRenderPipelineDescriptor`](../mtltilerenderpipelinedescriptor.md) instance.
+- `options`: An [`MTLPipelineOption`](../mtlpipelineoption.md) instance that represents the reflection information you want the method to generate.
 - `completionHandler`: A Swift closure or an Objective-C block the method calls when it finishes creating the render pipeline state.
+
+## Default Implementations
+
+### MTLDevice Implementations
+- [func makeRenderPipelineState(tileDescriptor: MTLTileRenderPipelineDescriptor, options: MTLPipelineOption) throws -> (any MTLRenderPipelineState, MTLRenderPipelineReflection?)](./makerenderpipelinestate%28tiledescriptor,options%29.md)
+  Synchronously creates a tile shader’s render pipeline state and reflection information in a tuple.
 
 ## See Also
 
-- [func makeRenderPipelineState(tileDescriptor: MTLTileRenderPipelineDescriptor, options: MTLPipelineOption) throws -> (any MTLRenderPipelineState, MTLRenderPipelineReflection?)](mtldevice/makerenderpipelinestate(tiledescriptor:options:).md)
+### Creating tile render pipeline states
+- [func makeRenderPipelineState(tileDescriptor: MTLTileRenderPipelineDescriptor, options: MTLPipelineOption) throws -> (any MTLRenderPipelineState, MTLRenderPipelineReflection?)](./makerenderpipelinestate%28tiledescriptor,options%29.md)
   Synchronously creates a tile shader’s render pipeline state and reflection information in a tuple.
-- [func makeRenderPipelineState(tileDescriptor: MTLTileRenderPipelineDescriptor, options: MTLPipelineOption, reflection: AutoreleasingUnsafeMutablePointer<MTLAutoreleasedRenderPipelineReflection?>?) throws -> any MTLRenderPipelineState](mtldevice/makerenderpipelinestate(tiledescriptor:options:reflection:).md)
+- [func makeRenderPipelineState(tileDescriptor: MTLTileRenderPipelineDescriptor, options: MTLPipelineOption, reflection: AutoreleasingUnsafeMutablePointer<MTLAutoreleasedRenderPipelineReflection?>?) throws -> any MTLRenderPipelineState](./makerenderpipelinestate%28tiledescriptor,options,reflection%29.md)
   Synchronously creates a tile shader’s render pipeline state and reflection information.
 
 

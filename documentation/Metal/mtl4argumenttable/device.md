@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The device from which you created this argument table.
@@ -18,6 +19,10 @@ The device from which you created this argument table.
 
 ```swift
 var device: any MTLDevice { get }
+```
+
+```objc
+@property (readonly) id<MTLDevice> device;
 ```
 
 

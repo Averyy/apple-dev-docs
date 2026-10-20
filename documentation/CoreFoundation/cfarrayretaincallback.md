@@ -1,23 +1,28 @@
 # CFArrayRetainCallBack
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Prototype of a callback function used to retain a value being added to an array.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias CFArrayRetainCallBack = (CFAllocator?, UnsafeRawPointer?) -> UnsafeRawPointer?
+```
+
+```c
+typedef const void *(*)(const struct __CFAllocator *, const void *) CFArrayRetainCallBack;
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ The value to store in an array, which is usually the `value` parameter passed to
 
 #### Discussion
 
-This callback is passed to [`CFArrayCreate(_:_:_:_:)`](cfarraycreate(_:_:_:_:).md) in a [`CFArrayCallBacks`](cfarraycallbacks.md) structure.
+This callback is passed to [`CFArrayCreate(_:_:_:_:)`](./cfarraycreate%28_,_,_,_%29.md) in a [`CFArrayCallBacks`](./cfarraycallbacks.md) structure.
 
 ## Parameters
 
@@ -35,13 +40,14 @@ This callback is passed to [`CFArrayCreate(_:_:_:_:)`](cfarraycreate(_:_:_:_:).m
 
 ## See Also
 
-- [typealias CFArrayApplierFunction](cfarrayapplierfunction.md)
+### Callbacks
+- [typealias CFArrayApplierFunction](./cfarrayapplierfunction.md)
   Prototype of a callback function that may be applied to every value in an array.
-- [typealias CFArrayCopyDescriptionCallBack](cfarraycopydescriptioncallback.md)
+- [typealias CFArrayCopyDescriptionCallBack](./cfarraycopydescriptioncallback.md)
   Prototype of a callback function used to get a description of a value in an array.
-- [typealias CFArrayEqualCallBack](cfarrayequalcallback.md)
+- [typealias CFArrayEqualCallBack](./cfarrayequalcallback.md)
   Prototype of a callback function used to determine if two values in an array are equal.
-- [typealias CFArrayReleaseCallBack](cfarrayreleasecallback.md)
+- [typealias CFArrayReleaseCallBack](./cfarrayreleasecallback.md)
   Prototype of a callback function used to release a value before it’s removed from an array.
 
 

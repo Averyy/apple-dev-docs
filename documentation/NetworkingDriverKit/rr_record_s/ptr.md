@@ -1,23 +1,24 @@
 # ptr
 
 **Framework**: NetworkingDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 struct { ... } ptr;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [hb](rr_record_s/ptr/hb.md)
-- [lb](rr_record_s/ptr/lb.md)
-- [record](rr_record_s/ptr/record.md)
+- [hb](./ptr/hb.md)
+- [lb](./ptr/lb.md)
+- [record](./ptr/record.md)
 
 
 ---

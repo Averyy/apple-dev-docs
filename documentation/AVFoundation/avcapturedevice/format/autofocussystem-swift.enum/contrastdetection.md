@@ -1,7 +1,8 @@
 # AVCaptureDevice.Format.AutoFocusSystem.contrastDetection
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A slower autofocus system based on differences in contrast.
 
@@ -18,15 +19,20 @@ A slower autofocus system based on differences in contrast.
 case contrastDetection
 ```
 
+```c
+AVCaptureAutoFocusSystemContrastDetection
+```
+
 #### Discussion
 
 Contrast detection performs a focus scan to find the optimal position.
 
 ## See Also
 
-- [AVCaptureDevice.Format.AutoFocusSystem.none](avcapturedevice/format/autofocussystem-swift.enum/none.md)
+### Systems
+- [AVCaptureDevice.Format.AutoFocusSystem.none](./none.md)
   Autofocus isn’t available.
-- [AVCaptureDevice.Format.AutoFocusSystem.phaseDetection](avcapturedevice/format/autofocussystem-swift.enum/phasedetection.md)
+- [AVCaptureDevice.Format.AutoFocusSystem.phaseDetection](./phasedetection.md)
   A faster autofoscus system based on differences in light phase.
 
 

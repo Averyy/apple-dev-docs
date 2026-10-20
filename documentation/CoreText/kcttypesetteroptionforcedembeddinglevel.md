@@ -1,7 +1,8 @@
 # kCTTypesetterOptionForcedEmbeddingLevel
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that specifies the embedding level of the typesetter’s text.
 
@@ -20,17 +21,22 @@ A key that specifies the embedding level of the typesetter’s text.
 let kCTTypesetterOptionForcedEmbeddingLevel: CFString
 ```
 
+```c
+extern CFStringRef const kCTTypesetterOptionForcedEmbeddingLevel;
+```
+
 #### Discussion
 
 The value for this key must be a `CFNumberRef` object. There’s no default value.
 
-Normally, typesetting applies the Unicode Bidirectional Algorithm as described in [`Unicode Standard Annex #9`](https://developer.apple.comhttps://unicode.org/reports/tr9/). If present, this option specifies the embedding level, and the text system ignores any directional control characters.
+Normally, typesetting applies the Unicode Bidirectional Algorithm as described in [Unicode Standard Annex #9](https://unicode.org/reports/tr9/). If present, this option specifies the embedding level, and the text system ignores any directional control characters.
 
 ## See Also
 
-- [let kCTTypesetterOptionAllowUnboundedLayout: CFString](kcttypesetteroptionallowunboundedlayout.md)
+### Constants
+- [let kCTTypesetterOptionAllowUnboundedLayout: CFString](./kcttypesetteroptionallowunboundedlayout.md)
   A key that specifies whether the text system lays out text that requires unreasonable effort.
-- [let kCTTypesetterOptionDisableBidiProcessing: CFString](kcttypesetteroptiondisablebidiprocessing.md)
+- [let kCTTypesetterOptionDisableBidiProcessing: CFString](./kcttypesetteroptiondisablebidiprocessing.md)
 
 
 ---

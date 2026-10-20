@@ -1,12 +1,13 @@
 # responsePlaceholder
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional placeholder string for inline reply field.
 
 **Availability**:
-- macOS 10.9+
+- macOS 10.9+ - Deprecated in 11.0
 
 ## Declaration
 
@@ -14,19 +15,24 @@ Optional placeholder string for inline reply field.
 var responsePlaceholder: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * responsePlaceholder;
+```
+
 ## See Also
 
-- [var title: String?](nsusernotification/title.md)
+### Display Information
+- [var title: String?](./title.md)
   Specifies the title of the notification.
-- [var subtitle: String?](nsusernotification/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   Specifies the subtitle of the notification.
-- [var informativeText: String?](nsusernotification/informativetext.md)
+- [var informativeText: String?](./informativetext.md)
   The body text of the notification.
-- [var contentImage: NSImage?](nsusernotification/contentimage.md)
+- [var contentImage: NSImage?](./contentimage.md)
   Image shown in the content of the notification.
-- [var identifier: String?](nsusernotification/identifier.md)
+- [var identifier: String?](./identifier.md)
   A string that uniquely identifies a notification.
-- [var response: NSAttributedString?](nsusernotification/response.md)
+- [var response: NSAttributedString?](./response.md)
   The response with which the user responded to a notification.
 
 

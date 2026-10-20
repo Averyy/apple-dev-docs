@@ -1,7 +1,8 @@
 # containsOrder(matching:updatedDate:)
 
 **Framework**: FinanceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks whether the finance store contains an order.
 

@@ -1,7 +1,8 @@
 # addTracks(for:preferredStartingTrackID:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+

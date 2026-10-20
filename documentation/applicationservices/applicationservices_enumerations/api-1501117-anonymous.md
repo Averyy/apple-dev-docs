@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kProcessTransformToBackgroundApplication: Int](kprocesstransformtobackgroundapplication.md)
-- [var kProcessTransformToForegroundApplication: Int](kprocesstransformtoforegroundapplication.md)
-- [var kProcessTransformToUIElementApplication: Int](kprocesstransformtouielementapplication.md)
+- [var kProcessTransformToBackgroundApplication: Int](../kprocesstransformtobackgroundapplication.md)
+- [var kProcessTransformToForegroundApplication: Int](../kprocesstransformtoforegroundapplication.md)
+- [var kProcessTransformToUIElementApplication: Int](../kprocesstransformtouielementapplication.md)
 
 
 ---

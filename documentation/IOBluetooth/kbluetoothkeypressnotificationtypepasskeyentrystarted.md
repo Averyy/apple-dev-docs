@@ -1,10 +1,11 @@
 # kBluetoothKeypressNotificationTypePasskeyEntryStarted
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,12 +13,17 @@
 var kBluetoothKeypressNotificationTypePasskeyEntryStarted: BluetoothKeypressNotificationTypes { get }
 ```
 
+```c
+kBluetoothKeypressNotificationTypePasskeyEntryStarted
+```
+
 ## See Also
 
-- [var kBluetoothKeypressNotificationTypePasskeyCleared: BluetoothKeypressNotificationTypes](kbluetoothkeypressnotificationtypepasskeycleared.md)
-- [var kBluetoothKeypressNotificationTypePasskeyDigitEntered: BluetoothKeypressNotificationTypes](kbluetoothkeypressnotificationtypepasskeydigitentered.md)
-- [var kBluetoothKeypressNotificationTypePasskeyDigitErased: BluetoothKeypressNotificationTypes](kbluetoothkeypressnotificationtypepasskeydigiterased.md)
-- [var kBluetoothKeypressNotificationTypePasskeyEntryCompleted: BluetoothKeypressNotificationTypes](kbluetoothkeypressnotificationtypepasskeyentrycompleted.md)
+### Constants
+- [var kBluetoothKeypressNotificationTypePasskeyCleared: BluetoothKeypressNotificationTypes](./kbluetoothkeypressnotificationtypepasskeycleared.md)
+- [var kBluetoothKeypressNotificationTypePasskeyDigitEntered: BluetoothKeypressNotificationTypes](./kbluetoothkeypressnotificationtypepasskeydigitentered.md)
+- [var kBluetoothKeypressNotificationTypePasskeyDigitErased: BluetoothKeypressNotificationTypes](./kbluetoothkeypressnotificationtypepasskeydigiterased.md)
+- [var kBluetoothKeypressNotificationTypePasskeyEntryCompleted: BluetoothKeypressNotificationTypes](./kbluetoothkeypressnotificationtypepasskeyentrycompleted.md)
 
 
 ---

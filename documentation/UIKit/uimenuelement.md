@@ -1,7 +1,8 @@
 # UIMenuElement
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object representing a menu, action, or command.
 
@@ -19,82 +20,87 @@ An object representing a menu, action, or command.
 class UIMenuElement
 ```
 
+```objc
+@interface UIMenuElement : NSObject
+```
+
 #### Overview
 
-[`UIMenuElement`](uimenuelement.md) defines the behavior shared by all menus, actions, and commands. You don’t create [`UIMenuElement`](uimenuelement.md) objects directly. Instead, you create an appropriate object that inherits from this class, such as [`UIMenu`](uimenu.md), [`UIAction`](uiaction.md), or [`UICommand`](uicommand.md).
+[`UIMenuElement`](./uimenuelement.md) defines the behavior shared by all menus, actions, and commands. You don’t create [`UIMenuElement`](./uimenuelement.md) objects directly. Instead, you create an appropriate object that inherits from this class, such as [`UIMenu`](./uimenu.md), [`UIAction`](./uiaction.md), or [`UICommand`](./uicommand.md).
 
 ## Topics
 
 ### Getting the element attributes
-- [var title: String](uimenuelement/title.md)
+- [var title: String](./uimenuelement/title.md)
   The title of the menu element.
-- [var subtitle: String?](uimenuelement/subtitle.md)
+- [var subtitle: String?](./uimenuelement/subtitle.md)
   The subtitle to display alongside the menu element’s title.
-- [var image: UIImage?](uimenuelement/image.md)
+- [var image: UIImage?](./uimenuelement/image.md)
   The image to display alongside the menu element’s title.
 ### Creating a menu element
-- [init?(coder: NSCoder)](uimenuelement/init(coder:).md)
+- [init?(coder: NSCoder)](./uimenuelement/init%28coder%29.md)
   Creates a menu element from data in an unarchiver.
 ### Constants
-- [UIMenuElement.Attributes](uimenuelement/attributes.md)
+- [UIMenuElement.Attributes](./uimenuelement/attributes.md)
   Attributes that determine the style of the menu element.
-- [UIMenuElement.State](uimenuelement/state.md)
+- [UIMenuElement.State](./uimenuelement/state.md)
   Constants that indicate the state of an action- or command-based menu element.
-- [UIMenuElement.RepeatBehavior](uimenuelement/repeatbehavior.md)
+- [UIMenuElement.RepeatBehavior](./uimenuelement/repeatbehavior.md)
   Possible repeat behaviors for a menu element.
 ### Instance Properties
-- [var highlightStateUpdateHandler: ((UIMenuElement, Bool) -> Void)?](uimenuelement/highlightstateupdatehandler.md)
+- [var highlightStateUpdateHandler: ((UIMenuElement, Bool) -> Void)?](./uimenuelement/highlightstateupdatehandler.md)
   A closure the system calls when the element’s highlight state changes in a menu.
-- [var preferredImageVisibility: UIMenuElement.ImageVisibility](uimenuelement/preferredimagevisibility.md)
+- [var preferredImageVisibility: UIMenuElement.ImageVisibility](./uimenuelement/preferredimagevisibility.md)
   The preferred visibility of the element’s image.
 ### Enumerations
-- [UIMenuElement.ImageVisibility](uimenuelement/imagevisibility.md)
+- [UIMenuElement.ImageVisibility](./uimenuelement/imagevisibility.md)
   Visibility options for a menu element’s image.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [UIAction](uiaction.md)
-- [UICommand](uicommand.md)
-- [UIDeferredMenuElement](uideferredmenuelement.md)
-- [UIMenu](uimenu.md)
+- [UIAction](./uiaction.md)
+- [UICommand](./uicommand.md)
+- [UIDeferredMenuElement](./uideferredmenuelement.md)
+- [UIMenu](./uimenu.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [UIAccessibilityIdentification](uiaccessibilityidentification.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [UIAccessibilityIdentification](./uiaccessibilityidentification.md)
 
 ## See Also
 
-- [Adding menus and shortcuts to the menu bar and user interface](adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
+### Menu elements and keyboard shortcuts
+- [Adding menus and shortcuts to the menu bar and user interface](./adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
   Provide quick access to useful actions by adding menus and keyboard shortcuts to your Mac app built with Mac Catalyst.
-- [Adopting menus and UIActions in your user interface](adopting-menus-and-uiactions-in-your-user-interface.md)
+- [Adopting menus and UIActions in your user interface](./adopting-menus-and-uiactions-in-your-user-interface.md)
   Add menus to your user interface, with built-in button support and bar-button items, and create custom menu experiences.
-- [class UIAction](uiaction.md)
+- [class UIAction](./uiaction.md)
   A menu element that performs its action in a closure.
-- [class UICommand](uicommand.md)
+- [class UICommand](./uicommand.md)
   A menu element that performs its action in a selector.
-- [class UIKeyCommand](uikeycommand.md)
+- [class UIKeyCommand](./uikeycommand.md)
   An object that specifies a key press perform on a hardware keyboard and the resulting action.
-- [class UIDeferredMenuElement](uideferredmenuelement.md)
+- [class UIDeferredMenuElement](./uideferredmenuelement.md)
   A placeholder menu element that the system replaces with the result of the block’s completion handler.
-- [UIDeferredMenuElement.Provider](uideferredmenuelement/provider.md)
-- [UIMenuElement.Attributes](uimenuelement/attributes.md)
+- [UIDeferredMenuElement.Provider](./uideferredmenuelement/provider.md)
+- [UIMenuElement.Attributes](./uimenuelement/attributes.md)
   Attributes that determine the style of the menu element.
-- [UIMenuElement.State](uimenuelement/state.md)
+- [UIMenuElement.State](./uimenuelement/state.md)
   Constants that indicate the state of an action- or command-based menu element.
-- [protocol UIMenuLeaf](uimenuleaf.md)
+- [protocol UIMenuLeaf](./uimenuleaf.md)
   An interface for an object that represents a menu element without child elements.
 
 

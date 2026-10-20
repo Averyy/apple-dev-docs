@@ -1,7 +1,8 @@
 # xmlString
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the string representation of the receiver as it would appear in an XML document.
 
@@ -15,17 +16,22 @@ Returns the string representation of the receiver as it would appear in an XML d
 var xmlString: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * XMLString;
+```
+
 #### Discussion
 
-The returned string includes the string representations of all children. This method invokes [`xmlString(options:)`](xmlnode/xmlstring(options:).md) with an `options` argument of `NSXMLNodeOptionsNone`.
+The returned string includes the string representations of all children. This method invokes [`xmlString(options:)`](./xmlstring%28options%29.md) with an `options` argument of `NSXMLNodeOptionsNone`.
 
 ## See Also
 
-- [func xmlString(options: XMLNode.Options) -> String](xmlnode/xmlstring(options:).md)
+### Emitting Node Content
+- [func xmlString(options: XMLNode.Options) -> String](./xmlstring%28options%29.md)
   Returns the string representation of the receiver as it would appear in an XML document, with one or more output options specified.
-- [func canonicalXMLStringPreservingComments(Bool) -> String](xmlnode/canonicalxmlstringpreservingcomments(_:).md)
+- [func canonicalXMLStringPreservingComments(Bool) -> String](./canonicalxmlstringpreservingcomments%28_%29.md)
   Returns a string object encapsulating the receiver’s XML in canonical form.
-- [var description: String](xmlnode/description.md)
+- [var description: String](./description.md)
 
 
 ---

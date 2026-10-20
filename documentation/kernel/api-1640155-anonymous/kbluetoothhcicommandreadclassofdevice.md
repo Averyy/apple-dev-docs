@@ -1,14 +1,15 @@
 # kBluetoothHCICommandReadClassOfDevice
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandReadClassOfDevice = 0x0023
 ```
 

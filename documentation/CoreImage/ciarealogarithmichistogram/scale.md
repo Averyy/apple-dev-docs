@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@
 var scale: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float scale;
+```
+
 ## See Also
 
-- [var count: Int](ciarealogarithmichistogram/count.md)
-- [var maximumStop: Float](ciarealogarithmichistogram/maximumstop.md)
-- [var minimumStop: Float](ciarealogarithmichistogram/minimumstop.md)
+### Instance Properties
+- [var count: Int](./count.md)
+- [var maximumStop: Float](./maximumstop.md)
+- [var minimumStop: Float](./minimumstop.md)
 
 
 ---

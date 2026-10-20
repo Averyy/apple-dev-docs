@@ -1,7 +1,8 @@
 # addDependency(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Makes the receiver dependent on the completion of the specified operation.
 
@@ -20,6 +21,10 @@ Makes the receiver dependent on the completion of the specified operation.
 func addDependency(_ op: Operation)
 ```
 
+```objc
+- (void) addDependency:(NSOperation *) op;
+```
+
 #### Discussion
 
 The receiver is not considered ready to execute until all of its dependent operations have finished executing. If the receiver is already executing its task, adding dependencies has no practical effect. This method may change the `isReady` and `dependencies` properties of the receiver.
@@ -32,9 +37,10 @@ It is a programmer error to create any circular dependencies among a set of oper
 
 ## See Also
 
-- [func removeDependency(Operation)](operation/removedependency(_:).md)
+### Managing Dependencies
+- [func removeDependency(Operation)](./removedependency%28_%29.md)
   Removes the receiver’s dependence on the specified operation.
-- [var dependencies: [Operation]](operation/dependencies.md)
+- [var dependencies: [Operation]](./dependencies.md)
   An array of the operation objects that must finish executing before the current object can begin executing.
 
 

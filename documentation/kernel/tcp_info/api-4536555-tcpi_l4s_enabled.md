@@ -1,14 +1,15 @@
 # tcpi_l4s_enabled
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 u_int16_t tcpi_l4s_enabled:1;
 ```
 

@@ -1,17 +1,20 @@
 # actionSheet(isPresented:content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents an action sheet when a given condition is true.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.0+ - Deprecated in 27.2
+- tvOS 13.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 6.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`confirmationDialog(_:isPresented:titleVisibility:actions:message:)`](./confirmationdialog%28_,ispresented,titlevisibility,actions,message%29-2s7pz.md) instead.
 
 ## Declaration
 
@@ -49,7 +52,7 @@ struct ConfirmEraseItems: View {
 }
 ```
 
-![An action sheet with a title and message showing the use of default and destructive button types.](/images/com.apple.SwiftUI/SwiftUI-View-ActionSheetisPresentedContent@2x.png)
+![An action sheet with a title and message showing the use of default and destructive button types.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-ActionSheetisPresentedContent@2x.png)
 
 > **Note**: In regular size classes in iOS, the system renders alert sheets as a popover that the user dismisses by tapping anywhere outside the popover, rather than displaying the default dismiss button.
 
@@ -60,11 +63,12 @@ struct ConfirmEraseItems: View {
 
 ## See Also
 
-- [func actionSheet<T>(item: Binding<T?>, content: (T) -> ActionSheet) -> some View](view/actionsheet(item:content:).md)
+### View presentation modifiers
+- [func actionSheet<T>(item: Binding<T?>, content: (T) -> ActionSheet) -> some View](./actionsheet%28item,content%29.md)
   Presents an action sheet using the given item as a data source for the sheet’s content.
-- [func alert(isPresented: Binding<Bool>, content: () -> Alert) -> some View](view/alert(ispresented:content:).md)
+- [func alert(isPresented: Binding<Bool>, content: () -> Alert) -> some View](./alert%28ispresented,content%29.md)
   Presents an alert to the user.
-- [func alert<Item>(item: Binding<Item?>, content: (Item) -> Alert) -> some View](view/alert(item:content:).md)
+- [func alert<Item>(item: Binding<Item?>, content: (Item) -> Alert) -> some View](./alert%28item,content%29.md)
   Presents an alert to the user.
 
 

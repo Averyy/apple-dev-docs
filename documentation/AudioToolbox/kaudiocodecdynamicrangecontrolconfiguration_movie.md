@@ -1,20 +1,25 @@
 # kAudioCodecDynamicRangeControlConfiguration_Movie
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var kAudioCodecDynamicRangeControlConfiguration_Movie: UInt32 { get }
+```
+
+```c
+kAudioCodecDynamicRangeControlConfiguration_Movie
 ```
 
 

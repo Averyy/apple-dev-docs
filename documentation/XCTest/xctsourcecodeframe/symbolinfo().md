@@ -1,7 +1,8 @@
 # symbolInfo()
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to get symbol information for the address.
 
@@ -9,6 +10,10 @@ Attempts to get symbol information for the address.
 
 ```swift
 func symbolInfo() throws -> XCTSourceCodeSymbolInfo
+```
+
+```objc
+- (XCTSourceCodeSymbolInfo *) symbolInfoWithError:(NSError **) outError;
 ```
 
 #### Return Value
@@ -21,11 +26,12 @@ This method can fail if required symbol data is not available. The system makes 
 
 ## See Also
 
-- [var address: UInt64](xctsourcecodeframe/address.md)
+### Frame Information
+- [var address: UInt64](./address.md)
   An address that represents a specific frame in a call stack.
-- [var symbolInfo: XCTSourceCodeSymbolInfo?](xctsourcecodeframe/symbolinfo.md)
+- [var symbolInfo: XCTSourceCodeSymbolInfo?](./symbolinfo.md)
   Symbolication information for the referenced frame.
-- [var symbolicationError: (any Error)?](xctsourcecodeframe/symbolicationerror.md)
+- [var symbolicationError: (any Error)?](./symbolicationerror.md)
   An optional error that describes a failed symbolication attempt.
 
 

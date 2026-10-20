@@ -1,7 +1,8 @@
 # kIOBluetoothUISuccess
 
 **Framework**: IOBluetooth UI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.2+
@@ -12,9 +13,14 @@
 var kIOBluetoothUISuccess: Int { get }
 ```
 
+```c
+kIOBluetoothUISuccess
+```
+
 ## See Also
 
-- [var kIOBluetoothUIUserCanceledErr: Int](kiobluetoothuiusercancelederr.md)
+### Constants
+- [var kIOBluetoothUIUserCanceledErr: Int](./kiobluetoothuiusercancelederr.md)
 
 
 ---

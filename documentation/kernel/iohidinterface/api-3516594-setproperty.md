@@ -1,14 +1,15 @@
 # setProperty
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool setProperty(const OSSymbol *aKey, OSObject *anObject);
 ```
 

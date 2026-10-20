@@ -1,7 +1,8 @@
 # XCTIssue
 
 **Framework**: XCTest  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents a test failure, and includes source code call stacks for test reporting and investigation.
 
@@ -14,55 +15,56 @@ struct XCTIssue
 ## Topics
 
 ### Issue Types
-- [typealias IssueType](xctissue-swift.struct/issuetype.md)
+- [typealias IssueType](./xctissue-swift.struct/issuetype.md)
   Constants that indicate types of test failures, such as assertion failures, performance regressions, or thrown errors.
 ### Issue Details
-- [var type: XCTIssue.IssueType](xctissue-swift.struct/type.md)
+- [var type: XCTIssue.IssueType](./xctissue-swift.struct/type.md)
   A value for classifying an issue that occurs during testing.
-- [var compactDescription: String](xctissue-swift.struct/compactdescription.md)
+- [var compactDescription: String](./xctissue-swift.struct/compactdescription.md)
   A concise description of the issue with no transient data, suitable for use in test run summaries and results aggregation across multiple test runs.
-- [var detailedDescription: String?](xctissue-swift.struct/detaileddescription.md)
+- [var detailedDescription: String?](./xctissue-swift.struct/detaileddescription.md)
   A detailed description of the issue that may include transient data, such as numbers, object identifiers, and timestamps, to help diagnose the issue.
-- [var sourceCodeContext: XCTSourceCodeContext](xctissue-swift.struct/sourcecodecontext.md)
+- [var sourceCodeContext: XCTSourceCodeContext](./xctissue-swift.struct/sourcecodecontext.md)
   The source code location for the issue, including the filename, line number, and call stack.
-- [var associatedError: (any Error)?](xctissue-swift.struct/associatederror.md)
+- [var associatedError: (any Error)?](./xctissue-swift.struct/associatederror.md)
   An optional error to associate with a test issue.
-- [var attachments: [XCTAttachment]](xctissue-swift.struct/attachments.md)
+- [var attachments: [XCTAttachment]](./xctissue-swift.struct/attachments.md)
   An array of data that augments an issue, such as files, images, screenshots, data blobs, or ZIP files.
-- [func add(XCTAttachment)](xctissue-swift.struct/add(_:).md)
+- [func add(XCTAttachment)](./xctissue-swift.struct/add%28_%29.md)
   Adds supporting data to an issue.
 ### Initializers
-- [init(type: XCTIssue.IssueType, compactDescription: String, detailedDescription: String?, sourceCodeContext: XCTSourceCodeContext, associatedError: (any Error)?, attachments: [XCTAttachment], severity: XCTIssue.Severity)](xctissue-swift.struct/init(type:compactdescription:detaileddescription:sourcecodecontext:associatederror:attachments:severity:).md)
+- [init(type: XCTIssue.IssueType, compactDescription: String, detailedDescription: String?, sourceCodeContext: XCTSourceCodeContext, associatedError: (any Error)?, attachments: [XCTAttachment], severity: XCTIssue.Severity)](./xctissue-swift.struct/init%28type,compactdescription,detaileddescription,sourcecodecontext,associatederror,attachments,severity%29.md)
 ### Instance Properties
-- [var isFailure: Bool](xctissue-swift.struct/isfailure.md)
+- [var isFailure: Bool](./xctissue-swift.struct/isfailure.md)
   Whether or not this issue should cause the test it’s associated with to be considered a failure.
-- [var severity: XCTIssue.Severity](xctissue-swift.struct/severity-swift.property.md)
+- [var severity: XCTIssue.Severity](./xctissue-swift.struct/severity-swift.property.md)
   The severity of the issue.
 ### Type Aliases
-- [typealias Severity](xctissue-swift.struct/severity-swift.typealias.md)
+- [typealias Severity](./xctissue-swift.struct/severity-swift.typealias.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [class XCTIssueReference](xctissuereference.md)
+### Test Failures
+- [class XCTIssueReference](./xctissuereference.md)
   An object that represents a test failure, and includes source code call stacks for test reporting and investigation.
-- [class XCTMutableIssue](xctmutableissue.md)
+- [class XCTMutableIssue](./xctmutableissue.md)
   A mutable object that represents a test failure, and includes source code call stacks for test reporting and investigation.
-- [class XCTSourceCodeContext](xctsourcecodecontext.md)
+- [class XCTSourceCodeContext](./xctsourcecodecontext.md)
   An object that contains call stack and source code location details to provide context for a point of execution in a test.
-- [class XCTSourceCodeFrame](xctsourcecodeframe.md)
+- [class XCTSourceCodeFrame](./xctsourcecodeframe.md)
   An object that represents a single frame in a call stack that supports retrieval of symbol information for the address.
-- [class XCTSourceCodeLocation](xctsourcecodelocation.md)
+- [class XCTSourceCodeLocation](./xctsourcecodelocation.md)
   An object that contains a file URL and line number that represents a distinct location in source code.
-- [class XCTSourceCodeSymbolInfo](xctsourcecodesymbolinfo.md)
+- [class XCTSourceCodeSymbolInfo](./xctsourcecodesymbolinfo.md)
   An object that contains symbolication information for a specified frame in a call stack.
 
 

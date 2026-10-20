@@ -1,7 +1,8 @@
 # errSecCRLServerDown
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate revocation list server is down.
 
@@ -18,6 +19,10 @@ The certificate revocation list server is down.
 
 ```swift
 var errSecCRLServerDown: OSStatus { get }
+```
+
+```c
+errSecCRLServerDown
 ```
 
 

@@ -1,17 +1,22 @@
 # init(named:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the `NSSound` instance associated with a given name.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init?(named name: NSSound.Name)
+```
+
+```objc
++ (NSSound *) soundNamed:(NSSoundName) name;
 ```
 
 #### Return Value
@@ -22,10 +27,10 @@ init?(named name: NSSound.Name)
 
 The returned object can be one of the following:
 
-- One that’s been assigned a name with the [`name`](nssound/name-swift.property.md) property
+- One that’s been assigned a name with the [`name`](./name-swift.property.md) property
 - One of the named system sounds provided by the Application Kit framework
 
-If there’s no known `NSSound` object with `soundName`, this method tries to create one by searching for sound files in the application’s main bundle (see [`Bundle`](https://developer.apple.com/documentation/foundation/bundle) for a description of how the bundle’s contents are searched). If no sound file can be located in the application main bundle, the following directories are searched in order:
+If there’s no known `NSSound` object with `soundName`, this method tries to create one by searching for sound files in the application’s main bundle (see [`Bundle`](../../Foundation/bundle.md) for a description of how the bundle’s contents are searched). If no sound file can be located in the application main bundle, the following directories are searched in order:
 
 - `~/Library/Sounds`
 - `/Library/Sounds`
@@ -42,9 +47,10 @@ The preferred way to locate a sound is to pass a name without the file extension
 
 ## See Also
 
-- [class var soundUnfilteredTypes: [String]](nssound/soundunfilteredtypes.md)
+### Getting Sound Information
+- [class var soundUnfilteredTypes: [String]](./soundunfilteredtypes.md)
   Provides the file types the `NSSound` class understands.
-- [var duration: TimeInterval](nssound/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The duration of the sound, in seconds.
 
 

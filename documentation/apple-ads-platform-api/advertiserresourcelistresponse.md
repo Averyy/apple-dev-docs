@@ -1,7 +1,8 @@
 # AdvertiserResourceListResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Response envelope for advertiser resource list requests.
 
@@ -10,7 +11,7 @@ Response envelope for advertiser resource list requests.
 
 ## Declaration
 
-```swift
+```
 object AdvertiserResourceListResponse
 ```
 
@@ -36,22 +37,22 @@ Advertiser resources include entities such as content providers and brands. Thes
 
 ## Properties
 
-- `error` (Error): Error detail if the request failed. See [`Error`](error.md).
-- `result` ([Delegation]): Array of matching advertiser resources. See [`Delegation`](delegation.md).
+- `error` (Error): Error detail if the request failed. See [`Error`](./error.md).
+- `result` ([Delegation]): Array of matching advertiser resources. See [`Delegation`](./delegation.md).
 
 ## See Also
 
-- [type ProductFeatures](productfeatures.md)
+- [type ProductFeatures](./productfeatures.md)
   Product features are the advertising capabilities for an ad account.
-- [type OrgSystemStatus](orgsystemstatus.md)
+- [type OrgSystemStatus](./orgsystemstatus.md)
   System-derived operational status of an organization.
-- [type OrgSystemStatusReason](orgsystemstatusreason.md)
+- [type OrgSystemStatusReason](./orgsystemstatusreason.md)
   Reasons that can cause an organization’s system status to not be active.
-- [type AdAccountSystemStatus](adaccountsystemstatus.md)
+- [type AdAccountSystemStatus](./adaccountsystemstatus.md)
   System-derived operational status of an ad account.
-- [type AdAccountSystemStatusReason](adaccountsystemstatusreason.md)
+- [type AdAccountSystemStatusReason](./adaccountsystemstatusreason.md)
   Enumeration of reasons that can cause an ad account’s system status to be `INACTIVE`.
-- [type AdvertiserResourceType](advertiserresourcetype.md)
+- [type AdvertiserResourceType](./advertiserresourcetype.md)
   The type of advertiser resource you delegate to an ad account.
 
 

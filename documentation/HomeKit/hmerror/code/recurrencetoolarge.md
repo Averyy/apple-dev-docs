@@ -1,7 +1,8 @@
 # HMError.Code.recurrenceTooLarge
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An attempt to use a recurrence period that is too large.
 
@@ -19,21 +20,26 @@ An attempt to use a recurrence period that is too large.
 case recurrenceTooLarge
 ```
 
+```c
+HMErrorCodeRecurrenceTooLarge
+```
+
 ## See Also
 
-- [HMError.Code.cannotActivateTriggerTooFarInFuture](hmerror/code/cannotactivatetriggertoofarinfuture.md)
+### Limit errors
+- [HMError.Code.cannotActivateTriggerTooFarInFuture](./cannotactivatetriggertoofarinfuture.md)
   An error indicating the trigger cannot be activated because it is set too far in the future.
-- [HMError.Code.dateMustBeOnSpecifiedBoundaries](hmerror/code/datemustbeonspecifiedboundaries.md)
+- [HMError.Code.dateMustBeOnSpecifiedBoundaries](./datemustbeonspecifiedboundaries.md)
   An error indicating the date is not on the specified boundaries.
-- [HMError.Code.fireDateInPast](hmerror/code/firedateinpast.md)
+- [HMError.Code.fireDateInPast](./firedateinpast.md)
   An attempt to activate a timer trigger with a date in the past.
-- [HMError.Code.invalidMessageSize](hmerror/code/invalidmessagesize.md)
+- [HMError.Code.invalidMessageSize](./invalidmessagesize.md)
   An error indicating an invalid message size.
-- [HMError.Code.maximumObjectLimitReached](hmerror/code/maximumobjectlimitreached.md)
+- [HMError.Code.maximumObjectLimitReached](./maximumobjectlimitreached.md)
   An error indicating the maximum object count has been reached.
-- [HMError.Code.recurrenceTooSmall](hmerror/code/recurrencetoosmall.md)
+- [HMError.Code.recurrenceTooSmall](./recurrencetoosmall.md)
   An error indicating the recurrence interval is too short.
-- [HMError.Code.recurrenceMustBeOnSpecifiedBoundaries](hmerror/code/recurrencemustbeonspecifiedboundaries.md)
+- [HMError.Code.recurrenceMustBeOnSpecifiedBoundaries](./recurrencemustbeonspecifiedboundaries.md)
   An error indicating the recurrence rule is not on the specified boundaries.
 
 

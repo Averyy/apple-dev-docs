@@ -1,7 +1,8 @@
 # Declarations
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that applies a set of declarations to the device through the Settings app.
 
@@ -16,7 +17,7 @@ The payload that applies a set of declarations to the device through the Setting
 
 ## Declaration
 
-```swift
+```
 object Declarations
 ```
 
@@ -28,7 +29,7 @@ This profile applies a set of declarations to the device. Users use this profile
 
 > ❗ **Important**:  When a user installs the profile, the device only applies configuration declarations that allow a “local” enrollment. Consult the documentation for each configuration type to see if you can use it.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -40,7 +41,7 @@ This profile applies a set of declarations to the device. Users use this profile
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | iOS, macOS, tvOS, visionOS, watchOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -109,21 +110,22 @@ This profile applies a set of declarations to the device. Users use this profile
 
 ## See Also
 
-- [object EnergySaver](energysaver.md)
+### System configuration
+- [object EnergySaver](./energysaver.md)
   The payload that configures Energy Saver settings.
-- [object FileProvider](fileprovider.md)
+- [object FileProvider](./fileprovider.md)
   The payload that configures file provider settings.
-- [object Font](font.md)
+- [object Font](./font.md)
   The payload that configures fonts.
-- [object LockScreenMessage](lockscreenmessage.md)
+- [object LockScreenMessage](./lockscreenmessage.md)
   The payload that configures a Lock Screen message.
-- [object Screensaver](screensaver.md)
+- [object Screensaver](./screensaver.md)
   The payload that configures the screen saver.
-- [object SystemExtensions](systemextensions.md)
+- [object SystemExtensions](./systemextensions.md)
   The payload that configures system extensions.
-- [object SystemLogging](systemlogging.md)
+- [object SystemLogging](./systemlogging.md)
   The payload that configures system logging.
-- [object TimeServer](timeserver.md)
+- [object TimeServer](./timeserver.md)
   The payload that configures the time server.
 
 

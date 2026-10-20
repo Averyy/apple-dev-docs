@@ -1,7 +1,8 @@
 # init(url:resolvingAgainstBaseURL:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL components instance from a URL string, optionally resolving against a base URL.
 
@@ -23,15 +24,16 @@ init?(url: URL, resolvingAgainstBaseURL resolve: Bool)
 ## Parameters
 
 - `url`: The URL string to parse.
-- `resolve`: Controls whether the initializer resolves the URL against its base URL before parsing. If `url` is a relative URL, setting `resolve` to `true` creates components using the [`absoluteURL`](url/absoluteurl.md) property.
+- `resolve`: Controls whether the initializer resolves the URL against its base URL before parsing. If `url` is a relative URL, setting `resolve` to `true` creates components using the [`absoluteURL`](../url/absoluteurl.md) property.
 
 ## See Also
 
-- [init()](urlcomponents/init.md)
+### Creating URL components
+- [init()](./init%28%29.md)
   Creates a URL components instance without defining any of the components.
-- [init?(string: String)](urlcomponents/init(string:).md)
+- [init?(string: String)](./init%28string%29.md)
   Creates a URL components instance from a URL string.
-- [init?(string: String, encodingInvalidCharacters: Bool)](urlcomponents/init(string:encodinginvalidcharacters:).md)
+- [init?(string: String, encodingInvalidCharacters: Bool)](./init%28string,encodinginvalidcharacters%29.md)
   Creates a URL components instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
 
 

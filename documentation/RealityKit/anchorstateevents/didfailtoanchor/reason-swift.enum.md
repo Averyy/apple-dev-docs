@@ -1,7 +1,8 @@
 # AnchorStateEvents.DidFailToAnchor.Reason
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -20,22 +21,22 @@ enum Reason
 ## Topics
 
 ### Enumeration Cases
-- [AnchorStateEvents.DidFailToAnchor.Reason.addAnchorFailed](anchorstateevents/didfailtoanchor/reason-swift.enum/addanchorfailed.md)
+- [AnchorStateEvents.DidFailToAnchor.Reason.addAnchorFailed](./reason-swift.enum/addanchorfailed.md)
   anchor fails to be added, due to anchor tracking provider error
-- [AnchorStateEvents.DidFailToAnchor.Reason.anchorNotSupported](anchorstateevents/didfailtoanchor/reason-swift.enum/anchornotsupported.md)
+- [AnchorStateEvents.DidFailToAnchor.Reason.anchorNotSupported](./reason-swift.enum/anchornotsupported.md)
   anchor fails because the anchor type is not supported by the hardware configuration
-- [AnchorStateEvents.DidFailToAnchor.Reason.maximumLimitReached](anchorstateevents/didfailtoanchor/reason-swift.enum/maximumlimitreached.md)
+- [AnchorStateEvents.DidFailToAnchor.Reason.maximumLimitReached](./reason-swift.enum/maximumlimitreached.md)
   anchor fails to be added, due to anchor tracking provider reaching its maximum anchor limit
-- [AnchorStateEvents.DidFailToAnchor.Reason.unspecified](anchorstateevents/didfailtoanchor/reason-swift.enum/unspecified.md)
+- [AnchorStateEvents.DidFailToAnchor.Reason.unspecified](./reason-swift.enum/unspecified.md)
   anchor fails with no specified reason
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

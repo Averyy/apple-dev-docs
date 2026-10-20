@@ -1,7 +1,8 @@
 # UIImage.SymbolColorRenderingMode.flat
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Renders the symbol’s color layers using flat colors.
 
@@ -17,6 +18,10 @@ Renders the symbol’s color layers using flat colors.
 
 ```swift
 case flat
+```
+
+```c
+UIImageSymbolColorRenderingModeFlat
 ```
 
 

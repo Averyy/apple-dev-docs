@@ -1,7 +1,8 @@
 # button
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A toggle style that displays as a button with its label as the title.
 
@@ -20,9 +21,11 @@ A toggle style that displays as a button with its label as the title.
 nonisolated static var button: ButtonToggleStyle { get }
 ```
 
+Available when `Self` is `ButtonToggleStyle`.
+
 #### Discussion
 
-Apply this style to a [`Toggle`](toggle.md) or to a view hierarchy that contains toggles using the [`toggleStyle(_:)`](view/togglestyle(_:).md) modifier:
+Apply this style to a [`Toggle`](../toggle.md) or to a view hierarchy that contains toggles using the [`toggleStyle(_:)`](../view/togglestyle%28_%29.md) modifier:
 
 ```swift
 Toggle(isOn: $isFlagged) {
@@ -31,24 +34,25 @@ Toggle(isOn: $isFlagged) {
 .toggleStyle(.button)
 ```
 
-The style produces a button with a label that describes the purpose of the toggle. The user taps or clicks the button to change the toggle’s state. The button indicates the `on` state by filling in the background with its tint color. You can change the tint color using the [`tint(_:)`](view/tint(_:).md) modifier. SwiftUI uses this style as the default for toggles that appear in a toolbar.
+The style produces a button with a label that describes the purpose of the toggle. The user taps or clicks the button to change the toggle’s state. The button indicates the `on` state by filling in the background with its tint color. You can change the tint color using the [`tint(_:)`](../view/tint%28_%29.md) modifier. SwiftUI uses this style as the default for toggles that appear in a toolbar.
 
 The following table shows the toggle in both the `off` and `on` states, respectively:
 
 | Platform | Appearance |
 | --- | --- |
-| iOS, iPadOS | ![A screenshot of two buttons with a flag icon and the word flag inside. The first button isn’t highlighted; the second one is.](/images/com.apple.SwiftUI/ToggleStyle-button-1-iOS@2x.png) |
-| macOS | ![A screenshot of two buttons with a flag icon and the word flag inside. The first button isn’t highlighted; the second one is.](/images/com.apple.SwiftUI/ToggleStyle-button-1-macOS@2x.png) |
+| iOS, iPadOS | ![A screenshot of two buttons with a flag icon and the word flag inside. The first button isn’t highlighted; the second one is.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ToggleStyle-button-1-iOS@2x.png) |
+| macOS | ![A screenshot of two buttons with a flag icon and the word flag inside. The first button isn’t highlighted; the second one is.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ToggleStyle-button-1-macOS@2x.png) |
 
-A [`Label`](label.md) instance is a good choice for a button toggle’s label. Based on the context, SwiftUI decides whether to display both the title and icon, as in the example above, or just the icon, like when the toggle appears in a toolbar. You can also control the label’s style by adding a [`labelStyle(_:)`](view/labelstyle(_:).md) modifier. In any case, SwiftUI always uses the title to identify the control using VoiceOver.
+A [`Label`](../label.md) instance is a good choice for a button toggle’s label. Based on the context, SwiftUI decides whether to display both the title and icon, as in the example above, or just the icon, like when the toggle appears in a toolbar. You can also control the label’s style by adding a [`labelStyle(_:)`](../view/labelstyle%28_%29.md) modifier. In any case, SwiftUI always uses the title to identify the control using VoiceOver.
 
 ## See Also
 
-- [static var automatic: DefaultToggleStyle](togglestyle/automatic.md)
+### Getting built-in toggle styles
+- [static var automatic: DefaultToggleStyle](./automatic.md)
   The default toggle style.
-- [static var checkbox: CheckboxToggleStyle](togglestyle/checkbox.md)
+- [static var checkbox: CheckboxToggleStyle](./checkbox.md)
   A toggle style that displays a checkbox followed by its label.
-- [static var `switch`: SwitchToggleStyle](togglestyle/switch.md)
+- [static var `switch`: SwitchToggleStyle](./switch.md)
   A toggle style that displays a leading label and a trailing switch.
 
 

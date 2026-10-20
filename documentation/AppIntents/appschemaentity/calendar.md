@@ -1,7 +1,8 @@
 # calendar
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of entity schemas in the calendar domain.
 
@@ -17,6 +18,8 @@ The collection of entity schemas in the calendar domain.
 ```swift
 static var calendar: some AppSchema.CalendarEntity { get }
 ```
+
+Available when `Self` is `AppSchema.Entity`.
 
 
 ---

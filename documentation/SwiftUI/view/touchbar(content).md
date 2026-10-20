@@ -1,7 +1,8 @@
 # touchBar(content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the content that the Touch Bar displays.
 
@@ -39,7 +40,7 @@ TextField("TouchBar Demo", text: $placeholder)
     .touchBar(touchBarItems)
 ```
 
-![A Touch Bar that shows content you create using a Touch Bar content](/images/com.apple.SwiftUI/SwiftUI-View-touchBar@2x.png)
+![A Touch Bar that shows content you create using a Touch Bar content](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-touchBar@2x.png)
 
 ## Parameters
 
@@ -47,17 +48,18 @@ TextField("TouchBar Demo", text: $placeholder)
 
 ## See Also
 
-- [func touchBar<Content>(TouchBar<Content>) -> some View](view/touchbar(_:).md)
+### Managing Touch Bar input
+- [func touchBar<Content>(TouchBar<Content>) -> some View](./touchbar%28_%29.md)
   Sets the Touch Bar content to be shown in the Touch Bar when applicable.
-- [func touchBarItemPrincipal(Bool) -> some View](view/touchbaritemprincipal(_:).md)
+- [func touchBarItemPrincipal(Bool) -> some View](./touchbaritemprincipal%28_%29.md)
   Sets principal views that have special significance to this Touch Bar.
-- [func touchBarCustomizationLabel(Text) -> some View](view/touchbarcustomizationlabel(_:).md)
+- [func touchBarCustomizationLabel(Text) -> some View](./touchbarcustomizationlabel%28_%29.md)
   Sets a user-visible string that identifies the view’s functionality.
-- [func touchBarItemPresence(TouchBarItemPresence) -> some View](view/touchbaritempresence(_:).md)
+- [func touchBarItemPresence(TouchBarItemPresence) -> some View](./touchbaritempresence%28_%29.md)
   Sets the behavior of the user-customized view.
-- [struct TouchBar](touchbar.md)
+- [struct TouchBar](../touchbar.md)
   A container for a view that you can show in the Touch Bar.
-- [enum TouchBarItemPresence](touchbaritempresence.md)
+- [enum TouchBarItemPresence](../touchbaritempresence.md)
   Options that affect user customization of the Touch Bar.
 
 

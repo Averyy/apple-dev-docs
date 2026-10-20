@@ -1,7 +1,8 @@
 # GCSteeringWheelElement
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The element that represents the wheel of a racing wheel controller.
 
@@ -15,29 +16,34 @@ The element that represents the wheel of a racing wheel controller.
 class GCSteeringWheelElement
 ```
 
+```objc
+@interface GCSteeringWheelElement : NSObject
+```
+
 ## Topics
 
 ### Getting the characteristics
-- [var maximumDegreesOfRotation: Float](gcsteeringwheelelement/maximumdegreesofrotation.md)
+- [var maximumDegreesOfRotation: Float](./gcsteeringwheelelement/maximumdegreesofrotation.md)
   The maximum number of degrees that the user can rotate the wheel.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [GCAxisElement](gcaxiselement.md)
-- [GCPhysicalInputElement](gcphysicalinputelement.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [GCAxisElement](./gcaxiselement.md)
+- [GCPhysicalInputElement](./gcphysicalinputelement.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol GCSwitchPositionInput](gcswitchpositioninput.md)
+### Steering and switch elements
+- [protocol GCSwitchPositionInput](./gcswitchpositioninput.md)
   The common properties of inputs that switch between two or more positions.
 
 

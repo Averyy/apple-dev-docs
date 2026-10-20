@@ -1,6 +1,7 @@
 # Viewing the Finished Article for Advanced Design Tutorial 1
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 See the full JSON code from this tutorial.
 
@@ -8,7 +9,7 @@ See the full JSON code from this tutorial.
 
 This page brings together everything from this tutorial as a template that you can use for your News articles. If you followed the steps throughout this tutorial, the following example code should match the code in your `article.json` file.
 
-You can copy this template (which is also the `article.json` file in `News_Design_Tutorial_Advanced_Article_1`) and modify it to create your own News articles with unique and stylish headers. See [`Download the Article Bundle Examples`](setting-up-the-advanced-tutorials#Download-the-Article-Bundle-Examples.md). To preview this article, see [`Preview the Article Bundle Examples`](setting-up-the-introductory-tutorial#Preview-the-Article-Bundle-Examples.md).
+You can copy this template (which is also the `article.json` file in `News_Design_Tutorial_Advanced_Article_1`) and modify it to create your own News articles with unique and stylish headers. See [Download the Article Bundle Examples](./setting-up-the-advanced-tutorials.md#Download-the-Article-Bundle-Examples). To preview this article, see [Preview the Article Bundle Examples](./setting-up-the-introductory-tutorial.md#Preview-the-Article-Bundle-Examples).
 
 > **Note**:  If your `article.json` file refers to an image using a URL that begins with `bundle://`, that image must be located within the same folder as your `article.json` file.
 
@@ -470,21 +471,22 @@ You can copy this template (which is also the `article.json` file in `News_Desig
 
 ##### Previous
 
-[`Adding Parallax Behavior`](adding-parallax-behavior.md)
+[Adding Parallax Behavior](./adding-parallax-behavior.md)
 
 ##### Next
 
-[`Creating a Complex, Layered Header`](creating-a-complex-layered-header.md)
+[Creating a Complex, Layered Header](./creating-a-complex-layered-header.md)
 
 ## See Also
 
-- [Setting Up the Advanced Tutorials](setting-up-the-advanced-tutorials.md)
+### Advanced Design Tutorial 1: Headers and Parallax Behavior
+- [Setting Up the Advanced Tutorials](./setting-up-the-advanced-tutorials.md)
   Download the tutorial files, and learn about what you’ll create in the three advanced tutorials.
-- [About Containers](about-containers.md)
+- [About Containers](./about-containers.md)
   Learn the basic Apple News Format container concepts required for the three advanced tutorials.
-- [Creating a Layered Header](creating-a-layered-header.md)
+- [Creating a Layered Header](./creating-a-layered-header.md)
   Create a header with a caption that’s layered in front of an image.
-- [Adding Parallax Behavior](adding-parallax-behavior.md)
+- [Adding Parallax Behavior](./adding-parallax-behavior.md)
   Create an illusion of multiple flat layers by causing the article body to overlap the header as the user scrolls.
 
 

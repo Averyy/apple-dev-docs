@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier of an entity within a network session.
 
@@ -11,7 +12,7 @@ A unique identifier of an entity within a network session.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

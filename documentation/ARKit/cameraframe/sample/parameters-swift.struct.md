@@ -1,7 +1,8 @@
 # CameraFrame.Sample.Parameters
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A frame’s parameters, such as the camera type, intrinsics, timestamps, exposure, and so on.
 
@@ -17,40 +18,41 @@ struct Parameters
 ## Topics
 
 ### Getting frame parameters
-- [var cameraPosition: CameraFrameProvider.CameraPosition](cameraframe/sample/parameters-swift.struct/cameraposition.md)
+- [var cameraPosition: CameraFrameProvider.CameraPosition](./parameters-swift.struct/cameraposition.md)
   The camera position.
-- [var cameraType: CameraFrameProvider.CameraType](cameraframe/sample/parameters-swift.struct/cameratype.md)
-- [var captureTimestamp: TimeInterval](cameraframe/sample/parameters-swift.struct/capturetimestamp.md)
+- [var cameraType: CameraFrameProvider.CameraType](./parameters-swift.struct/cameratype.md)
+- [var captureTimestamp: TimeInterval](./parameters-swift.struct/capturetimestamp.md)
   The capture timestamp.
-- [var colorTemperature: Int](cameraframe/sample/parameters-swift.struct/colortemperature.md)
+- [var colorTemperature: Int](./parameters-swift.struct/colortemperature.md)
   The white balance correlated color temperature in kelvin.
-- [var exposureDuration: TimeInterval](cameraframe/sample/parameters-swift.struct/exposureduration.md)
+- [var exposureDuration: TimeInterval](./parameters-swift.struct/exposureduration.md)
   The camera frame exposure duration in seconds.
-- [var extrinsics: simd_float4x4](cameraframe/sample/parameters-swift.struct/extrinsics.md)
+- [var extrinsics: simd_float4x4](./parameters-swift.struct/extrinsics.md)
   The camera extrinsics.
-- [var intrinsics: simd_float3x3](cameraframe/sample/parameters-swift.struct/intrinsics.md)
-- [var midExposureTimestamp: TimeInterval](cameraframe/sample/parameters-swift.struct/midexposuretimestamp.md)
+- [var intrinsics: simd_float3x3](./parameters-swift.struct/intrinsics.md)
+- [var midExposureTimestamp: TimeInterval](./parameters-swift.struct/midexposuretimestamp.md)
   The mid exposure timestamp.
 ### Operators
-- [static func == (CameraFrame.Sample.Parameters, CameraFrame.Sample.Parameters) -> Bool](cameraframe/sample/parameters-swift.struct/==(_:_:).md)
+- [static func == (CameraFrame.Sample.Parameters, CameraFrame.Sample.Parameters) -> Bool](./parameters-swift.struct/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two camera frame parameters are equal.
 ### Instance Properties
-- [var description: String](cameraframe/sample/parameters-swift.struct/description.md)
+- [var description: String](./parameters-swift.struct/description.md)
   A textual representation of these camera frame parameters.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var parameters: CameraFrame.Sample.Parameters](cameraframe/sample/parameters-swift.property.md)
+### Inspecting camera frame samples
+- [var parameters: CameraFrame.Sample.Parameters](./parameters-swift.property.md)
   The frame’s parameters.
-- [var pixelBuffer: CVPixelBuffer](cameraframe/sample/pixelbuffer.md)
+- [var pixelBuffer: CVPixelBuffer](./pixelbuffer.md)
 
 
 ---

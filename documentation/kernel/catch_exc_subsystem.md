@@ -1,14 +1,15 @@
 # catch_exc_subsystem
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 const struct catch_exc_subsystem catch_exc_subsystem;
 ```
 

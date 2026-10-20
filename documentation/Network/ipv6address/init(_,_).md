@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an IPv6 address with data.
 
@@ -26,9 +27,10 @@ The provided data is expected to be an IPv6 address of 16 bytes.
 
 ## See Also
 
-- [init?(String)](ipv6address/init(_:).md)
+### Creating Addresses
+- [init?(String)](./init%28_%29.md)
   Initializes an IPv6 address with a string.
-- [var asIPv4: IPv4Address?](ipv6address/asipv4.md)
+- [var asIPv4: IPv4Address?](./asipv4.md)
   Extracts the IPv4 address contained within the IPv6 address, if the IPv6 address is an IPv4-mapped or IPv4-compatible address.
 
 

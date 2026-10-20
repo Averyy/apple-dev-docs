@@ -1,12 +1,13 @@
 # NSActionCell
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An active area inside a control.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,70 +15,75 @@ An active area inside a control.
 class NSActionCell
 ```
 
+```objc
+@interface NSActionCell : NSCell
+```
+
 #### Overview
 
-An [`NSActionCell`](nsactioncell.md) does three things: it displays text or an icon; it provides the target object and action method used by its [`NSControl`](nscontrol.md) object; and it handles mouse (cursor) tracking by properly highlighting its area and sending action messages to its target based on cursor movement.
+An [`NSActionCell`](./nsactioncell.md) does three things: it displays text or an icon; it provides the target object and action method used by its [`NSControl`](./nscontrol.md) object; and it handles mouse (cursor) tracking by properly highlighting its area and sending action messages to its target based on cursor movement.
 
-The [`controlView`](nscell/controlview.md) of an [`NSActionCell`](nsactioncell.md) is the view in which the receiver was last drawn.
+The [`controlView`](./nscell/controlview.md) of an [`NSActionCell`](./nsactioncell.md) is the view in which the receiver was last drawn.
 
 ##### Obtaining and Setting Cell Values
 
-The [`floatValue`](nscell/floatvalue.md), [`intValue`](nscell/intvalue.md), and [`integerValue`](nscell/integervalue.md) methods return the value with their corresponding types after validating any editing of cell content. If the cell is not a text-type cell or the cell value is not scannable to the appropriate type, these return 0.
+The [`floatValue`](./nscell/floatvalue.md), [`intValue`](./nscell/intvalue.md), and [`integerValue`](./nscell/integervalue.md) methods return the value with their corresponding types after validating any editing of cell content. If the cell is not a text-type cell or the cell value is not scannable to the appropriate type, these return 0.
 
-The [`stringValue`](nscell/stringvalue.md) method returns the receiver’s value as a string object as converted by the cell’s formatter, if one exists. If no formatter exists and the value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), returns the value as a plain, attributed, or localized formatted string. If the value is not an `NSString` or cannot be converted to one, returns an empty string. The method supplements the [`NSCell`](nscell.md) implementation by validating and retaining any editing changes being made to cell text.
+The [`stringValue`](./nscell/stringvalue.md) method returns the receiver’s value as a string object as converted by the cell’s formatter, if one exists. If no formatter exists and the value is an [`NSString`](../Foundation/nsstring.md), returns the value as a plain, attributed, or localized formatted string. If the value is not an `NSString` or cannot be converted to one, returns an empty string. The method supplements the [`NSCell`](./nscell.md) implementation by validating and retaining any editing changes being made to cell text.
 
 Calling `setObjectValue:` discards any editing of the receiver’s text and sets its object value to the specified object. After doing so, if the object value is different from what it was before the method was invoked, the method marks the receiver as needing redisplay.
 
-##### Configuring an Nsactioncell Object
+##### Configuring an NSActionCell Object
 
-The `NSActionCell` implementation of [`setFloatingPointFormat:left:right:`](nscell/setfloatingpointformat:left:right:.md) supplements the `NSCell` implementation by marking the receiver as needing redisplay after discarding any editing changes that were being made to cell text.
+The `NSActionCell` implementation of [`setFloatingPointFormat:left:right:`](./nscell/setfloatingpointformat_left_right_.md) supplements the `NSCell` implementation by marking the receiver as needing redisplay after discarding any editing changes that were being made to cell text.
 
 ## Topics
 
 ### Assigning the Target and Action
-- [var action: Selector?](nsactioncell/action.md)
+- [var action: Selector?](./nsactioncell/action.md)
   Returns the receiver’s action-message selector.
-- [var target: AnyObject?](nsactioncell/target.md)
+- [var target: AnyObject?](./nsactioncell/target.md)
   Returns the receiver’s target object.
 ### Assigning a Tag
-- [var tag: Int](nsactioncell/tag.md)
+- [var tag: Int](./nsactioncell/tag.md)
   Returns the receiver’s tag.
 
 ## Relationships
 
 ### Inherits From
-- [NSCell](nscell.md)
+- [NSCell](./nscell.md)
 ### Inherited By
-- [NSButtonCell](nsbuttoncell.md)
-- [NSDatePickerCell](nsdatepickercell.md)
-- [NSFormCell](nsformcell.md)
-- [NSLevelIndicatorCell](nslevelindicatorcell.md)
-- [NSPathCell](nspathcell.md)
-- [NSSegmentedCell](nssegmentedcell.md)
-- [NSSliderCell](nsslidercell.md)
-- [NSStepperCell](nssteppercell.md)
-- [NSTextFieldCell](nstextfieldcell.md)
+- [NSButtonCell](./nsbuttoncell.md)
+- [NSDatePickerCell](./nsdatepickercell.md)
+- [NSFormCell](./nsformcell.md)
+- [NSLevelIndicatorCell](./nslevelindicatorcell.md)
+- [NSPathCell](./nspathcell.md)
+- [NSSegmentedCell](./nssegmentedcell.md)
+- [NSSliderCell](./nsslidercell.md)
+- [NSStepperCell](./nssteppercell.md)
+- [NSTextFieldCell](./nstextfieldcell.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](./nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](./nsaccessibilityprotocol.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
 
 ## See Also
 
-- [class NSView](nsview.md)
+### View fundamentals
+- [class NSView](./nsview.md)
   The infrastructure for drawing, printing, and handling events in an app.
-- [class NSControl](nscontrol.md)
+- [class NSControl](./nscontrol.md)
   A specialized view, such as a button or text field, that notifies your app of relevant events using the target-action design pattern.
-- [class NSCell](nscell.md)
-  A mechanism for displaying text or images in a view object without the overhead of a full [`NSView`](nsview.md) subclass.
+- [class NSCell](./nscell.md)
+  A mechanism for displaying text or images in a view object without the overhead of a full [`NSView`](./nsview.md) subclass.
 
 
 ---

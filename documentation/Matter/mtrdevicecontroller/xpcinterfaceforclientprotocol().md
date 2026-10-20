@@ -1,7 +1,8 @@
 # xpcInterfaceForClientProtocol()
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.5+
@@ -16,6 +17,10 @@
 
 ```swift
 class func xpcInterfaceForClientProtocol() -> NSXPCInterface
+```
+
+```objc
++ (NSXPCInterface *) xpcInterfaceForClientProtocol;
 ```
 
 

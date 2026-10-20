@@ -1,7 +1,8 @@
 # kCMMetadataFormatDescriptionMetadataSpecificationKey_HumanReadableString
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kCMMetadataFormatDescriptionMetadataSpecificationKey_HumanReadableString: CFString
+```
+
+```c
+extern CFStringRef const kCMMetadataFormatDescriptionMetadataSpecificationKey_HumanReadableString;
 ```
 
 

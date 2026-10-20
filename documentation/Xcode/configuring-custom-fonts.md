@@ -1,6 +1,7 @@
 # Configuring custom fonts
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Register your app as a provider or consumer of systemwide custom fonts.
 
@@ -14,13 +15,13 @@ You must store installable fonts in the app bundle or deliver them using On-Dema
 
 The system limits the number of installed fonts, and it derives that limit from the available system resources. If the user deletes your app, the system automatically removes any of the app’s installed fonts.
 
-To register your app as a provider or consumer of systemwide custom fonts, follow the steps in [`Add a capability`](adding-capabilities-to-your-app#Add-a-capability.md) to add the Fonts capability to your app’s target.
+To register your app as a provider or consumer of systemwide custom fonts, follow the steps in [Add a capability](./adding-capabilities-to-your-app.md#Add-a-capability) to add the Fonts capability to your app’s target.
 
-![A screenshot of Xcode’s Capabilities library with a list of available capabilities on the left and an information pane on the right. The list shows a range of capabilities from Fonts to In-App Purchase, and the Fonts capability is in a selected state. The text on the information pane explains that the Fonts capability allows your app, with the user’s permission, to install and make use of custom fonts.](/images/com.apple.Xcode/fonts@2x.png)
+![A screenshot of Xcode’s Capabilities library with a list of available capabilities on the left and an information pane on the right. The list shows a range of capabilities from Fonts to In-App Purchase, and the Fonts capability is in a selected state. The text on the information pane explains that the Fonts capability allows your app, with the user’s permission, to install and make use of custom fonts.](https://developer.apple.com/tutorials/images/com.apple.Xcode/fonts@2x.png)
 
 > **Note**: The Fonts capability is only available to use with iOS apps that target iOS 13 and later.
 
-##### Select the Required Privileges
+##### Select the required privileges
 
 Before your iOS app can install one or more custom fonts or use fonts that other apps provide, you must enable the necessary privileges by performing the following:
 
@@ -30,7 +31,7 @@ Before your iOS app can install one or more custom fonts or use fonts that other
 4. Find the Fonts capability.
 5. Select the required privileges using the corresponding checkboxes.
 
-![A screenshot of the Fonts capability after you add it to an iOS target. The Install Fonts and Use Installed Fonts privileges are in an enabled state.](/images/com.apple.Xcode/fonts-consumer-provider@2x.png)
+![A screenshot of the Fonts capability after you add it to an iOS target. The Install Fonts and Use Installed Fonts privileges are in an enabled state.](https://developer.apple.com/tutorials/images/com.apple.Xcode/fonts-consumer-provider@2x.png)
 
 > 💡 **Tip**: Fonts privileges aren’t exclusive; your iOS app can provide fonts for use in other apps and consume fonts that other apps install systemwide.
 
@@ -38,25 +39,30 @@ Xcode adds the `com.apple.developer.user-fonts` array to your app’s entitlemen
 
 After enabling the required privileges, update your app to perform one or more of the following:
 
-- Register fonts systemwide using one of these registration methods: - [`CTFontManagerRegisterFontURLs(_:_:_:_:)`](https://developer.apple.com/documentation/coretext/ctfontmanagerregisterfonturls(_:_:_:_:))
-- [`CTFontManagerRegisterFontDescriptors(_:_:_:_:)`](https://developer.apple.com/documentation/coretext/ctfontmanagerregisterfontdescriptors(_:_:_:_:))
-- [`CTFontManagerRegisterFontsWithAssetNames(_:_:_:_:_:)`](https://developer.apple.com/documentation/coretext/ctfontmanagerregisterfontswithassetnames(_:_:_:_:_:))
-- Remove installed fonts using one of these unregister methods: - [`CTFontManagerUnregisterFontURLs(_:_:_:)`](https://developer.apple.com/documentation/coretext/ctfontmanagerunregisterfonturls(_:_:_:))
-- [`CTFontManagerUnregisterFontDescriptors(_:_:_:)`](https://developer.apple.com/documentation/coretext/ctfontmanagerunregisterfontdescriptors(_:_:_:))
-- Query all installed fonts using [`CTFontManagerRequestFonts(_:_:)`](https://developer.apple.com/documentation/coretext/ctfontmanagerrequestfonts(_:_:))
-- Listen for font change notifications using [`kCTFontManagerRegisteredFontsChangedNotification`](https://developer.apple.com/documentation/coretext/kctfontmanagerregisteredfontschangednotification)
+- Register fonts systemwide using one of these registration methods:
 
-For more information, see the WWDC session video [`Font Management and Text Scaling`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/227).
+  - [`CTFontManagerRegisterFontURLs(_:_:_:_:)`](../CoreText/ctfontmanagerregisterfonturls%28_,_,_,_%29.md)
+  - [`CTFontManagerRegisterFontDescriptors(_:_:_:_:)`](../CoreText/ctfontmanagerregisterfontdescriptors%28_,_,_,_%29.md)
+  - [`CTFontManagerRegisterFontsWithAssetNames(_:_:_:_:_:)`](../CoreText/ctfontmanagerregisterfontswithassetnames%28_,_,_,_,_%29.md)
+- Remove installed fonts using one of these unregister methods:
+
+  - [`CTFontManagerUnregisterFontURLs(_:_:_:)`](../CoreText/ctfontmanagerunregisterfonturls%28_,_,_%29.md)
+  - [`CTFontManagerUnregisterFontDescriptors(_:_:_:)`](../CoreText/ctfontmanagerunregisterfontdescriptors%28_,_,_%29.md)
+- Query all installed fonts using [`CTFontManagerRequestFonts(_:_:)`](../CoreText/ctfontmanagerrequestfonts%28_,_%29.md)
+- Listen for font change notifications using [`kCTFontManagerRegisteredFontsChangedNotification`](../CoreText/kctfontmanagerregisteredfontschangednotification.md)
+
+For more information, see the WWDC session video [Font Management and Text Scaling](https://developer.apple.com/videos/play/wwdc2019/227).
 
 ## See Also
 
-- [Configuring background execution modes](configuring-background-execution-modes.md)
+### App execution
+- [Configuring background execution modes](./configuring-background-execution-modes.md)
   Indicate the background services your app requires to continue executing in the background in iOS, iPadOS, tvOS, visionOS, and watchOS.
-- [Configuring game controllers](configuring-game-controllers.md)
+- [Configuring game controllers](./configuring-game-controllers.md)
   Enhance gameplay input by enabling the discovery, configuration, and use of physical game controllers.
-- [Configuring Maps support](configuring-maps-support.md)
+- [Configuring Maps support](./configuring-maps-support.md)
   Register your iOS routing app to provide point-to-point directions to Maps and other apps.
-- [Configuring Siri support](configuring-siri-support.md)
+- [Configuring Siri support](./configuring-siri-support.md)
   Enable your app and its Intents extension to resolve, confirm, and handle user-driven Siri requests for your app’s services.
 
 

@@ -1,7 +1,8 @@
 # init(kineticFriction:staticFriction:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a friction override value with the given friction coefficients.
 

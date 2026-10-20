@@ -1,7 +1,8 @@
 # set(named:position:orientation:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and adds a geometric pin to the entity, and returns the entity geometric pin.
 
@@ -22,11 +23,11 @@ Creates and adds a geometric pin to the entity, and returns the entity geometric
 
 #### Return Value
 
-A `GeometricPin`, identifying the newly added reference frame on the [`Entity`](entity.md).
+A `GeometricPin`, identifying the newly added reference frame on the [`Entity`](../entity.md).
 
 #### Discussion
 
-The pin is added to the entity’s [`GeometricPinsComponent`](geometricpinscomponent.md).
+The pin is added to the entity’s [`GeometricPinsComponent`](../geometricpinscomponent.md).
 
 ## Parameters
 

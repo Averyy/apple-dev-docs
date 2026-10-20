@@ -1,7 +1,8 @@
 # vfs_setextendedsecurity
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Mark a filesystem as supporting security controls beyond POSIX permissions.
 
@@ -10,11 +11,11 @@ Mark a filesystem as supporting security controls beyond POSIX permissions.
 
 ## Declaration
 
-```swift
+```c
 void vfs_setextendedsecurity(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 void.
 

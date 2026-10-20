@@ -1,7 +1,8 @@
 # sourceSize
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 var sourceSize: MTLSize { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLSize sourceSize;
 ```
 
 

@@ -1,7 +1,8 @@
 # SSLAuthenticate.tryAuthenticate
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that client-side authentication should be attempted. There is no error if the client doesn’t have a certificate.
 
@@ -13,6 +14,10 @@ Indicates that client-side authentication should be attempted. There is no error
 
 ```swift
 case tryAuthenticate
+```
+
+```c
+kTryAuthenticate
 ```
 
 

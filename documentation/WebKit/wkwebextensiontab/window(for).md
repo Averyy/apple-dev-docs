@@ -1,7 +1,8 @@
 # window(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the window containing the tab is needed.
 
@@ -16,6 +17,10 @@ Called when the window containing the tab is needed.
 
 ```swift
 optional func window(for context: WKWebExtensionContext) -> (any WKWebExtensionWindow)?
+```
+
+```objc
+- (id<WKWebExtensionWindow>) windowForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
 #### Discussion

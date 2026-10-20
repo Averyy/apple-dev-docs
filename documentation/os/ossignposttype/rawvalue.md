@@ -1,18 +1,19 @@
 # rawValue
 
 **Framework**: os  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer value that represents the role of a signpost.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 

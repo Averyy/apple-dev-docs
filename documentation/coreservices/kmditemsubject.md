@@ -1,7 +1,8 @@
 # kMDItemSubject
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Subject of the this item. Type is a CFString.
 
@@ -12,6 +13,10 @@ Subject of the this item. Type is a CFString.
 
 ```swift
 let kMDItemSubject: CFString!
+```
+
+```c
+const CFStringRef kMDItemSubject;
 ```
 
 

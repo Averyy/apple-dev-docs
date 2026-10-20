@@ -1,7 +1,8 @@
 # slash
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A slashed version of the variant.
 
@@ -22,24 +23,25 @@ var slash: SymbolVariants { get }
 
 #### Discussion
 
-Use this property to modify a shape variant like [`circle`](symbolvariants/circle-swift.type.property.md) so that it’s also covered by a slash:
+Use this property to modify a shape variant like [`circle`](./circle-swift.type.property.md) so that it’s also covered by a slash:
 
 ```swift
 Label("Circle Slash", systemImage: "flag")
     .symbolVariant(.circle.slash)
 ```
 
-![A screenshot of a label that shows a flag in a circle with a](/images/com.apple.SwiftUI/SymbolVariants-slash-2@2x.png)
+![A screenshot of a label that shows a flag in a circle with a](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SymbolVariants-slash-2@2x.png)
 
 ## See Also
 
-- [var circle: SymbolVariants](symbolvariants/circle-swift.property.md)
+### Modifying a variant
+- [var circle: SymbolVariants](./circle-swift.property.md)
   A version of the variant that’s encapsulated in a circle.
-- [var square: SymbolVariants](symbolvariants/square-swift.property.md)
+- [var square: SymbolVariants](./square-swift.property.md)
   A version of the variant that’s encapsulated in a square.
-- [var rectangle: SymbolVariants](symbolvariants/rectangle-swift.property.md)
+- [var rectangle: SymbolVariants](./rectangle-swift.property.md)
   A version of the variant that’s encapsulated in a rectangle.
-- [var fill: SymbolVariants](symbolvariants/fill-swift.property.md)
+- [var fill: SymbolVariants](./fill-swift.property.md)
   A filled version of the variant.
 
 

@@ -1,7 +1,8 @@
 # Logger
 
 **Framework**: os  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object for writing interpolated string messages to the unified logging system.
 
@@ -11,7 +12,7 @@ An object for writing interpolated string messages to the unified logging system
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,15 +23,15 @@ struct Logger
 
 ## Mentions
 
-- [Generating Log Messages from Your Code](generating-log-messages-from-your-code.md)
+- [Generating Log Messages from Your Code](./generating-log-messages-from-your-code.md)
 
 #### Overview
 
-Create a [`Logger`](logger.md) structure and use it to log messages about your app’s behavior. When logging a message, you specify the message and any program variables or custom data to help you assess the state of your app. You also choose a log level to indicate the severity of that message. The system records log messages in memory and, in some cases, also writes those messages to an on-disk data store. The log level determines which messages stay in memory and which go to disk.
+Create a [`Logger`](./logger.md) structure and use it to log messages about your app’s behavior. When logging a message, you specify the message and any program variables or custom data to help you assess the state of your app. You also choose a log level to indicate the severity of that message. The system records log messages in memory and, in some cases, also writes those messages to an on-disk data store. The log level determines which messages stay in memory and which go to disk.
 
-When you create a [`Logger`](logger.md) structure, assign an optional subsystem and category string to add context to all messages you log. A subsystem corresponds to a large functional area of your app, and a category corresponds to a specific area within a particular subsystem. When diagnosing problems, use those strings to filter out unrelated messages.
+When you create a [`Logger`](./logger.md) structure, assign an optional subsystem and category string to add context to all messages you log. A subsystem corresponds to a large functional area of your app, and a category corresponds to a specific area within a particular subsystem. When diagnosing problems, use those strings to filter out unrelated messages.
 
-To log a message, call the method that represents the appropriate log level for that message. To create the message, use a Swift string. Strings may contain interpolated values, such as signed and unsigned integers, floating-point and double values, Booleans, other strings, Objective-C objects, and types that conform to the [`CustomStringConvertible`](https://developer.apple.com/documentation/swift/customstringconvertible) protocol. You can also include metatypes such as `Int.self`.
+To log a message, call the method that represents the appropriate log level for that message. To create the message, use a Swift string. Strings may contain interpolated values, such as signed and unsigned integers, floating-point and double values, Booleans, other strings, Objective-C objects, and types that conform to the [`CustomStringConvertible`](../Swift/customstringconvertible.md) protocol. You can also include metatypes such as `Int.self`.
 
 ```swift
 let logger = Logger()
@@ -48,58 +49,59 @@ logger.log("Ordered smoothie \(smoothieName, privacy: .public)")  // Visible
 ## Topics
 
 ### Creating a Logger
-- [init()](logger/init.md)
+- [init()](./logger/init%28%29.md)
   Creates a logger that writes to the default subsystem.
-- [init(subsystem: String, category: String)](logger/init(subsystem:category:).md)
+- [init(subsystem: String, category: String)](./logger/init%28subsystem,category%29.md)
   Creates a logger using the specified subsystem and category.
-- [init(OSLog)](logger/init(_:).md)
+- [init(OSLog)](./logger/init%28_%29.md)
   Creates a logger that writes to the specified log.
-- [class OSLog](oslog.md)
+- [class OSLog](./oslog.md)
   A container of related log messages.
 ### Logging a Message
-- [func log(OSLogMessage)](logger/log(_:).md)
+- [func log(OSLogMessage)](./logger/log%28_%29.md)
   Writes a message to the log using the default log type.
-- [func log(level: OSLogType, OSLogMessage)](logger/log(level:_:).md)
+- [func log(level: OSLogType, OSLogMessage)](./logger/log%28level,_%29.md)
   Writes a message to the log using the specified log type.
-- [struct OSLogType](oslogtype.md)
+- [struct OSLogType](./oslogtype.md)
   The various log levels that the unified logging system provides.
-- [struct OSLogMessage](oslogmessage.md)
+- [struct OSLogMessage](./oslogmessage.md)
   An object that represents a log message.
 ### Logging a Scoped Message
-- [func notice(OSLogMessage)](logger/notice(_:).md)
+- [func notice(OSLogMessage)](./logger/notice%28_%29.md)
   Writes a message to the log using the default log type.
-- [func debug(OSLogMessage)](logger/debug(_:).md)
+- [func debug(OSLogMessage)](./logger/debug%28_%29.md)
   Writes a debug message to the log.
-- [func trace(OSLogMessage)](logger/trace(_:).md)
+- [func trace(OSLogMessage)](./logger/trace%28_%29.md)
   Writes a trace message to the log.
-- [func info(OSLogMessage)](logger/info(_:).md)
+- [func info(OSLogMessage)](./logger/info%28_%29.md)
   Writes an informative message to the log.
-- [func error(OSLogMessage)](logger/error(_:).md)
+- [func error(OSLogMessage)](./logger/error%28_%29.md)
   Writes information about an error to the log.
-- [func warning(OSLogMessage)](logger/warning(_:).md)
+- [func warning(OSLogMessage)](./logger/warning%28_%29.md)
   Writes information about a warning to the log.
-- [func fault(OSLogMessage)](logger/fault(_:).md)
+- [func fault(OSLogMessage)](./logger/fault%28_%29.md)
   Writes a message to the log about a bug that occurs when your app executes.
-- [func critical(OSLogMessage)](logger/critical(_:).md)
+- [func critical(OSLogMessage)](./logger/critical%28_%29.md)
   Writes a message to the log about a critical event in your app’s execution.
 ### Instance Methods
-- [func isEnabled(type: OSLogType) -> Bool](logger/isenabled(type:).md)
+- [func isEnabled(type: OSLogType) -> Bool](./logger/isenabled%28type%29.md)
   Checks if the Logger can emit log messages for a given log type. This allows for more granular control over logging based on the log level.
 ### Type Properties
-- [static var disabled: Logger](logger/disabled.md)
+- [static var disabled: Logger](./logger/disabled.md)
   A disabled Logger that won’t emit log messages at runtime. Use to turn off all logging emitted using a specific logger variable.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Message Argument Formatters](message-argument-formatters.md)
+### Log Messages
+- [Message Argument Formatters](./message-argument-formatters.md)
   Manage the privacy and presentation of the message’s interpolated values using type-aware formatters.
-- [struct OSLogType](oslogtype.md)
+- [struct OSLogType](./oslogtype.md)
   The various log levels that the unified logging system provides.
 
 

@@ -1,16 +1,19 @@
 # AppEventScreenshotsResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that list screenshots for an in-app event localization.
 
 **Availability**:
-- App Store Connect API 1.7+
+- App Store Connect API 1.7+ - Deprecated in 4.5
+
+> **Deprecated**: This object is deprecated. Use [`AppAssetLibraryImagesResponse`](./appassetlibraryimagesresponse.md) instead.
 
 ## Declaration
 
-```swift
+```
 object AppEventScreenshotsResponse
 ```
 
@@ -23,13 +26,14 @@ object AppEventScreenshotsResponse
 
 ## See Also
 
-- [object AppEventScreenshot](appeventscreenshot.md)
+### Objects
+- [object AppEventScreenshot](./appeventscreenshot.md)
   A screenshot image used to promote an app event on the App Store product page.
-- [object AppEventScreenshotCreateRequest](appeventscreenshotcreaterequest.md)
+- [object AppEventScreenshotCreateRequest](./appeventscreenshotcreaterequest.md)
   The request body you use to create an app event screenshot.
-- [object AppEventScreenshotResponse](appeventscreenshotresponse.md)
+- [object AppEventScreenshotResponse](./appeventscreenshotresponse.md)
   The response body for endpoints that create, read, or modify an in-app event screenshot.
-- [object AppEventScreenshotUpdateRequest](appeventscreenshotupdaterequest.md)
+- [object AppEventScreenshotUpdateRequest](./appeventscreenshotupdaterequest.md)
   The request body you use to update an app event screenshot update request.
 
 

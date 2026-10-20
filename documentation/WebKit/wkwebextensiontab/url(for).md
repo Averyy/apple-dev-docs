@@ -1,7 +1,8 @@
 # url(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the URL of the tab is needed.
 
@@ -16,6 +17,10 @@ Called when the URL of the tab is needed.
 
 ```swift
 optional func url(for context: WKWebExtensionContext) -> URL?
+```
+
+```objc
+- (NSURL *) urlForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
 #### Discussion

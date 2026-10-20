@@ -1,7 +1,8 @@
 # kGSSICAppleSourceAppPID
 
 **Framework**: GSS  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A number that indicates the process ID of the app.
 
@@ -18,11 +19,16 @@ A number that indicates the process ID of the app.
 var kGSSICAppleSourceAppPID: String { get }
 ```
 
+```c
+#define kGSSICAppleSourceAppPID
+```
+
 ## See Also
 
-- [var kGSSICAppleSourceAppAuditToken: String](kgssicapplesourceappaudittoken.md)
+### Apple Source App Keys
+- [var kGSSICAppleSourceAppAuditToken: String](./kgssicapplesourceappaudittoken.md)
   The audit token of the app’s process.
-- [var kGSSICAppleSourceAppSigningIdentity: String](kgssicapplesourceappsigningidentity.md)
+- [var kGSSICAppleSourceAppSigningIdentity: String](./kgssicapplesourceappsigningidentity.md)
   The bundle signing identity of the app.
 
 

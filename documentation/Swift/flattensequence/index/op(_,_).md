@@ -1,7 +1,8 @@
 # <(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
 
@@ -19,6 +20,8 @@ Returns a Boolean value indicating whether the value of the first argument is le
 ```swift
 static func < (lhs: FlattenCollection<Base>.Index, rhs: FlattenCollection<Base>.Index) -> Bool
 ```
+
+Available when `Base` conforms to `Collection` and `Base.Element` conforms to `Collection`.
 
 #### Discussion
 

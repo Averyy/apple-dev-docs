@@ -1,14 +1,15 @@
 # kHIDDispatchOptionPhaseCanceled
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12.2+
 
 ## Declaration
 
-```swift
+```c
 kHIDDispatchOptionPhaseCanceled = (1<<7)
 ```
 

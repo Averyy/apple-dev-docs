@@ -1,7 +1,8 @@
 # SRSpeechMetrics.SessionFlags
 
 **Framework**: SensorKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Possible details about processing an audio stream.
 
@@ -16,6 +17,10 @@ Possible details about processing an audio stream.
 struct SessionFlags
 ```
 
+```c
+enum SRSpeechMetricsSessionFlags : NSUInteger;
+```
+
 #### Overview
 
 Use these flags to determine whether audio processing went through the system voice processor.
@@ -23,33 +28,34 @@ Use these flags to determine whether audio processing went through the system vo
 ## Topics
 
 ### Session flags
-- [static var bypassVoiceProcessing: SRSpeechMetrics.SessionFlags](srspeechmetrics/sessionflags-swift.struct/bypassvoiceprocessing.md)
+- [static var bypassVoiceProcessing: SRSpeechMetrics.SessionFlags](./sessionflags-swift.struct/bypassvoiceprocessing.md)
   Audio processing bypasses the system voice processor.
 ### Creating session flags
-- [init(rawValue: UInt)](srspeechmetrics/sessionflags-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./sessionflags-swift.struct/init%28rawvalue%29.md)
   Creates and returns a new structure with the specified value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var sessionIdentifier: String](srspeechmetrics/sessionidentifier.md)
+### Getting session information
+- [var sessionIdentifier: String](./sessionidentifier.md)
   An identifier for the audio session.
-- [var sessionFlags: SRSpeechMetrics.SessionFlags](srspeechmetrics/sessionflags-swift.property.md)
+- [var sessionFlags: SRSpeechMetrics.SessionFlags](./sessionflags-swift.property.md)
   Details about the audio processing.
-- [var timeSinceAudioStart: TimeInterval](srspeechmetrics/timesinceaudiostart.md)
+- [var timeSinceAudioStart: TimeInterval](./timesinceaudiostart.md)
   The number of seconds since the start of the audio stream.
-- [var timestamp: Date](srspeechmetrics/timestamp.md)
+- [var timestamp: Date](./timestamp.md)
   The date and time when the speech occurs.
 
 

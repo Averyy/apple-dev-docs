@@ -1,7 +1,8 @@
 # setBackgroundImage(_:forToolbarPosition:barMetrics:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the image to use for the background in a given position and with given metrics.
 
@@ -17,6 +18,10 @@ Sets the image to use for the background in a given position and with given metr
 func setBackgroundImage(_ backgroundImage: UIImage?, forToolbarPosition topOrBottom: UIBarPosition, barMetrics: UIBarMetrics)
 ```
 
+```objc
+- (void) setBackgroundImage:(UIImage *) backgroundImage forToolbarPosition:(UIBarPosition) topOrBottom barMetrics:(UIBarMetrics) barMetrics;
+```
+
 ## Parameters
 
 - `backgroundImage`: The image to use for the toolbar background in the position specified by `topOrBottom` and with the metrics specified by `barMetrics`.
@@ -25,9 +30,10 @@ func setBackgroundImage(_ backgroundImage: UIImage?, forToolbarPosition topOrBot
 
 ## See Also
 
-- [var barTintColor: UIColor?](uitoolbar/bartintcolor.md)
+### Changing the background
+- [var barTintColor: UIColor?](./bartintcolor.md)
   The tint color to apply to the toolbar background.
-- [func backgroundImage(forToolbarPosition: UIBarPosition, barMetrics: UIBarMetrics) -> UIImage?](uitoolbar/backgroundimage(fortoolbarposition:barmetrics:).md)
+- [func backgroundImage(forToolbarPosition: UIBarPosition, barMetrics: UIBarMetrics) -> UIImage?](./backgroundimage%28fortoolbarposition,barmetrics%29.md)
   Returns the image to use for the background in a given position and with given metrics.
 
 

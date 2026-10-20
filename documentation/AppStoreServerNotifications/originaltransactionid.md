@@ -1,7 +1,8 @@
 # originalTransactionId
 
 **Framework**: App Store Server Notifications  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The original transaction identifier of a purchase.
 
@@ -10,21 +11,22 @@ The original transaction identifier of a purchase.
 
 ## Declaration
 
-```swift
+```
 string originalTransactionId
 ```
 
 #### Discussion
 
-This value is identical to the transaction identifier ([`transactionId`](transactionid.md)) except when the user restores or renews a subscription.
+This value is identical to the transaction identifier ([`transactionId`](./transactionid.md)) except when the user restores or renews a subscription.
 
 ## See Also
 
-- [type transactionId](transactionid.md)
+### Transaction identifiers
+- [type transactionId](./transactionid.md)
   The unique identifier for a transaction, such as an In-App Purchase, restored purchase, or subscription renewal.
-- [type webOrderLineItemId](weborderlineitemid.md)
+- [type webOrderLineItemId](./weborderlineitemid.md)
   The unique identifier of subscription purchase events across devices, including subscription renewals.
-- [type previousOriginalTransactionId](previousoriginaltransactionid.md)
+- [type previousOriginalTransactionId](./previousoriginaltransactionid.md)
   The original transaction identifier of a subscription before migration.
 
 

@@ -1,7 +1,8 @@
 # automaticCapitalizationEnabledKey
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 26.0+
@@ -12,10 +13,15 @@
 static let automaticCapitalizationEnabledKey: NSSpellChecker.OptionKey
 ```
 
+```c
+extern NSTextCheckingOptionKey NSTextCheckingAutomaticCapitalizationEnabledKey;
+```
+
 ## See Also
 
-- [static let generateInlinePredictionsKey: NSSpellChecker.OptionKey](nsspellchecker/optionkey/generateinlinepredictionskey.md)
-- [static let waitForAllGrammarCheckingResultsKey: NSSpellChecker.OptionKey](nsspellchecker/optionkey/waitforallgrammarcheckingresultskey.md)
+### Getting additional option values
+- [static let generateInlinePredictionsKey: NSSpellChecker.OptionKey](./generateinlinepredictionskey.md)
+- [static let waitForAllGrammarCheckingResultsKey: NSSpellChecker.OptionKey](./waitforallgrammarcheckingresultskey.md)
 
 
 ---

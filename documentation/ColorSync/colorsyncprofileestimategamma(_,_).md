@@ -1,7 +1,8 @@
 # ColorSyncProfileEstimateGamma(_:_:)
 
 **Framework**: ColorSync  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Estimates the gamma of a profile.
 
@@ -20,6 +21,10 @@ Estimates the gamma of a profile.
 func ColorSyncProfileEstimateGamma(_ prof: ColorSyncProfile!, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Float
 ```
 
+```c
+extern float ColorSyncProfileEstimateGamma(ColorSyncProfileRef prof, CFErrorRef*error);
+```
+
 #### Return Value
 
 A non-zero value on success, or `0.0` in case of error.
@@ -31,15 +36,16 @@ A non-zero value on success, or `0.0` in case of error.
 
 ## See Also
 
-- [func ColorSyncProfileIsWideGamut(ColorSyncProfile!) -> Bool](colorsyncprofileiswidegamut(_:).md)
+### Inspecting color characteristics
+- [func ColorSyncProfileIsWideGamut(ColorSyncProfile!) -> Bool](./colorsyncprofileiswidegamut%28_%29.md)
   Returns a Boolean value indicating whether the display profile describes a wide-gamut color space.
-- [func ColorSyncProfileIsPQBased(ColorSyncProfile!) -> Bool](colorsyncprofileispqbased(_:).md)
+- [func ColorSyncProfileIsPQBased(ColorSyncProfile!) -> Bool](./colorsyncprofileispqbased%28_%29.md)
   Returns a Boolean value indicating whether the profile uses ITU BT.2100 PQ transfer functions.
-- [func ColorSyncProfileIsHLGBased(ColorSyncProfile!) -> Bool](colorsyncprofileishlgbased(_:).md)
+- [func ColorSyncProfileIsHLGBased(ColorSyncProfile!) -> Bool](./colorsyncprofileishlgbased%28_%29.md)
   Returns a Boolean value indicating whether the profile uses ITU BT.2100 HLG transfer functions.
-- [func ColorSyncProfileIsMatrixBased(ColorSyncProfile!) -> Bool](colorsyncprofileismatrixbased(_:).md)
+- [func ColorSyncProfileIsMatrixBased(ColorSyncProfile!) -> Bool](./colorsyncprofileismatrixbased%28_%29.md)
   Returns a Boolean value indicating whether the profile is matrix-based.
-- [func ColorSyncProfileVerify(ColorSyncProfile!, UnsafeMutablePointer<Unmanaged<CFError>?>?, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool](colorsyncprofileverify(_:_:_:).md)
+- [func ColorSyncProfileVerify(ColorSyncProfile!, UnsafeMutablePointer<Unmanaged<CFError>?>?, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool](./colorsyncprofileverify%28_,_,_%29.md)
   Verifies whether a profile can be used.
 
 

@@ -1,7 +1,8 @@
 # ButtonStyle.Configuration
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The properties of a button.
 
@@ -22,9 +23,10 @@ typealias Configuration = ButtonStyleConfiguration
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](buttonstyle/makebody(configuration:).md)
+### Custom button styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view that represents the body of a button.
-- [associatedtype Body : View](buttonstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the body of a button.
 
 

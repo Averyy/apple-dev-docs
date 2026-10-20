@@ -1,7 +1,8 @@
 # cachePolicy
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Cache policy to use for request.
 
@@ -16,11 +17,12 @@ var cachePolicy: RCSService.BusinessInformationRequest.CachePolicy
 
 ## See Also
 
-- [var cellularServiceID: CellularServiceID](rcsservice/businessinformationrequest/cellularserviceid.md)
+### Accessing request properties
+- [var cellularServiceID: CellularServiceID](./cellularserviceid.md)
   Service identifier to use for this request.
-- [var handle: RCSHandle.URI](rcsservice/businessinformationrequest/handle.md)
+- [var handle: RCSHandle.URI](./handle.md)
   URI handle of the target.
-- [RCSService.BusinessInformationRequest.CachePolicy](rcsservice/businessinformationrequest/cachepolicy-swift.enum.md)
+- [RCSService.BusinessInformationRequest.CachePolicy](./cachepolicy-swift.enum.md)
   `
 
 

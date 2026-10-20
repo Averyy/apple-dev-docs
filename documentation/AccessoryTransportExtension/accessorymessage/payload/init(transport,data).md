@@ -1,7 +1,8 @@
 # init(transport:data:)
 
 **Framework**: Accessory Transport Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a payload with data and a transport preference.
 

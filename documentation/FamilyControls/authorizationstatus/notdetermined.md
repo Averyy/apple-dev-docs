@@ -1,7 +1,8 @@
 # AuthorizationStatus.notDetermined
 
 **Framework**: Family Controls  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app hasn’t requested authorization.
 
@@ -17,11 +18,12 @@ case notDetermined
 
 ## See Also
 
-- [AuthorizationStatus.denied](authorizationstatus/denied.md)
+### Determining the status
+- [AuthorizationStatus.denied](./denied.md)
   The person, parent, or guardian denied the request for authorization.
-- [AuthorizationStatus.approved](authorizationstatus/approved.md)
+- [AuthorizationStatus.approved](./approved.md)
   The person, parent, or guardian approved the request for authorization.
-- [AuthorizationStatus.approvedWithDataAccess](authorizationstatus/approvedwithdataaccess.md)
+- [AuthorizationStatus.approvedWithDataAccess](./approvedwithdataaccess.md)
   The person, parent, or guardian approved the request for authorization with access to non-tokenized family activity data.
 
 

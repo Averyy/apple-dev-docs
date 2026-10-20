@@ -1,7 +1,8 @@
 # MLBoundingBoxUnits.pixel
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A unit of measurement in pixels for an image.
 
@@ -16,7 +17,8 @@ case pixel
 
 ## See Also
 
-- [MLBoundingBoxUnits.normalized](mlboundingboxunits/normalized.md)
+### Designating units
+- [MLBoundingBoxUnits.normalized](./normalized.md)
   A unit of measurement as a portion of an image’s overall width or height.
 
 

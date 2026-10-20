@@ -1,7 +1,8 @@
 # init(_:dataHandler:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new electrocardiogram query object.
 
@@ -10,7 +11,7 @@ Creates a new electrocardiogram query object.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -21,13 +22,15 @@ convenience init(_ ecg: HKElectrocardiogram, dataHandler: @escaping (HKElectroca
 
 #### Discussion
 
-When you run the query, it calls the data handler once for each voltage measurement, passing a [`HKElectrocardiogramQuery.Result.measurement(_:)`](hkelectrocardiogramquery/result/measurement(_:).md) instance that contains the voltage data. After it has sent all the voltage measurements, it calls the data handler one last time, passing [`HKElectrocardiogramQuery.Result.done`](hkelectrocardiogramquery/result/done.md). If an error occurs, it stops collecting voltage data and passes [`HKElectrocardiogramQuery.Result.error(_:)`](hkelectrocardiogramquery/result/error(_:).md) instead.
+When you run the query, it calls the data handler once for each voltage measurement, passing a [`HKElectrocardiogramQuery.Result.measurement(_:)`](./result/measurement%28_%29.md) instance that contains the voltage data. After it has sent all the voltage measurements, it calls the data handler one last time, passing [`HKElectrocardiogramQuery.Result.done`](./result/done.md). If an error occurs, it stops collecting voltage data and passes [`HKElectrocardiogramQuery.Result.error(_:)`](./result/error%28_%29.md) instead.
 
 ## Parameters
 
 - `ecg`: The electrocardiogram sample whose voltages you want to access.
-- `dataHandler`: A block that the query calls repeatedly to return the voltage data. The handler takes the following parameters: - **`query`**: The query that returned the results.
-- **result**: An enumeration that contains a result value.
+- `dataHandler`: A block that the query calls repeatedly to return the voltage data. The handler takes the following parameters:
+
+  - **`query`**: The query that returned the results.
+  - **result**: An enumeration that contains a result value.
 
 
 ---

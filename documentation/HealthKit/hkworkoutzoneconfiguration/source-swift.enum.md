@@ -1,7 +1,8 @@
 # HKWorkoutZoneConfiguration.Source
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that identifies the origin of the zone configuration.
 
@@ -22,26 +23,27 @@ enum Source
 ## Topics
 
 ### Identifying the source
-- [HKWorkoutZoneConfiguration.Source.system](hkworkoutzoneconfiguration/source-swift.enum/system.md)
+- [HKWorkoutZoneConfiguration.Source.system](./source-swift.enum/system.md)
   A case that indicates the system generated the zones automatically.
-- [HKWorkoutZoneConfiguration.Source.user](hkworkoutzoneconfiguration/source-swift.enum/user.md)
+- [HKWorkoutZoneConfiguration.Source.user](./source-swift.enum/user.md)
   A case that indicates the person configured the zones manually in Health Settings.
-- [HKWorkoutZoneConfiguration.Source.app](hkworkoutzoneconfiguration/source-swift.enum/app.md)
+- [HKWorkoutZoneConfiguration.Source.app](./source-swift.enum/app.md)
   A case that indicates an app provided the zones for a specific workout.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let source: HKWorkoutZoneConfiguration.Source](hkworkoutzoneconfiguration/source-swift.property.md)
+### Identifying the configuration source
+- [let source: HKWorkoutZoneConfiguration.Source](./source-swift.property.md)
   A property that identifies the origin of this zone configuration.
 
 

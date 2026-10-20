@@ -1,7 +1,8 @@
 # theMsgEvent
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var theMsgEvent: AppParameters.__Unnamed_struct_theMsgEvent
+```
+
+```c
+struct theMsgEvent;
 ```
 
 

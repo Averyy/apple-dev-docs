@@ -1,7 +1,8 @@
 # init(named:in:constantValues:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a geometry modifier with the specified function constant values.
 

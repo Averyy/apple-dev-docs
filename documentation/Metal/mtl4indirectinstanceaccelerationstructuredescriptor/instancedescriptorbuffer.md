@@ -1,7 +1,8 @@
 # instanceDescriptorBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns a reference to a buffer containing instance descriptors for acceleration structures to reference.
 
@@ -19,9 +20,13 @@ Assigns a reference to a buffer containing instance descriptors for acceleration
 var instanceDescriptorBuffer: MTL4BufferRange { get set }
 ```
 
+```objc
+@property (nonatomic) MTL4BufferRange instanceDescriptorBuffer;
+```
+
 #### Discussion
 
-This buffer conceptually represents an array of instance data. The specific format for the structs that comprise each entry depends on the value of the  [`instanceDescriptorType`](mtl4indirectinstanceaccelerationstructuredescriptor/instancedescriptortype.md) property.
+This buffer conceptually represents an array of instance data. The specific format for the structs that comprise each entry depends on the value of the  [`instanceDescriptorType`](./instancedescriptortype.md) property.
 
 You are responsible for ensuring the buffer address the range contains is not zero.
 

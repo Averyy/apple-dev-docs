@@ -1,7 +1,8 @@
 # hasUnreadBadgeText
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the badge text is unread.
 
@@ -18,9 +19,13 @@ A Boolean value indicating whether the badge text is unread.
 var hasUnreadBadgeText: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL hasUnreadBadgeText;
+```
+
 #### Discussion
 
-This property is automatically set to `YES` when [`badgeText`](wkwebextension/action/badgetext.md) changes and is not empty. If [`badgeText`](wkwebextension/action/badgetext.md) becomes empty or the popup associated with the action is presented, this property is automatically set to `NO`. Additionally, it should be set to `NO` by the app when the badge has been presented to the user. This property is useful for higher-level notification badges when extensions might be hidden behind an action sheet.
+This property is automatically set to `YES` when [`badgeText`](./badgetext.md) changes and is not empty. If [`badgeText`](./badgetext.md) becomes empty or the popup associated with the action is presented, this property is automatically set to `NO`. Additionally, it should be set to `NO` by the app when the badge has been presented to the user. This property is useful for higher-level notification badges when extensions might be hidden behind an action sheet.
 
 
 ---

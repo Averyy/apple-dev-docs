@@ -1,14 +1,15 @@
 # select
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 int select(int, fd_set *, fd_set *, fd_set *, struct timeval *);
 ```
 

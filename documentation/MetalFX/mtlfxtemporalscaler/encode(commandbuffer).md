@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds the temporal scaling command to a render pass’s command buffer.
@@ -17,6 +18,10 @@ Adds the temporal scaling command to a render pass’s command buffer.
 
 ```swift
 func encode(commandBuffer: any MTLCommandBuffer)
+```
+
+```objc
+- (void) encodeToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer;
 ```
 
 ## Parameters

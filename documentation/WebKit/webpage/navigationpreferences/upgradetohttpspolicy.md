@@ -1,7 +1,8 @@
 # WebPage.NavigationPreferences.UpgradeToHTTPSPolicy
 
 **Framework**: WebKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Preference for loading a webpage with HTTPS, and how failures should be handled.
 
@@ -21,36 +22,37 @@ enum UpgradeToHTTPSPolicy
 ## Topics
 
 ### Enumeration Cases
-- [WebPage.NavigationPreferences.UpgradeToHTTPSPolicy.automaticFallbackToHTTP](webpage/navigationpreferences/upgradetohttpspolicy/automaticfallbacktohttp.md)
-- [WebPage.NavigationPreferences.UpgradeToHTTPSPolicy.errorOnFailure](webpage/navigationpreferences/upgradetohttpspolicy/erroronfailure.md)
-- [WebPage.NavigationPreferences.UpgradeToHTTPSPolicy.keepAsRequested](webpage/navigationpreferences/upgradetohttpspolicy/keepasrequested.md)
-- [WebPage.NavigationPreferences.UpgradeToHTTPSPolicy.userMediatedFallbackToHTTP](webpage/navigationpreferences/upgradetohttpspolicy/usermediatedfallbacktohttp.md)
+- [WebPage.NavigationPreferences.UpgradeToHTTPSPolicy.automaticFallbackToHTTP](./upgradetohttpspolicy/automaticfallbacktohttp.md)
+- [WebPage.NavigationPreferences.UpgradeToHTTPSPolicy.errorOnFailure](./upgradetohttpspolicy/erroronfailure.md)
+- [WebPage.NavigationPreferences.UpgradeToHTTPSPolicy.keepAsRequested](./upgradetohttpspolicy/keepasrequested.md)
+- [WebPage.NavigationPreferences.UpgradeToHTTPSPolicy.userMediatedFallbackToHTTP](./upgradetohttpspolicy/usermediatedfallbacktohttp.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol NavigationDeciding](webpage/navigationdeciding.md)
+### Managing navigation between webpages
+- [protocol NavigationDeciding](../navigationdeciding.md)
   Allows providing custom behavior to handle navigation changes and to coordinate these changes for the web page’s main page.
-- [WebPage.NavigationAction](webpage/navigationaction.md)
+- [WebPage.NavigationAction](../navigationaction.md)
   An object that contains information about an action that causes navigation to occur.
-- [WebPage.NavigationResponse](webpage/navigationresponse.md)
+- [WebPage.NavigationResponse](../navigationresponse.md)
   An object that contains the response to a navigation request, and which you use to make navigation-related policy decisions.
-- [WebPage.NavigationPreferences](webpage/navigationpreferences.md)
+- [WebPage.NavigationPreferences](../navigationpreferences.md)
   A type that specifies the behaviors to use when loading and rendering page content.
-- [WebPage.FrameInfo](webpage/frameinfo.md)
+- [WebPage.FrameInfo](../frameinfo.md)
   A type that contains information about a frame on a webpage.
-- [WebPage.NavigationPreferences.ContentMode](webpage/navigationpreferences/contentmode.md)
+- [WebPage.NavigationPreferences.ContentMode](./contentmode.md)
   Options to indicate how to render web view content.
-- [WebPage.NavigationPreferences.SecurityRestrictionMode](webpage/navigationpreferences/securityrestrictionmode-swift.enum.md)
+- [WebPage.NavigationPreferences.SecurityRestrictionMode](./securityrestrictionmode-swift.enum.md)
   Security restriction modes for WebView content.
-- [WebPage.FormInfo](webpage/forminfo.md)
+- [WebPage.FormInfo](../forminfo.md)
   A type that contains information about a form submission from a webpage.
 
 

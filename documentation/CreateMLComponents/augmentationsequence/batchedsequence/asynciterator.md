@@ -1,7 +1,8 @@
 # AugmentationSequence.BatchedSequence.AsyncIterator
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The iterator that produces batches.
 
@@ -20,16 +21,18 @@ The iterator that produces batches.
 struct AsyncIterator
 ```
 
+Available when `Base` conforms to `Sequence`, `RandomTransformer` conforms to `RandomTransformer`, `RandomNumberGenerator` conforms to `RandomNumberGenerator`, `Base.Element` is `AnnotatedFeature<RandomTransformer.Input, Annotation>`, and `RandomTransformer.Input` is `RandomTransformer.Output`.
+
 ## Topics
 
 ### Getting the next element
-- [func next() async throws -> [AugmentationSequence<Base, RandomTransformer, RandomNumberGenerator, Annotation>.Element]?](augmentationsequence/batchedsequence/asynciterator/next.md)
+- [func next() async throws -> [AugmentationSequence<Base, RandomTransformer, RandomNumberGenerator, Annotation>.Element]?](./asynciterator/next%28%29.md)
   Produces the next batch.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 
 ---

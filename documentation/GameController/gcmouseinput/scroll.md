@@ -1,7 +1,8 @@
 # scroll
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the directional pad cursor with an undefined range.
 
@@ -17,6 +18,10 @@ The location of the directional pad cursor with an undefined range.
 
 ```swift
 var scroll: GCDeviceCursor { get }
+```
+
+```objc
+@property (nonatomic, readonly) GCDeviceCursor * scroll;
 ```
 
 

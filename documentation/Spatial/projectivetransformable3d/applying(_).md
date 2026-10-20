@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a transformed copy of the value.
@@ -24,6 +25,12 @@ func applying(_ transform: ProjectiveTransform3D) -> Self
 ## Parameters
 
 - `transform`: A transform the function applies to the value.
+
+## Default Implementations
+
+### ProjectiveTransformable3D Implementations
+- [func applying(ProjectiveTransform3D) -> Self](./applying%28_%29-30uk5.md)
+  Returns a transformed copy of the value
 
 
 ---

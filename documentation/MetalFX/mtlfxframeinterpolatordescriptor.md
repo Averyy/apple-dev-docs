@@ -1,7 +1,8 @@
 # MTLFXFrameInterpolatorDescriptor
 
 **Framework**: MetalFX  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A set of properties that configure a frame interpolator, and a factory method that creates the effect.
 
@@ -18,61 +19,65 @@ A set of properties that configure a frame interpolator, and a factory method th
 class MTLFXFrameInterpolatorDescriptor
 ```
 
+```objc
+@interface MTLFXFrameInterpolatorDescriptor : NSObject
+```
+
 #### Overview
 
 A frame interpolator inspects two frames your game or app renders and, based on their properties, generates an extra frame at a fraction of the cost, helping you to increase your frame rate.
 
-When you configure this descriptor, set the properties that determine the pixel format for each texture to the respective format of the texture you later assign to the scaler. For example, make sure that the format to which you set the [`colorTextureFormat`](mtlfxframeinterpolatordescriptor/colortextureformat.md) property matches the format of the texture you later assign to the interpolator’s `MTLFXFrameInterpolatorDescriptor/colorTexture` property.
+When you configure this descriptor, set the properties that determine the pixel format for each texture to the respective format of the texture you later assign to the scaler. For example, make sure that the format to which you set the [`colorTextureFormat`](./mtlfxframeinterpolatordescriptor/colortextureformat.md) property matches the format of the texture you later assign to the interpolator’s `MTLFXFrameInterpolatorDescriptor/colorTexture` property.
 
 ## Topics
 
 ### Instance Properties
-- [var colorTextureFormat: MTLPixelFormat](mtlfxframeinterpolatordescriptor/colortextureformat.md)
+- [var colorTextureFormat: MTLPixelFormat](./mtlfxframeinterpolatordescriptor/colortextureformat.md)
   The pixel format of the input color texture for the frame interpolator you create with this descriptor.
-- [var depthTextureFormat: MTLPixelFormat](mtlfxframeinterpolatordescriptor/depthtextureformat.md)
+- [var depthTextureFormat: MTLPixelFormat](./mtlfxframeinterpolatordescriptor/depthtextureformat.md)
   The pixel format of the input depth texture for the frame interpolator you create with this descriptor.
-- [var inputHeight: Int](mtlfxframeinterpolatordescriptor/inputheight.md)
+- [var inputHeight: Int](./mtlfxframeinterpolatordescriptor/inputheight.md)
   The height, in pixels, of the input motion and depth texture for the frame interpolator.
-- [var inputWidth: Int](mtlfxframeinterpolatordescriptor/inputwidth.md)
+- [var inputWidth: Int](./mtlfxframeinterpolatordescriptor/inputwidth.md)
   The width, in pixels, of the input motion and depth texture for the frame interpolator.
-- [var isDistortionTextureEnabled: Bool](mtlfxframeinterpolatordescriptor/isdistortiontextureenabled.md)
+- [var isDistortionTextureEnabled: Bool](./mtlfxframeinterpolatordescriptor/isdistortiontextureenabled.md)
   A Boolean value that indicates whether the frame interpolator supports barrel distortion correction.
-- [var motionTextureFormat: MTLPixelFormat](mtlfxframeinterpolatordescriptor/motiontextureformat.md)
+- [var motionTextureFormat: MTLPixelFormat](./mtlfxframeinterpolatordescriptor/motiontextureformat.md)
   The pixel format of the input motion texture for the frame interpolator you create with this descriptor.
-- [var outputHeight: Int](mtlfxframeinterpolatordescriptor/outputheight.md)
+- [var outputHeight: Int](./mtlfxframeinterpolatordescriptor/outputheight.md)
   The height, in pixels, of the output color texture for the frame interpolator.
-- [var outputTextureFormat: MTLPixelFormat](mtlfxframeinterpolatordescriptor/outputtextureformat.md)
+- [var outputTextureFormat: MTLPixelFormat](./mtlfxframeinterpolatordescriptor/outputtextureformat.md)
   The pixel format of the output color texture for the frame interpolator you create with this descriptor.
-- [var outputWidth: Int](mtlfxframeinterpolatordescriptor/outputwidth.md)
+- [var outputWidth: Int](./mtlfxframeinterpolatordescriptor/outputwidth.md)
   The width, in pixels, of the output color texture for the frame interpolator.
-- [var requiresPrevColorTexture: Bool](mtlfxframeinterpolatordescriptor/requiresprevcolortexture.md)
+- [var requiresPrevColorTexture: Bool](./mtlfxframeinterpolatordescriptor/requiresprevcolortexture.md)
   A Boolean value that indicates whether the frame interpolator requires the client to provide a previous color texture.
-- [var scaler: (any MTLFXFrameInterpolatableScaler)?](mtlfxframeinterpolatordescriptor/scaler.md)
-- [var uiTextureFormat: MTLPixelFormat](mtlfxframeinterpolatordescriptor/uitextureformat.md)
+- [var scaler: (any MTLFXFrameInterpolatableScaler)?](./mtlfxframeinterpolatordescriptor/scaler.md)
+- [var uiTextureFormat: MTLPixelFormat](./mtlfxframeinterpolatordescriptor/uitextureformat.md)
   The pixel format for the frame interpolator of an input texture containing your game’s custom UI.
 ### Instance Methods
-- [func makeFrameInterpolator(device: any MTLDevice) -> (any MTLFXFrameInterpolator)?](mtlfxframeinterpolatordescriptor/makeframeinterpolator(device:).md)
+- [func makeFrameInterpolator(device: any MTLDevice) -> (any MTLFXFrameInterpolator)?](./mtlfxframeinterpolatordescriptor/makeframeinterpolator%28device%29.md)
   Creates a frame interpolator instance for a Metal device.
-- [func makeFrameInterpolator(device: any MTLDevice, compiler: any MTL4Compiler) -> (any MTL4FXFrameInterpolator)?](mtlfxframeinterpolatordescriptor/makeframeinterpolator(device:compiler:).md)
+- [func makeFrameInterpolator(device: any MTLDevice, compiler: any MTL4Compiler) -> (any MTL4FXFrameInterpolator)?](./mtlfxframeinterpolatordescriptor/makeframeinterpolator%28device,compiler%29.md)
   Creates a frame interpolator instance for a Metal device.
 ### Type Methods
-- [class func supportsDevice(any MTLDevice) -> Bool](mtlfxframeinterpolatordescriptor/supportsdevice(_:).md)
+- [class func supportsDevice(any MTLDevice) -> Bool](./mtlfxframeinterpolatordescriptor/supportsdevice%28_%29.md)
   Queries whether a Metal device supports frame interpolation.
-- [class func supportsMetal4FX(any MTLDevice) -> Bool](mtlfxframeinterpolatordescriptor/supportsmetal4fx(_:).md)
+- [class func supportsMetal4FX(any MTLDevice) -> Bool](./mtlfxframeinterpolatordescriptor/supportsmetal4fx%28_%29.md)
   Queries whether a Metal device supports frame interpolation compatible with a Metal 4 command buffer.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

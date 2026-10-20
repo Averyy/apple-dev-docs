@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 
 # mlx.optimizers.Adafactor
 
-**
-
-- [.rst](../../../_sources/python/optimizers/_autosummary/mlx.optimizers.Adafactor.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.optimizers.Adafactor
-
- Table of contents 
-
-## Contents
-
-# mlx.optimizers.Adafactor
-
 **class Adafactor(*learning_rate: float | Callable[[array], array] | None = None*, *eps: Tuple[float, float] = (1e-30, 0.001)*, *clip_threshold: float = 1.0*, *decay_rate: float = -0.8*, *beta_1: float | None = None*, *weight_decay: float = 0.0*, *scale_parameter: bool = True*, *relative_step: bool = True*, *warmup_init: bool = False*)**
 : The Adafactor optimizer.
 Our Adafactor implementation follows the original paper: [Adafactor:
@@ -74,5 +47,3 @@ Performs the Adafactor parameter and state update.
 
 `init_single`(parameter, state)
 Initialize optimizer state
-
-** Contents

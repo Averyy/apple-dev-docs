@@ -1,7 +1,8 @@
 # messageText
 
 **Framework**: Messages  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text of the critical message.
 

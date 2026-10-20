@@ -1,7 +1,8 @@
 # init(data:)
 
 **Framework**: Compute Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a graph by decoding a computegraph.
 
@@ -12,7 +13,7 @@ Creates a graph by decoding a computegraph.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -22,9 +23,9 @@ init(data: Data) throws
 
 #### Discussion
 
-This initializer infers the serialization format from the contents of `data`, so you can pass data produced by [`data(using:)`](computenodegraph/data(using:).md) regardless of the [`ComputeNodeGraph.Format`](computenodegraph/format.md) you chose when encoding.
+This initializer infers the serialization format from the contents of `data`, so you can pass data produced by [`data(using:)`](./data%28using%29.md) regardless of the [`ComputeNodeGraph.Format`](./format.md) you chose when encoding.
 
-> **Note**: An error if `data` isn’t a recognized graph format, or if the contents can’t be decoded into a valid graph.
+> **Throws**: An error if `data` isn’t a recognized graph format, or if the contents can’t be decoded into a valid graph.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # setParent(_:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and sets a reference object for a parent from its record.
 
@@ -20,9 +21,13 @@ Creates and sets a reference object for a parent from its record.
 func setParent(_ parentRecord: CKRecord?)
 ```
 
+```objc
+- (void) setParentReferenceFromRecord:(CKRecord *) parentRecord;
+```
+
 #### Discussion
 
-This method creates and sets a [`CKRecord.Reference`](ckrecord/reference.md) object that points to the record you provide. The resulting `CKReference` has an action of [`CKRecord.ReferenceAction.none`](ckrecord/referenceaction/none.md).
+This method creates and sets a [`CKRecord.Reference`](./reference.md) object that points to the record you provide. The resulting `CKReference` has an action of [`CKRecord.ReferenceAction.none`](./referenceaction/none.md).
 
 ## Parameters
 
@@ -30,15 +35,16 @@ This method creates and sets a [`CKRecord.Reference`](ckrecord/reference.md) obj
 
 ## See Also
 
-- [var parent: CKRecord.Reference?](ckrecord/parent.md)
+### Sharing Records
+- [var parent: CKRecord.Reference?](./parent.md)
   A reference to the record’s parent record.
-- [var share: CKRecord.Reference?](ckrecord/share.md)
+- [var share: CKRecord.Reference?](./share.md)
   A reference to the share object that determines the share status of the record.
-- [CKRecord.Reference](ckrecord/reference.md)
+- [CKRecord.Reference](./reference.md)
   A relationship between two records in a record zone.
-- [func setParent(CKRecord.ID?)](ckrecord/setparent(_:)-7egcx.md)
+- [func setParent(CKRecord.ID?)](./setparent%28_%29-7egcx.md)
   Creates and sets a reference object for a parent from the parent’s record ID.
-- [CKRecord.SystemFieldKey](ckrecord/systemfieldkey.md)
+- [CKRecord.SystemFieldKey](./systemfieldkey.md)
   Possible values for types of system field keys on records.
 
 

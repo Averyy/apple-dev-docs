@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates an instance that represents a shader function in the library.
@@ -11,7 +12,7 @@ Creates an instance that represents a shader function in the library.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,15 +21,19 @@ Creates an instance that represents a shader function in the library.
 func makeFunction(name functionName: String) -> (any MTLFunction)?
 ```
 
+```objc
+- (id<MTLFunction>) newFunctionWithName:(NSString *) functionName;
+```
+
 #### Return Value
 
-An [`MTLFunction`](mtlfunction.md), or `nil` if the named function isn’t found in the library.
+An [`MTLFunction`](../mtlfunction.md), or `nil` if the named function isn’t found in the library.
 
 #### Discussion
 
-If you call this method to retrieve a function that doesn’t use function constants, it returns an [`MTLFunction`](mtlfunction.md) instance that you can use to build a render or compute pipeline.
+If you call this method to retrieve a function that doesn’t use function constants, it returns an [`MTLFunction`](../mtlfunction.md) instance that you can use to build a render or compute pipeline.
 
-If you call this method to retrieve a function that uses function constants to specialize its behavior, you can only use the returned instance to query the `functionConstants` property for the list of function constants. You can’t use to create a render or compute pipeline. To get a specialized instance that you can use to create a pipeline instance, call the [`makeFunction(name:constantValues:completionHandler:)`](mtllibrary/makefunction(name:constantvalues:completionhandler:).md) method or [`makeFunction(name:constantValues:)`](mtllibrary/makefunction(name:constantvalues:).md) to generate a specialized function.
+If you call this method to retrieve a function that uses function constants to specialize its behavior, you can only use the returned instance to query the `functionConstants` property for the list of function constants. You can’t use to create a render or compute pipeline. To get a specialized instance that you can use to create a pipeline instance, call the [`makeFunction(name:constantValues:completionHandler:)`](./makefunction%28name,constantvalues,completionhandler%29.md) method or [`makeFunction(name:constantValues:)`](./makefunction%28name,constantvalues%29.md) to generate a specialized function.
 
 ## Parameters
 
@@ -36,15 +41,17 @@ If you call this method to retrieve a function that uses function constants to s
 
 ## See Also
 
-- [Metal Shading Language Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364)
-- [Metal Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221)
-- [func makeFunction(name: String, constantValues: MTLFunctionConstantValues, completionHandler: ((any MTLFunction)?, (any Error)?) -> Void)](mtllibrary/makefunction(name:constantvalues:completionhandler:).md)
+### Related Documentation
+- [Metal Shading Language Guide](https://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364)
+- [Metal Programming Guide](https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221)
+### Creating shader function instances
+- [func makeFunction(name: String, constantValues: MTLFunctionConstantValues, completionHandler: ((any MTLFunction)?, (any Error)?) -> Void)](./makefunction%28name,constantvalues,completionhandler%29.md)
   Asynchronously creates a specialized shader function.
-- [func makeFunction(name: String, constantValues: MTLFunctionConstantValues) throws -> any MTLFunction](mtllibrary/makefunction(name:constantvalues:).md)
+- [func makeFunction(name: String, constantValues: MTLFunctionConstantValues) throws -> any MTLFunction](./makefunction%28name,constantvalues%29.md)
   Synchronously creates a specialized shader function.
-- [func makeFunction(descriptor: MTLFunctionDescriptor, completionHandler: ((any MTLFunction)?, (any Error)?) -> Void)](mtllibrary/makefunction(descriptor:completionhandler:).md)
+- [func makeFunction(descriptor: MTLFunctionDescriptor, completionHandler: ((any MTLFunction)?, (any Error)?) -> Void)](./makefunction%28descriptor,completionhandler%29.md)
   Asynchronously creates an object representing a shader function, using the specified descriptor.
-- [func makeFunction(descriptor: MTLFunctionDescriptor) throws -> any MTLFunction](mtllibrary/makefunction(descriptor:).md)
+- [func makeFunction(descriptor: MTLFunctionDescriptor) throws -> any MTLFunction](./makefunction%28descriptor%29.md)
   Synchronously creates an object representing a shader function, using the specified descriptor.
 
 

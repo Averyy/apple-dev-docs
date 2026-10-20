@@ -1,7 +1,8 @@
 # linearGreen
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of green in the color in the extended sRGB color space variant with linear gamma.
 
@@ -23,19 +24,20 @@ var linearGreen: Float { get set }
 
 ## See Also
 
-- [var red: Float](color/resolvedhdr/red.md)
+### Getting color properties
+- [var red: Float](./red.md)
   The amount of red in the color in the extended sRGB color space.
-- [var green: Float](color/resolvedhdr/green.md)
+- [var green: Float](./green.md)
   The amount of green in the color in the extended sRGB color space.
-- [var blue: Float](color/resolvedhdr/blue.md)
+- [var blue: Float](./blue.md)
   The amount of blue in the color in the extended sRGB color space.
-- [var linearRed: Float](color/resolvedhdr/linearred.md)
+- [var linearRed: Float](./linearred.md)
   The amount of red in the color in the extended sRGB color space variant with linear gamma.
-- [var linearBlue: Float](color/resolvedhdr/linearblue.md)
+- [var linearBlue: Float](./linearblue.md)
   The amount of blue in the color in the extended sRGB color space variant with linear gamma.
-- [var opacity: Float](color/resolvedhdr/opacity.md)
+- [var opacity: Float](./opacity.md)
   The opacity of the color, in the range `0` to `1`.
-- [var headroom: Float?](color/resolvedhdr/headroom.md)
+- [var headroom: Float?](./headroom.md)
   The content headroom of the color.
 
 

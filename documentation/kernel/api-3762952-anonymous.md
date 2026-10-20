@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothRoleBecomeCentral](3762952-anonymous/kbluetoothrolebecomecentral.md)
-- [kBluetoothRoleBecomeMaster](3762952-anonymous/kbluetoothrolebecomemaster.md)
-- [kBluetoothRoleRemainPeripheral](3762952-anonymous/kbluetoothroleremainperipheral.md)
-- [kBluetoothRoleRemainSlave](3762952-anonymous/kbluetoothroleremainslave.md)
+- [kBluetoothRoleBecomeCentral](./api-3762952-anonymous/kbluetoothrolebecomecentral.md)
+- [kBluetoothRoleBecomeMaster](./api-3762952-anonymous/kbluetoothrolebecomemaster.md)
+- [kBluetoothRoleRemainPeripheral](./api-3762952-anonymous/kbluetoothroleremainperipheral.md)
+- [kBluetoothRoleRemainSlave](./api-3762952-anonymous/kbluetoothroleremainslave.md)
 
 
 ---

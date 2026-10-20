@@ -1,7 +1,8 @@
 # trailing(relativeTo:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The trailing edge of the frame, in the given user interface layout direction.
 

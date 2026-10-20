@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Family Controls  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared center for requesting and revoking authorization.
 

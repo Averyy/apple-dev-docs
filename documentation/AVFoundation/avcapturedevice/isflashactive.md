@@ -1,19 +1,26 @@
 # isFlashActive
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the flash is currently active.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
+- iOS 5.0+ - Deprecated in 10.0
+- iPadOS 5.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use [`isFlashScene`](../avcapturephotooutput/isflashscene.md) on [`AVCapturePhotoOutput`](../avcapturephotooutput.md) instead.
 
 ## Declaration
 
 ```swift
 var isFlashActive: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isFlashActive) BOOL flashActive;
 ```
 
 #### Discussion
@@ -24,15 +31,16 @@ This property is key-value observable.
 
 ## See Also
 
-- [var hasFlash: Bool](avcapturedevice/hasflash.md)
+### Configuring flash settings
+- [var hasFlash: Bool](./hasflash.md)
   A Boolean value that indicates whether the capture device has a flash.
-- [var isFlashAvailable: Bool](avcapturedevice/isflashavailable.md)
+- [var isFlashAvailable: Bool](./isflashavailable.md)
   A Boolean value that indicates whether the flash is currently available for use.
-- [var flashMode: AVCaptureDevice.FlashMode](avcapturedevice/flashmode-swift.property.md)
+- [var flashMode: AVCaptureDevice.FlashMode](./flashmode-swift.property.md)
   The device’s current flash mode.
-- [func isFlashModeSupported(AVCaptureDevice.FlashMode) -> Bool](avcapturedevice/isflashmodesupported(_:).md)
+- [func isFlashModeSupported(AVCaptureDevice.FlashMode) -> Bool](./isflashmodesupported%28_%29.md)
   Returns a Boolean value that indicates whether the device supports the given flash mode.
-- [AVCaptureDevice.FlashMode](avcapturedevice/flashmode-swift.enum.md)
+- [AVCaptureDevice.FlashMode](./flashmode-swift.enum.md)
   Constants that specify the flash modes of a capture device.
 
 

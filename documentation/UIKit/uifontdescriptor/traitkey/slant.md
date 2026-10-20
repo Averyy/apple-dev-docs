@@ -1,7 +1,8 @@
 # slant
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The relative slant angle of the font.
 
@@ -9,7 +10,7 @@ The relative slant angle of the font.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,17 +20,22 @@ The relative slant angle of the font.
 static let slant: UIFontDescriptor.TraitKey
 ```
 
+```c
+extern UIFontDescriptorTraitKey const UIFontSlantTrait;
+```
+
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object. The valid value range is from `-1.0` to `1.0`. The value of `0.0` corresponds to `0` degree clockwise rotation from the vertical and `1.0` corresponds to `30` degrees clockwise rotation.
+The value of this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object. The valid value range is from `-1.0` to `1.0`. The value of `0.0` corresponds to `0` degree clockwise rotation from the vertical and `1.0` corresponds to `30` degrees clockwise rotation.
 
 ## See Also
 
-- [static let symbolic: UIFontDescriptor.TraitKey](uifontdescriptor/traitkey/symbolic.md)
+### Font traits
+- [static let symbolic: UIFontDescriptor.TraitKey](./symbolic.md)
   The symbolic font traits.
-- [static let weight: UIFontDescriptor.TraitKey](uifontdescriptor/traitkey/weight.md)
+- [static let weight: UIFontDescriptor.TraitKey](./weight.md)
   The numerical value that corresponds to a font face.
-- [static let width: UIFontDescriptor.TraitKey](uifontdescriptor/traitkey/width.md)
+- [static let width: UIFontDescriptor.TraitKey](./width.md)
   The inter-glyph spacing of the font.
 
 

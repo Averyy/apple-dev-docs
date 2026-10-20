@@ -1,12 +1,13 @@
 # NSSelectionGranularity.selectByWord
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Extends the selection word by word.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Extends the selection word by word.
 case selectByWord
 ```
 
+```c
+NSSelectByWord
+```
+
 ## See Also
 
-- [NSSelectionGranularity.selectByCharacter](nsselectiongranularity/selectbycharacter.md)
+### Constants
+- [NSSelectionGranularity.selectByCharacter](./selectbycharacter.md)
   Extends the selection character by character.
-- [NSSelectionGranularity.selectByParagraph](nsselectiongranularity/selectbyparagraph.md)
+- [NSSelectionGranularity.selectByParagraph](./selectbyparagraph.md)
   Extends the selection paragraph by paragraph.
 
 

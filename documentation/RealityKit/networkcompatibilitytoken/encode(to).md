@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the token’s data into an encoder.
 
@@ -10,7 +11,7 @@ Writes the token’s data into an encoder.
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
 - macOS 10.15.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ final func encode(to encoder: any Encoder) throws
 
 #### Discussion
 
-If the value fails to encode anything, `encoder` will encode an empty keyed container. This function throws an [`Error`](https://developer.apple.com/documentation/swift/error) if any values are invalid for the given encoder’s format.
+If the value fails to encode anything, `encoder` will encode an empty keyed container. This function throws an [`Error`](../../Swift/error.md) if any values are invalid for the given encoder’s format.
 
 ## Parameters
 
@@ -28,7 +29,8 @@ If the value fails to encode anything, `encoder` will encode an empty keyed cont
 
 ## See Also
 
-- [init(from: any Decoder) throws](networkcompatibilitytoken/init(from:).md)
+### Serializing tokens
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates a new instance from a decoder.
 
 

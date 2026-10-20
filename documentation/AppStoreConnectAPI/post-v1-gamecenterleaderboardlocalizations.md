@@ -1,16 +1,19 @@
 # Create a Leaderboard Localization
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Add a new leaderboard localization.
 
 **Availability**:
-- App Store Connect API 3.0+
+- App Store Connect API 3.0+ - Deprecated in 4.3
+
+> **Deprecated**: This endpoint is deprecated. Use [`Create a Game Center Leaderboard Localization`](./post-v2-gamecenterleaderboardlocalizations.md) instead.
 
 #### Discussion
 
-Use leaderboard formatters to specify the unit of measurement for a Game Center leaderboard. There is a new required attribute `defaultFormatter` when you use [`Create a Leaderboard`](post-v1-gamecenterleaderboards.md), which gives all your localizations the same formatter. You can also optionally use `formatterOverride` to override a specific leaderboard localization when calling [`Create a Leaderboard Localization`](post-v1-gamecenterleaderboardlocalizations.md) or [`Modify a Leaderboard Localization`](patch-v1-gamecenterleaderboardlocalizations-_id_.md).
+Use leaderboard formatters to specify the unit of measurement for a Game Center leaderboard. There is a new required attribute `defaultFormatter` when you use [`Create a Leaderboard`](./post-v1-gamecenterleaderboards.md), which gives all your localizations the same formatter. You can also optionally use `formatterOverride` to override a specific leaderboard localization when calling [`Create a Leaderboard Localization`](./post-v1-gamecenterleaderboardlocalizations.md) or [`Modify a Leaderboard Localization`](./patch-v1-gamecenterleaderboardlocalizations-_id_.md).
 
 Before App Store Connect API version 3.0, formatters were based on localizations and were required for each localization. Legacy leaderboards created before the new addition of the Game Center APIs will not have a `defaultFormatter` value, the value would be `null` in this case. Any localizations created before the new addition of the Game Center APIs will always have a `formatterOverride`.
 
@@ -18,7 +21,7 @@ Before App Store Connect API version 3.0, formatters were based on localizations
 
 **Request**:
 
-```None
+```
 POST https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardLocalizations -d 
 {
     “data”: {
@@ -78,28 +81,44 @@ POST https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardLocalizations
 
 `POST https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardLocalizations`
 
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `GameCenterLeaderboardLocalizationCreateRequest`
+
+## Responses
+
+- `201` Created (`GameCenterLeaderboardLocalizationResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [Read Game Center Leaderboard Localization Information](get-v2-gamecenterleaderboardlocalizations-_id_.md)
+### Managing leaderboard localizations
+- [Read Game Center Leaderboard Localization Information](./get-v2-gamecenterleaderboardlocalizations-_id_.md)
   Get information about a specific Game Center leaderboard localization.
-- [List All Images for a Game Center Leaderboard Localization](get-v2-gamecenterleaderboardlocalizations-_id_-image.md)
+- [List All Images for a Game Center Leaderboard Localization](./get-v2-gamecenterleaderboardlocalizations-_id_-image.md)
   Get a list of images for a specific Game Center leaderboard localization.
-- [Get All Image IDs for a Game Center Leaderboard Localization](get-v2-gamecenterleaderboardlocalizations-_id_-relationships-image.md)
+- [Get All Image IDs for a Game Center Leaderboard Localization](./get-v2-gamecenterleaderboardlocalizations-_id_-relationships-image.md)
   Get a list of image resource IDs for a specific Game Center leaderboard localization.
-- [Create a Game Center Leaderboard Localization](post-v2-gamecenterleaderboardlocalizations.md)
+- [Create a Game Center Leaderboard Localization](./post-v2-gamecenterleaderboardlocalizations.md)
   Create a Game Center leaderboard localization.
-- [Modify a Game Center Leaderboard Localization](patch-v2-gamecenterleaderboardlocalizations-_id_.md)
+- [Modify a Game Center Leaderboard Localization](./patch-v2-gamecenterleaderboardlocalizations-_id_.md)
   Update a specific Game Center leaderboard localization.
-- [Delete a Game Center Leaderboard Localization](delete-v2-gamecenterleaderboardlocalizations-_id_.md)
+- [Delete a Game Center Leaderboard Localization](./delete-v2-gamecenterleaderboardlocalizations-_id_.md)
   Delete a specific Game Center leaderboard localization.
-- [Read Leaderboard Localization Information](get-v1-gamecenterleaderboardlocalizations-_id_.md)
+- [Read Leaderboard Localization Information](./get-v1-gamecenterleaderboardlocalizations-_id_.md)
   Get information about a leaderboard localization.
-- [Read the Image for a Leaderboard Localization](get-v1-gamecenterleaderboardlocalizations-_id_-gamecenterleaderboardimage.md)
+- [Read the Image for a Leaderboard Localization](./get-v1-gamecenterleaderboardlocalizations-_id_-gamecenterleaderboardimage.md)
   Get information about the image associated with a leaderboard localization.
-- [Get the leaderboard image ID for a Game Center leaderboard localization](get-v1-gamecenterleaderboardlocalizations-_id_-relationships-gamecenterleaderboardimage.md)
-- [Modify a Leaderboard Localization](patch-v1-gamecenterleaderboardlocalizations-_id_.md)
+- [Get the leaderboard image ID for a Game Center leaderboard localization](./get-v1-gamecenterleaderboardlocalizations-_id_-relationships-gamecenterleaderboardimage.md)
+- [Modify a Leaderboard Localization](./patch-v1-gamecenterleaderboardlocalizations-_id_.md)
   Edit a leaderboard localization.
-- [Delete a Leaderboard Localization](delete-v1-gamecenterleaderboardlocalizations-_id_.md)
+- [Delete a Leaderboard Localization](./delete-v1-gamecenterleaderboardlocalizations-_id_.md)
   Delete a localization that’s associated with a leaderboard.
 
 

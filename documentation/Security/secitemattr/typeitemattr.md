@@ -1,7 +1,8 @@
 # SecItemAttr.typeItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the type attribute.
 
@@ -13,6 +14,10 @@ Identifies the type attribute.
 
 ```swift
 case typeItemAttr
+```
+
+```c
+kSecTypeItemAttr
 ```
 
 #### Discussion

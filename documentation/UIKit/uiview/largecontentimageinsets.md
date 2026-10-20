@@ -1,7 +1,8 @@
 # largeContentImageInsets
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Insets to adjust the position of the view’s image so it appears centered in the large content viewer.
 
@@ -17,21 +18,26 @@ Insets to adjust the position of the view’s image so it appears centered in th
 var largeContentImageInsets: UIEdgeInsets { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) UIEdgeInsets largeContentImageInsets;
+```
+
 #### Discussion
 
-This property defaults to [`zero`](uiedgeinsets/zero.md).
+This property defaults to [`zero`](../uiedgeinsets/zero.md).
 
 ## See Also
 
-- [var accessibilityIgnoresInvertColors: Bool](uiview/accessibilityignoresinvertcolors.md)
+### Modifying the accessibility behavior
+- [var accessibilityIgnoresInvertColors: Bool](./accessibilityignoresinvertcolors.md)
   A Boolean value indicating whether the view ignores an accessibility request to invert its colors.
-- [var largeContentImage: UIImage?](uiview/largecontentimage.md)
+- [var largeContentImage: UIImage?](./largecontentimage.md)
   An image that represents the view in the large content viewer.
-- [var largeContentTitle: String?](uiview/largecontenttitle.md)
+- [var largeContentTitle: String?](./largecontenttitle.md)
   A string that describes the view in the large content viewer.
-- [var scalesLargeContentImage: Bool](uiview/scaleslargecontentimage.md)
+- [var scalesLargeContentImage: Bool](./scaleslargecontentimage.md)
   A Boolean value that indicates whether the large content viewer scales the item’s image to a larger size.
-- [var showsLargeContentViewer: Bool](uiview/showslargecontentviewer.md)
+- [var showsLargeContentViewer: Bool](./showslargecontentviewer.md)
   A Boolean value that indicates whether to show the view in the large content viewer.
 
 

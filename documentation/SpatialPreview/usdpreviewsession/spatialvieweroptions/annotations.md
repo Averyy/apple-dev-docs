@@ -1,13 +1,14 @@
 # annotations
 
 **Framework**: Spatial Preview  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Enables annotation capabilities during the `USDPreviewSession`.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

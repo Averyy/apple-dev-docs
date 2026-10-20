@@ -1,7 +1,8 @@
 # SLComposeViewControllerCompletionHandler
 
 **Framework**: Social  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Defines a handler to call when the user finishes composing a post.
 
@@ -16,16 +17,21 @@ Defines a handler to call when the user finishes composing a post.
 typealias SLComposeViewControllerCompletionHandler = (SLComposeViewControllerResult) -> Void
 ```
 
+```c
+typedef void (^)(enum SLComposeViewControllerResult) SLComposeViewControllerCompletionHandler;
+```
+
 #### Discussion
 
-The completion handler is called while the SLComposeViewController is still visible and it is responsible for dismissing the view controller. For the possible values of the `result` parameter, see [`SLComposeViewControllerResult`](slcomposeviewcontrollerresult.md). Use the [`completionHandler`](slcomposeviewcontroller/completionhandler.md) property to set this handler.
+The completion handler is called while the SLComposeViewController is still visible and it is responsible for dismissing the view controller. For the possible values of the `result` parameter, see [`SLComposeViewControllerResult`](./slcomposeviewcontrollerresult.md). Use the [`completionHandler`](./slcomposeviewcontroller/completionhandler.md) property to set this handler.
 
 ## See Also
 
-- [var completionHandler: SLComposeViewControllerCompletionHandler!](slcomposeviewcontroller/completionhandler.md)
+### Processing the Results
+- [var completionHandler: SLComposeViewControllerCompletionHandler!](./slcomposeviewcontroller/completionhandler.md)
   The handler to call when the user is done composing a post.
-- [enum SLComposeViewControllerResult](slcomposeviewcontrollerresult.md)
-  Possible values for the `result` parameter of the [`completionHandler`](slcomposeviewcontroller/completionhandler.md) property.
+- [enum SLComposeViewControllerResult](./slcomposeviewcontrollerresult.md)
+  Possible values for the `result` parameter of the [`completionHandler`](./slcomposeviewcontroller/completionhandler.md) property.
 
 
 ---

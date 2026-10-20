@@ -1,7 +1,8 @@
 # VTTemporalNoiseFilterConfiguration
 
 **Framework**: Video Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration object to initiate a frame processor and use temporal noise-filter processor.
 
@@ -17,48 +18,53 @@ A configuration object to initiate a frame processor and use temporal noise-filt
 class VTTemporalNoiseFilterConfiguration
 ```
 
+```objc
+@interface VTTemporalNoiseFilterConfiguration : NSObject
+```
+
 #### Overview
 
-The class properties of `VTTemporalNoiseFilterConfiguration` help to identify the capabilities of temporal noise filter processor on the current platform, prior to initiating a session. You can confirm the availability of temporal noise-filter processor in the current platform by checking the [`isSupported`](vttemporalnoisefilterconfiguration/issupported.md) class property. Verify the processor’s capability to process source frames by ensuring that the dimensions are no less than [`minimumDimensions`](vttemporalnoisefilterconfiguration/minimumdimensions.md) and no greater than [`maximumDimensions`](vttemporalnoisefilterconfiguration/maximumdimensions.md). Use the instance properties such as [`frameSupportedPixelFormats`](vttemporalnoisefilterconfiguration/framesupportedpixelformats.md), [`sourcePixelBufferAttributes`](vttemporalnoisefilterconfiguration/sourcepixelbufferattributes.md), and [`destinationPixelBufferAttributes`](vttemporalnoisefilterconfiguration/destinationpixelbufferattributes.md) to ensure that the input and output pixel buffer formats and attributes of the processor align with the client’s specific requirements. The properties [`previousFrameCount`](vttemporalnoisefilterconfiguration/previousframecount.md) and [`nextFrameCount`](vttemporalnoisefilterconfiguration/nextframecount.md) represent the maximum number of preceding and subsequent reference frames, used in the processing of a source frame, to achieve optimum noise-reduction quality.
+The class properties of `VTTemporalNoiseFilterConfiguration` help to identify the capabilities of temporal noise filter processor on the current platform, prior to initiating a session. You can confirm the availability of temporal noise-filter processor in the current platform by checking the [`isSupported`](./vttemporalnoisefilterconfiguration/issupported.md) class property. Verify the processor’s capability to process source frames by ensuring that the dimensions are no less than [`minimumDimensions`](./vttemporalnoisefilterconfiguration/minimumdimensions.md) and no greater than [`maximumDimensions`](./vttemporalnoisefilterconfiguration/maximumdimensions.md). Use the instance properties such as [`frameSupportedPixelFormats`](./vttemporalnoisefilterconfiguration/framesupportedpixelformats.md), [`sourcePixelBufferAttributes`](./vttemporalnoisefilterconfiguration/sourcepixelbufferattributes.md), and [`destinationPixelBufferAttributes`](./vttemporalnoisefilterconfiguration/destinationpixelbufferattributes.md) to ensure that the input and output pixel buffer formats and attributes of the processor align with the client’s specific requirements. The properties [`previousFrameCount`](./vttemporalnoisefilterconfiguration/previousframecount.md) and [`nextFrameCount`](./vttemporalnoisefilterconfiguration/nextframecount.md) represent the maximum number of preceding and subsequent reference frames, used in the processing of a source frame, to achieve optimum noise-reduction quality.
 
 ## Topics
 
 ### Creating a temporal noise filter configuration
-- [init?(frameWidth: Int, frameHeight: Int, sourcePixelFormat: OSType)](vttemporalnoisefilterconfiguration/init(framewidth:frameheight:sourcepixelformat:).md)
+- [init?(frameWidth: Int, frameHeight: Int, sourcePixelFormat: OSType)](./vttemporalnoisefilterconfiguration/init%28framewidth,frameheight,sourcepixelformat%29.md)
   Creates a new temporal noise-processor configuration.
 ### Determining processor availability
-- [class var isSupported: Bool](vttemporalnoisefilterconfiguration/issupported.md)
+- [class var isSupported: Bool](./vttemporalnoisefilterconfiguration/issupported.md)
   Reports whether the system supports this processor.
 ### Inspecting the configuration
-- [var frameWidth: Int](vttemporalnoisefilterconfiguration/framewidth.md)
+- [var frameWidth: Int](./vttemporalnoisefilterconfiguration/framewidth.md)
   Width of source frame in pixels.
-- [var frameHeight: Int](vttemporalnoisefilterconfiguration/frameheight.md)
+- [var frameHeight: Int](./vttemporalnoisefilterconfiguration/frameheight.md)
   Height of source frame in pixels.
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vttemporalnoisefilterconfiguration/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./vttemporalnoisefilterconfiguration/sourcepixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent source frames and reference frames.
-- [var destinationPixelBufferAttributes: [String : any Sendable]](vttemporalnoisefilterconfiguration/destinationpixelbufferattributes.md)
+- [var destinationPixelBufferAttributes: [String : any Sendable]](./vttemporalnoisefilterconfiguration/destinationpixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
-- [var supportedPixelFormats: [OSType]](vttemporalnoisefilterconfiguration/supportedpixelformats.md)
-- [class var supportedSourcePixelFormats: [OSType]](vttemporalnoisefilterconfiguration/supportedsourcepixelformats-4ipcg.md)
+- [var supportedPixelFormats: [OSType]](./vttemporalnoisefilterconfiguration/supportedpixelformats.md)
+- [class var supportedSourcePixelFormats: [OSType]](./vttemporalnoisefilterconfiguration/supportedsourcepixelformats-4ipcg.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VTFrameProcessorConfiguration](vtframeprocessorconfiguration.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VTFrameProcessorConfiguration](./vtframeprocessorconfiguration.md)
 
 ## See Also
 
-- [class VTTemporalNoiseFilterParameters](vttemporalnoisefilterparameters.md)
+### Temporal noise filter
+- [class VTTemporalNoiseFilterParameters](./vttemporalnoisefilterparameters.md)
   Encapsulates the frame-level parameters necessary for processing a source frame using temporal noise-filter processor.
 
 

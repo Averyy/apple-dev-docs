@@ -1,7 +1,8 @@
 # apply(content:phase:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -21,7 +22,8 @@ func apply<V>(content: V, phase: TransitionPhase) -> some View where V : View
 
 ## See Also
 
-- [func combined<T>(with: T) -> some Transition](transition/combined(with:).md)
+### Using a transition
+- [func combined<T>(with: T) -> some Transition](./combined%28with%29.md)
 
 
 ---

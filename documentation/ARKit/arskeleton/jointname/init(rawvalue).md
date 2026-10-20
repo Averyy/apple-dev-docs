@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new joint name.
 
@@ -17,9 +18,10 @@ init(rawValue: String)
 
 ## See Also
 
-- [init?(VNRecognizedPointKey)](arskeleton/jointname/init(_:).md)
+### Creating a Joint Name
+- [init?(VNRecognizedPointKey)](./init%28_%29.md)
   Returns a joint name that corresponds to a key point defined in a human body pose.
-- [struct VNRecognizedPointKey](../vision/vnrecognizedpointkey.md)
+- [struct VNRecognizedPointKey](../../../Vision/vnrecognizedpointkey.md)
   The data type for all recognized point keys.
 
 

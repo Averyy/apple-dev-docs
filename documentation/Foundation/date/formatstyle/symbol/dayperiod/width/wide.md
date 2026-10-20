@@ -1,7 +1,8 @@
 # Date.FormatStyle.Symbol.DayPeriod.Width.wide
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A full day period width representation.
 
@@ -22,9 +23,10 @@ case wide
 
 ## See Also
 
-- [Date.FormatStyle.Symbol.DayPeriod.Width.abbreviated](date/formatstyle/symbol/dayperiod/width/abbreviated.md)
+### Modifying a Day Period Width
+- [Date.FormatStyle.Symbol.DayPeriod.Width.abbreviated](./abbreviated.md)
   A shortened day period width representation.
-- [Date.FormatStyle.Symbol.DayPeriod.Width.narrow](date/formatstyle/symbol/dayperiod/width/narrow.md)
+- [Date.FormatStyle.Symbol.DayPeriod.Width.narrow](./narrow.md)
   The shortest day period width representation.
 
 

@@ -1,17 +1,22 @@
 # select(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Selects the specified menu item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func select(_ item: NSMenuItem?)
+```
+
+```objc
+- (void) selectItem:(NSMenuItem *) item;
 ```
 
 ## Parameters
@@ -20,11 +25,12 @@ func select(_ item: NSMenuItem?)
 
 ## See Also
 
-- [func selectItem(at: Int)](nspopupbutton/selectitem(at:).md)
+### Setting the current selection
+- [func selectItem(at: Int)](./selectitem%28at%29.md)
   Selects the item in the menu at the specified index.
-- [func selectItem(withTag: Int) -> Bool](nspopupbutton/selectitem(withtag:).md)
+- [func selectItem(withTag: Int) -> Bool](./selectitem%28withtag%29.md)
   Selects the menu item with the specified tag.
-- [func selectItem(withTitle: String)](nspopupbutton/selectitem(withtitle:).md)
+- [func selectItem(withTitle: String)](./selectitem%28withtitle%29.md)
   Selects the item with the specified title.
 
 

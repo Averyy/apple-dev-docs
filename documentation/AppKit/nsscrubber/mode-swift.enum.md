@@ -1,7 +1,8 @@
 # NSScrubber.Mode
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The scrolling behavior for a scrubber.
 
@@ -14,42 +15,47 @@ The scrolling behavior for a scrubber.
 enum Mode
 ```
 
+```c
+enum NSScrubberMode : NSInteger;
+```
+
 #### Overview
 
-Scrolling is either *fixed* or *free*. For details on how to choose the correct scrolling mode for your app, see [`Choose a scrubber touch-interaction model`](nsscrubber#Choose-a-scrubber-touch-interaction-model.md).
+Scrolling is either *fixed* or *free*. For details on how to choose the correct scrolling mode for your app, see [Choose a scrubber touch-interaction model](../nsscrubber.md#Choose-a-scrubber-touch-interaction-model).
 
 ## Topics
 
 ### Constants
-- [NSScrubber.Mode.fixed](nsscrubber/mode-swift.enum/fixed.md)
+- [NSScrubber.Mode.fixed](./mode-swift.enum/fixed.md)
   A scrolling mode in which scrubber items remain fixed in place, and the item under the user’s finger is highlighted.
-- [NSScrubber.Mode.free](nsscrubber/mode-swift.enum/free.md)
+- [NSScrubber.Mode.free](./mode-swift.enum/free.md)
   A scrolling mode in which the scrubber scrolls as the user swipes horizontally across the scrubber.
 ### Initializers
-- [init?(rawValue: Int)](nsscrubber/mode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var scrubberLayout: NSScrubberLayout](nsscrubber/scrubberlayout.md)
+### Changing the layout
+- [var scrubberLayout: NSScrubberLayout](./scrubberlayout.md)
   An object used to describe the layout of items within the scrubber.
-- [var mode: NSScrubber.Mode](nsscrubber/mode-swift.property.md)
+- [var mode: NSScrubber.Mode](./mode-swift.property.md)
   A setting that determines whether interaction with the scrubber is fixed or free.
-- [var itemAlignment: NSScrubber.Alignment](nsscrubber/itemalignment.md)
+- [var itemAlignment: NSScrubber.Alignment](./itemalignment.md)
   A setting that specifies the snapping behavior of items in the scrubber.
-- [NSScrubber.Alignment](nsscrubber/alignment.md)
+- [NSScrubber.Alignment](./alignment.md)
   The specified preferred alignment of items within the scrubber, when they come to rest following a user’s scrolling or paging interaction.
-- [var isContinuous: Bool](nsscrubber/iscontinuous.md)
-  A Boolean value that, together with the [`mode`](nsscrubber/mode-swift.property.md) property, determines scrubber interaction style.
+- [var isContinuous: Bool](./iscontinuous.md)
+  A Boolean value that, together with the [`mode`](./mode-swift.property.md) property, determines scrubber interaction style.
 
 
 ---

@@ -1,7 +1,8 @@
 # errSecCallbackFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A callback failed.
 
@@ -18,6 +19,10 @@ A callback failed.
 
 ```swift
 var errSecCallbackFailed: OSStatus { get }
+```
+
+```c
+errSecCallbackFailed
 ```
 
 

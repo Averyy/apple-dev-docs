@@ -1,7 +1,8 @@
 # ImagePlaygroundOptions.CreationStrategy.editExisting
 
 **Framework**: Image Playground  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to create an image that more closely resembles the original image, but also has the modifications you specify.
 
@@ -20,7 +21,7 @@ case editExisting
 
 #### Discussion
 
-This option modifies the image using the prompts you specify, but otherwise tries to preserve as much of the original image as possible. If the system is unable to apply the prompts to the image in a suitable way, it falls back to using the [`ImagePlaygroundOptions.CreationStrategy.generateNew`](imageplaygroundoptions/creationstrategy-swift.enum/generatenew.md) option.
+This option modifies the image using the prompts you specify, but otherwise tries to preserve as much of the original image as possible. If the system is unable to apply the prompts to the image in a suitable way, it falls back to using the [`ImagePlaygroundOptions.CreationStrategy.generateNew`](./generatenew.md) option.
 
 
 ---

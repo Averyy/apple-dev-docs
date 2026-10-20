@@ -1,7 +1,8 @@
 # bottom
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,12 +21,13 @@ static let bottom: Edge.Set
 
 ## See Also
 
-- [static let all: Edge.Set](edge/set/all.md)
-- [static let top: Edge.Set](edge/set/top.md)
-- [static let leading: Edge.Set](edge/set/leading.md)
-- [static let trailing: Edge.Set](edge/set/trailing.md)
-- [static let horizontal: Edge.Set](edge/set/horizontal.md)
-- [static let vertical: Edge.Set](edge/set/vertical.md)
+### Getting edge sets
+- [static let all: Edge.Set](./all.md)
+- [static let top: Edge.Set](./top.md)
+- [static let leading: Edge.Set](./leading.md)
+- [static let trailing: Edge.Set](./trailing.md)
+- [static let horizontal: Edge.Set](./horizontal.md)
+- [static let vertical: Edge.Set](./vertical.md)
 
 
 ---

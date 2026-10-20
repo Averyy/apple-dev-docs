@@ -1,7 +1,8 @@
 # maximumDrawableCount
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of Metal drawables in the resource pool managed by Core Animation.
 
@@ -19,6 +20,10 @@ The number of Metal drawables in the resource pool managed by Core Animation.
 var maximumDrawableCount: Int { get set }
 ```
 
+```objc
+@property NSUInteger maximumDrawableCount;
+```
+
 #### Discussion
 
 You can set this value to `2` or `3` only; if you pass a different value, Core Animation ignores the value and throws an exception.
@@ -27,9 +32,10 @@ The default value is `3`.
 
 ## See Also
 
-- [func nextDrawable() -> (any CAMetalDrawable)?](cametallayer/nextdrawable.md)
+### Obtaining a Metal Drawable
+- [func nextDrawable() -> (any CAMetalDrawable)?](./nextdrawable%28%29.md)
   Waits until a Metal drawable is available, and then returns it.
-- [var allowsNextDrawableTimeout: Bool](cametallayer/allowsnextdrawabletimeout.md)
+- [var allowsNextDrawableTimeout: Bool](./allowsnextdrawabletimeout.md)
   A Boolean value that determines whether requests for a new buffer expire if the system can’t satisfy them.
 
 

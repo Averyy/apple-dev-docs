@@ -1,7 +1,8 @@
 # present(completion:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the payment sheet modally over your app.
 
@@ -16,7 +17,15 @@ Presents the payment sheet modally over your app.
 ## Declaration
 
 ```swift
+func present(completion: (@Sendable (Bool) -> Void)? = nil)
+```
+
+```swift
 func present() async -> Bool
+```
+
+```objc
+- (void) presentWithCompletion:(void (^)(BOOL success)) completion;
 ```
 
 #### Discussion
@@ -25,15 +34,18 @@ You are responsible for dismissing the payment sheet.
 
 ## Parameters
 
-- `completion`: A block that is called after the sheet is presented. This block is passed the following parameters: - **success**: A Boolean value that indicates whether the payment sheet was successfully presented. [`true`](https://developer.apple.com/documentation/swift/true) if the payment sheet was presented successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+- `completion`: A block that is called after the sheet is presented. This block is passed the following parameters:
+
+  - **success**: A Boolean value that indicates whether the payment sheet was successfully presented. [`true`](../../Swift/true.md) if the payment sheet was presented successfully; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var delegate: (any PKPaymentAuthorizationControllerDelegate)?](pkpaymentauthorizationcontroller/delegate.md)
+### Handling user interactions
+- [var delegate: (any PKPaymentAuthorizationControllerDelegate)?](./delegate.md)
   The controller’s delegate.
-- [protocol PKPaymentAuthorizationControllerDelegate](pkpaymentauthorizationcontrollerdelegate.md)
+- [protocol PKPaymentAuthorizationControllerDelegate](../pkpaymentauthorizationcontrollerdelegate.md)
   Methods that let you respond to user interactions with your payment authorization controller.
-- [func dismiss(completion: (() -> Void)?)](pkpaymentauthorizationcontroller/dismiss(completion:).md)
+- [func dismiss(completion: (() -> Void)?)](./dismiss%28completion%29.md)
   Dismisses the payment sheet.
 
 

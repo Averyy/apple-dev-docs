@@ -1,7 +1,8 @@
 # CMFormatDescription.ParameterSetCollection
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Collection of parameter sets in a video format description.
 
@@ -23,28 +24,29 @@ struct ParameterSetCollection
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../Swift/bidirectionalcollection.md)
+- [Collection](../../Swift/collection.md)
+- [RandomAccessCollection](../../Swift/randomaccesscollection.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [static var extensionKeysCommonWithImageBuffers: [CMFormatDescription.Extensions.Key]](cmformatdescription/extensionkeyscommonwithimagebuffers.md)
+### Constants
+- [static var extensionKeysCommonWithImageBuffers: [CMFormatDescription.Extensions.Key]](./extensionkeyscommonwithimagebuffers.md)
   A constant that represents keys you use with video format description extensions and image buffers.
-- [static var typeID: CFTypeID](cmformatdescription/typeid.md)
+- [static var typeID: CFTypeID](./typeid.md)
   A type identifier that corresponds to a description object.
-- [CMFormatDescription.MediaType](cmformatdescription/mediatype-swift.struct.md)
+- [CMFormatDescription.MediaType](./mediatype-swift.struct.md)
   A type that describes format description media.
-- [CMFormatDescription.MediaSubType](cmformatdescription/mediasubtype-swift.struct.md)
+- [CMFormatDescription.MediaSubType](./mediasubtype-swift.struct.md)
   A type that describes format description media subtypes.
-- [CMFormatDescription.TimeCode](cmformatdescription/timecode.md)
+- [CMFormatDescription.TimeCode](./timecode.md)
   A type that describes format description time codes.
-- [CMFormatDescription.EqualityMask](cmformatdescription/equalitymask.md)
+- [CMFormatDescription.EqualityMask](./equalitymask.md)
   A type that describes format description equality masks.
-- [CMFormatDescription.Extensions](cmformatdescription/extensions-swift.struct.md)
+- [CMFormatDescription.Extensions](./extensions-swift.struct.md)
   A type that describes format description extensions.
 
 

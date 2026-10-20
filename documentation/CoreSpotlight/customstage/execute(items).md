@@ -2,6 +2,7 @@
 
 **Framework**: Core Spotlight  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Generates output data from an array of searchable items from the app’s Spotlight index.
@@ -22,7 +23,7 @@ nonisolated
 
 #### Return Value
 
-A pipeline data structure with data your stage produced. Make sure the output you return matches the output you specified in the [`outputType`](customstage/outputtype.md) property.
+A pipeline data structure with data your stage produced. Make sure the output you return matches the output you specified in the [`outputType`](./outputtype.md) property.
 
 #### Discussion
 
@@ -30,19 +31,26 @@ If your stage supports searchable items as input, implement this method and use 
 
 ## Parameters
 
-- `items`: A set of [`CSSearchableItem`](cssearchableitem.md) types.
+- `items`: A set of [`CSSearchableItem`](../cssearchableitem.md) types.
+
+## Default Implementations
+
+### CustomStage Implementations
+- [func execute(items: [SearchableItem]) async throws -> SearchPipelineData](./execute%28items%29-2t5wu.md)
+  Generates output data from an array of searchable items from the app’s Spotlight index.
 
 ## See Also
 
-- [func execute(scoredItems: [ScoredSearchableItem]) async throws -> SearchPipelineData](customstage/execute(scoreditems:).md)
+### Performing the stage behavior
+- [func execute(scoredItems: [ScoredSearchableItem]) async throws -> SearchPipelineData](./execute%28scoreditems%29.md)
   Generates output data from an array of scored searchable items.
-- [func execute(text: String) async throws -> SearchPipelineData](customstage/execute(text:).md)
+- [func execute(text: String) async throws -> SearchPipelineData](./execute%28text%29.md)
   Generates output data from the specified input string.
-- [func execute(count: Int) async throws -> SearchPipelineData](customstage/execute(count:).md)
+- [func execute(count: Int) async throws -> SearchPipelineData](./execute%28count%29.md)
   Generates output data from the specified count value.
-- [func execute(groupedItems: [SearchableItemAttribute : [SearchableItem]]) async throws -> SearchPipelineData](customstage/execute(groupeditems:).md)
+- [func execute(groupedItems: [SearchableItemAttribute : [SearchableItem]]) async throws -> SearchPipelineData](./execute%28groupeditems%29.md)
   Generates output data from the specified dictionary of attributes and searchable items.
-- [func execute(table: SearchResultsTable) async throws -> SearchPipelineData](customstage/execute(table:).md)
+- [func execute(table: SearchResultsTable) async throws -> SearchPipelineData](./execute%28table%29.md)
   Generates output data from the specified tabular data.
 
 

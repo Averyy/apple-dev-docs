@@ -1,7 +1,8 @@
 # timecodeAlignmentOffset
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time offset, in seconds, applied to the generated timecode.
 
@@ -18,17 +19,22 @@ The time offset, in seconds, applied to the generated timecode.
 var timecodeAlignmentOffset: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic) NSTimeInterval timecodeAlignmentOffset;
+```
+
 #### Discussion
 
 This offset allows fine-tuning of time alignment for synchronization with external sources or to accommodate any intentional delay. The default value is 0 seconds.
 
 ## See Also
 
-- [var synchronizationTimeout: TimeInterval](avcapturetimecodegenerator/synchronizationtimeout.md)
+### Configuring the generator
+- [var synchronizationTimeout: TimeInterval](./synchronizationtimeout.md)
   The maximum time interval allowed for source synchronization attempts before timing out.
-- [var timecodeFrameDuration: CMTime](avcapturetimecodegenerator/timecodeframeduration.md)
+- [var timecodeFrameDuration: CMTime](./timecodeframeduration.md)
   The frame duration that the generator will use to generate timecodes.
-- [func setDelegate((any AVCaptureTimecodeGeneratorDelegate)?, queue: dispatch_queue_t?)](avcapturetimecodegenerator/setdelegate(_:queue:).md)
+- [func setDelegate((any AVCaptureTimecodeGeneratorDelegate)?, queue: dispatch_queue_t?)](./setdelegate%28_,queue%29.md)
   Assigns a delegate to receive real-time timecode updates and specifies a queue for callbacks.
 
 

@@ -1,7 +1,8 @@
 # boundingBox
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A 3D bounding box that encloses the die.
 
@@ -20,7 +21,8 @@ This bounding box is object oriented, so remains the same regardless of the equi
 
 ## See Also
 
-- [var pose: TableVisualState.Pose2D](diestate/pose.md)
+### Rendering the equipment
+- [var pose: TableVisualState.Pose2D](./pose.md)
   The 2D position and rotation of the equipment relative to the equipment parent, or table.
 
 

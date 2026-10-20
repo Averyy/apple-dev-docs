@@ -1,7 +1,8 @@
 # init(control:data0:data1:)
 
 **Framework**: IOUSBHost  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -15,7 +16,8 @@ init(control: UInt32, data0: UInt32, data1: UInt64)
 
 ## See Also
 
-- [init()](iousbhostcimessage/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

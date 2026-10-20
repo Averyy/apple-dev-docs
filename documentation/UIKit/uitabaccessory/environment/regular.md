@@ -1,7 +1,8 @@
 # UITabAccessory.Environment.regular
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The environment for when the accessory is laid out either:
 
@@ -14,6 +15,10 @@ The environment for when the accessory is laid out either:
 
 ```swift
 case regular
+```
+
+```c
+UITabAccessoryEnvironmentRegular
 ```
 
 #### Discussion

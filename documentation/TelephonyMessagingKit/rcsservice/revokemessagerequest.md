@@ -1,7 +1,8 @@
 # RCSService.RevokeMessageRequest
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that respresents a request to revoke a previously sent message.
 
@@ -17,24 +18,25 @@ struct RevokeMessageRequest
 ## Topics
 
 ### Creating a revoke request
-- [init(cellularServiceID: CellularServiceID, handle: RCSHandle, messageID: RCSMessageID)](rcsservice/revokemessagerequest/init(cellularserviceid:handle:messageid:).md)
+- [init(cellularServiceID: CellularServiceID, handle: RCSHandle, messageID: RCSMessageID)](./revokemessagerequest/init%28cellularserviceid,handle,messageid%29.md)
 ### Accessing request properties
-- [var cellularServiceID: CellularServiceID](rcsservice/revokemessagerequest/cellularserviceid.md)
+- [var cellularServiceID: CellularServiceID](./revokemessagerequest/cellularserviceid.md)
   The service identifier to use for this request.
-- [var handle: RCSHandle](rcsservice/revokemessagerequest/handle.md)
+- [var handle: RCSHandle](./revokemessagerequest/handle.md)
   A handle associated with the message to revoke.
-- [var messageID: RCSMessageID](rcsservice/revokemessagerequest/messageid.md)
+- [var messageID: RCSMessageID](./revokemessagerequest/messageid.md)
   The message identifier to revoke.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func revokeMessage(RCSService.RevokeMessageRequest) async throws -> Bool](rcsservice/revokemessage(_:).md)
+### Revoking messages
+- [func revokeMessage(RCSService.RevokeMessageRequest) async throws -> Bool](./revokemessage%28_%29.md)
   Requests revocation of an RCS message.
 
 

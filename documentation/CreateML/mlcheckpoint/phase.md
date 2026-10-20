@@ -1,7 +1,8 @@
 # phase
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The training session’s phase when it created the checkpoint.
 
@@ -21,11 +22,12 @@ var phase: MLPhase
 
 ## See Also
 
-- [var iteration: Int](mlcheckpoint/iteration.md)
+### Inspecting a checkpoint
+- [var iteration: Int](./iteration.md)
   The iteration number of a training session’s phase when it created the checkpoint.
-- [var date: Date](mlcheckpoint/date.md)
+- [var date: Date](./date.md)
   The time when the training session created the checkpoint.
-- [var url: URL](mlcheckpoint/url.md)
+- [var url: URL](./url.md)
   The location of the checkpoint in the file system.
 
 

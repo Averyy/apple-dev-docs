@@ -1,7 +1,8 @@
 # useFastSameViewOperations
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the text view can use fast inline dropping when the source and destination are in the same text view.
 
@@ -17,23 +18,28 @@ A Boolean value that determines whether the text view can use fast inline droppi
 var useFastSameViewOperations: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL useFastSameViewOperations;
+```
+
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), the drag item data isn’t used. Instead, the drop operation moves or copies the text from its original position to the dropped position within the text view. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If this property is [`true`](../../Swift/true.md), the drag item data isn’t used. Instead, the drop operation moves or copies the text from its original position to the dropped position within the text view. The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var dropAction: UITextDropProposal.Action](uitextdropproposal/dropaction.md)
+### Configuring a text drop proposal
+- [var dropAction: UITextDropProposal.Action](./dropaction.md)
   A text drop action style that specifies how the text view receives dropped items.
-- [UITextDropProposal.Action](uitextdropproposal/action.md)
+- [UITextDropProposal.Action](./action.md)
   The text drop action styles for text views.
-- [var dropPerformer: UITextDropProposal.Performer](uitextdropproposal/dropperformer.md)
+- [var dropPerformer: UITextDropProposal.Performer](./dropperformer.md)
   The performer that is responsible for handling the drop operation.
-- [UITextDropProposal.Performer](uitextdropproposal/performer.md)
+- [UITextDropProposal.Performer](./performer.md)
   The performers that are responsible for handling the drop operation.
-- [var dropProgressMode: UITextDropProposal.ProgressMode](uitextdropproposal/dropprogressmode.md)
+- [var dropProgressMode: UITextDropProposal.ProgressMode](./dropprogressmode.md)
   A mode that specifies how the text view indicates progress to the user when loading dropped items.
-- [UITextDropProposal.ProgressMode](uitextdropproposal/progressmode.md)
+- [UITextDropProposal.ProgressMode](./progressmode.md)
   The text drop progress styles for user-visible progress indication.
 
 

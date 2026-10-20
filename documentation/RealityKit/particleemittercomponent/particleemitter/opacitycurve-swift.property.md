@@ -1,7 +1,8 @@
 # opacityCurve
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The curve of opacity change over the lifetime of the particle. Defaults to `quickFadeInOut`.
 

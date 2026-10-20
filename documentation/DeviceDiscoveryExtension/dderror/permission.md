@@ -1,7 +1,8 @@
 # permission
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error that indicates the app extension lacks necessary permissions.
 
@@ -9,7 +10,7 @@ An error that indicates the app extension lacks necessary permissions.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,23 +21,24 @@ static var permission: DDError.Code { get }
 
 ## See Also
 
-- [DDError.Code](dderror/code.md)
+### Identifying an error cause
+- [DDError.Code](./code.md)
   Codes that identify errors that can occur during the framework’s use.
-- [static var success: DDError.Code](dderror/success.md)
+- [static var success: DDError.Code](./success.md)
   An error that indicates an operation succeeds.
-- [static var unknown: DDError.Code](dderror/unknown.md)
+- [static var unknown: DDError.Code](./unknown.md)
   An error that indicates an uncategorized problem.
-- [static var badParameter: DDError.Code](dderror/badparameter.md)
+- [static var badParameter: DDError.Code](./badparameter.md)
   An error that indicates the framework doesn’t support a parameter that the extension provides.
-- [static var unsupported: DDError.Code](dderror/unsupported.md)
+- [static var unsupported: DDError.Code](./unsupported.md)
   An error that indicates an unsupported configuration.
-- [static var timeout: DDError.Code](dderror/timeout.md)
+- [static var timeout: DDError.Code](./timeout.md)
   An error that indicates a timeout occurs.
-- [static var `internal`: DDError.Code](dderror/internal.md)
+- [static var `internal`: DDError.Code](./internal.md)
   An error that indicates a problem of internal origin.
-- [static var missingEntitlement: DDError.Code](dderror/missingentitlement.md)
+- [static var missingEntitlement: DDError.Code](./missingentitlement.md)
   An error that indicates that the app extension lacks a required entitlement.
-- [static var next: DDError.Code](dderror/next.md)
+- [static var next: DDError.Code](./next.md)
   An error the framework reserves for future use.
 
 

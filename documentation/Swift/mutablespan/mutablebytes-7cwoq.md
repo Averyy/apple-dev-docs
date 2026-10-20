@@ -1,7 +1,8 @@
 # mutableBytes
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Construct a mutable raw span over the memory represented by this span.
 
@@ -19,6 +20,8 @@ Construct a mutable raw span over the memory represented by this span.
 ```swift
 var mutableBytes: MutableRawSpan { mutating get }
 ```
+
+Available when `Element` conforms to `BitwiseCopyable`.
 
 #### Return Value
 

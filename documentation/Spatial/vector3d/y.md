@@ -1,7 +1,8 @@
 # y
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The y-element value.
 
@@ -22,11 +23,12 @@ var y: Double { get set }
 
 ## See Also
 
-- [var x: Double](vector3d/x.md)
+### Inspecting a vector’s properties
+- [var x: Double](./x.md)
   The x-element value.
-- [var z: Double](vector3d/z.md)
+- [var z: Double](./z.md)
   The z-element value.
-- [var vector: simd_double3](vector3d/vector.md)
+- [var vector: simd_double3](./vector.md)
   A simd three-element vector that contains the x-, y-, and z-element values.
 
 

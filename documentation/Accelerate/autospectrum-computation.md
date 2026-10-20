@@ -1,14 +1,16 @@
 # Autospectrum computation
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Compute the element-wise sum of the squares of the real and imaginary parts of a complex vector.
 
 ## See Also
 
-- [Cross-spectrum computation](cross-spectrum-computation.md)
+### Vector-to-vector spectra and coherence computation
+- [Cross-spectrum computation](./cross-spectrum-computation.md)
   Compute the element-wise product of a vector and the conjugate of a second vector.
-- [Coherence function computation](coherence-function-computation.md)
+- [Coherence function computation](./coherence-function-computation.md)
   Compute the coherence of two vectors.
 
 

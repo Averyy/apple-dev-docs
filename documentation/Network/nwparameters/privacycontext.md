@@ -1,7 +1,8 @@
 # NWParameters.PrivacyContext
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines the privacy requirements for a set of connections.
 
@@ -23,35 +24,36 @@ class PrivacyContext
 ## Topics
 
 ### Configuring Custom Privacy Settings
-- [init(description: String)](nwparameters/privacycontext/init(description:).md)
+- [init(description: String)](./privacycontext/init%28description%29.md)
   Initializes a privacy context with a description string.
-- [static let `default`: NWParameters.PrivacyContext](nwparameters/privacycontext/default.md)
+- [static let `default`: NWParameters.PrivacyContext](./privacycontext/default.md)
   The privacy context that applies to all connections that do not use a custom context.
-- [func disableLogging()](nwparameters/privacycontext/disablelogging.md)
+- [func disableLogging()](./privacycontext/disablelogging%28%29.md)
   Disables system logging of connection activity.
-- [func flushCache()](nwparameters/privacycontext/flushcache.md)
+- [func flushCache()](./privacycontext/flushcache%28%29.md)
   Flushes all cached data, such as TLS session state, created by connections associated with the privacy context.
 ### Requiring Encrypted DNS
-- [func requireEncryptedNameResolution(Bool, fallbackResolver: NWParameters.PrivacyContext.ResolverConfiguration?)](nwparameters/privacycontext/requireencryptednameresolution(_:fallbackresolver:).md)
+- [func requireEncryptedNameResolution(Bool, fallbackResolver: NWParameters.PrivacyContext.ResolverConfiguration?)](./privacycontext/requireencryptednameresolution%28_,fallbackresolver%29.md)
   Requires that any DNS name resolution for connections associated with this context use encrypted transports, such as TLS or HTTPS.
-- [NWParameters.PrivacyContext.ResolverConfiguration](nwparameters/privacycontext/resolverconfiguration.md)
+- [NWParameters.PrivacyContext.ResolverConfiguration](./privacycontext/resolverconfiguration.md)
   A DNS server configuration that uses TLS or HTTPS.
 ### Configuring Proxies
-- [var proxyConfigurations: [ProxyConfiguration]](nwparameters/privacycontext/proxyconfigurations.md)
+- [var proxyConfigurations: [ProxyConfiguration]](./privacycontext/proxyconfigurations.md)
   Applies proxy configurations for all connections associated with this context.
-- [struct ProxyConfiguration](proxyconfiguration.md)
+- [struct ProxyConfiguration](../proxyconfiguration.md)
   A proxy configuration for Relays, Oblivious HTTP, HTTP CONNECT, or SOCKSv5.
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setPrivacyContext(NWParameters.PrivacyContext)](nwparameters/setprivacycontext(_:).md)
+### Configuring Privacy Settings
+- [func setPrivacyContext(NWParameters.PrivacyContext)](./setprivacycontext%28_%29.md)
   Associates a privacy context with any connections or listeners that use the parameters.
 
 

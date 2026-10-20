@@ -1,7 +1,8 @@
 # largeSubtitle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 String to be rendered below the large title.
 
@@ -16,16 +17,21 @@ String to be rendered below the large title.
 var largeSubtitle: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * largeSubtitle;
+```
+
 #### Discussion
 
 When `nil`, the navigation bar will fall back to the `subtitle`.
 
 ## See Also
 
-- [var subtitle: String?](uinavigationitem/subtitle.md)
+### Configuring the subtitle
+- [var subtitle: String?](./subtitle.md)
   A string to display as the subtitle in the navigation bar.
-- [var attributedSubtitle: AttributedString?](uinavigationitem/attributedsubtitle-wrjk.md)
-- [var largeAttributedSubtitle: AttributedString?](uinavigationitem/largeattributedsubtitle-4z2gx.md)
+- [var attributedSubtitle: AttributedString?](./attributedsubtitle-wrjk.md)
+- [var largeAttributedSubtitle: AttributedString?](./largeattributedsubtitle-4z2gx.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # moveItem(at:to:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves an item from one location to another in the collection view.
 
@@ -9,7 +10,7 @@ Moves an item from one location to another in the collection view.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,15 @@ Moves an item from one location to another in the collection view.
 func moveItem(at indexPath: IndexPath, to newIndexPath: IndexPath)
 ```
 
+```objc
+- (void) moveItemAtIndexPath:(NSIndexPath *) indexPath toIndexPath:(NSIndexPath *) newIndexPath;
+```
+
 #### Discussion
 
 Use this method to reorganize existing data items. You might do this when you rearrange the items within your data source object or in response to user interactions with the collection view. You can move items between sections or within the same section. The collection view updates the layout as needed to account for the move, animating cells into position as needed.
 
-You can also call this method from a block passed to the [`performBatchUpdates(_:completion:)`](uicollectionview/performbatchupdates(_:completion:).md) method when you want to animate multiple separate changes into place at the same time. See the description of that method for more information.
+You can also call this method from a block passed to the [`performBatchUpdates(_:completion:)`](./performbatchupdates%28_,completion%29.md) method when you want to animate multiple separate changes into place at the same time. See the description of that method for more information.
 
 ## Parameters
 
@@ -31,9 +36,10 @@ You can also call this method from a block passed to the [`performBatchUpdates(_
 
 ## See Also
 
-- [func insertItems(at: [IndexPath])](uicollectionview/insertitems(at:).md)
+### Inserting, moving, and deleting Items
+- [func insertItems(at: [IndexPath])](./insertitems%28at%29.md)
   Inserts new items at the specified index paths.
-- [func deleteItems(at: [IndexPath])](uicollectionview/deleteitems(at:).md)
+- [func deleteItems(at: [IndexPath])](./deleteitems%28at%29.md)
   Deletes the items at the specified index paths.
 
 

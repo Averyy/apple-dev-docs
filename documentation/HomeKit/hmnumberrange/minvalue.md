@@ -1,7 +1,8 @@
 # minValue
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum value of the range.
 
@@ -19,9 +20,14 @@ The minimum value of the range.
 var minValue: NSNumber? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSNumber * minValue;
+```
+
 ## See Also
 
-- [var maxValue: NSNumber?](hmnumberrange/maxvalue.md)
+### Inspecting a number range
+- [var maxValue: NSNumber?](./maxvalue.md)
   The maximum value of the range.
 
 

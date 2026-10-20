@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Downloads the assets required to perform the request, reporting progress through the provided subprogress.
@@ -22,19 +23,26 @@ func downloadAssets(progress: consuming Subprogress) async throws
 
 ## Mentions
 
-- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+- [Isolating an object from a tap, box, or scribble](../segmenting-objects-with-iterative-refinement.md)
 
 #### Discussion
 
-> **Note**: An error if the download fails.
+> **Throws**: An error if the download fails.
 
 ## Parameters
 
 - `progress`: A subprogress to which the download progress is attached.
 
+## Default Implementations
+
+### DownloadableAssetsRequest Implementations
+- [func downloadAssets(progress: consuming Subprogress) async throws](./downloadassets%28progress%29-3mcyi.md)
+  Downloads the assets required to perform the request, reporting progress through the provided subprogress.
+
 ## See Also
 
-- [func downloadAssets() async throws](downloadableassetsrequest/downloadassets.md)
+### Downloading assets
+- [func downloadAssets() async throws](./downloadassets%28%29.md)
   Downloads the assets required to perform the request.
 
 

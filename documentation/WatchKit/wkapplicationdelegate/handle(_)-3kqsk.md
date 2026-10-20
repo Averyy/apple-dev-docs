@@ -1,7 +1,8 @@
 # handle(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Responds to Handoff–related activity from Siri.
 
@@ -14,6 +15,10 @@ Responds to Handoff–related activity from Siri.
 optional func handle(_ userActivity: NSUserActivity)
 ```
 
+```objc
+- (void) handleActivity:(NSUserActivity *) userActivity;
+```
+
 #### Discussion
 
 WatchKit calls this method when it receives data associated with a user activity. Use this method to update your app on Apple Watch so that the user can continue the activity from where they left off.
@@ -24,7 +29,8 @@ WatchKit calls this method when it receives data associated with a user activity
 
 ## See Also
 
-- [func handleUserActivity([AnyHashable : Any]?)](wkapplicationdelegate/handleuseractivity(_:).md)
+### Coordinating Handoff activity
+- [func handleUserActivity([AnyHashable : Any]?)](./handleuseractivity%28_%29.md)
   Responds to Handoff–related activity from complications and notifications.
 
 

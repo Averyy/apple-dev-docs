@@ -1,7 +1,8 @@
 # ILMessageFilterErrorDomain
 
 **Framework**: SMS and Call Reporting  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for errors associated with the IdentityLookup APIs.
 
@@ -17,9 +18,14 @@ The error domain for errors associated with the IdentityLookup APIs.
 let ILMessageFilterErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const ILMessageFilterErrorDomain;
+```
+
 ## See Also
 
-- [struct ILMessageFilterError](ilmessagefiltererror-swift.struct.md)
+### Errors
+- [struct ILMessageFilterError](./ilmessagefiltererror-swift.struct.md)
   An error type that indicates problems with network requests and responses related to IdentityLookup APIs.
 
 

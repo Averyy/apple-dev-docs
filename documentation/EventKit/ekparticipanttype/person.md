@@ -1,17 +1,18 @@
 # EKParticipantType.person
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The participant is a person.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ The participant is a person.
 case person
 ```
 
+```c
+EKParticipantTypePerson
+```
+
 ## See Also
 
-- [EKParticipantType.unknown](ekparticipanttype/unknown.md)
+### Constants
+- [EKParticipantType.unknown](./unknown.md)
   The participant’s type is unknown.
-- [EKParticipantType.room](ekparticipanttype/room.md)
+- [EKParticipantType.room](./room.md)
   The participant is a room.
-- [EKParticipantType.resource](ekparticipanttype/resource.md)
+- [EKParticipantType.resource](./resource.md)
   The participant is a resource.
-- [EKParticipantType.group](ekparticipanttype/group.md)
+- [EKParticipantType.group](./group.md)
   The participant is a group.
 
 

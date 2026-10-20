@@ -1,7 +1,8 @@
 # naturalScale
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -18,14 +19,19 @@
 static var naturalScale: MeasurementFormatter.UnitOptions { get }
 ```
 
+```c
+NSMeasurementFormatterUnitOptionsNaturalScale
+```
+
 #### Discussion
 
 Specifies that representations of measurements are reduced and converted into a more convenient unit, when possible. For example, a quantity of 12000 meters would be represented as `12 kilometers`.
 
 ## See Also
 
-- [static var providedUnit: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/providedunit.md)
-- [static var temperatureWithoutUnit: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/temperaturewithoutunit.md)
+### Working with options
+- [static var providedUnit: MeasurementFormatter.UnitOptions](./providedunit.md)
+- [static var temperatureWithoutUnit: MeasurementFormatter.UnitOptions](./temperaturewithoutunit.md)
 
 
 ---

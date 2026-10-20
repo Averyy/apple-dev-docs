@@ -1,7 +1,8 @@
 # rounded(rule:increment:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the format style to use the specified rounding rule and increment.
 
@@ -26,7 +27,7 @@ An integer format style modified to use the specified rounding rule and incremen
 
 #### Discussion
 
-The following example creates a default [`IntegerFormatStyle`](integerformatstyle.md) for the `en_US` locale, and a modified style that rounds integers to the nearest multiple of `100`. It then formats the value `1999` using these format styles.
+The following example creates a default [`IntegerFormatStyle`](../integerformatstyle.md) for the `en_US` locale, and a modified style that rounds integers to the nearest multiple of `100`. It then formats the value `1999` using these format styles.
 
 ```swift
 let defaultStyle = IntegerFormatStyle<Int>(locale: Locale(identifier: "en_US"))
@@ -44,21 +45,22 @@ let roundedNum = num.formatted(roundedStyle) // "2,000"
 
 ## See Also
 
-- [func decimalSeparator(strategy: IntegerFormatStyle<Value>.Configuration.DecimalSeparatorDisplayStrategy) -> IntegerFormatStyle<Value>](integerformatstyle/decimalseparator(strategy:).md)
+### Customizing style behavior
+- [func decimalSeparator(strategy: IntegerFormatStyle<Value>.Configuration.DecimalSeparatorDisplayStrategy) -> IntegerFormatStyle<Value>](./decimalseparator%28strategy%29.md)
   Modifies the format style to use the specified decimal separator display strategy.
-- [func grouping(IntegerFormatStyle<Value>.Configuration.Grouping) -> IntegerFormatStyle<Value>](integerformatstyle/grouping(_:).md)
+- [func grouping(IntegerFormatStyle<Value>.Configuration.Grouping) -> IntegerFormatStyle<Value>](./grouping%28_%29.md)
   Modifies the format style to use the specified grouping.
-- [func notation(IntegerFormatStyle<Value>.Configuration.Notation) -> IntegerFormatStyle<Value>](integerformatstyle/notation(_:).md)
+- [func notation(IntegerFormatStyle<Value>.Configuration.Notation) -> IntegerFormatStyle<Value>](./notation%28_%29.md)
   Modifies the format style to use the specified notation.
-- [func precision(IntegerFormatStyle<Value>.Configuration.Precision) -> IntegerFormatStyle<Value>](integerformatstyle/precision(_:).md)
+- [func precision(IntegerFormatStyle<Value>.Configuration.Precision) -> IntegerFormatStyle<Value>](./precision%28_%29.md)
   Modifies the format style to use the specified precision.
-- [func scale(Double) -> IntegerFormatStyle<Value>](integerformatstyle/scale(_:).md)
+- [func scale(Double) -> IntegerFormatStyle<Value>](./scale%28_%29.md)
   Modifies the format style to use the specified scale.
-- [func sign(strategy: IntegerFormatStyle<Value>.Configuration.SignDisplayStrategy) -> IntegerFormatStyle<Value>](integerformatstyle/sign(strategy:).md)
+- [func sign(strategy: IntegerFormatStyle<Value>.Configuration.SignDisplayStrategy) -> IntegerFormatStyle<Value>](./sign%28strategy%29.md)
   Modifies the format style to use the specified sign display strategy for displaying or omitting sign symbols.
-- [IntegerFormatStyle.Configuration](integerformatstyle/configuration.md)
+- [IntegerFormatStyle.Configuration](./configuration.md)
   The type the format style uses for configuration settings.
-- [enum NumberFormatStyleConfiguration](numberformatstyleconfiguration.md)
+- [enum NumberFormatStyleConfiguration](../numberformatstyleconfiguration.md)
   Configuration settings for formatting numbers of different types.
 
 

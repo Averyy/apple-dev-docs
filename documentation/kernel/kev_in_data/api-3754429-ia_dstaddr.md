@@ -1,14 +1,15 @@
 # ia_dstaddr
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 struct in_addr ia_dstaddr;
 ```
 

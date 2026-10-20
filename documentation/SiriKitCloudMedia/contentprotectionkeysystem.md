@@ -1,7 +1,8 @@
 # ContentProtectionKeySystem
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The content protection key systems that SiriKit Cloud Media supports.
 
@@ -10,17 +11,22 @@ The content protection key systems that SiriKit Cloud Media supports.
 
 ## Declaration
 
-```swift
+```
 string ContentProtectionKeySystem
 ```
 
+## Possible Values
+
+- `ContentKeySystemFairPlayStreaming`: FairPlay Streaming. For more information, see [FairPlay Streaming](https://developer.apple.com/streaming/fps).
+
 ## See Also
 
-- [Retrieve an Asset’s Content Protection Key](contentprotectionkey.md)
+### Content Protection
+- [Retrieve an Asset’s Content Protection Key](./contentprotectionkey.md)
   Provide the content key for a specific protected asset.
-- [object ContentProtectionKeyRequest](contentprotectionkeyrequest.md)
+- [object ContentProtectionKeyRequest](./contentprotectionkeyrequest.md)
   A request for an item’s content protection key.
-- [object ContentProtectionKeyResponse](contentprotectionkeyresponse.md)
+- [object ContentProtectionKeyResponse](./contentprotectionkeyresponse.md)
   A response to a request for an item’s content protection key.
 
 

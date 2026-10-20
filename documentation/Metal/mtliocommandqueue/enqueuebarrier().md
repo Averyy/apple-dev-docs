@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Appends a barrier that tells the input/output command queue to finish running all in-flight command buffers before running any new command buffers.
@@ -18,6 +19,10 @@ Appends a barrier that tells the input/output command queue to finish running al
 
 ```swift
 func enqueueBarrier()
+```
+
+```objc
+- (void) enqueueBarrier;
 ```
 
 

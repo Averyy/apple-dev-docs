@@ -1,17 +1,18 @@
 # HKStatisticsQuery
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A query that performs statistical calculations over a set of matching quantity samples, and returns the results.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,14 +20,18 @@ A query that performs statistical calculations over a set of matching quantity s
 class HKStatisticsQuery
 ```
 
+```objc
+@interface HKStatisticsQuery : HKQuery
+```
+
 ## Mentions
 
-- [Accessing condensed workout samples](accessing-condensed-workout-samples.md)
-- [Executing Statistics Collection Queries](executing-statistics-collection-queries.md)
+- [Accessing condensed workout samples](./accessing-condensed-workout-samples.md)
+- [Executing Statistics Collection Queries](./executing-statistics-collection-queries.md)
 
 #### Overview
 
-Statistics queries calculate common statistics over the set of matching samples. You can use statistical queries to calculate the minimum, maximum, or average value of a set of discrete quantities, or use them to calculate the sum for cumulative quantities. For the complete list of possible calculations, see [`HKStatisticsOptions`](hkstatisticsoptions.md). For more information about the available quantity types and to learn whether they are discrete or cumulative values, see [`Data types`](data-types.md).
+Statistics queries calculate common statistics over the set of matching samples. You can use statistical queries to calculate the minimum, maximum, or average value of a set of discrete quantities, or use them to calculate the sum for cumulative quantities. For the complete list of possible calculations, see [`HKStatisticsOptions`](./hkstatisticsoptions.md). For more information about the available quantity types and to learn whether they are discrete or cumulative values, see [Data types](./data-types.md).
 
 You can use statistics queries with quantity samples only. If you want to calculate statistics over workouts or correlation samples, you must perform the appropriate query and process the data yourself.
 
@@ -35,42 +40,43 @@ Statistics queries are immutable. Their properties are set when they are first c
 ## Topics
 
 ### Creating Statistics Queries
-- [init(quantityType: HKQuantityType, quantitySamplePredicate: NSPredicate?, options: HKStatisticsOptions, completionHandler: (HKStatisticsQuery, HKStatistics?, (any Error)?) -> Void)](hkstatisticsquery/init(quantitytype:quantitysamplepredicate:options:completionhandler:).md)
+- [init(quantityType: HKQuantityType, quantitySamplePredicate: NSPredicate?, options: HKStatisticsOptions, completionHandler: (HKStatisticsQuery, HKStatistics?, (any Error)?) -> Void)](./hkstatisticsquery/init%28quantitytype,quantitysamplepredicate,options,completionhandler%29.md)
   Initializes a statistics query instance that performs the specified calculations over the matching samples in the HeathKit store.
-- [Executing Statistical Queries](executing-statistical-queries.md)
+- [Executing Statistical Queries](./executing-statistical-queries.md)
   Create and run statistical queries.
 
 ## Relationships
 
 ### Inherits From
-- [HKQuery](hkquery.md)
+- [HKQuery](./hkquery.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Executing Statistical Queries](executing-statistical-queries.md)
+### Statistics
+- [Executing Statistical Queries](./executing-statistical-queries.md)
   Create and run statistical queries.
-- [Executing Statistics Collection Queries](executing-statistics-collection-queries.md)
+- [Executing Statistics Collection Queries](./executing-statistics-collection-queries.md)
   Calculate statistical data for graphs and charts.
-- [struct HKStatisticsQueryDescriptor](hkstatisticsquerydescriptor.md)
+- [struct HKStatisticsQueryDescriptor](./hkstatisticsquerydescriptor.md)
   A query descriptor that calculates the minimum, maximum, average, or sum over a set of samples from the HealthKit store.
-- [struct HKStatisticsCollectionQueryDescriptor](hkstatisticscollectionquerydescriptor.md)
+- [struct HKStatisticsCollectionQueryDescriptor](./hkstatisticscollectionquerydescriptor.md)
   A query descriptor that gathers a collection of statistics calculated over a series of fixed-length time intervals.
-- [class HKStatisticsCollectionQuery](hkstatisticscollectionquery.md)
+- [class HKStatisticsCollectionQuery](./hkstatisticscollectionquery.md)
   A query that performs multiple statistics queries over a series of fixed-length time intervals.
-- [class HKStatistics](hkstatistics.md)
+- [class HKStatistics](./hkstatistics.md)
   An object that represents the result of calculating the minimum, maximum, average, or sum over a set of samples from the HealthKit store.
-- [class HKStatisticsCollection](hkstatisticscollection.md)
+- [class HKStatisticsCollection](./hkstatisticscollection.md)
   An object that manages a collection of statistics, representing the results calculated over separate time intervals.
-- [struct HKStatisticsOptions](hkstatisticsoptions.md)
+- [struct HKStatisticsOptions](./hkstatisticsoptions.md)
   Options for specifying the statistic to calculate.
 
 

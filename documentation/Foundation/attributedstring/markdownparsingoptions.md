@@ -1,7 +1,8 @@
 # AttributedString.MarkdownParsingOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that affect the parsing of Markdown content into an attributed string.
 
@@ -23,33 +24,33 @@ struct MarkdownParsingOptions
 ## Topics
 
 ### Creating Markdown Parsing Options
-- [init(allowsExtendedAttributes: Bool, interpretedSyntax: AttributedString.MarkdownParsingOptions.InterpretedSyntax, failurePolicy: AttributedString.MarkdownParsingOptions.FailurePolicy, languageCode: String?)](attributedstring/markdownparsingoptions/init(allowsextendedattributes:interpretedsyntax:failurepolicy:languagecode:).md)
+- [init(allowsExtendedAttributes: Bool, interpretedSyntax: AttributedString.MarkdownParsingOptions.InterpretedSyntax, failurePolicy: AttributedString.MarkdownParsingOptions.FailurePolicy, languageCode: String?)](./markdownparsingoptions/init%28allowsextendedattributes,interpretedsyntax,failurepolicy,languagecode%29.md)
   Creates a Markdown parsing options instance with the specified values.
-- [init(allowsExtendedAttributes: Bool, interpretedSyntax: AttributedString.MarkdownParsingOptions.InterpretedSyntax, failurePolicy: AttributedString.MarkdownParsingOptions.FailurePolicy, languageCode: String?, appliesSourcePositionAttributes: Bool)](attributedstring/markdownparsingoptions/init(allowsextendedattributes:interpretedsyntax:failurepolicy:languagecode:appliessourcepositionattributes:).md)
+- [init(allowsExtendedAttributes: Bool, interpretedSyntax: AttributedString.MarkdownParsingOptions.InterpretedSyntax, failurePolicy: AttributedString.MarkdownParsingOptions.FailurePolicy, languageCode: String?, appliesSourcePositionAttributes: Bool)](./markdownparsingoptions/init%28allowsextendedattributes,interpretedsyntax,failurepolicy,languagecode,appliessourcepositionattributes%29.md)
   Creates a Markdown parsing options instance with the specified values, optionally marking the source position of attributed text.
 ### Accessing Options
-- [var allowsExtendedAttributes: Bool](attributedstring/markdownparsingoptions/allowsextendedattributes.md)
+- [var allowsExtendedAttributes: Bool](./markdownparsingoptions/allowsextendedattributes.md)
   A Boolean value that indicates whether parsing allows extensions to Markdown that specify extended attributes.
-- [var appliesSourcePositionAttributes: Bool](attributedstring/markdownparsingoptions/appliessourcepositionattributes.md)
+- [var appliesSourcePositionAttributes: Bool](./markdownparsingoptions/appliessourcepositionattributes.md)
   A Boolean value that indicates whether parsing applies attributes that indicate the position of attributed text in the original Markdown string.
-- [var failurePolicy: AttributedString.MarkdownParsingOptions.FailurePolicy](attributedstring/markdownparsingoptions/failurepolicy-swift.property.md)
+- [var failurePolicy: AttributedString.MarkdownParsingOptions.FailurePolicy](./markdownparsingoptions/failurepolicy-swift.property.md)
   The policy for handling a parsing failure.
-- [AttributedString.MarkdownParsingOptions.FailurePolicy](attributedstring/markdownparsingoptions/failurepolicy-swift.enum.md)
+- [AttributedString.MarkdownParsingOptions.FailurePolicy](./markdownparsingoptions/failurepolicy-swift.enum.md)
   A type that represents policies for handling parsing failures.
-- [var interpretedSyntax: AttributedString.MarkdownParsingOptions.InterpretedSyntax](attributedstring/markdownparsingoptions/interpretedsyntax-swift.property.md)
+- [var interpretedSyntax: AttributedString.MarkdownParsingOptions.InterpretedSyntax](./markdownparsingoptions/interpretedsyntax-swift.property.md)
   The syntax for interpreting a Markdown string.
-- [AttributedString.MarkdownParsingOptions.InterpretedSyntax](attributedstring/markdownparsingoptions/interpretedsyntax-swift.enum.md)
+- [AttributedString.MarkdownParsingOptions.InterpretedSyntax](./markdownparsingoptions/interpretedsyntax-swift.enum.md)
   A type that represents the syntax for interpreting a Markdown string.
-- [var languageCode: String?](attributedstring/markdownparsingoptions/languagecode.md)
+- [var languageCode: String?](./markdownparsingoptions/languagecode.md)
   The language code for this document.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

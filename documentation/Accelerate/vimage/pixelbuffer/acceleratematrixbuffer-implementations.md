@@ -1,11 +1,12 @@
 # AccelerateMatrixBuffer Implementations
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func withUnsafeBufferPointer<R>((UnsafeBufferPointer<Format.ComponentType>) throws -> R) rethrows -> R](vimage/pixelbuffer/withunsafebufferpointer(_:).md)
+- [func withUnsafeBufferPointer<R>((UnsafeBufferPointer<Format.ComponentType>) throws -> R) rethrows -> R](./withunsafebufferpointer%28_%29.md)
   Calls the given closure with a pointer to the buffer’s contiguous storage.
 
 

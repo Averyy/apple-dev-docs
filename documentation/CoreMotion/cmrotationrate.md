@@ -1,7 +1,8 @@
 # CMRotationRate
 
 **Framework**: Core Motion  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type of structures representing a measurement of rotation rate.
 
@@ -19,32 +20,37 @@ The type of structures representing a measurement of rotation rate.
 struct CMRotationRate
 ```
 
+```c
+typedef struct { ... } CMRotationRate;
+```
+
 ## Topics
 
 ### Getting the Rotation Rates
-- [var x: Double](cmrotationrate/x.md)
+- [var x: Double](./cmrotationrate/x.md)
   The value for the X-axis.
-- [var y: Double](cmrotationrate/y.md)
+- [var y: Double](./cmrotationrate/y.md)
   The value for the Y-axis.
-- [var z: Double](cmrotationrate/z.md)
+- [var z: Double](./cmrotationrate/z.md)
   The value for the Z-axis.
 ### Initializers
-- [init()](cmrotationrate/init.md)
-- [init(x: Double, y: Double, z: Double)](cmrotationrate/init(x:y:z:).md)
+- [init()](./cmrotationrate/init%28%29.md)
+- [init(x: Double, y: Double, z: Double)](./cmrotationrate/init%28x,y,z%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var rotationRate: CMRotationRate](cmgyrodata/rotationrate.md)
+### Getting the Rotation Rate
+- [var rotationRate: CMRotationRate](./cmgyrodata/rotationrate.md)
   The rotation rate as measured by the device’s gyroscope.
-- [class CMRotationRateData](cmrotationratedata.md)
+- [class CMRotationRateData](./cmrotationratedata.md)
   A data object that contains a single rotation-rate measurement.
-- [class CMRecordedRotationRateData](cmrecordedrotationratedata.md)
+- [class CMRecordedRotationRateData](./cmrecordedrotationratedata.md)
   A data object that contains a single rotation-rate measurement at a specific time.
 
 

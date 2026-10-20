@@ -1,17 +1,24 @@
 # setCurrentTime(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the playback point, measured in seconds, from the beginning of the audio file.
 
 **Availability**:
-- watchOS 3.2+
+- watchOS 3.2+ - Deprecated in 6.0
+
+> **Deprecated**: Use AVFoundation’s AVPlayer and AVQueuePlayer instead
 
 ## Declaration
 
 ```swift
 func setCurrentTime(_ currentTime: TimeInterval)
+```
+
+```objc
+- (void) setCurrentTime:(NSTimeInterval) currentTime;
 ```
 
 #### Discussion
@@ -24,7 +31,8 @@ Use this method to seek a specific point in a sound file or to implement fast-fo
 
 ## See Also
 
-- [var currentTime: TimeInterval](wkaudiofileplayeritem/currenttime.md)
+### Managing the Playback Position
+- [var currentTime: TimeInterval](./currenttime.md)
   The current playback point, measured in seconds, from the beginning of the audio file.
 
 

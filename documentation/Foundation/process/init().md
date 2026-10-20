@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized process object with the environment of the current process.
 
@@ -15,17 +16,22 @@ Returns an initialized process object with the environment of the current proces
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 An initialized process object with the environment of the current process.
 
 #### Discussion
 
-If you need to modify the environment of a process, use alloc and init, and then set up the environment before launching the new process. Otherwise, just use the class method [`run(_:arguments:terminationHandler:)`](process/run(_:arguments:terminationhandler:).md) to create and run the process.
+If you need to modify the environment of a process, use alloc and init, and then set up the environment before launching the new process. Otherwise, just use the class method [`run(_:arguments:terminationHandler:)`](./run%28_,arguments,terminationhandler%29.md) to create and run the process.
 
 ## See Also
 
-- [class func run(URL, arguments: [String], terminationHandler: ((Process) -> Void)?) throws -> Process](process/run(_:arguments:terminationhandler:).md)
+### Creating and initializing a process
+- [class func run(URL, arguments: [String], terminationHandler: ((Process) -> Void)?) throws -> Process](./run%28_,arguments,terminationhandler%29.md)
   Creates and runs a task with a specified executable and arguments.
 
 

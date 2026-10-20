@@ -1,17 +1,22 @@
 # getNumberValue()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 If the data element is represented by a number, it returns the value as an NSNumber.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getNumberValue() -> NSNumber!
+```
+
+```objc
+- (NSNumber *) getNumberValue;
 ```
 
 #### Return Value

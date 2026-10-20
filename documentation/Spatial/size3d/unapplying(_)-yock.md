@@ -1,7 +1,8 @@
 # unapplying(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a size that results from unapplying the specified projective transform.
 
@@ -11,7 +12,7 @@ Returns a size that results from unapplying the specified projective transform.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -30,21 +31,22 @@ The size that results from unapplying the specified projective transform.
 
 ## See Also
 
-- [func applying(Pose3D) -> Size3D](size3d/applying(_:)-85mlm.md)
+### Transforming a 3D size structure
+- [func applying(Pose3D) -> Size3D](./applying%28_%29-85mlm.md)
   Returns a size that results from applying the specified pose.
-- [func applying(ScaledPose3D) -> Size3D](size3d/applying(_:)-7e2pf.md)
+- [func applying(ScaledPose3D) -> Size3D](./applying%28_%29-7e2pf.md)
   Returns a size that’s transformed by the specified scaled pose.
-- [func applying(Pose3D) -> Size3D](size3d/applying(_:)-85mlm.md)
+- [func applying(Pose3D) -> Size3D](./applying%28_%29-85mlm.md)
   Returns a size that results from applying the specified pose.
-- [func unapplying(AffineTransform3D) -> Size3D](size3d/unapplying(_:)-7qam3.md)
+- [func unapplying(AffineTransform3D) -> Size3D](./unapplying%28_%29-7qam3.md)
   Returns a size that results from unapplying the specified affine transform.
-- [func unapplying(Pose3D) -> Size3D](size3d/unapplying(_:)-3ip2e.md)
+- [func unapplying(Pose3D) -> Size3D](./unapplying%28_%29-3ip2e.md)
   Returns a size that results from unapplying the specified pose.
-- [func sheared(AxisWithFactors) -> Size3D](size3d/sheared(_:).md)
+- [func sheared(AxisWithFactors) -> Size3D](./sheared%28_%29.md)
   Returns a size that results from shearing over an axis by shear factors for the other two axes.
-- [func applying(ScaledPose3D) -> Size3D](size3d/applying(_:)-7e2pf.md)
+- [func applying(ScaledPose3D) -> Size3D](./applying%28_%29-7e2pf.md)
   Returns a size that’s transformed by the specified scaled pose.
-- [func unapplying(ScaledPose3D) -> Size3D](size3d/unapplying(_:)-42rsa.md)
+- [func unapplying(ScaledPose3D) -> Size3D](./unapplying%28_%29-42rsa.md)
   Returns a size that’s transformed by the inverse of the specified scaled pose.
 
 

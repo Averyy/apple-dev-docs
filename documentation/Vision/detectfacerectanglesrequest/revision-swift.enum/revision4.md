@@ -1,9 +1,10 @@
 # DetectFaceRectanglesRequest.Revision.revision4
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Compared to `.revision3`, this revision generally provides better precision and recall, and bounding boxes tend to be tighter. This is the default revision on platforms that support it. Specify `.revision3` at instantiation to preserve the previous behavior. Use [`supportedRevisions`](detectfacerectanglesrequest/supportedrevisions.md) to check if this revision is supported on the platform.
+Compared to `.revision3`, this revision generally provides better precision and recall, and bounding boxes tend to be tighter. This is the default revision on platforms that support it. Specify `.revision3` at instantiation to preserve the previous behavior. Use [`supportedRevisions`](../supportedrevisions.md) to check if this revision is supported on the platform.
 
 **Availability**:
 - iOS 27.0+
@@ -21,7 +22,8 @@ case revision4
 
 ## See Also
 
-- [DetectFaceRectanglesRequest.Revision.revision3](detectfacerectanglesrequest/revision-swift.enum/revision3.md)
+### Getting the revision
+- [DetectFaceRectanglesRequest.Revision.revision3](./revision3.md)
   An algorithm or implementation that represents the third revision.
 
 

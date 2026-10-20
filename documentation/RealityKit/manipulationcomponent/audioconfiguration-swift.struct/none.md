@@ -1,7 +1,8 @@
 # none
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system will not apply any sounds.
 

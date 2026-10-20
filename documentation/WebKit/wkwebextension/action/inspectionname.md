@@ -1,7 +1,8 @@
 # inspectionName
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name shown when inspecting the pop-up web view.
 
@@ -16,6 +17,10 @@ The name shown when inspecting the pop-up web view.
 
 ```swift
 var inspectionName: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * inspectionName;
 ```
 
 #### Discussion

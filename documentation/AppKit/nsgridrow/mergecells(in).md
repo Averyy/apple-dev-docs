@@ -1,7 +1,8 @@
 # mergeCells(in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12+
@@ -10,6 +11,10 @@
 
 ```swift
 func mergeCells(in range: NSRange)
+```
+
+```objc
+- (void) mergeCellsInRange:(NSRange) range;
 ```
 
 

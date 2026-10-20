@@ -1,14 +1,15 @@
 # ml_static_mfree
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void ml_static_mfree(vm_offset_t, vm_size_t);
 ```
 

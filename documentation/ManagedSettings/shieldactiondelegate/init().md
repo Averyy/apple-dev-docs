@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Managed Settings  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+

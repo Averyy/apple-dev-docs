@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Assignables  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stable identity of this box.
 
@@ -9,7 +10,7 @@ The stable identity of this box.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

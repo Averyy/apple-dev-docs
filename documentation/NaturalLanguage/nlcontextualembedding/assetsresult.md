@@ -1,7 +1,8 @@
 # NLContextualEmbedding.AssetsResult
 
 **Framework**: Natural Language  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The availability of the contextual embedding model assets.
 
@@ -18,6 +19,10 @@ The availability of the contextual embedding model assets.
 
 ```swift
 enum AssetsResult
+```
+
+```c
+enum NLContextualEmbeddingAssetsResult : NSInteger;
 ```
 
 #### Overview
@@ -37,29 +42,30 @@ if !embeddingModel.hasAvailableAssets {
 ## Topics
 
 ### Getting the result status
-- [NLContextualEmbedding.AssetsResult.available](nlcontextualembedding/assetsresult/available.md)
+- [NLContextualEmbedding.AssetsResult.available](./assetsresult/available.md)
   A result that indicates that the assets are present on-device.
-- [NLContextualEmbedding.AssetsResult.notAvailable](nlcontextualembedding/assetsresult/notavailable.md)
+- [NLContextualEmbedding.AssetsResult.notAvailable](./assetsresult/notavailable.md)
   A result that indicates that the assets aren’t present on-device.
-- [NLContextualEmbedding.AssetsResult.error](nlcontextualembedding/assetsresult/error.md)
+- [NLContextualEmbedding.AssetsResult.error](./assetsresult/error.md)
   A result that indicates the framework encounters an error.
 ### Initializers
-- [init?(rawValue: Int)](nlcontextualembedding/assetsresult/init(rawvalue:).md)
+- [init?(rawValue: Int)](./assetsresult/init%28rawvalue%29.md)
   Creates an embedding key with the given string as its raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func requestAssets(completionHandler: (NLContextualEmbedding.AssetsResult, (any Error)?) -> Void)](nlcontextualembedding/requestassets(completionhandler:).md)
+### Requesting assets
+- [func requestAssets(completionHandler: (NLContextualEmbedding.AssetsResult, (any Error)?) -> Void)](./requestassets%28completionhandler%29.md)
   Requests embedding model assets and downloads them if available.
 
 

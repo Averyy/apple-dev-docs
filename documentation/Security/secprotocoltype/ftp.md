@@ -1,7 +1,8 @@
 # SecProtocolType.FTP
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates FTP.
 
@@ -13,6 +14,10 @@ Indicates FTP.
 
 ```swift
 case FTP
+```
+
+```c
+kSecProtocolTypeFTP
 ```
 
 

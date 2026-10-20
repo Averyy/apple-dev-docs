@@ -1,7 +1,8 @@
 # canContainMovieFragments
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether fragments can extend the movie file.
 
@@ -19,13 +20,18 @@ A Boolean value that indicates whether fragments can extend the movie file.
 var canContainMovieFragments: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL canContainMovieFragments;
+```
+
 #### Discussion
 
 The value of this property is `YES` if an `mvex` box is present in the `moov` box. The `mvex` box is necessary to signal the possible presence of later `moof` boxes.
 
 ## See Also
 
-- [var containsMovieFragments: Bool](avmovie/containsmoviefragments.md)
+### Determining fragment support
+- [var containsMovieFragments: Bool](./containsmoviefragments.md)
   A Boolean value that indicates whether at least one movie fragment extends the movie file.
 
 

@@ -1,7 +1,8 @@
 # clearcoatRoughness
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The degree to which an entity’s clear, shiny coating scatters light to create soft highlights.
 
@@ -40,9 +41,9 @@ TextureResource.load(named: "entity_cc_roughness") {
 }
 ```
 
-With custom materials, RealityKit only renders a clearcoat if [`lightingModel`](custommaterial/lightingmodel-swift.property.md) is [`CustomMaterial.LightingModel.clearcoat`](custommaterial/lightingmodel-swift.enum/clearcoat.md) and the material’s surface shader function calls `params.surface().set_clearcoat()`. To specify [`clearcoatRoughness`](custommaterial/clearcoatroughness-swift.property.md), your surface shader function needs to also call `params.surface().set_clearcoat_roughness()`.
+With custom materials, RealityKit only renders a clearcoat if [`lightingModel`](./lightingmodel-swift.property.md) is [`CustomMaterial.LightingModel.clearcoat`](./lightingmodel-swift.enum/clearcoat.md) and the material’s surface shader function calls `params.surface().set_clearcoat()`. To specify [`clearcoatRoughness`](./clearcoatroughness-swift.property.md), your surface shader function needs to also call `params.surface().set_clearcoat_roughness()`.
 
-The following Metal code demonstrates using [`clearcoat`](custommaterial/clearcoat-swift.property.md) and [`clearcoatRoughness`](custommaterial/clearcoatroughness-swift.property.md) in a surface shader, replicating the behavior of the [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) shader:
+The following Metal code demonstrates using [`clearcoat`](./clearcoat-swift.property.md) and [`clearcoatRoughness`](./clearcoatroughness-swift.property.md) in a surface shader, replicating the behavior of the [`PhysicallyBasedMaterial`](../physicallybasedmaterial.md) shader:
 
 ```cpp
 // Retrieve the clearcoat scale and roughness from the CustomMaterial.
@@ -74,23 +75,24 @@ params.surface().set_clearcoat_roughness(clearcoatRoughness);
 
 ## See Also
 
-- [var baseColor: CustomMaterial.BaseColor](custommaterial/basecolor-swift.property.md)
+### Setting the core properties
+- [var baseColor: CustomMaterial.BaseColor](./basecolor-swift.property.md)
   The color of an entity unmodified by lighting.
-- [var roughness: CustomMaterial.Roughness](custommaterial/roughness-swift.property.md)
+- [var roughness: CustomMaterial.Roughness](./roughness-swift.property.md)
   The amount the surface of the 3D object scatters reflected light.
-- [var metallic: CustomMaterial.Metallic](custommaterial/metallic-swift.property.md)
+- [var metallic: CustomMaterial.Metallic](./metallic-swift.property.md)
   The reflectiveness of an entity.
-- [var normal: CustomMaterial.Normal](custommaterial/normal-swift.property.md)
+- [var normal: CustomMaterial.Normal](./normal-swift.property.md)
   A texture map that stores fine surface details for the entity.
-- [var emissiveColor: CustomMaterial.EmissiveColor](custommaterial/emissivecolor-swift.property.md)
+- [var emissiveColor: CustomMaterial.EmissiveColor](./emissivecolor-swift.property.md)
   The color of light this material emits.
-- [var ambientOcclusion: CustomMaterial.AmbientOcclusion](custommaterial/ambientocclusion-swift.property.md)
+- [var ambientOcclusion: CustomMaterial.AmbientOcclusion](./ambientocclusion-swift.property.md)
   The ambient light exposure for a material.
-- [var specular: CustomMaterial.Specular](custommaterial/specular-swift.property.md)
+- [var specular: CustomMaterial.Specular](./specular-swift.property.md)
   The bright highlights to apply to the entity.
-- [var clearcoat: CustomMaterial.Clearcoat](custommaterial/clearcoat-swift.property.md)
+- [var clearcoat: CustomMaterial.Clearcoat](./clearcoat-swift.property.md)
   The transparent highlights that simulate a clear, shiny coating on an entity.
-- [var clearcoatNormal: CustomMaterial.ClearcoatNormal](custommaterial/clearcoatnormal-swift.property.md)
+- [var clearcoatNormal: CustomMaterial.ClearcoatNormal](./clearcoatnormal-swift.property.md)
   Waviness and imperfections for the top clearcoat.
 
 

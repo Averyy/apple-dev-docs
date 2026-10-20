@@ -1,7 +1,8 @@
 # condense(columnNamed:to:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new data table where duplicate row values in the given column are condensed into a new sequence-type column.
 
@@ -25,7 +26,7 @@ A new data table.
 
 #### Discussion
 
-This function performs the inverse of [`expand(columnNamed:to:)`](mldatatable/expand(columnnamed:to:).md).
+This function performs the inverse of [`expand(columnNamed:to:)`](./expand%28columnnamed,to%29.md).
 
 ## Parameters
 

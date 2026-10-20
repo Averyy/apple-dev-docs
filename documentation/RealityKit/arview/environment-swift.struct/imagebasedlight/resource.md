@@ -1,7 +1,8 @@
 # resource
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The resource containing lighting information for the image based light.
 

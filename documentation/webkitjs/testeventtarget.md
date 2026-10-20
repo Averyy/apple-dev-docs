@@ -1,22 +1,23 @@
 # TestEventTarget
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Mobile 9.0+
 
 ## Declaration
 
-```swift
+```
 interface TestEventTarget
 ```
 
 ## Topics
 
 ### Instance Methods
-- [Node](testeventtarget/1632233-node.md)
-- [item](testeventtarget/1632534-item.md)
+- [Node](./testeventtarget/api-1632233-node.md)
+- [item](./testeventtarget/api-1632534-item.md)
 
 ## Relationships
 

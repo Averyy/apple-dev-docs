@@ -1,7 +1,8 @@
 # init(trainingData:targetColumn:featureColumns:parameters:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a random forest classifier.
 
@@ -19,6 +20,12 @@ Creates a random forest classifier.
 init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]? = nil, parameters: MLRandomForestClassifier.ModelParameters = ModelParameters(validation: .split(strategy: .automatic))) throws
 ```
 
+**Other overloads**:
+
+```swift
+init(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]? = nil, parameters: MLRandomForestClassifier.ModelParameters = ModelParameters(validationData: nil)) throws
+```
+
 ## Parameters
 
 - `trainingData`: The training data
@@ -28,9 +35,10 @@ init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]? = 
 
 ## See Also
 
-- [var targetColumn: String](mlrandomforestclassifier/targetcolumn.md)
+### Creating a random forest classifier synchronously
+- [var targetColumn: String](./targetcolumn.md)
   The name of the column you selected at initialization to define which categories the classifier predicts.
-- [var featureColumns: [String]](mlrandomforestclassifier/featurecolumns.md)
+- [var featureColumns: [String]](./featurecolumns.md)
   The names of the columns you selected at initialization to train the classifier.
 
 

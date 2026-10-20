@@ -1,7 +1,8 @@
 # radianAngleUnit(with:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring angles, using radian units with the provided prefix.
 
@@ -19,15 +20,20 @@ Returns a HealthKit unit for measuring angles, using radian units with the provi
 class func radianAngleUnit(with prefix: HKMetricPrefix) -> Self
 ```
 
+```objc
++ (instancetype) radianAngleUnitWithMetricPrefix:(HKMetricPrefix) prefix;
+```
+
 ## Parameters
 
-- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](hkmetricprefix.md).
+- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](../hkmetricprefix.md).
 
 ## See Also
 
-- [class func degreeAngle() -> Self](hkunit/degreeangle.md)
+### Constructing angle units
+- [class func degreeAngle() -> Self](./degreeangle%28%29.md)
   Returns a HealthKit unit for measuring angles using degrees.
-- [class func radianAngle() -> Self](hkunit/radianangle.md)
+- [class func radianAngle() -> Self](./radianangle%28%29.md)
   Returns a HealthKit unit for measuring angles using radians.
 
 

@@ -1,6 +1,7 @@
 # Making Physics Bodies Move
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Move a body using various physics properties, like velocity, gravity or impulses.
 
@@ -8,7 +9,7 @@ Move a body using various physics properties, like velocity, gravity or impulses
 
 By default, only gravity is applied to physics bodies in the scene. In some cases, that might be enough to build a game. But in most cases, you need to take other steps to change the speed of physics bodies.
 
-First, you can control a physics body’s velocity directly, by setting its [`velocity`](skphysicsbody/velocity.md) and [`angularVelocity`](skphysicsbody/angularvelocity.md) properties. As with many other properties, you often set these properties once when the physics body is first created and then let the physics simulation adjust them as necessary. For example, assume for a moment you are making a space-based game where a rocket ship can fire missiles. When the ship fires a missile, the missile should have a starting velocity of the ship plus an additional vector in the direction of the launch. The following code shows one implementation for calculating the launch velocity.
+First, you can control a physics body’s velocity directly, by setting its [`velocity`](./skphysicsbody/velocity.md) and [`angularVelocity`](./skphysicsbody/angularvelocity.md) properties. As with many other properties, you often set these properties once when the physics body is first created and then let the physics simulation adjust them as necessary. For example, assume for a moment you are making a space-based game where a rocket ship can fire missiles. When the ship fires a missile, the missile should have a starting velocity of the ship plus an additional vector in the direction of the launch. The following code shows one implementation for calculating the launch velocity.
 
 Listing 1 Calculating the missile’s initial velocity
 
@@ -43,7 +44,7 @@ You can apply a force to a body in one of three ways:
 - An angular force that only affects the body’s angular velocity.
 - A force applied to a point on the body. The physics simulation calculates separate changes to the body’s angular and linear velocity, based on the shape of the object and the point where the force was applied.
 
-The following code shows code you could implement in a sprite subclass to apply a force to the ship. This force accelerates the rocket when the main engines are activated. Because the engines are at the back of the rocket, the force is applied to linearly to the rocket body. The code calculates the thrust vector based on the current orientation of the rocket. The orientation is based on the [`zRotation`](sknode/zrotation.md) property of the corresponding node, but the orientation of the artwork may differ from the orientation of the node. The thrust should always be oriented with the artwork. The following code shows a similar effect, but this time the rocket is being rotated by the force, so the thrust is applied as an angular thrust.
+The following code shows code you could implement in a sprite subclass to apply a force to the ship. This force accelerates the rocket when the main engines are activated. Because the engines are at the back of the rocket, the force is applied to linearly to the rocket body. The code calculates the thrust vector based on the current orientation of the rocket. The orientation is based on the [`zRotation`](./sknode/zrotation.md) property of the corresponding node, but the orientation of the artwork may differ from the orientation of the node. The thrust should always be oriented with the artwork. The following code shows a similar effect, but this time the rocket is being rotated by the force, so the thrust is applied as an angular thrust.
 
 Listing 2 Applying lateral thrust
 
@@ -53,17 +54,18 @@ self.physicsBody?.applyTorque(thrust)
 
 ## See Also
 
-- [func applyForce(CGVector)](skphysicsbody/applyforce(_:).md)
+### Applying Forces and Impulses to a Physics Body
+- [func applyForce(CGVector)](./skphysicsbody/applyforce%28_%29.md)
   Applies a force to the center of gravity of a physics body.
-- [func applyTorque(CGFloat)](skphysicsbody/applytorque(_:).md)
+- [func applyTorque(CGFloat)](./skphysicsbody/applytorque%28_%29.md)
   Applies torque to an object.
-- [func applyForce(CGVector, at: CGPoint)](skphysicsbody/applyforce(_:at:).md)
+- [func applyForce(CGVector, at: CGPoint)](./skphysicsbody/applyforce%28_,at%29.md)
   Applies a force to a specific point of a physics body.
-- [func applyImpulse(CGVector)](skphysicsbody/applyimpulse(_:).md)
+- [func applyImpulse(CGVector)](./skphysicsbody/applyimpulse%28_%29.md)
   Applies an impulse to the center of gravity of a physics body.
-- [func applyAngularImpulse(CGFloat)](skphysicsbody/applyangularimpulse(_:).md)
+- [func applyAngularImpulse(CGFloat)](./skphysicsbody/applyangularimpulse%28_%29.md)
   Applies an impulse that imparts angular momentum to an object.
-- [func applyImpulse(CGVector, at: CGPoint)](skphysicsbody/applyimpulse(_:at:).md)
+- [func applyImpulse(CGVector, at: CGPoint)](./skphysicsbody/applyimpulse%28_,at%29.md)
   Applies an impulse to a specific point of a physics body.
 
 

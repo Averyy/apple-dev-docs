@@ -1,14 +1,15 @@
 # performanceMetrics
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Performance metrics for an electrical measurement.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,8 @@ var performanceMetrics: ElectricVehicleLoadEvent.ElectricalMeasurement.Performan
 
 ## See Also
 
-- [ElectricVehicleLoadEvent.ElectricalMeasurement.PerformanceMetrics](electricvehicleloadevent/electricalmeasurement/performancemetrics-swift.struct.md)
+### Getting performance metrics
+- [ElectricVehicleLoadEvent.ElectricalMeasurement.PerformanceMetrics](./performancemetrics-swift.struct.md)
   Performance metrics for the current electrical measurement.
 
 

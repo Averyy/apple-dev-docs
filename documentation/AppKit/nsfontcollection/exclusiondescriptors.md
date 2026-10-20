@@ -1,7 +1,8 @@
 # exclusionDescriptors
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of query font descriptors whose matching results are excluded from the list of matching descriptors.
 
@@ -14,19 +15,24 @@ A list of query font descriptors whose matching results are excluded from the li
 var exclusionDescriptors: [NSFontDescriptor]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<NSFontDescriptor *> * exclusionDescriptors;
+```
+
 ## See Also
 
-- [var matchingDescriptors: [NSFontDescriptor]?](nsfontcollection/matchingdescriptors.md)
+### Getting the Font Descriptors
+- [var matchingDescriptors: [NSFontDescriptor]?](./matchingdescriptors.md)
   An array of font descriptors matching the logical descriptors.
-- [func matchingDescriptors(forFamily: String) -> [NSFontDescriptor]?](nsfontcollection/matchingdescriptors(forfamily:).md)
+- [func matchingDescriptors(forFamily: String) -> [NSFontDescriptor]?](./matchingdescriptors%28forfamily%29.md)
   Returns an array of font descriptors matching the logical descriptors for the given font family.
-- [func matchingDescriptors(forFamily: String, options: [NSFontCollectionMatchingOptionKey : NSNumber]?) -> [NSFontDescriptor]?](nsfontcollection/matchingdescriptors(forfamily:options:).md)
+- [func matchingDescriptors(forFamily: String, options: [NSFontCollectionMatchingOptionKey : NSNumber]?) -> [NSFontDescriptor]?](./matchingdescriptors%28forfamily,options%29.md)
   Returns an array of font descriptors matching the logical descriptors for the given font family and options.
-- [func matchingDescriptors(options: [NSFontCollectionMatchingOptionKey : NSNumber]?) -> [NSFontDescriptor]?](nsfontcollection/matchingdescriptors(options:).md)
+- [func matchingDescriptors(options: [NSFontCollectionMatchingOptionKey : NSNumber]?) -> [NSFontDescriptor]?](./matchingdescriptors%28options%29.md)
   Returns an array of font descriptors matching the logical descriptors with the given options.
-- [struct NSFontCollectionMatchingOptionKey](nsfontcollectionmatchingoptionkey.md)
-  These constants are used by the [`matchingDescriptors(options:)`](nsfontcollection/matchingdescriptors(options:).md) and [`matchingDescriptors(forFamily:options:)`](nsfontcollection/matchingdescriptors(forfamily:options:).md) options dictionary parameters.
-- [var queryDescriptors: [NSFontDescriptor]?](nsfontcollection/querydescriptors.md)
+- [struct NSFontCollectionMatchingOptionKey](../nsfontcollectionmatchingoptionkey.md)
+  These constants are used by the [`matchingDescriptors(options:)`](./matchingdescriptors%28options%29.md) and [`matchingDescriptors(forFamily:options:)`](./matchingdescriptors%28forfamily,options%29.md) options dictionary parameters.
+- [var queryDescriptors: [NSFontDescriptor]?](./querydescriptors.md)
   An array of font descriptors whose matching results produce the collection’s matching descriptors.
 
 

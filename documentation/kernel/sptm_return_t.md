@@ -1,14 +1,15 @@
 # sptm_return_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t sptm_return_t;
 ```
 

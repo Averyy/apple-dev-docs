@@ -1,7 +1,8 @@
 # voice
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The voice to use in the speech request.
 
@@ -20,11 +21,16 @@ The voice to use in the speech request.
 var voice: AVSpeechSynthesisProviderVoice { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVSpeechSynthesisProviderVoice * voice;
+```
+
 ## See Also
 
-- [var ssmlRepresentation: String](avspeechsynthesisproviderrequest/ssmlrepresentation.md)
+### Inspecting a request
+- [var ssmlRepresentation: String](./ssmlrepresentation.md)
   The description of the text to synthesize.
-- [class AVSpeechSynthesisProviderVoice](avspeechsynthesisprovidervoice.md)
+- [class AVSpeechSynthesisProviderVoice](../avspeechsynthesisprovidervoice.md)
   An object that represents a voice that an audio unit provides to its host.
 
 

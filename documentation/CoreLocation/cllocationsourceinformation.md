@@ -1,7 +1,8 @@
 # CLLocationSourceInformation
 
 **Framework**: Core Location  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Information about the source that provides a location.
 
@@ -20,57 +21,62 @@ Information about the source that provides a location.
 class CLLocationSourceInformation
 ```
 
+```objc
+@interface CLLocationSourceInformation : NSObject
+```
+
 #### Overview
 
-[`CLLocationSourceInformation`](cllocationsourceinformation.md) contains information about the source that provides a [`CLLocation`](cllocation.md) instance, such as instances that [`locationManager(_:didUpdateLocations:)`](cllocationmanagerdelegate/locationmanager(_:didupdatelocations:).md) delivers. For example, an app may choose to check the source information and reject locations if the [`isSimulatedBySoftware`](cllocationsourceinformation/issimulatedbysoftware.md) property is `true` when the developer isn’t debugging or testing the app.
+[`CLLocationSourceInformation`](./cllocationsourceinformation.md) contains information about the source that provides a [`CLLocation`](./cllocation.md) instance, such as instances that [`locationManager(_:didUpdateLocations:)`](./cllocationmanagerdelegate/locationmanager%28_,didupdatelocations%29.md) delivers. For example, an app may choose to check the source information and reject locations if the [`isSimulatedBySoftware`](./cllocationsourceinformation/issimulatedbysoftware.md) property is `true` when the developer isn’t debugging or testing the app.
 
 ## Topics
 
 ### Creating a location source information object
-- [init(softwareSimulationState: Bool, andExternalAccessoryState: Bool)](cllocationsourceinformation/init(softwaresimulationstate:andexternalaccessorystate:).md)
+- [init(softwareSimulationState: Bool, andExternalAccessoryState: Bool)](./cllocationsourceinformation/init%28softwaresimulationstate,andexternalaccessorystate%29.md)
   Creates an instance of location source information.
 ### Identifying the source of location data
-- [var isProducedByAccessory: Bool](cllocationsourceinformation/isproducedbyaccessory.md)
+- [var isProducedByAccessory: Bool](./cllocationsourceinformation/isproducedbyaccessory.md)
   A Boolean value that indicates whether the system receives the location from an external accessory.
-- [var isSimulatedBySoftware: Bool](cllocationsourceinformation/issimulatedbysoftware.md)
+- [var isSimulatedBySoftware: Bool](./cllocationsourceinformation/issimulatedbysoftware.md)
   A Boolean value that indicates whether the system generates the location using on-device software simulation.
 ### Initializers
-- [init?(coder: NSCoder)](cllocationsourceinformation/init(coder:).md)
+- [init?(coder: NSCoder)](./cllocationsourceinformation/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Getting the current location of a device](getting-the-current-location-of-a-device.md)
+### Location updates
+- [Getting the current location of a device](./getting-the-current-location-of-a-device.md)
   Start location services and provide information the system needs to optimize power usage for those services.
-- [Handling location updates in the background](handling-location-updates-in-the-background.md)
+- [Handling location updates in the background](./handling-location-updates-in-the-background.md)
   Configure your app to receive location updates when it isn’t running in the foreground.
-- [Creating a location push service extension](creating-a-location-push-service-extension.md)
+- [Creating a location push service extension](./creating-a-location-push-service-extension.md)
   Add and configure an extension to enable your location-sharing app to access a person’s location in response to a request from someone else.
-- [class CLLocation](cllocation.md)
+- [class CLLocation](./cllocation.md)
   The latitude, longitude, and course information reported by the system.
-- [struct CLLocationCoordinate2D](cllocationcoordinate2d.md)
+- [struct CLLocationCoordinate2D](./cllocationcoordinate2d.md)
   The latitude and longitude associated with a location, specified using the WGS 84 reference frame.
-- [class CLFloor](clfloor.md)
+- [class CLFloor](./clfloor.md)
   The floor of a building on which the user’s device is located.
-- [class CLVisit](clvisit.md)
+- [class CLVisit](./clvisit.md)
   Information about the user’s location during a specific period of time.
-- [Monitoring location changes with Core Location](monitoring-location-changes-with-core-location.md)
+- [Monitoring location changes with Core Location](./monitoring-location-changes-with-core-location.md)
   Define boundaries and act on user location updates.
-- [class CLServiceSession](clservicesession-pt7n.md)
+- [class CLServiceSession](./clservicesession-pt7n.md)
   An object that provides diagnostics about an app’s authorization to use location services.
 
 

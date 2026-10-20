@@ -1,7 +1,8 @@
 # AudioServicesPlayAlertSound(_:spatialExperience:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Play an alert sound with the provided spatial audio experience.
 
@@ -16,7 +17,7 @@ func AudioServicesPlayAlertSound(_ systemSoundID: SystemSoundID, spatialExperien
 
 ## Mentions
 
-- [Anchoring sound to a window or volume](spatializing-sound-from-a-uiscene.md)
+- [Anchoring sound to a window or volume](./spatializing-sound-from-a-uiscene.md)
 
 #### Discussion
 

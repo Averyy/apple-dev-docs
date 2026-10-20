@@ -1,7 +1,8 @@
 # MediaPlaybackSnapshot
 
 **Framework**: Now Playing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A snapshot of playback state and timing for a Now Playing session.
 
@@ -22,7 +23,7 @@ struct MediaPlaybackSnapshot
 
 ## Mentions
 
-- [Publishing media sessions](publishing-media-sessions.md)
+- [Publishing media sessions](./publishing-media-sessions.md)
 
 #### Overview
 
@@ -31,24 +32,25 @@ Use a snapshot to describe whether the session is playing, paused, or buffering,
 ## Topics
 
 ### Initializers
-- [init(state: MediaPlaybackSnapshot.PlaybackState, defaultPlaybackRate: Float, elapsedTime: TimeInterval?, timestamp: Date?)](mediaplaybacksnapshot/init(state:defaultplaybackrate:elapsedtime:timestamp:).md)
+- [init(state: MediaPlaybackSnapshot.PlaybackState, defaultPlaybackRate: Float, elapsedTime: TimeInterval?, timestamp: Date?)](./mediaplaybacksnapshot/init%28state,defaultplaybackrate,elapsedtime,timestamp%29.md)
   Creates a playback snapshot with the specified state and timing.
 ### Enumerations
-- [MediaPlaybackSnapshot.PlaybackState](mediaplaybacksnapshot/playbackstate.md)
+- [MediaPlaybackSnapshot.PlaybackState](./mediaplaybacksnapshot/playbackstate.md)
   The current playback state of a Now Playing session.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Content types and metadata](content-types-and-metadata.md)
+### Playback
+- [Content types and metadata](./content-types-and-metadata.md)
   Describe the media your app is playing.
-- [Playback commands](playback-commands.md)
+- [Playback commands](./playback-commands.md)
   Declare the playback controls your app supports.
 
 

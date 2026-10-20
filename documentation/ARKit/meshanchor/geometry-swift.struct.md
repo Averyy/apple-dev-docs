@@ -1,7 +1,8 @@
 # MeshAnchor.Geometry
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The shapes that make up a mesh anchor.
 
@@ -17,35 +18,36 @@ struct Geometry
 ## Topics
 
 ### Inspecting mesh geometry
-- [var faces: GeometryElement](meshanchor/geometry-swift.struct/faces.md)
+- [var faces: GeometryElement](./geometry-swift.struct/faces.md)
   The faces of the mesh.
-- [var vertices: GeometrySource](meshanchor/geometry-swift.struct/vertices.md)
+- [var vertices: GeometrySource](./geometry-swift.struct/vertices.md)
   The vertices of the mesh.
-- [var normals: GeometrySource](meshanchor/geometry-swift.struct/normals.md)
+- [var normals: GeometrySource](./geometry-swift.struct/normals.md)
   The normals of the mesh.
-- [var classifications: GeometrySource?](meshanchor/geometry-swift.struct/classifications.md)
+- [var classifications: GeometrySource?](./geometry-swift.struct/classifications.md)
   The classification of each face in the mesh.
 ### Instance Properties
-- [var description: String](meshanchor/geometry-swift.struct/description.md)
+- [var description: String](./geometry-swift.struct/description.md)
   A textual representation of this geometry.
 ### Default Implementations
-- [Equatable Implementations](meshanchor/geometry-swift.struct/equatable-implementations.md)
+- [Equatable Implementations](./geometry-swift.struct/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var originFromAnchorTransform: simd_float4x4](meshanchor/originfromanchortransform.md)
+### Getting mesh information
+- [var originFromAnchorTransform: simd_float4x4](./originfromanchortransform.md)
   The location and orientation of a mesh in world space.
-- [var geometry: MeshAnchor.Geometry](meshanchor/geometry-swift.property.md)
+- [var geometry: MeshAnchor.Geometry](./geometry-swift.property.md)
   The shape of a mesh anchor.
-- [MeshAnchor.MeshClassification](meshanchor/meshclassification.md)
+- [MeshAnchor.MeshClassification](./meshclassification.md)
   The kinds of classification a face of a mesh can have.
 
 

@@ -1,7 +1,8 @@
 # deallocate()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deallocates the memory block previously allocated at this pointer.
 

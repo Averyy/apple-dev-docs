@@ -1,7 +1,8 @@
 # application(_:didDiscardSceneSessions:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user closed one or more of the app’s scenes from the app switcher.
 
@@ -16,6 +17,10 @@ Tells the delegate that the user closed one or more of the app’s scenes from t
 
 ```swift
 optional func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>)
+```
+
+```objc
+- (void) application:(UIApplication *) application didDiscardSceneSessions:(NSSet<UISceneSession *> *) sceneSessions;
 ```
 
 #### Discussion
@@ -33,7 +38,8 @@ UIKit calls this method only when dismissing scenes permanently. It doesn’t ca
 
 ## See Also
 
-- [func application(UIApplication, configurationForConnecting: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration](uiapplicationdelegate/application(_:configurationforconnecting:options:).md)
+### Configuring and discarding scenes
+- [func application(UIApplication, configurationForConnecting: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration](./application%28_,configurationforconnecting,options%29.md)
   Retrieves the configuration data for UIKit to use when creating a new scene.
 
 

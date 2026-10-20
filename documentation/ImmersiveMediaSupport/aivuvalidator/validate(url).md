@@ -1,7 +1,8 @@
 # validate(url:)
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Validates the AIVU file given its URL. It throws an error message with error details, if any.
 
@@ -20,7 +21,7 @@ static func validate(url: URL) async throws -> Bool
 
 #### Discussion
 
-> **Note**: This function throws an exception with error details, if any.
+> **Throws**: This function throws an exception with error details, if any.
 
 ## Parameters
 

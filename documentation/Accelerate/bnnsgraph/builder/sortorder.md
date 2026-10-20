@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.SortOrder
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The sort order for functions such as `argsort`.
 
@@ -23,18 +24,18 @@ enum SortOrder
 ## Topics
 
 ### Enumeration Cases
-- [BNNSGraph.Builder.SortOrder.ascending](bnnsgraph/builder/sortorder/ascending.md)
+- [BNNSGraph.Builder.SortOrder.ascending](./sortorder/ascending.md)
   An ascending search.
-- [BNNSGraph.Builder.SortOrder.descending](bnnsgraph/builder/sortorder/descending.md)
+- [BNNSGraph.Builder.SortOrder.descending](./sortorder/descending.md)
   A descending search.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

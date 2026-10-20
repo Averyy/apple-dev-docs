@@ -1,7 +1,8 @@
 # expirationDate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The time and date that you want the system to remove the pasteboard items from the pasteboard.
 
@@ -17,13 +18,18 @@ The time and date that you want the system to remove the pasteboard items from t
 static let expirationDate: UIPasteboard.OptionsKey
 ```
 
+```c
+extern UIPasteboardOption const UIPasteboardOptionExpirationDate;
+```
+
 #### Discussion
 
-Specify the date and time as an [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) value.
+Specify the date and time as an [`NSDate`](../../../Foundation/nsdate.md) value.
 
 ## See Also
 
-- [static let localOnly: UIPasteboard.OptionsKey](uipasteboard/optionskey/localonly.md)
+### Constants
+- [static let localOnly: UIPasteboard.OptionsKey](./localonly.md)
   A Boolean value that specifies that the pasteboard items should not be available to other devices through the Handoff feature.
 
 

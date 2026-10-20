@@ -1,7 +1,8 @@
 # NSExtensionContext
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The host app context from which an app extension is invoked.
 
@@ -20,90 +21,95 @@ The host app context from which an app extension is invoked.
 class NSExtensionContext
 ```
 
+```objc
+@interface NSExtensionContext : NSObject
+```
+
 #### Overview
 
-When a host app sends a request to an app extension, it provides an extension context. For many app extensions, the most important part of the context is the data the user wants to work with, which is contained in the [`inputItems`](nsextensioncontext/inputitems.md) property.
+When a host app sends a request to an app extension, it provides an extension context. For many app extensions, the most important part of the context is the data the user wants to work with, which is contained in the [`inputItems`](./nsextensioncontext/inputitems.md) property.
 
 ## Topics
 
 ### Handling requests
-- [func completeRequest(returningItems: [Any]?, completionHandler: ((Bool) -> Void)?)](nsextensioncontext/completerequest(returningitems:completionhandler:).md)
+- [func completeRequest(returningItems: [Any]?, completionHandler: ((Bool) -> Void)?)](./nsextensioncontext/completerequest%28returningitems,completionhandler%29.md)
   Tells the host app to complete the app extension request with an array of result items.
-- [func cancelRequest(withError: any Error)](nsextensioncontext/cancelrequest(witherror:).md)
+- [func cancelRequest(withError: any Error)](./nsextensioncontext/cancelrequest%28witherror%29.md)
   Tells the host app to cancel the app extension request, with a supplied error.
-- [let NSExtensionItemsAndErrorsKey: String](nsextensionitemsanderrorskey.md)
+- [let NSExtensionItemsAndErrorsKey: String](./nsextensionitemsanderrorskey.md)
   The extension items and errors key.
 ### Opening URLs
-- [func open(URL, completionHandler: ((Bool) -> Void)?)](nsextensioncontext/open(_:completionhandler:).md)
+- [func open(URL, completionHandler: ((Bool) -> Void)?)](./nsextensioncontext/open%28_,completionhandler%29.md)
   Asks the system to open a URL on behalf of the currently running app extension.
 ### Storing extension items
-- [var inputItems: [Any]](nsextensioncontext/inputitems.md)
-  The list of input [`NSExtensionItem`](nsextensionitem.md) objects associated with the context.
+- [var inputItems: [Any]](./nsextensioncontext/inputitems.md)
+  The list of input [`NSExtensionItem`](./nsextensionitem.md) objects associated with the context.
 ### Controlling media playback in notification content extensions
-- [func mediaPlayingStarted()](nsextensioncontext/mediaplayingstarted.md)
+- [func mediaPlayingStarted()](./nsextensioncontext/mediaplayingstarted%28%29.md)
   Tells the system that the Notification Content app extension began playing a media file.
-- [func mediaPlayingPaused()](nsextensioncontext/mediaplayingpaused.md)
+- [func mediaPlayingPaused()](./nsextensioncontext/mediaplayingpaused%28%29.md)
   Tells the system that the Notification Content app extension stopped playing a media file.
 ### Populating your share extension with metadata
-- [var intent: INIntent?](nsextensioncontext/intent.md)
+- [var intent: INIntent?](./nsextensioncontext/intent.md)
   Metadata for populating your share extensions interface.
 ### Getting Siri-related information
-- [var hostedViewMinimumAllowedSize: CGSize](nsextensioncontext/hostedviewminimumallowedsize.md)
+- [var hostedViewMinimumAllowedSize: CGSize](./nsextensioncontext/hostedviewminimumallowedsize.md)
   The minimum size for a Siri hosted view.
-- [var hostedViewMaximumAllowedSize: CGSize](nsextensioncontext/hostedviewmaximumallowedsize.md)
+- [var hostedViewMaximumAllowedSize: CGSize](./nsextensioncontext/hostedviewmaximumallowedsize.md)
   The maximum size for a Siri hosted view.
-- [func interfaceParametersDescription() -> String](nsextensioncontext/interfaceparametersdescription.md)
+- [func interfaceParametersDescription() -> String](./nsextensioncontext/interfaceparametersdescription%28%29.md)
   Returns a human-readable string describing the data that SiriKit displays to the user when you handle an intent.
 ### Supporting broadcasting
-- [func loadBroadcastingApplicationInfo(completion: (String, String, UIImage?) -> Void)](nsextensioncontext/loadbroadcastingapplicationinfo(completion:).md)
-- [func completeRequest(withBroadcast: URL, setupInfo: [String : any NSCoding & NSObjectProtocol]?)](nsextensioncontext/completerequest(withbroadcast:setupinfo:).md)
+- [func loadBroadcastingApplicationInfo(completion: (String, String, UIImage?) -> Void)](./nsextensioncontext/loadbroadcastingapplicationinfo%28completion%29.md)
+- [func completeRequest(withBroadcast: URL, setupInfo: [String : any NSCoding & NSObjectProtocol]?)](./nsextensioncontext/completerequest%28withbroadcast,setupinfo%29.md)
 ### Handling notification actions
-- [var notificationActions: [UNNotificationAction]](nsextensioncontext/notificationactions.md)
-- [func performNotificationDefaultAction()](nsextensioncontext/performnotificationdefaultaction.md)
-- [func dismissNotificationContentExtension()](nsextensioncontext/dismissnotificationcontentextension.md)
+- [var notificationActions: [UNNotificationAction]](./nsextensioncontext/notificationactions.md)
+- [func performNotificationDefaultAction()](./nsextensioncontext/performnotificationdefaultaction%28%29.md)
+- [func dismissNotificationContentExtension()](./nsextensioncontext/dismissnotificationcontentextension%28%29.md)
 ### Working with notifications
-- [static let NSExtensionHostDidBecomeActive: NSNotification.Name](nsnotification/name-swift.struct/nsextensionhostdidbecomeactive.md)
+- [static let NSExtensionHostDidBecomeActive: NSNotification.Name](./nsnotification/name-swift.struct/nsextensionhostdidbecomeactive.md)
   Posted when the extension’s host app moves from the inactive to the active state.
-- [static let NSExtensionHostWillResignActive: NSNotification.Name](nsnotification/name-swift.struct/nsextensionhostwillresignactive.md)
+- [static let NSExtensionHostWillResignActive: NSNotification.Name](./nsnotification/name-swift.struct/nsextensionhostwillresignactive.md)
   Posted when the extension’s host app moves from the active to the inactive state.
-- [static let NSExtensionHostDidEnterBackground: NSNotification.Name](nsnotification/name-swift.struct/nsextensionhostdidenterbackground.md)
+- [static let NSExtensionHostDidEnterBackground: NSNotification.Name](./nsnotification/name-swift.struct/nsextensionhostdidenterbackground.md)
   Posted when the extension’s host app begins running in the background.
-- [static let NSExtensionHostWillEnterForeground: NSNotification.Name](nsnotification/name-swift.struct/nsextensionhostwillenterforeground.md)
+- [static let NSExtensionHostWillEnterForeground: NSNotification.Name](./nsnotification/name-swift.struct/nsextensionhostwillenterforeground.md)
   Posted when the extension’s host app begins running in the foreground.
 ### Working with notification messages
-- [NSExtensionContext.DidBecomeActiveMessage](nsextensioncontext/didbecomeactivemessage.md)
+- [NSExtensionContext.DidBecomeActiveMessage](./nsextensioncontext/didbecomeactivemessage.md)
   A message the system sends when the extension’s host app moves from the inactive to the active state.
-- [NSExtensionContext.WillResignActiveMessage](nsextensioncontext/willresignactivemessage.md)
+- [NSExtensionContext.WillResignActiveMessage](./nsextensioncontext/willresignactivemessage.md)
   A message the system sends when the extension’s host app moves from the active to the inactive state.
-- [NSExtensionContext.DidEnterBackgroundMessage](nsextensioncontext/didenterbackgroundmessage.md)
+- [NSExtensionContext.DidEnterBackgroundMessage](./nsextensioncontext/didenterbackgroundmessage.md)
   A message the system sends when the extension’s host app begins running in the background.
-- [NSExtensionContext.WillEnterForegroundMessage](nsextensioncontext/willenterforegroundmessage.md)
+- [NSExtensionContext.WillEnterForegroundMessage](./nsextensioncontext/willenterforegroundmessage.md)
   A message the system sends when the extension’s host app begins running in the foreground.
 ### Deprecated
-- [func completeRequest(withBroadcast: URL, broadcastConfiguration: RPBroadcastConfiguration, setupInfo: [String : any NSCoding & NSObjectProtocol]?)](nsextensioncontext/completerequest(withbroadcast:broadcastconfiguration:setupinfo:).md)
+- [func completeRequest(withBroadcast: URL, broadcastConfiguration: RPBroadcastConfiguration, setupInfo: [String : any NSCoding & NSObjectProtocol]?)](./nsextensioncontext/completerequest%28withbroadcast,broadcastconfiguration,setupinfo%29.md)
   Tells the host app to complete the app extension request with the specified broadcast information.
-- [var widgetActiveDisplayMode: NCWidgetDisplayMode](nsextensioncontext/widgetactivedisplaymode.md)
+- [var widgetActiveDisplayMode: NCWidgetDisplayMode](./nsextensioncontext/widgetactivedisplaymode.md)
   The active display mode of the widget.
-- [var widgetLargestAvailableDisplayMode: NCWidgetDisplayMode](nsextensioncontext/widgetlargestavailabledisplaymode.md)
+- [var widgetLargestAvailableDisplayMode: NCWidgetDisplayMode](./nsextensioncontext/widgetlargestavailabledisplaymode.md)
   The largest display mode the widget supports.
-- [func widgetMaximumSize(for: NCWidgetDisplayMode) -> CGSize](nsextensioncontext/widgetmaximumsize(for:).md)
+- [func widgetMaximumSize(for: NCWidgetDisplayMode) -> CGSize](./nsextensioncontext/widgetmaximumsize%28for%29.md)
   Returns the maximum size for the specified widget display mode.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol NSExtensionRequestHandling](nsextensionrequesthandling.md)
+### Extension Support
+- [protocol NSExtensionRequestHandling](./nsextensionrequesthandling.md)
   The interface an app extension uses to respond to a request from a host app.
 
 

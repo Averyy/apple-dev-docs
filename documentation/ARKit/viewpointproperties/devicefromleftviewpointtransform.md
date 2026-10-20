@@ -1,7 +1,8 @@
 # deviceFromLeftViewpointTransform
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transformation matrix that converts from the left viewpoint to the device’s coordinate space.
 

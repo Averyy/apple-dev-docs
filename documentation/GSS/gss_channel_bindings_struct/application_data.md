@@ -1,7 +1,8 @@
 # application_data
 
 **Framework**: GSS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Application specific data for use in communicating a channel binding.
 
@@ -18,16 +19,21 @@ Application specific data for use in communicating a channel binding.
 var application_data: gss_buffer_desc
 ```
 
+```c
+gss_buffer_desc application_data;
+```
+
 ## See Also
 
-- [var initiator_addrtype: OM_uint32](gss_channel_bindings_struct/initiator_addrtype.md)
-  The type of address contained in the [`initiator_address`](gss_channel_bindings_struct/initiator_address.md) field.
-- [var initiator_address: gss_buffer_desc](gss_channel_bindings_struct/initiator_address.md)
-  The network address of the acceptor, in the form specified by [`initiator_addrtype`](gss_channel_bindings_struct/initiator_addrtype.md).
-- [var acceptor_addrtype: OM_uint32](gss_channel_bindings_struct/acceptor_addrtype.md)
-  The type of address contained in the [`acceptor_address`](gss_channel_bindings_struct/acceptor_address.md) field.
-- [var acceptor_address: gss_buffer_desc](gss_channel_bindings_struct/acceptor_address.md)
-  The network address of the acceptor, in the form specified by [`acceptor_addrtype`](gss_channel_bindings_struct/acceptor_addrtype.md).
+### Instance Properties
+- [var initiator_addrtype: OM_uint32](./initiator_addrtype.md)
+  The type of address contained in the [`initiator_address`](./initiator_address.md) field.
+- [var initiator_address: gss_buffer_desc](./initiator_address.md)
+  The network address of the acceptor, in the form specified by [`initiator_addrtype`](./initiator_addrtype.md).
+- [var acceptor_addrtype: OM_uint32](./acceptor_addrtype.md)
+  The type of address contained in the [`acceptor_address`](./acceptor_address.md) field.
+- [var acceptor_address: gss_buffer_desc](./acceptor_address.md)
+  The network address of the acceptor, in the form specified by [`acceptor_addrtype`](./acceptor_addrtype.md).
 
 
 ---

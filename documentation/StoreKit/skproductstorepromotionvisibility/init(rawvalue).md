@@ -1,14 +1,17 @@
 # init(rawValue:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 11.0+
+- iOS 11.0+ - Deprecated in 18.0
+- iPadOS 11.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 11.0+ - Deprecated in 18.0
+
+> **Deprecated**: Use Product.PromotionInfo.Visibility.
 
 ## Declaration
 

@@ -1,14 +1,15 @@
 # kINQUIRY_PERIPHERAL_TYPE_UnknownOrNoDeviceType
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kINQUIRY_PERIPHERAL_TYPE_UnknownOrNoDeviceType = 0x1F
 ```
 

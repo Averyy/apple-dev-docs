@@ -1,7 +1,8 @@
 # keyToCharTableCount
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 32-bit integer specifying the number of key-code-to-character tables, typically 6 to 12.
 
@@ -13,6 +14,10 @@ An unsigned 32-bit integer specifying the number of key-code-to-character tables
 
 ```swift
 var keyToCharTableCount: UInt32
+```
+
+```c
+UInt32 keyToCharTableCount;
 ```
 
 

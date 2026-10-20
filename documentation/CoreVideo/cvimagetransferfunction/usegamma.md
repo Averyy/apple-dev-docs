@@ -1,7 +1,8 @@
 # CVImageTransferFunction.useGamma
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The transfer function that’s defined by the gamma level value of the image buffer.
 

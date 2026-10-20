@@ -1,7 +1,8 @@
 # init(managedObjectModel:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a persistent store coordinator with the specified managed object model.
 
@@ -10,7 +11,7 @@ Creates a persistent store coordinator with the specified managed object model.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Creates a persistent store coordinator with the specified managed object model.
 
 ```swift
 init(managedObjectModel model: NSManagedObjectModel)
+```
+
+```objc
+- (instancetype) initWithManagedObjectModel:(NSManagedObjectModel *) model;
 ```
 
 #### Return Value
@@ -30,11 +35,12 @@ The receiver, initialized with `model`.
 
 ## See Also
 
-- [Store options](store-options.md)
+### Creating a persistent store coordinator
+- [Store options](../store-options.md)
   The options keys that configure the behavior and characteristics of a persistent store.
-- [Migration options](migration-options.md)
+- [Migration options](../migration-options.md)
   The options keys that configure the migration behavior of a persistent store.
-- [Store versions](store-versions.md)
+- [Store versions](../store-versions.md)
   The metadata keys you use when comparing store versions.
 
 

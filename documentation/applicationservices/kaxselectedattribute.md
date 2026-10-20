@@ -1,7 +1,8 @@
 # kAXSelectedAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Indicates whether the row or column element represented by this accessibility object is selected. This attribute is recommended for all accessibility objects that represent selectable rows or columns.
 
@@ -12,6 +13,10 @@ Indicates whether the row or column element represented by this accessibility ob
 
 ```swift
 var kAXSelectedAttribute: String { get }
+```
+
+```c
+#define kAXSelectedAttribute
 ```
 
 

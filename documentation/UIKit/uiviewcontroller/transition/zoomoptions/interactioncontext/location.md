@@ -1,7 +1,8 @@
 # location
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The touch’s location.
 
@@ -18,11 +19,16 @@ The touch’s location.
 var location: CGPoint { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGPoint location;
+```
+
 ## See Also
 
-- [var velocity: CGVector](uiviewcontroller/transition/zoomoptions/interactioncontext/velocity.md)
+### Accessing the context
+- [var velocity: CGVector](./velocity.md)
   The touch’s velocity.
-- [var willBegin: Bool](uiviewcontroller/transition/zoomoptions/interactioncontext/willbegin.md)
+- [var willBegin: Bool](./willbegin.md)
   A Boolean value that indicates whether the transition is beginning.
 
 

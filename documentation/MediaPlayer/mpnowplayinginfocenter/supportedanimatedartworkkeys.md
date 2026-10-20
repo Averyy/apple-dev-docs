@@ -1,7 +1,8 @@
 # supportedAnimatedArtworkKeys
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Keys related to animated artwork that are supported by the current platform.
 
@@ -20,9 +21,13 @@ Keys related to animated artwork that are supported by the current platform.
 class var supportedAnimatedArtworkKeys: [String] { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) NSArray<NSString *> * supportedAnimatedArtworkKeys;
+```
+
 ## Mentions
 
-- [Providing animated artwork for media items](providing-animated-artwork-for-media-items.md)
+- [Providing animated artwork for media items](../providing-animated-artwork-for-media-items.md)
 
 #### Discussion
 
@@ -30,11 +35,12 @@ If you specify an instance of animated artwork (an `MPMediaItemAnimatedArtwork`)
 
 ## See Also
 
-- [class func `default`() -> MPNowPlayingInfoCenter](mpnowplayinginfocenter/default.md)
+### Working with the default Now Playing info center
+- [class func `default`() -> MPNowPlayingInfoCenter](./default%28%29.md)
   Returns the singleton Now Playing info center.
-- [var nowPlayingInfo: [String : Any]?](mpnowplayinginfocenter/nowplayinginfo.md)
+- [var nowPlayingInfo: [String : Any]?](./nowplayinginfo.md)
   The current Now Playing information for the default Now Playing info center.
-- [enum MPNowPlayingInfoMediaType](mpnowplayinginfomediatype.md)
+- [enum MPNowPlayingInfoMediaType](../mpnowplayinginfomediatype.md)
   The type of media currently playing.
 
 

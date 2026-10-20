@@ -1,7 +1,8 @@
 # unsupportedPredicate
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -21,12 +22,13 @@ static let unsupportedPredicate: SwiftDataError
 
 ## See Also
 
-- [static let includePendingChangesWithBatchSize: SwiftDataError](swiftdataerror/includependingchangeswithbatchsize.md)
-- [static let sortingPendingChangesWithIdentifiers: SwiftDataError](swiftdataerror/sortingpendingchangeswithidentifiers.md)
-- [static let unsupportedKeyPath: SwiftDataError](swiftdataerror/unsupportedkeypath.md)
-- [static let unsupportedSortDescriptor: SwiftDataError](swiftdataerror/unsupportedsortdescriptor.md)
-- [static let historyTokenExpired: SwiftDataError](swiftdataerror/historytokenexpired.md)
-- [static let invalidTransactionFetchRequest: SwiftDataError](swiftdataerror/invalidtransactionfetchrequest.md)
+### Fetch errors
+- [static let includePendingChangesWithBatchSize: SwiftDataError](./includependingchangeswithbatchsize.md)
+- [static let sortingPendingChangesWithIdentifiers: SwiftDataError](./sortingpendingchangeswithidentifiers.md)
+- [static let unsupportedKeyPath: SwiftDataError](./unsupportedkeypath.md)
+- [static let unsupportedSortDescriptor: SwiftDataError](./unsupportedsortdescriptor.md)
+- [static let historyTokenExpired: SwiftDataError](./historytokenexpired.md)
+- [static let invalidTransactionFetchRequest: SwiftDataError](./invalidtransactionfetchrequest.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # frameCountSource
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A frame counter timecode source that operates independently of any internal or external synchronization.
 
@@ -18,19 +19,24 @@ A frame counter timecode source that operates independently of any internal or e
 class var frameCountSource: AVCaptureTimecode.Source { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) AVCaptureTimecodeSource * frameCountSource;
+```
+
 #### Discussion
 
 This class property represents a standalone timecode source that advances based purely on frame count, independent of any real-time or external synchronization. It is ideal for scenarios where a simple, self-contained timing reference is sufficient, without requiring alignment to system clocks or external devices.
 
 ## See Also
 
-- [var currentSource: AVCaptureTimecode.Source](avcapturetimecodegenerator/currentsource.md)
-  The active timecode source used by [`AVCaptureTimecodeGenerator`](avcapturetimecodegenerator.md) to maintain clock synchronization for accurate timecode generation.
-- [var availableSources: [AVCaptureTimecode.Source]](avcapturetimecodegenerator/availablesources.md)
+### Managing sources
+- [var currentSource: AVCaptureTimecode.Source](./currentsource.md)
+  The active timecode source used by [`AVCaptureTimecodeGenerator`](../avcapturetimecodegenerator.md) to maintain clock synchronization for accurate timecode generation.
+- [var availableSources: [AVCaptureTimecode.Source]](./availablesources.md)
   An array of available timecode synchronization sources that can be used by the timecode generator.
-- [class var realTimeClockSource: AVCaptureTimecode.Source](avcapturetimecodegenerator/realtimeclocksource.md)
+- [class var realTimeClockSource: AVCaptureTimecode.Source](./realtimeclocksource.md)
   A predefined timecode source synchronized to the real-time system clock.
-- [func startSynchronization(source: AVCaptureTimecode.Source)](avcapturetimecodegenerator/startsynchronization(source:).md)
+- [func startSynchronization(source: AVCaptureTimecode.Source)](./startsynchronization%28source%29.md)
   Synchronizes the generator with the specified timecode source.
 
 

@@ -1,7 +1,8 @@
 # ImmersiveDynamicMask.EdgeTreatment
 
 **Framework**: Immersive Media Support  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that represents an edge treatment type for the immersive media mask.
 
@@ -21,18 +22,18 @@ enum EdgeTreatment
 ## Topics
 
 ### Enumeration Cases
-- [ImmersiveDynamicMask.EdgeTreatment.easeInOut](immersivedynamicmask/edgetreatment-swift.enum/easeinout.md)
-- [ImmersiveDynamicMask.EdgeTreatment.linear](immersivedynamicmask/edgetreatment-swift.enum/linear.md)
+- [ImmersiveDynamicMask.EdgeTreatment.easeInOut](./edgetreatment-swift.enum/easeinout.md)
+- [ImmersiveDynamicMask.EdgeTreatment.linear](./edgetreatment-swift.enum/linear.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

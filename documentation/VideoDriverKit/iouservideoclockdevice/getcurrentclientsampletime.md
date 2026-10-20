@@ -1,7 +1,8 @@
 # GetCurrentClientSampleTime
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the current sample time in the ring buffer that the client reads from and writes to.
 
@@ -10,7 +11,7 @@ Gets the current sample time in the ring buffer that the client reads from and w
 
 ## Declaration
 
-```swift
+```c
 void GetCurrentClientSampleTime(uint64_t *out_input_sample_time, uint64_t *out_output_sample_time);
 ```
 

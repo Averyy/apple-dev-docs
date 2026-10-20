@@ -1,7 +1,8 @@
 # sort()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sorts the collection in place.
 
@@ -19,6 +20,8 @@ Sorts the collection in place.
 ```swift
 mutating func sort()
 ```
+
+Available when `Self` conforms to `RandomAccessCollection` and `Element` conforms to `Comparable`.
 
 #### Discussion
 
@@ -43,7 +46,7 @@ print(students)
 
 The sorting algorithm is guaranteed to be stable. A stable sort preserves the relative order of elements that compare as equal.
 
-> **Note**: O(*n* log *n*), where *n* is the length of the collection.
+> **Complexity**: O(*n* log *n*), where *n* is the length of the collection.
 
 
 ---

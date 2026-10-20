@@ -1,7 +1,8 @@
 # supportedInputContentMaxScale(device:)
 
 **Framework**: MetalFX  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the largest temporal scaling factor the device supports as a floating-point value.
 
@@ -16,6 +17,10 @@ Returns the largest temporal scaling factor the device supports as a floating-po
 
 ```swift
 class func supportedInputContentMaxScale(device: any MTLDevice) -> Float
+```
+
+```objc
++ (float) supportedInputContentMaxScaleForDevice:(id<MTLDevice>) device;
 ```
 
 #### Return Value

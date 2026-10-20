@@ -1,7 +1,8 @@
 # dataSource
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that provides the data for the scrubber.
 
@@ -14,9 +15,14 @@ The object that provides the data for the scrubber.
 weak var dataSource: (any NSScrubberDataSource)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSScrubberDataSource> dataSource;
+```
+
 ## See Also
 
-- [var delegate: (any NSScrubberDelegate)?](nsscrubber/delegate.md)
+### Configuring the scrubber
+- [var delegate: (any NSScrubberDelegate)?](./delegate.md)
   The object that acts as the delegate of the scrubber.
 
 

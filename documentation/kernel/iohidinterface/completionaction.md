@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 typedef void ( *CompletionAction)(
    OSObject *target,
    void *refcon,
@@ -26,10 +26,11 @@ Function called when HID I/O completes.
 
 ## See Also
 
-- [InterruptReportAction](iohidinterface/interruptreportaction.md)
+### Callbacks
+- [InterruptReportAction](./interruptreportaction.md)
   Callback to handle an asynchronous report received from the HID device.
-- [IOHIDInterface::CompletionAction](iohidinterface/iohidinterface_completionaction.md)
-- [IOHIDInterface::InterruptReportAction](iohidinterface/iohidinterface_interruptreportaction.md)
+- [IOHIDInterface::CompletionAction](./iohidinterface_completionaction.md)
+- [IOHIDInterface::InterruptReportAction](./iohidinterface_interruptreportaction.md)
   Callback to handle an asynchronous report received from the HID device.
 
 

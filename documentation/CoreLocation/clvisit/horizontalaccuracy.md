@@ -1,7 +1,8 @@
 # horizontalAccuracy
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The horizontal accuracy (in meters) of the specified coordinate.
 
@@ -17,13 +18,18 @@ The horizontal accuracy (in meters) of the specified coordinate.
 var horizontalAccuracy: CLLocationAccuracy { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationAccuracy horizontalAccuracy;
+```
+
 #### Discussion
 
-The latitude and longitude specified by the [`coordinate`](clvisit/coordinate.md) property identify the center of the circle, and this value indicates the radius of that circle.
+The latitude and longitude specified by the [`coordinate`](./coordinate.md) property identify the center of the circle, and this value indicates the radius of that circle.
 
 ## See Also
 
-- [var coordinate: CLLocationCoordinate2D](clvisit/coordinate.md)
+### Getting the location
+- [var coordinate: CLLocationCoordinate2D](./coordinate.md)
   The geographical coordinate information.
 
 

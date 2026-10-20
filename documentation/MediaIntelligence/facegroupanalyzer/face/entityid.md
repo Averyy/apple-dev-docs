@@ -1,7 +1,8 @@
 # entityID
 
 **Framework**: Media Intelligence  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier for the entity this face belongs to.
 
@@ -21,19 +22,20 @@ let entityID: FaceGroupAnalyzer.Entity.ID?
 
 ## Mentions
 
-- [Detecting and grouping faces in images](detecting-and-grouping-faces-in-images.md)
+- [Detecting and grouping faces in images](../../detecting-and-grouping-faces-in-images.md)
 
 #### Discussion
 
-This value is `nil` until you call [`update(subprogress:)`](facegroupanalyzer/update(subprogress:).md). After clustering runs, every face receives an entity identifier that groups it with other faces of the same person.
+This value is `nil` until you call [`update(subprogress:)`](../update%28subprogress%29.md). After clustering runs, every face receives an entity identifier that groups it with other faces of the same person.
 
 ## See Also
 
-- [let id: FaceGroupAnalyzer.Face.ID](facegroupanalyzer/face/id-swift.property.md)
+### Identifying a face
+- [let id: FaceGroupAnalyzer.Face.ID](./id-swift.property.md)
   A unique identifier for the face.
-- [let assetID: MediaIntelligenceImageAsset.ID](facegroupanalyzer/face/assetid.md)
+- [let assetID: MediaIntelligenceImageAsset.ID](./assetid.md)
   An identifier for the image asset that contains this face.
-- [FaceGroupAnalyzer.Face.ID](facegroupanalyzer/face/id-swift.struct.md)
+- [FaceGroupAnalyzer.Face.ID](./id-swift.struct.md)
   A unique identifier for a detected face.
 
 

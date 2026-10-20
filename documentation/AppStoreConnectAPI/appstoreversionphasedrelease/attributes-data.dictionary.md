@@ -1,7 +1,8 @@
 # AppStoreVersionPhasedRelease.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an App Store Version Phased Releases resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an App Store Version Phased Releases resource.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionPhasedRelease.Attributes
 ```
 

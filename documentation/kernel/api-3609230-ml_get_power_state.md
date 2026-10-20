@@ -1,14 +1,15 @@
 # ml_get_power_state
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void ml_get_power_state(boolean_t *, boolean_t *);
 ```
 

@@ -1,7 +1,8 @@
 # init(toMemory:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized output stream that will write to memory.
 
@@ -20,6 +21,10 @@ Returns an initialized output stream that will write to memory.
 init(toMemory: ())
 ```
 
+```objc
+- (instancetype) initToMemory;
+```
+
 #### Return Value
 
 An initialized output stream that will write stream data to memory.
@@ -28,17 +33,18 @@ An initialized output stream that will write stream data to memory.
 
 The stream must be opened before it can be used.
 
-The contents of the memory stream are retrieved by passing the constant `NSStreamDataWrittenToMemoryStreamKey` to [`property(forKey:)`](stream/property(forkey:).md).
+The contents of the memory stream are retrieved by passing the constant `NSStreamDataWrittenToMemoryStreamKey` to [`property(forKey:)`](../stream/property%28forkey%29.md).
 
 ## See Also
 
-- [class func toMemory() -> Self](outputstream/tomemory.md)
+### Creating Streams
+- [class func toMemory() -> Self](./tomemory%28%29.md)
   Creates and returns an initialized output stream that will write stream data to memory.
-- [init(toBuffer: UnsafeMutablePointer<UInt8>, capacity: Int)](outputstream/init(tobuffer:capacity:).md)
+- [init(toBuffer: UnsafeMutablePointer<UInt8>, capacity: Int)](./init%28tobuffer,capacity%29.md)
   Returns an initialized output stream that can write to a provided buffer.
-- [convenience init?(toFileAtPath: String, append: Bool)](outputstream/init(tofileatpath:append:).md)
+- [convenience init?(toFileAtPath: String, append: Bool)](./init%28tofileatpath,append%29.md)
   Returns an initialized output stream for writing to a specified file.
-- [init?(url: URL, append: Bool)](outputstream/init(url:append:)-5soau.md)
+- [init?(url: URL, append: Bool)](./init%28url,append%29-5soau.md)
   Returns an initialized output stream for writing to a specified URL.
 
 

@@ -1,7 +1,8 @@
 # sessionIdentifier
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the session that owns this anchor.
 
@@ -15,15 +16,20 @@ The unique identifier of the session that owns this anchor.
 var sessionIdentifier: UUID? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSUUID * sessionIdentifier;
+```
+
 #### Discussion
 
 ARKit sets this property when a user first adds an anchor to a session. In multiuser experiences, use this ID to identify the user that created the anchor.
 
 ## See Also
 
-- [var identifier: UUID](aranchor/identifier.md)
+### Tracking Anchors
+- [var identifier: UUID](./identifier.md)
   A unique identifier for the anchor.
-- [var transform: simd_float4x4](aranchor/transform.md)
+- [var transform: simd_float4x4](./transform.md)
   A matrix encoding the position, orientation, and scale of the anchor relative to the world coordinate space of the AR session the anchor is placed in.
 
 

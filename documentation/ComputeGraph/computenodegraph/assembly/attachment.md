@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Assembly.Attachment
 
 **Framework**: Compute Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Identifies where a resource is attached in the compute graph.
 
@@ -12,7 +13,7 @@ Identifies where a resource is attached in the compute graph.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -27,19 +28,19 @@ Each buffer and texture bound to a compute pipeline is sourced from a specific a
 ## Topics
 
 ### Enumeration Cases
-- [ComputeNodeGraph.Assembly.Attachment.graph](computenodegraph/assembly/attachment/graph.md)
+- [ComputeNodeGraph.Assembly.Attachment.graph](./attachment/graph.md)
   The resource is owned by the graph and shared across all stages.
-- [ComputeNodeGraph.Assembly.Attachment.input(_:)](computenodegraph/assembly/attachment/input(_:).md)
+- [ComputeNodeGraph.Assembly.Attachment.input(_:)](./attachment/input%28_%29.md)
   The resource is read by an input port at the given address.
-- [ComputeNodeGraph.Assembly.Attachment.output(_:)](computenodegraph/assembly/attachment/output(_:).md)
+- [ComputeNodeGraph.Assembly.Attachment.output(_:)](./attachment/output%28_%29.md)
   The resource is produced by an output port at the given address.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MLImageSizeConstraintType.range
 
 **Framework**: Core ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The image feature accepts image sizes defined by a range of widths and a range of heights.
 
@@ -20,11 +21,16 @@ The image feature accepts image sizes defined by a range of widths and a range o
 case range
 ```
 
+```c
+MLImageSizeConstraintTypeRange
+```
+
 ## See Also
 
-- [MLImageSizeConstraintType.enumerated](mlimagesizeconstrainttype/enumerated.md)
+### Constraint types
+- [MLImageSizeConstraintType.enumerated](./enumerated.md)
   The image feature accepts image sizes listed in an array.
-- [MLImageSizeConstraintType.unspecified](mlimagesizeconstrainttype/unspecified.md)
+- [MLImageSizeConstraintType.unspecified](./unspecified.md)
   The image size constraint is not configured and should be ignored.
 
 

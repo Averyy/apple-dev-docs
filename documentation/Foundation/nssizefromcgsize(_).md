@@ -1,7 +1,8 @@
 # NSSizeFromCGSize(_:)
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an `NSSize` typecast from a `CGSize`.
 
@@ -15,25 +16,31 @@ Returns an `NSSize` typecast from a `CGSize`.
 func NSSizeFromCGSize(_ cgsize: CGSize) -> NSSize
 ```
 
+```c
+static NSSize NSSizeFromCGSize(CGSize cgsize);
+```
+
 #### Return Value
 
 An `NSSize` typecast from a `CGSize`.
 
 ## See Also
 
-- [func NSRectFromCGRect(CGRect) -> NSRect](nsrectfromcgrect(_:).md)
+### Related Documentation
+- [func NSRectFromCGRect(CGRect) -> NSRect](./nsrectfromcgrect%28_%29.md)
   Returns an `NSRect` typecast from a `CGRect`.
-- [func NSPointFromCGPoint(CGPoint) -> NSPoint](nspointfromcgpoint(_:).md)
+- [func NSPointFromCGPoint(CGPoint) -> NSPoint](./nspointfromcgpoint%28_%29.md)
   Returns an `NSPoint` typecast from a `CGPoint`.
-- [func NSEqualSizes(NSSize, NSSize) -> Bool](nsequalsizes(_:_:).md)
+### Managing Sizes
+- [func NSEqualSizes(NSSize, NSSize) -> Bool](./nsequalsizes%28_,_%29.md)
   Returns a Boolean that indicates whether two size values are equal.
-- [func NSMakeSize(Double, Double) -> NSSize](nsmakesize(_:_:).md)
+- [func NSMakeSize(Double, Double) -> NSSize](./nsmakesize%28_,_%29.md)
   Returns a new `NSSize` from the specified values.
-- [func NSSizeFromString(String) -> NSSize](nssizefromstring(_:).md)
+- [func NSSizeFromString(String) -> NSSize](./nssizefromstring%28_%29.md)
   Returns an `NSSize` from a text-based representation.
-- [func NSStringFromSize(NSSize) -> String](nsstringfromsize(_:).md)
+- [func NSStringFromSize(NSSize) -> String](./nsstringfromsize%28_%29.md)
   Returns a string representation of a size.
-- [func NSSizeToCGSize(NSSize) -> CGSize](nssizetocgsize(_:).md)
+- [func NSSizeToCGSize(NSSize) -> CGSize](./nssizetocgsize%28_%29.md)
   Returns a `CGSize` typecast from an `NSSize`.
 
 

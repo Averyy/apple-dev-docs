@@ -1,7 +1,8 @@
 # PaymentCardReadResult.CardEffectiveState.invalid
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The card effective state is invalid.
 

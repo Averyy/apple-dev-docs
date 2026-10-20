@@ -1,7 +1,8 @@
 # kMDQueryWantsUpdates
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+

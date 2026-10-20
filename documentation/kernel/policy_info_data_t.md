@@ -1,14 +1,15 @@
 # policy_info_data_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct policy_infos {
     ...
 } policy_info_data_t;
@@ -17,9 +18,9 @@ typedef struct policy_infos {
 ## Topics
 
 ### Instance Properties
-- [fifo](policy_info_data_t/1396954-fifo.md)
-- [rr](policy_info_data_t/1396886-rr.md)
-- [ts](policy_info_data_t/1396905-ts.md)
+- [fifo](./policy_info_data_t/api-1396954-fifo.md)
+- [rr](./policy_info_data_t/api-1396886-rr.md)
+- [ts](./policy_info_data_t/api-1396905-ts.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ulp
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unit in the last place of this value.
 
@@ -32,15 +33,16 @@ See also the `ulpOfOne` static property.
 
 ## See Also
 
-- [var significand: Double](double/significand.md)
+### Querying a Double
+- [var significand: Double](./significand.md)
   The significand of the floating-point value.
-- [var exponent: Int](double/exponent-swift.property.md)
+- [var exponent: Int](./exponent-swift.property.md)
   The exponent of the floating-point value.
-- [var nextUp: Double](double/nextup.md)
+- [var nextUp: Double](./nextup.md)
   The least representable value that compares greater than this value.
-- [var nextDown: Self](double/nextdown.md)
+- [var nextDown: Self](./nextdown.md)
   The greatest representable value that compares less than this value.
-- [var binade: Double](double/binade.md)
+- [var binade: Double](./binade.md)
   The floating-point value with the same sign and exponent as this value, but with a significand of 1.0.
 
 

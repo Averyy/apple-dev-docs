@@ -1,7 +1,8 @@
 # init(position:normal:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a clipping plane at a position and normal direction.
 

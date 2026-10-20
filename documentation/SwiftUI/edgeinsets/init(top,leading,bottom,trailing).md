@@ -1,7 +1,8 @@
 # init(top:leading:bottom:trailing:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -20,8 +21,9 @@ init(top: CGFloat, leading: CGFloat, bottom: CGFloat, trailing: CGFloat)
 
 ## See Also
 
-- [init()](edgeinsets/init.md)
-- [init(_:)](edgeinsets/init(_:).md)
+### Creating an edge inset
+- [init()](./init%28%29.md)
+- [init(_:)](./init%28_%29.md)
   Creates a 2D `EdgeInsets` from an `EdgeInsets3D`, dropping its `front` and `back` values.
 
 

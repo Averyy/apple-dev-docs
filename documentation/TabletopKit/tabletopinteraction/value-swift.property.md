@@ -1,7 +1,8 @@
 # value
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current value belonging to this interaction.
 
@@ -16,7 +17,8 @@ var value: TabletopInteraction.Value { get }
 
 ## See Also
 
-- [TabletopInteraction.Value](tabletopinteraction/value-swift.struct.md)
+### Getting the value of the interaction
+- [TabletopInteraction.Value](./value-swift.struct.md)
   A structure that provides the details about an interaction, such as the phase of the gesture and position of the equipment.
 
 

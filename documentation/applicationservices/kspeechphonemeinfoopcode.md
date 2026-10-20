@@ -1,7 +1,8 @@
 # kSpeechPhonemeInfoOpcode
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The opcode of the phoneme.
 
@@ -12,6 +13,10 @@ The opcode of the phoneme.
 
 ```swift
 let kSpeechPhonemeInfoOpcode: CFString
+```
+
+```c
+const CFStringRef kSpeechPhonemeInfoOpcode;
 ```
 
 

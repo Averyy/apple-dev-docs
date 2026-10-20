@@ -6,42 +6,18 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.utils.t
 
 # mlx.utils.tree_reduce
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.utils.tree_reduce.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.utils.tree_reduce
-
- Table of contents 
-
-## Contents
-
-# mlx.utils.tree_reduce
-
 **tree_reduce(*fn*, *tree*, *initializer=None*, *is_leaf=None*)**
 : Applies a reduction to the leaves of a Python tree.
 This function reduces Python trees into an accumulated result by applying
 the provided function `fn` to the leaves of the tree.
 Example
->>> from mlx.utils import tree_reduce
->>> tree = {"a": [1, 2, 3], "b": [4, 5]}
->>> tree_reduce(lambda acc, x: acc + x, tree, 0)
-15
+
+  ```
+  >>> from mlx.utils import tree_reduce
+  >>> tree = {"a": [1, 2, 3], "b": [4, 5]}
+  >>> tree_reduce(lambda acc, x: acc + x, tree, 0)
+  15
+  ```
 
 Parameters:
 
@@ -59,5 +35,3 @@ The accumulated value.
 
 Return type:
 *Any*
-
-** Contents

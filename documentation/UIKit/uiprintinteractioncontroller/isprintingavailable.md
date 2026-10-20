@@ -1,7 +1,8 @@
 # isPrintingAvailable
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the device supports printing.
 
@@ -17,17 +18,22 @@ A Boolean value that indicates whether the device supports printing.
 class var isPrintingAvailable: Bool { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly, getter=isPrintingAvailable) BOOL printingAvailable;
+```
+
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if the device supports printing, otherwise [`false`](https://developer.apple.com/documentation/swift/false). An application can show or hide any print buttons based on this value.
+This value is [`true`](../../Swift/true.md) if the device supports printing, otherwise [`false`](../../Swift/false.md). An application can show or hide any print buttons based on this value.
 
 ## See Also
 
-- [class func canPrint(Data) -> Bool](uiprintinteractioncontroller/canprint(_:)-4e0bs.md)
+### Determining printability
+- [class func canPrint(Data) -> Bool](./canprint%28_%29-4e0bs.md)
   Returns a Boolean value that indicates whether UIKit can print the contents of a data object.
-- [class func canPrint(URL) -> Bool](uiprintinteractioncontroller/canprint(_:)-364vj.md)
+- [class func canPrint(URL) -> Bool](./canprint%28_%29-364vj.md)
   Returns a Boolean value that indicates whether UIKit can print the file that the specified URL references.
-- [class var printableUTIs: Set<String>](uiprintinteractioncontroller/printableutis.md)
+- [class var printableUTIs: Set<String>](./printableutis.md)
   Returns a set of the Uniform Type Identifiers for the types of data that UIKit can print.
 
 

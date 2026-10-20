@@ -1,7 +1,8 @@
 # anchor
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The anchor that positions the adornment.
 
@@ -20,7 +21,8 @@ var anchor: MarkupAdornment.Anchor
 
 ## See Also
 
-- [MarkupAdornment.Anchor](markupadornment/anchor-swift.struct.md)
+### Anchoring the adornment
+- [MarkupAdornment.Anchor](./anchor-swift.struct.md)
   The positioning reference point for an adornment within the markup canvas.
 
 

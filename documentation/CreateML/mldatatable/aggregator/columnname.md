@@ -1,7 +1,8 @@
 # columnName
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the column on which the aggregator performs operations on.
 
@@ -21,9 +22,10 @@ var columnName: String
 
 ## See Also
 
-- [var operations: [MLDataTable.Aggregator.Operations]](mldatatable/aggregator/operations-swift.property.md)
+### Configuring an aggregator
+- [var operations: [MLDataTable.Aggregator.Operations]](./operations-swift.property.md)
   An array of operations to perform on a column.
-- [MLDataTable.Aggregator.Operations](mldatatable/aggregator/operations-swift.enum.md)
+- [MLDataTable.Aggregator.Operations](./operations-swift.enum.md)
   The operations that an aggregator can perform on a column in a data table.
 
 

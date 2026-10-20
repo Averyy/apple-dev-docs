@@ -1,7 +1,8 @@
 # UNAlertStyle.none
 
 **Framework**: User Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No alert.
 
@@ -18,11 +19,16 @@ No alert.
 case none
 ```
 
+```c
+UNAlertStyleNone
+```
+
 ## See Also
 
-- [UNAlertStyle.banner](unalertstyle/banner.md)
+### Presentation Styles
+- [UNAlertStyle.banner](./banner.md)
   Banner alerts.
-- [UNAlertStyle.alert](unalertstyle/alert.md)
+- [UNAlertStyle.alert](./alert.md)
   Modal alerts.
 
 

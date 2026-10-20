@@ -1,7 +1,8 @@
 # magneticField
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the magnetic field vector with respect to the device.
 
@@ -19,17 +20,22 @@ Returns the magnetic field vector with respect to the device.
 var magneticField: CMCalibratedMagneticField { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMCalibratedMagneticField magneticField;
+```
+
 #### Discussion
 
-The [`CMCalibratedMagneticField`](cmcalibratedmagneticfield.md) returned by this property gives you the total magnetic field in the device’s vicinity without device bias. Unlike the [`magneticField`](cmmagnetometerdata/magneticfield.md) property of the [`CMMagnetometerData`](cmmagnetometerdata.md) class, these values reflect the earth’s magnetic field plus surrounding fields, minus device bias.
+The [`CMCalibratedMagneticField`](../cmcalibratedmagneticfield.md) returned by this property gives you the total magnetic field in the device’s vicinity without device bias. Unlike the [`magneticField`](../cmmagnetometerdata/magneticfield.md) property of the [`CMMagnetometerData`](../cmmagnetometerdata.md) class, these values reflect the earth’s magnetic field plus surrounding fields, minus device bias.
 
-If the device does not have a magnetometer, the `accuracy` field of the property’s value (a [`CMCalibratedMagneticField`](cmcalibratedmagneticfield.md) structure) is [`CMMagneticFieldCalibrationAccuracy.uncalibrated`](cmmagneticfieldcalibrationaccuracy/uncalibrated.md).
+If the device does not have a magnetometer, the `accuracy` field of the property’s value (a [`CMCalibratedMagneticField`](../cmcalibratedmagneticfield.md) structure) is [`CMMagneticFieldCalibrationAccuracy.uncalibrated`](../cmmagneticfieldcalibrationaccuracy/uncalibrated.md).
 
 ## See Also
 
-- [struct CMCalibratedMagneticField](cmcalibratedmagneticfield.md)
+### Getting the Calibrated Magnetic Field
+- [struct CMCalibratedMagneticField](../cmcalibratedmagneticfield.md)
   Calibrated magnetic field data and an estimate of the accuracy of the calibration.
-- [enum CMMagneticFieldCalibrationAccuracy](cmmagneticfieldcalibrationaccuracy.md)
+- [enum CMMagneticFieldCalibrationAccuracy](../cmmagneticfieldcalibrationaccuracy.md)
   Indicates the calibration accuracy of a magnetic field estimate
 
 

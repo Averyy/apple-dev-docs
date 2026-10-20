@@ -1,7 +1,8 @@
 # controlPointFormat
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format of the control points in the buffer.
 
@@ -19,9 +20,13 @@ The format of the control points in the buffer.
 var controlPointFormat: MTLAttributeFormat { get set }
 ```
 
+```objc
+@property (nonatomic) MTLAttributeFormat controlPointFormat;
+```
+
 #### Discussion
 
-The default value is [`MTLAttributeFormat.float3`](mtlattributeformat/float3.md).
+The default value is [`MTLAttributeFormat.float3`](../mtlattributeformat/float3.md).
 
 
 ---

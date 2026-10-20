@@ -1,7 +1,8 @@
 # overrideUserInterfaceStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Overrides the userInterfaceStyle of the bar.
 
@@ -14,6 +15,10 @@ Overrides the userInterfaceStyle of the bar.
 
 ```swift
 var overrideUserInterfaceStyle: UIUserInterfaceStyle { get set }
+```
+
+```objc
+@property (nonatomic, assign, readwrite) UIUserInterfaceStyle overrideUserInterfaceStyle;
 ```
 
 

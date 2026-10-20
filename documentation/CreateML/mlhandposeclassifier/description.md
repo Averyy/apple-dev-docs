@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the hand pose classifier.
 
@@ -20,9 +21,10 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](mlhandposeclassifier/debugdescription.md)
+### Describing a hand pose classifier
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the hand pose classifier suitable for debugging.
-- [var playgroundDescription: Any](mlhandposeclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the hand pose classifier that’s viewable in a playground.
 
 

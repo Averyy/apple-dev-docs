@@ -1,7 +1,8 @@
 # reset()
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets the default state for the vertex descriptor.
 
@@ -10,7 +11,7 @@ Resets the default state for the vertex descriptor.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ Resets the default state for the vertex descriptor.
 func reset()
 ```
 
+```objc
+- (void) reset;
+```
+
 #### Discussion
 
-After reset, each element of the [`attributes`](mtlvertexdescriptor/attributes.md) array has a default vertex attribute descriptor, and each element of the [`layouts`](mtlvertexdescriptor/layouts.md) array has a default vertex buffer layout descriptor.
+After reset, each element of the [`attributes`](./attributes.md) array has a default vertex attribute descriptor, and each element of the [`layouts`](./layouts.md) array has a default vertex buffer layout descriptor.
 
 
 ---

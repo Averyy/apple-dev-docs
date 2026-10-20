@@ -1,6 +1,7 @@
 # Reducing your app’s launch time
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Create a more responsive experience with your app by minimizing time spent in startup.
 
@@ -10,7 +11,7 @@ A user’s first experience with an app is the wait while it launches. The OS in
 
 When the user taps an app’s icon on their Home screen, iOS prepares the app for launch before handing control over to the app process. The app then runs code to get ready to draw its UI to the screen. Even after the app’s UI is visible, the app may still be preparing content or replacing an interstitial interface (for example, a loading spinner) with the final controls. Each of these steps contributes to the total perceived launch time of the app, and you can take steps to reduce their duration.
 
-##### Understand App Activations
+##### Understand app activations
 
 An *activation* happens when a user clicks on your icon or otherwise goes back to your app.
 
@@ -18,7 +19,7 @@ On iOS, an activation can either be a launch or a resume. A *launch* is when the
 
 On macOS, the system will not terminate your process as part of normal use. An activation may require the system to bring in memory from the compressor, swap, and re-render.
 
-##### Understand Cold and Warm Launch
+##### Understand cold and warm launch
 
 Your app activation varies significantly depending on previous actions on the device.
 
@@ -28,17 +29,17 @@ Conversely, if a user just played a memory-intensive game, and they then re-ente
 
 Think of warm and cold launches as a spectrum. In real use, your users will experience a range of performance based on the state of the device. This spectrum is why testing in a variety of conditions is essential to predicting your real world performance.
 
-##### Gather Metrics About Your Apps Launch Time
+##### Gather metrics about your app’s launch time
 
 Variations in launching mean that understanding how your app is operating in the field can be challenging.
 
 For iOS apps, use the Launch Time pane in the Xcode Organizer to view the number of milliseconds between the user tapping your icon and when your first screen is drawn, after the static splash screen. Use the filters to check launch times on different devices and for the typical (50th percentile) and longest (90th percentile) times. Compare the launch time of the current release with a previous one by clicking on the bar in the graph for the desired release.
 
-![Screenshot of the Launch Time metric pane in the Xcode Organizer. From left to right is the list of metrics and reports, the metric UI with a bar graph showing the launch time over the last 8 app versions, the selected version bar highlighted in the graph, and the comparison data for the selected and latest versions on the right side. ](/images/com.apple.Xcode/reducing-your-app-s-launch-time-1@2x.png)
+![Screenshot of the Launch Time metric pane in the Xcode Organizer. From left to right is the list of metrics and reports, the metric UI with a bar graph showing the launch time over the last 8 app versions, the selected version bar highlighted in the graph, and the comparison data for the selected and latest versions on the right side. ](https://developer.apple.com/tutorials/images/com.apple.Xcode/reducing-your-app-s-launch-time-1@2x.png)
 
-[`MetricKit`](https://developer.apple.com/documentation/metrickit) reports the time to resume the application in addition to the launch time. [`TimeToFirstDrawMetric`](https://developer.apple.comhttps://developer.apple.com/documentation/metrickit/timetofirstdrawmetric) and [`ApplicationResumeTimeMetric`](https://developer.apple.comhttps://developer.apple.com/documentation/metrickit/applicationresumetimemetric) contain histograms of your launch and resume times for the previous day.
+[MetricKit](../MetricKit/MetricKit.md) reports the time to resume the application in addition to the launch time. [TimeToFirstDrawMetric](../MetricKit/timetofirstdrawmetric.md) and [ApplicationResumeTimeMetric](../MetricKit/applicationresumetimemetric.md) contain histograms of your launch and resume times for the previous day.
 
-##### Identify Areas of Launch Time Improvement
+##### Identify areas of launch time improvement
 
 To determine which processes take up time when your iOS app launches, use the Launches pane in the Xcode Organizer. The report area displays an ordered list of the longest running functions that the system calls when your app starts in the same row as the percentage of the launch time the process takes.
 
@@ -52,15 +53,15 @@ Clicking a report in the Report List shows the function that ran along with its 
 
 Prioritize reducing launch times by using the percent of time spent metric, as well as information on the operating system and the impacted device types. Identify the code responsible for the increase in app launch time by using the function signature for a specific report in the Report List and the corresponding stack trace. After updating the code and verifying the fix, mark the report as resolved.
 
-![Screenshot of the Launches pane in the Xcode Organizer. From left to right, the Report List which is a list of functions taking the most time to run as a percentage, the corresponding call stack for the function selected in the Report List, and launch log details and statistics including the 14-day reporting trend.](/images/com.apple.Xcode/reducing-your-app-s-launch-time-7@2x.png)
+![Screenshot of the Launches pane in the Xcode Organizer. From left to right, the Report List which is a list of functions taking the most time to run as a percentage, the corresponding call stack for the function selected in the Report List, and launch log details and statistics including the 14-day reporting trend.](https://developer.apple.com/tutorials/images/com.apple.Xcode/reducing-your-app-s-launch-time-7@2x.png)
 
-##### Get Coding Assistant Recommendations for Launch Time Issues
+##### Get coding assistant recommendations for launch time issues
 
 After selecting a launch report, click Generate Recommendations in the Inspector to get assisted triage in Xcode. After selecting a workspace, Xcode opens your project and pastes the stack trace and launch-time contribution into the coding assistant to help you identify and fix the root cause of the launch time regression.
 
-##### Profile Your Apps Launch Time
+##### Profile your app’s launch time
 
-Once you know how long it takes your app to launch, you need to know why it takes that long. Profiling your app’s code is a way to gather the data you need about where your app spends its time. During the profiling process, [`Instruments`](https://developer.apple.comhttps://help.apple.com/instruments/mac/current/#/dev7b09c84f5) gathers information about what methods your app called and how much time it spent executing them. Use this data to identify potential bottlenecks or issues in your code.
+Once you know how long it takes your app to launch, you need to know why it takes that long. Profiling your app’s code is a way to gather the data you need about where your app spends its time. During the profiling process, [Instruments](https://help.apple.com/instruments/mac/current/#/dev7b09c84f5) gathers information about what methods your app called and how much time it spent executing them. Use this data to identify potential bottlenecks or issues in your code.
 
 Profile your app in Instruments by using the App Launch template. During your launch, Instruments gathers a time profile and thread-state trace. Use the time profile to identify the code your app is running during launch. Use the thread-state trace to find times when threads are active or blocked, and discover the reasons that threads are blocked.
 
@@ -70,17 +71,17 @@ Profile your app’s launch time in different situations to see how these factor
 - Force quit your app, and then launch it. The system will terminate your app process, and the system will perform a warm launch.
 - If you open other apps and then launch yours, the system partially evicts your app and its dependencies This mirrors a common user workflow.
 - Use a very large app — for example, one that works with many graphical resources or live camera input — and then launch your app. The system will likely terminate your app’s process
-terminated, which means the system needs to page in many of the app’s dependencies during your next launch.
+  terminated, which means the system needs to page in many of the app’s dependencies during your next launch.
 
-![Image showing a thread-state trace in Instruments, and a description of a blocked thread.](/images/com.apple.Xcode/reducing-your-app-s-launch-time-2.png)
+![Image showing a thread-state trace in Instruments, and a description of a blocked thread.](https://developer.apple.com/tutorials/images/com.apple.Xcode/reducing-your-app-s-launch-time-2.png)
 
 UIKit draws views and handles user events on the main thread, so that thread must be available to draw the first frame when the app has finished launching. In the Instruments thread trace, time that the main thread spends running or preempted is time that it cannot draw views or respond to user input events.
 
 For a different view of app launch, profile the app using the Time Profile template. The App Life Cycle timeline divides activity during app launch into process initialization, UIKit initialization, UIKit initial scene rendering, and initial frame rendering.
 
-![Image showing the App Life Cycle timeline in Instruments.](/images/com.apple.Xcode/reducing-your-app-s-launch-time-3.png)
+![Image showing the App Life Cycle timeline in Instruments.](https://developer.apple.com/tutorials/images/com.apple.Xcode/reducing-your-app-s-launch-time-3.png)
 
-##### Reduce Dependencies on External Frameworks and Dynamic Libraries
+##### Reduce dependencies on external frameworks and dynamic libraries
 
 Before any of your code runs, the system must find and load your app’s executable and any libraries on which it depends.
 
@@ -88,11 +89,11 @@ The dynamic loader (`dyld`) loads the app’s executable file, and examines the 
 
 Each additional third-party framework that your app loads adds to the launch time. Although `dyld` caches a lot of this work in a launch closure when the user installs the app, the size of the launch closure and the amount of work done after loading it still depend on the number and sizes of the libraries loaded. You can reduce your app’s launch time by limiting the number of 3rd party frameworks you embed. Frameworks that you import or add to your app’s Linked Frameworks and Libraries setting in the Target editor in Xcode count toward this number. Built-in frameworks, like CoreFoundation, have a much lower impact on launch, because they use shared memory with other processes that use the same framework.
 
-##### Use Mergeable Dynamic Libraries
+##### Use mergeable dynamic libraries
 
-In Xcode 15 or later, you can use mergeable dynamic libraries to get app launch times similar to static linking in release builds, without losing dynamically linked build times in debug builds. Mergeable dynamic libraries include extra metadata so that Xcode can merge the library into another binary. For more information on mergable libraries, see [`Configuring your project to use mergeable libraries`](configuring-your-project-to-use-mergeable-libraries.md).
+In Xcode 15 or later, you can use mergeable dynamic libraries to get app launch times similar to static linking in release builds, without losing dynamically linked build times in debug builds. Mergeable dynamic libraries include extra metadata so that Xcode can merge the library into another binary. For more information on mergable libraries, see [Configuring your project to use mergeable libraries](./configuring-your-project-to-use-mergeable-libraries.md).
 
-##### Remove or Reduce the Static Initializers in Your Code
+##### Remove or reduce the static initializers in your code
 
 Certain code in an app must run before iOS runs your app’s `main()` function, adding to the launch time. This code includes:
 
@@ -103,11 +104,11 @@ Certain code in an app must run before iOS runs your app’s `main()` function, 
 
 Where possible, move the code to a later stage of the app’s life cycle, after the app has finished launching but before the results of the work are needed. In Instruments, the dyld Activity instrument measures the time your app spends running static initializers and reports other useful metrics to help you speed up your app’s launch.
 
-##### Move Expensive Tasks Out of Your App Delegate
+##### Move expensive tasks out of your app delegate
 
 Audit your initialization code to delay expensive work. The system calls methods of your app delegate during the launch cycle to give you time to perform required tasks. These methods execute synchronously on the main thread, and the launch cycle doesn’t finish until both methods return successfully. As a result, any expensive tasks you perform from the methods delay the completion of that launch cycle.
 
-UIKit initializes an instance of your app delegate class (the class that conforms to the [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate) protocol) and sends it the [`application(_:willFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:)) and [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:)) messages. UIKit sends these messages on the main thread, and time spent executing code in these methods increases your app’s launch time. Do only the work necessary to prepare your app’s initial display in these methods; defer other tasks to more appropriate times in the app’s life cycle.
+UIKit initializes an instance of your app delegate class (the class that conforms to the [`UIApplicationDelegate`](../UIKit/uiapplicationdelegate.md) protocol) and sends it the [`application(_:willFinishLaunchingWithOptions:)`](../UIKit/uiapplicationdelegate/application%28_,willfinishlaunchingwithoptions%29.md) and [`application(_:didFinishLaunchingWithOptions:)`](../UIKit/uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md) messages. UIKit sends these messages on the main thread, and time spent executing code in these methods increases your app’s launch time. Do only the work necessary to prepare your app’s initial display in these methods; defer other tasks to more appropriate times in the app’s life cycle.
 
 Defer synchronization of the data model with a network service until the app is running, if it makes sense to show stale content to the user while the content is being refreshed. Move the synchronization to an asynchronous background queue. Register a background task to fetch updates from the network service, to reduce both the staleness of data on launch and the amount of work needed to bring it up to date.
 
@@ -115,19 +116,19 @@ Initialize nonview functionality, such as persistent storage and location servic
 
 Initialize a restricted subset of the app’s behavior that’s known to be viable on initial launch. For example, a task manager app can let the user create a new task on launch, even if the app hasn’t yet retrieved all of the user’s existing tasks from its persistent storage or network service.
 
-##### Reduce the Complexity of Your Initial Views
+##### Reduce the complexity of your initial views
 
 Xcode Organizer and MetricKit both use the time to first frame as the measurement of launch time, including the time required to draw the views that are displayed on that first frame. You can only modify the view hierarchy on the main thread; therefore, a more complicated view hierarchy with more views takes longer to render than a simple hierarchy.
 
-Reducing the complexity of your app’s initial view improves the load time, as does replacing custom views that override [`draw(_:)`](https://developer.apple.com/documentation/uikit/uiview/draw(_:)) with standard views. Where you need custom drawing, pay attention to the rectangle passed to `draw(_:)` and only render parts of the view within that rectangle. Doing so avoids decoding images and computing colors, coordinates, and drawing commands in parts of the view that aren’t rendered to the screen.
+Reducing the complexity of your app’s initial view improves the load time, as does replacing custom views that override [`draw(_:)`](../UIKit/uiview/draw%28_%29.md) with standard views. Where you need custom drawing, pay attention to the rectangle passed to `draw(_:)` and only render parts of the view within that rectangle. Doing so avoids decoding images and computing colors, coordinates, and drawing commands in parts of the view that aren’t rendered to the screen.
 
-##### Track Additional Startup Activities
+##### Track additional startup activities
 
 The launch-time metric measures the time from the user tapping the app icon on their Home screen to the app drawing its first frame to the screen. Drawing the `default.png` or launch-screen storyboard happens during this time, and its appearance doesn’t end the launch-time counter.
 
 If your app still has to run code after it has drawn its first frame, but before the user can begin using the app, that time doesn’t contribute to the launch-time metric. Extra startup activities still contribute to the user’s perception of the app’s responsiveness. For example, if your app renders a document after opening, the user will likely wait on the document to render and perceive it as part of your launch time, even though the system will end the launch measurement while you show a loading icon.
 
-To track additional startup activities, create an [`OSLog`](https://developer.apple.com/documentation/os/oslog) object in your app with the category [`pointsOfInterest`](https://developer.apple.com/documentation/os/oslog/category/pointsofinterest). Use the `os_signpost` function to record the beginning and end of your app’s preparation tasks, as shown in the following example:
+To track additional startup activities, create an [`OSLog`](../os/oslog.md) object in your app with the category [`pointsOfInterest`](../os/oslog/category/pointsofinterest.md). Use the `os_signpost` function to record the beginning and end of your app’s preparation tasks, as shown in the following example:
 
 ```swift
 class ViewController: UIViewController {
@@ -145,25 +146,26 @@ class ViewController: UIViewController {
 
 In Instruments, Points of Interest displays the os_signposts in its timeline. You can use this information to correlate activity in your app with the app’s additional startup tasks.
 
-![Screenshot showing the Points of Interest instrument, with a timeline of regions beginning and ending during an app’s additional startup activities.](/images/com.apple.Xcode/reducing-your-app-s-launch-time-5@2x.png)
+![Screenshot showing the Points of Interest instrument, with a timeline of regions beginning and ending during an app’s additional startup activities.](https://developer.apple.com/tutorials/images/com.apple.Xcode/reducing-your-app-s-launch-time-5@2x.png)
 
 ## See Also
 
-- [Analyzing responsiveness issues in your shipping app](analyzing-responsiveness-issues-in-your-shipping-app.md)
+### Responsiveness
+- [Analyzing responsiveness issues in your shipping app](./analyzing-responsiveness-issues-in-your-shipping-app.md)
   Identify responsiveness issues your users encounter, and use the hang and hitch data in Xcode Organizer to determine which issues are most important to fix.
-- [Improving app responsiveness](improving-app-responsiveness.md)
+- [Improving app responsiveness](./improving-app-responsiveness.md)
   Create a user experience that feels responsive by removing hangs and hitches from your app.
-- [Understanding user interface responsiveness](understanding-user-interface-responsiveness.md)
+- [Understanding user interface responsiveness](./understanding-user-interface-responsiveness.md)
   Make your app more responsive by examining the event-handling and rendering loop.
-- [Understanding and improving SwiftUI performance](understanding-and-improving-swiftui-performance.md)
+- [Understanding and improving SwiftUI performance](./understanding-and-improving-swiftui-performance.md)
   Identify and address long-running view updates, and reduce the frequency of updates.
-- [Understanding hangs in your app](understanding-hangs-in-your-app.md)
+- [Understanding hangs in your app](./understanding-hangs-in-your-app.md)
   Determine the cause for delays in user interactions by examining the main thread and the main run loop.
-- [Understanding hitches in your app](understanding-hitches-in-your-app.md)
+- [Understanding hitches in your app](./understanding-hitches-in-your-app.md)
   Determine the cause of interruptions in motion by examining the render loop.
-- [Diagnosing performance issues early](diagnosing-performance-issues-early.md)
+- [Diagnosing performance issues early](./diagnosing-performance-issues-early.md)
   Diagnose potential performance issues in your app during development and testing with the Thread Performance Checker tool in Xcode.
-- [Reducing terminations in your app](reduce-terminations-in-your-app.md)
+- [Reducing terminations in your app](./reduce-terminations-in-your-app.md)
   Minimize how frequently the system stops your app by addressing common termination reasons.
 
 

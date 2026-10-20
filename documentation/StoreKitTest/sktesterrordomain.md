@@ -1,7 +1,8 @@
 # SKTestErrorDomain
 
 **Framework**: StoreKit Test  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that represents the domain for error codes in the testing environment.
 
@@ -20,9 +21,14 @@ A constant that represents the domain for error codes in the testing environment
 let SKTestErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const SKTestErrorDomain;
+```
+
 ## See Also
 
-- [struct SKTestError](sktesterror.md)
+### StoreKit transaction testing errors
+- [struct SKTestError](./sktesterror.md)
   Information about an error that the testing environment returns.
 
 

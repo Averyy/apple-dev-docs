@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The multiarray’s multidimensional shape as a number array in which each element’s value is the size of the corresponding dimension.
 
@@ -20,13 +21,18 @@ The multiarray’s multidimensional shape as a number array in which each elemen
 var shape: [NSNumber] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSNumber *> * shape;
+```
+
 ## See Also
 
-- [var count: Int](mlmultiarray/count.md)
+### Inspecting a multiarray
+- [var count: Int](./count.md)
   The total number of elements in the multiarray.
-- [var dataType: MLMultiArrayDataType](mlmultiarray/datatype.md)
+- [var dataType: MLMultiArrayDataType](./datatype.md)
   The underlying type of the multiarray.
-- [var strides: [NSNumber]](mlmultiarray/strides.md)
+- [var strides: [NSNumber]](./strides.md)
   A number array in which each element is the number of memory locations that span the length of the corresponding dimension.
 
 

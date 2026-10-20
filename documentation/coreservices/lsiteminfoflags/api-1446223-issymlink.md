@@ -1,7 +1,8 @@
 # isSymlink
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Item is a UNIX symbolic link.
 

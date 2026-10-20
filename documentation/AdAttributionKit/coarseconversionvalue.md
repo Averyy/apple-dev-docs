@@ -1,7 +1,8 @@
 # CoarseConversionValue
 
 **Framework**: AdAttributionKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe developer-defined, relative-attribution conversion values.
 
@@ -18,36 +19,37 @@ enum CoarseConversionValue
 
 #### Overview
 
-Use these values to differentiate between the value of a person’s actions that are meaningful for a specific interaction. These values have no effect on the framework, but calling the [`updateConversionValue(_:lockPostback:)`](postback/updateconversionvalue(_:lockpostback:).md) method with the value with [`CoarseConversionValue.low`](coarseconversionvalue/low.md), for example, causes the postback that the ad network receives to have a field `"coarse-conversion-value": "low"`.
+Use these values to differentiate between the value of a person’s actions that are meaningful for a specific interaction. These values have no effect on the framework, but calling the [`updateConversionValue(_:lockPostback:)`](./postback/updateconversionvalue%28_,lockpostback%29.md) method with the value with [`CoarseConversionValue.low`](./coarseconversionvalue/low.md), for example, causes the postback that the ad network receives to have a field `"coarse-conversion-value": "low"`.
 
 ## Topics
 
 ### Enumeration Cases
-- [CoarseConversionValue.high](coarseconversionvalue/high.md)
+- [CoarseConversionValue.high](./coarseconversionvalue/high.md)
   A value that represents a developer-defined, coarse conversion value that is high.
-- [CoarseConversionValue.low](coarseconversionvalue/low.md)
+- [CoarseConversionValue.low](./coarseconversionvalue/low.md)
   A value that represents a developer-defined, coarse conversion value that is low.
-- [CoarseConversionValue.medium](coarseconversionvalue/medium.md)
+- [CoarseConversionValue.medium](./coarseconversionvalue/medium.md)
   A value that represents a developer-defined, coarse conversion value that is medium.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Postback](postback.md)
+### Postbacks
+- [struct Postback](./postback.md)
   A structure that provides methods you use to update conversion values for ad attributions.
-- [struct PostbackUpdate](postbackupdate.md)
+- [struct PostbackUpdate](./postbackupdate.md)
   Values you use to update properties in a postback, such as the conversion value.
 
 

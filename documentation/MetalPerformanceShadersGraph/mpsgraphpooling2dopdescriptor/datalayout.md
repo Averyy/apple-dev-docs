@@ -1,9 +1,10 @@
 # dataLayout
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Defines the data layout of the input data in the forward pass. See: [`MPSGraphTensorNamedDataLayout`](mpsgraphtensornameddatalayout.md).
+Defines the data layout of the input data in the forward pass. See: [`MPSGraphTensorNamedDataLayout`](../mpsgraphtensornameddatalayout.md).
 
 **Availability**:
 - iOS 14.0+
@@ -17,6 +18,10 @@ Defines the data layout of the input data in the forward pass. See: [`MPSGraphTe
 
 ```swift
 var dataLayout: MPSGraphTensorNamedDataLayout { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSGraphTensorNamedDataLayout dataLayout;
 ```
 
 

@@ -1,7 +1,8 @@
 # holeCount
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of entries in the holes buffer.
 
@@ -19,9 +20,14 @@ The number of entries in the holes buffer.
 var holeCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger holeCount;
+```
+
 ## See Also
 
-- [var holes: (any MDLMeshBuffer)?](mdlsubmeshtopology/holes.md)
+### Identifying Holes
+- [var holes: (any MDLMeshBuffer)?](./holes.md)
   An index buffer identifying faces to be treated as holes in the mesh during surface subdivision.
 
 

@@ -1,7 +1,8 @@
 # kUCKeyActionDisplay
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The user is requesting information for key display, as in the Key Caps application.
 

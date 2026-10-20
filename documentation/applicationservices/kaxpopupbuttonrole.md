@@ -1,7 +1,8 @@
 # kAXPopUpButtonRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A pop-up button.
 
@@ -12,6 +13,10 @@ A pop-up button.
 
 ```swift
 var kAXPopUpButtonRole: String { get }
+```
+
+```c
+#define kAXPopUpButtonRole
 ```
 
 

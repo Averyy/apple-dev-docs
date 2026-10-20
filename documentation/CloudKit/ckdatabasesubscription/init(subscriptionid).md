@@ -1,7 +1,8 @@
 # init(subscriptionID:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a named subscription for all records in a database.
 
@@ -11,7 +12,7 @@ Creates a named subscription for all records in a database.
 - Mac Catalyst 13.1+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 - Swift 4.2+
 
@@ -27,9 +28,10 @@ convenience init(subscriptionID: CKSubscription.ID)
 
 ## See Also
 
-- [convenience init()](ckdatabasesubscription/init.md)
+### Creating a Database Subscription
+- [convenience init()](./init%28%29.md)
   Creates an empty database subscription.
-- [init(coder: NSCoder)](ckdatabasesubscription/init(coder:).md)
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Creates a database subscription from a serialized instance.
 
 

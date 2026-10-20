@@ -1,7 +1,8 @@
 # AVCaptureDevice.WhiteBalanceMode.autoWhiteBalance
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that automatically manages white balance.
 
@@ -18,11 +19,16 @@ A mode that automatically manages white balance.
 case autoWhiteBalance
 ```
 
+```c
+AVCaptureWhiteBalanceModeAutoWhiteBalance
+```
+
 ## See Also
 
-- [AVCaptureDevice.WhiteBalanceMode.locked](avcapturedevice/whitebalancemode-swift.enum/locked.md)
+### White balance modes
+- [AVCaptureDevice.WhiteBalanceMode.locked](./locked.md)
   A mode that locks the white balance state.
-- [AVCaptureDevice.WhiteBalanceMode.continuousAutoWhiteBalance](avcapturedevice/whitebalancemode-swift.enum/continuousautowhitebalance.md)
+- [AVCaptureDevice.WhiteBalanceMode.continuousAutoWhiteBalance](./continuousautowhitebalance.md)
   A mode that continuously monitors white balance and adjusts when necessary.
 
 

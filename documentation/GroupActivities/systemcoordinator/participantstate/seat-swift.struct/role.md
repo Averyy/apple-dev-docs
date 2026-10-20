@@ -1,7 +1,8 @@
 # role
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The role attached to this seat, if any.
 

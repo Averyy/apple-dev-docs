@@ -1,7 +1,8 @@
 # monotone
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Interpolate data points with a cubic spline that preserves monotonicity of the data.
 

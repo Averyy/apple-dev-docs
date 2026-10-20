@@ -1,7 +1,8 @@
 # subprotocols(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the list of supported application protocols that will be presented to a WebSocket server during connection establishment.
 

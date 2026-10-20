@@ -1,13 +1,14 @@
 # addFlag
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The display has been added to the active display list.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,27 +16,32 @@ The display has been added to the active display list.
 static var addFlag: CGDisplayChangeSummaryFlags { get }
 ```
 
+```c
+kCGDisplayAddFlag
+```
+
 ## See Also
 
-- [static var beginConfigurationFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/beginconfigurationflag.md)
+### Constants
+- [static var beginConfigurationFlag: CGDisplayChangeSummaryFlags](./beginconfigurationflag.md)
   The display configuration is about to change.
-- [static var movedFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/movedflag.md)
+- [static var movedFlag: CGDisplayChangeSummaryFlags](./movedflag.md)
   The location of the upper-left corner of the display in the global display coordinate space has changed.
-- [static var setMainFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/setmainflag.md)
+- [static var setMainFlag: CGDisplayChangeSummaryFlags](./setmainflag.md)
   The display is now the main display.
-- [static var setModeFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/setmodeflag.md)
+- [static var setModeFlag: CGDisplayChangeSummaryFlags](./setmodeflag.md)
   The display mode has changed.
-- [static var removeFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/removeflag.md)
+- [static var removeFlag: CGDisplayChangeSummaryFlags](./removeflag.md)
   The display has been removed from the active display list.
-- [static var enabledFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/enabledflag.md)
+- [static var enabledFlag: CGDisplayChangeSummaryFlags](./enabledflag.md)
   The display has been enabled.
-- [static var disabledFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/disabledflag.md)
+- [static var disabledFlag: CGDisplayChangeSummaryFlags](./disabledflag.md)
   The display has been disabled.
-- [static var mirrorFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/mirrorflag.md)
+- [static var mirrorFlag: CGDisplayChangeSummaryFlags](./mirrorflag.md)
   The display is now mirroring another display.
-- [static var unMirrorFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/unmirrorflag.md)
+- [static var unMirrorFlag: CGDisplayChangeSummaryFlags](./unmirrorflag.md)
   The display is no longer mirroring another display.
-- [static var desktopShapeChangedFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/desktopshapechangedflag.md)
+- [static var desktopShapeChangedFlag: CGDisplayChangeSummaryFlags](./desktopshapechangedflag.md)
 
 
 ---

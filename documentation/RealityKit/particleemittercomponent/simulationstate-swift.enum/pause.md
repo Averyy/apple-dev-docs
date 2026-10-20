@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.SimulationState.pause
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Simulation will pause.
 

@@ -1,18 +1,19 @@
 # collisionImpulse
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The impulse that specifies how hard these two bodies struck each other in Newton-seconds.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The impulse that specifies how hard these two bodies struck each other in Newton
 var collisionImpulse: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat collisionImpulse;
+```
+
 ## See Also
 
-- [var bodyA: SKPhysicsBody](skphysicscontact/bodya.md)
+### Inspecting the Contact Properties
+- [var bodyA: SKPhysicsBody](./bodya.md)
   The first body in the contact.
-- [var bodyB: SKPhysicsBody](skphysicscontact/bodyb.md)
+- [var bodyB: SKPhysicsBody](./bodyb.md)
   The second body in the contact.
-- [var contactPoint: CGPoint](skphysicscontact/contactpoint.md)
+- [var contactPoint: CGPoint](./contactpoint.md)
   The contact point between the two physics bodies, in scene coordinates.
-- [var contactNormal: CGVector](skphysicscontact/contactnormal.md)
+- [var contactNormal: CGVector](./contactnormal.md)
   The normal vector specifying the direction of the collision.
 
 

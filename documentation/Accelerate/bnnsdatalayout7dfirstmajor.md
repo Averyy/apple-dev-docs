@@ -1,7 +1,8 @@
 # BNNSDataLayout7DFirstMajor
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that represents a 7D first-major tensor.
 
@@ -18,6 +19,10 @@ A constant that represents a 7D first-major tensor.
 
 ```swift
 var BNNSDataLayout7DFirstMajor: BNNSDataLayout { get }
+```
+
+```c
+BNNSDataLayout7DFirstMajor
 ```
 
 #### Discussion
@@ -38,7 +43,8 @@ The value `(i, j, k, l, m, n, o)` is at index:
 
 ## See Also
 
-- [var BNNSDataLayout7DLastMajor: BNNSDataLayout](bnnsdatalayout7dlastmajor.md)
+### 7D Data Layouts
+- [var BNNSDataLayout7DLastMajor: BNNSDataLayout](./bnnsdatalayout7dlastmajor.md)
   A constant that represents a 7D last-major tensor.
 
 

@@ -1,9 +1,10 @@
 # MDLMaterialTextureWrapMode
 
 **Framework**: Model I/O  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Modes for sampling textures at coordinates outside the texture bounds, used by the [`sWrapMode`](mdltexturefilter/swrapmode.md), [`tWrapMode`](mdltexturefilter/twrapmode.md), and [`rWrapMode`](mdltexturefilter/rwrapmode.md) properties.
+Modes for sampling textures at coordinates outside the texture bounds, used by the [`sWrapMode`](./mdltexturefilter/swrapmode.md), [`tWrapMode`](./mdltexturefilter/twrapmode.md), and [`rWrapMode`](./mdltexturefilter/rwrapmode.md) properties.
 
 **Availability**:
 - iOS 9.0+
@@ -19,34 +20,39 @@ Modes for sampling textures at coordinates outside the texture bounds, used by t
 enum MDLMaterialTextureWrapMode
 ```
 
+```c
+enum MDLMaterialTextureWrapMode : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MDLMaterialTextureWrapMode.clamp](mdlmaterialtexturewrapmode/clamp.md)
+- [MDLMaterialTextureWrapMode.clamp](./mdlmaterialtexturewrapmode/clamp.md)
   Sampling at any texture coordinate outside the `0.0` to `1.0` range returns the texel color from the nearest edge.
-- [MDLMaterialTextureWrapMode.repeat](mdlmaterialtexturewrapmode/repeat.md)
+- [MDLMaterialTextureWrapMode.repeat](./mdlmaterialtexturewrapmode/repeat.md)
   Sampling at texture coordinates outside the `0.0` to `1.0` range results in a repeated tiling effect.
-- [MDLMaterialTextureWrapMode.mirror](mdlmaterialtexturewrapmode/mirror.md)
+- [MDLMaterialTextureWrapMode.mirror](./mdlmaterialtexturewrapmode/mirror.md)
   Sampling at texture coordinates outside the `0.0` to `1.0` range results in a mirrored tiling effect.
 ### Initializers
-- [init?(rawValue: UInt)](mdlmaterialtexturewrapmode/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mdlmaterialtexturewrapmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum MDLMaterialTextureFilterMode](mdlmaterialtexturefiltermode.md)
-  Modes for sampling textures at coordinates between texels, used by the [`minFilter`](mdltexturefilter/minfilter.md) and [`magFilter`](mdltexturefilter/magfilter.md) properties.
-- [enum MDLMaterialMipMapFilterMode](mdlmaterialmipmapfiltermode.md)
-  Modes for sampling textures at sizes between mipmap levels, used by the [`mipFilter`](mdltexturefilter/mipfilter.md) property.
+### Constants
+- [enum MDLMaterialTextureFilterMode](./mdlmaterialtexturefiltermode.md)
+  Modes for sampling textures at coordinates between texels, used by the [`minFilter`](./mdltexturefilter/minfilter.md) and [`magFilter`](./mdltexturefilter/magfilter.md) properties.
+- [enum MDLMaterialMipMapFilterMode](./mdlmaterialmipmapfiltermode.md)
+  Modes for sampling textures at sizes between mipmap levels, used by the [`mipFilter`](./mdltexturefilter/mipfilter.md) property.
 
 
 ---

@@ -1,7 +1,8 @@
 # teamName
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Name of the developer team.
 
@@ -10,7 +11,7 @@ Name of the developer team.
 
 ## Declaration
 
-```swift
+```
 attribute string teamName;
 ```
 

@@ -1,7 +1,8 @@
 # CTParagraphStyleCreate(_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an immutable paragraph style.
 
@@ -20,6 +21,10 @@ Creates an immutable paragraph style.
 func CTParagraphStyleCreate(_ settings: UnsafePointer<CTParagraphStyleSetting>?, _ settingCount: Int) -> CTParagraphStyle
 ```
 
+```c
+extern CTParagraphStyleRefCTParagraphStyleCreate(const CTParagraphStyleSetting *settings, size_t settingCount);
+```
+
 #### Return Value
 
 A valid reference to an immutable CTParagraphStyle object, If the paragraph style creation was successful; otherwise, `NULL`.
@@ -35,7 +40,8 @@ Using this function is the easiest and most efficient way to create a paragraph 
 
 ## See Also
 
-- [func CTParagraphStyleCreateCopy(CTParagraphStyle) -> CTParagraphStyle](ctparagraphstylecreatecopy(_:).md)
+### Creating Paragraph Styles
+- [func CTParagraphStyleCreateCopy(CTParagraphStyle) -> CTParagraphStyle](./ctparagraphstylecreatecopy%28_%29.md)
   Creates an immutable copy of a paragraph style.
 
 

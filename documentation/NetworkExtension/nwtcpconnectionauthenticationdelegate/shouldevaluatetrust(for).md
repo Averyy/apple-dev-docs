@@ -1,17 +1,20 @@
 # shouldEvaluateTrust(for:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicate that the delegate should override the default trust evaluation for the connection.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- macOS 10.11+
-- tvOS 17.0+
-- visionOS 1.0+
+- iOS 9.0+ - Deprecated in 18.0
+- iPadOS 9.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.11+ - Deprecated in 15.0
+- tvOS 17.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use the [`sec_protocol_options_set_verify_block(_:_:_:)`](../../Security/sec_protocol_options_set_verify_block%28_,_,_%29.md) function from the [Security](../../Security/Security.md) framework instead.
 
 ## Declaration
 
@@ -19,9 +22,13 @@ Indicate that the delegate should override the default trust evaluation for the 
 optional func shouldEvaluateTrust(for connection: NWTCPConnection) -> Bool
 ```
 
+```objc
+- (BOOL) shouldEvaluateTrustForConnection:(NWTCPConnection *) connection;
+```
+
 #### Return Value
 
-Return [`true`](https://developer.apple.com/documentation/swift/true) to take over the default trust evaluation, in which case the delegate method `evaluateTrustForConnection:peerCertificateChain:completionHandler`: will be called.
+Return [`true`](../../Swift/true.md) to take over the default trust evaluation, in which case the delegate method `evaluateTrustForConnection:peerCertificateChain:completionHandler`: will be called.
 
 #### Discussion
 
@@ -33,11 +40,12 @@ The caller can implement this optional protocol method to decide whether it want
 
 ## See Also
 
-- [func evaluateTrust(for: NWTCPConnection, peerCertificateChain: [Any], completionHandler: (SecTrust) -> Void)](nwtcpconnectionauthenticationdelegate/evaluatetrust(for:peercertificatechain:completionhandler:).md)
+### Delegate methods
+- [func evaluateTrust(for: NWTCPConnection, peerCertificateChain: [Any], completionHandler: (SecTrust) -> Void)](./evaluatetrust%28for,peercertificatechain,completionhandler%29.md)
   Override the default trust evaluation for the connection.
-- [func shouldProvideIdentity(for: NWTCPConnection) -> Bool](nwtcpconnectionauthenticationdelegate/shouldprovideidentity(for:).md)
+- [func shouldProvideIdentity(for: NWTCPConnection) -> Bool](./shouldprovideidentity%28for%29.md)
   Indicate that the delegate can provide an identity for the connection authentication.
-- [func provideIdentity(for: NWTCPConnection, completionHandler: (SecIdentity, [Any]) -> Void)](nwtcpconnectionauthenticationdelegate/provideidentity(for:completionhandler:).md)
+- [func provideIdentity(for: NWTCPConnection, completionHandler: (SecIdentity, [Any]) -> Void)](./provideidentity%28for,completionhandler%29.md)
   Provide the identity and an optional certificate chain to be used for authentication.
 
 

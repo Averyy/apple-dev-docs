@@ -1,7 +1,8 @@
 # ShieldConfigurationDataSource
 
 **Framework**: Managed Settings UI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for the principal object of an app extension that configures a shield’s appearance.
 
@@ -24,33 +25,34 @@ You can create an extension to customize the appearance of the shields that the 
 ## Topics
 
 ### Styling an application shield
-- [func configuration(shielding: Application) -> ShieldConfiguration](shieldconfigurationdatasource/configuration(shielding:)-5uqm1.md)
+- [func configuration(shielding: Application) -> ShieldConfiguration](./shieldconfigurationdatasource/configuration%28shielding%29-5uqm1.md)
   Requests a configuration to use for a shield that covers an application.
-- [func configuration(shielding: Application, in: ActivityCategory) -> ShieldConfiguration](shieldconfigurationdatasource/configuration(shielding:in:)-ia14.md)
+- [func configuration(shielding: Application, in: ActivityCategory) -> ShieldConfiguration](./shieldconfigurationdatasource/configuration%28shielding,in%29-ia14.md)
   Requests a configuration to use for a shield that covers an application because of its category.
 ### Styling a website shield
-- [func configuration(shielding: WebDomain) -> ShieldConfiguration](shieldconfigurationdatasource/configuration(shielding:)-18i24.md)
+- [func configuration(shielding: WebDomain) -> ShieldConfiguration](./shieldconfigurationdatasource/configuration%28shielding%29-18i24.md)
   Requests a configuration to use for a shield that covers a website.
-- [func configuration(shielding: WebDomain, in: ActivityCategory) -> ShieldConfiguration](shieldconfigurationdatasource/configuration(shielding:in:)-6n6rd.md)
+- [func configuration(shielding: WebDomain, in: ActivityCategory) -> ShieldConfiguration](./shieldconfigurationdatasource/configuration%28shielding,in%29-6n6rd.md)
   Requests a configuration to use for a shield that covers a website because of its category.
 ### Initializers
-- [init()](shieldconfigurationdatasource/init.md)
+- [init()](./shieldconfigurationdatasource/init%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [struct ShieldConfiguration](shieldconfiguration.md)
+### Shield appearance
+- [struct ShieldConfiguration](./shieldconfiguration.md)
   An object that defines the appearance of a shield to display over an application or website.
 
 

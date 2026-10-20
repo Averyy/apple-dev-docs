@@ -1,7 +1,8 @@
 # isEmojiPresentation
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is one that should be rendered with an emoji presentation, rather than a text presentation, by default.
 
@@ -24,7 +25,7 @@ var isEmojiPresentation: Bool { get }
 
 Scalars that have default to emoji presentation can be followed by U+FE0E VARIATION SELECTOR-15 to request the text presentation of the scalar instead. Likewise, scalars that default to text presentation can be followed by U+FE0F VARIATION SELECTOR-16 to request the emoji presentation.
 
-This property corresponds to the “Emoji_Presentation” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Emoji_Presentation” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

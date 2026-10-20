@@ -1,7 +1,8 @@
 # paymentAuthorizationController(_:didSelectPaymentMethod:handler:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user changed the payment method, and asks for an updated payment request.
 
@@ -17,7 +18,16 @@ Tells the delegate that the user changed the payment method, and asks for an upd
 
 ```swift
 @MainActor
+optional func paymentAuthorizationController(_ controller: PKPaymentAuthorizationController, didSelectPaymentMethod paymentMethod: PKPaymentMethod, handler completion: @escaping (PKPaymentRequestPaymentMethodUpdate) -> Void)
+```
+
+```swift
+@MainActor
 optional func paymentAuthorizationController(_ controller: PKPaymentAuthorizationController, didSelectPaymentMethod paymentMethod: PKPaymentMethod) async -> PKPaymentRequestPaymentMethodUpdate
+```
+
+```objc
+- (void) paymentAuthorizationController:(PKPaymentAuthorizationController *) controller didSelectPaymentMethod:(PKPaymentMethod *) paymentMethod handler:(void (^)(PKPaymentRequestPaymentMethodUpdate *requestUpdate)) completion;
 ```
 
 #### Discussion
@@ -32,7 +42,8 @@ The system calls this method when the user selects a payment card.  Use this del
 
 ## See Also
 
-- [func paymentAuthorizationController(PKPaymentAuthorizationController, didSelectPaymentMethod: PKPaymentMethod, completion: ([PKPaymentSummaryItem]) -> Void)](pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller(_:didselectpaymentmethod:completion:).md)
+### Handling user’s payment method selection
+- [func paymentAuthorizationController(PKPaymentAuthorizationController, didSelectPaymentMethod: PKPaymentMethod, completion: ([PKPaymentSummaryItem]) -> Void)](./paymentauthorizationcontroller%28_,didselectpaymentmethod,completion%29.md)
   Tells the delegate that the user changed the payment method, and asks for an updated payment request.
 
 

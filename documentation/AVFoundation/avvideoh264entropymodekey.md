@@ -1,7 +1,8 @@
 # AVVideoH264EntropyModeKey
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The entropy encoding mode for H.264 compression.
 
@@ -19,17 +20,22 @@ The entropy encoding mode for H.264 compression.
 let AVVideoH264EntropyModeKey: String
 ```
 
+```c
+extern NSString * const AVVideoH264EntropyModeKey;
+```
+
 #### Discussion
 
-This property controls whether an H.264 encoder uses [`AVVideoH264EntropyModeCAVLC`](avvideoh264entropymodecavlc.md) or [`AVVideoH264EntropyModeCABAC`](avvideoh264entropymodecabac.md). CABAC generally gives better compression at the expense of higher computational overhead.
+This property controls whether an H.264 encoder uses [`AVVideoH264EntropyModeCAVLC`](./avvideoh264entropymodecavlc.md) or [`AVVideoH264EntropyModeCABAC`](./avvideoh264entropymodecabac.md). CABAC generally gives better compression at the expense of higher computational overhead.
 
 > ❗ **Important**:  The default value is encoder-specific and may change depending on other encoder settings. Set a value for this property only if the requested profile and level support it. Setting an incompatible value may result in encoding errors or a noncompliant output stream.
 
 ## See Also
 
-- [let AVVideoH264EntropyModeCABAC: String](avvideoh264entropymodecabac.md)
+### Entropy mode
+- [let AVVideoH264EntropyModeCABAC: String](./avvideoh264entropymodecabac.md)
   The encoder uses Context-based Adaptive Binary Arithmetic Coding.
-- [let AVVideoH264EntropyModeCAVLC: String](avvideoh264entropymodecavlc.md)
+- [let AVVideoH264EntropyModeCAVLC: String](./avvideoh264entropymodecavlc.md)
   The encoder uses Context-based Adaptive Variable Length Coding.
 
 

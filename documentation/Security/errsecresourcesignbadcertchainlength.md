@@ -1,7 +1,8 @@
 # errSecResourceSignBadCertChainLength
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Resource signing detects an incorrect certificate chain length.
 
@@ -18,6 +19,10 @@ Resource signing detects an incorrect certificate chain length.
 
 ```swift
 var errSecResourceSignBadCertChainLength: OSStatus { get }
+```
+
+```c
+errSecResourceSignBadCertChainLength
 ```
 
 

@@ -1,7 +1,8 @@
 # MLKEM1024.PublicKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A public key you use to encapsulate shared secrets with the Module-Lattice key encapsulation mechanism.
 
@@ -23,25 +24,26 @@ struct PublicKey
 ## Topics
 
 ### Creating a public key
-- [init<D>(rawRepresentation: D) throws](mlkem1024/publickey/init(rawrepresentation:).md)
+- [init<D>(rawRepresentation: D) throws](./publickey/init%28rawrepresentation%29.md)
   Initializes a public key from a raw representation.
 ### Accessing a key’s raw representation
-- [var rawRepresentation: Data](mlkem1024/publickey/rawrepresentation.md)
+- [var rawRepresentation: Data](./publickey/rawrepresentation.md)
   A serialized representation of the public key.
 ### Encapsulating a shared secret
-- [func encapsulate() throws -> KEM.EncapsulationResult](mlkem1024/publickey/encapsulate.md)
+- [func encapsulate() throws -> KEM.EncapsulationResult](./publickey/encapsulate%28%29.md)
   Generates and encapsulates a shared secret.
 
 ## Relationships
 
 ### Conforms To
-- [KEMPublicKey](kempublickey.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [KEMPublicKey](../kempublickey.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLKEM1024.PrivateKey](mlkem1024/privatekey.md)
+### Keys
+- [MLKEM1024.PrivateKey](./privatekey.md)
   A private key you use to decapsulate shared secrets with the Module-Lattice key encapsulation mechanism.
 
 

@@ -1,7 +1,8 @@
 # backgroundSystem
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A reading taken by the system in the background.
 
@@ -16,17 +17,22 @@ A reading taken by the system in the background.
 static let backgroundSystem: SRPhotoplethysmogramSample.Usage
 ```
 
+```c
+extern SRPhotoplethysmogramSampleUsage const SRPhotoplethysmogramSampleUsageBackgroundSystem;
+```
+
 #### Discussion
 
 The system takes this reading while performing various heart features on watchOS — such as background blood oxygen, atrial fibrillation (AFib), and low-cardio notifications.
 
 ## See Also
 
-- [static let foregroundHeartRate: SRPhotoplethysmogramSample.Usage](srphotoplethysmogramsample/usage-swift.struct/foregroundheartrate.md)
+### Getting the reading method
+- [static let foregroundHeartRate: SRPhotoplethysmogramSample.Usage](./foregroundheartrate.md)
   A heart rate reading that a person takes while using an app.
-- [static let deepBreathing: SRPhotoplethysmogramSample.Usage](srphotoplethysmogramsample/usage-swift.struct/deepbreathing.md)
+- [static let deepBreathing: SRPhotoplethysmogramSample.Usage](./deepbreathing.md)
   A deep breathing sensor reading that a person takes while using an app.
-- [static let foregroundBloodOxygen: SRPhotoplethysmogramSample.Usage](srphotoplethysmogramsample/usage-swift.struct/foregroundbloodoxygen.md)
+- [static let foregroundBloodOxygen: SRPhotoplethysmogramSample.Usage](./foregroundbloodoxygen.md)
   A blood oxygen reading that a person takes while using an app.
 
 

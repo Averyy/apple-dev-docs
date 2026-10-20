@@ -1,7 +1,8 @@
 # subscript(withoutAnimation:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Gets or sets the component of the specified type, without considering implicit animations.
 
@@ -26,8 +27,9 @@ This is only useful in specialized circumstances, such as in a tight loop, where
 
 ## See Also
 
-- [subscript<T>(componentType _: T.Type) -> T?](entity/componentset/subscript(componenttype:)-3miek.md)
-- [subscript<T>(T.Type, Void) -> T?](entity/componentset/subscript(_:_:)-b2gl.md)
+### Accessing animatable components
+- [subscript<T>(componentType _: T.Type) -> T?](./subscript%28componenttype%29-3miek.md)
+- [subscript<T>(T.Type, Void) -> T?](./subscript%28_,_%29-b2gl.md)
 
 
 ---

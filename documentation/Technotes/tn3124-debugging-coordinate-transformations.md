@@ -1,6 +1,7 @@
 # TN3124: Debugging coordinate space issues
 
-**Framework**: Technotes
+**Framework**: Technotes  
+**Role**: Technote
 
 Learn techniques to help debug any coordinate space issue.
 
@@ -8,7 +9,7 @@ Learn techniques to help debug any coordinate space issue.
 
 Working with coordinate spaces is an essential part of developing any graphics-based app. Issues related to assumptions or misinterpretations of a coordinate space are difficult to debug, or even identify. Read this technote to discover effective strategies for diagnosing and debugging coordinate space issues.
 
-#### Recognize the Issue
+#### Recognize the issue
 
 Coordinate space issues can be difficult to recognize, but there are some common symptoms that can help to diagnose them:
 
@@ -18,7 +19,7 @@ Coordinate space issues can be difficult to recognize, but there are some common
 
 Assume that there is a coordinate space issue that needs to be debugged if you notice any of these symptoms in your app.
 
-#### Identify the Coordinate Spaces Involved
+#### Identify the coordinate spaces involved
 
 Coordinate spaces are ubiquitous in the graphics world. Even simple apps will involve many different coordinate spaces. Identifying the coordinate spaces involved is essential to debugging issues with them.
 
@@ -48,17 +49,17 @@ This snippet, while simple, actually involves five different coordinate spaces:
 4. The local coordinate space of the `UIImage`.
 5. The global coordinate space of `SwiftUI`.
 
-#### Create a Focused Sample
+#### Create a focused sample
 
 Coordinate space issues are often very complex and difficult to reason about. Creating a focused sample project that visualizes origins, logs transforms and bounding boxes, and utilizes known points is an extremely effective tool for debugging coordinate space issues.
 
-#### Visualize the Origin
+#### Visualize the origin
 
 The best first step towards understanding a coordinate space is to visualize its origin.
 
 > ⚠️ **Warning**: Do not rely on textual descriptions of a coordinate space, they are easy to misinterpret.
 
-Projects targeting visionOS can use [`Diagnosing issues in the appearance of a running app`](https://developer.apple.com/documentation/xcode/diagnosing-issues-in-the-appearance-of-your-running-app). In other contexts, the exact code to visualize the origin will differ depending on the framework involved.
+Projects targeting visionOS can use [Xcodes’s Debug Visualizations](../Xcode/diagnosing-issues-in-the-appearance-of-your-running-app.md). In other contexts, the exact code to visualize the origin will differ depending on the framework involved.
 
 Some frameworks offer built-in ways to visualize certain origins. For example, `ARView` and `ARSCNView` both have API to visualize the world origin for debugging:
 
@@ -117,15 +118,15 @@ private struct CoordinateAxes: ViewModifier {
 
 Visualizing an origin could be all that is necessary to realize where the error is.
 
-#### Understand Input Expectations
+#### Understand input expectations
 
 Sometimes an API requires inputs that are already in a particular coordinate space. Otherwise its output is invalid.
 
-Consider the `UIView` method, [`hitTest(_:with:)`](https://developer.apple.com/documentation/uikit/uiview/hittest(_:with:)). This method accepts a `CGPoint` as input, and uses it to perform a hit-test on the view. The problem here is that its results aren’t valid for *any* `CGPoint`, you must provide a `CGPoint` in the view’s local coordinate space to get a valid result.
+Consider the `UIView` method, [`hitTest(_:with:)`](../UIKit/uiview/hittest%28_,with%29.md). This method accepts a `CGPoint` as input, and uses it to perform a hit-test on the view. The problem here is that its results aren’t valid for *any* `CGPoint`, you must provide a `CGPoint` in the view’s local coordinate space to get a valid result.
 
 When you have results that don’t make sense, it is a good idea to evaluate the APIs you are using to produce the results, and verify that you have provided inputs to them in the coordinate spaces they are expecting.
 
-#### Use Known Points
+#### Use known points
 
 Using known points is an effective graphics debugging technique.
 
@@ -133,7 +134,7 @@ Consider an app that runs a `VNDetectRectanglesRequest` on a `CMSampleBuffer` st
 
 Being consistent with the data you feed through a coordinate conversion pipeline allows you to clearly see the effects of any changes you make when debugging.
 
-#### Log Transforms and Bounding Boxes
+#### Log transforms and bounding boxes
 
 Logging the transform and bounding box of a visual element is a simple but effective debugging technique.
 

@@ -1,7 +1,8 @@
 # collectionView(_:layout:didCenterCellAt:)
 
 **Framework**: TVUIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when a cell has completed the transition and has become the center cell.
 
@@ -14,9 +15,14 @@ Tells the delegate when a cell has completed the transition and has become the c
 optional func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, didCenterCellAt indexPath: IndexPath)
 ```
 
+```objc
+- (void) collectionView:(UICollectionView *) collectionView layout:(UICollectionViewLayout *) collectionViewLayout didCenterCellAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 ## See Also
 
-- [func collectionView(UICollectionView, layout: UICollectionViewLayout, willCenterCellAt: IndexPath)](tvcollectionviewdelegatefullscreenlayout/collectionview(_:layout:willcentercellat:).md)
+### Managing Cell Transitions
+- [func collectionView(UICollectionView, layout: UICollectionViewLayout, willCenterCellAt: IndexPath)](./collectionview%28_,layout,willcentercellat%29.md)
   Tells the delegate when a cell is to be the center cell.
 
 

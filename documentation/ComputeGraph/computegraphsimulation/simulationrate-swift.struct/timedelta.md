@@ -1,9 +1,10 @@
 # timeDelta
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The fixed time interval in seconds between simulation steps, used when [`mode`](computegraphsimulation/simulationrate-swift.struct/mode-swift.property.md) is [`ComputeGraphSimulation.SimulationRate.Mode.fixedTime`](computegraphsimulation/simulationrate-swift.struct/mode-swift.enum/fixedtime.md).
+The fixed time interval in seconds between simulation steps, used when [`mode`](./mode-swift.property.md) is [`ComputeGraphSimulation.SimulationRate.Mode.fixedTime`](./mode-swift.enum/fixedtime.md).
 
 **Availability**:
 - iOS 27.0+
@@ -12,7 +13,7 @@ The fixed time interval in seconds between simulation steps, used when [`mode`](
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

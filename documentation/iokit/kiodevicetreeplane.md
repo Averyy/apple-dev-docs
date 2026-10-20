@@ -1,7 +1,8 @@
 # kIODeviceTreePlane
 
 **Framework**: IOKit  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var kIODeviceTreePlane: String { get }
+```
+
+```c
+#define kIODeviceTreePlane
 ```
 
 

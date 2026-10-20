@@ -1,7 +1,8 @@
 # setComponent(_:for:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Associates a component with the object for the specified protocol.
 
@@ -19,9 +20,13 @@ Associates a component with the object for the specified protocol.
 func setComponent(_ component: any MDLComponent, for protocol: Protocol)
 ```
 
+```objc
+- (void) setComponent:(id<MDLComponent>) component forProtocol:(Protocol *) protocol;
+```
+
 #### Discussion
 
-Components are the basis for customizable file format and object graph support in Model I/O. By default, the [`MDLObject`](mdlobject.md) uses the [`MDLObjectContainerComponent`](mdlobjectcontainercomponent.md) and [`MDLTransformComponent`](mdltransformcomponent.md) protocols to model object hierarchies and spatial transforms: When you load an object graph from a [`MDLAsset`](mdlasset.md) instance, Model I/O creates container and transforms components to represent the object hierarchy and spatial relationships described in the asset file. However, you can also create custom components. For example, a custom component protocol could add support for an asset format that encodes gameplay-related information such as scripting triggers, or a custom class for the [`MDLObjectContainerComponent`](mdlobjectcontainercomponent.md) could implement other ways to store or traverse object hierarchies.
+Components are the basis for customizable file format and object graph support in Model I/O. By default, the [`MDLObject`](../mdlobject.md) uses the [`MDLObjectContainerComponent`](../mdlobjectcontainercomponent.md) and [`MDLTransformComponent`](../mdltransformcomponent.md) protocols to model object hierarchies and spatial transforms: When you load an object graph from a [`MDLAsset`](../mdlasset.md) instance, Model I/O creates container and transforms components to represent the object hierarchy and spatial relationships described in the asset file. However, you can also create custom components. For example, a custom component protocol could add support for an asset format that encodes gameplay-related information such as scripting triggers, or a custom class for the [`MDLObjectContainerComponent`](../mdlobjectcontainercomponent.md) could implement other ways to store or traverse object hierarchies.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ Components are the basis for customizable file format and object graph support i
 
 ## See Also
 
-- [func componentConforming(to: Protocol) -> (any MDLComponent)?](mdlobject/componentconforming(to:).md)
+### Customizing Objects with Components
+- [func componentConforming(to: Protocol) -> (any MDLComponent)?](./componentconforming%28to%29.md)
   Returns the object’s component for the specified protocol.
 
 

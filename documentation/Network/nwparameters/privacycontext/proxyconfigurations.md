@@ -1,7 +1,8 @@
 # proxyConfigurations
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Applies proxy configurations for all connections associated with this context.
 
@@ -22,7 +23,8 @@ var proxyConfigurations: [ProxyConfiguration] { get set }
 
 ## See Also
 
-- [struct ProxyConfiguration](proxyconfiguration.md)
+### Configuring Proxies
+- [struct ProxyConfiguration](../../proxyconfiguration.md)
   A proxy configuration for Relays, Oblivious HTTP, HTTP CONNECT, or SOCKSv5.
 
 

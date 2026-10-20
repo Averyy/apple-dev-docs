@@ -1,7 +1,8 @@
 # deviceCapabilities
 
 **Framework**: AudioAccessoryKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capabilities the accessory supports.
 
@@ -16,11 +17,12 @@ var deviceCapabilities: AccessoryControlDevice.Capabilities
 
 ## See Also
 
-- [var devicePlacement: AccessoryControlDevice.Placement?](accessorycontroldevice/configuration-swift.struct/deviceplacement.md)
+### Accessing configuration options
+- [var devicePlacement: AccessoryControlDevice.Placement?](./deviceplacement.md)
   The physical position of the accessory.
-- [var primaryAudioSourceDeviceIdentifier: Data?](accessorycontroldevice/configuration-swift.struct/primaryaudiosourcedeviceidentifier.md)
+- [var primaryAudioSourceDeviceIdentifier: Data?](./primaryaudiosourcedeviceidentifier.md)
   The Bluetooth address of the device providing the primary source of audio.
-- [var secondaryAudioSourceDeviceIdentifier: Data?](accessorycontroldevice/configuration-swift.struct/secondaryaudiosourcedeviceidentifier.md)
+- [var secondaryAudioSourceDeviceIdentifier: Data?](./secondaryaudiosourcedeviceidentifier.md)
   The Bluetooth address of the device providing the secondary source of audio.
 
 

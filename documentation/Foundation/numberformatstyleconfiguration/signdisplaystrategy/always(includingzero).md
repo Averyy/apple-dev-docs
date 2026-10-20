@@ -1,7 +1,8 @@
 # always(includingZero:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A strategy to always display sign symbols.
 
@@ -30,9 +31,10 @@ A strategy to always display sign symbols, with the given behavior for zero valu
 
 ## See Also
 
-- [static var automatic: NumberFormatStyleConfiguration.SignDisplayStrategy](numberformatstyleconfiguration/signdisplaystrategy/automatic.md)
+### Sign display strategies
+- [static var automatic: NumberFormatStyleConfiguration.SignDisplayStrategy](./automatic.md)
   A strategy to automatically configure locale-appropriate sign display behavior.
-- [static var never: NumberFormatStyleConfiguration.SignDisplayStrategy](numberformatstyleconfiguration/signdisplaystrategy/never.md)
+- [static var never: NumberFormatStyleConfiguration.SignDisplayStrategy](./never.md)
   A strategy to never display sign symbols.
 
 

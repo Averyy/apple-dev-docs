@@ -1,7 +1,8 @@
 # init(allowMove:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a value that describes the operations allowed for drags that end within the application. Copy operation is always allowed.
 

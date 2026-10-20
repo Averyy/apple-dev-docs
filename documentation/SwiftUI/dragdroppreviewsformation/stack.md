@@ -1,7 +1,8 @@
 # stack
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Drag images are laid out overlapping diagonally.
 

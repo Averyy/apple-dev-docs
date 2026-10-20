@@ -1,7 +1,8 @@
 # recipientIdentifiers
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Participant identifiers of the intended recipient for this data. Data should be broadcast if the list is empty.
 

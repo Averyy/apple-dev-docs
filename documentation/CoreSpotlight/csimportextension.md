@@ -1,7 +1,8 @@
 # CSImportExtension
 
 **Framework**: Core Spotlight  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides searchable attributes for file types that the app supports.
 
@@ -18,11 +19,15 @@ An object that provides searchable attributes for file types that the app suppor
 class CSImportExtension
 ```
 
+```objc
+@interface CSImportExtension : NSObject
+```
+
 #### Overview
 
-To create a Spotlight File Import extension, add a target to your app using the Spotlight File Import extension template in Xcode. The template project contains a subclass of `CSImportExtension`. To index content on a user’s device, Core Spotlight loads your extension and invokes the [`update(_:forFileAt:)`](csimportextension/update(_:forfileat:).md) method. Core Spotlight passes a [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md) and URL of a file to the extension, and you set properties that are relevant for the file.
+To create a Spotlight File Import extension, add a target to your app using the Spotlight File Import extension template in Xcode. The template project contains a subclass of `CSImportExtension`. To index content on a user’s device, Core Spotlight loads your extension and invokes the [`update(_:forFileAt:)`](./csimportextension/update%28_,forfileat%29.md) method. Core Spotlight passes a [`CSSearchableItemAttributeSet`](./cssearchableitemattributeset.md) and URL of a file to the extension, and you set properties that are relevant for the file.
 
-> ❗ **Important**: Spotlight File Import extensions don’t provide functionality in macOS. To make custom files available to Spotlight in macOS, create a Spotlight importer plugin. For more information, refer to [`Spotlight Importer Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Carbon/Conceptual/MDImporters/MDImporters.html#//apple_ref/doc/uid/TP40001267).
+> ❗ **Important**: Spotlight File Import extensions don’t provide functionality in macOS. To make custom files available to Spotlight in macOS, create a Spotlight importer plugin. For more information, refer to [Spotlight Importer Programming Guide](https://developer.apple.com/library/archive/documentation/Carbon/Conceptual/MDImporters/MDImporters.html#//apple_ref/doc/uid/TP40001267).
 
 Typically, your extension loads details about the file and uses that information to set properties of the attribute set. For example, if your app contains files that are notes the user creates, it does the following:
 
@@ -40,9 +45,9 @@ class NoteImporter: CSImportExtension {
 }
 ```
 
-> ❗ **Important**:  Core Spotlight indexes files in batches and may call [`update(_:forFileAt:)`](csimportextension/update(_:forfileat:).md) simultaneously on multiple queues with different values of `contentURL`.
+> ❗ **Important**:  Core Spotlight indexes files in batches and may call [`update(_:forFileAt:)`](./csimportextension/update%28_,forfileat%29.md) simultaneously on multiple queues with different values of `contentURL`.
 
-To specify the file types your app supports, set the value of [`CSSupportedContentTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes/cssupportedcontenttypes) in your extension’s `Info.plist` file to an array of file type identifiers. For more information about file type identifiers, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers). The app in the previous example configures the extension’s `Info.plist` as follows:
+To specify the file types your app supports, set the value of [`CSSupportedContentTypes`](../BundleResources/information-property-list/nsextension/nsextensionattributes/cssupportedcontenttypes.md) in your extension’s `Info.plist` file to an array of file type identifiers. For more information about file type identifiers, see [Uniform Type Identifiers](../UniformTypeIdentifiers/UniformTypeIdentifiers.md). The app in the previous example configures the extension’s `Info.plist` as follows:
 
 ```swift
 <key>NSExtension</key>
@@ -65,27 +70,28 @@ To specify the file types your app supports, set the value of [`CSSupportedConte
 ## Topics
 
 ### Providing searchable attributes
-- [func update(CSSearchableItemAttributeSet, forFileAt: URL) throws](csimportextension/update(_:forfileat:).md)
+- [func update(CSSearchableItemAttributeSet, forFileAt: URL) throws](./csimportextension/update%28_,forfileat%29.md)
   Provides searchable attributes for a file at the specified URL.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Regenerating your app’s indexes on demand](regenerating-your-app-s-indexes-on-demand.md)
+### Spotlight app extensions
+- [Regenerating your app’s indexes on demand](./regenerating-your-app-s-indexes-on-demand.md)
   Create an app extension to maintain your app’s indexes and regenerate them as needed.
-- [class CSIndexExtensionRequestHandler](csindexextensionrequesthandler.md)
+- [class CSIndexExtensionRequestHandler](./csindexextensionrequesthandler.md)
   An interface that implements an index-maintenance app extension.
 
 

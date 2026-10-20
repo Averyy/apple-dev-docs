@@ -1,14 +1,15 @@
 # kBluetoothSynchronousConnectionPacketType2EV5Omit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSynchronousConnectionPacketType2EV5Omit = 0x0100
 ```
 

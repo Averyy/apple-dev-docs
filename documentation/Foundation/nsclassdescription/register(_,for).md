@@ -1,7 +1,8 @@
 # register(_:for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Registers an `NSClassDescription` object for a given class in the `NSClassDescription` cache.
 
@@ -15,6 +16,10 @@ Registers an `NSClassDescription` object for a given class in the `NSClassDescri
 class func register(_ description: NSClassDescription, for aClass: AnyClass)
 ```
 
+```objc
++ (void) registerClassDescription:(NSClassDescription *) description forClass:(Class) aClass;
+```
+
 #### Discussion
 
 You should rarely need to directly invoke this method.
@@ -26,9 +31,10 @@ You should rarely need to directly invoke this method.
 
 ## See Also
 
-- [init?(for: AnyClass)](nsclassdescription/init(for:).md)
+### Working with class descriptions
+- [init?(for: AnyClass)](./init%28for%29.md)
   Returns the class description for a given class.
-- [class func invalidateClassDescriptionCache()](nsclassdescription/invalidateclassdescriptioncache.md)
+- [class func invalidateClassDescriptionCache()](./invalidateclassdescriptioncache%28%29.md)
   Removes all `NSClassDescription` objects from the cache.
 
 

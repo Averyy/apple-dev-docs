@@ -1,6 +1,7 @@
 # Addressing crashes from Swift runtime errors
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Identify the signs of a Swift runtime error, and address the crashes runtime errors cause.
 
@@ -30,7 +31,7 @@ Termination Reason:    Namespace SIGNAL, Code 0x4
 
 > **Note**: The exception type reflects the instructions the CPU was executing when the app crashed. Simulated iOS, iPadOS, watchOS, and tvOS apps run as Intel code on an Intel-based Mac, and macOS apps running under Rosetta translation execute as Intel code even on a Mac with Apple silicon. In both cases, the crash report shows the exception type for Intel processors.
 
-##### Identify the Location of the Error
+##### Identify the location of the error
 
 The crash report shows the thread that encountered the runtime error, with a frame in the backtrace identifying the specific line of code.
 
@@ -49,7 +50,7 @@ In this example, thread 0 encountered the error. Frame 0 of this thread shows th
 0   MyCoolApp                         0x0000000100a71a88 @objc ViewController.viewDidLoad() (in MyCoolApp) (ViewController.swift:18)
 ```
 
-##### Change Your Code
+##### Change your code
 
 Look at the other frames in the backtrace to identify the exact function calls that produced the error, and determine whether you used a force unwrap or a forced downcast. A force unwrap uses the `!` operator. For example:
 
@@ -66,7 +67,7 @@ if let image = UIImage(named: "aMissingIcon") {
 }
 ```
 
-See the Swift documentation for more information on [`Optionals`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID330).
+See the Swift documentation for more information on [Optionals](https://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID330).
 
 For type casts, a forced downcast uses the `as!` operator. This example crashes if `library` contains something other than a `Song` type:
 
@@ -87,15 +88,17 @@ for item in library {
 }
 ```
 
-See the Swift documentation for more information on [`Type Casting`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/TypeCasting.html#//apple_ref/doc/uid/TP40014097-CH22).
+See the Swift documentation for more information on [Type Casting](https://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/TypeCasting.html#//apple_ref/doc/uid/TP40014097-CH22).
 
 ## See Also
 
-- [Analyzing a crash report](analyzing-a-crash-report.md)
+### Related Documentation
+- [Analyzing a crash report](./analyzing-a-crash-report.md)
   Identify clues in a crash report that help you diagnose problems.
-- [Addressing language exception crashes](addressing-language-exception-crashes.md)
+### Runtime errors
+- [Addressing language exception crashes](./addressing-language-exception-crashes.md)
   Identify the signs of a language exception, and address the crashes caused by uncaught language exceptions.
-- [Reading an exception message](reading-an-exception-message.md)
+- [Reading an exception message](./reading-an-exception-message.md)
   Understand and address the common reasons apps crash.
 
 

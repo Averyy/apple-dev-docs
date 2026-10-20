@@ -1,7 +1,8 @@
 # Date.ComponentsFormatStyle.Field
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 15.0+
@@ -21,23 +22,23 @@ struct Field
 ## Topics
 
 ### Type Properties
-- [static var day: Date.ComponentsFormatStyle.Field](date/componentsformatstyle/field/day.md)
-- [static var hour: Date.ComponentsFormatStyle.Field](date/componentsformatstyle/field/hour.md)
-- [static var minute: Date.ComponentsFormatStyle.Field](date/componentsformatstyle/field/minute.md)
-- [static var month: Date.ComponentsFormatStyle.Field](date/componentsformatstyle/field/month.md)
-- [static var second: Date.ComponentsFormatStyle.Field](date/componentsformatstyle/field/second.md)
-- [static var week: Date.ComponentsFormatStyle.Field](date/componentsformatstyle/field/week.md)
-- [static var year: Date.ComponentsFormatStyle.Field](date/componentsformatstyle/field/year.md)
+- [static var day: Date.ComponentsFormatStyle.Field](./field/day.md)
+- [static var hour: Date.ComponentsFormatStyle.Field](./field/hour.md)
+- [static var minute: Date.ComponentsFormatStyle.Field](./field/minute.md)
+- [static var month: Date.ComponentsFormatStyle.Field](./field/month.md)
+- [static var second: Date.ComponentsFormatStyle.Field](./field/second.md)
+- [static var week: Date.ComponentsFormatStyle.Field](./field/week.md)
+- [static var year: Date.ComponentsFormatStyle.Field](./field/year.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

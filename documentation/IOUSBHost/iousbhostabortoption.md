@@ -1,7 +1,8 @@
 # IOUSBHostAbortOption
 
 **Framework**: IOUSBHost  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for aborting pending input/output requests.
 
@@ -15,25 +16,29 @@ Options for aborting pending input/output requests.
 enum IOUSBHostAbortOption
 ```
 
+```c
+enum IOUSBHostAbortOption : NSUInteger;
+```
+
 ## Topics
 
 ### Options
-- [IOUSBHostAbortOption.synchronous](iousbhostabortoption/synchronous.md)
+- [IOUSBHostAbortOption.synchronous](./iousbhostabortoption/synchronous.md)
   The option to abort input/output requests synchronously.
-- [IOUSBHostAbortOption.asynchronous](iousbhostabortoption/asynchronous.md)
+- [IOUSBHostAbortOption.asynchronous](./iousbhostabortoption/asynchronous.md)
   The option to abort input/output requests asynchronously.
 ### Initializers
-- [init?(rawValue: UInt)](iousbhostabortoption/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./iousbhostabortoption/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

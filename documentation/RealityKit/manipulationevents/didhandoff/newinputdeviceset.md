@@ -1,7 +1,8 @@
 # newInputDeviceSet
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The input devices that the object is handed off to.
 

@@ -1,7 +1,8 @@
 # attributeIndex
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the attribute, as declared in Metal shader source code.
 
@@ -19,17 +20,22 @@ The index of the attribute, as declared in Metal shader source code.
 var attributeIndex: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger attributeIndex;
+```
+
 ## See Also
 
-- [var name: String](mtlattribute/name.md)
+### Reading an attribute’s properties
+- [var name: String](./name.md)
   The name of the attribute.
-- [var attributeType: MTLDataType](mtlattribute/attributetype.md)
+- [var attributeType: MTLDataType](./attributetype.md)
   The data type for the attribute, as declared in Metal shader source code.
-- [var isActive: Bool](mtlattribute/isactive.md)
+- [var isActive: Bool](./isactive.md)
   A Boolean value that indicates whether the attribute is active.
-- [var isPatchControlPointData: Bool](mtlattribute/ispatchcontrolpointdata.md)
+- [var isPatchControlPointData: Bool](./ispatchcontrolpointdata.md)
   A Boolean value that indicates whether the attribute represents control point data.
-- [var isPatchData: Bool](mtlattribute/ispatchdata.md)
+- [var isPatchData: Bool](./ispatchdata.md)
   A Boolean value that indicates whether the attribute represents tessellation patch data.
 
 

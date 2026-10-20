@@ -1,7 +1,8 @@
 # StoreKitError
 
 **Framework**: StoreKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 StoreKit Apple In-App Purchase error codes.
 
@@ -23,33 +24,33 @@ enum StoreKitError
 ## Topics
 
 ### StoreKit Error Codes
-- [StoreKitError.networkError(_:)](storekiterror/networkerror(_:).md)
+- [StoreKitError.networkError(_:)](./storekiterror/networkerror%28_%29.md)
   A network error occurred.
-- [StoreKitError.systemError(_:)](storekiterror/systemerror(_:).md)
+- [StoreKitError.systemError(_:)](./storekiterror/systemerror%28_%29.md)
   A system error occurred.
-- [StoreKitError.userCancelled](storekiterror/usercancelled.md)
+- [StoreKitError.userCancelled](./storekiterror/usercancelled.md)
   The user canceled.
-- [StoreKitError.notAvailableInStorefront](storekiterror/notavailableinstorefront.md)
+- [StoreKitError.notAvailableInStorefront](./storekiterror/notavailableinstorefront.md)
   The function isn’t available on devices configured for this storefront.
-- [StoreKitError.notEntitled](storekiterror/notentitled.md)
+- [StoreKitError.notEntitled](./storekiterror/notentitled.md)
   The app doesn’t have the appropriate entitlements to use the functionality.
-- [StoreKitError.unknown](storekiterror/unknown.md)
+- [StoreKitError.unknown](./storekiterror/unknown.md)
   An unknown error occurred.
-- [StoreKitError.unsupported](storekiterror/unsupported.md)
+- [StoreKitError.unsupported](./storekiterror/unsupported.md)
   The operation doesn’t support this product.
 ### Enumeration Cases
-- [StoreKitError.invalidPresentationContext](storekiterror/invalidpresentationcontext.md)
+- [StoreKitError.invalidPresentationContext](./storekiterror/invalidpresentationcontext.md)
   StoreKit UI cannot be presented from the current context.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Error](../Swift/error.md)
+- [Escapable](../Swift/escapable.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

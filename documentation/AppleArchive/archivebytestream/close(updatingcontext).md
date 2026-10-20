@@ -1,7 +1,8 @@
 # close(updatingContext:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Closes the stream, releases associated resources, and writes the sealed container attributes to the specified encryption context.
 
@@ -11,7 +12,7 @@ Closes the stream, releases associated resources, and writes the sealed containe
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration

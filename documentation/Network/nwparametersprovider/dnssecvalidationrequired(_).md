@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Require DNSSEC validation when resolving an endpoint before making a connection.
@@ -32,6 +33,12 @@ DNSSEC validation only takes effect if making a connection to an endpoint that r
 ## Parameters
 
 - `required`: True if DNSSEC validation is required, false otherwise.
+
+## Default Implementations
+
+### NWParametersProvider Implementations
+- [func dnssecValidationRequired(Bool) -> Self](./dnssecvalidationrequired%28_%29-6re5y.md)
+  Require DNSSEC validation when resolving an endpoint before making a connection.
 
 
 ---

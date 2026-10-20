@@ -1,12 +1,13 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a style mask using the given raw value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

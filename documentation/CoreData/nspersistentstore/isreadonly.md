@@ -1,7 +1,8 @@
 # isReadOnly
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the persistent store is read-only.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the persistent store is read-only.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ A Boolean value that indicates whether the persistent store is read-only.
 var isReadOnly: Bool { get set }
 ```
 
+```objc
+@property (getter=isReadOnly) BOOL readOnly;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is read-only, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver is read-only, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var identifier: String!](nspersistentstore/identifier.md)
+### Managing Store Attributes
+- [var identifier: String!](./identifier.md)
   The unique identifier for the persistent store.
-- [var url: URL?](nspersistentstore/url.md)
+- [var url: URL?](./url.md)
   The URL for the persistent store.
 
 

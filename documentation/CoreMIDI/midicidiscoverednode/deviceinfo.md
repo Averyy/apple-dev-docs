@@ -1,16 +1,19 @@
 # deviceInfo
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The available MIDI-CI device information.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: No longer supported for CoreMIDI
 
 ## Declaration
 
@@ -18,15 +21,20 @@ The available MIDI-CI device information.
 var deviceInfo: MIDICIDeviceInfo { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MIDICIDeviceInfo * deviceInfo;
+```
+
 ## See Also
 
-- [var destination: MIDIEntityRef](midicidiscoverednode/destination.md)
+### Inspecting a Node
+- [var destination: MIDIEntityRef](./destination.md)
   The node’s MIDI destination.
-- [var supportsProfiles: Bool](midicidiscoverednode/supportsprofiles.md)
+- [var supportsProfiles: Bool](./supportsprofiles.md)
   A Boolean value that indicates whether this node supports MIDI-CI profiles.
-- [var supportsProperties: Bool](midicidiscoverednode/supportsproperties.md)
+- [var supportsProperties: Bool](./supportsproperties.md)
   A Boolean value that indicates whether this node supports MIDI-CI properties.
-- [var maximumSysExSize: NSNumber](midicidiscoverednode/maximumsysexsize.md)
+- [var maximumSysExSize: NSNumber](./maximumsysexsize.md)
   The maximum size of a System Exclusive (SysEx) message this node supports.
 
 

@@ -1,9 +1,10 @@
 # kUCKeyOutputSequenceIndexMask
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-If the bit specified by this mask is set, the `UCKeyOutput` value contains an index into a structure of type [`UCKeySequenceDataIndex`](uckeysequencedataindex.md).
+If the bit specified by this mask is set, the `UCKeyOutput` value contains an index into a structure of type [`UCKeySequenceDataIndex`](./uckeysequencedataindex.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

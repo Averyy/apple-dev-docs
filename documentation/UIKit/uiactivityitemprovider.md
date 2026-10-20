@@ -1,7 +1,8 @@
 # UIActivityItemProvider
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A proxy for data that passes to an activity view controller.
 
@@ -17,51 +18,56 @@ A proxy for data that passes to an activity view controller.
 class UIActivityItemProvider
 ```
 
+```objc
+@interface UIActivityItemProvider : NSOperation
+```
+
 #### Overview
 
 You can use a provider object in situations where you want to make data available for use by an activity but you want to delay providing that data until it’s actually needed. For example, you might use a provider object to represent a large video file that needs to be processed before it can be shared to a user’s social media account.
 
-When you initialize a [`UIActivityViewController`](uiactivityviewcontroller.md) object, you can pass a provider object in addition to any other data objects. When the user selects an activity, the activity view controller adds your provider object (which is also an operation object) to an operation queue so that it can begin to gather or process the needed data.
+When you initialize a [`UIActivityViewController`](./uiactivityviewcontroller.md) object, you can pass a provider object in addition to any other data objects. When the user selects an activity, the activity view controller adds your provider object (which is also an operation object) to an operation queue so that it can begin to gather or process the needed data.
 
-##### Subclassing Notes
+##### Subclassing notes
 
-You must subclass `UIActivityItemProvider` and implement its [`item`](uiactivityitemprovider/item.md) method, which is called to generate the item data. You implement this method instead of the normal [`main()`](https://developer.apple.com/documentation/foundation/operation/main()) method you’d implement for an operation object. (The [`main()`](https://developer.apple.com/documentation/foundation/operation/main()) method calls the [`item`](uiactivityitemprovider/item.md) method when the operation object is executed.) Your implementation of the [`item`](uiactivityitemprovider/item.md) method should do whatever work is necessary to create and return the data.
+You must subclass `UIActivityItemProvider` and implement its [`item`](./uiactivityitemprovider/item.md) method, which is called to generate the item data. You implement this method instead of the normal [`main()`](../Foundation/operation/main%28%29.md) method you’d implement for an operation object. (The [`main()`](../Foundation/operation/main%28%29.md) method calls the [`item`](./uiactivityitemprovider/item.md) method when the operation object is executed.) Your implementation of the [`item`](./uiactivityitemprovider/item.md) method should do whatever work is necessary to create and return the data.
 
 ## Topics
 
 ### Initializing the provider
-- [init(placeholderItem: Any)](uiactivityitemprovider/init(placeholderitem:).md)
+- [init(placeholderItem: Any)](./uiactivityitemprovider/init%28placeholderitem%29.md)
   Initializes and returns a provider object with the specified placeholder data.
 ### Accessing the provider attributes
-- [var item: Any](uiactivityitemprovider/item.md)
+- [var item: Any](./uiactivityitemprovider/item.md)
   Generates and returns the actual data-bearing object.
-- [var placeholderItem: Any?](uiactivityitemprovider/placeholderitem.md)
+- [var placeholderItem: Any?](./uiactivityitemprovider/placeholderitem.md)
   The placeholder object you specified at initialization time.
-- [var activityType: UIActivity.ActivityType?](uiactivityitemprovider/activitytype.md)
+- [var activityType: UIActivity.ActivityType?](./uiactivityitemprovider/activitytype.md)
   The type of the activity object that is expecting the data.
 
 ## Relationships
 
 ### Inherits From
-- [Operation](../foundation/operation.md)
+- [Operation](../Foundation/operation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemSource](uiactivityitemsource.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemSource](./uiactivityitemsource.md)
 
 ## See Also
 
-- [class UIActivity](uiactivity.md)
+### Services
+- [class UIActivity](./uiactivity.md)
   An abstract class that you subclass to implement app-specific services.
-- [class UIActivityViewController](uiactivityviewcontroller.md)
+- [class UIActivityViewController](./uiactivityviewcontroller.md)
   A view controller that you use to offer standard services from your app.
-- [protocol UIActivityItemSource](uiactivityitemsource.md)
+- [protocol UIActivityItemSource](./uiactivityitemsource.md)
   A set of methods that an activity view controller uses to retrieve the data items to act on.
 
 

@@ -1,7 +1,8 @@
 # ownershipTransferMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity’s transfer ownership mode.
 
@@ -11,7 +12,7 @@ The entity’s transfer ownership mode.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,11 +22,12 @@ var ownershipTransferMode: SynchronizationComponent.OwnershipTransferMode
 
 #### Discussion
 
-By default, the transfer mode is [`SynchronizationComponent.OwnershipTransferMode.autoAccept`](synchronizationcomponent/ownershiptransfermode-swift.enum/autoaccept.md). You can set it to [`SynchronizationComponent.OwnershipTransferMode.manual`](synchronizationcomponent/ownershiptransfermode-swift.enum/manual.md) to require explicit confirmation of the request by your app.
+By default, the transfer mode is [`SynchronizationComponent.OwnershipTransferMode.autoAccept`](./ownershiptransfermode-swift.enum/autoaccept.md). You can set it to [`SynchronizationComponent.OwnershipTransferMode.manual`](./ownershiptransfermode-swift.enum/manual.md) to require explicit confirmation of the request by your app.
 
 ## See Also
 
-- [var isOwner: Bool](synchronizationcomponent/isowner.md)
+### Managing ownership
+- [var isOwner: Bool](./isowner.md)
   A Boolean that indicates whether the calling process owns the entity.
 
 

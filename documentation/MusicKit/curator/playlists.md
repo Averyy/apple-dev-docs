@@ -1,7 +1,8 @@
 # playlists
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The curator’s associated playlists.
 

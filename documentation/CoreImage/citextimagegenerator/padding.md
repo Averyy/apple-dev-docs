@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -18,15 +19,20 @@
 var padding: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float padding;
+```
+
 ## See Also
 
-- [var fontName: String](citextimagegenerator/fontname.md)
+### Instance Properties
+- [var fontName: String](./fontname.md)
   The name of the font to use for the generated text.
-- [var fontSize: Float](citextimagegenerator/fontsize.md)
+- [var fontSize: Float](./fontsize.md)
   The size of the font to use for the generated text.
-- [var scaleFactor: Float](citextimagegenerator/scalefactor.md)
+- [var scaleFactor: Float](./scalefactor.md)
   The scale of the font to use for the generated text.
-- [var text: String](citextimagegenerator/text.md)
+- [var text: String](./text.md)
   The text to render.
 
 

@@ -1,14 +1,17 @@
 # setFullscreen(_:animated:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Causes the movie player to enter or exit full-screen mode.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
@@ -16,32 +19,37 @@ Causes the movie player to enter or exit full-screen mode.
 func setFullscreen(_ fullscreen: Bool, animated: Bool)
 ```
 
+```objc
+- (void) setFullscreen:(BOOL) fullscreen animated:(BOOL) animated;
+```
+
 ## Parameters
 
-- `fullscreen`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to enter full-screen mode or [`false`](https://developer.apple.com/documentation/swift/false) to exit full-screen mode.
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to animate the transition between modes or [`false`](https://developer.apple.com/documentation/swift/false) to switch immediately to the new mode.
+- `fullscreen`: Specify [`true`](../../Swift/true.md) to enter full-screen mode or [`false`](../../Swift/false.md) to exit full-screen mode.
+- `animated`: Specify [`true`](../../Swift/true.md) to animate the transition between modes or [`false`](../../Swift/false.md) to switch immediately to the new mode.
 
 ## See Also
 
-- [var contentURL: URL!](mpmovieplayercontroller/contenturl.md)
+### Accessing movie properties
+- [var contentURL: URL!](./contenturl.md)
   The URL that points to the movie file.
-- [var movieSourceType: MPMovieSourceType](mpmovieplayercontroller/moviesourcetype.md)
+- [var movieSourceType: MPMovieSourceType](./moviesourcetype.md)
   The playback type of the movie.
-- [var movieMediaTypes: MPMovieMediaTypeMask](mpmovieplayercontroller/moviemediatypes.md)
+- [var movieMediaTypes: MPMovieMediaTypeMask](./moviemediatypes.md)
   The types of media available in the movie.
-- [var allowsAirPlay: Bool](mpmovieplayercontroller/allowsairplay.md)
+- [var allowsAirPlay: Bool](./allowsairplay.md)
   Specifies whether the movie player allows AirPlay movie playback.
-- [var isAirPlayVideoActive: Bool](mpmovieplayercontroller/isairplayvideoactive.md)
+- [var isAirPlayVideoActive: Bool](./isairplayvideoactive.md)
   Indicates whether the movie player is currently playing video via AirPlay.
-- [var naturalSize: CGSize](mpmovieplayercontroller/naturalsize.md)
+- [var naturalSize: CGSize](./naturalsize.md)
   The width and height of the movie frame.
-- [var isFullscreen: Bool](mpmovieplayercontroller/isfullscreen.md)
+- [var isFullscreen: Bool](./isfullscreen.md)
   A Boolean that indicates whether the movie player is in full-screen mode.
-- [var scalingMode: MPMovieScalingMode](mpmovieplayercontroller/scalingmode.md)
+- [var scalingMode: MPMovieScalingMode](./scalingmode.md)
   The scaling mode to use when displaying the movie.
-- [var controlStyle: MPMovieControlStyle](mpmovieplayercontroller/controlstyle.md)
+- [var controlStyle: MPMovieControlStyle](./controlstyle.md)
   The style of the playback controls.
-- [var useApplicationAudioSession: Bool](mpmovieplayercontroller/useapplicationaudiosession.md)
+- [var useApplicationAudioSession: Bool](./useapplicationaudiosession.md)
   A Boolean value that indicates whether the movie player should use the app’s audio session.
 
 

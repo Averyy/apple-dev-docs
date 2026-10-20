@@ -1,7 +1,8 @@
 # CBConnectionEvent.peerConnected
 
 **Framework**: Core Bluetooth  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The peer has connected to the local device.
 
@@ -20,9 +21,14 @@ The peer has connected to the local device.
 case peerConnected
 ```
 
+```c
+CBConnectionEventPeerConnected
+```
+
 ## See Also
 
-- [CBConnectionEvent.peerDisconnected](cbconnectionevent/peerdisconnected.md)
+### Events
+- [CBConnectionEvent.peerDisconnected](./peerdisconnected.md)
   The peer has disconnected from the local device.
 
 

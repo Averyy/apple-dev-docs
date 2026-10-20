@@ -1,7 +1,8 @@
 # renderingCapabilitiesChangeNotification
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when the rendering capabilities change.
 
@@ -17,17 +18,22 @@ A notification the system posts when the rendering capabilities change.
 class let renderingCapabilitiesChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVAudioSessionRenderingCapabilitiesChangeNotification;
+```
+
 ## See Also
 
-- [var renderingMode: AVAudioSession.RenderingMode](avaudiosession/renderingmode-swift.property.md)
+### Inspecting rendering capabilities
+- [var renderingMode: AVAudioSession.RenderingMode](./renderingmode-swift.property.md)
   The current audio session’s rendering mode.
-- [AVAudioSession.RenderingMode](avaudiosession/renderingmode-swift.enum.md)
+- [AVAudioSession.RenderingMode](./renderingmode-swift.enum.md)
   Audio session rendering mode identifiers.
-- [class let renderingModeChangeNotification: NSNotification.Name](avaudiosession/renderingmodechangenotification.md)
+- [class let renderingModeChangeNotification: NSNotification.Name](./renderingmodechangenotification.md)
   A notification the system posts when the rendering mode changes.
-- [var supportedOutputChannelLayouts: [AVAudioChannelLayout]](avaudiosession/supportedoutputchannellayouts.md)
+- [var supportedOutputChannelLayouts: [AVAudioChannelLayout]](./supportedoutputchannellayouts.md)
   The array of channel layouts that the current route supports.
-- [class let spatialPlaybackCapabilitiesChangedNotification: NSNotification.Name](avaudiosession/spatialplaybackcapabilitieschangednotification.md)
+- [class let spatialPlaybackCapabilitiesChangedNotification: NSNotification.Name](./spatialplaybackcapabilitieschangednotification.md)
   A notification the system posts when its spatial playback capabilities change.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 func setOpaqueCurveIntersectionFunction(signature: MTLIntersectionFunctionSignature, range: NSRange)
+```
+
+```objc
+- (void) setOpaqueCurveIntersectionFunctionWithSignature:(MTLIntersectionFunctionSignature) signature withRange:(NSRange) range;
 ```
 
 

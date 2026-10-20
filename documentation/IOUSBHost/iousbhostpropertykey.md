@@ -1,7 +1,8 @@
 # IOUSBHostPropertyKey
 
 **Framework**: IOUSBHost  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Properties that the USB host device and interface classes share.
 
@@ -15,19 +16,24 @@ Properties that the USB host device and interface classes share.
 typealias IOUSBHostPropertyKey = NSString
 ```
 
+```c
+typedef NSString * IOUSBHostPropertyKey;
+```
+
 ## Topics
 
 ### Properties
-- [let IOUSBHostPropertyKeyLocationID: String](iousbhostpropertykeylocationid.md)
+- [let IOUSBHostPropertyKeyLocationID: String](./iousbhostpropertykeylocationid.md)
   The location ID of the USB host device.
 
 ## See Also
 
-- [struct IOUSBHostInterfacePropertyKey](iousbhostinterfacepropertykey.md)
+### IOServicePlane Properties
+- [struct IOUSBHostInterfacePropertyKey](./iousbhostinterfacepropertykey.md)
   Properties of a USB interface that describe its state.
-- [struct IOUSBHostDevicePropertyKey](iousbhostdevicepropertykey.md)
+- [struct IOUSBHostDevicePropertyKey](./iousbhostdevicepropertykey.md)
   Properties of a USB device that describe its state.
-- [struct IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey.md)
+- [struct IOUSBHostMatchingPropertyKey](./iousbhostmatchingpropertykey.md)
   Properties for implementing the matching service.
 
 

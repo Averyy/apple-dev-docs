@@ -1,7 +1,8 @@
 # SFSpeechErrorDomain
 
 **Framework**: Speech  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 17.0+
@@ -17,10 +18,15 @@
 let SFSpeechErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const SFSpeechErrorDomain;
+```
+
 ## See Also
 
-- [struct SFSpeechError](sfspeecherror.md)
-- [SFSpeechError.Code](sfspeecherror/code.md)
+### Errors
+- [struct SFSpeechError](./sfspeecherror.md)
+- [SFSpeechError.Code](./sfspeecherror/code.md)
   Error codes that can be thrown under the Speech framework’s error domain.
 
 

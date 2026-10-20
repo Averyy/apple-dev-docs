@@ -34,7 +34,7 @@ let a2 = sqrt(a1 * 3)
 > `MLXArray` is not thread safe.
 
 Although `MLXArray` looks like a normal multidimensional array, it is actually far more
-sophisticated.  It actually holds a promise for future computations, see <doc:lazy-evaluation>
+sophisticated.  It actually holds a promise for future computations, see [Lazy Evaluation](Articles/lazy-evaluation.md)
 and is thus not thread safe.  For example:
 
 ```swift
@@ -68,32 +68,32 @@ Will print a random value from outside `a`.
 
 ### Creation
 
-- <doc:initialization>
+- [Initialization](Organization/initialization.md)
 
 ### Arithmetic Operators and Functions
 
-- <doc:arithmetic>
-- <doc:convolution>
-- <doc:cumulative>
+- [Arithmetic](Organization/arithmetic.md)
+- [Convolution](Organization/convolution.md)
+- [Cumulative Operations](Organization/cumulative.md)
 
 ### Indexing
 
-- <doc:indexes>
-- <doc:indexing>
-- <doc:sorting>
+- [Indexes](Organization/indexes.md)
+- [Indexing](Organization/indexing.md)
+- [Sorting](Organization/sorting.md)
 
 ### Logical Operations
 
-- <doc:logical>
+- [Logical Operators](Organization/logical.md)
 
 ### Shapes
 
 Some methods allow you to manipulate the shape of the array.  These methods change the size
 and ``shape`` of the dimensions without changing the number of elements or contents of the array.
 
-- <doc:shapes>
-- <doc:reduction>
+- [Shapes](Organization/shapes.md)
+- [Reduction Functions](Organization/reduction.md)
 
 ### Conversion and Data Types
 
-- <doc:conversion>
+- [Conversion](Organization/conversion.md)

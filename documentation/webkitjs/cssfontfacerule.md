@@ -1,7 +1,8 @@
 # CSSFontFaceRule
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface CSSFontFaceRule
 ```
 
 ## Topics
 
 ### Instance Properties
-- [style](cssfontfacerule/1632370-style.md)
+- [style](./cssfontfacerule/api-1632370-style.md)
 
 ## Relationships
 
 ### Inherits From
-- [CSSRule](cssrule.md)
+- [CSSRule](./cssrule.md)
 
 
 ---

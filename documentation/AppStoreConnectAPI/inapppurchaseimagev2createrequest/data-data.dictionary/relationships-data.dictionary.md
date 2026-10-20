@@ -1,7 +1,8 @@
 # InAppPurchaseImageV2CreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseImageV2CreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseImageV2CreateRequest.Data.Relationships.Version](inapppurchaseimagev2createrequest/data-data.dictionary/relationships-data.dictionary/version-data.dictionary.md)
+- [object InAppPurchaseImageV2CreateRequest.Data.Relationships.Version](./relationships-data.dictionary/version-data.dictionary.md)
   The version to associate with the new In-App Purchase image.
 
 ## Properties
@@ -26,7 +27,8 @@ object InAppPurchaseImageV2CreateRequest.Data.Relationships
 
 ## See Also
 
-- [object InAppPurchaseImageV2CreateRequest.Data.Attributes](inapppurchaseimagev2createrequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object InAppPurchaseImageV2CreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an In-App Purchase image create request resource.
 
 

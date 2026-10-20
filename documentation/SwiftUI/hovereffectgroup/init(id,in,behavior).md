@@ -1,9 +1,10 @@
 # init(id:in:behavior:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a new [`HoverEffectGroup`](hovereffectgroup.md).
+Creates a new [`HoverEffectGroup`](../hovereffectgroup.md).
 
 **Availability**:
 - visionOS 2.0+

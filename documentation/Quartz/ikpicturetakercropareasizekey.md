@@ -1,7 +1,8 @@
 # IKPictureTakerCropAreaSizeKey
 
 **Framework**: Quartz  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key for the cropping area size. The associated value is an `NSValue` object (`NSSize`).
 
@@ -14,10 +15,15 @@ A key for the cropping area size. The associated value is an `NSValue` object (`
 let IKPictureTakerCropAreaSizeKey: String
 ```
 
+```c
+extern NSString * const IKPictureTakerCropAreaSizeKey;
+```
+
 ## See Also
 
-- [let IKPictureTakerShowAddressBookPicture: String](ikpicturetakershowaddressbookpicture.md)
-- [let IKPictureTakerShowEmptyPicture: String](ikpicturetakershowemptypicture.md)
+### Deprecated constants
+- [let IKPictureTakerShowAddressBookPicture: String](./ikpicturetakershowaddressbookpicture.md)
+- [let IKPictureTakerShowEmptyPicture: String](./ikpicturetakershowemptypicture.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # up
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A vector with values `[0, 1, 0]`.
 

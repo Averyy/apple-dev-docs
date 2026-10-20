@@ -1,7 +1,8 @@
 # Product
 
 **Framework**: PackageDescription  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The object that defines a package product.
 
@@ -55,34 +56,35 @@ let package = Package(
 ## Topics
 
 ### Creating a Library Product
-- [static func library(name: String, type: Product.Library.LibraryType?, targets: [String]) -> Product](product/library(name:type:targets:).md)
+- [static func library(name: String, type: Product.Library.LibraryType?, targets: [String]) -> Product](./product/library%28name,type,targets%29.md)
   Creates a library product to allow clients that declare a dependency on this package to use the package’s functionality.
-- [Product.Library](product/library.md)
+- [Product.Library](./product/library.md)
   The library product of a Swift package.
 ### Creating an Executable Product
-- [static func executable(name: String, targets: [String]) -> Product](product/executable(name:targets:).md)
+- [static func executable(name: String, targets: [String]) -> Product](./product/executable%28name,targets%29.md)
   Creates an executable package product.
-- [Product.Executable](product/executable.md)
+- [Product.Executable](./product/executable.md)
   The executable product of a Swift package.
 ### Creating a Plugin Product
-- [static func plugin(name: String, targets: [String]) -> Product](product/plugin(name:targets:).md)
+- [static func plugin(name: String, targets: [String]) -> Product](./product/plugin%28name,targets%29.md)
   Defines a product that vends a package plugin target for use by clients of the package.
-- [Product.Plugin](product/plugin.md)
+- [Product.Plugin](./product/plugin.md)
   The plug-in product of a Swift package.
 ### Naming the product
-- [let name: String](product/name.md)
+- [let name: String](./product/name.md)
   The name of the package product.
 
 ## Relationships
 
 ### Inherited By
-- [Product.Executable](product/executable.md)
-- [Product.Library](product/library.md)
-- [Product.Plugin](product/plugin.md)
+- [Product.Executable](./product/executable.md)
+- [Product.Library](./product/library.md)
+- [Product.Plugin](./product/plugin.md)
 
 ## See Also
 
-- [var products: [Product]](package/products.md)
+### Configuring Products
+- [var products: [Product]](./package/products.md)
   The list of products that this package vends and that clients can use.
 
 

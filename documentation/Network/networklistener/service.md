@@ -1,7 +1,8 @@
 # service
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional service to advertise with the listener.
 

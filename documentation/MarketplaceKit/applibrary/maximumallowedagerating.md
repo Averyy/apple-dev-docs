@@ -1,7 +1,8 @@
 # maximumAllowedAgeRating
 
 **Framework**: MarketplaceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An age rating that specifies the maximum rating set for content on the device.
 
@@ -18,7 +19,7 @@ final var maximumAllowedAgeRating: Int { get }
 
 ## Mentions
 
-- [Providing age-rating appropriate content](providing-age-rating-appropriate-content.md)
+- [Providing age-rating appropriate content](../providing-age-rating-appropriate-content.md)
 
 #### Discussion
 
@@ -53,9 +54,10 @@ The value is a code that maps to the following age ratings:
 
 ## See Also
 
-- [AppLibrary.ExceptionRequest](applibrary/exceptionrequest.md)
+### Checking for age-rating based content restrictions
+- [AppLibrary.ExceptionRequest](./exceptionrequest.md)
   A structure that describes an app that a person requests permission to install.
-- [func currentAgeExceptionRequests() async throws -> [AppLibrary.ExceptionRequest]](applibrary/currentageexceptionrequests.md)
+- [func currentAgeExceptionRequests() async throws -> [AppLibrary.ExceptionRequest]](./currentageexceptionrequests%28%29.md)
   Returns a list of requests to install apps that exceed the maximum allowed age rating for the device.
 
 

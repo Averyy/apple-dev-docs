@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Read an instance given its name.
 
@@ -11,7 +12,7 @@ Read an instance given its name.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,14 @@ subscript(id: String) -> MeshResource.Instance? { get }
 
 ## See Also
 
-- [func insert(MeshResource.Instance) -> Bool](meshinstancecollection/insert(_:).md)
+### Using the collection
+- [func insert(MeshResource.Instance) -> Bool](./insert%28_%29.md)
   Add a new instance to the container. Returns true if added. Returns false if it already exists.
-- [func remove(id: String) -> MeshResource.Instance?](meshinstancecollection/remove(id:).md)
+- [func remove(id: String) -> MeshResource.Instance?](./remove%28id%29.md)
   Remove an instance by name.
-- [func removeAll()](meshinstancecollection/removeall.md)
+- [func removeAll()](./removeall%28%29.md)
   Remove all the instances.
-- [func update(MeshResource.Instance) -> MeshResource.Instance?](meshinstancecollection/update(_:).md)
+- [func update(MeshResource.Instance) -> MeshResource.Instance?](./update%28_%29.md)
   Update an existing instance. The old instance is returned.
 
 

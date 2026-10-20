@@ -1,7 +1,8 @@
 # emissive
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional emissive texture for the decal.
 

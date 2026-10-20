@@ -1,7 +1,8 @@
 # storeFunctionInMetalPipelinesScript
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that instructs the compiler to store function information for inspecting binary archives.
 
@@ -19,19 +20,24 @@ An option that instructs the compiler to store function information for inspecti
 static var storeFunctionInMetalPipelinesScript: MTLFunctionOptions { get }
 ```
 
+```c
+MTLFunctionOptionStoreFunctionInMetalPipelinesScript
+```
+
 #### Discussion
 
 Set this option when you want to inspect or consume binary archives with the `metal-source` tool. You don’t need this option when you recompile functions or store them in binary archives.
 
 ## See Also
 
-- [static var failOnBinaryArchiveMiss: MTLFunctionOptions](mtlfunctionoptions/failonbinaryarchivemiss.md)
+### Function compilation options
+- [static var failOnBinaryArchiveMiss: MTLFunctionOptions](./failonbinaryarchivemiss.md)
   An option that instructs the compiler to return an error when a GPU function isn’t in a binary archive.
-- [static var compileToBinary: MTLFunctionOptions](mtlfunctionoptions/compiletobinary.md)
+- [static var compileToBinary: MTLFunctionOptions](./compiletobinary.md)
   An option that instructs the compiler to generate a binary format for dynamic linking.
-- [static var pipelineIndependent: MTLFunctionOptions](mtlfunctionoptions/pipelineindependent.md)
+- [static var pipelineIndependent: MTLFunctionOptions](./pipelineindependent.md)
   An option that generates the same function handle across all pipeline states that link a function, which lets you share function tables across pipeline states.
-- [static var storeFunctionInMetalScript: MTLFunctionOptions](mtlfunctionoptions/storefunctioninmetalscript.md)
+- [static var storeFunctionInMetalScript: MTLFunctionOptions](./storefunctioninmetalscript.md)
   An option that instructs the compiler to store function information for inspecting binary archives.
 
 

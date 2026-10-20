@@ -1,7 +1,8 @@
 # loadFriends(_:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads the local player’s friends list if the local player and their friends grant access.
 
@@ -17,37 +18,56 @@ Loads the local player’s friends list if the local player and their friends gr
 ## Declaration
 
 ```swift
+func loadFriends(_ completionHandler: @escaping @Sendable ([GKPlayer]?, (any Error)?) -> Void)
+```
+
+```swift
 func loadFriends() async throws -> [GKPlayer]
+```
+
+```objc
+- (void) loadFriends:(void (^)(NSArray<GKPlayer *> *friends, NSError *error)) completionHandler;
 ```
 
 ## Mentions
 
-- [Protecting the player’s privacy using scoped identifiers](protecting-the-player-s-privacy-using-scoped-identifiers.md)
-- [Connecting players with their friends in your game](connecting-players-with-their-friends-in-your-game.md)
+- [Protecting the player’s privacy using scoped identifiers](../protecting-the-player-s-privacy-using-scoped-identifiers.md)
+- [Connecting players with their friends in your game](../connecting-players-with-their-friends-in-your-game.md)
 
 #### Discussion
 
-If the [`loadFriendsAuthorizationStatus(_:)`](gklocalplayer/loadfriendsauthorizationstatus(_:).md) method returns [`GKFriendsAuthorizationStatus.notDetermined`](gkfriendsauthorizationstatus/notdetermined.md), GameKit presents a prompt to the local player requesting access to their friends that may pause your game. GameKit displays the localized reason that you provide for the [`NSGKFriendListUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsgkfriendlistusagedescription) key in the information property list.
+If the [`loadFriendsAuthorizationStatus(_:)`](./loadfriendsauthorizationstatus%28_%29.md) method returns [`GKFriendsAuthorizationStatus.notDetermined`](../gkfriendsauthorizationstatus/notdetermined.md), GameKit presents a prompt to the local player requesting access to their friends that may pause your game. GameKit displays the localized reason that you provide for the [`NSGKFriendListUsageDescription`](../../BundleResources/information-property-list/nsgkfriendlistusagedescription.md) key in the information property list.
 
 If you loaded friends who no longer appear in the `friends` parameter of the completion handler, remove the data for those friends from your game because they no longer grant your game access to that data.
 
 ## Parameters
 
-- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameters: - **`friends`**: The player’s friends who also grant your game access to their friends. The local player and their friends authorization status must be [`GKFriendsAuthorizationStatus.authorized`](gkfriendsauthorizationstatus/authorized.md). The local player and their friends must use a version of your game with the same bundle ID. - **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
+- `completionHandler`: The block that GameKit calls when it completes the request.
+
+  The block receives the following parameters:
+
+  - **`friends`**: The player’s friends who also grant your game access to their friends.
+
+  The local player and their friends authorization status must be [`GKFriendsAuthorizationStatus.authorized`](../gkfriendsauthorizationstatus/authorized.md).
+
+  The local player and their friends must use a version of your game with the same bundle ID.
+
+  - **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 
-- [func loadFriendsAuthorizationStatus((GKFriendsAuthorizationStatus, (any Error)?) -> Void)](gklocalplayer/loadfriendsauthorizationstatus(_:).md)
+### Accessing Friends and Recents
+- [func loadFriendsAuthorizationStatus((GKFriendsAuthorizationStatus, (any Error)?) -> Void)](./loadfriendsauthorizationstatus%28_%29.md)
   Returns whether the player authorizes your game to access their friends list.
-- [enum GKFriendsAuthorizationStatus](gkfriendsauthorizationstatus.md)
+- [enum GKFriendsAuthorizationStatus](../gkfriendsauthorizationstatus.md)
   Constants that indicate if the local player grants access to their friends list.
-- [func loadFriends(identifiedBy: [String], completionHandler: ([GKPlayer]?, (any Error)?) -> Void)](gklocalplayer/loadfriends(identifiedby:completionhandler:).md)
+- [func loadFriends(identifiedBy: [String], completionHandler: ([GKPlayer]?, (any Error)?) -> Void)](./loadfriends%28identifiedby,completionhandler%29.md)
   Loads the player’s friends list, scoped by the identifiers, if the player and their friends grant access.
-- [NSGKFriendListUsageDescription](../bundleresources/information-property-list/nsgkfriendlistusagedescription.md)
+- [NSGKFriendListUsageDescription](../../BundleResources/information-property-list/nsgkfriendlistusagedescription.md)
   A message that tells people why the app needs access to their Game Center friends list.
-- [func loadChallengableFriends(completionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](gklocalplayer/loadchallengablefriends(completionhandler:).md)
+- [func loadChallengableFriends(completionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](./loadchallengablefriends%28completionhandler%29.md)
   Loads players to whom the local player can issue a challenge.
-- [func loadRecentPlayers(completionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](gklocalplayer/loadrecentplayers(completionhandler:).md)
+- [func loadRecentPlayers(completionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](./loadrecentplayers%28completionhandler%29.md)
   Loads players from the friends list or players that recently participated in a game with the local player.
 
 

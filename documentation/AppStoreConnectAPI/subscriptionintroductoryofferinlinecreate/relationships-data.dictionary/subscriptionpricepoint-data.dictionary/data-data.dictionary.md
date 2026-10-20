@@ -1,7 +1,8 @@
 # SubscriptionIntroductoryOfferInlineCreate.Relationships.SubscriptionPricePoint.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a subscription introductory offer inline create.
 
@@ -10,14 +11,14 @@ The request body you use to update a subscription introductory offer inline crea
 
 ## Declaration
 
-```swift
+```
 object SubscriptionIntroductoryOfferInlineCreate.Relationships.SubscriptionPricePoint.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionPricePoints`
 
 
 ---

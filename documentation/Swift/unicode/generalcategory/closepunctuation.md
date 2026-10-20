@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.closePunctuation
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A closing punctuation mark of a pair.
 
@@ -22,7 +23,7 @@ case closePunctuation
 
 #### Discussion
 
-This value corresponds to the category `Close_Punctuation` (abbreviated `Pe`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Close_Punctuation` (abbreviated `Pe`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

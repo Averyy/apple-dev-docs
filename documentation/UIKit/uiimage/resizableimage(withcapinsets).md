@@ -1,7 +1,8 @@
 # resizableImage(withCapInsets:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new version of the image with the specified cap insets.
 
@@ -9,7 +10,7 @@ Returns a new version of the image with the specified cap insets.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -17,6 +18,10 @@ Returns a new version of the image with the specified cap insets.
 
 ```swift
 func resizableImage(withCapInsets capInsets: UIEdgeInsets) -> UIImage
+```
+
+```objc
+- (UIImage *) resizableImageWithCapInsets:(UIEdgeInsets) capInsets;
 ```
 
 #### Return Value
@@ -31,9 +36,9 @@ iOS uses different rendering techniques, with different performance characterist
 
 - If resizable areas have a width or height of 1 pixel—that is, a horizontally resizable area is 1 pixel wide, a vertically resizable area is 1 pixel tall, or the center region of the image is 1 x 1 pixel—iOS draws the image by stretching the 1-pixel region. This mode provides the fastest performance (for nonzero cap insets).
 - If resizable areas have a width or height greater than 1 pixel, iOS draws the image by tiling the region. This mode provides reduced performance, but can be useful for images with textured (rather than solid-color) content in their resizable areas.
-- If the entire image is resizable—that is, the `capInsets` parameter is [`zero`](uiedgeinsets/zero.md)—and its size is greater than 1 x 1 pixel, iOS draws the image by tiling the entire image. This mode is faster than the tiling mode for nonzero cap insets.
+- If the entire image is resizable—that is, the `capInsets` parameter is [`zero`](../uiedgeinsets/zero.md)—and its size is greater than 1 x 1 pixel, iOS draws the image by tiling the entire image. This mode is faster than the tiling mode for nonzero cap insets.
 
-To instead directly control the resizing mode, use the [`resizableImage(withCapInsets:resizingMode:)`](uiimage/resizableimage(withcapinsets:resizingmode:).md) method.
+To instead directly control the resizing mode, use the [`resizableImage(withCapInsets:resizingMode:)`](./resizableimage%28withcapinsets,resizingmode%29.md) method.
 
 ## Parameters
 
@@ -41,27 +46,28 @@ To instead directly control the resizing mode, use the [`resizableImage(withCapI
 
 ## See Also
 
-- [func withConfiguration(UIImage.Configuration) -> UIImage](uiimage/withconfiguration(_:).md)
+### Changing the image attributes
+- [func withConfiguration(UIImage.Configuration) -> UIImage](./withconfiguration%28_%29.md)
   Returns a new version of the current image, replacing the current configuration attributes with the specified attributes.
-- [func applyingSymbolConfiguration(UIImage.SymbolConfiguration) -> UIImage?](uiimage/applyingsymbolconfiguration(_:).md)
+- [func applyingSymbolConfiguration(UIImage.SymbolConfiguration) -> UIImage?](./applyingsymbolconfiguration%28_%29.md)
   Returns a new version of the current image, applying the specified configuration attributes on top of the current attributes.
-- [func imageFlippedForRightToLeftLayoutDirection() -> UIImage](uiimage/imageflippedforrighttoleftlayoutdirection.md)
+- [func imageFlippedForRightToLeftLayoutDirection() -> UIImage](./imageflippedforrighttoleftlayoutdirection%28%29.md)
   Returns a new version of the current image that flips horizontally when it’s in a right-to-left layout.
-- [func withHorizontallyFlippedOrientation() -> UIImage](uiimage/withhorizontallyflippedorientation.md)
+- [func withHorizontallyFlippedOrientation() -> UIImage](./withhorizontallyflippedorientation%28%29.md)
   Returns a new version of the image that’s a mirror of the original image.
-- [func withRenderingMode(UIImage.RenderingMode) -> UIImage](uiimage/withrenderingmode(_:).md)
+- [func withRenderingMode(UIImage.RenderingMode) -> UIImage](./withrenderingmode%28_%29.md)
   Returns a new version of the image that uses the specified rendering mode.
-- [func withAlignmentRectInsets(UIEdgeInsets) -> UIImage](uiimage/withalignmentrectinsets(_:).md)
+- [func withAlignmentRectInsets(UIEdgeInsets) -> UIImage](./withalignmentrectinsets%28_%29.md)
   Returns a new version of the image that uses the specified alignment insets.
-- [func resizableImage(withCapInsets: UIEdgeInsets, resizingMode: UIImage.ResizingMode) -> UIImage](uiimage/resizableimage(withcapinsets:resizingmode:).md)
+- [func resizableImage(withCapInsets: UIEdgeInsets, resizingMode: UIImage.ResizingMode) -> UIImage](./resizableimage%28withcapinsets,resizingmode%29.md)
   Returns a new version of the image with the specified cap insets and options.
-- [func imageWithoutBaseline() -> UIImage](uiimage/imagewithoutbaseline.md)
+- [func imageWithoutBaseline() -> UIImage](./imagewithoutbaseline%28%29.md)
   Creates a copy of the current image object without any baseline information.
-- [func withBaselineOffset(fromBottom: CGFloat) -> UIImage](uiimage/withbaselineoffset(frombottom:).md)
+- [func withBaselineOffset(fromBottom: CGFloat) -> UIImage](./withbaselineoffset%28frombottom%29.md)
   Creates a new image with a baseline at the specified offset from the bottom of the image.
-- [UIImage.Configuration](uiimage/configuration-swift.class.md)
+- [UIImage.Configuration](./configuration-swift.class.md)
   A configuration object that contains the traits that the system uses when selecting the current image variant.
-- [UIImage.SymbolConfiguration](uiimage/symbolconfiguration-swift.class.md)
+- [UIImage.SymbolConfiguration](./symbolconfiguration-swift.class.md)
   An object that contains the specific font, size, style, and weight attributes to apply to a symbol image.
 
 

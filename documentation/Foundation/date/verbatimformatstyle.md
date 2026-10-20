@@ -1,7 +1,8 @@
 # Date.VerbatimFormatStyle
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A style that formats a date with an explicitly-specified style.
 
@@ -23,58 +24,59 @@ struct VerbatimFormatStyle
 ## Topics
 
 ### Structures
-- [Date.VerbatimFormatStyle.Attributed](date/verbatimformatstyle/attributed-swift.struct.md)
+- [Date.VerbatimFormatStyle.Attributed](./verbatimformatstyle/attributed-swift.struct.md)
   The type preserving attributed variant of this style.
 ### Initializers
-- [init(format: Date.FormatString, locale: Locale?, timeZone: TimeZone, calendar: Calendar)](date/verbatimformatstyle/init(format:locale:timezone:calendar:).md)
+- [init(format: Date.FormatString, locale: Locale?, timeZone: TimeZone, calendar: Calendar)](./verbatimformatstyle/init%28format,locale,timezone,calendar%29.md)
 ### Instance Properties
-- [var attributed: Date.AttributedStyle](date/verbatimformatstyle/attributed-swift.property.md)
+- [var attributed: Date.AttributedStyle](./verbatimformatstyle/attributed-swift.property.md)
   Returns a type erased attributed variant of this style.
-- [var attributedStyle: Date.VerbatimFormatStyle.Attributed](date/verbatimformatstyle/attributedstyle.md)
+- [var attributedStyle: Date.VerbatimFormatStyle.Attributed](./verbatimformatstyle/attributedstyle.md)
   Return the type preserving attributed variant of this style.
-- [var calendar: Calendar](date/verbatimformatstyle/calendar.md)
-- [var locale: Locale?](date/verbatimformatstyle/locale.md)
+- [var calendar: Calendar](./verbatimformatstyle/calendar.md)
+- [var locale: Locale?](./verbatimformatstyle/locale.md)
   Use system locale if nil or unspecified.
-- [var timeZone: TimeZone](date/verbatimformatstyle/timezone.md)
+- [var timeZone: TimeZone](./verbatimformatstyle/timezone.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomConsumingRegexComponent](../swift/customconsumingregexcomponent.md)
-- [Decodable](../swift/decodable.md)
-- [DiscreteFormatStyle](discreteformatstyle.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [FormatStyle](formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [ParseableFormatStyle](parseableformatstyle.md)
-- [RegexComponent](../swift/regexcomponent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomConsumingRegexComponent](../../Swift/customconsumingregexcomponent.md)
+- [Decodable](../../Swift/decodable.md)
+- [DiscreteFormatStyle](../discreteformatstyle.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [FormatStyle](../formatstyle.md)
+- [Hashable](../../Swift/hashable.md)
+- [ParseableFormatStyle](../parseableformatstyle.md)
+- [RegexComponent](../../Swift/regexcomponent.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var dateTime: Date.FormatStyle](formatstyle/datetime.md)
+### Applying date and time styles
+- [static var dateTime: Date.FormatStyle](../formatstyle/datetime.md)
   A style for formatting a date and time.
-- [struct FormatStyle](date/formatstyle.md)
+- [struct FormatStyle](./formatstyle.md)
   A structure that creates a locale-appropriate string representation of a date instance and converts strings of dates and times into date instances.
-- [struct ISO8601FormatStyle](date/iso8601formatstyle.md)
+- [struct ISO8601FormatStyle](./iso8601formatstyle.md)
   A type that converts between dates and their ISO-8601 string representations.
-- [static func verbatim(Date.FormatString, locale: Locale?, timeZone: TimeZone, calendar: Calendar) -> Date.VerbatimFormatStyle](formatstyle/verbatim(_:locale:timezone:calendar:).md)
+- [static func verbatim(Date.FormatString, locale: Locale?, timeZone: TimeZone, calendar: Calendar) -> Date.VerbatimFormatStyle](../formatstyle/verbatim%28_,locale,timezone,calendar%29.md)
   Returns a style for formatting a date with an explicitly-specified style.
-- [static var interval: Date.IntervalFormatStyle](formatstyle/interval.md)
+- [static var interval: Date.IntervalFormatStyle](../formatstyle/interval.md)
   A style for formatting a date interval.
-- [struct IntervalFormatStyle](date/intervalformatstyle.md)
+- [struct IntervalFormatStyle](./intervalformatstyle.md)
   A format style that creates string representations of date intervals.
-- [static func relative(presentation: Date.RelativeFormatStyle.Presentation, unitsStyle: Date.RelativeFormatStyle.UnitsStyle) -> Self](formatstyle/relative(presentation:unitsstyle:).md)
+- [static func relative(presentation: Date.RelativeFormatStyle.Presentation, unitsStyle: Date.RelativeFormatStyle.UnitsStyle) -> Self](../formatstyle/relative%28presentation,unitsstyle%29.md)
   Returns a style for formatting a date as relative to the current date.
-- [struct RelativeFormatStyle](date/relativeformatstyle.md)
+- [struct RelativeFormatStyle](./relativeformatstyle.md)
   A format style that forms locale-aware string representations of a relative date or time.
-- [static func components(style: Date.ComponentsFormatStyle.Style, fields: Set<Date.ComponentsFormatStyle.Field>?) -> Self](formatstyle/components(style:fields:).md)
+- [static func components(style: Date.ComponentsFormatStyle.Style, fields: Set<Date.ComponentsFormatStyle.Field>?) -> Self](../formatstyle/components%28style,fields%29.md)
   Returns a style for formatting a date interval in terms of specific date components.
-- [struct ComponentsFormatStyle](date/componentsformatstyle.md)
+- [struct ComponentsFormatStyle](./componentsformatstyle.md)
   A style for formatting a date interval in terms of specific date components.
 
 

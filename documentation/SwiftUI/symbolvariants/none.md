@@ -1,7 +1,8 @@
 # none
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No variant for a symbol.
 
@@ -22,7 +23,7 @@ static let none: SymbolVariants
 
 #### Discussion
 
-Using this variant with the [`symbolVariant(_:)`](view/symbolvariant(_:).md) modifier doesn’t have any effect. Instead, to show a symbol that ignores the current variant, directly set the [`symbolVariants`](environmentvalues/symbolvariants.md) environment value to `none` using the [`environment(_:_:)`](view/environment(_:_:).md) modifer:
+Using this variant with the [`symbolVariant(_:)`](../view/symbolvariant%28_%29.md) modifier doesn’t have any effect. Instead, to show a symbol that ignores the current variant, directly set the [`symbolVariants`](../environmentvalues/symbolvariants.md) environment value to `none` using the [`environment(_:_:)`](../view/environment%28_,_%29.md) modifer:
 
 ```swift
 HStack {
@@ -33,19 +34,20 @@ HStack {
 .symbolVariant(.fill)
 ```
 
-![A screenshot of two heart symbols. The first is filled while the](/images/com.apple.SwiftUI/SymbolVariants-none-1@2x.png)
+![A screenshot of two heart symbols. The first is filled while the](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SymbolVariants-none-1@2x.png)
 
 ## See Also
 
-- [static let circle: SymbolVariants](symbolvariants/circle-swift.type.property.md)
+### Getting symbol variants
+- [static let circle: SymbolVariants](./circle-swift.type.property.md)
   A variant that encapsulates the symbol in a circle.
-- [static let square: SymbolVariants](symbolvariants/square-swift.type.property.md)
+- [static let square: SymbolVariants](./square-swift.type.property.md)
   A variant that encapsulates the symbol in a square.
-- [static let rectangle: SymbolVariants](symbolvariants/rectangle-swift.type.property.md)
+- [static let rectangle: SymbolVariants](./rectangle-swift.type.property.md)
   A variant that encapsulates the symbol in a rectangle.
-- [static let fill: SymbolVariants](symbolvariants/fill-swift.type.property.md)
+- [static let fill: SymbolVariants](./fill-swift.type.property.md)
   A variant that fills the symbol.
-- [static let slash: SymbolVariants](symbolvariants/slash-swift.type.property.md)
+- [static let slash: SymbolVariants](./slash-swift.type.property.md)
   A variant that draws a slash through the symbol.
 
 

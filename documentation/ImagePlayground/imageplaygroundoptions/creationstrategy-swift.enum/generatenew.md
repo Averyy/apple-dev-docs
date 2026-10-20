@@ -1,7 +1,8 @@
 # ImagePlaygroundOptions.CreationStrategy.generateNew
 
 **Framework**: Image Playground  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to create a brand new image, driven primarily by the specified concepts and loosely inspired by the input image.
 

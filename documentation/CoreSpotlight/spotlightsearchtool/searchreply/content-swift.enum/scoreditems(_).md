@@ -1,7 +1,8 @@
 # SpotlightSearchTool.SearchReply.Content.scoredItems(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Items annotated with caller-assigned relevance scores.
 

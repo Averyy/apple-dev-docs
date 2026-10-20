@@ -1,7 +1,8 @@
 # NIDeviceCapability
 
 **Framework**: Nearby Interaction  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that adds Boolean values that indicate an interaction session feature support.
 
@@ -17,31 +18,36 @@ An interface that adds Boolean values that indicate an interaction session featu
 protocol NIDeviceCapability
 ```
 
+```objc
+@protocol NIDeviceCapability
+```
+
 #### Overview
 
-The [`NISession`](nisession.md) class property [`deviceCapabilities`](nisession/devicecapabilities.md) adopts this protocol. At runtime, inspect this property to determine the available features of an interaction session on the person’s device.
+The [`NISession`](./nisession.md) class property [`deviceCapabilities`](./nisession/devicecapabilities.md) adopts this protocol. At runtime, inspect this property to determine the available features of an interaction session on the person’s device.
 
 In a compatible iPad or iPhone app running in visionOS, the framework reports that all capabilities are unavailable.
 
 ## Topics
 
 ### Checking session features
-- [var supportsPreciseDistanceMeasurement: Bool](nidevicecapability/supportsprecisedistancemeasurement.md)
+- [var supportsPreciseDistanceMeasurement: Bool](./nidevicecapability/supportsprecisedistancemeasurement.md)
   A Boolean value that indicates whether the device produces precise distance measurements to nearby objects.
-- [var supportsDirectionMeasurement: Bool](nidevicecapability/supportsdirectionmeasurement.md)
+- [var supportsDirectionMeasurement: Bool](./nidevicecapability/supportsdirectionmeasurement.md)
   A Boolean value that indicates whether the device produces instantaneous direction measurements to nearby objects.
-- [var supportsCameraAssistance: Bool](nidevicecapability/supportscameraassistance.md)
+- [var supportsCameraAssistance: Bool](./nidevicecapability/supportscameraassistance.md)
   A Boolean value that indicates whether the device can leverage ARKit to improve interaction.
-- [var supportsExtendedDistanceMeasurement: Bool](nidevicecapability/supportsextendeddistancemeasurement.md)
+- [var supportsExtendedDistanceMeasurement: Bool](./nidevicecapability/supportsextendeddistancemeasurement.md)
   A Boolean value that indicates whether this device supports extended distance measurement.
-- [var supportsDLTDOAMeasurement: Bool](nidevicecapability/supportsdltdoameasurement.md)
+- [var supportsDLTDOAMeasurement: Bool](./nidevicecapability/supportsdltdoameasurement.md)
   A property that indicates if the device supports Downlink Time-Difference-of-Arrival ranging.
-- [var supportsBluetoothChannelSounding: Bool](nidevicecapability/supportsbluetoothchannelsounding.md)
+- [var supportsBluetoothChannelSounding: Bool](./nidevicecapability/supportsbluetoothchannelsounding.md)
   A Boolean value that indicates whether the device supports distance measurements over a Bluetooth connection.
 
 ## See Also
 
-- [class var deviceCapabilities: any NIDeviceCapability](nisession/devicecapabilities.md)
+### Ensuring feature support
+- [class var deviceCapabilities: any NIDeviceCapability](./nisession/devicecapabilities.md)
   An object that communicates the device’s supported framework features.
 
 

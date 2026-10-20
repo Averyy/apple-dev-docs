@@ -1,7 +1,8 @@
 # SHError.Code.matchAttemptFailed
 
 **Framework**: ShazamKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The error code to indicate when a Shazam Music catalog server issue prevents finding a match.
 
@@ -18,6 +19,10 @@ The error code to indicate when a Shazam Music catalog server issue prevents fin
 
 ```swift
 case matchAttemptFailed
+```
+
+```c
+SHErrorCodeMatchAttemptFailed
 ```
 
 

@@ -1,7 +1,8 @@
 # ASSavePasswordRequest.Event
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.2+
@@ -15,27 +16,31 @@
 enum Event
 ```
 
+```c
+enum ASSavePasswordRequestEvent : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [ASSavePasswordRequest.Event.formDidDisappear](assavepasswordrequest/event-swift.enum/formdiddisappear.md)
+- [ASSavePasswordRequest.Event.formDidDisappear](./event-swift.enum/formdiddisappear.md)
   The save event that occurs when a form is submitted or removed from the screen without prompting the user.
-- [ASSavePasswordRequest.Event.generatedPasswordFilled](assavepasswordrequest/event-swift.enum/generatedpasswordfilled.md)
+- [ASSavePasswordRequest.Event.generatedPasswordFilled](./event-swift.enum/generatedpasswordfilled.md)
   A save event that occurs when generated password is filled into a not yet submitted form.
-- [ASSavePasswordRequest.Event.userInitiated](assavepasswordrequest/event-swift.enum/userinitiated.md)
+- [ASSavePasswordRequest.Event.userInitiated](./event-swift.enum/userinitiated.md)
   The save event that occurs when a user has expressly stated they wish to save the credential.
 ### Initializers
-- [init?(rawValue: Int)](assavepasswordrequest/event-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./event-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

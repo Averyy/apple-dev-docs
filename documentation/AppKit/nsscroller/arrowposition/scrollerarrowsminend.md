@@ -1,12 +1,15 @@
 # NSScroller.ArrowPosition.scrollerArrowsMinEnd
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Buttons at top or left. This has been deprecated.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Scroller arrows are not used anymore.
 
 ## Declaration
 
@@ -14,13 +17,18 @@ Buttons at top or left. This has been deprecated.
 case scrollerArrowsMinEnd
 ```
 
+```c
+NSScrollerArrowsMinEnd
+```
+
 ## See Also
 
-- [NSScroller.ArrowPosition.scrollerArrowsMaxEnd](nsscroller/arrowposition/scrollerarrowsmaxend.md)
+### Constants
+- [NSScroller.ArrowPosition.scrollerArrowsMaxEnd](./scrollerarrowsmaxend.md)
   Buttons at bottom or right. This constant has been deprecated.
-- [static var scrollerArrowsDefaultSetting: NSScroller.ArrowPosition](nsscroller/arrowposition/scrollerarrowsdefaultsetting.md)
+- [static var scrollerArrowsDefaultSetting: NSScroller.ArrowPosition](./scrollerarrowsdefaultsetting.md)
   Buttons are displayed according to the system-wide appearance preferences.
-- [NSScroller.ArrowPosition.scrollerArrowsNone](nsscroller/arrowposition/scrollerarrowsnone.md)
+- [NSScroller.ArrowPosition.scrollerArrowsNone](./scrollerarrowsnone.md)
   No buttons.
 
 

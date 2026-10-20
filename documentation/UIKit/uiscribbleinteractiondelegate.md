@@ -1,7 +1,8 @@
 # UIScribbleInteractionDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods for customizing or suppressing Scribble behavior within text input views.
 
@@ -17,9 +18,13 @@ Methods for customizing or suppressing Scribble behavior within text input views
 protocol UIScribbleInteractionDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UIScribbleInteractionDelegate <NSObject>
+```
+
 #### Overview
 
-By default, Scribble let users enter text by writing directly into any editable view that implement [`UITextInput`](uitextinput.md). In apps with customized text fields, you can use the [`UIScribbleInteractionDelegate`](uiscribbleinteractiondelegate.md) callbacks to optimize the UI for a better writing experience, including:
+By default, Scribble let users enter text by writing directly into any editable view that implement [`UITextInput`](./uitextinput.md). In apps with customized text fields, you can use the [`UIScribbleInteractionDelegate`](./uiscribbleinteractiondelegate.md) callbacks to optimize the UI for a better writing experience, including:
 
 - Opting individual text fields in or out of Scribble interactions.
 - Controlling how quickly a given text field responds to input, giving the view an opportunity to change its configuration, if necessary.
@@ -28,24 +33,25 @@ By default, Scribble let users enter text by writing directly into any editable 
 ## Topics
 
 ### Allowing and controlling Scribble interactions
-- [func scribbleInteraction(UIScribbleInteraction, shouldBeginAt: CGPoint) -> Bool](uiscribbleinteractiondelegate/scribbleinteraction(_:shouldbeginat:).md)
+- [func scribbleInteraction(UIScribbleInteraction, shouldBeginAt: CGPoint) -> Bool](./uiscribbleinteractiondelegate/scribbleinteraction%28_,shouldbeginat%29.md)
   Returns a Boolean value that indicates whether the delegate should allow writing at a specific location in the view.
-- [func scribbleInteractionShouldDelayFocus(UIScribbleInteraction) -> Bool](uiscribbleinteractiondelegate/scribbleinteractionshoulddelayfocus(_:).md)
+- [func scribbleInteractionShouldDelayFocus(UIScribbleInteraction) -> Bool](./uiscribbleinteractiondelegate/scribbleinteractionshoulddelayfocus%28_%29.md)
   Tells the delegate to delay focusing the text input view.
 ### Tracking Scribble input
-- [func scribbleInteractionWillBeginWriting(UIScribbleInteraction)](uiscribbleinteractiondelegate/scribbleinteractionwillbeginwriting(_:).md)
+- [func scribbleInteractionWillBeginWriting(UIScribbleInteraction)](./uiscribbleinteractiondelegate/scribbleinteractionwillbeginwriting%28_%29.md)
   Informs the delegate when the user begins writing in the view.
-- [func scribbleInteractionDidFinishWriting(UIScribbleInteraction)](uiscribbleinteractiondelegate/scribbleinteractiondidfinishwriting(_:).md)
+- [func scribbleInteractionDidFinishWriting(UIScribbleInteraction)](./uiscribbleinteractiondelegate/scribbleinteractiondidfinishwriting%28_%29.md)
   Informs the delegate that the user stops writing in the view, after Scribble transcribes and enters the last word.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class UIScribbleInteraction](uiscribbleinteraction.md)
+### Text fields
+- [class UIScribbleInteraction](./uiscribbleinteraction.md)
   An interaction for customizing the behavior of Scribble on text input views, or for suppressing it entirely in specific cases.
 
 

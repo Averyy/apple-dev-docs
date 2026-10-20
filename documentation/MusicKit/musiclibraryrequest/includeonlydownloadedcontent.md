@@ -1,7 +1,8 @@
 # includeOnlyDownloadedContent
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the library response should only include items downloaded on the user’s device.
 

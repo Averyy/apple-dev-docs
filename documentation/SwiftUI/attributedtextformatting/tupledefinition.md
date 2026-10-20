@@ -1,7 +1,8 @@
 # AttributedTextFormatting.TupleDefinition
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A text formatting definition that enforces the constraints of a series of text formatting definitions.
 
@@ -27,12 +28,12 @@ struct TupleDefinition<Scope, each Definition> where Scope : AttributeScope, rep
 ## Topics
 
 ### Initializers
-- [init(definition: repeat each Definition)](attributedtextformatting/tupledefinition/init(definition:).md)
+- [init(definition: repeat each Definition)](./tupledefinition/init%28definition%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [AttributedTextFormattingDefinition](attributedtextformattingdefinition.md)
+- [AttributedTextFormattingDefinition](../attributedtextformattingdefinition.md)
 
 
 ---

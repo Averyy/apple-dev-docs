@@ -1,23 +1,24 @@
 # IOUserAudioDeviceTransportState
 
 **Framework**: AudioDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 21.0+
 
 ## Declaration
 
-```swift
+```c
 enum IOUserAudioDeviceTransportState : uint64_t;
 ```
 
 ## Topics
 
 ### Enumeration Cases
-- [Prewarmed](audiodriverkit/iouseraudiodevicetransportstate/prewarmed.md)
-- [Running](audiodriverkit/iouseraudiodevicetransportstate/running.md)
-- [Stopped](audiodriverkit/iouseraudiodevicetransportstate/stopped.md)
+- [Prewarmed](./iouseraudiodevicetransportstate/prewarmed.md)
+- [Running](./iouseraudiodevicetransportstate/running.md)
+- [Stopped](./iouseraudiodevicetransportstate/stopped.md)
 
 
 ---

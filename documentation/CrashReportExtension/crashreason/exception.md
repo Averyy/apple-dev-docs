@@ -1,7 +1,8 @@
 # exception
 
 **Framework**: CrashReportExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Mach exception type.
 
@@ -9,9 +10,9 @@ The Mach exception type.
 - iOS 27.0+
 - iPadOS 27.0+
 - macOS 27.0+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -25,7 +26,8 @@ Possible values of this property include `EXC_BAD_ACCESS` and `EXC_CRASH`.
 
 ## See Also
 
-- [let codes: [UInt64]](crashreason/codes.md)
+### Inpecting crash reason properties
+- [let codes: [UInt64]](./codes.md)
   An array of exception-specific codes providing additional details.
 
 

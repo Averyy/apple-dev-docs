@@ -1,7 +1,8 @@
 # TVLockupViewComponent
 
 **Framework**: TVUIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol for responding to lockup view state changes.
 
@@ -14,32 +15,37 @@ The protocol for responding to lockup view state changes.
 protocol TVLockupViewComponent : NSObjectProtocol
 ```
 
+```objc
+@protocol TVLockupViewComponent <NSObject>
+```
+
 ## Topics
 
 ### Updating the Lockup View Appearance
-- [func updateAppearance(forLockupViewState: UIControl.State)](tvlockupviewcomponent/updateappearance(forlockupviewstate:).md)
+- [func updateAppearance(forLockupViewState: UIControl.State)](./tvlockupviewcomponent/updateappearance%28forlockupviewstate%29.md)
   Provides an opportunity to change the appearance of a view when a state changes.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [TVLockupHeaderFooterView](tvlockupheaderfooterview.md)
+- [TVLockupHeaderFooterView](./tvlockupheaderfooterview.md)
 
 ## See Also
 
-- [class TVLockupView](tvlockupview.md)
+### Lockup views
+- [class TVLockupView](./tvlockupview.md)
   A focusable view that presents main content, like a movie poster, and an optional header and footer.
-- [class TVLockupHeaderFooterView](tvlockupheaderfooterview.md)
+- [class TVLockupHeaderFooterView](./tvlockupheaderfooterview.md)
   A view that contains header and footer information.
-- [class TVCardView](tvcardview.md)
+- [class TVCardView](./tvcardview.md)
   A view that responds to focus interaction with a motion effect it applies to all of its subviews.
-- [class TVPosterView](tvposterview.md)
+- [class TVPosterView](./tvposterview.md)
   An optimized view for displaying an image, a header, and a footer.
-- [class TVCaptionButtonView](tvcaptionbuttonview.md)
+- [class TVCaptionButtonView](./tvcaptionbuttonview.md)
   A button-like view that responds to user interactions.
-- [class TVMonogramView](tvmonogramview.md)
+- [class TVMonogramView](./tvmonogramview.md)
   A specialized lockup view that contains a circular image of a person or the person’s initials, along with a footer view.
 
 

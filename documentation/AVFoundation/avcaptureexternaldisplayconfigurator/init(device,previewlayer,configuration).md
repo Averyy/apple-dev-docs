@@ -1,7 +1,8 @@
 # init(device:previewLayer:configuration:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 An external display configurator instance that attempts to synchronize the preview layer configuration with the device capture configuration.
 
@@ -18,17 +19,21 @@ An external display configurator instance that attempts to synchronize the previ
 init(device: AVCaptureDevice, previewLayer: CALayer, configuration: AVCaptureExternalDisplayConfiguration)
 ```
 
+```objc
+- (instancetype) initWithDevice:(AVCaptureDevice *) device previewLayer:(CALayer *) previewLayer configuration:(AVCaptureExternalDisplayConfiguration *) configuration;
+```
+
 #### Return Value
 
-An [`AVCaptureExternalDisplayConfigurator`](avcaptureexternaldisplayconfigurator.md) instance.
+An [`AVCaptureExternalDisplayConfigurator`](../avcaptureexternaldisplayconfigurator.md) instance.
 
 #### Discussion
 
-An [`AVCaptureExternalDisplayConfigurator`](avcaptureexternaldisplayconfigurator.md) is only applicable to external displays. It determines which properties to configure on the external display based on your provided configuration (see [`AVCaptureExternalDisplayConfiguration`](avcaptureexternaldisplayconfiguration.md)). The configurator observes changes to your camera’‘s configuration, and when changes are observed, it modifies the external display’s properties to match.
+An [`AVCaptureExternalDisplayConfigurator`](../avcaptureexternaldisplayconfigurator.md) is only applicable to external displays. It determines which properties to configure on the external display based on your provided configuration (see [`AVCaptureExternalDisplayConfiguration`](../avcaptureexternaldisplayconfiguration.md)). The configurator observes changes to your camera’‘s configuration, and when changes are observed, it modifies the external display’s properties to match.
 
-If multiple configurators are linked to the same external display ,the last one created becomes the active configurator for the external display (see [`isActive`](avcaptureexternaldisplayconfigurator/isactive.md)).
+If multiple configurators are linked to the same external display ,the last one created becomes the active configurator for the external display (see [`isActive`](./isactive.md)).
 
-> ❗ **Important**: An `NSInvalidArgumentException` is thrown if any of the [`AVCaptureExternalDisplayConfiguration`](avcaptureexternaldisplayconfiguration.md) options are not supported.
+> ❗ **Important**: An `NSInvalidArgumentException` is thrown if any of the [`AVCaptureExternalDisplayConfiguration`](../avcaptureexternaldisplayconfiguration.md) options are not supported.
 
 ## Parameters
 

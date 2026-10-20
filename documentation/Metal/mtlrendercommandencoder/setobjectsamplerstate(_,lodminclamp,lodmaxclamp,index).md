@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Assigns a sampler state and clamp values to an entry in the object shader argument table.
@@ -20,26 +21,31 @@ Assigns a sampler state and clamp values to an entry in the object shader argume
 func setObjectSamplerState(_ sampler: (any MTLSamplerState)?, lodMinClamp: Float, lodMaxClamp: Float, index: Int)
 ```
 
+```objc
+- (void) setObjectSamplerState:(id<MTLSamplerState>) sampler lodMinClamp:(float) lodMinClamp lodMaxClamp:(float) lodMaxClamp atIndex:(NSUInteger) index;
+```
+
 #### Discussion
 
-The method’s `lodMinClamp` and `lodMaxClamp` parameters override the default values for `sampler`. You can set the sampler’s default values by configuring the [`lodMinClamp`](mtlsamplerdescriptor/lodminclamp.md) and [`lodMaxClamp`](mtlsamplerdescriptor/lodmaxclamp.md) properties of [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) before you create the sampler.
+The method’s `lodMinClamp` and `lodMaxClamp` parameters override the default values for `sampler`. You can set the sampler’s default values by configuring the [`lodMinClamp`](../mtlsamplerdescriptor/lodminclamp.md) and [`lodMaxClamp`](../mtlsamplerdescriptor/lodmaxclamp.md) properties of [`MTLSamplerDescriptor`](../mtlsamplerdescriptor.md) before you create the sampler.
 
 By default, the sampler state at each index is `nil`.
 
 ## Parameters
 
-- `sampler`: An [`MTLSamplerState`](mtlsamplerstate.md) instance the command assigns to an entry in the object shader argument table for sampler states.
+- `sampler`: An [`MTLSamplerState`](../mtlsamplerstate.md) instance the command assigns to an entry in the object shader argument table for sampler states.
 - `lodMinClamp`: The smallest level of detail value an object shader can use when it samples a texture.
 - `lodMaxClamp`: The largest level of detail value an object shader can use when it samples a texture.
 - `index`: An integer that represents the entry in the object argument table for sampler states that stores a record of `sampler`.
 
 ## See Also
 
-- [func setObjectSamplerState((any MTLSamplerState)?, index: Int)](mtlrendercommandencoder/setobjectsamplerstate(_:index:).md)
+### Assigning sampler states for object shaders
+- [func setObjectSamplerState((any MTLSamplerState)?, index: Int)](./setobjectsamplerstate%28_,index%29.md)
   Assigns a sampler state to an entry in the object shader argument table.
-- [func setObjectSamplerStates([(any MTLSamplerState)?], range: Range<Int>)](mtlrendercommandencoder/setobjectsamplerstates(_:range:).md)
+- [func setObjectSamplerStates([(any MTLSamplerState)?], range: Range<Int>)](./setobjectsamplerstates%28_,range%29.md)
   Assigns multiple sampler states to a range of entries in the object shader argument table.
-- [func setObjectSamplerStates([(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)](mtlrendercommandencoder/setobjectsamplerstates(_:lodminclamps:lodmaxclamps:range:).md)
+- [func setObjectSamplerStates([(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)](./setobjectsamplerstates%28_,lodminclamps,lodmaxclamps,range%29.md)
   Assigns multiple sampler states and clamp values to a range of entries in the object shader argument table.
 
 

@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceTimelineSegmentType.trailer
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The segment contains a trailer or preview for other content.
 
@@ -14,6 +15,10 @@ The segment contains a trailer or preview for other content.
 
 ```swift
 case trailer
+```
+
+```c
+AVPlaybackUserInterfaceTimelineSegmentTypeTrailer
 ```
 
 

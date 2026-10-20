@@ -1,7 +1,8 @@
 # close()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Closes the receiver.
 
@@ -20,13 +21,18 @@ Closes the receiver.
 func close()
 ```
 
+```objc
+- (void) close;
+```
+
 #### Discussion
 
 Closing the stream terminates the flow of bytes and releases system resources that were reserved for the stream when it was opened. If the stream has been scheduled on a run loop, closing the stream implicitly removes the stream from the run loop. A stream that is closed can still be queried for its properties.
 
 ## See Also
 
-- [func open()](stream/open.md)
+### Using Streams
+- [func open()](./open%28%29.md)
   Opens the receiving stream.
 
 

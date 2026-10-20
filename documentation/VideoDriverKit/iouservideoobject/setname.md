@@ -1,7 +1,8 @@
 # SetName
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the name of the video object.
 
@@ -10,7 +11,7 @@ Sets the name of the video object.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetName(OSString *in_name);
 ```
 
@@ -24,7 +25,8 @@ If the object can change the name dynamically, the object sends a notification t
 
 ## See Also
 
-- [GetName](iouservideoobject/getname.md)
+### Working with object names
+- [GetName](./getname.md)
   Gets the name of the video object.
 
 

@@ -1,14 +1,15 @@
 # setCursorImage
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 IOReturn (*setCursorImage)(void *target, void *ref, IOHardwareCursorDescriptor *description, IOFBCursorRef cursorImage);
 ```
 

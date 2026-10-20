@@ -1,21 +1,22 @@
 # GameCenterAchievementImageCreateRequest.Data.Relationships.GameCenterAchievementLocalization
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.0+
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementImageCreateRequest.Data.Relationships.GameCenterAchievementLocalization
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterAchievementImageCreateRequest.Data.Relationships.GameCenterAchievementLocalization.Data](gamecenterachievementimagecreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterachievementlocalization-data.dictionary/data-data.dictionary.md)
+- [object GameCenterAchievementImageCreateRequest.Data.Relationships.GameCenterAchievementLocalization.Data](./gamecenterachievementlocalization-data.dictionary/data-data.dictionary.md)
   The request body you use to create a Game Center achievement image.
 
 ## Properties

@@ -1,17 +1,18 @@
 # AudioUnitNodeConnection
 
 **Framework**: Audio Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A connection between two node objects in an audio processing graph.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,32 +20,37 @@ A connection between two node objects in an audio processing graph.
 struct AudioUnitNodeConnection
 ```
 
+```c
+struct AudioUnitNodeConnection;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](audiounitnodeconnection/init.md)
-- [init(sourceNode: AUNode, sourceOutputNumber: UInt32, destNode: AUNode, destInputNumber: UInt32)](audiounitnodeconnection/init(sourcenode:sourceoutputnumber:destnode:destinputnumber:).md)
+- [init()](./audiounitnodeconnection/init%28%29.md)
+- [init(sourceNode: AUNode, sourceOutputNumber: UInt32, destNode: AUNode, destInputNumber: UInt32)](./audiounitnodeconnection/init%28sourcenode,sourceoutputnumber,destnode,destinputnumber%29.md)
 ### Instance Properties
-- [var destInputNumber: UInt32](audiounitnodeconnection/destinputnumber.md)
-- [var destNode: AUNode](audiounitnodeconnection/destnode.md)
-- [var sourceNode: AUNode](audiounitnodeconnection/sourcenode.md)
-- [var sourceOutputNumber: UInt32](audiounitnodeconnection/sourceoutputnumber.md)
+- [var destInputNumber: UInt32](./audiounitnodeconnection/destinputnumber.md)
+- [var destNode: AUNode](./audiounitnodeconnection/destnode.md)
+- [var sourceNode: AUNode](./audiounitnodeconnection/sourcenode.md)
+- [var sourceOutputNumber: UInt32](./audiounitnodeconnection/sourceoutputnumber.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias AUGraph](augraph.md)
+### Data Types
+- [typealias AUGraph](./augraph.md)
   An opaque type representing an audio processing graph.
-- [typealias AUNode](aunode.md)
+- [typealias AUNode](./aunode.md)
   A member of an audio processing graph, associated with an audio unit.
-- [struct AUNodeInteraction](aunodeinteraction.md)
+- [struct AUNodeInteraction](./aunodeinteraction.md)
   Describes the interaction between two node objects.
-- [struct AUNodeRenderCallback](aunoderendercallback.md)
+- [struct AUNodeRenderCallback](./aunoderendercallback.md)
   A callback used to provide input to an audio unit.
 
 

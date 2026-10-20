@@ -1,7 +1,8 @@
 # speed
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A factor that changes the animation’s rate of playback.
 
@@ -23,7 +24,7 @@ var speed: Float { get set }
 
 The default value is `1.0`, which doesn’t alter the animation’s duration. A value of `2.0` indicates that the duration is half the normal rate. A value of `0.5` indicates that the duration is twice the normal rate. Negative values play the animation in reverse.
 
-This property doesn’t affect the animation’s [`delay`](fromtobyanimation/delay.md).
+This property doesn’t affect the animation’s [`delay`](../fromtobyanimation/delay.md).
 
 
 ---

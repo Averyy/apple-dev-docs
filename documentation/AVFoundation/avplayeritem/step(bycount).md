@@ -1,18 +1,19 @@
 # step(byCount:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves the player item’s current time forward or backward by a specified number of steps.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,19 +22,26 @@ nonisolated
 func step(byCount stepCount: Int)
 ```
 
+```objc
+- (void) stepByCount:(NSInteger) stepCount;
+```
+
 #### Discussion
 
-The size of each step depends on the receiver’s enabled `AVPlayerItemTrack` objects (see [`tracks`](avplayeritem/tracks.md)).
+The size of each step depends on the receiver’s enabled `AVPlayerItemTrack` objects (see [`tracks`](./tracks.md)).
 
 ## Parameters
 
-- `stepCount`: The number of steps by which to move. A positive number steps forward, a negative number steps backward.
+- `stepCount`: The number of steps by which to move.
+
+  A positive number steps forward, a negative number steps backward.
 
 ## See Also
 
-- [var canStepForward: Bool](avplayeritem/canstepforward.md)
+### Stepping through media
+- [var canStepForward: Bool](./canstepforward.md)
   A Boolean value that indicates whether the item supports stepping forward.
-- [var canStepBackward: Bool](avplayeritem/canstepbackward.md)
+- [var canStepBackward: Bool](./canstepbackward.md)
   A Boolean value that indicates whether the item supports stepping backward.
 
 

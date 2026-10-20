@@ -1,7 +1,8 @@
 # spawnSpreadFactor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Amount a spawned particle spreads away from its parent particle, works in conjunction with the spawn particle’s `spreadingAngle`. Defaults to 0.
 

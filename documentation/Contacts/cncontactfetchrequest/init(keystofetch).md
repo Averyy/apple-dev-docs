@@ -1,7 +1,8 @@
 # init(keysToFetch:)
 
 **Framework**: Contacts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a fetch request for the specified keys.
 
@@ -19,9 +20,13 @@ Creates a fetch request for the specified keys.
 init(keysToFetch: [any CNKeyDescriptor])
 ```
 
+```objc
+- (instancetype) initWithKeysToFetch:(NSArray<id<CNKeyDescriptor>> *) keysToFetch;
+```
+
 #### Return Value
 
-The initialized [`CNContactFetchRequest`](cncontactfetchrequest.md) instance.
+The initialized [`CNContactFetchRequest`](../cncontactfetchrequest.md) instance.
 
 #### Discussion
 
@@ -29,11 +34,12 @@ This is the designated initializer for this class. Using `init` raises an except
 
 ## Parameters
 
-- `keysToFetch`: An array of contact property keys and/or key descriptors from contacts objects to be fetched in the returned contacts. For a list of possible keys, see [`Contact Keys`](contact-keys.md).
+- `keysToFetch`: An array of contact property keys and/or key descriptors from contacts objects to be fetched in the returned contacts. For a list of possible keys, see [Contact Keys](../contact-keys.md).
 
 ## See Also
 
-- [protocol CNKeyDescriptor](cnkeydescriptor.md)
+### Creating a Fetch Request
+- [protocol CNKeyDescriptor](../cnkeydescriptor.md)
   This protocol is reserved for Contacts framework usage.
 
 

@@ -1,7 +1,8 @@
 # result(value:opensIntent:view:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Indicates the `AppIntent` finished performing
 

@@ -1,7 +1,8 @@
 # RestrictedSandboxRevision.revision2
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Second revision of the restricted sandbox rules.
 
@@ -20,11 +21,12 @@ case revision2
 
 You can apply this revision to any of your app’s extensions but the system only enforces its restrictions for the web content and rendering extensions.
 
-For more information, see [`Limiting resource access in web content extensions`](limiting-resource-access-in-content-extensions.md).
+For more information, see [Limiting resource access in web content extensions](../limiting-resource-access-in-content-extensions.md).
 
 ## See Also
 
-- [RestrictedSandboxRevision.revision1](restrictedsandboxrevision/revision1.md)
+### Sandbox restriction revisions
+- [RestrictedSandboxRevision.revision1](./revision1.md)
   First revision of the restricted sandbox rules.
 
 

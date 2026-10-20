@@ -1,7 +1,8 @@
 # init(linearVelocity:angularVelocity:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a physics motion component with the given velocities.
 
@@ -11,7 +12,7 @@ Creates a physics motion component with the given velocities.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ init(linearVelocity: SIMD3<Float> = .zero, angularVelocity: SIMD3<Float> = .zero
 
 ## See Also
 
-- [init()](physicsmotioncomponent/init.md)
+### Creating the motion component
+- [init()](./init%28%29.md)
   Creates a physics motion component at rest.
 
 

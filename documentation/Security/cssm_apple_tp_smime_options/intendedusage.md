@@ -1,7 +1,8 @@
 # IntendedUsage
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var IntendedUsage: uint16
+```
+
+```c
+CE_KeyUsage IntendedUsage;
 ```
 
 

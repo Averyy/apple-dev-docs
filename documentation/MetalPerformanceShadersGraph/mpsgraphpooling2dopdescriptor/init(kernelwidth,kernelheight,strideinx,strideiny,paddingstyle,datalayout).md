@@ -1,7 +1,8 @@
 # init(kernelWidth:kernelHeight:strideInX:strideInY:paddingStyle:dataLayout:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a 2D pooling descriptor with given values.
 
@@ -17,6 +18,10 @@ Creates a 2D pooling descriptor with given values.
 
 ```swift
 convenience init?(kernelWidth: Int, kernelHeight: Int, strideInX: Int, strideInY: Int, paddingStyle: MPSGraphPaddingStyle, dataLayout: MPSGraphTensorNamedDataLayout)
+```
+
+```objc
++ (instancetype) descriptorWithKernelWidth:(NSUInteger) kernelWidth kernelHeight:(NSUInteger) kernelHeight strideInX:(NSUInteger) strideInX strideInY:(NSUInteger) strideInY paddingStyle:(MPSGraphPaddingStyle) paddingStyle dataLayout:(MPSGraphTensorNamedDataLayout) dataLayout;
 ```
 
 #### Return Value

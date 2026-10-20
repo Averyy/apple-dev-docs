@@ -1,7 +1,8 @@
 # CKSyncEngineEventType.fetchedRecordZoneChanges
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The sync engine fetched new record zone changes from the server.
 
@@ -20,29 +21,34 @@ The sync engine fetched new record zone changes from the server.
 case fetchedRecordZoneChanges
 ```
 
+```c
+CKSyncEngineEventTypeFetchedRecordZoneChanges
+```
+
 ## See Also
 
-- [CKSyncEngineEventType.stateUpdate](cksyncengineeventtype/stateupdate.md)
+### Event types
+- [CKSyncEngineEventType.stateUpdate](./stateupdate.md)
   The sync engine updated its state.
-- [CKSyncEngineEventType.accountChange](cksyncengineeventtype/accountchange.md)
+- [CKSyncEngineEventType.accountChange](./accountchange.md)
   The user signed in or out of their account.
-- [CKSyncEngineEventType.fetchedDatabaseChanges](cksyncengineeventtype/fetcheddatabasechanges.md)
+- [CKSyncEngineEventType.fetchedDatabaseChanges](./fetcheddatabasechanges.md)
   The sync engine has fetched new database changes from the server.
-- [CKSyncEngineEventType.sentDatabaseChanges](cksyncengineeventtype/sentdatabasechanges.md)
+- [CKSyncEngineEventType.sentDatabaseChanges](./sentdatabasechanges.md)
   The sync engine sent a batch of database changes to the server.
-- [CKSyncEngineEventType.sentRecordZoneChanges](cksyncengineeventtype/sentrecordzonechanges.md)
+- [CKSyncEngineEventType.sentRecordZoneChanges](./sentrecordzonechanges.md)
   The sync engine sent a batch of record zone changes to the server.
-- [CKSyncEngineEventType.willFetchChanges](cksyncengineeventtype/willfetchchanges.md)
+- [CKSyncEngineEventType.willFetchChanges](./willfetchchanges.md)
   The sync engine is about to fetch changes from the server.
-- [CKSyncEngineEventType.willFetchRecordZoneChanges](cksyncengineeventtype/willfetchrecordzonechanges.md)
+- [CKSyncEngineEventType.willFetchRecordZoneChanges](./willfetchrecordzonechanges.md)
   The sync engine is about to fetch record zone changes from the server for a specific zone.
-- [CKSyncEngineEventType.didFetchRecordZoneChanges](cksyncengineeventtype/didfetchrecordzonechanges.md)
+- [CKSyncEngineEventType.didFetchRecordZoneChanges](./didfetchrecordzonechanges.md)
   The sync engine has completed fetching record zone changes from the server for a specific zone.
-- [CKSyncEngineEventType.didFetchChanges](cksyncengineeventtype/didfetchchanges.md)
+- [CKSyncEngineEventType.didFetchChanges](./didfetchchanges.md)
   The sync engine finished fetching changes from the server.
-- [CKSyncEngineEventType.willSendChanges](cksyncengineeventtype/willsendchanges.md)
+- [CKSyncEngineEventType.willSendChanges](./willsendchanges.md)
   The sync engine is about to send changes to the server.
-- [CKSyncEngineEventType.didSendChanges](cksyncengineeventtype/didsendchanges.md)
+- [CKSyncEngineEventType.didSendChanges](./didsendchanges.md)
   The sync engine finished sending changes to the server.
 
 

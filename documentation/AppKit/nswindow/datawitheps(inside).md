@@ -1,17 +1,22 @@
 # dataWithEPS(inside:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns EPS data that draws the region of the window within a given rectangle.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func dataWithEPS(inside rect: NSRect) -> Data
+```
+
+```objc
+- (NSData *) dataWithEPSInsideRect:(NSRect) rect;
 ```
 
 #### Return Value
@@ -28,13 +33,15 @@ This data can be placed on a pasteboard, written to a file, or used to create an
 
 ## See Also
 
-- [func dataWithEPS(inside: NSRect) -> Data](nsview/datawitheps(inside:).md)
+### Related Documentation
+- [func dataWithEPS(inside: NSRect) -> Data](../nsview/datawitheps%28inside%29.md)
   Returns EPS data that draws the region of the view within a specified rectangle.
-- [func writeEPS(inside: NSRect, to: NSPasteboard)](nsview/writeeps(inside:to:).md)
+- [func writeEPS(inside: NSRect, to: NSPasteboard)](../nsview/writeeps%28inside,to%29.md)
   Writes EPS data that draws the region of the view within a specified rectangle onto a pasteboard.
-- [func printWindow(Any?)](nswindow/printwindow(_:).md)
+### Printing Windows
+- [func printWindow(Any?)](./printwindow%28_%29.md)
   Runs the Print panel, and if the user chooses an option other than canceling, prints the window (its frame view and all subviews).
-- [func dataWithPDF(inside: NSRect) -> Data](nswindow/datawithpdf(inside:).md)
+- [func dataWithPDF(inside: NSRect) -> Data](./datawithpdf%28inside%29.md)
   Returns PDF data that draws the region of the window within a given rectangle.
 
 

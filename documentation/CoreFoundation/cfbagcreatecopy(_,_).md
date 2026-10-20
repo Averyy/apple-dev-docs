@@ -1,18 +1,19 @@
 # CFBagCreateCopy(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an immutable bag with the values of another bag.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates an immutable bag with the values of another bag.
 func CFBagCreateCopy(_ allocator: CFAllocator!, _ theBag: CFBag!) -> CFBag!
 ```
 
+```c
+extern CFBagRefCFBagCreateCopy(CFAllocatorRef allocator, CFBagRef theBag);
+```
+
 #### Return Value
 
-A new bag that contains the same values as `theBag`, or `NULL` if there was a problem creating the object. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A new bag that contains the same values as `theBag`, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
@@ -31,7 +36,8 @@ A new bag that contains the same values as `theBag`, or `NULL` if there was a pr
 
 ## See Also
 
-- [func CFBagCreate(CFAllocator!, UnsafeMutablePointer<UnsafeRawPointer?>!, CFIndex, UnsafePointer<CFBagCallBacks>!) -> CFBag!](cfbagcreate(_:_:_:_:).md)
+### Creating a Bag
+- [func CFBagCreate(CFAllocator!, UnsafeMutablePointer<UnsafeRawPointer?>!, CFIndex, UnsafePointer<CFBagCallBacks>!) -> CFBag!](./cfbagcreate%28_,_,_,_%29.md)
   Creates an immutable bag containing specified values.
 
 

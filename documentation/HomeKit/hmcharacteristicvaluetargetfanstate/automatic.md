@@ -1,7 +1,8 @@
 # HMCharacteristicValueTargetFanState.automatic
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The fan should be controlled automatically.
 
@@ -19,9 +20,14 @@ The fan should be controlled automatically.
 case automatic
 ```
 
+```c
+HMCharacteristicValueTargetFanStateAutomatic
+```
+
 ## See Also
 
-- [HMCharacteristicValueTargetFanState.manual](hmcharacteristicvaluetargetfanstate/manual.md)
+### Fan State
+- [HMCharacteristicValueTargetFanState.manual](./manual.md)
   The fan should be controlled manually.
 
 

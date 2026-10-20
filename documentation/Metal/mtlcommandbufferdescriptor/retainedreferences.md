@@ -1,7 +1,8 @@
 # retainedReferences
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the command buffer the descriptor creates maintains strong references to the resources it uses.
 
@@ -19,9 +20,13 @@ A Boolean value that indicates whether the command buffer the descriptor creates
 var retainedReferences: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL retainedReferences;
+```
+
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) (its default) to create a command buffer that maintains strong references to resource instances that its commands need. Otherwise, set it to [`false`](https://developer.apple.com/documentation/swift/false) to create a command buffer that doesn’t maintain strong references to its resources.
+Set this property to [`true`](../../Swift/true.md) (its default) to create a command buffer that maintains strong references to resource instances that its commands need. Otherwise, set it to [`false`](../../Swift/false.md) to create a command buffer that doesn’t maintain strong references to its resources.
 
 Apps typically create command buffers that don’t maintain references to resources for extremely performance-critical situations. Even though the runtime cost for retaining or releasing a single resource is trivial, the aggregate time savings may be worth it.
 
@@ -29,15 +34,16 @@ It’s your app’s responsibility to maintain strong references to all the reso
 
 > ❗ **Important**:  Releasing a resource before a command buffer’s commands complete may trigger a runtime error or erratic behavior.
 
-You can determine whether an existing command buffer retains references by checking its [`retainedReferences`](mtlcommandbuffer/retainedreferences.md) property.
+You can determine whether an existing command buffer retains references by checking its [`retainedReferences`](../mtlcommandbuffer/retainedreferences.md) property.
 
 ## See Also
 
-- [var logState: (any MTLLogState)?](mtlcommandbufferdescriptor/logstate.md)
+### Configuring the command buffer
+- [var logState: (any MTLLogState)?](./logstate.md)
   The shader logging configuration that the command buffer uses.
-- [var errorOptions: MTLCommandBufferErrorOption](mtlcommandbufferdescriptor/erroroptions.md)
+- [var errorOptions: MTLCommandBufferErrorOption](./erroroptions.md)
   The reporting configuration that indicates which information the GPU driver stores in a command buffer’s error property.
-- [struct MTLCommandBufferErrorOption](mtlcommandbuffererroroption.md)
+- [struct MTLCommandBufferErrorOption](../mtlcommandbuffererroroption.md)
   Options for reporting errors from a command buffer.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a font object corresponding to the font specified by a PostScript or full name.
 
@@ -10,7 +11,7 @@ Creates a font object corresponding to the font specified by a PostScript or ful
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,17 @@ Creates a font object corresponding to the font specified by a PostScript or ful
 init?(_ name: CFString)
 ```
 
+```c
+extern CGFontRefCGFontCreateWithFontName(CFStringRef name);
+```
+
 #### Return Value
 
-The font object or `NULL` if the font can’t be created. In Objective-C, you’re responsible for releasing this object using [`CGFontRelease`](cgfontrelease.md).
+The font object or `NULL` if the font can’t be created. In Objective-C, you’re responsible for releasing this object using [`CGFontRelease`](../cgfontrelease.md).
 
 #### Discussion
 
-Before drawing text in a Core Graphics context, you must set the font in the current graphics state by calling the function [`setFont(_:)`](cgcontext/setfont(_:).md).
+Before drawing text in a Core Graphics context, you must set the font in the current graphics state by calling the function [`setFont(_:)`](../cgcontext/setfont%28_%29.md).
 
 ## Parameters
 
@@ -34,7 +39,8 @@ Before drawing text in a Core Graphics context, you must set the font in the cur
 
 ## See Also
 
-- [init?(CGDataProvider)](cgfont/init(_:)-9aour.md)
+### Creating Font Objects
+- [init?(CGDataProvider)](./init%28_%29-9aour.md)
   Creates a font object from data supplied from a data provider.
 
 

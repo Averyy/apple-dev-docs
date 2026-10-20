@@ -1,7 +1,8 @@
 # linePoints
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array of floating point values that specifies the starting and ending points, in page-space coordinates, of a line.
 
@@ -19,13 +20,18 @@ An array of floating point values that specifies the starting and ending points,
 static let linePoints: PDFAnnotationKey
 ```
 
+```c
+extern PDFAnnotationKey PDFAnnotationKeyLinePoints;
+```
+
 ## See Also
 
-- [static let lineEndingStyles: PDFAnnotationKey](pdfannotationkey/lineendingstyles.md)
+### Configuring Line Properties
+- [static let lineEndingStyles: PDFAnnotationKey](./lineendingstyles.md)
   An array of string values that specifies the styles to use for the ends of lines.
-- [enum PDFLineStyle](pdflinestyle.md)
+- [enum PDFLineStyle](../pdflinestyle.md)
   The following constants specify the available line ending styles.
-- [struct PDFAnnotationLineEndingStyle](pdfannotationlineendingstyle.md)
+- [struct PDFAnnotationLineEndingStyle](../pdfannotationlineendingstyle.md)
 
 
 ---

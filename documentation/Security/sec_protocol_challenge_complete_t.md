@@ -1,7 +1,8 @@
 # sec_protocol_challenge_complete_t
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -18,11 +19,15 @@
 typealias sec_protocol_challenge_complete_t = (sec_identity_t?) -> Void
 ```
 
+```c
+typedef void (^)(NSObject<OS_sec_identity> *) sec_protocol_challenge_complete_t;
+```
+
 #### Discussion
 
 Block to be invoked when an identity (authentication) challenge is complete.
 
-```None
+```
  Note: prior to macOS 10.15, iOS 13.0, watchOS 6.0, and tvOS 13.0, calling this
  block with a NULL `identity` argument was prohibited.
 ```

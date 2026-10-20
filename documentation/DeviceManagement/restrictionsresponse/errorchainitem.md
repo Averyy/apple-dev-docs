@@ -1,7 +1,8 @@
 # RestrictionsResponse.ErrorChainItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes an error chain item.
 
@@ -15,7 +16,7 @@ A dictionary that describes an error chain item.
 
 ## Declaration
 
-```swift
+```
 object RestrictionsResponse.ErrorChainItem
 ```
 
@@ -28,9 +29,10 @@ object RestrictionsResponse.ErrorChainItem
 
 ## See Also
 
-- [object RestrictionsResponse.GlobalRestrictions](restrictionsresponse/globalrestrictions-data.dictionary.md)
+### Objects
+- [object RestrictionsResponse.GlobalRestrictions](./globalrestrictions-data.dictionary.md)
   A dictionary that contains the global restrictions in effect.
-- [object RestrictionsResponse.ProfileRestrictions](restrictionsresponse/profilerestrictions-data.dictionary.md)
+- [object RestrictionsResponse.ProfileRestrictions](./profilerestrictions-data.dictionary.md)
   A dictionary that contains restrictions from each profile.
 
 

@@ -1,7 +1,8 @@
 # keyboardTypeCount
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 32-bit integer specifying the number of `UCKeyboardTypeHeader` structures in the `keyboardTypeList[]` field’s array.
 
@@ -13,6 +14,10 @@ An unsigned 32-bit integer specifying the number of `UCKeyboardTypeHeader` struc
 
 ```swift
 var keyboardTypeCount: UInt32
+```
+
+```c
+UInt32 keyboardTypeCount;
 ```
 
 

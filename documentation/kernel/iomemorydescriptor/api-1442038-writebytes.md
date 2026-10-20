@@ -1,7 +1,8 @@
 # writeBytes
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Copy data to the memory descriptor's buffer from the specified buffer.
 
@@ -10,11 +11,11 @@ Copy data to the memory descriptor's buffer from the specified buffer.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOByteCount writeBytes(IOByteCount offset, const void *bytes, IOByteCount withLength);
 ```
 
-#### Return_value
+#### Return Value
 
 The number of bytes copied, zero will be returned if the specified offset is beyond the length of the descriptor. Development/debug kernel builds will assert if the offset is beyond the length of the descriptor.
 
@@ -30,11 +31,12 @@ This method copies data to the memory descriptor's memory at the given offset, f
 
 ## See Also
 
-- [readBytes](iomemorydescriptor/1812854-readbytes.md)
+### Reading and Writing Buffer Data
+- [readBytes](./api-1812854-readbytes.md)
   Copy data from the memory descriptor's buffer to the specified buffer.
-- [- readBytes](iomemorydescriptor/1441823-readbytes.md)
+- [- readBytes](./api-1441823-readbytes.md)
   Copy data from the memory descriptor's buffer to the specified buffer.
-- [writeBytes](iomemorydescriptor/1812910-writebytes.md)
+- [writeBytes](./api-1812910-writebytes.md)
   Copy data to the memory descriptor's buffer from the specified buffer.
 
 

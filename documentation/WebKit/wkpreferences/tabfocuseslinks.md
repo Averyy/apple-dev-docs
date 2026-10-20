@@ -1,7 +1,8 @@
 # tabFocusesLinks
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether pressing the tab key changes the focus to links and form controls.
 
@@ -14,19 +15,24 @@ A Boolean value that indicates whether pressing the tab key changes the focus to
 var tabFocusesLinks: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL tabFocusesLinks;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the web view includes links and form controls in the set of items that may receive focus. Pressing the Option key temporarily reverses this preference.
+When the value of this property is [`true`](../../Swift/true.md), the web view includes links and form controls in the set of items that may receive focus. Pressing the Option key temporarily reverses this preference.
 
 ## See Also
 
-- [var isTextInteractionEnabled: Bool](wkpreferences/istextinteractionenabled.md)
+### Setting Behavior Preferences
+- [var isTextInteractionEnabled: Bool](./istextinteractionenabled.md)
   A Boolean value that indicates whether to allow people to select or otherwise interact with text.
-- [var isElementFullscreenEnabled: Bool](wkpreferences/iselementfullscreenenabled.md)
+- [var isElementFullscreenEnabled: Bool](./iselementfullscreenenabled.md)
   A Boolean value that indicates whether a web view can display content full screen.
-- [var inactiveSchedulingPolicy: WKPreferences.InactiveSchedulingPolicy](wkpreferences/inactiveschedulingpolicy-swift.property.md)
+- [var inactiveSchedulingPolicy: WKPreferences.InactiveSchedulingPolicy](./inactiveschedulingpolicy-swift.property.md)
   A policy you set to specify how a web view that’s not in a window handles tasks.
-- [WKPreferences.InactiveSchedulingPolicy](wkpreferences/inactiveschedulingpolicy-swift.enum.md)
+- [WKPreferences.InactiveSchedulingPolicy](./inactiveschedulingpolicy-swift.enum.md)
   An enumeration that lists policies for how a web view that’s not in a window handles tasks.
 
 

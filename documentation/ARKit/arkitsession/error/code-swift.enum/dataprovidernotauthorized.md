@@ -1,7 +1,8 @@
 # ARKitSession.Error.Code.dataProviderNotAuthorized
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The error code for when a data provider is missing at least one authorization it needs to run.
 
@@ -16,7 +17,8 @@ case dataProviderNotAuthorized
 
 ## See Also
 
-- [ARKitSession.Error.Code.dataProviderFailedToRun](arkitsession/error/code-swift.enum/dataproviderfailedtorun.md)
+### Determining the cause of session errors
+- [ARKitSession.Error.Code.dataProviderFailedToRun](./dataproviderfailedtorun.md)
   The error code for when a data provider fails to run.
 
 

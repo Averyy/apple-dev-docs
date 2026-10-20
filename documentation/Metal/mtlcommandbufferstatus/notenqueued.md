@@ -1,7 +1,8 @@
 # MTLCommandBufferStatus.notEnqueued
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A command buffer’s initial state, which indicates its command queue isn’t reserving a place for it.
 
@@ -10,7 +11,7 @@ A command buffer’s initial state, which indicates its command queue isn’t re
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,21 +20,26 @@ A command buffer’s initial state, which indicates its command queue isn’t re
 case notEnqueued
 ```
 
+```c
+MTLCommandBufferStatusNotEnqueued
+```
+
 #### Discussion
 
-See the [`MTLCommandBuffer`](mtlcommandbuffer.md) protocol’s [`status`](mtlcommandbuffer/status.md) property for more information.
+See the [`MTLCommandBuffer`](../mtlcommandbuffer.md) protocol’s [`status`](../mtlcommandbuffer/status.md) property for more information.
 
 ## See Also
 
-- [MTLCommandBufferStatus.enqueued](mtlcommandbufferstatus/enqueued.md)
+### Command buffer states
+- [MTLCommandBufferStatus.enqueued](./enqueued.md)
   A command buffer’s second state, which indicates its command queue is reserving a place for it.
-- [MTLCommandBufferStatus.committed](mtlcommandbufferstatus/committed.md)
+- [MTLCommandBufferStatus.committed](./committed.md)
   A command buffer’s third state, which indicates the command queue is preparing to schedule the command buffer by resolving its dependencies.
-- [MTLCommandBufferStatus.scheduled](mtlcommandbufferstatus/scheduled.md)
+- [MTLCommandBufferStatus.scheduled](./scheduled.md)
   A command buffer’s fourth state, which indicates the command buffer has its resources ready and is waiting for the GPU to run its commands.
-- [MTLCommandBufferStatus.completed](mtlcommandbufferstatus/completed.md)
+- [MTLCommandBufferStatus.completed](./completed.md)
   A command buffer’s successful, final state, which indicates the GPU finished running the command buffer’s commands without any problems.
-- [MTLCommandBufferStatus.error](mtlcommandbufferstatus/error.md)
+- [MTLCommandBufferStatus.error](./error.md)
   A command buffer’s unsuccessful, final state, which indicates the GPU stopped running the buffer’s commands because of a runtime issue.
 
 

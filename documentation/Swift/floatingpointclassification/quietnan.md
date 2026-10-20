@@ -1,7 +1,8 @@
 # FloatingPointClassification.quietNaN
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A silent NaN (“not a number”) value.
 

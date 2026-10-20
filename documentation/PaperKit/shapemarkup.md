@@ -1,7 +1,8 @@
 # ShapeMarkup
 
 **Framework**: PaperKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A markup element that represents a shape or text box with customizable appearance and behavior.
 
@@ -51,61 +52,62 @@ let arrow = ShapeMarkup(
 ## Topics
 
 ### Creating a shape
-- [init(configuration: ShapeConfiguration, frame: CGRect, rotation: CGFloat)](shapemarkup/init(configuration:frame:rotation:).md)
+- [init(configuration: ShapeConfiguration, frame: CGRect, rotation: CGFloat)](./shapemarkup/init%28configuration,frame,rotation%29.md)
   Initializes and returns a new shape markup from the specified parameters.
-- [init(shape: ShapeMarkup.Shape, frame: CGRect, rotation: CGFloat, fillColor: CGColor?, strokeColor: CGColor?, lineWidth: CGFloat, opacity: CGFloat, startLineMarker: ShapeMarkup.LineMarker, endLineMarker: ShapeMarkup.LineMarker, attributedText: AttributedString, allowedInteractions: MarkupInteractions, autoresizing: MarkupAutoresizing, id: MarkupID<ShapeMarkup>)](shapemarkup/init(shape:frame:rotation:fillcolor:strokecolor:linewidth:opacity:startlinemarker:endlinemarker:attributedtext:allowedinteractions:autoresizing:id:).md)
+- [init(shape: ShapeMarkup.Shape, frame: CGRect, rotation: CGFloat, fillColor: CGColor?, strokeColor: CGColor?, lineWidth: CGFloat, opacity: CGFloat, startLineMarker: ShapeMarkup.LineMarker, endLineMarker: ShapeMarkup.LineMarker, attributedText: AttributedString, allowedInteractions: MarkupInteractions, autoresizing: MarkupAutoresizing, id: MarkupID<ShapeMarkup>)](./shapemarkup/init%28shape,frame,rotation,fillcolor,strokecolor,linewidth,opacity,startlinemarker,endlinemarker,attributedtext,allowedinteractions,autoresizing,id%29.md)
   Initializes and returns a new shape markup from the specified parameters.
 ### Choosing a shape type
-- [var shape: ShapeMarkup.Shape](shapemarkup/shape-swift.property.md)
+- [var shape: ShapeMarkup.Shape](./shapemarkup/shape-swift.property.md)
   The type of the shape.
-- [var shapeScaled: ShapeMarkup.Shape](shapemarkup/shapescaled.md)
+- [var shapeScaled: ShapeMarkup.Shape](./shapemarkup/shapescaled.md)
   The type of the shape with values scaled to the current frame.
-- [ShapeMarkup.Shape](shapemarkup/shape-swift.enum.md)
+- [ShapeMarkup.Shape](./shapemarkup/shape-swift.enum.md)
 ### Configuring fill and stroke
-- [var fillColor: CGColor?](shapemarkup/fillcolor.md)
+- [var fillColor: CGColor?](./shapemarkup/fillcolor.md)
   The color used to fill the shape’s path.
-- [var strokeColor: CGColor?](shapemarkup/strokecolor.md)
+- [var strokeColor: CGColor?](./shapemarkup/strokecolor.md)
   The color used to stroke the shape’s path.
-- [var lineWidth: CGFloat](shapemarkup/linewidth.md)
+- [var lineWidth: CGFloat](./shapemarkup/linewidth.md)
   The line width of the shape’s path.
-- [var opacity: CGFloat](shapemarkup/opacity.md)
+- [var opacity: CGFloat](./shapemarkup/opacity.md)
   The opacity of the shape.
 ### Configuring text
-- [var attributedText: AttributedString](shapemarkup/attributedtext.md)
+- [var attributedText: AttributedString](./shapemarkup/attributedtext.md)
   The attributed text displayed inside this shape.
 ### Configuring line markers
-- [var startLineMarker: ShapeMarkup.LineMarker](shapemarkup/startlinemarker.md)
+- [var startLineMarker: ShapeMarkup.LineMarker](./shapemarkup/startlinemarker.md)
   The line marker used at the start of an open shape path.
-- [var endLineMarker: ShapeMarkup.LineMarker](shapemarkup/endlinemarker.md)
+- [var endLineMarker: ShapeMarkup.LineMarker](./shapemarkup/endlinemarker.md)
   The line marker used at the end of an open shape path.
-- [ShapeMarkup.LineMarker](shapemarkup/linemarker.md)
+- [ShapeMarkup.LineMarker](./shapemarkup/linemarker.md)
   A marker that can be attached to a line.
 ### Configuring sizing
-- [var autoresizing: MarkupAutoresizing](shapemarkup/autoresizing.md)
+- [var autoresizing: MarkupAutoresizing](./shapemarkup/autoresizing.md)
   Automatic sizing behaviors for this markup.
 ### Identifying markup
-- [var id: MarkupID<ShapeMarkup>](shapemarkup/id.md)
+- [var id: MarkupID<ShapeMarkup>](./shapemarkup/id.md)
   Stable unique identity of the markup.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [Markup](markup.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Markup](./markup.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol Markup](markup.md)
+### Markup elements
+- [protocol Markup](./markup.md)
   A markup component.
-- [struct ImageMarkup](imagemarkup.md)
+- [struct ImageMarkup](./imagemarkup.md)
   A markup element that represents an image.
-- [struct LinkMarkup](linkmarkup.md)
+- [struct LinkMarkup](./linkmarkup.md)
   A URL link that a person can tap on in the canvas.
-- [struct LoupeMarkup](loupemarkup.md)
+- [struct LoupeMarkup](./loupemarkup.md)
   A loupe magnifier that magnifies the content below the loupe.
-- [struct MarkupInteractions](markupinteractions.md)
+- [struct MarkupInteractions](./markupinteractions.md)
   Interactions that people can perform on markup elements.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Replaces the given index with its predecessor.
@@ -24,6 +25,12 @@ func formIndex(before i: inout Self.Index)
 ## Parameters
 
 - `i`: A valid index of the collection. `i` must be greater than `startIndex`.
+
+## Default Implementations
+
+### BidirectionalCollection Implementations
+- [func formIndex(before: inout Self.Index)](./formindex%28before%29-5chhp.md)
+  Replaces the given index with its predecessor.
 
 
 ---

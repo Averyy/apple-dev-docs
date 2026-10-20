@@ -1,7 +1,8 @@
 # recipients
 
 **Framework**: Messages  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var recipients: [String] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSString *> * recipients;
 ```
 
 #### Discussion

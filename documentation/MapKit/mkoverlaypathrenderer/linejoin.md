@@ -1,7 +1,8 @@
 # lineJoin
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The line join style to apply to the corners of the path.
 
@@ -19,25 +20,30 @@ The line join style to apply to the corners of the path.
 var lineJoin: CGLineJoin { get set }
 ```
 
+```objc
+@property CGLineJoin lineJoin;
+```
+
 #### Discussion
 
-The default line join style is [`CGLineJoin.round`](https://developer.apple.com/documentation/coregraphics/cglinejoin/round).
+The default line join style is [`CGLineJoin.round`](../../CoreGraphics/cglinejoin/round.md).
 
 ## See Also
 
-- [var fillColor: UIColor?](mkoverlaypathrenderer/fillcolor.md)
+### Accessing the drawing attributes
+- [var fillColor: UIColor?](./fillcolor.md)
   The fill color to use for the path.
-- [var strokeColor: UIColor?](mkoverlaypathrenderer/strokecolor.md)
+- [var strokeColor: UIColor?](./strokecolor.md)
   The stroke color to use for the path.
-- [var lineWidth: CGFloat](mkoverlaypathrenderer/linewidth.md)
+- [var lineWidth: CGFloat](./linewidth.md)
   The stroke width to use for the path.
-- [var lineCap: CGLineCap](mkoverlaypathrenderer/linecap.md)
+- [var lineCap: CGLineCap](./linecap.md)
   The line cap style to apply to the open ends of the path.
-- [var miterLimit: CGFloat](mkoverlaypathrenderer/miterlimit.md)
+- [var miterLimit: CGFloat](./miterlimit.md)
   The limiting value that helps avoid spikes at junctions between connected line segments.
-- [var lineDashPhase: CGFloat](mkoverlaypathrenderer/linedashphase.md)
+- [var lineDashPhase: CGFloat](./linedashphase.md)
   The offset (in points) at which to start drawing the dash pattern.
-- [var lineDashPattern: [NSNumber]?](mkoverlaypathrenderer/linedashpattern.md)
+- [var lineDashPattern: [NSNumber]?](./linedashpattern.md)
   An array of numbers specifying the dash pattern to use for the path.
 
 

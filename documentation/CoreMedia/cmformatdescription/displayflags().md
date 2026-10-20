@@ -1,7 +1,8 @@
 # displayFlags()
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the display mode flags for the text media.
 
@@ -22,13 +23,14 @@ func displayFlags() throws -> CMFormatDescription.Extensions.Value.TextDisplayFl
 
 ## See Also
 
-- [func defaultStyle() throws -> (localFontID: Int, bold: Bool, italic: Bool, underline: Bool, fontSize: CGFloat, colorComponents: [CGFloat])](cmformatdescription/defaultstyle.md)
+### Working with Text Descriptions
+- [func defaultStyle() throws -> (localFontID: Int, bold: Bool, italic: Bool, underline: Bool, fontSize: CGFloat, colorComponents: [CGFloat])](./defaultstyle%28%29.md)
   Returns the default text style.
-- [func defaultTextBox(originIsAtTopLeft: Bool, heightOfTextTrack: CGFloat) throws -> CGRect](cmformatdescription/defaulttextbox(originisattopleft:heightoftexttrack:).md)
+- [func defaultTextBox(originIsAtTopLeft: Bool, heightOfTextTrack: CGFloat) throws -> CGRect](./defaulttextbox%28originisattopleft,heightoftexttrack%29.md)
   Returns the default text box.
-- [func fontName(localFontID: Int) throws -> String](cmformatdescription/fontname(localfontid:).md)
+- [func fontName(localFontID: Int) throws -> String](./fontname%28localfontid%29.md)
   Returns the font name for the local font identifier.
-- [func justification() throws -> (horizontal: CMFormatDescription.Extensions.Value.TextJustification, vertical: CMFormatDescription.Extensions.Value.TextJustification)](cmformatdescription/justification.md)
+- [func justification() throws -> (horizontal: CMFormatDescription.Extensions.Value.TextJustification, vertical: CMFormatDescription.Extensions.Value.TextJustification)](./justification%28%29.md)
   Returns the horizontal and vertical justification.
 
 

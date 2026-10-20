@@ -1,12 +1,15 @@
 # CLKComplicationTemplateModularSmallRingImage
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A template for displaying an image encircled by a configurable progress ring.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
@@ -14,11 +17,15 @@ A template for displaying an image encircled by a configurable progress ring.
 class CLKComplicationTemplateModularSmallRingImage
 ```
 
+```objc
+@interface CLKComplicationTemplateModularSmallRingImage : CLKComplicationTemplate
+```
+
 #### Overview
 
-This template belongs to the [`CLKComplicationFamily.modularSmall`](clkcomplicationfamily/modularsmall.md) family.
+This template belongs to the [`CLKComplicationFamily.modularSmall`](./clkcomplicationfamily/modularsmall.md) family.
 
-![A diagram showing the layout of the modular small ring image complication. The diagram shows an image inside a small progress ring.](/images/com.apple.clockkit/media-2933751@2x.png)
+![A diagram showing the layout of the modular small ring image complication. The diagram shows an image inside a small progress ring.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-2933751@2x.png)
 
 The following table lists the dimensions of the image you use in this template. All dimensions are in pixels. All images must be specified as `@2x` images for display on Apple Watch, so the point-based dimensions are half the listed size.
 
@@ -36,34 +43,35 @@ Instead of providing multiple images with different resolutions, you can provide
 ## Topics
 
 ### Creating the Template
-- [init(imageProvider: CLKImageProvider, fillFraction: Float, ringStyle: CLKComplicationRingStyle)](clkcomplicationtemplatemodularsmallringimage/init(imageprovider:fillfraction:ringstyle:).md)
+- [init(imageProvider: CLKImageProvider, fillFraction: Float, ringStyle: CLKComplicationRingStyle)](./clkcomplicationtemplatemodularsmallringimage/init%28imageprovider,fillfraction,ringstyle%29.md)
   Creates a new template from the provided image, fill fraction, and ring style.
 ### Setting the Complication Data
-- [var imageProvider: CLKImageProvider](clkcomplicationtemplatemodularsmallringimage/imageprovider.md)
+- [var imageProvider: CLKImageProvider](./clkcomplicationtemplatemodularsmallringimage/imageprovider.md)
   The image to display in the complication.
-- [var ringStyle: CLKComplicationRingStyle](clkcomplicationtemplatemodularsmallringimage/ringstyle.md)
+- [var ringStyle: CLKComplicationRingStyle](./clkcomplicationtemplatemodularsmallringimage/ringstyle.md)
   The style of the progress ring.
-- [var fillFraction: Float](clkcomplicationtemplatemodularsmallringimage/fillfraction.md)
+- [var fillFraction: Float](./clkcomplicationtemplatemodularsmallringimage/fillfraction.md)
   The fraction of the ring to fill.
 
 ## Relationships
 
 ### Inherits From
-- [CLKComplicationTemplate](clkcomplicationtemplate.md)
+- [CLKComplicationTemplate](./clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CLKComplicationTemplateModularSmallSimpleImage](clkcomplicationtemplatemodularsmallsimpleimage.md)
+### Image templates
+- [class CLKComplicationTemplateModularSmallSimpleImage](./clkcomplicationtemplatemodularsmallsimpleimage.md)
   A template for displaying an image.
-- [class CLKComplicationTemplateModularSmallStackImage](clkcomplicationtemplatemodularsmallstackimage.md)
+- [class CLKComplicationTemplateModularSmallStackImage](./clkcomplicationtemplatemodularsmallstackimage.md)
   A template for displaying a single image with a short line of text below it.
 
 

@@ -1,7 +1,8 @@
 # lineRange(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the range of characters representing the line or lines containing a given range.
 
@@ -20,9 +21,13 @@ Returns the range of characters representing the line or lines containing a give
 func lineRange(for range: NSRange) -> NSRange
 ```
 
+```objc
+- (NSRange) lineRangeForRange:(NSRange) range;
+```
+
 #### Return Value
 
-The range of characters representing the line or lines containing `aRange`, including the line termination characters. See [`getLineStart(_:end:contentsEnd:for:)`](nsstring/getlinestart(_:end:contentsend:for:).md) for a discussion of line terminators.
+The range of characters representing the line or lines containing `aRange`, including the line termination characters. See [`getLineStart(_:end:contentsEnd:for:)`](./getlinestart%28_,end,contentsend,for%29.md) for a discussion of line terminators.
 
 ## Parameters
 
@@ -30,13 +35,15 @@ The range of characters representing the line or lines containing `aRange`, incl
 
 ## See Also
 
-- [func substring(with: NSRange) -> String](nsstring/substring(with:).md)
+### Related Documentation
+- [func substring(with: NSRange) -> String](./substring%28with%29.md)
   Returns a string object containing the characters of the receiver that lie within a given range.
-- [func getLineStart(UnsafeMutablePointer<Int>?, end: UnsafeMutablePointer<Int>?, contentsEnd: UnsafeMutablePointer<Int>?, for: NSRange)](nsstring/getlinestart(_:end:contentsend:for:).md)
+### Determining Line and Paragraph Ranges
+- [func getLineStart(UnsafeMutablePointer<Int>?, end: UnsafeMutablePointer<Int>?, contentsEnd: UnsafeMutablePointer<Int>?, for: NSRange)](./getlinestart%28_,end,contentsend,for%29.md)
   Returns by reference the beginning of the first line and the end of the last line touched by the given range.
-- [func getParagraphStart(UnsafeMutablePointer<Int>?, end: UnsafeMutablePointer<Int>?, contentsEnd: UnsafeMutablePointer<Int>?, for: NSRange)](nsstring/getparagraphstart(_:end:contentsend:for:).md)
+- [func getParagraphStart(UnsafeMutablePointer<Int>?, end: UnsafeMutablePointer<Int>?, contentsEnd: UnsafeMutablePointer<Int>?, for: NSRange)](./getparagraphstart%28_,end,contentsend,for%29.md)
   Returns by reference the beginning of the first paragraph and the end of the last paragraph touched by the given range.
-- [func paragraphRange(for: NSRange) -> NSRange](nsstring/paragraphrange(for:).md)
+- [func paragraphRange(for: NSRange) -> NSRange](./paragraphrange%28for%29.md)
   Returns the range of characters representing the paragraph or paragraphs containing a given range.
 
 

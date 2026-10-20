@@ -1,18 +1,19 @@
 # SCNPhysicsContact
 
 **Framework**: SceneKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Detailed information about a contact between two physics bodies in a scene’s physics simulation.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,45 +21,50 @@ Detailed information about a contact between two physics bodies in a scene’s p
 class SCNPhysicsContact
 ```
 
+```objc
+@interface SCNPhysicsContact : NSObject
+```
+
 #### Overview
 
-You don’t create  [`SCNPhysicsContact`](scnphysicscontact.md) instances directly; SceneKit automatically creates these objects whenever contacts occur.
+You don’t create  [`SCNPhysicsContact`](./scnphysicscontact.md) instances directly; SceneKit automatically creates these objects whenever contacts occur.
 
-To receive contact messages, assign your custom class implementing the [`SCNPhysicsContactDelegate`](scnphysicscontactdelegate.md) protocol to the [`contactDelegate`](scnphysicsworld/contactdelegate.md) property of your scene’s [`SCNPhysicsWorld`](scnphysicsworld.md) obejct. Next, for each physics body in your scene, set the [`categoryBitMask`](scnphysicsbody/categorybitmask.md) and [`collisionBitMask`](scnphysicsbody/collisionbitmask.md) properties to define which interactions should generate contact messages.
+To receive contact messages, assign your custom class implementing the [`SCNPhysicsContactDelegate`](./scnphysicscontactdelegate.md) protocol to the [`contactDelegate`](./scnphysicsworld/contactdelegate.md) property of your scene’s [`SCNPhysicsWorld`](./scnphysicsworld.md) obejct. Next, for each physics body in your scene, set the [`categoryBitMask`](./scnphysicsbody/categorybitmask.md) and [`collisionBitMask`](./scnphysicsbody/collisionbitmask.md) properties to define which interactions should generate contact messages.
 
 ## Topics
 
 ### Inspecting the Contact Properties
-- [var nodeA: SCNNode](scnphysicscontact/nodea.md)
+- [var nodeA: SCNNode](./scnphysicscontact/nodea.md)
   The node containing the first body in the contact.
-- [var nodeB: SCNNode](scnphysicscontact/nodeb.md)
+- [var nodeB: SCNNode](./scnphysicscontact/nodeb.md)
   The node containing the second body in the contact.
-- [var contactPoint: SCNVector3](scnphysicscontact/contactpoint.md)
+- [var contactPoint: SCNVector3](./scnphysicscontact/contactpoint.md)
   The contact point between the two physics bodies, in scene coordinates.
-- [var contactNormal: SCNVector3](scnphysicscontact/contactnormal.md)
+- [var contactNormal: SCNVector3](./scnphysicscontact/contactnormal.md)
   The normal vector at the contact point between the two physics bodies, in scene coordinates.
-- [var collisionImpulse: CGFloat](scnphysicscontact/collisionimpulse.md)
+- [var collisionImpulse: CGFloat](./scnphysicscontact/collisionimpulse.md)
   The force over time of the collision, in newton-seconds.
-- [var penetrationDistance: CGFloat](scnphysicscontact/penetrationdistance.md)
+- [var penetrationDistance: CGFloat](./scnphysicscontact/penetrationdistance.md)
   The distance of overlap, in units of scene coordinate space, between the two physics bodies.
 ### Instance Properties
-- [var sweepTestFraction: CGFloat](scnphysicscontact/sweeptestfraction.md)
+- [var sweepTestFraction: CGFloat](./scnphysicscontact/sweeptestfraction.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol SCNPhysicsContactDelegate](scnphysicscontactdelegate.md)
+### Collision and Contact Detection
+- [protocol SCNPhysicsContactDelegate](./scnphysicscontactdelegate.md)
   Methods you can implement to respond when a contact or collision occurs between two physics bodies in a scene.
 
 

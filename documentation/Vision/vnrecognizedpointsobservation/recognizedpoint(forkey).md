@@ -1,7 +1,8 @@
 # recognizedPoint(forKey:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a recognized point for a key.
 
@@ -19,6 +20,10 @@ Retrieves a recognized point for a key.
 func recognizedPoint(forKey pointKey: VNRecognizedPointKey) throws -> VNRecognizedPoint
 ```
 
+```objc
+- (VNRecognizedPoint *) recognizedPointForKey:(VNRecognizedPointKey) pointKey error:(NSError **) error;
+```
+
 #### Return Value
 
 The recognized point associated with the key.
@@ -29,11 +34,12 @@ The recognized point associated with the key.
 
 ## See Also
 
-- [var availableKeys: [VNRecognizedPointKey]](vnrecognizedpointsobservation/availablekeys.md)
+### Inspecting the Observation
+- [var availableKeys: [VNRecognizedPointKey]](./availablekeys.md)
   The available point keys in the observation.
-- [var availableGroupKeys: [VNRecognizedPointGroupKey]](vnrecognizedpointsobservation/availablegroupkeys.md)
+- [var availableGroupKeys: [VNRecognizedPointGroupKey]](./availablegroupkeys.md)
   The available point group keys in the observation.
-- [func recognizedPoints(forGroupKey: VNRecognizedPointGroupKey) throws -> [VNRecognizedPointKey : VNRecognizedPoint]](vnrecognizedpointsobservation/recognizedpoints(forgroupkey:).md)
+- [func recognizedPoints(forGroupKey: VNRecognizedPointGroupKey) throws -> [VNRecognizedPointKey : VNRecognizedPoint]](./recognizedpoints%28forgroupkey%29.md)
   Retrieves the recognized points for a key.
 
 

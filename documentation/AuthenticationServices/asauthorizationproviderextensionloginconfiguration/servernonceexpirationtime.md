@@ -1,7 +1,8 @@
 # serverNonceExpirationTime
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 27.2+
@@ -11,6 +12,10 @@
 ```swift
 @NSCopying
 var serverNonceExpirationTime: NSNumber { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSNumber * serverNonceExpirationTime;
 ```
 
 #### Discussion

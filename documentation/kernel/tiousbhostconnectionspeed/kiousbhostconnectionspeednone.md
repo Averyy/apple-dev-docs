@@ -1,7 +1,8 @@
 # kIOUSBHostConnectionSpeedNone
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The no speed value.
 
@@ -10,7 +11,7 @@ The no speed value.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHostConnectionSpeedNone = 0
 ```
 

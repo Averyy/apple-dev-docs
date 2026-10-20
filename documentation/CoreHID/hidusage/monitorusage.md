@@ -1,7 +1,8 @@
 # HIDUsage.MonitorUsage
 
 **Framework**: Core HID  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.0+
@@ -15,23 +16,23 @@ enum MonitorUsage
 ## Topics
 
 ### Enumeration Cases
-- [HIDUsage.MonitorUsage.edidInformation](hidusage/monitorusage/edidinformation.md)
-- [HIDUsage.MonitorUsage.monitorControl](hidusage/monitorusage/monitorcontrol.md)
-- [HIDUsage.MonitorUsage.vdifInformation](hidusage/monitorusage/vdifinformation.md)
-- [HIDUsage.MonitorUsage.vesaVersion](hidusage/monitorusage/vesaversion.md)
+- [HIDUsage.MonitorUsage.edidInformation](./monitorusage/edidinformation.md)
+- [HIDUsage.MonitorUsage.monitorControl](./monitorusage/monitorcontrol.md)
+- [HIDUsage.MonitorUsage.vdifInformation](./monitorusage/vdifinformation.md)
+- [HIDUsage.MonitorUsage.vesaVersion](./monitorusage/vesaversion.md)
 ### Type Properties
-- [static let page: UInt16](hidusage/monitorusage/page.md)
+- [static let page: UInt16](./monitorusage/page.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

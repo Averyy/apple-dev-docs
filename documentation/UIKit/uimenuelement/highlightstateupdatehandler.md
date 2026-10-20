@@ -1,7 +1,8 @@
 # highlightStateUpdateHandler
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure the system calls when the element’s highlight state changes in a menu.
 
@@ -18,11 +19,15 @@ A closure the system calls when the element’s highlight state changes in a men
 var highlightStateUpdateHandler: ((UIMenuElement, Bool) -> Void)? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) void (^)(UIMenuElement *, _Bool) highlightStateUpdateHandler;
+```
+
 #### Discussion
 
 The system calls this handler whenever a menu element transitions between highlighted and unhighlighted states. Highlight events include pointer hover, touch down, keyboard navigation, and focus changes.
 
-The handler receives two parameters: the affected element and a Boolean that indicates the new state. When `isHighlighted` is [`true`](https://developer.apple.com/documentation/swift/true), the element is highlighted. When it’s [`false`](https://developer.apple.com/documentation/swift/false), the element is unhighlighted.
+The handler receives two parameters: the affected element and a Boolean that indicates the new state. When `isHighlighted` is [`true`](../../Swift/true.md), the element is highlighted. When it’s [`false`](../../Swift/false.md), the element is unhighlighted.
 
 Use this handler to update your app’s UI in response to the user’s attention on a menu element, such as showing a preview of the action’s effect while the user considers the option.
 

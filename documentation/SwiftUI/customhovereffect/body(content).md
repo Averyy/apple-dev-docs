@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Defines the effect produced by this effect.
@@ -30,6 +31,12 @@ You implement this method to describe a custom effect to apply to a view. `conte
 ## Parameters
 
 - `content`: An empty effect you use to compose the custom effect.
+
+## Default Implementations
+
+### CustomHoverEffect Implementations
+- [func body(content: Self.Content) -> Self.Body](./body%28content%29-1hbi3.md)
+  Defines the effect produced by this effect.
 
 
 ---

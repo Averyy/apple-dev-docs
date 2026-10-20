@@ -1,10 +1,11 @@
 # NSTextMovement.tab
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,16 +13,21 @@
 case tab
 ```
 
+```c
+NSTextMovementTab
+```
+
 ## See Also
 
-- [NSTextMovement.return](nstextmovement/return.md)
-- [NSTextMovement.backtab](nstextmovement/backtab.md)
-- [NSTextMovement.left](nstextmovement/left.md)
-- [NSTextMovement.right](nstextmovement/right.md)
-- [NSTextMovement.up](nstextmovement/up.md)
-- [NSTextMovement.down](nstextmovement/down.md)
-- [NSTextMovement.cancel](nstextmovement/cancel.md)
-- [NSTextMovement.other](nstextmovement/other.md)
+### Movement Options
+- [NSTextMovement.return](./return.md)
+- [NSTextMovement.backtab](./backtab.md)
+- [NSTextMovement.left](./left.md)
+- [NSTextMovement.right](./right.md)
+- [NSTextMovement.up](./up.md)
+- [NSTextMovement.down](./down.md)
+- [NSTextMovement.cancel](./cancel.md)
+- [NSTextMovement.other](./other.md)
 
 
 ---

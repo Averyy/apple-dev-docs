@@ -1,7 +1,8 @@
 # private(_:)
 
 **Framework**: SwiftData  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Enables managed CloudKit sync using the specified ubiquity container.
 
@@ -23,13 +24,14 @@ static func `private`(_ privateDBName: String) -> ModelConfiguration.CloudKitDat
 
 ## Parameters
 
-- `privateDBName`: The identifier of the iCloud ubiquity container to use. You find these in the iCloud capabilities section of your Xcode project. For more information, see [`Configuring iCloud services`](https://developer.apple.com/documentation/xcode/configuring-icloud-services).
+- `privateDBName`: The identifier of the iCloud ubiquity container to use. You find these in the iCloud capabilities section of your Xcode project. For more information, see [Configuring iCloud services](../../../Xcode/configuring-icloud-services.md).
 
 ## See Also
 
-- [static var automatic: ModelConfiguration.CloudKitDatabase](modelconfiguration/cloudkitdatabase-swift.struct/automatic.md)
+### Getting discovery options
+- [static var automatic: ModelConfiguration.CloudKitDatabase](./automatic.md)
   Enables managed CloudKit sync using the primary ubiquity container from the app’s entitlements.
-- [static var none: ModelConfiguration.CloudKitDatabase](modelconfiguration/cloudkitdatabase-swift.struct/none.md)
+- [static var none: ModelConfiguration.CloudKitDatabase](./none.md)
   Disables managed CloudKit sync.
 
 

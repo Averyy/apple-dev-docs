@@ -1,17 +1,18 @@
 # CoreNFC Enumerations
 
-**Framework**: Core NFC
+**Framework**: Core NFC  
+**Role**: API Collection
 
 ## Topics
 
 ### Enumerations
-- [enum NFCFeliCaEncryptionId](nfcfelicaencryptionid.md)
-- [enum NFCFeliCaPollingRequestCode](nfcfelicapollingrequestcode.md)
-- [enum NFCFeliCaPollingTimeSlot](nfcfelicapollingtimeslot.md)
-- [struct NFCISO15693RequestFlag](nfciso15693requestflag.md)
-- [struct NFCISO15693ResponseFlag](nfciso15693responseflag.md)
-- [NFCVASResponse.ErrorCode](nfcvasresponse/errorcode.md)
-- [NFCVASCommandConfiguration.Mode](nfcvascommandconfiguration/mode-swift.enum.md)
+- [enum NFCFeliCaEncryptionId](./nfcfelicaencryptionid.md)
+- [enum NFCFeliCaPollingRequestCode](./nfcfelicapollingrequestcode.md)
+- [enum NFCFeliCaPollingTimeSlot](./nfcfelicapollingtimeslot.md)
+- [struct NFCISO15693RequestFlag](./nfciso15693requestflag.md)
+- [struct NFCISO15693ResponseFlag](./nfciso15693responseflag.md)
+- [NFCVASResponse.ErrorCode](./nfcvasresponse/errorcode.md)
+- [NFCVASCommandConfiguration.Mode](./nfcvascommandconfiguration/mode-swift.enum.md)
 
 
 ---

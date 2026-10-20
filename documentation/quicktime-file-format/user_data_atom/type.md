@@ -1,7 +1,8 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer that identifies the atom type.
 
@@ -11,9 +12,10 @@ This field must be set to `'udta'`.
 
 ## See Also
 
-- [Size](user_data_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this user data atom.
-- [User data list](user_data_atom/user_data_list.md)
+- [User data list](./user_data_list.md)
   A series of user data atoms.
 
 

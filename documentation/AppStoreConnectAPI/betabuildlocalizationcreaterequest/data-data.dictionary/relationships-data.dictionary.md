@@ -1,7 +1,8 @@
 # BetaBuildLocalizationCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
@@ -10,14 +11,14 @@ The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object BetaBuildLocalizationCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaBuildLocalizationCreateRequest.Data.Relationships.Build](betabuildlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/build-data.dictionary.md)
+- [object BetaBuildLocalizationCreateRequest.Data.Relationships.Build](./relationships-data.dictionary/build-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
@@ -26,7 +27,8 @@ object BetaBuildLocalizationCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object BetaBuildLocalizationCreateRequest.Data.Attributes](betabuildlocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object BetaBuildLocalizationCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
 
 

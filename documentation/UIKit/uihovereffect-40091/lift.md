@@ -1,7 +1,8 @@
 # lift
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An effect that can visually lift the view on hover where appropriate.
 
@@ -17,11 +18,14 @@ An effect that can visually lift the view on hover where appropriate.
 static var lift: UIHoverLiftEffect { get }
 ```
 
+Available when `Self` is `UIHoverLiftEffect`.
+
 ## See Also
 
-- [static var automatic: UIHoverAutomaticEffect](uihovereffect-40091/automatic.md)
+### Choosing a hover effect
+- [static var automatic: UIHoverAutomaticEffect](./automatic.md)
   A system-default hover effect that automatically selects the appropriate effect based on the view to which it applies.
-- [static var highlight: UIHoverHighlightEffect](uihovereffect-40091/highlight.md)
+- [static var highlight: UIHoverHighlightEffect](./highlight.md)
   An effect that applies a highlight to the view on hover.
 
 

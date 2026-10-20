@@ -1,7 +1,8 @@
 # anticipatedPlaybackRate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rate at which the coordinator expects the current item to play.
 
@@ -19,9 +20,14 @@ The rate at which the coordinator expects the current item to play.
 var anticipatedPlaybackRate: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float anticipatedPlaybackRate;
+```
+
 ## See Also
 
-- [var completionDueDate: Date?](avdelegatingplaybackcoordinatorbufferingcommand/completionduedate.md)
+### Accessing command details
+- [var completionDueDate: Date?](./completionduedate.md)
   The deadline by which the coordinator expects the delegate to complete execution of a command.
 
 

@@ -1,7 +1,8 @@
 # SFSpeechRecognitionTaskHint.dictation
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A task that uses captured speech for text entry.
 
@@ -18,17 +19,22 @@ A task that uses captured speech for text entry.
 case dictation
 ```
 
+```c
+SFSpeechRecognitionTaskHintDictation
+```
+
 #### Discussion
 
 Use this hint type when you are using speech recognition for a task that’s similar to the keyboard’s built-in dictation function.
 
 ## See Also
 
-- [SFSpeechRecognitionTaskHint.unspecified](sfspeechrecognitiontaskhint/unspecified.md)
+### Hints
+- [SFSpeechRecognitionTaskHint.unspecified](./unspecified.md)
   An unspecified type of task.
-- [SFSpeechRecognitionTaskHint.search](sfspeechrecognitiontaskhint/search.md)
+- [SFSpeechRecognitionTaskHint.search](./search.md)
   A task that uses captured speech to specify search terms.
-- [SFSpeechRecognitionTaskHint.confirmation](sfspeechrecognitiontaskhint/confirmation.md)
+- [SFSpeechRecognitionTaskHint.confirmation](./confirmation.md)
   A task that uses captured speech for short, confirmation-style requests.
 
 

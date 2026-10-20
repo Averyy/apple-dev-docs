@@ -1,7 +1,8 @@
 # reloadItems(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads the items at the specified indexes.
 
@@ -14,17 +15,22 @@ Reloads the items at the specified indexes.
 func reloadItems(at indexes: IndexSet)
 ```
 
+```objc
+- (void) reloadItemsAtIndexes:(NSIndexSet *) indexes;
+```
+
 #### Discussion
 
 The scrubber makes requests for updated views from the data source and then animates their display.
 
 ## Parameters
 
-- `indexes`: The indexes of the items to reload, provided in an index set ([`IndexSet`](https://developer.apple.com/documentation/foundation/indexset)).
+- `indexes`: The indexes of the items to reload, provided in an index set ([`IndexSet`](../../Foundation/indexset.md)).
 
 ## See Also
 
-- [func reloadData()](nsscrubber/reloaddata.md)
+### Reloading content
+- [func reloadData()](./reloaddata%28%29.md)
   Reloads the content of the entire scrubber, and deselects the currently selected item.
 
 

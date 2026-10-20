@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL representation for an app entity using the provided Swift string.
 

@@ -1,7 +1,8 @@
 # manufacturerID
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var manufacturerID: MIDI2DeviceManufacturer { get }
+```
+
+```objc
+@property (nonatomic, readonly) MIDI2DeviceManufacturer manufacturerID;
 ```
 
 

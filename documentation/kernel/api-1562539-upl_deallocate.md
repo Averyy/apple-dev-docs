@@ -1,14 +1,15 @@
 # upl_deallocate
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 void upl_deallocate(upl_t upl);
 ```
 

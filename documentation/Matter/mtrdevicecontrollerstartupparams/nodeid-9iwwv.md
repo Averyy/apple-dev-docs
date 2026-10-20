@@ -1,7 +1,8 @@
 # nodeID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Node id for this controller.
 
@@ -19,6 +20,10 @@ Node id for this controller.
 ```swift
 @NSCopying
 var nodeID: NSNumber? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSNumber * nodeID;
 ```
 
 #### Discussion

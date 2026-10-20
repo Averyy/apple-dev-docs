@@ -1,7 +1,8 @@
 # AttributeScopes.AppKitAttributes
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Attribute scopes that AppKit defines.
 
@@ -17,103 +18,104 @@ struct AppKitAttributes
 ## Topics
 
 ### Using Color Attributes
-- [let backgroundColor: AttributeScopes.AppKitAttributes.BackgroundColorAttribute](attributescopes/appkitattributes/backgroundcolor.md)
+- [let backgroundColor: AttributeScopes.AppKitAttributes.BackgroundColorAttribute](./appkitattributes/backgroundcolor.md)
   A property for accessing a background color attribute.
-- [let foregroundColor: AttributeScopes.AppKitAttributes.ForegroundColorAttribute](attributescopes/appkitattributes/foregroundcolor.md)
+- [let foregroundColor: AttributeScopes.AppKitAttributes.ForegroundColorAttribute](./appkitattributes/foregroundcolor.md)
   A property for accessing a foreground color attribute.
 ### Using Font and Layout Attributes
-- [let font: AttributeScopes.AppKitAttributes.FontAttribute](attributescopes/appkitattributes/font.md)
+- [let font: AttributeScopes.AppKitAttributes.FontAttribute](./appkitattributes/font.md)
   A property for accessing a font attribute.
-- [let kern: AttributeScopes.AppKitAttributes.KernAttribute](attributescopes/appkitattributes/kern.md)
+- [let kern: AttributeScopes.AppKitAttributes.KernAttribute](./appkitattributes/kern.md)
   A property for accessing a kerning attribute.
-- [let ligature: AttributeScopes.AppKitAttributes.LigatureAttribute](attributescopes/appkitattributes/ligature.md)
+- [let ligature: AttributeScopes.AppKitAttributes.LigatureAttribute](./appkitattributes/ligature.md)
   A property for accessing a ligature attribute.
-- [let glyphInfo: AttributeScopes.AppKitAttributes.GlyphInfoAttribute](attributescopes/appkitattributes/glyphinfo.md)
+- [let glyphInfo: AttributeScopes.AppKitAttributes.GlyphInfoAttribute](./appkitattributes/glyphinfo.md)
   A property for accessing a glyph information attribute.
-- [let tracking: AttributeScopes.AppKitAttributes.TrackingAttribute](attributescopes/appkitattributes/tracking.md)
+- [let tracking: AttributeScopes.AppKitAttributes.TrackingAttribute](./appkitattributes/tracking.md)
   A property for accessing a tracking attribute.
 ### Using Text Styling Attributes
-- [let baselineOffset: AttributeScopes.AppKitAttributes.BaselineOffsetAttribute](attributescopes/appkitattributes/baselineoffset.md)
+- [let baselineOffset: AttributeScopes.AppKitAttributes.BaselineOffsetAttribute](./appkitattributes/baselineoffset.md)
   A property for accessing a baseline offset attribute.
-- [let obliqueness: AttributeScopes.AppKitAttributes.ObliquenessAttribute](attributescopes/appkitattributes/obliqueness.md)
+- [let obliqueness: AttributeScopes.AppKitAttributes.ObliquenessAttribute](./appkitattributes/obliqueness.md)
   A property for accessing an obliqueness attribute.
-- [let shadow: AttributeScopes.AppKitAttributes.ShadowAttribute](attributescopes/appkitattributes/shadow.md)
+- [let shadow: AttributeScopes.AppKitAttributes.ShadowAttribute](./appkitattributes/shadow.md)
   A property for accessing a shadow attribute.
-- [let strikethroughColor: AttributeScopes.AppKitAttributes.StrikethroughColorAttribute](attributescopes/appkitattributes/strikethroughcolor.md)
+- [let strikethroughColor: AttributeScopes.AppKitAttributes.StrikethroughColorAttribute](./appkitattributes/strikethroughcolor.md)
   A property for accessing a strikethrough color attribute.
-- [let strikethroughStyle: AttributeScopes.AppKitAttributes.StrikethroughStyleAttribute](attributescopes/appkitattributes/strikethroughstyle.md)
+- [let strikethroughStyle: AttributeScopes.AppKitAttributes.StrikethroughStyleAttribute](./appkitattributes/strikethroughstyle.md)
   A property for accessing a strikethrough style attribute.
-- [let strokeColor: AttributeScopes.AppKitAttributes.StrokeColorAttribute](attributescopes/appkitattributes/strokecolor.md)
+- [let strokeColor: AttributeScopes.AppKitAttributes.StrokeColorAttribute](./appkitattributes/strokecolor.md)
   A property for accessing a stroke color attribute.
-- [let strokeWidth: AttributeScopes.AppKitAttributes.StrokeWidthAttribute](attributescopes/appkitattributes/strokewidth.md)
+- [let strokeWidth: AttributeScopes.AppKitAttributes.StrokeWidthAttribute](./appkitattributes/strokewidth.md)
   A property for accessing a stroke width attribute.
-- [let textEffect: AttributeScopes.AppKitAttributes.TextEffectAttribute](attributescopes/appkitattributes/texteffect.md)
+- [let textEffect: AttributeScopes.AppKitAttributes.TextEffectAttribute](./appkitattributes/texteffect.md)
   A property for accessing a text effect attribute.
-- [let underlineColor: AttributeScopes.AppKitAttributes.UnderlineColorAttribute](attributescopes/appkitattributes/underlinecolor.md)
+- [let underlineColor: AttributeScopes.AppKitAttributes.UnderlineColorAttribute](./appkitattributes/underlinecolor.md)
   A property for accessing an underline color attribute.
-- [let underlineStyle: AttributeScopes.AppKitAttributes.UnderlineStyleAttribute](attributescopes/appkitattributes/underlinestyle.md)
+- [let underlineStyle: AttributeScopes.AppKitAttributes.UnderlineStyleAttribute](./appkitattributes/underlinestyle.md)
   A property for accessing an underline style attribute.
 ### Using Attachments and Expansions
-- [let attachment: AttributeScopes.AppKitAttributes.AttachmentAttribute](attributescopes/appkitattributes/attachment.md)
+- [let attachment: AttributeScopes.AppKitAttributes.AttachmentAttribute](./appkitattributes/attachment.md)
   A property for accessing an attachment attribute.
-- [let expansion: AttributeScopes.AppKitAttributes.ExpansionAttribute](attributescopes/appkitattributes/expansion.md)
+- [let expansion: AttributeScopes.AppKitAttributes.ExpansionAttribute](./appkitattributes/expansion.md)
   A property for accessing an expansion attribute.
 ### Using User Interface Attributes
-- [let cursor: AttributeScopes.AppKitAttributes.CursorAttribute](attributescopes/appkitattributes/cursor.md)
+- [let cursor: AttributeScopes.AppKitAttributes.CursorAttribute](./appkitattributes/cursor.md)
   A property for accessing a cursor attribute.
-- [let toolTip: AttributeScopes.AppKitAttributes.ToolTipAttribute](attributescopes/appkitattributes/tooltip.md)
+- [let toolTip: AttributeScopes.AppKitAttributes.ToolTipAttribute](./appkitattributes/tooltip.md)
   A property for accessing a tool tip attribute.
-- [let textAlternatives: AttributeScopes.AppKitAttributes.TextAlternativesAttribute](attributescopes/appkitattributes/textalternatives.md)
+- [let textAlternatives: AttributeScopes.AppKitAttributes.TextAlternativesAttribute](./appkitattributes/textalternatives.md)
   A property for accessing a text alternatives attribute.
 ### Using Foundation Attributes
-- [let foundation: AttributeScopes.FoundationAttributes](attributescopes/appkitattributes/foundation.md)
+- [let foundation: AttributeScopes.FoundationAttributes](./appkitattributes/foundation.md)
   A property for accessing attributes defined by the Foundation framework.
 ### Using Text Layout and Presentation Attributes
-- [let markedClauseSegment: AttributeScopes.AppKitAttributes.MarkedClauseSegmentAttribute](attributescopes/appkitattributes/markedclausesegment.md)
-- [let paragraphStyle: AttributeScopes.AppKitAttributes.ParagraphStyleAttribute](attributescopes/appkitattributes/paragraphstyle.md)
-- [let superscript: AttributeScopes.AppKitAttributes.SuperscriptAttribute](attributescopes/appkitattributes/superscript.md)
+- [let markedClauseSegment: AttributeScopes.AppKitAttributes.MarkedClauseSegmentAttribute](./appkitattributes/markedclausesegment.md)
+- [let paragraphStyle: AttributeScopes.AppKitAttributes.ParagraphStyleAttribute](./appkitattributes/paragraphstyle.md)
+- [let superscript: AttributeScopes.AppKitAttributes.SuperscriptAttribute](./appkitattributes/superscript.md)
 ### Instance Properties
-- [let accessibility: AttributeScopes.AccessibilityAttributes](attributescopes/appkitattributes/accessibility.md)
-- [let adaptiveImageGlyph: AttributeScopes.AppKitAttributes.AdaptiveImageGlyphAttribute](attributescopes/appkitattributes/adaptiveimageglyph.md)
+- [let accessibility: AttributeScopes.AccessibilityAttributes](./appkitattributes/accessibility.md)
+- [let adaptiveImageGlyph: AttributeScopes.AppKitAttributes.AdaptiveImageGlyphAttribute](./appkitattributes/adaptiveimageglyph.md)
 ### Enumerations
-- [AttributeScopes.AppKitAttributes.AdaptiveImageGlyphAttribute](attributescopes/appkitattributes/adaptiveimageglyphattribute.md)
-- [AttributeScopes.AppKitAttributes.AttachmentAttribute](attributescopes/appkitattributes/attachmentattribute.md)
-- [AttributeScopes.AppKitAttributes.BackgroundColorAttribute](attributescopes/appkitattributes/backgroundcolorattribute.md)
-- [AttributeScopes.AppKitAttributes.BaselineOffsetAttribute](attributescopes/appkitattributes/baselineoffsetattribute.md)
-- [AttributeScopes.AppKitAttributes.CursorAttribute](attributescopes/appkitattributes/cursorattribute.md)
-- [AttributeScopes.AppKitAttributes.ExpansionAttribute](attributescopes/appkitattributes/expansionattribute.md)
-- [AttributeScopes.AppKitAttributes.FontAttribute](attributescopes/appkitattributes/fontattribute.md)
-- [AttributeScopes.AppKitAttributes.ForegroundColorAttribute](attributescopes/appkitattributes/foregroundcolorattribute.md)
-- [AttributeScopes.AppKitAttributes.GlyphInfoAttribute](attributescopes/appkitattributes/glyphinfoattribute.md)
-- [AttributeScopes.AppKitAttributes.KernAttribute](attributescopes/appkitattributes/kernattribute.md)
-- [AttributeScopes.AppKitAttributes.LigatureAttribute](attributescopes/appkitattributes/ligatureattribute.md)
-- [AttributeScopes.AppKitAttributes.MarkedClauseSegmentAttribute](attributescopes/appkitattributes/markedclausesegmentattribute.md)
-- [AttributeScopes.AppKitAttributes.ObliquenessAttribute](attributescopes/appkitattributes/obliquenessattribute.md)
-- [AttributeScopes.AppKitAttributes.ParagraphStyleAttribute](attributescopes/appkitattributes/paragraphstyleattribute.md)
-- [AttributeScopes.AppKitAttributes.ShadowAttribute](attributescopes/appkitattributes/shadowattribute.md)
-- [AttributeScopes.AppKitAttributes.StrikethroughColorAttribute](attributescopes/appkitattributes/strikethroughcolorattribute.md)
-- [AttributeScopes.AppKitAttributes.StrikethroughStyleAttribute](attributescopes/appkitattributes/strikethroughstyleattribute.md)
-- [AttributeScopes.AppKitAttributes.StrokeColorAttribute](attributescopes/appkitattributes/strokecolorattribute.md)
-- [AttributeScopes.AppKitAttributes.StrokeWidthAttribute](attributescopes/appkitattributes/strokewidthattribute.md)
-- [AttributeScopes.AppKitAttributes.SuperscriptAttribute](attributescopes/appkitattributes/superscriptattribute.md)
-- [AttributeScopes.AppKitAttributes.TextAlternativesAttribute](attributescopes/appkitattributes/textalternativesattribute.md)
-- [AttributeScopes.AppKitAttributes.TextEffectAttribute](attributescopes/appkitattributes/texteffectattribute.md)
-- [AttributeScopes.AppKitAttributes.ToolTipAttribute](attributescopes/appkitattributes/tooltipattribute.md)
-- [AttributeScopes.AppKitAttributes.TrackingAttribute](attributescopes/appkitattributes/trackingattribute.md)
-- [AttributeScopes.AppKitAttributes.UnderlineColorAttribute](attributescopes/appkitattributes/underlinecolorattribute.md)
-- [AttributeScopes.AppKitAttributes.UnderlineStyleAttribute](attributescopes/appkitattributes/underlinestyleattribute.md)
+- [AttributeScopes.AppKitAttributes.AdaptiveImageGlyphAttribute](./appkitattributes/adaptiveimageglyphattribute.md)
+- [AttributeScopes.AppKitAttributes.AttachmentAttribute](./appkitattributes/attachmentattribute.md)
+- [AttributeScopes.AppKitAttributes.BackgroundColorAttribute](./appkitattributes/backgroundcolorattribute.md)
+- [AttributeScopes.AppKitAttributes.BaselineOffsetAttribute](./appkitattributes/baselineoffsetattribute.md)
+- [AttributeScopes.AppKitAttributes.CursorAttribute](./appkitattributes/cursorattribute.md)
+- [AttributeScopes.AppKitAttributes.ExpansionAttribute](./appkitattributes/expansionattribute.md)
+- [AttributeScopes.AppKitAttributes.FontAttribute](./appkitattributes/fontattribute.md)
+- [AttributeScopes.AppKitAttributes.ForegroundColorAttribute](./appkitattributes/foregroundcolorattribute.md)
+- [AttributeScopes.AppKitAttributes.GlyphInfoAttribute](./appkitattributes/glyphinfoattribute.md)
+- [AttributeScopes.AppKitAttributes.KernAttribute](./appkitattributes/kernattribute.md)
+- [AttributeScopes.AppKitAttributes.LigatureAttribute](./appkitattributes/ligatureattribute.md)
+- [AttributeScopes.AppKitAttributes.MarkedClauseSegmentAttribute](./appkitattributes/markedclausesegmentattribute.md)
+- [AttributeScopes.AppKitAttributes.ObliquenessAttribute](./appkitattributes/obliquenessattribute.md)
+- [AttributeScopes.AppKitAttributes.ParagraphStyleAttribute](./appkitattributes/paragraphstyleattribute.md)
+- [AttributeScopes.AppKitAttributes.ShadowAttribute](./appkitattributes/shadowattribute.md)
+- [AttributeScopes.AppKitAttributes.StrikethroughColorAttribute](./appkitattributes/strikethroughcolorattribute.md)
+- [AttributeScopes.AppKitAttributes.StrikethroughStyleAttribute](./appkitattributes/strikethroughstyleattribute.md)
+- [AttributeScopes.AppKitAttributes.StrokeColorAttribute](./appkitattributes/strokecolorattribute.md)
+- [AttributeScopes.AppKitAttributes.StrokeWidthAttribute](./appkitattributes/strokewidthattribute.md)
+- [AttributeScopes.AppKitAttributes.SuperscriptAttribute](./appkitattributes/superscriptattribute.md)
+- [AttributeScopes.AppKitAttributes.TextAlternativesAttribute](./appkitattributes/textalternativesattribute.md)
+- [AttributeScopes.AppKitAttributes.TextEffectAttribute](./appkitattributes/texteffectattribute.md)
+- [AttributeScopes.AppKitAttributes.ToolTipAttribute](./appkitattributes/tooltipattribute.md)
+- [AttributeScopes.AppKitAttributes.TrackingAttribute](./appkitattributes/trackingattribute.md)
+- [AttributeScopes.AppKitAttributes.UnderlineColorAttribute](./appkitattributes/underlinecolorattribute.md)
+- [AttributeScopes.AppKitAttributes.UnderlineStyleAttribute](./appkitattributes/underlinestyleattribute.md)
 
 ## Relationships
 
 ### Conforms To
-- [AttributeScope](attributescope.md)
-- [DecodingConfigurationProviding](decodingconfigurationproviding.md)
-- [EncodingConfigurationProviding](encodingconfigurationproviding.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributeScope](../attributescope.md)
+- [DecodingConfigurationProviding](../decodingconfigurationproviding.md)
+- [EncodingConfigurationProviding](../encodingconfigurationproviding.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var appKit: AttributeScopes.AppKitAttributes.Type](attributescopes/appkit.md)
+### AppKit-Defined Attributes
+- [var appKit: AttributeScopes.AppKitAttributes.Type](./appkit.md)
   A property for accessing the attribute scopes that AppKit defines.
 
 

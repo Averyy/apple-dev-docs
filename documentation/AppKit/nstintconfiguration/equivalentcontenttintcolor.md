@@ -1,7 +1,8 @@
 # equivalentContentTintColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A color object that matches the effective content tint.
 
@@ -14,17 +15,22 @@ A color object that matches the effective content tint.
 var equivalentContentTintColor: NSColor? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSColor * equivalentContentTintColor;
+```
+
 #### Discussion
 
-The value of this property is an [`NSColor`](nscolor.md) that matches the represented content tint. This property is `nil` if the system can’t represent the content tint as an [`NSColor`](nscolor.md).
+The value of this property is an [`NSColor`](../nscolor.md) that matches the represented content tint. This property is `nil` if the system can’t represent the content tint as an [`NSColor`](../nscolor.md).
 
 ## See Also
 
-- [class var `default`: NSTintConfiguration](nstintconfiguration/default.md)
+### Setting the Tint Color
+- [class var `default`: NSTintConfiguration](./default.md)
   The system tints the content using the system default value for its context.
-- [class var monochrome: NSTintConfiguration](nstintconfiguration/monochrome.md)
+- [class var monochrome: NSTintConfiguration](./monochrome.md)
   The content always displays in monochrome.
-- [var baseTintColor: NSColor?](nstintconfiguration/basetintcolor.md)
+- [var baseTintColor: NSColor?](./basetintcolor.md)
   The color the system supplies when you create a tint configuration.
 
 

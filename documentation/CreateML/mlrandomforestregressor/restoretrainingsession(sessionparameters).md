@@ -1,7 +1,8 @@
 # restoreTrainingSession(sessionParameters:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Restores an existing training session.
 
@@ -25,15 +26,16 @@ A `MLTrainingSession` that can be used to resume training.
 
 ## Parameters
 
-- `sessionParameters`: Training session parameters. The method requires the a valid [`sessionDirectory`](mltrainingsessionparameters/sessiondirectory.md) parameter.
+- `sessionParameters`: Training session parameters. The method requires the a valid [`sessionDirectory`](../mltrainingsessionparameters/sessiondirectory.md) parameter.
 
 ## See Also
 
-- [static train(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](mlrandomforestregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).md)
+### Training a random forest regressor
+- [static train(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](./train%28trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters%29.md)
   Trains a random forest regressor.
-- [static makeTrainingSession(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](mlrandomforestregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).md)
+- [static makeTrainingSession(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](./maketrainingsession%28trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters%29.md)
   Creates or restores a training session.
-- [static func resume(MLTrainingSession<MLRandomForestRegressor>) throws -> MLJob<MLRandomForestRegressor>](mlrandomforestregressor/resume(_:).md)
+- [static func resume(MLTrainingSession<MLRandomForestRegressor>) throws -> MLJob<MLRandomForestRegressor>](./resume%28_%29.md)
   Resumes a training session from the last checkpoint if available.
 
 

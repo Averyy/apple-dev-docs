@@ -1,7 +1,8 @@
 # preorderDate
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The date a customer places an order for the app before it’s available in the App Store, expressed in UNIX time, in milliseconds.
 
@@ -10,25 +11,26 @@ The date a customer places an order for the app before it’s available in the A
 
 ## Declaration
 
-```swift
+```
 timestamp preorderDate
 ```
 
 #### Discussion
 
-For more information, see [`JWSAppTransactionDecodedPayload`](jwsapptransactiondecodedpayload.md).
+For more information, see [`JWSAppTransactionDecodedPayload`](./jwsapptransactiondecodedpayload.md).
 
 ## See Also
 
-- [type appAppleId](appappleid.md)
+### App information
+- [type appAppleId](./appappleid.md)
   The unique identifier of an app in the App Store.
-- [type bundleId](bundleid.md)
+- [type bundleId](./bundleid.md)
   The bundle identifier of an app.
-- [type originalApplicationVersion](originalapplicationversion.md)
+- [type originalApplicationVersion](./originalapplicationversion.md)
   The app version that the customer originally purchased from the App Store.
-- [type originalPlatform](originalplatform.md)
+- [type originalPlatform](./originalplatform.md)
   The platform on which a customer originally purchases an app.
-- [type storeType](storetype.md)
+- [type storeType](./storetype.md)
   A string that describes the store the customer obtained the app from.
 
 

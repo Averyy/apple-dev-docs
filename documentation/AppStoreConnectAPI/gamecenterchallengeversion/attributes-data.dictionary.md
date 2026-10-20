@@ -1,7 +1,8 @@
 # GameCenterChallengeVersion.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a challenge resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a challenge resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeVersion.Attributes
 ```
 

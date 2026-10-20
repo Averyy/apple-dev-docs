@@ -1,14 +1,15 @@
 # init(suggestedAction:)
 
 **Framework**: EnergyKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a query to obtain electricity guidance based on forecasted energy usage.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,7 @@ init(suggestedAction: ElectricityGuidance.SuggestedAction)
 
 ## Parameters
 
-- `suggestedAction`: The [`ElectricityGuidance.SuggestedAction`](electricityguidance/suggestedaction-swift.enum.md) that you request.
+- `suggestedAction`: The [`ElectricityGuidance.SuggestedAction`](../suggestedaction-swift.enum.md) that you request.
 
 
 ---

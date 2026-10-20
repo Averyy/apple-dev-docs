@@ -1,16 +1,17 @@
 # layoutSubviews()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Lays out subviews.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,15 @@ Lays out subviews.
 func layoutSubviews()
 ```
 
+```objc
+- (void) layoutSubviews;
+```
+
 ## Mentions
 
-- [Adapting your app when traits change](adapting-your-app-when-traits-change.md)
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
-- [Updating views automatically with observation tracking in UIKit](updating-views-automatically-with-observation-tracking-in-uikit.md)
+- [Adapting your app when traits change](../adapting-your-app-when-traits-change.md)
+- [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
+- [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md)
 
 #### Discussion
 
@@ -30,19 +35,20 @@ The default implementation uses any constraints you set to determine the size an
 
 Subclasses can override this method as needed to perform more precise layout of their subviews. You should override this method only if the autoresizing and constraint-based behaviors of the subviews don’t offer the behavior you want. You can use your implementation to set the frame rectangles of your subviews directly.
 
-Don’t call this method directly. If you want to force a layout update, call the [`setNeedsLayout()`](uiview/setneedslayout().md) method instead to do so prior to the next drawing update. If you want to update the layout of your views immediately, call the [`layoutIfNeeded()`](uiview/layoutifneeded().md) method.
+Don’t call this method directly. If you want to force a layout update, call the [`setNeedsLayout()`](./setneedslayout%28%29.md) method instead to do so prior to the next drawing update. If you want to update the layout of your views immediately, call the [`layoutIfNeeded()`](./layoutifneeded%28%29.md) method.
 
-In iOS 18 and later, UIKit supports automatic trait tracking inside this method for traits from this view’s `traitCollection`. For more information, see [`Automatic trait tracking`](automatic-trait-tracking.md).
+In iOS 18 and later, UIKit supports automatic trait tracking inside this method for traits from this view’s `traitCollection`. For more information, see [Automatic trait tracking](../automatic-trait-tracking.md).
 
-This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking in UIKit`](updating-views-automatically-with-observation-tracking-in-uikit.md).
+This method supports automatic observation tracking. For more information, see [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md).
 
 ## See Also
 
-- [func updateProperties()](uiview/updateproperties.md)
+### Observing data in views
+- [func updateProperties()](./updateproperties%28%29.md)
   Configures the view’s content and styling properties before layout.
-- [func updateConstraints()](uiview/updateconstraints.md)
+- [func updateConstraints()](./updateconstraints%28%29.md)
   Updates constraints for the view.
-- [func draw(CGRect)](uiview/draw(_:).md)
+- [func draw(CGRect)](./draw%28_%29.md)
   Draws the view’s image within the passed-in rectangle.
 
 

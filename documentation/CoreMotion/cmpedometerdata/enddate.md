@@ -1,7 +1,8 @@
 # endDate
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The end time for the pedometer data.
 
@@ -18,13 +19,18 @@ The end time for the pedometer data.
 var endDate: Date { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDate * endDate;
+```
+
 #### Discussion
 
-The [`startDate`](cmpedometerdata/startdate.md) and `endDate` represent the period of time over which the pedometer data was gathered.
+The [`startDate`](./startdate.md) and `endDate` represent the period of time over which the pedometer data was gathered.
 
 ## See Also
 
-- [var startDate: Date](cmpedometerdata/startdate.md)
+### Getting the Dates
+- [var startDate: Date](./startdate.md)
   The start time for the pedometer data.
 
 

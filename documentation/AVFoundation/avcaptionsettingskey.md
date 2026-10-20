@@ -1,7 +1,8 @@
 # AVCaptionSettingsKey
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines dictionary keys to configure the caption converter and validator.
 
@@ -17,35 +18,40 @@ A structure that defines dictionary keys to configure the caption converter and 
 struct AVCaptionSettingsKey
 ```
 
+```c
+typedef NSString * AVCaptionSettingsKey;
+```
+
 ## Topics
 
 ### Keys
-- [static let mediaType: AVCaptionSettingsKey](avcaptionsettingskey/mediatype.md)
+- [static let mediaType: AVCaptionSettingsKey](./avcaptionsettingskey/mediatype.md)
   A key that identifies the output media type of a caption conversion operation.
-- [static let mediaSubType: AVCaptionSettingsKey](avcaptionsettingskey/mediasubtype.md)
+- [static let mediaSubType: AVCaptionSettingsKey](./avcaptionsettingskey/mediasubtype.md)
   A key that identifies the output media subtype of a caption conversion operation.
-- [static let timeCodeFrameDuration: AVCaptionSettingsKey](avcaptionsettingskey/timecodeframeduration.md)
+- [static let timeCodeFrameDuration: AVCaptionSettingsKey](./avcaptionsettingskey/timecodeframeduration.md)
   A key that identifies the frame duration that the system uses for the time code.
-- [static let useDropFrameTimeCode: AVCaptionSettingsKey](avcaptionsettingskey/usedropframetimecode.md)
+- [static let useDropFrameTimeCode: AVCaptionSettingsKey](./avcaptionsettingskey/usedropframetimecode.md)
   A key that identifies whether the system uses drop frame time code.
 ### Initializers
-- [init(rawValue: String)](avcaptionsettingskey/init(rawvalue:).md)
+- [init(rawValue: String)](./avcaptionsettingskey/init%28rawvalue%29.md)
   Creates a settings key with a string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVCaptionFormatConformer](avcaptionformatconformer.md)
+### Conversion and validation
+- [class AVCaptionFormatConformer](./avcaptionformatconformer.md)
   An object that converts a canonical caption to a specific format.
-- [class AVCaptionConversionValidator](avcaptionconversionvalidator.md)
+- [class AVCaptionConversionValidator](./avcaptionconversionvalidator.md)
   An object that validates captions for a conversion operation.
 
 

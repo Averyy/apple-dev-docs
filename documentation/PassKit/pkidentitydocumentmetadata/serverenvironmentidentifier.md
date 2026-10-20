@@ -1,7 +1,8 @@
 # serverEnvironmentIdentifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier that references the target server environment Apple Pay servers need to connect with to provision the pass.
 
@@ -9,13 +10,17 @@ An identifier that references the target server environment Apple Pay servers ne
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- macOS ?+
+- macOS
 - visionOS 2.0+
 
 ## Declaration
 
 ```swift
 var serverEnvironmentIdentifier: String { get set }
+```
+
+```objc
+@property (nonatomic, strong, nonnull) NSString * serverEnvironmentIdentifier;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # windowScene(_:performActionFor:completionHandler:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to perform the user-selected action.
 
@@ -14,7 +15,15 @@ Asks the delegate to perform the user-selected action.
 ## Declaration
 
 ```swift
+optional func windowScene(_ windowScene: UIWindowScene, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void)
+```
+
+```swift
 optional func windowScene(_ windowScene: UIWindowScene, performActionFor shortcutItem: UIApplicationShortcutItem) async -> Bool
+```
+
+```objc
+- (void) windowScene:(UIWindowScene *) windowScene performActionForShortcutItem:(UIApplicationShortcutItem *) shortcutItem completionHandler:(void (^)(BOOL succeeded)) completionHandler;
 ```
 
 #### Discussion
@@ -24,12 +33,15 @@ When the user selects one of your app’s shortcut items, use this method to per
 ## Parameters
 
 - `windowScene`: The window scene object receiving the shortcut item.
-- `shortcutItem`: The action selected by the user. Your app defines the actions that it supports, and the user chooses from among those actions. For information about how to create and configure shortcut items for your app, see [`UIApplicationShortcutItem`](uiapplicationshortcutitem.md).
-- `completionHandler`: A handler block to call after you complete the action. This block has no return value and takes the following parameter: - **succeeded**: A Boolean value indicating whether you successfully completed the specified action. Specify [`true`](https://developer.apple.com/documentation/swift/true) if you completed the action or [`false`](https://developer.apple.com/documentation/swift/false) if you didn’t.
+- `shortcutItem`: The action selected by the user. Your app defines the actions that it supports, and the user chooses from among those actions. For information about how to create and configure shortcut items for your app, see [`UIApplicationShortcutItem`](../uiapplicationshortcutitem.md).
+- `completionHandler`: A handler block to call after you complete the action. This block has no return value and takes the following parameter:
+
+  - **succeeded**: A Boolean value indicating whether you successfully completed the specified action. Specify [`true`](../../Swift/true.md) if you completed the action or [`false`](../../Swift/false.md) if you didn’t.
 
 ## See Also
 
-- [func windowScene(UIWindowScene, userDidAcceptCloudKitShareWith: CKShareMetadata)](uiwindowscenedelegate/windowscene(_:userdidacceptcloudkitsharewith:).md)
+### Performing tasks
+- [func windowScene(UIWindowScene, userDidAcceptCloudKitShareWith: CKShareMetadata)](./windowscene%28_,userdidacceptcloudkitsharewith%29.md)
   Tells the delegate that the window scene now has access to shared information in CloudKit.
 
 

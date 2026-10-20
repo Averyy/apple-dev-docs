@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct linger {
     ...
 };
@@ -17,8 +17,8 @@ struct linger {
 ## Topics
 
 ### Instance Properties
-- [l_linger](linger/1499173-l_linger.md)
-- [l_onoff](linger/1499318-l_onoff.md)
+- [l_linger](./linger/api-1499173-l_linger.md)
+- [l_onoff](./linger/api-1499318-l_onoff.md)
 
 
 ---

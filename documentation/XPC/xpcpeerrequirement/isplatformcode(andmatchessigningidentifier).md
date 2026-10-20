@@ -1,7 +1,8 @@
 # isPlatformCode(andMatchesSigningIdentifier:)
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create a requirement that the peer is platform binary. If provided, additionally requires that the peer has the specified signing identifier.
 

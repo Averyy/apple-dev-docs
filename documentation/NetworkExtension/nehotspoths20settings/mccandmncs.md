@@ -1,7 +1,8 @@
 # mccAndMNCs
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of Mobile Country Code (MCC) and Mobile Network Code  (MNC) pairs used for Wi-Fi Hotspot 2.0 negotiation.
 
@@ -17,19 +18,24 @@ An array of Mobile Country Code (MCC) and Mobile Network Code  (MNC) pairs used 
 var mccAndMNCs: [String] { get set }
 ```
 
+```objc
+@property (copy) NSArray<NSString *> * MCCAndMNCs;
+```
+
 #### Discussion
 
 Each `MCCAndMNCs` string must contain exactly six integers.
 
 ## See Also
 
-- [var domainName: String](nehotspoths20settings/domainname.md)
+### Accessing Hotspot 2.0 properties
+- [var domainName: String](./domainname.md)
   The domain name of a Hotspot 2.0 Wi-Fi Network.
-- [var isRoamingEnabled: Bool](nehotspoths20settings/isroamingenabled.md)
+- [var isRoamingEnabled: Bool](./isroamingenabled.md)
   A Boolean value indicating whether or not roaming is enabled on a Hotspot 2.0 Wi-Fi network.
-- [var naiRealmNames: [String]](nehotspoths20settings/nairealmnames.md)
+- [var naiRealmNames: [String]](./nairealmnames.md)
   An array of Network Access Identifier (NAI) realm name strings used for Wi-Fi Hotspot 2.0 negotiation.
-- [var roamingConsortiumOIs: [String]](nehotspoths20settings/roamingconsortiumois.md)
+- [var roamingConsortiumOIs: [String]](./roamingconsortiumois.md)
   An array of Roaming Consortium Organization (RCO) identifiers used for Wi-Fi Hotspot 2.0 negotiation.
 
 

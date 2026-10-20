@@ -2,6 +2,7 @@
 
 **Framework**: AVFoundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the composition contains tweening.
@@ -20,9 +21,13 @@ A Boolean value that indicates whether the composition contains tweening.
 var containsTweening: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL containsTweening;
+```
+
 #### Discussion
 
-A value of [`true`](https://developer.apple.com/documentation/swift/true) indicates that rendering a frame from the same source buffers and the same composition instruction at two different [`compositionTime`](avasynchronousvideocompositionrequest/compositiontime.md) values may yield different output frames. A value of [`false`](https://developer.apple.com/documentation/swift/false) indicates that two compositions yield the same frame.
+A value of [`true`](../../Swift/true.md) indicates that rendering a frame from the same source buffers and the same composition instruction at two different [`compositionTime`](../avasynchronousvideocompositionrequest/compositiontime.md) values may yield different output frames. A value of [`false`](../../Swift/false.md) indicates that two compositions yield the same frame.
 
 
 ---

@@ -1,7 +1,8 @@
 # init(upstream:predicate:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that emits a Boolean value upon receiving an element that satisfies the throwing predicate closure.
 

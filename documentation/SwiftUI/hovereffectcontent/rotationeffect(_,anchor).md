@@ -1,7 +1,8 @@
 # rotationEffect(_:anchor:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Rotates content in two dimensions around the specified point.
 
@@ -25,7 +26,7 @@ This effect rotates the content around the axis that points out of the xy-plane.
 ## Parameters
 
 - `angle`: The angle by which to rotate the content.
-- `anchor`: A unit point within the content about which to perform the rotation. The default value is [`center`](unitpoint/center.md).
+- `anchor`: A unit point within the content about which to perform the rotation. The default value is [`center`](../unitpoint/center.md).
 
 
 ---

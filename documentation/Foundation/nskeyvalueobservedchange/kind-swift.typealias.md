@@ -1,7 +1,8 @@
 # NSKeyValueObservedChange.Kind
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 8.0+

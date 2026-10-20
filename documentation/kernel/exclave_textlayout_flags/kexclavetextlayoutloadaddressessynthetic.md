@@ -1,14 +1,15 @@
 # kExclaveTextLayoutLoadAddressesSynthetic
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 kExclaveTextLayoutLoadAddressesSynthetic = 0x1
 ```
 

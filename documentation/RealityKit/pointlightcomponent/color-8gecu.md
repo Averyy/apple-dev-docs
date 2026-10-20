@@ -1,7 +1,8 @@
 # color
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A color for the point light.
 

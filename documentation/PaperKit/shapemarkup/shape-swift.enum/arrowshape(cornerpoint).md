@@ -1,7 +1,8 @@
 # arrowShape(cornerPoint:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 An arrow shape pointing in a specific direction.
 

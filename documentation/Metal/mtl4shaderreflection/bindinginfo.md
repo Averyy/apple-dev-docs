@@ -1,7 +1,8 @@
 # bindingInfo
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Requests reflection information for bindings.
 
@@ -17,6 +18,10 @@ Requests reflection information for bindings.
 
 ```swift
 static var bindingInfo: MTL4ShaderReflection { get }
+```
+
+```c
+MTL4ShaderReflectionBindingInfo
 ```
 
 

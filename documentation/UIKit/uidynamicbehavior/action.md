@@ -1,7 +1,8 @@
 # action
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block you want to execute during dynamic animation.
 
@@ -9,7 +10,7 @@ The block you want to execute during dynamic animation.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,25 @@ The block you want to execute during dynamic animation.
 var action: (() -> Void)? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) void (^action)();
+```
+
 #### Discussion
 
 The dynamic animator calls the action block on every animation step.
 
 ## See Also
 
-- [func willMove(to: UIDynamicAnimator?)](uidynamicbehavior/willmove(to:).md)
+### Related Documentation
+- [func willMove(to: UIDynamicAnimator?)](./willmove%28to%29.md)
   Called when the dynamic behavior is added to, or removed from, a dynamic animator.
-- [func addChildBehavior(UIDynamicBehavior)](uidynamicbehavior/addchildbehavior(_:).md)
+### Configuring a dynamic behavior
+- [func addChildBehavior(UIDynamicBehavior)](./addchildbehavior%28_%29.md)
   Adds a dynamic behavior, as a child, to a custom dynamic behavior.
-- [var childBehaviors: [UIDynamicBehavior]](uidynamicbehavior/childbehaviors.md)
+- [var childBehaviors: [UIDynamicBehavior]](./childbehaviors.md)
   Returns the array of dynamic behaviors that are children of a custom dynamic behavior.
-- [func removeChildBehavior(UIDynamicBehavior)](uidynamicbehavior/removechildbehavior(_:).md)
+- [func removeChildBehavior(UIDynamicBehavior)](./removechildbehavior%28_%29.md)
   Removes a child dynamic behavior from a custom dynamic behavior.
 
 

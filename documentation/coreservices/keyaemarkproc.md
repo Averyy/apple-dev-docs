@@ -1,9 +1,10 @@
 # keyAEMarkProc
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Object-marking function. See [`OSLMarkProcPtr`](oslmarkprocptr.md).
+Object-marking function. See [`OSLMarkProcPtr`](./oslmarkprocptr.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

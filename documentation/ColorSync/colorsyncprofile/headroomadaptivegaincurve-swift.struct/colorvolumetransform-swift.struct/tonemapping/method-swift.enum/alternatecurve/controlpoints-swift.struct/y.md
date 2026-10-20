@@ -1,7 +1,8 @@
 # y
 
 **Framework**: ColorSync  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Gain offsets in stops (non-negative): the framework infers direction (expand vs. compress) from the relationship between this alternate’s headroom and the baseline headroom.
 

@@ -1,7 +1,8 @@
 # stop()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the audio engine and releases any previously prepared resources.
 
@@ -20,25 +21,30 @@ Stops the audio engine and releases any previously prepared resources.
 func stop()
 ```
 
+```objc
+- (void) stop;
+```
+
 #### Discussion
 
-This method stops the audio engine and the audio hardware, and releases any allocated resources for the [`prepare()`](avaudioengine/prepare().md) method. When your app doesn’t need to play audio, consider pausing or stopping the engine to minimize power consumption.
+This method stops the audio engine and the audio hardware, and releases any allocated resources for the [`prepare()`](./prepare%28%29.md) method. When your app doesn’t need to play audio, consider pausing or stopping the engine to minimize power consumption.
 
 ## See Also
 
-- [func prepare()](avaudioengine/prepare.md)
+### Playing audio
+- [func prepare()](./prepare%28%29.md)
   Prepares the audio engine for starting.
-- [func start() throws](avaudioengine/start.md)
+- [func start() throws](./start%28%29.md)
   Starts the audio engine.
-- [var isRunning: Bool](avaudioengine/isrunning.md)
+- [var isRunning: Bool](./isrunning.md)
   A Boolean value that indicates whether the audio engine is running.
-- [func pause()](avaudioengine/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses the audio engine.
-- [func reset()](avaudioengine/reset.md)
+- [func reset()](./reset%28%29.md)
   Resets all audio nodes in the audio engine.
-- [func withMusicSequence<R, E>((borrowing MusicSequence?) throws(E) -> R) throws(E) -> R](avaudioengine/withmusicsequence(_:).md)
+- [func withMusicSequence<R, E>((borrowing MusicSequence?) throws(E) -> R) throws(E) -> R](./withmusicsequence%28_%29.md)
   Provides scoped access to the AVAudioEngine’s MusicSequence
-- [var musicSequence: MusicSequence?](avaudioengine/musicsequence-1z47z.md)
+- [var musicSequence: MusicSequence?](./musicsequence-1z47z.md)
 
 
 ---

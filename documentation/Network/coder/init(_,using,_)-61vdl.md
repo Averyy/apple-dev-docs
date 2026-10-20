@@ -1,7 +1,8 @@
 # init(_:using:_:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a Coder protocol.
 
@@ -19,6 +20,8 @@ Create a Coder protocol.
 ```swift
 init<BelowProtocol>(_ type: Sending.Type, using: CoderType, @ProtocolStackBuilder<BelowProtocol> _ builder: () -> BelowProtocol) where BelowProtocol : DatagramProtocol
 ```
+
+Available when `Sending` conforms to `Decodable`, `Sending` conforms to `Encodable`, `Sending` is `Receiving`, and `CoderType` conforms to `NetworkCoder`.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # init(inputA:inputB:output:fusedLayerParameters:filterParameters:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new fused layer from an array of layer parameters, where the first layer accepts two inputs.
 
@@ -11,8 +12,10 @@ Creates a new fused layer from an array of layer parameters, where the first lay
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -30,9 +33,10 @@ convenience init?(inputA: BNNSNDArrayDescriptor, inputB: BNNSNDArrayDescriptor, 
 
 ## See Also
 
-- [convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, fusedLayerParameters: [any FusableLayerParameters], filterParameters: BNNSFilterParameters?)](bnns/fusedparameterslayer/init(input:output:fusedlayerparameters:filterparameters:).md)
+### Creating a Fused Parameters Layer
+- [convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, fusedLayerParameters: [any FusableLayerParameters], filterParameters: BNNSFilterParameters?)](./init%28input,output,fusedlayerparameters,filterparameters%29.md)
   Creates a new fused layer from an array of layer parameters.
-- [convenience init?(inputA: BNNSNDArrayDescriptor, inputB: BNNSNDArrayDescriptor, inputC: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, fusedLayerParameters: [any FusableLayerParameters], filterParameters: BNNSFilterParameters?)](bnns/fusedparameterslayer/init(inputa:inputb:inputc:output:fusedlayerparameters:filterparameters:).md)
+- [convenience init?(inputA: BNNSNDArrayDescriptor, inputB: BNNSNDArrayDescriptor, inputC: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, fusedLayerParameters: [any FusableLayerParameters], filterParameters: BNNSFilterParameters?)](./init%28inputa,inputb,inputc,output,fusedlayerparameters,filterparameters%29.md)
   Creates a new fused layer from an array of layer parameters, where the first layer accepts three inputs.
 
 

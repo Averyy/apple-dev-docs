@@ -1,6 +1,8 @@
 # Recording and Streaming Your macOS App
 
-**Framework**: ReplayKit
+**Framework**: ReplayKit  
+**Role**: Sample Code  
+**Download**: [RecordingAndStreamingYourMacOSApp.zip](https://docs-assets.developer.apple.com/published/d5c35a6b7fa8/RecordingAndStreamingYourMacOSApp.zip)
 
 Share screen recordings, or broadcast live audio and video of your app, by adding ReplayKit to your macOS apps and games.
 
@@ -10,13 +12,14 @@ Share screen recordings, or broadcast live audio and video of your app, by addin
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC21 session [`10101: Discover Rolling Clips with ReplayKit`](https://developer.apple.comhttp://developer.apple.com/wwdc21/10101/).
+> **Note**: This sample code project is associated with WWDC21 session [10101: Discover Rolling Clips with ReplayKit](http://developer.apple.com/wwdc21/10101/).
 
 ## See Also
 
-- [class RPScreenRecorder](rpscreenrecorder.md)
+### Replay Sharing
+- [class RPScreenRecorder](./rpscreenrecorder.md)
   The shared recorder object that provides the ability to record audio and video of your app.
-- [class RPPreviewViewController](rppreviewviewcontroller.md)
+- [class RPPreviewViewController](./rppreviewviewcontroller.md)
   An object that displays a user interface where users preview and edit a screen recording that you create with ReplayKit.
 
 

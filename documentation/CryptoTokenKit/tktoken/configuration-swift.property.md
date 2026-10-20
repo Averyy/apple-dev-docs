@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current configuration for a token.
 
@@ -20,13 +21,18 @@ The current configuration for a token.
 var configuration: TKToken.Configuration { get }
 ```
 
+```objc
+@property (readonly) TKTokenConfiguration * configuration;
+```
+
 #### Discussion
 
-Access keychain items exported by this token with the methods [`key(for:)`](tktoken/configuration-swift.class/key(for:).md) and [`certificate(for:)`](tktoken/configuration-swift.class/certificate(for:).md) provided by the configuration. You can access token-implementation-specific additional data using the [`configurationData`](tktoken/configuration-swift.class/configurationdata.md) property of the configuration.
+Access keychain items exported by this token with the methods [`key(for:)`](./configuration-swift.class/key%28for%29.md) and [`certificate(for:)`](./configuration-swift.class/certificate%28for%29.md) provided by the configuration. You can access token-implementation-specific additional data using the [`configurationData`](./configuration-swift.class/configurationdata.md) property of the configuration.
 
 ## See Also
 
-- [TKToken.Configuration](tktoken/configuration-swift.class.md)
+### Configuring the Token
+- [TKToken.Configuration](./configuration-swift.class.md)
   A token’s configuration.
 
 

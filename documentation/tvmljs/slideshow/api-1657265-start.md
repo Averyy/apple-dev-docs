@@ -1,7 +1,8 @@
 # start
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Starts a slideshow with the given set of images.
 
@@ -10,7 +11,7 @@ Starts a slideshow with the given set of images.
 
 ## Declaration
 
-```swift
+```
 void start(
     in Object imageRequests, 
     in Object options, 
@@ -25,7 +26,7 @@ When a new slideshow beings using the `start` function, if there is a currently 
 - An array of URLs.
 - A dictionary with two key-value pairs, `headers` and `urls`. `headers` provides a dictionary of headers that is included with all image requests. `urls` contains an array of URLs.
 
-If the `showSettings` key in the `options` parameter is set to `true` or `1`, the user will be asked to pick a theme before the slideshow begins. [`Listing 1`](slideshow/1657265-start#1943543.md) shows an example of a simple slideshow that is created with two images.
+If the `showSettings` key in the `options` parameter is set to `true` or `1`, the user will be asked to pick a theme before the slideshow begins. [Listing 1](./api-1657265-start.md#1943543) shows an example of a simple slideshow that is created with two images.
 
 ```javascript
 function mySlideshow() {
@@ -42,9 +43,10 @@ function mySlideshow() {
 
 ## See Also
 
-- [append](slideshow/1657228-append.md)
+### Creating and Modifying a Slideshow
+- [append](./api-1657228-append.md)
   Add additional images to a currently running slideshow.
-- [dismiss](slideshow/1657241-dismiss.md)
+- [dismiss](./api-1657241-dismiss.md)
   Dismisses a currently running slideshow.
 
 

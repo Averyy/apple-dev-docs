@@ -1,7 +1,8 @@
 # Loader
 
 **Framework**: Evaluations  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for types that supply a dataset for evaluation.
 
@@ -22,7 +23,7 @@ protocol Loader<Sample> : Sendable
 
 #### Overview
 
-Use one of the built-in concrete types such as [`ArrayLoader`](arrayloader.md), [`JSONLoader`](jsonloader.md), or [`StreamLoader`](streamloader.md), or implement this protocol directly for custom data sources.
+Use one of the built-in concrete types such as [`ArrayLoader`](./arrayloader.md), [`JSONLoader`](./jsonloader.md), or [`StreamLoader`](./streamloader.md), or implement this protocol directly for custom data sources.
 
 ```swift
 var dataset: any Loader<ModelSample<String>> {
@@ -56,37 +57,38 @@ var dataset: any Loader<ModelSample<String>> {
 ## Topics
 
 ### Loaders
-- [struct ArrayLoader](arrayloader.md)
+- [struct ArrayLoader](./arrayloader.md)
   A loader backed by an in-memory array.
-- [struct JSONLoader](jsonloader.md)
+- [struct JSONLoader](./jsonloader.md)
   A loader backed by a JSON or JSONL file.
-- [struct StreamLoader](streamloader.md)
+- [struct StreamLoader](./streamloader.md)
   A loader backed by a custom async sequence.
 ### Associated Types
-- [associatedtype Sample : SampleProtocol](loader/sample.md)
+- [associatedtype Sample : SampleProtocol](./loader/sample.md)
 ### Instance Properties
-- [var stream: any AsyncSequence<Self.Sample, any Error>](loader/stream.md)
+- [var stream: any AsyncSequence<Self.Sample, any Error>](./loader/stream.md)
   The async sequence for iteration during an evaluation run.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [ArrayLoader](arrayloader.md)
-- [JSONLoader](jsonloader.md)
-- [StreamLoader](streamloader.md)
+- [ArrayLoader](./arrayloader.md)
+- [JSONLoader](./jsonloader.md)
+- [StreamLoader](./streamloader.md)
 
 ## See Also
 
-- [Generating synthetic datasets](generating-synthetic-evaluation-datasets.md)
+### Datasets
+- [Generating synthetic datasets](./generating-synthetic-evaluation-datasets.md)
   Expand a small set of manually written evaluation samples into a larger dataset.
-- [Designing datasets to test your feature](designing-evaluation-datasets.md)
+- [Designing datasets to test your feature](./designing-evaluation-datasets.md)
   Build categorized test datasets that reflect the full range of real-world use of your feature.
-- [struct ModelSample](modelsample.md)
+- [struct ModelSample](./modelsample.md)
   A general-purpose language model evaluation sample.
-- [actor SampleGenerator](samplegenerator.md)
+- [actor SampleGenerator](./samplegenerator.md)
   An actor that generates evaluation samples using a language model.
 
 

@@ -1,7 +1,8 @@
 # addRouteSegments(_:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Use this method to add CPRouteSegments in chronological order to the navigation session. CPRouteSegment objects must be added as soon as they are available.
 
@@ -14,6 +15,10 @@ Use this method to add CPRouteSegments in chronological order to the navigation 
 
 ```swift
 func addRouteSegments(_ routeSegments: [CPRouteSegment])
+```
+
+```objc
+- (void) addRouteSegments:(NSArray<CPRouteSegment *> *) routeSegments;
 ```
 
 

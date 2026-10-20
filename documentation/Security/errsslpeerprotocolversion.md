@@ -1,7 +1,8 @@
 # errSSLPeerProtocolVersion
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A bad protocol version was encountered.
 
@@ -18,6 +19,10 @@ A bad protocol version was encountered.
 
 ```swift
 var errSSLPeerProtocolVersion: OSStatus { get }
+```
+
+```c
+errSSLPeerProtocolVersion
 ```
 
 

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that represents the contents of the set, formatted as a property list.
 
@@ -20,9 +21,14 @@ A string that represents the contents of the set, formatted as a property list.
 var description: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * description;
+```
+
 ## See Also
 
-- [func description(withLocale: Any?) -> String](nsset/description(withlocale:).md)
+### Describing a Set
+- [func description(withLocale: Any?) -> String](./description%28withlocale%29.md)
   Returns a string that represents the contents of the set, formatted as a property list.
 
 

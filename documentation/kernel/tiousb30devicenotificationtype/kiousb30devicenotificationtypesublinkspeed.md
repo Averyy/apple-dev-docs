@@ -1,7 +1,8 @@
 # kIOUSB30DeviceNotificationTypeSublinkSpeed
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The sublink speed.
 
@@ -10,7 +11,7 @@ The sublink speed.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30DeviceNotificationTypeSublinkSpeed = 5
 ```
 

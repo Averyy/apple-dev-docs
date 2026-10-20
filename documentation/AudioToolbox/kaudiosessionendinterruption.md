@@ -1,16 +1,17 @@
 # kAudioSessionEndInterruption
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The interruption to your app’s audio session has just ended. In the case where a user confirms the interruption, such as answering a phone call, your app will not receive this constant.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@ The interruption to your app’s audio session has just ended. In the case where
 var kAudioSessionEndInterruption: Int { get }
 ```
 
+```c
+kAudioSessionEndInterruption
+```
+
 ## See Also
 
-- [var kAudioSessionBeginInterruption: Int](kaudiosessionbegininterruption.md)
+### Constants
+- [var kAudioSessionBeginInterruption: Int](./kaudiosessionbegininterruption.md)
   Your app’s audio session has just been interrupted, such as by a phone call.
 
 

@@ -1,7 +1,8 @@
 # RealityViewDefaultPlaceholder
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that represents the default placeholder for a RealityView.
 
@@ -22,32 +23,33 @@ A view that represents the default placeholder for a RealityView.
 
 #### Overview
 
-You don’t directly create instances of this type because [`RealityView`](realityview.md) creates them for you.
+You don’t directly create instances of this type because [`RealityView`](./realityview.md) creates them for you.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+### SwiftUI scene presentation
+- [Controlling the layout behavior of a reality view](./controlling-the-layout-behavior-of-a-realityview.md)
   Choose a strategy for sizing frames and centering 3D content.
-- [struct RealityView](realityview.md)
+- [struct RealityView](./realityview.md)
   A view that contains RealityKit content.
-- [struct RealityViewContent](realityviewcontent.md)
+- [struct RealityViewContent](./realityviewcontent.md)
   The content of a visionOS reality view.
-- [struct RealityViewCameraContent](realityviewcameracontent.md)
+- [struct RealityViewCameraContent](./realityviewcameracontent.md)
   The content of a reality view that is displayed through a camera.
-- [protocol RealityViewContentProtocol](realityviewcontentprotocol.md)
+- [protocol RealityViewContentProtocol](./realityviewcontentprotocol.md)
   A protocol representing the content of a reality view.
-- [struct RealityViewEntityCollection](realityviewentitycollection.md)
+- [struct RealityViewEntityCollection](./realityviewentitycollection.md)
   A collection of entities in a RealityView.
-- [struct RealityViewLayoutOption](realityviewlayoutoption.md)
+- [struct RealityViewLayoutOption](./realityviewlayoutoption.md)
   Options that specify the frame sizing and content alignment option for `RealityView`.
-- [protocol EntityCollection](entitycollection.md)
+- [protocol EntityCollection](./entitycollection.md)
   An ordered, mutable collection of entities.
 
 

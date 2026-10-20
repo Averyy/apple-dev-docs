@@ -1,7 +1,8 @@
 # errSecInvalidAttributeLabel
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A label attribute is not valid.
 
@@ -18,6 +19,10 @@ A label attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeLabel: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeLabel
 ```
 
 

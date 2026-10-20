@@ -1,7 +1,8 @@
 # getAnyObject
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,15 @@
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+OSObject * getAnyObject(void);
+```
+
+*macOS*
+
+```cpp
 virtual OSObject * getAnyObject(void);
 ```
 

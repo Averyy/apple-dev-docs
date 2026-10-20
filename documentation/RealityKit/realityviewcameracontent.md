@@ -1,7 +1,8 @@
 # RealityViewCameraContent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The content of a reality view that is displayed through a camera.
 
@@ -22,56 +23,57 @@ struct RealityViewCameraContent
 
 On iOS, `RealityViewCameraContent` displays content in an AR camera view by default, and can display in a “non-AR” mode when requested or when AR or the device’s camera is unavailable. On macOS, `RealityViewCameraContent` always displays its content in a non-AR mode.
 
-You can use `RealityViewCameraContent` to add and remove entities, subscribe to RealityKit events, configure the AR environment, and perform coordinate conversions such as projections and raycasts between the [`RealityView`](realityview.md) space and a SwiftUI View coordinate space.
+You can use `RealityViewCameraContent` to add and remove entities, subscribe to RealityKit events, configure the AR environment, and perform coordinate conversions such as projections and raycasts between the [`RealityView`](./realityview.md) space and a SwiftUI View coordinate space.
 
 ## Topics
 
 ### Structures
-- [RealityViewCameraContent.Body](realityviewcameracontent/body.md)
-  The default view contents of a [`RealityView`](realityview.md) using [`RealityViewCameraContent`](realityviewcameracontent.md).
+- [RealityViewCameraContent.Body](./realityviewcameracontent/body.md)
+  The default view contents of a [`RealityView`](./realityview.md) using [`RealityViewCameraContent`](./realityviewcameracontent.md).
 ### Instance Properties
-- [var audioListener: Entity?](realityviewcameracontent/audiolistener.md)
+- [var audioListener: Entity?](./realityviewcameracontent/audiolistener.md)
   The entity which defines the listener position and orientation for spatial audio.
-- [var camera: RealityViewCamera](realityviewcameracontent/camera.md)
+- [var camera: RealityViewCamera](./realityviewcameracontent/camera.md)
   The active camera for the RealityKit scene.
-- [var cameraTarget: Entity?](realityviewcameracontent/cameratarget.md)
+- [var cameraTarget: Entity?](./realityviewcameracontent/cameratarget.md)
   The entity which an orbit camera targets.
-- [var entities: RealityViewEntityCollection](realityviewcameracontent/entities.md)
+- [var entities: RealityViewEntityCollection](./realityviewcameracontent/entities.md)
   A collection of RealityKit entities that this view content renders within the scene.
-- [var environment: RealityViewEnvironment](realityviewcameracontent/environment.md)
+- [var environment: RealityViewEnvironment](./realityviewcameracontent/environment.md)
   The view’s background and default lighting properties.
-- [var renderingEffects: RealityViewRenderingEffects](realityviewcameracontent/renderingeffects.md)
+- [var renderingEffects: RealityViewRenderingEffects](./realityviewcameracontent/renderingeffects.md)
   The rendering options that you use to selectively enable or disable certain rendering effects.
 ### Instance Methods
-- [func animate(body: () -> Void, completion: (() -> Void)?)](realityviewcameracontent/animate(body:completion:).md)
-- [func subscribe<E>(to: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?, (E) -> Void) -> EventSubscription](realityviewcameracontent/subscribe(to:on:componenttype:_:).md)
+- [func animate(body: () -> Void, completion: (() -> Void)?)](./realityviewcameracontent/animate%28body,completion%29.md)
+- [func subscribe<E>(to: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?, (E) -> Void) -> EventSubscription](./realityviewcameracontent/subscribe%28to,on,componenttype,_%29.md)
   Subscribes to an event type, optionally limited to events affecting a source entity or scene, or a specific component type for component events.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [RealityCoordinateSpaceProjecting](realitycoordinatespaceprojecting.md)
-- [RealityViewContentProtocol](realityviewcontentprotocol.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [RealityCoordinateSpaceProjecting](./realitycoordinatespaceprojecting.md)
+- [RealityViewContentProtocol](./realityviewcontentprotocol.md)
 
 ## See Also
 
-- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+### SwiftUI scene presentation
+- [Controlling the layout behavior of a reality view](./controlling-the-layout-behavior-of-a-realityview.md)
   Choose a strategy for sizing frames and centering 3D content.
-- [struct RealityView](realityview.md)
+- [struct RealityView](./realityview.md)
   A view that contains RealityKit content.
-- [struct RealityViewContent](realityviewcontent.md)
+- [struct RealityViewContent](./realityviewcontent.md)
   The content of a visionOS reality view.
-- [protocol RealityViewContentProtocol](realityviewcontentprotocol.md)
+- [protocol RealityViewContentProtocol](./realityviewcontentprotocol.md)
   A protocol representing the content of a reality view.
-- [struct RealityViewDefaultPlaceholder](realityviewdefaultplaceholder.md)
+- [struct RealityViewDefaultPlaceholder](./realityviewdefaultplaceholder.md)
   A view that represents the default placeholder for a RealityView.
-- [struct RealityViewEntityCollection](realityviewentitycollection.md)
+- [struct RealityViewEntityCollection](./realityviewentitycollection.md)
   A collection of entities in a RealityView.
-- [struct RealityViewLayoutOption](realityviewlayoutoption.md)
+- [struct RealityViewLayoutOption](./realityviewlayoutoption.md)
   Options that specify the frame sizing and content alignment option for `RealityView`.
-- [protocol EntityCollection](entitycollection.md)
+- [protocol EntityCollection](./entitycollection.md)
   An ordered, mutable collection of entities.
 
 

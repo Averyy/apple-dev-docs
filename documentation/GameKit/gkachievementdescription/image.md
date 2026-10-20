@@ -1,45 +1,67 @@
 # image
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The achievement’s artwork that you display when the player completes the achievement.
 
 **Availability**:
-- iOS 4.1+
-- iPadOS 4.1+
-- Mac Catalyst 4.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 4.1+ - Deprecated in 7.0
+- iPadOS 4.1+ - Deprecated in 7.0
+- Mac Catalyst 4.1+ - Deprecated in 7.0
+- macOS 10.8+ - Deprecated in 14.2
+- tvOS 9.0+ - Deprecated in 17.2
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
+
+*macOS*
+
+```swift
+var image: NSImage? { get }
+```
+
+*tvOS, visionOS*
 
 ```swift
 var image: UIImage? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, retain, readonly, nullable) UIImage * image;
+```
+
+*macOS*
+
+```objc
+@property (atomic, retain, readonly, nullable) NSImage * image;
+```
+
 #### Discussion
 
-The value of this property is undefined until you load the image using the [`loadImage(completionHandler:)`](gkachievementdescription/loadimage(completionhandler:).md) method.
+The value of this property is undefined until you load the image using the [`loadImage(completionHandler:)`](./loadimage%28completionhandler%29.md) method.
 
 ## See Also
 
-- [var identifier: String](gkachievementdescription/identifier.md)
+### Reading and Writing Achievement Properties
+- [var identifier: String](./identifier.md)
   The string you enter in App Store Connect that uniquely identifies the achievement.
-- [var title: String](gkachievementdescription/title.md)
+- [var title: String](./title.md)
   A localized title for the achievement.
-- [var unachievedDescription: String](gkachievementdescription/unachieveddescription.md)
+- [var unachievedDescription: String](./unachieveddescription.md)
   A localized description of the achievement that you display when the player hasn’t completed the achievement.
-- [var achievedDescription: String](gkachievementdescription/achieveddescription.md)
+- [var achievedDescription: String](./achieveddescription.md)
   A localized description of the achievement that you display when the player completes the achievement.
-- [var maximumPoints: Int](gkachievementdescription/maximumpoints.md)
+- [var maximumPoints: Int](./maximumpoints.md)
   The number of points that the player earns when completing the achievement.
-- [var isHidden: Bool](gkachievementdescription/ishidden.md)
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value that states whether the achievement is initially visible to players.
-- [var isReplayable: Bool](gkachievementdescription/isreplayable.md)
+- [var isReplayable: Bool](./isreplayable.md)
   A Boolean value that states whether the player can earn the achievement multiple times.
-- [var rarityPercent: Double?](gkachievementdescription/raritypercent-4bh6k.md)
+- [var rarityPercent: Double?](./raritypercent-4bh6k.md)
   The percentage of players of this game that earned the achievement.
 
 

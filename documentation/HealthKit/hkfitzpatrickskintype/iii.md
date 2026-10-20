@@ -1,7 +1,8 @@
 # HKFitzpatrickSkinType.III
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 White to light brown skin that burns moderately and tans uniformly.
 
@@ -19,19 +20,24 @@ White to light brown skin that burns moderately and tans uniformly.
 case III
 ```
 
+```c
+HKFitzpatrickSkinTypeIII
+```
+
 ## See Also
 
-- [HKFitzpatrickSkinType.notSet](hkfitzpatrickskintype/notset.md)
+### Constants
+- [HKFitzpatrickSkinType.notSet](./notset.md)
   Either the user’s skin type is not set, or the user has not granted your app permission to read the skin type.
-- [HKFitzpatrickSkinType.I](hkfitzpatrickskintype/i.md)
+- [HKFitzpatrickSkinType.I](./i.md)
   Pale white skin that always burns easily in the sun and never tans.
-- [HKFitzpatrickSkinType.II](hkfitzpatrickskintype/ii.md)
+- [HKFitzpatrickSkinType.II](./ii.md)
   White skin that burns easily and tans minimally.
-- [HKFitzpatrickSkinType.IV](hkfitzpatrickskintype/iv.md)
+- [HKFitzpatrickSkinType.IV](./iv.md)
   Beige-olive, lightly tanned skin that burns minimally and tans moderately.
-- [HKFitzpatrickSkinType.V](hkfitzpatrickskintype/v.md)
+- [HKFitzpatrickSkinType.V](./v.md)
   Brown skin that rarely burns and tans profusely.
-- [HKFitzpatrickSkinType.VI](hkfitzpatrickskintype/vi.md)
+- [HKFitzpatrickSkinType.VI](./vi.md)
   Dark brown to black skin that never burns and tans profusely.
 
 

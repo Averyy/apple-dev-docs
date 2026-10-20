@@ -1,7 +1,8 @@
 # UICollectionViewDiffableDataSourceReference
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The object you use to manage data and provide cells for a collection view.
 
@@ -19,11 +20,15 @@ The object you use to manage data and provide cells for a collection view.
 class UICollectionViewDiffableDataSourceReference
 ```
 
+```objc
+@interface UICollectionViewDiffableDataSource : NSObject
+```
+
 #### Overview
 
-> ❗ **Important**: If you’re working in a Swift codebase, always use [`UICollectionViewDiffableDataSource`](uicollectionviewdiffabledatasource-9tqpa.md) instead.
+> ❗ **Important**: If you’re working in a Swift codebase, always use [`UICollectionViewDiffableDataSource`](./uicollectionviewdiffabledatasource-9tqpa.md) instead.
 
-A *diffable data source* object is a specialized type of data source that works together with your collection view object. It provides the behavior you need to manage updates to your collection view’s data and UI in a simple, efficient way. It also conforms to the [`UICollectionViewDataSource`](uicollectionviewdatasource.md) protocol and provides implementations for all of the protocol’s methods.
+A *diffable data source* object is a specialized type of data source that works together with your collection view object. It provides the behavior you need to manage updates to your collection view’s data and UI in a simple, efficient way. It also conforms to the [`UICollectionViewDataSource`](./uicollectionviewdatasource.md) protocol and provides implementations for all of the protocol’s methods.
 
 To fill a collection view with data:
 
@@ -32,7 +37,7 @@ To fill a collection view with data:
 3. Generate the current state of the data.
 4. Display the data in the UI.
 
-To connect a diffable data source to a collection view, you create the diffable data source using its [`init(collectionView:cellProvider:)`](uicollectionviewdiffabledatasourcereference/init(collectionview:cellprovider:).md) initializer, passing in the collection view you want to associate with that data source. You also pass in a cell provider, where you configure each of your cells to determine how to display your data in the UI.
+To connect a diffable data source to a collection view, you create the diffable data source using its [`init(collectionView:cellProvider:)`](./uicollectionviewdiffabledatasourcereference/init%28collectionview,cellprovider%29.md) initializer, passing in the collection view you want to associate with that data source. You also pass in a cell provider, where you configure each of your cells to determine how to display your data in the UI.
 
 ```objc
 self.dataSource = [[UICollectionViewDiffableDataSource alloc] initWithCollectionView:self.collectionView cellProvider:^UICollectionViewCell *(UICollectionView *collectionView, NSIndexPath *indexPath, id item) {
@@ -40,70 +45,70 @@ self.dataSource = [[UICollectionViewDiffableDataSource alloc] initWithCollection
 }];
 ```
 
-Then, you generate the current state of the data and display the data in the UI by constructing and applying a snapshot. For more information, see [`NSDiffableDataSourceSnapshotReference`](nsdiffabledatasourcesnapshotreference.md).
+Then, you generate the current state of the data and display the data in the UI by constructing and applying a snapshot. For more information, see [`NSDiffableDataSourceSnapshotReference`](./nsdiffabledatasourcesnapshotreference.md).
 
-> ❗ **Important**:  Don’t change the [`dataSource`](uicollectionview/datasource.md) on the collection view after you configure it with a diffable data source. If the collection view needs a new data source after you configure it initially, create and configure a new collection view and diffable data source.
+> ❗ **Important**:  Don’t change the [`dataSource`](./uicollectionview/datasource.md) on the collection view after you configure it with a diffable data source. If the collection view needs a new data source after you configure it initially, create and configure a new collection view and diffable data source.
 
 ## Topics
 
 ### Creating a diffable data source
-- [init(collectionView: UICollectionView, cellProvider: UICollectionViewDiffableDataSourceReferenceCellProvider)](uicollectionviewdiffabledatasourcereference/init(collectionview:cellprovider:).md)
+- [init(collectionView: UICollectionView, cellProvider: UICollectionViewDiffableDataSourceReferenceCellProvider)](./uicollectionviewdiffabledatasourcereference/init%28collectionview,cellprovider%29.md)
   Creates a diffable data source with the specified cell provider, and connects it to the specified collection view.
-- [typealias UICollectionViewDiffableDataSourceReferenceCellProvider](uicollectionviewdiffabledatasourcereferencecellprovider.md)
+- [typealias UICollectionViewDiffableDataSourceReferenceCellProvider](./uicollectionviewdiffabledatasourcereferencecellprovider.md)
   A closure that configures and returns a cell for a collection view from its diffable data source.
 ### Creating supplementary views
-- [var supplementaryViewProvider: UICollectionViewDiffableDataSourceReferenceSupplementaryViewProvider?](uicollectionviewdiffabledatasourcereference/supplementaryviewprovider.md)
+- [var supplementaryViewProvider: UICollectionViewDiffableDataSourceReferenceSupplementaryViewProvider?](./uicollectionviewdiffabledatasourcereference/supplementaryviewprovider.md)
   The closure that configures and returns the collection view’s supplementary views, such as headers and footers, from the diffable data source.
-- [typealias UICollectionViewDiffableDataSourceReferenceSupplementaryViewProvider](uicollectionviewdiffabledatasourcereferencesupplementaryviewprovider.md)
+- [typealias UICollectionViewDiffableDataSourceReferenceSupplementaryViewProvider](./uicollectionviewdiffabledatasourcereferencesupplementaryviewprovider.md)
   A closure that configures and returns a collection view’s supplementary view, such as a header or footer, from a diffable data source.
 ### Identifying items
-- [func itemIdentifier(for: IndexPath) -> Any?](uicollectionviewdiffabledatasourcereference/itemidentifier(for:).md)
+- [func itemIdentifier(for: IndexPath) -> Any?](./uicollectionviewdiffabledatasourcereference/itemidentifier%28for%29.md)
   Returns an identifier for the item at the specified index path in the collection view.
-- [func indexPath(forItemIdentifier: Any) -> IndexPath?](uicollectionviewdiffabledatasourcereference/indexpath(foritemidentifier:).md)
+- [func indexPath(forItemIdentifier: Any) -> IndexPath?](./uicollectionviewdiffabledatasourcereference/indexpath%28foritemidentifier%29.md)
   Returns an index path for the item with the specified identifier in the collection view.
 ### Identifying sections
-- [func sectionIdentifier(for: Int) -> Any?](uicollectionviewdiffabledatasourcereference/sectionidentifier(for:).md)
+- [func sectionIdentifier(for: Int) -> Any?](./uicollectionviewdiffabledatasourcereference/sectionidentifier%28for%29.md)
   Returns an identifier for the section at the index you specify in the collection view.
-- [func index(forSectionIdentifier: Any) -> Int](uicollectionviewdiffabledatasourcereference/index(forsectionidentifier:).md)
+- [func index(forSectionIdentifier: Any) -> Int](./uicollectionviewdiffabledatasourcereference/index%28forsectionidentifier%29.md)
   Returns an index for the section with the identifier you specify in the collection view.
 ### Updating data
-- [func snapshot() -> NSDiffableDataSourceSnapshotReference](uicollectionviewdiffabledatasourcereference/snapshot.md)
+- [func snapshot() -> NSDiffableDataSourceSnapshotReference](./uicollectionviewdiffabledatasourcereference/snapshot%28%29.md)
   Returns a representation of the current state of the data in the collection view.
-- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool)](uicollectionviewdiffabledatasourcereference/applysnapshot(_:animatingdifferences:).md)
+- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool)](./uicollectionviewdiffabledatasourcereference/applysnapshot%28_,animatingdifferences%29.md)
   Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes.
-- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool, completion: (() -> Void)?)](uicollectionviewdiffabledatasourcereference/applysnapshot(_:animatingdifferences:completion:).md)
+- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool, completion: (() -> Void)?)](./uicollectionviewdiffabledatasourcereference/applysnapshot%28_,animatingdifferences,completion%29.md)
   Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes and executing a completion handler.
-- [func applySnapshot(usingReloadData: NSDiffableDataSourceSnapshotReference)](uicollectionviewdiffabledatasourcereference/applysnapshot(usingreloaddata:).md)
+- [func applySnapshot(usingReloadData: NSDiffableDataSourceSnapshotReference)](./uicollectionviewdiffabledatasourcereference/applysnapshot%28usingreloaddata%29.md)
   Resets the UI to reflect the state of the data in the snapshot without computing a diff or animating the changes.
-- [func applySnapshot(usingReloadData: NSDiffableDataSourceSnapshotReference, completion: (() -> Void)?)](uicollectionviewdiffabledatasourcereference/applysnapshot(usingreloaddata:completion:).md)
+- [func applySnapshot(usingReloadData: NSDiffableDataSourceSnapshotReference, completion: (() -> Void)?)](./uicollectionviewdiffabledatasourcereference/applysnapshot%28usingreloaddata,completion%29.md)
   Resets the UI to reflect the state of the data in the snapshot without computing a diff or animating the changes, optionally executing a completion handler.
 ### Updating section data
-- [func snapshot(forSection: Any) -> NSDiffableDataSourceSectionSnapshotReference](uicollectionviewdiffabledatasourcereference/snapshot(forsection:).md)
+- [func snapshot(forSection: Any) -> NSDiffableDataSourceSectionSnapshotReference](./uicollectionviewdiffabledatasourcereference/snapshot%28forsection%29.md)
   Returns a representation of the current state of the data in the specified section of the collection view.
-- [func applySnapshot(NSDiffableDataSourceSectionSnapshotReference, toSection: Any, animatingDifferences: Bool, completion: (() -> Void)?)](uicollectionviewdiffabledatasourcereference/applysnapshot(_:tosection:animatingdifferences:completion:).md)
+- [func applySnapshot(NSDiffableDataSourceSectionSnapshotReference, toSection: Any, animatingDifferences: Bool, completion: (() -> Void)?)](./uicollectionviewdiffabledatasourcereference/applysnapshot%28_,tosection,animatingdifferences,completion%29.md)
   Updates the section UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes and executing a completion handler.
-- [func applySnapshot(NSDiffableDataSourceSectionSnapshotReference, toSection: Any, animatingDifferences: Bool)](uicollectionviewdiffabledatasourcereference/applysnapshot(_:tosection:animatingdifferences:).md)
+- [func applySnapshot(NSDiffableDataSourceSectionSnapshotReference, toSection: Any, animatingDifferences: Bool)](./uicollectionviewdiffabledatasourcereference/applysnapshot%28_,tosection,animatingdifferences%29.md)
   Updates the section UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes.
 ### Supporting reordering
-- [var reorderingHandlers: __UICollectionViewDiffableDataSourceReorderingHandlers](uicollectionviewdiffabledatasourcereference/reorderinghandlers.md)
+- [var reorderingHandlers: __UICollectionViewDiffableDataSourceReorderingHandlers](./uicollectionviewdiffabledatasourcereference/reorderinghandlers.md)
   The diffable data source’s handlers for reordering items.
 ### Supporting expanding and collapsing
-- [var sectionSnapshotHandlers: __UICollectionViewDiffableDataSourceSectionSnapshotHandlers](uicollectionviewdiffabledatasourcereference/sectionsnapshothandlers.md)
+- [var sectionSnapshotHandlers: __UICollectionViewDiffableDataSourceSectionSnapshotHandlers](./uicollectionviewdiffabledatasourcereference/sectionsnapshothandlers.md)
   The diffable data source’s handlers for expanding and collapsing items.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UICollectionViewDataSource](uicollectionviewdatasource.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UICollectionViewDataSource](./uicollectionviewdatasource.md)
 
 
 ---

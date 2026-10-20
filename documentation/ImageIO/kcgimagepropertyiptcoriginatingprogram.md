@@ -1,7 +1,8 @@
 # kCGImagePropertyIPTCOriginatingProgram
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The originating application.
 
@@ -20,9 +21,14 @@ The originating application.
 let kCGImagePropertyIPTCOriginatingProgram: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyIPTCOriginatingProgram;
+```
+
 ## See Also
 
-- [let kCGImagePropertyIPTCProgramVersion: CFString](kcgimagepropertyiptcprogramversion.md)
+### Software Program
+- [let kCGImagePropertyIPTCProgramVersion: CFString](./kcgimagepropertyiptcprogramversion.md)
   The application version.
 
 

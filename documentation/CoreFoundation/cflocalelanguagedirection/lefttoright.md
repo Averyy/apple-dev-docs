@@ -1,21 +1,26 @@
 # CFLocaleLanguageDirection.leftToRight
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 case leftToRight
+```
+
+```c
+kCFLocaleLanguageDirectionLeftToRight
 ```
 
 #### Discussion
@@ -24,10 +29,11 @@ The language direction is from left to right.
 
 ## See Also
 
-- [CFLocaleLanguageDirection.unknown](cflocalelanguagedirection/unknown.md)
-- [CFLocaleLanguageDirection.rightToLeft](cflocalelanguagedirection/righttoleft.md)
-- [CFLocaleLanguageDirection.topToBottom](cflocalelanguagedirection/toptobottom.md)
-- [CFLocaleLanguageDirection.bottomToTop](cflocalelanguagedirection/bottomtotop.md)
+### Constants
+- [CFLocaleLanguageDirection.unknown](./unknown.md)
+- [CFLocaleLanguageDirection.rightToLeft](./righttoleft.md)
+- [CFLocaleLanguageDirection.topToBottom](./toptobottom.md)
+- [CFLocaleLanguageDirection.bottomToTop](./bottomtotop.md)
 
 
 ---

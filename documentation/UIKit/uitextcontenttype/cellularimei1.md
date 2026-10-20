@@ -1,7 +1,8 @@
 # cellularIMEI1
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that defines the content in a text input area to contain the International Mobile Equipment Identity (IMEI) for an eSIM.
 
@@ -18,23 +19,28 @@ A property that defines the content in a text input area to contain the Internat
 static let cellularIMEI1: UITextContentType
 ```
 
-#### Discussion
+```c
+extern UITextContentType const UITextContentTypeCellularIMEI1;
+```
 
-On single SIM devices, this is the equivalent of [`cellularIMEI`](uitextcontenttype/cellularimei.md).
+#### Discussion.
+
+On single SIM devices, this is the equivalent of [`cellularIMEI`](./cellularimei.md).
 
 ## See Also
 
-- [static let emailAddress: UITextContentType](uitextcontenttype/emailaddress.md)
+### Setting communication details
+- [static let emailAddress: UITextContentType](./emailaddress.md)
   A property that defines the content in a text input area as an email address.
-- [static let telephoneNumber: UITextContentType](uitextcontenttype/telephonenumber.md)
+- [static let telephoneNumber: UITextContentType](./telephonenumber.md)
   A property that defines the content in a text input area as a telephone number.
-- [static let cellularEID: UITextContentType](uitextcontenttype/cellulareid.md)
+- [static let cellularEID: UITextContentType](./cellulareid.md)
   A property that defines the content in a text input area to contain an embedded identity document number for an eSIM.
-- [static let cellularIMEI: UITextContentType](uitextcontenttype/cellularimei.md)
+- [static let cellularIMEI: UITextContentType](./cellularimei.md)
   A property that defines the content in a text input area to contain the device’s primary International Mobile Equipment Identity (IMEI) number for an eSIM.
-- [static let cellularIMEI2: UITextContentType](uitextcontenttype/cellularimei2.md)
+- [static let cellularIMEI2: UITextContentType](./cellularimei2.md)
   A property that defines the content in a text input area to contain the second International Mobile Equipment Identity (IMEI) for an eSIM.
-- [static let cellularNAL: UITextContentType](uitextcontenttype/cellularnal.md)
+- [static let cellularNAL: UITextContentType](./cellularnal.md)
   A property that defines the content in a text input area for use when activating a SIM, and applies only to China.
 
 

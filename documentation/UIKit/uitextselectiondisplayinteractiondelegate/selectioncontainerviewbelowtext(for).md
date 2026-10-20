@@ -1,7 +1,8 @@
 # selectionContainerViewBelowText(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the container view to hold the selection-related highlight and detail views.
 
@@ -16,6 +17,10 @@ Returns the container view to hold the selection-related highlight and detail vi
 
 ```swift
 optional func selectionContainerViewBelowText(for interaction: UITextSelectionDisplayInteraction) -> UIView?
+```
+
+```objc
+- (UIView *) selectionContainerViewBelowTextForSelectionDisplayInteraction:(UITextSelectionDisplayInteraction *) interaction;
 ```
 
 #### Return Value

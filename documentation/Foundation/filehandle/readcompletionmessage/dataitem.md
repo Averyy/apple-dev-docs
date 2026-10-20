@@ -1,7 +1,8 @@
 # dataItem
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A result instance containing either the data read from the file or connection, or else an error.
 

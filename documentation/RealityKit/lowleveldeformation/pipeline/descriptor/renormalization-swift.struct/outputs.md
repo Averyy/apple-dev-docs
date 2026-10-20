@@ -1,7 +1,8 @@
 # outputs
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vertex attributes to renormalize to unit length.
 

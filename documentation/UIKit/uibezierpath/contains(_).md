@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the specified point is within the region that the path encloses.
 
@@ -9,7 +10,7 @@ Returns a Boolean value that indicates whether the specified point is within the
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,15 +20,19 @@ Returns a Boolean value that indicates whether the specified point is within the
 func contains(_ point: CGPoint) -> Bool
 ```
 
+```objc
+- (BOOL) containsPoint:(CGPoint) point;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the point is considered to be within the path’s enclosed area or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+[`true`](../../Swift/true.md) if the point is considered to be within the path’s enclosed area or [`false`](../../Swift/false.md) if it is not.
 
 #### Discussion
 
-The receiver contains the specified point if that point is in a portion of a closed subpath that would normally be painted during a fill operation. This method uses the value of the [`usesEvenOddFillRule`](uibezierpath/usesevenoddfillrule.md) property to determine which parts of the subpath would be filled.
+The receiver contains the specified point if that point is in a portion of a closed subpath that would normally be painted during a fill operation. This method uses the value of the [`usesEvenOddFillRule`](./usesevenoddfillrule.md) property to determine which parts of the subpath would be filled.
 
-A point is not considered to be enclosed by the path if it is inside an open subpath, regardless of whether that area would be painted during a fill operation. Therefore, to determine mouse hits on open paths, you must create a copy of the path object and explicitly close any subpaths (using the [`close()`](uibezierpath/close().md) method) before calling this method.
+A point is not considered to be enclosed by the path if it is inside an open subpath, regardless of whether that area would be painted during a fill operation. Therefore, to determine mouse hits on open paths, you must create a copy of the path object and explicitly close any subpaths (using the [`close()`](./close%28%29.md) method) before calling this method.
 
 ## Parameters
 
@@ -35,9 +40,10 @@ A point is not considered to be enclosed by the path if it is inside an open sub
 
 ## See Also
 
-- [var isEmpty: Bool](uibezierpath/isempty.md)
+### Performing hit-testing
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the path has any valid elements.
-- [var bounds: CGRect](uibezierpath/bounds.md)
+- [var bounds: CGRect](./bounds.md)
   The bounding rectangle of the path.
 
 

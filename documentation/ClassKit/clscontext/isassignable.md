@@ -1,7 +1,8 @@
 # isAssignable
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether teachers can assign the context as a task.
 
@@ -18,9 +19,13 @@ A Boolean that indicates whether teachers can assign the context as a task.
 var isAssignable: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite, getter=isAssignable) BOOL assignable;
+```
+
 #### Discussion
 
-Set this Boolean to [`false`](https://developer.apple.com/documentation/swift/false) for a context that doesn’t represent an assignable task, like when you use a context solely as a container for other contexts. For example, if you add all of your app’s quiz contexts as the children of a single quiz collection context, you can mark the collection as “not assignable”:
+Set this Boolean to [`false`](../../Swift/false.md) for a context that doesn’t represent an assignable task, like when you use a context solely as a container for other contexts. For example, if you add all of your app’s quiz contexts as the children of a single quiz collection context, you can mark the collection as “not assignable”:
 
 ```swift
 collectionContext.isAssignable = false
@@ -30,9 +35,10 @@ This prevents the Schoolwork app from offering the collection as an assignment, 
 
 ## See Also
 
-- [var suggestedAge: NSRange](clscontext/suggestedage.md)
+### Characterizing the context
+- [var suggestedAge: NSRange](./suggestedage.md)
   The range of ages, measured in years, for which you deem a context’s content suitable.
-- [var suggestedCompletionTime: NSRange](clscontext/suggestedcompletiontime.md)
+- [var suggestedCompletionTime: NSRange](./suggestedcompletiontime.md)
   A suggested time range to complete a task, measured in minutes.
 
 

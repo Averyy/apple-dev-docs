@@ -1,22 +1,27 @@
 # url(forTilePath:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the URL to use to access the specified tile.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func url(forTilePath path: MKTileOverlayPath) -> URL
+```
+
+```objc
+- (NSURL *) URLForTilePath:(MKTileOverlayPath) path;
 ```
 
 #### Return Value
@@ -33,13 +38,15 @@ The default implementation of this method uses the template string you provide a
 
 ## See Also
 
-- [init(urlTemplate: String?)](mktileoverlay/init(urltemplate:)-9s8h7.md)
+### Related Documentation
+- [init(urlTemplate: String?)](./init%28urltemplate%29-9s8h7.md)
   Creates and returns a tile overlay object using the specified tile-access template.
-- [var urlTemplate: String?](mktileoverlay/urltemplate.md)
+### Customizing the loading of tiles
+- [var urlTemplate: String?](./urltemplate.md)
   The template for generating tile image URLs.
-- [func loadTile(at: MKTileOverlayPath, result: (Data?, (any Error)?) -> Void)](mktileoverlay/loadtile(at:result:).md)
+- [func loadTile(at: MKTileOverlayPath, result: (Data?, (any Error)?) -> Void)](./loadtile%28at,result%29.md)
   Loads the specified tile asynchronously.
-- [struct MKTileOverlayPath](mktileoverlaypath.md)
+- [struct MKTileOverlayPath](../mktileoverlaypath.md)
   Values that specify the path indexes for a single overlay tile.
 
 

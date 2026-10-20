@@ -1,7 +1,8 @@
 # labels
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of observations that classify the recognized object.
 
@@ -19,9 +20,14 @@ An array of observations that classify the recognized object.
 var labels: [VNClassificationObservation] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<VNClassificationObservation *> * labels;
+```
+
 ## See Also
 
-- [class VNClassificationObservation](vnclassificationobservation.md)
+### Classifying a Recognized Object
+- [class VNClassificationObservation](../vnclassificationobservation.md)
   An object that represents classification information that an image-analysis request produces.
 
 

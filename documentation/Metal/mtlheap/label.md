@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A string that identifies the heap.
@@ -20,9 +21,13 @@ A string that identifies the heap.
 var label: String? { get set }
 ```
 
+```objc
+@property (atomic, copy, nullable) NSString * label;
+```
+
 #### Discussion
 
-Object and command labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. See [`Naming resources and commands`](https://developer.apple.com/documentation/xcode/naming-resources-and-commands).
+Object and command labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. See [Naming resources and commands](../../Xcode/naming-resources-and-commands.md).
 
 
 ---

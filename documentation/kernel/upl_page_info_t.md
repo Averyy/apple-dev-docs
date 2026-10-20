@@ -1,14 +1,15 @@
 # upl_page_info_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct upl_page_info {
     ...
 } upl_page_info_t;
@@ -17,7 +18,7 @@ typedef struct upl_page_info {
 ## Topics
 
 ### Instance Properties
-- [opaque](upl_page_info_t/1562472-opaque.md)
+- [opaque](./upl_page_info_t/api-1562472-opaque.md)
 
 
 ---

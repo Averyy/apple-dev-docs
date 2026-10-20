@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Group Activities  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new group state observer object for determining the availability of group sessions.
 

@@ -1,12 +1,13 @@
 # watchOS 11 Release Notes
 
-**Framework**: watchOS Release Notes
+**Framework**: watchOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The watchOS 11 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 11. The SDK comes bundled with Xcode 16. For information on the compatibility requirements for Xcode 16, see [`Xcode 16 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-16-release-notes).
+The watchOS 11 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 11. The SDK comes bundled with Xcode 16. For information on the compatibility requirements for Xcode 16, see [Xcode 16 Release Notes](../Xcode-Release-Notes/xcode-16-release-notes.md).
 
 ##### General
 
@@ -14,7 +15,7 @@ The watchOS 11 SDK provides support to develop watchOS apps for Apple Watch devi
 
 - Fixed: Passive Entry will not work on newly provisioned car keys on watchOS. The key can still be used by double-clicking and holding the Apple Watch to the door handle.  (128866908)
 
-##### Activitykit
+##### ActivityKit
 
 ###### Resolved Issues
 
@@ -46,7 +47,7 @@ The watchOS 11 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ###### Resolved Issues
 
-- Fixed: [`Date.ComponentsFormatStyle`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/date/componentsformatstyle) was incorrectly producing strings like `"1m"` with the `Date.ComponentsFormatStyle.Style.condensedAbbreviated` style and strings like `"1min"` with the `.narrow` style instead of the other way around. The behavior was corrected to match the behavior of [`Duration.UnitsFormatStyle.UnitWidth`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/duration/unitsformatstyle/unitwidth-swift.struct).  (125790342)
+- Fixed: [Date.ComponentsFormatStyle](../Foundation/date/componentsformatstyle.md) was incorrectly producing strings like `"1m"` with the `Date.ComponentsFormatStyle.Style.condensedAbbreviated` style and strings like `"1min"` with the `.narrow` style instead of the other way around. The behavior was corrected to match the behavior of [Duration.UnitsFormatStyle.UnitWidth](../Swift/duration/unitsformatstyle/unitwidth-swift.struct.md).  (125790342)
 
 ##### Health
 
@@ -79,7 +80,7 @@ The watchOS 11 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ###### New Features
 
-- The firmware image for iBoot will be made available in cleartext in the PCC image. To reduce the overhead imposed by firmware encryption and align policies where appropriate, firmware encryption has been disabled for iBoot on iOS, macOS, watchOS, tvOS, and visionOS. See [`Private Cloud Compute`](https://developer.apple.comhttps://security.apple.com/blog/private-cloud-compute/) for more details.  (125171074)
+- The firmware image for iBoot will be made available in cleartext in the PCC image. To reduce the overhead imposed by firmware encryption and align policies where appropriate, firmware encryption has been disabled for iBoot on iOS, macOS, watchOS, tvOS, and visionOS. See [Private Cloud Compute](https://security.apple.com/blog/private-cloud-compute/) for more details.  (125171074)
 
 ##### Podcasts
 
@@ -88,25 +89,25 @@ The watchOS 11 SDK provides support to develop watchOS apps for Apple Watch devi
 - Fixed: Tapping an episode in the Up Next widget on watchOS launches Podcasts instead of starting playback.  (129011666)
 - Fixed: Podcast app might crash when user attempts to play subscription podcast content on watch.  (129241181)
 
-##### Storekit
+##### StoreKit
 
 ###### New Features
 
-- The [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) now supports custom control styles. To create a custom control style, declare a type that conforms to [`SubscriptionStoreControlStyle`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstorecontrolstyle) and implement `makeBody(configuration:)` method.  (106819454)
-- New standard styles are available for laying out subscription store view controls with a compact height. Use `pagedPicker` and `pagedProminentPicker` for a platform appropriate paging effect, or `compactPicker` to place options in a horizontal stack. For watchOS, the new `pagedPicker` style is available for laying out [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) controls with a compact height.  (110286601)
-- Use types such as `SubscriptionOptionGroup` and `SubscriptionPeriodGroupSet` to declare a hierarchical structure for your [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview). You can use the `subscriptionStoreOptionGroupStyle(_:)` to choose between presenting groups as a tab view or as navigation links.  (110429924) (FB12264937)
-- The subscription status [`RenewalInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo/status/3822294-renewalinfo) object now supports new properties `renewalPrice` and `currency` to indicate the price at which the subscription will renew, and its currency. There is also a new `offer` property containing the information of the offer that will be applied to the next renewal, if there is any. This includes the offer ID, the offer type, and the payment mode.  (114217892)
-- Finished consumables can now be included when using the [`Transaction`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction) APIs. Users can enable this feature by setting `SKInAppPurchaseHistoryIncludesConsumables` to true in app’s Info.plist.  (115079880)
-- When configuring the control style for a [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview), users can specify a placement for the controls using the `subscriptionStoreControlStyle(_:placement:)` view modifier. For tvOS, by default [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) will place the controls trailing the marketing content.  (115319543)
-- Users can now use APIs like monthly or yearly to get common [`Product.SubscriptionPeriod`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptionperiod) values when comparing subscription periods.  (122684230)
+- The [SubscriptionStoreView](../StoreKit/subscriptionstoreview.md) now supports custom control styles. To create a custom control style, declare a type that conforms to [SubscriptionStoreControlStyle](../StoreKit/subscriptionstorecontrolstyle.md) and implement `makeBody(configuration:)` method.  (106819454)
+- New standard styles are available for laying out subscription store view controls with a compact height. Use `pagedPicker` and `pagedProminentPicker` for a platform appropriate paging effect, or `compactPicker` to place options in a horizontal stack. For watchOS, the new `pagedPicker` style is available for laying out [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) controls with a compact height.  (110286601)
+- Use types such as `SubscriptionOptionGroup` and `SubscriptionPeriodGroupSet` to declare a hierarchical structure for your [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md). You can use the `subscriptionStoreOptionGroupStyle(_:)` to choose between presenting groups as a tab view or as navigation links.  (110429924) (FB12264937)
+- The subscription status [RenewalInfo](../StoreKit/product/subscriptioninfo/status/api-3822294-renewalinfo.md) object now supports new properties `renewalPrice` and `currency` to indicate the price at which the subscription will renew, and its currency. There is also a new `offer` property containing the information of the offer that will be applied to the next renewal, if there is any. This includes the offer ID, the offer type, and the payment mode.  (114217892)
+- Finished consumables can now be included when using the [Transaction](../StoreKit/transaction.md) APIs. Users can enable this feature by setting `SKInAppPurchaseHistoryIncludesConsumables` to true in app’s Info.plist.  (115079880)
+- When configuring the control style for a [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md), users can specify a placement for the controls using the `subscriptionStoreControlStyle(_:placement:)` view modifier. For tvOS, by default [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) will place the controls trailing the marketing content.  (115319543)
+- Users can now use APIs like monthly or yearly to get common [Product.SubscriptionPeriod](../StoreKit/product/subscriptionperiod.md) values when comparing subscription periods.  (122684230)
 
 ###### Resolved Issues
 
-- Fixed: VoiceOver does not read a product’s title and description in [`ProductView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/productview) and [`StoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/storeview).  (124254957) (FB13679318)
+- Fixed: VoiceOver does not read a product’s title and description in [ProductView](../StoreKit/productview.md) and [StoreView](../StoreKit/storeview.md).  (124254957) (FB13679318)
 
 ###### Deprecations
 
-- The Original API for In-App Purchase is now deprecated, including: SKStoreReviewController, SKProduct, SKReceiptRefreshRequest, SKStorefront, SKPayment, SKRequest, SKProductsRequest, and SKProductDiscount. Please upgrade to [`StoreKit 2`](https://developer.apple.comhttps://developer.apple.com/storekit/) for current APIs and future enhancements.  (116600524)
+- The Original API for In-App Purchase is now deprecated, including: SKStoreReviewController, SKProduct, SKReceiptRefreshRequest, SKStorefront, SKPayment, SKRequest, SKProductsRequest, and SKProductDiscount. Please upgrade to [StoreKit 2](https://developer.apple.com/storekit/) for current APIs and future enhancements.  (116600524)
 
 ##### Swift Charts
 
@@ -123,7 +124,7 @@ The watchOS 11 SDK provides support to develop watchOS apps for Apple Watch devi
 - Fixed: Stroke styles can now be animated.  (127465359)
 - Fixed: For function plots, the Y domain cannot be inferred automatically.  (128877906)
 
-##### Swiftui
+##### SwiftUI
 
 ###### New Features
 
@@ -134,7 +135,7 @@ The watchOS 11 SDK provides support to develop watchOS apps for Apple Watch devi
 - Types conforming to the View protocol, and other similar SwiftUI protocols, are now isolated to the `@MainActor` by default. SwiftUI’s runtime behavior with respect to actor isolation has not changed: SwiftUI views and similar types have always been evaluated on the main actor at runtime; this change improves compile-time diagnostics for potential data-race safety issues. To opt out of the new default main actor isolation and restore the previous default isolation, add the nonisolated keyword to methods and properties as needed, or move the protocol conformance to an extension to opt out the entire type.  (120815051)
 - Scroll target behaviors now create haptics when snapped to via the Digital Crown on Apple Watch.  (121612157)
 - watchOS navigation titles now support dynamic type. If the title doesn’t fit, it will marquee. To enable this behavior, use standard title views like `.navigationTitle("Title")` and not custom title views like `.navigationTitle { Text("Title").someModifier() }`.  (121888327)
-- [`Text(_:format:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/text/init(_:format:)) now automatically injects `FormatStyle` known to SwiftUI with the `TimeZone` and `Calendar` from the environment.  (123662780)
+- [Text(_:format:)](../SwiftUI/text/init%28_,format%29.md) now automatically injects `FormatStyle` known to SwiftUI with the `TimeZone` and `Calendar` from the environment.  (123662780)
 - `@Entry` macro can now be used to simplify declarations of custom `EnvironmentValues`, `FocusedValues`, `Transaction`, and `ContainerValues` properties.  (125568810)
 - watchOS toolbar button labels now support dynamic type. To best fit the toolbar, label the buttons with SF symbols instead of text. For more information, see https://developer.apple.com/videos/play/wwdc2023/10138.  (125640396)
 - Added the ability to give a gesture a name, which gets surfaced to UIGestureRecognizers when establishing dependencies.  (126527559)
@@ -143,25 +144,31 @@ The watchOS 11 SDK provides support to develop watchOS apps for Apple Watch devi
 ###### Resolved Issues
 
 - Fixed: `ForEach` is now able to reclaim persistent state of unused child views. `@State` values created by views inside `ForEach` elements might be destroyed earlier than previously observed.  (90667238)
-- Fixed: A `DismissAction` captured in the content or detail column of a `NavigationSplitView` now pops the implicit stack. For apps linked on or after iOS 18 and aligned releases, the button in the example below will now clear any selection in the sidebar `List`. Previously, this would fail silently on iOS, and close the window on macOS. ```None
- NavigationSplitView {
-   List(…)
- } detail: {
-   DetailView()
- }
- 
- struct DetailView: View {
-   @Environment(\.dismiss) private var dismiss
- 
-   var body: some View { 
-     Button("Pop") { dismiss() }
+- Fixed: A `DismissAction` captured in the content or detail column of a `NavigationSplitView` now pops the implicit stack.
+
+  For apps linked on or after iOS 18 and aligned releases, the button in the example below will now clear any selection in the sidebar `List`. Previously, this would fail silently on iOS, and close the window on macOS.
+
+  ```
+   NavigationSplitView {
+     List(…)
+   } detail: {
+     DetailView()
    }
- }
-``` To retain the previous behavior, capture the `DismissAction` from the environment above the `NavigationSplitView`.  (92522613)
+   
+   struct DetailView: View {
+     @Environment(\.dismiss) private var dismiss
+   
+     var body: some View { 
+       Button("Pop") { dismiss() }
+     }
+   }
+  ```
+
+  To retain the previous behavior, capture the `DismissAction` from the environment above the `NavigationSplitView`.  (92522613)
 - Fixed: When a light appearance applies to a view, the view will now render watchOS system colors using the “light” values defined by https://developer.apple.com/design/human-interface-guidelines/color#watchOS-system-colors.  (108993115)
 - Fixed: `View._printChanges` now outputs key path of mutated observable properties instead of “@dependencies”.  (111392797)
 - Fixed: SwiftUI will now assert that types conforming to the `App` protocol are value types.  (113634782)
-- Fixed: Automatically updating `Text` created via [`Text(_:style:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/text/init(_:style:)) or [`Text(timerInterval:pauseTime:countsDown:showsHours:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/text/init(timerinterval:pausetime:countsdown:showshours:)) was causing increased battery drain when used in long running Live Activities. They now no longer animate changes in digits that signal the seconds value, keeping the power impact to a minimum.  (115906895)
+- Fixed: Automatically updating `Text` created via [Text(_:style:)](../SwiftUI/text/init%28_,style%29.md) or [Text(timerInterval:pauseTime:countsDown:showsHours:)](../SwiftUI/text/init%28timerinterval,pausetime,countsdown,showshours%29.md) was causing increased battery drain when used in long running Live Activities. They now no longer animate changes in digits that signal the seconds value, keeping the power impact to a minimum.  (115906895)
 - Fixed: `.navigationDestination(for:destination)` modifiers inside of lazy containers are no longer evaluated. `.navigationDestination(isPresented:destination:)` and `navigationDestination(item:destination)` will log warning when used in lazy containers. Lazy containers in this context include: `List`, `LazyVGrid`, `LazyHGrid`, `LazyHStack`, `LazyVStack` `Table`, and `TabView`. If using `navigationDestination`s in lazy containers, users will see logged errors at runtime. Lift the modifiers higher up in the view hierarchy so they are outside of the lazy containers. Allowing navigation destination modifiers in lazy containers had two significant costs: (1) app navigation state could be undefined if a navigationDestination had been scrolled off screen (2) The navigation system had to explore all list contents to ensure navigation destinations remained up to date. Only allowing these modifiers outside of lazy containers improves app navigation reliability and performance.  (117998693)
 - Fixed: Views at the root of a `NavigationStack` will now always have matching `onAppear` and `onDisappear` callbacks.  (119737698)
 - Fixed: The order of `ShapeStyle` compositing modifiers is now honored with respect to shadows. Previously in `fill(style.blendMode(…).shadow(…))` the added blend mode would also apply to the shadow, that is no longer the case. The blend mode modifier must be added after the shadow modifier to affect it. As a consequence, the fill and any shadows added can now use different blend modes. Similar rules apply to `ShapeStyle.opacity()` except that outer `opacity()` modifiers multiply with inner modifiers, e.g. in `fill(style.opacity(0.5).shadow(…).opacity(0.5))` the shadow is drawn with 50% opacity (of whatever `style` draws) and `style` itself draws with 25% opacity.  (119738072)
@@ -172,8 +179,8 @@ The watchOS 11 SDK provides support to develop watchOS apps for Apple Watch devi
 - Fixed: `ForEach` child views are no longer re-evaluated unconditionally, only when a parameter of the `ForEach` view might have changed.  (123902210)
 - Fixed: Elements along a `NavigationPath` or the data structure passed to the `path` parameter of `NavigationStack(path:root:)` are now compared more efficiently. Any side-effects from setting a `path` equal to itself are no longer reliable and likely will not occur.  (125093883)
 - Fixed: `SceneBuilder`, `WidgetBundleBuilder`, `TableColumnBuilder`, `TableRowBuilder`, `CommandsBuilder`, and `ToolbarContentBuilder` now diagnose unsupported `if #available` conditions at compile time instead of crashing at run time.  (125379937)
-- Fixed: In certain scenarios, [`Text(_:style:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/text/init(_:style:)) produced suboptimal output, such as choosing an unnecessarily small calendar unit, showing zero values for large calendar units instead of omitting them, or showing seconds in Always On Display.  (125885307)
-- Fixed: [`Text(timerInterval:pauseTime:countsDown:showsHours:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/text/init(timerinterval:pausetime:countsdown:showshours:)) was redacting the seconds value even when the timer was paused, had not started yet, or had already reached its end.  (125885429)
+- Fixed: In certain scenarios, [`Text(_:style:)`](../SwiftUI/text/init%28_,style%29.md) produced suboptimal output, such as choosing an unnecessarily small calendar unit, showing zero values for large calendar units instead of omitting them, or showing seconds in Always On Display.  (125885307)
+- Fixed: [`Text(timerInterval:pauseTime:countsDown:showsHours:)`](../SwiftUI/text/init%28timerinterval,pausetime,countsdown,showshours%29.md) was redacting the seconds value even when the timer was paused, had not started yet, or had already reached its end.  (125885429)
 - Fixed: Resolved an issue where scroll views would not receive touches if placed near a tappable control. When rebuilt with the newer SDK, make sure that small buttons and tap targets are correctly enlarged. You can use the `contentShape` modifier.  (126232279)
 - Fixed: On watchOS, hierarchical fill colors applied like `.fill(Color.red.tertiary)` now differ in opacity both when vibrancy is disabled and enabled.  (126304778)
 - Fixed: Views using the `.digitialCrownRotation` modifier might prevent scroll or pan gesture events from being recognized.  (128026017)
@@ -186,7 +193,7 @@ The watchOS 11 SDK provides support to develop watchOS apps for Apple Watch devi
 
 - Fixed: Users will be unable to present ID cards in Wallet.  (127695252)
 
-##### Widgetkit
+##### WidgetKit
 
 ###### Resolved Issues
 
@@ -200,17 +207,18 @@ The watchOS 11 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ## See Also
 
-- [watchOS 11.6 Release Notes](watchos-11_6-release-notes.md)
+### watchOS 11
+- [watchOS 11.6 Release Notes](./watchos-11_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [watchOS 11.5 Release Notes](watchos-11_5-release-notes.md)
+- [watchOS 11.5 Release Notes](./watchos-11_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [watchOS 11.4 Release Notes](watchos-11_4-release-notes.md)
+- [watchOS 11.4 Release Notes](./watchos-11_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [watchOS 11.3 Release Notes](watchos-11_3-release-notes.md)
+- [watchOS 11.3 Release Notes](./watchos-11_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [watchOS 11.2 Release Notes](watchos-11_2-release-notes.md)
+- [watchOS 11.2 Release Notes](./watchos-11_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [watchOS 11.1 Release Notes](watchos-11_1-release-notes.md)
+- [watchOS 11.1 Release Notes](./watchos-11_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

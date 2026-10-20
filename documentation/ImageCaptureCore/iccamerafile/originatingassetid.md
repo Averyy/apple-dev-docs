@@ -1,7 +1,8 @@
 # originatingAssetID
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The originating asset ID of an `HEIF` or `HVEC` file.
 
@@ -18,11 +19,16 @@ The originating asset ID of an `HEIF` or `HVEC` file.
 var originatingAssetID: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * originatingAssetID;
+```
+
 ## See Also
 
-- [var groupUUID: String?](iccamerafile/groupuuid.md)
+### Inspecting a File’s Identity
+- [var groupUUID: String?](./groupuuid.md)
   The group `UUID` of the file.
-- [var relatedUUID: String?](iccamerafile/relateduuid.md)
+- [var relatedUUID: String?](./relateduuid.md)
   A related UUID correlating several images from an Apple device.
 
 

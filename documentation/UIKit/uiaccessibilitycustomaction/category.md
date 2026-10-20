@@ -1,7 +1,8 @@
 # category
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var category: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * category;
 ```
 
 

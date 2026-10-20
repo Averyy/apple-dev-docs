@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.mathSymbol
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A symbol of mathematical use.
 
@@ -22,7 +23,7 @@ case mathSymbol
 
 #### Discussion
 
-This value corresponds to the category `Math_Symbol` (abbreviated `Sm`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Math_Symbol` (abbreviated `Sm`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

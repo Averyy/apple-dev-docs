@@ -1,21 +1,23 @@
 # fabsl
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 long double fabsl(long double);
 ```
 
 ## See Also
 
-- [fabs](1557277-fabs.md)
-- [fabsf](1557291-fabsf.md)
+### Absolute Value
+- [fabs](./api-1557277-fabs.md)
+- [fabsf](./api-1557291-fabsf.md)
 
 
 ---

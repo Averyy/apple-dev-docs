@@ -1,7 +1,8 @@
 # origin
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The region’s top-left position.
 
@@ -17,13 +18,18 @@ The region’s top-left position.
 var origin: AVCaptionPoint { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCaptionPoint origin;
+```
+
 #### Discussion
 
-The caption’s origin may not provide undefined [`x`](avcaptionpoint/x.md) and [`y`](avcaptionpoint/y.md) values, which indicates the region doesn’t have positioning information for that dimension.
+The caption’s origin may not provide undefined [`x`](../avcaptionpoint/x.md) and [`y`](../avcaptionpoint/y.md) values, which indicates the region doesn’t have positioning information for that dimension.
 
 ## See Also
 
-- [struct AVCaptionPoint](avcaptionpoint.md)
+### Accessing the location
+- [struct AVCaptionPoint](../avcaptionpoint.md)
   A structure that defines the origin point for a caption.
 
 

@@ -1,6 +1,8 @@
 # Providing an edge-to-edge, full-screen experience in your iPad app running on a Mac
 
-**Framework**: Apple silicon
+**Framework**: Apple silicon  
+**Role**: Sample Code  
+**Download**: [ProvidingAnEdgeToEdgeFullScreenExperienceInYourIPadAppRunningOnAMac.zip](https://docs-assets.developer.apple.com/published/186a6eba3742/ProvidingAnEdgeToEdgeFullScreenExperienceInYourIPadAppRunningOnAMac.zip)
 
 Take advantage of the true native resolution of a Mac display when running your iPad app in full-screen mode on a Mac.
 
@@ -12,7 +14,7 @@ Take advantage of the true native resolution of a Mac display when running your 
 
 #### Overview
 
-Some iPad apps, such as games, require a full-screen experience. These apps don’t participate in iPad multitasking, and they don’t support resizable windows when run on a Mac. To ensure these behaviors, the apps include the [`UIRequiresFullScreen`](https://developer.apple.com/documentation/bundleresources/information-property-list/uirequiresfullscreen) key with a value of `true` in their `Info.plist` file.
+Some iPad apps, such as games, require a full-screen experience. These apps don’t participate in iPad multitasking, and they don’t support resizable windows when run on a Mac. To ensure these behaviors, the apps include the [`UIRequiresFullScreen`](../BundleResources/information-property-list/uirequiresfullscreen.md) key with a value of `true` in their `Info.plist` file.
 
 But when one of these iPad apps enters full-screen mode on a Mac, the app doesn’t fill the entire screen. Instead, the app’s window is a fixed size, leaving space on either side of it.
 
@@ -20,7 +22,7 @@ An iPad app that supports iPad multitasking, on the other hand, provides resizab
 
 This sample shows how to configure an iPad app that requires full-screen mode on iPad to take advantage of the native resolution of the Mac display for a pixel-perfect, edge-to-edge, full-screen experience.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To run the sample app:
 
@@ -31,23 +33,23 @@ To run the sample app:
 
 > ❗ **Important**: The My Mac (Designed for iPad) destination option is available only on a Mac with Apple silicon.
 
-When you launch the sample app, it displays two grids across the screen. The first grid has white lines showing the pixel positions as defined in the backing store of the app’s [`UIWindowScene`](https://developer.apple.com/documentation/uikit/uiwindowscene). Each line is 1 pixel wide, and the grid separates each line by 10 pixels. The second grid uses red lines to show the point layout of the [`UIWindowScene`](https://developer.apple.com/documentation/uikit/uiwindowscene) instance. Each line is 1 point wide, and the grid separates each line by 10 points.
+When you launch the sample app, it displays two grids across the screen. The first grid has white lines showing the pixel positions as defined in the backing store of the app’s [`UIWindowScene`](../UIKit/uiwindowscene.md). Each line is 1 pixel wide, and the grid separates each line by 10 pixels. The second grid uses red lines to show the point layout of the [`UIWindowScene`](../UIKit/uiwindowscene.md) instance. Each line is 1 point wide, and the grid separates each line by 10 points.
 
 The sample app can also show other visual elements, such as a border around the safe area insets. To change the display options, click anywhere within the app.
 
-##### Support the Native Resolution of a Mac Display
+##### Support the native resolution of a Mac display
 
-An app that requires full screen on iPad — that is, an app that includes the [`UIRequiresFullScreen`](https://developer.apple.com/documentation/bundleresources/information-property-list/uirequiresfullscreen) key with a value of `true` in its `Info.plist` file — doesn’t take advantage of the entire display when run on a Mac in full-screen mode. The system determines the full-screen size of the app based on compatible iPad device sizes and displays the app using the aspect ratio of the chosen size. When the aspect ratio doesn’t match the aspect ratio of the Mac display, space appears on either side of the app’s content.
+An app that requires full screen on iPad — that is, an app that includes the [`UIRequiresFullScreen`](../BundleResources/information-property-list/uirequiresfullscreen.md) key with a value of `true` in its `Info.plist` file — doesn’t take advantage of the entire display when run on a Mac in full-screen mode. The system determines the full-screen size of the app based on compatible iPad device sizes and displays the app using the aspect ratio of the chosen size. When the aspect ratio doesn’t match the aspect ratio of the Mac display, space appears on either side of the app’s content.
 
-To eliminate the space and display content across the entire screen, the sample includes the [`UISupportsTrueScreenSizeOnMac`](https://developer.apple.com/documentation/bundleresources/information-property-list/uisupportstruescreensizeonmac) key in its `Info.plist` file.
+To eliminate the space and display content across the entire screen, the sample includes the [`UISupportsTrueScreenSizeOnMac`](../BundleResources/information-property-list/uisupportstruescreensizeonmac.md) key in its `Info.plist` file.
 
-![An illustration showing two displays side-by-side. The first display shows a fixed-size grid with empty space on each side. Below the display is the text UIRequiresFullScreen equals true. The second display shows a full-screen grid that extends from edge to edge across the display. Below the second display is the text UIRequiresFullScreen equals true, followed by UISupportsTrueScreenSizeOnMac equals true.](/images/com.apple.Apple-Silicon/full-screen.png)
+![An illustration showing two displays side-by-side. The first display shows a fixed-size grid with empty space on each side. Below the display is the text UIRequiresFullScreen equals true. The second display shows a full-screen grid that extends from edge to edge across the display. Below the second display is the text UIRequiresFullScreen equals true, followed by UISupportsTrueScreenSizeOnMac equals true.](https://developer.apple.com/tutorials/images/com.apple.Apple-Silicon/full-screen.png)
 
-With the key [`UISupportsTrueScreenSizeOnMac`](https://developer.apple.com/documentation/bundleresources/information-property-list/uisupportstruescreensizeonmac) set to `true`, the sample app shows the pixel and point grids across the entire display area of the Mac when running in full-screen mode. The full-screen size of the app’s [`UIWindowScene`](https://developer.apple.com/documentation/uikit/uiwindowscene) matches the resolution of the display that was active at the time the app launched. This size doesn’t change while the app is running, even when a person moves the window to a display that has a different resolution.
+With the key [`UISupportsTrueScreenSizeOnMac`](../BundleResources/information-property-list/uisupportstruescreensizeonmac.md) set to `true`, the sample app shows the pixel and point grids across the entire display area of the Mac when running in full-screen mode. The full-screen size of the app’s [`UIWindowScene`](../UIKit/uiwindowscene.md) matches the resolution of the display that was active at the time the app launched. This size doesn’t change while the app is running, even when a person moves the window to a display that has a different resolution.
 
 Setting the key to `true` also avoids content scaling in the app’s window (when it’s in full-screen mode on the display that was active at launch time) by mapping each rendered pixel in the window to one physical pixel on the screen.
 
-```None
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -61,17 +63,17 @@ Setting the key to `true` also avoids content scaling in the app’s window (whe
 </plist>
 ```
 
-> ❗ **Important**: For more information about the responsibilities of an iPad app that supports arbitrary screen sizes and resolutions when running on Mac, see the [`UISupportsTrueScreenSizeOnMac`](https://developer.apple.com/documentation/bundleresources/information-property-list/uisupportstruescreensizeonmac) documentation.
+> ❗ **Important**: For more information about the responsibilities of an iPad app that supports arbitrary screen sizes and resolutions when running on Mac, see the [`UISupportsTrueScreenSizeOnMac`](../BundleResources/information-property-list/uisupportstruescreensizeonmac.md) documentation.
 
-##### Launch in Full Screen Mode By Default
+##### Launch in full-screen mode by default
 
-Many apps that require full-screen mode when running on iPad look equally as good on Mac when appearing in a window. For these apps, setting [`UIRequiresFullScreen`](https://developer.apple.com/documentation/bundleresources/information-property-list/uirequiresfullscreen) to `true` provides a full-screen-only experience when the app runs in iPadOS and lets the app appear in a window by default when launched in macOS.
+Many apps that require full-screen mode when running on iPad look equally as good on Mac when appearing in a window. For these apps, setting [`UIRequiresFullScreen`](../BundleResources/information-property-list/uirequiresfullscreen.md) to `true` provides a full-screen-only experience when the app runs in iPadOS and lets the app appear in a window by default when launched in macOS.
 
 But for some apps like this sample app, the ideal experience is to run in full-screen mode on both iPad and Mac. Instead of appearing in a window by default when launched on a Mac, the sample app launches in full-screen mode.
 
-To launch in full-screen mode by default, the sample includes the [`UILaunchToFullScreenByDefaultOnMac`](https://developer.apple.com/documentation/bundleresources/information-property-list/uilaunchtofullscreenbydefaultonmac) key with a value of `true` in its `Info.plist` file.
+To launch in full-screen mode by default, the sample includes the [`UILaunchToFullScreenByDefaultOnMac`](../BundleResources/information-property-list/uilaunchtofullscreenbydefaultonmac.md) key with a value of `true` in its `Info.plist` file.
 
-```None
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -91,11 +93,12 @@ When the app launches for the first time, it displays in full-screen mode. Howev
 
 ## See Also
 
-- [Running your iOS apps in macOS](running-your-ios-apps-in-macos.md)
+### iOS apps on Mac
+- [Running your iOS apps in macOS](./running-your-ios-apps-in-macos.md)
   Modernize the iOS apps you choose to run on a Mac with Apple silicon, or opt out of running on a Mac altogether.
-- [Adapting iOS code to run in the macOS environment](adapting-ios-code-to-run-in-the-macos-environment.md)
+- [Adapting iOS code to run in the macOS environment](./adapting-ios-code-to-run-in-the-macos-environment.md)
   Support modern iOS features that result in a better user experience when running on Apple silicon.
-- [Providing touch gesture equivalents using Touch Alternatives](providing-touch-gesture-equivalents-using-touch-alternatives.md)
+- [Providing touch gesture equivalents using Touch Alternatives](./providing-touch-gesture-equivalents-using-touch-alternatives.md)
   Enable Touch Alternatives to provide keyboard, mouse, and trackpad equivalents to your iOS app when it runs on a Mac with Apple silicon.
 
 

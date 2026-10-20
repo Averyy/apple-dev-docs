@@ -1,6 +1,7 @@
 # GLKit Effects Constants
 
-**Framework**: GLKit
+**Framework**: GLKit  
+**Role**: API Collection
 
 #### Overview
 
@@ -9,22 +10,23 @@ GLKit effects implement shaders to perform their calculations. These shaders req
 ## Topics
 
 ### Constants
-- [enum GLKVertexAttrib](glkvertexattrib.md)
+- [enum GLKVertexAttrib](./glkvertexattrib.md)
   Values used as indices in OpenGL code to associate vertex data with an attribute in a named shader effect.
 
 ## See Also
 
-- [class GLKEffectProperty](glkeffectproperty.md)
+### Rendering Effect Parameters
+- [class GLKEffectProperty](./glkeffectproperty.md)
   The abstract superclass for configuration information used in GLKit rendering effects.
-- [class GLKEffectPropertyFog](glkeffectpropertyfog.md)
+- [class GLKEffectPropertyFog](./glkeffectpropertyfog.md)
   Fog drawing information for use in GLKit rendering effects.
-- [class GLKEffectPropertyLight](glkeffectpropertylight.md)
+- [class GLKEffectPropertyLight](./glkeffectpropertylight.md)
   Lighting information for use in GLKit rendering effects.
-- [class GLKEffectPropertyTexture](glkeffectpropertytexture.md)
+- [class GLKEffectPropertyTexture](./glkeffectpropertytexture.md)
   Texture drawing parameters for use in GLKit rendering effects.
-- [class GLKEffectPropertyMaterial](glkeffectpropertymaterial.md)
+- [class GLKEffectPropertyMaterial](./glkeffectpropertymaterial.md)
   Surface appearance properties for use in GLKit rendering effects.
-- [class GLKEffectPropertyTransform](glkeffectpropertytransform.md)
+- [class GLKEffectPropertyTransform](./glkeffectpropertytransform.md)
   Coordinate transform information for use in GLKit rendering effects.
 
 

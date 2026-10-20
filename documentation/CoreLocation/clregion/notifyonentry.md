@@ -1,7 +1,8 @@
 # notifyOnEntry
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating that notifications are generated upon entry into the region.
 
@@ -19,15 +20,20 @@ A Boolean indicating that notifications are generated upon entry into the region
 var notifyOnEntry: Bool { get set }
 ```
 
+```objc
+@property (atomic, assign) BOOL notifyOnEntry;
+```
+
 #### Discussion
 
-When this property is [`true`](https://developer.apple.com/documentation/swift/true), a device crossing from outside the region to inside the region triggers the delivery of a notification. If the property is [`false`](https://developer.apple.com/documentation/swift/false), a notification is not generated. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When this property is [`true`](../../Swift/true.md), a device crossing from outside the region to inside the region triggers the delivery of a notification. If the property is [`false`](../../Swift/false.md), a notification is not generated. The default value of this property is [`true`](../../Swift/true.md).
 
-If the app is not running when a boundary crossing occurs, the system launches the app into the background to handle it. Upon launch, your app must configure new location manager and delegate objects to receive the notification. The notification is sent to your delegate’s [`locationManager(_:didEnterRegion:)`](cllocationmanagerdelegate/locationmanager(_:didenterregion:).md) method.
+If the app is not running when a boundary crossing occurs, the system launches the app into the background to handle it. Upon launch, your app must configure new location manager and delegate objects to receive the notification. The notification is sent to your delegate’s [`locationManager(_:didEnterRegion:)`](../cllocationmanagerdelegate/locationmanager%28_,didenterregion%29.md) method.
 
 ## See Also
 
-- [var notifyOnExit: Bool](clregion/notifyonexit.md)
+### Specifying the notification conditions
+- [var notifyOnExit: Bool](./notifyonexit.md)
   A Boolean indicating that notifications are generated upon exit from the region.
 
 

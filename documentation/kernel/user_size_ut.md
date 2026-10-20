@@ -1,14 +1,15 @@
 # user_size_ut
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef user_size_t user_size_ut;
 ```
 

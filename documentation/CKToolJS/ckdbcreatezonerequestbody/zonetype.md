@@ -1,7 +1,8 @@
 # zoneType
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type for the zone.
 
@@ -10,7 +11,7 @@ The type for the zone.
 
 ## Declaration
 
-```swift
+```
 attribute string? zoneType;
 ```
 

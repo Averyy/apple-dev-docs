@@ -1,7 +1,8 @@
 # MLBoostedTreeClassifier.ModelParameters.ValidationData
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values for specifying validation data.
 
@@ -22,19 +23,20 @@ enum ValidationData
 ## Topics
 
 ### Specifying validation data
-- [MLBoostedTreeClassifier.ModelParameters.ValidationData.split(strategy:)](mlboostedtreeclassifier/modelparameters-swift.struct/validationdata-swift.enum/split(strategy:).md)
+- [MLBoostedTreeClassifier.ModelParameters.ValidationData.split(strategy:)](./validationdata-swift.enum/split%28strategy%29.md)
   Generate validation data by splitting the training dataset. This is the default.
-- [MLBoostedTreeClassifier.ModelParameters.ValidationData.table(_:)](mlboostedtreeclassifier/modelparameters-swift.struct/validationdata-swift.enum/table(_:).md)
+- [MLBoostedTreeClassifier.ModelParameters.ValidationData.table(_:)](./validationdata-swift.enum/table%28_%29.md)
   Set validation data from the MLDataTable provided.
-- [MLBoostedTreeClassifier.ModelParameters.ValidationData.dataFrame(_:)](mlboostedtreeclassifier/modelparameters-swift.struct/validationdata-swift.enum/dataframe(_:).md)
+- [MLBoostedTreeClassifier.ModelParameters.ValidationData.dataFrame(_:)](./validationdata-swift.enum/dataframe%28_%29.md)
   Validation data provided in a DataFrame.
-- [MLBoostedTreeClassifier.ModelParameters.ValidationData.none](mlboostedtreeclassifier/modelparameters-swift.struct/validationdata-swift.enum/none.md)
+- [MLBoostedTreeClassifier.ModelParameters.ValidationData.none](./validationdata-swift.enum/none.md)
   Do not set validation data.
 
 ## See Also
 
-- [init(validation: MLBoostedTreeClassifier.ModelParameters.ValidationData, maxDepth: Int, maxIterations: Int, minLossReduction: Double, minChildWeight: Double, randomSeed: Int, stepSize: Double, earlyStoppingRounds: Int?, rowSubsample: Double, columnSubsample: Double)](mlboostedtreeclassifier/modelparameters-swift.struct/init(validation:maxdepth:maxiterations:minlossreduction:minchildweight:randomseed:stepsize:earlystoppingrounds:rowsubsample:columnsubsample:).md)
-- [init(validationData: MLDataTable?, maxDepth: Int, maxIterations: Int, minLossReduction: Double, minChildWeight: Double, randomSeed: Int, stepSize: Double, earlyStoppingRounds: Int?, rowSubsample: Double, columnSubsample: Double)](mlboostedtreeclassifier/modelparameters-swift.struct/init(validationdata:maxdepth:maxiterations:minlossreduction:minchildweight:randomseed:stepsize:earlystoppingrounds:rowsubsample:columnsubsample:).md)
+### Creating parameters
+- [init(validation: MLBoostedTreeClassifier.ModelParameters.ValidationData, maxDepth: Int, maxIterations: Int, minLossReduction: Double, minChildWeight: Double, randomSeed: Int, stepSize: Double, earlyStoppingRounds: Int?, rowSubsample: Double, columnSubsample: Double)](./init%28validation,maxdepth,maxiterations,minlossreduction,minchildweight,randomseed,stepsize,earlystoppingrounds,rowsubsample,columnsubsample%29.md)
+- [init(validationData: MLDataTable?, maxDepth: Int, maxIterations: Int, minLossReduction: Double, minChildWeight: Double, randomSeed: Int, stepSize: Double, earlyStoppingRounds: Int?, rowSubsample: Double, columnSubsample: Double)](./init%28validationdata,maxdepth,maxiterations,minlossreduction,minchildweight,randomseed,stepsize,earlystoppingrounds,rowsubsample,columnsubsample%29.md)
   Creates a new set of parameters defining how a boosted tree classifier should be built.
 
 

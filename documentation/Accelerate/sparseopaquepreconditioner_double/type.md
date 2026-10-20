@@ -1,18 +1,19 @@
 # type
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preconditioner type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The preconditioner type.
 var type: SparsePreconditioner_t
 ```
 
+```c
+SparsePreconditioner_t type;
+```
+
 ## See Also
 
-- [var apply: (UnsafeMutableRawPointer, CBLAS_TRANSPOSE, DenseMatrix_Double, DenseMatrix_Double) -> Void](sparseopaquepreconditioner_double/apply.md)
+### Inspecting Preconditioner Properties
+- [var apply: (UnsafeMutableRawPointer, CBLAS_TRANSPOSE, DenseMatrix_Double, DenseMatrix_Double) -> Void](./apply.md)
   A function that calculates *Y = PX*, where *P* is the preconditioner.
-- [var mem: UnsafeMutableRawPointer](sparseopaquepreconditioner_double/mem.md)
+- [var mem: UnsafeMutableRawPointer](./mem.md)
   The unaltered memory pointer that passes as the first parameter of the apply function.
 
 

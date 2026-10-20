@@ -1,7 +1,8 @@
 # correlationType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of correlation to search for.
 
@@ -20,10 +21,15 @@ The type of correlation to search for.
 var correlationType: HKCorrelationType { get }
 ```
 
+```objc
+@property (copy, readonly) HKCorrelationType * correlationType;
+```
+
 ## See Also
 
-- [var samplePredicates: [HKSampleType : NSPredicate]?](hkcorrelationquery/samplepredicates.md)
-  A dictionary whose keys are [`HKSampleType`](hksampletype.md) instances and whose values are [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) instances.
+### Getting Property Data
+- [var samplePredicates: [HKSampleType : NSPredicate]?](./samplepredicates.md)
+  A dictionary whose keys are [`HKSampleType`](../hksampletype.md) instances and whose values are [`NSPredicate`](../../Foundation/nspredicate.md) instances.
 
 
 ---

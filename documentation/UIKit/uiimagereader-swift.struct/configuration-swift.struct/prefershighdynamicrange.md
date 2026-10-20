@@ -1,7 +1,8 @@
 # prefersHighDynamicRange
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the image reader should decode the image as HDR when the type is capable of decoding in either SDR or HDR.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the image reader should decode the image 
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -25,13 +26,15 @@ This property doesn’t affect images that only decode in either SDR or HDR. The
 
 ## See Also
 
-- [Applying Apple HDR effect to your photos](../appkit/applying-apple-hdr-effect-to-your-photos.md)
+### Related Documentation
+- [Applying Apple HDR effect to your photos](../../../AppKit/applying-apple-hdr-effect-to-your-photos.md)
   You can decode and apply Apple’s HDR gain map to your own images.
-- [var preparesImagesForDisplay: Bool](uiimagereader-swift.struct/configuration-swift.struct/preparesimagesfordisplay.md)
+### Configuration properties
+- [var preparesImagesForDisplay: Bool](./preparesimagesfordisplay.md)
   A Boolean value that indicates whether the image reader prepares the image for display.
-- [var preferredThumbnailSize: CGSize](uiimagereader-swift.struct/configuration-swift.struct/preferredthumbnailsize.md)
+- [var preferredThumbnailSize: CGSize](./preferredthumbnailsize.md)
   The thumbnail size in pixels that the image reader makes the image.
-- [var pixelsPerInch: Double](uiimagereader-swift.struct/configuration-swift.struct/pixelsperinch.md)
+- [var pixelsPerInch: Double](./pixelsperinch.md)
   The integral scale that the image reader applies to the image.
 
 

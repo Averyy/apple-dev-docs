@@ -1,7 +1,8 @@
 # getEarliestAuthorizedSampleDate(for:completion:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the earliest date that the person permits your app to read samples for the given data types.
 
@@ -16,12 +17,20 @@ Returns the earliest date that the person permits your app to read samples for t
 ## Declaration
 
 ```swift
+func getEarliestAuthorizedSampleDate(for types: Set<HKObjectType>, completion: @escaping @Sendable ([HKObjectType : Date]?, (any Error)?) -> Void)
+```
+
+```swift
 func earliestAuthorizedSampleDate(for types: Set<HKObjectType>) async throws -> [HKObjectType : Date]
+```
+
+```objc
+- (void) getEarliestAuthorizedSampleDateForTypes:(NSSet<HKObjectType *> *) types completion:(void (^)(NSDictionary<HKObjectType *,NSDate *> *earliestDates, NSError *error)) completion;
 ```
 
 ## Mentions
 
-- [Authorizing access to health data](authorizing-access-to-health-data.md)
+- [Authorizing access to health data](../authorizing-access-to-health-data.md)
 
 #### Discussion
 
@@ -41,11 +50,11 @@ To distinguish between a type that you request but has no time boundary and a ty
 
 If your app makes inferences on partial data, consider informing people that granting full access improves your app’s experience.
 
-> **Note**: This method reflects data access that’s scoped by the person’s choices in the authorization prompt. By contrast, [`earliestPermittedSampleDate()`](hkhealthstore/earliestpermittedsampledate().md) returns the earliest date HealthKit permits any app to save or query samples, regardless of what someone authorizes.
+> **Note**: This method reflects data access that’s scoped by the person’s choices in the authorization prompt. By contrast, [`earliestPermittedSampleDate()`](./earliestpermittedsampledate%28%29.md) returns the earliest date HealthKit permits any app to save or query samples, regardless of what someone authorizes.
 
-#### Adjust Queries for Limited Authorization
+#### Adjust queries for limited authorization
 
-If your app queries HealthKit data by date range, consider incorporating the returned dates into your query predicate. If your app uses [`HKAnchoredObjectQuery`](hkanchoredobjectquery.md) with a saved anchor, the anchor automatically  scopes the query to changes since the last fetch.
+If your app queries HealthKit data by date range, consider incorporating the returned dates into your query predicate. If your app uses [`HKAnchoredObjectQuery`](../hkanchoredobjectquery.md) with a saved anchor, the anchor automatically  scopes the query to changes since the last fetch.
 
 For each type your app queries, compare your intended query start date and the authorization date for that type and use whichever is later. This ensures that the query requests just the data your app needs. Varying types can have a different earliest date, so calculate the date per type, as shown here:
 
@@ -68,34 +77,35 @@ let predicate = HKQuery.predicateForSamples(
 
 ## Parameters
 
-- `types`: The set of [`HKObjectType`](hkobjecttype.md) values to query. HealthKit omits any type that doesn’t have a limited-access earliest date from the result.
+- `types`: The set of [`HKObjectType`](../hkobjecttype.md) values to query. HealthKit omits any type that doesn’t have a limited-access earliest date from the result.
 - `completion`: A closure with a dictionary parameter that maps qualifying types to their earliest readable date, or an error on failure.
 
 ## See Also
 
-- [func authorizationStatus(for: HKObjectType) -> HKAuthorizationStatus](hkhealthstore/authorizationstatus(for:).md)
+### Accessing HealthKit
+- [func authorizationStatus(for: HKObjectType) -> HKAuthorizationStatus](./authorizationstatus%28for%29.md)
   Returns the app’s authorization status for sharing the specified data type.
-- [enum HKAuthorizationStatus](hkauthorizationstatus.md)
+- [enum HKAuthorizationStatus](../hkauthorizationstatus.md)
   Constants indicating the authorization status for a particular data type.
-- [func getRequestStatusForAuthorization(toShare: Set<HKSampleType>, read: Set<HKObjectType>, completion: (HKAuthorizationRequestStatus, (any Error)?) -> Void)](hkhealthstore/getrequeststatusforauthorization(toshare:read:completion:).md)
+- [func getRequestStatusForAuthorization(toShare: Set<HKSampleType>, read: Set<HKObjectType>, completion: (HKAuthorizationRequestStatus, (any Error)?) -> Void)](./getrequeststatusforauthorization%28toshare,read,completion%29.md)
   Indicates whether the system presents the user with a permission sheet if your app requests authorization for the provided types.
-- [enum HKAuthorizationRequestStatus](hkauthorizationrequeststatus.md)
+- [enum HKAuthorizationRequestStatus](../hkauthorizationrequeststatus.md)
   Values that indicate whether your app needs to request authorization from the user.
-- [class func isHealthDataAvailable() -> Bool](hkhealthstore/ishealthdataavailable.md)
+- [class func isHealthDataAvailable() -> Bool](./ishealthdataavailable%28%29.md)
   Returns a Boolean value that indicates whether HealthKit is available on this device.
-- [func supportsHealthRecords() -> Bool](hkhealthstore/supportshealthrecords.md)
+- [func supportsHealthRecords() -> Bool](./supportshealthrecords%28%29.md)
   Returns a Boolean value that indicates whether the current device supports clinical records.
-- [func requestAuthorization(toShare: Set<HKSampleType>?, read: Set<HKObjectType>?, completion: (Bool, (any Error)?) -> Void)](hkhealthstore/requestauthorization(toshare:read:completion:).md)
+- [func requestAuthorization(toShare: Set<HKSampleType>?, read: Set<HKObjectType>?, completion: (Bool, (any Error)?) -> Void)](./requestauthorization%28toshare,read,completion%29.md)
   Requests permission to save and read the specified data types.
-- [func requestAuthorization(toShare: Set<HKSampleType>, read: Set<HKObjectType>) async throws](hkhealthstore/requestauthorization(toshare:read:).md)
+- [func requestAuthorization(toShare: Set<HKSampleType>, read: Set<HKObjectType>) async throws](./requestauthorization%28toshare,read%29.md)
   Asynchronously requests permission to save and read the specified data types.
-- [func requestPerObjectReadAuthorization(for: HKObjectType, predicate: NSPredicate?, completion: (Bool, (any Error)?) -> Void)](hkhealthstore/requestperobjectreadauthorization(for:predicate:completion:).md)
+- [func requestPerObjectReadAuthorization(for: HKObjectType, predicate: NSPredicate?, completion: (Bool, (any Error)?) -> Void)](./requestperobjectreadauthorization%28for,predicate,completion%29.md)
   Asynchronously requests permission to read a data type that requires per-object authorization (such as vision prescriptions).
-- [func handleAuthorizationForExtension(completion: (Bool, (any Error)?) -> Void)](hkhealthstore/handleauthorizationforextension(completion:).md)
+- [func handleAuthorizationForExtension(completion: (Bool, (any Error)?) -> Void)](./handleauthorizationforextension%28completion%29.md)
   Requests permission to save and read the data types specified by an extension.
-- [var authorizationViewControllerPresenter: UIViewController?](hkhealthstore/authorizationviewcontrollerpresenter.md)
+- [var authorizationViewControllerPresenter: UIViewController?](./authorizationviewcontrollerpresenter.md)
   The view controller that presents HealthKit authorization sheets.
-- [func earliestPermittedSampleDate() -> Date](hkhealthstore/earliestpermittedsampledate.md)
+- [func earliestPermittedSampleDate() -> Date](./earliestpermittedsampledate%28%29.md)
   Returns the earliest date that the framework permits your app to save or read samples.
 
 

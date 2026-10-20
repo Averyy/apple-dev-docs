@@ -1,7 +1,8 @@
 # init(bitPattern:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an integer that captures the full value of the given object identifier.
 
@@ -22,9 +23,10 @@ init(bitPattern objectID: ObjectIdentifier)
 
 ## See Also
 
-- [init<P>(bitPattern: P?)](int/init(bitpattern:)-2i0qy.md)
+### Working with Memory Addresses
+- [init<P>(bitPattern: P?)](./init%28bitpattern%29-2i0qy.md)
   Creates a new value with the bit pattern of the given pointer.
-- [init(bitPattern: OpaquePointer?)](int/init(bitpattern:)-5qm7a.md)
+- [init(bitPattern: OpaquePointer?)](./init%28bitpattern%29-5qm7a.md)
   Creates a new value with the bit pattern of the given pointer.
 
 

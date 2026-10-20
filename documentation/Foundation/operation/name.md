@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the operation.
 
@@ -20,23 +21,28 @@ The name of the operation.
 var name: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * name;
+```
+
 #### Discussion
 
 Assign a name to the operation object to help identify it during debugging.
 
 ## See Also
 
-- [var isCancelled: Bool](operation/iscancelled.md)
+### Getting the Operation Status
+- [var isCancelled: Bool](./iscancelled.md)
   A Boolean value indicating whether the operation has been cancelled
-- [var isExecuting: Bool](operation/isexecuting.md)
+- [var isExecuting: Bool](./isexecuting.md)
   A Boolean value indicating whether the operation is currently executing.
-- [var isFinished: Bool](operation/isfinished.md)
+- [var isFinished: Bool](./isfinished.md)
   A Boolean value indicating whether the operation has finished executing its task.
-- [var isConcurrent: Bool](operation/isconcurrent.md)
+- [var isConcurrent: Bool](./isconcurrent.md)
   A Boolean value indicating whether the operation executes its task asynchronously.
-- [var isAsynchronous: Bool](operation/isasynchronous.md)
+- [var isAsynchronous: Bool](./isasynchronous.md)
   A Boolean value indicating whether the operation executes its task asynchronously.
-- [var isReady: Bool](operation/isready.md)
+- [var isReady: Bool](./isready.md)
   A Boolean value indicating whether the operation can be performed now.
 
 

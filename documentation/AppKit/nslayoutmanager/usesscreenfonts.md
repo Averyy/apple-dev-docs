@@ -1,12 +1,13 @@
 # usesScreenFonts
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that controls using screen fonts to calculate layout and display text.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.11
 
 ## Declaration
 
@@ -14,9 +15,14 @@ A Boolean that controls using screen fonts to calculate layout and display text.
 var usesScreenFonts: Bool { get set }
 ```
 
+```objc
+@property BOOL usesScreenFonts;
+```
+
 ## See Also
 
-- [var hyphenationFactor: Float](nslayoutmanager/hyphenationfactor.md)
+### Deprecated properties
+- [var hyphenationFactor: Float](./hyphenationfactor.md)
   The threshold controlling when hyphenation is done.
 
 

@@ -1,7 +1,8 @@
 # commonFormat
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The common format identifier instance.
 
@@ -20,17 +21,22 @@ The common format identifier instance.
 var commonFormat: AVAudioCommonFormat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAudioCommonFormat commonFormat;
+```
+
 ## See Also
 
-- [var isInterleaved: Bool](avaudioformat/isinterleaved.md)
+### Determining the audio format
+- [var isInterleaved: Bool](./isinterleaved.md)
   A Boolean value that indicates whether the samples mix into one stream.
-- [var isStandard: Bool](avaudioformat/isstandard.md)
+- [var isStandard: Bool](./isstandard.md)
   A Boolean value that indicates whether the format is in a deinterleaved native-endian float state.
-- [enum AVAudioCommonFormat](avaudiocommonformat.md)
+- [enum AVAudioCommonFormat](../avaudiocommonformat.md)
   The format options that describe common audio formats.
-- [var settings: [String : Any]](avaudioformat/settings.md)
+- [var settings: [String : Any]](./settings.md)
   A dictionary that represents the format as a dictionary using audio setting keys.
-- [var magicCookie: Data?](avaudioformat/magiccookie.md)
+- [var magicCookie: Data?](./magiccookie.md)
   An object that contains metadata that encoders and decoders require.
 
 

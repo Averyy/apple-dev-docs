@@ -1,7 +1,8 @@
 # indexDidUpdateNotification
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The notification the delegate posts after Spotlight updates the index.
 
@@ -10,7 +11,7 @@ The notification the delegate posts after Spotlight updates the index.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ static let indexDidUpdateNotification: Notification.Name
 
 #### Discussion
 
-The notification’s `userInfo` dictionary contains the keys [`NSStoreUUIDKey`](nsstoreuuidkey.md) and [`NSPersistentHistoryTokenKey`](nspersistenthistorytokenkey.md).
+The notification’s `userInfo` dictionary contains the keys [`NSStoreUUIDKey`](../nsstoreuuidkey.md) and [`NSPersistentHistoryTokenKey`](../nspersistenthistorytokenkey.md).
 
 ## See Also
 
-- [func searchableIndex(CSSearchableIndex, reindexAllSearchableItemsWithAcknowledgementHandler: () -> Void)](nscoredatacorespotlightdelegate/searchableindex(_:reindexallsearchableitemswithacknowledgementhandler:).md)
+### Updating the Index
+- [func searchableIndex(CSSearchableIndex, reindexAllSearchableItemsWithAcknowledgementHandler: () -> Void)](./searchableindex%28_,reindexallsearchableitemswithacknowledgementhandler%29.md)
   Reindexes all searchable items and clears any local state.
-- [func searchableIndex(CSSearchableIndex, reindexSearchableItemsWithIdentifiers: [String], acknowledgementHandler: () -> Void)](nscoredatacorespotlightdelegate/searchableindex(_:reindexsearchableitemswithidentifiers:acknowledgementhandler:).md)
+- [func searchableIndex(CSSearchableIndex, reindexSearchableItemsWithIdentifiers: [String], acknowledgementHandler: () -> Void)](./searchableindex%28_,reindexsearchableitemswithidentifiers,acknowledgementhandler%29.md)
   Reindexes the searchable items for the specified identifiers.
 
 

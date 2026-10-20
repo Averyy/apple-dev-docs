@@ -1,7 +1,8 @@
 # textHighlightAttributes
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 ************************* Text Highlight  support **************************
 
@@ -12,6 +13,10 @@
 
 ```swift
 var textHighlightAttributes: [NSAttributedString.Key : Any] { get set }
+```
+
+```objc
+@property (copy) NSDictionary<NSString *,id> * textHighlightAttributes;
 ```
 
 

@@ -1,7 +1,8 @@
 # isSessionOnly
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the cookie should be discarded at the end of the session (regardless of expiration date).
 
@@ -20,13 +21,18 @@ A Boolean value that indicates whether the cookie should be discarded at the end
 var isSessionOnly: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isSessionOnly) BOOL sessionOnly;
+```
+
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if the cookie should be discarded at the end of the session (regardless of expiration date), otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+This value is [`true`](../../Swift/true.md) if the cookie should be discarded at the end of the session (regardless of expiration date), otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var expiresDate: Date?](httpcookie/expiresdate.md)
+### Determining cookie lifespan
+- [var expiresDate: Date?](./expiresdate.md)
   The cookie’s expiration date.
 
 

@@ -1,7 +1,8 @@
 # standalone
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 For stand-alone usage, such as an isolated name on a calendar page.
 
@@ -22,11 +23,12 @@ static var standalone: FormatStyleCapitalizationContext { get }
 
 ## See Also
 
-- [static var unknown: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/unknown.md)
-- [static var listItem: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/listitem.md)
+### Customizing Style Behavior
+- [static var unknown: FormatStyleCapitalizationContext](./unknown.md)
+- [static var listItem: FormatStyleCapitalizationContext](./listitem.md)
   For use in a UI list or menu item.
-- [static var beginningOfSentence: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/beginningofsentence.md)
-- [static var middleOfSentence: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/middleofsentence.md)
+- [static var beginningOfSentence: FormatStyleCapitalizationContext](./beginningofsentence.md)
+- [static var middleOfSentence: FormatStyleCapitalizationContext](./middleofsentence.md)
 
 
 ---

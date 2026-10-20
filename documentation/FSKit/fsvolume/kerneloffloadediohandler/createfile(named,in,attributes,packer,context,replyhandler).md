@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new file item and map its disk space.
@@ -12,16 +13,24 @@ Creates a new file item and map its disk space.
 ## Declaration
 
 ```swift
+func createFile(named name: FSFileName, in directory: FSItem, attributes newAttributes: FSItem.SetAttributesRequest, packer: FSExtentPacker, context: FSContext, replyHandler reply: @escaping @Sendable (FSCreateFileKOIOResult?, (any Error)?) -> Void)
+```
+
+```swift
 func createFile(named name: FSFileName, in directory: FSItem, attributes newAttributes: FSItem.SetAttributesRequest, packer: FSExtentPacker, context: FSContext) async throws -> FSCreateFileKOIOResult
+```
+
+```objc
+- (void) createFileNamed:(FSFileName *) name inDirectory:(FSItem *) directory attributes:(FSItemSetAttributesRequest *) newAttributes packer:(FSExtentPacker *) packer context:(FSContext *) context replyHandler:(void (^)(FSCreateFileKOIOResult *result, NSError *error)) reply;
 ```
 
 #### Discussion
 
-This method allows the module to opportunistically supply extents, avoiding future calls to [`blockmapFile(_:offset:length:flags:operationID:packer:replyHandler:)`](fsvolume/kerneloffloadediohandler/blockmapfile(_:offset:length:flags:operationid:packer:replyhandler:).md). Only perform this technique opportunistically. In particular, don’t perform additional I/O to fetch extent data.
+This method allows the module to opportunistically supply extents, avoiding future calls to [`blockmapFile(_:offset:length:flags:operationID:packer:replyHandler:)`](./blockmapfile%28_,offset,length,flags,operationid,packer,replyhandler%29.md). Only perform this technique opportunistically. In particular, don’t perform additional I/O to fetch extent data.
 
 Packing extents in this method requires that `attributes` defines a size greater than 0.
 
-An implementation that doesn’t supply the extents can ignore the packer and call the corresponding method in the [`FSVolume.Handler`](fsvolume/handler.md) protocol, [`createItem(named:type:in:attributes:context:replyHandler:)`](fsvolume/handler/createitem(named:type:in:attributes:context:replyhandler:).md).
+An implementation that doesn’t supply the extents can ignore the packer and call the corresponding method in the [`FSVolume.Handler`](../handler.md) protocol, [`createItem(named:type:in:attributes:context:replyHandler:)`](../handler/createitem%28named,type,in,attributes,context,replyhandler%29.md).
 
 ## Parameters
 
@@ -30,23 +39,24 @@ An implementation that doesn’t supply the extents can ignore the packer and ca
 - `newAttributes`: Attributes to apply to the new file.
 - `packer`: An extent packer you use to pack the file’s allocated disk space.
 - `context`: An object that enables context-aware file system decisions throughout the operation.
-- `reply`: A block or closure to indicate success or failure. If creation succeeds, pass an instance of [`FSCreateFileKOIOResult`](fscreatefilekoioresult.md) containing the newly-created [`FSItem`](fsitem.md), its [`FSFileName`](fsfilename.md), its [`FSItem.Attributes`](fsitem/attributes.md), the updated [`FSItem.Attributes`](fsitem/attributes.md) of the parent directory, the volume’s update free space, along with a `nil` error. If creation fails, pass the relevant error as the second parameter; FSKit ignores the [`FSCreateFileKOIOResult`](fscreatefilekoioresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
+- `reply`: A block or closure to indicate success or failure. If creation succeeds, pass an instance of [`FSCreateFileKOIOResult`](../../fscreatefilekoioresult.md) containing the newly-created [`FSItem`](../../fsitem.md), its [`FSFileName`](../../fsfilename.md), its [`FSItem.Attributes`](../../fsitem/attributes.md), the updated [`FSItem.Attributes`](../../fsitem/attributes.md) of the parent directory, the volume’s update free space, along with a `nil` error. If creation fails, pass the relevant error as the second parameter; FSKit ignores the [`FSCreateFileKOIOResult`](../../fscreatefilekoioresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
 
 ## See Also
 
-- [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
+### Working with items
+- [FSItem.SetAttributesRequest](../../fsitem/setattributesrequest.md)
   A request to set attributes on an item.
-- [class FSCreateFileKOIOResult](fscreatefilekoioresult.md)
+- [class FSCreateFileKOIOResult](../../fscreatefilekoioresult.md)
   The result of a kernel-offloaded create-file call.
-- [func lookupItem(named: FSFileName, in: FSItem, packer: FSExtentPacker, context: FSContext, replyHandler: (FSLookupItemKOIOResult?, (any Error)?) -> Void)](fsvolume/kerneloffloadediohandler/lookupitem(named:in:packer:context:replyhandler:).md)
+- [func lookupItem(named: FSFileName, in: FSItem, packer: FSExtentPacker, context: FSContext, replyHandler: (FSLookupItemKOIOResult?, (any Error)?) -> Void)](./lookupitem%28named,in,packer,context,replyhandler%29.md)
   Looks up an item within a directory and maps its disk space.
-- [class FSLookupItemKOIOResult](fslookupitemkoioresult.md)
+- [class FSLookupItemKOIOResult](../../fslookupitemkoioresult.md)
   The result of a kernel-offloaded lookup-item call.
-- [func preallocateSpace(for: FSItem, at: off_t, length: Int, flags: FSVolume.PreallocateFlags, packer: FSExtentPacker, context: FSContext, replyHandler: (FSPreallocateKOIOResult?, (any Error)?) -> Void)](fsvolume/kerneloffloadediohandler/preallocatespace(for:at:length:flags:packer:context:replyhandler:).md)
+- [func preallocateSpace(for: FSItem, at: off_t, length: Int, flags: FSVolume.PreallocateFlags, packer: FSExtentPacker, context: FSContext, replyHandler: (FSPreallocateKOIOResult?, (any Error)?) -> Void)](./preallocatespace%28for,at,length,flags,packer,context,replyhandler%29.md)
   Preallocates and maps disk space for the given file.
-- [FSVolume.PreallocateFlags](fsvolume/preallocateflags.md)
+- [FSVolume.PreallocateFlags](../preallocateflags.md)
   Behavior flags for preallocation operations.
-- [class FSPreallocateKOIOResult](fspreallocatekoioresult.md)
+- [class FSPreallocateKOIOResult](../../fspreallocatekoioresult.md)
   The result of a kernel-offloaded preallocate call.
 
 

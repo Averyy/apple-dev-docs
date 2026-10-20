@@ -1,7 +1,8 @@
 # AVSpeechBoundary
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies when to pause or stop speech.
 
@@ -10,7 +11,7 @@ Specifies when to pause or stop speech.
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.14+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,35 +21,40 @@ Specifies when to pause or stop speech.
 enum AVSpeechBoundary
 ```
 
+```c
+enum AVSpeechBoundary : NSInteger;
+```
+
 ## Topics
 
 ### Creating a speech boundary
-- [init?(rawValue: Int)](avspeechboundary/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avspeechboundary/init%28rawvalue%29.md)
 ### Choosing a speech boundary
-- [AVSpeechBoundary.immediate](avspeechboundary/immediate.md)
+- [AVSpeechBoundary.immediate](./avspeechboundary/immediate.md)
   Indicates to pause or stop speech immediately.
-- [AVSpeechBoundary.word](avspeechboundary/word.md)
+- [AVSpeechBoundary.word](./avspeechboundary/word.md)
   Indicates to pause or stop speech after the synthesizer finishes speaking the current word.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func speak(AVSpeechUtterance)](avspeechsynthesizer/speak(_:).md)
+### Controlling speech
+- [func speak(AVSpeechUtterance)](./avspeechsynthesizer/speak%28_%29.md)
   Adds the utterance you specify to the speech synthesizer’s queue.
-- [func continueSpeaking() -> Bool](avspeechsynthesizer/continuespeaking.md)
+- [func continueSpeaking() -> Bool](./avspeechsynthesizer/continuespeaking%28%29.md)
   Resumes speech from its paused point.
-- [func pauseSpeaking(at: AVSpeechBoundary) -> Bool](avspeechsynthesizer/pausespeaking(at:).md)
+- [func pauseSpeaking(at: AVSpeechBoundary) -> Bool](./avspeechsynthesizer/pausespeaking%28at%29.md)
   Pauses speech at the boundary you specify.
-- [func stopSpeaking(at: AVSpeechBoundary) -> Bool](avspeechsynthesizer/stopspeaking(at:).md)
+- [func stopSpeaking(at: AVSpeechBoundary) -> Bool](./avspeechsynthesizer/stopspeaking%28at%29.md)
   Stops speech at the boundary you specify.
 
 

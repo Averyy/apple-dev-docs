@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.ImageURLAttribute.Value
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of the image URL attribute.
 
@@ -22,7 +23,8 @@ typealias Value = URL
 
 ## See Also
 
-- [static let name: String](attributescopes/foundationattributes/imageurlattribute/name.md)
+### Accessing the Attribute Name and Value
+- [static let name: String](./name.md)
   The name of the image URL attribute.
 
 

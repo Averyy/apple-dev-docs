@@ -1,18 +1,19 @@
 # init(rawValue:)
 
 **Framework**: XCUIAutomation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a gesture velocity with a raw value, expressed as a float.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -27,7 +28,8 @@ init(rawValue: CGFloat)
 
 ## See Also
 
-- [init(CGFloat)](xcuigesturevelocity/init(_:).md)
+### Creating a gesture velocity
+- [init(CGFloat)](./init%28_%29.md)
   Creates a gesture velocity, expressed as a float.
 
 

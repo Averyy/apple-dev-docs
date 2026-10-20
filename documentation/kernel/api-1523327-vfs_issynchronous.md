@@ -1,7 +1,8 @@
 # vfs_issynchronous
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determine if writes to a filesystem occur synchronously.
 
@@ -10,11 +11,11 @@ Determine if writes to a filesystem occur synchronously.
 
 ## Declaration
 
-```swift
+```c
 int vfs_issynchronous(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 Nonzero if writes occur synchronously, else 0.
 

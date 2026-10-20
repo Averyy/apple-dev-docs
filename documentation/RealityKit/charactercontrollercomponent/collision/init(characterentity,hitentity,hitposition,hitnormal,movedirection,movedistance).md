@@ -1,7 +1,8 @@
 # init(characterEntity:hitEntity:hitPosition:hitNormal:moveDirection:moveDistance:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create Collision and initialize all fields.
 
@@ -11,7 +12,7 @@ Create Collision and initialize all fields.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

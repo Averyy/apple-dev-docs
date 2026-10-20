@@ -1,7 +1,8 @@
 # ManagedAppDistributionError.appNotManaged
 
 **Framework**: ManagedAppDistribution  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that the calling app is not managed
 

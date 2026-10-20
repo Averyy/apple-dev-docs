@@ -1,7 +1,8 @@
 # rate
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The playback speed for audio.
 
@@ -19,13 +20,18 @@ The playback speed for audio.
 var rate: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double rate;
+```
+
 #### Discussion
 
-The framework sets the value to the [`init(gain:rate:gainCurveType:rateCurveType:)`](phasegrouppresetsetting/init(gain:rate:gaincurvetype:ratecurvetype:).md) parameter.
+The framework sets the value to the [`init(gain:rate:gainCurveType:rateCurveType:)`](./init%28gain,rate,gaincurvetype,ratecurvetype%29.md) parameter.
 
 ## See Also
 
-- [var rateCurveType: PHASECurveType](phasegrouppresetsetting/ratecurvetype.md)
+### Setting Playback Speed
+- [var rateCurveType: PHASECurveType](./ratecurvetype.md)
   A rate of change for the setting’s playback speed.
 
 

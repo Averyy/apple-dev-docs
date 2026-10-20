@@ -1,7 +1,8 @@
 # PassTypeIdCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data wrapper for a pass type ID create request, containing the resource type and identifier attributes.
 
@@ -10,20 +11,20 @@ The data wrapper for a pass type ID create request, containing the resource type
 
 ## Declaration
 
-```swift
+```
 object PassTypeIdCreateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object PassTypeIdCreateRequest.Data.Attributes](passtypeidcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object PassTypeIdCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The identifying attributes for a new pass type ID, including the identifier string.
 
 ## Properties
 
 - `attributes` (PassTypeIdCreateRequest.Data.Attributes) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `passTypeIds`
 
 
 ---

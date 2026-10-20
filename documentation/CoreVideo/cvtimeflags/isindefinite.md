@@ -1,7 +1,8 @@
 # isIndefinite
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The time value is unknown.
 
@@ -18,6 +19,10 @@ The time value is unknown.
 
 ```swift
 static var isIndefinite: CVTimeFlags { get }
+```
+
+```c
+kCVTimeIsIndefinite
 ```
 
 

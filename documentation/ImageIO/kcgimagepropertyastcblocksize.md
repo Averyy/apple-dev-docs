@@ -1,7 +1,8 @@
 # kCGImagePropertyASTCBlockSize
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kCGImagePropertyASTCBlockSize: CFString
+```
+
+```c
+extern CFStringRef const kCGImagePropertyASTCBlockSize;
 ```
 
 

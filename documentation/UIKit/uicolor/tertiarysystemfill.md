@@ -1,7 +1,8 @@
 # tertiarySystemFill
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An overlay fill color for large shapes.
 
@@ -17,6 +18,10 @@ An overlay fill color for large shapes.
 class var tertiarySystemFill: UIColor { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) UIColor * tertiarySystemFillColor;
+```
+
 #### Discussion
 
 Use system fill colors for items situated on top of an existing background color. System fill colors incorporate transparency to allow the background color to show through.
@@ -25,11 +30,12 @@ Use this color to fill large shapes, such as input fields, search bars, or butto
 
 ## See Also
 
-- [class var systemFill: UIColor](uicolor/systemfill.md)
+### Fill colors
+- [class var systemFill: UIColor](./systemfill.md)
   An overlay fill color for thin and small shapes.
-- [class var secondarySystemFill: UIColor](uicolor/secondarysystemfill.md)
+- [class var secondarySystemFill: UIColor](./secondarysystemfill.md)
   An overlay fill color for medium-size shapes.
-- [class var quaternarySystemFill: UIColor](uicolor/quaternarysystemfill.md)
+- [class var quaternarySystemFill: UIColor](./quaternarysystemfill.md)
   An overlay fill color for large areas that contain complex content.
 
 

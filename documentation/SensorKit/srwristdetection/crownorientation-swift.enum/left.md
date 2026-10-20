@@ -1,7 +1,8 @@
 # SRWristDetection.CrownOrientation.left
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the Digital Crown faces to the left with respect to the wearer.
 
@@ -16,9 +17,14 @@ Indicates that the Digital Crown faces to the left with respect to the wearer.
 case left
 ```
 
+```c
+SRCrownOrientationLeft
+```
+
 ## See Also
 
-- [SRWristDetection.CrownOrientation.right](srwristdetection/crownorientation-swift.enum/right.md)
+### Orientations
+- [SRWristDetection.CrownOrientation.right](./right.md)
   Indicates that the Digital Crown faces to the right with respect to the wearer.
 
 

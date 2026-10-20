@@ -1,7 +1,8 @@
 # init(contentsOf:withName:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an entity by asynchronously loading it from a file URL.
 
@@ -41,9 +42,9 @@ if let url = components.url {
 }
 ```
 
-For more information on loading entities, see [`Loading entities from a file`](loading-entities-from-a-file.md).
+For more information on loading entities, see [Loading entities from a file](../loading-entities-from-a-file.md).
 
-See [`init(named:in:)`](entity/init(named:in:).md) for an example of optimally loading content.
+See [`init(named:in:)`](./init%28named,in%29.md) for an example of optimally loading content.
 
 ## Parameters
 
@@ -52,19 +53,20 @@ See [`init(named:in:)`](entity/init(named:in:).md) for an example of optimally l
 
 ## See Also
 
-- [Generating procedural textures](../visionos/generating-procedural-textures-in-visionos.md)
+### Loading an entity from a file
+- [Generating procedural textures](../../visionOS/generating-procedural-textures-in-visionos.md)
   Display a 3D model that generates procedural textures in a reality view.
-- [protocol Resource](resource.md)
+- [protocol Resource](../resource.md)
   A shared resource you use to configure a component, like a material, mesh, or texture.
-- [Loading entities from a file](loading-entities-from-a-file.md)
+- [Loading entities from a file](../loading-entities-from-a-file.md)
   Retrieve an entity from storage on disk using a synchronous or an asynchronous load operation.
-- [Stored entities](stored-entities.md)
+- [Stored entities](../stored-entities.md)
   Manage entities that you store as assets on disk.
-- [Creating USD files for Apple devices](../usd/creating-usd-files-for-apple-devices.md)
+- [Creating USD files for Apple devices](../../USD/creating-usd-files-for-apple-devices.md)
   Generate 3D assets that render as expected.
-- [convenience init(named: String, in: Bundle?) async throws](entity/init(named:in:).md)
+- [convenience init(named: String, in: Bundle?) async throws](./init%28named,in%29.md)
   Creates an entity by asynchronously loading it from a bundle.
-- [struct ReferenceComponent](referencecomponent.md)
+- [struct ReferenceComponent](../referencecomponent.md)
   A component that can load another entity from a file.
 
 

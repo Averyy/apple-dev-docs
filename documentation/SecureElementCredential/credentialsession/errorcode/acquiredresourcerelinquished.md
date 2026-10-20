@@ -1,7 +1,8 @@
 # CredentialSession.ErrorCode.acquiredResourceRelinquished
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system relinquished an underlying shared resource, preventing the operation from completing.
 
@@ -17,13 +18,14 @@ case acquiredResourceRelinquished
 
 #### Discussion
 
-When the system throws this error, it also reverts the session state to [`CredentialSession.State.management`](credentialsession/state-swift.enum/management.md).
+When the system throws this error, it also reverts the session state to [`CredentialSession.State.management`](../state-swift.enum/management.md).
 
 You can attempt your operation again after receiving this error.
 
 ## See Also
 
-- [CredentialSession.ErrorCode.resourceUnavailable](credentialsession/errorcode/resourceunavailable.md)
+### Temporary error codes
+- [CredentialSession.ErrorCode.resourceUnavailable](./resourceunavailable.md)
   The requested resource is unavailable.
 
 

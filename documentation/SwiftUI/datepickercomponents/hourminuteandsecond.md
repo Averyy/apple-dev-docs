@@ -1,7 +1,8 @@
 # hourMinuteAndSecond
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Displays hour, minute and second components based on the locale
 
@@ -16,9 +17,10 @@ static let hourMinuteAndSecond: DatePickerComponents
 
 ## See Also
 
-- [static let date: DatePickerComponents](datepickercomponents/date.md)
+### Getting date picker components
+- [static let date: DatePickerComponents](./date.md)
   Displays day, month, and year based on the locale
-- [static let hourAndMinute: DatePickerComponents](datepickercomponents/hourandminute.md)
+- [static let hourAndMinute: DatePickerComponents](./hourandminute.md)
   Displays hour and minute components based on the locale
 
 

@@ -1,7 +1,8 @@
 # faceUp
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the card is oriented face up, revealing its contents.
 

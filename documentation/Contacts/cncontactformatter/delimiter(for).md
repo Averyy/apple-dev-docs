@@ -1,7 +1,8 @@
 # delimiter(for:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the delimiter to use between name components.
 
@@ -19,6 +20,10 @@ Returns the delimiter to use between name components.
 class func delimiter(for contact: CNContact) -> String
 ```
 
+```objc
++ (NSString *) delimiterForContact:(CNContact *) contact;
+```
+
 #### Return Value
 
 The delimiter to use between name components.
@@ -33,9 +38,10 @@ If `contact` is `nil`, or if it has no first name, middle name, or last name, th
 
 ## See Also
 
-- [class func nameOrder(for: CNContact) -> CNContactDisplayNameOrder](cncontactformatter/nameorder(for:).md)
+### Getting format information
+- [class func nameOrder(for: CNContact) -> CNContactDisplayNameOrder](./nameorder%28for%29.md)
   Returns the display name order.
-- [enum CNContactDisplayNameOrder](cncontactdisplaynameorder.md)
+- [enum CNContactDisplayNameOrder](../cncontactdisplaynameorder.md)
   The formatting orders for contact names component.
 
 

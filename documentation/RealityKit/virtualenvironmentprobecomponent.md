@@ -1,7 +1,8 @@
 # VirtualEnvironmentProbeComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that provides environment lighting for entities you place within the same virtual world.
 
@@ -21,7 +22,7 @@ struct VirtualEnvironmentProbeComponent
 
 #### Overview
 
-In a fully virtual environment, you can configure the `VirtualEnvironmentProbeComponent` with an [`EnvironmentResource`](environmentresource.md) to provide precalculated indirect lighting from the environment. RealityKit combines this lighting with other lights in the scene to calculate the final lighting of an entity. The example below shows how you can set up a `VirtualEnvironmentProbeComponent` from a single probe:
+In a fully virtual environment, you can configure the `VirtualEnvironmentProbeComponent` with an [`EnvironmentResource`](./environmentresource.md) to provide precalculated indirect lighting from the environment. RealityKit combines this lighting with other lights in the scene to calculate the final lighting of an entity. The example below shows how you can set up a `VirtualEnvironmentProbeComponent` from a single probe:
 
 ```swift
 let environment = try await Entity(named: "environment")
@@ -36,38 +37,39 @@ environment.components.set(probeComponent)
 ## Topics
 
 ### Creating a probe component
-- [init(source: VirtualEnvironmentProbeComponent.Source, influence: VirtualEnvironmentProbeComponent.Influence)](virtualenvironmentprobecomponent/init(source:influence:).md)
+- [init(source: VirtualEnvironmentProbeComponent.Source, influence: VirtualEnvironmentProbeComponent.Influence)](./virtualenvironmentprobecomponent/init%28source,influence%29.md)
 ### Configuring probe influence
-- [var influence: VirtualEnvironmentProbeComponent.Influence](virtualenvironmentprobecomponent/influence-swift.property.md)
-- [VirtualEnvironmentProbeComponent.Influence](virtualenvironmentprobecomponent/influence-swift.struct.md)
+- [var influence: VirtualEnvironmentProbeComponent.Influence](./virtualenvironmentprobecomponent/influence-swift.property.md)
+- [VirtualEnvironmentProbeComponent.Influence](./virtualenvironmentprobecomponent/influence-swift.struct.md)
   Defines the spatial influence of an environment probe.
 ### Structures
-- [VirtualEnvironmentProbeComponent.Probe](virtualenvironmentprobecomponent/probe.md)
+- [VirtualEnvironmentProbeComponent.Probe](./virtualenvironmentprobecomponent/probe.md)
   A sample of the environment around a point in a scene the system uses for environment-based lighting.
 ### Initializers
-- [init(source: VirtualEnvironmentProbeComponent.Source)](virtualenvironmentprobecomponent/init(source:).md)
+- [init(source: VirtualEnvironmentProbeComponent.Source)](./virtualenvironmentprobecomponent/init%28source%29.md)
   Creates a virtual-environment probe component.
 ### Instance Properties
-- [var source: VirtualEnvironmentProbeComponent.Source](virtualenvironmentprobecomponent/source-swift.property.md)
+- [var source: VirtualEnvironmentProbeComponent.Source](./virtualenvironmentprobecomponent/source-swift.property.md)
   The source of diffuse and specular lighting for environment lighting calculations.
 ### Enumerations
-- [VirtualEnvironmentProbeComponent.Source](virtualenvironmentprobecomponent/source-swift.enum.md)
+- [VirtualEnvironmentProbeComponent.Source](./virtualenvironmentprobecomponent/source-swift.enum.md)
   Options that define the source of diffuse and specular lighting for environment lighting calculations.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 ## See Also
 
-- [class EnvironmentResource](environmentresource.md)
+### Environment
+- [class EnvironmentResource](./environmentresource.md)
   An environmental resource that contains background and lighting information for a scene.
-- [struct EnvironmentLightingConfigurationComponent](environmentlightingconfigurationcomponent.md)
+- [struct EnvironmentLightingConfigurationComponent](./environmentlightingconfigurationcomponent.md)
   A component that scales the amount of light that an entity receives from its environment.
-- [VirtualEnvironmentProbeComponent.Probe](virtualenvironmentprobecomponent/probe.md)
+- [VirtualEnvironmentProbeComponent.Probe](./virtualenvironmentprobecomponent/probe.md)
   A sample of the environment around a point in a scene the system uses for environment-based lighting.
-- [VirtualEnvironmentProbeComponent.Source](virtualenvironmentprobecomponent/source-swift.enum.md)
+- [VirtualEnvironmentProbeComponent.Source](./virtualenvironmentprobecomponent/source-swift.enum.md)
   Options that define the source of diffuse and specular lighting for environment lighting calculations.
 
 

@@ -1,7 +1,8 @@
 # allocate(maximumBuffers:)
 
 **Framework**: Core Audio Types  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Allocate an `AudioBufferList` with a capacity for the specified number of `AudioBuffer`s.
 

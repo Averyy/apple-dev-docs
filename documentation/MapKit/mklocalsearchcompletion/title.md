@@ -1,7 +1,8 @@
 # title
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title string associated with the point of interest.
 
@@ -20,17 +21,22 @@ The title string associated with the point of interest.
 var title: String { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSString * title;
+```
+
 #### Discussion
 
 The local search completion object ensures this string isn’t empty.
 
 ## See Also
 
-- [var subtitle: String](mklocalsearchcompletion/subtitle.md)
+### Getting the search completions
+- [var subtitle: String](./subtitle.md)
   The subtitle (if any) associated with the point of interest.
-- [var titleHighlightRanges: [NSValue]](mklocalsearchcompletion/titlehighlightranges.md)
+- [var titleHighlightRanges: [NSValue]](./titlehighlightranges.md)
   The ranges of characters to highlight in the title string.
-- [var subtitleHighlightRanges: [NSValue]](mklocalsearchcompletion/subtitlehighlightranges.md)
+- [var subtitleHighlightRanges: [NSValue]](./subtitlehighlightranges.md)
   The ranges of characters to highlight in the subtitle string.
 
 

@@ -1,7 +1,8 @@
 # GetAddressRange
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns the address and length of the memory buffer.
 
@@ -11,23 +12,24 @@ Returns the address and length of the memory buffer.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t GetAddressRange(IOAddressSegment *range);
 ```
 
-#### Return_value
+#### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes). 
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md). 
 
 ## Parameters
 
-- `range`: An [`IOAddressSegment`](https://developer.apple.com/documentation/driverkit/ioaddresssegment) structure that you provide. On return, this structure contains the address and length of the memory buffer.
+- `range`: An [`IOAddressSegment`](../../DriverKit/ioaddresssegment.md) structure that you provide. On return, this structure contains the address and length of the memory buffer.
 
 ## See Also
 
-- [- SetLength](iobuffermemorydescriptor/3180454-setlength.md)
+### Managing the Buffer Contents
+- [- SetLength](./api-3180454-setlength.md)
   Changes the length of the memory buffer.
-- [IOAddressSegment](../driverkit/ioaddresssegment.md)
+- [IOAddressSegment](../../DriverKit/ioaddresssegment.md)
   A structure that describes the location and size of a block of memory.
 
 

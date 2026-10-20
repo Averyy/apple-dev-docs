@@ -1,7 +1,8 @@
 # kUSBHostPortConnectionSpeedNone
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 No connection speed.
 
@@ -10,7 +11,7 @@ No connection speed.
 
 ## Declaration
 
-```swift
+```c
 kUSBHostPortConnectionSpeedNone = kIOUSBHostConnectionSpeedNone
 ```
 

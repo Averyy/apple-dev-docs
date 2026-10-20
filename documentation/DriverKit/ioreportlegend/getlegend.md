@@ -1,25 +1,27 @@
 # getLegend
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 OSArray * getLegend();
 ```
 
 ## See Also
 
-- [addLegendEntry](ioreportlegend/addlegendentry.md)
-- [addReporterLegend](ioreportlegend/addreporterlegend-c.method.md)
-- [free](ioreportlegend/free.md)
+### Instance Methods
+- [addLegendEntry](./addlegendentry.md)
+- [addReporterLegend](./addreporterlegend-c.method.md)
+- [free](./free.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kIMKScrollingGridCandidatePanel
 
 **Framework**: InputMethodKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.5+
@@ -12,14 +13,19 @@
 var kIMKScrollingGridCandidatePanel: Int { get }
 ```
 
+```c
+kIMKScrollingGridCandidatePanel
+```
+
 #### Discussion
 
 A window that displays a grid and can scroll if necessary.
 
 ## See Also
 
-- [var kIMKSingleColumnScrollingCandidatePanel: Int](kimksinglecolumnscrollingcandidatepanel.md)
-- [var kIMKSingleRowSteppingCandidatePanel: Int](kimksinglerowsteppingcandidatepanel.md)
+### Constants
+- [var kIMKSingleColumnScrollingCandidatePanel: Int](./kimksinglecolumnscrollingcandidatepanel.md)
+- [var kIMKSingleRowSteppingCandidatePanel: Int](./kimksinglerowsteppingcandidatepanel.md)
 
 
 ---

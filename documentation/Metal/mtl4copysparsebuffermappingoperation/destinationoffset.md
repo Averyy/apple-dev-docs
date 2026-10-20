@@ -1,7 +1,8 @@
 # destinationOffset
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The origin in the destination buffer, in tiles.
 
@@ -17,6 +18,10 @@ The origin in the destination buffer, in tiles.
 
 ```swift
 var destinationOffset: Int
+```
+
+```c
+NSUInteger destinationOffset;
 ```
 
 

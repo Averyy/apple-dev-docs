@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a view for the arrangement view style from the configuration.
@@ -24,8 +25,9 @@ Creates a view for the arrangement view style from the configuration.
 
 ## See Also
 
-- [associatedtype Body : View](arrangementviewstyle/body.md)
-- [ArrangementViewStyle.Configuration](arrangementviewstyle/configuration.md)
+### Creating a view using an arrangement view style
+- [associatedtype Body : View](./body.md)
+- [ArrangementViewStyle.Configuration](./configuration.md)
   The configuration the style uses to create the arrangement view.
 
 

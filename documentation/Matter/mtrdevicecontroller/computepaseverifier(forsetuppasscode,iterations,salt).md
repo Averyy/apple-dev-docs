@@ -1,7 +1,8 @@
 # computePASEVerifier(forSetupPasscode:iterations:salt:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 class func computePASEVerifier(forSetupPasscode setupPasscode: NSNumber, iterations: NSNumber, salt: Data) throws -> Data
+```
+
+```objc
++ (NSData *) computePASEVerifierForSetupPasscode:(NSNumber *) setupPasscode iterations:(NSNumber *) iterations salt:(NSData *) salt error:(NSError **) error;
 ```
 
 

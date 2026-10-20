@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Accepts or rejects an incoming XPC connection.
@@ -19,9 +20,9 @@ func handle(xpcConnection: xpc_connection_t)
 
 #### Discussion
 
-When your browser app calls [`makeLibXPCConnection()`](networkingprocess/makelibxpcconnection().md), the framework calls this method on your extension, passing the newly created connection as the parameter. To accept the connection, call [`xpc_connection_set_event_handler(_:_:)`](https://developer.apple.com/documentation/xpc/xpc_connection_set_event_handler(_:_:)) to install an event handler and listen for incoming messages.
+When your browser app calls [`makeLibXPCConnection()`](../networkingprocess/makelibxpcconnection%28%29.md), the framework calls this method on your extension, passing the newly created connection as the parameter. To accept the connection, call [`xpc_connection_set_event_handler(_:_:)`](../../XPC/xpc_connection_set_event_handler%28_,_%29.md) to install an event handler and listen for incoming messages.
 
-Otherwise, call [`xpc_connection_cancel(_:)`](https://developer.apple.com/documentation/xpc/xpc_connection_cancel(_:)) to reject the connection.
+Otherwise, call [`xpc_connection_cancel(_:)`](../../XPC/xpc_connection_cancel%28_%29.md) to reject the connection.
 
 ## Parameters
 

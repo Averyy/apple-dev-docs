@@ -1,7 +1,8 @@
 # ExternalPurchaseCustomLink.NoticeResult.cancelled
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The customer chooses to cancel; don’t offer external purchases.
 
@@ -22,7 +23,8 @@ case cancelled
 
 ## See Also
 
-- [ExternalPurchaseCustomLink.NoticeResult.continued](externalpurchasecustomlink/noticeresult/continued.md)
+### Getting notice results
+- [ExternalPurchaseCustomLink.NoticeResult.continued](./continued.md)
   The customer chooses to continue; the app can offer external purchases.
 
 

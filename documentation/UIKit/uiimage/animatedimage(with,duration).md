@@ -1,7 +1,8 @@
 # animatedImage(with:duration:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns an animated image from an existing set of images.
 
@@ -9,7 +10,7 @@ Creates and returns an animated image from an existing set of images.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -17,6 +18,10 @@ Creates and returns an animated image from an existing set of images.
 
 ```swift
 class func animatedImage(with images: [UIImage], duration: TimeInterval) -> UIImage?
+```
+
+```objc
++ (UIImage *) animatedImageWithImages:(NSArray<UIImage *> *) images duration:(NSTimeInterval) duration;
 ```
 
 #### Return Value
@@ -29,16 +34,17 @@ All images included in the animated image should share the same size and scale.
 
 ## Parameters
 
-- `images`: An array of [`UIImage`](uiimage.md) objects.
+- `images`: An array of [`UIImage`](../uiimage.md) objects.
 - `duration`: The duration of the animation.
 
 ## See Also
 
-- [class func animatedImageNamed(String, duration: TimeInterval) -> UIImage?](uiimage/animatedimagenamed(_:duration:).md)
+### Creating animated images
+- [class func animatedImageNamed(String, duration: TimeInterval) -> UIImage?](./animatedimagenamed%28_,duration%29.md)
   Creates and returns an animated image.
-- [class func animatedResizableImageNamed(String, capInsets: UIEdgeInsets, duration: TimeInterval) -> UIImage?](uiimage/animatedresizableimagenamed(_:capinsets:duration:).md)
+- [class func animatedResizableImageNamed(String, capInsets: UIEdgeInsets, duration: TimeInterval) -> UIImage?](./animatedresizableimagenamed%28_,capinsets,duration%29.md)
   Creates and returns an animated image with end caps.
-- [class func animatedResizableImageNamed(String, capInsets: UIEdgeInsets, resizingMode: UIImage.ResizingMode, duration: TimeInterval) -> UIImage?](uiimage/animatedresizableimagenamed(_:capinsets:resizingmode:duration:).md)
+- [class func animatedResizableImageNamed(String, capInsets: UIEdgeInsets, resizingMode: UIImage.ResizingMode, duration: TimeInterval) -> UIImage?](./animatedresizableimagenamed%28_,capinsets,resizingmode,duration%29.md)
   Creates and returns an animated image with end caps and a specific resizing mode.
 
 

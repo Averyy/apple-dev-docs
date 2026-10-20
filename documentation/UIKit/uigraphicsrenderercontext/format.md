@@ -1,7 +1,8 @@
 # format
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format used to create the associated graphics renderer.
 
@@ -18,13 +19,18 @@ The format used to create the associated graphics renderer.
 var format: UIGraphicsRendererFormat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIGraphicsRendererFormat * format;
+```
+
 #### Discussion
 
-If you specified a format object when you initialized the current renderer ([`UIGraphicsRenderer`](uigraphicsrenderer.md)) object, then this property provides access to that object. Otherwise, a default format object was created for you using the renderer initialization parameters, tuned to the current device.
+If you specified a format object when you initialized the current renderer ([`UIGraphicsRenderer`](../uigraphicsrenderer.md)) object, then this property provides access to that object. Otherwise, a default format object was created for you using the renderer initialization parameters, tuned to the current device.
 
 ## See Also
 
-- [var cgContext: CGContext](uigraphicsrenderercontext/cgcontext.md)
+### Getting the drawing context
+- [var cgContext: CGContext](./cgcontext.md)
   The underlying Core Graphics context.
 
 

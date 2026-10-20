@@ -1,27 +1,29 @@
 # IOUserClientMethodFunction
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 typedef int (*)(class OSObject *, void *, struct IOUserClientMethodArguments *) IOUserClientMethodFunction;
 ```
 
 ## See Also
 
-- [ExternalMethod](iouserclient/externalmethod.md)
+### Responding to Messages
+- [ExternalMethod](./iouserclient/externalmethod.md)
   Receive arguments from IOKit.framework IOConnectMethod calls.
-- [IOUserClientMethodArguments](iouserclientmethodarguments.md)
+- [IOUserClientMethodArguments](./iouserclientmethodarguments.md)
   Arguments to pass to IOConnectMethod calls.
-- [IOUserClientMethodDispatch](iouserclientmethoddispatch.md)
+- [IOUserClientMethodDispatch](./iouserclientmethoddispatch.md)
   A structure that specifies how to validate the arguments passed to a client method function.
 
 

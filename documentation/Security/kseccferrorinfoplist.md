@@ -1,7 +1,8 @@
 # kSecCFErrorInfoPlist
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a Core Foundation object identifying the invalid component or key in the dictionary.
 
@@ -13,6 +14,10 @@ A key whose value is a Core Foundation object identifying the invalid component 
 
 ```swift
 let kSecCFErrorInfoPlist: CFString
+```
+
+```c
+extern CFStringRef const kSecCFErrorInfoPlist;
 ```
 
 #### Discussion

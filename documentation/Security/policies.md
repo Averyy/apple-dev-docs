@@ -1,6 +1,7 @@
 # Policies
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: API Collection
 
 Obtain policies for establishing trust.
 
@@ -13,29 +14,29 @@ Usually you use a standard, predefined policy, such as the basic X509 policy or 
 ## Topics
 
 ### Standard Policies
-- [func SecPolicyCreateBasicX509() -> SecPolicy](secpolicycreatebasicx509().md)
+- [func SecPolicyCreateBasicX509() -> SecPolicy](./secpolicycreatebasicx509%28%29.md)
   Returns a policy object for the default X.509 policy.
-- [func SecPolicyCreateSSL(Bool, CFString?) -> SecPolicy](secpolicycreatessl(_:_:).md)
+- [func SecPolicyCreateSSL(Bool, CFString?) -> SecPolicy](./secpolicycreatessl%28_,_%29.md)
   Returns a policy object for evaluating SSL certificate chains.
-- [func SecPolicyCreateRevocation(CFOptionFlags) -> SecPolicy?](secpolicycreaterevocation(_:).md)
+- [func SecPolicyCreateRevocation(CFOptionFlags) -> SecPolicy?](./secpolicycreaterevocation%28_%29.md)
   Returns a policy object for checking revocation of certificates.
-- [Revocation Policy Constants](revocation-policy-constants.md)
+- [Revocation Policy Constants](./revocation-policy-constants.md)
   Use these flags to create a revocation policy object.
-- [class SecPolicy](secpolicy.md)
+- [class SecPolicy](./secpolicy.md)
   An object that represents a trust policy.
-- [func SecPolicyGetTypeID() -> CFTypeID](secpolicygettypeid().md)
+- [func SecPolicyGetTypeID() -> CFTypeID](./secpolicygettypeid%28%29.md)
   Returns the unique identifier of the opaque type to which a policy object belongs.
 ### Advanced Policy Management
-- [func SecPolicyCreateWithProperties(CFTypeRef, CFDictionary?) -> SecPolicy?](secpolicycreatewithproperties(_:_:).md)
+- [func SecPolicyCreateWithProperties(CFTypeRef, CFDictionary?) -> SecPolicy?](./secpolicycreatewithproperties%28_,_%29.md)
   Returns a policy object based on an object identifier for the policy type.
-- [func SecPolicyCopyProperties(SecPolicy) -> CFDictionary?](secpolicycopyproperties(_:).md)
+- [func SecPolicyCopyProperties(SecPolicy) -> CFDictionary?](./secpolicycopyproperties%28_%29.md)
   Returns a dictionary containing a policy’s properties.
-- [Security Policy Keys](security-policy-keys.md)
+- [Security Policy Keys](./security-policy-keys.md)
   Use these dictionary keys to get and set policy properties.
-- [Standard Policies for Specific Certificate Types](standard-policies-for-specific-certificate-types.md)
+- [Standard Policies for Specific Certificate Types](./standard-policies-for-specific-certificate-types.md)
   Use special OIDs to cause a certificate to be evaluated based on security policies specific to a given type of certificate.
 ### Legacy Symbols
-- [class SecPolicySearch](secpolicysearch.md)
+- [class SecPolicySearch](./secpolicysearch.md)
   An object that contains information about a policy search.
 
 

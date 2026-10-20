@@ -1,7 +1,8 @@
 # selectionHighlightStyle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the selection highlight style.
 
@@ -14,13 +15,18 @@ Specifies the selection highlight style.
 var selectionHighlightStyle: NSTableView.SelectionHighlightStyle { get set }
 ```
 
+```objc
+@property NSTableViewSelectionHighlightStyle selectionHighlightStyle;
+```
+
 #### Discussion
 
-The possible values are specified in [`NSTableView.SelectionHighlightStyle`](nstableview/selectionhighlightstyle-swift.enum.md) in [`NSTableView`](nstableview.md).
+The possible values are specified in [`NSTableView.SelectionHighlightStyle`](../nstableview/selectionhighlightstyle-swift.enum.md) in [`NSTableView`](../nstableview.md).
 
 ## See Also
 
-- [var isSelected: Bool](nstablerowview/isselected.md)
+### Row Selection
+- [var isSelected: Bool](./isselected.md)
   Determines whether the row is selected.
 
 

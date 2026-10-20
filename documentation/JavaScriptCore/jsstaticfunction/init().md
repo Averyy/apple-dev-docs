@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a static function.
 
@@ -21,7 +22,8 @@ init()
 
 ## See Also
 
-- [init(name: UnsafePointer<CChar>!, callAsFunction: JSObjectCallAsFunctionCallback!, attributes: JSPropertyAttributes)](jsstaticfunction/init(name:callasfunction:attributes:).md)
+### Creating a Static Function
+- [init(name: UnsafePointer<CChar>!, callAsFunction: JSObjectCallAsFunctionCallback!, attributes: JSPropertyAttributes)](./init%28name,callasfunction,attributes%29.md)
   Creates a static function with the specified values.
 
 

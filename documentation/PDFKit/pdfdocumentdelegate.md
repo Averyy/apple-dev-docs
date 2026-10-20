@@ -1,7 +1,8 @@
 # PDFDocumentDelegate
 
 **Framework**: PDFKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The delegate for the `PDFDocument` object.
 
@@ -10,7 +11,7 @@ The delegate for the `PDFDocument` object.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,44 +20,49 @@ The delegate for the `PDFDocument` object.
 protocol PDFDocumentDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol PDFDocumentDelegate <NSObject>
+```
+
 ## Mentions
 
-- [Adding Custom Graphics to a PDF](adding-custom-graphics-to-a-pdf.md)
+- [Adding Custom Graphics to a PDF](./adding-custom-graphics-to-a-pdf.md)
 
 ## Topics
 
 ### Managing Document Security
-- [func documentDidUnlock(Notification)](pdfdocumentdelegate/documentdidunlock(_:).md)
+- [func documentDidUnlock(Notification)](./pdfdocumentdelegate/documentdidunlock%28_%29.md)
   Called when the `PDFDocumentDidUnlockNotification` notification is posted.
 ### Getting Document Search Notifications
-- [func didMatchString(PDFSelection)](pdfdocumentdelegate/didmatchstring(_:).md)
+- [func didMatchString(PDFSelection)](./pdfdocumentdelegate/didmatchstring%28_%29.md)
   Called for every match found during a find operation.
-- [func documentDidBeginDocumentFind(Notification)](pdfdocumentdelegate/documentdidbegindocumentfind(_:).md)
+- [func documentDidBeginDocumentFind(Notification)](./pdfdocumentdelegate/documentdidbegindocumentfind%28_%29.md)
   Called when the `PDFDocumentDidBeginFindNotification` notification is posted.
-- [func documentDidBeginPageFind(Notification)](pdfdocumentdelegate/documentdidbeginpagefind(_:).md)
+- [func documentDidBeginPageFind(Notification)](./pdfdocumentdelegate/documentdidbeginpagefind%28_%29.md)
   Called when the `PDFDocumentDidBeginPageFindNotification` notification is posted.
-- [func documentDidEndDocumentFind(Notification)](pdfdocumentdelegate/documentdidenddocumentfind(_:).md)
+- [func documentDidEndDocumentFind(Notification)](./pdfdocumentdelegate/documentdidenddocumentfind%28_%29.md)
   Called when the `PDFDocumentDidEndFindNotification` notification is posted.
-- [func documentDidEndPageFind(Notification)](pdfdocumentdelegate/documentdidendpagefind(_:).md)
+- [func documentDidEndPageFind(Notification)](./pdfdocumentdelegate/documentdidendpagefind%28_%29.md)
   Called when the `PDFDocumentDidEndPageFindNotification` notification is posted.
-- [func documentDidFindMatch(Notification)](pdfdocumentdelegate/documentdidfindmatch(_:).md)
+- [func documentDidFindMatch(Notification)](./pdfdocumentdelegate/documentdidfindmatch%28_%29.md)
   Called when the `PDFDocumentDidFindMatchNotification` notification is posted.
 ### Wrapping Document Elements
-- [func classForPage() -> AnyClass](pdfdocumentdelegate/classforpage.md)
+- [func classForPage() -> AnyClass](./pdfdocumentdelegate/classforpage%28%29.md)
   Returns a `PDFPage` subclass for a page object.
-- [func `class`(forAnnotationClass: AnyClass) -> AnyClass](pdfdocumentdelegate/class(forannotationclass:).md)
+- [func `class`(forAnnotationClass: AnyClass) -> AnyClass](./pdfdocumentdelegate/class%28forannotationclass%29.md)
   Returns a `PDFAnnotation` subclass for a class.
-- [func `class`(forAnnotationType: String) -> AnyClass](pdfdocumentdelegate/class(forannotationtype:).md)
+- [func `class`(forAnnotationType: String) -> AnyClass](./pdfdocumentdelegate/class%28forannotationtype%29.md)
   Returns a `PDFAnnotation` subclass for an annotation type.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any PDFDocumentDelegate)?](pdfdocument/delegate.md)
+### Setting the Delegate
+- [var delegate: (any PDFDocumentDelegate)?](./pdfdocument/delegate.md)
   The object acting as the delegate for the `PDFDocument` object.
 
 

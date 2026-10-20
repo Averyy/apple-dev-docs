@@ -1,7 +1,8 @@
 # state
 
 **Framework**: ActivityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of a Live Activity in its life cycle.
 
@@ -17,15 +18,16 @@ let state: State
 
 #### Discussion
 
-This value is the same as [`activityState`](activity/activitystate.md).
+This value is the same as [`activityState`](../activity/activitystate.md).
 
 ## See Also
 
-- [init(state: State, staleDate: Date?, relevanceScore: Double)](activitycontent/init(state:staledate:relevancescore:).md)
+### Describing a Live Activity
+- [init(state: State, staleDate: Date?, relevanceScore: Double)](./init%28state,staledate,relevancescore%29.md)
   Creates the object that describes the state and configuration of a Live Activity.
-- [let staleDate: Date?](activitycontent/staledate.md)
+- [let staleDate: Date?](./staledate.md)
   The date when the system considers the Live Activity to be out of date.
-- [let relevanceScore: Double](activitycontent/relevancescore.md)
+- [let relevanceScore: Double](./relevancescore.md)
   A score you assign that determines the order in which your Live Activities appear when you start several Live Activities for your app.
 
 

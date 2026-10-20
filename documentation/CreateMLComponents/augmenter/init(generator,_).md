@@ -1,7 +1,8 @@
 # init(generator:_:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an augmenter from a random number generator and an augmentation builder.
 

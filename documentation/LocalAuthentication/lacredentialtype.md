@@ -1,7 +1,8 @@
 # LACredentialType
 
 **Framework**: Local Authentication  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The types of credentials to be used for authentication.
 
@@ -19,34 +20,39 @@ The types of credentials to be used for authentication.
 enum LACredentialType
 ```
 
+```c
+enum LACredentialType : NSInteger;
+```
+
 ## Topics
 
 ### Cases
-- [LACredentialType.applicationPassword](lacredentialtype/applicationpassword.md)
+- [LACredentialType.applicationPassword](./lacredentialtype/applicationpassword.md)
   Specifies that a password is provided by the application.
-- [LACredentialType.smartCardPIN](lacredentialtype/smartcardpin.md)
+- [LACredentialType.smartCardPIN](./lacredentialtype/smartcardpin.md)
 ### Constants
-- [var kLACredentialTypeApplicationPassword: Int32](klacredentialtypeapplicationpassword.md)
+- [var kLACredentialTypeApplicationPassword: Int32](./klacredentialtypeapplicationpassword.md)
   Specifies that a password is provided by the application.
-- [var kLACredentialSmartCardPIN: Int32](klacredentialsmartcardpin.md)
+- [var kLACredentialSmartCardPIN: Int32](./klacredentialsmartcardpin.md)
 ### Initializers
-- [init?(rawValue: Int)](lacredentialtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./lacredentialtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setCredential(Data?, type: LACredentialType) -> Bool](lacontext/setcredential(_:type:).md)
+### Managing credentials
+- [func setCredential(Data?, type: LACredentialType) -> Bool](./lacontext/setcredential%28_,type%29.md)
   Sets an application-provided credential to be used when evaluating authentication.
-- [func isCredentialSet(LACredentialType) -> Bool](lacontext/iscredentialset(_:).md)
+- [func isCredentialSet(LACredentialType) -> Bool](./lacontext/iscredentialset%28_%29.md)
   Returns a Boolean value indicating whether the specified credential type is set.
 
 

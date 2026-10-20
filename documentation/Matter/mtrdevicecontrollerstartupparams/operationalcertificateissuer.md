@@ -1,7 +1,8 @@
 # operationalCertificateIssuer
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var operationalCertificateIssuer: (any MTROperationalCertificateIssuer)? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) id<MTROperationalCertificateIssuer> operationalCertificateIssuer;
 ```
 
 

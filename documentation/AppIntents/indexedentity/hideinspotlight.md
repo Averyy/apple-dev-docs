@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether Spotlight prevents the inclusion of the entity in the index.
@@ -22,6 +23,12 @@ var hideInSpotlight: Bool { get }
 #### Discussion
 
 When the value of this property is `true`, Spotlight doesn’t include the entity in search results. The default value of this property is `false`.
+
+## Default Implementations
+
+### IndexedEntity Implementations
+- [var hideInSpotlight: Bool](./hideinspotlight-7sp5n.md)
+  A Boolean value that indicates whether Spotlight prevents the inclusion of the entity in the index.
 
 
 ---

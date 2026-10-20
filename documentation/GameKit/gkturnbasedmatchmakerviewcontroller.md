@@ -1,7 +1,8 @@
 # GKTurnBasedMatchmakerViewController
 
 **Framework**: GameKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interface that allows a player to invite other players to a turn-based match and automatch to fill any empty slots.
 
@@ -19,94 +20,107 @@ An interface that allows a player to invite other players to a turn-based match 
 class GKTurnBasedMatchmakerViewController
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@interface GKTurnBasedMatchmakerViewController : UINavigationController
+```
+
+*macOS*
+
+```objc
+@interface GKTurnBasedMatchmakerViewController : NSViewController
+```
+
 ## Mentions
 
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Starting turn-based matches and passing turns between players](./starting-turn-based-matches-and-passing-turns-between-players.md)
 
 #### Overview
 
-Before you create a `GKTurnBasedMatchmakerViewController` object, create a [`GKMatchRequest`](gkmatchrequest.md) object and configure it according to the parameters of your game. Then, pass the match request to the [`init(matchRequest:)`](gkmatchmakerviewcontroller/init(matchrequest:).md) initializer to create the view controller.
+Before you create a `GKTurnBasedMatchmakerViewController` object, create a [`GKMatchRequest`](./gkmatchrequest.md) object and configure it according to the parameters of your game. Then, pass the match request to the [`init(matchRequest:)`](./gkmatchmakerviewcontroller/init%28matchrequest%29.md) initializer to create the view controller.
 
 Configure the view controller and set its delegate before you present it to the local player. The view controller allows the local player to choose other players and optionally fill empty slots using automatch. The interface also allows players to select an existing match, forfeit a match, or view a completed match.
 
-Implement the [`GKTurnBasedMatchmakerViewControllerDelegate`](gkturnbasedmatchmakerviewcontrollerdelegate.md) protocol to handle when a player selects players, cancels matchmaking, or encounters an error. Implement the [`turnBasedMatchmakerViewController(_:didFind:)`](gkturnbasedmatchmakerviewcontrollerdelegate/turnbasedmatchmakerviewcontroller(_:didfind:).md) delegate method to dismiss the view controller when the local player invites players.
+Implement the [`GKTurnBasedMatchmakerViewControllerDelegate`](./gkturnbasedmatchmakerviewcontrollerdelegate.md) protocol to handle when a player selects players, cancels matchmaking, or encounters an error. Implement the [`turnBasedMatchmakerViewController(_:didFind:)`](./gkturnbasedmatchmakerviewcontrollerdelegate/turnbasedmatchmakerviewcontroller%28_,didfind%29.md) delegate method to dismiss the view controller when the local player invites players.
 
-Register as a listener of the [`GKLocalPlayerListener`](gklocalplayerlistener.md) protocol and implement [`GKTurnBasedEventListener`](gkturnbasedeventlistener.md) methods that handle other turn-based events. For example, implement the [`player(_:receivedTurnEventFor:didBecomeActive:)`](gkturnbasedeventlistener/player(_:receivedturneventfor:didbecomeactive:).md) to update match data and present the gameplay interface for the local player to take their turn.
+Register as a listener of the [`GKLocalPlayerListener`](./gklocalplayerlistener.md) protocol and implement [`GKTurnBasedEventListener`](./gkturnbasedeventlistener.md) methods that handle other turn-based events. For example, implement the [`player(_:receivedTurnEventFor:didBecomeActive:)`](./gkturnbasedeventlistener/player%28_,receivedturneventfor,didbecomeactive%29.md) to update match data and present the gameplay interface for the local player to take their turn.
 
-In iOS, you present and dismiss the view controller from another view controller in your game, using the methods provided by the [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller) class. If you use SwiftUI, you can get the root view controller from the [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication) object. In macOS, you use the [`GKDialogController`](gkdialogcontroller.md) class to present and dismiss the view controller.
+In iOS, you present and dismiss the view controller from another view controller in your game, using the methods provided by the [`UIViewController`](../UIKit/uiviewcontroller.md) class. If you use SwiftUI, you can get the root view controller from the [`UIApplication`](../UIKit/uiapplication.md) object. In macOS, you use the [`GKDialogController`](./gkdialogcontroller.md) class to present and dismiss the view controller.
 
 ## Topics
 
 ### Creating and Configuring the View Controller
-- [init(matchRequest: GKMatchRequest)](gkturnbasedmatchmakerviewcontroller/init(matchrequest:).md)
+- [init(matchRequest: GKMatchRequest)](./gkturnbasedmatchmakerviewcontroller/init%28matchrequest%29.md)
   Creates a matchmaker view controller for the local player to start inviting other players to a turn-based game.
-- [var showExistingMatches: Bool](gkturnbasedmatchmakerviewcontroller/showexistingmatches.md)
+- [var showExistingMatches: Bool](./gkturnbasedmatchmakerviewcontroller/showexistingmatches.md)
   A Boolean value that determines whether the view controller shows existing matches.
-- [var matchmakingMode: GKMatchmakingMode](gkturnbasedmatchmakerviewcontroller/matchmakingmode.md)
+- [var matchmakingMode: GKMatchmakingMode](./gkturnbasedmatchmakerviewcontroller/matchmakingmode.md)
   The mode that a multiplayer game uses to find players.
-- [enum GKMatchmakingMode](gkmatchmakingmode.md)
+- [enum GKMatchmakingMode](./gkmatchmakingmode.md)
   Possible modes that a multiplayer game uses to find matches.
 ### Setting the Delegate
-- [var turnBasedMatchmakerDelegate: (any GKTurnBasedMatchmakerViewControllerDelegate)?](gkturnbasedmatchmakerviewcontroller/turnbasedmatchmakerdelegate.md)
+- [var turnBasedMatchmakerDelegate: (any GKTurnBasedMatchmakerViewControllerDelegate)?](./gkturnbasedmatchmakerviewcontroller/turnbasedmatchmakerdelegate.md)
   The object that handles turn-based matchmaker view controller changes.
-- [protocol GKTurnBasedMatchmakerViewControllerDelegate](gkturnbasedmatchmakerviewcontrollerdelegate.md)
+- [protocol GKTurnBasedMatchmakerViewControllerDelegate](./gkturnbasedmatchmakerviewcontrollerdelegate.md)
   A protocol that handles when the status of turn-based matchmaking changes.
 
 ## Relationships
 
 ### Inherits From
-- [NSViewController](../appkit/nsviewcontroller.md)
-- [UINavigationController](../uikit/uinavigationcontroller.md)
+- [NSViewController](../AppKit/nsviewcontroller.md)
+- [UINavigationController](../UIKit/uinavigationcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [GKViewController](gkviewcontroller.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSEditor](../appkit/nseditor.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSeguePerforming](../appkit/nssegueperforming.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UIContentContainer](../uikit/uicontentcontainer.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIStateRestoring](../uikit/uistaterestoring.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [GKViewController](./gkviewcontroller.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSEditor](../AppKit/nseditor.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSeguePerforming](../AppKit/nssegueperforming.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UIContentContainer](../UIKit/uicontentcontainer.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../UIKit/uistaterestoring.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [Creating turn-based games](creating-turn-based-games.md)
+### Turn-based games
+- [Creating turn-based games](./creating-turn-based-games.md)
   Develop games where multiple players take turns and can exchange data while waiting for their turn.
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Starting turn-based matches and passing turns between players](./starting-turn-based-matches-and-passing-turns-between-players.md)
   Let Game Center store and forward match data between players in a turn-based game.
-- [Sending messages to players in turn-based games](sending-messages-to-players-in-turn-based-games.md)
+- [Sending messages to players in turn-based games](./sending-messages-to-players-in-turn-based-games.md)
   Notify players of match events by sending messages and game data.
-- [Exchanging data between players in turn-based games](exchanging-data-between-players-in-turn-based-games.md)
+- [Exchanging data between players in turn-based games](./exchanging-data-between-players-in-turn-based-games.md)
   Add the ability for players to exchange game data and send messages while waiting for their turns.
-- [class GKTurnBasedMatch](gkturnbasedmatch.md)
+- [class GKTurnBasedMatch](./gkturnbasedmatch.md)
   An object that encapsulates the match data for games where players take turns.
-- [class GKTurnBasedParticipant](gkturnbasedparticipant.md)
+- [class GKTurnBasedParticipant](./gkturnbasedparticipant.md)
   A participant in a turn-based match.
-- [protocol GKTurnBasedEventListener](gkturnbasedeventlistener.md)
+- [protocol GKTurnBasedEventListener](./gkturnbasedeventlistener.md)
   The protocol that handles turn-based and data-exchange events between participants in a match.
-- [class GKTurnBasedExchange](gkturnbasedexchange.md)
+- [class GKTurnBasedExchange](./gkturnbasedexchange.md)
   Exchange request information that participants send in a turn-based match.
-- [class GKTurnBasedExchangeReply](gkturnbasedexchangereply.md)
+- [class GKTurnBasedExchangeReply](./gkturnbasedexchangereply.md)
   Details about a recipient’s response to an exchange request.
-- [GKGameCenterBadgingDisabled](../bundleresources/information-property-list/gkgamecenterbadgingdisabled.md)
+- [GKGameCenterBadgingDisabled](../BundleResources/information-property-list/gkgamecenterbadgingdisabled.md)
   A Boolean value indicating whether GameKit can add badges to a turn-based game icon.
 
 

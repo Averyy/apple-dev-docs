@@ -1,7 +1,8 @@
 # focusSystem
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The focus system that’s responsible for the window scene.
 
@@ -16,6 +17,10 @@ The focus system that’s responsible for the window scene.
 
 ```swift
 var focusSystem: UIFocusSystem? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) UIFocusSystem * focusSystem;
 ```
 
 #### Discussion

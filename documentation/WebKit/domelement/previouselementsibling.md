@@ -1,15 +1,20 @@
 # previousElementSibling
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 var previousElementSibling: DOMElement! { get }
+```
+
+```objc
+@property (strong, readonly) DOMElement * previousElementSibling;
 ```
 
 

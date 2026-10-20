@@ -1,17 +1,22 @@
 # close()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Close the channel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func close() -> IOReturn
+```
+
+```objc
+- (IOReturn) closeChannel;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # showsTagField
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the panel displays the Tags field.
 
@@ -14,29 +15,34 @@ A Boolean value that indicates whether the panel displays the Tags field.
 var showsTagField: Bool { get set }
 ```
 
+```objc
+@property BOOL showsTagField;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the panel displays the Tags field; if [`false`](https://developer.apple.com/documentation/swift/false), the panel doesn’t display the Tags field. The default value is [`true`](https://developer.apple.com/documentation/swift/true). (Note that the Tags field is appropriate only in a Save panel.)
+When the value of this property is [`true`](../../Swift/true.md), the panel displays the Tags field; if [`false`](../../Swift/false.md), the panel doesn’t display the Tags field. The default value is [`true`](../../Swift/true.md). (Note that the Tags field is appropriate only in a Save panel.)
 
-If you set this property to [`true`](https://developer.apple.com/documentation/swift/true), you are responsible for setting tag names on the resulting file after saving is complete. If you don’t set this property, macOS will automatically show the tag field and attempt to apply the tags to the file. To set tags on files, use the [`tagNamesKey`](https://developer.apple.com/documentation/foundation/urlresourcekey/tagnameskey).
+If you set this property to [`true`](../../Swift/true.md), you are responsible for setting tag names on the resulting file after saving is complete. If you don’t set this property, macOS will automatically show the tag field and attempt to apply the tags to the file. To set tags on files, use the [`tagNamesKey`](../../Foundation/urlresourcekey/tagnameskey.md).
 
 ## See Also
 
-- [var title: String!](nssavepanel/title.md)
+### Configuring the Panel’s Appearance
+- [var title: String!](./title.md)
   The title of the panel.
-- [var prompt: String!](nssavepanel/prompt.md)
+- [var prompt: String!](./prompt.md)
   The text to display in the default button.
-- [var message: String!](nssavepanel/message.md)
+- [var message: String!](./message.md)
   The message text displayed in the panel.
-- [var nameFieldLabel: String!](nssavepanel/namefieldlabel.md)
+- [var nameFieldLabel: String!](./namefieldlabel.md)
   The label text displayed in front of the filename text field.
-- [var nameFieldStringValue: String](nssavepanel/namefieldstringvalue.md)
+- [var nameFieldStringValue: String](./namefieldstringvalue.md)
   The user-editable filename currently shown in the name field.
-- [var directoryURL: URL?](nssavepanel/directoryurl.md)
+- [var directoryURL: URL?](./directoryurl.md)
   The current directory shown in the panel.
-- [var accessoryView: NSView?](nssavepanel/accessoryview.md)
+- [var accessoryView: NSView?](./accessoryview.md)
   The custom accessory view for the current app.
-- [var tagNames: [String]?](nssavepanel/tagnames.md)
+- [var tagNames: [String]?](./tagnames.md)
   The tag names that you want to include on a saved file.
 
 

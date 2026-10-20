@@ -1,7 +1,8 @@
 # send(ins:p1:p2:data:le:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Synchronously sends an APDU command to the smart card.
 
@@ -28,7 +29,7 @@ A tuple containing the status word (sw) and response data.
 
 Use this method when you need synchronous execution, such as within `withSession` blocks or when calling from synchronous code paths.
 
-> **Note**: An error if the command fails.
+> **Throws**: An error if the command fails.
 
 ## Parameters
 

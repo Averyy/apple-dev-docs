@@ -1,22 +1,31 @@
 # disableAllBackgroundDelivery(completion:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disables all background deliveries of update notifications.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS
+- iPadOS
 - Mac Catalyst 13.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
 
 ```swift
+func disableAllBackgroundDelivery(completion: @escaping @Sendable (Bool, (any Error)?) -> Void)
+```
+
+```swift
 func disableAllBackgroundDelivery() async throws
+```
+
+```objc
+- (void) disableAllBackgroundDeliveryWithCompletion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
 #### Discussion
@@ -25,20 +34,24 @@ Call this method to prevent your app from receiving any additional update notifi
 
 ## Parameters
 
-- `completion`: A block that this method calls as soon as the background deliveries are disabled. This block is passed the following parameters: - **success**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/swift/true) if the background deliveries were successfully disabled; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
-- **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it is set to `nil`.
+- `completion`: A block that this method calls as soon as the background deliveries are disabled. This block is passed the following parameters:
+
+  - **success**: A Boolean value. This parameter contains [`true`](../../Swift/true.md) if the background deliveries were successfully disabled; otherwise, [`false`](../../Swift/false.md).
+  - **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it is set to `nil`.
 
 ## See Also
 
-- [class HKObserverQuery](hkobserverquery.md)
+### Related Documentation
+- [class HKObserverQuery](../hkobserverquery.md)
   A long-running query that monitors the HealthKit store and updates your app when the HealthKit store saves or deletes a matching sample.
-- [func enableBackgroundDelivery(for: HKObjectType, frequency: HKUpdateFrequency, withCompletion: (Bool, (any Error)?) -> Void)](hkhealthstore/enablebackgrounddelivery(for:frequency:withcompletion:).md)
+### Managing background delivery
+- [func enableBackgroundDelivery(for: HKObjectType, frequency: HKUpdateFrequency, withCompletion: (Bool, (any Error)?) -> Void)](./enablebackgrounddelivery%28for,frequency,withcompletion%29.md)
   Enables the delivery of updates to an app running in the background.
-- [com.apple.developer.healthkit.background-delivery](../bundleresources/entitlements/com.apple.developer.healthkit.background-delivery.md)
+- [com.apple.developer.healthkit.background-delivery](../../BundleResources/entitlements/com.apple.developer.healthkit.background-delivery.md)
   A Boolean value that indicates whether observer queries receive updates while running in the background.
-- [enum HKUpdateFrequency](hkupdatefrequency.md)
+- [enum HKUpdateFrequency](../hkupdatefrequency.md)
   Constants that determine how often the system launches your app in response to changes to HealthKit data.
-- [func disableBackgroundDelivery(for: HKObjectType, withCompletion: (Bool, (any Error)?) -> Void)](hkhealthstore/disablebackgrounddelivery(for:withcompletion:).md)
+- [func disableBackgroundDelivery(for: HKObjectType, withCompletion: (Bool, (any Error)?) -> Void)](./disablebackgrounddelivery%28for,withcompletion%29.md)
   Disables background deliveries of update notifications for the specified data type.
 
 

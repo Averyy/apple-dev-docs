@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Port.Kind
 
 **Framework**: Compute Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The semantic role of a port, determining what it carries along an edge and whether the edge imposes execution ordering between its endpoints.
 
@@ -12,7 +13,7 @@ The semantic role of a port, determining what it carries along an edge and wheth
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,29 +24,29 @@ enum Kind
 ## Topics
 
 ### Enumeration Cases
-- [ComputeNodeGraph.Port.Kind.context](computenodegraph/port/kind/context.md)
+- [ComputeNodeGraph.Port.Kind.context](./kind/context.md)
   Carries an ambient runtime context handle injected by the graph at execution time. Destination reads the handle; no ordering effect.
-- [ComputeNodeGraph.Port.Kind.dependency](computenodegraph/port/kind/dependency.md)
+- [ComputeNodeGraph.Port.Kind.dependency](./kind/dependency.md)
   Pure “happens-after” edge. No runtime payload, no type lineage, no type compatibility check. The destination is ordered after the source but does not consume its output. Use this to splice a node (e.g. a compute stage) into execution order between two unrelated nodes.
-- [ComputeNodeGraph.Port.Kind.event](computenodegraph/port/kind/event.md)
+- [ComputeNodeGraph.Port.Kind.event](./kind/event.md)
   Carries a typed event payload. Triggers downstream execution per event AND carries data (e.g. spawn/update/terminate events with element data).
-- [ComputeNodeGraph.Port.Kind.flow](computenodegraph/port/kind/flow.md)
+- [ComputeNodeGraph.Port.Kind.flow](./kind/flow.md)
   Execution-ordering edge whose destination is conceptually a consumer of the source’s typed output. No runtime payload is transferred, but type compatibility is enforced. Used for stage → stage sequencing.
-- [ComputeNodeGraph.Port.Kind.state](computenodegraph/port/kind/state.md)
+- [ComputeNodeGraph.Port.Kind.state](./kind/state.md)
   Carries a read/write binding to named external storage (element, emitter, group, output attribute, threadgroup memory). Type is always `.state(definition:)`. No ordering effect.
-- [ComputeNodeGraph.Port.Kind.value](computenodegraph/port/kind/value.md)
+- [ComputeNodeGraph.Port.Kind.value](./kind/value.md)
   Carries a typed data value from source to destination. One-way read, no ordering effect.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

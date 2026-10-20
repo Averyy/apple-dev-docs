@@ -1,7 +1,8 @@
 # strokeBorder(lineWidth:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a stroked symbol shape by inner-stroking the basic symbol shape.
 

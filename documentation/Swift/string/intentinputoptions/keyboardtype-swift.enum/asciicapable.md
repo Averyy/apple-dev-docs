@@ -1,7 +1,8 @@
 # String.IntentInputOptions.KeyboardType.asciiCapable
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A keyboard that displays standard ASCII characters.
 

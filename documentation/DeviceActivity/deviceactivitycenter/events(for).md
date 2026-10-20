@@ -1,7 +1,8 @@
 # events(for:)
 
 **Framework**: Device Activity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the events of a device activity.
 
@@ -30,7 +31,8 @@ The returned object is a static representation of the events at the time the fun
 
 ## See Also
 
-- [func schedule(for: DeviceActivityName) -> DeviceActivitySchedule?](deviceactivitycenter/schedule(for:).md)
+### Getting the Events and Schedules
+- [func schedule(for: DeviceActivityName) -> DeviceActivitySchedule?](./schedule%28for%29.md)
   Fetches the schedule of a device activity.
 
 

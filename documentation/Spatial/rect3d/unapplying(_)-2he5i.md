@@ -1,7 +1,8 @@
 # unapplying(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a rectangle that results from unapplying the specified pose.
 
@@ -11,7 +12,7 @@ Returns a rectangle that results from unapplying the specified pose.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -26,25 +27,26 @@ func unapplying(_ pose: Pose3D) -> Rect3D
 
 ## See Also
 
-- [func applying(Pose3D) -> Rect3D](rect3d/applying(_:)-3qdiy.md)
+### Transforming a 3D rectangle structure
+- [func applying(Pose3D) -> Rect3D](./applying%28_%29-3qdiy.md)
   Returns a rectangle that results from applying the specified pose.
-- [func applying(ScaledPose3D) -> Rect3D](rect3d/applying(_:)-5hnif.md)
+- [func applying(ScaledPose3D) -> Rect3D](./applying%28_%29-5hnif.md)
   Returns a rectangle that’s transformed by the specified scaled pose.
-- [func applying(ScaledPose3D) -> Rect3D](rect3d/applying(_:)-5hnif.md)
+- [func applying(ScaledPose3D) -> Rect3D](./applying%28_%29-5hnif.md)
   Returns a rectangle that’s transformed by the specified scaled pose.
-- [func rotated(by: Rotation3D, around: Point3D) -> Rect3D](rect3d/rotated(by:around:)-3ih62.md)
+- [func rotated(by: Rotation3D, around: Point3D) -> Rect3D](./rotated%28by,around%29-3ih62.md)
   Returns a rectangle that results from applying the specified rotation around a pivot point.
-- [func rotated(by: simd_quatd, around: Point3D) -> Rect3D](rect3d/rotated(by:around:)-8g1c9.md)
+- [func rotated(by: simd_quatd, around: Point3D) -> Rect3D](./rotated%28by,around%29-8g1c9.md)
   Returns a rectangle that results from rotating with the specified quaternion around a pivot point.
-- [func scaledBy(x: Double, y: Double, z: Double) -> Rect3D](rect3d/scaledby(x:y:z:).md)
+- [func scaledBy(x: Double, y: Double, z: Double) -> Rect3D](./scaledby%28x,y,z%29.md)
   Returns a rectangle that results from scaling with the specified double-precision values.
-- [func sheared(AxisWithFactors) -> Rect3D](rect3d/sheared(_:).md)
+- [func sheared(AxisWithFactors) -> Rect3D](./sheared%28_%29.md)
   Returns a rectangle that results from shearing over an axis by shear factors for the other two axes.
-- [func unapplying(ProjectiveTransform3D) -> Rect3D](rect3d/unapplying(_:)-1j6g7.md)
+- [func unapplying(ProjectiveTransform3D) -> Rect3D](./unapplying%28_%29-1j6g7.md)
   Returns a rectangle that results from unapplying the specified projective transform.
-- [func unapplying(ScaledPose3D) -> Rect3D](rect3d/unapplying(_:)-1pbfn.md)
+- [func unapplying(ScaledPose3D) -> Rect3D](./unapplying%28_%29-1pbfn.md)
   Returns a rectangle that’s transformed by the inverse of the specified scaled pose.
-- [func unapplying(AffineTransform3D) -> Rect3D](rect3d/unapplying(_:)-7eglq.md)
+- [func unapplying(AffineTransform3D) -> Rect3D](./unapplying%28_%29-7eglq.md)
   Returns a rectangle that results from unapplying the specified affine transform.
 
 

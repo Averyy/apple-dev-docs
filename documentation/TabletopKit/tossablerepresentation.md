@@ -1,7 +1,8 @@
 # TossableRepresentation
 
 **Framework**: TabletopKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents geometric shapes that the player can throw during gameplay, such as dice.
 
@@ -17,61 +18,62 @@ struct TossableRepresentation
 ## Topics
 
 ### Creating geometric shapes
-- [static func cube(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](tossablerepresentation/cube(height:in:restitution:).md)
+- [static func cube(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](./tossablerepresentation/cube%28height,in,restitution%29.md)
   Creates a cube that the player tosses during gameplay.
-- [static func decahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](tossablerepresentation/decahedron(height:in:restitution:).md)
+- [static func decahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](./tossablerepresentation/decahedron%28height,in,restitution%29.md)
   Creates a decahedron, a symmetrical, ten-faced polyhedron with kite-shaped faces, that the player tosses during gameplay.
-- [static func dodecahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](tossablerepresentation/dodecahedron(height:in:restitution:).md)
+- [static func dodecahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](./tossablerepresentation/dodecahedron%28height,in,restitution%29.md)
   Creates a regular dodecahedron, a shape with 12 pentagonal faces, that the player tosses during gameplay.
-- [static func icosahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](tossablerepresentation/icosahedron(height:in:restitution:).md)
+- [static func icosahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](./tossablerepresentation/icosahedron%28height,in,restitution%29.md)
   Creates a regular icosahedron, a shape with 20 triangular faces, that the player tosses during gameplay.
-- [static func octahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](tossablerepresentation/octahedron(height:in:restitution:).md)
+- [static func octahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](./tossablerepresentation/octahedron%28height,in,restitution%29.md)
   Creates a regular octahedron, a shape with 8 triangular faces, that the player tosses during gameplay.
-- [static func sphere(radius: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](tossablerepresentation/sphere(radius:in:restitution:).md)
+- [static func sphere(radius: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](./tossablerepresentation/sphere%28radius,in,restitution%29.md)
   Creates a sphere with the specified radius that the player tosses during gameplay.
-- [static func tetrahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](tossablerepresentation/tetrahedron(height:in:restitution:).md)
+- [static func tetrahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](./tossablerepresentation/tetrahedron%28height,in,restitution%29.md)
   Creates a regular tetrahedron, a pyramid with four triangular faces, that the player tosses during gameplay.
 ### Getting the face
-- [func face(for: Rotation3D) -> any TossableRepresentation.TossableFace](tossablerepresentation/face(for:).md)
+- [func face(for: Rotation3D) -> any TossableRepresentation.TossableFace](./tossablerepresentation/face%28for%29.md)
   For the shape corresponding to this tossable representation, constructs the face in contact with the table when the equipment has the given resting orientation.
-- [TossableRepresentation.TossableFace](tossablerepresentation/tossableface.md)
+- [TossableRepresentation.TossableFace](./tossablerepresentation/tossableface.md)
   A protocol that represents a face of a tossable shape.
-- [TossableRepresentation.SphereFace](tossablerepresentation/sphereface.md)
+- [TossableRepresentation.SphereFace](./tossablerepresentation/sphereface.md)
   An object that represents an infinitely small area on the surface of a sphere (effectively a point).
-- [TossableRepresentation.CubeFace](tossablerepresentation/cubeface.md)
+- [TossableRepresentation.CubeFace](./tossablerepresentation/cubeface.md)
   One of the faces of a cube
-- [TossableRepresentation.DecahedronFace](tossablerepresentation/decahedronface.md)
+- [TossableRepresentation.DecahedronFace](./tossablerepresentation/decahedronface.md)
   One of the faces of an decahedron
-- [TossableRepresentation.DodecahedronFace](tossablerepresentation/dodecahedronface.md)
+- [TossableRepresentation.DodecahedronFace](./tossablerepresentation/dodecahedronface.md)
   One of the faces of an dodecahedron
-- [TossableRepresentation.IcosahedronFace](tossablerepresentation/icosahedronface.md)
+- [TossableRepresentation.IcosahedronFace](./tossablerepresentation/icosahedronface.md)
   One of the faces of an icosahedron
-- [TossableRepresentation.OctahedronFace](tossablerepresentation/octahedronface.md)
+- [TossableRepresentation.OctahedronFace](./tossablerepresentation/octahedronface.md)
   One of the faces of an octahedron
-- [TossableRepresentation.TetrahedronFace](tossablerepresentation/tetrahedronface.md)
+- [TossableRepresentation.TetrahedronFace](./tossablerepresentation/tetrahedronface.md)
   One of the faces of a tetrahedron
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Simulating dice rolls as a component for your game](simulating-dice-rolls-as-a-component-for-your-game.md)
+### Interactions
+- [Simulating dice rolls as a component for your game](./simulating-dice-rolls-as-a-component-for-your-game.md)
   Create a physically realistic dice game by adding interactive rolling and scoring.
-- [class TabletopInteraction](tabletopinteraction.md)
+- [class TabletopInteraction](./tabletopinteraction.md)
   A protocol for objects that manage the entire flow of players interacting with equipment.
-- [struct TableSnapshot](tablesnapshot.md)
+- [struct TableSnapshot](./tablesnapshot.md)
   A snapshot of the current state of the table.
-- [struct TableVisualState](tablevisualstate.md)
+- [struct TableVisualState](./tablevisualstate.md)
   A structure that represents the appearance of an object on the table.
-- [struct TableCursor](tablecursor.md)
+- [struct TableCursor](./tablecursor.md)
   A cursor conveys information about one equipment that is currently being controlled by an interaction.
-- [struct TableCursorIdentifier](tablecursoridentifier.md)
+- [struct TableCursorIdentifier](./tablecursoridentifier.md)
   A unique identifier for cursors.
 
 

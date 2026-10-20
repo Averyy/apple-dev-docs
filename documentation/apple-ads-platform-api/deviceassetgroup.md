@@ -1,7 +1,8 @@
 # DeviceAssetGroup
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Represents assets organized by device type with fallback device information.
 
@@ -10,7 +11,7 @@ Represents assets organized by device type with fallback device information.
 
 ## Declaration
 
-```swift
+```
 object DeviceAssetGroup
 ```
 
@@ -44,15 +45,15 @@ The `DeviceAssetGroup` object is a value type within the `assetsByDevice` map on
 
 ## See Also
 
-- [object ProductPageDetails](productpagedetails.md)
+- [object ProductPageDetails](./productpagedetails.md)
   Product page metadata for a Default Product Page, Custom Product Page, or Product Page Optimization (PPO) variant.
-- [object ProductPageDetailsResponse](productpagedetailsresponse.md)
+- [object ProductPageDetailsResponse](./productpagedetailsresponse.md)
   Response object for a single product page retrieval.
-- [object ProductPageDetailsQueryResponse](productpagedetailsqueryresponse.md)
+- [object ProductPageDetailsQueryResponse](./productpagedetailsqueryresponse.md)
   Paginated response object for the product page details query.
-- [object ProductPageLocaleDetails](productpagelocaledetails.md)
+- [object ProductPageLocaleDetails](./productpagelocaledetails.md)
   Locale-specific metadata for an App Store product page.
-- [object ProductPageLocaleDetailsQueryResponse](productpagelocaledetailsqueryresponse.md)
+- [object ProductPageLocaleDetailsQueryResponse](./productpagelocaledetailsqueryresponse.md)
   Paginated response object for the product page locale details query.
 
 

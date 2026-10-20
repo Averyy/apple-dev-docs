@@ -1,7 +1,8 @@
 # mapButtons
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of map buttons on the trailing bottom corner of the map template.
 
@@ -16,13 +17,18 @@ An array of map buttons on the trailing bottom corner of the map template.
 var mapButtons: [CPMapButton] { get set }
 ```
 
+```objc
+@property (nonatomic, strong) NSArray<CPMapButton *> * mapButtons;
+```
+
 #### Discussion
 
 When the array contains more than three buttons, the map template displays only the first three, ignoring the remaining buttons.
 
 ## See Also
 
-- [class CPMapButton](cpmapbutton.md)
+### Managing Map Buttons
+- [class CPMapButton](../cpmapbutton.md)
   A button that represents an action that a map template displays on the CarPlay screen.
 
 

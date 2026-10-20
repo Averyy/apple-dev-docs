@@ -1,23 +1,28 @@
 # init(coder:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Tells you when to initialize a sprite from an archive.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 init?(coder aDecoder: NSCoder)
+```
+
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder;
 ```
 
 #### Discussion

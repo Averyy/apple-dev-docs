@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Core ML  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 11.0+
@@ -18,11 +19,18 @@
 subscript(idx: Int) -> NSNumber { get set }
 ```
 
+**Other overloads**:
+
+```swift
+subscript(key: [NSNumber]) -> NSNumber { get set }
+```
+
 ## See Also
 
-- [var pixelBuffer: CVPixelBuffer?](mlmultiarray/pixelbuffer.md)
+### Accessing a multiarray’s elements
+- [var pixelBuffer: CVPixelBuffer?](./pixelbuffer.md)
   A reference to the multiarray’s underlying pixel buffer.
-- [var dataPointer: UnsafeMutableRawPointer](mlmultiarray/datapointer.md)
+- [var dataPointer: UnsafeMutableRawPointer](./datapointer.md)
   A pointer to the multiarray’s underlying memory.
 
 

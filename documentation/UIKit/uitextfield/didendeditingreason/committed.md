@@ -1,7 +1,8 @@
 # UITextField.DidEndEditingReason.committed
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The text field changes were accepted by the user.
 
@@ -18,13 +19,18 @@ The text field changes were accepted by the user.
 case committed
 ```
 
+```c
+UITextFieldDidEndEditingReasonCommitted
+```
+
 #### Discussion
 
 On tvOS, text field changes become committed when the user presses the Done button.
 
 ## See Also
 
-- [UITextField.DidEndEditingReason.cancelled](uitextfield/didendeditingreason/cancelled.md)
+### Constants
+- [UITextField.DidEndEditingReason.cancelled](./cancelled.md)
   The text field changes were aborted.
 
 

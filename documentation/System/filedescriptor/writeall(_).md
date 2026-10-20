@@ -1,7 +1,8 @@
 # writeAll(_:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes a sequence of bytes to the current offset and then updates the offset.
 
@@ -29,9 +30,9 @@ The number of bytes written, equal to the number of elements in `sequence`.
 
 This method either writes the entire contents of `sequence`, or throws an error if only part of the content was written.
 
-Writes to the position associated with this file descriptor, and increments that position by the number of bytes written. See also [`seek(offset:from:)`](filedescriptor/seek(offset:from:).md).
+Writes to the position associated with this file descriptor, and increments that position by the number of bytes written. See also [`seek(offset:from:)`](./seek%28offset,from%29.md).
 
-If `sequence` doesn’t implement the [`withContiguousStorageIfAvailable(_:)`](https://developer.apple.com/documentation/swift/sequence/withcontiguousstorageifavailable(_:)) method, temporary space will be allocated as needed.
+If `sequence` doesn’t implement the [`withContiguousStorageIfAvailable(_:)`](../../Swift/sequence/withcontiguousstorageifavailable%28_%29.md) method, temporary space will be allocated as needed.
 
 ## Parameters
 
@@ -39,11 +40,12 @@ If `sequence` doesn’t implement the [`withContiguousStorageIfAvailable(_:)`](h
 
 ## See Also
 
-- [func write(UnsafeRawBufferPointer, retryOnInterrupt: Bool) throws -> Int](filedescriptor/write(_:retryoninterrupt:).md)
+### Writing To A File
+- [func write(UnsafeRawBufferPointer, retryOnInterrupt: Bool) throws -> Int](./write%28_,retryoninterrupt%29.md)
   Writes the contents of a buffer at the current file offset.
-- [func write(toAbsoluteOffset: Int64, UnsafeRawBufferPointer, retryOnInterrupt: Bool) throws -> Int](filedescriptor/write(toabsoluteoffset:_:retryoninterrupt:).md)
+- [func write(toAbsoluteOffset: Int64, UnsafeRawBufferPointer, retryOnInterrupt: Bool) throws -> Int](./write%28toabsoluteoffset,_,retryoninterrupt%29.md)
   Writes the contents of a buffer at the specified offset.
-- [func writeAll<S>(toAbsoluteOffset: Int64, S) throws -> Int](filedescriptor/writeall(toabsoluteoffset:_:).md)
+- [func writeAll<S>(toAbsoluteOffset: Int64, S) throws -> Int](./writeall%28toabsoluteoffset,_%29.md)
   Writes a sequence of bytes to the given offset.
 
 

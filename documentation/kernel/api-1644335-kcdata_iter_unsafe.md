@@ -1,14 +1,15 @@
 # kcdata_iter_unsafe
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.12+ - Deprecated in 10.12
 
 ## Declaration
 
-```swift
+```c
 kcdata_iter_t kcdata_iter_unsafe(void *buffer);
 ```
 

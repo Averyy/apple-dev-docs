@@ -1,7 +1,8 @@
 # reorderable
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The reorderable customization behavior.
 

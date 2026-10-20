@@ -1,14 +1,15 @@
 # dk_firmware_path_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```c
 typedef struct dk_firmware_path_t {
     ...
 } dk_firmware_path_t;
@@ -17,7 +18,7 @@ typedef struct dk_firmware_path_t {
 ## Topics
 
 ### Instance Properties
-- [path](dk_firmware_path_t/1552702-path.md)
+- [path](./dk_firmware_path_t/api-1552702-path.md)
 
 
 ---

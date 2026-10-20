@@ -1,18 +1,19 @@
 # name
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A name associated with the geometry object.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,16 +21,21 @@ A name associated with the geometry object.
 var name: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * name;
+```
+
 #### Discussion
 
-You can provide a descriptive name for a geometry object to make managing your scene graph easier. Geometries loaded from a scene file may have names assigned by an artist using a 3D authoring tool. Use the [`SCNSceneSource`](scnscenesource.md) class to examine geometries in a scene file without loading its scene graph.
+You can provide a descriptive name for a geometry object to make managing your scene graph easier. Geometries loaded from a scene file may have names assigned by an artist using a 3D authoring tool. Use the [`SCNSceneSource`](../scnscenesource.md) class to examine geometries in a scene file without loading its scene graph.
 
-Geometry names are saved when you export a scene to a file using its [`write(to:options:delegate:progressHandler:)`](scnscene/write(to:options:delegate:progresshandler:).md) method. They also appear in the Xcode scene editor.
+Geometry names are saved when you export a scene to a file using its [`write(to:options:delegate:progressHandler:)`](../scnscene/write%28to,options,delegate,progresshandler%29.md) method. They also appear in the Xcode scene editor.
 
 ## See Also
 
-- [protocol SCNBoundingVolume](scnboundingvolume.md)
-  Methods common to the [`SCNNode`](scnnode.md) and [`SCNGeometry`](scngeometry.md) classes for measuring location and size.
+### Managing Geometry Attributes
+- [protocol SCNBoundingVolume](../scnboundingvolume.md)
+  Methods common to the [`SCNNode`](../scnnode.md) and [`SCNGeometry`](../scngeometry.md) classes for measuring location and size.
 
 
 ---

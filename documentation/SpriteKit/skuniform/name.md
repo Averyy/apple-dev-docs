@@ -1,7 +1,8 @@
 # name
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The uniform’s name.
 
@@ -10,7 +11,7 @@ The uniform’s name.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ The uniform’s name.
 var name: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * name;
+```
+
 #### Discussion
 
 Your custom fragment shader uses this name to identify the variable. SpriteKit automatically declares the uniform variable for your shader.
 
 ## See Also
 
-- [var uniformType: SKUniformType](skuniform/uniformtype.md)
+### Reading Information About a Uniform
+- [var uniformType: SKUniformType](./uniformtype.md)
   The uniform object’s data type.
 
 

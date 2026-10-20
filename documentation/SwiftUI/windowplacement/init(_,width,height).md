@@ -1,7 +1,8 @@
 # init(_:width:height:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new window placement with a display-relative position, with an optional width and height.
 

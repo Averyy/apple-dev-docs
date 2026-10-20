@@ -1,16 +1,17 @@
 # init(_:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,18 @@ init(_ rawValue: UInt32)
 
 ## See Also
 
-- [init(rawValue: UInt32)](bnnslinearsamplingmode/init(rawvalue:).md)
-- [var rawValue: UInt32](bnnslinearsamplingmode/rawvalue.md)
-- [var BNNSLinearSamplingDefault: BNNSLinearSamplingMode](bnnslinearsamplingdefault.md)
+### Constants
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
+- [var rawValue: UInt32](./rawvalue.md)
+- [var BNNSLinearSamplingDefault: BNNSLinearSamplingMode](../bnnslinearsamplingdefault.md)
   The default linear sampling mode.
-- [var BNNSLinearSamplingAlignCorners: BNNSLinearSamplingMode](bnnslinearsamplingaligncorners.md)
+- [var BNNSLinearSamplingAlignCorners: BNNSLinearSamplingMode](../bnnslinearsamplingaligncorners.md)
   The align corners sampling mode.
-- [var BNNSLinearSamplingUnalignCorners: BNNSLinearSamplingMode](bnnslinearsamplingunaligncorners.md)
+- [var BNNSLinearSamplingUnalignCorners: BNNSLinearSamplingMode](../bnnslinearsamplingunaligncorners.md)
   The unalign corners sampling mode.
-- [var BNNSLinearSamplingStrictAlignCorners: BNNSLinearSamplingMode](bnnslinearsamplingstrictaligncorners.md)
+- [var BNNSLinearSamplingStrictAlignCorners: BNNSLinearSamplingMode](../bnnslinearsamplingstrictaligncorners.md)
   The strict align corners sampling mode.
-- [var BNNSLinearSamplingOffsetCorners: BNNSLinearSamplingMode](bnnslinearsamplingoffsetcorners.md)
+- [var BNNSLinearSamplingOffsetCorners: BNNSLinearSamplingMode](../bnnslinearsamplingoffsetcorners.md)
   The offset corners sampling mode.
 
 

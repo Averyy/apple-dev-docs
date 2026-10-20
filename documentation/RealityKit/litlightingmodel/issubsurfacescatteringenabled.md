@@ -1,7 +1,8 @@
 # isSubsurfaceScatteringEnabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether to include subsurface scattering in the lighting calculation.
 
@@ -21,11 +22,12 @@ var isSubsurfaceScatteringEnabled: Bool
 
 ## See Also
 
-- [var isClearcoatEnabled: Bool](litlightingmodel/isclearcoatenabled.md)
+### Enabling lighting features
+- [var isClearcoatEnabled: Bool](./isclearcoatenabled.md)
   Whether to include a clearcoat layer in the lighting calculation.
-- [var isMultiscatteringEnabled: Bool](litlightingmodel/ismultiscatteringenabled.md)
+- [var isMultiscatteringEnabled: Bool](./ismultiscatteringenabled.md)
   Whether to account for multiple scattering between microfacets.
-- [var isBentNormalEnabled: Bool](litlightingmodel/isbentnormalenabled.md)
+- [var isBentNormalEnabled: Bool](./isbentnormalenabled.md)
   Whether to apply bent normal maps to improve ambient occlusion accuracy.
 
 

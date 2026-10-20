@@ -1,7 +1,8 @@
 # cSource
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents a C source code file.
 
@@ -24,23 +25,24 @@ static var cSource: UTType { get }
 
 The identifier for this type is `public.c-source`.
 
-This type conforms to [`UTTypeSourceCode`](uttypesourcecode.md).
+This type conforms to [`UTTypeSourceCode`](../uttypesourcecode.md).
 
 ## See Also
 
-- [static var assemblyLanguageSource: UTType](uttype-swift.struct/assemblylanguagesource.md)
+### Compiled programming language sources
+- [static var assemblyLanguageSource: UTType](./assemblylanguagesource.md)
   A type that represents assembly language source code.
-- [static var cHeader: UTType](uttype-swift.struct/cheader.md)
+- [static var cHeader: UTType](./cheader.md)
   A type that represents a C header file.
-- [static var cPlusPlusHeader: UTType](uttype-swift.struct/cplusplusheader.md)
+- [static var cPlusPlusHeader: UTType](./cplusplusheader.md)
   A type that represents a C++ header file.
-- [static var cPlusPlusSource: UTType](uttype-swift.struct/cplusplussource.md)
+- [static var cPlusPlusSource: UTType](./cplusplussource.md)
   A type that represents a C++ source code file.
-- [static var objectiveCPlusPlusSource: UTType](uttype-swift.struct/objectivecplusplussource.md)
+- [static var objectiveCPlusPlusSource: UTType](./objectivecplusplussource.md)
   A type that represents an Objective-C++ source code file.
-- [static var objectiveCSource: UTType](uttype-swift.struct/objectivecsource.md)
+- [static var objectiveCSource: UTType](./objectivecsource.md)
   A type that represents an Objective-C source code file.
-- [static var swiftSource: UTType](uttype-swift.struct/swiftsource.md)
+- [static var swiftSource: UTType](./swiftsource.md)
   A type that represents a Swift source code file.
 
 

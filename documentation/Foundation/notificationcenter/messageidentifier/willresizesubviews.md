@@ -1,7 +1,8 @@
 # willResizeSubviews
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var willResizeSubviews: NotificationCenter.BaseMessageIdentifier<NSSplitView.WillResizeSubviewsMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSSplitView.WillResizeSubviewsMessage>`.
 
 
 ---

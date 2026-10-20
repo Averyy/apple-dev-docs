@@ -1,7 +1,8 @@
 # CMBufferGetTimeCallback
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Callback that returns a `CMTime` from a `CMBuffer`.
 
@@ -20,6 +21,10 @@ Callback that returns a `CMTime` from a `CMBuffer`.
 typealias CMBufferGetTimeCallback = (CMBuffer, UnsafeMutableRawPointer?) -> CMTime
 ```
 
+```c
+typedef CMTime (*)(const void *, void *) CMBufferGetTimeCallback;
+```
+
 #### Discussion
 
 There are three callbacks of this type that can be provided to `Creating Buffer Queues`: getDuration (required), getDecodeTimeStamp (optional), and getPresentationTimeStamp (optional).
@@ -31,26 +36,27 @@ There are three callbacks of this type that can be provided to `Creating Buffer 
 
 ## See Also
 
-- [var compare: CMBufferCompareCallback?](cmbuffercallbacks/compare.md)
-  This callback is called multiple times from [`CMBufferQueueEnqueue(_:buffer:)`](cmbufferqueueenqueue(_:buffer:).md), to perform an insertion sort.
-- [typealias CMBufferCompareCallback](cmbuffercomparecallback.md)
+### Properties
+- [var compare: CMBufferCompareCallback?](./cmbuffercallbacks/compare.md)
+  This callback is called multiple times from [`CMBufferQueueEnqueue(_:buffer:)`](./cmbufferqueueenqueue%28_,buffer%29.md), to perform an insertion sort.
+- [typealias CMBufferCompareCallback](./cmbuffercomparecallback.md)
   Callback that compares one `CMBuffer` with another.
-- [typealias CMBufferGetBooleanCallback](cmbuffergetbooleancallback.md)
+- [typealias CMBufferGetBooleanCallback](./cmbuffergetbooleancallback.md)
   Callback that returns a Boolean value from a `CMBuffer`.
-- [var dataBecameReadyNotification: Unmanaged<CFString>?](cmbuffercallbacks/databecamereadynotification.md)
+- [var dataBecameReadyNotification: Unmanaged<CFString>?](./cmbuffercallbacks/databecamereadynotification.md)
   If triggers of type `kCMBufferQueueTrigger_WhenDataBecomesReady` are installed, the queue will listen for this notification on the head buffer.
-- [var getDecodeTimeStamp: CMBufferGetTimeCallback?](cmbuffercallbacks/getdecodetimestamp.md)
+- [var getDecodeTimeStamp: CMBufferGetTimeCallback?](./cmbuffercallbacks/getdecodetimestamp.md)
   Client callback that returns a `CMTime` from a `CMBuffer`.
-- [var getDuration: CMBufferGetTimeCallback](cmbuffercallbacks/getduration.md)
+- [var getDuration: CMBufferGetTimeCallback](./cmbuffercallbacks/getduration.md)
   This callback is called (once) during enqueue and dequeue operations to update the total duration of the queue.
-- [var getPresentationTimeStamp: CMBufferGetTimeCallback?](cmbuffercallbacks/getpresentationtimestamp.md)
+- [var getPresentationTimeStamp: CMBufferGetTimeCallback?](./cmbuffercallbacks/getpresentationtimestamp.md)
   Client callback that returns a `CMTime` from a `CMBuffer`.
-- [var getSize: CMBufferGetSizeCallback?](cmbuffercallbacks/getsize.md)
-- [var isDataReady: CMBufferGetBooleanCallback?](cmbuffercallbacks/isdataready.md)
-  This callback is called from [`CMBufferQueueDequeueIfDataReady(_:)`](cmbufferqueuedequeueifdataready(_:).md), to ask if the buffer that is about to be dequeued is ready.
-- [var refcon: UnsafeMutableRawPointer?](cmbuffercallbacks/refcon.md)
+- [var getSize: CMBufferGetSizeCallback?](./cmbuffercallbacks/getsize.md)
+- [var isDataReady: CMBufferGetBooleanCallback?](./cmbuffercallbacks/isdataready.md)
+  This callback is called from [`CMBufferQueueDequeueIfDataReady(_:)`](./cmbufferqueuedequeueifdataready%28_%29.md), to ask if the buffer that is about to be dequeued is ready.
+- [var refcon: UnsafeMutableRawPointer?](./cmbuffercallbacks/refcon.md)
   Contextual data to be passed to all callbacks.
-- [var version: UInt32](cmbuffercallbacks/version.md)
+- [var version: UInt32](./cmbuffercallbacks/version.md)
   The callback version.
 
 

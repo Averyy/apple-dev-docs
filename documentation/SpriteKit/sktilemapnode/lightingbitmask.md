@@ -1,7 +1,8 @@
 # lightingBitMask
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mask that defines how the tile map is lit by light nodes in the scene.
 
@@ -20,9 +21,13 @@ A mask that defines how the tile map is lit by light nodes in the scene.
 var lightingBitMask: UInt32 { get set }
 ```
 
+```objc
+@property (nonatomic) uint32_t lightingBitMask;
+```
+
 #### Discussion
 
-To determine whether this sprite is lit by a light node, the sprite’s `lightingBitMask` property is tested against the light’s [`categoryBitMask`](https://developer.apple.com/documentation/scenekit/scnlight/categorybitmask) property by performing a logical AND operation. If the comparison results in a nonzero value, the sprite is lit by this light.
+To determine whether this sprite is lit by a light node, the sprite’s `lightingBitMask` property is tested against the light’s [`categoryBitMask`](../../SceneKit/scnlight/categorybitmask.md) property by performing a logical AND operation. If the comparison results in a nonzero value, the sprite is lit by this light.
 
 The default value is 0x00000000 (all bits cleared).
 

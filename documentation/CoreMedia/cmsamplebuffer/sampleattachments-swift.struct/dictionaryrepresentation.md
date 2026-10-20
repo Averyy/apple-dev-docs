@@ -1,7 +1,8 @@
 # dictionaryRepresentation
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Dictionary representation of the sample attachments.
 

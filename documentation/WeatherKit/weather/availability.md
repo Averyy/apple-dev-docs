@@ -1,7 +1,8 @@
 # availability
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Flags containing information about data availability and attribution.
 
@@ -22,13 +23,14 @@ var availability: WeatherAvailability
 
 ## See Also
 
-- [var currentWeather: CurrentWeather](weather/currentweather.md)
+### Getting the forecast
+- [var currentWeather: CurrentWeather](./currentweather.md)
   The current weather forecast.
-- [var dailyForecast: Forecast<DayWeather>](weather/dailyforecast.md)
+- [var dailyForecast: Forecast<DayWeather>](./dailyforecast.md)
   The daily forecast.
-- [var hourlyForecast: Forecast<HourWeather>](weather/hourlyforecast.md)
+- [var hourlyForecast: Forecast<HourWeather>](./hourlyforecast.md)
   The hourly forecast.
-- [var minuteForecast: Forecast<MinuteWeather>?](weather/minuteforecast.md)
+- [var minuteForecast: Forecast<MinuteWeather>?](./minuteforecast.md)
   The minute-by-minute forecast.
 
 

@@ -1,7 +1,8 @@
 # parentWindow
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The window that displays the dashboard.
 
@@ -13,6 +14,10 @@ The window that displays the dashboard.
 ```swift
 @IBOutlet
 weak var parentWindow: NSWindow? { get set }
+```
+
+```objc
+@property (weak, nullable) NSWindow * parentWindow;
 ```
 
 #### Discussion

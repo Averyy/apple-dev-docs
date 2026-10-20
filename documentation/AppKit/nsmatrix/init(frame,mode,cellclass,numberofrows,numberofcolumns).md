@@ -1,12 +1,13 @@
 # init(frame:mode:cellClass:numberOfRows:numberOfColumns:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a newly allocated matrix of the specified size using cells of the given class.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,27 +15,32 @@ Initializes and returns a newly allocated matrix of the specified size using cel
 init(frame frameRect: NSRect, mode: NSMatrix.Mode, cellClass factoryId: AnyClass?, numberOfRows rowsHigh: Int, numberOfColumns colsWide: Int)
 ```
 
+```objc
+- (instancetype) initWithFrame:(NSRect) frameRect mode:(NSMatrixMode) mode cellClass:(Class) factoryId numberOfRows:(NSInteger) rowsHigh numberOfColumns:(NSInteger) colsWide;
+```
+
 #### Return Value
 
-The initialized instance of [`NSMatrix`](nsmatrix.md).
+The initialized instance of [`NSMatrix`](../nsmatrix.md).
 
 #### Discussion
 
-This method is the designated initializer for matrices that add cells by creating instances of an [`NSCell`](nscell.md) subclass.
+This method is the designated initializer for matrices that add cells by creating instances of an [`NSCell`](../nscell.md) subclass.
 
 ## Parameters
 
 - `frameRect`: The matrix’s frame.
-- `mode`: The tracking mode for the matrix; this can be one of the modes described in [`NSMatrix.Mode`](nsmatrix/mode-swift.enum.md).
-- `factoryId`: The class to use for any cells that the matrix creates and uses. This can be obtained by sending a `class` message to the desired subclass of [`NSCell`](nscell.md).
+- `mode`: The tracking mode for the matrix; this can be one of the modes described in [`NSMatrix.Mode`](./mode-swift.enum.md).
+- `factoryId`: The class to use for any cells that the matrix creates and uses. This can be obtained by sending a `class` message to the desired subclass of [`NSCell`](../nscell.md).
 - `rowsHigh`: The number of rows in the matrix.
 - `colsWide`: The number of columns in the matrix.
 
 ## See Also
 
-- [convenience init(frame: NSRect)](nsmatrix/init(frame:).md)
+### Initializing an NSMatrix Object
+- [convenience init(frame: NSRect)](./init%28frame%29.md)
   Initializes a newly allocated matrix with the specified frame.
-- [init(frame: NSRect, mode: NSMatrix.Mode, prototype: NSCell, numberOfRows: Int, numberOfColumns: Int)](nsmatrix/init(frame:mode:prototype:numberofrows:numberofcolumns:).md)
+- [init(frame: NSRect, mode: NSMatrix.Mode, prototype: NSCell, numberOfRows: Int, numberOfColumns: Int)](./init%28frame,mode,prototype,numberofrows,numberofcolumns%29.md)
   Initializes and returns a newly allocated matrix of the specified size using the given cell as a prototype.
 
 

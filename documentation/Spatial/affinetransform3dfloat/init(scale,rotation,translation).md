@@ -1,7 +1,8 @@
 # init(scale:rotation:translation:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new scale, rotate, translate transform.
 

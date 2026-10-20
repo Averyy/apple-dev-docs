@@ -1,21 +1,22 @@
 # AppPriceSchedule.Relationships.App
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.3+
 
 ## Declaration
 
-```swift
+```
 object AppPriceSchedule.Relationships.App
 ```
 
 ## Topics
 
 ### Objects
-- [object AppPriceSchedule.Relationships.App.Data](apppriceschedule/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
+- [object AppPriceSchedule.Relationships.App.Data](./app-data.dictionary/data-data.dictionary.md)
   The request body you use to update an app price schedule.
 
 ## Properties
@@ -24,9 +25,10 @@ object AppPriceSchedule.Relationships.App
 
 ## See Also
 
-- [object AppPriceSchedule.Relationships.AutomaticPrices](apppriceschedule/relationships-data.dictionary/automaticprices-data.dictionary.md)
-- [object AppPriceSchedule.Relationships.BaseTerritory](apppriceschedule/relationships-data.dictionary/baseterritory-data.dictionary.md)
-- [object AppPriceSchedule.Relationships.ManualPrices](apppriceschedule/relationships-data.dictionary/manualprices-data.dictionary.md)
+### Objects
+- [object AppPriceSchedule.Relationships.AutomaticPrices](./automaticprices-data.dictionary.md)
+- [object AppPriceSchedule.Relationships.BaseTerritory](./baseterritory-data.dictionary.md)
+- [object AppPriceSchedule.Relationships.ManualPrices](./manualprices-data.dictionary.md)
 
 
 ---

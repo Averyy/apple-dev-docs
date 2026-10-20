@@ -1,7 +1,8 @@
 # nsPredicate
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request’s predicate.
 
@@ -23,9 +24,9 @@ The request’s predicate.
 
 #### Discussion
 
-Set this configuration value to cause a [`FetchRequest`](fetchrequest.md) to execute a fetch with a new predicate.
+Set this configuration value to cause a [`FetchRequest`](../../fetchrequest.md) to execute a fetch with a new predicate.
 
-Access this value of a [`FetchRequest.Configuration`](fetchrequest/configuration.md) structure for a given request by using the [`nsPredicate`](fetchedresults/nspredicate.md) property on the associated [`FetchedResults`](fetchedresults.md) instance, either directly or through a [`Binding`](binding.md).
+Access this value of a [`FetchRequest.Configuration`](../configuration.md) structure for a given request by using the [`nsPredicate`](../../fetchedresults/nspredicate.md) property on the associated [`FetchedResults`](../../fetchedresults.md) instance, either directly or through a [`Binding`](../../binding.md).
 
 
 ---

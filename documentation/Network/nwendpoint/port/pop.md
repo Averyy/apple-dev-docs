@@ -1,7 +1,8 @@
 # pop
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Post Office Protocol port (port 110).
 
@@ -22,21 +23,22 @@ static let pop: NWEndpoint.Port
 
 ## See Also
 
-- [static let any: NWEndpoint.Port](nwendpoint/port/any.md)
+### Setting Well-Known Ports
+- [static let any: NWEndpoint.Port](./any.md)
   The unspecified port (port 0).
-- [static let ssh: NWEndpoint.Port](nwendpoint/port/ssh.md)
+- [static let ssh: NWEndpoint.Port](./ssh.md)
   The Secure Shell port (port 22).
-- [static let smtp: NWEndpoint.Port](nwendpoint/port/smtp.md)
+- [static let smtp: NWEndpoint.Port](./smtp.md)
   The Simple Mail Transfer Protocol port (port 25).
-- [static let http: NWEndpoint.Port](nwendpoint/port/http.md)
+- [static let http: NWEndpoint.Port](./http.md)
   The Hypertext Transfer Protocol port (port 80).
-- [static let imap: NWEndpoint.Port](nwendpoint/port/imap.md)
+- [static let imap: NWEndpoint.Port](./imap.md)
   The Internet Message Access Protocol port (port 143).
-- [static let https: NWEndpoint.Port](nwendpoint/port/https.md)
+- [static let https: NWEndpoint.Port](./https.md)
   The Secure Hypertext Transfer Protocol port (port 443).
-- [static let imaps: NWEndpoint.Port](nwendpoint/port/imaps.md)
+- [static let imaps: NWEndpoint.Port](./imaps.md)
   The Secure Internet Message Access Protocol port (port 993).
-- [static let socks: NWEndpoint.Port](nwendpoint/port/socks.md)
+- [static let socks: NWEndpoint.Port](./socks.md)
   The SOCKS proxy protocol port (port 1080).
 
 

@@ -1,7 +1,8 @@
 # isInspectable
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var isInspectable: Bool { get set }
+```
+
+```objc
+@property (nonatomic, getter=isInspectable) BOOL inspectable;
 ```
 
 #### Discussion

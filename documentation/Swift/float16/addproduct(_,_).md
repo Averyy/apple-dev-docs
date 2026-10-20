@@ -1,7 +1,8 @@
 # addProduct(_:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the product of the two given values to this value in place, computed without intermediate rounding.
 

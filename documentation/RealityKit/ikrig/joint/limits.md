@@ -1,7 +1,8 @@
 # limits
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The per-axis rotation limits of the joint.
 

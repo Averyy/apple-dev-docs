@@ -1,7 +1,8 @@
 # MPSCNNNeuronNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The virtual base class for MPS CNN neuron nodes.
 
@@ -19,77 +20,82 @@ The virtual base class for MPS CNN neuron nodes.
 class MPSCNNNeuronNode
 ```
 
+```objc
+@interface MPSCNNNeuronNode : MPSNNFilterNode
+```
+
 ## Topics
 
 ### Supporting Types
-- [enum MPSCNNNeuronType](mpscnnneurontype.md)
+- [enum MPSCNNNeuronType](./mpscnnneurontype.md)
   The types of neuron filter to append to a convolution.
 ### Initializers
-- [convenience init(source: MPSNNImageNode, descriptor: MPSNNNeuronDescriptor)](mpscnnneuronnode/init(source:descriptor:).md)
+- [convenience init(source: MPSNNImageNode, descriptor: MPSNNNeuronDescriptor)](./mpscnnneuronnode/init%28source,descriptor%29.md)
 ### Instance Properties
-- [var a: Float](mpscnnneuronnode/a.md)
-- [var b: Float](mpscnnneuronnode/b.md)
-- [var c: Float](mpscnnneuronnode/c.md)
+- [var a: Float](./mpscnnneuronnode/a.md)
+- [var b: Float](./mpscnnneuronnode/b.md)
+- [var c: Float](./mpscnnneuronnode/c.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNFilterNode](mpsnnfilternode.md)
+- [MPSNNFilterNode](./mpsnnfilternode.md)
 ### Inherited By
-- [MPSCNNNeuronAbsoluteNode](mpscnnneuronabsolutenode.md)
-- [MPSCNNNeuronELUNode](mpscnnneuronelunode.md)
-- [MPSCNNNeuronExponentialNode](mpscnnneuronexponentialnode.md)
-- [MPSCNNNeuronGeLUNode](mpscnnneurongelunode.md)
-- [MPSCNNNeuronHardSigmoidNode](mpscnnneuronhardsigmoidnode.md)
-- [MPSCNNNeuronLinearNode](mpscnnneuronlinearnode.md)
-- [MPSCNNNeuronLogarithmNode](mpscnnneuronlogarithmnode.md)
-- [MPSCNNNeuronPReLUNode](mpscnnneuronprelunode.md)
-- [MPSCNNNeuronPowerNode](mpscnnneuronpowernode.md)
-- [MPSCNNNeuronReLUNNode](mpscnnneuronrelunnode.md)
-- [MPSCNNNeuronReLUNode](mpscnnneuronrelunode.md)
-- [MPSCNNNeuronSigmoidNode](mpscnnneuronsigmoidnode.md)
-- [MPSCNNNeuronSoftPlusNode](mpscnnneuronsoftplusnode.md)
-- [MPSCNNNeuronSoftSignNode](mpscnnneuronsoftsignnode.md)
-- [MPSCNNNeuronTanHNode](mpscnnneurontanhnode.md)
+- [MPSCNNNeuronAbsoluteNode](./mpscnnneuronabsolutenode.md)
+- [MPSCNNNeuronELUNode](./mpscnnneuronelunode.md)
+- [MPSCNNNeuronExponentialNode](./mpscnnneuronexponentialnode.md)
+- [MPSCNNNeuronGeLUNode](./mpscnnneurongelunode.md)
+- [MPSCNNNeuronHardSigmoidNode](./mpscnnneuronhardsigmoidnode.md)
+- [MPSCNNNeuronLinearNode](./mpscnnneuronlinearnode.md)
+- [MPSCNNNeuronLogarithmNode](./mpscnnneuronlogarithmnode.md)
+- [MPSCNNNeuronPReLUNode](./mpscnnneuronprelunode.md)
+- [MPSCNNNeuronPowerNode](./mpscnnneuronpowernode.md)
+- [MPSCNNNeuronReLUNNode](./mpscnnneuronrelunnode.md)
+- [MPSCNNNeuronReLUNode](./mpscnnneuronrelunode.md)
+- [MPSCNNNeuronSigmoidNode](./mpscnnneuronsigmoidnode.md)
+- [MPSCNNNeuronSoftPlusNode](./mpscnnneuronsoftplusnode.md)
+- [MPSCNNNeuronSoftSignNode](./mpscnnneuronsoftsignnode.md)
+- [MPSCNNNeuronTanHNode](./mpscnnneurontanhnode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNNeuronAbsoluteNode](mpscnnneuronabsolutenode.md)
+### Neuron Layer Nodes
+- [class MPSCNNNeuronAbsoluteNode](./mpscnnneuronabsolutenode.md)
   A representation of an absolute neuron filter.
-- [class MPSCNNNeuronELUNode](mpscnnneuronelunode.md)
+- [class MPSCNNNeuronELUNode](./mpscnnneuronelunode.md)
   A representation of a parametric ELU neuron filter.
-- [class MPSCNNNeuronHardSigmoidNode](mpscnnneuronhardsigmoidnode.md)
+- [class MPSCNNNeuronHardSigmoidNode](./mpscnnneuronhardsigmoidnode.md)
   A representation of a hard sigmoid neuron filter.
-- [class MPSCNNNeuronLinearNode](mpscnnneuronlinearnode.md)
+- [class MPSCNNNeuronLinearNode](./mpscnnneuronlinearnode.md)
   A representation of a linear neuron filter.
-- [class MPSCNNNeuronPReLUNode](mpscnnneuronprelunode.md)
+- [class MPSCNNNeuronPReLUNode](./mpscnnneuronprelunode.md)
   A representation a PReLU neuron filter.
-- [class MPSCNNNeuronReLUNNode](mpscnnneuronrelunnode.md)
+- [class MPSCNNNeuronReLUNNode](./mpscnnneuronrelunnode.md)
   A representation a ReLUN neuron filter.
-- [class MPSCNNNeuronReLUNode](mpscnnneuronrelunode.md)
+- [class MPSCNNNeuronReLUNode](./mpscnnneuronrelunode.md)
   A representation a ReLU neuron filter.
-- [class MPSCNNNeuronSigmoidNode](mpscnnneuronsigmoidnode.md)
+- [class MPSCNNNeuronSigmoidNode](./mpscnnneuronsigmoidnode.md)
   A representation of a sigmoid neuron filter.
-- [class MPSCNNNeuronSoftPlusNode](mpscnnneuronsoftplusnode.md)
+- [class MPSCNNNeuronSoftPlusNode](./mpscnnneuronsoftplusnode.md)
   A representation of a parametric softplus neuron filter.
-- [class MPSCNNNeuronSoftSignNode](mpscnnneuronsoftsignnode.md)
+- [class MPSCNNNeuronSoftSignNode](./mpscnnneuronsoftsignnode.md)
   A representation of a softsign neuron filter.
-- [class MPSCNNNeuronTanHNode](mpscnnneurontanhnode.md)
+- [class MPSCNNNeuronTanHNode](./mpscnnneurontanhnode.md)
   A representation of a hyperbolic tangent neuron filter.
-- [class MPSCNNNeuronExponentialNode](mpscnnneuronexponentialnode.md)
+- [class MPSCNNNeuronExponentialNode](./mpscnnneuronexponentialnode.md)
   A representation of an exponential neuron filter.
-- [class MPSCNNNeuronGradientNode](mpscnnneurongradientnode.md)
+- [class MPSCNNNeuronGradientNode](./mpscnnneurongradientnode.md)
   A representation of a gradient exponential neuron filter.
-- [class MPSCNNNeuronLogarithmNode](mpscnnneuronlogarithmnode.md)
+- [class MPSCNNNeuronLogarithmNode](./mpscnnneuronlogarithmnode.md)
   A representation of a logarithm neuron filter.
-- [class MPSCNNNeuronPowerNode](mpscnnneuronpowernode.md)
+- [class MPSCNNNeuronPowerNode](./mpscnnneuronpowernode.md)
   A representation of a power neuron filter.
 
 

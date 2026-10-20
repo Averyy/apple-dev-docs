@@ -1,7 +1,8 @@
 # CBUUID
 
 **Framework**: Core Bluetooth  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A universally unique identifier, as defined by Bluetooth standards.
 
@@ -20,57 +21,62 @@ A universally unique identifier, as defined by Bluetooth standards.
 class CBUUID
 ```
 
+```objc
+@interface CBUUID : NSObject
+```
+
 #### Overview
 
-Instances of the [`CBUUID`](cbuuid.md) class represent the 128-bit universally unique identifiers (UUIDs) of attributes used in Bluetooth low energy communication, such as a peripheral’s services, characteristics, and descriptors. This class provides a number of factory methods for dealing with long UUIDs when developing your app. For example, instead of passing around the string representation of a 128-bit Bluetooth low energy attribute in your code, you can create a [`CBUUID`](cbuuid.md) object that represents it, and pass that around instead.
+Instances of the [`CBUUID`](./cbuuid.md) class represent the 128-bit universally unique identifiers (UUIDs) of attributes used in Bluetooth low energy communication, such as a peripheral’s services, characteristics, and descriptors. This class provides a number of factory methods for dealing with long UUIDs when developing your app. For example, instead of passing around the string representation of a 128-bit Bluetooth low energy attribute in your code, you can create a [`CBUUID`](./cbuuid.md) object that represents it, and pass that around instead.
 
-The Bluetooth Special Interest Group (SIG) publishes a list of commonly-used UUIDs, many of which are 16- or 32-bits for convenience. The [`CBUUID`](cbuuid.md) class provides methods that automatically transform these predefined shorter UUIDs into their 128-bit equivalent UUIDs. When you create a [`CBUUID`](cbuuid.md) object from a predefined 16- or 32-bit UUID, Core Bluetooth pre-fills the rest of the 128-bit UUID with the Bluetooth base UUID, as defined in the Bluetooth 4.0 specification, Volume 3, Part F, Section 3.2.1.
+The Bluetooth Special Interest Group (SIG) publishes a list of commonly-used UUIDs, many of which are 16- or 32-bits for convenience. The [`CBUUID`](./cbuuid.md) class provides methods that automatically transform these predefined shorter UUIDs into their 128-bit equivalent UUIDs. When you create a [`CBUUID`](./cbuuid.md) object from a predefined 16- or 32-bit UUID, Core Bluetooth pre-fills the rest of the 128-bit UUID with the Bluetooth base UUID, as defined in the Bluetooth 4.0 specification, Volume 3, Part F, Section 3.2.1.
 
-In addition to providing methods for creating [`CBUUID`](cbuuid.md) objects, this class defines constants that represent the UUIDs of the Bluetooth-defined characteristic descriptors, as defined in the Bluetooth 4.0 specification, Volume 3, Part G, Section 3.3.3.
+In addition to providing methods for creating [`CBUUID`](./cbuuid.md) objects, this class defines constants that represent the UUIDs of the Bluetooth-defined characteristic descriptors, as defined in the Bluetooth 4.0 specification, Volume 3, Part G, Section 3.3.3.
 
 ## Topics
 
 ### Creating New CBUUID Objects
-- [init(string: String)](cbuuid/init(string:).md)
+- [init(string: String)](./cbuuid/init%28string%29.md)
   Creates a Core Bluetooth UUID object from a 16-, 32-, or 128-bit UUID string.
-- [init(data: Data)](cbuuid/init(data:).md)
+- [init(data: Data)](./cbuuid/init%28data%29.md)
   Creates a Core Bluetooth UUID object from a 16-, 32-, or 128-bit UUID data container.
-- [init(cfuuid: CFUUID)](cbuuid/init(cfuuid:)-3h0ry.md)
+- [init(cfuuid: CFUUID)](./cbuuid/init%28cfuuid%29-3h0ry.md)
   Creates a Core Bluetooth UUID object from a Core Foundation UUID object.
-- [init(nsuuid: UUID)](cbuuid/init(nsuuid:)-2amob.md)
+- [init(nsuuid: UUID)](./cbuuid/init%28nsuuid%29-2amob.md)
   Creates a Core Bluetooth UUID object from a Foundation UUID object.
 ### Inspecting CBUUID Properties
-- [var data: Data](cbuuid/data.md)
+- [var data: Data](./cbuuid/data.md)
   The data of the UUID.
-- [var uuidString: String](cbuuid/uuidstring.md)
+- [var uuidString: String](./cbuuid/uuidstring.md)
   The UUID represented as a string.
 ### UUID Constants
-- [Characteristic Descriptors](characteristic-descriptors.md)
+- [Characteristic Descriptors](./characteristic-descriptors.md)
   Values that represent the UUIDs of the characteristic descriptors.
 ### Initializers
-- [init(CFUUID: CFUUID)](cbuuid/init(cfuuid:)-9ehvy.md)
-- [init(NSUUID: UUID)](cbuuid/init(nsuuid:)-hoyn.md)
+- [init(CFUUID: CFUUID)](./cbuuid/init%28cfuuid%29-9ehvy.md)
+- [init(NSUUID: UUID)](./cbuuid/init%28nsuuid%29-hoyn.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CBManager](cbmanager.md)
+### Supporting Types
+- [class CBManager](./cbmanager.md)
   The abstract base class that manages central and peripheral objects.
-- [class CBATTRequest](cbattrequest.md)
+- [class CBATTRequest](./cbattrequest.md)
   A request that uses the Attribute Protocol (ATT).
-- [class CBPeer](cbpeer.md)
+- [class CBPeer](./cbpeer.md)
   An object that represents a remote device.
 
 

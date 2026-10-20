@@ -1,9 +1,10 @@
 # keyAECountProc
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Object-counting function. See [`OSLCountProcPtr`](oslcountprocptr.md).
+Object-counting function. See [`OSLCountProcPtr`](./oslcountprocptr.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

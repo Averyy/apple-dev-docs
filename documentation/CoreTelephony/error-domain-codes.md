@@ -1,17 +1,18 @@
 # Error Domains
 
-**Framework**: Core Telephony
+**Framework**: Core Telephony  
+**Role**: API Collection
 
 Error domains used by Core Telephony errors.
 
 ## Topics
 
 ### Error Domains
-- [var kCTErrorDomainMach: Int](kcterrordomainmach.md)
+- [var kCTErrorDomainMach: Int](./kcterrordomainmach.md)
   The domain value for errors reported by Mach.
-- [var kCTErrorDomainNoError: Int](kcterrordomainnoerror.md)
+- [var kCTErrorDomainNoError: Int](./kcterrordomainnoerror.md)
   The domain value indicating there is no error.
-- [var kCTErrorDomainPOSIX: Int](kcterrordomainposix.md)
+- [var kCTErrorDomainPOSIX: Int](./kcterrordomainposix.md)
   The domain value for errors from POSIX.
 
 

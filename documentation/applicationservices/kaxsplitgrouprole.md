@@ -1,7 +1,8 @@
 # kAXSplitGroupRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A split view.
 
@@ -12,6 +13,10 @@ A split view.
 
 ```swift
 var kAXSplitGroupRole: String { get }
+```
+
+```c
+#define kAXSplitGroupRole
 ```
 
 

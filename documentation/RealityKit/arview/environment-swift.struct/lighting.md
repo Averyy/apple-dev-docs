@@ -1,7 +1,8 @@
 # lighting
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The lighting used in the environment of a particular scene.
 
@@ -20,7 +21,8 @@ var lighting: ARView.Environment.ImageBasedLight
 
 ## See Also
 
-- [ARView.Environment.ImageBasedLight](arview/environment-swift.struct/imagebasedlight.md)
+### Lighting the environment
+- [ARView.Environment.ImageBasedLight](./imagebasedlight.md)
   Lighting properties of an environment.
 
 

@@ -1,7 +1,8 @@
 # StructuredTranscript
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -21,32 +22,33 @@ struct StructuredTranscript
 ## Topics
 
 ### Creating a transcript
-- [init(toolCalls: [Transcript.ToolCall], toolOutputs: [Transcript.ToolOutput], instructionText: String, prompts: [String], responses: [Transcript.Response])](structuredtranscript/init(toolcalls:tooloutputs:instructiontext:prompts:responses:).md)
+- [init(toolCalls: [Transcript.ToolCall], toolOutputs: [Transcript.ToolOutput], instructionText: String, prompts: [String], responses: [Transcript.Response])](./structuredtranscript/init%28toolcalls,tooloutputs,instructiontext,prompts,responses%29.md)
   Creates a structured transcript.
 ### Inspecting prompts and responses
-- [var instructionText: String](structuredtranscript/instructiontext.md)
+- [var instructionText: String](./structuredtranscript/instructiontext.md)
   The system instruction text from the transcript.
-- [var prompts: [String]](structuredtranscript/prompts.md)
+- [var prompts: [String]](./structuredtranscript/prompts.md)
   The user prompt strings from the transcript.
-- [var responses: [Transcript.Response]](structuredtranscript/responses.md)
+- [var responses: [Transcript.Response]](./structuredtranscript/responses.md)
   The model responses from the transcript.
 ### Inspecting tool interactions
-- [var toolCalls: [Transcript.ToolCall]](structuredtranscript/toolcalls.md)
+- [var toolCalls: [Transcript.ToolCall]](./structuredtranscript/toolcalls.md)
   The tool calls extracted from the transcript.
-- [var toolOutputs: [Transcript.ToolOutput]](structuredtranscript/tooloutputs.md)
+- [var toolOutputs: [Transcript.ToolOutput]](./structuredtranscript/tooloutputs.md)
   The tool outputs extracted from the transcript.
-- [enum StructuredValue](structuredvalue.md)
+- [enum StructuredValue](./structuredvalue.md)
   A type-safe representation of JSON values.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var toolCalls: [Transcript.ToolCall]](modelsubject/toolcalls.md)
+### Inspecting tool calls
+- [var toolCalls: [Transcript.ToolCall]](./modelsubject/toolcalls.md)
   The tool calls from the transcript, or an empty array if no transcript was provided.
 
 

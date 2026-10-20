@@ -1,7 +1,8 @@
 # StatusEnhancedLoggingStatus
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that reports the device’s enhanced log collection session status.
 
@@ -14,13 +15,13 @@ The status item that reports the device’s enhanced log collection session stat
 
 ## Declaration
 
-```swift
+```
 object StatusEnhancedLoggingStatus
 ```
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +32,7 @@ object StatusEnhancedLoggingStatus
 | Allowed in system scope | iOS, Shared iPad, tvOS |
 | Allowed in user scope | macOS |
 
-##### Status Item Example
+##### Status item example
 
 ```json
 {
@@ -43,24 +44,29 @@ object StatusEnhancedLoggingStatus
 
 ## Properties
 
-- `enhanced-logging.status` (string) *(required)*: The enhanced log collection session status, which has the following values: - `none`: The device has never run an enhanced log collection session.
-- `waiting-for-consent`: The device is waiting for the user to consent to the enhanced log collection.
-- `collecting`: The enhanced log collection is in progress.
-- `follow-up-question`: The device is waiting for follow-up response from the user.
-- `upload-consent`: The device is waiting for the user to approve upload of the enhanced logs.
-- `uploading`: The device is uploading the enhanced logs.
-- `finished`: The device completed the enhanced log collection session.
-- `failed`: The device failed to complete the enhanced log collection session.
-- `cancelled` - The device management service cancelled the enhanced log collection session.
-- `declined` - The user declined the enhanced log collection session.
+- `enhanced-logging.status` (string) *(required)*: The enhanced log collection session status, which has the following values:
+
+  - `none`: The device has never run an enhanced log collection session.
+  - `waiting-for-consent`: The device is waiting for the user to consent to the enhanced log collection.
+  - `collecting`: The enhanced log collection is in progress.
+  - `follow-up-question`: The device is waiting for follow-up response from the user.
+  - `upload-consent`: The device is waiting for the user to approve upload of the enhanced logs.
+  - `uploading`: The device is uploading the enhanced logs.
+  - `finished`: The device completed the enhanced log collection session.
+  - `failed`: The device failed to complete the enhanced log collection session.
+  - `cancelled` - The device management service cancelled the enhanced log collection session.
+  - `declined` - The user declined the enhanced log collection session.
+
+  **Allowed Values**: `none`, `waiting-for-consent`, `collecting`, `follow-up-question`, `upload-consent`, `uploading`, `finished`, `failed`, `cancelled`, `declined`
 
 ## See Also
 
-- [object StatusEnhancedLoggingAppleCareToken](statusenhancedloggingapplecaretoken.md)
+### Enhanced logging items
+- [object StatusEnhancedLoggingAppleCareToken](./statusenhancedloggingapplecaretoken.md)
   The status item that reports the device’s enhanced log collection session AppleCare token.
-- [object StatusEnhancedLoggingNonInteractiveEligibility](statusenhancedloggingnoninteractiveeligibility.md)
+- [object StatusEnhancedLoggingNonInteractiveEligibility](./statusenhancedloggingnoninteractiveeligibility.md)
   The status item that reports whether the device is eligible to run a non-interactive enhanced log collection session.
-- [object StatusEnhancedLoggingTimestamp](statusenhancedloggingtimestamp.md)
+- [object StatusEnhancedLoggingTimestamp](./statusenhancedloggingtimestamp.md)
   The status item that reports the device’s enhanced log collection session timestamp.
 
 

@@ -1,17 +1,22 @@
 # setDevice(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the device object to pair with. It is retained by the object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setDevice(_ inDevice: IOBluetoothDevice!)
+```
+
+```objc
+- (void) setDevice:(IOBluetoothDevice *) inDevice;
 ```
 
 ## Parameters

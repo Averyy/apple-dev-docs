@@ -1,7 +1,8 @@
 # init(nsuuid:)
 
 **Framework**: Core Bluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Core Bluetooth UUID object from a Foundation UUID object.
 
@@ -20,21 +21,26 @@ Creates a Core Bluetooth UUID object from a Foundation UUID object.
 init(nsuuid theUUID: UUID)
 ```
 
+```objc
++ (CBUUID *) UUIDWithNSUUID:(NSUUID *) theUUID;
+```
+
 #### Return Value
 
-A new [`CBUUID`](cbuuid.md) object for the specified UUID.
+A new [`CBUUID`](../cbuuid.md) object for the specified UUID.
 
 ## Parameters
 
-- `theUUID`: A UUID represented by an [`NSUUID`](https://developer.apple.com/documentation/foundation/nsuuid) object.
+- `theUUID`: A UUID represented by an [`NSUUID`](../../Foundation/nsuuid.md) object.
 
 ## See Also
 
-- [init(string: String)](cbuuid/init(string:).md)
+### Creating New CBUUID Objects
+- [init(string: String)](./init%28string%29.md)
   Creates a Core Bluetooth UUID object from a 16-, 32-, or 128-bit UUID string.
-- [init(data: Data)](cbuuid/init(data:).md)
+- [init(data: Data)](./init%28data%29.md)
   Creates a Core Bluetooth UUID object from a 16-, 32-, or 128-bit UUID data container.
-- [init(cfuuid: CFUUID)](cbuuid/init(cfuuid:)-3h0ry.md)
+- [init(cfuuid: CFUUID)](./init%28cfuuid%29-3h0ry.md)
   Creates a Core Bluetooth UUID object from a Core Foundation UUID object.
 
 

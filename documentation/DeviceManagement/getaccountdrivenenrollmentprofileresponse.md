@@ -1,7 +1,8 @@
 # GetAccountDrivenEnrollmentProfileResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The details for an account-driven enrollment profile.
 
@@ -10,7 +11,7 @@ The details for an account-driven enrollment profile.
 
 ## Declaration
 
-```swift
+```
 object GetAccountDrivenEnrollmentProfileResponse
 ```
 

@@ -1,7 +1,8 @@
 # noLoadHint
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Hint to the runtime to skip loading payloads on targeted prims. Default: `false`.
 

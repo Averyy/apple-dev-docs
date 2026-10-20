@@ -2,12 +2,13 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Increments the stepper’s value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,21 +16,26 @@ Increments the stepper’s value.
 func accessibilityPerformIncrement() -> Bool
 ```
 
+```objc
+- (BOOL) accessibilityPerformIncrement;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the action was successfully triggered; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). This method does not indicate the success or failure of the action, just the fact that the action was successfully triggered.
+[`true`](../../Swift/true.md) if the action was successfully triggered; otherwise, [`false`](../../Swift/false.md). This method does not indicate the success or failure of the action, just the fact that the action was successfully triggered.
 
 #### Discussion
 
-This method must post an [`valueChanged`](nsaccessibility-swift.struct/notification/valuechanged.md) notification after changing the stepper’s value.
+This method must post an [`valueChanged`](../nsaccessibility-swift.struct/notification/valuechanged.md) notification after changing the stepper’s value.
 
 ## See Also
 
-- [func accessibilityLabel() -> String?](nsaccessibilitystepper/accessibilitylabel.md)
+### Supporting Accessibility
+- [func accessibilityLabel() -> String?](./accessibilitylabel%28%29.md)
   Returns a short description of the stepper.
-- [func accessibilityPerformDecrement() -> Bool](nsaccessibilitystepper/accessibilityperformdecrement.md)
+- [func accessibilityPerformDecrement() -> Bool](./accessibilityperformdecrement%28%29.md)
   Decrements the stepper’s value.
-- [func accessibilityValue() -> Any?](nsaccessibilitystepper/accessibilityvalue.md)
+- [func accessibilityValue() -> Any?](./accessibilityvalue%28%29.md)
   Returns the stepper’s value.
 
 

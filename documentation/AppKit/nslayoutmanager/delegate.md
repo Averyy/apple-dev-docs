@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout manager’s delegate.
 
@@ -14,9 +15,14 @@ The layout manager’s delegate.
 weak var delegate: (any NSLayoutManagerDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSLayoutManagerDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol NSLayoutManagerDelegate](nslayoutmanagerdelegate.md)
+### Managing the layout process
+- [protocol NSLayoutManagerDelegate](../nslayoutmanagerdelegate.md)
   A set of optional methods that delegates of layout manager objects implement.
 
 

@@ -1,7 +1,8 @@
 # optionsMenuProvider
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that populates the search options for a find interaction.
 
@@ -17,17 +18,22 @@ A closure that populates the search options for a find interaction.
 var optionsMenuProvider: (([UIMenuElement]) -> UIMenu?)? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) UIMenu * (^optionsMenuProvider)(NSArray<UIMenuElement *> *defaultOptions);
+```
+
 #### Discussion
 
-You use this closure to modify, augement or omit options from the default set available in [`UITextSearchOptions`](uitextsearchoptions.md).
+You use this closure to modify, augement or omit options from the default set available in [`UITextSearchOptions`](../uitextsearchoptions.md).
 
 ## See Also
 
-- [var isFindNavigatorVisible: Bool](uifindinteraction/isfindnavigatorvisible.md)
+### Configuring the find panel
+- [var isFindNavigatorVisible: Bool](./isfindnavigatorvisible.md)
   A Boolean value that indicates when the find panel displays onscreen.
-- [var searchText: String?](uifindinteraction/searchtext.md)
+- [var searchText: String?](./searchtext.md)
   The search query with which to prepopulate the find panel’s search text field.
-- [var replacementText: String?](uifindinteraction/replacementtext.md)
+- [var replacementText: String?](./replacementtext.md)
   The replacement string with which to prepopulate the find panel’s replace text field.
 
 

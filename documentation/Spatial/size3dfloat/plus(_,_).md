@@ -1,7 +1,8 @@
 # +(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a size that’s the element-wise sum of two sizes.
 

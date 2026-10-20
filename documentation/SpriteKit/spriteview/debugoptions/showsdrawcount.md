@@ -1,7 +1,8 @@
 # showsDrawCount
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 14.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -20,11 +21,12 @@ static let showsDrawCount: SpriteView.DebugOptions
 
 ## See Also
 
-- [static let showsFPS: SpriteView.DebugOptions](spriteview/debugoptions/showsfps.md)
-- [static let showsFields: SpriteView.DebugOptions](spriteview/debugoptions/showsfields.md)
-- [static let showsNodeCount: SpriteView.DebugOptions](spriteview/debugoptions/showsnodecount.md)
-- [static let showsPhysics: SpriteView.DebugOptions](spriteview/debugoptions/showsphysics.md)
-- [static let showsQuadCount: SpriteView.DebugOptions](spriteview/debugoptions/showsquadcount.md)
+### Type Properties
+- [static let showsFPS: SpriteView.DebugOptions](./showsfps.md)
+- [static let showsFields: SpriteView.DebugOptions](./showsfields.md)
+- [static let showsNodeCount: SpriteView.DebugOptions](./showsnodecount.md)
+- [static let showsPhysics: SpriteView.DebugOptions](./showsphysics.md)
+- [static let showsQuadCount: SpriteView.DebugOptions](./showsquadcount.md)
 
 
 ---

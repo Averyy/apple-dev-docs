@@ -1,7 +1,8 @@
 # RawSpan
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 `RawSpan` represents a contiguous region of memory which contains initialized bytes.
 
@@ -28,88 +29,89 @@ A `RawSpan` instance is a non-owning, non-escaping view into memory. When a `Raw
 ## Topics
 
 ### Initializers
-- [init()](rawspan/init.md)
+- [init()](./rawspan/init%28%29.md)
   Create an empty span.
-- [init<Element>(elements: Span<Element>)](rawspan/init(elements:).md)
+- [init<Element>(elements: Span<Element>)](./rawspan/init%28elements%29.md)
   View a typed span as a raw span.
-- [init<Element>(unsafeElements: Span<Element>)](rawspan/init(unsafeelements:).md)
+- [init<Element>(unsafeElements: Span<Element>)](./rawspan/init%28unsafeelements%29.md)
   Unsafely view a typed span as a raw span.
 ### Instance Properties
-- [var byteCount: Int](rawspan/bytecount.md)
+- [var byteCount: Int](./rawspan/bytecount.md)
   The number of bytes in the span.
-- [var byteOffsets: Range<Int>](rawspan/byteoffsets.md)
+- [var byteOffsets: Range<Int>](./rawspan/byteoffsets.md)
   The indices that are valid for subscripting the span, in ascending order.
-- [var isEmpty: Bool](rawspan/isempty.md)
+- [var isEmpty: Bool](./rawspan/isempty.md)
   A Boolean value indicating whether the span is empty.
 ### Instance Methods
-- [func byteOffsets(of: borrowing RawSpan) -> Range<Int>?](rawspan/byteoffsets(of:).md)
+- [func byteOffsets(of: borrowing RawSpan) -> Range<Int>?](./rawspan/byteoffsets%28of%29.md)
   Returns the byte offsets within this span where the memory represented by other is located, or nil if other is not located within this span.
-- [func extracting(Range<Int>) -> RawSpan](rawspan/extracting(_:)-2imhy.md)
+- [func extracting(Range<Int>) -> RawSpan](./rawspan/extracting%28_%29-2imhy.md)
   Constructs a new span over the bytes within the supplied range of positions within this span.
-- [func extracting(UnboundedRange) -> RawSpan](rawspan/extracting(_:)-3elv4.md)
+- [func extracting(UnboundedRange) -> RawSpan](./rawspan/extracting%28_%29-3elv4.md)
   Constructs a new span over all the bytes of this span.
-- [func extracting(some RangeExpression<Int>) -> RawSpan](rawspan/extracting(_:)-8oy0e.md)
+- [func extracting(some RangeExpression<Int>) -> RawSpan](./rawspan/extracting%28_%29-8oy0e.md)
   Constructs a new span over the bytes within the supplied range of positions within this span.
-- [func extracting(droppingFirst: Int) -> RawSpan](rawspan/extracting(droppingfirst:).md)
+- [func extracting(droppingFirst: Int) -> RawSpan](./rawspan/extracting%28droppingfirst%29.md)
   Returns a span over all but the given number of initial bytes.
-- [func extracting(droppingLast: Int) -> RawSpan](rawspan/extracting(droppinglast:).md)
+- [func extracting(droppingLast: Int) -> RawSpan](./rawspan/extracting%28droppinglast%29.md)
   Returns a span over all but the given number of trailing bytes.
-- [func extracting(first: Int) -> RawSpan](rawspan/extracting(first:).md)
+- [func extracting(first: Int) -> RawSpan](./rawspan/extracting%28first%29.md)
   Returns a span containing the initial bytes of this span, up to the specified maximum length.
-- [func extracting(last: Int) -> RawSpan](rawspan/extracting(last:).md)
+- [func extracting(last: Int) -> RawSpan](./rawspan/extracting%28last%29.md)
   Returns a span containing the trailing bytes of the span, up to the given maximum length.
-- [func extracting(unchecked: ClosedRange<Int>) -> RawSpan](rawspan/extracting(unchecked:)-2hjqs.md)
+- [func extracting(unchecked: ClosedRange<Int>) -> RawSpan](./rawspan/extracting%28unchecked%29-2hjqs.md)
   Constructs a new span over the bytes within the supplied range of positions within this span.
-- [func extracting(unchecked: Range<Int>) -> RawSpan](rawspan/extracting(unchecked:)-527ri.md)
+- [func extracting(unchecked: Range<Int>) -> RawSpan](./rawspan/extracting%28unchecked%29-527ri.md)
   Constructs a new span over the bytes within the supplied range of positions within this span.
-- [func isIdentical(to: RawSpan) -> Bool](rawspan/isidentical(to:).md)
+- [func isIdentical(to: RawSpan) -> Bool](./rawspan/isidentical%28to%29.md)
   Returns a Boolean value indicating whether two instances refer to the same memory region.
-- [func isTriviallyIdentical(to: RawSpan) -> Bool](rawspan/istriviallyidentical(to:).md)
+- [func isTriviallyIdentical(to: RawSpan) -> Bool](./rawspan/istriviallyidentical%28to%29.md)
   Returns a Boolean value indicating whether two instances refer to the same memory region.
-- [func load<T>(fromByteOffset: Int, as: T.Type) -> T](rawspan/load(frombyteoffset:as:).md)
+- [func load<T>(fromByteOffset: Int, as: T.Type) -> T](./rawspan/load%28frombyteoffset,as%29.md)
   Returns a value constructed from the raw memory at the specified offset.
-- [func load<T>(fromByteOffset: Int, as: T.Type, ByteOrder) -> T](rawspan/load(frombyteoffset:as:_:).md)
+- [func load<T>(fromByteOffset: Int, as: T.Type, ByteOrder) -> T](./rawspan/load%28frombyteoffset,as,_%29.md)
   Returns a value constructed from the raw memory at the specified offset.
-- [func unsafeLoad<T>(fromByteOffset: Int, as: T.Type) -> T](rawspan/unsafeload(frombyteoffset:as:).md)
+- [func unsafeLoad<T>(fromByteOffset: Int, as: T.Type) -> T](./rawspan/unsafeload%28frombyteoffset,as%29.md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
-- [func unsafeLoad<T>(fromUncheckedByteOffset: Int, as: T.Type) -> T](rawspan/unsafeload(fromuncheckedbyteoffset:as:).md)
+- [func unsafeLoad<T>(fromUncheckedByteOffset: Int, as: T.Type) -> T](./rawspan/unsafeload%28fromuncheckedbyteoffset,as%29.md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
-- [func unsafeLoadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](rawspan/unsafeloadunaligned(frombyteoffset:as:).md)
+- [func unsafeLoadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](./rawspan/unsafeloadunaligned%28frombyteoffset,as%29.md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
-- [func unsafeLoadUnaligned<T>(fromUncheckedByteOffset: Int, as: T.Type) -> T](rawspan/unsafeloadunaligned(fromuncheckedbyteoffset:as:).md)
+- [func unsafeLoadUnaligned<T>(fromUncheckedByteOffset: Int, as: T.Type) -> T](./rawspan/unsafeloadunaligned%28fromuncheckedbyteoffset,as%29.md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
-- [func withUnsafeBytes<E, Result>((UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](rawspan/withunsafebytes(_:).md)
+- [func withUnsafeBytes<E, Result>((UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](./rawspan/withunsafebytes%28_%29.md)
   Calls the given closure with a pointer to the underlying bytes of the viewed contiguous storage.
 ### Subscripts
-- [subscript(Int) -> UInt8](rawspan/subscript(_:).md)
+- [subscript(Int) -> UInt8](./rawspan/subscript%28_%29.md)
   Accesses the byte at the specified offset in the span.
-- [subscript(unchecked _: Int) -> UInt8](rawspan/subscript(unchecked:).md)
+- [subscript(unchecked _: Int) -> UInt8](./rawspan/subscript%28unchecked%29.md)
   Accesses the byte at the specified offset in the span.
 ### Default Implementations
-- [Iterable Implementations](rawspan/iterable-implementations.md)
+- [Iterable Implementations](./rawspan/iterable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [ContiguousBytes](../foundation/contiguousbytes.md)
-- [Iterable](iterable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [ContiguousBytes](../Foundation/contiguousbytes.md)
+- [Iterable](./iterable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [struct Span](span.md)
+### Safe Memory Access
+- [struct Span](./span.md)
   `Span<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
-- [struct OutputSpan](outputspan.md)
+- [struct OutputSpan](./outputspan.md)
   `OutputSpan` is a reference to a contiguous region of memory that starts with some number of initialized `Element` instances followed by uninitialized memory. It provides operations to access the items it stores, as well as to add new elements and to remove existing ones.
-- [struct OutputRawSpan](outputrawspan.md)
+- [struct OutputRawSpan](./outputrawspan.md)
   `OutputRawSpan` is a reference to a contiguous region of memory which starts with some number of initialized bytes, followed by uninitialized memory. It provides operations to access the bytes it stores, as well as to append and to remove bytes.
-- [struct UTF8Span](utf8span.md)
+- [struct UTF8Span](./utf8span.md)
   A borrowed view into contiguous memory that contains validly-encoded UTF-8 code units.
-- [struct MutableSpan](mutablespan.md)
+- [struct MutableSpan](./mutablespan.md)
   `MutableSpan<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
-- [struct MutableRawSpan](mutablerawspan.md)
+- [struct MutableRawSpan](./mutablerawspan.md)
   `MutableRawSpan` represents a contiguous region of memory which contains initialized bytes.
 
 

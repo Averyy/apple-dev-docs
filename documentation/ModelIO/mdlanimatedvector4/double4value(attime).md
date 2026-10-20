@@ -1,7 +1,8 @@
 # double4Value(atTime:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func double4Value(atTime time: TimeInterval) -> vector_double4
+```
+
+```objc
+- (vector_double4) double4AtTime:(NSTimeInterval) time;
 ```
 
 

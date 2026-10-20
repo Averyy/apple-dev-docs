@@ -1,7 +1,8 @@
 # titlePositionAdjustment
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The additional amount by which to offset the title horizontally and vertically.
 
@@ -18,13 +19,18 @@ The additional amount by which to offset the title horizontally and vertically.
 var titlePositionAdjustment: UIOffset { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) UIOffset titlePositionAdjustment;
+```
+
 #### Discussion
 
 Use this property to specify the distance, in points, by which to offset the title. Positive values move the title down and to the right. Negative values move the title up and to the left.
 
 ## See Also
 
-- [var titleTextAttributes: [NSAttributedString.Key : Any]](uitabbaritemstateappearance/titletextattributes.md)
+### Configuring the item’s title
+- [var titleTextAttributes: [NSAttributedString.Key : Any]](./titletextattributes.md)
   String attributes to apply to the text of the tab bar item’s title.
 
 

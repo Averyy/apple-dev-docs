@@ -1,7 +1,8 @@
 # GameCenterActivityVersion.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,17 +11,17 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object GameCenterActivityVersion.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterActivityVersion.Relationships.Activity](gamecenteractivityversion/relationships-data.dictionary/activity-data.dictionary.md)
-- [object GameCenterActivityVersion.Relationships.DefaultImage](gamecenteractivityversion/relationships-data.dictionary/defaultimage-data.dictionary.md)
-- [object GameCenterActivityVersion.Relationships.Localizations](gamecenteractivityversion/relationships-data.dictionary/localizations-data.dictionary.md)
-- [object GameCenterActivityVersion.Relationships.Releases](gamecenteractivityversion/relationships-data.dictionary/releases-data.dictionary.md)
+- [object GameCenterActivityVersion.Relationships.Activity](./relationships-data.dictionary/activity-data.dictionary.md)
+- [object GameCenterActivityVersion.Relationships.DefaultImage](./relationships-data.dictionary/defaultimage-data.dictionary.md)
+- [object GameCenterActivityVersion.Relationships.Localizations](./relationships-data.dictionary/localizations-data.dictionary.md)
+- [object GameCenterActivityVersion.Relationships.Releases](./relationships-data.dictionary/releases-data.dictionary.md)
 
 ## Properties
 

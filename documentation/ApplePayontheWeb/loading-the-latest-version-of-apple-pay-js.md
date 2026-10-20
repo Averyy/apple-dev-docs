@@ -1,6 +1,7 @@
 # Loading the latest version of the Apple Pay JS SDK
 
-**Framework**: Apple Pay on the Web
+**Framework**: Apple Pay on the Web  
+**Role**: Article
 
 Link to the most recent autoupdating version of the Apple Pay JS SDK or a version of your choice.
 
@@ -8,7 +9,7 @@ Link to the most recent autoupdating version of the Apple Pay JS SDK or a versio
 
 Load the most recent version of the Apple Pay JS SDK available whenever possible. With the latest version, you get the most recent features and bug fixes. Depending on what features your website uses, you may want to load a specific version.
 
-##### Load the Auto Updating Version of the Sdk
+##### Load the auto-updating version of the SDK
 
 The recommended mechanism to load the Apple Pay JS SDK is through backward-compatible, autoupdate URLs, as shown in the following example. This approach downloads the latest version of the SDK with the most recent bug fixes and backward-compatible features. The example shows the auto-updating version of the Apple Pay JS SDK:
 
@@ -21,7 +22,7 @@ The recommended mechanism to load the Apple Pay JS SDK is through backward-compa
 
 ```
 
-##### Get Specific Versions of the Sdk
+##### Get specific versions of the SDK
 
 Specific SDKs following semantic versioning are also available with each release. This means that you, as the developer, have full control over when to upgrade to a new version of the Apple Pay JS SDK. Each version follows the standard semantic versioning pattern MAJOR.MINOR.PATCH, which conveys the following information:
 
@@ -31,9 +32,9 @@ Specific SDKs following semantic versioning are also available with each release
 
 A backward-compatible new release that contains only bug fixes increases the patch version; a backward-compatible new release that contains new features or functionality increases the minor version. A new release that changes the API, so it’s no longer backward-compatible, increases the major version.
 
-##### Use Integrity Checks
+##### Use integrity checks
 
-If you’re using a semantic version of the SDK, adding an integrity check is a best practice when you load libraries from a third-party source. Subresource Integrity (SRI) uses the integrity and cross-origin attributes to ensure that information hosted on third-party servers isn’t tampered with. For more information on SRI, see [`srihash.org`](https://developer.apple.comhttps://www.srihash.org). The following example shows the script for loading Apple Pay JS SDK version `1.3.8`:
+If you’re using a semantic version of the SDK, adding an integrity check is a best practice when you load libraries from a third-party source. Subresource Integrity (SRI) uses the integrity and cross-origin attributes to ensure that information hosted on third-party servers isn’t tampered with. For more information on SRI, see [srihash.org](https://www.srihash.org). The following example shows the script for loading Apple Pay JS SDK version `1.3.8`:
 
 ```javascript
 <head>
@@ -44,7 +45,7 @@ If you’re using a semantic version of the SDK, adding an integrity check is a 
 
 ```
 
-> ❗ **Important**: Only use the integrity attribute for semantic versions of the SDK, not the autoupdate SDK (`1.latest`), because the contents of the autoupdate SDK are subject to change and break the integrity checks. For a record of changes to the SDK, see the [`Apple Pay JS change log`](apple-pay-js-change-log.md).
+> ❗ **Important**: Only use the integrity attribute for semantic versions of the SDK, not the autoupdate SDK (`1.latest`), because the contents of the autoupdate SDK are subject to change and break the integrity checks. For a record of changes to the SDK, see the [Apple Pay JS change log](./apple-pay-js-change-log.md).
 
 ##### Implement a Content Security Policy
 

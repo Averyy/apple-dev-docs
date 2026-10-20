@@ -1,7 +1,8 @@
 # MLSequence
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A machine learning collection type that stores a series of strings or integers.
 
@@ -20,55 +21,60 @@ A machine learning collection type that stores a series of strings or integers.
 class MLSequence
 ```
 
+```objc
+@interface MLSequence : NSObject
+```
+
 #### Overview
 
-A sequence stores a series of integers or strings of any length as the underlying type of an `MLFeatureValue`. Some classifier models — typically natural language models, such as an [`NLTagger`](https://developer.apple.com/documentation/naturallanguage/nltagger) — produce an [`MLSequence`](mlsequence.md) feature value from their output features.
+A sequence stores a series of integers or strings of any length as the underlying type of an `MLFeatureValue`. Some classifier models — typically natural language models, such as an [`NLTagger`](../NaturalLanguage/nltagger.md) — produce an [`MLSequence`](./mlsequence.md) feature value from their output features.
 
 ## Topics
 
 ### Creating a sequence
-- [convenience init(strings: [String])](mlsequence/init(strings:).md)
+- [convenience init(strings: [String])](./mlsequence/init%28strings%29.md)
   Creates a sequence of strings from a string array.
-- [convenience init(int64s: [NSNumber])](mlsequence/init(int64s:).md)
+- [convenience init(int64s: [NSNumber])](./mlsequence/init%28int64s%29.md)
   Creates a sequence of integers from an array of numbers.
-- [convenience init(empty: MLFeatureType)](mlsequence/init(empty:).md)
+- [convenience init(empty: MLFeatureType)](./mlsequence/init%28empty%29.md)
   Creates an empty sequence of strings or integers.
 ### Identifying the sequence’s element type
-- [var type: MLFeatureType](mlsequence/type.md)
+- [var type: MLFeatureType](./mlsequence/type.md)
   The underlying type of the sequence’s elements.
 ### Retrieving the Sequence’s Values
-- [var stringValues: [String]](mlsequence/stringvalues.md)
+- [var stringValues: [String]](./mlsequence/stringvalues.md)
   An array of strings in the sequence.
-- [var int64Values: [NSNumber]](mlsequence/int64values.md)
+- [var int64Values: [NSNumber]](./mlsequence/int64values.md)
   An array of 64-bit integers in the sequence.
 ### Initializers
-- [init?(coder: NSCoder)](mlsequence/init(coder:).md)
-- [convenience init(int64Array: [NSNumber])](mlsequence/init(int64array:).md)
-- [convenience init(stringArray: [String])](mlsequence/init(stringarray:).md)
+- [init?(coder: NSCoder)](./mlsequence/init%28coder%29.md)
+- [convenience init(int64Array: [NSNumber])](./mlsequence/init%28int64array%29.md)
+- [convenience init(stringArray: [String])](./mlsequence/init%28stringarray%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [enum MLFeatureType](mlfeaturetype.md)
+### Supporting types
+- [enum MLFeatureType](./mlfeaturetype.md)
   The possible types for feature values, input features, and output features.
-- [struct MLShapedArray](mlshapedarray.md)
+- [struct MLShapedArray](./mlshapedarray.md)
   A machine learning collection type that stores scalar values in a multidimensional array.
-- [protocol MLShapedArrayProtocol](mlshapedarrayprotocol.md)
+- [protocol MLShapedArrayProtocol](./mlshapedarrayprotocol.md)
   An interface that defines a shaped array type.
-- [class MLMultiArray](mlmultiarray.md)
+- [class MLMultiArray](./mlmultiarray.md)
   A machine learning collection type that stores numeric values in an array with multiple dimensions.
 
 

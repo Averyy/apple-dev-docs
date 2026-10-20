@@ -1,7 +1,8 @@
 # setDefaultFormatterBehavior(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sets the default formatter behavior for new instances of `NSNumberFormatter` .
 
@@ -20,20 +21,25 @@ Sets the default formatter behavior for new instances of `NSNumberFormatter` .
 class func setDefaultFormatterBehavior(_ behavior: NumberFormatter.Behavior)
 ```
 
+```objc
++ (void) setDefaultFormatterBehavior:(NSNumberFormatterBehavior) behavior;
+```
+
 ## Parameters
 
 - `behavior`: An `NSNumberFormatterBehavior` constant that indicates the revision of the class providing the default behavior.
 
 ## See Also
 
-- [var formatterBehavior: NumberFormatter.Behavior](numberformatter/formatterbehavior.md)
+### Configuring Formatter Behavior and Style
+- [var formatterBehavior: NumberFormatter.Behavior](./formatterbehavior.md)
   The formatter behavior of the receiver.
-- [class func defaultFormatterBehavior() -> NumberFormatter.Behavior](numberformatter/defaultformatterbehavior.md)
+- [class func defaultFormatterBehavior() -> NumberFormatter.Behavior](./defaultformatterbehavior%28%29.md)
   Returns an `NSNumberFormatterBehavior` constant that indicates default formatter behavior for new instances of `NSNumberFormatter`.
-- [var numberStyle: NumberFormatter.Style](numberformatter/numberstyle.md)
+- [var numberStyle: NumberFormatter.Style](./numberstyle.md)
   The number style used by the receiver.
-- [var generatesDecimalNumbers: Bool](numberformatter/generatesdecimalnumbers.md)
-  Determines whether the receiver creates instances of [`NSDecimalNumber`](nsdecimalnumber.md) when it converts strings to number objects.
+- [var generatesDecimalNumbers: Bool](./generatesdecimalnumbers.md)
+  Determines whether the receiver creates instances of [`NSDecimalNumber`](../nsdecimalnumber.md) when it converts strings to number objects.
 
 
 ---

@@ -1,7 +1,8 @@
 # ReverbMeshResource
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A high-level representation of a collection of vertices and edges that define a shape used for simulating reverb.
 
@@ -21,7 +22,7 @@ final class ReverbMeshResource
 
 #### Overview
 
-Use a `ReverbMeshResource` to describe the acoustic geometry of your scene. Create one from geometric primitives, custom vertex data, or an existing [`MeshResource`](meshresource.md):
+Use a `ReverbMeshResource` to describe the acoustic geometry of your scene. Create one from geometric primitives, custom vertex data, or an existing [`MeshResource`](./meshresource.md):
 
 ```swift
 // From a geometric primitive:
@@ -38,7 +39,7 @@ let mesh = try ReverbMeshResource(
 let mesh = try ReverbMeshResource(from: myVisualMesh)
 ```
 
-Pair a reverb mesh with [`Audio.Material`](audio/material.md) values and set a [`ReverbComponent`](reverbcomponent.md) on an entity to activate simulated reverb:
+Pair a reverb mesh with [`Audio.Material`](./audio/material.md) values and set a [`ReverbComponent`](./reverbcomponent.md) on an entity to activate simulated reverb:
 
 ```swift
 let reverb: Reverb = .simulated(mesh: room, materials: [.concrete, .carpet])
@@ -50,31 +51,32 @@ entity.components.set(ReverbComponent(reverb: reverb))
 ## Topics
 
 ### Creating standard room shapes
-- [static func shoebox(size: SIMD3<Float>) -> Self](reverbmeshresource/shoebox(size:).md)
+- [static func shoebox(size: SIMD3<Float>) -> Self](./reverbmeshresource/shoebox%28size%29.md)
   Creates a box mesh with the vertices positioned such that the bottom surface is at y=0, with faces oriented inward.
-- [static func box(size: SIMD3<Float>) -> Self](reverbmeshresource/box(size:).md)
+- [static func box(size: SIMD3<Float>) -> Self](./reverbmeshresource/box%28size%29.md)
   Creates a box mesh with vertices positioned such that the origin is at the center, with faces oriented outward.
-- [static func plane(width: Float, depth: Float) -> Self](reverbmeshresource/plane(width:depth:).md)
+- [static func plane(width: Float, depth: Float) -> Self](./reverbmeshresource/plane%28width,depth%29.md)
   Creates a new rectangle reverb mesh with the specified dimensions in the entity’s xz-plane.
 ### Creating a custom mesh
-- [convenience init(positions: [SIMD3<Float>], triangleIndices: [UInt32], materials: [UInt32]) throws](reverbmeshresource/init(positions:triangleindices:materials:).md)
+- [convenience init(positions: [SIMD3<Float>], triangleIndices: [UInt32], materials: [UInt32]) throws](./reverbmeshresource/init%28positions,triangleindices,materials%29.md)
   Creates a reverb mesh resource from a list of positions, triangle indices, and material indices.
 ### Initializers
-- [convenience(from:)](reverbmeshresource/init(from:).md)
+- [convenience(from:)](./reverbmeshresource/init%28from%29.md)
   Creates a reverb mesh resource from a mesh resource.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Resource](resource.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Resource](./resource.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AudioPlaybackGroupController](audioplaybackgroupcontroller.md)
+### Acoustics and group playback
+- [class AudioPlaybackGroupController](./audioplaybackgroupcontroller.md)
   A controller that manages synchronized playback for a group of audio resources.
 
 

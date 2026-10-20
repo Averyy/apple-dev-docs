@@ -1,7 +1,8 @@
 # BehaviorTreeComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Manages which behavior tree is active for the component’s entity.
 
@@ -22,27 +23,28 @@ struct BehaviorTreeComponent
 ## Topics
 
 ### Creating a behavior tree component
-- [init(behaviorTree: BehaviorTreeResource?, availableBehaviorTrees: [String : BehaviorTreeResource])](behaviortreecomponent/init(behaviortree:availablebehaviortrees:).md)
+- [init(behaviorTree: BehaviorTreeResource?, availableBehaviorTrees: [String : BehaviorTreeResource])](./behaviortreecomponent/init%28behaviortree,availablebehaviortrees%29.md)
 ### Accessing behavior trees
-- [var behaviorTree: BehaviorTreeResource?](behaviortreecomponent/behaviortree.md)
+- [var behaviorTree: BehaviorTreeResource?](./behaviortreecomponent/behaviortree.md)
   Accesses the current behavior tree. Note that setting the behavior tree to a tree not in `availableBehaviorTrees` will add a uniquely-named entry for the tree in `availableBehaviorTrees`.
-- [var availableBehaviorTrees: [String : BehaviorTreeResource]](behaviortreecomponent/availablebehaviortrees.md)
+- [var availableBehaviorTrees: [String : BehaviorTreeResource]](./behaviortreecomponent/availablebehaviortrees.md)
   All the behavior trees that this component can access.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 ## See Also
 
-- [class BehaviorTreeResource](behaviortreeresource.md)
+### Behavior trees
+- [class BehaviorTreeResource](./behaviortreeresource.md)
   An immutable representation of a behavior tree.
-- [protocol BehaviorTreeAction](behaviortreeaction.md)
+- [protocol BehaviorTreeAction](./behaviortreeaction.md)
   A protocol that defines an action that a behavior tree action node can use.
-- [protocol BehaviorTreeActionHandler](behaviortreeactionhandler.md)
+- [protocol BehaviorTreeActionHandler](./behaviortreeactionhandler.md)
   Behavior Tree-specific event handlers that allow an `ActionResult` to be returned from the handler.
-- [enum ActionResult](actionresult.md)
+- [enum ActionResult](./actionresult.md)
   Status values that an action can report back to the animation system.
 
 

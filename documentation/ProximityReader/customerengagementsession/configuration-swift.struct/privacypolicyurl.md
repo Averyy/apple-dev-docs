@@ -1,7 +1,8 @@
 # privacyPolicyURL
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL for your privacy policy.
 

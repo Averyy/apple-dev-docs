@@ -1,9 +1,10 @@
 # documentConfiguration
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The configuration of a document in a [`DocumentGroup`](documentgroup.md).
+The configuration of a document in a [`DocumentGroup`](../documentgroup.md).
 
 **Availability**:
 - iOS 17.0+
@@ -20,7 +21,7 @@ var documentConfiguration: DocumentConfiguration? { get }
 
 #### Discussion
 
-The value is `nil` for views that are not enclosed in a [`DocumentGroup`](documentgroup.md).
+The value is `nil` for views that are not enclosed in a [`DocumentGroup`](../documentgroup.md).
 
 For example, if the app shows the document path in the footer of each document, it can get the URL from the environment:
 
@@ -41,9 +42,10 @@ struct ContentView: View {
 
 ## See Also
 
-- [struct DocumentConfiguration](documentconfiguration.md)
-  The configuration of a document in a [`DocumentGroup`](documentgroup.md).
-- [var undoManager: UndoManager?](environmentvalues/undomanager.md)
+### Accessing document configuration
+- [struct DocumentConfiguration](../documentconfiguration.md)
+  The configuration of a document in a [`DocumentGroup`](../documentgroup.md).
+- [var undoManager: UndoManager?](./undomanager.md)
   The undo manager used to register a view’s undo operations.
 
 

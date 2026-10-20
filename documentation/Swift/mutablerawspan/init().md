@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an empty span.
 

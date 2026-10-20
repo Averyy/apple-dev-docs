@@ -1,7 +1,8 @@
 # AttributeScopeCodableConfiguration
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A configuration type for encoding and decoding attributed strings.
 
@@ -23,12 +24,13 @@ struct AttributeScopeCodableConfiguration
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Encoding and Decoding Attributed String Keys](encoding-and-decoding-attributed-string-keys.md)
+### Encoding and Decoding
+- [Encoding and Decoding Attributed String Keys](./encoding-and-decoding-attributed-string-keys.md)
   Protocols adopted by attribute keys to encode or decode data.
 
 

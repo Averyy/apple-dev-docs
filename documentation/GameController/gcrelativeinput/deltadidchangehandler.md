@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The block that the profile calls when the element’s input changes.
@@ -20,6 +21,10 @@ The block that the profile calls when the element’s input changes.
 var deltaDidChangeHandler: ((any GCPhysicalInputElement, any GCRelativeInput, Float) -> Void)? { get set }
 ```
 
+```objc
+@property (atomic, copy, nullable) void (^deltaDidChangeHandler)(id<GCPhysicalInputElement>element, id<GCRelativeInput>input, float delta);
+```
+
 #### Discussion
 
 The block’s parameters are:
@@ -30,11 +35,12 @@ The block’s parameters are:
 
 ## See Also
 
-- [var delta: Float](gcrelativeinput/delta.md)
+### Getting the delta value and timestamp
+- [var delta: Float](./delta.md)
   The most recent amount of change in values that the profile records.
-- [var lastDeltaTimestamp: TimeInterval](gcrelativeinput/lastdeltatimestamp.md)
+- [var lastDeltaTimestamp: TimeInterval](./lastdeltatimestamp.md)
   A timestamp for when the profile reports the delta value.
-- [var lastDeltaLatency: TimeInterval](gcrelativeinput/lastdeltalatency.md)
+- [var lastDeltaLatency: TimeInterval](./lastdeltalatency.md)
   The time in seconds between the current and the previous delta values.
 
 

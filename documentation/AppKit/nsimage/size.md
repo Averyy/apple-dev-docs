@@ -1,17 +1,22 @@
 # size
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the image.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var size: NSSize { get set }
+```
+
+```objc
+@property NSSize size;
 ```
 
 #### Discussion
@@ -22,9 +27,10 @@ Changing the size of an `NSImage` after it has been used effectively resizes the
 
 ## See Also
 
-- [var isTemplate: Bool](nsimage/istemplate.md)
+### Setting Attributes of Images
+- [var isTemplate: Bool](./istemplate.md)
   A Boolean value that determines whether the image represents a template image.
-- [var isTemplate: Bool](nsimage/istemplate.md)
+- [var isTemplate: Bool](./istemplate.md)
   A Boolean value that determines whether the image represents a template image.
 
 

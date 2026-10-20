@@ -1,7 +1,8 @@
 # description(options:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a string description of the filled column.
 
@@ -20,15 +21,18 @@ Generates a string description of the filled column.
 func description(options: FormattingOptions) -> String
 ```
 
+Available when `Base` conforms to `OptionalColumnProtocol`.
+
 ## Parameters
 
 - `options`: The formatting options.
 
 ## See Also
 
-- [var description: String](filledcolumn/description.md)
+### Describing a Column
+- [var description: String](./description.md)
   A mirror that reflects the filled column.
-- [var debugDescription: String](filledcolumn/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the filled column suitable for debugging.
 
 

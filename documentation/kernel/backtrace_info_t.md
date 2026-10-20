@@ -1,14 +1,15 @@
 # backtrace_info_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum backtrace_info_t : uint32_t {
     ...
 } backtrace_info_t;
@@ -17,9 +18,9 @@ typedef enum backtrace_info_t : uint32_t {
 ## Topics
 
 ### Constants
-- [BTI_64_BIT](backtrace_info_t/bti_64_bit.md)
-- [BTI_NONE](backtrace_info_t/bti_none.md)
-- [BTI_TRUNCATED](backtrace_info_t/bti_truncated.md)
+- [BTI_64_BIT](./backtrace_info_t/bti_64_bit.md)
+- [BTI_NONE](./backtrace_info_t/bti_none.md)
+- [BTI_TRUNCATED](./backtrace_info_t/bti_truncated.md)
 
 
 ---

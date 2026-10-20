@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Error.pairingFailed
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error occurred while pairing with the peer.
 

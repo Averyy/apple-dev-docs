@@ -1,14 +1,15 @@
 # runtimeInsights(forDeviceID:using:atVenue:)
 
 **Framework**: EnergyKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns records that provide insight into runtime of a given device.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,21 +19,22 @@ final func runtimeInsights(forDeviceID deviceID: String, using query: Electricit
 
 #### Return Value
 
-An `AsyncStream` of [`ElectricityInsightRecord`](electricityinsightrecord.md)s containing `Duration` values for a given device.
+An `AsyncStream` of [`ElectricityInsightRecord`](../electricityinsightrecord.md)s containing `Duration` values for a given device.
 
 #### Discussion
 
-The system throws [`EnergyKitError.venueUnavailable`](energykiterror/venueunavailable.md) if a person provides an invalid [`EnergyVenue`](energyvenue.md) identifier. If another request is in progress, the system throws[`EnergyKitError.inProgress`](energykiterror/inprogress.md).
+The system throws [`EnergyKitError.venueUnavailable`](../energykiterror/venueunavailable.md) if a person provides an invalid [`EnergyVenue`](../energyvenue.md) identifier. If another request is in progress, the system throws[`EnergyKitError.inProgress`](../energykiterror/inprogress.md).
 
 ## Parameters
 
-- `deviceID`: The device identifier to return [`ElectricityInsightRecord`](electricityinsightrecord.md)s for.
-- `query`: The [`ElectricityInsightQuery`](electricityinsightquery.md) to specify the results.
-- `energyVenueID`: The [`EnergyVenue`](energyvenue.md) identifier to return [`ElectricityInsightRecord`](electricityinsightrecord.md)s for.
+- `deviceID`: The device identifier to return [`ElectricityInsightRecord`](../electricityinsightrecord.md)s for.
+- `query`: The [`ElectricityInsightQuery`](../electricityinsightquery.md) to specify the results.
+- `energyVenueID`: The [`EnergyVenue`](../energyvenue.md) identifier to return [`ElectricityInsightRecord`](../electricityinsightrecord.md)s for.
 
 ## See Also
 
-- [func energyInsights(forDeviceID: String, using: ElectricityInsightQuery, atVenue: UUID) async throws -> AsyncStream<ElectricityInsightRecord<Measurement<UnitEnergy>>>](electricityinsightservice/energyinsights(fordeviceid:using:atvenue:).md)
+### Getting device insights
+- [func energyInsights(forDeviceID: String, using: ElectricityInsightQuery, atVenue: UUID) async throws -> AsyncStream<ElectricityInsightRecord<Measurement<UnitEnergy>>>](./energyinsights%28fordeviceid,using,atvenue%29.md)
   Returns data that provides insight into electrical usage for a given device.
 
 

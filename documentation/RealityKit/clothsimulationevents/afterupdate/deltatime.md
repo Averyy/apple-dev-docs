@@ -1,7 +1,8 @@
 # deltaTime
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of the simulation update, in seconds, that this event represents.
 

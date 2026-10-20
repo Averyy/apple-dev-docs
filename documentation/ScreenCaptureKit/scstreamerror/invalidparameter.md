@@ -1,7 +1,8 @@
 # invalidParameter
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error message that indicates an operation failed because of an invalid parameter value.
 

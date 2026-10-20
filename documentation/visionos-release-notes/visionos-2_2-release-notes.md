@@ -1,18 +1,21 @@
 # visionOS 2.2 Release Notes
 
-**Framework**: visionOS Release Notes
+**Framework**: visionOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The visionOS 2.2 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 2.2. The SDK comes bundled with Xcode 16.2. For information on the compatibility requirements for Xcode 16.2, see [`Xcode 16.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-16_2-release-notes).
+The visionOS 2.2 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 2.2. The SDK comes bundled with Xcode 16.2. For information on the compatibility requirements for Xcode 16.2, see [Xcode 16.2 Release Notes](../Xcode-Release-Notes/xcode-16_2-release-notes.md).
 
 ##### Compatible Apps
 
 ###### Known Issues
 
-- In the visionOS Simulator, iOS apps running against the “Apple Vision Pro (Designed for iPad)” target will crash upon launch if they link `ImagePlayground.framework`.  (141228566) (FB16079366) **Workaround:** Apps behave correctly when running on-device. Test directly against Apple Vision Pro hardware.
+- In the visionOS Simulator, iOS apps running against the “Apple Vision Pro (Designed for iPad)” target will crash upon launch if they link `ImagePlayground.framework`.  (141228566) (FB16079366)
+
+  **Workaround:** Apps behave correctly when running on-device. Test directly against Apple Vision Pro hardware.
 
 ##### Mac Virtual Display
 
@@ -27,14 +30,14 @@ The visionOS 2.2 SDK provides support for developing apps for Apple Vision Pro d
 
 - Fixed: Siri does not work on the simulator.  (139096339)
 
-##### Swiftui
+##### SwiftUI
 
 ###### Resolved Issues
 
 - Fixed: Compiling in the Swift 6 language mode might cause an `@Entry` error due to “static property `defaultValue` is not concurrency-safe because non-‘Sendable’ type”.  (133885814)
-- Fixed: Views won’t accept dropped directories if [`UTType.directory`](https://developer.apple.comhttps://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/directory) or [`UTType.fileURL`](https://developer.apple.comhttps://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/fileurl) are not in the list of accepted content types for drop.  (138158126)
+- Fixed: Views won’t accept dropped directories if [UTType.directory](../UniformTypeIdentifiers/uttype-swift.struct/directory.md) or [UTType.fileURL](../UniformTypeIdentifiers/uttype-swift.struct/fileurl.md) are not in the list of accepted content types for drop.  (138158126)
 
-##### Tabletopkit
+##### TabletopKit
 
 ###### New Features
 
@@ -49,21 +52,24 @@ The visionOS 2.2 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- Some Unity applications might render incorrectly. The content might swim more than expected and appear stretched.  (139384386) **Workaround:** Rebuild with Unity release 1.2.3 or later.
+- Some Unity applications might render incorrectly. The content might swim more than expected and appear stretched.  (139384386)
+
+  **Workaround:** Rebuild with Unity release 1.2.3 or later.
 
 ## See Also
 
-- [visionOS 2.6 Release Notes](visionos-2_6-release-notes.md)
+### visionOS 2
+- [visionOS 2.6 Release Notes](./visionos-2_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 2.5 Release Notes](visionos-2_5-release-notes.md)
+- [visionOS 2.5 Release Notes](./visionos-2_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 2.4 Release Notes](visionos-2_4-release-notes.md)
+- [visionOS 2.4 Release Notes](./visionos-2_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 2.3 Release Notes](visionos-2_3-release-notes.md)
+- [visionOS 2.3 Release Notes](./visionos-2_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 2.1 Release Notes](visionos-2_1-release-notes.md)
+- [visionOS 2.1 Release Notes](./visionos-2_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 2 Release Notes](visionos-2-release-notes.md)
+- [visionOS 2 Release Notes](./visionos-2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

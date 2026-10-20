@@ -1,11 +1,12 @@
 # FilterableMusicItem Implementations
 
-**Framework**: MusicKit
+**Framework**: MusicKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [RadioShow.FilterType](radioshow/filtertype.md)
+- [RadioShow.FilterType](./filtertype.md)
   The associated type that contains the radio show properties your app uses as a filter for a catalog resource request.
 
 

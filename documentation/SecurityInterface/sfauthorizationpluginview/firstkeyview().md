@@ -1,7 +1,8 @@
 # firstKeyView()
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first view in the keyboard loop of the view.
 
@@ -14,15 +15,20 @@ Returns the first view in the keyboard loop of the view.
 func firstKeyView() -> NSView!
 ```
 
+```objc
+- (NSView *) firstKeyView;
+```
+
 #### Discussion
 
-The default return value of this method is `nil`. When the authorization plug-in calls this method, your subclass should return the first view in the keyboard loop of your custom [`NSView`](https://developer.apple.com/documentation/appkit/nsview) object.
+The default return value of this method is `nil`. When the authorization plug-in calls this method, your subclass should return the first view in the keyboard loop of your custom [`NSView`](../../AppKit/nsview.md) object.
 
 ## See Also
 
-- [func firstResponder() -> NSResponder!](sfauthorizationpluginview/firstresponder.md)
+### Setting Up the Keyboard Loop
+- [func firstResponder() -> NSResponder!](./firstresponder%28%29.md)
   Returns the view that should get focus for keyboard events.
-- [func lastKeyView() -> NSView!](sfauthorizationpluginview/lastkeyview.md)
+- [func lastKeyView() -> NSView!](./lastkeyview%28%29.md)
   Returns the last view in the keyboard loop of the view.
 
 

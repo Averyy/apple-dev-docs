@@ -1,7 +1,8 @@
 # phoneNumber
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The customer’s phone number.
 
@@ -18,13 +19,14 @@ let phoneNumber: CNPhoneNumber?
 
 ## See Also
 
-- [let emailAddress: String?](customerengagement/signup/emailaddress.md)
+### Getting sign-up details
+- [let emailAddress: String?](./emailaddress.md)
   The customer’s email address
-- [let emailOptInSelection: Bool](customerengagement/signup/emailoptinselection.md)
+- [let emailOptInSelection: Bool](./emailoptinselection.md)
   A Boolean value that indicates if the customer opted-in to email marketing.
-- [let name: PersonNameComponents?](customerengagement/signup/name.md)
+- [let name: PersonNameComponents?](./name.md)
   The customer’s full name.
-- [let smsOptInSelection: Bool](customerengagement/signup/smsoptinselection.md)
+- [let smsOptInSelection: Bool](./smsoptinselection.md)
   A Boolean value that indicates if the customer opted-in to SMS marketing.
 
 

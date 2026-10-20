@@ -1,7 +1,8 @@
 # NSFileCoordinator.ReadingOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options to use when reading the contents or attributes of a file or directory.
 
@@ -20,34 +21,39 @@ Options to use when reading the contents or attributes of a file or directory.
 struct ReadingOptions
 ```
 
+```c
+enum NSFileCoordinatorReadingOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var withoutChanges: NSFileCoordinator.ReadingOptions](nsfilecoordinator/readingoptions/withoutchanges.md)
-- [static var resolvesSymbolicLink: NSFileCoordinator.ReadingOptions](nsfilecoordinator/readingoptions/resolvessymboliclink.md)
-- [static var immediatelyAvailableMetadataOnly: NSFileCoordinator.ReadingOptions](nsfilecoordinator/readingoptions/immediatelyavailablemetadataonly.md)
+- [static var withoutChanges: NSFileCoordinator.ReadingOptions](./readingoptions/withoutchanges.md)
+- [static var resolvesSymbolicLink: NSFileCoordinator.ReadingOptions](./readingoptions/resolvessymboliclink.md)
+- [static var immediatelyAvailableMetadataOnly: NSFileCoordinator.ReadingOptions](./readingoptions/immediatelyavailablemetadataonly.md)
   Specify this constant if you want to read an item’s metadata without triggering a download.
-- [static var forUploading: NSFileCoordinator.ReadingOptions](nsfilecoordinator/readingoptions/foruploading.md)
+- [static var forUploading: NSFileCoordinator.ReadingOptions](./readingoptions/foruploading.md)
   Specify this content when reading an item for the purpose of uploading its contents.
 ### Initializers
-- [init(rawValue: UInt)](nsfilecoordinator/readingoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./readingoptions/init%28rawvalue%29.md)
   Instantiates a reading option using an unsigned integer.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [NSFileCoordinator.WritingOptions](nsfilecoordinator/writingoptions.md)
+### Constants
+- [NSFileCoordinator.WritingOptions](./writingoptions.md)
   Options to use when changing the contents or attributes of a file or directory.
 
 

@@ -1,7 +1,8 @@
 # releaseDate
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The release date of the episode.
 

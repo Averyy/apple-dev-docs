@@ -1,7 +1,8 @@
 # kINQUIRY_PageB2_PageCode
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kINQUIRY_PageB2_PageCode = 0xB2
 ```
 

@@ -1,7 +1,8 @@
 # width
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the eraser.
 

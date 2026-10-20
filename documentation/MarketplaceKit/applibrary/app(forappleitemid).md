@@ -1,7 +1,8 @@
 # app(forAppleItemID:)
 
 **Framework**: MarketplaceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides the app for the given app identifier.
 
@@ -18,7 +19,8 @@ final func app(forAppleItemID appleItemID: AppleItemID) -> AppLibrary.App
 
 ## See Also
 
-- [var installedApps: Set<AppLibrary.App>](applibrary/installedapps.md)
+### Accessing installed apps
+- [var installedApps: Set<AppLibrary.App>](./installedapps.md)
   The set of apps installed by the alternative app marketplace.
 
 

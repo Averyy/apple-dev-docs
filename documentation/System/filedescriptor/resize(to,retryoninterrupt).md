@@ -1,7 +1,8 @@
 # resize(to:retryOnInterrupt:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Truncates or extends the file referenced by this file descriptor.
 
@@ -35,7 +36,7 @@ The corresponding C function is `ftruncate`.
 ## Parameters
 
 - `newSize`: The length in bytes to resize the file to.
-- `retryOnInterrupt`: Whether to retry the write operation if it throws [`interrupted`](errno/interrupted.md). The default is `true`. Pass `false` to try only once and throw an error upon interruption.
+- `retryOnInterrupt`: Whether to retry the write operation if it throws [`interrupted`](../errno/interrupted.md). The default is `true`. Pass `false` to try only once and throw an error upon interruption.
 
 
 ---

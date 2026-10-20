@@ -1,7 +1,8 @@
 # gatedGetCommand
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,15 @@
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+virtual kern_return_t gatedGetCommand(IOCommand **command, bool blockForCommand);
+```
+
+*macOS*
+
+```cpp
 virtual IOReturn gatedGetCommand(IOCommand **command, bool blockForCommand);
 ```
 

@@ -1,7 +1,8 @@
 # charge
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The electrical charge of the physics body.
 
@@ -20,13 +21,18 @@ The electrical charge of the physics body.
 var charge: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat charge;
+```
+
 #### Discussion
 
-The electrical charge is used by electromagnetic fields to calculate electromagnetic force effects on the physics body. See [`SKFieldNode`](skfieldnode.md).
+The electrical charge is used by electromagnetic fields to calculate electromagnetic force effects on the physics body. See [`SKFieldNode`](../skfieldnode.md).
 
 ## See Also
 
-- [var fieldBitMask: UInt32](skphysicsbody/fieldbitmask.md)
+### Interacting with Physics Fields
+- [var fieldBitMask: UInt32](./fieldbitmask.md)
   A mask that defines which categories of physics fields can exert forces on this physics body.
 
 

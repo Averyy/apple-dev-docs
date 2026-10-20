@@ -1,7 +1,8 @@
 # xpc_endpoint_create(_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new endpoint from a connection that is suitable for embedding into messages.
 
@@ -10,7 +11,7 @@ Creates a new endpoint from a connection that is suitable for embedding into mes
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Creates a new endpoint from a connection that is suitable for embedding into mes
 
 ```swift
 func xpc_endpoint_create(_ connection: xpc_connection_t) -> xpc_endpoint_t
+```
+
+```c
+extern xpc_endpoint_txpc_endpoint_create(xpc_connection_t connection);
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ A new endpoint object.
 
 ## See Also
 
-- [typealias xpc_endpoint_t](xpc_endpoint_t.md)
+### Endpoints
+- [typealias xpc_endpoint_t](./xpc_endpoint_t.md)
   A type that represents a connection in serialized form.
 
 

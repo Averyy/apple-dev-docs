@@ -1,9 +1,10 @@
 # ikeSecurityAssociationParameters
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-An [`NEVPNIKEv2SecurityAssociationParameters`](nevpnikev2securityassociationparameters.md) object containing the parameters for the initial IKE security association to be negotiated with the IKEv2 server.
+An [`NEVPNIKEv2SecurityAssociationParameters`](../nevpnikev2securityassociationparameters.md) object containing the parameters for the initial IKE security association to be negotiated with the IKEv2 server.
 
 **Availability**:
 - iOS 8.0+
@@ -19,11 +20,16 @@ An [`NEVPNIKEv2SecurityAssociationParameters`](nevpnikev2securityassociationpara
 var ikeSecurityAssociationParameters: NEVPNIKEv2SecurityAssociationParameters { get }
 ```
 
+```objc
+@property (readonly) NEVPNIKEv2SecurityAssociationParameters * IKESecurityAssociationParameters;
+```
+
 ## See Also
 
-- [var childSecurityAssociationParameters: NEVPNIKEv2SecurityAssociationParameters](nevpnprotocolikev2/childsecurityassociationparameters.md)
-  An [`NEVPNIKEv2SecurityAssociationParameters`](nevpnikev2securityassociationparameters.md) object containing the parameters for the child IPSec security associations to be negotiated for each IKEv2 policy.
-- [class NEVPNIKEv2SecurityAssociationParameters](nevpnikev2securityassociationparameters.md)
+### Accessing IKEv2 Security Association parameters
+- [var childSecurityAssociationParameters: NEVPNIKEv2SecurityAssociationParameters](./childsecurityassociationparameters.md)
+  An [`NEVPNIKEv2SecurityAssociationParameters`](../nevpnikev2securityassociationparameters.md) object containing the parameters for the child IPSec security associations to be negotiated for each IKEv2 policy.
+- [class NEVPNIKEv2SecurityAssociationParameters](../nevpnikev2securityassociationparameters.md)
   Parameters for an IKEv2 Security Association.
 
 

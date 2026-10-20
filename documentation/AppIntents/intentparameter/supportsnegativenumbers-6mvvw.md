@@ -1,7 +1,8 @@
 # supportsNegativeNumbers
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,12 +19,15 @@
 final var supportsNegativeNumbers: Bool? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitIlluminance>`.
+
 ## See Also
 
-- [var unit: IntentParameter<Value>.Illuminance?](intentparameter/unit-5d6kq.md)
-- [IntentParameter.Illuminance](intentparameter/illuminance.md)
-- [var defaultUnit: IntentParameter<Value>.Illuminance?](intentparameter/defaultunit-2j2ui.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-po5z.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.Illuminance?](./unit-5d6kq.md)
+- [IntentParameter.Illuminance](./illuminance.md)
+- [var defaultUnit: IntentParameter<Value>.Illuminance?](./defaultunit-2j2ui.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-po5z.md)
 
 
 ---

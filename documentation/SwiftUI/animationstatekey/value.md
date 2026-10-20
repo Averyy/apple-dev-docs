@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The associated type representing the type of the animation state key’s value.
@@ -23,7 +24,8 @@ associatedtype Value
 
 ## See Also
 
-- [static var defaultValue: Self.Value](animationstatekey/defaultvalue.md)
+### Setting the default value
+- [static var defaultValue: Self.Value](./defaultvalue.md)
   The default value for the animation state key.
 
 

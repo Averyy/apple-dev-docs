@@ -1,7 +1,8 @@
 # minimumPressDuration
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum time (in seconds) that the user must hold the mouse button in the view for a valid gesture.
 
@@ -14,17 +15,22 @@ The minimum time (in seconds) that the user must hold the mouse button in the vi
 var minimumPressDuration: TimeInterval { get set }
 ```
 
+```objc
+@property NSTimeInterval minimumPressDuration;
+```
+
 #### Discussion
 
 The default value of this property is the same as the current double-click interval.
 
 ## See Also
 
-- [var allowableMovement: CGFloat](nspressgesturerecognizer/allowablemovement.md)
+### Configuring the gesture recognizer
+- [var allowableMovement: CGFloat](./allowablemovement.md)
   The maximum movement of the mouse in the view before the gesture fails.
-- [var buttonMask: Int](nspressgesturerecognizer/buttonmask.md)
+- [var buttonMask: Int](./buttonmask.md)
   A bit mask of the buttons required to recognize this press.
-- [var numberOfTouchesRequired: Int](nspressgesturerecognizer/numberoftouchesrequired.md)
+- [var numberOfTouchesRequired: Int](./numberoftouchesrequired.md)
   The number of necessary touches on a Touch Bar for the gesture recognizer to match.
 
 

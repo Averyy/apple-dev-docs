@@ -1,7 +1,8 @@
 # streamingEarDidChangeNotification
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that the system posts when there’s a change to which ears enable streaming.
 
@@ -18,15 +19,20 @@ A notification that the system posts when there’s a change to which ears enabl
 static let streamingEarDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AXMFiHearingDeviceStreamingEarDidChangeNotification;
+```
+
 #### Discussion
 
-The system posts this notification when the value of [`streamingEar()`](axmfihearingdevice/streamingear().md) changes.
+The system posts this notification when the value of [`streamingEar()`](./streamingear%28%29.md) changes.
 
 ## See Also
 
-- [AXMFiHearingDevice.Ear](axmfihearingdevice/ear.md)
+### Streaming status
+- [AXMFiHearingDevice.Ear](./ear.md)
   Constants that represent a hearing device ear.
-- [static func streamingEar() -> AXMFiHearingDevice.Ear](axmfihearingdevice/streamingear.md)
+- [static func streamingEar() -> AXMFiHearingDevice.Ear](./streamingear%28%29.md)
   Returns which ears enable streaming.
 
 

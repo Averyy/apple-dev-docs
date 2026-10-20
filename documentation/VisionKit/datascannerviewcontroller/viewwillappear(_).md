@@ -1,7 +1,8 @@
 # viewWillAppear(_:)
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs some action before the view appears.
 
@@ -23,13 +24,14 @@ override dynamic func viewWillAppear(_ animated: Bool)
 
 ## See Also
 
-- [func loadView()](datascannerviewcontroller/loadview.md)
+### Responding to view controller events
+- [func loadView()](./loadview%28%29.md)
   Creates the view that the controller manages.
-- [func viewDidLoad()](datascannerviewcontroller/viewdidload.md)
+- [func viewDidLoad()](./viewdidload%28%29.md)
   Performs some action after the system loads the view into memory.
-- [func viewDidDisappear(Bool)](datascannerviewcontroller/viewdiddisappear(_:).md)
+- [func viewDidDisappear(Bool)](./viewdiddisappear%28_%29.md)
   Performs some action after the view disappears.
-- [func removeFromParent()](datascannerviewcontroller/removefromparent.md)
+- [func removeFromParent()](./removefromparent%28%29.md)
   Removes the view controller from its parent.
 
 

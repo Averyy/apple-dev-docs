@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 enum : int {
     ...
 };
@@ -17,8 +18,8 @@ enum : int {
 ## Topics
 
 ### Constants
-- [kFFTDirection_Forward](1645049-anonymous/kfftdirection_forward.md)
-- [kFFTDirection_Inverse](1645049-anonymous/kfftdirection_inverse.md)
+- [kFFTDirection_Forward](./api-1645049-anonymous/kfftdirection_forward.md)
+- [kFFTDirection_Inverse](./api-1645049-anonymous/kfftdirection_inverse.md)
   Specifies an inverse transform.
 
 

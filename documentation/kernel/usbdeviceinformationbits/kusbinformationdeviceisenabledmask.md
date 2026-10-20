@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsEnabledMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The mask indicating that the USB device is in an enabled state.
 
@@ -10,7 +11,7 @@ The mask indicating that the USB device is in an enabled state.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsEnabledMask = (1 << kUSBInformationDeviceIsEnabledBit)
 ```
 

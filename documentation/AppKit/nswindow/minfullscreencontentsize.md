@@ -1,7 +1,8 @@
 # minFullScreenContentSize
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A minimum size that is used to determine if a window can fit when it is in full screen in a tile.
 
@@ -14,27 +15,32 @@ A minimum size that is used to determine if a window can fit when it is in full 
 var minFullScreenContentSize: NSSize { get set }
 ```
 
+```objc
+@property NSSize minFullScreenContentSize;
+```
+
 #### Discussion
 
-By default, the system uses Auto Layout to determine the minimum size, so applications that don’t change window content upon entering full screen should not need to set the value of [`minFullScreenContentSize`](nswindow/minfullscreencontentsize.md). (If Auto Layout is not used, the system queries [`contentMinSize`](nswindow/contentminsize.md) and [`contentMaxSize`](nswindow/contentmaxsize.md).) If an application does significant rework of the user interface in full screen, then it may be necessary to set the value of [`minFullScreenContentSize`](nswindow/minfullscreencontentsize.md). You can use this property even if the window does not support full screen, but can be implicitly opted into supporting a full screen tile based on resizing behavior and window properties (for more information, see the [`collectionBehavior`](nswindow/collectionbehavior-swift.property.md) property).
+By default, the system uses Auto Layout to determine the minimum size, so applications that don’t change window content upon entering full screen should not need to set the value of [`minFullScreenContentSize`](./minfullscreencontentsize.md). (If Auto Layout is not used, the system queries [`contentMinSize`](./contentminsize.md) and [`contentMaxSize`](./contentmaxsize.md).) If an application does significant rework of the user interface in full screen, then it may be necessary to set the value of [`minFullScreenContentSize`](./minfullscreencontentsize.md). You can use this property even if the window does not support full screen, but can be implicitly opted into supporting a full screen tile based on resizing behavior and window properties (for more information, see the [`collectionBehavior`](./collectionbehavior-swift.property.md) property).
 
 ## See Also
 
-- [var contentAspectRatio: NSSize](nswindow/contentaspectratio.md)
+### Sizing Content
+- [var contentAspectRatio: NSSize](./contentaspectratio.md)
   The window’s content aspect ratio.
-- [var contentMinSize: NSSize](nswindow/contentminsize.md)
+- [var contentMinSize: NSSize](./contentminsize.md)
   The minimum size of the window’s content view in the window’s base coordinate system.
-- [func setContentSize(NSSize)](nswindow/setcontentsize(_:).md)
+- [func setContentSize(NSSize)](./setcontentsize%28_%29.md)
   Sets the size of the window’s content view to a given size, which is expressed in the window’s base coordinate system.
-- [var contentMaxSize: NSSize](nswindow/contentmaxsize.md)
+- [var contentMaxSize: NSSize](./contentmaxsize.md)
   The maximum size of the window’s content view in the window’s base coordinate system.
-- [var contentResizeIncrements: NSSize](nswindow/contentresizeincrements.md)
+- [var contentResizeIncrements: NSSize](./contentresizeincrements.md)
   The window’s content-view resizing increments.
-- [var contentLayoutGuide: Any?](nswindow/contentlayoutguide.md)
-  A value used by Auto Layout constraints to automatically bind to the value of [`contentLayoutRect`](nswindow/contentlayoutrect.md).
-- [var contentLayoutRect: NSRect](nswindow/contentlayoutrect.md)
+- [var contentLayoutGuide: Any?](./contentlayoutguide.md)
+  A value used by Auto Layout constraints to automatically bind to the value of [`contentLayoutRect`](./contentlayoutrect.md).
+- [var contentLayoutRect: NSRect](./contentlayoutrect.md)
   The area inside the window that is for non-obscured content, in window coordinates.
-- [var maxFullScreenContentSize: NSSize](nswindow/maxfullscreencontentsize.md)
+- [var maxFullScreenContentSize: NSSize](./maxfullscreencontentsize.md)
   A maximum size that is used to determine if a window can fit when it is in full screen in a tile.
 
 

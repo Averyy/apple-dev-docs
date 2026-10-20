@@ -1,7 +1,8 @@
 # XCTAssertThrowsError(_:_:file:line:_:)
 
 **Framework**: XCTest  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Asserts that an expression throws an error.
 

@@ -1,7 +1,8 @@
 # customMirror
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mirror that reflects the dictionary.
 
@@ -20,13 +21,16 @@ A mirror that reflects the dictionary.
 var customMirror: Mirror { get }
 ```
 
+Available when `Key` conforms to `Hashable`.
+
 ## See Also
 
-- [var description: String](dictionary/description.md)
+### Describing a Dictionary
+- [var description: String](./description.md)
   A string that represents the contents of the dictionary.
-- [var debugDescription: String](dictionary/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A string that represents the contents of the dictionary, suitable for debugging.
-- [func hash(into: inout Hasher)](dictionary/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

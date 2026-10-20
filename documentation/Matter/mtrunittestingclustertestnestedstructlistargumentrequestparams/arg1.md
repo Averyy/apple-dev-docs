@@ -1,7 +1,8 @@
 # arg1
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var arg1: MTRUnitTestingClusterNestedStructList { get set }
+```
+
+```objc
+@property (nonatomic, copy) MTRUnitTestingClusterNestedStructList * arg1;
 ```
 
 

@@ -1,7 +1,8 @@
 # toString
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string representation of the notification.
 
@@ -10,7 +11,7 @@ Returns a string representation of the notification.
 
 ## Declaration
 
-```swift
+```
 String toString();
 ```
 

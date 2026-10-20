@@ -1,7 +1,8 @@
 # properties
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cookie’s properties.
 
@@ -20,15 +21,20 @@ The cookie’s properties.
 var properties: [HTTPCookiePropertyKey : Any]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSDictionary<NSString *,id> * properties;
+```
+
 #### Discussion
 
-This dictionary can be used with [`init(properties:)`](httpcookie/init(properties:).md) (or [`cookieWithProperties:`](nshttpcookie/cookiewithproperties:.md) in Objective-C) to create an equivalent [`HTTPCookie`](httpcookie.md) object.
+This dictionary can be used with [`init(properties:)`](./init%28properties%29.md) (or [`cookieWithProperties:`](../nshttpcookie/cookiewithproperties_.md) in Objective-C) to create an equivalent [`HTTPCookie`](../httpcookie.md) object.
 
-See [`init(properties:)`](httpcookie/init(properties:).md) for more information on the constraints imposed on the `properties` dictionary.
+See [`init(properties:)`](./init%28properties%29.md) for more information on the constraints imposed on the `properties` dictionary.
 
 ## See Also
 
-- [struct HTTPCookiePropertyKey](httpcookiepropertykey.md)
+### Accessing cookie properties as key-value pairs
+- [struct HTTPCookiePropertyKey](../httpcookiepropertykey.md)
   Constants that define the supported keys in a cookie attributes dictionary.
 
 

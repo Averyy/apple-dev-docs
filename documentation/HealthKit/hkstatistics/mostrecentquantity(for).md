@@ -1,7 +1,8 @@
 # mostRecentQuantity(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the most recent value from all the samples that match the query and were created by the specified source.
 
@@ -19,15 +20,21 @@ Returns the most recent value from all the samples that match the query and were
 func mostRecentQuantity(for source: HKSource) -> HKQuantity?
 ```
 
+```objc
+- (HKQuantity *) mostRecentQuantityForSource:(HKSource *) source;
+```
+
 ## See Also
 
-- [static var discreteMostRecent: HKStatisticsOptions](hkstatisticsoptions/discretemostrecent.md)
+### Related Documentation
+- [static var discreteMostRecent: HKStatisticsOptions](../hkstatisticsoptions/discretemostrecent.md)
   An option indicating that the system returns the most recent quantity from the matching samples.
-- [func mostRecentQuantity() -> HKQuantity?](hkstatistics/mostrecentquantity.md)
+### Getting the Most Recent Quantity
+- [func mostRecentQuantity() -> HKQuantity?](./mostrecentquantity%28%29.md)
   Returns the most recent value from all the samples that match the query.
-- [func mostRecentQuantityDateInterval() -> DateInterval?](hkstatistics/mostrecentquantitydateinterval.md)
+- [func mostRecentQuantityDateInterval() -> DateInterval?](./mostrecentquantitydateinterval%28%29.md)
   Returns the date interval of the most recent sample that matches the query.
-- [func mostRecentQuantityDateInterval(for: HKSource) -> DateInterval?](hkstatistics/mostrecentquantitydateinterval(for:).md)
+- [func mostRecentQuantityDateInterval(for: HKSource) -> DateInterval?](./mostrecentquantitydateinterval%28for%29.md)
   Returns the date interval of the most recent sample that matches the query and was created by the specified source.
 
 

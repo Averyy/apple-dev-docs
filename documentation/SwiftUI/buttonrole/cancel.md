@@ -1,7 +1,8 @@
 # cancel
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A role that indicates a button that cancels an operation.
 
@@ -26,7 +27,8 @@ Use this role for a button that cancels the current operation. Unlike confirmati
 
 ## See Also
 
-- [static let destructive: ButtonRole](buttonrole/destructive.md)
+### Getting button roles
+- [static let destructive: ButtonRole](./destructive.md)
   A role that indicates a destructive button.
 
 

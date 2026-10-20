@@ -1,7 +1,8 @@
 # expectedResponseLength
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expected response data length (Le) in bytes.
 
@@ -16,9 +17,13 @@ The expected response data length (Le) in bytes.
 var expectedResponseLength: Int { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSInteger expectedResponseLength;
+```
+
 #### Discussion
 
-Setting [`expectedResponseLength`](nfciso7816apdu/expectedresponselength.md) with a value less than 0 means the Le field is absent.
+Setting [`expectedResponseLength`](./expectedresponselength.md) with a value less than 0 means the Le field is absent.
 
 
 ---

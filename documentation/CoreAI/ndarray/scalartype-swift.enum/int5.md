@@ -1,7 +1,8 @@
 # NDArray.ScalarType.int5
 
 **Framework**: Core AI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 5-bit signed integer.
 
@@ -24,15 +25,16 @@ Five-bit signed integers can represent values in the range [-16, 15]. This type 
 
 ## See Also
 
-- [NDArray.ScalarType.int2](ndarray/scalartype-swift.enum/int2.md)
+### Defining sub-byte signed integer types
+- [NDArray.ScalarType.int2](./int2.md)
   A 2-bit signed integer.
-- [NDArray.ScalarType.int3](ndarray/scalartype-swift.enum/int3.md)
+- [NDArray.ScalarType.int3](./int3.md)
   A 3-bit signed integer.
-- [NDArray.ScalarType.int4](ndarray/scalartype-swift.enum/int4.md)
+- [NDArray.ScalarType.int4](./int4.md)
   A 4-bit signed integer.
-- [NDArray.ScalarType.int6](ndarray/scalartype-swift.enum/int6.md)
+- [NDArray.ScalarType.int6](./int6.md)
   A 6-bit signed integer.
-- [NDArray.ScalarType.int7](ndarray/scalartype-swift.enum/int7.md)
+- [NDArray.ScalarType.int7](./int7.md)
   A 7-bit signed integer.
 
 

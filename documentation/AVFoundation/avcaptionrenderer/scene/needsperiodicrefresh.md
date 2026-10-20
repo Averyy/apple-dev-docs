@@ -1,7 +1,8 @@
 # needsPeriodicRefresh
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the scene requires redrawing while your app progresses through the content.
 
@@ -17,6 +18,10 @@ A Boolean value that indicates whether the scene requires redrawing while your a
 var needsPeriodicRefresh: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL needsPeriodicRefresh;
+```
+
 #### Discussion
 
 If your app isn’t progressing through the content, a single render at the current time is enough.
@@ -25,9 +30,10 @@ Choose a refresh rate appropriate for your app. For example, an app may choose r
 
 ## See Also
 
-- [var timeRange: CMTimeRange](avcaptionrenderer/scene/timerange.md)
+### Inspecting the scene
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range during which the system doesn’t modify the scene.
-- [var hasActiveCaptions: Bool](avcaptionrenderer/scene/hasactivecaptions.md)
+- [var hasActiveCaptions: Bool](./hasactivecaptions.md)
   A Boolean value that indicates whether the scene contains one or more active captions.
 
 

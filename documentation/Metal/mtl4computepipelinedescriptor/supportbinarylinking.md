@@ -1,7 +1,8 @@
 # supportBinaryLinking
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A boolean value indicating whether the compute pipeline supports linking binary functions.
 
@@ -17,6 +18,10 @@ A boolean value indicating whether the compute pipeline supports linking binary 
 
 ```swift
 var supportBinaryLinking: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL supportBinaryLinking;
 ```
 
 

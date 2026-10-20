@@ -1,7 +1,8 @@
 # interpolationPhase
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -19,9 +20,10 @@ var interpolationPhase: [Float] { get }
 
 ## See Also
 
-- [var sourceFrame: VTFrameProcessorFrame](vtlowlatencyframeinterpolationparameters/sourceframe.md)
+### Inspecting the parameters
+- [var sourceFrame: VTFrameProcessorFrame](./sourceframe.md)
   Source frame that you provided when creating the low-latency frame interpolation parameters object.
-- [var previousFrame: VTFrameProcessorFrame](vtlowlatencyframeinterpolationparameters/previousframe.md)
+- [var previousFrame: VTFrameProcessorFrame](./previousframe.md)
   Previous frame that you provided when creating the low-latency frame interpolation parameters object.
 
 

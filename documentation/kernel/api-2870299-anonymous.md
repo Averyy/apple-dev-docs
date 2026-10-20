@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOAudioBuiltInSystemClockDomain](2870299-anonymous/kioaudiobuiltinsystemclockdomain.md)
-- [kIOAudioNewClockDomain](2870299-anonymous/kioaudionewclockdomain.md)
+- [kIOAudioBuiltInSystemClockDomain](./api-2870299-anonymous/kioaudiobuiltinsystemclockdomain.md)
+- [kIOAudioNewClockDomain](./api-2870299-anonymous/kioaudionewclockdomain.md)
 
 
 ---

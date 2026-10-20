@@ -1,7 +1,8 @@
 # progress
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The training session’s current progress.
 
@@ -21,9 +22,10 @@ final let progress: Progress
 
 ## See Also
 
-- [let startDate: Date](mljob/startdate.md)
+### Inspecting a job
+- [let startDate: Date](./startdate.md)
   The date and time when the training session began.
-- [struct MLProgress](mlprogress.md)
+- [struct MLProgress](../mlprogress.md)
   A convenience type that exposes information about the progress of a training session.
 
 

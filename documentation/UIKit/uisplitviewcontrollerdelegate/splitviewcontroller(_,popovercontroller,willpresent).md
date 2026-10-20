@@ -1,19 +1,26 @@
 # splitViewController(_:popoverController:willPresent:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the hidden view controller is about to be displayed in a popover.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 8.0
+- iPadOS 2.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Orientation-related delegate methods are no longer supported.
 
 ## Declaration
 
 ```swift
 optional func splitViewController(_ svc: UISplitViewController, popoverController pc: UIPopoverController, willPresent aViewController: UIViewController)
+```
+
+```objc
+- (void) splitViewController:(UISplitViewController *) svc popoverController:(UIPopoverController *) pc willPresentViewController:(UIViewController *) aViewController;
 ```
 
 #### Discussion
@@ -28,11 +35,12 @@ The toolbar button you add to your user interface facilitates the display of the
 
 ## See Also
 
-- [func splitViewController(UISplitViewController, shouldHide: UIViewController, in: UIInterfaceOrientation) -> Bool](uisplitviewcontrollerdelegate/splitviewcontroller(_:shouldhide:in:).md)
+### Deprecated
+- [func splitViewController(UISplitViewController, shouldHide: UIViewController, in: UIInterfaceOrientation) -> Bool](./splitviewcontroller%28_,shouldhide,in%29.md)
   Asks the delegate whether the first view controller should be hidden for the specified orientation.
-- [func splitViewController(UISplitViewController, willHide: UIViewController, with: UIBarButtonItem, for: UIPopoverController)](uisplitviewcontrollerdelegate/splitviewcontroller(_:willhide:with:for:).md)
+- [func splitViewController(UISplitViewController, willHide: UIViewController, with: UIBarButtonItem, for: UIPopoverController)](./splitviewcontroller%28_,willhide,with,for%29.md)
   Tells the delegate that the specified view controller is about to be hidden.
-- [func splitViewController(UISplitViewController, willShow: UIViewController, invalidating: UIBarButtonItem)](uisplitviewcontrollerdelegate/splitviewcontroller(_:willshow:invalidating:).md)
+- [func splitViewController(UISplitViewController, willShow: UIViewController, invalidating: UIBarButtonItem)](./splitviewcontroller%28_,willshow,invalidating%29.md)
   Tells the delegate that the specified view controller is about to be shown again.
 
 

@@ -1,7 +1,8 @@
 # notEnoughLight
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that indicates the lighting of the current scene isn’t bright enough.
 
@@ -18,13 +19,18 @@ A value that indicates the lighting of the current scene isn’t bright enough.
 static let notEnoughLight: AVSpatialCaptureDiscomfortReason
 ```
 
+```c
+extern AVSpatialCaptureDiscomfortReason const AVSpatialCaptureDiscomfortReasonNotEnoughLight;
+```
+
 #### Discussion
 
 The playback experience would likely be uncomfortable due to noise differences between the wide and ultrawide cameras.
 
 ## See Also
 
-- [static let subjectTooClose: AVSpatialCaptureDiscomfortReason](avspatialcapturediscomfortreason/subjecttooclose.md)
+### Discomfort reasons
+- [static let subjectTooClose: AVSpatialCaptureDiscomfortReason](./subjecttooclose.md)
   A value that indicates the focus point of the current scene is too close.
 
 

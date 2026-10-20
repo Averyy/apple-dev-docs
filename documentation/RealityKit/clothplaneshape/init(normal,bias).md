@@ -1,7 +1,8 @@
 # init(normal:bias:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a plane shape with the given normal and surface displacement.
 

@@ -1,7 +1,8 @@
 # CFTimeZoneGetDaylightSavingTimeOffset(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the daylight saving time offset for a time zone at a given time.
 
@@ -20,6 +21,10 @@ Returns the daylight saving time offset for a time zone at a given time.
 func CFTimeZoneGetDaylightSavingTimeOffset(_ tz: CFTimeZone!, _ at: CFAbsoluteTime) -> CFTimeInterval
 ```
 
+```c
+extern CFTimeInterval CFTimeZoneGetDaylightSavingTimeOffset(CFTimeZoneRef tz, CFAbsoluteTime at);
+```
+
 #### Return Value
 
 The daylight saving time offset for `tz` at `at`.
@@ -31,9 +36,10 @@ The daylight saving time offset for `tz` at `at`.
 
 ## See Also
 
-- [func CFTimeZoneIsDaylightSavingTime(CFTimeZone!, CFAbsoluteTime) -> Bool](cftimezoneisdaylightsavingtime(_:_:).md)
+### Getting Daylight Savings Time Information
+- [func CFTimeZoneIsDaylightSavingTime(CFTimeZone!, CFAbsoluteTime) -> Bool](./cftimezoneisdaylightsavingtime%28_,_%29.md)
   Returns whether or not a time zone is in daylight savings time at a specified date.
-- [func CFTimeZoneGetNextDaylightSavingTimeTransition(CFTimeZone!, CFAbsoluteTime) -> CFAbsoluteTime](cftimezonegetnextdaylightsavingtimetransition(_:_:).md)
+- [func CFTimeZoneGetNextDaylightSavingTimeTransition(CFTimeZone!, CFAbsoluteTime) -> CFAbsoluteTime](./cftimezonegetnextdaylightsavingtimetransition%28_,_%29.md)
   Returns the time in a given time zone of the next daylight saving time transition after a given time.
 
 

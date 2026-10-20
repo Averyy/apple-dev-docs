@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var badTranslationRefErr: Int](badtranslationreferr.md)
+- [var badTranslationRefErr: Int](../badtranslationreferr.md)
 
 
 ---

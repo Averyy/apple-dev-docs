@@ -1,7 +1,8 @@
 # PlaygroundPage.PageNavigation
 
 **Framework**: Playground Support  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - Xcode 10.2+
@@ -16,9 +17,9 @@ enum PlaygroundPage.PageNavigation
 ## Topics
 
 ### Enumeration Cases
-- [PlaygroundPage.PageNavigation.next](playgroundpage/pagenavigation/next.md)
-- [PlaygroundPage.PageNavigation.pageReference(reference:)](playgroundpage/pagenavigation/pagereference_reference.md)
-- [PlaygroundPage.PageNavigation.previous](playgroundpage/pagenavigation/previous.md)
+- [PlaygroundPage.PageNavigation.next](./pagenavigation/next.md)
+- [PlaygroundPage.PageNavigation.pageReference(reference:)](./pagenavigation/pagereference_reference.md)
+- [PlaygroundPage.PageNavigation.previous](./pagenavigation/previous.md)
 
 
 ---

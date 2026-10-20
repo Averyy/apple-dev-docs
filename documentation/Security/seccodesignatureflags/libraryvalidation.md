@@ -1,7 +1,8 @@
 # libraryValidation
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Require library validation.
 
@@ -13,6 +14,10 @@ Require library validation.
 
 ```swift
 static var libraryValidation: SecCodeSignatureFlags { get }
+```
+
+```c
+kSecCodeSignatureLibraryValidation
 ```
 
 

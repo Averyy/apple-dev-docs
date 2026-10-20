@@ -7,9 +7,10 @@ Available space in the installation volume, in kilobytes.
 
 ## See Also
 
-- [mountpoint](target/1811965-mountpoint.md)
+### Accessing Target Properties
+- [mountpoint](./api-1811965-mountpoint.md)
   The installation volume’s mountpoint, as a String.
-- [systemVersion](target/1811984-systemversion.md)
+- [systemVersion](./api-1811984-systemversion.md)
   The version of the host’s operating system, as a String.
 
 

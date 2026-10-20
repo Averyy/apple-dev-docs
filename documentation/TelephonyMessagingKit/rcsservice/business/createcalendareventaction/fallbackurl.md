@@ -1,7 +1,8 @@
 # fallbackURL
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Fallback URL to use when unable to perform operation.
 
@@ -16,13 +17,14 @@ let fallbackURL: URL?
 
 ## See Also
 
-- [let startTime: Date](rcsservice/business/createcalendareventaction/starttime.md)
+### Accessing action properties
+- [let startTime: Date](./starttime.md)
   Start time of event.
-- [let endTime: Date](rcsservice/business/createcalendareventaction/endtime.md)
+- [let endTime: Date](./endtime.md)
   End time of event.
-- [let title: String](rcsservice/business/createcalendareventaction/title.md)
+- [let title: String](./title.md)
   Title to use for event.
-- [let description: String?](rcsservice/business/createcalendareventaction/description.md)
+- [let description: String?](./description.md)
   Description of event.
 
 

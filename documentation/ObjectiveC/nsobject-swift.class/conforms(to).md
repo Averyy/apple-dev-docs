@@ -1,7 +1,8 @@
 # conforms(to:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the target conforms to a given protocol.
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether the target conforms to a given pr
 class func conforms(to protocol: Protocol) -> Bool
 ```
 
+```objc
++ (BOOL) conformsToProtocol:(Protocol *) protocol;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if the target conforms to `protocol`, otherwise [`NO`](no.md).
+[`YES`](../yes.md) if the target conforms to `protocol`, otherwise [`NO`](../no.md).
 
 #### Discussion
 
@@ -50,12 +55,12 @@ BOOL canJoin = [MyClass conformsToProtocol:@protocol(Joining)];
 
 ##### Performance Considerations
 
-Calling this method in performance sensitive code can cause unwanted performance problems. [`conforms(to:)`](nsobject-swift.class/conforms(to:).md) requires taking the Objective-C runtime lock and traversing the target’s class hierarchy to check for protocol conformance, which can take significant time.
+Calling this method in performance sensitive code can cause unwanted performance problems. [`conforms(to:)`](./conforms%28to%29.md) requires taking the Objective-C runtime lock and traversing the target’s class hierarchy to check for protocol conformance, which can take significant time.
 
 Consider the following alternatives in your code:
 
-- Use [`responds(to:)`](nsobjectprotocol/responds(to:).md) to check for methods in the protocol instead, especially if you only need to check some of the protocol’s methods.
-- If you do need to use [`conforms(to:)`](nsobjectprotocol/conforms(to:).md), cache the result whenever possible, rather than calling this method repeatedly.
+- Use [`responds(to:)`](../nsobjectprotocol/responds%28to%29.md) to check for methods in the protocol instead, especially if you only need to check some of the protocol’s methods.
+- If you do need to use [`conforms(to:)`](../nsobjectprotocol/conforms%28to%29.md), cache the result whenever possible, rather than calling this method repeatedly.
 
 ## Parameters
 

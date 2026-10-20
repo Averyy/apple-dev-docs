@@ -1,7 +1,8 @@
 # state
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of state information to be evaluated by the system’s rules.
 
@@ -19,15 +20,20 @@ A dictionary of state information to be evaluated by the system’s rules.
 var state: NSMutableDictionary { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly) NSMutableDictionary * state;
+```
+
 #### Discussion
 
 This dictionary is mutable—some rules might alter the system’s state when executed. If you change this dictionary’s contents outside of a rule action, you must reset and reevaluate the system.
 
 ## See Also
 
-- [func reset()](gkrulesystem/reset.md)
+### Related Documentation
+- [func reset()](./reset%28%29.md)
   Returns the rule system to its original agenda and clears all facts.
-- [func evaluate()](gkrulesystem/evaluate.md)
+- [func evaluate()](./evaluate%28%29.md)
   Evaluates the rule system, executing the list of rules in its agenda.
 
 

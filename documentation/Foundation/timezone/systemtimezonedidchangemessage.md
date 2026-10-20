@@ -1,7 +1,8 @@
 # TimeZone.SystemTimeZoneDidChangeMessage
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message the system sends when the system time zone changes.
 
@@ -22,25 +23,25 @@ struct SystemTimeZoneDidChangeMessage
 
 #### Overview
 
-Observe this message with the identifier [`systemTimeZoneDidChange`](notificationcenter/messageidentifier/systemtimezonedidchange.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](notificationcenter/mainactormessage/subject.md) of this message type is [`TimeZone`](timezone.md).
+Observe this message with the identifier [`systemTimeZoneDidChange`](../notificationcenter/messageidentifier/systemtimezonedidchange.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](../notificationcenter/mainactormessage/subject.md) of this message type is [`TimeZone`](../timezone.md).
 
-This message interoperates with the notification [`NSSystemTimeZoneDidChange`](nsnotification/name-swift.struct/nssystemtimezonedidchange.md). The system notifies observers of the message when the [`NotificationCenter`](notificationcenter.md) posts the notification. Similarly, the system notifies observers of the notification when it posts the message.
+This message interoperates with the notification [`NSSystemTimeZoneDidChange`](../nsnotification/name-swift.struct/nssystemtimezonedidchange.md). The system notifies observers of the message when the [`NotificationCenter`](../notificationcenter.md) posts the notification. Similarly, the system notifies observers of the notification when it posts the message.
 
 ## Topics
 
 ### Creating a message for a system time zone change
-- [init(previousTimeZone: TimeZone?)](timezone/systemtimezonedidchangemessage/init(previoustimezone:).md)
+- [init(previousTimeZone: TimeZone?)](./systemtimezonedidchangemessage/init%28previoustimezone%29.md)
   Creates a message for a change in the system time zone.
 ### Accessing message properties
-- [var previousTimeZone: TimeZone?](timezone/systemtimezonedidchangemessage/previoustimezone.md)
+- [var previousTimeZone: TimeZone?](./systemtimezonedidchangemessage/previoustimezone.md)
   The previous system time zone, prior to the change.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](notificationcenter/mainactormessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../notificationcenter/mainactormessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

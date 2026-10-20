@@ -1,7 +1,8 @@
 # EnergySaver.Com.apple.EnergySaver.desktop.Schedule.RepeatingPowerOn
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The triggers for turning the device on.
 
@@ -10,25 +11,30 @@ The triggers for turning the device on.
 
 ## Declaration
 
-```swift
+```
 object EnergySaver.Com.apple.EnergySaver.desktop.Schedule.RepeatingPowerOn
 ```
 
 ## Properties
 
 - `eventtype` (string) *(required)*: The type of action defined by this schedule.
+
+  **Allowed Values**: `wake`, `poweron`, `wakepoweron`, `sleep`, `shutdown`, `restart`
 - `time` (integer): The time, in minutes, since midnight.
-- `weekdays` (integer): One or more days of the week in an unsigned integer bitmap: - `1` = Mon
-- `2` = Tue
-- `4` = Wed
-- `8` = Thu
-- `16` = Fri
-- `32` = Sat
-- `64` = Sun
+- `weekdays` (integer): One or more days of the week in an unsigned integer bitmap:
+
+  - `1` = Mon
+  - `2` = Tue
+  - `4` = Wed
+  - `8` = Thu
+  - `16` = Fri
+  - `32` = Sat
+  - `64` = Sun
 
 ## See Also
 
-- [object EnergySaver.Com.apple.EnergySaver.desktop.Schedule.RepeatingPowerOff](energysaver/com.apple.energysaver.desktop.schedule-data.dictionary/repeatingpoweroff-data.dictionary.md)
+### Objects
+- [object EnergySaver.Com.apple.EnergySaver.desktop.Schedule.RepeatingPowerOff](./repeatingpoweroff-data.dictionary.md)
   The triggers for turning the device off.
 
 

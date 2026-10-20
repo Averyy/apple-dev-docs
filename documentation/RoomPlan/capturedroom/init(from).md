@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: RoomPlan  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a captured room by deserializing the decoder of a previously captured room.
 

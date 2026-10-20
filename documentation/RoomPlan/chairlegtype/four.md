@@ -1,7 +1,8 @@
 # ChairLegType.four
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type of chair that has four legs.
 
@@ -18,9 +19,10 @@ case four
 
 ## See Also
 
-- [ChairLegType.star](chairlegtype/star.md)
+### Choosing a chair leg type
+- [ChairLegType.star](./star.md)
   A chair that rests on a bar that rises from a base, such as an office chair.
-- [ChairLegType.unidentified](chairlegtype/unidentified.md)
+- [ChairLegType.unidentified](./unidentified.md)
   An uncategorized chair leg type.
 
 

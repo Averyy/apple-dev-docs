@@ -1,7 +1,8 @@
 # zone
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target heart rate zone.
 

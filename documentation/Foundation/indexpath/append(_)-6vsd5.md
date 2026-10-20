@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends an array of elements to this index path as additional nodes.
 
@@ -22,25 +23,26 @@ mutating func append(_ other: Array<IndexPath.Element>)
 
 ## See Also
 
-- [func append(IndexPath)](indexpath/append(_:)-6dxrh.md)
+### Selecting Nodes
+- [func append(IndexPath)](./append%28_%29-6dxrh.md)
   Appends the nodes of another index path to this one.
-- [func append(IndexPath.Element)](indexpath/append(_:)-7qv6f.md)
+- [func append(IndexPath.Element)](./append%28_%29-7qv6f.md)
   Appends a single element to this index path as a new node.
-- [func appending(IndexPath.Element) -> IndexPath](indexpath/appending(_:)-93eco.md)
+- [func appending(IndexPath.Element) -> IndexPath](./appending%28_%29-93eco.md)
   Returns a new index path containing the elements of this one plus the given element.
-- [func appending(IndexPath) -> IndexPath](indexpath/appending(_:)-53tcl.md)
+- [func appending(IndexPath) -> IndexPath](./appending%28_%29-53tcl.md)
   Returns a new index path containing the elements of this one plus those of another index path.
-- [func appending(Array<IndexPath.Element>) -> IndexPath](indexpath/appending(_:)-174v0.md)
+- [func appending(Array<IndexPath.Element>) -> IndexPath](./appending%28_%29-174v0.md)
   Returns a new index path containing the elements of this one plus an array of additional elements.
-- [func compare(IndexPath) -> ComparisonResult](indexpath/compare(_:).md)
+- [func compare(IndexPath) -> ComparisonResult](./compare%28_%29.md)
   Compares this index path to another in depth-first traversal order.
-- [func dropLast() -> IndexPath](indexpath/droplast.md)
+- [func dropLast() -> IndexPath](./droplast%28%29.md)
   Return a new index path containing all but the last element.
-- [func index(after: IndexPath.Index) -> IndexPath.Index](indexpath/index(after:).md)
+- [func index(after: IndexPath.Index) -> IndexPath.Index](./index%28after%29.md)
   Returns the index that follows the given index.
-- [func index(before: IndexPath.Index) -> IndexPath.Index](indexpath/index(before:).md)
+- [func index(before: IndexPath.Index) -> IndexPath.Index](./index%28before%29.md)
   Returns the index that precedes the given index.
-- [func makeIterator() -> IndexingIterator<IndexPath>](indexpath/makeiterator.md)
+- [func makeIterator() -> IndexingIterator<IndexPath>](./makeiterator%28%29.md)
   Returns an iterator over the nodes of the index path.
 
 

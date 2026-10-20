@@ -1,14 +1,15 @@
 # iff_event_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*iff_event_func)(void *cookie, ifnet_t interface, protocol_family_t protocol, const struct kev_msg *event_msg);
 ```
 

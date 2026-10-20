@@ -1,7 +1,8 @@
 # MLObjectDetectorMetrics
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Metrics you use to evaluate an object detector’s performance.
 
@@ -23,52 +24,53 @@ For example, two bounding boxes that overlap perfectly have an IoU of `1.0`, bec
 ## Topics
 
 ### Creating metrics
-- [init(averagePrecision: (variedIoU: [String : Double], IoU50: [String : Double]), meanAveragePrecision: (variedIoU: Double, IoU50: Double))](mlobjectdetectormetrics/init(averageprecision:meanaverageprecision:).md)
+- [init(averagePrecision: (variedIoU: [String : Double], IoU50: [String : Double]), meanAveragePrecision: (variedIoU: Double, IoU50: Double))](./mlobjectdetectormetrics/init%28averageprecision,meanaverageprecision%29.md)
   Creates metrics for an object detector given an average precision and a mean average precision.
 ### Assessing the model
-- [var averagePrecision: (variedIoU: [String : Double], IoU50: [String : Double])](mlobjectdetectormetrics/averageprecision.md)
+- [var averagePrecision: (variedIoU: [String : Double], IoU50: [String : Double])](./mlobjectdetectormetrics/averageprecision.md)
   Two dictionaries of average precisions at different thresholds.
-- [var meanAveragePrecision: (variedIoU: Double, IoU50: Double)](mlobjectdetectormetrics/meanaverageprecision.md)
+- [var meanAveragePrecision: (variedIoU: Double, IoU50: Double)](./mlobjectdetectormetrics/meanaverageprecision.md)
   Two mean-average precisions at different thresholds.
 ### Handling errors
-- [var isValid: Bool](mlobjectdetectormetrics/isvalid.md)
+- [var isValid: Bool](./mlobjectdetectormetrics/isvalid.md)
   A Boolean value indicating whether the object detector model was able to calculate metrics.
-- [var error: (any Error)?](mlobjectdetectormetrics/error.md)
+- [var error: (any Error)?](./mlobjectdetectormetrics/error.md)
   The underlying error present when the metrics are invalid.
 ### Describing metrics
-- [var description: String](mlobjectdetectormetrics/description.md)
+- [var description: String](./mlobjectdetectormetrics/description.md)
   A text representation of the object detector metrics.
-- [var debugDescription: String](mlobjectdetectormetrics/debugdescription.md)
+- [var debugDescription: String](./mlobjectdetectormetrics/debugdescription.md)
   A text representation of the object detector metrics that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlobjectdetectormetrics/playgrounddescription.md)
+- [var playgroundDescription: Any](./mlobjectdetectormetrics/playgrounddescription.md)
   A description of the object detector metrics shown in a playground.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlobjectdetectormetrics/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlobjectdetectormetrics/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlobjectdetectormetrics/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./mlobjectdetectormetrics/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./mlobjectdetectormetrics/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./mlobjectdetectormetrics/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Improving Your Model’s Accuracy](improving-your-model-s-accuracy.md)
+### Model accuracy
+- [Improving Your Model’s Accuracy](./improving-your-model-s-accuracy.md)
   Use metrics to tune the performance of your machine learning model.
-- [struct MLClassifierMetrics](mlclassifiermetrics.md)
+- [struct MLClassifierMetrics](./mlclassifiermetrics.md)
   Metrics you use to evaluate a classifier’s performance.
-- [struct MLRegressorMetrics](mlregressormetrics.md)
+- [struct MLRegressorMetrics](./mlregressormetrics.md)
   Metrics you use to evaluate a regressor’s performance.
-- [struct MLWordTaggerMetrics](mlwordtaggermetrics.md)
+- [struct MLWordTaggerMetrics](./mlwordtaggermetrics.md)
   Metrics you use to evaluate a word tagger’s performance.
-- [struct MLRecommenderMetrics](mlrecommendermetrics.md)
+- [struct MLRecommenderMetrics](./mlrecommendermetrics.md)
   Metrics you use to evaluate a recommender’s performance.
 
 

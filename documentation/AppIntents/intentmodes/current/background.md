@@ -1,7 +1,8 @@
 # background
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that indicates the app intent is running in the background.
 

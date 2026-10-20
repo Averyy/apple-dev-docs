@@ -1,7 +1,8 @@
 # invalidatePersistableContentKey(_:options:completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates the persistable content key and creates a secure server playback context (SPC) to verify the outcome of an invalidation request.
 
@@ -17,7 +18,15 @@ Invalidates the persistable content key and creates a secure server playback con
 ## Declaration
 
 ```swift
+func invalidatePersistableContentKey(_ persistableContentKeyData: Data, options: [AVContentKeySessionServerPlaybackContextOption : Any]? = nil, completionHandler handler: @escaping @Sendable (Data?, (any Error)?) -> Void)
+```
+
+```swift
 func invalidatePersistableContentKey(_ persistableContentKeyData: Data, options: [AVContentKeySessionServerPlaybackContextOption : Any]? = nil) async throws -> Data
+```
+
+```objc
+- (void) invalidatePersistableContentKey:(NSData *) persistableContentKeyData options:(NSDictionary<NSString *,id> *) options completionHandler:(void (^)(NSData *secureTokenData, NSError *error)) handler;
 ```
 
 ## Parameters
@@ -28,9 +37,10 @@ func invalidatePersistableContentKey(_ persistableContentKeyData: Data, options:
 
 ## See Also
 
-- [func invalidateAllPersistableContentKeys(forApp: Data, options: [AVContentKeySessionServerPlaybackContextOption : Any]?, completionHandler: (Data?, (any Error)?) -> Void)](avcontentkeysession/invalidateallpersistablecontentkeys(forapp:options:completionhandler:).md)
+### Invalidating content keys
+- [func invalidateAllPersistableContentKeys(forApp: Data, options: [AVContentKeySessionServerPlaybackContextOption : Any]?, completionHandler: (Data?, (any Error)?) -> Void)](./invalidateallpersistablecontentkeys%28forapp,options,completionhandler%29.md)
   Invalidates all of an app’s persistable content keys and creates a secure server playback context (SPC) to verify the outcome of an invalidation request.
-- [struct AVContentKeySessionServerPlaybackContextOption](avcontentkeysessionserverplaybackcontextoption.md)
+- [struct AVContentKeySessionServerPlaybackContextOption](../avcontentkeysessionserverplaybackcontextoption.md)
   Options for specifying additional information for generating server playback context (SPC).
 
 

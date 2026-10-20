@@ -1,7 +1,8 @@
 # junctionType
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that represents the type of junction associated with this maneuver.
 
@@ -16,15 +17,20 @@ A value that represents the type of junction associated with this maneuver.
 var junctionType: CPJunctionType { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CPJunctionType junctionType;
+```
+
 #### Discussion
 
-One of the [`CPJunctionType`](cpjunctiontype.md) values that indicates the type of traffic junction; a [`CPManeuver`](cpmaneuver.md) requires this value.
+One of the [`CPJunctionType`](../cpjunctiontype.md) values that indicates the type of traffic junction; a [`CPManeuver`](../cpmaneuver.md) requires this value.
 
 ## See Also
 
-- [var junctionExitAngle: Measurement<UnitAngle>?](cpmaneuver/junctionexitangle.md)
+### Providing junction information
+- [var junctionExitAngle: Measurement<UnitAngle>?](./junctionexitangle.md)
   The angle of the exit road of this junction.
-- [var junctionElementAngles: Set<Measurement<UnitAngle>>?](cpmaneuver/junctionelementangles.md)
+- [var junctionElementAngles: Set<Measurement<UnitAngle>>?](./junctionelementangles.md)
   A set of angles for the rest of the roads of this junction.
 
 

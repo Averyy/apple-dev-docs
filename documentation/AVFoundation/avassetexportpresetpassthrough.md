@@ -1,7 +1,8 @@
 # AVAssetExportPresetPassthrough
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A preset to export the asset in its current format, unless otherwise prohibited.
 
@@ -19,9 +20,13 @@ A preset to export the asset in its current format, unless otherwise prohibited.
 let AVAssetExportPresetPassthrough: String
 ```
 
+```c
+extern NSString * const AVAssetExportPresetPassthrough;
+```
+
 #### Discussion
 
-This option doesn’t show up in the [`allExportPresets()`](avassetexportsession/allexportpresets().md) and [`exportPresets(compatibleWith:)`](avassetexportsession/exportpresets(compatiblewith:).md) methods.
+This option doesn’t show up in the [`allExportPresets()`](./avassetexportsession/allexportpresets%28%29.md) and [`exportPresets(compatibleWith:)`](./avassetexportsession/exportpresets%28compatiblewith%29.md) methods.
 
 
 ---

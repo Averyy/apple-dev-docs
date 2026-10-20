@@ -1,7 +1,8 @@
 # userActivity
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A user activity to send to the newly activated scene.
 
@@ -10,7 +11,7 @@ A user activity to send to the newly activated scene.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,15 +23,16 @@ var userActivity: NSUserActivity? { get set }
 
 The system sends the `userActivity` to the session’s scene upon activation, regardless of whether the scene session already exists.
 
-If you don’t provide a scene session to activate, the system uses the [`targetContentIdentifier`](https://developer.apple.com/documentation/foundation/nsuseractivity/targetcontentidentifier) of the user activity to determine which scene session to activate. When the user activity’s [`targetContentIdentifier`](https://developer.apple.com/documentation/foundation/nsuseractivity/targetcontentidentifier) satisfies the [`prefersToActivateForTargetContentIdentifierPredicate`](uisceneactivationconditions/preferstoactivatefortargetcontentidentifierpredicate.md), the system activates that scene’s session to handle the user activity.
+If you don’t provide a scene session to activate, the system uses the [`targetContentIdentifier`](../../Foundation/nsuseractivity/targetcontentidentifier.md) of the user activity to determine which scene session to activate. When the user activity’s [`targetContentIdentifier`](../../Foundation/nsuseractivity/targetcontentidentifier.md) satisfies the [`prefersToActivateForTargetContentIdentifierPredicate`](../uisceneactivationconditions/preferstoactivatefortargetcontentidentifierpredicate.md), the system activates that scene’s session to handle the user activity.
 
 ## See Also
 
-- [var options: UIScene.ActivationRequestOptions?](uiscenesessionactivationrequest-swift.struct/options.md)
+### Managing request details
+- [var options: UIScene.ActivationRequestOptions?](./options.md)
   Activation request options to further customize the request.
-- [var role: UISceneSession.Role](uiscenesessionactivationrequest-swift.struct/role.md)
+- [var role: UISceneSession.Role](./role.md)
   The role to request.
-- [var session: UISceneSession?](uiscenesessionactivationrequest-swift.struct/session.md)
+- [var session: UISceneSession?](./session.md)
   The specific scene session to activate.
 
 

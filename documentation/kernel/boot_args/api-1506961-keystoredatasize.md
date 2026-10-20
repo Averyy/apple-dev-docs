@@ -1,14 +1,15 @@
 # keyStoreDataSize
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 uint32_t keyStoreDataSize;
 ```
 

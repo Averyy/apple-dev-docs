@@ -1,7 +1,8 @@
 # errSecMobileMeRequestRedirected
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The MobileMe request was redirected.
 
@@ -18,6 +19,10 @@ The MobileMe request was redirected.
 
 ```swift
 var errSecMobileMeRequestRedirected: OSStatus { get }
+```
+
+```c
+errSecMobileMeRequestRedirected
 ```
 
 

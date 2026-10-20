@@ -1,7 +1,8 @@
 # StopSpeech(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Terminates speech immediately on the specified channel.
 
@@ -14,9 +15,13 @@ Terminates speech immediately on the specified channel.
 func StopSpeech(_ chan: SpeechChannel) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr StopSpeech(SpeechChannel chan);
+```
 
-A resultcode. See [`Result Codes`](speech_synthesis_manager#1659745.md).
+#### Return Value
+
+A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
 #### Discussion
 
@@ -24,7 +29,7 @@ The `StopSpeech` functionimmediately terminates speech on the channel specified 
 
 You can also stop speech by passing a zero-length string (or,in C, a `null` pointer)to one of the `SpeakString`, `SpeakText`,or `SpeakBuffer` functions.Doing this stops speech only in the specified speech channel (or,in the case of `SpeakString`,in the speech channel managed internally by the Speech SynthesisManager).
 
-Before calling the `StopSpeech` function,you can use the `SpeechBusy` function,which is described in [`SpeechBusy()`](1464581-speechbusy.md),to determine if a synthesizer is still speaking. If you are working withmultiple speech channels, you can use the status selector with thefunction `GetSpeechInfo` whichis described in [`GetSpeechInfo`](1552220-getspeechinfo.md),to determine if a specific channel is still speaking. 
+Before calling the `StopSpeech` function,you can use the `SpeechBusy` function,which is described in [`SpeechBusy()`](./api-1464581-speechbusy.md),to determine if a synthesizer is still speaking. If you are working withmultiple speech channels, you can use the status selector with thefunction `GetSpeechInfo` whichis described in [`GetSpeechInfo`](./api-1552220-getspeechinfo.md),to determine if a specific channel is still speaking. 
 
 ## Parameters
 
@@ -32,13 +37,14 @@ Before calling the `StopSpeech` function,you can use the `SpeechBusy` function,w
 
 ## See Also
 
-- [func ContinueSpeech(SpeechChannel) -> OSErr](1462728-continuespeech.md)
+### Starting, Stopping, and Pausing Speech
+- [func ContinueSpeech(SpeechChannel) -> OSErr](./api-1462728-continuespeech.md)
   Resumes speech paused by the `PauseSpeechAt` function.
-- [func PauseSpeechAt(SpeechChannel, Int32) -> OSErr](1461174-pausespeechat.md)
+- [func PauseSpeechAt(SpeechChannel, Int32) -> OSErr](./api-1461174-pausespeechat.md)
   Pauses speech on a speech channel.
-- [func SpeakCFString(SpeechChannel, CFString, CFDictionary?) -> OSErr](1461621-speakcfstring.md)
+- [func SpeakCFString(SpeechChannel, CFString, CFDictionary?) -> OSErr](./api-1461621-speakcfstring.md)
   Begins speaking a string represented as a `CFString` object.
-- [func StopSpeechAt(SpeechChannel, Int32) -> OSErr](1459780-stopspeechat.md)
+- [func StopSpeechAt(SpeechChannel, Int32) -> OSErr](./api-1459780-stopspeechat.md)
   Terminates speech delivery on a specified channel eitherimmediately or at the end of the current word or sentence.
 
 

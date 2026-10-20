@@ -1,14 +1,15 @@
 # UnsignedWide
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+ - Deprecated in 10.9
 
 ## Declaration
 
-```swift
+```c
 typedef struct UnsignedWide {
     ...
 } UnsignedWide;
@@ -17,8 +18,8 @@ typedef struct UnsignedWide {
 ## Topics
 
 ### Instance Properties
-- [hi](unsignedwide/1586815-hi.md)
-- [lo](unsignedwide/1586801-lo.md)
+- [hi](./unsignedwide/api-1586815-hi.md)
+- [lo](./unsignedwide/api-1586801-lo.md)
 
 
 ---

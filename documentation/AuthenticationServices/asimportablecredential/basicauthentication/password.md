@@ -1,7 +1,8 @@
 # password
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The password associated with the credential.
 
@@ -20,7 +21,8 @@ var password: ASImportableEditableField?
 
 ## See Also
 
-- [struct ASImportableEditableField](asimportableeditablefield.md)
+### Accessing authentication properties
+- [struct ASImportableEditableField](../../asimportableeditablefield.md)
   A field that someone can edit within a credential.
 
 

@@ -1,7 +1,8 @@
 # kCIApplyOptionColorSpace
 
 **Framework**: Core Image  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The color space of the produced image.
 
@@ -14,17 +15,22 @@ The color space of the produced image.
 let kCIApplyOptionColorSpace: String
 ```
 
+```c
+extern NSString * const kCIApplyOptionColorSpace;
+```
+
 #### Discussion
 
-The associated value must be an RGB [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace) object. If not specified, the output of the kernel is in the working color space of the Core Image context used to render the image.
+The associated value must be an RGB [`CGColorSpace`](../CoreGraphics/cgcolorspace.md) object. If not specified, the output of the kernel is in the working color space of the Core Image context used to render the image.
 
 ## See Also
 
-- [let kCIApplyOptionExtent: String](kciapplyoptionextent.md)
+### Constants
+- [let kCIApplyOptionExtent: String](./kciapplyoptionextent.md)
   The extent of the image.
-- [let kCIApplyOptionDefinition: String](kciapplyoptiondefinition.md)
+- [let kCIApplyOptionDefinition: String](./kciapplyoptiondefinition.md)
   The domain of definition (DOD) of the produced image.
-- [let kCIApplyOptionUserInfo: String](kciapplyoptionuserinfo.md)
+- [let kCIApplyOptionUserInfo: String](./kciapplyoptionuserinfo.md)
   Information needed by a callback. The associated value is an object that Core Image will pass to any callbacks invoked for that filter.
 
 

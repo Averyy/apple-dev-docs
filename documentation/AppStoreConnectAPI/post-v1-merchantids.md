@@ -1,7 +1,8 @@
 # Create a merchant id
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Add a new merchant ID to your team.
 
@@ -10,26 +11,42 @@ Add a new merchant ID to your team.
 
 ## Mentions
 
-- [Managing merchant IDs and Payment Processing certificates](managing-payment-processing-certificates.md)
+- [Managing merchant IDs and Payment Processing certificates](./managing-payment-processing-certificates.md)
 
 ## Endpoint
 
 `POST https://api.appstoreconnect.apple.com/v1/merchantIds`
 
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `MerchantIdCreateRequest`
+
+## Responses
+
+- `201` Created (`MerchantIdResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [Managing merchant IDs and Payment Processing certificates](managing-payment-processing-certificates.md)
+### Managing merchant IDs
+- [Managing merchant IDs and Payment Processing certificates](./managing-payment-processing-certificates.md)
   Create and update certificates so your app uses Apple Pay and Wallet.
-- [List merchant ids](get-v1-merchantids.md)
+- [List merchant ids](./get-v1-merchantids.md)
   List all merchant Ids for your team.
-- [Read details for a merchant id](get-v1-merchantids-_id_.md)
+- [Read details for a merchant id](./get-v1-merchantids-_id_.md)
   Get information for a merchant ID.
-- [List certificates for a merchant id](get-v1-merchantids-_id_-certificates.md)
+- [List certificates for a merchant id](./get-v1-merchantids-_id_-certificates.md)
   Get a list of all certificates for a specific merchant ID.
-- [List certificate IDs for a merchant ID](get-v1-merchantids-_id_-relationships-certificates.md)
-- [Modify merchant ids](patch-v1-merchantids-_id_.md)
+- [List certificate IDs for a merchant ID](./get-v1-merchantids-_id_-relationships-certificates.md)
+- [Modify merchant ids](./patch-v1-merchantids-_id_.md)
   Update a specific merchant ID.
-- [Delete a merchant id](delete-v1-merchantids-_id_.md)
+- [Delete a merchant id](./delete-v1-merchantids-_id_.md)
   Delete a specific merchant ID.
 
 

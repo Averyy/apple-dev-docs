@@ -1,7 +1,8 @@
 # removeAllUserScripts()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all user scripts from the web view.
 
@@ -18,11 +19,16 @@ Removes all user scripts from the web view.
 func removeAllUserScripts()
 ```
 
+```objc
+- (void) removeAllUserScripts;
+```
+
 ## See Also
 
-- [func addUserScript(WKUserScript)](wkusercontentcontroller/adduserscript(_:).md)
+### Adding and Removing Custom Scripts
+- [func addUserScript(WKUserScript)](./adduserscript%28_%29.md)
   Injects the specified script into the webpage’s content.
-- [var userScripts: [WKUserScript]](wkusercontentcontroller/userscripts.md)
+- [var userScripts: [WKUserScript]](./userscripts.md)
   The user scripts associated with the user content controller.
 
 

@@ -1,7 +1,8 @@
 # DeprecatedCSSOMValueList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,21 +10,21 @@
 
 ## Declaration
 
-```swift
+```
 interface DeprecatedCSSOMValueList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](deprecatedcssomvaluelist/2871272-length.md)
+- [length](./deprecatedcssomvaluelist/api-2871272-length.md)
 ### Instance Methods
-- [item](deprecatedcssomvaluelist/2871257-item.md)
+- [item](./deprecatedcssomvaluelist/api-2871257-item.md)
 
 ## Relationships
 
 ### Inherits From
-- [DeprecatedCSSOMValue](deprecatedcssomvalue.md)
+- [DeprecatedCSSOMValue](./deprecatedcssomvalue.md)
 
 
 ---

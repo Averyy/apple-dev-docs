@@ -1,7 +1,8 @@
 # popLast()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes and returns the last element of the array, if there is one.
 
@@ -26,7 +27,7 @@ The last element of the array if the array is not empty; otherwise, `nil`.
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

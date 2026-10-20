@@ -1,7 +1,8 @@
 # MTLPixelFormat.rg8Unorm
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Ordinary format with two 8-bit normalized unsigned integer components.
 
@@ -10,7 +11,7 @@ Ordinary format with two 8-bit normalized unsigned integer components.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,25 +20,30 @@ Ordinary format with two 8-bit normalized unsigned integer components.
 case rg8Unorm
 ```
 
+```c
+MTLPixelFormatRG8Unorm
+```
+
 ## See Also
 
-- [MTLPixelFormat.r16Unorm](mtlpixelformat/r16unorm.md)
+### Ordinary 16-bit pixel formats
+- [MTLPixelFormat.r16Unorm](./r16unorm.md)
   Ordinary format with one 16-bit normalized unsigned integer component.
-- [MTLPixelFormat.r16Snorm](mtlpixelformat/r16snorm.md)
+- [MTLPixelFormat.r16Snorm](./r16snorm.md)
   Ordinary format with one 16-bit normalized signed integer component.
-- [MTLPixelFormat.r16Uint](mtlpixelformat/r16uint.md)
+- [MTLPixelFormat.r16Uint](./r16uint.md)
   Ordinary format with one 16-bit unsigned integer component.
-- [MTLPixelFormat.r16Sint](mtlpixelformat/r16sint.md)
+- [MTLPixelFormat.r16Sint](./r16sint.md)
   Ordinary format with one 16-bit signed integer component.
-- [MTLPixelFormat.r16Float](mtlpixelformat/r16float.md)
+- [MTLPixelFormat.r16Float](./r16float.md)
   Ordinary format with one 16-bit floating-point component.
-- [MTLPixelFormat.rg8Unorm_srgb](mtlpixelformat/rg8unorm_srgb.md)
+- [MTLPixelFormat.rg8Unorm_srgb](./rg8unorm_srgb.md)
   Ordinary format with two 8-bit normalized unsigned integer components with conversion between sRGB and linear space.
-- [MTLPixelFormat.rg8Snorm](mtlpixelformat/rg8snorm.md)
+- [MTLPixelFormat.rg8Snorm](./rg8snorm.md)
   Ordinary format with two 8-bit normalized signed integer components.
-- [MTLPixelFormat.rg8Uint](mtlpixelformat/rg8uint.md)
+- [MTLPixelFormat.rg8Uint](./rg8uint.md)
   Ordinary format with two 8-bit unsigned integer components.
-- [MTLPixelFormat.rg8Sint](mtlpixelformat/rg8sint.md)
+- [MTLPixelFormat.rg8Sint](./rg8sint.md)
   Ordinary format with two 8-bit signed integer components.
 
 

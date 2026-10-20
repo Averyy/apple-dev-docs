@@ -1,7 +1,8 @@
 # init(mutating:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Mutate untyped memory as a typed span.
 
@@ -19,6 +20,8 @@ Mutate untyped memory as a typed span.
 ```swift
 init(mutating mutableBytes: inout MutableRawSpan)
 ```
+
+Available when `Element` conforms to `ConvertibleFromBytes` and `ConvertibleToBytes`.
 
 #### Discussion
 

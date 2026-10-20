@@ -1,7 +1,8 @@
 # GL_OES_point_sprite
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_OES_point_sprite: Int32 { get }
+```
+
+```c
+#define GL_OES_point_sprite
 ```
 
 

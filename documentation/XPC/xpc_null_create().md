@@ -1,7 +1,8 @@
 # xpc_null_create()
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an XPC object that represents the null object.
 
@@ -10,7 +11,7 @@ Creates an XPC object that represents the null object.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Creates an XPC object that represents the null object.
 
 ```swift
 func xpc_null_create() -> xpc_object_t
+```
+
+```c
+extern xpc_object_txpc_null_create();
 ```
 
 #### Return Value

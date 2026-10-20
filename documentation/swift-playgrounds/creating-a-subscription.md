@@ -1,6 +1,7 @@
 # Creating a subscription
 
-**Framework**: Swift Playgrounds
+**Framework**: Swift Playgrounds  
+**Role**: Article
 
 Create a machine-readable summary of a set of playground books to make them available for others to download.
 
@@ -20,7 +21,7 @@ Feeds in Swift Playgrounds are structured as JSON, which many apps and websites 
 }
 ```
 
-The example document isn’t detailed enough to be a real feed for a playground subscription, but it shows the kind of information a feed contains. Although the JSON documents that apps use are typically longer, they follow the same rules of quoting and nesting. For more information about JSON, see [`ECMA-404: The JSON Data Interchange Format`](https://developer.apple.comhttps://www.ecma-international.org/publications/standards/Ecma-404.htm).
+The example document isn’t detailed enough to be a real feed for a playground subscription, but it shows the kind of information a feed contains. Although the JSON documents that apps use are typically longer, they follow the same rules of quoting and nesting. For more information about JSON, see [ECMA-404: The JSON Data Interchange Format](https://www.ecma-international.org/publications/standards/Ecma-404.htm).
 
 Not all JSON documents are feeds. Feeds of JSON documents are informally defined by two characteristics:
 
@@ -32,7 +33,7 @@ The feed format used by Swift Playgrounds has these two characteristics:
 - Feeds contain some details (metadata) used to name, describe, and identify the subscription.
 - Feeds contain a link to each individual playground book in a subscription.
 
-##### Create a Subscription Feed
+##### Create a subscription feed
 
 Create the feed for a subscription by defining top-level metadata about the subscription. The top level of the JSON object that represents the feed must include following keys:
 
@@ -43,7 +44,7 @@ Create the feed for a subscription by defining top-level metadata about the subs
 - **`contactURL`**: The contact URL you use to get information about, and report problems with, the feed.
 - **`documents`**: An array of objects representing the playground books in your feed. For details about the format for the objects in this array, see doc:creating-a-subscription#Add-Documents-to-the-Feed.
 
-##### Add Documents to the Feed
+##### Add documents to the feed
 
 For each book in your subscription, include an object with the following fields in your feed’s `documents` array:
 
@@ -52,11 +53,17 @@ For each book in your subscription, include an object with the following fields 
 - **`detailSubtitle`**: **Optional.** The subtitle of the playground book displayed in detail views. Expand further on the name of the book to provide additional context.
 - **`description`**: A description that appears in detail views before a book in the subscription is opened.
 - **`difficultyLevel`**: **Optional.** The difficulty level of the material taught in the book. The level must be `"beginner"`, `"intermediate"`, `"expert"`, or `"advanced"`.
-- **`attributes`**: **Optional.**  An array of attributes that describe the theme of the content in a playground book. The array can contain up to six values. Values in the array must be one of the following attributes: `"short"`, `"medium"`, `"long"`, `"algorithmic"`, `"appBuilding"`, `"appLike"`, `"art"`, `"astronomy"`, `"audioExperience"`, `"augmentedReality"`, `"biology"`, `"chemistry"`, `"codingBasics"`, `"cryptography"`, `"curriculumBased"`, `"databases"`, `"dataStructuresAndAlgorithms"`, `"designOriented"`, `"economics"`, `"gameBuilding"`, `"gameLike"`, `"geometry"`, `"graphical"`, `"history"`, `"languageArts"`, `"music"`, `"networking"`, `"objectOrientedProgramming"`, `"physics"`, `"premadeForTinkerers"`, `"projectBased"`, `"puzzleSolving"`, `"simulation"`, `"startingPoint"`, `"storyBased"`, `"usesAccessory"`, `"usesCamera"`, `"usesMicrophone"`, `"usesMotion"`, `"usesSoundPredominantly"`.
+- **`attributes`**: **Optional.**  An array of attributes that describe the theme of the content in a playground book. The array can contain up to six values.
+
+  Values in the array must be one of the following attributes:
+
+  `"short"`, `"medium"`, `"long"`, `"algorithmic"`, `"appBuilding"`, `"appLike"`, `"art"`, `"astronomy"`, `"audioExperience"`, `"augmentedReality"`, `"biology"`, `"chemistry"`, `"codingBasics"`, `"cryptography"`, `"curriculumBased"`, `"databases"`, `"dataStructuresAndAlgorithms"`, `"designOriented"`, `"economics"`, `"gameBuilding"`, `"gameLike"`, `"geometry"`, `"graphical"`, `"history"`, `"languageArts"`, `"music"`, `"networking"`, `"objectOrientedProgramming"`, `"physics"`, `"premadeForTinkerers"`, `"projectBased"`, `"puzzleSolving"`, `"simulation"`, `"startingPoint"`, `"storyBased"`, `"usesAccessory"`, `"usesCamera"`, `"usesMicrophone"`, `"usesMotion"`, `"usesSoundPredominantly"`.
 - **`authorChosenUpNext`**: **Optional.** The `contentIdentifier` key for a recommended document to follow the current document in a learner’s progression.
-- **`contentIdentifier`**: A reverse-DNS identifier unique to the book. The identifier must match the `ContentIdentifier` key in the book’s manifest and start with the `feedIdentifier` key of the feed that contains this book. For more information about the `ContentIdentifier` key, see [`Determine Book-Level Information`](structuring-content-for-swift-playgrounds#Determine-Book-Level-Information.md).
-- **`contentVersion`**: A version number you increment when you update the book. The version must match the `ContentVersion` key in the book’s manifest. For more information about the `ContentVersion` key, see [`Determine Book-Level Information`](structuring-content-for-swift-playgrounds#Determine-Book-Level-Information.md).
-- **`requiredCapabilities`**: **Optional.** An array of device-related features that the book requires to run. A feature is any [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/uirequireddevicecapabilities) value.
+- **`contentIdentifier`**: A reverse-DNS identifier unique to the book. The identifier must match the `ContentIdentifier` key in the book’s manifest and start with the `feedIdentifier` key of the feed that contains this book. For more information about the `ContentIdentifier` key, see [Determine Book-Level Information](./structuring-content-for-swift-playgrounds.md#Determine-Book-Level-Information).
+- **`contentVersion`**: A version number you increment when you update the book. The version must match the `ContentVersion` key in the book’s manifest.
+
+  For more information about the `ContentVersion` key, see [Determine Book-Level Information](./structuring-content-for-swift-playgrounds.md#Determine-Book-Level-Information).
+- **`requiredCapabilities`**: **Optional.** An array of device-related features that the book requires to run. A feature is any [`UIRequiredDeviceCapabilities`](../BundleResources/information-property-list/uirequireddevicecapabilities.md) value.
 - **`supportedDevices`**: **Optional.** An array of strings that identifies the set of devices the book can run on. The possible values are `"iPad"` and `"Mac"`.
 - **`sha512`**: **Optional.** The SHA-512 hash of the zipped version of the book. Required when the playground book is hosted on a domain other than the feed.
 - **`url`**: A link to your zipped copy of the book’s `.playgroundbook` file.
@@ -67,7 +74,7 @@ For each book in your subscription, include an object with the following fields 
 - **`additionalInformation`**: An array of objects you use to supply metadata. The format for the objects in this array is described in doc:creating-a-subscription#Add-Metadata-to-the-Feed-Documents.
 - **`previewImageURLs`**: An array of URLs to images that highlight parts of the book. Preview images must be 800 x 600 pixels.
 
-##### Add Metadata to the Feed Documents
+##### Add metadata to the feed documents
 
 Store additional information and metadata about your feed in the format described below. This information is displayed alongside the book’s preview images to provide details about the book — such as available localizations — before a user downloads it.
 
@@ -75,9 +82,9 @@ Store additional information and metadata about your feed in the format describe
 - **`value`**: A metadata key value.
 - **`type`**: **Optional.** The type of the value specified by the value field. The type must be `"string"` or `"date"`. The default value is `"string"`. Dates must be ISO 8601-formatted date strings.
 
-For more information, see [`Localizing a Subscription Feed`](localizing-a-subscription-feed.md).
+For more information, see [Localizing a Subscription Feed](./localizing-a-subscription-feed.md).
 
-##### Update a Subscription By Adding Items to Its Feed
+##### Update a Subscription by Adding Items to Its Feed
 
 Subscriptions are expected to be updated over time. The same expectation applies to the feeds distributing your playground subscriptions. To add, remove, or update a subscription, first create a new or updated playground book. Then adjust the JSON feed so it corresponds to the updates you’ve just made.
 
@@ -145,9 +152,10 @@ The example below shows a feed with two playground books that make up the whole 
 
 ## See Also
 
-- [Localizing a Subscription Feed](localizing-a-subscription-feed.md)
+### Subscriptions
+- [Localizing a Subscription Feed](./localizing-a-subscription-feed.md)
   Provide multiple localizations of a subscription’s content in a single feed.
-- [Publishing a Subscription](publishing-a-subscription.md)
+- [Publishing a Subscription](./publishing-a-subscription.md)
   Make the playground books in a series available online for download and subscription.
 
 

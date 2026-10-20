@@ -1,7 +1,8 @@
 # controlPointInterpolation
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Type of the interpolation method used while processing control points.
 
@@ -20,15 +21,16 @@ var controlPointInterpolation: ImmersiveDynamicMask.ControlPointInterpolation
 
 ## See Also
 
-- [var edgeTreatment: ImmersiveDynamicMask.EdgeTreatment](immersivedynamicmask/edgetreatment-swift.property.md)
+### Instance Properties
+- [var edgeTreatment: ImmersiveDynamicMask.EdgeTreatment](./edgetreatment-swift.property.md)
   The edge treatment type used for the immersive media mask.
-- [var edgeWidthInDegrees: Float](immersivedynamicmask/edgewidthindegrees.md)
+- [var edgeWidthInDegrees: Float](./edgewidthindegrees.md)
   The edge width in degrees used for the dynamic mask generation.
-- [var leftControlPoints: [Point3DFloat]](immersivedynamicmask/leftcontrolpoints.md)
+- [var leftControlPoints: [Point3DFloat]](./leftcontrolpoints.md)
   The left eye control points.
-- [var name: String](immersivedynamicmask/name.md)
+- [var name: String](./name.md)
   A unique name string of the dynamic mask.
-- [var rightControlPoints: [Point3DFloat]](immersivedynamicmask/rightcontrolpoints.md)
+- [var rightControlPoints: [Point3DFloat]](./rightcontrolpoints.md)
   The right eye control points.
 
 

@@ -1,15 +1,16 @@
 # animation
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The animation that the system applies to this caption.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@ The animation that the system applies to this caption.
 var animation: AVCaption.Animation { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCaptionAnimation animation;
+```
+
 ## See Also
 
-- [AVCaption.Animation](avcaption/animation-swift.enum.md)
+### Accessing animation
+- [AVCaption.Animation](./animation-swift.enum.md)
   Animation options for a caption.
 
 

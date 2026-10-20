@@ -1,7 +1,8 @@
 # checkIsAssignedDocument(_:completion:)
 
 **Framework**: ClassKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.4+
@@ -13,7 +14,15 @@
 ## Declaration
 
 ```swift
+func checkIsAssignedDocument(_ documentURL: URL, completion: @escaping @Sendable (Bool, (any Error)?) -> Void)
+```
+
+```swift
 func isAssignedDocument(_ documentURL: URL) async throws -> Bool
+```
+
+```objc
+- (void) checkIsAssignedDocument:(NSURL *) documentURL completion:(void (^)(BOOL isAssignedDocument, NSError *error)) completion;
 ```
 
 #### Discussion
@@ -22,7 +31,7 @@ Determines whether a URL to the document was assigned to the student.
 
 This method checks if the document at the specified URL is assigned to the current student signed into the device.
 
-```None
+```
            This is particularly useful for implementing student-specific workflows, such as:
            - Showing submission UI only for assigned documents
            - Displaying assignment-specific metadata or instructions
@@ -43,7 +52,7 @@ This method checks if the document at the specified URL is assigned to the curre
 
 [[CLSDataStore shared] checkIsAssignedDocument:documentURL completion:^(BOOL isAssignedDocument, NSError * _Nullable error) { dispatch_async(dispatch_get_main_queue(), ^{ if (error) { NSLog(@“Error checking assignment status: %@”, error); return; }
 
-```None
+```
     if (isAssignedDocument) {
         // Show UI with submission options
         [self showAssignedDocumentSubmissionUI];
@@ -59,8 +68,10 @@ This method checks if the document at the specified URL is assigned to the curre
 ## Parameters
 
 - `documentURL`: The file URL of the document to check.
-- `completion`: A block called when the check is complete. The block takes two parameters: - isAssignedDocument: A Boolean indicating whether the document is assigned to the current user.
-- error: An error object if the check failed, or nil if successful.
+- `completion`: A block called when the check is complete. The block takes two parameters:
+
+  - isAssignedDocument: A Boolean indicating whether the document is assigned to the current user.
+  - error: An error object if the check failed, or nil if successful.
 
 
 ---

@@ -1,22 +1,27 @@
 # MTLOriginMake(_:_:_:)
 
 **Framework**: Metal  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new origin with the specified coordinates.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func MTLOriginMake(_ x: Int, _ y: Int, _ z: Int) -> MTLOrigin
+```
+
+```c
+static MTLOrigin MTLOriginMake(NSUInteger x, NSUInteger y, NSUInteger z);
 ```
 
 #### Return Value
@@ -31,9 +36,10 @@ The specified origin point.
 
 ## See Also
 
-- [init()](mtlorigin/init.md)
+### Creating origin points
+- [init()](./mtlorigin/init%28%29.md)
   Initializes a new origin.
-- [init(x: Int, y: Int, z: Int)](mtlorigin/init(x:y:z:).md)
+- [init(x: Int, y: Int, z: Int)](./mtlorigin/init%28x,y,z%29.md)
   Initializes a new origin with the specified coordinates.
 
 

@@ -1,7 +1,8 @@
 # applicationAccessibilityEnabledDidChangeNotification
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted when the value returned by `AXApplicationAccessibilityEnabled()` changes.
 
@@ -18,6 +19,10 @@ Posted when the value returned by `AXApplicationAccessibilityEnabled()` changes.
 
 ```swift
 static let applicationAccessibilityEnabledDidChangeNotification: NSNotification.Name
+```
+
+```c
+extern NSNotificationName const AXApplicationAccessibilityEnabledDidChangeNotification;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # kSecMatchBits
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The access control list should be owned by users whose ID matches the specified user ID or who are members of a group whose ID matches the specified group ID parameter.
 
@@ -18,6 +19,10 @@ The access control list should be owned by users whose ID matches the specified 
 
 ```swift
 var kSecMatchBits: Int { get }
+```
+
+```c
+kSecMatchBits
 ```
 
 

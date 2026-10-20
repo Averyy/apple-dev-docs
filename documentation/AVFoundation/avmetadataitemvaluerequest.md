@@ -1,7 +1,8 @@
 # AVMetadataItemValueRequest
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that responds to a request to load the value of a metadata item.
 
@@ -20,31 +21,36 @@ An object that responds to a request to load the value of a metadata item.
 class AVMetadataItemValueRequest
 ```
 
+```objc
+@interface AVMetadataItemValueRequest : NSObject
+```
+
 ## Topics
 
 ### Handling the response
-- [func respond(value: any NSCopying & NSObjectProtocol)](avmetadataitemvaluerequest/respond(value:).md)
+- [func respond(value: any NSCopying & NSObjectProtocol)](./avmetadataitemvaluerequest/respond%28value%29.md)
   Returns the metadata item’s value.
-- [func respond(error: any Error)](avmetadataitemvaluerequest/respond(error:).md)
+- [func respond(error: any Error)](./avmetadataitemvaluerequest/respond%28error%29.md)
   Returns an error when the system fails to load the value.
-- [var metadataItem: AVMetadataItem?](avmetadataitemvaluerequest/metadataitem.md)
+- [var metadataItem: AVMetadataItem?](./avmetadataitemvaluerequest/metadataitem.md)
   The metadata item to request a value for.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [init(propertiesOfMetadataItem: AVMetadataItem, valueLoadingHandler: (AVMetadataItemValueRequest) -> Void)](avmetadataitem/init(propertiesofmetadataitem:valueloadinghandler:).md)
+### Creating a metadata item
+- [init(propertiesOfMetadataItem: AVMetadataItem, valueLoadingHandler: (AVMetadataItemValueRequest) -> Void)](./avmetadataitem/init%28propertiesofmetadataitem,valueloadinghandler%29.md)
   Creates a metadata item whose value loads on an on-demand basis only.
 
 

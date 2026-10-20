@@ -1,7 +1,8 @@
 # addTask(priority:operation:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a child task to the group.
 
@@ -19,6 +20,8 @@ Adds a child task to the group.
 ```swift
 mutating func addTask(priority: TaskPriority? = nil, operation: sending @escaping @isolated(any) () async throws -> Void)
 ```
+
+Available when `Failure` conforms to `Error`.
 
 #### Discussion
 

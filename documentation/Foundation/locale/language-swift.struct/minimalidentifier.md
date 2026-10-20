@@ -1,7 +1,8 @@
 # minimalIdentifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a BCP-47 identifier in a minimalist form. Script and region may be omitted. For example, “zh-TW”, “en”
 

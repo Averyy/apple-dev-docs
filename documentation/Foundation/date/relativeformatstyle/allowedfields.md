@@ -1,7 +1,8 @@
 # allowedFields
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fields that can be used in the formatted output.
 

@@ -1,7 +1,8 @@
 # numberOfColumns
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of columns in the text table.
 
@@ -14,9 +15,14 @@ The number of columns in the text table.
 var numberOfColumns: Int { get set }
 ```
 
+```objc
+@property NSInteger numberOfColumns;
+```
+
 ## See Also
 
-- [class NSTextTableBlock](nstexttableblock.md)
+### Related Documentation
+- [class NSTextTableBlock](../nstexttableblock.md)
   A text block that appears as a cell in a text table.
 
 

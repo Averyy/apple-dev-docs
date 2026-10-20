@@ -1,7 +1,8 @@
 # DeliveredVerificationCodesManager
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -20,19 +21,19 @@ struct DeliveredVerificationCodesManager
 ## Topics
 
 ### Instance Methods
-- [func consumeOneTimeCode(ASVerificationCode) async throws](deliveredverificationcodesmanager/consumeonetimecode(_:).md)
+- [func consumeOneTimeCode(ASVerificationCode) async throws](./deliveredverificationcodesmanager/consumeonetimecode%28_%29.md)
   Mark a one-time code as “consumed” by the current process.
 - [func oneTimeCodes(preferredDuration: TimeInterval) async throws -> some AsyncSequence<ASVerificationCode, any Error>
-](deliveredverificationcodesmanager/onetimecodes(preferredduration:).md)
+](./deliveredverificationcodesmanager/onetimecodes%28preferredduration%29.md)
   Stream one-time codes received by the system.
 ### Type Aliases
-- [DeliveredVerificationCodesManager.VerificationError](deliveredverificationcodesmanager/verificationerror.md)
+- [DeliveredVerificationCodesManager.VerificationError](./deliveredverificationcodesmanager/verificationerror.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

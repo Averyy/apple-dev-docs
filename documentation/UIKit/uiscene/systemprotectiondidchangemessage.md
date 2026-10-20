@@ -1,7 +1,8 @@
 # UIScene.SystemProtectionDidChangeMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -17,15 +18,15 @@ struct SystemProtectionDidChangeMessage
 ## Topics
 
 ### Initializers
-- [init(scene: UIScene)](uiscene/systemprotectiondidchangemessage/init(scene:).md)
+- [init(scene: UIScene)](./systemprotectiondidchangemessage/init%28scene%29.md)
 ### Instance Properties
-- [var scene: UIScene](uiscene/systemprotectiondidchangemessage/scene.md)
+- [var scene: UIScene](./systemprotectiondidchangemessage/scene.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

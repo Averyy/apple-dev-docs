@@ -1,7 +1,8 @@
 # elementFocusedNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that UIKit posts when an assistive app focuses on an accessibility element.
 
@@ -20,23 +21,28 @@ nonisolated
 static let elementFocusedNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIAccessibilityElementFocusedNotification;
+```
+
 #### Discussion
 
-Retrieve the [`focusedElementUserInfoKey`](uiaccessibility/focusedelementuserinfokey.md) key from the [`userInfo`](https://developer.apple.com/documentation/foundation/nsnotification/userinfo) dictionary to get the identity of the focused accessibility element.
+Retrieve the [`focusedElementUserInfoKey`](./focusedelementuserinfokey.md) key from the [`userInfo`](../../Foundation/nsnotification/userinfo.md) dictionary to get the identity of the focused accessibility element.
 
 ## See Also
 
-- [static let screenChanged: UIAccessibility.Notification](uiaccessibility/notification/screenchanged.md)
+### UI changes
+- [static let screenChanged: UIAccessibility.Notification](./notification/screenchanged.md)
   A notification that an app posts when a new view appears that occupies a major portion of the screen.
-- [static let layoutChanged: UIAccessibility.Notification](uiaccessibility/notification/layoutchanged.md)
+- [static let layoutChanged: UIAccessibility.Notification](./notification/layoutchanged.md)
   A notification that an app posts when the layout of a screen changes.
-- [static let pageScrolled: UIAccessibility.Notification](uiaccessibility/notification/pagescrolled.md)
+- [static let pageScrolled: UIAccessibility.Notification](./notification/pagescrolled.md)
   A notification that an app posts when a scroll action completes.
-- [static let switchControlStatusDidChangeNotification: NSNotification.Name](uiaccessibility/switchcontrolstatusdidchangenotification.md)
+- [static let switchControlStatusDidChangeNotification: NSNotification.Name](./switchcontrolstatusdidchangenotification.md)
   A notification that UIKit posts when the system’s Switch Control setting changes.
-- [static let reduceTransparencyStatusDidChangeNotification: NSNotification.Name](uiaccessibility/reducetransparencystatusdidchangenotification.md)
+- [static let reduceTransparencyStatusDidChangeNotification: NSNotification.Name](./reducetransparencystatusdidchangenotification.md)
   A notification that UIKit posts when the system’s Reduce Transparency setting changes.
-- [static let buttonShapesEnabledStatusDidChangeNotification: NSNotification.Name](uiaccessibility/buttonshapesenabledstatusdidchangenotification.md)
+- [static let buttonShapesEnabledStatusDidChangeNotification: NSNotification.Name](./buttonshapesenabledstatusdidchangenotification.md)
   A notification that UIKit posts when the system’s Button Shapes setting changes.
 
 

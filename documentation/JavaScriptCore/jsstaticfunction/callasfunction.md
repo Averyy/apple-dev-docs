@@ -1,7 +1,8 @@
 # callAsFunction
 
 **Framework**: JavaScriptCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A callback to invoke when calling the property as a function.
 
@@ -19,11 +20,16 @@ A callback to invoke when calling the property as a function.
 var callAsFunction: JSObjectCallAsFunctionCallback!
 ```
 
+```c
+JSObjectCallAsFunctionCallback callAsFunction;
+```
+
 ## See Also
 
-- [var name: UnsafePointer<CChar>!](jsstaticfunction/name.md)
+### Accessing Static Function Information
+- [var name: UnsafePointer<CChar>!](./name.md)
   A null-terminated UTF-8 string that contains the property’s name.
-- [var attributes: JSPropertyAttributes](jsstaticfunction/attributes.md)
+- [var attributes: JSPropertyAttributes](./attributes.md)
   A set of property attributes to give to the property.
 
 

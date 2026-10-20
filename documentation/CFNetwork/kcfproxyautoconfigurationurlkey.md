@@ -1,7 +1,8 @@
 # kCFProxyAutoConfigurationURLKey
 
 **Framework**: CFNetwork  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -17,19 +18,24 @@
 let kCFProxyAutoConfigurationURLKey: CFString
 ```
 
+```c
+extern CFStringRef const kCFProxyAutoConfigurationURLKey;
+```
+
 #### Discussion
 
 A `CFURL` value specifying the location of the proxy autoconfiguration (PAC) file. This key is only present for proxies of type `kCFProxyTypeAutoConfigurationURL`.
 
 ## See Also
 
-- [let kCFProxyAutoConfigurationHTTPResponseKey: CFString](kcfproxyautoconfigurationhttpresponsekey.md)
-- [let kCFProxyAutoConfigurationJavaScriptKey: CFString](kcfproxyautoconfigurationjavascriptkey.md)
-- [let kCFProxyHostNameKey: CFString](kcfproxyhostnamekey.md)
-- [let kCFProxyPasswordKey: CFString](kcfproxypasswordkey.md)
-- [let kCFProxyPortNumberKey: CFString](kcfproxyportnumberkey.md)
-- [let kCFProxyTypeKey: CFString](kcfproxytypekey.md)
-- [let kCFProxyUsernameKey: CFString](kcfproxyusernamekey.md)
+### Constants
+- [let kCFProxyAutoConfigurationHTTPResponseKey: CFString](./kcfproxyautoconfigurationhttpresponsekey.md)
+- [let kCFProxyAutoConfigurationJavaScriptKey: CFString](./kcfproxyautoconfigurationjavascriptkey.md)
+- [let kCFProxyHostNameKey: CFString](./kcfproxyhostnamekey.md)
+- [let kCFProxyPasswordKey: CFString](./kcfproxypasswordkey.md)
+- [let kCFProxyPortNumberKey: CFString](./kcfproxyportnumberkey.md)
+- [let kCFProxyTypeKey: CFString](./kcfproxytypekey.md)
+- [let kCFProxyUsernameKey: CFString](./kcfproxyusernamekey.md)
 
 
 ---

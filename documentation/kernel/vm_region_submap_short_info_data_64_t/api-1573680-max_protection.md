@@ -1,14 +1,15 @@
 # max_protection
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 vm_prot_t max_protection;
 ```
 

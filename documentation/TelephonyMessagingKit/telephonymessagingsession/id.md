@@ -1,7 +1,8 @@
 # id
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Identifier for this session.
 

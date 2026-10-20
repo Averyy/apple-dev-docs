@@ -1,7 +1,8 @@
 # default()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a new default configuration that is persistent and not unique.
 
@@ -18,13 +19,18 @@ Returns a new default configuration that is persistent and not unique.
 class func `default`() -> Self
 ```
 
+```objc
++ (instancetype) defaultConfiguration;
+```
+
 #### Discussion
 
-If a [`WKWebExtensionController`](wkwebextensioncontroller.md) is associated with a persistent configuration, data will be written to the file system in a common location. When using multiple extension controllers, each controller should use a unique configuration to avoid conflicts.
+If a [`WKWebExtensionController`](../../wkwebextensioncontroller.md) is associated with a persistent configuration, data will be written to the file system in a common location. When using multiple extension controllers, each controller should use a unique configuration to avoid conflicts.
 
 ## See Also
 
-- [convenience init(identifier: UUID)](wkwebextensioncontroller/configuration-swift.class/init(identifier:).md)
+### Related Documentation
+- [convenience init(identifier: UUID)](./init%28identifier%29.md)
   Returns a new configuration that is persistent and unique for the specified identifier.
 
 

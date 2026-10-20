@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An instance that represents a prompt.
@@ -20,6 +21,14 @@ An instance that represents a prompt.
 @PromptBuilder
 var promptRepresentation: Prompt { get }
 ```
+
+## Default Implementations
+
+### PromptRepresentable Implementations
+- [var promptRepresentation: Prompt](./promptrepresentation-2c9rm.md)
+  An instance that represents a prompt.
+- [var promptRepresentation: Prompt](./promptrepresentation-8msla.md)
+  An instance that represents a prompt.
 
 
 ---

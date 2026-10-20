@@ -1,7 +1,8 @@
 # init(score:duration:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that represents the importance of a widget and the length of time for WidgetKit to consider it for rotation to the top of the stack.
 

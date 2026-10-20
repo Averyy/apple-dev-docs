@@ -1,7 +1,8 @@
 # helpAnchor
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized help anchor for the error.
 

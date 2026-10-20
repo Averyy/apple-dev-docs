@@ -1,7 +1,8 @@
 # subtracting(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new compression options object with the supplied options removed.
 
@@ -14,6 +15,10 @@ Creates a new compression options object with the supplied options removed.
 func subtracting(_ options: NSUserInterfaceCompressionOptions) -> NSUserInterfaceCompressionOptions
 ```
 
+```objc
+- (NSUserInterfaceCompressionOptions *) optionsByRemovingOptions:(NSUserInterfaceCompressionOptions *) options;
+```
+
 #### Return Value
 
 A new `NSCompressibleUserInterfaceOptions` object with the supplied options removed.
@@ -24,7 +29,8 @@ A new `NSCompressibleUserInterfaceOptions` object with the supplied options remo
 
 ## See Also
 
-- [func union(NSUserInterfaceCompressionOptions) -> NSUserInterfaceCompressionOptions](nsuserinterfacecompressionoptions/union(_:).md)
+### Combining compression options
+- [func union(NSUserInterfaceCompressionOptions) -> NSUserInterfaceCompressionOptions](./union%28_%29.md)
   Creates a new compression options object representing the union with the provided options.
 
 

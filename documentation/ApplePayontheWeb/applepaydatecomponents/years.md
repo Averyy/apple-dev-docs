@@ -1,7 +1,8 @@
 # years
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A number that represents a year.
 
@@ -11,17 +12,18 @@ A number that represents a year.
 
 ## Declaration
 
-```swift
+```
 long years;
 ```
 
 ## See Also
 
-- [months](applepaydatecomponents/months.md)
+### Date Components
+- [months](./months.md)
   A number between 1 and 12 that represents a month.
-- [days](applepaydatecomponents/days.md)
+- [days](./days.md)
   A number that represents a day.
-- [hours](applepaydatecomponents/hours.md)
+- [hours](./hours.md)
   A number that represents an hour.
 
 

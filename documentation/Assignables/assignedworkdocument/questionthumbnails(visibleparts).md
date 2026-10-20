@@ -1,7 +1,8 @@
 # questionThumbnails(visibleParts:)
 
 **Framework**: Assignables  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Produces thumbnails of question regions within the document.
 
@@ -9,7 +10,7 @@ Produces thumbnails of question regions within the document.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,7 +20,7 @@ func questionThumbnails(visibleParts: [AssignedWorkDocument.PartID]) async -> [A
 
 #### Return Value
 
-A dictionary of [`AssignableDocument.Question.ID`](assignabledocument/question/id-swift.typealias.md): array of [`AssignableDocument.Question.Thumbnail`](assignabledocument/question/thumbnail.md).
+A dictionary of [`AssignableDocument.Question.ID`](../assignabledocument/question/id-swift.typealias.md): array of [`AssignableDocument.Question.Thumbnail`](../assignabledocument/question/thumbnail.md).
 
 ## Parameters
 

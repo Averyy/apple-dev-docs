@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that the restriction associated with the identifier has changed state.
@@ -10,13 +11,17 @@ Tells the delegate that the restriction associated with the identifier has chang
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func guidedAccessRestriction(withIdentifier restrictionIdentifier: String, didChange newRestrictionState: UIAccessibility.GuidedAccessRestrictionState)
+```
+
+```objc
+- (void) guidedAccessRestrictionWithIdentifier:(NSString *) restrictionIdentifier didChangeState:(UIGuidedAccessRestrictionState) newRestrictionState;
 ```
 
 #### Discussion
@@ -30,7 +35,8 @@ Your app should adjust its behavior to allow or deny the operation controlled by
 
 ## See Also
 
-- [UIAccessibility.GuidedAccessRestrictionState](uiaccessibility/guidedaccessrestrictionstate.md)
+### Implementing restrictions
+- [UIAccessibility.GuidedAccessRestrictionState](../uiaccessibility/guidedaccessrestrictionstate.md)
   Constants that describe the state of a restriction, either allow or deny.
 
 

@@ -1,7 +1,8 @@
 # displayName(forLocaleIdentifier:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the display name for the selector that best matches the specified locale identifier.
 
@@ -20,9 +21,14 @@ Returns the display name for the selector that best matches the specified locale
 func displayName(forLocaleIdentifier localeIdentifier: String) -> String
 ```
 
+```objc
+- (NSString *) displayNameForLocaleIdentifier:(NSString *) localeIdentifier;
+```
+
 ## See Also
 
-- [var identifier: String](avmediapresentationselector/identifier.md)
+### Identifying the selector
+- [var identifier: String](./identifier.md)
   Provides the authored identifier for the selector.
 
 

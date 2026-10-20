@@ -1,7 +1,8 @@
 # version
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extension version.
 
@@ -16,6 +17,10 @@ The extension version.
 
 ```swift
 var version: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * version;
 ```
 
 #### Discussion

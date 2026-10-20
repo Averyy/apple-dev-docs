@@ -1,7 +1,8 @@
 # Calendar.RepeatedTimePolicy.first
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 If there are two or more matching times (all the components are the same, including isLeapMonth) before the end of the next instance of the next higher component to the highest specified component, then the algorithm will return the first occurrence.
 
@@ -22,7 +23,8 @@ case first
 
 ## See Also
 
-- [Calendar.RepeatedTimePolicy.last](calendar/repeatedtimepolicy/last.md)
+### Enumeration Cases
+- [Calendar.RepeatedTimePolicy.last](./last.md)
   If there are two or more matching times (all the components are the same, including isLeapMonth) before the end of the next instance of the next higher component to the highest specified component, then the algorithm will return the last occurrence.
 
 

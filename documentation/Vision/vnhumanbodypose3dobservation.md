@@ -1,7 +1,8 @@
 # VNHumanBodyPose3DObservation
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An observation that provides the 3D body points the request recognizes.
 
@@ -19,79 +20,84 @@ An observation that provides the 3D body points the request recognizes.
 class VNHumanBodyPose3DObservation
 ```
 
+```objc
+@interface VNHumanBodyPose3DObservation : VNRecognizedPoints3DObservation
+```
+
 ## Mentions
 
-- [Identifying 3D human body poses in images](identifying-3d-human-body-poses-in-images.md)
+- [Identifying 3D human body poses in images](./identifying-3d-human-body-poses-in-images.md)
 
 ## Topics
 
 ### Accessing Points
-- [var availableJointNames: [VNHumanBodyPose3DObservation.JointName]](vnhumanbodypose3dobservation/availablejointnames.md)
+- [var availableJointNames: [VNHumanBodyPose3DObservation.JointName]](./vnhumanbodypose3dobservation/availablejointnames.md)
   The names of the available joints in the observation.
-- [VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname.md)
+- [VNHumanBodyPose3DObservation.JointName](./vnhumanbodypose3dobservation/jointname.md)
   The joint names for a 3D body pose.
-- [var availableJointsGroupNames: [VNHumanBodyPose3DObservation.JointsGroupName]](vnhumanbodypose3dobservation/availablejointsgroupnames.md)
+- [var availableJointsGroupNames: [VNHumanBodyPose3DObservation.JointsGroupName]](./vnhumanbodypose3dobservation/availablejointsgroupnames.md)
   The available joint group names in the observation.
-- [VNHumanBodyPose3DObservation.JointsGroupName](vnhumanbodypose3dobservation/jointsgroupname.md)
+- [VNHumanBodyPose3DObservation.JointsGroupName](./vnhumanbodypose3dobservation/jointsgroupname.md)
   The joint group names for a 3D body pose.
-- [func recognizedPoint(VNHumanBodyPose3DObservation.JointName) throws -> VNHumanBodyRecognizedPoint3D](vnhumanbodypose3dobservation/recognizedpoint(_:).md)
+- [func recognizedPoint(VNHumanBodyPose3DObservation.JointName) throws -> VNHumanBodyRecognizedPoint3D](./vnhumanbodypose3dobservation/recognizedpoint%28_%29.md)
   Returns the point for a joint name that the observation recognizes.
-- [func recognizedPoints(VNHumanBodyPose3DObservation.JointsGroupName) throws -> [VNHumanBodyPose3DObservation.JointName : VNHumanBodyRecognizedPoint3D]](vnhumanbodypose3dobservation/recognizedpoints(_:).md)
+- [func recognizedPoints(VNHumanBodyPose3DObservation.JointsGroupName) throws -> [VNHumanBodyPose3DObservation.JointName : VNHumanBodyRecognizedPoint3D]](./vnhumanbodypose3dobservation/recognizedpoints%28_%29.md)
   Returns a collection of points for the group name you specify.
 ### Getting the Joint Position
-- [func pointInImage(VNHumanBodyPose3DObservation.JointName) throws -> VNPoint](vnhumanbodypose3dobservation/pointinimage(_:).md)
+- [func pointInImage(VNHumanBodyPose3DObservation.JointName) throws -> VNPoint](./vnhumanbodypose3dobservation/pointinimage%28_%29.md)
   Returns a 2D point for the joint name you specify, relative to the input image.
 ### Getting the Parent Joint Name
-- [func parentJointName(VNHumanBodyPose3DObservation.JointName) -> VNHumanBodyPose3DObservation.JointName?](vnhumanbodypose3dobservation/parentjointname(_:).md)
+- [func parentJointName(VNHumanBodyPose3DObservation.JointName) -> VNHumanBodyPose3DObservation.JointName?](./vnhumanbodypose3dobservation/parentjointname%28_%29.md)
   Returns the parent joint of the joint name you specify.
 ### Getting the Body Height
-- [var heightEstimation: VNHumanBodyPose3DObservation.HeightEstimation](vnhumanbodypose3dobservation/heightestimation-swift.property.md)
+- [var heightEstimation: VNHumanBodyPose3DObservation.HeightEstimation](./vnhumanbodypose3dobservation/heightestimation-swift.property.md)
   The technique the framework uses to estimate body height.
-- [VNHumanBodyPose3DObservation.HeightEstimation](vnhumanbodypose3dobservation/heightestimation-swift.enum.md)
+- [VNHumanBodyPose3DObservation.HeightEstimation](./vnhumanbodypose3dobservation/heightestimation-swift.enum.md)
   Constants that identify body height estimation techniques.
-- [var bodyHeight: Float](vnhumanbodypose3dobservation/bodyheight.md)
+- [var bodyHeight: Float](./vnhumanbodypose3dobservation/bodyheight.md)
   The estimated human body height, in meters.
 ### Getting the Camera Position
-- [var cameraOriginMatrix: simd_float4x4](vnhumanbodypose3dobservation/cameraoriginmatrix.md)
+- [var cameraOriginMatrix: simd_float4x4](./vnhumanbodypose3dobservation/cameraoriginmatrix.md)
   A transform from the skeleton hip to the camera.
-- [func cameraRelativePosition(VNHumanBodyPose3DObservation.JointName) throws -> simd_float4x4](vnhumanbodypose3dobservation/camerarelativeposition(_:).md)
+- [func cameraRelativePosition(VNHumanBodyPose3DObservation.JointName) throws -> simd_float4x4](./vnhumanbodypose3dobservation/camerarelativeposition%28_%29.md)
   Returns a position relative to the camera for the body joint you specify.
 
 ## Relationships
 
 ### Inherits From
-- [VNRecognizedPoints3DObservation](vnrecognizedpoints3dobservation.md)
+- [VNRecognizedPoints3DObservation](./vnrecognizedpoints3dobservation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [VNRequestRevisionProviding](./vnrequestrevisionproviding.md)
 
 ## See Also
 
-- [Identifying 3D human body poses in images](identifying-3d-human-body-poses-in-images.md)
+### 3D body pose detection
+- [Identifying 3D human body poses in images](./identifying-3d-human-body-poses-in-images.md)
   Detect three-dimensional human body poses using the Vision framework.
-- [Detecting human body poses in 3D with Vision](detecting-human-body-poses-in-3d-with-vision.md)
+- [Detecting human body poses in 3D with Vision](./detecting-human-body-poses-in-3d-with-vision.md)
   Render skeletons of 3D body pose points in a scene overlaying the input image.
-- [class VNDetectHumanBodyPose3DRequest](vndetecthumanbodypose3drequest.md)
+- [class VNDetectHumanBodyPose3DRequest](./vndetecthumanbodypose3drequest.md)
   A request that detects points on human bodies in 3D space, relative to the camera.
-- [class VNRecognizedPoints3DObservation](vnrecognizedpoints3dobservation.md)
+- [class VNRecognizedPoints3DObservation](./vnrecognizedpoints3dobservation.md)
   An observation that provides the 3D points for a request.
-- [class VNHumanBodyRecognizedPoint3D](vnhumanbodyrecognizedpoint3d.md)
+- [class VNHumanBodyRecognizedPoint3D](./vnhumanbodyrecognizedpoint3d.md)
   A recognized 3D point that includes a parent joint.
-- [class VNPoint3D](vnpoint3d.md)
+- [class VNPoint3D](./vnpoint3d.md)
   An object that represents a 3D point in an image.
-- [class VNRecognizedPoint3D](vnrecognizedpoint3d.md)
+- [class VNRecognizedPoint3D](./vnrecognizedpoint3d.md)
   A 3D point that includes an identifier to the point.
-- [VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname.md)
+- [VNHumanBodyPose3DObservation.JointName](./vnhumanbodypose3dobservation/jointname.md)
   The joint names for a 3D body pose.
-- [VNHumanBodyPose3DObservation.JointsGroupName](vnhumanbodypose3dobservation/jointsgroupname.md)
+- [VNHumanBodyPose3DObservation.JointsGroupName](./vnhumanbodypose3dobservation/jointsgroupname.md)
   The joint group names for a 3D body pose.
 
 

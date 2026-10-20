@@ -1,7 +1,8 @@
 # registryDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var registryDidChange: NotificationCenter.BaseMessageIdentifier<NSImageRep.RegistryDidChangeMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSImageRep.RegistryDidChangeMessage>`.
 
 
 ---

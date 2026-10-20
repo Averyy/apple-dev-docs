@@ -1,7 +1,8 @@
 # customData
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Custom metadata authored alongside the reference.
 

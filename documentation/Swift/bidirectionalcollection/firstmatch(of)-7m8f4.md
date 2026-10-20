@@ -1,7 +1,8 @@
 # firstMatch(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first match of the specified regex within the collection.
 
@@ -19,6 +20,8 @@ Returns the first match of the specified regex within the collection.
 ```swift
 func firstMatch<Output>(of r: some RegexComponent) -> Regex<Output>.Match?
 ```
+
+Available when `SubSequence` is `Substring`.
 
 #### Return Value
 

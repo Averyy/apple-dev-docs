@@ -2,6 +2,7 @@
 
 **Framework**: Core ML  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Initializes the custom layer implementation.
@@ -21,15 +22,19 @@ Initializes the custom layer implementation.
 init(parameters: [String : Any]) throws
 ```
 
+```objc
+- (instancetype) initWithParameterDictionary:(NSDictionary<NSString *,id> *) parameters error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Creating and Integrating a Model with Custom Layers](creating-and-integrating-a-model-with-custom-layers.md)
+- [Creating and Integrating a Model with Custom Layers](../creating-and-integrating-a-model-with-custom-layers.md)
 
 #### Discussion
 
 Implement this method to initialize your custom layer. It is called once, at load time. Use the parameters to configure the custom layer as needed.
 
-If the layer cannot be initialized, your implementation should throw a [`customLayer`](mlmodelerror-swift.struct/customlayer.md) error.
+If the layer cannot be initialized, your implementation should throw a [`customLayer`](../mlmodelerror-swift.struct/customlayer.md) error.
 
 ## Parameters
 

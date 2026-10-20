@@ -1,7 +1,8 @@
 # elements
 
 **Framework**: GSS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to an array of buffer descriptors.
 
@@ -18,9 +19,14 @@ A pointer to an array of buffer descriptors.
 var elements: UnsafeMutablePointer<gss_buffer_desc>!
 ```
 
+```c
+gss_buffer_desc * elements;
+```
+
 ## See Also
 
-- [var count: Int](gss_buffer_set_desc_struct/count.md)
+### Instance Properties
+- [var count: Int](./count.md)
   The number of buffer descriptors in the array.
 
 

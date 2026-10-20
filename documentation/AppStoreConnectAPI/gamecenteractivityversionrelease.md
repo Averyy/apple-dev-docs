@@ -1,23 +1,26 @@
 # GameCenterActivityVersionRelease
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A record indicating that a version of a Game Center activity has been released to players.
 
 **Availability**:
-- App Store Connect API 4.0+
+- App Store Connect API 4.0+ - Deprecated in 4.3
+
+> **Deprecated**: This object is deprecated.
 
 ## Declaration
 
-```swift
+```
 object GameCenterActivityVersionRelease
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterActivityVersionRelease.Relationships](gamecenteractivityversionrelease/relationships-data.dictionary.md)
+- [object GameCenterActivityVersionRelease.Relationships](./gamecenteractivityversionrelease/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -25,17 +28,18 @@ object GameCenterActivityVersionRelease
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (GameCenterActivityVersionRelease.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterActivityVersionReleases`
 
 ## See Also
 
-- [object GameCenterActivityVersionReleaseCreateRequest](gamecenteractivityversionreleasecreaterequest.md)
+### Objects
+- [object GameCenterActivityVersionReleaseCreateRequest](./gamecenteractivityversionreleasecreaterequest.md)
   The request body for releasing a Game Center activity version to players.
-- [object GameCenterActivityVersionReleaseResponse](gamecenteractivityversionreleaseresponse.md)
+- [object GameCenterActivityVersionReleaseResponse](./gamecenteractivityversionreleaseresponse.md)
   A response containing a single release record for a Game Center activity version.
-- [object GameCenterActivityVersionReleasesResponse](gamecenteractivityversionreleasesresponse.md)
+- [object GameCenterActivityVersionReleasesResponse](./gamecenteractivityversionreleasesresponse.md)
   A response containing a list of release records for a Game Center activity version.
-- [object GameCenterActivityVersionResponse](gamecenteractivityversionresponse.md)
+- [object GameCenterActivityVersionResponse](./gamecenteractivityversionresponse.md)
   A response containing a single version of a Game Center activity.
 
 

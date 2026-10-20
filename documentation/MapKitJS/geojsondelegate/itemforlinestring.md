@@ -1,7 +1,8 @@
 # itemForLineString(overlay, geoJSON)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Interface Method
 
 Overrides a line string.
 
@@ -10,7 +11,7 @@ Overrides a line string.
 
 ## Declaration
 
-```swift
+```
 itemForLineString?(
     overlay: PolylineOverlay,
     geoJSON: GeoJSONTypes.LineString,
@@ -27,26 +28,27 @@ MapKit JS calls this method for each individual `LineString` geometry object. Yo
 
 ## Parameters
 
-- `overlay`: A [`PolylineOverlay`](polylineoverlay.md) object.
+- `overlay`: A [`PolylineOverlay`](../polylineoverlay.md) object.
 - `geoJSON`: The original GeoJSON object for the `LineString` object.
 
 ## See Also
 
-- [itemForFeature(item, geoJSON)](geojsondelegate/itemforfeature.md)
+### Overriding items
+- [itemForFeature(item, geoJSON)](./itemforfeature.md)
   Overrides a feature.
-- [itemForFeatureCollection(itemCollection, geoJSON)](geojsondelegate/itemforfeaturecollection.md)
+- [itemForFeatureCollection(itemCollection, geoJSON)](./itemforfeaturecollection.md)
   Overrides a feature collection.
-- [itemForMultiLineString(itemCollection, geoJSON)](geojsondelegate/itemformultilinestring.md)
+- [itemForMultiLineString(itemCollection, geoJSON)](./itemformultilinestring.md)
   Overrides a multiline string.
-- [itemForPoint(coordinate, geoJSON)](geojsondelegate/itemforpoint.md)
+- [itemForPoint(coordinate, geoJSON)](./itemforpoint.md)
   Overrides a point.
-- [itemForMultiPoint(itemCollection, geoJSON)](geojsondelegate/itemformultipoint.md)
+- [itemForMultiPoint(itemCollection, geoJSON)](./itemformultipoint.md)
   Overrides a multipoint object.
-- [itemForPolygon(overlay, geoJSON)](geojsondelegate/itemforpolygon.md)
+- [itemForPolygon(overlay, geoJSON)](./itemforpolygon.md)
   Overrides a polygon.
-- [itemForMultiPolygon(itemCollection, geoJSON)](geojsondelegate/itemformultipolygon.md)
+- [itemForMultiPolygon(itemCollection, geoJSON)](./itemformultipolygon.md)
   Overrides a multipolygon.
-- [styleForOverlay(overlay, geoJSON)](geojsondelegate/styleforoverlay.md)
+- [styleForOverlay(overlay, geoJSON)](./styleforoverlay.md)
   Overrides the style of overlays.
 
 

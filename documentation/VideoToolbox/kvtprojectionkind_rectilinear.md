@@ -1,7 +1,8 @@
 # kVTProjectionKind_Rectilinear
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -16,11 +17,16 @@
 let kVTProjectionKind_Rectilinear: CFString
 ```
 
+```c
+extern CFStringRef const kVTProjectionKind_Rectilinear;
+```
+
 ## See Also
 
-- [let kVTProjectionKind_Equirectangular: CFString](kvtprojectionkind_equirectangular.md)
-- [let kVTProjectionKind_HalfEquirectangular: CFString](kvtprojectionkind_halfequirectangular.md)
-- [let kVTProjectionKind_ParametricImmersive: CFString](kvtprojectionkind_parametricimmersive.md)
+### Projection Kinds
+- [let kVTProjectionKind_Equirectangular: CFString](./kvtprojectionkind_equirectangular.md)
+- [let kVTProjectionKind_HalfEquirectangular: CFString](./kvtprojectionkind_halfequirectangular.md)
+- [let kVTProjectionKind_ParametricImmersive: CFString](./kvtprojectionkind_parametricimmersive.md)
 
 
 ---

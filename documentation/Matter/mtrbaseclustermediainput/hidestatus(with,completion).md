@@ -1,7 +1,8 @@
 # hideStatus(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func hideStatus(with params: MTRMediaInputClusterHideInputStatusParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func hideStatus(with params: MTRMediaInputClusterHideInputStatusParams?) async throws
+```
+
+```objc
+- (void) hideInputStatusWithParams:(MTRMediaInputClusterHideInputStatusParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # Color.RGBColorSpace.sRGB
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The extended red, green, blue (sRGB) color space.
 
@@ -28,9 +29,10 @@ Standard sRGB color spaces clamp the red, green, and blue components of a color 
 
 ## See Also
 
-- [Color.RGBColorSpace.sRGBLinear](color/rgbcolorspace/srgblinear.md)
+### Getting color spaces
+- [Color.RGBColorSpace.sRGBLinear](./srgblinear.md)
   The extended sRGB color space with a linear transfer function.
-- [Color.RGBColorSpace.displayP3](color/rgbcolorspace/displayp3.md)
+- [Color.RGBColorSpace.displayP3](./displayp3.md)
   The Display P3 color space.
 
 

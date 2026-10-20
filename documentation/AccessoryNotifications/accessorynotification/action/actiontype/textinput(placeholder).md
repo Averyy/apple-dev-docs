@@ -1,7 +1,8 @@
 # AccessoryNotification.Action.ActionType.textInput(placeholder:)
 
 **Framework**: Accessory Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An action type that captures text provided by a person in response to a notification.
 
@@ -16,7 +17,7 @@ case textInput(placeholder: String)
 
 ## Mentions
 
-- [Responding to forwarded notifications](responding-to-forwarded-notifications.md)
+- [Responding to forwarded notifications](../../../responding-to-forwarded-notifications.md)
 
 ## Parameters
 
@@ -24,9 +25,10 @@ case textInput(placeholder: String)
 
 ## See Also
 
-- [AccessoryNotification.Action.ActionType.dismiss](accessorynotification/action/actiontype/dismiss.md)
+### Determining the type of action
+- [AccessoryNotification.Action.ActionType.dismiss](./dismiss.md)
   An action type that dismisses a notification.
-- [AccessoryNotification.Action.ActionType.background](accessorynotification/action/actiontype/background.md)
+- [AccessoryNotification.Action.ActionType.background](./background.md)
   An action type that handles background interactions with a notification.
 
 

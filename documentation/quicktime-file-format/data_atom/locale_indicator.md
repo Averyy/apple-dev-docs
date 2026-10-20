@@ -1,19 +1,21 @@
 # Locale indicator
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A four-byte value that indicates a locale.
 
 #### Overview
 
-See [`Locale indicator`](locale_indicator.md).
+See [Locale indicator](../locale_indicator.md).
 
 ## See Also
 
-- [Type indicator](data_atom/type_indicator.md)
+### Data fields
+- [Type indicator](./type_indicator.md)
   Four bytes that indicate a type of data that QuickTime supports.
-- [Value](data_atom/value.md)
+- [Value](./value.md)
   An array of bytes containing the value of the metadata.
 
 

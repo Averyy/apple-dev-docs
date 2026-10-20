@@ -1,7 +1,8 @@
 # languages(forScript:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the list of languages for the specified script.
 
@@ -20,6 +21,10 @@ Returns the list of languages for the specified script.
 func languages(forScript script: String) -> [String]?
 ```
 
+```objc
+- (NSArray<NSString *> *) languagesForScript:(NSString *) script;
+```
+
 #### Discussion
 
 The value of this property is an array of BCP-47 language tags, such as `"en"` or `"fr"`, that identify the languages.
@@ -30,17 +35,18 @@ The value of this property is an array of BCP-47 language tags, such as `"en"` o
 
 ## See Also
 
-- [var languageMap: [String : [String]]](nsorthography/languagemap.md)
+### Determining Correspondences Between Languages and Scripts
+- [var languageMap: [String : [String]]](./languagemap.md)
   A dictionary that maps script tags to arrays of language tags.
-- [var dominantLanguage: String](nsorthography/dominantlanguage.md)
+- [var dominantLanguage: String](./dominantlanguage.md)
   The first language in the list of languages for the dominant script.
-- [var dominantScript: String](nsorthography/dominantscript.md)
+- [var dominantScript: String](./dominantscript.md)
   The dominant script for the text.
-- [func dominantLanguage(forScript: String) -> String?](nsorthography/dominantlanguage(forscript:).md)
+- [func dominantLanguage(forScript: String) -> String?](./dominantlanguage%28forscript%29.md)
   Returns the dominant language for the specified script.
-- [var allScripts: [String]](nsorthography/allscripts.md)
+- [var allScripts: [String]](./allscripts.md)
   The scripts appearing as keys in the language map.
-- [var allLanguages: [String]](nsorthography/alllanguages.md)
+- [var allLanguages: [String]](./alllanguages.md)
   The languages appearing in values of the language map.
 
 

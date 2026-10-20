@@ -1,12 +1,13 @@
 # NSStatusBar
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages a collection of status items displayed within the system-wide menu bar.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,46 +15,51 @@ An object that manages a collection of status items displayed within the system-
 class NSStatusBar
 ```
 
+```objc
+@interface NSStatusBar : NSObject
+```
+
 #### Overview
 
-A status item (an instance of [`NSStatusItem`](nsstatusitem.md)) can be displayed with text or an icon, can provide a menu and a target-action message when clicked, or can be a fully customized view that you create. Use status items sparingly and only if the alternatives (such as a Dock menu, preference pane, or status window) are not suitable. Because there is limited space in which to display status items, status items are not guaranteed to be available at all times. For this reason, do not rely on them being available and always provide a user preference for hiding your application’s status items to free up space in the menu bar.
+A status item (an instance of [`NSStatusItem`](./nsstatusitem.md)) can be displayed with text or an icon, can provide a menu and a target-action message when clicked, or can be a fully customized view that you create. Use status items sparingly and only if the alternatives (such as a Dock menu, preference pane, or status window) are not suitable. Because there is limited space in which to display status items, status items are not guaranteed to be available at all times. For this reason, do not rely on them being available and always provide a user preference for hiding your application’s status items to free up space in the menu bar.
 
 ## Topics
 
 ### Getting the System-Wide Instance
-- [class var system: NSStatusBar](nsstatusbar/system.md)
+- [class var system: NSStatusBar](./nsstatusbar/system.md)
   Returns the system-wide status bar located in the menu bar.
 ### Managing Status items
-- [func statusItem(withLength: CGFloat) -> NSStatusItem](nsstatusbar/statusitem(withlength:).md)
+- [func statusItem(withLength: CGFloat) -> NSStatusItem](./nsstatusbar/statusitem%28withlength%29.md)
   Returns a newly created status item that has been allotted a specified space within the status bar.
-- [func removeStatusItem(NSStatusItem)](nsstatusbar/removestatusitem(_:).md)
+- [func removeStatusItem(NSStatusItem)](./nsstatusbar/removestatusitem%28_%29.md)
   Removes the specified status item from the receiver.
 ### Getting Status-Bar Attributes
-- [var isVertical: Bool](nsstatusbar/isvertical.md)
+- [var isVertical: Bool](./nsstatusbar/isvertical.md)
   A Boolean value indicating whether the status bar has a vertical orientation.
-- [var thickness: CGFloat](nsstatusbar/thickness.md)
+- [var thickness: CGFloat](./nsstatusbar/thickness.md)
   The thickness of the status bar, in pixels.
 ### Constants
-- [Status Bar Item Length](status-bar-item-length.md)
-  Constants used by the [`statusItem(withLength:)`](nsstatusbar/statusitem(withlength:).md) method.
+- [Status Bar Item Length](./status-bar-item-length.md)
+  Constants used by the [`statusItem(withLength:)`](./nsstatusbar/statusitem%28withlength%29.md) method.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSStatusItem](nsstatusitem.md)
+### Menu Bar Items
+- [class NSStatusItem](./nsstatusitem.md)
   An individual element displayed in the system menu bar.
-- [class NSStatusBarButton](nsstatusbarbutton.md)
+- [class NSStatusBarButton](./nsstatusbarbutton.md)
   The appearance and behavior of an item in the systemwide menu bar.
 
 

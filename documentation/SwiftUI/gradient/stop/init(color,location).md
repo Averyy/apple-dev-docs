@@ -1,7 +1,8 @@
 # init(color:location:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color stop with a color and location.
 

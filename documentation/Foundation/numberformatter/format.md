@@ -1,7 +1,8 @@
 # format
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s format.
 
@@ -14,21 +15,26 @@ The receiver’s format.
 var format: String { get set }
 ```
 
+```objc
+@property (copy) NSString * format;
+```
+
 #### Discussion
 
-The format string uses the format patterns from [`Unicode Technical Standard #35`](https://developer.apple.comhttp://www.unicode.org/reports/tr35/tr35-numbers.html#Number_Format_Patterns).  For more information, see  [`Data Formatting Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i).
+The format string uses the format patterns from [Unicode Technical Standard #35](http://www.unicode.org/reports/tr35/tr35-numbers.html#Number_Format_Patterns).  For more information, see  [Data Formatting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i).
 
 ## See Also
 
-- [var formattingContext: Formatter.Context](numberformatter/formattingcontext.md)
+### Configuring Numeric Formats
+- [var formattingContext: Formatter.Context](./formattingcontext.md)
   The capitalization formatting context used when formatting a number.
-- [var formatWidth: Int](numberformatter/formatwidth.md)
+- [var formatWidth: Int](./formatwidth.md)
   The format width used by the receiver.
-- [var negativeFormat: String!](numberformatter/negativeformat.md)
+- [var negativeFormat: String!](./negativeformat.md)
   The format the receiver uses to display negative values.
-- [var positiveFormat: String!](numberformatter/positiveformat.md)
+- [var positiveFormat: String!](./positiveformat.md)
   The format the receiver uses to display positive values.
-- [var multiplier: NSNumber?](numberformatter/multiplier.md)
+- [var multiplier: NSNumber?](./multiplier.md)
   The multiplier of the receiver.
 
 

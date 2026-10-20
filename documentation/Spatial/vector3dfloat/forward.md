@@ -1,7 +1,8 @@
 # forward
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A vector with values `[0, 0, 1]`.
 

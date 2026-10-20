@@ -1,7 +1,8 @@
 # SuspendingClock
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A clock that measures time that always increments but stops incrementing while the system is asleep.
 
@@ -29,31 +30,32 @@ This clock is suitable for high resolution measurements of execution.
 ## Topics
 
 ### Structures
-- [SuspendingClock.Instant](suspendingclock/instant.md)
+- [SuspendingClock.Instant](./suspendingclock/instant.md)
 ### Initializers
-- [init()](suspendingclock/init.md)
+- [init()](./suspendingclock/init%28%29.md)
 ### Instance Properties
-- [var systemEpoch: SuspendingClock.Instant](suspendingclock/systemepoch.md)
+- [var systemEpoch: SuspendingClock.Instant](./suspendingclock/systemepoch.md)
 ### Type Properties
-- [static var now: SuspendingClock.Instant](suspendingclock/now-swift.type.property.md)
+- [static var now: SuspendingClock.Instant](./suspendingclock/now-swift.type.property.md)
   The current instant accounting for machine suspension.
 ### Default Implementations
-- [Clock Implementations](suspendingclock/clock-implementations.md)
+- [Clock Implementations](./suspendingclock/clock-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Clock](clock.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Clock](./clock.md)
+- [Copyable](./copyable.md)
+- [Escapable](./escapable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [protocol Clock](clock.md)
+### Clocks
+- [protocol Clock](./clock.md)
   A mechanism in which to measure time, and delay work until a given point in time.
-- [struct ContinuousClock](continuousclock.md)
+- [struct ContinuousClock](./continuousclock.md)
   A clock that measures time that always increments and does not stop incrementing while the system is asleep.
 
 

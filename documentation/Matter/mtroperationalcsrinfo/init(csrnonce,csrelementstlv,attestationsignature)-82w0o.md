@@ -1,7 +1,8 @@
 # init(csrNonce:csrElementsTLV:attestationSignature:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init?(csrNonce: Data, csrElementsTLV: Data, attestationSignature: Data)
+```
+
+```objc
+- (instancetype) initWithCSRNonce:(NSData *) csrNonce csrElementsTLV:(MTRTLVBytes) csrElementsTLV attestationSignature:(NSData *) attestationSignature;
 ```
 
 

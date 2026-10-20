@@ -1,7 +1,8 @@
 # markConversationsAsRead(_:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Marks the a list of conversations as read.
 
@@ -22,11 +23,12 @@ final func markConversationsAsRead(_ recentConversations: [ConversationHistoryMa
 
 ## See Also
 
-- [func recentConversations(matching: Predicate<ConversationHistoryManager.RecentConversation>) async throws -> [ConversationHistoryManager.RecentConversation]](conversationhistorymanager/recentconversations(matching:).md)
+### Managing recent conversations
+- [func recentConversations(matching: Predicate<ConversationHistoryManager.RecentConversation>) async throws -> [ConversationHistoryManager.RecentConversation]](./recentconversations%28matching%29.md)
   Returns a list of recent conversations that match the given predicate.
-- [func markConversationAsRead(ConversationHistoryManager.RecentConversation) async throws](conversationhistorymanager/markconversationasread(_:).md)
+- [func markConversationAsRead(ConversationHistoryManager.RecentConversation) async throws](./markconversationasread%28_%29.md)
   Marks a conversation as read.
-- [ConversationHistoryManager.RecentConversation](conversationhistorymanager/recentconversation.md)
+- [ConversationHistoryManager.RecentConversation](./recentconversation.md)
   A structure that describes a recent conversation.
 
 

@@ -1,7 +1,8 @@
 # mapView(_:didChange:animated:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the user-tracking mode changes.
 
@@ -19,23 +20,29 @@ Tells the delegate when the user-tracking mode changes.
 optional func mapView(_ mapView: MKMapView, didChange mode: MKUserTrackingMode, animated: Bool)
 ```
 
+```objc
+- (void) mapView:(MKMapView *) mapView didChangeUserTrackingMode:(MKUserTrackingMode) mode animated:(BOOL) animated;
+```
+
 ## Parameters
 
 - `mapView`: The map view where the user-tracking mode changes.
 - `mode`: The mode to use for tracking the user’s location.
-- `animated`: If [`true`](https://developer.apple.com/documentation/swift/true), the map animates the change from the current mode to the new mode; otherwise, the map doesn’t animate the change. This parameter affects only tracking-mode changes. The map animates all changes to the user’s location and heading.
+- `animated`: If [`true`](../../Swift/true.md), the map animates the change from the current mode to the new mode; otherwise, the map doesn’t animate the change. This parameter affects only tracking-mode changes. The map animates all changes to the user’s location and heading.
 
 ## See Also
 
-- [func setUserTrackingMode(MKUserTrackingMode, animated: Bool)](mkmapview/setusertrackingmode(_:animated:).md)
+### Related Documentation
+- [func setUserTrackingMode(MKUserTrackingMode, animated: Bool)](../mkmapview/setusertrackingmode%28_,animated%29.md)
   Sets the mode to use for tracking the user’s location, with optional animation.
-- [func mapViewWillStartLocatingUser(MKMapView)](mkmapviewdelegate/mapviewwillstartlocatinguser(_:).md)
+### Tracking the user’s location
+- [func mapViewWillStartLocatingUser(MKMapView)](./mapviewwillstartlocatinguser%28_%29.md)
   Tells the delegate that the map view is about to start tracking the user’s location.
-- [func mapViewDidStopLocatingUser(MKMapView)](mkmapviewdelegate/mapviewdidstoplocatinguser(_:).md)
+- [func mapViewDidStopLocatingUser(MKMapView)](./mapviewdidstoplocatinguser%28_%29.md)
   Tells the delegate when the map view stops tracking the user’s location.
-- [func mapView(MKMapView, didUpdate: MKUserLocation)](mkmapviewdelegate/mapview(_:didupdate:).md)
+- [func mapView(MKMapView, didUpdate: MKUserLocation)](./mapview%28_,didupdate%29.md)
   Tells the delegate when the map view updates the user’s location.
-- [func mapView(MKMapView, didFailToLocateUserWithError: any Error)](mkmapviewdelegate/mapview(_:didfailtolocateuserwitherror:).md)
+- [func mapView(MKMapView, didFailToLocateUserWithError: any Error)](./mapview%28_,didfailtolocateuserwitherror%29.md)
   Tells the delegate when an attempt to locate the user’s location fails.
 
 

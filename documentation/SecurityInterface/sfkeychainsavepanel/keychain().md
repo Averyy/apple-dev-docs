@@ -1,7 +1,8 @@
 # keychain()
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the keychain created by the keychain save panel.
 
@@ -14,9 +15,14 @@ Returns the keychain created by the keychain save panel.
 func keychain() -> Unmanaged<SecKeychain>!
 ```
 
+```objc
+- (SecKeychainRef) keychain;
+```
+
 ## See Also
 
-- [func error() -> (any Error)!](sfkeychainsavepanel/error.md)
+### Returning Information from the Sheet or Panel
+- [func error() -> (any Error)!](./error%28%29.md)
   Returns the last error encountered by the keychain save panel.
 
 

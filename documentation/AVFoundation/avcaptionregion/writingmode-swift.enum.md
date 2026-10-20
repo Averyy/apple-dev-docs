@@ -1,7 +1,8 @@
 # AVCaptionRegion.WritingMode
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the writing mode for a region.
 
@@ -17,29 +18,34 @@ Constants that indicate the writing mode for a region.
 enum WritingMode
 ```
 
+```c
+enum AVCaptionRegionWritingMode : NSInteger;
+```
+
 ## Topics
 
 ### Writing modes
-- [AVCaptionRegion.WritingMode.leftToRightAndTopToBottom](avcaptionregion/writingmode-swift.enum/lefttorightandtoptobottom.md)
+- [AVCaptionRegion.WritingMode.leftToRightAndTopToBottom](./writingmode-swift.enum/lefttorightandtoptobottom.md)
   A left-to-right and top-to-bottom writing mode.
-- [AVCaptionRegion.WritingMode.topToBottomAndRightToLeft](avcaptionregion/writingmode-swift.enum/toptobottomandrighttoleft.md)
+- [AVCaptionRegion.WritingMode.topToBottomAndRightToLeft](./writingmode-swift.enum/toptobottomandrighttoleft.md)
   A top-to-bottom and right-to-left writing mode.
 ### Initializers
-- [init?(rawValue: Int)](avcaptionregion/writingmode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./writingmode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var writingMode: AVCaptionRegion.WritingMode](avcaptionregion/writingmode-swift.property.md)
+### Accessing the writing mode
+- [var writingMode: AVCaptionRegion.WritingMode](./writingmode-swift.property.md)
   The block and inline progression direction of the region.
 
 

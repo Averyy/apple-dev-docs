@@ -1,12 +1,15 @@
 # load(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Loads a [`QCComposition`](qccomposition.md) object into the view.
+Loads a [`QCComposition`](../qccomposition.md) object into the view.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,21 +17,26 @@ Loads a [`QCComposition`](qccomposition.md) object into the view.
 func load(_ composition: QCComposition!) -> Bool
 ```
 
+```objc
+- (BOOL) loadComposition:(QCComposition *) composition;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; otherwise [`false`](https://developer.apple.com/documentation/swift/false). If unsuccessful, any composition that’s already loaded in the view remains loaded.
+[`true`](../../Swift/true.md) if successful; otherwise [`false`](../../Swift/false.md). If unsuccessful, any composition that’s already loaded in the view remains loaded.
 
 ## Parameters
 
-- `composition`: The [`QCComposition`](qccomposition.md) object to load.
+- `composition`: The [`QCComposition`](../qccomposition.md) object to load.
 
 ## See Also
 
-- [func loadComposition(fromFile: String!) -> Bool](qcview/loadcomposition(fromfile:).md)
+### Loading a Composition
+- [func loadComposition(fromFile: String!) -> Bool](./loadcomposition%28fromfile%29.md)
   Loads the composition file located at the specified path.
-- [func loadedComposition() -> QCComposition!](qcview/loadedcomposition.md)
+- [func loadedComposition() -> QCComposition!](./loadedcomposition%28%29.md)
   Returns the composition loaded in the view.
-- [func unloadComposition()](qcview/unloadcomposition.md)
+- [func unloadComposition()](./unloadcomposition%28%29.md)
   Unloads the composition from the view.
 
 

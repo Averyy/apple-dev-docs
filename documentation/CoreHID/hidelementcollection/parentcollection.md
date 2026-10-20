@@ -1,7 +1,8 @@
 # parentCollection
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection that contains this collection, if there is one.
 

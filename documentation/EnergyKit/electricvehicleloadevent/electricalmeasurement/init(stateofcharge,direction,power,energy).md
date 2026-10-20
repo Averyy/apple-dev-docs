@@ -1,14 +1,17 @@
 # init(stateOfCharge:direction:power:energy:)
 
 **Framework**: EnergyKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an electrical measurement for the electrical load event.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst ?+
+- iOS 26.0+ - Deprecated in 27.0
+- iPadOS 26.0+ - Deprecated in 27.0
+- Mac Catalyst
+
+> **Deprecated**: Use init(stateOfCharge:direction:power:energy:performanceMetrics:) instead
 
 ## Declaration
 
@@ -25,7 +28,8 @@ init(stateOfCharge: Int, direction: ElectricityFlowDirection, power: Measurement
 
 ## See Also
 
-- [init(stateOfCharge: Int, direction: ElectricityFlowDirection, power: Measurement<UnitPower>, energy: Measurement<UnitEnergy>, performanceMetrics: ElectricVehicleLoadEvent.ElectricalMeasurement.PerformanceMetrics?)](electricvehicleloadevent/electricalmeasurement/init(stateofcharge:direction:power:energy:performancemetrics:).md)
+### Creating an electrical measurement
+- [init(stateOfCharge: Int, direction: ElectricityFlowDirection, power: Measurement<UnitPower>, energy: Measurement<UnitEnergy>, performanceMetrics: ElectricVehicleLoadEvent.ElectricalMeasurement.PerformanceMetrics?)](./init%28stateofcharge,direction,power,energy,performancemetrics%29.md)
   Creates an electrical measurement with optional performance metrics.
 
 

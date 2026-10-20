@@ -1,6 +1,7 @@
 # Digital audio file formats
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 #### Overview
 
@@ -22,9 +23,10 @@
 
 ## See Also
 
-- [Digital video file formats](digital_video_file_formats.md)
-- [Still image file formats](still_image_file_formats.md)
-- [Animation and 3D file formats](animation_and_3d_file_formats.md)
+### Handling metadata
+- [Digital video file formats](./digital_video_file_formats.md)
+- [Still image file formats](./still_image_file_formats.md)
+- [Animation and 3D file formats](./animation_and_3d_file_formats.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # bestDepth(colorSpaceName:bitsPerSample:bitsPerPixel:isPlanar:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Determines the best window depth that most closely matches the given properties.
 
@@ -28,15 +29,16 @@ The window depth that most closely matches the properties this function requests
 
 ## See Also
 
-- [static var availableDepths: [NSWindow.Depth]](nswindow/depth/availabledepths.md)
+### Accessing Depth Details
+- [static var availableDepths: [NSWindow.Depth]](./availabledepths.md)
   An array that contains all available windows depths.
-- [var bitsPerPixel: Int](nswindow/depth/bitsperpixel.md)
+- [var bitsPerPixel: Int](./bitsperpixel.md)
   Returns the bits per pixel for the specified window depth.
-- [var bitsPerSample: Int](nswindow/depth/bitspersample.md)
+- [var bitsPerSample: Int](./bitspersample.md)
   Returns the bits per sample for the specified window depth.
-- [var colorSpaceName: NSColorSpaceName?](nswindow/depth/colorspacename.md)
+- [var colorSpaceName: NSColorSpaceName?](./colorspacename.md)
   Returns the name of the color space corresponding to the passed window depth.
-- [var isPlanar: Bool](nswindow/depth/isplanar.md)
+- [var isPlanar: Bool](./isplanar.md)
   Returns whether the specified window depth is planar.
 
 

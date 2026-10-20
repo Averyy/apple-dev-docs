@@ -1,7 +1,8 @@
 # MLModelMetadataKey
 
 **Framework**: Core ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The set of keys the model uses to store values in its metadata dictionary.
 
@@ -20,36 +21,41 @@ The set of keys the model uses to store values in its metadata dictionary.
 struct MLModelMetadataKey
 ```
 
+```c
+typedef NSString * MLModelMetadataKey;
+```
+
 ## Topics
 
 ### Metadata keys
-- [static let author: MLModelMetadataKey](mlmodelmetadatakey/author.md)
+- [static let author: MLModelMetadataKey](./mlmodelmetadatakey/author.md)
   Key for the author of the model.
-- [static let description: MLModelMetadataKey](mlmodelmetadatakey/description.md)
+- [static let description: MLModelMetadataKey](./mlmodelmetadatakey/description.md)
   Key for the overall description of the model.
-- [static let license: MLModelMetadataKey](mlmodelmetadatakey/license.md)
+- [static let license: MLModelMetadataKey](./mlmodelmetadatakey/license.md)
   Key for the license of the model.
-- [static let versionString: MLModelMetadataKey](mlmodelmetadatakey/versionstring.md)
+- [static let versionString: MLModelMetadataKey](./mlmodelmetadatakey/versionstring.md)
   Key for the version of the model.
-- [static let creatorDefinedKey: MLModelMetadataKey](mlmodelmetadatakey/creatordefinedkey.md)
+- [static let creatorDefinedKey: MLModelMetadataKey](./mlmodelmetadatakey/creatordefinedkey.md)
   Key for the model creator’s custom metadata.
 ### Creating metadata
-- [init(rawValue: String)](mlmodelmetadatakey/init(rawvalue:).md)
+- [init(rawValue: String)](./mlmodelmetadatakey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var classLabels: [Any]?](mlmodeldescription/classlabels.md)
+### Accessing metadata
+- [var classLabels: [Any]?](./mlmodeldescription/classlabels.md)
   An array of labels, which can be either strings or a numbers, for classifier models.
-- [var metadata: [MLModelMetadataKey : Any]](mlmodeldescription/metadata.md)
+- [var metadata: [MLModelMetadataKey : Any]](./mlmodeldescription/metadata.md)
   A dictionary of the model’s creation information, such as its description, author, version, and license.
 
 

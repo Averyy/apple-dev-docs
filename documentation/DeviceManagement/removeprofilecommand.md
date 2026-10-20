@@ -1,7 +1,8 @@
 # RemoveProfileCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to remove a previously installed profile from the device.
 
@@ -16,14 +17,14 @@ The command to remove a previously installed profile from the device.
 
 ## Declaration
 
-```swift
+```
 object RemoveProfileCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object RemoveProfileCommand.Command](removeprofilecommand/command-data.dictionary.md)
+- [object RemoveProfileCommand.Command](./removeprofilecommand/command-data.dictionary.md)
   The command to remove a previously installed profile from the device.
 
 ## Properties
@@ -33,7 +34,8 @@ object RemoveProfileCommand
 
 ## See Also
 
-- [object RemoveProfileResponse](removeprofileresponse.md)
+### Commands and responses
+- [object RemoveProfileResponse](./removeprofileresponse.md)
   A response from the device after it processes the command to remove a previously installed profile from the device.
 
 

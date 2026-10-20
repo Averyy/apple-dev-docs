@@ -1,7 +1,8 @@
 # WISSID
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The Service Set Identifier (SSID) for a Wi-Fi network, from which applications derive the human-readable network name.
 
@@ -26,7 +27,7 @@ An SSID represents the identifier for a wireless network, as the Wi-Fi standard 
 - Text in various encodings (UTF-8, ASCII, Latin-1, etc.)
 - Mixed binary and text content
 
-Don’t assume SSID data represents UTF-8 encoded text. Use [`stringRepresentation(encoding:)`](wissid/stringrepresentation(encoding:).md) to safely convert the raw data to a readable format. Since no standard encoding exists for SSIDs, different networks may use different text encodings or contain pure binary data. When converting SSIDs to strings:
+Don’t assume SSID data represents UTF-8 encoded text. Use [`stringRepresentation(encoding:)`](./wissid/stringrepresentation%28encoding%29.md) to safely convert the raw data to a readable format. Since no standard encoding exists for SSIDs, different networks may use different text encodings or contain pure binary data. When converting SSIDs to strings:
 
 - Try UTF-8 encoding first, as it’s most common.
 - Fall back to other encodings if UTF-8 conversion fails.
@@ -36,35 +37,36 @@ Don’t assume SSID data represents UTF-8 encoded text. Use [`stringRepresentati
 ## Topics
 
 ### Working with SSIDs as a string
-- [init?(String, encoding: String.Encoding)](wissid/init(_:encoding:).md)
+- [init?(String, encoding: String.Encoding)](./wissid/init%28_,encoding%29.md)
   Creates an SSID from a text string using the specified encoding.
-- [func stringRepresentation(encoding: String.Encoding) -> String?](wissid/stringrepresentation(encoding:).md)
+- [func stringRepresentation(encoding: String.Encoding) -> String?](./wissid/stringrepresentation%28encoding%29.md)
   Converts the SSID’s raw data to a string representation using the specified encoding.
 ### Working with raw SSID data
-- [init?(Data)](wissid/init(_:).md)
+- [init?(Data)](./wissid/init%28_%29.md)
   Creates an SSID from raw binary data.
-- [let data: Data](wissid/data.md)
+- [let data: Data](./wissid/data.md)
   The raw binary data of the SSID as transmitted over-the-air.
 ### Getting a description
-- [var description: String](wissid/description.md)
+- [var description: String](./wissid/description.md)
   This property provides a readable representation suitable for logging and debugging.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WIChannel](wichannel.md)
+### Common data
+- [struct WIChannel](./wichannel.md)
   A WiFi Channel.
-- [struct WIMACAddress](wimacaddress.md)
+- [struct WIMACAddress](./wimacaddress.md)
   A Wi-Fi MAC Address.
 
 

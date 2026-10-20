@@ -1,12 +1,15 @@
 # kSecPaddingKey
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The kind of padding to use.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
@@ -14,9 +17,13 @@ The kind of padding to use.
 let kSecPaddingKey: CFString
 ```
 
+```c
+extern CFStringRef const kSecPaddingKey;
+```
+
 #### Discussion
 
-If you do not supply a value for this key, an appropriate value will be supplied for you. See [`Padding Types`](transform-attributes#Padding-Types.md) for a list of valid values.
+If you do not supply a value for this key, an appropriate value will be supplied for you. See [Padding Types](./transform-attributes.md#Padding-Types) for a list of valid values.
 
 
 ---

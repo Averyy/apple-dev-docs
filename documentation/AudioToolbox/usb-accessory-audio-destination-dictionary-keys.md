@@ -1,21 +1,23 @@
 # USB Accessory Audio Destination Dictionary Keys
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: API Collection
 
-Keys for the dictionaries in the [`kAudioSessionProperty_OutputDestinations`](kaudiosessionproperty_outputdestinations.md) array.
+Keys for the dictionaries in the [`kAudioSessionProperty_OutputDestinations`](./kaudiosessionproperty_outputdestinations.md) array.
 
 ## Topics
 
 ### Constants
-- [let kAudioSession_OutputDestinationKey_ID: CFString!](kaudiosession_outputdestinationkey_id.md)
+- [let kAudioSession_OutputDestinationKey_ID: CFString!](./kaudiosession_outputdestinationkey_id.md)
   The output destination.
-- [let kAudioSession_OutputDestinationKey_Description: CFString!](kaudiosession_outputdestinationkey_description.md)
+- [let kAudioSession_OutputDestinationKey_Description: CFString!](./kaudiosession_outputdestinationkey_description.md)
   The audio output destination.
 
 ## See Also
 
-- [USB Accessory Audio Source Dictionary Keys](usb-accessory-audio-source-dictionary-keys.md)
-  Keys for the dictionaries in the [`kAudioSessionProperty_InputSources`](kaudiosessionproperty_inputsources.md) array.
+### USB Accessories
+- [USB Accessory Audio Source Dictionary Keys](./usb-accessory-audio-source-dictionary-keys.md)
+  Keys for the dictionaries in the [`kAudioSessionProperty_InputSources`](./kaudiosessionproperty_inputsources.md) array.
 
 
 ---

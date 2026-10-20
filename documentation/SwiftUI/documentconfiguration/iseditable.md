@@ -1,7 +1,8 @@
 # isEditable
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you can edit the document.
 
@@ -26,7 +27,8 @@ On iOS, the document is not editable if there was an error reading or saving it,
 
 ## See Also
 
-- [var fileURL: URL?](documentconfiguration/fileurl.md)
+### Getting configuration values
+- [var fileURL: URL?](./fileurl.md)
   A URL of an open document.
 
 

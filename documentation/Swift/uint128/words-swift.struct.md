@@ -1,7 +1,8 @@
 # UInt128.Words
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the words of a binary integer.
 
@@ -28,23 +29,23 @@ The `Words` type must conform to the `RandomAccessCollection` protocol with an `
 ## Topics
 
 ### Default Implementations
-- [BidirectionalCollection Implementations](uint128/words-swift.struct/bidirectionalcollection-implementations.md)
-- [Collection Implementations](uint128/words-swift.struct/collection-implementations.md)
-- [RandomAccessCollection Implementations](uint128/words-swift.struct/randomaccesscollection-implementations.md)
-- [Sequence Implementations](uint128/words-swift.struct/sequence-implementations.md)
+- [BidirectionalCollection Implementations](./words-swift.struct/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./words-swift.struct/collection-implementations.md)
+- [RandomAccessCollection Implementations](./words-swift.struct/randomaccesscollection-implementations.md)
+- [Sequence Implementations](./words-swift.struct/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Collection](collection.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [RandomAccessCollection](randomaccesscollection.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [BidirectionalCollection](../bidirectionalcollection.md)
+- [BitwiseCopyable](../bitwisecopyable.md)
+- [Collection](../collection.md)
+- [Copyable](../copyable.md)
+- [Escapable](../escapable.md)
+- [RandomAccessCollection](../randomaccesscollection.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
+- [Sequence](../sequence.md)
 
 
 ---

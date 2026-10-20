@@ -1,7 +1,8 @@
 # atanh()
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the inverse hyperbolic tangent of the tensor’s elements.
 
@@ -22,27 +23,28 @@ func atanh() -> MLTensor
 
 ## See Also
 
-- [func cos() -> MLTensor](mltensor/cos.md)
+### Applying trigonometric functions
+- [func cos() -> MLTensor](./cos%28%29.md)
   Computes the cosine of the tensor’s elements.
-- [func cosh() -> MLTensor](mltensor/cosh.md)
+- [func cosh() -> MLTensor](./cosh%28%29.md)
   Computes the hyperbolic cosine of the tensor’s elements.
-- [func acos() -> MLTensor](mltensor/acos.md)
+- [func acos() -> MLTensor](./acos%28%29.md)
   Computes the inverse cosine of the tensor’s elements.
-- [func acosh() -> MLTensor](mltensor/acosh.md)
+- [func acosh() -> MLTensor](./acosh%28%29.md)
   Computes the inverse hyperbolic cosine of the tensor’s elements.
-- [func sin() -> MLTensor](mltensor/sin.md)
+- [func sin() -> MLTensor](./sin%28%29.md)
   Computes sine of the tensor’s elements.
-- [func sinh() -> MLTensor](mltensor/sinh.md)
+- [func sinh() -> MLTensor](./sinh%28%29.md)
   Computes hyperbolic sine of the tensor’s elements.
-- [func asin() -> MLTensor](mltensor/asin.md)
+- [func asin() -> MLTensor](./asin%28%29.md)
   Computes the inverse sine of the tensor’s elements.
-- [func asinh() -> MLTensor](mltensor/asinh.md)
+- [func asinh() -> MLTensor](./asinh%28%29.md)
   Computes the inverse hyperbolic sine of the tensor’s elements.
-- [func tan() -> MLTensor](mltensor/tan.md)
+- [func tan() -> MLTensor](./tan%28%29.md)
   Computes tangent of the tensor’s elements.
-- [func tanh() -> MLTensor](mltensor/tanh.md)
+- [func tanh() -> MLTensor](./tanh%28%29.md)
   Computes hyperbolic tangent of the tensor’s elements.
-- [func atan() -> MLTensor](mltensor/atan.md)
+- [func atan() -> MLTensor](./atan%28%29.md)
   Computes the inverse tangent of the tensor’s elements.
 
 

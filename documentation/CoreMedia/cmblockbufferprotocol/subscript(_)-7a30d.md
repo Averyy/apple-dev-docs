@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Core Media  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Creates a slice from a `ClosedRange`.
 
@@ -22,11 +23,12 @@ subscript(bounds: ClosedRange<Int>) -> CMBlockBuffer.Slice { get }
 
 ## See Also
 
-- [subscript(Range<Int>) -> CMBlockBuffer.Slice](cmblockbufferprotocol/subscript(_:)-1go3.md)
-- [subscript(PartialRangeFrom<Int>) -> CMBlockBuffer.Slice](cmblockbufferprotocol/subscript(_:)-9ntfs.md)
-- [subscript(PartialRangeUpTo<Int>) -> CMBlockBuffer.Slice](cmblockbufferprotocol/subscript(_:)-6ghj4.md)
-- [subscript(PartialRangeThrough<Int>) -> CMBlockBuffer.Slice](cmblockbufferprotocol/subscript(_:)-532k5.md)
-- [subscript(UnboundedRange) -> CMBlockBuffer.Slice](cmblockbufferprotocol/subscript(_:)-8jilq.md)
+### Subscripts
+- [subscript(Range<Int>) -> CMBlockBuffer.Slice](./subscript%28_%29-1go3.md)
+- [subscript(PartialRangeFrom<Int>) -> CMBlockBuffer.Slice](./subscript%28_%29-9ntfs.md)
+- [subscript(PartialRangeUpTo<Int>) -> CMBlockBuffer.Slice](./subscript%28_%29-6ghj4.md)
+- [subscript(PartialRangeThrough<Int>) -> CMBlockBuffer.Slice](./subscript%28_%29-532k5.md)
+- [subscript(UnboundedRange) -> CMBlockBuffer.Slice](./subscript%28_%29-8jilq.md)
 
 
 ---

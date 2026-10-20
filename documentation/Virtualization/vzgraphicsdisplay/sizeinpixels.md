@@ -1,7 +1,8 @@
 # sizeInPixels
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the size of the display, in pixels.
 
@@ -12,6 +13,10 @@ Returns the size of the display, in pixels.
 
 ```swift
 var sizeInPixels: CGSize { get }
+```
+
+```objc
+@property (readonly) CGSize sizeInPixels;
 ```
 
 

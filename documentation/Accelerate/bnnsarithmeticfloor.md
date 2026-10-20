@@ -1,7 +1,8 @@
 # BNNSArithmeticFloor
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An operation that calculates the element-wise floor of its input.
 
@@ -20,27 +21,32 @@ An operation that calculates the element-wise floor of its input.
 var BNNSArithmeticFloor: BNNSArithmeticFunction { get }
 ```
 
+```c
+BNNSArithmeticFloor
+```
+
 ## See Also
 
-- [var BNNSArithmeticCeil: BNNSArithmeticFunction](bnnsarithmeticceil.md)
+### Unary Arithmetic Functions
+- [var BNNSArithmeticCeil: BNNSArithmeticFunction](./bnnsarithmeticceil.md)
   An operation that calculates the element-wise ceiling of its input.
-- [var BNNSArithmeticSquareRoot: BNNSArithmeticFunction](bnnsarithmeticsquareroot.md)
+- [var BNNSArithmeticSquareRoot: BNNSArithmeticFunction](./bnnsarithmeticsquareroot.md)
   An operation that calculates the element-wise square root of its input.
-- [var BNNSArithmeticReciprocalSquareRoot: BNNSArithmeticFunction](bnnsarithmeticreciprocalsquareroot.md)
+- [var BNNSArithmeticReciprocalSquareRoot: BNNSArithmeticFunction](./bnnsarithmeticreciprocalsquareroot.md)
   An operation that calculates the element-wise reciprocal square root of its input.
-- [var BNNSArithmeticRound: BNNSArithmeticFunction](bnnsarithmeticround.md)
+- [var BNNSArithmeticRound: BNNSArithmeticFunction](./bnnsarithmeticround.md)
   An operation that calculates the element-wise rounding of its input.
-- [var BNNSArithmeticAbs: BNNSArithmeticFunction](bnnsarithmeticabs.md)
+- [var BNNSArithmeticAbs: BNNSArithmeticFunction](./bnnsarithmeticabs.md)
   An operation that calculates the element-wise absolute of its input.
-- [var BNNSArithmeticErf: BNNSArithmeticFunction](bnnsarithmeticerf.md)
+- [var BNNSArithmeticErf: BNNSArithmeticFunction](./bnnsarithmeticerf.md)
   An operation that calculates the element-wise error function of its input.
-- [var BNNSArithmeticNegate: BNNSArithmeticFunction](bnnsarithmeticnegate.md)
+- [var BNNSArithmeticNegate: BNNSArithmeticFunction](./bnnsarithmeticnegate.md)
   An operation that calculates the element-wise negation of its input.
-- [var BNNSArithmeticReciprocal: BNNSArithmeticFunction](bnnsarithmeticreciprocal.md)
+- [var BNNSArithmeticReciprocal: BNNSArithmeticFunction](./bnnsarithmeticreciprocal.md)
   An operation that calculates the element-wise reciprocal of its input.
-- [var BNNSArithmeticSign: BNNSArithmeticFunction](bnnsarithmeticsign.md)
+- [var BNNSArithmeticSign: BNNSArithmeticFunction](./bnnsarithmeticsign.md)
   An operation that calculates the element-wise sign of its input.
-- [var BNNSArithmeticSquare: BNNSArithmeticFunction](bnnsarithmeticsquare.md)
+- [var BNNSArithmeticSquare: BNNSArithmeticFunction](./bnnsarithmeticsquare.md)
   An operation that calculates the element-wise square of its input.
 
 

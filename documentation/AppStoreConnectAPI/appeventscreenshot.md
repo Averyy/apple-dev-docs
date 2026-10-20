@@ -1,25 +1,28 @@
 # AppEventScreenshot
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A screenshot image used to promote an app event on the App Store product page.
 
 **Availability**:
-- App Store Connect API 1.7+
+- App Store Connect API 1.7+ - Deprecated in 4.5
+
+> **Deprecated**: This object is deprecated. Use [`AppAssetLibraryImage`](./appassetlibraryimage.md) instead.
 
 ## Declaration
 
-```swift
+```
 object AppEventScreenshot
 ```
 
 ## Topics
 
 ### Objects
-- [object AppEventScreenshot.Attributes](appeventscreenshot/attributes-data.dictionary.md)
+- [object AppEventScreenshot.Attributes](./appeventscreenshot/attributes-data.dictionary.md)
   Attributes that describe an app event screenshot resource.
-- [object AppEventScreenshot.Relationships](appeventscreenshot/relationships-data.dictionary.md)
+- [object AppEventScreenshot.Relationships](./appeventscreenshot/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,17 +31,18 @@ object AppEventScreenshot
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (AppEventScreenshot.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appEventScreenshots`
 
 ## See Also
 
-- [object AppEventScreenshotCreateRequest](appeventscreenshotcreaterequest.md)
+### Objects
+- [object AppEventScreenshotCreateRequest](./appeventscreenshotcreaterequest.md)
   The request body you use to create an app event screenshot.
-- [object AppEventScreenshotResponse](appeventscreenshotresponse.md)
+- [object AppEventScreenshotResponse](./appeventscreenshotresponse.md)
   The response body for endpoints that create, read, or modify an in-app event screenshot.
-- [object AppEventScreenshotUpdateRequest](appeventscreenshotupdaterequest.md)
+- [object AppEventScreenshotUpdateRequest](./appeventscreenshotupdaterequest.md)
   The request body you use to update an app event screenshot update request.
-- [object AppEventScreenshotsResponse](appeventscreenshotsresponse.md)
+- [object AppEventScreenshotsResponse](./appeventscreenshotsresponse.md)
   The response body for endpoints that list screenshots for an in-app event localization.
 
 

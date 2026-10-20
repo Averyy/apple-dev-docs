@@ -1,7 +1,8 @@
 # mediaSubType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that identifies the output media subtype of a caption conversion operation.
 
@@ -17,17 +18,22 @@ A key that identifies the output media subtype of a caption conversion operation
 static let mediaSubType: AVCaptionSettingsKey
 ```
 
+```c
+extern AVCaptionSettingsKey const AVCaptionMediaSubTypeKey;
+```
+
 #### Discussion
 
 This key supports numeric and string forms of media subtypes for caption conversions.
 
 ## See Also
 
-- [static let mediaType: AVCaptionSettingsKey](avcaptionsettingskey/mediatype.md)
+### Keys
+- [static let mediaType: AVCaptionSettingsKey](./mediatype.md)
   A key that identifies the output media type of a caption conversion operation.
-- [static let timeCodeFrameDuration: AVCaptionSettingsKey](avcaptionsettingskey/timecodeframeduration.md)
+- [static let timeCodeFrameDuration: AVCaptionSettingsKey](./timecodeframeduration.md)
   A key that identifies the frame duration that the system uses for the time code.
-- [static let useDropFrameTimeCode: AVCaptionSettingsKey](avcaptionsettingskey/usedropframetimecode.md)
+- [static let useDropFrameTimeCode: AVCaptionSettingsKey](./usedropframetimecode.md)
   A key that identifies whether the system uses drop frame time code.
 
 

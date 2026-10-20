@@ -1,7 +1,8 @@
 # rangeView(of:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a `Range`-based view of `self`.
 

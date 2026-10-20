@@ -1,6 +1,7 @@
 # Creating a time-series classifier
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: Article
 
 Train a machine learning model to predict the class label of time-series signals.
 
@@ -16,11 +17,11 @@ Even though there are patterns to the data, these patterns aren’t trivial to c
 
 Training a time-series classifier with the Create ML Components framework shares common training behavior with other model types.
 
-##### Prepare Your Training Data
+##### Prepare your training data
 
 The first step to begin classifying the throwing movement of a baseball is to prepare the data. The model predicts the baseball throw as fastball, breaking ball, or changeup. Organize the data by using the following directory structure:
 
-```None
+```
 /
     fastball/
         recording1.csv
@@ -110,7 +111,7 @@ let validation = result[Int(sampleCount * 0.8) ..< Int(sampleCount * 0.9)]
 let testing = result[Int(sampleCount * 0.9)...]
 ```
 
-##### Build and Train a Time Series Classifier
+##### Build and train a time-series classifier
 
 After preparing your training data, configure your classifier model with the number of training iterations and class labels:
 
@@ -125,7 +126,7 @@ let estimator = TimeSeriesClassifier<Float, String>(
 
 Train your classifier model and print the training and validation accuracy at every iteration to monitor the progress:
 
-```None
+```
 swift
 let model = try await estimator.fitted(to: training, validateOn: validation) { event in
     if let trainingAccuracy = event.metrics[MetricsKey.trainingAccuracy] as? Double {
@@ -137,7 +138,7 @@ let model = try await estimator.fitted(to: training, validateOn: validation) { e
 }
 ```
 
-##### Evaluate the Model
+##### Evaluate the model
 
 Use your testing set to evaluate your model. Classification provides an accuracy metric with a value between 0 and 1, where 0 represents the least accurate. Look at how accurate it classified your labeled test data to determine whether to export the model.
 
@@ -149,7 +150,7 @@ let metrics = ClassificationMetrics(predictedLabels, testing.map(\.annotation))
 print("Accuracy: (metrics.accuracy)")
 ```
 
-##### Export the Model
+##### Export the model
 
 When you’re satisfied with the model’s accuracy, export it as a Core ML package:
 
@@ -175,35 +176,36 @@ let label = probabilities.max(by: { $0.value.doubleValue < $1.value.doubleValue 
 
 ## See Also
 
-- [Creating a time-series forecaster](creating-a-time-series-forecaster.md)
+### Time-based components
+- [Creating a time-series forecaster](./creating-a-time-series-forecaster.md)
   Forecast future data points by training a machine learning model using historical data.
-- [struct DateFeatures](datefeatures.md)
+- [struct DateFeatures](./datefeatures.md)
   A set of date and time features.
-- [struct DateFeatureExtractor](datefeatureextractor.md)
+- [struct DateFeatureExtractor](./datefeatureextractor.md)
   A time and date feature extractor.
-- [struct LinearTimeSeriesForecaster](lineartimeseriesforecaster.md)
+- [struct LinearTimeSeriesForecaster](./lineartimeseriesforecaster.md)
   A time-series forecasting estimator.
-- [struct LinearTimeSeriesForecasterConfiguration](lineartimeseriesforecasterconfiguration.md)
+- [struct LinearTimeSeriesForecasterConfiguration](./lineartimeseriesforecasterconfiguration.md)
   The configuration for a linear time-series forecaster.
-- [struct TimeSeriesForecasterBatches](timeseriesforecasterbatches.md)
+- [struct TimeSeriesForecasterBatches](./timeseriesforecasterbatches.md)
   A sequence of forecaster batches on a time series shaped array.
-- [struct TimeSeriesForecasterAnnotatedWindows](timeseriesforecasterannotatedwindows.md)
+- [struct TimeSeriesForecasterAnnotatedWindows](./timeseriesforecasterannotatedwindows.md)
   A sequence of forecasting windows on a time series shaped array.
-- [struct TemporalFeature](temporalfeature.md)
+- [struct TemporalFeature](./temporalfeature.md)
   A temporal feature contains a segment identifier and a feature value.
-- [protocol TemporalSequence](temporalsequence.md)
+- [protocol TemporalSequence](./temporalsequence.md)
   Async sequence for temporal features.
-- [struct TemporalSegmentIdentifier](temporalsegmentidentifier.md)
+- [struct TemporalSegmentIdentifier](./temporalsegmentidentifier.md)
   Uniquely identifiers a segment of a temporal sequence.
-- [struct SlidingWindows](slidingwindows.md)
+- [struct SlidingWindows](./slidingwindows.md)
   A sequence of windows on a time series shaped array.
-- [struct SlidingWindowTransformer](slidingwindowtransformer.md)
+- [struct SlidingWindowTransformer](./slidingwindowtransformer.md)
   A temporal transformer that groups input elements.
-- [struct Downsampler](downsampler.md)
+- [struct Downsampler](./downsampler.md)
   A temporal transformer that down samples the input stream.
-- [struct VideoReader](videoreader.md)
+- [struct VideoReader](./videoreader.md)
   A video file reader.
-- [struct TemporalFileSegment](temporalfilesegment.md)
+- [struct TemporalFileSegment](./temporalfilesegment.md)
   A URL and a time range identifying a specific segment of a time-based (temporal) file.
 
 

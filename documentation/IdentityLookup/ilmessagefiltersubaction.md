@@ -1,7 +1,8 @@
 # ILMessageFilterSubAction
 
 **Framework**: SMS and Call Reporting  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Responds to a received message with a filter subaction.
 
@@ -17,52 +18,57 @@ Responds to a received message with a filter subaction.
 enum ILMessageFilterSubAction
 ```
 
+```c
+enum ILMessageFilterSubAction : NSInteger;
+```
+
 ## Topics
 
 ### Transactional Subactions
-- [ILMessageFilterSubAction.none](ilmessagefiltersubaction/none.md)
+- [ILMessageFilterSubAction.none](./ilmessagefiltersubaction/none.md)
   Allows the system to show the message unfiltered due to insufficient information to determine an action.
-- [ILMessageFilterSubAction.transactionalOthers](ilmessagefiltersubaction/transactionalothers.md)
+- [ILMessageFilterSubAction.transactionalOthers](./ilmessagefiltersubaction/transactionalothers.md)
   Prevents the system from showing the message normally, filtered as an Others message.
-- [ILMessageFilterSubAction.transactionalFinance](ilmessagefiltersubaction/transactionalfinance.md)
+- [ILMessageFilterSubAction.transactionalFinance](./ilmessagefiltersubaction/transactionalfinance.md)
   Prevents the system from showing the message normally, filtered as a Finance message.
-- [ILMessageFilterSubAction.transactionalOrders](ilmessagefiltersubaction/transactionalorders.md)
+- [ILMessageFilterSubAction.transactionalOrders](./ilmessagefiltersubaction/transactionalorders.md)
   Prevents the system from showing the message normally, filtered as an Orders (eCommerce) message.
-- [ILMessageFilterSubAction.transactionalReminders](ilmessagefiltersubaction/transactionalreminders.md)
+- [ILMessageFilterSubAction.transactionalReminders](./ilmessagefiltersubaction/transactionalreminders.md)
   Prevents the system from showing the message normally, filtered as a Reminder message.
-- [ILMessageFilterSubAction.transactionalHealth](ilmessagefiltersubaction/transactionalhealth.md)
+- [ILMessageFilterSubAction.transactionalHealth](./ilmessagefiltersubaction/transactionalhealth.md)
   Prevents the system from showing the message normally, filtered as a Health message.
-- [ILMessageFilterSubAction.transactionalWeather](ilmessagefiltersubaction/transactionalweather.md)
+- [ILMessageFilterSubAction.transactionalWeather](./ilmessagefiltersubaction/transactionalweather.md)
   Prevents the system from showing the message normally, filtered as a Weather message.
-- [ILMessageFilterSubAction.transactionalCarrier](ilmessagefiltersubaction/transactionalcarrier.md)
+- [ILMessageFilterSubAction.transactionalCarrier](./ilmessagefiltersubaction/transactionalcarrier.md)
   Prevents the system from showing the message normally, filtered as a Carrier message.
-- [ILMessageFilterSubAction.transactionalRewards](ilmessagefiltersubaction/transactionalrewards.md)
+- [ILMessageFilterSubAction.transactionalRewards](./ilmessagefiltersubaction/transactionalrewards.md)
   Prevents the system from showing the message normally, filtered as a Rewards message.
-- [ILMessageFilterSubAction.transactionalPublicServices](ilmessagefiltersubaction/transactionalpublicservices.md)
+- [ILMessageFilterSubAction.transactionalPublicServices](./ilmessagefiltersubaction/transactionalpublicservices.md)
   Prevents the system from showing the message normally, filtered as a Government message.
 ### Promotional Subactions
-- [ILMessageFilterSubAction.promotionalOthers](ilmessagefiltersubaction/promotionalothers.md)
+- [ILMessageFilterSubAction.promotionalOthers](./ilmessagefiltersubaction/promotionalothers.md)
   Prevents the system from showing the message normally, filtered as an Others message.
-- [ILMessageFilterSubAction.promotionalOffers](ilmessagefiltersubaction/promotionaloffers.md)
+- [ILMessageFilterSubAction.promotionalOffers](./ilmessagefiltersubaction/promotionaloffers.md)
   Prevents the system from showing the message normally, filtered as an Offers message.
-- [ILMessageFilterSubAction.promotionalCoupons](ilmessagefiltersubaction/promotionalcoupons.md)
+- [ILMessageFilterSubAction.promotionalCoupons](./ilmessagefiltersubaction/promotionalcoupons.md)
   Prevents the system from showing the message normally, filtered as an Coupons message.
 ### Initializers
-- [init?(rawValue: Int)](ilmessagefiltersubaction/init(rawvalue:).md)
+- [init?(rawValue: Int)](./ilmessagefiltersubaction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ILMessageFilterCapabilitiesQueryResponse](ilmessagefiltercapabilitiesqueryresponse.md)
+### Responses
+- [class ILMessageFilterCapabilitiesQueryResponse](./ilmessagefiltercapabilitiesqueryresponse.md)
   A response to a message filter capabilities query request.
 
 

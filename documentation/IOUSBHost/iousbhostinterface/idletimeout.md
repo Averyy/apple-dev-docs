@@ -1,7 +1,8 @@
 # idleTimeout
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current idle suspend timeout.
 
@@ -15,13 +16,18 @@ The current idle suspend timeout.
 var idleTimeout: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval idleTimeout;
+```
+
 #### Return Value
 
 The amount of time after all pipes are idle to wait before suspending the device.
 
 ## See Also
 
-- [func setIdleTimeout(TimeInterval) throws](iousbhostinterface/setidletimeout(_:).md)
+### Enabling Power Savings
+- [func setIdleTimeout(TimeInterval) throws](./setidletimeout%28_%29.md)
   Sets the desired idle suspend timeout for the interface.
 
 

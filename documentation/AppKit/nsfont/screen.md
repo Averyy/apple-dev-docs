@@ -1,18 +1,23 @@
 # screen
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bitmapped screen font for the current font.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @NSCopying
 var screen: NSFont { get }
+```
+
+```objc
+@property (copy, readonly) NSFont * screenFont;
 ```
 
 #### Discussion
@@ -23,11 +28,13 @@ Screen fonts are for direct use with the window server only. Never use them with
 
 ## See Also
 
-- [func screenFont(with: NSFontRenderingMode) -> NSFont](nsfont/screenfont(with:).md)
+### Related Documentation
+- [func screenFont(with: NSFontRenderingMode) -> NSFont](./screenfont%28with%29.md)
   Returns a bitmapped screen font, when sent to a font object representing a scalable PostScript font, with the specified rendering mode, matching the receiver in typeface and matrix (or size), or `nil` if such a font can’t be found.
-- [var printer: NSFont](nsfont/printer.md)
+### Instance Properties
+- [var printer: NSFont](./printer.md)
   The scalable PostScript font corresponding to current font.
-- [var renderingMode: NSFontRenderingMode](nsfont/renderingmode.md)
+- [var renderingMode: NSFontRenderingMode](./renderingmode.md)
   The rendering mode of the font.
 
 

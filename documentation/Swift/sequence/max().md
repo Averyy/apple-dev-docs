@@ -1,7 +1,8 @@
 # max()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the maximum element in the sequence.
 
@@ -21,6 +22,8 @@ Returns the maximum element in the sequence.
 func max() -> Self.Element?
 ```
 
+Available when `Element` conforms to `Comparable`.
+
 #### Return Value
 
 The sequence’s maximum element. If the sequence has no elements, returns `nil`.
@@ -36,23 +39,24 @@ print(greatestHeight)
 // Prints "Optional(67.5)"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 ## See Also
 
-- [func contains(Self.Element) -> Bool](sequence/contains(_:).md)
+### Finding Elements
+- [func contains(Self.Element) -> Bool](./contains%28_%29.md)
   Returns a Boolean value indicating whether the sequence contains the given element.
-- [func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool](sequence/contains(where:).md)
+- [func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool](./contains%28where%29.md)
   Returns a Boolean value indicating whether the sequence contains an element that satisfies the given predicate.
-- [func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool](sequence/allsatisfy(_:).md)
+- [func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool](./allsatisfy%28_%29.md)
   Returns a Boolean value indicating whether every element of a sequence satisfies a given predicate.
-- [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](sequence/first(where:).md)
+- [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](./first%28where%29.md)
   Returns the first element of the sequence that satisfies the given predicate.
-- [func min() -> Self.Element?](sequence/min.md)
+- [func min() -> Self.Element?](./min%28%29.md)
   Returns the minimum element in the sequence.
-- [func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](sequence/min(by:).md)
+- [func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](./min%28by%29.md)
   Returns the minimum element in the sequence, using the given predicate as the comparison between elements.
-- [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](sequence/max(by:).md)
+- [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](./max%28by%29.md)
   Returns the maximum element in the sequence, using the given predicate as the comparison between elements.
 
 

@@ -1,17 +1,18 @@
 # kConverterPrimeMethod_None
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Acts in “latency” mode. Leading and trailing frames are both assumed to be silence.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ Acts in “latency” mode. Leading and trailing frames are both assumed to be s
 var kConverterPrimeMethod_None: UInt32 { get }
 ```
 
+```c
+kConverterPrimeMethod_None
+```
+
 ## See Also
 
-- [var kConverterPrimeMethod_Pre: UInt32](kconverterprimemethod_pre.md)
+### Constants
+- [var kConverterPrimeMethod_Pre: UInt32](./kconverterprimemethod_pre.md)
   Prime with `leading` + `trailing` input frames.
-- [var kConverterPrimeMethod_Normal: UInt32](kconverterprimemethod_normal.md)
+- [var kConverterPrimeMethod_Normal: UInt32](./kconverterprimemethod_normal.md)
   Prime with `trailing` frames only, for zero latency. Leading frames are assumed to be silence.
 
 

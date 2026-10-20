@@ -12,7 +12,7 @@ letting you avoid writing repetitive code by hand.
 During compilation,
 Swift expands any macros in your code before building your code as usual.
 
-![A diagram showing an overview of macro expansion.  On the left, a stylized representation of Swift code.  On the right, the same code with several lines added by the macro.](macro-expansion)
+![A diagram showing an overview of macro expansion.  On the left, a stylized representation of Swift code.  On the right, the same code with several lines added by the macro.](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/macro-expansion@2x.png)
 
 Expanding a macro is always an additive operation:
 Macros add new code,
@@ -295,15 +295,15 @@ it generates type properties that correspond to the enumeration cases,
 
 For more information,
 including a full list of macro roles,
-see [attached](Attributes.md#attached) and [freestanding](Attributes.md#freestanding)
-in [Attributes](Attributes.md).
+see [attached](../ReferenceManual/Attributes.md#attached) and [freestanding](../ReferenceManual/Attributes.md#freestanding)
+in [Attributes](../ReferenceManual/Attributes.md).
 
 ## Macro Expansion
 
 When building Swift code that uses macros,
 the compiler calls the macros' implementation to expand them.
 
-![Diagram showing the four steps of expanding macros.  The input is Swift source code.  This becomes a tree, representing the code's structure.  The macro implementation adds branches to the tree.  The result is Swift source with additional code.](macro-expansion-full)
+![Diagram showing the four steps of expanding macros.  The input is Swift source code.  This becomes a tree, representing the code's structure.  The macro implementation adds branches to the tree.  The result is Swift source with additional code.](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/macro-expansion-full@2x.png)
 
 Specifically, Swift expands macros in the following way:
 
@@ -343,7 +343,7 @@ like a compiler or a macro implementation.
 Here's a representation of the AST for the code above,
 slightly simplified by omitting some extra detail:
 
-![A tree diagram, with a constant as the root element.  The constant has a name, magic number, and a value.  The constant's value is a macro call.  The macro call has a name, fourCharacterCode, and arguments.  The argument is a string literal, ABCD.](macro-ast-original)
+![A tree diagram, with a constant as the root element.  The constant has a name, magic number, and a value.  The constant's value is a macro call.  The macro call has a name, fourCharacterCode, and arguments.  The argument is a string literal, ABCD.](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/macro-ast-original@2x.png)
 
 The diagram above shows how the structure of this code
 is represented in memory.
@@ -371,7 +371,7 @@ For each macro call,
 the compiler passes part of the AST to that macro's implementation.
 Here's a representation of that partial AST:
 
-![A tree diagram, with a macro call as the root element.  The macro call has a name, fourCharacterCode, and arguments.  The argument is a string literal, ABCD.](macro-ast-input)
+![A tree diagram, with a macro call as the root element.  The macro call has a name, fourCharacterCode, and arguments.  The argument is a string literal, ABCD.](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/macro-ast-input@2x.png)
 
 The implementation of the `#fourCharacterCode` macro
 reads this partial AST as its input when expanding the macro.
@@ -402,7 +402,7 @@ The implementation of `#fourCharacterCode`
 generates a new AST containing the expanded code.
 Here's what that code returns to the compiler:
 
-![A tree diagram with the integer literal 1145258561 of type UInt32.](macro-ast-output)
+![A tree diagram with the integer literal 1145258561 of type UInt32.](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/macro-ast-output@2x.png)
 
 When the compiler receives this expansion,
 it replaces the AST element that contains the macro call
@@ -413,7 +413,7 @@ the program is still syntactically valid Swift
 and all the types are correct.
 That produces a final AST that can be compiled as usual:
 
-![A tree diagram, with a constant as the root element.  The constant has a name, magic number, and a value.  The constant's value is the integer literal 1145258561 of type UInt32.](macro-ast-result)
+![A tree diagram, with a constant as the root element.  The constant has a name, magic number, and a value.  The constant's value is the integer literal 1145258561 of type UInt32.](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/macro-ast-result@2x.png)
 
 This AST corresponds to Swift code like this:
 
@@ -599,8 +599,8 @@ conforms to the `ExpressionMacro` protocol.
 The `ExpressionMacro` protocol has one requirement,
 an `expansion(of:in:)` method that expands the AST.
 For the list of macro roles and their corresponding SwiftSyntax protocols,
-see [attached](Attributes.md#attached) and [freestanding](Attributes.md#freestanding)
-in [Attributes](Attributes.md).
+see [attached](../ReferenceManual/Attributes.md#attached) and [freestanding](../ReferenceManual/Attributes.md#freestanding)
+in [Attributes](../ReferenceManual/Attributes.md).
 
 To expand the `#fourCharacterCode` macro,
 Swift sends the AST for the code that uses this macro

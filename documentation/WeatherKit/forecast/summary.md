@@ -1,7 +1,8 @@
 # summary
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A convenient localized description of the minute forecast.
 
@@ -20,15 +21,18 @@ A convenient localized description of the minute forecast.
 var summary: String { get }
 ```
 
+Available when `Element` is `MinuteWeather`.
+
 ## See Also
 
-- [var endIndex: Forecast<Element>.Index](forecast/endindex.md)
+### Getting the properties
+- [var endIndex: Forecast<Element>.Index](./endindex.md)
   The forecast end index.
-- [var forecast: [Element]](forecast/forecast.md)
+- [var forecast: [Element]](./forecast.md)
   The forecast collection.
-- [var metadata: WeatherMetadata](forecast/metadata.md)
+- [var metadata: WeatherMetadata](./metadata.md)
   Descriptive information about the forecast data.
-- [var startIndex: Forecast<Element>.Index](forecast/startindex.md)
+- [var startIndex: Forecast<Element>.Index](./startindex.md)
   The forecast start index.
 
 

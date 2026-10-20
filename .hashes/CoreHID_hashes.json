@@ -251,14 +251,12 @@
       "hash": "fa0c44f0d9577ffdc987dd2128992c256172f053b40f3588d0a43da85d8519a8"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceerror/!=(_:_:)": {
-      "etag": "W/\"856d294b561fabfd60840257dde85bd7\"",
       "file_path": "documentation/CoreHID/hiddeviceerror/noteq(_,_).md",
-      "hash": "c732d5009778c7b754f7825f5db26c901bcf25b953891e1280e4822e5dd753c6"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceerror/==(_:_:)": {
-      "etag": "W/\"1844b79998fa8c384e1ee9ee75f4ce36\"",
       "file_path": "documentation/CoreHID/hiddeviceerror/eqeq(_,_).md",
-      "hash": "eab71b8cc4720b50dba10b5e6eae0b9b67201a3e6f02de0af93e66df3d46edae"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceerror/aborted": {
       "etag": "\"c61-65d55ea3dd98f-df\"",
@@ -641,14 +639,12 @@
       "hash": "47806ae5acdd3d0909d99f98eb781b7a8029fc3b9afca1b5c57c1104cfcdcfac"
     },
     "https://developer.apple.com/documentation/corehid/hiddevicetransport/!=(_:_:)": {
-      "etag": "W/\"d38edf228bb4bfbe747fa03c9c043510\"",
       "file_path": "documentation/CoreHID/hiddevicetransport/noteq(_,_).md",
-      "hash": "807d425c4e5661c4a4b806e2403146368ec1e2da68a9dbc44432742819d67375"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/corehid/hiddevicetransport/==(_:_:)": {
-      "etag": "W/\"850dd77c288c4941066fc33e5dd20d01\"",
       "file_path": "documentation/CoreHID/hiddevicetransport/eqeq(_,_).md",
-      "hash": "908932056863628956479d44657b7884c3d405b371be5a2ea7641b95ce4d7825"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/corehid/hiddevicetransport/aid": {
       "etag": "\"c1f-65d55e9e980fb-df\"",
@@ -1026,7 +1022,7 @@
       "hash": "2829c3f7b2ac0b0bf098c235e648d248bcb3f617c044314e77f18375967f0005"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/arcadeusage/extendedopticalinputstate": {
-      "etag": "\"ef4-65d55ea0bb9bf\"",
+      "etag": "\"ef4-65d55ea0bb9bf-df\"",
       "file_path": "documentation/CoreHID/hidusage/arcadeusage/extendedopticalinputstate.md",
       "hash": "8e062af0d9593c31311421e7ba72196bb6620d343f415188781399dd6b784538"
     },
@@ -15636,14 +15632,12 @@
       "hash": "fa0c44f0d9577ffdc987dd2128992c256172f053b40f3588d0a43da85d8519a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceerror/!=(_:_:).json": {
-      "etag": "W/\"856d294b561fabfd60840257dde85bd7\"",
       "file_path": "documentation/CoreHID/hiddeviceerror/noteq(_,_).md",
-      "hash": "c732d5009778c7b754f7825f5db26c901bcf25b953891e1280e4822e5dd753c6"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceerror/==(_:_:).json": {
-      "etag": "W/\"1844b79998fa8c384e1ee9ee75f4ce36\"",
       "file_path": "documentation/CoreHID/hiddeviceerror/eqeq(_,_).md",
-      "hash": "eab71b8cc4720b50dba10b5e6eae0b9b67201a3e6f02de0af93e66df3d46edae"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceerror/aborted.json": {
       "etag": "\"c61-65d55ea3dd98f-df\"",
@@ -16026,14 +16020,12 @@
       "hash": "47806ae5acdd3d0909d99f98eb781b7a8029fc3b9afca1b5c57c1104cfcdcfac"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddevicetransport/!=(_:_:).json": {
-      "etag": "W/\"d38edf228bb4bfbe747fa03c9c043510\"",
       "file_path": "documentation/CoreHID/hiddevicetransport/noteq(_,_).md",
-      "hash": "807d425c4e5661c4a4b806e2403146368ec1e2da68a9dbc44432742819d67375"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddevicetransport/==(_:_:).json": {
-      "etag": "W/\"850dd77c288c4941066fc33e5dd20d01\"",
       "file_path": "documentation/CoreHID/hiddevicetransport/eqeq(_,_).md",
-      "hash": "908932056863628956479d44657b7884c3d405b371be5a2ea7641b95ce4d7825"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddevicetransport/aid.json": {
       "etag": "\"c1f-65d55e9e980fb-df\"",
@@ -16431,7 +16423,7 @@
       "hash": "2829c3f7b2ac0b0bf098c235e648d248bcb3f617c044314e77f18375967f0005"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/arcadeusage/extendedopticalinputstate.json": {
-      "etag": "\"ef4-65d55ea0bb9bf\"",
+      "etag": "\"ef4-65d55ea0bb9bf-df\"",
       "file_path": "documentation/CoreHID/hidusage/arcadeusage/extendedopticalinputstate.md",
       "hash": "8e062af0d9593c31311421e7ba72196bb6620d343f415188781399dd6b784538"
     },
@@ -30792,6 +30784,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 6159
   }
 }

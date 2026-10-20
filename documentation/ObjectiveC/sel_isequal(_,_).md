@@ -1,7 +1,8 @@
 # sel_isEqual(_:_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether two selectors are equal.
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether two selectors are equal.
 func sel_isEqual(_ lhs: Selector, _ rhs: Selector) -> Bool
 ```
 
+```c
+extern BOOL sel_isEqual(SEL lhs, SEL rhs);
+```
+
 #### Return Value
 
-[`YES`](yes.md) if `rhs` and `rhs` are equal, otherwise [`NO`](no.md).
+[`YES`](./yes.md) if `rhs` and `rhs` are equal, otherwise [`NO`](./no.md).
 
 #### Discussion
 
@@ -35,11 +40,12 @@ func sel_isEqual(_ lhs: Selector, _ rhs: Selector) -> Bool
 
 ## See Also
 
-- [func sel_getName(Selector) -> UnsafePointer<CChar>](sel_getname(_:).md)
+### Working with Selectors
+- [func sel_getName(Selector) -> UnsafePointer<CChar>](./sel_getname%28_%29.md)
   Returns the name of the method specified by a given selector.
-- [func sel_registerName(UnsafePointer<CChar>) -> Selector](sel_registername(_:).md)
+- [func sel_registerName(UnsafePointer<CChar>) -> Selector](./sel_registername%28_%29.md)
   Registers a method with the Objective-C runtime system, maps the method name to a selector, and returns the selector value.
-- [func sel_getUid(UnsafePointer<CChar>) -> Selector](sel_getuid(_:).md)
+- [func sel_getUid(UnsafePointer<CChar>) -> Selector](./sel_getuid%28_%29.md)
   Registers a method name with the Objective-C runtime system.
 
 

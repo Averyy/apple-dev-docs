@@ -1,14 +1,15 @@
 # fstore_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct fstore {
     ...
 } fstore_t;
@@ -17,11 +18,11 @@ typedef struct fstore {
 ## Topics
 
 ### Instance Properties
-- [fst_bytesalloc](fstore_t/1572489-fst_bytesalloc.md)
-- [fst_flags](fstore_t/1572532-fst_flags.md)
-- [fst_length](fstore_t/1572562-fst_length.md)
-- [fst_offset](fstore_t/1572533-fst_offset.md)
-- [fst_posmode](fstore_t/1572523-fst_posmode.md)
+- [fst_bytesalloc](./fstore_t/api-1572489-fst_bytesalloc.md)
+- [fst_flags](./fstore_t/api-1572532-fst_flags.md)
+- [fst_length](./fstore_t/api-1572562-fst_length.md)
+- [fst_offset](./fstore_t/api-1572533-fst_offset.md)
+- [fst_posmode](./fstore_t/api-1572523-fst_posmode.md)
 
 
 ---

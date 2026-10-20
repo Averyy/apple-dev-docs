@@ -1,7 +1,8 @@
 # days
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A number that represents a day.
 
@@ -11,7 +12,7 @@ A number that represents a day.
 
 ## Declaration
 
-```swift
+```
 long days;
 ```
 
@@ -21,11 +22,12 @@ Numbers representing days are 1-based. For example, to represent the third day o
 
 ## See Also
 
-- [years](applepaydatecomponents/years.md)
+### Date Components
+- [years](./years.md)
   A number that represents a year.
-- [months](applepaydatecomponents/months.md)
+- [months](./months.md)
   A number between 1 and 12 that represents a month.
-- [hours](applepaydatecomponents/hours.md)
+- [hours](./hours.md)
   A number that represents an hour.
 
 

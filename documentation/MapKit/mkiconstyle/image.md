@@ -1,7 +1,8 @@
 # image
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The icon image.
 
@@ -17,9 +18,14 @@ The icon image.
 var image: UIImage { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIImage * image;
+```
+
 ## See Also
 
-- [var backgroundColor: UIColor](mkiconstyle/backgroundcolor.md)
+### Customizing the icon view
+- [var backgroundColor: UIColor](./backgroundcolor.md)
   The background color of the icon.
 
 

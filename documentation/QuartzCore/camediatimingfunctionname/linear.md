@@ -1,7 +1,8 @@
 # linear
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Linear pacing, which causes an animation to occur evenly over its duration.
 
@@ -19,6 +20,10 @@ Linear pacing, which causes an animation to occur evenly over its duration.
 static let linear: CAMediaTimingFunctionName
 ```
 
+```c
+extern CAMediaTimingFunctionName const kCAMediaTimingFunctionLinear;
+```
+
 #### Discussion
 
 This is a Bézier timing function with the control points (0.0,0.0) and (1.0,1.0).
@@ -34,17 +39,18 @@ The following code shows how to create a basic animation object using linear int
 
 A layer animated with the animation created by the code above and with linearly interpolated horizontal movement would describe a path similar to the following figure.
 
-![Path taken using linear timing function](/images/com.apple.quartzcore/media-2776812@2x.png)
+![Path taken using linear timing function](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2776812@2x.png)
 
 ## See Also
 
-- [static let easeIn: CAMediaTimingFunctionName](camediatimingfunctionname/easein.md)
+### Constants
+- [static let easeIn: CAMediaTimingFunctionName](./easein.md)
   Ease-in pacing, which causes an animation to begin slowly and then speed up as it progresses.
-- [static let easeOut: CAMediaTimingFunctionName](camediatimingfunctionname/easeout.md)
+- [static let easeOut: CAMediaTimingFunctionName](./easeout.md)
   Ease-out pacing, which causes an animation to begin quickly and then slow as it progresses.
-- [static let easeInEaseOut: CAMediaTimingFunctionName](camediatimingfunctionname/easeineaseout.md)
+- [static let easeInEaseOut: CAMediaTimingFunctionName](./easeineaseout.md)
   Ease-in-ease-out pacing, which causes an animation to begin slowly, accelerate through the middle of its duration, and then slow again before completing.
-- [static let `default`: CAMediaTimingFunctionName](camediatimingfunctionname/default.md)
+- [static let `default`: CAMediaTimingFunctionName](./default.md)
   The system default timing function. Use this function to ensure that the timing of your animations matches that of most system animations.
 
 

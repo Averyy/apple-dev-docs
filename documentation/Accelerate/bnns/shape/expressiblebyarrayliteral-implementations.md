@@ -1,11 +1,12 @@
 # ExpressibleByArrayLiteral Implementations
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(arrayLiteral: BNNS.Shape.ArrayLiteralElement...)](bnns/shape/init(arrayliteral:).md)
+- [init(arrayLiteral: BNNS.Shape.ArrayLiteralElement...)](./init%28arrayliteral%29.md)
   Returns a new shape with the specified size.
 
 

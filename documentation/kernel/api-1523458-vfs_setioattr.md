@@ -1,7 +1,8 @@
 # vfs_setioattr
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Set I/O attributes associated with a mounpoint.
 
@@ -10,11 +11,11 @@ Set I/O attributes associated with a mounpoint.
 
 ## Declaration
 
-```swift
+```c
 void vfs_setioattr(mount_t mp, struct vfsioattr *ioattrp);
 ```
 
-#### Return_value
+#### Return Value
 
 void.
 

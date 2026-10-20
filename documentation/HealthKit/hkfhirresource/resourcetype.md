@@ -1,7 +1,8 @@
 # resourceType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value from the FHIR resource’s `resourceType` field.
 
@@ -18,23 +19,28 @@ The value from the FHIR resource’s `resourceType` field.
 var resourceType: HKFHIRResourceType { get }
 ```
 
+```objc
+@property (copy, readonly) HKFHIRResourceType resourceType;
+```
+
 ## Mentions
 
-- [Accessing Health Records](accessing-health-records.md)
+- [Accessing Health Records](../accessing-health-records.md)
 
 ## See Also
 
-- [var identifier: String](hkfhirresource/identifier.md)
+### Accessing FHIR Data
+- [var identifier: String](./identifier.md)
   The value from the FHIR resource’s `id` field.
-- [var fhirVersion: HKFHIRVersion](hkfhirresource/fhirversion.md)
+- [var fhirVersion: HKFHIRVersion](./fhirversion.md)
   The FHIR version used by this resource.
-- [class HKFHIRVersion](hkfhirversion.md)
+- [class HKFHIRVersion](../hkfhirversion.md)
   The FHIR version.
-- [struct HKFHIRResourceType](hkfhirresourcetype.md)
+- [struct HKFHIRResourceType](../hkfhirresourcetype.md)
   The FHIR resource types supported in HealthKit.
-- [var sourceURL: URL?](hkfhirresource/sourceurl.md)
+- [var sourceURL: URL?](./sourceurl.md)
   The full URL for the source of the FHIR resource.
-- [var data: Data](hkfhirresource/data.md)
+- [var data: Data](./data.md)
   The JSON representation of the FHIR resource.
 
 

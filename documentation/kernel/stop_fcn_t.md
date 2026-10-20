@@ -1,14 +1,15 @@
 # stop_fcn_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef int (struct tty *, int) stop_fcn_t;
 ```
 

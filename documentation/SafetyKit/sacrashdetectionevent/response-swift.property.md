@@ -1,7 +1,8 @@
 # response
 
 **Framework**: SafetyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An indication of whether the system attempted to call an Emergency SOS provider.
 
@@ -18,13 +19,18 @@ An indication of whether the system attempted to call an Emergency SOS provider.
 var response: SACrashDetectionEvent.Response { get }
 ```
 
+```objc
+@property (nonatomic, readonly) SACrashDetectionEventResponse response;
+```
+
 ## See Also
 
-- [SACrashDetectionEvent.Response](sacrashdetectionevent/response-swift.enum.md)
+### Determining the event type
+- [SACrashDetectionEvent.Response](./response-swift.enum.md)
   An enumeration that defines possible emergency responses to a Crash Detection event.
-- [var date: Date](sacrashdetectionevent/date.md)
+- [var date: Date](./date.md)
   The date and time the crash occurred.
-- [var location: CLLocation?](sacrashdetectionevent/location.md)
+- [var location: CLLocation?](./location.md)
   The longitude and latitude where the crash detection occurred.
 
 

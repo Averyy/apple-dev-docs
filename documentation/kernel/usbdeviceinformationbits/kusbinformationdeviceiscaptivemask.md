@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsCaptiveMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The mask indicating that the USB device is captive.
 
@@ -10,7 +11,7 @@ The mask indicating that the USB device is captive.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsCaptiveMask = (1 << kUSBInformationDeviceIsCaptiveBit)
 ```
 

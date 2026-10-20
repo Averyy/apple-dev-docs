@@ -1,7 +1,8 @@
 # UIFontPickerViewController
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view controller that manages the interface for selecting a font that the system provides or the user installs.
 
@@ -18,11 +19,15 @@ A view controller that manages the interface for selecting a font that the syste
 class UIFontPickerViewController
 ```
 
+```objc
+@interface UIFontPickerViewController : UIViewController
+```
+
 #### Overview
 
-Use a [`UIFontPickerViewController`](uifontpickerviewcontroller.md) to provide the user access to all the fonts on their device. Directly querying [`UIFont`](uifont.md) provides only system fonts, but the user may have additional fonts on their device. When the user selects one of these nonsystem fonts in the font picker, the system grants your app access to the font.
+Use a [`UIFontPickerViewController`](./uifontpickerviewcontroller.md) to provide the user access to all the fonts on their device. Directly querying [`UIFont`](./uifont.md) provides only system fonts, but the user may have additional fonts on their device. When the user selects one of these nonsystem fonts in the font picker, the system grants your app access to the font.
 
-The font picker has several customization options collected into a [`UIFontPickerViewController.Configuration`](uifontpickerviewcontroller/configuration-swift.class.md) object. For example, you can set [`includeFaces`](uifontpickerviewcontroller/configuration-swift.class/includefaces.md) to [`true`](https://developer.apple.com/documentation/swift/true) so that the user can select not only the font but a bold or italic face within that font family. Customize the configuration object first, then pass it as an argument in the font picker’s [`init(configuration:)`](uifontpickerviewcontroller/init(configuration:).md) method.
+The font picker has several customization options collected into a [`UIFontPickerViewController.Configuration`](./uifontpickerviewcontroller/configuration-swift.class.md) object. For example, you can set [`includeFaces`](./uifontpickerviewcontroller/configuration-swift.class/includefaces.md) to [`true`](../Swift/true.md) so that the user can select not only the font but a bold or italic face within that font family. Customize the configuration object first, then pass it as an argument in the font picker’s [`init(configuration:)`](./uifontpickerviewcontroller/init%28configuration%29.md) method.
 
 ```swift
     func showFontPicker(_ sender: Any) {
@@ -34,57 +39,58 @@ The font picker has several customization options collected into a [`UIFontPicke
     }
 ```
 
-When your [`UIFontPickerViewControllerDelegate`](uifontpickerviewcontrollerdelegate.md) receives [`fontPickerViewControllerDidPickFont(_:)`](uifontpickerviewcontrollerdelegate/fontpickerviewcontrollerdidpickfont(_:).md), retrieve information about the user’s selected font from the font picker’s [`selectedFontDescriptor`](uifontpickerviewcontroller/selectedfontdescriptor.md).
+When your [`UIFontPickerViewControllerDelegate`](./uifontpickerviewcontrollerdelegate.md) receives [`fontPickerViewControllerDidPickFont(_:)`](./uifontpickerviewcontrollerdelegate/fontpickerviewcontrollerdidpickfont%28_%29.md), retrieve information about the user’s selected font from the font picker’s [`selectedFontDescriptor`](./uifontpickerviewcontroller/selectedfontdescriptor.md).
 
 ## Topics
 
 ### Configuring a font picker to display in iOS
-- [init(configuration: UIFontPickerViewController.Configuration)](uifontpickerviewcontroller/init(configuration:).md)
+- [init(configuration: UIFontPickerViewController.Configuration)](./uifontpickerviewcontroller/init%28configuration%29.md)
   Creates a controller for a font picker view.
-- [var configuration: UIFontPickerViewController.Configuration](uifontpickerviewcontroller/configuration-swift.property.md)
+- [var configuration: UIFontPickerViewController.Configuration](./uifontpickerviewcontroller/configuration-swift.property.md)
   Settings for fonts the font picker should offer to the user and how to display those fonts.
-- [UIFontPickerViewController.Configuration](uifontpickerviewcontroller/configuration-swift.class.md)
+- [UIFontPickerViewController.Configuration](./uifontpickerviewcontroller/configuration-swift.class.md)
   The filters and display settings a font picker view controller uses to set up a font picker.
 ### Responding to font picker interactions
-- [var delegate: (any UIFontPickerViewControllerDelegate)?](uifontpickerviewcontroller/delegate.md)
+- [var delegate: (any UIFontPickerViewControllerDelegate)?](./uifontpickerviewcontroller/delegate.md)
   The object that handles messages about the user’s interaction with a font picker.
-- [protocol UIFontPickerViewControllerDelegate](uifontpickerviewcontrollerdelegate.md)
+- [protocol UIFontPickerViewControllerDelegate](./uifontpickerviewcontrollerdelegate.md)
   A set of optional methods for receiving messages about the user’s interaction with the font picker.
-- [var selectedFontDescriptor: UIFontDescriptor?](uifontpickerviewcontroller/selectedfontdescriptor.md)
+- [var selectedFontDescriptor: UIFontDescriptor?](./uifontpickerviewcontroller/selectedfontdescriptor.md)
   Information about the font family or face selected by the user in the font picker.
 
 ## Relationships
 
 ### Inherits From
-- [UIViewController](uiviewcontroller.md)
+- [UIViewController](./uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
-- [UIAppearanceContainer](uiappearancecontainer.md)
-- [UIContentContainer](uicontentcontainer.md)
-- [UIFocusEnvironment](uifocusenvironment.md)
-- [UIPasteConfigurationSupporting](uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](uiresponderstandardeditactions.md)
-- [UIStateRestoring](uistaterestoring.md)
-- [UITraitChangeObservable](uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](uitraitenvironment.md)
-- [UIUserActivityRestoring](uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](./uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](./uiappearancecontainer.md)
+- [UIContentContainer](./uicontentcontainer.md)
+- [UIFocusEnvironment](./uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](./uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](./uiresponderstandardeditactions.md)
+- [UIStateRestoring](./uistaterestoring.md)
+- [UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](./uitraitenvironment.md)
+- [UIUserActivityRestoring](./uiuseractivityrestoring.md)
 
 ## See Also
 
-- [protocol UIFontPickerViewControllerDelegate](uifontpickerviewcontrollerdelegate.md)
+### Font picker
+- [protocol UIFontPickerViewControllerDelegate](./uifontpickerviewcontrollerdelegate.md)
   A set of optional methods for receiving messages about the user’s interaction with the font picker.
-- [UIFontPickerViewController.Configuration](uifontpickerviewcontroller/configuration-swift.class.md)
+- [UIFontPickerViewController.Configuration](./uifontpickerviewcontroller/configuration-swift.class.md)
   The filters and display settings a font picker view controller uses to set up a font picker.
 
 

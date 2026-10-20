@@ -1,21 +1,23 @@
 # fdiml
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 long double fdiml(long double, long double);
 ```
 
 ## See Also
 
-- [fdim](1557355-fdim.md)
-- [fdimf](1557210-fdimf.md)
+### Positive Difference
+- [fdim](./api-1557355-fdim.md)
+- [fdimf](./api-1557210-fdimf.md)
 
 
 ---

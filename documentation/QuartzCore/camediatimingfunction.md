@@ -1,7 +1,8 @@
 # CAMediaTimingFunction
 
 **Framework**: Core Animation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A function that defines the pacing of an animation as a timing curve.
 
@@ -19,55 +20,60 @@ A function that defines the pacing of an animation as a timing curve.
 class CAMediaTimingFunction
 ```
 
+```objc
+@interface CAMediaTimingFunction : NSObject
+```
+
 #### Overview
 
 `CAMediaTimingFunction` represents one segment of a function that defines the pacing of an animation as a timing curve. The function maps an input time normalized to the range `[0,1]` to an output time also in the range `[0,1]`.
 
-You can create a media timing function by supplying your own cubic Bézier curve control points using the [`init(controlPoints:_:_:_:)`](camediatimingfunction/init(controlpoints:_:_:_:).md) method or by using one of the predefined timing functions.
+You can create a media timing function by supplying your own cubic Bézier curve control points using the [`init(controlPoints:_:_:_:)`](./camediatimingfunction/init%28controlpoints,_,_,_%29.md) method or by using one of the predefined timing functions.
 
 ## Topics
 
 ### Creating Timing Functions
-- [convenience init(name: CAMediaTimingFunctionName)](camediatimingfunction/init(name:).md)
+- [convenience init(name: CAMediaTimingFunctionName)](./camediatimingfunction/init%28name%29.md)
   Creates and returns a new instance of `CAMediaTimingFunction` configured with the predefined timing function specified by `name`.
-- [init(controlPoints: Float, Float, Float, Float)](camediatimingfunction/init(controlpoints:_:_:_:).md)
+- [init(controlPoints: Float, Float, Float, Float)](./camediatimingfunction/init%28controlpoints,_,_,_%29.md)
   Returns an initialized timing function modeled as a cubic Bézier curve using the specified control points.
 ### Accessing the Control Points
-- [func getControlPoint(at: Int, values: UnsafeMutablePointer<Float>)](camediatimingfunction/getcontrolpoint(at:values:).md)
+- [func getControlPoint(at: Int, values: UnsafeMutablePointer<Float>)](./camediatimingfunction/getcontrolpoint%28at,values%29.md)
   Returns the control point for the specified index.
 ### Constants
-- [Predefined Timing Functions](predefined-timing-functions.md)
-  Constants that specify system-provided timing functions, used by [`init(name:)`](camediatimingfunction/init(name:).md).
+- [Predefined Timing Functions](./predefined-timing-functions.md)
+  Constants that specify system-provided timing functions, used by [`init(name:)`](./camediatimingfunction/init%28name%29.md).
 ### Initializers
-- [init?(coder: NSCoder)](camediatimingfunction/init(coder:).md)
+- [init?(coder: NSCoder)](./camediatimingfunction/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [func CACurrentMediaTime() -> CFTimeInterval](cacurrentmediatime().md)
+### Animation Timing
+- [func CACurrentMediaTime() -> CFTimeInterval](./cacurrentmediatime%28%29.md)
   Returns the current absolute time, in seconds.
-- [protocol CAMediaTiming](camediatiming.md)
+- [protocol CAMediaTiming](./camediatiming.md)
   Methods that model a hierarchical timing system, allowing objects to map time between their parent and local time.
-- [class CADisplayLink](cadisplaylink.md)
+- [class CADisplayLink](./cadisplaylink.md)
   A timer object that allows your app to synchronize its drawing to the refresh rate of the display.
-- [class CAMetalDisplayLink](cametaldisplaylink.md)
+- [class CAMetalDisplayLink](./cametaldisplaylink.md)
   A class your Metal app uses to register for callbacks to synchronize its animations for a display.
-- [CAMetalDisplayLink.Update](cametaldisplaylink/update.md)
+- [CAMetalDisplayLink.Update](./cametaldisplaylink/update.md)
   Stores information about a single update from a Metal display link instance.
-- [protocol CAMetalDisplayLinkDelegate](cametaldisplaylinkdelegate.md)
+- [protocol CAMetalDisplayLinkDelegate](./cametaldisplaylinkdelegate.md)
   A protocol your app implements to respond to callbacks from Core Animation for a Metal display link.
 
 

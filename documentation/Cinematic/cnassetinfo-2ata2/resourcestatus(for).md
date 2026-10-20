@@ -1,14 +1,15 @@
 # resourceStatus(for:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Check status for a set of resources.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 27.0+
 - tvOS 27.0+
 

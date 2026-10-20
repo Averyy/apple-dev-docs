@@ -1,7 +1,8 @@
 # NSAffineTransform
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A graphics coordinate transformation.
 
@@ -15,78 +16,82 @@ A graphics coordinate transformation.
 class NSAffineTransform
 ```
 
+```objc
+@interface NSAffineTransform : NSObject
+```
+
 #### Overview
 
-In Swift, this object bridges to [`AffineTransform`](affinetransform.md); use [`NSAffineTransform`](nsaffinetransform.md) when you need reference semantics or other Foundation-specific behavior.
+In Swift, this object bridges to [`AffineTransform`](./affinetransform.md); use [`NSAffineTransform`](./nsaffinetransform.md) when you need reference semantics or other Foundation-specific behavior.
 
 A transformation specifies how points in one coordinate system are transformed to points in another coordinate system. An affine transformation is a special type of transformation that preserves parallel lines in a path but does not necessarily preserve lengths or angles. Scaling, rotation, and translation are the most commonly used manipulations supported by affine transforms, but shearing is also possible.
 
-> **Note**:  In OS X 10.3 and earlier the [`NSAffineTransform`](nsaffinetransform.md) class was declared and implemented entirely in the Application Kit framework. As of macOS 10.4 the [`NSAffineTransform`](nsaffinetransform.md) class has been split across the Foundation and Application Kit frameworks.
+> **Note**:  In OS X 10.3 and earlier the [`NSAffineTransform`](./nsaffinetransform.md) class was declared and implemented entirely in the Application Kit framework. As of macOS 10.4 the [`NSAffineTransform`](./nsaffinetransform.md) class has been split across the Foundation and Application Kit frameworks.
 
-Methods for applying affine transformations to the current graphics context and a method for applying an affine transformation to an [`NSBezierPath`](https://developer.apple.com/documentation/appkit/nsbezierpath) object are described in NSAffineTransform Additions Reference in the Application Kit.
+Methods for applying affine transformations to the current graphics context and a method for applying an affine transformation to an [`NSBezierPath`](../AppKit/nsbezierpath.md) object are described in NSAffineTransform Additions Reference in the Application Kit.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`AffineTransform`](affinetransform.md) structure, which bridges to the [`NSAffineTransform`](nsaffinetransform.md) class. For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/swift/working-with-foundation-types).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`AffineTransform`](./affinetransform.md) structure, which bridges to the [`NSAffineTransform`](./nsaffinetransform.md) class. For more information about value types, see [Working with Foundation Types](../Swift/working-with-foundation-types.md).
 
 ## Topics
 
 ### Creating an Affine Transform
-- [init()](nsaffinetransform/init.md)
+- [init()](./nsaffinetransform/init%28%29.md)
   Initializes an affine transform matrix to the identity matrix.
-- [convenience init(transform: NSAffineTransform)](nsaffinetransform/init(transform:).md)
+- [convenience init(transform: NSAffineTransform)](./nsaffinetransform/init%28transform%29.md)
   Initializes the receiver’s matrix using another transform object.
 ### Accumulating Transformations
-- [func rotate(byDegrees: Double)](nsaffinetransform/rotate(bydegrees:).md)
+- [func rotate(byDegrees: Double)](./nsaffinetransform/rotate%28bydegrees%29.md)
   Applies a rotation factor (measured in degrees) to the receiver’s transformation matrix.
-- [func rotate(byRadians: Double)](nsaffinetransform/rotate(byradians:).md)
+- [func rotate(byRadians: Double)](./nsaffinetransform/rotate%28byradians%29.md)
   Applies a rotation factor (measured in radians) to the receiver’s transformation matrix.
-- [func scale(by: Double)](nsaffinetransform/scale(by:).md)
+- [func scale(by: Double)](./nsaffinetransform/scale%28by%29.md)
   Applies the specified scaling factor along both x and y axes to the receiver’s transformation matrix.
-- [func scaleX(by: Double, yBy: Double)](nsaffinetransform/scalex(by:yby:).md)
+- [func scaleX(by: Double, yBy: Double)](./nsaffinetransform/scalex%28by,yby%29.md)
   Applies scaling factors to each axis of the receiver’s transformation matrix.
-- [func translateX(by: Double, yBy: Double)](nsaffinetransform/translatex(by:yby:).md)
+- [func translateX(by: Double, yBy: Double)](./nsaffinetransform/translatex%28by,yby%29.md)
   Applies the specified translation factors to the receiver’s transformation matrix.
-- [func append(NSAffineTransform)](nsaffinetransform/append(_:).md)
+- [func append(NSAffineTransform)](./nsaffinetransform/append%28_%29.md)
   Appends the specified matrix to the receiver’s matrix.
-- [func prepend(NSAffineTransform)](nsaffinetransform/prepend(_:).md)
+- [func prepend(NSAffineTransform)](./nsaffinetransform/prepend%28_%29.md)
   Prepends the specified matrix to the receiver’s matrix.
-- [func invert()](nsaffinetransform/invert.md)
+- [func invert()](./nsaffinetransform/invert%28%29.md)
   Replaces the receiver’s matrix with its inverse matrix.
 ### Transforming Data and Objects
-- [func transform(NSPoint) -> NSPoint](nsaffinetransform/transform(_:)-41p16.md)
+- [func transform(NSPoint) -> NSPoint](./nsaffinetransform/transform%28_%29-41p16.md)
   Applies the receiver’s transform to the specified point and returns the result.
-- [func transform(NSSize) -> NSSize](nsaffinetransform/transform(_:)-5r6ol.md)
+- [func transform(NSSize) -> NSSize](./nsaffinetransform/transform%28_%29-5r6ol.md)
   Applies the receiver’s transform to the specified size and returns the results.
-- [func transform(NSBezierPath) -> NSBezierPath](nsaffinetransform/transform(_:)-6z1xo.md)
+- [func transform(NSBezierPath) -> NSBezierPath](./nsaffinetransform/transform%28_%29-6z1xo.md)
   Creates and returns a new Bézier path object with each point in the given path transformed by the receiver.
 ### Accessing the Transformation Matrix
-- [var transformStruct: NSAffineTransformStruct](nsaffinetransform/transformstruct.md)
+- [var transformStruct: NSAffineTransformStruct](./nsaffinetransform/transformstruct.md)
   The matrix coefficients stored as the transformation matrix.
-- [struct NSAffineTransformStruct](nsaffinetransformstruct.md)
+- [struct NSAffineTransformStruct](./nsaffinetransformstruct.md)
   A structure that defines the three-by-three matrix that performs an affine transform between two coordinate systems.
 ### Setting and Building the Current Transformation Matrix
-- [func set()](nsaffinetransform/set.md)
+- [func set()](./nsaffinetransform/set%28%29.md)
   Sets the current transformation matrix to the receiver’s transformation matrix.
-- [func concat()](nsaffinetransform/concat.md)
+- [func concat()](./nsaffinetransform/concat%28%29.md)
   Appends the receiver’s matrix to the current transformation matrix stored in the current graphics context, replacing the current transformation matrix with the result.
 ### Initializers
-- [init?(coder: NSCoder)](nsaffinetransform/init(coder:).md)
+- [init?(coder: NSCoder)](./nsaffinetransform/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
 
 
 ---

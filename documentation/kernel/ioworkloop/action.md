@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 typedef IOReturn ( *Action)(
    OSObject *target,
    void *arg0,

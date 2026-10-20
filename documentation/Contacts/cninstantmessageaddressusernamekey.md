@@ -1,7 +1,8 @@
 # CNInstantMessageAddressUsernameKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Instant message address username key.
 
@@ -19,13 +20,18 @@ Instant message address username key.
 let CNInstantMessageAddressUsernameKey: String
 ```
 
+```c
+extern NSString * const CNInstantMessageAddressUsernameKey;
+```
+
 #### Discussion
 
 This key takes a string value.
 
 ## See Also
 
-- [let CNInstantMessageAddressServiceKey: String](cninstantmessageaddressservicekey.md)
+### Instant Messaging Keys
+- [let CNInstantMessageAddressServiceKey: String](./cninstantmessageaddressservicekey.md)
   Instant message address service key.
 
 

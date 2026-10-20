@@ -1,7 +1,8 @@
 # requestAppInstallationFromBrowser(for:referrer:)
 
 **Framework**: MarketplaceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Forwards an app installation request from the developer’s webpage.
 
@@ -18,13 +19,13 @@ final func requestAppInstallationFromBrowser(for url: URL, referrer: URL) async 
 
 ## Mentions
 
-- [Enabling alternative distribution app installation in a browser](enabling-alternative-distribution-app-installation-in-a-browser.md)
+- [Enabling alternative distribution app installation in a browser](../enabling-alternative-distribution-app-installation-in-a-browser.md)
 
 #### Discussion
 
-Web browsers that render with [`BrowserEngineKit`](https://developer.apple.com/documentation/browserenginekit) rather than [`WebKit`](https://developer.apple.com/documentation/webkit) call this method to forward the installation of an app from the developer’s webpage. Your browser listens for [`MarketplaceKitURIScheme`](marketplacekiturischeme.md) invocations to field such requests.
+Web browsers that render with [BrowserEngineKit](../../BrowserEngineKit/BrowserEngineKit.md) rather than [WebKit](../../WebKit/WebKit.md) call this method to forward the installation of an app from the developer’s webpage. Your browser listens for [`MarketplaceKitURIScheme`](../marketplacekiturischeme.md) invocations to field such requests.
 
-For more information, see [`Enabling alternative distribution app installation in a browser`](enabling-alternative-distribution-app-installation-in-a-browser.md).
+For more information, see [Enabling alternative distribution app installation in a browser](../enabling-alternative-distribution-app-installation-in-a-browser.md).
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # AppExtensionPoint
 
 **Framework**: ExtensionFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type you use to declare your host app’s extension points and bind to them from app extensions.
 
@@ -22,14 +23,14 @@ struct AppExtensionPoint
 
 ## Mentions
 
-- [Adding support for app extensions to your app](adding-support-for-app-extensions-to-your-app.md)
-- [Building an app extension to support a host app](building-an-app-extension-to-support-a-host-app.md)
+- [Adding support for app extensions to your app](./adding-support-for-app-extensions-to-your-app.md)
+- [Building an app extension to support a host app](./building-an-app-extension-to-support-a-host-app.md)
 
 #### Overview
 
-Use this type both to declare your app’s supported extension points and to bind to those extension points. To declare an extension point your app supports, extend this type by adding a static variable with the details of your extension point. Annotate your variable with the [`AppExtensionPoint.Definition`](appextensionpoint/definition.md) property wrapper and specify the name and other attributes of your extension point. The following example adds two extension point with different configurations:
+Use this type both to declare your app’s supported extension points and to bind to those extension points. To declare an extension point your app supports, extend this type by adding a static variable with the details of your extension point. Annotate your variable with the [`AppExtensionPoint.Definition`](./appextensionpoint/definition.md) property wrapper and specify the name and other attributes of your extension point. The following example adds two extension point with different configurations:
 
-```None
+```
 extension AppExtensionPoint {
     @Definition
     static var MySecureFeature : AppExtensionPoint {
@@ -47,9 +48,9 @@ extension AppExtensionPoint {
 }
 ```
 
-In addition to defining your app’s extension points, use this type in an app extension to bind to an extension point. In your app extension’s source code, add a variable that contains the `AppExtensionPoint` type. Set the value of that variable to the extension point identifier you support. Annotate your variable declaration with the [`AppExtensionPoint.Bind`](appextensionpoint/bind.md) property wrapper, as shown in the following example:
+In addition to defining your app’s extension points, use this type in an app extension to bind to an extension point. In your app extension’s source code, add a variable that contains the `AppExtensionPoint` type. Set the value of that variable to the extension point identifier you support. Annotate your variable declaration with the [`AppExtensionPoint.Bind`](./appextensionpoint/bind.md) property wrapper, as shown in the following example:
 
-```None
+```
 struct MyAppExtension: AppExtension {
     @AppExtensionPoint.Bind
     var boundAppExtensionPoint: AppExtensionPoint {
@@ -63,54 +64,55 @@ To make extension point and binding information available at runtime, use the co
 ## Topics
 
 ### Creating an app-extension point
-- [init(identifier: StaticString) throws](appextensionpoint/init(identifier:).md)
+- [init(identifier: StaticString) throws](./appextensionpoint/init%28identifier%29.md)
   Initializes the type with a string you can use to find the extension point.
 ### Declaring an extension point
-- [AppExtensionPoint.Definition](appextensionpoint/definition.md)
+- [AppExtensionPoint.Definition](./appextensionpoint/definition.md)
   A property wrapper that a host app uses to declare the extension points it supports.
-- [AppExtensionPoint.Name](appextensionpoint/name.md)
+- [AppExtensionPoint.Name](./appextensionpoint/name.md)
   A type that defines the name of an extension point.
-- [AppExtensionPoint.UserInterface](appextensionpoint/userinterface.md)
+- [AppExtensionPoint.UserInterface](./appextensionpoint/userinterface.md)
   A type with that indicates whether the extension point displays UI from an app extension.
-- [AppExtensionPoint.EnhancedSecurity](appextensionpoint/enhancedsecurity.md)
+- [AppExtensionPoint.EnhancedSecurity](./appextensionpoint/enhancedsecurity.md)
   A type that indicates whether an extension point requires extra security.
-- [AppExtensionPoint.Scope](appextensionpoint/scope.md)
+- [AppExtensionPoint.Scope](./appextensionpoint/scope.md)
   A type that regulates which app extensions may access an extension point.
-- [AppExtensionPoint.Attribute](appextensionpoint/attribute.md)
+- [AppExtensionPoint.Attribute](./appextensionpoint/attribute.md)
   An interface that marks a type as an extension point attribute.
 ### Binding to an extension point
-- [AppExtensionPoint.Bind](appextensionpoint/bind.md)
+- [AppExtensionPoint.Bind](./appextensionpoint/bind.md)
   A property wrapper that binds an app extension to an extension point of a host app.
-- [AppExtensionPoint.Identifier](appextensionpoint/identifier.md)
+- [AppExtensionPoint.Identifier](./appextensionpoint/identifier.md)
   The details of an extension point that your app extension supports.
 ### Detecting app extensions
-- [AppExtensionPoint.Monitor](appextensionpoint/monitor.md)
+- [AppExtensionPoint.Monitor](./appextensionpoint/monitor.md)
   A type you use to discover the app extensions available for your host app to use.
 ### Getting error codes
-- [AppExtensionPoint.Error](appextensionpoint/error.md)
+- [AppExtensionPoint.Error](./appextensionpoint/error.md)
   Error codes for monitor-related requests.
 ### Protocols
-- [AppExtensionPoint.Capability](appextensionpoint/capability.md)
+- [AppExtensionPoint.Capability](./appextensionpoint/capability.md)
   An interface that marks a type as an extension capability.
 ### Structures
-- [AppExtensionPoint.Capabilities](appextensionpoint/capabilities.md)
+- [AppExtensionPoint.Capabilities](./appextensionpoint/capabilities.md)
   The capabilities that an your extension implements
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExtensionPointDefining](extensionpointdefining.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExtensionPointDefining](./extensionpointdefining.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol ExtensionPointDefining](extensionpointdefining.md)
+### Extension-point management
+- [protocol ExtensionPointDefining](./extensionpointdefining.md)
   An interface that extension point types adopt.
 
 

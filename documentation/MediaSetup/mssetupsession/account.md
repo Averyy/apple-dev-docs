@@ -1,7 +1,8 @@
 # account
 
 **Framework**: Media Setup  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The streaming media service account for the session to configure.
 
@@ -17,9 +18,14 @@ The streaming media service account for the session to configure.
 var account: MSServiceAccount { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) MSServiceAccount * account;
+```
+
 ## See Also
 
-- [init(serviceAccount: MSServiceAccount)](mssetupsession/init(serviceaccount:).md)
+### Preparing the Configuration View
+- [init(serviceAccount: MSServiceAccount)](./init%28serviceaccount%29.md)
   Creates a new session.
 
 

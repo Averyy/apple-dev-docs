@@ -1,7 +1,8 @@
 # glyphInfo
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing a glyph information attribute.
 
@@ -16,13 +17,14 @@ let glyphInfo: AttributeScopes.AppKitAttributes.GlyphInfoAttribute
 
 ## See Also
 
-- [let font: AttributeScopes.AppKitAttributes.FontAttribute](attributescopes/appkitattributes/font.md)
+### Using Font and Layout Attributes
+- [let font: AttributeScopes.AppKitAttributes.FontAttribute](./font.md)
   A property for accessing a font attribute.
-- [let kern: AttributeScopes.AppKitAttributes.KernAttribute](attributescopes/appkitattributes/kern.md)
+- [let kern: AttributeScopes.AppKitAttributes.KernAttribute](./kern.md)
   A property for accessing a kerning attribute.
-- [let ligature: AttributeScopes.AppKitAttributes.LigatureAttribute](attributescopes/appkitattributes/ligature.md)
+- [let ligature: AttributeScopes.AppKitAttributes.LigatureAttribute](./ligature.md)
   A property for accessing a ligature attribute.
-- [let tracking: AttributeScopes.AppKitAttributes.TrackingAttribute](attributescopes/appkitattributes/tracking.md)
+- [let tracking: AttributeScopes.AppKitAttributes.TrackingAttribute](./tracking.md)
   A property for accessing a tracking attribute.
 
 

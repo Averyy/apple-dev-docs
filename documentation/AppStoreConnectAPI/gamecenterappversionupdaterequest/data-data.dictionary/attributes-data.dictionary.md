@@ -1,7 +1,8 @@
 # GameCenterAppVersionUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Game Center app version update request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a Game Center app version update request resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAppVersionUpdateRequest.Data.Attributes
 ```
 

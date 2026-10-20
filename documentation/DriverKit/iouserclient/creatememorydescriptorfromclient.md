@@ -1,23 +1,25 @@
 # CreateMemoryDescriptorFromClient
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 20.0+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t CreateMemoryDescriptorFromClient(uint64_t memoryDescriptorCreateOptions, uint32_t segmentsCount, const IOAddressSegment segments[32], IOMemoryDescriptor **memory);
 ```
 
 ## See Also
 
-- [CopyClientEntitlements](iouserclient/copycliententitlements.md)
+### Instance Methods
+- [CopyClientEntitlements](./copycliententitlements.md)
 
 
 ---

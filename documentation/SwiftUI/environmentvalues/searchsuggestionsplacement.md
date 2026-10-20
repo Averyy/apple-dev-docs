@@ -1,7 +1,8 @@
 # searchSuggestionsPlacement
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current placement of search suggestions.
 
@@ -27,7 +28,7 @@ Search suggestions render based on the platform and surrounding context in which
 - In a menu attached to the search field.
 - Inline with the main content of the app.
 
-You find the current search suggestion placement by querying the [`searchSuggestionsPlacement`](environmentvalues/searchsuggestionsplacement.md) in your search suggestions.
+You find the current search suggestion placement by querying the [`searchSuggestionsPlacement`](./searchsuggestionsplacement.md) in your search suggestions.
 
 ```swift
 enum FruitSuggestion: String, Identifiable {
@@ -74,21 +75,22 @@ In the above example, search suggestions only render in iOS if the searchable mo
 
 ## See Also
 
-- [var buttonRepeatBehavior: ButtonRepeatBehavior](environmentvalues/buttonrepeatbehavior.md)
+### Controls and input
+- [var buttonRepeatBehavior: ButtonRepeatBehavior](./buttonrepeatbehavior.md)
   Whether buttons with this associated environment should repeatedly trigger their actions on prolonged interactions.
-- [var controlSize: ControlSize](environmentvalues/controlsize.md)
+- [var controlSize: ControlSize](./controlsize.md)
   The size to apply to controls within a view.
-- [var defaultWheelPickerItemHeight: CGFloat](environmentvalues/defaultwheelpickeritemheight.md)
+- [var defaultWheelPickerItemHeight: CGFloat](./defaultwheelpickeritemheight.md)
   The default height of an item in a wheel-style picker, such as a date picker.
-- [var keyboardShortcut: KeyboardShortcut?](environmentvalues/keyboardshortcut.md)
+- [var keyboardShortcut: KeyboardShortcut?](./keyboardshortcut.md)
   The keyboard shortcut that buttons in this environment will be triggered with.
-- [var menuIndicatorVisibility: Visibility](environmentvalues/menuindicatorvisibility.md)
+- [var menuIndicatorVisibility: Visibility](./menuindicatorvisibility.md)
   The menu indicator visibility to apply to controls within a view.
-- [var menuOrder: MenuOrder](environmentvalues/menuorder.md)
+- [var menuOrder: MenuOrder](./menuorder.md)
   The preferred order of items for menus presented from this view.
-- [var preferredPencilDoubleTapAction: PencilPreferredAction](environmentvalues/preferredpencildoubletapaction.md)
+- [var preferredPencilDoubleTapAction: PencilPreferredAction](./preferredpencildoubletapaction.md)
   The action that the user prefers to perform after double-tapping their Apple Pencil, as selected in the Settings app.
-- [var preferredPencilSqueezeAction: PencilPreferredAction](environmentvalues/preferredpencilsqueezeaction.md)
+- [var preferredPencilSqueezeAction: PencilPreferredAction](./preferredpencilsqueezeaction.md)
   The action that the user prefers to perform when squeezing their Apple Pencil, as selected in the Settings app.
 
 

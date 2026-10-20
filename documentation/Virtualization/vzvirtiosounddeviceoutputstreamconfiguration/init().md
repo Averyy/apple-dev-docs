@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new sounds device output stream configuration.
 
@@ -12,6 +13,10 @@ Creates a new sounds device output stream configuration.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

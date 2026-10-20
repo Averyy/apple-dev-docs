@@ -1,7 +1,8 @@
 # supportsLineMarkers
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 True if this shape supports the addition of line markers.
 

@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A copy of the configuration with which the web extension controller was initialized.
 
@@ -17,6 +18,10 @@ A copy of the configuration with which the web extension controller was initiali
 ```swift
 @NSCopying
 var configuration: WKWebExtensionController.Configuration { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) WKWebExtensionControllerConfiguration * configuration;
 ```
 
 #### Discussion

@@ -1,23 +1,25 @@
 # Frame duration
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer that indicates how long each frame lasts in real time.
 
 ## See Also
 
-- [Reserved](timecode_sample_description/reserved.md)
+### Data fields
+- [Reserved](./reserved.md)
   A 32-bit integer that is reserved for future use.
-- [Flags](timecode_sample_description/flags.md)
+- [Flags](./flags.md)
   A 32-bit integer containing flags that identify some timecode characteristics.
-- [Time scale](timecode_sample_description/time_scale.md)
+- [Time scale](./time_scale.md)
   A 32-bit integer that specifies the time scale for interpreting the frame duration field.
-- [Number of frames](timecode_sample_description/number_of_frames.md)
+- [Number of frames](./number_of_frames.md)
   An 8-bit integer that contains the number of frames per second for the timecode format.
-- [Reserved](timecode_sample_description/reserved2.md)
+- [Reserved](./reserved2.md)
   An 8-bit quantity.
-- [Source reference](timecode_sample_description/source_reference.md)
+- [Source reference](./source_reference.md)
   A user data atom containing information about the source tape.
 
 

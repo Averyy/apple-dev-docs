@@ -1,7 +1,8 @@
 # gravity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The gravity for the simulation relative to the simulation entity.
 

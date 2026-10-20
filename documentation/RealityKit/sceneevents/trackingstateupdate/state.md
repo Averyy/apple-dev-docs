@@ -1,7 +1,8 @@
 # SceneEvents.TrackingStateUpdate.State
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the current tracking status.
 
@@ -17,20 +18,20 @@ enum State
 ## Topics
 
 ### Enumeration Cases
-- [SceneEvents.TrackingStateUpdate.State.orientationTracked](sceneevents/trackingstateupdate/state/orientationtracked.md)
+- [SceneEvents.TrackingStateUpdate.State.orientationTracked](./state/orientationtracked.md)
   The device anchor is only tracking orientation.
-- [SceneEvents.TrackingStateUpdate.State.tracked](sceneevents/trackingstateupdate/state/tracked.md)
+- [SceneEvents.TrackingStateUpdate.State.tracked](./state/tracked.md)
   The device anchor is tracking position and orientation.
-- [SceneEvents.TrackingStateUpdate.State.untracked](sceneevents/trackingstateupdate/state/untracked.md)
+- [SceneEvents.TrackingStateUpdate.State.untracked](./state/untracked.md)
   The device anchor is untracked.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

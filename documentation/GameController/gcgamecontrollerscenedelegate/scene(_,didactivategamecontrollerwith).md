@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -13,6 +14,10 @@
 
 ```swift
 func scene(_ scene: UIScene, didActivateGameControllerWith context: GCGameControllerActivationContext)
+```
+
+```objc
+- (void) scene:(UIScene *) scene didActivateGameControllerWithContext:(GCGameControllerActivationContext *) context;
 ```
 
 

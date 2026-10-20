@@ -1,7 +1,8 @@
 # LFEMuteControl
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A Boolean control where true means that mute is enabled, making that LFE element inaudible.
 
@@ -10,7 +11,7 @@ A Boolean control where true means that mute is enabled, making that LFE element
 
 ## Declaration
 
-```swift
+```c
 LFEMuteControl
 ```
 
@@ -20,13 +21,14 @@ This control is for LFE channels that result from bass management. Note that LFE
 
 ## See Also
 
-- [VolumeControl](videodriverkit/iouservideoclassid/volumecontrol.md)
+### Identifying volume control types
+- [VolumeControl](./volumecontrol.md)
   The class identifier for the `IOUserVideoVolumeControl` class.
-- [MuteControl](videodriverkit/iouservideoclassid/mutecontrol.md)
+- [MuteControl](./mutecontrol.md)
   The class identifier for the `IOUserVideoMuteControl` class.
-- [LFEVolumeControl](videodriverkit/iouservideoclassid/lfevolumecontrol.md)
+- [LFEVolumeControl](./lfevolumecontrol.md)
   A subclass of the `IOUserVideoLevelControl` class for an LFE channel that results from bass management.
-- [LineLevelControl](videodriverkit/iouservideoclassid/linelevelcontrol.md)
+- [LineLevelControl](./linelevelcontrol.md)
   A video selector control that identifies the nominal line level for the element.
 
 

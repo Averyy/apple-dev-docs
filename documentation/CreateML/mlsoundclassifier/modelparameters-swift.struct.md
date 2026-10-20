@@ -1,7 +1,8 @@
 # MLSoundClassifier.ModelParameters
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Parameters that affect the process of training a sound-classifier model.
 
@@ -20,63 +21,64 @@ struct ModelParameters
 
 #### Overview
 
-By default, a sound-classifier training session’s transfer-learning algorithm uses the [`MLSoundClassifier.ModelParameters.FeatureExtractorType.audioFeaturePrint(type:revision:)`](mlsoundclassifier/modelparameters-swift.struct/featureextractortype/audiofeatureprint(type:revision:).md) feature extractor. See [`MLSoundClassifier.ModelParameters.FeatureExtractorType`](mlsoundclassifier/modelparameters-swift.struct/featureextractortype.md) for more information.
+By default, a sound-classifier training session’s transfer-learning algorithm uses the [`MLSoundClassifier.ModelParameters.FeatureExtractorType.audioFeaturePrint(type:revision:)`](./modelparameters-swift.struct/featureextractortype/audiofeatureprint%28type,revision%29.md) feature extractor. See [`MLSoundClassifier.ModelParameters.FeatureExtractorType`](./modelparameters-swift.struct/featureextractortype.md) for more information.
 
 ## Topics
 
 ### Creating parameters
-- [init(validation: MLSoundClassifier.ModelParameters.ValidationData, maxIterations: Int, overlapFactor: Double)](mlsoundclassifier/modelparameters-swift.struct/init(validation:maxiterations:overlapfactor:).md)
+- [init(validation: MLSoundClassifier.ModelParameters.ValidationData, maxIterations: Int, overlapFactor: Double)](./modelparameters-swift.struct/init%28validation,maxiterations,overlapfactor%29.md)
   Creates a new set of training parameters for a sound classifier with a validation dataset.
-- [init(validation: MLSoundClassifier.ModelParameters.ValidationData, maxIterations: Int, overlapFactor: Double, algorithm: MLSoundClassifier.ModelParameters.ModelAlgorithmType)](mlsoundclassifier/modelparameters-swift.struct/init(validation:maxiterations:overlapfactor:algorithm:).md)
+- [init(validation: MLSoundClassifier.ModelParameters.ValidationData, maxIterations: Int, overlapFactor: Double, algorithm: MLSoundClassifier.ModelParameters.ModelAlgorithmType)](./modelparameters-swift.struct/init%28validation,maxiterations,overlapfactor,algorithm%29.md)
   Creates a new set of training parameters for a sound classifier with a validation dataset and a training algorithm.
-- [init(validation: MLSoundClassifier.ModelParameters.ValidationData, maxIterations: Int, overlapFactor: Double, algorithm: MLSoundClassifier.ModelParameters.ModelAlgorithmType, featureExtractionTimeWindowSize: TimeInterval)](mlsoundclassifier/modelparameters-swift.struct/init(validation:maxiterations:overlapfactor:algorithm:featureextractiontimewindowsize:).md)
+- [init(validation: MLSoundClassifier.ModelParameters.ValidationData, maxIterations: Int, overlapFactor: Double, algorithm: MLSoundClassifier.ModelParameters.ModelAlgorithmType, featureExtractionTimeWindowSize: TimeInterval)](./modelparameters-swift.struct/init%28validation,maxiterations,overlapfactor,algorithm,featureextractiontimewindowsize%29.md)
   Creates a new set of training parameters for a sound classifier with a validation dataset, a training algorithm, and a time-window size.
 ### Accessing the training parameters
-- [var validation: MLSoundClassifier.ModelParameters.ValidationData](mlsoundclassifier/modelparameters-swift.struct/validation.md)
+- [var validation: MLSoundClassifier.ModelParameters.ValidationData](./modelparameters-swift.struct/validation.md)
   The sound classifier’s validation dataset.
-- [var maxIterations: Int](mlsoundclassifier/modelparameters-swift.struct/maxiterations.md)
+- [var maxIterations: Int](./modelparameters-swift.struct/maxiterations.md)
   The largest number of iterations the training session can use.
-- [var overlapFactor: Double](mlsoundclassifier/modelparameters-swift.struct/overlapfactor.md)
+- [var overlapFactor: Double](./modelparameters-swift.struct/overlapfactor.md)
   The proportion of overlap that the training session uses to analyze two consecutive windows in the audio data.
-- [var algorithm: MLSoundClassifier.ModelParameters.ModelAlgorithmType](mlsoundclassifier/modelparameters-swift.struct/algorithm.md)
+- [var algorithm: MLSoundClassifier.ModelParameters.ModelAlgorithmType](./modelparameters-swift.struct/algorithm.md)
   The algorithm the training session uses to train the sound classifier.
-- [var featureExtractionTimeWindowSize: TimeInterval](mlsoundclassifier/modelparameters-swift.struct/featureextractiontimewindowsize.md)
+- [var featureExtractionTimeWindowSize: TimeInterval](./modelparameters-swift.struct/featureextractiontimewindowsize.md)
   A time duration, in seconds, the training session uses for each audio sample it reads from an audio file in a dataset.
 ### Describing parameters
-- [var description: String](mlsoundclassifier/modelparameters-swift.struct/description.md)
+- [var description: String](./modelparameters-swift.struct/description.md)
   A text representation of the model parameters.
-- [var debugDescription: String](mlsoundclassifier/modelparameters-swift.struct/debugdescription.md)
+- [var debugDescription: String](./modelparameters-swift.struct/debugdescription.md)
   A text representation of the model parameters that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlsoundclassifier/modelparameters-swift.struct/playgrounddescription.md)
+- [var playgroundDescription: Any](./modelparameters-swift.struct/playgrounddescription.md)
   A description of the parameters in a playground.
 ### Supporting types
-- [MLSoundClassifier.ModelParameters.ValidationData](mlsoundclassifier/modelparameters-swift.struct/validationdata.md)
+- [MLSoundClassifier.ModelParameters.ValidationData](./modelparameters-swift.struct/validationdata.md)
   The source of a validation dataset for a sound classifier.
-- [MLSoundClassifier.ModelParameters.ModelAlgorithmType](mlsoundclassifier/modelparameters-swift.struct/modelalgorithmtype.md)
+- [MLSoundClassifier.ModelParameters.ModelAlgorithmType](./modelparameters-swift.struct/modelalgorithmtype.md)
   The algorithm options to train a sound classifier.
-- [MLSoundClassifier.ModelParameters.ClassifierType](mlsoundclassifier/modelparameters-swift.struct/classifiertype.md)
+- [MLSoundClassifier.ModelParameters.ClassifierType](./modelparameters-swift.struct/classifiertype.md)
   The classifier options for a sound classifier training algorithm.
-- [MLSoundClassifier.ModelParameters.FeatureExtractorType](mlsoundclassifier/modelparameters-swift.struct/featureextractortype.md)
+- [MLSoundClassifier.ModelParameters.FeatureExtractorType](./modelparameters-swift.struct/featureextractortype.md)
   The feature-extractor options for a sound-classifier training algorithm.
-- [MLSoundClassifier.ModelParameters.FeaturePrintType](mlsoundclassifier/modelparameters-swift.struct/featureprinttype.md)
+- [MLSoundClassifier.ModelParameters.FeaturePrintType](./modelparameters-swift.struct/featureprinttype.md)
   The type options for an Audio Feature Print feature extractor.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlsoundclassifier/modelparameters-swift.struct/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlsoundclassifier/modelparameters-swift.struct/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlsoundclassifier/modelparameters-swift.struct/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./modelparameters-swift.struct/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./modelparameters-swift.struct/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./modelparameters-swift.struct/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
 
 ## See Also
 
-- [MLSoundClassifier.DataSource](mlsoundclassifier/datasource.md)
+### Supporting types
+- [MLSoundClassifier.DataSource](./datasource.md)
   A representation of a sound-classifier dataset located in the file system or in a data table.
 
 

@@ -1,7 +1,8 @@
 # crossingMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The crossing behavior of the portal component.
 
@@ -21,7 +22,7 @@ var crossingMode: PortalComponent.CrossingMode { get set }
 
 #### Discussion
 
-Provide a [`PortalComponent.CrossingMode`](portalcomponent/crossingmode-swift.enum.md) to configure the crossing behaviors.
+Provide a [`PortalComponent.CrossingMode`](./crossingmode-swift.enum.md) to configure the crossing behaviors.
 
 
 ---

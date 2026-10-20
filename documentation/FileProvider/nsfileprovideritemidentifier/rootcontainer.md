@@ -1,7 +1,8 @@
 # rootContainer
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The persistent identifier for the root directory of the file provider’s shared file hierarchy.
 
@@ -18,15 +19,20 @@ The persistent identifier for the root directory of the file provider’s shared
 static let rootContainer: NSFileProviderItemIdentifier
 ```
 
+```c
+extern NSFileProviderItemIdentifier const NSFileProviderRootContainerItemIdentifier;
+```
+
 ## Mentions
 
-- [Defining Your File Provider’s Content](defining-your-file-provider-s-content.md)
+- [Defining Your File Provider’s Content](../defining-your-file-provider-s-content.md)
 
 ## See Also
 
-- [static let workingSet: NSFileProviderItemIdentifier](nsfileprovideritemidentifier/workingset.md)
+### Constants
+- [static let workingSet: NSFileProviderItemIdentifier](./workingset.md)
   The persistent identifier representing the working set of documents and directories.
-- [static let trashContainer: NSFileProviderItemIdentifier](nsfileprovideritemidentifier/trashcontainer.md)
+- [static let trashContainer: NSFileProviderItemIdentifier](./trashcontainer.md)
   The persistent identifier for the parent of all trashed items.
 
 

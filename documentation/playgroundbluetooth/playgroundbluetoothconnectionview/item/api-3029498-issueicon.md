@@ -1,7 +1,8 @@
 # issueIcon
 
 **Framework**: Playground Bluetooth  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An image indicating that a peripheral may not function correctly.
 
@@ -17,7 +18,8 @@ var issueIcon: UIImage
 
 ## See Also
 
-- [var icon: UIImage](playgroundbluetoothconnectionview/item/3029496-icon.md)
+### Displaying Icons
+- [var icon: UIImage](./api-3029496-icon.md)
   An image that represents a peripheral.
 
 

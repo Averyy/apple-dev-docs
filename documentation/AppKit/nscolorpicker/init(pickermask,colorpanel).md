@@ -1,18 +1,23 @@
 # init(pickerMask:colorPanel:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the color picker with the specified color panel and color picker mode mask.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 init?(pickerMask mask: Int, colorPanel owningColorPanel: NSColorPanel)
+```
+
+```objc
+- (instancetype) initWithPickerMask:(NSUInteger) mask colorPanel:(NSColorPanel *) owningColorPanel;
 ```
 
 #### Return Value
@@ -26,13 +31,14 @@ Override this method to respond to the values in `mask` or do other custom initi
 ## Parameters
 
 - `mask`: The color picker mask.
-- `owningColorPanel`: The `NSColorPanel` that owns the color picker. This value is cached so it can be accessed using the [`colorPanel`](nscolorpicker/colorpanel.md) property.
+- `owningColorPanel`: The `NSColorPanel` that owns the color picker. This value is cached so it can be accessed using the [`colorPanel`](./colorpanel.md) property.
 
 ## See Also
 
-- [var colorPanel: NSColorPanel](nscolorpicker/colorpanel.md)
+### Related Documentation
+- [var colorPanel: NSColorPanel](./colorpanel.md)
   The color panel instance that owns the color picker.
-- [init?(pickerMask: Int, colorPanel: NSColorPanel)](nscolorpickingdefault/init(pickermask:colorpanel:).md)
+- [init?(pickerMask: Int, colorPanel: NSColorPanel)](../nscolorpickingdefault/init%28pickermask,colorpanel%29.md)
   Initializes the receiver with a given color panel and its mode.
 
 

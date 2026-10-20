@@ -1,7 +1,8 @@
 # primaryAction
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The primary action, and button, for the navigation alert.
 
@@ -16,13 +17,18 @@ The primary action, and button, for the navigation alert.
 var primaryAction: CPAlertAction { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) CPAlertAction * primaryAction;
+```
+
 #### Discussion
 
 Each navigation alert must have a primary action.
 
 ## See Also
 
-- [var secondaryAction: CPAlertAction?](cpnavigationalert/secondaryaction.md)
+### Getting the Actions
+- [var secondaryAction: CPAlertAction?](./secondaryaction.md)
   An optional secondary action, and button, for the navigation alert.
 
 

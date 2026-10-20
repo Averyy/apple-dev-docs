@@ -1,22 +1,27 @@
 # didResignKeyNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts whenever a window resigns its status as main window.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 nonisolated
 class let didResignKeyNotification: NSNotification.Name
+```
+
+```c
+extern NSNotificationName const UIWindowDidResignKeyNotification;
 ```
 
 #### Discussion
@@ -27,11 +32,12 @@ The system posts this notification on the main actor. In iOS 15 and later, the s
 
 ## See Also
 
-- [class let didBecomeVisibleNotification: NSNotification.Name](uiwindow/didbecomevisiblenotification.md)
+### Responding to window-related notifications
+- [class let didBecomeVisibleNotification: NSNotification.Name](./didbecomevisiblenotification.md)
   A notification that posts when a window becomes visible.
-- [class let didBecomeHiddenNotification: NSNotification.Name](uiwindow/didbecomehiddennotification.md)
+- [class let didBecomeHiddenNotification: NSNotification.Name](./didbecomehiddennotification.md)
   A notification that posts when a window becomes hidden.
-- [class let didBecomeKeyNotification: NSNotification.Name](uiwindow/didbecomekeynotification.md)
+- [class let didBecomeKeyNotification: NSNotification.Name](./didbecomekeynotification.md)
   A notification that posts whenever a window becomes the key window.
 
 

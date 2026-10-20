@@ -1,7 +1,8 @@
 # allowsImageOutput
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value specifying whether the renderer can create output images.
 
@@ -18,13 +19,18 @@ A Boolean value specifying whether the renderer can create output images.
 var allowsImageOutput: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL allowsImageOutput;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), this renderer can be used to generate [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) objects.
+If [`true`](../../Swift/true.md), this renderer can be used to generate [`CGImage`](../../CoreGraphics/cgimage.md) objects.
 
 ## See Also
 
-- [var format: UIGraphicsRendererFormat](uigraphicsrenderer/format.md)
+### Configuring the renderer
+- [var format: UIGraphicsRendererFormat](./format.md)
   The format used to create the graphics renderer.
 
 

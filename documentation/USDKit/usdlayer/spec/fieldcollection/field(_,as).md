@@ -1,7 +1,8 @@
 # field(_:as:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Typed field accessor.
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Construct a `CustomMaterial.ClearcoatNormal` object from a `PhysicallyBasedMaterial.ClearcoatNormal`
 

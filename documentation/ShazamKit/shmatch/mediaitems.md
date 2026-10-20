@@ -1,7 +1,8 @@
 # mediaItems
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the media items in the catalog that match the query signature, in order of the quality of the match.
 
@@ -20,9 +21,22 @@ An array of the media items in the catalog that match the query signature, in or
 var mediaItems: [SHMatchedMediaItem] { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, strong, readonly) NSArray<SHMatchedMediaItem *> * mediaItems;
+```
+
+*macOS*
+
+```objc
+@property (atomic, strong, readonly) NSArray<SHMatchedMediaItem *> * mediaItems;
+```
+
 ## See Also
 
-- [var querySignature: SHSignature](shmatch/querysignature.md)
+### Reading match information
+- [var querySignature: SHSignature](./querysignature.md)
   The query signature for the match.
 
 

@@ -1,7 +1,8 @@
 # outputCount
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of outputs the function produces.
 
@@ -20,9 +21,10 @@ var outputCount: Int { get }
 
 ## See Also
 
-- [var outputNames: [String]](inferencefunctiondescriptor/outputnames.md)
+### Describing outputs
+- [var outputNames: [String]](./outputnames.md)
   The names of the function’s outputs.
-- [func outputDescriptor(of: String) -> InferenceValue.Descriptor?](inferencefunctiondescriptor/outputdescriptor(of:).md)
+- [func outputDescriptor(of: String) -> InferenceValue.Descriptor?](./outputdescriptor%28of%29.md)
   Returns the descriptor for the specified output.
 
 

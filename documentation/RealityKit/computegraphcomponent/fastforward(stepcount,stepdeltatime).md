@@ -1,7 +1,8 @@
 # fastForward(stepCount:stepDeltaTime:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Advances the particle simulation by multiple steps in a single operation.
 

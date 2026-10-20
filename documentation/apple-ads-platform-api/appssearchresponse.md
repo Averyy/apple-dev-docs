@@ -1,7 +1,8 @@
 # AppsSearchResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Apps search response envelope.
 
@@ -10,13 +11,13 @@ Apps search response envelope.
 
 ## Declaration
 
-```swift
+```
 object AppsSearchResponse
 ```
 
 #### Discussion
 
-The search apps endpoint returns `AppsSearchResponse` as the top-level envelope. It extends the standard [`QueryResponse`](queryresponse.md) envelope. To retrieve additional pages, use `pagination`.
+The search apps endpoint returns `AppsSearchResponse` as the top-level envelope. It extends the standard [`QueryResponse`](./queryresponse.md) envelope. To retrieve additional pages, use `pagination`.
 
 ##### Example
 
@@ -53,21 +54,21 @@ The search apps endpoint returns `AppsSearchResponse` as the top-level envelope.
 
 ## Properties
 
-- `result` ([AppInfo]) *(required)*: Array of apps matching the search criteria. See [`AppInfo`](appinfo.md).
-- `pagination` (QueryPaginationResult): Pagination metadata for the current result page. See [`QueryPaginationResult`](querypaginationresult.md).
-- `error` (Error): Error details if the request failed. Absent on success. See [`Error`](error.md).
+- `result` ([AppInfo]) *(required)*: Array of apps matching the search criteria. See [`AppInfo`](./appinfo.md).
+- `pagination` (QueryPaginationResult): Pagination metadata for the current result page. See [`QueryPaginationResult`](./querypaginationresult.md).
+- `error` (Error): Error details if the request failed. Absent on success. See [`Error`](./error.md).
 
 ## See Also
 
-- [object AppInfo](appinfo.md)
+- [object AppInfo](./appinfo.md)
   A single app search result.
-- [object AppLocaleDetails](applocaledetails.md)
+- [object AppLocaleDetails](./applocaledetails.md)
   Localized content for an app’s Default Product Page.
-- [object AppLocaleDetailsQueryResponse](applocaledetailsqueryresponse.md)
+- [object AppLocaleDetailsQueryResponse](./applocaledetailsqueryresponse.md)
   Paginated response object for app locale detail queries.
-- [object AppSupportedLanguages](appsupportedlanguages.md)
+- [object AppSupportedLanguages](./appsupportedlanguages.md)
   App supported and default languages for an App Store country or region.
-- [object AppSupportedLanguagesQueryResponse](appsupportedlanguagesqueryresponse.md)
+- [object AppSupportedLanguagesQueryResponse](./appsupportedlanguagesqueryresponse.md)
   Paginated response object for the supported app languages query.
 
 

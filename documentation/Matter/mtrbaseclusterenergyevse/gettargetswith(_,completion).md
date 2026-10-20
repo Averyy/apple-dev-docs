@@ -1,7 +1,8 @@
 # getTargetsWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command GetTargets
 
@@ -17,7 +18,15 @@ Command GetTargets
 ## Declaration
 
 ```swift
+func getTargetsWith(_ params: MTREnergyEVSEClusterGetTargetsParams?, completion: @escaping @Sendable (MTREnergyEVSEClusterGetTargetsResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func targets(with params: MTREnergyEVSEClusterGetTargetsParams?) async throws -> MTREnergyEVSEClusterGetTargetsResponseParams
+```
+
+```objc
+- (void) getTargetsWithParams:(MTREnergyEVSEClusterGetTargetsParams *) params completion:(void (^)(MTREnergyEVSEClusterGetTargetsResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

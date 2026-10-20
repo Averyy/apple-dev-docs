@@ -1,7 +1,8 @@
 # update(_:using:for:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the verdict for a flow outside the context of any filter data provider callback.
 
@@ -14,11 +15,15 @@ Updates the verdict for a flow outside the context of any filter data provider c
 func update(_ flow: NEFilterSocketFlow, using verdict: NEFilterDataVerdict, for direction: NETrafficDirection)
 ```
 
+```objc
+- (void) updateFlow:(NEFilterSocketFlow *) flow usingVerdict:(NEFilterDataVerdict *) verdict forDirection:(NETrafficDirection) direction;
+```
+
 ## Parameters
 
 - `flow`: The NEFilterSocketFlow to update the verdict for.
-- `verdict`: An [`NEFilterDataVerdict`](nefilterdataverdict.md) instance. This must be an [`allow()`](nefilterdataverdict/allow().md) or [`drop()`](nefilterdataverdict/drop().md) verdict, or a data verdict created with the Swift initializer or  ObjectiveC type method, [`init(passBytes:peekBytes:)`](nefilterdataverdict/init(passbytes:peekbytes:).md).
-- `direction`: The direction to which the verdict applies. Pass [`NETrafficDirection.any`](netrafficdirection/any.md) to update the verdict for both the inbound and outbound directions. This parameter has no effect if the verdict is [`drop()`](nefilterdataverdict/drop().md).
+- `verdict`: An [`NEFilterDataVerdict`](../nefilterdataverdict.md) instance. This must be an [`allow()`](../nefilterdataverdict/allow%28%29.md) or [`drop()`](../nefilterdataverdict/drop%28%29.md) verdict, or a data verdict created with the Swift initializer or  ObjectiveC type method, [`init(passBytes:peekBytes:)`](../nefilterdataverdict/init%28passbytes,peekbytes%29.md).
+- `direction`: The direction to which the verdict applies. Pass [`NETrafficDirection.any`](../netrafficdirection/any.md) to update the verdict for both the inbound and outbound directions. This parameter has no effect if the verdict is [`drop()`](../nefilterdataverdict/drop%28%29.md).
 
 
 ---

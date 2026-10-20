@@ -1,16 +1,17 @@
 # Managing apps on devices
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Find, add, and remove apps installed for testing on simulated and physical devices.
 
 #### Overview
 
-Use the Apps inspector in Device Hub to view, install, and remove apps on both simulated and physical devices. During development, Xcode installs your app on devices for you (see [`Running your app on simulated or physical devices`](running-your-app-on-simulated-or-physical-devices.md)), and you remove it using Device Hub. Later, when you’re ready to distribute your app for testing (see [`Distributing your app to registered devices`](distributing-your-app-to-registered-devices.md)), you can use Device Hub independently of Xcode to add and remove apps on multiple test devices.
+Use the Apps inspector in Device Hub to view, install, and remove apps on both simulated and physical devices. During development, Xcode installs your app on devices for you (see [Running your app on simulated or physical devices](./running-your-app-on-simulated-or-physical-devices.md)), and you remove it using Device Hub. Later, when you’re ready to distribute your app for testing (see [Distributing your app to registered devices](./distributing-your-app-to-registered-devices.md)), you can use Device Hub independently of Xcode to add and remove apps on multiple test devices.
 
-![A screenshot of Device Hub with a simulator selected in the sidebar on the left, an iPhone simulator running in the canvas in the middle, and the Apps inspector showing an installed app selected on the right.](/images/com.apple.Xcode/device-hub-apps-inspector@2x.png)
+![A screenshot of Device Hub with a simulator selected in the sidebar on the left, an iPhone simulator running in the canvas in the middle, and the Apps inspector showing an installed app selected on the right.](https://developer.apple.com/tutorials/images/com.apple.Xcode/device-hub-apps-inspector@2x.png)
 
-#### View Apps on Devices
+#### View apps on devices
 
 To find all apps on a device:
 
@@ -20,18 +21,18 @@ To find all apps on a device:
 
 Then use the controls at the bottom of the table to quickly find an app. Enter a search string in the Filter text field, then choose an option, such as Developer, from the pop-up menu to the right.
 
-#### Install Apps on Devices
+#### Install apps on devices
 
 To install iOS, iPadOS, tvOS, visionOS, or watchOS apps on a device without using Xcode:
 
 1. In the Apps inspector, click the Add button (+) below the list of apps.
 2. Select the iOS Package Archive file (with an `.ipa` extension) and click Open.
 
-Alternatively, use [`Apple Configurator`](https://developer.apple.comhttps://apps.apple.com/app/id1037126344) to install apps on devices. For more information, see [`Add apps to a device in Apple Configurator for Mac`](https://developer.apple.comhttps://support.apple.com/guide/apple-configurator-mac/add-apps-to-a-device-cad4cd08c03/2.20/mac#apd379468a002794).
+Alternatively, use [Apple Configurator](https://apps.apple.com/app/id1037126344) to install apps on devices. For more information, see [Add apps to a device in Apple Configurator for Mac](https://support.apple.com/guide/apple-configurator-mac/add-apps-to-a-device-cad4cd08c03/2.20/mac#apd379468a002794).
 
 To install a macOS app, drag the app bundle (with an `.app` extension) to the `/Applications` folder or another folder of your choice on your Mac.
 
-#### Remove Apps From Devices
+#### Remove apps from devices
 
 To remove iOS, iPadOS, tvOS, visionOS, or watchOS apps from a device:
 
@@ -42,7 +43,8 @@ To delete a macOS app, drag the app (with an `.app` extension) to the Trash in F
 
 ## See Also
 
-- [Locating device identifiers](locating-device-identifiers.md)
+### Device details
+- [Locating device identifiers](./locating-device-identifiers.md)
   Get the unique identifier for a device before registering it in your developer account.
 
 

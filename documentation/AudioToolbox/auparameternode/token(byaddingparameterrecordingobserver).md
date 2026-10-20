@@ -1,7 +1,8 @@
 # token(byAddingParameterRecordingObserver:)
 
 **Framework**: Audio Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a recording observer for a single parameter or all parameters in a group.
 
@@ -19,9 +20,13 @@ Adds a recording observer for a single parameter or all parameters in a group.
 func token(byAddingParameterRecordingObserver observer: @escaping AUParameterRecordingObserver) -> AUParameterObserverToken
 ```
 
+```objc
+- (AUParameterObserverToken) tokenByAddingParameterRecordingObserver:(AUParameterRecordingObserver) observer;
+```
+
 #### Return Value
 
-A token which can be passed to the [`removeParameterObserver(_:)`](auparameternode/removeparameterobserver(_:).md) or [`setValue(_:originator:)`](auparameter/setvalue(_:originator:).md) methods.
+A token which can be passed to the [`removeParameterObserver(_:)`](./removeparameterobserver%28_%29.md) or [`setValue(_:originator:)`](../auparameter/setvalue%28_,originator%29.md) methods.
 
 #### Discussion
 
@@ -29,7 +34,7 @@ A host can use a recording observer to capture a series of changes to a paramete
 
 This block is called in an arbitrary thread context and it is responsible for thread-safety. It must not make any calls to add or remove other observers, including itself, as this will deadlock.
 
-An audio unit should interact with the parameter node via the [`implementorValueObserver`](auparameternode/implementorvalueobserver.md) and [`implementorValueProvider`](auparameternode/implementorvalueprovider.md) properties.
+An audio unit should interact with the parameter node via the [`implementorValueObserver`](./implementorvalueobserver.md) and [`implementorValueProvider`](./implementorvalueprovider.md) properties.
 
 ## Parameters
 
@@ -37,10 +42,11 @@ An audio unit should interact with the parameter node via the [`implementorValue
 
 ## See Also
 
-- [func token(byAddingParameterObserver: AUParameterObserver) -> AUParameterObserverToken](auparameternode/token(byaddingparameterobserver:).md)
+### Observers
+- [func token(byAddingParameterObserver: AUParameterObserver) -> AUParameterObserverToken](./token%28byaddingparameterobserver%29.md)
   Adds an observer for a single parameter or all parameters in a group.
-- [func token(byAddingParameterAutomationObserver: AUParameterAutomationObserver) -> AUParameterObserverToken](auparameternode/token(byaddingparameterautomationobserver:).md)
-- [func removeParameterObserver(AUParameterObserverToken)](auparameternode/removeparameterobserver(_:).md)
+- [func token(byAddingParameterAutomationObserver: AUParameterAutomationObserver) -> AUParameterObserverToken](./token%28byaddingparameterautomationobserver%29.md)
+- [func removeParameterObserver(AUParameterObserverToken)](./removeparameterobserver%28_%29.md)
   Remove a specific parameter observer.
 
 

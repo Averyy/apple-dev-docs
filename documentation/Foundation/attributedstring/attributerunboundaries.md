@@ -1,7 +1,8 @@
 # AttributedString.AttributeRunBoundaries
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.0+
@@ -21,16 +22,16 @@ enum AttributeRunBoundaries
 ## Topics
 
 ### Enumeration Cases
-- [AttributedString.AttributeRunBoundaries.character(_:)](attributedstring/attributerunboundaries/character(_:).md)
-- [AttributedString.AttributeRunBoundaries.paragraph](attributedstring/attributerunboundaries/paragraph.md)
+- [AttributedString.AttributeRunBoundaries.character(_:)](./attributerunboundaries/character%28_%29.md)
+- [AttributedString.AttributeRunBoundaries.paragraph](./attributerunboundaries/paragraph.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

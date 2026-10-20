@@ -1,7 +1,8 @@
 # waypoint
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The navigation waypoint containing location-based information and guidance for a point of interest along a route.
 
@@ -14,6 +15,10 @@ The navigation waypoint containing location-based information and guidance for a
 
 ```swift
 var waypoint: CPNavigationWaypoint { get set }
+```
+
+```objc
+@property (nonatomic, strong) CPNavigationWaypoint * waypoint;
 ```
 
 

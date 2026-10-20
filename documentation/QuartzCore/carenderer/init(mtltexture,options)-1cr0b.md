@@ -1,7 +1,8 @@
 # init(mtlTexture:options:)
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a layer renderer from a Metal texture.
 
@@ -19,9 +20,14 @@ Creates a layer renderer from a Metal texture.
 init(mtlTexture tex: any MTLTexture, options dict: [AnyHashable : Any]? = nil)
 ```
 
+```objc
++ (CARenderer *) rendererWithMTLTexture:(id<MTLTexture>) tex options:(NSDictionary *) dict;
+```
+
 ## See Also
 
-- [init(cglContext: UnsafeMutableRawPointer, options: [AnyHashable : Any]?)](carenderer/init(cglcontext:options:)-1l3m2.md)
+### Creating a Renderer
+- [init(cglContext: UnsafeMutableRawPointer, options: [AnyHashable : Any]?)](./init%28cglcontext,options%29-1l3m2.md)
   Creates and returns a `CARenderer` instance with the render target specified by the Core OpenGL context.
 
 

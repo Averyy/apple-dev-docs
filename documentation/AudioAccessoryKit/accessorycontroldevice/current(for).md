@@ -1,7 +1,8 @@
 # current(for:)
 
 **Framework**: AudioAccessoryKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Retrieves the accessory’s current configuration.
 

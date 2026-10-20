@@ -1,7 +1,8 @@
 # usingFocus(identifier:shouldCacheItems:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 class func usingFocus(identifier: UIDeferredMenuElement.Identifier, shouldCacheItems: Bool) -> Self
 ```
 
+```objc
++ (instancetype) elementUsingFocusWithIdentifier:(UIDeferredMenuElementIdentifier) identifier shouldCacheItems:(BOOL) shouldCacheItems;
+```
+
 #### Discussion
 
 Returns a placeholder menu element that is replaced with elements provided from the responder chain. A loading UI takes the place of the element in the menu until it is fulfilled. The element may be stored and re-used across menus.
@@ -27,9 +32,10 @@ Returns a placeholder menu element that is replaced with elements provided from 
 
 ## See Also
 
-- [convenience init((([UIMenuElement]) -> Void) -> Void)](uideferredmenuelement/init(_:).md)
+### Creating a deferred menu element
+- [convenience init((([UIMenuElement]) -> Void) -> Void)](./init%28_%29.md)
   A convenience initializer that creates a placeholder menu element that the system replaces with the result of the provider’s completion handler.
-- [class func uncached((([UIMenuElement]) -> Void) -> Void) -> Self](uideferredmenuelement/uncached(_:).md)
+- [class func uncached((([UIMenuElement]) -> Void) -> Void) -> Self](./uncached%28_%29.md)
   Returns a placeholder menu element that the system replaces with the result of the provider’s completion handler.
 
 

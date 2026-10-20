@@ -1,21 +1,26 @@
 # didAddSubview(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the view that a subview was added.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func didAddSubview(_ subview: UIView)
+```
+
+```objc
+- (void) didAddSubview:(UIView *) subview;
 ```
 
 #### Discussion
@@ -28,23 +33,25 @@ The default implementation of this method does nothing. Subclasses can override 
 
 ## See Also
 
-- [func insertSubview(UIView, belowSubview: UIView)](uiview/insertsubview(_:belowsubview:).md)
+### Related Documentation
+- [func insertSubview(UIView, belowSubview: UIView)](./insertsubview%28_,belowsubview%29.md)
   Inserts a view below another view in the view hierarchy.
-- [func insertSubview(UIView, aboveSubview: UIView)](uiview/insertsubview(_:abovesubview:).md)
+- [func insertSubview(UIView, aboveSubview: UIView)](./insertsubview%28_,abovesubview%29.md)
   Inserts a view above another view in the view hierarchy.
-- [func addSubview(UIView)](uiview/addsubview(_:).md)
+- [func addSubview(UIView)](./addsubview%28_%29.md)
   Adds a view to the end of the receiver’s list of subviews.
-- [func insertSubview(UIView, at: Int)](uiview/insertsubview(_:at:).md)
+- [func insertSubview(UIView, at: Int)](./insertsubview%28_,at%29.md)
   Inserts a subview at the specified index.
-- [func willRemoveSubview(UIView)](uiview/willremovesubview(_:).md)
+### Observing view-related changes
+- [func willRemoveSubview(UIView)](./willremovesubview%28_%29.md)
   Tells the view that a subview is about to be removed.
-- [func willMove(toSuperview: UIView?)](uiview/willmove(tosuperview:).md)
+- [func willMove(toSuperview: UIView?)](./willmove%28tosuperview%29.md)
   Tells the view that its superview is about to change to the specified superview.
-- [func didMoveToSuperview()](uiview/didmovetosuperview.md)
+- [func didMoveToSuperview()](./didmovetosuperview%28%29.md)
   Tells the view that its superview changed.
-- [func willMove(toWindow: UIWindow?)](uiview/willmove(towindow:).md)
+- [func willMove(toWindow: UIWindow?)](./willmove%28towindow%29.md)
   Tells the view that its window object is about to change.
-- [func didMoveToWindow()](uiview/didmovetowindow.md)
+- [func didMoveToWindow()](./didmovetowindow%28%29.md)
   Tells the view that its window object changed.
 
 

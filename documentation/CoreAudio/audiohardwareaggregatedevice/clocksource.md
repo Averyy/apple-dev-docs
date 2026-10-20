@@ -1,12 +1,13 @@
 # clockSource
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device, clock, or tap that is currently serving as the time base of the aggregate device.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

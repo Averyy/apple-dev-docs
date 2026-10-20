@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: WeatherKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 The day weather statistics at the provided index.
 

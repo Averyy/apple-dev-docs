@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Type of the content carried by this sample buffer.
 

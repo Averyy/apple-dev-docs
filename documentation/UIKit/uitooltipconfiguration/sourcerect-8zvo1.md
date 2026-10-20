@@ -1,7 +1,8 @@
 # sourceRect
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The region of the view or control where the pointer must hover to trigger the appearance of the tooltip.
 
@@ -9,7 +10,7 @@ The region of the view or control where the pointer must hover to trigger the ap
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ The region of the view or control where the pointer must hover to trigger the ap
 
 #### Discussion
 
-To set [`sourceRect`](uiviewcontrollerpreviewing/sourcerect.md), create a tooltip configuration object using the [`init(toolTip:in:)`](uitooltipconfiguration/init(tooltip:in:).md) method.
+To set [`sourceRect`](../uiviewcontrollerpreviewing/sourcerect.md), create a tooltip configuration object using the [`init(toolTip:in:)`](./init%28tooltip,in%29.md) method.
 
 ## See Also
 
-- [var toolTip: String](uitooltipconfiguration/tooltip.md)
+### Accessing the configuration settings
+- [var toolTip: String](./tooltip.md)
   The text to display in the tooltip.
 
 

@@ -1,7 +1,8 @@
 # itemTime(forMachAbsoluteTime:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a Mach host time to the item’s timebase.
 
@@ -20,6 +21,10 @@ Converts a Mach host time to the item’s timebase.
 func itemTime(forMachAbsoluteTime machAbsoluteTime: Int64) -> CMTime
 ```
 
+```objc
+- (CMTime) itemTimeForMachAbsoluteTime:(int64_t) machAbsoluteTime;
+```
+
 #### Return Value
 
 The equivalent time in the item’s timebase.
@@ -30,9 +35,10 @@ The equivalent time in the item’s timebase.
 
 ## See Also
 
-- [func itemTime(forHostTime: CFTimeInterval) -> CMTime](avplayeritemoutput/itemtime(forhosttime:).md)
+### Time conversion
+- [func itemTime(forHostTime: CFTimeInterval) -> CMTime](./itemtime%28forhosttime%29.md)
   Converts a host time, specified in seconds, to the item’s timebase.
-- [func itemTime(for: CVTimeStamp) -> CMTime](avplayeritemoutput/itemtime(for:).md)
+- [func itemTime(for: CVTimeStamp) -> CMTime](./itemtime%28for%29.md)
   Converts a Core Video timestamp to the item’s timebase.
 
 

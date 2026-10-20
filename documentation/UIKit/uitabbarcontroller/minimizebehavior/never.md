@@ -1,7 +1,8 @@
 # UITabBarController.MinimizeBehavior.never
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The tab bar does not minimize.
 
@@ -14,6 +15,10 @@ The tab bar does not minimize.
 
 ```swift
 case never
+```
+
+```c
+UITabBarMinimizeBehaviorNever
 ```
 
 

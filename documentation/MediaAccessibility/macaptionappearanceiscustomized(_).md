@@ -1,7 +1,8 @@
 # MACaptionAppearanceIsCustomized(_:)
 
 **Framework**: Media Accessibility  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func MACaptionAppearanceIsCustomized(_ domain: MACaptionAppearanceDomain) -> Bool
+```
+
+```c
+extern bool MACaptionAppearanceIsCustomized(MACaptionAppearanceDomain domain);
 ```
 
 #### Return Value

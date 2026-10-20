@@ -1,7 +1,8 @@
 # ARRaycastQuery.Target.existingPlaneInfinite
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A raycast target that specifies a detected plane, regardless of its size and shape.
 
@@ -15,11 +16,16 @@ A raycast target that specifies a detected plane, regardless of its size and sha
 case existingPlaneInfinite
 ```
 
+```c
+ARRaycastTargetExistingPlaneInfinite
+```
+
 ## See Also
 
-- [ARRaycastQuery.Target.estimatedPlane](arraycastquery/target-swift.enum/estimatedplane.md)
+### Targets
+- [ARRaycastQuery.Target.estimatedPlane](./estimatedplane.md)
   A raycast target that specifies nonplanar surfaces, or planes about which ARKit can only estimate.
-- [ARRaycastQuery.Target.existingPlaneGeometry](arraycastquery/target-swift.enum/existingplanegeometry.md)
+- [ARRaycastQuery.Target.existingPlaneGeometry](./existingplanegeometry.md)
   A raycast target that requires a plane to have a definitive size and shape.
 
 

@@ -1,7 +1,8 @@
 # preservesDepth
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines whether this layer flattens its sublayers into its plane.
 
@@ -19,11 +20,15 @@ Defines whether this layer flattens its sublayers into its plane.
 var preservesDepth: Bool { get set }
 ```
 
+```objc
+@property BOOL preservesDepth;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the layer acts similarly to the `CATransformLayer` and has the same restrictions.
+If [`true`](../../Swift/true.md), the layer acts similarly to the `CATransformLayer` and has the same restrictions.
 
-Default is [`false`](https://developer.apple.com/documentation/swift/false).
+Default is [`false`](../../Swift/false.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # column(type:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clones the column to a data column of the given type.
 
@@ -25,7 +26,7 @@ A new data column if the underlying type of the column is the same as `type`; ot
 
 #### Discussion
 
-Use this method to create a typed copy of the column. For example, to create a data column of integers from an untyped column of integers, use [`column(type:)`](mluntypedcolumn/column(type:).md) with [`Int`](https://developer.apple.com/documentation/swift/int)`.self` as the argument for the `type` parameter.
+Use this method to create a typed copy of the column. For example, to create a data column of integers from an untyped column of integers, use [`column(type:)`](./column%28type%29.md) with [`Int`](../../Swift/int.md)`.self` as the argument for the `type` parameter.
 
 ## Parameters
 
@@ -33,19 +34,20 @@ Use this method to create a typed copy of the column. For example, to create a d
 
 ## See Also
 
-- [var type: MLDataValue.ValueType](mluntypedcolumn/type.md)
+### Exposing the underlying type to generate a data column
+- [var type: MLDataValue.ValueType](./type.md)
   The underlying type of the column.
-- [var ints: MLDataColumn<Int>?](mluntypedcolumn/ints.md)
+- [var ints: MLDataColumn<Int>?](./ints.md)
   A cloned data column of integers.
-- [var doubles: MLDataColumn<Double>?](mluntypedcolumn/doubles.md)
+- [var doubles: MLDataColumn<Double>?](./doubles.md)
   A cloned data column of doubles.
-- [var strings: MLDataColumn<String>?](mluntypedcolumn/strings.md)
+- [var strings: MLDataColumn<String>?](./strings.md)
   A cloned data column of strings.
-- [var sequences: MLDataColumn<MLDataValue.SequenceType>?](mluntypedcolumn/sequences.md)
+- [var sequences: MLDataColumn<MLDataValue.SequenceType>?](./sequences.md)
   A cloned data column of machine learning sequences.
-- [var dictionaries: MLDataColumn<MLDataValue.DictionaryType>?](mluntypedcolumn/dictionaries.md)
+- [var dictionaries: MLDataColumn<MLDataValue.DictionaryType>?](./dictionaries.md)
   A cloned data column of machine learning dictionaries.
-- [var multiArrays: MLDataColumn<MLDataValue.MultiArrayType>?](mluntypedcolumn/multiarrays.md)
+- [var multiArrays: MLDataColumn<MLDataValue.MultiArrayType>?](./multiarrays.md)
   A cloned data column of machine learning multi-arrays.
 
 

@@ -1,7 +1,8 @@
 # contentViewController
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view controller that manages the content of the popover.
 
@@ -15,9 +16,13 @@ The view controller that manages the content of the popover.
 var contentViewController: NSViewController? { get set }
 ```
 
+```objc
+@property (retain, nullable) NSViewController * contentViewController;
+```
+
 #### Discussion
 
-You must set the content view controller of the popover before the popover is shown. Changes to the popover’s content view controller while the popover is shown will cause the popover to animate if the [`animates`](nspopover/animates.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+You must set the content view controller of the popover before the popover is shown. Changes to the popover’s content view controller while the popover is shown will cause the popover to animate if the [`animates`](./animates.md) property is [`true`](../../Swift/true.md).
 
 The default value is `nil`.
 

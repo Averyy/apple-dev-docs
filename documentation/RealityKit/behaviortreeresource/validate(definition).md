@@ -1,7 +1,8 @@
 # validate(definition:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Run the compiler and return all tree errors without producing a resource.
 

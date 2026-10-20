@@ -1,7 +1,8 @@
 # ignorePaths
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the host components should be ignored while matching.
 
@@ -16,6 +17,10 @@ Indicates that the host components should be ignored while matching.
 
 ```swift
 static var ignorePaths: WKWebExtension.MatchPattern.Options { get }
+```
+
+```c
+WKWebExtensionMatchPatternOptionsIgnorePaths
 ```
 
 

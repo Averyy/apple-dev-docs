@@ -1,7 +1,8 @@
 # completeAllAssignedActivities(matching:)
 
 **Framework**: ClassKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Marks all of the assigned and active activities for the given context path as complete.
 
@@ -18,13 +19,17 @@ Marks all of the assigned and active activities for the given context path as co
 func completeAllAssignedActivities(matching contextPath: [String])
 ```
 
+```objc
+- (void) completeAllAssignedActivitiesMatching:(NSArray<NSString *> *) contextPath;
+```
+
 ## Mentions
 
-- [Recording student progress](recording-student-progress.md)
+- [Recording student progress](../recording-student-progress.md)
 
 #### Discussion
 
-Schoolwork displays a per-student Done indicator to teachers, along with statistics about task completion for the entire class. Students set this indicator in their own view of the Schoolwork app. Use the [`completeAllAssignedActivities(matching:)`](clsdatastore/completeallassignedactivities(matching:).md) method to set the Done status programmatically.
+Schoolwork displays a per-student Done indicator to teachers, along with statistics about task completion for the entire class. Students set this indicator in their own view of the Schoolwork app. Use the [`completeAllAssignedActivities(matching:)`](./completeallassignedactivities%28matching%29.md) method to set the Done status programmatically.
 
 Because you’re taking an action on behalf of the student when you call this method, Schoolwork shows the student a momentary alert in your app’s interface at that time.
 
@@ -34,17 +39,18 @@ If a teacher reassigns content and the student marks the item done without redoi
 
 ## Parameters
 
-- `contextPath`: An array of strings that trace a path of identifiers from [`mainAppContext`](clsdatastore/mainappcontext.md) to a target context with activities you want to mark as complete. The `contextPath` is the same identifier path you use for a call to the [`contexts(matchingIdentifierPath:completion:)`](clsdatastore/contexts(matchingidentifierpath:completion:).md) method, but affects only the last context in the path.
+- `contextPath`: An array of strings that trace a path of identifiers from [`mainAppContext`](./mainappcontext.md) to a target context with activities you want to mark as complete. The `contextPath` is the same identifier path you use for a call to the [`contexts(matchingIdentifierPath:completion:)`](./contexts%28matchingidentifierpath,completion%29.md) method, but affects only the last context in the path.
 
 ## See Also
 
-- [var mainAppContext: CLSContext](clsdatastore/mainappcontext.md)
+### Accessing specific contexts and activities
+- [var mainAppContext: CLSContext](./mainappcontext.md)
   The app’s top-level context.
-- [var activeContext: CLSContext?](clsdatastore/activecontext.md)
+- [var activeContext: CLSContext?](./activecontext.md)
   The currently active context.
-- [var runningActivity: CLSActivity?](clsdatastore/runningactivity.md)
+- [var runningActivity: CLSActivity?](./runningactivity.md)
   The currently running activity within the currently active context.
-- [func fetchActivity(for: URL, completion: (CLSActivity?, (any Error)?) -> Void)](clsdatastore/fetchactivity(for:completion:).md)
+- [func fetchActivity(for: URL, completion: (CLSActivity?, (any Error)?) -> Void)](./fetchactivity%28for,completion%29.md)
   Fetches an activity for a given document so you can record progress on the associated task.
 
 

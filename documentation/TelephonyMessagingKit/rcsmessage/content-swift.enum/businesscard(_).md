@@ -1,7 +1,8 @@
 # RCSMessage.Content.businessCard(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A content type for business card content.
 
@@ -16,11 +17,12 @@ case businessCard(RCSService.Business.Card)
 
 ## See Also
 
-- [RCSService.Business.Card](rcsservice/business/card.md)
+### Working with business messages
+- [RCSService.Business.Card](../../rcsservice/business/card.md)
   Structure representing a standalone card.
-- [case businessCardCarousel(RCSService.Business.CardCarousel)](rcsmessage/content-swift.enum/businesscardcarousel(_:).md)
+- [case businessCardCarousel(RCSService.Business.CardCarousel)](./businesscardcarousel%28_%29.md)
   A content type for business card carousel content.
-- [RCSService.Business.CardCarousel](rcsservice/business/cardcarousel.md)
+- [RCSService.Business.CardCarousel](../../rcsservice/business/cardcarousel.md)
   Structure representing a card carousel.
 
 

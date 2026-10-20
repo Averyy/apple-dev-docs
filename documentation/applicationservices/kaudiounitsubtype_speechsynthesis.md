@@ -1,7 +1,8 @@
 # kAudioUnitSubType_SpeechSynthesis
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The speech synthesis component subtype used in the creation of a speech synthesis audio unit. (The component type is `kAudioUnitType_Generator`.)
 

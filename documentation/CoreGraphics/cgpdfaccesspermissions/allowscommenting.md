@@ -1,16 +1,17 @@
 # allowsCommenting
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,15 +19,20 @@
 static var allowsCommenting: CGPDFAccessPermissions { get }
 ```
 
+```c
+kCGPDFAllowsCommenting
+```
+
 ## See Also
 
-- [static var allowsContentAccessibility: CGPDFAccessPermissions](cgpdfaccesspermissions/allowscontentaccessibility.md)
-- [static var allowsContentCopying: CGPDFAccessPermissions](cgpdfaccesspermissions/allowscontentcopying.md)
-- [static var allowsDocumentAssembly: CGPDFAccessPermissions](cgpdfaccesspermissions/allowsdocumentassembly.md)
-- [static var allowsDocumentChanges: CGPDFAccessPermissions](cgpdfaccesspermissions/allowsdocumentchanges.md)
-- [static var allowsFormFieldEntry: CGPDFAccessPermissions](cgpdfaccesspermissions/allowsformfieldentry.md)
-- [static var allowsHighQualityPrinting: CGPDFAccessPermissions](cgpdfaccesspermissions/allowshighqualityprinting.md)
-- [static var allowsLowQualityPrinting: CGPDFAccessPermissions](cgpdfaccesspermissions/allowslowqualityprinting.md)
+### Type Properties
+- [static var allowsContentAccessibility: CGPDFAccessPermissions](./allowscontentaccessibility.md)
+- [static var allowsContentCopying: CGPDFAccessPermissions](./allowscontentcopying.md)
+- [static var allowsDocumentAssembly: CGPDFAccessPermissions](./allowsdocumentassembly.md)
+- [static var allowsDocumentChanges: CGPDFAccessPermissions](./allowsdocumentchanges.md)
+- [static var allowsFormFieldEntry: CGPDFAccessPermissions](./allowsformfieldentry.md)
+- [static var allowsHighQualityPrinting: CGPDFAccessPermissions](./allowshighqualityprinting.md)
+- [static var allowsLowQualityPrinting: CGPDFAccessPermissions](./allowslowqualityprinting.md)
 
 
 ---

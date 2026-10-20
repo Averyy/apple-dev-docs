@@ -1,7 +1,8 @@
 # DockAccessory.TrackedSubjectType.person(_:)
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Tracked subject contains a person.
 

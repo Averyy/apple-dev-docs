@@ -1,15 +1,16 @@
 # kReverb2Param_DryWetMix
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,14 +18,19 @@
 var kReverb2Param_DryWetMix: AudioUnitParameterID { get }
 ```
 
+```c
+kReverb2Param_DryWetMix
+```
+
 ## See Also
 
-- [var kReverb2Param_DecayTimeAt0Hz: AudioUnitParameterID](kreverb2param_decaytimeat0hz.md)
-- [var kReverb2Param_DecayTimeAtNyquist: AudioUnitParameterID](kreverb2param_decaytimeatnyquist.md)
-- [var kReverb2Param_Gain: AudioUnitParameterID](kreverb2param_gain.md)
-- [var kReverb2Param_MaxDelayTime: AudioUnitParameterID](kreverb2param_maxdelaytime.md)
-- [var kReverb2Param_MinDelayTime: AudioUnitParameterID](kreverb2param_mindelaytime.md)
-- [var kReverb2Param_RandomizeReflections: AudioUnitParameterID](kreverb2param_randomizereflections.md)
+### Constants
+- [var kReverb2Param_DecayTimeAt0Hz: AudioUnitParameterID](./kreverb2param_decaytimeat0hz.md)
+- [var kReverb2Param_DecayTimeAtNyquist: AudioUnitParameterID](./kreverb2param_decaytimeatnyquist.md)
+- [var kReverb2Param_Gain: AudioUnitParameterID](./kreverb2param_gain.md)
+- [var kReverb2Param_MaxDelayTime: AudioUnitParameterID](./kreverb2param_maxdelaytime.md)
+- [var kReverb2Param_MinDelayTime: AudioUnitParameterID](./kreverb2param_mindelaytime.md)
+- [var kReverb2Param_RandomizeReflections: AudioUnitParameterID](./kreverb2param_randomizereflections.md)
 
 
 ---

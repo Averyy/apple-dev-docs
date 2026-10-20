@@ -1,12 +1,13 @@
 # XCUIDeviceHandGesture
 
 **Framework**: XCUIAutomation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A hand gesture on a watchOS device.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -15,29 +16,34 @@ A hand gesture on a watchOS device.
 enum XCUIDeviceHandGesture
 ```
 
+```c
+enum XCUIDeviceHandGesture : NSInteger;
+```
+
 ## Topics
 
 ### Hand gestures
-- [XCUIDeviceHandGesture.doubleTap](xcuidevicehandgesture/doubletap.md)
+- [XCUIDeviceHandGesture.doubleTap](./xcuidevicehandgesture/doubletap.md)
   A double-tap hand gesture.
 ### Enumeration Cases
-- [XCUIDeviceHandGesture.flick](xcuidevicehandgesture/flick.md)
+- [XCUIDeviceHandGesture.flick](./xcuidevicehandgesture/flick.md)
 ### Initializers
-- [init?(rawValue: Int)](xcuidevicehandgesture/init(rawvalue:).md)
+- [init?(rawValue: Int)](./xcuidevicehandgesture/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func perform(handGesture: XCUIDeviceHandGesture)](xcuidevice/perform(handgesture:).md)
+### Performing gestures
+- [func perform(handGesture: XCUIDeviceHandGesture)](./xcuidevice/perform%28handgesture%29.md)
 
 
 ---

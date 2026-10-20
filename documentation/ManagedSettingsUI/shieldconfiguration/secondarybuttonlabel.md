@@ -1,7 +1,8 @@
 # secondaryButtonLabel
 
 **Framework**: Managed Settings UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The label of the optional secondary button.
 
@@ -22,7 +23,8 @@ Unlike the primary button, this button is borderless and has no background. If t
 
 ## See Also
 
-- [let secondaryButtonSubmenuItems: [String]?](shieldconfiguration/secondarybuttonsubmenuitems.md)
+### Configure the secondary button
+- [let secondaryButtonSubmenuItems: [String]?](./secondarybuttonsubmenuitems.md)
   An array of strings that define the items to display in the secondary button’s submenu.
 
 

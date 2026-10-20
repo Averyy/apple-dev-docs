@@ -1,7 +1,8 @@
 # title
 
 **Framework**: Link Presentation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A representative title for the URL.
 
@@ -18,6 +19,10 @@ A representative title for the URL.
 
 ```swift
 var title: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * title;
 ```
 
 

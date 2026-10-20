@@ -1,7 +1,8 @@
 # endCall()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends the current call or refuses an incoming call.
 
@@ -14,13 +15,18 @@ Ends the current call or refuses an incoming call.
 func endCall()
 ```
 
+```objc
+- (void) endCall;
+```
+
 ## See Also
 
-- [func releaseCall(Int32)](iobluetoothhandsfreedevice/releasecall(_:).md)
+### Ending Calls
+- [func releaseCall(Int32)](./releasecall%28_%29.md)
   Ends the call with the specified index.
-- [func releaseActiveCalls()](iobluetoothhandsfreedevice/releaseactivecalls.md)
+- [func releaseActiveCalls()](./releaseactivecalls%28%29.md)
   Ends all active calls and accepts a held or waiting call.
-- [func releaseHeldCalls()](iobluetoothhandsfreedevice/releaseheldcalls.md)
+- [func releaseHeldCalls()](./releaseheldcalls%28%29.md)
   Ends all calls that are on hold or returns a busy signal for a waiting call.
 
 

@@ -1,7 +1,8 @@
 # sentenceEmbedding(for:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Retrieves a sentence embedding for a given language.
 
@@ -20,21 +21,26 @@ Retrieves a sentence embedding for a given language.
 class func sentenceEmbedding(for language: NLLanguage) -> NLEmbedding?
 ```
 
+```objc
++ (NLEmbedding *) sentenceEmbeddingForLanguage:(NLLanguage) language;
+```
+
 ## Mentions
 
-- [Finding similarities between pieces of text](finding-similarities-between-pieces-of-text.md)
+- [Finding similarities between pieces of text](../finding-similarities-between-pieces-of-text.md)
 
 #### Return Value
 
-An [`NLEmbedding`](nlembedding.md) if available, otherwise `nil`.
+An [`NLEmbedding`](../nlembedding.md) if available, otherwise `nil`.
 
 ## Parameters
 
-- `language`: The language of the sentence embedding, such as [`french`](nllanguage/french.md). For possible values, see [`NLLanguage`](nllanguage.md).
+- `language`: The language of the sentence embedding, such as [`french`](../nllanguage/french.md). For possible values, see [`NLLanguage`](../nllanguage.md).
 
 ## See Also
 
-- [class func sentenceEmbedding(for: NLLanguage, revision: Int) -> NLEmbedding?](nlembedding/sentenceembedding(for:revision:).md)
+### Creating a sentence embedding
+- [class func sentenceEmbedding(for: NLLanguage, revision: Int) -> NLEmbedding?](./sentenceembedding%28for,revision%29.md)
   Retrieves a sentence embedding for a given language and revision.
 
 

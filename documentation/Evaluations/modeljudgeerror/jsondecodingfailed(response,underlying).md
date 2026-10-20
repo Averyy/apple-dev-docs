@@ -1,7 +1,8 @@
 # ModelJudgeError.jsonDecodingFailed(response:underlying:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The evaluator fails to decode the JSON from the model judge’s response.
 

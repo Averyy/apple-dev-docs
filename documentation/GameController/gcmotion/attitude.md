@@ -1,7 +1,8 @@
 # attitude
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attitude of the controller.
 
@@ -19,19 +20,24 @@ The attitude of the controller.
 var attitude: GCQuaternion { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GCQuaternion attitude;
+```
+
 #### Discussion
 
 The *attitude* is the orientation of a body relative to the controller’s reference frame.
 
 ## See Also
 
-- [struct GCQuaternion](gcquaternion.md)
+### Accessing Attitude and Rotation Data
+- [struct GCQuaternion](../gcquaternion.md)
   A quaternion that represents a controller’s measurement of attitude.
-- [var rotationRate: GCRotationRate](gcmotion/rotationrate.md)
+- [var rotationRate: GCRotationRate](./rotationrate.md)
   The rotation rate of the controller.
-- [struct GCRotationRate](gcrotationrate.md)
+- [struct GCRotationRate](../gcrotationrate.md)
   A structure that represents rotation rates around the x, y, and z axes.
-- [struct GCEulerAngles](gceulerangles.md)
+- [struct GCEulerAngles](../gceulerangles.md)
   A structure that specifies the controller’s attitude as a series of rotations around the x, y, and z axes.
 
 

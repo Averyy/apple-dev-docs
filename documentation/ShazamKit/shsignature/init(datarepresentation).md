@@ -1,7 +1,8 @@
 # init(dataRepresentation:)
 
 **Framework**: ShazamKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a signature object from raw data.
 
@@ -18,6 +19,10 @@ Creates a signature object from raw data.
 
 ```swift
 init(dataRepresentation: Data) throws
+```
+
+```objc
+- (instancetype) initWithDataRepresentation:(NSData *) dataRepresentation error:(NSError **) error;
 ```
 
 #### Return Value

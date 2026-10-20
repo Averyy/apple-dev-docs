@@ -1,7 +1,8 @@
 # CMSampleBuffer
 
 **Framework**: Core Media  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reference to a buffer of media data.
 
@@ -20,6 +21,10 @@ A reference to a buffer of media data.
 class CMSampleBuffer
 ```
 
+```c
+typedef struct opaqueCMSampleBuffer * CMSampleBufferRef;
+```
+
 #### Overview
 
 A sample buffer is a Core Foundation object that contains zero or more media samples of a particular type (audio, video, muxed, and so on).
@@ -27,161 +32,162 @@ A sample buffer is a Core Foundation object that contains zero or more media sam
 ## Topics
 
 ### Determining Readiness
-- [var dataReadiness: CMSampleBuffer.DataReadiness](cmsamplebuffer/datareadiness-swift.property.md)
+- [var dataReadiness: CMSampleBuffer.DataReadiness](./cmsamplebuffer/datareadiness-swift.property.md)
   A value that indicates the status of the data the sample buffer contains.
-- [func setDataReadiness(CMSampleBuffer.DataReadiness) throws](cmsamplebuffer/setdatareadiness(_:).md)
+- [func setDataReadiness(CMSampleBuffer.DataReadiness) throws](./cmsamplebuffer/setdatareadiness%28_%29.md)
   Sets the status of the sample buffer’s data.
-- [CMSampleBuffer.DataReadiness](cmsamplebuffer/datareadiness-swift.enum.md)
+- [CMSampleBuffer.DataReadiness](./cmsamplebuffer/datareadiness-swift.enum.md)
   Constants that indicate the readiness of a sample buffer’s data.
-- [func makeDataReady() throws](cmsamplebuffer/makedataready.md)
+- [func makeDataReady() throws](./cmsamplebuffer/makedataready%28%29.md)
   Makes the sample buffer’s data ready for use by calling its handler closure.
-- [func trackDataReadiness(CMSampleBuffer) throws](cmsamplebuffer/trackdatareadiness(_:).md)
+- [func trackDataReadiness(CMSampleBuffer) throws](./cmsamplebuffer/trackdatareadiness%28_%29.md)
   Associates a sample buffer’s data readiness with that of another sample buffer.
 ### Invalidating Sample Buffers
-- [var isValid: Bool](cmsamplebuffer/isvalid.md)
+- [var isValid: Bool](./cmsamplebuffer/isvalid.md)
   A Boolean value that indicates whether the sample buffer is valid.
-- [func setInvalidateHandler((CMSampleBuffer) throws -> Void) throws](cmsamplebuffer/setinvalidatehandler(_:).md)
+- [func setInvalidateHandler((CMSampleBuffer) throws -> Void) throws](./cmsamplebuffer/setinvalidatehandler%28_%29.md)
   Sets a closure for the sample buffer to call when it’s invalidated.
-- [func invalidate() throws](cmsamplebuffer/invalidate.md)
+- [func invalidate() throws](./cmsamplebuffer/invalidate%28%29.md)
   Invalidates a sample buffer by calling its invalidation handler.
 ### Inspecting Size Information
-- [var numSamples: Int](cmsamplebuffer/numsamples.md)
+- [var numSamples: Int](./cmsamplebuffer/numsamples.md)
   The number of media samples the buffer contains.
-- [func sampleSizes() throws -> [Int]](cmsamplebuffer/samplesizes.md)
+- [func sampleSizes() throws -> [Int]](./cmsamplebuffer/samplesizes%28%29.md)
   Retrieves an array of sample sizes that represents each sample in a sample buffer.
-- [func sampleSize(at: Int) -> Int](cmsamplebuffer/samplesize(at:).md)
+- [func sampleSize(at: Int) -> Int](./cmsamplebuffer/samplesize%28at%29.md)
   Returns the size of a sample in bytes.
-- [var totalSampleSize: Int](cmsamplebuffer/totalsamplesize.md)
+- [var totalSampleSize: Int](./cmsamplebuffer/totalsamplesize.md)
   The total size in bytes of sample data in the buffer.
 ### Inspecting Duration and Timing
-- [var duration: CMTime](cmsamplebuffer/duration.md)
+- [var duration: CMTime](./cmsamplebuffer/duration.md)
   The total duration of a sample buffer.
-- [var decodeTimeStamp: CMTime](cmsamplebuffer/decodetimestamp.md)
+- [var decodeTimeStamp: CMTime](./cmsamplebuffer/decodetimestamp.md)
   The decode timestamp of the first sample in the buffer.
-- [var presentationTimeStamp: CMTime](cmsamplebuffer/presentationtimestamp.md)
+- [var presentationTimeStamp: CMTime](./cmsamplebuffer/presentationtimestamp.md)
   The sample presentation timestamp that’s the earliest numerically in the sample buffer.
-- [var outputDuration: CMTime](cmsamplebuffer/outputduration.md)
+- [var outputDuration: CMTime](./cmsamplebuffer/outputduration.md)
   The output duration of the sample buffer.
-- [var outputDecodeTimeStamp: CMTime](cmsamplebuffer/outputdecodetimestamp.md)
+- [var outputDecodeTimeStamp: CMTime](./cmsamplebuffer/outputdecodetimestamp.md)
   The output decode timestamp for a sample buffer.
-- [var outputPresentationTimeStamp: CMTime](cmsamplebuffer/outputpresentationtimestamp.md)
+- [var outputPresentationTimeStamp: CMTime](./cmsamplebuffer/outputpresentationtimestamp.md)
   The output presentation timestamp of a sample buffer.
-- [func setOutputPresentationTimeStamp(CMTime) throws](cmsamplebuffer/setoutputpresentationtimestamp(_:).md)
+- [func setOutputPresentationTimeStamp(CMTime) throws](./cmsamplebuffer/setoutputpresentationtimestamp%28_%29.md)
   Sets an output presentation timestamp to use in place of a calculated value.
-- [func sampleTimingInfos() throws -> [CMSampleTimingInfo]](cmsamplebuffer/sampletiminginfos.md)
+- [func sampleTimingInfos() throws -> [CMSampleTimingInfo]](./cmsamplebuffer/sampletiminginfos%28%29.md)
   Retrieves an array of sample timing information structures that represents each sample in a sample buffer.
-- [func sampleTimingInfo(at: CMItemIndex) throws -> CMSampleTimingInfo](cmsamplebuffer/sampletiminginfo(at:).md)
+- [func sampleTimingInfo(at: CMItemIndex) throws -> CMSampleTimingInfo](./cmsamplebuffer/sampletiminginfo%28at%29.md)
   Returns sample timing information for a sample at the specified index.
-- [func outputSampleTimingInfos() throws -> [CMSampleTimingInfo]](cmsamplebuffer/outputsampletiminginfos.md)
+- [func outputSampleTimingInfos() throws -> [CMSampleTimingInfo]](./cmsamplebuffer/outputsampletiminginfos%28%29.md)
   Retrieves an array of output sample timing information structures that represents each sample in a sample buffer.
 ### Accessing the Format Description
-- [var formatDescription: CMFormatDescription?](cmsamplebuffer/formatdescription.md)
+- [var formatDescription: CMFormatDescription?](./cmsamplebuffer/formatdescription.md)
   An object that describes the details of the media data.
 ### Modifying Sample Buffers
-- [var dataBuffer: CMBlockBuffer?](cmsamplebuffer/databuffer.md)
+- [var dataBuffer: CMBlockBuffer?](./cmsamplebuffer/databuffer.md)
   A block buffer that contains the media data.
-- [func setDataBuffer(CMBlockBuffer) throws](cmsamplebuffer/setdatabuffer(_:).md)
+- [func setDataBuffer(CMBlockBuffer) throws](./cmsamplebuffer/setdatabuffer%28_%29.md)
   Associates a block buffer of media data with a sample buffer.
-- [var imageBuffer: CVImageBuffer?](cmsamplebuffer/imagebuffer.md)
+- [var imageBuffer: CVImageBuffer?](./cmsamplebuffer/imagebuffer.md)
   An image buffer that contains the media data.
-- [func withAudioBufferList<R>(blockBufferMemoryAllocator: CFAllocator?, flags: CMSampleBuffer.Flags, body: (UnsafeMutableAudioBufferListPointer, CMBlockBuffer) throws -> R) throws -> R](cmsamplebuffer/withaudiobufferlist(blockbuffermemoryallocator:flags:body:).md)
+- [func withAudioBufferList<R>(blockBufferMemoryAllocator: CFAllocator?, flags: CMSampleBuffer.Flags, body: (UnsafeMutableAudioBufferListPointer, CMBlockBuffer) throws -> R) throws -> R](./cmsamplebuffer/withaudiobufferlist%28blockbuffermemoryallocator,flags,body%29.md)
   Calls a closure with an audio buffer list that contains the data from a sample buffer and a block buffer backing the audio buffers.
-- [func setDataBuffer(fromAudioBufferList: UnsafePointer<AudioBufferList>, blockBufferMemoryAllocator: CFAllocator?, flags: CMSampleBuffer.Flags) throws](cmsamplebuffer/setdatabuffer(fromaudiobufferlist:blockbuffermemoryallocator:flags:).md)
+- [func setDataBuffer(fromAudioBufferList: UnsafePointer<AudioBufferList>, blockBufferMemoryAllocator: CFAllocator?, flags: CMSampleBuffer.Flags) throws](./cmsamplebuffer/setdatabuffer%28fromaudiobufferlist,blockbuffermemoryallocator,flags%29.md)
   Creates a block buffer that contains a copy of the data from an audio buffer list, and sets it as the sample buffer’s data.
-- [func copyPCMData(fromRange: Range<Int>, into: UnsafeMutablePointer<AudioBufferList>) throws](cmsamplebuffer/copypcmdata(fromrange:into:).md)
+- [func copyPCMData(fromRange: Range<Int>, into: UnsafeMutablePointer<AudioBufferList>) throws](./cmsamplebuffer/copypcmdata%28fromrange,into%29.md)
   Copies PCM audio data from a sample buffer into a prepopulated audio buffer list.
-- [func audioStreamPacketDescriptions() throws -> [AudioStreamPacketDescription]](cmsamplebuffer/audiostreampacketdescriptions.md)
+- [func audioStreamPacketDescriptions() throws -> [AudioStreamPacketDescription]](./cmsamplebuffer/audiostreampacketdescriptions%28%29.md)
   Creates an array of audio stream packet descriptions for the variable bytes per packet or variable frames per packet audio data in a sample buffer.
-- [func withUnsafeAudioStreamPacketDescriptions<R>((UnsafeBufferPointer<AudioStreamPacketDescription>) throws -> R) throws -> R](cmsamplebuffer/withunsafeaudiostreampacketdescriptions(_:).md)
+- [func withUnsafeAudioStreamPacketDescriptions<R>((UnsafeBufferPointer<AudioStreamPacketDescription>) throws -> R) throws -> R](./cmsamplebuffer/withunsafeaudiostreampacketdescriptions%28_%29.md)
   Calls a closure with an audio stream packet description.
-- [func singleSampleBuffers() throws -> CMSampleBuffer.SingleSampleBuffers](cmsamplebuffer/singlesamplebuffers.md)
+- [func singleSampleBuffers() throws -> CMSampleBuffer.SingleSampleBuffers](./cmsamplebuffer/singlesamplebuffers%28%29.md)
   Returns all samples in a sample buffer.
-- [CMSampleBuffer.SingleSampleBuffers](cmsamplebuffer/singlesamplebuffers.md)
+- [CMSampleBuffer.SingleSampleBuffers](./cmsamplebuffer/singlesamplebuffers.md)
 ### Managing Attachments
-- [CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey.md)
+- [CMSampleBuffer.AttachmentKey](./cmsamplebuffer/attachmentkey.md)
   Keys that identify sample buffer attachments.
-- [var sampleAttachments: CMSampleBuffer.SampleAttachmentsArray](cmsamplebuffer/sampleattachments-swift.property.md)
+- [var sampleAttachments: CMSampleBuffer.SampleAttachmentsArray](./cmsamplebuffer/sampleattachments-swift.property.md)
   An array of sample attachments.
-- [CMSampleBuffer.SampleAttachmentsArray](cmsamplebuffer/sampleattachmentsarray.md)
-- [CMSampleBuffer.PerSampleAttachmentsDictionary](cmsamplebuffer/persampleattachmentsdictionary.md)
+- [CMSampleBuffer.SampleAttachmentsArray](./cmsamplebuffer/sampleattachmentsarray.md)
+- [CMSampleBuffer.PerSampleAttachmentsDictionary](./cmsamplebuffer/persampleattachmentsdictionary.md)
   A structure that defines keys to identify per-sample attachments.
 ### Accessing the Type Identifier
-- [static var typeID: CFTypeID](cmsamplebuffer/typeid.md)
+- [static var typeID: CFTypeID](./cmsamplebuffer/typeid.md)
   Returns the type identifier of sample buffer objects.
 ### Accessing Tagged Buffers
-- [var taggedBuffers: [CMTaggedBuffer]?](cmsamplebuffer/taggedbuffers.md)
+- [var taggedBuffers: [CMTaggedBuffer]?](./cmsamplebuffer/taggedbuffers.md)
   Returns the tagged buffers associated with this buffer.
 ### Constants
-- [CMSampleBuffer.Error](cmsamplebuffer/error.md)
+- [CMSampleBuffer.Error](./cmsamplebuffer/error.md)
   A structure that defines errors that occur during framework operations.
-- [CMSampleBuffer.Flags](cmsamplebuffer/flags.md)
+- [CMSampleBuffer.Flags](./cmsamplebuffer/flags.md)
   Flags that customize the behavior of framework operations.
-- [CMSampleBuffer.NotificationKey](cmsamplebuffer/notificationkey.md)
+- [CMSampleBuffer.NotificationKey](./cmsamplebuffer/notificationkey.md)
   A key for sample buffer notifications.
 ### Notifications
-- [static let dataBecameReady: NSNotification.Name](cmsamplebuffer/databecameready.md)
+- [static let dataBecameReady: NSNotification.Name](./cmsamplebuffer/databecameready.md)
   A notification the system posts when a sample buffer’s data becomes ready.
-- [static let dataFailed: NSNotification.Name](cmsamplebuffer/datafailed.md)
+- [static let dataFailed: NSNotification.Name](./cmsamplebuffer/datafailed.md)
   A notification the system posts when a sample buffer fails to load its data.
 ### Protocols
-- [CMSampleBuffer.Content](cmsamplebuffer/content.md)
+- [CMSampleBuffer.Content](./cmsamplebuffer/content.md)
   All buffer types that can be carried by sample buffer are marked by this protocol.
-- [CMSampleBuffer.ContentWithFormatDescription](cmsamplebuffer/contentwithformatdescription.md)
+- [CMSampleBuffer.ContentWithFormatDescription](./cmsamplebuffer/contentwithformatdescription.md)
   This is a marker protocol to indicate content that always has a format description.
-- [CMSampleBuffer.MultiSampleContent](cmsamplebuffer/multisamplecontent.md)
+- [CMSampleBuffer.MultiSampleContent](./cmsamplebuffer/multisamplecontent.md)
   This is a marker protocol to indicate content that supports multiple samples.
 ### Structures
-- [CMSampleBuffer.HEVCTemporalInfo](cmsamplebuffer/hevctemporalinfo.md)
+- [CMSampleBuffer.HEVCTemporalInfo](./cmsamplebuffer/hevctemporalinfo.md)
   The temporal layer information for all samples in a temporal layer.
-- [CMSampleBuffer.SampleAttachments](cmsamplebuffer/sampleattachments-swift.struct.md)
+- [CMSampleBuffer.SampleAttachments](./cmsamplebuffer/sampleattachments-swift.struct.md)
   Attachments applicable to each sample within a sample buffer.
-- [CMSampleBuffer.SampleProperties](cmsamplebuffer/sampleproperties.md)
+- [CMSampleBuffer.SampleProperties](./cmsamplebuffer/sampleproperties.md)
   Information about a sample in the sample buffer.
-- [CMSampleBuffer.SamplePropertiesCollection](cmsamplebuffer/samplepropertiescollection.md)
+- [CMSampleBuffer.SamplePropertiesCollection](./cmsamplebuffer/samplepropertiescollection.md)
   Fixed size collection of sample information.
 ### Initializers
-- [init(referencing: CMSampleBuffer)](cmsamplebuffer/init(referencing:).md)
+- [init(referencing: CMSampleBuffer)](./cmsamplebuffer/init%28referencing%29.md)
 ### Instance Properties
-- [var contentType: CMSampleBuffer.ContentType](cmsamplebuffer/contenttype-swift.property.md)
+- [var contentType: CMSampleBuffer.ContentType](./cmsamplebuffer/contenttype-swift.property.md)
   Type of the content carried by this sample buffer.
 ### Type Aliases
-- [CMSampleBuffer.T](cmsamplebuffer/t.md)
+- [CMSampleBuffer.T](./cmsamplebuffer/t.md)
 ### Enumerations
-- [CMSampleBuffer.ContentType](cmsamplebuffer/contenttype-swift.enum.md)
+- [CMSampleBuffer.ContentType](./cmsamplebuffer/contenttype-swift.enum.md)
   Describes the type of content carried by a sample buffer instance.
-- [CMSampleBuffer.DynamicContent](cmsamplebuffer/dynamiccontent.md)
+- [CMSampleBuffer.DynamicContent](./cmsamplebuffer/dynamiccontent.md)
   Sample buffer content not known at compile time.
-- [CMSampleBuffer.SizePerSample](cmsamplebuffer/sizepersample.md)
+- [CMSampleBuffer.SizePerSample](./cmsamplebuffer/sizepersample.md)
   Specifies size of each sample in a sample buffer.
-- [CMSampleBuffer.TimingPerSample](cmsamplebuffer/timingpersample.md)
+- [CMSampleBuffer.TimingPerSample](./cmsamplebuffer/timingpersample.md)
   Specifies timing of each sample in a sample buffer.
 
 ## Relationships
 
 ### Conforms To
-- [CMAttachmentBearerProtocol](cmattachmentbearerprotocol.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [CMAttachmentBearerProtocol](./cmattachmentbearerprotocol.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [Sample Buffer Flags](sample-buffer-flags.md)
+### Data Types
+- [Sample Buffer Flags](./sample-buffer-flags.md)
   Flags that customize the behavior of framework operations.
-- [struct CMSampleTimingInfo](cmsampletiminginfo.md)
+- [struct CMSampleTimingInfo](./cmsampletiminginfo.md)
   A collection of timing information for a sample in a sample buffer.
-- [typealias CMBuffer](cmbuffer.md)
+- [typealias CMBuffer](./cmbuffer.md)
   A reference to a buffer object.
-- [typealias CMBufferGetSizeCallback](cmbuffergetsizecallback.md)
+- [typealias CMBufferGetSizeCallback](./cmbuffergetsizecallback.md)
   A client callback that returns a size.
-- [typealias CMItemIndex](cmitemindex.md)
+- [typealias CMItemIndex](./cmitemindex.md)
   A datatype that represents an item index.
-- [typealias CMItemCount](cmitemcount.md)
+- [typealias CMItemCount](./cmitemcount.md)
   A datatype that represents an item count.
-- [typealias CMPersistentTrackID](cmpersistenttrackid.md)
+- [typealias CMPersistentTrackID](./cmpersistenttrackid.md)
   A datatype that represents a persistent track identifier.
-- [typealias CMMuxedStreamType](cmmuxedstreamtype.md)
+- [typealias CMMuxedStreamType](./cmmuxedstreamtype.md)
   A datatype that represents a muxed stream of data.
 
 

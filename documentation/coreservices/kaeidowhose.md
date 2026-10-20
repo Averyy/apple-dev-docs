@@ -1,7 +1,8 @@
 # kAEIDoWhose
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The application supports whose tests (supports key form `formWhose`).
 

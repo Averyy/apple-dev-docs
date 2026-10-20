@@ -1,7 +1,8 @@
 # init(specification:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a video output from a specification.
 
@@ -18,6 +19,10 @@ Creates a video output from a specification.
 
 ```swift
 init(specification: AVVideoOutputSpecification)
+```
+
+```objc
+- (instancetype) initWithSpecification:(AVVideoOutputSpecification *) specification;
 ```
 
 ## Parameters

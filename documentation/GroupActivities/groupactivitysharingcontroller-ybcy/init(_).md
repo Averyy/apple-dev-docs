@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Group Activities  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the sharing controller with the specified activity and type information.
 
@@ -24,7 +25,8 @@ init<ActivityType>(_ activity: ActivityType) throws where ActivityType : GroupAc
 
 ## See Also
 
-- [init<ActivityType>(preparationHandler: () async throws -> ActivityType)](groupactivitysharingcontroller-ybcy/init(preparationhandler:).md)
+### Creating the group activity sharing controller
+- [init<ActivityType>(preparationHandler: () async throws -> ActivityType)](./init%28preparationhandler%29.md)
   Initializes the SharePlay sharing controller with a closure that creates the activity object.
 
 

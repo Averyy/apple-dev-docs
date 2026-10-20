@@ -1,7 +1,8 @@
 # setAliroReaderConfigWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command SetAliroReaderConfig
 
@@ -17,7 +18,15 @@ Command SetAliroReaderConfig
 ## Declaration
 
 ```swift
+func setAliroReaderConfigWith(_ params: MTRDoorLockClusterSetAliroReaderConfigParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setAliroReaderConfigWith(_ params: MTRDoorLockClusterSetAliroReaderConfigParams) async throws
+```
+
+```objc
+- (void) setAliroReaderConfigWithParams:(MTRDoorLockClusterSetAliroReaderConfigParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # attachments
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently available attachments for you to download and incorporate into your app.
 
@@ -21,15 +22,16 @@ final var attachments: GroupSessionJournal.Attachments { get set }
 
 #### Discussion
 
-This property contains an asynchronous sequence that you monitor while the current session is active. To monitor this sequence, configure an asynchronous task and iterate over the contents of the [`GroupSessionJournal.Attachments`](groupsessionjournal/attachments-swift.struct.md) type. For an example of how to configure this task, see the overview for [`GroupSessionJournal`](groupsessionjournal.md).
+This property contains an asynchronous sequence that you monitor while the current session is active. To monitor this sequence, configure an asynchronous task and iterate over the contents of the [`GroupSessionJournal.Attachments`](./attachments-swift.struct.md) type. For an example of how to configure this task, see the overview for [`GroupSessionJournal`](../groupsessionjournal.md).
 
 The system updates this array whenever a participant adds or removes an attachment. Iterate over the array and update your app’s data structures to match the current contents.
 
 ## See Also
 
-- [GroupSessionJournal.Attachments](groupsessionjournal/attachments-swift.struct.md)
+### Downloading content from the session
+- [GroupSessionJournal.Attachments](./attachments-swift.struct.md)
   An asynchronous sequence that contains one or more incoming attachment containers for you to process.
-- [GroupSessionJournal.Attachment](groupsessionjournal/attachment.md)
+- [GroupSessionJournal.Attachment](./attachment.md)
   A container for the data you download.
 
 

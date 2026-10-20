@@ -1,7 +1,8 @@
 # maximum
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The highest number allowed as input by the receiver.
 
@@ -21,11 +22,16 @@ The highest number allowed as input by the receiver.
 var maximum: NSNumber? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSNumber * maximum;
+```
+
 ## See Also
 
-- [var allowsFloats: Bool](numberformatter/allowsfloats.md)
+### Managing Input and Output Attributes
+- [var allowsFloats: Bool](./allowsfloats.md)
   Determines whether the receiver allows as input floating-point values (that is, values that include the period character [`.`]).
-- [var minimum: NSNumber?](numberformatter/minimum.md)
+- [var minimum: NSNumber?](./minimum.md)
   The lowest number allowed as input by the receiver.
 
 

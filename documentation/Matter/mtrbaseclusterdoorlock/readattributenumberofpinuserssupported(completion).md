@@ -1,7 +1,8 @@
 # readAttributeNumberOfPINUsersSupported(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeNumberOfPINUsersSupported(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeNumberOfPINUsersSupported() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeNumberOfPINUsersSupportedWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

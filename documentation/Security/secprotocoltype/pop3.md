@@ -1,7 +1,8 @@
 # SecProtocolType.POP3
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates POP3.
 
@@ -13,6 +14,10 @@ Indicates POP3.
 
 ```swift
 case POP3
+```
+
+```c
+kSecProtocolTypePOP3
 ```
 
 

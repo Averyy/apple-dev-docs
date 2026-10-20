@@ -1,7 +1,8 @@
 # topShelfContentDidChange()
 
 **Framework**: TV Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Tells the system that your top shelf content changed and requires an update.
 
@@ -12,6 +13,10 @@ Tells the system that your top shelf content changed and requires an update.
 
 ```swift
 class func topShelfContentDidChange()
+```
+
+```objc
++ (void) topShelfContentDidChange;
 ```
 
 #### Discussion

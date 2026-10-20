@@ -1,7 +1,8 @@
 # Get the app availability ID for an app
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -12,11 +13,23 @@
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*
+
+## Responses
+
+- `200` OK (`AppAppAvailabilityV2LinkageResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List Availability for an App](get-v1-apps-_id_-appavailabilityv2.md)
+### Getting and managing an app’s availability
+- [List Availability for an App](./get-v1-apps-_id_-appavailabilityv2.md)
   The data structure that represents a get-v1-apps-{id}-app availability v2 resource.
 
 

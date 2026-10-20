@@ -2,6 +2,7 @@
 
 **Framework**: Paravirtualized Graphics  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notifies the virtual graphics device to start suspending graphics activities.
@@ -16,21 +17,26 @@ Notifies the virtual graphics device to start suspending graphics activities.
 func willSuspend()
 ```
 
+```objc
+- (void) willSuspend;
+```
+
 #### Discussion
 
 The virtualized device stops generating interrupts and won’t accept new commands from the guest. You must halt any guest CPUs within a short interval after you call this method.
 
 ## See Also
 
-- [func finishSuspend() -> Data?](pgdevice/finishsuspend.md)
+### Suspending and Resuming Graphics Processing
+- [func finishSuspend() -> Data?](./finishsuspend%28%29.md)
   Notifies the virtualized graphics device to finish suspending graphics activities.
-- [func willResume(withSuspendState: Data, error: NSErrorPointer) -> Bool](pgdevice/willresume(withsuspendstate:error:).md)
+- [func willResume(withSuspendState: Data, error: NSErrorPointer) -> Bool](./willresume%28withsuspendstate,error%29.md)
   Tells a new device object to load a previously saved device’s suspend state.
-- [func didResume()](pgdevice/didresume.md)
+- [func didResume()](./didresume%28%29.md)
   Tells the device object to finish any remaining work to resume processing of a previously saved device’s suspend state.
-- [let PGResumeErrorDomain: String](pgresumeerrordomain.md)
+- [let PGResumeErrorDomain: String](../pgresumeerrordomain.md)
   The error domain for suspend-resume actions.
-- [enum PGResumeErrorCode](pgresumeerrorcode.md)
+- [enum PGResumeErrorCode](../pgresumeerrorcode.md)
   Error codes for suspend-resume actions.
 
 

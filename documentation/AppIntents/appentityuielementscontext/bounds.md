@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounds that the system uses to understand the location of a UI element within the local coordinate space.
 

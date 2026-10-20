@@ -1,10 +1,11 @@
 # AudioFileComponentGetUserDataAtOffsetProc
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 typealias AudioFileComponentGetUserDataAtOffsetProc = (UnsafeMutableRawPointer, UInt32, UInt32, Int64, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus
 ```
 
+```c
+typedef int (*)(void *, unsigned int, unsigned int, long long, unsigned int *, void *) AudioFileComponentGetUserDataAtOffsetProc;
+```
+
 ## See Also
 
-- [typealias AUMIDIEventListBlock](aumidieventlistblock.md)
-- [typealias AudioFileComponentGetUserDataSize64Proc](audiofilecomponentgetuserdatasize64proc.md)
-- [typealias CallHostBlock](callhostblock.md)
+### Data Types
+- [typealias AUMIDIEventListBlock](./aumidieventlistblock.md)
+- [typealias AudioFileComponentGetUserDataSize64Proc](./audiofilecomponentgetuserdatasize64proc.md)
+- [typealias CallHostBlock](./callhostblock.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # connectedClients
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of connected clients.
 
@@ -15,13 +16,18 @@ An array of connected clients.
 var connectedClients: [CMIOExtensionClient] { get }
 ```
 
+```objc
+@property (atomic, copy, readonly) NSArray<CMIOExtensionClient *> * connectedClients;
+```
+
 #### Discussion
 
 This property is key-value observable.
 
 ## See Also
 
-- [func notifyPropertiesChanged([CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>])](cmioextensionprovider/notifypropertieschanged(_:).md)
+### Managing Clients
+- [func notifyPropertiesChanged([CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>])](./notifypropertieschanged%28_%29.md)
   Notifies connected clients of device property changes.
 
 

@@ -1,7 +1,8 @@
 # Mirror.DisplayStyle
 
 **Framework**: Swift  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A suggestion of how a mirror’s subject is to be interpreted.
 
@@ -27,34 +28,34 @@ Playgrounds and the debugger will show a representation similar to the one used 
 ## Topics
 
 ### Operators
-- [static func == (Mirror.DisplayStyle, Mirror.DisplayStyle) -> Bool](mirror/displaystyle-swift.enum/==(_:_:).md)
+- [static func == (Mirror.DisplayStyle, Mirror.DisplayStyle) -> Bool](./displaystyle-swift.enum/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
-- [Mirror.DisplayStyle.class](mirror/displaystyle-swift.enum/class.md)
-- [Mirror.DisplayStyle.collection](mirror/displaystyle-swift.enum/collection.md)
-- [Mirror.DisplayStyle.dictionary](mirror/displaystyle-swift.enum/dictionary.md)
-- [Mirror.DisplayStyle.enum](mirror/displaystyle-swift.enum/enum.md)
-- [Mirror.DisplayStyle.foreignReference](mirror/displaystyle-swift.enum/foreignreference.md)
-- [Mirror.DisplayStyle.optional](mirror/displaystyle-swift.enum/optional.md)
-- [Mirror.DisplayStyle.set](mirror/displaystyle-swift.enum/set.md)
-- [Mirror.DisplayStyle.struct](mirror/displaystyle-swift.enum/struct.md)
-- [Mirror.DisplayStyle.tuple](mirror/displaystyle-swift.enum/tuple.md)
+- [Mirror.DisplayStyle.class](./displaystyle-swift.enum/class.md)
+- [Mirror.DisplayStyle.collection](./displaystyle-swift.enum/collection.md)
+- [Mirror.DisplayStyle.dictionary](./displaystyle-swift.enum/dictionary.md)
+- [Mirror.DisplayStyle.enum](./displaystyle-swift.enum/enum.md)
+- [Mirror.DisplayStyle.foreignReference](./displaystyle-swift.enum/foreignreference.md)
+- [Mirror.DisplayStyle.optional](./displaystyle-swift.enum/optional.md)
+- [Mirror.DisplayStyle.set](./displaystyle-swift.enum/set.md)
+- [Mirror.DisplayStyle.struct](./displaystyle-swift.enum/struct.md)
+- [Mirror.DisplayStyle.tuple](./displaystyle-swift.enum/tuple.md)
 ### Instance Properties
-- [var hashValue: Int](mirror/displaystyle-swift.enum/hashvalue.md)
+- [var hashValue: Int](./displaystyle-swift.enum/hashvalue.md)
   The hash value.
 ### Instance Methods
-- [func hash(into: inout Hasher)](mirror/displaystyle-swift.enum/hash(into:).md)
+- [func hash(into: inout Hasher)](./displaystyle-swift.enum/hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
-- [Equatable Implementations](mirror/displaystyle-swift.enum/equatable-implementations.md)
+- [Equatable Implementations](./displaystyle-swift.enum/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Equatable](../equatable.md)
+- [Hashable](../hashable.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

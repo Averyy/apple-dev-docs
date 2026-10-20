@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a rectangle in which the system can draw the text-selection caret.
@@ -18,9 +19,13 @@ Returns a rectangle in which the system can draw the text-selection caret.
 func caretRect(for position: UITextPosition) -> CGRect
 ```
 
+```objc
+- (CGRect) caretRectForPosition:(UITextPosition *) position;
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 ## Parameters
 

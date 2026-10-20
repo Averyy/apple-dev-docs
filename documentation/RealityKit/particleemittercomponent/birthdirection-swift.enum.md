@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.BirthDirection
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for the initial direction of each emitted particle, used by the birthDirection property.
 
@@ -22,20 +23,20 @@ enum BirthDirection
 ## Topics
 
 ### Enumeration Cases
-- [ParticleEmitterComponent.BirthDirection.local](particleemittercomponent/birthdirection-swift.enum/local.md)
+- [ParticleEmitterComponent.BirthDirection.local](./birthdirection-swift.enum/local.md)
   Emit direction is relative to the orientation of the emitter entity’s transform.
-- [ParticleEmitterComponent.BirthDirection.normal](particleemittercomponent/birthdirection-swift.enum/normal.md)
+- [ParticleEmitterComponent.BirthDirection.normal](./birthdirection-swift.enum/normal.md)
   The emitting direction for each particle is along the surface normal vector at the point where the particle is emitted.
-- [ParticleEmitterComponent.BirthDirection.world](particleemittercomponent/birthdirection-swift.enum/world.md)
+- [ParticleEmitterComponent.BirthDirection.world](./birthdirection-swift.enum/world.md)
   Ignores the orientation from the emitter entity’s transform.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

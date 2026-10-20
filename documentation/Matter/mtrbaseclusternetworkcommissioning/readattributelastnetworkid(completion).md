@@ -1,7 +1,8 @@
 # readAttributeLastNetworkID(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeLastNetworkID(completion: @escaping @Sendable (Data?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeLastNetworkID() async throws -> Data
+```
+
+```objc
+- (void) readAttributeLastNetworkIDWithCompletion:(void (^)(NSData *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # generateMaskedImage(ofInstances:from:croppedToInstancesExtent:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a high-resolution image where everything becomes transparent black, except for the instances you specify.
 
@@ -19,6 +20,10 @@ Creates a high-resolution image where everything becomes transparent black, exce
 func generateMaskedImage(ofInstances instances: IndexSet, from requestHandler: VNImageRequestHandler, croppedToInstancesExtent cropResult: Bool) throws -> CVPixelBuffer
 ```
 
+```objc
+- (CVPixelBufferRef) generateMaskedImageOfInstances:(NSIndexSet *) instances fromRequestHandler:(VNImageRequestHandler *) requestHandler croppedToInstancesExtent:(BOOL) cropResult error:(NSError **) error;
+```
+
 #### Return Value
 
 The pixel buffer that contains the image.
@@ -31,9 +36,10 @@ The pixel buffer that contains the image.
 
 ## See Also
 
-- [func generateMask(forInstances: IndexSet) throws -> CVPixelBuffer](vninstancemaskobservation/generatemask(forinstances:).md)
+### Creating a Mask
+- [func generateMask(forInstances: IndexSet) throws -> CVPixelBuffer](./generatemask%28forinstances%29.md)
   Creates a low-resolution mask from the instances you specify.
-- [func generateScaledMaskForImage(forInstances: IndexSet, from: VNImageRequestHandler) throws -> CVPixelBuffer](vninstancemaskobservation/generatescaledmaskforimage(forinstances:from:).md)
+- [func generateScaledMaskForImage(forInstances: IndexSet, from: VNImageRequestHandler) throws -> CVPixelBuffer](./generatescaledmaskforimage%28forinstances,from%29.md)
   Creates a high-resolution mask where everything becomes transparent black, except for the instances you specify.
 
 

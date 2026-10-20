@@ -1,7 +1,8 @@
 # invalidateAllProperties()
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Marks all attributes inactive.
 
@@ -14,9 +15,14 @@ Marks all attributes inactive.
 func invalidateAllProperties()
 ```
 
+```objc
+- (void) invalidateAllProperties;
+```
+
 ## See Also
 
-- [func isValid(FSItem.Attribute) -> Bool](fsitem/attributes/isvalid(_:).md)
+### Validating and invalidating attributes
+- [func isValid(FSItem.Attribute) -> Bool](./isvalid%28_%29.md)
   Returns a Boolean value that indicates whether the attribute is valid.
 
 

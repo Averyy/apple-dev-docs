@@ -1,7 +1,8 @@
 # CBCharacteristicWriteType.withoutResponse
 
 **Framework**: Core Bluetooth  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Write a characteristic value, without any response from the peripheral to indicate whether the write was successful.
 
@@ -20,13 +21,18 @@ Write a characteristic value, without any response from the peripheral to indica
 case withoutResponse
 ```
 
+```c
+CBCharacteristicWriteWithoutResponse
+```
+
 #### Discussion
 
 You receive no notification if writing to a characteristic value fails with this write type.
 
 ## See Also
 
-- [CBCharacteristicWriteType.withResponse](cbcharacteristicwritetype/withresponse.md)
+### Write Types
+- [CBCharacteristicWriteType.withResponse](./withresponse.md)
   Write a characteristic value, with a response from the peripheral to indicate whether the write was successful.
 
 

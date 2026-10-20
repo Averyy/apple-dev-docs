@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines whether the bus is active.
 
@@ -19,6 +20,18 @@ Determines whether the bus is active.
 var isEnabled: Bool { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, getter=isEnabled) BOOL enabled;
+```
+
+*macOS*
+
+```objc
+@property (atomic, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
 Hosts must enable input busses before using them. This allows an audio unit to be prepared to render a large number of inputs, but avoid the work of preparing to pull inputs which are not in use.
@@ -27,23 +40,24 @@ This version 3 property is bridged to the version 2 `kAudioUnitProperty_MakeConn
 
 ## See Also
 
-- [func setFormat(AVAudioFormat) throws](auaudiounitbus/setformat(_:).md)
+### Bus Methods and Properties
+- [func setFormat(AVAudioFormat) throws](./setformat%28_%29.md)
   Sets the bus’s audio format.
-- [var format: AVAudioFormat](auaudiounitbus/format.md)
+- [var format: AVAudioFormat](./format.md)
   The audio format and channel layout of audio being transferred on the bus.
-- [var name: String?](auaudiounitbus/name.md)
+- [var name: String?](./name.md)
   A name for the bus.
-- [var index: Int](auaudiounitbus/index.md)
+- [var index: Int](./index.md)
   The index of this bus in its containing array.
-- [var busType: AUAudioUnitBusType](auaudiounitbus/bustype.md)
+- [var busType: AUAudioUnitBusType](./bustype.md)
   The bus type.
-- [var ownerAudioUnit: AUAudioUnit](auaudiounitbus/owneraudiounit.md)
+- [var ownerAudioUnit: AUAudioUnit](./owneraudiounit.md)
   The audio unit that owns the bus.
-- [var supportedChannelLayoutTags: [NSNumber]?](auaudiounitbus/supportedchannellayouttags.md)
+- [var supportedChannelLayoutTags: [NSNumber]?](./supportedchannellayouttags.md)
   An array of audio channel layout tags.
-- [var contextPresentationLatency: TimeInterval](auaudiounitbus/contextpresentationlatency.md)
+- [var contextPresentationLatency: TimeInterval](./contextpresentationlatency.md)
   Information about latency in the audio unit’s processing context.
-- [var shouldAllocateBuffer: Bool](auaudiounitbus/shouldallocatebuffer.md)
+- [var shouldAllocateBuffer: Bool](./shouldallocatebuffer.md)
 
 
 ---

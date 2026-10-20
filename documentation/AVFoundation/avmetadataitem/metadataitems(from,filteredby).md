@@ -1,7 +1,8 @@
 # metadataItems(from:filteredBy:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns filtered metadata items.
 
@@ -20,6 +21,10 @@ Returns filtered metadata items.
 class func metadataItems(from metadataItems: [AVMetadataItem], filteredBy metadataItemFilter: AVMetadataItemFilter) -> [AVMetadataItem]
 ```
 
+```objc
++ (NSArray<AVMetadataItem *> *) metadataItemsFromArray:(NSArray<AVMetadataItem *> *) metadataItems filteredByMetadataItemFilter:(AVMetadataItemFilter *) metadataItemFilter;
+```
+
 #### Return Value
 
 The filtered array of metadata items.
@@ -31,13 +36,14 @@ The filtered array of metadata items.
 
 ## See Also
 
-- [class func metadataItems(from: [AVMetadataItem], filteredByIdentifier: AVMetadataIdentifier) -> [AVMetadataItem]](avmetadataitem/metadataitems(from:filteredbyidentifier:).md)
+### Filtering arrays of metadata items
+- [class func metadataItems(from: [AVMetadataItem], filteredByIdentifier: AVMetadataIdentifier) -> [AVMetadataItem]](./metadataitems%28from,filteredbyidentifier%29.md)
   Returns metadata items for the specified identifier.
-- [class func metadataItems(from: [AVMetadataItem], withKey: Any?, keySpace: AVMetadataKeySpace?) -> [AVMetadataItem]](avmetadataitem/metadataitems(from:withkey:keyspace:).md)
+- [class func metadataItems(from: [AVMetadataItem], withKey: Any?, keySpace: AVMetadataKeySpace?) -> [AVMetadataItem]](./metadataitems%28from,withkey,keyspace%29.md)
   Returns metadata items that match a specified key or key space.
-- [class func metadataItems(from: [AVMetadataItem], with: Locale) -> [AVMetadataItem]](avmetadataitem/metadataitems(from:with:).md)
+- [class func metadataItems(from: [AVMetadataItem], with: Locale) -> [AVMetadataItem]](./metadataitems%28from,with%29.md)
   Returns metadata items that match a specified locale.
-- [class func metadataItems(from: [AVMetadataItem], filteredAndSortedAccordingToPreferredLanguages: [String]) -> [AVMetadataItem]](avmetadataitem/metadataitems(from:filteredandsortedaccordingtopreferredlanguages:).md)
+- [class func metadataItems(from: [AVMetadataItem], filteredAndSortedAccordingToPreferredLanguages: [String]) -> [AVMetadataItem]](./metadataitems%28from,filteredandsortedaccordingtopreferredlanguages%29.md)
   Returns metadata items whose locales match one of the specified language identifiers.
 
 

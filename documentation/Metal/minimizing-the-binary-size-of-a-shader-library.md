@@ -1,6 +1,7 @@
 # Minimizing the binary size of a shader library
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Reduce the storage footprint of your shaders, and potentially reduce their compile time, by selecting the Metal compiler’s size optimization option.
 
@@ -20,7 +21,7 @@ You can set the Metal compiler’s size optimization option in the following way
 
 The simplest way to compile your shaders is to have Xcode compile them along with the rest of your app. As your shaders increase in complexity, size, or build time, you may consider precompiling them with the Metal command-line tools to avoid compiling them in Xcode. Some apps may need to compile shaders on the device, at runtime, with the Metal API.
 
-##### Compile Shaders at Build Time
+##### Compile shaders at build time
 
 To optimize for size while compiling shaders at build time, set the Metal compiler’s size optimization setting in Xcode:
 
@@ -28,13 +29,13 @@ To optimize for size while compiling shaders at build time, set the Metal compil
 2. Click the Builds Settings tab, and filter for the Metal compiler.
 3. Under Metal Compiler - Build Options, set the Optimization Level to `Size [-Os]`.
 
-![A screenshot of an Xcode window that’s open to the macOS target’s build settings for the Hello Triangle sample app. The Optimization Level setting for the Metal compiler is set to ](/images/com.apple.metal/minimizing-the-binary-size-of-a-shader-library-1@2x.png)
+![A screenshot of an Xcode window that’s open to the macOS target’s build settings for the Hello Triangle sample app. The Optimization Level setting for the Metal compiler is set to ](https://developer.apple.com/tutorials/images/com.apple.metal/minimizing-the-binary-size-of-a-shader-library-1@2x.png)
 
 Xcode passes this setting to the Metal compiler each time you build a target that includes shader code.
 
-##### Precompile Shaders on the Command Line
+##### Precompile shaders on the command line
 
-For apps that use numerous or complex shaders, consider precompiling your shaders outside of Xcode to save build time each time you compile your app. For more information on manually compiling your shader library, see [`Building a shader library by precompiling source files`](building-a-shader-library-by-precompiling-source-files.md).
+For apps that use numerous or complex shaders, consider precompiling your shaders outside of Xcode to save build time each time you compile your app. For more information on manually compiling your shader library, see [Building a shader library by precompiling source files](./building-a-shader-library-by-precompiling-source-files.md).
 
 To optimize for size when compiling a Metal shader source file in a command-line environment, such as Terminal, use the Metal compiler’s `-Os` optimization option.
 
@@ -44,7 +45,7 @@ To optimize for size when compiling a Metal shader source file in a command-line
 
 > **Note**:  This example uses the `macosx` SDK, but you can use any SDK your app targets.
 
-##### Compile Shaders at Runtime
+##### Compile shaders at runtime
 
 If you want to compile shaders at runtime, your app can configure the Metal API to optimize for size. For some apps, it may be more practical to compile a shader on the device when the app is running, typically to reduce the app’s storage size. You can also compile shaders at runtime for rapid prototyping and debugging.
 
@@ -52,15 +53,16 @@ This approach reduces your app’s build time by deferring its shader compilatio
 
 To minimize binary size when compiling a shader library on a device:
 
-1. Create an [`MTLCompileOptions`](mtlcompileoptions.md) instance.
-2. Set its [`optimizationLevel`](mtlcompileoptions/optimizationlevel.md) property to [`MTLLibraryOptimizationLevel.size`](mtllibraryoptimizationlevel/size.md).
-3. Compile your library with an [`MTLDevice`](mtldevice.md) instance’s [`makeLibrary(source:options:)`](mtldevice/makelibrary(source:options:).md) or [`makeLibrary(source:options:completionHandler:)`](mtldevice/makelibrary(source:options:completionhandler:).md) method.
+1. Create an [`MTLCompileOptions`](./mtlcompileoptions.md) instance.
+2. Set its [`optimizationLevel`](./mtlcompileoptions/optimizationlevel.md) property to [`MTLLibraryOptimizationLevel.size`](./mtllibraryoptimizationlevel/size.md).
+3. Compile your library with an [`MTLDevice`](./mtldevice.md) instance’s [`makeLibrary(source:options:)`](./mtldevice/makelibrary%28source,options%29.md) or [`makeLibrary(source:options:completionHandler:)`](./mtldevice/makelibrary%28source,options,completionhandler%29.md) method.
 
 ## See Also
 
-- [Building a shader library by precompiling source files](building-a-shader-library-by-precompiling-source-files.md)
+### Working with Metal intermediate representation libraries
+- [Building a shader library by precompiling source files](./building-a-shader-library-by-precompiling-source-files.md)
   Create a shader library that you can add to an Xcode project with the Metal compiler tools in a command-line environment.
-- [Generating and loading a Metal library symbol file](generating-and-loading-a-metal-library-symbol-file.md)
+- [Generating and loading a Metal library symbol file](./generating-and-loading-a-metal-library-symbol-file.md)
   Debug your Metal shaders from your production apps by creating companion symbol files at compile time and loading them at debug time.
 
 

@@ -1,7 +1,8 @@
 # init(width:height:depth:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a size structure from the specified values.
 

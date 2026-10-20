@@ -1,7 +1,8 @@
 # prefix()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the UTF8Span containing all the content up to the iterator’s current position.
 

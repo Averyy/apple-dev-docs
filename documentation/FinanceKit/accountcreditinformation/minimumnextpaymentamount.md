@@ -1,7 +1,8 @@
 # minimumNextPaymentAmount
 
 **Framework**: FinanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Minimum amount of the next non-overdue payment.
 
@@ -17,11 +18,12 @@ let minimumNextPaymentAmount: CurrencyAmount?
 
 ## See Also
 
-- [let creditLimit: CurrencyAmount?](accountcreditinformation/creditlimit.md)
+### Instance Properties
+- [let creditLimit: CurrencyAmount?](./creditlimit.md)
   The credit limit of the account.
-- [let nextPaymentDueDate: Date?](accountcreditinformation/nextpaymentduedate.md)
+- [let nextPaymentDueDate: Date?](./nextpaymentduedate.md)
   Date of the next payment.
-- [let overduePaymentAmount: CurrencyAmount?](accountcreditinformation/overduepaymentamount.md)
+- [let overduePaymentAmount: CurrencyAmount?](./overduepaymentamount.md)
   The amount by which the account is overdue for the current period.
 
 

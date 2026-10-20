@@ -1,7 +1,8 @@
 # ILMessageFilterCapabilitiesQueryHandling
 
 **Framework**: SMS and Call Reporting  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods implemented by a Message Filter app extension to handle capabilities query requests.
 
@@ -17,20 +18,25 @@ A set of methods implemented by a Message Filter app extension to handle capabil
 protocol ILMessageFilterCapabilitiesQueryHandling : NSObjectProtocol
 ```
 
+```objc
+@protocol ILMessageFilterCapabilitiesQueryHandling <NSObject>
+```
+
 ## Topics
 
 ### Handling a Capabilities Query Request
-- [func handle(ILMessageFilterCapabilitiesQueryRequest, context: ILMessageFilterExtensionContext, completion: (ILMessageFilterCapabilitiesQueryResponse) -> Void)](ilmessagefiltercapabilitiesqueryhandling/handle(_:context:completion:).md)
+- [func handle(ILMessageFilterCapabilitiesQueryRequest, context: ILMessageFilterExtensionContext, completion: (ILMessageFilterCapabilitiesQueryResponse) -> Void)](./ilmessagefiltercapabilitiesqueryhandling/handle%28_,context,completion%29.md)
   Evaluates a query request and provides a response describing how the system should handle the message it represents.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ILMessageFilterCapabilitiesQueryRequest](ilmessagefiltercapabilitiesqueryrequest.md)
+### Queries
+- [class ILMessageFilterCapabilitiesQueryRequest](./ilmessagefiltercapabilitiesqueryrequest.md)
   A request to query a Message Filter extension about sharing its sub-category capabilities.
 
 

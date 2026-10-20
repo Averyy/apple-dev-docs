@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The spatial bounds that define the area over which the force effect’s strength decreases.
 

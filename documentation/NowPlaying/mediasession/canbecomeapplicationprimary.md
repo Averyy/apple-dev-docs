@@ -1,7 +1,8 @@
 # canBecomeApplicationPrimary
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this session can become the app’s primary session.
 

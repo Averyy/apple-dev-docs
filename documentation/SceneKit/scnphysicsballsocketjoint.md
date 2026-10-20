@@ -1,23 +1,28 @@
 # SCNPhysicsBallSocketJoint
 
 **Framework**: SceneKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A physics behavior that connects two physics bodies and allows them to pivot around each other in any direction.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 class SCNPhysicsBallSocketJoint
+```
+
+```objc
+@interface SCNPhysicsBallSocketJoint : SCNPhysicsBehavior
 ```
 
 #### Overview
@@ -27,41 +32,42 @@ A ball and socket joint has three rotational degrees of freedom and zero transla
 ## Topics
 
 ### Creating a Ball and Socket Joint
-- [convenience init(bodyA: SCNPhysicsBody, anchorA: SCNVector3, bodyB: SCNPhysicsBody, anchorB: SCNVector3)](scnphysicsballsocketjoint/init(bodya:anchora:bodyb:anchorb:).md)
+- [convenience init(bodyA: SCNPhysicsBody, anchorA: SCNVector3, bodyB: SCNPhysicsBody, anchorB: SCNVector3)](./scnphysicsballsocketjoint/init%28bodya,anchora,bodyb,anchorb%29.md)
   Creates a ball and socket joint connecting two physics bodies.
-- [convenience init(body: SCNPhysicsBody, anchor: SCNVector3)](scnphysicsballsocketjoint/init(body:anchor:).md)
+- [convenience init(body: SCNPhysicsBody, anchor: SCNVector3)](./scnphysicsballsocketjoint/init%28body,anchor%29.md)
   Creates a ball and socket joint that anchors a single physics body in space and allows it to rotate freely around an anchor point.
 ### Managing the Characteristics of a Ball and Socket Joint
-- [var bodyA: SCNPhysicsBody](scnphysicsballsocketjoint/bodya.md)
+- [var bodyA: SCNPhysicsBody](./scnphysicsballsocketjoint/bodya.md)
   The first physics body connected by the joint.
-- [var anchorA: SCNVector3](scnphysicsballsocketjoint/anchora.md)
+- [var anchorA: SCNVector3](./scnphysicsballsocketjoint/anchora.md)
   The point at which the joint connects, relative to the node containing the first body.
-- [var bodyB: SCNPhysicsBody?](scnphysicsballsocketjoint/bodyb.md)
+- [var bodyB: SCNPhysicsBody?](./scnphysicsballsocketjoint/bodyb.md)
   The second physics body connected by the joint.
-- [var anchorB: SCNVector3](scnphysicsballsocketjoint/anchorb.md)
+- [var anchorB: SCNVector3](./scnphysicsballsocketjoint/anchorb.md)
   The point at which the joint connects, relative to the node containing the second body.
 
 ## Relationships
 
 ### Inherits From
-- [SCNPhysicsBehavior](scnphysicsbehavior.md)
+- [SCNPhysicsBehavior](./scnphysicsbehavior.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class SCNPhysicsHingeJoint](scnphysicshingejoint.md)
+### Joints
+- [class SCNPhysicsHingeJoint](./scnphysicshingejoint.md)
   A physics behavior that connects two bodies and allows them to pivot around each other on a single axis.
-- [class SCNPhysicsSliderJoint](scnphysicssliderjoint.md)
+- [class SCNPhysicsSliderJoint](./scnphysicssliderjoint.md)
   A physics behavior that connects two bodies and allows them to slide against each other and rotate around their connecting points.
-- [class SCNPhysicsConeTwistJoint](scnphysicsconetwistjoint.md)
+- [class SCNPhysicsConeTwistJoint](./scnphysicsconetwistjoint.md)
 
 
 ---

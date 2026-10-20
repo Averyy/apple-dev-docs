@@ -1,16 +1,21 @@
 # delete(_:authorization:)
 
 **Framework**: Open Directory  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.9+
 
 ## Declaration
 
 ```swift
 func delete(_ configuration: ODConfiguration!, authorization: SFAuthorization!) throws
+```
+
+```objc
+- (BOOL) deleteConfiguration:(ODConfiguration *) configuration authorization:(SFAuthorization *) authorization error:(NSError **) error;
 ```
 
 

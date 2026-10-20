@@ -1,16 +1,19 @@
 # init(shape:fillWithData:dataType:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tensor with the shape, scalar value, and data type you specify.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.0
+- iPadOS 14.0+ - Deprecated in 17.0
+- Mac Catalyst 14.0+ - Deprecated in 17.0
+- macOS 11.0+ - Deprecated in 14.0
+- tvOS 14.0+ - Deprecated in 17.0
+
+> **Deprecated**: Use Metal Performance Shaders Graph or BNNS instead.
 
 ## Declaration
 
@@ -26,23 +29,24 @@ convenience init(shape: [Int], fillWithData fillData: NSNumber, dataType: MLCDat
 
 ## See Also
 
-- [convenience init(shape: [Int])](mlctensor/init(shape:).md)
+### Creating Tensors by Specifying Shape
+- [convenience init(shape: [Int])](./init%28shape%29.md)
   Creates a tensor without data, with the shape you specify.
-- [convenience init(shape: [Int], dataType: MLCDataType)](mlctensor/init(shape:datatype:).md)
+- [convenience init(shape: [Int], dataType: MLCDataType)](./init%28shape,datatype%29.md)
   Creates a tensor without data, with the shape and data type you specify.
-- [convenience init(shape: [Int], data: MLCTensorData, dataType: MLCDataType)](mlctensor/init(shape:data:datatype:).md)
+- [convenience init(shape: [Int], data: MLCTensorData, dataType: MLCDataType)](./init%28shape,data,datatype%29.md)
   Creates a tensor with the shape, data, and data type you specify.
-- [convenience init(shape: [Int], randomInitializerType: MLCRandomInitializerType)](mlctensor/init(shape:randominitializertype:).md)
+- [convenience init(shape: [Int], randomInitializerType: MLCRandomInitializerType)](./init%28shape,randominitializertype%29.md)
   Creates a tensor with the shape and random initializer type you specify.
-- [convenience init(width: Int, height: Int, featureChannelCount: Int, batchSize: Int)](mlctensor/init(width:height:featurechannelcount:batchsize:).md)
+- [convenience init(width: Int, height: Int, featureChannelCount: Int, batchSize: Int)](./init%28width,height,featurechannelcount,batchsize%29.md)
   Creates a tensor without data, with the sizes and number of feature channels you specify.
-- [convenience init(width: Int, height: Int, featureChannelCount: Int, batchSize: Int, data: MLCTensorData)](mlctensor/init(width:height:featurechannelcount:batchsize:data:).md)
+- [convenience init(width: Int, height: Int, featureChannelCount: Int, batchSize: Int, data: MLCTensorData)](./init%28width,height,featurechannelcount,batchsize,data%29.md)
   Creates a tensor with the sizes, number of feature channels, and data you specify.
-- [convenience init(width: Int, height: Int, featureChannelCount: Int, batchSize: Int, data: MLCTensorData, dataType: MLCDataType)](mlctensor/init(width:height:featurechannelcount:batchsize:data:datatype:).md)
+- [convenience init(width: Int, height: Int, featureChannelCount: Int, batchSize: Int, data: MLCTensorData, dataType: MLCDataType)](./init%28width,height,featurechannelcount,batchsize,data,datatype%29.md)
   Creates a tensor with the sizes, number of feature channels, data, and data type you specify.
-- [convenience init(width: Int, height: Int, featureChannelCount: Int, batchSize: Int, fillWithData: Float, dataType: MLCDataType)](mlctensor/init(width:height:featurechannelcount:batchsize:fillwithdata:datatype:).md)
+- [convenience init(width: Int, height: Int, featureChannelCount: Int, batchSize: Int, fillWithData: Float, dataType: MLCDataType)](./init%28width,height,featurechannelcount,batchsize,fillwithdata,datatype%29.md)
   Creates a tensor with the sizes and number of feature channels, and filled with the data and type you specify.
-- [convenience init(width: Int, height: Int, featureChannelCount: Int, batchSize: Int, randomInitializerType: MLCRandomInitializerType)](mlctensor/init(width:height:featurechannelcount:batchsize:randominitializertype:).md)
+- [convenience init(width: Int, height: Int, featureChannelCount: Int, batchSize: Int, randomInitializerType: MLCRandomInitializerType)](./init%28width,height,featurechannelcount,batchsize,randominitializertype%29.md)
   Creates a tensor with the sizes, number of feature channels, and random data using the random initializer type you specify.
 
 

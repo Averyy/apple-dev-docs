@@ -1,7 +1,8 @@
 # precipitationAmountByType
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A breakdown of amounts of all forms of precipitation forecasted for the day.
 

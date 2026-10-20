@@ -1,7 +1,8 @@
 # convolution3DDataGradient(_:weights:outputShape:forwardConvolutionDescriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a 3D convolution gradient operation with respect to the source tensor of the forward convolution.
 
@@ -17,6 +18,10 @@ Creates a 3D convolution gradient operation with respect to the source tensor of
 
 ```swift
 func convolution3DDataGradient(_ incomingGradient: MPSGraphTensor, weights: MPSGraphTensor, outputShape: [NSNumber], forwardConvolutionDescriptor: MPSGraphConvolution3DOpDescriptor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) convolution3DDataGradientWithIncomingGradientTensor:(MPSGraphTensor *) incomingGradient weightsTensor:(MPSGraphTensor *) weights outputShape:(MPSShape *) outputShape forwardConvolutionDescriptor:(MPSGraphConvolution3DOpDescriptor *) forwardConvolutionDescriptor name:(NSString *) name;
 ```
 
 #### Return Value

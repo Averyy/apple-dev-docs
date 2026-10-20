@@ -1,7 +1,8 @@
 # errSSLPeerAccessDenied
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Access was denied.
 
@@ -18,6 +19,10 @@ Access was denied.
 
 ```swift
 var errSSLPeerAccessDenied: OSStatus { get }
+```
+
+```c
+errSSLPeerAccessDenied
 ```
 
 

@@ -1,7 +1,8 @@
 # ASImportableLinkedItem
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A linked item for use in import and export.
 
@@ -22,40 +23,41 @@ struct ASImportableLinkedItem
 
 A linked item serves as a reference to an item, and contains no data of its own.
 
-This type is a representation of `LinkedItem` as defined in the Credential Exchange Format (CXF) specification. You can supply a JSON representation of a CXF `Item` to initialize an instance of this struct by using a [`JSONDecoder`](https://developer.apple.com/documentation/foundation/jsondecoder) and calling [`decode(_:from:)`](https://developer.apple.com/documentation/foundation/jsondecoder/decode(_:from:)).
+This type is a representation of `LinkedItem` as defined in the Credential Exchange Format (CXF) specification. You can supply a JSON representation of a CXF `Item` to initialize an instance of this struct by using a [`JSONDecoder`](../Foundation/jsondecoder.md) and calling [`decode(_:from:)`](../Foundation/jsondecoder/decode%28_,from%29.md).
 
 ## Topics
 
 ### Creating a linked item
-- [init(item: Data, account: Data?)](asimportablelinkeditem/init(item:account:).md)
+- [init(item: Data, account: Data?)](./asimportablelinkeditem/init%28item,account%29.md)
   Creates a linked item from the identifiers of an item and an account.
 ### Accessing linked item properties
-- [var item: Data](asimportablelinkeditem/item.md)
+- [var item: Data](./asimportablelinkeditem/item.md)
   The unique identifier of the item linked by this linked item.
-- [var account: Data?](asimportablelinkeditem/account.md)
+- [var account: Data?](./asimportablelinkeditem/account.md)
   The unique identifier of the account, if any, to which the linked item belongs.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var id: Data](asimportablecollection/id.md)
+### Accessing collection properties
+- [var id: Data](./asimportablecollection/id.md)
   A unique identifier for the collection.
-- [var title: String](asimportablecollection/title.md)
+- [var title: String](./asimportablecollection/title.md)
   The title of the collection.
-- [var subtitle: String?](asimportablecollection/subtitle.md)
+- [var subtitle: String?](./asimportablecollection/subtitle.md)
   The subtitle of the collection, if any.
-- [var items: [ASImportableLinkedItem]](asimportablecollection/items.md)
+- [var items: [ASImportableLinkedItem]](./asimportablecollection/items.md)
   The items that are part of the collection.
-- [var subcollections: [ASImportableCollection]](asimportablecollection/subcollections.md)
+- [var subcollections: [ASImportableCollection]](./asimportablecollection/subcollections.md)
   Subcollections that are part of the collection.
 
 

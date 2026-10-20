@@ -1,7 +1,8 @@
 # Log Out User
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Force the current user to log out of a device.
 
@@ -16,7 +17,7 @@ After logging out the user, MDM commands aren’t available on the device for up
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -26,7 +27,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -66,9 +67,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object LogOutUserCommand](logoutusercommand.md)
+- [object LogOutUserCommand](./logoutusercommand.md)
   The command to force the current user to log out of a device.
-- [object LogOutUserResponse](logoutuserresponse.md)
+- [object LogOutUserResponse](./logoutuserresponse.md)
   A response from the device after it processes the command to force the current user to log out of a device.
 
 ## Endpoint
@@ -77,13 +78,21 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `LogOutUserCommand`
+
 The request object the server returns for the Log Out User Command.
+
+## Responses
+
+- `200` OK (`LogOutUserResponse`, `application/xml`): The response object the system returns for the Log Out User Command.
 
 ## See Also
 
-- [User List](user-list-command.md)
+### User management
+- [User List](./user-list-command.md)
   Get a list of users with active accounts on a device.
-- [Delete User](delete-user-command.md)
+- [Delete User](./delete-user-command.md)
   Delete a user’s account from a device.
 
 

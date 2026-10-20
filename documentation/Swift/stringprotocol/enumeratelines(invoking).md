@@ -1,7 +1,8 @@
 # enumerateLines(invoking:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enumerates all the lines in a string.
 

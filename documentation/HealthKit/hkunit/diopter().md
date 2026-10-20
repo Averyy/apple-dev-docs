@@ -1,7 +1,8 @@
 # diopter()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring the optical power of a lens using diopter units.
 
@@ -19,9 +20,14 @@ Returns a HealthKit unit for measuring the optical power of a lens using diopter
 class func diopter() -> Self
 ```
 
+```objc
++ (instancetype) diopterUnit;
+```
+
 ## See Also
 
-- [class func prismDiopter() -> Self](hkunit/prismdiopter.md)
+### Constructing vision units
+- [class func prismDiopter() -> Self](./prismdiopter%28%29.md)
   Returns a HealthKit unit for measuring the prismatic deviation of a lens using prism diopter units.
 
 

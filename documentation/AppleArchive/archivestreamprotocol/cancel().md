@@ -2,6 +2,7 @@
 
 **Framework**: Apple Archive  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Cancels stream operations.
@@ -12,7 +13,7 @@ Cancels stream operations.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -23,7 +24,8 @@ func cancel()
 
 ## See Also
 
-- [func close() throws](archivestreamprotocol/close.md)
+### Using Archive Streams
+- [func close() throws](./close%28%29.md)
   Closes the stream and releases associated resources.
 
 

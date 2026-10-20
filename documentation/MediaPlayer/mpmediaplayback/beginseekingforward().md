@@ -2,6 +2,7 @@
 
 **Framework**: Media Player  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Begins seeking forward through the media content.
@@ -19,17 +20,22 @@ Begins seeking forward through the media content.
 func beginSeekingForward()
 ```
 
+```objc
+- (void) beginSeekingForward;
+```
+
 #### Discussion
 
-Use this method to move the current playback position forward in time at an accelerated rate. Seeking begins when you call this method and continues until you call the [`endSeeking()`](mpmediaplayback/endseeking().md) method.
+Use this method to move the current playback position forward in time at an accelerated rate. Seeking begins when you call this method and continues until you call the [`endSeeking()`](./endseeking%28%29.md) method.
 
 This method has no effect on streamed content.
 
 ## See Also
 
-- [func beginSeekingBackward()](mpmediaplayback/beginseekingbackward.md)
+### Seeking within media
+- [func beginSeekingBackward()](./beginseekingbackward%28%29.md)
   Begins seeking backward through the media content.
-- [func endSeeking()](mpmediaplayback/endseeking.md)
+- [func endSeeking()](./endseeking%28%29.md)
   Ends forward and backward seeking through the media content.
 
 

@@ -1,7 +1,8 @@
 # readAttributeActiveNetworkFaults(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeActiveNetworkFaults(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeActiveNetworkFaults() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeActiveNetworkFaultsWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # trainingMetrics
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Measurements of the classifier’s performance on the training data set.
 
@@ -20,15 +21,16 @@ let trainingMetrics: MLClassifierMetrics
 
 ## Mentions
 
-- [Creating a text classifier model](creating-a-text-classifier-model.md)
+- [Creating a text classifier model](../creating-a-text-classifier-model.md)
 
 ## See Also
 
-- [func evaluation(on:)](mltextclassifier/evaluation(on:).md)
+### Evaluating a text classifier
+- [func evaluation(on:)](./evaluation%28on%29.md)
   Computes evaluation metrics.
-- [func evaluation(on:textColumn:labelColumn:)](mltextclassifier/evaluation(on:textcolumn:labelcolumn:).md)
+- [func evaluation(on:textColumn:labelColumn:)](./evaluation%28on,textcolumn,labelcolumn%29.md)
   Computes evaluation metrics.
-- [let validationMetrics: MLClassifierMetrics](mltextclassifier/validationmetrics.md)
+- [let validationMetrics: MLClassifierMetrics](./validationmetrics.md)
   Measurements of the classifier’s performance on the validation data set.
 
 

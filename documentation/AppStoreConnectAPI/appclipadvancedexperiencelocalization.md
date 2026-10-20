@@ -1,7 +1,8 @@
 # AppClipAdvancedExperienceLocalization
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The localized text and action button label for an App Clip advanced experience in a specific language.
 
@@ -10,14 +11,14 @@ The localized text and action button label for an App Clip advanced experience i
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperienceLocalization
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipAdvancedExperienceLocalization.Attributes](appclipadvancedexperiencelocalization/attributes-data.dictionary.md)
+- [object AppClipAdvancedExperienceLocalization.Attributes](./appclipadvancedexperiencelocalization/attributes-data.dictionary.md)
   The attributes that describe an Advanced App Clip Experience Localizations resource.
 
 ## Properties
@@ -27,17 +28,20 @@ object AppClipAdvancedExperienceLocalization
 - `links` (ResourceLinks): Navigational links that include the self-link.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `appClipAdvancedExperienceLocalizations`
+
 ## See Also
 
-- [object AppClipAdvancedExperience](appclipadvancedexperience.md)
+### Objects and types
+- [object AppClipAdvancedExperience](./appclipadvancedexperience.md)
   A configured trigger for an App Clip experience, associated with a physical location, NFC tag, QR code, or App Store link.
-- [object AppClipAdvancedExperienceResponse](appclipadvancedexperienceresponse.md)
+- [object AppClipAdvancedExperienceResponse](./appclipadvancedexperienceresponse.md)
   A response containing a single App Clip advanced experience configuration.
-- [object AppClipAdvancedExperienceCreateRequest](appclipadvancedexperiencecreaterequest.md)
+- [object AppClipAdvancedExperienceCreateRequest](./appclipadvancedexperiencecreaterequest.md)
   The request body you use to create an advanced App Clip experience.
-- [object AppClipAdvancedExperienceUpdateRequest](appclipadvancedexperienceupdaterequest.md)
+- [object AppClipAdvancedExperienceUpdateRequest](./appclipadvancedexperienceupdaterequest.md)
   The request body you use to update an advanced App Clip experience.
-- [type AppClipAdvancedExperienceLanguage](appclipadvancedexperiencelanguage.md)
+- [type AppClipAdvancedExperienceLanguage](./appclipadvancedexperiencelanguage.md)
   A string value identifying the language for an App Clip advanced experience localization.
 
 

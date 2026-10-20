@@ -1,7 +1,8 @@
 # init(ssmlRepresentation:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a speech utterance with an Speech Synthesis Markup Language (SSML) string.
 
@@ -20,13 +21,17 @@ Creates a speech utterance with an Speech Synthesis Markup Language (SSML) strin
 init?(ssmlRepresentation string: String)
 ```
 
+```objc
+- (instancetype) initWithSSMLRepresentation:(NSString *) string;
+```
+
 #### Discussion
 
 If using SSML to request voices that fall under certain attributes, the system may split a single utterance into multiple parts and send each to an appropriate synthesizer.
 
-If no voice matches the properties, the utterance uses the voice set in its [`voice`](avspeechutterance/voice.md) property. If you don’t specify a voice, the system uses its default voice.
+If no voice matches the properties, the utterance uses the voice set in its [`voice`](./voice.md) property. If you don’t specify a voice, the system uses its default voice.
 
-> **Note**:  Speech utterance properties that affect the prosody of a voice, such as its [`rate`](avspeechutterance/rate.md) and [`pitchMultiplier`](avspeechutterance/pitchmultiplier.md), don’t apply to an utterance that uses an SSML representation.
+> **Note**:  Speech utterance properties that affect the prosody of a voice, such as its [`rate`](./rate.md) and [`pitchMultiplier`](./pitchmultiplier.md), don’t apply to an utterance that uses an SSML representation.
 
 ## Parameters
 
@@ -34,11 +39,12 @@ If no voice matches the properties, the utterance uses the voice set in its [`vo
 
 ## See Also
 
-- [init(string: String)](avspeechutterance/init(string:).md)
+### Creating an utterance
+- [init(string: String)](./init%28string%29.md)
   Creates an utterance with the text string that you specify for the speech synthesizer to speak.
-- [init(attributedString: NSAttributedString)](avspeechutterance/init(attributedstring:).md)
+- [init(attributedString: NSAttributedString)](./init%28attributedstring%29.md)
   Creates an utterance with the attributed text string that you specify for the speech synthesizer to speak.
-- [let AVSpeechSynthesisIPANotationAttribute: String](avspeechsynthesisipanotationattribute.md)
+- [let AVSpeechSynthesisIPANotationAttribute: String](../avspeechsynthesisipanotationattribute.md)
   A string that contains International Phonetic Alphabet (IPA) symbols the speech synthesizer uses to control pronunciation of certain words or phrases.
 
 

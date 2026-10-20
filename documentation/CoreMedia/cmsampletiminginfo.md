@@ -1,7 +1,8 @@
 # CMSampleTimingInfo
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of timing information for a sample in a sample buffer.
 
@@ -20,6 +21,10 @@ A collection of timing information for a sample in a sample buffer.
 struct CMSampleTimingInfo
 ```
 
+```c
+typedef struct { ... } CMSampleTimingInfo;
+```
+
 #### Overview
 
 A single `CMSampleTimingInfo` struct can describe every individual sample in a `CMSampleBuffer`, if the samples all have the same duration and are in presentation order with no gaps.
@@ -27,45 +32,46 @@ A single `CMSampleTimingInfo` struct can describe every individual sample in a `
 ## Topics
 
 ### Constants
-- [static let invalid: CMSampleTimingInfo](cmsampletiminginfo/invalid.md)
+- [static let invalid: CMSampleTimingInfo](./cmsampletiminginfo/invalid.md)
 ### Initializers
-- [init()](cmsampletiminginfo/init.md)
-- [init(duration: CMTime, presentationTimeStamp: CMTime, decodeTimeStamp: CMTime)](cmsampletiminginfo/init(duration:presentationtimestamp:decodetimestamp:).md)
+- [init()](./cmsampletiminginfo/init%28%29.md)
+- [init(duration: CMTime, presentationTimeStamp: CMTime, decodeTimeStamp: CMTime)](./cmsampletiminginfo/init%28duration,presentationtimestamp,decodetimestamp%29.md)
 ### Properties
-- [var decodeTimeStamp: CMTime](cmsampletiminginfo/decodetimestamp.md)
+- [var decodeTimeStamp: CMTime](./cmsampletiminginfo/decodetimestamp.md)
   The time at which the sample will be decoded.
-- [var duration: CMTime](cmsampletiminginfo/duration.md)
+- [var duration: CMTime](./cmsampletiminginfo/duration.md)
   The duration of the sample.
-- [var presentationTimeStamp: CMTime](cmsampletiminginfo/presentationtimestamp.md)
+- [var presentationTimeStamp: CMTime](./cmsampletiminginfo/presentationtimestamp.md)
   The time at which the sample will be presented.
 ### Operators
-- [static func != (CMSampleTimingInfo, CMSampleTimingInfo) -> Bool](cmsampletiminginfo/!=(_:_:).md)
+- [static func != (CMSampleTimingInfo, CMSampleTimingInfo) -> Bool](./cmsampletiminginfo/noteq%28_,_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CMSampleBuffer](cmsamplebuffer.md)
+### Data Types
+- [class CMSampleBuffer](./cmsamplebuffer.md)
   A reference to a buffer of media data.
-- [Sample Buffer Flags](sample-buffer-flags.md)
+- [Sample Buffer Flags](./sample-buffer-flags.md)
   Flags that customize the behavior of framework operations.
-- [typealias CMBuffer](cmbuffer.md)
+- [typealias CMBuffer](./cmbuffer.md)
   A reference to a buffer object.
-- [typealias CMBufferGetSizeCallback](cmbuffergetsizecallback.md)
+- [typealias CMBufferGetSizeCallback](./cmbuffergetsizecallback.md)
   A client callback that returns a size.
-- [typealias CMItemIndex](cmitemindex.md)
+- [typealias CMItemIndex](./cmitemindex.md)
   A datatype that represents an item index.
-- [typealias CMItemCount](cmitemcount.md)
+- [typealias CMItemCount](./cmitemcount.md)
   A datatype that represents an item count.
-- [typealias CMPersistentTrackID](cmpersistenttrackid.md)
+- [typealias CMPersistentTrackID](./cmpersistenttrackid.md)
   A datatype that represents a persistent track identifier.
-- [typealias CMMuxedStreamType](cmmuxedstreamtype.md)
+- [typealias CMMuxedStreamType](./cmmuxedstreamtype.md)
   A datatype that represents a muxed stream of data.
 
 

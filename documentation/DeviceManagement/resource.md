@@ -1,7 +1,8 @@
 # Resource
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A resource such as an app or book.
 
@@ -10,19 +11,19 @@ A resource such as an app or book.
 
 ## Declaration
 
-```swift
+```
 object Resource
 ```
 
 ## Topics
 
 ### Related Objects
-- [object View](view.md)
+- [object View](./view.md)
   A view for the resource.
-- [object Resource.Attributes](resource/attributes-data.dictionary.md)
-- [object Resource.Meta](resource/meta-data.dictionary.md)
-- [object Resource.Relationships](resource/relationships-data.dictionary.md)
-- [object Resource.Views](resource/views-data.dictionary.md)
+- [object Resource.Attributes](./resource/attributes-data.dictionary.md)
+- [object Resource.Meta](./resource/meta-data.dictionary.md)
+- [object Resource.Relationships](./resource/relationships-data.dictionary.md)
+- [object Resource.Views](./resource/views-data.dictionary.md)
 
 ## Properties
 
@@ -36,7 +37,8 @@ object Resource
 
 ## See Also
 
-- [object Relationship](relationship.md)
+### Getting resource and relationship information
+- [object Relationship](./relationship.md)
   A to-one or to-many relationship from one resource object to others.
 
 

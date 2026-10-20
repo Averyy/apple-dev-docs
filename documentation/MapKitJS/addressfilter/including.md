@@ -1,7 +1,8 @@
 # including(categories)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 A list of categories to include in a search.
 
@@ -10,17 +11,18 @@ A list of categories to include in a search.
 
 ## Declaration
 
-```swift
+```
 static including(categories: AddressCategory[]): AddressFilter;
 ```
 
 ## See Also
 
-- [excluding(categories)](addressfilter/excluding.md)
+### Creating filters
+- [excluding(categories)](./excluding.md)
   A list of categories to exclude from a search.
-- [excludingAllCategories](addressfilter/excludingallcategories.md)
+- [excludingAllCategories](./excludingallcategories.md)
   A value that excludes all address categories.
-- [includingAllCategories](addressfilter/includingallcategories.md)
+- [includingAllCategories](./includingallcategories.md)
   A value that includes all address categories.
 
 

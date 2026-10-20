@@ -1,7 +1,8 @@
 # buildBlock()
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Produces empty chart content.
 

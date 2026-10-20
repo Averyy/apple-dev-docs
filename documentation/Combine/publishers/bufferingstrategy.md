@@ -1,7 +1,8 @@
 # Publishers.BufferingStrategy
 
 **Framework**: Combine  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A strategy that handles exhaustion of a buffer’s capacity.
 
@@ -23,18 +24,19 @@ enum BufferingStrategy<Failure> where Failure : Error
 ## Topics
 
 ### Buffering strategies
-- [Publishers.BufferingStrategy.dropNewest](publishers/bufferingstrategy/dropnewest.md)
+- [Publishers.BufferingStrategy.dropNewest](./bufferingstrategy/dropnewest.md)
   When the buffer is full, discard the newly received element.
-- [Publishers.BufferingStrategy.dropOldest](publishers/bufferingstrategy/dropoldest.md)
+- [Publishers.BufferingStrategy.dropOldest](./bufferingstrategy/dropoldest.md)
   When the buffer is full, discard the oldest element in the buffer.
-- [Publishers.BufferingStrategy.customError(_:)](publishers/bufferingstrategy/customerror(_:).md)
+- [Publishers.BufferingStrategy.customError(_:)](./bufferingstrategy/customerror%28_%29.md)
   When the buffer is full, execute the closure to provide a custom error.
 
 ## See Also
 
-- [func buffer(size: Int, prefetch: Publishers.PrefetchStrategy, whenFull: Publishers.BufferingStrategy<Self.Failure>) -> Publishers.Buffer<Self>](publisher/buffer(size:prefetch:whenfull:).md)
+### Buffering elements
+- [func buffer(size: Int, prefetch: Publishers.PrefetchStrategy, whenFull: Publishers.BufferingStrategy<Self.Failure>) -> Publishers.Buffer<Self>](../publisher/buffer%28size,prefetch,whenfull%29.md)
   Buffers elements received from an upstream publisher.
-- [Publishers.PrefetchStrategy](publishers/prefetchstrategy.md)
+- [Publishers.PrefetchStrategy](./prefetchstrategy.md)
   A strategy for filling a buffer.
 
 

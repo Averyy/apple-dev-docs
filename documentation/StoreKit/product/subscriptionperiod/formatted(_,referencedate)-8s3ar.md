@@ -1,7 +1,8 @@
 # formatted(_:referenceDate:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Formats the subscription period using a format style that takes a duration as an input.
 
@@ -23,11 +24,12 @@ func formatted<S>(_ format: S, referenceDate: Date = .now) -> S.FormatOutput whe
 ## Parameters
 
 - `format`: A format style that has a duration as an input.
-- `referenceDate`: The starting date of the subscription period. The default value is [`now`](https://developer.apple.com/documentation/foundation/date/now).
+- `referenceDate`: The starting date of the subscription period. The default value is [`now`](../../../Foundation/date/now.md).
 
 ## See Also
 
-- [func formatted<S>(S, referenceDate: Date) -> S.FormatOutput](product/subscriptionperiod/formatted(_:referencedate:)-3t7wd.md)
+### Formatting the subscription period
+- [func formatted<S>(S, referenceDate: Date) -> S.FormatOutput](./formatted%28_,referencedate%29-3t7wd.md)
   Formats the subscription period using a format style that takes a date range as an input.
 
 

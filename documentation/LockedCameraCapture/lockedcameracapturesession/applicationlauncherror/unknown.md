@@ -1,7 +1,8 @@
 # LockedCameraCaptureSession.ApplicationLaunchError.unknown
 
 **Framework**: LockedCameraCapture  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that the launch failed with an unknown error.
 

@@ -1,7 +1,8 @@
 # workoutBuilder(_:didUpdateWorkoutZone:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the person changed zones during the workout.
 
@@ -9,7 +10,7 @@ Tells the delegate that the person changed zones during the workout.
 - iOS 27.0+
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
-- macOS ?+
+- macOS
 - watchOS 27.0+
 
 ## Declaration
@@ -20,7 +21,7 @@ optional func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder, didUpdateWo
 
 ## Mentions
 
-- [Accessing workout zone data](accessing-workout-zone-data.md)
+- [Accessing workout zone data](../accessing-workout-zone-data.md)
 
 #### Discussion
 

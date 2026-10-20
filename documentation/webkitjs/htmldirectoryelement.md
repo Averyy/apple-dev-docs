@@ -1,7 +1,8 @@
 # HTMLDirectoryElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLDirectoryElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [compact](htmldirectoryelement/1633965-compact.md)
+- [compact](./htmldirectoryelement/api-1633965-compact.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

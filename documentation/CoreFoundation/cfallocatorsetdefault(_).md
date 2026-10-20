@@ -1,23 +1,28 @@
 # CFAllocatorSetDefault(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the given allocator as the default for the current thread.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFAllocatorSetDefault(_ allocator: CFAllocator!)
+```
+
+```c
+extern void CFAllocatorSetDefault(CFAllocatorRef allocator);
 ```
 
 #### Discussion
@@ -34,7 +39,8 @@ If you wish to use a custom allocator in a context, the best approach is to spec
 
 ## See Also
 
-- [func CFAllocatorGetDefault() -> Unmanaged<CFAllocator>!](cfallocatorgetdefault().md)
+### Getting and Setting the Default Allocator
+- [func CFAllocatorGetDefault() -> Unmanaged<CFAllocator>!](./cfallocatorgetdefault%28%29.md)
   Gets the default allocator object for the current thread.
 
 

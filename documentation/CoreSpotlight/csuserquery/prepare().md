@@ -1,7 +1,8 @@
 # prepare()
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Performs one-time tasks that prepare Spotlight to search for content in all search indexes.
 
@@ -18,9 +19,13 @@ Performs one-time tasks that prepare Spotlight to search for content in all sear
 class func prepare()
 ```
 
+```objc
++ (void) prepare;
+```
+
 ## Mentions
 
-- [Building a search interface for your app](building-a-search-interface-for-your-app.md)
+- [Building a search interface for your app](../building-a-search-interface-for-your-app.md)
 
 #### Discussion
 
@@ -30,7 +35,8 @@ You don’t need to call this method more than once during the lifetime of your 
 
 ## See Also
 
-- [class func prepareProtectionClasses([FileProtectionType])](csuserquery/prepareprotectionclasses(_:).md)
+### Preparing to search
+- [class func prepareProtectionClasses([FileProtectionType])](./prepareprotectionclasses%28_%29.md)
   Performs one-time tasks that prepare Spotlight to search for content in one or more protected search indexes.
 
 

@@ -1,7 +1,8 @@
 # PropertyListSerialization.PropertyListFormat
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants are used to specify a property list serialization format.
 
@@ -20,34 +21,39 @@ These constants are used to specify a property list serialization format.
 enum PropertyListFormat
 ```
 
+```c
+enum NSPropertyListFormat : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [PropertyListSerialization.PropertyListFormat.openStep](propertylistserialization/propertylistformat/openstep.md)
+- [PropertyListSerialization.PropertyListFormat.openStep](./propertylistformat/openstep.md)
   Specifies the ASCII property list format inherited from the OpenStep APIs.
-- [PropertyListSerialization.PropertyListFormat.xml](propertylistserialization/propertylistformat/xml.md)
+- [PropertyListSerialization.PropertyListFormat.xml](./propertylistformat/xml.md)
   Specifies the XML property list format.
-- [PropertyListSerialization.PropertyListFormat.binary](propertylistserialization/propertylistformat/binary.md)
+- [PropertyListSerialization.PropertyListFormat.binary](./propertylistformat/binary.md)
   Specifies the binary property list format.
 ### Initializers
-- [init?(rawValue: UInt)](propertylistserialization/propertylistformat/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./propertylistformat/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [PropertyListSerialization.MutabilityOptions](propertylistserialization/mutabilityoptions.md)
+### Constants
+- [PropertyListSerialization.MutabilityOptions](./mutabilityoptions.md)
   These constants specify mutability options in property lists.
-- [PropertyListSerialization.ReadOptions](propertylistserialization/readoptions.md)
-  The only read options supported are described in [`PropertyListSerialization.MutabilityOptions`](propertylistserialization/mutabilityoptions.md).
+- [PropertyListSerialization.ReadOptions](./readoptions.md)
+  The only read options supported are described in [`PropertyListSerialization.MutabilityOptions`](./mutabilityoptions.md).
 
 
 ---

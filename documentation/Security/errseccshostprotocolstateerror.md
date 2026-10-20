@@ -1,7 +1,8 @@
 # errSecCSHostProtocolStateError
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Host protocol violation: invalid guest state change request.
 
@@ -13,6 +14,10 @@ Host protocol violation: invalid guest state change request.
 
 ```swift
 var errSecCSHostProtocolStateError: OSStatus { get }
+```
+
+```c
+errSecCSHostProtocolStateError
 ```
 
 

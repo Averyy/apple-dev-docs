@@ -1,20 +1,25 @@
 # MTLFeatureSet.iOS_GPUFamily1_v4
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The GPU family 1, version 4 feature set for iOS.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 16.0
+- iPadOS 11.0+ - Deprecated in 16.0
+- Mac Catalyst 11.0+ - Deprecated in 16.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
 ```swift
 case iOS_GPUFamily1_v4
+```
+
+```c
+MTLFeatureSet_iOS_GPUFamily1_v4
 ```
 
 #### Discussion
@@ -23,13 +28,14 @@ This feature set corresponds with Apple A7 devices running iOS 11.
 
 ## See Also
 
-- [MTLFeatureSet.iOS_GPUFamily1_v5](mtlfeatureset/ios_gpufamily1_v5.md)
+### iOS GPU family 1
+- [MTLFeatureSet.iOS_GPUFamily1_v5](./ios_gpufamily1_v5.md)
   The GPU family 1, version 5 feature set for iOS.
-- [MTLFeatureSet.iOS_GPUFamily1_v3](mtlfeatureset/ios_gpufamily1_v3.md)
+- [MTLFeatureSet.iOS_GPUFamily1_v3](./ios_gpufamily1_v3.md)
   The GPU family 1, version 3 feature set for iOS.
-- [MTLFeatureSet.iOS_GPUFamily1_v2](mtlfeatureset/ios_gpufamily1_v2.md)
+- [MTLFeatureSet.iOS_GPUFamily1_v2](./ios_gpufamily1_v2.md)
   The GPU family 1, version 2 feature set for iOS.
-- [MTLFeatureSet.iOS_GPUFamily1_v1](mtlfeatureset/ios_gpufamily1_v1.md)
+- [MTLFeatureSet.iOS_GPUFamily1_v1](./ios_gpufamily1_v1.md)
   The GPU family 1, version 1 feature set for iOS.
 
 

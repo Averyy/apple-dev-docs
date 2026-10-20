@@ -1,7 +1,8 @@
 # read(url:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Reads an image URL as a `CIImage`.
 

@@ -1,7 +1,8 @@
 # CollectionDifference.Change.insert(offset:element:associatedWith:)
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An insertion.
 

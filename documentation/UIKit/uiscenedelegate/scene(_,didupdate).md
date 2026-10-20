@@ -1,7 +1,8 @@
 # scene(_:didUpdate:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the specified activity object was updated.
 
@@ -18,9 +19,13 @@ Tells the delegate that the specified activity object was updated.
 optional func scene(_ scene: UIScene, didUpdate userActivity: NSUserActivity)
 ```
 
+```objc
+- (void) scene:(UIScene *) scene didUpdateUserActivity:(NSUserActivity *) userActivity;
+```
+
 #### Discussion
 
-Use this method to add any final data to the specified user activity object. UIKit calls this method on your app’s main thread after calling your [`stateRestorationActivity(for:)`](uiscenedelegate/staterestorationactivity(for:).md) method and after giving other parts of your app an opportunity to update the activity object returned by that method.
+Use this method to add any final data to the specified user activity object. UIKit calls this method on your app’s main thread after calling your [`stateRestorationActivity(for:)`](./staterestorationactivity%28for%29.md) method and after giving other parts of your app an opportunity to update the activity object returned by that method.
 
 ## Parameters
 
@@ -29,11 +34,12 @@ Use this method to add any final data to the specified user activity object. UIK
 
 ## See Also
 
-- [Restoring your app’s state](restoring-your-app-s-state.md)
+### Saving the state of the scene
+- [Restoring your app’s state](../restoring-your-app-s-state.md)
   Provide continuity for the user by preserving current activities.
-- [func stateRestorationActivity(for: UIScene) -> NSUserActivity?](uiscenedelegate/staterestorationactivity(for:).md)
+- [func stateRestorationActivity(for: UIScene) -> NSUserActivity?](./staterestorationactivity%28for%29.md)
   Returns a user activity object encapsulating the current state of the specified scene.
-- [func scene(UIScene, restoreInteractionStateWith: NSUserActivity)](uiscenedelegate/scene(_:restoreinteractionstatewith:).md)
+- [func scene(UIScene, restoreInteractionStateWith: NSUserActivity)](./scene%28_,restoreinteractionstatewith%29.md)
 
 
 ---

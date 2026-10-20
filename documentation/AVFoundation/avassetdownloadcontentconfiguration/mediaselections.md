@@ -1,7 +1,8 @@
 # mediaSelections
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The media selections of an asset that a task downloads.
 
@@ -20,15 +21,20 @@ The media selections of an asset that a task downloads.
 var mediaSelections: [AVMediaSelection] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<AVMediaSelection *> * mediaSelections;
+```
+
 #### Discussion
 
 If your configuration doesn’t indicate a media selection, the system uses the asset’s automatic media selection.
 
 ## See Also
 
-- [var variantQualifiers: [AVAssetVariantQualifier]](avassetdownloadcontentconfiguration/variantqualifiers.md)
+### Accessing configuration details
+- [var variantQualifiers: [AVAssetVariantQualifier]](./variantqualifiers.md)
   The variant qualifiers for this configuration.
-- [class AVAssetVariantQualifier](avassetvariantqualifier.md)
+- [class AVAssetVariantQualifier](../avassetvariantqualifier.md)
   An object that represents an HTTP Live Streaming asset variant.
 
 

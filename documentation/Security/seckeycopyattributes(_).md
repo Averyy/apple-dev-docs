@@ -1,7 +1,8 @@
 # SecKeyCopyAttributes(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the attributes of a given key.
 
@@ -20,9 +21,13 @@ Gets the attributes of a given key.
 func SecKeyCopyAttributes(_ key: SecKey) -> CFDictionary?
 ```
 
+```c
+CFDictionaryRefSecKeyCopyAttributes(SecKeyRef key);
+```
+
 #### Return Value
 
-A dictionary containing the key’s attributes. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free this dictionary’s memory when you are done with it.
+A dictionary containing the key’s attributes. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free this dictionary’s memory when you are done with it.
 
 ## Parameters
 

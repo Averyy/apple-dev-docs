@@ -1,14 +1,15 @@
 # StandardUSB30::kLinkStateU0RecoveryTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 StandardUSB30::kLinkStateU0RecoveryTimeout = kIOUSB30LinkStateU0RecoveryTimeout
 ```
 

@@ -1,7 +1,8 @@
 # ColorSchemeContrast.increased
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 SwiftUI displays views with increased contrast between the app’s foreground and background colors.
 
@@ -22,7 +23,8 @@ case increased
 
 ## See Also
 
-- [ColorSchemeContrast.standard](colorschemecontrast/standard.md)
+### Getting contrast options
+- [ColorSchemeContrast.standard](./standard.md)
   SwiftUI displays views with standard contrast between the app’s foreground and background colors.
 
 

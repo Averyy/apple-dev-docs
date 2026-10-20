@@ -1,7 +1,8 @@
 # scheduleSegment(_:startingFrame:frameCount:at:completionHandler:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules the playing of an audio file segment.
 
@@ -17,7 +18,15 @@ Schedules the playing of an audio file segment.
 ## Declaration
 
 ```swift
+func scheduleSegment(_ file: AVAudioFile, startingFrame startFrame: AVAudioFramePosition, frameCount numberFrames: AVAudioFrameCount, at when: AVAudioTime?, completionHandler: (@Sendable () -> Void)? = nil)
+```
+
+```swift
 func scheduleSegment(_ file: AVAudioFile, startingFrame startFrame: AVAudioFramePosition, frameCount numberFrames: AVAudioFrameCount, at when: AVAudioTime?) async
+```
+
+```objc
+- (void) scheduleSegment:(AVAudioFile *) file startingFrame:(AVAudioFramePosition) startFrame frameCount:(AVAudioFrameCount) numberFrames atTime:(AVAudioTime *) when completionHandler:(AVAudioNodeCompletionHandler) completionHandler;
 ```
 
 #### Discussion
@@ -27,22 +36,23 @@ func scheduleSegment(_ file: AVAudioFile, startingFrame startFrame: AVAudioFrame
 - `file`: The URL of the file to play.
 - `startFrame`: The starting frame position in the stream.
 - `numberFrames`: The number of frames to play.
-- `when`: The time the buffer plays. For more information, see [`Scheduling playback time`](avaudioplayernode#Scheduling-playback-time.md).
+- `when`: The time the buffer plays. For more information, see [Scheduling playback time](../avaudioplayernode.md#Scheduling-playback-time).
 - `completionHandler`: The handler the system calls after the player schedules the segment for playback on the render thread, or the player stops.
 
 ## See Also
 
-- [func scheduleFile(AVAudioFile, at: AVAudioTime?, completionHandler: (() -> Void)?)](avaudioplayernode/schedulefile(_:at:completionhandler:).md)
+### Scheduling files and segments
+- [func scheduleFile(AVAudioFile, at: AVAudioTime?, completionHandler: (() -> Void)?)](./schedulefile%28_,at,completionhandler%29.md)
   Schedules the playing of an entire audio file.
-- [func scheduleFile(AVAudioFile, at: AVAudioTime?, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: ((AVAudioPlayerNodeCompletionCallbackType) -> Void)?)](avaudioplayernode/schedulefile(_:at:completioncallbacktype:completionhandler:).md)
+- [func scheduleFile(AVAudioFile, at: AVAudioTime?, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: ((AVAudioPlayerNodeCompletionCallbackType) -> Void)?)](./schedulefile%28_,at,completioncallbacktype,completionhandler%29.md)
   Schedules the playing of an entire audio file with a callback option you specify.
-- [func scheduleSegment(AVAudioFile, startingFrame: AVAudioFramePosition, frameCount: AVAudioFrameCount, at: AVAudioTime?, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: ((AVAudioPlayerNodeCompletionCallbackType) -> Void)?)](avaudioplayernode/schedulesegment(_:startingframe:framecount:at:completioncallbacktype:completionhandler:).md)
+- [func scheduleSegment(AVAudioFile, startingFrame: AVAudioFramePosition, frameCount: AVAudioFrameCount, at: AVAudioTime?, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: ((AVAudioPlayerNodeCompletionCallbackType) -> Void)?)](./schedulesegment%28_,startingframe,framecount,at,completioncallbacktype,completionhandler%29.md)
   Schedules the playing of an audio file segment with a callback option you specify.
-- [enum AVAudioPlayerNodeCompletionCallbackType](avaudioplayernodecompletioncallbacktype.md)
+- [enum AVAudioPlayerNodeCompletionCallbackType](../avaudioplayernodecompletioncallbacktype.md)
   Constants that specify when the framework must invoke the completion handler.
-- [typealias AVAudioPlayerNodeCompletionHandler](avaudioplayernodecompletionhandler.md)
+- [typealias AVAudioPlayerNodeCompletionHandler](../avaudioplayernodecompletionhandler.md)
   The callback handler for buffer or file completion.
-- [typealias AVAudioNodeCompletionHandler](avaudionodecompletionhandler.md)
+- [typealias AVAudioNodeCompletionHandler](../avaudionodecompletionhandler.md)
   A general callback handler for an audio node.
 
 

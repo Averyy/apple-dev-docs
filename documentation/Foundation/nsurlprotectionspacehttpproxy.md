@@ -1,7 +1,8 @@
 # NSURLProtectionSpaceHTTPProxy
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The proxy type for HTTP proxies.
 
@@ -20,13 +21,18 @@ The proxy type for HTTP proxies.
 let NSURLProtectionSpaceHTTPProxy: String
 ```
 
+```c
+extern NSString * const NSURLProtectionSpaceHTTPProxy;
+```
+
 ## See Also
 
-- [let NSURLProtectionSpaceHTTPSProxy: String](nsurlprotectionspacehttpsproxy.md)
+### Proxy types
+- [let NSURLProtectionSpaceHTTPSProxy: String](./nsurlprotectionspacehttpsproxy.md)
   The proxy type for HTTPS proxies.
-- [let NSURLProtectionSpaceFTPProxy: String](nsurlprotectionspaceftpproxy.md)
+- [let NSURLProtectionSpaceFTPProxy: String](./nsurlprotectionspaceftpproxy.md)
   The proxy type for FTP proxies.
-- [let NSURLProtectionSpaceSOCKSProxy: String](nsurlprotectionspacesocksproxy.md)
+- [let NSURLProtectionSpaceSOCKSProxy: String](./nsurlprotectionspacesocksproxy.md)
   The proxy type for SOCKS proxies.
 
 

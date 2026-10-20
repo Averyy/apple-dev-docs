@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct llc {
     ...
 };
@@ -17,9 +17,9 @@ struct llc {
 ## Topics
 
 ### Instance Properties
-- [llc_dsap](llc/1584469-llc_dsap.md)
-- [llc_ssap](llc/1584466-llc_ssap.md)
-- [llc_un](llc/1584441-llc_un.md)
+- [llc_dsap](./llc/api-1584469-llc_dsap.md)
+- [llc_ssap](./llc/api-1584466-llc_ssap.md)
+- [llc_un](./llc/api-1584441-llc_un.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # parameter(withAddress:)
 
 **Framework**: Audio Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches the tree for a parameter with a specific address.
 
@@ -19,6 +20,10 @@ Searches the tree for a parameter with a specific address.
 func parameter(withAddress address: AUParameterAddress) -> AUParameter?
 ```
 
+```objc
+- (AUParameter *) parameterWithAddress:(AUParameterAddress) address;
+```
+
 #### Return Value
 
 The parameter corresponding to the supplied address, or `nil` if no such parameter exists.
@@ -29,7 +34,8 @@ The parameter corresponding to the supplied address, or `nil` if no such paramet
 
 ## See Also
 
-- [func parameter(withID: AudioUnitParameterID, scope: AudioUnitScope, element: AudioUnitElement) -> AUParameter?](auparametertree/parameter(withid:scope:element:).md)
+### Obtaining Tree Parameters
+- [func parameter(withID: AudioUnitParameterID, scope: AudioUnitScope, element: AudioUnitElement) -> AUParameter?](./parameter%28withid,scope,element%29.md)
   Searches the tree for a specific version 2 audio unit parameter.
 
 

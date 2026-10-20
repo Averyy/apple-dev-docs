@@ -1,7 +1,8 @@
 # Airport
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The name and location of an airport.
 
@@ -10,22 +11,25 @@ The name and location of an airport.
 
 ## Declaration
 
-```swift
+```
 object Airport
 ```
 
 ## Properties
 
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `Airport`
 - `iataCode` (string) *(required)*: The airport’s official three-letter identifier.
+
+  **Allowed Values**: `/^[A-Z]{3}$/`
 - `name` (string): The name of the airport.
 - `address` (PostalAddress): The location of the airport.
 
 ## See Also
 
-- [object Flight](flight.md)
+### Defining a Flight Reservation
+- [object Flight](./flight.md)
   Location and scheduling information for an airplane flight.
-- [object Airline](airline.md)
+- [object Airline](./airline.md)
   An airline’s name and identifier.
 
 

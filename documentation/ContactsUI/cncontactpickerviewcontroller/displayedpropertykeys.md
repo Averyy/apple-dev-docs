@@ -1,9 +1,10 @@
 # displayedPropertyKeys
 
 **Framework**: Contacts UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact) property keys to display in the contact detail card.
+The [`CNContact`](../../Contacts/cncontact.md) property keys to display in the contact detail card.
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@ The [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact) 
 
 ```swift
 var displayedPropertyKeys: [String]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSArray<NSString *> * displayedPropertyKeys;
 ```
 
 #### Discussion

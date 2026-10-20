@@ -1,7 +1,8 @@
 # MTLPatchType.quad
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A quad patch.
 
@@ -19,15 +20,20 @@ A quad patch.
 case quad
 ```
 
+```c
+MTLPatchTypeQuad
+```
+
 #### Discussion
 
 Metal uses this value if the shader is a post-tessellation vertex function with the `[[patch(quad)]]` attribute.
 
 ## See Also
 
-- [MTLPatchType.none](mtlpatchtype/none.md)
+### Patch types
+- [MTLPatchType.none](./none.md)
   An option that indicates that this isn’t a post-tessellation vertex function.
-- [MTLPatchType.triangle](mtlpatchtype/triangle.md)
+- [MTLPatchType.triangle](./triangle.md)
   A triangle patch.
 
 

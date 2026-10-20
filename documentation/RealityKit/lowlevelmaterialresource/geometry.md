@@ -1,7 +1,8 @@
 # geometry
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The compiled vertex-stage geometry modifier.
 
@@ -19,15 +20,16 @@ final var geometry: LowLevelMaterialResource.GeometryModifier { get }
 
 ## See Also
 
-- [var surface: LowLevelMaterialResource.SurfaceShader](lowlevelmaterialresource/surface.md)
+### Configuring the shaders
+- [var surface: LowLevelMaterialResource.SurfaceShader](./surface.md)
   The compiled fragment-stage surface shader.
-- [LowLevelMaterialResource.SurfaceShader](lowlevelmaterialresource/surfaceshader.md)
+- [LowLevelMaterialResource.SurfaceShader](./surfaceshader.md)
   A compiled Metal function that implements the surface shader function.
-- [LowLevelMaterialResource.GeometryModifier](lowlevelmaterialresource/geometrymodifier.md)
+- [LowLevelMaterialResource.GeometryModifier](./geometrymodifier.md)
   A compiled Metal function that implements the geometry modifier function.
-- [LowLevelMaterialResource.LightingFunction](lowlevelmaterialresource/lightingfunction.md)
+- [LowLevelMaterialResource.LightingFunction](./lightingfunction.md)
   A compiled Metal function that evaluates lighting.
-- [LowLevelMaterialResource.Function](lowlevelmaterialresource/function.md)
+- [LowLevelMaterialResource.Function](./function.md)
   A compiled shader function that can receive per-draw parameters via an argument table.
 
 

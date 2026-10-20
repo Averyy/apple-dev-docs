@@ -1,7 +1,8 @@
 # spawn(elements:in:using:)
 
 **Framework**: Compute Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Spawns new elements into the simulation with the given initial parameters.
 
@@ -12,7 +13,7 @@ Spawns new elements into the simulation with the given initial parameters.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

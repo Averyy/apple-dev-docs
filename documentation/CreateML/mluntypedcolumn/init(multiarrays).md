@@ -1,7 +1,8 @@
 # init(multiArrays:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a MLUntypedColumn of type MLMultiArray from the specified MLUntypedColumn if the values of the given MLUntypedColumn are convertible to MLDataValue.MultiArrayType.
 
@@ -29,15 +30,16 @@ A MLUntypedColumn of type MultiArray from the specified MLUntypedColumn if the g
 
 ## See Also
 
-- [init(ints: MLUntypedColumn)](mluntypedcolumn/init(ints:).md)
+### Creating an untyped column by converting another column
+- [init(ints: MLUntypedColumn)](./init%28ints%29.md)
   Creates a new column of integers by converting the elements of another column.
-- [init(doubles: MLUntypedColumn)](mluntypedcolumn/init(doubles:).md)
+- [init(doubles: MLUntypedColumn)](./init%28doubles%29.md)
   Creates a new column of doubles by converting the elements of another column.
-- [init(strings: MLUntypedColumn)](mluntypedcolumn/init(strings:).md)
+- [init(strings: MLUntypedColumn)](./init%28strings%29.md)
   Creates a new column of strings by converting the elements of another column.
-- [init(sequences: MLUntypedColumn)](mluntypedcolumn/init(sequences:).md)
+- [init(sequences: MLUntypedColumn)](./init%28sequences%29.md)
   Creates a new column of machine learning sequences by converting the elements of another column.
-- [init(dictionaries: MLUntypedColumn)](mluntypedcolumn/init(dictionaries:).md)
+- [init(dictionaries: MLUntypedColumn)](./init%28dictionaries%29.md)
   Creates a new column of machine learning dictionaries by converting the elements of another column.
 
 

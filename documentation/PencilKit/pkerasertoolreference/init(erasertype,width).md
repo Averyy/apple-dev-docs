@@ -1,7 +1,8 @@
 # init(eraserType:width:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.4+
@@ -16,9 +17,14 @@
 init(eraserType: __PKEraserType, width: CGFloat)
 ```
 
+```objc
+- (instancetype) initWithEraserType:(PKEraserType) eraserType width:(CGFloat) width;
+```
+
 ## See Also
 
-- [init(eraserType: __PKEraserType)](pkerasertoolreference/init(erasertype:).md)
+### Creating an eraser tool
+- [init(eraserType: __PKEraserType)](./init%28erasertype%29.md)
   Creates an eraser tool object that removes objects wholly or partially from a canvas view.
 
 

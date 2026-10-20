@@ -1,7 +1,8 @@
 # CSSMERR_CSP_KEY_USAGE_INCORRECT
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSMERR_CSP_KEY_USAGE_INCORRECT: Int { get }
+```
+
+```c
+CSSMERR_CSP_KEY_USAGE_INCORRECT
 ```
 
 

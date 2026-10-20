@@ -1,7 +1,8 @@
 # exemplarLocation
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The exemplar city for a timezone.
 
@@ -26,17 +27,18 @@ If the exemplar city is unavailable, the system provides the localized exemplar 
 
 ## See Also
 
-- [static func specificName(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/specificname(_:).md)
+### Modifying a Time Zone
+- [static func specificName(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](./specificname%28_%29.md)
   Returns the specific, non-location representation of a timezone.
-- [static func genericName(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/genericname(_:).md)
+- [static func genericName(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](./genericname%28_%29.md)
   Returns the generic, non-location representation of a timezone.
-- [static func iso8601(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/iso8601(_:).md)
+- [static func iso8601(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](./iso8601%28_%29.md)
   Creates the ISO 8601 representation of the timezone with hours, minutes, and optional seconds.
-- [static func localizedGMT(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/localizedgmt(_:).md)
+- [static func localizedGMT(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](./localizedgmt%28_%29.md)
   Returns the localized GMT format representation of a timezone.
-- [static func identifier(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/identifier(_:).md)
+- [static func identifier(Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone](./identifier%28_%29.md)
   Returns the timezone identifier.
-- [static var genericLocation: Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone/genericlocation.md)
+- [static var genericLocation: Date.FormatStyle.Symbol.TimeZone](./genericlocation.md)
   The generic location representation of a timezone.
 
 

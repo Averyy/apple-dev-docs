@@ -1,7 +1,8 @@
 # AVCaptureDevice.TransportControlsPlaybackMode.playing
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates that the tape transport is threaded through the play head.
 
@@ -14,9 +15,14 @@ A value that indicates that the tape transport is threaded through the play head
 case playing
 ```
 
+```c
+AVCaptureDeviceTransportControlsPlayingMode
+```
+
 ## See Also
 
-- [AVCaptureDevice.TransportControlsPlaybackMode.notPlaying](avcapturedevice/transportcontrolsplaybackmode-swift.enum/notplaying.md)
+### Playback modes
+- [AVCaptureDevice.TransportControlsPlaybackMode.notPlaying](./notplaying.md)
   A value that indicates that the tape transport isn’t threaded through the play head.
 
 

@@ -1,7 +1,8 @@
 # stage
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stage currently being rendered by this component, or `nil` if the component is in manual mode and no render has been performed yet.
 
@@ -21,12 +22,13 @@ var stage: USDStage? { get }
 
 ## See Also
 
-- [var timeCode: USDStage.TimeCode](usdstagecomponent/timecode.md)
+### Configuring the component
+- [var timeCode: USDStage.TimeCode](./timecode.md)
   The time code to render at.
-- [let allowsHitTesting: Bool](usdstagecomponent/allowshittesting.md)
+- [let allowsHitTesting: Bool](./allowshittesting.md)
   Whether the rendered entities support hit testing. Set at initialization and cannot be changed afterwards.
-- [let rendersAutomatically: Bool](usdstagecomponent/rendersautomatically.md)
-  Whether the component renders automatically in response to stage or time code changes. `false` indicates manual mode, in which rendering must be triggered explicitly via [`render(_:to:at:)`](usdstagecomponent/render(_:to:at:).md).
+- [let rendersAutomatically: Bool](./rendersautomatically.md)
+  Whether the component renders automatically in response to stage or time code changes. `false` indicates manual mode, in which rendering must be triggered explicitly via [`render(_:to:at:)`](./render%28_,to,at%29.md).
 
 
 ---

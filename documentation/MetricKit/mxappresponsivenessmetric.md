@@ -1,16 +1,19 @@
 # MXAppResponsivenessMetric
 
 **Framework**: MetricKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object representing metrics about the responsiveness of the app to user interaction.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`MetricResult`](./metricresult.md), and read the [`HangTimeMetric`](./hangtimemetric.md) case instead.
 
 ## Declaration
 
@@ -18,33 +21,38 @@ An object representing metrics about the responsiveness of the app to user inter
 class MXAppResponsivenessMetric
 ```
 
+```objc
+@interface MXAppResponsivenessMetric : MXMetric
+```
+
 ## Topics
 
 ### Viewing application unresponsive durations
-- [var histogrammedApplicationHangTime: MXHistogram<UnitDuration>](mxappresponsivenessmetric/histogrammedapplicationhangtime.md)
+- [var histogrammedApplicationHangTime: MXHistogram<UnitDuration>](./mxappresponsivenessmetric/histogrammedapplicationhangtime.md)
   A histogram of the different durations of time in which the app is too busy to handle user interaction responsively.
 
 ## Relationships
 
 ### Inherits From
-- [MXMetric](mxmetric.md)
+- [MXMetric](./mxmetric.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MXAnimationMetric](mxanimationmetric.md)
+### Responsiveness metrics
+- [class MXAnimationMetric](./mxanimationmetric.md)
   An object representing metrics about the responsiveness of animation in the app.
-- [class MXAppLaunchMetric](mxapplaunchmetric.md)
+- [class MXAppLaunchMetric](./mxapplaunchmetric.md)
   An object representing metrics about app launch time.
-- [struct MXLaunchTaskID](mxlaunchtaskid.md)
+- [struct MXLaunchTaskID](./mxlaunchtaskid.md)
   The task identifier to track launch measurements.
 
 

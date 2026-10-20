@@ -1,7 +1,8 @@
 # generationSchema
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The output schema for the model’s response.
 
@@ -19,6 +20,8 @@ The output schema for the model’s response.
 ```swift
 var generationSchema: GenerationSchema? { get }
 ```
+
+Available when `ExpectedValue` conforms to `Decodable`, `Encodable`, and `Sendable`.
 
 
 ---

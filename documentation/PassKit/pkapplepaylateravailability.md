@@ -1,7 +1,8 @@
 # PKApplePayLaterAvailability
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values you use to enable or disable Apple Pay Later for a specific transaction.
 
@@ -19,35 +20,40 @@ Values you use to enable or disable Apple Pay Later for a specific transaction.
 enum PKApplePayLaterAvailability
 ```
 
+```c
+enum PKApplePayLaterAvailability : NSInteger;
+```
+
 ## Topics
 
 ### Availability values
-- [PKApplePayLaterAvailability.available](pkapplepaylateravailability/available.md)
+- [PKApplePayLaterAvailability.available](./pkapplepaylateravailability/available.md)
   Apple Pay Later is available.
-- [PKApplePayLaterAvailability.unavailableItemIneligible](pkapplepaylateravailability/unavailableitemineligible.md)
+- [PKApplePayLaterAvailability.unavailableItemIneligible](./pkapplepaylateravailability/unavailableitemineligible.md)
   Apple Pay Later is unavailable because one or more ineligible or prohibited items are in the shopping cart, such as gift cards.
-- [PKApplePayLaterAvailability.unavailableRecurringTransaction](pkapplepaylateravailability/unavailablerecurringtransaction.md)
+- [PKApplePayLaterAvailability.unavailableRecurringTransaction](./pkapplepaylateravailability/unavailablerecurringtransaction.md)
   Apple Pay Later is unavailable because there’s a recurring payment or subscription in the shopping cart.
 ### Initializers
-- [init?(rawValue: Int)](pkapplepaylateravailability/init(rawvalue:).md)
+- [init?(rawValue: Int)](./pkapplepaylateravailability/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var applePayLaterAvailability: PKPaymentRequest.ApplePayLaterAvailability](pkpaymentrequest/applepaylateravailability-3dxrt.md)
+### Deprecated
+- [var applePayLaterAvailability: PKPaymentRequest.ApplePayLaterAvailability](./pkpaymentrequest/applepaylateravailability-3dxrt.md)
   A value that indicates whether Apple Pay Later is available for a transaction.
-- [PKPaymentRequest.ApplePayLaterAvailability](pkpaymentrequest/applepaylateravailability-swift.enum.md)
+- [PKPaymentRequest.ApplePayLaterAvailability](./pkpaymentrequest/applepaylateravailability-swift.enum.md)
   Values you use to enable or disable Apple Pay Later for a specific transaction.
-- [struct PKAddressField](pkaddressfield.md)
+- [struct PKAddressField](./pkaddressfield.md)
   Billing or shipping address fields.
 
 

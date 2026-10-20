@@ -1,7 +1,8 @@
 # init(id:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an identifier where the local and stable IDs are identical.
 
@@ -19,6 +20,8 @@ Creates an identifier where the local and stable IDs are identical.
 ```swift
 init(id: LocalID)
 ```
+
+Available when `LocalID` conforms to `EntityIdentifierConvertible`, `LocalID` conforms to `Sendable`, and `LocalID` is `StableID`.
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # TvEpisode.Artworks.Artwork
 
 **Framework**: Apple TV Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The artwork related to this content.
 
@@ -10,7 +11,7 @@ The artwork related to this content.
 
 ## Declaration
 
-```swift
+```
 object TvEpisode.Artworks.Artwork
 ```
 

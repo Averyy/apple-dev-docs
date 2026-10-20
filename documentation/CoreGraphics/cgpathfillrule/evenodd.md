@@ -1,7 +1,8 @@
 # CGPathFillRule.evenOdd
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A rule that considers a region to be interior to a path based on the number of times it is enclosed by path elements.
 
@@ -26,7 +27,8 @@ This rule plots a ray from any region to be evaluated toward the bounds of the d
 
 ## See Also
 
-- [CGPathFillRule.winding](cgpathfillrule/winding.md)
+### Enumeration Cases
+- [CGPathFillRule.winding](./winding.md)
   A rule that considers a region to be interior to a path if the winding number for that region is nonzero.
 
 

@@ -1,7 +1,8 @@
 # errSecAddinLoadFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The add-in load operation failed.
 
@@ -18,6 +19,10 @@ The add-in load operation failed.
 
 ```swift
 var errSecAddinLoadFailed: OSStatus { get }
+```
+
+```c
+errSecAddinLoadFailed
 ```
 
 

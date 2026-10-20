@@ -1,7 +1,8 @@
 # MPSGraphExecutableScheduledHandler
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A notification when graph executable execution schedules.
 
@@ -17,6 +18,10 @@ A notification when graph executable execution schedules.
 
 ```swift
 typealias MPSGraphExecutableScheduledHandler = ([MPSGraphTensorData], (any Error)?) -> Void
+```
+
+```c
+typedef void (^)(NSArray<MPSGraphTensorData *> *, NSError *) MPSGraphExecutableScheduledHandler;
 ```
 
 ## Parameters

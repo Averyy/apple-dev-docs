@@ -1,7 +1,8 @@
 # MTRUnitTestingClusterTestSimpleArgumentResponseParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,28 +19,32 @@
 class MTRUnitTestingClusterTestSimpleArgumentResponseParams
 ```
 
+```objc
+@interface MTRUnitTestingClusterTestSimpleArgumentResponseParams : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(responseValue: [String : Any]) throws](mtrunittestingclustertestsimpleargumentresponseparams/init(responsevalue:).md)
+- [init(responseValue: [String : Any]) throws](./mtrunittestingclustertestsimpleargumentresponseparams/init%28responsevalue%29.md)
 ### Instance Properties
-- [var returnValue: NSNumber](mtrunittestingclustertestsimpleargumentresponseparams/returnvalue.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrunittestingclustertestsimpleargumentresponseparams/timedinvoketimeoutms.md)
+- [var returnValue: NSNumber](./mtrunittestingclustertestsimpleargumentresponseparams/returnvalue.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrunittestingclustertestsimpleargumentresponseparams/timedinvoketimeoutms.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRTestClusterClusterTestSimpleArgumentResponseParams](mtrtestclusterclustertestsimpleargumentresponseparams.md)
+- [MTRTestClusterClusterTestSimpleArgumentResponseParams](./mtrtestclusterclustertestsimpleargumentresponseparams.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

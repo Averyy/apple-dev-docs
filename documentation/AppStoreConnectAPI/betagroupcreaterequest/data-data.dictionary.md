@@ -1,7 +1,8 @@
 # BetaGroupCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,16 +11,16 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object BetaGroupCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaGroupCreateRequest.Data.Attributes](betagroupcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object BetaGroupCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that you set that describe the new beta group resource.
-- [object BetaGroupCreateRequest.Data.Relationships](betagroupcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object BetaGroupCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
@@ -27,6 +28,8 @@ object BetaGroupCreateRequest.Data
 - `attributes` (BetaGroupCreateRequest.Data.Attributes) *(required)*: The resource’s attributes.
 - `relationships` (BetaGroupCreateRequest.Data.Relationships) *(required)*: Navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `betaGroups`
 
 
 ---

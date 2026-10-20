@@ -1,7 +1,8 @@
 # unload()
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The instance method that unloads the embedding model.
 
@@ -20,9 +21,14 @@ The instance method that unloads the embedding model.
 func unload()
 ```
 
+```objc
+- (void) unload;
+```
+
 ## See Also
 
-- [func load() throws](nlcontextualembedding/load.md)
+### Loading and unloading assets
+- [func load() throws](./load%28%29.md)
   The instance method that loads the embedding model.
 
 

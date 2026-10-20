@@ -1,7 +1,8 @@
 # capacity
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of elements that the array can contain without allocating new storage.
 

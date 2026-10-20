@@ -1,7 +1,8 @@
 # backgroundEffect
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The blur effect to apply to the bar’s background.
 
@@ -19,17 +20,22 @@ The blur effect to apply to the bar’s background.
 var backgroundEffect: UIBlurEffect? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) UIBlurEffect * backgroundEffect;
+```
+
 #### Discussion
 
-The blur effect provides the base layer for the bar’s appearance, and it determines how much of the underlying content is visible. UIKit applies the [`backgroundColor`](uibarappearance/backgroundcolor.md) and [`backgroundImage`](uibarappearance/backgroundimage.md) on top of this effect.
+The blur effect provides the base layer for the bar’s appearance, and it determines how much of the underlying content is visible. UIKit applies the [`backgroundColor`](./backgroundcolor.md) and [`backgroundImage`](./backgroundimage.md) on top of this effect.
 
 ## See Also
 
-- [var backgroundColor: UIColor?](uibarappearance/backgroundcolor.md)
+### Configuring the background appearance
+- [var backgroundColor: UIColor?](./backgroundcolor.md)
   The background color of the bar.
-- [var backgroundImage: UIImage?](uibarappearance/backgroundimage.md)
+- [var backgroundImage: UIImage?](./backgroundimage.md)
   The image to display on top of the bar’s background color.
-- [var backgroundImageContentMode: UIView.ContentMode](uibarappearance/backgroundimagecontentmode.md)
+- [var backgroundImageContentMode: UIView.ContentMode](./backgroundimagecontentmode.md)
   The content mode to use when displaying the bar’s background image.
 
 

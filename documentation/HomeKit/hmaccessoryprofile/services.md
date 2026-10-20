@@ -1,7 +1,8 @@
 # services
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of services that represents this profile.
 
@@ -19,11 +20,16 @@ An array of services that represents this profile.
 var services: [HMService] { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSArray<HMService *> * services;
+```
+
 ## See Also
 
-- [var accessory: HMAccessory?](hmaccessoryprofile/accessory.md)
+### Getting information about a profile
+- [var accessory: HMAccessory?](./accessory.md)
   The accessory that implements this profile.
-- [var uniqueIdentifier: UUID](hmaccessoryprofile/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./uniqueidentifier.md)
   A unique identifier for the profile.
 
 

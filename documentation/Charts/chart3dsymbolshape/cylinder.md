@@ -1,7 +1,8 @@
 # cylinder
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Cylinder symbol.
 
@@ -17,6 +18,8 @@ Cylinder symbol.
 ```swift
 static var cylinder: BasicChart3DSymbolShape { get }
 ```
+
+Available when `Self` is `BasicChart3DSymbolShape`.
 
 
 ---

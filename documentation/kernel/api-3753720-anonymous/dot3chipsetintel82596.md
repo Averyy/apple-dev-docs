@@ -1,14 +1,15 @@
 # dot3ChipSetIntel82596
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 dot3ChipSetIntel82596 = 2
 ```
 

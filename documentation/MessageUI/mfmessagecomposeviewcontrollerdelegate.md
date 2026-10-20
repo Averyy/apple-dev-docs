@@ -1,7 +1,8 @@
 # MFMessageComposeViewControllerDelegate
 
 **Framework**: Message UI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for responding to user interactions with a message compose view controller.
 
@@ -17,26 +18,31 @@ An interface for responding to user interactions with a message compose view con
 protocol MFMessageComposeViewControllerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol MFMessageComposeViewControllerDelegate <NSObject>
+```
+
 #### Overview
 
-The [`MFMessageComposeViewControllerDelegate`](mfmessagecomposeviewcontrollerdelegate.md) protocol defines a single method that custom objects can implement to respond to updates from a message composition view (an instance of the  [`MFMessageComposeViewController`](mfmessagecomposeviewcontroller.md) class). Use the method of this protocol to respond to the end of the user composing an SMS message. The method includes information about whether the user chose to send or cancel the message, or whether the attempt to send it failed.
+The [`MFMessageComposeViewControllerDelegate`](./mfmessagecomposeviewcontrollerdelegate.md) protocol defines a single method that custom objects can implement to respond to updates from a message composition view (an instance of the  [`MFMessageComposeViewController`](./mfmessagecomposeviewcontroller.md) class). Use the method of this protocol to respond to the end of the user composing an SMS message. The method includes information about whether the user chose to send or cancel the message, or whether the attempt to send it failed.
 
 ## Topics
 
 ### Responding to the Message Completion
-- [func messageComposeViewController(MFMessageComposeViewController, didFinishWith: MessageComposeResult)](mfmessagecomposeviewcontrollerdelegate/messagecomposeviewcontroller(_:didfinishwith:).md)
+- [func messageComposeViewController(MFMessageComposeViewController, didFinishWith: MessageComposeResult)](./mfmessagecomposeviewcontrollerdelegate/messagecomposeviewcontroller%28_,didfinishwith%29.md)
   Tells the delegate that the user finished composing the message.
-- [enum MessageComposeResult](messagecomposeresult.md)
+- [enum MessageComposeResult](./messagecomposeresult.md)
   These constants describe the result of the message-composition interface.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var messageComposeDelegate: (any MFMessageComposeViewControllerDelegate)?](mfmessagecomposeviewcontroller/messagecomposedelegate.md)
+### Responding to the view controller dismissal
+- [var messageComposeDelegate: (any MFMessageComposeViewControllerDelegate)?](./mfmessagecomposeviewcontroller/messagecomposedelegate.md)
   The delegate to which message-related notifications should be sent.
 
 

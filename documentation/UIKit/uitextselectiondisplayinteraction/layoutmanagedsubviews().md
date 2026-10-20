@@ -1,7 +1,8 @@
 # layoutManagedSubviews()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads the selection from the text input view and lays out the selection-related views.
 
@@ -18,9 +19,14 @@ Loads the selection from the text input view and lays out the selection-related 
 func layoutManagedSubviews()
 ```
 
+```objc
+- (void) layoutManagedSubviews;
+```
+
 ## See Also
 
-- [func setNeedsSelectionUpdate()](uitextselectiondisplayinteraction/setneedsselectionupdate.md)
+### Reporting changes to the selection
+- [func setNeedsSelectionUpdate()](./setneedsselectionupdate%28%29.md)
   Tells the system to update the selection UI to match the current selection state.
 
 

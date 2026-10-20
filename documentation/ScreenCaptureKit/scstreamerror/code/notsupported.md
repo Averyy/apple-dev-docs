@@ -1,7 +1,8 @@
 # SCStreamError.Code.notSupported
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case notSupported
+```
+
+```c
+SCStreamErrorNotSupported
 ```
 
 

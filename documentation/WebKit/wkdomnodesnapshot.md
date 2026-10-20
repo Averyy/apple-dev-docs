@@ -1,7 +1,8 @@
 # WKDOMNodeSnapshot
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A `WKDOMNodeSnapshot` object contains a snapshot of a DOM node
 
@@ -16,6 +17,10 @@ A `WKDOMNodeSnapshot` object contains a snapshot of a DOM node
 
 ```swift
 class WKDOMNodeSnapshot
+```
+
+```objc
+@interface WKDOMNodeSnapshot : NSObject
 ```
 
 #### Overview
@@ -33,14 +38,14 @@ Unlike `WKJSHandle` - which keeps an actual JavaScript object alive in its origi
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

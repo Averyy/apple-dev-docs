@@ -1,6 +1,7 @@
 # Storefronts and Localization
 
-**Framework**: Apple Music API
+**Framework**: Apple Music API  
+**Role**: API Collection
 
 Pick a region-specific geographic location from which to retrieve catalog information, or retrieve information from the user’s personal library.
 
@@ -17,34 +18,35 @@ GET https://api.music.apple.com/v1/catalog/us/albums/310730204?l=es-MX
 ## Topics
 
 ### Requesting a Catalog Storefront
-- [Get a Storefront](get-a-storefront.md)
+- [Get a Storefront](./get-a-storefront.md)
   Fetch a single storefront by using its identifier.
-- [Get Multiple Storefronts](get-multiple-storefronts.md)
+- [Get Multiple Storefronts](./get-multiple-storefronts.md)
   Fetch one or more storefronts by using their identifiers.
-- [Get All Storefronts](get-all-storefronts.md)
+- [Get All Storefronts](./get-all-storefronts.md)
   Fetch all the storefronts in alphabetical order.
 ### Localization
-- [Get the best supported language for a storefront](get-the-best-supported-language-based-on-the-acceptlanguage.md)
+- [Get the best supported language for a storefront](./get-the-best-supported-language-based-on-the-acceptlanguage.md)
   Fetch the best supported language for a storefront from a list.
 ### Handling the Response
-- [object Storefronts](storefronts.md)
+- [object Storefronts](./storefronts.md)
   A resource object that represents a storefront, an Apple Music and iTunes Store territory that the content is available in.
 
 ## See Also
 
-- [Generating Developer Tokens](generating-developer-tokens.md)
+### Essentials
+- [Generating Developer Tokens](./generating-developer-tokens.md)
   Generate a developer token needed to make requests to Apple Music API.
-- [User Authentication for MusicKit](user-authentication-for-musickit.md)
+- [User Authentication for MusicKit](./user-authentication-for-musickit.md)
   Authenticate requests for user data using the Music User Token.
-- [Handling Requests and Responses](handling-requests-and-responses.md)
+- [Handling Requests and Responses](./handling-requests-and-responses.md)
   Write a request and handle responses from the API.
-- [Handling Resource Representation and Relationships](handling-resource-representation-and-relationships.md)
+- [Handling Resource Representation and Relationships](./handling-resource-representation-and-relationships.md)
   Fetch resources with extended attributes and included relationships and relationship views.
-- [Common Objects](common-objects.md)
+- [Common Objects](./common-objects.md)
   Understand the common JSON objects that framework responses contain.
-- [Managing Content Ratings, Alternate Versions, and Equivalencies](managing-content-ratings-alternate-versions-and-equivalencies.md)
+- [Managing Content Ratings, Alternate Versions, and Equivalencies](./managing-content-ratings-alternate-versions-and-equivalencies.md)
   Handle multiple and alternate versions of content.
-- [Fetching Resources by Page](fetching-resources-by-page.md)
+- [Fetching Resources by Page](./fetching-resources-by-page.md)
   Use pagination to fetch the next set of objects.
 
 

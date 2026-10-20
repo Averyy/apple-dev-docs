@@ -1,7 +1,8 @@
 # MPSCNNLossLabels
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that stores the per-element weight buffer used by loss and gradient loss kernels.
 
@@ -19,40 +20,45 @@ A class that stores the per-element weight buffer used by loss and gradient loss
 class MPSCNNLossLabels
 ```
 
+```objc
+@interface MPSCNNLossLabels : MPSState
+```
+
 ## Topics
 
 ### Initializers
-- [convenience init(device: any MTLDevice, labelsDescriptor: MPSCNNLossDataDescriptor)](mpscnnlosslabels/init(device:labelsdescriptor:).md)
-- [init(device: any MTLDevice, lossImageSize: MTLSize, labelsDescriptor: MPSCNNLossDataDescriptor, weightsDescriptor: MPSCNNLossDataDescriptor?)](mpscnnlosslabels/init(device:lossimagesize:labelsdescriptor:weightsdescriptor:).md)
-- [init(device: any MTLDevice, lossImageSize: MTLSize, labelsImage: MPSImage, weightsImage: MPSImage?)](mpscnnlosslabels/init(device:lossimagesize:labelsimage:weightsimage:).md)
+- [convenience init(device: any MTLDevice, labelsDescriptor: MPSCNNLossDataDescriptor)](./mpscnnlosslabels/init%28device,labelsdescriptor%29.md)
+- [init(device: any MTLDevice, lossImageSize: MTLSize, labelsDescriptor: MPSCNNLossDataDescriptor, weightsDescriptor: MPSCNNLossDataDescriptor?)](./mpscnnlosslabels/init%28device,lossimagesize,labelsdescriptor,weightsdescriptor%29.md)
+- [init(device: any MTLDevice, lossImageSize: MTLSize, labelsImage: MPSImage, weightsImage: MPSImage?)](./mpscnnlosslabels/init%28device,lossimagesize,labelsimage,weightsimage%29.md)
 ### Instance Methods
-- [func labelsImage() -> MPSImage](mpscnnlosslabels/labelsimage.md)
-- [func lossImage() -> MPSImage](mpscnnlosslabels/lossimage.md)
-- [func weightsImage() -> MPSImage](mpscnnlosslabels/weightsimage.md)
+- [func labelsImage() -> MPSImage](./mpscnnlosslabels/labelsimage%28%29.md)
+- [func lossImage() -> MPSImage](./mpscnnlosslabels/lossimage%28%29.md)
+- [func weightsImage() -> MPSImage](./mpscnnlosslabels/weightsimage%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSState](mpsstate.md)
+- [MPSState](./mpsstate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNLoss](mpscnnloss.md)
+### Loss Layers
+- [class MPSCNNLoss](./mpscnnloss.md)
   A kernel that computes the loss and loss gradient between specified predictions and labels.
-- [class MPSCNNLossDataDescriptor](mpscnnlossdatadescriptor.md)
+- [class MPSCNNLossDataDescriptor](./mpscnnlossdatadescriptor.md)
   An object that specifies properties used by a loss data descriptor.
-- [class MPSCNNLossDescriptor](mpscnnlossdescriptor.md)
+- [class MPSCNNLossDescriptor](./mpscnnlossdescriptor.md)
   An object that specifies properties used by a loss kernel.
-- [class MPSCNNYOLOLoss](mpscnnyololoss.md)
+- [class MPSCNNYOLOLoss](./mpscnnyololoss.md)
   A kernel that computes the YOLO loss and loss gradient between specified predictions and labels.
-- [class MPSCNNYOLOLossDescriptor](mpscnnyololossdescriptor.md)
+- [class MPSCNNYOLOLossDescriptor](./mpscnnyololossdescriptor.md)
   An object that specifies properties used by a YOLO loss kernel.
 
 

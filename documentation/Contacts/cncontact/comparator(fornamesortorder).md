@@ -1,7 +1,8 @@
 # comparator(forNameSortOrder:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a comparator to sort contacts with the specified order.
 
@@ -19,6 +20,10 @@ Returns a comparator to sort contacts with the specified order.
 class func comparator(forNameSortOrder sortOrder: CNContactSortOrder) -> Comparator
 ```
 
+```objc
++ (NSComparator) comparatorForNameSortOrder:(CNContactSortOrder) sortOrder;
+```
+
 #### Return Value
 
 A comparator to order contacts.
@@ -29,11 +34,12 @@ A comparator to order contacts.
 
 ## See Also
 
-- [class func descriptorForAllComparatorKeys() -> any CNKeyDescriptor](cncontact/descriptorforallcomparatorkeys.md)
+### Comparing Contacts
+- [class func descriptorForAllComparatorKeys() -> any CNKeyDescriptor](./descriptorforallcomparatorkeys%28%29.md)
   Fetches all the keys required for the contact sort comparator.
-- [func isUnifiedWithContact(withIdentifier: String) -> Bool](cncontact/isunifiedwithcontact(withidentifier:).md)
+- [func isUnifiedWithContact(withIdentifier: String) -> Bool](./isunifiedwithcontact%28withidentifier%29.md)
   Returns a Boolean indicating whether the current contact is a unified contact and includes a contact with the specified identifier.
-- [enum CNContactSortOrder](cncontactsortorder.md)
+- [enum CNContactSortOrder](../cncontactsortorder.md)
   Indicates the sorting order for contacts.
 
 

@@ -1,7 +1,8 @@
 # Target.PluginUsage.plugin(name:package:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies the use of a plug-in product in a package dependency.
 
@@ -21,7 +22,8 @@ case plugin(name: String, package: String?)
 
 ## See Also
 
-- [static func plugin(name: String) -> Target.PluginUsage](target/pluginusage/plugin(name:).md)
+### Creating a Plugin Usage
+- [static func plugin(name: String) -> Target.PluginUsage](./plugin%28name%29.md)
   Specifies use of a plugin target in the same package.
 
 

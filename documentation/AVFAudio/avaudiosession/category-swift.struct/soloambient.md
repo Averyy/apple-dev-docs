@@ -1,7 +1,8 @@
 # soloAmbient
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default audio session category.
 
@@ -19,25 +20,30 @@ The default audio session category.
 static let soloAmbient: AVAudioSession.Category
 ```
 
+```c
+extern AVAudioSessionCategory const AVAudioSessionCategorySoloAmbient;
+```
+
 #### Discussion
 
 Your audio is silenced by screen locking and by the Silent switch (called the *Ring/Silent switch* on iPhone).
 
-By default, using this category implies that your app’s audio is nonmixable—activating your session will interrupt any other audio sessions which are also nonmixable. To allow mixing, use the [`ambient`](avaudiosession/category-swift.struct/ambient.md) category instead.
+By default, using this category implies that your app’s audio is nonmixable—activating your session will interrupt any other audio sessions which are also nonmixable. To allow mixing, use the [`ambient`](./ambient.md) category instead.
 
 ## See Also
 
-- [static let ambient: AVAudioSession.Category](avaudiosession/category-swift.struct/ambient.md)
+### Getting standard categories
+- [static let ambient: AVAudioSession.Category](./ambient.md)
   The category for an app in which sound playback is nonprimary — that is, your app also works with the sound turned off.
-- [static let multiRoute: AVAudioSession.Category](avaudiosession/category-swift.struct/multiroute.md)
+- [static let multiRoute: AVAudioSession.Category](./multiroute.md)
   The category for routing distinct streams of audio data to different output devices at the same time.
-- [static let playAndRecord: AVAudioSession.Category](avaudiosession/category-swift.struct/playandrecord.md)
+- [static let playAndRecord: AVAudioSession.Category](./playandrecord.md)
   The category for recording (input) and playback (output) of audio, such as for a Voice over Internet Protocol (VoIP) app.
-- [static let playback: AVAudioSession.Category](avaudiosession/category-swift.struct/playback.md)
+- [static let playback: AVAudioSession.Category](./playback.md)
   The category for playing recorded music or other sounds that are central to the successful use of your app.
-- [static let record: AVAudioSession.Category](avaudiosession/category-swift.struct/record.md)
+- [static let record: AVAudioSession.Category](./record.md)
   The category for recording audio while also silencing playback audio.
-- [static let audioProcessing: AVAudioSession.Category](avaudiosession/category-swift.struct/audioprocessing.md)
+- [static let audioProcessing: AVAudioSession.Category](./audioprocessing.md)
   The category for using an audio hardware codec or signal processor while not playing or recording audio.
 
 

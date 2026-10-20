@@ -1,7 +1,8 @@
 # HandleChangeCurrentStreamFormat
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The system calls this virtual method when the stream’s format changes.
 
@@ -10,7 +11,7 @@ The system calls this virtual method when the stream’s format changes.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t HandleChangeCurrentStreamFormat(const IOUserVideoStreamBasicDescription *in_format);
 ```
 
@@ -28,9 +29,10 @@ The default implementation calls `SetCurrentStreamFormat()` and returns `kIORetu
 
 ## See Also
 
-- [HandleChangeStreamIsActive](iouservideostream/handlechangestreamisactive.md)
+### Managing stream changes
+- [HandleChangeStreamIsActive](./handlechangestreamisactive.md)
   The system calls this virtual method when the stream active state changes.
-- [DeviceSampleRateChanged](iouservideostream/devicesampleratechanged.md)
+- [DeviceSampleRateChanged](./devicesampleratechanged.md)
   Call to update stream formats when the owning video device changes sample rate.
 
 

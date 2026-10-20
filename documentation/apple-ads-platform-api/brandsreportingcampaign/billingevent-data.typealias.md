@@ -1,7 +1,8 @@
 # BrandsReportingCampaign.BillingEvent
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The billing event of the campaign at report time.
 
@@ -10,9 +11,14 @@ The billing event of the campaign at report time.
 
 ## Declaration
 
-```swift
+```
 string BrandsReportingCampaign.BillingEvent
 ```
+
+## Possible Values
+
+- `TAPS`: The campaign is charged per tap.
+- `IMPRESSIONS`: The campaign is charged per thousand impressions (CPM).
 
 #### Discussion
 
@@ -26,7 +32,7 @@ Brands campaigns can use either billing model, so check this field before compar
 }
 ```
 
-See [`ReportingBillingEvent`](reportingbillingevent.md) for additional context.
+See [`ReportingBillingEvent`](../reportingbillingevent.md) for additional context.
 
 
 ---

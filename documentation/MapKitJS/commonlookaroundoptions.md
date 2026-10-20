@@ -1,7 +1,8 @@
 # CommonLookAroundOptions
 
 **Framework**: MapKit JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Interface
 
 Options that control the behavior of Look Around views.
 
@@ -10,49 +11,50 @@ Options that control the behavior of Look Around views.
 
 ## Declaration
 
-```swift
+```
 interface CommonLookAroundOptions
 ```
 
 ## Topics
 
 ### Controlling Look Around behavior
-- [isNavigationEnabled](commonlookaroundoptions/isnavigationenabled.md)
+- [isNavigationEnabled](./commonlookaroundoptions/isnavigationenabled.md)
   A Boolean value that indicates whether someone can navigate inside the Look Around view.
-- [isScrollEnabled](commonlookaroundoptions/isscrollenabled.md)
+- [isScrollEnabled](./commonlookaroundoptions/isscrollenabled.md)
   A Boolean value that indicates whether someone can scroll the Look Around view.
-- [isZoomEnabled](commonlookaroundoptions/iszoomenabled.md)
+- [isZoomEnabled](./commonlookaroundoptions/iszoomenabled.md)
   A Boolean value that indicates whether someone can scroll the Look Around view.
-- [openDialog](commonlookaroundoptions/opendialog.md)
+- [openDialog](./commonlookaroundoptions/opendialog.md)
   A Boolean value that indicates whether someone can scroll the Look Around view.
-- [padding](commonlookaroundoptions/padding.md)
+- [padding](./commonlookaroundoptions/padding.md)
   The values that define content padding within the Look Around view frame.
-- [showsPointsOfInterest](commonlookaroundoptions/showspointsofinterest.md)
+- [showsPointsOfInterest](./commonlookaroundoptions/showspointsofinterest.md)
   A Boolean value that indicates whether the Look Around view display points of interest (POIs).
-- [showsRoadLabels](commonlookaroundoptions/showsroadlabels.md)
+- [showsRoadLabels](./commonlookaroundoptions/showsroadlabels.md)
   A Boolean value that indicates whether the Look Around view display road labels.
 
 ## Relationships
 
 ### Inherited By
-- [LookAroundOptions](lookaroundoptions.md)
-- [LookAroundPreviewOptions](lookaroundpreviewoptions.md)
+- [LookAroundOptions](./lookaroundoptions.md)
+- [LookAroundPreviewOptions](./lookaroundpreviewoptions.md)
 
 ## See Also
 
-- [class LookAround](lookaround.md)
+### Exploring at street level
+- [class LookAround](./lookaround.md)
   A view that allows someone to see a street level view of a place.
-- [interface LookAroundOptions](lookaroundoptions.md)
+- [interface LookAroundOptions](./lookaroundoptions.md)
   Options for initializing a LookAround view.
-- [class LookAroundPreview](lookaroundpreview.md)
+- [class LookAroundPreview](./lookaroundpreview.md)
   A class that renders a preview of a Look Around view.
-- [interface LookAroundPreviewOptions](lookaroundpreviewoptions.md)
+- [interface LookAroundPreviewOptions](./lookaroundpreviewoptions.md)
   Options for initializing a LookAroundPreview object.
-- [class LookAroundScene](lookaroundscene.md)
+- [class LookAroundScene](./lookaroundscene.md)
   Object that represents the current location of the view.
-- [class AbstractLookAround](abstractlookaround.md)
+- [class AbstractLookAround](./abstractlookaround.md)
   An abstract class that provides a common interface for Look Around views.
-- [lookAroundViews](mapkit/lookaroundviews.md)
+- [lookAroundViews](./mapkit/lookaroundviews.md)
   A list of all the Look Around objects that are currently active on a page.
 
 

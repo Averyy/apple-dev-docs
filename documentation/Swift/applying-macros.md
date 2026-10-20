@@ -1,6 +1,7 @@
 # Applying Macros
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Use macros to generate repetitive code at compile time.
 
@@ -12,7 +13,7 @@ Many libraries provide macros, including the Swift standard library and many fra
 
 Because macros generate Swift code, you use the same tools for development and debugging, regardless of whether your code uses macros.
 
-![A diagram showing an overview of macro expansion. On the left, a stylized representation of Swift code. On the right, the same code with several lines added by the macro.](/images/com.apple.Swift/macro-expansion@2x.png)
+![A diagram showing an overview of macro expansion. On the left, a stylized representation of Swift code. On the right, the same code with several lines added by the macro.](https://developer.apple.com/tutorials/images/com.apple.Swift/macro-expansion@2x.png)
 
 ##### Call a Macro
 
@@ -29,7 +30,7 @@ public final class MyObject {
 }
 ```
 
-A macro that’s attached to a declaration generates code and adds that code to the declaration. For example, the [`Observable()`](https://developer.apple.com/documentation/observation/observable()) macro in the code above adds additional members to the `MyObject` class so it implements the [`Observable`](https://developer.apple.com/documentation/observation/observable) protocol, and marks `MyObject` as conforming to `Observable`.
+A macro that’s attached to a declaration generates code and adds that code to the declaration. For example, the [`Observable()`](../Observation/observable%28%29.md) macro in the code above adds additional members to the `MyObject` class so it implements the [`Observable`](../Observation/observable.md) protocol, and marks `MyObject` as conforming to `Observable`.
 
 To call a macro without attaching it to a declaration, write a number sign (`#`) before the macro’s name and write any macro arguments after its name. This syntax is the same as `#if` and other compile-time operations. For example:
 
@@ -39,9 +40,9 @@ let messagePredicate = #Predicate<Message> { message in
 }
 ```
 
-A macro that isn’t attached to a declaration generates code and adds that code in the location where where you call the macro. For example, the `Predicate` macro in the code above creates an instance of the [`Predicate`](https://developer.apple.com/documentation/foundation/predicate) structure.
+A macro that isn’t attached to a declaration generates code and adds that code in the location where where you call the macro. For example, the `Predicate` macro in the code above creates an instance of the [`Predicate`](../Foundation/predicate.md) structure.
 
-For more information, see [`Macros`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/macros) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language).
+For more information, see [Macros](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/macros) in [The Swift Programming Language](https://docs.swift.org/swift-book/documentation/the-swift-programming-language).
 
 ##### Inspect an Expanded Macro
 

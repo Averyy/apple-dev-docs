@@ -1,7 +1,8 @@
 # defaultDigits
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Custom format style portraying the minimum number of digits that represents the numeric day of month.
 
@@ -22,15 +23,16 @@ static var defaultDigits: Date.FormatStyle.Symbol.Day { get }
 
 #### Discussion
 
-This style produces `1` for the  first day of the month and `18` for the eighteenth. To force two-digit display in all cases, use [`twoDigits`](date/formatstyle/symbol/day/twodigits.md).
+This style produces `1` for the  first day of the month and `18` for the eighteenth. To force two-digit display in all cases, use [`twoDigits`](./twodigits.md).
 
 ## See Also
 
-- [static var ordinalOfDayInMonth: Date.FormatStyle.Symbol.Day](date/formatstyle/symbol/day/ordinalofdayinmonth.md)
+### Modifying a Day Format
+- [static var ordinalOfDayInMonth: Date.FormatStyle.Symbol.Day](./ordinalofdayinmonth.md)
   Custom format style portraying the ordinal of the day in the month.
-- [static var twoDigits: Date.FormatStyle.Symbol.Day](date/formatstyle/symbol/day/twodigits.md)
+- [static var twoDigits: Date.FormatStyle.Symbol.Day](./twodigits.md)
   Custom format style portraying the two-digit numeric day of month, zero-padded if necessary.
-- [static func julianModified(minimumLength: Int) -> Date.FormatStyle.Symbol.Day](date/formatstyle/symbol/day/julianmodified(minimumlength:).md)
+- [static func julianModified(minimumLength: Int) -> Date.FormatStyle.Symbol.Day](./julianmodified%28minimumlength%29.md)
   Creates a custom day format style representing the modified Julian day.
 
 

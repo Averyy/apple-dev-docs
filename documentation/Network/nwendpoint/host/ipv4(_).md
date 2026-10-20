@@ -1,7 +1,8 @@
 # NWEndpoint.Host.ipv4(_:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A host represented as an IPv4 address.
 
@@ -22,9 +23,10 @@ case ipv4(IPv4Address)
 
 ## See Also
 
-- [case name(String, NWInterface?)](nwendpoint/host/name(_:_:).md)
+### Accessing Host Types
+- [case name(String, NWInterface?)](./name%28_,_%29.md)
   A host represented as a name.
-- [NWEndpoint.Host.ipv6(_:)](nwendpoint/host/ipv6(_:).md)
+- [NWEndpoint.Host.ipv6(_:)](./ipv6%28_%29.md)
   A host represented as an IPv6 address.
 
 

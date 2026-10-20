@@ -1,6 +1,7 @@
 # Handling Resource Representation and Relationships
 
-**Framework**: Apple Music API
+**Framework**: Apple Music API  
+**Role**: Article
 
 Fetch resources with extended attributes and included relationships and relationship views.
 
@@ -8,13 +9,13 @@ Fetch resources with extended attributes and included relationships and relation
 
 Resources are fetched with a default representation of attributes and relationships. Extend the default representation for a resource type to fetch additional attributes and include relationships and relationship views.
 
-> **Note**:  If any relationship or relationship view contains too many related resources, use pagination to fetch the next set of objects. See [`Fetching Resources by Page`](fetching-resources-by-page.md).
+> **Note**:  If any relationship or relationship view contains too many related resources, use pagination to fetch the next set of objects. See [Fetching Resources by Page](./fetching-resources-by-page.md).
 
 ##### Extend Resource Attributes
 
 The server will fetch a subset of the available attributes for a resource type by default. The attributes not fetched by default are known as *extended attributes*. You may specify a set of attribute names using the `extend` query parameter to request these additional attributes for a resource type.
 
-For example, when fetching an [`Albums`](albums.md) resource, you can request that the server add the extended `artistUrl` attribute to the album’s other attributes:
+For example, when fetching an [`Albums`](./albums.md) resource, you can request that the server add the extended `artistUrl` attribute to the album’s other attributes:
 
 ```other
 GET https://api.music.apple.com/v1/catalog/us/albums/310730204?extend=artistUrl
@@ -30,13 +31,13 @@ For example, these Album relationships have different default behaviors:
 - The `artists` relationship only includes resource identifiers for the artist or artists associated with the album and excludes the `attributes` member in each resource object. This relationship allows you to link to an artist from an album, although some artist attributes are also attributes of the album.
 - The response doesn’t include all relationships with a resource by default. For example, the response omits the `genres` relationship, though you can expressly add this relationship to the request. This seldom-used relationship is often superseded by `genreNames`, which appear as an attribute of an album.
 
-Use the `include` parameter to specify a set of relationships to include with the resource in the response. The value of the `include` parameter is a comma-separated list of the relationship names to include. For relationships that include resource objects by default, there’s no need to specify them in the list; they’re included along with the specified relationships. For example, when fetching an [`Artists`](artists.md) object, you can request the `playlists` objects using `include.`
+Use the `include` parameter to specify a set of relationships to include with the resource in the response. The value of the `include` parameter is a comma-separated list of the relationship names to include. For relationships that include resource objects by default, there’s no need to specify them in the list; they’re included along with the specified relationships. For example, when fetching an [`Artists`](./artists.md) object, you can request the `playlists` objects using `include.`
 
 ```other
 GET https://api.music.apple.com/v1/catalog/us/artists/462006?include=playlists
 ```
 
-You may request the related resources without their attributes for one or more relationships using the `relate` parameter. This is a way to quickly retrieve identifiers to related resources to fetch later. Modifying the example above, you can request related playlists resource identifiers for inclusion when fetching an [`Artists`](artists.md) object.
+You may request the related resources without their attributes for one or more relationships using the `relate` parameter. This is a way to quickly retrieve identifiers to related resources to fetch later. Modifying the example above, you can request related playlists resource identifiers for inclusion when fetching an [`Artists`](./artists.md) object.
 
 ```other
 GET https://api.music.apple.com/v1/catalog/us/artists/462006?relate=playlists
@@ -44,7 +45,7 @@ GET https://api.music.apple.com/v1/catalog/us/artists/462006?relate=playlists
 
 ##### Include Resource Relationship Views
 
-The response never includes relationship views with a resource by default. Use the `views` parameter to specify a set of relationship views to include with the resource in the response. The value of the `views` parameter is a comma-separated list of the relationship view names to include. For example, when fetching an [`Albums`](albums.md) object, you can request the `other-versions` relationship view using `views.`
+The response never includes relationship views with a resource by default. Use the `views` parameter to specify a set of relationship views to include with the resource in the response. The value of the `views` parameter is a comma-separated list of the relationship view names to include. For example, when fetching an [`Albums`](./albums.md) object, you can request the `other-versions` relationship view using `views.`
 
 ```other
 GET https://api.music.apple.com/v1/catalog/us/albums/310730204?views=other-versions
@@ -104,19 +105,20 @@ GET https://api.music.apple.com/v1/catalog/us/artists/462006/view/featured-playl
 
 ## See Also
 
-- [Generating Developer Tokens](generating-developer-tokens.md)
+### Essentials
+- [Generating Developer Tokens](./generating-developer-tokens.md)
   Generate a developer token needed to make requests to Apple Music API.
-- [User Authentication for MusicKit](user-authentication-for-musickit.md)
+- [User Authentication for MusicKit](./user-authentication-for-musickit.md)
   Authenticate requests for user data using the Music User Token.
-- [Handling Requests and Responses](handling-requests-and-responses.md)
+- [Handling Requests and Responses](./handling-requests-and-responses.md)
   Write a request and handle responses from the API.
-- [Storefronts and Localization](storefronts-and-localization.md)
+- [Storefronts and Localization](./storefronts-and-localization.md)
   Pick a region-specific geographic location from which to retrieve catalog information, or retrieve information from the user’s personal library.
-- [Common Objects](common-objects.md)
+- [Common Objects](./common-objects.md)
   Understand the common JSON objects that framework responses contain.
-- [Managing Content Ratings, Alternate Versions, and Equivalencies](managing-content-ratings-alternate-versions-and-equivalencies.md)
+- [Managing Content Ratings, Alternate Versions, and Equivalencies](./managing-content-ratings-alternate-versions-and-equivalencies.md)
   Handle multiple and alternate versions of content.
-- [Fetching Resources by Page](fetching-resources-by-page.md)
+- [Fetching Resources by Page](./fetching-resources-by-page.md)
   Use pagination to fetch the next set of objects.
 
 

@@ -1,16 +1,17 @@
 # ExpressibleByStringInterpolation Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(stringInterpolation: DefaultStringInterpolation)](string/init(stringinterpolation:).md)
+- [init(stringInterpolation: DefaultStringInterpolation)](./init%28stringinterpolation%29.md)
   Creates a new instance from an interpolated string literal.
-- [init(stringInterpolation: DefaultStringInterpolation)](string/init(stringinterpolation:)-62d9.md)
+- [init(stringInterpolation: DefaultStringInterpolation)](./init%28stringinterpolation%29-62d9.md)
   Creates a new instance from an interpolated string literal.
 ### Type Aliases
-- [typealias StringInterpolation](string/stringinterpolation.md)
+- [typealias StringInterpolation](./stringinterpolation.md)
   The type each segment of a string literal containing interpolations should be appended to.
 
 

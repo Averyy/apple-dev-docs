@@ -1,7 +1,8 @@
 # moveDirection
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Move direction controller was moving (unit vector). In physics space.
 
@@ -11,7 +12,7 @@ Move direction controller was moving (unit vector). In physics space.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

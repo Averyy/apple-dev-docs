@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core Text  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Converts a UIKit text alignment constant value to the matching constant value that Core Text uses.
 

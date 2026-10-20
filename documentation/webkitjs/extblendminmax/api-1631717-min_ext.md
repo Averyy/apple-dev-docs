@@ -9,13 +9,14 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned long MIN_EXT;
 ```
 
 ## See Also
 
-- [MAX_EXT](extblendminmax/1634499-max_ext.md)
+### Miscellaneous
+- [MAX_EXT](./api-1634499-max_ext.md)
 
 
 ---

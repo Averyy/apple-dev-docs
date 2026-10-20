@@ -1,7 +1,8 @@
 # hairColor
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The mobile driver’s license holder’s hair color on record with the issuer.
 

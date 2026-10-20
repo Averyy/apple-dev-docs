@@ -1,7 +1,8 @@
 # applied(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Predicts human body action periods from an array of poses.
 
@@ -30,7 +31,8 @@ An async sequence of predictions.
 
 ## See Also
 
-- [HumanBodyActionPeriodPredictor.Prediction](humanbodyactionperiodpredictor/prediction.md)
+### Performing the transformation
+- [HumanBodyActionPeriodPredictor.Prediction](./prediction.md)
   A human body action period prediction.
 
 

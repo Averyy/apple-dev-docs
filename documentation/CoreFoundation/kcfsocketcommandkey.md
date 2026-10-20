@@ -1,18 +1,19 @@
 # kCFSocketCommandKey
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Not used.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,19 +21,24 @@ Not used.
 let kCFSocketCommandKey: CFString!
 ```
 
+```c
+extern CFStringRef const kCFSocketCommandKey;
+```
+
 ## See Also
 
-- [let kCFSocketNameKey: CFString!](kcfsocketnamekey.md)
+### Constants
+- [let kCFSocketNameKey: CFString!](./kcfsocketnamekey.md)
   Not used.
-- [let kCFSocketValueKey: CFString!](kcfsocketvaluekey.md)
+- [let kCFSocketValueKey: CFString!](./kcfsocketvaluekey.md)
   Not used.
-- [let kCFSocketResultKey: CFString!](kcfsocketresultkey.md)
+- [let kCFSocketResultKey: CFString!](./kcfsocketresultkey.md)
   Not used.
-- [let kCFSocketErrorKey: CFString!](kcfsocketerrorkey.md)
+- [let kCFSocketErrorKey: CFString!](./kcfsocketerrorkey.md)
   Not used.
-- [let kCFSocketRegisterCommand: CFString!](kcfsocketregistercommand.md)
+- [let kCFSocketRegisterCommand: CFString!](./kcfsocketregistercommand.md)
   Not used.
-- [let kCFSocketRetrieveCommand: CFString!](kcfsocketretrievecommand.md)
+- [let kCFSocketRetrieveCommand: CFString!](./kcfsocketretrievecommand.md)
   Not used.
 
 

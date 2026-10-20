@@ -1,14 +1,15 @@
 # vm_inherit_ut
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef vm_inherit_t vm_inherit_ut;
 ```
 

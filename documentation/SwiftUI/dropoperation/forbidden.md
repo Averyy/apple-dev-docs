@@ -1,7 +1,8 @@
 # DropOperation.forbidden
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The drop activity is not allowed at this time or location.
 
@@ -20,11 +21,12 @@ case forbidden
 
 ## See Also
 
-- [DropOperation.cancel](dropoperation/cancel.md)
+### Getting operation types
+- [DropOperation.cancel](./cancel.md)
   Cancel the drag operation and transfer no data.
-- [DropOperation.copy](dropoperation/copy.md)
+- [DropOperation.copy](./copy.md)
   Copy the data to the modified view.
-- [DropOperation.move](dropoperation/move.md)
+- [DropOperation.move](./move.md)
   Move the data represented by the drag items instead of copying it.
 
 

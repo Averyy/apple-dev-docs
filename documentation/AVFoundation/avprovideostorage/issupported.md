@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Whether Pro Video Storage is supported in its current configuration.
 
@@ -18,13 +19,18 @@ Whether Pro Video Storage is supported in its current configuration.
 class var isSupported: Bool { get }
 ```
 
+```objc
+@property (class, readonly, getter=isSupported) BOOL supported;
+```
+
 #### Return Value
 
 `YES` if the device and OS support Pro Video Storage functionality; otherwise, `NO`.
 
 ## See Also
 
-- [class var shared: AVProVideoStorage?](avprovideostorage/shared.md)
+### Getting the shared storage
+- [class var shared: AVProVideoStorage?](./shared.md)
   Returns the singleton instance for Pro Video Storage.
 
 

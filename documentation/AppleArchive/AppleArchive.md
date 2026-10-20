@@ -1,7 +1,8 @@
 # Apple Archive
 
 **Framework**: Apple Archive  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Perform multithreaded lossless compression of directories, files, and data.
 
@@ -26,51 +27,52 @@ Apple Archive provides fast compression that includes file attributes, such as, 
 ## Topics
 
 ### Apple Archive essentials
-- [Compressing single files](../accelerate/compressing-single-files.md)
+- [Compressing single files](../Accelerate/compressing-single-files.md)
   Compress a single file and store the result on the file system.
-- [Decompressing single files](../accelerate/decompressing-single-files.md)
+- [Decompressing single files](../Accelerate/decompressing-single-files.md)
   Recreate a single file from a compressed file.
-- [Compressing file system directories](../accelerate/compressing-file-system-directories.md)
+- [Compressing file system directories](../Accelerate/compressing-file-system-directories.md)
   Compress the contents of an entire directory and store the result on the file system.
-- [Decompressing and extracting an archived directory](../accelerate/decompressing-and-extracting-an-archived-directory.md)
+- [Decompressing and extracting an archived directory](../Accelerate/decompressing-and-extracting-an-archived-directory.md)
   Recreate an entire file system directory from an archive file.
-- [Compressing and saving a string to the file system](../accelerate/compressing-and-saving-a-string-to-the-file-system.md)
+- [Compressing and saving a string to the file system](../Accelerate/compressing-and-saving-a-string-to-the-file-system.md)
   Compress the contents of a Unicode string and store the result on the file system.
-- [Decompressing and parsing an archived string](../accelerate/decompressing-and-parsing-an-archived-string.md)
+- [Decompressing and parsing an archived string](../Accelerate/decompressing-and-parsing-an-archived-string.md)
   Recreate a string from an archive file.
 ### Apple Encrypted Archive essentials
-- [Encrypting and Decrypting a String](encrypting-and-decrypting-a-string.md)
+- [Encrypting and Decrypting a String](./encrypting-and-decrypting-a-string.md)
   Encrypt the contents of a string and save the result to the file system, then decrypt and recreate the string from the archive file using Apple Encrypted Archive.
-- [Encrypting and Decrypting a Single File](encrypting-and-decrypting-a-single-file.md)
+- [Encrypting and Decrypting a Single File](./encrypting-and-decrypting-a-single-file.md)
   Encrypt a single file and save the result to the file system, then decrypt and recreate the original file from the archive file using Apple Encrypted Archive.
-- [Encrypting and Decrypting Directories](encrypting-and-decrypting-directories.md)
+- [Encrypting and Decrypting Directories](./encrypting-and-decrypting-directories.md)
   Compress and encrypt the contents of an entire directory or decompress and decrypt an archived directory  using Apple Encrypted Archive.
-- [class ArchiveEncryptionContext](archiveencryptioncontext.md)
+- [class ArchiveEncryptionContext](./archiveencryptioncontext.md)
   An object that encapsulates all parameters, keys, and data necessary to open an encrypted archive for both encryption and decryption streams.
 ### Apple Archive headers
-- [class ArchiveHeader](archiveheader.md)
+- [class ArchiveHeader](./archiveheader.md)
   An AppleArchive entry header.
 ### Apple Archive streams
-- [protocol ArchiveStreamProtocol](archivestreamprotocol.md)
+- [protocol ArchiveStreamProtocol](./archivestreamprotocol.md)
   A set of methods that defines the interface for using an archive stream that reads from and writes to data blobs.
-- [class ArchiveStream](archivestream.md)
+- [class ArchiveStream](./archivestream.md)
   An archive stream that reads from and writes to data blobs
-- [protocol ArchiveByteStreamProtocol](archivebytestreamprotocol.md)
+- [protocol ArchiveByteStreamProtocol](./archivebytestreamprotocol.md)
   A set of methods that defines the interface for using an archive stream that reads from and writes to buffers.
-- [class ArchiveByteStream](archivebytestream.md)
+- [class ArchiveByteStream](./archivebytestream.md)
   An archive stream that reads from and writes to buffers.
 ### Apple Archive errors
-- [enum ArchiveError](archiveerror.md)
+- [enum ArchiveError](./archiveerror.md)
   Error codes for AppleArchive.
 ### Constants
-- [var APPLE_ARCHIVE_API_VERSION: Int32](apple_archive_api_version.md)
+- [var APPLE_ARCHIVE_API_VERSION: Int32](./apple_archive_api_version.md)
   The version of the framework at compile time.
 ### Reference
-- [Apple Archive structures](apple-archive-structures.md)
+- [Apple Archive structures](./apple-archive-structures.md)
 
 ## See Also
 
-- [About Apple File System](../foundation/about-apple-file-system.md)
+### Related Documentation
+- [About Apple File System](../Foundation/about-apple-file-system.md)
   Use high-level APIs to get the most out of Apple File System.
 
 

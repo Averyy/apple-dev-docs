@@ -1,7 +1,8 @@
 # playerLayer
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layer that displays the video content.
 
@@ -17,6 +18,10 @@ The layer that displays the video content.
 
 ```swift
 var playerLayer: AVPlayerLayer { get }
+```
+
+```objc
+@property (nonatomic, readonly) AVPlayerLayer * playerLayer;
 ```
 
 

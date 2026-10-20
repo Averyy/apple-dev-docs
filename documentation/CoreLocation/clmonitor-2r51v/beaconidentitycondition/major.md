@@ -1,7 +1,8 @@
 # major
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -16,8 +17,9 @@ let major: UInt16?
 
 ## See Also
 
-- [let minor: UInt16?](clmonitor-2r51v/beaconidentitycondition/minor.md)
-- [let uuid: UUID](clmonitor-2r51v/beaconidentitycondition/uuid.md)
+### Instance Properties
+- [let minor: UInt16?](./minor.md)
+- [let uuid: UUID](./uuid.md)
 
 
 ---

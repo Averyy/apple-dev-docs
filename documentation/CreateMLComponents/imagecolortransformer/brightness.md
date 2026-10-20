@@ -1,7 +1,8 @@
 # brightness
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The brightness adjustment, between 0.0 and 1.0.
 
@@ -21,11 +22,12 @@ var brightness: Float?
 
 ## See Also
 
-- [var contrast: Float?](imagecolortransformer/contrast.md)
+### Getting the properties
+- [var contrast: Float?](./contrast.md)
   The contrast adjustment, between 0.0 and 1.0.
-- [var hue: Float?](imagecolortransformer/hue.md)
+- [var hue: Float?](./hue.md)
   The hue adjustment, between 0.0 and 1.0.
-- [var saturation: Float?](imagecolortransformer/saturation.md)
+- [var saturation: Float?](./saturation.md)
   The saturation adjustment, between 0.0 and 1.0.
 
 

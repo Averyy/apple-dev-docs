@@ -1,23 +1,28 @@
 # kMIDIThruConnection_MaxEndpoints
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The maximum number of endpoints for this connection.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var kMIDIThruConnection_MaxEndpoints: Int { get }
+```
+
+```c
+kMIDIThruConnection_MaxEndpoints
 ```
 
 

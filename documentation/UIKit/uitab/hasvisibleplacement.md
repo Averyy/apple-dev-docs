@@ -1,7 +1,8 @@
 # hasVisiblePlacement
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines if the tab has a visible placement. Returns YES if the tab is visible in a tab bar that supports different tab placements. Otherwise returns NO.
 
@@ -16,6 +17,10 @@ Determines if the tab has a visible placement. Returns YES if the tab is visible
 
 ```swift
 var hasVisiblePlacement: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) BOOL hasVisiblePlacement;
 ```
 
 

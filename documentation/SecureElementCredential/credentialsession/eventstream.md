@@ -1,7 +1,8 @@
 # eventStream
 
 **Framework**: SecureElementCredential  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous stream of session events.
 
@@ -27,7 +28,8 @@ for await event in session.eventStream {
 
 ## See Also
 
-- [CredentialSession.Event](credentialsession/event.md)
+### Handling session events
+- [CredentialSession.Event](./event.md)
   Events produced by a credential session, such as connectivity events and errors.
 
 

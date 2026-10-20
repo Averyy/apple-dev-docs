@@ -1,7 +1,8 @@
 # file
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A schema file that contains text-based schema.
 
@@ -10,7 +11,7 @@ A schema file that contains text-based schema.
 
 ## Declaration
 
-```swift
+```
 attribute File file;
 ```
 

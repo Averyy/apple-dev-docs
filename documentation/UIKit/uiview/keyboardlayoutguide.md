@@ -1,7 +1,8 @@
 # keyboardLayoutGuide
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A layout guide that tracks the keyboard’s position in your app’s layout.
 
@@ -17,11 +18,16 @@ A layout guide that tracks the keyboard’s position in your app’s layout.
 var keyboardLayoutGuide: UIKeyboardLayoutGuide { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UIKeyboardLayoutGuide * keyboardLayoutGuide;
+```
+
 ## See Also
 
-- [class UIKeyboardLayoutGuide](uikeyboardlayoutguide.md)
+### Handling keyboard layout
+- [class UIKeyboardLayoutGuide](../uikeyboardlayoutguide.md)
   A layout guide that represents the space the keyboard occupies in your app’s layout.
-- [class UITrackingLayoutGuide](uitrackinglayoutguide.md)
+- [class UITrackingLayoutGuide](../uitrackinglayoutguide.md)
   A layout guide that automatically activates and deactivates layout constraints depending on its proximity to edges.
 
 

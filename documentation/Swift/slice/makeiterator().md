@@ -1,7 +1,8 @@
 # makeIterator()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an iterator over the elements of the collection.
 
@@ -19,6 +20,8 @@ Returns an iterator over the elements of the collection.
 ```swift
 func makeIterator() -> IndexingIterator<Self>
 ```
+
+Available when `Iterator` is `IndexingIterator<Self>`.
 
 
 ---

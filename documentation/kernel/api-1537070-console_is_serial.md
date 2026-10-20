@@ -1,14 +1,15 @@
 # console_is_serial
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 boolean_t console_is_serial(void);
 ```
 

@@ -1,7 +1,8 @@
 # colorSpace
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color space of the screen.
 
@@ -14,24 +15,29 @@ The color space of the screen.
 var colorSpace: NSColorSpace? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSColorSpace * colorSpace;
+```
+
 ## See Also
 
-- [var depth: NSWindow.Depth](nsscreen/depth.md)
+### Getting Screen Information
+- [var depth: NSWindow.Depth](./depth.md)
   The current bit depth and colorspace information of the screen.
-- [var frame: NSRect](nsscreen/frame.md)
+- [var frame: NSRect](./frame.md)
   The dimensions and location of the screen.
-- [var supportedWindowDepths: UnsafePointer<NSWindow.Depth>](nsscreen/supportedwindowdepths.md)
+- [var supportedWindowDepths: UnsafePointer<NSWindow.Depth>](./supportedwindowdepths.md)
   A zero-terminated array of the window depths supported by the screen.
-- [var deviceDescription: [NSDeviceDescriptionKey : Any]](nsscreen/devicedescription.md)
+- [var deviceDescription: [NSDeviceDescriptionKey : Any]](./devicedescription.md)
   The device dictionary for the screen.
-- [struct NSDeviceDescriptionKey](nsdevicedescriptionkey.md)
+- [struct NSDeviceDescriptionKey](../nsdevicedescriptionkey.md)
   These constants are the keys for device description dictionaries.
-- [var localizedName: String](nsscreen/localizedname.md)
+- [var localizedName: String](./localizedname.md)
   The localized name of the display.
-- [func canRepresent(NSDisplayGamut) -> Bool](nsscreen/canrepresent(_:).md)
+- [func canRepresent(NSDisplayGamut) -> Bool](./canrepresent%28_%29.md)
   A Boolean value indicating whether the color space of the screen is capable of representing the specified display gamut.
-- [enum NSDisplayGamut](nsdisplaygamut.md)
-- [class var screensHaveSeparateSpaces: Bool](nsscreen/screenshaveseparatespaces.md)
+- [enum NSDisplayGamut](../nsdisplaygamut.md)
+- [class var screensHaveSeparateSpaces: Bool](./screenshaveseparatespaces.md)
   Returns a Boolean value indicating whether each screen can have its own set of spaces.
 
 

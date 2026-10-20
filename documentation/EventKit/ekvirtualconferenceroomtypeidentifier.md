@@ -1,7 +1,8 @@
 # EKVirtualConferenceRoomTypeIdentifier
 
 **Framework**: EventKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type for a room type identifier.
 
@@ -19,11 +20,16 @@ The type for a room type identifier.
 typealias EKVirtualConferenceRoomTypeIdentifier = String
 ```
 
+```c
+typedef NSString * EKVirtualConferenceRoomTypeIdentifier;
+```
+
 ## See Also
 
-- [var title: String](ekvirtualconferenceroomtypedescriptor/title.md)
+### Configuring Room Type Descriptors
+- [var title: String](./ekvirtualconferenceroomtypedescriptor/title.md)
   The user-visible name of a room where virtual conferences take place, such as Personal Room or Team Room.
-- [var identifier: EKVirtualConferenceRoomTypeIdentifier](ekvirtualconferenceroomtypedescriptor/identifier.md)
+- [var identifier: EKVirtualConferenceRoomTypeIdentifier](./ekvirtualconferenceroomtypedescriptor/identifier.md)
   A unique string you choose that identifies the room.
 
 

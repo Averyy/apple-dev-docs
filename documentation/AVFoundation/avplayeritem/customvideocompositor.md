@@ -1,7 +1,8 @@
 # customVideoCompositor
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom video compositor.
 
@@ -20,19 +21,24 @@ nonisolated
 var customVideoCompositor: (any AVVideoCompositing)? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id<AVVideoCompositing> customVideoCompositor;
+```
+
 #### Discussion
 
-The custom video compositor instance that is used during image generation is accessible via this property after the value of [`videoComposition`](avplayeritem/videocomposition.md) is set to an [`AVVideoComposition`](avvideocomposition.md) instance that specifies a custom video compositor class. Any additional communication between the application and that instance of the custom video compositor, if any is required for configuration or other purposes, can only occur once that has happened.
+The custom video compositor instance that is used during image generation is accessible via this property after the value of [`videoComposition`](./videocomposition.md) is set to an [`AVVideoComposition`](../avvideocomposition.md) instance that specifies a custom video compositor class. Any additional communication between the application and that instance of the custom video compositor, if any is required for configuration or other purposes, can only occur once that has happened.
 
-If the value of [`videoComposition`](avplayeritem/videocomposition.md) is changed from an [`AVVideoComposition`](avvideocomposition.md) that specifies a custom video compositor class to another instance of [`AVVideoComposition`](avvideocomposition.md) that specifies the same custom video compositor class, the instance of the custom video compositor that was previously created will receive the [`renderContextChanged(_:)`](avvideocompositing/rendercontextchanged(_:).md) message and remain in use for subsequent image generation.
+If the value of [`videoComposition`](./videocomposition.md) is changed from an [`AVVideoComposition`](../avvideocomposition.md) that specifies a custom video compositor class to another instance of [`AVVideoComposition`](../avvideocomposition.md) that specifies the same custom video compositor class, the instance of the custom video compositor that was previously created will receive the [`renderContextChanged(_:)`](../avvideocompositing/rendercontextchanged%28_%29.md) message and remain in use for subsequent image generation.
 
 This property is `nil` if there is no video compositor, or if the internal video compositor is in use.
 
 ## See Also
 
-- [var videoComposition: AVVideoComposition?](avplayeritem/videocomposition.md)
+### Configuring video compositing
+- [var videoComposition: AVVideoComposition?](./videocomposition.md)
   The video composition settings to be applied during playback.
-- [var seekingWaitsForVideoCompositionRendering: Bool](avplayeritem/seekingwaitsforvideocompositionrendering.md)
+- [var seekingWaitsForVideoCompositionRendering: Bool](./seekingwaitsforvideocompositionrendering.md)
   A Boolean value that indicates whether the item’s timing follows the displayed video frame when seeking with a video composition.
 
 

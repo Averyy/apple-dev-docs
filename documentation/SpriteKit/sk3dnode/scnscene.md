@@ -1,7 +1,8 @@
 # scnScene
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The SceneKit scene to render.
 
@@ -10,7 +11,7 @@ The SceneKit scene to render.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ The SceneKit scene to render.
 var scnScene: SCNScene? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) SCNScene * scnScene;
+```
+
 ## See Also
 
-- [var viewportSize: CGSize](sk3dnode/viewportsize.md)
+### Configuring a 3D Node
+- [var viewportSize: CGSize](./viewportsize.md)
   The size of the image rendered by the node.
-- [var pointOfView: SCNNode?](sk3dnode/pointofview.md)
+- [var pointOfView: SCNNode?](./pointofview.md)
   The Scene Kit node from which the scene’s contents are viewed when rendered.
-- [var autoenablesDefaultLighting: Bool](sk3dnode/autoenablesdefaultlighting.md)
+- [var autoenablesDefaultLighting: Bool](./autoenablesdefaultlighting.md)
   A Boolean value that determines whether Scene Kit automatically adds lights to a scene.
 
 

@@ -1,14 +1,15 @@
 # ASAccessoryEventType.accessoryDiscovered
 
 **Framework**: AccessorySetupKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session discovered an accessory.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,13 +17,17 @@ The session discovered an accessory.
 case accessoryDiscovered
 ```
 
+```c
+ASAccessoryEventTypeAccessoryDiscovered
+```
+
 ## Mentions
 
-- [Discovering and configuring accessories](discovering-and-configuring-accessories.md)
+- [Discovering and configuring accessories](../discovering-and-configuring-accessories.md)
 
 #### Discussion
 
-Your app only receives this event if your picker uses the [`filterDiscoveryResults`](aspickerdisplaysettings/options-swift.struct/filterdiscoveryresults.md) option.
+Your app only receives this event if your picker uses the [`filterDiscoveryResults`](../aspickerdisplaysettings/options-swift.struct/filterdiscoveryresults.md) option.
 
 
 ---

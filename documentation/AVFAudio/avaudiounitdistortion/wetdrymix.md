@@ -1,7 +1,8 @@
 # wetDryMix
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The blend of the distorted and dry signals.
 
@@ -19,13 +20,18 @@ The blend of the distorted and dry signals.
 var wetDryMix: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float wetDryMix;
+```
+
 #### Discussion
 
 You specify the blend as a percentage. The default value is `50%`. The valid range is `0%` through `100%`, where `0` represents all dry.
 
 ## See Also
 
-- [var preGain: Float](avaudiounitdistortion/pregain.md)
+### Adjusting gain and mix
+- [var preGain: Float](./pregain.md)
   The gain that the audio unit applies to the signal before distortion, in decibels.
 
 

@@ -1,7 +1,8 @@
 # ControlPushInfo
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains information about the push token of a user-configured control.
 
@@ -21,14 +22,15 @@ struct ControlPushInfo
 ## Topics
 
 ### Instance Properties
-- [let token: Data](controlpushinfo/token.md)
+- [let token: Data](./controlpushinfo/token.md)
   A unique push token that may be used to deliver updates for this control.
 
 ## See Also
 
-- [Updating controls locally and remotely](updating-controls-locally-and-remotely.md)
+### Updates
+- [Updating controls locally and remotely](./updating-controls-locally-and-remotely.md)
   Update and reload controls from your app or using push notifications.
-- [protocol ControlPushHandler](controlpushhandler.md)
+- [protocol ControlPushHandler](./controlpushhandler.md)
   A type that can receive push information about user-configured controls.
 
 

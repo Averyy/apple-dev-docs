@@ -1,12 +1,15 @@
 # init(rawValue:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Metal device notification name from a string.
 
 **Availability**:
-- macOS 10.13+
+- macOS 10.13+ - Deprecated in 27.0
+
+> **Deprecated**: Device notifications are not applicable on Apple Silicon
 
 ## Declaration
 
@@ -24,11 +27,12 @@ Use this type’s static properties instead of this initializer.
 
 ## See Also
 
-- [static let wasAdded: MTLDeviceNotificationName](mtldevicenotificationname/wasadded.md)
+### Creating a notification name
+- [static let wasAdded: MTLDeviceNotificationName](./wasadded.md)
   A notification that Metal sends to observers when the system adds a GPU device.
-- [static let removalRequested: MTLDeviceNotificationName](mtldevicenotificationname/removalrequested.md)
+- [static let removalRequested: MTLDeviceNotificationName](./removalrequested.md)
   A notification that Metal sends to observers when a person requests to remove a GPU device from the system.
-- [static let wasRemoved: MTLDeviceNotificationName](mtldevicenotificationname/wasremoved.md)
+- [static let wasRemoved: MTLDeviceNotificationName](./wasremoved.md)
   A notification that Metal sends to observers when the system removes a GPU device.
 
 

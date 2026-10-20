@@ -1,7 +1,8 @@
 # transferFunction
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The transfer characteristic for the image buffer.
 

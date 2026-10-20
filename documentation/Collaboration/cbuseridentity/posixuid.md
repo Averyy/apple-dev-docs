@@ -1,7 +1,8 @@
 # posixUID
 
 **Framework**: Collaboration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the POSIX UID of the identity.
 
@@ -14,6 +15,10 @@ Returns the POSIX UID of the identity.
 var posixUID: uid_t { get }
 ```
 
+```objc
+@property (nonatomic, readonly) uid_t posixUID;
+```
+
 #### Return Value
 
 The POSIX UID of the identity.
@@ -24,7 +29,8 @@ The POSIX UID is a integer that can identify a user within an identity authority
 
 ## See Also
 
-- [init?(posixUID: uid_t, authority: CBIdentityAuthority)](cbuseridentity/init(posixuid:authority:).md)
+### Using UIDs
+- [init?(posixUID: uid_t, authority: CBIdentityAuthority)](./init%28posixuid,authority%29.md)
   Returns the user identity with the given POSIX UID in the specified identity authority.
 
 

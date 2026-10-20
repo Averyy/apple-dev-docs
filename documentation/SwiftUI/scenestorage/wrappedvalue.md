@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying value referenced by the state variable.
 
@@ -24,11 +25,12 @@ var wrappedValue: Value { get nonmutating set }
 
 This works identically to `State.wrappedValue`.
 
-> **Note**: State.wrappedValue
+> **See Also**: State.wrappedValue
 
 ## See Also
 
-- [var projectedValue: Binding<Value>](scenestorage/projectedvalue.md)
+### Getting the value
+- [var projectedValue: Binding<Value>](./projectedvalue.md)
   A binding to the state value.
 
 

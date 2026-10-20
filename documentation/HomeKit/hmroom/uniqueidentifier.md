@@ -1,7 +1,8 @@
 # uniqueIdentifier
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for a room.
 
@@ -19,11 +20,16 @@ The unique identifier for a room.
 var uniqueIdentifier: UUID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSUUID * uniqueIdentifier;
+```
+
 ## See Also
 
-- [var name: String](hmroom/name.md)
+### Identifying a room
+- [var name: String](./name.md)
   The name of the room.
-- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmroom/updatename(_:completionhandler:).md)
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](./updatename%28_,completionhandler%29.md)
   Updates the name of the room.
 
 

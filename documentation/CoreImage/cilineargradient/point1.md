@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The ending position of the gradient.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The ending position of the gradient.
 var point1: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic) CGPoint point1;
+```
+
 ## See Also
 
-- [var color0: CIColor](cilineargradient/color0.md)
+### Instance Properties
+- [var color0: CIColor](./color0.md)
   The first color to use in the gradient.
-- [var color1: CIColor](cilineargradient/color1.md)
+- [var color1: CIColor](./color1.md)
   The second color to use in the gradient.
-- [var point0: CGPoint](cilineargradient/point0.md)
+- [var point0: CGPoint](./point0.md)
   The starting position of the gradient.
 
 

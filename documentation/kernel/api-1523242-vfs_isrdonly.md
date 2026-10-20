@@ -1,7 +1,8 @@
 # vfs_isrdonly
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determine if a filesystem is mounted read-only.
 
@@ -10,11 +11,11 @@ Determine if a filesystem is mounted read-only.
 
 ## Declaration
 
-```swift
+```c
 int vfs_isrdonly(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 Nonzero if filesystem is mounted read-only, else 0.
 

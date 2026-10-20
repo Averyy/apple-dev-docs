@@ -1,7 +1,8 @@
 # QuerySort
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A sort directive in a query request, specifying a field and direction.
 
@@ -10,7 +11,7 @@ A sort directive in a query request, specifying a field and direction.
 
 ## Declaration
 
-```swift
+```
 object QuerySort
 ```
 
@@ -34,15 +35,16 @@ The `QuerySort` defines one sort directive in a `QueryRequest.sorting` array. Th
 
 ## See Also
 
-- [object QueryRequest](queryrequest.md)
+### Query Objects
+- [object QueryRequest](./queryrequest.md)
   The standard request body used across all query endpoints, supporting filters, sorting, pagination, and field selection.
-- [object QueryFilter](queryfilter.md)
+- [object QueryFilter](./queryfilter.md)
   A single filter condition in a query request, specifying a field, comparison operator, and one or more values to match against.
-- [object QueryPagination](querypagination.md)
+- [object QueryPagination](./querypagination.md)
   Controls the page size and starting offset for query results.
-- [object QueryResponse](queryresponse.md)
+- [object QueryResponse](./queryresponse.md)
   Response wrapper for paginated query results.
-- [object QueryPaginationResult](querypaginationresult.md)
+- [object QueryPaginationResult](./querypaginationresult.md)
   Pagination metadata returned in query responses, including page size, offset, and optional total count.
 
 

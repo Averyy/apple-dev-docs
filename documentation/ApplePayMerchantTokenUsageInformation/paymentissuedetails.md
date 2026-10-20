@@ -1,32 +1,36 @@
 # PaymentIssueDetails
 
 **Framework**: Apple Pay Merchant Token Usage Information API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Details about a payment issue, such as a declined payment.
 
 ## Declaration
 
-```swift
+```
 object PaymentIssueDetails
 ```
 
 ## Properties
 
 - `issueKind` (string) *(required)*: The kind of payment issue.
+
+  **Allowed Values**: `paymentDeclined`
 - `issueDate` (date) *(required)*: The date of the payment issue in ISO 8601 format.
 
 ## See Also
 
-- [object AutomaticReloadPaymentDetails](automaticreloadpaymentdetails.md)
+### Getting payment details
+- [object AutomaticReloadPaymentDetails](./automaticreloadpaymentdetails.md)
   Details about an automatic reload payment.
-- [object DeferredPaymentDetails](deferredpaymentdetails.md)
+- [object DeferredPaymentDetails](./deferredpaymentdetails.md)
   Details about a deferred payment, such as a hotel booking or a preorder.
-- [object PastPayment](pastpayment.md)
+- [object PastPayment](./pastpayment.md)
   A past payment.
-- [object RecurringPaymentDetails](recurringpaymentdetails.md)
+- [object RecurringPaymentDetails](./recurringpaymentdetails.md)
   Details about a recurring payment, typically a subscription.
-- [object UpcomingPayment](upcomingpayment.md)
+- [object UpcomingPayment](./upcomingpayment.md)
   An upcoming payment.
 
 

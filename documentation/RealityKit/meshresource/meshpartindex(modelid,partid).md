@@ -1,7 +1,8 @@
 # meshPartIndex(modelID:partID:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the mesh part index for a given model and part identifier.
 
@@ -22,7 +23,7 @@ Get the mesh part index for a given model and part identifier.
 
 #### Discussion
 
-You can use this to resolve string names to part indices for use in [`MeshInstancesComponent`](meshinstancescomponent.md).
+You can use this to resolve string names to part indices for use in [`MeshInstancesComponent`](../meshinstancescomponent.md).
 
 
 ---

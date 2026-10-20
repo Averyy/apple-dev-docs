@@ -1,7 +1,8 @@
 # DockKitError
 
 **Framework**: DockKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A list of errors that DockKit sends.
 
@@ -20,43 +21,44 @@ enum DockKitError
 ## Topics
 
 ### Getting errors
-- [DockKitError.invalidParameter](dockkiterror/invalidparameter.md)
+- [DockKitError.invalidParameter](./dockkiterror/invalidparameter.md)
   The supplied parameter is invalid.
-- [DockKitError.notConnected](dockkiterror/notconnected.md)
+- [DockKitError.notConnected](./dockkiterror/notconnected.md)
   The dock accessory isn’t connected to a device.
-- [DockKitError.notSupported](dockkiterror/notsupported.md)
+- [DockKitError.notSupported](./dockkiterror/notsupported.md)
   The method isn’t supported on a specific platform.
-- [DockKitError.notSupportedByDevice](dockkiterror/notsupportedbydevice.md)
+- [DockKitError.notSupportedByDevice](./dockkiterror/notsupportedbydevice.md)
   The device doesn’t support the requested operation.
 ### Enumeration Cases
-- [DockKitError.cameraTCCMissing](dockkiterror/cameratccmissing.md)
+- [DockKitError.cameraTCCMissing](./dockkiterror/cameratccmissing.md)
   The camera terms and conditions are missing.
-- [DockKitError.frameRateTooHigh](dockkiterror/frameratetoohigh.md)
+- [DockKitError.frameRateTooHigh](./dockkiterror/frameratetoohigh.md)
   The call rate for the method is too frequent.
-- [DockKitError.frameRateTooLow](dockkiterror/frameratetoolow.md)
+- [DockKitError.frameRateTooLow](./dockkiterror/frameratetoolow.md)
   The frame rate is too low to track an object.
-- [DockKitError.noSubjectFound](dockkiterror/nosubjectfound.md)
+- [DockKitError.noSubjectFound](./dockkiterror/nosubjectfound.md)
   There is no subject in the video frame.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Controlling a DockKit accessory using your camera app](controlling-a-dockkit-accessory-using-your-camera-app.md)
+### Controlling the dock accessory
+- [Controlling a DockKit accessory using your camera app](./controlling-a-dockkit-accessory-using-your-camera-app.md)
   Follow subjects in real time using an iPhone that you mount on a DockKit accessory.
-- [class DockAccessoryManager](dockaccessorymanager.md)
+- [class DockAccessoryManager](./dockaccessorymanager.md)
   Observe the state of dock accessories and enable or disable system tracking.
-- [class DockAccessory](dockaccessory.md)
+- [class DockAccessory](./dockaccessory.md)
   Obtain accessory information and control tracking behavior.
 
 

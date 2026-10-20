@@ -1,7 +1,8 @@
 # intent
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A SiriKit intent that provides additional configuration information to your WidgetKit complication.
 
@@ -15,13 +16,18 @@ A SiriKit intent that provides additional configuration information to your Widg
 var intent: INIntent { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) INIntent * intent;
+```
+
 ## See Also
 
-- [var kind: String](clkcomplicationintentwidgetmigrationconfiguration/kind.md)
+### Accessing configuration properties
+- [var kind: String](./kind.md)
   A string that uniquely identifies a widget in your WidgetKit extension.
-- [var extensionBundleIdentifier: String](clkcomplicationintentwidgetmigrationconfiguration/extensionbundleidentifier.md)
+- [var extensionBundleIdentifier: String](./extensionbundleidentifier.md)
   The bundle identifier for your WidgetKit extension.
-- [var localizedDisplayName: String](clkcomplicationintentwidgetmigrationconfiguration/localizeddisplayname.md)
+- [var localizedDisplayName: String](./localizeddisplayname.md)
   A localized name for the complication.
 
 

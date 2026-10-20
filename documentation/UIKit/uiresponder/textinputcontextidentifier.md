@@ -1,7 +1,8 @@
 # textInputContextIdentifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier signifying that the responder should preserve its text input mode information.
 
@@ -9,7 +10,7 @@ An identifier signifying that the responder should preserve its text input mode 
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ An identifier signifying that the responder should preserve its text input mode 
 var textInputContextIdentifier: String? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSString * textInputContextIdentifier;
+```
+
 #### Discussion
 
 If you redefine this property and return a string value, UIKit tracks the current text input mode for the responder. While in tracking mode, any programmatic changes you make to the text input mode are remembered and restored whenever the responder becomes active.
 
 ## See Also
 
-- [var textInputMode: UITextInputMode?](uiresponder/textinputmode.md)
+### Managing the text input mode
+- [var textInputMode: UITextInputMode?](./textinputmode.md)
   The text input mode for this responder object.
-- [class func clearTextInputContextIdentifier(String)](uiresponder/cleartextinputcontextidentifier(_:).md)
+- [class func clearTextInputContextIdentifier(String)](./cleartextinputcontextidentifier%28_%29.md)
   Clears text input mode information from the app’s user defaults.
-- [var inputAssistantItem: UITextInputAssistantItem](uiresponder/inputassistantitem.md)
+- [var inputAssistantItem: UITextInputAssistantItem](./inputassistantitem.md)
   The input assistant to use when configuring the keyboard’s shortcuts bar.
 
 

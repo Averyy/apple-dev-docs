@@ -1,7 +1,8 @@
 # both
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that represents both ears.
 
@@ -18,11 +19,16 @@ A constant that represents both ears.
 static var both: AXMFiHearingDevice.Ear { get }
 ```
 
+```c
+AXHearingDeviceEarBoth
+```
+
 ## See Also
 
-- [static var left: AXMFiHearingDevice.Ear](axmfihearingdevice/ear/left.md)
+### Constants
+- [static var left: AXMFiHearingDevice.Ear](./left.md)
   A constant that represents the left ear.
-- [static var right: AXMFiHearingDevice.Ear](axmfihearingdevice/ear/right.md)
+- [static var right: AXMFiHearingDevice.Ear](./right.md)
   A constant that represents the right ear.
 
 

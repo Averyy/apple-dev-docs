@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The content and behavior of the widget.
@@ -25,11 +26,12 @@ The content and behavior of the widget.
 
 For any widgets that you create, provide a computed `body` property that defines the widget as a composition of SwiftUI views.
 
-Swift infers the widget’s [`Body`](scene/body-swift.associatedtype.md) associated type based on the contents of the `body` property.
+Swift infers the widget’s [`Body`](../scene/body-swift.associatedtype.md) associated type based on the contents of the `body` property.
 
 ## See Also
 
-- [associatedtype Body : WidgetConfiguration](widget/body-swift.associatedtype.md)
+### Implementing a widget
+- [associatedtype Body : WidgetConfiguration](./body-swift.associatedtype.md)
   The type of configuration representing the content of the widget.
 
 

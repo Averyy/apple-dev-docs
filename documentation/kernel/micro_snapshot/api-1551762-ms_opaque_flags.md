@@ -1,14 +1,15 @@
 # ms_opaque_flags
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 uint16_t ms_opaque_flags;
 ```
 

@@ -1,7 +1,8 @@
 # init(for:eventStore:)
 
 **Framework**: EventKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new calendar that can contain the given entity type.
 
@@ -19,6 +20,10 @@ Creates a new calendar that can contain the given entity type.
 init(for entityType: EKEntityType, eventStore: EKEventStore)
 ```
 
+```objc
++ (EKCalendar *) calendarForEntityType:(EKEntityType) entityType eventStore:(EKEventStore *) eventStore;
+```
+
 #### Return Value
 
 The created calendar.
@@ -34,7 +39,8 @@ You can only create calendars that accept either reminders or events. Some serve
 
 ## See Also
 
-- [init(eventStore: EKEventStore)](ekcalendar/init(eventstore:).md)
+### Creating Calendars
+- [init(eventStore: EKEventStore)](./init%28eventstore%29.md)
   Creates and returns a calendar belonging to a specified event store.
 
 

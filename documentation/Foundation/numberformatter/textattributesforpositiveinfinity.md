@@ -1,7 +1,8 @@
 # textAttributesForPositiveInfinity
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text attributes used to display the positive infinity symbol.
 
@@ -20,29 +21,34 @@ The text attributes used to display the positive infinity symbol.
 var textAttributesForPositiveInfinity: [String : Any]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSDictionary<NSString *,id> * textAttributesForPositiveInfinity;
+```
+
 #### Discussion
 
 This property is a dictionary that contains the text attributes used to display the positive infinity string.
 
 ## See Also
 
-- [var textAttributesForNegativeValues: [String : Any]?](numberformatter/textattributesfornegativevalues.md)
+### Configuring the Display of Numeric Values
+- [var textAttributesForNegativeValues: [String : Any]?](./textattributesfornegativevalues.md)
   The text attributes to be used in displaying negative values.
-- [var textAttributesForPositiveValues: [String : Any]?](numberformatter/textattributesforpositivevalues.md)
+- [var textAttributesForPositiveValues: [String : Any]?](./textattributesforpositivevalues.md)
   The text attributes to be used in displaying positive values.
-- [var attributedStringForZero: NSAttributedString](numberformatter/attributedstringforzero.md)
+- [var attributedStringForZero: NSAttributedString](./attributedstringforzero.md)
   The attributed string that the receiver uses to display zero values.
-- [var textAttributesForZero: [String : Any]?](numberformatter/textattributesforzero.md)
+- [var textAttributesForZero: [String : Any]?](./textattributesforzero.md)
   The text attributes used to display a zero value.
-- [var attributedStringForNil: NSAttributedString](numberformatter/attributedstringfornil.md)
+- [var attributedStringForNil: NSAttributedString](./attributedstringfornil.md)
   The attributed string the receiver uses to display `nil` values.
-- [var textAttributesForNil: [String : Any]?](numberformatter/textattributesfornil.md)
+- [var textAttributesForNil: [String : Any]?](./textattributesfornil.md)
   The text attributes used to display the `nil` symbol.
-- [var attributedStringForNotANumber: NSAttributedString](numberformatter/attributedstringfornotanumber.md)
+- [var attributedStringForNotANumber: NSAttributedString](./attributedstringfornotanumber.md)
   The attributed string the receiver uses to display “not a number” values.
-- [var textAttributesForNotANumber: [String : Any]?](numberformatter/textattributesfornotanumber.md)
+- [var textAttributesForNotANumber: [String : Any]?](./textattributesfornotanumber.md)
   The text attributes used to display the NaN (“not a number”) string.
-- [var textAttributesForNegativeInfinity: [String : Any]?](numberformatter/textattributesfornegativeinfinity.md)
+- [var textAttributesForNegativeInfinity: [String : Any]?](./textattributesfornegativeinfinity.md)
   The text attributes used to display the negative infinity symbol.
 
 

@@ -1,7 +1,8 @@
 # registerCloudKitShare(_:container:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers a CloudKit share for the user to modify.
 
@@ -14,15 +15,19 @@ Registers a CloudKit share for the user to modify.
 func registerCloudKitShare(_ share: CKShare, container: CKContainer)
 ```
 
+```objc
+- (void) registerCloudKitShare:(CKShare *) share container:(CKContainer *) container;
+```
+
 #### Discussion
 
 Use this method when the CloudKit share already exists on the server and you want to update it. The behavior of the sharing service depends on the role of the current user. An owner can edit the share’s configuration, which includes managing participants and their permissions. A participant can view the share’s configuration and choose to stop participating.
 
-If you’re unsure which container to use, fetch the share’s metadata using [`CKFetchShareMetadataOperation`](https://developer.apple.com/documentation/cloudkit/ckfetchsharemetadataoperation). Then initialize an instance of [`CKContainer`](https://developer.apple.com/documentation/cloudkit/ckcontainer) using the metadata’s [`containerIdentifier`](https://developer.apple.com/documentation/cloudkit/ckshare/metadata/containeridentifier) property.
+If you’re unsure which container to use, fetch the share’s metadata using [`CKFetchShareMetadataOperation`](../../CloudKit/ckfetchsharemetadataoperation.md). Then initialize an instance of [`CKContainer`](../../CloudKit/ckcontainer.md) using the metadata’s [`containerIdentifier`](../../CloudKit/ckshare/metadata/containeridentifier.md) property.
 
-Use the [`NSCloudSharingServiceDelegate`](https://developer.apple.com/documentation/appkit/nscloudsharingservicedelegate) protocol to respond to any changes the sharing service makes.
+Use the [`NSCloudSharingServiceDelegate`](../../AppKit/nscloudsharingservicedelegate.md) protocol to respond to any changes the sharing service makes.
 
-> **Note**:  To create a new share, use the [`registerCloudKitShare(preparationHandler:)`](nsitemprovider/registercloudkitshare(preparationhandler:).md) method instead.
+> **Note**:  To create a new share, use the [`registerCloudKitShare(preparationHandler:)`](./registercloudkitshare%28preparationhandler%29.md) method instead.
 
 The following example shows how to create an item provider with an existing share. It then invokes the cloud-sharing service with the provider and presents the share’s configuration to the user.
 
@@ -50,11 +55,12 @@ func modifyShare(_ share: CKShare, in container: CKContainer) {
 
 ## See Also
 
-- [func registerCloudKitShare(preparationHandler: ((CKShare?, CKContainer?, (any Error)?) -> Void) -> Void)](nsitemprovider/registercloudkitshare(preparationhandler:).md)
+### Registering CloudKit shares
+- [func registerCloudKitShare(preparationHandler: ((CKShare?, CKContainer?, (any Error)?) -> Void) -> Void)](./registercloudkitshare%28preparationhandler%29.md)
   Registers a handler that prepares a new CloudKit share.
-- [func registerCKShare(CKShare, container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions)](nsitemprovider/registerckshare(_:container:allowedsharingoptions:).md)
+- [func registerCKShare(CKShare, container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions)](./registerckshare%28_,container,allowedsharingoptions%29.md)
   Registers an existing collaboration object on a server.
-- [func registerCKShare(container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions, preparationHandler: () async throws -> CKShare)](nsitemprovider/registerckshare(container:allowedsharingoptions:preparationhandler:).md)
+- [func registerCKShare(container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions, preparationHandler: () async throws -> CKShare)](./registerckshare%28container,allowedsharingoptions,preparationhandler%29.md)
   Creates and registers a new collaboration object using a collection of records to share.
 
 

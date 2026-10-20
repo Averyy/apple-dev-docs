@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The color of the halo.
@@ -11,7 +12,7 @@ The color of the halo.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,21 +21,26 @@ The color of the halo.
 var color: CIColor { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CIColor * color;
+```
+
 ## See Also
 
-- [var center: CGPoint](cilenticularhalogenerator/center.md)
+### Instance Properties
+- [var center: CGPoint](./center.md)
   The x and y position to use as the center of the halo.
-- [var haloOverlap: Float](cilenticularhalogenerator/halooverlap.md)
+- [var haloOverlap: Float](./halooverlap.md)
   The separation of colors in the halo.
-- [var haloRadius: Float](cilenticularhalogenerator/haloradius.md)
+- [var haloRadius: Float](./haloradius.md)
   The radius of the halo.
-- [var haloWidth: Float](cilenticularhalogenerator/halowidth.md)
+- [var haloWidth: Float](./halowidth.md)
   The width of the halo, from its inner radius to its outer radius.
-- [var striationContrast: Float](cilenticularhalogenerator/striationcontrast.md)
+- [var striationContrast: Float](./striationcontrast.md)
   The contrast of the halo colors.
-- [var striationStrength: Float](cilenticularhalogenerator/striationstrength.md)
+- [var striationStrength: Float](./striationstrength.md)
   The intensity of the halo colors.
-- [var time: Float](cilenticularhalogenerator/time.md)
+- [var time: Float](./time.md)
   The current time of the effect.
 
 

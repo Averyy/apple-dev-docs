@@ -1,7 +1,8 @@
 # init(exportedAs:conformingTo:)
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a type your app owns based on an identifier and a supertype that it conforms to.
 
@@ -38,15 +39,16 @@ extension UTType {
 
 ## See Also
 
-- [init?(String)](uttype-swift.struct/init(_:).md)
+### Creating a type
+- [init?(String)](./init%28_%29.md)
   Creates a type based on an identifier.
-- [init?(mimeType: String, conformingTo: UTType)](uttype-swift.struct/init(mimetype:conformingto:).md)
+- [init?(mimeType: String, conformingTo: UTType)](./init%28mimetype,conformingto%29.md)
   Creates a type based on a MIME type and a supertype that it conforms to.
-- [init?(filenameExtension: String, conformingTo: UTType)](uttype-swift.struct/init(filenameextension:conformingto:).md)
+- [init?(filenameExtension: String, conformingTo: UTType)](./init%28filenameextension,conformingto%29.md)
   Creates a type based on a filename extension and an existing supertype that it conforms to.
-- [init?(tag: String, tagClass: UTTagClass, conformingTo: UTType?)](uttype-swift.struct/init(tag:tagclass:conformingto:).md)
+- [init?(tag: String, tagClass: UTTagClass, conformingTo: UTType?)](./init%28tag,tagclass,conformingto%29.md)
   Creates a type based on a tag, a tag class, and a supertype that it conforms to.
-- [init(importedAs: String, conformingTo: UTType?)](uttype-swift.struct/init(importedas:conformingto:).md)
+- [init(importedAs: String, conformingTo: UTType?)](./init%28importedas,conformingto%29.md)
   Creates a type your app uses, but doesn’t own, based on an identifier and a supertype that it conforms to.
 
 

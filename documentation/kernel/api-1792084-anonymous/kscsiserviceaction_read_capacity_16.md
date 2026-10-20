@@ -1,14 +1,15 @@
 # kSCSIServiceAction_READ_CAPACITY_16
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSCSIServiceAction_READ_CAPACITY_16 = 0x10
 ```
 

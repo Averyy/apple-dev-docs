@@ -1,7 +1,8 @@
 # RedactionReasons
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The reasons to apply a redaction to data displayed on screen.
 
@@ -23,44 +24,45 @@ struct RedactionReasons
 ## Topics
 
 ### Getting redaction reasons
-- [static let invalidated: RedactionReasons](redactionreasons/invalidated.md)
+- [static let invalidated: RedactionReasons](./redactionreasons/invalidated.md)
   Displayed data should appear as invalidated and pending a new update.
-- [static let placeholder: RedactionReasons](redactionreasons/placeholder.md)
+- [static let placeholder: RedactionReasons](./redactionreasons/placeholder.md)
   Displayed data should appear as generic placeholders.
-- [static let privacy: RedactionReasons](redactionreasons/privacy.md)
+- [static let privacy: RedactionReasons](./redactionreasons/privacy.md)
   Displayed data should be obscured to protect private information.
 ### Creating redaction reasons
-- [init(rawValue: Int)](redactionreasons/init(rawvalue:).md)
+- [init(rawValue: Int)](./redactionreasons/init%28rawvalue%29.md)
   Creates a new set from a raw value.
-- [let rawValue: Int](redactionreasons/rawvalue.md)
+- [let rawValue: Int](./redactionreasons/rawvalue.md)
   The raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [Designing your app for the Always On state](../watchos-apps/designing-your-app-for-the-always-on-state.md)
+### Redacting private content
+- [Designing your app for the Always On state](../watchOS-Apps/designing-your-app-for-the-always-on-state.md)
   Customize your watchOS app’s user interface for continuous display.
-- [Protecting sensitive content when screen sharing and remote control are active](protecting-sensitive-content-when-screen-sharing.md)
+- [Protecting sensitive content when screen sharing and remote control are active](./protecting-sensitive-content-when-screen-sharing.md)
   Detect active screen capture sessions and respond appropriately to protect sensitive content in your app.
-- [func privacySensitive(Bool) -> some View](view/privacysensitive(_:).md)
+- [func privacySensitive(Bool) -> some View](./view/privacysensitive%28_%29.md)
   Marks the view as containing sensitive, private user data.
-- [func redacted(reason: RedactionReasons) -> some View](view/redacted(reason:).md)
+- [func redacted(reason: RedactionReasons) -> some View](./view/redacted%28reason%29.md)
   Adds a reason to apply a redaction to this view hierarchy.
-- [func unredacted() -> some View](view/unredacted.md)
+- [func unredacted() -> some View](./view/unredacted%28%29.md)
   Removes any reason to apply a redaction to this view hierarchy.
-- [var redactionReasons: RedactionReasons](environmentvalues/redactionreasons.md)
+- [var redactionReasons: RedactionReasons](./environmentvalues/redactionreasons.md)
   The current redaction reasons applied to the view hierarchy.
-- [var isSceneCaptured: Bool](environmentvalues/isscenecaptured.md)
+- [var isSceneCaptured: Bool](./environmentvalues/isscenecaptured.md)
   The current capture state.
 
 

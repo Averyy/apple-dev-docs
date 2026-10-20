@@ -1,7 +1,8 @@
 # SetTranslatingAction.TranslationEngine
 
 **Framework**: LiveCommunicationKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe the translation engine that provided a translation.
 
@@ -18,20 +19,21 @@ enum TranslationEngine
 ## Topics
 
 ### Types
-- [SetTranslatingAction.TranslationEngine.default](settranslatingaction/translationengine/default.md)
+- [SetTranslatingAction.TranslationEngine.default](./translationengine/default.md)
   The translation was provided by the system’s default translation engine.
-- [SetTranslatingAction.TranslationEngine.custom](settranslatingaction/translationengine/custom.md)
+- [SetTranslatingAction.TranslationEngine.custom](./translationengine/custom.md)
   The translation was provided by a custom translation engine.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [func fulfill(using: SetTranslatingAction.TranslationEngine)](settranslatingaction/fulfill(using:).md)
+### Completing a translation
+- [func fulfill(using: SetTranslatingAction.TranslationEngine)](./fulfill%28using%29.md)
   Reports that the translation action was successful.
 
 

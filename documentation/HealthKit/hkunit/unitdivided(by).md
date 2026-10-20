@@ -1,22 +1,27 @@
 # unitDivided(by:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a complex unit by dividing the receiving unit by another unit.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func unitDivided(by unit: HKUnit) -> HKUnit
+```
+
+```objc
+- (HKUnit *) unitDividedByUnit:(HKUnit *) unit;
 ```
 
 #### Return Value
@@ -49,13 +54,15 @@ HKUnit *metersPerSecond = [meters unitDividedByUnit:seconds];
 
 ## See Also
 
-- [convenience init(from: String)](hkunit/init(from:)-9qont.md)
+### Related Documentation
+- [convenience init(from: String)](./init%28from%29-9qont.md)
   Returns the unit instance described by the provided string.
-- [func unitMultiplied(by: HKUnit) -> HKUnit](hkunit/unitmultiplied(by:).md)
+### Performing unit math
+- [func unitMultiplied(by: HKUnit) -> HKUnit](./unitmultiplied%28by%29.md)
   Creates a complex unit by multiplying the receiving unit with another unit.
-- [func unitRaised(toPower: Int) -> HKUnit](hkunit/unitraised(topower:).md)
+- [func unitRaised(toPower: Int) -> HKUnit](./unitraised%28topower%29.md)
   Creates a complex unit by raising the unit to the given power.
-- [func reciprocal() -> HKUnit](hkunit/reciprocal.md)
+- [func reciprocal() -> HKUnit](./reciprocal%28%29.md)
   Returns a complex unit representing the unit’s reciprocal.
 
 

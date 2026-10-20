@@ -1,18 +1,19 @@
 # SCNSceneSourceStatus.complete
 
 **Framework**: SceneKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 SceneKit has successfully finished loading the scene file’s contents.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,15 +21,20 @@ SceneKit has successfully finished loading the scene file’s contents.
 case complete
 ```
 
+```c
+SCNSceneSourceStatusComplete
+```
+
 ## See Also
 
-- [SCNSceneSourceStatus.error](scnscenesourcestatus/error.md)
+### Constants
+- [SCNSceneSourceStatus.error](./error.md)
   An error occurred when SceneKit attempted to load the scene.
-- [SCNSceneSourceStatus.parsing](scnscenesourcestatus/parsing.md)
+- [SCNSceneSourceStatus.parsing](./parsing.md)
   SceneKit has begun deserializing the source file.
-- [SCNSceneSourceStatus.validating](scnscenesourcestatus/validating.md)
+- [SCNSceneSourceStatus.validating](./validating.md)
   SceneKit has begun validating the scene file’s format.
-- [SCNSceneSourceStatus.processing](scnscenesourcestatus/processing.md)
+- [SCNSceneSourceStatus.processing](./processing.md)
   SceneKit has begun generating scene graph objects from the scene file’s contents.
 
 

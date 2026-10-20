@@ -1,7 +1,8 @@
 # CSSM_EVIDENCE_FORM_CRL_NEXTTIME
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_EVIDENCE_FORM_CRL_NEXTTIME: Int { get }
+```
+
+```c
+CSSM_EVIDENCE_FORM_CRL_NEXTTIME
 ```
 
 

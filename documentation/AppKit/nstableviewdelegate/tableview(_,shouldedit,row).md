@@ -1,12 +1,13 @@
 # tableView(_:shouldEdit:row:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if the cell at the specified row and column can be edited.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,15 +16,19 @@ Asks the delegate if the cell at the specified row and column can be edited.
 optional func tableView(_ tableView: NSTableView, shouldEdit tableColumn: NSTableColumn?, row: Int) -> Bool
 ```
 
+```objc
+- (BOOL) tableView:(NSTableView *) tableView shouldEditTableColumn:(NSTableColumn *) tableColumn row:(NSInteger) row;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow editing the cell, [`false`](https://developer.apple.com/documentation/swift/false) to deny editing.
+[`true`](../../Swift/true.md) to allow editing the cell, [`false`](../../Swift/false.md) to deny editing.
 
 #### Discussion
 
 The delegate can implement this method to disallow editing of specific cells.
 
-> **Note**:  This method is only valid for [`NSCell`](nscell.md)-based table views.
+> **Note**:  This method is only valid for [`NSCell`](../nscell.md)-based table views.
 
 ## Parameters
 

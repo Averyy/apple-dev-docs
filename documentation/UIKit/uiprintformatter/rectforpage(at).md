@@ -1,7 +1,8 @@
 # rectForPage(at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the area that encloses a specified page of content.
 
@@ -17,13 +18,17 @@ Returns the area that encloses a specified page of content.
 func rectForPage(at pageIndex: Int) -> CGRect
 ```
 
+```objc
+- (CGRect) rectForPageAtIndex:(NSInteger) pageIndex;
+```
+
 #### Return Value
 
 A rectangle enclosing the content area for page `pageIndex`.
 
 #### Discussion
 
-Returns [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero) if the print formatter draws no content on the specified page.
+Returns [`CGRectZero`](../../CoreGraphics/cgrectzero.md) if the print formatter draws no content on the specified page.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ Returns [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cg
 
 ## See Also
 
-- [func draw(in: CGRect, forPageAt: Int)](uiprintformatter/draw(in:forpageat:).md)
+### Drawing the content
+- [func draw(in: CGRect, forPageAt: Int)](./draw%28in,forpageat%29.md)
   Draws the portion of a print formatter’s content for the specified area of the specified page.
 
 

@@ -1,13 +1,16 @@
 # SCStreamType.window
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The stream is currently presented as a window.
 
 **Availability**:
-- Mac Catalyst 18.2+
-- macOS 14.0+
+- Mac Catalyst 18.2+ - Deprecated in 18.2
+- macOS 14.0+ - Deprecated in 15.0
+
+> **Deprecated**: Use SCShareableContentStyle instead
 
 ## Declaration
 
@@ -15,9 +18,14 @@ The stream is currently presented as a window.
 case window
 ```
 
+```c
+SCStreamTypeWindow
+```
+
 ## See Also
 
-- [SCStreamType.display](scstreamtype/display.md)
+### Client presentation
+- [SCStreamType.display](./display.md)
   The stream is currently on a complete display.
 
 

@@ -1,7 +1,8 @@
 # phonetic
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The formatter should format the component object’s `phoneticRepresentation` components instead of its own components.
 
@@ -18,6 +19,10 @@ The formatter should format the component object’s `phoneticRepresentation` co
 
 ```swift
 static var phonetic: PersonNameComponentsFormatter.Options { get }
+```
+
+```c
+NSPersonNameComponentsFormatterPhonetic
 ```
 
 

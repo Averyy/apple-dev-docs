@@ -1,17 +1,20 @@
 # environmentStringRepresentation
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string representation of the server environment that signs the renewal information for an auto-renewable subscription.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
-- watchOS 8.0+
+- iOS 15.0+ - Deprecated in 16.0
+- iPadOS 15.0+ - Deprecated in 16.0
+- Mac Catalyst 15.0+ - Deprecated in 16.0
+- macOS 12.0+ - Deprecated in 13.0
+- tvOS 15.0+ - Deprecated in 16.0
+- watchOS 8.0+ - Deprecated in 9.0
+
+> **Deprecated**: Use the environment property instead.
 
 ## Declaration
 
@@ -22,14 +25,15 @@ var environmentStringRepresentation: String { get }
 
 ## See Also
 
-- [var offerID: String?](product/subscriptioninfo/renewalinfo/offerid.md)
+### Deprecated
+- [var offerID: String?](./offerid.md)
   A string that identifies an offer that applies to the next subscription period.
-- [var offerType: Transaction.OfferType?](product/subscriptioninfo/renewalinfo/offertype.md)
+- [var offerType: Transaction.OfferType?](./offertype.md)
   The subscription offer type for the next subscription period.
-- [var currencyCode: String?](product/subscriptioninfo/renewalinfo/currencycode.md)
+- [var currencyCode: String?](./currencycode.md)
   The three-letter ISO 4217 currency code for the price of the product.
-- [var offerPaymentModeStringRepresentation: String?](product/subscriptioninfo/renewalinfo/offerpaymentmodestringrepresentation.md)
-- [var offerPeriodStringRepresentation: String?](product/subscriptioninfo/renewalinfo/offerperiodstringrepresentation.md)
+- [var offerPaymentModeStringRepresentation: String?](./offerpaymentmodestringrepresentation.md)
+- [var offerPeriodStringRepresentation: String?](./offerperiodstringrepresentation.md)
   The string representation of the subscription offer period applied to the next billing period.
 
 

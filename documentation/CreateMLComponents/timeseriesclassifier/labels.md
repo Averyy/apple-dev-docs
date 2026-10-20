@@ -1,7 +1,8 @@
 # labels
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of possible labels.
 
@@ -21,7 +22,8 @@ var labels: Set<Label>
 
 ## See Also
 
-- [var configuration: TimeSeriesClassifierConfiguration](timeseriesclassifier/configuration-swift.property.md)
+### Inspecting a time series classifier
+- [var configuration: TimeSeriesClassifierConfiguration](./configuration-swift.property.md)
   The configuration.
 
 

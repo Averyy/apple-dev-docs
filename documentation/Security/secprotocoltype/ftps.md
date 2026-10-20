@@ -1,7 +1,8 @@
 # SecProtocolType.FTPS
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates FTP over TLS/SSL.
 
@@ -13,6 +14,10 @@ Indicates FTP over TLS/SSL.
 
 ```swift
 case FTPS
+```
+
+```c
+kSecProtocolTypeFTPS
 ```
 
 

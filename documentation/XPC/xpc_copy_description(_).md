@@ -1,7 +1,8 @@
 # xpc_copy_description(_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copies a debug string that describes the object.
 
@@ -10,7 +11,7 @@ Copies a debug string that describes the object.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Copies a debug string that describes the object.
 
 ```swift
 func xpc_copy_description(_ object: xpc_object_t) -> UnsafeMutablePointer<CChar>
+```
+
+```c
+extern char *xpc_copy_description(xpc_object_t object);
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ A string describing object which contains information useful for debugging. This
 
 ## See Also
 
-- [func xpc_copy(xpc_object_t) -> xpc_object_t?](xpc_copy(_:).md)
+### Copying
+- [func xpc_copy(xpc_object_t) -> xpc_object_t?](./xpc_copy%28_%29.md)
   Creates a copy of the object.
 
 

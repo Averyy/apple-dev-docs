@@ -1,7 +1,8 @@
 # writeAttributeUserMaximumChargeCurrent(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeUserMaximumChargeCurrent(withValue value: NSNumber, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeUserMaximumChargeCurrent(withValue value: NSNumber) async throws
+```
+
+```objc
+- (void) writeAttributeUserMaximumChargeCurrentWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

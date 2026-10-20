@@ -1,7 +1,8 @@
 # SubmissionLogURLResponse.Meta
 
 **Framework**: Notary API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An empty object.
 
@@ -10,7 +11,7 @@ An empty object.
 
 ## Declaration
 
-```swift
+```
 object SubmissionLogURLResponse.Meta
 ```
 
@@ -20,7 +21,8 @@ This object is reserved for future use.
 
 ## See Also
 
-- [object SubmissionLogURLResponse.Data](submissionlogurlresponse/data-data.dictionary.md)
+### Objects
+- [object SubmissionLogURLResponse.Data](./data-data.dictionary.md)
   Data that indicates how to get the log information for a particular submission.
 
 

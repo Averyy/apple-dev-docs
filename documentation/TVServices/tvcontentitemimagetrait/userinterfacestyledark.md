@@ -1,7 +1,8 @@
 # userInterfaceStyleDark
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An image meant for a dark user interface.
 
@@ -14,17 +15,22 @@ An image meant for a dark user interface.
 static var userInterfaceStyleDark: TVContentItemImageTrait { get }
 ```
 
+```c
+TVContentItemImageTraitUserInterfaceStyleDark
+```
+
 #### Discussion
 
-Specify this constant, or the [`userInterfaceStyleLight`](tvcontentitemimagetrait/userinterfacestylelight.md) constant, but not both.
+Specify this constant, or the [`userInterfaceStyleLight`](./userinterfacestylelight.md) constant, but not both.
 
 ## See Also
 
-- [static var screenScale1x: TVContentItemImageTrait](tvcontentitemimagetrait/screenscale1x.md)
+### Traits
+- [static var screenScale1x: TVContentItemImageTrait](./screenscale1x.md)
   An image meant for a regular display.
-- [static var screenScale2x: TVContentItemImageTrait](tvcontentitemimagetrait/screenscale2x.md)
+- [static var screenScale2x: TVContentItemImageTrait](./screenscale2x.md)
   An image meant for a Retina display.
-- [static var userInterfaceStyleLight: TVContentItemImageTrait](tvcontentitemimagetrait/userinterfacestylelight.md)
+- [static var userInterfaceStyleLight: TVContentItemImageTrait](./userinterfacestylelight.md)
   An image meant for a light user interface.
 
 

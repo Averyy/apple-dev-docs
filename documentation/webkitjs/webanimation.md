@@ -1,7 +1,8 @@
 # WebAnimation
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface WebAnimation
 ```
 
 ## Topics
 
 ### Instance Properties
-- [effect](webanimation/2871385-effect.md)
-- [timeline](webanimation/2871298-timeline.md)
+- [effect](./webanimation/api-2871385-effect.md)
+- [timeline](./webanimation/api-2871298-timeline.md)
 
 
 ---

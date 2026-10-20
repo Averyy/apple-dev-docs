@@ -1,7 +1,8 @@
 # intent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Metadata for populating your share extensions interface.
 
@@ -18,9 +19,21 @@ Metadata for populating your share extensions interface.
 var intent: INIntent? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, strong, readonly, nullable) INIntent * intent;
+```
+
+*macOS*
+
+```objc
+@property (atomic, strong, readonly, nullable) INIntent * intent;
+```
+
 ## Mentions
 
-- [Supporting suggestions in your app’s share extension](supporting-suggestions-in-your-app-s-share-extension.md)
+- [Supporting suggestions in your app’s share extension](../supporting-suggestions-in-your-app-s-share-extension.md)
 
 #### Discussion
 
@@ -28,7 +41,7 @@ When the user selects an app from the list of suggested apps in iOS’s share sh
 
 This property is `nil` if your app’s share extension wasn’t launched from the list of suggested apps.
 
-> **Note**:  To learn more about adding a share extension to the list of suggested apps, read [`Supporting suggestions in your app’s share extension`](supporting-suggestions-in-your-app-s-share-extension.md).
+> **Note**:  To learn more about adding a share extension to the list of suggested apps, read [Supporting suggestions in your app’s share extension](../supporting-suggestions-in-your-app-s-share-extension.md).
 
 
 ---

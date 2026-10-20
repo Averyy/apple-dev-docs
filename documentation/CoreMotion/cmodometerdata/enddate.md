@@ -1,7 +1,8 @@
 # endDate
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time that the device stops recording the odometer data.
 
@@ -19,11 +20,16 @@ The time that the device stops recording the odometer data.
 var endDate: Date { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSDate * endDate;
+```
+
 ## See Also
 
-- [var startDate: Date](cmodometerdata/startdate.md)
+### Getting date and times
+- [var startDate: Date](./startdate.md)
   The time that the device starts recording the odometer data.
-- [var gpsDate: Date](cmodometerdata/gpsdate.md)
+- [var gpsDate: Date](./gpsdate.md)
   The time of the GPS measurement associated with the location.
 
 

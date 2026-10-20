@@ -1,7 +1,8 @@
 # uiDelegate
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object you use to integrate custom user interface elements, such as contextual menus or panels, into web view interactions.
 
@@ -18,9 +19,14 @@ The object you use to integrate custom user interface elements, such as contextu
 weak var uiDelegate: (any WKUIDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<WKUIDelegate> UIDelegate;
+```
+
 ## See Also
 
-- [protocol WKUIDelegate](wkuidelegate.md)
+### Displaying native user interface elements
+- [protocol WKUIDelegate](../wkuidelegate.md)
   The methods for presenting native user interface elements on behalf of a webpage.
 
 

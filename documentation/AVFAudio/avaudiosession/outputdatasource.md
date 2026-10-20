@@ -1,7 +1,8 @@
 # outputDataSource
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently selected output data source.
 
@@ -19,19 +20,24 @@ The currently selected output data source.
 var outputDataSource: AVAudioSessionDataSourceDescription? { get }
 ```
 
+```objc
+@property (readonly, nullable) AVAudioSessionDataSourceDescription * outputDataSource;
+```
+
 #### Discussion
 
-The value of this property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if switching between multiple output sources isn’t currently possible. Only certain USB accessories support switching output sources.
+The value of this property is [`nil`](../../ObjectiveC/nil-227m0.md) if switching between multiple output sources isn’t currently possible. Only certain USB accessories support switching output sources.
 
 ## See Also
 
-- [var outputDataSources: [AVAudioSessionDataSourceDescription]?](avaudiosession/outputdatasources.md)
+### Configuring outputs
+- [var outputDataSources: [AVAudioSessionDataSourceDescription]?](./outputdatasources.md)
   An array of available output data sources for the current audio route.
-- [func setOutputDataSource(AVAudioSessionDataSourceDescription?) throws](avaudiosession/setoutputdatasource(_:).md)
+- [func setOutputDataSource(AVAudioSessionDataSourceDescription?) throws](./setoutputdatasource%28_%29.md)
   Sets the output data source for an audio session.
-- [class AVAudioSessionDataSourceDescription](avaudiosessiondatasourcedescription.md)
+- [class AVAudioSessionDataSourceDescription](../avaudiosessiondatasourcedescription.md)
   An object that defines a data source for an audio input or output, giving information such as the source’s name, location, and orientation.
-- [func overrideOutputAudioPort(AVAudioSession.PortOverride) throws](avaudiosession/overrideoutputaudioport(_:).md)
+- [func overrideOutputAudioPort(AVAudioSession.PortOverride) throws](./overrideoutputaudioport%28_%29.md)
   Temporarily changes the current audio route.
 
 

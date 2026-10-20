@@ -1,7 +1,8 @@
 # init(backgroundDisplayMode:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a page index view style.
 
@@ -25,7 +26,8 @@ init(backgroundDisplayMode: PageIndexViewStyle.BackgroundDisplayMode = .automati
 
 ## See Also
 
-- [PageIndexViewStyle.BackgroundDisplayMode](pageindexviewstyle/backgrounddisplaymode.md)
+### Creating the control group style
+- [PageIndexViewStyle.BackgroundDisplayMode](./backgrounddisplaymode.md)
   The background style for the page index view.
 
 

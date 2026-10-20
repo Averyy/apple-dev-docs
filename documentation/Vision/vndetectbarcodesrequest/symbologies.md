@@ -1,7 +1,8 @@
 # symbologies
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The barcode symbologies that the request detects in an image.
 
@@ -19,6 +20,10 @@ The barcode symbologies that the request detects in an image.
 var symbologies: [VNBarcodeSymbology] { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSArray<NSString *> * symbologies;
+```
+
 #### Discussion
 
 By default, a request scans for all symbologies. Specify a subset of symbologies to limit the request’s detection range.
@@ -27,13 +32,14 @@ By default, a request scans for all symbologies. Specify a subset of symbologies
 
 ## See Also
 
-- [func supportedSymbologies() throws -> [VNBarcodeSymbology]](vndetectbarcodesrequest/supportedsymbologies.md)
+### Specifying Symbologies
+- [func supportedSymbologies() throws -> [VNBarcodeSymbology]](./supportedsymbologies%28%29.md)
   Returns the barcode symbologies that the request supports.
-- [var coalesceCompositeSymbologies: Bool](vndetectbarcodesrequest/coalescecompositesymbologies.md)
+- [var coalesceCompositeSymbologies: Bool](./coalescecompositesymbologies.md)
   A Boolean value that indicates whether to coalesce multiple codes based on the symbology.
-- [struct VNBarcodeSymbology](vnbarcodesymbology.md)
+- [struct VNBarcodeSymbology](../vnbarcodesymbology.md)
   The barcode symbologies that the framework detects.
-- [class var supportedSymbologies: [VNBarcodeSymbology]](vndetectbarcodesrequest/supportedsymbologies.md)
+- [class var supportedSymbologies: [VNBarcodeSymbology]](./supportedsymbologies.md)
   The array of barcode symbologies that the request supports.
 
 

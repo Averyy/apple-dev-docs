@@ -1,7 +1,8 @@
 # settlingDuration
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The estimated duration required for the spring system to be considered at rest.
 
@@ -19,11 +20,15 @@ The estimated duration required for the spring system to be considered at rest.
 var settlingDuration: CFTimeInterval { get }
 ```
 
+```objc
+@property (readonly) CFTimeInterval settlingDuration;
+```
+
 #### Discussion
 
-The duration is evaluated for the current animation parameters and may not the same as the [`duration`](camediatiming/duration.md).
+The duration is evaluated for the current animation parameters and may not the same as the [`duration`](../camediatiming/duration.md).
 
-The following code creates a spring animation with a [`duration`](camediatiming/duration.md) of 2 seconds.
+The following code creates a spring animation with a [`duration`](../camediatiming/duration.md) of 2 seconds.
 
 ```swift
 let spring = CASpringAnimation()
@@ -35,19 +40,20 @@ spring.damping = 5
 spring.duration = 2
 ```
 
-With a damping coefficient of `5`, the settling duration is approximately 2.85 seconds: the animated layer bounces around the target position several times before settling. However, changing the [`damping`](caspringanimation/damping.md) property to `15` reduces the settling duration to just over 1 second: the animated layer quickly comes to a stop as it reaches the target position.
+With a damping coefficient of `5`, the settling duration is approximately 2.85 seconds: the animated layer bounces around the target position several times before settling. However, changing the [`damping`](./damping.md) property to `15` reduces the settling duration to just over 1 second: the animated layer quickly comes to a stop as it reaches the target position.
 
-All of the spring animation’s physical attributes: [`damping`](caspringanimation/damping.md), [`initialVelocity`](caspringanimation/initialvelocity.md), [`mass`](caspringanimation/mass.md) and [`stiffness`](caspringanimation/stiffness.md), can affect the settling duration.
+All of the spring animation’s physical attributes: [`damping`](./damping.md), [`initialVelocity`](./initialvelocity.md), [`mass`](./mass.md) and [`stiffness`](./stiffness.md), can affect the settling duration.
 
 ## See Also
 
-- [var damping: CGFloat](caspringanimation/damping.md)
+### Configuring Physical Attributes
+- [var damping: CGFloat](./damping.md)
   Defines how the spring’s motion should be damped due to the forces of friction.
-- [var initialVelocity: CGFloat](caspringanimation/initialvelocity.md)
+- [var initialVelocity: CGFloat](./initialvelocity.md)
   The initial velocity of the object attached to the spring.
-- [var mass: CGFloat](caspringanimation/mass.md)
+- [var mass: CGFloat](./mass.md)
   The mass of the object attached to the end of the spring.
-- [var stiffness: CGFloat](caspringanimation/stiffness.md)
+- [var stiffness: CGFloat](./stiffness.md)
   The spring stiffness coefficient.
 
 

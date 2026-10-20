@@ -1,7 +1,8 @@
 # updateGateActivation
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A parameter that defines the activation function to use with the update-gate of the GRU operation.
 
@@ -17,6 +18,10 @@ A parameter that defines the activation function to use with the update-gate of 
 
 ```swift
 var updateGateActivation: MPSGraphRNNActivation { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSGraphRNNActivation updateGateActivation;
 ```
 
 #### Discussion

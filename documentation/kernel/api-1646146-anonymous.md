@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [k5Minutes](1646146-anonymous/k5minutes.md)
-- [kSecondsInAMinute](1646146-anonymous/ksecondsinaminute.md)
+- [k5Minutes](./api-1646146-anonymous/k5minutes.md)
+- [kSecondsInAMinute](./api-1646146-anonymous/ksecondsinaminute.md)
 
 
 ---

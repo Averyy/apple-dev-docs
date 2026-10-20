@@ -1,14 +1,15 @@
 # tUSBCTypeCableType
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum tUSBCTypeCableType : unsigned int {
     ...
 } tUSBCTypeCableType;
@@ -17,8 +18,8 @@ typedef enum tUSBCTypeCableType : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBTypeCCableTypeNone](tusbctypecabletype/kusbtypeccabletypenone.md)
-- [kUSBTypeCCableTypeUSB](tusbctypecabletype/kusbtypeccabletypeusb.md)
+- [kUSBTypeCCableTypeNone](./tusbctypecabletype/kusbtypeccabletypenone.md)
+- [kUSBTypeCCableTypeUSB](./tusbctypecabletype/kusbtypeccabletypeusb.md)
 
 
 ---

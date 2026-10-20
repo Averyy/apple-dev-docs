@@ -1,7 +1,8 @@
 # accountBalances(query:)
 
 **Framework**: FinanceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a list of balances that meet the criteria in the provided account query.
 
@@ -17,25 +18,26 @@ func accountBalances(query: AccountBalanceQuery) async throws -> [AccountBalance
 
 #### Return Value
 
-An array of [`AccountBalance`](accountbalance.md) structures.
+An array of [`AccountBalance`](../accountbalance.md) structures.
 
 ## Parameters
 
-- `query`: An [`AccountQuery`](accountquery.md) that describes the kinds of accounts to look for.
+- `query`: An [`AccountQuery`](../accountquery.md) that describes the kinds of accounts to look for.
 
 ## See Also
 
-- [func accountBalanceHistory(forAccountID: UUID, since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<AccountBalance>](financestore/accountbalancehistory(foraccountid:since:ismonitoring:).md)
+### Balances
+- [func accountBalanceHistory(forAccountID: UUID, since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<AccountBalance>](./accountbalancehistory%28foraccountid,since,ismonitoring%29.md)
   Returns the account balance history since a time specified by the provided financial history token.
-- [struct AccountBalance](accountbalance.md)
+- [struct AccountBalance](../accountbalance.md)
   A structure that describes the financial balance of an account at a specific point in time. The financial balance of an account at a specific point in time.
-- [struct AccountBalanceQuery](accountbalancequery.md)
+- [struct AccountBalanceQuery](../accountbalancequery.md)
   A structure that defines an account balance query.
-- [struct Balance](balance.md)
+- [struct Balance](../balance.md)
   A structure that describes an account balance.
-- [enum CreditDebitIndicator](creditdebitindicator.md)
+- [enum CreditDebitIndicator](../creditdebitindicator.md)
   Values that the framework uses to describe transactions as credits or debits.
-- [enum CurrentBalance](currentbalance.md)
+- [enum CurrentBalance](../currentbalance.md)
   Values that describe the state of an account’s credit balance.
 
 

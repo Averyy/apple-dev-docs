@@ -1,7 +1,8 @@
 # value
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of a row presented by this column content.
 

@@ -1,7 +1,8 @@
 # forearmWrist
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An anchor location at the wrist end of forearm on the back of the hand.
 

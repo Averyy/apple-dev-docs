@@ -1,7 +1,8 @@
 # targetSize
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target image size.
 

@@ -1,7 +1,8 @@
 # MediaType
 
 **Framework**: Now Playing  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of media being played.
 
@@ -27,20 +28,21 @@ Use this enumeration to specify whether content is audio-only or includes video.
 ## Topics
 
 ### Enumeration Cases
-- [MediaType.audio](mediatype/audio.md)
+- [MediaType.audio](./mediatype/audio.md)
   Audio-only content, such as music, podcasts, or audiobooks.
-- [MediaType.video](mediatype/video.md)
+- [MediaType.video](./mediatype/video.md)
   Video content, such as movies, TV shows, or video podcasts.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [enum MediaDuration](mediaduration.md)
+### Specifying type and duration
+- [enum MediaDuration](./mediaduration.md)
   The duration of media content.
 
 

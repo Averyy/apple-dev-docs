@@ -1,7 +1,8 @@
 # MKMapItemDetailViewControllerDelegate
 
 **Framework**: MapKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The methods that you use to receive events from an associated map view controller.
 
@@ -19,26 +20,31 @@ The methods that you use to receive events from an associated map view controlle
 protocol MKMapItemDetailViewControllerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol MKMapItemDetailViewControllerDelegate <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func mapItemDetailViewControllerDidFinish(MKMapItemDetailViewController)](mkmapitemdetailviewcontrollerdelegate/mapitemdetailviewcontrollerdidfinish(_:).md)
+- [func mapItemDetailViewControllerDidFinish(MKMapItemDetailViewController)](./mkmapitemdetailviewcontrollerdelegate/mapitemdetailviewcontrollerdidfinish%28_%29.md)
   Informs the delegate when a person dismissed the view controller.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKMapItemDetailViewController](mkmapitemdetailviewcontroller.md)
+### Place information
+- [class MKMapItemDetailViewController](./mkmapitemdetailviewcontroller.md)
   An object that displays detailed information about a map item.
-- [MKSelectionAccessory.MapItemDetailPresentationStyle](mkselectionaccessory/mapitemdetailpresentationstyle.md)
+- [MKSelectionAccessory.MapItemDetailPresentationStyle](./mkselectionaccessory/mapitemdetailpresentationstyle.md)
   The type of map item detail accessory presentation to use.
-- [class MKSelectionAccessory](mkselectionaccessory.md)
+- [class MKSelectionAccessory](./mkselectionaccessory.md)
   The type of accessory to display for a selected annotation.
-- [MKSelectionAccessory.MapItemDetailPresentationStyle.CalloutStyle](mkselectionaccessory/mapitemdetailpresentationstyle/calloutstyle.md)
+- [MKSelectionAccessory.MapItemDetailPresentationStyle.CalloutStyle](./mkselectionaccessory/mapitemdetailpresentationstyle/calloutstyle.md)
   The style to use for a map item detail callout presentation.
 
 

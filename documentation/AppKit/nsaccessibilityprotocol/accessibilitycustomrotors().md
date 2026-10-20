@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the custom rotors of the current accessibility element.
@@ -17,9 +18,10 @@ func accessibilityCustomRotors() -> [NSAccessibilityCustomRotor]
 
 ## See Also
 
-- [func setAccessibilityCustomRotors([NSAccessibilityCustomRotor])](nsaccessibilityprotocol/setaccessibilitycustomrotors(_:).md)
+### Assigning rotors
+- [func setAccessibilityCustomRotors([NSAccessibilityCustomRotor])](./setaccessibilitycustomrotors%28_%29.md)
   Sets the custom rotors of the current accessibility element.
-- [class NSAccessibilityCustomRotor](nsaccessibilitycustomrotor.md)
+- [class NSAccessibilityCustomRotor](../nsaccessibilitycustomrotor.md)
   A context-sensitive function that helps VoiceOver users find the next instance of a related accessibility element.
 
 

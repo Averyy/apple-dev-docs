@@ -1,7 +1,8 @@
 # highlight
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An effect  that morphs the pointer into a platter behind the view and shows a light source indicating position.
 
@@ -24,9 +25,10 @@ On tvOS, it applies a projection effect accompanied with a specular highlight on
 
 ## See Also
 
-- [static var automatic: HoverEffect](hovereffect/automatic.md)
+### Getting hover effects
+- [static var automatic: HoverEffect](./automatic.md)
   An effect  that attempts to determine the effect automatically. This is the default effect.
-- [static var lift: HoverEffect](hovereffect/lift.md)
+- [static var lift: HoverEffect](./lift.md)
   An effect that slides the pointer under the view and disappears as the view scales up and gains a shadow.
 
 

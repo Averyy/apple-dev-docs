@@ -1,7 +1,8 @@
 # init(conversationUUID:timeoutDate:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a conversation action.
 

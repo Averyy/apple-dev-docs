@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total duration of the presentation commands.
 
@@ -20,7 +21,8 @@ var duration: CMTime?
 
 ## See Also
 
-- [var commands: [PresentationCommand]](presentationdescriptor/commands.md)
+### Instance Properties
+- [var commands: [PresentationCommand]](./commands.md)
   An array of presentation commands.
 
 

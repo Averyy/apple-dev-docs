@@ -1,14 +1,15 @@
 # kThreadIOPassive
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 kThreadIOPassive = 0x20
 ```
 

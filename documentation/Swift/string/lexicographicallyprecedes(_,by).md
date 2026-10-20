@@ -1,7 +1,8 @@
 # lexicographicallyPrecedes(_:by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the sequence precedes another sequence in a lexicographical (dictionary) ordering, using the given predicate to compare elements.
 
@@ -34,7 +35,7 @@ The predicate must be a *strict weak ordering* over the elements. That is, for a
 
 > **Note**: This method implements the mathematical notion of lexicographical ordering, which has no connection to Unicode.  If you are sorting strings to present to the end user, use `String` APIs that perform localized comparison instead.
 
-> **Note**: O(*m*), where *m* is the lesser of the length of the sequence and the length of `other`.
+> **Complexity**: O(*m*), where *m* is the lesser of the length of the sequence and the length of `other`.
 
 ## Parameters
 
@@ -43,15 +44,16 @@ The predicate must be a *strict weak ordering* over the elements. That is, for a
 
 ## See Also
 
-- [func elementsEqual<OtherSequence>(OtherSequence) -> Bool](string/elementsequal(_:).md)
+### Comparing Characters
+- [func elementsEqual<OtherSequence>(OtherSequence) -> Bool](./elementsequal%28_%29.md)
   Returns a Boolean value indicating whether this sequence and another sequence contain the same elements in the same order.
-- [func elementsEqual<OtherSequence>(OtherSequence, by: (Self.Element, OtherSequence.Element) throws -> Bool) rethrows -> Bool](string/elementsequal(_:by:).md)
+- [func elementsEqual<OtherSequence>(OtherSequence, by: (Self.Element, OtherSequence.Element) throws -> Bool) rethrows -> Bool](./elementsequal%28_,by%29.md)
   Returns a Boolean value indicating whether this sequence and another sequence contain equivalent elements in the same order, using the given predicate as the equivalence test.
-- [func starts<PossiblePrefix>(with: PossiblePrefix) -> Bool](string/starts(with:).md)
+- [func starts<PossiblePrefix>(with: PossiblePrefix) -> Bool](./starts%28with%29.md)
   Returns a Boolean value indicating whether the initial elements of the sequence are the same as the elements in another sequence.
-- [func starts<PossiblePrefix>(with: PossiblePrefix, by: (Self.Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool](string/starts(with:by:).md)
+- [func starts<PossiblePrefix>(with: PossiblePrefix, by: (Self.Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool](./starts%28with,by%29.md)
   Returns a Boolean value indicating whether the initial elements of the sequence are equivalent to the elements in another sequence, using the given predicate as the equivalence test.
-- [func lexicographicallyPrecedes<OtherSequence>(OtherSequence) -> Bool](string/lexicographicallyprecedes(_:).md)
+- [func lexicographicallyPrecedes<OtherSequence>(OtherSequence) -> Bool](./lexicographicallyprecedes%28_%29.md)
   Returns a Boolean value indicating whether the sequence precedes another sequence in a lexicographical (dictionary) ordering, using the less-than operator (`<`) to compare elements.
 
 

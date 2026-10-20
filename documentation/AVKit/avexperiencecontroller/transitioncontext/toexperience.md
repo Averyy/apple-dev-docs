@@ -1,7 +1,8 @@
 # toExperience
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The experience to which the `AVExperienceController` has been requested to transition to.
 
@@ -16,9 +17,10 @@ let toExperience: AVExperienceController.Experience
 
 ## See Also
 
-- [let fromExperience: AVExperienceController.Experience](avexperiencecontroller/transitioncontext/fromexperience.md)
+### Inspecting the transition
+- [let fromExperience: AVExperienceController.Experience](./fromexperience.md)
   The experience of the `AVExperienceController` before the transition was initiated.
-- [let status: AVExperienceController.TransitionContext.Status](avexperiencecontroller/transitioncontext/status-swift.property.md)
+- [let status: AVExperienceController.TransitionContext.Status](./status-swift.property.md)
   The status of the transition.
 
 

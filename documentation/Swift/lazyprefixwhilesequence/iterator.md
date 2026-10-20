@@ -1,7 +1,8 @@
 # LazyPrefixWhileSequence.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An iterator over the initial elements traversed by a base iterator that satisfy a given predicate.
 
@@ -21,6 +22,8 @@ An iterator over the initial elements traversed by a base iterator that satisfy 
 struct Iterator
 ```
 
+Available when `Base` conforms to `Sequence`.
+
 #### Overview
 
 This is the associated iterator for the `LazyPrefixWhileSequence`, `LazyPrefixWhileCollection`, and `LazyPrefixWhileBidirectionalCollection` types.
@@ -28,19 +31,19 @@ This is the associated iterator for the `LazyPrefixWhileSequence`, `LazyPrefixWh
 ## Topics
 
 ### Type Aliases
-- [LazyPrefixWhileSequence.Iterator.Element](lazyprefixwhilesequence/iterator/element.md)
+- [LazyPrefixWhileSequence.Iterator.Element](./iterator/element.md)
   The type of element traversed by the iterator.
 ### Default Implementations
-- [IteratorProtocol Implementations](lazyprefixwhilesequence/iterator/iteratorprotocol-implementations.md)
-- [Sequence Implementations](lazyprefixwhilesequence/iterator/sequence-implementations.md)
+- [IteratorProtocol Implementations](./iterator/iteratorprotocol-implementations.md)
+- [Sequence Implementations](./iterator/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [IteratorProtocol](iteratorprotocol.md)
-- [Sequence](sequence.md)
+- [Copyable](../copyable.md)
+- [Escapable](../escapable.md)
+- [IteratorProtocol](../iteratorprotocol.md)
+- [Sequence](../sequence.md)
 
 
 ---

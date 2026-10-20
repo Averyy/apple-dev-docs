@@ -1,7 +1,8 @@
 # bottom
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The vertical coordinate of the lower-right point of the rectangle.
 
@@ -10,7 +11,7 @@ The vertical coordinate of the lower-right point of the rectangle.
 
 ## Declaration
 
-```swift
+```c
 short bottom;
 ```
 

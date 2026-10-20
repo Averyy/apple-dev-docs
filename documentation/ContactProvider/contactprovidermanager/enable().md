@@ -1,7 +1,8 @@
 # enable()
 
 **Framework**: ContactProvider  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests the person using the app to enable the extension domain.
 
@@ -19,17 +20,18 @@ func enable() async throws
 
 If necessary, this call waits for the person using the app to explicitly approve or deny using the extension domain.
 
-> **Note**: `ContactProviderError.deniedByUser` if the person dismisses the prompt without enabling the extension domain.
+> **Throws**: `ContactProviderError.deniedByUser` if the person dismisses the prompt without enabling the extension domain.
 
 ## See Also
 
-- [var domain: any ContactProviderDomain](contactprovidermanager/domain.md)
+### Managing the domain
+- [var domain: any ContactProviderDomain](./domain.md)
   The domain that this instance manages.
-- [var isEnabled: Bool](contactprovidermanager/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the person using the app enabled the extension domain.
-- [func reset() async throws](contactprovidermanager/reset.md)
+- [func reset() async throws](./reset%28%29.md)
   Resets the extension domain.
-- [func disable() async throws](contactprovidermanager/disable.md)
+- [func disable() async throws](./disable%28%29.md)
   Disables the extension domain.
 
 

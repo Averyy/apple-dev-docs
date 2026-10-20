@@ -5,13 +5,13 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual const IOUSBDescriptorHeader * FindNextAssociatedDescriptor(
  const void *current,
  UInt8type);
 ```
 
-#### Return_value
+#### Return Value
 
 Pointer to the descriptor, or NULL if no matching descriptors found.
 
@@ -26,36 +26,37 @@ Find the next descriptor of the requested type associated with the interface.
 
 ## See Also
 
-- [DeviceRequest(IOUSBDevRequest *, IOUSBCompletion *)](iousbinterface/1809501-devicerequest.md)
+### Miscellaneous
+- [DeviceRequest(IOUSBDevRequest *, IOUSBCompletion *)](./api-1809501-devicerequest.md)
   Sends a control request to the default control pipe in the device (pipe zero)
-- [DeviceRequest(IOUSBDevRequestDesc *, IOUSBCompletion *)](iousbinterface/1809505-devicerequest.md)
+- [DeviceRequest(IOUSBDevRequestDesc *, IOUSBCompletion *)](./api-1809505-devicerequest.md)
   Sends a control request to the default control pipe in the device (pipe zero)
-- [EnableRemoteWake](iousbinterface/1809508-enableremotewake.md)
+- [EnableRemoteWake](./api-1809508-enableremotewake.md)
   Will enable or disable the USB 3.0 remote wake function for the interface
-- [FindNextAltInterface](iousbinterface/1809512-findnextaltinterface.md)
-- [FindNextPipe(IOUSBPipe *, IOUSBFindEndpointRequest *)](iousbinterface/1809521-findnextpipe.md)
-- [FindNextPipe(IOUSBPipe *, IOUSBFindEndpointRequest *, bool)](iousbinterface/1809527-findnextpipe.md)
-- [GetAlternateSetting](iousbinterface/1809532-getalternatesetting.md)
-- [GetConfigValue](iousbinterface/1809537-getconfigvalue.md)
-- [GetDevice](iousbinterface/1809542-getdevice.md)
-- [GetEndpointProperties](iousbinterface/1809546-getendpointproperties.md)
+- [FindNextAltInterface](./api-1809512-findnextaltinterface.md)
+- [FindNextPipe(IOUSBPipe *, IOUSBFindEndpointRequest *)](./api-1809521-findnextpipe.md)
+- [FindNextPipe(IOUSBPipe *, IOUSBFindEndpointRequest *, bool)](./api-1809527-findnextpipe.md)
+- [GetAlternateSetting](./api-1809532-getalternatesetting.md)
+- [GetConfigValue](./api-1809537-getconfigvalue.md)
+- [GetDevice](./api-1809542-getdevice.md)
+- [GetEndpointProperties](./api-1809546-getendpointproperties.md)
   Returns the properties of an endpoint, possibly in an alternate interface.
-- [GetEndpointPropertiesV3](iousbinterface/1809552-getendpointpropertiesv3.md)
+- [GetEndpointPropertiesV3](./api-1809552-getendpointpropertiesv3.md)
   Returns the properties of an endpoint, possibly in an alternate interface, including any information from the SuperSpeed Companion Descriptor
-- [GetInterfaceClass](iousbinterface/1809556-getinterfaceclass.md)
-- [GetInterfaceNumber](iousbinterface/1809561-getinterfacenumber.md)
-- [GetInterfaceProtocol](iousbinterface/1809564-getinterfaceprotocol.md)
-- [GetInterfaceStatus](iousbinterface/1809569-getinterfacestatus.md)
+- [GetInterfaceClass](./api-1809556-getinterfaceclass.md)
+- [GetInterfaceNumber](./api-1809561-getinterfacenumber.md)
+- [GetInterfaceProtocol](./api-1809564-getinterfaceprotocol.md)
+- [GetInterfaceStatus](./api-1809569-getinterfacestatus.md)
   Returns the result of issuing a GET_STATUS request on the device for this interface.
-- [GetInterfaceStringIndex](iousbinterface/1809572-getinterfacestringindex.md)
-- [GetInterfaceSubClass](iousbinterface/1809576-getinterfacesubclass.md)
-- [GetNumEndpoints](iousbinterface/1809584-getnumendpoints.md)
-- [GetPipeObj](iousbinterface/1809591-getpipeobj.md)
-- [RecreateStreams](iousbinterface/1809596-recreatestreams.md)
-- [RememberStreams](iousbinterface/1809603-rememberstreams.md)
-- [RememberStreams.](iousbinterface/1809609-rememberstreams.md)
-- [SetAlternateInterface](iousbinterface/1809615-setalternateinterface.md)
-- [SetFunctionSuspendFeature](iousbinterface/1809621-setfunctionsuspendfeature.md)
+- [GetInterfaceStringIndex](./api-1809572-getinterfacestringindex.md)
+- [GetInterfaceSubClass](./api-1809576-getinterfacesubclass.md)
+- [GetNumEndpoints](./api-1809584-getnumendpoints.md)
+- [GetPipeObj](./api-1809591-getpipeobj.md)
+- [RecreateStreams](./api-1809596-recreatestreams.md)
+- [RememberStreams](./api-1809603-rememberstreams.md)
+- [RememberStreams.](./api-1809609-rememberstreams.md)
+- [SetAlternateInterface](./api-1809615-setalternateinterface.md)
+- [SetFunctionSuspendFeature](./api-1809621-setfunctionsuspendfeature.md)
   Issues a SET_FEATURE(FUNCTION_SUSPEND) to the interface.
 
 

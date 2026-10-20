@@ -1,7 +1,8 @@
 # isInterfaceOrientationLocked
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If the scene’s interface orientation is locked and preventing changes. To express a preference for this value, override  `UIViewController`’s `prefersInterfaceOrientationLocked`.
 
@@ -16,13 +17,18 @@ If the scene’s interface orientation is locked and preventing changes. To expr
 var isInterfaceOrientationLocked: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isInterfaceOrientationLocked) BOOL interfaceOrientationLocked;
+```
+
 ## See Also
 
-- [var systemFrame: CGRect](uiwindowscene/geometry/systemframe.md)
+### Accessing scene geometry
+- [var systemFrame: CGRect](./systemframe.md)
   The current frame of the scene, in system coordinates.
-- [var coordinateSpace: any UICoordinateSpace](uiwindowscene/geometry/coordinatespace.md)
+- [var coordinateSpace: any UICoordinateSpace](./coordinatespace.md)
   The coordinate space of the scene
-- [var interfaceOrientation: UIInterfaceOrientation](uiwindowscene/geometry/interfaceorientation.md)
+- [var interfaceOrientation: UIInterfaceOrientation](./interfaceorientation.md)
   The current interface orientation for the scene.
 
 

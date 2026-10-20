@@ -1,7 +1,8 @@
 # AttributeScopes.SwiftUIAttributes.KerningAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A key for the space added between specific pairs of characters in a run of attributed text.
 
@@ -25,25 +26,25 @@ enum KerningAttribute
 
 Kerning adjusts the gap between individual pairs, such as the two letters in “AV”, so that the pair looks evenly spaced. Give a positive value to open the pairs up and a negative value to tighten them:
 
-```None
+```
 var title = AttributedString("AVIATION")
 title.kern = 2
 
 Text(title)
 ```
 
-To space every character of a run apart by the same amount instead, use [`AttributeScopes.SwiftUIAttributes.TrackingAttribute`](attributescopes/swiftuiattributes/trackingattribute.md).
+To space every character of a run apart by the same amount instead, use [`AttributeScopes.SwiftUIAttributes.TrackingAttribute`](./trackingattribute.md).
 
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

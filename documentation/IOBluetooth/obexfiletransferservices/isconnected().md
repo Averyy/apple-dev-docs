@@ -1,17 +1,22 @@
 # isConnected()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the connected state of this module.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func isConnected() -> Bool
+```
+
+```objc
+- (BOOL) isConnected;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # ManagedApplicationListCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get the status of all managed apps on a device.
 
@@ -16,14 +17,14 @@ The command to get the status of all managed apps on a device.
 
 ## Declaration
 
-```swift
+```
 object ManagedApplicationListCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object ManagedApplicationListCommand.Command](managedapplicationlistcommand/command-data.dictionary.md)
+- [object ManagedApplicationListCommand.Command](./managedapplicationlistcommand/command-data.dictionary.md)
   The command to get the status of all managed apps on a device.
 
 ## Properties
@@ -33,7 +34,8 @@ object ManagedApplicationListCommand
 
 ## See Also
 
-- [object ManagedApplicationListResponse](managedapplicationlistresponse.md)
+### Commands and responses
+- [object ManagedApplicationListResponse](./managedapplicationlistresponse.md)
   A response from the device after it processes the command to get the status of all managed apps on a device.
 
 

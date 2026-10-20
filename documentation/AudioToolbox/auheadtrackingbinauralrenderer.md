@@ -1,7 +1,8 @@
 # AUHeadTrackingBinauralRenderer
 
 **Framework**: Audio Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A subclass of AUAudioUnit specifically for 3rd party spatial Audio Units.
 
@@ -16,9 +17,13 @@ A subclass of AUAudioUnit specifically for 3rd party spatial Audio Units.
 class AUHeadTrackingBinauralRenderer
 ```
 
+```objc
+@interface AUHeadTrackingBinauralRenderer : AUAudioUnit
+```
+
 ## Mentions
 
-- [Rendering Spatial Audio from Bluetooth headphones](rendering-spatial-audio-from-bluetooth-headphones.md)
+- [Rendering Spatial Audio from Bluetooth headphones](./rendering-spatial-audio-from-bluetooth-headphones.md)
 
 #### Overview
 
@@ -31,52 +36,53 @@ Only the audio mix engine may use AUHeadTrackingBinauralRenderer Audio Units to 
 ## Topics
 
 ### Instance Properties
-- [var deviceUID: String?](auheadtrackingbinauralrenderer/deviceuid.md)
+- [var deviceUID: String?](./auheadtrackingbinauralrenderer/deviceuid.md)
   The Unique Identifier (UID) of the Bluetooth headphone device providing IMU sensor data for head tracking.
-- [var isDisabled: Bool](auheadtrackingbinauralrenderer/isdisabled.md)
+- [var isDisabled: Bool](./auheadtrackingbinauralrenderer/isdisabled.md)
   Indicates whether the host is bypassing the renderer due to poor performance.
-- [var isHeadTracking: Bool](auheadtrackingbinauralrenderer/isheadtracking.md)
+- [var isHeadTracking: Bool](./auheadtrackingbinauralrenderer/isheadtracking.md)
   Indicates whether the host currently has enabled head tracking for this spatial Audio Unit.
 
 ## Relationships
 
 ### Inherits From
-- [AUAudioUnit](auaudiounit.md)
+- [AUAudioUnit](./auaudiounit.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Creating an Audio Unit extension](../avfaudio/creating-an-audio-unit-extension.md)
+### Audio Units
+- [Creating an Audio Unit extension](../AVFAudio/creating-an-audio-unit-extension.md)
   Build an extension by using an Xcode template.
-- [Creating custom audio effects](../avfaudio/creating-custom-audio-effects.md)
+- [Creating custom audio effects](../AVFAudio/creating-custom-audio-effects.md)
   Add custom audio-effect processing to apps like Logic Pro X and GarageBand by creating Audio Unit (AU) plug-ins.
-- [Incorporating Audio Effects and Instruments](incorporating-audio-effects-and-instruments.md)
+- [Incorporating Audio Effects and Instruments](./incorporating-audio-effects-and-instruments.md)
   Add custom audio processing and MIDI instruments to your app by hosting Audio Unit (AU) plug-ins.
-- [Debugging Out-of-Process Audio Units on Apple Silicon](debugging-out-of-process-audio-units-on-apple-silicon.md)
+- [Debugging Out-of-Process Audio Units on Apple Silicon](./debugging-out-of-process-audio-units-on-apple-silicon.md)
   Connect to out-of-process audio units using the Xcode debugger.
-- [Rendering Spatial Audio from Bluetooth headphones](rendering-spatial-audio-from-bluetooth-headphones.md)
+- [Rendering Spatial Audio from Bluetooth headphones](./rendering-spatial-audio-from-bluetooth-headphones.md)
   Create a Spatial Audio extension that allows Bluetooth headphones to track the wearer’s head movements for spatial audio playback.
-- [class AUAudioUnit](auaudiounit.md)
+- [class AUAudioUnit](./auaudiounit.md)
   A class that defines a host’s interface to an audio unit.
-- [class AUAudioUnitBus](auaudiounitbus.md)
+- [class AUAudioUnitBus](./auaudiounitbus.md)
   A class that defines an input or output connection point on an audio unit.
-- [class AUAudioUnitBusArray](auaudiounitbusarray.md)
+- [class AUAudioUnitBusArray](./auaudiounitbusarray.md)
   A class that defines a container for an audio unit’s input or output busses.
-- [class AUAudioUnitPreset](auaudiounitpreset.md)
+- [class AUAudioUnitPreset](./auaudiounitpreset.md)
   A class that describes an interface for custom parameter settings provided by the audio unit developer.
-- [class AUAudioUnitV2Bridge](auaudiounitv2bridge.md)
+- [class AUAudioUnitV2Bridge](./auaudiounitv2bridge.md)
   A class that wraps a version 2 audio unit as version 3 audio unit.
-- [func AudioUnitExtensionCopyComponentList(CFString) -> Unmanaged<CFArray>?](audiounitextensioncopycomponentlist(_:).md)
+- [func AudioUnitExtensionCopyComponentList(CFString) -> Unmanaged<CFArray>?](./audiounitextensioncopycomponentlist%28_%29.md)
   Returns the component registrations for a given audio unit extension.
-- [func AudioUnitExtensionSetComponentList(CFString, CFArray?) -> OSStatus](audiounitextensionsetcomponentlist(_:_:).md)
+- [func AudioUnitExtensionSetComponentList(CFString, CFArray?) -> OSStatus](./audiounitextensionsetcomponentlist%28_,_%29.md)
   Allows the implementor of an audio unit extension to dynamically modify the list of component registrations for the extension.
-- [protocol AUAudioUnitFactory](auaudiounitfactory.md)
+- [protocol AUAudioUnitFactory](./auaudiounitfactory.md)
   An object that creates a version 3 audio unit.
 
 

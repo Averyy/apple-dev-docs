@@ -1,7 +1,8 @@
 # ARMatteGenerator.Resolution
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A resolution for a matte texture.
 
@@ -15,6 +16,10 @@ A resolution for a matte texture.
 enum Resolution
 ```
 
+```c
+enum ARMatteResolution : NSInteger;
+```
+
 #### Overview
 
 You generate a matte texture every frame, specifying whether its resolution is the full size or half of the camera image.
@@ -22,22 +27,22 @@ You generate a matte texture every frame, specifying whether its resolution is t
 ## Topics
 
 ### Choosing a Resolution Option
-- [ARMatteGenerator.Resolution.full](armattegenerator/resolution/full.md)
+- [ARMatteGenerator.Resolution.full](./resolution/full.md)
   An option that specifies the full camera image resolution.
-- [ARMatteGenerator.Resolution.half](armattegenerator/resolution/half.md)
+- [ARMatteGenerator.Resolution.half](./resolution/half.md)
   An option that specifies half of the camera image resolution.
 ### Initializers
-- [init?(rawValue: Int)](armattegenerator/resolution/init(rawvalue:).md)
+- [init?(rawValue: Int)](./resolution/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

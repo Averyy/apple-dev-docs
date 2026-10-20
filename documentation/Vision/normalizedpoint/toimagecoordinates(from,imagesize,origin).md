@@ -1,7 +1,8 @@
 # toImageCoordinates(from:imageSize:origin:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a point normalized to a region within an image into full image coordinates.
 
@@ -28,7 +29,8 @@ func toImageCoordinates(from regionOfInterest: NormalizedRect, imageSize: CGSize
 
 ## See Also
 
-- [func toImageCoordinates(CGSize, origin: CoordinateOrigin) -> CGPoint](normalizedpoint/toimagecoordinates(_:origin:).md)
+### Converting points
+- [func toImageCoordinates(CGSize, origin: CoordinateOrigin) -> CGPoint](./toimagecoordinates%28_,origin%29.md)
   Converts a point in normalized coordinates into image coordinates.
 
 

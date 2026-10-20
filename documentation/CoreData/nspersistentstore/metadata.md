@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metadata for the persistent store.
 
@@ -10,7 +11,7 @@ The metadata for the persistent store.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ The metadata for the persistent store.
 var metadata: [String : Any]! { get set }
 ```
 
+```objc
+@property (nonatomic, strong, null_resettable) NSDictionary<NSString *,id> * metadata;
+```
+
 #### Discussion
 
-The dictionary must include the store type ([`NSStoreTypeKey`](nsstoretypekey.md)) and UUID ([`NSStoreUUIDKey`](nsstoreuuidkey.md)).
+The dictionary must include the store type ([`NSStoreTypeKey`](../nsstoretypekey.md)) and UUID ([`NSStoreUUIDKey`](../nsstoreuuidkey.md)).
 
 ##### Special Considerations
 
@@ -30,11 +35,12 @@ Subclasses must override this property to provide storage and persistence for th
 
 ## See Also
 
-- [class func metadataForPersistentStore(with: URL) throws -> [String : Any]](nspersistentstore/metadataforpersistentstore(with:).md)
+### Managing Store Metadata
+- [class func metadataForPersistentStore(with: URL) throws -> [String : Any]](./metadataforpersistentstore%28with%29.md)
   Returns the metadata from the persistent store at the given URL.
-- [class func setMetadata([String : Any]?, forPersistentStoreAt: URL) throws](nspersistentstore/setmetadata(_:forpersistentstoreat:).md)
+- [class func setMetadata([String : Any]?, forPersistentStoreAt: URL) throws](./setmetadata%28_,forpersistentstoreat%29.md)
   Sets the metadata for the store at a given URL.
-- [func loadMetadata() throws](nspersistentstore/loadmetadata.md)
+- [func loadMetadata() throws](./loadmetadata%28%29.md)
   Instructs the persistent store to load its metadata.
 
 

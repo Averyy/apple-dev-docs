@@ -1,12 +1,13 @@
 # MLWordTagger.FeatureExtractorType.dynamicEmbedding
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A feature extractor that provides embeddings for words, based on their in-context use.
 
 **Availability**:
-- macOS 11.0+
+- macOS 11.0+ - Deprecated in 14.0 (renamed: elmoEmbedding)
 
 ## Declaration
 
@@ -20,9 +21,10 @@ Dynamic embedding requires certain downloadable assets to be present on device a
 
 ## See Also
 
-- [MLWordTagger.FeatureExtractorType.bertEmbedding](mlwordtagger/featureextractortype/bertembedding.md)
+### Selecting a feature extractor type
+- [MLWordTagger.FeatureExtractorType.bertEmbedding](./bertembedding.md)
   A feature extractor that provides BERT contextual word embeddings.
-- [MLWordTagger.FeatureExtractorType.elmoEmbedding](mlwordtagger/featureextractortype/elmoembedding.md)
+- [MLWordTagger.FeatureExtractorType.elmoEmbedding](./elmoembedding.md)
   A feature extractor that provides ELMo contextual word embeddings.
 
 

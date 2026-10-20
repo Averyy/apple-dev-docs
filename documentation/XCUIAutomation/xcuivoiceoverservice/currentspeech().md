@@ -1,7 +1,8 @@
 # currentSpeech()
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Return the speech for the currently focused element.
 
@@ -19,6 +20,10 @@ Return the speech for the currently focused element.
 
 ```swift
 func currentSpeech() throws -> XCUIVoiceOverService.Output
+```
+
+```objc
+- (XCUIVoiceOverOutput *) currentSpeechAndReturnError:(NSError **) error;
 ```
 
 

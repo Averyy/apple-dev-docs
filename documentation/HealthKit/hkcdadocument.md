@@ -1,7 +1,8 @@
 # HKCDADocument
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object representing a Clinical Document Architecture (CDA) document in HealthKit.
 
@@ -18,47 +19,52 @@ An object representing a Clinical Document Architecture (CDA) document in Health
 class HKCDADocument
 ```
 
+```objc
+@interface HKCDADocument : NSObject
+```
+
 #### Overview
 
-CDA documents use XML to encode clinical documents so that they can be easily exchanged. For more information on the CDA document format, see the [`Clinical Document Architecture, R2`](https://developer.apple.comhttp://www.hl7.org/implement/standards/product_brief.cfm?product_id=7) standard.
+CDA documents use XML to encode clinical documents so that they can be easily exchanged. For more information on the CDA document format, see the [Clinical Document Architecture, R2](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=7) standard.
 
-Do not instantiate `HKCDADocument` objects directly. Instead, create a new [`HKCDADocumentSample`](hkcdadocumentsample.md) object by calling the  [`init(data:start:end:metadata:)`](hkcdadocumentsample/init(data:start:end:metadata:).md) method, and passing the CDA’s XML data. HealthKit creates a `HKCDADocument` object for the XML, and assigns it to the sample’s [`document`](hkcdadocumentsample/document.md) property.
+Do not instantiate `HKCDADocument` objects directly. Instead, create a new [`HKCDADocumentSample`](./hkcdadocumentsample.md) object by calling the  [`init(data:start:end:metadata:)`](./hkcdadocumentsample/init%28data,start,end,metadata%29.md) method, and passing the CDA’s XML data. HealthKit creates a `HKCDADocument` object for the XML, and assigns it to the sample’s [`document`](./hkcdadocumentsample/document.md) property.
 
 `HKCDADocument` objects are immutable. When you create a new document sample, HealthKit parses the title, patient name, author name, and custodian name from the XML to populates the document object’s properties. These properties cannot be changed.
 
-As with many HealthKit classes, don’t subclass the [`HKCDADocument`](hkcdadocument.md) class.
+As with many HealthKit classes, don’t subclass the [`HKCDADocument`](./hkcdadocument.md) class.
 
 ## Topics
 
 ### Accessing the Document’s Data
-- [var authorName: String](hkcdadocument/authorname.md)
+- [var authorName: String](./hkcdadocument/authorname.md)
   The document’s author.
-- [var custodianName: String](hkcdadocument/custodianname.md)
+- [var custodianName: String](./hkcdadocument/custodianname.md)
   The name of the organization responsible for the document.
-- [var documentData: Data?](hkcdadocument/documentdata.md)
+- [var documentData: Data?](./hkcdadocument/documentdata.md)
   The CDA document stored as XML data.
-- [var patientName: String](hkcdadocument/patientname.md)
+- [var patientName: String](./hkcdadocument/patientname.md)
   The patient’s name.
-- [var title: String](hkcdadocument/title.md)
+- [var title: String](./hkcdadocument/title.md)
   The document’s title.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var document: HKCDADocument?](hkcdadocumentsample/document.md)
+### Accessing the Document
+- [var document: HKCDADocument?](./hkcdadocumentsample/document.md)
   The CDA document.
 
 

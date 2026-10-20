@@ -1,7 +1,8 @@
 # kSpeechDictionaryLocaleIdentifier
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The locale associated with the pronunciation.
 
@@ -12,6 +13,10 @@ The locale associated with the pronunciation.
 
 ```swift
 let kSpeechDictionaryLocaleIdentifier: CFString
+```
+
+```c
+const CFStringRef kSpeechDictionaryLocaleIdentifier;
 ```
 
 

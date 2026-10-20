@@ -1,7 +1,8 @@
 # WKInterfaceMap.UserTrackingMode.none
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The map remains stationary, even if the user moves off the map.
 
@@ -14,11 +15,16 @@ The map remains stationary, even if the user moves off the map.
 case none
 ```
 
+```c
+WKInterfaceMapUserTrackingModeNone
+```
+
 ## See Also
 
-- [WKInterfaceMap.UserTrackingMode.follow](wkinterfacemap/usertrackingmode/follow.md)
+### Tracking Modes
+- [WKInterfaceMap.UserTrackingMode.follow](./follow.md)
   The map scrolls to follow the user as they move.
-- [WKInterfaceMap.UserTrackingMode.follow](wkinterfacemap/usertrackingmode/follow.md)
+- [WKInterfaceMap.UserTrackingMode.follow](./follow.md)
   The map scrolls to follow the user as they move.
 
 

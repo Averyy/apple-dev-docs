@@ -1,17 +1,24 @@
 # widgetController()
 
 **Framework**: Notification Center  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a widget controller used to specify whether a widget has content to display.
 
 **Availability**:
-- macOS 10.10+
+- macOS 10.10+ - Deprecated in 11.0
+
+> **Deprecated**: Use [WidgetKit](../../WidgetKit/WidgetKit.md) instead.
 
 ## Declaration
 
 ```swift
 class func widgetController() -> Self
+```
+
+```objc
++ (instancetype) widgetController;
 ```
 
 #### Return Value

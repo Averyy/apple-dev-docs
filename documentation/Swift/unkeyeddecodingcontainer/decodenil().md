@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Decodes a null value.
@@ -29,7 +30,7 @@ Whether the encountered value was null.
 
 If the value is not null, does not increment currentIndex.
 
-> **Note**: `DecodingError.valueNotFound` if there are no more values to decode.
+> **Throws**: `DecodingError.valueNotFound` if there are no more values to decode.
 
 
 ---

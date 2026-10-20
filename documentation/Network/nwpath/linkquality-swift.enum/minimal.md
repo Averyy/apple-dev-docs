@@ -1,7 +1,8 @@
 # NWPath.LinkQuality.minimal
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Link quality is minimal
 

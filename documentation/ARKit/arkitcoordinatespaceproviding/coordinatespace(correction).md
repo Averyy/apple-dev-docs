@@ -2,6 +2,7 @@
 
 **Framework**: ARKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 The coordinate space of this object.

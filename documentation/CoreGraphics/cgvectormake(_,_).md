@@ -1,18 +1,19 @@
 # CGVectorMake(_:_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a vector with the specified dimension values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns a vector with the specified dimension values.
 func CGVectorMake(_ dx: CGFloat, _ dy: CGFloat) -> CGVector
 ```
 
+```c
+static CGVector CGVectorMake(CGFloat dx, CGFloat dy);
+```
+
 #### Return Value
 
-Returns a [`CGVector`](https://developer.apple.com/documentation/corefoundation/cgvector) structure with the specified coordinates.
+Returns a [`CGVector`](../CoreFoundation/cgvector.md) structure with the specified coordinates.
 
 ## Parameters
 
@@ -31,11 +36,12 @@ Returns a [`CGVector`](https://developer.apple.com/documentation/corefoundation/
 
 ## See Also
 
-- [func CGPointMake(CGFloat, CGFloat) -> CGPoint](cgpointmake(_:_:).md)
+### Creating a Geometric Primitive from Values
+- [func CGPointMake(CGFloat, CGFloat) -> CGPoint](./cgpointmake%28_,_%29.md)
   Returns a point with the specified coordinates.
-- [func CGRectMake(CGFloat, CGFloat, CGFloat, CGFloat) -> CGRect](cgrectmake(_:_:_:_:).md)
+- [func CGRectMake(CGFloat, CGFloat, CGFloat, CGFloat) -> CGRect](./cgrectmake%28_,_,_,_%29.md)
   Returns a rectangle with the specified coordinate and size values.
-- [func CGSizeMake(CGFloat, CGFloat) -> CGSize](cgsizemake(_:_:).md)
+- [func CGSizeMake(CGFloat, CGFloat) -> CGSize](./cgsizemake%28_,_%29.md)
   Returns a size with the specified dimension values.
 
 

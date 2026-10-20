@@ -1,15 +1,16 @@
 # Current Voice Keys
 
-**Framework**: Application Services
+**Framework**: Application Services  
+**Role**: API Collection
 
 Keys used with the `kSpeechCurrentVoiceProperty` property to specify information about the current voice.
 
 ## Topics
 
 ### Constants
-- [let kSpeechVoiceCreator: CFString](kspeechvoicecreator.md)
+- [let kSpeechVoiceCreator: CFString](../kspeechvoicecreator.md)
   The synthesizer that is required to use the voice. 
-- [let kSpeechVoiceID: CFString](kspeechvoiceid.md)
+- [let kSpeechVoiceID: CFString](../kspeechvoiceid.md)
   The voice ID of the voice for the synthesizer (every voice on a synthesizer has a unique ID).
 
 

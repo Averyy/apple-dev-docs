@@ -1,14 +1,15 @@
 # kHIDUsage_Csmr_ALClock
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Csmr_ALClock = 0x1B3
 ```
 

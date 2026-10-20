@@ -1,7 +1,8 @@
 # ErrorResponse
 
 **Framework**: Apple Maps Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about an error that occurs while processing a request.
 
@@ -10,7 +11,7 @@ Information about an error that occurs while processing a request.
 
 ## Declaration
 
-```swift
+```
 object ErrorResponse
 ```
 

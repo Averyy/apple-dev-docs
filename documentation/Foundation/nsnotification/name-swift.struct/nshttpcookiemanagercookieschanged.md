@@ -1,7 +1,8 @@
 # NSHTTPCookieManagerCookiesChanged
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification posted when the cookies stored in the cookie storage have changed.
 
@@ -20,15 +21,20 @@ A notification posted when the cookies stored in the cookie storage have changed
 static let NSHTTPCookieManagerCookiesChanged: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const NSHTTPCookieManagerCookiesChangedNotification;
+```
+
 #### Discussion
 
-The notification’s [`object`](notification/object.md) is the [`HTTPCookieStorage`](httpcookiestorage.md) instance. This notification does not contain a [`userInfo`](notification/userinfo.md) dictionary.
+The notification’s [`object`](../../notification/object.md) is the [`HTTPCookieStorage`](../../httpcookiestorage.md) instance. This notification does not contain a [`userInfo`](../../notification/userinfo.md) dictionary.
 
 ## See Also
 
-- [HTTPCookieStorage.CookiesChangedMessage](httpcookiestorage/cookieschangedmessage.md)
+### Tracking cookie storage changes
+- [HTTPCookieStorage.CookiesChangedMessage](../../httpcookiestorage/cookieschangedmessage.md)
   A message a cookie storage instance sends when its cookies change.
-- [static let NSHTTPCookieManagerAcceptPolicyChanged: NSNotification.Name](nsnotification/name-swift.struct/nshttpcookiemanageracceptpolicychanged.md)
+- [static let NSHTTPCookieManagerAcceptPolicyChanged: NSNotification.Name](./nshttpcookiemanageracceptpolicychanged.md)
   A notification posted when the acceptance policy of the cookie storage has changed.
 
 

@@ -1,7 +1,8 @@
 # DeviceActivityData.ActivitySegment
 
 **Framework**: Device Activity  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Activity data for a specific time interval.
 
@@ -18,40 +19,41 @@ struct ActivitySegment
 
 #### Overview
 
-This type contains all of the activity details for a particular person on a particular device during [`dateInterval`](deviceactivitydata/activitysegment/dateinterval.md).
+This type contains all of the activity details for a particular person on a particular device during [`dateInterval`](./activitysegment/dateinterval.md).
 
 ## Topics
 
 ### Defining the segment
-- [var dateInterval: DateInterval](deviceactivitydata/activitysegment/dateinterval.md)
+- [var dateInterval: DateInterval](./activitysegment/dateinterval.md)
   Access the date interval of the activity segment.
 ### Measuring activity
-- [var totalActivityDuration: TimeInterval](deviceactivitydata/activitysegment/totalactivityduration.md)
+- [var totalActivityDuration: TimeInterval](./activitysegment/totalactivityduration.md)
   Access the total activity time during the activity segment.
-- [var longestActivity: DateInterval?](deviceactivitydata/activitysegment/longestactivity.md)
+- [var longestActivity: DateInterval?](./activitysegment/longestactivity.md)
   Access the date interval of the longest activity session during the activity segment.
 ### Tracking device usage
-- [var firstPickup: Date?](deviceactivitydata/activitysegment/firstpickup.md)
+- [var firstPickup: Date?](./activitysegment/firstpickup.md)
   Access the first time the person picked up the device during the activity segment.
-- [var totalPickupsWithoutApplicationActivity: Int](deviceactivitydata/activitysegment/totalpickupswithoutapplicationactivity.md)
+- [var totalPickupsWithoutApplicationActivity: Int](./activitysegment/totalpickupswithoutapplicationactivity.md)
   Access the number of device pickups without application use.
 ### Accessing categorized activity
-- [var categories: DeviceActivityResults<DeviceActivityData.CategoryActivity>](deviceactivitydata/activitysegment/categories.md)
+- [var categories: DeviceActivityResults<DeviceActivityData.CategoryActivity>](./activitysegment/categories.md)
   Access the categorized device activity during the activity segment.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var activitySegments: DeviceActivityResults<DeviceActivityData.ActivitySegment>](deviceactivitydata/activitysegments.md)
+### Managing activity data
+- [var activitySegments: DeviceActivityResults<DeviceActivityData.ActivitySegment>](./activitysegments.md)
   Access the activity divided into segments.
-- [var segmentInterval: DeviceActivityFilter.SegmentInterval](deviceactivitydata/segmentinterval.md)
+- [var segmentInterval: DeviceActivityFilter.SegmentInterval](./segmentinterval.md)
   Access the segment interval of each activity segment.
-- [var lastUpdatedDate: Date](deviceactivitydata/lastupdateddate.md)
+- [var lastUpdatedDate: Date](./lastupdateddate.md)
   Access the date when the system last updated the data for this device.
 
 

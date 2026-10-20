@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOPMPowerFlags currentPowerFlags;
 ```
 
@@ -15,13 +15,14 @@ used by child
 
 ## See Also
 
-- [stateKnown](iopowerconnection/stateknown.md)
-- [requestFlag](iopowerconnection/requestflag.md)
-- [readyFlag](iopowerconnection/readyflag.md)
-- [preventSystemSleepFlag](iopowerconnection/preventsystemsleepflag.md)
-- [preventIdleSleepFlag](iopowerconnection/preventidlesleepflag.md)
-- [desiredDomainState](iopowerconnection/desireddomainstate.md)
-- [awaitingAck](iopowerconnection/awaitingack.md)
+### Instance Variables
+- [stateKnown](./stateknown.md)
+- [requestFlag](./requestflag.md)
+- [readyFlag](./readyflag.md)
+- [preventSystemSleepFlag](./preventsystemsleepflag.md)
+- [preventIdleSleepFlag](./preventidlesleepflag.md)
+- [desiredDomainState](./desireddomainstate.md)
+- [awaitingAck](./awaitingack.md)
 
 
 ---

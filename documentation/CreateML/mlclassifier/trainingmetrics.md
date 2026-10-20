@@ -1,7 +1,8 @@
 # trainingMetrics
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Measurements of the classifier’s performance on the training data set.
 
@@ -16,9 +17,10 @@ var trainingMetrics: MLClassifierMetrics { get }
 
 ## See Also
 
-- [func evaluation(on:)](mlclassifier/evaluation(on:).md)
+### Evaluating a classifier
+- [func evaluation(on:)](./evaluation%28on%29.md)
   Evaluates the classifier on the provided labeled data.
-- [var validationMetrics: MLClassifierMetrics](mlclassifier/validationmetrics.md)
+- [var validationMetrics: MLClassifierMetrics](./validationmetrics.md)
   Measurements of the classifier’s performance on the validation data set.
 
 

@@ -1,15 +1,16 @@
 # UIDeviceOrientation
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the physical orientation of the device.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,58 +18,63 @@ Constants that describe the physical orientation of the device.
 enum UIDeviceOrientation
 ```
 
+```c
+enum UIDeviceOrientation : NSInteger;
+```
+
 #### Overview
 
-The [`orientation`](uidevice/orientation.md) property uses these constants to identify the device orientation. These constants identify the physical orientation of the device and aren’t tied to the orientation of your app’s user interface.
+The [`orientation`](./uidevice/orientation.md) property uses these constants to identify the device orientation. These constants identify the physical orientation of the device and aren’t tied to the orientation of your app’s user interface.
 
 ## Topics
 
 ### Device orientations
-- [UIDeviceOrientation.unknown](uideviceorientation/unknown.md)
+- [UIDeviceOrientation.unknown](./uideviceorientation/unknown.md)
   The orientation of the device can’t be determined.
-- [UIDeviceOrientation.portrait](uideviceorientation/portrait.md)
+- [UIDeviceOrientation.portrait](./uideviceorientation/portrait.md)
   The device is in portrait mode, with the device held upright and the front-facing camera at the top.
-- [UIDeviceOrientation.portraitUpsideDown](uideviceorientation/portraitupsidedown.md)
+- [UIDeviceOrientation.portraitUpsideDown](./uideviceorientation/portraitupsidedown.md)
   The device is in portrait mode but upside down, with the device held upright and the front-facing camera at the bottom.
-- [UIDeviceOrientation.landscapeLeft](uideviceorientation/landscapeleft.md)
+- [UIDeviceOrientation.landscapeLeft](./uideviceorientation/landscapeleft.md)
   The device is in landscape mode, with the device held upright and the front-facing camera on the left side.
-- [UIDeviceOrientation.landscapeRight](uideviceorientation/landscaperight.md)
+- [UIDeviceOrientation.landscapeRight](./uideviceorientation/landscaperight.md)
   The device is in landscape mode, with the device held upright and the front-facing camera on the right side.
-- [UIDeviceOrientation.faceUp](uideviceorientation/faceup.md)
+- [UIDeviceOrientation.faceUp](./uideviceorientation/faceup.md)
   The device is held parallel to the ground with the screen facing upwards.
-- [UIDeviceOrientation.faceDown](uideviceorientation/facedown.md)
+- [UIDeviceOrientation.faceDown](./uideviceorientation/facedown.md)
   The device is held parallel to the ground with the screen facing downwards.
 ### Orientation testing
-- [var isPortrait: Bool](uideviceorientation/isportrait.md)
+- [var isPortrait: Bool](./uideviceorientation/isportrait.md)
   A Boolean value that indicates whether the device is in a portrait orientation.
-- [var isLandscape: Bool](uideviceorientation/islandscape.md)
+- [var isLandscape: Bool](./uideviceorientation/islandscape.md)
   A Boolean value that indicates whether the device is in a landscape orientation.
-- [var isFlat: Bool](uideviceorientation/isflat.md)
+- [var isFlat: Bool](./uideviceorientation/isflat.md)
   A Boolean value that indicates whether the specified orientation is face up or face down.
-- [var isValidInterfaceOrientation: Bool](uideviceorientation/isvalidinterfaceorientation.md)
+- [var isValidInterfaceOrientation: Bool](./uideviceorientation/isvalidinterfaceorientation.md)
   A Boolean value that indicates whether the specified orientation is one of the portrait or landscape orientations.
 ### Initializers
-- [init?(rawValue: Int)](uideviceorientation/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uideviceorientation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var orientation: UIDeviceOrientation](uidevice/orientation.md)
+### Tracking the device orientation
+- [var orientation: UIDeviceOrientation](./uidevice/orientation.md)
   The physical orientation of the device.
-- [var isGeneratingDeviceOrientationNotifications: Bool](uidevice/isgeneratingdeviceorientationnotifications.md)
+- [var isGeneratingDeviceOrientationNotifications: Bool](./uidevice/isgeneratingdeviceorientationnotifications.md)
   A Boolean value that indicates whether the device generates orientation notifications.
-- [func beginGeneratingDeviceOrientationNotifications()](uidevice/begingeneratingdeviceorientationnotifications.md)
+- [func beginGeneratingDeviceOrientationNotifications()](./uidevice/begingeneratingdeviceorientationnotifications%28%29.md)
   Begins the generation of notifications of device orientation changes.
-- [func endGeneratingDeviceOrientationNotifications()](uidevice/endgeneratingdeviceorientationnotifications.md)
+- [func endGeneratingDeviceOrientationNotifications()](./uidevice/endgeneratingdeviceorientationnotifications%28%29.md)
   Ends the generation of notifications of device orientation changes.
 
 

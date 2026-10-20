@@ -1,14 +1,15 @@
 # kIODKDisableCDHashChecking
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kIODKDisableCDHashChecking = 0x00004000ULL
 ```
 

@@ -1,7 +1,8 @@
 # libraryType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of library to create.
 
@@ -19,13 +20,18 @@ The kind of library to create.
 var libraryType: MTLLibraryType { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLLibraryType libraryType;
+```
+
 #### Discussion
 
-The default value is [`MTLLibraryType.executable`](mtllibrarytype/executable.md).
+The default value is [`MTLLibraryType.executable`](../mtllibrarytype/executable.md).
 
 ## See Also
 
-- [var installName: String?](mtlcompileoptions/installname.md)
+### Configuring the library output options
+- [var installName: String?](./installname.md)
   For a dynamic library, the name to use when installing the library.
 
 

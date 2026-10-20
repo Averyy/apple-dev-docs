@@ -1,7 +1,8 @@
 # MLWordTagger.ModelAlgorithmType.transferLearning(_:revision:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A transfer-learning algorithm.
 
@@ -16,9 +17,10 @@ case transferLearning(MLWordTagger.FeatureExtractorType, revision: Int = 1)
 
 ## See Also
 
-- [MLWordTagger.ModelAlgorithmType.crf(revision:)](mlwordtagger/modelalgorithmtype/crf(revision:).md)
+### Selecting an algorithm type
+- [MLWordTagger.ModelAlgorithmType.crf(revision:)](./crf%28revision%29.md)
   A conditional random field algorithm.
-- [MLWordTagger.FeatureExtractorType](mlwordtagger/featureextractortype.md)
+- [MLWordTagger.FeatureExtractorType](../featureextractortype.md)
   The feature extractors that are available to train a word tagger using with the transfer-learning algorithm option.
 
 

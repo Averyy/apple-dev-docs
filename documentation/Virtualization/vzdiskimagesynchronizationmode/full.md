@@ -1,7 +1,8 @@
 # VZDiskImageSynchronizationMode.full
 
 **Framework**: Virtualization  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Synchronizes data to the permanent storage holding the disk image.
 
@@ -14,15 +15,20 @@ Synchronizes data to the permanent storage holding the disk image.
 case full
 ```
 
+```c
+VZDiskImageSynchronizationModeFull
+```
+
 #### Discussion
 
 This mode synchronizes the data with the permanent storage holding the disk image and ensures the data moves from the disk’s internal cache to permanent storage. This ensures there’s no loss of already synchronized data in the case of panic or loss of power.
 
 ## See Also
 
-- [VZDiskImageSynchronizationMode.fsync](vzdiskimagesynchronizationmode/fsync.md)
+### Disk image synchronization modes
+- [VZDiskImageSynchronizationMode.fsync](./fsync.md)
   Synchronizes data to the drive using the system’s best-effort synchronization mode.
-- [VZDiskImageSynchronizationMode.none](vzdiskimagesynchronizationmode/none.md)
+- [VZDiskImageSynchronizationMode.none](./none.md)
   Disables data synchronization with the permanent storage.
 
 

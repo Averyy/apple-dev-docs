@@ -1,11 +1,12 @@
 # Hashable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var hashValue: Int](substring/hashvalue.md)
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
 
 

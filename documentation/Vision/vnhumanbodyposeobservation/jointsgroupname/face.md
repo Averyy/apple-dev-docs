@@ -1,7 +1,8 @@
 # face
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The face.
 
@@ -17,6 +18,10 @@ The face.
 
 ```swift
 static let face: VNHumanBodyPoseObservation.JointsGroupName
+```
+
+```c
+extern VNHumanBodyPoseObservationJointsGroupName const VNHumanBodyPoseObservationJointsGroupNameFace;
 ```
 
 

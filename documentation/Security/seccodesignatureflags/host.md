@@ -1,7 +1,8 @@
 # host
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 May host guest code.
 
@@ -13,6 +14,10 @@ May host guest code.
 
 ```swift
 static var host: SecCodeSignatureFlags { get }
+```
+
+```c
+kSecCodeSignatureHost
 ```
 
 #### Discussion

@@ -1,10 +1,11 @@
 # kBluetoothLESecurityManagerCommandCodeSigningInfo
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,23 +13,28 @@
 var kBluetoothLESecurityManagerCommandCodeSigningInfo: BluetoothLESecurityManagerCommandCode { get }
 ```
 
+```c
+kBluetoothLESecurityManagerCommandCodeSigningInfo
+```
+
 ## See Also
 
-- [var kBluetoothLESecurityManagerCommandCodeEncryptionInfo: BluetoothLESecurityManagerCommandCode](kbluetoothlesecuritymanagercommandcodeencryptioninfo.md)
-- [var kBluetoothLESecurityManagerCommandCodeIdentityAddressInfo: BluetoothLESecurityManagerCommandCode](kbluetoothlesecuritymanagercommandcodeidentityaddressinfo.md)
-- [var kBluetoothLESecurityManagerCommandCodeIdentityInfo: BluetoothLESecurityManagerCommandCode](kbluetoothlesecuritymanagercommandcodeidentityinfo.md)
-- [var kBluetoothLESecurityManagerCommandCodeMasterIdentification: BluetoothLESecurityManagerCommandCode](kbluetoothlesecuritymanagercommandcodemasteridentification.md)
-- [var kBluetoothLESecurityManagerCommandCodePairingConfirm: BluetoothLESecurityManagerCommandCode](kbluetoothlesecuritymanagercommandcodepairingconfirm.md)
-- [var kBluetoothLESecurityManagerCommandCodePairingDHKeyCheck: BluetoothLESecurityManagerCommandCode](kbluetoothlesecuritymanagercommandcodepairingdhkeycheck.md)
-- [var kBluetoothLESecurityManagerCommandCodePairingFailed: BluetoothLESecurityManagerCommandCode](kbluetoothlesecuritymanagercommandcodepairingfailed.md)
-- [var kBluetoothLESecurityManagerCommandCodePairingKeypressNotification: BluetoothLESecurityManagerCommandCode](kbluetoothlesecuritymanagercommandcodepairingkeypressnotification.md)
-- [var kBluetoothLESecurityManagerCommandCodePairingPublicKey: BluetoothLESecurityManagerCommandCode](kbluetoothlesecuritymanagercommandcodepairingpublickey.md)
-- [var kBluetoothLESecurityManagerCommandCodePairingRandom: BluetoothLESecurityManagerCommandCode](kbluetoothlesecuritymanagercommandcodepairingrandom.md)
-- [var kBluetoothLESecurityManagerCommandCodePairingRequest: BluetoothLESecurityManagerCommandCode](kbluetoothlesecuritymanagercommandcodepairingrequest.md)
-- [var kBluetoothLESecurityManagerCommandCodePairingResponse: BluetoothLESecurityManagerCommandCode](kbluetoothlesecuritymanagercommandcodepairingresponse.md)
-- [var kBluetoothLESecurityManagerCommandCodeReserved: BluetoothLESecurityManagerCommandCode](kbluetoothlesecuritymanagercommandcodereserved.md)
-- [var kBluetoothLESecurityManagerCommandCodeReservedEnd: BluetoothLESecurityManagerCommandCode](kbluetoothlesecuritymanagercommandcodereservedend.md)
-- [var kBluetoothLESecurityManagerCommandCodeReservedStart: BluetoothLESecurityManagerCommandCode](kbluetoothlesecuritymanagercommandcodereservedstart.md)
+### Constants
+- [var kBluetoothLESecurityManagerCommandCodeEncryptionInfo: BluetoothLESecurityManagerCommandCode](./kbluetoothlesecuritymanagercommandcodeencryptioninfo.md)
+- [var kBluetoothLESecurityManagerCommandCodeIdentityAddressInfo: BluetoothLESecurityManagerCommandCode](./kbluetoothlesecuritymanagercommandcodeidentityaddressinfo.md)
+- [var kBluetoothLESecurityManagerCommandCodeIdentityInfo: BluetoothLESecurityManagerCommandCode](./kbluetoothlesecuritymanagercommandcodeidentityinfo.md)
+- [var kBluetoothLESecurityManagerCommandCodeMasterIdentification: BluetoothLESecurityManagerCommandCode](./kbluetoothlesecuritymanagercommandcodemasteridentification.md)
+- [var kBluetoothLESecurityManagerCommandCodePairingConfirm: BluetoothLESecurityManagerCommandCode](./kbluetoothlesecuritymanagercommandcodepairingconfirm.md)
+- [var kBluetoothLESecurityManagerCommandCodePairingDHKeyCheck: BluetoothLESecurityManagerCommandCode](./kbluetoothlesecuritymanagercommandcodepairingdhkeycheck.md)
+- [var kBluetoothLESecurityManagerCommandCodePairingFailed: BluetoothLESecurityManagerCommandCode](./kbluetoothlesecuritymanagercommandcodepairingfailed.md)
+- [var kBluetoothLESecurityManagerCommandCodePairingKeypressNotification: BluetoothLESecurityManagerCommandCode](./kbluetoothlesecuritymanagercommandcodepairingkeypressnotification.md)
+- [var kBluetoothLESecurityManagerCommandCodePairingPublicKey: BluetoothLESecurityManagerCommandCode](./kbluetoothlesecuritymanagercommandcodepairingpublickey.md)
+- [var kBluetoothLESecurityManagerCommandCodePairingRandom: BluetoothLESecurityManagerCommandCode](./kbluetoothlesecuritymanagercommandcodepairingrandom.md)
+- [var kBluetoothLESecurityManagerCommandCodePairingRequest: BluetoothLESecurityManagerCommandCode](./kbluetoothlesecuritymanagercommandcodepairingrequest.md)
+- [var kBluetoothLESecurityManagerCommandCodePairingResponse: BluetoothLESecurityManagerCommandCode](./kbluetoothlesecuritymanagercommandcodepairingresponse.md)
+- [var kBluetoothLESecurityManagerCommandCodeReserved: BluetoothLESecurityManagerCommandCode](./kbluetoothlesecuritymanagercommandcodereserved.md)
+- [var kBluetoothLESecurityManagerCommandCodeReservedEnd: BluetoothLESecurityManagerCommandCode](./kbluetoothlesecuritymanagercommandcodereservedend.md)
+- [var kBluetoothLESecurityManagerCommandCodeReservedStart: BluetoothLESecurityManagerCommandCode](./kbluetoothlesecuritymanagercommandcodereservedstart.md)
 
 
 ---

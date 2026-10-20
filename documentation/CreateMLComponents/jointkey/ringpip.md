@@ -1,7 +1,8 @@
 # ringPIP
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key associated with ring finger’s proximal interphalangeal (PIP) joint in a hand pose.
 
@@ -21,11 +22,12 @@ static let ringPIP: JointKey
 
 ## See Also
 
-- [static let ringDIP: JointKey](jointkey/ringdip.md)
+### Getting ring finger properties
+- [static let ringDIP: JointKey](./ringdip.md)
   A key associated with ring finger’s distal interphalangeal (DIP) joint in a hand pose.
-- [static let ringMCP: JointKey](jointkey/ringmcp.md)
+- [static let ringMCP: JointKey](./ringmcp.md)
   A key associated with ring finger’s metacarpophalangeal (MCP) joint in a hand pose.
-- [static let ringTip: JointKey](jointkey/ringtip.md)
+- [static let ringTip: JointKey](./ringtip.md)
   A key associated with ring finger tip joint in a hand pose.
 
 

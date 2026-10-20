@@ -1,7 +1,8 @@
 # removeFromPreferences()
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the URL filter configuration from the caller’s URL filter preferences.
 
@@ -23,13 +24,14 @@ If the URL filter is enabled, this call disables it.
 
 ## See Also
 
-- [func setConfiguration(pirServerURL: URL, pirPrivacyPassIssuerURL: URL?, pirAuthenticationToken: String, controlProviderBundleIdentifier: String) throws](neurlfiltermanager/setconfiguration(pirserverurl:pirprivacypassissuerurl:pirauthenticationtoken:controlproviderbundleidentifier:).md)
+### Working with the filter configuration
+- [func setConfiguration(pirServerURL: URL, pirPrivacyPassIssuerURL: URL?, pirAuthenticationToken: String, controlProviderBundleIdentifier: String) throws](./setconfiguration%28pirserverurl,pirprivacypassissuerurl,pirauthenticationtoken,controlproviderbundleidentifier%29.md)
   Sets a URL filter configuration with the required PIR server attributes and app extension information.
-- [func loadFromPreferences() async throws](neurlfiltermanager/loadfrompreferences.md)
+- [func loadFromPreferences() async throws](./loadfrompreferences%28%29.md)
   Loads the current URL filter configuration from the caller’s URL filter preferences.
-- [func saveToPreferences() async throws](neurlfiltermanager/savetopreferences.md)
+- [func saveToPreferences() async throws](./savetopreferences%28%29.md)
   Saves the URL filter configuration in the caller’s URL filter preferences.
-- [func handleConfigChange() -> any AsyncSequence<Bool, Never>](neurlfiltermanager/handleconfigchange.md)
+- [func handleConfigChange() -> any AsyncSequence<Bool, Never>](./handleconfigchange%28%29.md)
   Sets up an observer for the filter configuration change notification and models it as an asynchronous sequence.
 
 

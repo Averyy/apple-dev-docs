@@ -1,7 +1,8 @@
 # up
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The button element that changes the positive y-axis.
 
@@ -19,17 +20,22 @@ The button element that changes the positive y-axis.
 var up: GCControllerButtonInput { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GCControllerButtonInput * up;
+```
+
 #### Discussion
 
 The value of the `up` and `down` buttons are mutually exclusive because the user can only press one of these buttons at a time. Therefore, when the `up` button is nonzero, the `down` button is `0`.
 
 ## See Also
 
-- [var right: GCControllerButtonInput](gccontrollerdirectionpad/right.md)
+### Accessing values using directional buttons
+- [var right: GCControllerButtonInput](./right.md)
   The button element that changes the positive x-axis.
-- [var left: GCControllerButtonInput](gccontrollerdirectionpad/left.md)
+- [var left: GCControllerButtonInput](./left.md)
   The button element that changes the negative x-axis.
-- [var down: GCControllerButtonInput](gccontrollerdirectionpad/down.md)
+- [var down: GCControllerButtonInput](./down.md)
   The button element used for the negative y-axis direction.
 
 

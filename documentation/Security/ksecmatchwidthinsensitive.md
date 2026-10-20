@@ -1,7 +1,8 @@
 # kSecMatchWidthInsensitive
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a Boolean indicating whether width-insensitive matching is performed.
 
@@ -14,9 +15,13 @@ A key whose value is a Boolean indicating whether width-insensitive matching is 
 let kSecMatchWidthInsensitive: CFString
 ```
 
+```c
+extern CFStringRef const kSecMatchWidthInsensitive;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). If this value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse), or if this attribute is not provided, then width-sensitive string matching is performed (for example, the ASCII character `a` does not match the UTF-8 full-width letter `a` (`U+FF41`).
+The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). If this value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md), or if this attribute is not provided, then width-sensitive string matching is performed (for example, the ASCII character `a` does not match the UTF-8 full-width letter `a` (`U+FF41`).
 
 
 ---

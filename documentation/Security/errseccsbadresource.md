@@ -1,7 +1,8 @@
 # errSecCSBadResource
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A sealed resource is missing or invalid.
 
@@ -13,6 +14,10 @@ A sealed resource is missing or invalid.
 
 ```swift
 var errSecCSBadResource: OSStatus { get }
+```
+
+```c
+errSecCSBadResource
 ```
 
 

@@ -1,7 +1,8 @@
 # SRDeviceUsageReport.NotificationUsage.Event
 
 **Framework**: SensorKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The ways that a user interacts with notifications.
 
@@ -16,61 +17,66 @@ The ways that a user interacts with notifications.
 enum Event
 ```
 
+```c
+enum SRNotificationEvent : NSInteger;
+```
+
 ## Topics
 
 ### Events
-- [SRDeviceUsageReport.NotificationUsage.Event.appLaunch](srdeviceusagereport/notificationusage/event-swift.enum/applaunch.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.appLaunch](./event-swift.enum/applaunch.md)
   A notification of an app launch.
-- [SRDeviceUsageReport.NotificationUsage.Event.bannerPulldown](srdeviceusagereport/notificationusage/event-swift.enum/bannerpulldown.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.bannerPulldown](./event-swift.enum/bannerpulldown.md)
   A notification of a banner pull down.
-- [SRDeviceUsageReport.NotificationUsage.Event.clear](srdeviceusagereport/notificationusage/event-swift.enum/clear.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.clear](./event-swift.enum/clear.md)
   A notification of a clear event.
-- [SRDeviceUsageReport.NotificationUsage.Event.deduped](srdeviceusagereport/notificationusage/event-swift.enum/deduped.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.deduped](./event-swift.enum/deduped.md)
   A notification of a deduped event.
-- [SRDeviceUsageReport.NotificationUsage.Event.defaultAction](srdeviceusagereport/notificationusage/event-swift.enum/defaultaction.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.defaultAction](./event-swift.enum/defaultaction.md)
   A notification of a default action.
-- [SRDeviceUsageReport.NotificationUsage.Event.deviceActivated](srdeviceusagereport/notificationusage/event-swift.enum/deviceactivated.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.deviceActivated](./event-swift.enum/deviceactivated.md)
   A notification of device activation.
-- [SRDeviceUsageReport.NotificationUsage.Event.deviceUnlocked](srdeviceusagereport/notificationusage/event-swift.enum/deviceunlocked.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.deviceUnlocked](./event-swift.enum/deviceunlocked.md)
   A notification of a device unlock.
-- [SRDeviceUsageReport.NotificationUsage.Event.expired](srdeviceusagereport/notificationusage/event-swift.enum/expired.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.expired](./event-swift.enum/expired.md)
   A notification of an expiration event.
-- [SRDeviceUsageReport.NotificationUsage.Event.hide](srdeviceusagereport/notificationusage/event-swift.enum/hide.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.hide](./event-swift.enum/hide.md)
   A notification of a hide event.
-- [SRDeviceUsageReport.NotificationUsage.Event.longLook](srdeviceusagereport/notificationusage/event-swift.enum/longlook.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.longLook](./event-swift.enum/longlook.md)
   A notification of a long look.
-- [SRDeviceUsageReport.NotificationUsage.Event.notificationCenterClearAll](srdeviceusagereport/notificationusage/event-swift.enum/notificationcenterclearall.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.notificationCenterClearAll](./event-swift.enum/notificationcenterclearall.md)
   A notification of clear-all event.
-- [SRDeviceUsageReport.NotificationUsage.Event.received](srdeviceusagereport/notificationusage/event-swift.enum/received.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.received](./event-swift.enum/received.md)
   A notification of a received event.
-- [SRDeviceUsageReport.NotificationUsage.Event.removed](srdeviceusagereport/notificationusage/event-swift.enum/removed.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.removed](./event-swift.enum/removed.md)
   A notification of a removed event.
-- [SRDeviceUsageReport.NotificationUsage.Event.silence](srdeviceusagereport/notificationusage/event-swift.enum/silence.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.silence](./event-swift.enum/silence.md)
   A notification of a silence event.
-- [SRDeviceUsageReport.NotificationUsage.Event.supplementaryAction](srdeviceusagereport/notificationusage/event-swift.enum/supplementaryaction.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.supplementaryAction](./event-swift.enum/supplementaryaction.md)
   A notification of a supplementary action.
-- [SRDeviceUsageReport.NotificationUsage.Event.tapCoalesce](srdeviceusagereport/notificationusage/event-swift.enum/tapcoalesce.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.tapCoalesce](./event-swift.enum/tapcoalesce.md)
   A notification of a tap-coalesce event.
-- [SRDeviceUsageReport.NotificationUsage.Event.unknown](srdeviceusagereport/notificationusage/event-swift.enum/unknown.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.unknown](./event-swift.enum/unknown.md)
   A notification of an unknown event.
 ### Initializers
-- [init?(rawValue: Int)](srdeviceusagereport/notificationusage/event-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./event-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var bundleIdentifier: String?](srdeviceusagereport/notificationusage/bundleidentifier.md)
+### Analyzing Notification Use
+- [var bundleIdentifier: String?](./bundleidentifier.md)
   The bundle identifier of the app that corresponds to the notification.
-- [var event: SRDeviceUsageReport.NotificationUsage.Event](srdeviceusagereport/notificationusage/event-swift.property.md)
+- [var event: SRDeviceUsageReport.NotificationUsage.Event](./event-swift.property.md)
   The way that the user interacts with the notification.
 
 

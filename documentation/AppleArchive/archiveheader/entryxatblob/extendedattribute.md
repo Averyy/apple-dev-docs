@@ -1,7 +1,8 @@
 # ArchiveHeader.EntryXATBlob.ExtendedAttribute
 
 **Framework**: Apple Archive  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes the extended attributes of a filesystem.
 
@@ -11,7 +12,7 @@ A structure that describes the extended attributes of a filesystem.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -23,15 +24,15 @@ struct ExtendedAttribute
 ## Topics
 
 ### Creating an Extended Attribute
-- [init(key: String, data: ContiguousArray<UInt8>)](archiveheader/entryxatblob/extendedattribute/init(key:data:).md)
+- [init(key: String, data: ContiguousArray<UInt8>)](./extendedattribute/init%28key,data%29.md)
   Creates a new extended attribute structure.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 
 ---

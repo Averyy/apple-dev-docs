@@ -1,7 +1,8 @@
 # AskError.systemError(underlyingError:)
 
 **Framework**: PermissionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.1+
@@ -9,6 +10,8 @@
 - Mac Catalyst 26.1+
 - macOS 26.1+
 - visionOS 26.1+
+
+> **Deprecated**: The underlying error is now propogated directly.
 
 ## Declaration
 
@@ -18,13 +21,14 @@ case systemError(underlyingError: any Error)
 
 ## See Also
 
-- [AskError.unknown](askerror/unknown.md)
+### Handling errors
+- [AskError.unknown](./unknown.md)
   Indicates an unknown error response.
-- [AskError.communicationLimitsNotEnabled](askerror/communicationlimitsnotenabled.md)
+- [AskError.communicationLimitsNotEnabled](./communicationlimitsnotenabled.md)
   Indicates communication limits isn’t enabled to send permission requests.
-- [AskError.contactSyncNotSetup](askerror/contactsyncnotsetup.md)
+- [AskError.contactSyncNotSetup](./contactsyncnotsetup.md)
   Indicates contact sync isn’t enabled to send permission requests.
-- [AskError.invalidQuestion](askerror/invalidquestion.md)
+- [AskError.invalidQuestion](./invalidquestion.md)
   Indicates your permission request is invalid.
 
 

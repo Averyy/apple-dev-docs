@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Reports whether the system supports this processor.
 
@@ -17,9 +18,14 @@ Reports whether the system supports this processor.
 class var isSupported: Bool { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly, getter=isSupported) BOOL supported;
+```
+
 ## See Also
 
-- [class var supportedScaleFactors: [Int]](vtsuperresolutionscalerconfiguration/supportedscalefactors-7ucur.md)
+### Determining processor availability
+- [class var supportedScaleFactors: [Int]](./supportedscalefactors-7ucur.md)
 
 
 ---

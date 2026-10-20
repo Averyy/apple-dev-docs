@@ -1,7 +1,8 @@
 # hertz()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring frequency in hertz.
 
@@ -19,13 +20,18 @@ Returns a HealthKit unit for measuring frequency in hertz.
 class func hertz() -> Self
 ```
 
+```objc
++ (instancetype) hertzUnit;
+```
+
 #### Discussion
 
 Hertz represent cycles per second.
 
 ## See Also
 
-- [class func hertzUnit(with: HKMetricPrefix) -> Self](hkunit/hertzunit(with:).md)
+### Constructing frequency units
+- [class func hertzUnit(with: HKMetricPrefix) -> Self](./hertzunit%28with%29.md)
   Returns a HealthKit unit for measuring frequency in hertz with the provided prefix.
 
 

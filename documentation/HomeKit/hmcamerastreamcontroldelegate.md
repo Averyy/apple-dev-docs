@@ -1,7 +1,8 @@
 # HMCameraStreamControlDelegate
 
 **Framework**: HomeKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that gives the delegate updates on the camera stream.
 
@@ -19,22 +20,27 @@ A protocol that gives the delegate updates on the camera stream.
 protocol HMCameraStreamControlDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol HMCameraStreamControlDelegate <NSObject>
+```
+
 ## Topics
 
 ### Observing stream activity
-- [func cameraStreamControlDidStartStream(HMCameraStreamControl)](hmcamerastreamcontroldelegate/camerastreamcontroldidstartstream(_:).md)
+- [func cameraStreamControlDidStartStream(HMCameraStreamControl)](./hmcamerastreamcontroldelegate/camerastreamcontroldidstartstream%28_%29.md)
   Tells the delegate that the camera stream has started.
-- [func cameraStreamControl(HMCameraStreamControl, didStopStreamWithError: (any Error)?)](hmcamerastreamcontroldelegate/camerastreamcontrol(_:didstopstreamwitherror:).md)
+- [func cameraStreamControl(HMCameraStreamControl, didStopStreamWithError: (any Error)?)](./hmcamerastreamcontroldelegate/camerastreamcontrol%28_,didstopstreamwitherror%29.md)
   Tells the delegate that the camera stream has stopped.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any HMCameraStreamControlDelegate)?](hmcamerastreamcontrol/delegate.md)
+### Observing stream activity
+- [var delegate: (any HMCameraStreamControlDelegate)?](./hmcamerastreamcontrol/delegate.md)
   Delegate that receives updates as the camera stream changes.
 
 

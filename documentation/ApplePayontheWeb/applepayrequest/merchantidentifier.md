@@ -1,7 +1,8 @@
 # merchantIdentifier
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The merchant identifier you registered with Apple for use with Apple Pay.
 
@@ -11,17 +12,18 @@ The merchant identifier you registered with Apple for use with Apple Pay.
 
 ## Declaration
 
-```swift
+```
 required DOMString merchantIdentifier;
 ```
 
 #### Discussion
 
-This is the merchant ID you created and registered with Apple. See [`Configuring Your Environment`](configuring-your-environment.md) for more information.
+This is the merchant ID you created and registered with Apple. See [Configuring Your Environment](../configuring-your-environment.md) for more information.
 
 ## See Also
 
-- [version](applepayrequest/version.md)
+### Identifier and version information
+- [version](./version.md)
   The Apple Pay version supported on your website.
 
 

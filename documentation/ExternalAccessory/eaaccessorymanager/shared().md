@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: External Accessory  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the shared accessory manager object for the iOS-based device.
 
@@ -17,6 +18,10 @@ Returns the shared accessory manager object for the iOS-based device.
 
 ```swift
 class func shared() -> EAAccessoryManager
+```
+
+```objc
++ (EAAccessoryManager *) sharedAccessoryManager;
 ```
 
 #### Return Value

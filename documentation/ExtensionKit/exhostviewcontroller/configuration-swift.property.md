@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: ExtensionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The information the host view controller uses to fetch the appropriate scene from an app extension.
 
@@ -20,13 +21,14 @@ The information the host view controller uses to fetch the appropriate scene fro
 
 ## Mentions
 
-- [Including extension-based UI in your interface](including-extension-based-ui-in-your-interface.md)
+- [Including extension-based UI in your interface](../including-extension-based-ui-in-your-interface.md)
 
 ## See Also
 
-- [EXHostViewController.Configuration](exhostviewcontroller/configuration-swift.struct.md)
+### Configuring the view controller
+- [EXHostViewController.Configuration](./configuration-swift.struct.md)
   An object that holds configuration options for a host view controller.
-- [var placeholderView: UIView](exhostviewcontroller/placeholderview.md)
+- [var placeholderView: UIView](./placeholderview.md)
   The view to display when the view controller has no app extension content to display.
 
 

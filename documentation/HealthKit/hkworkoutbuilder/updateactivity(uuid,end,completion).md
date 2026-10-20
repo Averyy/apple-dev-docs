@@ -1,7 +1,8 @@
 # updateActivity(uuid:end:completion:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the end date for a workout activity that you’ve already added to the workout builder.
 
@@ -16,27 +17,40 @@ Sets the end date for a workout activity that you’ve already added to the work
 ## Declaration
 
 ```swift
+func updateActivity(uuid UUID: UUID, end endDate: Date, completion: @escaping @Sendable (Bool, (any Error)?) -> Void)
+```
+
+```swift
 func updateActivity(uuid UUID: UUID, end endDate: Date) async throws
+```
+
+```objc
+- (void) updateActivityWithUUID:(NSUUID *) UUID endDate:(NSDate *) endDate completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
 #### Discussion
 
-Calling this method after calling [`finishWorkout(completion:)`](hkworkoutbuilder/finishworkout(completion:).md) fails with an error.
+Calling this method after calling [`finishWorkout(completion:)`](./finishworkout%28completion%29.md) fails with an error.
 
 ## Parameters
 
 - `UUID`: The workout activity’s universally unique identifier (UUID).
 - `endDate`: The end date and time for the workout activity.
-- `completion`: A callback handler that the system calls after updating the workout activity. The system calls the callback handler on an anonymous background queue. The callback handler takes the following parameters: - **success**: Contains [`true`](https://developer.apple.com/documentation/swift/true) if the builder successfully updates the activity.
-- **error**: If the `success` parameter is [`false`](https://developer.apple.com/documentation/swift/false), this parameter contains information about the error; otherwise, it’s `nil`.
+- `completion`: A callback handler that the system calls after updating the workout activity. The system calls the callback handler on an anonymous background queue.
+
+  The callback handler takes the following parameters:
+
+  - **success**: Contains [`true`](../../Swift/true.md) if the builder successfully updates the activity.
+  - **error**: If the `success` parameter is [`false`](../../Swift/false.md), this parameter contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 
-- [func addWorkoutActivity(HKWorkoutActivity, completion: (Bool, (any Error)?) -> Void)](hkworkoutbuilder/addworkoutactivity(_:completion:).md)
+### Managing workout activities
+- [func addWorkoutActivity(HKWorkoutActivity, completion: (Bool, (any Error)?) -> Void)](./addworkoutactivity%28_,completion%29.md)
   Adds a workout activity to the workout builder.
-- [func updateActivity(uuid: UUID, adding: [String : Any], completion: (Bool, (any Error)?) -> Void)](hkworkoutbuilder/updateactivity(uuid:adding:completion:).md)
+- [func updateActivity(uuid: UUID, adding: [String : Any], completion: (Bool, (any Error)?) -> Void)](./updateactivity%28uuid,adding,completion%29.md)
   Adds metadata to a workout activity that you’ve already added to the workout builder.
-- [var workoutActivities: [HKWorkoutActivity]](hkworkoutbuilder/workoutactivities.md)
+- [var workoutActivities: [HKWorkoutActivity]](./workoutactivities.md)
 
 
 ---

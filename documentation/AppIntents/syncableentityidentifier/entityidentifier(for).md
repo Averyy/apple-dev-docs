@@ -1,7 +1,8 @@
 # entityIdentifier(for:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an identifier from a string representation.
 
@@ -19,6 +20,8 @@ Creates an identifier from a string representation.
 ```swift
 static func entityIdentifier(for string: String) -> SyncableEntityIdentifier<LocalID, StableID>?
 ```
+
+Available when `LocalID` conforms to `EntityIdentifierConvertible`, `LocalID` conforms to `Sendable`, `StableID` conforms to `EntityIdentifierConvertible`, and `StableID` conforms to `Sendable`.
 
 #### Return Value
 

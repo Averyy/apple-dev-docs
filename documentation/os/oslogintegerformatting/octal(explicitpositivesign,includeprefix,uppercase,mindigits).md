@@ -1,7 +1,8 @@
 # octal(explicitPositiveSign:includePrefix:uppercase:minDigits:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a custom octal format that includes a minimum number of digits.
 
@@ -11,7 +12,7 @@ Creates a custom octal format that includes a minimum number of digits.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -33,15 +34,16 @@ A custom octal format for integers.
 
 ## See Also
 
-- [static func decimal(explicitPositiveSign: Bool) -> OSLogIntegerFormatting](oslogintegerformatting/decimal(explicitpositivesign:).md)
+### Creating a Custom Integer Format
+- [static func decimal(explicitPositiveSign: Bool) -> OSLogIntegerFormatting](./decimal%28explicitpositivesign%29.md)
   Creates a decimal format with custom handling of the numerical sign.
-- [static func decimal(explicitPositiveSign: Bool, minDigits: @autoclosure () -> Int) -> OSLogIntegerFormatting](oslogintegerformatting/decimal(explicitpositivesign:mindigits:).md)
+- [static func decimal(explicitPositiveSign: Bool, minDigits: @autoclosure () -> Int) -> OSLogIntegerFormatting](./decimal%28explicitpositivesign,mindigits%29.md)
   Creates a decimal format with custom handling of the numerical sign and the minimum number of digits.
-- [static func hex(explicitPositiveSign: Bool, includePrefix: Bool, uppercase: Bool) -> OSLogIntegerFormatting](oslogintegerformatting/hex(explicitpositivesign:includeprefix:uppercase:).md)
+- [static func hex(explicitPositiveSign: Bool, includePrefix: Bool, uppercase: Bool) -> OSLogIntegerFormatting](./hex%28explicitpositivesign,includeprefix,uppercase%29.md)
   Creates a custom hexidecimal format that displays the exact number of digits in the number.
-- [static func hex(explicitPositiveSign: Bool, includePrefix: Bool, uppercase: Bool, minDigits: @autoclosure () -> Int) -> OSLogIntegerFormatting](oslogintegerformatting/hex(explicitpositivesign:includeprefix:uppercase:mindigits:).md)
+- [static func hex(explicitPositiveSign: Bool, includePrefix: Bool, uppercase: Bool, minDigits: @autoclosure () -> Int) -> OSLogIntegerFormatting](./hex%28explicitpositivesign,includeprefix,uppercase,mindigits%29.md)
   Creates a custom hexidecimal format that includes a minimum number of digits.
-- [static func octal(explicitPositiveSign: Bool, includePrefix: Bool, uppercase: Bool) -> OSLogIntegerFormatting](oslogintegerformatting/octal(explicitpositivesign:includeprefix:uppercase:).md)
+- [static func octal(explicitPositiveSign: Bool, includePrefix: Bool, uppercase: Bool) -> OSLogIntegerFormatting](./octal%28explicitpositivesign,includeprefix,uppercase%29.md)
   Creates a custom octal format that displays the exact number of digits in the number.
 
 

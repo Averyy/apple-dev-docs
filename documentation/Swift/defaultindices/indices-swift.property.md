@@ -1,7 +1,8 @@
 # indices
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The indices that are valid for subscripting the collection, in ascending order.
 
@@ -19,6 +20,8 @@ The indices that are valid for subscripting the collection, in ascending order.
 ```swift
 var indices: DefaultIndices<Elements>.Indices { get }
 ```
+
+Available when `Elements` conforms to `Collection`.
 
 #### Discussion
 

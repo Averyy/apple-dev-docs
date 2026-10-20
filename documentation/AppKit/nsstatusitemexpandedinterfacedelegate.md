@@ -1,7 +1,8 @@
 # NSStatusItemExpandedInterfaceDelegate
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - macOS 27.0+
@@ -12,20 +13,25 @@
 protocol NSStatusItemExpandedInterfaceDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSStatusItemExpandedInterfaceDelegate <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func statusItem(NSStatusItem, didBegin: NSStatusItemExpandedInterfaceSession)](nsstatusitemexpandedinterfacedelegate/statusitem(_:didbegin:).md)
-- [func statusItemDidEndExpandedInterfaceSession(NSStatusItem, animated: Bool)](nsstatusitemexpandedinterfacedelegate/statusitemdidendexpandedinterfacesession(_:animated:).md)
+- [func statusItem(NSStatusItem, didBegin: NSStatusItemExpandedInterfaceSession)](./nsstatusitemexpandedinterfacedelegate/statusitem%28_,didbegin%29.md)
+- [func statusItemDidEndExpandedInterfaceSession(NSStatusItem, animated: Bool)](./nsstatusitemexpandedinterfacedelegate/statusitemdidendexpandedinterfacesession%28_,animated%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSStatusItemExpandedInterfaceSession](nsstatusitemexpandedinterfacesession.md)
+### Expanded interface
+- [class NSStatusItemExpandedInterfaceSession](./nsstatusitemexpandedinterfacesession.md)
 
 
 ---

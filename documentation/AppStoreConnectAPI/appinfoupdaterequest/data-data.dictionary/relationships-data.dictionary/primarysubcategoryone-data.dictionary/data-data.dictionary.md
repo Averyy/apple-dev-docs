@@ -1,7 +1,8 @@
 # AppInfoUpdateRequest.Data.Relationships.PrimarySubcategoryOne.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a resource that you’re relating with the resource you’re updating.
 
@@ -10,7 +11,7 @@ The type and ID of a resource that you’re relating with the resource you’re 
 
 ## Declaration
 
-```swift
+```
 object AppInfoUpdateRequest.Data.Relationships.PrimarySubcategoryOne.Data
 ```
 
@@ -18,6 +19,8 @@ object AppInfoUpdateRequest.Data.Relationships.PrimarySubcategoryOne.Data
 
 - `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `appCategories`
 
 
 ---

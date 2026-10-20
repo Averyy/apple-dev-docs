@@ -1,7 +1,8 @@
 # HKWorkoutSessionLocationType.outdoor
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The workout session is outdoors.
 
@@ -19,11 +20,16 @@ The workout session is outdoors.
 case outdoor
 ```
 
+```c
+HKWorkoutSessionLocationTypeOutdoor
+```
+
 ## See Also
 
-- [HKWorkoutSessionLocationType.unknown](hkworkoutsessionlocationtype/unknown.md)
+### Constants
+- [HKWorkoutSessionLocationType.unknown](./unknown.md)
   It is not known whether the workout session is taking place indoors or outdoors.
-- [HKWorkoutSessionLocationType.indoor](hkworkoutsessionlocationtype/indoor.md)
+- [HKWorkoutSessionLocationType.indoor](./indoor.md)
   The workout session is indoors.
 
 

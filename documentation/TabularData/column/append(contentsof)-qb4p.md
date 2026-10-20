@@ -1,7 +1,8 @@
 # append(contentsOf:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends a sequence of nonoptional values to the column.
 
@@ -26,11 +27,12 @@ mutating func append<S>(contentsOf sequence: S) where WrappedElement == S.Elemen
 
 ## See Also
 
-- [func append(WrappedElement)](column/append(_:)-qycj.md)
+### Adding Elements
+- [func append(WrappedElement)](./append%28_%29-qycj.md)
   Appends a nonoptional value to the column.
-- [func append(Column<WrappedElement>.Element)](column/append(_:)-4t2pt.md)
+- [func append(Column<WrappedElement>.Element)](./append%28_%29-4t2pt.md)
   Appends an optional value to the column.
-- [func append<S>(contentsOf: S)](column/append(contentsof:)-42y1d.md)
+- [func append<S>(contentsOf: S)](./append%28contentsof%29-42y1d.md)
   Appends a sequence of optional values to the column.
 
 

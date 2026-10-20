@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct cmsghdr {
     ...
 };
@@ -17,9 +17,9 @@ struct cmsghdr {
 ## Topics
 
 ### Instance Properties
-- [cmsg_len](cmsghdr/1499136-cmsg_len.md)
-- [cmsg_level](cmsghdr/1499367-cmsg_level.md)
-- [cmsg_type](cmsghdr/1499189-cmsg_type.md)
+- [cmsg_len](./cmsghdr/api-1499136-cmsg_len.md)
+- [cmsg_level](./cmsghdr/api-1499367-cmsg_level.md)
+- [cmsg_type](./cmsghdr/api-1499189-cmsg_type.md)
 
 
 ---

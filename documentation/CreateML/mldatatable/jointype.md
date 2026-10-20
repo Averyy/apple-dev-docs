@@ -1,9 +1,10 @@
 # MLDataTable.JoinType
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Join types available for [`MLDataTable`](mldatatable.md) join operations.
+Join types available for [`MLDataTable`](../mldatatable.md) join operations.
 
 **Availability**:
 - iOS 15.0+
@@ -22,26 +23,27 @@ enum JoinType
 ## Topics
 
 ### Selecting a joining operation
-- [MLDataTable.JoinType.inner](mldatatable/jointype/inner.md)
+- [MLDataTable.JoinType.inner](./jointype/inner.md)
   An operation that joins the rows of the data tables whose values match exactly.
-- [MLDataTable.JoinType.left](mldatatable/jointype/left.md)
+- [MLDataTable.JoinType.left](./jointype/left.md)
   An operation that is the union between an inner join and the remaining rows from the original data table.
-- [MLDataTable.JoinType.right](mldatatable/jointype/right.md)
+- [MLDataTable.JoinType.right](./jointype/right.md)
   An operation that is the union between an inner join and the remaining rows from the secondary data table.
-- [MLDataTable.JoinType.outer](mldatatable/jointype/outer.md)
+- [MLDataTable.JoinType.outer](./jointype/outer.md)
   An operation that is the union between a left join and a right join.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func join(with: MLDataTable, on: String..., type: MLDataTable.JoinType) -> MLDataTable](mldatatable/join(with:on:type:).md)
+### Merging data tables
+- [func join(with: MLDataTable, on: String..., type: MLDataTable.JoinType) -> MLDataTable](./join%28with,on,type%29.md)
   Creates a new data table by merging two data tables by the given columns.
 
 

@@ -1,7 +1,8 @@
 # ASAuthorizationPublicKeyCredentialPRFRegistrationInput
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that encapsulates input for PRF extensions during registration.
 
@@ -21,25 +22,26 @@ struct ASAuthorizationPublicKeyCredentialPRFRegistrationInput
 ## Topics
 
 ### Working with PRF inputs
-- [let inputValues: ASAuthorizationPublicKeyCredentialPRFRegistrationInput.InputValues?](asauthorizationpublickeycredentialprfregistrationinput-swift.struct/inputvalues-swift.property.md)
+- [let inputValues: ASAuthorizationPublicKeyCredentialPRFRegistrationInput.InputValues?](./asauthorizationpublickeycredentialprfregistrationinput-swift.struct/inputvalues-swift.property.md)
   The input values to use when generating the PRF extension, if specified.
-- [ASAuthorizationPublicKeyCredentialPRFRegistrationInput.InputValues](asauthorizationpublickeycredentialprfregistrationinput-swift.struct/inputvalues-swift.typealias.md)
+- [ASAuthorizationPublicKeyCredentialPRFRegistrationInput.InputValues](./asauthorizationpublickeycredentialprfregistrationinput-swift.struct/inputvalues-swift.typealias.md)
   The type of the registration input values property.
-- [static func inputValues(ASAuthorizationPublicKeyCredentialPRFRegistrationInput.InputValues) -> ASAuthorizationPublicKeyCredentialPRFRegistrationInput](asauthorizationpublickeycredentialprfregistrationinput-swift.struct/inputvalues(_:).md)
+- [static func inputValues(ASAuthorizationPublicKeyCredentialPRFRegistrationInput.InputValues) -> ASAuthorizationPublicKeyCredentialPRFRegistrationInput](./asauthorizationpublickeycredentialprfregistrationinput-swift.struct/inputvalues%28_%29.md)
   The inputs for the PRF extension to evaluate if the new passkey supports the extension.
 ### Checking for support
-- [let shouldCheckForSupport: Bool](asauthorizationpublickeycredentialprfregistrationinput-swift.struct/shouldcheckforsupport.md)
+- [let shouldCheckForSupport: Bool](./asauthorizationpublickeycredentialprfregistrationinput-swift.struct/shouldcheckforsupport.md)
   A Boolean value that indicates whether to check for PRF support.
-- [static var checkForSupport: ASAuthorizationPublicKeyCredentialPRFRegistrationInput](asauthorizationpublickeycredentialprfregistrationinput-swift.struct/checkforsupport.md)
+- [static var checkForSupport: ASAuthorizationPublicKeyCredentialPRFRegistrationInput](./asauthorizationpublickeycredentialprfregistrationinput-swift.struct/checkforsupport.md)
   A check to determine extension support for the newly created passkey.
 
 ## See Also
 
-- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput?](aspasskeyregistrationcredentialextensioninput-swift.struct/largeblob.md)
+### Inputs
+- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput?](./aspasskeyregistrationcredentialextensioninput-swift.struct/largeblob.md)
   Input for the WebAuthn large binary object extension in passkey registration requests.
-- [struct ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput](asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct.md)
+- [struct ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput](./asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct.md)
   A type that encapsulates input for large binary object extensions during registration.
-- [var prf: ASAuthorizationPublicKeyCredentialPRFRegistrationInput?](aspasskeyregistrationcredentialextensioninput-swift.struct/prf.md)
+- [var prf: ASAuthorizationPublicKeyCredentialPRFRegistrationInput?](./aspasskeyregistrationcredentialextensioninput-swift.struct/prf.md)
   Input for the WebAuthn PRF extension in passkey registration requests.
 
 

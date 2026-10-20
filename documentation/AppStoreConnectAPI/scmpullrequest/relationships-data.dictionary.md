@@ -1,7 +1,8 @@
 # ScmPullRequest.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships of the Pull Requests resource you included in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships of the Pull Requests resource you included in the request and 
 
 ## Declaration
 
-```swift
+```
 object ScmPullRequest.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object ScmPullRequest.Relationships.Repository](scmpullrequest/relationships-data.dictionary/repository-data.dictionary.md)
+- [object ScmPullRequest.Relationships.Repository](./relationships-data.dictionary/repository-data.dictionary.md)
   The data and links that describe the relationship between the Pull Requests and the Repositories resources.
 
 ## Properties
@@ -26,7 +27,8 @@ object ScmPullRequest.Relationships
 
 ## See Also
 
-- [object ScmPullRequest.Attributes](scmpullrequest/attributes-data.dictionary.md)
+### Objects
+- [object ScmPullRequest.Attributes](./attributes-data.dictionary.md)
   The attributes that describe a Pull Requests resource.
 
 

@@ -1,7 +1,8 @@
 # vImage.FloodFillConnectivity
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -21,41 +22,42 @@ enum FloodFillConnectivity
 ## Topics
 
 ### Enumeration Cases
-- [vImage.FloodFillConnectivity.edges](vimage/floodfillconnectivity/edges.md)
-- [vImage.FloodFillConnectivity.edgesAndCorners](vimage/floodfillconnectivity/edgesandcorners.md)
+- [vImage.FloodFillConnectivity.edges](./floodfillconnectivity/edges.md)
+- [vImage.FloodFillConnectivity.edgesAndCorners](./floodfillconnectivity/edgesandcorners.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [vImage.BlendMode](vimage/blendmode.md)
+### Enumerations
+- [vImage.BlendMode](./blendmode.md)
   Constants that specify an alpha blending mode.
-- [vImage.BufferType](vimage/buffertype.md)
+- [vImage.BufferType](./buffertype.md)
   Codes that represent vImage buffer types.
-- [vImage.ChannelOrdering](vimage/channelordering.md)
+- [vImage.ChannelOrdering](./channelordering.md)
   Constants that specify the channel ordering of a pixel buffer.
-- [vImage.CompositeMode](vimage/compositemode.md)
+- [vImage.CompositeMode](./compositemode.md)
   Constants that specify whether the format of layers is premultiplied or nonpremultiplied.
-- [vImage.EdgeMode](vimage/edgemode.md)
+- [vImage.EdgeMode](./edgemode.md)
   Constants that specify edge modes for convolution operations.
-- [vImage.Error](vimage/error.md)
+- [vImage.Error](./error.md)
   An error that occurs during a vImage operation.
-- [vImage.Gamma](vimage/gamma.md)
+- [vImage.Gamma](./gamma.md)
   Describes either a used-defined or constant gamma.
-- [vImage.MorphologyOperation](vimage/morphologyoperation.md)
+- [vImage.MorphologyOperation](./morphologyoperation.md)
   Describes which morphology operation to perform.
-- [vImage.ReflectionAxis](vimage/reflectionaxis.md)
+- [vImage.ReflectionAxis](./reflectionaxis.md)
   The axis to reflect an image.
-- [vImage.Rotation](vimage/rotation.md)
+- [vImage.Rotation](./rotation.md)
   The angle to rotate an image.
-- [vImage.ShearDirection](vimage/sheardirection.md)
+- [vImage.ShearDirection](./sheardirection.md)
   The shear direction.
 
 

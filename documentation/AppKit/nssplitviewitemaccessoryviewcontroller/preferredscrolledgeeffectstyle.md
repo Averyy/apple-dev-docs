@@ -1,7 +1,8 @@
 # preferredScrollEdgeEffectStyle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The split view item accessory’s preferred effect for content scrolling behind it.
 
@@ -14,17 +15,22 @@ The split view item accessory’s preferred effect for content scrolling behind 
 var preferredScrollEdgeEffectStyle: NSScrollEdgeEffectStyle { get set }
 ```
 
+```objc
+@property (strong) NSScrollEdgeEffectStyle * preferredScrollEdgeEffectStyle;
+```
+
 #### Discussion
 
 To allow for a soft edge on the interior edge of a titlebar accessory:
 
-```None
+```
 splitViewItemAccessoryViewController.preferredScrollEdgeEffectStyle = NSScrollEdgeEffectStyle.softStyle;
 ```
 
 ## See Also
 
-- [class NSScrollEdgeEffectStyle](nsscrolledgeeffectstyle.md)
+### Configuring the scroll edge effect
+- [class NSScrollEdgeEffectStyle](../nsscrolledgeeffectstyle.md)
   Styles for a scroll view’s edge effect.
 
 

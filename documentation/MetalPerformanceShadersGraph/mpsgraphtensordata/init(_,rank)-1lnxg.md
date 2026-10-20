@@ -1,7 +1,8 @@
 # init(_:rank:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a tensor data with an MPS matrix enforcing rank of the result.
 
@@ -17,6 +18,10 @@ Initializes a tensor data with an MPS matrix enforcing rank of the result.
 
 ```swift
 init(_ matrix: MPSMatrix, rank: Int)
+```
+
+```objc
+- (instancetype) initWithMPSMatrix:(MPSMatrix *) matrix rank:(NSUInteger) rank;
 ```
 
 #### Return Value

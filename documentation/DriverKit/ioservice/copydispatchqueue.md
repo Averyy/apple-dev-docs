@@ -1,25 +1,26 @@
 # CopyDispatchQueue
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the dispatch queue with the specified name from the current service.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t CopyDispatchQueue(const IODispatchQueueName name, IODispatchQueue **queue);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](error-codes.md).
+[`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../error-codes.md).
 
 ## Parameters
 
@@ -28,7 +29,8 @@ virtual kern_return_t CopyDispatchQueue(const IODispatchQueueName name, IODispat
 
 ## See Also
 
-- [SetDispatchQueue](ioservice/setdispatchqueue.md)
+### Configuring Additional Dispatch Queues
+- [SetDispatchQueue](./setdispatchqueue.md)
   Associates a custom dispatch queue with the service and assigns the specified name to it.
 
 

@@ -1,7 +1,8 @@
 # inputHeight
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height, in pixels, of the input motion and depth texture for the frame interpolator.
 
@@ -16,6 +17,10 @@ The height, in pixels, of the input motion and depth texture for the frame inter
 
 ```swift
 var inputHeight: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger inputHeight;
 ```
 
 

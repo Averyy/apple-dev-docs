@@ -1,12 +1,13 @@
 # isAccessibilityFocused()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the accessibility element has the keyboard focus.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ Returns a Boolean value that indicates whether the accessibility element has the
 optional func isAccessibilityFocused() -> Bool
 ```
 
+```objc
+- (BOOL) isAccessibilityFocused;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if this element has the keyboard focus; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if this element has the keyboard focus; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-This method is the getter for the [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) protocol’s [`accessibilityFocused`](nsaccessibility-c.protocol/accessibilityfocused.md) property.
+This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityFocused`](../nsaccessibility-c.protocol/accessibilityfocused.md) property.
 
 ## See Also
 
-- [func accessibilityFrame() -> NSRect](nsaccessibilityelementprotocol/accessibilityframe.md)
+### Supporting Accessibility
+- [func accessibilityFrame() -> NSRect](./accessibilityframe%28%29.md)
   Returns the accessibility element’s frame in screen coordinates.
-- [func accessibilityIdentifier() -> String](nsaccessibilityelementprotocol/accessibilityidentifier.md)
+- [func accessibilityIdentifier() -> String](./accessibilityidentifier%28%29.md)
   Returns the accessibility element’s identity.
-- [func accessibilityParent() -> Any?](nsaccessibilityelementprotocol/accessibilityparent.md)
+- [func accessibilityParent() -> Any?](./accessibilityparent%28%29.md)
   Returns the accessibility element’s parent in the accessibility hierarchy.
 
 

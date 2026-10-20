@@ -1,7 +1,8 @@
 # numberOfRows
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of rows in the tile map.
 
@@ -20,13 +21,18 @@ The number of rows in the tile map.
 var numberOfRows: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger numberOfRows;
+```
+
 ## See Also
 
-- [var tileSize: CGSize](sktilemapnode/tilesize.md)
+### Reading or Manually Configuring the Tile Map’s Size
+- [var tileSize: CGSize](./tilesize.md)
   The size of each tile in points.
-- [var tileSet: SKTileSet](sktilemapnode/tileset.md)
+- [var tileSet: SKTileSet](./tileset.md)
   The tile set being used by this tile map. The tile map object can only display tiles that exist in this set.
-- [var numberOfColumns: Int](sktilemapnode/numberofcolumns.md)
+- [var numberOfColumns: Int](./numberofcolumns.md)
   The number of columns in the tile map
 
 

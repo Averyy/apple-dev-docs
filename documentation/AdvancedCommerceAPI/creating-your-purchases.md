@@ -1,6 +1,7 @@
 # Creating SKUs for your Apple In-App Purchases
 
-**Framework**: Advanced Commerce API
+**Framework**: Advanced Commerce API  
+**Role**: Article
 
 Define and manage one-time charges, subscriptions, and bundled subscriptions within your app.
 
@@ -16,62 +17,63 @@ To ensure your purchases display properly and provide a quality experience, foll
 - Consider how you use special characters (for example, hyphens, periods, and underscores) and diacritics. You can use special characters, but avoid using them excessively or beginning strings with them.
 - Don’t use markup language, emoticons, diacritics, or control characters (for example, null, new lines, carriage returns, escape, or other invisible characters) that cause strings to exceed a single line.
 
-Review the Human Interface Guidelines for additional best practices for [`writing`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/writing) and designing your [`Apple In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/in-app-purchase). If you offer subscriptions, get additional best practices for [`clearly describing subscriptions`](https://developer.apple.comhttps://developer.apple.com/app-store/subscriptions/#clear-description) in your paywalls and payment sheets.
+Review the Human Interface Guidelines for additional best practices for [writing](https://developer.apple.com/design/human-interface-guidelines/writing) and designing your [Apple In-App Purchases](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase). If you offer subscriptions, get additional best practices for [clearly describing subscriptions](https://developer.apple.com/app-store/subscriptions/#clear-description) in your paywalls and payment sheets.
 
-#### Create One Time Charges
+#### Create one-time charges
 
-Manage one-time purchases — such as one-time rentals, books, or courses — by using the [`OneTimeChargeCreateRequest`](onetimechargecreaterequest.md) API to provide information to the App Store when the customer initiates a purchase. After a one-time charge is complete, customers receive an email receipt from Apple.
+Manage one-time purchases — such as one-time rentals, books, or courses — by using the [`OneTimeChargeCreateRequest`](./onetimechargecreaterequest.md) API to provide information to the App Store when the customer initiates a purchase. After a one-time charge is complete, customers receive an email receipt from Apple.
 
-![A screenshot of a bookstore app in iOS with an in-app purchase payment sheet open to buy a book. A callout indicates the location on the sheet for the title of the item the customer is purchasing.](/images/com.apple.advancedcommerceapi/one-time-purchase-example@2x.png)
+![A screenshot of a bookstore app in iOS with an in-app purchase payment sheet open to buy a book. A callout indicates the location on the sheet for the title of the item the customer is purchasing.](https://developer.apple.com/tutorials/images/com.apple.advancedcommerceapi/one-time-purchase-example@2x.png)
 
-The following details appear in the App Store payment sheet as well as your email receipt; you set both of these values in the [`OneTimeChargeItem`](onetimechargeitem.md) of the [`OneTimeChargeCreateRequest`](onetimechargecreaterequest.md):
+The following details appear in the App Store payment sheet as well as your email receipt; you set both of these values in the [`OneTimeChargeItem`](./onetimechargeitem.md) of the [`OneTimeChargeCreateRequest`](./onetimechargecreaterequest.md):
 
-- item.[`displayName`](displayname.md): The name of the item the customer is purchasing.
-- item.[`price`](price.md): The price of the item the customer is purchasing.
+- item.[`displayName`](./displayname.md): The name of the item the customer is purchasing.
+- item.[`price`](./price.md): The price of the item the customer is purchasing.
 
-![A diagram of two iOS screens in portrait orientation. The first screen shows a payment sheet for a generic in-app purchase for an item with a one-time charge, with callouts showing where the item display name and item price appear on the sheet. The second screen shows the email confirmation for the purchase, with callouts showing where the app icon, item display name, and item price appear in the email.](/images/com.apple.advancedcommerceapi/one-time-purchase-text-field-mapping@2x.png)
+![A diagram of two iOS screens in portrait orientation. The first screen shows a payment sheet for a generic in-app purchase for an item with a one-time charge, with callouts showing where the item display name and item price appear on the sheet. The second screen shows the email confirmation for the purchase, with callouts showing where the app icon, item display name, and item price appear in the email.](https://developer.apple.com/tutorials/images/com.apple.advancedcommerceapi/one-time-purchase-text-field-mapping@2x.png)
 
-> **Note**: You can set up an image that displays in the payment sheet instead of the app icon. For more information, see the “Set up an image for the payment sheet to display” section in [`Setting up your project for Advanced Commerce API`](setting-up-your-project-for-advanced-commerce.md).
+> **Note**: You can set up an image that displays in the payment sheet instead of the app icon. For more information, see the “Set up an image for the payment sheet to display” section in [Setting up your project for Advanced Commerce API](./setting-up-your-project-for-advanced-commerce.md).
 
-#### Create Subscriptions
+#### Create subscriptions
 
-Use the [`SubscriptionCreateRequest`](subscriptioncreaterequest.md) API to provide information to the App Store when the customer initiates a purchase for each subscription SKU you offer. After a successful purchase, Apple sends customers a subscription confirmation email and a receipt. Customers can go to their Apple Account Subscription Settings to manage their subscription at any time.
+Use the [`SubscriptionCreateRequest`](./subscriptioncreaterequest.md) API to provide information to the App Store when the customer initiates a purchase for each subscription SKU you offer. After a successful purchase, Apple sends customers a subscription confirmation email and a receipt. Customers can go to their Apple Account Subscription Settings to manage their subscription at any time.
 
-![A screenshot of a streaming app in iOS with an in-app purchase payment sheet open to subscribe to a creator. Callouts indicate the locations on the sheet for the name of the subscription the customer is purchasing, and the description of the subscription tier.](/images/com.apple.advancedcommerceapi/subscription-creator-app@2x.png)
+![A screenshot of a streaming app in iOS with an in-app purchase payment sheet open to subscribe to a creator. Callouts indicate the locations on the sheet for the name of the subscription the customer is purchasing, and the description of the subscription tier.](https://developer.apple.com/tutorials/images/com.apple.advancedcommerceapi/subscription-creator-app@2x.png)
 
-The following details appear in the App Store payment sheet, email communications from Apple, and the customer’s Apple Account Subscription Settings; you set the values of these details in [`SubscriptionCreateRequest`](subscriptioncreaterequest.md):
+The following details appear in the App Store payment sheet, email communications from Apple, and the customer’s Apple Account Subscription Settings; you set the values of these details in [`SubscriptionCreateRequest`](./subscriptioncreaterequest.md):
 
-- [`descriptors`](https://developer.apple.comhttps://developer.apple.com/documentation/advancedcommerceapi/Descriptors).[`displayName`](displayname.md): The name of the subscription the customer is purchasing.
-- [`items`](https://developer.apple.comhttps://developer.apple.com/documentation/advancedcommerceapi/SubscriptionCreateItem).[`displayName`](displayname.md): The tier of the subscription service the customer is purchasing, which needs to be different from your `descriptors.displayName`. For example, if your app includes creator subscriptions and a creator offers multiple subscription tiers, the `displayName` represents the tier the customer is purchasing.
-- [`items`](https://developer.apple.comhttps://developer.apple.com/documentation/advancedcommerceapi/SubscriptionCreateItem).[`price`](price.md): The price of the item the customer is purchasing.
-- [`period`](period.md): The duration of the subscription’s billing cycle.
-- [`currency`](currency.md): The currency that your app uses to charge the customer.
-- App link: A dedicated link for customers to manage their subscription within your app. This link appears in the customer’s Apple Account Subscription Settings as a “Manage in [Your App Name]” button. For setup information, see [`Setting up a link to manage subscriptions`](setupmanagesubscriptions.md). You must also provide a way for customers to [`resubscribe`](https://developer.apple.comhttps://developer.apple.com/documentation/advancedcommerceapi/subscriptionreactivateinapprequest) to a subscription that has expired or has automatic renewals turned off.
+- [descriptors](./descriptors.md).[`displayName`](./displayname.md): The name of the subscription the customer is purchasing.
+- [items](./subscriptioncreateitem.md).[`displayName`](./displayname.md): The tier of the subscription service the customer is purchasing, which needs to be different from your `descriptors.displayName`. For example, if your app includes creator subscriptions and a creator offers multiple subscription tiers, the `displayName` represents the tier the customer is purchasing.
+- [items](./subscriptioncreateitem.md).[`price`](./price.md): The price of the item the customer is purchasing.
+- [`period`](./period.md): The duration of the subscription’s billing cycle.
+- [`currency`](./currency.md): The currency that your app uses to charge the customer.
+- App link: A dedicated link for customers to manage their subscription within your app. This link appears in the customer’s Apple Account Subscription Settings as a “Manage in [Your App Name]” button. For setup information, see [Setting up a link to manage subscriptions](./setupmanagesubscriptions.md). You must also provide a way for customers to [resubscribe](./subscriptionreactivateinapprequest.md) to a subscription that has expired or has automatic renewals turned off.
 
-![A diagram of two iOS screens in portrait orientation. The first screen shows a payment sheet for a generic in-app purchase for a subscription, with callouts showing where the app icon, subscription tier, currency, price, name, and billing frequency appear on the sheet. The second screen shows the subscription management page in Apple Account Subscriptions, with a callout indicating the link back to the related app.](/images/com.apple.advancedcommerceapi/subscription-creator-app-text-field-mapping@2x.png)
+![A diagram of two iOS screens in portrait orientation. The first screen shows a payment sheet for a generic in-app purchase for a subscription, with callouts showing where the app icon, subscription tier, currency, price, name, and billing frequency appear on the sheet. The second screen shows the subscription management page in Apple Account Subscriptions, with a callout indicating the link back to the related app.](https://developer.apple.com/tutorials/images/com.apple.advancedcommerceapi/subscription-creator-app-text-field-mapping@2x.png)
 
-#### Create Bundled Subscriptions
+#### Create bundled subscriptions
 
-For subscription-specific services that are bundled with additional add-on content or services (all of which auto-renews as a single subscription), create a SKU for each service or content offering. Use the [`SubscriptionCreateRequest`](subscriptioncreaterequest.md) API to provide information to the App Store when the customer initiates a purchase. After a successful purchase, Apple sends customers a subscription confirmation email and a receipt. Customers can go to their Apple Account Subscription Settings to manage their subscription at any time.
+For subscription-specific services that are bundled with additional add-on content or services (all of which auto-renews as a single subscription), create a SKU for each service or content offering. Use the [`SubscriptionCreateRequest`](./subscriptioncreaterequest.md) API to provide information to the App Store when the customer initiates a purchase. After a successful purchase, Apple sends customers a subscription confirmation email and a receipt. Customers can go to their Apple Account Subscription Settings to manage their subscription at any time.
 
-![An image with two iOS screenshots side by side. The first shows a media app with an in-app purchase payment sheet open to subscribe to a video streaming service bundle, and the second shows the subscription confirmation receipt in email. Callouts on the first image indicate the locations on the sheet for the items included in the subscription bundle, and the subscription plan name.](/images/com.apple.advancedcommerceapi/subscription-bundle-destination-video@2x.png)
+![An image with two iOS screenshots side by side. The first shows a media app with an in-app purchase payment sheet open to subscribe to a video streaming service bundle, and the second shows the subscription confirmation receipt in email. Callouts on the first image indicate the locations on the sheet for the items included in the subscription bundle, and the subscription plan name.](https://developer.apple.com/tutorials/images/com.apple.advancedcommerceapi/subscription-bundle-destination-video@2x.png)
 
-The following details appear in the App Store payment sheet, email communications from Apple, and customer’s Subscription Settings; you set the values of these details in [`SubscriptionCreateRequest`](subscriptioncreaterequest.md):
+The following details appear in the App Store payment sheet, email communications from Apple, and customer’s Subscription Settings; you set the values of these details in [`SubscriptionCreateRequest`](./subscriptioncreaterequest.md):
 
-- [`descriptors`](https://developer.apple.comhttps://developer.apple.com/documentation/advancedcommerceapi/Descriptors).[`displayName`](displayname.md): The name of the subscription SKU a customer is purchasing. This needs to represent your overall subscription as well as be relevant for any combination of SKUs someone might choose to bundle.
-- [`items`](https://developer.apple.comhttps://developer.apple.com/documentation/advancedcommerceapi/SubscriptionCreateItem).[`displayName`](displayname.md): The name of the add-on a customer is purchasing. For example, for a streaming app with multiple channel add-ons, this string might be “Live Sports”.
-- [`items`](https://developer.apple.comhttps://developer.apple.com/documentation/advancedcommerceapi/SubscriptionCreateItem).[`price`](price.md): The price for each add-on within the bundled subscription purchase. When your app or email displays multiple bundle items, it sorts them from highest to lowest price.
-- [`period`](period.md): The duration of the subscription’s billing cycle.
-- [`currency`](currency.md): The currency that your app uses to charge the customer.
-- App link: A dedicated link for customers to manage their subscription within your app. This link appears in the customer’s Apple Account Subscription Settings as a “Manage in [Your App Name]” button. For setup information, see [`Setting up a link to manage subscriptions`](setupmanagesubscriptions.md). You must also provide a way for customers to [`resubscribe`](https://developer.apple.comhttps://developer.apple.com/documentation/advancedcommerceapi/subscriptionreactivateinapprequest) to a subscription that has expired or has automatic renewals turned off.
+- [descriptors](./descriptors.md).[`displayName`](./displayname.md): The name of the subscription SKU a customer is purchasing. This needs to represent your overall subscription as well as be relevant for any combination of SKUs someone might choose to bundle.
+- [items](./subscriptioncreateitem.md).[`displayName`](./displayname.md): The name of the add-on a customer is purchasing. For example, for a streaming app with multiple channel add-ons, this string might be “Live Sports”.
+- [items](./subscriptioncreateitem.md).[`price`](./price.md): The price for each add-on within the bundled subscription purchase. When your app or email displays multiple bundle items, it sorts them from highest to lowest price.
+- [`period`](./period.md): The duration of the subscription’s billing cycle.
+- [`currency`](./currency.md): The currency that your app uses to charge the customer.
+- App link: A dedicated link for customers to manage their subscription within your app. This link appears in the customer’s Apple Account Subscription Settings as a “Manage in [Your App Name]” button. For setup information, see [Setting up a link to manage subscriptions](./setupmanagesubscriptions.md). You must also provide a way for customers to [resubscribe](./subscriptionreactivateinapprequest.md) to a subscription that has expired or has automatic renewals turned off.
 
-![A diagram of two iOS screens in portrait orientation. The first screen shows a payment sheet for a generic in-app purchase for a bundle of subscription items, with callouts showing where the subscription plan name and app icon appear on the sheet, along with the bundle item names, currencies, prices, and billing frequencies. The second screen shows the subscription management page in Apple Account Subscriptions, with callouts indicating the subscription plan name and the link back to the related app.](/images/com.apple.advancedcommerceapi/subscription-bundle-text-field-mapping@2x.png)
+![A diagram of two iOS screens in portrait orientation. The first screen shows a payment sheet for a generic in-app purchase for a bundle of subscription items, with callouts showing where the subscription plan name and app icon appear on the sheet, along with the bundle item names, currencies, prices, and billing frequencies. The second screen shows the subscription management page in Apple Account Subscriptions, with callouts indicating the subscription plan name and the link back to the related app.](https://developer.apple.com/tutorials/images/com.apple.advancedcommerceapi/subscription-bundle-text-field-mapping@2x.png)
 
 ## See Also
 
-- [Setting up generic product identifiers](setting-up-generic-product-identifiers.md)
+### Generic product IDs and SKUs
+- [Setting up generic product identifiers](./setting-up-generic-product-identifiers.md)
   Configure the generic product IDs in App Store Connect that the Advanced Commerce API requires.
-- [Creating SKUs for the Mini Apps Partner Program](creating-skus-for-the-mini-app-partner-program.md)
+- [Creating SKUs for the Mini Apps Partner Program](./creating-skus-for-the-mini-app-partner-program.md)
   Define display names and SKUs for one-time charges and subscriptions in the Mini Apps Partner Program.
 
 

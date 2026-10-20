@@ -1,7 +1,8 @@
 # entityName
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the entity the request is configured to fetch.
 
@@ -10,7 +11,7 @@ The name of the entity the request is configured to fetch.
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,21 +21,26 @@ The name of the entity the request is configured to fetch.
 var entityName: String? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSString * entityName;
+```
+
 #### Discussion
 
-The entity name property is populated whenever the NSFetchRequest is created with `NSFetchRequest/init(entityName:)` or [`init(entityName:)`](nsfetchrequest/init(entityname:)-5anoo.md).
+The entity name property is populated whenever the NSFetchRequest is created with `NSFetchRequest/init(entityName:)` or [`init(entityName:)`](./init%28entityname%29-5anoo.md).
 
 ## See Also
 
-- [convenience init(entityName: String)](nsfetchrequest/init(entityname:)-5anoo.md)
+### Managing the Fetch Request’s Entity
+- [convenience init(entityName: String)](./init%28entityname%29-5anoo.md)
   Returns a fetch request configured with a given entity name.
-- [init()](nsfetchrequest/init.md)
+- [init()](./init%28%29.md)
   Creates a new fetch request.
-- [var entity: NSEntityDescription?](nsfetchrequest/entity.md)
+- [var entity: NSEntityDescription?](./entity.md)
   The entity specified for the fetch request.
-- [var includesSubentities: Bool](nsfetchrequest/includessubentities.md)
+- [var includesSubentities: Bool](./includessubentities.md)
   A Boolean value that indicates whether the fetch request includes subentities in the results.
-- [struct NSFetchRequestResultType](nsfetchrequestresulttype.md)
+- [struct NSFetchRequestResultType](../nsfetchrequestresulttype.md)
   Constants that specify the possible result types a fetch request can return.
 
 

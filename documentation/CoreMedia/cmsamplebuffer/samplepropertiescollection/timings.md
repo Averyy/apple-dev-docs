@@ -1,7 +1,8 @@
 # timings
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access sample timings.
 
@@ -22,7 +23,7 @@ var timings: CMSampleBuffer.TimingPerSample? { get set }
 
 #### Discussion
 
-When setting distinct timings, the number of entries must match [`count`](cmsamplebuffer/samplepropertiescollection/count.md).
+When setting distinct timings, the number of entries must match [`count`](./count.md).
 
 
 ---

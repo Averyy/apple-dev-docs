@@ -1,12 +1,13 @@
 # tokenStyle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The token style of the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The token style of the receiver.
 var tokenStyle: NSTokenField.TokenStyle { get set }
 ```
 
+```objc
+@property NSTokenStyle tokenStyle;
+```
+
 #### Discussion
 
-The valid values are described in [`NSTokenField.TokenStyle`](nstokenfield/tokenstyle-swift.enum.md).
+The valid values are described in [`NSTokenField.TokenStyle`](../nstokenfield/tokenstyle-swift.enum.md).
 
 ## See Also
 
-- [var tokenStyle: NSTokenField.TokenStyle](nstokenfield/tokenstyle-swift.property.md)
+### Related Documentation
+- [var tokenStyle: NSTokenField.TokenStyle](../nstokenfield/tokenstyle-swift.property.md)
   The token style of the receiver.
 
 

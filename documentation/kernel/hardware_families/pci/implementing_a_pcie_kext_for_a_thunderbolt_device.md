@@ -1,6 +1,7 @@
 # Implementing a PCIe Kext for a Thunderbolt Device
 
-**Framework**: Kernel
+**Framework**: Kernel  
+**Role**: Article
 
 Create an IOKit driver to support Thunderbolt devices that implement features not supported in PCIDriverKit, such as wireless networking or audio. 
 
@@ -16,19 +17,19 @@ Kernel extensions run in the kernel process space of the target Mac computer usi
 - Memory architecture differences between Apple silicon and Intel-based Macs
 - Kernel integrity protection (KIP) restrictions
 
-For basic information about building kernel extensions, see [`Kernel Extension Programming Topics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KEXTConcept/KEXTConceptIntro/introduction.html#//apple_ref/doc/uid/TP40001063). For information about how to develop drivers using PCIDriverKit, see [`Creating Custom PCIe Drivers for Thunderbolt Devices`](https://developer.apple.com/documentation/pcidriverkit/creating-custom-pcie-drivers-for-thunderbolt-devices). 
+For basic information about building kernel extensions, see [Kernel Extension Programming Topics](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KEXTConcept/KEXTConceptIntro/introduction.html#//apple_ref/doc/uid/TP40001063). For information about how to develop drivers using PCIDriverKit, see [Creating Custom PCIe Drivers for Thunderbolt Devices](../../../PCIDriverKit/creating-custom-pcie-drivers-for-thunderbolt-devices.md). 
 
-##### 3686769
+##### Implement Your Driver Life Cycle Normally
 
-The life cycle of a kernel extension in macOS 11 remains unchanged from previous versions of macOS. In particular, the system loads your custom [`IOService`](ioservice.md) subclass, and calls its [`init`](ioservice/3180717-init.md) and [`Start`](ioservice/3180710-start.md) methods. Use the [`init`](ioservice/3180717-init.md) method to allocate your driver’s data structures. Use the [`Start`](ioservice/3180710-start.md) method to configure your hardware, install event handlers, and prepare your driver to handle requests. When your driver is no longer needed, the system calls the corresponding [`Stop`](ioservice/3180713-stop.md) and [`free`](ioservice/3180716-free.md) methods to release any driver-related resources. 
+The life cycle of a kernel extension in macOS 11 remains unchanged from previous versions of macOS. In particular, the system loads your custom [`IOService`](../../ioservice.md) subclass, and calls its [`init`](../../ioservice/api-3180717-init.md) and [`Start`](../../ioservice/api-3180710-start.md) methods. Use the [`init`](../../ioservice/api-3180717-init.md) method to allocate your driver’s data structures. Use the [`Start`](../../ioservice/api-3180710-start.md) method to configure your hardware, install event handlers, and prepare your driver to handle requests. When your driver is no longer needed, the system calls the corresponding [`Stop`](../../ioservice/api-3180713-stop.md) and [`free`](../../ioservice/api-3180716-free.md) methods to release any driver-related resources. 
 
-For information about how to implement your driver life cycle, see [`IOKit Fundamentals`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DeviceDrivers/Conceptual/IOKitFundamentals/Introduction/Introduction.html#//apple_ref/doc/uid/TP0000011).
+For information about how to implement your driver life cycle, see [IOKit Fundamentals](https://developer.apple.com/library/archive/documentation/DeviceDrivers/Conceptual/IOKitFundamentals/Introduction/Introduction.html#//apple_ref/doc/uid/TP0000011).
 
-##### 3686768
+##### Access Memory Using DMA Commands
 
 Thunderbolt devices access system memory through a system-provided I/O memory management unit (IOMMU). On Intel-based Mac computers, the system provides a single IOMMU and gives all devices a shared view of system memory. On Macs with Apple silicon, the system gives each device its own IOMMU. Always implement your driver as if it has its own IOMMU, and never assume you have a shared view of system memory. 
 
-To transfer memory correctly on all types of Macs, use an [`IODMACommand`](iodmacommand.md) object configured with the [`kMapped`](iodmacommand/mappingoptions/kmapped.md) option. Typically, you create one or more of these objects at startup and reuse them multiple times. To create one, fetch the [`IOMapper`](iomapper.md) object associated with your driver’s provider object and pass it to the appropriate [`IODMACommand`](iodmacommand.md) creation function. For example, the following code creates a command object for 64-bit transfers with several standard transfer options.  
+To transfer memory correctly on all types of Macs, use an [`IODMACommand`](../../iodmacommand.md) object configured with the [kMapped](../../iodmacommand/mappingoptions/kmapped.md) option. Typically, you create one or more of these objects at startup and reuse them multiple times. To create one, fetch the [`IOMapper`](../../iomapper.md) object associated with your driver’s provider object and pass it to the appropriate [`IODMACommand`](../../iodmacommand.md) creation function. For example, the following code creates a command object for 64-bit transfers with several standard transfer options.  
 
 ```occ
 IOMapper *mapper = IOMapper::copyMapperForDevice(provider);
@@ -43,15 +44,15 @@ IODMACommand *dmaCommand =
               NULL);
 ```
 
-When you are ready to transfer data to or from your device, create a new memory descriptor to handle the transferred data. Configure the descriptor with the [`kIODirectionIn`](1643339-anonymous/kiodirectionin.md) direction to read data from the device into memory, or configure it with the [`kIODirectionOut`](1643339-anonymous/kiodirectionout.md) direction to send data from memory out to the device. Assign the memory descriptor to your [`IODMACommand`](iodmacommand.md) object using its [`setMemoryDescriptor`](iodmacommand/1547727-setmemorydescriptor.md) method, the default options for which begin the transfer operation immediately. 
+When you are ready to transfer data to or from your device, create a new memory descriptor to handle the transferred data. Configure the descriptor with the [`kIODirectionIn`](../../api-1643339-anonymous/kiodirectionin.md) direction to read data from the device into memory, or configure it with the [`kIODirectionOut`](../../api-1643339-anonymous/kiodirectionout.md) direction to send data from memory out to the device. Assign the memory descriptor to your [`IODMACommand`](../../iodmacommand.md) object using its [`setMemoryDescriptor`](../../iodmacommand/api-1547727-setmemorydescriptor.md) method, the default options for which begin the transfer operation immediately. 
 
-> **Note**: Calls to the [`getPhysicalSegment`](iomemorydescriptor/1442068-getphysicalsegment.md) method of [`IOMemoryDescriptor`](iomemorydescriptor.md) fail on Apple silicon. When updating older kernel extensions to support Apple silicon, replace all calls to that method with [`IODMACommand`](iodmacommand.md) objects. 
+> **Note**: Calls to the [`getPhysicalSegment`](../../iomemorydescriptor/api-1442068-getphysicalsegment.md) method of [`IOMemoryDescriptor`](../../iomemorydescriptor.md) fail on Apple silicon. When updating older kernel extensions to support Apple silicon, replace all calls to that method with [`IODMACommand`](../../iodmacommand.md) objects. 
 
-##### 3686966
+##### Add Thunderbolt Support to Your Driver’s Personality Data
 
 When it detects new hardware, the system must find an appropriate set of drivers to manage that hardware. It does so by comparing the hardware details to information found in the `kIOKitPersonalitiesKey` key of each driver’s `Info.plist` file, and identifying the drivers that best match the hardware. For example, a driver might match only against devices from a specific manufacturer, or devices that support only a specific communication protocol. 
 
-To indicate that your PCIe driver supports Thunderbolt, include the `IOPCITunnelCompatible` key in your driver’s personality dictionaries. Include this key only if the [`IOService`](ioservice.md) subclass in the `IOClass` key of that dictionary is able to communicate with your Thunderbolt device. The following example shows the presence of this key in a custom PCI driver.
+To indicate that your PCIe driver supports Thunderbolt, include the `IOPCITunnelCompatible` key in your driver’s personality dictionaries. Include this key only if the [`IOService`](../../ioservice.md) subclass in the `IOClass` key of that dictionary is able to communicate with your Thunderbolt device. The following example shows the presence of this key in a custom PCI driver.
 
 ```other
 <key>MyDriverKitDriver</key>
@@ -96,9 +97,9 @@ if (SearchProperty("IOPCITunnelled", "IOService", kIOServiceSearchPropertyParent
 }
 ```
 
-##### 3686967
+##### Notify the System of External Storage Devices
 
-Users can disconnect most Thunderbolt devices at any time, but macOS doesn’t allow them to disconnect external storage devices without properly ejecting them. If your PCI driver presents the device as storage to the system, notify the system early in your driver’s [`start`](ioservice/1532606-start.md) method by setting the `Physical Interconnect Location` property to `External`, as shown in the following example.
+Users can disconnect most Thunderbolt devices at any time, but macOS doesn’t allow them to disconnect external storage devices without properly ejecting them. If your PCI driver presents the device as storage to the system, notify the system early in your driver’s [`start`](../../ioservice/api-1532606-start.md) method by setting the `Physical Interconnect Location` property to `External`, as shown in the following example.
 
 ```occ
 // Add the Physical Interconnect Location property to the driver.
@@ -110,17 +111,17 @@ OSSafeReleaseNULL(externalStr);
 OSSafeReleaseNULL(dict);
 ```
 
-> ❗ **Important**: Always set the `Physical Interconnect Location` property early in your driver’s [`start`](ioservice/1532606-start.md) method. Don’t set it after you access the device. 
+> ❗ **Important**: Always set the `Physical Interconnect Location` property early in your driver’s [`start`](../../ioservice/api-1532606-start.md) method. Don’t set it after you access the device. 
 
-##### 3690960
+##### Avoid Audio Glitches Caused by Power Transitions
 
 The processors in recent Macs have low-power states that reduce the processor speed and voltage when the computer is idle. These low-power states decrease overall power consumption and heat generation on the system, and improve battery life. However, when a power-state transition occurs, the system temporarily stops all PCI bus traffic while it changes the power state of the processor cores. Halting PCI bus traffic can cause audio glitches and other side effects on devices that are sensitive to the added latency.
 
-To mitigate the problems of any added latency, implement the PCIe latency tolerance reporting (LTR) extended capability in your devices according to the PCIe specifications. If your driver supports legacy devices, schedule your driver’s time-critical DMA operations so that occasional delays don’t affect your device. If you’re unable to adjust the schedule of your DMA operations, call the [`requireMaxBusStall`](ioservice/1532887-requiremaxbusstall.md) method of your [`IOService`](ioservice.md) subclass at the beginning and end of any time-critical transfers. Before a transfer, call this method with the constant that represents the maximum latency your driver can tolerate. For example, specify `kIOMaxBusStall20usec` to delay bus stalls for 20 microseconds. The system avoids entering low-power states for the specified amount of time. After a transfer, restore the default bus stall time by passing `kIOMaxBusStallNone` to the method. 
+To mitigate the problems of any added latency, implement the PCIe latency tolerance reporting (LTR) extended capability in your devices according to the PCIe specifications. If your driver supports legacy devices, schedule your driver’s time-critical DMA operations so that occasional delays don’t affect your device. If you’re unable to adjust the schedule of your DMA operations, call the [`requireMaxBusStall`](../../ioservice/api-1532887-requiremaxbusstall.md) method of your [`IOService`](../../ioservice.md) subclass at the beginning and end of any time-critical transfers. Before a transfer, call this method with the constant that represents the maximum latency your driver can tolerate. For example, specify `kIOMaxBusStall20usec` to delay bus stalls for 20 microseconds. The system avoids entering low-power states for the specified amount of time. After a transfer, restore the default bus stall time by passing `kIOMaxBusStallNone` to the method. 
 
-> ❗ **Important**: Call the [`requireMaxBusStall`](ioservice/1532887-requiremaxbusstall.md) method only if there is no other way to make your device and driver more tolerant of increased memory latency. The method prevents the system from transitioning to lower-power states, which can significantly impact battery life on portable systems. It may also increase system heat, and require device fans to run longer. Overuse of this API may also lead to kernel panics. 
+> ❗ **Important**: Call the [`requireMaxBusStall`](../../ioservice/api-1532887-requiremaxbusstall.md) method only if there is no other way to make your device and driver more tolerant of increased memory latency. The method prevents the system from transitioning to lower-power states, which can significantly impact battery life on portable systems. It may also increase system heat, and require device fans to run longer. Overuse of this API may also lead to kernel panics. 
 
-Because audio transfers occur only when your audio engine is running, call the [`requireMaxBusStall`](ioservice/1532887-requiremaxbusstall.md) method in the [`performAudioEngineStart`](ioaudioengine/1561628-performaudioenginestart.md) and [`performAudioEngineStop`](ioaudioengine/1561589-performaudioenginestop.md) methods of [`IOAudioEngine`](ioaudioengine.md). The following example shows an implementation of these methods that prevents PCI bus stalls for 10 microseconds when a transfer begins, and restores the default bus stall time at the end of the transfer. 
+Because audio transfers occur only when your audio engine is running, call the [`requireMaxBusStall`](../../ioservice/api-1532887-requiremaxbusstall.md) method in the [`performAudioEngineStart`](../../ioaudioengine/api-1561628-performaudioenginestart.md) and [`performAudioEngineStop`](../../ioaudioengine/api-1561589-performaudioenginestop.md) methods of [`IOAudioEngine`](../../ioaudioengine.md). The following example shows an implementation of these methods that prevents PCI bus stalls for 10 microseconds when a transfer begins, and restores the default bus stall time at the end of the transfer. 
 
 ```occ
 /* Header file */
@@ -149,17 +150,18 @@ IOReturn MyAudioEngine::performAudioEngineStop()
 }
 ```
 
-##### 3686767
+##### Build Your Kernel Extension as a Universal Binary
 
 Build your kernel extension as a universal binary on macOS 11 and later. A universal binary supports both Apple silicon and Intel-based Mac computers. 
 
-On Macs with Apple silicon, the kernel is built for the ARM64e architecture, so you must similarly build your kernel extensions for that architecture. The ARM64e architecture enables pointer authentication, a security feature that prevents the unexpected modification of pointers at runtime. For more information about how to support pointer authentication, see [`Preparing your app to work with pointer authentication`](https://developer.apple.com/documentation/security/preparing-your-app-to-work-with-pointer-authentication). 
+On Macs with Apple silicon, the kernel is built for the ARM64e architecture, so you must similarly build your kernel extensions for that architecture. The ARM64e architecture enables pointer authentication, a security feature that prevents the unexpected modification of pointers at runtime. For more information about how to support pointer authentication, see [Preparing your app to work with pointer authentication](../../../Security/preparing-your-app-to-work-with-pointer-authentication.md). 
 
 ## See Also
 
-- [IOPCIDevice](iopcidevice.md)
+### Devices
+- [IOPCIDevice](../../iopcidevice.md)
   An IOService class representing a PCI device.
-- [IOAGPDevice](ioagpdevice.md)
+- [IOAGPDevice](../../ioagpdevice.md)
   An IOService class representing an AGP primary device.
 
 

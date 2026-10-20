@@ -1,7 +1,8 @@
 # init(unsafeUninitializedCapacity:initializingWith:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an array with the specified capacity, and then calls the given closure with a buffer covering the array’s uninitialized memory.
 
@@ -29,18 +30,23 @@ Inside the closure, set the `initializedCount` parameter to the number of elemen
 ## Parameters
 
 - `unsafeUninitializedCapacity`: The number of elements to allocate space for in the new array.
-- `initializer`: A closure that initializes elements and sets the count of the new array. - Parameters: - buffer: A buffer covering uninitialized memory with room for the specified number of elements.
-- initializedCount: The count of initialized elements in the array, which begins as zero. Set `initializedCount` to the number of elements you initialize.
+- `initializer`: A closure that initializes elements and sets the count of the new array.
+
+  - Parameters:
+
+    - buffer: A buffer covering uninitialized memory with room for the specified number of elements.
+    - initializedCount: The count of initialized elements in the array, which begins as zero. Set `initializedCount` to the number of elements you initialize.
 
 ## See Also
 
-- [init()](array/init.md)
+### Creating an Array
+- [init()](./init%28%29.md)
   Creates a new, empty array.
-- [init<S>(S)](array/init(_:)-1ip9h.md)
+- [init<S>(S)](./init%28_%29-1ip9h.md)
   Creates a new instance of a collection containing the elements of a sequence.
-- [init<S>(S)](array/init(_:)-236cl.md)
+- [init<S>(S)](./init%28_%29-236cl.md)
   Creates an array containing the elements of a sequence.
-- [init(repeating: Element, count: Int)](array/init(repeating:count:).md)
+- [init(repeating: Element, count: Int)](./init%28repeating,count%29.md)
   Creates a new array containing the specified number of a single, repeated value.
 
 

@@ -1,7 +1,8 @@
 # kCVImageBufferDisplayHeightKey
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key to the display height of the image buffer.
 
@@ -20,13 +21,18 @@ A key to the display height of the image buffer.
 let kCVImageBufferDisplayHeightKey: CFString
 ```
 
+```c
+extern CFStringRef const kCVImageBufferDisplayHeightKey;
+```
+
 #### Discussion
 
-The display height value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
+The display height value is of type [`CFNumber`](../CoreFoundation/cfnumber.md).
 
 ## See Also
 
-- [let kCVImageBufferDisplayWidthKey: CFString](kcvimagebufferdisplaywidthkey.md)
+### Constants
+- [let kCVImageBufferDisplayWidthKey: CFString](./kcvimagebufferdisplaywidthkey.md)
   A key to the display width of the image buffer.
 
 

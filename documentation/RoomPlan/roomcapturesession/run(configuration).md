@@ -1,7 +1,8 @@
 # run(configuration:)
 
 **Framework**: RoomPlan  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts a room-capture session with the specified configuration.
 
@@ -18,7 +19,7 @@ func run(configuration: RoomCaptureSession.Configuration)
 
 ## Mentions
 
-- [Scanning the rooms of a single structure](scanning-the-rooms-of-a-single-structure.md)
+- [Scanning the rooms of a single structure](../scanning-the-rooms-of-a-single-structure.md)
 
 ## Parameters
 
@@ -26,11 +27,12 @@ func run(configuration: RoomCaptureSession.Configuration)
 
 ## See Also
 
-- [RoomCaptureSession.Configuration](roomcapturesession/configuration.md)
+### Controlling a session
+- [RoomCaptureSession.Configuration](./configuration.md)
   Settings that configure the room-scanning process.
-- [func stop()](roomcapturesession/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops the room-capture session.
-- [func stop(pauseARSession: Bool)](roomcapturesession/stop(pausearsession:).md)
+- [func stop(pauseARSession: Bool)](./stop%28pausearsession%29.md)
   Stops the room-capture session and indicates whether the app pauses the underlying AR session.
 
 

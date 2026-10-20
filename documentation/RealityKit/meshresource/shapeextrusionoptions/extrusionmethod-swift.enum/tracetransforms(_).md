@@ -1,7 +1,8 @@
 # MeshResource.ShapeExtrusionOptions.ExtrusionMethod.traceTransforms(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Extrudes the shape by sweeping it along a piecewise-linear curve.
 
@@ -42,7 +43,7 @@ extrusionOptions.extrusionMethod = .traceTransforms(
 )
 ```
 
-![None](/images/com.apple.RealityKit/generateExtrudedShape-extrusionMethod-traceTransforms-red.jpg)
+![](https://developer.apple.com/tutorials/images/com.apple.RealityKit/generateExtrudedShape-extrusionMethod-traceTransforms-red.jpg)
 
 You can also add a rotation for each point in the collection. For example, use the index to rotate the angle by `.pi / 6` in the z-axis for each position.
 
@@ -60,7 +61,7 @@ extrusionOptions.extrusionMethod = .traceTransforms(
 )
 ```
 
-![None](/images/com.apple.RealityKit/generateExtrudedShape-extrusionMethod-traceTransforms-red-rotated.jpg)
+![](https://developer.apple.com/tutorials/images/com.apple.RealityKit/generateExtrudedShape-extrusionMethod-traceTransforms-red-rotated.jpg)
 
 
 ---

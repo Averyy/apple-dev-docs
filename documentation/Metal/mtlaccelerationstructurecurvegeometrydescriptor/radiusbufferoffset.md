@@ -1,7 +1,8 @@
 # radiusBufferOffset
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset, in bytes, to the radius data in the buffer.
 
@@ -19,9 +20,13 @@ The offset, in bytes, to the radius data in the buffer.
 var radiusBufferOffset: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger radiusBufferOffset;
+```
+
 #### Discussion
 
-The offset needs to be a multiple of the radius format you configure with the [`radiusFormat`](mtlaccelerationstructurecurvegeometrydescriptor/radiusformat.md) property. You also need to align the offset to both the radius format’s size and the platform’s buffer alignment requirement.
+The offset needs to be a multiple of the radius format you configure with the [`radiusFormat`](./radiusformat.md) property. You also need to align the offset to both the radius format’s size and the platform’s buffer alignment requirement.
 
 
 ---

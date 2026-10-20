@@ -1,17 +1,22 @@
 # NSRuleEditor.NestingMode
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies a type for nesting modes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 enum NestingMode
+```
+
+```c
+enum NSRuleEditorNestingMode : NSUInteger;
 ```
 
 #### Overview
@@ -21,36 +26,37 @@ See `Nesting Modes` for possible values.
 ## Topics
 
 ### Modes
-- [NSRuleEditor.NestingMode.compound](nsruleeditor/nestingmode-swift.enum/compound.md)
+- [NSRuleEditor.NestingMode.compound](./nestingmode-swift.enum/compound.md)
   Unlimited nesting and compound rows.
-- [NSRuleEditor.NestingMode.list](nsruleeditor/nestingmode-swift.enum/list.md)
+- [NSRuleEditor.NestingMode.list](./nestingmode-swift.enum/list.md)
   Allows a single list, with no nesting and no compound rows.
-- [NSRuleEditor.NestingMode.simple](nsruleeditor/nestingmode-swift.enum/simple.md)
+- [NSRuleEditor.NestingMode.simple](./nestingmode-swift.enum/simple.md)
   One compound row at the top with subrows beneath it, and no further nesting allowed.
-- [NSRuleEditor.NestingMode.single](nsruleeditor/nestingmode-swift.enum/single.md)
+- [NSRuleEditor.NestingMode.single](./nestingmode-swift.enum/single.md)
   Only a single row is allowed.
 ### Initializers
-- [init?(rawValue: UInt)](nsruleeditor/nestingmode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./nestingmode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isEditable: Bool](nsruleeditor/iseditable.md)
+### Configuring a Rule Editor
+- [var isEditable: Bool](./iseditable.md)
   A Boolean value that determines whether the rule editor is editable.
-- [var nestingMode: NSRuleEditor.NestingMode](nsruleeditor/nestingmode-swift.property.md)
+- [var nestingMode: NSRuleEditor.NestingMode](./nestingmode-swift.property.md)
   The rule editor’s nesting mode.
-- [var canRemoveAllRows: Bool](nsruleeditor/canremoveallrows.md)
+- [var canRemoveAllRows: Bool](./canremoveallrows.md)
   A Boolean value that indicates whether all the rows can be removed.
-- [var rowHeight: CGFloat](nsruleeditor/rowheight.md)
+- [var rowHeight: CGFloat](./rowheight.md)
   The rule editor’s row height.
 
 

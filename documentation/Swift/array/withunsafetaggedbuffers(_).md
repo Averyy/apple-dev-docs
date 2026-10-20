@@ -1,7 +1,8 @@
 # withUnsafeTaggedBuffers(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Access the underlying CMTaggedBuffers.
 
@@ -19,6 +20,8 @@ Access the underlying CMTaggedBuffers.
 ```swift
 func withUnsafeTaggedBuffers<R>(_ body: ([CMTaggedBuffer]) throws -> sending R) rethrows -> sending R where R : ~Copyable
 ```
+
+Available when `Element` is `CMTaggedDynamicBuffer`.
 
 
 ---

@@ -1,7 +1,8 @@
 # user
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier associated with the user’s Apple ID.
 
@@ -20,9 +21,13 @@ An identifier associated with the user’s Apple ID.
 var user: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * user;
+```
+
 #### Discussion
 
-Typically you leave this property set to `nil` the first time you authenticate a user. Otherwise, if you previously received an authorization containing an [`ASAuthorizationAppleIDCredential`](asauthorizationappleidcredential.md) instance, set this property to the value from the credential’s [`user`](asauthorizationappleidcredential/user.md) property.
+Typically you leave this property set to `nil` the first time you authenticate a user. Otherwise, if you previously received an authorization containing an [`ASAuthorizationAppleIDCredential`](../asauthorizationappleidcredential.md) instance, set this property to the value from the credential’s [`user`](../asauthorizationappleidcredential/user.md) property.
 
 The value is an arbitrary string that’s portable among apps from a single developer, but not between apps from different developers.
 

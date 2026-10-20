@@ -1,7 +1,8 @@
 # GCInputXboxPaddleOne
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name for the controller’s P1 paddle button.
 
@@ -11,7 +12,7 @@ The name for the controller’s P1 paddle button.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,15 +22,17 @@ var GCInputXboxPaddleOne: String { get }
 
 ## See Also
 
-- [var paddleButton1: GCControllerButtonInput?](gcxboxgamepad/paddlebutton1.md)
+### Related Documentation
+- [var paddleButton1: GCControllerButtonInput?](./gcxboxgamepad/paddlebutton1.md)
   The controller’s paddle 1 button element, which has a P1 label on the back of the controller.
-- [var GCInputButtonShare: String](gcinputbuttonshare-87tha.md)
+### Xbox controller button names
+- [var GCInputButtonShare: String](./gcinputbuttonshare-87tha.md)
   The name of the share button.
-- [var GCInputXboxPaddleTwo: String](gcinputxboxpaddletwo-4ya43.md)
+- [var GCInputXboxPaddleTwo: String](./gcinputxboxpaddletwo-4ya43.md)
   The name for the controller’s P2 paddle button.
-- [var GCInputXboxPaddleThree: String](gcinputxboxpaddlethree-6zcw8.md)
+- [var GCInputXboxPaddleThree: String](./gcinputxboxpaddlethree-6zcw8.md)
   The name for the controller’s P3 paddle button.
-- [var GCInputXboxPaddleFour: String](gcinputxboxpaddlefour-1obrw.md)
+- [var GCInputXboxPaddleFour: String](./gcinputxboxpaddlefour-1obrw.md)
   The name for the controller’s P4 paddle button.
 
 

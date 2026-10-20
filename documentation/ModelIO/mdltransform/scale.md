@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The x-, y-, and z-axis scale factors of the transform relative to its parent coordinate space.
 
@@ -19,21 +20,26 @@ The x-, y-, and z-axis scale factors of the transform relative to its parent coo
 var scale: vector_float3 { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) vector_float3 scale;
+```
+
 #### Discussion
 
-Together with the [`translation`](mdltransform/translation.md), [`rotation`](mdltransform/rotation.md), and [`shear`](mdltransform/shear.md) properties, this property defines the local coordinate space for any object affected by the transform, relative to a parent coordinate space. Use the [`matrix`](mdltransformcomponent/matrix.md) property to work with the complete transform.
+Together with the [`translation`](./translation.md), [`rotation`](./rotation.md), and [`shear`](./shear.md) properties, this property defines the local coordinate space for any object affected by the transform, relative to a parent coordinate space. Use the [`matrix`](../mdltransformcomponent/matrix.md) property to work with the complete transform.
 
-If the transform includes time-based information, reading this property returns the scale as of the earliest time sample (as reported by the [`minimumTime`](mdltransformcomponent/minimumtime.md) property). Writing to this property erases any time-sampled data for the scale factor. To work with time-sampled data from an animated transform, use the [`scale(atTime:)`](mdltransform/scale(attime:).md) and [`setScale(_:forTime:)`](mdltransform/setscale(_:fortime:).md) methods.
+If the transform includes time-based information, reading this property returns the scale as of the earliest time sample (as reported by the [`minimumTime`](../mdltransformcomponent/minimumtime.md) property). Writing to this property erases any time-sampled data for the scale factor. To work with time-sampled data from an animated transform, use the [`scale(atTime:)`](./scale%28attime%29.md) and [`setScale(_:forTime:)`](./setscale%28_,fortime%29.md) methods.
 
 ## See Also
 
-- [var translation: vector_float3](mdltransform/translation.md)
+### Using Factors of a Static Transform
+- [var translation: vector_float3](./translation.md)
   The x-, y-, and z-axis offsets of the transform relative to its parent coordinate space.
-- [var rotation: vector_float3](mdltransform/rotation.md)
+- [var rotation: vector_float3](./rotation.md)
   The orientation, as a vector of Euler angles in radians, of the transform relative to its parent coordinate space.
-- [var shear: vector_float3](mdltransform/shear.md)
+- [var shear: vector_float3](./shear.md)
   The x-, y-, and z-axis shear factors of the transform relative to its parent coordinate space.
-- [func setIdentity()](mdltransform/setidentity.md)
+- [func setIdentity()](./setidentity%28%29.md)
   Sets all factors of the transform to those of the identity transformation.
 
 

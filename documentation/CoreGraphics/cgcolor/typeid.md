@@ -1,7 +1,8 @@
 # typeID
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the Core Foundation type identifier for a color data type.
 
@@ -10,7 +11,7 @@ Returns the Core Foundation type identifier for a color data type.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the Core Foundation type identifier for a color data type.
 
 ```swift
 class var typeID: CFTypeID { get }
+```
+
+```c
+extern CFTypeID CGColorGetTypeID();
 ```
 
 

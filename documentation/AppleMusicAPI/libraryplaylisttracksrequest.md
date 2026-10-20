@@ -1,7 +1,8 @@
 # LibraryPlaylistTracksRequest
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A request to add tracks to a library playlist.
 
@@ -10,14 +11,14 @@ A request to add tracks to a library playlist.
 
 ## Declaration
 
-```swift
+```
 object LibraryPlaylistTracksRequest
 ```
 
 ## Topics
 
 ### Related Objects
-- [object LibraryPlaylistTracksRequest.Data](libraryplaylisttracksrequest/data-data.dictionary.md)
+- [object LibraryPlaylistTracksRequest.Data](./libraryplaylisttracksrequest/data-data.dictionary.md)
   An object that represents a single track when added to a library playlist in a request.
 
 ## Properties
@@ -26,13 +27,14 @@ object LibraryPlaylistTracksRequest
 
 ## See Also
 
-- [Create a New Library Playlist](create-a-new-library-playlist.md)
+### Creating and Modifying User Playlists
+- [Create a New Library Playlist](./create-a-new-library-playlist.md)
   Create a new playlist in a user’s library.
-- [Add Tracks to a Library Playlist](add-tracks-to-a-library-playlist.md)
+- [Add Tracks to a Library Playlist](./add-tracks-to-a-library-playlist.md)
   Add new tracks to the end of a library playlist.
-- [Add a Resource to a Library](add-a-resource-to-a-library.md)
+- [Add a Resource to a Library](./add-a-resource-to-a-library.md)
   Add a catalog resource to a user’s iCloud Music Library.
-- [object LibraryPlaylistCreationRequest](libraryplaylistcreationrequest.md)
+- [object LibraryPlaylistCreationRequest](./libraryplaylistcreationrequest.md)
   A request to create a new playlist in a user’s library.
 
 

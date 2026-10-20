@@ -2,9 +2,10 @@
 
 **Framework**: TipKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
-The rules that determine when a tip is eligible for display. For more information on rules, see [`Rule`](tips/rule.md).
+The rules that determine when a tip is eligible for display. For more information on rules, see [`Rule`](../tips/rule.md).
 
 **Availability**:
 - iOS 17.0+
@@ -28,9 +29,10 @@ Use this property to define the rules for when your tips display. If you don’t
 
 ## See Also
 
-- [typealias Rule](tip/rule.md)
+### Controlling when tips appear
+- [typealias Rule](./rule.md)
   A condition to meet before displaying a tip.
-- [typealias Event](tip/event.md)
+- [typealias Event](./event.md)
   A repeatable user-defined action.
 
 

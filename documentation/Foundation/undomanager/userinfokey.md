@@ -1,7 +1,8 @@
 # UndoManager.UserInfoKey
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An extensible namespace for undo and redo user info keys.
 
@@ -18,6 +19,10 @@ An extensible namespace for undo and redo user info keys.
 
 ```swift
 struct UserInfoKey
+```
+
+```c
+typedef NSString * NSUndoManagerUserInfoKey;
 ```
 
 #### Discussion
@@ -40,26 +45,27 @@ self.undoManager.setActionUserInfoValue(Image(named: "new_layer"), forKey: .icon
 ## Topics
 
 ### Creating a user info key from a raw value
-- [init(String)](undomanager/userinfokey/init(_:).md)
+- [init(String)](./userinfokey/init%28_%29.md)
   Creates a user info key from the given string.
-- [init(rawValue: String)](undomanager/userinfokey/init(rawvalue:).md)
+- [init(rawValue: String)](./userinfokey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setActionUserInfoValue(Any?, forKey: UndoManager.UserInfoKey)](undomanager/setactionuserinfovalue(_:forkey:).md)
+### Working with user info
+- [func setActionUserInfoValue(Any?, forKey: UndoManager.UserInfoKey)](./setactionuserinfovalue%28_,forkey%29.md)
   Sets a user info value for an undo or redo action.
-- [func undoActionUserInfoValue(forKey: UndoManager.UserInfoKey) -> Any?](undomanager/undoactionuserinfovalue(forkey:).md)
+- [func undoActionUserInfoValue(forKey: UndoManager.UserInfoKey) -> Any?](./undoactionuserinfovalue%28forkey%29.md)
   Retrieves the undo action’s user info value for the given key.
-- [func redoActionUserInfoValue(forKey: UndoManager.UserInfoKey) -> Any?](undomanager/redoactionuserinfovalue(forkey:).md)
+- [func redoActionUserInfoValue(forKey: UndoManager.UserInfoKey) -> Any?](./redoactionuserinfovalue%28forkey%29.md)
   Retrieves the redo action’s user info value for the given key.
 
 

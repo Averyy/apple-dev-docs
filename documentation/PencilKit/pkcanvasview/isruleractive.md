@@ -1,7 +1,8 @@
 # isRulerActive
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a ruler view is visible on the canvas.
 
@@ -17,15 +18,20 @@ A Boolean value that indicates whether a ruler view is visible on the canvas.
 var isRulerActive: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isRulerActive) BOOL rulerActive;
+```
+
 ## See Also
 
-- [var tool: any PKTool](pkcanvasview/tool-1kj57.md)
+### Configuring the drawing environment
+- [var tool: any PKTool](./tool-1kj57.md)
   The currently selected tool used for drawing.
-- [var allowsFingerDrawing: Bool](pkcanvasview/allowsfingerdrawing.md)
+- [var allowsFingerDrawing: Bool](./allowsfingerdrawing.md)
   A Boolean value that indicates whether the canvas accepts input from the user’s finger in addition to Apple Pencil.
-- [var drawingPolicy: PKCanvasViewDrawingPolicy](pkcanvasview/drawingpolicy.md)
+- [var drawingPolicy: PKCanvasViewDrawingPolicy](./drawingpolicy.md)
   The policy that controls the types of touches allowed when drawing on the canvas.
-- [enum PKCanvasViewDrawingPolicy](pkcanvasviewdrawingpolicy.md)
+- [enum PKCanvasViewDrawingPolicy](../pkcanvasviewdrawingpolicy.md)
   Constants that you use to specify the type of drawing gestures your app permits while the user draws on the canvas.
 
 

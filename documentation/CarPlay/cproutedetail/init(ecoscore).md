@@ -1,7 +1,8 @@
 # init(ecoScore:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates additional route information for an eco-score rating.
 
@@ -14,6 +15,10 @@ Creates additional route information for an eco-score rating.
 
 ```swift
 convenience init(ecoScore value: Double)
+```
+
+```objc
++ (instancetype) routeDetailWithEcoScore:(double) value;
 ```
 
 #### Return Value

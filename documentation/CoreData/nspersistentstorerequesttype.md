@@ -1,18 +1,19 @@
 # NSPersistentStoreRequestType
 
 **Framework**: Core Data  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the types of fetch requests.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,41 +21,46 @@ Constants that specify the types of fetch requests.
 enum NSPersistentStoreRequestType
 ```
 
+```c
+enum NSPersistentStoreRequestType : NSUInteger;
+```
+
 #### Overview
 
-[`requestType`](nspersistentstorerequest/requesttype.md) uses these constants.
+[`requestType`](./nspersistentstorerequest/requesttype.md) uses these constants.
 
 ## Topics
 
 ### Constants
-- [NSPersistentStoreRequestType.fetchRequestType](nspersistentstorerequesttype/fetchrequesttype.md)
+- [NSPersistentStoreRequestType.fetchRequestType](./nspersistentstorerequesttype/fetchrequesttype.md)
   Specifies that the request returns managed objects.
-- [NSPersistentStoreRequestType.saveRequestType](nspersistentstorerequesttype/saverequesttype.md)
+- [NSPersistentStoreRequestType.saveRequestType](./nspersistentstorerequesttype/saverequesttype.md)
   Specifies that the request saves managed objects.
-- [NSPersistentStoreRequestType.batchInsertRequestType](nspersistentstorerequesttype/batchinsertrequesttype.md)
+- [NSPersistentStoreRequestType.batchInsertRequestType](./nspersistentstorerequesttype/batchinsertrequesttype.md)
   A request that inserts data into a persistent store using a batch of managed objects or dictionaries.
-- [NSPersistentStoreRequestType.batchUpdateRequestType](nspersistentstorerequesttype/batchupdaterequesttype.md)
+- [NSPersistentStoreRequestType.batchUpdateRequestType](./nspersistentstorerequesttype/batchupdaterequesttype.md)
   A request that updates data for multiple managed objects in a persistent store.
-- [NSPersistentStoreRequestType.batchDeleteRequestType](nspersistentstorerequesttype/batchdeleterequesttype.md)
+- [NSPersistentStoreRequestType.batchDeleteRequestType](./nspersistentstorerequesttype/batchdeleterequesttype.md)
   A request that deletes data for multiple managed objects from a persistent store.
 ### Initializers
-- [init?(rawValue: UInt)](nspersistentstorerequesttype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./nspersistentstorerequesttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var affectedStores: [NSPersistentStore]?](nspersistentstorerequest/affectedstores.md)
+### Configuring a Request
+- [var affectedStores: [NSPersistentStore]?](./nspersistentstorerequest/affectedstores.md)
   The stores the request should be sent to.
-- [var requestType: NSPersistentStoreRequestType](nspersistentstorerequest/requesttype.md)
+- [var requestType: NSPersistentStoreRequestType](./nspersistentstorerequest/requesttype.md)
   The type of the fetch request.
 
 

@@ -1,7 +1,8 @@
 # launchImageName
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the image or storyboard to use when your app launches because of the notification.
 
@@ -18,15 +19,28 @@ The name of the image or storyboard to use when your app launches because of the
 var launchImageName: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * launchImageName;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * launchImageName;
+```
+
 #### Discussion
 
 If you specify a value for this property, the system displays the specified image or storyboard when the system launches your app. The string in this property must match the name of an image file or storyboard in your app’s bundle.
 
 ## See Also
 
-- [var badge: NSNumber?](unnotificationcontent/badge.md)
+### Reading app configuration
+- [var badge: NSNumber?](./badge.md)
   The number that your app’s icon displays.
-- [var targetContentIdentifier: String?](unnotificationcontent/targetcontentidentifier.md)
+- [var targetContentIdentifier: String?](./targetcontentidentifier.md)
   The value your app uses to determine which scene to display to handle the notification.
 
 

@@ -1,21 +1,23 @@
 # IODataQueueDispatchSourceInterface
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```cpp
 class IODataQueueDispatchSourceInterface : OSInterface
 ```
 
 ## See Also
 
-- [IODataQueueDispatchSource](iodataqueuedispatchsource.md)
-- [IODataQueue](iodataqueue.md)
+### Data Queues
+- [IODataQueueDispatchSource](./iodataqueuedispatchsource.md)
+- [IODataQueue](./iodataqueue.md)
   A generic queue designed to pass data from the kernel to a user process.
 
 

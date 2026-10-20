@@ -1,7 +1,8 @@
 # init(floatLiteral:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a clearcoat object using a single value.
 
@@ -22,7 +23,7 @@ init(floatLiteral value: Float)
 
 A clearcoat is a separate layer of transparent specular highlights used to simulate a clear coating, like on a car or the surface of lacquered objects. Use this initializer to create an object to specify the amount of clearcoat for a material using a single value for the entire material, a UV-mapped image to specify different values for different parts of the entity, or both.
 
-The values from this property are available in the custom material’s surface shader function regardless of the value of [`lightingModel`](custommaterial/lightingmodel-swift.property.md) , but clearcoat isn’t drawn unless the custom material’s [`lightingModel`](custommaterial/lightingmodel-swift.property.md) is [`CustomMaterial.LightingModel.clearcoat`](custommaterial/lightingmodel-swift.enum/clearcoat.md) and the surface shader calls `params.surface().set_clearcoat()`.
+The values from this property are available in the custom material’s surface shader function regardless of the value of [`lightingModel`](../lightingmodel-swift.property.md) , but clearcoat isn’t drawn unless the custom material’s [`lightingModel`](../lightingmodel-swift.property.md) is [`CustomMaterial.LightingModel.clearcoat`](../lightingmodel-swift.enum/clearcoat.md) and the surface shader calls `params.surface().set_clearcoat()`.
 
 The following Metal code demonstrates how to retrieve the scale and texture values from this property and use them to enable clearcoat rendering.
 
@@ -46,9 +47,10 @@ The following Metal code demonstrates how to retrieve the scale and texture valu
 
 ## See Also
 
-- [init(scale: Float, texture: CustomMaterial.Texture?)](custommaterial/clearcoatroughness-swift.struct/init(scale:texture:).md)
+### Creating a clearcoat roughness object
+- [init(scale: Float, texture: CustomMaterial.Texture?)](./init%28scale,texture%29.md)
   Creates a clearcoat object using a single value or a texture.
-- [init(PhysicallyBasedMaterial.ClearcoatRoughness)](custommaterial/clearcoatroughness-swift.struct/init(_:).md)
+- [init(PhysicallyBasedMaterial.ClearcoatRoughness)](./init%28_%29.md)
   Creates a custom clearcoat object from a physically based material’s clearcoat property.
 
 

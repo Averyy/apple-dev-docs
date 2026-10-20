@@ -1,14 +1,15 @@
 # CNBoundsPrediction
 
 **Framework**: Cinematic  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure representing the bounds of the predicted subject.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 
@@ -21,20 +22,21 @@ struct CNBoundsPrediction
 ## Topics
 
 ### Instance Properties
-- [var confidence: Float](cnboundsprediction-swift.struct/confidence.md)
+- [var confidence: Float](./cnboundsprediction-swift.struct/confidence.md)
   A number between 0.0 and 1.0 representing the probability that a defined object is within the bounds.
-- [var normalizedBounds: CGRect](cnboundsprediction-swift.struct/normalizedbounds.md)
+- [var normalizedBounds: CGRect](./cnboundsprediction-swift.struct/normalizedbounds.md)
   The bounds of the detected object in normalized coordinates where (0.0, 0.0) is the upper-left corner, and (1.0, 1.0) is the lower-right.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CNObjectTracker](cnobjecttracker-1n598.md)
+### Custom Object Tracking
+- [class CNObjectTracker](./cnobjecttracker-1n598.md)
   An object that converts a normalized point or rectangle into a detection track that tracks an object over time.
 
 

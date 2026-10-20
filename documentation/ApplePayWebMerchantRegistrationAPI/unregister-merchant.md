@@ -1,7 +1,8 @@
 # Unregister Merchant
 
 **Framework**: Apple Pay Web Merchant Registration API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Unregister one or more domains associated with a previously registered merchant.
 
@@ -10,7 +11,7 @@ Unregister one or more domains associated with a previously registered merchant.
 
 #### Discussion
 
-Only request to unregister merchants for domains you previously registered using the [`Register Merchant`](register-merchant.md) API.
+Only request to unregister merchants for domains you previously registered using the [`Register Merchant`](./register-merchant.md) API.
 
 If you pass a subset of the merchant’s registered domains, Apple Pay server unregisters only those domains and the merchant remains active. If you unregister a merchant’s last-remaining registered domain, Apple Pay servers delete the merchant’s registration.
 
@@ -22,11 +23,23 @@ If you pass a subset of the merchant’s registered domains, Apple Pay server un
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `UnregisterMerchantRequest`
+
 The request body for unregistering merchants.
+
+## Responses
+
+- `200` OK: Success.
+- `400` Bad Request: The request is malformed or invalid, or the merchant isn’t registered.
+- `401` Unauthorized: The e-commerce platform doesn’t have permission to call this API.
+- `417` Expectation Failed: The e-commerce platform isn’t registered with Apple Developer.
+- `500` Internal Server Error: An internal server error occurred.
 
 ## See Also
 
-- [object UnregisterMerchantRequest](unregistermerchantrequest.md)
+### Web Merchant Unregistration
+- [object UnregisterMerchantRequest](./unregistermerchantrequest.md)
   The request body you use to unregister one or more merchant domains.
 
 

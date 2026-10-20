@@ -1,7 +1,8 @@
 # boldText
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 System Rotor allowing users to iterate through all the ranges of bolded text.
 
@@ -22,13 +23,14 @@ static var boldText: AccessibilitySystemRotor { get }
 
 ## See Also
 
-- [static var textFields: AccessibilitySystemRotor](accessibilitysystemrotor/textfields.md)
+### Iterating through text
+- [static var textFields: AccessibilitySystemRotor](./textfields.md)
   System Rotor allowing users to iterate through all text fields.
-- [static var italicText: AccessibilitySystemRotor](accessibilitysystemrotor/italictext.md)
+- [static var italicText: AccessibilitySystemRotor](./italictext.md)
   System Rotor allowing users to iterate through all the ranges of italicized text.
-- [static var underlineText: AccessibilitySystemRotor](accessibilitysystemrotor/underlinetext.md)
+- [static var underlineText: AccessibilitySystemRotor](./underlinetext.md)
   System Rotor allowing users to iterate through all the ranges of underlined text.
-- [static var misspelledWords: AccessibilitySystemRotor](accessibilitysystemrotor/misspelledwords.md)
+- [static var misspelledWords: AccessibilitySystemRotor](./misspelledwords.md)
   System Rotor allowing users to iterate through all the ranges of mis-spelled words.
 
 

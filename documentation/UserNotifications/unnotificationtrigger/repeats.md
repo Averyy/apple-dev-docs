@@ -1,7 +1,8 @@
 # repeats
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the system reschedules the notification after it’s delivered.
 
@@ -20,9 +21,21 @@ A Boolean value indicating whether the system reschedules the notification after
 var repeats: Bool { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) BOOL repeats;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) BOOL repeats;
+```
+
 #### Discussion
 
-When this property is [`false`](https://developer.apple.com/documentation/swift/false), the system delivers the notification only once. When this property is [`true`](https://developer.apple.com/documentation/swift/true), the system reschedules the notification request automatically, resulting in the system delivering the notification each time the trigger condition is met. To unschedule the notification request, use the methods of the [`UNUserNotificationCenter`](unusernotificationcenter.md) to remove the notification request.
+When this property is [`false`](../../Swift/false.md), the system delivers the notification only once. When this property is [`true`](../../Swift/true.md), the system reschedules the notification request automatically, resulting in the system delivering the notification each time the trigger condition is met. To unschedule the notification request, use the methods of the [`UNUserNotificationCenter`](../unusernotificationcenter.md) to remove the notification request.
 
 
 ---

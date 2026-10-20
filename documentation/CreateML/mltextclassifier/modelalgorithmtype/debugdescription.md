@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the algorithm type that’s suitable for output during debugging.
 
@@ -20,9 +21,10 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](mltextclassifier/modelalgorithmtype/description.md)
+### Describing an algorithm type
+- [var description: String](./description.md)
   A text representation of the algorithm type.
-- [var playgroundDescription: Any](mltextclassifier/modelalgorithmtype/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the algorithm type shown in a playground.
 
 

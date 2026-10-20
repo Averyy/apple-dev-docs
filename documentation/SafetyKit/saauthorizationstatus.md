@@ -1,7 +1,8 @@
 # SAAuthorizationStatus
 
 **Framework**: SafetyKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that represents the current Crash Detection event authorization state.
 
@@ -18,39 +19,44 @@ An enumeration that represents the current Crash Detection event authorization s
 enum SAAuthorizationStatus
 ```
 
+```c
+enum SAAuthorizationStatus : NSInteger;
+```
+
 #### Overview
 
-To verify that your app receives Crash Detection events, call [`requestAuthorization(completionHandler:)`](sacrashdetectionmanager/requestauthorization(completionhandler:).md) and inspect the authorization state.
+To verify that your app receives Crash Detection events, call [`requestAuthorization(completionHandler:)`](./sacrashdetectionmanager/requestauthorization%28completionhandler%29.md) and inspect the authorization state.
 
 ## Topics
 
 ### Obtaining status
-- [SAAuthorizationStatus.authorized](saauthorizationstatus/authorized.md)
+- [SAAuthorizationStatus.authorized](./saauthorizationstatus/authorized.md)
   This is the designated app for receiving Crash Detection events.
-- [SAAuthorizationStatus.denied](saauthorizationstatus/denied.md)
+- [SAAuthorizationStatus.denied](./saauthorizationstatus/denied.md)
   The system denies the app from receiving Crash Detection events because another app has authorization.
-- [SAAuthorizationStatus.notDetermined](saauthorizationstatus/notdetermined.md)
+- [SAAuthorizationStatus.notDetermined](./saauthorizationstatus/notdetermined.md)
   There isn’t a designated app for receiving Crash Detection events.
 ### Initializers
-- [init?(rawValue: Int)](saauthorizationstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./saauthorizationstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class SACrashDetectionManager](sacrashdetectionmanager.md)
+### Detecting a crash
+- [class SACrashDetectionManager](./sacrashdetectionmanager.md)
   Provides registration and management of Crash Detection events.
-- [class SACrashDetectionEvent](sacrashdetectionevent.md)
+- [class SACrashDetectionEvent](./sacrashdetectionevent.md)
   Describes the information about a vehicular crash.
-- [protocol SACrashDetectionDelegate](sacrashdetectiondelegate.md)
+- [protocol SACrashDetectionDelegate](./sacrashdetectiondelegate.md)
   The protocol that an object adopts to receive Crash Detection events and changes to the authorization status.
 
 

@@ -1,21 +1,26 @@
 # ICReturnDownloadError.Code.fileWritable
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The destination file is not writable.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case fileWritable
+```
+
+```c
+ICReturnDownloadFileWritable
 ```
 
 

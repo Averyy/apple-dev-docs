@@ -1,7 +1,8 @@
 # NavigationControlGroupStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The navigation control group style.
 
@@ -21,28 +22,29 @@ struct NavigationControlGroupStyle
 
 #### Overview
 
-You can also use [`navigation`](controlgroupstyle/navigation.md) to construct this style.
+You can also use [`navigation`](./controlgroupstyle/navigation.md) to construct this style.
 
 ## Topics
 
 ### Creating the control group style
-- [init()](navigationcontrolgroupstyle/init.md)
+- [init()](./navigationcontrolgroupstyle/init%28%29.md)
   Creates a navigation control group style.
 
 ## Relationships
 
 ### Conforms To
-- [ControlGroupStyle](controlgroupstyle.md)
+- [ControlGroupStyle](./controlgroupstyle.md)
 
 ## See Also
 
-- [struct AutomaticControlGroupStyle](automaticcontrolgroupstyle.md)
+### Supporting types
+- [struct AutomaticControlGroupStyle](./automaticcontrolgroupstyle.md)
   The default control group style.
-- [struct CompactMenuControlGroupStyle](compactmenucontrolgroupstyle.md)
+- [struct CompactMenuControlGroupStyle](./compactmenucontrolgroupstyle.md)
   A control group style that presents its content as a compact menu when the user presses the control, or as a submenu when nested within a larger menu.
-- [struct MenuControlGroupStyle](menucontrolgroupstyle.md)
+- [struct MenuControlGroupStyle](./menucontrolgroupstyle.md)
   A control group style that presents its content as a menu when the user presses the control, or as a submenu when nested within a larger menu.
-- [struct PaletteControlGroupStyle](palettecontrolgroupstyle.md)
+- [struct PaletteControlGroupStyle](./palettecontrolgroupstyle.md)
   A control group style that presents its content as a palette.
 
 

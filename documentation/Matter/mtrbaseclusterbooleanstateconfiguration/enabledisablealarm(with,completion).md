@@ -1,7 +1,8 @@
 # enableDisableAlarm(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func enableDisableAlarm(with params: MTRBooleanStateConfigurationClusterEnableDisableAlarmParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func enableDisableAlarm(with params: MTRBooleanStateConfigurationClusterEnableDisableAlarmParams) async throws
+```
+
+```objc
+- (void) enableDisableAlarmWithParams:(MTRBooleanStateConfigurationClusterEnableDisableAlarmParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

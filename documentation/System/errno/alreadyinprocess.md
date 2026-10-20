@@ -1,7 +1,8 @@
 # alreadyInProcess
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Operation already in progress.
 
@@ -22,7 +23,7 @@ static var alreadyInProcess: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,19 +33,20 @@ The corresponding C error is `EALREADY`.
 
 ## See Also
 
-- [static var badAddress: Errno](errno/badaddress.md)
+### System Call Errors
+- [static var badAddress: Errno](./badaddress.md)
   Bad address.
-- [static var interrupted: Errno](errno/interrupted.md)
+- [static var interrupted: Errno](./interrupted.md)
   Interrupted function call.
-- [static var invalidArgument: Errno](errno/invalidargument.md)
+- [static var invalidArgument: Errno](./invalidargument.md)
   Invalid argument.
-- [static var noFunction: Errno](errno/nofunction.md)
+- [static var noFunction: Errno](./nofunction.md)
   Function not implemented.
-- [static var nowInProgress: Errno](errno/nowinprogress.md)
+- [static var nowInProgress: Errno](./nowinprogress.md)
   Operation now in progress.
-- [static var resourceBusy: Errno](errno/resourcebusy.md)
+- [static var resourceBusy: Errno](./resourcebusy.md)
   Resource busy.
-- [static var resourceTemporarilyUnavailable: Errno](errno/resourcetemporarilyunavailable.md)
+- [static var resourceTemporarilyUnavailable: Errno](./resourcetemporarilyunavailable.md)
   Resource temporarily unavailable.
 
 

@@ -1,7 +1,8 @@
 # loadGameActivityDefinitions(IDs:completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Loads game activity definitions with the supplied App Store Connect identifiers.
 
@@ -16,16 +17,25 @@ Loads game activity definitions with the supplied App Store Connect identifiers.
 ## Declaration
 
 ```swift
+class func loadGameActivityDefinitions(IDs activityDefinitionIDs: [String]?, completionHandler: @escaping @Sendable ([GKGameActivityDefinition]?, (any Error)?) -> Void)
+```
+
+```swift
 class func loadGameActivityDefinitions(IDs activityDefinitionIDs: [String]?) async throws -> [GKGameActivityDefinition]
+```
+
+```objc
++ (void) loadGameActivityDefinitionsWithIDs:(NSArray<NSString *> *) activityDefinitionIDs completionHandler:(void (^)(NSArray<GKGameActivityDefinition *> *activityDefinitions, NSError *error)) completionHandler;
 ```
 
 ## Mentions
 
-- [Creating activities for your game](creating-activities-for-your-game.md)
+- [Creating activities for your game](../creating-activities-for-your-game.md)
 
 ## See Also
 
-- [class func loadGameActivityDefinitions(completionHandler: ([GKGameActivityDefinition]?, (any Error)?) -> Void)](gkgameactivitydefinition/loadgameactivitydefinitions(completionhandler:).md)
+### Loading activity definitions
+- [class func loadGameActivityDefinitions(completionHandler: ([GKGameActivityDefinition]?, (any Error)?) -> Void)](./loadgameactivitydefinitions%28completionhandler%29.md)
   Loads all the game activity definitions for the current game.
 
 

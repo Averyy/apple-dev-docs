@@ -1,7 +1,8 @@
 # SecTrustCopyResult(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a dictionary containing information about an evaluated trust.
 
@@ -20,13 +21,17 @@ Returns a dictionary containing information about an evaluated trust.
 func SecTrustCopyResult(_ trust: SecTrust) -> CFDictionary?
 ```
 
+```c
+CFDictionaryRefSecTrustCopyResult(SecTrustRef trust);
+```
+
 #### Return Value
 
-A dictionary containing keys with values that describe the result of the trust evaluation, or `NULL` when no information is available or if the trust has not been evaluated. See [`Trust Result Dictionary Keys`](trust-result-dictionary-keys.md) for the list of possible keys. In Objective-C, use [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) to free the dictionary’s memory when you are done with it.
+A dictionary containing keys with values that describe the result of the trust evaluation, or `NULL` when no information is available or if the trust has not been evaluated. See [Trust Result Dictionary Keys](./trust-result-dictionary-keys.md) for the list of possible keys. In Objective-C, use [`CFRelease`](../CoreFoundation/cfrelease.md) to free the dictionary’s memory when you are done with it.
 
 #### Discussion
 
-Call one of the [`SecTrustEvaluateWithError(_:_:)`](sectrustevaluatewitherror(_:_:).md) or [`SecTrustEvaluateAsyncWithError(_:_:_:)`](sectrustevaluateasyncwitherror(_:_:_:).md) methods before calling [`SecTrustCopyResult(_:)`](sectrustcopyresult(_:).md).
+Call one of the [`SecTrustEvaluateWithError(_:_:)`](./sectrustevaluatewitherror%28_,_%29.md) or [`SecTrustEvaluateAsyncWithError(_:_:_:)`](./sectrustevaluateasyncwitherror%28_,_,_%29.md) methods before calling [`SecTrustCopyResult(_:)`](./sectrustcopyresult%28_%29.md).
 
 ## Parameters
 

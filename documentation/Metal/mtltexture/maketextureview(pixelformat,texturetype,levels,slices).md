@@ -1,7 +1,8 @@
 # makeTextureView(pixelFormat:textureType:levels:slices:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new view of the texture, reinterpreting a subset of its data using a different type and pixel format.
 
@@ -11,7 +12,7 @@ Creates a new view of the texture, reinterpreting a subset of its data using a d
 - Mac Catalyst 9.0+
 - macOS 10.11+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -29,14 +30,14 @@ The texture type can be cast between the targets listed in the following table.
 
 | Original texture type | New texture type |
 | --- | --- |
-| [`MTLTextureType.type1D`](mtltexturetype/type1d.md) | [`MTLTextureType.type1D`](mtltexturetype/type1d.md) |
-| [`MTLTextureType.type2D`](mtltexturetype/type2d.md) | [`MTLTextureType.type2D`](mtltexturetype/type2d.md) or [`MTLTextureType.type2DArray`](mtltexturetype/type2darray.md) |
-| [`MTLTextureType.type2DArray`](mtltexturetype/type2darray.md), [`MTLTextureType.typeCube`](mtltexturetype/typecube.md), or [`MTLTextureType.typeCubeArray`](mtltexturetype/typecubearray.md) | [`MTLTextureType.type2D`](mtltexturetype/type2d.md), [`MTLTextureType.type2DArray`](mtltexturetype/type2darray.md), [`MTLTextureType.typeCube`](mtltexturetype/typecube.md), or [`MTLTextureType.typeCubeArray`](mtltexturetype/typecubearray.md) |
-| [`MTLTextureType.type3D`](mtltexturetype/type3d.md) | [`MTLTextureType.type3D`](mtltexturetype/type3d.md) |
+| [`MTLTextureType.type1D`](../mtltexturetype/type1d.md) | [`MTLTextureType.type1D`](../mtltexturetype/type1d.md) |
+| [`MTLTextureType.type2D`](../mtltexturetype/type2d.md) | [`MTLTextureType.type2D`](../mtltexturetype/type2d.md) or [`MTLTextureType.type2DArray`](../mtltexturetype/type2darray.md) |
+| [`MTLTextureType.type2DArray`](../mtltexturetype/type2darray.md), [`MTLTextureType.typeCube`](../mtltexturetype/typecube.md), or [`MTLTextureType.typeCubeArray`](../mtltexturetype/typecubearray.md) | [`MTLTextureType.type2D`](../mtltexturetype/type2d.md), [`MTLTextureType.type2DArray`](../mtltexturetype/type2darray.md), [`MTLTextureType.typeCube`](../mtltexturetype/typecube.md), or [`MTLTextureType.typeCubeArray`](../mtltexturetype/typecubearray.md) |
+| [`MTLTextureType.type3D`](../mtltexturetype/type3d.md) | [`MTLTextureType.type3D`](../mtltexturetype/type3d.md) |
 
-The `length` value of the `sliceRange` parameter needs to be `6` if the new texture type value is [`MTLTextureType.typeCube`](mtltexturetype/typecube.md), or a multiple of `6` if the new texture type value is [`MTLTextureType.typeCubeArray`](mtltexturetype/typecubearray.md).
+The `length` value of the `sliceRange` parameter needs to be `6` if the new texture type value is [`MTLTextureType.typeCube`](../mtltexturetype/typecube.md), or a multiple of `6` if the new texture type value is [`MTLTextureType.typeCubeArray`](../mtltexturetype/typecubearray.md).
 
-For more information on pixel format restrictions, see [`makeTextureView(pixelFormat:)`](mtltexture/maketextureview(pixelformat:).md)
+For more information on pixel format restrictions, see [`makeTextureView(pixelFormat:)`](./maketextureview%28pixelformat%29.md)
 
 ## Parameters
 
@@ -47,15 +48,17 @@ For more information on pixel format restrictions, see [`makeTextureView(pixelFo
 
 ## See Also
 
-- [var parentRelativeLevel: Int](mtltexture/parentrelativelevel.md)
+### Related Documentation
+- [var parentRelativeLevel: Int](./parentrelativelevel.md)
   The base level of the parent texture used to create this texture.
-- [var parent: (any MTLTexture)?](mtltexture/parent.md)
+- [var parent: (any MTLTexture)?](./parent.md)
   The parent texture used to create this texture, if any.
-- [var parentRelativeSlice: Int](mtltexture/parentrelativeslice.md)
+- [var parentRelativeSlice: Int](./parentrelativeslice.md)
   The base slice of the parent texture used to create this texture.
-- [func makeTextureView(pixelFormat: MTLPixelFormat) -> (any MTLTexture)?](mtltexture/maketextureview(pixelformat:).md)
+### Creating textures by reinterpreting existing texture data
+- [func makeTextureView(pixelFormat: MTLPixelFormat) -> (any MTLTexture)?](./maketextureview%28pixelformat%29.md)
   Creates a new view of the texture, reinterpreting its data using a different pixel format.
-- [func makeTextureView(pixelFormat: MTLPixelFormat, textureType: MTLTextureType, levels: Range<Int>, slices: Range<Int>, swizzle: MTLTextureSwizzleChannels) -> (any MTLTexture)?](mtltexture/maketextureview(pixelformat:texturetype:levels:slices:swizzle:).md)
+- [func makeTextureView(pixelFormat: MTLPixelFormat, textureType: MTLTextureType, levels: Range<Int>, slices: Range<Int>, swizzle: MTLTextureSwizzleChannels) -> (any MTLTexture)?](./maketextureview%28pixelformat,texturetype,levels,slices,swizzle%29.md)
   Creates a new view of the texture, reinterpreting a subset of its data using a different type, pixel format, and swizzle pattern.
 
 

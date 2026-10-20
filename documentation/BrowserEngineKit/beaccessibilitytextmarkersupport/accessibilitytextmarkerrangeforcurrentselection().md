@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 The text marker range of the current selection.
@@ -9,7 +10,7 @@ The text marker range of the current selection.
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
-- macOS ?+
+- macOS
 - tvOS 18.2+
 - visionOS 2.2+
 - watchOS 11.2+
@@ -20,21 +21,26 @@ The text marker range of the current selection.
 func accessibilityTextMarkerRangeForCurrentSelection() -> BEAccessibilityTextMarker.Range?
 ```
 
+```objc
+- (BEAccessibilityTextMarkerRange *) accessibilityTextMarkerRangeForCurrentSelection;
+```
+
 #### Discussion
 
 If there’s no text selected in the element, return `nil`.
 
 ## See Also
 
-- [func accessibilityBounds(for: BEAccessibilityTextMarker.Range) -> CGRect](beaccessibilitytextmarkersupport/accessibilitybounds(for:).md)
+### Text ranges
+- [func accessibilityBounds(for: BEAccessibilityTextMarker.Range) -> CGRect](./accessibilitybounds%28for%29.md)
   Calculates the bounding rectangle for a text range.
-- [func accessibilityTextMarkerRange() -> BEAccessibilityTextMarker.Range](beaccessibilitytextmarkersupport/accessibilitytextmarkerrange.md)
+- [func accessibilityTextMarkerRange() -> BEAccessibilityTextMarker.Range](./accessibilitytextmarkerrange%28%29.md)
   The text marker range of the current element.
-- [func accessibilityTextMarkerRange(for: NSRange) -> BEAccessibilityTextMarker.Range?](beaccessibilitytextmarkersupport/accessibilitytextmarkerrange(for:).md)
+- [func accessibilityTextMarkerRange(for: NSRange) -> BEAccessibilityTextMarker.Range?](./accessibilitytextmarkerrange%28for%29.md)
   Returns the text marker range for the text in a given range.
-- [func accessibilityRange(for: BEAccessibilityTextMarker.Range) -> NSRange](beaccessibilitytextmarkersupport/accessibilityrange(for:).md)
+- [func accessibilityRange(for: BEAccessibilityTextMarker.Range) -> NSRange](./accessibilityrange%28for%29.md)
   Returns the range for the text in a given accessibility marker range.
-- [BEAccessibilityTextMarker.Range](beaccessibilitytextmarker/range.md)
+- [BEAccessibilityTextMarker.Range](../beaccessibilitytextmarker/range.md)
   A class that represents a range in an element’s accessibility text.
 
 

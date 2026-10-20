@@ -1,7 +1,8 @@
 # errSecCSInvalidEntitlements
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Encountered an invalid entitlement plist.
 
@@ -13,6 +14,10 @@ Encountered an invalid entitlement plist.
 
 ```swift
 var errSecCSInvalidEntitlements: OSStatus { get }
+```
+
+```c
+errSecCSInvalidEntitlements
 ```
 
 

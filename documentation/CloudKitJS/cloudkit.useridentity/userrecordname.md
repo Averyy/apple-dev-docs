@@ -1,7 +1,8 @@
 # userRecordName
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the user record.
 
@@ -10,7 +11,7 @@ The name of the user record.
 
 ## Declaration
 
-```swift
+```
 attribute String userRecordName;
 ```
 

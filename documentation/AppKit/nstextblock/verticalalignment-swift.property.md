@@ -1,7 +1,8 @@
 # verticalAlignment
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vertical alignment of the text block.
 
@@ -14,10 +15,15 @@ The vertical alignment of the text block.
 var verticalAlignment: NSTextBlock.VerticalAlignment { get set }
 ```
 
+```objc
+@property NSTextBlockVerticalAlignment verticalAlignment;
+```
+
 ## See Also
 
-- [NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.enum.md)
-  The following constants specify values used by the property [`verticalAlignment`](nstextblock/verticalalignment-swift.property.md) to specify vertical alignment.
+### Getting and setting alignment
+- [NSTextBlock.VerticalAlignment](./verticalalignment-swift.enum.md)
+  The following constants specify values used by the property [`verticalAlignment`](./verticalalignment-swift.property.md) to specify vertical alignment.
 
 
 ---

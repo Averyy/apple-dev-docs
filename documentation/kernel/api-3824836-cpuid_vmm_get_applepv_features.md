@@ -1,14 +1,15 @@
 # cpuid_vmm_get_applepv_features
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 uint64_t cpuid_vmm_get_applepv_features(void);
 ```
 

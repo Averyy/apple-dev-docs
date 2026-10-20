@@ -1,7 +1,8 @@
 # requestToTurnOnCredentialProviderExtension(completionHandler:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Call this method from your containing app to request to turn on a contained Credential Provider Extension. If the extension is not currently enabled, a prompt will be shown to allow it to be turned on. The completion handler is called with YES or NO depending on whether the credential provider is enabled. You need to wait 10 seconds in order to make additional request to this API.
 
@@ -15,7 +16,15 @@ Call this method from your containing app to request to turn on a contained Cred
 ## Declaration
 
 ```swift
+class func requestToTurnOnCredentialProviderExtension(completionHandler: @escaping @Sendable (Bool) -> Void)
+```
+
+```swift
 class func requestToTurnOnCredentialProviderExtension() async -> Bool
+```
+
+```objc
++ (void) requestToTurnOnCredentialProviderExtensionWithCompletionHandler:(void (^)(BOOL appWasEnabledForAutoFill)) completionHandler;
 ```
 
 

@@ -1,7 +1,8 @@
 # ObservedObject.Wrapper
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A wrapper of the underlying observable object that can create bindings to its properties.
 
@@ -24,20 +25,21 @@ A wrapper of the underlying observable object that can create bindings to its pr
 ## Topics
 
 ### Subscripts
-- [subscript<Subject>(dynamicMember _: ReferenceWritableKeyPath<ObjectType, Subject>) -> Binding<Subject>](observedobject/wrapper/subscript(dynamicmember:).md)
+- [subscript<Subject>(dynamicMember _: ReferenceWritableKeyPath<ObjectType, Subject>) -> Binding<Subject>](./wrapper/subscript%28dynamicmember%29.md)
   Gets a binding to the value of a specified key path.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var wrappedValue: ObjectType](observedobject/wrappedvalue.md)
+### Getting the value
+- [var wrappedValue: ObjectType](./wrappedvalue.md)
   The underlying value that the observed object references.
-- [var projectedValue: ObservedObject<ObjectType>.Wrapper](observedobject/projectedvalue.md)
+- [var projectedValue: ObservedObject<ObjectType>.Wrapper](./projectedvalue.md)
   A projection of the observed object that creates bindings to its properties.
 
 

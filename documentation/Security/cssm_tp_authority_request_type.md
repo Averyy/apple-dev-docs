@@ -1,7 +1,8 @@
 # CSSM_TP_AUTHORITY_REQUEST_TYPE
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_TP_AUTHORITY_REQUEST_TYPE = uint32
+```
+
+```c
+typedef uint32 CSSM_TP_AUTHORITY_REQUEST_TYPE;
 ```
 
 

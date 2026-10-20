@@ -1,7 +1,8 @@
 # bundleIdentifier
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 String representation of the bundle ID of the process.
 

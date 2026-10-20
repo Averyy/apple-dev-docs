@@ -1,7 +1,8 @@
 # TaskPriority.RawValue
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The raw type that can be used to represent all values of the conforming type.
 

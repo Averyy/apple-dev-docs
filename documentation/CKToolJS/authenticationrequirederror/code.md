@@ -1,7 +1,8 @@
 # code
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The HTTP status code for a request error.
 
@@ -10,7 +11,7 @@ The HTTP status code for a request error.
 
 ## Declaration
 
-```swift
+```
 attribute Int32 code;
 ```
 

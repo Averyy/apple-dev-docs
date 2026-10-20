@@ -1,17 +1,24 @@
 # init(iconRef:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the image object with a Carbon-style icon resource.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 11.0
+
+> **Deprecated**: Use -[NSWorkspace iconForFile:], -[NSWorkspace iconForFiles:], -[NSWorkspace iconForFileType:], or +[NSImage imageNamed:] instead.
 
 ## Declaration
 
 ```swift
 convenience init(iconRef: IconRef)
+```
+
+```objc
+- (instancetype) initWithIconRef:(IconRef) iconRef;
 ```
 
 #### Return Value
@@ -28,11 +35,12 @@ Creates one or more bitmap image representations, one for each size icon contain
 
 ## See Also
 
-- [func lockFocus()](nsimage/lockfocus.md)
+### Deprecated instance methods
+- [func lockFocus()](./lockfocus%28%29.md)
   Prepares the image to receive drawing commands.
-- [func lockFocusFlipped(Bool)](nsimage/lockfocusflipped(_:).md)
+- [func lockFocusFlipped(Bool)](./lockfocusflipped%28_%29.md)
   Prepares the image to receive drawing commands using the specified flipped state.
-- [func unlockFocus()](nsimage/unlockfocus.md)
+- [func unlockFocus()](./unlockfocus%28%29.md)
   Removes the focus from the image.
 
 

@@ -1,7 +1,8 @@
 # inputValues
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The input values to use when generating the PRF extension, if specified.
 
@@ -24,9 +25,10 @@ If this property isn’t specified, the output only indicates whether there’s 
 
 ## See Also
 
-- [ASAuthorizationPublicKeyCredentialPRFRegistrationInput.InputValues](asauthorizationpublickeycredentialprfregistrationinput-swift.struct/inputvalues-swift.typealias.md)
+### Working with PRF inputs
+- [ASAuthorizationPublicKeyCredentialPRFRegistrationInput.InputValues](./inputvalues-swift.typealias.md)
   The type of the registration input values property.
-- [static func inputValues(ASAuthorizationPublicKeyCredentialPRFRegistrationInput.InputValues) -> ASAuthorizationPublicKeyCredentialPRFRegistrationInput](asauthorizationpublickeycredentialprfregistrationinput-swift.struct/inputvalues(_:).md)
+- [static func inputValues(ASAuthorizationPublicKeyCredentialPRFRegistrationInput.InputValues) -> ASAuthorizationPublicKeyCredentialPRFRegistrationInput](./inputvalues%28_%29.md)
   The inputs for the PRF extension to evaluate if the new passkey supports the extension.
 
 

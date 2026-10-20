@@ -1,13 +1,14 @@
 # PastPayment.LineItems
 
 **Framework**: Apple Pay Merchant Token Usage Information API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The goods or services paid for.
 
 ## Declaration
 
-```swift
+```
 object PastPayment.LineItems
 ```
 

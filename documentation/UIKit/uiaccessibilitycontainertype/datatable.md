@@ -1,7 +1,8 @@
 # UIAccessibilityContainerType.dataTable
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A table that contains structured data.
 
@@ -19,19 +20,24 @@ A table that contains structured data.
 case dataTable
 ```
 
+```c
+UIAccessibilityContainerTypeDataTable
+```
+
 #### Discussion
 
-To use this container type, you must also implement the [`UIAccessibilityContainerDataTable`](uiaccessibilitycontainerdatatable.md) protocol.
+To use this container type, you must also implement the [`UIAccessibilityContainerDataTable`](../uiaccessibilitycontainerdatatable.md) protocol.
 
 ## See Also
 
-- [UIAccessibilityContainerType.none](uiaccessibilitycontainertype/none.md)
+### Constants
+- [UIAccessibilityContainerType.none](./none.md)
   No additional data.
-- [UIAccessibilityContainerType.list](uiaccessibilitycontainertype/list.md)
+- [UIAccessibilityContainerType.list](./list.md)
   A list of data.
-- [UIAccessibilityContainerType.landmark](uiaccessibilitycontainertype/landmark.md)
+- [UIAccessibilityContainerType.landmark](./landmark.md)
   Landmark data.
-- [UIAccessibilityContainerType.semanticGroup](uiaccessibilitycontainertype/semanticgroup.md)
+- [UIAccessibilityContainerType.semanticGroup](./semanticgroup.md)
   A semantic group of data.
 
 

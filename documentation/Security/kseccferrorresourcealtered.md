@@ -1,7 +1,8 @@
 # kSecCFErrorResourceAltered
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a URL pointing to the resource on disk that has been altered.
 
@@ -13,6 +14,10 @@ A key whose value is a URL pointing to the resource on disk that has been altere
 
 ```swift
 let kSecCFErrorResourceAltered: CFString
+```
+
+```c
+extern CFStringRef const kSecCFErrorResourceAltered;
 ```
 
 #### Discussion

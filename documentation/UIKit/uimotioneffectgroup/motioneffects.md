@@ -1,7 +1,8 @@
 # motionEffects
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of motion effect objects to apply as a group to the view.
 
@@ -9,7 +10,7 @@ An array of motion effect objects to apply as a group to the view.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ An array of motion effect objects to apply as a group to the view.
 var motionEffects: [UIMotionEffect]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<__kindof UIMotionEffect *> * motionEffects;
+```
+
 #### Discussion
 
-The array contains one or more [`UIMotionEffect`](uimotioneffect.md) objects. When the viewer offset changes, each object in the group is asked for its key paths and updated values. Those values are then applied simultaneously.
+The array contains one or more [`UIMotionEffect`](../uimotioneffect.md) objects. When the viewer offset changes, each object in the group is asked for its key paths and updated values. Those values are then applied simultaneously.
 
 
 ---

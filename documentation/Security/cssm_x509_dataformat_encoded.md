@@ -1,7 +1,8 @@
 # CSSM_X509_DATAFORMAT_ENCODED
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_X509_DATAFORMAT_ENCODED: extension_data_format { get }
+```
+
+```c
+CSSM_X509_DATAFORMAT_ENCODED
 ```
 
 

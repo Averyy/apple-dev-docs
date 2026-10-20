@@ -1,7 +1,8 @@
 # Transcript.Attachment.data(_:)
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An attached data payload identified by a content type identifier.
 

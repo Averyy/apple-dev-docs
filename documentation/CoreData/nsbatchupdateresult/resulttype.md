@@ -1,7 +1,8 @@
 # resultType
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of result that Core Data returns from the request.
 
@@ -10,7 +11,7 @@ The type of result that Core Data returns from the request.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,16 @@ The type of result that Core Data returns from the request.
 var resultType: NSBatchUpdateRequestResultType { get }
 ```
 
+```objc
+@property (readonly) NSBatchUpdateRequestResultType resultType;
+```
+
 ## See Also
 
-- [var result: Any?](nsbatchupdateresult/result.md)
+### Accessing Results
+- [var result: Any?](./result.md)
   The result of a batch-update request, either the number of updated objects, the identifiers of the updated objects, or a status value.
-- [enum NSBatchUpdateRequestResultType](nsbatchupdaterequestresulttype.md)
+- [enum NSBatchUpdateRequestResultType](../nsbatchupdaterequestresulttype.md)
   Result types for a batch-update request.
 
 

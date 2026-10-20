@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends audio in the PCM format to the end of the recognition request.
 
@@ -18,6 +19,10 @@ Appends audio in the PCM format to the end of the recognition request.
 func append(_ audioPCMBuffer: AVAudioPCMBuffer)
 ```
 
+```objc
+- (void) appendAudioPCMBuffer:(AVAudioPCMBuffer *) audioPCMBuffer;
+```
+
 #### Discussion
 
 The audio must be in a native format and uncompressed.
@@ -28,9 +33,10 @@ The audio must be in a native format and uncompressed.
 
 ## See Also
 
-- [func appendAudioSampleBuffer(CMSampleBuffer)](sfspeechaudiobufferrecognitionrequest/appendaudiosamplebuffer(_:).md)
+### Appending Audio Buffers
+- [func appendAudioSampleBuffer(CMSampleBuffer)](./appendaudiosamplebuffer%28_%29.md)
   Appends audio to the end of the recognition request.
-- [func endAudio()](sfspeechaudiobufferrecognitionrequest/endaudio.md)
+- [func endAudio()](./endaudio%28%29.md)
   Marks the end of audio input for the recognition request.
 
 

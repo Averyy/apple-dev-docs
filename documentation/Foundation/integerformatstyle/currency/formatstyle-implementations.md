@@ -1,13 +1,14 @@
 # FormatStyle Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func format(Value) -> String](integerformatstyle/currency/format(_:).md)
+- [func format(Value) -> String](./format%28_%29.md)
   Formats an integer, using this style.
-- [func locale(Locale) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/locale(_:).md)
+- [func locale(Locale) -> IntegerFormatStyle<Value>.Currency](./locale%28_%29.md)
   Modifies the format style to use the specified locale.
 
 

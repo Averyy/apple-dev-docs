@@ -1,14 +1,15 @@
 # os_release
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 void os_release(void *object);
 ```
 

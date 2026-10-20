@@ -1,12 +1,13 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
+- iOS 8.0+ - Deprecated in 11.0
+- iPadOS 8.0+ - Deprecated in 11.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # semanticType
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The original type of this input.
 
@@ -19,7 +20,7 @@ let semanticType: ShaderGraph.NodeDefinition.SemanticType?
 
 #### Discussion
 
-Semantic types describe the type information from a standard, such as MaterialX 1.38. RealityKit converts this type information into a `ShaderGraph.DataType` on [`ShaderGraph.NodeLibrary`](shadergraph/nodelibrary.md) creation, which it can use for various type checking during ShaderGraphMaterial.Program compilation.
+Semantic types describe the type information from a standard, such as MaterialX 1.38. RealityKit converts this type information into a `ShaderGraph.DataType` on [`ShaderGraph.NodeLibrary`](../../nodelibrary.md) creation, which it can use for various type checking during ShaderGraphMaterial.Program compilation.
 
 
 ---

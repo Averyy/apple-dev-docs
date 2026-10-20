@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An object for tracking supplementary information about the search suggestion.
@@ -19,19 +20,24 @@ An object for tracking supplementary information about the search suggestion.
 var representedObject: Any? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id representedObject;
+```
+
 #### Discussion
 
 Use this property to associate the search suggestion with a corresponding object.
 
 ## See Also
 
-- [var localizedSuggestion: String?](uisearchsuggestion/localizedsuggestion.md)
+### Describing a search suggestion
+- [var localizedSuggestion: String?](./localizedsuggestion.md)
   A label for the suggestion, usually the search term the suggestion represents.
-- [var localizedDescription: String?](uisearchsuggestion/localizeddescription.md)
+- [var localizedDescription: String?](./localizeddescription.md)
   A description of the suggestion.
-- [var localizedAttributedSuggestion: NSAttributedString?](uisearchsuggestion/localizedattributedsuggestion.md)
+- [var localizedAttributedSuggestion: NSAttributedString?](./localizedattributedsuggestion.md)
   An attributed label for the suggestion, usually the search term the suggestion represents.
-- [var iconImage: UIImage?](uisearchsuggestion/iconimage.md)
+- [var iconImage: UIImage?](./iconimage.md)
   An image for display on the suggestion.
 
 

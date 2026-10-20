@@ -1,7 +1,8 @@
 # toolTip
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional tool tip to display on hover for a suggestion menu item. This value should be localized.
 

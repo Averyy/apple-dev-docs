@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset applied on top of the target transform before the solve.
 

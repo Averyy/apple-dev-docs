@@ -1,7 +1,8 @@
 # CIBlendKernel
 
 **Framework**: Core Image  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A GPU-based image-processing routine that is optimized for blending two images.
 
@@ -17,6 +18,10 @@ A GPU-based image-processing routine that is optimized for blending two images.
 
 ```swift
 class CIBlendKernel
+```
+
+```objc
+@interface CIBlendKernel : CIColorKernel
 ```
 
 #### Overview
@@ -41,126 +46,127 @@ Generally, the extent of the output image is the union of the extents of the for
 ## Topics
 
 ### Creating a Kernel
-- [convenience init?(source: String)](ciblendkernel/init(source:).md)
+- [convenience init?(source: String)](./ciblendkernel/init%28source%29.md)
   Creates a custom blend kernel from a program string.
 ### Applying a Kernel to Filter an Image
-- [func apply(foreground: CIImage, background: CIImage) -> CIImage?](ciblendkernel/apply(foreground:background:).md)
+- [func apply(foreground: CIImage, background: CIImage) -> CIImage?](./ciblendkernel/apply%28foreground,background%29.md)
   Creates a new image using the blend kernel and specified foreground and background images.
 ### Builtin Blend Kernels
-- [class var clear: CIBlendKernel](ciblendkernel/clear.md)
+- [class var clear: CIBlendKernel](./ciblendkernel/clear.md)
   A blend kernel that returns a clear color.
-- [class var color: CIBlendKernel](ciblendkernel/color.md)
+- [class var color: CIBlendKernel](./ciblendkernel/color.md)
   A blend kernel that uses the luminance values of the background with the hue and saturation values of the foreground image.
-- [class var colorBurn: CIBlendKernel](ciblendkernel/colorburn.md)
+- [class var colorBurn: CIBlendKernel](./ciblendkernel/colorburn.md)
   A blend kernel that darkens the background image samples to reflect the foreground image samples.
-- [class var colorDodge: CIBlendKernel](ciblendkernel/colordodge.md)
+- [class var colorDodge: CIBlendKernel](./ciblendkernel/colordodge.md)
   A blend kernel that brightens the background image samples to reflect the foreground image samples.
-- [class var componentAdd: CIBlendKernel](ciblendkernel/componentadd.md)
+- [class var componentAdd: CIBlendKernel](./ciblendkernel/componentadd.md)
   A blend kernel that adds color components to achieve a brightening effect.
-- [class var componentMax: CIBlendKernel](ciblendkernel/componentmax.md)
+- [class var componentMax: CIBlendKernel](./ciblendkernel/componentmax.md)
   A blend kernel that creates an image using the maximum values of two input images.
-- [class var componentMin: CIBlendKernel](ciblendkernel/componentmin.md)
+- [class var componentMin: CIBlendKernel](./ciblendkernel/componentmin.md)
   A blend kernel that creates an image using the minimum values of two input images.
-- [class var componentMultiply: CIBlendKernel](ciblendkernel/componentmultiply.md)
+- [class var componentMultiply: CIBlendKernel](./ciblendkernel/componentmultiply.md)
   A blend kernel that multiplies the color components of its input images.
-- [class var darken: CIBlendKernel](ciblendkernel/darken.md)
+- [class var darken: CIBlendKernel](./ciblendkernel/darken.md)
   A blend kernel that creates an image using the darker values of two input images.
-- [class var darkerColor: CIBlendKernel](ciblendkernel/darkercolor.md)
+- [class var darkerColor: CIBlendKernel](./ciblendkernel/darkercolor.md)
   A blend kernel that creates an image using the darker color of two input images.
-- [class var destination: CIBlendKernel](ciblendkernel/destination.md)
+- [class var destination: CIBlendKernel](./ciblendkernel/destination.md)
   A blend kernel that returns the background input image.
-- [class var destinationAtop: CIBlendKernel](ciblendkernel/destinationatop.md)
+- [class var destinationAtop: CIBlendKernel](./ciblendkernel/destinationatop.md)
   A blend kernel that places the background over the foreground and crops based on the visibility of the foreground.
-- [class var destinationIn: CIBlendKernel](ciblendkernel/destinationin.md)
+- [class var destinationIn: CIBlendKernel](./ciblendkernel/destinationin.md)
   A blend kernel that places the background over the foreground and crops based on the visibility of both.
-- [class var destinationOut: CIBlendKernel](ciblendkernel/destinationout.md)
+- [class var destinationOut: CIBlendKernel](./ciblendkernel/destinationout.md)
   A blend kernel that uses the background image to define what to take out of the foreground image.
-- [class var destinationOver: CIBlendKernel](ciblendkernel/destinationover.md)
+- [class var destinationOver: CIBlendKernel](./ciblendkernel/destinationover.md)
   A blend kernel that places the background image over the input foreground image.
-- [class var difference: CIBlendKernel](ciblendkernel/difference.md)
+- [class var difference: CIBlendKernel](./ciblendkernel/difference.md)
   A blend kernel that creates an image using the difference between the background and foreground images.
-- [class var divide: CIBlendKernel](ciblendkernel/divide.md)
+- [class var divide: CIBlendKernel](./ciblendkernel/divide.md)
   A blend kernel that divides the background image sample color with the foreground image sample color.
-- [class var exclusion: CIBlendKernel](ciblendkernel/exclusion.md)
+- [class var exclusion: CIBlendKernel](./ciblendkernel/exclusion.md)
   A blend kernel that produces an effect similar to difference blending but with lower contrast.
-- [class var exclusiveOr: CIBlendKernel](ciblendkernel/exclusiveor.md)
+- [class var exclusiveOr: CIBlendKernel](./ciblendkernel/exclusiveor.md)
   A blend kernel that returns either the foreground or background image if the other contains a clear color.
-- [class var hardLight: CIBlendKernel](ciblendkernel/hardlight.md)
+- [class var hardLight: CIBlendKernel](./ciblendkernel/hardlight.md)
   A blend kernel that either multiplies or screens colors, depending on the source image sample color.
-- [class var hardMix: CIBlendKernel](ciblendkernel/hardmix.md)
+- [class var hardMix: CIBlendKernel](./ciblendkernel/hardmix.md)
   A blend kernel that adds two images together, setting each color channel value to either 0 or 1.
-- [class var hue: CIBlendKernel](ciblendkernel/hue.md)
+- [class var hue: CIBlendKernel](./ciblendkernel/hue.md)
   A blend kernel that uses the luminance and saturation values of the background image with the hue of the foreground image.
-- [class var lighten: CIBlendKernel](ciblendkernel/lighten.md)
+- [class var lighten: CIBlendKernel](./ciblendkernel/lighten.md)
   A blend kernel that creates an image using the lighter values of two input images.
-- [class var lighterColor: CIBlendKernel](ciblendkernel/lightercolor.md)
+- [class var lighterColor: CIBlendKernel](./ciblendkernel/lightercolor.md)
   A blend kernel that creates an image using the lighter color of two input images.
-- [class var linearBurn: CIBlendKernel](ciblendkernel/linearburn.md)
+- [class var linearBurn: CIBlendKernel](./ciblendkernel/linearburn.md)
   A blend kernel that darkens the background image samples to reflect the foreground image samples while also increasing contrast.
-- [class var linearDodge: CIBlendKernel](ciblendkernel/lineardodge.md)
+- [class var linearDodge: CIBlendKernel](./ciblendkernel/lineardodge.md)
   A blend kernel that lightens the background image samples to reflect the foreground image samples while also increasing contrast.
-- [class var linearLight: CIBlendKernel](ciblendkernel/linearlight.md)
+- [class var linearLight: CIBlendKernel](./ciblendkernel/linearlight.md)
   A blend kernel that burns or dodges colors by changing brightness, depending on the blend color.
-- [class var luminosity: CIBlendKernel](ciblendkernel/luminosity.md)
+- [class var luminosity: CIBlendKernel](./ciblendkernel/luminosity.md)
   A blend kernel that uses the hue and saturation of the background image with the luminance of the foreground image.
-- [class var multiply: CIBlendKernel](ciblendkernel/multiply.md)
+- [class var multiply: CIBlendKernel](./ciblendkernel/multiply.md)
   A blend kernel that multiplies the background image sample color with the foreground image sample color.
-- [class var overlay: CIBlendKernel](ciblendkernel/overlay.md)
+- [class var overlay: CIBlendKernel](./ciblendkernel/overlay.md)
   A blend kernel that either multiplies or screens the foreground image samples with the background image samples, depending on the background color.
-- [class var pinLight: CIBlendKernel](ciblendkernel/pinlight.md)
+- [class var pinLight: CIBlendKernel](./ciblendkernel/pinlight.md)
   A blend kernel that conditionally replaces background image samples with source image samples depending on the brightness of the source image samples.
-- [class var saturation: CIBlendKernel](ciblendkernel/saturation.md)
+- [class var saturation: CIBlendKernel](./ciblendkernel/saturation.md)
   A blend kernel that uses the luminance and hue values of the background image with the saturation of the foreground image.
-- [class var screen: CIBlendKernel](ciblendkernel/screen.md)
+- [class var screen: CIBlendKernel](./ciblendkernel/screen.md)
   A blend kernel that multiplies the inverse of the foreground image samples with the inverse of the background image samples.
-- [class var softLight: CIBlendKernel](ciblendkernel/softlight.md)
+- [class var softLight: CIBlendKernel](./ciblendkernel/softlight.md)
   A blend kernel that either darkens or lightens colors, depending on the foreground image sample color.
-- [class var source: CIBlendKernel](ciblendkernel/source.md)
+- [class var source: CIBlendKernel](./ciblendkernel/source.md)
   A blend kernel that returns the foreground input image.
-- [class var sourceAtop: CIBlendKernel](ciblendkernel/sourceatop.md)
+- [class var sourceAtop: CIBlendKernel](./ciblendkernel/sourceatop.md)
   A blend kernel that places the foreground over the background and crops based on the visibility of the background.
-- [class var sourceIn: CIBlendKernel](ciblendkernel/sourcein.md)
+- [class var sourceIn: CIBlendKernel](./ciblendkernel/sourcein.md)
   A blend kernel that places the foreground over the background and crops based on the visibility of both.
-- [class var sourceOut: CIBlendKernel](ciblendkernel/sourceout.md)
+- [class var sourceOut: CIBlendKernel](./ciblendkernel/sourceout.md)
   A blend kernel that uses the foreground image to define what to take out of the background image.
-- [class var sourceOver: CIBlendKernel](ciblendkernel/sourceover.md)
+- [class var sourceOver: CIBlendKernel](./ciblendkernel/sourceover.md)
   A blend kernel that places the foreground image over the input background image.
-- [class var subtract: CIBlendKernel](ciblendkernel/subtract.md)
+- [class var subtract: CIBlendKernel](./ciblendkernel/subtract.md)
   A blend kernel that subtracts the background image sample color from the foreground image sample color.
-- [class var vividLight: CIBlendKernel](ciblendkernel/vividlight.md)
+- [class var vividLight: CIBlendKernel](./ciblendkernel/vividlight.md)
   A blend kernel that burns or dodges colors by changing contrast, depending on the blend color.
 ### Instance Methods
-- [func apply(foreground: CIImage, background: CIImage, colorSpace: CGColorSpace) -> CIImage?](ciblendkernel/apply(foreground:background:colorspace:).md)
+- [func apply(foreground: CIImage, background: CIImage, colorSpace: CGColorSpace) -> CIImage?](./ciblendkernel/apply%28foreground,background,colorspace%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [CIColorKernel](cicolorkernel.md)
+- [CIColorKernel](./cicolorkernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Writing Custom Kernels](writing-custom-kernels.md)
+### Custom Filters
+- [Writing Custom Kernels](./writing-custom-kernels.md)
   Write your own custom kernels in either the Core Image Kernel Language or the Metal Shading Language.
-- [class CIKernel](cikernel.md)
+- [class CIKernel](./cikernel.md)
   A GPU-based image-processing routine used to create custom Core Image filters.
-- [class CIColorKernel](cicolorkernel.md)
+- [class CIColorKernel](./cicolorkernel.md)
   A GPU-based image-processing routine that processes only the color information in images, used to create custom Core Image filters.
-- [class CIWarpKernel](ciwarpkernel.md)
+- [class CIWarpKernel](./ciwarpkernel.md)
   A GPU-based image-processing routine that processes only the geometry information in an image, used to create custom Core Image filters.
-- [class CISampler](cisampler.md)
+- [class CISampler](./cisampler.md)
   An object that retrieves pixel samples for processing by a filter kernel.
-- [class CIFilterShape](cifiltershape.md)
+- [class CIFilterShape](./cifiltershape.md)
   A description of the bounding shape of a filter and the domain of definition for a filter operation.
-- [struct CIFormat](ciformat.md)
+- [struct CIFormat](./ciformat.md)
   Pixel data formats for image input, output, and processing.
 
 

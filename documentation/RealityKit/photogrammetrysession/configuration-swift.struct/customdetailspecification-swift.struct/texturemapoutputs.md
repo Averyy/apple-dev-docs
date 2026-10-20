@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureMapOutputs
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Allows specification of the set of output texture maps to be included in the output model.
 
@@ -18,29 +19,29 @@ struct TextureMapOutputs
 ## Topics
 
 ### Type Properties
-- [static let all: PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureMapOutputs](photogrammetrysession/configuration-swift.struct/customdetailspecification-swift.struct/texturemapoutputs/all.md)
+- [static let all: PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureMapOutputs](./texturemapoutputs/all.md)
   Option to include all maps.
-- [static let ambientOcclusion: PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureMapOutputs](photogrammetrysession/configuration-swift.struct/customdetailspecification-swift.struct/texturemapoutputs/ambientocclusion.md)
+- [static let ambientOcclusion: PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureMapOutputs](./texturemapoutputs/ambientocclusion.md)
   The ambient occlusion (AO) map.
-- [static let diffuseColor: PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureMapOutputs](photogrammetrysession/configuration-swift.struct/customdetailspecification-swift.struct/texturemapoutputs/diffusecolor.md)
+- [static let diffuseColor: PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureMapOutputs](./texturemapoutputs/diffusecolor.md)
   The primary base color texture map.
-- [static let displacement: PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureMapOutputs](photogrammetrysession/configuration-swift.struct/customdetailspecification-swift.struct/texturemapoutputs/displacement.md)
+- [static let displacement: PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureMapOutputs](./texturemapoutputs/displacement.md)
   The surface displacement map.
-- [static let normal: PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureMapOutputs](photogrammetrysession/configuration-swift.struct/customdetailspecification-swift.struct/texturemapoutputs/normal.md)
+- [static let normal: PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureMapOutputs](./texturemapoutputs/normal.md)
   The normal map.
-- [static let roughness: PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureMapOutputs](photogrammetrysession/configuration-swift.struct/customdetailspecification-swift.struct/texturemapoutputs/roughness.md)
+- [static let roughness: PhotogrammetrySession.Configuration.CustomDetailSpecification.TextureMapOutputs](./texturemapoutputs/roughness.md)
   The surface roughness map.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../../../Swift/optionset.md)
+- [RawRepresentable](../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../../../Swift/setalgebra.md)
 
 
 ---

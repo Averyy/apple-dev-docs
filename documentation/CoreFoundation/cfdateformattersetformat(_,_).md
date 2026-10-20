@@ -1,23 +1,28 @@
 # CFDateFormatterSetFormat(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the format string of the given date formatter to the specified value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFDateFormatterSetFormat(_ formatter: CFDateFormatter!, _ formatString: CFString!)
+```
+
+```c
+extern void CFDateFormatterSetFormat(CFDateFormatterRef formatter, CFStringRef formatString);
 ```
 
 #### Discussion
@@ -27,11 +32,12 @@ The format string may override other properties previously set using other funct
 ## Parameters
 
 - `formatter`: The date formatter to modify.
-- `formatString`: The format string for `formatter`. The syntax of this string is defined by [`Unicode Technical Standard #35`](https://developer.apple.comhttp://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns)..
+- `formatString`: The format string for `formatter`. The syntax of this string is defined by [Unicode Technical Standard #35](http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns)..
 
 ## See Also
 
-- [func CFDateFormatterSetProperty(CFDateFormatter!, CFString!, CFTypeRef!)](cfdateformattersetproperty(_:_:_:).md)
+### Configuring a Date Formatter
+- [func CFDateFormatterSetProperty(CFDateFormatter!, CFString!, CFTypeRef!)](./cfdateformattersetproperty%28_,_,_%29.md)
   Sets a date formatter property using a key-value pair.
 
 

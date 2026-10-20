@@ -1,7 +1,8 @@
 # performCommand(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the specified command, triggering events specific to this extension.
 
@@ -16,6 +17,10 @@ Performs the specified command, triggering events specific to this extension.
 
 ```swift
 func performCommand(_ command: WKWebExtension.Command)
+```
+
+```objc
+- (void) performCommand:(WKWebExtensionCommand *) command;
 ```
 
 #### Discussion

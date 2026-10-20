@@ -1,7 +1,8 @@
 # BNNSArithmeticSelect
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An operation that selects elements from either its second or third input based on the corresponding value of its first input.
 
@@ -20,6 +21,10 @@ An operation that selects elements from either its second or third input based o
 var BNNSArithmeticSelect: BNNSArithmeticFunction { get }
 ```
 
+```c
+BNNSArithmeticSelect
+```
+
 #### Discussion
 
 This function returns values using the following operation:
@@ -30,7 +35,8 @@ This function returns values using the following operation:
 
 ## See Also
 
-- [var BNNSArithmeticMultiplyAdd: BNNSArithmeticFunction](bnnsarithmeticmultiplyadd.md)
+### Ternary Arithmetic Functions
+- [var BNNSArithmeticMultiplyAdd: BNNSArithmeticFunction](./bnnsarithmeticmultiplyadd.md)
   An operation that calculates the element-wise fused multiply-add of its three inputs.
 
 

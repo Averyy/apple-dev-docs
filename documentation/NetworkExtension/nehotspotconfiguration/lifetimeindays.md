@@ -1,7 +1,8 @@
 # lifeTimeInDays
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of days the network retains the associated configuration.
 
@@ -19,6 +20,10 @@ The number of days the network retains the associated configuration.
 var lifeTimeInDays: NSNumber { get set }
 ```
 
+```objc
+@property (copy) NSNumber * lifeTimeInDays;
+```
+
 #### Discussion
 
 The minimum value is 1 day and the maximum value is 365 days. If this property is not set or is set to an invalid value the configuration never expires.
@@ -27,13 +32,14 @@ This property doesn’t apply to Enterprise or HS2.0 networks.
 
 ## See Also
 
-- [var ssid: String](nehotspotconfiguration/ssid.md)
+### Accessing configuration properties
+- [var ssid: String](./ssid.md)
   The SSID of an open, WEP, WPA/WPA2 personal, or WPA/WPA2 enterprise Wi-Fi network.
-- [var ssidPrefix: String](nehotspotconfiguration/ssidprefix.md)
+- [var ssidPrefix: String](./ssidprefix.md)
   The string used to match networks against a known SSID prefix.
-- [var joinOnce: Bool](nehotspotconfiguration/joinonce.md)
+- [var joinOnce: Bool](./joinonce.md)
   Restricts the lifetime of a configuration to the operating status of the app that created it.
-- [var hidden: Bool](nehotspotconfiguration/hidden.md)
+- [var hidden: Bool](./hidden.md)
   A Boolean value that indicates the visibility of the SSID.
 
 

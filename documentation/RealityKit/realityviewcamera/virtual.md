@@ -1,7 +1,8 @@
 # virtual
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The camera that displays virtual RealityKit content.
 

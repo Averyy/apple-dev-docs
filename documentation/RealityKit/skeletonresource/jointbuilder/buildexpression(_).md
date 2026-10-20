@@ -1,7 +1,8 @@
 # buildExpression(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Treats a single `Joint` value in the closure body as one child of the parent.
 
@@ -17,6 +18,12 @@ Treats a single `Joint` value in the closure body as one child of the parent.
 
 ```swift
 static func buildExpression(_ expression: SkeletonResource.Joint) -> [SkeletonResource.Joint]
+```
+
+**Other overloads**:
+
+```swift
+static func buildExpression(_ expression: [SkeletonResource.Joint]) -> [SkeletonResource.Joint]
 ```
 
 

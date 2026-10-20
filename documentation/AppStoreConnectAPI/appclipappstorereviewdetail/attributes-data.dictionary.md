@@ -1,7 +1,8 @@
 # AppClipAppStoreReviewDetail.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe the App Clip App Store Review Details resource.
 
@@ -10,7 +11,7 @@ The attributes that describe the App Clip App Store Review Details resource.
 
 ## Declaration
 
-```swift
+```
 object AppClipAppStoreReviewDetail.Attributes
 ```
 
@@ -20,7 +21,8 @@ object AppClipAppStoreReviewDetail.Attributes
 
 ## See Also
 
-- [object AppClipAppStoreReviewDetail.Relationships](appclipappstorereviewdetail/relationships-data.dictionary.md)
+### Objects
+- [object AppClipAppStoreReviewDetail.Relationships](./relationships-data.dictionary.md)
   The relationships of the App Clip App Store Details resource you included in the request and those on which you can operate.
 
 

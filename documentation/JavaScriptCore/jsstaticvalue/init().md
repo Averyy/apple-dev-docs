@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a static value.
 
@@ -21,7 +22,8 @@ init()
 
 ## See Also
 
-- [init(name: UnsafePointer<CChar>!, getProperty: JSObjectGetPropertyCallback!, setProperty: JSObjectSetPropertyCallback!, attributes: JSPropertyAttributes)](jsstaticvalue/init(name:getproperty:setproperty:attributes:).md)
+### Creating a Static Value
+- [init(name: UnsafePointer<CChar>!, getProperty: JSObjectGetPropertyCallback!, setProperty: JSObjectSetPropertyCallback!, attributes: JSPropertyAttributes)](./init%28name,getproperty,setproperty,attributes%29.md)
   Creates a static value with the specified values.
 
 

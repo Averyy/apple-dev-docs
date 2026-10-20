@@ -1,7 +1,8 @@
 # boundingBoxArea(confidenceThreshold:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the bounding box area of the pose.
 

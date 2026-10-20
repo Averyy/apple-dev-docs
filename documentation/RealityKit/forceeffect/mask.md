@@ -1,7 +1,8 @@
 # mask
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls which collision groups will be affected by this force effect.
 

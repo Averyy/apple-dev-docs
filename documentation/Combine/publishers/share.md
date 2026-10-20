@@ -1,7 +1,8 @@
 # Publishers.Share
 
 **Framework**: Combine  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A publisher that shares the output of an upstream publisher with multiple subscribers.
 
@@ -24,36 +25,37 @@ final class Share<Upstream> where Upstream : Publisher
 
 This publisher type supports multiple subscribers, all of whom receive unchanged elements and completion states from the upstream publisher.
 
-> 💡 **Tip**: [`Publishers.Share`](publishers/share.md) is effectively a combination of the [`Publishers.Multicast`](publishers/multicast.md) and [`PassthroughSubject`](passthroughsubject.md) publishers, with an implicit [`autoconnect()`](connectablepublisher/autoconnect().md).
+> 💡 **Tip**: [`Publishers.Share`](./share.md) is effectively a combination of the [`Publishers.Multicast`](./multicast.md) and [`PassthroughSubject`](../passthroughsubject.md) publishers, with an implicit [`autoconnect()`](../connectablepublisher/autoconnect%28%29.md).
 
-Be aware that [`Publishers.Share`](publishers/share.md) is a class rather than a structure like most other publishers. Use this type when you need a publisher instance that uses reference semantics.
+Be aware that [`Publishers.Share`](./share.md) is a class rather than a structure like most other publishers. Use this type when you need a publisher instance that uses reference semantics.
 
 ## Topics
 
 ### Creating a share publisher
-- [init(upstream: Upstream)](publishers/share/init(upstream:).md)
+- [init(upstream: Upstream)](./share/init%28upstream%29.md)
   Creates a publisher that shares the output of an upstream publisher with multiple subscribers.
 ### Declaring supporting types
-- [Publishers.Share.Output](publishers/share/output.md)
+- [Publishers.Share.Output](./share/output.md)
   The kind of values published by this publisher.
-- [Publishers.Share.Failure](publishers/share/failure.md)
+- [Publishers.Share.Failure](./share/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/share/upstream.md)
+- [let upstream: Upstream](./share/upstream.md)
   The publisher from which this publisher receives elements.
 ### Comparing publishers
-- [static func == (Publishers.Share<Upstream>, Publishers.Share<Upstream>) -> Bool](publishers/share/==(_:_:).md)
+- [static func == (Publishers.Share<Upstream>, Publishers.Share<Upstream>) -> Bool](./share/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Publisher](publisher.md)
+- [Equatable](../../Swift/equatable.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.Multicast](publishers/multicast.md)
+### Working with multiple subscribers
+- [Publishers.Multicast](./multicast.md)
   A publisher that uses a subject to deliver elements to multiple subscribers.
 
 

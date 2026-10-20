@@ -1,14 +1,15 @@
 # SetAutoSenseData
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+ - Deprecated in 10.11.4
 
 ## Declaration
 
-```swift
+```c
 bool SetAutoSenseData(SCSITaskIdentifier request, SCSI_Sense_Data *senseData);
 ```
 

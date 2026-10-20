@@ -1,7 +1,8 @@
 # paletteSelectionEffect(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the selection effect to apply to a palette item.
 
@@ -21,9 +22,9 @@ func paletteSelectionEffect(_ effect: PaletteSelectionEffect) -> some View
 
 #### Discussion
 
-[`automatic`](paletteselectioneffect/automatic.md) applies the system’s default appearance when selected. When using un-tinted SF Symbols or template images, the current tint color is applied to the selected items’ image. If the provided SF Symbols have custom tints, a stroke is drawn around selected items.
+[`automatic`](../paletteselectioneffect/automatic.md) applies the system’s default appearance when selected. When using un-tinted SF Symbols or template images, the current tint color is applied to the selected items’ image. If the provided SF Symbols have custom tints, a stroke is drawn around selected items.
 
-If you wish to provide a specific image (or SF Symbol) to indicate selection, use [`custom`](paletteselectioneffect/custom.md) to forgo the system’s default selection appearance allowing the provided image to solely indicate selection instead.
+If you wish to provide a specific image (or SF Symbol) to indicate selection, use [`custom`](../paletteselectioneffect/custom.md) to forgo the system’s default selection appearance allowing the provided image to solely indicate selection instead.
 
 The following example creates a palette picker that disables the system selection behavior:
 
@@ -44,7 +45,7 @@ Menu {
 }
 ```
 
-If a specific SF Symbol variant is preferable instead, use [`symbolVariant(_:)`](paletteselectioneffect/symbolvariant(_:).md).
+If a specific SF Symbol variant is preferable instead, use [`symbolVariant(_:)`](../paletteselectioneffect/symbolvariant%28_%29.md).
 
 ```swift
 Menu {
@@ -67,17 +68,18 @@ Menu {
 
 ## See Also
 
-- [struct Picker](picker.md)
+### Choosing from a set of options
+- [struct Picker](../picker.md)
   A control for selecting from a set of mutually exclusive values.
-- [func pickerStyle<S>(S) -> some View](view/pickerstyle(_:).md)
+- [func pickerStyle<S>(S) -> some View](./pickerstyle%28_%29.md)
   Sets the style for pickers within this view.
-- [func horizontalRadioGroupLayout() -> some View](view/horizontalradiogrouplayout.md)
+- [func horizontalRadioGroupLayout() -> some View](./horizontalradiogrouplayout%28%29.md)
   Sets the style for radio group style pickers within this view to be horizontally positioned with the radio buttons inside the layout.
-- [func defaultWheelPickerItemHeight(CGFloat) -> some View](view/defaultwheelpickeritemheight(_:).md)
+- [func defaultWheelPickerItemHeight(CGFloat) -> some View](./defaultwheelpickeritemheight%28_%29.md)
   Sets the default wheel-style picker item height.
-- [var defaultWheelPickerItemHeight: CGFloat](environmentvalues/defaultwheelpickeritemheight.md)
+- [var defaultWheelPickerItemHeight: CGFloat](../environmentvalues/defaultwheelpickeritemheight.md)
   The default height of an item in a wheel-style picker, such as a date picker.
-- [struct PaletteSelectionEffect](paletteselectioneffect.md)
+- [struct PaletteSelectionEffect](../paletteselectioneffect.md)
   The selection effect to apply to a palette item.
 
 

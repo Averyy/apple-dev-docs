@@ -1,7 +1,8 @@
 # getCredentialState(forUserID:completion:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the credential state for the given user in a completion handler.
 
@@ -17,19 +18,28 @@ Returns the credential state for the given user in a completion handler.
 ## Declaration
 
 ```swift
+func getCredentialState(forUserID userID: String, completion: @escaping @Sendable (ASAuthorizationAppleIDProvider.CredentialState, (any Error)?) -> Void)
+```
+
+```swift
 func credentialState(forUserID userID: String) async throws -> ASAuthorizationAppleIDProvider.CredentialState
+```
+
+```objc
+- (void) getCredentialStateForUserID:(NSString *) userID completion:(void (^)(ASAuthorizationAppleIDProviderCredentialState credentialState, NSError *error)) completion;
 ```
 
 ## Parameters
 
-- `userID`: An opaque string associated with the Apple ID that your app receives in the credential’s [`user`](asauthorizationappleidcredential/user.md) property after performing a successful authentication request.
+- `userID`: An opaque string associated with the Apple ID that your app receives in the credential’s [`user`](../asauthorizationappleidcredential/user.md) property after performing a successful authentication request.
 - `completion`: A block the method calls to report the state and an optional error condition.
 
 ## See Also
 
-- [ASAuthorizationAppleIDProvider.CredentialState](asauthorizationappleidprovider/credentialstate.md)
+### Getting State
+- [ASAuthorizationAppleIDProvider.CredentialState](./credentialstate.md)
   Possible values for the credential state of a user.
-- [class let credentialRevokedNotification: NSNotification.Name](asauthorizationappleidprovider/credentialrevokednotification.md)
+- [class let credentialRevokedNotification: NSNotification.Name](./credentialrevokednotification.md)
   A notification that indicates the user’s credentials have been revoked and they should be signed out.
 
 

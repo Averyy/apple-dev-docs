@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the web content process.
 
@@ -24,7 +25,8 @@ After you call this method, other method calls on the web content process throw 
 
 ## See Also
 
-- [init(bundleIdentifier: String?, onInterruption: () -> Void) async throws](webcontentprocess/init(bundleidentifier:oninterruption:).md)
+### Creating and invalidating extension processes
+- [init(bundleIdentifier: String?, onInterruption: () -> Void) async throws](./init%28bundleidentifier,oninterruption%29.md)
   Launches a web content process asynchronously.
 
 

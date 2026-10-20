@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 var bufferPointerType: MTLPointerType? { get }
+```
+
+```objc
+@property (readonly, nullable) MTLPointerType * bufferPointerType;
 ```
 
 

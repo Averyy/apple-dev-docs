@@ -1,6 +1,7 @@
 # Creating an Identity for Local Network TLS
 
-**Framework**: Network
+**Framework**: Network  
+**Role**: Article
 
 Learn how to create and use a digital identity in your application for local network TLS.
 
@@ -80,7 +81,7 @@ func getSecIdentity() -> SecIdentity? {
 }
 ```
 
-With the local identity accessible from the Keychain, set it to [`NWListener`](nwlistener.md) to serve connections using TLS 1.2+ with the following:
+With the local identity accessible from the Keychain, set it to [`NWListener`](./nwlistener.md) to serve connections using TLS 1.2+ with the following:
 
 ```swift
 let tlsOptions = NWProtocolTLS.Options()
@@ -96,7 +97,7 @@ if let secIdentity = getSecIdentity(),
 let listener = try NWListener(using: tlsParams, on: 4433)
 ```
 
-On macOS, the code is largely the same except if the `NWListener` is running on the same machine that set up the local certificate authority then the app’s code can reference the identity by loading a reference from the [`SecCertificate`](https://developer.apple.com/documentation/security/seccertificate) in the Keychain. To retrieve the identity from the Keychain on macOS, use the following:
+On macOS, the code is largely the same except if the `NWListener` is running on the same machine that set up the local certificate authority then the app’s code can reference the identity by loading a reference from the [`SecCertificate`](../Security/seccertificate.md) in the Keychain. To retrieve the identity from the Keychain on macOS, use the following:
 
 ```swift
 func getSecIdentity() -> SecIdentity? {
@@ -139,7 +140,7 @@ let endpoint = NWEndpoint.hostPort(host: "listener-name.local", port: 4433)
 let connection = NWConnection(to: endpoint, using: tlsParams)
 ```
 
-> **Note**:  If the root certificate from the CA is installed on the device, you can use the code above without implementing [`sec_protocol_options_set_verify_block(_:_:_:)`](https://developer.apple.com/documentation/security/sec_protocol_options_set_verify_block(_:_:_:)) to override trust evaluation.
+> **Note**:  If the root certificate from the CA is installed on the device, you can use the code above without implementing [`sec_protocol_options_set_verify_block(_:_:_:)`](../Security/sec_protocol_options_set_verify_block%28_,_,_%29.md) to override trust evaluation.
 
 If your client needs to connect over IP, instead of using a local network name, the server needs to use a leaf certificate that lists the IP in the “IP Address” field of the Subject Alternative Name. This also avoids having to override trust evaluation on the client and allows client connections to use the following:
 
@@ -157,14 +158,14 @@ let connection = NWConnection(to: endpoint, using: tlsParams)
 
 Attempting to connect from a client to a server without the root certificate installed on the client iOS device results in application errors similar to the following:
 
-```None
+```
 // [BoringSSL] boringssl_context_error_print(1863) boringssl ctx 0x2813acbe0: 4348594328:error:1000007d:SSL routines:OPENSSL_internal:CERTIFICATE_VERIFY_FAILED
 // [BoringSSL] boringssl_session_handshake_incomplete(164) [C1:1][0x1032186d0] SSL library error
 ```
 
 > **Note**:  The same is true if either the IP Address or DNS Name in the Subject Alternative Name fields are missing in the leaf certificate.
 
-To work around this on the client, use `sec_protocol_options_set_verify_block` to perform your own verification checks on the peer’s leaf certificate. This isn’t the recommended path, but could be done in extreme cases. In the following example, [`SecPolicyCreateBasicX509()`](https://developer.apple.com/documentation/security/secpolicycreatebasicx509()) checks against the certificate’s basic x509 policy:
+To work around this on the client, use `sec_protocol_options_set_verify_block` to perform your own verification checks on the peer’s leaf certificate. This isn’t the recommended path, but could be done in extreme cases. In the following example, [`SecPolicyCreateBasicX509()`](../Security/secpolicycreatebasicx509%28%29.md) checks against the certificate’s basic x509 policy:
 
 ```swift
 sec_protocol_options_set_verify_block(tlsOptions.securityProtocolOptions, { (_, trust, completionHandler) in
@@ -188,9 +189,10 @@ From there the client can set up a handshake using TLS on a local network.
 
 ## See Also
 
-- [Security Options](security-options.md)
+### Network Security and Privacy
+- [Security Options](./security-options.md)
   Configure security options for TLS handshakes.
-- [Privacy Management](privacy-management.md)
+- [Privacy Management](./privacy-management.md)
   Configure parameters related to user privacy.
 
 

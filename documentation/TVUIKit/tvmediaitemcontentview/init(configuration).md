@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: TVUIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a media item content view with the configuration you specify.
 
@@ -21,7 +22,8 @@ Creates a media item content view with the configuration you specify.
 
 ## See Also
 
-- [struct TVMediaItemContentConfiguration](tvmediaitemcontentconfiguration-swift.struct.md)
+### Creating a Media Item Content View
+- [struct TVMediaItemContentConfiguration](../tvmediaitemcontentconfiguration-swift.struct.md)
   A content configuration for a media item view.
 
 

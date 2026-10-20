@@ -1,22 +1,24 @@
 # TopCenterSurround
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 TopCenterSurround
 ```
 
 ## See Also
 
-- [TopBackCenter](videodriverkit/iouservideochannellabel/topbackcenter.md)
-- [TopBackLeft](videodriverkit/iouservideochannellabel/topbackleft.md)
-- [TopBackRight](videodriverkit/iouservideochannellabel/topbackright.md)
+### Back channels
+- [TopBackCenter](./topbackcenter.md)
+- [TopBackLeft](./topbackleft.md)
+- [TopBackRight](./topbackright.md)
 
 
 ---

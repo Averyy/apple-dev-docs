@@ -1,7 +1,8 @@
 # off(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func off(with params: MTROnOffClusterOffParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func off(with params: MTROnOffClusterOffParams?) async throws
+```
+
+```objc
+- (void) offWithParams:(MTROnOffClusterOffParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

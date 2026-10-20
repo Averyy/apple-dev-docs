@@ -1,17 +1,22 @@
 # currentPath()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the remote current directory path during an FTP session
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func currentPath() -> String!
+```
+
+```objc
+- (NSString *) currentPath;
 ```
 
 #### Return Value

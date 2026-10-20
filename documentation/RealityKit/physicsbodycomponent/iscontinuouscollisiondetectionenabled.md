@@ -1,7 +1,8 @@
 # isContinuousCollisionDetectionEnabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that controls whether the physics simulation performs continuous collision detection.
 
@@ -11,7 +12,7 @@ A Boolean that controls whether the physics simulation performs continuous colli
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

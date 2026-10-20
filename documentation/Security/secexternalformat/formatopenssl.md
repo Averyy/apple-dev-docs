@@ -1,7 +1,8 @@
 # SecExternalFormat.formatOpenSSL
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Format for asymmetric (public/private) keys. OpenSSL is an open source toolkit for Secure Sockets Layer (SSL) and Transport Layer Security (TLS). Also known as X.509 for public keys.
 
@@ -12,6 +13,10 @@ Format for asymmetric (public/private) keys. OpenSSL is an open source toolkit f
 
 ```swift
 case formatOpenSSL
+```
+
+```c
+kSecFormatOpenSSL
 ```
 
 

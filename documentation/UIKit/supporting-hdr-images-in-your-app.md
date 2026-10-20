@@ -1,6 +1,8 @@
 # Supporting HDR images in your app
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [SupportingHDRImagesInYourApp.zip](https://docs-assets.developer.apple.com/published/6bb6a5a2302b/SupportingHDRImagesInYourApp.zip)
 
 ​ Load, display, edit, and save HDR images using SwiftUI and Core Image. ​
 
@@ -15,13 +17,13 @@
 
 This sample code project shows how to read, write, edit, and display HDR images using SwiftUI, UIKit, AppKit, Core Image, and Core Graphics. It loads a film strip of multiple images from on-disk or from the Photos library. Then it allows you to select, edit, and save an image in HDR. The sample uses several new APIs in various frameworks to correctly handle HDR images in a complete HDR workflow. ​
 
-> **Note**: This sample code project is associated with WWDC23 session 10181: [`Support HDR images in your app`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10181/). ​
+> **Note**: This sample code project is associated with WWDC23 session 10181: [Support HDR images in your app](https://developer.apple.com/wwdc23/10181/). ​
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Before you run this sample code project in Xcode, ensure you’re using iOS 17 or later for the iOS target, and macOS 14 or later for the Mac target. ​
 
-##### Enable Hdr on Image Views
+##### Enable HDR on image views
 
 To turn on HDR in the SwiftUI image view, the sample uses the `allowedDynamicRange` modifier in the film strip to show limited HDR headroom.
 
@@ -47,7 +49,7 @@ view.preferredImageDynamicRange = .high
 
 ​​ ​
 
-##### Edit Hdr Using Core Image
+##### Edit HDR using Core Image
 
 To ensure Core Image reads Gain Map HDR images as HDR, the sample sets the `CIImageOption.expandToHDR` property to `true`. To modify the HDR image data, it uses `CIFilter` filters.
 
@@ -76,9 +78,10 @@ guard let outputURL = try? output.renderedContentURL(for: .heic) else {
 
 ## See Also
 
-- [func jpegData(compressionQuality: CGFloat) -> Data?](uiimage/jpegdata(compressionquality:).md)
+### Image creation
+- [func jpegData(compressionQuality: CGFloat) -> Data?](./uiimage/jpegdata%28compressionquality%29.md)
   Returns a data object that contains the image in JPEG format.
-- [func pngData() -> Data?](uiimage/pngdata.md)
+- [func pngData() -> Data?](./uiimage/pngdata%28%29.md)
   Returns a data object that contains the specified image in PNG format.
 
 

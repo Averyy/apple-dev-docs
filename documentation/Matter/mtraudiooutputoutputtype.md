@@ -1,7 +1,8 @@
 # MTRAudioOutputOutputType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,30 +19,34 @@
 enum MTRAudioOutputOutputType
 ```
 
+```c
+enum MTRAudioOutputOutputType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRAudioOutputOutputType.BT](mtraudiooutputoutputtype/bt-swift.enum.case.md)
-- [MTRAudioOutputOutputType.HDMI](mtraudiooutputoutputtype/hdmi-swift.enum.case.md)
-- [MTRAudioOutputOutputType.headphone](mtraudiooutputoutputtype/headphone.md)
-- [MTRAudioOutputOutputType.internal](mtraudiooutputoutputtype/internal.md)
-- [MTRAudioOutputOutputType.optical](mtraudiooutputoutputtype/optical.md)
-- [MTRAudioOutputOutputType.other](mtraudiooutputoutputtype/other.md)
+- [MTRAudioOutputOutputType.BT](./mtraudiooutputoutputtype/bt-swift.enum.case.md)
+- [MTRAudioOutputOutputType.HDMI](./mtraudiooutputoutputtype/hdmi-swift.enum.case.md)
+- [MTRAudioOutputOutputType.headphone](./mtraudiooutputoutputtype/headphone.md)
+- [MTRAudioOutputOutputType.internal](./mtraudiooutputoutputtype/internal.md)
+- [MTRAudioOutputOutputType.optical](./mtraudiooutputoutputtype/optical.md)
+- [MTRAudioOutputOutputType.other](./mtraudiooutputoutputtype/other.md)
 ### Type Properties
-- [static var bt: MTRAudioOutputOutputType](mtraudiooutputoutputtype/bt-swift.type.property.md)
-- [static var hdmi: MTRAudioOutputOutputType](mtraudiooutputoutputtype/hdmi-swift.type.property.md)
+- [static var bt: MTRAudioOutputOutputType](./mtraudiooutputoutputtype/bt-swift.type.property.md)
+- [static var hdmi: MTRAudioOutputOutputType](./mtraudiooutputoutputtype/hdmi-swift.type.property.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtraudiooutputoutputtype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtraudiooutputoutputtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

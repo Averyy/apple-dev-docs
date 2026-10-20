@@ -1,7 +1,8 @@
 # nw_connection_state_invalid
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The connection is not valid.
 
@@ -20,17 +21,22 @@ The connection is not valid.
 var nw_connection_state_invalid: nw_connection_state_t { get }
 ```
 
+```c
+nw_connection_state_invalid
+```
+
 ## See Also
 
-- [var nw_connection_state_waiting: nw_connection_state_t](nw_connection_state_waiting.md)
+### Connection States
+- [var nw_connection_state_waiting: nw_connection_state_t](./nw_connection_state_waiting.md)
   The connection is waiting for a network path change.
-- [var nw_connection_state_preparing: nw_connection_state_t](nw_connection_state_preparing.md)
+- [var nw_connection_state_preparing: nw_connection_state_t](./nw_connection_state_preparing.md)
   The connection in the process of being established.
-- [var nw_connection_state_ready: nw_connection_state_t](nw_connection_state_ready.md)
+- [var nw_connection_state_ready: nw_connection_state_t](./nw_connection_state_ready.md)
   The connection is established, and ready to send and receive data.
-- [var nw_connection_state_failed: nw_connection_state_t](nw_connection_state_failed.md)
+- [var nw_connection_state_failed: nw_connection_state_t](./nw_connection_state_failed.md)
   The connection has disconnected or encountered an error.
-- [var nw_connection_state_cancelled: nw_connection_state_t](nw_connection_state_cancelled.md)
+- [var nw_connection_state_cancelled: nw_connection_state_t](./nw_connection_state_cancelled.md)
   The connection has been canceled.
 
 

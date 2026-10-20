@@ -1,7 +1,8 @@
 # kSKIndexVector
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies a vector index, mapping documents to terms.
 

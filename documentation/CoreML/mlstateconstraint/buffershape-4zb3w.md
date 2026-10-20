@@ -1,7 +1,8 @@
 # bufferShape
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shape of the state buffer.
 
@@ -22,7 +23,8 @@ var bufferShape: [Int] { get }
 
 ## See Also
 
-- [var dataType: MLMultiArrayDataType](mlstateconstraint/datatype.md)
+### Inspecting a state constraint
+- [var dataType: MLMultiArrayDataType](./datatype.md)
   The data type of scalars in the state buffer.
 
 

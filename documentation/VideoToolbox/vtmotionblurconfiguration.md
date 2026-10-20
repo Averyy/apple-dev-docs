@@ -1,7 +1,8 @@
 # VTMotionBlurConfiguration
 
 **Framework**: Video Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration object to enable motion blur on a frame processing session.
 
@@ -17,63 +18,68 @@ A configuration object to enable motion blur on a frame processing session.
 class VTMotionBlurConfiguration
 ```
 
+```objc
+@interface VTMotionBlurConfiguration : NSObject
+```
+
 ## Topics
 
 ### Creating a motion blur configuration
-- [init?(frameWidth: Int, frameHeight: Int, usePrecomputedFlow: Bool, qualityPrioritization: VTMotionBlurConfiguration.QualityPrioritization, revision: VTMotionBlurConfiguration.Revision)](vtmotionblurconfiguration/init(framewidth:frameheight:useprecomputedflow:qualityprioritization:revision:).md)
+- [init?(frameWidth: Int, frameHeight: Int, usePrecomputedFlow: Bool, qualityPrioritization: VTMotionBlurConfiguration.QualityPrioritization, revision: VTMotionBlurConfiguration.Revision)](./vtmotionblurconfiguration/init%28framewidth,frameheight,useprecomputedflow,qualityprioritization,revision%29.md)
   Creates a new motion blur configuration with specified flow width and height.
 ### Determining processor availability
-- [class var isSupported: Bool](vtmotionblurconfiguration/issupported.md)
+- [class var isSupported: Bool](./vtmotionblurconfiguration/issupported.md)
   Reports whether the system supports this processor.
 ### Inspecting the configuration
-- [var frameWidth: Int](vtmotionblurconfiguration/framewidth.md)
+- [var frameWidth: Int](./vtmotionblurconfiguration/framewidth.md)
   The width of a source frame in pixels.
-- [var frameHeight: Int](vtmotionblurconfiguration/frameheight.md)
+- [var frameHeight: Int](./vtmotionblurconfiguration/frameheight.md)
   The height of a source frame in pixels.
-- [var usePrecomputedFlow: Bool](vtmotionblurconfiguration/useprecomputedflow.md)
+- [var usePrecomputedFlow: Bool](./vtmotionblurconfiguration/useprecomputedflow.md)
   A Boolean value to indicates whether the the optical flow will be provided by the user.
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vtmotionblurconfiguration/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./vtmotionblurconfiguration/sourcepixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing requirements for pixel buffers used as source frames and reference frames.
-- [var destinationPixelBufferAttributes: [String : any Sendable]](vtmotionblurconfiguration/destinationpixelbufferattributes.md)
+- [var destinationPixelBufferAttributes: [String : any Sendable]](./vtmotionblurconfiguration/destinationpixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing the requirements for pixel buffers used as destination frames.
-- [var supportedPixelFormats: [OSType]](vtmotionblurconfiguration/supportedpixelformats.md)
-- [var qualityPrioritization: VTMotionBlurConfiguration.QualityPrioritization](vtmotionblurconfiguration/qualityprioritization-swift.property.md)
+- [var supportedPixelFormats: [OSType]](./vtmotionblurconfiguration/supportedpixelformats.md)
+- [var qualityPrioritization: VTMotionBlurConfiguration.QualityPrioritization](./vtmotionblurconfiguration/qualityprioritization-swift.property.md)
   A value that specifies whether to prioritize quality or performance.
-- [VTMotionBlurConfiguration.QualityPrioritization](vtmotionblurconfiguration/qualityprioritization-swift.enum.md)
+- [VTMotionBlurConfiguration.QualityPrioritization](./vtmotionblurconfiguration/qualityprioritization-swift.enum.md)
   Values that specify whether to prioritize quality or performance.
 ### Inspecting revision information
-- [var revision: VTMotionBlurConfiguration.Revision](vtmotionblurconfiguration/revision-swift.property.md)
+- [var revision: VTMotionBlurConfiguration.Revision](./vtmotionblurconfiguration/revision-swift.property.md)
   The specific algorithm or configuration revision that is to be used to perform the request.
-- [class var defaultRevision: VTMotionBlurConfiguration.Revision](vtmotionblurconfiguration/defaultrevision.md)
+- [class var defaultRevision: VTMotionBlurConfiguration.Revision](./vtmotionblurconfiguration/defaultrevision.md)
   The default revision of a particular algorithm or configuration.
-- [class var supportedRevisions: IndexSet](vtmotionblurconfiguration/supportedrevisions.md)
+- [class var supportedRevisions: IndexSet](./vtmotionblurconfiguration/supportedrevisions.md)
   The collection of currently-supported algorithms or configuration revisions for the class of configurations.
-- [VTMotionBlurConfiguration.Revision](vtmotionblurconfiguration/revision-swift.enum.md)
+- [VTMotionBlurConfiguration.Revision](./vtmotionblurconfiguration/revision-swift.enum.md)
   The specific algorithm or configuration revision that is to be used to perform the request.
 ### Deprecated
-- [class var processorSupported: Bool](vtmotionblurconfiguration/processorsupported.md)
+- [class var processorSupported: Bool](./vtmotionblurconfiguration/processorsupported.md)
   A Boolean value that indicates whether the processor is supported.
-- [var frameSupportedPixelFormats: [NSNumber]](vtmotionblurconfiguration/framesupportedpixelformats-1n4uq.md)
+- [var frameSupportedPixelFormats: [NSNumber]](./vtmotionblurconfiguration/framesupportedpixelformats-1n4uq.md)
   A list of source frame supported pixel formats for the current configuration.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VTFrameProcessorConfiguration](vtframeprocessorconfiguration.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VTFrameProcessorConfiguration](./vtframeprocessorconfiguration.md)
 
 ## See Also
 
-- [class VTMotionBlurParameters](vtmotionblurparameters.md)
+### Motion blur
+- [class VTMotionBlurParameters](./vtmotionblurparameters.md)
   This object contains both input and output parameters necessary to run the motion blur processor on a frame.
 
 

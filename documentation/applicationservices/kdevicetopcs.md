@@ -1,7 +1,8 @@
 # kDeviceToPCS
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Device Dependent to Device Independent
 

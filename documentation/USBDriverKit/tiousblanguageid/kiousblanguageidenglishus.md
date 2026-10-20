@@ -1,7 +1,8 @@
 # kIOUSBLanguageIDEnglishUS
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The US English language.
 
@@ -10,7 +11,7 @@ The US English language.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBLanguageIDEnglishUS
 ```
 

@@ -1,7 +1,8 @@
 # copy()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of the coordinate span.
 
@@ -10,7 +11,7 @@ Returns a copy of the coordinate span.
 
 ## Declaration
 
-```swift
+```
 copy(): CoordinateSpan;
 ```
 
@@ -20,7 +21,8 @@ A copy of the coordinate span.
 
 ## See Also
 
-- [equals(anotherSpan)](coordinatespan/equals.md)
+### Copying and comparing spans
+- [equals(anotherSpan)](./equals.md)
   Returns a Boolean value that indicates whether two spans are equal.
 
 

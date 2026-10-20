@@ -1,7 +1,8 @@
 # darkUserInterfaceStyle
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Use a dark user interface style for rendering.
 
@@ -20,7 +21,8 @@ var darkUserInterfaceStyle: Bool
 
 ## See Also
 
-- [var rightToLeftLayoutDirection: Bool](renderingoptions/righttoleftlayoutdirection.md)
+### Configuring style
+- [var rightToLeftLayoutDirection: Bool](./righttoleftlayoutdirection.md)
   Use a right to left layout direction for rendering.
 
 

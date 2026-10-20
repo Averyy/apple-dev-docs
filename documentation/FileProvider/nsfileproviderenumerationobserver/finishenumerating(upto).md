@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the observer that all of the items have been enumerated up to the specified page.
@@ -19,17 +20,22 @@ Tells the observer that all of the items have been enumerated up to the specifie
 func finishEnumerating(upTo nextPage: NSFileProviderPage?)
 ```
 
+```objc
+- (void) finishEnumeratingUpToPage:(NSFileProviderPage) nextPage;
+```
+
 ## Mentions
 
-- [Defining Your File Provider’s Content](defining-your-file-provider-s-content.md)
+- [Defining Your File Provider’s Content](../defining-your-file-provider-s-content.md)
 
 ## See Also
 
-- [func didEnumerate([any NSFileProviderItemProtocol])](nsfileproviderenumerationobserver/didenumerate(_:).md)
+### Observing Item Enumeration
+- [func didEnumerate([any NSFileProviderItemProtocol])](./didenumerate%28_%29.md)
   Provides a batch of enumerated items.
-- [func finishEnumeratingWithError(any Error)](nsfileproviderenumerationobserver/finishenumeratingwitherror(_:).md)
+- [func finishEnumeratingWithError(any Error)](./finishenumeratingwitherror%28_%29.md)
   Tells the observer that an error occurred during item enumeration.
-- [var suggestedPageSize: Int](nsfileproviderenumerationobserver/suggestedpagesize.md)
+- [var suggestedPageSize: Int](./suggestedpagesize.md)
   The page size that the system recommends.
 
 

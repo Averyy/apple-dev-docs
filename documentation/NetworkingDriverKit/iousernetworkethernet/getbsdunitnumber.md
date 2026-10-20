@@ -1,14 +1,15 @@
 # getBSDUnitNumber
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 22.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual int32_t getBSDUnitNumber();
 ```
 

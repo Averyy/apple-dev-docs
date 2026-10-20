@@ -1,7 +1,8 @@
 # USDLayer.Path.Kind.prim
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The path identifies a prim.
 

@@ -1,7 +1,8 @@
 # uid
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A String that contains a persistent identifier for the tap. A tap’s UID persists until the tap is destroyed.
 

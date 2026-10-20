@@ -1,7 +1,8 @@
 # DirectionalLightComponent.Shadow.ShadowProjectionType.automatic(maximumDistance:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Shadow projection is automatically fit with the camera frustum, range is within maximumDistance from camera
 
@@ -21,7 +22,8 @@ case automatic(maximumDistance: Float = 5)
 
 ## See Also
 
-- [DirectionalLightComponent.Shadow.ShadowProjectionType.fixed(zNear:zFar:orthographicScale:)](directionallightcomponent/shadow/shadowprojectiontype/fixed(znear:zfar:orthographicscale:).md)
+### Shadow projection types
+- [DirectionalLightComponent.Shadow.ShadowProjectionType.fixed(zNear:zFar:orthographicScale:)](./fixed%28znear,zfar,orthographicscale%29.md)
   Shadow projection is manually set up with near plane, far plane, and orthographicScale for width and height
 
 

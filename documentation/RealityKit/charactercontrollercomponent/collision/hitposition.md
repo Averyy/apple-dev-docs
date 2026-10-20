@@ -1,7 +1,8 @@
 # hitPosition
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Hit position relative to physics origin. In physics space.
 
@@ -11,7 +12,7 @@ Hit position relative to physics origin. In physics space.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

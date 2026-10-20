@@ -1,7 +1,8 @@
 # translationBehavior
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The translation behavior describing how an object translates due to gestures performed by the user.
 

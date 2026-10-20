@@ -1,7 +1,8 @@
 # numberOfItems(inSection:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the number of items in the specified section of the snapshot.
 
@@ -18,6 +19,10 @@ Returns the number of items in the specified section of the snapshot.
 func numberOfItems(inSection sectionIdentifier: Any) -> Int
 ```
 
+```objc
+- (NSInteger) numberOfItemsInSection:(SectionIdentifierType) sectionIdentifier;
+```
+
 #### Return Value
 
 The number of items in the specified section. This method returns `0` if the section is empty.
@@ -32,9 +37,10 @@ If you call this method with the identifier of a section that doesn’t exist in
 
 ## See Also
 
-- [var numberOfItems: Int](nsdiffabledatasourcesnapshotreference/numberofitems.md)
+### Getting item and section metrics
+- [var numberOfItems: Int](./numberofitems.md)
   The number of items in the snapshot.
-- [var numberOfSections: Int](nsdiffabledatasourcesnapshotreference/numberofsections.md)
+- [var numberOfSections: Int](./numberofsections.md)
   The number of sections in the snapshot.
 
 

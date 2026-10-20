@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.greece
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Greek in the HID specification.
 

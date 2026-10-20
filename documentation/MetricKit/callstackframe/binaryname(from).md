@@ -1,7 +1,8 @@
 # binaryName(from:)
 
 **Framework**: MetricKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Binary name - look up from tree
 
@@ -28,7 +29,8 @@ The binary name, or nil if not found
 
 ## See Also
 
-- [let subFrames: ContiguousArray<CallStackFrame>](callstackframe/subframes.md)
+### Tree navigation
+- [let subFrames: ContiguousArray<CallStackFrame>](./subframes.md)
   Sub-frames (children in the call tree)
 
 

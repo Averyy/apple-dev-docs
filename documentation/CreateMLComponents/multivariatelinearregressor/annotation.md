@@ -1,7 +1,8 @@
 # MultivariateLinearRegressor.Annotation
 
 **Framework**: Create ML Components  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The annotation type.
 
@@ -22,12 +23,13 @@ typealias Annotation = MLShapedArray<Scalar>
 
 ## See Also
 
-- [MultivariateLinearRegressor.Model](multivariatelinearregressor/model.md)
+### Supporting types
+- [MultivariateLinearRegressor.Model](./model.md)
   A trained multivariate linear regressor model.
-- [MultivariateLinearRegressor.Configuration](multivariatelinearregressor/configuration-swift.typealias.md)
-- [MultivariateLinearRegressor.Feature](multivariatelinearregressor/feature.md)
+- [MultivariateLinearRegressor.Configuration](./configuration-swift.typealias.md)
+- [MultivariateLinearRegressor.Feature](./feature.md)
   The feature type.
-- [MultivariateLinearRegressor.Transformer](multivariatelinearregressor/transformer.md)
+- [MultivariateLinearRegressor.Transformer](./transformer.md)
   The transformer type created by this estimator.
 
 

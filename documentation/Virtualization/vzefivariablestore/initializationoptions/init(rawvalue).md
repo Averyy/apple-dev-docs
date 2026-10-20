@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new EFI variable store with the specified value.
 

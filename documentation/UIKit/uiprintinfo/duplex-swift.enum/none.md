@@ -1,7 +1,8 @@
 # UIPrintInfo.Duplex.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No double-sided (duplex) printing; single-sided printing only.
 
@@ -17,11 +18,16 @@ No double-sided (duplex) printing; single-sided printing only.
 case none
 ```
 
+```c
+UIPrintInfoDuplexNone
+```
+
 ## See Also
 
-- [UIPrintInfo.Duplex.longEdge](uiprintinfo/duplex-swift.enum/longedge.md)
+### Constants
+- [UIPrintInfo.Duplex.longEdge](./longedge.md)
   Duplex printing that flips the back page along the long edge of the paper.
-- [UIPrintInfo.Duplex.shortEdge](uiprintinfo/duplex-swift.enum/shortedge.md)
+- [UIPrintInfo.Duplex.shortEdge](./shortedge.md)
   Duplex print that flips the back page along the short edge of the paper.
 
 

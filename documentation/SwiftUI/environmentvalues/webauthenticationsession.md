@@ -1,7 +1,8 @@
 # webAuthenticationSession
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value provided in the SwiftUI environment that views can use to authenticate a user through a web service.
 
@@ -64,13 +65,14 @@ The above example looks for a token stored as a query parameter. The specific pa
 
 ## See Also
 
-- [struct LocalAuthenticationView](../localauthentication/localauthenticationview.md)
+### Authorizing and authenticating
+- [struct LocalAuthenticationView](../../LocalAuthentication/localauthenticationview.md)
   A SwiftUI view that displays an authentication interface.
-- [struct SignInWithAppleButton](../authenticationservices/signinwithapplebutton.md)
+- [struct SignInWithAppleButton](../../AuthenticationServices/signinwithapplebutton.md)
   A SwiftUI view that creates the Sign in with Apple button for display.
-- [func signInWithAppleButtonStyle(SignInWithAppleButton.Style) -> some View](view/signinwithapplebuttonstyle(_:).md)
+- [func signInWithAppleButtonStyle(SignInWithAppleButton.Style) -> some View](../view/signinwithapplebuttonstyle%28_%29.md)
   Sets the style used for displaying the control (see `SignInWithAppleButton.Style`).
-- [var authorizationController: AuthorizationController](environmentvalues/authorizationcontroller.md)
+- [var authorizationController: AuthorizationController](./authorizationcontroller.md)
   A value provided in the SwiftUI environment that views can use to perform authorization requests.
 
 

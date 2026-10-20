@@ -1,7 +1,8 @@
 # kCGImagePropertyExifRecommendedExposureIndex
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The recommended exposure index.
 
@@ -20,29 +21,34 @@ The recommended exposure index.
 let kCGImagePropertyExifRecommendedExposureIndex: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyExifRecommendedExposureIndex;
+```
+
 ## See Also
 
-- [let kCGImagePropertyExifExposureTime: CFString](kcgimagepropertyexifexposuretime.md)
+### Exposure
+- [let kCGImagePropertyExifExposureTime: CFString](./kcgimagepropertyexifexposuretime.md)
   The exposure time.
-- [let kCGImagePropertyExifExposureProgram: CFString](kcgimagepropertyexifexposureprogram.md)
+- [let kCGImagePropertyExifExposureProgram: CFString](./kcgimagepropertyexifexposureprogram.md)
   The exposure program.
-- [let kCGImagePropertyExifExposureIndex: CFString](kcgimagepropertyexifexposureindex.md)
+- [let kCGImagePropertyExifExposureIndex: CFString](./kcgimagepropertyexifexposureindex.md)
   The selected exposure index.
-- [let kCGImagePropertyExifExposureMode: CFString](kcgimagepropertyexifexposuremode.md)
+- [let kCGImagePropertyExifExposureMode: CFString](./kcgimagepropertyexifexposuremode.md)
   The exposure mode setting.
-- [let kCGImagePropertyExifISOSpeed: CFString](kcgimagepropertyexifisospeed.md)
+- [let kCGImagePropertyExifISOSpeed: CFString](./kcgimagepropertyexifisospeed.md)
   The ISO speed setting used to capture the image.
-- [let kCGImagePropertyExifISOSpeedLatitudeyyy: CFString](kcgimagepropertyexifisospeedlatitudeyyy.md)
+- [let kCGImagePropertyExifISOSpeedLatitudeyyy: CFString](./kcgimagepropertyexifisospeedlatitudeyyy.md)
   The ISO speed latitude yyy value.
-- [let kCGImagePropertyExifISOSpeedLatitudezzz: CFString](kcgimagepropertyexifisospeedlatitudezzz.md)
+- [let kCGImagePropertyExifISOSpeedLatitudezzz: CFString](./kcgimagepropertyexifisospeedlatitudezzz.md)
   The ISO speed latitude zzz value.
-- [let kCGImagePropertyExifExposureBiasValue: CFString](kcgimagepropertyexifexposurebiasvalue.md)
+- [let kCGImagePropertyExifExposureBiasValue: CFString](./kcgimagepropertyexifexposurebiasvalue.md)
   The exposure bias value.
-- [let kCGImagePropertyExifSensitivityType: CFString](kcgimagepropertyexifsensitivitytype.md)
+- [let kCGImagePropertyExifSensitivityType: CFString](./kcgimagepropertyexifsensitivitytype.md)
   The type of sensitivity data stored for the image.
-- [let kCGImagePropertyExifStandardOutputSensitivity: CFString](kcgimagepropertyexifstandardoutputsensitivity.md)
+- [let kCGImagePropertyExifStandardOutputSensitivity: CFString](./kcgimagepropertyexifstandardoutputsensitivity.md)
   The sensitivity data for the image.
-- [let kCGImagePropertyExifSourceExposureTimesOfCompositeImage: CFString](kcgimagepropertyexifsourceexposuretimesofcompositeimage.md)
+- [let kCGImagePropertyExifSourceExposureTimesOfCompositeImage: CFString](./kcgimagepropertyexifsourceexposuretimesofcompositeimage.md)
   The exposure times for composite images.
 
 

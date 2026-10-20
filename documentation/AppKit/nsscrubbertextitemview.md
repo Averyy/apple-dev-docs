@@ -1,7 +1,8 @@
 # NSScrubberTextItemView
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A concrete view subclass for displaying text for an item in a scrubber.
 
@@ -14,53 +15,58 @@ A concrete view subclass for displaying text for an item in a scrubber.
 class NSScrubberTextItemView
 ```
 
+```objc
+@interface NSScrubberTextItemView : NSScrubberItemView
+```
+
 #### Overview
 
-Provide the text you want to display in the scrubber item to the [`title`](nsscrubbertextitemview/title.md) property. If you want finer control over the appearance of the text, you can access the underlying text field using the [`textField`](nsscrubbertextitemview/textfield.md) property.
+Provide the text you want to display in the scrubber item to the [`title`](./nsscrubbertextitemview/title.md) property. If you want finer control over the appearance of the text, you can access the underlying text field using the [`textField`](./nsscrubbertextitemview/textfield.md) property.
 
 ## Topics
 
 ### Providing text content
-- [var title: String](nsscrubbertextitemview/title.md)
+- [var title: String](./nsscrubbertextitemview/title.md)
   The text displayed for the scrubber item.
-- [var textField: NSTextField](nsscrubbertextitemview/textfield.md)
+- [var textField: NSTextField](./nsscrubbertextitemview/textfield.md)
   The text field that the scrubber item uses to display its text.
 
 ## Relationships
 
 ### Inherits From
-- [NSScrubberItemView](nsscrubberitemview.md)
+- [NSScrubberItemView](./nsscrubberitemview.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](nstouchbarprovider.md)
-- [NSUserActivityRestoring](nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](./nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](./nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](./nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](./nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](./nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](./nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](./nstouchbarprovider.md)
+- [NSUserActivityRestoring](./nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSScrubberItemView](nsscrubberitemview.md)
+### Scrubber items
+- [class NSScrubberItemView](./nsscrubberitemview.md)
   An item at a specific index position in the scrubber.
-- [class NSScrubberArrangedView](nsscrubberarrangedview.md)
+- [class NSScrubberArrangedView](./nsscrubberarrangedview.md)
   An abstract base class for the views whose layout is managed by a scrubber.
-- [class NSScrubberImageItemView](nsscrubberimageitemview.md)
+- [class NSScrubberImageItemView](./nsscrubberimageitemview.md)
   A concrete view subclass for displaying images in a scrubber items.
-- [class NSScrubberSelectionStyle](nsscrubberselectionstyle.md)
+- [class NSScrubberSelectionStyle](./nsscrubberselectionstyle.md)
   An abstract class that provides decorative accessory views for selected and highlighted items within a scrubber control.
-- [class NSScrubberSelectionView](nsscrubberselectionview.md)
+- [class NSScrubberSelectionView](./nsscrubberselectionview.md)
   An abstract base class for specifying the appearance of a highlighted or selected item in a scrubber.
 
 

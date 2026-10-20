@@ -1,7 +1,8 @@
 # pendingAccessRequestsCount
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var pendingAccessRequestsCount: Int { get set }
+```
+
+```objc
+@property (nonatomic, assign) NSUInteger pendingAccessRequestsCount;
 ```
 
 

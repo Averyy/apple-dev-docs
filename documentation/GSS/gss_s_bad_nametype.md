@@ -1,7 +1,8 @@
 # GSS_S_BAD_NAMETYPE
 
 **Framework**: GSS  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Unsupported name type.
 
@@ -18,37 +19,42 @@ Unsupported name type.
 var GSS_S_BAD_NAMETYPE: UInt { get }
 ```
 
+```c
+#define GSS_S_BAD_NAMETYPE
+```
+
 ## See Also
 
-- [var GSS_S_BAD_MECH: UInt](gss_s_bad_mech.md)
+### Routine Errors
+- [var GSS_S_BAD_MECH: UInt](./gss_s_bad_mech.md)
   Unsupported mechanism.
-- [var GSS_S_BAD_NAME: UInt](gss_s_bad_name.md)
+- [var GSS_S_BAD_NAME: UInt](./gss_s_bad_name.md)
   Invalid name.
-- [var GSS_S_BAD_MIC: UInt](gss_s_bad_mic.md)
+- [var GSS_S_BAD_MIC: UInt](./gss_s_bad_mic.md)
   Failed token integrity check.
-- [var GSS_S_BAD_SIG: UInt](gss_s_bad_sig.md)
+- [var GSS_S_BAD_SIG: UInt](./gss_s_bad_sig.md)
   Failed token integrity check.
-- [var GSS_S_BAD_STATUS: UInt](gss_s_bad_status.md)
+- [var GSS_S_BAD_STATUS: UInt](./gss_s_bad_status.md)
   Invalid status selector.
-- [var GSS_S_BAD_BINDINGS: UInt](gss_s_bad_bindings.md)
+- [var GSS_S_BAD_BINDINGS: UInt](./gss_s_bad_bindings.md)
   Channel bindings mismatch.
-- [var GSS_S_NO_CRED: UInt](gss_s_no_cred.md)
+- [var GSS_S_NO_CRED: UInt](./gss_s_no_cred.md)
   No valid credentials.
-- [var GSS_S_NO_CONTEXT: UInt](gss_s_no_context.md)
+- [var GSS_S_NO_CONTEXT: UInt](./gss_s_no_context.md)
   No valid security context.
-- [var GSS_S_DEFECTIVE_TOKEN: UInt](gss_s_defective_token.md)
+- [var GSS_S_DEFECTIVE_TOKEN: UInt](./gss_s_defective_token.md)
   Defective token.
-- [var GSS_S_DEFECTIVE_CREDENTIAL: UInt](gss_s_defective_credential.md)
+- [var GSS_S_DEFECTIVE_CREDENTIAL: UInt](./gss_s_defective_credential.md)
   Defective credential.
-- [var GSS_S_CREDENTIALS_EXPIRED: UInt](gss_s_credentials_expired.md)
+- [var GSS_S_CREDENTIALS_EXPIRED: UInt](./gss_s_credentials_expired.md)
   Expired credential.
-- [var GSS_S_CONTEXT_EXPIRED: UInt](gss_s_context_expired.md)
+- [var GSS_S_CONTEXT_EXPIRED: UInt](./gss_s_context_expired.md)
   Expired context.
-- [var GSS_S_FAILURE: UInt](gss_s_failure.md)
+- [var GSS_S_FAILURE: UInt](./gss_s_failure.md)
   An unspecified error.
-- [var GSS_S_BAD_QOP: UInt](gss_s_bad_qop.md)
+- [var GSS_S_BAD_QOP: UInt](./gss_s_bad_qop.md)
   Unsupported QOP value.
-- [var GSS_S_UNAUTHORIZED: UInt](gss_s_unauthorized.md)
+- [var GSS_S_UNAUTHORIZED: UInt](./gss_s_unauthorized.md)
   Unauthorized operation.
 
 

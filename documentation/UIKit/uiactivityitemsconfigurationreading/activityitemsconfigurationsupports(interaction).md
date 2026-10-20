@@ -1,7 +1,8 @@
 # activityItemsConfigurationSupports(interaction:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the activity items configuration supports the specified type of interaction.
 
@@ -17,9 +18,14 @@ Returns a Boolean value that indicates whether the activity items configuration 
 optional func activityItemsConfigurationSupports(interaction: UIActivityItemsConfigurationInteraction) -> Bool
 ```
 
+```objc
+- (BOOL) activityItemsConfigurationSupportsInteraction:(UIActivityItemsConfigurationInteraction) interaction;
+```
+
 ## See Also
 
-- [struct UIActivityItemsConfigurationInteraction](uiactivityitemsconfigurationinteraction.md)
+### Managing Supported Interactions
+- [struct UIActivityItemsConfigurationInteraction](../uiactivityitemsconfigurationinteraction.md)
   A structure that describes types of interactions.
 
 

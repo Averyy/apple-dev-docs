@@ -2,6 +2,7 @@
 
 **Framework**: Apple CryptoKit  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The number of bytes that represents the hash function’s internal state.

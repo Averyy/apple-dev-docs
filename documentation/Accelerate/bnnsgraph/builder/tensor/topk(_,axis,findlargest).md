@@ -1,7 +1,8 @@
 # topK(_:axis:findLargest:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a top-k operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a top-k operation to the current graph.
 ```swift
 func topK(_ k: Int, axis: Int, findLargest: Bool) -> (values: BNNSGraph.Builder.Tensor<T>, indices: BNNSGraph.Builder.Tensor<Int32>)
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 #### Discussion
 

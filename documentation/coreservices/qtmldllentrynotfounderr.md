@@ -1,7 +1,8 @@
 # qtmlDllEntryNotFoundErr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Windows error returned when the QuickTime Media Layer is loading. 
 

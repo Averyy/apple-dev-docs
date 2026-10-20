@@ -1,16 +1,21 @@
 # kAudioObjectSystemObject
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var kAudioObjectSystemObject: Int32 { get }
+```
+
+```c
+kAudioObjectSystemObject
 ```
 
 

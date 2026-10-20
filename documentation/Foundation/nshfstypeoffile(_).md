@@ -1,7 +1,8 @@
 # NSHFSTypeOfFile(_:)
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a string encoding a file type.
 
@@ -15,6 +16,10 @@ Returns a string encoding a file type.
 func NSHFSTypeOfFile(_ fullFilePath: String!) -> String!
 ```
 
+```c
+extern NSString *NSHFSTypeOfFile(NSString *fullFilePath);
+```
+
 #### Return Value
 
 A string that encodes `fullFilePath`’s HFS file type, or `nil` if the operation was not successful
@@ -25,9 +30,10 @@ A string that encodes `fullFilePath`’s HFS file type, or `nil` if the operatio
 
 ## See Also
 
-- [func NSFileTypeForHFSTypeCode(OSType) -> String!](nsfiletypeforhfstypecode(_:).md)
+### Working with HFS file types
+- [func NSFileTypeForHFSTypeCode(OSType) -> String!](./nsfiletypeforhfstypecode%28_%29.md)
   Returns a string encoding a file type code.
-- [func NSHFSTypeCodeFromFileType(String!) -> OSType](nshfstypecodefromfiletype(_:).md)
+- [func NSHFSTypeCodeFromFileType(String!) -> OSType](./nshfstypecodefromfiletype%28_%29.md)
   Returns a file type code.
 
 

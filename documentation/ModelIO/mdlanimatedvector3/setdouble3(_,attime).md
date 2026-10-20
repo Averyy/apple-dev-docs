@@ -1,7 +1,8 @@
 # setDouble3(_:atTime:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func setDouble3(_ value: vector_double3, atTime time: TimeInterval)
+```
+
+```objc
+- (void) setDouble3:(vector_double3) value atTime:(NSTimeInterval) time;
 ```
 
 

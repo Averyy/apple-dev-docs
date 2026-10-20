@@ -1,7 +1,8 @@
 # init(identifiers:classifyingLabels:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a metadata collector to access a stream’s metadata groups matching the specified array of identifiers and classifying labels.
 
@@ -18,6 +19,10 @@ Creates a metadata collector to access a stream’s metadata groups matching the
 
 ```swift
 init(identifiers: [String]?, classifyingLabels: [String]?)
+```
+
+```objc
+- (instancetype) initWithIdentifiers:(NSArray<NSString *> *) identifiers classifyingLabels:(NSArray<NSString *> *) classifyingLabels;
 ```
 
 #### Return Value

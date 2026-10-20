@@ -1,7 +1,8 @@
 # init(descriptor:vendorID:productID:transport:product:manufacturer:modelNumber:versionNumber:serialNumber:uniqueID:locationID:localizationCode:extraProperties:)
 
 **Framework**: Core HID  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a set of properties for a virtual device.
 
@@ -16,26 +17,26 @@ init(descriptor: Data, vendorID: UInt32, productID: UInt32? = nil, transport: HI
 
 ## Mentions
 
-- [Creating virtual devices](creatingvirtualdevices.md)
+- [Creating virtual devices](../../creatingvirtualdevices.md)
 
 #### Discussion
 
-Properties must be specified during the creation of a virtual device using [`init(properties:)`](hidvirtualdevice/init(properties:).md).
+Properties must be specified during the creation of a virtual device using [`init(properties:)`](../init%28properties%29.md).
 
 ## Parameters
 
-- `descriptor`: See [`descriptor`](hidvirtualdevice/properties/descriptor.md).
-- `vendorID`: See [`vendorID`](hidvirtualdevice/properties/vendorid.md).
-- `productID`: See [`productID`](hidvirtualdevice/properties/productid.md).
-- `transport`: See [`transport`](hidvirtualdevice/properties/transport.md).
-- `product`: See [`product`](hidvirtualdevice/properties/product.md).
-- `manufacturer`: See [`manufacturer`](hidvirtualdevice/properties/manufacturer.md).
-- `modelNumber`: See [`modelNumber`](hidvirtualdevice/properties/modelnumber.md).
-- `versionNumber`: See [`versionNumber`](hidvirtualdevice/properties/versionnumber.md).
-- `serialNumber`: See [`serialNumber`](hidvirtualdevice/properties/serialnumber.md).
-- `uniqueID`: See [`uniqueID`](hidvirtualdevice/properties/uniqueid.md).
-- `locationID`: See [`locationID`](hidvirtualdevice/properties/locationid.md).
-- `localizationCode`: See [`localizationCode`](hidvirtualdevice/properties/localizationcode.md).
+- `descriptor`: See [`descriptor`](./descriptor.md).
+- `vendorID`: See [`vendorID`](./vendorid.md).
+- `productID`: See [`productID`](./productid.md).
+- `transport`: See [`transport`](./transport.md).
+- `product`: See [`product`](./product.md).
+- `manufacturer`: See [`manufacturer`](./manufacturer.md).
+- `modelNumber`: See [`modelNumber`](./modelnumber.md).
+- `versionNumber`: See [`versionNumber`](./versionnumber.md).
+- `serialNumber`: See [`serialNumber`](./serialnumber.md).
+- `uniqueID`: See [`uniqueID`](./uniqueid.md).
+- `locationID`: See [`locationID`](./locationid.md).
+- `localizationCode`: See [`localizationCode`](./localizationcode.md).
 - `extraProperties`: A catch-all for uncommon or device specific properties that aren’t listed above. This parameter is typically only for advanced users that need additional control over device functionality.
 
 

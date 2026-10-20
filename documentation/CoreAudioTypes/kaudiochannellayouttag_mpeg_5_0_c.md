@@ -1,7 +1,8 @@
 # kAudioChannelLayoutTag_MPEG_5_0_C
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An MPEG 5-channel, configuration C, audio layout.
 
@@ -20,6 +21,10 @@ An MPEG 5-channel, configuration C, audio layout.
 var kAudioChannelLayoutTag_MPEG_5_0_C: AudioChannelLayoutTag { get }
 ```
 
+```c
+kAudioChannelLayoutTag_MPEG_5_0_C
+```
+
 #### Discussion
 
 Your channels must be laid out in the following order:
@@ -32,35 +37,36 @@ Your channels must be laid out in the following order:
 
 ## See Also
 
-- [var kAudioChannelLayoutTag_MPEG_1_0: AudioChannelLayoutTag](kaudiochannellayouttag_mpeg_1_0.md)
+### MPEG Defined Layouts
+- [var kAudioChannelLayoutTag_MPEG_1_0: AudioChannelLayoutTag](./kaudiochannellayouttag_mpeg_1_0.md)
   An MPEG 1-channel audio layout.
-- [var kAudioChannelLayoutTag_MPEG_2_0: AudioChannelLayoutTag](kaudiochannellayouttag_mpeg_2_0.md)
+- [var kAudioChannelLayoutTag_MPEG_2_0: AudioChannelLayoutTag](./kaudiochannellayouttag_mpeg_2_0.md)
   An MPEG 2-channel audio layout.
-- [var kAudioChannelLayoutTag_MPEG_3_0_A: AudioChannelLayoutTag](kaudiochannellayouttag_mpeg_3_0_a.md)
+- [var kAudioChannelLayoutTag_MPEG_3_0_A: AudioChannelLayoutTag](./kaudiochannellayouttag_mpeg_3_0_a.md)
   An MPEG 3-channel, configuration A, audio layout.
-- [var kAudioChannelLayoutTag_MPEG_3_0_B: AudioChannelLayoutTag](kaudiochannellayouttag_mpeg_3_0_b.md)
+- [var kAudioChannelLayoutTag_MPEG_3_0_B: AudioChannelLayoutTag](./kaudiochannellayouttag_mpeg_3_0_b.md)
   An MPEG 3-channel, configuration B, audio layout.
-- [var kAudioChannelLayoutTag_MPEG_4_0_A: AudioChannelLayoutTag](kaudiochannellayouttag_mpeg_4_0_a.md)
+- [var kAudioChannelLayoutTag_MPEG_4_0_A: AudioChannelLayoutTag](./kaudiochannellayouttag_mpeg_4_0_a.md)
   An MPEG 4-channel, configuration A, audio layout.
-- [var kAudioChannelLayoutTag_MPEG_4_0_B: AudioChannelLayoutTag](kaudiochannellayouttag_mpeg_4_0_b.md)
+- [var kAudioChannelLayoutTag_MPEG_4_0_B: AudioChannelLayoutTag](./kaudiochannellayouttag_mpeg_4_0_b.md)
   An MPEG 4-channel, configuration B, audio layout
-- [var kAudioChannelLayoutTag_MPEG_5_0_A: AudioChannelLayoutTag](kaudiochannellayouttag_mpeg_5_0_a.md)
+- [var kAudioChannelLayoutTag_MPEG_5_0_A: AudioChannelLayoutTag](./kaudiochannellayouttag_mpeg_5_0_a.md)
   An MPEG 5-channel, configuration A, audio layout.
-- [var kAudioChannelLayoutTag_MPEG_5_0_B: AudioChannelLayoutTag](kaudiochannellayouttag_mpeg_5_0_b.md)
+- [var kAudioChannelLayoutTag_MPEG_5_0_B: AudioChannelLayoutTag](./kaudiochannellayouttag_mpeg_5_0_b.md)
   An MPEG 5-channel, configuration B, audio layout.
-- [var kAudioChannelLayoutTag_MPEG_5_0_D: AudioChannelLayoutTag](kaudiochannellayouttag_mpeg_5_0_d.md)
+- [var kAudioChannelLayoutTag_MPEG_5_0_D: AudioChannelLayoutTag](./kaudiochannellayouttag_mpeg_5_0_d.md)
   An MPEG 5-channel, configuration D, audio layout.
-- [var kAudioChannelLayoutTag_MPEG_5_0_E: AudioChannelLayoutTag](kaudiochannellayouttag_mpeg_5_0_e.md)
+- [var kAudioChannelLayoutTag_MPEG_5_0_E: AudioChannelLayoutTag](./kaudiochannellayouttag_mpeg_5_0_e.md)
   5 channels, L R Rls Rrs C
-- [var kAudioChannelLayoutTag_MPEG_5_1_A: AudioChannelLayoutTag](kaudiochannellayouttag_mpeg_5_1_a.md)
+- [var kAudioChannelLayoutTag_MPEG_5_1_A: AudioChannelLayoutTag](./kaudiochannellayouttag_mpeg_5_1_a.md)
   An MPEG 5.1-channel, configuration A, audio layout.
-- [var kAudioChannelLayoutTag_MPEG_5_1_B: AudioChannelLayoutTag](kaudiochannellayouttag_mpeg_5_1_b.md)
+- [var kAudioChannelLayoutTag_MPEG_5_1_B: AudioChannelLayoutTag](./kaudiochannellayouttag_mpeg_5_1_b.md)
   An MPEG 5.1-channel, configuration B, audio layout.
-- [var kAudioChannelLayoutTag_MPEG_5_1_C: AudioChannelLayoutTag](kaudiochannellayouttag_mpeg_5_1_c.md)
+- [var kAudioChannelLayoutTag_MPEG_5_1_C: AudioChannelLayoutTag](./kaudiochannellayouttag_mpeg_5_1_c.md)
   An MPEG 5.1-channel, configuration C, audio layout.
-- [var kAudioChannelLayoutTag_MPEG_5_1_D: AudioChannelLayoutTag](kaudiochannellayouttag_mpeg_5_1_d.md)
+- [var kAudioChannelLayoutTag_MPEG_5_1_D: AudioChannelLayoutTag](./kaudiochannellayouttag_mpeg_5_1_d.md)
   An MPEG 5.1-channel, configuration D, audio layout.
-- [var kAudioChannelLayoutTag_MPEG_5_1_E: AudioChannelLayoutTag](kaudiochannellayouttag_mpeg_5_1_e.md)
+- [var kAudioChannelLayoutTag_MPEG_5_1_E: AudioChannelLayoutTag](./kaudiochannellayouttag_mpeg_5_1_e.md)
   6 channels, L R Rls Rrs C LFE
 
 

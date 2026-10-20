@@ -1,7 +1,8 @@
 # init(handler:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button that invokes a handler when the user taps it.
 
@@ -14,6 +15,10 @@ Creates a button that invokes a handler when the user taps it.
 
 ```swift
 init(handler: ((CPButton) -> Void)? = nil)
+```
+
+```objc
+- (instancetype) initWithHandler:(void (^)(CPButton *contactButton)) handler;
 ```
 
 #### Return Value

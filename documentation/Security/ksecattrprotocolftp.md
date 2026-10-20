@@ -1,7 +1,8 @@
 # kSecAttrProtocolFTP
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 FTP protocol.
 
@@ -18,6 +19,10 @@ FTP protocol.
 
 ```swift
 let kSecAttrProtocolFTP: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolFTP;
 ```
 
 

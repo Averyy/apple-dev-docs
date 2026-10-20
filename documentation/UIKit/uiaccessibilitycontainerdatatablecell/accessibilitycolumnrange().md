@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the columns spanned by the cell.
@@ -19,17 +20,22 @@ Returns the columns spanned by the cell.
 func accessibilityColumnRange() -> NSRange
 ```
 
+```objc
+- (NSRange) accessibilityColumnRange;
+```
+
 #### Return Value
 
 The column or columns that the cell spans.
 
 #### Discussion
 
-Set the location of the range to the first column containing the cell. Use the length of the range to specify the number of columns that the cell spans. If you do not implement this method, the system assumes an initial index of [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound-9t5v2) and a length of `0`.
+Set the location of the range to the first column containing the cell. Use the length of the range to specify the number of columns that the cell spans. If you do not implement this method, the system assumes an initial index of [`NSNotFound`](../../Foundation/nsnotfound-9t5v2.md) and a length of `0`.
 
 ## See Also
 
-- [func accessibilityRowRange() -> NSRange](uiaccessibilitycontainerdatatablecell/accessibilityrowrange.md)
+### Getting the rows and columns
+- [func accessibilityRowRange() -> NSRange](./accessibilityrowrange%28%29.md)
   Returns the visible range of rows.
 
 

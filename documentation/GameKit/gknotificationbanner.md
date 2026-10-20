@@ -1,17 +1,20 @@
 # GKNotificationBanner
 
 **Framework**: GameKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A Game Center-style banner that displays a message to the local player.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 5.0+ - Deprecated in 17.0
+- iPadOS 5.0+ - Deprecated in 17.0
+- Mac Catalyst 13.1+ - Deprecated in 17.0
+- macOS 10.8+ - Deprecated in 14.0
+- tvOS 9.0+ - Deprecated in 16.1
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use [`UNNotificationRequest`](../UserNotifications/unnotificationrequest.md) or provide a custom interface instead.
 
 ## Declaration
 
@@ -19,11 +22,15 @@ A Game Center-style banner that displays a message to the local player.
 class GKNotificationBanner
 ```
 
+```objc
+@interface GKNotificationBanner : NSObject
+```
+
 #### Overview
 
 This class displays a message in a banner to the local player, similar to the banner that GameKit displays when a player earns an achievement. If the game is in the foreground, the banner appears immediately. If the game is in the background, the banner appears when the game becomes active.
 
-To display the banner with your message, use the [`show(withTitle:message:completionHandler:)`](gknotificationbanner/show(withtitle:message:completionhandler:).md) method. To specify a duration that GameKit presents the banner, use the [`show(withTitle:message:duration:completionHandler:)`](gknotificationbanner/show(withtitle:message:duration:completionhandler:).md) method instead. Optionally, pass these methods a completion handler that GameKit calls after it dismisses the banner.
+To display the banner with your message, use the [`show(withTitle:message:completionHandler:)`](./gknotificationbanner/show%28withtitle,message,completionhandler%29.md) method. To specify a duration that GameKit presents the banner, use the [`show(withTitle:message:duration:completionHandler:)`](./gknotificationbanner/show%28withtitle,message,duration,completionhandler%29.md) method instead. Optionally, pass these methods a completion handler that GameKit calls after it dismisses the banner.
 
 ```swift
 GKNotificationBanner.show(withTitle:"Hooray",
@@ -34,54 +41,55 @@ GKNotificationBanner.show(withTitle:"Hooray",
 ## Topics
 
 ### Displaying the Banner
-- [class func show(withTitle: String?, message: String?, completionHandler: (() -> Void)?)](gknotificationbanner/show(withtitle:message:completionhandler:).md)
+- [class func show(withTitle: String?, message: String?, completionHandler: (() -> Void)?)](./gknotificationbanner/show%28withtitle,message,completionhandler%29.md)
   Displays a banner with a title and message to the player.
-- [class func show(withTitle: String?, message: String?, duration: TimeInterval, completionHandler: (() -> Void)?)](gknotificationbanner/show(withtitle:message:duration:completionhandler:).md)
+- [class func show(withTitle: String?, message: String?, duration: TimeInterval, completionHandler: (() -> Void)?)](./gknotificationbanner/show%28withtitle,message,duration,completionhandler%29.md)
   Displays a banner to the player for a specified period of time.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class GKAchievementViewController](gkachievementviewcontroller.md)
-  An `GKAchievementViewController` object provides a standard user interface to display achievement progress for the local player. If the [`GKGameCenterViewController`](gkgamecenterviewcontroller.md) class is available, you should use it instead.
-- [class GKChallengeEventHandler](gkchallengeeventhandler.md)
+### Deprecated classes
+- [class GKAchievementViewController](./gkachievementviewcontroller.md)
+  An `GKAchievementViewController` object provides a standard user interface to display achievement progress for the local player. If the [`GKGameCenterViewController`](./gkgamecenterviewcontroller.md) class is available, you should use it instead.
+- [class GKChallengeEventHandler](./gkchallengeeventhandler.md)
   The `GKChallengeEventHandler` class is used to respond to events related to challenges sent or received by the local player.
-- [class GKChallengesViewController](gkchallengesviewcontroller.md)
-- [class GKChallenge](gkchallenge.md)
+- [class GKChallengesViewController](./gkchallengesviewcontroller.md)
+- [class GKChallenge](./gkchallenge.md)
   A challenge issued by the local player to another player.
-- [class GKScoreChallenge](gkscorechallenge.md)
+- [class GKScoreChallenge](./gkscorechallenge.md)
   A type of challenge where a player must beat the leaderboard score of another player.
-- [class GKAchievementChallenge](gkachievementchallenge.md)
+- [class GKAchievementChallenge](./gkachievementchallenge.md)
   A type of challenge where a player must earn another player’s achievement.
-- [class GKCloudPlayer](gkcloudplayer.md)
+- [class GKCloudPlayer](./gkcloudplayer.md)
   The object representing the currently signed-in iCloud user.
-- [class GKGameCenterViewController](gkgamecenterviewcontroller.md)
+- [class GKGameCenterViewController](./gkgamecenterviewcontroller.md)
   The dashboard that allows players to access their Game Center data in your game.
-- [class GKGameSession](gkgamesession.md)
+- [class GKGameSession](./gkgamesession.md)
   A game session you can use to save game data, invite other players, and create turn-based and real-time game apps.
-- [class GKGameSessionSharingViewController](gkgamesessionsharingviewcontroller.md)
+- [class GKGameSessionSharingViewController](./gkgamesessionsharingviewcontroller.md)
   A user interface you can use to invite other users into a tvOS game session.
-- [class GKFriendRequestComposeViewController](gkfriendrequestcomposeviewcontroller.md)
+- [class GKFriendRequestComposeViewController](./gkfriendrequestcomposeviewcontroller.md)
   Your game uses the `GKFriendRequestComposeViewController` class to present a screen that allows the local player to send friend requests to other players.
-- [class GKLeaderboardViewController](gkleaderboardviewcontroller.md)
-  The `GKLeaderboardViewController` class provides a standard user interface that displays leaderboard scores to the player. If the [`GKGameCenterViewController`](gkgamecenterviewcontroller.md) class is available, you should use it instead.
-- [class GKPeerPickerController](gkpeerpickercontroller.md)
+- [class GKLeaderboardViewController](./gkleaderboardviewcontroller.md)
+  The `GKLeaderboardViewController` class provides a standard user interface that displays leaderboard scores to the player. If the [`GKGameCenterViewController`](./gkgamecenterviewcontroller.md) class is available, you should use it instead.
+- [class GKPeerPickerController](./gkpeerpickercontroller.md)
   Provides a standard user interface to allow one iOS device to discover and connect to another.
-- [class GKScore](gkscore.md)
+- [class GKScore](./gkscore.md)
   An object containing information for a score that was earned by the player.
-- [class GKSession](gksession.md)
-  A [`GKSession`](gksession.md) object provides the ability to discover and connect to nearby iOS devices using Bluetooth or Wi-fi.
+- [class GKSession](./gksession.md)
+  A [`GKSession`](./gksession.md) object provides the ability to discover and connect to nearby iOS devices using Bluetooth or Wi-fi.
 
 
 ---

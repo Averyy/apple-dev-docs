@@ -1,7 +1,8 @@
 # CSUserQuery.UserInteractionKind.select
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -16,10 +17,15 @@
 case select
 ```
 
+```c
+CSUserInteractionSelect
+```
+
 ## See Also
 
-- [static var `default`: CSUserQuery.UserInteractionKind](csuserquery/userinteractionkind/default.md)
-- [CSUserQuery.UserInteractionKind.focus](csuserquery/userinteractionkind/focus.md)
+### Getting the interaction types
+- [static var `default`: CSUserQuery.UserInteractionKind](./default.md)
+- [CSUserQuery.UserInteractionKind.focus](./focus.md)
 
 
 ---

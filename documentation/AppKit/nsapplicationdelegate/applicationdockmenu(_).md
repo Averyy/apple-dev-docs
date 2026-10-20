@@ -1,18 +1,23 @@
 # applicationDockMenu(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the app’s dock menu.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 optional func applicationDockMenu(_ sender: NSApplication) -> NSMenu?
+```
+
+```objc
+- (NSMenu *) applicationDockMenu:(NSApplication *) sender;
 ```
 
 #### Return Value

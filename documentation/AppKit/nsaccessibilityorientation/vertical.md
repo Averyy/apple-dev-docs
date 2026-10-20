@@ -1,7 +1,8 @@
 # NSAccessibilityOrientation.vertical
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The element is oriented vertically.
 
@@ -14,11 +15,16 @@ The element is oriented vertically.
 case vertical
 ```
 
+```c
+NSAccessibilityOrientationVertical
+```
+
 ## See Also
 
-- [NSAccessibilityOrientation.unknown](nsaccessibilityorientation/unknown.md)
+### Constants
+- [NSAccessibilityOrientation.unknown](./unknown.md)
   The element has unknown orientation.
-- [NSAccessibilityOrientation.horizontal](nsaccessibilityorientation/horizontal.md)
+- [NSAccessibilityOrientation.horizontal](./horizontal.md)
   The element is oriented horizontally.
 
 

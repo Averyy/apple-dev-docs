@@ -1,16 +1,17 @@
 # shadowOnly
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -18,17 +19,22 @@
 static let shadowOnly: SCNMaterial.LightingModel
 ```
 
+```c
+extern SCNLightingModel const SCNLightingModelShadowOnly;
+```
+
 ## See Also
 
-- [static let blinn: SCNMaterial.LightingModel](scnmaterial/lightingmodel-swift.struct/blinn.md)
+### Type Properties
+- [static let blinn: SCNMaterial.LightingModel](./blinn.md)
   Shading that incorporates ambient, diffuse, and specular properties, where specular highlights are calculated using the Blinn-Phong  formula.
-- [static let constant: SCNMaterial.LightingModel](scnmaterial/lightingmodel-swift.struct/constant.md)
+- [static let constant: SCNMaterial.LightingModel](./constant.md)
   Uniform shading that incorporates ambient lighting only.
-- [static let lambert: SCNMaterial.LightingModel](scnmaterial/lightingmodel-swift.struct/lambert.md)
+- [static let lambert: SCNMaterial.LightingModel](./lambert.md)
   Shading that incorporates ambient and diffuse properties only.
-- [static let phong: SCNMaterial.LightingModel](scnmaterial/lightingmodel-swift.struct/phong.md)
+- [static let phong: SCNMaterial.LightingModel](./phong.md)
   Shading that incorporates ambient, diffuse, and specular properties, where specular highlights are calculated using the Phong  formula.
-- [static let physicallyBased: SCNMaterial.LightingModel](scnmaterial/lightingmodel-swift.struct/physicallybased.md)
+- [static let physicallyBased: SCNMaterial.LightingModel](./physicallybased.md)
   Shading based on a realistic abstraction of physical lights and materials.
 
 

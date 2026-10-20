@@ -1,16 +1,19 @@
 # MTRColorControlColorLoopUpdateFlags
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS 16.1+
-- iPadOS 16.1+
-- Mac Catalyst 16.1+
-- macOS 13.0+
-- tvOS 16.1+
-- visionOS 1.0+
-- watchOS 9.1+
+- iOS 16.1+ - Deprecated in 18.2
+- iPadOS 16.1+ - Deprecated in 18.2
+- Mac Catalyst 16.1+ - Deprecated in 18.2
+- macOS 13.0+ - Deprecated in 15.2
+- tvOS 16.1+ - Deprecated in 18.2
+- visionOS 1.0+ - Deprecated in 2.2
+- watchOS 9.1+ - Deprecated in 11.2
+
+> **Deprecated**: Please use MTRColorControlUpdateFlagsBitmap
 
 ## Declaration
 
@@ -18,27 +21,31 @@
 struct MTRColorControlColorLoopUpdateFlags
 ```
 
+```c
+enum MTRColorControlColorLoopUpdateFlags : uint8_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt8)](mtrcolorcontrolcolorloopupdateflags/init(rawvalue:).md)
+- [init(rawValue: UInt8)](./mtrcolorcontrolcolorloopupdateflags/init%28rawvalue%29.md)
 ### Type Properties
-- [static var updateAction: MTRColorControlColorLoopUpdateFlags](mtrcolorcontrolcolorloopupdateflags/updateaction.md)
-- [static var updateDirection: MTRColorControlColorLoopUpdateFlags](mtrcolorcontrolcolorloopupdateflags/updatedirection.md)
-- [static var updateStartHue: MTRColorControlColorLoopUpdateFlags](mtrcolorcontrolcolorloopupdateflags/updatestarthue.md)
-- [static var updateTime: MTRColorControlColorLoopUpdateFlags](mtrcolorcontrolcolorloopupdateflags/updatetime.md)
+- [static var updateAction: MTRColorControlColorLoopUpdateFlags](./mtrcolorcontrolcolorloopupdateflags/updateaction.md)
+- [static var updateDirection: MTRColorControlColorLoopUpdateFlags](./mtrcolorcontrolcolorloopupdateflags/updatedirection.md)
+- [static var updateStartHue: MTRColorControlColorLoopUpdateFlags](./mtrcolorcontrolcolorloopupdateflags/updatestarthue.md)
+- [static var updateTime: MTRColorControlColorLoopUpdateFlags](./mtrcolorcontrolcolorloopupdateflags/updatetime.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

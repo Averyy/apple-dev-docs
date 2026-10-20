@@ -1,7 +1,8 @@
 # CLAuthorizationStatus.authorizedAlways
 
 **Framework**: Core Location  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user authorized the app to start location services at any time.
 
@@ -19,21 +20,26 @@ The user authorized the app to start location services at any time.
 case authorizedAlways
 ```
 
+```c
+kCLAuthorizationStatusAuthorizedAlways
+```
+
 #### Discussion
 
 This authorization allows you to use all location services and receive location events whether or not your app is in use.
 
 ## See Also
 
-- [CLAuthorizationStatus.notDetermined](clauthorizationstatus/notdetermined.md)
+### Getting the authorization status
+- [CLAuthorizationStatus.notDetermined](./notdetermined.md)
   The user has not chosen whether the app can use location services.
-- [CLAuthorizationStatus.restricted](clauthorizationstatus/restricted.md)
+- [CLAuthorizationStatus.restricted](./restricted.md)
   The app is not authorized to use location services.
-- [CLAuthorizationStatus.denied](clauthorizationstatus/denied.md)
+- [CLAuthorizationStatus.denied](./denied.md)
   The user denied the use of location services for the app or they are disabled globally in Settings.
-- [static var authorized: CLAuthorizationStatus](clauthorizationstatus/authorized.md)
+- [static var authorized: CLAuthorizationStatus](./authorized.md)
   The user authorized the app to use location services.
-- [CLAuthorizationStatus.authorizedWhenInUse](clauthorizationstatus/authorizedwheninuse.md)
+- [CLAuthorizationStatus.authorizedWhenInUse](./authorizedwheninuse.md)
   The user authorized the app to start location services while it is in use.
 
 

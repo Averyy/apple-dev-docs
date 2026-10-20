@@ -1,7 +1,8 @@
 # HandleChangeScalarValue
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the slider control the scalar value is changing.
 
@@ -10,17 +11,17 @@ Tells the slider control the scalar value is changing.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t HandleChangeScalarValue(float in_scalar_value);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-The default implementation calls [`SetScalarValue`](iouseraudiolevelcontrol/setscalarvalue.md) and returns [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess). Subclass and override this method to handle changes to the stream format and return [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) upon success.
+The default implementation calls [`SetScalarValue`](./setscalarvalue.md) and returns [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md). Subclass and override this method to handle changes to the stream format and return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) upon success.
 
 ## Parameters
 
@@ -28,7 +29,8 @@ The default implementation calls [`SetScalarValue`](iouseraudiolevelcontrol/sets
 
 ## See Also
 
-- [HandleChangeDecibelValue](iouseraudiolevelcontrol/handlechangedecibelvalue.md)
+### Supporting Value Changes
+- [HandleChangeDecibelValue](./handlechangedecibelvalue.md)
   Tells the slider control the decibel value is changing.
 
 

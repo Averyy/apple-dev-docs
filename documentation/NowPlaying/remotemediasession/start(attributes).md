@@ -1,7 +1,8 @@
 # start(attributes:)
 
 **Framework**: Now Playing  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Starts a new remote session with the specified attributes.
 
@@ -23,9 +24,9 @@ A remote session instance.
 
 #### Discussion
 
-This method registers a session. The attributes are encoded and sent to your app extension, which creates the actual session using your [`RemoteMediaSessionExtension`](remotemediasessionextension.md) conformance.
+This method registers a session. The attributes are encoded and sent to your app extension, which creates the actual session using your [`RemoteMediaSessionExtension`](../remotemediasessionextension.md) conformance.
 
-> **Note**: [`RemoteMediaSessionError.internalFailure`](remotemediasessionerror/internalfailure.md) if the system couldn’t register the session. Also throws an encoding error if `attributes` isn’t encodable.
+> **Throws**: [`RemoteMediaSessionError.internalFailure`](../remotemediasessionerror/internalfailure.md) if the system couldn’t register the session. Also throws an encoding error if `attributes` isn’t encodable.
 
 ## Parameters
 

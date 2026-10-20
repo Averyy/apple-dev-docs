@@ -1,7 +1,8 @@
 # init(bounds:transform:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance with an optional bounding box and transform.
 
@@ -20,7 +21,7 @@ init(bounds: BoundingBox = BoundingBox.empty, transform: Transform = Transform.i
 ## Parameters
 
 - `bounds`: An optional bounding box to specify the size of the generated 3D model. If you don’t pass a value, the initializer sets the bounding box to .empty, which tells RealityKit to calculate the object’s size.
-- `transform`: An optional [`Transform`](transform.md) that RealityKit applies to the object after it’s created. Use this to scale, rotate, or move the object before the session publishes the [`PhotogrammetrySession.Output.requestComplete(_:_:)`](photogrammetrysession/output/requestcomplete(_:_:).md)
+- `transform`: An optional [`Transform`](../../../transform.md) that RealityKit applies to the object after it’s created. Use this to scale, rotate, or move the object before the session publishes the [`PhotogrammetrySession.Output.requestComplete(_:_:)`](../../output/requestcomplete%28_,_%29.md)
 
 
 ---

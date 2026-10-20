@@ -1,12 +1,13 @@
 # NSUserNotification.ActivationType.additionalActionClicked
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user clicked on the additional action button of the notification alert.
 
 **Availability**:
-- macOS 10.10+
+- macOS 10.10+ - Deprecated in 11.0
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The user clicked on the additional action button of the notification alert.
 case additionalActionClicked
 ```
 
+```c
+NSUserNotificationActivationTypeAdditionalActionClicked
+```
+
 ## See Also
 
-- [NSUserNotification.ActivationType.none](nsusernotification/activationtype-swift.enum/none.md)
+### Constants
+- [NSUserNotification.ActivationType.none](./none.md)
   The user did not interact with the notification alert.
-- [NSUserNotification.ActivationType.contentsClicked](nsusernotification/activationtype-swift.enum/contentsclicked.md)
+- [NSUserNotification.ActivationType.contentsClicked](./contentsclicked.md)
   The user clicked on the contents of the notification alert.
-- [NSUserNotification.ActivationType.actionButtonClicked](nsusernotification/activationtype-swift.enum/actionbuttonclicked.md)
+- [NSUserNotification.ActivationType.actionButtonClicked](./actionbuttonclicked.md)
   The user clicked on the action button of the notification alert.
-- [NSUserNotification.ActivationType.replied](nsusernotification/activationtype-swift.enum/replied.md)
+- [NSUserNotification.ActivationType.replied](./replied.md)
   The user replied to the notification.
 
 

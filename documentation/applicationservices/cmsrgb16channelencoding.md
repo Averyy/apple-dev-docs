@@ -1,7 +1,8 @@
 # cmSRGB16ChannelEncoding
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Used for sRGB64 encoding ( ±3.12 format)
 

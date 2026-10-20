@@ -1,7 +1,8 @@
 # FilePath
 
 **Framework**: System  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Represents a location in the file system.
 
@@ -35,149 +36,150 @@ let fd = try FileDescriptor.open(path, .writeOnly, options: .append)
 try fd.closeAfter { try fd.writeAll(message.utf8) }
 ```
 
-File paths conform to the [`Equatable`](https://developer.apple.com/documentation/swift/equatable) and [`Hashable`](https://developer.apple.com/documentation/swift/hashable) protocols by performing the protocols’ operations on their raw byte contents. This conformance allows file paths to be used, for example, as keys in a dictionary. However, the rules for path equivalence are file-system–specific and have additional considerations like case insensitivity, Unicode normalization, and symbolic links.
+File paths conform to the [`Equatable`](../Swift/equatable.md) and [`Hashable`](../Swift/hashable.md) protocols by performing the protocols’ operations on their raw byte contents. This conformance allows file paths to be used, for example, as keys in a dictionary. However, the rules for path equivalence are file-system–specific and have additional considerations like case insensitivity, Unicode normalization, and symbolic links.
 
 ## Topics
 
 ### Creating a File Path
-- [init()](filepath/init.md)
+- [init()](./filepath/init%28%29.md)
   Creates an empty, null-terminated path.
-- [init(stringLiteral: String)](filepath/init(stringliteral:).md)
+- [init(stringLiteral: String)](./filepath/init%28stringliteral%29.md)
   Creates a file path from a string literal.
 ### Working with File Paths
-- [var length: Int](filepath/length.md)
+- [var length: Int](./filepath/length.md)
   The length of the file path, excluding the null terminator.
-- [var description: String](filepath/description.md)
+- [var description: String](./filepath/description.md)
   A textual representation of the file path.
-- [var debugDescription: String](filepath/debugdescription.md)
+- [var debugDescription: String](./filepath/debugdescription.md)
   A textual representation of the file path, suitable for debugging.
 ### Interacting with C APIs
-- [func withCString<Result>((UnsafePointer<CChar>) throws -> Result) rethrows -> Result](filepath/withcstring(_:).md)
+- [func withCString<Result>((UnsafePointer<CChar>) throws -> Result) rethrows -> Result](./filepath/withcstring%28_%29.md)
   For backwards compatibility only. This function is equivalent to the preferred `withPlatformString`.
 ### Structures
-- [FilePath.Component](filepath/component.md)
+- [FilePath.Component](./filepath/component.md)
   Represents an individual, non-root component of a file path.
-- [FilePath.ComponentView](filepath/componentview.md)
+- [FilePath.ComponentView](./filepath/componentview.md)
   A bidirectional, range replaceable collection of the non-root components that make up a file path.
-- [FilePath.Root](filepath/root-swift.struct.md)
+- [FilePath.Root](./filepath/root-swift.struct.md)
   Represents a root of a file path.
 ### Initializers
-- [init?(URL)](filepath/init(_:)-2gkpw.md)
+- [init?(URL)](./filepath/init%28_%29-2gkpw.md)
   Creates a file path from a URL
-- [init(String)](filepath/init(_:)-61dsw.md)
+- [init(String)](./filepath/init%28_%29-61dsw.md)
   Creates a file path from a string.
-- [init(cString: [CChar])](filepath/init(cstring:)-2hetg.md)
-- [init(cString: String)](filepath/init(cstring:)-3xw0n.md)
-- [init(cString: UnsafePointer<CChar>)](filepath/init(cstring:)-5igtz.md)
+- [init(cString: [CChar])](./filepath/init%28cstring%29-2hetg.md)
+- [init(cString: String)](./filepath/init%28cstring%29-3xw0n.md)
+- [init(cString: UnsafePointer<CChar>)](./filepath/init%28cstring%29-5igtz.md)
   For backwards compatibility only. This initializer is equivalent to the preferred `FilePath(platformString:)`.
-- [init(cString: inout CChar)](filepath/init(cstring:)-8d3vx.md)
-- [init(platformString: inout CInterop.PlatformChar)](filepath/init(platformstring:)-4b3o6.md)
-- [init(platformString: UnsafePointer<CInterop.PlatformChar>)](filepath/init(platformstring:)-5o7oh.md)
+- [init(cString: inout CChar)](./filepath/init%28cstring%29-8d3vx.md)
+- [init(platformString: inout CInterop.PlatformChar)](./filepath/init%28platformstring%29-4b3o6.md)
+- [init(platformString: UnsafePointer<CInterop.PlatformChar>)](./filepath/init%28platformstring%29-5o7oh.md)
   Creates a file path by copying bytes from a null-terminated platform string.
-- [init(platformString: String)](filepath/init(platformstring:)-6i5cc.md)
-- [init(platformString: [CInterop.PlatformChar])](filepath/init(platformstring:)-8amn5.md)
+- [init(platformString: String)](./filepath/init%28platformstring%29-6i5cc.md)
+- [init(platformString: [CInterop.PlatformChar])](./filepath/init%28platformstring%29-8amn5.md)
   Creates a file path by copying bytes from a null-terminated platform string.
-- [init<C>(root: FilePath.Root?, C)](filepath/init(root:_:)-19uu0.md)
+- [init<C>(root: FilePath.Root?, C)](./filepath/init%28root,_%29-19uu0.md)
   Create a file path from a root and a collection of components.
-- [init(root: FilePath.Root?, FilePath.ComponentView.SubSequence)](filepath/init(root:_:)-19xzy.md)
+- [init(root: FilePath.Root?, FilePath.ComponentView.SubSequence)](./filepath/init%28root,_%29-19xzy.md)
   Create a file path from an optional root and a slice of another path’s components.
-- [init(root: FilePath.Root?, components: FilePath.Component...)](filepath/init(root:components:).md)
+- [init(root: FilePath.Root?, components: FilePath.Component...)](./filepath/init%28root,components%29.md)
   Create a file path from a root and any number of components.
 ### Instance Properties
-- [var components: FilePath.ComponentView](filepath/components.md)
+- [var components: FilePath.ComponentView](./filepath/components.md)
   View the non-root components that make up this path.
-- [var `extension`: String?](filepath/extension.md)
+- [var `extension`: String?](./filepath/extension.md)
   The extension of the file or directory last component.
-- [var isAbsolute: Bool](filepath/isabsolute.md)
+- [var isAbsolute: Bool](./filepath/isabsolute.md)
   Returns true if this path uniquely identifies the location of a file without reference to an additional starting location.
-- [var isEmpty: Bool](filepath/isempty.md)
+- [var isEmpty: Bool](./filepath/isempty.md)
   Whether this path is empty
-- [var isLexicallyNormal: Bool](filepath/islexicallynormal.md)
+- [var isLexicallyNormal: Bool](./filepath/islexicallynormal.md)
   Whether the path is in lexical-normal form, that is `.` and `..` components have been collapsed lexically (i.e. without following symlinks).
-- [var isRelative: Bool](filepath/isrelative.md)
+- [var isRelative: Bool](./filepath/isrelative.md)
   Returns true if this path is not absolute (see `isAbsolute`).
-- [var lastComponent: FilePath.Component?](filepath/lastcomponent.md)
+- [var lastComponent: FilePath.Component?](./filepath/lastcomponent.md)
   Returns the final component of the path. Returns `nil` if the path is empty or only contains a root.
-- [var root: FilePath.Root?](filepath/root-swift.property.md)
+- [var root: FilePath.Root?](./filepath/root-swift.property.md)
   Returns the root of a path if there is one, otherwise `nil`.
-- [var stem: String?](filepath/stem.md)
+- [var stem: String?](./filepath/stem.md)
   The non-extension portion of the file or directory last component.
-- [var string: String](filepath/string.md)
+- [var string: String](./filepath/string.md)
   Creates a string by interpreting the path’s content as UTF-8 on Unix and UTF-16 on Windows.
 ### Instance Methods
-- [func append<C>(C)](filepath/append(_:)-66nkr.md)
+- [func append<C>(C)](./filepath/append%28_%29-66nkr.md)
   Append `components` on to the end of this path.
-- [func append(String)](filepath/append(_:)-7ttzp.md)
+- [func append(String)](./filepath/append%28_%29-7ttzp.md)
   Append the contents of `other`, ignoring any spurious leading separators.
-- [func append(FilePath.Component)](filepath/append(_:)-8f41n.md)
+- [func append(FilePath.Component)](./filepath/append%28_%29-8f41n.md)
   Append a `component` on to the end of this path.
-- [func appending(String) -> FilePath](filepath/appending(_:)-1dtn3.md)
+- [func appending(String) -> FilePath](./filepath/appending%28_%29-1dtn3.md)
   Non-mutating version of `append(_:String)`.
-- [func appending(FilePath.Component) -> FilePath](filepath/appending(_:)-24s87.md)
+- [func appending(FilePath.Component) -> FilePath](./filepath/appending%28_%29-24s87.md)
   Non-mutating version of `append(_:Component)`.
-- [func appending<C>(C) -> FilePath](filepath/appending(_:)-60fwk.md)
+- [func appending<C>(C) -> FilePath](./filepath/appending%28_%29-60fwk.md)
   Non-mutating version of `append(_:C)`.
-- [func ends(with: FilePath) -> Bool](filepath/ends(with:).md)
+- [func ends(with: FilePath) -> Bool](./filepath/ends%28with%29.md)
   Returns whether `other` is a suffix of `self`, only considering whole path components.
-- [func lexicallyNormalize()](filepath/lexicallynormalize.md)
+- [func lexicallyNormalize()](./filepath/lexicallynormalize%28%29.md)
   Collapse `.` and `..` components lexically (i.e. without following symlinks).
-- [func lexicallyNormalized() -> FilePath](filepath/lexicallynormalized.md)
+- [func lexicallyNormalized() -> FilePath](./filepath/lexicallynormalized%28%29.md)
   Returns a copy of `self` in lexical-normal form, that is `.` and `..` components have been collapsed lexically (i.e. without following symlinks). See `lexicallyNormalize`
-- [func lexicallyResolving(FilePath) -> FilePath?](filepath/lexicallyresolving(_:).md)
+- [func lexicallyResolving(FilePath) -> FilePath?](./filepath/lexicallyresolving%28_%29.md)
   Create a new `FilePath` by resolving `subpath` relative to `self`, ensuring that the result is lexically contained within `self`.
-- [func push(FilePath)](filepath/push(_:).md)
+- [func push(FilePath)](./filepath/push%28_%29.md)
   If `other` does not have a root, append each component of `other`. If `other` has a root, replaces `self` with other.
-- [func pushing(FilePath) -> FilePath](filepath/pushing(_:).md)
+- [func pushing(FilePath) -> FilePath](./filepath/pushing%28_%29.md)
   Non-mutating version of `push()`.
-- [func removeAll(keepingCapacity: Bool)](filepath/removeall(keepingcapacity:).md)
+- [func removeAll(keepingCapacity: Bool)](./filepath/removeall%28keepingcapacity%29.md)
   Remove the contents of the path, keeping the null terminator.
-- [func removeLastComponent() -> Bool](filepath/removelastcomponent.md)
+- [func removeLastComponent() -> Bool](./filepath/removelastcomponent%28%29.md)
   In-place mutating variant of `removingLastComponent`.
-- [func removePrefix(FilePath) -> Bool](filepath/removeprefix(_:).md)
+- [func removePrefix(FilePath) -> Bool](./filepath/removeprefix%28_%29.md)
   If `prefix` is a prefix of `self`, removes it and returns `true`. Otherwise returns `false`.
-- [func removingLastComponent() -> FilePath](filepath/removinglastcomponent.md)
+- [func removingLastComponent() -> FilePath](./filepath/removinglastcomponent%28%29.md)
   Creates a new path with everything up to but not including `lastComponent`.
-- [func removingRoot() -> FilePath](filepath/removingroot.md)
+- [func removingRoot() -> FilePath](./filepath/removingroot%28%29.md)
   Creates a new path containing just the components, i.e. everything after `root`.
-- [func reserveCapacity(Int)](filepath/reservecapacity(_:).md)
+- [func reserveCapacity(Int)](./filepath/reservecapacity%28_%29.md)
   Reserve enough storage space to store `minimumCapacity` platform characters.
-- [func starts(with: FilePath) -> Bool](filepath/starts(with:).md)
+- [func starts(with: FilePath) -> Bool](./filepath/starts%28with%29.md)
   Returns whether `other` is a prefix of `self`, only considering whole path components.
-- [func stat(flags: Stat.Flags, retryOnInterrupt: Bool) throws(Errno) -> Stat](filepath/stat(flags:retryoninterrupt:).md)
+- [func stat(flags: Stat.Flags, retryOnInterrupt: Bool) throws(Errno) -> Stat](./filepath/stat%28flags,retryoninterrupt%29.md)
   Creates a `Stat` struct for the file referenced by this `FilePath` using the given `Flags`.
-- [func stat(followTargetSymlink: Bool, retryOnInterrupt: Bool) throws(Errno) -> Stat](filepath/stat(followtargetsymlink:retryoninterrupt:).md)
+- [func stat(followTargetSymlink: Bool, retryOnInterrupt: Bool) throws(Errno) -> Stat](./filepath/stat%28followtargetsymlink,retryoninterrupt%29.md)
   Creates a `Stat` struct for the file referenced by this `FilePath`.
-- [func stat(relativeTo: FileDescriptor, flags: Stat.Flags, retryOnInterrupt: Bool) throws(Errno) -> Stat](filepath/stat(relativeto:flags:retryoninterrupt:).md)
+- [func stat(relativeTo: FileDescriptor, flags: Stat.Flags, retryOnInterrupt: Bool) throws(Errno) -> Stat](./filepath/stat%28relativeto,flags,retryoninterrupt%29.md)
   Creates a `Stat` struct for the file referenced by this `FilePath` using the given `Flags`, including a `FileDescriptor` to resolve a relative path.
-- [func withPlatformString<Result>((UnsafePointer<CInterop.PlatformChar>) throws -> Result) rethrows -> Result](filepath/withplatformstring(_:).md)
+- [func withPlatformString<Result>((UnsafePointer<CInterop.PlatformChar>) throws -> Result) rethrows -> Result](./filepath/withplatformstring%28_%29.md)
   Calls the given closure with a pointer to the contents of the file path, represented as a null-terminated platform string.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](filepath/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](filepath/customstringconvertible-implementations.md)
-- [ExpressibleByStringLiteral Implementations](filepath/expressiblebystringliteral-implementations.md)
+- [CustomDebugStringConvertible Implementations](./filepath/customdebugstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./filepath/customstringconvertible-implementations.md)
+- [ExpressibleByStringLiteral Implementations](./filepath/expressiblebystringliteral-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../Swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct FileDescriptor](filedescriptor.md)
+### Files
+- [struct FileDescriptor](./filedescriptor.md)
   An abstract handle to an input or output data resource, such as a file or a socket.
-- [struct FilePermissions](filepermissions.md)
+- [struct FilePermissions](./filepermissions.md)
   The access permissions for a file.
 
 

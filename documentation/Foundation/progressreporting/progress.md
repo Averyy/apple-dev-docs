@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The progress object returned by the class.
@@ -21,13 +22,17 @@ The progress object returned by the class.
 var progress: Progress { get }
 ```
 
+```objc
+@property (readonly) NSProgress * progress;
+```
+
 #### Discussion
 
-The progress object is usually setup at class initialization time and updated as work is completed. The [`progress`](progressreporting/progress.md) property is set only once. If another progress object is needed the caller should create a new instance of the custom class to represent the work.
+The progress object is usually setup at class initialization time and updated as work is completed. The [`progress`](./progress.md) property is set only once. If another progress object is needed the caller should create a new instance of the custom class to represent the work.
 
 ##### Special Considerations
 
-The [`progress`](progressreporting/progress.md) property is only set once.
+The [`progress`](./progress.md) property is only set once.
 
 
 ---

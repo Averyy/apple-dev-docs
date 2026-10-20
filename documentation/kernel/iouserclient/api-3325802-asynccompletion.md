@@ -1,14 +1,15 @@
 # AsyncCompletion
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 void AsyncCompletion(OSAction *action, IOReturn status, const unsigned long long *asyncData, uint32_t asyncDataCount, OSDispatchMethod supermethod);
 ```
 

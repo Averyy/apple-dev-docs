@@ -1,7 +1,8 @@
 # Airline
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An airline’s name and identifier.
 
@@ -10,21 +11,24 @@ An airline’s name and identifier.
 
 ## Declaration
 
-```swift
+```
 object Airline
 ```
 
 ## Properties
 
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `Airline`
 - `iataCode` (string) *(required)*: The three-letter identifier of the airline.
+
+  **Allowed Values**: `/^[A-Z]{3}$/`
 - `name` (string) *(required)*: The name of the airline.
 
 ## See Also
 
-- [object Flight](flight.md)
+### Defining a Flight Reservation
+- [object Flight](./flight.md)
   Location and scheduling information for an airplane flight.
-- [object Airport](airport.md)
+- [object Airport](./airport.md)
   The name and location of an airport.
 
 

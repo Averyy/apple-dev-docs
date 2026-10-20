@@ -1,7 +1,8 @@
 # init(string:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a MAC address object from a specially formatted string.
 
@@ -14,6 +15,10 @@ Creates a MAC address object from a specially formatted string.
 convenience init?(string: String)
 ```
 
+```objc
+- (instancetype) initWithString:(NSString *) string;
+```
+
 #### Return Value
 
 A MAC address object with the specified value, or `nil` if the string is formatted incorrectly.
@@ -24,9 +29,10 @@ A MAC address object with the specified value, or `nil` if the string is formatt
 
 ## See Also
 
-- [class func randomLocallyAdministered() -> Self](vzmacaddress/randomlocallyadministered.md)
+### Creating a MAC address
+- [class func randomLocallyAdministered() -> Self](./randomlocallyadministered%28%29.md)
   Returns a valid, random, locally administered, unicast MAC address.
-- [init(ethernetAddress: ether_addr_t)](vzmacaddress/init(ethernetaddress:).md)
+- [init(ethernetAddress: ether_addr_t)](./init%28ethernetaddress%29.md)
   Creates a MAC address from the specified 48-bit Ethernet address.
 
 

@@ -1,15 +1,18 @@
 # MPMoviePlayerTimedMetadataKeyDataType
 
 **Framework**: Media Player  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The data type of the timed metadata.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
-- tvOS ?+
+- iOS 4.0+ - Deprecated in 9.0
+- iPadOS 4.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS - Deprecated in 9.0
+
+> **Deprecated**: Use AVFoundation.
 
 ## Declaration
 
@@ -17,15 +20,20 @@ The data type of the timed metadata.
 let MPMoviePlayerTimedMetadataKeyDataType: String
 ```
 
+```c
+extern NSString * const MPMoviePlayerTimedMetadataKeyDataType;
+```
+
 ## See Also
 
-- [let MPMoviePlayerTimedMetadataKeyName: String](mpmovieplayertimedmetadatakeyname.md)
+### Constants
+- [let MPMoviePlayerTimedMetadataKeyName: String](./mpmovieplayertimedmetadatakeyname.md)
   The name of the timed metadata key.
-- [let MPMoviePlayerTimedMetadataKeyInfo: String](mpmovieplayertimedmetadatakeyinfo.md)
+- [let MPMoviePlayerTimedMetadataKeyInfo: String](./mpmovieplayertimedmetadatakeyinfo.md)
   Arbitrary information about the timed metadata.
-- [let MPMoviePlayerTimedMetadataKeyMIMEType: String](mpmovieplayertimedmetadatakeymimetype.md)
+- [let MPMoviePlayerTimedMetadataKeyMIMEType: String](./mpmovieplayertimedmetadatakeymimetype.md)
   The MIME type for the timed metadata.
-- [let MPMoviePlayerTimedMetadataKeyLanguageCode: String](mpmovieplayertimedmetadatakeylanguagecode.md)
+- [let MPMoviePlayerTimedMetadataKeyLanguageCode: String](./mpmovieplayertimedmetadatakeylanguagecode.md)
   The metadata language, expressed using ISO 639-2, in a string object.
 
 

@@ -1,7 +1,8 @@
 # ModelDebugOptionsComponent.VisualizationMode.finalColor
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that displays the entity’s calculated color, ignoring transparency.
 
@@ -11,7 +12,7 @@ A mode that displays the entity’s calculated color, ignoring transparency.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ case finalColor
 
 #### Discussion
 
-Add a [`ModelDebugOptionsComponent`](modeldebugoptionscomponent.md) with a visualization mode of `finalColor` to an entity to tell RealityKit to draw that entity’s calculated surface color with no transparency. This option causes RealityKit to render the object as if it were fully opaque. For entities that don’t use transparency, this option has no affect.
+Add a [`ModelDebugOptionsComponent`](../../modeldebugoptionscomponent.md) with a visualization mode of `finalColor` to an entity to tell RealityKit to draw that entity’s calculated surface color with no transparency. This option causes RealityKit to render the object as if it were fully opaque. For entities that don’t use transparency, this option has no affect.
 
 Here’s how to enable final color visualization for an entity:
 
@@ -32,41 +33,42 @@ if let television = try? await ModelEntity(named: "tv_retro") {
 }
 ```
 
-| [`ModelDebugOptionsComponent.VisualizationMode.none`](modeldebugoptionscomponent/visualizationmode-swift.enum/none.md) | `finalColor` |
+| [`ModelDebugOptionsComponent.VisualizationMode.none`](./none.md) | `finalColor` |
 | --- | --- |
-| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a final color visualization, where every surface is fully opaque, and screen cannot be seen through the now opaque glass.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-finalColor.jpg) |
+| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a final color visualization, where every surface is fully opaque, and screen cannot be seen through the now opaque glass.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-finalColor.jpg) |
 
 ## See Also
 
-- [ModelDebugOptionsComponent.VisualizationMode.none](modeldebugoptionscomponent/visualizationmode-swift.enum/none.md)
+### Visualization modes
+- [ModelDebugOptionsComponent.VisualizationMode.none](./none.md)
   A mode that doesn’t display a visualization.
-- [ModelDebugOptionsComponent.VisualizationMode.normal](modeldebugoptionscomponent/visualizationmode-swift.enum/normal.md)
+- [ModelDebugOptionsComponent.VisualizationMode.normal](./normal.md)
   A mode that displays the normal vectors as a color.
-- [ModelDebugOptionsComponent.VisualizationMode.tangent](modeldebugoptionscomponent/visualizationmode-swift.enum/tangent.md)
+- [ModelDebugOptionsComponent.VisualizationMode.tangent](./tangent.md)
   A mode that displays the surface tangent vectors as a color.
-- [ModelDebugOptionsComponent.VisualizationMode.bitangent](modeldebugoptionscomponent/visualizationmode-swift.enum/bitangent.md)
+- [ModelDebugOptionsComponent.VisualizationMode.bitangent](./bitangent.md)
   A mode that displays the surface bitangent vectors as a color.
-- [ModelDebugOptionsComponent.VisualizationMode.baseColor](modeldebugoptionscomponent/visualizationmode-swift.enum/basecolor.md)
+- [ModelDebugOptionsComponent.VisualizationMode.baseColor](./basecolor.md)
   A mode that displays the entity’s base color with no lighting or material properties applied.
-- [ModelDebugOptionsComponent.VisualizationMode.textureCoordinates](modeldebugoptionscomponent/visualizationmode-swift.enum/texturecoordinates.md)
+- [ModelDebugOptionsComponent.VisualizationMode.textureCoordinates](./texturecoordinates.md)
   A mode that displays the texture coordinates as a color.
-- [ModelDebugOptionsComponent.VisualizationMode.finalAlpha](modeldebugoptionscomponent/visualizationmode-swift.enum/finalalpha.md)
+- [ModelDebugOptionsComponent.VisualizationMode.finalAlpha](./finalalpha.md)
   A mode that displays the entity’s calculated transparency as its surface color.
-- [ModelDebugOptionsComponent.VisualizationMode.roughness](modeldebugoptionscomponent/visualizationmode-swift.enum/roughness.md)
+- [ModelDebugOptionsComponent.VisualizationMode.roughness](./roughness.md)
   A mode that displays the shininess of a material as the surface color.
-- [ModelDebugOptionsComponent.VisualizationMode.metallic](modeldebugoptionscomponent/visualizationmode-swift.enum/metallic.md)
+- [ModelDebugOptionsComponent.VisualizationMode.metallic](./metallic.md)
   A mode that displays the reflectiveness of an entity as its surface color.
-- [ModelDebugOptionsComponent.VisualizationMode.ambientOcclusion](modeldebugoptionscomponent/visualizationmode-swift.enum/ambientocclusion.md)
+- [ModelDebugOptionsComponent.VisualizationMode.ambientOcclusion](./ambientocclusion.md)
   A mode that displays the calculated ambient occlusion value as the surface color.
-- [ModelDebugOptionsComponent.VisualizationMode.specular](modeldebugoptionscomponent/visualizationmode-swift.enum/specular.md)
+- [ModelDebugOptionsComponent.VisualizationMode.specular](./specular.md)
   A mode that displays en entity’s shininess as its surface color.
-- [ModelDebugOptionsComponent.VisualizationMode.emissive](modeldebugoptionscomponent/visualizationmode-swift.enum/emissive.md)
+- [ModelDebugOptionsComponent.VisualizationMode.emissive](./emissive.md)
   A mode that displays the emissive channel of a material as the surface color.
-- [ModelDebugOptionsComponent.VisualizationMode.clearcoat](modeldebugoptionscomponent/visualizationmode-swift.enum/clearcoat.md)
+- [ModelDebugOptionsComponent.VisualizationMode.clearcoat](./clearcoat.md)
   A mode that displays the clearcoat channel of a material as the surface color.
-- [ModelDebugOptionsComponent.VisualizationMode.clearcoatNormal](modeldebugoptionscomponent/visualizationmode-swift.enum/clearcoatnormal.md)
+- [ModelDebugOptionsComponent.VisualizationMode.clearcoatNormal](./clearcoatnormal.md)
   A mode that displays the clearcoat normal of a material as the surface color.
-- [ModelDebugOptionsComponent.VisualizationMode.clearcoatRoughness](modeldebugoptionscomponent/visualizationmode-swift.enum/clearcoatroughness.md)
+- [ModelDebugOptionsComponent.VisualizationMode.clearcoatRoughness](./clearcoatroughness.md)
   A mode that displays the clearcoat roughness channel of a material as the surface color.
 
 

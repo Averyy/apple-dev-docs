@@ -1,7 +1,8 @@
 # sectionInset
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The margins used to lay out content in a section.
 
@@ -9,7 +10,7 @@ The margins used to lay out content in a section.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ The margins used to lay out content in a section.
 var sectionInset: UIEdgeInsets { get set }
 ```
 
+```objc
+@property (nonatomic) UIEdgeInsets sectionInset;
+```
+
 #### Discussion
 
-If the delegate object does not implement the [`collectionView(_:layout:insetForSectionAt:)`](uicollectionviewdelegateflowlayout/collectionview(_:layout:insetforsectionat:).md) method, the flow layout uses the value in this property to set the margins for each section.
+If the delegate object does not implement the [`collectionView(_:layout:insetForSectionAt:)`](../uicollectionviewdelegateflowlayout/collectionview%28_,layout,insetforsectionat%29.md) method, the flow layout uses the value in this property to set the margins for each section.
 
 Section insets reflect the spacing at the outer edges of the section. The margins affect the initial position of the header view, the minimum space on either side of each line of items, and the distance from the last line to the footer view. The margin insets do not affect the size of the header and footer views in the non scrolling direction.
 
@@ -28,19 +33,20 @@ The default edge insets are all set to `0`.
 
 ## See Also
 
-- [var minimumLineSpacing: CGFloat](uicollectionviewflowlayout/minimumlinespacing.md)
+### Configuring item spacing
+- [var minimumLineSpacing: CGFloat](./minimumlinespacing.md)
   The minimum spacing to use between lines of items in the grid.
-- [var minimumInteritemSpacing: CGFloat](uicollectionviewflowlayout/minimuminteritemspacing.md)
+- [var minimumInteritemSpacing: CGFloat](./minimuminteritemspacing.md)
   The minimum spacing to use between items in the same row.
-- [var itemSize: CGSize](uicollectionviewflowlayout/itemsize.md)
+- [var itemSize: CGSize](./itemsize.md)
   The default size to use for cells.
-- [var estimatedItemSize: CGSize](uicollectionviewflowlayout/estimateditemsize.md)
+- [var estimatedItemSize: CGSize](./estimateditemsize.md)
   The estimated size of cells in the collection view.
-- [class let automaticSize: CGSize](uicollectionviewflowlayout/automaticsize.md)
+- [class let automaticSize: CGSize](./automaticsize.md)
   A placeholder size for self-sizing cells.
-- [var sectionInsetReference: UICollectionViewFlowLayout.SectionInsetReference](uicollectionviewflowlayout/sectioninsetreference-swift.property.md)
+- [var sectionInsetReference: UICollectionViewFlowLayout.SectionInsetReference](./sectioninsetreference-swift.property.md)
   The boundary that section insets are defined in relation to.
-- [UICollectionViewFlowLayout.SectionInsetReference](uicollectionviewflowlayout/sectioninsetreference-swift.enum.md)
+- [UICollectionViewFlowLayout.SectionInsetReference](./sectioninsetreference-swift.enum.md)
   Constants that describe the reference point of the section insets.
 
 

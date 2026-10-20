@@ -1,7 +1,8 @@
 # MaterialParameterTypes.FaceCulling.none
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system doesn’t cull polygons.
 
@@ -11,7 +12,7 @@ The system doesn’t cull polygons.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ case none
 
 ## See Also
 
-- [MaterialParameterTypes.FaceCulling.front](materialparametertypes/faceculling/front.md)
+### Face culling
+- [MaterialParameterTypes.FaceCulling.front](./front.md)
   The system culls front-facing polygons.
-- [MaterialParameterTypes.FaceCulling.back](materialparametertypes/faceculling/back.md)
+- [MaterialParameterTypes.FaceCulling.back](./back.md)
   The system culls back-facing polygons.
 
 

@@ -1,7 +1,8 @@
 # addTokenConfiguration(for:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a configuration object for a token with the token instance identifier you specify.
 
@@ -20,13 +21,17 @@ Creates a configuration object for a token with the token instance identifier yo
 func addTokenConfiguration(for instanceID: TKToken.InstanceID) -> TKToken.Configuration
 ```
 
+```objc
+- (TKTokenConfiguration *) addTokenConfigurationForTokenInstanceID:(TKTokenInstanceID) instanceID;
+```
+
 #### Return Value
 
 The configuration class for the token.
 
 #### Discussion
 
-This method adds the created configuration into the [`tokenConfigurations`](tktokendriver/configuration/tokenconfigurations.md) dictionary. Adding a configuration with an `instanceID` that already exists replaces the existing configuration with a new empty configuration.
+This method adds the created configuration into the [`tokenConfigurations`](./tokenconfigurations.md) dictionary. Adding a configuration with an `instanceID` that already exists replaces the existing configuration with a new empty configuration.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ This method adds the created configuration into the [`tokenConfigurations`](tkto
 
 ## See Also
 
-- [func removeTokenConfiguration(for: TKToken.InstanceID)](tktokendriver/configuration/removetokenconfiguration(for:).md)
+### Adding and Removing Configurations
+- [func removeTokenConfiguration(for: TKToken.InstanceID)](./removetokenconfiguration%28for%29.md)
   Removes a configuration for a token with the token instance identifier you specify.
 
 

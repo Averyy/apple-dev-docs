@@ -1,7 +1,8 @@
 # vmnet_enable_virtio_header_key
 
 **Framework**: vmnet  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Enable virtio headers in all packets.
 
@@ -15,11 +16,15 @@ Enable virtio headers in all packets.
 let vmnet_enable_virtio_header_key: UnsafePointer<CChar>
 ```
 
+```c
+extern const char * const vmnet_enable_virtio_header_key;
+```
+
 #### Discussion
 
-For more information, see [`5.1.6 Device Operation`](https://developer.apple.comhttps://docs.oasis-open.org/virtio/virtio/v1.1/virtio-v1.1.html) in the Virtio specification
+For more information, see [5.1.6 Device Operation](https://docs.oasis-open.org/virtio/virtio/v1.1/virtio-v1.1.html) in the Virtio specification
 
-You must not specify this property if [`vmnet_enable_checksum_offload_key`](vmnet_enable_checksum_offload_key.md) is specified.
+You must not specify this property if [`vmnet_enable_checksum_offload_key`](./vmnet_enable_checksum_offload_key.md) is specified.
 
 
 ---

@@ -1,7 +1,8 @@
 # searchableItemsDidUpdate(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the framework updated the specified items.
 
@@ -18,13 +19,17 @@ Tells the delegate that the framework updated the specified items.
 optional func searchableItemsDidUpdate(_ items: [CSSearchableItem])
 ```
 
+```objc
+- (void) searchableItemsDidUpdate:(NSArray<CSSearchableItem *> *) items;
+```
+
 ## Mentions
 
-- [Generating summary and priority data for indexed items](generating-summary-and-priority-data-for-indexed-items.md)
+- [Generating summary and priority data for indexed items](../generating-summary-and-priority-data-for-indexed-items.md)
 
 #### Discussion
 
-When the system updates properties of your searchable item’s [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md), it calls this method to notify you that the attributes changed. For example, it calls this method when summary or priority information from Apple Intelligence becomes available. For more information, see [`Generating summary and priority data for indexed items`](generating-summary-and-priority-data-for-indexed-items.md).
+When the system updates properties of your searchable item’s [`CSSearchableItemAttributeSet`](../cssearchableitemattributeset.md), it calls this method to notify you that the attributes changed. For example, it calls this method when summary or priority information from Apple Intelligence becomes available. For more information, see [Generating summary and priority data for indexed items](../generating-summary-and-priority-data-for-indexed-items.md).
 
 ## Parameters
 
@@ -32,9 +37,10 @@ When the system updates properties of your searchable item’s [`CSSearchableIte
 
 ## See Also
 
-- [func searchableIndex(CSSearchableIndex, reindexAllSearchableItemsWithAcknowledgementHandler: () -> Void)](cssearchableindexdelegate/searchableindex(_:reindexallsearchableitemswithacknowledgementhandler:).md)
+### Updating the index
+- [func searchableIndex(CSSearchableIndex, reindexAllSearchableItemsWithAcknowledgementHandler: () -> Void)](./searchableindex%28_,reindexallsearchableitemswithacknowledgementhandler%29.md)
   Tells the delegate to reindex all searchable data and clear all local state information.
-- [func searchableIndex(CSSearchableIndex, reindexSearchableItemsWithIdentifiers: [String], acknowledgementHandler: () -> Void)](cssearchableindexdelegate/searchableindex(_:reindexsearchableitemswithidentifiers:acknowledgementhandler:).md)
+- [func searchableIndex(CSSearchableIndex, reindexSearchableItemsWithIdentifiers: [String], acknowledgementHandler: () -> Void)](./searchableindex%28_,reindexsearchableitemswithidentifiers,acknowledgementhandler%29.md)
   Tells the delegate to reindex the searchable items associated with the specified identifiers.
 
 

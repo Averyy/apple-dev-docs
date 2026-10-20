@@ -1,7 +1,8 @@
 # PlayMediaIntentHandlingInvocationResponse
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The service’s response to a request to process a play media intent.
 
@@ -10,19 +11,24 @@ The service’s response to a request to process a play media intent.
 
 ## Declaration
 
-```swift
+```
 * PlayMediaIntentHandlingInvocationResponse
 ```
 
+
+
+**Allowed Types**: `PlayMediaIntentHandlingResolveMediaItemsInvocationResponse`, `PlayMediaIntentHandlingResolvePlayShuffledInvocationResponse`, `PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse`, `PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse`, `PlayMediaIntentHandlingResolveResumePlaybackInvocationResponse`, `PlayMediaIntentHandlingHandleInvocationResponse`, `ProtocolExceptionInvocationResponse`
+
 #### Discussion
 
-Allowed types: [`PlayMediaIntentHandlingResolveMediaItemsInvocationResponse`](playmediaintenthandlingresolvemediaitemsinvocationresponse.md), [`PlayMediaIntentHandlingResolvePlayShuffledInvocationResponse`](playmediaintenthandlingresolveplayshuffledinvocationresponse.md), [`PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse`](playmediaintenthandlingresolveplaybackqueuelocationinvocationresponse.md), [`PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse`](playmediaintenthandlingresolveplaybackrepeatmodeinvocationresponse.md), [`PlayMediaIntentHandlingResolveResumePlaybackInvocationResponse`](playmediaintenthandlingresolveresumeplaybackinvocationresponse.md), [`PlayMediaIntentHandlingHandleInvocationResponse`](playmediaintenthandlinghandleinvocationresponse.md), [`ProtocolExceptionInvocationResponse`](protocolexceptioninvocationresponse.md)
+Allowed types: [`PlayMediaIntentHandlingResolveMediaItemsInvocationResponse`](./playmediaintenthandlingresolvemediaitemsinvocationresponse.md), [`PlayMediaIntentHandlingResolvePlayShuffledInvocationResponse`](./playmediaintenthandlingresolveplayshuffledinvocationresponse.md), [`PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse`](./playmediaintenthandlingresolveplaybackqueuelocationinvocationresponse.md), [`PlayMediaIntentHandlingResolvePlaybackRepeatModeInvocationResponse`](./playmediaintenthandlingresolveplaybackrepeatmodeinvocationresponse.md), [`PlayMediaIntentHandlingResolveResumePlaybackInvocationResponse`](./playmediaintenthandlingresolveresumeplaybackinvocationresponse.md), [`PlayMediaIntentHandlingHandleInvocationResponse`](./playmediaintenthandlinghandleinvocationresponse.md), [`ProtocolExceptionInvocationResponse`](./protocolexceptioninvocationresponse.md)
 
 ## See Also
 
-- [object PlayMediaIntent](playmediaintent.md)
+### Processing a Play Media Intent
+- [object PlayMediaIntent](./playmediaintent.md)
   An object that describes the user’s request to play a media item.
-- [object PlayMediaIntentHandlingInvocation](playmediaintenthandlinginvocation.md)
+- [object PlayMediaIntentHandlingInvocation](./playmediaintenthandlinginvocation.md)
   A request to process a play media intent.
 
 

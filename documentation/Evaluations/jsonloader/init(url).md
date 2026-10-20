@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a loader backed by the JSON or JSONL file at the given URL.
 

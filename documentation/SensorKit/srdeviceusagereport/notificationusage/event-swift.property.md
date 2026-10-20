@@ -1,7 +1,8 @@
 # event
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The way that the user interacts with the notification.
 
@@ -16,11 +17,16 @@ The way that the user interacts with the notification.
 var event: SRDeviceUsageReport.NotificationUsage.Event { get }
 ```
 
+```objc
+@property (readonly) SRNotificationEvent event;
+```
+
 ## See Also
 
-- [var bundleIdentifier: String?](srdeviceusagereport/notificationusage/bundleidentifier.md)
+### Analyzing Notification Use
+- [var bundleIdentifier: String?](./bundleidentifier.md)
   The bundle identifier of the app that corresponds to the notification.
-- [SRDeviceUsageReport.NotificationUsage.Event](srdeviceusagereport/notificationusage/event-swift.enum.md)
+- [SRDeviceUsageReport.NotificationUsage.Event](./event-swift.enum.md)
   The ways that a user interacts with notifications.
 
 

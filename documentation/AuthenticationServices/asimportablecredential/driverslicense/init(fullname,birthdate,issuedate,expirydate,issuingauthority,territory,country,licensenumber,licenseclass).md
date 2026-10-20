@@ -1,7 +1,8 @@
 # init(fullName:birthDate:issueDate:expiryDate:issuingAuthority:territory:country:licenseNumber:licenseClass:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

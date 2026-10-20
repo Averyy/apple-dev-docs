@@ -1,7 +1,8 @@
 # PermissionChoice.Answer.approval
 
 **Framework**: PermissionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An approved permission response.
 
@@ -20,7 +21,8 @@ case approval
 
 ## See Also
 
-- [PermissionChoice.Answer.denial](permissionchoice/answer-swift.enum/denial.md)
+### Determining the permission request response
+- [PermissionChoice.Answer.denial](./denial.md)
   A denied permission response.
 
 

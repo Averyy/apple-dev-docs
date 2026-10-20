@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the shared storage manager instance.
 
@@ -16,6 +17,10 @@ Returns the shared storage manager instance.
 
 ```swift
 class func shared() -> AVAssetDownloadStorageManager
+```
+
+```objc
++ (AVAssetDownloadStorageManager *) sharedDownloadStorageManager;
 ```
 
 #### Return Value

@@ -1,14 +1,15 @@
 # kHIDUsage_BCS_GoodReadWhenToWrite
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_BCS_GoodReadWhenToWrite = 0x88
 ```
 

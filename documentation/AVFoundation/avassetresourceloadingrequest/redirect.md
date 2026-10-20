@@ -1,7 +1,8 @@
 # redirect
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An URL request instance if the loading request was redirected.
 
@@ -19,27 +20,32 @@ An URL request instance if the loading request was redirected.
 var redirect: URLRequest? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSURLRequest * redirect;
+```
+
 #### Discussion
 
-Set this property to an instance of [`NSURLRequest`](https://developer.apple.com/documentation/foundation/nsurlrequest) indicating a redirection of the loading request to another URL.
+Set this property to an instance of [`NSURLRequest`](../../Foundation/nsurlrequest.md) indicating a redirection of the loading request to another URL.
 
 If no redirection is needed, the value of this property must be `nil`, which is the default.
 
 ## See Also
 
-- [var request: URLRequest](avassetresourceloadingrequest/request.md)
+### Accessing the request data
+- [var request: URLRequest](./request.md)
   The URL request object for the resource.
-- [var requestor: AVAssetResourceLoadingRequestor](avassetresourceloadingrequest/requestor.md)
+- [var requestor: AVAssetResourceLoadingRequestor](./requestor.md)
   The asset resource requestor that made the request.
-- [var contentInformationRequest: AVAssetResourceLoadingContentInformationRequest?](avassetresourceloadingrequest/contentinformationrequest.md)
+- [var contentInformationRequest: AVAssetResourceLoadingContentInformationRequest?](./contentinformationrequest.md)
   The information for a requested resource.
-- [var dataRequest: AVAssetResourceLoadingDataRequest?](avassetresourceloadingrequest/datarequest.md)
+- [var dataRequest: AVAssetResourceLoadingDataRequest?](./datarequest.md)
   The range of requested resource data.
-- [func streamingContentKeyRequestData(forApp: Data, contentIdentifier: Data, options: [String : Any]?) throws -> Data](avassetresourceloadingrequest/streamingcontentkeyrequestdata(forapp:contentidentifier:options:).md)
+- [func streamingContentKeyRequestData(forApp: Data, contentIdentifier: Data, options: [String : Any]?) throws -> Data](./streamingcontentkeyrequestdata%28forapp,contentidentifier,options%29.md)
   Obtains key request data for a specific combination of application and content.
-- [func persistentContentKey(fromKeyVendorResponse: Data, options: [String : Any]?) throws -> Data](avassetresourceloadingrequest/persistentcontentkey(fromkeyvendorresponse:options:).md)
+- [func persistentContentKey(fromKeyVendorResponse: Data, options: [String : Any]?) throws -> Data](./persistentcontentkey%28fromkeyvendorresponse,options%29.md)
   Obtains a persistable content key from a context.
-- [let AVAssetResourceLoadingRequestStreamingContentKeyRequestRequiresPersistentKey: String](avassetresourceloadingrequeststreamingcontentkeyrequestrequirespersistentkey.md)
+- [let AVAssetResourceLoadingRequestStreamingContentKeyRequestRequiresPersistentKey: String](../avassetresourceloadingrequeststreamingcontentkeyrequestrequirespersistentkey.md)
   Specifies whether the content key request requires a persistable key to be returned from the key vendor.
 
 

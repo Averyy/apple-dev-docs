@@ -1,16 +1,21 @@
 # kAudioSliderControlClassID
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var kAudioSliderControlClassID: AudioClassID { get }
+```
+
+```c
+kAudioSliderControlClassID
 ```
 
 

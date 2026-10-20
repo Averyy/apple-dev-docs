@@ -1,7 +1,8 @@
 # resolveCounterRange(_:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resolves heap data on the CPU timeline.
 
@@ -21,11 +22,11 @@ func resolveCounterRange(_ range: Range<Int>) throws -> Data?
 
 #### Discussion
 
-This method resolves heap data in the CPU timeline. Your app needs to ensure the GPU work has completed in order to retrieve the data correctly. You can alternatively resolve the heap data in the GPU timeline by calling [`resolveCounterHeap(_:range:buffer:fenceToWait:fenceToUpdate:)`](mtl4commandbuffer/resolvecounterheap(_:range:buffer:fencetowait:fencetoupdate:).md).
+This method resolves heap data in the CPU timeline. Your app needs to ensure the GPU work has completed in order to retrieve the data correctly. You can alternatively resolve the heap data in the GPU timeline by calling [`resolveCounterHeap(_:range:buffer:fenceToWait:fenceToUpdate:)`](../mtl4commandbuffer/resolvecounterheap%28_,range,buffer,fencetowait,fencetoupdate%29.md).
 
 - Returns a newly allocated autoreleased NSData containing tightly packed resolved heap counter values.
 
-> **Note**: When resolving counters in the CPU timeline, signaling an instance of [`MTLSharedEvent`](mtlsharedevent.md) after any workloads write counters (and waiting on that signal on the CPU) is sufficient to ensure synchronization.
+> **Note**: When resolving counters in the CPU timeline, signaling an instance of [`MTLSharedEvent`](../mtlsharedevent.md) after any workloads write counters (and waiting on that signal on the CPU) is sufficient to ensure synchronization.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # SCPreferencesGetValue(_:_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the value associated with the specified preference key.
 
@@ -14,13 +15,17 @@ Retrieves the value associated with the specified preference key.
 func SCPreferencesGetValue(_ prefs: SCPreferences, _ key: CFString) -> CFPropertyList?
 ```
 
+```c
+CFPropertyListRefSCPreferencesGetValue(SCPreferencesRef prefs, CFStringRef key);
+```
+
 #### Return Value
 
 The value associated with the specified preference key (can be `NULL` if no value exists).
 
 #### Discussion
 
-To avoid inadvertantly reading stale data, first call [`SCPreferencesLock(_:_:)`](scpreferenceslock(_:_:).md) before calling this function.
+To avoid inadvertantly reading stale data, first call [`SCPreferencesLock(_:_:)`](./scpreferenceslock%28_,_%29.md) before calling this function.
 
 ## Parameters
 
@@ -29,11 +34,12 @@ To avoid inadvertantly reading stale data, first call [`SCPreferencesLock(_:_:)`
 
 ## See Also
 
-- [func SCPreferencesAddValue(SCPreferences, CFString, CFPropertyList) -> Bool](scpreferencesaddvalue(_:_:_:).md)
+### Adding, Getting, and Removing Values
+- [func SCPreferencesAddValue(SCPreferences, CFString, CFPropertyList) -> Bool](./scpreferencesaddvalue%28_,_,_%29.md)
   Associates the specified value with the specified preference key.
-- [func SCPreferencesSetValue(SCPreferences, CFString, CFPropertyList) -> Bool](scpreferencessetvalue(_:_:_:).md)
+- [func SCPreferencesSetValue(SCPreferences, CFString, CFPropertyList) -> Bool](./scpreferencessetvalue%28_,_,_%29.md)
   Updates the data associated with the specified preference key with the specified value.
-- [func SCPreferencesRemoveValue(SCPreferences, CFString) -> Bool](scpreferencesremovevalue(_:_:).md)
+- [func SCPreferencesRemoveValue(SCPreferences, CFString) -> Bool](./scpreferencesremovevalue%28_,_%29.md)
   Removes the data associated with the specified preference key.
 
 

@@ -1,7 +1,8 @@
 # webDomain
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the web domain that accumulated the activity.
 

@@ -1,7 +1,8 @@
 # didChangeAutomaticCapitalization
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didChangeAutomaticCapitalization: NotificationCenter.BaseMessageIdentifier<NSSpellChecker.DidChangeAutomaticCapitalizationMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSSpellChecker.DidChangeAutomaticCapitalizationMessage>`.
 
 
 ---

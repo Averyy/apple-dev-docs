@@ -1,7 +1,8 @@
 # UICellAccessory.CheckmarkOptions
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configuration options for a checkmark accessory.
 
@@ -10,7 +11,7 @@ Configuration options for a checkmark accessory.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,19 +22,20 @@ struct CheckmarkOptions
 ## Topics
 
 ### Creating configuration options
-- [init(isHidden: Bool?, reservedLayoutWidth: UICellAccessory.LayoutDimension?, tintColor: UIColor?)](uicellaccessory-swift.struct/checkmarkoptions/init(ishidden:reservedlayoutwidth:tintcolor:).md)
+- [init(isHidden: Bool?, reservedLayoutWidth: UICellAccessory.LayoutDimension?, tintColor: UIColor?)](./checkmarkoptions/init%28ishidden,reservedlayoutwidth,tintcolor%29.md)
   Creates a checkmark accessory options structure.
 ### Accessing configuration options
-- [var isHidden: Bool](uicellaccessory-swift.struct/checkmarkoptions/ishidden.md)
+- [var isHidden: Bool](./checkmarkoptions/ishidden.md)
   A Boolean value that determines whether the cell hides the accessory.
-- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](uicellaccessory-swift.struct/checkmarkoptions/reservedlayoutwidth.md)
+- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](./checkmarkoptions/reservedlayoutwidth.md)
   The layout width that the system reserves for the accessory, and then centers the accessory within.
-- [var tintColor: UIColor?](uicellaccessory-swift.struct/checkmarkoptions/tintcolor.md)
+- [var tintColor: UIColor?](./checkmarkoptions/tintcolor.md)
   The tint color to apply to the accessory.
 
 ## See Also
 
-- [static func checkmark(displayed: UICellAccessory.DisplayedState, options: UICellAccessory.CheckmarkOptions) -> UICellAccessory](uicellaccessory-swift.struct/checkmark(displayed:options:).md)
+### Creating a checkmark accessory
+- [static func checkmark(displayed: UICellAccessory.DisplayedState, options: UICellAccessory.CheckmarkOptions) -> UICellAccessory](./checkmark%28displayed,options%29.md)
   Creates a checkmark system accessory with the specified display state and configuration options.
 
 

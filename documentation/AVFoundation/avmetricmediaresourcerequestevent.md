@@ -1,7 +1,8 @@
 # AVMetricMediaResourceRequestEvent
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event that represents a media resource request.
 
@@ -20,49 +21,54 @@ An event that represents a media resource request.
 class AVMetricMediaResourceRequestEvent
 ```
 
+```objc
+@interface AVMetricMediaResourceRequestEvent : AVMetricEvent
+```
+
 ## Topics
 
 ### Inspecting the event
-- [var byteRange: NSRange](avmetricmediaresourcerequestevent/byterange.md)
-- [var errorEvent: AVMetricErrorEvent?](avmetricmediaresourcerequestevent/errorevent.md)
-- [var networkTransactionMetrics: URLSessionTaskMetrics?](avmetricmediaresourcerequestevent/networktransactionmetrics.md)
-- [var requestEndTime: Date](avmetricmediaresourcerequestevent/requestendtime.md)
-- [var requestStartTime: Date](avmetricmediaresourcerequestevent/requeststarttime.md)
-- [var responseEndTime: Date](avmetricmediaresourcerequestevent/responseendtime.md)
-- [var responseStartTime: Date](avmetricmediaresourcerequestevent/responsestarttime.md)
-- [var serverAddress: String?](avmetricmediaresourcerequestevent/serveraddress.md)
-- [var url: URL?](avmetricmediaresourcerequestevent/url.md)
-- [var wasReadFromCache: Bool](avmetricmediaresourcerequestevent/wasreadfromcache.md)
+- [var byteRange: NSRange](./avmetricmediaresourcerequestevent/byterange.md)
+- [var errorEvent: AVMetricErrorEvent?](./avmetricmediaresourcerequestevent/errorevent.md)
+- [var networkTransactionMetrics: URLSessionTaskMetrics?](./avmetricmediaresourcerequestevent/networktransactionmetrics.md)
+- [var requestEndTime: Date](./avmetricmediaresourcerequestevent/requestendtime.md)
+- [var requestStartTime: Date](./avmetricmediaresourcerequestevent/requeststarttime.md)
+- [var responseEndTime: Date](./avmetricmediaresourcerequestevent/responseendtime.md)
+- [var responseStartTime: Date](./avmetricmediaresourcerequestevent/responsestarttime.md)
+- [var serverAddress: String?](./avmetricmediaresourcerequestevent/serveraddress.md)
+- [var url: URL?](./avmetricmediaresourcerequestevent/url.md)
+- [var wasReadFromCache: Bool](./avmetricmediaresourcerequestevent/wasreadfromcache.md)
 
 ## Relationships
 
 ### Inherits From
-- [AVMetricEvent](avmetricevent.md)
+- [AVMetricEvent](./avmetricevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVMetricContentKeyRequestEvent](avmetriccontentkeyrequestevent.md)
+### HTTP Live Streaming
+- [class AVMetricContentKeyRequestEvent](./avmetriccontentkeyrequestevent.md)
   An event that represents a live streaming content key resource request.
-- [class AVMetricHLSMediaSegmentRequestEvent](avmetrichlsmediasegmentrequestevent.md)
+- [class AVMetricHLSMediaSegmentRequestEvent](./avmetrichlsmediasegmentrequestevent.md)
   An event that represents a live streaming media segment resource request.
-- [class AVMetricHLSPlaylistRequestEvent](avmetrichlsplaylistrequestevent.md)
+- [class AVMetricHLSPlaylistRequestEvent](./avmetrichlsplaylistrequestevent.md)
   An event that represents a live streaming playlist resource request.
-- [class AVMetricPlayerItemVariantSwitchStartEvent](avmetricplayeritemvariantswitchstartevent.md)
+- [class AVMetricPlayerItemVariantSwitchStartEvent](./avmetricplayeritemvariantswitchstartevent.md)
   An event that represents when the player attempts a variant switch.
-- [class AVMetricPlayerItemVariantSwitchEvent](avmetricplayeritemvariantswitchevent.md)
+- [class AVMetricPlayerItemVariantSwitchEvent](./avmetricplayeritemvariantswitchevent.md)
   An event that represents when the player completes a variant switch.
-- [class AVMetricMediaRendition](avmetricmediarendition.md)
+- [class AVMetricMediaRendition](./avmetricmediarendition.md)
 
 
 ---

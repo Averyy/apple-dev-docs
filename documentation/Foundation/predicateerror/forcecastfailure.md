@@ -1,7 +1,8 @@
 # forceCastFailure
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -20,9 +21,10 @@ static let forceCastFailure: PredicateError
 
 ## See Also
 
-- [static let forceUnwrapFailure: PredicateError](predicateerror/forceunwrapfailure.md)
-- [static let invalidInput: PredicateError](predicateerror/invalidinput.md)
-- [static let undefinedVariable: PredicateError](predicateerror/undefinedvariable.md)
+### Errors
+- [static let forceUnwrapFailure: PredicateError](./forceunwrapfailure.md)
+- [static let invalidInput: PredicateError](./invalidinput.md)
+- [static let undefinedVariable: PredicateError](./undefinedvariable.md)
 
 
 ---

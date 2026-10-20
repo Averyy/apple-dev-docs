@@ -1,14 +1,15 @@
 # processor_cpu_stat_data_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct processor_cpu_stat {
     ...
 } processor_cpu_stat_data_t;
@@ -17,15 +18,15 @@ typedef struct processor_cpu_stat {
 ## Topics
 
 ### Instance Properties
-- [data_ex_cnt](processor_cpu_stat_data_t/3609576-data_ex_cnt.md)
-- [instr_ex_cnt](processor_cpu_stat_data_t/3609577-instr_ex_cnt.md)
-- [ipi_cnt](processor_cpu_stat_data_t/3609578-ipi_cnt.md)
-- [irq_ex_cnt](processor_cpu_stat_data_t/3609579-irq_ex_cnt.md)
-- [timer_cnt](processor_cpu_stat_data_t/3609580-timer_cnt.md)
-- [unaligned_cnt](processor_cpu_stat_data_t/3609581-unaligned_cnt.md)
-- [undef_ex_cnt](processor_cpu_stat_data_t/3609582-undef_ex_cnt.md)
-- [vfp_cnt](processor_cpu_stat_data_t/3609583-vfp_cnt.md)
-- [vfp_shortv_cnt](processor_cpu_stat_data_t/3609584-vfp_shortv_cnt.md)
+- [data_ex_cnt](./processor_cpu_stat_data_t/api-3609576-data_ex_cnt.md)
+- [instr_ex_cnt](./processor_cpu_stat_data_t/api-3609577-instr_ex_cnt.md)
+- [ipi_cnt](./processor_cpu_stat_data_t/api-3609578-ipi_cnt.md)
+- [irq_ex_cnt](./processor_cpu_stat_data_t/api-3609579-irq_ex_cnt.md)
+- [timer_cnt](./processor_cpu_stat_data_t/api-3609580-timer_cnt.md)
+- [unaligned_cnt](./processor_cpu_stat_data_t/api-3609581-unaligned_cnt.md)
+- [undef_ex_cnt](./processor_cpu_stat_data_t/api-3609582-undef_ex_cnt.md)
+- [vfp_cnt](./processor_cpu_stat_data_t/api-3609583-vfp_cnt.md)
+- [vfp_shortv_cnt](./processor_cpu_stat_data_t/api-3609584-vfp_shortv_cnt.md)
 
 
 ---

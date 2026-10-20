@@ -1,6 +1,7 @@
 # Data Completeness and Corrections
 
-**Framework**: Analytics Reports
+**Framework**: Analytics Reports  
+**Role**: Article
 
 Understand how the Analytics Reports API provides complete data sets.
 
@@ -10,23 +11,23 @@ The Analytics Reports framework delivers new portions of report content as insta
 
 These reports use this data completeness approach:
 
-- [`AirPlay Errors`](airplay-errors.md)
-- [`AirPlay Performance`](airplay-performance.md)
-- [`App Clip Usage`](app-clip-usage.md)
-- [`App Crashes`](app-crashes.md)
-- [`App Installs Performance`](app-installs-performance.md)
-- [`App Sessions`](app-sessions.md)
-- [`App Store Discovery and Engagement`](app-store-discovery-and-engagement.md)
-- [`App Store Downloads`](app-download.md)
-- [`App Store Installations and Deletions`](app-installs.md)
-- [`App Store Opt-in`](app-store-opt-in.md)
-- [`App Store Pre-orders`](app-store-pre-order.md)
-- [`App Store Purchases`](app-store-purchase.md)
-- [`App Store Web Preview`](app-store-web-preview.md)
-- [`Browser Choice Screen Engagement (iOS versions before 18.2)`](browser-choice-screen-engagement.md)
-- [`Platform App Installs`](platform-app-installs.md)
-- [`Streaming Downloads Performance`](streaming-downloads-performance.md)
-- [`Streaming Playback Performance`](streaming-playback-performance.md)
+- [AirPlay Errors](./airplay-errors.md)
+- [AirPlay Performance](./airplay-performance.md)
+- [App Clip Usage](./app-clip-usage.md)
+- [App Crashes](./app-crashes.md)
+- [App Installs Performance](./app-installs-performance.md)
+- [App Sessions](./app-sessions.md)
+- [App Store Discovery and Engagement](./app-store-discovery-and-engagement.md)
+- [App Store Downloads](./app-download.md)
+- [App Store Installations and Deletions](./app-installs.md)
+- [App Store Opt-in](./app-store-opt-in.md)
+- [App Store Pre-orders](./app-store-pre-order.md)
+- [App Store Purchases](./app-store-purchase.md)
+- [App Store Web Preview](./app-store-web-preview.md)
+- [Browser Choice Screen Engagement (iOS versions before 18.2)](./browser-choice-screen-engagement.md)
+- [Platform App Installs](./platform-app-installs.md)
+- [Streaming Downloads Performance](./streaming-downloads-performance.md)
+- [Streaming Playback Performance](./streaming-playback-performance.md)
 
 > **Note**: For reports not listed here, see the Completeness section in each report.
 
@@ -42,7 +43,7 @@ Alternatively, you can choose to wait until data is finalized (see the Completen
 
 In reports with data from iPad, the Device column shows `iPad`, and the Platform version column shows `iOS` with the corresponding version number.
 
-#### Data Completeness for Daily Weekly and Monthly Reports
+#### Data completeness for daily, weekly, and monthly reports
 
 In this example the report has a completeness of two days. You can wait 2 days and download final complete daily set of records for Date of 2024-03-30 from the report instance with `processingDate` of 2024-04-01 and with daily `granularity`. The Daily, Weekly, and Monthly report tables below show what data you can expect in each `processingDate` and when you can expect to see complete data sets for a given date.
 
@@ -75,7 +76,8 @@ In this example the report has a completeness of two days. You can wait 2 days a
 
 ## See Also
 
-- [Protecting user privacy in report data](privacy.md)
+### Essentials
+- [Protecting user privacy in report data](./privacy.md)
   Understand measures that help protect user privacy.
 
 

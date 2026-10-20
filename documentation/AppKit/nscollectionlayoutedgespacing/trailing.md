@@ -1,7 +1,8 @@
 # trailing
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The trailing edge spacing value.
 
@@ -14,13 +15,18 @@ The trailing edge spacing value.
 var trailing: NSCollectionLayoutSpacing? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSCollectionLayoutSpacing * trailing;
+```
+
 ## See Also
 
-- [var leading: NSCollectionLayoutSpacing?](nscollectionlayoutedgespacing/leading.md)
+### Getting the edge spacing
+- [var leading: NSCollectionLayoutSpacing?](./leading.md)
   The leading edge spacing value.
-- [var top: NSCollectionLayoutSpacing?](nscollectionlayoutedgespacing/top.md)
+- [var top: NSCollectionLayoutSpacing?](./top.md)
   The top edge spacing value.
-- [var bottom: NSCollectionLayoutSpacing?](nscollectionlayoutedgespacing/bottom.md)
+- [var bottom: NSCollectionLayoutSpacing?](./bottom.md)
   The bottom edge spacing value.
 
 

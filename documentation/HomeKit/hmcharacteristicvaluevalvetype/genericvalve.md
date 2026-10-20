@@ -1,7 +1,8 @@
 # HMCharacteristicValueValveType.genericValve
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A generic valve.
 
@@ -19,13 +20,18 @@ A generic valve.
 case genericValve
 ```
 
+```c
+HMCharacteristicValueValveTypeGenericValve
+```
+
 ## See Also
 
-- [HMCharacteristicValueValveType.irrigation](hmcharacteristicvaluevalvetype/irrigation.md)
+### Valve Types
+- [HMCharacteristicValueValveType.irrigation](./irrigation.md)
   An irrigation valve.
-- [HMCharacteristicValueValveType.showerHead](hmcharacteristicvaluevalvetype/showerhead.md)
+- [HMCharacteristicValueValveType.showerHead](./showerhead.md)
   A shower head.
-- [HMCharacteristicValueValveType.waterFaucet](hmcharacteristicvaluevalvetype/waterfaucet.md)
+- [HMCharacteristicValueValveType.waterFaucet](./waterfaucet.md)
   A water faucet.
 
 

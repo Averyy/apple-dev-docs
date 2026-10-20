@@ -1,7 +1,8 @@
 # as(_:)
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Casts the raw value to the specified type.
 
@@ -30,7 +31,7 @@ let enumCase = MyEnumDefinition.makeCase("caseName")
 try enumCase.as(String.self) == "caseName"
 ```
 
-> **Note**: If the raw value cannot be represented as the target type.
+> **Throws**: If the raw value cannot be represented as the target type.
 
 
 ---

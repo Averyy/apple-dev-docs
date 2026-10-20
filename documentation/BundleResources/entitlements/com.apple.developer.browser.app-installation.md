@@ -1,7 +1,8 @@
 # com.apple.developer.browser.app-installation
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An entitlement that enables a browser to install alternative distribution apps from a website.
 
@@ -9,29 +10,33 @@ An entitlement that enables a browser to install alternative distribution apps f
 - iOS 17.4+
 - iPadOS 17.4+
 
+## Details
+
+- **Name**: `com.apple.developer.browser.app-installation`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 
 #### Discussion
 
-The system requires that your browser app have this entitlement to install alternative marketplace apps from a webpage using [`MarketplaceKit`](https://developer.apple.com/documentation/marketplacekit). Browser apps that render with either [`WebKit`](https://developer.apple.com/documentation/webkit) or [`BrowserEngineKit`](https://developer.apple.com/documentation/browserenginekit) need the entitlement. Apple enables it on your account along with the default browser entitlement ([`com.apple.developer.web-browser`](entitlements/com.apple.developer.web-browser.md)).
+The system requires that your browser app have this entitlement to install alternative marketplace apps from a webpage using [MarketplaceKit](../../MarketplaceKit/MarketplaceKit.md). Browser apps that render with either [WebKit](../../WebKit/WebKit.md) or [BrowserEngineKit](../../BrowserEngineKit/BrowserEngineKit.md) need the entitlement. Apple enables it on your account along with the default browser entitlement ([`com.apple.developer.web-browser`](./com.apple.developer.web-browser.md)).
 
-> ❗ **Important**:  Request the default browser entitlement by filling out the [`Default browser entitlement request form`](https://developer.apple.comhttps://developer.apple.com/contact/request/default-browser-entitlement/). In that form you can also request this entitlement. If you do that and your request for the default browser entitlement is accepted you get both the default browser entitlement and the app-installation entitlement for your browser app.
+> ❗ **Important**:  Request the default browser entitlement by filling out the [Default browser entitlement request form](https://developer.apple.com/contact/request/default-browser-entitlement/). In that form you can also request this entitlement. If you do that and your request for the default browser entitlement is accepted you get both the default browser entitlement and the app-installation entitlement for your browser app.
 
-Your browser app needs to enforce specific webpage criteria as part of using this entitlement. For more information, see [`Enabling alternative distribution app installation in a browser`](https://developer.apple.com/documentation/marketplacekit/enabling-alternative-distribution-app-installation-in-a-browser).
+Your browser app needs to enforce specific webpage criteria as part of using this entitlement. For more information, see [Enabling alternative distribution app installation in a browser](../../MarketplaceKit/enabling-alternative-distribution-app-installation-in-a-browser.md).
 
-If your account receives this entitlement, provision your app with the entitlement according to: [`Provisioning with managed capabilities`](https://developer.apple.comhttps://developer.apple.com/help/account/reference/provisioning-with-managed-capabilities/).
+If your account receives this entitlement, provision your app with the entitlement according to: [Provisioning with managed capabilities](https://developer.apple.com/help/account/reference/provisioning-with-managed-capabilities/).
 
 > **Note**:  This entitlement isn’t available for Enterprise or Developer ID distributed apps.
 
 ## See Also
 
-- [com.apple.developer.web-browser](entitlements/com.apple.developer.web-browser.md)
+### Web browsers
+- [com.apple.developer.web-browser](./com.apple.developer.web-browser.md)
   An entitlement that indicates whether the app can act as the user’s default web browser.
-- [com.apple.developer.web-browser.public-key-credential](entitlements/com.apple.developer.web-browser.public-key-credential.md)
+- [com.apple.developer.web-browser.public-key-credential](./com.apple.developer.web-browser.public-key-credential.md)
   An entitlement that lets your app make registration and assertion requests for passkeys and security keys for any relying party identifier.
 
 

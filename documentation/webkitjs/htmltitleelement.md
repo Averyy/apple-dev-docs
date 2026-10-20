@@ -1,7 +1,8 @@
 # HTMLTitleElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLTitleElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [text](htmltitleelement/1631117-text.md)
+- [text](./htmltitleelement/api-1631117-text.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

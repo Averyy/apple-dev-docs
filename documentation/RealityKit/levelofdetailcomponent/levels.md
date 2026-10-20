@@ -1,7 +1,8 @@
 # levels
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -19,7 +20,8 @@ var levels: [LevelOfDetailComponent.DetailLevel]
 
 ## See Also
 
-- [LevelOfDetailComponent.DetailLevel](levelofdetailcomponent/detaillevel.md)
+### Configuring detail levels
+- [LevelOfDetailComponent.DetailLevel](./detaillevel.md)
   An array of entities representing a single detail level. Entities within a level are shown or hidden together based on LOD selection.
 
 

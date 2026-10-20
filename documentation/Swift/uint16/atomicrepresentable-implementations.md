@@ -1,16 +1,17 @@
 # AtomicRepresentable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [typealias AtomicRepresentation](uint16/atomicrepresentation.md)
+- [typealias AtomicRepresentation](./atomicrepresentation.md)
   The storage representation type that `Self` encodes to and decodes from which is a suitable type when used in atomic operations.
 ### Type Methods
-- [static func decodeAtomicRepresentation(consuming UInt16.AtomicRepresentation) -> UInt16](uint16/decodeatomicrepresentation(_:).md)
+- [static func decodeAtomicRepresentation(consuming UInt16.AtomicRepresentation) -> UInt16](./decodeatomicrepresentation%28_%29.md)
   Recovers the logical atomic type `Self` by destroying some `AtomicRepresentation` storage instance returned from an atomic operation.
-- [static func encodeAtomicRepresentation(borrowing UInt16) -> UInt16.AtomicRepresentation](uint16/encodeatomicrepresentation(_:).md)
+- [static func encodeAtomicRepresentation(borrowing UInt16) -> UInt16.AtomicRepresentation](./encodeatomicrepresentation%28_%29.md)
   Destroys a value of `Self` and prepares an `AtomicRepresentation` storage type to be used for atomic operations.
 
 

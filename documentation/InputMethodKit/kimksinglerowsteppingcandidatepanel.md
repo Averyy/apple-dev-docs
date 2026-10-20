@@ -1,7 +1,8 @@
 # kIMKSingleRowSteppingCandidatePanel
 
 **Framework**: InputMethodKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.5+
@@ -12,14 +13,19 @@
 var kIMKSingleRowSteppingCandidatePanel: Int { get }
 ```
 
+```c
+kIMKSingleRowSteppingCandidatePanel
+```
+
 #### Discussion
 
 A window that displays a single row.
 
 ## See Also
 
-- [var kIMKSingleColumnScrollingCandidatePanel: Int](kimksinglecolumnscrollingcandidatepanel.md)
-- [var kIMKScrollingGridCandidatePanel: Int](kimkscrollinggridcandidatepanel.md)
+### Constants
+- [var kIMKSingleColumnScrollingCandidatePanel: Int](./kimksinglecolumnscrollingcandidatepanel.md)
+- [var kIMKScrollingGridCandidatePanel: Int](./kimkscrollinggridcandidatepanel.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # HKMetadataKeyAlpineSlopeGrade
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that indicates the percent slope of a ski run.
 
@@ -19,21 +20,26 @@ A key that indicates the percent slope of a ski run.
 let HKMetadataKeyAlpineSlopeGrade: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyAlpineSlopeGrade;
+```
+
 ## Mentions
 
-- [Receiving Downhill Skiing and Snowboarding Data](receiving-downhill-skiing-and-snowboarding-data.md)
+- [Receiving Downhill Skiing and Snowboarding Data](./receiving-downhill-skiing-and-snowboarding-data.md)
 
 #### Discussion
 
-Set this key on quantity samples that represent distance, or on workout segments. Set its value to an [`HKQuantity`](hkquantity.md) object with a percent unit, where 100% indicates a 45 degree slope.
+Set this key on quantity samples that represent distance, or on workout segments. Set its value to an [`HKQuantity`](./hkquantity.md) object with a percent unit, where 100% indicates a 45 degree slope.
 
-HealthKit assigns this metadata key to the segments it automatically creates for [`HKWorkoutActivityType.downhillSkiing`](hkworkoutactivitytype/downhillskiing.md) and [`HKWorkoutActivityType.snowboarding`](hkworkoutactivitytype/snowboarding.md) workout sessions (Apple Watch Series 3 only).
+HealthKit assigns this metadata key to the segments it automatically creates for [`HKWorkoutActivityType.downhillSkiing`](./hkworkoutactivitytype/downhillskiing.md) and [`HKWorkoutActivityType.snowboarding`](./hkworkoutactivitytype/snowboarding.md) workout sessions (Apple Watch Series 3 only).
 
 ## See Also
 
-- [let HKMetadataKeyElevationAscended: String](hkmetadatakeyelevationascended.md)
+### Skiing and Snowboarding
+- [let HKMetadataKeyElevationAscended: String](./hkmetadatakeyelevationascended.md)
   A key that indicates the cumulative elevation ascended during a workout.
-- [let HKMetadataKeyElevationDescended: String](hkmetadatakeyelevationdescended.md)
+- [let HKMetadataKeyElevationDescended: String](./hkmetadatakeyelevationdescended.md)
   A key that indicates the cumulative elevation descended during a workout.
 
 

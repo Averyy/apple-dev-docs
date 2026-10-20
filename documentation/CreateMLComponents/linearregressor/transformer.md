@@ -1,7 +1,8 @@
 # LinearRegressor.Transformer
 
 **Framework**: Create ML Components  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The transformer type created by this estimator.
 
@@ -22,11 +23,12 @@ typealias Transformer = LinearRegressorModel<Scalar>
 
 ## See Also
 
-- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> LinearRegressorModel<Scalar>](linearregressor/fitted(to:eventhandler:).md)
+### Fitting
+- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> LinearRegressorModel<Scalar>](./fitted%28to,eventhandler%29.md)
   Fits a linear regressor model to a sequence of examples.
-- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> LinearRegressorModel<Scalar>](linearregressor/fitted(to:validateon:eventhandler:).md)
+- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> LinearRegressorModel<Scalar>](./fitted%28to,validateon,eventhandler%29.md)
   Fits a linear regressor model to a sequence of examples.
-- [LinearRegressor.Annotation](linearregressor/annotation.md)
+- [LinearRegressor.Annotation](./annotation.md)
   The annotation type.
 
 

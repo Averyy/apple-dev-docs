@@ -1,7 +1,8 @@
 # kSBCCmd_REASSIGN_BLOCKS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSBCCmd_REASSIGN_BLOCKS = 0x07
 ```
 

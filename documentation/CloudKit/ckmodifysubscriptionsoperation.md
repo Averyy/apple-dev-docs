@@ -1,7 +1,8 @@
 # CKModifySubscriptionsOperation
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An operation for modifying one or more subscriptions.
 
@@ -10,7 +11,7 @@ An operation for modifying one or more subscriptions.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 6.0+
 
@@ -20,52 +21,57 @@ An operation for modifying one or more subscriptions.
 class CKModifySubscriptionsOperation
 ```
 
+```objc
+@interface CKModifySubscriptionsOperation : CKDatabaseOperation
+```
+
 #### Overview
 
 After you create or change the configuration of a subscription, use this operation to save those changes to the server. You can also use this operation to permanently delete subscriptions.
 
-If you assign a handler to the [`completionBlock`](https://developer.apple.com/documentation/foundation/operation/completionblock) property, the operation calls it after it executes and passes it the results. Use the handler to perform any housekeeping tasks for the operation. The handler you specify should manage any failures, whether due to an error or an explicit cancellation.
+If you assign a handler to the [`completionBlock`](../Foundation/operation/completionblock.md) property, the operation calls it after it executes and passes it the results. Use the handler to perform any housekeeping tasks for the operation. The handler you specify should manage any failures, whether due to an error or an explicit cancellation.
 
 ## Topics
 
 ### Creating a Modify Subscriptions Operation
-- [convenience init(subscriptionsToSave: [CKSubscription]?, subscriptionIDsToDelete: [CKSubscription.ID]?)](ckmodifysubscriptionsoperation/init(subscriptionstosave:subscriptionidstodelete:).md)
+- [convenience init(subscriptionsToSave: [CKSubscription]?, subscriptionIDsToDelete: [CKSubscription.ID]?)](./ckmodifysubscriptionsoperation/init%28subscriptionstosave,subscriptionidstodelete%29.md)
   Creates an operation for saving and deleting the specified subscriptions.
-- [init()](ckmodifysubscriptionsoperation/init.md)
+- [init()](./ckmodifysubscriptionsoperation/init%28%29.md)
   Creates an empty modify subscriptions operation.
 ### Configuring the Modify Subscriptions Operation
-- [var subscriptionsToSave: [CKSubscription]?](ckmodifysubscriptionsoperation/subscriptionstosave.md)
+- [var subscriptionsToSave: [CKSubscription]?](./ckmodifysubscriptionsoperation/subscriptionstosave.md)
   The subscriptions to save to the database.
-- [var subscriptionIDsToDelete: [CKSubscription.ID]?](ckmodifysubscriptionsoperation/subscriptionidstodelete-3534e.md)
+- [var subscriptionIDsToDelete: [CKSubscription.ID]?](./ckmodifysubscriptionsoperation/subscriptionidstodelete-3534e.md)
   The IDs of the subscriptions that you want to delete.
 ### Processing the Modify Subscription Results
-- [var modifySubscriptionsCompletionBlock: (([CKSubscription]?, [CKSubscription.ID]?, (any Error)?) -> Void)?](ckmodifysubscriptionsoperation/modifysubscriptionscompletionblock-7l56.md)
+- [var modifySubscriptionsCompletionBlock: (([CKSubscription]?, [CKSubscription.ID]?, (any Error)?) -> Void)?](./ckmodifysubscriptionsoperation/modifysubscriptionscompletionblock-7l56.md)
   The closure to execute after the operation modifies the subscriptions.
 ### Instance Properties
-- [var modifySubscriptionsResultBlock: ((Result<Void, any Error>) -> Void)?](ckmodifysubscriptionsoperation/modifysubscriptionsresultblock.md)
+- [var modifySubscriptionsResultBlock: ((Result<Void, any Error>) -> Void)?](./ckmodifysubscriptionsoperation/modifysubscriptionsresultblock.md)
   The closure to execute after CloudKit modifies all of the subscriptions.
-- [var perSubscriptionDeleteBlock: ((CKSubscription.ID, Result<Void, any Error>) -> Void)?](ckmodifysubscriptionsoperation/persubscriptiondeleteblock-5ke2l.md)
+- [var perSubscriptionDeleteBlock: ((CKSubscription.ID, Result<Void, any Error>) -> Void)?](./ckmodifysubscriptionsoperation/persubscriptiondeleteblock-5ke2l.md)
   The closure to execute when CloudKit deletes a subscription.
-- [var perSubscriptionSaveBlock: ((CKSubscription.ID, Result<CKSubscription, any Error>) -> Void)?](ckmodifysubscriptionsoperation/persubscriptionsaveblock-8y9zn.md)
+- [var perSubscriptionSaveBlock: ((CKSubscription.ID, Result<CKSubscription, any Error>) -> Void)?](./ckmodifysubscriptionsoperation/persubscriptionsaveblock-8y9zn.md)
   The closure to execute when CloudKit saves a subscription.
 
 ## Relationships
 
 ### Inherits From
-- [CKDatabaseOperation](ckdatabaseoperation.md)
+- [CKDatabaseOperation](./ckdatabaseoperation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CKFetchSubscriptionsOperation](ckfetchsubscriptionsoperation.md)
+### Subscription Management
+- [class CKFetchSubscriptionsOperation](./ckfetchsubscriptionsoperation.md)
   An operation for fetching subscriptions.
 
 

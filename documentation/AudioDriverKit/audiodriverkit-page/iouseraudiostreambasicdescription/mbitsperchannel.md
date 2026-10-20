@@ -1,7 +1,8 @@
 # mBitsPerChannel
 
 **Framework**: AudioDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bits of sample data for each channel in a frame of data.
 
@@ -10,19 +11,20 @@ The number of bits of sample data for each channel in a frame of data.
 
 ## Declaration
 
-```swift
+```c
 uint32_t mBitsPerChannel;
 ```
 
 ## See Also
 
-- [mBytesPerPacket](audiodriverkit/iouseraudiostreambasicdescription/mbytesperpacket.md)
+### Accessing Packet and Frame Layout
+- [mBytesPerPacket](./mbytesperpacket.md)
   The byte count in each packet of data.
-- [mFramesPerPacket](audiodriverkit/iouseraudiostreambasicdescription/mframesperpacket.md)
+- [mFramesPerPacket](./mframesperpacket.md)
   The number of sample frames in each packet of data.
-- [mBytesPerFrame](audiodriverkit/iouseraudiostreambasicdescription/mbytesperframe.md)
+- [mBytesPerFrame](./mbytesperframe.md)
   The byte count in each frame of data.
-- [mChannelsPerFrame](audiodriverkit/iouseraudiostreambasicdescription/mchannelsperframe.md)
+- [mChannelsPerFrame](./mchannelsperframe.md)
   The number of channels in each frame of data.
 
 

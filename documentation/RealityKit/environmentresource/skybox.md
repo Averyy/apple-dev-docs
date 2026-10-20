@@ -1,7 +1,8 @@
 # skybox
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cube color texture that contains environment surrounding details, or a low-resolution proxy of the original skybox if the `EnvironmentResource` was created with `CreateOptions(skyboxMode: .discard)`.
 
@@ -22,7 +23,7 @@ The cube color texture that contains environment surrounding details, or a low-r
 
 #### Discussion
 
-The skybox contains the environment’s detailed surroundings as a cube texture, which you can use to render the background of a scene. The skybox texture determines the environment’s lighting. You can assign the skybox texture to a [`ShaderGraphMaterial`](shadergraphmaterial.md) cube texture parameter.
+The skybox contains the environment’s detailed surroundings as a cube texture, which you can use to render the background of a scene. The skybox texture determines the environment’s lighting. You can assign the skybox texture to a [`ShaderGraphMaterial`](../shadergraphmaterial.md) cube texture parameter.
 
 ```swift
 // Load an environment resource.

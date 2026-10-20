@@ -1,7 +1,8 @@
 # CiBuildRunCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request you use to start a new Xcode Cloud build.
 
@@ -10,16 +11,16 @@ The data element of the request you use to start a new Xcode Cloud build.
 
 ## Declaration
 
-```swift
+```
 object CiBuildRunCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object CiBuildRunCreateRequest.Data.Attributes](cibuildruncreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object CiBuildRunCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The attributes you set that describe the new Build Runs resource.
-- [object CiBuildRunCreateRequest.Data.Relationships](cibuildruncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object CiBuildRunCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
@@ -27,6 +28,8 @@ object CiBuildRunCreateRequest.Data
 - `attributes` (CiBuildRunCreateRequest.Data.Attributes): The attributes that describe the request that creates a Build Runs resource.
 - `relationships` (CiBuildRunCreateRequest.Data.Relationships): The types and IDs of the related data to update.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `ciBuildRuns`
 
 
 ---

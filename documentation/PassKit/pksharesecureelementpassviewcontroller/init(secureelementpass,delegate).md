@@ -1,7 +1,8 @@
 # init(secureElementPass:delegate:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
@@ -13,6 +14,10 @@
 
 ```swift
 init(secureElementPass pass: PKSecureElementPass, delegate: (any PKShareSecureElementPassViewControllerDelegate)?)
+```
+
+```objc
+- (instancetype) initWithSecureElementPass:(PKSecureElementPass *) pass delegate:(id<PKShareSecureElementPassViewControllerDelegate>) delegate;
 ```
 
 

@@ -10,39 +10,40 @@ As shaders grow in size, complexity, and scope, they often end up sharing utilit
 
 To avoid this problem, Metal offers dynamic libraries, similar to an LLVM dynamically shared library. Your app loads and compiles dynamic libraries for the device GPU once, the first time a shader requests them. Subsequent shader calls use these compiled utility functions instead of compiling a separate version of the same shader binary.
 
-To support Metal dynamic libraries in your app, call [`makeDynamicLibrary(library:)`](mtldevice/makedynamiclibrary(library:).md) with a dynamic library that you bundle as part of your app. Then add it to a pipeline descriptor’s dynamic library information through a property like [`preloadedLibraries`](mtlcomputepipelinedescriptor/preloadedlibraries.md).
+To support Metal dynamic libraries in your app, call [`makeDynamicLibrary(library:)`](./mtldevice/makedynamiclibrary%28library%29.md) with a dynamic library that you bundle as part of your app. Then add it to a pipeline descriptor’s dynamic library information through a property like [`preloadedLibraries`](./mtlcomputepipelinedescriptor/preloadedlibraries.md).
 
 ## Topics
 
 ### Working with Metal dynamic libraries
-- [Compiling and linking Metal dynamic libraries](compiling-and-linking-metal-dynamic-libraries.md)
+- [Compiling and linking Metal dynamic libraries](./compiling-and-linking-metal-dynamic-libraries.md)
   Build a Metal dynamic library from the command line, allowing for runtime loading of shared shaders.
-- [Creating a Metal dynamic library](creating-a-metal-dynamic-library.md)
+- [Creating a Metal dynamic library](./creating-a-metal-dynamic-library.md)
   Compile a library of shaders and write it to a file as a dynamically linked library.
 
 ## See Also
 
-- [Metal libraries](metal-libraries.md)
+### Shader compilation
+- [Metal libraries](./metal-libraries.md)
   Compile and manage Metal libraries from the command line.
-- [Metal binary archives](metal-binary-archives.md)
+- [Metal binary archives](./metal-binary-archives.md)
   Distribute precompiled GPU-specific binaries as part of your app to avoid runtime compilation of Metal shaders.
-- [protocol MTL4Compiler](mtl4compiler.md)
+- [protocol MTL4Compiler](./mtl4compiler.md)
   A abstraction for a pipeline state and shader function compiler.
-- [class MTL4CompilerDescriptor](mtl4compilerdescriptor.md)
+- [class MTL4CompilerDescriptor](./mtl4compilerdescriptor.md)
   Groups together properties for creating a compiler context.
-- [class MTL4CompilerTaskOptions](mtl4compilertaskoptions.md)
+- [class MTL4CompilerTaskOptions](./mtl4compilertaskoptions.md)
   The configuration options that control the behavior of a compilation task for a Metal 4 compiler instance.
-- [enum MTL4CompilerTaskStatus](mtl4compilertaskstatus.md)
+- [enum MTL4CompilerTaskStatus](./mtl4compilertaskstatus.md)
   Represents the status of a compiler task.
-- [protocol MTL4Archive](mtl4archive.md)
+- [protocol MTL4Archive](./mtl4archive.md)
   A read-only container that stores pipeline states from a shader compiler.
-- [protocol MTL4BinaryFunction](mtl4binaryfunction.md)
+- [protocol MTL4BinaryFunction](./mtl4binaryfunction.md)
   Represents a binary function.
-- [class MTL4BinaryFunctionDescriptor](mtl4binaryfunctiondescriptor.md)
+- [class MTL4BinaryFunctionDescriptor](./mtl4binaryfunctiondescriptor.md)
   Base interface for other function-derived interfaces.
-- [struct MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions.md)
+- [struct MTL4BinaryFunctionOptions](./mtl4binaryfunctionoptions.md)
   Options for configuring the creation of binary functions.
-- [class MTL4PipelineStageDynamicLinkingDescriptor](mtl4pipelinestagedynamiclinkingdescriptor.md)
+- [class MTL4PipelineStageDynamicLinkingDescriptor](./mtl4pipelinestagedynamiclinkingdescriptor.md)
   Groups together properties to drive the dynamic linking process of a pipeline stage.
 
 

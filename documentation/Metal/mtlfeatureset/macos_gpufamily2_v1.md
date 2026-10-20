@@ -1,17 +1,22 @@
 # MTLFeatureSet.macOS_GPUFamily2_v1
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The GPU family 2, version 1 feature set for macOS.
 
 **Availability**:
-- macOS 10.14+
+- macOS 10.14+ - Deprecated in 13.0
 
 ## Declaration
 
 ```swift
 case macOS_GPUFamily2_v1
+```
+
+```c
+MTLFeatureSet_macOS_GPUFamily2_v1
 ```
 
 #### Discussion

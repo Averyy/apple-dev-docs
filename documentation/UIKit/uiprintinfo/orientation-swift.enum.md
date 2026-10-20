@@ -1,7 +1,8 @@
 # UIPrintInfo.Orientation
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the orientation of printing on a page.
 
@@ -17,47 +18,52 @@ Constants that describe the orientation of printing on a page.
 enum Orientation
 ```
 
+```c
+enum UIPrintInfoOrientation : NSInteger;
+```
+
 #### Overview
 
-You use these constants when setting the value of the [`orientation`](uiprintinfo/orientation-swift.property.md) property of a `UIPrintInfo` object.
+You use these constants when setting the value of the [`orientation`](./orientation-swift.property.md) property of a `UIPrintInfo` object.
 
-> **Note**:  UIKit ignores the [`orientation`](uiprintinfo/orientation-swift.property.md) property when printable content is assigned to the `printingItem` or `printingItems` properties of the shared [`UIPrintInteractionController`](uiprintinteractioncontroller.md) object. It determines the orientation based on the type of content.
+> **Note**:  UIKit ignores the [`orientation`](./orientation-swift.property.md) property when printable content is assigned to the `printingItem` or `printingItems` properties of the shared [`UIPrintInteractionController`](../uiprintinteractioncontroller.md) object. It determines the orientation based on the type of content.
 
 ## Topics
 
 ### Constants
-- [UIPrintInfo.Orientation.portrait](uiprintinfo/orientation-swift.enum/portrait.md)
+- [UIPrintInfo.Orientation.portrait](./orientation-swift.enum/portrait.md)
   Pages are printed in portrait orientation.
-- [UIPrintInfo.Orientation.landscape](uiprintinfo/orientation-swift.enum/landscape.md)
+- [UIPrintInfo.Orientation.landscape](./orientation-swift.enum/landscape.md)
   Pages are printed in landscape orientation.
 ### Initializers
-- [init?(rawValue: Int)](uiprintinfo/orientation-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./orientation-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var duplex: UIPrintInfo.Duplex](uiprintinfo/duplex-swift.property.md)
+### Managing print-job attributes
+- [var duplex: UIPrintInfo.Duplex](./duplex-swift.property.md)
   The duplex mode to use for the print job.
-- [UIPrintInfo.Duplex](uiprintinfo/duplex-swift.enum.md)
+- [UIPrintInfo.Duplex](./duplex-swift.enum.md)
   Constants that describe the duplex mode of a selected printer.
-- [var jobName: String](uiprintinfo/jobname.md)
+- [var jobName: String](./jobname.md)
   The name of the print job.
-- [var orientation: UIPrintInfo.Orientation](uiprintinfo/orientation-swift.property.md)
+- [var orientation: UIPrintInfo.Orientation](./orientation-swift.property.md)
   The orientation of the printed content, portrait or landscape.
-- [var outputType: UIPrintInfo.OutputType](uiprintinfo/outputtype-swift.property.md)
+- [var outputType: UIPrintInfo.OutputType](./outputtype-swift.property.md)
   The kind of printable content.
-- [UIPrintInfo.OutputType](uiprintinfo/outputtype-swift.enum.md)
+- [UIPrintInfo.OutputType](./outputtype-swift.enum.md)
   Constants that describe the output type, which is an indication of the type of content the app is drawing or providing.
-- [var printerID: String?](uiprintinfo/printerid.md)
+- [var printerID: String?](./printerid.md)
   An identifier of the printer to use for the print job.
 
 

@@ -1,7 +1,8 @@
 # readerErrorParameterOutOfBound
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A parameter value is outside of the acceptable boundary.
 
@@ -18,15 +19,16 @@ static var readerErrorParameterOutOfBound: NFCReaderError.Code { get }
 
 ## See Also
 
-- [static var readerErrorUnsupportedFeature: NFCReaderError.Code](nfcreadererror-swift.struct/readererrorunsupportedfeature.md)
+### Other Errors
+- [static var readerErrorUnsupportedFeature: NFCReaderError.Code](./readererrorunsupportedfeature.md)
   The reader session does not support this feature.
-- [static var readerErrorInvalidParameter: NFCReaderError.Code](nfcreadererror-swift.struct/readererrorinvalidparameter.md)
+- [static var readerErrorInvalidParameter: NFCReaderError.Code](./readererrorinvalidparameter.md)
   An input parameter is invalid.
-- [static var readerErrorInvalidParameterLength: NFCReaderError.Code](nfcreadererror-swift.struct/readererrorinvalidparameterlength.md)
+- [static var readerErrorInvalidParameterLength: NFCReaderError.Code](./readererrorinvalidparameterlength.md)
   The length of an input parameter is invalid.
-- [static var readerErrorRadioDisabled: NFCReaderError.Code](nfcreadererror-swift.struct/readererrorradiodisabled.md)
+- [static var readerErrorRadioDisabled: NFCReaderError.Code](./readererrorradiodisabled.md)
   The NFC wireless radio on the device is disabled.
-- [static var readerErrorSecurityViolation: NFCReaderError.Code](nfcreadererror-swift.struct/readererrorsecurityviolation.md)
+- [static var readerErrorSecurityViolation: NFCReaderError.Code](./readererrorsecurityviolation.md)
   A security violation associated with the reader session has occurred.
 
 

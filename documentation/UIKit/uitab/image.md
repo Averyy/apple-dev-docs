@@ -1,7 +1,8 @@
 # image
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A tab’s image.
 
@@ -18,21 +19,26 @@ A tab’s image.
 var image: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIImage * image;
+```
+
 ## Mentions
 
-- [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
+- [Elevating your iPad app with a tab bar and sidebar](../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
 ## See Also
 
-- [var title: String](uitab/title.md)
+### Accessing a tab’s appearance
+- [var title: String](./title.md)
   A tab’s title.
-- [var subtitle: String?](uitab/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   A tab’s subtitle.
-- [var identifier: String](uitab/identifier.md)
+- [var identifier: String](./identifier.md)
   A string identifier for a tab.
-- [var badgeValue: String?](uitab/badgevalue.md)
+- [var badgeValue: String?](./badgevalue.md)
   A tab’s badge value.
-- [var viewController: UIViewController?](uitab/viewcontroller.md)
+- [var viewController: UIViewController?](./viewcontroller.md)
   The view controller that the system presents when someone selects a tab.
 
 

@@ -1,7 +1,8 @@
 # instanceID
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique, persistent identifier of this token that the token implementation creates.
 
@@ -20,13 +21,18 @@ The unique, persistent identifier of this token that the token implementation cr
 var instanceID: TKToken.InstanceID { get }
 ```
 
+```objc
+@property (nonatomic, readonly) TKTokenInstanceID instanceID;
+```
+
 #### Discussion
 
 The instance identifier often represents some kind of serial number of the target hardware.
 
 ## See Also
 
-- [var configurationData: Data?](tktoken/configuration-swift.class/configurationdata.md)
+### Reporting Configuration Information
+- [var configurationData: Data?](./configurationdata.md)
   Additional configuration information for the token instance.
 
 

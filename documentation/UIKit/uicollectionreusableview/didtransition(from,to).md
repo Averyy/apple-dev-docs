@@ -1,7 +1,8 @@
 # didTransition(from:to:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells your view that the layout object of the collection view changed.
 
@@ -9,13 +10,17 @@ Tells your view that the layout object of the collection view changed.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func didTransition(from oldLayout: UICollectionViewLayout, to newLayout: UICollectionViewLayout)
+```
+
+```objc
+- (void) didTransitionFromLayout:(UICollectionViewLayout *) oldLayout toLayout:(UICollectionViewLayout *) newLayout;
 ```
 
 #### Discussion
@@ -29,11 +34,12 @@ The default implementation of this method does nothing. Subclasses can override 
 
 ## See Also
 
-- [func preferredLayoutAttributesFitting(UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes](uicollectionreusableview/preferredlayoutattributesfitting(_:).md)
+### Managing layout changes
+- [func preferredLayoutAttributesFitting(UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes](./preferredlayoutattributesfitting%28_%29.md)
   Gives the cell a chance to modify the attributes provided by the layout object.
-- [func apply(UICollectionViewLayoutAttributes)](uicollectionreusableview/apply(_:).md)
+- [func apply(UICollectionViewLayoutAttributes)](./apply%28_%29.md)
   Applies the specified layout attributes to the view.
-- [func willTransition(from: UICollectionViewLayout, to: UICollectionViewLayout)](uicollectionreusableview/willtransition(from:to:).md)
+- [func willTransition(from: UICollectionViewLayout, to: UICollectionViewLayout)](./willtransition%28from,to%29.md)
   Tells your view that the layout object of the collection view is about to change.
 
 

@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.lowercaseLetter
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A lowercase letter.
 
@@ -22,7 +23,7 @@ case lowercaseLetter
 
 #### Discussion
 
-This value corresponds to the category `Lowercase_Letter` (abbreviated `Ll`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Lowercase_Letter` (abbreviated `Ll`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

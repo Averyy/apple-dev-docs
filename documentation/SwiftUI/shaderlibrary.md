@@ -1,7 +1,8 @@
 # ShaderLibrary
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A Metal shader library.
 
@@ -23,40 +24,41 @@ struct ShaderLibrary
 ## Topics
 
 ### Getting the default shader library
-- [static let `default`: ShaderLibrary](shaderlibrary/default.md)
+- [static let `default`: ShaderLibrary](./shaderlibrary/default.md)
   The default shader library of the main (i.e. app) bundle.
-- [static func bundle(Bundle) -> ShaderLibrary](shaderlibrary/bundle(_:).md)
+- [static func bundle(Bundle) -> ShaderLibrary](./shaderlibrary/bundle%28_%29.md)
   Returns the default shader library of the specified bundle.
 ### Creating a shader library
-- [init(url: URL)](shaderlibrary/init(url:).md)
+- [init(url: URL)](./shaderlibrary/init%28url%29.md)
   Creates a new Metal shader library from the contents of `url`, which must be the location  of precompiled Metal library. Functions compiled from the returned library will only be cached as long as the returned library exists.
-- [init(data: Data)](shaderlibrary/init(data:).md)
+- [init(data: Data)](./shaderlibrary/init%28data%29.md)
   Creates a new Metal shader library from `data`, which must be the contents of precompiled Metal library. Functions compiled from the returned library will only be cached as long as the returned library exists.
 ### Access shader functions
-- [static subscript(dynamicMember _: String) -> ShaderFunction](shaderlibrary/subscript(dynamicmember:)-swift.type.subscript.md)
+- [static subscript(dynamicMember _: String) -> ShaderFunction](./shaderlibrary/subscript%28dynamicmember%29-swift.type.subscript.md)
   Returns a new shader function representing the stitchable MSL function called `name` in the default shader library.
 ### Subscripts
-- [subscript(dynamicMember _: String) -> ShaderFunction](shaderlibrary/subscript(dynamicmember:)-swift.subscript.md)
+- [subscript(dynamicMember _: String) -> ShaderFunction](./shaderlibrary/subscript%28dynamicmember%29-swift.subscript.md)
   Returns a new shader function representing the stitchable MSL function in the library called `name`.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func colorEffect(Shader, isEnabled: Bool) -> some View](view/coloreffect(_:isenabled:).md)
+### Accessing Metal shaders
+- [func colorEffect(Shader, isEnabled: Bool) -> some View](./view/coloreffect%28_,isenabled%29.md)
   Returns a new view that applies `shader` to `self` as a filter effect on the color of each pixel.
-- [func distortionEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some View](view/distortioneffect(_:maxsampleoffset:isenabled:).md)
+- [func distortionEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some View](./view/distortioneffect%28_,maxsampleoffset,isenabled%29.md)
   Returns a new view that applies `shader` to `self` as a geometric distortion effect on the location of each pixel.
-- [func layerEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some View](view/layereffect(_:maxsampleoffset:isenabled:).md)
+- [func layerEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some View](./view/layereffect%28_,maxsampleoffset,isenabled%29.md)
   Returns a new view that applies `shader` to `self` as a filter on the raster layer created from `self`.
-- [struct Shader](shader.md)
+- [struct Shader](./shader.md)
   A reference to a function in a Metal shader library, along with its bound uniform argument values.
-- [struct ShaderFunction](shaderfunction.md)
+- [struct ShaderFunction](./shaderfunction.md)
   A reference to a function in a Metal shader library.
 
 

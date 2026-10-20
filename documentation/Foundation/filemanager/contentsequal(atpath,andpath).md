@@ -1,7 +1,8 @@
 # contentsEqual(atPath:andPath:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the files or directories in specified paths have the same contents.
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether the files or directories in speci
 func contentsEqual(atPath path1: String, andPath path2: String) -> Bool
 ```
 
+```objc
+- (BOOL) contentsEqualAtPath:(NSString *) path1 andPath:(NSString *) path2;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if file or directory specified in `path1` has the same contents as that specified in `path2`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if file or directory specified in `path1` has the same contents as that specified in `path2`, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -35,7 +40,8 @@ If `path1` and `path2` are directories, the contents are the list of files and s
 
 ## See Also
 
-- [func contents(atPath: String) -> Data?](filemanager/contents(atpath:).md)
+### Getting and comparing file contents
+- [func contents(atPath: String) -> Data?](./contents%28atpath%29.md)
   Returns the contents of the file at the specified path.
 
 

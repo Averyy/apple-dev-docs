@@ -1,15 +1,16 @@
 # orientationFront
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS 7.0+ - Deprecated
-- iPadOS 7.0+ - Deprecated
-- Mac Catalyst 7.0+ - Deprecated
-- tvOS 9.0+ - Deprecated
-- visionOS 1.0+ - Deprecated
-- watchOS 2.0+ - Deprecated
+- iOS 7.0+ - Deprecated (renamed: AVAudioSession.Orientation.front)
+- iPadOS 7.0+ - Deprecated (renamed: AVAudioSession.Orientation.front)
+- Mac Catalyst 7.0+ - Deprecated (renamed: AVAudioSession.Orientation.front)
+- tvOS 9.0+ - Deprecated (renamed: AVAudioSession.Orientation.front)
+- visionOS 1.0+ - Deprecated (renamed: AVAudioSession.Orientation.front)
+- watchOS 2.0+ - Deprecated (renamed: AVAudioSession.Orientation.front)
 
 ## Declaration
 
@@ -19,14 +20,15 @@ static var orientationFront: AVAudioSession.Location { get }
 
 ## See Also
 
-- [static var orientationBack: AVAudioSession.Location](avaudiosession/location/orientationback.md)
-- [static var orientationBottom: AVAudioSession.Location](avaudiosession/location/orientationbottom.md)
-- [static var orientationTop: AVAudioSession.Location](avaudiosession/location/orientationtop.md)
-- [static var orientationLeft: AVAudioSession.Location](avaudiosession/location/orientationleft.md)
-- [static var orientationRight: AVAudioSession.Location](avaudiosession/location/orientationright.md)
-- [static var polarPatternCardioid: AVAudioSession.Location](avaudiosession/location/polarpatterncardioid.md)
-- [static var polarPatternOmnidirectional: AVAudioSession.Location](avaudiosession/location/polarpatternomnidirectional.md)
-- [static var polarPatternSubcardioid: AVAudioSession.Location](avaudiosession/location/polarpatternsubcardioid.md)
+### Orientations and polar patterns
+- [static var orientationBack: AVAudioSession.Location](./orientationback.md)
+- [static var orientationBottom: AVAudioSession.Location](./orientationbottom.md)
+- [static var orientationTop: AVAudioSession.Location](./orientationtop.md)
+- [static var orientationLeft: AVAudioSession.Location](./orientationleft.md)
+- [static var orientationRight: AVAudioSession.Location](./orientationright.md)
+- [static var polarPatternCardioid: AVAudioSession.Location](./polarpatterncardioid.md)
+- [static var polarPatternOmnidirectional: AVAudioSession.Location](./polarpatternomnidirectional.md)
+- [static var polarPatternSubcardioid: AVAudioSession.Location](./polarpatternsubcardioid.md)
 
 
 ---

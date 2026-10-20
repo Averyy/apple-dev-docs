@@ -1,7 +1,8 @@
 # init(_:children:columnCustomization:columns:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a hierarchical table that computes its rows based on a collection of identifiable data and key path to the children of that data.
 
@@ -19,9 +20,11 @@ nonisolated
 init<Data>(_ data: Data, children: KeyPath<Value, Data?>, columnCustomization: Binding<TableColumnCustomization<Value>>? = nil, @TableColumnBuilder<Value, Never> columns: () -> Columns) where Rows == TableOutlineGroupContent<Data>, Data : RandomAccessCollection, Columns.TableRowValue == Data.Element
 ```
 
+Available when `Value` is `Rows.TableRowValue`, `Rows` conforms to `TableRowContent`, `Columns` conforms to `TableColumnContent`, and `Rows.TableRowValue` is `Columns.TableRowValue`.
+
 #### Discussion
 
-Each column in the table that should participate in customization is required to have an identifier, specified with [`customizationID(_:)`](tablecolumncontent/customizationid(_:).md).
+Each column in the table that should participate in customization is required to have an identifier, specified with [`customizationID(_:)`](../tablecolumncontent/customizationid%28_%29.md).
 
 ## Parameters
 
@@ -32,11 +35,12 @@ Each column in the table that should participate in customization is required to
 
 ## See Also
 
-- [init(_:children:selection:columnCustomization:columns:)](table/init(_:children:selection:columncustomization:columns:).md)
+### Creating a hierarchical table
+- [init(_:children:selection:columnCustomization:columns:)](./init%28_,children,selection,columncustomization,columns%29.md)
   Creates a hierarchical table that computes its rows based on a collection of identifiable data and key path to the children of that data, and supports selecting multiple rows.
-- [init(_:children:selection:sortOrder:columnCustomization:columns:)](table/init(_:children:selection:sortorder:columncustomization:columns:).md)
+- [init(_:children:selection:sortOrder:columnCustomization:columns:)](./init%28_,children,selection,sortorder,columncustomization,columns%29.md)
   Creates a sortable, hierarchical table that computes its rows based on a collection of identifiable data and key path to the children of that data, and supports selecting multiple rows.
-- [init<Data, Sort>(Data, children: KeyPath<Data.Element, Data?>, sortOrder: Binding<[Sort]>, columnCustomization: Binding<TableColumnCustomization<Value>>?, columns: () -> Columns)](table/init(_:children:sortorder:columncustomization:columns:).md)
+- [init<Data, Sort>(Data, children: KeyPath<Data.Element, Data?>, sortOrder: Binding<[Sort]>, columnCustomization: Binding<TableColumnCustomization<Value>>?, columns: () -> Columns)](./init%28_,children,sortorder,columncustomization,columns%29.md)
   Creates a sortable, hierarchical table that computes its rows based on a collection of identifiable data and key path to the children of that data.
 
 

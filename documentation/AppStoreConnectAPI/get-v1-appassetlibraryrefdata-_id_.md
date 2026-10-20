@@ -1,7 +1,8 @@
 # Read an app asset library ref data
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about an app asset library reference data resource.
 
@@ -10,7 +11,7 @@ Get information about an app asset library reference data resource.
 
 ## Mentions
 
-- [Discovering asset specifications](discovering-asset-specifications.md)
+- [Discovering asset specifications](./discovering-asset-specifications.md)
 
 #### Discussion
 
@@ -18,7 +19,7 @@ Get information about an app asset library reference data resource.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/appAssetLibraryRefData/1?fields[appAssetLibraryRefData]=imageSpecs
 ```
 
@@ -117,11 +118,29 @@ https://api.appstoreconnect.apple.com/v1/appAssetLibraryRefData/1?fields[appAsse
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
+### Query Parameters
+
 - `fields[appAssetLibraryRefData]` ([string]): Additional fields to include for each app asset library reference data resource returned by the response.
+
+  **Allowed Values**: `features`, `placementProfileGroups`, `imageSpecs`, `videoSpecs`, `placementTypes`, `displayClasses`
+
+## Responses
+
+- `200` OK (`AppAssetLibraryRefDatumResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List app asset library ref data](get-v1-appassetlibraryrefdata.md)
+### Getting reference data
+- [List app asset library ref data](./get-v1-appassetlibraryrefdata.md)
   List app asset library reference data.
 
 

@@ -1,7 +1,8 @@
 # CMHeadphoneActivityManager.Status.connected
 
 **Framework**: Core Motion  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A compatible set of headphones is connected.
 
@@ -18,9 +19,14 @@ A compatible set of headphones is connected.
 case connected
 ```
 
+```c
+CMHeadphoneActivityStatusConnected
+```
+
 ## See Also
 
-- [CMHeadphoneActivityManager.Status.disconnected](cmheadphoneactivitymanager/status/disconnected.md)
+### Enumeration Cases
+- [CMHeadphoneActivityManager.Status.disconnected](./disconnected.md)
   The headphones disconnected.
 
 

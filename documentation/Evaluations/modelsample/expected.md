@@ -1,7 +1,8 @@
 # expected
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expected output for comparison.
 
@@ -22,12 +23,13 @@ var expected: ExpectedValue? { get }
 
 ## Mentions
 
-- [Evaluating language model responses](evaluating-language-model-responses.md)
-- [Scoring with model-judge evaluators](scoring-with-model-as-judge-evaluators.md)
+- [Evaluating language model responses](../evaluating-language-model-responses.md)
+- [Scoring with model-judge evaluators](../scoring-with-model-as-judge-evaluators.md)
 
 ## See Also
 
-- [var output: ModelSampleOutput<ExpectedValue, TrajectoryExpectation>](modelsample/output.md)
+### Specifying expected output
+- [var output: ModelSampleOutput<ExpectedValue, TrajectoryExpectation>](./output.md)
   The expected output value and evaluation expectations.
 
 

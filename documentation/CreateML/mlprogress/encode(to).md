@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the progress value into the given encoder.
 
@@ -25,7 +26,8 @@ func encode(to encoder: any Encoder) throws
 
 ## See Also
 
-- [init(from: any Decoder) throws](mlprogress/init(from:).md)
+### Encoding and decoding a session’s progress
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates a progress instance by decoding from the given decoder.
 
 

@@ -1,22 +1,25 @@
 # MeDetailResponse
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response from me detail calls.
 
 **Availability**:
-- Search Ads 4.0+
+- Search Ads 4.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object MeDetailResponse
 ```
 
 ## Mentions
 
-- [Apple Ads Campaign Management API 4](apple-search-ads-campaign-management-api-4.md)
+- [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
 ## Properties
 
@@ -24,15 +27,16 @@ object MeDetailResponse
 
 ## See Also
 
-- [Get User ACL](get-user-acl.md)
+### Access Control List
+- [Get User ACL](./get-user-acl.md)
   Fetches roles and organizations that the API has access to.
-- [object UserAcl](useracl.md)
+- [object UserAcl](./useracl.md)
   The response to ACL requests.
-- [object UserAclListResponse](useracllistresponse.md)
+- [object UserAclListResponse](./useracllistresponse.md)
   A container for ACL call responses.
-- [Get Me Details](get-me-details.md)
+- [Get Me Details](./get-me-details.md)
   Fetches details of an API caller.
-- [object MeDetail](medetail.md)
+- [object MeDetail](./medetail.md)
   The API caller identifiers.
 
 

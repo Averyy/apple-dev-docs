@@ -1,7 +1,8 @@
 # ColumnSelectorTransformer
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transformer that applies a base transformer to specific columns in a data frame.
 
@@ -23,51 +24,52 @@ struct ColumnSelectorTransformer<Base, UnwrappedInput> where Base : Transformer,
 ## Topics
 
 ### Creating the transformer
-- [init(transformers: [String : Base], columnMapping: [String : String])](columnselectortransformer/init(transformers:columnmapping:).md)
+- [init(transformers: [String : Base], columnMapping: [String : String])](./columnselectortransformer/init%28transformers,columnmapping%29.md)
   Creates a select transformer.
 ### Getting the properties
-- [var columnMapping: [String : String]](columnselectortransformer/columnmapping.md)
+- [var columnMapping: [String : String]](./columnselectortransformer/columnmapping.md)
   A mapping of input column names to output column names.
-- [var transformers: [String : Base]](columnselectortransformer/transformers.md)
+- [var transformers: [String : Base]](./columnselectortransformer/transformers.md)
   A dictionary of column names to transformers.
 ### Applying a transformation
-- [func applied(to: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](columnselectortransformer/applied(to:eventhandler:).md)
+- [func applied(to: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](./columnselectortransformer/applied%28to,eventhandler%29.md)
   Performs the transformation on selected columns of the data frame.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TabularTransformer](tabulartransformer.md)
-- [Transformer](transformer.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TabularTransformer](./tabulartransformer.md)
+- [Transformer](./transformer.md)
 
 ## See Also
 
-- [protocol TabularTransformer](tabulartransformer.md)
+### Tabular components
+- [protocol TabularTransformer](./tabulartransformer.md)
   A tabular transformer that transforms a data frame.
-- [protocol TabularEstimator](tabularestimator.md)
+- [protocol TabularEstimator](./tabularestimator.md)
   A tabular estimator that creates a transformer by fitting to a data set in a data frame.
-- [protocol SupervisedTabularEstimator](supervisedtabularestimator.md)
+- [protocol SupervisedTabularEstimator](./supervisedtabularestimator.md)
   A tabular estimator that creates a transformer by fitting to a data set in a data frame.
-- [struct ColumnSelector](columnselector.md)
+- [struct ColumnSelector](./columnselector.md)
   An operation that applies an estimator to a selection of columns.
-- [enum ColumnSelection](columnselection.md)
+- [enum ColumnSelection](./columnselection.md)
   A selection of columns from a data frame.
-- [struct ColumnConcatenator](columnconcatenator.md)
+- [struct ColumnConcatenator](./columnconcatenator.md)
   A transformer that concatenates every numerical column in a dataframe into to a shaped array for each row.
-- [struct PreprocessingSupervisedTabularEstimator](preprocessingsupervisedtabularestimator.md)
+- [struct PreprocessingSupervisedTabularEstimator](./preprocessingsupervisedtabularestimator.md)
   A supervised tabular estimator that composes a preprocessing transformer and a supervised tabular estimator.
-- [struct PreprocessingTabularEstimator](preprocessingtabularestimator.md)
+- [struct PreprocessingTabularEstimator](./preprocessingtabularestimator.md)
   An estimator that composes a preprocessing transformer and an estimator.
-- [struct PreprocessingUpdatableSupervisedTabularEstimator](preprocessingupdatablesupervisedtabularestimator.md)
+- [struct PreprocessingUpdatableSupervisedTabularEstimator](./preprocessingupdatablesupervisedtabularestimator.md)
   An updatable supervised estimator that composes a preprocessing transformer and an updatable supervised estimator.
-- [struct PreprocessingUpdatableTabularEstimator](preprocessingupdatabletabularestimator.md)
+- [struct PreprocessingUpdatableTabularEstimator](./preprocessingupdatabletabularestimator.md)
   An updatable estimator that composes a preprocessing transformer and an updatable estimator.
 
 

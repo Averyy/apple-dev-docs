@@ -1,12 +1,13 @@
 # process
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The font collection is visible within this process and is not persistent.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The font collection is visible within this process and is not persistent.
 static var process: NSFontCollection.Visibility { get }
 ```
 
+```c
+NSFontCollectionVisibilityProcess
+```
+
 ## See Also
 
-- [static var user: NSFontCollection.Visibility](nsfontcollection/visibility/user.md)
+### Visibility Options
+- [static var user: NSFontCollection.Visibility](./user.md)
   The font collection is visible to all processes and is stored persistently.
-- [static var computer: NSFontCollection.Visibility](nsfontcollection/visibility/computer.md)
+- [static var computer: NSFontCollection.Visibility](./computer.md)
   The font collection is visible to all users and is stored persistently.
 
 

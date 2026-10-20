@@ -1,7 +1,8 @@
 # postProcessApplication
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the application used to post process the image.
 
@@ -14,13 +15,18 @@ The URL of the application used to post process the image.
 var postProcessApplication: URL! { get set }
 ```
 
+```objc
+@property (retain) NSURL * postProcessApplication;
+```
+
 #### Discussion
 
-The post process application is only relevant when the [`transferMode`](ikcameradeviceview/transfermode.md) is set to [`IKCameraDeviceViewTransferMode.fileBased`](ikcameradeviceviewtransfermode/filebased.md).
+The post process application is only relevant when the [`transferMode`](./transfermode.md) is set to [`IKCameraDeviceViewTransferMode.fileBased`](../ikcameradeviceviewtransfermode/filebased.md).
 
 ## See Also
 
-- [var displaysPostProcessApplicationControl: Bool](ikcameradeviceview/displayspostprocessapplicationcontrol.md)
+### Getting and Setting the Post Processing Application
+- [var displaysPostProcessApplicationControl: Bool](./displayspostprocessapplicationcontrol.md)
   Displays whether the post process application control should be displayed.
 
 

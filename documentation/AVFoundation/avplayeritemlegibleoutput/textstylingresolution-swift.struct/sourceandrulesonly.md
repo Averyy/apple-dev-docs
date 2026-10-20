@@ -1,7 +1,8 @@
 # sourceAndRulesOnly
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The level of resolution excludes styling provided by the user-level Media Accessibility settings.
 
@@ -19,13 +20,18 @@ The level of resolution excludes styling provided by the user-level Media Access
 static let sourceAndRulesOnly: AVPlayerItemLegibleOutput.TextStylingResolution
 ```
 
+```c
+extern AVPlayerItemLegibleOutputTextStylingResolution const AVPlayerItemLegibleOutputTextStylingResolutionSourceAndRulesOnly;
+```
+
 #### Discussion
 
 You typically use this option to override the styling specified in source media. When overriding the styling, you are strongly encouraged to allow your custom styling in turn to be overridden by user preferences for text styling that are available as Media Accessibility settings. See `Media Accessibility Function` for more information.
 
 ## See Also
 
-- [static let `default`: AVPlayerItemLegibleOutput.TextStylingResolution](avplayeritemlegibleoutput/textstylingresolution-swift.struct/default.md)
+### Text styling options
+- [static let `default`: AVPlayerItemLegibleOutput.TextStylingResolution](./default.md)
   The text styling information is the same level of information that AVFoundation uses within a player layer.
 
 

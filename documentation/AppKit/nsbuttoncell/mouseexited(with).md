@@ -1,12 +1,13 @@
 # mouseExited(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Erases the button’s border.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Erases the button’s border.
 func mouseExited(with event: NSEvent)
 ```
 
+```objc
+- (void) mouseExited:(NSEvent *) event;
+```
+
 #### Discussion
 
-This method is called only when the pointer moves off the button and the value of [`showsBorderOnlyWhileMouseInside`](nsbuttoncell/showsborderonlywhilemouseinside.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+This method is called only when the pointer moves off the button and the value of [`showsBorderOnlyWhileMouseInside`](./showsborderonlywhilemouseinside.md) is [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -24,9 +29,10 @@ This method is called only when the pointer moves off the button and the value o
 
 ## See Also
 
-- [func mouseEntered(with: NSEvent)](nsbuttoncell/mouseentered(with:).md)
+### Handling Events and Action Messages
+- [func mouseEntered(with: NSEvent)](./mouseentered%28with%29.md)
   Draws the button’s border.
-- [func performClick(Any?)](nsbuttoncell/performclick(_:).md)
+- [func performClick(Any?)](./performclick%28_%29.md)
   Simulates the user clicking the button with the pointer.
 
 

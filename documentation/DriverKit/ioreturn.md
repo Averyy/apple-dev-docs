@@ -1,28 +1,30 @@
 # IOReturn
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef kern_return_t IOReturn;
 ```
 
 ## See Also
 
-- [IOOptionBits](iooptionbits.md)
-- [integer_t](integer_t.md)
-- [natural_t](natural_t.md)
-- [kern_return_t](kern_return_t.md)
-- [IOItemCount](ioitemcount.md)
-- [IOVersion](ioversion.md)
+### Additional Types
+- [IOOptionBits](./iooptionbits.md)
+- [integer_t](./integer_t.md)
+- [natural_t](./natural_t.md)
+- [kern_return_t](./kern_return_t.md)
+- [IOItemCount](./ioitemcount.md)
+- [IOVersion](./ioversion.md)
 
 
 ---

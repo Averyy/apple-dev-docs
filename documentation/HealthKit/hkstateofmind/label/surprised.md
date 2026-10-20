@@ -1,7 +1,8 @@
 # HKStateOfMind.Label.surprised
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case surprised
+```
+
+```c
+HKStateOfMindLabelSurprised
 ```
 
 

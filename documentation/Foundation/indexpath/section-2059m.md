@@ -1,7 +1,8 @@
 # section
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The section of this index path, when used with `NSCollectionView`.
 
@@ -16,7 +17,7 @@ var section: Int { get set }
 
 #### Discussion
 
-> **Note**: The index path must have exactly two elements.
+> **Precondition**: The index path must have exactly two elements.
 
 
 ---

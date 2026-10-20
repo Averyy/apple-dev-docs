@@ -2,6 +2,7 @@
 
 **Framework**: Assignables  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns a collection of part IDs reflecting the manifest of parts available in the document.
@@ -10,7 +11,7 @@ Returns a collection of part IDs reflecting the manifest of parts available in t
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ var partIDs: [Self.PartID] { get }
 
 ## See Also
 
-- [MergeablePartsContainer.PartID](mergeablepartscontainer/partid.md)
+### Getting the part identifiers
+- [MergeablePartsContainer.PartID](./partid.md)
   The type for document layer IDs.
 
 

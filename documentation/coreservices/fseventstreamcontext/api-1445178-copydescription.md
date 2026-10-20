@@ -1,7 +1,8 @@
 # copyDescription
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The callback used to create a descriptive string representation of the info pointer (or the data pointed to by the info pointer) for debugging purposes. This can be NULL.
 
@@ -13,6 +14,10 @@ The callback used to create a descriptive string representation of the info poin
 
 ```swift
 var copyDescription: CFAllocatorCopyDescriptionCallBack?
+```
+
+```c
+CFAllocatorCopyDescriptionCallBack copyDescription;
 ```
 
 

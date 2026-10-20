@@ -1,7 +1,8 @@
 # estimatedTimeRemaining
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of time remaining in the processing of files.
 

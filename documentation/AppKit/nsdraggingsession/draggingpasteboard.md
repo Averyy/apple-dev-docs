@@ -1,7 +1,8 @@
 # draggingPasteboard
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the pasteboard object that contains the data being dragged.
 
@@ -12,6 +13,10 @@ Returns the pasteboard object that contains the data being dragged.
 
 ```swift
 var draggingPasteboard: NSPasteboard { get }
+```
+
+```objc
+@property (readonly) NSPasteboard * draggingPasteboard;
 ```
 
 

@@ -1,7 +1,8 @@
 # setRate(_:time:atHostTime:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Synchronizes the playback rate and time of the current item with an external source.
 
@@ -21,29 +22,34 @@ nonisolated
 func setRate(_ rate: Float, time itemTime: CMTime, atHostTime hostClockTime: CMTime)
 ```
 
+```objc
+- (void) setRate:(float) rate time:(CMTime) itemTime atHostTime:(CMTime) hostClockTime;
+```
+
 #### Discussion
 
 This method adjusts the current item’s timebase so that the time in `itemTime` is in sync with the time in `hostClockTime`. Thus, if `hostClockTime` specifies a time in the past, the item’s timebase is adjusted to make it appear as if the item has been running at the specified rate since `itemTime`. And if `hostClockTime` specifies a time in the future, playback is adjusted backward (if possible) so that the value in `itemTime` occurs at the precise moment the host’s clock reaches the value in `hostClockTime`. If there is no content to play before the time specified by `itemTime`, playback holds until the two times come into sync.
 
 This method does not ensure that media data is loaded before the timebase starts moving. However, if you specify a host time in the near future, that would give you some time to load the media data and prepare for playback.
 
-> ❗ **Important**:  The value of [`automaticallyWaitsToMinimizeStalling`](avplayer/automaticallywaitstominimizestalling.md) must be set to `false` before calling this method. If the property value is `true`, calling this method results in the system raising an invalid argument exception.
+> ❗ **Important**:  The value of [`automaticallyWaitsToMinimizeStalling`](./automaticallywaitstominimizestalling.md) must be set to `false` before calling this method. If the property value is `true`, calling this method results in the system raising an invalid argument exception.
 
 ## Parameters
 
 - `rate`: The playback rate for the item.
-- `itemTime`: The precise time at which to match playback of the item. To use the current item’s current time, specify [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid).
-- `hostClockTime`: The host time at which to synchronize playback. If you specify [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid), the rate and time are set together without any external synchronization.
+- `itemTime`: The precise time at which to match playback of the item. To use the current item’s current time, specify [`invalid`](../../CoreMedia/cmtime/invalid.md).
+- `hostClockTime`: The host time at which to synchronize playback. If you specify [`invalid`](../../CoreMedia/cmtime/invalid.md), the rate and time are set together without any external synchronization.
 
 ## See Also
 
-- [func preroll(atRate: Float, completionHandler: ((Bool) -> Void)?)](avplayer/preroll(atrate:completionhandler:).md)
+### Synchronizing multiple players
+- [func preroll(atRate: Float, completionHandler: ((Bool) -> Void)?)](./preroll%28atrate,completionhandler%29.md)
   Begins loading media data to prime the media pipelines for playback.
-- [func cancelPendingPrerolls()](avplayer/cancelpendingprerolls.md)
+- [func cancelPendingPrerolls()](./cancelpendingprerolls%28%29.md)
   Cancels any pending preroll requests and invokes the corresponding completion handlers, if present.
-- [var sourceClock: CMClock?](avplayer/sourceclock.md)
+- [var sourceClock: CMClock?](./sourceclock.md)
   A clock the player uses for item time bases.
-- [var masterClock: CMClock?](avplayer/masterclock.md)
+- [var masterClock: CMClock?](./masterclock.md)
   The host clock for item time bases.
 
 

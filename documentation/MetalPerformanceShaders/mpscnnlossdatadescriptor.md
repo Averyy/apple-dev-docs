@@ -1,7 +1,8 @@
 # MPSCNNLossDataDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that specifies properties used by a loss data descriptor.
 
@@ -19,40 +20,45 @@ An object that specifies properties used by a loss data descriptor.
 class MPSCNNLossDataDescriptor
 ```
 
+```objc
+@interface MPSCNNLossDataDescriptor : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(data: Data, layout: MPSDataLayout, size: MTLSize)](mpscnnlossdatadescriptor/init(data:layout:size:).md)
+- [init?(data: Data, layout: MPSDataLayout, size: MTLSize)](./mpscnnlossdatadescriptor/init%28data,layout,size%29.md)
 ### Instance Properties
-- [var bytesPerImage: Int](mpscnnlossdatadescriptor/bytesperimage.md)
-- [var bytesPerRow: Int](mpscnnlossdatadescriptor/bytesperrow.md)
-- [var layout: MPSDataLayout](mpscnnlossdatadescriptor/layout.md)
-- [var size: MTLSize](mpscnnlossdatadescriptor/size.md)
+- [var bytesPerImage: Int](./mpscnnlossdatadescriptor/bytesperimage.md)
+- [var bytesPerRow: Int](./mpscnnlossdatadescriptor/bytesperrow.md)
+- [var layout: MPSDataLayout](./mpscnnlossdatadescriptor/layout.md)
+- [var size: MTLSize](./mpscnnlossdatadescriptor/size.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNLoss](mpscnnloss.md)
+### Loss Layers
+- [class MPSCNNLoss](./mpscnnloss.md)
   A kernel that computes the loss and loss gradient between specified predictions and labels.
-- [class MPSCNNLossDescriptor](mpscnnlossdescriptor.md)
+- [class MPSCNNLossDescriptor](./mpscnnlossdescriptor.md)
   An object that specifies properties used by a loss kernel.
-- [class MPSCNNLossLabels](mpscnnlosslabels.md)
+- [class MPSCNNLossLabels](./mpscnnlosslabels.md)
   A class that stores the per-element weight buffer used by loss and gradient loss kernels.
-- [class MPSCNNYOLOLoss](mpscnnyololoss.md)
+- [class MPSCNNYOLOLoss](./mpscnnyololoss.md)
   A kernel that computes the YOLO loss and loss gradient between specified predictions and labels.
-- [class MPSCNNYOLOLossDescriptor](mpscnnyololossdescriptor.md)
+- [class MPSCNNYOLOLossDescriptor](./mpscnnyololossdescriptor.md)
   An object that specifies properties used by a YOLO loss kernel.
 
 

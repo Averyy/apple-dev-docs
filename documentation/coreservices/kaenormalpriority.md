@@ -1,13 +1,16 @@
 # kAENormalPriority
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The Apple Event Manager posts the event at the end of the event queue of the server process and the server processes the Apple event as soon as it has the opportunity.
 
 **Availability**:
 - Mac Catalyst 13.0+
 - macOS 10.0+
+
+> **Deprecated**: Not used in macOS.
 
 ## Declaration
 

@@ -1,17 +1,28 @@
 # init(URL:documentAttributes:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new attributed string object from the data at the specified URL.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.11
+
+> **Deprecated**: Use [`init(URL:options:documentAttributes:)`](./init%28url,options,documentattributes%29.md) instead.
 
 ## Declaration
 
 ```swift
+init?(URL url: URL, documentAttributes dict: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)
+```
+
+```swift
 init?(url: URL, documentAttributes dict: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)
+```
+
+```objc
+- (instancetype) initWithURL:(NSURL *) url documentAttributes:(NSDictionary **) dict;
 ```
 
 #### Return Value
@@ -29,9 +40,10 @@ The contents of `aURL` are examined to best load the file in whatever format itâ
 
 ## See Also
 
-- [init?(path: String, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsattributedstring/init(path:documentattributes:).md)
+### Deprecated Initializers
+- [init?(path: String, documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](./init%28path,documentattributes%29.md)
   Initializes a new attribute string object from RTF or RTFD data in the file at the specified path.
-- [init(fileURL: URL, options: [AnyHashable : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?) throws](nsattributedstring/init(fileurl:options:documentattributes:).md)
+- [init(fileURL: URL, options: [AnyHashable : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?) throws](./init%28fileurl,options,documentattributes%29.md)
   Initializes a new attributed string object from the data at the specified URL.
 
 

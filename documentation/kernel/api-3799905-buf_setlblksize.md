@@ -1,14 +1,15 @@
 # buf_setlblksize
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 void buf_setlblksize(buf_t bp, uint32_t lblksize);
 ```
 

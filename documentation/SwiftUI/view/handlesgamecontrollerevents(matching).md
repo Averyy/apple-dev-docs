@@ -1,7 +1,8 @@
 # handlesGameControllerEvents(matching:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the game controllers events which should be delivered through the GameController framework when the view, or one of its descendants has focus.
 

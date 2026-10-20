@@ -1,7 +1,8 @@
 # mapView(_:rendererFor:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for a renderer object to use when drawing the specified overlay.
 
@@ -19,6 +20,10 @@ Asks the delegate for a renderer object to use when drawing the specified overla
 optional func mapView(_ mapView: MKMapView, rendererFor overlay: any MKOverlay) -> MKOverlayRenderer
 ```
 
+```objc
+- (MKOverlayRenderer *) mapView:(MKMapView *) mapView rendererForOverlay:(id<MKOverlay>) overlay;
+```
+
 #### Return Value
 
 The renderer to use when presenting the specified overlay on the map.
@@ -34,13 +39,14 @@ Implement this method and use it to provide an appropriate renderer object for y
 
 ## See Also
 
-- [func mapView(MKMapView, selectionAccessoryFor: any MKAnnotation) -> MKSelectionAccessory?](mkmapviewdelegate/mapview(_:selectionaccessoryfor:).md)
+### Managing the display of overlays
+- [func mapView(MKMapView, selectionAccessoryFor: any MKAnnotation) -> MKSelectionAccessory?](./mapview%28_,selectionaccessoryfor%29.md)
   Specifies the accessory to display for a selected annotation
-- [func mapView(MKMapView, didAdd: [MKOverlayRenderer])](mkmapviewdelegate/mapview(_:didadd:)-793gj.md)
+- [func mapView(MKMapView, didAdd: [MKOverlayRenderer])](./mapview%28_,didadd%29-793gj.md)
   Tells the delegate when the map view adds one or more renderer objects to the map.
-- [func mapView(MKMapView, viewFor: any MKOverlay) -> MKOverlayView](mkmapviewdelegate/mapview(_:viewfor:)-6j267.md)
+- [func mapView(MKMapView, viewFor: any MKOverlay) -> MKOverlayView](./mapview%28_,viewfor%29-6j267.md)
   Asks the delegate for the overlay view to use when displaying the specified overlay object.
-- [func mapView(MKMapView, didAddOverlayViews: [Any])](mkmapviewdelegate/mapview(_:didaddoverlayviews:).md)
+- [func mapView(MKMapView, didAddOverlayViews: [Any])](./mapview%28_,didaddoverlayviews%29.md)
   Tells the delegate when the map adds one or more overlay views to the map.
 
 

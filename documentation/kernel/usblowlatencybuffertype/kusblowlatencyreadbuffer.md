@@ -1,7 +1,8 @@
 # kUSBLowLatencyReadBuffer
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 A low-latency read buffer.
 
@@ -10,7 +11,7 @@ A low-latency read buffer.
 
 ## Declaration
 
-```swift
+```c
 kUSBLowLatencyReadBuffer = 1
 ```
 

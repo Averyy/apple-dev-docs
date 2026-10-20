@@ -1,7 +1,8 @@
 # fixed(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Corner styles with fixed radius in all four corners.
 

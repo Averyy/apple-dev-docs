@@ -1,7 +1,8 @@
 # calloutShouldAppearForAnnotation(annotation)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Interface Method
 
 Determines whether the callout appears for an annotation.
 
@@ -10,7 +11,7 @@ Determines whether the callout appears for an annotation.
 
 ## Declaration
 
-```swift
+```
 calloutShouldAppearForAnnotation?(annotation: Annotation): boolean;
 ```
 
@@ -20,7 +21,7 @@ The method returns a Boolean value, where a value of `false` prevents the callou
 
 #### Discussion
 
-When the user selects an annotation, MapKit JS calls this method on the annotation’s callout delegate (if the delegate is an object and its [`calloutShouldAppearForAnnotation()`](annotationcalloutdelegate/calloutshouldappearforannotation.md) property is a function) with the annotation as a parameter.
+When the user selects an annotation, MapKit JS calls this method on the annotation’s callout delegate (if the delegate is an object and its [`calloutShouldAppearForAnnotation()`](./calloutshouldappearforannotation.md) property is a function) with the annotation as a parameter.
 
 ## Parameters
 
@@ -28,11 +29,12 @@ When the user selects an annotation, MapKit JS calls this method on the annotati
 
 ## See Also
 
-- [calloutAnchorOffsetForAnnotation(annotation, size)](annotationcalloutdelegate/calloutanchoroffsetforannotation.md)
+### Customizing callout appearance
+- [calloutAnchorOffsetForAnnotation(annotation, size)](./calloutanchoroffsetforannotation.md)
   Returns a point determining the callout’s anchor offset.
-- [calloutShouldAnimateForAnnotation(annotation)](annotationcalloutdelegate/calloutshouldanimateforannotation.md)
+- [calloutShouldAnimateForAnnotation(annotation)](./calloutshouldanimateforannotation.md)
   Determines whether the callout animates.
-- [calloutAppearanceAnimationForAnnotation(annotation)](annotationcalloutdelegate/calloutappearanceanimationforannotation.md)
+- [calloutAppearanceAnimationForAnnotation(annotation)](./calloutappearanceanimationforannotation.md)
   Returns a CSS animation to use when the callout appears.
 
 

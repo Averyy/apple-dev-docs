@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: Core Spotlight  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 9.0+
@@ -18,7 +19,8 @@ init?(coder: NSCoder)
 
 ## See Also
 
-- [init(displayName: String?, handles: [String], handleIdentifier: String)](csperson/init(displayname:handles:handleidentifier:).md)
+### Initializing a person object
+- [init(displayName: String?, handles: [String], handleIdentifier: String)](./init%28displayname,handles,handleidentifier%29.md)
   Returns a new `CSPerson` object initialized with the specified display name and contact attributes.
 
 

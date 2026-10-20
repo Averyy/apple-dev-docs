@@ -1,12 +1,13 @@
 # canDragRows(with:at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the table view allows dragging the rows with the drag initiated at the specified point.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns a Boolean value indicating whether the table view allows dragging the ro
 func canDragRows(with rowIndexes: IndexSet, at mouseDownPoint: NSPoint) -> Bool
 ```
 
+```objc
+- (BOOL) canDragRowsWithIndexes:(NSIndexSet *) rowIndexes atPoint:(NSPoint) mouseDownPoint;
+```
+
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) to disallow the drag.
+[`false`](../../Swift/false.md) to disallow the drag.
 
 ## Parameters
 
@@ -25,15 +30,16 @@ func canDragRows(with rowIndexes: IndexSet, at mouseDownPoint: NSPoint) -> Bool
 
 ## See Also
 
-- [func dragImageForRows(with: IndexSet, tableColumns: [NSTableColumn], event: NSEvent, offset: NSPointPointer) -> NSImage](nstableview/dragimageforrows(with:tablecolumns:event:offset:).md)
+### Dragging
+- [func dragImageForRows(with: IndexSet, tableColumns: [NSTableColumn], event: NSEvent, offset: NSPointPointer) -> NSImage](./dragimageforrows%28with,tablecolumns,event,offset%29.md)
   Computes and returns an image to use for dragging.
-- [func setDraggingSourceOperationMask(NSDragOperation, forLocal: Bool)](nstableview/setdraggingsourceoperationmask(_:forlocal:).md)
+- [func setDraggingSourceOperationMask(NSDragOperation, forLocal: Bool)](./setdraggingsourceoperationmask%28_,forlocal%29.md)
   Sets the default operation mask returned by `draggingSourceOperationMaskForLocal:` to `mask`.
-- [var verticalMotionCanBeginDrag: Bool](nstableview/verticalmotioncanbegindrag.md)
+- [var verticalMotionCanBeginDrag: Bool](./verticalmotioncanbegindrag.md)
   A Boolean value indicating whether vertical motion is treated as a drag or selection change.
-- [var draggingDestinationFeedbackStyle: NSTableView.DraggingDestinationFeedbackStyle](nstableview/draggingdestinationfeedbackstyle-swift.property.md)
+- [var draggingDestinationFeedbackStyle: NSTableView.DraggingDestinationFeedbackStyle](./draggingdestinationfeedbackstyle-swift.property.md)
   The feedback style displayed when the user drags over the table view.
-- [func setDropRow(Int, dropOperation: NSTableView.DropOperation)](nstableview/setdroprow(_:dropoperation:).md)
+- [func setDropRow(Int, dropOperation: NSTableView.DropOperation)](./setdroprow%28_,dropoperation%29.md)
   Retargets the proposed drop operation.
 
 

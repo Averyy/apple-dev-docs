@@ -1,7 +1,8 @@
 # constrainsSeekingForwardInPrimaryContent
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A restriction that indicates the event doesn’t allow seeking forward within an interstitial item.
 
@@ -20,9 +21,14 @@ A restriction that indicates the event doesn’t allow seeking forward within an
 static var constrainsSeekingForwardInPrimaryContent: AVPlayerInterstitialEvent.Restrictions { get }
 ```
 
+```c
+AVPlayerInterstitialEventRestrictionConstrainsSeekingForwardInPrimaryContent
+```
+
 ## See Also
 
-- [static var requiresPlaybackAtPreferredRateForAdvancement: AVPlayerInterstitialEvent.Restrictions](avplayerinterstitialevent/restrictions-swift.struct/requiresplaybackatpreferredrateforadvancement.md)
+### Configure
+- [static var requiresPlaybackAtPreferredRateForAdvancement: AVPlayerInterstitialEvent.Restrictions](./requiresplaybackatpreferredrateforadvancement.md)
   A restriction that indicates the event doesn’t allow advancing the current time within an interstitial item.
 
 

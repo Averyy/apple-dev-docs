@@ -1,7 +1,8 @@
 # userInteractionEnabledWhileDragging
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether users can interact with a cell while it is being dragged.
 
@@ -17,15 +18,20 @@ A Boolean value indicating whether users can interact with a cell while it is be
 var userInteractionEnabledWhileDragging: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL userInteractionEnabledWhileDragging;
+```
+
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func dragStateDidChange(UITableViewCell.DragState)](uitableviewcell/dragstatedidchange(_:).md)
+### Dragging the row
+- [func dragStateDidChange(UITableViewCell.DragState)](./dragstatedidchange%28_%29.md)
   Notifies the cell that its drag status changed.
-- [UITableViewCell.DragState](uitableviewcell/dragstate.md)
+- [UITableViewCell.DragState](./dragstate.md)
   Constants indicating the current state of a row involved in a drag operation.
 
 

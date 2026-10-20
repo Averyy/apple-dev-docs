@@ -1,6 +1,7 @@
 # Using injected style sheets and scripts
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: Article
 
 Learn how you can affect the appearance or behavior of a webpage by using injected style sheets and scripts.
 
@@ -8,9 +9,9 @@ Learn how you can affect the appearance or behavior of a webpage by using inject
 
 To add or override styles and behaviors in a webpage, you write style sheets and scripts that you then inject into your webpage to read and modify its content.
 
-##### Add Injected Style Sheets
+##### Add injected style sheets
 
-Injected style sheets function like user style sheets, as defined by the [`W3C`](https://developer.apple.comhttps://www.w3.org). The system adds styles in the following order:
+Injected style sheets function like user style sheets, as defined by the [W3C](https://www.w3.org). The system adds styles in the following order:
 
 1. Your Safari app extension styles
 2. The webpage author’s styles
@@ -28,7 +29,7 @@ span.anElement {
 }
 ```
 
-##### Add Injected Scripts
+##### Add injected scripts
 
 You can inject `.js` files (text files that contain JavaScript functions and commands) into a webpage. The scripts in these files have access to the DOM of the webpages you inject them into. They have the same access privileges as scripts that execute from a webpage’s host. Injected scripts load each time a webpage loads, so keep them lightweight.
 
@@ -45,23 +46,24 @@ Injected scripts have an implied namespace — you don’t have to worry about y
 
 ## See Also
 
-- [Injecting a script into a webpage](injecting-a-script-into-a-webpage.md)
+### Injected style sheets and scripts
+- [Injecting a script into a webpage](./injecting-a-script-into-a-webpage.md)
   Inject a script that you write for a Safari app extension into a webpage.
-- [Injecting CSS style sheets into a webpage](injecting-css-style-sheets-into-a-webpage.md)
+- [Injecting CSS style sheets into a webpage](./injecting-css-style-sheets-into-a-webpage.md)
   Add to or override styles by injecting CSS style sheets into webpages.
-- [Passing messages between Safari app extensions and injected scripts](passing-messages-between-safari-app-extensions-and-injected-scripts.md)
+- [Passing messages between Safari app extensions and injected scripts](./passing-messages-between-safari-app-extensions-and-injected-scripts.md)
   Communicate between your Safari app extension and injected scripts.
-- [class SFSafariExtensionHandler](sfsafariextensionhandler.md)
+- [class SFSafariExtensionHandler](./sfsafariextensionhandler.md)
   A base class that you subclass to handle events in your Safari app extension.
-- [class SFSafariExtensionManager](sfsafariextensionmanager.md)
+- [class SFSafariExtensionManager](./sfsafariextensionmanager.md)
   A class that your app uses to find out the current state of a Safari extension.
-- [class SFSafariExtensionState](sfsafariextensionstate.md)
+- [class SFSafariExtensionState](./sfsafariextensionstate.md)
   The state of a Safari extension.
-- [class SFSafariPageProperties](sfsafaripageproperties.md)
+- [class SFSafariPageProperties](./sfsafaripageproperties.md)
   An object that captures information about a webpage.
-- [protocol SFSafariExtensionHandling](sfsafariextensionhandling.md)
+- [protocol SFSafariExtensionHandling](./sfsafariextensionhandling.md)
   A protocol for implementing event handling in a Safari app extension.
-- [let SFExtensionProfileKey: String](sfextensionprofilekey.md)
+- [let SFExtensionProfileKey: String](./sfextensionprofilekey.md)
   A string the system uses as a key in a user info dictionary to identify a profile identifier.
 
 

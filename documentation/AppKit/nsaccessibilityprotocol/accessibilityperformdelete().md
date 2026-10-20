@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Deletes the accessibility element’s value.
@@ -15,9 +16,13 @@ Deletes the accessibility element’s value.
 func accessibilityPerformDelete() -> Bool
 ```
 
+```objc
+- (BOOL) accessibilityPerformDelete;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the action was successfully triggered; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). This method does not indicate the success or failure of the action, just the fact that the action was successfully triggered.
+[`true`](../../Swift/true.md) if the action was successfully triggered; otherwise, [`false`](../../Swift/false.md). This method does not indicate the success or failure of the action, just the fact that the action was successfully triggered.
 
 #### Discussion
 
@@ -25,17 +30,18 @@ Use this method on elements with values.
 
 ## See Also
 
-- [func accessibilityIncrementButton() -> Any?](nsaccessibilityprotocol/accessibilityincrementbutton.md)
+### Incrementing, decrementing, and deleting values
+- [func accessibilityIncrementButton() -> Any?](./accessibilityincrementbutton%28%29.md)
   Returns the increment button for the stepper accessibility element.
-- [func setAccessibilityIncrementButton(Any?)](nsaccessibilityprotocol/setaccessibilityincrementbutton(_:).md)
+- [func setAccessibilityIncrementButton(Any?)](./setaccessibilityincrementbutton%28_%29.md)
   Sets the increment button for the stepper accessibility element.
-- [func accessibilityDecrementButton() -> Any?](nsaccessibilityprotocol/accessibilitydecrementbutton.md)
+- [func accessibilityDecrementButton() -> Any?](./accessibilitydecrementbutton%28%29.md)
   Returns the decrement button for the stepper accessibility element.
-- [func setAccessibilityDecrementButton(Any?)](nsaccessibilityprotocol/setaccessibilitydecrementbutton(_:).md)
+- [func setAccessibilityDecrementButton(Any?)](./setaccessibilitydecrementbutton%28_%29.md)
   Sets the decrement button for the stepper accessibility element.
-- [func accessibilityPerformIncrement() -> Bool](nsaccessibilityprotocol/accessibilityperformincrement.md)
+- [func accessibilityPerformIncrement() -> Bool](./accessibilityperformincrement%28%29.md)
   Increments the accessibility element’s value.
-- [func accessibilityPerformDecrement() -> Bool](nsaccessibilityprotocol/accessibilityperformdecrement.md)
+- [func accessibilityPerformDecrement() -> Bool](./accessibilityperformdecrement%28%29.md)
   Decrements the accessibility element’s value.
 
 

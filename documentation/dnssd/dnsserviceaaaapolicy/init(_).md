@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: dnssd  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+

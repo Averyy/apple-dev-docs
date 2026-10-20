@@ -1,7 +1,8 @@
 # is(compatibleWithFileType:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the system can create a movie header of the specified type.
 
@@ -19,9 +20,13 @@ Returns a Boolean value that indicates whether the system can create a movie hea
 func `is`(compatibleWithFileType fileType: AVFileType) -> Bool
 ```
 
+```objc
+- (BOOL) isCompatibleWithFileType:(AVFileType) fileType;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the movie only contains tracks whose media types are allowed by the specified file type; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the movie only contains tracks whose media types are allowed by the specified file type; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -29,11 +34,12 @@ func `is`(compatibleWithFileType fileType: AVFileType) -> Bool
 
 ## See Also
 
-- [func makeMovieHeader(fileType: AVFileType) throws -> Data](avmovie/makemovieheader(filetype:).md)
+### Creating and writing headers
+- [func makeMovieHeader(fileType: AVFileType) throws -> Data](./makemovieheader%28filetype%29.md)
   Creates a header for a movie for the specified file type.
-- [func writeHeader(to: URL, fileType: AVFileType, options: AVMovieWritingOptions) throws](avmovie/writeheader(to:filetype:options:).md)
+- [func writeHeader(to: URL, fileType: AVFileType, options: AVMovieWritingOptions) throws](./writeheader%28to,filetype,options%29.md)
   Writes the movie header to the specified URL.
-- [struct AVMovieWritingOptions](avmoviewritingoptions.md)
+- [struct AVMovieWritingOptions](../avmoviewritingoptions.md)
   A structure that defines options to control the writing of a movie header to a destination URL.
 
 

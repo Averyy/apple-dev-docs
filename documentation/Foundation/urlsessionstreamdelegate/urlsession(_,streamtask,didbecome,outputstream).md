@@ -1,9 +1,10 @@
 # urlSession(_:streamTask:didBecome:outputStream:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Tells the delegate that the stream task has been completed as a result of the stream task calling the [`captureStreams()`](urlsessionstreamtask/capturestreams().md) method.
+Tells the delegate that the stream task has been completed as a result of the stream task calling the [`captureStreams()`](../urlsessionstreamtask/capturestreams%28%29.md) method.
 
 **Availability**:
 - iOS 9.0+
@@ -20,6 +21,10 @@ Tells the delegate that the stream task has been completed as a result of the st
 optional func urlSession(_ session: URLSession, streamTask: URLSessionStreamTask, didBecome inputStream: InputStream, outputStream: OutputStream)
 ```
 
+```objc
+- (void) URLSession:(NSURLSession *) session streamTask:(NSURLSessionStreamTask *) streamTask didBecomeInputStream:(NSInputStream *) inputStream outputStream:(NSOutputStream *) outputStream;
+```
+
 #### Discussion
 
 This delegate method will only be called after all enqueued reads and writes for the stream task have been completed.
@@ -28,8 +33,8 @@ This delegate method will only be called after all enqueued reads and writes for
 
 - `session`: The session of the stream task that has been completed.
 - `streamTask`: The stream task that has been completed.
-- `inputStream`: The created input stream. This [`InputStream`](inputstream.md) object is unopened.
-- `outputStream`: The created output stream. This [`OutputStream`](outputstream.md) object is unopened
+- `inputStream`: The created input stream. This [`InputStream`](../inputstream.md) object is unopened.
+- `outputStream`: The created output stream. This [`OutputStream`](../outputstream.md) object is unopened
 
 
 ---

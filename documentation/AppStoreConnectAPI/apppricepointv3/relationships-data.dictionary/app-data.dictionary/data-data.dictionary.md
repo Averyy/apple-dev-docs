@@ -1,7 +1,8 @@
 # AppPricePointV3.Relationships.App.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update an app price point v3.
 
@@ -10,14 +11,14 @@ The request body you use to update an app price point v3.
 
 ## Declaration
 
-```swift
+```
 object AppPricePointV3.Relationships.App.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `apps`
 
 
 ---

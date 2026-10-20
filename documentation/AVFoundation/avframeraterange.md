@@ -1,7 +1,8 @@
 # AVFrameRateRange
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An immutable type that represents a range of valid frame rates.
 
@@ -19,49 +20,54 @@ An immutable type that represents a range of valid frame rates.
 class AVFrameRateRange
 ```
 
+```objc
+@interface AVFrameRateRange : NSObject
+```
+
 #### Overview
 
 An AVFrameRateRange object is immutable.
 
-An [`AVCaptureDevice.Format`](avcapturedevice/format.md) object wraps a CMFormatDescription and expresses a range of valid video frame rates as an array of `AVFrameRateRange` objects.
+An [`AVCaptureDevice.Format`](./avcapturedevice/format.md) object wraps a CMFormatDescription and expresses a range of valid video frame rates as an array of `AVFrameRateRange` objects.
 
-An [`AVCaptureDevice`](avcapturedevice.md) object uses `AVCaptureDeviceFormat` to describe the formats it supports and the currently-active format.
+An [`AVCaptureDevice`](./avcapturedevice.md) object uses `AVCaptureDeviceFormat` to describe the formats it supports and the currently-active format.
 
 ## Topics
 
 ### Accessing properties
-- [var maxFrameDuration: CMTime](avframeraterange/maxframeduration.md)
+- [var maxFrameDuration: CMTime](./avframeraterange/maxframeduration.md)
   The maximum frame duration supported by the range.
-- [var maxFrameRate: Float64](avframeraterange/maxframerate.md)
+- [var maxFrameRate: Float64](./avframeraterange/maxframerate.md)
   The maximum frame rate supported by the range.
-- [var minFrameDuration: CMTime](avframeraterange/minframeduration.md)
+- [var minFrameDuration: CMTime](./avframeraterange/minframeduration.md)
   The minimum frame duration supported by the range.
-- [var minFrameRate: Float64](avframeraterange/minframerate.md)
+- [var minFrameRate: Float64](./avframeraterange/minframerate.md)
   The minimum frame rate supported by the range.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var isAutoVideoFrameRateSupported: Bool](avcapturedevice/format/isautovideoframeratesupported.md)
+### Determining video capture support
+- [var isAutoVideoFrameRateSupported: Bool](./avcapturedevice/format/isautovideoframeratesupported.md)
   A Boolean value that Indicates whether the format supports performing automatic video frame rate adjustments.
-- [var videoSupportedFrameRateRanges: [AVFrameRateRange]](avcapturedevice/format/videosupportedframerateranges.md)
+- [var videoSupportedFrameRateRanges: [AVFrameRateRange]](./avcapturedevice/format/videosupportedframerateranges.md)
   A list of frame rate ranges that a format supports.
-- [var isVideoBinned: Bool](avcapturedevice/format/isvideobinned.md)
+- [var isVideoBinned: Bool](./avcapturedevice/format/isvideobinned.md)
   A Boolean value that indicates whether the format produces video data in a binned format.
-- [var isVideoHDRSupported: Bool](avcapturedevice/format/isvideohdrsupported.md)
+- [var isVideoHDRSupported: Bool](./avcapturedevice/format/isvideohdrsupported.md)
   A Boolean value that indicates whether the format supports high dynamic range streaming.
-- [var isMultiCamSupported: Bool](avcapturedevice/format/ismulticamsupported.md)
+- [var isMultiCamSupported: Bool](./avcapturedevice/format/ismulticamsupported.md)
   A Boolean value that indicates whether a multi-camera capture session supports this format.
 
 

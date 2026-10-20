@@ -1,7 +1,8 @@
 # view(as:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create a typed `MutableView` of the same storage as this raw view.
 

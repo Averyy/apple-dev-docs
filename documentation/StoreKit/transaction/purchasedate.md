@@ -1,7 +1,8 @@
 # purchaseDate
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date that the App Store charged the user’s account for a purchased or restored product, or for a subscription purchase or renewal after a lapse.
 
@@ -22,7 +23,8 @@ let purchaseDate: Date
 
 ## See Also
 
-- [let expirationDate: Date?](transaction/expirationdate.md)
+### Getting purchase and expiration dates
+- [let expirationDate: Date?](./expirationdate.md)
   The date the subscription expires or renews.
 
 

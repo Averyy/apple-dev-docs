@@ -1,7 +1,8 @@
 # VTMotionBlurParameters
 
 **Framework**: Video Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 This object contains both input and output parameters necessary to run the motion blur processor on a frame.
 
@@ -17,6 +18,10 @@ This object contains both input and output parameters necessary to run the motio
 class VTMotionBlurParameters
 ```
 
+```objc
+@interface VTMotionBlurParameters : NSObject
+```
+
 #### Overview
 
 This object is used in the processWithParameters call of the VTFrameProcessor class. The output parameter is a destinationFrame where the output frame is returned as a VTFrameProcessorFrame back to the caller function once processWithParameters completes.
@@ -26,41 +31,42 @@ The parameters within VTMotionBlurParameters are frame level parameters.
 ## Topics
 
 ### Creating a parameters object
-- [init?(sourceFrame: VTFrameProcessorFrame, nextFrame: VTFrameProcessorFrame?, previousFrame: VTFrameProcessorFrame?, nextOpticalFlow: VTFrameProcessorOpticalFlow?, previousOpticalFlow: VTFrameProcessorOpticalFlow?, motionBlurStrength: Int, submissionMode: VTMotionBlurParameters.SubmissionMode, destinationFrame: VTFrameProcessorFrame)](vtmotionblurparameters/init(sourceframe:nextframe:previousframe:nextopticalflow:previousopticalflow:motionblurstrength:submissionmode:destinationframe:).md)
+- [init?(sourceFrame: VTFrameProcessorFrame, nextFrame: VTFrameProcessorFrame?, previousFrame: VTFrameProcessorFrame?, nextOpticalFlow: VTFrameProcessorOpticalFlow?, previousOpticalFlow: VTFrameProcessorOpticalFlow?, motionBlurStrength: Int, submissionMode: VTMotionBlurParameters.SubmissionMode, destinationFrame: VTFrameProcessorFrame)](./vtmotionblurparameters/init%28sourceframe,nextframe,previousframe,nextopticalflow,previousopticalflow,motionblurstrength,submissionmode,destinationframe%29.md)
 ### Inspecting the parameters
-- [var sourceFrame: VTFrameProcessorFrame](vtmotionblurparameters/sourceframe.md)
+- [var sourceFrame: VTFrameProcessorFrame](./vtmotionblurparameters/sourceframe.md)
   The current source frame.
-- [var nextFrame: VTFrameProcessorFrame?](vtmotionblurparameters/nextframe.md)
+- [var nextFrame: VTFrameProcessorFrame?](./vtmotionblurparameters/nextframe.md)
   The next source frame in presentation time order.
-- [var previousFrame: VTFrameProcessorFrame?](vtmotionblurparameters/previousframe.md)
+- [var previousFrame: VTFrameProcessorFrame?](./vtmotionblurparameters/previousframe.md)
   The previous source frame in presentation time order.
-- [var motionBlurStrength: Int](vtmotionblurparameters/motionblurstrength.md)
+- [var motionBlurStrength: Int](./vtmotionblurparameters/motionblurstrength.md)
   A value that indicates the strength of blur to apply.
-- [var nextOpticalFlow: VTFrameProcessorOpticalFlow?](vtmotionblurparameters/nextopticalflow.md)
+- [var nextOpticalFlow: VTFrameProcessorOpticalFlow?](./vtmotionblurparameters/nextopticalflow.md)
   Optional optical flow object that contains forward and backward optical flow with the next frame.
-- [var previousOpticalFlow: VTFrameProcessorOpticalFlow?](vtmotionblurparameters/previousopticalflow.md)
+- [var previousOpticalFlow: VTFrameProcessorOpticalFlow?](./vtmotionblurparameters/previousopticalflow.md)
   Optional optical flow object that contains forward and backward optical flow with the previous frame.
-- [var submissionMode: VTMotionBlurParameters.SubmissionMode](vtmotionblurparameters/submissionmode-swift.property.md)
+- [var submissionMode: VTMotionBlurParameters.SubmissionMode](./vtmotionblurparameters/submissionmode-swift.property.md)
   A value describing the processing request in a parameters submission object.
-- [VTMotionBlurParameters.SubmissionMode](vtmotionblurparameters/submissionmode-swift.enum.md)
+- [VTMotionBlurParameters.SubmissionMode](./vtmotionblurparameters/submissionmode-swift.enum.md)
   A value describing the processing request in a parameters submission object.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [VTFrameProcessorParameters](vtframeprocessorparameters.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [VTFrameProcessorParameters](./vtframeprocessorparameters.md)
 
 ## See Also
 
-- [class VTMotionBlurConfiguration](vtmotionblurconfiguration.md)
+### Motion blur
+- [class VTMotionBlurConfiguration](./vtmotionblurconfiguration.md)
   A configuration object to enable motion blur on a frame processing session.
 
 

@@ -1,7 +1,8 @@
 # elements
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The elements in the profile as key-value pairs for lookup by name.
 
@@ -19,6 +20,10 @@ The elements in the profile as key-value pairs for lookup by name.
 var elements: [String : GCControllerElement] { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSDictionary<NSString *,GCControllerElement *> * elements;
+```
+
 #### Discussion
 
 Use this property to access elements by name. For example, use the name `“Button A”` to get the face button of an extended gamepad profile.
@@ -27,19 +32,20 @@ Use this property to access elements by name. For example, use the name `“Butt
 button = physicalInputProfile.elements[“Button A”]
 ```
 
-For more button names, see [`Extended gamepad input names`](extended-gamepad-input-names.md).
+For more button names, see [Extended gamepad input names](../extended-gamepad-input-names.md).
 
 ## See Also
 
-- [var buttons: [String : GCControllerButtonInput]](gcphysicalinputprofile/buttons.md)
+### Accessing elements by name or key
+- [var buttons: [String : GCControllerButtonInput]](./buttons.md)
   The buttons in the profile as key-value pairs for lookup by name.
-- [var axes: [String : GCControllerAxisInput]](gcphysicalinputprofile/axes.md)
+- [var axes: [String : GCControllerAxisInput]](./axes.md)
   The axes in the profile as key-value pairs for lookup by name.
-- [var dpads: [String : GCControllerDirectionPad]](gcphysicalinputprofile/dpads.md)
+- [var dpads: [String : GCControllerDirectionPad]](./dpads.md)
   The directional pads in the profile as key-value pairs for lookup by name.
-- [var touchpads: [String : GCControllerTouchpad]](gcphysicalinputprofile/touchpads.md)
+- [var touchpads: [String : GCControllerTouchpad]](./touchpads.md)
   The touchpads in the profile as key-value pairs for lookup by name.
-- [subscript(String) -> GCControllerElement?](gcphysicalinputprofile/subscript(_:).md)
+- [subscript(String) -> GCControllerElement?](./subscript%28_%29.md)
   Returns the element that the key specifies.
 
 

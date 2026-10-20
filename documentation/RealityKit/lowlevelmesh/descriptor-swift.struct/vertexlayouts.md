@@ -1,7 +1,8 @@
 # vertexLayouts
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of layouts.
 
@@ -21,15 +22,16 @@ var vertexLayouts: [LowLevelMesh.Layout] { get set }
 
 #### Discussion
 
-You assign a layout for each vertex attribute with [`layoutIndex`](lowlevelmesh/attribute/layoutindex.md).
+You assign a layout for each vertex attribute with [`layoutIndex`](../attribute/layoutindex.md).
 
 ## See Also
 
-- [var indexType: MTLIndexType](lowlevelmesh/descriptor-swift.struct/indextype.md)
+### Defining the descriptor’s contents
+- [var indexType: MTLIndexType](./indextype.md)
   The data type of the indices that the index buffer stores.
-- [var vertexAttributes: [LowLevelMesh.Attribute]](lowlevelmesh/descriptor-swift.struct/vertexattributes.md)
+- [var vertexAttributes: [LowLevelMesh.Attribute]](./vertexattributes.md)
   An array that describes the vertex input attributes to a vertex function.
-- [var vertexBufferCount: Int](lowlevelmesh/descriptor-swift.struct/vertexbuffercount.md)
+- [var vertexBufferCount: Int](./vertexbuffercount.md)
   The number of buffers this descriptor uses.
 
 

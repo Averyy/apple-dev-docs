@@ -1,7 +1,8 @@
 # errSecInvalidOutputVector
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The output vector is not valid.
 
@@ -18,6 +19,10 @@ The output vector is not valid.
 
 ```swift
 var errSecInvalidOutputVector: OSStatus { get }
+```
+
+```c
+errSecInvalidOutputVector
 ```
 
 

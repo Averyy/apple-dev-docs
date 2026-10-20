@@ -1,7 +1,8 @@
 # ASAuthorizationAppleIDButton
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A control you add to your interface that enables users to initiate the Sign In with Apple flow.
 
@@ -19,78 +20,91 @@ A control you add to your interface that enables users to initiate the Sign In w
 class ASAuthorizationAppleIDButton
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@interface ASAuthorizationAppleIDButton : UIControl
+```
+
+*macOS*
+
+```objc
+@interface ASAuthorizationAppleIDButton : NSControl
+```
+
 #### Overview
 
-Choose one of the built-in button styles and types, and change the corner radius of the button by setting the [`cornerRadius`](asauthorizationappleidbutton/cornerradius.md) property, but don’t otherwise modify the style of the button. Don’t use an Apple ID authorization button for any purpose other than to initiate the Sign In with Apple flow.
+Choose one of the built-in button styles and types, and change the corner radius of the button by setting the [`cornerRadius`](./asauthorizationappleidbutton/cornerradius.md) property, but don’t otherwise modify the style of the button. Don’t use an Apple ID authorization button for any purpose other than to initiate the Sign In with Apple flow.
 
-After the user taps the button, create a request using the provider, and then use an instance of [`ASAuthorizationController`](asauthorizationcontroller.md) to execute the request.
+After the user taps the button, create a request using the provider, and then use an instance of [`ASAuthorizationController`](./asauthorizationcontroller.md) to execute the request.
 
-For more information about which Sign in with Apple buttons are available on different Apple platforms, see [`Displaying Sign in with Apple buttons in your app`](https://developer.apple.com/documentation/signinwithapple/displaying-sign-in-with-apple-buttons-in-your-app).
+For more information about which Sign in with Apple buttons are available on different Apple platforms, see [Displaying Sign in with Apple buttons in your app](../SigninwithApple/displaying-sign-in-with-apple-buttons-in-your-app.md).
 
 ## Topics
 
 ### Initializers
-- [init(authorizationButtonType: ASAuthorizationAppleIDButton.ButtonType, authorizationButtonStyle: ASAuthorizationAppleIDButton.Style)](asauthorizationappleidbutton/init(authorizationbuttontype:authorizationbuttonstyle:).md)
+- [init(authorizationButtonType: ASAuthorizationAppleIDButton.ButtonType, authorizationButtonStyle: ASAuthorizationAppleIDButton.Style)](./asauthorizationappleidbutton/init%28authorizationbuttontype,authorizationbuttonstyle%29.md)
   Creates a new Sign In with Apple authorization button with the given type and style.
-- [convenience init(type: ASAuthorizationAppleIDButton.ButtonType, style: ASAuthorizationAppleIDButton.Style)](asauthorizationappleidbutton/init(type:style:).md)
+- [convenience init(type: ASAuthorizationAppleIDButton.ButtonType, style: ASAuthorizationAppleIDButton.Style)](./asauthorizationappleidbutton/init%28type,style%29.md)
   Creates a new Sign In with Apple authorization button with the given type and style.
 ### Styling the Button
-- [var cornerRadius: CGFloat](asauthorizationappleidbutton/cornerradius.md)
+- [var cornerRadius: CGFloat](./asauthorizationappleidbutton/cornerradius.md)
   The radius, in points, for the rounded corners on the Apple ID sign-in button.
-- [ASAuthorizationAppleIDButton.Style](asauthorizationappleidbutton/style.md)
+- [ASAuthorizationAppleIDButton.Style](./asauthorizationappleidbutton/style.md)
   A style for the authorization button.
-- [ASAuthorizationAppleIDButton.ButtonType](asauthorizationappleidbutton/buttontype.md)
+- [ASAuthorizationAppleIDButton.ButtonType](./asauthorizationappleidbutton/buttontype.md)
   A type for the authorization button.
 
 ## Relationships
 
 ### Inherits From
-- [NSControl](../appkit/nscontrol.md)
-- [UIControl](../uikit/uicontrol.md)
+- [NSControl](../AppKit/nscontrol.md)
+- [UIControl](../UIKit/uicontrol.md)
 ### Conforms To
-- [CALayerDelegate](../quartzcore/calayerdelegate.md)
-- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
-- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityButton](../appkit/nsaccessibilitybutton.md)
-- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearance](../uikit/uiappearance.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UIContextMenuInteractionDelegate](../uikit/uicontextmenuinteractiondelegate.md)
-- [UICoordinateSpace](../uikit/uicoordinatespace.md)
-- [UIDynamicItem](../uikit/uidynamicitem.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIFocusItem](../uikit/uifocusitem.md)
-- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
-- [UILargeContentViewerItem](../uikit/uilargecontentvieweritem.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CALayerDelegate](../QuartzCore/calayerdelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/cmbodyidentifiable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityButton](../AppKit/nsaccessibilitybutton.md)
+- [NSAccessibilityElementProtocol](../AppKit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../AppKit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../AppKit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../AppKit/nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](../AppKit/nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIAccessibilityIdentification](../UIKit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../UIKit/uiappearance.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UIContextMenuInteractionDelegate](../UIKit/uicontextmenuinteractiondelegate.md)
+- [UICoordinateSpace](../UIKit/uicoordinatespace.md)
+- [UIDynamicItem](../UIKit/uidynamicitem.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIFocusItem](../UIKit/uifocusitem.md)
+- [UIFocusItemContainer](../UIKit/uifocusitemcontainer.md)
+- [UILargeContentViewerItem](../UIKit/uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](../UIKit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [class WKInterfaceAuthorizationAppleIDButton](../watchkit/wkinterfaceauthorizationappleidbutton.md)
+### Offering Sign In with Apple
+- [class WKInterfaceAuthorizationAppleIDButton](../WatchKit/wkinterfaceauthorizationappleidbutton.md)
   A button that you can use to trigger a Sign in with Apple request.
 
 

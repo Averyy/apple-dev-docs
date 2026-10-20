@@ -1,7 +1,8 @@
 # useResidencySets(_:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies multiple residency sets to a command buffer.
 
@@ -21,11 +22,11 @@ func useResidencySets(_ residencySets: [any MTLResidencySet])
 
 #### Discussion
 
-Each command buffer can maintain a list of up to 32 different residency sets. See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-resource-management-with-residency-sets.md) and [`MTLResidencySet`](mtlresidencyset.md) for more information.
+Each command buffer can maintain a list of up to 32 different residency sets. See [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md) and [`MTLResidencySet`](../mtlresidencyset.md) for more information.
 
 ## Parameters
 
-- `residencySets`: An array of residency sets, each of which contains resource allocations, such as [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), and [`MTLHeap`](mtlheap.md) instances.
+- `residencySets`: An array of residency sets, each of which contains resource allocations, such as [`MTLBuffer`](../mtlbuffer.md), [`MTLTexture`](../mtltexture.md), and [`MTLHeap`](../mtlheap.md) instances.
 
 
 ---

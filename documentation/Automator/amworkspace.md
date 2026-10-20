@@ -1,7 +1,8 @@
 # AMWorkspace
 
 **Framework**: Automator  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A workspace for running an Automator workflow.
 
@@ -15,38 +16,43 @@ A workspace for running an Automator workflow.
 class AMWorkspace
 ```
 
+```objc
+@interface AMWorkspace : NSObject
+```
+
 #### Overview
 
-The [`AMWorkspace`](amworkspace.md) class provides access to the shared workspace in the Automator framework, where you can run workflows without a workflow controller. Use [`shared`](amworkspace/shared.md) to access the shared workspace and [`runWorkflow(atPath:withInput:)`](amworkspace/runworkflow(atpath:withinput:).md) to run your workflow in it.
+The [`AMWorkspace`](./amworkspace.md) class provides access to the shared workspace in the Automator framework, where you can run workflows without a workflow controller. Use [`shared`](./amworkspace/shared.md) to access the shared workspace and [`runWorkflow(atPath:withInput:)`](./amworkspace/runworkflow%28atpath,withinput%29.md) to run your workflow in it.
 
 ## Topics
 
 ### Accessing the Shared Workspace
-- [class var shared: AMWorkspace!](amworkspace/shared.md)
+- [class var shared: AMWorkspace!](./amworkspace/shared.md)
   The shared workspace object.
 ### Running Workflows
-- [func runWorkflow(atPath: String!, withInput: Any!) throws -> Any](amworkspace/runworkflow(atpath:withinput:).md)
+- [func runWorkflow(atPath: String!, withInput: Any!) throws -> Any](./amworkspace/runworkflow%28atpath,withinput%29.md)
   Loads and runs the specified workflow file.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AMWorkflow](amworkflow.md)
+### Workflows
+- [class AMWorkflow](./amworkflow.md)
   An object that lets you use an Automator workflow in your app.
-- [class AMWorkflowController](amworkflowcontroller.md)
+- [class AMWorkflowController](./amworkflowcontroller.md)
   An object that lets you manage an Automator workflow in your app.
-- [class AMWorkflowView](amworkflowview.md)
+- [class AMWorkflowView](./amworkflowview.md)
   An object that lets you view and edit Automator workflows in your app.
 
 

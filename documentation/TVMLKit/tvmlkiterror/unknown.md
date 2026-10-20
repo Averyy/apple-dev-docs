@@ -1,12 +1,15 @@
 # TVMLKitError.unknown
 
 **Framework**: TVMLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Unable to determine the cause of the error.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,13 +17,18 @@ Unable to determine the cause of the error.
 case unknown
 ```
 
+```c
+TVMLKitErrorUnknown
+```
+
 ## See Also
 
-- [TVMLKitError.failedToLaunch](tvmlkiterror/failedtolaunch.md)
+### Errors
+- [TVMLKitError.failedToLaunch](./failedtolaunch.md)
   The app failed to launch.
-- [TVMLKitError.internetUnavailable](tvmlkiterror/internetunavailable.md)
+- [TVMLKitError.internetUnavailable](./internetunavailable.md)
   No connection to the Internet is available.
-- [TVMLKitError.last](tvmlkiterror/last.md)
+- [TVMLKitError.last](./last.md)
   Reserved.
 
 

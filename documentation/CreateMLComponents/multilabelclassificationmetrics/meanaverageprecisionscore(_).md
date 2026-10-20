@@ -1,7 +1,8 @@
 # meanAveragePrecisionScore(_:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Computes the mean average precision.
 
@@ -20,6 +21,8 @@ Computes the mean average precision.
 static func meanAveragePrecisionScore(_ pairs: some Sequence<(classification: ClassificationDistribution<Label>, labels: Set<Label>)>) -> Float
 ```
 
+Available when `Label` conforms to `Hashable`.
+
 #### Return Value
 
 The mean average precision.
@@ -34,11 +37,12 @@ An average precision score summarizes the precision-recall curve for a label. Th
 
 ## See Also
 
-- [static func meanAveragePrecisionScore(some Sequence<(classification: ClassificationDistribution<Label>, labels: Set<Label>)>, labels: Set<Label>) -> Float](multilabelclassificationmetrics/meanaverageprecisionscore(_:labels:).md)
+### Computing the precision
+- [static func meanAveragePrecisionScore(some Sequence<(classification: ClassificationDistribution<Label>, labels: Set<Label>)>, labels: Set<Label>) -> Float](./meanaverageprecisionscore%28_,labels%29.md)
   Computes the mean average precision.
-- [static func meanAveragePrecisionScore(classifications: some Sequence<ClassificationDistribution<Label>>, groundTruth: some Sequence<Set<Label>>) -> Float](multilabelclassificationmetrics/meanaverageprecisionscore(classifications:groundtruth:).md)
+- [static func meanAveragePrecisionScore(classifications: some Sequence<ClassificationDistribution<Label>>, groundTruth: some Sequence<Set<Label>>) -> Float](./meanaverageprecisionscore%28classifications,groundtruth%29.md)
   Computes the mean average precision.
-- [static func meanAveragePrecisionScore(classifications: some Sequence<ClassificationDistribution<Label>>, groundTruth: some Sequence<Set<Label>>, labels: Set<Label>) -> Float](multilabelclassificationmetrics/meanaverageprecisionscore(classifications:groundtruth:labels:).md)
+- [static func meanAveragePrecisionScore(classifications: some Sequence<ClassificationDistribution<Label>>, groundTruth: some Sequence<Set<Label>>, labels: Set<Label>) -> Float](./meanaverageprecisionscore%28classifications,groundtruth,labels%29.md)
   Computes the mean average precision.
 
 

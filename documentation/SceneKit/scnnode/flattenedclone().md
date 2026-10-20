@@ -1,23 +1,28 @@
 # flattenedClone()
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an optimized copy of the node and its children.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 func flattenedClone() -> Self
+```
+
+```objc
+- (instancetype) flattenedClone;
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ Rendering complex node hierarchies can incur a performance cost. Each geometry a
 
 ## See Also
 
-- [func clone() -> Self](scnnode/clone.md)
+### Copying a Node
+- [func clone() -> Self](./clone%28%29.md)
   Creates a copy of the node and its children.
 
 

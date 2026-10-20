@@ -1,7 +1,8 @@
 # isPunctuation
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether this character represents punctuation.
 
@@ -32,17 +33,18 @@ For example, the following characters all represent punctuation:
 
 ## See Also
 
-- [var isLetter: Bool](character/isletter.md)
+### Inspecting a Character
+- [var isLetter: Bool](./isletter.md)
   A Boolean value indicating whether this character is a letter.
-- [var isNewline: Bool](character/isnewline.md)
+- [var isNewline: Bool](./isnewline.md)
   A Boolean value indicating whether this character represents a newline.
-- [var isWhitespace: Bool](character/iswhitespace.md)
+- [var isWhitespace: Bool](./iswhitespace.md)
   A Boolean value indicating whether this character represents whitespace, including newlines.
-- [var isSymbol: Bool](character/issymbol.md)
+- [var isSymbol: Bool](./issymbol.md)
   A Boolean value indicating whether this character represents a symbol.
-- [var isMathSymbol: Bool](character/ismathsymbol.md)
+- [var isMathSymbol: Bool](./ismathsymbol.md)
   A Boolean value indicating whether this character represents a symbol that naturally appears in mathematical contexts.
-- [var isCurrencySymbol: Bool](character/iscurrencysymbol.md)
+- [var isCurrencySymbol: Bool](./iscurrencysymbol.md)
   A Boolean value indicating whether this character represents a currency symbol.
 
 

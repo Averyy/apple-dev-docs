@@ -1,7 +1,8 @@
 # HKWorkoutActivityType.snowboarding
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constant for snowboarding.
 
@@ -19,9 +20,13 @@ The constant for snowboarding.
 case snowboarding
 ```
 
+```c
+HKWorkoutActivityTypeSnowboarding
+```
+
 ## Mentions
 
-- [Receiving Downhill Skiing and Snowboarding Data](receiving-downhill-skiing-and-snowboarding-data.md)
+- [Receiving Downhill Skiing and Snowboarding Data](../receiving-downhill-skiing-and-snowboarding-data.md)
 
 #### Discussion
 
@@ -30,20 +35,21 @@ HealthKit estimates calories for this activity based on the data from Apple Watc
 ## Topics
 
 ### Monitoring Downhill Skiing Workout Sessions
-- [Receiving Downhill Skiing and Snowboarding Data](receiving-downhill-skiing-and-snowboarding-data.md)
+- [Receiving Downhill Skiing and Snowboarding Data](../receiving-downhill-skiing-and-snowboarding-data.md)
   Receive segments and distance samples during downhill skiing and snowboarding workout sessions.
 
 ## See Also
 
-- [HKWorkoutActivityType.crossCountrySkiing](hkworkoutactivitytype/crosscountryskiing.md)
+### Snow and ice sports
+- [HKWorkoutActivityType.crossCountrySkiing](./crosscountryskiing.md)
   The constant for cross country skiing.
-- [HKWorkoutActivityType.curling](hkworkoutactivitytype/curling.md)
+- [HKWorkoutActivityType.curling](./curling.md)
   The constant for curling.
-- [HKWorkoutActivityType.downhillSkiing](hkworkoutactivitytype/downhillskiing.md)
+- [HKWorkoutActivityType.downhillSkiing](./downhillskiing.md)
   The constant for downhill skiing.
-- [HKWorkoutActivityType.snowSports](hkworkoutactivitytype/snowsports.md)
+- [HKWorkoutActivityType.snowSports](./snowsports.md)
   The constant for a variety of snow sports, including sledding, snowmobiling, or building a snowman.
-- [HKWorkoutActivityType.skatingSports](hkworkoutactivitytype/skatingsports.md)
+- [HKWorkoutActivityType.skatingSports](./skatingsports.md)
   The constant for skating activities, including ice skating, speed skating, inline skating, and skateboarding.
 
 

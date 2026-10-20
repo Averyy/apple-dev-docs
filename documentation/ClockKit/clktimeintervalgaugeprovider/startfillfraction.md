@@ -1,12 +1,15 @@
 # startFillFraction
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the leading edge of the time bar within the specified time interval.
 
 **Availability**:
-- watchOS 5.0+
+- watchOS 5.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -14,13 +17,18 @@ The position of the leading edge of the time bar within the specified time inter
 var startFillFraction: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float startFillFraction;
+```
+
 ## See Also
 
-- [var startDate: Date](clktimeintervalgaugeprovider/startdate.md)
+### Getting Information about the Gauge
+- [var startDate: Date](./startdate.md)
   The starting time and date for the gauge’s time interval.
-- [var endDate: Date](clktimeintervalgaugeprovider/enddate.md)
+- [var endDate: Date](./enddate.md)
   The ending time and date for the gauge’s time interval.
-- [var endFillFraction: Float](clktimeintervalgaugeprovider/endfillfraction.md)
+- [var endFillFraction: Float](./endfillfraction.md)
   The position of the trailing edge of the time bar within the specified time interval.
 
 

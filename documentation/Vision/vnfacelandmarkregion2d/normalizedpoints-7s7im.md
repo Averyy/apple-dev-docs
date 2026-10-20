@@ -1,7 +1,8 @@
 # normalizedPoints
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of normalized landmark points.
 
@@ -21,7 +22,8 @@ var normalizedPoints: [CGPoint] { get }
 
 ## See Also
 
-- [var precisionEstimatesPerPoint: [Float]?](vnfacelandmarkregion2d/precisionestimatesperpoint-5jl22.md)
+### Specifying Region Properties
+- [var precisionEstimatesPerPoint: [Float]?](./precisionestimatesperpoint-5jl22.md)
   Requests an array of precision estimates for each landmark point.
 
 

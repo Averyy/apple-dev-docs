@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: ExtensionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that provides information about the scene.
 

@@ -1,23 +1,25 @@
 # kIOLockAssertNotOwned
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOLockAssertNotOwned
 ```
 
 ## See Also
 
-- [kIOLockAssertOwned](iolockassertstate/kiolockassertowned.md)
+### Constants
+- [kIOLockAssertOwned](./kiolockassertowned.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # writeAttributeLabelList(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeLabelList(withValue value: [Any], completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeLabelList(withValue value: [Any]) async throws
+```
+
+```objc
+- (void) writeAttributeLabelListWithValue:(NSArray *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

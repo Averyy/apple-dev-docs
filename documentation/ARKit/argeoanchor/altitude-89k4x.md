@@ -1,7 +1,8 @@
 # altitude
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Vertical distance, in meters, between this anchor and sea level.
 
@@ -18,13 +19,14 @@ var altitude: CLLocationDistance? { get }
 
 #### Discussion
 
-Negative values indicate below sea level. This property is valid only when [`altitudeSource`](argeoanchor/altitudesource-swift.property.md) is a value other than [`ARGeoAnchor.AltitudeSource.unknown`](argeoanchor/altitudesource-swift.enum/unknown.md).
+Negative values indicate below sea level. This property is valid only when [`altitudeSource`](./altitudesource-swift.property.md) is a value other than [`ARGeoAnchor.AltitudeSource.unknown`](./altitudesource-swift.enum/unknown.md).
 
 ## See Also
 
-- [var altitudeSource: ARGeoAnchor.AltitudeSource](argeoanchor/altitudesource-swift.property.md)
+### Defining Altitude
+- [var altitudeSource: ARGeoAnchor.AltitudeSource](./altitudesource-swift.property.md)
   A record of the source from which an altitude came.
-- [ARGeoAnchor.AltitudeSource](argeoanchor/altitudesource-swift.enum.md)
+- [ARGeoAnchor.AltitudeSource](./altitudesource-swift.enum.md)
   Options for setting a location anchor’s altitude.
 
 

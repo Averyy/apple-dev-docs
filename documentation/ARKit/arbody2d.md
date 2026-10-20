@@ -1,7 +1,8 @@
 # ARBody2D
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The screen-space representation of a person ARKit recognizes in the camera feed.
 
@@ -15,39 +16,44 @@ The screen-space representation of a person ARKit recognizes in the camera feed.
 class ARBody2D
 ```
 
+```objc
+@interface ARBody2D : NSObject
+```
+
 #### Overview
 
-When ARKit recognizes a person in the camera feed, it estimates the screen-space location of the body’s joints and provides the location to you through current frame’s [`detectedBody`](arframe/detectedbody.md).
+When ARKit recognizes a person in the camera feed, it estimates the screen-space location of the body’s joints and provides the location to you through current frame’s [`detectedBody`](./arframe/detectedbody.md).
 
 ## Topics
 
 ### Getting Joint Information
-- [var skeleton: ARSkeleton2D](arbody2d/skeleton.md)
+- [var skeleton: ARSkeleton2D](./arbody2d/skeleton.md)
   An object that contains the screen position of a body’s joints.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var detectedBody: ARBody2D?](arframe/detectedbody.md)
+### Checking for people
+- [var detectedBody: ARBody2D?](./arframe/detectedbody.md)
   The screen position information of a body that ARKit recognizes in the camera image.
-- [var segmentationBuffer: CVPixelBuffer?](arframe/segmentationbuffer.md)
+- [var segmentationBuffer: CVPixelBuffer?](./arframe/segmentationbuffer.md)
   A buffer that contains pixel information identifying the shape of objects from the camera feed that you use to occlude virtual content.
-- [var estimatedDepthData: CVPixelBuffer?](arframe/estimateddepthdata.md)
+- [var estimatedDepthData: CVPixelBuffer?](./arframe/estimateddepthdata.md)
   A buffer that represents the estimated depth values from the camera feed that you use to occlude virtual content.
-- [ARFrame.SegmentationClass](arframe/segmentationclass.md)
+- [ARFrame.SegmentationClass](./arframe/segmentationclass.md)
   A categorization of a pixel that defines a type of content you use to occlude your app’s virtual content.
 
 

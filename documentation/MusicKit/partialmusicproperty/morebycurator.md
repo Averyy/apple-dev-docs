@@ -1,7 +1,8 @@
 # moreByCurator
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the association property that returns a collection of additional playlists by the same curator.
 
@@ -19,6 +20,8 @@ An identifier for the association property that returns a collection of addition
 ```swift
 static let moreByCurator: MusicRelationshipProperty<Playlist, Playlist>
 ```
+
+Available when `Root` is `Playlist`.
 
 
 ---

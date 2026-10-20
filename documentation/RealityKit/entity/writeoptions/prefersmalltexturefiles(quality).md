@@ -1,7 +1,8 @@
 # preferSmallTextureFiles(quality:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Reduce textures’ file size while preserving its dimensions.
 
@@ -24,13 +25,14 @@ The returned option instructs RealityKit to encode textures using smaller file r
 
 > ⚠️ **Warning**: While writing smaller texture files reduces the size of reality files on disk, loading those textures can increase memory usage and load times compared to the default compressed format. Larger memory region can also consume more power during rendering due to increased cache pressure.
 
-> **Note**: RealityKit ignores this option for textures created with [`none`](textureresource/compression/none.md).
+> **Note**: RealityKit ignores this option for textures created with [`none`](../../textureresource/compression/none.md).
 
 ## See Also
 
-- [static var preferFastExport: Entity.WriteOptions](entity/writeoptions/preferfastexport.md)
+### Configuring export options
+- [static var preferFastExport: Entity.WriteOptions](./preferfastexport.md)
   Expedite the reality file export when possible.
-- [Entity.WriteOptions.TextureQuality](entity/writeoptions/texturequality.md)
+- [Entity.WriteOptions.TextureQuality](./texturequality.md)
   A texture quality level.
 
 

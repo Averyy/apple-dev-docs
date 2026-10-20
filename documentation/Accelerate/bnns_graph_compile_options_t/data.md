@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to the opaque compilation options object.
 
@@ -20,9 +21,14 @@ A pointer to the opaque compilation options object.
 var data: UnsafeMutableRawPointer?
 ```
 
+```c
+void * data;
+```
+
 ## See Also
 
-- [var size: Int](bnns_graph_compile_options_t/size.md)
+### Specifying an options structure’s properties
+- [var size: Int](./size.md)
   The size, in bytes, of the opaque compilation options object.
 
 

@@ -1,7 +1,8 @@
 # PencilSqueezeGesturePhase.ended(_:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user successfully completed a squeeze gesture.
 

@@ -1,7 +1,8 @@
 # write(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the character into the given output stream.
 

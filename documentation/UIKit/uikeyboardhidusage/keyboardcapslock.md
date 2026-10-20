@@ -1,7 +1,8 @@
 # UIKeyboardHIDUsage.keyboardCapsLock
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The raw usage code 57 (decimal)/39 (hexadecimal).
 
@@ -18,27 +19,32 @@ The raw usage code 57 (decimal)/39 (hexadecimal).
 case keyboardCapsLock
 ```
 
+```c
+UIKeyboardHIDUsageKeyboardCapsLock
+```
+
 ## See Also
 
-- [UIKeyboardHIDUsage.keyboardLeftAlt](uikeyboardhidusage/keyboardleftalt.md)
+### Modifier keys
+- [UIKeyboardHIDUsage.keyboardLeftAlt](./keyboardleftalt.md)
   The raw usage code 226 (decimal)/E2 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardLeftControl](uikeyboardhidusage/keyboardleftcontrol.md)
+- [UIKeyboardHIDUsage.keyboardLeftControl](./keyboardleftcontrol.md)
   The raw usage code 224 (decimal)/E0 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardLeftShift](uikeyboardhidusage/keyboardleftshift.md)
+- [UIKeyboardHIDUsage.keyboardLeftShift](./keyboardleftshift.md)
   The raw usage code 225 (decimal)/E1 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardLockingCapsLock](uikeyboardhidusage/keyboardlockingcapslock.md)
+- [UIKeyboardHIDUsage.keyboardLockingCapsLock](./keyboardlockingcapslock.md)
   The raw usage code 130 (decimal)/82 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardLockingNumLock](uikeyboardhidusage/keyboardlockingnumlock.md)
+- [UIKeyboardHIDUsage.keyboardLockingNumLock](./keyboardlockingnumlock.md)
   The raw usage code 131 (decimal)/83 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardLockingScrollLock](uikeyboardhidusage/keyboardlockingscrolllock.md)
+- [UIKeyboardHIDUsage.keyboardLockingScrollLock](./keyboardlockingscrolllock.md)
   The raw usage code 132 (decimal)/84 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardRightAlt](uikeyboardhidusage/keyboardrightalt.md)
+- [UIKeyboardHIDUsage.keyboardRightAlt](./keyboardrightalt.md)
   The raw usage code 230 (decimal)/E6 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardRightControl](uikeyboardhidusage/keyboardrightcontrol.md)
+- [UIKeyboardHIDUsage.keyboardRightControl](./keyboardrightcontrol.md)
   The raw usage code 228 (decimal)/E4 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardRightShift](uikeyboardhidusage/keyboardrightshift.md)
+- [UIKeyboardHIDUsage.keyboardRightShift](./keyboardrightshift.md)
   The raw usage code 229 (decimal)/E5 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardScrollLock](uikeyboardhidusage/keyboardscrolllock.md)
+- [UIKeyboardHIDUsage.keyboardScrollLock](./keyboardscrolllock.md)
   The raw usage code 71 (decimal)/47 (hexadecimal).
 
 

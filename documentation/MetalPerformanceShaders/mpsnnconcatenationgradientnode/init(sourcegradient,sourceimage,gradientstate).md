@@ -1,7 +1,8 @@
 # init(sourceGradient:sourceImage:gradientState:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 init(sourceGradient gradientSourceNode: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode)
+```
+
+```objc
+- (instancetype) initWithSourceGradient:(MPSNNImageNode *) gradientSourceNode sourceImage:(MPSNNImageNode *) sourceImage gradientState:(MPSNNGradientStateNode *) gradientState;
 ```
 
 

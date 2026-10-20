@@ -1,7 +1,8 @@
 # emission
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color emitted as radiance from a material’s surface.
 
@@ -19,6 +20,10 @@ The color emitted as radiance from a material’s surface.
 var emission: MDLMaterialProperty { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly) MDLMaterialProperty * emission;
+```
+
 #### Discussion
 
 A renderer (or other software component processing the material) might not treat the emission channel of a material as a light source illuminating the scene. Instead, an emission channel prevents affected areas of a surface from being darkened by other aspects of lighting and shading.
@@ -27,19 +32,20 @@ The default emission color is light gray (80% white).
 
 ## See Also
 
-- [var baseColor: MDLMaterialProperty](mdlscatteringfunction/basecolor.md)
+### Working with Shading Properties
+- [var baseColor: MDLMaterialProperty](./basecolor.md)
   The inherent color of the material, to be used as a modulator during shading.
-- [var specular: MDLMaterialProperty](mdlscatteringfunction/specular.md)
+- [var specular: MDLMaterialProperty](./specular.md)
   The intensity of specular highlights on the material’s surface.
-- [var materialIndexOfRefraction: MDLMaterialProperty](mdlscatteringfunction/materialindexofrefraction.md)
+- [var materialIndexOfRefraction: MDLMaterialProperty](./materialindexofrefraction.md)
   The index of refraction for the medium surrounding a material.
-- [var interfaceIndexOfRefraction: MDLMaterialProperty](mdlscatteringfunction/interfaceindexofrefraction.md)
+- [var interfaceIndexOfRefraction: MDLMaterialProperty](./interfaceindexofrefraction.md)
   The index of refraction for a material itself.
-- [var normal: MDLMaterialProperty](mdlscatteringfunction/normal.md)
+- [var normal: MDLMaterialProperty](./normal.md)
   The variation in the surface normal vectors in a material, relative to model coordinate space.
-- [var ambientOcclusion: MDLMaterialProperty](mdlscatteringfunction/ambientocclusion.md)
+- [var ambientOcclusion: MDLMaterialProperty](./ambientocclusion.md)
   The attenuation of ambient light due to local geometry variations on a surface.
-- [var ambientOcclusionScale: MDLMaterialProperty](mdlscatteringfunction/ambientocclusionscale.md)
+- [var ambientOcclusionScale: MDLMaterialProperty](./ambientocclusionscale.md)
   The scaling factor for ambient occlusion shading.
 
 

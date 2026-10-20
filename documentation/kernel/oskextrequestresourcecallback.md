@@ -1,7 +1,8 @@
 # OSKextRequestResourceCallback
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Invoked to provide results for a kext resource request.
 
@@ -10,7 +11,7 @@ Invoked to provide results for a kext resource request.
 
 ## Declaration
 
-```swift
+```c
 typedef void (*OSKextRequestResourceCallback)(OSKextRequestTag requestTag, OSReturn result, const void *resourceData, uint32_t resourceDataLength, void *context);
 ```
 
@@ -20,16 +21,17 @@ typedef void (*OSKextRequestResourceCallback)(OSKextRequestTag requestTag, OSRet
 - `result`: The result of the request: `kOSReturnSuccess` if the request was fulfilled; `kOSKextReturnTimeout` if the request has timed out; `kOSKextReturnStopping` if the kext containing the callback address for the kext is being unloaded; or other values on error.
 - `resourceData`: A pointer to the requested resource data. Owned by the system; the kext should make a copy if it needs to keep the data past the callback.
 - `resourceDataLength`: The length of `resourceData`.
-- `context`: The context pointer originally passed to [`OSKextRequestResource`](1508294-oskextrequestresource.md).
+- `context`: The context pointer originally passed to [`OSKextRequestResource`](./api-1508294-oskextrequestresource.md).
 
 ## See Also
 
-- [OSActionAbortedHandler](osactionabortedhandler.md)
-- [OSActionCancelHandler](osactioncancelhandler.md)
-- [OSDispatchMethod](osdispatchmethod.md)
-- [OSObjectApplierFunction](osobjectapplierfunction.md)
-- [OSSerializerBlock](osserializerblock.md)
-- [OSSerializerCallback](osserializercallback.md)
+### Callback Methods
+- [OSActionAbortedHandler](./osactionabortedhandler.md)
+- [OSActionCancelHandler](./osactioncancelhandler.md)
+- [OSDispatchMethod](./osdispatchmethod.md)
+- [OSObjectApplierFunction](./osobjectapplierfunction.md)
+- [OSSerializerBlock](./osserializerblock.md)
+- [OSSerializerCallback](./osserializercallback.md)
 
 
 ---

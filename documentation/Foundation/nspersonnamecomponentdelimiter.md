@@ -1,7 +1,8 @@
 # NSPersonNameComponentDelimiter
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 9.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let NSPersonNameComponentDelimiter: String
+```
+
+```c
+extern NSString * const NSPersonNameComponentDelimiter;
 ```
 
 #### Discussion

@@ -1,21 +1,26 @@
 # location(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the current location of the touch in the coordinate system of the given node.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func location(in node: SKNode) -> CGPoint
+```
+
+```objc
+- (CGPoint) locationInNode:(SKNode *) node;
 ```
 
 #### Return Value
@@ -28,7 +33,8 @@ The location of the touch in the node’s coordinate system.
 
 ## See Also
 
-- [func previousLocation(in: SKNode) -> CGPoint](uitouch/previouslocation(in:)-ea29.md)
+### Working with touch events in SpriteKit
+- [func previousLocation(in: SKNode) -> CGPoint](./previouslocation%28in%29-ea29.md)
   Returns the previous location of the touch in the coordinate system of the given node.
 
 

@@ -1,7 +1,8 @@
 # WKInterfaceMap
 
 **Framework**: WatchKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interface element that displays a noninteractive map for the location you specify.
 
@@ -14,9 +15,13 @@ An interface element that displays a noninteractive map for the location you spe
 class WKInterfaceMap
 ```
 
+```objc
+@interface WKInterfaceMap : WKInterfaceObject
+```
+
 #### Overview
 
-You can configure Maps dynamically from your interface controller. Use the methods of [`WKInterfaceMap`](wkinterfacemap.md) to specify the visible region of the map and to add any annotations or points of interest. Tapping the map launches the Maps app on the user’s Apple Watch and displays the corresponding location.
+You can configure Maps dynamically from your interface controller. Use the methods of [`WKInterfaceMap`](./wkinterfacemap.md) to specify the visible region of the map and to add any annotations or points of interest. Tapping the map launches the Maps app on the user’s Apple Watch and displays the corresponding location.
 
 Using a map object, you specify a geographic region to display and you can optionally add annotations to the surface of the map. Maps display annotations as images on top of the map content. You can use custom images or display the built-in pin images. Maps can display no more than five annotations at a time.
 
@@ -45,67 +50,68 @@ In Xcode, you can configure information about your map from your storyboard file
 ## Topics
 
 ### Specifying the Map Region
-- [func setVisibleMapRect(MKMapRect)](wkinterfacemap/setvisiblemaprect(_:).md)
+- [func setVisibleMapRect(MKMapRect)](./wkinterfacemap/setvisiblemaprect%28_%29.md)
   Changes the map’s visible region to the specified map rectangle.
-- [func setRegion(MKCoordinateRegion)](wkinterfacemap/setregion(_:).md)
+- [func setRegion(MKCoordinateRegion)](./wkinterfacemap/setregion%28_%29.md)
   Changes the map’s visible region to the specified coordinate region.
 ### Managing Map Annotations
-- [func addAnnotation(CLLocationCoordinate2D, with: UIImage?, centerOffset: CGPoint)](wkinterfacemap/addannotation(_:with:centeroffset:).md)
+- [func addAnnotation(CLLocationCoordinate2D, with: UIImage?, centerOffset: CGPoint)](./wkinterfacemap/addannotation%28_,with,centeroffset%29.md)
   Displays the specified image on top of the map.
-- [func addAnnotation(CLLocationCoordinate2D, withImageNamed: String?, centerOffset: CGPoint)](wkinterfacemap/addannotation(_:withimagenamed:centeroffset:).md)
+- [func addAnnotation(CLLocationCoordinate2D, withImageNamed: String?, centerOffset: CGPoint)](./wkinterfacemap/addannotation%28_,withimagenamed,centeroffset%29.md)
   Displays an image from the WatchKit app’s bundle on top of the map.
-- [func addAnnotation(CLLocationCoordinate2D, with: WKInterfaceMapPinColor)](wkinterfacemap/addannotation(_:with:).md)
+- [func addAnnotation(CLLocationCoordinate2D, with: WKInterfaceMapPinColor)](./wkinterfacemap/addannotation%28_,with%29.md)
   Adds a pin to the map at the specified location.
-- [enum WKInterfaceMapPinColor](wkinterfacemappincolor.md)
+- [enum WKInterfaceMapPinColor](./wkinterfacemappincolor.md)
   Constants for map pin colors.
-- [func removeAllAnnotations()](wkinterfacemap/removeallannotations.md)
+- [func removeAllAnnotations()](./wkinterfacemap/removeallannotations%28%29.md)
   Removes all annotations from the map.
 ### Displaying the User’s Location
-- [func setShowsUserLocation(Bool)](wkinterfacemap/setshowsuserlocation(_:).md)
+- [func setShowsUserLocation(Bool)](./wkinterfacemap/setshowsuserlocation%28_%29.md)
   Sets whether the map shows the user’s current location.
-- [func setShowsUserHeading(Bool)](wkinterfacemap/setshowsuserheading(_:).md)
+- [func setShowsUserHeading(Bool)](./wkinterfacemap/setshowsuserheading%28_%29.md)
   Sets whether the map shows the user heading.
-- [func setUserTrackingMode(WKInterfaceMap.UserTrackingMode, animated: Bool)](wkinterfacemap/setusertrackingmode(_:animated:).md)
+- [func setUserTrackingMode(WKInterfaceMap.UserTrackingMode, animated: Bool)](./wkinterfacemap/setusertrackingmode%28_,animated%29.md)
   Sets the map’s tracking mode.
-- [WKInterfaceMap.UserTrackingMode](wkinterfacemap/usertrackingmode.md)
+- [WKInterfaceMap.UserTrackingMode](./wkinterfacemap/usertrackingmode.md)
   Modes for tracking the user’s location on the map.
 ### Initializing for SwiftUI
-- [init()](wkinterfacemap/init.md)
+- [init()](./wkinterfacemap/init%28%29.md)
   Creates a map for use in SwiftUI.
 
 ## Relationships
 
 ### Inherits From
-- [WKInterfaceObject](wkinterfaceobject.md)
+- [WKInterfaceObject](./wkinterfaceobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class WKInterfaceLabel](wkinterfacelabel.md)
+### Controls
+- [class WKInterfaceLabel](./wkinterfacelabel.md)
   An interface element that displays static text.
-- [class WKInterfaceDate](wkinterfacedate.md)
+- [class WKInterfaceDate](./wkinterfacedate.md)
   A label that displays the current date or time.
-- [class WKInterfaceTimer](wkinterfacetimer.md)
+- [class WKInterfaceTimer](./wkinterfacetimer.md)
   A label that displays a countdown or count-up timer.
-- [class WKInterfaceButton](wkinterfacebutton.md)
+- [class WKInterfaceButton](./wkinterfacebutton.md)
   A button in the user interface of your watchOS app.
-- [class WKInterfaceAuthorizationAppleIDButton](wkinterfaceauthorizationappleidbutton.md)
+- [class WKInterfaceAuthorizationAppleIDButton](./wkinterfaceauthorizationappleidbutton.md)
   A button that you can use to trigger a Sign in with Apple request.
-- [class WKInterfacePaymentButton](wkinterfacepaymentbutton.md)
+- [class WKInterfacePaymentButton](./wkinterfacepaymentbutton.md)
   A button that you can use to trigger payments through Apple Pay.
-- [class WKInterfaceTextField](wkinterfacetextfield.md)
+- [class WKInterfaceTextField](./wkinterfacetextfield.md)
   An interface element that displays an editable text area.
-- [class WKInterfaceSwitch](wkinterfaceswitch.md)
+- [class WKInterfaceSwitch](./wkinterfaceswitch.md)
   An interface element that toggles between an On and Off state.
-- [class WKInterfaceSlider](wkinterfaceslider.md)
+- [class WKInterfaceSlider](./wkinterfaceslider.md)
   An interface element that lets users select a single floating-point value from a range of values.
-- [class WKInterfaceActivityRing](wkinterfaceactivityring.md)
+- [class WKInterfaceActivityRing](./wkinterfaceactivityring.md)
   A view that displays data from a HealthKit activity summary object.
 
 

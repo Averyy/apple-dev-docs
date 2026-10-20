@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The leaf’s preferred repeat behavior. Menu leaves can repeatedly perform their primary actions on prolonged interactions, such as by holding down their keyboard shortcut.
@@ -17,6 +18,10 @@ The leaf’s preferred repeat behavior. Menu leaves can repeatedly perform their
 
 ```swift
 var repeatBehavior: UIMenuElement.RepeatBehavior { get set }
+```
+
+```objc
+@property (nonatomic) UIMenuElementRepeatBehavior repeatBehavior;
 ```
 
 

@@ -1,7 +1,8 @@
 # MTRXPCServerProtocol_MTRDeviceController
 
 **Framework**: Matter  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 18.3+
@@ -18,21 +19,25 @@
 protocol MTRXPCServerProtocol_MTRDeviceController : NSObjectProtocol
 ```
 
+```objc
+@protocol MTRXPCServerProtocol_MTRDeviceController <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func deviceController(UUID, deleteNodeID: NSNumber)](mtrxpcserverprotocol_mtrdevicecontroller/devicecontroller(_:deletenodeid:).md)
-- [func deviceController(UUID, getNodesWithStoredDataWithReply: ([NSNumber]) -> Void)](mtrxpcserverprotocol_mtrdevicecontroller/devicecontroller(_:getnodeswithstoreddatawithreply:).md)
-- [func deviceController(UUID, registerNodeID: NSNumber)](mtrxpcserverprotocol_mtrdevicecontroller/devicecontroller(_:registernodeid:).md)
-- [func deviceController(UUID, unregisterNodeID: NSNumber)](mtrxpcserverprotocol_mtrdevicecontroller/devicecontroller(_:unregisternodeid:).md)
-- [func deviceController(UUID, updateControllerConfiguration: [AnyHashable : Any])](mtrxpcserverprotocol_mtrdevicecontroller/devicecontroller(_:updatecontrollerconfiguration:).md)
+- [func deviceController(UUID, deleteNodeID: NSNumber)](./mtrxpcserverprotocol_mtrdevicecontroller/devicecontroller%28_,deletenodeid%29.md)
+- [func deviceController(UUID, getNodesWithStoredDataWithReply: ([NSNumber]) -> Void)](./mtrxpcserverprotocol_mtrdevicecontroller/devicecontroller%28_,getnodeswithstoreddatawithreply%29.md)
+- [func deviceController(UUID, registerNodeID: NSNumber)](./mtrxpcserverprotocol_mtrdevicecontroller/devicecontroller%28_,registernodeid%29.md)
+- [func deviceController(UUID, unregisterNodeID: NSNumber)](./mtrxpcserverprotocol_mtrdevicecontroller/devicecontroller%28_,unregisternodeid%29.md)
+- [func deviceController(UUID, updateControllerConfiguration: [AnyHashable : Any])](./mtrxpcserverprotocol_mtrdevicecontroller/devicecontroller%28_,updatecontrollerconfiguration%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [MTRXPCServerProtocol](mtrxpcserverprotocol.md)
+- [MTRXPCServerProtocol](./mtrxpcserverprotocol.md)
 
 
 ---

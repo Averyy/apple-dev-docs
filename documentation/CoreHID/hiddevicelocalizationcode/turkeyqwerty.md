@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.turkeyQWERTY
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Turkish-Q in the HID specification.
 

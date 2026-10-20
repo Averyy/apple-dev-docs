@@ -1,7 +1,8 @@
 # isEqualTo
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Compares the data with an OSData
 
@@ -11,11 +12,19 @@ Compares the data with an OSData
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+bool isEqualTo(const OSData *aDataObj);
+```
+
+*macOS*
+
+```cpp
 virtual bool isEqualTo(const OSData *aDataObj);
 ```
 
-#### Return_value
+#### Return Value
 
 true iff the object is of class OSArray and isEqualTo(const OSArray * anArray) returns true.
 
@@ -29,11 +38,12 @@ If the passed OSData object has the same length and all bytes are identical, tru
 
 ## See Also
 
-- [- isEqualTo](osdata/3433843-isequalto.md)
+### Comparing Data Objects
+- [- isEqualTo](./api-3433843-isequalto.md)
   Compares the data with an OSString
-- [- isEqualTo](osdata/3433844-isequalto.md)
+- [- isEqualTo](./api-3433844-isequalto.md)
   Compares the data with a pointer to bytes
-- [- isEqualTo](osdata/3433858-isequalto.md)
+- [- isEqualTo](./api-3433858-isequalto.md)
   Compares the data with an OSObject
 
 

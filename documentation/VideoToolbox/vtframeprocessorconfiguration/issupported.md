@@ -2,6 +2,7 @@
 
 **Framework**: Video Toolbox  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the current configuration supports the processor.
@@ -18,6 +19,10 @@ A Boolean value that indicates whether the current configuration supports the pr
 
 ```swift
 static var isSupported: Bool { get }
+```
+
+```objc
+@property (class, nonatomic, readonly, getter=isSupported) BOOL supported;
 ```
 
 

@@ -1,7 +1,8 @@
 # DOMFormData
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface DOMFormData
 ```
 
 ## Topics
 
 ### Instance Methods
-- [append](domformdata/1630618-append.md)
+- [append](./domformdata/api-1630618-append.md)
 
 
 ---

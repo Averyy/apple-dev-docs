@@ -1,7 +1,8 @@
 # sec_identity_t
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 typealias sec_identity_t = any OS_sec_identity
+```
+
+```c
+typedef NSObject<OS_sec_identity> * sec_identity_t;
 ```
 
 

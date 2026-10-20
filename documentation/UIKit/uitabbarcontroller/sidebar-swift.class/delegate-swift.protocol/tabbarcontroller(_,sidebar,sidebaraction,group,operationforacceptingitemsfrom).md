@@ -1,7 +1,8 @@
 # tabBarController(_:sidebar:sidebarAction:group:operationForAcceptingItemsFrom:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines if items from the specified drop session can be dropped into the specified `sidebarAction`. If the operation is either a `.move` or `.copy`, then the drop will proceed and `tabBarController:sidebar:sidebarAction:acceptItemsFromDropSession:` is called. By default, the drop will be treated as a cancel operation if this is not implemented.
 
@@ -15,6 +16,10 @@ Determines if items from the specified drop session can be dropped into the spec
 
 ```swift
 optional func tabBarController(_ tabBarController: UITabBarController, sidebar: UITabBarController.Sidebar, sidebarAction: UIAction, group: UITabGroup, operationForAcceptingItemsFrom session: any UIDropSession) -> UIDropOperation
+```
+
+```objc
+- (UIDropOperation) tabBarController:(UITabBarController *) tabBarController sidebar:(UITabBarControllerSidebar *) sidebar sidebarAction:(UIAction *) sidebarAction group:(UITabGroup *) group operationForAcceptingItemsFromDropSession:(id<UIDropSession>) session;
 ```
 
 

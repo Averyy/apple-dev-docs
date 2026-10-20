@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Informs the delegate that a user deselected a date represented by date components.
@@ -18,6 +19,10 @@ Informs the delegate that a user deselected a date represented by date component
 func multiDateSelection(_ selection: UICalendarSelectionMultiDate, didDeselectDate dateComponents: DateComponents)
 ```
 
+```objc
+- (void) multiDateSelection:(UICalendarSelectionMultiDate *) selection didDeselectDate:(NSDateComponents *) dateComponents;
+```
+
 ## Parameters
 
 - `selection`: An object that tracks multiple dates that a user selects from a calendar view.
@@ -25,7 +30,8 @@ func multiDateSelection(_ selection: UICalendarSelectionMultiDate, didDeselectDa
 
 ## See Also
 
-- [func multiDateSelection(UICalendarSelectionMultiDate, didSelectDate: DateComponents)](uicalendarselectionmultidatedelegate/multidateselection(_:didselectdate:).md)
+### Changing selected dates
+- [func multiDateSelection(UICalendarSelectionMultiDate, didSelectDate: DateComponents)](./multidateselection%28_,didselectdate%29.md)
   Informs the delegate that a user selected a date represented by date components.
 
 

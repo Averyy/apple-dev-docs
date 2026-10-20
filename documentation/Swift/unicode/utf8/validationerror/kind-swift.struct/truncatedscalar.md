@@ -1,7 +1,8 @@
 # truncatedScalar
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A multi-byte sequence that is the start of a valid multi-byte scalar but is cut off before ending correctly
 

@@ -1,7 +1,8 @@
 # localizedString(for:relativeTo:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Formats the date interval from the reference date to the specified date using the formatter’s calendar.
 
@@ -18,6 +19,10 @@ Formats the date interval from the reference date to the specified date using th
 
 ```swift
 func localizedString(for date: Date, relativeTo referenceDate: Date) -> String
+```
+
+```objc
+- (NSString *) localizedStringForDate:(NSDate *) date relativeToDate:(NSDate *) referenceDate;
 ```
 
 #### Return Value
@@ -41,11 +46,12 @@ print(formatter.localizedString(for: tenMinutesAgo, relativeTo: twoMintuesAhead)
 
 ## See Also
 
-- [func localizedString(from: DateComponents) -> String](relativedatetimeformatter/localizedstring(from:).md)
+### Converting Dates to Formatted Strings
+- [func localizedString(from: DateComponents) -> String](./localizedstring%28from%29.md)
   Formats a relative time represented by the specified date components.
-- [func localizedString(fromTimeInterval: TimeInterval) -> String](relativedatetimeformatter/localizedstring(fromtimeinterval:).md)
+- [func localizedString(fromTimeInterval: TimeInterval) -> String](./localizedstring%28fromtimeinterval%29.md)
   Formats the specified time interval using the formatter’s calendar.
-- [func string(for: Any?) -> String?](relativedatetimeformatter/string(for:).md)
+- [func string(for: Any?) -> String?](./string%28for%29.md)
   Creates a formatted string for a date relative to the current date and time.
 
 

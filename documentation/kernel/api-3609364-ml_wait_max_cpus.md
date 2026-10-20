@@ -1,14 +1,15 @@
 # ml_wait_max_cpus
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned int ml_wait_max_cpus(void);
 ```
 

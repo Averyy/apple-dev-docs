@@ -1,12 +1,13 @@
 # applicationShouldTerminate(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a value that indicates if the app should terminate.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,17 @@ Returns a value that indicates if the app should terminate.
 optional func applicationShouldTerminate(_ sender: NSApplication) -> NSApplication.TerminateReply
 ```
 
+```objc
+- (NSApplicationTerminateReply) applicationShouldTerminate:(NSApplication *) sender;
+```
+
 #### Return Value
 
-One of the values defined in [`NSApplication.TerminateReply`](nsapplication/terminatereply.md) constants indicating whether the application should terminate. For compatibility reasons, a return value of [`false`](https://developer.apple.com/documentation/swift/false) is equivalent to [`NSApplication.TerminateReply.terminateCancel`](nsapplication/terminatereply/terminatecancel.md), and a return value of [`true`](https://developer.apple.com/documentation/swift/true) is equivalent to [`NSApplication.TerminateReply.terminateNow`](nsapplication/terminatereply/terminatenow.md).
+One of the values defined in [`NSApplication.TerminateReply`](../nsapplication/terminatereply.md) constants indicating whether the application should terminate. For compatibility reasons, a return value of [`false`](../../Swift/false.md) is equivalent to [`NSApplication.TerminateReply.terminateCancel`](../nsapplication/terminatereply/terminatecancel.md), and a return value of [`true`](../../Swift/true.md) is equivalent to [`NSApplication.TerminateReply.terminateNow`](../nsapplication/terminatereply/terminatenow.md).
 
 #### Discussion
 
-This method is called after the application’s Quit menu item has been selected, or after the [`terminate(_:)`](nsapplication/terminate(_:).md) method has been called. Generally, you should return [`NSApplication.TerminateReply.terminateNow`](nsapplication/terminatereply/terminatenow.md) to allow the termination to complete, but you can cancel the termination process or delay it somewhat as needed. For example, you might delay termination to finish processing some critical data but then terminate the application as soon as you are done by calling the [`reply(toApplicationShouldTerminate:)`](nsapplication/reply(toapplicationshouldterminate:).md) method.
+This method is called after the application’s Quit menu item has been selected, or after the [`terminate(_:)`](../nsapplication/terminate%28_%29.md) method has been called. Generally, you should return [`NSApplication.TerminateReply.terminateNow`](../nsapplication/terminatereply/terminatenow.md) to allow the termination to complete, but you can cancel the termination process or delay it somewhat as needed. For example, you might delay termination to finish processing some critical data but then terminate the application as soon as you are done by calling the [`reply(toApplicationShouldTerminate:)`](../nsapplication/reply%28toapplicationshouldterminate%29.md) method.
 
 ## Parameters
 
@@ -29,13 +34,15 @@ This method is called after the application’s Quit menu item has been selected
 
 ## See Also
 
-- [func terminate(Any?)](nsapplication/terminate(_:).md)
+### Related Documentation
+- [func terminate(Any?)](../nsapplication/terminate%28_%29.md)
   Terminates the receiver.
-- [NSApplication.TerminateReply](nsapplication/terminatereply.md)
+### Terminating Applications
+- [NSApplication.TerminateReply](../nsapplication/terminatereply.md)
   Constants that determine whether an app should terminate.
-- [func applicationShouldTerminateAfterLastWindowClosed(NSApplication) -> Bool](nsapplicationdelegate/applicationshouldterminateafterlastwindowclosed(_:).md)
+- [func applicationShouldTerminateAfterLastWindowClosed(NSApplication) -> Bool](./applicationshouldterminateafterlastwindowclosed%28_%29.md)
   Returns a Boolean value that indicates if the app terminates once the last window closes.
-- [func applicationWillTerminate(Notification)](nsapplicationdelegate/applicationwillterminate(_:).md)
+- [func applicationWillTerminate(Notification)](./applicationwillterminate%28_%29.md)
   Tells the delegate that the app is about to terminate.
 
 

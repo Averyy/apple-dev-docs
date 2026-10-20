@@ -1,7 +1,8 @@
 # fitted(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fits a linear regressor model to a sequence of examples.
 
@@ -31,11 +32,12 @@ The fitted linear regressor model.
 
 ## See Also
 
-- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> LinearRegressorModel<Scalar>](linearregressor/fitted(to:validateon:eventhandler:).md)
+### Fitting
+- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> LinearRegressorModel<Scalar>](./fitted%28to,validateon,eventhandler%29.md)
   Fits a linear regressor model to a sequence of examples.
-- [LinearRegressor.Annotation](linearregressor/annotation.md)
+- [LinearRegressor.Annotation](./annotation.md)
   The annotation type.
-- [LinearRegressor.Transformer](linearregressor/transformer.md)
+- [LinearRegressor.Transformer](./transformer.md)
   The transformer type created by this estimator.
 
 

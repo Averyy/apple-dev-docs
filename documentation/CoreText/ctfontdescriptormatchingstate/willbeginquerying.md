@@ -1,23 +1,28 @@
 # CTFontDescriptorMatchingState.willBeginQuerying
 
 **Framework**: Core Text  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates communication with the server is about to begin.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 case willBeginQuerying
+```
+
+```c
+kCTFontDescriptorMatchingWillBeginQuerying
 ```
 
 #### Discussion
@@ -26,21 +31,22 @@ This state is skipped if unnecessary.
 
 ## See Also
 
-- [CTFontDescriptorMatchingState.didBegin](ctfontdescriptormatchingstate/didbegin.md)
+### Constants
+- [CTFontDescriptorMatchingState.didBegin](./didbegin.md)
   A state that indicates matching is about to begin.
-- [CTFontDescriptorMatchingState.didFinish](ctfontdescriptormatchingstate/didfinish.md)
+- [CTFontDescriptorMatchingState.didFinish](./didfinish.md)
   A state that indicates matching is done.
-- [CTFontDescriptorMatchingState.stalled](ctfontdescriptormatchingstate/stalled.md)
+- [CTFontDescriptorMatchingState.stalled](./stalled.md)
   A state that indicates that matching is stalled, such as while waiting for a server response.
-- [CTFontDescriptorMatchingState.willBeginDownloading](ctfontdescriptormatchingstate/willbegindownloading.md)
+- [CTFontDescriptorMatchingState.willBeginDownloading](./willbegindownloading.md)
   A state that indicates downloading is about to begin.
-- [CTFontDescriptorMatchingState.downloading](ctfontdescriptormatchingstate/downloading.md)
+- [CTFontDescriptorMatchingState.downloading](./downloading.md)
   A state that indicates downloading is in progress.
-- [CTFontDescriptorMatchingState.didFinishDownloading](ctfontdescriptormatchingstate/didfinishdownloading.md)
+- [CTFontDescriptorMatchingState.didFinishDownloading](./didfinishdownloading.md)
   A state that indicates downloading is done.
-- [CTFontDescriptorMatchingState.didMatch](ctfontdescriptormatchingstate/didmatch.md)
+- [CTFontDescriptorMatchingState.didMatch](./didmatch.md)
   A state that indicates the font descriptor match is successful.
-- [CTFontDescriptorMatchingState.didFailWithError](ctfontdescriptormatchingstate/didfailwitherror.md)
+- [CTFontDescriptorMatchingState.didFailWithError](./didfailwitherror.md)
   A state that indicates an error.
 
 

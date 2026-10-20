@@ -1,7 +1,8 @@
 # makeIterator()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Return an iterator over the elements of this sequence.
 
@@ -20,9 +21,11 @@ Return an iterator over the elements of this sequence.
 func makeIterator() -> JoinedSequence<Base>.Iterator
 ```
 
+Available when `Base` conforms to `Sequence` and `Base.Element` conforms to `Sequence`.
+
 #### Discussion
 
-> **Note**: O(1).
+> **Complexity**: O(1).
 
 
 ---

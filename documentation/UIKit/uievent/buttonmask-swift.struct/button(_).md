@@ -1,7 +1,8 @@
 # button(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a button mask from the specified button index.
 
@@ -17,13 +18,18 @@ Creates a button mask from the specified button index.
 static func button(_ buttonNumber: Int) -> UIEvent.ButtonMask
 ```
 
+```c
+extern UIEventButtonMask UIEventButtonMaskForButtonNumber(NSInteger buttonNumber);
+```
+
 ## Parameters
 
-- `buttonNumber`: The index of the button on the input device. Pass `1` to represent [`primary`](uievent/buttonmask-swift.struct/primary.md), and `2` to represent [`secondary`](uievent/buttonmask-swift.struct/secondary.md).
+- `buttonNumber`: The index of the button on the input device. Pass `1` to represent [`primary`](./primary.md), and `2` to represent [`secondary`](./secondary.md).
 
 ## See Also
 
-- [init(rawValue: Int)](uievent/buttonmask-swift.struct/init(rawvalue:).md)
+### Creating button masks
+- [init(rawValue: Int)](./init%28rawvalue%29.md)
   Creates a button mask with the specified raw value.
 
 

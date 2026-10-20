@@ -1,16 +1,19 @@
 # MTRFanControlWindSettingMask
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS 16.1+
-- iPadOS 16.1+
-- Mac Catalyst 16.1+
-- macOS 13.0+
-- tvOS 16.1+
-- visionOS 1.0+
-- watchOS 9.1+
+- iOS 16.1+ - Deprecated in 17.0
+- iPadOS 16.1+ - Deprecated in 17.0
+- Mac Catalyst 16.1+ - Deprecated in 17.0
+- macOS 13.0+ - Deprecated in 14.0
+- tvOS 16.1+ - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 9.1+ - Deprecated in 10.0
+
+> **Deprecated**: Please use MTRFanControlWindBitmap
 
 ## Declaration
 
@@ -18,25 +21,29 @@
 struct MTRFanControlWindSettingMask
 ```
 
+```c
+enum MTRFanControlWindSettingMask : uint8_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt8)](mtrfancontrolwindsettingmask/init(rawvalue:).md)
+- [init(rawValue: UInt8)](./mtrfancontrolwindsettingmask/init%28rawvalue%29.md)
 ### Type Properties
-- [static var naturalWind: MTRFanControlWindSettingMask](mtrfancontrolwindsettingmask/naturalwind.md)
-- [static var sleepWind: MTRFanControlWindSettingMask](mtrfancontrolwindsettingmask/sleepwind.md)
+- [static var naturalWind: MTRFanControlWindSettingMask](./mtrfancontrolwindsettingmask/naturalwind.md)
+- [static var sleepWind: MTRFanControlWindSettingMask](./mtrfancontrolwindsettingmask/sleepwind.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

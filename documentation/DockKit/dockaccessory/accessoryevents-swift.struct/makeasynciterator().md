@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: DockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and returns an iterator that traverses the list of dock accessory events.
 

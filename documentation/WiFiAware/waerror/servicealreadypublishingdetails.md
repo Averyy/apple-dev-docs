@@ -1,7 +1,8 @@
 # WAError.ServiceAlreadyPublishingDetails
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The optional details describing the service that’s publishing.
 
@@ -19,18 +20,19 @@ struct ServiceAlreadyPublishingDetails
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case serviceAlreadySubscribing(WAError.ServiceAlreadySubscribingDetails)](waerror/servicealreadysubscribing(_:).md)
+### Checking for service already in use
+- [case serviceAlreadySubscribing(WAError.ServiceAlreadySubscribingDetails)](./servicealreadysubscribing%28_%29.md)
   An error that occurs if a new subscriber or `Network/NetworkBrowser` can’t be created.
-- [WAError.ServiceAlreadySubscribingDetails](waerror/servicealreadysubscribingdetails.md)
+- [WAError.ServiceAlreadySubscribingDetails](./servicealreadysubscribingdetails.md)
   The optional details describing the service that’s subscribing.
-- [case serviceAlreadyPublishing(WAError.ServiceAlreadyPublishingDetails)](waerror/servicealreadypublishing(_:).md)
+- [case serviceAlreadyPublishing(WAError.ServiceAlreadyPublishingDetails)](./servicealreadypublishing%28_%29.md)
   An error that occurs if a new publisher or `Network/NetworkListener` can’t be created.
 
 

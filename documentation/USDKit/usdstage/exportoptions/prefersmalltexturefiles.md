@@ -1,7 +1,8 @@
 # preferSmallTextureFiles
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Reduce textures’ file size at the standard quality level.
 

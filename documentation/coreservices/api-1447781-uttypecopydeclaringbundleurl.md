@@ -1,7 +1,8 @@
 # UTTypeCopyDeclaringBundleURL(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the location of a bundle containing the declaration for a type.
 
@@ -20,7 +21,11 @@ Returns the location of a bundle containing the declaration for a type.
 func UTTypeCopyDeclaringBundleURL(_ inUTI: CFString) -> Unmanaged<CFURL>?
 ```
 
-#### Return_value
+```c
+CFURLRef UTTypeCopyDeclaringBundleURL(CFStringRef inUTI);
+```
+
+#### Return Value
 
 A URL that points to the bundle that holds the uniform type identifier’s declaration, or `NULL` if a bundle that holds the declaration cannot be located.
 

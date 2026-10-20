@@ -1,7 +1,8 @@
 # infoKeys
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All authored info keys on this spec, including structural fields (child specifier lists, type info, etc.).
 

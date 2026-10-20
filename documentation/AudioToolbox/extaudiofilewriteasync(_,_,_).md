@@ -1,7 +1,8 @@
 # ExtAudioFileWriteAsync(_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Perform an asynchronous, sequential write operation on an audio file.
 
@@ -19,6 +20,10 @@ Perform an asynchronous, sequential write operation on an audio file.
 func ExtAudioFileWriteAsync(_ inExtAudioFile: ExtAudioFileRef, _ inNumberFrames: UInt32, _ ioData: UnsafePointer<AudioBufferList>?) -> OSStatus
 ```
 
+```c
+extern OSStatus ExtAudioFileWriteAsync(ExtAudioFileRef inExtAudioFile, UInt32 inNumberFrames, const AudioBufferList *ioData);
+```
+
 #### Return Value
 
 A result code.
@@ -29,7 +34,7 @@ Writes the provided buffer list to an internal ring buffer and notifies an inter
 
 Your application must not mix synchronous and asynchronous writes to the same file.
 
-Pending writes are not guaranteed to be flushed to disk until the [`ExtAudioFileDispose(_:)`](extaudiofiledispose(_:).md) function is called.
+Pending writes are not guaranteed to be flushed to disk until the [`ExtAudioFileDispose(_:)`](./extaudiofiledispose%28_%29.md) function is called.
 
 Errors may occur after this call has returned. Such errors may be returned from subsequent calls to this function.
 
@@ -41,13 +46,14 @@ Errors may occur after this call has returned. Such errors may be returned from 
 
 ## See Also
 
-- [func ExtAudioFileRead(ExtAudioFileRef, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioBufferList>) -> OSStatus](extaudiofileread(_:_:_:).md)
+### Reading and Writing Audio Data
+- [func ExtAudioFileRead(ExtAudioFileRef, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioBufferList>) -> OSStatus](./extaudiofileread%28_,_,_%29.md)
   Performs a synchronous, sequential read operation on an audio file.
-- [func ExtAudioFileSeek(ExtAudioFileRef, Int64) -> OSStatus](extaudiofileseek(_:_:).md)
+- [func ExtAudioFileSeek(ExtAudioFileRef, Int64) -> OSStatus](./extaudiofileseek%28_,_%29.md)
   Seeks to a specified frame in a file.
-- [func ExtAudioFileTell(ExtAudioFileRef, UnsafeMutablePointer<Int64>) -> OSStatus](extaudiofiletell(_:_:).md)
+- [func ExtAudioFileTell(ExtAudioFileRef, UnsafeMutablePointer<Int64>) -> OSStatus](./extaudiofiletell%28_,_%29.md)
   Gets an audio file’s read/write position.
-- [func ExtAudioFileWrite(ExtAudioFileRef, UInt32, UnsafePointer<AudioBufferList>) -> OSStatus](extaudiofilewrite(_:_:_:).md)
+- [func ExtAudioFileWrite(ExtAudioFileRef, UInt32, UnsafePointer<AudioBufferList>) -> OSStatus](./extaudiofilewrite%28_,_,_%29.md)
   Performs a synchronous, sequential write operation on an audio file.
 
 

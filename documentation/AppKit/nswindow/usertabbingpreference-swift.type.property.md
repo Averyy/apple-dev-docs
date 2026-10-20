@@ -1,7 +1,8 @@
 # userTabbingPreference
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that indicates the user’s preference for window tabbing.
 
@@ -14,39 +15,44 @@ A value that indicates the user’s preference for window tabbing.
 class var userTabbingPreference: NSWindow.UserTabbingPreference { get }
 ```
 
+```objc
+@property (class, readonly) NSWindowUserTabbingPreference userTabbingPreference;
+```
+
 #### Discussion
 
-This value indicates the user’s preference for window tabbing as set in System Preferences. Check this preference any time you create a new window. For a list of possible values, see [`NSWindow.UserTabbingPreference`](nswindow/usertabbingpreference-swift.enum.md).
+This value indicates the user’s preference for window tabbing as set in System Preferences. Check this preference any time you create a new window. For a list of possible values, see [`NSWindow.UserTabbingPreference`](./usertabbingpreference-swift.enum.md).
 
 ## See Also
 
-- [class var allowsAutomaticWindowTabbing: Bool](nswindow/allowsautomaticwindowtabbing.md)
+### Managing Window Tabs
+- [class var allowsAutomaticWindowTabbing: Bool](./allowsautomaticwindowtabbing.md)
   A Boolean value that indicates whether the app can automatically organize windows into tabs.
-- [var tab: NSWindowTab](nswindow/tab.md)
+- [var tab: NSWindowTab](./tab.md)
   An object that represents information about a window when it displays as a tab.
-- [var tabbingIdentifier: NSWindow.TabbingIdentifier](nswindow/tabbingidentifier-swift.property.md)
+- [var tabbingIdentifier: NSWindow.TabbingIdentifier](./tabbingidentifier-swift.property.md)
   A value that allows a group of related windows.
-- [typealias TabbingIdentifier](nswindow/tabbingidentifier-swift.typealias.md)
+- [typealias TabbingIdentifier](./tabbingidentifier-swift.typealias.md)
   A value that allows a group of related windows.
-- [func addTabbedWindow(NSWindow, ordered: NSWindow.OrderingMode)](nswindow/addtabbedwindow(_:ordered:).md)
+- [func addTabbedWindow(NSWindow, ordered: NSWindow.OrderingMode)](./addtabbedwindow%28_,ordered%29.md)
   Adds the provided window as a new tab in a tabbed window using the specified ordering instruction.
-- [var tabbingMode: NSWindow.TabbingMode](nswindow/tabbingmode-swift.property.md)
+- [var tabbingMode: NSWindow.TabbingMode](./tabbingmode-swift.property.md)
   A value that indicates when a window displays tabs.
-- [var tabbedWindows: [NSWindow]?](nswindow/tabbedwindows.md)
+- [var tabbedWindows: [NSWindow]?](./tabbedwindows.md)
   An array of windows that display as tabs.
-- [func mergeAllWindows(Any?)](nswindow/mergeallwindows(_:).md)
+- [func mergeAllWindows(Any?)](./mergeallwindows%28_%29.md)
   Merges all open windows into a single tabbed window.
-- [func selectNextTab(Any?)](nswindow/selectnexttab(_:).md)
+- [func selectNextTab(Any?)](./selectnexttab%28_%29.md)
   Selects the next tab in the tab group in the trailing direction.
-- [func selectPreviousTab(Any?)](nswindow/selectprevioustab(_:).md)
+- [func selectPreviousTab(Any?)](./selectprevioustab%28_%29.md)
   Selects the previous tab in the tab group in the leading direction.
-- [func moveTabToNewWindow(Any?)](nswindow/movetabtonewwindow(_:).md)
+- [func moveTabToNewWindow(Any?)](./movetabtonewwindow%28_%29.md)
   Moves the tab to a new containing window.
-- [func toggleTabBar(Any?)](nswindow/toggletabbar(_:).md)
+- [func toggleTabBar(Any?)](./toggletabbar%28_%29.md)
   Shows or hides the tab bar.
-- [func toggleTabOverview(Any?)](nswindow/toggletaboverview(_:).md)
+- [func toggleTabOverview(Any?)](./toggletaboverview%28_%29.md)
   Shows or hides the tab overview.
-- [var tabGroup: NSWindowTabGroup?](nswindow/tabgroup.md)
+- [var tabGroup: NSWindowTabGroup?](./tabgroup.md)
   A group of windows that display together as a tab group.
 
 

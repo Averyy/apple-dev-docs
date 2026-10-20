@@ -1,7 +1,8 @@
 # productIdentifier
 
 **Framework**: External Purchase Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A string that identifies the product.
 
@@ -10,7 +11,7 @@ A string that identifies the product.
 
 ## Declaration
 
-```swift
+```
 string productIdentifier
 ```
 
@@ -22,9 +23,10 @@ The product identifier that uniquely identifies the product available in your ap
 
 ## See Also
 
-- [type productType](producttype.md)
+### Providing product info
+- [type productType](./producttype.md)
   The type of product in the transaction, whether it’s a one-time buy, or a subscription.
-- [type quantity](quantity.md)
+- [type quantity](./quantity.md)
   The quantity of the product the customer purchased in a single transaction.
 
 

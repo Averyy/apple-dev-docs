@@ -1,7 +1,8 @@
 # bDescriptorType
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the descriptor.
 
@@ -10,17 +11,18 @@ The type of the descriptor.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bDescriptorType;
 ```
 
 #### Discussion
 
-For a list of possible values, see [`tIOUSBDescriptorType`](tiousbdescriptortype.md).
+For a list of possible values, see [`tIOUSBDescriptorType`](../tiousbdescriptortype.md).
 
 ## See Also
 
-- [bLength](iousbdescriptorheader/blength.md)
+### Getting the Descriptor Properties
+- [bLength](./blength.md)
   The number of bytes in the descriptor.
 
 

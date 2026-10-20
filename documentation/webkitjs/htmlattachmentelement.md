@@ -1,7 +1,8 @@
 # HTMLAttachmentElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLAttachmentElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [file](htmlattachmentelement/1631458-file.md)
+- [file](./htmlattachmentelement/api-1631458-file.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

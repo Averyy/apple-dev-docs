@@ -1,7 +1,8 @@
 # sort(byIncreasingOrder:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new MLUntypedColumn containing values sorted by the specified order.
 

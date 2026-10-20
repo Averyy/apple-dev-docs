@@ -1,7 +1,8 @@
 # init(effect:strengthScale:spatialFalloff:timedFalloff:position:orientation:mask:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a ForceEffect struct.
 

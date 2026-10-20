@@ -1,7 +1,8 @@
 # recipients
 
 **Framework**: Message UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of strings that contains the initial recipients of the message.
 
@@ -17,6 +18,10 @@ An array of strings that contains the initial recipients of the message.
 var recipients: [String]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<NSString *> * recipients;
+```
+
 #### Discussion
 
 If you want to provide an initial array of one or more recipients for a message, do so before you display it. After the message is displayed you cannot change the value of this property.
@@ -25,11 +30,12 @@ Each string in the array should contain the phone number of the intended recipie
 
 ## See Also
 
-- [var subject: String?](mfmessagecomposeviewcontroller/subject.md)
+### Setting the initial message information
+- [var subject: String?](./subject.md)
   The initial subject of the message.
-- [var body: String?](mfmessagecomposeviewcontroller/body.md)
+- [var body: String?](./body.md)
   The initial content of the message.
-- [var message: MSMessage?](mfmessagecomposeviewcontroller/message.md)
+- [var message: MSMessage?](./message.md)
   A message object from your iMessage app extension.
 
 

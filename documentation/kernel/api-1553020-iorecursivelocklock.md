@@ -1,7 +1,8 @@
 # IORecursiveLockLock
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Lock a recursive lock.
 
@@ -11,7 +12,15 @@ Lock a recursive lock.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```c
+void IORecursiveLockLock(struct IORecursiveLock *lock);
+```
+
+*macOS*
+
+```c
 void IORecursiveLockLock(IORecursiveLock *lock);
 ```
 
@@ -25,21 +34,22 @@ Lock the recursive lock. If the lock is held by another thread, block waiting fo
 
 ## See Also
 
-- [IORecursiveLockAlloc](1553013-iorecursivelockalloc.md)
+### Recursive Locks
+- [IORecursiveLockAlloc](./api-1553013-iorecursivelockalloc.md)
   Allocates and initializes an recursive lock.
-- [IORecursiveLockFree](1553031-iorecursivelockfree.md)
+- [IORecursiveLockFree](./api-1553031-iorecursivelockfree.md)
   Frees a recursive lock.
-- [IORecursiveLockGetMachLock](1552988-iorecursivelockgetmachlock.md)
+- [IORecursiveLockGetMachLock](./api-1552988-iorecursivelockgetmachlock.md)
   Accessor to a Mach mutex.
-- [IORecursiveLockHaveLock](1552995-iorecursivelockhavelock.md)
+- [IORecursiveLockHaveLock](./api-1552995-iorecursivelockhavelock.md)
   Check if a recursive lock is held by the calling thread.
-- [IORecursiveLockSleep](1553001-iorecursivelocksleep.md)
-- [IORecursiveLockSleepDeadline](1552986-iorecursivelocksleepdeadline.md)
-- [IORecursiveLockTryLock](1552993-iorecursivelocktrylock.md)
+- [IORecursiveLockSleep](./api-1553001-iorecursivelocksleep.md)
+- [IORecursiveLockSleepDeadline](./api-1552986-iorecursivelocksleepdeadline.md)
+- [IORecursiveLockTryLock](./api-1552993-iorecursivelocktrylock.md)
   Attempt to lock a recursive lock.
-- [IORecursiveLockUnlock](1553032-iorecursivelockunlock.md)
+- [IORecursiveLockUnlock](./api-1553032-iorecursivelockunlock.md)
   Unlock a recursive lock.
-- [IORecursiveLockWakeup](1553014-iorecursivelockwakeup.md)
+- [IORecursiveLockWakeup](./api-1553014-iorecursivelockwakeup.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RegexBuilder  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a regex component that chooses exactly one of the regex components provided by the builder closure.
 
@@ -11,7 +12,7 @@ Creates a regex component that chooses exactly one of the regex components provi
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

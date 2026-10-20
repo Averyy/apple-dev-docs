@@ -1,7 +1,8 @@
 # UITextGrammarCheckingType.yes
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -17,10 +18,15 @@
 case yes
 ```
 
+```c
+UITextGrammarCheckingTypeYes
+```
+
 ## See Also
 
-- [UITextGrammarCheckingType.default](uitextgrammarcheckingtype/default.md)
-- [UITextGrammarCheckingType.no](uitextgrammarcheckingtype/no.md)
+### Getting the grammar-checking behaviors
+- [UITextGrammarCheckingType.default](./default.md)
+- [UITextGrammarCheckingType.no](./no.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # withUnsafeMutableBytes(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Update the buffer’s contents synchronously on the CPU. The buffer provided is only valid for the lifetime of the callback.
 

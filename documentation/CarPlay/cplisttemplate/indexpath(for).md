@@ -1,7 +1,8 @@
 # indexPath(for:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index path for the specified item.
 
@@ -16,9 +17,13 @@ Returns the index path for the specified item.
 func indexPath(for item: any CPListTemplateItem) -> IndexPath?
 ```
 
+```objc
+- (NSIndexPath *) indexPathForItem:(id<CPListTemplateItem>) item;
+```
+
 #### Return Value
 
-The item’s index path in the list, or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if the list doesn’t contain the item.
+The item’s index path in the list, or [`nil`](../../ObjectiveC/nil-227m0.md) if the list doesn’t contain the item.
 
 ## Parameters
 
@@ -26,11 +31,12 @@ The item’s index path in the list, or [`nil`](https://developer.apple.com/docu
 
 ## See Also
 
-- [class var maximumItemCount: Int](cplisttemplate/maximumitemcount.md)
+### Getting Supplementary Information
+- [class var maximumItemCount: Int](./maximumitemcount.md)
   The maximum number of items, across all sections, that the template can display.
-- [var itemCount: Int](cplisttemplate/itemcount.md)
+- [var itemCount: Int](./itemcount.md)
   The total number of items, across all sections, in the list.
-- [var title: String?](cplisttemplate/title.md)
+- [var title: String?](./title.md)
   The title that the navigation bar displays when the template is visible.
 
 

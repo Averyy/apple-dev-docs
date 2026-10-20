@@ -1,7 +1,8 @@
 # init(dictionaryLiteral:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates raw attachment value from dictionary literal.
 

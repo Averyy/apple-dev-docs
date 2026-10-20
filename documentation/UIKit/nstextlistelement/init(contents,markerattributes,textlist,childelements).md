@@ -1,7 +1,8 @@
 # init(contents:markerAttributes:textList:childElements:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+

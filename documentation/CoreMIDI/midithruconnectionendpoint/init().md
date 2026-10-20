@@ -1,16 +1,17 @@
 # init()
 
 **Framework**: Core MIDI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init()
 
 ## See Also
 
-- [init(endpointRef: MIDIEndpointRef, uniqueID: MIDIUniqueID)](midithruconnectionendpoint/init(endpointref:uniqueid:).md)
+### Initializers
+- [init(endpointRef: MIDIEndpointRef, uniqueID: MIDIUniqueID)](./init%28endpointref,uniqueid%29.md)
 
 
 ---

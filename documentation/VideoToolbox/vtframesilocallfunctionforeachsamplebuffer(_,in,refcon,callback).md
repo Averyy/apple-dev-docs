@@ -1,7 +1,8 @@
 # VTFrameSiloCallFunctionForEachSampleBuffer(_:in:refcon:callback:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves sample buffers from a frame silo object.
 
@@ -17,6 +18,10 @@ Retrieves sample buffers from a frame silo object.
 
 ```swift
 func VTFrameSiloCallFunctionForEachSampleBuffer(_ silo: VTFrameSilo, in timeRange: CMTimeRange, refcon: UnsafeMutableRawPointer?, callback: (UnsafeMutableRawPointer?, CMSampleBuffer) -> OSStatus) -> OSStatus
+```
+
+```c
+extern OSStatus VTFrameSiloCallFunctionForEachSampleBuffer(VTFrameSiloRef silo, CMTimeRange timeRange, void *refcon, int (*)(void *, struct opaqueCMSampleBuffer *)callback);
 ```
 
 #### Return Value
@@ -36,11 +41,12 @@ You call this function to retrieve sample buffers at the end of a multipass comp
 
 ## See Also
 
-- [func VTFrameSiloAddSampleBuffer(VTFrameSilo, sampleBuffer: CMSampleBuffer) -> OSStatus](vtframesiloaddsamplebuffer(_:samplebuffer:).md)
+### Configuring Frame Silos
+- [func VTFrameSiloAddSampleBuffer(VTFrameSilo, sampleBuffer: CMSampleBuffer) -> OSStatus](./vtframesiloaddsamplebuffer%28_,samplebuffer%29.md)
   Adds a sample buffer to a frame silo object.
-- [func VTFrameSiloSetTimeRangesForNextPass(VTFrameSilo, timeRangeCount: CMItemCount, timeRangeArray: UnsafePointer<CMTimeRange>) -> OSStatus](vtframesilosettimerangesfornextpass(_:timerangecount:timerangearray:).md)
+- [func VTFrameSiloSetTimeRangesForNextPass(VTFrameSilo, timeRangeCount: CMItemCount, timeRangeArray: UnsafePointer<CMTimeRange>) -> OSStatus](./vtframesilosettimerangesfornextpass%28_,timerangecount,timerangearray%29.md)
   Begins a new pass of samples to be added to a frame silo object.
-- [func VTFrameSiloCallBlockForEachSampleBuffer(VTFrameSilo, in: CMTimeRange, handler: (CMSampleBuffer) -> OSStatus) -> OSStatus](vtframesilocallblockforeachsamplebuffer(_:in:handler:).md)
+- [func VTFrameSiloCallBlockForEachSampleBuffer(VTFrameSilo, in: CMTimeRange, handler: (CMSampleBuffer) -> OSStatus) -> OSStatus](./vtframesilocallblockforeachsamplebuffer%28_,in,handler%29.md)
   Retrieves sample buffers from a frame silo object.
 
 

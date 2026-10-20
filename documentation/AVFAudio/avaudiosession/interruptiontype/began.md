@@ -1,17 +1,20 @@
 # AVAudioSession.InterruptionType.began
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type that indicates that the operating system began interrupting the audio session.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 13.1+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 6.0+ - Deprecated in 27.0
+- iPadOS 6.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- tvOS 9.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+- watchOS 2.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use AVAudioSessionDidBecomeInactiveNotification and AVAudioSessionResumptionRecommendationNotification instead
 
 ## Declaration
 
@@ -19,9 +22,14 @@ A type that indicates that the operating system began interrupting the audio ses
 case began
 ```
 
+```c
+AVAudioSessionInterruptionTypeBegan
+```
+
 ## See Also
 
-- [AVAudioSession.InterruptionType.ended](avaudiosession/interruptiontype/ended.md)
+### Identifying interruption types
+- [AVAudioSession.InterruptionType.ended](./ended.md)
   A type that indicates that the operating system ended interrupting the audio session.
 
 

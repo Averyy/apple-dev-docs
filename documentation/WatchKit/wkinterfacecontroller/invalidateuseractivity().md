@@ -1,7 +1,8 @@
 # invalidateUserActivity()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates the most recent user activity.
 
@@ -14,13 +15,18 @@ Invalidates the most recent user activity.
 func invalidateUserActivity()
 ```
 
+```objc
+- (void) invalidateUserActivity;
+```
+
 #### Discussion
 
 Use this method to invalidate an activity that should no longer be performed.
 
 ## See Also
 
-- [func update(NSUserActivity)](wkinterfacecontroller/update(_:).md)
+### Coordinating Handoff activity
+- [func update(NSUserActivity)](./update%28_%29.md)
   Registers the current user activity with the system.
 
 

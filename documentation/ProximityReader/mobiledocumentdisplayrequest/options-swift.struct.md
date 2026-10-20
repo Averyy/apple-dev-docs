@@ -1,7 +1,8 @@
 # MobileDocumentDisplayRequest.Options
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that customizes how to perform a display request.
 
@@ -23,30 +24,31 @@ Use this object to configure the validation mode of the request.
 ## Topics
 
 ### Structures
-- [MobileDocumentDisplayRequest.Options.DocumentType](mobiledocumentdisplayrequest/options-swift.struct/documenttype.md)
+- [MobileDocumentDisplayRequest.Options.DocumentType](./options-swift.struct/documenttype.md)
   A type that represents a type of supported mobile document.
-- [MobileDocumentDisplayRequest.Options.ValidationMode](mobiledocumentdisplayrequest/options-swift.struct/validationmode-swift.struct.md)
+- [MobileDocumentDisplayRequest.Options.ValidationMode](./options-swift.struct/validationmode-swift.struct.md)
   A type that represents the validation mode of the mobile document request.
 ### Initializers
-- [init(allowedDocumentTypes: [MobileDocumentDisplayRequest.Options.DocumentType], validationMode: MobileDocumentDisplayRequest.Options.ValidationMode)](mobiledocumentdisplayrequest/options-swift.struct/init(alloweddocumenttypes:validationmode:).md)
+- [init(allowedDocumentTypes: [MobileDocumentDisplayRequest.Options.DocumentType], validationMode: MobileDocumentDisplayRequest.Options.ValidationMode)](./options-swift.struct/init%28alloweddocumenttypes,validationmode%29.md)
   Creates a mobile document reader display request options type.
 ### Instance Properties
-- [var allowedDocumentTypes: [MobileDocumentDisplayRequest.Options.DocumentType]](mobiledocumentdisplayrequest/options-swift.struct/alloweddocumenttypes.md)
+- [var allowedDocumentTypes: [MobileDocumentDisplayRequest.Options.DocumentType]](./options-swift.struct/alloweddocumenttypes.md)
   The allowed document types of the mobile document request.
-- [var validationMode: MobileDocumentDisplayRequest.Options.ValidationMode](mobiledocumentdisplayrequest/options-swift.struct/validationmode-swift.property.md)
+- [var validationMode: MobileDocumentDisplayRequest.Options.ValidationMode](./options-swift.struct/validationmode-swift.property.md)
   The validation mode of the mobile document request.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var options: MobileDocumentDisplayRequest.Options](mobiledocumentdisplayrequest/options-swift.property.md)
+### Configuring a display request
+- [var options: MobileDocumentDisplayRequest.Options](./options-swift.property.md)
   An object that customizes how to perform a display request.
 
 

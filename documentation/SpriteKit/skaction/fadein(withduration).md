@@ -1,23 +1,28 @@
 # fadeIn(withDuration:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an action that changes the alpha value of the node to `1.0`.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class func fadeIn(withDuration duration: TimeInterval) -> SKAction
+```
+
+```objc
++ (SKAction *) fadeInWithDuration:(NSTimeInterval) duration;
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ A new action object.
 
 #### Discussion
 
-When the action executes, the node’s [`alpha`](sknode/alpha.md) property animates from its current value to `1.0`.
+When the action executes, the node’s [`alpha`](../sknode/alpha.md) property animates from its current value to `1.0`.
 
 This action is reversible; the reverse is created as if the following code is executed:
 
@@ -48,11 +53,12 @@ let action = SKAction.fadeOut(withDuration: sec)
 
 ## See Also
 
-- [class func fadeOut(withDuration: TimeInterval) -> SKAction](skaction/fadeout(withduration:).md)
+### Animating the Transparency of a Node
+- [class func fadeOut(withDuration: TimeInterval) -> SKAction](./fadeout%28withduration%29.md)
   Creates an action that changes the alpha value of the node to `0.0`.
-- [class func fadeAlpha(by: CGFloat, duration: TimeInterval) -> SKAction](skaction/fadealpha(by:duration:).md)
+- [class func fadeAlpha(by: CGFloat, duration: TimeInterval) -> SKAction](./fadealpha%28by,duration%29.md)
   Creates an action that adjusts the alpha value of a node by a relative value.
-- [class func fadeAlpha(to: CGFloat, duration: TimeInterval) -> SKAction](skaction/fadealpha(to:duration:).md)
+- [class func fadeAlpha(to: CGFloat, duration: TimeInterval) -> SKAction](./fadealpha%28to,duration%29.md)
   Creates an action that adjusts the alpha value of a node to a new value.
 
 

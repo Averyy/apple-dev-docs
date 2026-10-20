@@ -1,7 +1,8 @@
 # ProcessCapability.suspended
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A process capability that grants residency in a suspended state.
 
@@ -22,13 +23,14 @@ This capability grants the helper extension process the ability to stay in a sus
 
 ## See Also
 
-- [ProcessCapability.background](processcapability/background.md)
+### Granting capabilities
+- [ProcessCapability.background](./background.md)
   A process capability for work in the background.
-- [ProcessCapability.foreground](processcapability/foreground.md)
+- [ProcessCapability.foreground](./foreground.md)
   A process capability for work in the foreground.
-- [case mediaPlaybackAndCapture(environment: MediaEnvironment)](processcapability/mediaplaybackandcapture(environment:).md)
+- [case mediaPlaybackAndCapture(environment: MediaEnvironment)](./mediaplaybackandcapture%28environment%29.md)
   The helper extension process may access media hardware required for media capture and playback.
-- [ProcessCapability.Grant](processcapability/grant.md)
+- [ProcessCapability.Grant](./grant.md)
   An object that represents the provision of a capability.
 
 

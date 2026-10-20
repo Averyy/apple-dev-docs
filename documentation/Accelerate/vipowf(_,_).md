@@ -1,7 +1,8 @@
 # vipowf(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 For each vector element, calculates `X` to the integer power of `Y`.
 
@@ -10,7 +11,7 @@ For each vector element, calculates `X` to the integer power of `Y`.
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,14 @@ For each vector element, calculates `X` to the integer power of `Y`.
 func vipowf(_: vFloat, _: vSInt32) -> vFloat
 ```
 
+```c
+extern vFloat vipowf(vFloat , vSInt32 );
+```
+
 ## See Also
 
-- [func vpowf(vFloat, vFloat) -> vFloat](vpowf(_:_:).md)
+### Power Functions (from vfp.h)
+- [func vpowf(vFloat, vFloat) -> vFloat](./vpowf%28_,_%29.md)
   For each vector element, calculates `X` to the floating-point power of `Y`. The result is more accurate than using exp(log(`X`)*`Y`).
 
 

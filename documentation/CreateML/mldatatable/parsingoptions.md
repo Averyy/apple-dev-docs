@@ -1,7 +1,8 @@
 # MLDataTable.ParsingOptions
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The options for parsing a comma-separated values (CSV) file into a data table for a machine learning model.
 
@@ -21,60 +22,61 @@ struct ParsingOptions
 
 #### Overview
 
-Use `ParsingOptions` only when importing a CSV file with [`init(contentsOf:options:)`](mldatatable/init(contentsof:options:).md), especially if your CSV file has special formatting or your data table only needs to import specific rows or columns.
+Use `ParsingOptions` only when importing a CSV file with [`init(contentsOf:options:)`](./init%28contentsof,options%29.md), especially if your CSV file has special formatting or your data table only needs to import specific rows or columns.
 
 ## Topics
 
 ### Creating the CSV parsing options
-- [init(containsHeader: Bool, delimiter: String, comment: String, escape: String, doubleQuote: Bool, quote: String, skipInitialSpaces: Bool, missingValues: [String], lineTerminator: String, selectColumns: [String]?, maxRows: Int?, skipRows: Int)](mldatatable/parsingoptions/init(containsheader:delimiter:comment:escape:doublequote:quote:skipinitialspaces:missingvalues:lineterminator:selectcolumns:maxrows:skiprows:).md)
+- [init(containsHeader: Bool, delimiter: String, comment: String, escape: String, doubleQuote: Bool, quote: String, skipInitialSpaces: Bool, missingValues: [String], lineTerminator: String, selectColumns: [String]?, maxRows: Int?, skipRows: Int)](./parsingoptions/init%28containsheader,delimiter,comment,escape,doublequote,quote,skipinitialspaces,missingvalues,lineterminator,selectcolumns,maxrows,skiprows%29.md)
   Creates CSV parsing options.
 ### Specifying the CSV file format
-- [var containsHeader: Bool](mldatatable/parsingoptions/containsheader.md)
+- [var containsHeader: Bool](./parsingoptions/containsheader.md)
   A Boolean value indicating whether an input CSV file contains a header.
-- [var delimiter: String](mldatatable/parsingoptions/delimiter.md)
+- [var delimiter: String](./parsingoptions/delimiter.md)
   The character that separates the data fields in a CSV file.
-- [var lineTerminator: String](mldatatable/parsingoptions/lineterminator.md)
+- [var lineTerminator: String](./parsingoptions/lineterminator.md)
   The character that represents the end of a line in a CSV file.
 ### Handling special characters
-- [var escape: String](mldatatable/parsingoptions/escape.md)
+- [var escape: String](./parsingoptions/escape.md)
   The character that marks a C escape sequence in a CSV file.
-- [var quote: String](mldatatable/parsingoptions/quote.md)
+- [var quote: String](./parsingoptions/quote.md)
   The character that represents a quote (`"`) in a CSV file.
-- [var doubleQuote: Bool](mldatatable/parsingoptions/doublequote.md)
+- [var doubleQuote: Bool](./parsingoptions/doublequote.md)
   A Boolean value indicating whether two consecutive quotes (`""`) represent a single quote (`"`) in a CSV file.
 ### Ignoring CSV components
-- [var skipRows: Int](mldatatable/parsingoptions/skiprows.md)
+- [var skipRows: Int](./parsingoptions/skiprows.md)
   The number of starting rows to skip from the start of a CSV file.
-- [var skipInitialSpaces: Bool](mldatatable/parsingoptions/skipinitialspaces.md)
+- [var skipInitialSpaces: Bool](./parsingoptions/skipinitialspaces.md)
   A Boolean value indicating whether to ignore leading spaces of a data field.
-- [var comment: String](mldatatable/parsingoptions/comment.md)
+- [var comment: String](./parsingoptions/comment.md)
   The character that marks the beginning of a comment, or text to ignore, in a CSV file.
 ### Limiting rows and columns
-- [var maxRows: Int?](mldatatable/parsingoptions/maxrows.md)
+- [var maxRows: Int?](./parsingoptions/maxrows.md)
   The maximum number of rows to import form a CSV file; otherwise `nil` to import all rows.
-- [var selectColumns: [String]?](mldatatable/parsingoptions/selectcolumns.md)
+- [var selectColumns: [String]?](./parsingoptions/selectcolumns.md)
   The list of column names to import from a CSV file; otherwise `nil` to import all columns.
 ### Representing missing values
-- [var missingValues: [String]](mldatatable/parsingoptions/missingvalues.md)
+- [var missingValues: [String]](./parsingoptions/missingvalues.md)
   A list of strings that represent missing values in a CSV file.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Creating a model from tabular data](creating-a-model-from-tabular-data.md)
+### Creating a data table
+- [Creating a model from tabular data](../creating-a-model-from-tabular-data.md)
   Train a machine learning model by using Core ML to import and manage tabular data.
-- [init(contentsOf: URL, options: MLDataTable.ParsingOptions) throws](mldatatable/init(contentsof:options:).md)
+- [init(contentsOf: URL, options: MLDataTable.ParsingOptions) throws](./init%28contentsof,options%29.md)
   Creates a data table from an imported JSON or CSV file.
-- [init(dictionary: [String : any MLDataValueConvertible]) throws](mldatatable/init(dictionary:).md)
+- [init(dictionary: [String : any MLDataValueConvertible]) throws](./init%28dictionary%29.md)
   Creates a data table from a dictionary of column names and data values.
-- [init(namedColumns: [String : MLUntypedColumn]) throws](mldatatable/init(namedcolumns:).md)
+- [init(namedColumns: [String : MLUntypedColumn]) throws](./init%28namedcolumns%29.md)
   Creates a data table from a dictionary of column names and untyped columns.
-- [init()](mldatatable/init.md)
+- [init()](./init%28%29.md)
   Creates an empty table containing no rows or columns.
 
 

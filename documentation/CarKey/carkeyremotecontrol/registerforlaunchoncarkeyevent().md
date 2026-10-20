@@ -1,7 +1,8 @@
 # registerForLaunchOnCarKeyEvent()
 
 **Framework**: CarKey  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Register your app to be relaunched in the background on CarKey events. Under certain conditions the system will not relaunch the app regardless of CarKey events.
 

@@ -1,7 +1,8 @@
 # RenderingExtensionConfiguration
 
 **Framework**: BrowserEngineKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An opaque configuration structure for a rendering extension.
 
@@ -19,26 +20,27 @@ An opaque configuration structure for a rendering extension.
 
 #### Overview
 
-For more information, see [`RenderingExtension`](renderingextension.md).
+For more information, see [`RenderingExtension`](./renderingextension.md).
 
 ## Relationships
 
 ### Conforms To
-- [AppExtensionConfiguration](../extensionfoundation/appextensionconfiguration.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtensionConfiguration](../ExtensionFoundation/appextensionconfiguration.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol WebContentExtension](webcontentextension.md)
+### Browser extensions
+- [protocol WebContentExtension](./webcontentextension.md)
   A protocol for an app extension that manages web content for your browser app.
-- [struct WebContentExtensionConfiguration](webcontentextensionconfiguration.md)
+- [struct WebContentExtensionConfiguration](./webcontentextensionconfiguration.md)
   An opaque configuration structure for a web content extension.
-- [protocol NetworkingExtension](networkingextension.md)
+- [protocol NetworkingExtension](./networkingextension.md)
   A protocol for an app extension that manages network connections for your browser app.
-- [struct NetworkingExtensionConfiguration](networkingextensionconfiguration.md)
+- [struct NetworkingExtensionConfiguration](./networkingextensionconfiguration.md)
   An opaque configuration structure for a networking extension.
-- [protocol RenderingExtension](renderingextension.md)
+- [protocol RenderingExtension](./renderingextension.md)
   A protocol for an app extension that manages graphics rendering for your browser app.
 
 

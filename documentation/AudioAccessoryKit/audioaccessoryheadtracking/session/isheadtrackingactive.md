@@ -1,7 +1,8 @@
 # isHeadTrackingActive
 
 **Framework**: AudioAccessoryKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns `true` when head tracking is currently enabled for this accessory; `false` otherwise.
 

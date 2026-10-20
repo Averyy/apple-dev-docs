@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The item that was dragged.
@@ -16,6 +17,10 @@ The item that was dragged.
 
 ```swift
 var dragItem: UIDragItem { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIDragItem * dragItem;
 ```
 
 #### Discussion

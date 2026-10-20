@@ -1,7 +1,8 @@
 # limitedUserInterfaces
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A bit mask value that indicates the user interface limits.
 
@@ -16,9 +17,14 @@ A bit mask value that indicates the user interface limits.
 var limitedUserInterfaces: CPLimitableUserInterface { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CPLimitableUserInterface limitedUserInterfaces;
+```
+
 ## See Also
 
-- [struct CPLimitableUserInterface](cplimitableuserinterface.md)
+### Getting the Limits
+- [struct CPLimitableUserInterface](../cplimitableuserinterface.md)
   The types of limitable user interface elements.
 
 

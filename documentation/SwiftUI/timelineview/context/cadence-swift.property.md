@@ -1,7 +1,8 @@
 # cadence
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rate at which the timeline updates the view.
 
@@ -22,9 +23,9 @@ let cadence: TimelineView<Schedule, Content>.Context.Cadence
 
 #### Discussion
 
-Use this value to hide information that updates faster than the view’s current update rate. For example, you could hide the millisecond component of a digital timer when the cadence is anything slower than [`TimelineView.Context.Cadence.live`](timelineview/context/cadence-swift.enum/live.md).
+Use this value to hide information that updates faster than the view’s current update rate. For example, you could hide the millisecond component of a digital timer when the cadence is anything slower than [`TimelineView.Context.Cadence.live`](./cadence-swift.enum/live.md).
 
-Because the [`TimelineView.Context.Cadence`](timelineview/context/cadence-swift.enum.md) enumeration conforms to the [`Comparable`](https://developer.apple.com/documentation/swift/comparable) protocol, you can compare cadences with relational operators. Slower cadences have higher values, so you could perform the check described above with the following comparison:
+Because the [`TimelineView.Context.Cadence`](./cadence-swift.enum.md) enumeration conforms to the [`Comparable`](../../../Swift/comparable.md) protocol, you can compare cadences with relational operators. Slower cadences have higher values, so you could perform the check described above with the following comparison:
 
 ```swift
 let hideMilliseconds = cadence > .live
@@ -32,7 +33,8 @@ let hideMilliseconds = cadence > .live
 
 ## See Also
 
-- [TimelineView.Context.Cadence](timelineview/context/cadence-swift.enum.md)
+### Getting the cadence
+- [TimelineView.Context.Cadence](./cadence-swift.enum.md)
   A rate at which timeline views can receive updates.
 
 

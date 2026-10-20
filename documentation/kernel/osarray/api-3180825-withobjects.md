@@ -1,7 +1,8 @@
 # withObjects
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 Allocates an OSArray object with given members and preallocated capacity.
 
@@ -11,11 +12,19 @@ Allocates an OSArray object with given members and preallocated capacity.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```c
+static OSArrayPtr withObjects(const OSObject **values, uint32_t count, uint32_t capacity);
+```
+
+*macOS*
+
+```c
 static OSPtr<OSArray> withObjects(const OSObject *objects[], unsigned int count, unsigned int capacity);
 ```
 
-#### Return_value
+#### Return Value
 
 NULL on failure, otherwise the allocated OSArray with reference count 1 to be released by the caller.
 
@@ -27,14 +36,15 @@ NULL on failure, otherwise the allocated OSArray with reference count 1 to be re
 
 ## See Also
 
-- [+ withArray](osarray/3180823-witharray.md)
+### Creating an Array
+- [+ withArray](./api-3180823-witharray.md)
   Allocates an OSArray object with given members and preallocated capacity.
-- [+ withCapacity](osarray/3180824-withcapacity.md)
+- [+ withCapacity](./api-3180824-withcapacity.md)
   Allocates an OSArray object with preallocated capacity.
-- [- merge](osarray/3180819-merge.md)
+- [- merge](./api-3180819-merge.md)
   Appends all members of an array to this array.
-- [- free](osarray/3180811-free.md)
-- [- flushCollection](osarray/3180810-flushcollection.md)
+- [- free](./api-3180811-free.md)
+- [- flushCollection](./api-3180810-flushcollection.md)
   Removes and drops references to all members of array.
 
 

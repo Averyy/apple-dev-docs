@@ -1,7 +1,8 @@
 # dropProgressMode
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mode that specifies how the text view indicates progress to the user when loading dropped items.
 
@@ -17,23 +18,28 @@ A mode that specifies how the text view indicates progress to the user when load
 var dropProgressMode: UITextDropProposal.ProgressMode { get set }
 ```
 
+```objc
+@property (nonatomic) UITextDropProgressMode dropProgressMode;
+```
+
 #### Discussion
 
-The default value is [`UITextDropProposal.ProgressMode.system`](uitextdropproposal/progressmode/system.md).
+The default value is [`UITextDropProposal.ProgressMode.system`](./progressmode/system.md).
 
 ## See Also
 
-- [var dropAction: UITextDropProposal.Action](uitextdropproposal/dropaction.md)
+### Configuring a text drop proposal
+- [var dropAction: UITextDropProposal.Action](./dropaction.md)
   A text drop action style that specifies how the text view receives dropped items.
-- [UITextDropProposal.Action](uitextdropproposal/action.md)
+- [UITextDropProposal.Action](./action.md)
   The text drop action styles for text views.
-- [var dropPerformer: UITextDropProposal.Performer](uitextdropproposal/dropperformer.md)
+- [var dropPerformer: UITextDropProposal.Performer](./dropperformer.md)
   The performer that is responsible for handling the drop operation.
-- [UITextDropProposal.Performer](uitextdropproposal/performer.md)
+- [UITextDropProposal.Performer](./performer.md)
   The performers that are responsible for handling the drop operation.
-- [UITextDropProposal.ProgressMode](uitextdropproposal/progressmode.md)
+- [UITextDropProposal.ProgressMode](./progressmode.md)
   The text drop progress styles for user-visible progress indication.
-- [var useFastSameViewOperations: Bool](uitextdropproposal/usefastsameviewoperations.md)
+- [var useFastSameViewOperations: Bool](./usefastsameviewoperations.md)
   A Boolean value that determines whether the text view can use fast inline dropping when the source and destination are in the same text view.
 
 

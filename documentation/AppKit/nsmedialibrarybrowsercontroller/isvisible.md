@@ -1,7 +1,8 @@
 # isVisible
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the Media Library Browser panel is visible.
 
@@ -14,17 +15,22 @@ A Boolean value that determines whether the Media Library Browser panel is visib
 var isVisible: Bool { get set }
 ```
 
+```objc
+@property (getter=isVisible) BOOL visible;
+```
+
 #### Discussion
 
-Set this value to [`true`](https://developer.apple.com/documentation/swift/true) to show the Media Library Browser or [`false`](https://developer.apple.com/documentation/swift/false) to hide it.
+Set this value to [`true`](../../Swift/true.md) to show the Media Library Browser or [`false`](../../Swift/false.md) to hide it.
 
 This value can be read to determine the current visibility status of the panel.
 
 ## See Also
 
-- [var frame: NSRect](nsmedialibrarybrowsercontroller/frame.md)
+### Displaying the Media Library Browser Panel
+- [var frame: NSRect](./frame.md)
   The frame, in global coordinates, used to display the Media Library Browser panel.
-- [func togglePanel(Any?)](nsmedialibrarybrowsercontroller/togglepanel(_:).md)
+- [func togglePanel(Any?)](./togglepanel%28_%29.md)
   Toggles the visibility of the Media Library Browser.
 
 

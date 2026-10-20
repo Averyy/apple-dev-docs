@@ -1,7 +1,8 @@
 # USDValue.Vec4h
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A 4-component half-precision vector.
 
@@ -22,35 +23,35 @@ struct Vec4h
 ## Topics
 
 ### Initializers
-- [init()](usdvalue/vec4h/init.md)
+- [init()](./vec4h/init%28%29.md)
   Creates a zero vector.
-- [init(Float16, Float16, Float16, Float16)](usdvalue/vec4h/init(_:_:_:_:).md)
+- [init(Float16, Float16, Float16, Float16)](./vec4h/init%28_,_,_,_%29.md)
   Creates a vector with the given components.
 ### Instance Properties
-- [var simd: SIMD4<Float16>](usdvalue/vec4h/simd.md)
+- [var simd: SIMD4<Float16>](./vec4h/simd.md)
   The vector as a `SIMD4<Float16>`.
-- [var w: Float16](usdvalue/vec4h/w.md)
-- [var x: Float16](usdvalue/vec4h/x.md)
-- [var y: Float16](usdvalue/vec4h/y.md)
-- [var z: Float16](usdvalue/vec4h/z.md)
+- [var w: Float16](./vec4h/w.md)
+- [var x: Float16](./vec4h/x.md)
+- [var y: Float16](./vec4h/y.md)
+- [var z: Float16](./vec4h/z.md)
 ### Subscripts
-- [subscript(Int) -> Float16](usdvalue/vec4h/subscript(_:).md)
+- [subscript(Int) -> Float16](./vec4h/subscript%28_%29.md)
   Accesses the component at the specified index.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [USDPrim.Attribute.Value](usdprim/attribute/value.md)
-- [USDStage.Object.MetadataValue](usdstage/object/metadatavalue.md)
-- [USDValueProtocol](usdvalueprotocol.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [USDPrim.Attribute.Value](../usdprim/attribute/value.md)
+- [USDStage.Object.MetadataValue](../usdstage/object/metadatavalue.md)
+- [USDValueProtocol](../usdvalueprotocol.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a reference to a texture into the argument buffer.
@@ -20,14 +21,19 @@ Encodes a reference to a texture into the argument buffer.
 func setTexture(_ texture: (any MTLTexture)?, index: Int)
 ```
 
+```objc
+- (void) setTexture:(id<MTLTexture>) texture atIndex:(NSUInteger) index;
+```
+
 ## Parameters
 
 - `texture`: A texture the method encodes.
-- `index`: The index of a texture within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instance.
+- `index`: The index of a texture within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](../mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](../mtlargumentdescriptor.md) instance.
 
 ## See Also
 
-- [func setTextures([(any MTLTexture)?], range: Range<Int>)](mtlargumentencoder/settextures(_:range:).md)
+### Encoding textures
+- [func setTextures([(any MTLTexture)?], range: Range<Int>)](./settextures%28_,range%29.md)
   Encodes references to an array of textures into the argument buffer.
 
 

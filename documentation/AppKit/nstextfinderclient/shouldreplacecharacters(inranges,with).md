@@ -1,12 +1,13 @@
 # shouldReplaceCharacters(inRanges:with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the specified strings should be replaced.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Returns whether the specified strings should be replaced.
 optional func shouldReplaceCharacters(inRanges ranges: [NSValue], with strings: [String]) -> Bool
 ```
 
+```objc
+- (BOOL) shouldReplaceCharactersInRanges:(NSArray<NSValue *> *) ranges withStrings:(NSArray<NSString *> *) strings;
+```
+
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the replacement should occur; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](../../Swift/true.md) if the replacement should occur; otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-See [`NSTextFinder`](nstextfinder.md) for a complete description.
+See [`NSTextFinder`](../nstextfinder.md) for a complete description.
 
 ## Parameters
 
@@ -29,9 +34,10 @@ See [`NSTextFinder`](nstextfinder.md) for a complete description.
 
 ## See Also
 
-- [func replaceCharacters(in: NSRange, with: String)](nstextfinderclient/replacecharacters(in:with:).md)
+### Replacing Text
+- [func replaceCharacters(in: NSRange, with: String)](./replacecharacters%28in,with%29.md)
   Replaces the text in the specified range with the new string.
-- [func didReplaceCharacters()](nstextfinderclient/didreplacecharacters.md)
+- [func didReplaceCharacters()](./didreplacecharacters%28%29.md)
   Specifies whether text characters were replaced.
 
 

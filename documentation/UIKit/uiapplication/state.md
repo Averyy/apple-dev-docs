@@ -1,7 +1,8 @@
 # UIApplication.State
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the running states of an app.
 
@@ -9,7 +10,7 @@ Constants that indicate the running states of an app.
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,31 +19,36 @@ Constants that indicate the running states of an app.
 enum State
 ```
 
+```c
+enum UIApplicationState : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIApplication.State.active](uiapplication/state/active.md)
+- [UIApplication.State.active](./state/active.md)
   The app is running in the foreground and currently receiving events.
-- [UIApplication.State.inactive](uiapplication/state/inactive.md)
+- [UIApplication.State.inactive](./state/inactive.md)
   The app is running in the foreground but isn’t receiving events.
-- [UIApplication.State.background](uiapplication/state/background.md)
+- [UIApplication.State.background](./state/background.md)
   The app is running in the background.
 ### Initializers
-- [init?(rawValue: Int)](uiapplication/state/init(rawvalue:).md)
+- [init?(rawValue: Int)](./state/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var applicationState: UIApplication.State](uiapplication/applicationstate.md)
+### Getting the application state
+- [var applicationState: UIApplication.State](./applicationstate.md)
   The app’s current state, or that of its most active scene.
 
 

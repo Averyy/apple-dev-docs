@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the child accessibility element with the current focus.
@@ -17,19 +18,20 @@ func setAccessibilityApplicationFocusedUIElement(_ accessibilityApplicationFocus
 
 ## See Also
 
-- [func accessibilityApplicationFocusedUIElement() -> Any?](nsaccessibilityprotocol/accessibilityapplicationfocuseduielement.md)
+### Setting the focus
+- [func accessibilityApplicationFocusedUIElement() -> Any?](./accessibilityapplicationfocuseduielement%28%29.md)
   Returns the child accessibility element with the current focus.
-- [func isAccessibilityFocused() -> Bool](nsaccessibilityprotocol/isaccessibilityfocused.md)
+- [func isAccessibilityFocused() -> Bool](./isaccessibilityfocused%28%29.md)
   Returns a Boolean value that determines whether the accessibility element has the keyboard focus.
-- [func setAccessibilityFocused(Bool)](nsaccessibilityprotocol/setaccessibilityfocused(_:).md)
+- [func setAccessibilityFocused(Bool)](./setaccessibilityfocused%28_%29.md)
   Sets a Boolean value that determines whether the accessibility element has the keyboard focus.
-- [func accessibilityFocusedWindow() -> Any?](nsaccessibilityprotocol/accessibilityfocusedwindow.md)
+- [func accessibilityFocusedWindow() -> Any?](./accessibilityfocusedwindow%28%29.md)
   Returns the child window with the current focus.
-- [func setAccessibilityFocusedWindow(Any?)](nsaccessibilityprotocol/setaccessibilityfocusedwindow(_:).md)
+- [func setAccessibilityFocusedWindow(Any?)](./setaccessibilityfocusedwindow%28_%29.md)
   Sets the child window with the current focus.
-- [func accessibilitySharedFocusElements() -> [Any]?](nsaccessibilityprotocol/accessibilitysharedfocuselements.md)
+- [func accessibilitySharedFocusElements() -> [Any]?](./accessibilitysharedfocuselements%28%29.md)
   Returns the array of elements that shares the keyboard focus with the accessibility element.
-- [func setAccessibilitySharedFocusElements([Any]?)](nsaccessibilityprotocol/setaccessibilitysharedfocuselements(_:).md)
+- [func setAccessibilitySharedFocusElements([Any]?)](./setaccessibilitysharedfocuselements%28_%29.md)
   Sets the array of elements that shares the keyboard focus with the accessibility element.
 
 

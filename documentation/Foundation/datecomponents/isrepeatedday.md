@@ -1,7 +1,8 @@
 # isRepeatedDay
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Set to true if these components represent a repeated day.
 

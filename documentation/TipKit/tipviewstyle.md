@@ -1,7 +1,8 @@
 # TipViewStyle
 
 **Framework**: TipKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that applies custom appearance to all tips within a view hierarchy.
 
@@ -23,9 +24,9 @@ A type that applies custom appearance to all tips within a view hierarchy.
 
 #### Overview
 
-To configure the current style for tips in a view hierarchy, use the [`tipViewStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/tipviewstyle(_:)) modifier and specify a type that conforms to `TipViewStyle`.
+To configure the current style for tips in a view hierarchy, use the [`tipViewStyle(_:)`](../SwiftUI/view/tipviewstyle%28_%29.md) modifier and specify a type that conforms to `TipViewStyle`.
 
-![An image of a tip view with a custom style.](/images/com.apple.TipKit/tipviewstyle_headline-style@2x.png)
+![An image of a tip view with a custom style.](https://developer.apple.com/tutorials/images/com.apple.TipKit/tipviewstyle_headline-style@2x.png)
 
 Customize the layout and style of your tips by creating a custom `TipViewStyle`:
 
@@ -65,7 +66,7 @@ struct HeadlineTipViewStyle: TipViewStyle {
 }
 ```
 
-Use the [`tipViewStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/tipviewstyle(_:)) modifier to apply your style to all tips within a view hierarchy:
+Use the [`tipViewStyle(_:)`](../SwiftUI/view/tipviewstyle%28_%29.md) modifier to apply your style to all tips within a view hierarchy:
 
 ```swift
 struct AddWorkoutView: View {
@@ -92,31 +93,32 @@ addSubview(addWorkoutTipView)
 ## Topics
 
 ### Associated Types
-- [associatedtype Body : View](tipviewstyle/body.md)
+- [associatedtype Body : View](./tipviewstyle/body.md)
   The user interface element of the tip.
 ### Instance Methods
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](tipviewstyle/makebody(configuration:).md)
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./tipviewstyle/makebody%28configuration%29.md)
   A builder that makes the body of the tip view based on a style configuration.
 ### Type Aliases
-- [TipViewStyle.Configuration](tipviewstyle/configuration.md)
+- [TipViewStyle.Configuration](./tipviewstyle/configuration.md)
   The tip style’s configuration.
 ### Type Properties
-- [static var miniTip: MiniTipViewStyle](tipviewstyle/minitip.md)
+- [static var miniTip: MiniTipViewStyle](./tipviewstyle/minitip.md)
   The default style for a tip view.
 
 ## Relationships
 
 ### Conforming Types
-- [MiniTipViewStyle](minitipviewstyle.md)
+- [MiniTipViewStyle](./minitipviewstyle.md)
 
 ## See Also
 
+### View Style
 - [func tipViewStyle(some TipViewStyle) -> some View
-](../swiftui/view/tipviewstyle(_:).md)
+](../SwiftUI/view/tipviewstyle%28_%29.md)
   Sets the given style for TipView within the view hierarchy.
-- [struct TipViewStyleConfiguration](tipviewstyleconfiguration.md)
+- [struct TipViewStyleConfiguration](./tipviewstyleconfiguration.md)
   The container type that holds a tip’s configuration.
-- [struct MiniTipViewStyle](minitipviewstyle.md)
+- [struct MiniTipViewStyle](./minitipviewstyle.md)
   The default style for a TipView.
 
 

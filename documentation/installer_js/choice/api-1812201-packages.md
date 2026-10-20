@@ -14,7 +14,8 @@ Each item of the array references a `pkg-ref` element in the installation defini
 
 ## See Also
 
-- [packageUpgradeAction](choice/1812213-packageupgradeaction.md)
+### Working with Packages
+- [packageUpgradeAction](./api-1812213-packageupgradeaction.md)
   A string specifying the relationship between the choice’s packages (specified by the packages property) and the same packages (based on the package identifier) installed on the host.
 
 

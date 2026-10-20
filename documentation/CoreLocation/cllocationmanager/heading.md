@@ -1,7 +1,8 @@
 # heading
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The most recently reported heading.
 
@@ -19,13 +20,18 @@ The most recently reported heading.
 var heading: CLHeading? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) CLHeading * heading;
+```
+
 #### Discussion
 
 The value of this property is `nil` if heading updates have never been initiated.
 
 ## See Also
 
-- [var location: CLLocation?](cllocationmanager/location.md)
+### Getting recent location and heading data
+- [var location: CLLocation?](./location.md)
   The most recently retrieved user location.
 
 

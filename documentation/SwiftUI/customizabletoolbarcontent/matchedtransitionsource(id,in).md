@@ -1,7 +1,8 @@
 # matchedTransitionSource(id:in:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Identifies this toolbar content as the source of a navigation transition, such as a zoom transition.
 
@@ -19,7 +20,7 @@ func matchedTransitionSource(id: some Hashable, in namespace: Namespace.ID) -> s
 
 #### Discussion
 
-Use this modifier in conjunction with [`navigationTransition(_:)`](view/navigationtransition(_:).md) to provide a source for the transition effect:
+Use this modifier in conjunction with [`navigationTransition(_:)`](../view/navigationtransition%28_%29.md) to provide a source for the transition effect:
 
 ```swift
 struct ContentView: View {
@@ -51,7 +52,7 @@ struct ContentView: View {
 ## Parameters
 
 - `id`: The identifier, often derived from the identifier of the data being displayed by the toolbar content.
-- `namespace`: The namespace in which defines the `id`. New namespaces are created by adding an [`Namespace`](namespace.md) variable to a [`View`](view.md) or [`ToolbarContent`](toolbarcontent.md) type and reading its value in the type’s body method.
+- `namespace`: The namespace in which defines the `id`. New namespaces are created by adding an [`Namespace`](../namespace.md) variable to a [`View`](../view.md) or [`ToolbarContent`](../toolbarcontent.md) type and reading its value in the type’s body method.
 
 
 ---

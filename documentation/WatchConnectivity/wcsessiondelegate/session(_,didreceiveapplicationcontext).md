@@ -1,7 +1,8 @@
 # session(_:didReceiveApplicationContext:)
 
 **Framework**: Watch Connectivity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the session has received context data from the counterpart.
 
@@ -18,9 +19,13 @@ Tells the delegate that the session has received context data from the counterpa
 optional func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any])
 ```
 
+```objc
+- (void) session:(WCSession *) session didReceiveApplicationContext:(NSDictionary<NSString *,id> *) applicationContext;
+```
+
 #### Discussion
 
-The session uses this method to deliver the last known context data from its counterpart—that is, data sent by the counterpart using the [`updateApplicationContext(_:)`](wcsession/updateapplicationcontext(_:).md) method of its own session object. If context data is already waiting to be delivered, this method is called shortly after you activate the session object for the current process.
+The session uses this method to deliver the last known context data from its counterpart—that is, data sent by the counterpart using the [`updateApplicationContext(_:)`](../wcsession/updateapplicationcontext%28_%29.md) method of its own session object. If context data is already waiting to be delivered, this method is called shortly after you activate the session object for the current process.
 
 Use context data to get a head start on updating your app’s user interface. A counterpart can send context data representing the last known state information. For example, a mail program running on iOS might include data from the five most recently received email messages in the `appContext` dictionary. A WatchKit extension would then replace any stale data with the new information.
 

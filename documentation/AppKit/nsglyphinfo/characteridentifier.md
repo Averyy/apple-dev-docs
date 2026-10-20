@@ -1,12 +1,13 @@
 # characterIdentifier
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s character identifier (CID).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ The receiver’s character identifier (CID).
 var characterIdentifier: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger characterIdentifier;
+```
+
 ## See Also
 
-- [init?(characterIdentifier: Int, collection: NSCharacterCollection, baseString: String)](nsglyphinfo/init(characteridentifier:collection:basestring:).md)
+### Deprecated
+- [init?(characterIdentifier: Int, collection: NSCharacterCollection, baseString: String)](./init%28characteridentifier,collection,basestring%29.md)
   Instantiates and returns an `NSGlyphInfo` object using a character identifier and a character collection.
-- [init?(glyph: NSGlyph, forFont: NSFont, baseString: String)](nsglyphinfo/init(glyph:forfont:basestring:).md)
+- [init?(glyph: NSGlyph, forFont: NSFont, baseString: String)](./init%28glyph,forfont,basestring%29.md)
   Instantiates and returns a glyph information object using a glyph index and a specified font.
-- [init?(glyphName: String, forFont: NSFont, baseString: String)](nsglyphinfo/init(glyphname:forfont:basestring:).md)
+- [init?(glyphName: String, forFont: NSFont, baseString: String)](./init%28glyphname,forfont,basestring%29.md)
   Instantiates and returns a glyph information object using a glyph name and a specified font.
-- [var characterCollection: NSCharacterCollection](nsglyphinfo/charactercollection.md)
+- [var characterCollection: NSCharacterCollection](./charactercollection.md)
   A value specifying the glyph–to–character identifier mapping of the receiver.
-- [var glyphName: String?](nsglyphinfo/glyphname.md)
+- [var glyphName: String?](./glyphname.md)
   The receiver’s glyph name.
-- [enum NSCharacterCollection](nscharactercollection.md)
+- [enum NSCharacterCollection](../nscharactercollection.md)
   Values that map character identifiers to glyphs.
 
 

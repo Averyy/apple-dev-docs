@@ -1,7 +1,8 @@
 # MKError.Code.unknown
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unknown error occurred.
 
@@ -20,17 +21,22 @@ An unknown error occurred.
 case unknown
 ```
 
+```c
+MKErrorUnknown
+```
+
 ## See Also
 
-- [MKError.Code.decodingFailed](mkerror/code/decodingfailed.md)
+### Constants
+- [MKError.Code.decodingFailed](./decodingfailed.md)
   GeoJSON decoding failed.
-- [MKError.Code.directionsNotFound](mkerror/code/directionsnotfound.md)
+- [MKError.Code.directionsNotFound](./directionsnotfound.md)
   The framework couldn’t find the specified directions.
-- [MKError.Code.loadingThrottled](mkerror/code/loadingthrottled.md)
+- [MKError.Code.loadingThrottled](./loadingthrottled.md)
   The data didn’t load because data throttling is in effect.
-- [MKError.Code.placemarkNotFound](mkerror/code/placemarknotfound.md)
+- [MKError.Code.placemarkNotFound](./placemarknotfound.md)
   The specified placemark could not be found.
-- [MKError.Code.serverFailure](mkerror/code/serverfailure.md)
+- [MKError.Code.serverFailure](./serverfailure.md)
   The map server was unable to return the desired information.
 
 

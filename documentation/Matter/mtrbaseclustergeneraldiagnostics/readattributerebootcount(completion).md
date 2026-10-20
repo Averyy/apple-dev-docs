@@ -1,7 +1,8 @@
 # readAttributeRebootCount(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeRebootCount(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeRebootCount() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeRebootCountWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

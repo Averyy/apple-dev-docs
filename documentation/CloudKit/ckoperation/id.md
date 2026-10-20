@@ -1,7 +1,8 @@
 # CKOperation.ID
 
 **Framework**: CloudKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents the ID of an operation.
 
@@ -11,7 +12,7 @@ A type that represents the ID of an operation.
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ typealias ID = String
 
 ## See Also
 
-- [var operationID: CKOperation.ID](ckoperation/operationid-8auuc.md)
+### Identifying the Operation
+- [var operationID: CKOperation.ID](./operationid-8auuc.md)
   A unique identifier for a long-lived operation.
 
 

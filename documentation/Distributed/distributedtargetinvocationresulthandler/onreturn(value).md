@@ -2,6 +2,7 @@
 
 **Framework**: Distributed  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Invoked when the distributed target execution returns successfully. The `value` is the return value of the executed distributed invocation target.

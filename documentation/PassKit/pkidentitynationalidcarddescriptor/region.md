@@ -1,7 +1,8 @@
 # region
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string used to specify the region associated with the ID.
 
@@ -9,7 +10,7 @@ A string used to specify the region associated with the ID.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

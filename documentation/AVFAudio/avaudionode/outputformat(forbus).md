@@ -1,7 +1,8 @@
 # outputFormat(forBus:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the output format for the bus you specify.
 
@@ -20,9 +21,13 @@ Retrieves the output format for the bus you specify.
 func outputFormat(forBus bus: AVAudioNodeBus) -> AVAudioFormat
 ```
 
+```objc
+- (AVAudioFormat *) outputFormatForBus:(AVAudioNodeBus) bus;
+```
+
 #### Return Value
 
-An [`AVAudioFormat`](avaudioformat.md) instance that represents the output format of the bus.
+An [`AVAudioFormat`](../avaudioformat.md) instance that represents the output format of the bus.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ An [`AVAudioFormat`](avaudioformat.md) instance that represents the output forma
 
 ## See Also
 
-- [func name(forOutputBus: AVAudioNodeBus) -> String?](avaudionode/name(foroutputbus:).md)
+### Inspecting output buses
+- [func name(forOutputBus: AVAudioNodeBus) -> String?](./name%28foroutputbus%29.md)
   Retrieves the name of the output bus you specify.
-- [var numberOfOutputs: Int](avaudionode/numberofoutputs.md)
+- [var numberOfOutputs: Int](./numberofoutputs.md)
   The number of output busses for the node.
 
 

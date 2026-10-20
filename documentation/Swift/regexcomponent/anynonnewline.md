@@ -1,7 +1,8 @@
 # anyNonNewline
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A character class that matches any element that isn’t a newline.
 
@@ -20,27 +21,30 @@ A character class that matches any element that isn’t a newline.
 static var anyNonNewline: CharacterClass { get }
 ```
 
+Available when `Self` is `CharacterClass`.
+
 #### Discussion
 
-This character class is unaffected by the `dotMatchesNewlines()` method. To match any character, including newlines, see [`any`](regexcomponent/any.md).
+This character class is unaffected by the `dotMatchesNewlines()` method. To match any character, including newlines, see [`any`](./any.md).
 
 This character class is equivalent to the regex syntax “dot” metacharacter with single-line mode disabled: `(?-s:.)`.
 
 ## See Also
 
-- [static func anyOf<S>(S) -> CharacterClass](regexcomponent/anyof(_:)-3pexl.md)
+### Matching substring sequences
+- [static func anyOf<S>(S) -> CharacterClass](./anyof%28_%29-3pexl.md)
   Returns a character class that matches any Unicode scalar in the given sequence.
-- [static func anyOf<S>(S) -> CharacterClass](regexcomponent/anyof(_:)-4xgea.md)
+- [static func anyOf<S>(S) -> CharacterClass](./anyof%28_%29-4xgea.md)
   Returns a character class that matches any character in the given string or sequence.
-- [static var any: CharacterClass](regexcomponent/any.md)
+- [static var any: CharacterClass](./any.md)
   A character class that matches any element.
-- [static var anyGraphemeCluster: CharacterClass](regexcomponent/anygraphemecluster.md)
+- [static var anyGraphemeCluster: CharacterClass](./anygraphemecluster.md)
   A character class that matches any single `Character`, or extended grapheme cluster, regardless of the current semantic level.
-- [static var digit: CharacterClass](regexcomponent/digit.md)
+- [static var digit: CharacterClass](./digit.md)
   A character class that matches any digit.
-- [static var hexDigit: CharacterClass](regexcomponent/hexdigit.md)
+- [static var hexDigit: CharacterClass](./hexdigit.md)
   A character class that matches any hexadecimal digit.
-- [static var word: CharacterClass](regexcomponent/word.md)
+- [static var word: CharacterClass](./word.md)
   A character class that matches any element that is a “word character”.
 
 

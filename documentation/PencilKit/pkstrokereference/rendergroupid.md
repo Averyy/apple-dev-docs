@@ -1,7 +1,8 @@
 # renderGroupID
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A UUID that groups strokes for wet-ink compositing with compatible inks such as marker.
 
@@ -16,6 +17,10 @@ A UUID that groups strokes for wet-ink compositing with compatible inks such as 
 
 ```swift
 var renderGroupID: UUID? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSUUID * renderGroupID;
 ```
 
 #### Discussion

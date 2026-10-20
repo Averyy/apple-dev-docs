@@ -1,7 +1,8 @@
 # init(named:)
 
 **Framework**: User Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sound object that represents a custom sound file.
 
@@ -18,6 +19,10 @@ Creates a sound object that represents a custom sound file.
 convenience init(named name: UNNotificationSoundName)
 ```
 
+```objc
++ (instancetype) soundNamed:(UNNotificationSoundName) name;
+```
+
 #### Return Value
 
 A sound object representing the custom sound.
@@ -27,7 +32,7 @@ A sound object representing the custom sound.
 This method searches for sound files in the following locations, in order:
 
 1. The *<app_container>*`/Library/Sounds` directory, where *<app_container>* is the app’s container directory.
-2. The *<group_container>*`/Library/Sounds` directory, where *<group_container>* is one of the app’s shared group container directories. For information about how to configure group containers for your app, see [`Configure app groups`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev8dd3880fe).
+2. The *<group_container>*`/Library/Sounds` directory, where *<group_container>* is one of the app’s shared group container directories. For information about how to configure group containers for your app, see [Configure app groups](https://help.apple.com/xcode/mac/current/#/dev8dd3880fe).
 3. The main bundle of the current executable.
 
 The method chooses the first file it finds with the specified name.
@@ -38,7 +43,8 @@ The method chooses the first file it finds with the specified name.
 
 ## See Also
 
-- [class var `default`: UNNotificationSound](unnotificationsound/default.md)
+### Creating Notification Sounds
+- [class var `default`: UNNotificationSound](./default.md)
   Returns an object representing the default sound for notifications.
 
 

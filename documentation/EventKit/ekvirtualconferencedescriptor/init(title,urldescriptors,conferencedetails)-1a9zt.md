@@ -1,7 +1,8 @@
 # init(title:URLDescriptors:conferenceDetails:)
 
 **Framework**: EventKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+

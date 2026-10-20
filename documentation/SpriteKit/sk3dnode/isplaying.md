@@ -1,7 +1,8 @@
 # isPlaying
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the scene is playing.
 
@@ -10,7 +11,7 @@ A Boolean value that determines whether the scene is playing.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ A Boolean value that determines whether the scene is playing.
 var isPlaying: Bool { get set }
 ```
 
+```objc
+@property (getter=isPlaying) BOOL playing;
+```
+
 #### Discussion
 
-If the value of this property is [`false`](https://developer.apple.com/documentation/swift/false) (the default), SceneKit does not increment the scene time, so animations associated with the scene do not play. Change this property’s value to [`true`](https://developer.apple.com/documentation/swift/true) to start animating the scene.
+If the value of this property is [`false`](../../Swift/false.md) (the default), SceneKit does not increment the scene time, so animations associated with the scene do not play. Change this property’s value to [`true`](../../Swift/true.md) to start animating the scene.
 
 ## See Also
 
-- [var loops: Bool](sk3dnode/loops.md)
+### Animating a 3D Node’s Content in Scene Kit
+- [var loops: Bool](./loops.md)
   A Boolean value that determines whether Scene Kit restarts the scene time after all animations in the scene have played.
-- [var sceneTime: TimeInterval](sk3dnode/scenetime.md)
+- [var sceneTime: TimeInterval](./scenetime.md)
   The current scene time.
 
 

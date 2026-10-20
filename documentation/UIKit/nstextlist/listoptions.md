@@ -1,7 +1,8 @@
 # listOptions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the list options mask value of the receiver.
 
@@ -19,15 +20,20 @@ Returns the list options mask value of the receiver.
 var listOptions: NSTextList.Options { get }
 ```
 
+```objc
+@property (readonly) NSTextListOptions listOptions;
+```
+
 #### Return Value
 
 The list options mask value of the receiver.
 
 ## See Also
 
-- [var isOrdered: Bool](nstextlist/isordered.md)
+### Getting list options
+- [var isOrdered: Bool](./isordered.md)
   A Boolean value that indicates whether the list is ordered.
-- [NSTextList.Options](nstextlist/options.md)
+- [NSTextList.Options](./options.md)
   Values that available options for text list items.
 
 

@@ -1,7 +1,8 @@
 # moreComing
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether there are more records to fetch.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether there are more records to fetch.
 
 ## Declaration
 
-```swift
+```
 readonly attribute Boolean moreComing;
 ```
 
@@ -20,12 +21,14 @@ This property is `true` if there are more records to fetch; otherwise, `false`. 
 
 ## See Also
 
-- [continuationMarker](cloudkit.queryresponse/continuationmarker.md)
+### Related Documentation
+- [continuationMarker](./continuationmarker.md)
   Marks the location of the last batch of results.
-- [resultsLimit](cloudkit.queryresponse/resultslimit.md)
+- [resultsLimit](./resultslimit.md)
   The maximum number of records to fetch.
-- [query](cloudkit.queryresponse/query.md)
-  A [`CloudKit.Query`](cloudkit.query.md) dictionary containing the criteria for matching records in the database.
+### Accessing Response Properties
+- [query](./query.md)
+  A [`CloudKit.Query`](../cloudkit.query.md) dictionary containing the criteria for matching records in the database.
 
 
 ---

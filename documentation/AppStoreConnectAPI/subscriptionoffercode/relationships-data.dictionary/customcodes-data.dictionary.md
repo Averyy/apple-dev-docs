@@ -1,21 +1,22 @@
 # SubscriptionOfferCode.Relationships.CustomCodes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.0+
 
 ## Declaration
 
-```swift
+```
 object SubscriptionOfferCode.Relationships.CustomCodes
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionOfferCode.Relationships.CustomCodes.Data](subscriptionoffercode/relationships-data.dictionary/customcodes-data.dictionary/data-data.dictionary.md)
+- [object SubscriptionOfferCode.Relationships.CustomCodes.Data](./customcodes-data.dictionary/data-data.dictionary.md)
   The request body you use to update a subscription offer code.
 
 ## Properties
@@ -26,9 +27,10 @@ object SubscriptionOfferCode.Relationships.CustomCodes
 
 ## See Also
 
-- [object SubscriptionOfferCode.Relationships.OneTimeUseCodes](subscriptionoffercode/relationships-data.dictionary/onetimeusecodes-data.dictionary.md)
-- [object SubscriptionOfferCode.Relationships.Prices](subscriptionoffercode/relationships-data.dictionary/prices-data.dictionary.md)
-- [object SubscriptionOfferCode.Relationships.Subscription](subscriptionoffercode/relationships-data.dictionary/subscription-data.dictionary.md)
+### Objects
+- [object SubscriptionOfferCode.Relationships.OneTimeUseCodes](./onetimeusecodes-data.dictionary.md)
+- [object SubscriptionOfferCode.Relationships.Prices](./prices-data.dictionary.md)
+- [object SubscriptionOfferCode.Relationships.Subscription](./subscription-data.dictionary.md)
 
 
 ---

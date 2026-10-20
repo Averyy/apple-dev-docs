@@ -1,14 +1,15 @@
 # GetLogicalUnitBytes
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```c
 void GetLogicalUnitBytes(SCSIParallelTaskIdentifier parallelTask, SCSILogicalUnitBytes *logicalUnitBytes);
 ```
 

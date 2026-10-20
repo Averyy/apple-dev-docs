@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the delegate for the title to display on the invitation screen.
@@ -18,11 +19,15 @@ Asks the delegate for the title to display on the invitation screen.
 func itemTitle(for csc: UICloudSharingController) -> String?
 ```
 
+```objc
+- (NSString *) itemTitleForCloudSharingController:(UICloudSharingController *) csc;
+```
+
 #### Discussion
 
-Implement this method to provide a meaningful title to the [`UICloudSharingController`](uicloudsharingcontroller.md) invitation screen.
+Implement this method to provide a meaningful title to the [`UICloudSharingController`](../uicloudsharingcontroller.md) invitation screen.
 
-[`itemTitle(for:)`](uicloudsharingcontrollerdelegate/itemtitle(for:).md) is called only when creating a new share. For an existing share, the title is retrieved from the share using the [`CKShareTitleKey`](https://developer.apple.com/documentation/cloudkit/cksharetitlekey-9yavd) key, which is set when a new share is saved.
+[`itemTitle(for:)`](./itemtitle%28for%29.md) is called only when creating a new share. For an existing share, the title is retrieved from the share using the [`CKShareTitleKey`](../../CloudKit/cksharetitlekey-9yavd.md) key, which is set when a new share is saved.
 
 **Swift**:
 
@@ -43,9 +48,10 @@ func itemTitle(for csc: UICloudSharingController) -> String? {
 
 ## See Also
 
-- [func itemType(for: UICloudSharingController) -> String?](uicloudsharingcontrollerdelegate/itemtype(for:).md)
+### Configuring the view controller
+- [func itemType(for: UICloudSharingController) -> String?](./itemtype%28for%29.md)
   Asks the delegate for the Uniform Type Identifier (UTI) of the item.
-- [func itemThumbnailData(for: UICloudSharingController) -> Data?](uicloudsharingcontrollerdelegate/itemthumbnaildata(for:).md)
+- [func itemThumbnailData(for: UICloudSharingController) -> Data?](./itemthumbnaildata%28for%29.md)
   Asks the delegate for the thumbnail image data to display on the invitation.
 
 

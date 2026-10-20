@@ -1,7 +1,8 @@
 # error
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An error that describes the reason for the unsuccessful attempt to modify the associated record.
 
@@ -11,7 +12,7 @@ An error that describes the reason for the unsuccessful attempt to modify the as
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

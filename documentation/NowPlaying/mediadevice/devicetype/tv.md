@@ -1,7 +1,8 @@
 # MediaDevice.DeviceType.tv
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A television.
 

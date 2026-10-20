@@ -1,7 +1,8 @@
 # unexpectedContinuationByte
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A continuation byte (`10xxxxxx`) outside of a multi-byte sequence
 

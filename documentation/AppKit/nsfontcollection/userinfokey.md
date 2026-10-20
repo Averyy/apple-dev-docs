@@ -1,12 +1,13 @@
 # NSFontCollection.UserInfoKey
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-These constants are used as keys in the [`didChangeNotification`](nsfontcollection/didchangenotification.md) `userInfo` dictionary to indicate the changes that have taken place.
+These constants are used as keys in the [`didChangeNotification`](./didchangenotification.md) `userInfo` dictionary to indicate the changes that have taken place.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,35 +15,40 @@ These constants are used as keys in the [`didChangeNotification`](nsfontcollecti
 struct UserInfoKey
 ```
 
+```c
+typedef NSString * NSFontCollectionUserInfoKey;
+```
+
 ## Topics
 
 ### User Info Keys
-- [class let actionUserInfoKey: NSFontCollection.UserInfoKey](nsfontcollection/actionuserinfokey.md)
+- [class let actionUserInfoKey: NSFontCollection.UserInfoKey](./actionuserinfokey.md)
   An action was taken. See `NSFontCollectionAction Key Values` for the possible values. An `NSString`.
-- [class let nameUserInfoKey: NSFontCollection.UserInfoKey](nsfontcollection/nameuserinfokey.md)
+- [class let nameUserInfoKey: NSFontCollection.UserInfoKey](./nameuserinfokey.md)
   The font collection’s name. If renamed, this is the new name. An `NSString`.
-- [class let oldNameUserInfoKey: NSFontCollection.UserInfoKey](nsfontcollection/oldnameuserinfokey.md)
-  Included as a value for the [`oldNameUserInfoKey`](nsfontcollection/oldnameuserinfokey.md) key, if present. This is the previous name. An `NSString`.
-- [class let visibilityUserInfoKey: NSFontCollection.UserInfoKey](nsfontcollection/visibilityuserinfokey.md)
-  The visibly of the font collection. An NSNumber containing a value from the [`NSFontCollection.Visibility`](nsfontcollection/visibility.md) enum.
+- [class let oldNameUserInfoKey: NSFontCollection.UserInfoKey](./oldnameuserinfokey.md)
+  Included as a value for the [`oldNameUserInfoKey`](./oldnameuserinfokey.md) key, if present. This is the previous name. An `NSString`.
+- [class let visibilityUserInfoKey: NSFontCollection.UserInfoKey](./visibilityuserinfokey.md)
+  The visibly of the font collection. An NSNumber containing a value from the [`NSFontCollection.Visibility`](./visibility.md) enum.
 ### Initializers
-- [init(rawValue: String)](nsfontcollection/userinfokey/init(rawvalue:).md)
+- [init(rawValue: String)](./userinfokey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class let didChangeNotification: NSNotification.Name](nsfontcollection/didchangenotification.md)
+### Responding to Changes
+- [class let didChangeNotification: NSNotification.Name](./didchangenotification.md)
   Posted whenever a font collection is changed.
-- [NSFontCollection.ActionTypeKey](nsfontcollection/actiontypekey.md)
-  The following actions are possible values of the [`actionUserInfoKey`](nsfontcollection/actionuserinfokey.md) in the [`didChangeNotification`](nsfontcollection/didchangenotification.md) `userInfo` method.
+- [NSFontCollection.ActionTypeKey](./actiontypekey.md)
+  The following actions are possible values of the [`actionUserInfoKey`](./actionuserinfokey.md) in the [`didChangeNotification`](./didchangenotification.md) `userInfo` method.
 
 
 ---

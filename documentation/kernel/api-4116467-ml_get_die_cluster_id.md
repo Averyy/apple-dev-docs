@@ -1,14 +1,15 @@
 # ml_get_die_cluster_id
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.3+
 
 ## Declaration
 
-```swift
+```c
 unsigned int ml_get_die_cluster_id(unsigned int cluster_id);
 ```
 

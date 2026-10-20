@@ -1,7 +1,8 @@
 # subscriptionID
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subscription’s unique identifier.
 
@@ -11,7 +12,7 @@ The subscription’s unique identifier.
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 - Swift 4.2+
 
@@ -27,11 +28,12 @@ This property’s value is the subscription ID that you provide to the `init(rec
 
 ## See Also
 
-- [CKSubscription.ID](cksubscription/id.md)
+### Accessing the Subscription Metadata
+- [CKSubscription.ID](./id.md)
   A type that represents a subscription’s identifier.
-- [var subscriptionType: CKSubscription.SubscriptionType](cksubscription/subscriptiontype-swift.property.md)
+- [var subscriptionType: CKSubscription.SubscriptionType](./subscriptiontype-swift.property.md)
   The behavior that a subscription provides.
-- [CKSubscription.SubscriptionType](cksubscription/subscriptiontype-swift.enum.md)
+- [CKSubscription.SubscriptionType](./subscriptiontype-swift.enum.md)
   Constants that identify a subscription’s behavior.
 
 

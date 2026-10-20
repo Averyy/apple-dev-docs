@@ -1,7 +1,8 @@
 # sendSuggestionResponse(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a response for a business suggestion.
 
@@ -20,9 +21,10 @@ final func sendSuggestionResponse(_ response: RCSService.SuggestionResponse) asy
 
 ## See Also
 
-- [RCSService.SuggestionResponse](rcsservice/suggestionresponse.md)
+### Responding to business suggestions
+- [RCSService.SuggestionResponse](./suggestionresponse.md)
   Structure representing a response to a business suggestion.
-- [func sendDeviceSpecifics(to: RCSHandle.URI, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/senddevicespecifics(to:using:messageid:).md)
+- [func sendDeviceSpecifics(to: RCSHandle.URI, using: CellularServiceID, messageID: RCSMessageID) async throws](./senddevicespecifics%28to,using,messageid%29.md)
   Sends device specifics in response to a suggested action to send device specifics.
 
 

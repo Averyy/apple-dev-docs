@@ -1,7 +1,8 @@
 # dilationRateY
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 var dilationRateY: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger dilationRateY;
+```
+
 ## See Also
 
-- [var dilationRateX: Int](mpscnndilatedpoolingmax/dilationratex.md)
+### Instance Properties
+- [var dilationRateX: Int](./dilationratex.md)
 
 
 ---

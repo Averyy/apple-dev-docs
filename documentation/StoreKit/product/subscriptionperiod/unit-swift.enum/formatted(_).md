@@ -1,7 +1,8 @@
 # formatted(_:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.0+
@@ -20,7 +21,8 @@ func formatted<S>(_ format: S) -> S.FormatOutput where S : FormatStyle, S.Format
 
 ## See Also
 
-- [Product.SubscriptionPeriod.Unit.FormatStyle](product/subscriptionperiod/unit-swift.enum/formatstyle.md)
+### Getting the formatted description
+- [Product.SubscriptionPeriod.Unit.FormatStyle](./formatstyle.md)
 
 
 ---

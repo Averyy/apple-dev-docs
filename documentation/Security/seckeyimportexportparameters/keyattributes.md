@@ -1,7 +1,8 @@
 # keyAttributes
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A word of bits constituting the low-level attribute flags for imported keys.
 
@@ -14,13 +15,17 @@ A word of bits constituting the low-level attribute flags for imported keys.
 var keyAttributes: CSSM_KEYATTR_FLAGS
 ```
 
+```c
+CSSM_KEYATTR_FLAGS keyAttributes;
+```
+
 #### Discussion
 
 The default value is `CSSM_KEYATTR_SENSITIVE` `|` `CSSM_KEYATTR_EXTRACTABLE`; the `CSSM_KEYATTR_PERMANENT` bit is also added to the default if a non-NULL value is specified for the `importKeychain` parameter.
 
 The following are valid values for these flags: `CSSM_KEYATTR_PERMANENT`, `CSSM_KEYATTR_SENSITIVE`, and `CSSM_KEYATTR_EXTRACTABLE`.
 
-If the `CSSM_KEYATTR_PERMANENT` bit is set, the `importKeychain` parameter is not valid, and if any keys are found in the external representation, then the error [`errSecInvalidKeychain`](errsecinvalidkeychain.md) is returned.
+If the `CSSM_KEYATTR_PERMANENT` bit is set, the `importKeychain` parameter is not valid, and if any keys are found in the external representation, then the error [`errSecInvalidKeychain`](../errsecinvalidkeychain.md) is returned.
 
 The `CSSM_KEYATTR_SENSITIVE` bit indicates that the key can only be extracted in wrapped form.
 

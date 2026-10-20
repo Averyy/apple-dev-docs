@@ -1,7 +1,8 @@
 # MIDIDeviceGetNumberOfEntities(_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the number of entities in a device.
 
@@ -18,6 +19,10 @@ Returns the number of entities in a device.
 func MIDIDeviceGetNumberOfEntities(_ device: MIDIDeviceRef) -> Int
 ```
 
+```c
+extern ItemCount MIDIDeviceGetNumberOfEntities(MIDIDeviceRef device);
+```
+
 #### Return Value
 
 The number of entities the device contains, or 0 if an error occurred.
@@ -28,17 +33,18 @@ The number of entities the device contains, or 0 if an error occurred.
 
 ## See Also
 
-- [func MIDIGetNumberOfDevices() -> Int](midigetnumberofdevices().md)
+### Device lookup
+- [func MIDIGetNumberOfDevices() -> Int](./midigetnumberofdevices%28%29.md)
   Returns the number of devices in the system.
-- [func MIDIGetDevice(Int) -> MIDIDeviceRef](midigetdevice(_:).md)
+- [func MIDIGetDevice(Int) -> MIDIDeviceRef](./midigetdevice%28_%29.md)
   Returns a device from the system.
-- [func MIDIGetNumberOfExternalDevices() -> Int](midigetnumberofexternaldevices().md)
+- [func MIDIGetNumberOfExternalDevices() -> Int](./midigetnumberofexternaldevices%28%29.md)
   Returns the number of external MIDI devices in the system.
-- [func MIDIGetExternalDevice(Int) -> MIDIDeviceRef](midigetexternaldevice(_:).md)
+- [func MIDIGetExternalDevice(Int) -> MIDIDeviceRef](./midigetexternaldevice%28_%29.md)
   Returns one of the external devices in the system.
-- [func MIDIDeviceGetEntity(MIDIDeviceRef, Int) -> MIDIEntityRef](mididevicegetentity(_:_:).md)
+- [func MIDIDeviceGetEntity(MIDIDeviceRef, Int) -> MIDIEntityRef](./mididevicegetentity%28_,_%29.md)
   Returns the device’s entity at a specific index.
-- [typealias MIDIDeviceRef](midideviceref.md)
+- [typealias MIDIDeviceRef](./midideviceref.md)
   A MIDI device that contains entities.
 
 

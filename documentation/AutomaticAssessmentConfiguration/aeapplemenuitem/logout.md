@@ -1,7 +1,8 @@
 # logout
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Log Out item, covering both the command and its confirmation.
 
@@ -13,6 +14,10 @@ The Log Out item, covering both the command and its confirmation.
 
 ```swift
 static let logout: AEAppleMenuItem
+```
+
+```c
+extern AEAppleMenuItem const AEAppleMenuItemLogout;
 ```
 
 

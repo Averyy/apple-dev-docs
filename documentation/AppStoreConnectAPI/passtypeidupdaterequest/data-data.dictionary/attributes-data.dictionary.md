@@ -1,7 +1,8 @@
 # PassTypeIdUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The updateable attributes of a pass type identifier.
 
@@ -10,7 +11,7 @@ The updateable attributes of a pass type identifier.
 
 ## Declaration
 
-```swift
+```
 object PassTypeIdUpdateRequest.Data.Attributes
 ```
 

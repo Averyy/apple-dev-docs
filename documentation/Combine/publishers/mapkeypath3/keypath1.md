@@ -1,7 +1,8 @@
 # keyPath1
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key path of a second property to publish.
 
@@ -22,11 +23,12 @@ let keyPath1: KeyPath<Upstream.Output, Output1>
 
 ## See Also
 
-- [let upstream: Upstream](publishers/mapkeypath3/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
-- [let keyPath0: KeyPath<Upstream.Output, Output0>](publishers/mapkeypath3/keypath0.md)
+- [let keyPath0: KeyPath<Upstream.Output, Output0>](./keypath0.md)
   The key path of a property to publish.
-- [let keyPath2: KeyPath<Upstream.Output, Output2>](publishers/mapkeypath3/keypath2.md)
+- [let keyPath2: KeyPath<Upstream.Output, Output2>](./keypath2.md)
   The key path of a third property to publish.
 
 

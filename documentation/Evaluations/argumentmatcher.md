@@ -1,7 +1,8 @@
 # ArgumentMatcher
 
 **Framework**: Evaluations  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The values that define how to validate a tool-call argument.
 
@@ -22,7 +23,7 @@ enum ArgumentMatcher
 
 ## Mentions
 
-- [Evaluating tool-calling behavior](evaluating-tool-calling-behavior.md)
+- [Evaluating tool-calling behavior](./evaluating-tool-calling-behavior.md)
 
 #### Overview
 
@@ -40,85 +41,86 @@ let matchers: [ArgumentMatcher] = [
 
 | Validation Strategy | Rules |
 | --- | --- |
-| [`ArgumentMatcher.exact(argumentName:value:)`](argumentmatcher/exact(argumentname:value:).md) | Value must equal the expected value exactly. Use for identifiers, enum values, and precise inputs. |
-| [`ArgumentMatcher.keyOnly(argumentName:)`](argumentmatcher/keyonly(argumentname:).md) | Argument must be present with any value. Use when you care that the model provides the parameter but any value is acceptable. |
-| [`ArgumentMatcher.oneOf(argumentName:allowedValues:)`](argumentmatcher/oneof(argumentname:allowedvalues:).md) | Value must be one of the allowed options. Use for ambiguous prompts with multiple valid interpretations. |
-| [`ArgumentMatcher.range(argumentName:minimum:maximum:)`](argumentmatcher/range(argumentname:minimum:maximum:).md) | Numeric value must fall within bounds (inclusive). Use for quantities where a range is acceptable. |
-| [`ArgumentMatcher.pattern(argumentName:regex:)`](argumentmatcher/pattern(argumentname:regex:).md) | String must match a regular expression. Use for structured formats: emails, dates, IDs. |
-| [`ArgumentMatcher.contains(argumentName:substring:)`](argumentmatcher/contains(argumentname:substring:).md) | String must contain a substring. Use when the argument references a concept but phrasing varies. |
-| [`ArgumentMatcher.hasPrefix(argumentName:prefix:)`](argumentmatcher/hasprefix(argumentname:prefix:).md) | String must start with a prefix. Use for paths, URLs, or namespaced values. |
-| [`ArgumentMatcher.hasSuffix(argumentName:suffix:)`](argumentmatcher/hassuffix(argumentname:suffix:).md) | String must end with a suffix. Use for file extensions or domain-specific endings. |
-| [`ArgumentMatcher.naturalLanguage(argumentName:criteria:)`](argumentmatcher/naturallanguage(argumentname:criteria:).md) | A language model judges whether the value satisfies the criteria. Use when correctness is subjective or hard to express with string operations, for example, validating that a query argument is “a weather-related question”. |
+| [`ArgumentMatcher.exact(argumentName:value:)`](./argumentmatcher/exact%28argumentname,value%29.md) | Value must equal the expected value exactly. Use for identifiers, enum values, and precise inputs. |
+| [`ArgumentMatcher.keyOnly(argumentName:)`](./argumentmatcher/keyonly%28argumentname%29.md) | Argument must be present with any value. Use when you care that the model provides the parameter but any value is acceptable. |
+| [`ArgumentMatcher.oneOf(argumentName:allowedValues:)`](./argumentmatcher/oneof%28argumentname,allowedvalues%29.md) | Value must be one of the allowed options. Use for ambiguous prompts with multiple valid interpretations. |
+| [`ArgumentMatcher.range(argumentName:minimum:maximum:)`](./argumentmatcher/range%28argumentname,minimum,maximum%29.md) | Numeric value must fall within bounds (inclusive). Use for quantities where a range is acceptable. |
+| [`ArgumentMatcher.pattern(argumentName:regex:)`](./argumentmatcher/pattern%28argumentname,regex%29.md) | String must match a regular expression. Use for structured formats: emails, dates, IDs. |
+| [`ArgumentMatcher.contains(argumentName:substring:)`](./argumentmatcher/contains%28argumentname,substring%29.md) | String must contain a substring. Use when the argument references a concept but phrasing varies. |
+| [`ArgumentMatcher.hasPrefix(argumentName:prefix:)`](./argumentmatcher/hasprefix%28argumentname,prefix%29.md) | String must start with a prefix. Use for paths, URLs, or namespaced values. |
+| [`ArgumentMatcher.hasSuffix(argumentName:suffix:)`](./argumentmatcher/hassuffix%28argumentname,suffix%29.md) | String must end with a suffix. Use for file extensions or domain-specific endings. |
+| [`ArgumentMatcher.naturalLanguage(argumentName:criteria:)`](./argumentmatcher/naturallanguage%28argumentname,criteria%29.md) | A language model judges whether the value satisfies the criteria. Use when correctness is subjective or hard to express with string operations, for example, validating that a query argument is “a weather-related question”. |
 
 ## Topics
 
 ### Exact matching
-- [case exact(argumentName: String, value: ArgumentValue)](argumentmatcher/exact(argumentname:value:).md)
+- [case exact(argumentName: String, value: ArgumentValue)](./argumentmatcher/exact%28argumentname,value%29.md)
   A value that indicates that the argument must be present with this exact key and value.
-- [ArgumentMatcher.keyOnly(argumentName:)](argumentmatcher/keyonly(argumentname:).md)
+- [ArgumentMatcher.keyOnly(argumentName:)](./argumentmatcher/keyonly%28argumentname%29.md)
   A value that indicates that the argument must be present with this key and no specific value.
 ### Set and range matching
-- [case oneOf(argumentName: String, allowedValues: [ArgumentValue])](argumentmatcher/oneof(argumentname:allowedvalues:).md)
+- [case oneOf(argumentName: String, allowedValues: [ArgumentValue])](./argumentmatcher/oneof%28argumentname,allowedvalues%29.md)
   A value that indicates the argument must be present with a value that matches one of the allowed values.
-- [case range(argumentName: String, minimum: Double?, maximum: Double?)](argumentmatcher/range(argumentname:minimum:maximum:).md)
+- [case range(argumentName: String, minimum: Double?, maximum: Double?)](./argumentmatcher/range%28argumentname,minimum,maximum%29.md)
   A value that indicates that the argument must be present and its numeric value must be within the specified range.
 ### String matching
-- [case pattern(argumentName: String, regex: String)](argumentmatcher/pattern(argumentname:regex:).md)
+- [case pattern(argumentName: String, regex: String)](./argumentmatcher/pattern%28argumentname,regex%29.md)
   A value that indicates that the argument must be present and its string value must match the specified regex pattern.
-- [case contains(argumentName: String, substring: String)](argumentmatcher/contains(argumentname:substring:).md)
+- [case contains(argumentName: String, substring: String)](./argumentmatcher/contains%28argumentname,substring%29.md)
   A value that indicates that the argument must be present and its string value must contain the specified substring.
-- [case hasPrefix(argumentName: String, prefix: String)](argumentmatcher/hasprefix(argumentname:prefix:).md)
+- [case hasPrefix(argumentName: String, prefix: String)](./argumentmatcher/hasprefix%28argumentname,prefix%29.md)
   A value that indicates that the argument must be present and its string value must start with the specified prefix.
-- [case hasSuffix(argumentName: String, suffix: String)](argumentmatcher/hassuffix(argumentname:suffix:).md)
+- [case hasSuffix(argumentName: String, suffix: String)](./argumentmatcher/hassuffix%28argumentname,suffix%29.md)
   A value that indicates that the argument must be present and its string value must end with the specified suffix.
 ### Semantic matching
-- [case naturalLanguage(argumentName: String, criteria: String)](argumentmatcher/naturallanguage(argumentname:criteria:).md)
+- [case naturalLanguage(argumentName: String, criteria: String)](./argumentmatcher/naturallanguage%28argumentname,criteria%29.md)
   A value that indicates that the argument must be present and semantically match the given criteria.
 ### Supporting types
-- [enum ArgumentValue](argumentvalue.md)
+- [enum ArgumentValue](./argumentvalue.md)
   A primitive, generable value type for argument specifications.
-- [enum StructuredValue](structuredvalue.md)
+- [enum StructuredValue](./structuredvalue.md)
   A type-safe representation of JSON values.
 ### Initializers
-- [init(from: any Decoder) throws](argumentmatcher/init(from:).md)
+- [init(from: any Decoder) throws](./argumentmatcher/init%28from%29.md)
   Creates an argument matcher from the given decoder.
 ### Instance Properties
-- [var generatedContent: GeneratedContent](argumentmatcher/generatedcontent.md)
+- [var generatedContent: GeneratedContent](./argumentmatcher/generatedcontent.md)
   The generated content representation of this argument matcher.
 ### Instance Methods
-- [func encode(to: any Encoder) throws](argumentmatcher/encode(to:).md)
+- [func encode(to: any Encoder) throws](./argumentmatcher/encode%28to%29.md)
   Encodes this argument matcher into the given encoder.
 ### Type Properties
-- [static var generationSchema: GenerationSchema](argumentmatcher/generationschema.md)
+- [static var generationSchema: GenerationSchema](./argumentmatcher/generationschema.md)
   The generation schema for this partially generated argument matcher.
 ### Enumerations
-- [ArgumentMatcher.PartiallyGenerated](argumentmatcher/partiallygenerated.md)
+- [ArgumentMatcher.PartiallyGenerated](./argumentmatcher/partiallygenerated.md)
   A partially generated form of an argument matcher.
 ### Default Implementations
-- [ConvertibleFromGeneratedContent Implementations](argumentmatcher/convertiblefromgeneratedcontent-implementations.md)
+- [ConvertibleFromGeneratedContent Implementations](./argumentmatcher/convertiblefromgeneratedcontent-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [ConvertibleFromGeneratedContent](../foundationmodels/convertiblefromgeneratedcontent.md)
-- [ConvertibleToGeneratedContent](../foundationmodels/convertibletogeneratedcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [Generable](../foundationmodels/generable.md)
-- [InstructionsRepresentable](../foundationmodels/instructionsrepresentable.md)
-- [PromptRepresentable](../foundationmodels/promptrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ConvertibleFromGeneratedContent](../FoundationModels/convertiblefromgeneratedcontent.md)
+- [ConvertibleToGeneratedContent](../FoundationModels/convertibletogeneratedcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Escapable](../Swift/escapable.md)
+- [Generable](../FoundationModels/generable.md)
+- [InstructionsRepresentable](../FoundationModels/instructionsrepresentable.md)
+- [PromptRepresentable](../FoundationModels/promptrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Evaluating tool-calling behavior](evaluating-tool-calling-behavior.md)
+### Tool-call evaluation
+- [Evaluating tool-calling behavior](./evaluating-tool-calling-behavior.md)
   Analyze your model’s tool calls against expected trajectories, argument values, and call ordering.
-- [struct ToolCallEvaluator](toolcallevaluator.md)
+- [struct ToolCallEvaluator](./toolcallevaluator.md)
   An evaluator that verifies agentic tool calls against an expected trajectory.
-- [struct TrajectoryExpectation](trajectoryexpectation.md)
+- [struct TrajectoryExpectation](./trajectoryexpectation.md)
   The expected pattern of tool calls for an evaluation.
 
 

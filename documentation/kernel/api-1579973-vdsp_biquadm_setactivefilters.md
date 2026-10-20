@@ -1,7 +1,8 @@
 # vDSP_biquadm_SetActiveFilters
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the overall active/inactive filter state of a valid single-precision multichannel biquad IIR filter setup of type `vDSP_biquadm_Setup`.
 
@@ -10,7 +11,7 @@ Sets the overall active/inactive filter state of a valid single-precision multic
 
 ## Declaration
 
-```swift
+```c
 void vDSP_biquadm_SetActiveFilters(vDSP_biquadm_Setup __setup, const bool *__filter_states);
 ```
 

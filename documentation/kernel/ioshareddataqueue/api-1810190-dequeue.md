@@ -7,13 +7,13 @@ Dequeues the next available entry on the queue and copies it into the given data
 
 ## Declaration
 
-```swift
+```cpp
 virtual Boolean dequeue(
  void *data,
  UInt32 *dataSize);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns true on success and false on failure. Typically failure means that the queue is empty.
 
@@ -28,15 +28,16 @@ This function will dequeue the next available entry on the queue. If a data poin
 
 ## See Also
 
-- [getMemoryDescriptor](ioshareddataqueue/1810240-getmemorydescriptor.md)
+### Miscellaneous
+- [getMemoryDescriptor](./api-1810240-getmemorydescriptor.md)
   Returns a memory descriptor covering the IODataQueueMemory region.
-- [initWithCapacity](ioshareddataqueue/1810293-initwithcapacity.md)
+- [initWithCapacity](./api-1810293-initwithcapacity.md)
   Initializes an IOSharedDataQueue instance with the capacity specified in the size parameter.
-- [peek](ioshareddataqueue/1810347-peek.md)
+- [peek](./api-1810347-peek.md)
   Used to peek at the next entry on the queue.
-- [withCapacity](ioshareddataqueue/1810400-withcapacity.md)
+- [withCapacity](./api-1810400-withcapacity.md)
   Static method that creates a new IOSharedDataQueue instance with the capacity specified in the size parameter.
-- [withEntries](ioshareddataqueue/1810447-withentries.md)
+- [withEntries](./api-1810447-withentries.md)
   Static method that creates a new IOSharedDataQueue instance with the specified number of entries of the given size.
 
 

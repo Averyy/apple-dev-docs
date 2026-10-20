@@ -2,6 +2,7 @@
 
 **Framework**: Core Transferable  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of the representation used to import and export the item.
@@ -23,11 +24,12 @@ associatedtype Representation : TransferRepresentation
 
 #### Discussion
 
-Swift infers this type from the return value of the [`transferRepresentation`](transferable/transferrepresentation.md) property.
+Swift infers this type from the return value of the [`transferRepresentation`](./transferrepresentation.md) property.
 
 ## See Also
 
-- [static var transferRepresentation: Self.Representation](transferable/transferrepresentation.md)
+### Implementing a transfer representation
+- [static var transferRepresentation: Self.Representation](./transferrepresentation.md)
   The representation used to import and export the item.
 
 

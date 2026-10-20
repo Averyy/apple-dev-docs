@@ -1,21 +1,28 @@
 # MTRPumpConfigurationAndControlPumpOperationMode.normal
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 16.1+
-- iPadOS 16.1+
-- Mac Catalyst 16.1+
-- macOS 13.0+
-- tvOS 16.1+
-- visionOS 1.0+
-- watchOS 9.1+
+- iOS 16.1+ - Deprecated in 16.5
+- iPadOS 16.1+ - Deprecated in 16.5
+- Mac Catalyst 16.1+ - Deprecated in 16.5
+- macOS 13.0+ - Deprecated in 13.4
+- tvOS 16.1+ - Deprecated in 16.5
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 9.1+ - Deprecated in 9.5
+
+> **Deprecated**: Please use MTRPumpConfigurationAndControlOperationModeNormal
 
 ## Declaration
 
 ```swift
 case normal
+```
+
+```c
+MTRPumpConfigurationAndControlPumpOperationModeNormal
 ```
 
 

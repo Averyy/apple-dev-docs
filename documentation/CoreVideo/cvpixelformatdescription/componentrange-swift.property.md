@@ -1,7 +1,8 @@
 # componentRange
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Color gamut of format
 

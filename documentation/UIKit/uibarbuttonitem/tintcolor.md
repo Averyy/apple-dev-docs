@@ -1,7 +1,8 @@
 # tintColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color to apply to the button item.
 
@@ -9,7 +10,7 @@ The tint color to apply to the button item.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,23 +19,28 @@ The tint color to apply to the button item.
 var tintColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIColor * tintColor;
+```
+
 #### Discussion
 
-In iOS 7 and later, all subclasses of [`UIView`](uiview.md) derive their behavior for [`tintColor`](uiview/tintcolor.md) from the base class. Although [`UIBarButtonItem`](uibarbuttonitem.md) isn’t a view, its [`tintColor`](uibarbuttonitem/tintcolor.md) property behaves the same as that of [`UIView`](uiview.md). See the discussion of [`tintColor`](uiview/tintcolor.md) in [`UIView`](uiview.md) for more information.
+In iOS 7 and later, all subclasses of [`UIView`](../uiview.md) derive their behavior for [`tintColor`](../uiview/tintcolor.md) from the base class. Although [`UIBarButtonItem`](../uibarbuttonitem.md) isn’t a view, its [`tintColor`](./tintcolor.md) property behaves the same as that of [`UIView`](../uiview.md). See the discussion of [`tintColor`](../uiview/tintcolor.md) in [`UIView`](../uiview.md) for more information.
 
 ## See Also
 
-- [var style: UIBarButtonItem.Style](uibarbuttonitem/style-swift.property.md)
+### Customizing item appearance
+- [var style: UIBarButtonItem.Style](./style-swift.property.md)
   The style of the item.
-- [UIBarButtonItem.Style](uibarbuttonitem/style-swift.enum.md)
+- [UIBarButtonItem.Style](./style-swift.enum.md)
   Constants that specify the style of an item.
-- [var isHidden: Bool](uibarbuttonitem/ishidden.md)
+- [var isHidden: Bool](./ishidden.md)
   A Boolean that determines the visibility of the item.
-- [var isSelected: Bool](uibarbuttonitem/isselected.md)
+- [var isSelected: Bool](./isselected.md)
   A Boolean value that indicates whether the button is in a selected state.
-- [var width: CGFloat](uibarbuttonitem/width.md)
+- [var width: CGFloat](./width.md)
   The width of the item.
-- [var possibleTitles: Set<String>?](uibarbuttonitem/possibletitles.md)
+- [var possibleTitles: Set<String>?](./possibletitles.md)
   The set of possible titles to display on the bar button.
 
 

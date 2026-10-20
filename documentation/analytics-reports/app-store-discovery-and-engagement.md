@@ -1,23 +1,26 @@
 # App Store Discovery and Engagement
 
-**Framework**: Analytics Reports
+**Framework**: Analytics Reports  
+**Role**: Article
 
 Analyze how users interact with your app on the App Store.
 
 #### Overview
 
-The App Store Discovery and Engagement report provides details about how users engage with your apps on the App Store itself. This includes data about user engagement with your app’s icons, product pages, in-app event pages, and [`other install sheets`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/skstoreproductviewcontroller).
+The App Store Discovery and Engagement report provides details about how users engage with your apps on the App Store itself. This includes data about user engagement with your app’s icons, product pages, in-app event pages, and [other install sheets](../StoreKit/skstoreproductviewcontroller.md).
 
 - Territories: Worldwide
 - Platforms: iOS, iPadOS, macOS, tvOS, visionOS
-- Availability: - Daily: Every day.
-- Weekly: Every Friday for the previous week (Monday to Sunday).
-- Monthly: On the fifth day of the following month.
+- Availability:
+
+  - Daily: Every day.
+  - Weekly: Every Friday for the previous week (Monday to Sunday).
+  - Monthly: On the fifth day of the following month.
 - History: On request, data is available beginning from January 1, 2024.
 - Completeness: Within three days. Weekly and monthly reports are complete by default.
-- Privacy: Data is available in two reports: standard and detailed. *Standard* reports include fields not easily related to uniquely identifiable user data. *Detailed* reports include all fields and also include additional privacy measures for the data, to help protect uniquely identifiable information for individuals. Download the standard report unless you need to analyze the unique fields in the detailed report. To learn more, see [`Protecting user privacy in report data`](privacy.md).
+- Privacy: Data is available in two reports: standard and detailed. *Standard* reports include fields not easily related to uniquely identifiable user data. *Detailed* reports include all fields and also include additional privacy measures for the data, to help protect uniquely identifiable information for individuals. Download the standard report unless you need to analyze the unique fields in the detailed report. To learn more, see [Protecting user privacy in report data](./privacy.md).
 
-The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [`Data Completeness and Corrections`](data-completeness-corrections.md).
+The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
 #### Report Fields
 
@@ -50,7 +53,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Page Type | In-app event | An in-app Event page. |
 | Page Type | Notification | An App Store notification. |
 | Page Type | Product page | A product page. |
-| Page Type | Store sheet | An App Store [`other install sheets`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/skstoreproductviewcontroller). |
+| Page Type | Store sheet | An App Store [store sheet](../StoreKit/skstoreproductviewcontroller.md). |
 | Page Type | App version history | Your app’s version history page. |
 | Page Type | App privacy | Your app’s privacy detail page. |
 | Page Type | Developer page | Your developer page. |
@@ -59,7 +62,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Page Title | Various | The name of the product page or in-app event page that led the user to download the app. Possible values include the name you set for your page in App Store Connect, default product page, no page, or null. |
 | Source Type | App Store search | Users who discovered your app within search results on the App Store. Includes Search Ads results. Doesn’t include the Suggested section of the search landing page. |
 | Source Type | App Store browse | Users who discovered your app while browsing the App Store. Includes results in the Suggested section of the search landing page. |
-| Source Type | App referrer | Users who discovered your app from within another app. Includes impressions and page views loaded in a [`other install sheets`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/skstoreproductviewcontroller). Includes Apple apps, such as Messages, except Safari. |
+| Source Type | App referrer | Users who discovered your app from within another app. Includes impressions and page views loaded in a [store sheet](../StoreKit/skstoreproductviewcontroller.md). Includes Apple apps, such as Messages, except Safari. |
 | Source Type | Web referrer | Users who discovered your app after browsing a website in Safari. |
 | Source Type | App Clip | Users who discovered your app from within an App Clip. |
 | Source Type | Notification | Users who were presented with your app from within an App Store generated notification. |
@@ -75,9 +78,10 @@ The Analytics Reports framework delivers new portions of report content as insta
 
 ## See Also
 
-- [App Store Web Preview](app-store-web-preview.md)
+### App Store Engagement
+- [App Store Web Preview](./app-store-web-preview.md)
   Analyze how people engage with your app’s product pages and in-app events on web browsers.
-- [App Store Retention Messaging](app-store-retention-messaging.md)
+- [App Store Retention Messaging](./app-store-retention-messaging.md)
   Analyze how users interact with retention messages during the subscription cancellation flow.
 
 

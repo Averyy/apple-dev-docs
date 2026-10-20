@@ -2,6 +2,7 @@
 
 **Framework**: Accessory Transport Extension  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Handles session invalidation.

@@ -1,7 +1,8 @@
 # surfaceProcessed
 
 **Framework**: Media Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the flashing lights processor successfully processed the input surface.
 
@@ -21,13 +22,14 @@ var surfaceProcessed: Bool { get }
 
 #### Discussion
 
-This value is [`false`](https://developer.apple.com/documentation/swift/false) if the flashing lights processor can’t process the surface, which can occur for unsupported hardware or unsupported color spaces.
+This value is [`false`](../../../Swift/false.md) if the flashing lights processor can’t process the surface, which can occur for unsupported hardware or unsupported color spaces.
 
 ## See Also
 
-- [var intensityLevel: Float](maflashinglightsprocessor/result/intensitylevel.md)
+### Interpreting results from video processing
+- [var intensityLevel: Float](./intensitylevel.md)
   The intensity of flashing lights in the input surface.
-- [var mitigationLevel: Float](maflashinglightsprocessor/result/mitigationlevel.md)
+- [var mitigationLevel: Float](./mitigationlevel.md)
   The amount of mitigation in the output surface.
 
 

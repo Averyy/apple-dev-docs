@@ -1,7 +1,8 @@
 # outputWidth
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the output color texture for the spatial scaler you create with this descriptor.
 
@@ -19,11 +20,16 @@ The width of the output color texture for the spatial scaler you create with thi
 var outputWidth: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger outputWidth;
+```
+
 ## See Also
 
-- [var outputHeight: Int](mtlfxspatialscalerdescriptor/outputheight.md)
+### Configuring a spatial scaler’s output
+- [var outputHeight: Int](./outputheight.md)
   The height of the output color texture for the spatial scaler you create with this descriptor.
-- [var outputTextureFormat: MTLPixelFormat](mtlfxspatialscalerdescriptor/outputtextureformat.md)
+- [var outputTextureFormat: MTLPixelFormat](./outputtextureformat.md)
   The pixel format of the output color texture for the spatial scaler you create with this descriptor.
 
 

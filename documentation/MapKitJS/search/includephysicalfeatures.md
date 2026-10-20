@@ -1,7 +1,8 @@
 # includePhysicalFeatures
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the search results include physical features, such as mountain ranges, rivers, and ocean basins.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the search results include physical featu
 
 ## Declaration
 
-```swift
+```
 get includePhysicalFeatures(): boolean;
 set includePhysicalFeatures(value: boolean);
 ```

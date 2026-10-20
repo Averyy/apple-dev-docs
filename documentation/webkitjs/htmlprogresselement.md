@@ -1,7 +1,8 @@
 # HTMLProgressElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,22 +10,22 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLProgressElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [labels](htmlprogresselement/1629005-labels.md)
-- [max](htmlprogresselement/1629140-max.md)
-- [position](htmlprogresselement/1630488-position.md)
-- [value](htmlprogresselement/1633035-value.md)
+- [labels](./htmlprogresselement/api-1629005-labels.md)
+- [max](./htmlprogresselement/api-1629140-max.md)
+- [position](./htmlprogresselement/api-1630488-position.md)
+- [value](./htmlprogresselement/api-1633035-value.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # CLRegionState.inside
 
 **Framework**: Core Location  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The location is inside of the given region.
 
@@ -17,11 +18,16 @@ The location is inside of the given region.
 case inside
 ```
 
+```c
+CLRegionStateInside
+```
+
 ## See Also
 
-- [CLRegionState.unknown](clregionstate/unknown.md)
+### Region States
+- [CLRegionState.unknown](./unknown.md)
   It is unknown whether the location is inside or outside of the region.
-- [CLRegionState.outside](clregionstate/outside.md)
+- [CLRegionState.outside](./outside.md)
   The location is outside of the given region.
 
 

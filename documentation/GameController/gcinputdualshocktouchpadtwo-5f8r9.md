@@ -1,7 +1,8 @@
 # GCInputDualShockTouchpadTwo
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the second finger element to touch down on the DualShock 4 touchpad.
 
@@ -11,7 +12,7 @@ The name of the second finger element to touch down on the DualShock 4 touchpad.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,11 +22,13 @@ var GCInputDualShockTouchpadTwo: String { get }
 
 ## See Also
 
-- [var touchpadSecondary: GCControllerDirectionPad](gcdualsensegamepad/touchpadsecondary.md)
+### Related Documentation
+- [var touchpadSecondary: GCControllerDirectionPad](./gcdualsensegamepad/touchpadsecondary.md)
   The location of the player’s secondary finger on the touchpad.
-- [var GCInputDualShockTouchpadButton: String](gcinputdualshocktouchpadbutton-74k1l.md)
+### DualShock controller button names
+- [var GCInputDualShockTouchpadButton: String](./gcinputdualshocktouchpadbutton-74k1l.md)
   The name of the button functionality of the DualShock 4 touchpad.
-- [var GCInputDualShockTouchpadOne: String](gcinputdualshocktouchpadone-55wgz.md)
+- [var GCInputDualShockTouchpadOne: String](./gcinputdualshocktouchpadone-55wgz.md)
   The name of the first finger element to touch down on the DualShock 4 touchpad.
 
 

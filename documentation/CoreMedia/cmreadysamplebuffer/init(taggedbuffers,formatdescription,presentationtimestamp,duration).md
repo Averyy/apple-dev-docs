@@ -1,7 +1,8 @@
 # init(taggedBuffers:formatDescription:presentationTimeStamp:duration:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sample buffer carrying tagged buffers.
 
@@ -19,6 +20,8 @@ Creates a sample buffer carrying tagged buffers.
 ```swift
 init(taggedBuffers content: Content, formatDescription: CMTaggedBufferGroupFormatDescription? = nil, presentationTimeStamp: CMTime, duration: CMTime = .invalid)
 ```
+
+Available when `Content` is `[CMTaggedDynamicBuffer]`.
 
 ## Parameters
 

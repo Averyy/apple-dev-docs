@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -17,6 +18,10 @@
 
 ```swift
 var shouldSkipAttestationCertificateValidation: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL shouldSkipAttestationCertificateValidation;
 ```
 
 

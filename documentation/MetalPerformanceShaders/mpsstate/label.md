@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,12 +18,17 @@
 var label: String? { get set }
 ```
 
+```objc
+@property (atomic, copy, nullable) NSString * label;
+```
+
 ## See Also
 
-- [var isTemporary: Bool](mpsstate/istemporary.md)
-- [var readCount: Int](mpsstate/readcount.md)
-- [var resource: (any MTLResource)?](mpsstate/resource.md)
-- [var resourceCount: Int](mpsstate/resourcecount.md)
+### Instance Properties
+- [var isTemporary: Bool](./istemporary.md)
+- [var readCount: Int](./readcount.md)
+- [var resource: (any MTLResource)?](./resource.md)
+- [var resourceCount: Int](./resourcecount.md)
 
 
 ---

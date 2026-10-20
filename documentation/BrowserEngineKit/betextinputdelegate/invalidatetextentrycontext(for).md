@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the system the text entry context has changed and that text entry UI’s need to be refreshed.
@@ -9,7 +10,7 @@ Tells the system the text entry context has changed and that text entry UI’s n
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- macOS ?+
+- macOS
 - tvOS 17.4+
 - visionOS 1.1+
 
@@ -17,6 +18,10 @@ Tells the system the text entry context has changed and that text entry UI’s n
 
 ```swift
 func invalidateTextEntryContext(for textInput: any BETextInput)
+```
+
+```objc
+- (void) invalidateTextEntryContextForTextInput:(id<BETextInput>) textInput;
 ```
 
 #### Discussion

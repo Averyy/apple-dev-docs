@@ -1,7 +1,8 @@
 # AuthorizationRights
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An authorization item set designated to represent a set of rights.
 
@@ -15,9 +16,13 @@ An authorization item set designated to represent a set of rights.
 typealias AuthorizationRights = AuthorizationItemSet
 ```
 
+```c
+typedef AuthorizationItemSet AuthorizationRights;
+```
+
 #### Discussion
 
-The argument value of each item in the set is as defined for the specific right it belongs to. Argument values may not contain pointers so they remain portable between different address spaces. This set is actually an instance of an [`AuthorizationItemSet`](authorizationitemset.md).
+The argument value of each item in the set is as defined for the specific right it belongs to. Argument values may not contain pointers so they remain portable between different address spaces. This set is actually an instance of an [`AuthorizationItemSet`](./authorizationitemset.md).
 
 
 ---

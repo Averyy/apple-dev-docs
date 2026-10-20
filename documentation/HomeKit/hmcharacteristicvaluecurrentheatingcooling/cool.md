@@ -1,7 +1,8 @@
 # HMCharacteristicValueCurrentHeatingCooling.cool
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The accessory state indicates cooling.
 
@@ -19,11 +20,16 @@ The accessory state indicates cooling.
 case cool
 ```
 
+```c
+HMCharacteristicValueCurrentHeatingCoolingCool
+```
+
 ## See Also
 
-- [HMCharacteristicValueCurrentHeatingCooling.heat](hmcharacteristicvaluecurrentheatingcooling/heat.md)
+### Temperature States
+- [HMCharacteristicValueCurrentHeatingCooling.heat](./heat.md)
   The accessory state indicates heating.
-- [HMCharacteristicValueCurrentHeatingCooling.off](hmcharacteristicvaluecurrentheatingcooling/off.md)
+- [HMCharacteristicValueCurrentHeatingCooling.off](./off.md)
   The accessory indicates no heating or cooling.
 
 

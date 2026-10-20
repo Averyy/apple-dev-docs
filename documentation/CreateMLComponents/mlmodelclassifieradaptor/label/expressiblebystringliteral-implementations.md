@@ -1,11 +1,12 @@
 # ExpressibleByStringLiteral Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(stringLiteral: String)](mlmodelclassifieradaptor/label/init(stringliteral:).md)
+- [init(stringLiteral: String)](./init%28stringliteral%29.md)
   Creates a Label with a string literal.
 
 

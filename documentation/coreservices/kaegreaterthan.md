@@ -1,7 +1,8 @@
 # kAEGreaterThan
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The value of `operand1` is greater than the value of `operand2`.
 

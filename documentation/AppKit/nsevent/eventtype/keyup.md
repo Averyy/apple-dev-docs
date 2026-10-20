@@ -1,12 +1,13 @@
 # NSEvent.EventType.keyUp
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user released a key on the keyboard.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The user released a key on the keyboard.
 case keyUp
 ```
 
+```c
+NSEventTypeKeyUp
+```
+
 ## See Also
 
-- [NSEvent.EventType.keyDown](nsevent/eventtype/keydown.md)
+### Getting Keyboard Event Types
+- [NSEvent.EventType.keyDown](./keydown.md)
   The user pressed a key on the keyboard.
 
 

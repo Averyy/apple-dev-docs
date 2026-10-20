@@ -1,7 +1,8 @@
 # VNHumanHandPoseObservation
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An observation that provides the hand points the analysis recognized.
 
@@ -19,66 +20,71 @@ An observation that provides the hand points the analysis recognized.
 class VNHumanHandPoseObservation
 ```
 
+```objc
+@interface VNHumanHandPoseObservation : VNRecognizedPointsObservation
+```
+
 ## Topics
 
 ### Retrieving Points
-- [var availableJointNames: [VNHumanHandPoseObservation.JointName]](vnhumanhandposeobservation/availablejointnames.md)
+- [var availableJointNames: [VNHumanHandPoseObservation.JointName]](./vnhumanhandposeobservation/availablejointnames.md)
   The names of the available joints in the observation.
-- [VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname.md)
+- [VNHumanHandPoseObservation.JointName](./vnhumanhandposeobservation/jointname.md)
   The supported joint names for the hand pose.
-- [var availableJointsGroupNames: [VNHumanHandPoseObservation.JointsGroupName]](vnhumanhandposeobservation/availablejointsgroupnames.md)
+- [var availableJointsGroupNames: [VNHumanHandPoseObservation.JointsGroupName]](./vnhumanhandposeobservation/availablejointsgroupnames.md)
   The joint group names available in the observation.
-- [VNHumanHandPoseObservation.JointsGroupName](vnhumanhandposeobservation/jointsgroupname.md)
+- [VNHumanHandPoseObservation.JointsGroupName](./vnhumanhandposeobservation/jointsgroupname.md)
   The supported joint group names for the hand pose.
-- [func recognizedPoint(VNHumanHandPoseObservation.JointName) throws -> VNRecognizedPoint](vnhumanhandposeobservation/recognizedpoint(_:).md)
+- [func recognizedPoint(VNHumanHandPoseObservation.JointName) throws -> VNRecognizedPoint](./vnhumanhandposeobservation/recognizedpoint%28_%29.md)
   Retrieves the recognized point for a joint name.
-- [func recognizedPoints(VNHumanHandPoseObservation.JointsGroupName) throws -> [VNHumanHandPoseObservation.JointName : VNRecognizedPoint]](vnhumanhandposeobservation/recognizedpoints(_:).md)
+- [func recognizedPoints(VNHumanHandPoseObservation.JointsGroupName) throws -> [VNHumanHandPoseObservation.JointName : VNRecognizedPoint]](./vnhumanhandposeobservation/recognizedpoints%28_%29.md)
   Retrieves the recognized points associated with the joint group name.
 ### Determining the Chirality
-- [var chirality: VNChirality](vnhumanhandposeobservation/chirality.md)
+- [var chirality: VNChirality](./vnhumanhandposeobservation/chirality.md)
   The chirality, or handedness, of a pose.
-- [enum VNChirality](vnchirality.md)
+- [enum VNChirality](./vnchirality.md)
   Constants that the define the chirality, or handedness, of a pose.
 
 ## Relationships
 
 ### Inherits From
-- [VNRecognizedPointsObservation](vnrecognizedpointsobservation.md)
+- [VNRecognizedPointsObservation](./vnrecognizedpointsobservation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [VNRequestRevisionProviding](./vnrequestrevisionproviding.md)
 
 ## See Also
 
-- [Detecting Human Body Poses in Images](detecting-human-body-poses-in-images.md)
+### Body and hand pose detection
+- [Detecting Human Body Poses in Images](./detecting-human-body-poses-in-images.md)
   Add the capability to detect human body poses to your app using the Vision framework.
-- [Detecting Hand Poses with Vision](detecting-hand-poses-with-vision.md)
+- [Detecting Hand Poses with Vision](./detecting-hand-poses-with-vision.md)
   Create a virtual drawing app by using Vision’s capability to detect hand poses.
-- [class VNDetectHumanBodyPoseRequest](vndetecthumanbodyposerequest.md)
+- [class VNDetectHumanBodyPoseRequest](./vndetecthumanbodyposerequest.md)
   A request that detects a human body pose.
-- [class VNDetectHumanHandPoseRequest](vndetecthumanhandposerequest.md)
+- [class VNDetectHumanHandPoseRequest](./vndetecthumanhandposerequest.md)
   A request that detects a human hand pose.
-- [class VNRecognizedPointsObservation](vnrecognizedpointsobservation.md)
+- [class VNRecognizedPointsObservation](./vnrecognizedpointsobservation.md)
   An observation that provides the points the analysis recognized.
-- [class VNHumanBodyPoseObservation](vnhumanbodyposeobservation.md)
+- [class VNHumanBodyPoseObservation](./vnhumanbodyposeobservation.md)
   An observation that provides the body points the analysis recognized.
-- [class VNPoint](vnpoint.md)
+- [class VNPoint](./vnpoint.md)
   An immutable object that represents a single 2D point in an image.
-- [class VNDetectedPoint](vndetectedpoint.md)
+- [class VNDetectedPoint](./vndetectedpoint.md)
   An object that represents a normalized point in an image, along with a confidence value.
-- [class VNRecognizedPoint](vnrecognizedpoint.md)
+- [class VNRecognizedPoint](./vnrecognizedpoint.md)
   An object that represents a normalized point in an image, along with an identifier label and a confidence value.
-- [struct VNRecognizedPointKey](vnrecognizedpointkey.md)
+- [struct VNRecognizedPointKey](./vnrecognizedpointkey.md)
   The data type for all recognized point keys.
-- [struct VNRecognizedPointGroupKey](vnrecognizedpointgroupkey.md)
+- [struct VNRecognizedPointGroupKey](./vnrecognizedpointgroupkey.md)
   The data type for all recognized-point group keys.
 
 

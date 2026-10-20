@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tooltip interaction object.
 
@@ -17,13 +18,18 @@ Creates a tooltip interaction object.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A tooltip interaction object.
 
 ## See Also
 
-- [init(defaultToolTip: String)](uitooltipinteraction/init(defaulttooltip:).md)
+### Creating a tooltip interaction
+- [init(defaultToolTip: String)](./init%28defaulttooltip%29.md)
   Creates a tooltip interaction object and sets the default tooltip text.
 
 

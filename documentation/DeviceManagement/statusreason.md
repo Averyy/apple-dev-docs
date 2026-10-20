@@ -1,7 +1,8 @@
 # StatusReason
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Provides details about an error for an item in a status report.
 
@@ -16,7 +17,7 @@ Provides details about an error for an item in a status report.
 
 ## Declaration
 
-```swift
+```
 object StatusReason
 ```
 
@@ -24,7 +25,7 @@ object StatusReason
 
 Each status item defines its own set of `code`, `description`, and `details` values.
 
-##### Status Item Example
+##### Status item example
 
 ```json
 {
@@ -39,7 +40,7 @@ Each status item defines its own set of `code`, `description`, and `details` val
 ## Topics
 
 ### Dictionaries
-- [object StatusReason.ErrorDetails](statusreason/errordetails.md)
+- [object StatusReason.ErrorDetails](./statusreason/errordetails.md)
 
 ## Properties
 
@@ -49,7 +50,8 @@ Each status item defines its own set of `code`, `description`, and `details` val
 
 ## See Also
 
-- [object StatusReport](statusreport.md)
+### Status report
+- [object StatusReport](./statusreport.md)
   Provides details about an error for an item in a status report.
 
 

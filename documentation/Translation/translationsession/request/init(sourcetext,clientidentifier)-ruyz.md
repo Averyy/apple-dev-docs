@@ -1,7 +1,8 @@
 # init(sourceText:clientIdentifier:)
 
 **Framework**: Translation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a request for translating a single string of text.
 
@@ -19,7 +20,8 @@ init(sourceText: String, clientIdentifier: String? = nil)
 
 ## See Also
 
-- [init(sourceText: AttributedString, clientIdentifier: String?)](translationsession/request/init(sourcetext:clientidentifier:)-8fung.md)
+### Initializing a translation request
+- [init(sourceText: AttributedString, clientIdentifier: String?)](./init%28sourcetext,clientidentifier%29-8fung.md)
   Creates a request for translating a single attributed string.
 
 

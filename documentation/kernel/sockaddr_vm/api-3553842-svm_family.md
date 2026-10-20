@@ -1,14 +1,15 @@
 # svm_family
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 sa_family_t svm_family;
 ```
 

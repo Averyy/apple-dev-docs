@@ -1,7 +1,8 @@
 # encodeWithOptimizer(_:to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the transformer and optimizer to an encoder.
 
@@ -19,6 +20,8 @@ Encodes the transformer and optimizer to an encoder.
 ```swift
 func encodeWithOptimizer(_ transformer: TreeClassifierModel<Label>, to encoder: inout any EstimatorEncoder) throws
 ```
+
+Available when `Label` conforms to `Comparable`, `Decodable`, `Encodable`, and `Hashable`.
 
 ## Parameters
 

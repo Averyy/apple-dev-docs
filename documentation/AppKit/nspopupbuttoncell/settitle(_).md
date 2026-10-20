@@ -1,17 +1,22 @@
 # setTitle(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the string displayed in the receiver when the user isn’t pressing the mouse button.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setTitle(_ string: String?)
+```
+
+```objc
+- (void) setTitle:(NSString *) string;
 ```
 
 #### Discussion
@@ -24,21 +29,23 @@ For pull-down menus that get their titles from a menu item, this method simply s
 
 ## See Also
 
-- [init(textCell: String, pullsDown: Bool)](nspopupbuttoncell/init(textcell:pullsdown:).md)
+### Related Documentation
+- [init(textCell: String, pullsDown: Bool)](./init%28textcell,pullsdown%29.md)
   Returns an `NSPopUpButtonCell` object initialized with the specified title.
-- [func select(NSMenuItem?)](nspopupbuttoncell/select(_:).md)
+### Dealing with selection
+- [func select(NSMenuItem?)](./select%28_%29.md)
   Selects the specified menu item.
-- [func selectItem(at: Int)](nspopupbuttoncell/selectitem(at:).md)
+- [func selectItem(at: Int)](./selectitem%28at%29.md)
   Selects the item in the menu at the specified index.
-- [func selectItem(withTag: Int) -> Bool](nspopupbuttoncell/selectitem(withtag:).md)
+- [func selectItem(withTag: Int) -> Bool](./selectitem%28withtag%29.md)
   Selects the menu item with the specified tag.
-- [func selectItem(withTitle: String)](nspopupbuttoncell/selectitem(withtitle:).md)
+- [func selectItem(withTitle: String)](./selectitem%28withtitle%29.md)
   Selects the item with the specified title.
-- [var selectedItem: NSMenuItem?](nspopupbuttoncell/selecteditem.md)
+- [var selectedItem: NSMenuItem?](./selecteditem.md)
   The menu item last selected by the user.
-- [var indexOfSelectedItem: Int](nspopupbuttoncell/indexofselecteditem.md)
+- [var indexOfSelectedItem: Int](./indexofselecteditem.md)
   The index of the item last selected by the user.
-- [func synchronizeTitleAndSelectedItem()](nspopupbuttoncell/synchronizetitleandselecteditem.md)
+- [func synchronizeTitleAndSelectedItem()](./synchronizetitleandselecteditem%28%29.md)
   Synchronizes the pop-up button’s displayed item with the currently selected menu item.
 
 

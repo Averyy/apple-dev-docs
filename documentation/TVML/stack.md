@@ -34,55 +34,56 @@ The `stack` element groups elements together and lays them out vertically, start
 </stack>
 ```
 
-##### Subelements of Stack
+##### Subelements of stack
 
-- [`description`](description.md)
-- [`ratingCard`](ratingcard.md)
-- [`reviewCard`](reviewcard.md)
-- [`row`](row.md)
-- [`subtitle`](subtitle.md)
-- [`text`](text.md)
-- [`title`](title.md)
+- [description](./description.md)
+- [ratingCard](./ratingcard.md)
+- [reviewCard](./reviewcard.md)
+- [row](./row.md)
+- [subtitle](./subtitle.md)
+- [text](./text.md)
+- [title](./title.md)
 
-##### Elements That Use Stack
+##### Elements that Use stack
 
-- [`banner`](banner.md)
-- [`shelf`](shelf.md)
+- [banner](./banner.md)
+- [shelf](./shelf.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [height](element-shaping-height.md)
+- [height](./element-shaping-height.md)
   Specifies the height of an element.
-- [margin](margin.md)
+- [margin](./margin.md)
   Specifies the spacing around an element.
-- [width](element-shaping-width.md)
+- [width](./element-shaping-width.md)
   Specifies how wide an element is.
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [carousel](carousel.md)
+### Container Elements
+- [carousel](./carousel.md)
   Arranges images in a row.
-- [grid](grid.md)
+- [grid](./grid.md)
   Arranges elements in a grid pattern.
-- [imgDeck](imgdeck.md)
+- [imgDeck](./imgdeck.md)
   Contains several images to be displayed at a later time.
-- [infoTable](infotable.md)
+- [infoTable](./infotable.md)
   Displays contained element information in a vertical format, with each successive element directly below the previous element.
-- [organizer](organizer.md)
+- [organizer](./organizer.md)
   Creates a generic element with its contained elements arranged through TVML styles.
-- [row](row.md)
+- [row](./row.md)
   Displays elements horizontally.
-- [section](section.md)
+- [section](./section.md)
   Combines elements and acts as a single element.
-- [shelf](shelf.md)
+- [shelf](./shelf.md)
   Displays elements horizontally and adds the ability to scroll to offscreen elements.
 
 

@@ -1,7 +1,8 @@
 # VTCompressionOutputHandler
 
 **Framework**: Video Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A callback for the system to invoke when it’s finished compressing a frame.
 
@@ -19,6 +20,10 @@ A callback for the system to invoke when it’s finished compressing a frame.
 typealias VTCompressionOutputHandler = @Sendable (OSStatus, VTEncodeInfoFlags, CMSampleBuffer?) -> Void
 ```
 
+```c
+typedef void (^)(int, enum VTEncodeInfoFlags, struct opaqueCMSampleBuffer *) VTCompressionOutputHandler;
+```
+
 #### Discussion
 
 When you encode a frame, you pass in a callback block to be called for that compressed frame.  This block is called in decode order (which is not necessarily the same as display order).
@@ -26,12 +31,17 @@ When you encode a frame, you pass in a callback block to be called for that comp
 ## Parameters
 
 - `status`: `noErr` if compression was successful; an error code if compression was not successful.
-- `infoFlags`: Contains information about the encode operation. The [`asynchronous`](vtencodeinfoflags/asynchronous.md) bit may be set if the encode ran asynchronously. The [`frameDropped`](vtencodeinfoflags/framedropped.md) bit may be set if the frame was dropped.
+- `infoFlags`: Contains information about the encode operation.
+
+  The [`asynchronous`](./vtencodeinfoflags/asynchronous.md) bit may be set if the encode ran asynchronously.
+
+  The [`frameDropped`](./vtencodeinfoflags/framedropped.md) bit may be set if the frame was dropped.
 - `sampleBuffer`: Contains the compressed frame if compression was successful and the frame was not dropped; otherwise, `NULL`.
 
 ## See Also
 
-- [typealias VTCompressionOutputCallback](vtcompressionoutputcallback.md)
+### Callbacks
+- [typealias VTCompressionOutputCallback](./vtcompressionoutputcallback.md)
   A callback for the system to invoke when it’s finished compressing a frame.
 
 

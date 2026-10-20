@@ -1,7 +1,8 @@
 # init(fixedColor:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new tint configuration using a specific color value.
 
@@ -14,13 +15,18 @@ Creates a new tint configuration using a specific color value.
 convenience init(fixedColor color: NSColor)
 ```
 
+```objc
++ (instancetype) tintConfigurationWithFixedColor:(NSColor *) color;
+```
+
 ## Parameters
 
 - `color`: The color used regardless of the system accent color.
 
 ## See Also
 
-- [convenience init(preferredColor: NSColor)](nstintconfiguration/init(preferredcolor:).md)
+### Initializing a Tint Configuration
+- [convenience init(preferredColor: NSColor)](./init%28preferredcolor%29.md)
   Creates a new tint configuration for the system to use when the app’s preferred accent color is in use.
 
 

@@ -1,7 +1,8 @@
 # preferredMaxLayoutWidth
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum width of the text field’s intrinsic content size.
 
@@ -12,6 +13,10 @@ The maximum width of the text field’s intrinsic content size.
 
 ```swift
 var preferredMaxLayoutWidth: CGFloat { get set }
+```
+
+```objc
+@property CGFloat preferredMaxLayoutWidth;
 ```
 
 #### Discussion

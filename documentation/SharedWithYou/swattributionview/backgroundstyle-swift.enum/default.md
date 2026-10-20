@@ -1,7 +1,8 @@
 # SWAttributionView.BackgroundStyle.default
 
 **Framework**: Shared with You  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default background style the system chooses.
 
@@ -19,11 +20,16 @@ The default background style the system chooses.
 case `default`
 ```
 
+```c
+SWAttributionViewBackgroundStyleDefault
+```
+
 ## See Also
 
-- [SWAttributionView.BackgroundStyle.color](swattributionview/backgroundstyle-swift.enum/color.md)
+### Background styles
+- [SWAttributionView.BackgroundStyle.color](./color.md)
   A non-material background color for the view’s contents, best when placed over monochrome backgrounds.
-- [SWAttributionView.BackgroundStyle.material](swattributionview/backgroundstyle-swift.enum/material.md)
+- [SWAttributionView.BackgroundStyle.material](./material.md)
   A material background blur for the view’s contents, best when placed over multicolored backgrounds.
 
 

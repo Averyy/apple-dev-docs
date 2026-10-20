@@ -1,6 +1,7 @@
 # Designing and Creating a CloudKit Database
 
-**Framework**: CloudKit
+**Framework**: CloudKit  
+**Role**: Article
 
 Create a schema to store your app’s objects as records in iCloud using CloudKit.
 
@@ -8,31 +9,31 @@ Create a schema to store your app’s objects as records in iCloud using CloudKi
 
 After you enable CloudKit in your app, you create a *schema* for your container that describes how to store your objects. A schema defines *record types* and the possible relationships between them. A record type is a template for the allowed keys and values of a record. This relationship is analogous to how a class (record type) defines the properties an instance (record) can have.
 
-##### Design Your Objects As Records
+##### Design your objects as records
 
-CloudKit allows you to store your data as [`CKRecord`](ckrecord.md) objects, and relationships between those objects as [`CKRecord.Reference`](ckrecord/reference.md) associations. Separate your data into record types by grouping objects of the same type together. If you’ve already separated your model data into classes, these classes might have the same record type in iCloud. Choose which objects and which of their properties and relationships you want to persist to iCloud.
+CloudKit allows you to store your data as [`CKRecord`](./ckrecord.md) objects, and relationships between those objects as [`CKRecord.Reference`](./ckrecord/reference.md) associations. Separate your data into record types by grouping objects of the same type together. If you’ve already separated your model data into classes, these classes might have the same record type in iCloud. Choose which objects and which of their properties and relationships you want to persist to iCloud.
 
-Each object property that you persist maps to a key-value pair, known as a *field*, within a [`CKRecord`](ckrecord.md). [`CKRecord`](ckrecord.md) supports value types for your fields, such as [`String`](https://developer.apple.com/documentation/swift/string), or more complex types, such as [`Data`](https://developer.apple.com/documentation/foundation/data).
+Each object property that you persist maps to a key-value pair, known as a *field*, within a [`CKRecord`](./ckrecord.md). [`CKRecord`](./ckrecord.md) supports value types for your fields, such as [`String`](../Swift/string.md), or more complex types, such as [`Data`](../Foundation/data.md).
 
 For example, a “to-do item” might have the following record type:
 
 | **Key** | **Type** | **Example value** |
 | --- | --- | --- |
-| title | [`String`](https://developer.apple.com/documentation/swift/string) | “Get apples” |
-| dueDate | [`Date`](https://developer.apple.com/documentation/foundation/date) | October 28, 2019 |
-| isCompleted | [`Bool`](https://developer.apple.com/documentation/swift/bool) | false |
+| title | [`String`](../Swift/string.md) | “Get apples” |
+| dueDate | [`Date`](../Foundation/date.md) | October 28, 2019 |
+| isCompleted | [`Bool`](../Swift/bool.md) | false |
 
-For information on additional supported value types, see [`CKRecord`](ckrecord.md).
+For information on additional supported value types, see [`CKRecord`](./ckrecord.md).
 
-##### Create Records Programmatically
+##### Create records programmatically
 
-Create a [`CKRecord`](ckrecord.md) object with a string representing the type of record you want to store, using [`initWithRecordType:`](ckrecord/initwithrecordtype:.md). Every record type must have a unique string name.
+Create a [`CKRecord`](./ckrecord.md) object with a string representing the type of record you want to store, using [`initWithRecordType:`](./ckrecord/initwithrecordtype_.md). Every record type must have a unique string name.
 
 ```swift
 let record = CKRecord(recordType: "ToDoItem")
 ```
 
-Then set the record’s fields. Because [`CKRecord`](ckrecord.md) is key-value coding compliant, you can use [`setValuesForKeys(_:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/setvaluesforkeys(_:)). The values you set could be from a details sheet that the user fills out.
+Then set the record’s fields. Because [`CKRecord`](./ckrecord.md) is key-value coding compliant, you can use [`setValuesForKeys(_:)`](../ObjectiveC/nsobject-swift.class/setvaluesforkeys%28_%29.md). The values you set could be from a details sheet that the user fills out.
 
 ```swift
 record.setValuesForKeys([
@@ -46,13 +47,13 @@ record.setValuesForKeys([
 ])
 ```
 
-##### Save Initial Records to Icloud
+##### Save initial records to iCloud
 
 You can create a schema using CloudKit Dashboard, or you can create a *just-in-time schema* by writing records programmatically.
 
 To save a record to your container, you must pick a database to save the record to. Each container has a single *public* database accessible to all app users, and *private* databases for each user of your app. Also, a user may have a *shared* database if that user is accessing another user’s shared private data. Note that every database within your app’s container shares the same schema.
 
-Although an app can have multiple containers or can share a container, each app has one default container. You access the default container using [`default()`](ckcontainer/default().md) on [`CKContainer`](ckcontainer.md). The following example uses the current user’s private database within the app’s default container and exists in an action handler for a Save button.
+Although an app can have multiple containers or can share a container, each app has one default container. You access the default container using [`default()`](./ckcontainer/default%28%29.md) on [`CKContainer`](./ckcontainer.md). The following example uses the current user’s private database within the app’s default container and exists in an action handler for a Save button.
 
 ```swift
 let container = CKContainer.default()
@@ -73,11 +74,11 @@ database.save(record) { record, error in
 
 When you run your app, it adds that record type to the schema and saves the record. If the record type already exists in the schema, iCloud uses the existing type. Saving a record works only if the user has signed into their iCloud account on their device.
 
-If saving the record to iCloud succeeds, `error` is `nil`. (If `error` is non-`nil`, see [`CKError`](ckerror.md) for possible values of `error.)`
+If saving the record to iCloud succeeds, `error` is `nil`. (If `error` is non-`nil`, see [`CKError`](./ckerror.md) for possible values of `error.)`
 
 > ❗ **Important**:  During development, you can change your schema as much as you want, but once it’s deployed to production, you can’t delete any part of it. You can only make additive changes, such as adding a new field to a record type, or adding new record types.
 
-##### Handle or Prevent Errors Gracefully
+##### Handle or prevent errors gracefully
 
 When designing your app, consider how to handle or prevent error conditions. For example, an error occurs if your app attempts to save a record to a user’s private database and the user hasn’t yet signed in to iCloud. You might handle this scenario by checking whether the user has signed in before the app saves the record. If the user hasn’t signed in, present an alert. If they’re signed in, save the record.
 
@@ -107,23 +108,24 @@ CKContainer.default().accountStatus { accountStatus, error in
 }
 ```
 
-##### Run Your App
+##### Run your app
 
-In Xcode, run your app to execute the code that saves records and creates the schema in the database. To verify success, see [`Inspecting and Editing an iCloud Container’s Schema`](inspecting-and-editing-an-icloud-container-s-schema.md).
+In Xcode, run your app to execute the code that saves records and creates the schema in the database. To verify success, see [Inspecting and Editing an iCloud Container’s Schema](./inspecting-and-editing-an-icloud-container-s-schema.md).
 
 ## See Also
 
-- [Managing iCloud Containers with CloudKit Database App](managing-icloud-containers-with-cloudkit-database-app.md)
+### Schemas
+- [Managing iCloud Containers with CloudKit Database App](./managing-icloud-containers-with-cloudkit-database-app.md)
   Inspect and modify the schema and data for your app’s iCloud container.
-- [class CKRecordZone](ckrecordzone.md)
+- [class CKRecordZone](./ckrecordzone.md)
   A database partition that contains related records.
-- [class CKRecord](ckrecord.md)
+- [class CKRecord](./ckrecord.md)
   A collection of key-value pairs that store your app’s data.
-- [CKRecord.Reference](ckrecord/reference.md)
+- [CKRecord.Reference](./ckrecord/reference.md)
   A relationship between two records in a record zone.
-- [class CKAsset](ckasset.md)
+- [class CKAsset](./ckasset.md)
   An external file that belongs to a record.
-- [Integrating a Text-Based Schema into Your Workflow](integrating-a-text-based-schema-into-your-workflow.md)
+- [Integrating a Text-Based Schema into Your Workflow](./integrating-a-text-based-schema-into-your-workflow.md)
   Define and update your schema with the CloudKit Schema Language.
 
 

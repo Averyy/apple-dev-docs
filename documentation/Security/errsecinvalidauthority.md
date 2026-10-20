@@ -1,7 +1,8 @@
 # errSecInvalidAuthority
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The authority is not valid.
 
@@ -18,6 +19,10 @@ The authority is not valid.
 
 ```swift
 var errSecInvalidAuthority: OSStatus { get }
+```
+
+```c
+errSecInvalidAuthority
 ```
 
 

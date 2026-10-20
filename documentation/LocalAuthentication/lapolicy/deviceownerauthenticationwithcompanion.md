@@ -1,7 +1,8 @@
 # LAPolicy.deviceOwnerAuthenticationWithCompanion
 
 **Framework**: Local Authentication  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Device owner will be authenticated by a companion device e.g. Watch, Mac, etc.
 
@@ -17,11 +18,15 @@ Device owner will be authenticated by a companion device e.g. Watch, Mac, etc
 case deviceOwnerAuthenticationWithCompanion
 ```
 
+```c
+LAPolicyDeviceOwnerAuthenticationWithCompanion
+```
+
 #### Discussion
 
 Companion authentication is required. If no nearby paired companion device can be found, LAErrorCompanionNotAvailable is returned.
 
-```None
+```
         Users should follow instructions on the companion device to authenticate.
 ```
 

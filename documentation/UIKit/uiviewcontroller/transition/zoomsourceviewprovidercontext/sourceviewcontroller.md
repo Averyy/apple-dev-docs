@@ -1,7 +1,8 @@
 # sourceViewController
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view controller that presents the zoomed view.
 
@@ -18,9 +19,14 @@ The view controller that presents the zoomed view.
 var sourceViewController: UIViewController { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UIViewController * sourceViewController;
+```
+
 ## See Also
 
-- [var zoomedViewController: UIViewController](uiviewcontroller/transition/zoomsourceviewprovidercontext/zoomedviewcontroller.md)
+### Accessing the view controllers
+- [var zoomedViewController: UIViewController](./zoomedviewcontroller.md)
   The view controller for the presented view.
 
 

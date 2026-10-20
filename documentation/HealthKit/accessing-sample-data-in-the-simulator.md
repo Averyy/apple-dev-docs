@@ -1,12 +1,13 @@
 # Accessing Sample Data in the Simulator
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: Article
 
 Set up sample accounts to build and test your app.
 
 #### Overview
 
-You cannot create your own [`HKClinicalRecord`](hkclinicalrecord.md) samples. When you need sample data to build or test your app, you must either download real data from a supported healthcare institution, or access existing sample data.  Xcode provides three sample accounts in the simulator that you can use to build and test your app.
+You cannot create your own [`HKClinicalRecord`](./hkclinicalrecord.md) samples. When you need sample data to build or test your app, you must either download real data from a supported healthcare institution, or access existing sample data.  Xcode provides three sample accounts in the simulator that you can use to build and test your app.
 
 There are two steps to using the sample data:
 
@@ -17,23 +18,23 @@ There are two steps to using the sample data:
 
 To access the sample accounts, open the Health app on the simulator, and navigate to Health Data > Health Records.
 
-![A screenshot of the Health Records view.](/images/com.apple.healthkit/media-3040233@2x.png)
+![A screenshot of the Health Records view.](https://developer.apple.com/tutorials/images/com.apple.healthkit/media-3040233@2x.png)
 
 The Health Records view displays a message about adding accounts to healthcare institutions. Click Get Started. The system may ask to access your location, but you do not need to share that information in order to add the sample accounts. The system then shows the three sample accounts, and any supported healthcare institutions in your area if you shared your location.
 
-![A screenshot showing the three sample accounts.](/images/com.apple.healthkit/media-3040231@2x.png)
+![A screenshot showing the three sample accounts.](https://developer.apple.com/tutorials/images/com.apple.healthkit/media-3040231@2x.png)
 
 Select the sample account you want to add, and the system displays the data available for that account. Select the data to add it to HealthKit.
 
-![A screenshot showing the sample data from the account.](/images/com.apple.healthkit/media-3040229@2x.png)
+![A screenshot showing the sample data from the account.](https://developer.apple.com/tutorials/images/com.apple.healthkit/media-3040229@2x.png)
 
 Health then displays a confirmation showing that it has added the account to HealthKit. Click the Done button to continue, and the Health Records view shows the account that you added. You can add additional accounts, as needed.
 
-![A screenshot of the Health Records data, including data from the newly added account.](/images/com.apple.healthkit/media-3040232@2x.png)
+![A screenshot of the Health Records data, including data from the newly added account.](https://developer.apple.com/tutorials/images/com.apple.healthkit/media-3040232@2x.png)
 
 Click on the account to view the data. You can browse all the clinical records associated with the account. This data is also available to your app while it is running on the simulator.
 
-![A screenshot of the sample data downloaded from the account.](/images/com.apple.healthkit/media-3040228@2x.png)
+![A screenshot of the sample data downloaded from the account.](https://developer.apple.com/tutorials/images/com.apple.healthkit/media-3040228@2x.png)
 
 ##### Simulate Updates
 
@@ -43,27 +44,28 @@ Note that the sample accounts only provide static data; all the data is received
 
 ## See Also
 
-- [Accessing Health Records](accessing-health-records.md)
+### Medical records
+- [Accessing Health Records](./accessing-health-records.md)
   Read clinical record data from the HealthKit store.
-- [Accessing a User’s Clinical Records](accessing-a-user-s-clinical-records.md)
+- [Accessing a User’s Clinical Records](./accessing-a-user-s-clinical-records.md)
   Request authorization to query HealthKit for a user’s clinical records and display them in your app.
-- [Accessing Data from a SMART Health Card](accessing-data-from-a-smart-health-card.md)
+- [Accessing Data from a SMART Health Card](./accessing-data-from-a-smart-health-card.md)
   Query for and validate a verifiable clinical record.
-- [class HKClinicalRecord](hkclinicalrecord.md)
+- [class HKClinicalRecord](./hkclinicalrecord.md)
   A sample that stores a clinical record.
-- [class HKFHIRResource](hkfhirresource.md)
+- [class HKFHIRResource](./hkfhirresource.md)
   An object containing Fast Healthcare Interoperability Resources (FHIR) data.
-- [class HKVerifiableClinicalRecord](hkverifiableclinicalrecord.md)
+- [class HKVerifiableClinicalRecord](./hkverifiableclinicalrecord.md)
   A sample that represents the contents of a SMART Health Card or EU Digital COVID Certificate.
-- [class HKVerifiableClinicalRecordSubject](hkverifiableclinicalrecordsubject.md)
+- [class HKVerifiableClinicalRecordSubject](./hkverifiableclinicalrecordsubject.md)
   The subject associated with a signed clinical record.
-- [class HKCDADocumentSample](hkcdadocumentsample.md)
+- [class HKCDADocumentSample](./hkcdadocumentsample.md)
   A Clinical Document Architecture (CDA) sample that stores a single document.
-- [class HKDocumentSample](hkdocumentsample.md)
+- [class HKDocumentSample](./hkdocumentsample.md)
   An abstract class that represents a health document in the HealthKit store.
-- [static let CDA: HKDocumentTypeIdentifier](hkdocumenttypeidentifier/cda.md)
+- [static let CDA: HKDocumentTypeIdentifier](./hkdocumenttypeidentifier/cda.md)
   The CDA Document type identifier, used when requesting permission to read or share CDA documents.
-- [class HKDocumentType](hkdocumenttype.md)
+- [class HKDocumentType](./hkdocumenttype.md)
   A sample type used to create queries for documents.
 
 

@@ -1,7 +1,8 @@
 # width
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the size.
 
@@ -19,9 +20,14 @@ The width of the size.
 var width: Int32
 ```
 
+```c
+int32_t width;
+```
+
 ## See Also
 
-- [var height: Int32](vtint32size/height.md)
+### Accessing the Dimensions
+- [var height: Int32](./height.md)
   The height of the size.
 
 

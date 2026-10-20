@@ -1,7 +1,8 @@
 # kAUSoundIsolationSoundType_Voice
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -16,9 +17,14 @@
 var kAUSoundIsolationSoundType_Voice: Int { get }
 ```
 
+```c
+kAUSoundIsolationSoundType_Voice
+```
+
 ## See Also
 
-- [var kAUSoundIsolationSoundType_HighQualityVoice: Int](kausoundisolationsoundtype_highqualityvoice.md)
+### Constants
+- [var kAUSoundIsolationSoundType_HighQualityVoice: Int](./kausoundisolationsoundtype_highqualityvoice.md)
 
 
 ---

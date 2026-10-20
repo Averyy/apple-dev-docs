@@ -1,11 +1,12 @@
 # ExpressibleByArrayLiteral Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [convenience init(arrayLiteral: Any...)](nsarray/init(arrayliteral:).md)
+- [convenience init(arrayLiteral: Any...)](./init%28arrayliteral%29.md)
   Create an instance initialized with `elements`.
 
 

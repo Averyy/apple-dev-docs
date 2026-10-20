@@ -1,7 +1,8 @@
 # attributedSourceText
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The original translated text, including style formatting and links.
 
@@ -19,15 +20,16 @@ let attributedSourceText: AttributedString?
 
 #### Discussion
 
-When translating attributed strings using any translation method, the framework makes a best effort to preserve both visual formatting and defined attributes. This enables use cases like timestamp synchronization for captions or lyrics. For examples of translating text with preserved attributes, see [`attributedSourceText`](translationsession/request/attributedsourcetext.md).
+When translating attributed strings using any translation method, the framework makes a best effort to preserve both visual formatting and defined attributes. This enables use cases like timestamp synchronization for captions or lyrics. For examples of translating text with preserved attributes, see [`attributedSourceText`](../request/attributedsourcetext.md).
 
 ## See Also
 
-- [let sourceText: String](translationsession/response/sourcetext.md)
+### Getting translation results
+- [let sourceText: String](./sourcetext.md)
   The original text to translate from.
-- [let targetText: String](translationsession/response/targettext.md)
+- [let targetText: String](./targettext.md)
   The translated text.
-- [let attributedTargetText: AttributedString?](translationsession/response/attributedtargettext.md)
+- [let attributedTargetText: AttributedString?](./attributedtargettext.md)
   The translated formatted text.
 
 

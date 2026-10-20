@@ -1,7 +1,8 @@
 # sec_protocol_pre_shared_key_selection_complete_t
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 typealias sec_protocol_pre_shared_key_selection_complete_t = (dispatch_data_t?) -> Void
+```
+
+```c
+typedef void (^)(NSObject<OS_dispatch_data> *) sec_protocol_pre_shared_key_selection_complete_t;
 ```
 
 #### Discussion

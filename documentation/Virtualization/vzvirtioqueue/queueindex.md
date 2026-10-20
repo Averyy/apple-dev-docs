@@ -1,7 +1,8 @@
 # queueIndex
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index for this queue.
 
@@ -12,6 +13,10 @@ The index for this queue.
 
 ```swift
 var queueIndex: UInt16 { get }
+```
+
+```objc
+@property (readonly) uint16_t queueIndex;
 ```
 
 

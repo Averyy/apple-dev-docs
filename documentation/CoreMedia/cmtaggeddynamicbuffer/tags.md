@@ -1,7 +1,8 @@
 # tags
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Tags associated with the content.
 

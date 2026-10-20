@@ -1,7 +1,8 @@
 # MTLTessellationControlPointIndexType.uint16
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The size of a 16-bit unsigned integer.
 
@@ -19,11 +20,16 @@ The size of a 16-bit unsigned integer.
 case uint16
 ```
 
+```c
+MTLTessellationControlPointIndexTypeUInt16
+```
+
 ## See Also
 
-- [MTLTessellationControlPointIndexType.none](mtltessellationcontrolpointindextype/none.md)
+### Index types
+- [MTLTessellationControlPointIndexType.none](./none.md)
   No size. This value should only be used when drawing patches without a control point index buffer.
-- [MTLTessellationControlPointIndexType.uint32](mtltessellationcontrolpointindextype/uint32.md)
+- [MTLTessellationControlPointIndexType.uint32](./uint32.md)
   The size of a 32-bit unsigned integer.
 
 

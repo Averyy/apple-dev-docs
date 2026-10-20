@@ -1,7 +1,8 @@
 # attributedText
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that requests the document’s text content along with its formatting and style attributes.
 
@@ -17,9 +18,14 @@ An option that requests the document’s text content along with its formatting 
 static var attributedText: BETextDocumentRequest.Options { get }
 ```
 
+```c
+BETextDocumentOptionAttributedText
+```
+
 ## See Also
 
-- [static var text: BETextDocumentRequest.Options](betextdocumentrequest/options-swift.struct/text.md)
+### Accessing text content
+- [static var text: BETextDocumentRequest.Options](./text.md)
   An option that requests the plaintext content of the document.
 
 

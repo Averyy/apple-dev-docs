@@ -1,7 +1,8 @@
 # isPaused
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the draw loop is paused.
 
@@ -19,21 +20,26 @@ A Boolean value that indicates whether the draw loop is paused.
 var isPaused: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isPaused) BOOL paused;
+```
+
 #### Discussion
 
-If the value is [`false`](https://developer.apple.com/documentation/swift/false), the view periodically redraws the contents, at a frame rate set by the value of [`preferredFramesPerSecond`](mtkview/preferredframespersecond.md).
+If the value is [`false`](../../Swift/false.md), the view periodically redraws the contents, at a frame rate set by the value of [`preferredFramesPerSecond`](./preferredframespersecond.md).
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var preferredFramesPerSecond: Int](mtkview/preferredframespersecond.md)
+### Configuring Drawing Behavior
+- [var preferredFramesPerSecond: Int](./preferredframespersecond.md)
   The rate at which the view redraws its contents.
-- [var enableSetNeedsDisplay: Bool](mtkview/enablesetneedsdisplay.md)
-  A Boolean value that indicates whether the view responds to [`setNeedsDisplay()`](https://developer.apple.com/documentation/uikit/uiview/setneedsdisplay()).
-- [func draw()](mtkview/draw.md)
+- [var enableSetNeedsDisplay: Bool](./enablesetneedsdisplay.md)
+  A Boolean value that indicates whether the view responds to [`setNeedsDisplay()`](../../UIKit/uiview/setneedsdisplay%28%29.md).
+- [func draw()](./draw%28%29.md)
   Redraws the view’s contents immediately.
-- [var presentsWithTransaction: Bool](mtkview/presentswithtransaction.md)
+- [var presentsWithTransaction: Bool](./presentswithtransaction.md)
   A Boolean value that determines whether the view presents its content using a Core Animation transaction.
 
 

@@ -1,7 +1,8 @@
 # mapTemplate(_:didRequestMultiStopCardConfigurationWithCompletion:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the user requests multi-stop card to be displayed via tapping ETA tray.
 
@@ -13,7 +14,15 @@ Called when the user requests multi-stop card to be displayed via tapping ETA tr
 ## Declaration
 
 ```swift
+optional func mapTemplate(_ mapTemplate: CPMapTemplate, didRequestMultiStopCardConfigurationWithCompletion completion: @escaping (CPMultiStopCardConfiguration) -> Void)
+```
+
+```swift
 optional func multiStopCardConfigurationForMapTemplate(_ mapTemplate: CPMapTemplate) async -> CPMultiStopCardConfiguration
+```
+
+```objc
+- (void) mapTemplate:(CPMapTemplate *) mapTemplate didRequestMultiStopCardConfigurationWithCompletion:(void (^)(CPMultiStopCardConfiguration *)) completion;
 ```
 
 

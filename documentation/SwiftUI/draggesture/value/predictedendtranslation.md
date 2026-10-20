@@ -1,7 +1,8 @@
 # predictedEndTranslation
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A prediction, based on the current drag velocity, of what the final translation will be if dragging stopped now.
 
@@ -21,13 +22,14 @@ var predictedEndTranslation: CGSize { get }
 
 ## See Also
 
-- [var startLocation: CGPoint](draggesture/value/startlocation.md)
+### Getting 2D position
+- [var startLocation: CGPoint](./startlocation.md)
   The location of the drag gesture’s first event.
-- [var location: CGPoint](draggesture/value/location.md)
+- [var location: CGPoint](./location.md)
   The location of the drag gesture’s current event.
-- [var predictedEndLocation: CGPoint](draggesture/value/predictedendlocation.md)
+- [var predictedEndLocation: CGPoint](./predictedendlocation.md)
   A prediction, based on the current drag velocity, of where the final location will be if dragging stopped now.
-- [var translation: CGSize](draggesture/value/translation.md)
+- [var translation: CGSize](./translation.md)
   The total translation from the start of the drag gesture to the current event of the drag gesture.
 
 

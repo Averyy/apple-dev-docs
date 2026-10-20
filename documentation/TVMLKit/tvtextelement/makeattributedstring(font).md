@@ -1,12 +1,15 @@
 # makeAttributedString(font:)
 
 **Framework**: TVMLKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides an attributed string for a given font.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,13 +17,17 @@ Provides an attributed string for a given font.
 func makeAttributedString(font: UIFont) -> NSAttributedString
 ```
 
+```objc
+- (NSAttributedString *) attributedStringWithFont:(UIFont *) font;
+```
+
 #### Return Value
 
-An [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) object with the supplied font.
+An [`NSAttributedString`](../../Foundation/nsattributedstring.md) object with the supplied font.
 
 #### Discussion
 
-Supply a font to this method to get the [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) representation of the text contained within an element.
+Supply a font to this method to get the [`NSAttributedString`](../../Foundation/nsattributedstring.md) representation of the text contained within an element.
 
 ## Parameters
 
@@ -28,7 +35,8 @@ Supply a font to this method to get the [`NSAttributedString`](https://developer
 
 ## See Also
 
-- [func makeAttributedString(font: UIFont, foregroundColor: UIColor?, textAlignment: NSTextAlignment) -> NSAttributedString](tvtextelement/makeattributedstring(font:foregroundcolor:textalignment:).md)
+### Creating Attributed Strings
+- [func makeAttributedString(font: UIFont, foregroundColor: UIColor?, textAlignment: NSTextAlignment) -> NSAttributedString](./makeattributedstring%28font,foregroundcolor,textalignment%29.md)
   Convenience method for configuring an attributed string given the specified attributes.
 
 

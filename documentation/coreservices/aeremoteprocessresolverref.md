@@ -1,7 +1,8 @@
 # AERemoteProcessResolverRef
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 An opaque reference to an object that encapsulates the mechanism for obtaining a list of processes running on a remote machine.
 
@@ -15,9 +16,13 @@ An opaque reference to an object that encapsulates the mechanism for obtaining a
 typealias AERemoteProcessResolverRef = OpaquePointer
 ```
 
+```c
+typedef struct AERemoteProcessResolver *AERemoteProcessResolverRef;
+```
+
 #### Discussion
 
-You create an instance of `AERemoteProcessResolverRef` by calling [`AECreateRemoteProcessResolver(_:_:)`](1445692-aecreateremoteprocessresolver.md), and you must disposed of it by calling [`AEDisposeRemoteProcessResolver(_:)`](1442572-aedisposeremoteprocessresolver.md). An instance of this type is not a `CFType` (the base type used by all Core Foundation derived opaque types). 
+You create an instance of `AERemoteProcessResolverRef` by calling [`AECreateRemoteProcessResolver(_:_:)`](./api-1445692-aecreateremoteprocessresolver.md), and you must disposed of it by calling [`AEDisposeRemoteProcessResolver(_:)`](./api-1442572-aedisposeremoteprocessresolver.md). An instance of this type is not a `CFType` (the base type used by all Core Foundation derived opaque types). 
 
 
 ---

@@ -1,7 +1,8 @@
 # label
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that categorizes an email address, such as Home or Work.
 
@@ -20,9 +21,14 @@ A string that categorizes an email address, such as Home or Work.
 var label: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * label;
+```
+
 ## See Also
 
-- [var emailAddress: String](ddmatchemailaddress/emailaddress.md)
+### Getting email information
+- [var emailAddress: String](./emailaddress.md)
   A string that represents an email address.
 
 

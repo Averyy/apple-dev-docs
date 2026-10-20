@@ -1,7 +1,8 @@
 # bitwiseXor(_:ordering:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Perform an atomic bitwise XOR operation and return the old and new value, applying the specified memory ordering.
 
@@ -20,6 +21,8 @@ Perform an atomic bitwise XOR operation and return the old and new value, applyi
 @discardableResult
 func bitwiseXor(_ operand: Int64, ordering: AtomicUpdateOrdering) -> (oldValue: Int64, newValue: Int64)
 ```
+
+Available when `Value` is `Int64`.
 
 #### Return Value
 

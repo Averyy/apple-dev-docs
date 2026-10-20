@@ -1,7 +1,8 @@
 # quickLookPreview(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a Quick Look preview of the contents of a single URL.
 
@@ -30,11 +31,12 @@ Upon dismissal by the user, Quick Look automatically sets the item binding to `n
 
 ## Parameters
 
-- `item`: A [`Binding`](binding.md) to a URL that should be previewed.
+- `item`: A [`Binding`](../binding.md) to a URL that should be previewed.
 
 ## See Also
 
-- [func quickLookPreview<Items>(Binding<Items.Element?>, in: Items) -> some View](view/quicklookpreview(_:in:).md)
+### Previewing content
+- [func quickLookPreview<Items>(Binding<Items.Element?>, in: Items) -> some View](./quicklookpreview%28_,in%29.md)
   Presents a Quick Look preview of the URLs you provide.
 
 

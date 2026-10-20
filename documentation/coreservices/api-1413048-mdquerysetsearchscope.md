@@ -1,7 +1,8 @@
 # MDQuerySetSearchScope(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the search scope for a query instance.
 
@@ -14,6 +15,10 @@ Sets the search scope for a query instance.
 func MDQuerySetSearchScope(_ query: MDQuery!, _ scopeDirectories: CFArray!, _ scopeOptions: OptionBits)
 ```
 
+```c
+void MDQuerySetSearchScope(MDQueryRef query, CFArrayRef scopeDirectories, OptionBits scopeOptions);
+```
+
 #### Discussion
 
 ## Parameters
@@ -24,11 +29,12 @@ func MDQuerySetSearchScope(_ query: MDQuery!, _ scopeDirectories: CFArray!, _ sc
 
 ## See Also
 
-- [func MDQueryCreate(CFAllocator!, CFString!, CFArray!, CFArray!) -> MDQuery!](1413029-mdquerycreate.md)
+### Creating Queries
+- [func MDQueryCreate(CFAllocator!, CFString!, CFArray!, CFArray!) -> MDQuery!](./api-1413029-mdquerycreate.md)
   Creates a new query instance.
-- [func MDQueryCreateSubset(CFAllocator!, MDQuery!, CFString!, CFArray!, CFArray!) -> MDQuery!](1413027-mdquerycreatesubset.md)
+- [func MDQueryCreateSubset(CFAllocator!, MDQuery!, CFString!, CFArray!, CFArray!) -> MDQuery!](./api-1413027-mdquerycreatesubset.md)
   Creates a new query that is a subset of the specified parentquery.
-- [func MDQuerySetDispatchQueue(MDQuery!, dispatch_queue_t!)](1413019-mdquerysetdispatchqueue.md)
+- [func MDQuerySetDispatchQueue(MDQuery!, dispatch_queue_t!)](./api-1413019-mdquerysetdispatchqueue.md)
   Sets the dispatch queue on which query results will be delivered by MDQueryExecute.
 
 

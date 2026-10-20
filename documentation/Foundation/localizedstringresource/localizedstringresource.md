@@ -1,7 +1,8 @@
 # localizedStringResource
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A resource that helps provide a description of the instance.
 
@@ -22,7 +23,7 @@ var localizedStringResource: LocalizedStringResource { get }
 
 #### Discussion
 
-This property implements the [`CustomLocalizedStringResourceConvertible`](customlocalizedstringresourceconvertible.md) protocol, which allows conforming types to provide a [`LocalizedStringResource`](localizedstringresource.md) that describes the instance.
+This property implements the [`CustomLocalizedStringResourceConvertible`](../customlocalizedstringresourceconvertible.md) protocol, which allows conforming types to provide a [`LocalizedStringResource`](../localizedstringresource.md) that describes the instance.
 
 
 ---

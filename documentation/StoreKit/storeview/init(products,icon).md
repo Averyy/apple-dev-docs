@@ -1,7 +1,8 @@
 # init(products:icon:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view to merchandise a collection of products with promotional images.
 
@@ -23,18 +24,19 @@ init(products: some Collection<Product>, @ViewBuilder icon: @escaping (Product, 
 
 #### Discussion
 
-The store view asynchronously loads and displays each product’s promotional image. Use the [`ProductIconPhase`](producticonphase.md) to monitor the current loading phase of the product’s promotional image, and provide an image for each phase. For more information about the loading phases, see [`ProductIconPhase`](producticonphase.md).
+The store view asynchronously loads and displays each product’s promotional image. Use the [`ProductIconPhase`](../producticonphase.md) to monitor the current loading phase of the product’s promotional image, and provide an image for each phase. For more information about the loading phases, see [`ProductIconPhase`](../producticonphase.md).
 
 ## Parameters
 
 - `products`: The products to merchandise.
-- `icon`: A closure that receives a [`Product`](product.md) and a [`ProductIconPhase`](producticonphase.md) as input. The [`ProductIconPhase`](producticonphase.md) indicates the state of the loading operation of the product’s promotional image. The closure returns the view to display for the given product and phase value.
+- `icon`: A closure that receives a [`Product`](../product.md) and a [`ProductIconPhase`](../producticonphase.md) as input. The [`ProductIconPhase`](../producticonphase.md) indicates the state of the loading operation of the product’s promotional image. The closure returns the view to display for the given product and phase value.
 
 ## See Also
 
-- [init(products: some Collection<Product>, prefersPromotionalIcon: Bool)](storeview/init(products:preferspromotionalicon:).md)
+### Creating store views with preloaded products
+- [init(products: some Collection<Product>, prefersPromotionalIcon: Bool)](./init%28products,preferspromotionalicon%29.md)
   Creates a view to load and merchandise a collection of products from the App Store.
-- [init(products: some Collection<Product>, prefersPromotionalIcon: Bool, icon: (Product) -> Icon)](storeview/init(products:preferspromotionalicon:icon:).md)
+- [init(products: some Collection<Product>, prefersPromotionalIcon: Bool, icon: (Product) -> Icon)](./init%28products,preferspromotionalicon,icon%29.md)
   Creates a view to merchandise a collection of products using a custom icon.
 
 

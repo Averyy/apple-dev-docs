@@ -1,7 +1,8 @@
 # EvaluationResult.DataFrameKind.detailed
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The sample-level detailed results DataFrame.
 

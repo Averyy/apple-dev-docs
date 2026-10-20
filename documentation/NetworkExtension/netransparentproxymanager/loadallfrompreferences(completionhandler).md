@@ -1,7 +1,8 @@
 # loadAllFromPreferences(completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Loads all previously-saved transparent proxy configurations.
 
@@ -11,7 +12,15 @@ Loads all previously-saved transparent proxy configurations.
 ## Declaration
 
 ```swift
+class func loadAllFromPreferences(completionHandler: @escaping @Sendable ([NETransparentProxyManager]?, (any Error)?) -> Void)
+```
+
+```swift
 class func loadAllFromPreferences() async throws -> [NETransparentProxyManager]
+```
+
+```objc
++ (void) loadAllFromPreferencesWithCompletionHandler:(void (^)(NSArray<NETransparentProxyManager *> *managers, NSError *error)) completionHandler;
 ```
 
 #### Discussion

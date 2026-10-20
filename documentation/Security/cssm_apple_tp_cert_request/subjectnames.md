@@ -1,7 +1,8 @@
 # subjectNames
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var subjectNames: UnsafeMutablePointer<CSSM_APPLE_TP_NAME_OID>!
+```
+
+```c
+CSSM_APPLE_TP_NAME_OID * subjectNames;
 ```
 
 

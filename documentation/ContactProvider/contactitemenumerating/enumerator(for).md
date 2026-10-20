@@ -2,6 +2,7 @@
 
 **Framework**: ContactProvider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provide an enumerator for the contact items collection.
@@ -22,13 +23,14 @@ The collection represents all contacts for the domain (`ContactItem.Identifier.r
 
 ## Parameters
 
-- `collection`: The collection to enumerate; defaults to [`rootContainer`](contactitem/identifier/rootcontainer.md).
+- `collection`: The collection to enumerate; defaults to [`rootContainer`](../contactitem/identifier/rootcontainer.md).
 
 ## See Also
 
-- [ContactItem.Identifier](contactitem/identifier.md)
+### Providing an enumeration
+- [ContactItem.Identifier](../contactitem/identifier.md)
   The app’s identifier for an item in the contact database.
-- [protocol ContactItemEnumerator](contactitemenumerator.md)
+- [protocol ContactItemEnumerator](../contactitemenumerator.md)
   A protocol to provide enumerations of all contact items and changed contact items.
 
 

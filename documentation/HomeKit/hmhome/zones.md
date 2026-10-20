@@ -1,7 +1,8 @@
 # zones
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of all the zones in the home.
 
@@ -19,13 +20,18 @@ An array of all the zones in the home.
 var zones: [HMZone] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<HMZone *> * zones;
+```
+
 ## See Also
 
-- [func addZone(withName: String, completionHandler: (HMZone?, (any Error)?) -> Void)](hmhome/addzone(withname:completionhandler:).md)
+### Grouping rooms into zones
+- [func addZone(withName: String, completionHandler: (HMZone?, (any Error)?) -> Void)](./addzone%28withname,completionhandler%29.md)
   Adds a new zone to the home.
-- [func removeZone(HMZone, completionHandler: ((any Error)?) -> Void)](hmhome/removezone(_:completionhandler:).md)
+- [func removeZone(HMZone, completionHandler: ((any Error)?) -> Void)](./removezone%28_,completionhandler%29.md)
   Removes a zone from the home.
-- [class HMZone](hmzone.md)
+- [class HMZone](../hmzone.md)
   A collection of rooms that users think of as a single area, like upstairs or downstairs.
 
 

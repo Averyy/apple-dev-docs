@@ -1,7 +1,8 @@
 # notEligible
 
 **Framework**: ServicesAccountLinking  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The application is not registered as an authorized partner.
 

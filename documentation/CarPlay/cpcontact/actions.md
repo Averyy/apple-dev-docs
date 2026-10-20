@@ -1,7 +1,8 @@
 # actions
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The actions that the template displays for this contact.
 
@@ -16,19 +17,24 @@ The actions that the template displays for this contact.
 var actions: [CPButton]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<__kindof CPButton *> * actions;
+```
+
 #### Discussion
 
-Assign an array of [`CPButton`](cpbutton.md) objects to this property to update the action buttons that the template displays for this contact. The template can display four buttons maximum. If the array contains more buttons, the template uses only the first four.
+Assign an array of [`CPButton`](../cpbutton.md) objects to this property to update the action buttons that the template displays for this contact. The template can display four buttons maximum. If the array contains more buttons, the template uses only the first four.
 
-Contact actions are optional, and the default value is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
+Contact actions are optional, and the default value is [`nil`](../../ObjectiveC/nil-227m0.md).
 
 ## See Also
 
-- [class CPContactCallButton](cpcontactcallbutton.md)
+### Managing Interactions with the Contact
+- [class CPContactCallButton](../cpcontactcallbutton.md)
   A button for calling the contact.
-- [class CPContactDirectionsButton](cpcontactdirectionsbutton.md)
+- [class CPContactDirectionsButton](../cpcontactdirectionsbutton.md)
   A button for getting directions to the contact’s location.
-- [class CPContactMessageButton](cpcontactmessagebutton.md)
+- [class CPContactMessageButton](../cpcontactmessagebutton.md)
   A button that activates Siri and initiates the compose message flow.
 
 

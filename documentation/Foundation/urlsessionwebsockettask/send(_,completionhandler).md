@@ -1,7 +1,8 @@
 # send(_:completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a WebSocket message, receiving the result in a completion handler.
 
@@ -28,15 +29,16 @@ If an error occurs while sending the message, any outstanding work also fails.
 ## Parameters
 
 - `message`: The WebSocket message to send to the other endpoint.
-- `completionHandler`: A closure that receives an [`NSError`](nserror.md) that indicates an error encountered while sending, or nil if no error occurred.
+- `completionHandler`: A closure that receives an [`NSError`](../nserror.md) that indicates an error encountered while sending, or nil if no error occurred.
 
 ## See Also
 
-- [URLSessionWebSocketTask.Message](urlsessionwebsockettask/message.md)
+### Sending and receiving data
+- [URLSessionWebSocketTask.Message](./message.md)
   An enumeration of the types of messages sent and received.
-- [func receive(completionHandler: (Result<URLSessionWebSocketTask.Message, any Error>) -> Void)](urlsessionwebsockettask/receive(completionhandler:).md)
+- [func receive(completionHandler: (Result<URLSessionWebSocketTask.Message, any Error>) -> Void)](./receive%28completionhandler%29.md)
   Reads a WebSocket message once all the frames of the message are available.
-- [var maximumMessageSize: Int](urlsessionwebsockettask/maximummessagesize.md)
+- [var maximumMessageSize: Int](./maximummessagesize.md)
   The maximum number of bytes to buffer before the receive call fails with an error.
 
 

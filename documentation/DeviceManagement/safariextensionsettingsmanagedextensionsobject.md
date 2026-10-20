@@ -1,7 +1,8 @@
 # SafariExtensionSettingsManagedExtensionsObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The dictionary of managed extensions settings. Each key in the dictionary represents a composed identifier for a specific managed extension, or you can specify a single “*” character to match any extension. The dictionary values represent the settings that Safari applies to each extension that matches the key. In order for the extension to be managed, its host app needs to be present on the device.
 
@@ -14,7 +15,7 @@ The dictionary of managed extensions settings. Each key in the dictionary repres
 
 ## Declaration
 
-```swift
+```
 object SafariExtensionSettingsManagedExtensionsObject
 ```
 
@@ -25,7 +26,7 @@ The composed identifier of a managed extension uses the format “Identifier (Te
 ## Topics
 
 ### Objects
-- [object SafariExtensionSettingsExtensionDictionaryObject](safariextensionsettingsextensiondictionaryobject.md)
+- [object SafariExtensionSettingsExtensionDictionaryObject](./safariextensionsettingsextensiondictionaryobject.md)
   The dictionary that defines the settings for a managed extension. Each key represents a specific managed extension, or you can specify a single “*” character to match any extension.
 
 ## Properties

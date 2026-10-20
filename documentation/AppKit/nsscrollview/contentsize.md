@@ -1,12 +1,13 @@
 # contentSize
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the scroll view’s content view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The size of the scroll view’s content view.
 var contentSize: NSSize { get }
 ```
 
+```objc
+@property (readonly) NSSize contentSize;
+```
+
 ## See Also
 
-- [var documentVisibleRect: NSRect](nsscrollview/documentvisiblerect.md)
+### Determining Component Sizes
+- [var documentVisibleRect: NSRect](./documentvisiblerect.md)
   The portion of the document view, in its own coordinate system, visible through the scroll view’s content view.
 
 

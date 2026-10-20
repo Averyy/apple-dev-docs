@@ -1,7 +1,8 @@
 # url
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL that users open to join a virtual conference.
 
@@ -19,9 +20,14 @@ The URL that users open to join a virtual conference.
 var url: URL { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSURL * URL;
+```
+
 ## See Also
 
-- [var title: String?](ekvirtualconferenceurldescriptor/title.md)
+### Configuring URL Descriptors
+- [var title: String?](./title.md)
   The user-visible name of a room where virtual conferences take place, such as Personal Room or Team Room.
 
 

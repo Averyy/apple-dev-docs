@@ -1,7 +1,8 @@
 # placeholderAttributedString
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.10+
@@ -13,13 +14,18 @@
 var placeholderAttributedString: NSAttributedString? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSAttributedString * placeholderAttributedString;
+```
+
 ## See Also
 
-- [var allowedTypes: [String]?](nspathcontrol/allowedtypes.md)
-- [var clickedPathItem: NSPathControlItem?](nspathcontrol/clickedpathitem.md)
-- [var isEditable: Bool](nspathcontrol/iseditable.md)
-- [var pathItems: [NSPathControlItem]](nspathcontrol/pathitems.md)
-- [var placeholderString: String?](nspathcontrol/placeholderstring.md)
+### Instance Properties
+- [var allowedTypes: [String]?](./allowedtypes.md)
+- [var clickedPathItem: NSPathControlItem?](./clickedpathitem.md)
+- [var isEditable: Bool](./iseditable.md)
+- [var pathItems: [NSPathControlItem]](./pathitems.md)
+- [var placeholderString: String?](./placeholderstring.md)
 
 
 ---

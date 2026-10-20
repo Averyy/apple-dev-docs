@@ -1,7 +1,8 @@
 # RealityViewDynamicRange
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that determine the state of high dynamic range rendering for virtual content.
 
@@ -21,34 +22,35 @@ struct RealityViewDynamicRange
 ## Topics
 
 ### Setting the dynamic range
-- [static var `default`: RealityViewDynamicRange](realityviewdynamicrange/default.md)
-- [static var standard: RealityViewDynamicRange](realityviewdynamicrange/standard.md)
+- [static var `default`: RealityViewDynamicRange](./realityviewdynamicrange/default.md)
+- [static var standard: RealityViewDynamicRange](./realityviewdynamicrange/standard.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct RealityViewEnvironment](realityviewenvironment.md)
+### Visual environment adjustments
+- [struct RealityViewEnvironment](./realityviewenvironment.md)
   A struct that determines the background and default lighting properties for a reality view.
-- [struct RealityViewRenderingEffects](realityviewrenderingeffects.md)
+- [struct RealityViewRenderingEffects](./realityviewrenderingeffects.md)
   A struct for enabling and disabling rendering effects for RealityKit content.
-- [struct RealityViewRenderingEffectMode](realityviewrenderingeffectmode.md)
+- [struct RealityViewRenderingEffectMode](./realityviewrenderingeffectmode.md)
   A mode that determines whether a rendering effect is enabled or disabled.
-- [enum AntialiasingMode](antialiasingmode.md)
+- [enum AntialiasingMode](./antialiasingmode.md)
   The rendering technique used to smooth edges of virtual content.
-- [struct RealityViewPostProcessEffect](realityviewpostprocesseffect.md)
+- [struct RealityViewPostProcessEffect](./realityviewpostprocesseffect.md)
   A struct for enabling or disabling post processing effects for all content a reality view contains.
-- [struct PostProcessEffectContext](postprocesseffectcontext.md)
+- [struct PostProcessEffectContext](./postprocesseffectcontext.md)
   An object RealityKit passes data to a post process effect method.
-- [ARView.Environment](arview/environment-swift.struct.md)
+- [ARView.Environment](./arview/environment-swift.struct.md)
   A description of background, lighting, and acoustic properties for a view’s content.
-- [ARView.RenderOptions](arview/renderoptions-swift.struct.md)
+- [ARView.RenderOptions](./arview/renderoptions-swift.struct.md)
   The available rendering options that you use to selectively disable certain rendering effects.
 
 

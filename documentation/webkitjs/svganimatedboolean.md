@@ -1,7 +1,8 @@
 # SVGAnimatedBoolean
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGAnimatedBoolean
 ```
 
 ## Topics
 
 ### Instance Properties
-- [animVal](svganimatedboolean/1628995-animval.md)
-- [baseVal](svganimatedboolean/1629374-baseval.md)
+- [animVal](./svganimatedboolean/api-1628995-animval.md)
+- [baseVal](./svganimatedboolean/api-1629374-baseval.md)
 
 
 ---

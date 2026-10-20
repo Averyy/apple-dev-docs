@@ -1,7 +1,8 @@
 # home(_:didUpdateNameFor:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a home updated the name of a trigger.
 
@@ -19,6 +20,10 @@ Tells the delegate that a home updated the name of a trigger.
 optional func home(_ home: HMHome, didUpdateNameFor trigger: HMTrigger)
 ```
 
+```objc
+- (void) home:(HMHome *) home didUpdateNameForTrigger:(HMTrigger *) trigger;
+```
+
 ## Parameters
 
 - `home`: The home.
@@ -26,19 +31,20 @@ optional func home(_ home: HMHome, didUpdateNameFor trigger: HMTrigger)
 
 ## See Also
 
-- [func home(HMHome, didAdd: HMActionSet)](hmhomedelegate/home(_:didadd:)-9dcki.md)
+### Observing Action and Trigger Configuration
+- [func home(HMHome, didAdd: HMActionSet)](./home%28_,didadd%29-9dcki.md)
   Tells the delegate that a home added an action set.
-- [func home(HMHome, didUpdateNameFor: HMActionSet)](hmhomedelegate/home(_:didupdatenamefor:)-7fxvl.md)
+- [func home(HMHome, didUpdateNameFor: HMActionSet)](./home%28_,didupdatenamefor%29-7fxvl.md)
   Tells the delegate that a home updated the name of an action set.
-- [func home(HMHome, didUpdateActionsFor: HMActionSet)](hmhomedelegate/home(_:didupdateactionsfor:).md)
+- [func home(HMHome, didUpdateActionsFor: HMActionSet)](./home%28_,didupdateactionsfor%29.md)
   Tells the delegate that a home updated the actions for an action set.
-- [func home(HMHome, didRemove: HMActionSet)](hmhomedelegate/home(_:didremove:)-80ewx.md)
+- [func home(HMHome, didRemove: HMActionSet)](./home%28_,didremove%29-80ewx.md)
   Tells the delegate that a home removed an action set.
-- [func home(HMHome, didAdd: HMTrigger)](hmhomedelegate/home(_:didadd:)-64yxx.md)
+- [func home(HMHome, didAdd: HMTrigger)](./home%28_,didadd%29-64yxx.md)
   Tells the delegate that a home added a trigger.
-- [func home(HMHome, didUpdate: HMTrigger)](hmhomedelegate/home(_:didupdate:)-3l4r1.md)
+- [func home(HMHome, didUpdate: HMTrigger)](./home%28_,didupdate%29-3l4r1.md)
   Tells the delegate that a home updated a trigger.
-- [func home(HMHome, didRemove: HMTrigger)](hmhomedelegate/home(_:didremove:)-4ujfa.md)
+- [func home(HMHome, didRemove: HMTrigger)](./home%28_,didremove%29-4ujfa.md)
   Tells the delegate that a home removed a trigger.
 
 

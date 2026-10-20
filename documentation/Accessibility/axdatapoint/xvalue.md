@@ -1,7 +1,8 @@
 # xValue
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the x-axis for the data point.
 
@@ -21,17 +22,22 @@ The value of the x-axis for the data point.
 var xValue: AXDataPointValue { get set }
 ```
 
+```objc
+@property (nonatomic, copy) AXDataPointValue * xValue;
+```
+
 #### Discussion
 
-Use a `double` value for a numeric x-axis, or an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) value for a categorical x-axis.
+Use a `double` value for a numeric x-axis, or an [`NSString`](../../Foundation/nsstring.md) value for a categorical x-axis.
 
 ## See Also
 
-- [var yValue: AXDataPointValue?](axdatapoint/yvalue.md)
+### Specifying the data value
+- [var yValue: AXDataPointValue?](./yvalue.md)
   The value of the y-axis for the data point.
-- [class AXDataPointValue](axdatapointvalue.md)
+- [class AXDataPointValue](../axdatapointvalue.md)
   A single data value.
-- [AXDataPoint.Value](axdatapoint/value.md)
+- [AXDataPoint.Value](./value.md)
   Constants that describe types of data values.
 
 

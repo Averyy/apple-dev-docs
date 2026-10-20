@@ -1,7 +1,8 @@
 # WorkoutScheduler.AuthorizationState
 
 **Framework**: WorkoutKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The workout scheduler’s authorization status.
 
@@ -21,33 +22,34 @@ enum AuthorizationState
 ## Topics
 
 ### Determining the authorization status
-- [WorkoutScheduler.AuthorizationState.authorized](workoutscheduler/authorizationstate-swift.enum/authorized.md)
+- [WorkoutScheduler.AuthorizationState.authorized](./authorizationstate-swift.enum/authorized.md)
   The user authorized your app to schedule workouts.
-- [WorkoutScheduler.AuthorizationState.denied](workoutscheduler/authorizationstate-swift.enum/denied.md)
+- [WorkoutScheduler.AuthorizationState.denied](./authorizationstate-swift.enum/denied.md)
   The user denied authorization for scheduling workouts.
-- [WorkoutScheduler.AuthorizationState.notDetermined](workoutscheduler/authorizationstate-swift.enum/notdetermined.md)
+- [WorkoutScheduler.AuthorizationState.notDetermined](./authorizationstate-swift.enum/notdetermined.md)
   Your app hasn’t yet requested authorization to schedule workouts.
-- [WorkoutScheduler.AuthorizationState.restricted](workoutscheduler/authorizationstate-swift.enum/restricted.md)
+- [WorkoutScheduler.AuthorizationState.restricted](./authorizationstate-swift.enum/restricted.md)
   The system restricted your app from scheduling workouts.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [static let shared: WorkoutScheduler](workoutscheduler/shared.md)
+### Accessing the scheduler
+- [static let shared: WorkoutScheduler](./shared.md)
   A shared instance of the workout scheduler.
-- [static var isSupported: Bool](workoutscheduler/issupported.md)
+- [static var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the current device supports scheduled workouts.
-- [func requestAuthorization() async -> WorkoutScheduler.AuthorizationState](workoutscheduler/requestauthorization.md)
+- [func requestAuthorization() async -> WorkoutScheduler.AuthorizationState](./requestauthorization%28%29.md)
   Requests authorization to schedule workouts.
-- [var authorizationState: WorkoutScheduler.AuthorizationState](workoutscheduler/authorizationstate-swift.property.md)
+- [var authorizationState: WorkoutScheduler.AuthorizationState](./authorizationstate-swift.property.md)
   The workout scheduler’s authorization status.
 
 

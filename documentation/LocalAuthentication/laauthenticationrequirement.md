@@ -1,7 +1,8 @@
 # LAAuthenticationRequirement
 
 **Framework**: Local Authentication  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A set of requirements that protect a right.
 
@@ -18,33 +19,38 @@ A set of requirements that protect a right.
 class LAAuthenticationRequirement
 ```
 
+```objc
+@interface LAAuthenticationRequirement : NSObject
+```
+
 ## Topics
 
 ### Specifying authentication requirements
-- [class var `default`: LAAuthenticationRequirement](laauthenticationrequirement/default.md)
+- [class var `default`: LAAuthenticationRequirement](./laauthenticationrequirement/default.md)
   The requirement that requires user authentication.
-- [class var biometry: LAAuthenticationRequirement](laauthenticationrequirement/biometry.md)
+- [class var biometry: LAAuthenticationRequirement](./laauthenticationrequirement/biometry.md)
   The requirement that requires biometric authentication.
-- [class var biometryCurrentSet: LAAuthenticationRequirement](laauthenticationrequirement/biometrycurrentset.md)
+- [class var biometryCurrentSet: LAAuthenticationRequirement](./laauthenticationrequirement/biometrycurrentset.md)
   The requirement that requires user authentication with the current set of biometrics.
-- [class func biometry(fallback: LABiometryFallbackRequirement) -> Self](laauthenticationrequirement/biometry(fallback:).md)
+- [class func biometry(fallback: LABiometryFallbackRequirement) -> Self](./laauthenticationrequirement/biometry%28fallback%29.md)
   Creates a requirement that requires biometric authentication or a fallback requirement that you specify.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class LABiometryFallbackRequirement](labiometryfallbackrequirement.md)
+### Requirements
+- [class LABiometryFallbackRequirement](./labiometryfallbackrequirement.md)
   A set of requirements to fall back on if biometrics aren’t present.
 
 

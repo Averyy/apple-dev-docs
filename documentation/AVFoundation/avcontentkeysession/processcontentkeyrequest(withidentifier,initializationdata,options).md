@@ -1,7 +1,8 @@
 # processContentKeyRequest(withIdentifier:initializationData:options:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate to start loading the content decryption key with the specified identifier and initialization data.
 
@@ -18,6 +19,10 @@ Tells the delegate to start loading the content decryption key with the specifie
 
 ```swift
 func processContentKeyRequest(withIdentifier identifier: (any Sendable)?, initializationData: Data?, options: [String : any Sendable]? = nil)
+```
+
+```objc
+- (void) processContentKeyRequestWithIdentifier:(id) identifier initializationData:(NSData *) initializationData options:(NSDictionary<NSString *,id> *) options;
 ```
 
 #### Discussion

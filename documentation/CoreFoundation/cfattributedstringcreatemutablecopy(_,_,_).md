@@ -1,18 +1,19 @@
 # CFAttributedStringCreateMutableCopy(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a mutable copy of an attributed string.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,19 +21,26 @@ Creates a mutable copy of an attributed string.
 func CFAttributedStringCreateMutableCopy(_ alloc: CFAllocator!, _ maxLength: CFIndex, _ aStr: CFAttributedString!) -> CFMutableAttributedString!
 ```
 
+```c
+extern CFMutableAttributedStringRefCFAttributedStringCreateMutableCopy(CFAllocatorRef alloc, CFIndex maxLength, CFAttributedStringRef aStr);
+```
+
 #### Return Value
 
-A mutable copy of `aStr`. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A mutable copy of `aStr`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
 - `alloc`: The allocator to be used to allocate memory for the new attributed string. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
-- `maxLength`: The limit on the length of the new attributed string. The string starts empty and can grow to this length (it can be shorter). Pass `0` to specify that the maximum length is not limited. If non-`0`, `maxLength` must be greater than or equal to the length of `aStr`.
+- `maxLength`: The limit on the length of the new attributed string. The string starts empty and can grow to this length (it can be shorter).
+
+  Pass `0` to specify that the maximum length is not limited. If non-`0`, `maxLength` must be greater than or equal to the length of `aStr`.
 - `aStr`: The attributed string to copy.
 
 ## See Also
 
-- [func CFAttributedStringCreateMutable(CFAllocator!, CFIndex) -> CFMutableAttributedString!](cfattributedstringcreatemutable(_:_:).md)
+### Creating a CFMutableAttributedString
+- [func CFAttributedStringCreateMutable(CFAllocator!, CFIndex) -> CFMutableAttributedString!](./cfattributedstringcreatemutable%28_,_%29.md)
   Creates a mutable attributed string.
 
 

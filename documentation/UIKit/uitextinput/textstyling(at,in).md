@@ -1,7 +1,8 @@
 # textStyling(at:in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a dictionary with properties that specify how to style the text at a certain location in a document.
 
@@ -18,9 +19,13 @@ Returns a dictionary with properties that specify how to style the text at a cer
 optional func textStyling(at position: UITextPosition, in direction: UITextStorageDirection) -> [NSAttributedString.Key : Any]?
 ```
 
+```objc
+- (NSDictionary<NSString *,id> *) textStylingAtPosition:(UITextPosition *) position inDirection:(UITextStorageDirection) direction;
+```
+
 #### Return Value
 
-A dictionary whose elements are one or more of the key-value pairs defining text color, font, and background color. See [`Style dictionary keys`](style-dictionary-keys.md) for descriptions of these key-value pairs.
+A dictionary whose elements are one or more of the key-value pairs defining text color, font, and background color. See [Style dictionary keys](../style-dictionary-keys.md) for descriptions of these key-value pairs.
 
 #### Discussion
 

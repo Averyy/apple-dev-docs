@@ -1,7 +1,8 @@
 # WidgetCenter
 
 **Framework**: WidgetKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains a list of user-configured widgets and is used for reloading widget timelines.
 
@@ -21,16 +22,16 @@ class WidgetCenter
 
 ## Mentions
 
-- [Keeping a widget up to date](keeping-a-widget-up-to-date.md)
-- [Making network requests in a widget extension](making-network-requests-in-a-widget-extension.md)
+- [Keeping a widget up to date](./keeping-a-widget-up-to-date.md)
+- [Making network requests in a widget extension](./making-network-requests-in-a-widget-extension.md)
 
 #### Overview
 
-WidgetCenter provides information about user-configured widgets, such as their family. For widgets that use [`IntentConfiguration`](intentconfiguration.md), you can retrieve the user-edited values.
+WidgetCenter provides information about user-configured widgets, such as their family. For widgets that use [`IntentConfiguration`](./intentconfiguration.md), you can retrieve the user-edited values.
 
 ##### Getting Configured Widget Information
 
-To get a list of user-configured widgets, use [`getCurrentConfigurations(_:)`](widgetcenter/getcurrentconfigurations(_:).md). This property provides an array of [`WidgetInfo`](widgetinfo.md) objects containing the following information:
+To get a list of user-configured widgets, use [`getCurrentConfigurations(_:)`](./widgetcenter/getcurrentconfigurations%28_%29.md). This property provides an array of [`WidgetInfo`](./widgetinfo.md) objects containing the following information:
 
 ```swift
 struct WidgetInfo {
@@ -40,9 +41,9 @@ struct WidgetInfo {
 }
 ```
 
-The `kind` string matches the parameter you use when creating the widget’s [`StaticConfiguration`](staticconfiguration.md) or [`IntentConfiguration`](intentconfiguration.md). The `family` property matches one of the options specified in the [`supportedFamilies(_:)`](https://developer.apple.com/documentation/swiftui/widgetconfiguration/supportedfamilies(_:)) property of the widget’s configuration. If your widget is based on [`IntentConfiguration`](intentconfiguration.md), the `configuration` property provides the custom intent containing the user-customized values for each individual widget.
+The `kind` string matches the parameter you use when creating the widget’s [`StaticConfiguration`](./staticconfiguration.md) or [`IntentConfiguration`](./intentconfiguration.md). The `family` property matches one of the options specified in the [`supportedFamilies(_:)`](../SwiftUI/widgetconfiguration/supportedfamilies%28_%29.md) property of the widget’s configuration. If your widget is based on [`IntentConfiguration`](./intentconfiguration.md), the `configuration` property provides the custom intent containing the user-customized values for each individual widget.
 
-##### Requesting a Reload of Your Widgets Timeline
+##### Requesting a Reload of Your Widget’s Timeline
 
 Changes in your app’s state may affect a widget’s timeline. When this happens, you can tell WidgetKit to reload the timeline for either a specific kind of widget or all widgets. For example, your app might register for push notifications based on the widgets the user has configured. When your app receives a push notification that changes the state for one or more of your widgets, requesting a reload of their timelines updates their display.
 
@@ -61,44 +62,45 @@ WidgetCenter.shared.reloadAllTimelines()
 ## Topics
 
 ### Getting Widget Information
-- [static let shared: WidgetCenter](widgetcenter/shared.md)
+- [static let shared: WidgetCenter](./widgetcenter/shared.md)
   The shared widget center.
-- [func getCurrentConfigurations((Result<[WidgetInfo], any Error>) -> Void)](widgetcenter/getcurrentconfigurations(_:).md)
+- [func getCurrentConfigurations((Result<[WidgetInfo], any Error>) -> Void)](./widgetcenter/getcurrentconfigurations%28_%29.md)
   Retrieves information about user-configured widgets.
-- [WidgetCenter.UserInfoKey](widgetcenter/userinfokey.md)
+- [WidgetCenter.UserInfoKey](./widgetcenter/userinfokey.md)
   An object that defines keys for accessing information in a user info dictionary.
 ### Reloading Widget Timelines
-- [func reloadTimelines(ofKind: String)](widgetcenter/reloadtimelines(ofkind:).md)
+- [func reloadTimelines(ofKind: String)](./widgetcenter/reloadtimelines%28ofkind%29.md)
   Reloads the timelines for all widgets of a particular kind.
-- [func reloadAllTimelines()](widgetcenter/reloadalltimelines.md)
+- [func reloadAllTimelines()](./widgetcenter/reloadalltimelines%28%29.md)
   Reloads the timelines for all configured widgets belonging to the containing app.
 ### Reloading Recommended Preconfigured Widgets
-- [func invalidateConfigurationRecommendations()](widgetcenter/invalidateconfigurationrecommendations.md)
+- [func invalidateConfigurationRecommendations()](./widgetcenter/invalidateconfigurationrecommendations%28%29.md)
   Invalidates and refreshes the preconfigured intent configurations for user-customizable widgets.
 ### Instance Properties
-- [var currentPushInfo: WidgetPushInfo?](widgetcenter/currentpushinfo.md)
+- [var currentPushInfo: WidgetPushInfo?](./widgetcenter/currentpushinfo.md)
   Provides the current push information for widget reloads and relevance refreshes.
 ### Instance Methods
-- [func currentConfigurations() async throws -> [WidgetInfo]](widgetcenter/currentconfigurations.md)
+- [func currentConfigurations() async throws -> [WidgetInfo]](./widgetcenter/currentconfigurations%28%29.md)
   Retrieves information about user-configured widgets.
-- [func invalidateRelevance(ofKind: String)](widgetcenter/invalidaterelevance(ofkind:).md)
+- [func invalidateRelevance(ofKind: String)](./widgetcenter/invalidaterelevance%28ofkind%29.md)
   Mark the relevance for a kind as invalid.
 
 ## See Also
 
-- [Keeping a widget up to date](keeping-a-widget-up-to-date.md)
+### Timeline updates
+- [Keeping a widget up to date](./keeping-a-widget-up-to-date.md)
   Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.
-- [protocol TimelineProvider](timelineprovider.md)
+- [protocol TimelineProvider](./timelineprovider.md)
   A type that advises WidgetKit when to update a widget’s display.
-- [protocol AppIntentTimelineProvider](appintenttimelineprovider.md)
+- [protocol AppIntentTimelineProvider](./appintenttimelineprovider.md)
   A type that advises WidgetKit when to update a user-configurable widget’s display.
-- [protocol IntentTimelineProvider](intenttimelineprovider.md)
+- [protocol IntentTimelineProvider](./intenttimelineprovider.md)
   A type that advises WidgetKit when to update a user-configurable widget’s display.
-- [struct TimelineProviderContext](timelineprovidercontext.md)
+- [struct TimelineProviderContext](./timelineprovidercontext.md)
   An object that contains details about how a widget is rendered, including its size and whether it appears in the widget gallery.
-- [protocol TimelineEntry](timelineentry.md)
+- [protocol TimelineEntry](./timelineentry.md)
   A type that specifies the date to display a widget, and, optionally, indicates the current relevance of the widget’s content.
-- [struct Timeline](timeline.md)
+- [struct Timeline](./timeline.md)
   An object that specifies a date for WidgetKit to update a widget’s view.
 
 

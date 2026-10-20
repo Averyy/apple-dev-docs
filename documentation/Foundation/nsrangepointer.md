@@ -1,7 +1,8 @@
 # NSRangePointer
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Type indicating a parameter is a pointer to an `NSRange` structure.
 
@@ -20,9 +21,14 @@ Type indicating a parameter is a pointer to an `NSRange` structure.
 typealias NSRangePointer = UnsafeMutablePointer<NSRange>
 ```
 
+```c
+typedef NSRange * NSRangePointer;
+```
+
 ## See Also
 
-- [var NSNotFound: Int](nsnotfound-4qp9h.md)
+### Related types
+- [var NSNotFound: Int](./nsnotfound-4qp9h.md)
   A value indicating that a requested item couldn’t be found or doesn’t exist.
 
 

@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.latinAmerica
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Latin America in the HID specification.
 

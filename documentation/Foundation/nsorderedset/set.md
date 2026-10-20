@@ -1,7 +1,8 @@
 # set
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A representation of the set containing the contents of the ordered set.
 
@@ -20,6 +21,10 @@ A representation of the set containing the contents of the ordered set.
 var set: Set<AnyHashable> { get }
 ```
 
+```objc
+@property (strong, readonly) NSSet<id> * set;
+```
+
 #### Discussion
 
 This returns a proxy object for the receiving ordered set, which acts like an immutable set.
@@ -28,7 +33,8 @@ While you cannot mutate the ordered set through this proxy, mutations to the ori
 
 ## See Also
 
-- [var array: [Any]](nsorderedset/array.md)
+### Converting Other Collections
+- [var array: [Any]](./array.md)
   A representation of the ordered set as an array.
 
 

@@ -1,7 +1,8 @@
 # cameraSnapshotControl(_:didTake:error:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the camera has taken a new snapshot.
 
@@ -19,6 +20,10 @@ Tells the delegate that the camera has taken a new snapshot.
 optional func cameraSnapshotControl(_ cameraSnapshotControl: HMCameraSnapshotControl, didTake snapshot: HMCameraSnapshot?, error: (any Error)?)
 ```
 
+```objc
+- (void) cameraSnapshotControl:(HMCameraSnapshotControl *) cameraSnapshotControl didTakeSnapshot:(HMCameraSnapshot *) snapshot error:(NSError *) error;
+```
+
 ## Parameters
 
 - `cameraSnapshotControl`: The camera snapshot control responsible for the new snapshot.
@@ -27,7 +32,8 @@ optional func cameraSnapshotControl(_ cameraSnapshotControl: HMCameraSnapshotCon
 
 ## See Also
 
-- [func cameraSnapshotControlDidUpdateMostRecentSnapshot(HMCameraSnapshotControl)](hmcamerasnapshotcontroldelegate/camerasnapshotcontroldidupdatemostrecentsnapshot(_:).md)
+### Observing snapshot activity
+- [func cameraSnapshotControlDidUpdateMostRecentSnapshot(HMCameraSnapshotControl)](./camerasnapshotcontroldidupdatemostrecentsnapshot%28_%29.md)
   Tells the delegate that the most recent snapshot has been updated.
 
 

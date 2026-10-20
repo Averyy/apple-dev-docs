@@ -1,6 +1,8 @@
 # Running GUI Linux in a virtual machine on a Mac
 
-**Framework**: Virtualization
+**Framework**: Virtualization  
+**Role**: Sample Code  
+**Download**: [RunningGUILinuxInAVirtualMachineOnAMac.zip](https://docs-assets.developer.apple.com/published/e6d71f8335ab/RunningGUILinuxInAVirtualMachineOnAMac.zip)
 
 Install and run GUI Linux in a virtual machine using the Virtualization framework.
 
@@ -14,29 +16,39 @@ This sample code project demonstrates how to install and run GUI Linux virtual m
 
 The Xcode project includes a single target, `GUILinuxVirtualMachineSampleApp`, which is a macOS app that installs a Linux distribution from an ISO image into a VM, and subsequently runs the installed Linux VM.
 
-##### Download a Linux Installation Image
+##### Download a Linux installation image
 
 Before you run the sample program, you need to download an ISO installation image from a Linux distribution website. Some common Linux distributions include:
 
-- [`Debian`](https://developer.apple.comhttps://www.debian.org/distrib/)
-- [`Fedora`](https://developer.apple.comhttps://getfedora.org/en/workstation/download/)
-- [`Ubuntu`](https://developer.apple.comhttps://ubuntu.com/download/desktop)
+- [Debian](https://www.debian.org/distrib/)
+- [Fedora](https://getfedora.org/en/workstation/download/)
+- [Ubuntu](https://ubuntu.com/download/desktop)
 
 > ❗ **Important**: The Virtualization framework can run Linux VMs on a Mac with Apple silicon, and on an Intel-based Mac. The Linux ISO image you download must support the CPU architecture of your Mac. For a Mac with Apple silicon, download a Linux ISO image for ARM, which is usually indicated by `aarch64` or `arm64` in the image filename. For an Intel-based Mac, download a Linux ISO image for Intel-compatible CPUs, which is usually indicated by `x86_64` or `amd64` in the image filename.
 
-> **Note**: If you need to run Intel Linux binaries in ARM Linux on a Mac with Apple silicon, the Virtualization framework supports this capability using the Rosetta translation environment. For more information, see [`Running Intel Binaries in Linux VMs`](running-intel-binaries-in-linux-vms.md).
+> **Note**: If you need to run Intel Linux binaries in ARM Linux on a Mac with Apple silicon, the Virtualization framework supports this capability using the Rosetta translation environment. For more information, see [Running Intel Binaries in Linux VMs with Rosetta](./running-intel-binaries-in-linux-vms.md).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 > **Note**: The default deployment target is macOS14, if you need to build for a different version of macOS you’ll need to change the deployment target as appropriate.
 
 1. Launch Xcode and open `GUILinuxVirtualMachineSampleApp.xcodeproj`.
 2. Navigate to the Signing & Capabilities panel and select your team ID.
-3. Build and run GUILinuxVirtualMachineSampleApp. The sample app starts the VM and configures a graphical view that you interact with. The Linux VM continues running until you shut it down from the guest OS, or when you quit the app. When you run the app for the first time, it displays a file picker so you can choose the Linux installation ISO image to use for installing your Linux VM. Navigate to the ISO image that you downloaded, select the file, and click Open. The VM boots into the OS installer, and the installer’s user interface appears in the app’s window. Follow the installation instructions. When the installation finishes, the Linux VM is ready to use. As part of the installation process, the Virtualization framework creates a `GUI Linux VM.bundle` package in your home directory. The sample app only supports running one VM at a time, however, the Virtualization framework supports running multiple VMs simultaneously. Running multiple VMs requires an app to manage the execution and artifacts of each individual VM. The contents of the bundle represent the state of the Linux guest, and contain the following: - `Disk.img` — The main disk image of the installed Linux OS.
-- `MachineIdentifier` — The data representation of the `VZGenericMachineIdentifier` object.
-- `NVRAM` — The EFI variable store. Subsequent launches of GUILinuxVirtualMachineSampleApp run the installed Linux VM. To reinstall the VM, delete the `GUI Linux VM.bundle` package and run the app again.
+3. Build and run GUILinuxVirtualMachineSampleApp. The sample app starts the VM and configures a graphical view that you interact with. The Linux VM continues running until you shut it down from the guest OS, or when you quit the app.
 
-##### Install Gui Linux From an Iso Image
+   When you run the app for the first time, it displays a file picker so you can choose the Linux installation ISO image to use for installing your Linux VM. Navigate to the ISO image that you downloaded, select the file, and click Open. The VM boots into the OS installer, and the installer’s user interface appears in the app’s window. Follow the installation instructions. When the installation finishes, the Linux VM is ready to use.
+
+   As part of the installation process, the Virtualization framework creates a `GUI Linux VM.bundle` package in your home directory. The sample app only supports running one VM at a time, however, the Virtualization framework supports running multiple VMs simultaneously. Running multiple VMs requires an app to manage the execution and artifacts of each individual VM.
+
+   The contents of the bundle represent the state of the Linux guest, and contain the following:
+
+   - `Disk.img` — The main disk image of the installed Linux OS.
+   - `MachineIdentifier` — The data representation of the `VZGenericMachineIdentifier` object.
+   - `NVRAM` — The EFI variable store.
+
+   Subsequent launches of GUILinuxVirtualMachineSampleApp run the installed Linux VM. To reinstall the VM, delete the `GUI Linux VM.bundle` package and run the app again.
+
+##### Install GUI Linux from an ISO image
 
 The sample app configures a `VZDiskImageStorageDeviceAttachment` object with the downloaded ISO image attached, and creates a `VZUSBMassStorageDeviceConfiguration` with it to emulate a USB thumb drive that’s plugged in to the VM.
 
@@ -50,9 +62,9 @@ private func createUSBMassStorageDeviceConfiguration() -> VZUSBMassStorageDevice
 }
 ```
 
-##### Set Up the Vm
+##### Set up the VM
 
-The sample app uses a [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) object to configure the basic characteristics of the VM, such as the CPU count, memory size, various device configurations, and a [`VZEFIBootLoader`](vzefibootloader.md) to load the Linux operating system into the VM.
+The sample app uses a [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) object to configure the basic characteristics of the VM, such as the CPU count, memory size, various device configurations, and a [`VZEFIBootLoader`](./vzefibootloader.md) to load the Linux operating system into the VM.
 
 ```swift
 let virtualMachineConfiguration = VZVirtualMachineConfiguration()
@@ -99,9 +111,9 @@ try! virtualMachineConfiguration.validate()
 virtualMachine = VZVirtualMachine(configuration: virtualMachineConfiguration)
 ```
 
-##### Enable Copy and Paste Support Between the Host and the Guest
+##### Enable copy-and-paste support between the host and the guest
 
-In macOS 13 and later, the Virtualization framework supports copy-and-paste of text and images between the Mac host and Linux guests through the SPICE agent clipboard-sharing capability. The example below shows the steps for configuring [`VZVirtioConsoleDeviceConfiguration`](vzvirtioconsoledeviceconfiguration.md) and [`VZSpiceAgentPortAttachment`](vzspiceagentportattachment.md) to enable this capability:
+In macOS 13 and later, the Virtualization framework supports copy-and-paste of text and images between the Mac host and Linux guests through the SPICE agent clipboard-sharing capability. The example below shows the steps for configuring [`VZVirtioConsoleDeviceConfiguration`](./vzvirtioconsoledeviceconfiguration.md) and [`VZSpiceAgentPortAttachment`](./vzspiceagentportattachment.md) to enable this capability:
 
 ```swift
 private func createSpiceAgentConsoleDeviceConfiguration() -> VZVirtioConsoleDeviceConfiguration {
@@ -118,11 +130,11 @@ private func createSpiceAgentConsoleDeviceConfiguration() -> VZVirtioConsoleDevi
 
 > ❗ **Important**: To use the copy-and-paste capability in Linux, the user needs to install the `spice-vdagent` package, which is available through most Linux package managers. Developers need to communicate this requirement to users of their apps.
 
-##### Start the Vm
+##### Start the VM
 
-After building the configuration data for the VM, the sample app uses the [`VZVirtualMachine`](vzvirtualmachine.md) object to start the execution of the Linux guest operating system.
+After building the configuration data for the VM, the sample app uses the [`VZVirtualMachine`](./vzvirtualmachine.md) object to start the execution of the Linux guest operating system.
 
-Before calling the VM’s [`start(completionHandler:)`](vzvirtualmachine/start(completionhandler:).md) method, the sample app configures a delegate object to receive messages about the state of the virtual machine. When the Linux operating system shuts down, the VM calls the delegate’s [`guestDidStop(_:)`](vzvirtualmachinedelegate/guestdidstop(_:).md) method. In response, the delegate method prints a message and exits the sample.
+Before calling the VM’s [`start(completionHandler:)`](./vzvirtualmachine/start%28completionhandler%29.md) method, the sample app configures a delegate object to receive messages about the state of the virtual machine. When the Linux operating system shuts down, the VM calls the delegate’s [`guestDidStop(_:)`](./vzvirtualmachinedelegate/guestdidstop%28_%29.md) method. In response, the delegate method prints a message and exits the sample.
 
 ```swift
 self.virtualMachineView.virtualMachine = self.virtualMachine
@@ -148,21 +160,22 @@ The app sets the display to automatically resize when the window size changes.
 
 ## See Also
 
-- [Running macOS in a virtual machine on Apple silicon](running-macos-in-a-virtual-machine-on-apple-silicon.md)
+### Virtual machine setup
+- [Running macOS in a virtual machine on Apple silicon](./running-macos-in-a-virtual-machine-on-apple-silicon.md)
   Install and run macOS in a virtual machine using the Virtualization framework.
-- [Running Linux in a Virtual Machine](running-linux-in-a-virtual-machine.md)
+- [Running Linux in a Virtual Machine](./running-linux-in-a-virtual-machine.md)
   Run a Linux operating system on your Mac using the Virtualization framework.
-- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
+- [Installing macOS on a Virtual Machine](./installing-macos-on-a-virtual-machine.md)
   Download a macOS restore image and install it in a new VM.
-- [Creating and Running a Linux Virtual Machine](creating-and-running-a-linux-virtual-machine.md)
+- [Creating and Running a Linux Virtual Machine](./creating-and-running-a-linux-virtual-machine.md)
   Design and run custom Linux guests on Apple silicon or Intel-based Mac Computers.
-- [Virtualize macOS on a Mac](virtualize-macos-on-a-mac.md)
+- [Virtualize macOS on a Mac](./virtualize-macos-on-a-mac.md)
   Configure and run macOS guests on Apple silicon.
-- [Virtualize Linux on a Mac](virtualize-linux-on-a-mac.md)
+- [Virtualize Linux on a Mac](./virtualize-linux-on-a-mac.md)
   Configure and run Linux guests on Apple silicon and Intel-based Mac computers.
-- [Running Intel Binaries in Linux VMs](running-intel-binaries-in-linux-vms.md)
+- [Running Intel Binaries in Linux VMs](./running-intel-binaries-in-linux-vms.md)
   Run x86_64 Linux binaries under ARM Linux on Apple silicon.
-- [Accelerating the performance of Rosetta](accelerating-the-performance-of-rosetta.md)
+- [Accelerating the performance of Rosetta](./accelerating-the-performance-of-rosetta.md)
   Improve Rosetta performance by adding support for the total store ordering (TSO) memory model to your Linux kernel.
 
 

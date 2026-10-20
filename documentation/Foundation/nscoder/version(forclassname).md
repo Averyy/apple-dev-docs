@@ -1,7 +1,8 @@
 # version(forClassName:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This method is present for historical reasons and is not used with keyed archivers.
 
@@ -20,6 +21,10 @@ This method is present for historical reasons and is not used with keyed archive
 func version(forClassName className: String) -> Int
 ```
 
+```objc
+- (NSInteger) versionForClassName:(NSString *) className;
+```
+
 #### Return Value
 
 The version in effect for the class named `className` or `NSNotFound` if no class named `className` exists.
@@ -30,7 +35,8 @@ The version number does apply not to `NSKeyedArchiver`/`NSKeyedUnarchiver`.  A k
 
 ## See Also
 
-- [var systemVersion: UInt32](nscoder/systemversion.md)
+### Getting Version Information
+- [var systemVersion: UInt32](./systemversion.md)
   The system version in effect for the archive.
 
 

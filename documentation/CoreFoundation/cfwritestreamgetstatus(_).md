@@ -1,18 +1,19 @@
 # CFWriteStreamGetStatus(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the current state of a stream.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns the current state of a stream.
 func CFWriteStreamGetStatus(_ stream: CFWriteStream!) -> CFStreamStatus
 ```
 
+```c
+extern CFStreamStatus CFWriteStreamGetStatus(CFWriteStreamRef stream);
+```
+
 #### Return Value
 
-The current state of `stream`. See [`CFStreamStatus`](cfstreamstatus.md) for the list of possible states.
+The current state of `stream`. See [`CFStreamStatus`](./cfstreamstatus.md) for the list of possible states.
 
 ## Parameters
 
@@ -30,13 +35,14 @@ The current state of `stream`. See [`CFStreamStatus`](cfstreamstatus.md) for the
 
 ## See Also
 
-- [func CFWriteStreamCanAcceptBytes(CFWriteStream!) -> Bool](cfwritestreamcanacceptbytes(_:).md)
+### Examining Stream Properties
+- [func CFWriteStreamCanAcceptBytes(CFWriteStream!) -> Bool](./cfwritestreamcanacceptbytes%28_%29.md)
   Returns whether a writable stream can accept new data without blocking.
-- [func CFWriteStreamCopyProperty(CFWriteStream!, CFStreamPropertyKey!) -> CFTypeRef!](cfwritestreamcopyproperty(_:_:).md)
+- [func CFWriteStreamCopyProperty(CFWriteStream!, CFStreamPropertyKey!) -> CFTypeRef!](./cfwritestreamcopyproperty%28_,_%29.md)
   Returns the value of a property for a stream.
-- [func CFWriteStreamCopyError(CFWriteStream!) -> CFError!](cfwritestreamcopyerror(_:).md)
+- [func CFWriteStreamCopyError(CFWriteStream!) -> CFError!](./cfwritestreamcopyerror%28_%29.md)
   Returns the error associated with a stream.
-- [func CFWriteStreamGetError(CFWriteStream!) -> CFStreamError](cfwritestreamgeterror(_:).md)
+- [func CFWriteStreamGetError(CFWriteStream!) -> CFStreamError](./cfwritestreamgeterror%28_%29.md)
   Returns the error status of a stream.
 
 

@@ -1,7 +1,8 @@
 # sec_protocol_metadata_access_peer_certificate_chain(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_protocol_metadata_access_peer_certificate_chain(_ metadata: sec_protocol_metadata_t, _ handler: @escaping (sec_certificate_t) -> Void) -> Bool
+```
+
+```c
+bool sec_protocol_metadata_access_peer_certificate_chain(sec_protocol_metadata_t metadata, void (^handler)(sec_certificate_t certificate));
 ```
 
 #### Return Value

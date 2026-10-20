@@ -1,7 +1,8 @@
 # vehicleCategoryCode
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vehicle category code of the driving privilege.
 

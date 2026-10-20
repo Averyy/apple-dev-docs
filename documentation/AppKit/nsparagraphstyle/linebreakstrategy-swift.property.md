@@ -1,7 +1,8 @@
 # lineBreakStrategy
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strategy for breaking lines while laying out paragraphs.
 
@@ -14,27 +15,32 @@ The strategy for breaking lines while laying out paragraphs.
 var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy { get }
 ```
 
+```objc
+@property (readonly) NSLineBreakStrategy lineBreakStrategy;
+```
+
 #### Discussion
 
-Line-break strategies are collections of options the system uses to determine where to break lines in a paragraph. This is different from [`lineBreakMode`](nsparagraphstyle/linebreakmode.md), which controls how to lay out lines of text that don’t fit in a container. The system ignores this property if the paragraph style’s [`lineBreakMode`](nsparagraphstyle/linebreakmode.md) property specifies a mode that doesn’t support multiple lines, such as [`NSLineBreakMode.byClipping`](nslinebreakmode/byclipping.md).
+Line-break strategies are collections of options the system uses to determine where to break lines in a paragraph. This is different from [`lineBreakMode`](./linebreakmode.md), which controls how to lay out lines of text that don’t fit in a container. The system ignores this property if the paragraph style’s [`lineBreakMode`](./linebreakmode.md) property specifies a mode that doesn’t support multiple lines, such as [`NSLineBreakMode.byClipping`](../nslinebreakmode/byclipping.md).
 
-The default value is [`NSLineBreakStrategyNone`](nslinebreakstrategy/nslinebreakstrategynone.md).
+The default value is [`NSLineBreakStrategyNone`](../nslinebreakstrategy/nslinebreakstrategynone.md).
 
 ## See Also
 
-- [var lineBreakMode: NSLineBreakMode](nsparagraphstyle/linebreakmode.md)
+### Getting line-break information
+- [var lineBreakMode: NSLineBreakMode](./linebreakmode.md)
   The mode for breaking lines in the paragraph that don’t fit within a container.
-- [enum NSLineBreakMode](nslinebreakmode.md)
+- [enum NSLineBreakMode](../nslinebreakmode.md)
   Constants that specify what happens when a line is too long for a container.
-- [NSParagraphStyle.LineBreakStrategy](nsparagraphstyle/linebreakstrategy-swift.struct.md)
+- [NSParagraphStyle.LineBreakStrategy](./linebreakstrategy-swift.struct.md)
   Constants that specify how the text system breaks lines while laying out paragraphs.
-- [var hyphenationFactor: Float](nsparagraphstyle/hyphenationfactor.md)
+- [var hyphenationFactor: Float](./hyphenationfactor.md)
   The paragraph’s threshold for hyphenation.
-- [var usesDefaultHyphenation: Bool](nsparagraphstyle/usesdefaulthyphenation.md)
+- [var usesDefaultHyphenation: Bool](./usesdefaulthyphenation.md)
   A Boolean value that indicates whether the paragraph style uses the system hyphenation settings.
-- [var tighteningFactorForTruncation: Float](nsparagraphstyle/tighteningfactorfortruncation.md)
+- [var tighteningFactorForTruncation: Float](./tighteningfactorfortruncation.md)
   The threshold for using tightening as an alternative to truncation.
-- [var allowsDefaultTighteningForTruncation: Bool](nsparagraphstyle/allowsdefaulttighteningfortruncation.md)
+- [var allowsDefaultTighteningForTruncation: Bool](./allowsdefaulttighteningfortruncation.md)
   A Boolean value that indicates whether the system tightens character spacing before truncating text.
 
 

@@ -1,7 +1,8 @@
 # HKSampleQueryDescriptor
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A query interface that reads samples using Swift concurrency.
 
@@ -10,7 +11,7 @@ A query interface that reads samples using Swift concurrency.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -21,12 +22,12 @@ struct HKSampleQueryDescriptor<Sample> where Sample : HKSample
 
 ## Mentions
 
-- [Reading data from HealthKit](reading-data-from-healthkit.md)
-- [Running Queries with Swift Concurrency](running-queries-with-swift-concurrency.md)
+- [Reading data from HealthKit](./reading-data-from-healthkit.md)
+- [Running Queries with Swift Concurrency](./running-queries-with-swift-concurrency.md)
 
 #### Overview
 
-Use [`HKSampleQueryDescriptor`](hksamplequerydescriptor.md) to run a general query that returns a snapshot of all the matching samples currently saved in the HealthKit store.
+Use [`HKSampleQueryDescriptor`](./hksamplequerydescriptor.md) to run a general query that returns a snapshot of all the matching samples currently saved in the HealthKit store.
 
 ```swift
 // Define the type.
@@ -47,44 +48,45 @@ for result in results {
 }
 ```
 
-When you call the descriptor’s [`result(for:)`](hksamplequerydescriptor/result(for:).md) method, it creates and executes an [`HKSampleQuery`](hksamplequery.md) in the background, passing the results from the query’s `resultsHandler` as its return value.
+When you call the descriptor’s [`result(for:)`](./hksamplequerydescriptor/result%28for%29.md) method, it creates and executes an [`HKSampleQuery`](./hksamplequery.md) in the background, passing the results from the query’s `resultsHandler` as its return value.
 
 ## Topics
 
 ### Creating Query Descriptors
-- [init(predicates: [HKSamplePredicate<Sample>], sortDescriptors: [SortDescriptor<Sample>], limit: Int?)](hksamplequerydescriptor/init(predicates:sortdescriptors:limit:).md)
+- [init(predicates: [HKSamplePredicate<Sample>], sortDescriptors: [SortDescriptor<Sample>], limit: Int?)](./hksamplequerydescriptor/init%28predicates,sortdescriptors,limit%29.md)
   Creates a sample query descriptor.
 ### Running Queries
-- [func result(for: HKHealthStore) async throws -> [Sample]](hksamplequerydescriptor/result(for:).md)
+- [func result(for: HKHealthStore) async throws -> [Sample]](./hksamplequerydescriptor/result%28for%29.md)
   Runs a one-shot query and asynchronously returns a snapshot of the current matching results.
 ### Accessing Query Properties
-- [var limit: Int?](hksamplequerydescriptor/limit.md)
+- [var limit: Int?](./hksamplequerydescriptor/limit.md)
   The maximum number of samples that the query returns.
-- [var predicates: [HKSamplePredicate<Sample>]](hksamplequerydescriptor/predicates.md)
+- [var predicates: [HKSamplePredicate<Sample>]](./hksamplequerydescriptor/predicates.md)
   An array of sample predicates that define the type of data that the query returns.
-- [var sortDescriptors: [SortDescriptor<Sample>]](hksamplequerydescriptor/sortdescriptors.md)
+- [var sortDescriptors: [SortDescriptor<Sample>]](./hksamplequerydescriptor/sortdescriptors.md)
   An array that specifies the order of the results that the query returns.
 ### Default Implementations
-- [HKAsyncQuery Implementations](hksamplequerydescriptor/hkasyncquery-implementations.md)
+- [HKAsyncQuery Implementations](./hksamplequerydescriptor/hkasyncquery-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [HKAsyncQuery](hkasyncquery.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [HKAsyncQuery](./hkasyncquery.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKSampleQuery](hksamplequery.md)
+### Basic queries
+- [class HKSampleQuery](./hksamplequery.md)
   A general query that returns a snapshot of all the matching samples currently saved in the HealthKit store.
-- [class HKCorrelationQuery](hkcorrelationquery.md)
+- [class HKCorrelationQuery](./hkcorrelationquery.md)
   A query that performs complex searches based on the correlation’s contents, and returns a snapshot of all matching samples.
-- [class HKQueryDescriptor](hkquerydescriptor.md)
+- [class HKQueryDescriptor](./hkquerydescriptor.md)
   A descriptor that specifies a set of samples based on the data type and a predicate.
-- [class HKQuery](hkquery.md)
+- [class HKQuery](./hkquery.md)
   An abstract class for all the query classes in HealthKit.
 
 

@@ -1,7 +1,8 @@
 # init(x:y:width:height:)
 
 **Framework**: Core Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 7.0+

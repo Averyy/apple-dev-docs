@@ -1,7 +1,8 @@
 # toolbars
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The hosting view’s associated window will have its toolbar populated with any items provided to the `toolbar(content:)` modifier.
 
@@ -20,9 +21,10 @@ Toolbars populated in this manner overwrite any toolbar set on the window using 
 
 ## See Also
 
-- [static let all: NSHostingSceneBridgingOptions](nshostingscenebridgingoptions/all.md)
+### Geting bridging options
+- [static let all: NSHostingSceneBridgingOptions](./all.md)
   The hosting view’s associated window will have both its title bars and toolbars populated with values from their respective modifiers.
-- [static let title: NSHostingSceneBridgingOptions](nshostingscenebridgingoptions/title.md)
+- [static let title: NSHostingSceneBridgingOptions](./title.md)
   The hosting view’s associated window will have its title and subtitle populated with the values provided to the `navigationTitle(_:)` and `navigationSubtitle(_:)` modifiers, respectively.
 
 

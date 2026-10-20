@@ -1,7 +1,8 @@
 # PKPaymentAuthorizationStatus.pinRequired
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Transaction requires PIN entry.
 
@@ -19,25 +20,30 @@ Transaction requires PIN entry.
 case pinRequired
 ```
 
+```c
+PKPaymentAuthorizationStatusPINRequired
+```
+
 #### Discussion
 
 Pass this constant to the completion block when the payment requires a PIN but the token did not include one—for example, when the bank’s and app’s PIN limits are out of sync. Apple Pay automatically prompts the user to enter their PIN.
 
 ## See Also
 
-- [PKPaymentAuthorizationStatus.success](pkpaymentauthorizationstatus/success.md)
+### Payment authorization status constants
+- [PKPaymentAuthorizationStatus.success](./success.md)
   Merchant successfully authorized the transaction, or the transaction is expected to succeed.
-- [PKPaymentAuthorizationStatus.failure](pkpaymentauthorizationstatus/failure.md)
+- [PKPaymentAuthorizationStatus.failure](./failure.md)
   Merchant failed to authorize the transaction.
-- [PKPaymentAuthorizationStatus.invalidBillingPostalAddress](pkpaymentauthorizationstatus/invalidbillingpostaladdress.md)
+- [PKPaymentAuthorizationStatus.invalidBillingPostalAddress](./invalidbillingpostaladdress.md)
   Invalid or unusable billing address.
-- [PKPaymentAuthorizationStatus.invalidShippingPostalAddress](pkpaymentauthorizationstatus/invalidshippingpostaladdress.md)
+- [PKPaymentAuthorizationStatus.invalidShippingPostalAddress](./invalidshippingpostaladdress.md)
   Invalid or unusable shipping address.
-- [PKPaymentAuthorizationStatus.invalidShippingContact](pkpaymentauthorizationstatus/invalidshippingcontact.md)
+- [PKPaymentAuthorizationStatus.invalidShippingContact](./invalidshippingcontact.md)
   Invalid or incomplete shipping contact.
-- [PKPaymentAuthorizationStatus.pinIncorrect](pkpaymentauthorizationstatus/pinincorrect.md)
+- [PKPaymentAuthorizationStatus.pinIncorrect](./pinincorrect.md)
   Incorrect PIN entered.
-- [PKPaymentAuthorizationStatus.pinLockout](pkpaymentauthorizationstatus/pinlockout.md)
+- [PKPaymentAuthorizationStatus.pinLockout](./pinlockout.md)
   PIN retry limit exceeded.
 
 

@@ -1,7 +1,8 @@
 # VisionResult.detectLensSmudge(_:_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -20,7 +21,8 @@ case detectLensSmudge(DetectLensSmudgeRequest, SmudgeObservation)
 
 ## See Also
 
-- [case calculateImageAestheticsScores(CalculateImageAestheticsScoresRequest, ImageAestheticsScoresObservation)](visionresult/calculateimageaestheticsscores(_:_:).md)
+### Getting the image aesthetics and lens smudge result
+- [case calculateImageAestheticsScores(CalculateImageAestheticsScoresRequest, ImageAestheticsScoresObservation)](./calculateimageaestheticsscores%28_,_%29.md)
   A result from performing a calculate image aesthetics scores request.
 
 

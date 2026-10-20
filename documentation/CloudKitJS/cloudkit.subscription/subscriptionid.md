@@ -1,7 +1,8 @@
 # subscriptionID
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the subscription.
 
@@ -10,7 +11,7 @@ A unique identifier for the subscription.
 
 ## Declaration
 
-```swift
+```
 attribute String subscriptionID;
 ```
 

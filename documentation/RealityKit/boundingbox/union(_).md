@@ -1,7 +1,8 @@
 # union(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a bounding box containing the current bounds and the specified bounds.
 
@@ -11,12 +12,18 @@ Creates a bounding box containing the current bounds and the specified bounds.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
 ```swift
 func union(_ other: BoundingBox) -> BoundingBox
+```
+
+**Other overloads**:
+
+```swift
+func union(_ point: SIMD3<Float>) -> BoundingBox
 ```
 
 #### Return Value

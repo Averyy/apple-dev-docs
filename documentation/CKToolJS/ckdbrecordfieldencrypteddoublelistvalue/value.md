@@ -1,7 +1,8 @@
 # value
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of double values.
 
@@ -10,7 +11,7 @@ An array of double values.
 
 ## Declaration
 
-```swift
+```
 attribute Double[]? value;
 ```
 

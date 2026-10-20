@@ -1,7 +1,8 @@
 # sceneKitScene
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents a SceneKit serialized scene.
 
@@ -24,13 +25,14 @@ static var sceneKitScene: UTType { get }
 
 The identifier for this type is `com.apple.scenekit.scene`.
 
-This type conforms to [`UTType3DContent`](uttype3dcontent.md) and [`UTTypeData`](uttypedata.md).
+This type conforms to [`UTType3DContent`](../uttype3dcontent.md) and [`UTTypeData`](../uttypedata.md).
 
 ## See Also
 
-- [static var realityFile: UTType](uttype-swift.struct/realityfile.md)
+### Apple 3D content
+- [static var realityFile: UTType](./realityfile.md)
   A type that represents a Reality Composer file.
-- [static var arReferenceObject: UTType](uttype-swift.struct/arreferenceobject.md)
+- [static var arReferenceObject: UTType](./arreferenceobject.md)
   A type that represents an augmented reality reference object.
 
 

@@ -1,7 +1,8 @@
 # volumeSupportsJournaling
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the volume format supports a journal used to speed recovery in case of unplanned restart (such as a power outage or crash).
 
@@ -26,35 +27,36 @@ A value of `true` doesn’t necessarily mean the volume is actively using a jour
 
 ## See Also
 
-- [var isMountTrigger: Bool?](urlresourcevalues/ismounttrigger.md)
+### Volume support values
+- [var isMountTrigger: Bool?](./ismounttrigger.md)
   A Boolean value that indicates whether this URL is a file system trigger directory.
-- [var isVolume: Bool?](urlresourcevalues/isvolume.md)
+- [var isVolume: Bool?](./isvolume.md)
   A Boolean value that indicates whether the root directory is a volume.
-- [var volume: URL?](urlresourcevalues/volume.md)
+- [var volume: URL?](./volume.md)
   URL of the volume on which the resource is stored.
-- [var volumeCreationDate: Date?](urlresourcevalues/volumecreationdate.md)
+- [var volumeCreationDate: Date?](./volumecreationdate.md)
   The volume’s creation date, or `nil` if this cannot be determined.
-- [var volumeIdentifier: (any NSCopying & NSSecureCoding & NSObjectProtocol)?](urlresourcevalues/volumeidentifier.md)
+- [var volumeIdentifier: (any NSCopying & NSSecureCoding & NSObjectProtocol)?](./volumeidentifier.md)
   An identifier that identifies the volume the file system object is on.
-- [var volumeLocalizedFormatDescription: String?](urlresourcevalues/volumelocalizedformatdescription.md)
+- [var volumeLocalizedFormatDescription: String?](./volumelocalizedformatdescription.md)
   The volume format that’s visible to the user.
-- [var volumeLocalizedName: String?](urlresourcevalues/volumelocalizedname.md)
+- [var volumeLocalizedName: String?](./volumelocalizedname.md)
   The name of the volume that’s visible to the user.
-- [var volumeMaximumFileSize: Int?](urlresourcevalues/volumemaximumfilesize.md)
+- [var volumeMaximumFileSize: Int?](./volumemaximumfilesize.md)
   The largest file size supported by this file system, in bytes, or `nil` if this cannot be determined.
-- [var volumeName: String?](urlresourcevalues/volumename.md)
+- [var volumeName: String?](./volumename.md)
   The name of the volume.
-- [var volumeResourceCount: Int?](urlresourcevalues/volumeresourcecount.md)
+- [var volumeResourceCount: Int?](./volumeresourcecount.md)
   The total number of resources on the volume.
-- [var volumeSupportsAccessPermissions: Bool?](urlresourcevalues/volumesupportsaccesspermissions.md)
+- [var volumeSupportsAccessPermissions: Bool?](./volumesupportsaccesspermissions.md)
   A Boolean value that indicates whether the volume supports setting standard access permissions.
-- [var volumeSupportsAdvisoryFileLocking: Bool?](urlresourcevalues/volumesupportsadvisoryfilelocking.md)
+- [var volumeSupportsAdvisoryFileLocking: Bool?](./volumesupportsadvisoryfilelocking.md)
   A Boolean value that indicates whether the volume implements whole-file flock(2) style advisory locks, and the O_EXLOCK and O_SHLOCK flags of the open(2) call.
-- [var volumeSupportsCasePreservedNames: Bool?](urlresourcevalues/volumesupportscasepreservednames.md)
+- [var volumeSupportsCasePreservedNames: Bool?](./volumesupportscasepreservednames.md)
   A Boolean value that indicates whether the volume format preserves the case of file and directory names.
-- [var volumeSupportsCaseSensitiveNames: Bool?](urlresourcevalues/volumesupportscasesensitivenames.md)
+- [var volumeSupportsCaseSensitiveNames: Bool?](./volumesupportscasesensitivenames.md)
   A Boolean value that indicates whether the volume format treats upper and lower case characters in file and directory names as different.
-- [var volumeSupportsCompression: Bool?](urlresourcevalues/volumesupportscompression.md)
+- [var volumeSupportsCompression: Bool?](./volumesupportscompression.md)
   A Boolean value that indicates whether the volume supports transparent decompression of compressed files using decmpfs.
 
 

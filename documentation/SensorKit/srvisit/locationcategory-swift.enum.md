@@ -1,7 +1,8 @@
 # SRVisit.LocationCategory
 
 **Framework**: SensorKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of locations.
 
@@ -16,41 +17,46 @@ Types of locations.
 enum LocationCategory
 ```
 
+```c
+enum SRLocationCategory : NSInteger;
+```
+
 ## Topics
 
 ### Categories
-- [SRVisit.LocationCategory.gym](srvisit/locationcategory-swift.enum/gym.md)
+- [SRVisit.LocationCategory.gym](./locationcategory-swift.enum/gym.md)
   The user’s gym.
-- [SRVisit.LocationCategory.home](srvisit/locationcategory-swift.enum/home.md)
+- [SRVisit.LocationCategory.home](./locationcategory-swift.enum/home.md)
   The user’s home.
-- [SRVisit.LocationCategory.school](srvisit/locationcategory-swift.enum/school.md)
+- [SRVisit.LocationCategory.school](./locationcategory-swift.enum/school.md)
   The user’s school.
-- [SRVisit.LocationCategory.unknown](srvisit/locationcategory-swift.enum/unknown.md)
+- [SRVisit.LocationCategory.unknown](./locationcategory-swift.enum/unknown.md)
   A location the user frequents that’s an unknown type.
-- [SRVisit.LocationCategory.work](srvisit/locationcategory-swift.enum/work.md)
+- [SRVisit.LocationCategory.work](./locationcategory-swift.enum/work.md)
   The user’s workplace.
 ### Initializers
-- [init?(rawValue: Int)](srvisit/locationcategory-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./locationcategory-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var arrivalDateInterval: DateInterval](srvisit/arrivaldateinterval.md)
+### Accessing Visit Information
+- [var arrivalDateInterval: DateInterval](./arrivaldateinterval.md)
   A range of time within which the user arrives at a location of interest.
-- [var departureDateInterval: DateInterval](srvisit/departuredateinterval.md)
+- [var departureDateInterval: DateInterval](./departuredateinterval.md)
   A range of time within which the user departs from a location of interest.
-- [var distanceFromHome: CLLocationDistance](srvisit/distancefromhome.md)
+- [var distanceFromHome: CLLocationDistance](./distancefromhome.md)
   The location’s distance from the home-category location.
-- [var locationCategory: SRVisit.LocationCategory](srvisit/locationcategory-swift.property.md)
+- [var locationCategory: SRVisit.LocationCategory](./locationcategory-swift.property.md)
   The location’s type.
 
 

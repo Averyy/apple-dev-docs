@@ -1,7 +1,8 @@
 # validationMode
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The validation mode of the mobile document request.
 
@@ -18,7 +19,7 @@ var validationMode: MobileDocumentDisplayRequest.Options.ValidationMode
 
 #### Discussion
 
-The default value is [`check`](mobiledocumentdisplayrequest/options-swift.struct/validationmode-swift.struct/check.md).
+The default value is [`check`](./validationmode-swift.struct/check.md).
 
 
 ---

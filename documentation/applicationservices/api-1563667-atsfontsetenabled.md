@@ -1,7 +1,8 @@
 # ATSFontSetEnabled(_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+ - Deprecated in 13.1
@@ -10,6 +11,10 @@
 
 ```swift
 func ATSFontSetEnabled(_ iFont: ATSFontRef, _ iOptions: ATSOptionFlags, _ iEnabled: Bool) -> OSStatus
+```
+
+```c
+OSStatus ATSFontSetEnabled(ATSFontRef iFont, ATSOptionFlags iOptions, Boolean iEnabled);
 ```
 
 

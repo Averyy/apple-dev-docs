@@ -1,7 +1,8 @@
 # isPaused
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the clock should be paused, e.g. due to a stoppage in play.
 
@@ -14,6 +15,10 @@ Whether the clock should be paused, e.g. due to a stoppage in play.
 
 ```swift
 var isPaused: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly, getter=isPaused) BOOL paused;
 ```
 
 #### Discussion

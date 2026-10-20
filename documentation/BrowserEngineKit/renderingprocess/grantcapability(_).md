@@ -1,7 +1,8 @@
 # grantCapability(_:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Grants the specified capability to the process.
 
@@ -18,11 +19,11 @@ func grantCapability(_ capability: ProcessCapability) throws -> ProcessCapabilit
 
 #### Return Value
 
-A [`ProcessCapability.Grant`](processcapability/grant.md) object that represents the granted capability.
+A [`ProcessCapability.Grant`](../processcapability/grant.md) object that represents the granted capability.
 
 #### Discussion
 
-When the process no longer needs the capability, call [`invalidate()`](processcapability/grant/invalidate().md) on the returned object.
+When the process no longer needs the capability, call [`invalidate()`](../processcapability/grant/invalidate%28%29.md) on the returned object.
 
 ## Parameters
 
@@ -30,9 +31,10 @@ When the process no longer needs the capability, call [`invalidate()`](processca
 
 ## See Also
 
-- [func grantCapability(ProcessCapability, invalidationHandler: () -> Void) throws -> ProcessCapability.Grant](renderingprocess/grantcapability(_:invalidationhandler:).md)
+### Coordinating processes
+- [func grantCapability(ProcessCapability, invalidationHandler: () -> Void) throws -> ProcessCapability.Grant](./grantcapability%28_,invalidationhandler%29.md)
   Grants the specified capability to the process and observes an invalidation closure.
-- [func createVisibilityPropagationInteraction() -> any UIInteraction](renderingprocess/createvisibilitypropagationinteraction.md)
+- [func createVisibilityPropagationInteraction() -> any UIInteraction](./createvisibilitypropagationinteraction%28%29.md)
   Returns an interaction that associates a view with the rendering process.
 
 

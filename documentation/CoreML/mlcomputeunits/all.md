@@ -1,7 +1,8 @@
 # MLComputeUnits.all
 
 **Framework**: Core ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The option you choose to allow the model to use all compute units available, including the neural engine.
 
@@ -20,13 +21,18 @@ The option you choose to allow the model to use all compute units available, inc
 case all
 ```
 
+```c
+MLComputeUnitsAll
+```
+
 ## See Also
 
-- [MLComputeUnits.cpuOnly](mlcomputeunits/cpuonly.md)
+### Processing Unit Configurations
+- [MLComputeUnits.cpuOnly](./cpuonly.md)
   The option you choose to limit the model to only use the CPU.
-- [MLComputeUnits.cpuAndGPU](mlcomputeunits/cpuandgpu.md)
+- [MLComputeUnits.cpuAndGPU](./cpuandgpu.md)
   The option you choose to allow the model to use both the CPU and GPU, but not the neural engine.
-- [MLComputeUnits.cpuAndNeuralEngine](mlcomputeunits/cpuandneuralengine.md)
+- [MLComputeUnits.cpuAndNeuralEngine](./cpuandneuralengine.md)
   The option you choose to allow the model to use both the CPU and neural engine, but not the GPU.
 
 

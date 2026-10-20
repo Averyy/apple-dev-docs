@@ -1,6 +1,8 @@
 # Implementing Wallet Extensions
 
-**Framework**: PassKit (Apple Pay and Wallet)
+**Framework**: PassKit (Apple Pay and Wallet)  
+**Role**: Sample Code  
+**Download**: [ImplementingWalletExtensions.zip](https://docs-assets.developer.apple.com/published/18de717aedac/ImplementingWalletExtensions.zip)
 
 Support adding an issued card to Apple Pay from directly within Apple Wallet using Wallet Extensions.
 
@@ -25,9 +27,9 @@ The project contains four targets:
 - `WNonUIExt` - A non-UI extension sample
 - `ImplementingWalletExtensionsSampleAppTests` - A unit-testing bundle with sample tests
 
-For more information on Wallet Extensions, see the [`Apple Pay Demo - Wallet Extensions documentation`](https://developer.apple.comhttps://applepaydemo.apple.com/wallet-extensions).
+For more information on Wallet Extensions, see the [Apple Pay Demo - Wallet Extensions documentation](https://applepaydemo.apple.com/wallet-extensions).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Because Wallet Extensions require an entitlement from Apple, you can’t run the app extensions in this sample. You can only run the sample unit tests and the sample containing app, which has a login view that is repurposed for the UI extension during the Wallet Extensions process. To run this sample you’ll need the following:
 
@@ -36,9 +38,10 @@ Because Wallet Extensions require an entitlement from Apple, you can’t run the
 
 ## See Also
 
-- [class PKIssuerProvisioningExtensionHandler](pkissuerprovisioningextensionhandler.md)
+### Issuer cards
+- [class PKIssuerProvisioningExtensionHandler](./pkissuerprovisioningextensionhandler.md)
   An abstract superclass for an app extension to add a payment card to Wallet.
-- [protocol PKIssuerProvisioningExtensionAuthorizationProviding](pkissuerprovisioningextensionauthorizationproviding.md)
+- [protocol PKIssuerProvisioningExtensionAuthorizationProviding](./pkissuerprovisioningextensionauthorizationproviding.md)
   A protocol for a UI app extension to authorize a user to add a payment card to Wallet.
 
 

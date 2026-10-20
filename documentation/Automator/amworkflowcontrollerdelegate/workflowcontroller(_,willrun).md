@@ -1,7 +1,8 @@
 # workflowController(_:willRun:)
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate when the specified action is about to run.
 
@@ -15,6 +16,10 @@ Notifies the delegate when the specified action is about to run.
 optional func workflowController(_ controller: AMWorkflowController, willRun action: AMAction)
 ```
 
+```objc
+- (void) workflowController:(AMWorkflowController *) controller willRunAction:(AMAction *) action;
+```
+
 ## Parameters
 
 - `controller`: The controller object sending the message.
@@ -22,7 +27,8 @@ optional func workflowController(_ controller: AMWorkflowController, willRun act
 
 ## See Also
 
-- [func workflowControllerWillRun(AMWorkflowController)](amworkflowcontrollerdelegate/workflowcontrollerwillrun(_:).md)
+### Preparing to Run
+- [func workflowControllerWillRun(AMWorkflowController)](./workflowcontrollerwillrun%28_%29.md)
   Notifies the delegate when the workflow controller object is about to run.
 
 

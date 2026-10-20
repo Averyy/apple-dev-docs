@@ -1,7 +1,8 @@
 # maximumConnectableDevices
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum number of unique devices your app can connect to simultaneously.
 
@@ -18,9 +19,10 @@ static var maximumConnectableDevices: Int { get }
 
 ## See Also
 
-- [static var maximumPublishableServices: Int](wacapabilities/maximumpublishableservices.md)
+### Checking for the maximum devices and services
+- [static var maximumPublishableServices: Int](./maximumpublishableservices.md)
   The maximum number of unique services your app can publish simultaneously.
-- [static var maximumSubscribableServices: Int](wacapabilities/maximumsubscribableservices.md)
+- [static var maximumSubscribableServices: Int](./maximumsubscribableservices.md)
   The maximum number of unique services your app can simultaneously subscribe to.
 
 

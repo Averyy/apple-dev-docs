@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 
 # mlx.optimizers.Lion
 
-**
-
-- [.rst](../../../_sources/python/optimizers/_autosummary/mlx.optimizers.Lion.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.optimizers.Lion
-
- Table of contents 
-
-## Contents
-
-# mlx.optimizers.Lion
-
 **class Lion(*learning_rate: float | Callable[[array], array]*, *betas: List[float] = [0.9, 0.99]*, *weight_decay: float = 0.0*)**
 : The Lion optimizer [1].
 Since updates are computed through the sign operation, they tend to
@@ -66,5 +39,3 @@ Performs the Lion parameter update and stores \(m\) in the optimizer state.
 
 `init_single`(parameter, state)
 Initialize optimizer state
-
-** Contents

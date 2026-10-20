@@ -1,7 +1,8 @@
 # kIOUSB30ResetMaximumWithMarginTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The maximum reset timeout with margin.
 
@@ -10,7 +11,7 @@ The maximum reset timeout with margin.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30ResetMaximumWithMarginTimeout = 150
 ```
 

@@ -2,6 +2,7 @@
 
 **Framework**: VisionKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides the view controller that presents the interface objects.
@@ -31,11 +32,18 @@ The default return value is the window’s root view controller.
 
 - `interaction`: The associated interaction object for the presented view.
 
+## Default Implementations
+
+### ImageAnalysisInteractionDelegate Implementations
+- [func presentingViewController(for: ImageAnalysisInteraction) -> UIViewController?](./presentingviewcontroller%28for%29-3gzbq.md)
+  A default implementation that provides the interaction view’s root view controller.
+
 ## See Also
 
-- [func contentView(for: ImageAnalysisInteraction) -> UIView?](imageanalysisinteractiondelegate/contentview(for:).md)
+### Providing interface details
+- [func contentView(for: ImageAnalysisInteraction) -> UIView?](./contentview%28for%29.md)
   Provides the view that contains the image.
-- [func contentsRect(for: ImageAnalysisInteraction) -> CGRect](imageanalysisinteractiondelegate/contentsrect(for:).md)
+- [func contentsRect(for: ImageAnalysisInteraction) -> CGRect](./contentsrect%28for%29.md)
   Returns the rectangle, in unit coordinates, that contains the image within the view.
 
 

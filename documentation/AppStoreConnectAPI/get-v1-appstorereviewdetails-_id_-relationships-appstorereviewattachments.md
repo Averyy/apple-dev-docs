@@ -1,7 +1,8 @@
 # List App Store review attachment IDs for an App Store review detail
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -12,13 +13,29 @@
 
 ## Parameters
 
-- `limit` (integer)
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `limit` (integer): **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`AppStoreReviewDetailAppStoreReviewAttachmentsLinkagesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read app store review attachment information](get-v1-appstorereviewattachments-_id_.md)
+### Reading Attachment Information
+- [Read app store review attachment information](./get-v1-appstorereviewattachments-_id_.md)
   Get information about an App Store review attachment and its upload and processing status.
-- [List all review attachments for an app store review detail](get-v1-appstorereviewdetails-_id_-appstorereviewattachments.md)
+- [List all review attachments for an app store review detail](./get-v1-appstorereviewdetails-_id_-appstorereviewattachments.md)
   List all the App Store review attachments you include with a version when you submit it for App Review.
 
 

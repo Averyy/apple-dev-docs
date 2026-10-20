@@ -1,7 +1,8 @@
 # parent
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that this instance positions and orients relative to in the scene.
 
@@ -19,15 +20,20 @@ The object that this instance positions and orients relative to in the scene.
 weak var parent: PHASEObject? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) PHASEObject * parent;
+```
+
 ## See Also
 
-- [var children: [PHASEObject]](phaseobject/children.md)
+### Managing the Hierarchy
+- [var children: [PHASEObject]](./children.md)
   Objects that position and orient in the scene relative to the given object.
-- [func addChild(PHASEObject) throws](phaseobject/addchild(_:).md)
+- [func addChild(PHASEObject) throws](./addchild%28_%29.md)
   Adds the given object as a child.
-- [func removeChild(PHASEObject)](phaseobject/removechild(_:).md)
+- [func removeChild(PHASEObject)](./removechild%28_%29.md)
   Removes the given object as a child.
-- [func removeChildren()](phaseobject/removechildren.md)
+- [func removeChildren()](./removechildren%28%29.md)
   Removes all child objects from the given object.
 
 

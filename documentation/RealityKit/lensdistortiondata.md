@@ -1,7 +1,8 @@
 # LensDistortionData
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A description of estimated lens distortion that can be used to rectify images.
 
@@ -23,7 +24,7 @@ See also: `AVCameraCalibrationData`
 
 Example of a per-pixel undistort function using this data:
 
-```None
+```
 func undistortPoint(lensDistortionData: LensDistortionData,
                     imageSize: SIMD2<Float>,
                     point: SIMD2<Float>) -> SIMD2<Float> {
@@ -71,29 +72,30 @@ func undistortPoint(lensDistortionData: LensDistortionData,
 ## Topics
 
 ### Initializers
-- [init(center: SIMD2<Float>, radialLookupTable: [Float])](lensdistortiondata/init(center:radiallookuptable:).md)
+- [init(center: SIMD2<Float>, radialLookupTable: [Float])](./lensdistortiondata/init%28center,radiallookuptable%29.md)
   Initializes a new immutable data structure describing lens distortion estimation.
 ### Instance Properties
-- [let center: SIMD2<Float>](lensdistortiondata/center.md)
+- [let center: SIMD2<Float>](./lensdistortiondata/center.md)
   The center pixel of the radial distortion mapping.
-- [let radialLookupTable: [Float]](lensdistortiondata/radiallookuptable.md)
+- [let radialLookupTable: [Float]](./lensdistortiondata/radiallookuptable.md)
   A linear interpolation lookup table from the `center` to the maximum distance corner of the image.  This describes the magnification of radius at a given radius. This is the same structure as `lensDistortionLookupTable` in `AVCameraCalibrationData` and can be used in a similar manner, with the data already converted into a float array.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HoverEffectComponent](hovereffectcomponent.md)
+### Visual adjustments
+- [struct HoverEffectComponent](./hovereffectcomponent.md)
   A component that applies a visual effect to a hierarchy of entities when a person looks at or selects an entity.
-- [struct BillboardComponent](billboardcomponent.md)
+- [struct BillboardComponent](./billboardcomponent.md)
   A component that orients an entity instance so that it continuously points toward the active camera.
-- [struct EnvironmentBlendingComponent](environmentblendingcomponent.md)
+- [struct EnvironmentBlendingComponent](./environmentblendingcomponent.md)
   A component that controls how an entity blends visually with objects in the local environment.
-- [struct ImagePresentationComponent](imagepresentationcomponent.md)
+- [struct ImagePresentationComponent](./imagepresentationcomponent.md)
   A component that supports general image presentation.
 
 

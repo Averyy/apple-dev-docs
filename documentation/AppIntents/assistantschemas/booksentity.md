@@ -1,7 +1,8 @@
 # AssistantSchemas.BooksEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for app entities that describe ebooks or audiobooks.
 
@@ -23,20 +24,20 @@ protocol BooksEntity : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var audiobook: some AssistantSchemas.Entity](assistantschemas/booksentity/audiobook.md)
+- [var audiobook: some AssistantSchemas.Entity](./booksentity/audiobook.md)
   The app entity describes an audiobook.
-- [var book: some AssistantSchemas.Entity](assistantschemas/booksentity/book.md)
+- [var book: some AssistantSchemas.Entity](./booksentity/book.md)
   The app entity describes an ebook.
-- [var settings: some AssistantSchemas.Entity](assistantschemas/booksentity/settings.md)
+- [var settings: some AssistantSchemas.Entity](./booksentity/settings.md)
   The app entity describes settings for an audiobook or ebook.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
-- [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
+- [AssistantSchema.EntitySchema](../assistantschema/entityschema.md)
+- [AssistantSchemas.EntitySchema](./entityschema.md)
 
 
 ---

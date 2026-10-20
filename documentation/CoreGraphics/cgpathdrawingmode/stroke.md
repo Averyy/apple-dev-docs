@@ -1,18 +1,19 @@
 # CGPathDrawingMode.stroke
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Render a line along the path.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ Render a line along the path.
 case stroke
 ```
 
+```c
+kCGPathStroke
+```
+
 ## See Also
 
-- [CGPathDrawingMode.fill](cgpathdrawingmode/fill.md)
+### Constants
+- [CGPathDrawingMode.fill](./fill.md)
   Render the area contained within the path using the non-zero winding number rule.
-- [CGPathDrawingMode.eoFill](cgpathdrawingmode/eofill.md)
+- [CGPathDrawingMode.eoFill](./eofill.md)
   Render the area within the path using the even-odd rule.
-- [CGPathDrawingMode.fillStroke](cgpathdrawingmode/fillstroke.md)
+- [CGPathDrawingMode.fillStroke](./fillstroke.md)
   First fill and then stroke the path, using the nonzero winding number rule.
-- [CGPathDrawingMode.eoFillStroke](cgpathdrawingmode/eofillstroke.md)
+- [CGPathDrawingMode.eoFillStroke](./eofillstroke.md)
   First fill and then stroke the path, using the even-odd rule.
 
 

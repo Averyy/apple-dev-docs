@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Error.userDeclined
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating that the customer declined to share requested information.
 

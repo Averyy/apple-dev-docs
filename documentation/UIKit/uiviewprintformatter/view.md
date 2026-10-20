@@ -1,7 +1,8 @@
 # view
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view from which the view print formatter was derived.
 
@@ -17,9 +18,13 @@ The view from which the view print formatter was derived.
 var view: UIView { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIView * view;
+```
+
 #### Discussion
 
-You obtain a view print formatter by calling [`viewPrintFormatter()`](uiview/viewprintformatter().md) on a [`UIView`](uiview.md) object.
+You obtain a view print formatter by calling [`viewPrintFormatter()`](../uiview/viewprintformatter%28%29.md) on a [`UIView`](../uiview.md) object.
 
 
 ---

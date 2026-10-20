@@ -1,7 +1,8 @@
 # outputFileURL
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL to which output is directed.
 
@@ -18,23 +19,28 @@ The URL to which output is directed.
 var outputFileURL: URL? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSURL * outputFileURL;
+```
+
 ## See Also
 
-- [var delegate: (any AVCaptureFileOutputDelegate)?](avcapturefileoutput/delegate.md)
+### Setting file output properties
+- [var delegate: (any AVCaptureFileOutputDelegate)?](./delegate.md)
   The delegate object for the capture file output.
-- [var maxRecordedDuration: CMTime](avcapturefileoutput/maxrecordedduration.md)
+- [var maxRecordedDuration: CMTime](./maxrecordedduration.md)
   The longest duration allowed for the recording.
-- [var maxRecordedFileSize: Int64](avcapturefileoutput/maxrecordedfilesize.md)
+- [var maxRecordedFileSize: Int64](./maxrecordedfilesize.md)
   The maximum size, in bytes, of the data that should be recorded by the receiver.
-- [var minFreeDiskSpaceLimit: Int64](avcapturefileoutput/minfreediskspacelimit.md)
+- [var minFreeDiskSpaceLimit: Int64](./minfreediskspacelimit.md)
   The minimum amount of free space, in bytes, required for recording to continue on a given volume.
-- [var recordedDuration: CMTime](avcapturefileoutput/recordedduration.md)
+- [var recordedDuration: CMTime](./recordedduration.md)
   Indicates the duration of the media recorded to the current output file.
-- [var recordedFileSize: Int64](avcapturefileoutput/recordedfilesize.md)
+- [var recordedFileSize: Int64](./recordedfilesize.md)
   Indicates the size, in bytes, of the data recorded to the current output file.
-- [var isRecording: Bool](avcapturefileoutput/isrecording.md)
+- [var isRecording: Bool](./isrecording.md)
   Indicates whether recording is in progress.
-- [var isRecordingPaused: Bool](avcapturefileoutput/isrecordingpaused.md)
+- [var isRecordingPaused: Bool](./isrecordingpaused.md)
   Indicates whether recording to the current output file is paused.
 
 

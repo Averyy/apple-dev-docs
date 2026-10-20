@@ -1,7 +1,8 @@
 # colorSpace
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color space of the image.
 
@@ -19,21 +20,26 @@ The color space of the image.
 var colorSpace: CGColorSpace? { get }
 ```
 
+```objc
+@property (atomic, readonly, nullable) CGColorSpaceRef colorSpace;
+```
+
 #### Discussion
 
 This property’s value is `nil` if the image’s color space cannot be determined.
 
 ## See Also
 
-- [var definition: CIFilterShape](ciimage/definition.md)
+### Getting Image Information
+- [var definition: CIFilterShape](./definition.md)
   Returns a filter shape object that represents the domain of definition of the image.
-- [var extent: CGRect](ciimage/extent.md)
+- [var extent: CGRect](./extent.md)
   A rectangle that specifies the extent of the image.
-- [var properties: [String : Any]](ciimage/properties.md)
+- [var properties: [String : Any]](./properties.md)
   Returns the metadata properties dictionary of the image.
-- [var url: URL?](ciimage/url.md)
+- [var url: URL?](./url.md)
   The URL from which the image was loaded.
-- [func orientationTransform(forExifOrientation: Int32) -> CGAffineTransform](ciimage/orientationtransform(forexiforientation:).md)
+- [func orientationTransform(forExifOrientation: Int32) -> CGAffineTransform](./orientationtransform%28forexiforientation%29.md)
   Returns the transformation needed to reorient the image to the specified orientation.
 
 

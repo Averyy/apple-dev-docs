@@ -1,7 +1,8 @@
 # slice(at:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
 
@@ -18,6 +19,8 @@ Returns a sub-view with the same rank as this view by slicing the dimensions at 
 @export(implementation)
 consuming func slice(at ranges: [any NDArray.RangeExpression]) -> NDArray.MutableView<Element>
 ```
+
+Available when `Element` conforms to `BitwiseCopyable`.
 
 #### Discussion
 
@@ -40,7 +43,7 @@ func incrementRegion(
 }
 ```
 
-> **Note**: If you need to avoid `consuming` the view which this is called on, you can use [`mutatingSlice(at:)`](ndarray/mutableview/mutatingslice(at:)-9pmi4.md).
+> **Note**: If you need to avoid `consuming` the view which this is called on, you can use [`mutatingSlice(at:)`](./mutatingslice%28at%29-9pmi4.md).
 
 ## Parameters
 
@@ -48,11 +51,12 @@ func incrementRegion(
 
 ## See Also
 
-- [func slice<let indexRank : Int>(at: [indexRank of any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](ndarray/mutableview/slice(at:)-50cpv.md)
+### Slicing the view
+- [func slice<let indexRank : Int>(at: [indexRank of any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](./slice%28at%29-50cpv.md)
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
-- [func mutatingSlice<let indexRank : Int>(at: [indexRank of any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](ndarray/mutableview/mutatingslice(at:)-30asd.md)
+- [func mutatingSlice<let indexRank : Int>(at: [indexRank of any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](./mutatingslice%28at%29-30asd.md)
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
-- [func mutatingSlice(at: [any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](ndarray/mutableview/mutatingslice(at:)-9pmi4.md)
+- [func mutatingSlice(at: [any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](./mutatingslice%28at%29-9pmi4.md)
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
 
 

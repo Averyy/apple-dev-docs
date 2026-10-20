@@ -1,7 +1,8 @@
 # MPSGraphSparseStorageType.CSR
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 CSR Storage
 
@@ -17,6 +18,10 @@ CSR Storage
 
 ```swift
 case CSR
+```
+
+```c
+MPSGraphSparseStorageCSR
 ```
 
 

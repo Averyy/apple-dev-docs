@@ -1,7 +1,8 @@
 # MTLTextureUsage
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An enumeration for the various options that determine how you can use a texture.
 
@@ -19,9 +20,13 @@ An enumeration for the various options that determine how you can use a texture.
 struct MTLTextureUsage
 ```
 
+```c
+enum MTLTextureUsage : NSUInteger;
+```
+
 ## Mentions
 
-- [Optimizing texture data](optimizing-texture-data.md)
+- [Optimizing texture data](./optimizing-texture-data.md)
 
 #### Overview
 
@@ -31,70 +36,71 @@ Metal can optimize operations for a given texture, based on its intended use. Se
 
 In iOS devices with GPU family 5, Metal doesn’t apply lossless compression to a given texture if you set any of these options:
 
-- [`unknown`](mtltextureusage/unknown.md)
-- [`shaderWrite`](mtltextureusage/shaderwrite.md)
-- [`pixelFormatView`](mtltextureusage/pixelformatview.md)
+- [`unknown`](./mtltextureusage/unknown.md)
+- [`shaderWrite`](./mtltextureusage/shaderwrite.md)
+- [`pixelFormatView`](./mtltextureusage/pixelformatview.md)
 
 ## Topics
 
 ### Specifying texture usage options
-- [static var unknown: MTLTextureUsage](mtltextureusage/unknown.md)
+- [static var unknown: MTLTextureUsage](./mtltextureusage/unknown.md)
   An option for a texture whose usage is unknown.
-- [static var shaderRead: MTLTextureUsage](mtltextureusage/shaderread.md)
+- [static var shaderRead: MTLTextureUsage](./mtltextureusage/shaderread.md)
   An option for reading or sampling from the texture in a shader.
-- [static var shaderWrite: MTLTextureUsage](mtltextureusage/shaderwrite.md)
+- [static var shaderWrite: MTLTextureUsage](./mtltextureusage/shaderwrite.md)
   An option for writing to the texture in a shader.
-- [static var shaderAtomic: MTLTextureUsage](mtltextureusage/shaderatomic.md)
+- [static var shaderAtomic: MTLTextureUsage](./mtltextureusage/shaderatomic.md)
   An option that enables atomic memory operations on texture elements in shader code.
-- [static var renderTarget: MTLTextureUsage](mtltextureusage/rendertarget.md)
+- [static var renderTarget: MTLTextureUsage](./mtltextureusage/rendertarget.md)
   An option for rendering to the texture in a render pass.
-- [static var pixelFormatView: MTLTextureUsage](mtltextureusage/pixelformatview.md)
+- [static var pixelFormatView: MTLTextureUsage](./mtltextureusage/pixelformatview.md)
   An option to create texture views with a different component layout.
 ### Creating texture usage options
-- [init(rawValue: UInt)](mtltextureusage/init(rawvalue:).md)
+- [init(rawValue: UInt)](./mtltextureusage/init%28rawvalue%29.md)
   Creates new, empty usage options.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var textureType: MTLTextureType](mtltexture/texturetype.md)
+### Querying texture attributes
+- [var textureType: MTLTextureType](./mtltexture/texturetype.md)
   The dimension and arrangement of the texture image data.
-- [var pixelFormat: MTLPixelFormat](mtltexture/pixelformat.md)
+- [var pixelFormat: MTLPixelFormat](./mtltexture/pixelformat.md)
   The format of pixels in the texture.
-- [var width: Int](mtltexture/width.md)
+- [var width: Int](./mtltexture/width.md)
   The width of the texture image for the base level mipmap, in pixels.
-- [var height: Int](mtltexture/height.md)
+- [var height: Int](./mtltexture/height.md)
   The height of the texture image for the base level mipmap, in pixels.
-- [var depth: Int](mtltexture/depth.md)
+- [var depth: Int](./mtltexture/depth.md)
   The depth of the texture image for the base level mipmap, in pixels.
-- [var mipmapLevelCount: Int](mtltexture/mipmaplevelcount.md)
+- [var mipmapLevelCount: Int](./mtltexture/mipmaplevelcount.md)
   The number of mipmap levels in the texture.
-- [var arrayLength: Int](mtltexture/arraylength.md)
+- [var arrayLength: Int](./mtltexture/arraylength.md)
   The number of slices in the texture array.
-- [var sampleCount: Int](mtltexture/samplecount.md)
+- [var sampleCount: Int](./mtltexture/samplecount.md)
   The number of samples in each pixel.
-- [var isFramebufferOnly: Bool](mtltexture/isframebufferonly.md)
+- [var isFramebufferOnly: Bool](./mtltexture/isframebufferonly.md)
   A Boolean value that indicates whether the texture can only be used as a render target.
-- [var usage: MTLTextureUsage](mtltexture/usage.md)
+- [var usage: MTLTextureUsage](./mtltexture/usage.md)
   Options that determine how you can use the texture.
-- [var allowGPUOptimizedContents: Bool](mtltexture/allowgpuoptimizedcontents.md)
+- [var allowGPUOptimizedContents: Bool](./mtltexture/allowgpuoptimizedcontents.md)
   A Boolean value indicating whether the GPU is allowed to adjust the contents of the texture to improve GPU performance.
-- [var isShareable: Bool](mtltexture/isshareable.md)
+- [var isShareable: Bool](./mtltexture/isshareable.md)
   A Boolean indicating whether this texture can be shared with other processes.
-- [var swizzle: MTLTextureSwizzleChannels](mtltexture/swizzle.md)
+- [var swizzle: MTLTextureSwizzleChannels](./mtltexture/swizzle.md)
   The pattern that the GPU applies to pixels when you read or sample pixels from the texture.
-- [enum MTLTextureType](mtltexturetype.md)
+- [enum MTLTextureType](./mtltexturetype.md)
   The dimension of each image, including whether multiple images are arranged into an array or a cube.
 
 

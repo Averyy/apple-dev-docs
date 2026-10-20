@@ -1,7 +1,8 @@
 # imageURL
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing an image URL attribute.
 
@@ -22,11 +23,12 @@ let imageURL: AttributeScopes.FoundationAttributes.ImageURLAttribute
 
 ## See Also
 
-- [AttributeScopes.FoundationAttributes.ImageURLAttribute](attributescopes/foundationattributes/imageurlattribute.md)
+### Using URL attributes
+- [AttributeScopes.FoundationAttributes.ImageURLAttribute](./imageurlattribute.md)
   A type for using an image URL as an attribute.
-- [let link: AttributeScopes.FoundationAttributes.LinkAttribute](attributescopes/foundationattributes/link.md)
+- [let link: AttributeScopes.FoundationAttributes.LinkAttribute](./link.md)
   A property for accessing the link attribute.
-- [AttributeScopes.FoundationAttributes.LinkAttribute](attributescopes/foundationattributes/linkattribute.md)
+- [AttributeScopes.FoundationAttributes.LinkAttribute](./linkattribute.md)
   A type for using a link as an attribute.
 
 

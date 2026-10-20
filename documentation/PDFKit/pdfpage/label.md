@@ -1,7 +1,8 @@
 # label
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the label for the page.
 
@@ -19,19 +20,24 @@ Returns the label for the page.
 var label: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * label;
+```
+
 #### Discussion
 
 Typically, the label is “1” for the first page, “2” for the second page, and so on, but nonnumerical labels are also possible (such as “xxi”, “4-1” and so on).
 
 ## See Also
 
-- [var document: PDFDocument?](pdfpage/document.md)
+### Getting Information About a Page
+- [var document: PDFDocument?](./document.md)
   Returns the `PDFDocument` object with which the page is associated.
-- [func bounds(for: PDFDisplayBox) -> CGRect](pdfpage/bounds(for:).md)
+- [func bounds(for: PDFDisplayBox) -> CGRect](./bounds%28for%29.md)
   Returns the bounds for the specified PDF display box.
-- [func setBounds(CGRect, for: PDFDisplayBox)](pdfpage/setbounds(_:for:).md)
+- [func setBounds(CGRect, for: PDFDisplayBox)](./setbounds%28_,for%29.md)
   Sets the bounds for the specified box.
-- [var rotation: Int](pdfpage/rotation.md)
+- [var rotation: Int](./rotation.md)
   Sets the rotation angle for the page in degrees.
 
 

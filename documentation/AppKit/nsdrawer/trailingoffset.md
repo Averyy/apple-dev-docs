@@ -1,12 +1,15 @@
 # trailingOffset
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s trailing offset.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.13
+
+> **Deprecated**: Drawers are deprecated; consider using NSSplitViewController
 
 ## Declaration
 
@@ -14,15 +17,20 @@ The receiver’s trailing offset.
 var trailingOffset: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat trailingOffset;
+```
+
 ## See Also
 
-- [var contentSize: NSSize](nsdrawer/contentsize.md)
+### Managing Drawer Size
+- [var contentSize: NSSize](./contentsize.md)
   The size of the receiver’s content area.
-- [var leadingOffset: CGFloat](nsdrawer/leadingoffset.md)
+- [var leadingOffset: CGFloat](./leadingoffset.md)
   The receiver’s leading offset.
-- [var maxContentSize: NSSize](nsdrawer/maxcontentsize.md)
+- [var maxContentSize: NSSize](./maxcontentsize.md)
   The maximum allowed size of the receiver’s content area.
-- [var minContentSize: NSSize](nsdrawer/mincontentsize.md)
+- [var minContentSize: NSSize](./mincontentsize.md)
   The minimum allowed size of the receiver’s content area.
 
 

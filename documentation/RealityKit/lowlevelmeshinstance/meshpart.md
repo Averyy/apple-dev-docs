@@ -1,7 +1,8 @@
 # meshPart
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mesh part this instance draws.
 
@@ -19,7 +20,8 @@ final var meshPart: LowLevelMeshPart { get }
 
 ## See Also
 
-- [var pipeline: LowLevelRenderPipelineState](lowlevelmeshinstance/pipeline.md)
+### Configuring the geometry and pipeline
+- [var pipeline: LowLevelRenderPipelineState](./pipeline.md)
   The compiled pipeline state used to render this instance.
 
 

@@ -1,7 +1,8 @@
 # systemRecommendedExposureBiasRange
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The system’s recommended exposure bias range for this device format.
 
@@ -23,17 +24,18 @@ var systemRecommendedExposureBiasRange: ClosedRange<Float>? { get }
 
 Use this value to create a slider in your app’s user interface that controls a device’s exposure bias within a system-recommended range. When a recommendation isn’t available, this property returns `nil`.
 
-> **Note**:  The framework uses this value to define the range of an [`AVCaptureSystemExposureBiasSlider`](avcapturesystemexposurebiasslider.md) control.
+> **Note**:  The framework uses this value to define the range of an [`AVCaptureSystemExposureBiasSlider`](../../avcapturesystemexposurebiasslider.md) control.
 
 ## See Also
 
-- [var minISO: Float](avcapturedevice/format/miniso.md)
+### Determining exposure support
+- [var minISO: Float](./miniso.md)
   A floating-point number that indicates the minimum supported exposure ISO value.
-- [var maxISO: Float](avcapturedevice/format/maxiso.md)
+- [var maxISO: Float](./maxiso.md)
   A floating-point number that indicates the maximum supported exposure ISO value.
-- [var minExposureDuration: CMTime](avcapturedevice/format/minexposureduration.md)
+- [var minExposureDuration: CMTime](./minexposureduration.md)
   A time value that indicates the minimum supported exposure duration.
-- [var maxExposureDuration: CMTime](avcapturedevice/format/maxexposureduration.md)
+- [var maxExposureDuration: CMTime](./maxexposureduration.md)
   A time value that indicates the maximum supported exposure duration.
 
 

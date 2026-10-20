@@ -1,7 +1,8 @@
 # MLTensor.ResizeMethod
 
 **Framework**: Core ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A resize algorithm.
 
@@ -23,25 +24,26 @@ enum ResizeMethod
 ## Topics
 
 ### Resize methods
-- [MLTensor.ResizeMethod.bilinear(alignCorners:)](mltensor/resizemethod/bilinear(aligncorners:).md)
+- [MLTensor.ResizeMethod.bilinear(alignCorners:)](./resizemethod/bilinear%28aligncorners%29.md)
   The bilinear interpolation mode where values are computed using bilinear interpolation of 4 neighboring pixels.
-- [MLTensor.ResizeMethod.nearestNeighbor](mltensor/resizemethod/nearestneighbor.md)
+- [MLTensor.ResizeMethod.nearestNeighbor](./resizemethod/nearestneighbor.md)
   The nearest interpolation mode where values are interpolated using the closest neighbor pixel.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func resized(to: (newHeight: Int, newWidth: Int), method: MLTensor.ResizeMethod) -> MLTensor](mltensor/resized(to:method:).md)
+### Resizing the tensor
+- [func resized(to: (newHeight: Int, newWidth: Int), method: MLTensor.ResizeMethod) -> MLTensor](./resized%28to,method%29.md)
   Resize the tensor’s spatial dimensions to size using the specified method.
 
 

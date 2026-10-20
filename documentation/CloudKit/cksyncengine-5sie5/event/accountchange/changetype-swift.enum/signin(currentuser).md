@@ -1,7 +1,8 @@
 # CKSyncEngine.Event.AccountChange.ChangeType.signIn(currentUser:)
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A change indicating a sign-in to an iCloud account.
 
@@ -11,7 +12,7 @@ A change indicating a sign-in to an iCloud account.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ case signIn(currentUser: CKRecord.ID)
 
 #### Discussion
 
-If your app has locally-stored data when [`CKSyncEngine`](cksyncengine-5sie5.md) notifies it about the device signing in to an iCloud account, perform one of the following actions:
+If your app has locally-stored data when [`CKSyncEngine`](../../../../cksyncengine-5sie5.md) notifies it about the device signing in to an iCloud account, perform one of the following actions:
 
 - Keep the local data separate from any remote data
 - Merge the local data with the account’s remote data
@@ -31,9 +32,10 @@ If your app has locally-stored data when [`CKSyncEngine`](cksyncengine-5sie5.md)
 
 ## See Also
 
-- [CKSyncEngine.Event.AccountChange.ChangeType.signOut(previousUser:)](cksyncengine-5sie5/event/accountchange/changetype-swift.enum/signout(previoususer:).md)
+### Account change types
+- [CKSyncEngine.Event.AccountChange.ChangeType.signOut(previousUser:)](./signout%28previoususer%29.md)
   A change indicating a sign-out of an iCloud account.
-- [CKSyncEngine.Event.AccountChange.ChangeType.switchAccounts(previousUser:currentUser:)](cksyncengine-5sie5/event/accountchange/changetype-swift.enum/switchaccounts(previoususer:currentuser:).md)
+- [CKSyncEngine.Event.AccountChange.ChangeType.switchAccounts(previousUser:currentUser:)](./switchaccounts%28previoususer,currentuser%29.md)
   A change indicating a switch between two iCloud accounts.
 
 

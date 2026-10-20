@@ -1,7 +1,8 @@
 # CVAttachmentModePreferenceShouldPropagate
 
 **Framework**: Core Video  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Sets preferred mode for attachment to should propagate
 
@@ -23,25 +24,26 @@ enum CVAttachmentModePreferenceShouldPropagate
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentModePreference](cvattachmentmodepreference.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVAttachmentModePreference](./cvattachmentmodepreference.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CVAttachmentAccess](cvattachmentaccess.md)
+### Attachment system (Swift)
+- [struct CVAttachmentAccess](./cvattachmentaccess.md)
   Provides access to the attachments of a buffer.
-- [struct CVAttachmentContainer](cvattachmentcontainer.md)
+- [struct CVAttachmentContainer](./cvattachmentcontainer.md)
   Provides storage for buffer attachments independent of the buffer lifetime
-- [struct CVAttachmentRawValue](cvattachmentrawvalue.md)
+- [struct CVAttachmentRawValue](./cvattachmentrawvalue.md)
   A lightweight wrapper around raw attachment values.
-- [struct CVAttachmentKeyDefinition](cvattachmentkeydefinition.md)
+- [struct CVAttachmentKeyDefinition](./cvattachmentkeydefinition.md)
   Associates a raw attachment key with a value type and preferred propagation mode.
-- [struct CVAttachmentKeyDefinitionWithDefault](cvattachmentkeydefinitionwithdefault.md)
+- [struct CVAttachmentKeyDefinitionWithDefault](./cvattachmentkeydefinitionwithdefault.md)
   Associates a raw attachment key with a default value and preferred propagation mode.
-- [struct CVAttachmentCompositeKeyDefinition](cvattachmentcompositekeydefinition.md)
+- [struct CVAttachmentCompositeKeyDefinition](./cvattachmentcompositekeydefinition.md)
   Associates a set of raw attachment keys with a value type and preferred propagation mode.
-- [enum CVAttachmentModePreferenceShouldNotPropagate](cvattachmentmodepreferenceshouldnotpropagate.md)
+- [enum CVAttachmentModePreferenceShouldNotPropagate](./cvattachmentmodepreferenceshouldnotpropagate.md)
   Sets preferred mode for attachment to should not propagate
 
 

@@ -1,7 +1,8 @@
 # FMFontFamilyIterator
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,13 +14,19 @@
 struct FMFontFamilyIterator
 ```
 
+```c
+typedef struct FMFontFamilyIterator {
+    ...
+} FMFontFamilyIterator;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](fmfontfamilyiterator/1461711-init.md)
-- [init(reserved: (UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32))](fmfontfamilyiterator/1459715-init.md)
+- [init()](./fmfontfamilyiterator/api-1461711-init.md)
+- [init(reserved: (UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32))](./fmfontfamilyiterator/api-1459715-init.md)
 ### Instance Properties
-- [var reserved: (UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)](fmfontfamilyiterator/1459061-reserved.md)
+- [var reserved: (UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)](./fmfontfamilyiterator/api-1459061-reserved.md)
 
 
 ---

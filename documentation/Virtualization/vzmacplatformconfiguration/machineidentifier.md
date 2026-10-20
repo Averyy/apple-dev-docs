@@ -1,7 +1,8 @@
 # machineIdentifier
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Mac machine identifier.
 
@@ -15,15 +16,20 @@ The Mac machine identifier.
 var machineIdentifier: VZMacMachineIdentifier { get set }
 ```
 
+```objc
+@property (copy) VZMacMachineIdentifier * machineIdentifier;
+```
+
 #### Discussion
 
 This value uniquely identifies an instance of a VM. Running two VMs concurrently with the same identifier results in undefined behavior in the guest operating system.
 
 ## See Also
 
-- [var auxiliaryStorage: VZMacAuxiliaryStorage?](vzmacplatformconfiguration/auxiliarystorage.md)
+### Getting platform properties
+- [var auxiliaryStorage: VZMacAuxiliaryStorage?](./auxiliarystorage.md)
   The Mac auxiliary storage.
-- [var hardwareModel: VZMacHardwareModel](vzmacplatformconfiguration/hardwaremodel.md)
+- [var hardwareModel: VZMacHardwareModel](./hardwaremodel.md)
   The Mac hardware model.
 
 

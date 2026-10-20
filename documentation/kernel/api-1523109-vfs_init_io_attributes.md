@@ -1,7 +1,8 @@
 # vfs_init_io_attributes
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Set I/O attributes on a mountpoint based on device properties.
 
@@ -10,11 +11,11 @@ Set I/O attributes on a mountpoint based on device properties.
 
 ## Declaration
 
-```swift
+```c
 int vfs_init_io_attributes(vnode_t devvp, mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 0 for success, else an error code.
 

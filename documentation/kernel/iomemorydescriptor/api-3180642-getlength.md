@@ -1,7 +1,8 @@
 # GetLength
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns the length of the memory block represented by this object.
 
@@ -11,13 +12,13 @@ Returns the length of the memory block represented by this object.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t GetLength(uint64_t *returnLength);
 ```
 
-#### Return_value
+#### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes). 
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md). 
 
 #### Discussion
 
@@ -29,7 +30,8 @@ This method returns the effective size of the memory block, which might be less 
 
 ## See Also
 
-- [- SetLength](iobuffermemorydescriptor/3180454-setlength.md)
+### Related Documentation
+- [- SetLength](../iobuffermemorydescriptor/api-3180454-setlength.md)
   Changes the length of the memory buffer.
 
 

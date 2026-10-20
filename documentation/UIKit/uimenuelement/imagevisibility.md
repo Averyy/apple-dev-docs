@@ -1,7 +1,8 @@
 # UIMenuElement.ImageVisibility
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Visibility options for a menu element’s image.
 
@@ -18,27 +19,31 @@ Visibility options for a menu element’s image.
 enum ImageVisibility
 ```
 
+```c
+enum UIMenuElementImageVisibility : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UIMenuElement.ImageVisibility.automatic](uimenuelement/imagevisibility/automatic.md)
+- [UIMenuElement.ImageVisibility.automatic](./imagevisibility/automatic.md)
   The element’s image visibility is determined by the platform and context.
-- [UIMenuElement.ImageVisibility.hidden](uimenuelement/imagevisibility/hidden.md)
+- [UIMenuElement.ImageVisibility.hidden](./imagevisibility/hidden.md)
   The element prefers its image to be hidden, even in contexts where images are shown by default.
-- [UIMenuElement.ImageVisibility.visible](uimenuelement/imagevisibility/visible.md)
+- [UIMenuElement.ImageVisibility.visible](./imagevisibility/visible.md)
   The element prefers its image to be visible, even in contexts where images are not shown by default.
 ### Initializers
-- [init?(rawValue: Int)](uimenuelement/imagevisibility/init(rawvalue:).md)
+- [init?(rawValue: Int)](./imagevisibility/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

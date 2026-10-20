@@ -1,7 +1,8 @@
 # isHidden
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this object is hidden from browsing UI.
 

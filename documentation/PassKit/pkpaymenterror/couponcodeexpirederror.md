@@ -1,7 +1,8 @@
 # couponCodeExpiredError
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The error code that indicates an expired coupon.
 
@@ -20,23 +21,24 @@ static var couponCodeExpiredError: PKPaymentError.Code { get }
 
 #### Discussion
 
-Use this error code if the user entered an expired coupon code in the payment sheet. You can use [`paymentCouponCodeExpiredError(localizedDescription:)`](pkpaymentrequest/paymentcouponcodeexpirederror(localizeddescription:).md) to create an expired coupon error object.
+Use this error code if the user entered an expired coupon code in the payment sheet. You can use [`paymentCouponCodeExpiredError(localizedDescription:)`](../pkpaymentrequest/paymentcouponcodeexpirederror%28localizeddescription%29.md) to create an expired coupon error object.
 
 > **Note**:  A coupon code error doesn’t prevent the user from authorizing the payment.
 
 ## See Also
 
-- [static var billingContactInvalidError: PKPaymentError.Code](pkpaymenterror/billingcontactinvaliderror.md)
+### Identifying the error
+- [static var billingContactInvalidError: PKPaymentError.Code](./billingcontactinvaliderror.md)
   The error code to indicate an invalid billing address or billing name.
-- [static var shippingContactInvalidError: PKPaymentError.Code](pkpaymenterror/shippingcontactinvaliderror.md)
+- [static var shippingContactInvalidError: PKPaymentError.Code](./shippingcontactinvaliderror.md)
   The error code to indicate an invalid shipping address, email, phone, or name.
-- [static var shippingAddressUnserviceableError: PKPaymentError.Code](pkpaymenterror/shippingaddressunserviceableerror.md)
+- [static var shippingAddressUnserviceableError: PKPaymentError.Code](./shippingaddressunserviceableerror.md)
   The error code for an unserviceable shipping address.
-- [static var couponCodeInvalidError: PKPaymentError.Code](pkpaymenterror/couponcodeinvaliderror.md)
+- [static var couponCodeInvalidError: PKPaymentError.Code](./couponcodeinvaliderror.md)
   The error code that indicates an invalid coupon.
-- [static var unknownError: PKPaymentError.Code](pkpaymenterror/unknownerror.md)
+- [static var unknownError: PKPaymentError.Code](./unknownerror.md)
   The error code for an unknown error.
-- [PKPaymentError.Code](pkpaymenterror/code.md)
+- [PKPaymentError.Code](./code.md)
   An error code that you provide to indicate problems with address or contact information on an Apple Pay sheet.
 
 

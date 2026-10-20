@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns the GPU device’s support tier for argument buffers.
@@ -20,23 +21,28 @@ Returns the GPU device’s support tier for argument buffers.
 var argumentBuffersSupport: MTLArgumentBuffersTier { get }
 ```
 
+```objc
+@property (readonly) MTLArgumentBuffersTier argumentBuffersSupport;
+```
+
 ## Mentions
 
-- [Improving CPU performance by using argument buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Improving CPU performance by using argument buffers](../improving-cpu-performance-by-using-argument-buffers.md)
 
 ## Topics
 
 ### Argument buffer tiers
-- [enum MTLArgumentBuffersTier](mtlargumentbufferstier.md)
+- [enum MTLArgumentBuffersTier](../mtlargumentbufferstier.md)
   The values that determine the limits and capabilities of argument buffers.
 
 ## See Also
 
-- [var maxArgumentBufferSamplerCount: Int](mtldevice/maxargumentbuffersamplercount.md)
+### Creating argument buffer encoders
+- [var maxArgumentBufferSamplerCount: Int](./maxargumentbuffersamplercount.md)
   The maximum number of unique argument buffer samplers per app.
-- [func makeArgumentEncoder(arguments: [MTLArgumentDescriptor]) -> (any MTLArgumentEncoder)?](mtldevice/makeargumentencoder(arguments:).md)
+- [func makeArgumentEncoder(arguments: [MTLArgumentDescriptor]) -> (any MTLArgumentEncoder)?](./makeargumentencoder%28arguments%29.md)
   Creates a new argument encoder for an array of arguments.
-- [func makeArgumentEncoder(bufferBinding: any MTLBufferBinding) -> any MTLArgumentEncoder](mtldevice/makeargumentencoder(bufferbinding:).md)
+- [func makeArgumentEncoder(bufferBinding: any MTLBufferBinding) -> any MTLArgumentEncoder](./makeargumentencoder%28bufferbinding%29.md)
   Creates a new argument encoder for a buffer binding.
 
 

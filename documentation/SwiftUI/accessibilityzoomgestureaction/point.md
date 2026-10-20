@@ -1,7 +1,8 @@
 # point
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The zoom gesture’s activation point within the window’s coordinate space.
 
@@ -22,7 +23,8 @@ let point: CGPoint
 
 ## See Also
 
-- [let location: UnitPoint](accessibilityzoomgestureaction/location.md)
+### Getting location information
+- [let location: UnitPoint](./location.md)
   The zoom gesture’s activation point, normalized to the accessibility element’s frame.
 
 

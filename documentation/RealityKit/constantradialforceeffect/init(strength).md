@@ -1,7 +1,8 @@
 # init(strength:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a radial force effect with constant magnitude.
 

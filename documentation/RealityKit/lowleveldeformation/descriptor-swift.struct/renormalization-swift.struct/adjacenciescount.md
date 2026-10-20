@@ -1,7 +1,8 @@
 # adjacenciesCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of triangle-adjacency entries across all vertices.
 

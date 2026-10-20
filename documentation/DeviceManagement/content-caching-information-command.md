@@ -1,7 +1,8 @@
 # Content Caching Information
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the status of the content caches on a device.
 
@@ -10,7 +11,7 @@ Get the status of the content caches on a device.
 
 #### Discussion
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -23,9 +24,9 @@ Get the status of the content caches on a device.
 ## Topics
 
 ### Commands and responses
-- [object ContentCachingInformationCommand](contentcachinginformationcommand.md)
+- [object ContentCachingInformationCommand](./contentcachinginformationcommand.md)
   The command to get the status of the content caches on a device.
-- [object ContentCachingInformationResponse](contentcachinginformationresponse.md)
+- [object ContentCachingInformationResponse](./contentcachinginformationresponse.md)
   A response from the device after it processes the command to get the status of the content caches on a device.
 
 ## Endpoint
@@ -34,7 +35,14 @@ Get the status of the content caches on a device.
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `ContentCachingInformationCommand`
+
 The request object the server returns for the Content Caching Information Command.
+
+## Responses
+
+- `200` OK (`ContentCachingInformationResponse`, `application/xml`): The response object the system returns for the Content Caching Information Command.
 
 
 ---

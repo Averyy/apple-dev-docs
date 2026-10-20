@@ -1,12 +1,13 @@
 # exclude10_4ElementsIconCreationOption
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to suppress generation of the new higher resolution icon representations that are supported in macOS 10.4.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ An option to suppress generation of the new higher resolution icon representatio
 static var exclude10_4ElementsIconCreationOption: NSWorkspace.IconCreationOptions { get }
 ```
 
+```c
+NSExclude10_4ElementsIconCreationOption
+```
+
 ## See Also
 
-- [static var excludeQuickDrawElementsIconCreationOption: NSWorkspace.IconCreationOptions](nsworkspace/iconcreationoptions/excludequickdrawelementsiconcreationoption.md)
+### Creation Options
+- [static var excludeQuickDrawElementsIconCreationOption: NSWorkspace.IconCreationOptions](./excludequickdrawelementsiconcreationoption.md)
   An option to suppress generation of the QuickDraw format icon representations that are used in macOS 10.0 through macOS 10.4.
 
 

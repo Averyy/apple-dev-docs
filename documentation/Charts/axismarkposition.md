@@ -1,7 +1,8 @@
 # AxisMarkPosition
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes the position of axis markers.
 
@@ -23,27 +24,28 @@ struct AxisMarkPosition
 ## Topics
 
 ### Type Properties
-- [static var automatic: AxisMarkPosition](axismarkposition/automatic.md)
+- [static var automatic: AxisMarkPosition](./axismarkposition/automatic.md)
   automatically places the title.
-- [static var bottom: AxisMarkPosition](axismarkposition/bottom.md)
+- [static var bottom: AxisMarkPosition](./axismarkposition/bottom.md)
   A markers at the bottom of the chart
-- [static var leading: AxisMarkPosition](axismarkposition/leading.md)
+- [static var leading: AxisMarkPosition](./axismarkposition/leading.md)
   Markers on the leading edge of the chart.
-- [static var top: AxisMarkPosition](axismarkposition/top.md)
+- [static var top: AxisMarkPosition](./axismarkposition/top.md)
   A markers at the top of the chart
-- [static var trailing: AxisMarkPosition](axismarkposition/trailing.md)
+- [static var trailing: AxisMarkPosition](./axismarkposition/trailing.md)
   Markers on the trailing edge of the chart.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
 
 ## See Also
 
-- [struct AxisMarkPreset](axismarkpreset.md)
+### Supporting types
+- [struct AxisMarkPreset](./axismarkpreset.md)
   Describes preset styles for axis markers.
-- [struct AxisMarkValues](axismarkvalues.md)
+- [struct AxisMarkValues](./axismarkvalues.md)
   Describes the values the axis markers will present (one for each value).
 
 

@@ -1,7 +1,8 @@
 # snapshot()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a representation of the current state of the data in the table view.
 
@@ -20,9 +21,10 @@ A snapshot that contains row and item identifiers in the order they appear in th
 
 ## See Also
 
-- [func apply(NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, animatingDifferences: Bool, completion: (() -> Void)?)](nstableviewdiffabledatasource-c5gl/apply(_:animatingdifferences:completion:).md)
+### Updating Data
+- [func apply(NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, animatingDifferences: Bool, completion: (() -> Void)?)](./apply%28_,animatingdifferences,completion%29.md)
   Updates the UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes and executing a completion handler.
-- [var defaultRowAnimation: NSTableView.AnimationOptions](nstableviewdiffabledatasource-c5gl/defaultrowanimation.md)
+- [var defaultRowAnimation: NSTableView.AnimationOptions](./defaultrowanimation.md)
   The default animation the UI uses to show differences between rows.
 
 

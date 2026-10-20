@@ -1,7 +1,8 @@
 # UCTypeSelectReleaseSelector(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func UCTypeSelectReleaseSelector(_ ref: UnsafeMutablePointer<UCTypeSelectRef?>!) -> OSStatus
+```
+
+```c
+OSStatus UCTypeSelectReleaseSelector(UCTypeSelectRef *ref);
 ```
 
 

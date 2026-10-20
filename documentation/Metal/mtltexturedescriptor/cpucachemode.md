@@ -1,7 +1,8 @@
 # cpuCacheMode
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The CPU cache mode used for the CPU mapping of the texture.
 
@@ -19,41 +20,46 @@ The CPU cache mode used for the CPU mapping of the texture.
 var cpuCacheMode: MTLCPUCacheMode { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLCPUCacheMode cpuCacheMode;
+```
+
 #### Discussion
 
-The default value is [`MTLCPUCacheMode.defaultCache`](mtlcpucachemode/defaultcache.md).
+The default value is [`MTLCPUCacheMode.defaultCache`](../mtlcpucachemode/defaultcache.md).
 
 ## See Also
 
-- [var textureType: MTLTextureType](mtltexturedescriptor/texturetype.md)
+### Specifying texture attributes
+- [var textureType: MTLTextureType](./texturetype.md)
   The dimension and arrangement of texture image data.
-- [var pixelFormat: MTLPixelFormat](mtltexturedescriptor/pixelformat.md)
+- [var pixelFormat: MTLPixelFormat](./pixelformat.md)
   The size and bit layout of all pixels in the texture.
-- [var width: Int](mtltexturedescriptor/width.md)
+- [var width: Int](./width.md)
   The width of the texture image for the base level mipmap, in pixels.
-- [var height: Int](mtltexturedescriptor/height.md)
+- [var height: Int](./height.md)
   The height of the texture image for the base level mipmap, in pixels.
-- [var depth: Int](mtltexturedescriptor/depth.md)
+- [var depth: Int](./depth.md)
   The depth of the texture image for the base level mipmap, in pixels.
-- [var mipmapLevelCount: Int](mtltexturedescriptor/mipmaplevelcount.md)
+- [var mipmapLevelCount: Int](./mipmaplevelcount.md)
   The number of mipmap levels for this texture.
-- [var sampleCount: Int](mtltexturedescriptor/samplecount.md)
+- [var sampleCount: Int](./samplecount.md)
   The number of samples in each fragment.
-- [var arrayLength: Int](mtltexturedescriptor/arraylength.md)
+- [var arrayLength: Int](./arraylength.md)
   The number of array elements for this texture.
-- [var resourceOptions: MTLResourceOptions](mtltexturedescriptor/resourceoptions.md)
+- [var resourceOptions: MTLResourceOptions](./resourceoptions.md)
   The behavior of a new memory allocation.
-- [var storageMode: MTLStorageMode](mtltexturedescriptor/storagemode.md)
+- [var storageMode: MTLStorageMode](./storagemode.md)
   The location and access permissions of the texture.
-- [var hazardTrackingMode: MTLHazardTrackingMode](mtltexturedescriptor/hazardtrackingmode.md)
+- [var hazardTrackingMode: MTLHazardTrackingMode](./hazardtrackingmode.md)
   The texture’s hazard tracking mode.
-- [var allowGPUOptimizedContents: Bool](mtltexturedescriptor/allowgpuoptimizedcontents.md)
+- [var allowGPUOptimizedContents: Bool](./allowgpuoptimizedcontents.md)
   A Boolean value indicating whether the GPU is allowed to adjust the texture’s contents to improve GPU performance.
-- [var usage: MTLTextureUsage](mtltexturedescriptor/usage.md)
+- [var usage: MTLTextureUsage](./usage.md)
   Options that determine how you can use the texture.
-- [var swizzle: MTLTextureSwizzleChannels](mtltexturedescriptor/swizzle.md)
+- [var swizzle: MTLTextureSwizzleChannels](./swizzle.md)
   The pattern you want the GPU to apply to pixels when you read or sample pixels from the texture.
-- [struct MTLTextureSwizzleChannels](mtltextureswizzlechannels.md)
+- [struct MTLTextureSwizzleChannels](../mtltextureswizzlechannels.md)
   A pattern that modifies the data read or sampled from a texture by rearranging or duplicating the elements of a vector.
 
 

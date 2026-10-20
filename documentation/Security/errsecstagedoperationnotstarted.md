@@ -1,7 +1,8 @@
 # errSecStagedOperationNotStarted
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A staged operation was not started.
 
@@ -18,6 +19,10 @@ A staged operation was not started.
 
 ```swift
 var errSecStagedOperationNotStarted: OSStatus { get }
+```
+
+```c
+errSecStagedOperationNotStarted
 ```
 
 

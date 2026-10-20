@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.titlecaseLetter
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A digraph character whose first part is uppercase.
 
@@ -22,7 +23,7 @@ case titlecaseLetter
 
 #### Discussion
 
-This value corresponds to the category `Titlecase_Letter` (abbreviated `Lt`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Titlecase_Letter` (abbreviated `Lt`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

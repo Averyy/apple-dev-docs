@@ -1,7 +1,8 @@
 # HTTPCookie
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of an HTTP cookie.
 
@@ -20,82 +21,87 @@ A representation of an HTTP cookie.
 class HTTPCookie
 ```
 
+```objc
+@interface NSHTTPCookie : NSObject
+```
+
 #### Overview
 
-An [`HTTPCookie`](httpcookie.md) object is immutable, initialized from a dictionary that contains the attributes of the cookie. This class supports two different cookie versions:
+An [`HTTPCookie`](./httpcookie.md) object is immutable, initialized from a dictionary that contains the attributes of the cookie. This class supports two different cookie versions:
 
 - Version 0: The original cookie format defined by Netscape. Most cookies are in this format.
-- Version 1: The cookie format defined in [`RFC 6265`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6265), HTTP State Management Mechanism.
+- Version 1: The cookie format defined in [RFC 6265](https://tools.ietf.org/html/rfc6265), HTTP State Management Mechanism.
 
 ## Topics
 
 ### Creating cookies
-- [class func cookies(withResponseHeaderFields: [String : String], for: URL) -> [HTTPCookie]](httpcookie/cookies(withresponseheaderfields:for:).md)
+- [class func cookies(withResponseHeaderFields: [String : String], for: URL) -> [HTTPCookie]](./httpcookie/cookies%28withresponseheaderfields,for%29.md)
   Creates an array of HTTP cookies that corresponds to the provided response header fields for the provided URL.
-- [init?(properties: [HTTPCookiePropertyKey : Any])](httpcookie/init(properties:).md)
+- [init?(properties: [HTTPCookiePropertyKey : Any])](./httpcookie/init%28properties%29.md)
   Initializes an HTTP cookie object with the given cookie properties.
 ### Converting cookies to request headers
-- [class func requestHeaderFields(with: [HTTPCookie]) -> [String : String]](httpcookie/requestheaderfields(with:).md)
+- [class func requestHeaderFields(with: [HTTPCookie]) -> [String : String]](./httpcookie/requestheaderfields%28with%29.md)
   Converts an array of cookies to a dictionary of header fields.
 ### Getting cookie host properties
-- [var domain: String](httpcookie/domain.md)
+- [var domain: String](./httpcookie/domain.md)
   The domain of the cookie.
-- [var path: String](httpcookie/path.md)
+- [var path: String](./httpcookie/path.md)
   The cookie’s path.
-- [var portList: [NSNumber]?](httpcookie/portlist.md)
+- [var portList: [NSNumber]?](./httpcookie/portlist.md)
   The cookie’s port list.
 ### Getting cookie metadata
-- [var name: String](httpcookie/name.md)
+- [var name: String](./httpcookie/name.md)
   The cookie’s name.
-- [var value: String](httpcookie/value.md)
+- [var value: String](./httpcookie/value.md)
   The cookie’s string value.
-- [var version: Int](httpcookie/version.md)
+- [var version: Int](./httpcookie/version.md)
   The cookie’s version.
 ### Determining cookie lifespan
-- [var expiresDate: Date?](httpcookie/expiresdate.md)
+- [var expiresDate: Date?](./httpcookie/expiresdate.md)
   The cookie’s expiration date.
-- [var isSessionOnly: Bool](httpcookie/issessiononly.md)
+- [var isSessionOnly: Bool](./httpcookie/issessiononly.md)
   A Boolean value that indicates whether the cookie should be discarded at the end of the session (regardless of expiration date).
 ### Securing cookies
-- [var isHTTPOnly: Bool](httpcookie/ishttponly.md)
+- [var isHTTPOnly: Bool](./httpcookie/ishttponly.md)
   A Boolean value that indicates whether the cookie should only be sent to HTTP servers.
-- [var isSecure: Bool](httpcookie/issecure.md)
+- [var isSecure: Bool](./httpcookie/issecure.md)
   A Boolean value that indicates whether the cookie may only be sent over secure channels.
-- [var sameSitePolicy: HTTPCookieStringPolicy?](httpcookie/samesitepolicy.md)
+- [var sameSitePolicy: HTTPCookieStringPolicy?](./httpcookie/samesitepolicy.md)
   A Boolean value that indicates whether to restrict the cookie to requests sent back to the same site that created it.
-- [struct HTTPCookieStringPolicy](httpcookiestringpolicy.md)
+- [struct HTTPCookieStringPolicy](./httpcookiestringpolicy.md)
   Values that indicate whether to restrict the cookie to requests sent back to the same site that created it.
 ### Accessing cookie properties as key-value pairs
-- [var properties: [HTTPCookiePropertyKey : Any]?](httpcookie/properties.md)
+- [var properties: [HTTPCookiePropertyKey : Any]?](./httpcookie/properties.md)
   The cookie’s properties.
-- [struct HTTPCookiePropertyKey](httpcookiepropertykey.md)
+- [struct HTTPCookiePropertyKey](./httpcookiepropertykey.md)
   Constants that define the supported keys in a cookie attributes dictionary.
 ### Getting user-readable cookie metadata
-- [var comment: String?](httpcookie/comment.md)
+- [var comment: String?](./httpcookie/comment.md)
   The cookie’s comment string.
-- [var commentURL: URL?](httpcookie/commenturl.md)
+- [var commentURL: URL?](./httpcookie/commenturl.md)
   The cookie’s comment URL.
 ### Accepting cookies
-- [HTTPCookie.AcceptPolicy](httpcookie/acceptpolicy.md)
-  Cookie acceptance policies implemented by the [`HTTPCookieStorage`](httpcookiestorage.md) class.
+- [HTTPCookie.AcceptPolicy](./httpcookie/acceptpolicy.md)
+  Cookie acceptance policies implemented by the [`HTTPCookieStorage`](./httpcookiestorage.md) class.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HTTPCookieStorage](httpcookiestorage.md)
+### Cookies
+- [class HTTPCookieStorage](./httpcookiestorage.md)
   A container that manages the storage of cookies.
 
 

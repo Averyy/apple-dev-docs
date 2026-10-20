@@ -1,7 +1,8 @@
 # WebPage.NavigationEvent.finished
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This event occurs once the navigation is complete.
 

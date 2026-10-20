@@ -1,17 +1,24 @@
 # draw(in:pixelFormat:forLayerTime:displayTime:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the OpenGL content for the specified time.
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.14
+
+> **Deprecated**: Please use CAMetalLayer instead.
 
 ## Declaration
 
 ```swift
 func draw(in context: NSOpenGLContext, pixelFormat: NSOpenGLPixelFormat, forLayerTime t: CFTimeInterval, displayTime ts: UnsafePointer<CVTimeStamp>)
+```
+
+```objc
+- (void) drawInOpenGLContext:(NSOpenGLContext *) context pixelFormat:(NSOpenGLPixelFormat *) pixelFormat forLayerTime:(CFTimeInterval) t displayTime:(const CVTimeStamp *) ts;
 ```
 
 #### Discussion
@@ -27,7 +34,8 @@ This method is called when a new frame needs to be generated for the layer time 
 
 ## See Also
 
-- [func canDraw(in: NSOpenGLContext, pixelFormat: NSOpenGLPixelFormat, forLayerTime: CFTimeInterval, displayTime: UnsafePointer<CVTimeStamp>) -> Bool](nsopengllayer/candraw(in:pixelformat:forlayertime:displaytime:).md)
+### Drawing the Content
+- [func canDraw(in: NSOpenGLContext, pixelFormat: NSOpenGLPixelFormat, forLayerTime: CFTimeInterval, displayTime: UnsafePointer<CVTimeStamp>) -> Bool](./candraw%28in,pixelformat,forlayertime,displaytime%29.md)
   Invoked to ask the layer whether it can (or should) draw.
 
 

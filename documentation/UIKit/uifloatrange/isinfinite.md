@@ -1,7 +1,8 @@
 # isInfinite
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean indicating whether the specified float range is infinitely large.
 
@@ -18,9 +19,14 @@ Returns a Boolean indicating whether the specified float range is infinitely lar
 var isInfinite: Bool { get }
 ```
 
+```c
+extern BOOL UIFloatRangeIsInfinite(UIFloatRange range);
+```
+
 ## See Also
 
-- [func UIFloatRangeIsEqualToRange(UIFloatRange, UIFloatRange) -> Bool](uifloatrangeisequaltorange(_:_:).md)
+### Testing the range values
+- [func UIFloatRangeIsEqualToRange(UIFloatRange, UIFloatRange) -> Bool](../uifloatrangeisequaltorange%28_,_%29.md)
   Returns a Boolean indicating whether two float ranges are equivalent.
 
 

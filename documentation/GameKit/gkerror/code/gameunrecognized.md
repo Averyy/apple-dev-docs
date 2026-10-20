@@ -1,7 +1,8 @@
 # GKError.Code.gameUnrecognized
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system can’t complete the requested operation because Game Center doesn’t recognize the app.
 
@@ -20,15 +21,20 @@ The system can’t complete the requested operation because Game Center doesn’
 case gameUnrecognized
 ```
 
+```c
+GKErrorGameUnrecognized
+```
+
 #### Discussion
 
 Ensure the app’s `bundleID` is correct.
 
 ## See Also
 
-- [GKError.Code.notSupported](gkerror/code/notsupported.md)
+### Configuration Errors
+- [GKError.Code.notSupported](./notsupported.md)
   The app doesn’t have Game Center enabled.
-- [GKError.Code.appUnlisted](gkerror/code/appunlisted.md)
+- [GKError.Code.appUnlisted](./appunlisted.md)
   The system can’t complete the requested operation because the game isn’t available on the App Store.
 
 

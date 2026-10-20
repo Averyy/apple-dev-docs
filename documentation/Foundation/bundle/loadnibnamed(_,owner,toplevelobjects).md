@@ -1,7 +1,8 @@
 # loadNibNamed(_:owner:topLevelObjects:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads a nib from the bundle with the specified file name and owner.
 
@@ -14,9 +15,13 @@ Loads a nib from the bundle with the specified file name and owner.
 func loadNibNamed(_ nibName: NSNib.Name, owner: Any?, topLevelObjects: AutoreleasingUnsafeMutablePointer<NSArray?>?) -> Bool
 ```
 
+```objc
+- (BOOL) loadNibNamed:(NSNibName) nibName owner:(id) owner topLevelObjects:(NSArray **) topLevelObjects;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the nib file was loaded successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the nib file was loaded successfully; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -24,7 +29,7 @@ Unlike legacy methods, the objects adhere to the standard cocoa memory managemen
 
 Outlets to top-level objects should be strong references to demonstrate ownership and prevent deallocation.
 
-For more information on Nibs, see [`NSNib`](https://developer.apple.com/documentation/appkit/nsnib).
+For more information on Nibs, see [`NSNib`](../../AppKit/nsnib.md).
 
 ## Parameters
 
@@ -34,7 +39,8 @@ For more information on Nibs, see [`NSNib`](https://developer.apple.com/document
 
 ## See Also
 
-- [func loadNibNamed(String, owner: Any?, options: [UINib.OptionsKey : Any]?) -> [Any]?](bundle/loadnibnamed(_:owner:options:).md)
+### Loading nib files
+- [func loadNibNamed(String, owner: Any?, options: [UINib.OptionsKey : Any]?) -> [Any]?](./loadnibnamed%28_,owner,options%29.md)
   Unarchives the contents of a nib file located in the receiver’s bundle.
 
 

@@ -1,7 +1,8 @@
 # RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Intersection.ANY restriction name
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that contains intersected restriction parameters.
 
@@ -15,7 +16,7 @@ A dictionary that contains intersected restriction parameters.
 
 ## Declaration
 
-```swift
+```
 object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Intersection.ANY restriction name
 ```
 

@@ -1,7 +1,8 @@
 # init(stage:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Metal-enabled player for the given USD stage.
 
@@ -21,7 +22,8 @@ convenience init(stage: USDStage)
 
 ## See Also
 
-- [convenience init(stage: USDStage, gpuFamily: MTLGPUFamily)](usdplayer/init(stage:gpufamily:).md)
+### Creating a player
+- [convenience init(stage: USDStage, gpuFamily: MTLGPUFamily)](./init%28stage,gpufamily%29.md)
   Creates a Metal-less player for the given USD stage.
 
 

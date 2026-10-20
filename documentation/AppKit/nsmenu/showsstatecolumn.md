@@ -1,7 +1,8 @@
 # showsStateColumn
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the menu displays the state column.
 
@@ -14,9 +15,13 @@ Indicates whether the menu displays the state column.
 var showsStateColumn: Bool { get set }
 ```
 
+```objc
+@property BOOL showsStateColumn;
+```
+
 #### Discussion
 
-This property contains a Boolean value indicating whether the menu displays the state column. The default value for this property is [`true`](https://developer.apple.com/documentation/swift/true).
+This property contains a Boolean value indicating whether the menu displays the state column. The default value for this property is [`true`](../../Swift/true.md).
 
 
 ---

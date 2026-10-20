@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset from the significant event that this event fires at.
 
@@ -19,13 +20,18 @@ The offset from the significant event that this event fires at.
 var offset: DateComponents { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite) NSDateComponents * offset;
+```
+
 #### Discussion
 
-To specify that this event should fire before the significant event, supply a date components object with negative values. For example, to specify 30 minutes before sunset, the [`minute`](https://developer.apple.com/documentation/foundation/datecomponents/minute) property of the value of the [`offset`](hmmutablesignificanttimeevent/offset.md) property must be set to `-30`.
+To specify that this event should fire before the significant event, supply a date components object with negative values. For example, to specify 30 minutes before sunset, the [`minute`](../../Foundation/datecomponents/minute.md) property of the value of the [`offset`](./offset.md) property must be set to `-30`.
 
 ## See Also
 
-- [var significantEvent: HMSignificantEvent](hmmutablesignificanttimeevent/significantevent.md)
+### Configuring a significant time event
+- [var significantEvent: HMSignificantEvent](./significantevent.md)
   The significant time-based event that is used to calculate when the event fires.
 
 

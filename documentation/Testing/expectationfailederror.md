@@ -1,18 +1,19 @@
 # ExpectationFailedError
 
 **Framework**: Swift Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type describing an error thrown when an expectation fails during evaluation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -29,19 +30,20 @@ The testing library throws instances of this type when the `#require()` macro re
 ## Topics
 
 ### Instance Properties
-- [var expectation: Expectation](expectationfailederror/expectation.md)
+- [var expectation: Expectation](./expectationfailederror/expectation.md)
   The expectation that failed.
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../Swift/error.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Expectation](expectation.md)
+### Retrieving information about checked expectations
+- [struct Expectation](./expectation.md)
   A type describing an expectation that has been evaluated.
 
 

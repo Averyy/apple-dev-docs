@@ -1,31 +1,33 @@
 # Styling Attributed Strings
 
-**Framework**: Core Text
+**Framework**: Core Text  
+**Role**: API Collection
 
 Attributes to which Core Text responds when placed in a `CFAttributedString` object.
 
 #### Overview
 
-This reference document describes the attributes to which Core Text responds when the attributes are placed in a [`CFAttributedString`](https://developer.apple.com/documentation/corefoundation/cfattributedstring) object.
+This reference document describes the attributes to which Core Text responds when the attributes are placed in a [`CFAttributedString`](../CoreFoundation/cfattributedstring.md) object.
 
 ## Topics
 
 ### Constants
-- [String Attribute Name Constants](string-attribute-name-constants.md)
+- [String Attribute Name Constants](./string-attribute-name-constants.md)
   These constants represent string attribute names.
-- [struct CTUnderlineStyle](ctunderlinestyle.md)
+- [struct CTUnderlineStyle](./ctunderlinestyle.md)
   Underline style specifiers.
-- [struct CTUnderlineStyleModifiers](ctunderlinestylemodifiers.md)
+- [struct CTUnderlineStyleModifiers](./ctunderlinestylemodifiers.md)
   Underline style modifiers.
 
 ## See Also
 
-- [Core Text Structures](core-text-structures.md)
-- [Core Text Enumerations](core-text-enumerations.md)
-- [Core Text Constants](core-text-constants.md)
-- [Core Text Functions](core-text-functions.md)
-- [Core Text Data Types](core-text-data-types.md)
-- [SFNT Support](sfnt-support.md)
+### Reference
+- [Core Text Structures](./core-text-structures.md)
+- [Core Text Enumerations](./core-text-enumerations.md)
+- [Core Text Constants](./core-text-constants.md)
+- [Core Text Functions](./core-text-functions.md)
+- [Core Text Data Types](./core-text-data-types.md)
+- [SFNT Support](./sfnt-support.md)
 
 
 ---

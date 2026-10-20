@@ -1,7 +1,8 @@
 # none
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An arrangement where the system places spatial Personas based on your app’s content.
 
@@ -20,11 +21,12 @@ With this option, the system examines your app’s content to determine the best
 
 ## See Also
 
-- [static let sideBySide: SpatialTemplatePreference](spatialtemplatepreference/sidebyside.md)
+### Getting the spatial position preferences
+- [static let sideBySide: SpatialTemplatePreference](./sidebyside.md)
   An arrangement where the participants sit in a line with the content in front of them.
-- [static let conversational: SpatialTemplatePreference](spatialtemplatepreference/conversational.md)
+- [static let conversational: SpatialTemplatePreference](./conversational.md)
   An arrangement where the participants can see one another and the app’s content.
-- [static func custom(any SpatialTemplate) -> SpatialTemplatePreference](spatialtemplatepreference/custom(_:).md)
+- [static func custom(any SpatialTemplate) -> SpatialTemplatePreference](./custom%28_%29.md)
   Creates a template preference with the given custom spatial template.
 
 

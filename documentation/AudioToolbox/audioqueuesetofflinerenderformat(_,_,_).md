@@ -1,7 +1,8 @@
 # AudioQueueSetOfflineRenderFormat(_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the rendering mode and audio format for a playback audio queue.
 
@@ -19,6 +20,10 @@ Sets the rendering mode and audio format for a playback audio queue.
 func AudioQueueSetOfflineRenderFormat(_ inAQ: AudioQueueRef, _ inFormat: UnsafePointer<AudioStreamBasicDescription>?, _ inLayout: UnsafePointer<AudioChannelLayout>?) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioQueueSetOfflineRenderFormat(AudioQueueRef inAQ, const AudioStreamBasicDescription *inFormat, const AudioChannelLayout *inLayout);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
@@ -32,12 +37,17 @@ You can also use this function to restore an audio queue to normal rendering mod
 ## Parameters
 
 - `inAQ`: The playback audio queue whose rendering mode and audio format you want to set.
-- `inFormat`: The audio format for offline rendering. The format must be some sort of linear PCM. If the format has more than one channel, it must be interleaved. For more information on the [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) structure, see [`Core Audio Data Types`](https://developer.apple.com/documentation/coreaudio/core-audio-data-types). Pass `NULL` to disable offline rendering and return the audio queue to normal output to an audio device.
-- `inLayout`: The channel layout for offline rendering.  For more information on the [`AudioChannelLayout`](https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout) structure, see [`Core Audio Data Types`](https://developer.apple.com/documentation/coreaudio/core-audio-data-types). Pass `NULL` when using this function to disable offline rendering.
+- `inFormat`: The audio format for offline rendering. The format must be some sort of linear PCM. If the format has more than one channel, it must be interleaved. For more information on the [`AudioStreamBasicDescription`](../CoreAudioTypes/audiostreambasicdescription.md) structure, see [Core Audio Data Types](../CoreAudio/core-audio-data-types.md).
+
+  Pass `NULL` to disable offline rendering and return the audio queue to normal output to an audio device.
+- `inLayout`: The channel layout for offline rendering.  For more information on the [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md) structure, see [Core Audio Data Types](../CoreAudio/core-audio-data-types.md).
+
+  Pass `NULL` when using this function to disable offline rendering.
 
 ## See Also
 
-- [func AudioQueueOfflineRender(AudioQueueRef, UnsafePointer<AudioTimeStamp>, AudioQueueBufferRef, UInt32) -> OSStatus](audioqueueofflinerender(_:_:_:_:).md)
+### Performing Offline Rendering
+- [func AudioQueueOfflineRender(AudioQueueRef, UnsafePointer<AudioTimeStamp>, AudioQueueBufferRef, UInt32) -> OSStatus](./audioqueueofflinerender%28_,_,_,_%29.md)
   Exports audio to a buffer, instead of to a device, using a playback audio queue.
 
 

@@ -1,7 +1,8 @@
 # SubscriptionLocalizationV2UpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a SubscriptionLocalizationV2UpdateRequest resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a SubscriptionLocalizationV2UpdateRequest resource.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionLocalizationV2UpdateRequest.Data.Attributes
 ```
 

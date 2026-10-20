@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The singleton instance of the external sync source device discovery session.
 
@@ -18,13 +19,18 @@ The singleton instance of the external sync source device discovery session.
 class var shared: AVExternalSyncDevice.DiscoverySession? { get }
 ```
 
+```objc
+@property (class, readonly, nullable) AVExternalSyncDeviceDiscoverySession * sharedSession;
+```
+
 #### Discussion
 
 Access the one and only external sync device discovery session on this host device using this method. `sharedSession` returns `nil` if the host device doesn’t support external sync devices.
 
 ## See Also
 
-- [class var isSupported: Bool](avexternalsyncdevice/discoverysession/issupported.md)
+### Accessing the shared instance
+- [class var isSupported: Bool](./issupported.md)
   Whether external sync devices are supported by this device.
 
 

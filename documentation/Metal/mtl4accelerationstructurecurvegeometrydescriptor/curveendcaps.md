@@ -1,7 +1,8 @@
 # curveEndCaps
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the type of curve end caps.
 
@@ -17,6 +18,10 @@ Sets the type of curve end caps.
 
 ```swift
 var curveEndCaps: MTLCurveEndCaps { get set }
+```
+
+```objc
+@property (nonatomic) MTLCurveEndCaps curveEndCaps;
 ```
 
 #### Discussion

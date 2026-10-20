@@ -1,7 +1,8 @@
 # addAccessoryView(to:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds `IKSaveOptions` accessory view to a `NSSavePanel`.
 
@@ -14,13 +15,18 @@ Adds `IKSaveOptions` accessory view to a `NSSavePanel`.
 func addAccessoryView(to savePanel: NSSavePanel!)
 ```
 
+```objc
+- (void) addSaveOptionsAccessoryViewToSavePanel:(NSSavePanel *) savePanel;
+```
+
 ## Parameters
 
 - `savePanel`: The save panel to add the `IKSaveOptions` to.
 
 ## See Also
 
-- [init!(imageProperties: [AnyHashable : Any]!, imageUTType: String!)](iksaveoptions/init(imageproperties:imageuttype:).md)
+### Creating A Save Options Accessory View
+- [init!(imageProperties: [AnyHashable : Any]!, imageUTType: String!)](./init%28imageproperties,imageuttype%29.md)
   Initializes a save options accessory pane for the provided image properties and uniform type identifier.
 
 

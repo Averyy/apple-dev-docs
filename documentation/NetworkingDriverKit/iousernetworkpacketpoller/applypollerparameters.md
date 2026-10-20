@@ -1,14 +1,15 @@
 # applyPollerParameters
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 IOReturn applyPollerParameters(const _IOUserNetworkPacketPollerParameters *params);
 ```
 

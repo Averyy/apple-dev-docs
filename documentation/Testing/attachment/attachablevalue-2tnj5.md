@@ -1,7 +1,8 @@
 # attachableValue
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of this attachment.
 
@@ -14,6 +15,8 @@ The value of this attachment.
 ```swift
 var attachableValue: AttachableValue { get }
 ```
+
+Available when `AttachableValue` conforms to `Attachable`.
 
 
 ---

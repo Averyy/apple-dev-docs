@@ -1,7 +1,8 @@
 # makeIterator()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an iterator over the elements of this sequence.
 
@@ -19,6 +20,8 @@ Returns an iterator over the elements of this sequence.
 ```swift
 func makeIterator() -> Zip2Sequence<Sequence1, Sequence2>.Iterator
 ```
+
+Available when `Sequence1` conforms to `Sequence` and `Sequence2` conforms to `Sequence`.
 
 
 ---

@@ -1,7 +1,8 @@
 # presentationCompactAdaptation(horizontal:vertical:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies how to adapt a presentation to horizontally and vertically compact size classes.
 
@@ -43,7 +44,7 @@ struct ContentView: View {
 }
 ```
 
-If you want to specify the same adaptation for both dimensions, use the [`presentationCompactAdaptation(_:)`](view/presentationcompactadaptation(_:).md) method instead.
+If you want to specify the same adaptation for both dimensions, use the [`presentationCompactAdaptation(_:)`](./presentationcompactadaptation%28_%29.md) method instead.
 
 ## Parameters
 
@@ -52,17 +53,18 @@ If you want to specify the same adaptation for both dimensions, use the [`presen
 
 ## See Also
 
-- [func presentationCompactAdaptation(PresentationAdaptation) -> some View](view/presentationcompactadaptation(_:).md)
+### Adapting a presentation size
+- [func presentationCompactAdaptation(PresentationAdaptation) -> some View](./presentationcompactadaptation%28_%29.md)
   Specifies how to adapt a presentation to compact size classes.
-- [struct PresentationAdaptation](presentationadaptation.md)
+- [struct PresentationAdaptation](../presentationadaptation.md)
   Strategies for adapting a presentation to a different size class.
-- [func presentationSizing(some PresentationSizing) -> some View](view/presentationsizing(_:).md)
+- [func presentationSizing(some PresentationSizing) -> some View](./presentationsizing%28_%29.md)
   Sets the sizing of the containing presentation.
-- [protocol PresentationSizing](presentationsizing.md)
+- [protocol PresentationSizing](../presentationsizing.md)
   A type that defines the size of the presentation content and how the presentation size adjusts to its content’s size changing.
-- [struct PresentationSizingRoot](presentationsizingroot.md)
+- [struct PresentationSizingRoot](../presentationsizingroot.md)
   A proxy to a view provided to the presentation with a defined presentation size.
-- [struct PresentationSizingContext](presentationsizingcontext.md)
+- [struct PresentationSizingContext](../presentationsizingcontext.md)
   Contextual information about a presentation.
 
 

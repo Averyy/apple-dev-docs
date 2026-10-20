@@ -1,31 +1,33 @@
 # reset
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets the USB device.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void reset();
 ```
 
 ## See Also
 
-- [setProtocol](iouserusbhosthiddevice/setprotocol.md)
+### Configuring the Device
+- [setProtocol](./setprotocol.md)
   Sets the active protocol to use for communicating with the USB device.
-- [setIdle](iouserusbhosthiddevice/setidle.md)
+- [setIdle](./setidle.md)
   Sets the device’s idle time.
-- [setIdlePolicy](iouserusbhosthiddevice/setidlepolicy.md)
+- [setIdlePolicy](./setidlepolicy.md)
   Sets the amount of idle time that must pass before suspending the device.
-- [setProperty](iouserusbhosthiddevice/setproperty.md)
+- [setProperty](./setproperty.md)
   Updates the specified property on the corresponding kernel object.
-- [USBIdlePolicyType](usbidlepolicytype.md)
+- [USBIdlePolicyType](../usbidlepolicytype.md)
   Constants that specify whether to apply the idle policy to an interface or pipe.
 
 

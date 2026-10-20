@@ -1,17 +1,22 @@
 # urlString
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string representation of the URL for the receiver’s page.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 var urlString: String! { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * URLString;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ This URL may differ from the original URL if the page was, for example, redirect
 
 ## See Also
 
-- [var originalURLString: String!](webhistoryitem/originalurlstring.md)
+### Getting URL information
+- [var originalURLString: String!](./originalurlstring.md)
   The string representation of the original URL for the receiver’s page.
 
 

@@ -1,12 +1,13 @@
 # CFXMLEntityInfo
 
 **Framework**: Core Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Contains information describing an XML entity.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,51 +15,56 @@ Contains information describing an XML entity.
 struct CFXMLEntityInfo
 ```
 
+```c
+typedef struct { ... } CFXMLEntityInfo;
+```
+
 #### Overview
 
-A pointer to this structure is included in the CFXMLNode object passed to your application when the parser encounters an entity declaration. Use the [`CFXMLNodeGetInfoPtr`](cfxmlnodegetinfoptr.md) function to obtain a pointer to this structure.
+A pointer to this structure is included in the CFXMLNode object passed to your application when the parser encounters an entity declaration. Use the [`CFXMLNodeGetInfoPtr`](./cfxmlnodegetinfoptr.md) function to obtain a pointer to this structure.
 
 ## Topics
 
 ### Initializers
-- [init()](cfxmlentityinfo/init.md)
-- [init(entityType: CFXMLEntityTypeCode, replacementText: Unmanaged<CFString>!, entityID: CFXMLExternalID, notationName: Unmanaged<CFString>!)](cfxmlentityinfo/init(entitytype:replacementtext:entityid:notationname:).md)
+- [init()](./cfxmlentityinfo/init%28%29.md)
+- [init(entityType: CFXMLEntityTypeCode, replacementText: Unmanaged<CFString>!, entityID: CFXMLExternalID, notationName: Unmanaged<CFString>!)](./cfxmlentityinfo/init%28entitytype,replacementtext,entityid,notationname%29.md)
 ### Instance Properties
-- [var entityID: CFXMLExternalID](cfxmlentityinfo/entityid.md)
+- [var entityID: CFXMLExternalID](./cfxmlentityinfo/entityid.md)
   `entityID.systemID` will be `NULL` if `entityType` is internal.
-- [var entityType: CFXMLEntityTypeCode](cfxmlentityinfo/entitytype.md)
+- [var entityType: CFXMLEntityTypeCode](./cfxmlentityinfo/entitytype.md)
   The entity type code.
-- [var notationName: Unmanaged<CFString>!](cfxmlentityinfo/notationname.md)
+- [var notationName: Unmanaged<CFString>!](./cfxmlentityinfo/notationname.md)
   `NULL` if `entityType` is parsed.
-- [var replacementText: Unmanaged<CFString>!](cfxmlentityinfo/replacementtext.md)
+- [var replacementText: Unmanaged<CFString>!](./cfxmlentityinfo/replacementtext.md)
   `NULL` if `entityType` is external or unparsed, otherwise the text that the entity should be replaced with.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct CFXMLAttributeDeclarationInfo](cfxmlattributedeclarationinfo.md)
+### Data Types
+- [struct CFXMLAttributeDeclarationInfo](./cfxmlattributedeclarationinfo.md)
   Contains information about an element attribute definition.
-- [struct CFXMLAttributeListDeclarationInfo](cfxmlattributelistdeclarationinfo.md)
+- [struct CFXMLAttributeListDeclarationInfo](./cfxmlattributelistdeclarationinfo.md)
   Contains a list of the attributes associated with an element.
-- [struct CFXMLDocumentInfo](cfxmldocumentinfo.md)
+- [struct CFXMLDocumentInfo](./cfxmldocumentinfo.md)
   Contains the source URL and text encoding information for the XML document.
-- [struct CFXMLDocumentTypeInfo](cfxmldocumenttypeinfo.md)
+- [struct CFXMLDocumentTypeInfo](./cfxmldocumenttypeinfo.md)
   Contains the external ID of the DTD.
-- [struct CFXMLElementInfo](cfxmlelementinfo.md)
+- [struct CFXMLElementInfo](./cfxmlelementinfo.md)
   Contains a list of element attributes packaged as CFDictionary key/value pairs.
-- [struct CFXMLElementTypeDeclarationInfo](cfxmlelementtypedeclarationinfo.md)
+- [struct CFXMLElementTypeDeclarationInfo](./cfxmlelementtypedeclarationinfo.md)
   Contains a description of the element type.
-- [struct CFXMLEntityReferenceInfo](cfxmlentityreferenceinfo.md)
+- [struct CFXMLEntityReferenceInfo](./cfxmlentityreferenceinfo.md)
   Contains information describing an XML entity reference.
-- [struct CFXMLExternalID](cfxmlexternalid.md)
+- [struct CFXMLExternalID](./cfxmlexternalid.md)
   Contains the system and public IDs for an external entity reference.
-- [struct CFXMLNotationInfo](cfxmlnotationinfo.md)
+- [struct CFXMLNotationInfo](./cfxmlnotationinfo.md)
   Contains the external ID of the notation.
-- [struct CFXMLProcessingInstructionInfo](cfxmlprocessinginstructioninfo.md)
+- [struct CFXMLProcessingInstructionInfo](./cfxmlprocessinginstructioninfo.md)
   Contains the text of the processing instruction.
 
 

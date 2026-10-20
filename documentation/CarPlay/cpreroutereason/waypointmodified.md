@@ -1,7 +1,8 @@
 # CPRerouteReason.waypointModified
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An existing waypoint was modified or updated.
 
@@ -14,6 +15,10 @@ An existing waypoint was modified or updated.
 
 ```swift
 case waypointModified
+```
+
+```c
+CPRerouteReasonWaypointModified
 ```
 
 

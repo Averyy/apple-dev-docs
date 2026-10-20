@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates a remote layer client.
 
@@ -13,6 +14,10 @@ Invalidates a remote layer client.
 
 ```swift
 func invalidate()
+```
+
+```objc
+- (void) invalidate;
 ```
 
 

@@ -1,7 +1,8 @@
 # displaysLocalCameras
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies whether local cameras are displayed by the browser.
 
@@ -14,13 +15,18 @@ Specifies whether local cameras are displayed by the browser.
 var displaysLocalCameras: Bool { get set }
 ```
 
+```objc
+@property BOOL displaysLocalCameras;
+```
+
 ## See Also
 
-- [var displaysNetworkCameras: Bool](ikdevicebrowserview/displaysnetworkcameras.md)
+### Specifying the Device Types to Display
+- [var displaysNetworkCameras: Bool](./displaysnetworkcameras.md)
   Specifies whether network cameras are displayed by the browser.
-- [var displaysLocalScanners: Bool](ikdevicebrowserview/displayslocalscanners.md)
+- [var displaysLocalScanners: Bool](./displayslocalscanners.md)
   Specifies whether local scanners are displayed by the browser.
-- [var displaysNetworkScanners: Bool](ikdevicebrowserview/displaysnetworkscanners.md)
+- [var displaysNetworkScanners: Bool](./displaysnetworkscanners.md)
   Specifies whether network scanners are displayed by the browser.
 
 

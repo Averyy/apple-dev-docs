@@ -1,7 +1,8 @@
 # GameCenterScoreModerationUpdateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a Game Center score moderation.
 
@@ -10,14 +11,14 @@ The request body you use to update a Game Center score moderation.
 
 ## Declaration
 
-```swift
+```
 object GameCenterScoreModerationUpdateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterScoreModerationUpdateRequest.Data](gamecenterscoremoderationupdaterequest/data-data.dictionary.md)
+- [object GameCenterScoreModerationUpdateRequest.Data](./gamecenterscoremoderationupdaterequest/data-data.dictionary.md)
   The resource data for the Game Center score moderation you update.
 
 ## Properties
@@ -26,13 +27,14 @@ object GameCenterScoreModerationUpdateRequest
 
 ## See Also
 
-- [object GameCenterScoreModeration](gamecenterscoremoderation.md)
+### Objects
+- [object GameCenterScoreModeration](./gamecenterscoremoderation.md)
   A score submitted to a Game Center leaderboard that you review and choose to block or unblock.
-- [object GameCenterScoreModerationResponse](gamecenterscoremoderationresponse.md)
+- [object GameCenterScoreModerationResponse](./gamecenterscoremoderationresponse.md)
   The response body for endpoints that modify a single Game Center score moderation.
-- [object GameCenterScoreModerationsResponse](gamecenterscoremoderationsresponse.md)
+- [object GameCenterScoreModerationsResponse](./gamecenterscoremoderationsresponse.md)
   The response body for endpoints that list Game Center score moderations.
-- [object GameCenterLeaderboardV2GameCenterScoreModerationsLinkagesResponse](gamecenterleaderboardv2gamecenterscoremoderationslinkagesresponse.md)
+- [object GameCenterLeaderboardV2GameCenterScoreModerationsLinkagesResponse](./gamecenterleaderboardv2gamecenterscoremoderationslinkagesresponse.md)
   The response body for endpoints that list the score moderation linkages for a Game Center leaderboard.
 
 

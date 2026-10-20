@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to opaque graph object.
 
@@ -20,9 +21,14 @@ A pointer to opaque graph object.
 var data: UnsafeMutableRawPointer?
 ```
 
+```c
+void * data;
+```
+
 ## See Also
 
-- [var size: Int](bnns_graph_t/size.md)
+### Instance properties
+- [var size: Int](./size.md)
   The size, in bytes, of the opaque graph object.
 
 

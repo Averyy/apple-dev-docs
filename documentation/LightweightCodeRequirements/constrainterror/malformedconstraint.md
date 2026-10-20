@@ -1,7 +1,8 @@
 # ConstraintError.malformedConstraint
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unexpected type was found when trying to encode or decode a constraint.
 

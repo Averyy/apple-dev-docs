@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state name of the address.
 
@@ -19,21 +20,34 @@ The state name of the address.
 var state: String { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy) NSString * state;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy) NSString * state;
+```
+
 ## See Also
 
-- [var street: String](cnmutablepostaladdress/street.md)
+### Modifying the Parts of a Postal Address
+- [var street: String](./street.md)
   The street name of the address.
-- [var city: String](cnmutablepostaladdress/city.md)
+- [var city: String](./city.md)
   The city name of the address.
-- [var postalCode: String](cnmutablepostaladdress/postalcode.md)
+- [var postalCode: String](./postalcode.md)
   The postal code of the address.
-- [var country: String](cnmutablepostaladdress/country.md)
+- [var country: String](./country.md)
   The country or region name of the address.
-- [var isoCountryCode: String](cnmutablepostaladdress/isocountrycode.md)
+- [var isoCountryCode: String](./isocountrycode.md)
   The ISO country code, using the ISO 3166-1 alpha-2 standard.
-- [var subAdministrativeArea: String](cnmutablepostaladdress/subadministrativearea.md)
+- [var subAdministrativeArea: String](./subadministrativearea.md)
   The subadministrative area (such as a county or other region) in a postal address.
-- [var subLocality: String](cnmutablepostaladdress/sublocality.md)
+- [var subLocality: String](./sublocality.md)
   Additional information associated with the location, typically defined at the city or town level, in a postal address.
 
 

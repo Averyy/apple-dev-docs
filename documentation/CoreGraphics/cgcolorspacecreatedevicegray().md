@@ -1,7 +1,8 @@
 # CGColorSpaceCreateDeviceGray()
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a device-dependent grayscale color space.
 
@@ -10,7 +11,7 @@ Creates a device-dependent grayscale color space.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Creates a device-dependent grayscale color space.
 func CGColorSpaceCreateDeviceGray() -> CGColorSpace
 ```
 
+```c
+extern CGColorSpaceRefCGColorSpaceCreateDeviceGray();
+```
+
 #### Return Value
 
-A device-dependent gray color space, or `NULL` if unsuccessful. In Objective-C, you’re responsible for releasing this object by calling [`CGColorSpaceRelease`](cgcolorspacerelease.md).
+A device-dependent gray color space, or `NULL` if unsuccessful. In Objective-C, you’re responsible for releasing this object by calling [`CGColorSpaceRelease`](./cgcolorspacerelease.md).
 
 #### Discussion
 
@@ -30,31 +35,32 @@ Colors in a device-dependent color space are not transformed or otherwise modifi
 
 ## See Also
 
-- [init?(calibratedGrayWhitePoint: UnsafePointer<CGFloat>, blackPoint: UnsafePointer<CGFloat>?, gamma: CGFloat)](cgcolorspace/init(calibratedgraywhitepoint:blackpoint:gamma:).md)
+### Creating Color Spaces
+- [init?(calibratedGrayWhitePoint: UnsafePointer<CGFloat>, blackPoint: UnsafePointer<CGFloat>?, gamma: CGFloat)](./cgcolorspace/init%28calibratedgraywhitepoint,blackpoint,gamma%29.md)
   Creates a calibrated grayscale color space.
-- [init?(calibratedRGBWhitePoint: UnsafePointer<CGFloat>, blackPoint: UnsafePointer<CGFloat>?, gamma: UnsafePointer<CGFloat>?, matrix: UnsafePointer<CGFloat>?)](cgcolorspace/init(calibratedrgbwhitepoint:blackpoint:gamma:matrix:).md)
+- [init?(calibratedRGBWhitePoint: UnsafePointer<CGFloat>, blackPoint: UnsafePointer<CGFloat>?, gamma: UnsafePointer<CGFloat>?, matrix: UnsafePointer<CGFloat>?)](./cgcolorspace/init%28calibratedrgbwhitepoint,blackpoint,gamma,matrix%29.md)
   Creates a calibrated RGB color space.
-- [init?(iccBasedNComponents: Int, range: UnsafePointer<CGFloat>?, profile: CGDataProvider, alternate: CGColorSpace?)](cgcolorspace/init(iccbasedncomponents:range:profile:alternate:).md)
+- [init?(iccBasedNComponents: Int, range: UnsafePointer<CGFloat>?, profile: CGDataProvider, alternate: CGColorSpace?)](./cgcolorspace/init%28iccbasedncomponents,range,profile,alternate%29.md)
   Creates a device-independent color space that is defined according to the ICC color profile specification.
-- [init?(indexedBaseSpace: CGColorSpace, last: Int, colorTable: UnsafePointer<UInt8>)](cgcolorspace/init(indexedbasespace:last:colortable:).md)
+- [init?(indexedBaseSpace: CGColorSpace, last: Int, colorTable: UnsafePointer<UInt8>)](./cgcolorspace/init%28indexedbasespace,last,colortable%29.md)
   Creates an indexed color space, consisting of colors specified by a color lookup table.
-- [init?(labWhitePoint: UnsafePointer<CGFloat>, blackPoint: UnsafePointer<CGFloat>?, range: UnsafePointer<CGFloat>?)](cgcolorspace/init(labwhitepoint:blackpoint:range:).md)
+- [init?(labWhitePoint: UnsafePointer<CGFloat>, blackPoint: UnsafePointer<CGFloat>?, range: UnsafePointer<CGFloat>?)](./cgcolorspace/init%28labwhitepoint,blackpoint,range%29.md)
   Creates a device-independent color space that is relative to human color perception, according to the CIE L*a*b* standard.
-- [init?(patternBaseSpace: CGColorSpace?)](cgcolorspace/init(patternbasespace:).md)
+- [init?(patternBaseSpace: CGColorSpace?)](./cgcolorspace/init%28patternbasespace%29.md)
   Creates a pattern color space.
-- [init?(name: CFString)](cgcolorspace/init(name:).md)
+- [init?(name: CFString)](./cgcolorspace/init%28name%29.md)
   Creates a specified type of Quartz color space.
-- [init?(platformColorSpaceRef: UnsafeRawPointer)](cgcolorspace/init(platformcolorspaceref:).md)
+- [init?(platformColorSpaceRef: UnsafeRawPointer)](./cgcolorspace/init%28platformcolorspaceref%29.md)
   Creates a platform-specific color space.
-- [init?(iccData: CFTypeRef)](cgcolorspace/init(iccdata:).md)
+- [init?(iccData: CFTypeRef)](./cgcolorspace/init%28iccdata%29.md)
   Creates an ICC-based color space using the ICC profile contained in the specified data.
-- [init?(propertyListPlist: CFPropertyList)](cgcolorspace/init(propertylistplist:).md)
+- [init?(propertyListPlist: CFPropertyList)](./cgcolorspace/init%28propertylistplist%29.md)
   Creates a color space from a property list.
-- [func CGColorSpaceCreateDeviceRGB() -> CGColorSpace](cgcolorspacecreatedevicergb().md)
+- [func CGColorSpaceCreateDeviceRGB() -> CGColorSpace](./cgcolorspacecreatedevicergb%28%29.md)
   Creates a device-dependent RGB color space.
-- [func CGColorSpaceCreateDeviceCMYK() -> CGColorSpace](cgcolorspacecreatedevicecmyk().md)
+- [func CGColorSpaceCreateDeviceCMYK() -> CGColorSpace](./cgcolorspacecreatedevicecmyk%28%29.md)
   Creates a device-dependent CMYK color space.
-- [init?(iccProfileData: CFData)](cgcolorspace/init(iccprofiledata:).md)
+- [init?(iccProfileData: CFData)](./cgcolorspace/init%28iccprofiledata%29.md)
   Creates an ICC-based color space using the ICC profile contained in the specified data.
 
 

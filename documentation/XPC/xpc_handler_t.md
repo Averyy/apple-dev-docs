@@ -1,23 +1,28 @@
 # xpc_handler_t
 
 **Framework**: XPC  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of block that the XPC connection APIs accept.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias xpc_handler_t = (xpc_object_t) -> Void
+```
+
+```c
+typedef void (^)(NSObject<OS_xpc_object> *) xpc_handler_t;
 ```
 
 #### Discussion
@@ -26,9 +31,10 @@ You aren’t responsible for releasing the event object.
 
 ## See Also
 
-- [func xpc_connection_set_event_handler(xpc_connection_t, (xpc_object_t) -> Void)](xpc_connection_set_event_handler(_:_:).md)
+### Event handling
+- [func xpc_connection_set_event_handler(xpc_connection_t, (xpc_object_t) -> Void)](./xpc_connection_set_event_handler%28_,_%29.md)
   Sets the event handler block for the connection.
-- [typealias xpc_connection_handler_t](xpc_connection_handler_t.md)
+- [typealias xpc_connection_handler_t](./xpc_connection_handler_t.md)
   The type of the function to invoke for a bundled XPC service when there’s a new connection on the service.
 
 

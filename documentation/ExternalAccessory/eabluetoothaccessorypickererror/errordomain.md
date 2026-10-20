@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: External Accessory  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 3.0+

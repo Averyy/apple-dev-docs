@@ -2,6 +2,7 @@
 
 **Framework**: Shared with You  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -15,6 +16,10 @@
 
 ```swift
 var highlightURL: URL { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSURL * highlightURL;
 ```
 
 

@@ -1,7 +1,8 @@
 # OSLogMessageComponent.ArgumentCategory.string
 
 **Framework**: OSLog  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The argument is a string.
 
@@ -20,17 +21,22 @@ The argument is a string.
 case string
 ```
 
+```c
+OSLogMessageComponentArgumentCategoryString
+```
+
 ## See Also
 
-- [OSLogMessageComponent.ArgumentCategory.data](oslogmessagecomponent/argumentcategory-swift.enum/data.md)
-  The argument is an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object.
-- [OSLogMessageComponent.ArgumentCategory.double](oslogmessagecomponent/argumentcategory-swift.enum/double.md)
+### Constants
+- [OSLogMessageComponent.ArgumentCategory.data](./data.md)
+  The argument is an [`NSData`](../../../Foundation/nsdata.md) object.
+- [OSLogMessageComponent.ArgumentCategory.double](./double.md)
   The argument is a double.
-- [OSLogMessageComponent.ArgumentCategory.int64](oslogmessagecomponent/argumentcategory-swift.enum/int64.md)
+- [OSLogMessageComponent.ArgumentCategory.int64](./int64.md)
   The argument is a 64-bit signed integer.
-- [OSLogMessageComponent.ArgumentCategory.uInt64](oslogmessagecomponent/argumentcategory-swift.enum/uint64.md)
+- [OSLogMessageComponent.ArgumentCategory.uInt64](./uint64.md)
   The argument is a 64-bit unsigned integer.
-- [OSLogMessageComponent.ArgumentCategory.undefined](oslogmessagecomponent/argumentcategory-swift.enum/undefined.md)
+- [OSLogMessageComponent.ArgumentCategory.undefined](./undefined.md)
   The argument’s type is not defined.
 
 

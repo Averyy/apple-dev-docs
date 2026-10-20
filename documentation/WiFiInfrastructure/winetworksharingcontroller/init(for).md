@@ -1,7 +1,8 @@
 # init(for:)
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a controller for a given accessory.
 
@@ -20,9 +21,11 @@ init(for accessory: ASAccessory) async throws
 
 Use this initializer to create a network-sharing controller for the specified accessory. The accessory needs to be connected and using a secure transport when creating the controller.
 
-> **Note**: A [`WINetworkSharingError`](winetworksharingerror.md) for various conditions: - [`WINetworkSharingError.accessoryTransportNotSecured`](winetworksharingerror/accessorytransportnotsecured.md): The accessory isn’t using a secure Bluetooth transport.
-- [`WINetworkSharingError.accessoryNotConnected`](winetworksharingerror/accessorynotconnected.md): The accessory isn’t connected when your container app calls this method.
-- [`WINetworkSharingError.wifiNetworkSharingUnsupported`](winetworksharingerror/wifinetworksharingunsupported.md): Network sharing isn’t supported on this device.
+> **Throws**: A [`WINetworkSharingError`](../winetworksharingerror.md) for various conditions:
+>
+> - [`WINetworkSharingError.accessoryTransportNotSecured`](../winetworksharingerror/accessorytransportnotsecured.md): The accessory isn’t using a secure Bluetooth transport.
+> - [`WINetworkSharingError.accessoryNotConnected`](../winetworksharingerror/accessorynotconnected.md): The accessory isn’t connected when your container app calls this method.
+> - [`WINetworkSharingError.wifiNetworkSharingUnsupported`](../winetworksharingerror/wifinetworksharingunsupported.md): Network sharing isn’t supported on this device.
 
 ## Parameters
 

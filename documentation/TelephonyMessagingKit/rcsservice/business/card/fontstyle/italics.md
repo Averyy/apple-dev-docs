@@ -1,7 +1,8 @@
 # italics
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Italic style.
 
@@ -16,9 +17,10 @@ static let italics: RCSService.Business.Card.FontStyle
 
 ## See Also
 
-- [static let bold: RCSService.Business.Card.FontStyle](rcsservice/business/card/fontstyle/bold.md)
+### Determining font styles
+- [static let bold: RCSService.Business.Card.FontStyle](./bold.md)
   Bold style.
-- [static let underline: RCSService.Business.Card.FontStyle](rcsservice/business/card/fontstyle/underline.md)
+- [static let underline: RCSService.Business.Card.FontStyle](./underline.md)
   Underline style.
 
 

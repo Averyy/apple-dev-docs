@@ -1,7 +1,8 @@
 # fetchCurrentUserRecordOperation()
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a fetch operation for retrieving the current user record.
 
@@ -10,7 +11,7 @@ Returns a fetch operation for retrieving the current user record.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -18,6 +19,10 @@ Returns a fetch operation for retrieving the current user record.
 
 ```swift
 class func fetchCurrentUserRecordOperation() -> Self
+```
+
+```objc
++ (instancetype) fetchCurrentUserRecordOperation;
 ```
 
 #### Discussion

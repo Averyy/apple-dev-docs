@@ -1,7 +1,8 @@
 # NSFileProviderServicing
 
 **Framework**: File Provider  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Support for providing a custom service source.
 
@@ -18,38 +19,43 @@ Support for providing a custom service source.
 protocol NSFileProviderServicing : NSObjectProtocol
 ```
 
+```objc
+@protocol NSFileProviderServicing <NSObject>
+```
+
 #### Overview
 
-Adopt this protocol if your File Provider extension supports custom services. For more information on custom services, see [`NSFileProviderService`](https://developer.apple.com/documentation/foundation/nsfileproviderservice).
+Adopt this protocol if your File Provider extension supports custom services. For more information on custom services, see [`NSFileProviderService`](../Foundation/nsfileproviderservice.md).
 
 ## Topics
 
 ### Providing a Service Source
-- [func supportedServiceSources(for: NSFileProviderItemIdentifier, completionHandler: ([any NSFileProviderServiceSource]?, (any Error)?) -> Void) -> Progress](nsfileproviderservicing/supportedservicesources(for:completionhandler:).md)
+- [func supportedServiceSources(for: NSFileProviderItemIdentifier, completionHandler: ([any NSFileProviderServiceSource]?, (any Error)?) -> Void) -> Progress](./nsfileproviderservicing/supportedservicesources%28for,completionhandler%29.md)
   Asks the File Provider extension for an array of custom communication channels.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol NSFileProviderReplicatedExtension](nsfileproviderreplicatedextension.md)
+### File Provider protocols
+- [protocol NSFileProviderReplicatedExtension](./nsfileproviderreplicatedextension.md)
   A File Provider extension in which the system replicates the contents on disk.
-- [protocol NSFileProviderEnumerating](nsfileproviderenumerating.md)
+- [protocol NSFileProviderEnumerating](./nsfileproviderenumerating.md)
   Support for enumerating the file provider’s contents.
-- [protocol NSFileProviderIncrementalContentFetching](nsfileproviderincrementalcontentfetching.md)
+- [protocol NSFileProviderIncrementalContentFetching](./nsfileproviderincrementalcontentfetching.md)
   Support for fetching changes to the item’s content.
-- [protocol NSFileProviderPartialContentFetching](nsfileproviderpartialcontentfetching.md)
+- [protocol NSFileProviderPartialContentFetching](./nsfileproviderpartialcontentfetching.md)
   Support for fetching part of a file’s content.
-- [protocol NSFileProviderCustomAction](nsfileprovidercustomaction.md)
+- [protocol NSFileProviderCustomAction](./nsfileprovidercustomaction.md)
   Support for custom actions.
-- [struct NSFileProviderExtensionActionIdentifier](nsfileproviderextensionactionidentifier.md)
+- [struct NSFileProviderExtensionActionIdentifier](./nsfileproviderextensionactionidentifier.md)
   An identifier for custom actions.
-- [protocol NSFileProviderThumbnailing](nsfileproviderthumbnailing.md)
+- [protocol NSFileProviderThumbnailing](./nsfileproviderthumbnailing.md)
   Support for item thumbnails.
-- [protocol NSFileProviderPendingSetEnumerator](nsfileproviderpendingsetenumerator.md)
+- [protocol NSFileProviderPendingSetEnumerator](./nsfileproviderpendingsetenumerator.md)
   A protocol for enumerating pending items.
 
 

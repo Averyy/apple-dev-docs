@@ -1,7 +1,8 @@
 # StoreKitPurchaseAPI
 
 **Framework**: StoreKit Test  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -21,25 +22,26 @@ struct StoreKitPurchaseAPI
 ## Topics
 
 ### Initializers
-- [init()](storekitpurchaseapi/init.md)
+- [init()](./storekitpurchaseapi/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [FailableStoreKitAPI](failablestorekitapi.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [FailableStoreKitAPI](./failablestorekitapi.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct StoreKitAppStoreSyncAPI](storekitappstoresyncapi.md)
-- [struct StoreKitAppTransactionAPI](storekitapptransactionapi.md)
-- [struct StoreKitLoadProductsAPI](storekitloadproductsapi.md)
-- [struct StoreKitManageSubscriptionsAPI](storekitmanagesubscriptionsapi.md)
-- [struct StoreKitOfferCodeRedeemAPI](storekitoffercoderedeemapi.md)
-- [struct StoreKitRefundRequestAPI](storekitrefundrequestapi.md)
-- [struct StoreKitSubscriptionStatusAPI](storekitsubscriptionstatusapi.md)
-- [struct StoreKitVerificationAPI](storekitverificationapi.md)
+### Structures
+- [struct StoreKitAppStoreSyncAPI](./storekitappstoresyncapi.md)
+- [struct StoreKitAppTransactionAPI](./storekitapptransactionapi.md)
+- [struct StoreKitLoadProductsAPI](./storekitloadproductsapi.md)
+- [struct StoreKitManageSubscriptionsAPI](./storekitmanagesubscriptionsapi.md)
+- [struct StoreKitOfferCodeRedeemAPI](./storekitoffercoderedeemapi.md)
+- [struct StoreKitRefundRequestAPI](./storekitrefundrequestapi.md)
+- [struct StoreKitSubscriptionStatusAPI](./storekitsubscriptionstatusapi.md)
+- [struct StoreKitVerificationAPI](./storekitverificationapi.md)
 
 
 ---

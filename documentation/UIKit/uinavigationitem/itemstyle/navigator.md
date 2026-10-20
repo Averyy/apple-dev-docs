@@ -1,7 +1,8 @@
 # UINavigationItem.ItemStyle.navigator
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style for a traditional navigation-based interface.
 
@@ -17,15 +18,20 @@ A style for a traditional navigation-based interface.
 case navigator
 ```
 
+```c
+UINavigationItemStyleNavigator
+```
+
 #### Discussion
 
-Use this style for apps that support a traditional hierarchical navigation model. With this style, the navigation item’s title appears in the center of the navigation bar, and center items ([`centerItemGroups`](uinavigationitem/centeritemgroups.md)) appear in the overflow menu.
+Use this style for apps that support a traditional hierarchical navigation model. With this style, the navigation item’s title appears in the center of the navigation bar, and center items ([`centerItemGroups`](../centeritemgroups.md)) appear in the overflow menu.
 
 ## See Also
 
-- [UINavigationItem.ItemStyle.browser](uinavigationitem/itemstyle/browser.md)
+### Constants
+- [UINavigationItem.ItemStyle.browser](./browser.md)
   A style for a browser app interface.
-- [UINavigationItem.ItemStyle.editor](uinavigationitem/itemstyle/editor.md)
+- [UINavigationItem.ItemStyle.editor](./editor.md)
   A style for an editor app interface.
 
 

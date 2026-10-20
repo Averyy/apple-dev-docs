@@ -1,7 +1,8 @@
 # MTL4CommandQueueError.Code.accessRevoked
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the system revokes GPU access because it’s responsible for too many timeouts or hangs.
 
@@ -17,6 +18,10 @@ Indicates that the system revokes GPU access because it’s responsible for too 
 
 ```swift
 case accessRevoked
+```
+
+```c
+MTL4CommandQueueErrorAccessRevoked
 ```
 
 

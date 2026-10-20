@@ -1,7 +1,8 @@
 # getWeeklySchedule(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func getWeeklySchedule(with params: MTRThermostatClusterGetWeeklyScheduleParams, completion: @escaping @Sendable (MTRThermostatClusterGetWeeklyScheduleResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func weeklySchedule(with params: MTRThermostatClusterGetWeeklyScheduleParams) async throws -> MTRThermostatClusterGetWeeklyScheduleResponseParams
+```
+
+```objc
+- (void) getWeeklyScheduleWithParams:(MTRThermostatClusterGetWeeklyScheduleParams *) params completion:(void (^)(MTRThermostatClusterGetWeeklyScheduleResponseParams *data, NSError *error)) completion;
 ```
 
 

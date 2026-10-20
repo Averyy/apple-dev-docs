@@ -1,17 +1,22 @@
 # defaultCompletionDelay
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the default completion delay.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var defaultCompletionDelay: TimeInterval { get }
+```
+
+```objc
+@property (class, readonly) NSTimeInterval defaultCompletionDelay;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ The default completion delay is 0.
 
 ## See Also
 
-- [var completionDelay: TimeInterval](nstokenfield/completiondelay.md)
+### Configuring the Completion Delay
+- [var completionDelay: TimeInterval](./completiondelay.md)
   The receiver’s completion delay.
 
 

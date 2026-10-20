@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scanner device delegate
 
@@ -15,11 +16,15 @@ The scanner device delegate
 unowned(unsafe) var delegate: (any IKScannerDeviceViewDelegate)! { get set }
 ```
 
+```objc
+@property (assign) id<IKScannerDeviceViewDelegate> delegate;
+```
+
 #### Discussion
 
 The delegate is sent notifications of errors as well as the completed scan content.
 
-The delegate must conform to the [`IKScannerDeviceViewDelegate`](ikscannerdeviceviewdelegate.md) protocol.
+The delegate must conform to the [`IKScannerDeviceViewDelegate`](../ikscannerdeviceviewdelegate.md) protocol.
 
 
 ---

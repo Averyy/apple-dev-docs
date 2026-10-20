@@ -1,7 +1,8 @@
 # pop()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pops the current interface controller from the screen.
 
@@ -14,9 +15,13 @@ Pops the current interface controller from the screen.
 func pop()
 ```
 
+```objc
+- (void) popController;
+```
+
 ## Mentions
 
-- [Navigating Between Scenes](navigating-between-scenes.md)
+- [Navigating Between Scenes](../navigating-between-scenes.md)
 
 #### Discussion
 
@@ -26,9 +31,10 @@ Always call this method from your WatchKit extension’s main thread.
 
 ## See Also
 
-- [func pushController(withName: String, context: Any?)](wkinterfacecontroller/pushcontroller(withname:context:).md)
+### Implementing a navigation interface
+- [func pushController(withName: String, context: Any?)](./pushcontroller%28withname,context%29.md)
   Pushes a new interface controller onto the screen.
-- [func popToRootController()](wkinterfacecontroller/poptorootcontroller.md)
+- [func popToRootController()](./poptorootcontroller%28%29.md)
   Pops all interface controllers except the app’s initial interface controller.
 
 

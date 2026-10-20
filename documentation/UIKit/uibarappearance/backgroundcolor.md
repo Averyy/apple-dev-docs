@@ -1,7 +1,8 @@
 # backgroundColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background color of the bar.
 
@@ -19,17 +20,22 @@ The background color of the bar.
 var backgroundColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) UIColor * backgroundColor;
+```
+
 #### Discussion
 
-The bar layers the specified color on top of any blur effects you specified in the [`backgroundEffect`](uibarappearance/backgroundeffect.md) property, and below the image in the [`backgroundImage`](uibarappearance/backgroundimage.md) property.
+The bar layers the specified color on top of any blur effects you specified in the [`backgroundEffect`](./backgroundeffect.md) property, and below the image in the [`backgroundImage`](./backgroundimage.md) property.
 
 ## See Also
 
-- [var backgroundEffect: UIBlurEffect?](uibarappearance/backgroundeffect.md)
+### Configuring the background appearance
+- [var backgroundEffect: UIBlurEffect?](./backgroundeffect.md)
   The blur effect to apply to the bar’s background.
-- [var backgroundImage: UIImage?](uibarappearance/backgroundimage.md)
+- [var backgroundImage: UIImage?](./backgroundimage.md)
   The image to display on top of the bar’s background color.
-- [var backgroundImageContentMode: UIView.ContentMode](uibarappearance/backgroundimagecontentmode.md)
+- [var backgroundImageContentMode: UIView.ContentMode](./backgroundimagecontentmode.md)
   The content mode to use when displaying the bar’s background image.
 
 

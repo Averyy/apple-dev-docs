@@ -1,7 +1,8 @@
 # baseline
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The manner in which the comparison between the baseline and current values are compared.
 

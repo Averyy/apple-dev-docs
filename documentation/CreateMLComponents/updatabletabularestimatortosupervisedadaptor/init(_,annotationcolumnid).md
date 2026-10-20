@@ -1,7 +1,8 @@
 # init(_:annotationColumnID:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an updatable tabular estimator supervised adaptor.
 

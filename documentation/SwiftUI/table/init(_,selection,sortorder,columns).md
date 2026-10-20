@@ -1,7 +1,8 @@
 # init(_:selection:sortOrder:columns:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sortable table that computes its rows based on a collection of identifiable data, and supports selecting multiple rows.
 
@@ -19,6 +20,15 @@ nonisolated
 init<Data, Sort>(_ data: Data, selection: Binding<Set<Value.ID>>, sortOrder: Binding<[Sort]>, @TableColumnBuilder<Value, Sort> columns: () -> Columns) where Rows == TableForEachContent<Data>, Data : RandomAccessCollection, Sort : SortComparator, Columns.TableRowValue == Data.Element, Data.Element == Sort.Compared
 ```
 
+Available when `Value` is `Rows.TableRowValue`, `Rows` conforms to `TableRowContent`, `Columns` conforms to `TableColumnContent`, and `Rows.TableRowValue` is `Columns.TableRowValue`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init<Data, Sort>(_ data: Data, selection: Binding<Value.ID?>, sortOrder: Binding<[Sort]>, @TableColumnBuilder<Value, Sort> columns: () -> Columns) where Rows == TableForEachContent<Data>, Data : RandomAccessCollection, Sort : SortComparator, Columns.TableRowValue == Data.Element, Data.Element == Sort.Compared
+```
+
 ## Parameters
 
 - `data`: The identifiable data for computing the table rows.
@@ -28,7 +38,8 @@ init<Data, Sort>(_ data: Data, selection: Binding<Set<Value.ID>>, sortOrder: Bin
 
 ## See Also
 
-- [init<Data, Sort>(Data, sortOrder: Binding<[Sort]>, columns: () -> Columns)](table/init(_:sortorder:columns:).md)
+### Creating a sortable table from columns
+- [init<Data, Sort>(Data, sortOrder: Binding<[Sort]>, columns: () -> Columns)](./init%28_,sortorder,columns%29.md)
   Creates a sortable table that computes its rows based on a collection of identifiable data.
 
 

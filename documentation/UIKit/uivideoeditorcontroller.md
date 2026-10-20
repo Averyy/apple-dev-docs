@@ -1,7 +1,8 @@
 # UIVideoEditorController
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view controller that manages the system interface for trimming video frames and encoding a previously recorded movie.
 
@@ -18,60 +19,65 @@ A view controller that manages the system interface for trimming video frames an
 class UIVideoEditorController
 ```
 
+```objc
+@interface UIVideoEditorController : UINavigationController
+```
+
 #### Overview
 
-A video editor manages user interactions and provides the filesystem path of the edited movie to your delegate object (see [`UIVideoEditorControllerDelegate`](uivideoeditorcontrollerdelegate.md)). The features of the [`UIVideoEditorController`](uivideoeditorcontroller.md) class are available only on devices that support video recording. Use a video editor when your intent is to provide an interface for movie editing. While the [`UIImagePickerController`](uiimagepickercontroller.md) class also lets a user trim movies, its primary roles are choosing saved pictures and movies, and capturing new pictures and movies.
+A video editor manages user interactions and provides the filesystem path of the edited movie to your delegate object (see [`UIVideoEditorControllerDelegate`](./uivideoeditorcontrollerdelegate.md)). The features of the [`UIVideoEditorController`](./uivideoeditorcontroller.md) class are available only on devices that support video recording. Use a video editor when your intent is to provide an interface for movie editing. While the [`UIImagePickerController`](./uiimagepickercontroller.md) class also lets a user trim movies, its primary roles are choosing saved pictures and movies, and capturing new pictures and movies.
 
 > ❗ **Important**:  The `UIVideoEditorController` class supports portrait mode only. This class is intended to be used as-is and doesn’t support subclassing. The view hierarchy for this class is private; don’t modify the view hierarchy. This class doesn’t support modifications to its appearance by use of overlay views.
 
 ## Topics
 
 ### Managing changes to the video
-- [var delegate: (any UINavigationControllerDelegate & UIVideoEditorControllerDelegate)?](uivideoeditorcontroller/delegate.md)
+- [var delegate: (any UINavigationControllerDelegate & UIVideoEditorControllerDelegate)?](./uivideoeditorcontroller/delegate.md)
   The video editor’s delegate object.
-- [protocol UIVideoEditorControllerDelegate](uivideoeditorcontrollerdelegate.md)
+- [protocol UIVideoEditorControllerDelegate](./uivideoeditorcontrollerdelegate.md)
   A set of methods that your delegate object must implement to respond to the video editor.
 ### Determining editing availability
-- [class func canEditVideo(atPath: String) -> Bool](uivideoeditorcontroller/caneditvideo(atpath:).md)
+- [class func canEditVideo(atPath: String) -> Bool](./uivideoeditorcontroller/caneditvideo%28atpath%29.md)
   Returns a Boolean value indicating whether a video file can be edited.
 ### Configuring the editor
-- [var videoMaximumDuration: TimeInterval](uivideoeditorcontroller/videomaximumduration.md)
+- [var videoMaximumDuration: TimeInterval](./uivideoeditorcontroller/videomaximumduration.md)
   The maximum duration, in seconds, permitted for trimmed movies saved by the video editor.
-- [var videoPath: String](uivideoeditorcontroller/videopath.md)
+- [var videoPath: String](./uivideoeditorcontroller/videopath.md)
   The filesystem path to the movie to be loaded by the video editor.
-- [var videoQuality: UIImagePickerController.QualityType](uivideoeditorcontroller/videoquality.md)
+- [var videoQuality: UIImagePickerController.QualityType](./uivideoeditorcontroller/videoquality.md)
   The video quality to use when saving a trimmed movie.
 
 ## Relationships
 
 ### Inherits From
-- [UINavigationController](uinavigationcontroller.md)
+- [UINavigationController](./uinavigationcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
-- [UIAppearanceContainer](uiappearancecontainer.md)
-- [UIContentContainer](uicontentcontainer.md)
-- [UIFocusEnvironment](uifocusenvironment.md)
-- [UIPasteConfigurationSupporting](uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](uiresponderstandardeditactions.md)
-- [UIStateRestoring](uistaterestoring.md)
-- [UITraitChangeObservable](uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](uitraitenvironment.md)
-- [UIUserActivityRestoring](uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](./uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](./uiappearancecontainer.md)
+- [UIContentContainer](./uicontentcontainer.md)
+- [UIFocusEnvironment](./uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](./uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](./uiresponderstandardeditactions.md)
+- [UIStateRestoring](./uistaterestoring.md)
+- [UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](./uitraitenvironment.md)
+- [UIUserActivityRestoring](./uiuseractivityrestoring.md)
 
 ## See Also
 
-- [class UIImagePickerController](uiimagepickercontroller.md)
+### Images and video
+- [class UIImagePickerController](./uiimagepickercontroller.md)
   A view controller that manages the system interfaces for taking pictures, recording movies, and choosing items from the user’s media library.
 
 

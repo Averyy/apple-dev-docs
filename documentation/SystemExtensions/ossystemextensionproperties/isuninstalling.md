@@ -1,7 +1,8 @@
 # isUninstalling
 
 **Framework**: System Extensions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
@@ -12,10 +13,15 @@
 var isUninstalling: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL isUninstalling;
+```
+
 ## See Also
 
-- [var isAwaitingUserApproval: Bool](ossystemextensionproperties/isawaitinguserapproval.md)
-- [var isEnabled: Bool](ossystemextensionproperties/isenabled.md)
+### Instance Properties
+- [var isAwaitingUserApproval: Bool](./isawaitinguserapproval.md)
+- [var isEnabled: Bool](./isenabled.md)
 
 
 ---

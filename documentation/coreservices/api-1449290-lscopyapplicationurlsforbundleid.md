@@ -1,7 +1,8 @@
 # LSCopyApplicationURLsForBundleIdentifier(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Locates all URLs for apps that correspond to the specified bundle identifier.
 
@@ -14,9 +15,13 @@ Locates all URLs for apps that correspond to the specified bundle identifier.
 func LSCopyApplicationURLsForBundleIdentifier(_ inBundleIdentifier: CFString, _ outError: UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<CFArray>?
 ```
 
-#### Return_value
+```c
+CFArrayRef LSCopyApplicationURLsForBundleIdentifier(CFStringRef inBundleIdentifier, CFErrorRef  _Nullable *outError);
+```
 
-The URLs for any applications with the specified bundle identifier returned in a `CFArray`. If no application is found, `NULL` is returned and `outError` (if not `NULL`) is populated with [`kLSApplicationNotFoundErr`](klsapplicationnotfounderr.md).
+#### Return Value
+
+The URLs for any applications with the specified bundle identifier returned in a `CFArray`. If no application is found, `NULL` is returned and `outError` (if not `NULL`) is populated with [`kLSApplicationNotFoundErr`](./klsapplicationnotfounderr.md).
 
 In macOS 10.15 and later, the returned array is sorted with the first element containing the best available application with the specified bundle identifier. Prior to macOS 10.15, the order of elements in the array was undefined.
 
@@ -29,13 +34,14 @@ The caller is responsible for releasing this array.
 
 ## See Also
 
-- [func LSCopyDefaultApplicationURLForURL(CFURL, LSRolesMask, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<CFURL>?](1448824-lscopydefaultapplicationurlforur.md)
+### Locating an App
+- [func LSCopyDefaultApplicationURLForURL(CFURL, LSRolesMask, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<CFURL>?](./api-1448824-lscopydefaultapplicationurlforur.md)
   Returns the app that opens an item.
-- [func LSCopyDefaultApplicationURLForContentType(CFString, LSRolesMask, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<CFURL>?](1447734-lscopydefaultapplicationurlforco.md)
+- [func LSCopyDefaultApplicationURLForContentType(CFString, LSRolesMask, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<CFURL>?](./api-1447734-lscopydefaultapplicationurlforco.md)
   Returns the app that opens a content type.
-- [func LSCopyApplicationURLsForURL(CFURL, LSRolesMask) -> Unmanaged<CFArray>?](1445148-lscopyapplicationurlsforurl.md)
+- [func LSCopyApplicationURLsForURL(CFURL, LSRolesMask) -> Unmanaged<CFArray>?](./api-1445148-lscopyapplicationurlsforurl.md)
   Locates all known apps suitable for opening an item for the specified URL.
-- [func LSCanURLAcceptURL(CFURL, CFURL, LSRolesMask, LSAcceptanceFlags, UnsafeMutablePointer<DarwinBoolean>) -> OSStatus](1441854-lscanurlaccepturl.md)
+- [func LSCanURLAcceptURL(CFURL, CFURL, LSRolesMask, LSAcceptanceFlags, UnsafeMutablePointer<DarwinBoolean>) -> OSStatus](./api-1441854-lscanurlaccepturl.md)
   Tests whether an app can accept (open) an item for a URL.
 
 

@@ -1,7 +1,8 @@
 # distance(from:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the distance (measured in meters) from the current object’s location to the specified location.
 
@@ -20,6 +21,10 @@ Returns the distance (measured in meters) from the current object’s location t
 func distance(from location: CLLocation) -> CLLocationDistance
 ```
 
+```objc
+- (CLLocationDistance) distanceFromLocation:(const CLLocation *) location;
+```
+
 #### Return Value
 
 The distance (in meters) between the two locations.
@@ -34,7 +39,8 @@ This method measures the distance between the location in the current object and
 
 ## See Also
 
-- [func getDistanceFrom(CLLocation) -> CLLocationDistance](cllocation/getdistancefrom(_:).md)
+### Measuring the distance between coordinates
+- [func getDistanceFrom(CLLocation) -> CLLocationDistance](./getdistancefrom%28_%29.md)
   Returns the distance (measured in meters) from the current object’s location to the specified location.
 
 

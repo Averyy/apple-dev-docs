@@ -1,14 +1,15 @@
 # StandardUSB::BillboardAltModeCapabilityDescriptor
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 typedef struct StandardUSB::BillboardAltModeCapabilityDescriptor {
     ...
 } StandardUSB::BillboardAltModeCapabilityDescriptor;
@@ -17,8 +18,8 @@ typedef struct StandardUSB::BillboardAltModeCapabilityDescriptor {
 ## Topics
 
 ### Instance Properties
-- [bIndex](standardusb_billboardaltmodecapabilitydescriptor/3794033-bindex.md)
-- [dwAlternateModeVdo](standardusb_billboardaltmodecapabilitydescriptor/3794034-dwalternatemodevdo.md)
+- [bIndex](./standardusb_billboardaltmodecapabilitydescriptor/api-3794033-bindex.md)
+- [dwAlternateModeVdo](./standardusb_billboardaltmodecapabilitydescriptor/api-3794034-dwalternatemodevdo.md)
 
 
 ---

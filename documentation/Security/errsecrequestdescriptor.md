@@ -1,7 +1,8 @@
 # errSecRequestDescriptor
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The request descriptor is not valid.
 
@@ -18,6 +19,10 @@ The request descriptor is not valid.
 
 ```swift
 var errSecRequestDescriptor: OSStatus { get }
+```
+
+```c
+errSecRequestDescriptor
 ```
 
 

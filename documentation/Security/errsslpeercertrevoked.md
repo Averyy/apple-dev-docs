@@ -1,7 +1,8 @@
 # errSSLPeerCertRevoked
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate was revoked.
 
@@ -18,6 +19,10 @@ The certificate was revoked.
 
 ```swift
 var errSSLPeerCertRevoked: OSStatus { get }
+```
+
+```c
+errSSLPeerCertRevoked
 ```
 
 

@@ -1,7 +1,8 @@
 # UnsafeMutableRawPointer.AtomicOptionalRepresentation
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The storage representation type that encodes to and decodes from `Optional<Self>` which is a suitable type when used in atomic operations on `Optional`.
 

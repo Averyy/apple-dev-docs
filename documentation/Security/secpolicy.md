@@ -1,7 +1,8 @@
 # SecPolicy
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a trust policy.
 
@@ -20,11 +21,15 @@ An object that represents a trust policy.
 class SecPolicy
 ```
 
+```c
+typedef struct __SecPolicy * SecPolicyRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

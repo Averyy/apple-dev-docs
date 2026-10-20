@@ -1,7 +1,8 @@
 # supportedColorSpaces
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of the device’s supported color spaces.
 
@@ -21,7 +22,8 @@ var supportedColorSpaces: [AVCaptureColorSpace] { get }
 
 ## See Also
 
-- [var isGlobalToneMappingSupported: Bool](avcapturedevice/format/isglobaltonemappingsupported.md)
+### Determining color support
+- [var isGlobalToneMappingSupported: Bool](./isglobaltonemappingsupported.md)
   A Boolean value that indicates whether the format supports global tone mapping.
 
 

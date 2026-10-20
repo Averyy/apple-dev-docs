@@ -1,7 +1,8 @@
 # biometryType
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var biometryType: LABiometryType { get }
+```
+
+```objc
+@property (nonatomic, readonly) LABiometryType biometryType;
 ```
 
 #### Discussion

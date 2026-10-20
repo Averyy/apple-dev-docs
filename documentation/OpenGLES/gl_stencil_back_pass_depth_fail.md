@@ -1,7 +1,8 @@
 # GL_STENCIL_BACK_PASS_DEPTH_FAIL
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_STENCIL_BACK_PASS_DEPTH_FAIL: Int32 { get }
+```
+
+```c
+#define GL_STENCIL_BACK_PASS_DEPTH_FAIL
 ```
 
 

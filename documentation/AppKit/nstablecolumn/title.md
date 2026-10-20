@@ -1,12 +1,13 @@
 # title
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the table column’s header.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The title of the table column’s header.
 var title: String { get set }
 ```
 
+```objc
+@property (copy) NSString * title;
+```
+
 ## See Also
 
-- [var headerCell: NSTableHeaderCell](nstablecolumn/headercell.md)
+### Setting the Header
+- [var headerCell: NSTableHeaderCell](./headercell.md)
   The cell used to draw the table column’s header.
 
 

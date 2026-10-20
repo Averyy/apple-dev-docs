@@ -1,16 +1,19 @@
 # InAppPurchaseImageResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a single image for an In-App Purchase.
 
 **Availability**:
-- App Store Connect API 2.0+
+- App Store Connect API 2.0+ - Deprecated in 4.4.1
+
+> **Deprecated**: This object is deprecated. Use [`InAppPurchaseImageV2Response`](./inapppurchaseimagev2response.md) instead.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseImageResponse
 ```
 
@@ -22,13 +25,14 @@ object InAppPurchaseImageResponse
 
 ## See Also
 
-- [object InAppPurchaseImage](inapppurchaseimage.md)
+### Objects
+- [object InAppPurchaseImage](./inapppurchaseimage.md)
   A screenshot or image associated with an In-App Purchase or subscription, displayed on the App Store product page.
-- [object InAppPurchaseImageCreateRequest](inapppurchaseimagecreaterequest.md)
+- [object InAppPurchaseImageCreateRequest](./inapppurchaseimagecreaterequest.md)
   The request body you use to create an In-App Purchase image reservation.
-- [object InAppPurchaseImageUpdateRequest](inapppurchaseimageupdaterequest.md)
+- [object InAppPurchaseImageUpdateRequest](./inapppurchaseimageupdaterequest.md)
   The request body for updating the upload state or file content of an In-App Purchase image.
-- [object InAppPurchaseImagesResponse](inapppurchaseimagesresponse.md)
+- [object InAppPurchaseImagesResponse](./inapppurchaseimagesresponse.md)
   A response containing a list of images for an In-App Purchase.
 
 

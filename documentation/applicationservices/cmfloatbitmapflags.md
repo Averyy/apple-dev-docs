@@ -1,7 +1,8 @@
 # CMFloatBitmapFlags
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.4+
@@ -12,19 +13,25 @@
 struct CMFloatBitmapFlags
 ```
 
+```c
+typedef enum CMFloatBitmapFlags : unsigned int {
+    ...
+} CMFloatBitmapFlags;
+```
+
 ## Topics
 
 ### Initializers
-- [init(UInt32)](cmfloatbitmapflags/1463192-init.md)
-- [init(rawValue: UInt32)](cmfloatbitmapflags/1463715-init.md)
+- [init(UInt32)](./cmfloatbitmapflags/api-1463192-init.md)
+- [init(rawValue: UInt32)](./cmfloatbitmapflags/api-1463715-init.md)
 ### Instance Properties
-- [var rawValue: UInt32](cmfloatbitmapflags/1462169-rawvalue.md)
+- [var rawValue: UInt32](./cmfloatbitmapflags/api-1462169-rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 
 ---

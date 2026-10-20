@@ -1,7 +1,8 @@
 # path
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A path that identifies the object in an asset’s object hierarchy using object names.
 
@@ -19,25 +20,30 @@ A path that identifies the object in an asset’s object hierarchy using object 
 var path: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * path;
+```
+
 #### Discussion
 
-Model I/O forms a path for each object in an asset’s object hierarchy by concatenating the [`name`](mdlnamed/name.md) properties of objects in the hierarchy, separated by slashes and preceded by an initial slash.
+Model I/O forms a path for each object in an asset’s object hierarchy by concatenating the [`name`](../mdlnamed/name.md) properties of objects in the hierarchy, separated by slashes and preceded by an initial slash.
 
 > **Note**:  When using an object’s name in a path, Model I/O converts all characters not in the set `[A-Z][a-z][0-9][:-_.]` to underscores.
 
-For example, a mesh in an asset modeling a dining room scene might have the path `/meshes/table_anchor/chair1`, where “meshes” is one of the top-level children of the asset, “table anchor” is a [`MDLObject`](mdlobject.md) instance providing a transform inherited by several meshes, and “chair1” is the name of a [`MDLMesh`](mdlmesh.md) object.
+For example, a mesh in an asset modeling a dining room scene might have the path `/meshes/table_anchor/chair1`, where “meshes” is one of the top-level children of the asset, “table anchor” is a [`MDLObject`](../mdlobject.md) instance providing a transform inherited by several meshes, and “chair1” is the name of a [`MDLMesh`](../mdlmesh.md) object.
 
 ## See Also
 
-- [var parent: MDLObject?](mdlobject/parent.md)
+### Working with Object Hierarchies
+- [var parent: MDLObject?](./parent.md)
   The parent object that contains this object.
-- [var children: any MDLObjectContainerComponent](mdlobject/children.md)
+- [var children: any MDLObjectContainerComponent](./children.md)
   A component that manages this object’s collection of children.
-- [func addChild(MDLObject)](mdlobject/addchild(_:).md)
+- [func addChild(MDLObject)](./addchild%28_%29.md)
   Adds a child object to this object, creating a container for the object’s children if necessary.
-- [func enumerateChildObjects(of: AnyClass, root: MDLObject, using: (MDLObject, UnsafeMutablePointer<ObjCBool>) -> Void, stopPointer: UnsafeMutablePointer<ObjCBool>)](mdlobject/enumeratechildobjects(of:root:using:stoppointer:).md)
+- [func enumerateChildObjects(of: AnyClass, root: MDLObject, using: (MDLObject, UnsafeMutablePointer<ObjCBool>) -> Void, stopPointer: UnsafeMutablePointer<ObjCBool>)](./enumeratechildobjects%28of,root,using,stoppointer%29.md)
   Executes the specified block using each object in this object’s child hierarchy.
-- [func atPath(String) -> MDLObject](mdlobject/atpath(_:).md)
+- [func atPath(String) -> MDLObject](./atpath%28_%29.md)
   Returns the child object at the specified path.
 
 

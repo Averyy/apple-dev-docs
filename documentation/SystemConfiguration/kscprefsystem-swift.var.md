@@ -1,7 +1,8 @@
 # kSCPrefSystem
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The preference key for the `System` dictionary.
 
@@ -14,13 +15,18 @@ The preference key for the `System` dictionary.
 let kSCPrefSystem: CFString
 ```
 
+```c
+extern CFStringRef const kSCPrefSystem;
+```
+
 ## See Also
 
-- [let kSCPrefCurrentSet: CFString](kscprefcurrentset-swift.var.md)
+### Constants
+- [let kSCPrefCurrentSet: CFString](./kscprefcurrentset-swift.var.md)
   The preference key `CurrentSet`, whose value is of type `CFString`.
-- [let kSCPrefNetworkServices: CFString](kscprefnetworkservices-swift.var.md)
+- [let kSCPrefNetworkServices: CFString](./kscprefnetworkservices-swift.var.md)
   The preference key for the `NetworkServices` dictionary.
-- [let kSCPrefSets: CFString](kscprefsets-swift.var.md)
+- [let kSCPrefSets: CFString](./kscprefsets-swift.var.md)
   The preference key for the `Sets` dictionary.
 
 

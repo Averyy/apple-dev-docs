@@ -1,12 +1,13 @@
 # bezelStyle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text field’s bezel style, square or rounded.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ The text field’s bezel style, square or rounded.
 var bezelStyle: NSTextField.BezelStyle { get set }
 ```
 
+```objc
+@property NSTextFieldBezelStyle bezelStyle;
+```
+
 #### Discussion
 
-To enable a bezel for a text field, set [`isBezeled`](nstextfield/isbezeled.md) to [`true`](https://developer.apple.com/documentation/swift/true), then set the bezel style. See [`NSTextField.BezelStyle`](nstextfield/bezelstyle-swift.enum.md) for available bezel styles.
+To enable a bezel for a text field, set [`isBezeled`](./isbezeled.md) to [`true`](../../Swift/true.md), then set the bezel style. See [`NSTextField.BezelStyle`](./bezelstyle-swift.enum.md) for available bezel styles.
 
-> **Note**:  When you set this property to [`NSTextField.BezelStyle.roundedBezel`](nstextfield/bezelstyle-swift.enum/roundedbezel.md), the text field doesn’t wrap the text. It displays using a single line.
+> **Note**:  When you set this property to [`NSTextField.BezelStyle.roundedBezel`](./bezelstyle-swift.enum/roundedbezel.md), the text field doesn’t wrap the text. It displays using a single line.
 
 ## See Also
 
-- [var backgroundColor: NSColor?](nstextfield/backgroundcolor.md)
+### Controlling the background
+- [var backgroundColor: NSColor?](./backgroundcolor.md)
   The color of the background the text field’s cell draws behind the text.
-- [var drawsBackground: Bool](nstextfield/drawsbackground.md)
+- [var drawsBackground: Bool](./drawsbackground.md)
   A Boolean value that controls whether the text field’s cell draws a background color behind the text.
-- [var isBezeled: Bool](nstextfield/isbezeled.md)
+- [var isBezeled: Bool](./isbezeled.md)
   A Boolean value that controls whether the text field draws a bezeled background around its contents.
-- [NSTextField.BezelStyle](nstextfield/bezelstyle-swift.enum.md)
+- [NSTextField.BezelStyle](./bezelstyle-swift.enum.md)
   The style of bezel the text field displays.
 
 

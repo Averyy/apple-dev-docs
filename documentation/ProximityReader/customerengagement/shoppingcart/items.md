@@ -1,7 +1,8 @@
 # items
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The items in the shopping cart.
 

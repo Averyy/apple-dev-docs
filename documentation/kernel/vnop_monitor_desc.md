@@ -1,14 +1,15 @@
 # vnop_monitor_desc
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 struct vnodeop_desc vnop_monitor_desc;
 ```
 

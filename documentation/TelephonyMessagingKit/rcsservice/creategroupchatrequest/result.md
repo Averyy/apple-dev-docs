@@ -1,7 +1,8 @@
 # RCSService.CreateGroupChatRequest.Result
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Structure representing the result of a request to create a group chat.
 
@@ -17,21 +18,21 @@ struct Result
 ## Topics
 
 ### Accessing result properties
-- [let groupHandle: RCSHandle.Group](rcsservice/creategroupchatrequest/result/grouphandle.md)
+- [let groupHandle: RCSHandle.Group](./result/grouphandle.md)
   Handle for the newly created group.
-- [let participants: [RCSHandle.URI]](rcsservice/creategroupchatrequest/result/participants.md)
+- [let participants: [RCSHandle.URI]](./result/participants.md)
   Array of participants in group chat.
-- [let subject: String?](rcsservice/creategroupchatrequest/result/subject.md)
+- [let subject: String?](./result/subject.md)
   The group chat’s subject.
 ### Supporting RCS encryption
-- [let isEndToEndEncrypted: Bool](rcsservice/creategroupchatrequest/result/isendtoendencrypted.md)
+- [let isEndToEndEncrypted: Bool](./result/isendtoendencrypted.md)
   A Boolean value indicating whether the associated group is end-to-end encrypted.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

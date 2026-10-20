@@ -1,7 +1,8 @@
 # BNNS.RandomGeneratorMethod.aesCtr
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that specifes an implementation that’s based on the Advanced Encryption Standard (AES) hash of a counter.
 
@@ -11,7 +12,7 @@ A constant that specifes an implementation that’s based on the Advanced Encryp
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration

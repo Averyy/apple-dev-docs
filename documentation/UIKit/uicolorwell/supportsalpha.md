@@ -1,7 +1,8 @@
 # supportsAlpha
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the color picker supports alpha values.
 
@@ -17,19 +18,24 @@ A Boolean value that determines whether the color picker supports alpha values.
 var supportsAlpha: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL supportsAlpha;
+```
+
 #### Discussion
 
-If this property is [`false`](https://developer.apple.com/documentation/swift/false), people can only pick fully opaque colors from the color picker.
+If this property is [`false`](../../Swift/false.md), people can only pick fully opaque colors from the color picker.
 
 ## See Also
 
-- [var title: String?](uicolorwell/title.md)
+### Configuring color picker attributes
+- [var title: String?](./title.md)
   The title for the color picker.
-- [var maximumLinearExposure: CGFloat](uicolorwell/maximumlinearexposure.md)
+- [var maximumLinearExposure: CGFloat](./maximumlinearexposure.md)
   The maximum exposure to apply to a color when returned by the color well.
-- [var supportsEyedropper: Bool](uicolorwell/supportseyedropper.md)
+- [var supportsEyedropper: Bool](./supportseyedropper.md)
   If set to `NO` the eyedropper functionality is not supported for this color well.
-- [var selectedColor: UIColor?](uicolorwell/selectedcolor.md)
+- [var selectedColor: UIColor?](./selectedcolor.md)
   The selected color in the color picker.
 
 

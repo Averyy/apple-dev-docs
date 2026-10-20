@@ -1,10 +1,11 @@
 # kConnectionModeReservedForFutureUse
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,12 +13,17 @@
 var kConnectionModeReservedForFutureUse: BluetoothHCIConnectionModes { get }
 ```
 
+```c
+kConnectionModeReservedForFutureUse
+```
+
 ## See Also
 
-- [var kConnectionActiveMode: BluetoothHCIConnectionModes](kconnectionactivemode.md)
-- [var kConnectionHoldMode: BluetoothHCIConnectionModes](kconnectionholdmode.md)
-- [var kConnectionParkMode: BluetoothHCIConnectionModes](kconnectionparkmode.md)
-- [var kConnectionSniffMode: BluetoothHCIConnectionModes](kconnectionsniffmode.md)
+### Constants
+- [var kConnectionActiveMode: BluetoothHCIConnectionModes](./kconnectionactivemode.md)
+- [var kConnectionHoldMode: BluetoothHCIConnectionModes](./kconnectionholdmode.md)
+- [var kConnectionParkMode: BluetoothHCIConnectionModes](./kconnectionparkmode.md)
+- [var kConnectionSniffMode: BluetoothHCIConnectionModes](./kconnectionsniffmode.md)
 
 
 ---

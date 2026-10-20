@@ -1,7 +1,8 @@
 # FocusedObject.Wrapper
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A wrapper around the underlying focused object that can create bindings to its properties using dynamic member lookup.
 
@@ -24,14 +25,15 @@ A wrapper around the underlying focused object that can create bindings to its p
 ## Topics
 
 ### Accessing members
-- [subscript<T>(dynamicMember _: ReferenceWritableKeyPath<ObjectType, T>) -> Binding<T>](focusedobject/wrapper/subscript(dynamicmember:).md)
+- [subscript<T>(dynamicMember _: ReferenceWritableKeyPath<ObjectType, T>) -> Binding<T>](./wrapper/subscript%28dynamicmember%29.md)
   Returns a binding to the value of a given key path.
 
 ## See Also
 
-- [var projectedValue: FocusedObject<ObjectType>.Wrapper?](focusedobject/projectedvalue.md)
+### Getting the value
+- [var projectedValue: FocusedObject<ObjectType>.Wrapper?](./projectedvalue.md)
   A projection of the focused object that creates bindings to its properties using dynamic member lookup.
-- [var wrappedValue: ObjectType?](focusedobject/wrappedvalue.md)
+- [var wrappedValue: ObjectType?](./wrappedvalue.md)
   The underlying value referenced by the focused object.
 
 

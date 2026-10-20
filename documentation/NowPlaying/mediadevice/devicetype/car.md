@@ -1,7 +1,8 @@
 # MediaDevice.DeviceType.car
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An in-car entertainment system.
 

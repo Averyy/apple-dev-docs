@@ -1,7 +1,8 @@
 # backgroundImage(for:style:barMetrics:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the background image for the specified state, style, and metrics.
 
@@ -9,13 +10,17 @@ Returns the background image for the specified state, style, and metrics.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func backgroundImage(for state: UIControl.State, style: UIBarButtonItem.Style, barMetrics: UIBarMetrics) -> UIImage?
+```
+
+```objc
+- (UIImage *) backgroundImageForState:(UIControlState) state style:(UIBarButtonItemStyle) style barMetrics:(UIBarMetrics) barMetrics;
 ```
 
 #### Return Value
@@ -30,15 +35,16 @@ The background image associated with the specified state, style, and metrics.
 
 ## See Also
 
-- [func backgroundVerticalPositionAdjustment(for: UIBarMetrics) -> CGFloat](uibarbuttonitem/backgroundverticalpositionadjustment(for:).md)
+### Customizing the background
+- [func backgroundVerticalPositionAdjustment(for: UIBarMetrics) -> CGFloat](./backgroundverticalpositionadjustment%28for%29.md)
   Returns the background vertical position offset for specified bar metrics.
-- [func setBackgroundVerticalPositionAdjustment(CGFloat, for: UIBarMetrics)](uibarbuttonitem/setbackgroundverticalpositionadjustment(_:for:).md)
+- [func setBackgroundVerticalPositionAdjustment(CGFloat, for: UIBarMetrics)](./setbackgroundverticalpositionadjustment%28_,for%29.md)
   Sets the background vertical position offset for specified bar metrics.
-- [func backgroundImage(for: UIControl.State, barMetrics: UIBarMetrics) -> UIImage?](uibarbuttonitem/backgroundimage(for:barmetrics:).md)
+- [func backgroundImage(for: UIControl.State, barMetrics: UIBarMetrics) -> UIImage?](./backgroundimage%28for,barmetrics%29.md)
   Returns the background image for a specified state and bar metrics.
-- [func setBackgroundImage(UIImage?, for: UIControl.State, barMetrics: UIBarMetrics)](uibarbuttonitem/setbackgroundimage(_:for:barmetrics:).md)
+- [func setBackgroundImage(UIImage?, for: UIControl.State, barMetrics: UIBarMetrics)](./setbackgroundimage%28_,for,barmetrics%29.md)
   Sets the background image for a specified state and bar metrics.
-- [func setBackgroundImage(UIImage?, for: UIControl.State, style: UIBarButtonItem.Style, barMetrics: UIBarMetrics)](uibarbuttonitem/setbackgroundimage(_:for:style:barmetrics:).md)
+- [func setBackgroundImage(UIImage?, for: UIControl.State, style: UIBarButtonItem.Style, barMetrics: UIBarMetrics)](./setbackgroundimage%28_,for,style,barmetrics%29.md)
   Sets the background image for the specified state, style, and metrics.
 
 

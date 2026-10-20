@@ -2,6 +2,7 @@
 
 **Framework**: WebKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Determines permission to navigate to new content based on the specified preferences and action information.
@@ -32,6 +33,12 @@ The web page calls this method after the interaction occurs but before it attemp
 
 - `action`: Details about the action that triggered the navigation request.
 - `preferences`: The preferences to use when displaying the new webpage.
+
+## Default Implementations
+
+### WebPage.NavigationDeciding Implementations
+- [func decidePolicy(for: WebPage.NavigationAction, preferences: inout WebPage.NavigationPreferences) async -> WKNavigationActionPolicy](./decidepolicy%28for,preferences%29-3lqmr.md)
+  By default, this method immediately returns with a policy of `.allow`.
 
 
 ---

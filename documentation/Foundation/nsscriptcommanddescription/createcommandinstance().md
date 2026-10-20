@@ -1,7 +1,8 @@
 # createCommandInstance()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and returns an instance of the command object described by the receiver.
 
@@ -15,13 +16,18 @@ Creates and returns an instance of the command object described by the receiver.
 func createCommandInstance() -> NSScriptCommand
 ```
 
+```objc
+- (NSScriptCommand *) createCommandInstance;
+```
+
 #### Return Value
 
-The command object, instantiated from [`NSScriptCommand`](nsscriptcommand.md) or a subclass.
+The command object, instantiated from [`NSScriptCommand`](../nsscriptcommand.md) or a subclass.
 
 ## See Also
 
-- [func createCommandInstance(with: NSZone?) -> NSScriptCommand](nsscriptcommanddescription/createcommandinstance(with:).md)
+### Creating Commands
+- [func createCommandInstance(with: NSZone?) -> NSScriptCommand](./createcommandinstance%28with%29.md)
   Creates and returns an instance of the command object described by the receiver in the specified memory zone.
 
 

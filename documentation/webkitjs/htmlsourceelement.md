@@ -1,7 +1,8 @@
 # HTMLSourceElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,23 +10,23 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLSourceElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [media](htmlsourceelement/1632217-media.md)
-- [sizes](htmlsourceelement/2871164-sizes.md)
-- [src](htmlsourceelement/1633790-src.md)
-- [srcset](htmlsourceelement/2871291-srcset.md)
-- [type](htmlsourceelement/1630901-type.md)
+- [media](./htmlsourceelement/api-1632217-media.md)
+- [sizes](./htmlsourceelement/api-2871164-sizes.md)
+- [src](./htmlsourceelement/api-1633790-src.md)
+- [srcset](./htmlsourceelement/api-2871291-srcset.md)
+- [type](./htmlsourceelement/api-1630901-type.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

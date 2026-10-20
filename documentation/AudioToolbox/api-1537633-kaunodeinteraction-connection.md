@@ -1,6 +1,7 @@
 # kAUNodeInteraction_Connection
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: API Collection
 
 The different types of node interactions.
 
@@ -11,9 +12,9 @@ The term interaction is used as a general term to describe some interaction of a
 ## Topics
 
 ### Constants
-- [var kAUNodeInteraction_Connection: UInt32](kaunodeinteraction_connection.md)
+- [var kAUNodeInteraction_Connection: UInt32](./kaunodeinteraction_connection.md)
   connections between 2 audio units,
-- [var kAUNodeInteraction_InputCallback: UInt32](kaunodeinteraction_inputcallback.md)
+- [var kAUNodeInteraction_InputCallback: UInt32](./kaunodeinteraction_inputcallback.md)
   input callbacks being registered to a single audio unit’s input bus.
 
 

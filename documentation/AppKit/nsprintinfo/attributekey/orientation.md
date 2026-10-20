@@ -1,17 +1,22 @@
 # orientation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An `NSNumber` object containing an `NSPrintingOrientation`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 static let orientation: NSPrintInfo.AttributeKey
+```
+
+```c
+extern NSPrintInfoAttributeKey const NSPrintOrientation;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ static let orientation: NSPrintInfo.AttributeKey
 
 ## See Also
 
-- [static let paperName: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/papername.md)
+### Page Setup Attributes
+- [static let paperName: NSPrintInfo.AttributeKey](./papername.md)
   An `NSString` object containing the paper name.
-- [static let paperSize: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/papersize.md)
+- [static let paperSize: NSPrintInfo.AttributeKey](./papersize.md)
   An `NSSize` value specifying the height and width of paper in points.
-- [static let scalingFactor: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/scalingfactor.md)
+- [static let scalingFactor: NSPrintInfo.AttributeKey](./scalingfactor.md)
   Scale factor percentage before pagination.
 
 

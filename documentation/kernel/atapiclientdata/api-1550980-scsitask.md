@@ -1,7 +1,8 @@
 # scsiTask
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 SCSITaskIdentifier of request.
 
@@ -10,7 +11,7 @@ SCSITaskIdentifier of request.
 
 ## Declaration
 
-```swift
+```c
 SCSITaskIdentifier scsiTask;
 ```
 

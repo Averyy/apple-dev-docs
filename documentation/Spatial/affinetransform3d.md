@@ -1,7 +1,8 @@
 # AffineTransform3D
 
 **Framework**: Spatial  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A 3D affine transformation matrix.
 
@@ -20,149 +21,154 @@ A 3D affine transformation matrix.
 struct AffineTransform3D
 ```
 
+```c
+typedef struct { ... } SPAffineTransform3D;
+```
+
 ## Topics
 
 ### Creating a 3D affine transform structure
-- [init()](affinetransform3d/init-2uqjl.md)
+- [init()](./affinetransform3d/init%28%29-2uqjl.md)
   Creates an affine transform.
-- [init()](affinetransform3d/init-6ntm3.md)
+- [init()](./affinetransform3d/init%28%29-6ntm3.md)
   Returns a new identity affine transform.
-- [init(simd_float4x3)](affinetransform3d/init(_:)-52vpb.md)
+- [init(simd_float4x3)](./affinetransform3d/init%28_%29-52vpb.md)
   Creates an affine transform from the specified single-precision matrix.
-- [init(simd_double4x3)](affinetransform3d/init(_:)-722a2.md)
+- [init(simd_double4x3)](./affinetransform3d/init%28_%29-722a2.md)
   Creates an affine transform from the specified 4 x 3 double-precision matrix.
-- [init(Transform)](affinetransform3d/init(_:)-e2xx.md)
+- [init(Transform)](./affinetransform3d/init%28_%29-e2xx.md)
   Creates an affine transform from the specified transform.
-- [init(matrix: simd_double4x3)](affinetransform3d/init(matrix:)-2inci.md)
+- [init(matrix: simd_double4x3)](./affinetransform3d/init%28matrix%29-2inci.md)
   Creates an affine transform from the specified double-precision matrix.
-- [init(pose: Pose3D)](affinetransform3d/init(pose:).md)
+- [init(pose: Pose3D)](./affinetransform3d/init%28pose%29.md)
   Creates an affine transform from the specified pose structure.
-- [init(scale: Size3D, rotation: Rotation3D, translation: Vector3D)](affinetransform3d/init(scale:rotation:translation:)-3somu.md)
+- [init(scale: Size3D, rotation: Rotation3D, translation: Vector3D)](./affinetransform3d/init%28scale,rotation,translation%29-3somu.md)
   Creates an affine transform from the specified scale, rotate, and translate transforms.
-- [init(scaledPose: ScaledPose3D)](affinetransform3d/init(scaledpose:).md)
+- [init(scaledPose: ScaledPose3D)](./affinetransform3d/init%28scaledpose%29.md)
   Creates an affine transform from the specified scale pose structure.
-- [init(shear: AxisWithFactors)](affinetransform3d/init(shear:).md)
+- [init(shear: AxisWithFactors)](./affinetransform3d/init%28shear%29.md)
   Creates an affine transform from the specified shear transform.
-- [init(truncating: ProjectiveTransform3D)](affinetransform3d/init(truncating:)-40nzj.md)
+- [init(truncating: ProjectiveTransform3D)](./affinetransform3d/init%28truncating%29-40nzj.md)
   Returns a new affine transform structure from the specified projective transform.
-- [init(truncating: simd_float4x4)](affinetransform3d/init(truncating:)-5wjxy.md)
+- [init(truncating: simd_float4x4)](./affinetransform3d/init%28truncating%29-5wjxy.md)
   Returns a new affine transform structure from the specified single-precision 4 x 4 matrix truncated to a  4 x 3 matrix.
-- [init(truncating: simd_double4x4)](affinetransform3d/init(truncating:)-9fd9g.md)
+- [init(truncating: simd_double4x4)](./affinetransform3d/init%28truncating%29-9fd9g.md)
   Returns a new affine transform structure from the specified 4 x 4 matrix truncated to a  4 x 3 matrix.
 ### Transforming a 3D affine transform structure
-- [struct Axis3D](axis3d.md)
+- [struct Axis3D](./axis3d.md)
   Constants that describe an axis.
-- [enum AxisWithFactors](axiswithfactors.md)
+- [enum AxisWithFactors](./axiswithfactors.md)
   Constants that describe the axis of a shear transform.
-- [func changeBasis(from: AffineTransform3D, to: AffineTransform3D) -> AffineTransform3D?](affinetransform3d/changebasis(from:to:).md)
+- [func changeBasis(from: AffineTransform3D, to: AffineTransform3D) -> AffineTransform3D?](./affinetransform3d/changebasis%28from,to%29.md)
   Returns a new affine transform structure by applying a change-of-basis.
-- [func flip(along: Axis3D)](affinetransform3d/flip(along:).md)
+- [func flip(along: Axis3D)](./affinetransform3d/flip%28along%29.md)
   Flips an affine transform along the specified axis.
-- [func flipped(along: Axis3D) -> AffineTransform3D](affinetransform3d/flipped(along:).md)
+- [func flipped(along: Axis3D) -> AffineTransform3D](./affinetransform3d/flipped%28along%29.md)
   Returns an affine transform that results from flipping it along the specified axis.
-- [var inverse: AffineTransform3D?](affinetransform3d/inverse.md)
+- [var inverse: AffineTransform3D?](./affinetransform3d/inverse.md)
   The affine transform’s inverse.
-- [func scaledBy(x: Double, y: Double, z: Double) -> AffineTransform3D](affinetransform3d/scaledby(x:y:z:).md)
+- [func scaledBy(x: Double, y: Double, z: Double) -> AffineTransform3D](./affinetransform3d/scaledby%28x,y,z%29.md)
   Returns a transform that results from scaling with specified double-precision values.
-- [func sheared(AxisWithFactors) -> AffineTransform3D](affinetransform3d/sheared(_:).md)
+- [func sheared(AxisWithFactors) -> AffineTransform3D](./affinetransform3d/sheared%28_%29.md)
   Returns an affine transform that results from shearing over an axis by shear factors for the other two axes.
 ### Decomposing a 3D affine transform
-- [var rotation: Rotation3D?](affinetransform3d/rotation.md)
+- [var rotation: Rotation3D?](./affinetransform3d/rotation.md)
   The affine transform’s rotation.
-- [var scale: Size3D](affinetransform3d/scale.md)
+- [var scale: Size3D](./affinetransform3d/scale.md)
   The affine transform’s scale.
-- [var translation: Vector3D](affinetransform3d/translation.md)
+- [var translation: Vector3D](./affinetransform3d/translation.md)
   The translation component of the affine transform.
 ### Checking characteristics
-- [struct Dimension3DSet](dimension3dset.md)
+- [struct Dimension3DSet](./dimension3dset.md)
   A set of dimensions.
-- [var isInvertible: Bool](affinetransform3d/isinvertible.md)
+- [var isInvertible: Bool](./affinetransform3d/isinvertible.md)
   Returns a Boolean value that indicates whether the transform is invertible.
-- [func isUniform(overDimensions: Dimension3DSet) -> Bool](affinetransform3d/isuniform(overdimensions:).md)
+- [func isUniform(overDimensions: Dimension3DSet) -> Bool](./affinetransform3d/isuniform%28overdimensions%29.md)
   Returns a Boolean value that indicates whether the transform scales equally over the specified dimensions.
-- [var matrix: simd_double4x3](affinetransform3d/matrix.md)
+- [var matrix: simd_double4x3](./affinetransform3d/matrix.md)
   The affine transform’s underlying matrix.
-- [var matrix3x3: simd_double3x3](affinetransform3d/matrix3x3.md)
+- [var matrix3x3: simd_double3x3](./affinetransform3d/matrix3x3.md)
   The first three columns of an affine transform’s underlying matrix.
-- [var matrix4x4: simd_double4x4](affinetransform3d/matrix4x4.md)
+- [var matrix4x4: simd_double4x4](./affinetransform3d/matrix4x4.md)
   A 4 x 4 matrix that results from constructing the affine transform’s underlying matrix.
 ### Comparing values
-- [static func == (AffineTransform3D, AffineTransform3D) -> Bool](affinetransform3d/==(_:_:).md)
+- [static func == (AffineTransform3D, AffineTransform3D) -> Bool](./affinetransform3d/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two values are equal.
-- [func isApproximatelyEqual(to: AffineTransform3D, tolerance: Double) -> Bool](affinetransform3d/isapproximatelyequal(to:tolerance:).md)
+- [func isApproximatelyEqual(to: AffineTransform3D, tolerance: Double) -> Bool](./affinetransform3d/isapproximatelyequal%28to,tolerance%29.md)
   Returns a Boolean value that indicates whether two transforms are equal within a specified tolerance.
 ### Applying arithmetic operations
-- [static func * (AffineTransform3D, AffineTransform3D) -> AffineTransform3D](affinetransform3d/*(_:_:).md)
+- [static func * (AffineTransform3D, AffineTransform3D) -> AffineTransform3D](./affinetransform3d/star%28_,_%29.md)
   Returns the concatenation of two affine transforms.
-- [static func *= (inout AffineTransform3D, AffineTransform3D)](affinetransform3d/*=(_:_:).md)
+- [static func *= (inout AffineTransform3D, AffineTransform3D)](./affinetransform3d/stareq%28_,_%29.md)
   Concatenates two affine transforms and stores the result in the left-hand-side variable.
 ### Deprecated symbols
-- [init?(simd_float4x4)](affinetransform3d/init(_:)-41dx7.md)
+- [init?(simd_float4x4)](./affinetransform3d/init%28_%29-41dx7.md)
   Creates an affine transform from the specified 4 x 4 single-precision matrix.
-- [init?(simd_double4x4)](affinetransform3d/init(_:)-6bm4k.md)
+- [init?(simd_double4x4)](./affinetransform3d/init%28_%29-6bm4k.md)
   Creates an affine transform from the specified 4 x 4 double-precision matrix.
-- [init?(matrix: simd_double4x4)](affinetransform3d/init(matrix:)-2tgp8.md)
+- [init?(matrix: simd_double4x4)](./affinetransform3d/init%28matrix%29-2tgp8.md)
   Creates an affine transform from the specified 4 x 4 double-precision matrix.
-- [init(matrix: simd_float4x3)](affinetransform3d/init(matrix:)-6icxq.md)
+- [init(matrix: simd_float4x3)](./affinetransform3d/init%28matrix%29-6icxq.md)
   Creates an affine transform from the specified single-precision matrix.
-- [init?(matrix: simd_float4x4)](affinetransform3d/init(matrix:)-82rxz.md)
+- [init?(matrix: simd_float4x4)](./affinetransform3d/init%28matrix%29-82rxz.md)
   Creates an affine transform from the specified 4 x 4 single-precision matrix.
-- [init?(projectiveTransform: ProjectiveTransform3D)](affinetransform3d/init(projectivetransform:).md)
+- [init?(projectiveTransform: ProjectiveTransform3D)](./affinetransform3d/init%28projectivetransform%29.md)
   Creates an affine transform from the specified projective transform.
-- [init(scale: Size3D, rotation: Rotation3D, translation: Size3D)](affinetransform3d/init(scale:rotation:translation:)-40dow.md)
+- [init(scale: Size3D, rotation: Rotation3D, translation: Size3D)](./affinetransform3d/init%28scale,rotation,translation%29-40dow.md)
   Creates an affine transform from the specified scale, rotate, and translate transforms.
-- [init(translation: Size3D)](affinetransform3d/init(translation:).md)
-- [func inverted() -> AffineTransform3D?](affinetransform3d/inverted.md)
+- [init(translation: Size3D)](./affinetransform3d/init%28translation%29.md)
+- [func inverted() -> AffineTransform3D?](./affinetransform3d/inverted%28%29.md)
   Returns a new transform that results from inverting an existing affine transform.
-- [var offset: Vector3D](affinetransform3d/offset.md)
+- [var offset: Vector3D](./affinetransform3d/offset.md)
   The affine transform’s translation.
 ### Initializers
-- [init(AffineTransform3DFloat)](affinetransform3d/init(_:)-7eksa.md)
+- [init(AffineTransform3DFloat)](./affinetransform3d/init%28_%29-7eksa.md)
   Returns a double-precision affine transformation from a single-precision affine transformation.
 ### Instance Properties
-- [var columns: (Vector3D, Vector3D, Vector3D, Vector3D)](affinetransform3d/columns.md)
+- [var columns: (Vector3D, Vector3D, Vector3D, Vector3D)](./affinetransform3d/columns.md)
   The columns of the underlying matrix.
 ### Default Implementations
-- [CustomReflectable Implementations](affinetransform3d/customreflectable-implementations.md)
-- [Decodable Implementations](affinetransform3d/decodable-implementations.md)
-- [Encodable Implementations](affinetransform3d/encodable-implementations.md)
-- [Equatable Implementations](affinetransform3d/equatable-implementations.md)
-- [Hashable Implementations](affinetransform3d/hashable-implementations.md)
-- [Scalable3DProtocol Implementations](affinetransform3d/scalable3dprotocol-implementations.md)
-- [Shearable3DProtocol Implementations](affinetransform3d/shearable3dprotocol-implementations.md)
-- [Transform3DProtocol Implementations](affinetransform3d/transform3dprotocol-implementations.md)
+- [CustomReflectable Implementations](./affinetransform3d/customreflectable-implementations.md)
+- [Decodable Implementations](./affinetransform3d/decodable-implementations.md)
+- [Encodable Implementations](./affinetransform3d/encodable-implementations.md)
+- [Equatable Implementations](./affinetransform3d/equatable-implementations.md)
+- [Hashable Implementations](./affinetransform3d/hashable-implementations.md)
+- [Scalable3DProtocol Implementations](./affinetransform3d/scalable3dprotocol-implementations.md)
+- [Shearable3DProtocol Implementations](./affinetransform3d/shearable3dprotocol-implementations.md)
+- [Transform3DProtocol Implementations](./affinetransform3d/transform3dprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Rotatable3D](rotatable3d.md)
-- [Rotatable3DProtocol](rotatable3dprotocol.md)
-- [Scalable3D](scalable3d.md)
-- [Scalable3DProtocol](scalable3dprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Shearable3D](shearable3d.md)
-- [Shearable3DProtocol](shearable3dprotocol.md)
-- [SpatialTypeProtocol](spatialtypeprotocol.md)
-- [Transform3DProtocol](transform3dprotocol.md)
-- [Translatable3D](translatable3d.md)
-- [Translatable3DProtocol](translatable3dprotocol.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Rotatable3D](./rotatable3d.md)
+- [Rotatable3DProtocol](./rotatable3dprotocol.md)
+- [Scalable3D](./scalable3d.md)
+- [Scalable3DProtocol](./scalable3dprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Shearable3D](./shearable3d.md)
+- [Shearable3DProtocol](./shearable3dprotocol.md)
+- [SpatialTypeProtocol](./spatialtypeprotocol.md)
+- [Transform3DProtocol](./transform3dprotocol.md)
+- [Translatable3D](./translatable3d.md)
+- [Translatable3DProtocol](./translatable3dprotocol.md)
 
 ## See Also
 
-- [struct AffineTransform3DFloat](affinetransform3dfloat.md)
-- [struct ProjectiveTransform3D](projectivetransform3d.md)
+### Affine and projective transforms
+- [struct AffineTransform3DFloat](./affinetransform3dfloat.md)
+- [struct ProjectiveTransform3D](./projectivetransform3d.md)
   A 3D projective transformation matrix.
-- [struct ProjectiveTransform3DFloat](projectivetransform3dfloat.md)
+- [struct ProjectiveTransform3DFloat](./projectivetransform3dfloat.md)
   A single-precision 3D projective transformation matrix.
 
 

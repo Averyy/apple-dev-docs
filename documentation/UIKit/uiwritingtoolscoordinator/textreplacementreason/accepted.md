@@ -1,7 +1,8 @@
 # UIWritingToolsCoordinator.TextReplacementReason.accepted
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to replace the text in your view when a grammar suggestion is accepted.
 
@@ -15,6 +16,10 @@ An option to replace the text in your view when a grammar suggestion is accepted
 
 ```swift
 case accepted
+```
+
+```c
+UIWritingToolsCoordinatorTextReplacementReasonAccepted
 ```
 
 #### Discussion

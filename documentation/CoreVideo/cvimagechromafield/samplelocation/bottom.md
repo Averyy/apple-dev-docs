@@ -1,7 +1,8 @@
 # CVImageChromaField.SampleLocation.bottom
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Chroma sample is horizontally centered, but is co-sited with the bottom row of luma samples.
 

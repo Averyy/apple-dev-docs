@@ -1,7 +1,8 @@
 # init(_:isPresented:arrowEdge:anchorID:action:)
 
 **Framework**: TipKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tip view with an optional arrow.
 
@@ -21,9 +22,11 @@ Creates a tip view with an optional arrow.
 @preconcurrency init<AnchorID>(_ tip: (any Tip)?, isPresented: Binding<Bool>? = nil, arrowEdge: Edge? = nil, anchorID: AnchorID, action: @escaping @MainActor @Sendable (Tips.Action) -> Void = { _ in }) where Content == AnyTip, AnchorID : Hashable, AnchorID : Sendable
 ```
 
+Available when `Content` conforms to `Tip`.
+
 #### Discussion
 
-Use a `TipView` when you want to indicate the UI element to which the tip applies, but don’t want to directly anchor the tip view to that element. Use the [`popoverTip(_:arrowEdge:action:)`](https://developer.apple.com/documentation/swiftui/view/popovertip(_:arrowedge:action:)) to anchor your tip to an element.
+Use a `TipView` when you want to indicate the UI element to which the tip applies, but don’t want to directly anchor the tip view to that element. Use the [`popoverTip(_:arrowEdge:action:)`](../../SwiftUI/view/popovertip%28_,arrowedge,action%29.md) to anchor your tip to an element.
 
 ## Parameters
 
@@ -35,9 +38,10 @@ Use a `TipView` when you want to indicate the UI element to which the tip applie
 
 ## See Also
 
-- [init((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void)](tipview/init(_:arrowedge:action:).md)
+### Creating a tip view
+- [init((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void)](./init%28_,arrowedge,action%29.md)
   Creates a tip view with an optional arrow.
-- [init((any Tip)?, isPresented: Binding<Bool>?, arrowEdge: Edge?, action: (Tips.Action) -> Void)](tipview/init(_:ispresented:arrowedge:action:).md)
+- [init((any Tip)?, isPresented: Binding<Bool>?, arrowEdge: Edge?, action: (Tips.Action) -> Void)](./init%28_,ispresented,arrowedge,action%29.md)
   Creates a tip view with an optional arrow.
 
 

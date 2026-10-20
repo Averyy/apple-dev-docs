@@ -1,7 +1,8 @@
 # items
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dynamic items associated with the current field behavior.
 
@@ -18,15 +19,20 @@ The dynamic items associated with the current field behavior.
 var items: [any UIDynamicItem] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<id<UIDynamicItem>> * items;
+```
+
 #### Discussion
 
 When it is enabled, the current field applies its behavior to all of the items in the array.
 
 ## See Also
 
-- [func addItem(any UIDynamicItem)](uifieldbehavior/additem(_:).md)
+### Managing the associated dynamic items
+- [func addItem(any UIDynamicItem)](./additem%28_%29.md)
   Associates the field behavior with the specified dynamic item.
-- [func removeItem(any UIDynamicItem)](uifieldbehavior/removeitem(_:).md)
+- [func removeItem(any UIDynamicItem)](./removeitem%28_%29.md)
   Removes the field behavior from the specified dynamic item.
 
 

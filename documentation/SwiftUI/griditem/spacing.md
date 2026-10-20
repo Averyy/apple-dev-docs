@@ -1,7 +1,8 @@
 # spacing
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The spacing to the next item.
 
@@ -26,11 +27,12 @@ If this value is `nil`, the item uses a reasonable default for the current platf
 
 ## See Also
 
-- [var alignment: Alignment?](griditem/alignment.md)
+### Inspecting grid item properties
+- [var alignment: Alignment?](./alignment.md)
   The alignment to use when placing each view.
-- [var size: GridItem.Size](griditem/size-swift.property.md)
+- [var size: GridItem.Size](./size-swift.property.md)
   The size of the item, which is the width of a column item or the height of a row item.
-- [GridItem.Size](griditem/size-swift.enum.md)
+- [GridItem.Size](./size-swift.enum.md)
   The size in the minor axis of one or more rows or columns in a grid layout.
 
 

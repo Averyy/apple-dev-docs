@@ -1,7 +1,8 @@
 # AccessibilityNotification.Announcement
 
 **Framework**: Accessibility  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A notification that an app posts when it needs to convey an announcement to an assistive app.
 
@@ -22,11 +23,11 @@ struct Announcement
 
 #### Overview
 
-Include an announcement value, such as [`String`](https://developer.apple.com/documentation/swift/string) or [`AttributedString`](https://developer.apple.com/documentation/foundation/attributedstring), for an assistive app to announce.
+Include an announcement value, such as [`String`](../../Swift/string.md) or [`AttributedString`](../../Foundation/attributedstring.md), for an assistive app to announce.
 
 Optionally, you can apply accessibility speech attributes to the announcement. For example, you can set a priority to specify the announcement’s importance relative to other announcements that are in the queue for an assistive app to speak. Announcement priorities give you more control over which announcements people need to hear, and which ones are acceptable to ignore or interrupt.
 
-You specify an announcement priority using the [`accessibilitySpeechAnnouncementPriority`](https://developer.apple.com/documentation/foundation/attributescopes/accessibilityattributes/accessibilityspeechannouncementpriority) property. The following code shows an example of how to post an announcement notification with a high priority, which interrupts other speech and isn’t interruptible after it starts:
+You specify an announcement priority using the [`accessibilitySpeechAnnouncementPriority`](../../Foundation/attributescopes/accessibilityattributes/accessibilityspeechannouncementpriority.md) property. The following code shows an example of how to post an announcement notification with a high priority, which interrupts other speech and isn’t interruptible after it starts:
 
 ```swift
 import SwiftUI
@@ -49,20 +50,21 @@ var body: some View {
 ## Topics
 
 ### Creating an announcement notification
-- [init(String)](accessibilitynotification/announcement/init(_:)-621va.md)
+- [init(String)](./announcement/init%28_%29-621va.md)
   Creates an announcement notification with a string.
-- [init(NSAttributedString)](accessibilitynotification/announcement/init(_:)-46byj.md)
+- [init(NSAttributedString)](./announcement/init%28_%29-46byj.md)
   Creates an announcement notification with an attributed string value.
-- [init(AttributedString)](accessibilitynotification/announcement/init(_:)-btpf.md)
+- [init(AttributedString)](./announcement/init%28_%29-btpf.md)
   Creates an announcement notification with an attributed string object.
 
 ## See Also
 
-- [AccessibilityNotification.LayoutChanged](accessibilitynotification/layoutchanged.md)
+### Notifications
+- [AccessibilityNotification.LayoutChanged](./layoutchanged.md)
   A notification that an app posts when the layout of a screen changes.
-- [AccessibilityNotification.ScreenChanged](accessibilitynotification/screenchanged.md)
+- [AccessibilityNotification.ScreenChanged](./screenchanged.md)
   A notification that an app posts when a new view appears that occupies a major portion of the screen.
-- [AccessibilityNotification.PageScrolled](accessibilitynotification/pagescrolled.md)
+- [AccessibilityNotification.PageScrolled](./pagescrolled.md)
   A notification that an app posts when a scroll action completes.
 
 

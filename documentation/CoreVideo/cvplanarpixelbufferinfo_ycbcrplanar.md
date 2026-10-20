@@ -1,7 +1,8 @@
 # CVPlanarPixelBufferInfo_YCbCrPlanar
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure for describing YCbCr planar buffers.
 
@@ -20,36 +21,41 @@ A structure for describing YCbCr planar buffers.
 struct CVPlanarPixelBufferInfo_YCbCrPlanar
 ```
 
+```c
+struct CVPlanarPixelBufferInfo_YCbCrPlanar;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cvplanarpixelbufferinfo_ycbcrplanar/init.md)
-- [init(componentInfoY: CVPlanarComponentInfo, componentInfoCb: CVPlanarComponentInfo, componentInfoCr: CVPlanarComponentInfo)](cvplanarpixelbufferinfo_ycbcrplanar/init(componentinfoy:componentinfocb:componentinfocr:).md)
+- [init()](./cvplanarpixelbufferinfo_ycbcrplanar/init%28%29.md)
+- [init(componentInfoY: CVPlanarComponentInfo, componentInfoCb: CVPlanarComponentInfo, componentInfoCr: CVPlanarComponentInfo)](./cvplanarpixelbufferinfo_ycbcrplanar/init%28componentinfoy,componentinfocb,componentinfocr%29.md)
 ### Properties
-- [var componentInfoCb: CVPlanarComponentInfo](cvplanarpixelbufferinfo_ycbcrplanar/componentinfocb.md)
-  A [`CVPlanarComponentInfo`](cvplanarcomponentinfo.md) structure containing information on the Cb component of the buffer.
-- [var componentInfoCr: CVPlanarComponentInfo](cvplanarpixelbufferinfo_ycbcrplanar/componentinfocr.md)
-  A [`CVPlanarComponentInfo`](cvplanarcomponentinfo.md) structure containing information on the Cr component of the buffer.
-- [var componentInfoY: CVPlanarComponentInfo](cvplanarpixelbufferinfo_ycbcrplanar/componentinfoy.md)
-  A [`CVPlanarComponentInfo`](cvplanarcomponentinfo.md) structure containing information on the Y component of the buffer.
+- [var componentInfoCb: CVPlanarComponentInfo](./cvplanarpixelbufferinfo_ycbcrplanar/componentinfocb.md)
+  A [`CVPlanarComponentInfo`](./cvplanarcomponentinfo.md) structure containing information on the Cb component of the buffer.
+- [var componentInfoCr: CVPlanarComponentInfo](./cvplanarpixelbufferinfo_ycbcrplanar/componentinfocr.md)
+  A [`CVPlanarComponentInfo`](./cvplanarcomponentinfo.md) structure containing information on the Cr component of the buffer.
+- [var componentInfoY: CVPlanarComponentInfo](./cvplanarpixelbufferinfo_ycbcrplanar/componentinfoy.md)
+  A [`CVPlanarComponentInfo`](./cvplanarcomponentinfo.md) structure containing information on the Y component of the buffer.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias CVPixelBuffer](cvpixelbuffer.md)
+### Data Types
+- [typealias CVPixelBuffer](./cvpixelbuffer.md)
   A reference to a Core Video pixel buffer object.
-- [struct CVPixelBufferLockFlags](cvpixelbufferlockflags.md)
-  The flags to pass to [`CVPixelBufferLockBaseAddress(_:_:)`](cvpixelbufferlockbaseaddress(_:_:).md) and [`CVPixelBufferUnlockBaseAddress(_:_:)`](cvpixelbufferunlockbaseaddress(_:_:).md).
-- [struct CVPlanarComponentInfo](cvplanarcomponentinfo.md)
+- [struct CVPixelBufferLockFlags](./cvpixelbufferlockflags.md)
+  The flags to pass to [`CVPixelBufferLockBaseAddress(_:_:)`](./cvpixelbufferlockbaseaddress%28_,_%29.md) and [`CVPixelBufferUnlockBaseAddress(_:_:)`](./cvpixelbufferunlockbaseaddress%28_,_%29.md).
+- [struct CVPlanarComponentInfo](./cvplanarcomponentinfo.md)
   A structure for describing planar components.
-- [struct CVPlanarPixelBufferInfo](cvplanarpixelbufferinfo.md)
+- [struct CVPlanarPixelBufferInfo](./cvplanarpixelbufferinfo.md)
   A structure for describing planar buffers.
-- [struct CVPlanarPixelBufferInfo_YCbCrBiPlanar](cvplanarpixelbufferinfo_ycbcrbiplanar.md)
+- [struct CVPlanarPixelBufferInfo_YCbCrBiPlanar](./cvplanarpixelbufferinfo_ycbcrbiplanar.md)
   A structure for describing YCbCr biplanar buffers.
 
 

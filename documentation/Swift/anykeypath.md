@@ -1,7 +1,8 @@
 # AnyKeyPath
 
 **Framework**: Swift  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A type-erased key path, from any root type to any resulting value type.
 
@@ -23,31 +24,32 @@ class AnyKeyPath
 ## Topics
 
 ### Type Properties
-- [static var rootType: any Any.Type](anykeypath/roottype.md)
+- [static var rootType: any Any.Type](./anykeypath/roottype.md)
   The root type for this key path.
-- [static var valueType: any Any.Type](anykeypath/valuetype.md)
+- [static var valueType: any Any.Type](./anykeypath/valuetype.md)
   The value type for this key path.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](anykeypath/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](anykeypath/equatable-implementations.md)
-- [Hashable Implementations](anykeypath/hashable-implementations.md)
+- [CustomDebugStringConvertible Implementations](./anykeypath/customdebugstringconvertible-implementations.md)
+- [Equatable Implementations](./anykeypath/equatable-implementations.md)
+- [Hashable Implementations](./anykeypath/hashable-implementations.md)
 
 ## Relationships
 
 ### Inherited By
-- [PartialKeyPath](partialkeypath.md)
+- [PartialKeyPath](./partialkeypath.md)
 ### Conforms To
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [Hashable](hashable.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [Hashable](./hashable.md)
 
 ## See Also
 
-- [class KeyPath](keypath.md)
+### Key Paths
+- [class KeyPath](./keypath.md)
   A key path from a specific root type to a specific resulting value type.
-- [class PartialKeyPath](partialkeypath.md)
+- [class PartialKeyPath](./partialkeypath.md)
   A partially type-erased key path, from a concrete root type to any resulting value type.
 
 

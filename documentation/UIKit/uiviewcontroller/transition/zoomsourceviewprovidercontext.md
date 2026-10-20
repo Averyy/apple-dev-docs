@@ -1,7 +1,8 @@
 # UIViewController.Transition.ZoomSourceViewProviderContext
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A context object that contains references to the view controllers from a zoom transition.
 
@@ -18,31 +19,36 @@ A context object that contains references to the view controllers from a zoom tr
 class ZoomSourceViewProviderContext
 ```
 
+```objc
+@interface UIZoomTransitionSourceViewProviderContext : NSObject
+```
+
 ## Topics
 
 ### Accessing the view controllers
-- [var sourceViewController: UIViewController](uiviewcontroller/transition/zoomsourceviewprovidercontext/sourceviewcontroller.md)
+- [var sourceViewController: UIViewController](./zoomsourceviewprovidercontext/sourceviewcontroller.md)
   The view controller that presents the zoomed view.
-- [var zoomedViewController: UIViewController](uiviewcontroller/transition/zoomsourceviewprovidercontext/zoomedviewcontroller.md)
+- [var zoomedViewController: UIViewController](./zoomsourceviewprovidercontext/zoomedviewcontroller.md)
   The view controller for the presented view.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [NSObjectProtocol](../../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [static func zoom(options: UIViewController.Transition.ZoomOptions?, sourceViewProvider: (UIViewController.Transition.ZoomSourceViewProviderContext) -> UIView?) -> Self](uiviewcontroller/transition/zoom(options:sourceviewprovider:).md)
+### Creating zoom transitions
+- [static func zoom(options: UIViewController.Transition.ZoomOptions?, sourceViewProvider: (UIViewController.Transition.ZoomSourceViewProviderContext) -> UIView?) -> Self](./zoom%28options,sourceviewprovider%29.md)
   Creates a zoom transition from the view that the source provider specifies.
-- [UIViewController.Transition.ZoomOptions](uiviewcontroller/transition/zoomoptions.md)
+- [UIViewController.Transition.ZoomOptions](./zoomoptions.md)
   Options for a zoom transition.
 
 

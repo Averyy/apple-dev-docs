@@ -1,6 +1,8 @@
 # Building a productivity app for Apple Watch
 
-**Framework**: watchOS apps
+**Framework**: watchOS apps  
+**Role**: Sample Code  
+**Download**: [BuildingAProductivityAppForAppleWatch.zip](https://docs-assets.developer.apple.com/published/7a1c1627c8b1/BuildingAProductivityAppForAppleWatch.zip)
 
 Create a watch app to manage and share a task list and visualize the status with a chart.
 
@@ -13,9 +15,9 @@ Create a watch app to manage and share a task list and visualize the status with
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC22 session [`10133: Build a productivity app for Apple Watch`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10133/).
+> **Note**: This sample code project is associated with WWDC22 session [10133: Build a productivity app for Apple Watch](https://developer.apple.com/wwdc22/10133/).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Before you run the sample code project in Xcode:
 
@@ -26,11 +28,12 @@ Before you run the sample code project in Xcode:
 
 ## See Also
 
-- [Supporting multiple watch sizes](supporting-multiple-watch-sizes.md)
+### User interface
+- [Supporting multiple watch sizes](./supporting-multiple-watch-sizes.md)
   Customize the layout of your user interface to support all Apple Watch sizes.
-- [Designing your app for the Always On state](designing-your-app-for-the-always-on-state.md)
+- [Designing your app for the Always On state](./designing-your-app-for-the-always-on-state.md)
   Customize your watchOS app’s user interface for continuous display.
-- [Setting the app’s accent color](setting-the-app-s-accent-color.md)
+- [Setting the app’s accent color](./setting-the-app-s-accent-color.md)
   Set your app’s accent color.
 
 

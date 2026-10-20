@@ -1,7 +1,8 @@
 # enterFullScreenMode(_:withOptions:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the view to full screen mode.
 
@@ -14,17 +15,21 @@ Sets the view to full screen mode.
 func enterFullScreenMode(_ screen: NSScreen, withOptions options: [NSView.FullScreenModeOptionKey : Any]? = nil) -> Bool
 ```
 
+```objc
+- (BOOL) enterFullScreenMode:(NSScreen *) screen withOptions:(NSDictionary<NSString *,id> *) options;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the view was able to enter full screen mode, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the view was able to enter full screen mode, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-When the [`fullScreenModeApplicationPresentationOptions`](nsview/fullscreenmodeoptionkey/fullscreenmodeapplicationpresentationoptions.md) is contained in the options dictionary, the presentation options that were in effect when this method is invoked are not altered, and no displays are captured.
+When the [`fullScreenModeApplicationPresentationOptions`](./fullscreenmodeoptionkey/fullscreenmodeapplicationpresentationoptions.md) is contained in the options dictionary, the presentation options that were in effect when this method is invoked are not altered, and no displays are captured.
 
-If you do not wish to capture the screen when going to full screen mode, you can add [`fullScreenModeApplicationPresentationOptions`](nsview/fullscreenmodeoptionkey/fullscreenmodeapplicationpresentationoptions.md) to the options dictionary with the value returned by the [`presentationOptions`](nsapplication/presentationoptions-swift.property.md).
+If you do not wish to capture the screen when going to full screen mode, you can add [`fullScreenModeApplicationPresentationOptions`](./fullscreenmodeoptionkey/fullscreenmodeapplicationpresentationoptions.md) to the options dictionary with the value returned by the [`presentationOptions`](../nsapplication/presentationoptions-swift.property.md).
 
-When the [`fullScreenModeApplicationPresentationOptions`](nsview/fullscreenmodeoptionkey/fullscreenmodeapplicationpresentationoptions.md) options is specified, exiting full screen mode using [`exitFullScreenMode(options:)`](nsview/exitfullscreenmode(options:).md) will restore the previously active [`presentationOptions`](nsapplication/presentationoptions-swift.property.md).
+When the [`fullScreenModeApplicationPresentationOptions`](./fullscreenmodeoptionkey/fullscreenmodeapplicationpresentationoptions.md) options is specified, exiting full screen mode using [`exitFullScreenMode(options:)`](./exitfullscreenmode%28options%29.md) will restore the previously active [`presentationOptions`](../nsapplication/presentationoptions-swift.property.md).
 
 ##### Special Considerations
 
@@ -37,12 +42,13 @@ In OS X v 10.5, invoking this method when the view was not in a window would cau
 
 ## See Also
 
-- [func exitFullScreenMode(options: [NSView.FullScreenModeOptionKey : Any]?)](nsview/exitfullscreenmode(options:).md)
+### Drawing the View in Fullscreen Mode
+- [func exitFullScreenMode(options: [NSView.FullScreenModeOptionKey : Any]?)](./exitfullscreenmode%28options%29.md)
   Instructs the view to exit full screen mode.
-- [var isInFullScreenMode: Bool](nsview/isinfullscreenmode.md)
+- [var isInFullScreenMode: Bool](./isinfullscreenmode.md)
   A Boolean value indicating whether the view is in full screen mode.
-- [NSView.FullScreenModeOptionKey](nsview/fullscreenmodeoptionkey.md)
-  These constants are keys that you can use in the options dictionary in [`enterFullScreenMode(_:withOptions:)`](nsview/enterfullscreenmode(_:withoptions:).md) and [`exitFullScreenMode(options:)`](nsview/exitfullscreenmode(options:).md).
+- [NSView.FullScreenModeOptionKey](./fullscreenmodeoptionkey.md)
+  These constants are keys that you can use in the options dictionary in [`enterFullScreenMode(_:withOptions:)`](./enterfullscreenmode%28_,withoptions%29.md) and [`exitFullScreenMode(options:)`](./exitfullscreenmode%28options%29.md).
 
 
 ---

@@ -1,18 +1,19 @@
 # CFURLCreateData(_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a `CFData` object containing the content of a given URL.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates a `CFData` object containing the content of a given URL.
 func CFURLCreateData(_ allocator: CFAllocator!, _ url: CFURL!, _ encoding: CFStringEncoding, _ escapeWhitespace: Bool) -> CFData!
 ```
 
+```c
+extern CFDataRefCFURLCreateData(CFAllocatorRef allocator, CFURLRef url, CFStringEncoding encoding, Boolean escapeWhitespace);
+```
+
 #### Return Value
 
-A new `CFData` object containing the content of `url`. Ownership follows the create rule. See [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A new `CFData` object containing the content of `url`. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
@@ -30,24 +35,25 @@ This function escapes any character that is not 7-bit ASCII with the byte-code f
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new `CFData` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new `CFData` object. Pass `NULL` or [`kCFAllocatorDefault`](./kcfallocatordefault.md) to use the current default allocator.
 - `url`: The URL to convert into a `CFData` object.
 - `encoding`: The string encoding to use when converting `url` into a `CFData` object.
 - `escapeWhitespace`: `true` if you want to escape whitespace characters in the URL, `false` otherwise.
 
 ## See Also
 
-- [func CFURLCreateStringByAddingPercentEscapes(CFAllocator!, CFString!, CFString!, CFString!, CFStringEncoding) -> CFString!](cfurlcreatestringbyaddingpercentescapes(_:_:_:_:_:).md)
+### Converting URLs to Other Representations
+- [func CFURLCreateStringByAddingPercentEscapes(CFAllocator!, CFString!, CFString!, CFString!, CFStringEncoding) -> CFString!](./cfurlcreatestringbyaddingpercentescapes%28_,_,_,_,_%29.md)
   Creates a copy of a string, replacing certain characters with the equivalent percent escape sequence based on the specified encoding.
-- [func CFURLCreateStringByReplacingPercentEscapes(CFAllocator!, CFString!, CFString!) -> CFString!](cfurlcreatestringbyreplacingpercentescapes(_:_:_:).md)
+- [func CFURLCreateStringByReplacingPercentEscapes(CFAllocator!, CFString!, CFString!) -> CFString!](./cfurlcreatestringbyreplacingpercentescapes%28_,_,_%29.md)
   Creates a new string by replacing any percent escape sequences with their character equivalent.
-- [func CFURLCreateStringByReplacingPercentEscapesUsingEncoding(CFAllocator!, CFString!, CFString!, CFStringEncoding) -> CFString!](cfurlcreatestringbyreplacingpercentescapesusingencoding(_:_:_:_:).md)
+- [func CFURLCreateStringByReplacingPercentEscapesUsingEncoding(CFAllocator!, CFString!, CFString!, CFStringEncoding) -> CFString!](./cfurlcreatestringbyreplacingpercentescapesusingencoding%28_,_,_,_%29.md)
   Creates a new string by replacing any percent escape sequences with their character equivalent.
-- [func CFURLGetFileSystemRepresentation(CFURL!, Bool, UnsafeMutablePointer<UInt8>!, CFIndex) -> Bool](cfurlgetfilesystemrepresentation(_:_:_:_:).md)
+- [func CFURLGetFileSystemRepresentation(CFURL!, Bool, UnsafeMutablePointer<UInt8>!, CFIndex) -> Bool](./cfurlgetfilesystemrepresentation%28_,_,_,_%29.md)
   Fills a buffer with the file system’s native string representation of a given URL’s path.
-- [func CFURLGetFSRef(CFURL!, OpaquePointer!) -> Bool](cfurlgetfsref(_:_:).md)
+- [func CFURLGetFSRef(CFURL!, OpaquePointer!) -> Bool](./cfurlgetfsref%28_,_%29.md)
   Converts a given URL to a file or directory object.
-- [func CFURLGetString(CFURL!) -> CFString!](cfurlgetstring(_:).md)
+- [func CFURLGetString(CFURL!) -> CFString!](./cfurlgetstring%28_%29.md)
   Returns the URL as a `CFString` object.
 
 

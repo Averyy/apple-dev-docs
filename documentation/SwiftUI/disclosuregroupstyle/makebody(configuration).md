@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a view that represents the body of a disclosure group.
@@ -22,7 +23,7 @@ Creates a view that represents the body of a disclosure group.
 
 #### Discussion
 
-SwiftUI calls this method for each instance of [`DisclosureGroup`](disclosuregroup.md) that you create within a view hierarchy where this style is the current [`DisclosureGroupStyle`](disclosuregroupstyle.md).
+SwiftUI calls this method for each instance of [`DisclosureGroup`](../disclosuregroup.md) that you create within a view hierarchy where this style is the current [`DisclosureGroupStyle`](../disclosuregroupstyle.md).
 
 ## Parameters
 
@@ -30,11 +31,12 @@ SwiftUI calls this method for each instance of [`DisclosureGroup`](disclosuregro
 
 ## See Also
 
-- [struct DisclosureGroupStyleConfiguration](disclosuregroupstyleconfiguration.md)
+### Creating custom disclosure group styles
+- [struct DisclosureGroupStyleConfiguration](../disclosuregroupstyleconfiguration.md)
   The properties of a disclosure group instance.
-- [DisclosureGroupStyle.Configuration](disclosuregroupstyle/configuration.md)
+- [DisclosureGroupStyle.Configuration](./configuration.md)
   The properties of a disclosure group instance.
-- [associatedtype Body : View](disclosuregroupstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the body of a disclosure group.
 
 

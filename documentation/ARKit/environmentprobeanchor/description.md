@@ -1,7 +1,8 @@
 # description
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this anchor.
 
@@ -16,7 +17,8 @@ var description: String { get }
 
 ## See Also
 
-- [var id: UUID](environmentprobeanchor/id.md)
+### Comparing environment probe anchors
+- [var id: UUID](./id.md)
   The unique identifier of this anchor.
 
 

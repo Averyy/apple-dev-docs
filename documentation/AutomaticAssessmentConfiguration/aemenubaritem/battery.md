@@ -1,7 +1,8 @@
 # battery
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Battery system menu bar item.
 
@@ -13,6 +14,10 @@ The Battery system menu bar item.
 
 ```swift
 static let battery: AEMenuBarItem
+```
+
+```c
+extern AEMenuBarItem const AEMenuBarItemBattery;
 ```
 
 

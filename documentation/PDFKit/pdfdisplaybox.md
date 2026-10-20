@@ -1,7 +1,8 @@
 # PDFDisplayBox
 
 **Framework**: PDFKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The following box types may be used with `PDFPage` drawing and bounds-setting methods. See the Adobe PDF Specification for more information on box types, units, and coordinate systems.
 
@@ -19,35 +20,40 @@ The following box types may be used with `PDFPage` drawing and bounds-setting me
 enum PDFDisplayBox
 ```
 
+```c
+enum PDFDisplayBox : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [PDFDisplayBox.mediaBox](pdfdisplaybox/mediabox.md)
+- [PDFDisplayBox.mediaBox](./pdfdisplaybox/mediabox.md)
   A rectangle defining the boundaries of the physical medium for display or printing, expressed in default user-space units.
-- [PDFDisplayBox.cropBox](pdfdisplaybox/cropbox.md)
+- [PDFDisplayBox.cropBox](./pdfdisplaybox/cropbox.md)
   A rectangle defining the boundaries of the visible region , expressed in default user-space units. Default value equal to `kPDFDisplayBoxMediaBox`.
-- [PDFDisplayBox.bleedBox](pdfdisplaybox/bleedbox.md)
+- [PDFDisplayBox.bleedBox](./pdfdisplaybox/bleedbox.md)
   A rectangle defining the boundaries of the clip region for the page contents in a production environment. Default value equal to `kPDFDisplayBoxCropBox`.
-- [PDFDisplayBox.trimBox](pdfdisplaybox/trimbox.md)
+- [PDFDisplayBox.trimBox](./pdfdisplaybox/trimbox.md)
   A rectangle defining the intended boundaries of the finished page. Default value equal to `kPDFDisplayBoxCropBox`.
-- [PDFDisplayBox.artBox](pdfdisplaybox/artbox.md)
+- [PDFDisplayBox.artBox](./pdfdisplaybox/artbox.md)
   A rectangle defining the boundaries of the page’s meaningful content including surrounding white space intended for display. Default value equal to `kPDFDisplayBoxCropBox`.
 ### Initializers
-- [init?(rawValue: Int)](pdfdisplaybox/init(rawvalue:).md)
+- [init?(rawValue: Int)](./pdfdisplaybox/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum PDFDisplayDirection](pdfdisplaydirection.md)
+### Supporting Types
+- [enum PDFDisplayDirection](./pdfdisplaydirection.md)
 
 
 ---

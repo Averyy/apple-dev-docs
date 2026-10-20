@@ -1,14 +1,15 @@
 # mpie_boost_cnt
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 mach_port_msgcount_t mpie_boost_cnt;
 ```
 

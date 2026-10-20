@@ -1,7 +1,8 @@
 # cpuOnly
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Options that restrict compute to the CPU only.
 
@@ -24,7 +25,8 @@ The resulting specialized model only uses the CPU during inference. Because all 
 
 ## See Also
 
-- [static let `default`: SpecializationOptions](specializationoptions/default.md)
+### Using preset options
+- [static let `default`: SpecializationOptions](./default.md)
   Options that allow the model to use all available compute units.
 
 

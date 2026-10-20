@@ -1,7 +1,8 @@
 # SecItemClass.certificateItemClass
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the item is an X509 certificate.
 
@@ -13,6 +14,10 @@ Indicates that the item is an X509 certificate.
 
 ```swift
 case certificateItemClass
+```
+
+```c
+kSecCertificateItemClass
 ```
 
 

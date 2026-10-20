@@ -1,7 +1,8 @@
 # AVAudioTime
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object you use to represent a moment in time.
 
@@ -20,6 +21,10 @@ An object you use to represent a moment in time.
 class AVAudioTime
 ```
 
+```objc
+@interface AVAudioTime : NSObject
+```
+
 #### Overview
 
 The `AVAudioTime` object represents a single moment in time in two ways:
@@ -34,69 +39,70 @@ Instances of this class are immutable.
 ## Topics
 
 ### Creating an audio time instance
-- [init(audioTimeStamp: UnsafePointer<AudioTimeStamp>, sampleRate: Double)](avaudiotime/init(audiotimestamp:samplerate:).md)
+- [init(audioTimeStamp: UnsafePointer<AudioTimeStamp>, sampleRate: Double)](./avaudiotime/init%28audiotimestamp,samplerate%29.md)
   Creates an audio time object with the specified timestamp and sample rate.
-- [init(hostTime: UInt64)](avaudiotime/init(hosttime:).md)
+- [init(hostTime: UInt64)](./avaudiotime/init%28hosttime%29.md)
   Creates an audio time object with the specified host time.
-- [init(hostTime: UInt64, sampleTime: AVAudioFramePosition, atRate: Double)](avaudiotime/init(hosttime:sampletime:atrate:).md)
+- [init(hostTime: UInt64, sampleTime: AVAudioFramePosition, atRate: Double)](./avaudiotime/init%28hosttime,sampletime,atrate%29.md)
   Creates an audio time object with the specified host time, sample time, and sample rate.
-- [init(sampleTime: AVAudioFramePosition, atRate: Double)](avaudiotime/init(sampletime:atrate:).md)
+- [init(sampleTime: AVAudioFramePosition, atRate: Double)](./avaudiotime/init%28sampletime,atrate%29.md)
   Creates an audio time object with the specified timestamp and sample rate.
-- [func extrapolateTime(fromAnchor: AVAudioTime) -> AVAudioTime?](avaudiotime/extrapolatetime(fromanchor:).md)
+- [func extrapolateTime(fromAnchor: AVAudioTime) -> AVAudioTime?](./avaudiotime/extrapolatetime%28fromanchor%29.md)
   Creates an audio time object by converting between host time and sample time.
 ### Manipulating host time
-- [var hostTime: UInt64](avaudiotime/hosttime.md)
+- [var hostTime: UInt64](./avaudiotime/hosttime.md)
   The host time.
-- [var isHostTimeValid: Bool](avaudiotime/ishosttimevalid.md)
+- [var isHostTimeValid: Bool](./avaudiotime/ishosttimevalid.md)
   A Boolean value that indicates whether the host time value is valid.
-- [class func hostTime(forSeconds: TimeInterval) -> UInt64](avaudiotime/hosttime(forseconds:).md)
+- [class func hostTime(forSeconds: TimeInterval) -> UInt64](./avaudiotime/hosttime%28forseconds%29.md)
   Converts seconds to host time.
-- [class func seconds(forHostTime: UInt64) -> TimeInterval](avaudiotime/seconds(forhosttime:).md)
+- [class func seconds(forHostTime: UInt64) -> TimeInterval](./avaudiotime/seconds%28forhosttime%29.md)
   Converts host time to seconds.
 ### Getting sample rate information
-- [var sampleRate: Double](avaudiotime/samplerate.md)
+- [var sampleRate: Double](./avaudiotime/samplerate.md)
   The sampling rate that the sample time property expresses.
-- [var sampleTime: AVAudioFramePosition](avaudiotime/sampletime.md)
+- [var sampleTime: AVAudioFramePosition](./avaudiotime/sampletime.md)
   The time as a number of audio samples that the current audio device tracks.
-- [var isSampleTimeValid: Bool](avaudiotime/issampletimevalid.md)
+- [var isSampleTimeValid: Bool](./avaudiotime/issampletimevalid.md)
   A Boolean value that indicates whether the sample time and sample rate properties are in a valid state.
 ### Getting the audio timestamp
-- [var audioTimeStamp: AudioTimeStamp](avaudiotime/audiotimestamp.md)
+- [var audioTimeStamp: AudioTimeStamp](./avaudiotime/audiotimestamp.md)
   The time as an audio timestamp.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAudioFile](avaudiofile.md)
+### Audio data
+- [class AVAudioFile](./avaudiofile.md)
   An object that represents an audio file that the system can open for reading or writing.
-- [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
+- [class AVAudioPCMBuffer](./avaudiopcmbuffer.md)
   An object that represents an audio buffer you use with PCM audio formats.
-- [class AVAudioCompressedBuffer](avaudiocompressedbuffer.md)
+- [class AVAudioCompressedBuffer](./avaudiocompressedbuffer.md)
   An object that represents an audio buffer that you use for compressed audio formats.
-- [struct AVReadOnlyAudioPCMBuffer](avreadonlyaudiopcmbuffer.md)
+- [struct AVReadOnlyAudioPCMBuffer](./avreadonlyaudiopcmbuffer.md)
   A read-only, Sendable audio buffer for safe concurrent access.
-- [class AVAudioBuffer](avaudiobuffer.md)
+- [class AVAudioBuffer](./avaudiobuffer.md)
   An object that represents a buffer of audio data with a format.
-- [class AVAudioFormat](avaudioformat.md)
+- [class AVAudioFormat](./avaudioformat.md)
   An object that describes the representation of an audio format.
-- [class AVAudioChannelLayout](avaudiochannellayout.md)
+- [class AVAudioChannelLayout](./avaudiochannellayout.md)
   An object that describes the roles of a set of audio channels.
-- [class AVAudioConverter](avaudioconverter.md)
+- [class AVAudioConverter](./avaudioconverter.md)
   An object that converts streams of audio between formats.
-- [Audio settings](audio-settings.md)
+- [Audio settings](./audio-settings.md)
   Configure audio processing settings using standard key and value constants.
 
 

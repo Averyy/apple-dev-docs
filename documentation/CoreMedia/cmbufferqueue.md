@@ -1,7 +1,8 @@
 # CMBufferQueue
 
 **Framework**: Core Media  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reference to a buffer queue instance.
 
@@ -20,6 +21,10 @@ A reference to a buffer queue instance.
 class CMBufferQueue
 ```
 
+```c
+typedef struct opaqueCMBufferQueue * CMBufferQueueRef;
+```
+
 #### Overview
 
 A `CMBufferQueue` is a queue of timed buffers backed by a Core Foundation object.
@@ -27,83 +32,83 @@ A `CMBufferQueue` is a queue of timed buffers backed by a Core Foundation object
 ## Topics
 
 ### Managing a Queue
-- [func enqueue(CMBuffer) throws](cmbufferqueue/enqueue(_:).md)
+- [func enqueue(CMBuffer) throws](./cmbufferqueue/enqueue%28_%29.md)
   Enqueues a buffer to the queue.
-- [func dequeue() -> CMBuffer?](cmbufferqueue/dequeue.md)
+- [func dequeue() -> CMBuffer?](./cmbufferqueue/dequeue%28%29.md)
   Dequeues a buffer from the queue.
-- [func dequeueIfDataReady() -> CMBuffer?](cmbufferqueue/dequeueifdataready.md)
+- [func dequeueIfDataReady() -> CMBuffer?](./cmbufferqueue/dequeueifdataready%28%29.md)
   Dequeues a buffer from the queue, if it’s ready.
-- [func markEndOfData() throws](cmbufferqueue/markendofdata.md)
+- [func markEndOfData() throws](./cmbufferqueue/markendofdata%28%29.md)
   Marks a buffer as being at the end of its data.
-- [func reset() throws](cmbufferqueue/reset.md)
+- [func reset() throws](./cmbufferqueue/reset%28%29.md)
   Empties the queue and resets its end-of-data state.
-- [func reset((CMBuffer) throws -> ()) throws](cmbufferqueue/reset(_:).md)
+- [func reset((CMBuffer) throws -> ()) throws](./cmbufferqueue/reset%28_%29.md)
   Resets a buffer with a callback block.
 ### Managing Triggers
-- [func installTrigger(condition: CMBufferQueue.TriggerCondition, CMBufferQueueTriggerHandler?) throws -> CMBufferQueue.TriggerToken](cmbufferqueue/installtrigger(condition:_:).md)
+- [func installTrigger(condition: CMBufferQueue.TriggerCondition, CMBufferQueueTriggerHandler?) throws -> CMBufferQueue.TriggerToken](./cmbufferqueue/installtrigger%28condition,_%29.md)
   Installs a trigger on the queue.
-- [func removeTrigger(CMBufferQueue.TriggerToken) throws](cmbufferqueue/removetrigger(_:).md)
+- [func removeTrigger(CMBufferQueue.TriggerToken) throws](./cmbufferqueue/removetrigger%28_%29.md)
   Removes a trigger from the queue.
-- [func testTrigger(CMBufferQueue.TriggerToken) -> Bool](cmbufferqueue/testtrigger(_:).md)
+- [func testTrigger(CMBufferQueue.TriggerToken) -> Bool](./cmbufferqueue/testtrigger%28_%29.md)
   Tests a trigger condition.
-- [CMBufferQueue.TriggerToken](cmbufferqueue/triggertoken.md)
+- [CMBufferQueue.TriggerToken](./cmbufferqueue/triggertoken.md)
   A type alias for a trigger token.
-- [CMBufferQueue.TriggerCondition](cmbufferqueue/triggercondition.md)
+- [CMBufferQueue.TriggerCondition](./cmbufferqueue/triggercondition.md)
   An enumeration of trigger conditions.
 ### Inspecting Duration and Timing
-- [var duration: CMTime](cmbufferqueue/duration.md)
+- [var duration: CMTime](./cmbufferqueue/duration.md)
   The sum of all durations of buffers in the queue.
-- [var totalSize: Int](cmbufferqueue/totalsize.md)
+- [var totalSize: Int](./cmbufferqueue/totalsize.md)
   The total size of all buffers in the queue.
-- [var firstDecodeTimeStamp: CMTime](cmbufferqueue/firstdecodetimestamp.md)
+- [var firstDecodeTimeStamp: CMTime](./cmbufferqueue/firstdecodetimestamp.md)
   The decode timestamp of the first buffer in the queue.
-- [var firstPresentationTimeStamp: CMTime](cmbufferqueue/firstpresentationtimestamp.md)
+- [var firstPresentationTimeStamp: CMTime](./cmbufferqueue/firstpresentationtimestamp.md)
   The presentation timestamp of the first buffer in the queue.
-- [var endPresentationTimeStamp: CMTime](cmbufferqueue/endpresentationtimestamp.md)
+- [var endPresentationTimeStamp: CMTime](./cmbufferqueue/endpresentationtimestamp.md)
   The greatest end presentation timestamp.
-- [var minDecodeTimeStamp: CMTime](cmbufferqueue/mindecodetimestamp.md)
+- [var minDecodeTimeStamp: CMTime](./cmbufferqueue/mindecodetimestamp.md)
   The earliest decode timestamp.
-- [var minPresentationTimeStamp: CMTime](cmbufferqueue/minpresentationtimestamp.md)
+- [var minPresentationTimeStamp: CMTime](./cmbufferqueue/minpresentationtimestamp.md)
   The earliest presentation timestamp.
-- [var maxPresentationTimeStamp: CMTime](cmbufferqueue/maxpresentationtimestamp.md)
+- [var maxPresentationTimeStamp: CMTime](./cmbufferqueue/maxpresentationtimestamp.md)
   The greatest presentation timestamp.
 ### Inspecting a Queue
-- [var isEmpty: Bool](cmbufferqueue/isempty.md)
+- [var isEmpty: Bool](./cmbufferqueue/isempty.md)
   A Boolean value that indicates whether the queue contains buffers.
-- [var bufferCount: CMItemCount](cmbufferqueue/buffercount.md)
+- [var bufferCount: CMItemCount](./cmbufferqueue/buffercount.md)
   The count of buffers in the queue.
-- [var head: CMBuffer?](cmbufferqueue/head.md)
+- [var head: CMBuffer?](./cmbufferqueue/head.md)
   The element at the head of the queue.
-- [var containsEndOfData: Bool](cmbufferqueue/containsendofdata.md)
+- [var containsEndOfData: Bool](./cmbufferqueue/containsendofdata.md)
   A Boolean value that indicates whether the buffer has its end-of-data state set.
-- [var isAtEndOfData: Bool](cmbufferqueue/isatendofdata.md)
+- [var isAtEndOfData: Bool](./cmbufferqueue/isatendofdata.md)
   A Boolean value that indicates whether that queue is at the end of its data.
 ### Validating a Queue
-- [func setValidationHandler((CMBufferQueue, CMBuffer) throws -> Void)](cmbufferqueue/setvalidationhandler(_:).md)
+- [func setValidationHandler((CMBufferQueue, CMBuffer) throws -> Void)](./cmbufferqueue/setvalidationhandler%28_%29.md)
   Sets validation handler for the queue to call before enqueuing buffers.
 ### Accessing Buffers
-- [var buffers: CMBufferQueue.Buffers](cmbufferqueue/buffers-swift.property.md)
+- [var buffers: CMBufferQueue.Buffers](./cmbufferqueue/buffers-swift.property.md)
   The buffers that the queue contains.
 ### Accessing the Type Identifier
-- [class var typeID: CFTypeID](cmbufferqueue/typeid.md)
+- [class var typeID: CFTypeID](./cmbufferqueue/typeid.md)
   The type identifier for this object.
 ### Data Types
-- [CMBufferQueue.Buffers](cmbufferqueue/buffers-swift.struct.md)
+- [CMBufferQueue.Buffers](./cmbufferqueue/buffers-swift.struct.md)
   A sequence of `CMBuffer`s.
-- [CMBufferQueue.Handlers](cmbufferqueue/handlers.md)
-- [CMBufferQueue.Error](cmbufferqueue/error.md)
+- [CMBufferQueue.Handlers](./cmbufferqueue/handlers.md)
+- [CMBufferQueue.Error](./cmbufferqueue/error.md)
 ### Initializers
-- [init(referencing: CMBufferQueue)](cmbufferqueue/init(referencing:).md)
+- [init(referencing: CMBufferQueue)](./cmbufferqueue/init%28referencing%29.md)
 ### Type Aliases
-- [CMBufferQueue.T](cmbufferqueue/t.md)
+- [CMBufferQueue.T](./cmbufferqueue/t.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

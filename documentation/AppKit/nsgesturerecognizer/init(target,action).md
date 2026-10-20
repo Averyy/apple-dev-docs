@@ -1,7 +1,8 @@
 # init(target:action:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the gesture recognizer with the specified target and action information.
 
@@ -12,6 +13,10 @@ Initializes the gesture recognizer with the specified target and action informat
 
 ```swift
 init(target: Any?, action: Selector?)
+```
+
+```objc
+- (instancetype) initWithTarget:(id) target action:(SEL) action;
 ```
 
 #### Return Value
@@ -47,11 +52,12 @@ func handleGesture(gestureRecognizer: NSGestureRecognizer) { }
 
 ## See Also
 
-- [var target: AnyObject?](nsgesturerecognizer/target.md)
+### Related Documentation
+- [var target: AnyObject?](./target.md)
   The object that implements the action method.
-- [class NSGestureRecognizer](nsgesturerecognizer.md)
+- [class NSGestureRecognizer](../nsgesturerecognizer.md)
   An object that monitors events and calls its action method when a predefined sequence of events occur.
-- [var action: Selector?](nsgesturerecognizer/action.md)
+- [var action: Selector?](./action.md)
   The action method to call when the gesture is recognized.
 
 

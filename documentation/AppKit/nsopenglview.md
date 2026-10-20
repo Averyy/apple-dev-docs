@@ -1,12 +1,15 @@
 # NSOpenGLView
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view that displays OpenGL content in a view.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Please use MTKView instead.
 
 ## Declaration
 
@@ -14,9 +17,13 @@ A view that displays OpenGL content in a view.
 class NSOpenGLView
 ```
 
+```objc
+@interface NSOpenGLView : NSView
+```
+
 #### Overview
 
-An [`NSOpenGLView`](nsopenglview.md) object maintains an [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) and [`NSOpenGLContext`](nsopenglcontext.md) object into which OpenGL calls can be rendered. The view provides methods for accessing and managing the [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) and [`NSOpenGLContext`](nsopenglcontext.md) objects, as well as notifications of visible region changes.
+An [`NSOpenGLView`](./nsopenglview.md) object maintains an [`NSOpenGLPixelFormat`](./nsopenglpixelformat.md) and [`NSOpenGLContext`](./nsopenglcontext.md) object into which OpenGL calls can be rendered. The view provides methods for accessing and managing the [`NSOpenGLPixelFormat`](./nsopenglpixelformat.md) and [`NSOpenGLContext`](./nsopenglcontext.md) objects, as well as notifications of visible region changes.
 
 An `NSOpenGLView` object cannot have subviews. You can, however, divide a single `NSOpenGLView` into multiple rendering areas using the `glViewport` function.
 
@@ -27,73 +34,74 @@ When creating an `NSOpenGLView` object in Interface Builder, you use the inspect
 ## Topics
 
 ### Initializing an NSOpenGLView
-- [init?(frame: NSRect, pixelFormat: NSOpenGLPixelFormat?)](nsopenglview/init(frame:pixelformat:).md)
+- [init?(frame: NSRect, pixelFormat: NSOpenGLPixelFormat?)](./nsopenglview/init%28frame,pixelformat%29.md)
   Returns an `NSOpenGLView` object initialized with the specified frame rectangle and pixel format.
 ### Managing the NSOpenGLPixelFormat
-- [class func defaultPixelFormat() -> NSOpenGLPixelFormat](nsopenglview/defaultpixelformat.md)
-  Returns a default [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object.
-- [var pixelFormat: NSOpenGLPixelFormat?](nsopenglview/pixelformat.md)
-  The [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object associated with the receiver.
+- [class func defaultPixelFormat() -> NSOpenGLPixelFormat](./nsopenglview/defaultpixelformat%28%29.md)
+  Returns a default [`NSOpenGLPixelFormat`](./nsopenglpixelformat.md) object.
+- [var pixelFormat: NSOpenGLPixelFormat?](./nsopenglview/pixelformat.md)
+  The [`NSOpenGLPixelFormat`](./nsopenglpixelformat.md) object associated with the receiver.
 ### Managing the NSOpenGLContext
-- [func prepareOpenGL()](nsopenglview/prepareopengl.md)
+- [func prepareOpenGL()](./nsopenglview/prepareopengl%28%29.md)
   Used by subclasses to initialize OpenGL state.
-- [func clearGLContext()](nsopenglview/clearglcontext.md)
-  Releases the [`NSOpenGLContext`](nsopenglcontext.md) object associated with the view.
-- [var openGLContext: NSOpenGLContext?](nsopenglview/openglcontext.md)
-  The [`NSOpenGLContext`](nsopenglcontext.md) object associated with the receiver.
+- [func clearGLContext()](./nsopenglview/clearglcontext%28%29.md)
+  Releases the [`NSOpenGLContext`](./nsopenglcontext.md) object associated with the view.
+- [var openGLContext: NSOpenGLContext?](./nsopenglview/openglcontext.md)
+  The [`NSOpenGLContext`](./nsopenglcontext.md) object associated with the receiver.
 ### Managing the Visible Region
-- [func reshape()](nsopenglview/reshape.md)
+- [func reshape()](./nsopenglview/reshape%28%29.md)
   Called by Cocoa when the view’s visible rectangle or bounds change.
-- [func update()](nsopenglview/update.md)
+- [func update()](./nsopenglview/update%28%29.md)
   Called by Cocoa when the view’s window moves or when the view itself moves or is resized.
 ### Extended Dynamic Range
-- [var wantsExtendedDynamicRangeOpenGLSurface: Bool](nsopenglview/wantsextendeddynamicrangeopenglsurface.md)
+- [var wantsExtendedDynamicRangeOpenGLSurface: Bool](./nsopenglview/wantsextendeddynamicrangeopenglsurface.md)
   Enables extended dynamic range values on the screen.
 ### Instance Properties
-- [var wantsBestResolutionOpenGLSurface: Bool](nsopenglview/wantsbestresolutionopenglsurface.md)
+- [var wantsBestResolutionOpenGLSurface: Bool](./nsopenglview/wantsbestresolutionopenglsurface.md)
   A Boolean value indicating whether the view wants an OpenGL backing surface with a resolution greater than 1 pixel per point.
-- [var wantsExtendedDynamicRangeOpenGLSurface: Bool](nsopenglview/wantsextendeddynamicrangeopenglsurface.md)
+- [var wantsExtendedDynamicRangeOpenGLSurface: Bool](./nsopenglview/wantsextendeddynamicrangeopenglsurface.md)
   Enables extended dynamic range values on the screen.
 
 ## Relationships
 
 ### Inherits From
-- [NSView](nsview.md)
+- [NSView](./nsview.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](nstouchbarprovider.md)
-- [NSUserActivityRestoring](nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](./nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](./nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](./nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](./nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](./nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](./nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](./nstouchbarprovider.md)
+- [NSUserActivityRestoring](./nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSOpenGLContext](nsopenglcontext.md)
+### Deprecated classes
+- [class NSOpenGLContext](./nsopenglcontext.md)
   An object that represents an OpenGL graphics context, into which all OpenGL calls are rendered.
-- [class NSOpenGLLayer](nsopengllayer.md)
+- [class NSOpenGLLayer](./nsopengllayer.md)
   A subclass of `CAOpenGLLayer` that is suitable for rendering OpenGL into layers.
-- [class NSOpenGLPixelFormat](nsopenglpixelformat.md)
+- [class NSOpenGLPixelFormat](./nsopenglpixelformat.md)
   An object that specifies the types of buffers and other attributes of the OpenGL context.
-- [class NSDrawer](nsdrawer.md)
+- [class NSDrawer](./nsdrawer.md)
   A user interface element that contains and displays text, scroll, and browser views, in addition to other view subclasses.
-- [class NSForm](nsform.md)
-  An `NSForm` object is a vertical matrix of [`NSFormCell`](nsformcell.md) objects to implement the fields.
-- [class NSFormCell](nsformcell.md)
+- [class NSForm](./nsform.md)
+  An `NSForm` object is a vertical matrix of [`NSFormCell`](./nsformcell.md) objects to implement the fields.
+- [class NSFormCell](./nsformcell.md)
   The `NSFormCell` class is used to implement text entry fields in a form. The left part of an `NSFormCell` object contains a title. The right part contains an editable text entry field.
-- [class NSMenuItemCell](nsmenuitemcell.md)
+- [class NSMenuItemCell](./nsmenuitemcell.md)
   An object that handles the measurement and display of a single menu item in its encompassing frame.
 
 

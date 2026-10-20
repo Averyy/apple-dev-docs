@@ -1,6 +1,7 @@
 # Xcode 14.3.1 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -31,10 +32,14 @@ Xcode 14.3.1 includes Swift 5.8.1 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4,
 
 ###### Resolved Issues
 
-- Fixed: Applications using Swift Concurrency could crash when run on a specific OS version: - macOS 12.0 up to (but not including) macOS 12.1
-- iOS 15.0 up to (but not including) iOS 15.2
-- tvOS 15.0 up to (but not including) tvOS 15.2
-- watchOS 8.0 up to (but not including) watchOS 8.3 Earlier and later OS versions weren’t affected. (108837762)
+- Fixed: Applications using Swift Concurrency could crash when run on a specific OS version:
+
+  - macOS 12.0 up to (but not including) macOS 12.1
+  - iOS 15.0 up to (but not including) iOS 15.2
+  - tvOS 15.0 up to (but not including) tvOS 15.2
+  - watchOS 8.0 up to (but not including) watchOS 8.3
+
+  Earlier and later OS versions weren’t affected. (108837762)
 
 ##### Swift Packages
 
@@ -44,15 +49,16 @@ Xcode 14.3.1 includes Swift 5.8.1 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4,
 
 ## See Also
 
-- [Xcode 14.3 Release Notes](xcode-14_3-release-notes.md)
+### Xcode 14
+- [Xcode 14.3 Release Notes](./xcode-14_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14.2 Release Notes](xcode-14_2-release-notes.md)
+- [Xcode 14.2 Release Notes](./xcode-14_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14.1 Release Notes](xcode-14_1-release-notes.md)
+- [Xcode 14.1 Release Notes](./xcode-14_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14.0.1 Release Notes](xcode-14_0_1-release-notes.md)
+- [Xcode 14.0.1 Release Notes](./xcode-14_0_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14 Release Notes](xcode-14-release-notes.md)
+- [Xcode 14 Release Notes](./xcode-14-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

@@ -1,7 +1,8 @@
 # init(name:semantic:float2:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a material property with a 2-component vector value.
 
@@ -19,35 +20,40 @@ Initializes a material property with a 2-component vector value.
 convenience init(name: String, semantic: MDLMaterialSemantic, float2 value: vector_float2)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name semantic:(MDLMaterialSemantic) semantic float2:(vector_float2) value;
+```
+
 #### Return Value
 
-A new material property object whose [`type`](mdlmaterialproperty/type.md) property is [`MDLMaterialPropertyType.float2`](mdlmaterialpropertytype/float2.md).
+A new material property object whose [`type`](./type.md) property is [`MDLMaterialPropertyType.float2`](../mdlmaterialpropertytype/float2.md).
 
 ## Parameters
 
-- `name`: A descriptive name for the material property. For details, see the [`name`](mdlmaterialproperty/name.md) property.
-- `semantic`: The semantic meaning for the material property’s value. For details, see the [`semantic`](mdlmaterialproperty/semantic.md) property.
+- `name`: A descriptive name for the material property. For details, see the [`name`](./name.md) property.
+- `semantic`: The semantic meaning for the material property’s value. For details, see the [`semantic`](./semantic.md) property.
 - `value`: The 2-component floating-point vector value for the material property.
 
 ## See Also
 
-- [init(name: String, semantic: MDLMaterialSemantic)](mdlmaterialproperty/init(name:semantic:).md)
+### Creating a Material Property
+- [init(name: String, semantic: MDLMaterialSemantic)](./init%28name,semantic%29.md)
   Initializes a material property without a value.
-- [convenience init(name: String, semantic: MDLMaterialSemantic, string: String?)](mdlmaterialproperty/init(name:semantic:string:).md)
+- [convenience init(name: String, semantic: MDLMaterialSemantic, string: String?)](./init%28name,semantic,string%29.md)
   Initializes a material property with a string value.
-- [convenience init(name: String, semantic: MDLMaterialSemantic, url: URL?)](mdlmaterialproperty/init(name:semantic:url:)-2ldk4.md)
+- [convenience init(name: String, semantic: MDLMaterialSemantic, url: URL?)](./init%28name,semantic,url%29-2ldk4.md)
   Initializes a material property with a URL value.
-- [convenience init(name: String, semantic: MDLMaterialSemantic, textureSampler: MDLTextureSampler?)](mdlmaterialproperty/init(name:semantic:texturesampler:).md)
+- [convenience init(name: String, semantic: MDLMaterialSemantic, textureSampler: MDLTextureSampler?)](./init%28name,semantic,texturesampler%29.md)
   Initializes a material property with a texture sampler object.
-- [convenience init(name: String, semantic: MDLMaterialSemantic, color: CGColor)](mdlmaterialproperty/init(name:semantic:color:).md)
+- [convenience init(name: String, semantic: MDLMaterialSemantic, color: CGColor)](./init%28name,semantic,color%29.md)
   Initializes a material property with a color value.
-- [convenience init(name: String, semantic: MDLMaterialSemantic, float: Float)](mdlmaterialproperty/init(name:semantic:float:).md)
+- [convenience init(name: String, semantic: MDLMaterialSemantic, float: Float)](./init%28name,semantic,float%29.md)
   Initializes a material property with a scalar value.
-- [convenience init(name: String, semantic: MDLMaterialSemantic, float3: vector_float3)](mdlmaterialproperty/init(name:semantic:float3:).md)
+- [convenience init(name: String, semantic: MDLMaterialSemantic, float3: vector_float3)](./init%28name,semantic,float3%29.md)
   Initializes a material property with a 3-component vector value.
-- [convenience init(name: String, semantic: MDLMaterialSemantic, float4: vector_float4)](mdlmaterialproperty/init(name:semantic:float4:).md)
+- [convenience init(name: String, semantic: MDLMaterialSemantic, float4: vector_float4)](./init%28name,semantic,float4%29.md)
   Initializes a material property with a 4-component vector value.
-- [convenience init(name: String, semantic: MDLMaterialSemantic, matrix4x4: matrix_float4x4)](mdlmaterialproperty/init(name:semantic:matrix4x4:).md)
+- [convenience init(name: String, semantic: MDLMaterialSemantic, matrix4x4: matrix_float4x4)](./init%28name,semantic,matrix4x4%29.md)
   Initializes a material property with a 4 x 4 matrix value.
 
 

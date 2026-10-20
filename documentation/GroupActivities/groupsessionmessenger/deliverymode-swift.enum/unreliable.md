@@ -1,7 +1,8 @@
 # GroupSessionMessenger.DeliveryMode.unreliable
 
 **Framework**: Group Activities  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A best-effort attempt to deliver the message to known participants.
 
@@ -21,7 +22,7 @@ case unreliable
 
 ## Mentions
 
-- [Synchronizing data during a SharePlay activity](synchronizing-data-during-a-shareplay-activity.md)
+- [Synchronizing data during a SharePlay activity](../../synchronizing-data-during-a-shareplay-activity.md)
 
 #### Discussion
 
@@ -31,7 +32,8 @@ This approach makes a best-effort attempt to deliver your messages to the known 
 
 ## See Also
 
-- [GroupSessionMessenger.DeliveryMode.reliable](groupsessionmessenger/deliverymode-swift.enum/reliable.md)
+### Getting the delivery mode options
+- [GroupSessionMessenger.DeliveryMode.reliable](./reliable.md)
   An attempt to ensure the delivery of messages to known participants.
 
 

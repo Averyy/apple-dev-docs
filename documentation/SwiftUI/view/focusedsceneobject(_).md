@@ -1,7 +1,8 @@
 # focusedSceneObject(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new view that exposes the provided object to other views whose whose state depends on the active scene.
 
@@ -21,13 +22,20 @@ nonisolated
 func focusedSceneObject<T>(_ object: T) -> some View where T : ObservableObject
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func focusedSceneObject<T>(_ object: T?) -> some View where T : ObservableObject
+```
+
 #### Return Value
 
 A view that supplies an observable object while the scene is active.
 
 #### Discussion
 
-Use this method instead of [`focusedObject(_:)`](view/focusedobject(_:).md) for observable objects that must be visible regardless of where focus is located in the active scene. This is sometimes needed for things like main menu and discoverability HUD commands that observe and update data from the active scene but aren’t concerned with what the user is actually focused on. The scene’s root view can supply the scene’s state object:
+Use this method instead of [`focusedObject(_:)`](./focusedobject%28_%29.md) for observable objects that must be visible regardless of where focus is located in the active scene. This is sometimes needed for things like main menu and discoverability HUD commands that observe and update data from the active scene but aren’t concerned with what the user is actually focused on. The scene’s root view can supply the scene’s state object:
 
 ```swift
 struct RootView: View {
@@ -42,7 +50,7 @@ struct RootView: View {
 }
 ```
 
-Interested views can then use the [`FocusedObject`](focusedobject.md) property wrapper to observe and update the active scene’s state object. In this example, an app command updates the active scene’s data, and is enabled as long as any scene is active.
+Interested views can then use the [`FocusedObject`](../focusedobject.md) property wrapper to observe and update the active scene’s state object. In this example, an app command updates the active scene’s data, and is enabled as long as any scene is active.
 
 ```swift
 struct MessageCommands: Commands {
@@ -66,9 +74,10 @@ struct MessageCommands: Commands {
 
 ## See Also
 
-- [func focusedObject(_:)](view/focusedobject(_:).md)
+### Exposing reference types to focused views
+- [func focusedObject(_:)](./focusedobject%28_%29.md)
   Creates a new view that exposes the provided object to other views whose whose state depends on the focused view hierarchy.
-- [struct FocusedObject](focusedobject.md)
+- [struct FocusedObject](../focusedobject.md)
   A property wrapper type for an observable object supplied by the focused view or one of its ancestors.
 
 

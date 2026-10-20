@@ -1,16 +1,17 @@
 # MLCActivationDescriptor
 
 **Framework**: ML Compute  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration object you use to create an activation layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,55 +19,60 @@ A configuration object you use to create an activation layer.
 class MLCActivationDescriptor
 ```
 
+```objc
+@interface MLCActivationDescriptor : NSObject
+```
+
 #### Overview
 
 The framework provides the following activation descriptor initializers to create the associated descriptors:
 
-- **[`init(type:)`](mlcactivationdescriptor/init(type:).md)**: Absolute, GELU, Identity, LogSigmoid, Parametric Soft Sign, SELU, Sigmoid, TanhShrink
-- **[`init(type:a:)`](mlcactivationdescriptor/init(type:a:).md)**: CELU, HardShrink, Parametric ELU, ReLU, SoftShrink
-- **[`init(type:a:b:)`](mlcactivationdescriptor/init(type:a:b:).md)**: Hard Sigmoid, Hyperbolic tangent (TanH), Linear, Parametric Soft Plus, ReLUN, Threshold
+- **[`init(type:)`](./mlcactivationdescriptor/init%28type%29.md)**: Absolute, GELU, Identity, LogSigmoid, Parametric Soft Sign, SELU, Sigmoid, TanhShrink
+- **[`init(type:a:)`](./mlcactivationdescriptor/init%28type,a%29.md)**: CELU, HardShrink, Parametric ELU, ReLU, SoftShrink
+- **[`init(type:a:b:)`](./mlcactivationdescriptor/init%28type,a,b%29.md)**: Hard Sigmoid, Hyperbolic tangent (TanH), Linear, Parametric Soft Plus, ReLUN, Threshold
 
 ## Topics
 
 ### Creating Activation Descriptors
-- [convenience init?(type: MLCActivationType)](mlcactivationdescriptor/init(type:).md)
+- [convenience init?(type: MLCActivationType)](./mlcactivationdescriptor/init%28type%29.md)
   Creates an activation descriptor with the activation type you specify.
-- [convenience init?(type: MLCActivationType, a: Float)](mlcactivationdescriptor/init(type:a:).md)
+- [convenience init?(type: MLCActivationType, a: Float)](./mlcactivationdescriptor/init%28type,a%29.md)
   Creates an activation descriptor with the activation type and parameter a that you specify.
-- [convenience init?(type: MLCActivationType, a: Float, b: Float)](mlcactivationdescriptor/init(type:a:b:).md)
+- [convenience init?(type: MLCActivationType, a: Float, b: Float)](./mlcactivationdescriptor/init%28type,a,b%29.md)
   Creates an activation descriptor with the activation type and parameters a and b that you specify.
-- [convenience init?(type: MLCActivationType, a: Float, b: Float, c: Float)](mlcactivationdescriptor/init(type:a:b:c:).md)
+- [convenience init?(type: MLCActivationType, a: Float, b: Float, c: Float)](./mlcactivationdescriptor/init%28type,a,b,c%29.md)
   Creates an activation descriptor with the activation type and parameters a, b, and c that you specify.
-- [enum MLCActivationType](mlcactivationtype.md)
+- [enum MLCActivationType](./mlcactivationtype.md)
   An activation type that you specify for an activation descriptor.
 ### Inspecting Activation Descriptors
-- [var activationType: MLCActivationType](mlcactivationdescriptor/activationtype.md)
+- [var activationType: MLCActivationType](./mlcactivationdescriptor/activationtype.md)
   The type of activation function.
-- [var a: Float](mlcactivationdescriptor/a.md)
+- [var a: Float](./mlcactivationdescriptor/a.md)
   The parameter a to the activation function.
-- [var b: Float](mlcactivationdescriptor/b.md)
+- [var b: Float](./mlcactivationdescriptor/b.md)
   The parameter b to the activation function.
-- [var c: Float](mlcactivationdescriptor/c.md)
+- [var c: Float](./mlcactivationdescriptor/c.md)
   The parameter c to the activation function.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [convenience init(descriptor: MLCActivationDescriptor)](mlcactivationlayer/init(descriptor:).md)
+### Creating Activation Layers
+- [convenience init(descriptor: MLCActivationDescriptor)](./mlcactivationlayer/init%28descriptor%29.md)
   Creates an activation layer with the descriptor you specify.
-- [Preconfigured Activation Layers](preconfigured-activation-layers.md)
+- [Preconfigured Activation Layers](./preconfigured-activation-layers.md)
   Obtain a preconfigured activation layer with common behavior.
 
 

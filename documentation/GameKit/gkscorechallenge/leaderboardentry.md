@@ -1,17 +1,18 @@
 # leaderboardEntry
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The challenger’s leaderboard score that the player must beat.
 
 **Availability**:
-- iOS 17.4+
-- iPadOS 17.4+
-- Mac Catalyst 17.4+
-- macOS 14.4+
-- tvOS 17.4+
-- visionOS 1.1+
+- iOS 17.4+ - Deprecated in 26.0
+- iPadOS 17.4+ - Deprecated in 26.0
+- Mac Catalyst 17.4+ - Deprecated in 26.0
+- macOS 14.4+ - Deprecated in 26.0
+- tvOS 17.4+ - Deprecated in 26.0
+- visionOS 1.1+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -19,9 +20,14 @@ The challenger’s leaderboard score that the player must beat.
 var leaderboardEntry: GKLeaderboard.Entry? { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly, nullable) GKLeaderboardEntry * leaderboardEntry;
+```
+
 ## See Also
 
-- [var score: GKScore?](gkscorechallenge/score.md)
+### Obtaining the score to beat
+- [var score: GKScore?](./score.md)
   The challenger’s leaderboard score that the player must beat.
 
 

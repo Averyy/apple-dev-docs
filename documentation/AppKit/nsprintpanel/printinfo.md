@@ -1,7 +1,8 @@
 # printInfo
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The information associated with the running Print panel.
 
@@ -14,15 +15,20 @@ The information associated with the running Print panel.
 var printInfo: NSPrintInfo { get }
 ```
 
+```objc
+@property (strong, readonly) NSPrintInfo * printInfo;
+```
+
 #### Discussion
 
 The value in this property is `nil` if the Print panel is not currently running.
 
 ## See Also
 
-- [class NSPrintInfo](nsprintinfo.md)
+### Accessing the Printing Information
+- [class NSPrintInfo](../nsprintinfo.md)
   An object that stores information that’s used to generate printed output.
-- [NSPrintPanel.Result](nsprintpanel/result.md)
+- [NSPrintPanel.Result](./result.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # BNNSScalar
 
 **Framework**: Accelerate  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 14.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -21,7 +22,7 @@ protocol BNNSScalar
 ## Topics
 
 ### Type Properties
-- [static var bnnsDataType: BNNSDataType](bnnsscalar/bnnsdatatype.md)
+- [static var bnnsDataType: BNNSDataType](./bnnsscalar/bnnsdatatype.md)
 
 
 ---

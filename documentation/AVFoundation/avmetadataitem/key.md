@@ -1,18 +1,19 @@
 # key
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key of the metadata item.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,15 +22,20 @@ The key of the metadata item.
 var key: (any NSCopying & NSObjectProtocol)? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) id<NSCopying,NSObject> key;
+```
+
 #### Discussion
 
 The key property contains the true key used to identify the contents of the metadata item. This value is specific to the key space of the metadata item.
 
 ## See Also
 
-- [var commonKey: AVMetadataKey?](avmetadataitem/commonkey.md)
+### Accessing keys and key spaces
+- [var commonKey: AVMetadataKey?](./commonkey.md)
   The common key of the metadata item.
-- [var keySpace: AVMetadataKeySpace?](avmetadataitem/keyspace.md)
+- [var keySpace: AVMetadataKeySpace?](./keyspace.md)
   The key space for the metadata item’s key.
 
 

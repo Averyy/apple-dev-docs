@@ -1,7 +1,8 @@
 # init(bytesNoCopy:count:deallocator:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data buffer with memory content without copying the bytes.
 
@@ -32,17 +33,18 @@ If the result is mutated and is not a unique reference, then the `Data` will sti
 
 ## See Also
 
-- [init()](data/init.md)
+### Creating Populated Data
+- [init()](./init%28%29.md)
   Creates an empty data buffer.
-- [init<SourceType>(buffer: UnsafeBufferPointer<SourceType>)](data/init(buffer:)-75sng.md)
+- [init<SourceType>(buffer: UnsafeBufferPointer<SourceType>)](./init%28buffer%29-75sng.md)
   Creates a data buffer with copied memory content using a buffer pointer.
-- [init<SourceType>(buffer: UnsafeMutableBufferPointer<SourceType>)](data/init(buffer:)-6xgv4.md)
+- [init<SourceType>(buffer: UnsafeMutableBufferPointer<SourceType>)](./init%28buffer%29-6xgv4.md)
   Creates a data buffer with copied memory content using a mutable buffer pointer.
-- [init(bytes: UnsafeRawPointer, count: Int)](data/init(bytes:count:).md)
+- [init(bytes: UnsafeRawPointer, count: Int)](./init%28bytes,count%29.md)
   Creates data with copied memory content.
-- [init(capacity: Int)](data/init(capacity:).md)
+- [init(capacity: Int)](./init%28capacity%29.md)
   Creates an empty data buffer of a specified size.
-- [init(count: Int)](data/init(count:).md)
+- [init(count: Int)](./init%28count%29.md)
   Creates a new data buffer with the specified count of zeroed bytes.
 
 

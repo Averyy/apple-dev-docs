@@ -1,7 +1,8 @@
 # RotatedShape
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A shape with a rotation transform applied to it.
 
@@ -24,34 +25,35 @@ struct RotatedShape<Content> where Content : Shape
 ## Topics
 
 ### Creating a rotated shape
-- [init(shape: Content, angle: Angle, anchor: UnitPoint)](rotatedshape/init(shape:angle:anchor:).md)
+- [init(shape: Content, angle: Angle, anchor: UnitPoint)](./rotatedshape/init%28shape,angle,anchor%29.md)
 ### Getting the shape’s characteristics
-- [var anchor: UnitPoint](rotatedshape/anchor.md)
-- [var angle: Angle](rotatedshape/angle.md)
-- [var shape: Content](rotatedshape/shape.md)
+- [var anchor: UnitPoint](./rotatedshape/anchor.md)
+- [var angle: Angle](./rotatedshape/angle.md)
+- [var shape: Content](./rotatedshape/shape.md)
 ### Supporting types
-- [var animatableData: RotatedShape<Content>.AnimatableData](rotatedshape/animatabledata.md)
+- [var animatableData: RotatedShape<Content>.AnimatableData](./rotatedshape/animatabledata.md)
   The data to animate.
 
 ## Relationships
 
 ### Conforms To
-- [Animatable](animatable.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [InsettableShape](insettableshape.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Shape](shape.md)
-- [View](view.md)
+- [Animatable](./animatable.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [InsettableShape](./insettableshape.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Shape](./shape.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct ScaledShape](scaledshape.md)
+### Transforming a shape
+- [struct ScaledShape](./scaledshape.md)
   A shape with a scale transform applied to it.
-- [struct OffsetShape](offsetshape.md)
+- [struct OffsetShape](./offsetshape.md)
   A shape with a translation offset transform applied to it.
-- [struct TransformedShape](transformedshape.md)
+- [struct TransformedShape](./transformedshape.md)
   A shape with an affine transform applied to it.
 
 

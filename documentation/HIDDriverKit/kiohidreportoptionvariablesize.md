@@ -1,23 +1,25 @@
 # kIOHIDReportOptionVariableSize
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An option that indicates the report has a variable size.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOHIDReportOptionVariableSize
 ```
 
 ## See Also
 
-- [kIOHIDReportOptionNotInterrupt](kiohidreportoptionnotinterrupt.md)
+### Getting the Report Options
+- [kIOHIDReportOptionNotInterrupt](./kiohidreportoptionnotinterrupt.md)
   An option that indicates the report isn’t interrupt driven.
 
 

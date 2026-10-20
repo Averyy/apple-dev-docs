@@ -2,6 +2,7 @@
 
 **Framework**: Quick Look UI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the number of items that the preview panel should preview.
@@ -15,6 +16,10 @@ Returns the number of items that the preview panel should preview.
 func numberOfPreviewItems(in panel: QLPreviewPanel!) -> Int
 ```
 
+```objc
+- (NSInteger) numberOfPreviewItemsInPreviewPanel:(QLPreviewPanel *) panel;
+```
+
 #### Return Value
 
 The number of items the preview panel should display.
@@ -25,7 +30,8 @@ The number of items the preview panel should display.
 
 ## See Also
 
-- [func previewPanel(QLPreviewPanel!, previewItemAt: Int) -> (any QLPreviewItem)!](qlpreviewpaneldatasource/previewpanel(_:previewitemat:).md)
+### Required Methods
+- [func previewPanel(QLPreviewPanel!, previewItemAt: Int) -> (any QLPreviewItem)!](./previewpanel%28_,previewitemat%29.md)
   Returns the item that the preview panel should preview at a given index.
 
 

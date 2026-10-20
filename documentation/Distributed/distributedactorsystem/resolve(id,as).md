@@ -2,9 +2,10 @@
 
 **Framework**: Distributed  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
-Resolves a local or remote [`ActorID`](distributedactorsystem/actorid.md) to a reference to given actor, or throws if unable to.
+Resolves a local or remote [`ActorID`](./actorid.md) to a reference to given actor, or throws if unable to.
 
 **Availability**:
 - iOS 16.0+
@@ -12,7 +13,7 @@ Resolves a local or remote [`ActorID`](distributedactorsystem/actorid.md) to a r
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,7 +28,7 @@ The returned value is either a local actor or proxy to a remote actor.
 
 This function is not intended to be used directly, but instead is called by the Swift runtime whenever ``DistributedActor/resolve(id:using:)`or  a concrete distributed actor's`init(from:)` is invoked.
 
-This function should either return an existing actor reference, or `nil` to signal that a remote distributed actor “proxy” should be created for this [`ActorID`](distributedactorsystem/actorid.md). If the resolve fails, meaning that it can neither locate a local actor managed by this actor system, nor identify that the identity is located on some remote actor system, then this function should throw.
+This function should either return an existing actor reference, or `nil` to signal that a remote distributed actor “proxy” should be created for this [`ActorID`](./actorid.md). If the resolve fails, meaning that it can neither locate a local actor managed by this actor system, nor identify that the identity is located on some remote actor system, then this function should throw.
 
 ```swift
 distributed actor Worker { /* ... */ }
@@ -40,7 +41,7 @@ If this function returns correctly, the returned actor reference is immediately 
 
 Detecting liveness of such remote actors shall be offered / by transport libraries by other means, such as “watching an actor for termination” or similar.
 
-> **Note**: When unable to confirm if the `id` is correct, the resolved actor does not match the expected `actorType`, or any other internal validation error within the actor system’s resolve process occurs.
+> **Throws**: When unable to confirm if the `id` is correct, the resolved actor does not match the expected `actorType`, or any other internal validation error within the actor system’s resolve process occurs.
 
 ## Parameters
 

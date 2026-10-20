@@ -1,7 +1,8 @@
 # enableWarning(_:_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Enable a specific C compiler warning group.
 
@@ -18,7 +19,7 @@ static func enableWarning(_ name: String, _ condition: BuildSettingCondition? = 
 
 Use this setting to enable a specific warning group. This is equivalent to passing `-W` followed by the group name to the C compiler.
 
-> **Note**: First available in PackageDescription 6.2.
+> **Since**: First available in PackageDescription 6.2.
 
 ## Parameters
 

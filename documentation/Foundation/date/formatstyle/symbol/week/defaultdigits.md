@@ -1,7 +1,8 @@
 # defaultDigits
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Custom week format style showing the minimum number of digits that represents the numeric week.
 
@@ -26,9 +27,10 @@ This style represents weeks like `1` or `18`.
 
 ## See Also
 
-- [static var twoDigits: Date.FormatStyle.Symbol.Week](date/formatstyle/symbol/week/twodigits.md)
+### Modifying a Week
+- [static var twoDigits: Date.FormatStyle.Symbol.Week](./twodigits.md)
   Custom format style portraying the two-digit numeric week, zero-padded if necessary.
-- [static var weekOfMonth: Date.FormatStyle.Symbol.Week](date/formatstyle/symbol/week/weekofmonth.md)
+- [static var weekOfMonth: Date.FormatStyle.Symbol.Week](./weekofmonth.md)
   Custom format style portraying the numeric week of the month.
 
 

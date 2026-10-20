@@ -1,22 +1,27 @@
 # AUMIDIOutputCallback
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 When called by a host application, gets MIDI data from an audio unit.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias AUMIDIOutputCallback = (UnsafeMutableRawPointer?, UnsafePointer<AudioTimeStamp>, UInt32, UnsafePointer<MIDIPacketList>) -> OSStatus
+```
+
+```c
+typedef int (*)(void *, const struct AudioTimeStamp *, unsigned int, const struct MIDIPacketList *) __attribute__((nonblocking)) AUMIDIOutputCallback;
 ```
 
 #### Discussion
@@ -32,14 +37,15 @@ If you named your callback function `MyAUMIDIOutputCallback`, you would declare 
 
 ## See Also
 
-- [typealias HostCallback_GetBeatAndTempo](hostcallback_getbeatandtempo.md)
+### Getting Information from the Host
+- [typealias HostCallback_GetBeatAndTempo](./hostcallback_getbeatandtempo.md)
   When called by the system, provides beat and tempo information to an audio unit from a host application.
-- [typealias HostCallback_GetMusicalTimeLocation](hostcallback_getmusicaltimelocation.md)
+- [typealias HostCallback_GetMusicalTimeLocation](./hostcallback_getmusicaltimelocation.md)
   When called by the system, provides musical timing information to an audio unit from a host application.
-- [typealias HostCallback_GetTransportState](hostcallback_gettransportstate.md)
+- [typealias HostCallback_GetTransportState](./hostcallback_gettransportstate.md)
   When called by the system, provides audio transport state and timeline information to an audio unit from a host application.
-- [typealias HostCallback_GetTransportState2](hostcallback_gettransportstate2.md)
-- [typealias AUInputSamplesInOutputCallback](auinputsamplesinoutputcallback.md)
+- [typealias HostCallback_GetTransportState2](./hostcallback_gettransportstate2.md)
+- [typealias AUInputSamplesInOutputCallback](./auinputsamplesinoutputcallback.md)
   Called by the system when an audio unit has provided a buffer of output samples.
 
 

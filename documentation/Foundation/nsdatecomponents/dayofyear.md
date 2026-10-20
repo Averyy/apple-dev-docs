@@ -1,7 +1,8 @@
 # dayOfYear
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The day of the year value of the date components.
 
@@ -18,6 +19,10 @@ The day of the year value of the date components.
 
 ```swift
 var dayOfYear: Int { get set }
+```
+
+```objc
+@property NSInteger dayOfYear;
 ```
 
 

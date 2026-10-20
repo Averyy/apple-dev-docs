@@ -1,7 +1,8 @@
 # sharingService(_:didFailToShareItems:error:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when the sharing service encountered an error when sharing items.
 
@@ -15,17 +16,22 @@ Invoked when the sharing service encountered an error when sharing items.
 optional func sharingService(_ sharingService: NSSharingService, didFailToShareItems items: [Any], error: any Error)
 ```
 
+```objc
+- (void) sharingService:(NSSharingService *) sharingService didFailToShareItems:(NSArray *) items error:(NSError *) error;
+```
+
 ## Parameters
 
 - `sharingService`: The sharing service.
 - `items`: The items being shared.
-- `error`: The error that was encountered when trying to share the item. If the error is [`NSUserCancelledError`](https://developer.apple.com/documentation/foundation/nsusercancellederror-swift.var), the user simply cancelled the error.
+- `error`: The error that was encountered when trying to share the item. If the error is [`NSUserCancelledError`](../../Foundation/nsusercancellederror-swift.var.md), the user simply cancelled the error.
 
 ## See Also
 
-- [func sharingService(NSSharingService, willShareItems: [Any])](nssharingservicedelegate/sharingservice(_:willshareitems:).md)
+### Sharing Items
+- [func sharingService(NSSharingService, willShareItems: [Any])](./sharingservice%28_,willshareitems%29.md)
   Invoked when the sharing service will share the specified items.
-- [func sharingService(NSSharingService, didShareItems: [Any])](nssharingservicedelegate/sharingservice(_:didshareitems:).md)
+- [func sharingService(NSSharingService, didShareItems: [Any])](./sharingservice%28_,didshareitems%29.md)
   Invoked when the sharing service has finished sharing the items.
 
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object that you want to receive central manager events.
 
@@ -20,9 +21,13 @@ The delegate object that you want to receive central manager events.
 weak var delegate: (any CBCentralManagerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<CBCentralManagerDelegate> delegate;
+```
+
 #### Discussion
 
-For information about how to implement your central manager delegate, see [`CBCentralManagerDelegate`](cbcentralmanagerdelegate.md).
+For information about how to implement your central manager delegate, see [`CBCentralManagerDelegate`](../cbcentralmanagerdelegate.md).
 
 
 ---

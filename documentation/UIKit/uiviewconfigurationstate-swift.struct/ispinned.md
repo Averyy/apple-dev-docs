@@ -1,7 +1,8 @@
 # isPinned
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the view is in a pinned state.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the view is in a pinned state.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,13 +25,14 @@ This state applies to header and footer views.
 
 ## See Also
 
-- [var isSelected: Bool](uiviewconfigurationstate-swift.struct/isselected.md)
+### Managing view configuration states
+- [var isSelected: Bool](./isselected.md)
   A Boolean value that indicates whether the view is in a selected state.
-- [var isHighlighted: Bool](uiviewconfigurationstate-swift.struct/ishighlighted.md)
+- [var isHighlighted: Bool](./ishighlighted.md)
   A Boolean value that indicates whether the view is in a highlighted state.
-- [var isFocused: Bool](uiviewconfigurationstate-swift.struct/isfocused.md)
+- [var isFocused: Bool](./isfocused.md)
   A Boolean value that indicates whether the view is in a focused state.
-- [var isDisabled: Bool](uiviewconfigurationstate-swift.struct/isdisabled.md)
+- [var isDisabled: Bool](./isdisabled.md)
   A Boolean value that indicates whether the view is in a disabled state.
 
 

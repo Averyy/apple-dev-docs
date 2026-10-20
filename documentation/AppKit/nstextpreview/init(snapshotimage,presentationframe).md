@@ -1,7 +1,8 @@
 # init(snapshotImage:presentationFrame:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text preview using the specified image.
 
@@ -14,6 +15,10 @@ Creates a text preview using the specified image.
 convenience init(snapshotImage: CGImage, presentationFrame: NSRect)
 ```
 
+```objc
+- (instancetype) initWithSnapshotImage:(CGImageRef) snapshotImage presentationFrame:(NSRect) presentationFrame;
+```
+
 ## Parameters
 
 - `snapshotImage`: An image that contains the requested text from your view. Create the image using a transparent background and the current rendering attributes for your text.
@@ -21,7 +26,8 @@ convenience init(snapshotImage: CGImage, presentationFrame: NSRect)
 
 ## See Also
 
-- [init(snapshotImage: CGImage, presentationFrame: NSRect, candidateRects: [NSValue])](nstextpreview/init(snapshotimage:presentationframe:candidaterects:).md)
+### Creating a text preview
+- [init(snapshotImage: CGImage, presentationFrame: NSRect, candidateRects: [NSValue])](./init%28snapshotimage,presentationframe,candidaterects%29.md)
   Creates a text preview using the specified image and rectangles that indicate the portions of text to highlight.
 
 

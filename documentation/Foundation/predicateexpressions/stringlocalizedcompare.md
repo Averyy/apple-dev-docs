@@ -1,7 +1,8 @@
 # PredicateExpressions.StringLocalizedCompare
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -21,23 +22,23 @@ struct StringLocalizedCompare<Root, Other> where Root : PredicateExpression, Oth
 ## Topics
 
 ### Initializers
-- [init(root: Root, other: Other)](predicateexpressions/stringlocalizedcompare/init(root:other:).md)
+- [init(root: Root, other: Other)](./stringlocalizedcompare/init%28root,other%29.md)
 ### Instance Properties
-- [let other: Other](predicateexpressions/stringlocalizedcompare/other.md)
-- [let root: Root](predicateexpressions/stringlocalizedcompare/root.md)
+- [let other: Other](./stringlocalizedcompare/other.md)
+- [let root: Root](./stringlocalizedcompare/root.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [PredicateExpression](predicateexpression.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StandardPredicateExpression](standardpredicateexpression.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
+- [PredicateExpression](../predicateexpression.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [StandardPredicateExpression](../standardpredicateexpression.md)
 
 
 ---

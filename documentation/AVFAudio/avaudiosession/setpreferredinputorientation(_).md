@@ -1,7 +1,8 @@
 # setPreferredInputOrientation(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the audio session’s preferred stereo input orientation.
 
@@ -17,6 +18,10 @@ Sets the audio session’s preferred stereo input orientation.
 func setPreferredInputOrientation(_ orientation: AVAudioSession.StereoOrientation) throws
 ```
 
+```objc
+- (BOOL) setPreferredInputOrientation:(AVAudioStereoOrientation) orientation error:(NSError **) outError;
+```
+
 #### Discussion
 
 Configure the input orientation to match how the user is holding the device when they begin recording. In a single-window app, set the input orientation to a value corresponding to the app’s user interface orientation.
@@ -27,11 +32,12 @@ Configure the input orientation to match how the user is holding the device when
 
 ## See Also
 
-- [var inputOrientation: AVAudioSession.StereoOrientation](avaudiosession/inputorientation.md)
+### Enabling stereo recording
+- [var inputOrientation: AVAudioSession.StereoOrientation](./inputorientation.md)
   An orientation value that dictates which directions represent left and right when capturing audio from a built-in microphone configured for stereo recording.
-- [var preferredInputOrientation: AVAudioSession.StereoOrientation](avaudiosession/preferredinputorientation.md)
+- [var preferredInputOrientation: AVAudioSession.StereoOrientation](./preferredinputorientation.md)
   The audio session’s preferred stereo input orientation.
-- [AVAudioSession.StereoOrientation](avaudiosession/stereoorientation.md)
+- [AVAudioSession.StereoOrientation](./stereoorientation.md)
   Constants that define the supported stereo orientations.
 
 

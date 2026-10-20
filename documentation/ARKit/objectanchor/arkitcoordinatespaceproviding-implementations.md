@@ -1,11 +1,12 @@
 # ARKitCoordinateSpaceProviding Implementations
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func coordinateSpace(correction: ARKitCoordinateSpace.Correction) -> ARKitCoordinateSpace](objectanchor/coordinatespace(correction:).md)
+- [func coordinateSpace(correction: ARKitCoordinateSpace.Correction) -> ARKitCoordinateSpace](./coordinatespace%28correction%29.md)
   The anchor’s coordinate space.
 
 

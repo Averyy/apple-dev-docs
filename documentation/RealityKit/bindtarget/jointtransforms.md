@@ -1,7 +1,8 @@
 # BindTarget.jointTransforms
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that specifies that the entity’s joint transforms animate.
 
@@ -11,7 +12,7 @@ An option that specifies that the entity’s joint transforms animate.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,14 @@ case jointTransforms
 
 ## See Also
 
-- [case `internal`(InternalBindPath)](bindtarget/internal(_:).md)
+### Choosing a bind target
+- [case `internal`(InternalBindPath)](./internal%28_%29.md)
   A bind target that refers to a framework-provided property.
-- [BindTarget.parameter(_:)](bindtarget/parameter(_:).md)
+- [BindTarget.parameter(_:)](./parameter%28_%29.md)
   Provides a property that animates from the given textual name.
-- [BindTarget.path(_:)](bindtarget/path(_:).md)
+- [BindTarget.path(_:)](./path%28_%29.md)
   Provides a complex bind path capable of animating additional entities other than the current entity.
-- [BindTarget.transform](bindtarget/transform.md)
+- [BindTarget.transform](./transform.md)
   A option that specifies that the target entity’s transform animates.
 
 

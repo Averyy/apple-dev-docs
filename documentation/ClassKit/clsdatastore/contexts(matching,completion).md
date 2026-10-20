@@ -1,7 +1,8 @@
 # contexts(matching:completion:)
 
 **Framework**: ClassKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches all the contexts matching a predicate.
 
@@ -15,16 +16,28 @@ Fetches all the contexts matching a predicate.
 ## Declaration
 
 ```swift
+func contexts(matching predicate: NSPredicate, completion: @escaping @Sendable ([CLSContext], (any Error)?) -> Void)
+```
+
+```swift
 func contexts(matching predicate: NSPredicate) async throws -> [CLSContext]
+```
+
+```objc
+- (void) contextsMatchingPredicate:(NSPredicate *) predicate completion:(void (^)(NSArray<CLSContext *> *contexts, NSError *error)) completion;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func contexts(matching predicate: NSPredicate) async throws -> [CLSContext]
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func contexts(matching predicate: NSPredicate) async throws -> [CLSContext]
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
-Use the predicate keys defined in [`CLSPredicateKeyPath`](clspredicatekeypath.md) to create a predicate that you pass to this method to search for contexts matching certain criteria.
+Use the predicate keys defined in [`CLSPredicateKeyPath`](../clspredicatekeypath.md) to create a predicate that you pass to this method to search for contexts matching certain criteria.
 
 For example, to print the titles of all the children of the main app context:
 
@@ -48,9 +61,10 @@ store.contexts(matching: predicate) { contexts, _ in
 
 ## See Also
 
-- [func contexts(matchingIdentifierPath: [String], completion: ([CLSContext], (any Error)?) -> Void)](clsdatastore/contexts(matchingidentifierpath:completion:).md)
+### Finding contexts that match criteria
+- [func contexts(matchingIdentifierPath: [String], completion: ([CLSContext], (any Error)?) -> Void)](./contexts%28matchingidentifierpath,completion%29.md)
   Fetches all the contexts along a given identifier path.
-- [struct CLSPredicateKeyPath](clspredicatekeypath.md)
+- [struct CLSPredicateKeyPath](../clspredicatekeypath.md)
   The set of possible key paths you use to search for contexts.
 
 

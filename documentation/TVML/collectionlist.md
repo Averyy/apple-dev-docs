@@ -25,35 +25,36 @@ Here’s an example of a `collectionList` element that contains a `shelf` and tw
 </collectionList>
 ```
 
-##### Subelements of Collectionlist
+##### Subelements of collectionList
 
-- [`carousel`](carousel.md)
-- [`grid`](grid.md)
-- [`shelf`](shelf.md)
+- [carousel](./carousel.md)
+- [grid](./grid.md)
+- [shelf](./shelf.md)
 
-##### Elements That Use Collectionlist
+##### Elements that use collectionList
 
-- [`searchTemplate`](searchtemplate.md)
-- [`stackTemplate`](stacktemplate.md)
+- [searchTemplate](./searchtemplate.md)
+- [stackTemplate](./stacktemplate.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [margin](margin.md)
+- [margin](./margin.md)
   Specifies the spacing around an element.
 ### Valid TVML Attributes
-- [padding](padding.md)
+- [padding](./padding.md)
   Specifies the padding between the border and contents of an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [infoList](infolist.md)
+### List Elements
+- [infoList](./infolist.md)
   Displays `info` element information in a vertical format.
-- [list](list.md)
+- [list](./list.md)
   Creates a generic container.
 
 

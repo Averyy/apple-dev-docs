@@ -1,7 +1,8 @@
 # init(currencyCode:for:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new verification request using the specified currency and reason information.
 
@@ -18,7 +19,7 @@ init(currencyCode: String, for reason: PaymentCardVerificationRequest.Reason = .
 
 ## Parameters
 
-- `currencyCode`: The ISO 4217 code for the requested currency type. Specify the currency you intend to verify. If you specify an empty string, the system throws [`PaymentCardReaderSession.ReadError.invalidCurrencyCode`](paymentcardreadersession/readerror/invalidcurrencycode.md).
+- `currencyCode`: The ISO 4217 code for the requested currency type. Specify the currency you intend to verify. If you specify an empty string, the system throws [`PaymentCardReaderSession.ReadError.invalidCurrencyCode`](../paymentcardreadersession/readerror/invalidcurrencycode.md).
 - `reason`: The reason for the verification request. Based on the reason you select, the system displays an appropriate message in the system UI to inform the user about the purpose of the verification process.
 
 

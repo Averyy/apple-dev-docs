@@ -1,7 +1,8 @@
 # subscriptionStatus
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that contains status information for a subscription group, including renewal and transaction information.
 
@@ -23,9 +24,9 @@ var subscriptionStatus: Product.SubscriptionInfo.Status? { get async }
 
 #### Discussion
 
-This value is `nil` if the product in the transaction isn’t an auto-renewable subscription, specifically, if the [`productType`](transaction/producttype.md) is anything other than [`autoRenewable`](product/producttype/autorenewable.md).
+This value is `nil` if the product in the transaction isn’t an auto-renewable subscription, specifically, if the [`productType`](./producttype.md) is anything other than [`autoRenewable`](../product/producttype/autorenewable.md).
 
-The array can have more than one subscription status, for example, if your subscription supports Family Sharing. Provide the customer with service for the subscription based on the highest level of service where the subscription status is [`subscribed`](product/subscriptioninfo/renewalstate/subscribed.md).
+The array can have more than one subscription status, for example, if your subscription supports Family Sharing. Provide the customer with service for the subscription based on the highest level of service where the subscription status is [`subscribed`](../product/subscriptioninfo/renewalstate/subscribed.md).
 
 
 ---

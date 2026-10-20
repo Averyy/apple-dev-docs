@@ -1,9 +1,10 @@
 # contentType
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A `UTType` identifying how to interpret [`content`](transcript/dataattachment/content.md).
+A `UTType` identifying how to interpret [`content`](./content.md).
 
 **Availability**:
 - iOS 27.2+

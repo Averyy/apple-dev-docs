@@ -1,7 +1,8 @@
 # DragSession.Phase.ending(_:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The drag is about to finish.
 

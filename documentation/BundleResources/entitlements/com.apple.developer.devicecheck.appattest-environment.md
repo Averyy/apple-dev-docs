@@ -1,7 +1,8 @@
 # App Attest Environment
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The environment for an app that uses the App Attest service to validate itself.
 
@@ -11,9 +12,15 @@ The environment for an app that uses the App Attest service to validate itself.
 - tvOS 15.0+
 - visionOS 1.0+
 
+## Details
 
+- **Name**: `com.apple.developer.devicecheck.appattest-environment`
+- **Type**: string
 
-**Type**: string
+## Possible Values
+
+- `development`: The App Attest sandbox environment that you use to test a device without affecting its risk metrics. Keys you create in the sandbox environment don’t work in the production environment.
+- `production`: The App Attest production environment. Keys you create in the production environment don’t work in the sandbox environment.
 
 #### Discussion
 
@@ -25,9 +32,10 @@ After distributing your app through TestFlight, the App Store, or the Apple Deve
 
 ## See Also
 
-- [com.apple.security.network.server](entitlements/com.apple.security.network.server.md)
+### Networking
+- [com.apple.security.network.server](./com.apple.security.network.server.md)
   A Boolean value indicating whether your app may listen for incoming network connections.
-- [com.apple.security.network.client](entitlements/com.apple.security.network.client.md)
+- [com.apple.security.network.client](./com.apple.security.network.client.md)
   A Boolean value indicating whether your app may open outgoing network connections.
 
 

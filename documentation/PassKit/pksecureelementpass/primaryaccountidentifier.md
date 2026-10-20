@@ -1,7 +1,8 @@
 # primaryAccountIdentifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An opaque value that identifies the primary account number that funds the passâ€™s transactions.
 
@@ -19,9 +20,14 @@ An opaque value that identifies the primary account number that funds the passâ€
 var primaryAccountIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * primaryAccountIdentifier;
+```
+
 ## See Also
 
-- [var primaryAccountNumberSuffix: String](pksecureelementpass/primaryaccountnumbersuffix.md)
+### Getting the account attributes
+- [var primaryAccountNumberSuffix: String](./primaryaccountnumbersuffix.md)
   A display-ready version of the primary account number.
 
 

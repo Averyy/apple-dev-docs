@@ -1,15 +1,18 @@
 # specularColor
 
 **Framework**: GLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The specular color of the material.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- macOS 10.8+
-- tvOS 9.0+
+- iOS 5.0+ - Deprecated in 12.0
+- iPadOS 5.0+ - Deprecated in 12.0
+- macOS 10.8+ - Deprecated in 10.14
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -17,15 +20,20 @@ The specular color of the material.
 var specularColor: GLKVector4 { get set }
 ```
 
+```objc
+@property (nonatomic, assign) GLKVector4 specularColor;
+```
+
 ## See Also
 
-- [var ambientColor: GLKVector4](glkeffectpropertymaterial/ambientcolor.md)
+### Material Properties
+- [var ambientColor: GLKVector4](./ambientcolor.md)
   The ambient color of the material.
-- [var diffuseColor: GLKVector4](glkeffectpropertymaterial/diffusecolor.md)
+- [var diffuseColor: GLKVector4](./diffusecolor.md)
   The diffuse color of the material.
-- [var emissiveColor: GLKVector4](glkeffectpropertymaterial/emissivecolor.md)
+- [var emissiveColor: GLKVector4](./emissivecolor.md)
   The emissive color of the material.
-- [var shininess: GLfloat](glkeffectpropertymaterial/shininess.md)
+- [var shininess: GLfloat](./shininess.md)
   The shininess of the material, used when calculating specular lighting effects.
 
 

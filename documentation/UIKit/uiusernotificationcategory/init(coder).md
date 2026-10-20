@@ -1,14 +1,17 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action group from data in an unarchiver.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
+- iOS 8.0+ - Deprecated in 10.0
+- iPadOS 8.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UIUserNotificationCategory`](../uiusernotificationcategory.md).
 
 ## Declaration
 
@@ -16,9 +19,14 @@ Creates an action group from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init()](uiusernotificationcategory/init.md)
+### Creating the action group
+- [init()](./init%28%29.md)
   Creates an action group.
 
 

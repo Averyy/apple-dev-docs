@@ -1,34 +1,36 @@
 # PCI
 
-**Framework**: Kernel
+**Framework**: Kernel  
+**Role**: API Collection
 
 Implement a driver that supports Thunderbolt devices or PCI cards.
 
 #### Overview
 
-For many types of PCI drivers, the use of kernel extensions is deprecated. Instead, create a DriverKit extension using [`PCIDriverKit`](https://developer.apple.com/documentation/pcidriverkit).
+For many types of PCI drivers, the use of kernel extensions is deprecated. Instead, create a DriverKit extension using [PCIDriverKit](../../PCIDriverKit/PCIDriverKit.md).
 
 ## Topics
 
 ### Devices
-- [Implementing a PCIe Kext for a Thunderbolt Device](hardware_families/pci/implementing_a_pcie_kext_for_a_thunderbolt_device.md)
+- [Implementing a PCIe Kext for a Thunderbolt Device](./pci/implementing_a_pcie_kext_for_a_thunderbolt_device.md)
   Create an IOKit driver to support Thunderbolt devices that implement features not supported in PCIDriverKit, such as wireless networking or audio. 
-- [IOPCIDevice](iopcidevice.md)
+- [IOPCIDevice](../iopcidevice.md)
   An IOService class representing a PCI device.
-- [IOAGPDevice](ioagpdevice.md)
+- [IOAGPDevice](../ioagpdevice.md)
   An IOService class representing an AGP primary device.
 ### Event Source
-- [IOPCIEventSource](iopcieventsource.md)
+- [IOPCIEventSource](../iopcieventsource.md)
 
 ## See Also
 
-- [ATA](hardware_families/ata.md)
+### Hardware Interconnects
+- [ATA](./ata.md)
   Implement a driver that supports Advanced Technology Attachment (ATA) devices.
-- [Bluetooth](hardware_families/bluetooth.md)
+- [Bluetooth](./bluetooth.md)
   Implement a driver that supports Bluetooth devices.
-- [FireWire](hardware_families/firewire.md)
+- [FireWire](./firewire.md)
   Implement a driver that supports FireWire devices. 
-- [USB](hardware_families/usb.md)
+- [USB](./usb.md)
   Implement a driver that supports Universal Serial Bus (USB) devices.
 
 

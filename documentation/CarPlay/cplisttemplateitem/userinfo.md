@@ -2,6 +2,7 @@
 
 **Framework**: CarPlay  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An opaque value for the list item.
@@ -17,9 +18,14 @@ An opaque value for the list item.
 var userInfo: Any? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id userInfo;
+```
+
 ## See Also
 
-- [var text: String?](cplisttemplateitem/text.md)
+### Managing Content
+- [var text: String?](./text.md)
   The item’s primary text.
 
 

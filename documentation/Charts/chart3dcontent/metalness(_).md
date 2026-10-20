@@ -1,7 +1,8 @@
 # metalness(_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A value that controls whether the surface has a metallic look.
 

@@ -1,7 +1,8 @@
 # maximumVisibility
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum visibility for the day part.
 

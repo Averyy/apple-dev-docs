@@ -1,7 +1,8 @@
 # preferences
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that manages the preference-related settings for the web view.
 
@@ -18,13 +19,18 @@ The object that manages the preference-related settings for the web view.
 var preferences: WKPreferences { get set }
 ```
 
+```objc
+@property (nonatomic, strong) WKPreferences * preferences;
+```
+
 #### Discussion
 
 Use the preferences object in this property to customize the rendering, JavaScript, and other preferences related to your web view. You can also change the preferences by assigning a new WKPreferences object to this property.
 
 ## See Also
 
-- [var defaultWebpagePreferences: WKWebpagePreferences!](wkwebviewconfiguration/defaultwebpagepreferences.md)
+### Configuring the web view’s preferences
+- [var defaultWebpagePreferences: WKWebpagePreferences!](./defaultwebpagepreferences.md)
   The default preferences to use when loading and rendering content.
 
 

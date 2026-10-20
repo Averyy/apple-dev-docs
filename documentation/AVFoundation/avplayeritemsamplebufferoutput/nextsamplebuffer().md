@@ -1,7 +1,8 @@
 # nextSampleBuffer()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns next sample buffer once it becomes available.
 
@@ -25,13 +26,14 @@ func nextSampleBuffer() async -> AVPlayerItemSampleBufferOutput.SampleBufferInSe
 
 This method will wait indefinitely for the next sample buffer to become available. This method returns nil if the current task is cancelled or if this method is called from a different task.
 
-This method will race with [`nextAvailableSampleBuffer()`](avplayeritemsamplebufferoutput/nextavailablesamplebuffer().md) for grabbing the generated sample buffer.
+This method will race with [`nextAvailableSampleBuffer()`](./nextavailablesamplebuffer%28%29.md) for grabbing the generated sample buffer.
 
 ## See Also
 
-- [func nextAvailableSampleBuffer() -> AVPlayerItemSampleBufferOutput.SampleBufferInSequence?](avplayeritemsamplebufferoutput/nextavailablesamplebuffer.md)
+### Retrieving sample buffers
+- [func nextAvailableSampleBuffer() -> AVPlayerItemSampleBufferOutput.SampleBufferInSequence?](./nextavailablesamplebuffer%28%29.md)
   Returns the next sample buffer if it is already available.
-- [AVPlayerItemSampleBufferOutput.SampleBufferInSequence](avplayeritemsamplebufferoutput/samplebufferinsequence.md)
+- [AVPlayerItemSampleBufferOutput.SampleBufferInSequence](./samplebufferinsequence.md)
   Holds the information necessary for processing generated sample buffers.
 
 

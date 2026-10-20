@@ -1,7 +1,8 @@
 # mapItemDetailSelectionAccessory(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the selection accessory to display for the selected map item content.
 
@@ -25,30 +26,31 @@ Specifies the selection accessory to display for the selected map item content.
 
 ## See Also
 
-- [struct MapItemDetailSelectionAccessoryStyle](mapitemdetailselectionaccessorystyle.md)
+### Place information
+- [struct MapItemDetailSelectionAccessoryStyle](../mapitemdetailselectionaccessorystyle.md)
   The map item detail selection accessory style.
 - [func mapFeatureSelectionAccessory(MapItemDetailSelectionAccessoryStyle?) -> some View
-](../swiftui/view/mapfeatureselectionaccessory(_:).md)
+](../../SwiftUI/view/mapfeatureselectionaccessory%28_%29.md)
   Specifies the selection accessory to display for a `MapFeature`
-- [static func callout(MapItemDetailSelectionAccessoryStyle.CalloutStyle) -> MapItemDetailSelectionAccessoryStyle](mapitemdetailselectionaccessorystyle/callout(_:).md)
+- [static func callout(MapItemDetailSelectionAccessoryStyle.CalloutStyle) -> MapItemDetailSelectionAccessoryStyle](../mapitemdetailselectionaccessorystyle/callout%28_%29.md)
   Presents the accessory as an annotation callout on the map.
 - [func mapItemDetailPopover(isPresented: Binding<Bool>, item: MKMapItem?, displaysMap: Bool, attachmentAnchor: PopoverAttachmentAnchor) -> some View
-](../swiftui/view/mapitemdetailpopover(ispresented:item:displaysmap:attachmentanchor:).md)
+](../../SwiftUI/view/mapitemdetailpopover%28ispresented,item,displaysmap,attachmentanchor%29.md)
   Presents a map item detail popover.
 - [func mapItemDetailPopover(isPresented: Binding<Bool>, item: MKMapItem?, displaysMap: Bool, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge) -> some View
-](../swiftui/view/mapitemdetailpopover(ispresented:item:displaysmap:attachmentanchor:arrowedge:).md)
+](../../SwiftUI/view/mapitemdetailpopover%28ispresented,item,displaysmap,attachmentanchor,arrowedge%29.md)
   Presents a map item detail popover.
 - [func mapItemDetailPopover(item: Binding<MKMapItem?>, displaysMap: Bool, attachmentAnchor: PopoverAttachmentAnchor) -> some View
-](../swiftui/view/mapitemdetailpopover(item:displaysmap:attachmentanchor:).md)
+](../../SwiftUI/view/mapitemdetailpopover%28item,displaysmap,attachmentanchor%29.md)
   Presents a map item detail popover.
 - [func mapItemDetailPopover(item: Binding<MKMapItem?>, displaysMap: Bool, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge) -> some View
-](../swiftui/view/mapitemdetailpopover(item:displaysmap:attachmentanchor:arrowedge:).md)
+](../../SwiftUI/view/mapitemdetailpopover%28item,displaysmap,attachmentanchor,arrowedge%29.md)
   Presents a map item detail popover.
 - [func mapItemDetailSheet(isPresented: Binding<Bool>, item: MKMapItem?, displaysMap: Bool) -> some View
-](../swiftui/view/mapitemdetailsheet(ispresented:item:displaysmap:).md)
+](../../SwiftUI/view/mapitemdetailsheet%28ispresented,item,displaysmap%29.md)
   Presents a map item detail sheet.
 - [func mapItemDetailSheet(item: Binding<MKMapItem?>, displaysMap: Bool) -> some View
-](../swiftui/view/mapitemdetailsheet(item:displaysmap:).md)
+](../../SwiftUI/view/mapitemdetailsheet%28item,displaysmap%29.md)
   Presents a map item detail sheet.
 
 

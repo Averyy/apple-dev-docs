@@ -1,7 +1,8 @@
 # supportedLayouts(options:)
 
 **Framework**: Compositor Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of texture layouts that the layer supports.
 
@@ -29,7 +30,8 @@ Call this function to determine which texture layouts you can use for your conte
 
 ## See Also
 
-- [LayerRenderer.Capabilities.SupportedLayoutsOptions](layerrenderer/capabilities/supportedlayoutsoptions.md)
+### Getting the supported layouts
+- [LayerRenderer.Capabilities.SupportedLayoutsOptions](./supportedlayoutsoptions.md)
   Options you can use to filter the supported layouts for a layer.
 
 

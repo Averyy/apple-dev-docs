@@ -1,7 +1,8 @@
 # updateGridButtons(_:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 15.0+
@@ -14,9 +15,14 @@
 func updateGridButtons(_ gridButtons: [CPGridButton])
 ```
 
+```objc
+- (void) updateGridButtons:(NSArray<CPGridButton *> *) gridButtons;
+```
+
 ## See Also
 
-- [func updateTitle(String)](cpgridtemplate/updatetitle(_:).md)
+### Instance Methods
+- [func updateTitle(String)](./updatetitle%28_%29.md)
 
 
 ---

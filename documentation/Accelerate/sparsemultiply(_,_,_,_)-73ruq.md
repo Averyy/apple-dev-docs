@@ -1,7 +1,8 @@
 # SparseMultiply(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs the multiply operation *Y = alpha * AX* on a sparse matrix of double-precision, floating-point values.
 
@@ -20,13 +21,17 @@ Performs the multiply operation *Y = alpha * AX* on a sparse matrix of double-pr
 func SparseMultiply(_ alpha: Double, _ A: SparseMatrix_Double, _ X: DenseMatrix_Double, _ Y: DenseMatrix_Double)
 ```
 
+```c
+static void SparseMultiply(double alpha, SparseMatrix_Double A, DenseMatrix_Double X, DenseMatrix_Double Y);
+```
+
 #### Discussion
 
 Use this function to multiply a scalar value by a sparse matrix, and then by a dense matrix. The following equation is an example of a scalar-matrix-matrix multiplication where the first matrix is sparse:
 
-![A mathematical formula that describes the matrix multiplication, Y equals alpha times A X. A scalar value multiplied by a four-by-four matrix multiplied by a four-by-two matrix equals a four-by-two matrix.](/images/com.apple.accelerate/media-3703074@2x.png)
+![A mathematical formula that describes the matrix multiplication, Y equals alpha times A X. A scalar value multiplied by a four-by-four matrix multiplied by a four-by-two matrix equals a four-by-two matrix.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3703074@2x.png)
 
-Call [`SparseMultiply(_:_:_:_:)`](sparsemultiply(_:_:_:_:)-73ruq.md)to calculate the result.
+Call [`SparseMultiply(_:_:_:_:)`](./sparsemultiply%28_,_,_,_%29-73ruq.md)to calculate the result.
 
 **Swift**:
 
@@ -141,11 +146,12 @@ SparseCleanup(A);
 
 ## See Also
 
-- [func SparseMultiply(SparseMatrix_Double, DenseMatrix_Double, DenseMatrix_Double)](sparsemultiply(_:_:_:)-8d9lh.md)
+### Multiplication functions
+- [func SparseMultiply(SparseMatrix_Double, DenseMatrix_Double, DenseMatrix_Double)](./sparsemultiply%28_,_,_%29-8d9lh.md)
   Performs the multiply operation *Y* *= AX* on a sparse matrix of double-precision, floating-point values.
-- [func SparseMultiply(SparseMatrix_Float, DenseMatrix_Float, DenseMatrix_Float)](sparsemultiply(_:_:_:)-9kraw.md)
+- [func SparseMultiply(SparseMatrix_Float, DenseMatrix_Float, DenseMatrix_Float)](./sparsemultiply%28_,_,_%29-9kraw.md)
   Performs the multiply operation *Y* *= AX*_ _on a sparse matrix of single-precision, floating-point values.
-- [func SparseMultiply(Float, SparseMatrix_Float, DenseMatrix_Float, DenseMatrix_Float)](sparsemultiply(_:_:_:_:)-2qh3a.md)
+- [func SparseMultiply(Float, SparseMatrix_Float, DenseMatrix_Float, DenseMatrix_Float)](./sparsemultiply%28_,_,_,_%29-2qh3a.md)
   Performs the multiply operation *Y = alpha * AX* on a sparse matrix of single-precision, floating-point values.
 
 

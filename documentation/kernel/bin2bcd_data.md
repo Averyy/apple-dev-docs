@@ -1,14 +1,15 @@
 # bin2bcd_data
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 const u_char bin2bcd_data[];
 ```
 

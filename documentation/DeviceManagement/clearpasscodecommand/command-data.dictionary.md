@@ -1,7 +1,8 @@
 # ClearPasscodeCommand.Command
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to remove the passcode from a device.
 
@@ -14,14 +15,18 @@ The command to remove the passcode from a device.
 
 ## Declaration
 
-```swift
+```
 object ClearPasscodeCommand.Command
 ```
 
 ## Properties
 
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+
+  **Default**: `false`
 - `RequestType` (string) *(required)*: The request type for this command.
+
+  **Allowed Values**: `ClearPasscode`
 - `UnlockToken` (data) *(required)*: The unlock token value that the device provides in its `TokenUpdateMessage` check-in message.
 
 

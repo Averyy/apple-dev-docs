@@ -1,7 +1,8 @@
 # MTLIOPriority.low
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Designates the low priority for a new input/output command queue.
 
@@ -19,11 +20,16 @@ Designates the low priority for a new input/output command queue.
 case low
 ```
 
+```c
+MTLIOPriorityLow
+```
+
 ## See Also
 
-- [MTLIOPriority.normal](mtliopriority/normal.md)
+### I/O command queue priorities
+- [MTLIOPriority.normal](./normal.md)
   Designates the normal priority for a new input/output command queue.
-- [MTLIOPriority.high](mtliopriority/high.md)
+- [MTLIOPriority.high](./high.md)
   Sets a new input/output command queue’s priority to a high priority.
 
 

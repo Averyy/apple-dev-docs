@@ -1,7 +1,8 @@
 # kMDQueryProgressNotification
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Notification posted to indicate that a change has occurred to the query’s results list during the initial result-gathering phase of execution.
 
@@ -12,6 +13,10 @@ Notification posted to indicate that a change has occurred to the query’s resu
 
 ```swift
 let kMDQueryProgressNotification: CFString!
+```
+
+```c
+const CFStringRef kMDQueryProgressNotification;
 ```
 
 

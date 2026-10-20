@@ -1,7 +1,8 @@
 # NEFilterManagerError
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes specific to filter managers.
 
@@ -18,37 +19,42 @@ Error codes specific to filter managers.
 enum NEFilterManagerError
 ```
 
+```c
+enum NEFilterManagerError : NSInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [NEFilterManagerError.configurationInvalid](nefiltermanagererror/configurationinvalid.md)
+- [NEFilterManagerError.configurationInvalid](./nefiltermanagererror/configurationinvalid.md)
   An error code that indicates the filter configuration is invalid.
-- [NEFilterManagerError.configurationDisabled](nefiltermanagererror/configurationdisabled.md)
+- [NEFilterManagerError.configurationDisabled](./nefiltermanagererror/configurationdisabled.md)
   An error code that indicates the filter configuration isn’t enabled.
-- [NEFilterManagerError.configurationStale](nefiltermanagererror/configurationstale.md)
+- [NEFilterManagerError.configurationStale](./nefiltermanagererror/configurationstale.md)
   An error code that indicates another process modfied the filter configuration since the last time the app loaded the configuration.
-- [NEFilterManagerError.configurationCannotBeRemoved](nefiltermanagererror/configurationcannotberemoved.md)
+- [NEFilterManagerError.configurationCannotBeRemoved](./nefiltermanagererror/configurationcannotberemoved.md)
   An error code that indicates removing the configuration isn’t allowed.
-- [NEFilterManagerError.configurationPermissionDenied](nefiltermanagererror/configurationpermissiondenied.md)
+- [NEFilterManagerError.configurationPermissionDenied](./nefiltermanagererror/configurationpermissiondenied.md)
   An error code that indicates the configuration lacks permission.
-- [NEFilterManagerError.configurationInternalError](nefiltermanagererror/configurationinternalerror.md)
+- [NEFilterManagerError.configurationInternalError](./nefiltermanagererror/configurationinternalerror.md)
   An error code that indicates an internal configuration error occurred.
 ### Initializers
-- [init?(rawValue: Int)](nefiltermanagererror/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nefiltermanagererror/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let NEFilterErrorDomain: String](nefiltererrordomain.md)
+### Errors
+- [let NEFilterErrorDomain: String](./nefiltererrordomain.md)
   The domain for errors resulting from calls to the filter manager.
 
 

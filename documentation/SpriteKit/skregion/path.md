@@ -1,7 +1,8 @@
 # path
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Core Graphics path that defines the region.
 
@@ -20,9 +21,14 @@ Returns a Core Graphics path that defines the region.
 var path: CGPath? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CGPathRef path;
+```
+
 ## See Also
 
-- [func contains(CGPoint) -> Bool](skregion/contains(_:).md)
+### Interacting with a Region
+- [func contains(CGPoint) -> Bool](./contains%28_%29.md)
   Returns a Boolean value that indicates whether a particular point is contained in the region.
 
 

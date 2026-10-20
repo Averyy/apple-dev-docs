@@ -1,15 +1,16 @@
 # kMusicDeviceReleaseInstrumentSelect
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,15 +18,20 @@
 var kMusicDeviceReleaseInstrumentSelect: Int { get }
 ```
 
+```c
+kMusicDeviceReleaseInstrumentSelect
+```
+
 ## See Also
 
-- [var kMusicDeviceMIDIEventSelect: Int](kmusicdevicemidieventselect.md)
-- [var kMusicDevicePrepareInstrumentSelect: Int](kmusicdeviceprepareinstrumentselect.md)
-- [var kMusicDeviceRange: Int](kmusicdevicerange.md)
-- [var kMusicDeviceStartNoteSelect: Int](kmusicdevicestartnoteselect.md)
-- [var kMusicDeviceStopNoteSelect: Int](kmusicdevicestopnoteselect.md)
-- [var kMusicDeviceSysExSelect: Int](kmusicdevicesysexselect.md)
-- [var kMusicDeviceMIDIEventListSelect: Int](kmusicdevicemidieventlistselect.md)
+### Constants
+- [var kMusicDeviceMIDIEventSelect: Int](./kmusicdevicemidieventselect.md)
+- [var kMusicDevicePrepareInstrumentSelect: Int](./kmusicdeviceprepareinstrumentselect.md)
+- [var kMusicDeviceRange: Int](./kmusicdevicerange.md)
+- [var kMusicDeviceStartNoteSelect: Int](./kmusicdevicestartnoteselect.md)
+- [var kMusicDeviceStopNoteSelect: Int](./kmusicdevicestopnoteselect.md)
+- [var kMusicDeviceSysExSelect: Int](./kmusicdevicesysexselect.md)
+- [var kMusicDeviceMIDIEventListSelect: Int](./kmusicdevicemidieventlistselect.md)
 
 
 ---

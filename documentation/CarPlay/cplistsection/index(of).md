@@ -1,7 +1,8 @@
 # index(of:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index of the specified item.
 
@@ -16,9 +17,13 @@ Returns the index of the specified item.
 func index(of item: any CPListTemplateItem) -> Int
 ```
 
+```objc
+- (NSUInteger) indexOfItem:(id<CPListTemplateItem>) item;
+```
+
 #### Return Value
 
-The item’s index in the section, or [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound-4qp9h) if the section doesn’t contain the item.
+The item’s index in the section, or [`NSNotFound`](../../Foundation/nsnotfound-4qp9h.md) if the section doesn’t contain the item.
 
 ## Parameters
 
@@ -26,9 +31,10 @@ The item’s index in the section, or [`NSNotFound`](https://developer.apple.com
 
 ## See Also
 
-- [var items: [any CPListTemplateItem]](cplistsection/items.md)
+### Getting Items
+- [var items: [any CPListTemplateItem]](./items.md)
   The list of items for the section.
-- [func item(at: Int) -> any CPListTemplateItem](cplistsection/item(at:).md)
+- [func item(at: Int) -> any CPListTemplateItem](./item%28at%29.md)
   Returns the item at the specified index.
 
 

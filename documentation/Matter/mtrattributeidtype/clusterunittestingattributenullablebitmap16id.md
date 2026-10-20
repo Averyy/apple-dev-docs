@@ -1,7 +1,8 @@
 # clusterUnitTestingAttributeNullableBitmap16ID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 static var clusterUnitTestingAttributeNullableBitmap16ID: MTRAttributeIDType { get }
+```
+
+```c
+MTRAttributeIDTypeClusterUnitTestingAttributeNullableBitmap16ID
 ```
 
 

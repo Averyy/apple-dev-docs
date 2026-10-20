@@ -5,12 +5,12 @@
 ## Topics
 
 ### Constants
-- [var kHIShapeParseFromBottom: Int](khishapeparsefrombottom.md)
-- [var kHIShapeParseFromBottomRight: Int](khishapeparsefrombottomright.md)
-- [var kHIShapeParseFromLeft: Int](khishapeparsefromleft.md)
-- [var kHIShapeParseFromRight: Int](khishapeparsefromright.md)
-- [var kHIShapeParseFromTop: Int](khishapeparsefromtop.md)
-- [var kHIShapeParseFromTopLeft: Int](khishapeparsefromtopleft.md)
+- [var kHIShapeParseFromBottom: Int](../khishapeparsefrombottom.md)
+- [var kHIShapeParseFromBottomRight: Int](../khishapeparsefrombottomright.md)
+- [var kHIShapeParseFromLeft: Int](../khishapeparsefromleft.md)
+- [var kHIShapeParseFromRight: Int](../khishapeparsefromright.md)
+- [var kHIShapeParseFromTop: Int](../khishapeparsefromtop.md)
+- [var kHIShapeParseFromTopLeft: Int](../khishapeparsefromtopleft.md)
 
 
 ---

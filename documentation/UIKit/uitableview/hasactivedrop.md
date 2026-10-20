@@ -1,7 +1,8 @@
 # hasActiveDrop
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the table view is currently tracking a drop session.
 
@@ -17,15 +18,20 @@ A Boolean value that indicates whether the table view is currently tracking a dr
 var hasActiveDrop: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasActiveDrop;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the table view is tracking a drop session.
+The value of this property is [`true`](../../Swift/true.md) when the table view is tracking a drop session.
 
 ## See Also
 
-- [var dropDelegate: (any UITableViewDropDelegate)?](uitableview/dropdelegate.md)
+### Managing drop interactions
+- [var dropDelegate: (any UITableViewDropDelegate)?](./dropdelegate.md)
   The delegate object that manages the dropping of content into the table view.
-- [protocol UITableViewDropDelegate](uitableviewdropdelegate.md)
+- [protocol UITableViewDropDelegate](../uitableviewdropdelegate.md)
   The interface for handling drops in a table view.
 
 

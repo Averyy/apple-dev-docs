@@ -1,7 +1,8 @@
 # tls_ciphersuite_group_t.ats_fcp_v2_1
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.5+
@@ -16,6 +17,10 @@
 
 ```swift
 case ats_fcp_v2_1
+```
+
+```c
+tls_ciphersuite_group_ats_fcp_v2_1
 ```
 
 

@@ -1,7 +1,8 @@
 # NSExtensionActivationSupportsText
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value indicating whether the app extension supports text.
 
@@ -11,9 +12,10 @@ A Boolean value indicating whether the app extension supports text.
 - macOS 10.10+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `NSExtensionActivationSupportsText`
+- **Type**: boolean
 
 
 ---

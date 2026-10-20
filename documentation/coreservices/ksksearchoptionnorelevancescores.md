@@ -1,7 +1,8 @@
 # kSKSearchOptionNoRelevanceScores
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 This option saves time during a search by suppressing the computation of relevance scores.
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value indicating whether text is selected for dragging.
@@ -18,9 +19,14 @@ A Boolean value indicating whether text is selected for dragging.
 var isSelected: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isSelected) BOOL selected;
+```
+
 ## See Also
 
-- [var dragRange: UITextRange](uitextdragrequest/dragrange.md)
+### Getting information about the text
+- [var dragRange: UITextRange](./dragrange.md)
   A range of text associated with a drag item in an active drag session that originated in a text view.
 
 

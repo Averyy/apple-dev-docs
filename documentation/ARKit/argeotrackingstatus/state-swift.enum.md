@@ -1,7 +1,8 @@
 # ARGeoTrackingStatus.State
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that are possible for the current state of geo-tracking.
 
@@ -15,45 +16,50 @@ Values that are possible for the current state of geo-tracking.
 enum State
 ```
 
+```c
+enum ARGeoTrackingState : NSInteger;
+```
+
 #### Discussion
 
-For any [`state`](argeotrackingstatus/state-swift.property.md) in a frame’s [`geoTrackingStatus`](arframe/geotrackingstatus.md), ARKit provides a [`stateReason`](argeotrackingstatus/statereason-swift.property.md). A given geo-tracking status may intermix states and reasons, so the reasons are not tied to specific states.
+For any [`state`](./state-swift.property.md) in a frame’s [`geoTrackingStatus`](../arframe/geotrackingstatus.md), ARKit provides a [`stateReason`](./statereason-swift.property.md). A given geo-tracking status may intermix states and reasons, so the reasons are not tied to specific states.
 
 ## Topics
 
 ### States
-- [ARGeoTrackingStatus.State.initializing](argeotrackingstatus/state-swift.enum/initializing.md)
+- [ARGeoTrackingStatus.State.initializing](./state-swift.enum/initializing.md)
   The session is initializing geo tracking.
-- [ARGeoTrackingStatus.State.localized](argeotrackingstatus/state-swift.enum/localized.md)
+- [ARGeoTrackingStatus.State.localized](./state-swift.enum/localized.md)
   Geo tracking is localized.
-- [ARGeoTrackingStatus.State.localizing](argeotrackingstatus/state-swift.enum/localizing.md)
+- [ARGeoTrackingStatus.State.localizing](./state-swift.enum/localizing.md)
   Geo tracking is attempting to localize against a map.
-- [ARGeoTrackingStatus.State.notAvailable](argeotrackingstatus/state-swift.enum/notavailable.md)
+- [ARGeoTrackingStatus.State.notAvailable](./state-swift.enum/notavailable.md)
   Geo tracking is not available.
-- [ARGeoTrackingStatus.State.initializing](argeotrackingstatus/state-swift.enum/initializing.md)
+- [ARGeoTrackingStatus.State.initializing](./state-swift.enum/initializing.md)
   The session is initializing geo tracking.
-- [ARGeoTrackingStatus.State.localized](argeotrackingstatus/state-swift.enum/localized.md)
+- [ARGeoTrackingStatus.State.localized](./state-swift.enum/localized.md)
   Geo tracking is localized.
-- [ARGeoTrackingStatus.State.localizing](argeotrackingstatus/state-swift.enum/localizing.md)
+- [ARGeoTrackingStatus.State.localizing](./state-swift.enum/localizing.md)
   Geo tracking is attempting to localize against a map.
-- [ARGeoTrackingStatus.State.notAvailable](argeotrackingstatus/state-swift.enum/notavailable.md)
+- [ARGeoTrackingStatus.State.notAvailable](./state-swift.enum/notavailable.md)
   Geo tracking is not available.
 ### Initializers
-- [init?(rawValue: Int)](argeotrackingstatus/state-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./state-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var state: ARGeoTrackingStatus.State](argeotrackingstatus/state-swift.property.md)
+### Checking State
+- [var state: ARGeoTrackingStatus.State](./state-swift.property.md)
   A value that describes the session’s current geo-tracking state.
 
 

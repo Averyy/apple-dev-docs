@@ -1,17 +1,18 @@
 # IOWorkGroup
 
 **Framework**: DriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 class IOWorkGroup;
 ```
 
@@ -30,19 +31,19 @@ Once the workgroup port has been sent to the driver, the driver should be notifi
 ## Topics
 
 ### Instance Methods
-- [GetTokenSize](ioworkgroup/gettokensize.md)
-- [Invalidate](ioworkgroup/invalidate.md)
-- [Join](ioworkgroup/join.md)
-- [Leave](ioworkgroup/leave.md)
-- [free](ioworkgroup/free.md)
-- [init](ioworkgroup/init.md)
+- [GetTokenSize](./ioworkgroup/gettokensize.md)
+- [Invalidate](./ioworkgroup/invalidate.md)
+- [Join](./ioworkgroup/join.md)
+- [Leave](./ioworkgroup/leave.md)
+- [free](./ioworkgroup/free.md)
+- [init](./ioworkgroup/init.md)
 ### Type Methods
-- [Create](ioworkgroup/create.md)
+- [Create](./ioworkgroup/create.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
 
 
 ---

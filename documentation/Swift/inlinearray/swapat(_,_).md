@@ -1,7 +1,8 @@
 # swapAt(_:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exchanges the values at the specified indices of the array.
 
@@ -24,7 +25,7 @@ mutating func swapAt(_ i: InlineArray<count, Element>.Index, _ j: InlineArray<co
 
 Both parameters must be valid indices of the array and not equal to `endIndex`. Passing the same index as both `i` and `j` has no effect.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

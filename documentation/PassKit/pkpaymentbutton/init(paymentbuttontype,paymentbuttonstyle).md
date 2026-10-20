@@ -1,7 +1,8 @@
 # init(paymentButtonType:paymentButtonStyle:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new payment button with the specified type and style.
 
@@ -18,14 +19,18 @@ Creates a new payment button with the specified type and style.
 init(paymentButtonType type: PKPaymentButtonType, paymentButtonStyle style: PKPaymentButtonStyle)
 ```
 
+```objc
+- (instancetype) initWithPaymentButtonType:(PKPaymentButtonType) type paymentButtonStyle:(PKPaymentButtonStyle) style;
+```
+
 #### Return Value
 
 Returns a `PKPaymentButton` instance with the specified type and style.
 
 ## Parameters
 
-- `type`: The button’s content. For a complete list of button types, see [`PKPaymentButtonType`](pkpaymentbuttontype.md).
-- `style`: The button’s appearance. For a complete list of button styles, see [`PKPaymentButtonStyle`](pkpaymentbuttonstyle.md).
+- `type`: The button’s content. For a complete list of button types, see [`PKPaymentButtonType`](../pkpaymentbuttontype.md).
+- `style`: The button’s appearance. For a complete list of button styles, see [`PKPaymentButtonStyle`](../pkpaymentbuttonstyle.md).
 
 
 ---

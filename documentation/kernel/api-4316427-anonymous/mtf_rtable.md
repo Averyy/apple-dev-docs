@@ -1,14 +1,15 @@
 # MTF_RTABLE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 MTF_RTABLE = (1 << MT_RTABLE)
 ```
 

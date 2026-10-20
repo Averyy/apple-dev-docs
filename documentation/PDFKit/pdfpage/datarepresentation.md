@@ -1,7 +1,8 @@
 # dataRepresentation
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the PDF data (that is, a PDF document) representing this page. This method does not preserve external page links.
 
@@ -19,9 +20,14 @@ Returns the PDF data (that is, a PDF document) representing this page. This meth
 var dataRepresentation: Data? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSData * dataRepresentation;
+```
+
 ## See Also
 
-- [var pageRef: CGPDFPage?](pdfpage/pageref.md)
+### Instance Properties
+- [var pageRef: CGPDFPage?](./pageref.md)
 
 
 ---

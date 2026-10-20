@@ -1,7 +1,8 @@
 # SystemShortcut
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An opaque reference to a user-configured action for use in a widget button.
 
@@ -18,8 +19,8 @@ struct SystemShortcut
 
 ## Mentions
 
-- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
-- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
+- [Adding parameters to an app intent](./adding-parameters-to-an-app-intent.md)
+- [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
 #### Overview
 
@@ -28,30 +29,31 @@ The system creates `SystemShortcut` instances to represent a person’s choice w
 ## Topics
 
 ### Resolving the type
-- [static let defaultResolverSpecification: EmptyResolverSpecification<SystemShortcut>](systemshortcut/defaultresolverspecification.md)
-- [SystemShortcut.Specification](systemshortcut/specification.md)
-- [SystemShortcut.ValueType](systemshortcut/valuetype.md)
-- [SystemShortcut.UnwrappedType](systemshortcut/unwrappedtype.md)
+- [static let defaultResolverSpecification: EmptyResolverSpecification<SystemShortcut>](./systemshortcut/defaultresolverspecification.md)
+- [SystemShortcut.Specification](./systemshortcut/specification.md)
+- [SystemShortcut.ValueType](./systemshortcut/valuetype.md)
+- [SystemShortcut.UnwrappedType](./systemshortcut/unwrappedtype.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
-- [DisplayRepresentable](displayrepresentable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
-- [IntentValueConvertible](intentvalueconvertible.md)
-- [IntentValueExpressing](intentvalueexpressing.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TypeDisplayRepresentable](typedisplayrepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomLocalizedStringResourceConvertible](../Foundation/customlocalizedstringresourceconvertible.md)
+- [DisplayRepresentable](./displayrepresentable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [InstanceDisplayRepresentable](./instancedisplayrepresentable.md)
+- [IntentValueConvertible](./intentvalueconvertible.md)
+- [IntentValueExpressing](./intentvalueexpressing.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TypeDisplayRepresentable](./typedisplayrepresentable.md)
 
 ## See Also
 
-- [init(shortcut: SystemShortcut)](runsystemshortcutintent/init(shortcut:).md)
+### Creating the intent
+- [init(shortcut: SystemShortcut)](./runsystemshortcutintent/init%28shortcut%29.md)
   Creates an intent that performs a person’s configured action.
 
 

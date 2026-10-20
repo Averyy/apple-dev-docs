@@ -1,7 +1,8 @@
 # AgeRangeService.RegulatoryFeature
 
 **Framework**: Declared Age Range  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines the regulatory features that your app may need to support.
 
@@ -20,24 +21,25 @@ enum RegulatoryFeature
 ## Topics
 
 ### Checking regulatory requirements
-- [AgeRangeService.RegulatoryFeature.declaredAgeRangeRequired](agerangeservice/regulatoryfeature/declaredagerangerequired.md)
+- [AgeRangeService.RegulatoryFeature.declaredAgeRangeRequired](./regulatoryfeature/declaredagerangerequired.md)
   Indicates the person is required to share their age range with your app.
-- [AgeRangeService.RegulatoryFeature.significantAppChangeRequiresAdultNotification](agerangeservice/regulatoryfeature/significantappchangerequiresadultnotification.md)
+- [AgeRangeService.RegulatoryFeature.significantAppChangeRequiresAdultNotification](./regulatoryfeature/significantappchangerequiresadultnotification.md)
   Indicates that adult users must acknowledge your app’s significant change.
-- [AgeRangeService.RegulatoryFeature.significantAppChangeRequiresParentalConsent](agerangeservice/regulatoryfeature/significantappchangerequiresparentalconsent.md)
+- [AgeRangeService.RegulatoryFeature.significantAppChangeRequiresParentalConsent](./regulatoryfeature/significantappchangerequiresparentalconsent.md)
   Indicates a parent or guardian is required to acknowledge and consent to a significant app change.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var requiredRegulatoryFeatures: Set<AgeRangeService.RegulatoryFeature>](agerangeservice/requiredregulatoryfeatures.md)
+### Defining regulatory features
+- [var requiredRegulatoryFeatures: Set<AgeRangeService.RegulatoryFeature>](./requiredregulatoryfeatures.md)
   A set of regulatory features that are required for the person.
 
 

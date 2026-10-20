@@ -1,7 +1,8 @@
 # kCMTextMarkupAlignmentType_Middle
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An alignment type that visually aligns text in the center between its starting and ending sides.
 
@@ -20,15 +21,20 @@ An alignment type that visually aligns text in the center between its starting a
 let kCMTextMarkupAlignmentType_Middle: CFString
 ```
 
+```c
+extern CFStringRef const kCMTextMarkupAlignmentType_Middle;
+```
+
 ## See Also
 
-- [let kCMTextMarkupAlignmentType_Start: CFString](kcmtextmarkupalignmenttype_start.md)
+### Alignment Types
+- [let kCMTextMarkupAlignmentType_Start: CFString](./kcmtextmarkupalignmenttype_start.md)
   An alignment type that visually aligns the text at its starting side.
-- [let kCMTextMarkupAlignmentType_End: CFString](kcmtextmarkupalignmenttype_end.md)
+- [let kCMTextMarkupAlignmentType_End: CFString](./kcmtextmarkupalignmenttype_end.md)
   An alignment type that visually aligns the text at its ending side.
-- [let kCMTextMarkupAlignmentType_Left: CFString](kcmtextmarkupalignmenttype_left.md)
+- [let kCMTextMarkupAlignmentType_Left: CFString](./kcmtextmarkupalignmenttype_left.md)
   An alignment type that visually aligns text from left-to-right.
-- [let kCMTextMarkupAlignmentType_Right: CFString](kcmtextmarkupalignmenttype_right.md)
+- [let kCMTextMarkupAlignmentType_Right: CFString](./kcmtextmarkupalignmenttype_right.md)
   An alignment type that visually aligns text from right-to-left.
 
 

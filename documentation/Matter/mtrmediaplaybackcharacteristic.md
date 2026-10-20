@@ -1,7 +1,8 @@
 # MTRMediaPlaybackCharacteristic
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,39 +19,43 @@
 enum MTRMediaPlaybackCharacteristic
 ```
 
+```c
+enum MTRMediaPlaybackCharacteristic : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRMediaPlaybackCharacteristic.alternate](mtrmediaplaybackcharacteristic/alternate.md)
-- [MTRMediaPlaybackCharacteristic.caption](mtrmediaplaybackcharacteristic/caption.md)
-- [MTRMediaPlaybackCharacteristic.commentary](mtrmediaplaybackcharacteristic/commentary.md)
-- [MTRMediaPlaybackCharacteristic.describesVideo](mtrmediaplaybackcharacteristic/describesvideo.md)
-- [MTRMediaPlaybackCharacteristic.description](mtrmediaplaybackcharacteristic/description.md)
-- [MTRMediaPlaybackCharacteristic.dubbedTranslation](mtrmediaplaybackcharacteristic/dubbedtranslation.md)
-- [MTRMediaPlaybackCharacteristic.easyToRead](mtrmediaplaybackcharacteristic/easytoread.md)
-- [MTRMediaPlaybackCharacteristic.emergency](mtrmediaplaybackcharacteristic/emergency.md)
-- [MTRMediaPlaybackCharacteristic.enhancedAudioIntelligibility](mtrmediaplaybackcharacteristic/enhancedaudiointelligibility.md)
-- [MTRMediaPlaybackCharacteristic.forcedSubtitles](mtrmediaplaybackcharacteristic/forcedsubtitles.md)
-- [MTRMediaPlaybackCharacteristic.frameBased](mtrmediaplaybackcharacteristic/framebased.md)
-- [MTRMediaPlaybackCharacteristic.karaoke](mtrmediaplaybackcharacteristic/karaoke.md)
-- [MTRMediaPlaybackCharacteristic.mainProgram](mtrmediaplaybackcharacteristic/mainprogram.md)
-- [MTRMediaPlaybackCharacteristic.metadata](mtrmediaplaybackcharacteristic/metadata.md)
-- [MTRMediaPlaybackCharacteristic.originalContent](mtrmediaplaybackcharacteristic/originalcontent.md)
-- [MTRMediaPlaybackCharacteristic.subtitle](mtrmediaplaybackcharacteristic/subtitle.md)
-- [MTRMediaPlaybackCharacteristic.supplementary](mtrmediaplaybackcharacteristic/supplementary.md)
-- [MTRMediaPlaybackCharacteristic.voiceOverTranslation](mtrmediaplaybackcharacteristic/voiceovertranslation.md)
+- [MTRMediaPlaybackCharacteristic.alternate](./mtrmediaplaybackcharacteristic/alternate.md)
+- [MTRMediaPlaybackCharacteristic.caption](./mtrmediaplaybackcharacteristic/caption.md)
+- [MTRMediaPlaybackCharacteristic.commentary](./mtrmediaplaybackcharacteristic/commentary.md)
+- [MTRMediaPlaybackCharacteristic.describesVideo](./mtrmediaplaybackcharacteristic/describesvideo.md)
+- [MTRMediaPlaybackCharacteristic.description](./mtrmediaplaybackcharacteristic/description.md)
+- [MTRMediaPlaybackCharacteristic.dubbedTranslation](./mtrmediaplaybackcharacteristic/dubbedtranslation.md)
+- [MTRMediaPlaybackCharacteristic.easyToRead](./mtrmediaplaybackcharacteristic/easytoread.md)
+- [MTRMediaPlaybackCharacteristic.emergency](./mtrmediaplaybackcharacteristic/emergency.md)
+- [MTRMediaPlaybackCharacteristic.enhancedAudioIntelligibility](./mtrmediaplaybackcharacteristic/enhancedaudiointelligibility.md)
+- [MTRMediaPlaybackCharacteristic.forcedSubtitles](./mtrmediaplaybackcharacteristic/forcedsubtitles.md)
+- [MTRMediaPlaybackCharacteristic.frameBased](./mtrmediaplaybackcharacteristic/framebased.md)
+- [MTRMediaPlaybackCharacteristic.karaoke](./mtrmediaplaybackcharacteristic/karaoke.md)
+- [MTRMediaPlaybackCharacteristic.mainProgram](./mtrmediaplaybackcharacteristic/mainprogram.md)
+- [MTRMediaPlaybackCharacteristic.metadata](./mtrmediaplaybackcharacteristic/metadata.md)
+- [MTRMediaPlaybackCharacteristic.originalContent](./mtrmediaplaybackcharacteristic/originalcontent.md)
+- [MTRMediaPlaybackCharacteristic.subtitle](./mtrmediaplaybackcharacteristic/subtitle.md)
+- [MTRMediaPlaybackCharacteristic.supplementary](./mtrmediaplaybackcharacteristic/supplementary.md)
+- [MTRMediaPlaybackCharacteristic.voiceOverTranslation](./mtrmediaplaybackcharacteristic/voiceovertranslation.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrmediaplaybackcharacteristic/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrmediaplaybackcharacteristic/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

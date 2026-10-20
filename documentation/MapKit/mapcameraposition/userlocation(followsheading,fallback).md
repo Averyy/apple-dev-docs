@@ -1,7 +1,8 @@
 # userLocation(followsHeading:fallback:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a camera position with the specific fallback position and optionally follows the user’s heading.
 
@@ -11,7 +12,7 @@ Creates a camera position with the specific fallback position and optionally fol
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ static func userLocation(followsHeading: Bool = false, fallback: MapCameraPositi
 
 #### Return Value
 
-A new [`MapCameraPosition`](mapcameraposition.md).
+A new [`MapCameraPosition`](../mapcameraposition.md).
 
 ## Parameters
 
@@ -31,13 +32,14 @@ A new [`MapCameraPosition`](mapcameraposition.md).
 
 ## See Also
 
-- [static func camera(MapCamera) -> MapCameraPosition](mapcameraposition/camera(_:).md)
+### Creating a camera position
+- [static func camera(MapCamera) -> MapCameraPosition](./camera%28_%29.md)
   Creates a new camera position from an existing map camera you provide.
-- [static func item(MKMapItem, allowsAutomaticPitch: Bool) -> MapCameraPosition](mapcameraposition/item(_:allowsautomaticpitch:).md)
+- [static func item(MKMapItem, allowsAutomaticPitch: Bool) -> MapCameraPosition](./item%28_,allowsautomaticpitch%29.md)
   Creates a new camera position centered on a map item and automatic pitch selection you provide.
-- [static func rect(MKMapRect) -> MapCameraPosition](mapcameraposition/rect(_:).md)
+- [static func rect(MKMapRect) -> MapCameraPosition](./rect%28_%29.md)
   Creates a new camera position with the map boundaries you provide.
-- [static func region(MKCoordinateRegion) -> MapCameraPosition](mapcameraposition/region(_:).md)
+- [static func region(MKCoordinateRegion) -> MapCameraPosition](./region%28_%29.md)
   Creates a new camera position the coordinate region you provide.
 
 

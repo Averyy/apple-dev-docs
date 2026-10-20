@@ -1,7 +1,8 @@
 # canDeleteRecord(forManagedObjectWith:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the user can delete the managed object’s underlying CloudKit record.
 
@@ -20,19 +21,23 @@ Returns a Boolean value that indicates whether the user can delete the managed o
 func canDeleteRecord(forManagedObjectWith objectID: NSManagedObjectID) -> Bool
 ```
 
+```objc
+- (BOOL) canDeleteRecordForManagedObjectWithID:(NSManagedObjectID *) objectID;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the user can delete the CloudKit record; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the user can delete the CloudKit record; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-This method returns [`true`](https://developer.apple.com/documentation/swift/true) if [`canModifyManagedObjects(in:)`](nspersistentcloudkitcontainer/canmodifymanagedobjects(in:).md) returns [`true`](https://developer.apple.com/documentation/swift/true) and any of the following conditions are true:
+This method returns [`true`](../../Swift/true.md) if [`canModifyManagedObjects(in:)`](./canmodifymanagedobjects%28in%29.md) returns [`true`](../../Swift/true.md) and any of the following conditions are true:
 
 - `objectID` is a temporary object identifier.
 - The persistent store that contains the managed object isn’t using CloudKit.
 - The persistent store manages the user’s private database.
 - The persistent store manages the public database, and the user owns the underlying record or Core Data has yet to save the managed object to iCloud.
-- The persistent store manages the shared database, and the user has the necessary permissions to delete the managed object’s underlying record. For more information, see [`CKShare.ParticipantPermission`](https://developer.apple.com/documentation/cloudkit/ckshare/participantpermission).
+- The persistent store manages the shared database, and the user has the necessary permissions to delete the managed object’s underlying record. For more information, see [`CKShare.ParticipantPermission`](../../CloudKit/ckshare/participantpermission.md).
 
 ## Parameters
 
@@ -40,9 +45,10 @@ This method returns [`true`](https://developer.apple.com/documentation/swift/tru
 
 ## See Also
 
-- [func canUpdateRecord(forManagedObjectWith: NSManagedObjectID) -> Bool](nspersistentcloudkitcontainer/canupdaterecord(formanagedobjectwith:).md)
+### Checking Permissions
+- [func canUpdateRecord(forManagedObjectWith: NSManagedObjectID) -> Bool](./canupdaterecord%28formanagedobjectwith%29.md)
   Returns a Boolean value that indicates whether the user can modify the managed object’s underlying CloudKit record.
-- [func canModifyManagedObjects(in: NSPersistentStore) -> Bool](nspersistentcloudkitcontainer/canmodifymanagedobjects(in:).md)
+- [func canModifyManagedObjects(in: NSPersistentStore) -> Bool](./canmodifymanagedobjects%28in%29.md)
   Returns a Boolean value that indicates whether the user can modify the specified persistent store.
 
 

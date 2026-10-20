@@ -1,7 +1,8 @@
 # array(byApplying:)
 
 **Framework**: Scripting Bridge  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array containing the results of sending the specified message to each object in the receiver.
 
@@ -13,6 +14,10 @@ Returns an array containing the results of sending the specified message to each
 
 ```swift
 func array(byApplying selector: Selector) -> [Any]
+```
+
+```objc
+- (NSArray<id> *) arrayByApplyingSelector:(SEL) selector;
 ```
 
 #### Return Value
@@ -29,7 +34,8 @@ The method identified by `selector` must not take any arguments and must return 
 
 ## See Also
 
-- [func array(byApplying: Selector, with: Any) -> [Any]](sbelementarray/array(byapplying:with:).md)
+### Filtering an Element Array
+- [func array(byApplying: Selector, with: Any) -> [Any]](./array%28byapplying,with%29.md)
   Returns an array containing the results of sending the specified message to each object in the receiver.
 
 

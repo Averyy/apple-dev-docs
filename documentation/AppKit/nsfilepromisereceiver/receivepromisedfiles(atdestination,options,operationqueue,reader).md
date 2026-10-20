@@ -1,7 +1,8 @@
 # receivePromisedFiles(atDestination:options:operationQueue:reader:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fulfills the promises at the specified destination.
 
@@ -14,11 +15,15 @@ Fulfills the promises at the specified destination.
 func receivePromisedFiles(atDestination destinationDir: URL, options: [AnyHashable : Any] = [:], operationQueue: OperationQueue, reader: @escaping (URL, (any Error)?) -> Void)
 ```
 
+```objc
+- (void) receivePromisedFilesAtDestination:(NSURL *) destinationDir options:(NSDictionary *) options operationQueue:(NSOperationQueue *) operationQueue reader:(void (^)(NSURL *fileURL, NSError *errorOrNil)) reader;
+```
+
 #### Discussion
 
 Call this method only when you’re accepting the file promise. All file promise receivers in a drag must specify the same destination location. The `options` dictionary is ignored for now. The `reader` block is called on the supplied `operationQueue` when the promised file is ready to be read.
 
-Avoid blocking the main thread while waiting for the file promise to be written (which can be a long process) by specifying an operation queue other than the main queue. When the source is an [`NSFilePromiseProvider`](nsfilepromiseprovider.md), the reader block call is wrapped in a file coordination read.
+Avoid blocking the main thread while waiting for the file promise to be written (which can be a long process) by specifying an operation queue other than the main queue. When the source is an [`NSFilePromiseProvider`](../nsfilepromiseprovider.md), the reader block call is wrapped in a file coordination read.
 
 > **Note**:  If writing the promised file fails, the `reader` block is still called with a non-nil `error`. There may be nothing in `fileURL`, or there may be a partial or corrupt file.
 

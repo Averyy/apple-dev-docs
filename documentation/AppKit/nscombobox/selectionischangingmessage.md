@@ -1,7 +1,8 @@
 # NSComboBox.SelectionIsChangingMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,17 +16,17 @@ struct SelectionIsChangingMessage
 ## Topics
 
 ### Initializers
-- [init(comboBox: NSComboBox)](nscombobox/selectionischangingmessage/init(combobox:).md)
+- [init(comboBox: NSComboBox)](./selectionischangingmessage/init%28combobox%29.md)
 ### Instance Properties
-- [var comboBox: NSComboBox](nscombobox/selectionischangingmessage/combobox.md)
+- [var comboBox: NSComboBox](./selectionischangingmessage/combobox.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

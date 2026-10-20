@@ -1,7 +1,8 @@
 # transientItem
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A music item that corresponds to a recently inserted entry in the playback queue that has underlying items the music player still needs to resolve.
 

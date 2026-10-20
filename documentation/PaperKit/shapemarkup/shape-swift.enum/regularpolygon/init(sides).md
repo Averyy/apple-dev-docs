@@ -1,7 +1,8 @@
 # init(sides:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new regular polygon with equal sides and angles.
 

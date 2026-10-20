@@ -1,7 +1,8 @@
 # cmHSVData
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The HSV data color space.
 

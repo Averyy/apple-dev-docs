@@ -1,7 +1,8 @@
 # errSecOCSPResponseNonceMismatch
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The online certificate status protocol (OCSP) response nonce does not match the request.
 
@@ -18,6 +19,10 @@ The online certificate status protocol (OCSP) response nonce does not match the 
 
 ```swift
 var errSecOCSPResponseNonceMismatch: OSStatus { get }
+```
+
+```c
+errSecOCSPResponseNonceMismatch
 ```
 
 

@@ -1,7 +1,8 @@
 # observedPresentedItemUbiquityAttributes
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.13+
@@ -13,10 +14,15 @@ nonisolated
 var observedPresentedItemUbiquityAttributes: Set<URLResourceKey> { get }
 ```
 
+```objc
+@property (strong, readonly) NSSet<NSString *> * observedPresentedItemUbiquityAttributes;
+```
+
 ## See Also
 
-- [var presentedItemURL: URL?](nsdocument/presenteditemurl.md)
-- [var previewRepresentableActivityItems: [any NSPreviewRepresentableActivityItem]?](nsdocument/previewrepresentableactivityitems.md)
+### Instance Properties
+- [var presentedItemURL: URL?](./presenteditemurl.md)
+- [var previewRepresentableActivityItems: [any NSPreviewRepresentableActivityItem]?](./previewrepresentableactivityitems.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # files
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of entity schemas in the files domain.
 
@@ -17,6 +18,8 @@ The collection of entity schemas in the files domain.
 ```swift
 static var files: some AppSchema.FilesEntity { get }
 ```
+
+Available when `Self` is `AppSchema.Entity`.
 
 
 ---

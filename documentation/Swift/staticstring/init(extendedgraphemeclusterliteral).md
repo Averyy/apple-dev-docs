@@ -1,7 +1,8 @@
 # init(extendedGraphemeClusterLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance initialized to a single character that is made up of one or more Unicode scalar values.
 

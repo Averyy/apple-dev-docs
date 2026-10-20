@@ -1,7 +1,8 @@
 # init(inputMetaParameterDefinition:envelope:identifier:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a specification for a named metaparameter that the app plots on a graph defined by the given set of curves.
 
@@ -19,6 +20,10 @@ Creates a specification for a named metaparameter that the app plots on a graph 
 convenience init(inputMetaParameterDefinition: PHASENumberMetaParameterDefinition, envelope: PHASEEnvelope, identifier: String)
 ```
 
+```objc
+- (instancetype) initWithInputMetaParameterDefinition:(PHASENumberMetaParameterDefinition *) inputMetaParameterDefinition envelope:(PHASEEnvelope *) envelope identifier:(NSString *) identifier;
+```
+
 ## Parameters
 
 - `inputMetaParameterDefinition`: A metaparameter that contains an input value.
@@ -27,7 +32,8 @@ convenience init(inputMetaParameterDefinition: PHASENumberMetaParameterDefinitio
 
 ## See Also
 
-- [init(inputMetaParameterDefinition: PHASENumberMetaParameterDefinition, envelope: PHASEEnvelope)](phasemappedmetaparameterdefinition/init(inputmetaparameterdefinition:envelope:).md)
+### Creating a Mapped Metaparameter
+- [init(inputMetaParameterDefinition: PHASENumberMetaParameterDefinition, envelope: PHASEEnvelope)](./init%28inputmetaparameterdefinition,envelope%29.md)
   Creates a specification for a metaparameter that the app plots on a graph defined by the given set of curves.
 
 

@@ -1,7 +1,8 @@
 # all
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Filters data for all users that the current iCloud user has permission to report device activity.
 

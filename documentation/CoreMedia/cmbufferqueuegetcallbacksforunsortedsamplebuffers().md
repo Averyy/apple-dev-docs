@@ -1,7 +1,8 @@
 # CMBufferQueueGetCallbacksForUnsortedSampleBuffers()
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a pointer to a callback structure for unsorted sample buffers.
 
@@ -20,23 +21,28 @@ Returns a pointer to a callback structure for unsorted sample buffers.
 func CMBufferQueueGetCallbacksForUnsortedSampleBuffers() -> UnsafePointer<CMBufferCallbacks>
 ```
 
+```c
+extern const CMBufferCallbacks *CMBufferQueueGetCallbacksForUnsortedSampleBuffers();
+```
+
 ## See Also
 
-- [func CMBufferQueueGetDuration(CMBufferQueue) -> CMTime](cmbufferqueuegetduration(_:).md)
+### Inspecting Duration and Timing
+- [func CMBufferQueueGetDuration(CMBufferQueue) -> CMTime](./cmbufferqueuegetduration%28_%29.md)
   Gets the duration of a buffer queue.
-- [func CMBufferQueueGetMinDecodeTimeStamp(CMBufferQueue) -> CMTime](cmbufferqueuegetmindecodetimestamp(_:).md)
+- [func CMBufferQueueGetMinDecodeTimeStamp(CMBufferQueue) -> CMTime](./cmbufferqueuegetmindecodetimestamp%28_%29.md)
   Gets the earliest decode timestamp of a buffer queue.
-- [func CMBufferQueueGetFirstDecodeTimeStamp(CMBufferQueue) -> CMTime](cmbufferqueuegetfirstdecodetimestamp(_:).md)
+- [func CMBufferQueueGetFirstDecodeTimeStamp(CMBufferQueue) -> CMTime](./cmbufferqueuegetfirstdecodetimestamp%28_%29.md)
   Gets the decode timestamp of the first buffer in a buffer queue.
-- [func CMBufferQueueGetMinPresentationTimeStamp(CMBufferQueue) -> CMTime](cmbufferqueuegetminpresentationtimestamp(_:).md)
+- [func CMBufferQueueGetMinPresentationTimeStamp(CMBufferQueue) -> CMTime](./cmbufferqueuegetminpresentationtimestamp%28_%29.md)
   Gets the earliest presentation timestamp of a buffer queue.
-- [func CMBufferQueueGetFirstPresentationTimeStamp(CMBufferQueue) -> CMTime](cmbufferqueuegetfirstpresentationtimestamp(_:).md)
+- [func CMBufferQueueGetFirstPresentationTimeStamp(CMBufferQueue) -> CMTime](./cmbufferqueuegetfirstpresentationtimestamp%28_%29.md)
   Gets the presentation timestamp of the first buffer in a buffer queue.
-- [func CMBufferQueueGetEndPresentationTimeStamp(CMBufferQueue) -> CMTime](cmbufferqueuegetendpresentationtimestamp(_:).md)
+- [func CMBufferQueueGetEndPresentationTimeStamp(CMBufferQueue) -> CMTime](./cmbufferqueuegetendpresentationtimestamp%28_%29.md)
   Gets the greatest end presentation timestamp of a buffer queue.
-- [func CMBufferQueueGetMaxPresentationTimeStamp(CMBufferQueue) -> CMTime](cmbufferqueuegetmaxpresentationtimestamp(_:).md)
+- [func CMBufferQueueGetMaxPresentationTimeStamp(CMBufferQueue) -> CMTime](./cmbufferqueuegetmaxpresentationtimestamp%28_%29.md)
   Gets the greatest presentation timestamp of a buffer queue.
-- [func CMBufferQueueGetCallbacksForSampleBuffersSortedByOutputPTS() -> UnsafePointer<CMBufferCallbacks>](cmbufferqueuegetcallbacksforsamplebufferssortedbyoutputpts().md)
+- [func CMBufferQueueGetCallbacksForSampleBuffersSortedByOutputPTS() -> UnsafePointer<CMBufferCallbacks>](./cmbufferqueuegetcallbacksforsamplebufferssortedbyoutputpts%28%29.md)
   Returns a pointer to a structure that contains callbacks to sort sample buffers by output presentation timestamp.
 
 

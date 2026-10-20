@@ -1,7 +1,8 @@
 # MTLDataType.rg8Unorm
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An ordinary pixel with two components, each of which is an 8-bit, normalized, unsigned integer value.
 
@@ -19,17 +20,22 @@ An ordinary pixel with two components, each of which is an 8-bit, normalized, un
 case rg8Unorm
 ```
 
+```c
+MTLDataTypeRG8Unorm
+```
+
 #### Discussion
 
 The color components are in RG order, which stands for red and green.
 
 ## See Also
 
-- [MTLDataType.rg8Snorm](mtldatatype/rg8snorm.md)
+### 16-bit color integer types
+- [MTLDataType.rg8Snorm](./rg8snorm.md)
   An ordinary pixel with two components, each of which is an 8-bit, normalized, signed integer value.
-- [MTLDataType.r16Snorm](mtldatatype/r16snorm.md)
+- [MTLDataType.r16Snorm](./r16snorm.md)
   An ordinary pixel with one component that’s a 16-bit, normalized, signed integer value.
-- [MTLDataType.r16Unorm](mtldatatype/r16unorm.md)
+- [MTLDataType.r16Unorm](./r16unorm.md)
   An ordinary pixel with one component that’s a 16-bit, normalized, unsigned integer value.
 
 

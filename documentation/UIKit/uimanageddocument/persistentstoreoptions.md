@@ -1,7 +1,8 @@
 # persistentStoreOptions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Options used when creating the document’s persistent store.
 
@@ -15,6 +16,10 @@ Options used when creating the document’s persistent store.
 
 ```swift
 var persistentStoreOptions: [AnyHashable : Any]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSDictionary * persistentStoreOptions;
 ```
 
 #### Discussion
@@ -33,15 +38,16 @@ NSDictionary *options = @{
 
 ## See Also
 
-- [func configurePersistentStoreCoordinator(for: URL, ofType: String, modelConfiguration: String?, storeOptions: [AnyHashable : Any]?) throws](uimanageddocument/configurepersistentstorecoordinator(for:oftype:modelconfiguration:storeoptions:).md)
+### Managing the Core Data stack
+- [func configurePersistentStoreCoordinator(for: URL, ofType: String, modelConfiguration: String?, storeOptions: [AnyHashable : Any]?) throws](./configurepersistentstorecoordinator%28for,oftype,modelconfiguration,storeoptions%29.md)
   Creates or loads the document’s persistent store.
-- [var managedObjectContext: NSManagedObjectContext](uimanageddocument/managedobjectcontext.md)
+- [var managedObjectContext: NSManagedObjectContext](./managedobjectcontext.md)
   The document’s managed object context.
-- [var managedObjectModel: NSManagedObjectModel](uimanageddocument/managedobjectmodel.md)
+- [var managedObjectModel: NSManagedObjectModel](./managedobjectmodel.md)
   The document’s managed object model.
-- [var modelConfiguration: String?](uimanageddocument/modelconfiguration.md)
+- [var modelConfiguration: String?](./modelconfiguration.md)
   A model configuration name to be passed when configuring the persistent store.
-- [func persistentStoreType(forFileType: String) -> String](uimanageddocument/persistentstoretype(forfiletype:).md)
+- [func persistentStoreType(forFileType: String) -> String](./persistentstoretype%28forfiletype%29.md)
   Returns the Core Data store type for a given document file type.
 
 

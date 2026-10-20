@@ -1,12 +1,13 @@
 # write(to:metadata:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports a Core ML model file for use in your app.
 
 **Availability**:
-- macOS 10.14+
+- macOS 10.14+ - Deprecated in 14.0
 
 ## Declaration
 
@@ -16,7 +17,8 @@ func write(to fileURL: URL, metadata: MLModelMetadata? = nil) throws
 
 ## See Also
 
-- [func write(toFile: String, metadata: MLModelMetadata?) throws](mlsupportvectorclassifier/write(tofile:metadata:).md)
+### Saving a support vector classifier
+- [func write(toFile: String, metadata: MLModelMetadata?) throws](./write%28tofile,metadata%29.md)
   Exports a Core ML model file for use in your app.
 
 

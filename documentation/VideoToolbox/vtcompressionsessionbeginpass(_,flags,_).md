@@ -1,7 +1,8 @@
 # VTCompressionSessionBeginPass(_:flags:_:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Marks the start of a specific compression pass.
 
@@ -19,29 +20,34 @@ Marks the start of a specific compression pass.
 func VTCompressionSessionBeginPass(_ session: VTCompressionSession, flags beginPassFlags: VTCompressionSessionOptionFlags, _ reserved: UnsafeMutablePointer<UInt32>?) -> OSStatus
 ```
 
+```c
+extern OSStatus VTCompressionSessionBeginPass(VTCompressionSessionRef session, VTCompressionSessionOptionFlags beginPassFlags, uint32_t *reserved);
+```
+
 #### Discussion
 
-During multipass encoding, this function must be called before [`VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:sourceFrameRefcon:infoFlagsOut:)`](vtcompressionsessionencodeframe(_:imagebuffer:presentationtimestamp:duration:frameproperties:sourceframerefcon:infoflagsout:).md).
+During multipass encoding, this function must be called before [`VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:sourceFrameRefcon:infoFlagsOut:)`](./vtcompressionsessionencodeframe%28_,imagebuffer,presentationtimestamp,duration,frameproperties,sourceframerefcon,infoflagsout%29.md).
 
-It’s an error to call this function when multipass encoding is not enabled by setting [`kVTCompressionPropertyKey_MultiPassStorage`](kvtcompressionpropertykey_multipassstorage.md).
+It’s an error to call this function when multipass encoding is not enabled by setting [`kVTCompressionPropertyKey_MultiPassStorage`](./kvtcompressionpropertykey_multipassstorage.md).
 
 ## Parameters
 
 - `session`: A compression session.
-- `beginPassFlags`: Pass [`beginFinalPass`](vtcompressionsessionoptionflags/beginfinalpass.md) to inform the encoder that the pass must be the final pass.
+- `beginPassFlags`: Pass [`beginFinalPass`](./vtcompressionsessionoptionflags/beginfinalpass.md) to inform the encoder that the pass must be the final pass.
 - `reserved`: A reserved value.
 
 ## Topics
 
 ### Option Flags
-- [struct VTCompressionSessionOptionFlags](vtcompressionsessionoptionflags.md)
+- [struct VTCompressionSessionOptionFlags](./vtcompressionsessionoptionflags.md)
   Flags to pass to a compression session.
 
 ## See Also
 
-- [func VTCompressionSessionEndPass(VTCompressionSession, furtherPassesRequestedOut: UnsafeMutablePointer<DarwinBoolean>?, UnsafeMutablePointer<UInt32>?) -> OSStatus](vtcompressionsessionendpass(_:furtherpassesrequestedout:_:).md)
+### Performing Multiple Passes
+- [func VTCompressionSessionEndPass(VTCompressionSession, furtherPassesRequestedOut: UnsafeMutablePointer<DarwinBoolean>?, UnsafeMutablePointer<UInt32>?) -> OSStatus](./vtcompressionsessionendpass%28_,furtherpassesrequestedout,_%29.md)
   Marks the end of a compression pass.
-- [func VTCompressionSessionGetTimeRangesForNextPass(VTCompressionSession, timeRangeCountOut: UnsafeMutablePointer<CMItemCount>, timeRangeArrayOut: UnsafeMutablePointer<UnsafePointer<CMTimeRange>?>) -> OSStatus](vtcompressionsessiongettimerangesfornextpass(_:timerangecountout:timerangearrayout:).md)
+- [func VTCompressionSessionGetTimeRangesForNextPass(VTCompressionSession, timeRangeCountOut: UnsafeMutablePointer<CMItemCount>, timeRangeArrayOut: UnsafeMutablePointer<UnsafePointer<CMTimeRange>?>) -> OSStatus](./vtcompressionsessiongettimerangesfornextpass%28_,timerangecountout,timerangearrayout%29.md)
   Retrieves the time ranges for the next pass.
 
 

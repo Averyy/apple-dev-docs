@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: Sound Analysis  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new audio file analyzer.
 
@@ -20,9 +21,13 @@ Creates a new audio file analyzer.
 init(url: URL) throws
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) url error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Classifying Sounds in an Audio File](classifying-sounds-in-an-audio-file.md)
+- [Classifying Sounds in an Audio File](../classifying-sounds-in-an-audio-file.md)
 
 ## Parameters
 

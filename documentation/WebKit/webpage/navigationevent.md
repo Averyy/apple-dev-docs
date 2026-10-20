@@ -1,7 +1,8 @@
 # WebPage.NavigationEvent
 
 **Framework**: WebKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A particular state that occurs during the progression of a navigation.
 
@@ -21,30 +22,31 @@ enum NavigationEvent
 ## Topics
 
 ### Enumeration Cases
-- [WebPage.NavigationEvent.committed](webpage/navigationevent/committed.md)
+- [WebPage.NavigationEvent.committed](./navigationevent/committed.md)
   This event occurs when the page has started to receive content for the main frame.
-- [WebPage.NavigationEvent.finished](webpage/navigationevent/finished.md)
+- [WebPage.NavigationEvent.finished](./navigationevent/finished.md)
   This event occurs once the navigation is complete.
-- [WebPage.NavigationEvent.receivedServerRedirect](webpage/navigationevent/receivedserverredirect.md)
+- [WebPage.NavigationEvent.receivedServerRedirect](./navigationevent/receivedserverredirect.md)
   This event occurs when the page received a server redirect for a request.
-- [WebPage.NavigationEvent.startedProvisionalNavigation](webpage/navigationevent/startedprovisionalnavigation.md)
+- [WebPage.NavigationEvent.startedProvisionalNavigation](./navigationevent/startedprovisionalnavigation.md)
   This event occurs when the page receives provisional approval to process a navigation request, but before it receives a response to that request.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [WebPage.BackForwardList](webpage/backforwardlist-swift.struct.md)
+### Observing navigation between webpages
+- [WebPage.BackForwardList](./backforwardlist-swift.struct.md)
   An observable representation of a webpage’s previously loaded resources.
-- [WebPage.BackForwardList.Item](webpage/backforwardlist-swift.struct/item.md)
+- [WebPage.BackForwardList.Item](./backforwardlist-swift.struct/item.md)
   A representation of a resource that a webpage previously visited.
-- [WebPage.BackForwardList.Item.ID](webpage/backforwardlist-swift.struct/item/id-swift.struct.md)
+- [WebPage.BackForwardList.Item.ID](./backforwardlist-swift.struct/item/id-swift.struct.md)
   An opaque type representing the identifier for an item.
 
 

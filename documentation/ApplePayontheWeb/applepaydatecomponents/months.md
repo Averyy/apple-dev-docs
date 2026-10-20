@@ -1,7 +1,8 @@
 # months
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A number between 1 and 12 that represents a month.
 
@@ -11,7 +12,7 @@ A number between 1 and 12 that represents a month.
 
 ## Declaration
 
-```swift
+```
 long months;
 ```
 
@@ -21,11 +22,12 @@ Numbers representing months are 1-based. For example, to represent January, use 
 
 ## See Also
 
-- [years](applepaydatecomponents/years.md)
+### Date Components
+- [years](./years.md)
   A number that represents a year.
-- [days](applepaydatecomponents/days.md)
+- [days](./days.md)
   A number that represents a day.
-- [hours](applepaydatecomponents/hours.md)
+- [hours](./hours.md)
   A number that represents an hour.
 
 

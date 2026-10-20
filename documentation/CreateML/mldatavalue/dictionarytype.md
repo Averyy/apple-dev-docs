@@ -1,7 +1,8 @@
 # MLDataValue.DictionaryType
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A dictionary of named data values.
 
@@ -22,30 +23,31 @@ struct DictionaryType
 ## Topics
 
 ### Creating a dictionary type
-- [init([MLDataValue : MLDataValue])](mldatavalue/dictionarytype/init(_:).md)
-- [init<S>(uniqueKeysWithValues: S)](mldatavalue/dictionarytype/init(uniquekeyswithvalues:).md)
-- [MLDataValue.DictionaryType.Key](mldatavalue/dictionarytype/key.md)
-- [MLDataValue.DictionaryType.Value](mldatavalue/dictionarytype/value.md)
+- [init([MLDataValue : MLDataValue])](./dictionarytype/init%28_%29.md)
+- [init<S>(uniqueKeysWithValues: S)](./dictionarytype/init%28uniquekeyswithvalues%29.md)
+- [MLDataValue.DictionaryType.Key](./dictionarytype/key.md)
+- [MLDataValue.DictionaryType.Value](./dictionarytype/value.md)
 ### Getting an element
-- [subscript(MLDataValue.DictionaryType.Key) -> MLDataValue.DictionaryType.Value?](mldatavalue/dictionarytype/subscript(_:).md)
+- [subscript(MLDataValue.DictionaryType.Key) -> MLDataValue.DictionaryType.Value?](./dictionarytype/subscript%28_%29.md)
 ### Default Implementations
-- [MLDataValueConvertible Implementations](mldatavalue/dictionarytype/mldatavalueconvertible-implementations.md)
+- [MLDataValueConvertible Implementations](./dictionarytype/mldatavalueconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [MLDataValueConvertible](mldatavalueconvertible.md)
-- [Sequence](../swift/sequence.md)
+- [Collection](../../Swift/collection.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [MLDataValueConvertible](../mldatavalueconvertible.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [var dictionaryValue: MLDataValue.DictionaryType?](mldatavalue/dictionaryvalue.md)
+### Accessing dictionary values
+- [var dictionaryValue: MLDataValue.DictionaryType?](./dictionaryvalue.md)
   The underlying dictionary.
 
 

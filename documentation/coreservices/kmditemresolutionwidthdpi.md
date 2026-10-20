@@ -1,7 +1,8 @@
 # kMDItemResolutionWidthDPI
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Resolution width, in DPI, of this image. A CFNumber.
 
@@ -12,6 +13,10 @@ Resolution width, in DPI, of this image. A CFNumber.
 
 ```swift
 let kMDItemResolutionWidthDPI: CFString!
+```
+
+```c
+const CFStringRef kMDItemResolutionWidthDPI;
 ```
 
 

@@ -1,13 +1,14 @@
 # count
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of elements in the processes array.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ The number of elements in the processes array.
 var count: Int
 ```
 
+```c
+size_t count;
+```
+
 ## See Also
 
-- [var processes: UnsafePointer<es_muted_process_t>!](es_muted_processes_t/processes.md)
+### Accessing Muted Processes
+- [var processes: UnsafePointer<es_muted_process_t>!](./processes.md)
   An array containing the muted processes.
-- [struct es_muted_process_t](es_muted_process_t.md)
+- [struct es_muted_process_t](../es_muted_process_t.md)
   A structure that describes a process’s muted events.
 
 

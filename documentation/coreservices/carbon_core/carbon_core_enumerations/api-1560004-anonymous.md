@@ -5,14 +5,14 @@
 ## Topics
 
 ### Constants
-- [var debuggingDuplicateOptionErr: Int](debuggingduplicateoptionerr.md)
-- [var debuggingDuplicateSignatureErr: Int](debuggingduplicatesignatureerr.md)
-- [var debuggingExecutionContextErr: Int](debuggingexecutioncontexterr.md)
-- [var debuggingInvalidNameErr: Int](debugginginvalidnameerr.md)
-- [var debuggingInvalidOptionErr: Int](debugginginvalidoptionerr.md)
-- [var debuggingInvalidSignatureErr: Int](debugginginvalidsignatureerr.md)
-- [var debuggingNoCallbackErr: Int](debuggingnocallbackerr.md)
-- [var debuggingNoMatchErr: Int](debuggingnomatcherr.md)
+- [var debuggingDuplicateOptionErr: Int](../../debuggingduplicateoptionerr.md)
+- [var debuggingDuplicateSignatureErr: Int](../../debuggingduplicatesignatureerr.md)
+- [var debuggingExecutionContextErr: Int](../../debuggingexecutioncontexterr.md)
+- [var debuggingInvalidNameErr: Int](../../debugginginvalidnameerr.md)
+- [var debuggingInvalidOptionErr: Int](../../debugginginvalidoptionerr.md)
+- [var debuggingInvalidSignatureErr: Int](../../debugginginvalidsignatureerr.md)
+- [var debuggingNoCallbackErr: Int](../../debuggingnocallbackerr.md)
+- [var debuggingNoMatchErr: Int](../../debuggingnomatcherr.md)
 
 
 ---

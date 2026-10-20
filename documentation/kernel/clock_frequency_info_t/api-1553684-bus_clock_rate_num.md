@@ -1,14 +1,15 @@
 # bus_clock_rate_num
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned long bus_clock_rate_num;
 ```
 

@@ -1,7 +1,8 @@
 # ellipse
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An ellipse that fills the shape’s bounds.
 

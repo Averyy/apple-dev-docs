@@ -1,7 +1,8 @@
 # attributes
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of additional attributes that describe how to export content as a PDF file.
 
@@ -14,21 +15,26 @@ A dictionary of additional attributes that describe how to export content as a P
 var attributes: NSMutableDictionary { get }
 ```
 
+```objc
+@property (readonly) NSMutableDictionary<NSString *,id> * attributes;
+```
+
 #### Discussion
 
 Although `attributes` is a read-only property, you can modify the mutable dictionary associated with it. Typically, this dictionary contains custom attributes or parameters that are set by a custom accessory view in the PDF panel.
 
 ## See Also
 
-- [var url: URL?](nspdfinfo/url.md)
+### Specifying PDF Information
+- [var url: URL?](./url.md)
   The URL identifying the location at which the PDF file will be created.
-- [var isFileExtensionHidden: Bool](nspdfinfo/isfileextensionhidden.md)
+- [var isFileExtensionHidden: Bool](./isfileextensionhidden.md)
   A Boolean value that indicates whether the file extension should appear after the filename.
-- [var tagNames: [String]](nspdfinfo/tagnames.md)
+- [var tagNames: [String]](./tagnames.md)
   An array of tag names that should be applied to the PDF file after it’s created.
-- [var orientation: NSPrintInfo.PaperOrientation](nspdfinfo/orientation.md)
+- [var orientation: NSPrintInfo.PaperOrientation](./orientation.md)
   The paper orientation to use when exporting content as a PDF file.
-- [var paperSize: NSSize](nspdfinfo/papersize.md)
+- [var paperSize: NSSize](./papersize.md)
   The paper size to use when exporting content as a PDF file.
 
 

@@ -1,7 +1,8 @@
 # TupleTransferRepresentation
 
 **Framework**: Core Transferable  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A wrapper type for tuples that contain transfer representations.
 
@@ -23,13 +24,14 @@ struct TupleTransferRepresentation<Item, Value> where Item : Transferable, Value
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TransferRepresentation](transferrepresentation.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TransferRepresentation](./transferrepresentation.md)
 
 ## See Also
 
-- [struct TransferRepresentationBuilder](transferrepresentationbuilder.md)
+### Supporting types
+- [struct TransferRepresentationBuilder](./transferrepresentationbuilder.md)
   Creates a transfer representation by composing existing transfer representations.
 
 

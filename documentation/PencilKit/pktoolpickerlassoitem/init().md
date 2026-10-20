@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new lasso item.
 
@@ -15,6 +16,10 @@ Creates a new lasso item.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

@@ -1,14 +1,15 @@
 # mach_service_port_info_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct mach_service_port_info *mach_service_port_info_t;
 ```
 

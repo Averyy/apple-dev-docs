@@ -1,7 +1,8 @@
 # init(summaryVariants:additionalInformationVariants:selectionSummaryVariants:travelEstimates:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a @c CPRouteChoice with summary variants, additional information variants, selection summary variants, and travel estimates.
 
@@ -14,6 +15,10 @@ Initialize a @c CPRouteChoice with summary variants, additional information vari
 
 ```swift
 init(summaryVariants: [String], additionalInformationVariants: [String], selectionSummaryVariants: [String], travelEstimates: CPTravelEstimates?)
+```
+
+```objc
+- (instancetype) initWithSummaryVariants:(NSArray<NSString *> *) summaryVariants additionalInformationVariants:(NSArray<NSString *> *) additionalInformationVariants selectionSummaryVariants:(NSArray<NSString *> *) selectionSummaryVariants travelEstimates:(CPTravelEstimates *) travelEstimates;
 ```
 
 #### Return Value

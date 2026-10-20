@@ -1,7 +1,8 @@
 # longitudeDelta
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of east-to-west distance (in degrees) to display for the map region.
 
@@ -10,7 +11,7 @@ The amount of east-to-west distance (in degrees) to display for the map region.
 
 ## Declaration
 
-```swift
+```
 longitudeDelta: number;
 ```
 
@@ -20,7 +21,8 @@ The number of kilometers spanned by a longitude range varies based on the curren
 
 ## See Also
 
-- [latitudeDelta](coordinatespan/latitudedelta.md)
+### Defining the span
+- [latitudeDelta](./latitudedelta.md)
   The amount of north-to-south distance (in degrees) to display for the map region.
 
 

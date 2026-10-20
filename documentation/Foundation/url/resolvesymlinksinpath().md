@@ -1,7 +1,8 @@
 # resolveSymlinksInPath()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resolves any symlinks in the path of a file URL.
 
@@ -26,15 +27,16 @@ If the `isFileURL` is false, this method does nothing.
 
 ## See Also
 
-- [var isFileURL: Bool](url/isfileurl.md)
+### Working with file URLs
+- [var isFileURL: Bool](./isfileurl.md)
   A Boolean that is true if the scheme is `file:`.
-- [var hasDirectoryPath: Bool](url/hasdirectorypath.md)
+- [var hasDirectoryPath: Bool](./hasdirectorypath.md)
   A Boolean that is true if the URL path represents a directory.
-- [func withUnsafeFileSystemRepresentation<ResultType>((UnsafePointer<Int8>?) throws -> ResultType) rethrows -> ResultType](url/withunsafefilesystemrepresentation(_:).md)
+- [func withUnsafeFileSystemRepresentation<ResultType>((UnsafePointer<Int8>?) throws -> ResultType) rethrows -> ResultType](./withunsafefilesystemrepresentation%28_%29.md)
   Passes the URL’s path in the file system representation to a closure.
-- [func resolvingSymlinksInPath() -> URL](url/resolvingsymlinksinpath.md)
+- [func resolvingSymlinksInPath() -> URL](./resolvingsymlinksinpath%28%29.md)
   Resolves any symlinks in the path of a file URL.
-- [func standardize()](url/standardize.md)
+- [func standardize()](./standardize%28%29.md)
   Standardizes the path of a file URL.
 
 

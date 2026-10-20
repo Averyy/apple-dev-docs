@@ -1,7 +1,8 @@
 # Fairground
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for fairgrounds.
 
@@ -10,7 +11,7 @@ The point-of-interest category for fairgrounds.
 
 ## Declaration
 
-```swift
+```
 readonly Fairground: "Fairground";
 ```
 

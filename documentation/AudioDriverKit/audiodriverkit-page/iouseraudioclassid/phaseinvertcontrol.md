@@ -1,7 +1,8 @@
 # PhaseInvertControl
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The identifier for the audio phase invert control class.
 
@@ -10,31 +11,32 @@ The identifier for the audio phase invert control class.
 
 ## Declaration
 
-```swift
+```c
 PhaseInvertControl
 ```
 
 #### Discussion
 
-This class is a subclass of the [`IOUserAudioBooleanControl`](iouseraudiobooleancontrol.md) class where a `true` value indcates a phase inversion of the given element’s signal by 180 degrees.
+This class is a subclass of the [`IOUserAudioBooleanControl`](../../iouseraudiobooleancontrol.md) class where a `true` value indcates a phase inversion of the given element’s signal by 180 degrees.
 
 ## See Also
 
-- [BooleanControl](audiodriverkit/iouseraudioclassid/booleancontrol.md)
+### Boolean Controls
+- [BooleanControl](./booleancontrol.md)
   The identifier for the audio Boolean control class.
-- [LFEMuteControl](audiodriverkit/iouseraudioclassid/lfemutecontrol.md)
+- [LFEMuteControl](./lfemutecontrol.md)
   The identifier for the low-frequency effect mute control class.
-- [SoloControl](audiodriverkit/iouseraudioclassid/solocontrol.md)
+- [SoloControl](./solocontrol.md)
   The identifier for the audio solo control class.
-- [JackControl](audiodriverkit/iouseraudioclassid/jackcontrol.md)
+- [JackControl](./jackcontrol.md)
   The identifier for the audio jack control class.
-- [PhantomPowerControl](audiodriverkit/iouseraudioclassid/phantompowercontrol.md)
+- [PhantomPowerControl](./phantompowercontrol.md)
   The identifier for the audio phantom power control class.
-- [ClipLightControl](audiodriverkit/iouseraudioclassid/cliplightcontrol.md)
+- [ClipLightControl](./cliplightcontrol.md)
   The identifier for the audio clip light control class.
-- [TalkbackControl](audiodriverkit/iouseraudioclassid/talkbackcontrol.md)
+- [TalkbackControl](./talkbackcontrol.md)
   The identifier for the audio talkback control class.
-- [ListenbackControl](audiodriverkit/iouseraudioclassid/listenbackcontrol.md)
+- [ListenbackControl](./listenbackcontrol.md)
   The identifier for the audio listenback control class.
 
 

@@ -1,7 +1,8 @@
 # MTRColorControlColorMode.currentHueAndCurrentSaturation
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 case currentHueAndCurrentSaturation
+```
+
+```c
+MTRColorControlColorModeCurrentHueAndCurrentSaturation
 ```
 
 

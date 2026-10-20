@@ -1,7 +1,8 @@
 # digitalCrownRotation(_:onChange:onIdle:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tracks Digital Crown rotations by updating the specified binding.
 
@@ -31,7 +32,7 @@ struct DigitalCrown: View {
 }
 ```
 
-![A screenshot showing a value received by turning the Digital Crown](/images/com.apple.SwiftUI/SwiftUI-View-digitalCrownRotationBinding@2x.png)
+![A screenshot showing a value received by turning the Digital Crown](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-digitalCrownRotationBinding@2x.png)
 
 ## Parameters
 
@@ -41,21 +42,22 @@ struct DigitalCrown: View {
 
 ## See Also
 
-- [func digitalCrownAccessory(Visibility) -> some View](view/digitalcrownaccessory(_:).md)
+### Interacting with the Digital Crown
+- [func digitalCrownAccessory(Visibility) -> some View](./digitalcrownaccessory%28_%29.md)
   Specifies the visibility of Digital Crown accessory Views on Apple Watch.
-- [func digitalCrownAccessory<Content>(content: () -> Content) -> some View](view/digitalcrownaccessory(content:).md)
+- [func digitalCrownAccessory<Content>(content: () -> Content) -> some View](./digitalcrownaccessory%28content%29.md)
   Places an accessory View next to the Digital Crown on Apple Watch.
-- [func digitalCrownRotation<V>(Binding<V>, from: V, through: V, sensitivity: DigitalCrownRotationalSensitivity, isContinuous: Bool, isHapticFeedbackEnabled: Bool, onChange: (DigitalCrownEvent) -> Void, onIdle: () -> Void) -> some View](view/digitalcrownrotation(_:from:through:sensitivity:iscontinuous:ishapticfeedbackenabled:onchange:onidle:).md)
+- [func digitalCrownRotation<V>(Binding<V>, from: V, through: V, sensitivity: DigitalCrownRotationalSensitivity, isContinuous: Bool, isHapticFeedbackEnabled: Bool, onChange: (DigitalCrownEvent) -> Void, onIdle: () -> Void) -> some View](./digitalcrownrotation%28_,from,through,sensitivity,iscontinuous,ishapticfeedbackenabled,onchange,onidle%29.md)
   Tracks Digital Crown rotations by updating the specified binding.
-- [func digitalCrownRotation(detent:from:through:by:sensitivity:isContinuous:isHapticFeedbackEnabled:onChange:onIdle:)](view/digitalcrownrotation(detent:from:through:by:sensitivity:iscontinuous:ishapticfeedbackenabled:onchange:onidle:).md)
+- [func digitalCrownRotation(detent:from:through:by:sensitivity:isContinuous:isHapticFeedbackEnabled:onChange:onIdle:)](./digitalcrownrotation%28detent,from,through,by,sensitivity,iscontinuous,ishapticfeedbackenabled,onchange,onidle%29.md)
   Tracks Digital Crown rotations by updating the specified binding.
-- [func digitalCrownRotation<V>(Binding<V>) -> some View](view/digitalcrownrotation(_:).md)
+- [func digitalCrownRotation<V>(Binding<V>) -> some View](./digitalcrownrotation%28_%29.md)
   Tracks Digital Crown rotations by updating the specified binding.
-- [func digitalCrownRotation<V>(Binding<V>, from: V, through: V, by: V.Stride?, sensitivity: DigitalCrownRotationalSensitivity, isContinuous: Bool, isHapticFeedbackEnabled: Bool) -> some View](view/digitalcrownrotation(_:from:through:by:sensitivity:iscontinuous:ishapticfeedbackenabled:).md)
+- [func digitalCrownRotation<V>(Binding<V>, from: V, through: V, by: V.Stride?, sensitivity: DigitalCrownRotationalSensitivity, isContinuous: Bool, isHapticFeedbackEnabled: Bool) -> some View](./digitalcrownrotation%28_,from,through,by,sensitivity,iscontinuous,ishapticfeedbackenabled%29.md)
   Tracks Digital Crown rotations by updating the specified binding.
-- [struct DigitalCrownEvent](digitalcrownevent.md)
+- [struct DigitalCrownEvent](../digitalcrownevent.md)
   An event emitted when the user rotates the Digital Crown.
-- [enum DigitalCrownRotationalSensitivity](digitalcrownrotationalsensitivity.md)
+- [enum DigitalCrownRotationalSensitivity](../digitalcrownrotationalsensitivity.md)
   The amount of Digital Crown rotation needed to move between two integer numbers.
 
 

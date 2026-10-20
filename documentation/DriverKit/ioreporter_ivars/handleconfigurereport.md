@@ -1,17 +1,18 @@
 # handleConfigureReport
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn handleConfigureReport(IOReportChannelList *channelList, IOReportConfigureAction action, uint32_t & elementCount);
 ```
 

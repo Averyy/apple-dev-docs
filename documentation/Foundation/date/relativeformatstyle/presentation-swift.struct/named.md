@@ -1,7 +1,8 @@
 # named
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A style that uses named styles to describe relative dates, such as “yesterday”, “last week”, or “next week”.
 
@@ -22,11 +23,12 @@ static var named: Date.RelativeFormatStyle.Presentation { get }
 
 #### Discussion
 
-The format uses the [`numeric`](date/relativeformatstyle/presentation-swift.struct/numeric.md) style if a name isn’t available.
+The format uses the [`numeric`](./numeric.md) style if a name isn’t available.
 
 ## See Also
 
-- [static var numeric: Date.RelativeFormatStyle.Presentation](date/relativeformatstyle/presentation-swift.struct/numeric.md)
+### Modifying Relative Date Style Presentations
+- [static var numeric: Date.RelativeFormatStyle.Presentation](./numeric.md)
   A style that uses a numeric style to describe relative dates, such as “1 day ago” or “in 3 weeks”.
 
 

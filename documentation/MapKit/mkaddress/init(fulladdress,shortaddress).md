@@ -1,7 +1,8 @@
 # init(fullAddress:shortAddress:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new address with a location’s full address using a string and a short address that provides an abbreviated form of the address such as a street address.
 
@@ -20,11 +21,15 @@ Initializes a new address with a location’s full address using a string and a 
 init?(fullAddress: String, shortAddress: String?)
 ```
 
+```objc
+- (instancetype) initWithFullAddress:(NSString *) fullAddress shortAddress:(NSString *) shortAddress;
+```
+
 #### Discussion
 
-Use this initializer to create a new [`MKAddress`](mkaddress.md) with a complete address and a short abbreviated address, such as a street address and city.
+Use this initializer to create a new [`MKAddress`](../mkaddress.md) with a complete address and a short abbreviated address, such as a street address and city.
 
-When you intend to use the [`MKAddress`](mkaddress.md) instance with an [`MKMapItem`](mkmapitem.md) to display a Place Card, use multi-line strings when specifying the [`fullAddress`](mkaddress/fulladdress.md). Doing this  enables the framework to ensure the best user experience.
+When you intend to use the [`MKAddress`](../mkaddress.md) instance with an [`MKMapItem`](../mkmapitem.md) to display a Place Card, use multi-line strings when specifying the [`fullAddress`](./fulladdress.md). Doing this  enables the framework to ensure the best user experience.
 
 You can provide this using Swift’s multi-line strings using triple-quotes, as shown here.
 

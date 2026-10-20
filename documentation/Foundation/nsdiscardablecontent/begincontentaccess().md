@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value indicating whether the discardable contents are still available and have been successfully accessed.
@@ -21,9 +22,13 @@ Returns a Boolean value indicating whether the discardable contents are still av
 func beginContentAccess() -> Bool
 ```
 
+```objc
+- (BOOL) beginContentAccess;
+```
+
 #### Return Value
 
-YES if the discardable contents are still available and have now been successfully accessed; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+YES if the discardable contents are still available and have now been successfully accessed; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -31,7 +36,8 @@ Call this method if the object’s memory is needed or is about to be used. This
 
 ## See Also
 
-- [func endContentAccess()](nsdiscardablecontent/endcontentaccess.md)
+### Accessing Content
+- [func endContentAccess()](./endcontentaccess%28%29.md)
   Called if the discardable contents are no longer being accessed.
 
 

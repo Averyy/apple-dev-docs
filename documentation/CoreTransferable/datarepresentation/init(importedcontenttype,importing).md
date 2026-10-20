@@ -1,7 +1,8 @@
 # init(importedContentType:importing:)
 
 **Framework**: Core Transferable  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a representation that allows importing an item as binary data.
 
@@ -27,9 +28,10 @@ init(importedContentType: UTType, importing: @escaping @Sendable (Data) async th
 
 ## See Also
 
-- [init(contentType: UTType, exporting: (Item) async throws -> Data, importing: (Data) async throws -> Item)](datarepresentation/init(contenttype:exporting:importing:).md)
+### Creating a transfer representation
+- [init(contentType: UTType, exporting: (Item) async throws -> Data, importing: (Data) async throws -> Item)](./init%28contenttype,exporting,importing%29.md)
   Creates a representation that allows transporting an item as binary data.
-- [init(exportedContentType: UTType, exporting: (Item) async throws -> Data)](datarepresentation/init(exportedcontenttype:exporting:).md)
+- [init(exportedContentType: UTType, exporting: (Item) async throws -> Data)](./init%28exportedcontenttype,exporting%29.md)
   Creates a representation that allows exporting an item as binary data.
 
 

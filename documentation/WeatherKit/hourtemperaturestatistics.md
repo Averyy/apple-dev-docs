@@ -1,7 +1,8 @@
 # HourTemperatureStatistics
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes temperature statistics for a specific hour.
 
@@ -23,19 +24,19 @@ struct HourTemperatureStatistics
 ## Topics
 
 ### Instance Properties
-- [var hour: Int](hourtemperaturestatistics/hour.md)
+- [var hour: Int](./hourtemperaturestatistics/hour.md)
   The hour of the year, in UTC.
-- [var percentiles: Percentiles<UnitTemperature>](hourtemperaturestatistics/percentiles.md)
+- [var percentiles: Percentiles<UnitTemperature>](./hourtemperaturestatistics/percentiles.md)
   The temperature statistics for the hour.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

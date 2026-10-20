@@ -1,7 +1,8 @@
 # PDFAppearanceCharacteristics
 
 **Framework**: PDFKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents appearance characteristics of a widget annotation.
 
@@ -19,56 +20,61 @@ An object that represents appearance characteristics of a widget annotation.
 class PDFAppearanceCharacteristics
 ```
 
+```objc
+@interface PDFAppearanceCharacteristics : NSObject
+```
+
 ## Topics
 
 ### Configuring a Widget’s Appearance
-- [var backgroundColor: UIColor?](pdfappearancecharacteristics/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./pdfappearancecharacteristics/backgroundcolor.md)
   The background color of the widget annotation.
-- [var borderColor: UIColor?](pdfappearancecharacteristics/bordercolor.md)
+- [var borderColor: UIColor?](./pdfappearancecharacteristics/bordercolor.md)
   The border color of the widget annotation.
-- [var caption: String?](pdfappearancecharacteristics/caption.md)
+- [var caption: String?](./pdfappearancecharacteristics/caption.md)
   The text that the button widget annotation displays when the user isn’t interacting with it.
-- [var controlType: PDFWidgetControlType](pdfappearancecharacteristics/controltype.md)
+- [var controlType: PDFWidgetControlType](./pdfappearancecharacteristics/controltype.md)
   The type of button widget annotation.
-- [var downCaption: String?](pdfappearancecharacteristics/downcaption.md)
+- [var downCaption: String?](./pdfappearancecharacteristics/downcaption.md)
   The text that the button widget annotation displays when the user holds down on it.
-- [var rolloverCaption: String?](pdfappearancecharacteristics/rollovercaption.md)
+- [var rolloverCaption: String?](./pdfappearancecharacteristics/rollovercaption.md)
   The text that the widget annotation displays when the user hovers the pointer over it.
-- [var rotation: Int](pdfappearancecharacteristics/rotation.md)
+- [var rotation: Int](./pdfappearancecharacteristics/rotation.md)
   The number of degrees, in multiples of 90, that the widget annotation rotates counterclockwise relative to the page.
-- [var appearanceCharacteristicsKeyValues: [AnyHashable : Any]](pdfappearancecharacteristics/appearancecharacteristicskeyvalues.md)
+- [var appearanceCharacteristicsKeyValues: [AnyHashable : Any]](./pdfappearancecharacteristics/appearancecharacteristicskeyvalues.md)
   A dictionary that contains a deep copy of the appearance characteristic key-value pairs.
-- [struct PDFAppearanceCharacteristicsKey](pdfappearancecharacteristicskey.md)
+- [struct PDFAppearanceCharacteristicsKey](./pdfappearancecharacteristicskey.md)
   Keys to control a widget’s appearance.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var widgetFieldType: PDFAnnotationWidgetSubtype](pdfannotation/widgetfieldtype.md)
+### Configuring Widget Annotations
+- [var widgetFieldType: PDFAnnotationWidgetSubtype](./pdfannotation/widgetfieldtype.md)
   The type of widget annotation, such as button, choice, or text.
-- [var widgetStringValue: String?](pdfannotation/widgetstringvalue.md)
+- [var widgetStringValue: String?](./pdfannotation/widgetstringvalue.md)
   The string value of the widget annotation.
-- [var widgetDefaultStringValue: String?](pdfannotation/widgetdefaultstringvalue.md)
+- [var widgetDefaultStringValue: String?](./pdfannotation/widgetdefaultstringvalue.md)
   The string value that the widget reverts to when performing a reset form action.
-- [var fieldName: String?](pdfannotation/fieldname.md)
+- [var fieldName: String?](./pdfannotation/fieldname.md)
   The widget identifier for form annotation actions and behaviors.
-- [var backgroundColor: UIColor?](pdfannotation/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./pdfannotation/backgroundcolor.md)
   The color of the widget’s background.
-- [var isReadOnly: Bool](pdfannotation/isreadonly.md)
+- [var isReadOnly: Bool](./pdfannotation/isreadonly.md)
   A Boolean value that determines whether the widget is editable.
-- [enum PDFWidgetControlType](pdfwidgetcontroltype.md)
+- [enum PDFWidgetControlType](./pdfwidgetcontroltype.md)
   The types of annotation buttons.
 
 

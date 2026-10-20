@@ -1,7 +1,8 @@
 # activity
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The activity level of each instrument over time, as values from 0.0 to 1.0.
 

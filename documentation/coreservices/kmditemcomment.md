@@ -1,7 +1,8 @@
 # kMDItemComment
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A comment related to the file. This differs from the Finder comment, `kMDItemFinderComment`. A CFString.
 
@@ -12,6 +13,10 @@ A comment related to the file. This differs from the Finder comment, `kMDItemFin
 
 ```swift
 let kMDItemComment: CFString!
+```
+
+```c
+const CFStringRef kMDItemComment;
 ```
 
 

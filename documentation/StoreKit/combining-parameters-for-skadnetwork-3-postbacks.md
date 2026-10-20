@@ -1,6 +1,7 @@
 # Combining parameters for SKAdNetwork 3 postbacks
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: Article
 
 Recreate the byte array for version 3 postbacks that win and don’t win attribution.
 
@@ -36,7 +37,7 @@ version + '\u2063' + ad-network-id + '\u2063' + campaign-id + '\u2063' + app-id 
 
 ```
 
-##### Receive the Winning Postback with Attribution
+##### Receive the winning postback with attribution
 
 The following JSON example shows a version 3 install-validation postback the device sends to an ad network that wins the attribution. This example contains all possible parameters and a valid signature:
 
@@ -56,7 +57,7 @@ The following JSON example shows a version 3 install-validation postback the dev
 }
 ```
 
-##### Receive a Nonwinning Postback Without Attribution
+##### Receive a nonwinning postback, without attribution
 
 In iOS 14.6 and later, ad networks that sign ads with version 3 may receive a postback for their qualifying ad impression that don’t win the attribution. Such postbacks have a `did-win` value of `false`, and don’t include `source-app-id` or `conversion-value`.
 
@@ -80,11 +81,12 @@ Up to five ad networks may receive a nonwinning postback. A single ad network ca
 
 If your ad network wins the attribution, you only receive the winning postback, even if the device registers other qualifying impressions for your ad.
 
-For more information about ad impressions qualifying for attribution, and receiving winning or nonwinning postbacks, see [`Receiving ad attributions and postbacks`](receiving-ad-attributions-and-postbacks.md).
+For more information about ad impressions qualifying for attribution, and receiving winning or nonwinning postbacks, see [Receiving ad attributions and postbacks](./receiving-ad-attributions-and-postbacks.md).
 
 ## See Also
 
-- [Combining parameters for previous SKAdNetwork postback versions](combining-parameters-for-previous-skadnetwork-postback-versions.md)
+### SKAdNetworks 3 and earlier postbacks
+- [Combining parameters for previous SKAdNetwork postback versions](./combining-parameters-for-previous-skadnetwork-postback-versions.md)
   Recreate the byte array for versions 2.2 or earlier.
 
 

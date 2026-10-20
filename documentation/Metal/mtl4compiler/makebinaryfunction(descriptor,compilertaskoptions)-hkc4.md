@@ -1,7 +1,8 @@
 # makeBinaryFunction(descriptor:compilerTaskOptions:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new binary visible or intersection function asynchronously.
 

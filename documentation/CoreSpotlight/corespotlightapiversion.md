@@ -1,7 +1,8 @@
 # CoreSpotlightAPIVersion
 
 **Framework**: Core Spotlight  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The API version number for Core Spotlight.
 
@@ -10,13 +11,17 @@ The API version number for Core Spotlight.
 - iPadOS 9.0+
 - Mac Catalyst 13.0+
 - macOS 10.13+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var CoreSpotlightAPIVersion: Int32 { get }
+```
+
+```c
+#define CoreSpotlightAPIVersion
 ```
 
 

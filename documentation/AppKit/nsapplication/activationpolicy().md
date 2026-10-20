@@ -1,7 +1,8 @@
 # activationPolicy()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the app’s activation policy.
 
@@ -14,16 +15,21 @@ Returns the app’s activation policy.
 func activationPolicy() -> NSApplication.ActivationPolicy
 ```
 
+```objc
+- (NSApplicationActivationPolicy) activationPolicy;
+```
+
 #### Return Value
 
 The app’s current activation policy.
 
 ## See Also
 
-- [func setActivationPolicy(NSApplication.ActivationPolicy) -> Bool](nsapplication/setactivationpolicy(_:).md)
+### Configuring the activation policy
+- [func setActivationPolicy(NSApplication.ActivationPolicy) -> Bool](./setactivationpolicy%28_%29.md)
   Attempts to modify the app’s activation policy.
-- [NSApplication.ActivationPolicy](nsapplication/activationpolicy-swift.enum.md)
-  Activation policies (used by [`activationPolicy`](nsrunningapplication/activationpolicy.md)) that control whether and how an app may be activated.
+- [NSApplication.ActivationPolicy](./activationpolicy-swift.enum.md)
+  Activation policies (used by [`activationPolicy`](../nsrunningapplication/activationpolicy.md)) that control whether and how an app may be activated.
 
 
 ---

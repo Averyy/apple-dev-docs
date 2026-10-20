@@ -1,7 +1,8 @@
 # userAnnotation
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string passed to the user annotation attribute for this function. Null if no user annotation is present for this function.
 
@@ -17,6 +18,10 @@ The string passed to the user annotation attribute for this function. Null if no
 
 ```swift
 var userAnnotation: String? { get }
+```
+
+```objc
+@property (readonly, nullable) NSString * userAnnotation;
 ```
 
 

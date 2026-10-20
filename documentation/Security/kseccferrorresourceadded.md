@@ -1,7 +1,8 @@
 # kSecCFErrorResourceAdded
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a URL pointing to the resource on disk that is not included in the signed resources for the code.
 
@@ -13,6 +14,10 @@ A key whose value is a URL pointing to the resource on disk that is not included
 
 ```swift
 let kSecCFErrorResourceAdded: CFString
+```
+
+```c
+extern CFStringRef const kSecCFErrorResourceAdded;
 ```
 
 #### Discussion

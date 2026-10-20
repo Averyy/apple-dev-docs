@@ -1,14 +1,15 @@
 # IF_INTERFACE_ADVISORY_FREQ_BAND_NOT_AVAIL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 IF_INTERFACE_ADVISORY_FREQ_BAND_NOT_AVAIL = 0
 ```
 

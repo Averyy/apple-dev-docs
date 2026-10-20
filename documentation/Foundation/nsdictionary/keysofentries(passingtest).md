@@ -1,7 +1,8 @@
 # keysOfEntries(passingTest:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the set of keys whose corresponding value satisfies a constraint described by a block object.
 
@@ -20,6 +21,10 @@ Returns the set of keys whose corresponding value satisfies a constraint describ
 func keysOfEntries(passingTest predicate: (Any, Any, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Set<AnyHashable>
 ```
 
+```objc
+- (NSSet<id> *) keysOfEntriesPassingTest:(BOOL (^)(KeyType key, ObjectType obj, BOOL *stop)) predicate;
+```
+
 #### Return Value
 
 The set of keys whose corresponding value satisfies `predicate`.
@@ -30,9 +35,11 @@ The set of keys whose corresponding value satisfies `predicate`.
 
 ## See Also
 
-- [func enumerateKeysAndObjects((Any, Any, UnsafeMutablePointer<ObjCBool>) -> Void)](nsdictionary/enumeratekeysandobjects(_:).md)
+### Related Documentation
+- [func enumerateKeysAndObjects((Any, Any, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratekeysandobjects%28_%29.md)
   Applies a given block object to the entries of the dictionary.
-- [func keysOfEntries(options: NSEnumerationOptions, passingTest: (Any, Any, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Set<AnyHashable>](nsdictionary/keysofentries(options:passingtest:).md)
+### Filtering Dictionaries
+- [func keysOfEntries(options: NSEnumerationOptions, passingTest: (Any, Any, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Set<AnyHashable>](./keysofentries%28options,passingtest%29.md)
   Returns the set of keys whose corresponding value satisfies a constraint described by a block object.
 
 

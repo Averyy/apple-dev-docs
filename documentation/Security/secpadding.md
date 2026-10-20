@@ -1,18 +1,21 @@
 # SecPadding
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The types of padding to use when you create or verify a digital signature.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.6+
-- tvOS 4.0+
-- visionOS 1.0+
-- watchOS 1.0+
+- iOS 2.0+ - Deprecated in 15.0
+- iPadOS 2.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- macOS 10.6+ - Deprecated in 12.0
+- tvOS 4.0+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 1.0+ - Deprecated in 8.0
+
+> **Deprecated**: Replaced with SecKeyAlgorithm
 
 ## Declaration
 
@@ -20,41 +23,45 @@ The types of padding to use when you create or verify a digital signature.
 struct SecPadding
 ```
 
+```c
+enum SecPadding : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](secpadding/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./secpadding/init%28rawvalue%29.md)
 ### Constants
-- [static var sigRaw: SecPadding](secpadding/sigraw.md)
-- [static var PKCS1: SecPadding](secpadding/pkcs1.md)
+- [static var sigRaw: SecPadding](./secpadding/sigraw.md)
+- [static var PKCS1: SecPadding](./secpadding/pkcs1.md)
   PKCS1 padding.
-- [static var OAEP: SecPadding](secpadding/oaep.md)
-- [static var PKCS1MD2: SecPadding](secpadding/pkcs1md2.md)
+- [static var OAEP: SecPadding](./secpadding/oaep.md)
+- [static var PKCS1MD2: SecPadding](./secpadding/pkcs1md2.md)
   Data to be signed is an MD2 hash.
-- [static var PKCS1MD5: SecPadding](secpadding/pkcs1md5.md)
+- [static var PKCS1MD5: SecPadding](./secpadding/pkcs1md5.md)
   Data to be signed is an MD5 hash.
-- [static var PKCS1SHA1: SecPadding](secpadding/pkcs1sha1.md)
+- [static var PKCS1SHA1: SecPadding](./secpadding/pkcs1sha1.md)
   Data to be signed is a SHA1 hash.
-- [static var PKCS1SHA224: SecPadding](secpadding/pkcs1sha224.md)
+- [static var PKCS1SHA224: SecPadding](./secpadding/pkcs1sha224.md)
   Data to be signed is a SHA224 hash.
-- [static var PKCS1SHA256: SecPadding](secpadding/pkcs1sha256.md)
+- [static var PKCS1SHA256: SecPadding](./secpadding/pkcs1sha256.md)
   Data to be signed is a SHA256 hash.
-- [static var PKCS1SHA384: SecPadding](secpadding/pkcs1sha384.md)
+- [static var PKCS1SHA384: SecPadding](./secpadding/pkcs1sha384.md)
   Data to be signed is a SHA384 hash.
-- [static var PKCS1SHA512: SecPadding](secpadding/pkcs1sha512.md)
+- [static var PKCS1SHA512: SecPadding](./secpadding/pkcs1sha512.md)
   Data to be signed is a SHA512 hash.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

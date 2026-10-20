@@ -1,7 +1,8 @@
 # AddOrderToWalletButton
 
 **Framework**: FinanceKitUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A button you use to add an order to a person’s Apple Wallet.
 
@@ -20,21 +21,23 @@ A button you use to add an order to a person’s Apple Wallet.
 ## Topics
 
 ### Initializers
-- [init(signedArchive: Data, onCompletion: (Result<FinanceStore.SaveOrderResult, any Error>) -> Void)](addordertowalletbutton/init(signedarchive:oncompletion:).md)
+- [init(signedArchive: Data, onCompletion: (Result<FinanceStore.SaveOrderResult, any Error>) -> Void)](./addordertowalletbutton/init%28signedarchive,oncompletion%29.md)
   Returns an initialized Add to Order Button.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [struct AddOrderToWalletButtonStyle](addordertowalletbuttonstyle.md)
+### Related Documentation
+- [struct AddOrderToWalletButtonStyle](./addordertowalletbuttonstyle.md)
   Values that determine the style of an Add Order to Apple Wallet button.
-- [struct AddOrderToWalletButtonStyle](addordertowalletbuttonstyle.md)
+### Adding an order to Apple Wallet
+- [struct AddOrderToWalletButtonStyle](./addordertowalletbuttonstyle.md)
   Values that determine the style of an Add Order to Apple Wallet button.
 
 

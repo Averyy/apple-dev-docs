@@ -1,7 +1,8 @@
 # readAttributeValveFault(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeValveFault(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeValveFault() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeValveFaultWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

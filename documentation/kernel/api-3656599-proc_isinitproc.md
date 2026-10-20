@@ -1,14 +1,15 @@
 # proc_isinitproc
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 int proc_isinitproc(proc_t);
 ```
 

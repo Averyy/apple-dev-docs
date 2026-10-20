@@ -1,7 +1,8 @@
 # raw(pixelFormat:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Indicates a texture for unmodified use by a shader.
 
@@ -21,13 +22,14 @@ static func raw(pixelFormat: MTLPixelFormat) -> TextureResource.Format
 
 #### Discussion
 
-The created texture uses the [`TextureResource.Semantic.raw`](textureresource/semantic-swift.enum/raw.md) semantic.
+The created texture uses the [`TextureResource.Semantic.raw`](../semantic-swift.enum/raw.md) semantic.
 
 ## See Also
 
-- [static func color(TextureResource.Format.ColorSpace, pixelFormat: MTLPixelFormat) -> TextureResource.Format](textureresource/format/color(_:pixelformat:).md)
+### Creating the format
+- [static func color(TextureResource.Format.ColorSpace, pixelFormat: MTLPixelFormat) -> TextureResource.Format](./color%28_,pixelformat%29.md)
   Indicates that a texture contains color data to interpret in a specific color space.
-- [static func normal(TextureResource.Format.NormalEncoding, pixelFormat: MTLPixelFormat) -> TextureResource.Format](textureresource/format/normal(_:pixelformat:).md)
+- [static func normal(TextureResource.Format.NormalEncoding, pixelFormat: MTLPixelFormat) -> TextureResource.Format](./normal%28_,pixelformat%29.md)
   Indicates that a texture is a normal map.
 
 

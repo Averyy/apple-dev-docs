@@ -1,7 +1,8 @@
 # setListStylePosition(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setListStylePosition(_ listStylePosition: String!)
+```
+
+```objc
+- (void) setListStylePosition:(NSString *) listStylePosition;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(title:pointsOfInterest:selectedIndex:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Point of Interest template with a title, the points of interest to display, and the initial selection’s index.
 
@@ -16,6 +17,10 @@ Creates a Point of Interest template with a title, the points of interest to dis
 init(title: String, pointsOfInterest: [CPPointOfInterest], selectedIndex: Int)
 ```
 
+```objc
+- (instancetype) initWithTitle:(NSString *) title pointsOfInterest:(NSArray<CPPointOfInterest *> *) pointsOfInterest selectedIndex:(NSUInteger) selectedIndex;
+```
+
 #### Discussion
 
 `pointsOfInterest` can contain a maximum of twelve points of interest because that is the most the template displays.
@@ -24,11 +29,12 @@ init(title: String, pointsOfInterest: [CPPointOfInterest], selectedIndex: Int)
 
 - `title`: The scrollable picker’s title.
 - `pointsOfInterest`: An array that contains the points of interest the template displays.
-- `selectedIndex`: The initial selection’s index. This is the array’s index for the specific point of interest you want to select. Use [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound-4qp9h) to indicate no initial selection.
+- `selectedIndex`: The initial selection’s index. This is the array’s index for the specific point of interest you want to select. Use [`NSNotFound`](../../Foundation/nsnotfound-4qp9h.md) to indicate no initial selection.
 
 ## See Also
 
-- [class CPPointOfInterest](cppointofinterest.md)
+### Creating a Point of Interest Template
+- [class CPPointOfInterest](../cppointofinterest.md)
   An object that describes a point of interest on the template’s map and in its scrollable picker.
 
 

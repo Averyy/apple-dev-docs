@@ -1,12 +1,13 @@
 # NSLevelIndicator.Style.relevancy
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that indicates the relevancy of an item, such as a search result.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A style that indicates the relevancy of an item, such as a search result.
 case relevancy
 ```
 
+```c
+NSLevelIndicatorStyleRelevancy
+```
+
 ## See Also
 
-- [NSLevelIndicator.Style.continuousCapacity](nslevelindicator/style/continuouscapacity.md)
+### Level Indicator Styles
+- [NSLevelIndicator.Style.continuousCapacity](./continuouscapacity.md)
   A style that indicates the capacity of something, such as how much data is on a hard disk.
-- [NSLevelIndicator.Style.discreteCapacity](nslevelindicator/style/discretecapacity.md)
+- [NSLevelIndicator.Style.discreteCapacity](./discretecapacity.md)
   A style that displays discrete segments that indicate the capacity of something, such as an audio level.
-- [NSLevelIndicator.Style.rating](nslevelindicator/style/rating.md)
+- [NSLevelIndicator.Style.rating](./rating.md)
   A style that indicates a rank, such as a star ranking display.
 
 

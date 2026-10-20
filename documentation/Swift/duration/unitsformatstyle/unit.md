@@ -1,7 +1,8 @@
 # Duration.UnitsFormatStyle.Unit
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A unit to use in formatting a duration.
 
@@ -22,46 +23,47 @@ struct Unit
 
 #### Overview
 
-Supported units range from hours to nanoseconds. Use these with the `allowed` parameter of the [`Duration.UnitsFormatStyle`](duration/unitsformatstyle.md) initializers to specify which units to use in a formatted string.
+Supported units range from hours to nanoseconds. Use these with the `allowed` parameter of the [`Duration.UnitsFormatStyle`](../unitsformatstyle.md) initializers to specify which units to use in a formatted string.
 
 ## Topics
 
 ### Duration units
-- [static var hours: Duration.UnitsFormatStyle.Unit](duration/unitsformatstyle/unit/hours.md)
+- [static var hours: Duration.UnitsFormatStyle.Unit](./unit/hours.md)
   The hours unit, used for formatting a duration.
-- [static var minutes: Duration.UnitsFormatStyle.Unit](duration/unitsformatstyle/unit/minutes.md)
+- [static var minutes: Duration.UnitsFormatStyle.Unit](./unit/minutes.md)
   The minutes unit, used for formatting a duration.
-- [static var seconds: Duration.UnitsFormatStyle.Unit](duration/unitsformatstyle/unit/seconds.md)
+- [static var seconds: Duration.UnitsFormatStyle.Unit](./unit/seconds.md)
   The seconds unit, used for formatting a duration.
-- [static var milliseconds: Duration.UnitsFormatStyle.Unit](duration/unitsformatstyle/unit/milliseconds.md)
+- [static var milliseconds: Duration.UnitsFormatStyle.Unit](./unit/milliseconds.md)
   The milliseconds unit, used for formatting a duration.
-- [static var microseconds: Duration.UnitsFormatStyle.Unit](duration/unitsformatstyle/unit/microseconds.md)
+- [static var microseconds: Duration.UnitsFormatStyle.Unit](./unit/microseconds.md)
   The microseconds unit, used for formatting a duration.
-- [static var nanoseconds: Duration.UnitsFormatStyle.Unit](duration/unitsformatstyle/unit/nanoseconds.md)
+- [static var nanoseconds: Duration.UnitsFormatStyle.Unit](./unit/nanoseconds.md)
   The nanoseconds unit, used for formatting a duration.
 ### Type Properties
-- [static var days: Duration.UnitsFormatStyle.Unit](duration/unitsformatstyle/unit/days.md)
+- [static var days: Duration.UnitsFormatStyle.Unit](./unit/days.md)
   The unit for days. One day is always 86400 seconds.
-- [static var weeks: Duration.UnitsFormatStyle.Unit](duration/unitsformatstyle/unit/weeks.md)
+- [static var weeks: Duration.UnitsFormatStyle.Unit](./unit/weeks.md)
   The unit for weeks. One week is always 604800 seconds.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](decodable.md)
-- [Encodable](encodable.md)
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Decodable](../../decodable.md)
+- [Encodable](../../encodable.md)
+- [Equatable](../../equatable.md)
+- [Hashable](../../hashable.md)
+- [Sendable](../../sendable.md)
+- [SendableMetatype](../../sendablemetatype.md)
 
 ## See Also
 
-- [var allowedUnits: Set<Duration.UnitsFormatStyle.Unit>](duration/unitsformatstyle/allowedunits.md)
+### Working with units
+- [var allowedUnits: Set<Duration.UnitsFormatStyle.Unit>](./allowedunits.md)
   The units that may be included in the output string.
-- [var maximumUnitCount: Int?](duration/unitsformatstyle/maximumunitcount.md)
+- [var maximumUnitCount: Int?](./maximumunitcount.md)
   The maximum number of time units to include in the output string.
-- [var valueLengthLimits: Range<Int>?](duration/unitsformatstyle/valuelengthlimits.md)
+- [var valueLengthLimits: Range<Int>?](./valuelengthlimits.md)
   The padding or truncating behavior of the unit value.
 
 

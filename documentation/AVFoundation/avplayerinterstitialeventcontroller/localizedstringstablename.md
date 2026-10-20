@@ -1,7 +1,8 @@
 # localizedStringsTableName
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the table in the bundle that contains the localized strings to be used by the AVPlayerInterstitialEventController.
 
@@ -20,13 +21,18 @@ The name of the table in the bundle that contains the localized strings to be us
 var localizedStringsTableName: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * localizedStringsTableName;
+```
+
 #### Discussion
 
 If the value of the property is nil, it will default to “Localizable”
 
 ## See Also
 
-- [var localizedStringsBundle: Bundle?](avplayerinterstitialeventcontroller/localizedstringsbundle.md)
+### Accessing strings
+- [var localizedStringsBundle: Bundle?](./localizedstringsbundle.md)
   The bundle that contains the localized strings to be used by the AVPlayerInterstitialEventController.
 
 

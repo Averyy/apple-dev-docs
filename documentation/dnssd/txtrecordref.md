@@ -1,7 +1,8 @@
 # TXTRecordRef
 
 **Framework**: dnssd  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Opaque internal data type that represents a DNS-SD TXT record.
 
@@ -20,25 +21,30 @@ Opaque internal data type that represents a DNS-SD TXT record.
 typealias TXTRecordRef = _TXTRecordRef_t
 ```
 
+```c
+typedef union _TXTRecordRef_t TXTRecordRef;
+```
+
 ## Topics
 
 ### Miscellaneous
-- [Force Natural Alignment](force-natural-alignment.md)
-- [Private Data](private-data.md)
+- [Force Natural Alignment](./force-natural-alignment.md)
+- [Private Data](./private-data.md)
 ### Instance Properties
-- [var ForceNaturalAlignment: UnsafeMutablePointer<CChar>!](txtrecordref/forcenaturalalignment.md)
-- [var PrivateData: (CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar)](txtrecordref/privatedata.md)
+- [var ForceNaturalAlignment: UnsafeMutablePointer<CChar>!](./txtrecordref/forcenaturalalignment.md)
+- [var PrivateData: (CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar)](./txtrecordref/privatedata.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias DNSServiceErrorType](dnsserviceerrortype.md)
-- [typealias DNSServiceFlags](dnsserviceflags.md)
-- [typealias DNSServiceProtocol](dnsserviceprotocol.md)
+### Data Types
+- [typealias DNSServiceErrorType](./dnsserviceerrortype.md)
+- [typealias DNSServiceFlags](./dnsserviceflags.md)
+- [typealias DNSServiceProtocol](./dnsserviceprotocol.md)
 
 
 ---

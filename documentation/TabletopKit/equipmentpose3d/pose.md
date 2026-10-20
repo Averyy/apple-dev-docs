@@ -1,7 +1,8 @@
 # pose
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The 3D position and orientation of equipment on the table.
 
@@ -16,7 +17,8 @@ var pose: Pose3D
 
 ## See Also
 
-- [var id: EquipmentIdentifier](equipmentpose3d/id.md)
+### Getting equipment pose properties
+- [var id: EquipmentIdentifier](./id.md)
 
 
 ---

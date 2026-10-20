@@ -1,7 +1,8 @@
 # init(identifiers:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of AVPlayerItemMetadataOutput.
 
@@ -18,6 +19,10 @@ Creates an instance of AVPlayerItemMetadataOutput.
 
 ```swift
 init(identifiers: [String]?)
+```
+
+```objc
+- (instancetype) initWithIdentifiers:(NSArray<NSString *> *) identifiers;
 ```
 
 #### Return Value

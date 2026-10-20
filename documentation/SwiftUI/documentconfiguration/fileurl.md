@@ -1,7 +1,8 @@
 # fileURL
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL of an open document.
 
@@ -24,7 +25,8 @@ If the document has never been saved, returns `nil`.
 
 ## See Also
 
-- [var isEditable: Bool](documentconfiguration/iseditable.md)
+### Getting configuration values
+- [var isEditable: Bool](./iseditable.md)
   A Boolean value that indicates whether you can edit the document.
 
 

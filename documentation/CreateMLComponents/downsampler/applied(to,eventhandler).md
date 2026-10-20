@@ -1,7 +1,8 @@
 # applied(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Down samples the input sequence
 
@@ -31,7 +32,8 @@ An async sequence of down sampled outputs.
 
 ## See Also
 
-- [Downsampler.DownStreamSequence](downsampler/downstreamsequence.md)
+### Performing the transformation
+- [Downsampler.DownStreamSequence](./downstreamsequence.md)
   An async sequence of down stream elements.
 
 

@@ -1,7 +1,8 @@
 # mFormatFlags
 
 **Framework**: AudioDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Audio format flags for the stream’s format.
 
@@ -10,17 +11,18 @@ Audio format flags for the stream’s format.
 
 ## Declaration
 
-```swift
+```c
 IOUserAudioFormatFlags mFormatFlags;
 ```
 
 ## See Also
 
-- [mFormatID](audiodriverkit/iouseraudiostreambasicdescription/mformatid.md)
+### Identifying the Format
+- [mFormatID](./mformatid.md)
   The audio format identifier indicating the general kind of data in the stream.
-- [IOUserAudioFormatID](audiodriverkit/iouseraudioformatid.md)
+- [IOUserAudioFormatID](../iouseraudioformatid.md)
   An enumeration of four character codes used to identify distinct audio data formats.
-- [IOUserAudioFormatFlags](audiodriverkit/iouseraudioformatflags.md)
+- [IOUserAudioFormatFlags](../iouseraudioformatflags.md)
   Flag values that provide more information about the format used by an audio stream basic description.
 
 

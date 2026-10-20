@@ -1,18 +1,19 @@
 # kCMMetadataFormatType_ICY
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 SHOUTCast format.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ SHOUTCast format.
 var kCMMetadataFormatType_ICY: CMMetadataFormatType { get }
 ```
 
+```c
+kCMMetadataFormatType_ICY
+```
+
 ## See Also
 
-- [var kCMMetadataFormatType_ID3: CMMetadataFormatType](kcmmetadataformattype_id3.md)
+### Constants
+- [var kCMMetadataFormatType_ID3: CMMetadataFormatType](./kcmmetadataformattype_id3.md)
   ID3 format.
-- [var kCMMetadataFormatType_Boxed: CMMetadataFormatType](kcmmetadataformattype_boxed.md)
+- [var kCMMetadataFormatType_Boxed: CMMetadataFormatType](./kcmmetadataformattype_boxed.md)
   CoreMedia boxed format.
-- [var kCMMetadataFormatType_EMSG: CMMetadataFormatType](kcmmetadataformattype_emsg.md)
+- [var kCMMetadataFormatType_EMSG: CMMetadataFormatType](./kcmmetadataformattype_emsg.md)
 
 
 ---

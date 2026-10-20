@@ -1,7 +1,8 @@
 # Read version ids for a background asset
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get version IDs about a specific background asset version.
 
@@ -14,17 +15,33 @@ Get version IDs about a specific background asset version.
 
 ## Parameters
 
-- `limit` (integer)
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `backgroundAssets` resource ID from the [`List all background assets for an app`](./get-v1-apps-_id_-backgroundassets.md) response.
+
+### Query Parameters
+
+- `limit` (integer): **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`BackgroundAssetVersionsLinkagesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List all background assets for an app](get-v1-apps-_id_-backgroundassets.md)
+### Reading background asset information
+- [List all background assets for an app](./get-v1-apps-_id_-backgroundassets.md)
   Get information about the Apple-hosted background assets for a specific app.
-- [List the assets packs ids for an app](get-v1-apps-_id_-relationships-backgroundassets.md)
+- [List the assets packs ids for an app](./get-v1-apps-_id_-relationships-backgroundassets.md)
   Get a list of the Apple hosted background asset IDs for a specific app.
-- [Read Background Assets Information](get-v1-backgroundassets-_id_.md)
+- [Read Background Assets Information](./get-v1-backgroundassets-_id_.md)
   Get details about a specific background asset.
-- [Read Version Details for a Background Asset](get-v1-backgroundassets-_id_-versions.md)
+- [Read Version Details for a Background Asset](./get-v1-backgroundassets-_id_-versions.md)
   Get details about a specific background asset version.
 
 

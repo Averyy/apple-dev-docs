@@ -1,7 +1,8 @@
 # WeatherAvailability.AvailabilityKind.unknown
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The availability is unknown.
 

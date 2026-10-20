@@ -1,18 +1,19 @@
 # angularDamping
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that reduces the body’s rotational velocity.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ A property that reduces the body’s rotational velocity.
 var angularDamping: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGFloat angularDamping;
+```
+
 ## Mentions
 
-- [Pinning and Rotating Physics Bodies](pinning-and-rotating-physics-bodies.md)
+- [Pinning and Rotating Physics Bodies](../pinning-and-rotating-physics-bodies.md)
 
 #### Discussion
 
@@ -30,19 +35,20 @@ This property is used to simulate fluid or air friction forces on the body. The 
 
 ## See Also
 
-- [Configuring a Physics Body](configuring-a-physics-body.md)
+### Defining a Physics Body’s Physical Properties
+- [Configuring a Physics Body](../configuring-a-physics-body.md)
   Move a physics body, and make it collide with other objects, by setting its physical properties once or changing them dynamically.
-- [var mass: CGFloat](skphysicsbody/mass.md)
+- [var mass: CGFloat](./mass.md)
   The mass of the body, in kilograms.
-- [var density: CGFloat](skphysicsbody/density.md)
+- [var density: CGFloat](./density.md)
   The density of the object, in kilograms per square meter.
-- [var area: CGFloat](skphysicsbody/area.md)
+- [var area: CGFloat](./area.md)
   The area covered by the body.
-- [var friction: CGFloat](skphysicsbody/friction.md)
+- [var friction: CGFloat](./friction.md)
   The roughness of the surface of the physics body.
-- [var restitution: CGFloat](skphysicsbody/restitution.md)
+- [var restitution: CGFloat](./restitution.md)
   The bounciness of the physics body.
-- [var linearDamping: CGFloat](skphysicsbody/lineardamping.md)
+- [var linearDamping: CGFloat](./lineardamping.md)
   A property that reduces the body’s linear velocity.
 
 

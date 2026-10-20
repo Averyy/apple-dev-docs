@@ -1,7 +1,8 @@
 # cell()
 
 **Framework**: TVUIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates the default configuration for a circular monogram cell.
 
@@ -16,7 +17,7 @@ static func cell() -> TVMonogramContentConfiguration
 
 #### Return Value
 
-A new [`TVMonogramContentConfiguration`](tvmonogramcontentconfiguration-swift.struct.md) instance.
+A new [`TVMonogramContentConfiguration`](../tvmonogramcontentconfiguration-swift.struct.md) instance.
 
 
 ---

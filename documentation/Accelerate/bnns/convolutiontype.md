@@ -1,7 +1,8 @@
 # BNNS.ConvolutionType
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe convolution types.
 
@@ -11,8 +12,10 @@ Constants that describe convolution types.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,16 +26,16 @@ enum ConvolutionType
 ## Topics
 
 ### Convolution Types
-- [BNNS.ConvolutionType.standard](bnns/convolutiontype/standard.md)
+- [BNNS.ConvolutionType.standard](./convolutiontype/standard.md)
   Standard convolution.
-- [BNNS.ConvolutionType.transposed](bnns/convolutiontype/transposed.md)
+- [BNNS.ConvolutionType.transposed](./convolutiontype/transposed.md)
   Transposed convolution.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

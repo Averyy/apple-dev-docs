@@ -1,7 +1,8 @@
 # LineLevelControl
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A video selector control that identifies the nominal line level for the element.
 
@@ -10,7 +11,7 @@ A video selector control that identifies the nominal line level for the element.
 
 ## Declaration
 
-```swift
+```c
 LineLevelControl
 ```
 
@@ -20,13 +21,14 @@ Note that this is not a gain stage but rather indicating the voltage standard (i
 
 ## See Also
 
-- [VolumeControl](videodriverkit/iouservideoclassid/volumecontrol.md)
+### Identifying volume control types
+- [VolumeControl](./volumecontrol.md)
   The class identifier for the `IOUserVideoVolumeControl` class.
-- [MuteControl](videodriverkit/iouservideoclassid/mutecontrol.md)
+- [MuteControl](./mutecontrol.md)
   The class identifier for the `IOUserVideoMuteControl` class.
-- [LFEVolumeControl](videodriverkit/iouservideoclassid/lfevolumecontrol.md)
+- [LFEVolumeControl](./lfevolumecontrol.md)
   A subclass of the `IOUserVideoLevelControl` class for an LFE channel that results from bass management.
-- [LFEMuteControl](videodriverkit/iouservideoclassid/lfemutecontrol.md)
+- [LFEMuteControl](./lfemutecontrol.md)
   A Boolean control where true means that mute is enabled, making that LFE element inaudible.
 
 

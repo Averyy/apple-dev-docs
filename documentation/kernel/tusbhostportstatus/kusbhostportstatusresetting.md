@@ -1,7 +1,8 @@
 # kUSBHostPortStatusResetting
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The resetting port status.
 
@@ -10,7 +11,7 @@ The resetting port status.
 
 ## Declaration
 
-```swift
+```c
 kUSBHostPortStatusResetting = kIOUSBHostPortStatusResetting
 ```
 

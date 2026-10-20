@@ -1,7 +1,8 @@
 # init(scale:rotation:translation:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an affine transform from the specified scale, rotate, and translate transforms.
 
@@ -11,7 +12,7 @@ Creates an affine transform from the specified scale, rotate, and translate tran
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -28,29 +29,30 @@ init(scale: Size3D = Size3D(width: 1.0, height: 1, depth: 1), rotation: Rotation
 
 ## See Also
 
-- [init()](affinetransform3d/init-2uqjl.md)
+### Creating a 3D affine transform structure
+- [init()](./init%28%29-2uqjl.md)
   Creates an affine transform.
-- [init()](affinetransform3d/init-6ntm3.md)
+- [init()](./init%28%29-6ntm3.md)
   Returns a new identity affine transform.
-- [init(simd_float4x3)](affinetransform3d/init(_:)-52vpb.md)
+- [init(simd_float4x3)](./init%28_%29-52vpb.md)
   Creates an affine transform from the specified single-precision matrix.
-- [init(simd_double4x3)](affinetransform3d/init(_:)-722a2.md)
+- [init(simd_double4x3)](./init%28_%29-722a2.md)
   Creates an affine transform from the specified 4 x 3 double-precision matrix.
-- [init(Transform)](affinetransform3d/init(_:)-e2xx.md)
+- [init(Transform)](./init%28_%29-e2xx.md)
   Creates an affine transform from the specified transform.
-- [init(matrix: simd_double4x3)](affinetransform3d/init(matrix:)-2inci.md)
+- [init(matrix: simd_double4x3)](./init%28matrix%29-2inci.md)
   Creates an affine transform from the specified double-precision matrix.
-- [init(pose: Pose3D)](affinetransform3d/init(pose:).md)
+- [init(pose: Pose3D)](./init%28pose%29.md)
   Creates an affine transform from the specified pose structure.
-- [init(scaledPose: ScaledPose3D)](affinetransform3d/init(scaledpose:).md)
+- [init(scaledPose: ScaledPose3D)](./init%28scaledpose%29.md)
   Creates an affine transform from the specified scale pose structure.
-- [init(shear: AxisWithFactors)](affinetransform3d/init(shear:).md)
+- [init(shear: AxisWithFactors)](./init%28shear%29.md)
   Creates an affine transform from the specified shear transform.
-- [init(truncating: ProjectiveTransform3D)](affinetransform3d/init(truncating:)-40nzj.md)
+- [init(truncating: ProjectiveTransform3D)](./init%28truncating%29-40nzj.md)
   Returns a new affine transform structure from the specified projective transform.
-- [init(truncating: simd_float4x4)](affinetransform3d/init(truncating:)-5wjxy.md)
+- [init(truncating: simd_float4x4)](./init%28truncating%29-5wjxy.md)
   Returns a new affine transform structure from the specified single-precision 4 x 4 matrix truncated to a  4 x 3 matrix.
-- [init(truncating: simd_double4x4)](affinetransform3d/init(truncating:)-9fd9g.md)
+- [init(truncating: simd_double4x4)](./init%28truncating%29-9fd9g.md)
   Returns a new affine transform structure from the specified 4 x 4 matrix truncated to a  4 x 3 matrix.
 
 

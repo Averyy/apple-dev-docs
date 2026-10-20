@@ -1,7 +1,8 @@
 # GaussianSplatResource.SortingMode.distance
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sorts splats by their Euclidean distance from the camera.
 

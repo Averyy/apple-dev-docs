@@ -1,7 +1,8 @@
 # setSpellingState(_:range:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the spelling state, which controls the display of the spelling and grammar indicators on the given text range.
 
@@ -14,27 +15,34 @@ Sets the spelling state, which controls the display of the spelling and grammar 
 func setSpellingState(_ value: Int, range charRange: NSRange)
 ```
 
+```objc
+- (void) setSpellingState:(NSInteger) value range:(NSRange) charRange;
+```
+
 #### Discussion
 
 May be called or overridden to control setting of spelling and grammar indicators on text, used to highlight portions of the text that are flagged for spelling or grammar issues.
 
 ## Parameters
 
-- `value`: The spelling state value to set. Possible values, for the temporary attribute on the layout manager using the key NSSpellingStateAttributeName, are: - [`NSSpellingStateSpellingFlag`](nsspellingstate/nsspellingstatespellingflag.md) to highlight spelling issues.
-- [`NSSpellingStateGrammarFlag`](nsspellingstate/nsspellingstategrammarflag.md) to highlight grammar issues.
+- `value`: The spelling state value to set. Possible values, for the temporary attribute on the layout manager using the key NSSpellingStateAttributeName, are:
+
+  - [`NSSpellingStateSpellingFlag`](../nsspellingstate/nsspellingstatespellingflag.md) to highlight spelling issues.
+  - [`NSSpellingStateGrammarFlag`](../nsspellingstate/nsspellingstategrammarflag.md) to highlight grammar issues.
 - `charRange`: The character range over which to set the given spelling state.
 
 ## See Also
 
-- [var isContinuousSpellCheckingEnabled: Bool](nstextview/iscontinuousspellcheckingenabled.md)
+### Working with the spelling checker
+- [var isContinuousSpellCheckingEnabled: Bool](./iscontinuousspellcheckingenabled.md)
   A Boolean value that indicates whether the receiver has continuous spell checking enabled.
-- [var spellCheckerDocumentTag: Int](nstextview/spellcheckerdocumenttag.md)
+- [var spellCheckerDocumentTag: Int](./spellcheckerdocumenttag.md)
   A tag identifying the text view’s text as a document for the spell checker server.
-- [func toggleContinuousSpellChecking(Any?)](nstextview/togglecontinuousspellchecking(_:).md)
+- [func toggleContinuousSpellChecking(Any?)](./togglecontinuousspellchecking%28_%29.md)
   Toggles whether continuous spell checking is enabled for the receiver.
-- [var isGrammarCheckingEnabled: Bool](nstextview/isgrammarcheckingenabled.md)
+- [var isGrammarCheckingEnabled: Bool](./isgrammarcheckingenabled.md)
   Enables and disables grammar checking.
-- [func toggleGrammarChecking(Any?)](nstextview/togglegrammarchecking(_:).md)
+- [func toggleGrammarChecking(Any?)](./togglegrammarchecking%28_%29.md)
   Changes the state of grammar checking from enabled to disabled and vice versa.
 
 

@@ -1,7 +1,8 @@
 # SecPolicyCreateWithProperties(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a policy object based on an object identifier for the policy type.
 
@@ -20,9 +21,13 @@ Returns a policy object based on an object identifier for the policy type.
 func SecPolicyCreateWithProperties(_ policyIdentifier: CFTypeRef, _ properties: CFDictionary?) -> SecPolicy?
 ```
 
+```c
+SecPolicyRefSecPolicyCreateWithProperties(CFTypeRef policyIdentifier, CFDictionaryRef properties);
+```
+
 ## Mentions
 
-- [Creating a Trust Object](creating-a-trust-object.md)
+- [Creating a Trust Object](./creating-a-trust-object.md)
 
 #### Return Value
 
@@ -31,7 +36,7 @@ A new policy, or `NULL` if the policy could not be created.
 ## Parameters
 
 - `policyIdentifier`: The identifier for the desired policy type.
-- `properties`: A properties dictionary. See [`Security Policy Keys`](security-policy-keys.md) for a list of valid property names to use as keys in this dictionary.
+- `properties`: A properties dictionary. See [Security Policy Keys](./security-policy-keys.md) for a list of valid property names to use as keys in this dictionary.
 
 
 ---

@@ -1,7 +1,8 @@
 # backgroundImagePositionAdjustment
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance, in points, by which to offset the background image horizontally and vertically.
 
@@ -18,13 +19,18 @@ The distance, in points, by which to offset the background image horizontally an
 var backgroundImagePositionAdjustment: UIOffset { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) UIOffset backgroundImagePositionAdjustment;
+```
+
 #### Discussion
 
 Positive values move the image down and to the right. Negative values move the image up and to the left.
 
 ## See Also
 
-- [var backgroundImage: UIImage?](uibarbuttonitemstateappearance/backgroundimage.md)
+### Configuring the background appearance
+- [var backgroundImage: UIImage?](./backgroundimage.md)
   A background image to display around the button.
 
 

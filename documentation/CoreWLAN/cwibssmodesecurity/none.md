@@ -1,12 +1,13 @@
 # CWIBSSModeSecurity.none
 
 **Framework**: Core WLAN  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Open System authentication.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 11.0
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Open System authentication.
 case none
 ```
 
+```c
+kCWIBSSModeSecurityNone
+```
+
 ## See Also
 
-- [CWIBSSModeSecurity.WEP40](cwibssmodesecurity/wep40.md)
+### Constants
+- [CWIBSSModeSecurity.WEP40](./wep40.md)
   WEP security.
-- [CWIBSSModeSecurity.WEP104](cwibssmodesecurity/wep104.md)
+- [CWIBSSModeSecurity.WEP104](./wep104.md)
   WPA Personal authentication.
 
 

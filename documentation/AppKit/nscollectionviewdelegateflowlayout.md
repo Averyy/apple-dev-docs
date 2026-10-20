@@ -1,12 +1,13 @@
 # NSCollectionViewDelegateFlowLayout
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that a delegate implements to provide layout information to a flow layout object in a collection view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,57 +15,62 @@ A set of methods that a delegate implements to provide layout information to a f
 protocol NSCollectionViewDelegateFlowLayout : NSCollectionViewDelegate
 ```
 
+```objc
+@protocol NSCollectionViewDelegateFlowLayout <NSCollectionViewDelegate>
+```
+
 #### Overview
 
 Implement the methods of this protocol when you want to customize the layout behavior and perhaps return different values for different items or sections.
 
-All of the methods in this protocol are optional, so you can implement only the methods you need to achieve the desired layout. If you do not implement a particular method, the flow layout object obtains default values from its own properties and applies them uniformly. Implement your methods in the object you assign to the [`delegate`](nscollectionview/delegate.md) property of the collection view itself.
+All of the methods in this protocol are optional, so you can implement only the methods you need to achieve the desired layout. If you do not implement a particular method, the flow layout object obtains default values from its own properties and applies them uniformly. Implement your methods in the object you assign to the [`delegate`](./nscollectionview/delegate.md) property of the collection view itself.
 
 ## Topics
 
 ### Getting the Size of Items
-- [func collectionView(NSCollectionView, layout: NSCollectionViewLayout, sizeForItemAt: IndexPath) -> NSSize](nscollectionviewdelegateflowlayout/collectionview(_:layout:sizeforitemat:).md)
+- [func collectionView(NSCollectionView, layout: NSCollectionViewLayout, sizeForItemAt: IndexPath) -> NSSize](./nscollectionviewdelegateflowlayout/collectionview%28_,layout,sizeforitemat%29.md)
   Asks the delegate for the size of the specified item.
 ### Getting the Section Spacing
-- [func collectionView(NSCollectionView, layout: NSCollectionViewLayout, insetForSectionAt: Int) -> NSEdgeInsets](nscollectionviewdelegateflowlayout/collectionview(_:layout:insetforsectionat:).md)
+- [func collectionView(NSCollectionView, layout: NSCollectionViewLayout, insetForSectionAt: Int) -> NSEdgeInsets](./nscollectionviewdelegateflowlayout/collectionview%28_,layout,insetforsectionat%29.md)
   Asks the delegate for the margins to apply to content in the specified section.
-- [func collectionView(NSCollectionView, layout: NSCollectionViewLayout, minimumLineSpacingForSectionAt: Int) -> CGFloat](nscollectionviewdelegateflowlayout/collectionview(_:layout:minimumlinespacingforsectionat:).md)
+- [func collectionView(NSCollectionView, layout: NSCollectionViewLayout, minimumLineSpacingForSectionAt: Int) -> CGFloat](./nscollectionviewdelegateflowlayout/collectionview%28_,layout,minimumlinespacingforsectionat%29.md)
   Asks the delegate for the spacing between successive rows or columns of a section.
-- [func collectionView(NSCollectionView, layout: NSCollectionViewLayout, minimumInteritemSpacingForSectionAt: Int) -> CGFloat](nscollectionviewdelegateflowlayout/collectionview(_:layout:minimuminteritemspacingforsectionat:).md)
+- [func collectionView(NSCollectionView, layout: NSCollectionViewLayout, minimumInteritemSpacingForSectionAt: Int) -> CGFloat](./nscollectionviewdelegateflowlayout/collectionview%28_,layout,minimuminteritemspacingforsectionat%29.md)
   Asks the delegate for the spacing between successive items of a single row or column.
 ### Getting the Header and Footer Sizes
-- [func collectionView(NSCollectionView, layout: NSCollectionViewLayout, referenceSizeForHeaderInSection: Int) -> NSSize](nscollectionviewdelegateflowlayout/collectionview(_:layout:referencesizeforheaderinsection:).md)
+- [func collectionView(NSCollectionView, layout: NSCollectionViewLayout, referenceSizeForHeaderInSection: Int) -> NSSize](./nscollectionviewdelegateflowlayout/collectionview%28_,layout,referencesizeforheaderinsection%29.md)
   Asks the delegate for the size of the header view in the specified section.
-- [func collectionView(NSCollectionView, layout: NSCollectionViewLayout, referenceSizeForFooterInSection: Int) -> NSSize](nscollectionviewdelegateflowlayout/collectionview(_:layout:referencesizeforfooterinsection:).md)
+- [func collectionView(NSCollectionView, layout: NSCollectionViewLayout, referenceSizeForFooterInSection: Int) -> NSSize](./nscollectionviewdelegateflowlayout/collectionview%28_,layout,referencesizeforfooterinsection%29.md)
   Asks the delegate for the size of the footer view in the specified section.
 
 ## Relationships
 
 ### Inherits From
-- [NSCollectionViewDelegate](nscollectionviewdelegate.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSCollectionViewDelegate](./nscollectionviewdelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Implementing modern collection views](../uikit/implementing-modern-collection-views.md)
+### Layouts
+- [Implementing modern collection views](../UIKit/implementing-modern-collection-views.md)
   Bring compositional layouts to your app and simplify updating your user interface with diffable data sources.
-- [class NSCollectionViewFlowLayout](nscollectionviewflowlayout.md)
+- [class NSCollectionViewFlowLayout](./nscollectionviewflowlayout.md)
   A layout that organizes items into a flexible and configurable arrangement.
-- [class NSCollectionViewGridLayout](nscollectionviewgridlayout.md)
+- [class NSCollectionViewGridLayout](./nscollectionviewgridlayout.md)
   A layout that displays a single section of items in a row and column grid.
-- [class NSCollectionViewTransitionLayout](nscollectionviewtransitionlayout.md)
+- [class NSCollectionViewTransitionLayout](./nscollectionviewtransitionlayout.md)
   An object that implements custom behaviors when changing from one layout to another in a collection view.
-- [class NSCollectionViewLayoutAttributes](nscollectionviewlayoutattributes.md)
+- [class NSCollectionViewLayoutAttributes](./nscollectionviewlayoutattributes.md)
   An object that contains layout-related attributes for an element in a collection view.
-- [class NSCollectionViewLayout](nscollectionviewlayout.md)
+- [class NSCollectionViewLayout](./nscollectionviewlayout.md)
   An abstract base class that you subclass and use to generate layout information for a collection view.
-- [class NSCollectionViewCompositionalLayout](nscollectionviewcompositionallayout.md)
+- [class NSCollectionViewCompositionalLayout](./nscollectionviewcompositionallayout.md)
   A layout object that lets you combine items in highly adaptive and flexible visual arrangements.
-- [class NSCollectionViewCompositionalLayoutConfiguration](nscollectionviewcompositionallayoutconfiguration.md)
+- [class NSCollectionViewCompositionalLayoutConfiguration](./nscollectionviewcompositionallayoutconfiguration.md)
   An object that defines scroll direction, section spacing, and headers or footers for the layout.
-- [typealias NSCollectionViewCompositionalLayoutSectionProvider](nscollectionviewcompositionallayoutsectionprovider.md)
+- [typealias NSCollectionViewCompositionalLayoutSectionProvider](./nscollectionviewcompositionallayoutsectionprovider.md)
   A closure that creates and returns each of the layout’s sections.
-- [enum NSCollectionLayoutSectionOrthogonalScrollingBehavior](nscollectionlayoutsectionorthogonalscrollingbehavior.md)
+- [enum NSCollectionLayoutSectionOrthogonalScrollingBehavior](./nscollectionlayoutsectionorthogonalscrollingbehavior.md)
   The scrolling behavior of the layout’s sections in relation to the main layout axis.
 
 

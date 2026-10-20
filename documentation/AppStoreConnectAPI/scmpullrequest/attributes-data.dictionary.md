@@ -1,7 +1,8 @@
 # ScmPullRequest.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe a Pull Requests resource.
 
@@ -10,7 +11,7 @@ The attributes that describe a Pull Requests resource.
 
 ## Declaration
 
-```swift
+```
 object ScmPullRequest.Attributes
 ```
 
@@ -30,7 +31,8 @@ object ScmPullRequest.Attributes
 
 ## See Also
 
-- [object ScmPullRequest.Relationships](scmpullrequest/relationships-data.dictionary.md)
+### Objects
+- [object ScmPullRequest.Relationships](./relationships-data.dictionary.md)
   The relationships of the Pull Requests resource you included in the request and those on which you can operate.
 
 

@@ -1,7 +1,8 @@
 # MediaDevice.DeviceType.phone
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A phone.
 

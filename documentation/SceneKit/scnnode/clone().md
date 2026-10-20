@@ -1,18 +1,19 @@
 # clone()
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a copy of the node and its children.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates a copy of the node and its children.
 func clone() -> Self
 ```
 
+```objc
+- (instancetype) clone;
+```
+
 #### Discussion
 
-This method recursively copies the node and its child nodes. For a nonrecursive copy, use the inherited [`copy()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/copy()) method, which creates a copy of the node without any child nodes.
+This method recursively copies the node and its child nodes. For a nonrecursive copy, use the inherited [`copy()`](../../ObjectiveC/nsobject-swift.class/copy%28%29.md) method, which creates a copy of the node without any child nodes.
 
 Cloning or copying a node creates a duplicate of the node object, but not the geometries, lights, cameras, and other SceneKit objects attached to it—instead, each copied node shares references to these objects.
 
@@ -41,7 +46,8 @@ Multiple copies of an SCNGeometry object efficiently share the same vertex data,
 
 ## See Also
 
-- [func flattenedClone() -> Self](scnnode/flattenedclone.md)
+### Copying a Node
+- [func flattenedClone() -> Self](./flattenedclone%28%29.md)
   Creates an optimized copy of the node and its children.
 
 

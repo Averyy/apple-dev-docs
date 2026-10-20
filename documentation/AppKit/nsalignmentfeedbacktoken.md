@@ -1,11 +1,12 @@
 # NSAlignmentFeedbackToken
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,18 +14,23 @@
 protocol NSAlignmentFeedbackToken : NSObjectProtocol
 ```
 
+```objc
+@protocol NSAlignmentFeedbackToken <NSObject>
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSHapticFeedbackManager](nshapticfeedbackmanager.md)
+### Haptics
+- [class NSHapticFeedbackManager](./nshapticfeedbackmanager.md)
   An object that provides access to the haptic feedback management attributes on a system with a Force Touch trackpad.
-- [protocol NSHapticFeedbackPerformer](nshapticfeedbackperformer.md)
+- [protocol NSHapticFeedbackPerformer](./nshapticfeedbackperformer.md)
   A set of methods and constants that a haptic feedback performer implements.
-- [class NSAlignmentFeedbackFilter](nsalignmentfeedbackfilter.md)
+- [class NSAlignmentFeedbackFilter](./nsalignmentfeedbackfilter.md)
   An object that can filter the movement of an object and provides haptic feedback when alignment occurs.
 
 

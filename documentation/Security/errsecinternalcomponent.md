@@ -1,7 +1,8 @@
 # errSecInternalComponent
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An internal component experienced an error.
 
@@ -18,6 +19,10 @@ An internal component experienced an error.
 
 ```swift
 var errSecInternalComponent: OSStatus { get }
+```
+
+```c
+errSecInternalComponent
 ```
 
 

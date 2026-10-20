@@ -1,7 +1,8 @@
 # simulateFocusUpdateRequest(from:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Simulates a focus update request from the specified environment.
 
@@ -18,13 +19,17 @@ Simulates a focus update request from the specified environment.
 class func simulateFocusUpdateRequest(from environment: any UIFocusEnvironment) -> any UIFocusDebuggerOutput
 ```
 
+```objc
++ (id<UIFocusDebuggerOutput>) simulateFocusUpdateRequestFromEnvironment:(id<UIFocusEnvironment>) environment;
+```
+
 #### Return Value
 
-The [`UIFocusDebuggerOutput`](uifocusdebuggeroutput.md) object the focus debugger uses to output the diagnostic information to the debugger console.
+The [`UIFocusDebuggerOutput`](../uifocusdebuggeroutput.md) object the focus debugger uses to output the diagnostic information to the debugger console.
 
 #### Discussion
 
-Call this method from the `lldb` debugger using the following command. In the example, `obj` corresponds to an object that adopts the [`UIFocusEnvironment`](uifocusenvironment.md) protocol.
+Call this method from the `lldb` debugger using the following command. In the example, `obj` corresponds to an object that adopts the [`UIFocusEnvironment`](../uifocusenvironment.md) protocol.
 
 **Swift**:
 
@@ -42,19 +47,20 @@ The method simulates a focus update request, outlining each step of the process 
 
 ## Parameters
 
-- `environment`: The object you want to generate a request for. Specify the focus system, view, view controller, or window whose state you want. You can also specify any other object that adopts the [`UIFocusEnvironment`](uifocusenvironment.md) protocol.
+- `environment`: The object you want to generate a request for. Specify the focus system, view, view controller, or window whose state you want. You can also specify any other object that adopts the [`UIFocusEnvironment`](../uifocusenvironment.md) protocol.
 
 ## See Also
 
-- [class func status() -> any UIFocusDebuggerOutput](uifocusdebugger/status.md)
+### Getting focus information
+- [class func status() -> any UIFocusDebuggerOutput](./status%28%29.md)
   Returns the state of the focus system, including information about the currently focused item.
-- [class func checkFocusability(for: any UIFocusItem) -> any UIFocusDebuggerOutput](uifocusdebugger/checkfocusability(for:).md)
+- [class func checkFocusability(for: any UIFocusItem) -> any UIFocusDebuggerOutput](./checkfocusability%28for%29.md)
   Returns information about whether the item can become focused, including any known issues that would prevent the item from becoming focused.
-- [class func focusGroups(for: any UIFocusEnvironment) -> any UIFocusDebuggerOutput](uifocusdebugger/focusgroups(for:).md)
+- [class func focusGroups(for: any UIFocusEnvironment) -> any UIFocusDebuggerOutput](./focusgroups%28for%29.md)
   Returns the focus group hierarchy for the specified environment object.
-- [class func preferredFocusEnvironments(for: any UIFocusEnvironment) -> any UIFocusDebuggerOutput](uifocusdebugger/preferredfocusenvironments(for:).md)
+- [class func preferredFocusEnvironments(for: any UIFocusEnvironment) -> any UIFocusDebuggerOutput](./preferredfocusenvironments%28for%29.md)
   Returns the hierarchy of preferred focus environments for the specified environment object.
-- [protocol UIFocusDebuggerOutput](uifocusdebuggeroutput.md)
+- [protocol UIFocusDebuggerOutput](../uifocusdebuggeroutput.md)
   An interface for specifying output from a focus debugger object.
 
 

@@ -1,7 +1,8 @@
 # attrAppleExpirationTime
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Include the expiration time.
 
@@ -13,6 +14,10 @@ Include the expiration time.
 
 ```swift
 static var attrAppleExpirationTime: CMSSignedAttributes { get }
+```
+
+```c
+kCMSAttrAppleExpirationTime
 ```
 
 

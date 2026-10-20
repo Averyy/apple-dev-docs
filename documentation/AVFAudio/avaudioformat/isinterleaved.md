@@ -1,7 +1,8 @@
 # isInterleaved
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the samples mix into one stream.
 
@@ -20,21 +21,26 @@ A Boolean value that indicates whether the samples mix into one stream.
 var isInterleaved: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isInterleaved) BOOL interleaved;
+```
+
 #### Discussion
 
 This value is only valid for PCM formats.
 
 ## See Also
 
-- [var isStandard: Bool](avaudioformat/isstandard.md)
+### Determining the audio format
+- [var isStandard: Bool](./isstandard.md)
   A Boolean value that indicates whether the format is in a deinterleaved native-endian float state.
-- [var commonFormat: AVAudioCommonFormat](avaudioformat/commonformat.md)
+- [var commonFormat: AVAudioCommonFormat](./commonformat.md)
   The common format identifier instance.
-- [enum AVAudioCommonFormat](avaudiocommonformat.md)
+- [enum AVAudioCommonFormat](../avaudiocommonformat.md)
   The format options that describe common audio formats.
-- [var settings: [String : Any]](avaudioformat/settings.md)
+- [var settings: [String : Any]](./settings.md)
   A dictionary that represents the format as a dictionary using audio setting keys.
-- [var magicCookie: Data?](avaudioformat/magiccookie.md)
+- [var magicCookie: Data?](./magiccookie.md)
   An object that contains metadata that encoders and decoders require.
 
 

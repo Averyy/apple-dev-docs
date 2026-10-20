@@ -1,7 +1,8 @@
 # availableKeys
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The available point keys in the observation.
 
@@ -19,13 +20,18 @@ The available point keys in the observation.
 var availableKeys: [VNRecognizedPointKey] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * availableKeys;
+```
+
 ## See Also
 
-- [var availableGroupKeys: [VNRecognizedPointGroupKey]](vnrecognizedpoints3dobservation/availablegroupkeys.md)
+### Inspecting the Observation
+- [var availableGroupKeys: [VNRecognizedPointGroupKey]](./availablegroupkeys.md)
   The available point group keys in the observation.
-- [func recognizedPoint(forKey: VNRecognizedPointKey) throws -> VNRecognizedPoint3D](vnrecognizedpoints3dobservation/recognizedpoint(forkey:).md)
+- [func recognizedPoint(forKey: VNRecognizedPointKey) throws -> VNRecognizedPoint3D](./recognizedpoint%28forkey%29.md)
   Returns a point for a key you specify.
-- [func recognizedPoints(forGroupKey: VNRecognizedPointGroupKey) throws -> [VNRecognizedPointKey : VNRecognizedPoint3D]](vnrecognizedpoints3dobservation/recognizedpoints(forgroupkey:).md)
+- [func recognizedPoints(forGroupKey: VNRecognizedPointGroupKey) throws -> [VNRecognizedPointKey : VNRecognizedPoint3D]](./recognizedpoints%28forgroupkey%29.md)
   Returns a point for a group key you specify.
 
 

@@ -1,7 +1,8 @@
 # setBadgeText(_:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the badge text for the toolbar item.
 
@@ -14,9 +15,13 @@ Sets the badge text for the toolbar item.
 func setBadgeText(_ badgeText: String?)
 ```
 
+```objc
+- (void) setBadgeText:(NSString *) badgeText;
+```
+
 ## Mentions
 
-- [Adjusting settings for a toolbar item](adjusting-settings-for-a-toolbar-item.md)
+- [Adjusting settings for a toolbar item](../adjusting-settings-for-a-toolbar-item.md)
 
 ## Parameters
 
@@ -24,13 +29,14 @@ func setBadgeText(_ badgeText: String?)
 
 ## See Also
 
-- [func setEnabled(Bool, withBadgeText: String?)](sfsafaritoolbaritem/setenabled(_:withbadgetext:).md)
+### Controlling Toolbar Items
+- [func setEnabled(Bool, withBadgeText: String?)](./setenabled%28_,withbadgetext%29.md)
   Sets the enabled state and the badge text for the toolbar item.
-- [func setEnabled(Bool)](sfsafaritoolbaritem/setenabled(_:).md)
+- [func setEnabled(Bool)](./setenabled%28_%29.md)
   Sets whether the toolbar item is enabled.
-- [func setImage(NSImage?)](sfsafaritoolbaritem/setimage(_:).md)
+- [func setImage(NSImage?)](./setimage%28_%29.md)
   Sets the image displayed in the toolbar button.
-- [func setLabel(String?)](sfsafaritoolbaritem/setlabel(_:).md)
+- [func setLabel(String?)](./setlabel%28_%29.md)
 
 
 ---

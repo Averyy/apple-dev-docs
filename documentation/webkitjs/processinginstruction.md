@@ -1,7 +1,8 @@
 # ProcessingInstruction
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface ProcessingInstruction
 ```
 
 ## Topics
 
 ### Instance Properties
-- [sheet](processinginstruction/1632442-sheet.md)
-- [target](processinginstruction/1631921-target.md)
+- [sheet](./processinginstruction/api-1632442-sheet.md)
+- [target](./processinginstruction/api-1631921-target.md)
 
 ## Relationships
 

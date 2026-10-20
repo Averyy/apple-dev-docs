@@ -1,7 +1,8 @@
 # isLocked
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the storage card in the camera is locked.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether the storage card in the camera is locked.
 
 ```swift
 var isLocked: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isLocked) BOOL locked;
 ```
 
 

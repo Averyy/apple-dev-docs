@@ -1,7 +1,8 @@
 # MTLFXSpatialScalerColorProcessingMode
 
 **Framework**: MetalFX  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The color space modes for the input and output textures you use with a spatial scaling effect instance.
 
@@ -19,33 +20,38 @@ The color space modes for the input and output textures you use with a spatial s
 enum MTLFXSpatialScalerColorProcessingMode
 ```
 
+```c
+enum MTLFXSpatialScalerColorProcessingMode : NSInteger;
+```
+
 ## Topics
 
 ### Color space modes
-- [MTLFXSpatialScalerColorProcessingMode.linear](mtlfxspatialscalercolorprocessingmode/linear.md)
+- [MTLFXSpatialScalerColorProcessingMode.linear](./mtlfxspatialscalercolorprocessingmode/linear.md)
   Indicates your input and output textures use a linear color space.
-- [MTLFXSpatialScalerColorProcessingMode.perceptual](mtlfxspatialscalercolorprocessingmode/perceptual.md)
+- [MTLFXSpatialScalerColorProcessingMode.perceptual](./mtlfxspatialscalercolorprocessingmode/perceptual.md)
   Indicates your input and output textures use a perceptual color space.
-- [MTLFXSpatialScalerColorProcessingMode.hdr](mtlfxspatialscalercolorprocessingmode/hdr.md)
+- [MTLFXSpatialScalerColorProcessingMode.hdr](./mtlfxspatialscalercolorprocessingmode/hdr.md)
   Indicates your input and output textures use a high dynamic range color space.
 ### Initializers
-- [init?(rawValue: Int)](mtlfxspatialscalercolorprocessingmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtlfxspatialscalercolorprocessingmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol MTLFXSpatialScaler](mtlfxspatialscaler.md)
+### Spatial scaling
+- [protocol MTLFXSpatialScaler](./mtlfxspatialscaler.md)
   An upscaling effect that generates a higher resolution texture in a render pass by spatially analyzing an input texture.
-- [class MTLFXSpatialScalerDescriptor](mtlfxspatialscalerdescriptor.md)
+- [class MTLFXSpatialScalerDescriptor](./mtlfxspatialscalerdescriptor.md)
   A set of properties that configure a spatial scaling effect, and a factory method that creates the effect.
 
 

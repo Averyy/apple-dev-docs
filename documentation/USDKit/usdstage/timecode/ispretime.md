@@ -1,7 +1,8 @@
 # isPreTime
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this time code represents the limit of a value approaching from the left of a discontinuity.
 

@@ -1,17 +1,22 @@
 # isModalPanel
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the window is a modal panel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var isModalPanel: Bool { get }
+```
+
+```objc
+@property (readonly, getter=isModalPanel) BOOL modalPanel;
 ```
 
 #### Discussion
@@ -20,19 +25,20 @@ This property is key-value coding compliant.
 
 ## See Also
 
-- [var hasCloseBox: Bool](nswindow/hasclosebox.md)
+### Getting Information About Scripting Attributes
+- [var hasCloseBox: Bool](./hasclosebox.md)
   A Boolean value that indicates if the window has a close box.
-- [var hasTitleBar: Bool](nswindow/hastitlebar.md)
+- [var hasTitleBar: Bool](./hastitlebar.md)
   A Boolean value that indicates if the window has a title bar.
-- [var isFloatingPanel: Bool](nswindow/isfloatingpanel.md)
+- [var isFloatingPanel: Bool](./isfloatingpanel.md)
   A Boolean value that indicates whether the window is a floating panel.
-- [var isZoomable: Bool](nswindow/iszoomable.md)
+- [var isZoomable: Bool](./iszoomable.md)
   A Boolean value that indicates whether the window allows zooming.
-- [var isResizable: Bool](nswindow/isresizable.md)
+- [var isResizable: Bool](./isresizable.md)
   A Boolean value that indicates if the user can resize the window.
-- [var isMiniaturizable: Bool](nswindow/isminiaturizable.md)
+- [var isMiniaturizable: Bool](./isminiaturizable.md)
   A Boolean value that indicates whether the window can minimize.
-- [var orderedIndex: Int](nswindow/orderedindex.md)
+- [var orderedIndex: Int](./orderedindex.md)
   The zero-based position of the window, based on its order from front to back among all visible application windows.
 
 

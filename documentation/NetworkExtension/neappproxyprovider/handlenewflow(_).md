@@ -1,7 +1,8 @@
 # handleNewFlow(_:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handle a new flow of network data.
 
@@ -18,13 +19,17 @@ Handle a new flow of network data.
 func handleNewFlow(_ flow: NEAppProxyFlow) -> Bool
 ```
 
+```objc
+- (BOOL) handleNewFlow:(NEAppProxyFlow *) flow;
+```
+
 ## Mentions
 
-- [Handling Flow Copying](handling-flow-copying.md)
+- [Handling Flow Copying](../handling-flow-copying.md)
 
 #### Return Value
 
-Return [`true`](https://developer.apple.com/documentation/swift/true) to indicate that the App Proxy Provider will handle the flow. Return [`false`](https://developer.apple.com/documentation/swift/false) to indicate that the flow should be closed.
+Return [`true`](../../Swift/true.md) to indicate that the App Proxy Provider will handle the flow. Return [`false`](../../Swift/false.md) to indicate that the flow should be closed.
 
 #### Discussion
 
@@ -36,11 +41,12 @@ New flows are initially in an unopened state. The App Proxy Provider should take
 
 ## Parameters
 
-- `flow`: The new [`NEAppProxyFlow`](neappproxyflow.md) object. If the App Proxy Provider decides to proxy the flow, it should create a reference to the flow in its data structures.
+- `flow`: The new [`NEAppProxyFlow`](../neappproxyflow.md) object. If the App Proxy Provider decides to proxy the flow, it should create a reference to the flow in its data structures.
 
 ## See Also
 
-- [func handleNewUDPFlow(NEAppProxyUDPFlow, initialRemoteEndpoint: NWEndpoint) -> Bool](neappproxyprovider/handlenewudpflow(_:initialremoteendpoint:).md)
+### Handling proxied flows
+- [func handleNewUDPFlow(NEAppProxyUDPFlow, initialRemoteEndpoint: NWEndpoint) -> Bool](./handlenewudpflow%28_,initialremoteendpoint%29.md)
   Handle a new UDP flow of network data.
 
 

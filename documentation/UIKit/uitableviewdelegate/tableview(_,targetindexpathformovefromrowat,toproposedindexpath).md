@@ -1,7 +1,8 @@
 # tableView(_:targetIndexPathForMoveFromRowAt:toProposedIndexPath:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to return a new index path to retarget a proposed move of a row.
 
@@ -16,6 +17,10 @@ Asks the delegate to return a new index path to retarget a proposed move of a ro
 
 ```swift
 optional func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath
+```
+
+```objc
+- (NSIndexPath *) tableView:(UITableView *) tableView targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *) sourceIndexPath toProposedIndexPath:(NSIndexPath *) proposedDestinationIndexPath;
 ```
 
 #### Return Value

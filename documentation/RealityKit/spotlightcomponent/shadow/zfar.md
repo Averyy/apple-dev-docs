@@ -1,7 +1,8 @@
 # zFar
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The orthogonal plane of the shadow frustum that’s furthest from the spotlight.
 
@@ -23,15 +24,16 @@ var zFar: SpotLightComponent.Shadow.ShadowClippingPlane { get set }
 
 The `zFar` is the maximum distance between the light and a visible surface for casting shadows.
 
-The spotlight applies the value from [`attenuationRadius`](spotlightcomponent/attenuationradius.md), when you set this property to [`SpotLightComponent.Shadow.ShadowClippingPlane.automatic`](spotlightcomponent/shadow/shadowclippingplane/automatic.md), which is its default value. Setting this value to [`SpotLightComponent.Shadow.ShadowClippingPlane.fixed(_:)`](spotlightcomponent/shadow/shadowclippingplane/fixed(_:).md) is equivalent to assigning it to `min(zFar, attenuationRadius)`.
+The spotlight applies the value from [`attenuationRadius`](../attenuationradius.md), when you set this property to [`SpotLightComponent.Shadow.ShadowClippingPlane.automatic`](./shadowclippingplane/automatic.md), which is its default value. Setting this value to [`SpotLightComponent.Shadow.ShadowClippingPlane.fixed(_:)`](./shadowclippingplane/fixed%28_%29.md) is equivalent to assigning it to `min(zFar, attenuationRadius)`.
 
 ## See Also
 
-- [var depthBias: Float](spotlightcomponent/shadow/depthbias.md)
+### Configuring the shadow
+- [var depthBias: Float](./depthbias.md)
   A constant value that RealityKit applies as a bias to its shadow calculations.
-- [var zNear: SpotLightComponent.Shadow.ShadowClippingPlane](spotlightcomponent/shadow/znear.md)
+- [var zNear: SpotLightComponent.Shadow.ShadowClippingPlane](./znear.md)
   The near-plane of a shadow frustum.
-- [var cullModeOverride: SpotLightComponent.Shadow.ShadowMapCullMode?](spotlightcomponent/shadow/cullmodeoverride.md)
+- [var cullModeOverride: SpotLightComponent.Shadow.ShadowMapCullMode?](./cullmodeoverride.md)
   The light’s culling mode for shadow map rendering.
 
 

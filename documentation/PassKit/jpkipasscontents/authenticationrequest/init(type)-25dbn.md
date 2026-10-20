@@ -1,7 +1,8 @@
 # init(type:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the user authentication request options for the signing identity type.
 
@@ -15,9 +16,12 @@ Initializes the user authentication request options for the signing identity typ
 init(type: JPKIPassContents.SigningIdentity.AuthenticationType)
 ```
 
+Available when `IdentityType` is `JPKIPassContents.SigningIdentity`.
+
 ## See Also
 
-- [init(type: JPKIPassContents.UserIdentity.AuthenticationType)](jpkipasscontents/authenticationrequest/init(type:)-hz9q.md)
+### Creating authentication request options
+- [init(type: JPKIPassContents.UserIdentity.AuthenticationType)](./init%28type%29-hz9q.md)
   Initializes the user authentication request options for the user identity type.
 
 

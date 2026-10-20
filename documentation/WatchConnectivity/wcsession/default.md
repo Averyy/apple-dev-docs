@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Watch Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the singleton session object for the current device.
 
@@ -18,17 +19,22 @@ Returns the singleton session object for the current device.
 class var `default`: WCSession { get }
 ```
 
+```objc
+@property (class, readonly) WCSession * defaultSession;
+```
+
 #### Return Value
 
 The session object for the current device.
 
 #### Discussion
 
-Call the [`isSupported()`](wcsession/issupported().md) method before calling this method to make sure you can use session objects for communication.
+Call the [`isSupported()`](./issupported%28%29.md) method before calling this method to make sure you can use session objects for communication.
 
 ## See Also
 
-- [class func isSupported() -> Bool](wcsession/issupported.md)
+### Getting the Default Session
+- [class func isSupported() -> Bool](./issupported%28%29.md)
   Returns a Boolean value indicating whether the current iOS device is able to use a session object.
 
 

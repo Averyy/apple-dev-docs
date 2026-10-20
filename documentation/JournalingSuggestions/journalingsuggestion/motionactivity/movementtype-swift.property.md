@@ -1,7 +1,8 @@
 # movementType
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The specific type of movement associated with the activity.
 
@@ -16,9 +17,10 @@ var movementType: JournalingSuggestion.MotionActivity.MovementType?
 
 ## See Also
 
-- [var steps: Int](journalingsuggestion/motionactivity/steps.md)
+### Inspecting motion details
+- [var steps: Int](./steps.md)
   The number of steps a person takes.
-- [JournalingSuggestion.MotionActivity.MovementType](journalingsuggestion/motionactivity/movementtype-swift.struct.md)
+- [JournalingSuggestion.MotionActivity.MovementType](./movementtype-swift.struct.md)
   The movement activity type that the phone records when it detects motion.
 
 

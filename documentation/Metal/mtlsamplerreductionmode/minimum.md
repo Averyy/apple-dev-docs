@@ -1,7 +1,8 @@
 # MTLSamplerReductionMode.minimum
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reduction mode that finds the minimum contributing sample value by separately evaluating each channel.
 
@@ -17,6 +18,10 @@ A reduction mode that finds the minimum contributing sample value by separately 
 
 ```swift
 case minimum
+```
+
+```c
+MTLSamplerReductionModeMinimum
 ```
 
 

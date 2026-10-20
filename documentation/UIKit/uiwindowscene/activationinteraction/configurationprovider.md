@@ -1,7 +1,8 @@
 # UIWindowScene.ActivationInteraction.ConfigurationProvider
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type alias defining a closure that provides an activation configuration for the activation interaction.
 
@@ -17,18 +18,23 @@ A type alias defining a closure that provides an activation configuration for th
 typealias ConfigurationProvider = (UIWindowScene.ActivationInteraction, CGPoint) -> UIWindowScene.ActivationConfiguration?
 ```
 
+```c
+typedef UIWindowSceneActivationConfiguration *(^)(UIWindowSceneActivationInteraction *, struct CGPoint) UIWindowSceneActivationInteractionConfigurationProvider;
+```
+
 #### Return Value
 
 An activation configuration you can use to request a window scene.
 
 ## Parameters
 
-- `interaction`: The [`UIWindowScene.ActivationInteraction`](uiwindowscene/activationinteraction.md) requesting a configuration.
+- `interaction`: The [`UIWindowScene.ActivationInteraction`](../activationinteraction.md) requesting a configuration.
 - `location`: The location in the view of the interaction requesting a configuration.
 
 ## See Also
 
-- [init(UIWindowScene.ActivationInteraction.ConfigurationProvider, errorHandler: (any Error) -> Void)](uiwindowscene/activationinteraction/init(_:errorhandler:).md)
+### Creating an activation interaction
+- [init(UIWindowScene.ActivationInteraction.ConfigurationProvider, errorHandler: (any Error) -> Void)](./init%28_,errorhandler%29.md)
   Creates an activation interaction.
 
 

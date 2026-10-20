@@ -1,7 +1,8 @@
 # NSMutableIndexSet
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mutable collection of unique integer values that represent indexes in another collection.
 
@@ -20,58 +21,62 @@ A mutable collection of unique integer values that represent indexes in another 
 class NSMutableIndexSet
 ```
 
+```objc
+@interface NSMutableIndexSet : NSIndexSet
+```
+
 #### Overview
 
-In Swift, this type bridges to [`IndexSet`](indexset.md); use [`NSMutableIndexSet`](nsmutableindexset.md) when you need reference semantics or other Foundation-specific behavior.
+In Swift, this type bridges to [`IndexSet`](./indexset.md); use [`NSMutableIndexSet`](./nsmutableindexset.md) when you need reference semantics or other Foundation-specific behavior.
 
-The [`NSMutableIndexSet`](nsmutableindexset.md) class represents a mutable collection of unique unsigned integers, known as *indexes* because of the way they are used. This collection is referred to as a *mutable index set*. The inclusive range of valid indexes is `0...(NSNotFound - 1)`; trying to use indexes outside this range is invalid.
+The [`NSMutableIndexSet`](./nsmutableindexset.md) class represents a mutable collection of unique unsigned integers, known as *indexes* because of the way they are used. This collection is referred to as a *mutable index set*. The inclusive range of valid indexes is `0...(NSNotFound - 1)`; trying to use indexes outside this range is invalid.
 
 The values in a mutable index set are always sorted, so the order in which values are added is irrelevant.
 
-Do not subclass the [`NSMutableIndexSet`](nsmutableindexset.md) class.
+Do not subclass the [`NSMutableIndexSet`](./nsmutableindexset.md) class.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`IndexSet`](indexset.md) structure, which bridges to the [`NSMutableIndexSet`](nsmutableindexset.md) class and its immutable superclass, [`NSIndexSet`](nsindexset.md). For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/swift/working-with-foundation-types).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`IndexSet`](./indexset.md) structure, which bridges to the [`NSMutableIndexSet`](./nsmutableindexset.md) class and its immutable superclass, [`NSIndexSet`](./nsindexset.md). For more information about value types, see [Working with Foundation Types](../Swift/working-with-foundation-types.md).
 
 ## Topics
 
 ### Adding Indexes
-- [func add(Int)](nsmutableindexset/add(_:)-6dtkj.md)
+- [func add(Int)](./nsmutableindexset/add%28_%29-6dtkj.md)
   Adds an index  to the receiver.
-- [func add(IndexSet)](nsmutableindexset/add(_:)-6zmti.md)
+- [func add(IndexSet)](./nsmutableindexset/add%28_%29-6zmti.md)
   Adds the indexes in an index set to the receiver.
-- [func add(in: NSRange)](nsmutableindexset/add(in:).md)
+- [func add(in: NSRange)](./nsmutableindexset/add%28in%29.md)
   Adds the indexes in an index range to the receiver.
 ### Removing Indexes
-- [func remove(Int)](nsmutableindexset/remove(_:)-5li0r.md)
+- [func remove(Int)](./nsmutableindexset/remove%28_%29-5li0r.md)
   Removes an index from the receiver.
-- [func remove(IndexSet)](nsmutableindexset/remove(_:)-196u2.md)
+- [func remove(IndexSet)](./nsmutableindexset/remove%28_%29-196u2.md)
   Removes the indexes in an index set from the receiver.
-- [func removeAllIndexes()](nsmutableindexset/removeallindexes.md)
+- [func removeAllIndexes()](./nsmutableindexset/removeallindexes%28%29.md)
   Removes the receiver’s indexes.
-- [func remove(in: NSRange)](nsmutableindexset/remove(in:).md)
+- [func remove(in: NSRange)](./nsmutableindexset/remove%28in%29.md)
   Removes the indexes in an index range from the receiver.
 ### Shifting Index Groups
-- [func shiftIndexesStarting(at: Int, by: Int)](nsmutableindexset/shiftindexesstarting(at:by:).md)
+- [func shiftIndexesStarting(at: Int, by: Int)](./nsmutableindexset/shiftindexesstarting%28at,by%29.md)
   Shifts a group of indexes to the left or the right within the receiver.
 
 ## Relationships
 
 ### Inherits From
-- [NSIndexSet](nsindexset.md)
+- [NSIndexSet](./nsindexset.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSMutableCopying](./nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # errSecCertificateRevoked
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate was revoked.
 
@@ -20,9 +21,13 @@ The certificate was revoked.
 var errSecCertificateRevoked: OSStatus { get }
 ```
 
+```c
+errSecCertificateRevoked
+```
+
 ## Mentions
 
-- [Discovering Why a Trust Evaluation Failed](discovering-why-a-trust-evaluation-failed.md)
+- [Discovering Why a Trust Evaluation Failed](./discovering-why-a-trust-evaluation-failed.md)
 
 
 ---

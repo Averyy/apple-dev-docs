@@ -1,7 +1,8 @@
 # fileHandle
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file handle assigned to this attachment.
 
@@ -12,6 +13,10 @@ The file handle assigned to this attachment.
 
 ```swift
 var fileHandle: FileHandle { get }
+```
+
+```objc
+@property (strong, readonly) NSFileHandle * fileHandle;
 ```
 
 

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string description of the MAC Address Hash, for debugging purposes.
 

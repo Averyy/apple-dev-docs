@@ -1,12 +1,13 @@
 # LAError.Code.watchNotAvailable
 
 **Framework**: Local Authentication  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An attempt to authenticate with Apple Watch failed.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 15.0 (renamed: LAError.companionNotAvailable)
 
 ## Declaration
 
@@ -14,22 +15,27 @@ An attempt to authenticate with Apple Watch failed.
 case watchNotAvailable
 ```
 
+```c
+LAErrorWatchNotAvailable
+```
+
 #### Discussion
 
-You receive this error when the system fails to locate a nearby, paired Apple Watch running watchOS 6 or later while trying to authenticate using one of the watch authentication policies like [`deviceOwnerAuthenticationWithWatch`](lapolicy/deviceownerauthenticationwithwatch.md).
+You receive this error when the system fails to locate a nearby, paired Apple Watch running watchOS 6 or later while trying to authenticate using one of the watch authentication policies like [`deviceOwnerAuthenticationWithWatch`](../../lapolicy/deviceownerauthenticationwithwatch.md).
 
 ## See Also
 
-- [LAError.Code.authenticationFailed](laerror-swift.struct/code/authenticationfailed.md)
+### Other errors
+- [LAError.Code.authenticationFailed](./authenticationfailed.md)
   The user failed to provide valid credentials.
-- [LAError.Code.invalidContext](laerror-swift.struct/code/invalidcontext.md)
+- [LAError.Code.invalidContext](./invalidcontext.md)
   The context was previously invalidated.
-- [LAError.Code.invalidDimensions](laerror-swift.struct/code/invaliddimensions.md)
-- [LAError.Code.notInteractive](laerror-swift.struct/code/notinteractive.md)
+- [LAError.Code.invalidDimensions](./invaliddimensions.md)
+- [LAError.Code.notInteractive](./notinteractive.md)
   Displaying the required authentication user interface is forbidden.
-- [LAError.Code.passcodeNotSet](laerror-swift.struct/code/passcodenotset.md)
+- [LAError.Code.passcodeNotSet](./passcodenotset.md)
   A passcode isn’t set on the device.
-- [LAError.Code.userFallback](laerror-swift.struct/code/userfallback.md)
+- [LAError.Code.userFallback](./userfallback.md)
   The user tapped the fallback button in the authentication dialog, but no fallback is available for the authentication policy.
 
 

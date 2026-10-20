@@ -1,7 +1,8 @@
 # knownHandles(in:)
 
 **Framework**: PermissionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks which handles in a given set are known to the system.
 
@@ -20,7 +21,7 @@ final func knownHandles(in handles: Set<CommunicationHandle>) async -> Set<Commu
 
 ## Mentions
 
-- [Creating a communication experience](creating-a-communication-experience.md)
+- [Creating a communication experience](../creating-a-communication-experience.md)
 
 #### Return Value
 
@@ -36,7 +37,8 @@ A subset of the given handles known to the system.
 
 ## See Also
 
-- [func isKnownHandle(CommunicationHandle) async -> Bool](communicationlimits/isknownhandle(_:).md)
+### Checking known handles
+- [func isKnownHandle(CommunicationHandle) async -> Bool](./isknownhandle%28_%29.md)
   A Boolean that checks if the system knows the given handle.
 
 

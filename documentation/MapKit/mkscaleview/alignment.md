@@ -1,7 +1,8 @@
 # MKScaleView.Alignment
 
 **Framework**: MapKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate how the framework should align measurements.
 
@@ -18,35 +19,40 @@ Constants that indicate how the framework should align measurements.
 enum Alignment
 ```
 
+```c
+enum MKScaleViewAlignment : NSInteger;
+```
+
 ## Topics
 
 ### Alignment options
-- [MKScaleView.Alignment.leading](mkscaleview/alignment/leading.md)
+- [MKScaleView.Alignment.leading](./alignment/leading.md)
   Scale measurements begin at the leading edge of the view.
-- [MKScaleView.Alignment.trailing](mkscaleview/alignment/trailing.md)
+- [MKScaleView.Alignment.trailing](./alignment/trailing.md)
   Scale measurements begin at the trailing edge of the view.
-- [MKScaleView.Alignment.center](mkscaleview/alignment/center.md)
+- [MKScaleView.Alignment.center](./alignment/center.md)
   Scale measurements appear horizontally centered within the view.
 ### Initializers
-- [init?(rawValue: Int)](mkscaleview/alignment/init(rawvalue:).md)
+- [init?(rawValue: Int)](./alignment/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var mapView: MKMapView?](mkscaleview/mapview.md)
+### Getting the scale view attributes
+- [var mapView: MKMapView?](./mapview.md)
   The map view that provides the scale information to the scale view.
-- [var scaleVisibility: MKFeatureVisibility](mkscaleview/scalevisibility.md)
+- [var scaleVisibility: MKFeatureVisibility](./scalevisibility.md)
   The visibility of the scale view.
-- [var legendAlignment: MKScaleView.Alignment](mkscaleview/legendalignment.md)
+- [var legendAlignment: MKScaleView.Alignment](./legendalignment.md)
   The alignment of the distance information in the scale view.
 
 

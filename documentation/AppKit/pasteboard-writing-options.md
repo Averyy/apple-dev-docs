@@ -1,18 +1,20 @@
 # Pasteboard Writing Options
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
-Constant to specify options for writing to a pasteboard, used by [`writingOptions(forType:pasteboard:)`](nspasteboardwriting/writingoptions(fortype:pasteboard:).md).
+Constant to specify options for writing to a pasteboard, used by [`writingOptions(forType:pasteboard:)`](./nspasteboardwriting/writingoptions%28fortype,pasteboard%29.md).
 
 ## Topics
 
 ### Constants
-- [static var promised: NSPasteboard.WritingOptions](nspasteboard/writingoptions/promised.md)
+- [static var promised: NSPasteboard.WritingOptions](./nspasteboard/writingoptions/promised.md)
   Data for a type with this option is promised, not immediately written.
 
 ## See Also
 
-- [NSPasteboard.WritingOptions](nspasteboard/writingoptions.md)
+### Constants
+- [NSPasteboard.WritingOptions](./nspasteboard/writingoptions.md)
   Type to specify options for writing to a pasteboard.
 
 

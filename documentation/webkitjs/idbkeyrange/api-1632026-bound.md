@@ -1,7 +1,8 @@
 # bound
 
 **Framework**: WebKit JS  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 static IDBKeyRange bound(
     any lower, 
     any upper, 

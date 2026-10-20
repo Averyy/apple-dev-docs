@@ -1,7 +1,8 @@
 # init(refreshRate:formatDescription:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a display criteria object with the specified refresh rate and format description.
 
@@ -13,6 +14,10 @@ Creates a display criteria object with the specified refresh rate and format des
 
 ```swift
 init(refreshRate: Float, formatDescription: CMFormatDescription)
+```
+
+```objc
+- (instancetype) initWithRefreshRate:(float) refreshRate formatDescription:(CMFormatDescriptionRef) formatDescription;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # ATSFontQueryMessageID
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,19 +14,25 @@
 struct ATSFontQueryMessageID
 ```
 
+```c
+typedef enum ATSFontQueryMessageID : unsigned int {
+    ...
+} ATSFontQueryMessageID;
+```
+
 ## Topics
 
 ### Initializers
-- [init(UInt32)](atsfontquerymessageid/1464198-init.md)
-- [init(rawValue: UInt32)](atsfontquerymessageid/1459713-init.md)
+- [init(UInt32)](./atsfontquerymessageid/api-1464198-init.md)
+- [init(rawValue: UInt32)](./atsfontquerymessageid/api-1459713-init.md)
 ### Instance Properties
-- [var rawValue: UInt32](atsfontquerymessageid/1461661-rawvalue.md)
+- [var rawValue: UInt32](./atsfontquerymessageid/api-1461661-rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 
 ---

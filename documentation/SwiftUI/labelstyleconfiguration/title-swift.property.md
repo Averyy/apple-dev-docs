@@ -1,7 +1,8 @@
 # title
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the labeled item.
 
@@ -22,7 +23,8 @@ var title: LabelStyleConfiguration.Title { get }
 
 ## See Also
 
-- [LabelStyleConfiguration.Title](labelstyleconfiguration/title-swift.struct.md)
+### Setting the title
+- [LabelStyleConfiguration.Title](./title-swift.struct.md)
   A type-erased title view of a label.
 
 

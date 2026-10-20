@@ -1,7 +1,8 @@
 # radioAccessTechnologyDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -13,6 +14,8 @@
 ```swift
 static var radioAccessTechnologyDidChange: NotificationCenter.BaseMessageIdentifier<CTTelephonyNetworkInfo.RadioAccessTechnologyDidChangeMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<CTTelephonyNetworkInfo.RadioAccessTechnologyDidChangeMessage>`.
 
 
 ---

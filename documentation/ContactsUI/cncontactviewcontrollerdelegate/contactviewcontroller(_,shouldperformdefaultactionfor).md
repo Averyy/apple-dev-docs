@@ -1,7 +1,8 @@
 # contactViewController(_:shouldPerformDefaultActionFor:)
 
 **Framework**: Contacts UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the user selects a property.
 
@@ -17,22 +18,27 @@ Called when the user selects a property.
 optional func contactViewController(_ viewController: CNContactViewController, shouldPerformDefaultActionFor property: CNContactProperty) -> Bool
 ```
 
+```objc
+- (BOOL) contactViewController:(CNContactViewController *) viewController shouldPerformDefaultActionForContactProperty:(CNContactProperty *) property;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to call the default action performed for the property, otherwise return [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) to call the default action performed for the property, otherwise return [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Implement this method to determine the resulting behavior when a property is selected. Return [`false`](https://developer.apple.com/documentation/swift/false) if you do not want anything to be done or if you are handling the actions yourself.
+Implement this method to determine the resulting behavior when a property is selected. Return [`false`](../../Swift/false.md) if you do not want anything to be done or if you are handling the actions yourself.
 
 ## Parameters
 
 - `viewController`: The view controller presenting the contact.
-- `property`: The property ([`CNContactProperty`](https://developer.apple.com/documentation/contacts/cncontactproperty)) selected by the user.
+- `property`: The property ([`CNContactProperty`](../../Contacts/cncontactproperty.md)) selected by the user.
 
 ## See Also
 
-- [func contactViewController(CNContactViewController, didCompleteWith: CNContact?)](cncontactviewcontrollerdelegate/contactviewcontroller(_:didcompletewith:).md)
+### Responding to User Events
+- [func contactViewController(CNContactViewController, didCompleteWith: CNContact?)](./contactviewcontroller%28_,didcompletewith%29.md)
   Called when the view has been presented.
 
 

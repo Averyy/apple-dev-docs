@@ -1,7 +1,8 @@
 # SLRequestMethod.DELETE
 
 **Framework**: Social  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Deletes the specified resource.
 
@@ -17,13 +18,18 @@ Deletes the specified resource.
 case DELETE
 ```
 
+```c
+SLRequestMethodDELETE
+```
+
 ## See Also
 
-- [SLRequestMethod.GET](slrequestmethod/get.md)
+### Constants
+- [SLRequestMethod.GET](./get.md)
   Requests information from the specified resource.
-- [SLRequestMethod.POST](slrequestmethod/post.md)
+- [SLRequestMethod.POST](./post.md)
   Submits data to be processed.
-- [SLRequestMethod.PUT](slrequestmethod/put.md)
+- [SLRequestMethod.PUT](./put.md)
   Uses a PUT request to submit the data.
 
 

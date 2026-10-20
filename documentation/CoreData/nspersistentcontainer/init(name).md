@@ -1,7 +1,8 @@
 # init(name:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a container with the specified name.
 
@@ -20,21 +21,26 @@ Creates a container with the specified name.
 convenience init(name: String)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name;
+```
+
 #### Return Value
 
 A persistent container initialized with the given name.
 
 #### Discussion
 
-By default, the provided name value is used to name the persistent store and is used to look up the name of the [`NSManagedObjectModel`](nsmanagedobjectmodel.md) object to be used with the [`NSPersistentContainer`](nspersistentcontainer.md) object.
+By default, the provided name value is used to name the persistent store and is used to look up the name of the [`NSManagedObjectModel`](../nsmanagedobjectmodel.md) object to be used with the [`NSPersistentContainer`](../nspersistentcontainer.md) object.
 
 ## Parameters
 
-- `name`: The name of the [`NSPersistentContainer`](nspersistentcontainer.md) object.
+- `name`: The name of the [`NSPersistentContainer`](../nspersistentcontainer.md) object.
 
 ## See Also
 
-- [init(name: String, managedObjectModel: NSManagedObjectModel)](nspersistentcontainer/init(name:managedobjectmodel:).md)
+### Creating a Container
+- [init(name: String, managedObjectModel: NSManagedObjectModel)](./init%28name,managedobjectmodel%29.md)
   Create a container with the specified name and managed object model.
 
 

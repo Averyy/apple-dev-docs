@@ -1,7 +1,8 @@
 # minimumScaleDelta
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum required delta before the gesture starts.
 
@@ -20,9 +21,10 @@ var minimumScaleDelta: CGFloat
 
 ## See Also
 
-- [init(minimumScaleDelta: CGFloat)](magnifygesture/init(minimumscaledelta:).md)
+### Creating the gesture
+- [init(minimumScaleDelta: CGFloat)](./init%28minimumscaledelta%29.md)
   Creates a magnify gesture with a given minimum delta for the gesture to start.
-- [init(minimumScaleDelta: CGFloat, inputKinds: GestureInputKinds)](magnifygesture/init(minimumscaledelta:inputkinds:).md)
+- [init(minimumScaleDelta: CGFloat, inputKinds: GestureInputKinds)](./init%28minimumscaledelta,inputkinds%29.md)
   Creates a magnify gesture with a given minimum delta for the gesture to start, and the input kinds the gesture recognizes.
 
 

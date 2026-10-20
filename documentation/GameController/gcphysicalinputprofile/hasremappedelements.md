@@ -1,7 +1,8 @@
 # hasRemappedElements
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the user remaps elements in this profile.
 
@@ -19,17 +20,22 @@ A Boolean value that indicates whether the user remaps elements in this profile.
 var hasRemappedElements: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasRemappedElements;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the user remaps one or more elements; otherwise, this property is [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](../../Swift/true.md), the user remaps one or more elements; otherwise, this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func mappedElementAlias(forPhysicalInputName: String) -> String](gcphysicalinputprofile/mappedelementalias(forphysicalinputname:).md)
+### Remapping input elements
+- [func mappedElementAlias(forPhysicalInputName: String) -> String](./mappedelementalias%28forphysicalinputname%29.md)
   Returns the name of the input element to which the user remaps the given physical element.
-- [func mappedPhysicalInputNames(forElementAlias: String) -> Set<String>](gcphysicalinputprofile/mappedphysicalinputnames(forelementalias:).md)
+- [func mappedPhysicalInputNames(forElementAlias: String) -> Set<String>](./mappedphysicalinputnames%28forelementalias%29.md)
   Returns the physical input elements to which the user remaps the given input element.
-- [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gccontrollerusercustomizationsdidchange.md)
+- [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gccontrollerusercustomizationsdidchange.md)
   A notification that posts when the user customizes the button mappings or other settings of a controller.
 
 

@@ -1,7 +1,8 @@
 # init(mapView:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the button with the map view that it should control.
 
@@ -17,9 +18,13 @@ Initializes the button with the map view that it should control.
 convenience init(mapView: MKMapView?)
 ```
 
+```objc
++ (instancetype) userTrackingButtonWithMapView:(MKMapView *) mapView;
+```
+
 #### Return Value
 
-An initialized [`MKUserTrackingButton`](mkusertrackingbutton.md) object.
+An initialized [`MKUserTrackingButton`](../mkusertrackingbutton.md) object.
 
 ## Parameters
 

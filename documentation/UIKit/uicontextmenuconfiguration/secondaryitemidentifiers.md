@@ -1,7 +1,8 @@
 # secondaryItemIdentifiers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of identifiers corresponding to each item other than the primary item in a multiple-item interaction.
 
@@ -17,17 +18,22 @@ A set of identifiers corresponding to each item other than the primary item in a
 var secondaryItemIdentifiers: Set<AnyHashable> { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSSet<id<NSCopying>> * secondaryItemIdentifiers;
+```
+
 ## Mentions
 
-- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
+- [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
 #### Discussion
 
-When the context menu acts on multiple items, you can use this property to include the identifiers of the secondary items in the configuration. You don’t need to set this property when you create a configuration that originates from a multiple-item interaction in a collection view, such as in [`collectionView(_:contextMenuConfigurationForItemsAt:point:)`](uicollectionviewdelegate/collectionview(_:contextmenuconfigurationforitemsat:point:).md).
+When the context menu acts on multiple items, you can use this property to include the identifiers of the secondary items in the configuration. You don’t need to set this property when you create a configuration that originates from a multiple-item interaction in a collection view, such as in [`collectionView(_:contextMenuConfigurationForItemsAt:point:)`](../uicollectionviewdelegate/collectionview%28_,contextmenuconfigurationforitemsat,point%29.md).
 
 ## See Also
 
-- [var badgeCount: Int](uicontextmenuconfiguration/badgecount.md)
+### Handling multiple-item interactions
+- [var badgeCount: Int](./badgecount.md)
   The number of items in a multiple-item interaction.
 
 

@@ -1,7 +1,8 @@
 # uiOffsetValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the UIKit offset structure representation of the value.
 
@@ -19,19 +20,25 @@ Returns the UIKit offset structure representation of the value.
 var uiOffsetValue: UIOffset { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIOffset UIOffsetValue;
+```
+
 #### Return Value
 
 The UIKit offset structure representation of the value.
 
 ## See Also
 
-- [struct UIOffset](../uikit/uioffset.md)
+### Related Documentation
+- [struct UIOffset](../../UIKit/uioffset.md)
   A structure that specifies an amount to offset a position.
-- [init(UIEdgeInsets: UIEdgeInsets)](nsvalue/init(uiedgeinsets:).md)
+### Working with UIKit Geometry Values
+- [init(UIEdgeInsets: UIEdgeInsets)](./init%28uiedgeinsets%29.md)
   Creates a new value object containing the specified UIKit edge insets structure.
-- [init(UIOffset: UIOffset)](nsvalue/init(uioffset:).md)
+- [init(UIOffset: UIOffset)](./init%28uioffset%29.md)
   Creates a new value object containing the specified UIKit offset structure.
-- [var uiEdgeInsetsValue: UIEdgeInsets](nsvalue/uiedgeinsetsvalue.md)
+- [var uiEdgeInsetsValue: UIEdgeInsets](./uiedgeinsetsvalue.md)
   Returns the UIKit edge insets structure representation of the value.
 
 

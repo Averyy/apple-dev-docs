@@ -1,7 +1,8 @@
 # WASubscribableService
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A service your app discovers on remote devices and can connect to.
 
@@ -18,7 +19,7 @@ struct WASubscribableService
 
 ## Mentions
 
-- [Adopting Wi-Fi Aware](adopting-wi-fi-aware.md)
+- [Adopting Wi-Fi Aware](./adopting-wi-fi-aware.md)
 
 #### Overview
 
@@ -30,37 +31,38 @@ You specify the services your app uses in `Info.plist` via a dictionary under th
 ## Topics
 
 ### Selecting from your app’s subscribable services
-- [static var allServices: [WASubscribableService.ID : WASubscribableService]](wasubscribableservice/allservices.md)
+- [static var allServices: [WASubscribableService.ID : WASubscribableService]](./wasubscribableservice/allservices.md)
   A dictionary of all subscribable services declared by your app, indexed by service name.
 ### Checking a service name and ID
-- [WASubscribableService.ID](wasubscribableservice/id-swift.typealias.md)
+- [WASubscribableService.ID](./wasubscribableservice/id-swift.typealias.md)
   The type of value that uniquely identifies the service.
-- [var id: WASubscribableService.ID](wasubscribableservice/id-swift.property.md)
+- [var id: WASubscribableService.ID](./wasubscribableservice/id-swift.property.md)
   A stable ID that can be used to identify this subscribable service.
-- [let name: String](wasubscribableservice/name.md)
+- [let name: String](./wasubscribableservice/name.md)
   The full name of the service, as sent over the air.
 ### Getting a String description
-- [var description: String](wasubscribableservice/description.md)
+- [var description: String](./wasubscribableservice/description.md)
   A string description of the service.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [WAService](waservice.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [WAService](./waservice.md)
 
 ## See Also
 
-- [protocol WAService](waservice.md)
+### Services to discover
+- [protocol WAService](./waservice.md)
   A protocol that defines a service that a device can publish or subscribe to.
-- [struct WAPublishableService](wapublishableservice.md)
+- [struct WAPublishableService](./wapublishableservice.md)
   A service, hosted by your app, that remote devices can connect to.
 
 

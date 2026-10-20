@@ -1,7 +1,8 @@
 # previousIndexPathsForInteractivelyMovingItems
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of index paths representing the previous location of moving items in the collection view.
 
@@ -18,15 +19,20 @@ An array of index paths representing the previous location of moving items in th
 var previousIndexPathsForInteractivelyMovingItems: [IndexPath]? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSArray<NSIndexPath *> * previousIndexPathsForInteractivelyMovingItems;
+```
+
 #### Discussion
 
-This property is filled when an interactive move is in progress or has just ended. Use this property together with the [`targetIndexPathsForInteractivelyMovingItems`](uicollectionviewlayoutinvalidationcontext/targetindexpathsforinteractivelymovingitems.md) property to determine what changes you need to make to the affected items. For most other updates, the value of this property is `nil`.
+This property is filled when an interactive move is in progress or has just ended. Use this property together with the [`targetIndexPathsForInteractivelyMovingItems`](./targetindexpathsforinteractivelymovingitems.md) property to determine what changes you need to make to the affected items. For most other updates, the value of this property is `nil`.
 
 ## See Also
 
-- [var targetIndexPathsForInteractivelyMovingItems: [IndexPath]?](uicollectionviewlayoutinvalidationcontext/targetindexpathsforinteractivelymovingitems.md)
+### Invalidating the Order of Items
+- [var targetIndexPathsForInteractivelyMovingItems: [IndexPath]?](./targetindexpathsforinteractivelymovingitems.md)
   An array of index paths representing the new location of moving items in the collection view.
-- [var interactiveMovementTarget: CGPoint](uicollectionviewlayoutinvalidationcontext/interactivemovementtarget.md)
+- [var interactiveMovementTarget: CGPoint](./interactivemovementtarget.md)
   The current point used to determine the placement of moving items.
 
 

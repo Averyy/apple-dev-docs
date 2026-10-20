@@ -1,7 +1,8 @@
 # MPSGraphSingleGateRNNDescriptor
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The class that defines the parameters for a single gate RNN operation.
 
@@ -19,74 +20,79 @@ The class that defines the parameters for a single gate RNN operation.
 class MPSGraphSingleGateRNNDescriptor
 ```
 
+```objc
+@interface MPSGraphSingleGateRNNDescriptor : MPSGraphObject
+```
+
 #### Overview
 
-Use this descriptor with the following [`MPSGraph`](mpsgraph.md) methods:
+Use this descriptor with the following [`MPSGraph`](./mpsgraph.md) methods:
 
-- [`singleGateRNN(_:recurrentWeight:initState:descriptor:name:)`](mpsgraph/singlegaternn(_:recurrentweight:initstate:descriptor:name:).md)
-- [`singleGateRNN(_:recurrentWeight:inputWeight:bias:initState:descriptor:name:)`](mpsgraph/singlegaternn(_:recurrentweight:inputweight:bias:initstate:descriptor:name:).md)
-- [`singleGateRNN(_:recurrentWeight:inputWeight:bias:initState:mask:descriptor:name:)`](mpsgraph/singlegaternn(_:recurrentweight:inputweight:bias:initstate:mask:descriptor:name:).md)
-- [`singleGateRNNGradients(_:recurrentWeight:sourceGradient:zState:initState:descriptor:name:)`](mpsgraph/singlegaternngradients(_:recurrentweight:sourcegradient:zstate:initstate:descriptor:name:).md)
-- [`singleGateRNNGradients(_:recurrentWeight:sourceGradient:zState:inputWeight:bias:initState:descriptor:name:)`](mpsgraph/singlegaternngradients(_:recurrentweight:sourcegradient:zstate:inputweight:bias:initstate:descriptor:name:).md)
-- [`singleGateRNNGradients(_:recurrentWeight:sourceGradient:zState:inputWeight:bias:initState:mask:descriptor:name:)`](mpsgraph/singlegaternngradients(_:recurrentweight:sourcegradient:zstate:inputweight:bias:initstate:mask:descriptor:name:).md)
-- [`singleGateRNNGradients(_:recurrentWeight:sourceGradient:zState:stateGradient:inputWeight:bias:initState:mask:descriptor:name:)`](mpsgraph/singlegaternngradients(_:recurrentweight:sourcegradient:zstate:stategradient:inputweight:bias:initstate:mask:descriptor:name:).md)
+- [`singleGateRNN(_:recurrentWeight:initState:descriptor:name:)`](./mpsgraph/singlegaternn%28_,recurrentweight,initstate,descriptor,name%29.md)
+- [`singleGateRNN(_:recurrentWeight:inputWeight:bias:initState:descriptor:name:)`](./mpsgraph/singlegaternn%28_,recurrentweight,inputweight,bias,initstate,descriptor,name%29.md)
+- [`singleGateRNN(_:recurrentWeight:inputWeight:bias:initState:mask:descriptor:name:)`](./mpsgraph/singlegaternn%28_,recurrentweight,inputweight,bias,initstate,mask,descriptor,name%29.md)
+- [`singleGateRNNGradients(_:recurrentWeight:sourceGradient:zState:initState:descriptor:name:)`](./mpsgraph/singlegaternngradients%28_,recurrentweight,sourcegradient,zstate,initstate,descriptor,name%29.md)
+- [`singleGateRNNGradients(_:recurrentWeight:sourceGradient:zState:inputWeight:bias:initState:descriptor:name:)`](./mpsgraph/singlegaternngradients%28_,recurrentweight,sourcegradient,zstate,inputweight,bias,initstate,descriptor,name%29.md)
+- [`singleGateRNNGradients(_:recurrentWeight:sourceGradient:zState:inputWeight:bias:initState:mask:descriptor:name:)`](./mpsgraph/singlegaternngradients%28_,recurrentweight,sourcegradient,zstate,inputweight,bias,initstate,mask,descriptor,name%29.md)
+- [`singleGateRNNGradients(_:recurrentWeight:sourceGradient:zState:stateGradient:inputWeight:bias:initState:mask:descriptor:name:)`](./mpsgraph/singlegaternngradients%28_,recurrentweight,sourcegradient,zstate,stategradient,inputweight,bias,initstate,mask,descriptor,name%29.md)
 
 ## Topics
 
 ### Instance Properties
-- [var activation: MPSGraphRNNActivation](mpsgraphsinglegaternndescriptor/activation.md)
+- [var activation: MPSGraphRNNActivation](./mpsgraphsinglegaternndescriptor/activation.md)
   A parameter that defines the activation function to use with the RNN operation.
-- [var bidirectional: Bool](mpsgraphsinglegaternndescriptor/bidirectional.md)
+- [var bidirectional: Bool](./mpsgraphsinglegaternndescriptor/bidirectional.md)
   A parameter that defines a bidirectional RNN layer.
-- [var reverse: Bool](mpsgraphsinglegaternndescriptor/reverse.md)
+- [var reverse: Bool](./mpsgraphsinglegaternndescriptor/reverse.md)
   A parameter that defines time direction of the input sequence.
-- [var training: Bool](mpsgraphsinglegaternndescriptor/training.md)
+- [var training: Bool](./mpsgraphsinglegaternndescriptor/training.md)
   A parameter that makes the RNN layer support training.
 
 ## Relationships
 
 ### Inherits From
-- [MPSGraphObject](mpsgraphobject.md)
+- [MPSGraphObject](./mpsgraphobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSGraph](mpsgraph.md)
+### Classes
+- [class MPSGraph](./mpsgraph.md)
   The optimized representation of a compute graph of operations and tensors.
-- [class MPSGraphCompilationDescriptor](mpsgraphcompilationdescriptor.md)
+- [class MPSGraphCompilationDescriptor](./mpsgraphcompilationdescriptor.md)
   A class that consists of all the levers for compiling graphs.
-- [class MPSGraphConvolution2DOpDescriptor](mpsgraphconvolution2dopdescriptor.md)
+- [class MPSGraphConvolution2DOpDescriptor](./mpsgraphconvolution2dopdescriptor.md)
   A class that describes the properties of a 2D-convolution operator.
-- [class MPSGraphConvolution3DOpDescriptor](mpsgraphconvolution3dopdescriptor.md)
+- [class MPSGraphConvolution3DOpDescriptor](./mpsgraphconvolution3dopdescriptor.md)
   A class that describes the properties of a 3D-convolution operator.
-- [class MPSGraphCreateSparseOpDescriptor](mpsgraphcreatesparseopdescriptor.md)
+- [class MPSGraphCreateSparseOpDescriptor](./mpsgraphcreatesparseopdescriptor.md)
   A class that describes the properties of a create sparse operation.
-- [class MPSGraphDepthwiseConvolution2DOpDescriptor](mpsgraphdepthwiseconvolution2dopdescriptor.md)
+- [class MPSGraphDepthwiseConvolution2DOpDescriptor](./mpsgraphdepthwiseconvolution2dopdescriptor.md)
   A class that defines the parameters for  a 2D-depthwise convolution operation.
-- [class MPSGraphDepthwiseConvolution3DOpDescriptor](mpsgraphdepthwiseconvolution3dopdescriptor.md)
+- [class MPSGraphDepthwiseConvolution3DOpDescriptor](./mpsgraphdepthwiseconvolution3dopdescriptor.md)
   The class that defines the parameters for a 3D-depthwise convolution operation.
-- [class MPSGraphDevice](mpsgraphdevice.md)
+- [class MPSGraphDevice](./mpsgraphdevice.md)
   A class that describes the compute device.
-- [class MPSGraphExecutable](mpsgraphexecutable.md)
+- [class MPSGraphExecutable](./mpsgraphexecutable.md)
   The compiled representation of a compute graph executable.
-- [class MPSGraphExecutableExecutionDescriptor](mpsgraphexecutableexecutiondescriptor.md)
+- [class MPSGraphExecutableExecutionDescriptor](./mpsgraphexecutableexecutiondescriptor.md)
   A class that consists of all the levers  to synchronize and schedule executable execution.
-- [class MPSGraphExecutableSerializationDescriptor](mpsgraphexecutableserializationdescriptor.md)
+- [class MPSGraphExecutableSerializationDescriptor](./mpsgraphexecutableserializationdescriptor.md)
   A class that consists of all the levers  to serialize an executable.
-- [class MPSGraphExecutionDescriptor](mpsgraphexecutiondescriptor.md)
+- [class MPSGraphExecutionDescriptor](./mpsgraphexecutiondescriptor.md)
   A class that consists of all the levers  to synchronize and schedule graph execution.
-- [class MPSGraphFFTDescriptor](mpsgraphfftdescriptor.md)
+- [class MPSGraphFFTDescriptor](./mpsgraphfftdescriptor.md)
   The class that defines the parameters for a fast Fourier transform (FFT) operation.
-- [class MPSGraphGRUDescriptor](mpsgraphgrudescriptor.md)
+- [class MPSGraphGRUDescriptor](./mpsgraphgrudescriptor.md)
   The class that defines the parameters for a gated recurrent unit (GRU) operation.
-- [class MPSGraphImToColOpDescriptor](mpsgraphimtocolopdescriptor.md)
+- [class MPSGraphImToColOpDescriptor](./mpsgraphimtocolopdescriptor.md)
   The class that defines the parameters for an image to column or column to image operation.
 
 

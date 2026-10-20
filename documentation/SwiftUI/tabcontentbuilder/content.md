@@ -1,7 +1,8 @@
 # TabContentBuilder.Content
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view representation of the content of a builder-based tab view with selection.
 
@@ -24,7 +25,7 @@ struct Content<C> where C : TabContent
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](../view.md)
 
 
 ---

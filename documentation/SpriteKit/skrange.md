@@ -1,7 +1,8 @@
 # SKRange
 
 **Framework**: SpriteKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A definition of a range of floating-point values.
 
@@ -10,7 +11,7 @@ A definition of a range of floating-point values.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,53 +21,58 @@ A definition of a range of floating-point values.
 class SKRange
 ```
 
+```objc
+@interface SKRange : NSObject
+```
+
 #### Overview
 
-You typically use a [`SKRange`](skrange.md) to clamp a value so that it is within the specified range.
+You typically use a [`SKRange`](./skrange.md) to clamp a value so that it is within the specified range.
 
 ## Topics
 
 ### Creating a Range Object
-- [convenience init(value: CGFloat, variance: CGFloat)](skrange/init(value:variance:).md)
+- [convenience init(value: CGFloat, variance: CGFloat)](./skrange/init%28value,variance%29.md)
   Creates and initializes a new range object using a value and a maximum distance from that value.
-- [class func withNoLimits() -> Self](skrange/withnolimits.md)
+- [class func withNoLimits() -> Self](./skrange/withnolimits%28%29.md)
   Creates and initializes a new range object that encompasses all possible values.
-- [convenience init(lowerLimit: CGFloat)](skrange/init(lowerlimit:).md)
+- [convenience init(lowerLimit: CGFloat)](./skrange/init%28lowerlimit%29.md)
   Creates and initializes a new range object that specifies only a minimum value.
-- [convenience init(upperLimit: CGFloat)](skrange/init(upperlimit:).md)
+- [convenience init(upperLimit: CGFloat)](./skrange/init%28upperlimit%29.md)
   Creates and initializes a new range object that specifies only a maximum value.
-- [convenience init(constantValue: CGFloat)](skrange/init(constantvalue:).md)
+- [convenience init(constantValue: CGFloat)](./skrange/init%28constantvalue%29.md)
   Creates and initializes a new range object that specifies a constant value.
-- [init(lowerLimit: CGFloat, upperLimit: CGFloat)](skrange/init(lowerlimit:upperlimit:).md)
+- [init(lowerLimit: CGFloat, upperLimit: CGFloat)](./skrange/init%28lowerlimit,upperlimit%29.md)
   Initializes a new range object.
 ### Inspecting a Range Object’s Limits
-- [var lowerLimit: CGFloat](skrange/lowerlimit.md)
+- [var lowerLimit: CGFloat](./skrange/lowerlimit.md)
   The minimum possible value.
-- [var upperLimit: CGFloat](skrange/upperlimit.md)
+- [var upperLimit: CGFloat](./skrange/upperlimit.md)
   The maximum possible value.
 ### Initializers
-- [init?(coder: NSCoder)](skrange/init(coder:).md)
+- [init?(coder: NSCoder)](./skrange/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class SKKeyframeSequence](skkeyframesequence.md)
+### Mathematical Tools
+- [class SKKeyframeSequence](./skkeyframesequence.md)
   An object that performs interpolation between values specified at different times (keyframes).
-- [class SKRegion](skregion.md)
+- [class SKRegion](./skregion.md)
   The definition of an arbitrary area.
 
 

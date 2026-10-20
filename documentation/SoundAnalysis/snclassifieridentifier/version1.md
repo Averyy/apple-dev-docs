@@ -1,7 +1,8 @@
 # version1
 
 **Framework**: Sound Analysis  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Version 1 of the sound classifier.
 
@@ -18,6 +19,10 @@ Version 1 of the sound classifier.
 
 ```swift
 static let version1: SNClassifierIdentifier
+```
+
+```c
+extern SNClassifierIdentifier const SNClassifierIdentifierVersion1;
 ```
 
 

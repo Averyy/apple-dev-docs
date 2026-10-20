@@ -1,7 +1,8 @@
 # NEDNSProxyManagerError.configurationCannotBeRemoved
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Unremovable DNS proxy configuration.
 
@@ -18,17 +19,22 @@ Unremovable DNS proxy configuration.
 case configurationCannotBeRemoved
 ```
 
+```c
+NEDNSProxyManagerErrorConfigurationCannotBeRemoved
+```
+
 #### Discussion
 
-This error occurs if you attempt to use a call to the [`removeFromPreferences(completionHandler:)`](nednsproxymanager/removefrompreferences(completionhandler:).md) method to remove the DNS proxy configuration when an installed configuration profile specifies a baseline DNS proxy configuration. You can only call the removal method in a development environment where no configuration profile exists.
+This error occurs if you attempt to use a call to the [`removeFromPreferences(completionHandler:)`](../nednsproxymanager/removefrompreferences%28completionhandler%29.md) method to remove the DNS proxy configuration when an installed configuration profile specifies a baseline DNS proxy configuration. You can only call the removal method in a development environment where no configuration profile exists.
 
 ## See Also
 
-- [NEDNSProxyManagerError.configurationInvalid](nednsproxymanagererror/configurationinvalid.md)
+### Enumeration Cases
+- [NEDNSProxyManagerError.configurationInvalid](./configurationinvalid.md)
   Invalid DNS proxy configuration that cannot be stored.
-- [NEDNSProxyManagerError.configurationDisabled](nednsproxymanagererror/configurationdisabled.md)
+- [NEDNSProxyManagerError.configurationDisabled](./configurationdisabled.md)
   Disabled DNS proxy configuration.
-- [NEDNSProxyManagerError.configurationStale](nednsproxymanagererror/configurationstale.md)
+- [NEDNSProxyManagerError.configurationStale](./configurationstale.md)
   Outdated DNS proxy configuration that needs to be loaded.
 
 

@@ -1,7 +1,8 @@
 # handle
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A handle associated with the message to revoke.
 
@@ -16,9 +17,10 @@ var handle: RCSHandle
 
 ## See Also
 
-- [var cellularServiceID: CellularServiceID](rcsservice/revokemessagerequest/cellularserviceid.md)
+### Accessing request properties
+- [var cellularServiceID: CellularServiceID](./cellularserviceid.md)
   The service identifier to use for this request.
-- [var messageID: RCSMessageID](rcsservice/revokemessagerequest/messageid.md)
+- [var messageID: RCSMessageID](./messageid.md)
   The message identifier to revoke.
 
 

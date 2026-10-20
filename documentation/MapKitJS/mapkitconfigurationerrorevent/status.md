@@ -1,7 +1,8 @@
 # status
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status of the configuration error.
 
@@ -10,7 +11,7 @@ The status of the configuration error.
 
 ## Declaration
 
-```swift
+```
 readonly status: ConfigurationErrorStatus;
 ```
 

@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: FinanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A integer that represents the raw value of a merchant category code.
 

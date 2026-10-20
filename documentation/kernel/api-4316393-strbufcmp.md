@@ -1,14 +1,15 @@
 # strbufcmp
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 int strbufcmp(const char *s1, size_t s1len, const char *s2, size_t s2len);
 ```
 

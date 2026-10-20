@@ -1,7 +1,8 @@
 # PassFields.SecondaryFields
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents the fields that display supporting information on the front of a pass.
 
@@ -12,15 +13,15 @@ An object that represents the fields that display supporting information on the 
 
 ## Declaration
 
-```swift
+```
 object PassFields.SecondaryFields
 ```
 
 ## Mentions
 
-- [Creating an airline boarding pass using semantic tags](creating-an-airline-boarding-pass-using-semantic-tags.md)
-- [Creating a poster event pass using semantic tags](creating-an-event-pass-using-semantic-tags.md)
-- [Supporting semantic tags in Wallet passes](supporting-semantic-tags-in-wallet-passes.md)
+- [Creating an airline boarding pass using semantic tags](../creating-an-airline-boarding-pass-using-semantic-tags.md)
+- [Creating a poster event pass using semantic tags](../creating-an-event-pass-using-semantic-tags.md)
+- [Supporting semantic tags in Wallet passes](../supporting-semantic-tags-in-wallet-passes.md)
 
 #### Discussion
 
@@ -31,15 +32,16 @@ Depending on the type of pass, you can use the secondary and auxiliary fields in
 ## Relationships
 
 ### Inherits From
-- [PassFieldContent](passfieldcontent.md)
+- [PassFieldContent](../passfieldcontent.md)
 
 ## See Also
 
-- [object PassFields.PrimaryFields](passfields/primaryfields-data.dictionary.md)
+### Adding content to the front of a pass
+- [object PassFields.PrimaryFields](./primaryfields-data.dictionary.md)
   An object that represents the fields that display the most important information on the front of a pass.
-- [object PassFields.AuxiliaryFields](passfields/auxiliaryfields-data.dictionary.md)
+- [object PassFields.AuxiliaryFields](./auxiliaryfields-data.dictionary.md)
   An object that represents the fields that display additional information on the front of a pass.
-- [object PassFields.HeaderFields](passfields/headerfields-data.dictionary.md)
+- [object PassFields.HeaderFields](./headerfields-data.dictionary.md)
   An object that represents the fields that display information at the top of a pass.
 
 

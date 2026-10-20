@@ -1,7 +1,8 @@
 # LowLevelMeshInstanceArray.Iterator
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An iterator over the mesh instance slots.
 
@@ -20,13 +21,13 @@ struct Iterator
 ## Topics
 
 ### Instance Methods
-- [func next() -> LowLevelMeshInstanceArray.Element?](lowlevelmeshinstancearray/iterator/next.md)
+- [func next() -> LowLevelMeshInstanceArray.Element?](./iterator/next%28%29.md)
   Returns the next mesh instance slot, or `nil` when all slots have been visited.
 
 ## Relationships
 
 ### Conforms To
-- [IteratorProtocol](../swift/iteratorprotocol.md)
+- [IteratorProtocol](../../Swift/iteratorprotocol.md)
 
 
 ---

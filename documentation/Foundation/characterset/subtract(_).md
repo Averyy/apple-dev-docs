@@ -1,7 +1,8 @@
 # subtract(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value to a `CharacterSet` created by removing elements in `other` from `self`.
 

@@ -1,7 +1,8 @@
 # init(stringLiteral:)
 
 **Framework**: PackageDescription  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a version struct with the provided string literal.
 

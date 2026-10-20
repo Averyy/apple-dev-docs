@@ -1,7 +1,8 @@
 # reservedRegions(kind:options:layoutDirectionBehavior:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of reserved regions that match the selection options you specify.
 
@@ -30,10 +31,10 @@ A reserved region is an area of your view that an entity reserves, such as the d
 
 There are two categories of reserved regions:
 
-- **[`occlusion`](reservedregion/kind-swift.struct/occlusion.md)**: An area where an element, such as the Dynamic Island, a camera, or window controls, cover your content. Place content outside this area.
-- **[`division`](reservedregion/kind-swift.struct/division.md)**: An area where content splits into separate regions, such as at the fold of a hinge. Arrange your content on both sides of this area.
+- **[`occlusion`](../reservedregion/kind-swift.struct/occlusion.md)**: An area where an element, such as the Dynamic Island, a camera, or window controls, cover your content. Place content outside this area.
+- **[`division`](../reservedregion/kind-swift.struct/division.md)**: An area where content splits into separate regions, such as at the fold of a hinge. Arrange your content on both sides of this area.
 
-Call this method on the proxy of a [`GeometryReader`](geometryreader.md) to get the reserved regions that overlap your view. By default, the method returns only the active regions. To also get the inactive regions, pass [`includeInactive`](reservedregion/queryoptions/includeinactive.md) for the `options` parameter.
+Call this method on the proxy of a [`GeometryReader`](../geometryreader.md) to get the reserved regions that overlap your view. By default, the method returns only the active regions. To also get the inactive regions, pass [`includeInactive`](../reservedregion/queryoptions/includeinactive.md) for the `options` parameter.
 
 In the following example, `RegionAvoidingLayout` is a layout that you write yourself. It takes the reserved regions from the geometry proxy, and places each view it contains in a spot that doesn’t overlap a region:
 
@@ -49,41 +50,42 @@ GeometryReader { proxy in
 }
 ```
 
-Make sure a region’s frame and your layout’s positions use the same coordinates. The frame is measured from the top-leading corner of the view you read it from, but the `bounds` that a layout receives in [`placeSubviews(in:proposal:subviews:cache:)`](layout/placesubviews(in:proposal:subviews:cache:).md) don’t always start at `(0, 0)`. Do your calculations from `(0, 0)`, and add `bounds.origin` only when you place each view.
+Make sure a region’s frame and your layout’s positions use the same coordinates. The frame is measured from the top-leading corner of the view you read it from, but the `bounds` that a layout receives in [`placeSubviews(in:proposal:subviews:cache:)`](../layout/placesubviews%28in,proposal,subviews,cache%29.md) don’t always start at `(0, 0)`. Do your calculations from `(0, 0)`, and add `bounds.origin` only when you place each view.
 
-With some right-to-left languages, SwiftUI flips the left and right sides of a layout. To keep reserved regions consistent with the flipped layout, the system mirrors the frames of reserved regions by default before it gives them to you. A layout that flips automatically, such as a custom [`Layout`](layout.md), lines up with the mirrored frames without extra work.
+With some right-to-left languages, SwiftUI flips the left and right sides of a layout. To keep reserved regions consistent with the flipped layout, the system mirrors the frames of reserved regions by default before it gives them to you. A layout that flips automatically, such as a custom [`Layout`](../layout.md), lines up with the mirrored frames without extra work.
 
-If you position content in a way that doesn’t flip with the layout direction, pass [`LayoutDirectionBehavior.fixed`](layoutdirectionbehavior/fixed.md) for the `layoutDirectionBehavior` parameter to get the unmirrored frames.
+If you position content in a way that doesn’t flip with the layout direction, pass [`LayoutDirectionBehavior.fixed`](../layoutdirectionbehavior/fixed.md) for the `layoutDirectionBehavior` parameter to get the unmirrored frames.
 
-For more information, see [`ReservedRegion`](reservedregion.md).
+For more information, see [`ReservedRegion`](../reservedregion.md).
 
 ## Parameters
 
-- `kind`: The kind of reserved region to return, such as [`occlusion`](reservedregion/kind-swift.struct/occlusion.md) or [`division`](reservedregion/kind-swift.struct/division.md).
-- `options`: Options that change which regions the method returns. By default, the method returns only active regions. Pass [`includeInactive`](reservedregion/queryoptions/includeinactive.md) to also return regions that aren’t currently active.
-- `layoutDirectionBehavior`: A value that determines how the method handles right-to-left layout directions. By default, the system mirrors the frames of the regions. Pass [`LayoutDirectionBehavior.fixed`](layoutdirectionbehavior/fixed.md) to get unmirrored frames.
+- `kind`: The kind of reserved region to return, such as [`occlusion`](../reservedregion/kind-swift.struct/occlusion.md) or [`division`](../reservedregion/kind-swift.struct/division.md).
+- `options`: Options that change which regions the method returns. By default, the method returns only active regions. Pass [`includeInactive`](../reservedregion/queryoptions/includeinactive.md) to also return regions that aren’t currently active.
+- `layoutDirectionBehavior`: A value that determines how the method handles right-to-left layout directions. By default, the system mirrors the frames of the regions. Pass [`LayoutDirectionBehavior.fixed`](../layoutdirectionbehavior/fixed.md) to get unmirrored frames.
 
 ## See Also
 
-- [struct GeometryReader](geometryreader.md)
+### Measuring a view
+- [struct GeometryReader](../geometryreader.md)
   A container view that defines its content as a function of its own size and coordinate space.
-- [struct GeometryReader3D](geometryreader3d.md)
+- [struct GeometryReader3D](../geometryreader3d.md)
   A container view that defines its content as a function of its own size and coordinate space.
-- [struct GeometryProxy](geometryproxy.md)
+- [struct GeometryProxy](../geometryproxy.md)
   A proxy for access to the size and coordinate space (for anchor resolution) of the container view.
-- [struct ReservedRegion](reservedregion.md)
+- [struct ReservedRegion](../reservedregion.md)
   A region within a view’s coordinate space that another entity reserves.
-- [struct GeometryProxy3D](geometryproxy3d.md)
+- [struct GeometryProxy3D](../geometryproxy3d.md)
   A proxy for access to the size and coordinate space of the container view.
-- [func coordinateSpace(NamedCoordinateSpace) -> some View](view/coordinatespace(_:).md)
+- [func coordinateSpace(NamedCoordinateSpace) -> some View](../view/coordinatespace%28_%29.md)
   Assigns a name to the view’s coordinate space, so other code can operate on dimensions like points and sizes relative to the named space.
-- [enum CoordinateSpace](coordinatespace.md)
+- [enum CoordinateSpace](../coordinatespace.md)
   A resolved coordinate space created by the coordinate space protocol.
-- [protocol CoordinateSpaceProtocol](coordinatespaceprotocol.md)
+- [protocol CoordinateSpaceProtocol](../coordinatespaceprotocol.md)
   A frame of reference within the layout system.
-- [struct PhysicalMetric](physicalmetric.md)
+- [struct PhysicalMetric](../physicalmetric.md)
   Provides access to a value in points that corresponds to the specified physical measurement.
-- [struct PhysicalMetricsConverter](physicalmetricsconverter.md)
+- [struct PhysicalMetricsConverter](../physicalmetricsconverter.md)
   A physical metrics converter provides conversion between point values and their extent in 3D space, in the form of physical length measurements.
 
 

@@ -1,7 +1,8 @@
 # session(_:didFinish:error:)
 
 **Framework**: Watch Connectivity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a data transfer operation has finished successfully or ended because of an error.
 
@@ -18,6 +19,10 @@ Tells the delegate that a data transfer operation has finished successfully or e
 optional func session(_ session: WCSession, didFinish userInfoTransfer: WCSessionUserInfoTransfer, error: (any Error)?)
 ```
 
+```objc
+- (void) session:(WCSession *) session didFinishUserInfoTransfer:(WCSessionUserInfoTransfer *) userInfoTransfer error:(NSError *) error;
+```
+
 #### Discussion
 
 The session object calls this method when a data transfer initiated by the current app finished, either successfully or unsuccessfully. Use this method to note that the transfer completed or to respond to errors, perhaps by trying to send the data again at a later time.
@@ -32,7 +37,8 @@ This method is called on a background thread of your app.
 
 ## See Also
 
-- [func session(WCSession, didReceiveUserInfo: [String : Any])](wcsessiondelegate/session(_:didreceiveuserinfo:).md)
+### Managing Data Dictionary Transfers
+- [func session(WCSession, didReceiveUserInfo: [String : Any])](./session%28_,didreceiveuserinfo%29.md)
   Tells the delegate that the session successfully received a data directory from its counterpart.
 
 

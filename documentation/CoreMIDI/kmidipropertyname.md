@@ -1,7 +1,8 @@
 # kMIDIPropertyName
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A name for a device, entity, or endpoint.
 
@@ -18,6 +19,10 @@ A name for a device, entity, or endpoint.
 let kMIDIPropertyName: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyName;
+```
+
 #### Discussion
 
 Devices, entities, and endpoints may all have names. The standard way to display an endpoint’s name is to ask it for its name and display it only if unique. If not, prepend the device name.
@@ -26,13 +31,14 @@ A studio setup editor may allow the user to set the names of both driver-owned a
 
 ## See Also
 
-- [let kMIDIPropertyModel: CFString](kmidipropertymodel.md)
+### Identification
+- [let kMIDIPropertyModel: CFString](./kmidipropertymodel.md)
   The model name of a device or endpoint.
-- [let kMIDIPropertyManufacturer: CFString](kmidipropertymanufacturer.md)
+- [let kMIDIPropertyManufacturer: CFString](./kmidipropertymanufacturer.md)
   The manufacturer name of a device or endpoint.
-- [let kMIDIPropertyUniqueID: CFString](kmidipropertyuniqueid.md)
+- [let kMIDIPropertyUniqueID: CFString](./kmidipropertyuniqueid.md)
   The unique identifier of a device, entity, or, endpoint.
-- [let kMIDIPropertyDeviceID: CFString](kmidipropertydeviceid.md)
+- [let kMIDIPropertyDeviceID: CFString](./kmidipropertydeviceid.md)
   The user-visible System Exclusive (SysEx) identifier of a device or entity.
 
 

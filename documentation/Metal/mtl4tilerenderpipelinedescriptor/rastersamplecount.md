@@ -1,7 +1,8 @@
 # rasterSampleCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures the number of samples per pixel used for multisampling.
 
@@ -17,6 +18,10 @@ Configures the number of samples per pixel used for multisampling.
 
 ```swift
 var rasterSampleCount: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger rasterSampleCount;
 ```
 
 

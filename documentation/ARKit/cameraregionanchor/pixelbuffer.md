@@ -1,7 +1,8 @@
 # pixelBuffer
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel buffer. Can be nil, e.g. for anchors which have not yet been added to the provider.
 

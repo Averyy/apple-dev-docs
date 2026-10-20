@@ -1,7 +1,8 @@
 # controllerInterface
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,11 +14,16 @@
 var controllerInterface: IOUSBHostControllerInterface { get }
 ```
 
+```objc
+@property (nonatomic, readonly) IOUSBHostControllerInterface * controllerInterface;
+```
+
 ## See Also
 
-- [var completeRoute: Int](iousbhostcidevicestatemachine/completeroute.md)
-- [var deviceAddress: Int](iousbhostcidevicestatemachine/deviceaddress.md)
-- [var deviceState: IOUSBHostCIDeviceState](iousbhostcidevicestatemachine/devicestate.md)
+### Instance Properties
+- [var completeRoute: Int](./completeroute.md)
+- [var deviceAddress: Int](./deviceaddress.md)
+- [var deviceState: IOUSBHostCIDeviceState](./devicestate.md)
 
 
 ---

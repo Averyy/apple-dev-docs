@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a render stage from a raw value.
 
@@ -21,7 +22,7 @@ init(rawValue: UInt)
 
 #### Discussion
 
-Use of the [`MTLRenderStages`](mtlrenderstages.md) type’s static properties, such as [`mesh`](mtlrenderstages/mesh.md), [`vertex`](mtlrenderstages/vertex.md), or [`fragment`](mtlrenderstages/fragment.md) instead of creating a render stage instance yourself with this initializer.
+Use of the [`MTLRenderStages`](../mtlrenderstages.md) type’s static properties, such as [`mesh`](./mesh.md), [`vertex`](./vertex.md), or [`fragment`](./fragment.md) instead of creating a render stage instance yourself with this initializer.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # isPaused
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var isPaused: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, getter=isPaused) BOOL paused;
 ```
 
 

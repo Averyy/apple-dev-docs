@@ -1,16 +1,17 @@
 # OS_xpc_listener
 
 **Framework**: XPC  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -23,20 +24,21 @@ class OS_xpc_listener
 ### Inherits From
 - [OS_object](../os/os_object.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [typealias xpc_object_t](xpc_object_t.md)
+### Objects
+- [typealias xpc_object_t](./xpc_object_t.md)
   A type that can describe all XPC objects, including dictionaries, arrays, strings, and numbers.
-- [typealias xpc_type_t](xpc_type_t.md)
+- [typealias xpc_type_t](./xpc_type_t.md)
   A type that describes XPC object types.
-- [protocol OS_xpc_object](os_xpc_object.md)
+- [protocol OS_xpc_object](./os_xpc_object.md)
   The interface for an XPC object.
 
 

@@ -1,7 +1,8 @@
 # showsDrawingPolicyControls
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the default drawing policy UI is visible.
 
@@ -17,15 +18,20 @@ A Boolean value that indicates whether the default drawing policy UI is visible.
 var showsDrawingPolicyControls: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL showsDrawingPolicyControls;
+```
+
 ## See Also
 
-- [var isRulerActive: Bool](pktoolpicker/isruleractive.md)
+### Customizing picker behavior
+- [var isRulerActive: Bool](./isruleractive.md)
   A Boolean value that indicates whether the ruler is visible on the canvas.
-- [var colorUserInterfaceStyle: UIUserInterfaceStyle](pktoolpicker/coloruserinterfacestyle.md)
+- [var colorUserInterfaceStyle: UIUserInterfaceStyle](./coloruserinterfacestyle.md)
   The user interface style for the tool picker.
-- [var overrideUserInterfaceStyle: UIUserInterfaceStyle](pktoolpicker/overrideuserinterfacestyle.md)
+- [var overrideUserInterfaceStyle: UIUserInterfaceStyle](./overrideuserinterfacestyle.md)
   The specific user interface style to apply to the tool picker.
-- [var stateAutosaveName: String?](pktoolpicker/stateautosavename.md)
+- [var stateAutosaveName: String?](./stateautosavename.md)
   The name used to automatically save the tool picker’s state in the defaults system.
 
 

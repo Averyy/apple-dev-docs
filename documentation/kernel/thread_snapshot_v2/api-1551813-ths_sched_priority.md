@@ -1,14 +1,15 @@
 # ths_sched_priority
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 int16_t ths_sched_priority;
 ```
 

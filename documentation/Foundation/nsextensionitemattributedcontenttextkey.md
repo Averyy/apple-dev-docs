@@ -1,7 +1,8 @@
 # NSExtensionItemAttributedContentTextKey
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An optional string describing the extension item content.
 
@@ -20,11 +21,16 @@ An optional string describing the extension item content.
 let NSExtensionItemAttributedContentTextKey: String
 ```
 
+```c
+extern NSString * const NSExtensionItemAttributedContentTextKey;
+```
+
 ## See Also
 
-- [let NSExtensionItemAttributedTitleKey: String](nsextensionitemattributedtitlekey.md)
+### Constants
+- [let NSExtensionItemAttributedTitleKey: String](./nsextensionitemattributedtitlekey.md)
   An optional title of the extension item.
-- [let NSExtensionItemAttachmentsKey: String](nsextensionitemattachmentskey.md)
+- [let NSExtensionItemAttachmentsKey: String](./nsextensionitemattachmentskey.md)
   An optional array of media data associated with the extension item.
 
 

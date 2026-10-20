@@ -1,7 +1,8 @@
 # PresentationIntent.Kind
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 15.0+
@@ -21,29 +22,29 @@ enum Kind
 ## Topics
 
 ### Enumeration Cases
-- [PresentationIntent.Kind.blockQuote](presentationintent/kind/blockquote.md)
-- [PresentationIntent.Kind.codeBlock(languageHint:)](presentationintent/kind/codeblock(languagehint:).md)
-- [PresentationIntent.Kind.header(level:)](presentationintent/kind/header(level:).md)
-- [PresentationIntent.Kind.listItem(ordinal:)](presentationintent/kind/listitem(ordinal:).md)
-- [PresentationIntent.Kind.orderedList](presentationintent/kind/orderedlist.md)
-- [PresentationIntent.Kind.paragraph](presentationintent/kind/paragraph.md)
-- [case table(columns: [PresentationIntent.TableColumn])](presentationintent/kind/table(columns:).md)
-- [PresentationIntent.Kind.tableCell(columnIndex:)](presentationintent/kind/tablecell(columnindex:).md)
-- [PresentationIntent.Kind.tableHeaderRow](presentationintent/kind/tableheaderrow.md)
-- [PresentationIntent.Kind.tableRow(rowIndex:)](presentationintent/kind/tablerow(rowindex:).md)
-- [PresentationIntent.Kind.thematicBreak](presentationintent/kind/thematicbreak.md)
-- [PresentationIntent.Kind.unorderedList](presentationintent/kind/unorderedlist.md)
+- [PresentationIntent.Kind.blockQuote](./kind/blockquote.md)
+- [PresentationIntent.Kind.codeBlock(languageHint:)](./kind/codeblock%28languagehint%29.md)
+- [PresentationIntent.Kind.header(level:)](./kind/header%28level%29.md)
+- [PresentationIntent.Kind.listItem(ordinal:)](./kind/listitem%28ordinal%29.md)
+- [PresentationIntent.Kind.orderedList](./kind/orderedlist.md)
+- [PresentationIntent.Kind.paragraph](./kind/paragraph.md)
+- [case table(columns: [PresentationIntent.TableColumn])](./kind/table%28columns%29.md)
+- [PresentationIntent.Kind.tableCell(columnIndex:)](./kind/tablecell%28columnindex%29.md)
+- [PresentationIntent.Kind.tableHeaderRow](./kind/tableheaderrow.md)
+- [PresentationIntent.Kind.tableRow(rowIndex:)](./kind/tablerow%28rowindex%29.md)
+- [PresentationIntent.Kind.thematicBreak](./kind/thematicbreak.md)
+- [PresentationIntent.Kind.unorderedList](./kind/unorderedlist.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

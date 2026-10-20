@@ -1,7 +1,8 @@
 # AVSampleBufferAudioRenderer.Receiver.EnqueueResult.enqueued
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The sample buffer was enqueued successfully.
 
@@ -22,11 +23,12 @@ case enqueued
 
 ## See Also
 
-- [case enqueuedWithSuggestedFlush([AVSampleBufferAudioRenderer.Receiver.SuggestedFlushReason])](avsamplebufferaudiorenderer/receiver/enqueueresult/enqueuedwithsuggestedflush(_:).md)
+### Enqueue results
+- [case enqueuedWithSuggestedFlush([AVSampleBufferAudioRenderer.Receiver.SuggestedFlushReason])](./enqueuedwithsuggestedflush%28_%29.md)
   The sample buffer was enqueued successfully, but the receiver suggests that the client flush and re-enqueue.
-- [AVSampleBufferAudioRenderer.Receiver.EnqueueResult.cancelledDueToFlush](avsamplebufferaudiorenderer/receiver/enqueueresult/cancelledduetoflush.md)
+- [AVSampleBufferAudioRenderer.Receiver.EnqueueResult.cancelledDueToFlush](./cancelledduetoflush.md)
   The sample buffer was not enqueued because the Receiver was flushed while the enqueue was suspended.
-- [AVSampleBufferAudioRenderer.Receiver.EnqueueResult.cancelledDueToError(_:)](avsamplebufferaudiorenderer/receiver/enqueueresult/cancelledduetoerror(_:).md)
+- [AVSampleBufferAudioRenderer.Receiver.EnqueueResult.cancelledDueToError(_:)](./cancelledduetoerror%28_%29.md)
   The sample buffer was not enqueued because the Receiver failed.
 
 

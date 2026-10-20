@@ -1,6 +1,8 @@
 # Browsing and Modifying Photo Albums
 
-**Framework**: PhotoKit
+**Framework**: PhotoKit  
+**Role**: Sample Code  
+**Download**: [BrowsingAndModifyingPhotoAlbums.zip](https://docs-assets.developer.apple.com/published/f3bb304e42b4/BrowsingAndModifyingPhotoAlbums.zip)
 
 Help people organize their photos into albums and browse photo collections in a grid-based layout using PhotoKit.
 
@@ -13,7 +15,7 @@ Help people organize their photos into albums and browse photo collections in a 
 
 #### Overview
 
-The Photos app on iOS displays assets in a thumbnail grid. This sample demonstrates how to achieve a similar layout with a custom [`UICollectionViewController`](https://developer.apple.com/documentation/uikit/uicollectionviewcontroller). It fetches asset thumbnails using PhotoKit, then displays them as a single photo, video, or Live Photo asset.
+The Photos app on iOS displays assets in a thumbnail grid. This sample demonstrates how to achieve a similar layout with a custom [`UICollectionViewController`](../UIKit/uicollectionviewcontroller.md). It fetches asset thumbnails using PhotoKit, then displays them as a single photo, video, or Live Photo asset.
 
 The sample app, PhotoBrowse, also demonstrates how to organize the user’s photos into albums and built-in collections, such as Recently Added and Favorites. It supports album creation, deletion, modification, as well as the editing and favoriting of individual assets.
 
@@ -26,7 +28,7 @@ The sample app, PhotoBrowse, runs on iOS and tvOS and requires the following:
 
 If you build and run the project in Xcode, you may also add photos to the app in Simulator.
 
-##### List Albums and Built in Collections
+##### List Albums and Built-in Collections
 
 When the app first launches, it fetches all of the user’s photo assets. All requests for asset data—single photos, albums, and user collections—go through PhotoKit’s shared [`PHPhotoLibrary`](https://developer.apple.com/documentation/photos/phphotolibrary) object, so the app registers the main view controller once its view loads:
 
@@ -68,7 +70,7 @@ imageManager.stopCachingImages(for: removedAssets,
                                targetSize: thumbnailSize, contentMode: .aspectFill, options: nil)
 ```
 
-Implement the `UICollectionView` delegate method [`cellForItem(at:)`](https://developer.apple.com/documentation/uikit/uicollectionview/cellforitem(at:)) to use thumbnails instead of full assets. PhotoKit allows you to request assets directly, and even badge Live Photos to set them apart:
+Implement the `UICollectionView` delegate method [`cellForItem(at:)`](../UIKit/uicollectionview/cellforitem%28at%29.md) to use thumbnails instead of full assets. PhotoKit allows you to request assets directly, and even badge Live Photos to set them apart:
 
 ```swift
 // Dequeue a GridViewCell.
@@ -91,9 +93,9 @@ imageManager.requestImage(for: asset, targetSize: thumbnailSize, contentMode: .a
 })
 ```
 
-##### Show a Single Photo Video or Live Photo
+##### Show a Single Photo, Video, or Live Photo
 
-`AssetViewController` implements the view of a single asset. If the asset is a video or Live Photo, the view controller also supports playback through a [`UIBarButtonItem`](https://developer.apple.com/documentation/uikit/uibarbuttonitem):
+`AssetViewController` implements the view of a single asset. If the asset is a video or Live Photo, the view controller also supports playback through a [`UIBarButtonItem`](../UIKit/uibarbuttonitem.md):
 
 ```swift
 // Set the appropriate toolbar items based on the media type of the asset.
@@ -132,7 +134,7 @@ On tvOS, PhotoKit supports Live Photo playback:
 #endif
 ```
 
-The view controller supports playback by creating an [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) and layering it on top of the item once the [`PHImageManager`](https://developer.apple.com/documentation/photos/phimagemanager) fetches a video:
+The view controller supports playback by creating an [`AVPlayer`](../AVFoundation/avplayer.md) and layering it on top of the item once the [`PHImageManager`](https://developer.apple.com/documentation/photos/phimagemanager) fetches a video:
 
 ```swift
 // Request an AVPlayerItem for the displayed PHAsset.
@@ -315,13 +317,14 @@ PHPhotoLibrary.shared().unregisterChangeObserver(self)
 
 ## See Also
 
-- [Selecting Photos and Videos in iOS](selecting-photos-and-videos-in-ios.md)
+### Sample code
+- [Selecting Photos and Videos in iOS](./selecting-photos-and-videos-in-ios.md)
   Improve the user experience of finding and selecting assets by using the Photos picker.
-- [Bringing Photos picker to your SwiftUI app](bringing-photos-picker-to-your-swiftui-app.md)
+- [Bringing Photos picker to your SwiftUI app](./bringing-photos-picker-to-your-swiftui-app.md)
   Select media assets by using a Photos picker view that SwiftUI provides.
-- [Implementing an inline Photos picker](implementing-an-inline-photos-picker.md)
+- [Implementing an inline Photos picker](./implementing-an-inline-photos-picker.md)
   Embed a system-provided, half-height Photos picker into your app’s view.
-- [Creating a Slideshow Project Extension for Photos](creating-a-slideshow-project-extension-for-photos.md)
+- [Creating a Slideshow Project Extension for Photos](./creating-a-slideshow-project-extension-for-photos.md)
   Augment the macOS Photos app with extensions that support project creation.
 
 

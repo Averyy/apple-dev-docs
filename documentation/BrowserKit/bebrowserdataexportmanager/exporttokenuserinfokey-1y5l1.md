@@ -1,7 +1,8 @@
 # exportTokenUserInfoKey
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key for accessing the data transfer token in the export launch activity’s info dictionary.
 
@@ -17,19 +18,20 @@ static var exportTokenUserInfoKey: String { get }
 
 ## Mentions
 
-- [Transferring browsing data to another browser](transferring-browsing-data-to-another-browser.md)
+- [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md)
 
 #### Discussion
 
-Use this key to access the token that validates the transfer of browsing data when the system launches your app to export the data. For more information, see [`Transferring browsing data to another browser`](transferring-browsing-data-to-another-browser.md).
+Use this key to access the token that validates the transfer of browsing data when the system launches your app to export the data. For more information, see [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md).
 
 ## See Also
 
-- [class let exportTokenUserInfoKey: String](bebrowserdataexportmanager/exporttokenuserinfokey-7e56u.md)
+### Managing export tokens
+- [class let exportTokenUserInfoKey: String](./exporttokenuserinfokey-7e56u.md)
   A key for accessing the data transfer token in the export launch activity’s info dictionary.
-- [static var userActivityType: String](bebrowserdataexportmanager/useractivitytype-4ar5j.md)
+- [static var userActivityType: String](./useractivitytype-4ar5j.md)
   A constant that identifies the launch activity for data export requests.
-- [class let userActivityType: String](bebrowserdataexportmanager/useractivitytype-g862.md)
+- [class let userActivityType: String](./useractivitytype-g862.md)
   A constant that identifies the launch activity for data export requests.
 
 

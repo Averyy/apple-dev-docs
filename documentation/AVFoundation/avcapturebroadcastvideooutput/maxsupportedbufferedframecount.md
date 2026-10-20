@@ -1,7 +1,8 @@
 # maxSupportedBufferedFrameCount
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum value supported for maxBufferedFrameCount.
 
@@ -18,21 +19,27 @@ The maximum value supported for maxBufferedFrameCount.
 class var maxSupportedBufferedFrameCount: Int { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) NSInteger maxSupportedBufferedFrameCount;
+```
+
 #### Discussion
 
 This class property returns the system-imposed limit for buffered frame count to ensure optimal performance and memory usage in broadcast workflows. The limit is determined based on system capabilities.
 
 ## See Also
 
-- [var maxBufferedFrameCount: Int](avcapturebroadcastvideooutput/maxbufferedframecount.md)
+### Related Documentation
+- [var maxBufferedFrameCount: Int](./maxbufferedframecount.md)
   This represents the maximum count of buffered frames. By default the value is 0, which means late frames are immediately dropped to maintain minimal latency.
-- [var videoSettings: [String : Any]?](avcapturebroadcastvideooutput/videosettings.md)
+### Managing Video Output
+- [var videoSettings: [String : Any]?](./videosettings.md)
   The current video output settings for the broadcast video output.
-- [var maxBufferedFrameCount: Int](avcapturebroadcastvideooutput/maxbufferedframecount.md)
+- [var maxBufferedFrameCount: Int](./maxbufferedframecount.md)
   This represents the maximum count of buffered frames. By default the value is 0, which means late frames are immediately dropped to maintain minimal latency.
-- [func resetFrameBuffer()](avcapturebroadcastvideooutput/resetframebuffer.md)
+- [func resetFrameBuffer()](./resetframebuffer%28%29.md)
   Tells the broadcast video output to reset the frame buffer and drop all currently buffered frames.
-- [var droppedFrameReplacementPolicy: AVCaptureBroadcastVideoOutput.DroppedFrameReplacementPolicy](avcapturebroadcastvideooutput/droppedframereplacementpolicy-swift.property.md)
+- [var droppedFrameReplacementPolicy: AVCaptureBroadcastVideoOutput.DroppedFrameReplacementPolicy](./droppedframereplacementpolicy-swift.property.md)
   The strategy used to replace dropped video frames.
 
 

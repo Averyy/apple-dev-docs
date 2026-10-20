@@ -1,14 +1,15 @@
 # zlibVersion
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 const char * zlibVersion(void);
 ```
 

@@ -1,7 +1,8 @@
 # CBL2CAPPSM
 
 **Framework**: Core Bluetooth  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of PSM identifiers.
 
@@ -20,11 +21,16 @@ The type of PSM identifiers.
 typealias CBL2CAPPSM = UInt16
 ```
 
+```c
+typedef uint16_t CBL2CAPPSM;
+```
+
 ## See Also
 
-- [func openL2CAPChannel(CBL2CAPPSM)](cbperipheral/openl2capchannel(_:).md)
+### Working with L2CAP Channels
+- [func openL2CAPChannel(CBL2CAPPSM)](./cbperipheral/openl2capchannel%28_%29.md)
   Attempts to open an L2CAP channel to the peripheral using the supplied Protocol/Service Multiplexer (PSM).
-- [class CBL2CAPChannel](cbl2capchannel.md)
+- [class CBL2CAPChannel](./cbl2capchannel.md)
   A live L2CAP connection to a remote device.
 
 

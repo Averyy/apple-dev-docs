@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOACPIFixedEventPMTimer](1638136-anonymous/kioacpifixedeventpmtimer.md)
-- [kIOACPIFixedEventPowerButton](1638136-anonymous/kioacpifixedeventpowerbutton.md)
-- [kIOACPIFixedEventRealTimeClock](1638136-anonymous/kioacpifixedeventrealtimeclock.md)
-- [kIOACPIFixedEventSleepButton](1638136-anonymous/kioacpifixedeventsleepbutton.md)
+- [kIOACPIFixedEventPMTimer](./api-1638136-anonymous/kioacpifixedeventpmtimer.md)
+- [kIOACPIFixedEventPowerButton](./api-1638136-anonymous/kioacpifixedeventpowerbutton.md)
+- [kIOACPIFixedEventRealTimeClock](./api-1638136-anonymous/kioacpifixedeventrealtimeclock.md)
+- [kIOACPIFixedEventSleepButton](./api-1638136-anonymous/kioacpifixedeventsleepbutton.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # layerWillDraw(_:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate of an imminent draw.
 
@@ -19,11 +20,15 @@ Notifies the delegate of an imminent draw.
 optional func layerWillDraw(_ layer: CALayer)
 ```
 
+```objc
+- (void) layerWillDraw:(CALayer *) layer;
+```
+
 #### Discussion
 
-The [`layerWillDraw(_:)`](calayerdelegate/layerwilldraw(_:).md) method is called before [`draw(_:in:)`](calayerdelegate/draw(_:in:).md). You can use this method to configure any layer state affecting contents prior to [`draw(_:in:)`](calayerdelegate/draw(_:in:).md) such as [`contentsFormat`](calayer/contentsformat.md) and [`isOpaque`](calayer/isopaque.md).
+The [`layerWillDraw(_:)`](./layerwilldraw%28_%29.md) method is called before [`draw(_:in:)`](./draw%28_,in%29.md). You can use this method to configure any layer state affecting contents prior to [`draw(_:in:)`](./draw%28_,in%29.md) such as [`contentsFormat`](../calayer/contentsformat.md) and [`isOpaque`](../calayer/isopaque.md).
 
-> ❗ **Important**:  This method is not called if the delegate implements [`display(_:)`](calayerdelegate/display(_:).md).
+> ❗ **Important**:  This method is not called if the delegate implements [`display(_:)`](./display%28_%29.md).
 
 ## Parameters
 
@@ -31,9 +36,10 @@ The [`layerWillDraw(_:)`](calayerdelegate/layerwilldraw(_:).md) method is called
 
 ## See Also
 
-- [func display(CALayer)](calayerdelegate/display(_:).md)
+### Providing the Layer’s Content
+- [func display(CALayer)](./display%28_%29.md)
   Tells the delegate to implement the display process.
-- [func draw(CALayer, in: CGContext)](calayerdelegate/draw(_:in:).md)
+- [func draw(CALayer, in: CGContext)](./draw%28_,in%29.md)
   Tells the delegate to implement the display process using the layer’s context.
 
 

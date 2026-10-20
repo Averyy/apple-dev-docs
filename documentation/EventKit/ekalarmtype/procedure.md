@@ -1,17 +1,18 @@
 # EKAlarmType.procedure
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The alarm opens a URL.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ The alarm opens a URL.
 case procedure
 ```
 
+```c
+EKAlarmTypeProcedure
+```
+
 ## See Also
 
-- [EKAlarmType.display](ekalarmtype/display.md)
+### Constants
+- [EKAlarmType.display](./display.md)
   The alarm displays a message.
-- [EKAlarmType.audio](ekalarmtype/audio.md)
+- [EKAlarmType.audio](./audio.md)
   The alarm plays a sound.
-- [EKAlarmType.email](ekalarmtype/email.md)
+- [EKAlarmType.email](./email.md)
   The alarm sends an email.
 
 

@@ -1,7 +1,8 @@
 # init(data:tag:bitCount:hashCount:murmurSeed:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new prefilter with the given parameters.
 
@@ -19,7 +20,7 @@ init(data: NEURLFilterPrefilter.PrefilterData, tag: String, bitCount: Int, hashC
 
 ## Parameters
 
-- `data`: The Bloom filter data, as a [`NEURLFilterPrefilter.PrefilterData`](neurlfilterprefilter/prefilterdata.md) instance.
+- `data`: The Bloom filter data, as a [`NEURLFilterPrefilter.PrefilterData`](./prefilterdata.md) instance.
 - `tag`: The tag of the Bloom filter data, such as the SHA-256 hash of the Bloom filter data.
 - `bitCount`: The number of bits in the Bloom filter.
 - `hashCount`: The number of hashes for the Bloom filter.

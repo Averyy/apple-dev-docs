@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct timeval {
     ...
 };
@@ -17,8 +17,8 @@ struct timeval {
 ## Topics
 
 ### Instance Properties
-- [tv_sec](timeval/1405286-tv_sec.md)
-- [tv_usec](timeval/1405288-tv_usec.md)
+- [tv_sec](./timeval/api-1405286-tv_sec.md)
+- [tv_usec](./timeval/api-1405288-tv_usec.md)
 
 
 ---

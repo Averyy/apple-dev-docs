@@ -1,7 +1,8 @@
 # hasMore
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A Boolean value indicating whether the App Store has more data to return.
 
@@ -10,29 +11,30 @@ A Boolean value indicating whether the App Store has more data to return.
 
 ## Declaration
 
-```swift
+```
 boolean hasMore
 ```
 
 #### Discussion
 
-This value is `true` if more results are available. Call the endpoint again, including the [`revision`](revision.md) or [`paginationToken`](paginationtoken.md) query parameter, to get the next set of results.
+This value is `true` if more results are available. Call the endpoint again, including the [`revision`](./revision.md) or [`paginationToken`](./paginationtoken.md) query parameter, to get the next set of results.
 
 If this value is `false`, there aren’t any additional results.
 
-The [`hasMore`](hasmore.md) value appears in responses to endpoints that provide paginated results, such as [`NotificationHistoryResponse`](notificationhistoryresponse.md), [`HistoryResponse`](historyresponse.md), [`RefundHistoryResponse`](refundhistoryresponse.md), and [`GetGroupMembersResponse`](getgroupmembersresponse.md).
+The [`hasMore`](./hasmore.md) value appears in responses to endpoints that provide paginated results, such as [`NotificationHistoryResponse`](./notificationhistoryresponse.md), [`HistoryResponse`](./historyresponse.md), [`RefundHistoryResponse`](./refundhistoryresponse.md), and [`GetGroupMembersResponse`](./getgroupmembersresponse.md).
 
 ## See Also
 
-- [type appAppleId](appappleid.md)
+### Response data types
+- [type appAppleId](./appappleid.md)
   The unique identifier of an app in the App Store.
-- [type bundleId](bundleid.md)
+- [type bundleId](./bundleid.md)
   The bundle identifier of an app.
-- [type environment](environment.md)
+- [type environment](./environment.md)
   The server environment, either sandbox or production.
-- [type revision](revision.md)
+- [type revision](./revision.md)
   A token you use in a query to request the next set of transactions for the customer.
-- [type JWSTransaction](jwstransaction.md)
+- [type JWSTransaction](./jwstransaction.md)
   Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
 
 

@@ -1,11 +1,12 @@
 # Identifiable Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var id: String](objectdetectionannotation/id.md)
+- [var id: String](./id.md)
   The identifier of the object detection annotation
 
 

@@ -1,7 +1,8 @@
 # copyWithCalculatedHDRStats()
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -18,19 +19,24 @@
 func copyWithCalculatedHDRStats() -> CGImage?
 ```
 
+```c
+extern CGImageRefCGImageCreateCopyWithCalculatedHDRStats(CGImageRef image);
+```
+
 ## Mentions
 
-- [Enhancing high dynamic range image rendering](adopting-advancements-in-hdr-image-rendering.md)
+- [Enhancing high dynamic range image rendering](../adopting-advancements-in-hdr-image-rendering.md)
 
 ## See Also
 
-- [Enhancing high dynamic range image rendering](adopting-advancements-in-hdr-image-rendering.md)
+### Adopting high dynamic range (HDR)
+- [Enhancing high dynamic range image rendering](../adopting-advancements-in-hdr-image-rendering.md)
   Improve your app’s High Dynamic Range (HDR) image support with metadata.
-- [var contentHeadroom: Float](cgimage/contentheadroom.md)
-- [var calculatedContentHeadroom: Float](cgimage/calculatedcontentheadroom.md)
-- [var contentAverageLightLevel: Float](cgimage/contentaveragelightlevel.md)
-- [var calculatedContentAverageLightLevel: Float](cgimage/calculatedcontentaveragelightlevel.md)
-- [func copy(contentAverageLightLevel: Float) -> CGImage?](cgimage/copy(contentaveragelightlevel:).md)
+- [var contentHeadroom: Float](./contentheadroom.md)
+- [var calculatedContentHeadroom: Float](./calculatedcontentheadroom.md)
+- [var contentAverageLightLevel: Float](./contentaveragelightlevel.md)
+- [var calculatedContentAverageLightLevel: Float](./calculatedcontentaveragelightlevel.md)
+- [func copy(contentAverageLightLevel: Float) -> CGImage?](./copy%28contentaveragelightlevel%29.md)
 
 
 ---

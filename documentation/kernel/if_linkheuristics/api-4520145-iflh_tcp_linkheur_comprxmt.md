@@ -1,14 +1,15 @@
 # iflh_tcp_linkheur_comprxmt
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 u_int64_t iflh_tcp_linkheur_comprxmt;
 ```
 

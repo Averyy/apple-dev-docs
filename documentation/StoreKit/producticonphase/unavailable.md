@@ -1,7 +1,8 @@
 # ProductIconPhase.unavailable
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The promotional image isn’t available for download.
 
@@ -26,11 +27,12 @@ You set up promotional images for Apple In-App Purchases in App Store Connect.
 
 ## See Also
 
-- [ProductIconPhase.loading](producticonphase/loading.md)
+### Getting the promotional image’s load phases
+- [ProductIconPhase.loading](./loading.md)
   The promotional image is in the process of loading.
-- [ProductIconPhase.success(_:)](producticonphase/success(_:).md)
+- [ProductIconPhase.success(_:)](./success%28_%29.md)
   The promotional image successfully loaded.
-- [ProductIconPhase.failure(_:)](producticonphase/failure(_:).md)
+- [ProductIconPhase.failure(_:)](./failure%28_%29.md)
   The promotional image failed to load, with an error.
 
 

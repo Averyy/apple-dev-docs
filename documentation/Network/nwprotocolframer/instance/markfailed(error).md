@@ -1,7 +1,8 @@
 # markFailed(error:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates to a connection that your protocol has encountered an error, or has gracefully closed.
 
@@ -22,10 +23,11 @@ final func markFailed(error: NWError?)
 
 ## See Also
 
-- [func markReady()](nwprotocolframer/instance/markready.md)
+### Managing Instance Lifetime
+- [func markReady()](./markready%28%29.md)
   Indicates to a connection that your protocol’s handshake is complete.
-- [func prependApplicationProtocol(options: NWProtocolOptions) throws](nwprotocolframer/instance/prependapplicationprotocol(options:).md)
-  Dynamically adds another protocol that will run above your protocol after your protocol calls [`markReady()`](nwprotocolframer/instance/markready().md).
+- [func prependApplicationProtocol(options: NWProtocolOptions) throws](./prependapplicationprotocol%28options%29.md)
+  Dynamically adds another protocol that will run above your protocol after your protocol calls [`markReady()`](./markready%28%29.md).
 
 
 ---

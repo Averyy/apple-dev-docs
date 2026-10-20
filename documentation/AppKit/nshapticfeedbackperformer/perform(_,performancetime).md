@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Initiates a specific pattern of haptic feedback to the user.
@@ -15,6 +16,10 @@ Initiates a specific pattern of haptic feedback to the user.
 func perform(_ pattern: NSHapticFeedbackManager.FeedbackPattern, performanceTime: NSHapticFeedbackManager.PerformanceTime)
 ```
 
+```objc
+- (void) performFeedbackPattern:(NSHapticFeedbackPattern) pattern performanceTime:(NSHapticFeedbackPerformanceTime) performanceTime;
+```
+
 #### Discussion
 
 In some cases, the system may override a call to this method. For example, a Force Touch trackpad won’t provide haptic feedback if the user isn’t touching the trackpad.
@@ -23,16 +28,17 @@ In some cases, the system may override a call to this method. For example, a For
 
 ## Parameters
 
-- `pattern`: A pattern of feedback to be provided to the user. For possible values, see [`NSHapticFeedbackManager.FeedbackPattern`](nshapticfeedbackmanager/feedbackpattern.md).
-- `performanceTime`: The time when the feedback should be provided to the user. For possible values, see [`NSHapticFeedbackManager.PerformanceTime`](nshapticfeedbackmanager/performancetime.md).
+- `pattern`: A pattern of feedback to be provided to the user. For possible values, see [`NSHapticFeedbackManager.FeedbackPattern`](../nshapticfeedbackmanager/feedbackpattern.md).
+- `performanceTime`: The time when the feedback should be provided to the user. For possible values, see [`NSHapticFeedbackManager.PerformanceTime`](../nshapticfeedbackmanager/performancetime.md).
 
 ## See Also
 
-- [NSHapticFeedbackManager.PerformanceTime](nshapticfeedbackmanager/performancetime.md)
+### Related Documentation
+- [NSHapticFeedbackManager.PerformanceTime](../nshapticfeedbackmanager/performancetime.md)
   A time at which to provide haptic feedback to the user.
-- [class NSHapticFeedbackManager](nshapticfeedbackmanager.md)
+- [class NSHapticFeedbackManager](../nshapticfeedbackmanager.md)
   An object that provides access to the haptic feedback management attributes on a system with a Force Touch trackpad.
-- [NSHapticFeedbackManager.FeedbackPattern](nshapticfeedbackmanager/feedbackpattern.md)
+- [NSHapticFeedbackManager.FeedbackPattern](../nshapticfeedbackmanager/feedbackpattern.md)
   A pattern of haptic feedback to be provided to the user.
 
 

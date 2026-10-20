@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOATAFeature48BitLBA](1646143-anonymous/kioatafeature48bitlba.md)
-- [kIOATAFeatureAdvancedPowerManagement](1646143-anonymous/kioatafeatureadvancedpowermanagement.md)
-- [kIOATAFeatureCompactFlash](1646143-anonymous/kioatafeaturecompactflash.md)
-- [kIOATAFeaturePowerManagement](1646143-anonymous/kioatafeaturepowermanagement.md)
-- [kIOATAFeatureSMART](1646143-anonymous/kioatafeaturesmart.md)
-- [kIOATAFeatureWriteCache](1646143-anonymous/kioatafeaturewritecache.md)
+- [kIOATAFeature48BitLBA](./api-1646143-anonymous/kioatafeature48bitlba.md)
+- [kIOATAFeatureAdvancedPowerManagement](./api-1646143-anonymous/kioatafeatureadvancedpowermanagement.md)
+- [kIOATAFeatureCompactFlash](./api-1646143-anonymous/kioatafeaturecompactflash.md)
+- [kIOATAFeaturePowerManagement](./api-1646143-anonymous/kioatafeaturepowermanagement.md)
+- [kIOATAFeatureSMART](./api-1646143-anonymous/kioatafeaturesmart.md)
+- [kIOATAFeatureWriteCache](./api-1646143-anonymous/kioatafeaturewritecache.md)
 
 
 ---

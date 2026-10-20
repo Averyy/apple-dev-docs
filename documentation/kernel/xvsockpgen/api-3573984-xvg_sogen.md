@@ -1,14 +1,15 @@
 # xvg_sogen
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 so_gen_t xvg_sogen;
 ```
 

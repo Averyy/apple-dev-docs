@@ -1,6 +1,7 @@
 # Authoring movies with external movie targets
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Specify elements of an external movie in your movie.
 
@@ -45,7 +46,7 @@ where the ID is a signed long integer.
 
 The QuickTime plug-in additionally supports `EMBED` tag parameters, which allow you to override a movie’s name or ID within an HTML page.
 
-#### Target Atoms for Embedded Movies
+#### Target atoms for embedded movies
 
 QuickTime 4.1 introduced target atoms to accommodate the addition of embedded movies. These target atoms allow for paths to be specified in a hierarchical movie tree.
 
@@ -70,9 +71,10 @@ Note that there are five ways to specify an embedded child movie. Three of them 
 
 ## See Also
 
-- [Compressed movie resources](compressed_movie_resources.md)
+### Movie data
+- [Compressed movie resources](./compressed_movie_resources.md)
   Reduce file size and startup latency by compressing movie resources.
-- [Reference movies](reference_movies.md)
+- [Reference movies](./reference_movies.md)
   A movie that contains references to alternate movies is called a reference movie.
 
 

@@ -1,7 +1,8 @@
 # controllerHomeButtonSystemAction
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get the current controller Home button system action setting.
 

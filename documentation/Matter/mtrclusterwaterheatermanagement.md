@@ -1,7 +1,8 @@
 # MTRClusterWaterHeaterManagement
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Cluster Water Heater Management This cluster is used to allow clients to control the operation of a hot water heating appliance so that it can be used with energy management.
 
@@ -20,38 +21,42 @@ Cluster Water Heater Management This cluster is used to allow clients to control
 class MTRClusterWaterHeaterManagement
 ```
 
+```objc
+@interface MTRClusterWaterHeaterManagement : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterwaterheatermanagement/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusterwaterheatermanagement/init%28device,endpointid,queue%29.md)
   For all instance methods that take a completion (i.e. command invocations), the completion will be called on the provided queue.
 ### Instance Methods
-- [func boost(with: MTRWaterHeaterManagementClusterBoostParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterwaterheatermanagement/boost(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func cancelBoost(with: MTRWaterHeaterManagementClusterCancelBoostParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterwaterheatermanagement/cancelboost(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func cancelBoost(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterwaterheatermanagement/cancelboost(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermanagement/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermanagement/readattributeattributelist(with:).md)
-- [func readAttributeBoostState(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermanagement/readattributebooststate(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermanagement/readattributeclusterrevision(with:).md)
-- [func readAttributeEstimatedHeatRequired(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermanagement/readattributeestimatedheatrequired(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermanagement/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermanagement/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeHeatDemand(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermanagement/readattributeheatdemand(with:).md)
-- [func readAttributeHeaterTypes(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermanagement/readattributeheatertypes(with:).md)
-- [func readAttributeTankPercentage(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermanagement/readattributetankpercentage(with:).md)
-- [func readAttributeTankVolume(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermanagement/readattributetankvolume(with:).md)
+- [func boost(with: MTRWaterHeaterManagementClusterBoostParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterwaterheatermanagement/boost%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func cancelBoost(with: MTRWaterHeaterManagementClusterCancelBoostParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterwaterheatermanagement/cancelboost%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func cancelBoost(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterwaterheatermanagement/cancelboost%28withexpectedvalues,expectedvalueinterval,completion%29.md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwaterheatermanagement/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwaterheatermanagement/readattributeattributelist%28with%29.md)
+- [func readAttributeBoostState(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwaterheatermanagement/readattributebooststate%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwaterheatermanagement/readattributeclusterrevision%28with%29.md)
+- [func readAttributeEstimatedHeatRequired(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwaterheatermanagement/readattributeestimatedheatrequired%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwaterheatermanagement/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwaterheatermanagement/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeHeatDemand(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwaterheatermanagement/readattributeheatdemand%28with%29.md)
+- [func readAttributeHeaterTypes(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwaterheatermanagement/readattributeheatertypes%28with%29.md)
+- [func readAttributeTankPercentage(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwaterheatermanagement/readattributetankpercentage%28with%29.md)
+- [func readAttributeTankVolume(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwaterheatermanagement/readattributetankvolume%28with%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

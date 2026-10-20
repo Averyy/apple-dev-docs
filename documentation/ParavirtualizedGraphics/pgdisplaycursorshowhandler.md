@@ -1,7 +1,8 @@
 # PGDisplayCursorShowHandler
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The block signature for a routine that handles changes to the cursor’s visibility.
 
@@ -15,13 +16,18 @@ The block signature for a routine that handles changes to the cursor’s visibil
 typealias PGDisplayCursorShowHandler = (Bool) -> Void
 ```
 
+```c
+typedef void (^)(_Bool) PGDisplayCursorShowHandler;
+```
+
 ## Parameters
 
 - `show`: A Boolean value that indicates whether to show the cursor.
 
 ## See Also
 
-- [var cursorShowHandler: PGDisplayCursorShowHandler?](pgdisplaydescriptor/cursorshowhandler.md)
+### Managing Cursor Events
+- [var cursorShowHandler: PGDisplayCursorShowHandler?](./pgdisplaydescriptor/cursorshowhandler.md)
   A handler that the framework calls to change the cursor’s visibility.
 
 

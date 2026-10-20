@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether this path is empty
 

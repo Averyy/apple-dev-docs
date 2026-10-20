@@ -1,7 +1,8 @@
 # color
 
 **Framework**: Managed Settings UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of the text on a shield.
 

@@ -1,7 +1,8 @@
 # blendMasks
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The blend masks associated with the skeleton.
 
@@ -21,7 +22,8 @@ let blendMasks: [SkeletonResource.BlendMask]
 
 ## See Also
 
-- [let ikResources: [IKResource]](skeletonresource/animationevaluation-swift.struct/ikresources.md)
+### Configuring the evaluation
+- [let ikResources: [IKResource]](./ikresources.md)
   The IK resources associated with the skeleton.
 
 

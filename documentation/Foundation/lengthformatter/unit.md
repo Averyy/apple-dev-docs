@@ -1,7 +1,8 @@
 # LengthFormatter.Unit
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The units supported by the `NSLengthFormatter` class.
 
@@ -20,37 +21,41 @@ The units supported by the `NSLengthFormatter` class.
 enum Unit
 ```
 
+```c
+enum NSLengthFormatterUnit : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [LengthFormatter.Unit.millimeter](lengthformatter/unit/millimeter.md)
+- [LengthFormatter.Unit.millimeter](./unit/millimeter.md)
   The millimeter unit.
-- [LengthFormatter.Unit.centimeter](lengthformatter/unit/centimeter.md)
+- [LengthFormatter.Unit.centimeter](./unit/centimeter.md)
   The centimeter unit.
-- [LengthFormatter.Unit.meter](lengthformatter/unit/meter.md)
+- [LengthFormatter.Unit.meter](./unit/meter.md)
   The meter unit.
-- [LengthFormatter.Unit.kilometer](lengthformatter/unit/kilometer.md)
+- [LengthFormatter.Unit.kilometer](./unit/kilometer.md)
   The kilometer unit.
-- [LengthFormatter.Unit.inch](lengthformatter/unit/inch.md)
+- [LengthFormatter.Unit.inch](./unit/inch.md)
   The inch unit.
-- [LengthFormatter.Unit.foot](lengthformatter/unit/foot.md)
+- [LengthFormatter.Unit.foot](./unit/foot.md)
   The foot unit.
-- [LengthFormatter.Unit.yard](lengthformatter/unit/yard.md)
+- [LengthFormatter.Unit.yard](./unit/yard.md)
   The yard unit.
-- [LengthFormatter.Unit.mile](lengthformatter/unit/mile.md)
+- [LengthFormatter.Unit.mile](./unit/mile.md)
   The mile unit.
 ### Initializers
-- [init?(rawValue: Int)](lengthformatter/unit/init(rawvalue:).md)
+- [init?(rawValue: Int)](./unit/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

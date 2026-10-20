@@ -1,7 +1,8 @@
 # SubscriptionIntroductoryOfferResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that create, read, or modify a single subscription introductory offer.
 
@@ -10,23 +11,24 @@ The response body for endpoints that create, read, or modify a single subscripti
 
 ## Declaration
 
-```swift
+```
 object SubscriptionIntroductoryOfferResponse
 ```
 
 ## Properties
 
 - `data` (SubscriptionIntroductoryOffer) *(required)*
-- `included` ([*])
+- `included` ([*]): **Allowed Types**: `SubscriptionPricePoint`, `Subscription`, `Territory`
 - `links` (DocumentLinks) *(required)*
 
 ## See Also
 
-- [object SubscriptionIntroductoryOfferCreateRequest](subscriptionintroductoryoffercreaterequest.md)
+### Objects
+- [object SubscriptionIntroductoryOfferCreateRequest](./subscriptionintroductoryoffercreaterequest.md)
   The request body you use to create a subscription introductory offer.
-- [object SubscriptionIntroductoryOfferInlineCreate](subscriptionintroductoryofferinlinecreate.md)
+- [object SubscriptionIntroductoryOfferInlineCreate](./subscriptionintroductoryofferinlinecreate.md)
   An inline object for specifying an introductory offer when creating or updating a subscription.
-- [object SubscriptionIntroductoryOfferUpdateRequest](subscriptionintroductoryofferupdaterequest.md)
+- [object SubscriptionIntroductoryOfferUpdateRequest](./subscriptionintroductoryofferupdaterequest.md)
   The request body you use to update a subscription introductory offer update request.
 
 

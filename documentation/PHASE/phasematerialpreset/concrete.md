@@ -1,17 +1,18 @@
 # PHASEMaterialPreset.concrete
 
 **Framework**: PHASE  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A surface characteristic that produces the acoustic quality of concrete.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,17 +20,22 @@ A surface characteristic that produces the acoustic quality of concrete.
 case concrete
 ```
 
+```c
+PHASEMaterialPresetConcrete
+```
+
 ## See Also
 
-- [PHASEMaterialPreset.brick](phasematerialpreset/brick.md)
+### Presets
+- [PHASEMaterialPreset.brick](./brick.md)
   A surface characteristic that produces the acoustic quality of brick.
-- [PHASEMaterialPreset.cardboard](phasematerialpreset/cardboard.md)
+- [PHASEMaterialPreset.cardboard](./cardboard.md)
   A surface characteristic that produces the acoustic quality of cardboard.
-- [PHASEMaterialPreset.drywall](phasematerialpreset/drywall.md)
+- [PHASEMaterialPreset.drywall](./drywall.md)
   A surface characteristic that produces the acoustic quality of drywall.
-- [PHASEMaterialPreset.glass](phasematerialpreset/glass.md)
+- [PHASEMaterialPreset.glass](./glass.md)
   A surface characteristic that produces the acoustic quality of glass.
-- [PHASEMaterialPreset.wood](phasematerialpreset/wood.md)
+- [PHASEMaterialPreset.wood](./wood.md)
   A surface characteristic that produces the acoustic quality of wood.
 
 

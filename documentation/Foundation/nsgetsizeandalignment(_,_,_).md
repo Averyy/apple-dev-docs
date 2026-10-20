@@ -1,7 +1,8 @@
 # NSGetSizeAndAlignment(_:_:_:)
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtains the actual size and the aligned size of an encoded type.
 
@@ -18,6 +19,10 @@ Obtains the actual size and the aligned size of an encoded type.
 
 ```swift
 func NSGetSizeAndAlignment(_ typePtr: UnsafePointer<CChar>, _ sizep: UnsafeMutablePointer<Int>?, _ alignp: UnsafeMutablePointer<Int>?) -> UnsafePointer<CChar>
+```
+
+```c
+extern const char *NSGetSizeAndAlignment(const char *typePtr, NSUInteger *sizep, NSUInteger *alignp);
 ```
 
 #### Discussion

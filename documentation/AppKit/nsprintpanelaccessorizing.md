@@ -1,17 +1,22 @@
 # NSPrintPanelAccessorizing
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that a Print panel object can use to get information from a printing accessory controller.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 protocol NSPrintPanelAccessorizing
+```
+
+```objc
+@protocol NSPrintPanelAccessorizing
 ```
 
 #### Overview
@@ -21,16 +26,17 @@ A printing accessory controller manages a custom print panel accessory view and 
 ## Topics
 
 ### Responding to Being Loaded from a Nib File
-- [func localizedSummaryItems() -> [[NSPrintPanel.AccessorySummaryKey : String]]](nsprintpanelaccessorizing/localizedsummaryitems.md)
+- [func localizedSummaryItems() -> [[NSPrintPanel.AccessorySummaryKey : String]]](./nsprintpanelaccessorizing/localizedsummaryitems%28%29.md)
   Returns an array of dictionaries containing the localized user setting summary strings.
-- [func keyPathsForValuesAffectingPreview() -> Set<String>](nsprintpanelaccessorizing/keypathsforvaluesaffectingpreview.md)
+- [func keyPathsForValuesAffectingPreview() -> Set<String>](./nsprintpanelaccessorizing/keypathsforvaluesaffectingpreview%28%29.md)
   Returns a set of strings identifying the key paths for any properties that might affect the built-in print preview.
-- [NSPrintPanel.AccessorySummaryKey](nsprintpanel/accessorysummarykey.md)
+- [NSPrintPanel.AccessorySummaryKey](./nsprintpanel/accessorysummarykey.md)
   Constants that specify the accessory panel keys.
 
 ## See Also
 
-- [class NSPDFPanel](nspdfpanel.md)
+### Print and PDF Panels
+- [class NSPDFPanel](./nspdfpanel.md)
   A Save or Export as PDF panel that’s consistent with the macOS user interface.
 
 

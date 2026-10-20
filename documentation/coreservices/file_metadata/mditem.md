@@ -1,6 +1,7 @@
 # MDItem
 
-**Framework**: Core Services
+**Framework**: Core Services  
+**Role**: API Collection
 
 #### Overview
 
@@ -11,42 +12,44 @@ For functions that expect an MDItemRef parameter, if thisparameter is not a vali
 ## Topics
 
 ### Creating an MDItem
-- [func MDItemCreate(CFAllocator!, CFString!) -> MDItem!](1426917-mditemcreate.md)
+- [func MDItemCreate(CFAllocator!, CFString!) -> MDItem!](../api-1426917-mditemcreate.md)
   Creates an MDItem object for a file at the specified path.
-- [func MDItemCreateWithURL(CFAllocator!, CFURL!) -> MDItem!](1427034-mditemcreatewithurl.md)
+- [func MDItemCreateWithURL(CFAllocator!, CFURL!) -> MDItem!](../api-1427034-mditemcreatewithurl.md)
   Creates an MDItem object for a file at the specified file URL.
 ### Getting the Type Identifier
-- [func MDItemGetTypeID() -> CFTypeID](1427168-mditemgettypeid.md)
+- [func MDItemGetTypeID() -> CFTypeID](../api-1427168-mditemgettypeid.md)
   Returns the type identifier of all MDItem instances.
 ### Retrieving Metadata Attributes 
-- [func MDItemCopyAttribute(MDItem!, CFString!) -> CFTypeRef!](1427080-mditemcopyattribute.md)
+- [func MDItemCopyAttribute(MDItem!, CFString!) -> CFTypeRef!](../api-1427080-mditemcopyattribute.md)
   Returns the value of the specified attribute in the metadata item.
-- [func MDItemCopyAttributes(MDItem!, CFArray!) -> CFDictionary!](1426980-mditemcopyattributes.md)
+- [func MDItemCopyAttributes(MDItem!, CFArray!) -> CFDictionary!](../api-1426980-mditemcopyattributes.md)
   Returns the values of the specified attributes in the metadata item.
-- [func MDItemCopyAttributeNames(MDItem!) -> CFArray!](1427066-mditemcopyattributenames.md)
+- [func MDItemCopyAttributeNames(MDItem!) -> CFArray!](../api-1427066-mditemcopyattributenames.md)
   Returns an array containing the attribute names existing in the metadata item.
 ### Data Types
-- [class MDItem](mditem.md)
+- [class MDItem](../mditem.md)
   A reference to a MDItem object.
 ### Constants
-- [Common Metadata Attribute Keys](file_metadata/mditem/common_metadata_attribute_keys.md)
+- [Common Metadata Attribute Keys](./mditem/common_metadata_attribute_keys.md)
   Metadata attribute keys that are common to many file types.
-- [Image Metadata Attribute Keys](file_metadata/mditem/image_metadata_attribute_keys.md)
+- [Image Metadata Attribute Keys](./mditem/image_metadata_attribute_keys.md)
   Metadata attribute keys that are common to image files.
-- [Video Metadata Attribute Keys](file_metadata/mditem/video_metadata_attribute_keys.md)
+- [Video Metadata Attribute Keys](./mditem/video_metadata_attribute_keys.md)
   Metadata attribute keys that are common to video files.
-- [Audio Metadata Attribute Keys](file_metadata/mditem/audio_metadata_attribute_keys.md)
+- [Audio Metadata Attribute Keys](./mditem/audio_metadata_attribute_keys.md)
   Metadata attribute keys that describe an audio file.
-- [File System Metadata Attribute Keys](file_metadata/mditem/file_system_metadata_attribute_keys.md)
+- [File System Metadata Attribute Keys](./mditem/file_system_metadata_attribute_keys.md)
   Metadata attribute keys that describe the file system attributes for a file.
 
 ## See Also
 
-- [MDSchema](file_metadata/mdschema.md)
-- [Spotlight Overview](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Carbon/Conceptual/MetadataIntro/MetadataIntro.html#//apple_ref/doc/uid/TP40001268)
-- [File Metadata Search Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Carbon/Conceptual/SpotlightQuery/Concepts/Introduction.html#//apple_ref/doc/uid/TP40001841)
-- [Spotlight Importer Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Carbon/Conceptual/MDImporters/MDImporters.html#//apple_ref/doc/uid/TP40001267)
-- [File Metadata Attributes Reference](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreServices/Reference/MetadataAttributesRef/MetadataAttrRef.html#//apple_ref/doc/uid/TP40001689)
+### Opaque Types
+- [MDSchema](./mdschema.md)
+### Related Documentation
+- [Spotlight Overview](https://developer.apple.com/library/archive/documentation/Carbon/Conceptual/MetadataIntro/MetadataIntro.html#//apple_ref/doc/uid/TP40001268)
+- [File Metadata Search Programming Guide](https://developer.apple.com/library/archive/documentation/Carbon/Conceptual/SpotlightQuery/Concepts/Introduction.html#//apple_ref/doc/uid/TP40001841)
+- [Spotlight Importer Programming Guide](https://developer.apple.com/library/archive/documentation/Carbon/Conceptual/MDImporters/MDImporters.html#//apple_ref/doc/uid/TP40001267)
+- [File Metadata Attributes Reference](https://developer.apple.com/library/archive/documentation/CoreServices/Reference/MetadataAttributesRef/MetadataAttrRef.html#//apple_ref/doc/uid/TP40001689)
 
 
 ---

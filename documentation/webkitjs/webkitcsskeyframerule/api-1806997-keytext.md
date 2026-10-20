@@ -7,7 +7,7 @@ A keyframe selector.
 
 ## Declaration
 
-```swift
+```
 attribute DOMString keyText
 ```
 
@@ -17,9 +17,11 @@ A keyframe selector represented as a percentage value or the keyword `from` or `
 
 ## See Also
 
-- [style](webkitcsskeyframerule/1807000-style.md)
+### Accessing Properties
+- [style](./api-1807000-style.md)
   The style associated with this keyframe.
-- [Safari CSS Visual Effects Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/InternetWeb/Conceptual/SafariVisualEffectsProgGuide/Introduction.html#//apple_ref/doc/uid/TP40008032)
+### Related Documentation
+- [Safari CSS Visual Effects Guide](https://developer.apple.com/library/archive/documentation/InternetWeb/Conceptual/SafariVisualEffectsProgGuide/Introduction.html#//apple_ref/doc/uid/TP40008032)
 
 
 ---

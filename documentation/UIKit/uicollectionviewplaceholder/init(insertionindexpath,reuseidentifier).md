@@ -1,7 +1,8 @@
 # init(insertionIndexPath:reuseIdentifier:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a placeholder object with the specified index path and reuse identifier.
 
@@ -15,6 +16,10 @@ Creates a placeholder object with the specified index path and reuse identifier.
 
 ```swift
 init(insertionIndexPath: IndexPath, reuseIdentifier: String)
+```
+
+```objc
+- (instancetype) initWithInsertionIndexPath:(NSIndexPath *) insertionIndexPath reuseIdentifier:(NSString *) reuseIdentifier;
 ```
 
 #### Return Value

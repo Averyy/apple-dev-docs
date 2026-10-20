@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Output.ProgressInfo
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 ProgressInfo includes the estimated remaining time and the progress stage during reconstruction.
 
@@ -20,14 +21,14 @@ struct ProgressInfo
 ## Topics
 
 ### Instance Properties
-- [let estimatedRemainingTime: TimeInterval?](photogrammetrysession/output/progressinfo/estimatedremainingtime.md)
-- [let processingStage: PhotogrammetrySession.Output.ProcessingStage?](photogrammetrysession/output/progressinfo/processingstage.md)
+- [let estimatedRemainingTime: TimeInterval?](./progressinfo/estimatedremainingtime.md)
+- [let processingStage: PhotogrammetrySession.Output.ProcessingStage?](./progressinfo/processingstage.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

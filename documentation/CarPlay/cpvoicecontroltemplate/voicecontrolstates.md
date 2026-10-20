@@ -1,7 +1,8 @@
 # voiceControlStates
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of voice control states available to the template.
 
@@ -14,6 +15,10 @@ The array of voice control states available to the template.
 
 ```swift
 var voiceControlStates: [CPVoiceControlState] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<CPVoiceControlState *> * voiceControlStates;
 ```
 
 

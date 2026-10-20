@@ -1,7 +1,8 @@
 # stage
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stage that owns this object.
 

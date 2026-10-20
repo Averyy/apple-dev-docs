@@ -1,7 +1,8 @@
 # init(capacity:initializingWith:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an array with the specified capacity, and then calls the given closure with an output span covering the array’s uninitialized memory.
 
@@ -29,7 +30,11 @@ Inside the closure, initialize elements by appending to the `OutputSpan`. The `O
 ## Parameters
 
 - `capacity`: The number of elements to allocate space for in the new array.
-- `initializer`: A closure that initializes the elements of the new array. - Parameters: - span: An `OutputSpan` covering uninitialized memory with space for the specified number of elements.
+- `initializer`: A closure that initializes the elements of the new array.
+
+  - Parameters:
+
+    - span: An `OutputSpan` covering uninitialized memory with space for the specified number of elements.
 
 
 ---

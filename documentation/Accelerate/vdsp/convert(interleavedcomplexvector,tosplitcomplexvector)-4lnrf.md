@@ -1,7 +1,8 @@
 # convert(interleavedComplexVector:toSplitComplexVector:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts the contents of an interleaved single-precision complex vector to a split complex vector.
 
@@ -11,7 +12,7 @@ Converts the contents of an interleaved single-precision complex vector to a spl
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ static func convert(interleavedComplexVector: [DSPComplex], toSplitComplexVector
 
 ## Mentions
 
-- [Finding the component frequencies in a composite sine wave](finding-the-component-frequencies-in-a-composite-sine-wave.md)
+- [Finding the component frequencies in a composite sine wave](../finding-the-component-frequencies-in-a-composite-sine-wave.md)
 
 ## Parameters
 
@@ -31,7 +32,8 @@ static func convert(interleavedComplexVector: [DSPComplex], toSplitComplexVector
 
 ## See Also
 
-- [static func convert(interleavedComplexVector: [DSPDoubleComplex], toSplitComplexVector: inout DSPDoubleSplitComplex)](vdsp/convert(interleavedcomplexvector:tosplitcomplexvector:)-8cqd4.md)
+### Converting interleaved-complex vectors to split-complex vectors
+- [static func convert(interleavedComplexVector: [DSPDoubleComplex], toSplitComplexVector: inout DSPDoubleSplitComplex)](./convert%28interleavedcomplexvector,tosplitcomplexvector%29-8cqd4.md)
   Converts the contents of an interleaved double-precision complex vector to a split complex vector.
 
 

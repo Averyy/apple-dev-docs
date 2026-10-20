@@ -1,7 +1,8 @@
 # fileType
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file type of the file promise provider.
 
@@ -14,14 +15,19 @@ The file type of the file promise provider.
 var fileType: String { get set }
 ```
 
+```objc
+@property (copy) NSString * fileType;
+```
+
 #### Discussion
 
 The type is Universal Type Identifier (UTI).
 
 ## See Also
 
-- [var delegate: (any NSFilePromiseProviderDelegate)?](nsfilepromiseprovider/delegate.md)
-- [var userInfo: Any?](nsfilepromiseprovider/userinfo.md)
+### Instance Properties
+- [var delegate: (any NSFilePromiseProviderDelegate)?](./delegate.md)
+- [var userInfo: Any?](./userinfo.md)
   Optional user information to pass to the file promise provider.
 
 

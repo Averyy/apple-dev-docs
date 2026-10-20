@@ -1,7 +1,8 @@
 # one
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A vector with one in all lanes.
 
@@ -19,6 +20,8 @@ A vector with one in all lanes.
 ```swift
 static var one: Self { get }
 ```
+
+Available when `Scalar` conforms to `FloatingPoint`.
 
 
 ---

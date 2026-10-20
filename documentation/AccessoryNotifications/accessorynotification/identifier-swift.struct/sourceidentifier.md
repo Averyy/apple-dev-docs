@@ -1,7 +1,8 @@
 # sourceIdentifier
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source app’s bundle identifier.
 
@@ -20,7 +21,8 @@ If Messages is the app that sends the notification, the value of this property i
 
 ## See Also
 
-- [let notificationIdentifier: String](accessorynotification/identifier-swift.struct/notificationidentifier.md)
+### Accessing identifier components
+- [let notificationIdentifier: String](./notificationidentifier.md)
   An identifier that the source app sets for the notification.
 
 

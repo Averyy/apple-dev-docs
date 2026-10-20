@@ -1,7 +1,8 @@
 # preferredVolume
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred volume for the audible medata data of the track.
 
@@ -19,9 +20,14 @@ The preferred volume for the audible medata data of the track.
 var preferredVolume: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float preferredVolume;
+```
+
 ## See Also
 
-- [var hasAudioSampleDependencies: Bool](avmutablemovietrack/hasaudiosampledependencies.md)
+### Accessing audible characteristics
+- [var hasAudioSampleDependencies: Bool](./hasaudiosampledependencies.md)
   A Boolean value that indicates whether the track has sample dependencies.
 
 

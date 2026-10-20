@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a newly allocated scrubber layout object from code.
 
@@ -14,13 +15,18 @@ Initializes and returns a newly allocated scrubber layout object from code.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A properly initialized scrubber layout object.
 
 ## See Also
 
-- [init(coder: NSCoder)](nsscrubberlayout/init(coder:).md)
+### Creating a scrubber layout
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Initializes and returns a newly allocated scrubber layout object from a storyboard or nib file.
 
 

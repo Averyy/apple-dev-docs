@@ -1,36 +1,39 @@
 # UIApplicationShortcutItems
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
 
+## Details
 
-
-**Type**: dictionary 
+- **Name**: `UIApplicationShortcutItems` (Home Screen Shortcut Items)
+- **Type**: array of dictionary 
 
 ## Topics
 
 ### Item Configuration
-- [UIApplicationShortcutItemIconFile](information-property-list/uiapplicationshortcutitems/uiapplicationshortcutitemiconfile.md)
-- [UIApplicationShortcutItemIconSymbolName](information-property-list/uiapplicationshortcutitems/uiapplicationshortcutitemiconsymbolname.md)
-- [UIApplicationShortcutItemIconType](information-property-list/uiapplicationshortcutitems/uiapplicationshortcutitemicontype.md)
-- [UIApplicationShortcutItemSubtitle](information-property-list/uiapplicationshortcutitems/uiapplicationshortcutitemsubtitle.md)
-- [UIApplicationShortcutItemTitle](information-property-list/uiapplicationshortcutitems/uiapplicationshortcutitemtitle.md)
-- [UIApplicationShortcutItemType](information-property-list/uiapplicationshortcutitems/uiapplicationshortcutitemtype.md)
-- [UIApplicationShortcutItemUserInfo](information-property-list/uiapplicationshortcutitems/uiapplicationshortcutitemuserinfo.md)
+- [UIApplicationShortcutItemIconFile](./uiapplicationshortcutitems/uiapplicationshortcutitemiconfile.md)
+- [UIApplicationShortcutItemIconSymbolName](./uiapplicationshortcutitems/uiapplicationshortcutitemiconsymbolname.md)
+- [UIApplicationShortcutItemIconType](./uiapplicationshortcutitems/uiapplicationshortcutitemicontype.md)
+- [UIApplicationShortcutItemSubtitle](./uiapplicationshortcutitems/uiapplicationshortcutitemsubtitle.md)
+- [UIApplicationShortcutItemTitle](./uiapplicationshortcutitems/uiapplicationshortcutitemtitle.md)
+- [UIApplicationShortcutItemType](./uiapplicationshortcutitems/uiapplicationshortcutitemtype.md)
+- [UIApplicationShortcutItemUserInfo](./uiapplicationshortcutitems/uiapplicationshortcutitemuserinfo.md)
 
 ## See Also
 
-- [NSPrincipalClass](information-property-list/nsprincipalclass.md)
+### Launch
+- [NSPrincipalClass](./nsprincipalclass.md)
   The name of the bundle’s main executable class.
-- [CLKComplicationPrincipalClass](information-property-list/clkcomplicationprincipalclass.md)
+- [CLKComplicationPrincipalClass](./clkcomplicationprincipalclass.md)
   The name of the class that implements the complication data source protocol.
-- [CFBundleExecutable](information-property-list/cfbundleexecutable.md)
+- [CFBundleExecutable](./cfbundleexecutable.md)
   The name of the bundle’s executable file.
-- [LSEnvironment](information-property-list/lsenvironment.md)
+- [LSEnvironment](./lsenvironment.md)
   Environment variables to set before launching the app.
 
 

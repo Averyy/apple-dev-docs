@@ -1,7 +1,8 @@
 # init(_:orientation:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a handler for performing requests on an image contained in a data object.
 
@@ -22,18 +23,19 @@ convenience init(_ data: Data, orientation: CGImagePropertyOrientation? = nil)
 
 ## See Also
 
-- [convenience init(URL, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-6imw8.md)
+### Creating a request handler
+- [convenience init(URL, orientation: CGImagePropertyOrientation?)](./init%28_,orientation%29-6imw8.md)
   Creates a handler for performing requests on an image at the specified URL.
-- [convenience init(CGImage, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-8nodt.md)
+- [convenience init(CGImage, orientation: CGImagePropertyOrientation?)](./init%28_,orientation%29-8nodt.md)
   Creates a handler for performing requests on Core Graphics images.
-- [convenience init(CVPixelBuffer, depthData: AVDepthData?, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:depthdata:orientation:)-3ebxg.md)
+- [convenience init(CVPixelBuffer, depthData: AVDepthData?, orientation: CGImagePropertyOrientation?)](./init%28_,depthdata,orientation%29-3ebxg.md)
   Creates a handler for performing requests on a Core Video pixel buffer.
-- [convenience init(CMSampleBuffer, depthData: AVDepthData?, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:depthdata:orientation:)-5itte.md)
+- [convenience init(CMSampleBuffer, depthData: AVDepthData?, orientation: CGImagePropertyOrientation?)](./init%28_,depthdata,orientation%29-5itte.md)
   Creates a request handler that performs requests on an image contained within a sample buffer.
-- [convenience init(CIImage, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-2hvfr.md)
+- [convenience init(CIImage, orientation: CGImagePropertyOrientation?)](./init%28_,orientation%29-2hvfr.md)
   Creates a handler for performing requests on Core Image images.
-- [convenience init(CVPixelBuffer, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-3zrh5.md)
-- [convenience init(CMSampleBuffer, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-8q7vz.md)
+- [convenience init(CVPixelBuffer, orientation: CGImagePropertyOrientation?)](./init%28_,orientation%29-3zrh5.md)
+- [convenience init(CMSampleBuffer, orientation: CGImagePropertyOrientation?)](./init%28_,orientation%29-8q7vz.md)
 
 
 ---

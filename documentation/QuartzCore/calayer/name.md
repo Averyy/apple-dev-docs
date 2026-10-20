@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the receiver.
 
@@ -17,6 +18,10 @@ The name of the receiver.
 
 ```swift
 var name: String? { get set }
+```
+
+```objc
+@property (copy, nullable) NSString * name;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # resolveCounters(_:range:destinationBuffer:destinationOffset:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a command that resolves the data from the samples in a sample counter buffer and stores the results into a buffer.
 
@@ -11,7 +12,7 @@ Encodes a command that resolves the data from the samples in a sample counter bu
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,13 @@ func resolveCounters(_ sampleBuffer: any MTLCounterSampleBuffer, range: Range<In
 
 ## Mentions
 
-- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md)
 
 #### Discussion
 
-For an example of how and when to use this method, see [`Converting a GPU’s counter data into a readable format`](converting-a-gpus-counter-data-into-a-readable-format.md).
+For an example of how and when to use this method, see [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md).
 
-> **Note**:  The GPU stores [`MTLCounterErrorValue`](mtlcountererrorvalue.md) in `destinationBuffer` each time it encounters an error resolving a sample.
+> **Note**:  The GPU stores [`MTLCounterErrorValue`](../mtlcountererrorvalue.md) in `destinationBuffer` each time it encounters an error resolving a sample.
 
 ## Parameters
 
@@ -38,7 +39,8 @@ For an example of how and when to use this method, see [`Converting a GPU’s co
 
 ## See Also
 
-- [func sampleCounters(sampleBuffer: any MTLCounterSampleBuffer, sampleIndex: Int, barrier: Bool)](mtlblitcommandencoder/samplecounters(samplebuffer:sampleindex:barrier:).md)
+### Sampling counters
+- [func sampleCounters(sampleBuffer: any MTLCounterSampleBuffer, sampleIndex: Int, barrier: Bool)](./samplecounters%28samplebuffer,sampleindex,barrier%29.md)
   Encodes a command that samples the GPU’s hardware counters during a blit pass and stores the data in a counter sample buffer.
 
 

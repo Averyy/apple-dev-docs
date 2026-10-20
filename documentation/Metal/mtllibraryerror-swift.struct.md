@@ -1,7 +1,8 @@
 # MTLLibraryError
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Metal errors related to libraries.
 
@@ -10,7 +11,7 @@ Metal errors related to libraries.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -22,37 +23,38 @@ struct MTLLibraryError
 ## Topics
 
 ### Errors
-- [static var unsupported: MTLLibraryError.Code](mtllibraryerror-swift.struct/unsupported.md)
+- [static var unsupported: MTLLibraryError.Code](./mtllibraryerror-swift.struct/unsupported.md)
   Metal couldn’t support the requested action.
-- [static var `internal`: MTLLibraryError.Code](mtllibraryerror-swift.struct/internal.md)
+- [static var `internal`: MTLLibraryError.Code](./mtllibraryerror-swift.struct/internal.md)
   The action caused an internal error.
-- [static var compileFailure: MTLLibraryError.Code](mtllibraryerror-swift.struct/compilefailure.md)
+- [static var compileFailure: MTLLibraryError.Code](./mtllibraryerror-swift.struct/compilefailure.md)
   The library or function failed to compile.
-- [static var compileWarning: MTLLibraryError.Code](mtllibraryerror-swift.struct/compilewarning.md)
+- [static var compileWarning: MTLLibraryError.Code](./mtllibraryerror-swift.struct/compilewarning.md)
   The library or function compiled successfully but generated warnings.
-- [static var fileNotFound: MTLLibraryError.Code](mtllibraryerror-swift.struct/filenotfound.md)
+- [static var fileNotFound: MTLLibraryError.Code](./mtllibraryerror-swift.struct/filenotfound.md)
   Metal couldn’t find the Metal source file.
-- [static var functionNotFound: MTLLibraryError.Code](mtllibraryerror-swift.struct/functionnotfound.md)
+- [static var functionNotFound: MTLLibraryError.Code](./mtllibraryerror-swift.struct/functionnotfound.md)
   Metal couldn’t find the specified Metal function.
 ### Error domain
-- [static var errorDomain: String](mtllibraryerror-swift.struct/errordomain.md)
+- [static var errorDomain: String](./mtllibraryerror-swift.struct/errordomain.md)
   The error domain used by Metal when returning library or function creation errors.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MTLLibraryError.Code](mtllibraryerror-swift.struct/code.md)
+### Errors
+- [MTLLibraryError.Code](./mtllibraryerror-swift.struct/code.md)
   Error codes for Metal library errors.
-- [let MTLLibraryErrorDomain: String](mtllibraryerrordomain.md)
+- [let MTLLibraryErrorDomain: String](./mtllibraryerrordomain.md)
   The error domain for Metal libraries.
 
 

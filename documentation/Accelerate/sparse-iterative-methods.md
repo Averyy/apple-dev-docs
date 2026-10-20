@@ -1,6 +1,7 @@
 # Sparse Iterative Methods
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Select a suitable iterative method to solve a system.
 
@@ -11,41 +12,42 @@ Sparse Iterative methods solve *Ax = b* through an iterative process that only r
 ## Topics
 
 ### Sparse Iterative Methods for Symmetric Positive-Definite Coefficient Matrices
-- [func SparseConjugateGradient() -> SparseIterativeMethod](sparseconjugategradient().md)
+- [func SparseConjugateGradient() -> SparseIterativeMethod](./sparseconjugategradient%28%29.md)
   Returns a conjugate gradient (CG) method.
-- [func SparseConjugateGradient(SparseCGOptions) -> SparseIterativeMethod](sparseconjugategradient(_:).md)
+- [func SparseConjugateGradient(SparseCGOptions) -> SparseIterativeMethod](./sparseconjugategradient%28_%29.md)
   Returns a conjugate gradient (CG) method with specified options.
-- [struct SparseCGOptions](sparsecgoptions.md)
+- [struct SparseCGOptions](./sparsecgoptions.md)
   Options for creating a conjugate gradient (CG) method.
 ### Sparse Iterative Methods for Symmetric Indefinite and Unsymmetric Coefficient Matrices
-- [func SparseGMRES() -> SparseIterativeMethod](sparsegmres().md)
+- [func SparseGMRES() -> SparseIterativeMethod](./sparsegmres%28%29.md)
   Returns a generalized minimal residual (GMRES) method.
-- [func SparseGMRES(SparseGMRESOptions) -> SparseIterativeMethod](sparsegmres(_:).md)
+- [func SparseGMRES(SparseGMRESOptions) -> SparseIterativeMethod](./sparsegmres%28_%29.md)
   Returns a generalized minimal residual (GMRES) method with specified options.
-- [struct SparseGMRESOptions](sparsegmresoptions.md)
+- [struct SparseGMRESOptions](./sparsegmresoptions.md)
   Options for creating a generalized minimal residual (GMRES) method.
 ### Sparse Iterative Methods for Overdetermined and Underdetermined Systems
-- [func SparseLSMR() -> SparseIterativeMethod](sparselsmr().md)
+- [func SparseLSMR() -> SparseIterativeMethod](./sparselsmr%28%29.md)
   Returns a default least squares minimum residual (LSMR) method.
-- [func SparseLSMR(SparseLSMROptions) -> SparseIterativeMethod](sparselsmr(_:).md)
+- [func SparseLSMR(SparseLSMROptions) -> SparseIterativeMethod](./sparselsmr%28_%29.md)
   Returns a least squares minimum residual method with specified options.
-- [struct SparseLSMROptions](sparselsmroptions.md)
+- [struct SparseLSMROptions](./sparselsmroptions.md)
   Options for creating a least squares minimum residual method.
 ### Iterative Method Structure
-- [struct SparseIterativeMethod](sparseiterativemethod.md)
+- [struct SparseIterativeMethod](./sparseiterativemethod.md)
   The base type for all iterative methods.
 
 ## See Also
 
-- [Solving systems using iterative methods](solving-systems-using-iterative-methods.md)
+### Solving systems with iterative sparse methods
+- [Solving systems using iterative methods](./solving-systems-using-iterative-methods.md)
   Use iterative methods to solve systems of equations where the coefficient matrix is sparse.
-- [Sparse Iterative Solving Functions (Matrix RHS)](sparse-iterative-solving-functions-matrix-rhs.md)
+- [Sparse Iterative Solving Functions (Matrix RHS)](./sparse-iterative-solving-functions-matrix-rhs.md)
   Solve a system with a right-hand-side dense matrix using iterative methods.
-- [Sparse Iterative Solving Functions (Vector RHS)](sparse-iterative-solving-functions-vector-rhs.md)
+- [Sparse Iterative Solving Functions (Vector RHS)](./sparse-iterative-solving-functions-vector-rhs.md)
   Solve a system with a right-hand-side dense vector using iterative methods.
-- [Sparse Iterate Functions](sparse-iterate-functions.md)
+- [Sparse Iterate Functions](./sparse-iterate-functions.md)
   Perform a single iteration of the specified iterative method.
-- [Preconditioners](preconditioners.md)
+- [Preconditioners](./preconditioners.md)
   Create preconditioners for iterative solves.
 
 

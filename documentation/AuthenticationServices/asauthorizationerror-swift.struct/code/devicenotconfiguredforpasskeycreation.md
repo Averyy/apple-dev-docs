@@ -1,7 +1,8 @@
 # ASAuthorizationError.Code.deviceNotConfiguredForPasskeyCreation
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This error signals that the device is not currently set up to create passkeys.
 
@@ -16,6 +17,10 @@ This error signals that the device is not currently set up to create passkeys.
 
 ```swift
 case deviceNotConfiguredForPasskeyCreation
+```
+
+```c
+ASAuthorizationErrorDeviceNotConfiguredForPasskeyCreation
 ```
 
 

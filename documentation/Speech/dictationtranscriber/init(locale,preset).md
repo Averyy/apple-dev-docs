@@ -1,7 +1,8 @@
 # init(locale:preset:)
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transcriber according to a preset.
 
@@ -25,9 +26,10 @@ convenience init(locale: Locale, preset: DictationTranscriber.Preset)
 
 ## See Also
 
-- [convenience init(locale: Locale, contentHints: Set<DictationTranscriber.ContentHint>, transcriptionOptions: Set<DictationTranscriber.TranscriptionOption>, reportingOptions: Set<DictationTranscriber.ReportingOption>, attributeOptions: Set<DictationTranscriber.ResultAttributeOption>)](dictationtranscriber/init(locale:contenthints:transcriptionoptions:reportingoptions:attributeoptions:).md)
+### Creating a transcriber
+- [convenience init(locale: Locale, contentHints: Set<DictationTranscriber.ContentHint>, transcriptionOptions: Set<DictationTranscriber.TranscriptionOption>, reportingOptions: Set<DictationTranscriber.ReportingOption>, attributeOptions: Set<DictationTranscriber.ResultAttributeOption>)](./init%28locale,contenthints,transcriptionoptions,reportingoptions,attributeoptions%29.md)
   Creates a transcriber.
-- [DictationTranscriber.Preset](dictationtranscriber/preset.md)
+- [DictationTranscriber.Preset](./preset.md)
   Predefined transcriber configurations.
 
 

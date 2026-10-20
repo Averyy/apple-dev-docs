@@ -1,18 +1,19 @@
 # macOS 27 Golden Gate Release Notes
 
-**Framework**: macOS Release Notes
+**Framework**: macOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 27 SDK provides support to develop apps for Mac computers running macOS 27 Golden Gate. The SDK comes bundled with Xcode 27. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The macOS 27 SDK provides support to develop apps for Mac computers running macOS 27 Golden Gate. The SDK comes bundled with Xcode 27. For information on the compatibility requirements for Xcode 27, see [Xcode 27 Release Notes](../Xcode-Release-Notes/xcode-27-release-notes.md).
 
 ##### General
 
 ###### Resolved Issues
 
-- Fixed: If you installed Xcode 27 beta on macOS Tahoe 26.5.1 and earlier, macOS virtual machine installation will fail due to a known bug. To restore virtual machine installation functionality, follow the [`How to reinstall macOS guide`](https://developer.apple.comhttps://support.apple.com/en-us/102655). (179068335)
+- Fixed: If you installed Xcode 27 beta on macOS Tahoe 26.5.1 and earlier, macOS virtual machine installation will fail due to a known bug. To restore virtual machine installation functionality, follow the [How to reinstall macOS guide](https://support.apple.com/en-us/102655). (179068335)
 
 ##### Accessory Access
 
@@ -21,19 +22,19 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - Fixed: Accessory Access does not work inside App Sandbox. (176815987)
 - Fixed: The Accessory Access framework is not supported within a macOS virtual machine. (177390971)
 
-##### Airpods Max 2
+##### AirPods Max 2
 
 ###### Resolved Issues
 
 - Fixed: You cannot update AirPods Max 2 firmware beta in iOS 27 Beta 1 and macOS 27 Beta 1. AirPods Max 2 firmware beta updates are supported in iOS 27 Beta 2 and macOS 27 Beta 2. (178280323)
 
-##### Airport Utility
+##### AirPort Utility
 
 ###### Deprecations
 
 - AirPort Utility is no longer included with new clean installations of macOS. However, if you update macOS when AirPort Utility is already installed, it remains on your system but functionality is not guaranteed starting in macOS 27. (158248382)
 
-##### Apfs
+##### APFS
 
 ###### Resolved Issues
 
@@ -54,14 +55,18 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ###### Known Issues
 
-- If you adopt the Audio App Schema domain, you might have trouble playing your content using Siri. (177198033) **Workaround:** Adopt an IntentValueQuery that takes the AudioSearch input, or index your entities in Spotlight.
-- Existing entities that conformed to @AppEntity(schema: .photos.asset) in prior releases might no longer compile in the 27 SDKs because new properties were added to the schema in this release. (181800016) (FB23652582) **Workaround:** To continue conforming to the schema, adopt the additional properties and move the code behind an availability check.
+- If you adopt the Audio App Schema domain, you might have trouble playing your content using Siri. (177198033)
+
+  **Workaround:** Adopt an IntentValueQuery that takes the AudioSearch input, or index your entities in Spotlight.
+- Existing entities that conformed to @AppEntity(schema: .photos.asset) in prior releases might no longer compile in the 27 SDKs because new properties were added to the schema in this release. (181800016) (FB23652582)
+
+  **Workaround:** To continue conforming to the schema, adopt the additional properties and move the code behind an availability check.
 
 ###### Deprecations
 
 - The `calendar.deleteEvents` schema has been renamed to `calendar.deleteEvent`. (176751155)
 
-##### Appkit
+##### AppKit
 
 ###### New Features
 
@@ -113,7 +118,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - You can now use a more flexible and granular Automatic Assessment Configuration in macOS 27, giving you greater control over your testing environment with controls for the Dock, Menu Bar, and accessibility settings, plus built-in system pre-checks and app launch restrictions. (158132137)
 
-##### Avfaudio
+##### AVFAudio
 
 ###### Resolved Issues
 
@@ -131,7 +136,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - Fixed: Sensitive QRCode detected as non-sensitive, preventing 3rd party developers from testing API functionality. (183962032)
 
-##### Core Ai
+##### Core AI
 
 ###### New Features
 
@@ -156,15 +161,21 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ###### Known Issues
 
-- Creating a SpotlightSearchTool without a configuration and using it with a LanguageModelSession backed by the on-device system language model fails with an error reporting that the number of tokens provided exceeds the maximum allowed. The tool’s default configuration is sized for models with large context windows, so the tool’s description and parameter schema alone exceed the on-device model’s context window before any prompt is added. (183770678) **Workaround:** Configure the tool with a focused guide, which uses a compact schema sized for the on-device model: ```None
-  let configuration = SpotlightSearchTool.Configuration(
-    sources: [.coreSpotlight],
-    guide: .focused()
-  )
-  let tool = SpotlightSearchTool(configuration: configuration)
-``` To search a specific kind of content, pass a domain: `.focused(.communications)`, `.focused(.calendar)`, `.focused(.documents)`, `.focused(.visualMedia)`, or `.focused(.audio)`. A focused guide exposes a smaller set of search capabilities than the default configuration. Sessions backed by a model with a larger context window can continue to use the default configuration.
+- Creating a SpotlightSearchTool without a configuration and using it with a LanguageModelSession backed by the on-device system language model fails with an error reporting that the number of tokens provided exceeds the maximum allowed. The tool’s default configuration is sized for models with large context windows, so the tool’s description and parameter schema alone exceed the on-device model’s context window before any prompt is added. (183770678)
 
-##### Corestorage
+  **Workaround:** Configure the tool with a focused guide, which uses a compact schema sized for the on-device model:
+
+  ```
+    let configuration = SpotlightSearchTool.Configuration(
+      sources: [.coreSpotlight],
+      guide: .focused()
+    )
+    let tool = SpotlightSearchTool(configuration: configuration)
+  ```
+
+  To search a specific kind of content, pass a domain: `.focused(.communications)`, `.focused(.calendar)`, `.focused(.documents)`, `.focused(.visualMedia)`, or `.focused(.audio)`. A focused guide exposes a smaller set of search capabilities than the default configuration. Sessions backed by a model with a larger context window can continue to use the default configuration.
+
+##### CoreStorage
 
 ###### Deprecations
 
@@ -195,13 +206,13 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - Fixed: When you call `enumerateDraggingItemsWithOptions:...` during `draggingSession:willBeginAtPoint:`, the returned `NSDraggingItem` might have an incorrect `draggingFrame` value. (177839494)
 
-##### Dvdplayback
+##### DVDPlayback
 
 ###### Deprecations
 
 - The `DVDPlayback ` framework has been removed from the macOS 27 Golden Gate SDK and apps cannot build against it. The framework will be removed in a future macOS release. (179136240)
 
-##### Ecosystemui
+##### EcosystemUI
 
 ###### New Features
 
@@ -218,7 +229,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - Fixed: Suggested names for a file or folder might be more generic than its contents. For example, a folder containing only bird photos might receive suggestions like “Wildlife” or “Animal Photos” rather than bird-specific names. (178093786)
 
-##### First Party App Search
+##### First-Party App Search
 
 ###### Resolved Issues
 
@@ -279,9 +290,9 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ###### New Features
 
-- arm64e.x1 introduces additional hardware security and performance instructions, including CPA2 for stronger MIE protection. Devices with support for arm64e.x1 include iPhone models with A20 Pro or later chips, Mac computers with M6 or later chips, and Apple Watch models with S11 or later chips. You can access arm64e.x1 and CPA2 in Xcode through the enhanced security pane and a build setting. Learn more in the [`Enhanced Security article`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/enabling-enhanced-security-for-your-app). (152103975)
+- arm64e.x1 introduces additional hardware security and performance instructions, including CPA2 for stronger MIE protection. Devices with support for arm64e.x1 include iPhone models with A20 Pro or later chips, Mac computers with M6 or later chips, and Apple Watch models with S11 or later chips. You can access arm64e.x1 and CPA2 in Xcode through the enhanced security pane and a build setting. Learn more in the [Enhanced Security article](../Xcode/enabling-enhanced-security-for-your-app.md). (152103975)
 
-##### Homekit
+##### HomeKit
 
 ###### New Features
 
@@ -295,7 +306,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - Fixed: When you try to generate an image using ChatGPT in the Messages extension on macOS, the image fails to generate. (174413381)
 - Fixed: In the Image Playground photo picker, the All and Suggested tabs are missing, which might limit the number of photos available for you to choose from. (178256174)
 
-##### Install Macos Golden Gate
+##### Install macOS Golden Gate
 
 ###### Resolved Issues
 
@@ -360,7 +371,9 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ###### New Features
 
-- Starting in 27.0 operating systems, select system processes now enforce stricter network security (TLS) requirements. These new requirements might cause connections to fail if the server does not meet them. The affected processes are those involved in MDM, DDM, Automated Device Enrollment, configuration profile installation, app installation, and software updates. Servers must support TLS 1.2 at minimum, using cipher suites and certificates that meet App Transport Security (ATS) requirements. For additional details on affected processes, requirements, and how to audit and diagnose failures in managed environments, please reference [`Prepare your network environment for stricter security requirements`](https://developer.apple.comhttps://support.apple.com/en-us/126655). For additional details on ATS and the new requirements, please reference [`Preventing Insecure Network Connections`](https://developer.apple.comhttps://developer.apple.com/documentation/Security/preventing-insecure-network-connections) and [`NSRequiresNIAPTLSPackageVersion`](https://developer.apple.comhttps://developer.apple.com/documentation/BundleResources/Information-Property-List/NSRequiresNIAPTLSPackageVersion). (176055825)
+- Starting in 27.0 operating systems, select system processes now enforce stricter network security (TLS) requirements. These new requirements might cause connections to fail if the server does not meet them. The affected processes are those involved in MDM, DDM, Automated Device Enrollment, configuration profile installation, app installation, and software updates. Servers must support TLS 1.2 at minimum, using cipher suites and certificates that meet App Transport Security (ATS) requirements.
+
+  For additional details on affected processes, requirements, and how to audit and diagnose failures in managed environments, please reference [Prepare your network environment for stricter security requirements](https://support.apple.com/en-us/126655). For additional details on ATS and the new requirements, please reference [Preventing Insecure Network Connections](../Security/preventing-insecure-network-connections.md) and [NSRequiresNIAPTLSPackageVersion](../BundleResources/information-property-list/nsrequiresniaptlspackageversion.md). (176055825)
 
 ##### News
 
@@ -374,13 +387,13 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - Fixed: You might be unable to dismiss certain notifications. (181736751)
 
-##### Nsapplication
+##### NSApplication
 
 ###### New Features
 
 - `NSApplication.presentationOptions` now includes the `.disableScreenCornerInteractions` option, which you can use to disable Hot Corners. (168692527)
 
-##### Nsgesturerecognizer
+##### NSGestureRecognizer
 
 ###### New Features
 
@@ -389,13 +402,13 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - To prevent exclusive gestures from making apps unresponsive, stuck gestures are automatically cancelled after user input has ended for a few seconds. A new user default, `NSCrashOnStuckGestureTimeout`, allows you to crash your app when this condition occurs, to aid in debugging. (175705302)
 - A new diagnostic user default `NSGestureRecognizerCrashOnMissingOverrides` is provided to help developers find `NSGestureRecognizer` subclasses that are missing required overrides to ensure that they always reach a terminal state. Even without this gesture set, AppKit will produce error messages in the console to alert developers when such cases are found. (176396492)
 
-##### Nsscrollview
+##### NSScrollView
 
 ###### New Features
 
 - New properties on `NSScrollView` allow you to constrain the number of touches needed to scroll. The new `scrollGestureForFailureRelationship` property allows you to set up gesture relationships against scrolling gestures. (164924201)
 
-##### Photokit
+##### PhotoKit
 
 ###### Resolved Issues
 
@@ -422,13 +435,15 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - Fixed: After you load certain 3D models, materials for most other 3D models might not appear properly and display an error pattern instead. (177483209)
 - Fixed: When you drag an annotation in a 3D document, such as a USD file, and release the mouse button, the cursor might remain in the open-hand state instead of returning to the arrow cursor. (177754200)
 
-##### Privacy Security Settings
+##### Privacy & Security Settings
 
 ###### Known Issues
 
-- In the Files & Folders pane, a process without a bundle ID cannot be granted access to specific app data containers or app group containers owned by other developer teams. (184660124) **Workaround:** Consider if the access is necessary. If required, grant Full Disk Access to the process for the duration of the requirement.
+- In the Files & Folders pane, a process without a bundle ID cannot be granted access to specific app data containers or app group containers owned by other developer teams. (184660124)
 
-##### Realitykit
+  **Workaround:** Consider if the access is necessary. If required, grant Full Disk Access to the process for the duration of the requirement.
+
+##### RealityKit
 
 ###### New Features
 
@@ -445,19 +460,25 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ###### Known Issues
 
-- After you tap “Add to Reminders” in Messages, the “New Reminder” interface presents the reminder with an empty title field. (180040003) **Workaround:** Tap “Add to Reminders” in the “New Reminder” interface to create the reminder, then edit the title in the Reminders app.
+- After you tap “Add to Reminders” in Messages, the “New Reminder” interface presents the reminder with an empty title field. (180040003)
+
+  **Workaround:** Tap “Add to Reminders” in the “New Reminder” interface to create the reminder, then edit the title in the Reminders app.
 
 ##### Rosetta
 
 ###### New Features
 
-- On launch, Applications previously set to “Open using Rosetta” by a user will have the application launch natively. Any compatibility issues requiring Rosetta from the past should be re-assessed on macOS 27. (168097174)
+- On launch, Applications previously set to “Open using Rosetta” by a user will have the application launch natively.
+
+  Any compatibility issues requiring Rosetta from the past should be re-assessed on macOS 27. (168097174)
 
 ###### Deprecations
 
 - If Rosetta was previously installed, it is not automatically restored after upgrading to macOS 27.0. (163213094)
 - Installer packages which specify no `hostArchitecture` will now default to arm64. Ensure any pre and post install scripts behave as intended under arm64. Additionally, audit any remaining installer plugins to ensure compatibility on Apple silicon. (171187112)
-- Intel-based plugins and loaders may not appear in Settings or trigger notifications of their incompatibility. All Intel-based software will no longer be compatible with macOS 28.0, excluding legacy games. Check common plugin locations for VSTs, HAL, ARA, PDEs, Color Pickers, Quicklook & Spotlight plugins/extensions/components, such as: ~/Library/Audio/Plug-Ins/* ~/Library/Printers/ ~/Library/ColorPickers/ (176042635)
+- Intel-based plugins and loaders may not appear in Settings or trigger notifications of their incompatibility. All Intel-based software will no longer be compatible with macOS 28.0, excluding legacy games.
+
+  Check common plugin locations for VSTs, HAL, ARA, PDEs, Color Pickers, Quicklook & Spotlight plugins/extensions/components, such as: ~/Library/Audio/Plug-Ins/* ~/Library/Printers/ ~/Library/ColorPickers/ (176042635)
 
 ##### Safari
 
@@ -468,7 +489,9 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ###### Known Issues
 
-- When developing Safari Extensions, unsigned extensions might not appear until rebuilt when using the “Allow Unsigned Extensions” checkbox. (183044008) **Workaround:** Ensure “Allow Unsigned Extensions” is checked and rebuild the extension project.
+- When developing Safari Extensions, unsigned extensions might not appear until rebuilt when using the “Allow Unsigned Extensions” checkbox. (183044008)
+
+  **Workaround:** Ensure “Allow Unsigned Extensions” is checked and rebuild the extension project.
 
 ##### Safari Extensions
 
@@ -488,7 +511,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - Fixed: Setup Assistant might remain on screen after you configure a new user account. (175787760)
 
-##### Shadergraph
+##### ShaderGraph
 
 ###### Resolved Issues
 
@@ -503,8 +526,12 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ###### Known Issues
 
-- If an app intent uses Duration or `LPLinkMetadata`, creating a shortcut with that intent and then attempting to edit it with “Describe a change” might fail. (166068090) **Workaround:** If the model discards the action, press “Undo” to recover the unsupported intent.
-- When an app intent defines a `UnionValue` parameter with two number-related types (for example, both Int and Double), the number option appears twice in the parameter picker menu and shows as double-selected. (168315587) **Workaround:** Define only one number-related type in the `UnionValue` parameter (for example, use only Int or only Double, not both).
+- If an app intent uses Duration or `LPLinkMetadata`, creating a shortcut with that intent and then attempting to edit it with “Describe a change” might fail. (166068090)
+
+  **Workaround:** If the model discards the action, press “Undo” to recover the unsupported intent.
+- When an app intent defines a `UnionValue` parameter with two number-related types (for example, both Int and Double), the number option appears twice in the parameter picker menu and shows as double-selected. (168315587)
+
+  **Workaround:** Define only one number-related type in the `UnionValue` parameter (for example, use only Int or only Double, not both).
 
 ##### Siri
 
@@ -539,11 +566,19 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ###### Known Issues
 
-- After Siri returns photo search results and you select photos, Siri might not detect which photos are selected on screen. Commands like “Send these” might apply to all photos returned from the search rather than only the selected ones. (171728298) **Workaround:** Open Photos, select the photos you want to act on, then perform the action using Siri — for example, “Send these photos to Bob”.
+- After Siri returns photo search results and you select photos, Siri might not detect which photos are selected on screen. Commands like “Send these” might apply to all photos returned from the search rather than only the selected ones. (171728298)
+
+  **Workaround:** Open Photos, select the photos you want to act on, then perform the action using Siri — for example, “Send these photos to Bob”.
 - “Ask Siri” might appear in context menus on macOS even when Siri is disabled in System Settings or the system is in a region that does not currently support Siri. (176299524)
-- Siri doesn’t support voice commands to interact with specific photos. For example, you can’t refer to photos by number, such as “photo one” or “photo four.” (176812955) **Workaround:** Use the photo picker to select the photo you want, or tap to select photos directly.
-- When you ask Siri for Maps information, the response snippets might appear incomplete or display formatting issues. (177116121) **Workaround:** Ask Siri to repeat the information, or open Maps directly for complete details.
-- When you ask Siri to add photos to an album, the confirmation prompt and spoken response might report or display more photos than will actually be added. (177376984) **Workaround:** Add photos to the album manually in the Photos app: tap Select, tap the photos you want to add, tap the Share button, tap Add to Album, then tap the album.
+- Siri doesn’t support voice commands to interact with specific photos. For example, you can’t refer to photos by number, such as “photo one” or “photo four.” (176812955)
+
+  **Workaround:** Use the photo picker to select the photo you want, or tap to select photos directly.
+- When you ask Siri for Maps information, the response snippets might appear incomplete or display formatting issues. (177116121)
+
+  **Workaround:** Ask Siri to repeat the information, or open Maps directly for complete details.
+- When you ask Siri to add photos to an album, the confirmation prompt and spoken response might report or display more photos than will actually be added. (177376984)
+
+  **Workaround:** Add photos to the album manually in the Photos app: tap Select, tap the photos you want to add, tap the Share button, tap Add to Album, then tap the album.
 - Non-SF Symbol custom images for entities might not appear in Siri results for third-party apps. (177984074)
 
 ##### Software Update
@@ -565,16 +600,18 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ###### Known Issues
 
-- When a Mac is running macOS 11.0, you might not be able to select the boot volume of macOS 27.0 or later as the startup disk in System Settings. (166640903) **Workaround:** Shut down your Mac, press and hold the power button until “Loading startup options” appears, then select the boot volume of macOS 27.0 or later.
+- When a Mac is running macOS 11.0, you might not be able to select the boot volume of macOS 27.0 or later as the startup disk in System Settings. (166640903)
 
-##### Storekit
+  **Workaround:** Shut down your Mac, press and hold the power button until “Loading startup options” appears, then select the boot volume of macOS 27.0 or later.
+
+##### StoreKit
 
 ###### New Features
 
 - Offer code redemption APIs now return a `VerificationResult` when redemption completes. If a redemption succeeds, your app receives a `VerificationResult` that contains a `Transaction` object. If a redemption fails, your app receives an error that describes what caused the redemption to fail. (141012819)
 - StoreKit now includes the `Transaction.OwnershipType.assigned` and `Transaction.RevocationType.assignmentRevoked` enum values to support volume purchases. `Transaction` query methods now additionally return transactions assigned to the Managed Apple Account. (156749517)
 - New `Product.ProductType` APIs represent subscription Bundles and subscription Suites. New APIs in `Product.SubscriptionInfo.BundledSubscription` let you fetch merchandising data about subscriptions contained in a Bundle. Transaction and RenewalInfo contain new fields that provide information about purchases and customer status regarding Bundles and Suites. (160501742)
-- `partnerName` and `partnerId` properties for Advanced Commerce API are available in [`Transaction.AdvancedCommerceInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/advancedcommerceinfo-swift.struct) and [`RenewalInfo.AdvancedCommerceInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct). (167808780)
+- `partnerName` and `partnerId` properties for Advanced Commerce API are available in [Transaction.AdvancedCommerceInfo](../StoreKit/transaction/advancedcommerceinfo-swift.struct.md) and [RenewalInfo.AdvancedCommerceInfo](../StoreKit/product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct.md). (167808780)
 
 ###### Resolved Issues
 
@@ -583,7 +620,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - Fixed: Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases. (181842500)
 - Fixed: Transactions fail to finish. (183165269)
 
-##### Storekit Testing in Xcode
+##### StoreKit Testing in Xcode
 
 ###### Resolved Issues
 
@@ -609,60 +646,80 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - Fixed: When your project has a minimum deployment target lower than 27.0, using conditionals inside a `Chart` closure produces the warning “Conformance of `_ConditionalContent<TrueContent, FalseContent>` to `ChartContent` is only available in ‘’ 27.0 or newer,” and the app might crash at runtime when that content is loaded. (174168981)
 
-##### Swiftdata
+##### SwiftData
 
 ###### Resolved Issues
 
 - Fixed: You might experience a deadlock for @Query when saving a ModelContext on a background actor while scheduling new async tasks for a ModelActor. (178113288)
 
-##### Swiftui
+##### SwiftUI
 
 ###### New Features
 
 - Bordered `Menu` and `Picker` buttons now support better label customization and no longer use `NSPopUpButton` in their implementation. (68559433) (FB8657381)
 - `AsyncImage` now automatically caches downloaded images using HTTP caching protocols, allowing servers to control caching behavior via standard headers. You can customize caching for specific images using the new `AsyncImage` initializers that accept `URLRequest` with custom `cachePolicy` settings. Additionally, you can set a custom `URLSession` using the new `View.asyncImageURLSession(_:)` API to control how all child `AsyncImage` views perform data tasks. (78212597)
-- A `@State` declared with an expression as its initial value used to evaluate the expression each time the view struct re-instantiates. In the case of `@State private var model = Model()`, this means `Model.init()` gets called many times throughout the view’s lifetime. Xcode 27 introduces a new `@State` implementation that avoids this repeated evaluation. This new behavior back-deploys to iOS 17 aligned OSes. The new `@State` is implemented with a Swift macro. It is largely source compatible with the property wrapper version, with a few exceptions. If you provide an initial value at `@State` declaration, and also try to assign a value to it in an initializer, the initializer value is discarded. This behavior has not changed because of the macro, but some such cases no longer compile: ```None
- struct StickerPageView: View {
-     @State private var page = StickerPage()
-     let title: String
- 
-     init(title: String) {
-         // `title` won't have any effect
-         // this also won't compile with @State macro
-         self.page = StickerPage(title: title)
-         self.title = title
-     }
- }
-``` When assigning initial value via an initializer, do not provide an initial value at the @State declaration. ```None
- struct StickerPageView: View {
-     @State private var page: StickerPage // no initial value expression
-     let title: String
- 
-     init(title: String) {
-         self.page = StickerPage(title: title) // works!
-         self.title = title
-     }
- }
-``` When all stored members of a struct are private, the compiler synthesizes a private init that can be used in an extension of the same type: ```None
- struct StickerPageView: View {
-     @State private var page: StickerPage
-     private let title: String
-     ...
- }
- 
- extension StickerPageView {
-     init(title: String, _ page: StickerPage) {
-         self.init(page: page, title: title) // using the synthesized init
-     }
- }
-``` The state macro disables this synthesized initializer. So the code above no longer compiles. To mitigate, assign value to members explicitly: ```None
- extension StickerPageView {
-     init(title: String, _ page: StickerPage) {
-         self.title = title
-         self.page = page
-     }
- }
-``` In rare situations, the automatic inference of generic arguments of `@State` is less flexible with the macro implementation. Write the type with more specificity. Composing `@State` with other property wrappers or macros is not supported. (105893279)
+- A `@State` declared with an expression as its initial value used to evaluate the expression each time the view struct re-instantiates. In the case of `@State private var model = Model()`, this means `Model.init()` gets called many times throughout the view’s lifetime. Xcode 27 introduces a new `@State` implementation that avoids this repeated evaluation. This new behavior back-deploys to iOS 17 aligned OSes. The new `@State` is implemented with a Swift macro. It is largely source compatible with the property wrapper version, with a few exceptions.
+
+  If you provide an initial value at `@State` declaration, and also try to assign a value to it in an initializer, the initializer value is discarded. This behavior has not changed because of the macro, but some such cases no longer compile:
+
+  ```
+   struct StickerPageView: View {
+       @State private var page = StickerPage()
+       let title: String
+   
+       init(title: String) {
+           // `title` won't have any effect
+           // this also won't compile with @State macro
+           self.page = StickerPage(title: title)
+           self.title = title
+       }
+   }
+  ```
+
+  When assigning initial value via an initializer, do not provide an initial value at the @State declaration.
+
+  ```
+   struct StickerPageView: View {
+       @State private var page: StickerPage // no initial value expression
+       let title: String
+   
+       init(title: String) {
+           self.page = StickerPage(title: title) // works!
+           self.title = title
+       }
+   }
+  ```
+
+  When all stored members of a struct are private, the compiler synthesizes a private init that can be used in an extension of the same type:
+
+  ```
+   struct StickerPageView: View {
+       @State private var page: StickerPage
+       private let title: String
+       ...
+   }
+   
+   extension StickerPageView {
+       init(title: String, _ page: StickerPage) {
+           self.init(page: page, title: title) // using the synthesized init
+       }
+   }
+  ```
+
+  The state macro disables this synthesized initializer. So the code above no longer compiles. To mitigate, assign value to members explicitly:
+
+  ```
+   extension StickerPageView {
+       init(title: String, _ page: StickerPage) {
+           self.title = title
+           self.page = page
+       }
+   }
+  ```
+
+  In rare situations, the automatic inference of generic arguments of `@State` is less flexible with the macro implementation. Write the type with more specificity.
+
+  Composing `@State` with other property wrappers or macros is not supported. (105893279)
 - In apps built with the iOS 27.0 and macOS 27.0 SDKs, selectable `Text` views now support `TextRenderer`. (158160386) (FB19589465)
 - In apps built with the 27.0 SDKs, the new `ReadableDocument` and `WritableDocument` protocols support asynchronous reading and writing, progress reporting, and direct access to document URLs. New `DocumentGroup` initializers that adopt these protocols let you disable document creation for editing-only apps and present custom UI before any document is opened. The initializers expose an `Observable` `URLDocumentConfiguration` and integrate with Swift concurrency and the `Observation` framework. New applications should prefer `ReadableDocument` and `WritableDocument` over `ReferenceFileDocument`, which remains available. (158441552)
 - The menu bar on iPadOS 27.0 and macOS 27.0, as well as context menus on macOS 27.0, present a reduced set of menu item images. By default, SwiftUI now hides all menu item symbol images in most contexts, while non-symbol images remain visible. Review the updated Human Interface Guidelines to determine which menu items in your app should still display images. Use the `labelStyle(_:)` view modifier with the `.titleAndIcon` style to indicate that a menu item `Label`’s icon should always be shown — such as when the menu item represents an object or a concept rather than an action. SwiftUI continues to automatically provide default visible menu item images for certain common system-wide menu items, such as Settings, Share, and Print. (170480710)
@@ -716,11 +773,11 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ###### New Features
 
-- System now provides Swift APIs for the C `stat`, `lstat`, `fstat`, and `fstatat` system calls. This includes a new `Stat` type with initializers from `FilePath`, `FileDescriptor`, or a C string; `FilePath.stat()` and `FileDescriptor.stat()` instance methods; and supporting types (`FileType`, `FileMode`, `FileFlags`, `UserID`, `GroupID`, `DeviceID`, and `Inode`). See [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md) for more details. (160612181)
+- System now provides Swift APIs for the C `stat`, `lstat`, `fstat`, and `fstatat` system calls. This includes a new `Stat` type with initializers from `FilePath`, `FileDescriptor`, or a C string; `FilePath.stat()` and `FileDescriptor.stat()` instance methods; and supporting types (`FileType`, `FileMode`, `FileFlags`, `UserID`, `GroupID`, `DeviceID`, and `Inode`). See [SYS-0006](https://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md) for more details. (160612181)
 
 ###### Resolved Issues
 
-- Fixed: Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors. See [`SYS-0008`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details. (177911316)
+- Fixed: Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [SYS-0006](https://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors. See [SYS-0008](https://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details. (177911316)
 
 ##### System Integrity Protection
 
@@ -729,7 +786,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - Accessing files in other developer teams’ app data containers and app group containers no longer prompts the user for authorization; such accesses are denied by default and can be managed by the user in Privacy & Security settings. (161835690)
 - XProtect may now restrict access to app data that is commonly targeted by malicious software.  Accessing files created by other developer teams’ apps may be denied by default but may be managed by the user in Privacy & Security settings. (178668601)
 
-##### Tcc
+##### TCC
 
 ###### Deprecations
 
@@ -747,7 +804,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - Fixed: When connecting to two identical displays (same model and serial number), the first display will work as expected whereas the second display might not light up. (176292156)
 
-##### Uikit
+##### UIKit
 
 ###### New Features
 
@@ -763,9 +820,9 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ###### Deprecations
 
-- Apps built with the latest SDK must adopt the scene-based life cycle or they fail to launch. For migration guidance, see [`Transitioning to the UIKit scene-based life cycle`](https://developer.apple.comhttps://developer.apple.com/documentation/uikit/transitioning-to-the-uikit-scene-based-life-cycle). (141837548)
+- Apps built with the latest SDK must adopt the scene-based life cycle or they fail to launch. For migration guidance, see [Transitioning to the UIKit scene-based life cycle](../UIKit/transitioning-to-the-uikit-scene-based-life-cycle.md). (141837548)
 
-##### Usdkit
+##### USDKit
 
 ###### Resolved Issues
 
@@ -776,7 +833,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - Meshes compressed using the USDKit export API or `usdcrush tool` in Beta 1 cannot be decoded by Beta 2, and  meshes from Beta 2 cannot be decoded by Beta 1. (177417812)
 
-##### Videotoolbox
+##### VideoToolbox
 
 ###### New Features
 
@@ -802,7 +859,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - Weather Highlights is currently only available in US English. (164408676)
 
-##### Wi Fi Settings
+##### Wi-Fi Settings
 
 ###### Resolved Issues
 
@@ -820,13 +877,13 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - Fixed: Writing Tools on macOS might stop working after you use Describe Your Change. (174926739)
 
-##### Xnu
+##### xnu
 
 ###### Resolved Issues
 
 - Fixed: Launch binaries larger than 2GiB might fail. (134346968)
 
-##### Xquartz
+##### XQuartz
 
 ###### Resolved Issues
 
@@ -834,7 +891,8 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ## See Also
 
-- [macOS 27.2 Golden Gate RC Release Notes](macos-27_2-release-notes.md)
+### macOS 27
+- [macOS 27.2 Golden Gate RC Release Notes](./macos-27_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

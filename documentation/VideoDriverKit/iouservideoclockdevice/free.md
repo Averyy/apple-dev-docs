@@ -1,7 +1,8 @@
 # free
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Frees the video clock device.
 
@@ -10,7 +11,7 @@ Frees the video clock device.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 

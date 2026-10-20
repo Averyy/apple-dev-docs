@@ -1,7 +1,8 @@
 # remove(at:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an element from the column.
 

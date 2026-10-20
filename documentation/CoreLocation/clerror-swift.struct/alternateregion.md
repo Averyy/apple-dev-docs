@@ -1,7 +1,8 @@
 # alternateRegion
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A region that location services can monitor more effectively.
 
@@ -19,11 +20,12 @@ var alternateRegion: CLRegion? { get }
 
 #### Discussion
 
-This property has a value only for errors of type [`regionMonitoringResponseDelayed`](clerror-swift.struct/regionmonitoringresponsedelayed.md).
+This property has a value only for errors of type [`regionMonitoringResponseDelayed`](./regionmonitoringresponsedelayed.md).
 
 ## See Also
 
-- [static var errorDomain: String](clerror-swift.struct/errordomain.md)
+### Getting the error details
+- [static var errorDomain: String](./errordomain.md)
 
 
 ---

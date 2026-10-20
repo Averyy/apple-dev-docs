@@ -1,7 +1,8 @@
 # optionsPanel
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The options panel to display when the ellipsis button on the travel estimates is tapped.
 
@@ -14,6 +15,10 @@ The options panel to display when the ellipsis button on the travel estimates is
 
 ```swift
 var optionsPanel: CPMapPanel? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) CPMapPanel * optionsPanel;
 ```
 
 

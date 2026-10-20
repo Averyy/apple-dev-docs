@@ -1,7 +1,8 @@
 # getPlace(annotation, options)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Obtains the place associated with a map feature annotation.
 
@@ -10,7 +11,7 @@ Obtains the place associated with a map feature annotation.
 
 ## Declaration
 
-```swift
+```
 getPlace(
     annotation: MapFeatureAnnotation,
     options?: PlaceLookupOptions,
@@ -19,24 +20,25 @@ getPlace(
 
 #### Return Value
 
-A promise that resolves with a [`Place`](place.md) on success, or rejects with an `Error` on failure.
+A promise that resolves with a [`Place`](../place.md) on success, or rejects with an `Error` on failure.
 
 #### Discussion
 
-Use this method to retrieve the full [`Place`](place.md) information for a [`MapFeatureAnnotation`](mapfeatureannotation.md) that a person selects on the map.
+Use this method to retrieve the full [`Place`](../place.md) information for a [`MapFeatureAnnotation`](../mapfeatureannotation.md) that a person selects on the map.
 
-Pass an `AbortSignal` from an `AbortController` to the [`signal`](placelookupoptions/signal.md) option to allow the controller to cancel a pending request. When the controller aborts, the returned promise rejects with a `DOMException` whose `name` is `"AbortError"`.
+Pass an `AbortSignal` from an `AbortController` to the [`signal`](../placelookupoptions/signal.md) option to allow the controller to cancel a pending request. When the controller aborts, the returned promise rejects with a `DOMException` whose `name` is `"AbortError"`.
 
 ## Parameters
 
-- `annotation`: The [`MapFeatureAnnotation`](mapfeatureannotation.md) to look up.
-- `options`: Options that can overwrite the same options set on the property or that you supplied to the [`PlaceLookup`](placelookup.md) constructor. See [`PlaceLookupOptions`](placelookupoptions.md).
+- `annotation`: The [`MapFeatureAnnotation`](../mapfeatureannotation.md) to look up.
+- `options`: Options that can overwrite the same options set on the property or that you supplied to the [`PlaceLookup`](../placelookup.md) constructor. See [`PlaceLookupOptions`](../placelookupoptions.md).
 
 ## See Also
 
-- [getPlace(id, options)](placelookup/getplace.md)
+### Getting a place
+- [getPlace(id, options)](./getplace.md)
   Obtains a place using its identifier.
-- [interface PlaceLookupOptions](placelookupoptions.md)
+- [interface PlaceLookupOptions](../placelookupoptions.md)
   Options for place lookup requests.
 
 

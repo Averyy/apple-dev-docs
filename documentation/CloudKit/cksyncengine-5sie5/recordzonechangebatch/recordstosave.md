@@ -1,7 +1,8 @@
 # recordsToSave
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The records to save.
 
@@ -11,7 +12,7 @@ The records to save.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ var recordsToSave: [CKRecord]
 
 ## See Also
 
-- [var recordIDsToDelete: [CKRecord.ID]](cksyncengine-5sie5/recordzonechangebatch/recordidstodelete.md)
+### Managing the records
+- [var recordIDsToDelete: [CKRecord.ID]](./recordidstodelete.md)
   The record identifiers of the records to delete.
 
 

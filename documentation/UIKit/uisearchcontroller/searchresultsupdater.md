@@ -1,7 +1,8 @@
 # searchResultsUpdater
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object responsible for updating the contents of the search results controller.
 
@@ -9,7 +10,7 @@ The object responsible for updating the contents of the search results controlle
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ The object responsible for updating the contents of the search results controlle
 weak var searchResultsUpdater: (any UISearchResultsUpdating)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UISearchResultsUpdating> searchResultsUpdater;
+```
+
 #### Discussion
 
-Assign an object that adopts the [`UISearchResultsUpdating`](uisearchresultsupdating.md) protocol. Use the methods of that protocol to search your content and deliver the results to your search results view controller. The object contained by the [`searchResultsUpdater`](uisearchcontroller/searchresultsupdater.md) property is often the view controller that’s set during initialization.
+Assign an object that adopts the [`UISearchResultsUpdating`](../uisearchresultsupdating.md) protocol. Use the methods of that protocol to search your content and deliver the results to your search results view controller. The object contained by the [`searchResultsUpdater`](./searchresultsupdater.md) property is often the view controller that’s set during initialization.
 
 ## See Also
 
-- [var searchBar: UISearchBar](uisearchcontroller/searchbar.md)
+### Managing the search results
+- [var searchBar: UISearchBar](./searchbar.md)
   The search bar to install in your interface.
-- [var searchResultsController: UIViewController?](uisearchcontroller/searchresultscontroller.md)
+- [var searchResultsController: UIViewController?](./searchresultscontroller.md)
   The view controller that displays the results of the search.
-- [var isActive: Bool](uisearchcontroller/isactive.md)
+- [var isActive: Bool](./isactive.md)
   The presented state of the search interface.
 
 

@@ -1,7 +1,8 @@
 # SubscriptionUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a subscription update request.
 
@@ -10,16 +11,16 @@ The request body you use to update a subscription update request.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionUpdateRequest.Data.Attributes](subscriptionupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object SubscriptionUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a subscription update request resource.
-- [object SubscriptionUpdateRequest.Data.Relationships](subscriptionupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object SubscriptionUpdateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -27,7 +28,7 @@ object SubscriptionUpdateRequest.Data
 - `attributes` (SubscriptionUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
 - `relationships` (SubscriptionUpdateRequest.Data.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptions`
 
 
 ---

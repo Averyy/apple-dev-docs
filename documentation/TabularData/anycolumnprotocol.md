@@ -1,7 +1,8 @@
 # AnyColumnProtocol
 
 **Framework**: TabularData  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents a type-erased column.
 
@@ -22,36 +23,37 @@ protocol AnyColumnProtocol
 
 #### Overview
 
-`AnyColumnProtocol` defines the common functionality for type-erased column types. Its typed counterpart is [`ColumnProtocol`](columnprotocol.md).
+`AnyColumnProtocol` defines the common functionality for type-erased column types. Its typed counterpart is [`ColumnProtocol`](./columnprotocol.md).
 
 ## Topics
 
 ### Inspecting a Type-Erased Column Type
-- [var name: String](anycolumnprotocol/name.md)
+- [var name: String](./anycolumnprotocol/name.md)
   The name of the column type.
-- [var count: Int](anycolumnprotocol/count.md)
+- [var count: Int](./anycolumnprotocol/count.md)
   The number of elements in the column type.
-- [var wrappedElementType: any Any.Type](anycolumnprotocol/wrappedelementtype.md)
+- [var wrappedElementType: any Any.Type](./anycolumnprotocol/wrappedelementtype.md)
   The underlying type of the column type’s elements.
 ### Retrieving Elements
-- [subscript(Int) -> Any?](anycolumnprotocol/subscript(_:)-1dl8y.md)
+- [subscript(Int) -> Any?](./anycolumnprotocol/subscript%28_%29-1dl8y.md)
   Retrieves an element at a position in the column type.
-- [subscript(Range<Int>) -> AnyColumnSlice](anycolumnprotocol/subscript(_:)-81v4q.md)
+- [subscript(Range<Int>) -> AnyColumnSlice](./anycolumnprotocol/subscript%28_%29-81v4q.md)
   Retrieves a contiguous subrange of the column type’s elements.
 
 ## Relationships
 
 ### Conforming Types
-- [AnyColumn](anycolumn.md)
-- [AnyColumnSlice](anycolumnslice.md)
+- [AnyColumn](./anycolumn.md)
+- [AnyColumnSlice](./anycolumnslice.md)
 
 ## See Also
 
-- [struct AnyColumn](anycolumn.md)
+### Type-Erased Columns
+- [struct AnyColumn](./anycolumn.md)
   A type-erased column.
-- [struct AnyColumnSlice](anycolumnslice.md)
+- [struct AnyColumnSlice](./anycolumnslice.md)
   A type-erased column slice.
-- [protocol AnyColumnPrototype](anycolumnprototype.md)
+- [protocol AnyColumnPrototype](./anycolumnprototype.md)
   A prototype that creates type-erased columns.
 
 

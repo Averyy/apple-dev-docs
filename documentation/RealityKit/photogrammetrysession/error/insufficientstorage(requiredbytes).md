@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Error.insufficientStorage(requiredBytes:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates insufficient storage space.
 

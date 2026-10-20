@@ -1,7 +1,8 @@
 # NSAccessibilityCustomRotor.RotorType.audiograph
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.13+
@@ -10,6 +11,10 @@
 
 ```swift
 case audiograph
+```
+
+```c
+NSAccessibilityCustomRotorTypeAudiograph
 ```
 
 

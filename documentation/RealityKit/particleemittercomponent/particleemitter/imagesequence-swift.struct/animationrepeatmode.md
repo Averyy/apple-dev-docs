@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.ImageSequence.AnimationRepeatMode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for how the effect timeline is played, used by the animationMode property.
 
@@ -22,20 +23,20 @@ enum AnimationRepeatMode
 ## Topics
 
 ### Enumeration Cases
-- [ParticleEmitterComponent.ParticleEmitter.ImageSequence.AnimationRepeatMode.autoReverse](particleemittercomponent/particleemitter/imagesequence-swift.struct/animationrepeatmode/autoreverse.md)
+- [ParticleEmitterComponent.ParticleEmitter.ImageSequence.AnimationRepeatMode.autoReverse](./animationrepeatmode/autoreverse.md)
   The image sequence plays through and then plays in reverse order and then repeats.
-- [ParticleEmitterComponent.ParticleEmitter.ImageSequence.AnimationRepeatMode.looping](particleemittercomponent/particleemitter/imagesequence-swift.struct/animationrepeatmode/looping.md)
+- [ParticleEmitterComponent.ParticleEmitter.ImageSequence.AnimationRepeatMode.looping](./animationrepeatmode/looping.md)
   The image sequence loops repeatedly.
-- [ParticleEmitterComponent.ParticleEmitter.ImageSequence.AnimationRepeatMode.playOnce](particleemittercomponent/particleemitter/imagesequence-swift.struct/animationrepeatmode/playonce.md)
+- [ParticleEmitterComponent.ParticleEmitter.ImageSequence.AnimationRepeatMode.playOnce](./animationrepeatmode/playonce.md)
   The image sequence plays once and then stops.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
 
 
 ---

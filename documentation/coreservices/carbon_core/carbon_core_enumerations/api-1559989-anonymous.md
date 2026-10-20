@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kUCTSNoKeysAddedToObjectErr: Int](kuctsnokeysaddedtoobjecterr.md)
-- [var kUCTSSearchListErr: Int](kuctssearchlisterr.md)
+- [var kUCTSNoKeysAddedToObjectErr: Int](../../kuctsnokeysaddedtoobjecterr.md)
+- [var kUCTSSearchListErr: Int](../../kuctssearchlisterr.md)
 
 
 ---

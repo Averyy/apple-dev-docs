@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns `true` if the current hardware supports Object Capture.
 
@@ -19,9 +20,10 @@ static var isSupported: Bool { get }
 
 ## See Also
 
-- [convenience init(input: URL, configuration: PhotogrammetrySession.Configuration) throws](photogrammetrysession/init(input:configuration:)-wo4e.md)
+### Creating the session
+- [convenience init(input: URL, configuration: PhotogrammetrySession.Configuration) throws](./init%28input,configuration%29-wo4e.md)
   Creates a session from a specified directory of images.
-- [convenience init<S>(input: S, configuration: PhotogrammetrySession.Configuration) throws](photogrammetrysession/init(input:configuration:)-7glmh.md)
+- [convenience init<S>(input: S, configuration: PhotogrammetrySession.Configuration) throws](./init%28input,configuration%29-7glmh.md)
   Creates a session from a sequence of samples.
 
 

@@ -1,7 +1,8 @@
 # containsAttachments(in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates if the attributed string contains an attachment in the specified range.
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates if the attributed string contains an atta
 func containsAttachments(in range: NSRange) -> Bool
 ```
 
+```objc
+- (BOOL) containsAttachmentsInRange:(NSRange) range;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the attributed string contains a property configured as [`attachment`](nsattributedstring/key/attachment.md) with [`character`](https://developer.apple.com/documentation/appkit/nstextattachment/character) in `range`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the attributed string contains a property configured as [`attachment`](./key/attachment.md) with [`character`](../../AppKit/nstextattachment/character.md) in `range`; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -30,9 +35,10 @@ func containsAttachments(in range: NSRange) -> Bool
 
 ## See Also
 
-- [func size() -> CGSize](nsattributedstring/size.md)
+### Getting metrics for the string
+- [func size() -> CGSize](./size%28%29.md)
   Returns the size necessary to draw the string.
-- [func boundingRect(with: CGSize, options: NSStringDrawingOptions, context: NSStringDrawingContext?) -> CGRect](nsattributedstring/boundingrect(with:options:context:).md)
+- [func boundingRect(with: CGSize, options: NSStringDrawingOptions, context: NSStringDrawingContext?) -> CGRect](./boundingrect%28with,options,context%29.md)
   Returns the bounding rectangle necessary to draw the string.
 
 

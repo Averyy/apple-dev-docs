@@ -1,7 +1,8 @@
 # MTLVertexAmplificationViewMapping
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An offset applied to a render target index and viewport index.
 
@@ -19,38 +20,43 @@ An offset applied to a render target index and viewport index.
 struct MTLVertexAmplificationViewMapping
 ```
 
+```c
+typedef struct { ... } MTLVertexAmplificationViewMapping;
+```
+
 ## Mentions
 
-- [Improving rendering performance with vertex amplification](improving-rendering-performance-with-vertex-amplification.md)
+- [Improving rendering performance with vertex amplification](./improving-rendering-performance-with-vertex-amplification.md)
 
 ## Topics
 
 ### Creating a view mapping
-- [init()](mtlvertexamplificationviewmapping/init.md)
+- [init()](./mtlvertexamplificationviewmapping/init%28%29.md)
   Initializes a default view mapping.
-- [init(viewportArrayIndexOffset: UInt32, renderTargetArrayIndexOffset: UInt32)](mtlvertexamplificationviewmapping/init(viewportarrayindexoffset:rendertargetarrayindexoffset:).md)
+- [init(viewportArrayIndexOffset: UInt32, renderTargetArrayIndexOffset: UInt32)](./mtlvertexamplificationviewmapping/init%28viewportarrayindexoffset,rendertargetarrayindexoffset%29.md)
   Initializes a new view mapping.
 ### Specifying mapping offsets
-- [var renderTargetArrayIndexOffset: UInt32](mtlvertexamplificationviewmapping/rendertargetarrayindexoffset.md)
+- [var renderTargetArrayIndexOffset: UInt32](./mtlvertexamplificationviewmapping/rendertargetarrayindexoffset.md)
   An offset into the list of render targets.
-- [var viewportArrayIndexOffset: UInt32](mtlvertexamplificationviewmapping/viewportarrayindexoffset.md)
+- [var viewportArrayIndexOffset: UInt32](./mtlvertexamplificationviewmapping/viewportarrayindexoffset.md)
   An offset into the list of viewports.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct MTLViewport](mtlviewport.md)
+### Dynamic render pipeline states
+- [struct MTLViewport](./mtlviewport.md)
   A 3D rectangular region for the viewport clipping.
-- [struct MTLScissorRect](mtlscissorrect.md)
+- [struct MTLScissorRect](./mtlscissorrect.md)
   A rectangle for the scissor fragment test.
-- [struct MTLQuadTessellationFactorsHalf](mtlquadtessellationfactorshalf.md)
+- [struct MTLQuadTessellationFactorsHalf](./mtlquadtessellationfactorshalf.md)
   The per-patch tessellation factors for a quad patch.
-- [struct MTLTriangleTessellationFactorsHalf](mtltriangletessellationfactorshalf.md)
+- [struct MTLTriangleTessellationFactorsHalf](./mtltriangletessellationfactorshalf.md)
   The per-patch tessellation factors for a triangle patch.
 
 

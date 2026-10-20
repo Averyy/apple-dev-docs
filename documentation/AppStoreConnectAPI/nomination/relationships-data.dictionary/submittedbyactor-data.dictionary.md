@@ -1,21 +1,22 @@
 # Nomination.Relationships.SubmittedByActor
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object Nomination.Relationships.SubmittedByActor
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object Nomination.Relationships.SubmittedByActor.Data](nomination/relationships-data.dictionary/submittedbyactor-data.dictionary/data-data.dictionary.md)
+- [object Nomination.Relationships.SubmittedByActor.Data](./submittedbyactor-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

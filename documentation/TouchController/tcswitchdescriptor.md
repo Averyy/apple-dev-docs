@@ -1,7 +1,8 @@
 # TCSwitchDescriptor
 
 **Framework**: Touch Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A descriptor for configuring a switch.
 
@@ -16,56 +17,61 @@ A descriptor for configuring a switch.
 class TCSwitchDescriptor
 ```
 
+```objc
+@interface TCSwitchDescriptor : NSObject
+```
+
 ## Topics
 
 ### Creating the descriptor
-- [init()](tcswitchdescriptor/init.md)
+- [init()](./tcswitchdescriptor/init%28%29.md)
   Creates a new switch descriptor with default values.
 ### Inspecting the descriptor
-- [var contents: TCControlContents?](tcswitchdescriptor/contents.md)
+- [var contents: TCControlContents?](./tcswitchdescriptor/contents.md)
   The contents for the switch in its normal state.
-- [var highlightDuration: TimeInterval](tcswitchdescriptor/highlightduration.md)
+- [var highlightDuration: TimeInterval](./tcswitchdescriptor/highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
-- [var label: TCControlLabel](tcswitchdescriptor/label.md)
+- [var label: TCControlLabel](./tcswitchdescriptor/label.md)
   The label you associate with the switch.
-- [var offset: CGPoint](tcswitchdescriptor/offset.md)
+- [var offset: CGPoint](./tcswitchdescriptor/offset.md)
   The control’s offset from the anchor, which determines its position.
-- [var size: CGSize](tcswitchdescriptor/size.md)
+- [var size: CGSize](./tcswitchdescriptor/size.md)
   The size (width, height) of the switch in points.
-- [var switchedOnContents: TCControlContents?](tcswitchdescriptor/switchedoncontents.md)
+- [var switchedOnContents: TCControlContents?](./tcswitchdescriptor/switchedoncontents.md)
   The contents for the switch when it is switched on.
-- [var zIndex: Int](tcswitchdescriptor/zindex.md)
+- [var zIndex: Int](./tcswitchdescriptor/zindex.md)
   The z-index of the switch. A lower z-index is drawn first.
 ### Accessing the anchor
-- [var anchor: TCControlLayoutAnchor](tcswitchdescriptor/anchor.md)
+- [var anchor: TCControlLayoutAnchor](./tcswitchdescriptor/anchor.md)
   The anchor point that the switch’s offset is relative to.
-- [enum TCControlLayoutAnchor](tccontrollayoutanchor.md)
+- [enum TCControlLayoutAnchor](./tccontrollayoutanchor.md)
   Defines the anchor point for a control.
-- [var anchorCoordinateSystem: TCControlLayoutAnchorCoordinateSystem](tcswitchdescriptor/anchorcoordinatesystem.md)
+- [var anchorCoordinateSystem: TCControlLayoutAnchorCoordinateSystem](./tcswitchdescriptor/anchorcoordinatesystem.md)
   The coordinate system for the control’s anchor point.
-- [enum TCControlLayoutAnchorCoordinateSystem](tccontrollayoutanchorcoordinatesystem.md)
+- [enum TCControlLayoutAnchorCoordinateSystem](./tccontrollayoutanchorcoordinatesystem.md)
   Defines the coodinate system for an anchor point.
 ### Getting the collider shape
-- [var colliderShape: TCColliderShape](tcswitchdescriptor/collidershape.md)
+- [var colliderShape: TCColliderShape](./tcswitchdescriptor/collidershape.md)
   The shape of collider to use for the switch.
-- [enum TCColliderShape](tccollidershape.md)
+- [enum TCColliderShape](./tccollidershape.md)
   Defines the shape of a control collider.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func addSwitch(descriptor: TCSwitchDescriptor) -> TCSwitch](tctouchcontroller/addswitch(descriptor:).md)
+### Adding a switch control
+- [func addSwitch(descriptor: TCSwitchDescriptor) -> TCSwitch](./tctouchcontroller/addswitch%28descriptor%29.md)
   Creates a new switch control with the provided descriptor, and adds it to the touch controller.
 
 

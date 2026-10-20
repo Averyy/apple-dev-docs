@@ -1,7 +1,8 @@
 # bluetoothRSSI
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Bluetooth RSSI (Received Signal Strength Indicator) value from the discovered accessory.
 
@@ -21,7 +22,8 @@ This value represents the signal strength in dBm when the session discovered the
 
 ## See Also
 
-- [var bluetoothAdvertisementData: [AnyHashable : Any]?](asdiscoveredaccessory/bluetoothadvertisementdata.md)
+### Working with accessory properties
+- [var bluetoothAdvertisementData: [AnyHashable : Any]?](./bluetoothadvertisementdata.md)
   The Bluetooth advertisement data from the discovered accessory.
 
 

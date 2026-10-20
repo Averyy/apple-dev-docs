@@ -1,7 +1,8 @@
 # totalCount
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of occurrences of the captured custom metric.
 
@@ -19,7 +20,8 @@ let totalCount: Int
 
 ## See Also
 
-- [let signpostDuration: Histogram<UnitDuration>](signpostintervalmetric/signpostduration.md)
+### Counts and timing
+- [let signpostDuration: Histogram<UnitDuration>](./signpostduration.md)
   A histogram of the different time intervals of a custom metric event.
 
 

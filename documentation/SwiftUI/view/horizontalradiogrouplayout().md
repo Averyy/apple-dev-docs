@@ -1,7 +1,8 @@
 # horizontalRadioGroupLayout()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for radio group style pickers within this view to be horizontally positioned with the radio buttons inside the layout.
 
@@ -17,9 +18,9 @@ func horizontalRadioGroupLayout() -> some View
 
 #### Discussion
 
-Use `horizontalRadioGroupLayout()` to configure the visual layout of radio buttons in a [`Picker`](picker.md) so that the radio buttons are arranged horizontally in the view.
+Use `horizontalRadioGroupLayout()` to configure the visual layout of radio buttons in a [`Picker`](../picker.md) so that the radio buttons are arranged horizontally in the view.
 
-The example below shows two [`Picker`](picker.md) controls configured as radio button groups; the first group shows the default vertical layout; the second group shows the effect of `horizontalRadioGroupLayout()` which renders the radio buttons horizontally.
+The example below shows two [`Picker`](../picker.md) controls configured as radio button groups; the first group shows the default vertical layout; the second group shows the effect of `horizontalRadioGroupLayout()` which renders the radio buttons horizontally.
 
 ```swift
 struct HorizontalRadioGroupLayout: View {
@@ -49,21 +50,22 @@ struct HorizontalRadioGroupLayout: View {
 }
 ```
 
-![A screenshot showing radio button groups laid out horizontally and](/images/com.apple.SwiftUI/SwiftUI-view-horizontalRadioGroupLayout@2x.png)
+![A screenshot showing radio button groups laid out horizontally and](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-view-horizontalRadioGroupLayout@2x.png)
 
 ## See Also
 
-- [struct Picker](picker.md)
+### Choosing from a set of options
+- [struct Picker](../picker.md)
   A control for selecting from a set of mutually exclusive values.
-- [func pickerStyle<S>(S) -> some View](view/pickerstyle(_:).md)
+- [func pickerStyle<S>(S) -> some View](./pickerstyle%28_%29.md)
   Sets the style for pickers within this view.
-- [func defaultWheelPickerItemHeight(CGFloat) -> some View](view/defaultwheelpickeritemheight(_:).md)
+- [func defaultWheelPickerItemHeight(CGFloat) -> some View](./defaultwheelpickeritemheight%28_%29.md)
   Sets the default wheel-style picker item height.
-- [var defaultWheelPickerItemHeight: CGFloat](environmentvalues/defaultwheelpickeritemheight.md)
+- [var defaultWheelPickerItemHeight: CGFloat](../environmentvalues/defaultwheelpickeritemheight.md)
   The default height of an item in a wheel-style picker, such as a date picker.
-- [func paletteSelectionEffect(PaletteSelectionEffect) -> some View](view/paletteselectioneffect(_:).md)
+- [func paletteSelectionEffect(PaletteSelectionEffect) -> some View](./paletteselectioneffect%28_%29.md)
   Specifies the selection effect to apply to a palette item.
-- [struct PaletteSelectionEffect](paletteselectioneffect.md)
+- [struct PaletteSelectionEffect](../paletteselectioneffect.md)
   The selection effect to apply to a palette item.
 
 

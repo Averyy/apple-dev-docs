@@ -1,7 +1,8 @@
 # NEHotspotManager.Error.configurationInvalid
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The hotspot manager configuration is invalid.
 
@@ -19,7 +20,8 @@ case configurationInvalid
 
 ## See Also
 
-- [NEHotspotManager.Error.configurationNotLoaded](nehotspotmanager/error/configurationnotloaded.md)
+### Configuration errors
+- [NEHotspotManager.Error.configurationNotLoaded](./configurationnotloaded.md)
   The hotspot manager configuration is not loaded.
 
 

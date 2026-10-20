@@ -1,7 +1,8 @@
 # beginTrimming(completionHandler:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Puts the player view into trimming mode.
 
@@ -11,12 +12,20 @@ Puts the player view into trimming mode.
 ## Declaration
 
 ```swift
+func beginTrimming(completionHandler handler: (@Sendable (AVPlayerViewTrimResult) -> Void)? = nil)
+```
+
+```swift
 func beginTrimming() async -> AVPlayerViewTrimResult
+```
+
+```objc
+- (void) beginTrimmingWithCompletionHandler:(void (^)(AVPlayerViewTrimResult result)) handler;
 ```
 
 ## Mentions
 
-- [Implementing trimming in a macOS player](implementing-trimming-in-a-macos-player.md)
+- [Implementing trimming in a macOS player](../implementing-trimming-in-a-macos-player.md)
 
 #### Discussion
 
@@ -38,13 +47,16 @@ This method blocks until the user selects either the Trim or the Cancel button.
 
 ## Parameters
 
-- `handler`: The callback the system invokes when the user selects the Trim or Cancel button in the trimming UI. The result passed to the closure indicates whether the user clicked the Trim or Cancel button.
+- `handler`: The callback the system invokes when the user selects the Trim or Cancel button in the trimming UI.
+
+  The result passed to the closure indicates whether the user clicked the Trim or Cancel button.
 
 ## See Also
 
-- [var canBeginTrimming: Bool](avplayerview/canbegintrimming.md)
+### Trimming media
+- [var canBeginTrimming: Bool](./canbegintrimming.md)
   A Boolean value that indicates whether the player view can begin trimming.
-- [enum AVPlayerViewTrimResult](avplayerviewtrimresult.md)
+- [enum AVPlayerViewTrimResult](../avplayerviewtrimresult.md)
   Constants that specify an action a user takes when trimming media in a player view.
 
 

@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.LanguageIdentifierAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type for using a language identifier as an attribute.
 
@@ -24,18 +25,19 @@ enum LanguageIdentifierAttribute
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [Escapable](../swift/escapable.md)
-- [MarkdownDecodableAttributedStringKey](markdowndecodableattributedstringkey.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [Escapable](../../../Swift/escapable.md)
+- [MarkdownDecodableAttributedStringKey](../../markdowndecodableattributedstringkey.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let languageIdentifier: AttributeScopes.FoundationAttributes.LanguageIdentifierAttribute](attributescopes/foundationattributes/languageidentifier.md)
+### Using language attributes
+- [let languageIdentifier: AttributeScopes.FoundationAttributes.LanguageIdentifierAttribute](./languageidentifier.md)
   A property for accessing a language identifier attribute.
 
 

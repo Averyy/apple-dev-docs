@@ -1,7 +1,8 @@
 # ignoresGroup
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Ignores the current phase of the match group.
 

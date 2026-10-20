@@ -1,12 +1,15 @@
 # NSForm
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
-An `NSForm` object is a vertical matrix of [`NSFormCell`](nsformcell.md) objects to implement the fields.
+An `NSForm` object is a vertical matrix of [`NSFormCell`](./nsformcell.md) objects to implement the fields.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.10
+
+> **Deprecated**: Use NSTextField directly instead, and consider NSStackView for layout assistance
 
 ## Declaration
 
@@ -14,98 +17,103 @@ An `NSForm` object is a vertical matrix of [`NSFormCell`](nsformcell.md) objects
 class NSForm
 ```
 
+```objc
+@interface NSForm : NSMatrix
+```
+
 ## Topics
 
 ### Adding and Removing Entries
-- [func addEntry(String) -> NSFormCell](nsform/addentry(_:).md)
+- [func addEntry(String) -> NSFormCell](./nsform/addentry%28_%29.md)
   Adds a new entry to the end of the receiver and gives it the specified title.
-- [func insertEntry(String, at: Int) -> NSFormCell!](nsform/insertentry(_:at:).md)
+- [func insertEntry(String, at: Int) -> NSFormCell!](./nsform/insertentry%28_,at%29.md)
   Inserts an entry with the specified title into the receiver.
-- [func removeEntry(at: Int)](nsform/removeentry(at:).md)
+- [func removeEntry(at: Int)](./nsform/removeentry%28at%29.md)
   Removes and releases the entry at the specified index.
 ### Changing the Appearance of All the Entries
-- [func setBezeled(Bool)](nsform/setbezeled(_:).md)
+- [func setBezeled(Bool)](./nsform/setbezeled%28_%29.md)
   Sets whether the receiver’s entries should display a bezel around their editable text.
-- [func setBordered(Bool)](nsform/setbordered(_:).md)
+- [func setBordered(Bool)](./nsform/setbordered%28_%29.md)
   Sets whether the receiver’s entries should display a border around their editable text fields.
-- [func setEntryWidth(CGFloat)](nsform/setentrywidth(_:).md)
+- [func setEntryWidth(CGFloat)](./nsform/setentrywidth%28_%29.md)
   Sets the width of all the entries in the receiver.
-- [func setFrameSize(NSSize)](nsform/setframesize(_:).md)
+- [func setFrameSize(NSSize)](./nsform/setframesize%28_%29.md)
   Sets the size of the receiver’s frame size to the specified value.
-- [func setInterlineSpacing(CGFloat)](nsform/setinterlinespacing(_:).md)
+- [func setInterlineSpacing(CGFloat)](./nsform/setinterlinespacing%28_%29.md)
   Sets the spacing between entries
-- [func setTitleAlignment(NSTextAlignment)](nsform/settitlealignment(_:).md)
+- [func setTitleAlignment(NSTextAlignment)](./nsform/settitlealignment%28_%29.md)
   Sets the alignment for all of the entry titles.
-- [func setTitleBaseWritingDirection(NSWritingDirection)](nsform/settitlebasewritingdirection(_:).md)
+- [func setTitleBaseWritingDirection(NSWritingDirection)](./nsform/settitlebasewritingdirection%28_%29.md)
   Sets the writing direction for the title of every control embedded in the form.
-- [func setTextAlignment(NSTextAlignment)](nsform/settextalignment(_:).md)
+- [func setTextAlignment(NSTextAlignment)](./nsform/settextalignment%28_%29.md)
   Sets the alignment for all of the receiver’s editable text.
-- [func setTextBaseWritingDirection(NSWritingDirection)](nsform/settextbasewritingdirection(_:).md)
+- [func setTextBaseWritingDirection(NSWritingDirection)](./nsform/settextbasewritingdirection%28_%29.md)
   Sets the writing direction for the text content of every control embedded in the form.
-- [func setTitleFont(NSFont)](nsform/settitlefont(_:).md)
+- [func setTitleFont(NSFont)](./nsform/settitlefont%28_%29.md)
   Sets the font for all of the entry titles.
-- [func setTextFont(NSFont)](nsform/settextfont(_:).md)
+- [func setTextFont(NSFont)](./nsform/settextfont%28_%29.md)
   Sets the font for all of the receiver’s editable text fields
 ### Getting Cells and Indices
-- [func indexOfCell(withTag: Int) -> Int](nsform/indexofcell(withtag:).md)
+- [func indexOfCell(withTag: Int) -> Int](./nsform/indexofcell%28withtag%29.md)
   Returns the index of the entry whose tag is `tag`.
-- [func indexOfSelectedItem() -> Int](nsform/indexofselecteditem.md)
+- [func indexOfSelectedItem() -> Int](./nsform/indexofselecteditem%28%29.md)
   Returns the index of the selected entry.
-- [func cell(at: Int) -> Any!](nsform/cell(at:).md)
+- [func cell(at: Int) -> Any!](./nsform/cell%28at%29.md)
   Returns the entry at the specified index.
 ### Displaying a Cell
-- [func drawCell(at: Int)](nsform/drawcell(at:).md)
+- [func drawCell(at: Int)](./nsform/drawcell%28at%29.md)
   Displays the entry at the specified index.
 ### Auto Layout Sizing
-- [func preferredTextFieldWidth() -> CGFloat](nsform/preferredtextfieldwidth.md)
+- [func preferredTextFieldWidth() -> CGFloat](./nsform/preferredtextfieldwidth%28%29.md)
   The preferred width of the form’s cells when using Auto Layout.
-- [func setPreferredTextFieldWidth(CGFloat)](nsform/setpreferredtextfieldwidth(_:).md)
+- [func setPreferredTextFieldWidth(CGFloat)](./nsform/setpreferredtextfieldwidth%28_%29.md)
   Sets the preferred text field width used by Auto Layout.
 ### Editing Text
-- [func selectText(at: Int)](nsform/selecttext(at:).md)
+- [func selectText(at: Int)](./nsform/selecttext%28at%29.md)
   Selects the entry at the specified index.
 
 ## Relationships
 
 ### Inherits From
-- [NSMatrix](nsmatrix.md)
+- [NSMatrix](./nsmatrix.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](nstouchbarprovider.md)
-- [NSUserActivityRestoring](nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
-- [NSViewToolTipOwner](nsviewtooltipowner.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](./nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](./nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](./nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](./nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](./nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](./nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](./nstouchbarprovider.md)
+- [NSUserActivityRestoring](./nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
+- [NSUserInterfaceValidations](./nsuserinterfacevalidations.md)
+- [NSViewToolTipOwner](./nsviewtooltipowner.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSOpenGLView](nsopenglview.md)
+### Deprecated classes
+- [class NSOpenGLView](./nsopenglview.md)
   A view that displays OpenGL content in a view.
-- [class NSOpenGLContext](nsopenglcontext.md)
+- [class NSOpenGLContext](./nsopenglcontext.md)
   An object that represents an OpenGL graphics context, into which all OpenGL calls are rendered.
-- [class NSOpenGLLayer](nsopengllayer.md)
+- [class NSOpenGLLayer](./nsopengllayer.md)
   A subclass of `CAOpenGLLayer` that is suitable for rendering OpenGL into layers.
-- [class NSOpenGLPixelFormat](nsopenglpixelformat.md)
+- [class NSOpenGLPixelFormat](./nsopenglpixelformat.md)
   An object that specifies the types of buffers and other attributes of the OpenGL context.
-- [class NSDrawer](nsdrawer.md)
+- [class NSDrawer](./nsdrawer.md)
   A user interface element that contains and displays text, scroll, and browser views, in addition to other view subclasses.
-- [class NSFormCell](nsformcell.md)
+- [class NSFormCell](./nsformcell.md)
   The `NSFormCell` class is used to implement text entry fields in a form. The left part of an `NSFormCell` object contains a title. The right part contains an editable text entry field.
-- [class NSMenuItemCell](nsmenuitemcell.md)
+- [class NSMenuItemCell](./nsmenuitemcell.md)
   An object that handles the measurement and display of a single menu item in its encompassing frame.
 
 

@@ -1,7 +1,8 @@
 # AVExternalSyncDeviceStatus.calibrating
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the external sync signal is connected and that the AVExternalSyncDevice object is calibrating to follow.
 
@@ -18,15 +19,20 @@ Indicates that the external sync signal is connected and that the AVExternalSync
 case calibrating
 ```
 
+```c
+AVExternalSyncDeviceStatusCalibrating
+```
+
 ## See Also
 
-- [AVExternalSyncDeviceStatus.activeSync](avexternalsyncdevicestatus/activesync.md)
-  Indicates that the [`AVExternalSyncDevice`](avexternalsyncdevice.md) object is running and that the clock property on [`AVExternalSyncDevice`](avexternalsyncdevice.md) is calibrated to the external sync signal.
-- [AVExternalSyncDeviceStatus.freeRunSync](avexternalsyncdevicestatus/freerunsync.md)
+### Status values
+- [AVExternalSyncDeviceStatus.activeSync](./activesync.md)
+  Indicates that the [`AVExternalSyncDevice`](../avexternalsyncdevice.md) object is running and that the clock property on [`AVExternalSyncDevice`](../avexternalsyncdevice.md) is calibrated to the external sync signal.
+- [AVExternalSyncDeviceStatus.freeRunSync](./freerunsync.md)
   Indicates that the AVExternalSyncDevice was calibrated to follow the external sync, but the sync signal has been lost. The camera will continue to match the last signal it received, but sync is not guaranteed.
-- [AVExternalSyncDeviceStatus.ready](avexternalsyncdevicestatus/ready.md)
+- [AVExternalSyncDeviceStatus.ready](./ready.md)
   Indicates that a device supporting external sync is connected, but calibration has not started.
-- [AVExternalSyncDeviceStatus.unavailable](avexternalsyncdevicestatus/unavailable.md)
+- [AVExternalSyncDeviceStatus.unavailable](./unavailable.md)
   Indicates that external sync signal is not connected, or has transitioned to a state that is not recoverable.
 
 

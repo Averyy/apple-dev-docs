@@ -1,7 +1,8 @@
 # geometricDistortionCorrectedVideoFieldOfView
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A horizontal field of view for the format after correction for geometric distortion.
 
@@ -17,13 +18,18 @@ A horizontal field of view for the format after correction for geometric distort
 var geometricDistortionCorrectedVideoFieldOfView: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float geometricDistortionCorrectedVideoFieldOfView;
+```
+
 #### Discussion
 
-If the capture device doesn’t support geometric distortion correction (GDC), the value of this property is equal to the value of [`videoFieldOfView`](avcapturedevice/format/videofieldofview.md).
+If the capture device doesn’t support geometric distortion correction (GDC), the value of this property is equal to the value of [`videoFieldOfView`](./videofieldofview.md).
 
 ## See Also
 
-- [var videoFieldOfView: Float](avcapturedevice/format/videofieldofview.md)
+### Determining field of view
+- [var videoFieldOfView: Float](./videofieldofview.md)
   Indicates the format’s horizontal field of view in degrees.
 
 

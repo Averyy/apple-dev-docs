@@ -1,7 +1,8 @@
 # AMLogLevel.debug
 
 **Framework**: Automator  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The debug log level.
 
@@ -15,13 +16,18 @@ The debug log level.
 case debug
 ```
 
+```c
+AMLogLevelDebug
+```
+
 ## See Also
 
-- [AMLogLevel.info](amloglevel/info.md)
+### Constants
+- [AMLogLevel.info](./info.md)
   The informational log level.
-- [AMLogLevel.warn](amloglevel/warn.md)
+- [AMLogLevel.warn](./warn.md)
   The warning log level.
-- [AMLogLevel.error](amloglevel/error.md)
+- [AMLogLevel.error](./error.md)
   The error log level.
 
 

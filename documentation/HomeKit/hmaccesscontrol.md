@@ -1,7 +1,8 @@
 # HMAccessControl
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract superclass for accessing user privileges.
 
@@ -19,33 +20,38 @@ An abstract superclass for accessing user privileges.
 class HMAccessControl
 ```
 
+```objc
+@interface HMAccessControl : NSObject
+```
+
 #### Overview
 
-Use a concrete subclass, like [`HMHomeAccessControl`](hmhomeaccesscontrol.md), instead.
+Use a concrete subclass, like [`HMHomeAccessControl`](./hmhomeaccesscontrol.md), instead.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [HMHomeAccessControl](hmhomeaccesscontrol.md)
+- [HMHomeAccessControl](./hmhomeaccesscontrol.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func homeAccessControl(for: HMUser) -> HMHomeAccessControl](hmhome/homeaccesscontrol(for:).md)
+### Controlling user access
+- [func homeAccessControl(for: HMUser) -> HMHomeAccessControl](./hmhome/homeaccesscontrol%28for%29.md)
   Retrieves the access level of a user associated with the home.
-- [class HMHomeAccessControl](hmhomeaccesscontrol.md)
+- [class HMHomeAccessControl](./hmhomeaccesscontrol.md)
   The access privileges of a user associated with a home.
-- [let HMUserFailedAccessoriesKey: String](hmuserfailedaccessorieskey.md)
+- [let HMUserFailedAccessoriesKey: String](./hmuserfailedaccessorieskey.md)
   The key for retrieving details of what accessories failed to add or remove a user.
 
 

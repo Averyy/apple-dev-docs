@@ -1,7 +1,8 @@
 # MetricsAggregator
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A utility for computing aggregate statistics from evaluation metrics.
 
@@ -22,9 +23,9 @@ struct MetricsAggregator
 
 ## Mentions
 
-- [Designing effective evaluations](designing-effective-evaluations.md)
-- [Evaluating language model responses](evaluating-language-model-responses.md)
-- [Scoring with model-judge evaluators](scoring-with-model-as-judge-evaluators.md)
+- [Designing effective evaluations](./designing-effective-evaluations.md)
+- [Evaluating language model responses](./evaluating-language-model-responses.md)
+- [Scoring with model-judge evaluators](./scoring-with-model-as-judge-evaluators.md)
 
 #### Overview
 
@@ -43,42 +44,43 @@ Use this structure to calculate summary statistics like mean, median, and standa
 ## Topics
 
 ### Computing standard aggregations
-- [func computeMean(of: Metric)](metricsaggregator/computemean(of:).md)
+- [func computeMean(of: Metric)](./metricsaggregator/computemean%28of%29.md)
   Computes the mean of a metric and adds it to the aggregated results.
-- [func computeMedian(of: Metric)](metricsaggregator/computemedian(of:).md)
+- [func computeMedian(of: Metric)](./metricsaggregator/computemedian%28of%29.md)
   Computes the median of a metric and adds it to the aggregated results.
-- [func computeMode(of: Metric)](metricsaggregator/computemode(of:).md)
+- [func computeMode(of: Metric)](./metricsaggregator/computemode%28of%29.md)
   Computes the mode of a metric and adds it to the aggregated results.
-- [func computeMinimum(of: Metric)](metricsaggregator/computeminimum(of:).md)
+- [func computeMinimum(of: Metric)](./metricsaggregator/computeminimum%28of%29.md)
   Computes the minimum value of a metric and adds it to the aggregated results.
-- [func computeMaximum(of: Metric)](metricsaggregator/computemaximum(of:).md)
+- [func computeMaximum(of: Metric)](./metricsaggregator/computemaximum%28of%29.md)
   Computes the maximum value of a metric and adds it to the aggregated results.
 ### Computing variability
-- [func computeStandardDeviation(of: Metric)](metricsaggregator/computestandarddeviation(of:).md)
+- [func computeStandardDeviation(of: Metric)](./metricsaggregator/computestandarddeviation%28of%29.md)
   Computes the standard deviation of a metric and adds it to the aggregated results.
-- [func computeVariance(of: Metric)](metricsaggregator/computevariance(of:).md)
+- [func computeVariance(of: Metric)](./metricsaggregator/computevariance%28of%29.md)
   Computes the variance of a metric and adds it to the aggregated results.
 ### Computing custom aggregations
-- [func custom(of: Metric, label: String, ([Double]) -> Double)](metricsaggregator/custom(of:label:_:).md)
+- [func custom(of: Metric, label: String, ([Double]) -> Double)](./metricsaggregator/custom%28of,label,_%29.md)
   Computes a custom aggregation from a single metric’s results.
 ### Grouping metrics
-- [func group(String, (inout MetricsAggregator.Group) -> Void)](metricsaggregator/group(_:_:).md)
+- [func group(String, (inout MetricsAggregator.Group) -> Void)](./metricsaggregator/group%28_,_%29.md)
   Creates a group of related metrics.
-- [MetricsAggregator.Group](metricsaggregator/group.md)
+- [MetricsAggregator.Group](./metricsaggregator/group.md)
   A grouped collection of related metrics.
 ### Inspecting aggregate results
-- [struct AggregateMetric](aggregatemetric.md)
+- [struct AggregateMetric](./aggregatemetric.md)
   An aggregate statistic computed from a metric’s results across the evaluation dataset.
-- [enum AggregationOperation](aggregationoperation.md)
+- [enum AggregationOperation](./aggregationoperation.md)
   The type of aggregation operation used to compute a summary statistic.
 
 ## See Also
 
-- [Designing specific, measurable criteria in an evaluation suite](designing-evaluation-criteria.md)
+### Metrics and evaluators
+- [Designing specific, measurable criteria in an evaluation suite](./designing-evaluation-criteria.md)
   Define quality for your feature by choosing measurable criteria, scoring approaches, and ground-truth strategies.
-- [struct Metric](metric.md)
+- [struct Metric](./metric.md)
   A named metric that carries a result value.
-- [struct Evaluator](evaluator.md)
+- [struct Evaluator](./evaluator.md)
   A closure-based evaluator.
 
 

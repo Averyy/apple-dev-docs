@@ -1,7 +1,8 @@
 # uniqueIdentifier
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action set’s unique identifier.
 
@@ -19,11 +20,16 @@ The action set’s unique identifier.
 var uniqueIdentifier: UUID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSUUID * uniqueIdentifier;
+```
+
 ## See Also
 
-- [var name: String](hmactionset/name.md)
+### Identifiying an action set
+- [var name: String](./name.md)
   The name of the action set.
-- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmactionset/updatename(_:completionhandler:).md)
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](./updatename%28_,completionhandler%29.md)
   Updates the name of the action set.
 
 

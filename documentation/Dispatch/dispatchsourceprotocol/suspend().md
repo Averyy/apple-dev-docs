@@ -1,18 +1,19 @@
 # suspend()
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Suspends the dispatch source.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,9 +23,10 @@ func suspend()
 
 ## See Also
 
-- [func activate()](dispatchsourceprotocol/activate.md)
+### Activating, Suspending, and Resuming a Source
+- [func activate()](./activate%28%29.md)
   Activates the dispatch source.
-- [func resume()](dispatchsourceprotocol/resume.md)
+- [func resume()](./resume%28%29.md)
   Resumes the dispatch source.
 
 

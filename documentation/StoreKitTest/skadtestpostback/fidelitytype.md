@@ -1,7 +1,8 @@
 # fidelityType
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer that indicates the type of ad impression, StoreKit-rendered or view-through.
 
@@ -16,17 +17,22 @@ An integer that indicates the type of ad impression, StoreKit-rendered or view-t
 var fidelityType: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSInteger fidelityType;
+```
+
 #### Discussion
 
-SKAdNetwork versions 2.2 and later require a [`fidelityType`](skadtestpostback/fidelitytype.md) parameter for ad validation signatures. For view-through ads, use a fidelity type value of `0`. For StoreKit-rendered ads, use the value `1`.
+SKAdNetwork versions 2.2 and later require a [`fidelityType`](./fidelitytype.md) parameter for ad validation signatures. For view-through ads, use a fidelity type value of `0`. For StoreKit-rendered ads, use the value `1`.
 
 ## See Also
 
-- [var fineConversionValue: Int](skadtestpostback/fineconversionvalue.md)
+### Getting conversion information
+- [var fineConversionValue: Int](./fineconversionvalue.md)
   The specific conversion value of an ad postback.
-- [var coarseConversionValue: SKAdNetwork.CoarseConversionValue?](skadtestpostback/coarseconversionvalue.md)
+- [var coarseConversionValue: SKAdNetwork.CoarseConversionValue?](./coarseconversionvalue.md)
   A value that indicates a high, medium, or low conversion value for an ad postback.
-- [var didWin: Bool](skadtestpostback/didwin.md)
+- [var didWin: Bool](./didwin.md)
   A Boolean value that indicates whether the postback won the attribution.
 
 

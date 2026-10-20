@@ -1,6 +1,7 @@
 # Choosing the  Location Services Authorization to Request
 
-**Framework**: Bundle Resources
+**Framework**: Bundle Resources  
+**Role**: Article
 
 Determine the authorization your app needs to access location data.
 
@@ -11,19 +12,19 @@ The authorization status that your app has determines if and when it receives lo
 - **When In Use**: Your app can use all location services and receive events while the app is in use. In general, iOS apps are considered in use when they’re in the foreground or running in the background with the background location usage indicator enabled.
 - **Always**: Your app can use all location services and receive events even if the user is not aware that your app is running. If your app isn’t running, the system launches your app and delivers the event.
 
-##### Prefer When in Use Authorization
+##### Prefer When In Use Authorization
 
 Whenever possible, request only When In Use authorization. This mode has powerful features, allowing your app to:
 
 - Access all available location services while the user is using the app. If the user stops using your app, any outstanding requests suspend until the user resumes using your app.
-- Continue to get location updates even after your app enters the background, if you’ve enabled background location updates in your Xcode project. See [`Handling location updates in the background`](https://developer.apple.com/documentation/corelocation/handling-location-updates-in-the-background) for more information.
-- Use location notification triggers to launch. If your app can rely on your user’s interaction, set up a [`UNLocationNotificationTrigger`](https://developer.apple.com/documentation/usernotifications/unlocationnotificationtrigger) to notify users when they enter a relevant region. When users click through the notification, the system launches the app, making it eligible to receive the location event. This method lets users decide at a relevant moment whether to share their location with your app.
+- Continue to get location updates even after your app enters the background, if you’ve enabled background location updates in your Xcode project. See [Handling location updates in the background](../CoreLocation/handling-location-updates-in-the-background.md) for more information.
+- Use location notification triggers to launch. If your app can rely on your user’s interaction, set up a [`UNLocationNotificationTrigger`](../UserNotifications/unlocationnotificationtrigger.md) to notify users when they enter a relevant region. When users click through the notification, the system launches the app, making it eligible to receive the location event. This method lets users decide at a relevant moment whether to share their location with your app.
 
-Location services are available to apps with [`CLAuthorizationStatus.authorizedWhenInUse`](https://developer.apple.com/documentation/corelocation/clauthorizationstatus/authorizedwheninuse) only while the app is “in use”. On all platforms that support When In Use authorization, an app is considered in use:
+Location services are available to apps with [`CLAuthorizationStatus.authorizedWhenInUse`](../CoreLocation/clauthorizationstatus/authorizedwheninuse.md) only while the app is “in use”. On all platforms that support When In Use authorization, an app is considered in use:
 
 - When the app runs in the foreground.
 - In the few seconds after an app leaves the foreground, a short grace period for your app to finish any current location tasks the user initiated.
-- When the app shows the background location usage indicator ([`showsBackgroundLocationIndicator`](https://developer.apple.com/documentation/corelocation/cllocationmanager/showsbackgroundlocationindicator)). On iOS, the indicator is a blue bar or pill at the top of the screen; on watchOS it’s a small icon.
+- When the app shows the background location usage indicator ([`showsBackgroundLocationIndicator`](../CoreLocation/cllocationmanager/showsbackgroundlocationindicator.md)). On iOS, the indicator is a blue bar or pill at the top of the screen; on watchOS it’s a small icon.
 
 For watchOS, the system always considers a complication on the current watch face to be in use. However, while the complication can receive location updates, you request authorization prompts from the main watch app. On watchOS there’s no way to opt out of showing the background location usage indicator.
 
@@ -46,7 +47,7 @@ While all platforms support When In Use authorization, the availability and func
 - **Mac Catalyst**: Your UIKit code can and should request the authorization that makes sense on iOS; the same choice will work when the app runs on the Mac. When In Use and Always authorizations are functionally equivalent on the Mac.
 - **iOS**: Supports When In Use and Always authorization.
 
-##### Request Authorization for Apps Running in Ios 12 and Earlier
+##### Request Authorization for Apps Running in iOS 12 and Earlier
 
 Apps compiled with iOS 13 or later SDKs but running in iOS 12 or earlier will exhibit behavior consistent with iOS 12 for When In Use authorization. Specifically, in iOS 12 or earlier, some location services are only available to apps with Always authorization, as shown in this table:
 
@@ -62,19 +63,20 @@ Apps compiled with iOS 13 or later SDKs but running in iOS 12 or earlier will ex
 
 ## See Also
 
-- [NSLocationAlwaysAndWhenInUseUsageDescription](information-property-list/nslocationalwaysandwheninuseusagedescription.md)
+### Location
+- [NSLocationAlwaysAndWhenInUseUsageDescription](./information-property-list/nslocationalwaysandwheninuseusagedescription.md)
   A message that tells people why the app is requesting access to their location information at all times.
-- [NSLocationUsageDescription](information-property-list/nslocationusagedescription.md)
+- [NSLocationUsageDescription](./information-property-list/nslocationusagedescription.md)
   A message that tells people why the app is requesting access to their location information.
-- [NSLocationWhenInUseUsageDescription](information-property-list/nslocationwheninuseusagedescription.md)
+- [NSLocationWhenInUseUsageDescription](./information-property-list/nslocationwheninuseusagedescription.md)
   A message that tells people why the app is requesting access to their location information while the app is running in the foreground.
-- [NSLocationTemporaryUsageDescriptionDictionary](information-property-list/nslocationtemporaryusagedescriptiondictionary.md)
+- [NSLocationTemporaryUsageDescriptionDictionary](./information-property-list/nslocationtemporaryusagedescriptiondictionary.md)
   A collection of messages that explain why the app is requesting temporary access to their location.
-- [NSLocationAlwaysUsageDescription](information-property-list/nslocationalwaysusagedescription.md)
+- [NSLocationAlwaysUsageDescription](./information-property-list/nslocationalwaysusagedescription.md)
   A message that tells people why the app is requesting access to their location at all times.
-- [NSWidgetWantsLocation](information-property-list/nswidgetwantslocation.md)
+- [NSWidgetWantsLocation](./information-property-list/nswidgetwantslocation.md)
   A Boolean value that indicates a widget uses the user’s location information.
-- [NSLocationDefaultAccuracyReduced](information-property-list/nslocationdefaultaccuracyreduced.md)
+- [NSLocationDefaultAccuracyReduced](./information-property-list/nslocationdefaultaccuracyreduced.md)
   A Boolean value that indicates whether the app requests reduced location accuracy by default.
 
 

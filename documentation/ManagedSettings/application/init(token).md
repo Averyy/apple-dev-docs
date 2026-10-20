@@ -1,7 +1,8 @@
 # init(token:)
 
 **Framework**: Managed Settings  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that represents the app with the specified token.
 
@@ -22,7 +23,8 @@ init(token: ApplicationToken)
 
 ## See Also
 
-- [init(bundleIdentifier: String)](application/init(bundleidentifier:).md)
+### Creating an application
+- [init(bundleIdentifier: String)](./init%28bundleidentifier%29.md)
   Creates an object that represents the app with the specified bundle identifier.
 
 

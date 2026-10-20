@@ -1,7 +1,8 @@
 # VNRequestTrackingLevel
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of tracking priorities.
 
@@ -11,33 +12,38 @@ An enumeration of tracking priorities.
 enum VNRequestTrackingLevel
 ```
 
+```c
+enum VNRequestTrackingLevel : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [VNRequestTrackingLevel.accurate](vnrequesttrackinglevel/accurate.md)
+- [VNRequestTrackingLevel.accurate](./vnrequesttrackinglevel/accurate.md)
   Tracking level that favors location accuracy over speed.
-- [VNRequestTrackingLevel.fast](vnrequesttrackinglevel/fast.md)
+- [VNRequestTrackingLevel.fast](./vnrequesttrackinglevel/fast.md)
   Tracking level that favors speed over location accuracy.
 ### Creating a Tracking Level
-- [init?(rawValue: UInt)](vnrequesttrackinglevel/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./vnrequesttrackinglevel/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var inputObservation: VNDetectedObjectObservation](vntrackingrequest/inputobservation.md)
+### Configuring a Tracking Request
+- [var inputObservation: VNDetectedObjectObservation](./vntrackingrequest/inputobservation.md)
   The observation object defining a region to track.
-- [var trackingLevel: VNRequestTrackingLevel](vntrackingrequest/trackinglevel.md)
+- [var trackingLevel: VNRequestTrackingLevel](./vntrackingrequest/trackinglevel.md)
   A value for specifying whether to prioritize speed or location accuracy.
-- [var isLastFrame: Bool](vntrackingrequest/islastframe.md)
+- [var isLastFrame: Bool](./vntrackingrequest/islastframe.md)
   A Boolean that indicates the last frame in a tracking sequence.
 
 

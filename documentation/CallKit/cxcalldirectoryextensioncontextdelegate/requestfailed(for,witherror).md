@@ -2,6 +2,7 @@
 
 **Framework**: CallKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when a Call Directory app extension request fails.
@@ -16,6 +17,10 @@ Called when a Call Directory app extension request fails.
 
 ```swift
 func requestFailed(for extensionContext: CXCallDirectoryExtensionContext, withError error: any Error)
+```
+
+```objc
+- (void) requestFailedForExtensionContext:(CXCallDirectoryExtensionContext *) extensionContext withError:(NSError *) error;
 ```
 
 ## Parameters

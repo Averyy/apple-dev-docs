@@ -1,7 +1,8 @@
 # reserveCapacity(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reserves enough space to store the specified number of key-value pairs.
 
@@ -20,6 +21,8 @@ Reserves enough space to store the specified number of key-value pairs.
 mutating func reserveCapacity(_ minimumCapacity: Int)
 ```
 
+Available when `Key` conforms to `Hashable`.
+
 #### Discussion
 
 If you are adding a known number of key-value pairs to a dictionary, use this method to avoid multiple reallocations. This method ensures that the dictionary has unique, mutable, contiguous storage, with space allocated for at least the requested number of key-value pairs.
@@ -32,7 +35,8 @@ Calling the `reserveCapacity(_:)` method on a dictionary with bridged storage tr
 
 ## See Also
 
-- [func updateValue(Value, forKey: Key) -> Value?](dictionary/updatevalue(_:forkey:).md)
+### Adding Keys and Values
+- [func updateValue(Value, forKey: Key) -> Value?](./updatevalue%28_,forkey%29.md)
   Updates the value stored in the dictionary for the given key, or adds a new key-value pair if the key does not exist.
 
 

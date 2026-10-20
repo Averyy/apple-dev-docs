@@ -1,7 +1,8 @@
 # NetworkDNSSettings
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure encrypted DNS settings.
 
@@ -14,7 +15,7 @@ The declaration to configure encrypted DNS settings.
 
 ## Declaration
 
-```swift
+```
 object NetworkDNSSettings
 ```
 
@@ -28,7 +29,7 @@ The following rules determine which networks the settings apply to:
 - For device enrollments, the settings are limited to only managed networks.
 - For local installs, the settings apply to all networks.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -40,7 +41,7 @@ The following rules determine which networks the settings apply to:
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration Example
+##### Configuration example
 
 This configuration sets up encrypted DNS using DNS-over-HTTPS.
 
@@ -69,49 +70,54 @@ This configuration sets up encrypted DNS using DNS-over-HTTPS.
 ## Topics
 
 ### Objects
-- [object NetworkDNSSettingsDNSSettingsObject](networkdnssettingsdnssettingsobject.md)
+- [object NetworkDNSSettingsDNSSettingsObject](./networkdnssettingsdnssettingsobject.md)
   A dictionary that defines a configuration for an encrypted DNS server.
-- [object NetworkDNSSettingsOnDemandRulesElementObject](networkdnssettingsondemandruleselementobject.md)
+- [object NetworkDNSSettingsOnDemandRulesElementObject](./networkdnssettingsondemandruleselementobject.md)
   An array of rules that define the DNS settings. If not set, the system always applies the DNS settings. These rules are identical to the `OnDemandRules` array in VPN payloads.
 
 ## Properties
 
 - `DNSSettings` (NetworkDNSSettingsDNSSettingsObject) *(required)*: A dictionary that defines a configuration for an encrypted DNS server.
 - `OnDemandRules` ([NetworkDNSSettingsOnDemandRulesElementObject]): An array of rules that define the DNS settings. If not set, the system always applies the DNS settings. These rules are identical to the `OnDemandRules` array in VPN payloads.
-- `ProhibitDisablement` (boolean): If `true`, the system prohibits users from disabling DNS settings. Allowed enrollments: supervised
+- `ProhibitDisablement` (boolean): If `true`, the system prohibits users from disabling DNS settings.
+
+  Allowed enrollments: supervised
+
+  **Default**: `false`
 - `VisibleName` (string) *(required)*: The name of the DNS settings that the system displays on the device.
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
 
 

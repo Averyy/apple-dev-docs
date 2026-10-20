@@ -1,17 +1,22 @@
 # allowsCutCopyPaste
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the image view lets the user cut, copy, and paste the image contents.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var allowsCutCopyPaste: Bool { get set }
+```
+
+```objc
+@property BOOL allowsCutCopyPaste;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ When the value of this property is YES, the user can cut, copy, or paste the ima
 
 ## See Also
 
-- [var isEditable: Bool](nsimageview/iseditable.md)
+### Responding to user events
+- [var isEditable: Bool](./iseditable.md)
   A Boolean value indicating whether the user can drag a new image into the image view.
 
 

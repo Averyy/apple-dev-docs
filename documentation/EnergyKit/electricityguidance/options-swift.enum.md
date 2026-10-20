@@ -1,14 +1,15 @@
 # ElectricityGuidance.Options
 
 **Framework**: EnergyKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that describes additional factors that influence the weight of a value.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -23,29 +24,30 @@ A person’s utility rate plan is an example of an additional factor that influe
 ## Topics
 
 ### Getting the options
-- [ElectricityGuidance.Options.locationHasRatePlan](electricityguidance/options-swift.enum/locationhasrateplan.md)
+- [ElectricityGuidance.Options.locationHasRatePlan](./options-swift.enum/locationhasrateplan.md)
   Indicates whether the energy venue where the guidance was generated has rate plan information available.
-- [ElectricityGuidance.Options.guidanceIncorporatesRatePlan](electricityguidance/options-swift.enum/guidanceincorporatesrateplan.md)
+- [ElectricityGuidance.Options.guidanceIncorporatesRatePlan](./options-swift.enum/guidanceincorporatesrateplan.md)
   Indicates whether the electricity guidance incorporated rate plan information.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ElectricityGuidance.Value](electricityguidance/value.md)
+### Getting the electrical load weight
+- [ElectricityGuidance.Value](./value.md)
   A normalized weighting value associated with a period of time, describing when to shift or reduce electricity use.
-- [let values: [ElectricityGuidance.Value]](electricityguidance/values.md)
+- [let values: [ElectricityGuidance.Value]](./values.md)
   A series of weighted values for intervals of time, describing when to shift or reduce electricity use.
-- [let options: Set<ElectricityGuidance.Options>](electricityguidance/options-swift.property.md)
+- [let options: Set<ElectricityGuidance.Options>](./options-swift.property.md)
   The additional factors that influence the weight of a value.
 
 

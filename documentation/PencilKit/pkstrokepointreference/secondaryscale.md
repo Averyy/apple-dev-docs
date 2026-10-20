@@ -1,7 +1,8 @@
 # secondaryScale
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -16,11 +17,16 @@
 var secondaryScale: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat secondaryScale;
+```
+
 ## See Also
 
-- [var size: CGSize](pkstrokepointreference/size.md)
+### Getting the point’s drawing data
+- [var size: CGSize](./size.md)
   The size of the point.
-- [var opacity: CGFloat](pkstrokepointreference/opacity.md)
+- [var opacity: CGFloat](./opacity.md)
   Opacity of the point.
 
 

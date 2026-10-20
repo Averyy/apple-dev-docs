@@ -1,7 +1,8 @@
 # choices
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The possible answer choices associated with this question.
 
@@ -20,7 +21,8 @@ final var choices: [PermissionChoice] { get }
 
 ## See Also
 
-- [var defaultChoice: PermissionChoice](permissionquestion/defaultchoice.md)
+### Working with choices
+- [var defaultChoice: PermissionChoice](./defaultchoice.md)
   The default answer choice associated with the question.
 
 

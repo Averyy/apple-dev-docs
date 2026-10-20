@@ -1,7 +1,8 @@
 # NSCompoundPredicate.LogicalType.or
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A logical OR predicate.
 
@@ -20,11 +21,16 @@ A logical OR predicate.
 case or
 ```
 
+```c
+NSOrPredicateType
+```
+
 ## See Also
 
-- [NSCompoundPredicate.LogicalType.not](nscompoundpredicate/logicaltype/not.md)
+### Constants
+- [NSCompoundPredicate.LogicalType.not](./not.md)
   A logical NOT predicate.
-- [NSCompoundPredicate.LogicalType.and](nscompoundpredicate/logicaltype/and.md)
+- [NSCompoundPredicate.LogicalType.and](./and.md)
   A logical AND predicate.
 
 

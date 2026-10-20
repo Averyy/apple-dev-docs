@@ -1,7 +1,8 @@
 # BrandsReportingCreative.CreativeType
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The visual format and placement context of the creative at report time.
 
@@ -10,9 +11,13 @@ The visual format and placement context of the creative at report time.
 
 ## Declaration
 
-```swift
+```
 string BrandsReportingCreative.CreativeType
 ```
+
+## Possible Values
+
+- `LOCAL_ADS_SEARCH_CREATIVE`: An Ads on Apple Maps creative.
 
 #### Discussion
 

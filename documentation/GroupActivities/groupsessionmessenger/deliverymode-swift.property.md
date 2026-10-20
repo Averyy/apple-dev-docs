@@ -1,9 +1,10 @@
 # deliveryMode
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The [`GroupSessionMessenger.DeliveryMode`](groupsessionmessenger/deliverymode-swift.enum.md) specified at initialization time (defaults to `reliable`).
+The [`GroupSessionMessenger.DeliveryMode`](./deliverymode-swift.enum.md) specified at initialization time (defaults to `reliable`).
 
 **Availability**:
 - iOS 16.0+

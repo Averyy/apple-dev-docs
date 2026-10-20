@@ -1,7 +1,8 @@
 # UIVibrancyEffectStyle.secondaryFill
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style for views with large filled areas containing secondary content.
 
@@ -17,11 +18,16 @@ A style for views with large filled areas containing secondary content.
 case secondaryFill
 ```
 
+```c
+UIVibrancyEffectStyleSecondaryFill
+```
+
 ## See Also
 
-- [UIVibrancyEffectStyle.fill](uivibrancyeffectstyle/fill.md)
+### Fill styles
+- [UIVibrancyEffectStyle.fill](./fill.md)
   A style for views with large filled areas containing primary content.
-- [UIVibrancyEffectStyle.tertiaryFill](uivibrancyeffectstyle/tertiaryfill.md)
+- [UIVibrancyEffectStyle.tertiaryFill](./tertiaryfill.md)
   A style for views with large filled areas containing tertiary content.
 
 

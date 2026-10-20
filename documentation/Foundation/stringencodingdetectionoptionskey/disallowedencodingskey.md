@@ -1,7 +1,8 @@
 # disallowedEncodingsKey
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 8.0+
@@ -18,18 +19,23 @@
 static let disallowedEncodingsKey: StringEncodingDetectionOptionsKey
 ```
 
+```c
+extern NSStringEncodingDetectionOptionsKey const NSStringEncodingDetectionDisallowedEncodingsKey;
+```
+
 #### Discussion
 
 Option specifying any string encodings not to be considered. The corresponding value for this key is an `NSArray` of `NSNumber` objects that contain `NSStringEncoding` values. If this option is unspecified, no additional string encodings are removed from consideration.
 
 ## See Also
 
-- [static let allowLossyKey: StringEncodingDetectionOptionsKey](stringencodingdetectionoptionskey/allowlossykey.md)
-- [static let fromWindowsKey: StringEncodingDetectionOptionsKey](stringencodingdetectionoptionskey/fromwindowskey.md)
-- [static let likelyLanguageKey: StringEncodingDetectionOptionsKey](stringencodingdetectionoptionskey/likelylanguagekey.md)
-- [static let lossySubstitutionKey: StringEncodingDetectionOptionsKey](stringencodingdetectionoptionskey/lossysubstitutionkey.md)
-- [static let suggestedEncodingsKey: StringEncodingDetectionOptionsKey](stringencodingdetectionoptionskey/suggestedencodingskey.md)
-- [static let useOnlySuggestedEncodingsKey: StringEncodingDetectionOptionsKey](stringencodingdetectionoptionskey/useonlysuggestedencodingskey.md)
+### Type Properties
+- [static let allowLossyKey: StringEncodingDetectionOptionsKey](./allowlossykey.md)
+- [static let fromWindowsKey: StringEncodingDetectionOptionsKey](./fromwindowskey.md)
+- [static let likelyLanguageKey: StringEncodingDetectionOptionsKey](./likelylanguagekey.md)
+- [static let lossySubstitutionKey: StringEncodingDetectionOptionsKey](./lossysubstitutionkey.md)
+- [static let suggestedEncodingsKey: StringEncodingDetectionOptionsKey](./suggestedencodingskey.md)
+- [static let useOnlySuggestedEncodingsKey: StringEncodingDetectionOptionsKey](./useonlysuggestedencodingskey.md)
 
 
 ---

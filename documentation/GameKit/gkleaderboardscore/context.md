@@ -1,7 +1,8 @@
 # context
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer value that your game uses.
 
@@ -20,17 +21,22 @@ An integer value that your game uses.
 var context: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSUInteger context;
+```
+
 #### Discussion
 
 Game Center stores this custom game-specific property for you. It allows you to associate an arbitrary 64-bit unsigned integer value with the score data that you report to Game Center. You decide how to interpret this integer value in your game.
 
 ## See Also
 
-- [var leaderboardID: String](gkleaderboardscore/leaderboardid.md)
+### Accessing Properties
+- [var leaderboardID: String](./leaderboardid.md)
   The ID that Game Center uses for the leaderboard.
-- [var player: GKPlayer](gkleaderboardscore/player.md)
+- [var player: GKPlayer](./player.md)
   The player who earns the score.
-- [var value: Int](gkleaderboardscore/value.md)
+- [var value: Int](./value.md)
   The score that the player earns.
 
 

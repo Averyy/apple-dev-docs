@@ -1,7 +1,8 @@
 # init(urlAssetInitializationOptions:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mutable composition that uses the specified initialization options.
 
@@ -18,6 +19,10 @@ Creates a mutable composition that uses the specified initialization options.
 
 ```swift
 convenience init(urlAssetInitializationOptions URLAssetInitializationOptions: [String : Any]? = nil)
+```
+
+```objc
++ (instancetype) compositionWithURLAssetInitializationOptions:(NSDictionary<NSString *,id> *) URLAssetInitializationOptions;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # isAdministrator
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies if the user has administrative privileges for the home.
 
@@ -17,6 +18,10 @@ Specifies if the user has administrative privileges for the home.
 
 ```swift
 var isAdministrator: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isAdministrator) BOOL administrator;
 ```
 
 

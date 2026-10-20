@@ -1,7 +1,8 @@
 # MTLMotionKeyframeData
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Geometry data for a specific keyframe to use in a moving instance.
 
@@ -19,42 +20,47 @@ Geometry data for a specific keyframe to use in a moving instance.
 class MTLMotionKeyframeData
 ```
 
+```objc
+@interface MTLMotionKeyframeData : NSObject
+```
+
 #### Overview
 
-An [`MTLMotionKeyframeData`](mtlmotionkeyframedata.md) instance describes the location of geometry data for a keyframe. The exact type of data can vary, depending on which kind of motion descriptor you create. For an [`MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor`](mtlaccelerationstructuremotionboundingboxgeometrydescriptor.md) instance, the buffer data is a list of bounding boxes. For an [`MTLAccelerationStructureMotionTriangleGeometryDescriptor`](mtlaccelerationstructuremotiontrianglegeometrydescriptor.md), the buffer data is a list of vertices.
+An [`MTLMotionKeyframeData`](./mtlmotionkeyframedata.md) instance describes the location of geometry data for a keyframe. The exact type of data can vary, depending on which kind of motion descriptor you create. For an [`MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor`](./mtlaccelerationstructuremotionboundingboxgeometrydescriptor.md) instance, the buffer data is a list of bounding boxes. For an [`MTLAccelerationStructureMotionTriangleGeometryDescriptor`](./mtlaccelerationstructuremotiontrianglegeometrydescriptor.md), the buffer data is a list of vertices.
 
 ## Topics
 
 ### Specifying the keyframe data
-- [var buffer: (any MTLBuffer)?](mtlmotionkeyframedata/buffer.md)
+- [var buffer: (any MTLBuffer)?](./mtlmotionkeyframedata/buffer.md)
   The buffer that holds the geometry data.
-- [var offset: Int](mtlmotionkeyframedata/offset.md)
+- [var offset: Int](./mtlmotionkeyframedata/offset.md)
   The offset, in bytes, to the keyframe data.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTL4AccelerationStructureMotionTriangleGeometryDescriptor](mtl4accelerationstructuremotiontrianglegeometrydescriptor.md)
+### Motion geometry descriptors
+- [class MTL4AccelerationStructureMotionTriangleGeometryDescriptor](./mtl4accelerationstructuremotiontrianglegeometrydescriptor.md)
   Describes motion triangle geometry, suitable for motion ray tracing.
-- [class MTLAccelerationStructureMotionTriangleGeometryDescriptor](mtlaccelerationstructuremotiontrianglegeometrydescriptor.md)
+- [class MTLAccelerationStructureMotionTriangleGeometryDescriptor](./mtlaccelerationstructuremotiontrianglegeometrydescriptor.md)
   A description of a list of triangle primitives, as motion keyframe data, to turn into an acceleration structure.
-- [class MTL4AccelerationStructureMotionCurveGeometryDescriptor](mtl4accelerationstructuremotioncurvegeometrydescriptor.md)
+- [class MTL4AccelerationStructureMotionCurveGeometryDescriptor](./mtl4accelerationstructuremotioncurvegeometrydescriptor.md)
   Describes motion curve geometry, suitable for motion ray tracing.
-- [class MTLAccelerationStructureMotionCurveGeometryDescriptor](mtlaccelerationstructuremotioncurvegeometrydescriptor.md)
-- [class MTL4AccelerationStructureMotionBoundingBoxGeometryDescriptor](mtl4accelerationstructuremotionboundingboxgeometrydescriptor.md)
+- [class MTLAccelerationStructureMotionCurveGeometryDescriptor](./mtlaccelerationstructuremotioncurvegeometrydescriptor.md)
+- [class MTL4AccelerationStructureMotionBoundingBoxGeometryDescriptor](./mtl4accelerationstructuremotionboundingboxgeometrydescriptor.md)
   Describes motion bounding box geometry, suitable for motion ray tracing.
-- [class MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor](mtlaccelerationstructuremotionboundingboxgeometrydescriptor.md)
+- [class MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor](./mtlaccelerationstructuremotionboundingboxgeometrydescriptor.md)
   A description of a list of bounding boxes, as motion keyframe data, to turn into an acceleration structure.
 
 

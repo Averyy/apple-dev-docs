@@ -1,7 +1,8 @@
 # audioSessionInputs
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the continuity device’s audio session port descriptions that’s available to your app.
 
@@ -12,6 +13,10 @@ An array of the continuity device’s audio session port descriptions that’s a
 
 ```swift
 var audioSessionInputs: [AVAudioSessionPortDescription] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<AVAudioSessionPortDescription *> * audioSessionInputs;
 ```
 
 

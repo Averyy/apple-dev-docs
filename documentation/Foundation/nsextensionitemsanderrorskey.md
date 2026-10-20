@@ -1,7 +1,8 @@
 # NSExtensionItemsAndErrorsKey
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The extension items and errors key.
 
@@ -20,17 +21,22 @@ The extension items and errors key.
 let NSExtensionItemsAndErrorsKey: String
 ```
 
+```c
+extern NSString * const NSExtensionItemsAndErrorsKey;
+```
+
 #### Discussion
 
-This key appears in the [`userInfo`](nserror/userinfo.md) dictionary of the [`NSError`](nserror.md) object that [`cancelRequest(withError:)`](nsextensioncontext/cancelrequest(witherror:).md) returns.
+This key appears in the [`userInfo`](./nserror/userinfo.md) dictionary of the [`NSError`](./nserror.md) object that [`cancelRequest(withError:)`](./nsextensioncontext/cancelrequest%28witherror%29.md) returns.
 
-This key’s value is a dictionary of [`NSExtensionItem`](nsextensionitem.md) objects and associated [`NSError`](nserror.md) instances.
+This key’s value is a dictionary of [`NSExtensionItem`](./nsextensionitem.md) objects and associated [`NSError`](./nserror.md) instances.
 
 ## See Also
 
-- [func completeRequest(returningItems: [Any]?, completionHandler: ((Bool) -> Void)?)](nsextensioncontext/completerequest(returningitems:completionhandler:).md)
+### Handling requests
+- [func completeRequest(returningItems: [Any]?, completionHandler: ((Bool) -> Void)?)](./nsextensioncontext/completerequest%28returningitems,completionhandler%29.md)
   Tells the host app to complete the app extension request with an array of result items.
-- [func cancelRequest(withError: any Error)](nsextensioncontext/cancelrequest(witherror:).md)
+- [func cancelRequest(withError: any Error)](./nsextensioncontext/cancelrequest%28witherror%29.md)
   Tells the host app to cancel the app extension request, with a supplied error.
 
 

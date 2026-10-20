@@ -1,7 +1,8 @@
 # BadgeProminence
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The visual prominence of a badge.
 
@@ -24,7 +25,7 @@ Badges can be used for different kinds of information, from the passive number o
 
 Badges will default to `standard` prominence unless specified.
 
-The following example shows a [`List`](list.md) displaying a list of folders with an informational badge with lower prominence, showing the number of items in the folder.
+The following example shows a [`List`](./list.md) displaying a list of folders with an informational badge with lower prominence, showing the number of items in the folder.
 
 ```swift
 List(folders) { folder in
@@ -37,28 +38,29 @@ List(folders) { folder in
 ## Topics
 
 ### Getting background prominence
-- [static let standard: BadgeProminence](badgeprominence/standard.md)
+- [static let standard: BadgeProminence](./badgeprominence/standard.md)
   The standard level of prominence for a badge.
-- [static let increased: BadgeProminence](badgeprominence/increased.md)
+- [static let increased: BadgeProminence](./badgeprominence/increased.md)
   The highest level of prominence for a badge.
-- [static let decreased: BadgeProminence](badgeprominence/decreased.md)
+- [static let decreased: BadgeProminence](./badgeprominence/decreased.md)
   The lowest level of prominence for a badge.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func badge(_:)](view/badge(_:).md)
+### Displaying a badge on a list item
+- [func badge(_:)](./view/badge%28_%29.md)
   Generates a badge for the view from a localized string resource.
-- [func badgeProminence(BadgeProminence) -> some View](view/badgeprominence(_:).md)
+- [func badgeProminence(BadgeProminence) -> some View](./view/badgeprominence%28_%29.md)
   Specifies the prominence of badges created by this view.
-- [var badgeProminence: BadgeProminence](environmentvalues/badgeprominence.md)
+- [var badgeProminence: BadgeProminence](./environmentvalues/badgeprominence.md)
   The prominence to apply to badges associated with this environment.
 
 

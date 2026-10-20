@@ -1,7 +1,8 @@
 # CPNavigationAlert.DismissalContext.userDismissed
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user dismissed the navigation alert.
 
@@ -16,11 +17,16 @@ The user dismissed the navigation alert.
 case userDismissed
 ```
 
+```c
+CPNavigationAlertDismissalContextUserDismissed
+```
+
 ## See Also
 
-- [CPNavigationAlert.DismissalContext.timeout](cpnavigationalert/dismissalcontext/timeout.md)
+### Dismissal Reasons
+- [CPNavigationAlert.DismissalContext.timeout](./timeout.md)
   The system dismissed the navigation alert due to a timeout.
-- [CPNavigationAlert.DismissalContext.systemDismissed](cpnavigationalert/dismissalcontext/systemdismissed.md)
+- [CPNavigationAlert.DismissalContext.systemDismissed](./systemdismissed.md)
   The system dismissed the navigation alert.
 
 

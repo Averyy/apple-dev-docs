@@ -1,7 +1,8 @@
 # addThumbstick(descriptor:)
 
 **Framework**: Touch Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new thumbstick control with the provided descriptor, and adds it to the touch controller.
 
@@ -16,6 +17,10 @@ Creates a new thumbstick control with the provided descriptor, and adds it to th
 func addThumbstick(descriptor: TCThumbstickDescriptor) -> TCThumbstick
 ```
 
+```objc
+- (TCThumbstick *) addThumbstickWithDescriptor:(TCThumbstickDescriptor *) descriptor;
+```
+
 #### Return Value
 
 A new `TCThumbstick` instance.
@@ -26,7 +31,8 @@ A new `TCThumbstick` instance.
 
 ## See Also
 
-- [class TCThumbstickDescriptor](tcthumbstickdescriptor.md)
+### Adding a thumbstick control
+- [class TCThumbstickDescriptor](../tcthumbstickdescriptor.md)
   A descriptor for configuring a thumbstick.
 
 

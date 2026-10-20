@@ -1,7 +1,8 @@
 # Get All Subscription Statuses
 
 **Framework**: App Store Server API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the statuses for all of a customer’s auto-renewable subscriptions in your app.
 
@@ -10,14 +11,14 @@ Get the statuses for all of a customer’s auto-renewable subscriptions in your 
 
 ## Mentions
 
-- [App Store Server API changelog](app-store-server-api-changelog.md)
-- [Identifying rate limits](identifying-rate-limits.md)
+- [App Store Server API changelog](./app-store-server-api-changelog.md)
+- [Identifying rate limits](./identifying-rate-limits.md)
 
 #### Discussion
 
 This API returns the status for all of the customer’s subscriptions, organized by their subscription group identifier.
 
-Specify multiple values for the `status` query parameter to get a response that contains subscriptions with statuses that match any of the values. For example, the following request returns subscriptions that are active ([`status`](get-all-subscription-statuses/status.md) value of `1`) and subscriptions that are in the Billing Grace Period ([`status`](get-all-subscription-statuses/status.md) value of `4`):
+Specify multiple values for the `status` query parameter to get a response that contains subscriptions with statuses that match any of the values. For example, the following request returns subscriptions that are active ([`status`](./get-all-subscription-statuses/status.md) value of `1`) and subscriptions that are in the Billing Grace Period ([`status`](./get-all-subscription-statuses/status.md) value of `4`):
 
 ```javascript
 GET https://api.storekit.apple.com/inApps/v1/subscriptions/{anyTransactionId}?status=1&status=4
@@ -29,11 +30,27 @@ GET https://api.storekit.apple.com/inApps/v1/subscriptions/{anyTransactionId}?st
 
 ## Parameters
 
-- `status` ([status]): An optional filter that indicates the [`status`](get-all-subscription-statuses/status.md) of subscriptions to include in the response. Your query may specify more than one `status` query parameter.
+### Path Parameters
+
+- `anyTransactionId` (anyTransactionId) *(required)*: Any [`originalTransactionId`](./originaltransactionid.md), [`transactionId`](./transactionid.md) or [`appTransactionId`](./apptransactionid.md) that belongs to the customer for your app.
+
+### Query Parameters
+
+- `status` ([status]): An optional filter that indicates the [`status`](./get-all-subscription-statuses/status.md) of subscriptions to include in the response. Your query may specify more than one `status` query parameter.
+
+## Responses
+
+- `200` OK (`StatusResponse`, `application/json`): Request succeeded.
+- `400` Bad Request (`(InvalidAppIdentifierError | InvalidTransactionIdError | InvalidStatusError)`, `application/json`)
+- `401` Unauthorized: The JSON Web Token (JWT) in the authorization header is invalid. For more information, see [Generating JSON Web Tokens for API requests](./generating-json-web-tokens-for-api-requests.md).
+- `404` Not Found (`(AccountNotFoundError | AccountNotFoundRetryableError | AppNotFoundError | AppNotFoundRetryableError | TransactionIdNotFoundError)`, `application/json`)
+- `429` (`RateLimitExceededError`, `application/json`): The request exceeded the rate limit.
+- `500` Internal Server Error (`(GeneralInternalError | GeneralInternalRetryableError)`, `application/json`)
 
 ## See Also
 
-- [object StatusResponse](statusresponse.md)
+### Subscription status
+- [object StatusResponse](./statusresponse.md)
   A response that contains status information for all of a customer’s auto-renewable subscriptions in your app.
 
 

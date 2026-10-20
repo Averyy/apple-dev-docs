@@ -1,7 +1,8 @@
 # scheduleBuffer(buffer:completionCallbackType:completionHandler:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules audio data playback with a completion handler.
 
@@ -16,14 +17,26 @@ Schedules audio data playback with a completion handler.
 ## Declaration
 
 ```swift
+func scheduleBuffer(buffer: AVAudioPCMBuffer, completionCallbackType: PHASEPushStreamCompletionCallbackCondition, completionHandler: @escaping @Sendable (PHASEPushStreamCompletionCallbackCondition) -> Void)
+```
+
+```swift
 func scheduleBuffer(buffer: AVAudioPCMBuffer, completionCallbackType: PHASEPushStreamCompletionCallbackCondition) async -> PHASEPushStreamCompletionCallbackCondition
+```
+
+```objc
+- (void) scheduleBuffer:(AVAudioPCMBuffer *) buffer completionCallbackType:(PHASEPushStreamCompletionCallbackCondition) completionCallbackType completionHandler:(void (^)(PHASEPushStreamCompletionCallbackCondition callbackType)) completionHandler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func scheduleBuffer(buffer: AVAudioPCMBuffer, completionCallbackType: PHASEPushStreamCompletionCallbackCondition) async -> PHASEPushStreamCompletionCallbackCondition
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func scheduleBuffer(buffer: AVAudioPCMBuffer, completionCallbackType: PHASEPushStreamCompletionCallbackCondition) async -> PHASEPushStreamCompletionCallbackCondition
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 ## Parameters
 
@@ -33,13 +46,14 @@ func scheduleBuffer(buffer: AVAudioPCMBuffer, completionCallbackType: PHASEPushS
 
 ## See Also
 
-- [func scheduleBuffer(buffer: AVAudioPCMBuffer)](phasepushstreamnode/schedulebuffer(buffer:).md)
+### Providing Audio Data
+- [func scheduleBuffer(buffer: AVAudioPCMBuffer)](./schedulebuffer%28buffer%29.md)
   Schedules audio data for playback.
-- [func scheduleBuffer(buffer: AVAudioPCMBuffer, time: AVAudioTime?, options: PHASEPushStreamBufferOptions)](phasepushstreamnode/schedulebuffer(buffer:time:options:).md)
+- [func scheduleBuffer(buffer: AVAudioPCMBuffer, time: AVAudioTime?, options: PHASEPushStreamBufferOptions)](./schedulebuffer%28buffer,time,options%29.md)
   Schedules audio data playback at a specific time.
-- [func scheduleBuffer(buffer: AVAudioPCMBuffer, time: AVAudioTime?, options: PHASEPushStreamBufferOptions, completionCallbackType: PHASEPushStreamCompletionCallbackCondition, completionHandler: (PHASEPushStreamCompletionCallbackCondition) -> Void)](phasepushstreamnode/schedulebuffer(buffer:time:options:completioncallbacktype:completionhandler:).md)
+- [func scheduleBuffer(buffer: AVAudioPCMBuffer, time: AVAudioTime?, options: PHASEPushStreamBufferOptions, completionCallbackType: PHASEPushStreamCompletionCallbackCondition, completionHandler: (PHASEPushStreamCompletionCallbackCondition) -> Void)](./schedulebuffer%28buffer,time,options,completioncallbacktype,completionhandler%29.md)
   Schedules audio data playback at a specific time with a completion handler.
-- [enum PHASEPushStreamCompletionCallbackCondition](phasepushstreamcompletioncallbackcondition.md)
+- [enum PHASEPushStreamCompletionCallbackCondition](../phasepushstreamcompletioncallbackcondition.md)
   A status that describes the results after the app schedules a push-stream buffer.
 
 

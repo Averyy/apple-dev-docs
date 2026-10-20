@@ -1,7 +1,8 @@
 # showsCloseButton
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether a close button should be shown on the popover bar.
 
@@ -17,15 +18,20 @@ A Boolean value that determines whether a close button should be shown on the po
 var showsCloseButton: Bool { get set }
 ```
 
+```objc
+@property BOOL showsCloseButton;
+```
+
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true), a close button is automatically displayed when the popover bar is displayed. When [`false`](https://developer.apple.com/documentation/swift/false), it is your responsibility to dismiss the popover bar.
+When [`true`](../../Swift/true.md), a close button is automatically displayed when the popover bar is displayed. When [`false`](../../Swift/false.md), it is your responsibility to dismiss the popover bar.
 
 ## See Also
 
-- [var popoverTouchBar: NSTouchBar](nspopovertouchbaritem/popovertouchbar.md)
+### Configuring the expanded popover
+- [var popoverTouchBar: NSTouchBar](./popovertouchbar.md)
   The bar displayed when this item is “popped.”
-- [var pressAndHoldTouchBar: NSTouchBar?](nspopovertouchbaritem/pressandholdtouchbar.md)
+- [var pressAndHoldTouchBar: NSTouchBar?](./pressandholdtouchbar.md)
   The bar that is displayed when a user press-and-holds on the popover item.
 
 

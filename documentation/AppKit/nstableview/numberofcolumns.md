@@ -1,17 +1,22 @@
 # numberOfColumns
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of columns in the table.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var numberOfColumns: Int { get }
+```
+
+```objc
+@property (readonly) NSInteger numberOfColumns;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ The value in this property includes table columns that are currently hidden.
 
 ## See Also
 
-- [var numberOfRows: Int](nstableview/numberofrows.md)
+### Table Dimensions
+- [var numberOfRows: Int](./numberofrows.md)
   The number of rows in the table.
 
 

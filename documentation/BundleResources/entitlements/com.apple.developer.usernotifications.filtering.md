@@ -1,7 +1,8 @@
 # com.apple.developer.usernotifications.filtering
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 Enable receiving notifications without displaying the notification to the user.
 
@@ -10,19 +11,20 @@ Enable receiving notifications without displaying the notification to the user.
 - iPadOS 13.3+
 - macOS 11.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.usernotifications.filtering`
+- **Type**: boolean
 
 #### Discussion
 
-This entitlement allows a notification service extension to receive remote notifications without displaying the notification to the user. To apply for this entitlement, see [`Request Notification Service Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/notification-service).
+This entitlement allows a notification service extension to receive remote notifications without displaying the notification to the user. To apply for this entitlement, see [Request Notification Service Entitlement](https://developer.apple.com/contact/request/notification-service).
 
-After you receive permission to use the entitlement, add [`com.apple.developer.usernotifications.filtering`](entitlements/com.apple.developer.usernotifications.filtering.md) to the entitlements file in the Notification Service Extension target. This allows you to silence push notifications after your extension receives them.
+After you receive permission to use the entitlement, add [`com.apple.developer.usernotifications.filtering`](./com.apple.developer.usernotifications.filtering.md) to the entitlements file in the Notification Service Extension target. This allows you to silence push notifications after your extension receives them.
 
 ##### Silence Push Notifications
 
-To suppress a notification’s alert, create an empty [`UNNotificationContent`](https://developer.apple.com/documentation/usernotifications/unnotificationcontent) object in your extension’s [`didReceive(_:withContentHandler:)`](https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension/didreceive(_:withcontenthandler:)) method, and pass it to the content handler. Don’t specify a title, subtitle, body, attachments, or sound for the content.
+To suppress a notification’s alert, create an empty [`UNNotificationContent`](../../UserNotifications/unnotificationcontent.md) object in your extension’s [`didReceive(_:withContentHandler:)`](../../UserNotifications/unnotificationserviceextension/didreceive%28_,withcontenthandler%29.md) method, and pass it to the content handler. Don’t specify a title, subtitle, body, attachments, or sound for the content.
 
 ```swift
 override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
@@ -51,11 +53,12 @@ override func didReceive(_ request: UNNotificationRequest, withContentHandler co
 
 ## See Also
 
-- [APS Environment Entitlement](entitlements/aps-environment.md)
+### Notifications
+- [APS Environment Entitlement](./aps-environment.md)
   The environment for push notifications.
-- [APS Environment (macOS) Entitlement](entitlements/com.apple.developer.aps-environment.md)
+- [APS Environment (macOS) Entitlement](./com.apple.developer.aps-environment.md)
   The environment for push notifications in macOS apps.
-- [Critical Alerts](entitlements/com.apple.developer.usernotifications.critical-alerts.md)
+- [Critical Alerts](./com.apple.developer.usernotifications.critical-alerts.md)
   An entitlement that permits an app to receive critical alert notifications.
 
 

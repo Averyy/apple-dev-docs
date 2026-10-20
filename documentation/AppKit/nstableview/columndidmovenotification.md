@@ -1,17 +1,22 @@
 # columnDidMoveNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted whenever a column is moved by user action in an `NSTableView` object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class let columnDidMoveNotification: NSNotification.Name
+```
+
+```c
+extern NSNotificationName NSTableViewColumnDidMoveNotification;
 ```
 
 #### Discussion
@@ -25,13 +30,15 @@ The notification object is the table view in which a column moved. The `userInfo
 
 ## See Also
 
-- [func moveColumn(Int, toColumn: Int)](nstableview/movecolumn(_:tocolumn:).md)
+### Related Documentation
+- [func moveColumn(Int, toColumn: Int)](./movecolumn%28_,tocolumn%29.md)
   Moves the column and heading at the specified index to the new specified index.
-- [class let columnDidResizeNotification: NSNotification.Name](nstableview/columndidresizenotification.md)
+### Notifications
+- [class let columnDidResizeNotification: NSNotification.Name](./columndidresizenotification.md)
   Posted whenever a column is resized in an `NSTableView` object.
-- [class let selectionDidChangeNotification: NSNotification.Name](nstableview/selectiondidchangenotification.md)
+- [class let selectionDidChangeNotification: NSNotification.Name](./selectiondidchangenotification.md)
   Posted after an `NSTableView` object’s selection changes.
-- [class let selectionIsChangingNotification: NSNotification.Name](nstableview/selectionischangingnotification.md)
+- [class let selectionIsChangingNotification: NSNotification.Name](./selectionischangingnotification.md)
   Posted as an `NSTableView` object’s selection changes (while the mouse button is still down).
 
 

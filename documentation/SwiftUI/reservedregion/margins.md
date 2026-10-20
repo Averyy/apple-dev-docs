@@ -1,7 +1,8 @@
 # margins
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extra space around the reserved area that keeps interactive content clear of it.
 
@@ -22,11 +23,12 @@ var margins: EdgeInsets { get }
 
 #### Discussion
 
-The region’s [`frame`](reservedregion/frame.md) already includes these margins.
+The region’s [`frame`](./frame.md) already includes these margins.
 
 ## See Also
 
-- [var frame: CGRect](reservedregion/frame.md)
+### Getting the region’s geometry
+- [var frame: CGRect](./frame.md)
   The rectangle that describes the region within your view.
 
 

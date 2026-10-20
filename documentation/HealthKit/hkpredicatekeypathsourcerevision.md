@@ -1,7 +1,8 @@
 # HKPredicateKeyPathSourceRevision
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key path for accessing the object’s source revision inside a predicate format string.
 
@@ -19,11 +20,16 @@ The key path for accessing the object’s source revision inside a predicate for
 let HKPredicateKeyPathSourceRevision: String
 ```
 
+```c
+extern NSString * const HKPredicateKeyPathSourceRevision;
+```
+
 ## See Also
 
-- [let HKPredicateKeyPathDevice: String](hkpredicatekeypathdevice.md)
+### Device and source keys
+- [let HKPredicateKeyPathDevice: String](./hkpredicatekeypathdevice.md)
   The key path for accessing the object’s device inside a predicate format string.
-- [let HKPredicateKeyPathSource: String](hkpredicatekeypathsource.md)
+- [let HKPredicateKeyPathSource: String](./hkpredicatekeypathsource.md)
   The key path for accessing the object’s source inside a predicate format string.
 
 

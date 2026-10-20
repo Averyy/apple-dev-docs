@@ -1,6 +1,8 @@
 # Creating an audio unit extension using the vDSP library
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Sample Code  
+**Download**: [CreatingAnAudioUnitExtensionUsingTheVDSPLibrary.zip](https://docs-assets.developer.apple.com/published/f9bc5c104228/CreatingAnAudioUnitExtensionUsingTheVDSPLibrary.zip)
 
 Add biquadratic filter audio-effect processing to apps like Logic Pro X and GarageBand with the Accelerate framework.
 
@@ -16,15 +18,15 @@ You can shape the output of an audio signal, such as by boosting or cutting the 
 
 The image below shows an example of a magnitude response curve that boosts low frequencies:
 
-![A screenshot of a line chart that represents the magnitude response curve of a peaking EQ filter.](/images/com.apple.accelerate/vDSP_Audio_Unit.png)
+![A screenshot of a line chart that represents the magnitude response curve of a peaking EQ filter.](https://developer.apple.com/tutorials/images/com.apple.accelerate/vDSP_Audio_Unit.png)
 
-This sample code project is a peaking EQ filter implemented with a vDSP biquadratic filter that’s delivered as an audio unit extension. You can use the code in this project as the basis for writing audio units that use the [`vDSP`](vdsp.md) library.
+This sample code project is a peaking EQ filter implemented with a vDSP biquadratic filter that’s delivered as an audio unit extension. You can use the code in this project as the basis for writing audio units that use the [`vDSP`](./vdsp.md) library.
 
 This project is based on the Audio Unit Extension App Xcode template and uses the *Effect* audio unit type. This type of audio unit accepts an audio input and produces an audio output. The template provides an audio pass-through effect with a signal parameter to adjust the gain of the audio that passes through the audio unit.
 
-For more information about creating audio unit extensions, see [`Creating an Audio Unit extension`](https://developer.apple.com/documentation/avfaudio/creating-an-audio-unit-extension).
+For more information about creating audio unit extensions, see [Creating an audio unit extension](../AVFAudio/creating-an-audio-unit-extension.md).
 
-##### Add a New Parameter Address
+##### Add a new parameter address
 
 The peaking EQ filter requires three parameters: the center frequency, the Q value (which controls the shape of the response curve), and the decibel gain.
 
@@ -101,9 +103,9 @@ AUValue getParameter(AUParameterAddress address) {
 }
 ```
 
-##### Implement the Biquadratic Filter
+##### Implement the biquadratic filter
 
-The audio unit extension applies a peaking EQ filter with the [`vDSP_biquad_Setup`](vdsp_biquad_setup.md) filter. For more information about using biquadratic filters, see [`Applying biquadratic filters to a music loop`](applying-biquadratic-filters-to-a-music-loop.md).
+The audio unit extension applies a peaking EQ filter with the [`vDSP_biquad_Setup`](./vdsp_biquad_setup.md) filter. For more information about using biquadratic filters, see [Applying biquadratic filters to a music loop](./applying-biquadratic-filters-to-a-music-loop.md).
 
 The `vDSP_audio_unitExtensionDSPKernel` class provides the plug-in’s DSP logic, and is written in C++ to ensure real-time safety. The code below initializes the DSP kernel by creating a vector of biquadratic filters with default, pass-though coefficients:
 
@@ -172,7 +174,8 @@ void process(std::span<float const*> inputBuffers,
 
 ## See Also
 
-- [Applying biquadratic filters to a music loop](applying-biquadratic-filters-to-a-music-loop.md)
+### Biquadratic filter essentials
+- [Applying biquadratic filters to a music loop](./applying-biquadratic-filters-to-a-music-loop.md)
   Change the frequency response of an audio signal using a cascaded biquadratic filter.
 
 

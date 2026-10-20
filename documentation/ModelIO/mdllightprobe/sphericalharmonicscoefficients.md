@@ -1,7 +1,8 @@
 # sphericalHarmonicsCoefficients
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Data containing the spherical harmonics coefficients for the light.
 
@@ -19,11 +20,15 @@ Data containing the spherical harmonics coefficients for the light.
 var sphericalHarmonicsCoefficients: Data? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSData * sphericalHarmonicsCoefficients;
+```
+
 #### Discussion
 
-Spherical harmonic coefficients describe the distribution of light around a light source with less high-frequency detail than a cube map texture, but they can be used more efficiently in real-time rendering. Use the [`generateSphericalHarmonics(fromIrradiance:)`](mdllightprobe/generatesphericalharmonics(fromirradiance:).md) method to create spherical harmonics data based on the light probe’s irradiance texture.
+Spherical harmonic coefficients describe the distribution of light around a light source with less high-frequency detail than a cube map texture, but they can be used more efficiently in real-time rendering. Use the [`generateSphericalHarmonics(fromIrradiance:)`](./generatesphericalharmonics%28fromirradiance%29.md) method to create spherical harmonics data based on the light probe’s irradiance texture.
 
-The data is an array of 32-bit floating-point values, containing three noninterleaved data sets corresponding to the red, green, and blue sets of coefficients. The array’s length is determined by the [`sphericalHarmonicsLevel`](mdllightprobe/sphericalharmonicslevel.md) property:
+The data is an array of 32-bit floating-point values, containing three noninterleaved data sets corresponding to the red, green, and blue sets of coefficients. The array’s length is determined by the [`sphericalHarmonicsLevel`](./sphericalharmonicslevel.md) property:
 
 - At level 0, the array has 1 coefficient (3 values).
 - At level 1, the array has 4 coefficients (3 sets of 4 values, 12 values total).
@@ -74,9 +79,10 @@ float blue = coeffs[totalCount * 2 + offset + index];
 
 ## See Also
 
-- [func generateSphericalHarmonics(fromIrradiance: Int)](mdllightprobe/generatesphericalharmonics(fromirradiance:).md)
+### Working with Spherical Harmonics
+- [func generateSphericalHarmonics(fromIrradiance: Int)](./generatesphericalharmonics%28fromirradiance%29.md)
   Generates spherical harmonics information based on the light probe’s irradiance texture.
-- [var sphericalHarmonicsLevel: Int](mdllightprobe/sphericalharmonicslevel.md)
+- [var sphericalHarmonicsLevel: Int](./sphericalharmonicslevel.md)
   The number of levels of spherical harmonics information in the light probe.
 
 

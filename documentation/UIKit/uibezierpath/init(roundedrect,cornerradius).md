@@ -1,7 +1,8 @@
 # init(roundedRect:cornerRadius:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a new Bézier path object with a rounded rectangular path.
 
@@ -9,7 +10,7 @@ Creates and returns a new Bézier path object with a rounded rectangular path.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -17,6 +18,10 @@ Creates and returns a new Bézier path object with a rounded rectangular path.
 
 ```swift
 convenience init(roundedRect rect: CGRect, cornerRadius: CGFloat)
+```
+
+```objc
++ (instancetype) bezierPathWithRoundedRect:(CGRect) rect cornerRadius:(CGFloat) cornerRadius;
 ```
 
 #### Return Value
@@ -34,21 +39,22 @@ This method creates a closed subpath, proceeding in a clockwise direction (relat
 
 ## See Also
 
-- [convenience init(rect: CGRect)](uibezierpath/init(rect:).md)
+### Creating a Bézier path
+- [convenience init(rect: CGRect)](./init%28rect%29.md)
   Creates and returns a new Bézier path object with a rectangular path.
-- [convenience init(ovalIn: CGRect)](uibezierpath/init(ovalin:).md)
+- [convenience init(ovalIn: CGRect)](./init%28ovalin%29.md)
   Creates and returns a new Bézier path object with an inscribed oval path in the specified rectangle.
-- [convenience init(roundedRect: CGRect, byRoundingCorners: UIRectCorner, cornerRadii: CGSize)](uibezierpath/init(roundedrect:byroundingcorners:cornerradii:).md)
+- [convenience init(roundedRect: CGRect, byRoundingCorners: UIRectCorner, cornerRadii: CGSize)](./init%28roundedrect,byroundingcorners,cornerradii%29.md)
   Creates and returns a new Bézier path object with a rectangular path rounded at the specified corners.
-- [convenience init(arcCenter: CGPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat, clockwise: Bool)](uibezierpath/init(arccenter:radius:startangle:endangle:clockwise:).md)
+- [convenience init(arcCenter: CGPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat, clockwise: Bool)](./init%28arccenter,radius,startangle,endangle,clockwise%29.md)
   Creates and returns a new Bézier path object with an arc of a circle.
-- [convenience init(cgPath: CGPath)](uibezierpath/init(cgpath:)-833n8.md)
+- [convenience init(cgPath: CGPath)](./init%28cgpath%29-833n8.md)
   Creates and returns a new Bézier path object with the contents of a Core Graphics path.
-- [func reversing() -> UIBezierPath](uibezierpath/reversing.md)
+- [func reversing() -> UIBezierPath](./reversing%28%29.md)
   Creates and returns a new Bézier path object with the reversed contents of the current path.
-- [init()](uibezierpath/init.md)
+- [init()](./init%28%29.md)
   Creates and returns an empty path object.
-- [init?(coder: NSCoder)](uibezierpath/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a Bézier path object from data in an unarchiver.
 
 

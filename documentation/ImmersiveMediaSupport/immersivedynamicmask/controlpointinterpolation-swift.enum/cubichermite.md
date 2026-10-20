@@ -1,7 +1,8 @@
 # ImmersiveDynamicMask.ControlPointInterpolation.cubicHermite
 
 **Framework**: Immersive Media Support  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.4+
@@ -18,7 +19,8 @@ case cubicHermite
 
 ## See Also
 
-- [ImmersiveDynamicMask.ControlPointInterpolation.linear](immersivedynamicmask/controlpointinterpolation-swift.enum/linear.md)
+### Enumeration Cases
+- [ImmersiveDynamicMask.ControlPointInterpolation.linear](./linear.md)
 
 
 ---

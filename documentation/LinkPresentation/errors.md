@@ -1,20 +1,22 @@
 # LinkPresentation Errors
 
-**Framework**: Link Presentation
+**Framework**: Link Presentation  
+**Role**: API Collection
 
 ## Topics
 
 ### Errors
-- [struct LPError](lperror.md)
+- [struct LPError](./lperror.md)
   An error returned by the LinkPresentation framework.
-- [LPError.Code](lperror/code.md)
+- [LPError.Code](./lperror/code.md)
   Possible error values that can be returned from LinkPresentation APIs.
-- [let LPErrorDomain: String](lperrordomain.md)
+- [let LPErrorDomain: String](./lperrordomain.md)
   The domain for Link Presentation errors.
 
 ## See Also
 
-- [LinkPresentation Macros](macros.md)
+### Reference
+- [LinkPresentation Macros](./macros.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # liveUpdates(_:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Tells Core Location to start delivering the location updates it produces for the configuration you specify.
 
@@ -22,11 +23,11 @@ static func liveUpdates(_ configuration: CLLocationUpdate.LiveConfiguration = .d
 
 ## Mentions
 
-- [Creating a location push service extension](creating-a-location-push-service-extension.md)
+- [Creating a location push service extension](../creating-a-location-push-service-extension.md)
 
 #### Return Value
 
-[`CLLocationUpdate.Updates`](cllocationupdate/updates.md) that meet the criteria you specify.
+[`CLLocationUpdate.Updates`](./updates.md) that meet the criteria you specify.
 
 ## Parameters
 
@@ -34,9 +35,10 @@ static func liveUpdates(_ configuration: CLLocationUpdate.LiveConfiguration = .d
 
 ## See Also
 
-- [CLLocationUpdate.LiveConfiguration](cllocationupdate/liveconfiguration.md)
+### Receiving location updates
+- [CLLocationUpdate.LiveConfiguration](./liveconfiguration.md)
   Values that indicate the kind of positioning updates the framework delivers.
-- [CLLocationUpdate.Updates](cllocationupdate/updates.md)
+- [CLLocationUpdate.Updates](./updates.md)
   A structure that represents an asynchronous sequence of location updates.
 
 

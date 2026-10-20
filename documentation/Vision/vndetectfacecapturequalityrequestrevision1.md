@@ -1,7 +1,8 @@
 # VNDetectFaceCaptureQualityRequestRevision1
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for specifying revision 1 of the face capture detection request.
 
@@ -19,9 +20,14 @@ A constant for specifying revision 1 of the face capture detection request.
 var VNDetectFaceCaptureQualityRequestRevision1: Int { get }
 ```
 
+```c
+static const NSUInteger VNDetectFaceCaptureQualityRequestRevision1;
+```
+
 ## See Also
 
-- [var VNDetectFaceCaptureQualityRequestRevision2: Int](vndetectfacecapturequalityrequestrevision2.md)
+### Identifying Request Revisions
+- [var VNDetectFaceCaptureQualityRequestRevision2: Int](./vndetectfacecapturequalityrequestrevision2.md)
   Revision 2 of the request algorithm.
 
 

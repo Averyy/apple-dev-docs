@@ -1,7 +1,8 @@
 # depthData
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Depth data associated with the image.
 
@@ -19,19 +20,24 @@ Depth data associated with the image.
 var depthData: AVDepthData? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVDepthData * depthData;
+```
+
 #### Discussion
 
-Returns an [`AVDepthData`](https://developer.apple.com/documentation/avfoundation/avdepthdata) if the [`CIImage`](ciimage.md) was created with [`imageWithData:`](ciimage/imagewithdata:.md) or [`imageWithContentsOfURL:`](ciimage/imagewithcontentsofurl:.md) and one of the options [`auxiliaryDepth`](ciimageoption/auxiliarydepth.md) or [`auxiliaryDisparity`](ciimageoption/auxiliarydisparity.md), otherwise [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
+Returns an [`AVDepthData`](../../AVFoundation/avdepthdata.md) if the [`CIImage`](../ciimage.md) was created with [`imageWithData:`](./imagewithdata_.md) or [`imageWithContentsOfURL:`](./imagewithcontentsofurl_.md) and one of the options [`auxiliaryDepth`](../ciimageoption/auxiliarydepth.md) or [`auxiliaryDisparity`](../ciimageoption/auxiliarydisparity.md), otherwise [`nil`](../../ObjectiveC/nil-227m0.md).
 
 ## See Also
 
-- [var cgImage: CGImage?](ciimage/cgimage.md)
+### Accessing Original Image Content
+- [var cgImage: CGImage?](./cgimage.md)
   The CoreGraphics image object this image was created from, if applicable.
-- [var pixelBuffer: CVPixelBuffer?](ciimage/pixelbuffer.md)
+- [var pixelBuffer: CVPixelBuffer?](./pixelbuffer.md)
   The CoreVideo pixel buffer this image was created from, if applicable.
-- [var portraitEffectsMatte: AVPortraitEffectsMatte?](ciimage/portraiteffectsmatte.md)
+- [var portraitEffectsMatte: AVPortraitEffectsMatte?](./portraiteffectsmatte.md)
   The portrait effects matte associated with the image.
-- [var semanticSegmentationMatte: AVSemanticSegmentationMatte?](ciimage/semanticsegmentationmatte.md)
+- [var semanticSegmentationMatte: AVSemanticSegmentationMatte?](./semanticsegmentationmatte.md)
 
 
 ---

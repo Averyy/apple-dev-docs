@@ -1,7 +1,8 @@
 # recordID
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID of the record that CloudKit creates, updates, or deletes.
 
@@ -10,7 +11,7 @@ The ID of the record that CloudKit creates, updates, or deletes.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -21,13 +22,18 @@ The ID of the record that CloudKit creates, updates, or deletes.
 var recordID: CKRecord.ID? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) CKRecordID * recordID;
+```
+
 #### Discussion
 
 Use this value to fetch the record.
 
 ## See Also
 
-- [var recordFields: [String : Any]?](ckquerynotification/recordfields.md)
+### Getting the Record Information
+- [var recordFields: [String : Any]?](./recordfields.md)
   A dictionary of fields that have changes.
 
 

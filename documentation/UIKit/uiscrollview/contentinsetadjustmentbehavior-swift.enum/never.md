@@ -1,7 +1,8 @@
 # UIScrollView.ContentInsetAdjustmentBehavior.never
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Do not adjust the scroll view insets.
 
@@ -16,6 +17,10 @@ Do not adjust the scroll view insets.
 
 ```swift
 case never
+```
+
+```c
+UIScrollViewContentInsetAdjustmentNever
 ```
 
 

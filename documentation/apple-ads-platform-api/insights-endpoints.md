@@ -1,6 +1,7 @@
 # Insights Endpoints
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Query impression share and search term popularity data for your apps.
 
@@ -17,14 +18,14 @@ Query the following endpoints to retrieve insights data:
 
 | Method | Path | Description |
 | --- | --- | --- |
-| `POST` | `/v1/insights/apps/impression-share/query` | Retrieves impression share data for the specified keywords and time range. See [`Impression Share Query`](query-app-impression-share-data.md). |
-| `POST` | `/v1/insights/apps/search-term-popularity/query` | Retrieves search term popularity rankings by App Store country or region and genre. See [`Search Term Popularity Query`](query-app-search-term-popularity-data.md). |
+| `POST` | `/v1/insights/apps/impression-share/query` | Retrieves impression share data for the specified keywords and time range. See [`Impression Share Query`](./query-app-impression-share-data.md). |
+| `POST` | `/v1/insights/apps/search-term-popularity/query` | Retrieves search term popularity rankings by App Store country or region and genre. See [`Search Term Popularity Query`](./query-app-search-term-popularity-data.md). |
 
 ##### Measure Impression Share
 
 Impression share reports measure your share of available impressions relative to competitors for a given set of keywords or app categories. The report shows how often your ad appeared in any ad position for a specific search term, out of the total number of searches on that search term, in the same App Store country or region. Use impression share data to understand how competitive you are on a given search term and how much headroom exists to increase reach.
 
-To retrieve impression share data, use `POST /v1/insights/apps/impression-share/query` ([`Impression Share Query`](query-app-impression-share-data.md)). You must filter on `promotedObjectId`, or the request fails with a 400 error. The endpoint returns results synchronously with pagination. The following table lists the granularity options and limits for impression share queries:
+To retrieve impression share data, use `POST /v1/insights/apps/impression-share/query` ([`Impression Share Query`](./query-app-impression-share-data.md)). You must filter on `promotedObjectId`, or the request fails with a 400 error. The endpoint returns results synchronously with pagination. The following table lists the granularity options and limits for impression share queries:
 
 | Field | Details |
 | --- | --- |
@@ -53,7 +54,7 @@ Search term popularity reports show the relative ranking of search terms by volu
 
 Use monthly and weekly search term popularity data to understand search volume trends and identify high-opportunity terms.
 
-To retrieve search term popularity data, use `POST /v1/insights/apps/search-term-popularity/query` ([`Search Term Popularity Query`](query-app-search-term-popularity-data.md)). This endpoint always uses UTC. The following table lists the granularity options and limits for search term popularity queries:
+To retrieve search term popularity data, use `POST /v1/insights/apps/search-term-popularity/query` ([`Search Term Popularity Query`](./query-app-search-term-popularity-data.md)). This endpoint always uses UTC. The following table lists the granularity options and limits for search term popularity queries:
 
 | Field | Details |
 | --- | --- |
@@ -73,20 +74,22 @@ The response always returns all dimension fields: `countryOrRegion`, `genre`, `s
 
 ## Topics
 
-- [Impression Share Query](query-app-impression-share-data.md)
+- [Impression Share Query](./query-app-impression-share-data.md)
   Retrieve impression share data showing how often your ads appear relative to total eligible impressions for a given search term and country.
-- [Search Term Popularity Query](query-app-search-term-popularity-data.md)
+- [Search Term Popularity Query](./query-app-search-term-popularity-data.md)
   Retrieve the relative search volume ranking of search terms for a given App Store genre and country or region.
 
 ## See Also
 
-- [Managing Reports](reports.md)
+### Related Documentation
+- [Managing Reports](./reports.md)
   Retrieve performance data for campaigns, ad groups, ads, keywords, and search terms.
-- [Recommendations Endpoints](recommendations-endpoints.md)
+- [Recommendations Endpoints](./recommendations-endpoints.md)
   Query budget and Target CPA recommendations, then apply or dismiss them to adjust campaign spend and bids.
-- [Suggestions Endpoints](suggestions-endpoints.md)
+- [Suggestions Endpoints](./suggestions-endpoints.md)
   Discover keyword, phrase, category, and Target CPA suggestions to expand keywords and size bids.
-- [Insights Data Objects](insights-data-objects.md)
+### Insights
+- [Insights Data Objects](./insights-data-objects.md)
   Build the request and response objects for impression share and search term popularity queries.
 
 

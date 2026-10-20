@@ -1,7 +1,8 @@
 # kIOUSB30LinkStatePollingLFPSTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The polling LFPS timeout.
 
@@ -10,7 +11,7 @@ The polling LFPS timeout.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30LinkStatePollingLFPSTimeout = 360
 ```
 

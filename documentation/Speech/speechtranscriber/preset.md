@@ -1,7 +1,8 @@
 # SpeechTranscriber.Preset
 
 **Framework**: Speech  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Predefined transcriber configurations.
 
@@ -39,7 +40,7 @@ let transcriber = SpeechTranscriber(
 
 This table lists the presets and their configurations:
 
-| Preset | [`SpeechTranscriber.ReportingOption.volatileResults`](speechtranscriber/reportingoption/volatileresults.md) | [`SpeechTranscriber.ReportingOption.fastResults`](speechtranscriber/reportingoption/fastresults.md) | [`SpeechTranscriber.ReportingOption.alternativeTranscriptions`](speechtranscriber/reportingoption/alternativetranscriptions.md) | [`SpeechTranscriber.ResultAttributeOption.audioTimeRange`](speechtranscriber/resultattributeoption/audiotimerange.md) |
+| Preset | [volatileResults](./reportingoption/volatileresults.md) | [fastResults](./reportingoption/fastresults.md) | [alternativeTranscriptions](./reportingoption/alternativetranscriptions.md) | [audioTimeRange](./resultattributeoption/audiotimerange.md) |
 | --- | --- | --- | --- | --- |
 | `transcription` | No | No | No | No |
 | `transcriptionWithAlternatives` | No | No | **Yes** | No |
@@ -50,40 +51,41 @@ This table lists the presets and their configurations:
 ## Topics
 
 ### Standard presets
-- [static let transcription: SpeechTranscriber.Preset](speechtranscriber/preset/transcription.md)
+- [static let transcription: SpeechTranscriber.Preset](./preset/transcription.md)
   Configuration for basic, accurate transcription.
-- [static let transcriptionWithAlternatives: SpeechTranscriber.Preset](speechtranscriber/preset/transcriptionwithalternatives.md)
+- [static let transcriptionWithAlternatives: SpeechTranscriber.Preset](./preset/transcriptionwithalternatives.md)
   Configuration for transcription with editing suggestions.
-- [static let timeIndexedTranscriptionWithAlternatives: SpeechTranscriber.Preset](speechtranscriber/preset/timeindexedtranscriptionwithalternatives.md)
+- [static let timeIndexedTranscriptionWithAlternatives: SpeechTranscriber.Preset](./preset/timeindexedtranscriptionwithalternatives.md)
   Configuration for transcription with editing suggestions, cross-referenced to source audio.
-- [static let progressiveTranscription: SpeechTranscriber.Preset](speechtranscriber/preset/progressivetranscription.md)
+- [static let progressiveTranscription: SpeechTranscriber.Preset](./preset/progressivetranscription.md)
   Configuration for immediate transcription of live audio.
-- [static let timeIndexedProgressiveTranscription: SpeechTranscriber.Preset](speechtranscriber/preset/timeindexedprogressivetranscription.md)
+- [static let timeIndexedProgressiveTranscription: SpeechTranscriber.Preset](./preset/timeindexedprogressivetranscription.md)
   Configuration for immediate transcription of live audio, cross-referenced to stream time-codes.
 ### Creating a preset
-- [init(transcriptionOptions: Set<SpeechTranscriber.TranscriptionOption>, reportingOptions: Set<SpeechTranscriber.ReportingOption>, attributeOptions: Set<SpeechTranscriber.ResultAttributeOption>)](speechtranscriber/preset/init(transcriptionoptions:reportingoptions:attributeoptions:).md)
+- [init(transcriptionOptions: Set<SpeechTranscriber.TranscriptionOption>, reportingOptions: Set<SpeechTranscriber.ReportingOption>, attributeOptions: Set<SpeechTranscriber.ResultAttributeOption>)](./preset/init%28transcriptionoptions,reportingoptions,attributeoptions%29.md)
   Creates a preset.
 ### Getting preset properties
-- [var attributeOptions: Set<SpeechTranscriber.ResultAttributeOption>](speechtranscriber/preset/attributeoptions.md)
+- [var attributeOptions: Set<SpeechTranscriber.ResultAttributeOption>](./preset/attributeoptions.md)
   Options relating to the attributes of the transcription appropriate for this preset.
-- [var reportingOptions: Set<SpeechTranscriber.ReportingOption>](speechtranscriber/preset/reportingoptions.md)
+- [var reportingOptions: Set<SpeechTranscriber.ReportingOption>](./preset/reportingoptions.md)
   Options relating to the transcriber’s result delivery appropriate for this preset.
-- [var transcriptionOptions: Set<SpeechTranscriber.TranscriptionOption>](speechtranscriber/preset/transcriptionoptions.md)
+- [var transcriptionOptions: Set<SpeechTranscriber.TranscriptionOption>](./preset/transcriptionoptions.md)
   Options relating to the text of the transcription appropriate for this preset.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [convenience init(locale: Locale, preset: SpeechTranscriber.Preset)](speechtranscriber/init(locale:preset:).md)
+### Creating a transcriber
+- [convenience init(locale: Locale, preset: SpeechTranscriber.Preset)](./init%28locale,preset%29.md)
   Creates a general-purpose transcriber according to a preset.
-- [convenience init(locale: Locale, transcriptionOptions: Set<SpeechTranscriber.TranscriptionOption>, reportingOptions: Set<SpeechTranscriber.ReportingOption>, attributeOptions: Set<SpeechTranscriber.ResultAttributeOption>)](speechtranscriber/init(locale:transcriptionoptions:reportingoptions:attributeoptions:).md)
+- [convenience init(locale: Locale, transcriptionOptions: Set<SpeechTranscriber.TranscriptionOption>, reportingOptions: Set<SpeechTranscriber.ReportingOption>, attributeOptions: Set<SpeechTranscriber.ResultAttributeOption>)](./init%28locale,transcriptionoptions,reportingoptions,attributeoptions%29.md)
   Creates a general-purpose transcriber.
 
 

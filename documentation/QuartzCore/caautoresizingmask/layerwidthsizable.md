@@ -1,13 +1,14 @@
 # layerWidthSizable
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The receiver’s width is flexible.
 
 **Availability**:
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,18 +16,23 @@ The receiver’s width is flexible.
 static var layerWidthSizable: CAAutoresizingMask { get }
 ```
 
+```c
+kCALayerWidthSizable
+```
+
 ## See Also
 
-- [init(rawValue: UInt32)](caautoresizingmask/init(rawvalue:).md)
-- [static var layerMinXMargin: CAAutoresizingMask](caautoresizingmask/layerminxmargin.md)
+### Constants
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
+- [static var layerMinXMargin: CAAutoresizingMask](./layerminxmargin.md)
   The left margin between the receiver and its superview is flexible.
-- [static var layerMaxXMargin: CAAutoresizingMask](caautoresizingmask/layermaxxmargin.md)
+- [static var layerMaxXMargin: CAAutoresizingMask](./layermaxxmargin.md)
   The right margin between the receiver and its superview is flexible.
-- [static var layerMinYMargin: CAAutoresizingMask](caautoresizingmask/layerminymargin.md)
+- [static var layerMinYMargin: CAAutoresizingMask](./layerminymargin.md)
   The bottom margin between the receiver and its superview is flexible.
-- [static var layerHeightSizable: CAAutoresizingMask](caautoresizingmask/layerheightsizable.md)
+- [static var layerHeightSizable: CAAutoresizingMask](./layerheightsizable.md)
   The receiver’s height is flexible.
-- [static var layerMaxYMargin: CAAutoresizingMask](caautoresizingmask/layermaxymargin.md)
+- [static var layerMaxYMargin: CAAutoresizingMask](./layermaxymargin.md)
   The top margin between the receiver and its superview is flexible.
 
 

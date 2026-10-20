@@ -2,21 +2,26 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns the noninteractive duration of a transition.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var transitionDuration: TimeInterval { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSTimeInterval transitionDuration;
 ```
 
 #### Return Value
@@ -29,13 +34,14 @@ The transition duration defines the time for the main transition to finish. Use 
 
 ## See Also
 
-- [var presentationStyle: UIModalPresentationStyle](uiviewcontrollertransitioncoordinatorcontext/presentationstyle.md)
+### Getting the behavior attributes
+- [var presentationStyle: UIModalPresentationStyle](./presentationstyle.md)
   The presentation style to use for the transition.
-- [var completionCurve: UIView.AnimationCurve](uiviewcontrollertransitioncoordinatorcontext/completioncurve.md)
+- [var completionCurve: UIView.AnimationCurve](./completioncurve.md)
   Returns the completion curve associated with the transition.
-- [var completionVelocity: CGFloat](uiviewcontrollertransitioncoordinatorcontext/completionvelocity.md)
+- [var completionVelocity: CGFloat](./completionvelocity.md)
   Returns the starting velocity to use for any final animations.
-- [var percentComplete: CGFloat](uiviewcontrollertransitioncoordinatorcontext/percentcomplete.md)
+- [var percentComplete: CGFloat](./percentcomplete.md)
   Returns the percentage of completion for an interactive transition when it moves to its noninteractive phase.
 
 

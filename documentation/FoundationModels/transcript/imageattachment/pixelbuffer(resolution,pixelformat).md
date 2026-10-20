@@ -1,7 +1,8 @@
 # pixelBuffer(resolution:pixelFormat:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the image as a pixel buffer, optionally resampled to a given resolution and pixel format.
 

@@ -1,18 +1,19 @@
 # mbuf_copym
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 errno_t mbuf_copym(const mbuf_t src, size_t offset, size_t len, mbuf_how_t how, mbuf_t *new_mbuf);
 ```
 
-#### Return_value
+#### Return Value
 
 0 upon success otherwise the errno error.
 

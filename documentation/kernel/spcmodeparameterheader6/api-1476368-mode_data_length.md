@@ -1,14 +1,15 @@
 # MODE_DATA_LENGTH
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 UInt8 MODE_DATA_LENGTH;
 ```
 

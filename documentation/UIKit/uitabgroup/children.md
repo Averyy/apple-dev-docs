@@ -1,7 +1,8 @@
 # children
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tabs within a tab group.
 
@@ -18,17 +19,22 @@ The tabs within a tab group.
 var children: [UITab] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<UITab *> * children;
+```
+
 ## Mentions
 
-- [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
+- [Elevating your iPad app with a tab bar and sidebar](../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
 ## See Also
 
-- [func tab(forIdentifier: String) -> UITab?](uitabgroup/tab(foridentifier:).md)
+### Accessing tabs
+- [func tab(forIdentifier: String) -> UITab?](./tab%28foridentifier%29.md)
   Returns a tab with a matching identifier, if any.
-- [var defaultChildIdentifier: String?](uitabgroup/defaultchildidentifier.md)
+- [var defaultChildIdentifier: String?](./defaultchildidentifier.md)
   The identifier for the default subitem.
-- [var selectedChild: UITab?](uitabgroup/selectedchild.md)
+- [var selectedChild: UITab?](./selectedchild.md)
   The currently selected tab.
 
 

@@ -1,17 +1,22 @@
 # abort()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Abort the current operation
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func abort() -> OBEXError
+```
+
+```objc
+- (OBEXError) abort;
 ```
 
 #### Return Value

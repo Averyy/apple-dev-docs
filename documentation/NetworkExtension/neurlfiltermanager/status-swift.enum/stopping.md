@@ -1,7 +1,8 @@
 # NEURLFilterManager.Status.stopping
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The URL filter is stopping.
 
@@ -19,13 +20,14 @@ case stopping
 
 ## See Also
 
-- [NEURLFilterManager.Status.invalid](neurlfiltermanager/status-swift.enum/invalid.md)
+### URL filter statuses
+- [NEURLFilterManager.Status.invalid](./invalid.md)
   The URL filter isn’t configured.
-- [NEURLFilterManager.Status.stopped](neurlfiltermanager/status-swift.enum/stopped.md)
+- [NEURLFilterManager.Status.stopped](./stopped.md)
   The URL filter is stopped.
-- [NEURLFilterManager.Status.starting](neurlfiltermanager/status-swift.enum/starting.md)
+- [NEURLFilterManager.Status.starting](./starting.md)
   The URL filter is starting.
-- [NEURLFilterManager.Status.running](neurlfiltermanager/status-swift.enum/running.md)
+- [NEURLFilterManager.Status.running](./running.md)
   The URL filter is running.
 
 

@@ -1,7 +1,8 @@
 # SecKeychainSearch
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An opaque type that contains information about a keychain search.
 
@@ -14,11 +15,15 @@ An opaque type that contains information about a keychain search.
 class SecKeychainSearch
 ```
 
+```c
+typedef struct __SecKeychainSearch * SecKeychainSearchRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

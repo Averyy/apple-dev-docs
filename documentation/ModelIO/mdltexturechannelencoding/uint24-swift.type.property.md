@@ -1,7 +1,8 @@
 # uint24
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Each channel value per texel is a 24-bit unsigned integer.
 
@@ -17,6 +18,10 @@ Each channel value per texel is a 24-bit unsigned integer.
 
 ```swift
 static var uint24: MDLTextureChannelEncoding { get }
+```
+
+```c
+MDLTextureChannelEncodingUint24
 ```
 
 

@@ -1,7 +1,8 @@
 # FSActivateResult
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The result of an activate call.
 
@@ -14,35 +15,40 @@ The result of an activate call.
 class FSActivateResult
 ```
 
+```objc
+@interface FSActivateResult : FSVolumeHandlerResult
+```
+
 #### Overview
 
-Use this type in your implementation of [`activateVolume(options:replyHandler:)`](fsvolume/handler/activatevolume(options:replyhandler:).md).
+Use this type in your implementation of [`activateVolume(options:replyHandler:)`](./fsvolume/handler/activatevolume%28options,replyhandler%29.md).
 
 ## Topics
 
 ### Creating an activate result
-- [init?(rootItem: FSItem)](fsactivateresult/init(rootitem:).md)
+- [init?(rootItem: FSItem)](./fsactivateresult/init%28rootitem%29.md)
   Creates an activate result instance.
-- [class FSItem](fsitem.md)
+- [class FSItem](./fsitem.md)
   A distinct object in a file hierarchy, such as a file, directory, symlink, socket, and more.
 
 ## Relationships
 
 ### Inherits From
-- [FSVolumeHandlerResult](fsvolumehandlerresult.md)
+- [FSVolumeHandlerResult](./fsvolumehandlerresult.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class FSItem](fsitem.md)
+### Handling activation and deactivation
+- [class FSItem](./fsitem.md)
   A distinct object in a file hierarchy, such as a file, directory, symlink, socket, and more.
-- [struct FSDeactivateOptions](fsdeactivateoptions.md)
+- [struct FSDeactivateOptions](./fsdeactivateoptions.md)
   Options that affect the behavior of deactivate methods.
 
 

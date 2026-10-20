@@ -2,6 +2,7 @@
 
 **Framework**: Metal Performance Shaders  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 init?(coder aDecoder: NSCoder)
+```
+
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder;
 ```
 
 

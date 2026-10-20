@@ -1,7 +1,8 @@
 # requirements
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s localized operating system compatibility requirements.
 
@@ -20,9 +21,10 @@ let requirements: String?
 
 ## See Also
 
-- [let platform: Platform](managedapp/platform-swift.property.md)
+### Obtaining platform and requirement information
+- [let platform: Platform](./platform-swift.property.md)
   The platform of the app.
-- [ManagedApp.Platform](managedapp/platform-swift.struct.md)
+- [ManagedApp.Platform](./platform-swift.struct.md)
   The supported platform for the app.
 
 

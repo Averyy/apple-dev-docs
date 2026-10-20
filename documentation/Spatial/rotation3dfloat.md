@@ -1,7 +1,8 @@
 # Rotation3DFloat
 
 **Framework**: Spatial  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A single-precision structure that represents a rotation in three dimensions.
 
@@ -20,117 +21,122 @@ A single-precision structure that represents a rotation in three dimensions.
 struct Rotation3DFloat
 ```
 
+```c
+typedef union { ... } SPRotation3DFloat;
+```
+
 ## Topics
 
 ### Operators
-- [static func * (Rotation3DFloat, Float) -> Rotation3DFloat](rotation3dfloat/*(_:_:)-2mmaj.md)
+- [static func * (Rotation3DFloat, Float) -> Rotation3DFloat](./rotation3dfloat/star%28_,_%29-2mmaj.md)
   Calculates the spherical linear interpolation between the identity rotation and the LHS rotation at the RHS interpolation parameter.
-- [static func * (Rotation3DFloat, Rotation3DFloat) -> Rotation3DFloat](rotation3dfloat/*(_:_:)-30js8.md)
+- [static func * (Rotation3DFloat, Rotation3DFloat) -> Rotation3DFloat](./rotation3dfloat/star%28_,_%29-30js8.md)
   Calculates the product of two rotations.
-- [static func * (Float, Rotation3DFloat) -> Rotation3DFloat](rotation3dfloat/*(_:_:)-99umr.md)
+- [static func * (Float, Rotation3DFloat) -> Rotation3DFloat](./rotation3dfloat/star%28_,_%29-99umr.md)
   Calculates the spherical linear interpolation between the identity rotation and the RHS rotation at the LHS interpolation parameter.
-- [static func *= (inout Rotation3DFloat, Rotation3DFloat)](rotation3dfloat/*=(_:_:).md)
+- [static func *= (inout Rotation3DFloat, Rotation3DFloat)](./rotation3dfloat/stareq%28_,_%29.md)
   Calculates the product of two rotations and stores the result in the left-hand-side variable.
 ### Initializers
-- [init()](rotation3dfloat/init-4vjiv.md)
-- [init()](rotation3dfloat/init-4y09q.md)
-- [init(simd_quatf)](rotation3dfloat/init(_:)-140am.md)
-- [init(simd_quatd)](rotation3dfloat/init(_:)-20sue.md)
+- [init()](./rotation3dfloat/init%28%29-4vjiv.md)
+- [init()](./rotation3dfloat/init%28%29-4y09q.md)
+- [init(simd_quatf)](./rotation3dfloat/init%28_%29-140am.md)
+- [init(simd_quatd)](./rotation3dfloat/init%28_%29-20sue.md)
   Returns a new rotation from a double-precision quaternion.
-- [init(Rotation3D)](rotation3dfloat/init(_:)-5vfv0.md)
+- [init(Rotation3D)](./rotation3dfloat/init%28_%29-5vfv0.md)
   Returns a single-precision rotation from a double-precision rotation.
-- [init(simd_packed_float4)](rotation3dfloat/init(_:)-7mhwz.md)
+- [init(simd_packed_float4)](./rotation3dfloat/init%28_%29-7mhwz.md)
   Creates a Spatial rotation from a simd packed vector.
-- [init(angle: Angle2DFloat, axis: RotationAxis3DFloat)](rotation3dfloat/init(angle:axis:).md)
-- [init(eulerAngles: EulerAnglesFloat)](rotation3dfloat/init(eulerangles:).md)
-- [init(forward: Vector3DFloat)](rotation3dfloat/init(forward:).md)
+- [init(angle: Angle2DFloat, axis: RotationAxis3DFloat)](./rotation3dfloat/init%28angle,axis%29.md)
+- [init(eulerAngles: EulerAnglesFloat)](./rotation3dfloat/init%28eulerangles%29.md)
+- [init(forward: Vector3DFloat)](./rotation3dfloat/init%28forward%29.md)
   Returns a rotation with the specified forward vector.
-- [init(forward: Vector3DFloat, up: Vector3DFloat)](rotation3dfloat/init(forward:up:).md)
-- [init(position: Point3DFloat, target: Point3DFloat, up: Vector3DFloat)](rotation3dfloat/init(position:target:up:).md)
+- [init(forward: Vector3DFloat, up: Vector3DFloat)](./rotation3dfloat/init%28forward,up%29.md)
+- [init(position: Point3DFloat, target: Point3DFloat, up: Vector3DFloat)](./rotation3dfloat/init%28position,target,up%29.md)
   Returns a rotation that’s the look at direction from the eye position to the target.
-- [init(quaternion: simd_quatf)](rotation3dfloat/init(quaternion:).md)
+- [init(quaternion: simd_quatf)](./rotation3dfloat/init%28quaternion%29.md)
 ### Instance Properties
-- [var angle: Angle2DFloat](rotation3dfloat/angle.md)
+- [var angle: Angle2DFloat](./rotation3dfloat/angle.md)
   The angle of the rotation.
-- [var axis: RotationAxis3DFloat](rotation3dfloat/axis.md)
+- [var axis: RotationAxis3DFloat](./rotation3dfloat/axis.md)
   The axis of the rotation.
-- [var inverse: Rotation3DFloat](rotation3dfloat/inverse.md)
-- [var isIdentity: Bool](rotation3dfloat/isidentity.md)
-- [var quaternion: simd_quatf](rotation3dfloat/quaternion.md)
-- [var vector: simd_float4](rotation3dfloat/vector.md)
+- [var inverse: Rotation3DFloat](./rotation3dfloat/inverse.md)
+- [var isIdentity: Bool](./rotation3dfloat/isidentity.md)
+- [var quaternion: simd_quatf](./rotation3dfloat/quaternion.md)
+- [var vector: simd_float4](./rotation3dfloat/vector.md)
 ### Instance Methods
-- [func eulerAngles(order: __SPEulerAngleOrder) -> EulerAnglesFloat](rotation3dfloat/eulerangles(order:).md)
-- [func isApproximatelyEqual(to: Rotation3DFloat, tolerance: Float) -> Bool](rotation3dfloat/isapproximatelyequal(to:tolerance:).md)
+- [func eulerAngles(order: __SPEulerAngleOrder) -> EulerAnglesFloat](./rotation3dfloat/eulerangles%28order%29.md)
+- [func isApproximatelyEqual(to: Rotation3DFloat, tolerance: Float) -> Bool](./rotation3dfloat/isapproximatelyequal%28to,tolerance%29.md)
   Returns a Boolean value that indicates whether two rotations are equal within a specified tolerance.
-- [func swing(twistAxis: RotationAxis3DFloat) -> Rotation3DFloat](rotation3dfloat/swing(twistaxis:).md)
-- [func swingTwist(twistAxis: RotationAxis3DFloat) -> (swing: Rotation3DFloat, twist: Rotation3DFloat)](rotation3dfloat/swingtwist(twistaxis:).md)
+- [func swing(twistAxis: RotationAxis3DFloat) -> Rotation3DFloat](./rotation3dfloat/swing%28twistaxis%29.md)
+- [func swingTwist(twistAxis: RotationAxis3DFloat) -> (swing: Rotation3DFloat, twist: Rotation3DFloat)](./rotation3dfloat/swingtwist%28twistaxis%29.md)
   Returns the rotation’s swing-twist decomposition for a given twist axis.
-- [func twist(twistAxis: RotationAxis3DFloat) -> Rotation3DFloat](rotation3dfloat/twist(twistaxis:).md)
+- [func twist(twistAxis: RotationAxis3DFloat) -> Rotation3DFloat](./rotation3dfloat/twist%28twistaxis%29.md)
 ### Type Properties
-- [static let identity: Rotation3DFloat](rotation3dfloat/identity.md)
+- [static let identity: Rotation3DFloat](./rotation3dfloat/identity.md)
   A single-precision structure that represents a rotation in three dimensions.
 ### Type Methods
-- [static func slerp(from: Rotation3DFloat, to: Rotation3DFloat, t: Float, along: Rotation3D.SlerpPath) -> Rotation3DFloat](rotation3dfloat/slerp(from:to:t:along:).md)
+- [static func slerp(from: Rotation3DFloat, to: Rotation3DFloat, t: Float, along: Rotation3D.SlerpPath) -> Rotation3DFloat](./rotation3dfloat/slerp%28from,to,t,along%29.md)
   Returns the spherical linear interpolation along the either the shortest or longest arc between two rotations.
-- [static func spline(leftEndpoint: Rotation3DFloat, from: Rotation3DFloat, to: Rotation3DFloat, rightEndpoint: Rotation3DFloat, t: Float) -> Rotation3DFloat](rotation3dfloat/spline(leftendpoint:from:to:rightendpoint:t:).md)
+- [static func spline(leftEndpoint: Rotation3DFloat, from: Rotation3DFloat, to: Rotation3DFloat, rightEndpoint: Rotation3DFloat, t: Float) -> Rotation3DFloat](./rotation3dfloat/spline%28leftendpoint,from,to,rightendpoint,t%29.md)
   Returns an interpolated value between two rotations along a spherical cubic spline.
 ### Default Implementations
-- [CustomReflectable Implementations](rotation3dfloat/customreflectable-implementations.md)
-- [Decodable Implementations](rotation3dfloat/decodable-implementations.md)
-- [Encodable Implementations](rotation3dfloat/encodable-implementations.md)
-- [Equatable Implementations](rotation3dfloat/equatable-implementations.md)
-- [Hashable Implementations](rotation3dfloat/hashable-implementations.md)
-- [ProjectiveTransformable3DFloat Implementations](rotation3dfloat/projectivetransformable3dfloat-implementations.md)
+- [CustomReflectable Implementations](./rotation3dfloat/customreflectable-implementations.md)
+- [Decodable Implementations](./rotation3dfloat/decodable-implementations.md)
+- [Encodable Implementations](./rotation3dfloat/encodable-implementations.md)
+- [Equatable Implementations](./rotation3dfloat/equatable-implementations.md)
+- [Hashable Implementations](./rotation3dfloat/hashable-implementations.md)
+- [ProjectiveTransformable3DFloat Implementations](./rotation3dfloat/projectivetransformable3dfloat-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [ProjectiveTransformable3D](projectivetransformable3d.md)
-- [ProjectiveTransformable3DFloat](projectivetransformable3dfloat.md)
-- [Rotatable3DProtocol](rotatable3dprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SpatialTypeProtocol](spatialtypeprotocol.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [ProjectiveTransformable3D](./projectivetransformable3d.md)
+- [ProjectiveTransformable3DFloat](./projectivetransformable3dfloat.md)
+- [Rotatable3DProtocol](./rotatable3dprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SpatialTypeProtocol](./spatialtypeprotocol.md)
 
 ## See Also
 
-- [struct Point3D](point3d.md)
+### 3D primitives
+- [struct Point3D](./point3d.md)
   A point in a 3D coordinate system.
-- [struct Point3DFloat](point3dfloat.md)
+- [struct Point3DFloat](./point3dfloat.md)
   A single-precision structure that contains a point in a three-dimensional coordinate system.
-- [struct Size3D](size3d.md)
+- [struct Size3D](./size3d.md)
   A size that describes width, height, and depth in a 3D coordinate system.
-- [struct Size3DFloat](size3dfloat.md)
+- [struct Size3DFloat](./size3dfloat.md)
   A single-precision structure that contains width, height, and depth values.
-- [struct Rect3D](rect3d.md)
+- [struct Rect3D](./rect3d.md)
   A rectangle in a 3D coordinate system.
-- [struct Rect3DFloat](rect3dfloat.md)
+- [struct Rect3DFloat](./rect3dfloat.md)
   A single-precision structure that contains the location and dimensions of a 3D rectangle.
-- [struct Rotation3D](rotation3d.md)
+- [struct Rotation3D](./rotation3d.md)
   A rotation in three dimensions.
-- [struct RotationAxis3D](rotationaxis3d.md)
+- [struct RotationAxis3D](./rotationaxis3d.md)
   A 3D rotation axis.
-- [struct RotationAxis3DFloat](rotationaxis3dfloat.md)
+- [struct RotationAxis3DFloat](./rotationaxis3dfloat.md)
   A 3D axis.
-- [struct Pose3D](pose3d.md)
+- [struct Pose3D](./pose3d.md)
   A structure that contains a 3D position and a 3D rotation.
-- [struct Pose3DFloat](pose3dfloat.md)
+- [struct Pose3DFloat](./pose3dfloat.md)
   A single-precision structure that contains a position and rotation.
-- [struct ScaledPose3D](scaledpose3d.md)
+- [struct ScaledPose3D](./scaledpose3d.md)
   A structure that contains a position, rotation, and scale.
-- [struct ScaledPose3DFloat](scaledpose3dfloat.md)
+- [struct ScaledPose3DFloat](./scaledpose3dfloat.md)
   A structure that contains a position, rotation, and scale.
-- [struct SphericalCoordinates3D](sphericalcoordinates3d.md)
+- [struct SphericalCoordinates3D](./sphericalcoordinates3d.md)
   A structure that defines spherical coordinates in radial, inclination, azimuthal order.
-- [struct SphericalCoordinates3DFloat](sphericalcoordinates3dfloat.md)
+- [struct SphericalCoordinates3DFloat](./sphericalcoordinates3dfloat.md)
   A single-precision structure that defines spherical coordinates in radial, inclination, azimuthal order.
 
 

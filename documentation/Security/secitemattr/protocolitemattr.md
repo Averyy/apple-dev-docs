@@ -1,7 +1,8 @@
 # SecItemAttr.protocolItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the protocol attribute.
 
@@ -15,9 +16,13 @@ Identifies the protocol attribute.
 case protocolItemAttr
 ```
 
+```c
+kSecProtocolItemAttr
+```
+
 #### Discussion
 
-You use this tag to set or get a value of type `SecProtocolType` that represents the Internet protocol. For possible protocol type values, see [`SecProtocolType`](secprotocoltype.md). This is unique to AppleShare and Internet password attributes.
+You use this tag to set or get a value of type `SecProtocolType` that represents the Internet protocol. For possible protocol type values, see [`SecProtocolType`](../secprotocoltype.md). This is unique to AppleShare and Internet password attributes.
 
 
 ---

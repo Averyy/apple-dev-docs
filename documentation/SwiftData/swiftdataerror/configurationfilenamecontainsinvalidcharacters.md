@@ -1,7 +1,8 @@
 # configurationFileNameContainsInvalidCharacters
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -21,9 +22,10 @@ static let configurationFileNameContainsInvalidCharacters: SwiftDataError
 
 ## See Also
 
-- [static let configurationFileNameTooLong: SwiftDataError](swiftdataerror/configurationfilenametoolong.md)
-- [static let configurationSchemaNotFoundInContainerSchema: SwiftDataError](swiftdataerror/configurationschemanotfoundincontainerschema.md)
-- [static let duplicateConfiguration: SwiftDataError](swiftdataerror/duplicateconfiguration.md)
+### Configuration errors
+- [static let configurationFileNameTooLong: SwiftDataError](./configurationfilenametoolong.md)
+- [static let configurationSchemaNotFoundInContainerSchema: SwiftDataError](./configurationschemanotfoundincontainerschema.md)
+- [static let duplicateConfiguration: SwiftDataError](./duplicateconfiguration.md)
 
 
 ---

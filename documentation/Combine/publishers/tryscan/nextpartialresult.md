@@ -1,7 +1,8 @@
 # nextPartialResult
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An error-throwing closure that takes as its arguments the previous value returned by the closure and the next element emitted from the upstream publisher.
 
@@ -22,9 +23,10 @@ let nextPartialResult: (Output, Upstream.Output) throws -> Output
 
 ## See Also
 
-- [let upstream: Upstream](publishers/tryscan/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher that this publisher receives elements from.
-- [let initialResult: Output](publishers/tryscan/initialresult.md)
+- [let initialResult: Output](./initialresult.md)
   The previous result returned by the `nextPartialResult` closure.
 
 

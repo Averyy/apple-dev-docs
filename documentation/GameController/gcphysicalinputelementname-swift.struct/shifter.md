@@ -1,7 +1,8 @@
 # shifter
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the element that emulates either a pattern or a sequential gear shift.
 

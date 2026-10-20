@@ -1,7 +1,8 @@
 # userData
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mutable dictionary to store arbitrary key-value pairs associated with a camera item.
 
@@ -16,6 +17,10 @@ A mutable dictionary to store arbitrary key-value pairs associated with a camera
 
 ```swift
 var userData: NSMutableDictionary? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSMutableDictionary * userData;
 ```
 
 #### Discussion

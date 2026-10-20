@@ -1,7 +1,8 @@
 # MTKTextureLoader.Error
 
 **Framework**: MetalKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Errors returned by the texture loader.
 
@@ -19,24 +20,28 @@ Errors returned by the texture loader.
 struct Error
 ```
 
+```c
+typedef NSString * MTKTextureLoaderError;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](mtktextureloader/error/init(rawvalue:).md)
+- [init(rawValue: String)](./error/init%28rawvalue%29.md)
 ### Keys
-- [static let domain: MTKTextureLoader.Error](mtktextureloader/error/domain.md)
+- [static let domain: MTKTextureLoader.Error](./error/domain.md)
   The error domain used by `MetalKit` when returning texture loading errors.
-- [static let key: MTKTextureLoader.Error](mtktextureloader/error/key.md)
-  The key used to retrieve an error string from an error object’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary.
+- [static let key: MTKTextureLoader.Error](./error/key.md)
+  The key used to retrieve an error string from an error object’s [`userInfo`](../../Foundation/nserror/userinfo.md) dictionary.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

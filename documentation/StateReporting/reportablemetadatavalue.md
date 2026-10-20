@@ -1,7 +1,8 @@
 # ReportableMetadataValue
 
 **Framework**: StateReporting  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value in a reportable-metadata dictionary.
 
@@ -22,7 +23,7 @@ enum ReportableMetadataValue
 
 #### Overview
 
-Strings, numbers, and dates all initialize directly. The [`ReportableMetadata()`](reportablemetadata().md) macro constructs these automatically when you annotate your metadata type.
+Strings, numbers, and dates all initialize directly. The [`ReportableMetadata()`](./reportablemetadata%28%29.md) macro constructs these automatically when you annotate your metadata type.
 
 ```swift
 let values: [String: ReportableMetadataValue] = [
@@ -36,41 +37,42 @@ let values: [String: ReportableMetadataValue] = [
 ## Topics
 
 ### Enumeration Cases
-- [ReportableMetadataValue.date(_:)](reportablemetadatavalue/date(_:).md)
-- [ReportableMetadataValue.floatingPoint(_:)](reportablemetadatavalue/floatingpoint(_:).md)
-- [ReportableMetadataValue.integer(_:)](reportablemetadatavalue/integer(_:).md)
-- [ReportableMetadataValue.string(_:)](reportablemetadatavalue/string(_:).md)
+- [ReportableMetadataValue.date(_:)](./reportablemetadatavalue/date%28_%29.md)
+- [ReportableMetadataValue.floatingPoint(_:)](./reportablemetadatavalue/floatingpoint%28_%29.md)
+- [ReportableMetadataValue.integer(_:)](./reportablemetadatavalue/integer%28_%29.md)
+- [ReportableMetadataValue.string(_:)](./reportablemetadatavalue/string%28_%29.md)
 ### Initializers
-- [init(Int32)](reportablemetadatavalue/init(_:)-14guo.md)
-- [init(UInt32)](reportablemetadatavalue/init(_:)-1ahz9.md)
-- [init(UInt16)](reportablemetadatavalue/init(_:)-2f79p.md)
-- [init(CGFloat)](reportablemetadatavalue/init(_:)-2h2re.md)
-- [init(Date)](reportablemetadatavalue/init(_:)-2llwr.md)
-- [init(Int64)](reportablemetadatavalue/init(_:)-5y574.md)
-- [init(Bool)](reportablemetadatavalue/init(_:)-5yq8x.md)
-- [init(UInt8)](reportablemetadatavalue/init(_:)-6kkn5.md)
-- [init(Double)](reportablemetadatavalue/init(_:)-6r11y.md)
-- [init(UInt)](reportablemetadatavalue/init(_:)-6z809.md)
-- [init(Float)](reportablemetadatavalue/init(_:)-85rvl.md)
-- [init(UInt64)](reportablemetadatavalue/init(_:)-90tzm.md)
-- [init(Int16)](reportablemetadatavalue/init(_:)-9dt4i.md)
-- [init(Int8)](reportablemetadatavalue/init(_:)-pijp.md)
-- [init(Int)](reportablemetadatavalue/init(_:)-tnel.md)
-- [init(String)](reportablemetadatavalue/init(_:)-zkel.md)
+- [init(Int32)](./reportablemetadatavalue/init%28_%29-14guo.md)
+- [init(UInt32)](./reportablemetadatavalue/init%28_%29-1ahz9.md)
+- [init(UInt16)](./reportablemetadatavalue/init%28_%29-2f79p.md)
+- [init(CGFloat)](./reportablemetadatavalue/init%28_%29-2h2re.md)
+- [init(Date)](./reportablemetadatavalue/init%28_%29-2llwr.md)
+- [init(Int64)](./reportablemetadatavalue/init%28_%29-5y574.md)
+- [init(Bool)](./reportablemetadatavalue/init%28_%29-5yq8x.md)
+- [init(UInt8)](./reportablemetadatavalue/init%28_%29-6kkn5.md)
+- [init(Double)](./reportablemetadatavalue/init%28_%29-6r11y.md)
+- [init(UInt)](./reportablemetadatavalue/init%28_%29-6z809.md)
+- [init(Float)](./reportablemetadatavalue/init%28_%29-85rvl.md)
+- [init(UInt64)](./reportablemetadatavalue/init%28_%29-90tzm.md)
+- [init(Int16)](./reportablemetadatavalue/init%28_%29-9dt4i.md)
+- [init(Int8)](./reportablemetadatavalue/init%28_%29-pijp.md)
+- [init(Int)](./reportablemetadatavalue/init%28_%29-tnel.md)
+- [init(String)](./reportablemetadatavalue/init%28_%29-zkel.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol ReportableMetadata](reportablemetadata.md)
+### Defining metadata
+- [protocol ReportableMetadata](./reportablemetadata.md)
   A protocol for types that can supply their metadata as a dictionary of reportable values.
 
 

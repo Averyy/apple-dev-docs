@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIORangeSupportsInterlacedCEATiming](1645095-anonymous/kiorangesupportsinterlacedceatiming.md)
-- [kIORangeSupportsInterlacedCEATimingWithConfirm](1645095-anonymous/kiorangesupportsinterlacedceatimingwithconfirm.md)
-- [kIORangeSupportsMultiAlignedTiming](1645095-anonymous/kiorangesupportsmultialignedtiming.md)
+- [kIORangeSupportsInterlacedCEATiming](./api-1645095-anonymous/kiorangesupportsinterlacedceatiming.md)
+- [kIORangeSupportsInterlacedCEATimingWithConfirm](./api-1645095-anonymous/kiorangesupportsinterlacedceatimingwithconfirm.md)
+- [kIORangeSupportsMultiAlignedTiming](./api-1645095-anonymous/kiorangesupportsmultialignedtiming.md)
 
 
 ---

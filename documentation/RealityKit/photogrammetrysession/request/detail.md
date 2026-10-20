@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Request.Detail
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Supported levels of detail for a request.
 
@@ -62,38 +63,39 @@ Here are the texture map sizes generated for each detail level and the amount of
 ## Topics
 
 ### Specifying a level of detail
-- [PhotogrammetrySession.Request.Detail.preview](photogrammetrysession/request/detail/preview.md)
+- [PhotogrammetrySession.Request.Detail.preview](./detail/preview.md)
   A fast, low-quality object for previewing the final result.
-- [PhotogrammetrySession.Request.Detail.reduced](photogrammetrysession/request/detail/reduced.md)
+- [PhotogrammetrySession.Request.Detail.reduced](./detail/reduced.md)
   A mobile-quality object with low resource requirements.
-- [PhotogrammetrySession.Request.Detail.medium](photogrammetrysession/request/detail/medium.md)
+- [PhotogrammetrySession.Request.Detail.medium](./detail/medium.md)
   A medium-quality object with moderate resource requirements.
-- [PhotogrammetrySession.Request.Detail.full](photogrammetrysession/request/detail/full.md)
+- [PhotogrammetrySession.Request.Detail.full](./detail/full.md)
   A high-quality object with significant resource requirements.
-- [PhotogrammetrySession.Request.Detail.raw](photogrammetrysession/request/detail/raw.md)
+- [PhotogrammetrySession.Request.Detail.raw](./detail/raw.md)
   The raw-created object at the highest possible resolution.
 ### Enumeration Cases
-- [PhotogrammetrySession.Request.Detail.custom](photogrammetrysession/request/detail/custom.md)
+- [PhotogrammetrySession.Request.Detail.custom](./detail/custom.md)
   A custom quality for the model, with specifics defined by the photogrammetry session.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case modelFile(url: URL, detail: PhotogrammetrySession.Request.Detail, geometry: PhotogrammetrySession.Request.Geometry?)](photogrammetrysession/request/modelfile(url:detail:geometry:).md)
+### Specifying the output
+- [case modelFile(url: URL, detail: PhotogrammetrySession.Request.Detail, geometry: PhotogrammetrySession.Request.Geometry?)](./modelfile%28url,detail,geometry%29.md)
   An object-creation request saved to a USDZ file or a folder (for OBJ output).
-- [case modelEntity(detail: PhotogrammetrySession.Request.Detail, geometry: PhotogrammetrySession.Request.Geometry?)](photogrammetrysession/request/modelentity(detail:geometry:).md)
+- [case modelEntity(detail: PhotogrammetrySession.Request.Detail, geometry: PhotogrammetrySession.Request.Geometry?)](./modelentity%28detail,geometry%29.md)
   An object-creation request stored in-memory for immediate display.
-- [PhotogrammetrySession.Request.bounds](photogrammetrysession/request/bounds.md)
+- [PhotogrammetrySession.Request.bounds](./bounds.md)
   An object-creation request that returns a box the same size as the created model.
 
 

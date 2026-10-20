@@ -1,7 +1,8 @@
 # key
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key that specifies the property to compare during sorting.
 
@@ -20,15 +21,20 @@ The key that specifies the property to compare during sorting.
 var key: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * key;
+```
+
 ## See Also
 
-- [var ascending: Bool](nssortdescriptor/ascending.md)
+### Getting Information About a Sort Descriptor
+- [var ascending: Bool](./ascending.md)
   A Boolean value that indicates whether the receiver specifies sorting in ascending order.
-- [var keyPath: AnyKeyPath?](nssortdescriptor/keypath.md)
+- [var keyPath: AnyKeyPath?](./keypath.md)
   The key path that specifies the property to compare during sorting.
-- [var selector: Selector?](nssortdescriptor/selector.md)
+- [var selector: Selector?](./selector.md)
   The selector for comparing objects.
-- [var comparator: Comparator](nssortdescriptor/comparator.md)
+- [var comparator: Comparator](./comparator.md)
   The comparator for the sort descriptor.
 
 

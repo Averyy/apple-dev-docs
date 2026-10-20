@@ -7,14 +7,14 @@ Establishes an already existing mapping.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOMemoryMap * setMapping( 
  task_t task, 
  IOVirtualAddress mapAddress, 
  IOOptionBits options = 0 );
 ```
 
-#### Return_value
+#### Return Value
 
 A IOMemoryMap object created to represent the mapping.
 
@@ -30,15 +30,16 @@ This method tells the IOMemoryDescriptor about a mapping that exists, but was cr
 
 ## See Also
 
-- [createMappingInTask](iomemorydescriptor/1812752-createmappingintask.md)
+### Mapping to the Other Address Spaces
+- [createMappingInTask](./api-1812752-createmappingintask.md)
   Maps an IOMemoryDescriptor into a task.
-- [- createMappingInTask](iomemorydescriptor/1441859-createmappingintask.md)
+- [- createMappingInTask](./api-1441859-createmappingintask.md)
   Maps an IOMemoryDescriptor into a task.
-- [map](iomemorydescriptor/1812830-map.md)
+- [map](./api-1812830-map.md)
   Maps an IOMemoryDescriptor into the kernel map.
-- [- map](iomemorydescriptor/1441908-map.md)
+- [- map](./api-1441908-map.md)
   Maps an IOMemoryDescriptor into the kernel map.
-- [- setMapping](iomemorydescriptor/1441948-setmapping.md)
+- [- setMapping](./api-1441948-setmapping.md)
   Establishes an already existing mapping.
 
 

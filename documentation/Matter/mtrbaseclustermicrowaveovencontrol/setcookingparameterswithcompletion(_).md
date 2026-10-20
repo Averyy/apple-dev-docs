@@ -1,7 +1,8 @@
 # setCookingParametersWithCompletion(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func setCookingParametersWithCompletion(_ completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setCookingParameters() async throws
+```
+
+```objc
+- (void) setCookingParametersWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # typeTrue
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 `TRUE` Boolean value.
 

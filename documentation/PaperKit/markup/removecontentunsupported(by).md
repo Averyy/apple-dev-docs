@@ -2,6 +2,7 @@
 
 **Framework**: PaperKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes all content not supported by the provided feature set.
@@ -33,7 +34,8 @@ If the returned value is `true` then `self.featureSet.isSubset(of: featureSet)` 
 
 ## See Also
 
-- [var featureSet: FeatureSet](markup/featureset.md)
+### Managing feature compatibility
+- [var featureSet: FeatureSet](./featureset.md)
   The set of features used by this markup.
 
 

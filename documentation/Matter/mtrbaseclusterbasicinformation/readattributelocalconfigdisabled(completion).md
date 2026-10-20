@@ -1,7 +1,8 @@
 # readAttributeLocalConfigDisabled(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeLocalConfigDisabled(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeLocalConfigDisabled() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeLocalConfigDisabledWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

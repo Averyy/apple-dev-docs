@@ -1,7 +1,8 @@
 # CustomURLRepresentationParameterConvertible
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that allows a type to express its contents in a URL representation.
 
@@ -22,25 +23,26 @@ protocol CustomURLRepresentationParameterConvertible
 
 #### Overview
 
-Apply this protocol to the custom types you use to build the URL for an app intent or app entity. When you construct a URL representation, you can incorporate the properties of your app intent or app entity type into the URL you produce. The [`EntityURLRepresentation`](entityurlrepresentation.md), [`IntentURLRepresentation`](intenturlrepresentation.md), and [`EnumURLRepresentation`](enumurlrepresentation.md) types automatically convert properties with [`String`](https://developer.apple.com/documentation/swift/string), [`Int`](https://developer.apple.com/documentation/swift/int), or [`URL`](https://developer.apple.com/documentation/foundation/url) values to the required string data for the representation. For other types, adopt this protocol and use the [`urlRepresentationParameter`](customurlrepresentationparameterconvertible/urlrepresentationparameter.md) property to deliver a string that represents your type’s content.
+Apply this protocol to the custom types you use to build the URL for an app intent or app entity. When you construct a URL representation, you can incorporate the properties of your app intent or app entity type into the URL you produce. The [`EntityURLRepresentation`](./entityurlrepresentation.md), [`IntentURLRepresentation`](./intenturlrepresentation.md), and [`EnumURLRepresentation`](./enumurlrepresentation.md) types automatically convert properties with [`String`](../Swift/string.md), [`Int`](../Swift/int.md), or [`URL`](../Foundation/url.md) values to the required string data for the representation. For other types, adopt this protocol and use the [`urlRepresentationParameter`](./customurlrepresentationparameterconvertible/urlrepresentationparameter.md) property to deliver a string that represents your type’s content.
 
 ## Topics
 
 ### Instance Properties
-- [var urlRepresentationParameter: String?](customurlrepresentationparameterconvertible/urlrepresentationparameter.md)
+- [var urlRepresentationParameter: String?](./customurlrepresentationparameterconvertible/urlrepresentationparameter.md)
   The string representation of the type’s content.
 
 ## Relationships
 
 ### Inherited By
-- [URLRepresentableEntity](urlrepresentableentity.md)
-- [URLRepresentableEnum](urlrepresentableenum.md)
+- [URLRepresentableEntity](./urlrepresentableentity.md)
+- [URLRepresentableEnum](./urlrepresentableenum.md)
 
 ## See Also
 
-- [protocol URLRepresentableEntity](urlrepresentableentity.md)
+### Universal link navigation
+- [protocol URLRepresentableEntity](./urlrepresentableentity.md)
   An interface you apply to an app entity type so the system can handle it like a universal link.
-- [struct EntityURLRepresentation](entityurlrepresentation.md)
+- [struct EntityURLRepresentation](./entityurlrepresentation.md)
   The type that provides the URL for an app entity.
 
 

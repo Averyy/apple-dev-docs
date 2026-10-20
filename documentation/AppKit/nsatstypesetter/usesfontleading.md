@@ -1,12 +1,13 @@
 # usesFontLeading
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value controlling whether the typesetter uses the leading (or line gap) value specified in the font metric information.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ A Boolean value controlling whether the typesetter uses the leading (or line gap
 var usesFontLeading: Bool { get set }
 ```
 
+```objc
+@property BOOL usesFontLeading;
+```
+
 ## See Also
 
-- [var layoutManager: NSLayoutManager?](nsatstypesetter/layoutmanager.md)
+### Accessing the layout manager
+- [var layoutManager: NSLayoutManager?](./layoutmanager.md)
   The layout manager for the text being typeset.
-- [var typesetterBehavior: NSLayoutManager.TypesetterBehavior](nsatstypesetter/typesetterbehavior.md)
+- [var typesetterBehavior: NSLayoutManager.TypesetterBehavior](./typesetterbehavior.md)
   The current typesetter behavior value.
-- [var hyphenationFactor: Float](nsatstypesetter/hyphenationfactor.md)
+- [var hyphenationFactor: Float](./hyphenationfactor.md)
   The threshold controlling when hyphenation is attempted.
-- [var bidiProcessingEnabled: Bool](nsatstypesetter/bidiprocessingenabled.md)
+- [var bidiProcessingEnabled: Bool](./bidiprocessingenabled.md)
   A Boolean value controlling whether the typesetter performs bidirectional text processing.
 
 

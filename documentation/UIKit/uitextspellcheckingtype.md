@@ -1,7 +1,8 @@
 # UITextSpellCheckingType
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The spell-checking behavior of a text-based view.
 
@@ -9,7 +10,7 @@ The spell-checking behavior of a text-based view.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,47 +19,52 @@ The spell-checking behavior of a text-based view.
 enum UITextSpellCheckingType
 ```
 
+```c
+enum UITextSpellCheckingType : NSInteger;
+```
+
 #### Overview
 
-Use these constants with the [`spellCheckingType`](uitextinputtraits/spellcheckingtype.md) property.
+Use these constants with the [`spellCheckingType`](./uitextinputtraits/spellcheckingtype.md) property.
 
 ## Topics
 
 ### Constants
-- [UITextSpellCheckingType.default](uitextspellcheckingtype/default.md)
+- [UITextSpellCheckingType.default](./uitextspellcheckingtype/default.md)
   Specifies the default spell-checking behavior.
-- [UITextSpellCheckingType.no](uitextspellcheckingtype/no.md)
+- [UITextSpellCheckingType.no](./uitextspellcheckingtype/no.md)
   Disables spell-checking behavior.
-- [UITextSpellCheckingType.yes](uitextspellcheckingtype/yes.md)
+- [UITextSpellCheckingType.yes](./uitextspellcheckingtype/yes.md)
   Enables spell-checking behavior.
 ### Initializers
-- [init?(rawValue: Int)](uitextspellcheckingtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uitextspellcheckingtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var autocapitalizationType: UITextAutocapitalizationType](uitextinputtraits/autocapitalizationtype.md)
+### Managing spelling and autocorrection
+- [var autocapitalizationType: UITextAutocapitalizationType](./uitextinputtraits/autocapitalizationtype.md)
   The autocapitalization style for the text object.
-- [enum UITextAutocapitalizationType](uitextautocapitalizationtype.md)
+- [enum UITextAutocapitalizationType](./uitextautocapitalizationtype.md)
   The autocapitalization behavior of a text-based view.
-- [var autocorrectionType: UITextAutocorrectionType](uitextinputtraits/autocorrectiontype.md)
+- [var autocorrectionType: UITextAutocorrectionType](./uitextinputtraits/autocorrectiontype.md)
   The autocorrection style for the text object.
-- [enum UITextAutocorrectionType](uitextautocorrectiontype.md)
+- [enum UITextAutocorrectionType](./uitextautocorrectiontype.md)
   The autocorrection behavior of a text-based view.
-- [var spellCheckingType: UITextSpellCheckingType](uitextinputtraits/spellcheckingtype.md)
+- [var spellCheckingType: UITextSpellCheckingType](./uitextinputtraits/spellcheckingtype.md)
   The spell-checking style for the text object.
-- [var inlinePredictionType: UITextInlinePredictionType](uitextinputtraits/inlinepredictiontype.md)
+- [var inlinePredictionType: UITextInlinePredictionType](./uitextinputtraits/inlinepredictiontype.md)
   The behavior of inline text predictions for a text-entry area.
-- [enum UITextInlinePredictionType](uitextinlinepredictiontype.md)
+- [enum UITextInlinePredictionType](./uitextinlinepredictiontype.md)
   Constants that identify the behavior of inline text predictions for a text-entry area.
 
 

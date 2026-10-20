@@ -1,7 +1,8 @@
 # custom(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A custom detent with a calculated height.
 
@@ -22,11 +23,12 @@ static func custom<D>(_ type: D.Type) -> PresentationDetent where D : CustomPres
 
 ## See Also
 
-- [static func fraction(CGFloat) -> PresentationDetent](presentationdetent/fraction(_:).md)
+### Creating custom detents
+- [static func fraction(CGFloat) -> PresentationDetent](./fraction%28_%29.md)
   A custom detent with the specified fractional height.
-- [static func height(CGFloat) -> PresentationDetent](presentationdetent/height(_:).md)
+- [static func height(CGFloat) -> PresentationDetent](./height%28_%29.md)
   A custom detent with the specified height.
-- [PresentationDetent.Context](presentationdetent/context.md)
+- [PresentationDetent.Context](./context.md)
   Information that you use to calculate the presentation’s height.
 
 

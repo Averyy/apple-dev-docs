@@ -1,7 +1,8 @@
 # pathControl(_:willPopUp:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Implement this method to customize the menu of a pop-up–style path.
 
@@ -15,6 +16,10 @@ Implement this method to customize the menu of a pop-up–style path.
 optional func pathControl(_ pathControl: NSPathControl, willPopUp menu: NSMenu)
 ```
 
+```objc
+- (void) pathControl:(NSPathControl *) pathControl willPopUpMenu:(NSMenu *) menu;
+```
+
 #### Discussion
 
 This method is called before the pop-up menu is shown. At this time, you can further customize the menu as required, adding and removing items. This method is called only when the style is set to `NSPathStylePopUp`. Implementation of this method is optional.
@@ -26,7 +31,8 @@ This method is called before the pop-up menu is shown. At this time, you can fur
 
 ## See Also
 
-- [func pathControl(NSPathControl, willDisplay: NSOpenPanel)](nspathcontroldelegate/pathcontrol(_:willdisplay:).md)
+### Customizing a Pop-Up–Style Path
+- [func pathControl(NSPathControl, willDisplay: NSOpenPanel)](./pathcontrol%28_,willdisplay%29.md)
   Implement this method to customize the Open panel shown by a pop-up–style path.
 
 

@@ -1,7 +1,8 @@
 # compassVisibility
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The visibility of the compass button.
 
@@ -18,15 +19,20 @@ The visibility of the compass button.
 var compassVisibility: MKFeatureVisibility { get set }
 ```
 
+```objc
+@property (nonatomic, assign) MKFeatureVisibility compassVisibility;
+```
+
 #### Discussion
 
 You can configure a compass button to be visible all the time or only when the compass heading changes.
 
 ## See Also
 
-- [var mapView: MKMapView?](mkcompassbutton/mapview.md)
+### Getting the compass attributes
+- [var mapView: MKMapView?](./mapview.md)
   The map view that provides the heading information for the compass button.
-- [enum MKFeatureVisibility](mkfeaturevisibility.md)
+- [enum MKFeatureVisibility](../mkfeaturevisibility.md)
   Constants that indicate the visibility of different map features.
 
 

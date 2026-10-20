@@ -1,7 +1,8 @@
 # init(sourceGradient:sourceImage:convolutionTransposeGradientState:weights:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, convolutionTransposeGradientState gradientState: MPSCNNConvolutionTransposeGradientStateNode, weights: (any MPSCNNConvolutionDataSource)?)
+```
+
+```objc
+- (instancetype) initWithSourceGradient:(MPSNNImageNode *) sourceGradient sourceImage:(MPSNNImageNode *) sourceImage convolutionTransposeGradientState:(MPSCNNConvolutionTransposeGradientStateNode *) gradientState weights:(id<MPSCNNConvolutionDataSource>) weights;
 ```
 
 

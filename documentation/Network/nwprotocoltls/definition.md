@@ -1,7 +1,8 @@
 # definition
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system definition of the Transport Layer Security protocol.
 
@@ -22,7 +23,8 @@ static let definition: NWProtocolDefinition
 
 ## See Also
 
-- [NWProtocolTLS.Options](nwprotocoltls/options.md)
+### Creating TLS Connections
+- [NWProtocolTLS.Options](./options.md)
   A container of options for configuring how TLS is used on a connection.
 
 

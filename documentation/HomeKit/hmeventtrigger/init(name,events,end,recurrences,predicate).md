@@ -1,7 +1,8 @@
 # init(name:events:end:recurrences:predicate:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new event trigger with the specified name, events, end events, recurrences, and predicate.
 
@@ -17,6 +18,10 @@ Creates a new event trigger with the specified name, events, end events, recurre
 init(name: String, events: [HMEvent], end endEvents: [HMEvent]?, recurrences: [DateComponents]?, predicate: NSPredicate?)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name events:(NSArray<HMEvent *> *) events endEvents:(NSArray<HMEvent *> *) endEvents recurrences:(NSArray<NSDateComponents *> *) recurrences predicate:(NSPredicate *) predicate;
+```
+
 #### Return Value
 
 An initialized event trigger.
@@ -26,12 +31,13 @@ An initialized event trigger.
 - `name`: The name of the event trigger.
 - `events`: An array of events that can activate the evaluation of the event trigger. The trigger is evaluated if any one of the events is true.
 - `endEvents`: An array of events that can trigger the end of the scene that this event trigger represents.
-- `recurrences`: Specifies the days of the week to evaluate the trigger. All properties other than [`weekday`](https://developer.apple.com/documentation/foundation/datecomponents/weekday) on [`DateComponents`](https://developer.apple.com/documentation/foundation/datecomponents) are ignored.
+- `recurrences`: Specifies the days of the week to evaluate the trigger. All properties other than [`weekday`](../../Foundation/datecomponents/weekday.md) on [`DateComponents`](../../Foundation/datecomponents.md) are ignored.
 - `predicate`: The predicate to test and activate after evaluating the event trigger. Once activated, the event’s scenes execute. If a value isn’t specified the event trigger executes the scene if any of the events activate.
 
 ## See Also
 
-- [init(name: String, events: [HMEvent], predicate: NSPredicate?)](hmeventtrigger/init(name:events:predicate:).md)
+### Creating an event trigger
+- [init(name: String, events: [HMEvent], predicate: NSPredicate?)](./init%28name,events,predicate%29.md)
   Creates a new event trigger with the specified name, events, and predicate.
 
 

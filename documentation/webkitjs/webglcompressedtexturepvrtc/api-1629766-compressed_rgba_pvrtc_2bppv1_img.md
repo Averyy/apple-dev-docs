@@ -9,15 +9,16 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned long COMPRESSED_RGBA_PVRTC_2BPPV1_IMG;
 ```
 
 ## See Also
 
-- [COMPRESSED_RGBA_PVRTC_4BPPV1_IMG](webglcompressedtexturepvrtc/1633668-compressed_rgba_pvrtc_4bppv1_img.md)
-- [COMPRESSED_RGB_PVRTC_2BPPV1_IMG](webglcompressedtexturepvrtc/1629613-compressed_rgb_pvrtc_2bppv1_img.md)
-- [COMPRESSED_RGB_PVRTC_4BPPV1_IMG](webglcompressedtexturepvrtc/1631951-compressed_rgb_pvrtc_4bppv1_img.md)
+### Miscellaneous
+- [COMPRESSED_RGBA_PVRTC_4BPPV1_IMG](./api-1633668-compressed_rgba_pvrtc_4bppv1_img.md)
+- [COMPRESSED_RGB_PVRTC_2BPPV1_IMG](./api-1629613-compressed_rgb_pvrtc_2bppv1_img.md)
+- [COMPRESSED_RGB_PVRTC_4BPPV1_IMG](./api-1631951-compressed_rgb_pvrtc_4bppv1_img.md)
 
 
 ---

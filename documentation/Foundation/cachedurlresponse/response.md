@@ -1,7 +1,8 @@
 # response
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL response object associated with the instance.
 
@@ -21,13 +22,18 @@ The URL response object associated with the instance.
 var response: URLResponse { get }
 ```
 
+```objc
+@property (copy, readonly) NSURLResponse * response;
+```
+
 ## See Also
 
-- [var data: Data](cachedurlresponse/data.md)
+### Getting cached URL response properties
+- [var data: Data](./data.md)
   The cached response’s data.
-- [var storagePolicy: URLCache.StoragePolicy](cachedurlresponse/storagepolicy.md)
+- [var storagePolicy: URLCache.StoragePolicy](./storagepolicy.md)
   The cached response’s storage policy.
-- [var userInfo: [AnyHashable : Any]?](cachedurlresponse/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   The cached response’s user info dictionary.
 
 

@@ -1,14 +1,15 @@
 # KUNCUserNotificationDisplayAlert
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+ - Deprecated in 10.6
 
 ## Declaration
 
-```swift
+```c
 kern_return_t KUNCUserNotificationDisplayAlert(int alertTimeout, unsigned int flags, char *iconPath, char *soundPath, char *localizationPath, char *alertHeader, char *alertMessage, char *defaultButtonTitle, char *alternateButtonTitle, char *otherButtonTitle, unsigned int *responseFlags);
 ```
 

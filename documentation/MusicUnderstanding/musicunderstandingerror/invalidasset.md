@@ -1,7 +1,8 @@
 # MusicUnderstandingError.invalidAsset
 
 **Framework**: Music Understanding  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The error that occurs when someone initializes a session with an invalid asset.
 
@@ -22,11 +23,12 @@ case invalidAsset
 
 ## See Also
 
-- [MusicUnderstandingError.emptyAnalysisSet](musicunderstandingerror/emptyanalysisset.md)
+### Types of error cases
+- [MusicUnderstandingError.emptyAnalysisSet](./emptyanalysisset.md)
   The error that occurs when someone requests and analysis of an empty analysis set.
-- [MusicUnderstandingError.internalError](musicunderstandingerror/internalerror.md)
+- [MusicUnderstandingError.internalError](./internalerror.md)
   The error that occurs when an unexpected internal failure prevents the session from completing.
-- [MusicUnderstandingError.sessionInProgress](musicunderstandingerror/sessioninprogress.md)
+- [MusicUnderstandingError.sessionInProgress](./sessioninprogress.md)
   The error that occurs when someone requests analysis while a session is already in progress.
 
 

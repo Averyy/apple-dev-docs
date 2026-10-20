@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,13 +18,13 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPMChildClamp](1645023-anonymous/kiopmchildclamp.md)
-- [kIOPMChildClamp2](1645023-anonymous/kiopmchildclamp2.md)
-- [kIOPMClockNormal](1645023-anonymous/kiopmclocknormal.md)
-- [kIOPMClockRunning](1645023-anonymous/kiopmclockrunning.md)
-- [kIOPMDoze](1645023-anonymous/kiopmdoze.md)
-- [kIOPMNotPowerManaged](1645023-anonymous/kiopmnotpowermanaged.md)
-- [kIOPMPreventSystemSleep](1645023-anonymous/kiopmpreventsystemsleep.md)
+- [kIOPMChildClamp](./api-1645023-anonymous/kiopmchildclamp.md)
+- [kIOPMChildClamp2](./api-1645023-anonymous/kiopmchildclamp2.md)
+- [kIOPMClockNormal](./api-1645023-anonymous/kiopmclocknormal.md)
+- [kIOPMClockRunning](./api-1645023-anonymous/kiopmclockrunning.md)
+- [kIOPMDoze](./api-1645023-anonymous/kiopmdoze.md)
+- [kIOPMNotPowerManaged](./api-1645023-anonymous/kiopmnotpowermanaged.md)
+- [kIOPMPreventSystemSleep](./api-1645023-anonymous/kiopmpreventsystemsleep.md)
 
 
 ---

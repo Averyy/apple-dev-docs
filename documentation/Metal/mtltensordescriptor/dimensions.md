@@ -1,7 +1,8 @@
 # dimensions
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of sizes, in elements, one for each dimension of the tensors you create with this descriptor.
 
@@ -20,11 +21,15 @@ An array of sizes, in elements, one for each dimension of the tensors you create
 var dimensions: MTLTensorExtents { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) MTLTensorExtents * dimensions;
+```
+
 #### Discussion
 
 Every element of the array needs to be greater than `0`.
 
-When [`dataType`](mtltensordescriptor/datatype.md) is [`MTLTensorDataType.int2`](mtltensordatatype/int2.md), [`MTLTensorDataType.uint2`](mtltensordatatype/uint2.md), [`MTLTensorDataType.int4`](mtltensordatatype/int4.md), [`MTLTensorDataType.uint4`](mtltensordatatype/uint4.md), [`MTLTensorDataType.metalFloat4e2m1`](mtltensordatatype/metalfloat4e2m1.md), [`MTLTensorDataType.metalFloat8e4m3`](mtltensordatatype/metalfloat8e4m3.md), [`MTLTensorDataType.metalFloat8e5m2`](mtltensordatatype/metalfloat8e5m2.md), or [`MTLTensorDataType.metalFloat8ue8m0`](mtltensordatatype/metalfloat8ue8m0.md):
+When [`dataType`](./datatype.md) is [`MTLTensorDataType.int2`](../mtltensordatatype/int2.md), [`MTLTensorDataType.uint2`](../mtltensordatatype/uint2.md), [`MTLTensorDataType.int4`](../mtltensordatatype/int4.md), [`MTLTensorDataType.uint4`](../mtltensordatatype/uint4.md), [`MTLTensorDataType.metalFloat4e2m1`](../mtltensordatatype/metalfloat4e2m1.md), [`MTLTensorDataType.metalFloat8e4m3`](../mtltensordatatype/metalfloat8e4m3.md), [`MTLTensorDataType.metalFloat8e5m2`](../mtltensordatatype/metalfloat8e5m2.md), or [`MTLTensorDataType.metalFloat8ue8m0`](../mtltensordatatype/metalfloat8ue8m0.md):
 
 - The dimension value of the array’s first element needs to be a multiple of 32 elements.
 - The extents needs to have at least one dimension.

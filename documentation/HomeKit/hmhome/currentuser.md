@@ -1,7 +1,8 @@
 # currentUser
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current HomeKit user.
 
@@ -19,11 +20,16 @@ The current HomeKit user.
 var currentUser: HMUser { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) HMUser * currentUser;
+```
+
 ## See Also
 
-- [func manageUsers(completionHandler: ((any Error)?) -> Void)](hmhome/manageusers(completionhandler:).md)
+### Managing users
+- [func manageUsers(completionHandler: ((any Error)?) -> Void)](./manageusers%28completionhandler%29.md)
   Presents a view controller to manage users of the home.
-- [class HMUser](hmuser.md)
+- [class HMUser](../hmuser.md)
   A person in the home who may have access to control accessories and services in the home.
 
 

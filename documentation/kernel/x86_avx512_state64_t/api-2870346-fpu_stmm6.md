@@ -1,14 +1,15 @@
 # fpu_stmm6
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 struct mmst_reg fpu_stmm6;
 ```
 

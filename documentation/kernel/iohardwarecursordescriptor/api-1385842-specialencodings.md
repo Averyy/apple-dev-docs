@@ -1,7 +1,8 @@
 # specialEncodings
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Array of pixel values for each supported special encoding.
 
@@ -10,7 +11,7 @@ Array of pixel values for each supported special encoding.
 
 ## Declaration
 
-```swift
+```c
 UInt32 specialEncodings[16];
 ```
 

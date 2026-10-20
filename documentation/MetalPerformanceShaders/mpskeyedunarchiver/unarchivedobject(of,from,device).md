@@ -1,7 +1,8 @@
 # unarchivedObject(of:from:device:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func unarchivedObject(of cls: AnyClass, from data: Data, device: any MTLDevice) throws -> Any
+```
+
+```objc
++ (id) unarchivedObjectOfClass:(Class) cls fromData:(NSData *) data device:(id<MTLDevice>) device error:(NSError **) error;
 ```
 
 

@@ -1,7 +1,8 @@
 # kUSBHostPortStatusPortTypeAccessory
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The accessory port type.
 
@@ -10,7 +11,7 @@ The accessory port type.
 
 ## Declaration
 
-```swift
+```c
 kUSBHostPortStatusPortTypeAccessory = kIOUSBHostPortStatusPortTypeAccessory
 ```
 

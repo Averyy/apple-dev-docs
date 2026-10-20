@@ -1,16 +1,17 @@
 # ContactsUI updates
 
-**Framework**: Updates
+**Framework**: Updates  
+**Role**: Article
 
 Learn about important changes to ContactsUI.
 
 #### Overview
 
-Browse notable changes in [`ContactsUI`](https://developer.apple.comhttps://developer.apple.com/documentation/contactsui).
+Browse notable changes in [ContactsUI](../ContactsUI/ContactsUI.md).
 
 #### June 2024
 
-##### Limited Access to Contacts
+##### Limited access to contacts
 
 - Check your app’s authorization status for a new value, `CNAuthorizationStatus.limited`. This represents a new status in which a person can grant your app access to a limited subset of their contacts, rather than make an all-or-nothing choice. When your app first calls `CNContactStore.requestAccess(for:completionHandler:)`, an alert asks the person using the app whether to allow contacts access at all. If they allow access, they can choose either full access or choose which contacts to allow, which appears to your app as the `.limited` authorization status. They can revise their choices later in the Settings app.
 - Allow someone to quickly add more contacts to this limited-access group by displaying a `ContactAccessButton` in your app’s contact search UI. You initialize this SwiftUI view with a search substring and sets of ignored emails and phone numbers. If a single person matches this query, the button shows the contact and offers to add them to the contacts your app can access. If there are multiple matches, tapping the button shows a separate view to select contacts.
@@ -18,35 +19,36 @@ Browse notable changes in [`ContactsUI`](https://developer.apple.comhttps://deve
 
 ## See Also
 
-- [Accelerate updates](accelerate.md)
+### Technology and frameworks
+- [Accelerate updates](./accelerate.md)
   Learn about important changes to Accelerate.
-- [Accessibility updates](accessibility.md)
+- [Accessibility updates](./accessibility.md)
   Learn about important changes to Accessibility.
-- [ActivityKit updates](activitykit.md)
+- [ActivityKit updates](./activitykit.md)
   Learn about important changes in ActivityKit.
-- [AdAttributionKit Updates](adattributionkit.md)
+- [AdAttributionKit Updates](./adattributionkit.md)
   Learn about important changes to AdAttributionKit.
-- [App Clips updates](appclips.md)
+- [App Clips updates](./appclips.md)
   Learn about important changes in App Clips.
-- [App Intents updates](appintents.md)
+- [App Intents updates](./appintents.md)
   Learn about important changes in App Intents.
-- [AppKit updates](appkit.md)
+- [AppKit updates](./appkit.md)
   Learn about important changes to AppKit.
-- [Apple Intelligence updates](apple-intelligence.md)
+- [Apple Intelligence updates](./apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
-- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+- [AppleMapsServerAPI Updates](./applemapsserverapi.md)
   Learn about important changes to AppleMapsServerAPI.
-- [Apple Pencil updates](applepencil.md)
+- [Apple Pencil updates](./applepencil.md)
   Learn about important changes to Apple Pencil.
-- [ARKit updates](arkit.md)
+- [ARKit updates](./arkit.md)
   Learn about important changes to ARKit.
-- [Audio Toolbox updates](audiotoolbox.md)
+- [Audio Toolbox updates](./audiotoolbox.md)
   Learn about important changes to Audio Toolbox.
-- [AuthenticationServices updates](authenticationservices.md)
+- [AuthenticationServices updates](./authenticationservices.md)
   Learn about important changes to AuthenticationServices.
-- [AVFAudio updates](avfaudio.md)
+- [AVFAudio updates](./avfaudio.md)
   Learn about important changes to AVFAudio.
-- [AVFoundation updates](avfoundation.md)
+- [AVFoundation updates](./avfoundation.md)
   Learn about important changes to AVFoundation.
 
 

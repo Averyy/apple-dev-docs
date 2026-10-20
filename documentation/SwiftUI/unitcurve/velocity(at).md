@@ -1,7 +1,8 @@
 # velocity(at:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the rate of change (first derivative) of the output value of the curve at the given time.
 
@@ -30,7 +31,8 @@ The velocity of the output value (y component) of the curve at the given time.
 
 ## See Also
 
-- [func value(at: Double) -> Double](unitcurve/value(at:).md)
+### Getting curve characteristics
+- [func value(at: Double) -> Double](./value%28at%29.md)
   Returns the output value (y component) of the curve at the given time.
 
 

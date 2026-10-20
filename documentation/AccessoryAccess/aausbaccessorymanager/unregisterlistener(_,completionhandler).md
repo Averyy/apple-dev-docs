@@ -1,7 +1,8 @@
 # unregisterListener(_:completionHandler:)
 
 **Framework**: Accessory Access  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unregister a previously registered listener.
 
@@ -11,7 +12,15 @@ Unregister a previously registered listener.
 ## Declaration
 
 ```swift
+func unregisterListener(_ listener: any AAUSBAccessoryListener, completionHandler: @escaping @Sendable () -> Void)
+```
+
+```swift
 func unregisterListener(_ listener: any AAUSBAccessoryListener) async
+```
+
+```objc
+- (void) unregisterListener:(id<AAUSBAccessoryListener>) listener completionHandler:(void (^)()) completionHandler;
 ```
 
 ## Parameters
@@ -21,7 +30,8 @@ func unregisterListener(_ listener: any AAUSBAccessoryListener) async
 
 ## See Also
 
-- [func registerListener(any AAUSBAccessoryListener, matchingCriteria: [AAUSBAccessoryMatchingCriteria], completionHandler: ([AAUSBAccessory], (any Error)?) -> Void)](aausbaccessorymanager/registerlistener(_:matchingcriteria:completionhandler:).md)
+### Registering and unregistering listeners
+- [func registerListener(any AAUSBAccessoryListener, matchingCriteria: [AAUSBAccessoryMatchingCriteria], completionHandler: ([AAUSBAccessory], (any Error)?) -> Void)](./registerlistener%28_,matchingcriteria,completionhandler%29.md)
   Registers a USB accessory listener.
 
 

@@ -1,7 +1,8 @@
 # mode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mode of the positional demand.
 

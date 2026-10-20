@@ -1,7 +1,8 @@
 # SofaType.unidentified
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An uncategorized sofa shape.
 
@@ -18,13 +19,14 @@ case unidentified
 
 ## See Also
 
-- [SofaType.rectangular](sofatype/rectangular.md)
+### Choosing a sofa type
+- [SofaType.rectangular](./rectangular.md)
   A sofa shape that resembles a rectangle.
-- [SofaType.singleSeat](sofatype/singleseat.md)
+- [SofaType.singleSeat](./singleseat.md)
   A sofa that resembles a loveseat.
-- [SofaType.lShaped](sofatype/lshaped.md)
+- [SofaType.lShaped](./lshaped.md)
   A sofa shape that resembles the letter L.
-- [SofaType.lShapedExtension](sofatype/lshapedextension.md)
+- [SofaType.lShapedExtension](./lshapedextension.md)
   The short side of the L-shape sofa.
 
 

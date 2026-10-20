@@ -1,10 +1,11 @@
 # IOBluetoothHandsFreePDUMessageStatus.statusRecUnread
 
 **Framework**: IOBluetooth  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,12 +13,17 @@
 case statusRecUnread
 ```
 
+```c
+IOBluetoothHandsFreePDUStatusRecUnread
+```
+
 ## See Also
 
-- [IOBluetoothHandsFreePDUMessageStatus.statusAll](iobluetoothhandsfreepdumessagestatus/statusall.md)
-- [IOBluetoothHandsFreePDUMessageStatus.statusRecRead](iobluetoothhandsfreepdumessagestatus/statusrecread.md)
-- [IOBluetoothHandsFreePDUMessageStatus.statusStoSent](iobluetoothhandsfreepdumessagestatus/statusstosent.md)
-- [IOBluetoothHandsFreePDUMessageStatus.statusStoUnsent](iobluetoothhandsfreepdumessagestatus/statusstounsent.md)
+### Enumeration Cases
+- [IOBluetoothHandsFreePDUMessageStatus.statusAll](./statusall.md)
+- [IOBluetoothHandsFreePDUMessageStatus.statusRecRead](./statusrecread.md)
+- [IOBluetoothHandsFreePDUMessageStatus.statusStoSent](./statusstosent.md)
+- [IOBluetoothHandsFreePDUMessageStatus.statusStoUnsent](./statusstounsent.md)
 
 
 ---

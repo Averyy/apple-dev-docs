@@ -1,7 +1,8 @@
 # sequential(presentationTimeOfFirstSample:uniformDuration:decodeTimeOfFirstSample:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 All samples are adjacent to each other and have the same duration.
 

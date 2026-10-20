@@ -1,7 +1,8 @@
 # windowState(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the state of the window is needed.
 
@@ -18,9 +19,13 @@ Called when the state of the window is needed.
 optional func windowState(for context: WKWebExtensionContext) -> WKWebExtension.WindowState
 ```
 
+```objc
+- (WKWebExtensionWindowState) windowStateForWebExtensionContext:(WKWebExtensionContext *) context;
+```
+
 #### Discussion
 
-Defaults to[`WKWebExtension.WindowState.normal`](wkwebextension/windowstate/normal.md) if not implemented.
+Defaults to[`WKWebExtension.WindowState.normal`](../wkwebextension/windowstate/normal.md) if not implemented.
 
 ## Parameters
 

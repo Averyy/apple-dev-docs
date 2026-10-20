@@ -1,7 +1,8 @@
 # averagePauseDuration
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The average pause duration between words, measured in seconds.
 
@@ -18,13 +19,18 @@ The average pause duration between words, measured in seconds.
 var averagePauseDuration: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval averagePauseDuration;
+```
+
 ## See Also
 
-- [var speakingRate: Double](sfspeechrecognitionmetadata/speakingrate.md)
+### Getting audio timing information
+- [var speakingRate: Double](./speakingrate.md)
   The number of words spoken per minute.
-- [var speechDuration: TimeInterval](sfspeechrecognitionmetadata/speechduration.md)
+- [var speechDuration: TimeInterval](./speechduration.md)
   The duration in seconds of speech in the audio.
-- [var speechStartTimestamp: TimeInterval](sfspeechrecognitionmetadata/speechstarttimestamp.md)
+- [var speechStartTimestamp: TimeInterval](./speechstarttimestamp.md)
   The start timestamp of speech in the audio.
 
 

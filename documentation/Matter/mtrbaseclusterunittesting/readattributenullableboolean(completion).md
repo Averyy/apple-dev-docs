@@ -1,7 +1,8 @@
 # readAttributeNullableBoolean(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeNullableBoolean(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeNullableBoolean() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeNullableBooleanWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

@@ -1,16 +1,17 @@
 # DDDeviceState.activating
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates when the user selects the device in the picker UI.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -18,15 +19,20 @@ A state that indicates when the user selects the device in the picker UI.
 case activating
 ```
 
+```c
+DDDeviceStateActivating
+```
+
 ## See Also
 
-- [DDDeviceState.invalid](dddevicestate/invalid.md)
+### Communicating a device’s status
+- [DDDeviceState.invalid](./invalid.md)
   A state that indicates the device is invalid or that the user disapproves of the device.
-- [DDDeviceState.activated](dddevicestate/activated.md)
+- [DDDeviceState.activated](./activated.md)
   A state that indicates when the user authorizes the device and the app connects to the device.
-- [DDDeviceState.authorized](dddevicestate/authorized.md)
+- [DDDeviceState.authorized](./authorized.md)
   A state that indicates when the user authorizes the device.
-- [DDDeviceState.invalidating](dddevicestate/invalidating.md)
+- [DDDeviceState.invalidating](./invalidating.md)
   A state that indicates that the device is soon to be invalid.
 
 

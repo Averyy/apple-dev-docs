@@ -1,7 +1,8 @@
 # ConnectQueues
 
 **Framework**: USBSerialDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and configures the buffers that store the data moving to and from the device.
 
@@ -10,13 +11,13 @@ Creates and configures the buffers that store the data moving to and from the de
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t ConnectQueues(IOBufferMemoryDescriptor **ifmd, IOMemoryDescriptor **rxqmd, IOMemoryDescriptor **txqmd, IOMemoryDescriptor *in_rxqmd, IOMemoryDescriptor *in_txqmd, uint32_t in_rxqoffset, uint32_t in_txqoffset, uint8_t in_rxqlogsz, uint8_t in_txqlogsz);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -40,7 +41,8 @@ This method returns pointers to the buffers in the `rxqmd` and `txqmd` parameter
 
 ## See Also
 
-- [DisconnectQueues](iouserusbserial/disconnectqueues.md)
+### Configuring the Serial Data Queues
+- [DisconnectQueues](./disconnectqueues.md)
   Releases the buffers that manage data moving to and from the device.
 
 

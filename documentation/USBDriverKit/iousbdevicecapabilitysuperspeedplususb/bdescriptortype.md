@@ -1,26 +1,28 @@
 # bDescriptorType
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t bDescriptorType;
 ```
 
 ## See Also
 
-- [bLength](iousbdevicecapabilitysuperspeedplususb/blength.md)
-- [bDevCapabilityType](iousbdevicecapabilitysuperspeedplususb/bdevcapabilitytype.md)
-- [bReserved](iousbdevicecapabilitysuperspeedplususb/breserved.md)
-- [bmAttributes](iousbdevicecapabilitysuperspeedplususb/bmattributes.md)
-- [wFunctionalitySupport](iousbdevicecapabilitysuperspeedplususb/wfunctionalitysupport.md)
-- [wReserved](iousbdevicecapabilitysuperspeedplususb/wreserved.md)
-- [bmSublinkSpeedAttr](iousbdevicecapabilitysuperspeedplususb/bmsublinkspeedattr.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
+- [bDevCapabilityType](./bdevcapabilitytype.md)
+- [bReserved](./breserved.md)
+- [bmAttributes](./bmattributes.md)
+- [wFunctionalitySupport](./wfunctionalitysupport.md)
+- [wReserved](./wreserved.md)
+- [bmSublinkSpeedAttr](./bmsublinkspeedattr.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(predicates:sortDescriptors:limit:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sample query descriptor.
 
@@ -10,7 +11,7 @@ Creates a sample query descriptor.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration

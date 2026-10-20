@@ -1,16 +1,17 @@
 # UICollectionView.ElementCategory.supplementaryView
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The view is a supplementary view.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@ The view is a supplementary view.
 case supplementaryView
 ```
 
+```c
+UICollectionElementCategorySupplementaryView
+```
+
 ## See Also
 
-- [UICollectionView.ElementCategory.cell](uicollectionview/elementcategory/cell.md)
+### Constants
+- [UICollectionView.ElementCategory.cell](./cell.md)
   The view is a cell.
-- [UICollectionView.ElementCategory.decorationView](uicollectionview/elementcategory/decorationview.md)
+- [UICollectionView.ElementCategory.decorationView](./decorationview.md)
   The view is a decoration view.
 
 

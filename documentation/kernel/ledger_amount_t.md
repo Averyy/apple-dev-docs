@@ -1,14 +1,15 @@
 # ledger_amount_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 typedef int64_t ledger_amount_t;
 ```
 

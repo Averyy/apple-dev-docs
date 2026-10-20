@@ -1,7 +1,8 @@
 # NEDNSProxyProvider
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The principal class for a DNS proxy provider app extension.
 
@@ -18,57 +19,62 @@ The principal class for a DNS proxy provider app extension.
 class NEDNSProxyProvider
 ```
 
+```objc
+@interface NEDNSProxyProvider : NEProvider
+```
+
 ## Mentions
 
-- [Handling Flow Copying](handling-flow-copying.md)
+- [Handling Flow Copying](./handling-flow-copying.md)
 
 #### Overview
 
 A DNS proxy allows your app to intercept all DNS traffic generated on a device. You can use this capability to provide services like DNS traffic encryption, typically by redirecting DNS traffic to your own server. You usually do this in the context of managed devices, such as those owned by a school or an enterprise.
 
-You create a DNS proxy as an app extension based on a custom subclass of the [`NEDNSProxyProvider`](nednsproxyprovider.md) class. Once active, the proxy receives access to flows of DNS traffic in the form of [`NEAppProxyFlow`](neappproxyflow.md) instances. Each flow corresponds to a socket opened by an app to UDP port 53 or TCP port 53. Your DNS proxy provider acts as a transparent DNS proxy for the flows of network data that it receives.
+You create a DNS proxy as an app extension based on a custom subclass of the [`NEDNSProxyProvider`](./nednsproxyprovider.md) class. Once active, the proxy receives access to flows of DNS traffic in the form of [`NEAppProxyFlow`](./neappproxyflow.md) instances. Each flow corresponds to a socket opened by an app to UDP port 53 or TCP port 53. Your DNS proxy provider acts as a transparent DNS proxy for the flows of network data that it receives.
 
-> ❗ **Important**:  To use the [`NEDNSProxyProvider`](nednsproxyprovider.md) class, you must enable the Network Extensions capability in Xcode and select the DNS Proxy capability. See [`Configure network extensions`](https://developer.apple.comhttp://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
+> ❗ **Important**:  To use the [`NEDNSProxyProvider`](./nednsproxyprovider.md) class, you must enable the Network Extensions capability in Xcode and select the DNS Proxy capability. See [Configure network extensions](http://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
 
-When you subclass [`NEDNSProxyProvider`](nednsproxyprovider.md), you must provide implementations for the following methods:
+When you subclass [`NEDNSProxyProvider`](./nednsproxyprovider.md), you must provide implementations for the following methods:
 
-- [`startProxy(options:completionHandler:)`](nednsproxyprovider/startproxy(options:completionhandler:).md)
-- [`stopProxy(with:completionHandler:)`](nednsproxyprovider/stopproxy(with:completionhandler:).md)
-- [`handleNewFlow(_:)`](nednsproxyprovider/handlenewflow(_:).md)
+- [`startProxy(options:completionHandler:)`](./nednsproxyprovider/startproxy%28options,completionhandler%29.md)
+- [`stopProxy(with:completionHandler:)`](./nednsproxyprovider/stopproxy%28with,completionhandler%29.md)
+- [`handleNewFlow(_:)`](./nednsproxyprovider/handlenewflow%28_%29.md)
 
 ## Topics
 
 ### Managing the DNS proxy life cycle
-- [func startProxy(options: [String : Any]?, completionHandler: ((any Error)?) -> Void)](nednsproxyprovider/startproxy(options:completionhandler:).md)
+- [func startProxy(options: [String : Any]?, completionHandler: ((any Error)?) -> Void)](./nednsproxyprovider/startproxy%28options,completionhandler%29.md)
   Starts the DNS proxy.
-- [func stopProxy(with: NEProviderStopReason, completionHandler: () -> Void)](nednsproxyprovider/stopproxy(with:completionhandler:).md)
+- [func stopProxy(with: NEProviderStopReason, completionHandler: () -> Void)](./nednsproxyprovider/stopproxy%28with,completionhandler%29.md)
   Stops the DNS proxy.
-- [func cancelProxyWithError((any Error)?)](nednsproxyprovider/cancelproxywitherror(_:).md)
+- [func cancelProxyWithError((any Error)?)](./nednsproxyprovider/cancelproxywitherror%28_%29.md)
   Cancels the DNS proxy.
 ### Handling proxied DNS flow
-- [func handleNewFlow(NEAppProxyFlow) -> Bool](nednsproxyprovider/handlenewflow(_:).md)
+- [func handleNewFlow(NEAppProxyFlow) -> Bool](./nednsproxyprovider/handlenewflow%28_%29.md)
   Handles a new flow of DNS traffic.
-- [func handleNewUDPFlow(NEAppProxyUDPFlow, initialRemoteEndpoint: NWEndpoint) -> Bool](nednsproxyprovider/handlenewudpflow(_:initialremoteendpoint:).md)
+- [func handleNewUDPFlow(NEAppProxyUDPFlow, initialRemoteEndpoint: NWEndpoint) -> Bool](./nednsproxyprovider/handlenewudpflow%28_,initialremoteendpoint%29.md)
   Handles a new flow of UDP traffic.
 ### Getting system DNS settings
-- [var systemDNSSettings: [NEDNSSettings]?](nednsproxyprovider/systemdnssettings.md)
+- [var systemDNSSettings: [NEDNSSettings]?](./nednsproxyprovider/systemdnssettings.md)
   The current system DNS settings.
 
 ## Relationships
 
 ### Inherits From
-- [NEProvider](neprovider.md)
+- [NEProvider](./neprovider.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NEDNSSettings](nednssettings.md)
+### Provider
+- [class NEDNSSettings](./nednssettings.md)
   The DNS resolver settings of a network tunnel or a system-wide configuration.
 
 

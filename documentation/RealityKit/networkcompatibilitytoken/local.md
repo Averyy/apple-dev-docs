@@ -1,7 +1,8 @@
 # local
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A token containing the local peer’s networking compatibility info.
 
@@ -10,7 +11,7 @@ A token containing the local peer’s networking compatibility info.
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
 - macOS 10.15.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,13 +18,13 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOAnalogSetupExpected](1645104-anonymous/kioanalogsetupexpected.md)
-- [kIODigitalSignal](1645104-anonymous/kiodigitalsignal.md)
-- [kIOInterlacedCEATiming](1645104-anonymous/kiointerlacedceatiming.md)
-- [kIONTSCTiming](1645104-anonymous/kiontsctiming.md)
-- [kIOPALTiming](1645104-anonymous/kiopaltiming.md)
-- [kIODSCBlockPredEnable](1645104-anonymous/kiodscblockpredenable.md)
-- [kIOMultiAlignedTiming](1645104-anonymous/kiomultialignedtiming.md)
+- [kIOAnalogSetupExpected](./api-1645104-anonymous/kioanalogsetupexpected.md)
+- [kIODigitalSignal](./api-1645104-anonymous/kiodigitalsignal.md)
+- [kIOInterlacedCEATiming](./api-1645104-anonymous/kiointerlacedceatiming.md)
+- [kIONTSCTiming](./api-1645104-anonymous/kiontsctiming.md)
+- [kIOPALTiming](./api-1645104-anonymous/kiopaltiming.md)
+- [kIODSCBlockPredEnable](./api-1645104-anonymous/kiodscblockpredenable.md)
+- [kIOMultiAlignedTiming](./api-1645104-anonymous/kiomultialignedtiming.md)
 
 
 ---

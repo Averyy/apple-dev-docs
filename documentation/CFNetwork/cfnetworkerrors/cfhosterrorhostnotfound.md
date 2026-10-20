@@ -1,7 +1,8 @@
 # CFNetworkErrors.cfHostErrorHostNotFound
 
 **Framework**: CFNetwork  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The specified host wasn’t found.
 
@@ -19,43 +20,48 @@ The specified host wasn’t found.
 case cfHostErrorHostNotFound
 ```
 
+```c
+kCFHostErrorHostNotFound
+```
+
 #### Discussion
 
 Indicates that the DNS lookup failed.
 
-For more information, see [`CFNetwork Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Networking/Conceptual/CFNetwork/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001132).
+For more information, see [CFNetwork Programming Guide](https://developer.apple.com/library/archive/documentation/Networking/Conceptual/CFNetwork/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001132).
 
 ## See Also
 
-- [CFNetworkErrors.cfHostErrorUnknown](cfnetworkerrors/cfhosterrorunknown.md)
+### Constants
+- [CFNetworkErrors.cfHostErrorUnknown](./cfhosterrorunknown.md)
   An unknown error.
-- [CFNetworkErrors.cfsocksErrorUnknownClientVersion](cfnetworkerrors/cfsockserrorunknownclientversion.md)
+- [CFNetworkErrors.cfsocksErrorUnknownClientVersion](./cfsockserrorunknownclientversion.md)
   The SOCKS server rejected access because it doesn’t support connections with the requested SOCKS version.
-- [CFNetworkErrors.cfsocksErrorUnsupportedServerVersion](cfnetworkerrors/cfsockserrorunsupportedserverversion.md)
+- [CFNetworkErrors.cfsocksErrorUnsupportedServerVersion](./cfsockserrorunsupportedserverversion.md)
   The SOCKS server doesn’t support the requested version.
-- [CFNetworkErrors.cfsocks4ErrorRequestFailed](cfnetworkerrors/cfsocks4errorrequestfailed.md)
+- [CFNetworkErrors.cfsocks4ErrorRequestFailed](./cfsocks4errorrequestfailed.md)
   The server rejected the request, or the request failed.
-- [CFNetworkErrors.cfsocks4ErrorIdentdFailed](cfnetworkerrors/cfsocks4erroridentdfailed.md)
+- [CFNetworkErrors.cfsocks4ErrorIdentdFailed](./cfsocks4erroridentdfailed.md)
   The server couldn’t connect to the `identd` daemon on the client and rejected the request.
-- [CFNetworkErrors.cfsocks4ErrorIdConflict](cfnetworkerrors/cfsocks4erroridconflict.md)
+- [CFNetworkErrors.cfsocks4ErrorIdConflict](./cfsocks4erroridconflict.md)
   The server rejected the request because the client program and the `identd` daemon reported different user IDs.
-- [CFNetworkErrors.cfsocks4ErrorUnknownStatusCode](cfnetworkerrors/cfsocks4errorunknownstatuscode.md)
+- [CFNetworkErrors.cfsocks4ErrorUnknownStatusCode](./cfsocks4errorunknownstatuscode.md)
   The server returned an unknown status code.
-- [CFNetworkErrors.cfsocks5ErrorBadState](cfnetworkerrors/cfsocks5errorbadstate.md)
+- [CFNetworkErrors.cfsocks5ErrorBadState](./cfsocks5errorbadstate.md)
   The stream isn’t in a state that allows the requested operation.
-- [CFNetworkErrors.cfsocks5ErrorBadResponseAddr](cfnetworkerrors/cfsocks5errorbadresponseaddr.md)
+- [CFNetworkErrors.cfsocks5ErrorBadResponseAddr](./cfsocks5errorbadresponseaddr.md)
   The address type returned isn’t supported.
-- [CFNetworkErrors.cfsocks5ErrorBadCredentials](cfnetworkerrors/cfsocks5errorbadcredentials.md)
+- [CFNetworkErrors.cfsocks5ErrorBadCredentials](./cfsocks5errorbadcredentials.md)
   The SOCKS server refused the client connection because of bad login credentials.
-- [CFNetworkErrors.cfsocks5ErrorUnsupportedNegotiationMethod](cfnetworkerrors/cfsocks5errorunsupportednegotiationmethod.md)
+- [CFNetworkErrors.cfsocks5ErrorUnsupportedNegotiationMethod](./cfsocks5errorunsupportednegotiationmethod.md)
   The requested method isn’t supported.
-- [CFNetworkErrors.cfsocks5ErrorNoAcceptableMethod](cfnetworkerrors/cfsocks5errornoacceptablemethod.md)
+- [CFNetworkErrors.cfsocks5ErrorNoAcceptableMethod](./cfsocks5errornoacceptablemethod.md)
   The client and server couldn’t find a mutually agreeable authentication method.
-- [CFNetworkErrors.cfftpErrorUnexpectedStatusCode](cfnetworkerrors/cfftperrorunexpectedstatuscode.md)
+- [CFNetworkErrors.cfftpErrorUnexpectedStatusCode](./cfftperrorunexpectedstatuscode.md)
   The server returned an unexpected status code.
-- [CFNetworkErrors.cfErrorHTTPAuthenticationTypeUnsupported](cfnetworkerrors/cferrorhttpauthenticationtypeunsupported.md)
+- [CFNetworkErrors.cfErrorHTTPAuthenticationTypeUnsupported](./cferrorhttpauthenticationtypeunsupported.md)
   The client and server couldn’t agree on a supported authentication type.
-- [CFNetworkErrors.cfErrorHTTPBadCredentials](cfnetworkerrors/cferrorhttpbadcredentials.md)
+- [CFNetworkErrors.cfErrorHTTPBadCredentials](./cferrorhttpbadcredentials.md)
   The server rejected the credentials provided for an authenticated connection.
 
 

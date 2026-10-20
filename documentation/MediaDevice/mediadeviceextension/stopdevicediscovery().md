@@ -2,6 +2,7 @@
 
 **Framework**: Media Device  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when the user dismisses the UI element that is showing devices.
@@ -20,7 +21,7 @@ func stopDeviceDiscovery()
 
 #### Discussion
 
-Stop any active network discovery operations started in [`startDeviceDiscovery()`](mediadeviceextension/startdevicediscovery().md).
+Stop any active network discovery operations started in [`startDeviceDiscovery()`](./startdevicediscovery%28%29.md).
 
 
 ---

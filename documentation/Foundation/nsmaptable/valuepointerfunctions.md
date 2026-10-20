@@ -1,7 +1,8 @@
 # valuePointerFunctions
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pointer functions the map table uses to manage values.
 
@@ -21,11 +22,16 @@ The pointer functions the map table uses to manage values.
 var valuePointerFunctions: NSPointerFunctions { get }
 ```
 
+```objc
+@property (copy, readonly) NSPointerFunctions * valuePointerFunctions;
+```
+
 ## See Also
 
-- [var keyPointerFunctions: NSPointerFunctions](nsmaptable/keypointerfunctions.md)
+### Accessing Pointer Functions
+- [var keyPointerFunctions: NSPointerFunctions](./keypointerfunctions.md)
   The pointer functions the map table uses to manage keys.
-- [class NSPointerFunctions](nspointerfunctions.md)
+- [class NSPointerFunctions](../nspointerfunctions.md)
   An instance of `NSPointerFunctions` defines callout functions appropriate for managing a pointer reference held somewhere else.
 
 

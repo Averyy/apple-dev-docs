@@ -1,7 +1,8 @@
 # isAvailable
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var isAvailable: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isAvailable) BOOL available;
 ```
 
 #### Discussion

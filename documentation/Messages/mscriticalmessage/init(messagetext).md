@@ -1,7 +1,8 @@
 # init(messageText:)
 
 **Framework**: Messages  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializer
 

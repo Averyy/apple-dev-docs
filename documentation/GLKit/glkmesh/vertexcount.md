@@ -1,13 +1,16 @@
 # vertexCount
 
 **Framework**: GLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- macOS 10.11+
-- tvOS 9.0+
+- iOS 9.0+ - Deprecated in 12.0
+- iPadOS 9.0+ - Deprecated in 12.0
+- macOS 10.11+ - Deprecated in 10.14
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -15,12 +18,17 @@
 var vertexCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger vertexCount;
+```
+
 ## See Also
 
-- [var name: String](glkmesh/name.md)
-- [var submeshes: [GLKSubmesh]](glkmesh/submeshes.md)
-- [var vertexBuffers: [GLKMeshBuffer]](glkmesh/vertexbuffers.md)
-- [var vertexDescriptor: MDLVertexDescriptor](glkmesh/vertexdescriptor.md)
+### Instance Properties
+- [var name: String](./name.md)
+- [var submeshes: [GLKSubmesh]](./submeshes.md)
+- [var vertexBuffers: [GLKMeshBuffer]](./vertexbuffers.md)
+- [var vertexDescriptor: MDLVertexDescriptor](./vertexdescriptor.md)
 
 
 ---

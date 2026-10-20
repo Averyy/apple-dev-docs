@@ -1,7 +1,8 @@
 # registerSoundEventAsset(rootNode:identifier:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers the root node of the sound event asset.
 
@@ -19,6 +20,10 @@ Registers the root node of the sound event asset.
 func registerSoundEventAsset(rootNode: PHASESoundEventNodeDefinition, identifier: String?) throws -> PHASESoundEventNodeAsset
 ```
 
+```objc
+- (PHASESoundEventNodeAsset *) registerSoundEventAssetWithRootNode:(PHASESoundEventNodeDefinition *) rootNode identifier:(NSString *) identifier error:(NSError **) error;
+```
+
 #### Return Value
 
 A sound event node asset.
@@ -30,7 +35,8 @@ A sound event node asset.
 
 ## See Also
 
-- [func asset(forIdentifier: String) -> PHASEAsset?](phaseassetregistry/asset(foridentifier:).md)
+### Registering Sound Event Assets
+- [func asset(forIdentifier: String) -> PHASEAsset?](./asset%28foridentifier%29.md)
   Provides the asset named with the designated identifier.
 
 

@@ -1,7 +1,8 @@
 # BNNSDirectApplyTopK(_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies a top-k filter directly to an input.
 
@@ -18,6 +19,10 @@ Applies a top-k filter directly to an input.
 
 ```swift
 func BNNSDirectApplyTopK(_ K: Int, _ axis: Int, _ batch_size: Int, _ input: UnsafePointer<BNNSNDArrayDescriptor>, _ input_batch_stride: Int, _ best_values: UnsafeMutablePointer<BNNSNDArrayDescriptor>, _ best_values_batch_stride: Int, _ best_indices: UnsafeMutablePointer<BNNSNDArrayDescriptor>?, _ best_indices_batch_stride: Int, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> Int32
+```
+
+```c
+int BNNSDirectApplyTopK(size_t K, size_t axis, size_t batch_size, const BNNSNDArrayDescriptor *input, size_t input_batch_stride, BNNSNDArrayDescriptor *best_values, size_t best_values_batch_stride, BNNSNDArrayDescriptor *best_indices, size_t best_indices_batch_stride, const BNNSFilterParameters *filter_params);
 ```
 
 #### Discussion
@@ -118,7 +123,8 @@ On return, `bestIndices` and `bestValues` contain the following values, where 9 
 
 ## See Also
 
-- [func BNNSDirectApplyInTopK(Int, Int, Int, UnsafePointer<BNNSNDArrayDescriptor>, Int, UnsafePointer<BNNSNDArrayDescriptor>, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafePointer<BNNSFilterParameters>?) -> Int32](bnnsdirectapplyintopk(_:_:_:_:_:_:_:_:_:_:).md)
+### Top-k layers
+- [func BNNSDirectApplyInTopK(Int, Int, Int, UnsafePointer<BNNSNDArrayDescriptor>, Int, UnsafePointer<BNNSNDArrayDescriptor>, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafePointer<BNNSFilterParameters>?) -> Int32](./bnnsdirectapplyintopk%28_,_,_,_,_,_,_,_,_,_%29.md)
   Applies an in-top-k filter directly to an input.
 
 

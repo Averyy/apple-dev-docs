@@ -1,7 +1,8 @@
 # init(archiveURL:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Loads a reference object from the specified file URL.
 
@@ -15,13 +16,17 @@ Loads a reference object from the specified file URL.
 init(archiveURL url: URL) throws
 ```
 
+```objc
+- (instancetype) initWithArchiveURL:(NSURL *) url error:(NSError **) error;
+```
+
 #### Return Value
 
 The reference object contained in the file.
 
 #### Discussion
 
-To use the object for detection in a world-tracking AR session, add it to the [`detectionObjects`](arworldtrackingconfiguration/detectionobjects.md) set in your session configuration.
+To use the object for detection in a world-tracking AR session, add it to the [`detectionObjects`](../arworldtrackingconfiguration/detectionobjects.md) set in your session configuration.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ To use the object for detection in a world-tracking AR session, add it to the [`
 
 ## See Also
 
-- [class func referenceObjects(inGroupNamed: String, bundle: Bundle?) -> Set<ARReferenceObject>?](arreferenceobject/referenceobjects(ingroupnamed:bundle:).md)
+### Loading Reference Objects
+- [class func referenceObjects(inGroupNamed: String, bundle: Bundle?) -> Set<ARReferenceObject>?](./referenceobjects%28ingroupnamed,bundle%29.md)
   Loads all reference objects in the specified AR Resource Group in your Xcode project’s asset catalog.
 
 

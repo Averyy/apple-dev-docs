@@ -1,7 +1,8 @@
 # UIAccessibility.GuidedAccessError.Code.failed
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates a failure for an unspecified reason.
 
@@ -17,9 +18,14 @@ An error that indicates a failure for an unspecified reason.
 case failed
 ```
 
+```c
+UIGuidedAccessErrorFailed
+```
+
 ## See Also
 
-- [UIAccessibility.GuidedAccessError.Code.permissionDenied](uiaccessibility/guidedaccesserror/code/permissiondenied.md)
+### Errors
+- [UIAccessibility.GuidedAccessError.Code.permissionDenied](./permissiondenied.md)
   An error that indicates the app isn’t authorized to perform the requested action.
 
 

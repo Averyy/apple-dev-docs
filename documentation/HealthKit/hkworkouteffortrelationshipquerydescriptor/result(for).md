@@ -1,14 +1,15 @@
 # result(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration

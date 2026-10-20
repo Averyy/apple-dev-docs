@@ -1,7 +1,8 @@
 # InflectionRule
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A rule that affects how an attributed string performs automatic grammatical agreement.
 
@@ -24,7 +25,7 @@ enum InflectionRule
 
 Most apps can rely on loading localized strings to perform automatic grammar agreement. Typically, strings in your app’s strings files use the Markdown extension syntax to indicate portions of the string that may require inflection to agree grammatically. This transformation occurs when you load the attributed string with methods like `init(localized:options:table:bundle:locale:comment:)`.
 
-However, if the system lacks information about the words in the string, you may need to apply an inflection rule programmatically. For example, a social networking app may have gender information about other users that you want to apply at runtime. When performing manual inflection at runtime, you use an inflection rule to indicate to the system what portions of a string should be automatically edited, and what to match. Apply the [`inflect`](attributescopes/foundationattributes/inflect.md) attribute to set an [`InflectionRule`](inflectionrule.md) on an [`AttributedString`](attributedstring.md), then call [`inflected()`](attributedstring/inflected().md) to perform the grammar agreement and produce an edited string.
+However, if the system lacks information about the words in the string, you may need to apply an inflection rule programmatically. For example, a social networking app may have gender information about other users that you want to apply at runtime. When performing manual inflection at runtime, you use an inflection rule to indicate to the system what portions of a string should be automatically edited, and what to match. Apply the [`inflect`](./attributescopes/foundationattributes/inflect.md) attribute to set an [`InflectionRule`](./inflectionrule.md) on an [`AttributedString`](./attributedstring.md), then call [`inflected()`](./attributedstring/inflected%28%29.md) to perform the grammar agreement and produce an edited string.
 
 ```swift
 var string = AttributedString(localized: "They liked your post.")
@@ -39,42 +40,43 @@ let result = string.inflected()
 ## Topics
 
 ### Creating an Inflection Rule from a Morphology
-- [init(morphology: Morphology)](inflectionrule/init(morphology:).md)
+- [init(morphology: Morphology)](./inflectionrule/init%28morphology%29.md)
   Creates an inflection rule with the given morphology.
-- [struct Morphology](morphology.md)
+- [struct Morphology](./morphology.md)
   A description of the grammatical properties of a string.
 ### Inflection Rule Behaviors
-- [InflectionRule.automatic](inflectionrule/automatic.md)
+- [InflectionRule.automatic](./inflectionrule/automatic.md)
   An inflection rule that performs automatic grammar agreement with default transformations.
-- [InflectionRule.explicit(_:)](inflectionrule/explicit(_:).md)
+- [InflectionRule.explicit(_:)](./inflectionrule/explicit%28_%29.md)
   An inflection rule that uses a morphology instance to determine how to inflect attribued strings.
 ### Determining Availability
-- [static func canInflect(language: String) -> Bool](inflectionrule/caninflect(language:).md)
+- [static func canInflect(language: String) -> Bool](./inflectionrule/caninflect%28language%29.md)
   Returns a Boolean value that indicates whether the rule can inflect a given language.
-- [static var canInflectPreferredLocalization: Bool](inflectionrule/caninflectpreferredlocalization.md)
+- [static var canInflectPreferredLocalization: Bool](./inflectionrule/caninflectpreferredlocalization.md)
   A Boolean value that indicates whether the rule can inflect the user’s current preferred localization.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Morphology](morphology.md)
+### Automatic grammar agreement
+- [struct Morphology](./morphology.md)
   A description of the grammatical properties of a string.
-- [struct TermOfAddress](termofaddress.md)
+- [struct TermOfAddress](./termofaddress.md)
   The type for representing grammatical gender in localized text.
-- [enum InflectionConcept](inflectionconcept.md)
+- [enum InflectionConcept](./inflectionconcept.md)
   An inflection method to use when localizing text.
-- [Morphology.Pronoun](morphology/pronoun.md)
+- [Morphology.Pronoun](./morphology/pronoun.md)
   A custom pronoun for referring to a third person.
 
 

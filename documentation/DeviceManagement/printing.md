@@ -1,7 +1,8 @@
 # Printing
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures printers.
 
@@ -10,7 +11,7 @@ The payload that configures printers.
 
 ## Declaration
 
-```swift
+```
 object Printing
 ```
 
@@ -20,7 +21,7 @@ Specify `com.apple.mcxprinting` as the payload type.
 
 Removing this profile from a device doesn’t automatically remove printers from the device.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -32,7 +33,7 @@ Removing this profile from a device doesn’t automatically remove printers from
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -111,27 +112,40 @@ Removing this profile from a device doesn’t automatically remove printers from
 ## Topics
 
 ### Objects
-- [object Printing.DefaultPrinter](printing/defaultprinter-data.dictionary.md)
+- [object Printing.DefaultPrinter](./printing/defaultprinter-data.dictionary.md)
   A default printer for the user.
-- [object Printing.UserPrinterList](printing/userprinterlist-data.dictionary.md)
+- [object Printing.UserPrinterList](./printing/userprinterlist-data.dictionary.md)
   A list of printer dictionaries.
 
 ## Properties
 
 - `AllowLocalPrinters` (boolean): If `true`, allows printers that connect directly to a user’s computer.
+
+  **Default**: `true`
 - `DefaultPrinter` (Printing.DefaultPrinter): The default printer for the user.
 - `FooterFontName` (string): The footer font name.
 - `FooterFontSize` (string): The footer font size.
 - `PrintFooter` (boolean): If `true`, prints the page footer (including the user name and date).
+
+  **Default**: `false`
 - `PrintMACAddress` (boolean): If `true`, includes the MAC address.
+
+  **Default**: `false`
 - `RequireAdminToAddPrinters` (boolean): If `true`, requires an administrator password to add printers.
+
+  **Default**: `true`
 - `RequireAdminToPrintLocally` (boolean): If `true`, requires an administrator password to print locally.
+
+  **Default**: `false`
 - `ShowOnlyManagedPrinters` (boolean): If `true`, shows only managed printers.
+
+  **Default**: `false`
 - `UserPrinterList` (Printing.UserPrinterList): The printers available to a user.
 
 ## See Also
 
-- [object AirPrint](airprint.md)
+### Printing
+- [object AirPrint](./airprint.md)
   The payload that configures AirPrint printer discoverability in the user’s printer list.
 
 

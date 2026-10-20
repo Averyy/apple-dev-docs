@@ -1,7 +1,8 @@
 # AVCaptureDevice.WhiteBalanceMode
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants to specify the white balance mode of a capture device.
 
@@ -18,33 +19,38 @@ Constants to specify the white balance mode of a capture device.
 enum WhiteBalanceMode
 ```
 
+```c
+enum AVCaptureWhiteBalanceMode : NSInteger;
+```
+
 ## Topics
 
 ### White balance modes
-- [AVCaptureDevice.WhiteBalanceMode.locked](avcapturedevice/whitebalancemode-swift.enum/locked.md)
+- [AVCaptureDevice.WhiteBalanceMode.locked](./whitebalancemode-swift.enum/locked.md)
   A mode that locks the white balance state.
-- [AVCaptureDevice.WhiteBalanceMode.autoWhiteBalance](avcapturedevice/whitebalancemode-swift.enum/autowhitebalance.md)
+- [AVCaptureDevice.WhiteBalanceMode.autoWhiteBalance](./whitebalancemode-swift.enum/autowhitebalance.md)
   A mode that automatically manages white balance.
-- [AVCaptureDevice.WhiteBalanceMode.continuousAutoWhiteBalance](avcapturedevice/whitebalancemode-swift.enum/continuousautowhitebalance.md)
+- [AVCaptureDevice.WhiteBalanceMode.continuousAutoWhiteBalance](./whitebalancemode-swift.enum/continuousautowhitebalance.md)
   A mode that continuously monitors white balance and adjusts when necessary.
 ### Initializers
-- [init?(rawValue: Int)](avcapturedevice/whitebalancemode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./whitebalancemode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func isWhiteBalanceModeSupported(AVCaptureDevice.WhiteBalanceMode) -> Bool](avcapturedevice/iswhitebalancemodesupported(_:).md)
+### Configuring automatic white balance
+- [func isWhiteBalanceModeSupported(AVCaptureDevice.WhiteBalanceMode) -> Bool](./iswhitebalancemodesupported%28_%29.md)
   Returns a Boolean value that indicates whether the device supports the specified white balance mode.
-- [var whiteBalanceMode: AVCaptureDevice.WhiteBalanceMode](avcapturedevice/whitebalancemode-swift.property.md)
+- [var whiteBalanceMode: AVCaptureDevice.WhiteBalanceMode](./whitebalancemode-swift.property.md)
   The current white balance mode.
 
 

@@ -1,7 +1,8 @@
 # Product.Plugin
 
 **Framework**: PackageDescription  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The plug-in product of a Swift package.
 
@@ -14,20 +15,21 @@ final class Plugin
 ## Topics
 
 ### Describing a plug-in product
-- [let targets: [String]](product/plugin/targets.md)
+- [let targets: [String]](./plugin/targets.md)
   The name of the plug-in target to vend as a product.
 
 ## Relationships
 
 ### Inherits From
-- [Product](product.md)
+- [Product](../product.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func plugin(name: String, targets: [String]) -> Product](product/plugin(name:targets:).md)
+### Creating a Plugin Product
+- [static func plugin(name: String, targets: [String]) -> Product](./plugin%28name,targets%29.md)
   Defines a product that vends a package plugin target for use by clients of the package.
 
 

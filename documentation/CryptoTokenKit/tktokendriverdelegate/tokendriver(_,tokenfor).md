@@ -1,7 +1,8 @@
 # tokenDriver(_:tokenFor:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new token for the configuration you specify.
 
@@ -20,15 +21,19 @@ Creates a new token for the configuration you specify.
 optional func tokenDriver(_ driver: TKTokenDriver, tokenFor configuration: TKToken.Configuration) throws -> TKToken
 ```
 
+```objc
+- (TKToken *) tokenDriver:(TKTokenDriver *) driver tokenForConfiguration:(TKTokenConfiguration *) configuration error:(NSError **) error;
+```
+
 #### Return Value
 
 The created token.
 
 #### Discussion
 
-The system invokes this method to request creation of a token instance, which the [`instanceID`](tktoken/configuration-swift.class/instanceid.md) property of the configuration you specify identifies.
+The system invokes this method to request creation of a token instance, which the [`instanceID`](../tktoken/configuration-swift.class/instanceid.md) property of the configuration you specify identifies.
 
-The created token has access to its current configuration using the [`configurationData`](tktoken/configuration-swift.class/configurationdata.md) property, which can provide token-implementation-specific additional data. The token can access keychain items this token exports with the methods [`key(for:)`](tktoken/configuration-swift.class/key(for:).md) and [`certificate(for:)`](tktoken/configuration-swift.class/certificate(for:).md) that the configuration provides.
+The created token has access to its current configuration using the [`configurationData`](../tktoken/configuration-swift.class/configurationdata.md) property, which can provide token-implementation-specific additional data. The token can access keychain items this token exports with the methods [`key(for:)`](../tktoken/configuration-swift.class/key%28for%29.md) and [`certificate(for:)`](../tktoken/configuration-swift.class/certificate%28for%29.md) that the configuration provides.
 
 > **Note**:  Smart card token drivers must not implement this method.
 
@@ -39,7 +44,8 @@ The created token has access to its current configuration using the [`configurat
 
 ## See Also
 
-- [func tokenDriver(TKTokenDriver, terminateToken: TKToken)](tktokendriverdelegate/tokendriver(_:terminatetoken:).md)
+### Creating and Removing Tokens
+- [func tokenDriver(TKTokenDriver, terminateToken: TKToken)](./tokendriver%28_,terminatetoken%29.md)
   Tells the delegate to terminate the token you specify.
 
 

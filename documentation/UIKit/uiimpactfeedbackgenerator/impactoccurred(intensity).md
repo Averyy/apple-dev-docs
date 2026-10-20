@@ -1,7 +1,8 @@
 # impactOccurred(intensity:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Triggers impact feedback with a specific intensity.
 
@@ -16,17 +17,22 @@ Triggers impact feedback with a specific intensity.
 func impactOccurred(intensity: CGFloat)
 ```
 
+```objc
+- (void) impactOccurredWithIntensity:(CGFloat) intensity;
+```
+
 ## Parameters
 
-- `intensity`: A [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) value between `0.0` and `1.0`.
+- `intensity`: A [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md) value between `0.0` and `1.0`.
 
 ## See Also
 
-- [func impactOccurred()](uiimpactfeedbackgenerator/impactoccurred.md)
+### Reporting impacts
+- [func impactOccurred()](./impactoccurred%28%29.md)
   Triggers impact feedback.
-- [func impactOccurred(at: CGPoint)](uiimpactfeedbackgenerator/impactoccurred(at:).md)
+- [func impactOccurred(at: CGPoint)](./impactoccurred%28at%29.md)
   Triggers impact feedback at the specified location.
-- [func impactOccurred(intensity: CGFloat, at: CGPoint)](uiimpactfeedbackgenerator/impactoccurred(intensity:at:).md)
+- [func impactOccurred(intensity: CGFloat, at: CGPoint)](./impactoccurred%28intensity,at%29.md)
   Triggers impact feedback with a specific intensity at the specified location.
 
 

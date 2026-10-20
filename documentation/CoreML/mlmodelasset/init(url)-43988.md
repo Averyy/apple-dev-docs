@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Constructs a ModelAsset from a compiled model URL.
 
@@ -20,6 +21,10 @@ Constructs a ModelAsset from a compiled model URL.
 convenience init(url compiledModelURL: URL) throws
 ```
 
+```objc
++ (instancetype) modelAssetWithURL:(NSURL *) compiledModelURL error:(NSError **) error;
+```
+
 #### Return Value
 
 A model asset or nil if there is an error.
@@ -30,9 +35,10 @@ A model asset or nil if there is an error.
 
 ## See Also
 
-- [convenience init(specification: Data) throws](mlmodelasset/init(specification:).md)
+### Creating a model asset
+- [convenience init(specification: Data) throws](./init%28specification%29.md)
   Creates a model asset from an in-memory model specification.
-- [convenience init(specification: Data, blobMapping: [URL : Data]) throws](mlmodelasset/init(specification:blobmapping:).md)
+- [convenience init(specification: Data, blobMapping: [URL : Data]) throws](./init%28specification,blobmapping%29.md)
   Construct a model asset from an ML Program specification by replacing blob file references with corresponding in-memory blobs.
 
 

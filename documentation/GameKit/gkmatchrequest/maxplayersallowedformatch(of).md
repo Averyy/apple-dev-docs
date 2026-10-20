@@ -1,7 +1,8 @@
 # maxPlayersAllowedForMatch(of:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the maximum number of players allowed in the match request for a given match type.
 
@@ -20,10 +21,14 @@ Returns the maximum number of players allowed in the match request for a given m
 class func maxPlayersAllowedForMatch(of matchType: GKMatchType) -> Int
 ```
 
+```objc
++ (NSUInteger) maxPlayersAllowedForMatchOfType:(GKMatchType) matchType;
+```
+
 ## Mentions
 
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
+- [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
 #### Return Value
 
@@ -39,13 +44,14 @@ For peer-to-peer, hosted, and turn-based matches, the maximum number of players 
 
 ## See Also
 
-- [enum GKMatchType](gkmatchtype.md)
+### Restricting the number of players
+- [enum GKMatchType](../gkmatchtype.md)
   The kind of match managed by Game Center.
-- [var minPlayers: Int](gkmatchrequest/minplayers.md)
+- [var minPlayers: Int](./minplayers.md)
   The minimum number of players that can join the match.
-- [var maxPlayers: Int](gkmatchrequest/maxplayers.md)
+- [var maxPlayers: Int](./maxplayers.md)
   The maximum number of players that can join the match.
-- [var defaultNumberOfPlayers: Int](gkmatchrequest/defaultnumberofplayers.md)
+- [var defaultNumberOfPlayers: Int](./defaultnumberofplayers.md)
   The default number of players for the match.
 
 

@@ -1,7 +1,8 @@
 # doNotHandle()
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates the request wasn’t handled.
 
@@ -18,9 +19,14 @@ Indicates the request wasn’t handled.
 func doNotHandle()
 ```
 
+```objc
+- (void) doNotHandle;
+```
+
 ## See Also
 
-- [func cancel()](asauthorizationproviderextensionauthorizationrequest/cancel.md)
+### Canceling a Request
+- [func cancel()](./cancel%28%29.md)
   Cancels the request, for example, because the user taps a cancel button.
 
 

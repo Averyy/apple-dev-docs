@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kUCTSDirectionNext: Int](kuctsdirectionnext.md)
-- [var kUCTSDirectionPrevious: Int](kuctsdirectionprevious.md)
+- [var kUCTSDirectionNext: Int](../../kuctsdirectionnext.md)
+- [var kUCTSDirectionPrevious: Int](../../kuctsdirectionprevious.md)
 
 
 ---

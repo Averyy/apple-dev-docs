@@ -1,7 +1,8 @@
 # organDonorStatus
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The mobile driver’s license holder’s organ donor status on record with the issuer.
 

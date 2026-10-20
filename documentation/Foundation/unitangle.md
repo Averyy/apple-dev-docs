@@ -1,7 +1,8 @@
 # UnitAngle
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A unit of measure for planar angle and rotation.
 
@@ -20,68 +21,73 @@ A unit of measure for planar angle and rotation.
 class UnitAngle
 ```
 
+```objc
+@interface NSUnitAngle : NSDimension
+```
+
 #### Overview
 
-You typically use instances of [`UnitAngle`](unitangle.md) to represent specific quantities of planar angle using the [`NSMeasurement`](nsmeasurement.md) class.
+You typically use instances of [`UnitAngle`](./unitangle.md) to represent specific quantities of planar angle using the [`NSMeasurement`](./nsmeasurement.md) class.
 
 ##### Angle
 
 Angle is a quantity of rotation. The SI unit for angle is the radian (rad), which is dimensionless and defined to be the angle subtended by an arc that is equal in length to the radius of a circle. Angle is also commonly expressed in terms of degrees (°) and revolutions (rev).
 
-The [`UnitAngle`](unitangle.md) class defines its [`baseUnit()`](dimension/baseunit().md) as [`degrees`](unitangle/degrees.md), and provides the following units, which are initialized using [`UnitConverterLinear`](unitconverterlinear.md) converters with the specified coefficients:
+The [`UnitAngle`](./unitangle.md) class defines its [`baseUnit()`](./dimension/baseunit%28%29.md) as [`degrees`](./unitangle/degrees.md), and provides the following units, which are initialized using [`UnitConverterLinear`](./unitconverterlinear.md) converters with the specified coefficients:
 
 | Name | Method | Symbol | Definition |
 | --- | --- | --- | --- |
-| Degrees | [`degrees`](unitangle/degrees.md) | ° | `1.0` |
-| Arc Minutes | [`arcMinutes`](unitangle/arcminutes.md) | ʹ | `0.016667` |
-| Arc Seconds | [`arcSeconds`](unitangle/arcseconds.md) | ʺ | `0.00027778` |
-| Radians | [`radians`](unitangle/radians.md) | rad | `57.2958` |
-| Gradians | [`gradians`](unitangle/gradians.md) | grad | `0.9` |
-| Revolutions | [`revolutions`](unitangle/revolutions.md) | rev | `360` |
+| Degrees | [`degrees`](./unitangle/degrees.md) | ° | `1.0` |
+| Arc Minutes | [`arcMinutes`](./unitangle/arcminutes.md) | ʹ | `0.016667` |
+| Arc Seconds | [`arcSeconds`](./unitangle/arcseconds.md) | ʺ | `0.00027778` |
+| Radians | [`radians`](./unitangle/radians.md) | rad | `57.2958` |
+| Gradians | [`gradians`](./unitangle/gradians.md) | grad | `0.9` |
+| Revolutions | [`revolutions`](./unitangle/revolutions.md) | rev | `360` |
 
 ## Topics
 
 ### Accessing the Base Unit
-- [class func baseUnit() -> Self](dimension/baseunit.md)
+- [class func baseUnit() -> Self](./dimension/baseunit%28%29.md)
   Returns the base unit.
 ### Accessing Predefined Units
-- [class var degrees: UnitAngle](unitangle/degrees.md)
+- [class var degrees: UnitAngle](./unitangle/degrees.md)
   The degrees unit of angle.
-- [class var arcMinutes: UnitAngle](unitangle/arcminutes.md)
+- [class var arcMinutes: UnitAngle](./unitangle/arcminutes.md)
   The arc minutes unit of angle.
-- [class var arcSeconds: UnitAngle](unitangle/arcseconds.md)
+- [class var arcSeconds: UnitAngle](./unitangle/arcseconds.md)
   The arc seconds unit of angle.
-- [class var radians: UnitAngle](unitangle/radians.md)
+- [class var radians: UnitAngle](./unitangle/radians.md)
   The radians unit of angle.
-- [class var gradians: UnitAngle](unitangle/gradians.md)
+- [class var gradians: UnitAngle](./unitangle/gradians.md)
   The gradians unit of angle.
-- [class var revolutions: UnitAngle](unitangle/revolutions.md)
+- [class var revolutions: UnitAngle](./unitangle/revolutions.md)
   The revolutions unit of angle.
 
 ## Relationships
 
 ### Inherits From
-- [Dimension](dimension.md)
+- [Dimension](./dimension.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UnitArea](unitarea.md)
+### Physical Dimension
+- [class UnitArea](./unitarea.md)
   A unit of measure for area.
-- [class UnitLength](unitlength.md)
+- [class UnitLength](./unitlength.md)
   A unit of measure for length.
-- [class UnitVolume](unitvolume.md)
+- [class UnitVolume](./unitvolume.md)
   A unit of measure for volume.
 
 

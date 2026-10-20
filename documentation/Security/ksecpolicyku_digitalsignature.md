@@ -1,7 +1,8 @@
 # kSecPolicyKU_DigitalSignature
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 If true, the certificate’s key usage must allow it to be used for signing.
 
@@ -12,6 +13,10 @@ If true, the certificate’s key usage must allow it to be used for signing.
 
 ```swift
 let kSecPolicyKU_DigitalSignature: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyKU_DigitalSignature;
 ```
 
 

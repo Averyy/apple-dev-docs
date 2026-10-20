@@ -1,7 +1,8 @@
 # HMMutableCalendarEvent
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mutable event that fires at a specified time.
 
@@ -19,33 +20,38 @@ A mutable event that fires at a specified time.
 class HMMutableCalendarEvent
 ```
 
+```objc
+@interface HMMutableCalendarEvent : HMCalendarEvent
+```
+
 ## Topics
 
 ### Configuring the calendar event
-- [var fireDateComponents: DateComponents](hmmutablecalendarevent/firedatecomponents.md)
+- [var fireDateComponents: DateComponents](./hmmutablecalendarevent/firedatecomponents.md)
   The date components that specify when the event is triggered.
 
 ## Relationships
 
 ### Inherits From
-- [HMCalendarEvent](hmcalendarevent.md)
+- [HMCalendarEvent](./hmcalendarevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMCalendarEvent](hmcalendarevent.md)
+### Dates and times
+- [class HMCalendarEvent](./hmcalendarevent.md)
   An event that fires at a specified time.
-- [class HMTimeEvent](hmtimeevent.md)
+- [class HMTimeEvent](./hmtimeevent.md)
   An abstract superclass for time-based events.
 
 

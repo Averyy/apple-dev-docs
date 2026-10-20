@@ -1,7 +1,8 @@
 # imageContent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw data for the image.
 
@@ -14,9 +15,13 @@ The raw data for the image.
 var imageContent: Data { get }
 ```
 
+```objc
+@property (readonly) NSData * imageContent;
+```
+
 #### Discussion
 
-This property contains the image data, the unique identifier for the image, the image description, and additional metadata. When saving your content to disk, save the data for any adaptive images with the rest of your content. If you need to specify a type for the image data, use the value in the [`contentType`](nsadaptiveimageglyph/contenttype.md) property.
+This property contains the image data, the unique identifier for the image, the image description, and additional metadata. When saving your content to disk, save the data for any adaptive images with the rest of your content. If you need to specify a type for the image data, use the value in the [`contentType`](./contenttype.md) property.
 
 
 ---

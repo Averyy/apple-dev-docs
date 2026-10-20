@@ -1,7 +1,8 @@
 # statusBarFrame
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame rectangle of the status bar.
 
@@ -17,9 +18,13 @@ The frame rectangle of the status bar.
 var statusBarFrame: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect statusBarFrame;
+```
+
 #### Discussion
 
-The frame rectangle is in the coordinate space of the associated [`UIWindowScene`](uiwindowscene.md) object. If the status bar is hidden, the value of this property is [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero).
+The frame rectangle is in the coordinate space of the associated [`UIWindowScene`](../uiwindowscene.md) object. If the status bar is hidden, the value of this property is [`CGRectZero`](../../CoreGraphics/cgrectzero.md).
 
 
 ---

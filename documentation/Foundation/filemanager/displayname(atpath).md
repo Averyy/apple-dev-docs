@@ -1,7 +1,8 @@
 # displayName(atPath:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the display name of the file or directory at a specified path.
 
@@ -18,6 +19,10 @@ Returns the display name of the file or directory at a specified path.
 
 ```swift
 func displayName(atPath path: String) -> String
+```
+
+```objc
+- (NSString *) displayNameAtPath:(NSString *) path;
 ```
 
 #### Return Value
@@ -45,13 +50,14 @@ if ([paths count] > 0)
 
 ## See Also
 
-- [func componentsToDisplay(forPath: String) -> [String]?](filemanager/componentstodisplay(forpath:).md)
+### Getting and setting attributes
+- [func componentsToDisplay(forPath: String) -> [String]?](./componentstodisplay%28forpath%29.md)
   Returns an array of strings representing the user-visible components of a given path.
-- [func attributesOfItem(atPath: String) throws -> [FileAttributeKey : Any]](filemanager/attributesofitem(atpath:).md)
+- [func attributesOfItem(atPath: String) throws -> [FileAttributeKey : Any]](./attributesofitem%28atpath%29.md)
   Returns the attributes of the item at a given path.
-- [func attributesOfFileSystem(forPath: String) throws -> [FileAttributeKey : Any]](filemanager/attributesoffilesystem(forpath:).md)
+- [func attributesOfFileSystem(forPath: String) throws -> [FileAttributeKey : Any]](./attributesoffilesystem%28forpath%29.md)
   Returns a dictionary that describes the attributes of the mounted file system on which a given path resides.
-- [func setAttributes([FileAttributeKey : Any], ofItemAtPath: String) throws](filemanager/setattributes(_:ofitematpath:).md)
+- [func setAttributes([FileAttributeKey : Any], ofItemAtPath: String) throws](./setattributes%28_,ofitematpath%29.md)
   Sets the attributes of the specified file or directory.
 
 

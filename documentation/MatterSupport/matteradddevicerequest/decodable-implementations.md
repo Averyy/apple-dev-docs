@@ -1,11 +1,12 @@
 # Decodable Implementations
 
-**Framework**: MatterSupport
+**Framework**: MatterSupport  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](matteradddevicerequest/init(from:).md)
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Create the request from a decoder.
 
 

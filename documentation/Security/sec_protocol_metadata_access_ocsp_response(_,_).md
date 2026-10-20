@@ -1,7 +1,8 @@
 # sec_protocol_metadata_access_ocsp_response(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_protocol_metadata_access_ocsp_response(_ metadata: sec_protocol_metadata_t, _ handler: @escaping (dispatch_data_t) -> Void) -> Bool
+```
+
+```c
+bool sec_protocol_metadata_access_ocsp_response(sec_protocol_metadata_t metadata, void (^handler)(dispatch_data_t ocsp_data));
 ```
 
 #### Return Value

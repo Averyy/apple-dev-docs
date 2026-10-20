@@ -1,7 +1,8 @@
 # begin()
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts an assessment session.
 
@@ -17,15 +18,20 @@ Starts an assessment session.
 func begin()
 ```
 
+```objc
+- (void) begin;
+```
+
 #### Discussion
 
-After calling the [`begin()`](aeassessmentsession/begin().md) method, wait until the session’s delegate receives the [`assessmentSessionDidBegin(_:)`](aeassessmentsessiondelegate/assessmentsessiondidbegin(_:).md) method before starting an assessment or showing sensitive information. When you’re ready to stop the assessment session, call the [`end()`](aeassessmentsession/end().md) method.
+After calling the [`begin()`](./begin%28%29.md) method, wait until the session’s delegate receives the [`assessmentSessionDidBegin(_:)`](../aeassessmentsessiondelegate/assessmentsessiondidbegin%28_%29.md) method before starting an assessment or showing sensitive information. When you’re ready to stop the assessment session, call the [`end()`](./end%28%29.md) method.
 
 ## See Also
 
-- [func end()](aeassessmentsession/end.md)
+### Starting and stopping a session
+- [func end()](./end%28%29.md)
   Ends an assessment session.
-- [var isActive: Bool](aeassessmentsession/isactive.md)
+- [var isActive: Bool](./isactive.md)
   A Boolean that indicates whether an assessment session is running.
 
 

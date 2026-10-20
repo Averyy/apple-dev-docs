@@ -1,7 +1,8 @@
 # MPSNNSubtractionGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a gradient subtraction operator.
 
@@ -19,37 +20,42 @@ A representation of a gradient subtraction operator.
 class MPSNNSubtractionGradientNode
 ```
 
+```objc
+@interface MPSNNSubtractionGradientNode : MPSNNArithmeticGradientNode
+```
+
 ## Relationships
 
 ### Inherits From
-- [MPSNNArithmeticGradientNode](mpsnnarithmeticgradientnode.md)
+- [MPSNNArithmeticGradientNode](./mpsnnarithmeticgradientnode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSNNAdditionNode](mpsnnadditionnode.md)
+### Arithmetic Layer Nodes
+- [class MPSNNAdditionNode](./mpsnnadditionnode.md)
   A representation of an addition operator.
-- [class MPSNNAdditionGradientNode](mpsnnadditiongradientnode.md)
+- [class MPSNNAdditionGradientNode](./mpsnnadditiongradientnode.md)
   A representation of a gradient addition operator.
-- [class MPSNNSubtractionNode](mpsnnsubtractionnode.md)
+- [class MPSNNSubtractionNode](./mpsnnsubtractionnode.md)
   A representation of an subtraction operator.
-- [class MPSNNMultiplicationNode](mpsnnmultiplicationnode.md)
+- [class MPSNNMultiplicationNode](./mpsnnmultiplicationnode.md)
   A representation of a multiplication operator.
-- [class MPSNNMultiplicationGradientNode](mpsnnmultiplicationgradientnode.md)
+- [class MPSNNMultiplicationGradientNode](./mpsnnmultiplicationgradientnode.md)
   A representation of a gradient multiplication operator.
-- [class MPSNNDivisionNode](mpsnndivisionnode.md)
+- [class MPSNNDivisionNode](./mpsnndivisionnode.md)
   A representation of a division operator.
-- [class MPSNNBinaryArithmeticNode](mpsnnbinaryarithmeticnode.md)
+- [class MPSNNBinaryArithmeticNode](./mpsnnbinaryarithmeticnode.md)
   Virtual base class for basic arithmetic nodes.
-- [class MPSNNArithmeticGradientNode](mpsnnarithmeticgradientnode.md)
+- [class MPSNNArithmeticGradientNode](./mpsnnarithmeticgradientnode.md)
   A representation of the base class for gradient arithmetic operators.
-- [class MPSNNArithmeticGradientStateNode](mpsnnarithmeticgradientstatenode.md)
+- [class MPSNNArithmeticGradientStateNode](./mpsnnarithmeticgradientstatenode.md)
   A representation of the clamp mask used by gradient arithmetic operators.
 
 

@@ -1,14 +1,15 @@
 # flags
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 mach_msg_guard_flags_t flags:16;
 ```
 

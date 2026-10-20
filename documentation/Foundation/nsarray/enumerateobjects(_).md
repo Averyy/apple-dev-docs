@@ -1,7 +1,8 @@
 # enumerateObjects(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes a given closure or block using each object in the array, starting with the first object and continuing through the array to the last object.
 
@@ -20,21 +21,28 @@ Executes a given closure or block using each object in the array, starting with 
 func enumerateObjects(_ block: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)
 ```
 
+```objc
+- (void) enumerateObjectsUsingBlock:(void (^)(ObjectType obj, NSUInteger idx, BOOL *stop)) block;
+```
+
 #### Discussion
 
 This method executes synchronously. Values allocated within the block are deallocated after the block is executed.
 
 ## Parameters
 
-- `block`: A closure or block to execute for each object in the array, taking three arguments: - The object.
-- The index of the object in the array.
-- A reference to a Boolean value, which the closure can set to [`true`](https://developer.apple.com/documentation/swift/true) in order to stop further enumeration of the array. If a closure stops further enumeration, that closure continues to run until it’s finished.
+- `block`: A closure or block to execute for each object in the array, taking three arguments:
+
+  - The object.
+  - The index of the object in the array.
+  - A reference to a Boolean value, which the closure can set to [`true`](../../Swift/true.md) in order to stop further enumeration of the array. If a closure stops further enumeration, that closure continues to run until it’s finished.
 
 ## See Also
 
-- [func enumerateObjects(options: NSEnumerationOptions, using: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsarray/enumerateobjects(options:using:).md)
+### Sending Messages to Elements
+- [func enumerateObjects(options: NSEnumerationOptions, using: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateobjects%28options,using%29.md)
   Executes a given closure or block using each object in the array with the specified options.
-- [func enumerateObjects(at: IndexSet, options: NSEnumerationOptions, using: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsarray/enumerateobjects(at:options:using:).md)
+- [func enumerateObjects(at: IndexSet, options: NSEnumerationOptions, using: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateobjects%28at,options,using%29.md)
   Executes a given block using the objects in the array at the specified indexes.
 
 

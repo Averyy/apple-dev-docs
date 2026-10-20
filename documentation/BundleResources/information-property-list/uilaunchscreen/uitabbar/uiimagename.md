@@ -1,7 +1,8 @@
 # UIImageName
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A custom image that replaces the tab bar during launch.
 
@@ -9,13 +10,14 @@ A custom image that replaces the tab bar during launch.
 - iOS 14.0+
 - iPadOS 14.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `UIImageName`
+- **Type**: string
 
 #### Discussion
 
-Provide a value for this key that’s the name of an image in your asset catalog. You use the same string for the value that you might use when calling the [`init(named:)`](https://developer.apple.com/documentation/uikit/uiimage/init(named:)) initializer of [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage).
+Provide a value for this key that’s the name of an image in your asset catalog. You use the same string for the value that you might use when calling the [`init(named:)`](../../../../UIKit/uiimage/init%28named%29.md) initializer of [`UIImage`](../../../../UIKit/uiimage.md).
 
 
 ---

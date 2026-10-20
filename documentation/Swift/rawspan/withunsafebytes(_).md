@@ -1,7 +1,8 @@
 # withUnsafeBytes(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the given closure with a pointer to the underlying bytes of the viewed contiguous storage.
 

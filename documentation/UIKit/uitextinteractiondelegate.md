@@ -1,7 +1,8 @@
 # UITextInteractionDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that an object implements to receive information about text interaction events.
 
@@ -18,26 +19,31 @@ An interface that an object implements to receive information about text interac
 protocol UITextInteractionDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UITextInteractionDelegate <NSObject>
+```
+
 ## Topics
 
 ### Handling text interaction events
-- [func interactionShouldBegin(UITextInteraction, at: CGPoint) -> Bool](uitextinteractiondelegate/interactionshouldbegin(_:at:).md)
+- [func interactionShouldBegin(UITextInteraction, at: CGPoint) -> Bool](./uitextinteractiondelegate/interactionshouldbegin%28_,at%29.md)
   Asks the delegate whether the text interaction should begin.
-- [func interactionWillBegin(UITextInteraction)](uitextinteractiondelegate/interactionwillbegin(_:).md)
+- [func interactionWillBegin(UITextInteraction)](./uitextinteractiondelegate/interactionwillbegin%28_%29.md)
   Tells the delegate that the text interaction will begin.
-- [func interactionDidEnd(UITextInteraction)](uitextinteractiondelegate/interactiondidend(_:).md)
+- [func interactionDidEnd(UITextInteraction)](./uitextinteractiondelegate/interactiondidend%28_%29.md)
   Tells the delegate that the text interaction ended.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class UITextInteraction](uitextinteraction.md)
+### Text interactions
+- [class UITextInteraction](./uitextinteraction.md)
   An interaction that provides text selection gestures and UI to custom text views.
-- [enum UITextInteractionMode](uitextinteractionmode.md)
+- [enum UITextInteractionMode](./uitextinteractionmode.md)
   Modes that determine the selection behaviors that a text interaction provides.
 
 

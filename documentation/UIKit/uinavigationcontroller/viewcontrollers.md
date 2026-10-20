@@ -1,7 +1,8 @@
 # viewControllers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view controllers currently on the navigation stack.
 
@@ -9,7 +10,7 @@ The view controllers currently on the navigation stack.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ The view controllers currently on the navigation stack.
 var viewControllers: [UIViewController] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<__kindof UIViewController *> * viewControllers;
+```
+
 #### Discussion
 
 The root view controller is at index `0` in the array, the back view controller is at index `n-2`, and the top controller is at index `n-1`, where `n` is the number of items in the array.
 
-Assigning a new array of view controllers to this property is equivalent to calling the [`setViewControllers(_:animated:)`](uinavigationcontroller/setviewcontrollers(_:animated:).md) method with the `animated` parameter set to [`false`](https://developer.apple.com/documentation/swift/false).
+Assigning a new array of view controllers to this property is equivalent to calling the [`setViewControllers(_:animated:)`](./setviewcontrollers%28_,animated%29.md) method with the `animated` parameter set to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var topViewController: UIViewController?](uinavigationcontroller/topviewcontroller.md)
+### Accessing items on the navigation stack
+- [var topViewController: UIViewController?](./topviewcontroller.md)
   The view controller at the top of the navigation stack.
-- [var visibleViewController: UIViewController?](uinavigationcontroller/visibleviewcontroller.md)
+- [var visibleViewController: UIViewController?](./visibleviewcontroller.md)
   The view controller associated with the currently visible view in the navigation interface.
-- [func setViewControllers([UIViewController], animated: Bool)](uinavigationcontroller/setviewcontrollers(_:animated:).md)
+- [func setViewControllers([UIViewController], animated: Bool)](./setviewcontrollers%28_,animated%29.md)
   Replaces the view controllers currently managed by the navigation controller with the specified items.
 
 

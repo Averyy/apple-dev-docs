@@ -1,7 +1,8 @@
 # application(_:didRegisterForRemoteNotificationsWithDeviceToken:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the app successfully registered with Apple Push Notification service (APNs).
 
@@ -18,26 +19,34 @@ Tells the delegate that the app successfully registered with Apple Push Notifica
 optional func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)
 ```
 
+```objc
+- (void) application:(UIApplication *) application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *) deviceToken;
+```
+
 #### Discussion
 
 UIKit calls this method after it successfully registers your app with APNs.  In your implementation of this method, send the contents of the `deviceToken` parameter to the server that you use to generate remote notifications. Never cache the device token locally on the user’s device. Device tokens can change periodically, so caching the value risks sending an invalid token to your server. If the device token hasn’t changed, registering with APNs and returning the token happens quickly.
 
-Typically, this method is called only after you call the [`registerForRemoteNotifications()`](uiapplication/registerforremotenotifications().md) method of [`UIApplication`](uiapplication.md), but UIKit might call it in other rare circumstances. For example, UIKit calls the method when the user launches an app after having restored a device from data that is not the device’s backup data. In this exceptional case, the app won’t know the new device’s token until the user launches it.
+Typically, this method is called only after you call the [`registerForRemoteNotifications()`](../uiapplication/registerforremotenotifications%28%29.md) method of [`UIApplication`](../uiapplication.md), but UIKit might call it in other rare circumstances. For example, UIKit calls the method when the user launches an app after having restored a device from data that is not the device’s backup data. In this exceptional case, the app won’t know the new device’s token until the user launches it.
 
 ## Parameters
 
 - `application`: The app object that initiated the remote-notification registration process.
-- `deviceToken`: A globally unique token that identifies this device to APNs. Send this token to the server that you use to generate remote notifications. Your server must pass this token unmodified back to APNs when sending those remote notifications. APNs device tokens are of variable length. Do not hard-code their size.
+- `deviceToken`: A globally unique token that identifies this device to APNs. Send this token to the server that you use to generate remote notifications. Your server must pass this token unmodified back to APNs when sending those remote notifications.
+
+  APNs device tokens are of variable length. Do not hard-code their size.
 
 ## See Also
 
-- [func application(UIApplication, didReceiveRemoteNotification: [AnyHashable : Any])](uiapplicationdelegate/application(_:didreceiveremotenotification:).md)
+### Related Documentation
+- [func application(UIApplication, didReceiveRemoteNotification: [AnyHashable : Any])](./application%28_,didreceiveremotenotification%29.md)
   Called when your app has received a remote notification.
-- [func registerForRemoteNotifications()](uiapplication/registerforremotenotifications.md)
+- [func registerForRemoteNotifications()](../uiapplication/registerforremotenotifications%28%29.md)
   Registers to receive remote notifications through Apple Push Notification service.
-- [func application(UIApplication, didFailToRegisterForRemoteNotificationsWithError: any Error)](uiapplicationdelegate/application(_:didfailtoregisterforremotenotificationswitherror:).md)
+### Handling remote notification registration
+- [func application(UIApplication, didFailToRegisterForRemoteNotificationsWithError: any Error)](./application%28_,didfailtoregisterforremotenotificationswitherror%29.md)
   Tells the delegate when Apple Push Notification service cannot successfully complete the registration process.
-- [func application(UIApplication, didReceiveRemoteNotification: [AnyHashable : Any], fetchCompletionHandler: (UIBackgroundFetchResult) -> Void)](uiapplicationdelegate/application(_:didreceiveremotenotification:fetchcompletionhandler:).md)
+- [func application(UIApplication, didReceiveRemoteNotification: [AnyHashable : Any], fetchCompletionHandler: (UIBackgroundFetchResult) -> Void)](./application%28_,didreceiveremotenotification,fetchcompletionhandler%29.md)
   Tells the app that a remote notification arrived that indicates there is data to be fetched.
 
 

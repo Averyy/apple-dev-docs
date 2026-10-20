@@ -1,7 +1,8 @@
 # gss_acquire_cred(_:_:_:_:_:_:_:_:)
 
 **Framework**: GSS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Acquires a credential for use in establishing a security context.
 
@@ -18,36 +19,41 @@ Acquires a credential for use in establishing a security context.
 func gss_acquire_cred(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ desired_name: gss_name_t?, _ time_req: OM_uint32, _ desired_mechs: gss_OID_set?, _ cred_usage: gss_cred_usage_t, _ output_cred_handle: UnsafeMutablePointer<gss_cred_id_t?>, _ actual_mechs: UnsafeMutablePointer<gss_OID_set?>?, _ time_rec: UnsafeMutablePointer<OM_uint32>?) -> OM_uint32
 ```
 
+```c
+OM_uint32 gss_acquire_cred(OM_uint32 *minor_status, gss_name_t const desired_name, OM_uint32 time_req, gss_OID_set const desired_mechs, gss_cred_usage_t cred_usage, gss_cred_id_t*output_cred_handle, gss_OID_set*actual_mechs, OM_uint32 *time_rec);
+```
+
 ## Mentions
 
-- [Allocating and Releasing Objects](allocating-and-releasing-objects.md)
+- [Allocating and Releasing Objects](./allocating-and-releasing-objects.md)
 
 #### Return Value
 
-A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Function Status`](function-status.md) for a description of other status outputs.
+A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 
 ## Parameters
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
-- `desired_name`: The name of the principal whose credential should be acquired. Specify `GSS_C_NO_NAME` to get a generic credential or use [`gss_import_name(_:_:_:_:)`](gss_import_name(_:_:_:_:).md) to obtain a name object.
-- `time_req`: The time in seconds that the credential should remain valid. Use [`GSS_C_INDEFINITE`](gss_c_indefinite.md) to indicate the maximum allowed duration.
+- `desired_name`: The name of the principal whose credential should be acquired. Specify `GSS_C_NO_NAME` to get a generic credential or use [`gss_import_name(_:_:_:_:)`](./gss_import_name%28_,_,_,_%29.md) to obtain a name object.
+- `time_req`: The time in seconds that the credential should remain valid. Use [`GSS_C_INDEFINITE`](./gss_c_indefinite.md) to indicate the maximum allowed duration.
 - `desired_mechs`: The set of underlying security mechanisms to use with the credential. Use `GSS_C_NO_OID_SET` to get the default set.
-- `cred_usage`: A flag that indicates how the credential will be used. Specify [`GSS_C_INITIATE`](gss_c_initiate.md) for context initiation, [`GSS_C_ACCEPT`](gss_c_accept.md) for context acceptance, or [`GSS_C_BOTH`](gss_c_both.md) for both.
-- `output_cred_handle`: A pointer the function uses to return the credential. Release the credential’s memory with [`gss_release_cred(_:_:)`](gss_release_cred(_:_:).md) when you are done with it.
-- `actual_mechs`: A pointer the function uses to return the actual mechanisms used by the credential. Set to `NULL` to ignore this output. If you do receive a set of mechanisms, use [`gss_release_oid_set(_:_:)`](gss_release_oid_set(_:_:).md) to release its memory when you are done with it.
+- `cred_usage`: A flag that indicates how the credential will be used. Specify [`GSS_C_INITIATE`](./gss_c_initiate.md) for context initiation, [`GSS_C_ACCEPT`](./gss_c_accept.md) for context acceptance, or [`GSS_C_BOTH`](./gss_c_both.md) for both.
+- `output_cred_handle`: A pointer the function uses to return the credential. Release the credential’s memory with [`gss_release_cred(_:_:)`](./gss_release_cred%28_,_%29.md) when you are done with it.
+- `actual_mechs`: A pointer the function uses to return the actual mechanisms used by the credential. Set to `NULL` to ignore this output. If you do receive a set of mechanisms, use [`gss_release_oid_set(_:_:)`](./gss_release_oid_set%28_,_%29.md) to release its memory when you are done with it.
 - `time_rec`: A pointer the function uses to return the actual number of seconds for which the credential is valid. Set to `NULL` to ignore this output.
 
 ## See Also
 
-- [func gss_aapl_initial_cred(gss_name_t, gss_const_OID, CFDictionary?, UnsafeMutablePointer<gss_cred_id_t?>, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> OM_uint32](gss_aapl_initial_cred(_:_:_:_:_:).md)
+### Acquisition
+- [func gss_aapl_initial_cred(gss_name_t, gss_const_OID, CFDictionary?, UnsafeMutablePointer<gss_cred_id_t?>, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> OM_uint32](./gss_aapl_initial_cred%28_,_,_,_,_%29.md)
   Acquires a new credential using a password or certificate.
-- [func gss_acquire_cred_with_password(UnsafeMutablePointer<OM_uint32>, gss_name_t, gss_buffer_t, OM_uint32, gss_OID_set?, gss_cred_usage_t, UnsafeMutablePointer<gss_cred_id_t?>, UnsafeMutablePointer<gss_OID_set?>?, UnsafeMutablePointer<OM_uint32>?) -> OM_uint32](gss_acquire_cred_with_password(_:_:_:_:_:_:_:_:_:).md)
+- [func gss_acquire_cred_with_password(UnsafeMutablePointer<OM_uint32>, gss_name_t, gss_buffer_t, OM_uint32, gss_OID_set?, gss_cred_usage_t, UnsafeMutablePointer<gss_cred_id_t?>, UnsafeMutablePointer<gss_OID_set?>?, UnsafeMutablePointer<OM_uint32>?) -> OM_uint32](./gss_acquire_cred_with_password%28_,_,_,_,_,_,_,_,_%29.md)
   Acquires a credential for use in establishing a security context using a password.
-- [func GSSCredentialCopyUUID(gss_cred_id_t) -> Unmanaged<CFUUID>?](gsscredentialcopyuuid(_:).md)
+- [func GSSCredentialCopyUUID(gss_cred_id_t) -> Unmanaged<CFUUID>?](./gsscredentialcopyuuid%28_%29.md)
   Returns a copy of the universally unique identifier corresponding to a GSS credential.
-- [func GSSCredentialCopyName(gss_cred_id_t) -> gss_name_t?](gsscredentialcopyname(_:).md)
+- [func GSSCredentialCopyName(gss_cred_id_t) -> gss_name_t?](./gsscredentialcopyname%28_%29.md)
   Returns the name describing the credential.
-- [func gss_pseudo_random(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, Int32, gss_buffer_t, Int, gss_buffer_t) -> OM_uint32](gss_pseudo_random(_:_:_:_:_:_:).md)
+- [func gss_pseudo_random(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, Int32, gss_buffer_t, Int, gss_buffer_t) -> OM_uint32](./gss_pseudo_random%28_,_,_,_,_,_%29.md)
   Returns a pseudo-random byte stream for keying.
 
 

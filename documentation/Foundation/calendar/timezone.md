@@ -1,7 +1,8 @@
 # timeZone
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time zone of the calendar.
 
@@ -22,21 +23,22 @@ var timeZone: TimeZone { get set }
 
 ## See Also
 
-- [var identifier: Calendar.Identifier](calendar/identifier-swift.property.md)
+### Getting Calendar Information
+- [var identifier: Calendar.Identifier](./identifier-swift.property.md)
   The identifier of the calendar.
-- [var locale: Locale?](calendar/locale.md)
+- [var locale: Locale?](./locale.md)
   The locale of the calendar.
-- [var firstWeekday: Int](calendar/firstweekday.md)
+- [var firstWeekday: Int](./firstweekday.md)
   The first day of the week for the calendar.
-- [var minimumDaysInFirstWeek: Int](calendar/minimumdaysinfirstweek.md)
+- [var minimumDaysInFirstWeek: Int](./minimumdaysinfirstweek.md)
   The number of minimum days in the first week.
-- [func maximumRange(of: Calendar.Component) -> Range<Int>?](calendar/maximumrange(of:).md)
+- [func maximumRange(of: Calendar.Component) -> Range<Int>?](./maximumrange%28of%29.md)
   The maximum range limits of the values that a given component can take on.
-- [func minimumRange(of: Calendar.Component) -> Range<Int>?](calendar/minimumrange(of:).md)
+- [func minimumRange(of: Calendar.Component) -> Range<Int>?](./minimumrange%28of%29.md)
   Returns the minimum range limits of the values that a given component can take on.
-- [func ordinality(of: Calendar.Component, in: Calendar.Component, for: Date) -> Int?](calendar/ordinality(of:in:for:).md)
+- [func ordinality(of: Calendar.Component, in: Calendar.Component, for: Date) -> Int?](./ordinality%28of,in,for%29.md)
   Returns, for a given absolute time, the ordinal number of a smaller calendar component (such as a day) within a specified larger calendar component (such as a week).
-- [func range(of: Calendar.Component, in: Calendar.Component, for: Date) -> Range<Int>?](calendar/range(of:in:for:).md)
+- [func range(of: Calendar.Component, in: Calendar.Component, for: Date) -> Range<Int>?](./range%28of,in,for%29.md)
   Returns the range of absolute time values that a smaller calendar component (such as a day) can take on in a larger calendar component (such as a month) that includes a specified absolute time.
 
 

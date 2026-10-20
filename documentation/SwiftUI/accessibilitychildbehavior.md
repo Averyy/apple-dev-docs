@@ -1,7 +1,8 @@
 # AccessibilityChildBehavior
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Defines the behavior for the child elements of the new parent element.
 
@@ -23,26 +24,27 @@ struct AccessibilityChildBehavior
 ## Topics
 
 ### Getting behaviors
-- [static let combine: AccessibilityChildBehavior](accessibilitychildbehavior/combine.md)
+- [static let combine: AccessibilityChildBehavior](./accessibilitychildbehavior/combine.md)
   Any child accessibility element’s properties are merged into the new accessibility element.
-- [static let contain: AccessibilityChildBehavior](accessibilitychildbehavior/contain.md)
+- [static let contain: AccessibilityChildBehavior](./accessibilitychildbehavior/contain.md)
   Any child accessibility elements become children of the new accessibility element.
-- [static let ignore: AccessibilityChildBehavior](accessibilitychildbehavior/ignore.md)
+- [static let ignore: AccessibilityChildBehavior](./accessibilitychildbehavior/ignore.md)
   Any child accessibility elements become hidden.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [func accessibilityElement(children: AccessibilityChildBehavior) -> some View](view/accessibilityelement(children:).md)
-  Creates a new accessibility element, or modifies the [`AccessibilityChildBehavior`](accessibilitychildbehavior.md) of the existing accessibility element.
-- [func accessibilityChildren<V>(children: () -> V) -> some View](view/accessibilitychildren(children:).md)
+### Creating accessible elements
+- [func accessibilityElement(children: AccessibilityChildBehavior) -> some View](./view/accessibilityelement%28children%29.md)
+  Creates a new accessibility element, or modifies the [`AccessibilityChildBehavior`](./accessibilitychildbehavior.md) of the existing accessibility element.
+- [func accessibilityChildren<V>(children: () -> V) -> some View](./view/accessibilitychildren%28children%29.md)
   Replaces the existing accessibility element’s children with one or more new synthetic accessibility elements.
-- [func accessibilityRepresentation<V>(representation: () -> V) -> some View](view/accessibilityrepresentation(representation:).md)
+- [func accessibilityRepresentation<V>(representation: () -> V) -> some View](./view/accessibilityrepresentation%28representation%29.md)
   Replaces one or more accessibility elements for this view with new accessibility elements.
 
 

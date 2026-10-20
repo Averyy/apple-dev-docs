@@ -1,7 +1,8 @@
 # AccessibilityEvents.Decrement
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An accessibility event for decrementing an accessibility element.
 
@@ -11,7 +12,7 @@ An accessibility event for decrementing an accessibility element.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,17 +23,17 @@ struct Decrement
 ## Topics
 
 ### Initializers
-- [init(entity: Entity)](accessibilityevents/decrement/init(entity:).md)
+- [init(entity: Entity)](./decrement/init%28entity%29.md)
 ### Instance Properties
-- [var entity: Entity](accessibilityevents/decrement/entity.md)
+- [var entity: Entity](./decrement/entity.md)
   The receiver of the action.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

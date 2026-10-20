@@ -1,7 +1,8 @@
 # triangle(at:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The triangle definition at the specified index.
 
@@ -19,25 +20,30 @@ The triangle definition at the specified index.
 func triangle(at index: Int) -> GKTriangle
 ```
 
+```objc
+- (GKTriangle) triangleAtIndex:(NSUInteger) index;
+```
+
 #### Return Value
 
 A structure describing the specified triangle.
 
 #### Discussion
 
-This method provides valid results only after calling the [`triangulate()`](gkmeshgraph/triangulate().md) to create a mesh around the current configuration of obstacles. The information this method provides can be useful for drawing your own overlay UI to debug the graphs you create.
+This method provides valid results only after calling the [`triangulate()`](./triangulate%28%29.md) to create a mesh around the current configuration of obstacles. The information this method provides can be useful for drawing your own overlay UI to debug the graphs you create.
 
 ## Parameters
 
-- `index`: An index identifying the triangle. Must be less than the value of the [`triangleCount`](gkmeshgraph/trianglecount.md) property.
+- `index`: An index identifying the triangle. Must be less than the value of the [`triangleCount`](./trianglecount.md) property.
 
 ## See Also
 
-- [func triangulate()](gkmeshgraph/triangulate.md)
+### Managing the Mesh
+- [func triangulate()](./triangulate%28%29.md)
   Creates or updates the graph with a network of nodes that describes the open space around its obstacles.
-- [var triangulationMode: GKMeshGraphTriangulationMode](gkmeshgraph/triangulationmode.md)
+- [var triangulationMode: GKMeshGraphTriangulationMode](./triangulationmode.md)
   A set of options for how to place graph nodes when triangulating the graph.
-- [var triangleCount: Int](gkmeshgraph/trianglecount.md)
+- [var triangleCount: Int](./trianglecount.md)
   The number of triangles in the mesh.
 
 

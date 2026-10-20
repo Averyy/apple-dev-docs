@@ -1,22 +1,29 @@
 # isReadyForMoreMediaData
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the readiness of the receiver to accept more sample buffers.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 27.0
+- iPadOS 11.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.13+ - Deprecated in 27.0
+- tvOS 11.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Attach renderer to a render synchronizer with sampleBufferReceiver(adding:) and use the receiver's enqueue(_:) async method on its own detached Task to suspend until it is ready for more media data instead
 
 ## Declaration
 
 ```swift
 var isReadyForMoreMediaData: Bool { get }
+```
+
+```objc
+@property (readonly, getter=isReadyForMoreMediaData) BOOL readyForMoreMediaData;
 ```
 
 #### Discussion

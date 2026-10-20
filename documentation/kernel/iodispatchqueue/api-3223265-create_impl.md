@@ -1,14 +1,15 @@
 # Create_Impl
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t Create_Impl(const char *name, uint64_t options, uint64_t priority, IODispatchQueue **queue);
 ```
 

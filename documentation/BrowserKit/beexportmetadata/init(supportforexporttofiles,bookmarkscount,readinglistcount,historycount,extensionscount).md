@@ -1,7 +1,8 @@
 # init(supportForExportToFiles:bookmarksCount:readingListCount:historyCount:extensionsCount:)
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes export metadata with file support information and data counts.
 
@@ -15,6 +16,10 @@ Initializes export metadata with file support information and data counts.
 init(supportForExportToFiles supportExportToFiles: Bool, bookmarksCount: Int, readingListCount: Int, historyCount: Int, extensionsCount: Int)
 ```
 
+```objc
+- (instancetype) initWithSupportForExportToFiles:(BOOL) supportExportToFiles bookmarksCount:(NSInteger) bookmarksCount readingListCount:(NSInteger) readingListCount historyCount:(NSInteger) historyCount extensionsCount:(NSInteger) extensionsCount;
+```
+
 ## Parameters
 
 - `supportExportToFiles`: A Boolean value that determines whether the sheet offers the option to export the data to files.
@@ -25,7 +30,8 @@ init(supportForExportToFiles supportExportToFiles: Bool, bookmarksCount: Int, re
 
 ## See Also
 
-- [init?(coder: NSCoder)](beexportmetadata/init(coder:).md)
+### Creating export metadata
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Initializes export metadata from a decoder.
 
 

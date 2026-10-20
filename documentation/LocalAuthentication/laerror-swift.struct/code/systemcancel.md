@@ -1,7 +1,8 @@
 # LAError.Code.systemCancel
 
 **Framework**: Local Authentication  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system canceled authentication.
 
@@ -19,15 +20,20 @@ The system canceled authentication.
 case systemCancel
 ```
 
+```c
+LAErrorSystemCancel
+```
+
 #### Discussion
 
 This might happen if another app comes to the foreground while your app displays the authentication dialog.
 
 ## See Also
 
-- [LAError.Code.appCancel](laerror-swift.struct/code/appcancel.md)
+### Cancellation
+- [LAError.Code.appCancel](./appcancel.md)
   The app canceled authentication.
-- [LAError.Code.userCancel](laerror-swift.struct/code/usercancel.md)
+- [LAError.Code.userCancel](./usercancel.md)
   The user tapped the cancel button in the authentication dialog.
 
 

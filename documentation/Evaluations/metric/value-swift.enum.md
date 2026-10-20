@@ -1,7 +1,8 @@
 # Metric.Value
 
 **Framework**: Evaluations  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A metric result value.
 
@@ -23,31 +24,32 @@ enum Value
 ## Topics
 
 ### Enumeration Cases
-- [Metric.Value.failing](metric/value-swift.enum/failing.md)
+- [Metric.Value.failing](./value-swift.enum/failing.md)
   A failing result.
-- [Metric.Value.ignore](metric/value-swift.enum/ignore.md)
+- [Metric.Value.ignore](./value-swift.enum/ignore.md)
   The metric doesn’t apply to this sample and aggregators skip it.
-- [Metric.Value.passing](metric/value-swift.enum/passing.md)
+- [Metric.Value.passing](./value-swift.enum/passing.md)
   A passing result.
-- [Metric.Value.scoring(_:)](metric/value-swift.enum/scoring(_:).md)
+- [Metric.Value.scoring(_:)](./value-swift.enum/scoring%28_%29.md)
   A numeric result.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let name: String](metric/name.md)
+### Inspecting a result
+- [let name: String](./name.md)
   The name of the metric, used as the DataFrame column name.
-- [let value: Metric.Value](metric/value-swift.property.md)
+- [let value: Metric.Value](./value-swift.property.md)
   The result value of this metric.
-- [var doubleValue: Double?](metric/doublevalue.md)
+- [var doubleValue: Double?](./doublevalue.md)
   The numeric value of this metric.
-- [let rationale: String?](metric/rationale.md)
+- [let rationale: String?](./rationale.md)
   An optional rationale describing the result.
 
 

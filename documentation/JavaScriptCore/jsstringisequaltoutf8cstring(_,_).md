@@ -1,7 +1,8 @@
 # JSStringIsEqualToUTF8CString(_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Tests whether a JavaScript string matches a null-terminated UTF-8 string.
 
@@ -19,18 +20,23 @@ Tests whether a JavaScript string matches a null-terminated UTF-8 string.
 func JSStringIsEqualToUTF8CString(_ a: JSStringRef!, _ b: UnsafePointer<CChar>!) -> Bool
 ```
 
+```c
+bool JSStringIsEqualToUTF8CString(JSStringRef a, const char *b);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the two strings match; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../Swift/true.md) if the two strings match; otherwise, [`false`](../Swift/false.md).
 
 ## Parameters
 
-- `a`: The [`JSStringRef`](jsstringref.md) to test.
+- `a`: The [`JSStringRef`](./jsstringref.md) to test.
 - `b`: The null-terminated UTF-8 string to test.
 
 ## See Also
 
-- [func JSStringIsEqual(JSStringRef!, JSStringRef!) -> Bool](jsstringisequal(_:_:).md)
+### Comparing JavaScript Strings
+- [func JSStringIsEqual(JSStringRef!, JSStringRef!) -> Bool](./jsstringisequal%28_,_%29.md)
   Tests whether two JavaScript strings match.
 
 

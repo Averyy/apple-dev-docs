@@ -1,7 +1,8 @@
 # unapprovedCount
 
 **Framework**: ExtensionFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of identity entries that someone hasn’t yet enabled.
 
@@ -22,13 +23,14 @@ var unapprovedCount: Int { get }
 
 #### Discussion
 
-For app extensions that reside outside the host app, a person must approve the use of an app extension before the host app can use it. This property reflects the number of app extensions currently waiting for approval. If the value of this property is greater than zero, consider presenting [`EXAppExtensionBrowserViewController`](https://developer.apple.com/documentation/extensionkit/exappextensionbrowserviewcontroller) to display the extension enablement UI.
+For app extensions that reside outside the host app, a person must approve the use of an app extension before the host app can use it. This property reflects the number of app extensions currently waiting for approval. If the value of this property is greater than zero, consider presenting [`EXAppExtensionBrowserViewController`](../../../../ExtensionKit/exappextensionbrowserviewcontroller.md) to display the extension enablement UI.
 
 ## See Also
 
-- [var identities: [AppExtensionIdentity]](appextensionpoint/monitor/state-swift.struct/identities.md)
+### Getting the app extension status
+- [var identities: [AppExtensionIdentity]](./identities.md)
   The set of approved and enabled app extensions.
-- [var disabledCount: Int](appextensionpoint/monitor/state-swift.struct/disabledcount.md)
+- [var disabledCount: Int](./disabledcount.md)
   The number of app extensions that someone disabled.
 
 

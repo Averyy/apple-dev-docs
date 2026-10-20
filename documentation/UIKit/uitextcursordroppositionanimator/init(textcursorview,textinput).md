@@ -1,7 +1,8 @@
 # init(textCursorView:textInput:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an animator for the given text cursor view implementation, and the document object that implements the UITextInput protocol.
 
@@ -16,6 +17,10 @@ Creates an animator for the given text cursor view implementation, and the docum
 
 ```swift
 init!(textCursorView cursorView: (any UIView & UITextCursorView)!, textInput: (any UIView & UITextInput)!)
+```
+
+```objc
+- (instancetype) initWithTextCursorView:(UIView<UITextCursorView> *) cursorView textInput:(UIView<UITextInput> *) textInput;
 ```
 
 

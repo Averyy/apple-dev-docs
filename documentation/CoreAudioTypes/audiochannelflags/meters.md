@@ -1,7 +1,8 @@
 # meters
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that indicates that unit values are in meters.
 
@@ -20,11 +21,16 @@ A flag that indicates that unit values are in meters.
 static var meters: AudioChannelFlags { get }
 ```
 
+```c
+kAudioChannelFlags_Meters
+```
+
 ## See Also
 
-- [static var rectangularCoordinates: AudioChannelFlags](audiochannelflags/rectangularcoordinates.md)
+### Flags
+- [static var rectangularCoordinates: AudioChannelFlags](./rectangularcoordinates.md)
   A flag that indicates the channel uses the speaker position’s cartesian coordinates.
-- [static var sphericalCoordinates: AudioChannelFlags](audiochannelflags/sphericalcoordinates.md)
+- [static var sphericalCoordinates: AudioChannelFlags](./sphericalcoordinates.md)
   A flag that indicates the channel uses the speaker position’s spherical coordinates.
 
 

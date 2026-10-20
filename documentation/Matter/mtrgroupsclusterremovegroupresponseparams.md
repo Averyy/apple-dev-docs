@@ -1,7 +1,8 @@
 # MTRGroupsClusterRemoveGroupResponseParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,28 +19,32 @@
 class MTRGroupsClusterRemoveGroupResponseParams
 ```
 
+```objc
+@interface MTRGroupsClusterRemoveGroupResponseParams : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(responseValue: [String : Any]) throws](mtrgroupsclusterremovegroupresponseparams/init(responsevalue:).md)
+- [init(responseValue: [String : Any]) throws](./mtrgroupsclusterremovegroupresponseparams/init%28responsevalue%29.md)
 ### Instance Properties
-- [var groupID: NSNumber](mtrgroupsclusterremovegroupresponseparams/groupid-5taii.md)
-- [var groupId: NSNumber](mtrgroupsclusterremovegroupresponseparams/groupid-5tahm.md)
-- [var status: NSNumber](mtrgroupsclusterremovegroupresponseparams/status.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrgroupsclusterremovegroupresponseparams/timedinvoketimeoutms.md)
+- [var groupID: NSNumber](./mtrgroupsclusterremovegroupresponseparams/groupid-5taii.md)
+- [var groupId: NSNumber](./mtrgroupsclusterremovegroupresponseparams/groupid-5tahm.md)
+- [var status: NSNumber](./mtrgroupsclusterremovegroupresponseparams/status.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrgroupsclusterremovegroupresponseparams/timedinvoketimeoutms.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

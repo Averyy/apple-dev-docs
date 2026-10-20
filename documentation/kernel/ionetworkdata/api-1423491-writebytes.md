@@ -1,14 +1,15 @@
 # writeBytes
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool writeBytes(const void *srcBuffer, UInt32 srcBufferSize, UInt32 writeOffset);
 ```
 

@@ -1,7 +1,8 @@
 # render(withViewport:renderCommandEncoder:renderPassDescriptor:commandQueue:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 func render(withViewport viewport: CGRect, renderCommandEncoder: any MTLRenderCommandEncoder, renderPassDescriptor: MTLRenderPassDescriptor, commandQueue: any MTLCommandQueue)
 ```
 
+```objc
+- (void) renderWithViewport:(CGRect) viewport renderCommandEncoder:(id<MTLRenderCommandEncoder>) renderCommandEncoder renderPassDescriptor:(MTLRenderPassDescriptor *) renderPassDescriptor commandQueue:(id<MTLCommandQueue>) commandQueue;
+```
+
 ## See Also
 
-- [func render(withViewport: CGRect, commandBuffer: any MTLCommandBuffer, renderPassDescriptor: MTLRenderPassDescriptor)](skrenderer/render(withviewport:commandbuffer:renderpassdescriptor:).md)
+### Rendering the Scene
+- [func render(withViewport: CGRect, commandBuffer: any MTLCommandBuffer, renderPassDescriptor: MTLRenderPassDescriptor)](./render%28withviewport,commandbuffer,renderpassdescriptor%29.md)
 
 
 ---

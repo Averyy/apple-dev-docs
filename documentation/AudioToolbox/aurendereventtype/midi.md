@@ -1,17 +1,18 @@
 # AURenderEventType.MIDI
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A MIDI event.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ A MIDI event.
 case MIDI
 ```
 
+```c
+AURenderEventMIDI
+```
+
 ## See Also
 
-- [AURenderEventType.midiSysEx](aurendereventtype/midisysex.md)
+### Constants
+- [AURenderEventType.midiSysEx](./midisysex.md)
   A system-exclusive MIDI event.
-- [AURenderEventType.parameter](aurendereventtype/parameter.md)
+- [AURenderEventType.parameter](./parameter.md)
   A parameter event.
-- [AURenderEventType.parameterRamp](aurendereventtype/parameterramp.md)
+- [AURenderEventType.parameterRamp](./parameterramp.md)
   A ramped parameter event.
 
 

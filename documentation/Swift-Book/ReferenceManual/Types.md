@@ -23,7 +23,7 @@ defined and implemented in the Swift standard library using structures.
 Because they're named types,
 you can extend their behavior to suit the needs of your program,
 using an extension declaration,
-discussed in [Extensions](Extensions.md) and [Extension Declaration](Declarations.md#Extension-Declaration).
+discussed in [Extensions](../LanguageGuide/Extensions.md) and [Extension Declaration](Declarations.md#Extension-Declaration).
 
 A *compound type* is a type without a name, defined in the Swift language itself.
 There are two compound types: function types and tuple types.
@@ -151,7 +151,7 @@ to enable the function to return a single tuple containing multiple values.
 You can also name the elements of a tuple type and use those names to refer to
 the values of the individual elements. An element name consists of an identifier
 followed immediately by a colon (:). For an example that demonstrates both of
-these features, see [Functions with Multiple Return Values](Functions.md#Functions-with-Multiple-Return-Values).
+these features, see [Functions with Multiple Return Values](../LanguageGuide/Functions.md#Functions-with-Multiple-Return-Values).
 
 When an element of a tuple type has a name,
 that name is part of the type.
@@ -210,7 +210,7 @@ to defer the evaluation of an expression
 without needing to write an explicit closure
 when you call the function.
 For an example of an autoclosure function type parameter,
-see [Autoclosures](Closures.md#Autoclosures).
+see [Autoclosures](../LanguageGuide/Closures.md#Autoclosures).
 
 A function type can have variadic parameters in its *parameter type*.
 Syntactically,
@@ -218,11 +218,11 @@ a variadic parameter consists of a base type name followed immediately by three 
 as in `Int...`. A variadic parameter is treated as an array that contains elements
 of the base type name. For instance, the variadic parameter `Int...` is treated
 as `[Int]`. For an example that uses a variadic parameter,
-see [Variadic Parameters](Functions.md#Variadic-Parameters).
+see [Variadic Parameters](../LanguageGuide/Functions.md#Variadic-Parameters).
 
 To specify an in-out parameter, prefix the parameter type with the `inout` keyword.
 You can't mark a variadic parameter or a return type with the `inout` keyword.
-In-out parameters are discussed in [In Out Parameters](Functions.md#In-Out-Parameters).
+In-out parameters are discussed in [In-Out Parameters](../LanguageGuide/Functions.md#In-Out-Parameters).
 
 If a function type has only one parameter
 and that parameter's type is a tuple type,
@@ -509,7 +509,7 @@ If you need to avoid this restriction, mark one of the parameters as escaping,
 or temporarily convert one of the nonescaping function parameters to an escaping function
 by using the `withoutActuallyEscaping(_:do:)` function.
 For information about avoiding conflicting access to memory,
-see [Memory Safety](MemorySafety.md).
+see [Memory Safety](../LanguageGuide/MemorySafety.md).
 
 > Grammar of a function type:
 >
@@ -597,7 +597,7 @@ the example above, `array3D[0]` refers to `[[1, 2], [3, 4]]`,
 `array3D[0][1]` refers to `[3, 4]`, and `array3D[0][1][1]` refers to the value 4.
 
 For a detailed discussion of the Swift standard library `Array` type,
-see [Arrays](CollectionTypes.md#Arrays).
+see [Arrays](../LanguageGuide/CollectionTypes.md#Arrays).
 
 > Grammar of an array type:
 >
@@ -648,7 +648,7 @@ The key type of a dictionary must conform to the Swift standard library `Hashabl
 -->
 
 For a detailed discussion of the Swift standard library `Dictionary` type,
-see [Dictionaries](CollectionTypes.md#Dictionaries).
+see [Dictionaries](../LanguageGuide/CollectionTypes.md#Dictionaries).
 
 > Grammar of a dictionary type:
 >
@@ -728,7 +728,7 @@ operation on an optional expression. If the value is `nil`,
 no operation is performed and therefore no runtime error is produced.
 
 For more information and to see examples that show how to use optional types,
-see [Optionals](TheBasics.md#Optionals).
+see [Optionals](../LanguageGuide/TheBasics.md#Optionals).
 
 > Grammar of an optional type:
 >
@@ -785,7 +785,7 @@ If the value is `nil`,
 no operation is performed and therefore no runtime error is produced.
 
 For more information about implicitly unwrapped optional types,
-see [Implicitly Unwrapped Optionals](TheBasics.md#Implicitly-Unwrapped-Optionals).
+see [Implicitly Unwrapped Optionals](../LanguageGuide/TheBasics.md#Implicitly-Unwrapped-Optionals).
 
 > Grammar of an implicitly unwrapped optional type:
 >
@@ -1184,7 +1184,7 @@ if let first = mixed.first as? String {
   ```
 -->
 
-For more information about casting, see [Type Casting](TypeCasting.md).
+For more information about casting, see [Type Casting](../LanguageGuide/TypeCasting.md).
 
 The `AnyObject` protocol is similar to the `Any` type.
 All classes implicitly conform to `AnyObject`.
@@ -1192,7 +1192,7 @@ Unlike `Any`,
 which is defined by the language,
 `AnyObject` is defined by the Swift standard library.
 For more information, see
-[Class Only Protocols](Protocols.md#Class-Only-Protocols)
+[Class-Only Protocols](../LanguageGuide/Protocols.md#Class-Only-Protocols)
 and [`AnyObject`](https://developer.apple.com/documentation/swift/anyobject).
 
 > Grammar of an Any type:
@@ -1335,7 +1335,7 @@ followed by any number of protocols the class must conform to.
 If the class doesn't inherit from another class,
 the list can begin with a protocol instead.
 For an extended discussion and several examples of class inheritance,
-see [Inheritance](Inheritance.md).
+see [Inheritance](../LanguageGuide/Inheritance.md).
 
 Other named types can only inherit from or conform to a list of protocols.
 Protocol types can inherit from any number of other protocols.
@@ -1344,13 +1344,13 @@ the set of requirements from those other protocols are aggregated together,
 and any type that inherits from the current protocol must conform to all of those requirements.
 Writing a tilde (`~`) in front of a protocol name in this list
 suppresses an implicit conformance to that protocol,
-as described in [Implicit Conformance to a Protocol](Protocols.md#Implicit-Conformance-to-a-Protocol).
+as described in [Implicit Conformance to a Protocol](../LanguageGuide/Protocols.md#Implicit-Conformance-to-a-Protocol).
 
 A type inheritance clause in an enumeration definition can be either a list of protocols,
 or in the case of an enumeration that assigns raw values to its cases,
 a single, named type that specifies the type of those raw values.
 For an example of an enumeration definition that uses a type inheritance clause
-to specify the type of its raw values, see [Raw Values](Enumerations.md#Raw-Values).
+to specify the type of its raw values, see [Raw Values](../LanguageGuide/Enumerations.md#Raw-Values).
 
 > Grammar of a type inheritance clause:
 >

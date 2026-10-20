@@ -1,14 +1,15 @@
 # GetPortStatus
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 kern_return_t GetPortStatus(uint32_t *portStatus, OSDispatchMethod supermethod);
 ```
 

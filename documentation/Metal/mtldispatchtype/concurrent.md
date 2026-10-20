@@ -1,7 +1,8 @@
 # MTLDispatchType.concurrent
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sets a command encoder to dispatch encoded commands concurrently during your pass.
 
@@ -19,13 +20,18 @@ Sets a command encoder to dispatch encoded commands concurrently during your pas
 case concurrent
 ```
 
+```c
+MTLDispatchTypeConcurrent
+```
+
 #### Discussion
 
-If you encode multiple commands that access a single resource, you’re responsible for synchronizing the memory operations to that resource. For more information, see [`Resource synchronization`](resource-synchronization.md).
+If you encode multiple commands that access a single resource, you’re responsible for synchronizing the memory operations to that resource. For more information, see [Resource synchronization](../resource-synchronization.md).
 
 ## See Also
 
-- [MTLDispatchType.serial](mtldispatchtype/serial.md)
+### Execution dispatch types
+- [MTLDispatchType.serial](./serial.md)
   Sets a command encoder to dispatch encoded commands serially during your pass.
 
 

@@ -1,7 +1,8 @@
 # init(displayName:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an anonymous, in-memory layer.
 
@@ -23,7 +24,7 @@ init(displayName: String? = nil) throws
 
 Anonymous layers have no file backing.
 
-> **Note**: An error if the layer cannot be created.
+> **Throws**: An error if the layer cannot be created.
 
 ## Parameters
 

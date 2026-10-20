@@ -1,7 +1,8 @@
 # UIUpdateLink
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object you use to observe, participate in, and affect the UI update process.
 
@@ -19,18 +20,22 @@ An object you use to observe, participate in, and affect the UI update process.
 class UIUpdateLink
 ```
 
+```objc
+@interface UIUpdateLink : NSObject
+```
+
 #### Overview
 
 With a *UI update link*, you can follow the progress of each UI update and express preferences about how those updates happen. Use a UI update link when you need precise and predictable control over the UI update process.
 
-There are multiple use cases for [`UIUpdateLink`](uiupdatelink.md), including:
+There are multiple use cases for [`UIUpdateLink`](./uiupdatelink.md), including:
 
-- To monitor when UI updates occur and synchronize your drawing code with each update, similar to how you might use [`CADisplayLink`](https://developer.apple.com/documentation/quartzcore/cadisplaylink).
+- To monitor when UI updates occur and synchronize your drawing code with each update, similar to how you might use [`CADisplayLink`](../QuartzCore/cadisplaylink.md).
 - To influence how UI updates occur by expressing preferences to the system, such as requesting continuous UI updates, immediate rendering of frames, and more.
 - To specify precisely at which point in the UI update process to perform certain actions.
 - To implement support for low-latency input, such as a custom low-latency drawing implementation for a pencil-drawing app.
 
-To create a UI update link, you associate it with a window or a view. The UI update link activates automatically when you add the view to a visible window, and deactivates when you remove the view from it. If the view moves from one display to another, [`UIUpdateLink`](uiupdatelink.md) adjusts to the timing of the new display automatically.
+To create a UI update link, you associate it with a window or a view. The UI update link activates automatically when you add the view to a visible window, and deactivates when you remove the view from it. If the view moves from one display to another, [`UIUpdateLink`](./uiupdatelink.md) adjusts to the timing of the new display automatically.
 
 ```swift
 // Monitor UI updates for a specific view.
@@ -56,70 +61,71 @@ updateLink.addAction(to: .afterUpdateScheduled) { link, info in
 }
 ```
 
-> ❗ **Important**:  Only use [`UIUpdateLink`](uiupdatelink.md) from the main thread.
+> ❗ **Important**:  Only use [`UIUpdateLink`](./uiupdatelink.md) from the main thread.
 
 ## Topics
 
 ### Creating a UI update link
-- [init(view: UIView)](uiupdatelink/init(view:).md)
+- [init(view: UIView)](./uiupdatelink/init%28view%29.md)
   Creates a UI update link for the specified view.
-- [init(view: UIView, actionHandler: (UIUpdateLink, UIUpdateInfo) -> Void)](uiupdatelink/init(view:actionhandler:).md)
+- [init(view: UIView, actionHandler: (UIUpdateLink, UIUpdateInfo) -> Void)](./uiupdatelink/init%28view,actionhandler%29.md)
   Creates a UI update link for the specified view using the specified action handler.
-- [init(view: UIView, actionTarget: Any, selector: Selector)](uiupdatelink/init(view:actiontarget:selector:).md)
+- [init(view: UIView, actionTarget: Any, selector: Selector)](./uiupdatelink/init%28view,actiontarget,selector%29.md)
   Creates a UI update link for the specified view using the specified target and action.
-- [init(windowScene: UIWindowScene)](uiupdatelink/init(windowscene:).md)
+- [init(windowScene: UIWindowScene)](./uiupdatelink/init%28windowscene%29.md)
   Creates a UI update link for the specified window.
-- [init(windowScene: UIWindowScene, actionHandler: (UIUpdateLink, UIUpdateInfo) -> Void)](uiupdatelink/init(windowscene:actionhandler:).md)
+- [init(windowScene: UIWindowScene, actionHandler: (UIUpdateLink, UIUpdateInfo) -> Void)](./uiupdatelink/init%28windowscene,actionhandler%29.md)
   Creates a UI update link for the specified window using the specified action handler.
-- [init(windowScene: UIWindowScene, actionTarget: Any, selector: Selector)](uiupdatelink/init(windowscene:actiontarget:selector:).md)
+- [init(windowScene: UIWindowScene, actionTarget: Any, selector: Selector)](./uiupdatelink/init%28windowscene,actiontarget,selector%29.md)
   Creates a UI update link for the specified window using the specified target and action.
 ### Participating in UI updates
-- [var isEnabled: Bool](uiupdatelink/isenabled.md)
+- [var isEnabled: Bool](./uiupdatelink/isenabled.md)
   A Boolean value that determines whether the UI update link is monitoring UI updates.
 ### Configuring preferences
-- [var requiresContinuousUpdates: Bool](uiupdatelink/requirescontinuousupdates.md)
+- [var requiresContinuousUpdates: Bool](./uiupdatelink/requirescontinuousupdates.md)
   A Boolean value that determines whether the UI update link needs continuous UI updates.
-- [var wantsLowLatencyEventDispatch: Bool](uiupdatelink/wantslowlatencyeventdispatch.md)
+- [var wantsLowLatencyEventDispatch: Bool](./uiupdatelink/wantslowlatencyeventdispatch.md)
   A Boolean value that determines whether the UI update link requests dispatch of low-latency eligible events.
-- [var wantsImmediatePresentation: Bool](uiupdatelink/wantsimmediatepresentation.md)
+- [var wantsImmediatePresentation: Bool](./uiupdatelink/wantsimmediatepresentation.md)
   A Boolean value that determines whether the UI update link requests immediate frame presentation.
-- [var preferredFrameRateRange: CAFrameRateRange](uiupdatelink/preferredframeraterange.md)
+- [var preferredFrameRateRange: CAFrameRateRange](./uiupdatelink/preferredframeraterange.md)
   The range of frame rates the UI update link prefers.
 ### Getting the current UI update information
-- [func currentUpdateInfo() -> UIUpdateInfo?](uiupdatelink/currentupdateinfo.md)
+- [func currentUpdateInfo() -> UIUpdateInfo?](./uiupdatelink/currentupdateinfo%28%29.md)
   Returns an object that describes the current UI update state.
-- [class UIUpdateInfo](uiupdateinfo.md)
+- [class UIUpdateInfo](./uiupdateinfo.md)
   An object that contains detailed information about the current UI update state.
 ### Adding actions
-- [func addAction(handler: (UIUpdateLink, UIUpdateInfo) -> Void)](uiupdatelink/addaction(handler:).md)
+- [func addAction(handler: (UIUpdateLink, UIUpdateInfo) -> Void)](./uiupdatelink/addaction%28handler%29.md)
   Adds an action with the specified handler to the UI update link.
-- [func addAction(to: UIUpdateActionPhase, handler: (UIUpdateLink, UIUpdateInfo) -> Void)](uiupdatelink/addaction(to:handler:).md)
+- [func addAction(to: UIUpdateActionPhase, handler: (UIUpdateLink, UIUpdateInfo) -> Void)](./uiupdatelink/addaction%28to,handler%29.md)
   Adds an action with the specified handler to the UI update link for a particular UI update phase.
-- [func addAction(target: Any, selector: Selector)](uiupdatelink/addaction(target:selector:).md)
+- [func addAction(target: Any, selector: Selector)](./uiupdatelink/addaction%28target,selector%29.md)
   Adds an action with the specified target and selector to the UI update link.
-- [func addAction(to: UIUpdateActionPhase, target: Any, selector: Selector)](uiupdatelink/addaction(to:target:selector:).md)
+- [func addAction(to: UIUpdateActionPhase, target: Any, selector: Selector)](./uiupdatelink/addaction%28to,target,selector%29.md)
   Adds an action with the specified target and selector to the UI update link for a particular UI update phase.
-- [class UIUpdateActionPhase](uiupdateactionphase.md)
+- [class UIUpdateActionPhase](./uiupdateactionphase.md)
   An object that defines specific phases of the UI update process.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIUpdateInfo](uiupdateinfo.md)
+### UI updates
+- [class UIUpdateInfo](./uiupdateinfo.md)
   An object that contains detailed information about the current UI update state.
-- [class UIUpdateActionPhase](uiupdateactionphase.md)
+- [class UIUpdateActionPhase](./uiupdateactionphase.md)
   An object that defines specific phases of the UI update process.
 
 

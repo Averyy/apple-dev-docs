@@ -23,7 +23,6 @@ Learn about the various methods people use to control your app or game and enter
 - [Pointing devices](/design/human-interface-guidelines/pointing-devices) - People can use a pointing device like a trackpad or mouse to navigate the interface and initiate actions.
 - [Remotes](/design/human-interface-guidelines/remotes) - The Siri Remote is the primary input method for Apple TV, helping people feel connected to onscreen content from across the room.
 
-
 ## Topics
 
 - [Action button](action-button.md) - The Action button gives people quick access to their favorite features on supported iPhone and Apple Watch models.
@@ -39,8 +38,6 @@ Learn about the various methods people use to control your app or game and enter
 - [Nearby interactions](nearby-interactions.md) - Nearby interactions support on-device experiences that integrate the presence of people and objects in the nearby environment.
 - [Pointing devices](pointing-devices.md) - People can use a pointing device like a trackpad or mouse to navigate the interface and initiate actions.
 - [Remotes](remotes.md) - The Siri Remote is the primary input method for Apple TV, helping people feel connected to onscreen content from across the room.
-
-
 
 ---
 *Source: [https://developer.apple.com/design/human-interface-guidelines/inputs](https://developer.apple.com/design/human-interface-guidelines/inputs)*

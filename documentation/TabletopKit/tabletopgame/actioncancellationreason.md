@@ -1,7 +1,8 @@
 # TabletopGame.ActionCancellationReason
 
 **Framework**: TabletopKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible reasons for cancelling an action or an interaction.
 
@@ -17,25 +18,26 @@ enum ActionCancellationReason
 ## Topics
 
 ### Cancellation reasons
-- [TabletopGame.ActionCancellationReason.actionInvalidated](tabletopgame/actioncancellationreason/actioninvalidated.md)
+- [TabletopGame.ActionCancellationReason.actionInvalidated](./actioncancellationreason/actioninvalidated.md)
   The action became invalid due to other cancelled actions
-- [TabletopGame.ActionCancellationReason.interactionCancelled](tabletopgame/actioncancellationreason/interactioncancelled.md)
+- [TabletopGame.ActionCancellationReason.interactionCancelled](./actioncancellationreason/interactioncancelled.md)
   The action was cancelled back because the interaction that generated it got cancelled
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [TabletopGame.Observer](tabletopgame/observer.md)
+### Observing actions
+- [TabletopGame.Observer](./observer.md)
   A protocol for objects that progress gameplay when players take actions.
-- [func addObserver(some TabletopGame.Observer)](tabletopgame/addobserver(_:).md)
-- [func removeObserver(some TabletopGame.Observer)](tabletopgame/removeobserver(_:).md)
+- [func addObserver(some TabletopGame.Observer)](./addobserver%28_%29.md)
+- [func removeObserver(some TabletopGame.Observer)](./removeobserver%28_%29.md)
 
 
 ---

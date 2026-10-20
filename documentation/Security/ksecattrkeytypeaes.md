@@ -1,7 +1,8 @@
 # kSecAttrKeyTypeAES
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 AES algorithm.
 
@@ -12,6 +13,10 @@ AES algorithm.
 
 ```swift
 let kSecAttrKeyTypeAES: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrKeyTypeAES;
 ```
 
 

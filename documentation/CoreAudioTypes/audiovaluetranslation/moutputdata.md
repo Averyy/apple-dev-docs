@@ -1,7 +1,8 @@
 # mOutputData
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The buffer to hold the result of the translation.
 
@@ -20,13 +21,18 @@ The buffer to hold the result of the translation.
 var mOutputData: UnsafeMutableRawPointer
 ```
 
+```c
+void * mOutputData;
+```
+
 ## See Also
 
-- [var mInputData: UnsafeMutableRawPointer](audiovaluetranslation/minputdata.md)
+### Instance Properties
+- [var mInputData: UnsafeMutableRawPointer](./minputdata.md)
   The buffer containing the data to be translated.
-- [var mInputDataSize: UInt32](audiovaluetranslation/minputdatasize.md)
+- [var mInputDataSize: UInt32](./minputdatasize.md)
   The number of bytes in the buffer pointed at by `mInputData`.
-- [var mOutputDataSize: UInt32](audiovaluetranslation/moutputdatasize.md)
+- [var mOutputDataSize: UInt32](./moutputdatasize.md)
   The number of bytes in the buffer pointed at by `mOutputData`.
 
 

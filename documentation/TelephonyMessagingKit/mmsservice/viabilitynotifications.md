@@ -1,7 +1,8 @@
 # viabilityNotifications
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence of service viability notifications produced by the service.
 
@@ -16,13 +17,14 @@ final var viabilityNotifications: some AsyncSequence<MMSService.ViabilityNotific
 
 #### Discussion
 
-Use a `for`-`await`-`in` loop to receive [`MMSService.ViabilityNotification`](mmsservice/viabilitynotification.md) instances from this property.
+Use a `for`-`await`-`in` loop to receive [`MMSService.ViabilityNotification`](./viabilitynotification.md) instances from this property.
 
 ## See Also
 
-- [func isViable(for: CellularServiceID) -> Bool](mmsservice/isviable(for:).md)
+### Determining service viabililty
+- [func isViable(for: CellularServiceID) -> Bool](./isviable%28for%29.md)
   Queries whether the device can perform MMS operations at this time.
-- [MMSService.ViabilityNotification](mmsservice/viabilitynotification.md)
+- [MMSService.ViabilityNotification](./viabilitynotification.md)
   A notification that indicates if MMS is viable for a given cellular service.
 
 

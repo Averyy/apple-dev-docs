@@ -1,7 +1,8 @@
 # NSFilePromiseReceiver
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that receives a file promise from the pasteboard.
 
@@ -14,9 +15,13 @@ An object that receives a file promise from the pasteboard.
 class NSFilePromiseReceiver
 ```
 
+```objc
+@interface NSFilePromiseReceiver : NSObject
+```
+
 #### Overview
 
-Because [`NSFilePromiseReceiver`](nsfilepromisereceiver.md) implements the [`NSPasteboardReading`](nspasteboardreading.md) protocol, you receive all file promises on the drag pasteboard as follows:
+Because [`NSFilePromiseReceiver`](./nsfilepromisereceiver.md) implements the [`NSPasteboardReading`](./nspasteboardreading.md) protocol, you receive all file promises on the drag pasteboard as follows:
 
 **Swift**:
 
@@ -50,48 +55,49 @@ draggingInfo.enumerateDraggingItems(options: [], for: view, classes: [NSFileProm
 }];
 ```
 
-> **Note**:  A non-item-based drag source may promise multiple files on the same pasteboard item. To be compatible with these drag sources, many [`NSFilePromiseReceiver`](nsfilepromisereceiver.md) methods return an array of values. Multiple-file item-based promises result in one [`NSFilePromiseReceiver`](nsfilepromisereceiver.md) per promised file.
+> **Note**:  A non-item-based drag source may promise multiple files on the same pasteboard item. To be compatible with these drag sources, many [`NSFilePromiseReceiver`](./nsfilepromisereceiver.md) methods return an array of values. Multiple-file item-based promises result in one [`NSFilePromiseReceiver`](./nsfilepromisereceiver.md) per promised file.
 
 ## Topics
 
 ### Instance Properties
-- [var fileNames: [String]](nsfilepromisereceiver/filenames.md)
+- [var fileNames: [String]](./nsfilepromisereceiver/filenames.md)
   An array containing names of the promised files being written to the destination location.
-- [var fileTypes: [String]](nsfilepromisereceiver/filetypes.md)
+- [var fileTypes: [String]](./nsfilepromisereceiver/filetypes.md)
   An array containing types of the promised files being written to the destination location.
 ### Instance Methods
-- [func receivePromisedFiles(atDestination: URL, options: [AnyHashable : Any], operationQueue: OperationQueue, reader: (URL, (any Error)?) -> Void)](nsfilepromisereceiver/receivepromisedfiles(atdestination:options:operationqueue:reader:).md)
+- [func receivePromisedFiles(atDestination: URL, options: [AnyHashable : Any], operationQueue: OperationQueue, reader: (URL, (any Error)?) -> Void)](./nsfilepromisereceiver/receivepromisedfiles%28atdestination,options,operationqueue,reader%29.md)
   Fulfills the promises at the specified destination.
 ### Type Properties
-- [class var readableDraggedTypes: [String]](nsfilepromisereceiver/readabledraggedtypes.md)
+- [class var readableDraggedTypes: [String]](./nsfilepromisereceiver/readabledraggedtypes.md)
   An array containing dragged file types that are readable.
 ### Initializers
-- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nsfilepromisereceiver/init(pasteboardpropertylist:oftype:).md)
+- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](./nsfilepromisereceiver/init%28pasteboardpropertylist,oftype%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSPasteboardReading](nspasteboardreading.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSPasteboardReading](./nspasteboardreading.md)
 
 ## See Also
 
-- [Supporting Drag and Drop Through File Promises](supporting-drag-and-drop-through-file-promises.md)
+### File Promises
+- [Supporting Drag and Drop Through File Promises](./supporting-drag-and-drop-through-file-promises.md)
   Receive and provide file promises to support dragged app files and pasteboard operations.
-- [Supporting Table View Drag and Drop Through File Promises](supporting-table-view-drag-and-drop-through-file-promises.md)
+- [Supporting Table View Drag and Drop Through File Promises](./supporting-table-view-drag-and-drop-through-file-promises.md)
   Share data between macOS apps during drag and drop by using an item provider.
-- [Supporting Collection View Drag and Drop Through File Promises](supporting-collection-view-drag-and-drop-through-file-promises.md)
+- [Supporting Collection View Drag and Drop Through File Promises](./supporting-collection-view-drag-and-drop-through-file-promises.md)
   Share data between macOS apps during drag and drop by using an item provider.
-- [class NSFilePromiseProvider](nsfilepromiseprovider.md)
+- [class NSFilePromiseProvider](./nsfilepromiseprovider.md)
   An object that provides a promise for the pasteboard.
-- [protocol NSFilePromiseProviderDelegate](nsfilepromiseproviderdelegate.md)
+- [protocol NSFilePromiseProviderDelegate](./nsfilepromiseproviderdelegate.md)
   A set of methods that provides the name of the promised file and writes the file to the destination directory when the file promise is fulfilled.
 
 

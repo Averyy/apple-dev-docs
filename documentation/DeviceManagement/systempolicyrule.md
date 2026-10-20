@@ -1,7 +1,8 @@
 # SystemPolicyRule
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures the system policy.
 
@@ -10,7 +11,7 @@ The payload that configures the system policy.
 
 ## Declaration
 
-```swift
+```
 object SystemPolicyRule
 ```
 
@@ -22,7 +23,7 @@ This payload allows control over Gatekeeper’s system policy rules. The keys an
 
 This payload can only exist in a device profile. If the payload is present in a user profile, an error occurs during installation and the profile installation fails.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ This payload can only exist in a device profile. If the payload is present in a 
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -78,16 +79,19 @@ This payload can only exist in a device profile. If the payload is present in a 
 - `Expiration` (date): The expiration date for rules being processed.
 - `LeafCertificate` (data): The single leaf certificate for the app that’s in the allow list.
 - `OperationType` (string): The type of operation.
+
+  **Default**: `operation:execute`; **Allowed Values**: `operation:execute`, `operation:install`, `operation:lsopen`
 - `Priority` (number): The rule’s priority.
-- `Requirement` (string): The policy requirement. This key must follow the syntax described in [`Code Signing Requirement Language`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/RequirementLang/RequirementLang.html#//apple_ref/doc/uid/TP40005929-CH5).
+- `Requirement` (string): The policy requirement. This key must follow the syntax described in [Code Signing Requirement Language](https://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/RequirementLang/RequirementLang.html#//apple_ref/doc/uid/TP40005929-CH5).
 
 ## See Also
 
-- [object SystemPolicyControl](systempolicycontrol.md)
+### System policy
+- [object SystemPolicyControl](./systempolicycontrol.md)
   The payload that configures the system policy for assessments.
-- [object SystemPolicyKernelExtensions](systempolicykernelextensions.md)
+- [object SystemPolicyKernelExtensions](./systempolicykernelextensions.md)
   The payload that configures the kernel extension policies.
-- [object SystemPolicyManaged](systempolicymanaged.md)
+- [object SystemPolicyManaged](./systempolicymanaged.md)
   The payload that configures the Finder’s contextual menu to bypass the system policy.
 
 

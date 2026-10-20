@@ -1,7 +1,8 @@
 # NSRectEdge
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,38 +14,43 @@
 enum NSRectEdge
 ```
 
+```c
+enum NSRectEdge : NSUInteger;
+```
+
 ## Topics
 
 ### Minimum and maximum values
-- [NSRectEdge.maxX](nsrectedge/maxx.md)
+- [NSRectEdge.maxX](./nsrectedge/maxx.md)
   The maximum X edge.
-- [NSRectEdge.maxY](nsrectedge/maxy.md)
+- [NSRectEdge.maxY](./nsrectedge/maxy.md)
   The maximum Y edge.
-- [NSRectEdge.minX](nsrectedge/minx.md)
+- [NSRectEdge.minX](./nsrectedge/minx.md)
   The minimum X edge.
-- [NSRectEdge.minY](nsrectedge/miny.md)
+- [NSRectEdge.minY](./nsrectedge/miny.md)
   The minimum Y edge.
 ### Initializers
-- [init?(rawValue: UInt)](nsrectedge/init(rawvalue:).md)
-- [init(rectEdge: CGRectEdge)](nsrectedge/init(rectedge:).md)
+- [init?(rawValue: UInt)](./nsrectedge/init%28rawvalue%29.md)
+- [init(rectEdge: CGRectEdge)](./nsrectedge/init%28rectedge%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AlignmentOptions](alignmentoptions.md)
+### Related Types
+- [struct AlignmentOptions](./alignmentoptions.md)
   Values representing alignment operations.
-- [typealias NSRectArray](nsrectarray.md)
+- [typealias NSRectArray](./nsrectarray.md)
   Type indicating a parameter is array of `NSRect` structures.
-- [typealias NSRectPointer](nsrectpointer.md)
+- [typealias NSRectPointer](./nsrectpointer.md)
   Type indicating a parameter is a pointer to an `NSRect` structure.
 
 

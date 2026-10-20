@@ -1,7 +1,8 @@
 # decode
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 USVString decode(
     optional BufferSource? input, 
     optional TextDecodeOptions options

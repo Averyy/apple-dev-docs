@@ -1,7 +1,8 @@
 # evaluateURL(_:mainFrameURL:isMainFrame:completionHandler:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -10,7 +11,15 @@
 ## Declaration
 
 ```swift
+func evaluateURL(_ url: URL, mainFrameURL: URL, isMainFrame: Bool, completionHandler: @escaping @Sendable (Bool, Data?) -> Void)
+```
+
+```swift
 func evaluateURL(_ url: URL, mainFrameURL: URL, isMainFrame: Bool) async -> (Bool, Data?)
+```
+
+```objc
+- (void) evaluateURL:(NSURL *) url mainFrameURL:(NSURL *) mainFrameURL isMainFrame:(BOOL) isMainFrame completionHandler:(void (^)(BOOL shouldBlock, NSData *blockPageRepresentation)) completionHandler;
 ```
 
 #### Discussion

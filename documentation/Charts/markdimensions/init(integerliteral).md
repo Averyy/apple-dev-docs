@@ -1,7 +1,8 @@
 # init(integerLiteral:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a constant width or height from an integer.
 

@@ -1,7 +1,8 @@
 # kSecAttrKeyClassPrivate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A private key of a public-private pair.
 
@@ -18,6 +19,10 @@ A private key of a public-private pair.
 
 ```swift
 let kSecAttrKeyClassPrivate: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrKeyClassPrivate;
 ```
 
 

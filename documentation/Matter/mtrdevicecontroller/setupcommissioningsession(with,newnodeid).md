@@ -1,7 +1,8 @@
 # setupCommissioningSession(with:newNodeID:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.2+
@@ -18,9 +19,13 @@
 func setupCommissioningSession(with payload: MTRSetupPayload, newNodeID: NSNumber) throws
 ```
 
+```objc
+- (BOOL) setupCommissioningSessionWithPayload:(MTRSetupPayload *) payload newNodeID:(NSNumber *) newNodeID error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Onboarding a Matter device](onboarding-a-matter-device.md)
+- [Onboarding a Matter device](../onboarding-a-matter-device.md)
 
 
 ---

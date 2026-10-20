@@ -1,28 +1,30 @@
 # OSNumberCreateWithUInt64Value
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 OSNumberPtrOSNumberCreateWithUInt64Value(uint64_t value);
 ```
 
 ## See Also
 
-- [withNumber](osnumber/withnumber-5rcqv.md)
+### Creating a Number Object
+- [withNumber](./osnumber/withnumber-5rcqv.md)
   Allocates an OSNumber object with value and size.
-- [withNumber](osnumber/withnumber-2c6oe.md)
+- [withNumber](./osnumber/withnumber-2c6oe.md)
   Allocates an OSNumber object with value from a c-string and size.
-- [free](osnumber/free.md)
-- [OSNumberPtr](osnumberptr.md)
+- [free](./osnumber/free.md)
+- [OSNumberPtr](./osnumberptr.md)
 
 
 ---

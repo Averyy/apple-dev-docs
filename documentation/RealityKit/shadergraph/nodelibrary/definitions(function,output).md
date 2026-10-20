@@ -1,7 +1,8 @@
 # definitions(function:output:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns all definitions that implement the given function with the specified output type.
 

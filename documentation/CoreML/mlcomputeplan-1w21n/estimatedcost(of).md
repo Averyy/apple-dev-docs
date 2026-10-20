@@ -1,7 +1,8 @@
 # estimatedCost(of:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the estimated cost of executing a MLProgram operation.
 
@@ -22,7 +23,7 @@ func estimatedCost(of operation: MLModelStructure.Program.Operation) -> MLComput
 
 ## Mentions
 
-- [Analyzing a Core ML model’s performance in Xcode](analyzing-a-core-ml-model-s-performance-in-xcode.md)
+- [Analyzing a Core ML model’s performance in Xcode](../analyzing-a-core-ml-model-s-performance-in-xcode.md)
 
 #### Return Value
 
@@ -34,7 +35,8 @@ The estimated cost of executing the operation.
 
 ## See Also
 
-- [MLComputePlan.Cost](mlcomputeplan-1w21n/cost.md)
+### Getting the estimated cost
+- [MLComputePlan.Cost](./cost.md)
   A struct containing information on the estimated cost of executing a layer/operation.
 
 

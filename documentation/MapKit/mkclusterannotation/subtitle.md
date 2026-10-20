@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subtitle string to display for the group of annotations.
 
@@ -19,13 +20,18 @@ The subtitle string to display for the group of annotations.
 var subtitle: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * subtitle;
+```
+
 #### Discussion
 
-The cluster annotation object sets this property to a string that conveys how many additional annotations the group includes, except for the annotation with the title that the [`title`](mkclusterannotation/title.md) property displays.
+The cluster annotation object sets this property to a string that conveys how many additional annotations the group includes, except for the annotation with the title that the [`title`](./title.md) property displays.
 
 ## See Also
 
-- [var title: String?](mkclusterannotation/title.md)
+### Getting the cluster attributes
+- [var title: String?](./title.md)
   The title string to display for the group of annotations.
 
 

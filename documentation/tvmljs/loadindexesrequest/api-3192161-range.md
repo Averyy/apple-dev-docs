@@ -1,7 +1,8 @@
 # range
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The index range to load.
 
@@ -10,13 +11,14 @@ The index range to load.
 
 ## Declaration
 
-```swift
+```
 readonly attribute Object range;
 ```
 
 ## See Also
 
-- [dataSource](loadindexesrequest/3192160-datasource.md)
+### Accessing Request Properties
+- [dataSource](./api-3192160-datasource.md)
   A reference to the data source object that originated the request.
 
 

@@ -1,7 +1,8 @@
 # BuildBetaDetail.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Build Beta Details resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a Build Beta Details resource.
 
 ## Declaration
 
-```swift
+```
 object BuildBetaDetail.Attributes
 ```
 
@@ -22,9 +23,11 @@ object BuildBetaDetail.Attributes
 
 ## See Also
 
-- [Build Beta Details](build-beta-details.md)
+### Related Documentation
+- [Build Beta Details](../build-beta-details.md)
   TestFlight-specific information about beta builds.
-- [object BuildBetaDetail.Relationships](buildbetadetail/relationships-data.dictionary.md)
+### Objects
+- [object BuildBetaDetail.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

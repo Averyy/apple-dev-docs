@@ -1,7 +1,8 @@
 # isCameraCalibrationDataDeliverySupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the photo output currently supports the delivery of camera calibration data.
 
@@ -17,9 +18,13 @@ A Boolean value that indicates whether the photo output currently supports the d
 var isCameraCalibrationDataDeliverySupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isCameraCalibrationDataDeliverySupported) BOOL cameraCalibrationDataDeliverySupported;
+```
+
 #### Discussion
 
-A photo output can deliver camera calibration data only when it’s [`isVirtualDeviceConstituentPhotoDeliveryEnabled`](avcapturephotooutput/isvirtualdeviceconstituentphotodeliveryenabled.md) property is `true` and its [`isContentAwareDistortionCorrectionEnabled`](avcapturephotooutput/iscontentawaredistortioncorrectionenabled.md) property is `false`. Additionally, the source capture device’s [`isGeometricDistortionCorrectionEnabled`](avcapturedevice/isgeometricdistortioncorrectionenabled.md) property must be `false`.
+A photo output can deliver camera calibration data only when it’s [`isVirtualDeviceConstituentPhotoDeliveryEnabled`](./isvirtualdeviceconstituentphotodeliveryenabled.md) property is `true` and its [`isContentAwareDistortionCorrectionEnabled`](./iscontentawaredistortioncorrectionenabled.md) property is `false`. Additionally, the source capture device’s [`isGeometricDistortionCorrectionEnabled`](../avcapturedevice/isgeometricdistortioncorrectionenabled.md) property must be `false`.
 
 This property is key-value observable.
 

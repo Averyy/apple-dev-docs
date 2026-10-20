@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Submits a request to abandon a command buffer the queue is currently running.
@@ -20,9 +21,13 @@ Submits a request to abandon a command buffer the queue is currently running.
 func tryCancel()
 ```
 
+```objc
+- (void) tryCancel;
+```
+
 #### Discussion
 
-Check the command buffer’s [`status`](mtliocommandbuffer/status.md) property after it completes, either after [`waitUntilCompleted()`](mtliocommandbuffer/waituntilcompleted().md) or in one of your completion handlers (see [`addCompletedHandler(_:)`](mtliocommandbuffer/addcompletedhandler(_:).md)).
+Check the command buffer’s [`status`](./status.md) property after it completes, either after [`waitUntilCompleted()`](./waituntilcompleted%28%29.md) or in one of your completion handlers (see [`addCompletedHandler(_:)`](./addcompletedhandler%28_%29.md)).
 
 
 ---

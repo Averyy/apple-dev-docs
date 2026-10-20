@@ -2,6 +2,7 @@
 
 **Framework**: Create ML  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The underlying type the conforming type uses when it wraps itself in a data value.
@@ -22,11 +23,12 @@ static var dataValueType: MLDataValue.ValueType { get }
 
 #### Discussion
 
-See [`MLDataValue.ValueType`](mldatavalue/valuetype.md) for a list of available options.
+See [`MLDataValue.ValueType`](../mldatavalue/valuetype.md) for a list of available options.
 
 ## See Also
 
-- [var dataValue: MLDataValue](mldatavalueconvertible/datavalue.md)
+### Converting from a type’s instance to a data value
+- [var dataValue: MLDataValue](./datavalue.md)
   The value of the conforming type’s instance wrapped in a data value.
 
 

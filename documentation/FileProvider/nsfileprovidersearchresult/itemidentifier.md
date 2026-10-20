@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The identifier for this search result.
@@ -15,15 +16,20 @@ The identifier for this search result.
 var itemIdentifier: NSFileProviderItemIdentifier { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSFileProviderItemIdentifier itemIdentifier;
+```
+
 #### Discussion
 
-Choose an identifier that’s usable with API calls from the [`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md) protocol.
+Choose an identifier that’s usable with API calls from the [`NSFileProviderReplicatedExtension`](../nsfileproviderreplicatedextension.md) protocol.
 
 ## See Also
 
-- [struct NSFileProviderItemIdentifier](nsfileprovideritemidentifier.md)
+### Identifying the item
+- [struct NSFileProviderItemIdentifier](../nsfileprovideritemidentifier.md)
   A unique identifier for an item managed by the File Provider extension.
-- [var filename: String](nsfileprovidersearchresult/filename.md)
+- [var filename: String](./filename.md)
   The result’s file name.
 
 

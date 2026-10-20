@@ -1,7 +1,8 @@
 # SecKeychainStatus
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A value that defines the current status of a keychain.
 
@@ -14,9 +15,13 @@ A value that defines the current status of a keychain.
 typealias SecKeychainStatus = UInt32
 ```
 
+```c
+typedef UInt32 SecKeychainStatus;
+```
+
 #### Discussion
 
-Use the values defined in [`SecKeychainStatus Values`](seckeychainstatus-values.md).
+Use the values defined in [SecKeychainStatus Values](./seckeychainstatus-values.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # video
 
 **Framework**: Link Presentation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The descriptor for a local video attachment. The corresponding media type must support the content type of the metadata’s local video data.
 

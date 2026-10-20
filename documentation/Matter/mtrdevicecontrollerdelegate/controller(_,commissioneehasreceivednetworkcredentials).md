@@ -1,7 +1,8 @@
 # controller(_:commissioneeHasReceivedNetworkCredentials:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notify the delegate that we have successfully communicated the network credentials to the device being commissioned and are about to tell it to join that network.  Note that for devices that are already on-network this notification will not happen.
 
@@ -18,6 +19,10 @@ Notify the delegate that we have successfully communicated the network credentia
 
 ```swift
 optional func controller(_ controller: MTRDeviceController, commissioneeHasReceivedNetworkCredentials nodeID: NSNumber)
+```
+
+```objc
+- (void) controller:(MTRDeviceController *) controller commissioneeHasReceivedNetworkCredentials:(NSNumber *) nodeID;
 ```
 
 

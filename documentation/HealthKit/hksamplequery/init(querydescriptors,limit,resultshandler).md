@@ -1,7 +1,8 @@
 # init(queryDescriptors:limit:resultsHandler:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a query for samples that match any of the descriptors you provided.
 
@@ -19,11 +20,15 @@ Creates a query for samples that match any of the descriptors you provided.
 init(queryDescriptors: [HKQueryDescriptor], limit: Int, resultsHandler: @escaping @Sendable (HKSampleQuery, [HKSample]?, (any Error)?) -> Void)
 ```
 
+```objc
+- (instancetype) initWithQueryDescriptors:(NSArray<HKQueryDescriptor *> *) queryDescriptors limit:(NSInteger) limit resultsHandler:(void (^)(HKSampleQuery *query, NSArray<__kindof HKSample *> *results, NSError *error)) resultsHandler;
+```
+
 #### Discussion
 
-Use this initializer to create a sample query for data that matches any of the [`HKQueryDescriptor`](hkquerydescriptor.md) objects. Each descriptor can specify a different data type.
+Use this initializer to create a sample query for data that matches any of the [`HKQueryDescriptor`](../hkquerydescriptor.md) objects. Each descriptor can specify a different data type.
 
-After instantiating the query, call the [`HKHealthStore`](hkhealthstore.md) class’s [`execute(_:)`](hkhealthstore/execute(_:).md) method to run this query. Queries run on an anonymous background queue. As soon as the query is complete, the system executes the results handler on the background queue, returning samples that match any of the descriptors. You typically dispatch these results to the main queue to update the user interface.
+After instantiating the query, call the [`HKHealthStore`](../hkhealthstore.md) class’s [`execute(_:)`](../hkhealthstore/execute%28_%29.md) method to run this query. Queries run on an anonymous background queue. As soon as the query is complete, the system executes the results handler on the background queue, returning samples that match any of the descriptors. You typically dispatch these results to the main queue to update the user interface.
 
 For example, the following code returns all the step count and push count samples:
 
@@ -57,22 +62,27 @@ store.execute(query)
 ## Parameters
 
 - `queryDescriptors`: An array of descriptors that specify the types of samples that the query returns.
-- `limit`: The maximum number of samples that the query return. If you want to return all matching samples, use [`HKObjectQueryNoLimit`](hkobjectquerynolimit.md).
-- `resultsHandler`: A block that the HealthKit store calls after it finishes executing the query. This block takes the following parameters: - **`query`**: A reference to the query that called this block.
-- **`results`**: An array containing the samples the query found, or `nil` if an error occurs.
-- **`error`**: If an error occurs, an object describing the error; otherwise, it’s `nil`.
+- `limit`: The maximum number of samples that the query return. If you want to return all matching samples, use [`HKObjectQueryNoLimit`](../hkobjectquerynolimit.md).
+- `resultsHandler`: A block that the HealthKit store calls after it finishes executing the query.
+
+  This block takes the following parameters:
+
+  - **`query`**: A reference to the query that called this block.
+  - **`results`**: An array containing the samples the query found, or `nil` if an error occurs.
+  - **`error`**: If an error occurs, an object describing the error; otherwise, it’s `nil`.
 
 ## See Also
 
-- [Executing Sample Queries](executing-sample-queries.md)
+### Creating Sample Queries
+- [Executing Sample Queries](../executing-sample-queries.md)
   Create, run, and sort sample queries.
-- [init(sampleType: HKSampleType, predicate: NSPredicate?, limit: Int, sortDescriptors: [NSSortDescriptor]?, resultsHandler: (HKSampleQuery, [HKSample]?, (any Error)?) -> Void)](hksamplequery/init(sampletype:predicate:limit:sortdescriptors:resultshandler:).md)
+- [init(sampleType: HKSampleType, predicate: NSPredicate?, limit: Int, sortDescriptors: [NSSortDescriptor]?, resultsHandler: (HKSampleQuery, [HKSample]?, (any Error)?) -> Void)](./init%28sampletype,predicate,limit,sortdescriptors,resultshandler%29.md)
   Instantiates and returns a sample query.
-- [init(queryDescriptors: [HKQueryDescriptor], limit: Int, sortDescriptors: [NSSortDescriptor], resultsHandler: (HKSampleQuery, [HKSample]?, (any Error)?) -> Void)](hksamplequery/init(querydescriptors:limit:sortdescriptors:resultshandler:).md)
+- [init(queryDescriptors: [HKQueryDescriptor], limit: Int, sortDescriptors: [NSSortDescriptor], resultsHandler: (HKSampleQuery, [HKSample]?, (any Error)?) -> Void)](./init%28querydescriptors,limit,sortdescriptors,resultshandler%29.md)
   Creates a query for samples that match any of the query descriptors you provided, sorted by the sort descriptors you provided.
-- [var HKObjectQueryNoLimit: Int](hkobjectquerynolimit.md)
+- [var HKObjectQueryNoLimit: Int](../hkobjectquerynolimit.md)
   A value indicating that the query returns all the matching samples in the HealthKit store.
-- [HealthKit sort descriptors](healthkit-sort-descriptors.md)
+- [HealthKit sort descriptors](../healthkit-sort-descriptors.md)
   Identifiers for sorting results.
 
 

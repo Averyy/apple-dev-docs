@@ -1,7 +1,8 @@
 # contactStore
 
 **Framework**: Contacts UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contact store from which the contact was fetched or to which it will be saved.
 
@@ -15,6 +16,10 @@ The contact store from which the contact was fetched or to which it will be save
 
 ```swift
 var contactStore: CNContactStore? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) CNContactStore * contactStore;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # storeCredentials(forBorderAgent:activeOperationalDataSet:completion:)
 
 **Framework**: ThreadNetwork  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stores Thread network credentials into the framework database that a Border Agent provides.
 
@@ -16,19 +17,31 @@ Stores Thread network credentials into the framework database that a Border Agen
 ## Declaration
 
 ```swift
+func storeCredentials(forBorderAgent borderAgentID: Data, activeOperationalDataSet: Data, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func storeCredentials(forBorderAgent borderAgentID: Data, activeOperationalDataSet: Data) async throws
+```
+
+```objc
+- (void) storeCredentialsForBorderAgent:(NSData *) borderAgentID activeOperationalDataSet:(NSData *) activeOperationalDataSet completion:(void (^)(NSError *error)) completion;
 ```
 
 ## Mentions
 
-- [Managing Thread network credentials](managing-thread-network-credentials.md)
-- [Configuring a Border Router](configuring-a-border-router.md)
+- [Managing Thread network credentials](../managing-thread-network-credentials.md)
+- [Configuring a Border Router](../configuring-a-border-router.md)
 
 #### Discussion
 
-> ❗ **Important**: You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func storeCredentials(forBorderAgent borderAgentID: Data, activeOperationalDataSet: Data) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**: You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func storeCredentials(forBorderAgent borderAgentID: Data, activeOperationalDataSet: Data) async throws
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 The Border Agent is the software component running in the Thread Border Router responsible for advertising itself in the Wi-Fi or Ethernet network.
 
@@ -57,7 +70,8 @@ func saveCredentials(borderAgentID: Data, activeOperationalDataSet: Data) async 
 
 ## See Also
 
-- [func deleteCredentials(forBorderAgent: Data, completion: ((any Error)?) -> Void)](thclient/deletecredentials(forborderagent:completion:).md)
+### Storing and Deleting Credentials
+- [func deleteCredentials(forBorderAgent: Data, completion: ((any Error)?) -> Void)](./deletecredentials%28forborderagent,completion%29.md)
   Deletes Thread network credentials from the framework database for a Border Agent.
 
 

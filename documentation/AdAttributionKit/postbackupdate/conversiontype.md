@@ -1,7 +1,8 @@
 # PostbackUpdate.ConversionType
 
 **Framework**: AdAttributionKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe the types of conversions.
 
@@ -19,21 +20,21 @@ enum ConversionType
 ## Topics
 
 ### Enumeration Cases
-- [PostbackUpdate.ConversionType.install](postbackupdate/conversiontype/install.md)
+- [PostbackUpdate.ConversionType.install](./conversiontype/install.md)
   The value that represents the installation of an app after an ad interaction.
-- [PostbackUpdate.ConversionType.reengagement](postbackupdate/conversiontype/reengagement.md)
+- [PostbackUpdate.ConversionType.reengagement](./conversiontype/reengagement.md)
   The value that represents someone reengaging with an app they’ve previously installed.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # priceIncreaseStatus
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status that indicates whether the auto-renewable subscription is subject to a price increase.
 
@@ -22,17 +23,18 @@ let priceIncreaseStatus: Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatu
 
 ## Mentions
 
-- [Managing Price Increases for Auto-Renewable Subscriptions](managing-price-increases-for-auto-renewable-subscriptions.md)
+- [Managing Price Increases for Auto-Renewable Subscriptions](../../../managing-price-increases-for-auto-renewable-subscriptions.md)
 
 #### Discussion
 
-For more information about price increase status, see [`Managing Price Increases for Auto-Renewable Subscriptions`](managing-price-increases-for-auto-renewable-subscriptions.md).
+For more information about price increase status, see [Managing Price Increases for Auto-Renewable Subscriptions](../../../managing-price-increases-for-auto-renewable-subscriptions.md).
 
 ## See Also
 
-- [Managing Price Increases for Auto-Renewable Subscriptions](managing-price-increases-for-auto-renewable-subscriptions.md)
+### Getting the price increase status
+- [Managing Price Increases for Auto-Renewable Subscriptions](../../../managing-price-increases-for-auto-renewable-subscriptions.md)
   Identify the price increase status for auto-renewable subscriptions in your app and on your server.
-- [Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatus](product/subscriptioninfo/renewalinfo/priceincreasestatus-swift.enum.md)
+- [Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatus](./priceincreasestatus-swift.enum.md)
   Status values that indicate whether an auto-renewable subscription is subject to a price increase.
 
 

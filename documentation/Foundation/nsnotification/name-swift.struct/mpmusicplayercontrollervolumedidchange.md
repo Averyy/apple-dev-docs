@@ -1,7 +1,8 @@
 # MPMusicPlayerControllerVolumeDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted when the audio playback volume for the music player has changed.
 
@@ -23,35 +24,36 @@ The object associated with the notification is the music player whose playback v
 
 ## See Also
 
-- [static let MPMusicPlayerControllerQueueDidChange: NSNotification.Name](nsnotification/name-swift.struct/mpmusicplayercontrollerqueuedidchange.md)
+### MediaPlayer
+- [static let MPMusicPlayerControllerQueueDidChange: NSNotification.Name](./mpmusicplayercontrollerqueuedidchange.md)
   Indicates the music player’s queue changed.
-- [static let MPMediaLibraryDidChange: NSNotification.Name](nsnotification/name-swift.struct/mpmedialibrarydidchange.md)
+- [static let MPMediaLibraryDidChange: NSNotification.Name](./mpmedialibrarydidchange.md)
   Indicates the media library has changed.
-- [static let MPMediaPlaybackIsPreparedToPlayDidChange: NSNotification.Name](nsnotification/name-swift.struct/mpmediaplaybackispreparedtoplaydidchange.md)
+- [static let MPMediaPlaybackIsPreparedToPlayDidChange: NSNotification.Name](./mpmediaplaybackispreparedtoplaydidchange.md)
   Indicates that the prepared to play status of the media player has changed.
-- [static let MPMusicPlayerControllerNowPlayingItemDidChange: NSNotification.Name](nsnotification/name-swift.struct/mpmusicplayercontrollernowplayingitemdidchange.md)
+- [static let MPMusicPlayerControllerNowPlayingItemDidChange: NSNotification.Name](./mpmusicplayercontrollernowplayingitemdidchange.md)
   Posted when the currently playing media item has changed.
-- [static let MPMusicPlayerControllerPlaybackStateDidChange: NSNotification.Name](nsnotification/name-swift.struct/mpmusicplayercontrollerplaybackstatedidchange.md)
+- [static let MPMusicPlayerControllerPlaybackStateDidChange: NSNotification.Name](./mpmusicplayercontrollerplaybackstatedidchange.md)
   Posted when the playback state changes programmatically or by user action.
-- [static let MPMovieDurationAvailable: NSNotification.Name](nsnotification/name-swift.struct/mpmoviedurationavailable.md)
+- [static let MPMovieDurationAvailable: NSNotification.Name](./mpmoviedurationavailable.md)
   Posted when the duration of a movie has been determined. There is no `userInfo` dictionary.
-- [static let MPMovieMediaTypesAvailable: NSNotification.Name](nsnotification/name-swift.struct/mpmoviemediatypesavailable.md)
+- [static let MPMovieMediaTypesAvailable: NSNotification.Name](./mpmoviemediatypesavailable.md)
   Posted when the available media types in a movie are determined. There is no `userInfo` dictionary.
-- [static let MPMovieNaturalSizeAvailable: NSNotification.Name](nsnotification/name-swift.struct/mpmovienaturalsizeavailable.md)
+- [static let MPMovieNaturalSizeAvailable: NSNotification.Name](./mpmovienaturalsizeavailable.md)
   Posted when the natural frame size of a movie is first determined or subsequently changes. There is no `userInfo` dictionary.
-- [static let MPMoviePlayerDidEnterFullscreen: NSNotification.Name](nsnotification/name-swift.struct/mpmovieplayerdidenterfullscreen.md)
+- [static let MPMoviePlayerDidEnterFullscreen: NSNotification.Name](./mpmovieplayerdidenterfullscreen.md)
   Posted when a movie player has entered full-screen mode. There is no `userInfo` dictionary.
-- [static let MPMoviePlayerDidExitFullscreen: NSNotification.Name](nsnotification/name-swift.struct/mpmovieplayerdidexitfullscreen.md)
+- [static let MPMoviePlayerDidExitFullscreen: NSNotification.Name](./mpmovieplayerdidexitfullscreen.md)
   Posted when a movie player has exited full-screen mode. There is no `userInfo` dictionary.
-- [static let MPMoviePlayerIsAirPlayVideoActiveDidChange: NSNotification.Name](nsnotification/name-swift.struct/mpmovieplayerisairplayvideoactivedidchange.md)
+- [static let MPMoviePlayerIsAirPlayVideoActiveDidChange: NSNotification.Name](./mpmovieplayerisairplayvideoactivedidchange.md)
   Posted when a movie player has started or ended playing a movie via AirPlay. There is no `userInfo` dictionary.
-- [static let MPMoviePlayerLoadStateDidChange: NSNotification.Name](nsnotification/name-swift.struct/mpmovieplayerloadstatedidchange.md)
+- [static let MPMoviePlayerLoadStateDidChange: NSNotification.Name](./mpmovieplayerloadstatedidchange.md)
   Posted when a movie player’s network buffering state has changed. There is no `userInfo` dictionary.
-- [static let MPMoviePlayerNowPlayingMovieDidChange: NSNotification.Name](nsnotification/name-swift.struct/mpmovieplayernowplayingmoviedidchange.md)
+- [static let MPMoviePlayerNowPlayingMovieDidChange: NSNotification.Name](./mpmovieplayernowplayingmoviedidchange.md)
   Posted when the currently playing movie has changed. There is no `userInfo` dictionary.
-- [static let MPMoviePlayerPlaybackDidFinish: NSNotification.Name](nsnotification/name-swift.struct/mpmovieplayerplaybackdidfinish.md)
+- [static let MPMoviePlayerPlaybackDidFinish: NSNotification.Name](./mpmovieplayerplaybackdidfinish.md)
   Posted when a movie has finished playing.
-- [static let MPMoviePlayerPlaybackStateDidChange: NSNotification.Name](nsnotification/name-swift.struct/mpmovieplayerplaybackstatedidchange.md)
+- [static let MPMoviePlayerPlaybackStateDidChange: NSNotification.Name](./mpmovieplayerplaybackstatedidchange.md)
   Posted when a movie player’s playback state has changed. There is no `userInfo` dictionary.
 
 

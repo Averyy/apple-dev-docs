@@ -1,7 +1,8 @@
 # TimeSeriesForecasterBatches
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A sequence of forecaster batches on a time series shaped array.
 
@@ -24,7 +25,7 @@ struct TimeSeriesForecasterBatches<Scalar> where Scalar : MLShapedArrayScalar
 
 A time-series forecaster takes a series of samples and produces a prediction of the next samples. For example the sequence `[1, 2, 3, 4]` could predict `[5, 6]`. To train a forecaster, each training batch contains the input samples along with the annotations (ground truth predictions). For example a batch could have this:
 
-```None
+```
 features = [
     [1, 2, 3, 4],
     [2, 3, 4, 5],
@@ -39,7 +40,7 @@ annotations = [
 
 The shape of the features in the sequence is `[batchSize, inputWindowSize, featureSize]` and the shape of the annotations is `[batchSize, forecastWindowSize, annotationSize]`. The batch sequence will return as many feature-annotation examples as fit in the input. For example, an input sequence size of 10 with an input sample count of 4 and a prediction sample count of 2 will produce 5 examples:
 
-```None
+```
 features: [1, 2, 3, 4], annotations: [5, 6]
 features: [2, 3, 4, 5], annotations: [6, 7]
 features: [3, 4, 5, 6], annotations: [7, 8]
@@ -52,62 +53,63 @@ Note that 9 and 10 are never used as features because there would be no annotati
 ## Topics
 
 ### Creating a time series forecaster batch
-- [init(features: MLShapedArray<Scalar>, annotations: MLShapedArray<Scalar>, batchSize: Int, inputWindowSize: Int, forecastWindowSize: Int, shufflesBatches: Bool) throws](timeseriesforecasterbatches/init(features:annotations:batchsize:inputwindowsize:forecastwindowsize:shufflesbatches:).md)
+- [init(features: MLShapedArray<Scalar>, annotations: MLShapedArray<Scalar>, batchSize: Int, inputWindowSize: Int, forecastWindowSize: Int, shufflesBatches: Bool) throws](./timeseriesforecasterbatches/init%28features,annotations,batchsize,inputwindowsize,forecastwindowsize,shufflesbatches%29.md)
   Creates a batch sequence.
 ### Inspecting a time series forecaster batch
-- [let annotations: MLShapedArray<Scalar>](timeseriesforecasterbatches/annotations.md)
+- [let annotations: MLShapedArray<Scalar>](./timeseriesforecasterbatches/annotations.md)
   The original annotations.
-- [let batchSize: Int](timeseriesforecasterbatches/batchsize.md)
+- [let batchSize: Int](./timeseriesforecasterbatches/batchsize.md)
   The batch size.
-- [let features: MLShapedArray<Scalar>](timeseriesforecasterbatches/features.md)
+- [let features: MLShapedArray<Scalar>](./timeseriesforecasterbatches/features.md)
   The original features.
-- [let forecastWindowSize: Int](timeseriesforecasterbatches/forecastwindowsize.md)
+- [let forecastWindowSize: Int](./timeseriesforecasterbatches/forecastwindowsize.md)
   The prediction sample count.
-- [let inputWindowSize: Int](timeseriesforecasterbatches/inputwindowsize.md)
+- [let inputWindowSize: Int](./timeseriesforecasterbatches/inputwindowsize.md)
   The input sample count.
-- [var shufflesBatches: Bool](timeseriesforecasterbatches/shufflesbatches.md)
+- [var shufflesBatches: Bool](./timeseriesforecasterbatches/shufflesbatches.md)
   A Boolean value indicating whether to shuffle the batches.
 ### Default Implementations
-- [Sequence Implementations](timeseriesforecasterbatches/sequence-implementations.md)
+- [Sequence Implementations](./timeseriesforecasterbatches/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [Creating a time-series classifier](creating-a-time-series-classifier.md)
+### Time-based components
+- [Creating a time-series classifier](./creating-a-time-series-classifier.md)
   Train a machine learning model to predict the class label of time-series signals.
-- [Creating a time-series forecaster](creating-a-time-series-forecaster.md)
+- [Creating a time-series forecaster](./creating-a-time-series-forecaster.md)
   Forecast future data points by training a machine learning model using historical data.
-- [struct DateFeatures](datefeatures.md)
+- [struct DateFeatures](./datefeatures.md)
   A set of date and time features.
-- [struct DateFeatureExtractor](datefeatureextractor.md)
+- [struct DateFeatureExtractor](./datefeatureextractor.md)
   A time and date feature extractor.
-- [struct LinearTimeSeriesForecaster](lineartimeseriesforecaster.md)
+- [struct LinearTimeSeriesForecaster](./lineartimeseriesforecaster.md)
   A time-series forecasting estimator.
-- [struct LinearTimeSeriesForecasterConfiguration](lineartimeseriesforecasterconfiguration.md)
+- [struct LinearTimeSeriesForecasterConfiguration](./lineartimeseriesforecasterconfiguration.md)
   The configuration for a linear time-series forecaster.
-- [struct TimeSeriesForecasterAnnotatedWindows](timeseriesforecasterannotatedwindows.md)
+- [struct TimeSeriesForecasterAnnotatedWindows](./timeseriesforecasterannotatedwindows.md)
   A sequence of forecasting windows on a time series shaped array.
-- [struct TemporalFeature](temporalfeature.md)
+- [struct TemporalFeature](./temporalfeature.md)
   A temporal feature contains a segment identifier and a feature value.
-- [protocol TemporalSequence](temporalsequence.md)
+- [protocol TemporalSequence](./temporalsequence.md)
   Async sequence for temporal features.
-- [struct TemporalSegmentIdentifier](temporalsegmentidentifier.md)
+- [struct TemporalSegmentIdentifier](./temporalsegmentidentifier.md)
   Uniquely identifiers a segment of a temporal sequence.
-- [struct SlidingWindows](slidingwindows.md)
+- [struct SlidingWindows](./slidingwindows.md)
   A sequence of windows on a time series shaped array.
-- [struct SlidingWindowTransformer](slidingwindowtransformer.md)
+- [struct SlidingWindowTransformer](./slidingwindowtransformer.md)
   A temporal transformer that groups input elements.
-- [struct Downsampler](downsampler.md)
+- [struct Downsampler](./downsampler.md)
   A temporal transformer that down samples the input stream.
-- [struct VideoReader](videoreader.md)
+- [struct VideoReader](./videoreader.md)
   A video file reader.
-- [struct TemporalFileSegment](temporalfilesegment.md)
+- [struct TemporalFileSegment](./temporalfilesegment.md)
   A URL and a time range identifying a specific segment of a time-based (temporal) file.
 
 

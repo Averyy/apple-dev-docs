@@ -1,7 +1,8 @@
 # activityImage
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An image that identifies the service to the user.
 
@@ -17,9 +18,13 @@ An image that identifies the service to the user.
 var activityImage: UIImage? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIImage * activityImage;
+```
+
 #### Discussion
 
-The default value is `nil`. Subclasses must override this property to return a valid image object that can be presented to the user. The [`UIActivityViewController`](uiactivityviewcontroller.md) object uses this image to generate a button for your service in its UI.
+The default value is `nil`. Subclasses must override this property to return a valid image object that can be presented to the user. The [`UIActivityViewController`](../uiactivityviewcontroller.md) object uses this image to generate a button for your service in its UI.
 
 The alpha channel of the image is used as a mask to generate the final image that’s presented to the user. Any color data in the image itself is ignored. Opaque pixels have a gradient applied to them, and this gradient is then laid on top of a standard background. Thus, a completely opaque image would yield a gradient-filled rectangle.
 
@@ -27,15 +32,16 @@ For iPhone and iPod touch, images on iOS 7 should be 60 by 60 points; on earlier
 
 ## See Also
 
-- [class var activityCategory: UIActivity.Category](uiactivity/activitycategory.md)
+### Getting the activity information
+- [class var activityCategory: UIActivity.Category](./activitycategory.md)
   The category of the activity, which may be used to group activities in the UI.
-- [UIActivity.Category](uiactivity/category.md)
+- [UIActivity.Category](./category.md)
   An enumeration that defines categories of activities.
-- [var activityType: UIActivity.ActivityType?](uiactivity/activitytype-swift.property.md)
+- [var activityType: UIActivity.ActivityType?](./activitytype-swift.property.md)
   The type of service being provided.
-- [UIActivity.ActivityType](uiactivity/activitytype-swift.struct.md)
+- [UIActivity.ActivityType](./activitytype-swift.struct.md)
   A structure that describes the types of activities for which the system has built-in support.
-- [var activityTitle: String?](uiactivity/activitytitle.md)
+- [var activityTitle: String?](./activitytitle.md)
   A user-readable string that describes the service.
 
 

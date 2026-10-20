@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an asset that models the media at the specified URL.
 
@@ -26,9 +27,10 @@ convenience init(url: URL)
 
 ## See Also
 
-- [init(url: URL, options: [String : Any]?)](avurlasset/init(url:options:)-2x8uu.md)
+### Creating an asset
+- [init(url: URL, options: [String : Any]?)](./init%28url,options%29-2x8uu.md)
   Creates an asset that models the media resource at the specified URL.
-- [Initialization options](avurlasset-initialization-options.md)
+- [Initialization options](../avurlasset-initialization-options.md)
   Specify options to configure the initialization of a media asset.
 
 

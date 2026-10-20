@@ -1,7 +1,8 @@
 # copyBytes(to:from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the bytes in a range from the data into a buffer.
 
@@ -35,13 +36,14 @@ If the count of the range is greater than `MemoryLayout<DestinationType>.stride 
 
 ## See Also
 
-- [func withUnsafeBytes<ResultType, ContentType>((UnsafePointer<ContentType>) throws -> ResultType) rethrows -> ResultType](data/withunsafebytes(_:).md)
+### Accessing Underlying Memory
+- [func withUnsafeBytes<ResultType, ContentType>((UnsafePointer<ContentType>) throws -> ResultType) rethrows -> ResultType](./withunsafebytes%28_%29.md)
   Accesses the raw bytes in the data’s buffer.
-- [func withUnsafeMutableBytes<ResultType, ContentType>((UnsafeMutablePointer<ContentType>) throws -> ResultType) rethrows -> ResultType](data/withunsafemutablebytes(_:)-7ac1g.md)
+- [func withUnsafeMutableBytes<ResultType, ContentType>((UnsafeMutablePointer<ContentType>) throws -> ResultType) rethrows -> ResultType](./withunsafemutablebytes%28_%29-7ac1g.md)
   Mutates the raw bytes in the data’s buffer.
-- [func copyBytes(to: UnsafeMutablePointer<UInt8>, count: Int)](data/copybytes(to:count:).md)
+- [func copyBytes(to: UnsafeMutablePointer<UInt8>, count: Int)](./copybytes%28to,count%29.md)
   Copies the contents of the data to memory.
-- [func copyBytes(to: UnsafeMutablePointer<UInt8>, from: Range<Data.Index>)](data/copybytes(to:from:)-8qk4r.md)
+- [func copyBytes(to: UnsafeMutablePointer<UInt8>, from: Range<Data.Index>)](./copybytes%28to,from%29-8qk4r.md)
   Copies a subset of the contents of the data to memory.
 
 

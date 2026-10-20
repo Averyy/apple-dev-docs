@@ -1,7 +1,8 @@
 # GKMatchType.turnBased
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A turn-based match hosted by Game Center.
 
@@ -20,20 +21,25 @@ A turn-based match hosted by Game Center.
 case turnBased
 ```
 
+```c
+GKMatchTypeTurnBased
+```
+
 ## Mentions
 
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
+- [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
 #### Discussion
 
-A [`GKTurnBasedMatch`](gkturnbasedmatch.md) object represents a turn-based match.
+A [`GKTurnBasedMatch`](../gkturnbasedmatch.md) object represents a turn-based match.
 
 ## See Also
 
-- [GKMatchType.peerToPeer](gkmatchtype/peertopeer.md)
+### Types
+- [GKMatchType.peerToPeer](./peertopeer.md)
   A peer-to-peer match hosted by Game Center.
-- [GKMatchType.hosted](gkmatchtype/hosted.md)
+- [GKMatchType.hosted](./hosted.md)
   A match hosted on your private server.
 
 

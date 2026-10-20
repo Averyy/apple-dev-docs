@@ -1,7 +1,8 @@
 # associativeList(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 An associative list value (ordered key-value pairs) to be used with a `URL.Template`.
 

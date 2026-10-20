@@ -1,7 +1,8 @@
 # CKDatabase.Scope.shared
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The shared database.
 
@@ -20,19 +21,24 @@ The shared database.
 case shared
 ```
 
+```c
+CKDatabaseScopeShared
+```
+
 #### Discussion
 
 Records in a shared database:
 
-- Are available to share participants based on the permissions of the enclosing [`CKShare`](ckshare.md)
+- Are available to share participants based on the permissions of the enclosing [`CKShare`](../../ckshare.md)
 - Are not visible to the application developer via the Developer Portal.
 - Are counted towards the originating owner’s iCloud account storage quota.
 
 ## See Also
 
-- [CKDatabase.Scope.public](ckdatabase/scope/public.md)
+### Database Scopes
+- [CKDatabase.Scope.public](./public.md)
   The public database.
-- [CKDatabase.Scope.private](ckdatabase/scope/private.md)
+- [CKDatabase.Scope.private](./private.md)
   The private database.
 
 

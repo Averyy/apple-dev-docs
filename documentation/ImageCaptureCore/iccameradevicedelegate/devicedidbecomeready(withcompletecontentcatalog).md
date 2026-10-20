@@ -2,6 +2,7 @@
 
 **Framework**: ImageCaptureCore  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the client that the camera device is done enumerating its content and is ready to receive requests.
@@ -17,6 +18,10 @@ Tells the client that the camera device is done enumerating its content and is r
 
 ```swift
 func deviceDidBecomeReady(withCompleteContentCatalog device: ICCameraDevice)
+```
+
+```objc
+- (void) deviceDidBecomeReadyWithCompleteContentCatalog:(ICCameraDevice *) device;
 ```
 
 #### Discussion

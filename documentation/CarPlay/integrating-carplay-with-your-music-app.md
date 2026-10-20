@@ -1,6 +1,8 @@
 # Integrating CarPlay with Your Music App
 
-**Framework**: CarPlay
+**Framework**: CarPlay  
+**Role**: Sample Code  
+**Download**: [IntegratingCarPlayWithYourMusicApp.zip](https://docs-assets.developer.apple.com/published/f5c58cac38e6/IntegratingCarPlayWithYourMusicApp.zip)
 
 Configure your music app to work with CarPlay by displaying a custom UI.
 
@@ -12,17 +14,17 @@ Configure your music app to work with CarPlay by displaying a custom UI.
 
 #### Overview
 
-CarPlay Music is a sample music app that demonstrates how to display a custom UI from a CarPlay–enabled vehicle. CarPlay Music integrates with the CarPlay framework by implementing the  [`CPNowPlayingTemplate`](cpnowplayingtemplate.md) and [`CPListTemplate`](cplisttemplate.md). This sample’s iOS app component provides a logging interface to help you understand the life cycle of a CarPlay app, as well as a music controller.
+CarPlay Music is a sample music app that demonstrates how to display a custom UI from a CarPlay–enabled vehicle. CarPlay Music integrates with the CarPlay framework by implementing the  [`CPNowPlayingTemplate`](./cpnowplayingtemplate.md) and [`CPListTemplate`](./cplisttemplate.md). This sample’s iOS app component provides a logging interface to help you understand the life cycle of a CarPlay app, as well as a music controller.
 
 ##### Configure the Sample Code Project
 
 To configure the sample code project, perform the following:
 
-1. Complete the steps in [`Requesting CarPlay Entitlements`](requesting-carplay-entitlements.md) to request the CarPlay audio entitlement and configure the Xcode project.
-2. Create a key and developer token for the [`MusicKit`](https://developer.apple.comhttps://developer.apple.com/musickit) service. For more information, see [`Generating Developer Tokens`](https://developer.apple.com/documentation/applemusicapi/generating-developer-tokens).
+1. Complete the steps in [Requesting CarPlay Entitlements](./requesting-carplay-entitlements.md) to request the CarPlay audio entitlement and configure the Xcode project.
+2. Create a key and developer token for the [MusicKit](https://developer.apple.com/musickit) service. For more information, see [Getting Keys and Creating Tokens](../AppleMusicAPI/generating-developer-tokens.md).
 3. Update the `developerToken` variable in the `AppleMusicAPIController.swift` file to use the developer token you create.
 
-##### Handle Communication with Carplay
+##### Handle Communication with CarPlay
 
 The app is responsible for adding and removing the root view controller of the CarPlay window in response to connections and disconnections.
 
@@ -77,7 +79,7 @@ self.carplayInterfaceController!.setRootTemplate(CPTabBarTemplate(templates: tab
 
 ##### Prepare for App Selection
 
-Like other Music apps, CarPlay Music is eligible to participate in App Selection to improve its interactions with Siri. This allows the system to automatically select the app for playing music on the device. See [`Improving Siri Media Interactions and App Selection`](https://developer.apple.com/documentation/sirikit/improving-siri-media-interactions-and-app-selection).
+Like other Music apps, CarPlay Music is eligible to participate in App Selection to improve its interactions with Siri. This allows the system to automatically select the app for playing music on the device. See [`Improving Siri Media Interaction and App Selection`](../SiriKit/improving-siri-media-interactions-and-app-selection.md).
 
 The following code demonstrates how to declare an app as eligible for App Selection:
 
@@ -119,7 +121,8 @@ self.nowPlayingItemObserver = NotificationCenter.default.addObserver(
 
 ## See Also
 
-- [class CPNowPlayingTemplate](cpnowplayingtemplate.md)
+### Audio
+- [class CPNowPlayingTemplate](./cpnowplayingtemplate.md)
   A shared system template that displays Now Playing information.
 
 

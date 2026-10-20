@@ -1,24 +1,26 @@
 # HostToUSB16
 
 **Framework**: USBDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 #define HostToUSB16
 ```
 
 ## See Also
 
-- [HostToUSB32](hosttousb32.md)
-- [HostToUSB64](hosttousb64.md)
-- [USBToHost16](usbtohost16.md)
-- [USBToHost32](usbtohost32.md)
-- [USBToHost64](usbtohost64.md)
+### Integer Conversion Routines
+- [HostToUSB32](./hosttousb32.md)
+- [HostToUSB64](./hosttousb64.md)
+- [USBToHost16](./usbtohost16.md)
+- [USBToHost32](./usbtohost32.md)
+- [USBToHost64](./usbtohost64.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(contents:symlinkAttributes:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a result for a symlink-reading operation.
 
@@ -14,6 +15,10 @@ Creates a result for a symlink-reading operation.
 init?(contents: FSFileName, symlinkAttributes attributes: FSItem.Attributes)
 ```
 
+```objc
+- (instancetype) initWithContents:(FSFileName *) contents symlinkAttributes:(FSItemAttributes *) attributes;
+```
+
 #### Return Value
 
 A populated result instance, or `nil` if validation fails.
@@ -21,13 +26,14 @@ A populated result instance, or `nil` if validation fails.
 ## Parameters
 
 - `contents`: The contents of the symbolic link.
-- `attributes`: The [`FSItem.Attributes`](fsitem/attributes.md) of the symbolic link.
+- `attributes`: The [`FSItem.Attributes`](../fsitem/attributes.md) of the symbolic link.
 
 ## See Also
 
-- [class FSFileName](fsfilename.md)
+### Creating a read-symlink result
+- [class FSFileName](../fsfilename.md)
   The name of a file, expressed as a data buffer.
-- [FSItem.Attributes](fsitem/attributes.md)
+- [FSItem.Attributes](../fsitem/attributes.md)
   Attributes of an item, such as size, creation and modification times, and user and group identifiers.
 
 

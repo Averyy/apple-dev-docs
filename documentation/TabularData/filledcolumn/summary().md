@@ -1,7 +1,8 @@
 # summary()
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a categorical summary of the filled column’s elements, including default values.
 
@@ -20,11 +21,14 @@ Generates a categorical summary of the filled column’s elements, including def
 func summary() -> CategoricalSummary<FilledColumn<Base>.WrappedElement>
 ```
 
+Available when `Base` conforms to `OptionalColumnProtocol` and `Base.WrappedElement` conforms to `Hashable`.
+
 ## See Also
 
-- [func numericSummary() -> NumericSummary<Double>](filledcolumn/numericsummary-3ao8s.md)
+### Summarizing a Column
+- [func numericSummary() -> NumericSummary<Double>](./numericsummary%28%29-3ao8s.md)
   Generates a numeric summary of the integer column’s elements.
-- [func numericSummary() -> NumericSummary<Base.WrappedElement>](filledcolumn/numericsummary-86mgh.md)
+- [func numericSummary() -> NumericSummary<Base.WrappedElement>](./numericsummary%28%29-86mgh.md)
   Generates a numeric summary of the floating-point column’s elements.
 
 

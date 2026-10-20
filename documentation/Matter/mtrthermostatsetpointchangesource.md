@@ -1,7 +1,8 @@
 # MTRThermostatSetpointChangeSource
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,24 +19,28 @@
 enum MTRThermostatSetpointChangeSource
 ```
 
+```c
+enum MTRThermostatSetpointChangeSource : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRThermostatSetpointChangeSource.external](mtrthermostatsetpointchangesource/external.md)
-- [MTRThermostatSetpointChangeSource.manual](mtrthermostatsetpointchangesource/manual.md)
-- [MTRThermostatSetpointChangeSource.schedule](mtrthermostatsetpointchangesource/schedule.md)
+- [MTRThermostatSetpointChangeSource.external](./mtrthermostatsetpointchangesource/external.md)
+- [MTRThermostatSetpointChangeSource.manual](./mtrthermostatsetpointchangesource/manual.md)
+- [MTRThermostatSetpointChangeSource.schedule](./mtrthermostatsetpointchangesource/schedule.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrthermostatsetpointchangesource/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrthermostatsetpointchangesource/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

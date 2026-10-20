@@ -1,7 +1,8 @@
 # XPC_ACTIVITY_DELAY
 
 **Framework**: XPC  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An integer property that indicates the number of seconds to delay before beginning the activity.
 
@@ -14,11 +15,16 @@ An integer property that indicates the number of seconds to delay before beginni
 let XPC_ACTIVITY_DELAY: UnsafePointer<CChar>
 ```
 
+```c
+extern const char * const XPC_ACTIVITY_DELAY;
+```
+
 ## See Also
 
-- [let XPC_ACTIVITY_REPEATING: UnsafePointer<CChar>](xpc_activity_repeating.md)
+### Scheduling
+- [let XPC_ACTIVITY_REPEATING: UnsafePointer<CChar>](./xpc_activity_repeating.md)
   A Boolean property that indicates whether this is a repeating activity.
-- [let XPC_ACTIVITY_GRACE_PERIOD: UnsafePointer<CChar>](xpc_activity_grace_period.md)
+- [let XPC_ACTIVITY_GRACE_PERIOD: UnsafePointer<CChar>](./xpc_activity_grace_period.md)
   An integer property that indicates the number of seconds to allow as a grace period before the scheduling of the activity becomes more aggressive.
 
 

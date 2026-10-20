@@ -1,7 +1,8 @@
 # UISupportedExternalAccessoryProtocols
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The protocols that the app uses to communicate with external accessory hardware.
 
@@ -9,9 +10,10 @@ The protocols that the app uses to communicate with external accessory hardware.
 - iOS 3.0+
 - iPadOS 3.0+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `UISupportedExternalAccessoryProtocols` (Supported external accessory protocols)
+- **Type**: array of string 
 
 #### Discussion
 
@@ -19,7 +21,8 @@ Add this key to your app’s `Info.plist` file, and set the value to the names o
 
 ## See Also
 
-- [UIApplicationSupportsPrintCommand](information-property-list/uiapplicationsupportsprintcommand.md)
+### External accessories
+- [UIApplicationSupportsPrintCommand](./uiapplicationsupportsprintcommand.md)
   A Boolean value that indicates whether the app supports the Command-P keyboard shortcut.
 
 

@@ -1,7 +1,8 @@
 # RelativeDateTimeFormatter.DateTimeStyle.numeric
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that uses a numeric style to describe relative dates, such as “1 day ago” or “in 3 weeks”.
 
@@ -20,9 +21,14 @@ A style that uses a numeric style to describe relative dates, such as “1 day a
 case numeric
 ```
 
+```c
+NSRelativeDateTimeFormatterStyleNumeric
+```
+
 ## See Also
 
-- [RelativeDateTimeFormatter.DateTimeStyle.named](relativedatetimeformatter/datetimestyle-swift.enum/named.md)
+### Formatting Dates and Times
+- [RelativeDateTimeFormatter.DateTimeStyle.named](./named.md)
   A style that uses named styles to describe relative dates, such as “yesterday”, “last week”, or “next week”.
 
 

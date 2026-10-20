@@ -1,22 +1,27 @@
 # setCurrentSubscription(_:)
 
 **Framework**: Video Subscriber Account  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the subscription information for the current user.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 11.0+
-- macOS ?+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 18.0 (renamed: VSUserAccountManager)
+- iPadOS 11.0+ - Deprecated in 18.0 (renamed: VSUserAccountManager)
+- Mac Catalyst 11.0+ - Deprecated in 18.0 (renamed: VSUserAccountManager)
+- macOS
+- tvOS 11.0+ - Deprecated in 18.0 (renamed: VSUserAccountManager)
+- visionOS 1.0+ - Deprecated in 2.0 (renamed: VSUserAccountManager)
 
 ## Declaration
 
 ```swift
 func setCurrentSubscription(_ currentSubscription: VSSubscription?)
+```
+
+```objc
+- (void) setCurrentSubscription:(VSSubscription *) currentSubscription;
 ```
 
 #### Discussion
@@ -31,7 +36,7 @@ The system throws an exception if you try to set the current subscription to an 
 
 ## Parameters
 
-- `currentSubscription`: A [`VSSubscription`](vssubscription.md) object that contains the subscription information to set.
+- `currentSubscription`: A [`VSSubscription`](../vssubscription.md) object that contains the subscription information to set.
 
 
 ---

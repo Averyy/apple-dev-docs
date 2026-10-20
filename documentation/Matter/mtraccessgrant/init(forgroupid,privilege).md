@@ -1,7 +1,8 @@
 # init(forGroupID:privilege:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 init?(forGroupID groupID: NSNumber, privilege: MTRAccessControlEntryPrivilege)
+```
+
+```objc
++ (MTRAccessGrant *) accessGrantForGroupID:(NSNumber *) groupID privilege:(MTRAccessControlEntryPrivilege) privilege;
 ```
 
 

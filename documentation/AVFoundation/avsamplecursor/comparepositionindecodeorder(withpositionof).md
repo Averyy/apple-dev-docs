@@ -1,7 +1,8 @@
 # comparePositionInDecodeOrder(withPositionOf:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the relative positions of two sample cursors and returns their relative positions.
 
@@ -20,13 +21,17 @@ Compares the relative positions of two sample cursors and returns their relative
 func comparePositionInDecodeOrder(withPositionOf cursor: AVSampleCursor) -> ComparisonResult
 ```
 
+```objc
+- (NSComparisonResult) comparePositionInDecodeOrderWithPositionOfCursor:(AVSampleCursor *) cursor;
+```
+
 #### Return Value
 
 Returns a comparison result that indicates of this cursor points at a sample before, the same as, or after the sample pointed to by the specified cursor.
 
 #### Discussion
 
-Undefined results occur if this cursor and the passed in cursor reference different sequences of samples, such as when they’re created by different instances of [`AVAssetTrack`](avassettrack.md).
+Undefined results occur if this cursor and the passed in cursor reference different sequences of samples, such as when they’re created by different instances of [`AVAssetTrack`](../avassettrack.md).
 
 ## Parameters
 

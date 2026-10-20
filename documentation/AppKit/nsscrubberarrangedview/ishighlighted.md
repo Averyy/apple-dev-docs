@@ -1,7 +1,8 @@
 # isHighlighted
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether the view is currently highlighted.
 
@@ -14,9 +15,14 @@ A Boolean value that specifies whether the view is currently highlighted.
 var isHighlighted: Bool { get set }
 ```
 
+```objc
+@property (getter=isHighlighted) BOOL highlighted;
+```
+
 ## See Also
 
-- [var isSelected: Bool](nsscrubberarrangedview/isselected.md)
+### Managing selection and highlighting
+- [var isSelected: Bool](./isselected.md)
   A Boolean value that specifies whether the current view is selected.
 
 

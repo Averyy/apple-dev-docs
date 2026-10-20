@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Media Intelligence  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an identifier from a raw string value.
 

@@ -1,7 +1,8 @@
 # style
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The semantic style the format style uses to represent a byte count value.
 
@@ -22,7 +23,8 @@ var style: ByteCountFormatStyle.Style
 
 ## See Also
 
-- [ByteCountFormatStyle.Style](bytecountformatstyle/style-swift.enum.md)
+### Customizing style behavior
+- [ByteCountFormatStyle.Style](../style-swift.enum.md)
   The semantic style to use when formatting a byte count value.
 
 

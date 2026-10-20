@@ -1,7 +1,8 @@
 # Publishers.TryCatch.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher uses its upstream publisher’s output type.
 
 ## See Also
 
-- [Publishers.TryCatch.Failure](publishers/trycatch/failure.md)
+### Declaring supporting types
+- [Publishers.TryCatch.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

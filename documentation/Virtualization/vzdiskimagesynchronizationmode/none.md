@@ -1,7 +1,8 @@
 # VZDiskImageSynchronizationMode.none
 
 **Framework**: Virtualization  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Disables data synchronization with the permanent storage.
 
@@ -14,6 +15,10 @@ Disables data synchronization with the permanent storage.
 case none
 ```
 
+```c
+VZDiskImageSynchronizationModeNone
+```
+
 #### Discussion
 
 This option doesn’t guarantee data integrity if any error condition occurs, such as disk full on the host, panic, power loss, and so on.
@@ -24,9 +29,10 @@ Using this mode may result in improved performance because no synchronization wi
 
 ## See Also
 
-- [VZDiskImageSynchronizationMode.full](vzdiskimagesynchronizationmode/full.md)
+### Disk image synchronization modes
+- [VZDiskImageSynchronizationMode.full](./full.md)
   Synchronizes data to the permanent storage holding the disk image.
-- [VZDiskImageSynchronizationMode.fsync](vzdiskimagesynchronizationmode/fsync.md)
+- [VZDiskImageSynchronizationMode.fsync](./fsync.md)
   Synchronizes data to the drive using the system’s best-effort synchronization mode.
 
 

@@ -1,12 +1,13 @@
 # visionOS Release Notes
 
-**Framework**: visionOS Release Notes
+**Framework**: visionOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The visionOS SDK provides support for developing apps for Apple Vision Pro devices running visionOS. The SDK comes bundled with Xcode 15.2. For information on the compatibility requirements for Xcode 15.2, see [`Xcode 15.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-15_2-release-notes).
+The visionOS SDK provides support for developing apps for Apple Vision Pro devices running visionOS. The SDK comes bundled with Xcode 15.2. For information on the compatibility requirements for Xcode 15.2, see [Xcode 15.2 Release Notes](../Xcode-Release-Notes/xcode-15_2-release-notes.md).
 
 ##### General
 
@@ -28,14 +29,20 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 ###### New Features
 
-- Spatial - Introduced trigonometry functions for [`Spatial angle type`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/angle2d#4180998).
-- Introduced spherical linear interpolation for [`Spatial rotations`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/rotation3d/4157007-slerp).
-- Introduced  swing-twist decomposition for [`Spatial rotations`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/rotation3d#4130747).
-- BNNS - Introduced [`BNNSRandomFillCategoricalFloat`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/4126856-bnnsrandomfillcategoricalfloat) that fills a tensor with random values from the categorical distributions with event probabilities.
-- Introduced [`k-nearest neighbors calculation`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/bnns#4164142).
-- vImage - Introduced [`vImageConvolveFloatKernel_ARGB8888`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/4172614-vimageconvolvefloatkernel_argb88) that applies convolution to 8-bit-per-channel, 4-channel interleaved images using 32-bit floating-point weights.
-- Introduced [`vImageSepConvolve_ARGB8888`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/4172615-vimagesepconvolve_argb8888) that applies separable convolution to 8-bit-per-channel, 4-channel interleaved images.
-- Added flood fill, perspective transform, and new lookup table transforms to [`vImage.PixelBuffer`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/vimage/pixelbuffer).  (105830806)
+- Spatial
+
+  - Introduced trigonometry functions for [Spatial angle type](../Spatial/angle2d.md#4180998).
+  - Introduced spherical linear interpolation for [Spatial rotations](../Spatial/rotation3d/api-4157007-slerp.md).
+  - Introduced  swing-twist decomposition for [Spatial rotations](../Spatial/rotation3d.md#4130747).
+- BNNS
+
+  - Introduced [BNNSRandomFillCategoricalFloat](../Accelerate/api-4126856-bnnsrandomfillcategoricalfloat.md) that fills a tensor with random values from the categorical distributions with event probabilities.
+  - Introduced [k-nearest neighbors calculation](../Accelerate/bnns.md#4164142).
+- vImage
+
+  - Introduced [vImageConvolveFloatKernel_ARGB8888](../Accelerate/api-4172614-vimageconvolvefloatkernel_argb88.md) that applies convolution to 8-bit-per-channel, 4-channel interleaved images using 32-bit floating-point weights.
+  - Introduced [vImageSepConvolve_ARGB8888](../Accelerate/api-4172615-vimagesepconvolve_argb8888.md) that applies separable convolution to 8-bit-per-channel, 4-channel interleaved images.
+  - Added flood fill, perspective transform, and new lookup table transforms to [vImage.PixelBuffer](../Accelerate/vimage/pixelbuffer.md).  (105830806)
 
 ##### Accessibility
 
@@ -61,7 +68,9 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 ###### Known Issues
 
-- Apps built for visionOS are unable to use the front-facing-camera UI Required Device Capability.   (121465787) **Workaround:** Remove the front-facing-camera UIRDC for apps built for visionOS.
+- Apps built for visionOS are unable to use the front-facing-camera UI Required Device Capability.   (121465787)
+
+  **Workaround:** Remove the front-facing-camera UIRDC for apps built for visionOS.
 
 ##### Apple Pay
 
@@ -70,7 +79,7 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 - Fixed: Apple Pay payments don’t complete if cards are added during restore from iCloud backup.  (104921490)
 - Fixed: You might be unable to continue past the Apple Pay setup screen during Setup Assistant.  (108868427)
 
-##### Arkit
+##### ARKit
 
 ###### Resolved Issues
 
@@ -80,7 +89,9 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 ###### Known Issues
 
-- You might experience difficulty working with large models in QuickLook or third-party apps.  (109805525) **Workaround:** Walk outside of the object, and force quit the affected app.
+- You might experience difficulty working with large models in QuickLook or third-party apps.  (109805525)
+
+  **Workaround:** Walk outside of the object, and force quit the affected app.
 
 ##### Asset Catalogs
 
@@ -88,7 +99,7 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 - Fixed: The asset catalog editor doesn’t have an option to provide high contrast versions of Reality-idiom images and colors.  (109360733)
 
-##### Aswebauthenticationsession
+##### ASWebAuthenticationSession
 
 ###### Resolved Issues
 
@@ -120,7 +131,7 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 - Fixed: Applications designed for iPad might use the wrong accent color for images after selecting items in a sidebar.  (105790997)
 
-##### Compositorservices
+##### CompositorServices
 
 ###### Resolved Issues
 
@@ -150,7 +161,7 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 - Tracking Failure alerts might appear in unexpected positions.  (113142690)
 
-##### Facetime
+##### FaceTime
 
 ###### Resolved Issues
 
@@ -164,7 +175,7 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 ###### Notes
 
-- Feedback Assistant app does not appear on Home View for visionOS. To file feedback, click on this link from your visionOS device: [`applefeedback://new`](https://developer.apple.comapplefeedback://new).   (119262359)
+- Feedback Assistant app does not appear on Home View for visionOS. To file feedback, click on this link from your visionOS device: [applefeedback://new](applefeedback://new).   (119262359)
 
 ##### Game Center
 
@@ -178,7 +189,7 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 - Fixed: Game controllers might not function after interacting with Control Center.  (101399998)
 
-##### Ipados and Ios Compatibility
+##### iPadOS and iOS Compatibility
 
 ###### Resolved Issues
 
@@ -188,7 +199,9 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 ###### Known Issues
 
-- Game controllers might stop working after interacting outside the game window or on incoming notification.   (112147453) **Workaround:** Tap inside app window again to return game controller focus.
+- Game controllers might stop working after interacting outside the game window or on incoming notification.   (112147453)
+
+  **Workaround:** Tap inside app window again to return game controller focus.
 
 ##### Keyboard
 
@@ -204,8 +217,12 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 ###### Known Issues
 
-- In Compatible iPad and iPhone Apps, keyboard-related UI doesn’t animate as expected when appearing into view. However, the animation is correct when the keyboard-related UI disappears.  (114573647) **Workaround:** Depending on UI layout needs, it might be preferable to remove animation from the layout to match the keyboard behavior in visionOS. If the preference is to continue animating the layout changes, you’ll need to determine the timing and animation curve to produce the desired appearance.
-- In Compatible iPad and iPhone Apps, when keyboard-related UI disappears, notifications sent on appearance are unexpectedly repeated, followed immediately by the expected notifications for disappearance.  (114573814) **Workaround:** If your app experiences an issue, change your code to ignore appearance-related notifications which repeat information previously received.
+- In Compatible iPad and iPhone Apps, keyboard-related UI doesn’t animate as expected when appearing into view. However, the animation is correct when the keyboard-related UI disappears.  (114573647)
+
+  **Workaround:** Depending on UI layout needs, it might be preferable to remove animation from the layout to match the keyboard behavior in visionOS. If the preference is to continue animating the layout changes, you’ll need to determine the timing and animation curve to produce the desired appearance.
+- In Compatible iPad and iPhone Apps, when keyboard-related UI disappears, notifications sent on appearance are unexpectedly repeated, followed immediately by the expected notifications for disappearance.  (114573814)
+
+  **Workaround:** If your app experiences an issue, change your code to ignore appearance-related notifications which repeat information previously received.
 
 ##### Location
 
@@ -268,7 +285,7 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 - Fixed: Detail pages might not load in Listen Now and Library.  (112273860)
 - Fixed: Missing content or gaps might appear when scrolling up and down.  (114225882)
 
-##### Optic Id
+##### Optic ID
 
 ###### Resolved Issues
 
@@ -291,14 +308,18 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 ###### Known Issues
 
-- Audio playback in Reality Composer Pro might stop after switching audio devices, for example from speakers to headphones.  (109911988) **Workaround:** This issue is resolved in macOS Ventura 13.4. When using previous versions of macOS, save the project and quit Reality Composer Pro, then reload the project after switching audio devices.
-- Reality Composer Pro might quit unexpectedly after switching audio devices from a Studio Display to another device, such as AirPods or built-in speakers.  (109912081) **Workaround:** Save the project and quit Reality Composer Pro, switch the audio output device, then reload the project.
+- Audio playback in Reality Composer Pro might stop after switching audio devices, for example from speakers to headphones.  (109911988)
 
-##### Realitykit
+  **Workaround:** This issue is resolved in macOS Ventura 13.4. When using previous versions of macOS, save the project and quit Reality Composer Pro, then reload the project after switching audio devices.
+- Reality Composer Pro might quit unexpectedly after switching audio devices from a Studio Display to another device, such as AirPods or built-in speakers.  (109912081)
+
+  **Workaround:** Save the project and quit Reality Composer Pro, switch the audio output device, then reload the project.
+
+##### RealityKit
 
 ###### Resolved Issues
 
-- Fixed: `HoverEffectComponent` will only apply a hover effect to the RealityKit [`Entity`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/entity) object to which it is directly added.  (105618166)
+- Fixed: `HoverEffectComponent` will only apply a hover effect to the RealityKit [Entity](../RealityKit/entity.md) object to which it is directly added.  (105618166)
 - Fixed: Reality files with entity trigger actions might collide with dynamic rigid bodies if the trigger flag on the collision component isn’t set. Entity trigger actions are created by Reality Composer Pro for collision components to trigger animations and other effects when two 3D volumes intersect each other. Dynamic rigid bodies previously didn’t interact with colliders if there wasn’t a rigid body component present on the entity with the collider. This behavior changed so that rigid bodies could interact with all colliders that aren’t explicitly flagged as a trigger.  (108760431)
 - Fixed: The new `Entity.playAnimation()` function now exposes a user-defined handoff type. The default behavior differs slightly from the default behavior of the existing `Entity.playAnimation()` functions.  In the previous version of `Entity.playAnimation()`, where handoff type wasn’t exposed, the default handoff type was set to `.snapshotAndReplace(applyToAllLayers: true)` unless the `blendLayerOffset` was not `0`, in which case the handoff type was set to `.compose`. The default handoff type for the new `Entity.playAnimation()` function is `.snapshotAndReplace(applyToAllLayers: true)`.  (108908429)
 - Fixed: For physics simulations in shared applications, `PhysicsSimulationComponent.nearestSimulationEntity` will return `nil` by default rather than the root physics entity.  (109239347)
@@ -308,8 +329,12 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 ###### Known Issues
 
-- In a physics simulation, collision shape extents that fall below 2mm are forced to be 2mm in size.  (107999189) **Workaround:** Ensure collision shape extents are 2mm or larger.
-- Negative scaling colliders and rigid bodies in physics simulations might result in undefined behavior.  (112628900) **Workaround:** You can negatively scale meshes before passing them to physics.
+- In a physics simulation, collision shape extents that fall below 2mm are forced to be 2mm in size.  (107999189)
+
+  **Workaround:** Ensure collision shape extents are 2mm or larger.
+- Negative scaling colliders and rigid bodies in physics simulations might result in undefined behavior.  (112628900)
+
+  **Workaround:** You can negatively scale meshes before passing them to physics.
 
 ##### Screen Recording
 
@@ -367,29 +392,35 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 - Fixed: When speaking “Hey Siri, FaceTime him”, ‘him’ is mistaken for ‘Kim’.  (108555952)
 - Fixed: When gazing and saying “Hey Siri, FaceTime him”, or “Hey Siri, FaceTime her” the wrong conversation is presented.  (110172520)
 
-##### Storekit
+##### StoreKit
 
 ###### New Features
 
-- The [`productViewIconBorder()`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/automaticproductplaceholdericon/4278999-producticonborder) view modifier is available when using StoreKit and SwiftUI. Use this modifier on the icons to provide [`ProductView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/productview) and [`StoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/storeview) to add a standard border around the icon.  (106649532)
-- You can now customize the button style used for purchase and subscribe buttons in [`ProductView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/productview), [`StoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/storeview) and [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) instances. Use the [`buttonStyle(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/buttonstyle(_:)-7qx1) view modifier to choose any standard button style, or a custom button style.  (107713282)
-- The following StoreKit types are renamed: • `DefaultProductViewStyle` is renamed to [`AutomaticProductViewStyle`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/automaticproductviewstyle) • `DefaultSubscriptionStoreMarketingContent` is renamed to [`AutomaticSubscriptionStoreMarketingContent`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/automaticsubscriptionstoremarketingcontent) • `DefaultProductPlaceholderIcon` is renamed to [`AutomaticProductPlaceholderIcon`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/automaticproductplaceholdericon)  (111185321)
+- The [productViewIconBorder()](../StoreKit/automaticproductplaceholdericon/api-4278999-producticonborder.md) view modifier is available when using StoreKit and SwiftUI. Use this modifier on the icons to provide [ProductView](../StoreKit/productview.md) and [StoreView](../StoreKit/storeview.md) to add a standard border around the icon.  (106649532)
+- You can now customize the button style used for purchase and subscribe buttons in [`ProductView`](../StoreKit/productview.md), [`StoreView`](../StoreKit/storeview.md) and [SubscriptionStoreView](../StoreKit/subscriptionstoreview.md) instances. Use the [buttonStyle(_:)](../SwiftUI/view/buttonstyle%28_%29-7qx1.md) view modifier to choose any standard button style, or a custom button style.  (107713282)
+- The following StoreKit types are renamed:
+
+  • `DefaultProductViewStyle` is renamed to [AutomaticProductViewStyle](../StoreKit/automaticproductviewstyle.md)
+
+  • `DefaultSubscriptionStoreMarketingContent` is renamed to [AutomaticSubscriptionStoreMarketingContent](../StoreKit/automaticsubscriptionstoremarketingcontent.md)
+
+  • `DefaultProductPlaceholderIcon` is renamed to [AutomaticProductPlaceholderIcon](../StoreKit/automaticproductplaceholdericon.md)  (111185321)
 
 ###### Resolved Issues
 
-- Fixed: Calling [`display`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/message/3963915-display) on a [`message`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/message) might not display the message.  (106523068)
-- Fixed: Loading animation for [`StoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/storeview) instances displaying a single product.  (110414023)
-- Fixed: The following StoreKitTest APIs are now available when testing on iOS 17 beta, watchOS 10 beta, tvOS 17 beta, and visionOS beta: [`setSimulatedError(_:forAPI:)`](https://developer.apple.comhttps://developer.apple.com/documentation/storekittest/sktestsession/4196369-setsimulatederror), [`simulatedError(forAPI:)`](https://developer.apple.comhttps://developer.apple.com/documentation/storekittest/sktestsession/4196370-simulatederror), and [`buyProduct(identifier:options:)`](https://developer.apple.comhttps://developer.apple.com/documentation/storekittest/sktestsession/4196368-buyproduct).  (110547289)
-- Fixed: [`StoreView`](https://developer.apple.com﻿﻿https://developer.apple.com/documentation/storekit/storeview) or [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) content might appear in English, or show a localization key, instead of showing localized text for the App Store storefront.  (110734447)
+- Fixed: Calling [display](../StoreKit/message/api-3963915-display.md) on a [message](../StoreKit/message.md) might not display the message.  (106523068)
+- Fixed: Loading animation for [`StoreView`](../StoreKit/storeview.md) instances displaying a single product.  (110414023)
+- Fixed: The following StoreKitTest APIs are now available when testing on iOS 17 beta, watchOS 10 beta, tvOS 17 beta, and visionOS beta: [setSimulatedError(_:forAPI:)](../StoreKitTest/sktestsession/api-4196369-setsimulatederror.md), [simulatedError(forAPI:)](../StoreKitTest/sktestsession/api-4196370-simulatederror.md), and [buyProduct(identifier:options:)](../StoreKitTest/sktestsession/api-4196368-buyproduct.md).  (110547289)
+- Fixed: [StoreView](https://developer.apple.com﻿﻿https://developer.apple.com/documentation/storekit/storeview) or [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) content might appear in English, or show a localization key, instead of showing localized text for the App Store storefront.  (110734447)
 
-##### Swiftdata
+##### SwiftData
 
 ###### Resolved Issues
 
 - Fixed: SwiftData isn’t available in the visionOS SDK included in Xcode 15 beta 1.   (110546453)
 - Fixed: visionOS projects that use the `@Observable` property wrapper will fail to build in Xcode 15 beta 3.  (111494849)
 
-##### Swiftui
+##### SwiftUI
 
 ###### Resolved Issues
 
@@ -406,10 +437,14 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 ###### Known Issues
 
 - Content depth doesn’t propagate when using `UIViewRepresentable` or `UIViewControllerRepresentable`.  (108052196)
-- Applying the `.volumetric` window style on a `DocumentGroup` has no effect.  (115562954) **Workaround:** Use a regular `WindowGroup` or use a `DocumentGroup` with no volumetric window style applied.
-- Volumes using the `defaultSize(_: Rect3D, in: UnitLength)` modifier to specify size, will only be the specified physical size at default (large) display zoom. At smaller display zooms the Volume will be smaller and clip content.  (116579319) (FB13240946) **Workaround:** Specify a size for the Volume about 1.5x larger than necessary, and ensure content is not clipped at smallest display zoom setting.
+- Applying the `.volumetric` window style on a `DocumentGroup` has no effect.  (115562954)
 
-##### Swiftui and Uikit
+  **Workaround:** Use a regular `WindowGroup` or use a `DocumentGroup` with no volumetric window style applied.
+- Volumes using the `defaultSize(_: Rect3D, in: UnitLength)` modifier to specify size, will only be the specified physical size at default (large) display zoom. At smaller display zooms the Volume will be smaller and clip content.  (116579319) (FB13240946)
+
+  **Workaround:** Specify a size for the Volume about 1.5x larger than necessary, and ensure content is not clipped at smallest display zoom setting.
+
+##### SwiftUI and UIKit
 
 ###### Resolved Issues
 
@@ -426,9 +461,11 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 - You might notice an extra `UIWindowScene` is connected to your application when using `ImmersiveScene`.  (107361984)
 - Some buttons might not play sound.  (108579439)
-- State restoration might restore an incorrect scene of an app.  (109120808) **Workaround:** Ensure that a secondary scene isn’t the last one to be closed.
+- State restoration might restore an incorrect scene of an app.  (109120808)
 
-##### Swiftui Scenes
+  **Workaround:** Ensure that a secondary scene isn’t the last one to be closed.
+
+##### SwiftUI Scenes
 
 ###### Resolved Issues
 
@@ -442,7 +479,7 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 - Fixed: Travel Mode is optimized for a stationary experience. If you activate Travel Mode in Control Center and start walking, you might experience unexpected behavior.  (113340825)
 - Fixed: Apps do not properly re-appear after entering or exiting Travel Mode.  (115860473)
 
-##### Tv
+##### TV
 
 ###### Resolved Issues
 
@@ -456,7 +493,7 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 - Fixed: If you remove Apple Vision Pro and put it back on during playback of Apple Immersive Video, the content might unexpectedly appear within an Environment.  (113641927)
 - Fixed: Selecting the expand button for a movie or TV show preview doesn’t present the video full screen.  (114210418)
 
-##### Ui Frameworks
+##### UI Frameworks
 
 ###### Resolved Issues
 
@@ -464,7 +501,7 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 - Fixed: Wheel pickers now display a per-column hover effect.  (103281179)
 - Fixed: The Cut, Copy, and Paste menu items in third-party applications might not function as expected.  (110426316)
 
-##### Uikit
+##### UIKit
 
 ###### New Features
 
@@ -482,13 +519,13 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 - `UISplitViewController.presentsWithGesture` and related display modes are deprecated.  (104141508)
 
-##### Uiviewcontroller
+##### UIViewController
 
 ###### Resolved Issues
 
 - Fixed: Presentations don’t respect `ViewController.preferredBackgroundContainerStyle`.  (106122535)
 
-##### Usdz Textures
+##### USDZ Textures
 
 ###### Deprecations
 
@@ -496,11 +533,12 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 ## See Also
 
-- [visionOS 1.3 Release Notes](visionos-1_3-release-notes.md)
+### visionOS
+- [visionOS 1.3 Release Notes](./visionos-1_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 1.2 Release Notes](visionos-1_2-release-notes.md)
+- [visionOS 1.2 Release Notes](./visionos-1_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 1.1 Release Notes](visionos-1_1-release-notes.md)
+- [visionOS 1.1 Release Notes](./visionos-1_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

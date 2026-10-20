@@ -1,7 +1,8 @@
 # gaussSeidel(iterationCount:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Gauss-Seidel solver for a cloth simulation.
 
@@ -30,7 +31,8 @@ This is the default solver. It provides the best trade-off between accuracy and 
 
 ## See Also
 
-- [static func jacobi(iterationCount: Int) -> ClothSimulationComponent.Solver](clothsimulationcomponent/solver-swift.struct/jacobi(iterationcount:).md)
+### Creating a solver
+- [static func jacobi(iterationCount: Int) -> ClothSimulationComponent.Solver](./jacobi%28iterationcount%29.md)
   Jacobi solver for a cloth simulation.
 
 

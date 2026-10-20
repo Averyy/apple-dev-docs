@@ -1,7 +1,8 @@
 # bytesPerRowAlignment
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes per row in the pixel buffer must be a multiple of this number.
 

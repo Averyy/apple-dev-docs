@@ -1,7 +1,8 @@
 # SKAdTestError.Code.signatureInvalidKey
 
 **Framework**: StoreKit Test  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The public key isn’t a valid cryptographic key, in the testing environment.
 
@@ -16,41 +17,46 @@ The public key isn’t a valid cryptographic key, in the testing environment.
 case signatureInvalidKey
 ```
 
+```c
+SKAdTestErrorCodeSignatureInvalidKey
+```
+
 #### Discussion
 
-The public key that you provide in the [`validate(_:publicKey:)`](skadtestsession/validate(_:publickey:).md) or [`validateImpression(parameters:publicKey:)`](skadtestsession/validateimpression(parameters:publickey:).md) methods must be a key that uses Elliptic Curve Digital Signature Algorithm (ECDSA) with a prime256v1 curve. For more information about the key, see [`Registering an ad network`](https://developer.apple.com/documentation/storekit/registering-an-ad-network).
+The public key that you provide in the [`validate(_:publicKey:)`](../../skadtestsession/validate%28_,publickey%29.md) or [`validateImpression(parameters:publicKey:)`](../../skadtestsession/validateimpression%28parameters,publickey%29.md) methods must be a key that uses Elliptic Curve Digital Signature Algorithm (ECDSA) with a prime256v1 curve. For more information about the key, see [Registering an ad network](../../../StoreKit/registering-an-ad-network.md).
 
 ## See Also
 
-- [SKAdTestError.Code.missingSignature](skadtesterror/code/missingsignature.md)
+### Signature Errors
+- [SKAdTestError.Code.missingSignature](./missingsignature.md)
   The signature for the ad is missing, in the testing environment.
-- [SKAdTestError.Code.signatureInvalidOrder](skadtesterror/code/signatureinvalidorder.md)
+- [SKAdTestError.Code.signatureInvalidOrder](./signatureinvalidorder.md)
   The order of the parameters in the signature is invalid, in the testing environment.
-- [SKAdTestError.Code.signatureMissingAdNetworkId](skadtesterror/code/signaturemissingadnetworkid.md)
+- [SKAdTestError.Code.signatureMissingAdNetworkId](./signaturemissingadnetworkid.md)
   The signature is missing an ad network identifier, in the testing environment.
-- [SKAdTestError.Code.signatureMissingAppAdamId](skadtesterror/code/signaturemissingappadamid.md)
+- [SKAdTestError.Code.signatureMissingAppAdamId](./signaturemissingappadamid.md)
   The signature is missing the app item identifier for the advertised app, in the testing environment.
-- [SKAdTestError.Code.signatureMissingFidelityType](skadtesterror/code/signaturemissingfidelitytype.md)
+- [SKAdTestError.Code.signatureMissingFidelityType](./signaturemissingfidelitytype.md)
   The signature is missing the fidelity type, in the testing environment.
-- [SKAdTestError.Code.signatureMissingNonce](skadtesterror/code/signaturemissingnonce.md)
+- [SKAdTestError.Code.signatureMissingNonce](./signaturemissingnonce.md)
   The signature is missing the nonce, in the testing environment.
-- [SKAdTestError.Code.signatureMissingSourceAppAdamId](skadtesterror/code/signaturemissingsourceappadamid.md)
+- [SKAdTestError.Code.signatureMissingSourceAppAdamId](./signaturemissingsourceappadamid.md)
   The signature is missing the source app item identifier, in the testing environment.
-- [SKAdTestError.Code.signatureMissingSourceDomain](skadtesterror/code/signaturemissingsourcedomain.md)
+- [SKAdTestError.Code.signatureMissingSourceDomain](./signaturemissingsourcedomain.md)
   The signature is missing the source domain, in the testing environment.
-- [SKAdTestError.Code.signatureMissingSourceIdentifier](skadtesterror/code/signaturemissingsourceidentifier.md)
+- [SKAdTestError.Code.signatureMissingSourceIdentifier](./signaturemissingsourceidentifier.md)
   The signature is missing the source identifier, in the testing environment.
-- [SKAdTestError.Code.signatureMissingTimestamp](skadtesterror/code/signaturemissingtimestamp.md)
+- [SKAdTestError.Code.signatureMissingTimestamp](./signaturemissingtimestamp.md)
   The signature is missing a timestamp, in the testing environment.
-- [SKAdTestError.Code.signatureUnknownError](skadtesterror/code/signatureunknownerror.md)
+- [SKAdTestError.Code.signatureUnknownError](./signatureunknownerror.md)
   An unknown error occurred with the signature in the testing environment.
-- [SKAdTestError.Code.signatureVerificationFailed](skadtesterror/code/signatureverificationfailed.md)
+- [SKAdTestError.Code.signatureVerificationFailed](./signatureverificationfailed.md)
   The signature verification failed in the testing environment.
-- [SKAdTestError.Code.missingSignature](skadtesterror/code/missingsignature.md)
+- [SKAdTestError.Code.missingSignature](./missingsignature.md)
   The signature for the ad is missing, in the testing environment.
-- [SKAdTestError.Code.signatureInvalidOrder](skadtesterror/code/signatureinvalidorder.md)
+- [SKAdTestError.Code.signatureInvalidOrder](./signatureinvalidorder.md)
   The order of the parameters in the signature is invalid, in the testing environment.
-- [SKAdTestError.Code.signatureMissingAdNetworkId](skadtesterror/code/signaturemissingadnetworkid.md)
+- [SKAdTestError.Code.signatureMissingAdNetworkId](./signaturemissingadnetworkid.md)
   The signature is missing an ad network identifier, in the testing environment.
 
 

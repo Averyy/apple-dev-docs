@@ -1,7 +1,8 @@
 # ARConfidenceLevel.high
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Depth-value accuracy in which the framework is fairly confident.
 
@@ -15,11 +16,16 @@ Depth-value accuracy in which the framework is fairly confident.
 case high
 ```
 
+```c
+ARConfidenceLevelHigh
+```
+
 ## See Also
 
-- [ARConfidenceLevel.low](arconfidencelevel/low.md)
+### Levels
+- [ARConfidenceLevel.low](./low.md)
   Depth-value accuracy in which the framework is less confident.
-- [ARConfidenceLevel.medium](arconfidencelevel/medium.md)
+- [ARConfidenceLevel.medium](./medium.md)
   Depth-value accuracy in which the framework is moderately confident.
 
 

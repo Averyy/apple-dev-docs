@@ -1,7 +1,8 @@
 # zero
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default immersive camera origin.
 

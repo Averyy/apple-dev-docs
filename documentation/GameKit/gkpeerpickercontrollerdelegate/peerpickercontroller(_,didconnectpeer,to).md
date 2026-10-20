@@ -1,20 +1,27 @@
 # peerPickerController(_:didConnectPeer:to:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the controller connected a peer to the session.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 3.0+
-- visionOS 1.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- Mac Catalyst 3.0+ - Deprecated in 7.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use MCBrowserViewController along with MCBrowserViewControllerDelegate from the MultipeerConnectivity framework.
 
 ## Declaration
 
 ```swift
 optional func peerPickerController(_ picker: GKPeerPickerController, didConnectPeer peerID: String, to session: GKSession)
+```
+
+```objc
+- (void) peerPickerController:(GKPeerPickerController *) picker didConnectPeer:(NSString *) peerID toSession:(GKSession *) session;
 ```
 
 #### Discussion

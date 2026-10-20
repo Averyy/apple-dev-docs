@@ -1,7 +1,8 @@
 # AVLinearPCMIsFloatKey
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 3.0+
@@ -18,11 +19,16 @@
 let AVLinearPCMIsFloatKey: String
 ```
 
+```c
+extern NSString * const AVLinearPCMIsFloatKey;
+```
+
 ## See Also
 
-- [let AVLinearPCMBitDepthKey: String](avlinearpcmbitdepthkey.md)
-- [let AVLinearPCMIsBigEndianKey: String](avlinearpcmisbigendiankey.md)
-- [let AVLinearPCMIsNonInterleaved: String](avlinearpcmisnoninterleaved.md)
+### Linear PCM keys
+- [let AVLinearPCMBitDepthKey: String](./avlinearpcmbitdepthkey.md)
+- [let AVLinearPCMIsBigEndianKey: String](./avlinearpcmisbigendiankey.md)
+- [let AVLinearPCMIsNonInterleaved: String](./avlinearpcmisnoninterleaved.md)
 
 
 ---

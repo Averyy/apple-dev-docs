@@ -1,7 +1,8 @@
 # maximumQuantity
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum quantity contained by the sample.
 
@@ -20,15 +21,20 @@ The maximum quantity contained by the sample.
 var maximumQuantity: HKQuantity { get }
 ```
 
+```objc
+@property (copy, readonly) HKQuantity * maximumQuantity;
+```
+
 ## See Also
 
-- [var averageQuantity: HKQuantity](hkdiscretequantitysample/averagequantity.md)
+### Accessing Calculated Values
+- [var averageQuantity: HKQuantity](./averagequantity.md)
   The average of all quantities contained by the sample.
-- [var minimumQuantity: HKQuantity](hkdiscretequantitysample/minimumquantity.md)
+- [var minimumQuantity: HKQuantity](./minimumquantity.md)
   The minimum value contained by the sample.
-- [var mostRecentQuantity: HKQuantity](hkdiscretequantitysample/mostrecentquantity.md)
+- [var mostRecentQuantity: HKQuantity](./mostrecentquantity.md)
   The most recent quantity contained by the sample.
-- [var mostRecentQuantityDateInterval: DateInterval](hkdiscretequantitysample/mostrecentquantitydateinterval.md)
+- [var mostRecentQuantityDateInterval: DateInterval](./mostrecentquantitydateinterval.md)
   The date interval for the most recent quantity contained by the sample.
 
 

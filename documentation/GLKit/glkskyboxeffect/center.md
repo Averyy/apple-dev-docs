@@ -1,20 +1,27 @@
 # center
 
 **Framework**: GLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The center of the skybox.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- macOS 10.8+
-- tvOS 9.0+
+- iOS 5.0+ - Deprecated in 12.0
+- iPadOS 5.0+ - Deprecated in 12.0
+- macOS 10.8+ - Deprecated in 10.14
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 var center: GLKVector3 { get set }
+```
+
+```objc
+@property (nonatomic, assign) GLKVector3 center;
 ```
 
 #### Discussion
@@ -23,13 +30,14 @@ The property holds the `[x,y,z]` coordinates of the center of the skybox.
 
 ## See Also
 
-- [var textureCubeMap: GLKEffectPropertyTexture](glkskyboxeffect/texturecubemap.md)
+### Configuring the Skybox
+- [var textureCubeMap: GLKEffectPropertyTexture](./texturecubemap.md)
   The texture to apply to the skybox.
-- [var xSize: GLfloat](glkskyboxeffect/xsize.md)
+- [var xSize: GLfloat](./xsize.md)
   The width of the skybox.
-- [var ySize: GLfloat](glkskyboxeffect/ysize.md)
+- [var ySize: GLfloat](./ysize.md)
   The height of the skybox.
-- [var zSize: GLfloat](glkskyboxeffect/zsize.md)
+- [var zSize: GLfloat](./zsize.md)
   The depth of the skybox.
 
 

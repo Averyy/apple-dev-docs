@@ -1,7 +1,8 @@
 # configureWithDefault(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the bar button item appearance object with appropriate values for the specified button style.
 
@@ -18,9 +19,13 @@ Configures the bar button item appearance object with appropriate values for the
 func configureWithDefault(for style: UIBarButtonItem.Style)
 ```
 
+```objc
+- (void) configureWithDefaultForStyle:(UIBarButtonItemStyle) style;
+```
+
 ## Parameters
 
-- `style`: The button style. For a list of possible values, see [`UIBarButtonItem.Style`](uibarbuttonitem/style-swift.enum.md).
+- `style`: The button style. For a list of possible values, see [`UIBarButtonItem.Style`](../uibarbuttonitem/style-swift.enum.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # spotlight(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a hover effect that displays a feathered spotlight on the entity where the current hover location is.
 
@@ -20,7 +21,7 @@ static func spotlight(_ style: HoverEffectComponent.SpotlightHoverEffectStyle) -
 
 ## Parameters
 
-- `style`: A [`HoverEffectComponent.SpotlightHoverEffectStyle`](hovereffectcomponent/spotlighthovereffectstyle.md) instance that allows you to customize various aspects of this hover effect.
+- `style`: A [`HoverEffectComponent.SpotlightHoverEffectStyle`](../spotlighthovereffectstyle.md) instance that allows you to customize various aspects of this hover effect.
 
 
 ---

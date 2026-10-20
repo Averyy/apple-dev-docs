@@ -1,7 +1,8 @@
 # MPSGraphScatterMode.div
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Divide
 
@@ -17,6 +18,10 @@ Divide
 
 ```swift
 case div
+```
+
+```c
+MPSGraphScatterModeDiv
 ```
 
 

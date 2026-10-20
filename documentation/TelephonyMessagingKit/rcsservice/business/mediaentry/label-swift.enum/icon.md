@@ -1,7 +1,8 @@
 # RCSService.Business.MediaEntry.Label.icon
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Icon label.
 

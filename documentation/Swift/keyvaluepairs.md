@@ -1,7 +1,8 @@
 # KeyValuePairs
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A lightweight collection of key-value pairs.
 
@@ -49,7 +50,7 @@ if let index = recordTimes.firstIndex(where: { $0.0 == runner }) {
 // Prints "Marlies Gohr set a 100m record of 10.81 seconds."
 ```
 
-#### Key Value Pairs As a Function Parameter
+#### Key-Value Pairs as a Function Parameter
 
 When calling a function with a `KeyValuePairs` parameter, you can pass a Swift dictionary literal without causing a `Dictionary` to be created. This capability can be especially important when the order of elements in the literal is significant.
 
@@ -76,43 +77,44 @@ print(pairs.elements)
 ## Topics
 
 ### Initializers
-- [init(dictionaryLiteral: (Key, Value)...)](keyvaluepairs/init(dictionaryliteral:).md)
+- [init(dictionaryLiteral: (Key, Value)...)](./keyvaluepairs/init%28dictionaryliteral%29.md)
   Creates a new `KeyValuePairs` instance from the given dictionary literal.
 ### Instance Properties
-- [var span: Span<KeyValuePairs<Key, Value>.Element>](keyvaluepairs/span.md)
+- [var span: Span<KeyValuePairs<Key, Value>.Element>](./keyvaluepairs/span.md)
   A span over the key-value pairs of this collection.
 ### Default Implementations
-- [BidirectionalCollection Implementations](keyvaluepairs/bidirectionalcollection-implementations.md)
-- [Collection Implementations](keyvaluepairs/collection-implementations.md)
-- [CustomDebugStringConvertible Implementations](keyvaluepairs/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](keyvaluepairs/customstringconvertible-implementations.md)
-- [RandomAccessCollection Implementations](keyvaluepairs/randomaccesscollection-implementations.md)
-- [Sequence Implementations](keyvaluepairs/sequence-implementations.md)
+- [BidirectionalCollection Implementations](./keyvaluepairs/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./keyvaluepairs/collection-implementations.md)
+- [CustomDebugStringConvertible Implementations](./keyvaluepairs/customdebugstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./keyvaluepairs/customstringconvertible-implementations.md)
+- [RandomAccessCollection Implementations](./keyvaluepairs/randomaccesscollection-implementations.md)
+- [Sequence Implementations](./keyvaluepairs/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [Collection](collection.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Escapable](escapable.md)
-- [ExpressibleByDictionaryLiteral](expressiblebydictionaryliteral.md)
-- [RandomAccessCollection](randomaccesscollection.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [BidirectionalCollection](./bidirectionalcollection.md)
+- [Collection](./collection.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [Escapable](./escapable.md)
+- [ExpressibleByDictionaryLiteral](./expressiblebydictionaryliteral.md)
+- [RandomAccessCollection](./randomaccesscollection.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
+- [Sequence](./sequence.md)
 
 ## See Also
 
-- [func repeatElement<T>(T, count: Int) -> Repeated<T>](repeatelement(_:count:).md)
+### Special-Use Collections
+- [func repeatElement<T>(T, count: Int) -> Repeated<T>](./repeatelement%28_,count%29.md)
   Creates a collection containing the specified number of the given element.
-- [struct CollectionOfOne](collectionofone.md)
+- [struct CollectionOfOne](./collectionofone.md)
   A collection containing a single element.
-- [struct EmptyCollection](emptycollection.md)
+- [struct EmptyCollection](./emptycollection.md)
   A collection whose element type is `Element` but that is always empty.
-- [typealias DictionaryLiteral](dictionaryliteral.md)
+- [typealias DictionaryLiteral](./dictionaryliteral.md)
 
 
 ---

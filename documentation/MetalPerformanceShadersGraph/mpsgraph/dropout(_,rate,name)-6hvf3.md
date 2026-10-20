@@ -1,7 +1,8 @@
 # dropout(_:rate:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a dropout operation and returns the result
 
@@ -17,6 +18,10 @@ Creates a dropout operation and returns the result
 
 ```swift
 func dropout(_ tensor: MPSGraphTensor, rate: Double, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) dropoutTensor:(MPSGraphTensor *) tensor rate:(double) rate name:(NSString *) name;
 ```
 
 #### Return Value

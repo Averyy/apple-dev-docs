@@ -1,7 +1,8 @@
 # AppExtensionPoint.Capabilities.Builder
 
 **Framework**: ExtensionFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.2+
@@ -22,7 +23,7 @@ struct Builder
 ## Topics
 
 ### Type Methods
-- [static func buildBlock<each T>(repeat each T) -> AppExtensionPoint.Capabilities](appextensionpoint/capabilities/builder/buildblock(_:).md)
+- [static func buildBlock<each T>(repeat each T) -> AppExtensionPoint.Capabilities](./builder/buildblock%28_%29.md)
 
 
 ---

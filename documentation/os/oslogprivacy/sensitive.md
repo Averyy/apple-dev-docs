@@ -1,7 +1,8 @@
 # sensitive
 
 **Framework**: os  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The option to always redact interpolated values that contain sensitive information.
 
@@ -11,7 +12,7 @@ The option to always redact interpolated values that contain sensitive informati
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,15 +23,16 @@ static var sensitive: OSLogPrivacy { get }
 
 #### Discussion
 
-This option behaves identically to the [`private`](oslogprivacy/private.md) option. When it redacts a value, the system displays a generic string in place of the value. If you want to correlate log messages that contain the same value, use the [`sensitive(mask:)`](oslogprivacy/sensitive(mask:).md) function to create the structure with the [`OSLogPrivacy.Mask.hash`](oslogprivacy/mask/hash.md) mask.
+This option behaves identically to the [`private`](./private.md) option. When it redacts a value, the system displays a generic string in place of the value. If you want to correlate log messages that contain the same value, use the [`sensitive(mask:)`](./sensitive%28mask%29.md) function to create the structure with the [`OSLogPrivacy.Mask.hash`](./mask/hash.md) mask.
 
 ## See Also
 
-- [static var auto: OSLogPrivacy](oslogprivacy/auto.md)
+### Getting the Privacy Options
+- [static var auto: OSLogPrivacy](./auto.md)
   The standard option to let the system determine whether to redact or display a value.
-- [static var `private`: OSLogPrivacy](oslogprivacy/private.md)
+- [static var `private`: OSLogPrivacy](./private.md)
   The standard option to always redact the interpolated value.
-- [static var `public`: OSLogPrivacy](oslogprivacy/public.md)
+- [static var `public`: OSLogPrivacy](./public.md)
   The standard option to always show the interpolated value.
 
 

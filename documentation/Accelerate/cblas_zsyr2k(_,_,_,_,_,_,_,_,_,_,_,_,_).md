@@ -1,7 +1,8 @@
 # cblas_zsyr2k(_:_:_:_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs a rank-2k update of a symmetric matrix (double-precision complex).
 
@@ -18,6 +19,10 @@ Performs a rank-2k update of a symmetric matrix (double-precision complex).
 
 ```swift
 func cblas_zsyr2k(_ ORDER: CBLAS_ORDER, _ UPLO: CBLAS_UPLO, _ TRANS: CBLAS_TRANSPOSE, _ N: __LAPACK_int, _ K: __LAPACK_int, _ ALPHA: OpaquePointer, _ A: OpaquePointer?, _ LDA: __LAPACK_int, _ B: OpaquePointer?, _ LDB: __LAPACK_int, _ BETA: OpaquePointer, _ C: OpaquePointer?, _ LDC: __LAPACK_int)
+```
+
+```c
+void cblas_zsyr2k(const enum CBLAS_ORDER ORDER, const enum CBLAS_UPLO UPLO, const enum CBLAS_TRANSPOSE TRANS, const __LAPACK_int N, const __LAPACK_int K, const __LAPACK_double_complex *ALPHA, const __LAPACK_double_complex *A, const __LAPACK_int LDA, const __LAPACK_double_complex *B, const __LAPACK_int LDB, const __LAPACK_double_complex *BETA, __LAPACK_double_complex *C, const __LAPACK_int LDC);
 ```
 
 #### Discussion
@@ -46,35 +51,36 @@ Computes `alpha*A*B`
 
 ## See Also
 
-- [func cblas_dzasum(__LAPACK_int, OpaquePointer?, __LAPACK_int) -> Double](cblas_dzasum(_:_:_:).md)
+### Double-precision complex matrix functions
+- [func cblas_dzasum(__LAPACK_int, OpaquePointer?, __LAPACK_int) -> Double](./cblas_dzasum%28_,_,_%29.md)
   Computes the sum of the absolute values of real and imaginary parts of elements in a vector (single-precision complex).
-- [func cblas_dznrm2(__LAPACK_int, OpaquePointer?, __LAPACK_int) -> Double](cblas_dznrm2(_:_:_:).md)
+- [func cblas_dznrm2(__LAPACK_int, OpaquePointer?, __LAPACK_int) -> Double](./cblas_dznrm2%28_,_,_%29.md)
   Computes the unitary norm of a vector (double-precision complex).
-- [func cblas_zaxpy(__LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](cblas_zaxpy(_:_:_:_:_:_:).md)
+- [func cblas_zaxpy(__LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](./cblas_zaxpy%28_,_,_,_,_,_%29.md)
   Computes a constant times a vector plus a vector (double-precision complex).
-- [func cblas_zcopy(__LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](cblas_zcopy(_:_:_:_:_:).md)
+- [func cblas_zcopy(__LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](./cblas_zcopy%28_,_,_,_,_%29.md)
   Copies a vector to another vector (double-precision complex).
-- [func cblas_zdrot(__LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, Double, Double)](cblas_zdrot(_:_:_:_:_:_:_:).md)
+- [func cblas_zdrot(__LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, Double, Double)](./cblas_zdrot%28_,_,_,_,_,_,_%29.md)
   Applies a Givens rotation matrix to a pair of complex vectors.
-- [func cblas_zdscal(__LAPACK_int, Double, OpaquePointer?, __LAPACK_int)](cblas_zdscal(_:_:_:_:).md)
+- [func cblas_zdscal(__LAPACK_int, Double, OpaquePointer?, __LAPACK_int)](./cblas_zdscal%28_,_,_,_%29.md)
   Multiplies each element of a vector by a constant (double-precision complex).
-- [func cblas_zgbmv(CBLAS_ORDER, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](cblas_zgbmv(_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_zgbmv(CBLAS_ORDER, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](./cblas_zgbmv%28_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Scales a general band matrix, then multiplies by a vector, then adds a vector (double-precision complex).
-- [func cblas_zgemm(CBLAS_ORDER, CBLAS_TRANSPOSE, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](cblas_zgemm(_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_zgemm(CBLAS_ORDER, CBLAS_TRANSPOSE, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](./cblas_zgemm%28_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Multiplies two matrices (double-precision complex).
-- [func cblas_zgemv(CBLAS_ORDER, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](cblas_zgemv(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_zgemv(CBLAS_ORDER, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](./cblas_zgemv%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Multiplies a matrix by a vector (double-precision complex).
-- [func cblas_zgerc(CBLAS_ORDER, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](cblas_zgerc(_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_zgerc(CBLAS_ORDER, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](./cblas_zgerc%28_,_,_,_,_,_,_,_,_,_%29.md)
   Multiplies vector X by the conjugate transpose of vector Y, then adds matrix A (double-precision complex).
-- [func cblas_zgeru(CBLAS_ORDER, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](cblas_zgeru(_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_zgeru(CBLAS_ORDER, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](./cblas_zgeru%28_,_,_,_,_,_,_,_,_,_%29.md)
   Multiplies vector X by the transpose of vector Y, then adds matrix A (double-precision complex).
-- [func cblas_zhbmv(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](cblas_zhbmv(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_zhbmv(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](./cblas_zhbmv%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Scales a Hermitian band matrix, then multiplies by a vector, then adds a vector (double-precision complex).
-- [func cblas_zhemm(CBLAS_ORDER, CBLAS_SIDE, CBLAS_UPLO, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](cblas_zhemm(_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_zhemm(CBLAS_ORDER, CBLAS_SIDE, CBLAS_UPLO, __LAPACK_int, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](./cblas_zhemm%28_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Multiplies two Hermitian matrices (double-precision complex).
-- [func cblas_zhemv(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](cblas_zhemv(_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_zhemv(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](./cblas_zhemv%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Scales and multiplies a Hermitian matrix by a vector, then adds a second (scaled) vector.
-- [func cblas_zher(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, Double, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](cblas_zher(_:_:_:_:_:_:_:_:).md)
+- [func cblas_zher(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, Double, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int)](./cblas_zher%28_,_,_,_,_,_,_,_%29.md)
   Adds the product of a scaling factor, vector `X`, and the conjugate transpose of `X` to matrix `A`.
 
 

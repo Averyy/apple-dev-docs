@@ -1,12 +1,15 @@
 # CLKFullColorImageProvider
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A full-color image displayed by a complication.
 
 **Availability**:
-- watchOS 5.0+
+- watchOS 5.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
@@ -14,9 +17,13 @@ A full-color image displayed by a complication.
 class CLKFullColorImageProvider
 ```
 
+```objc
+@interface CLKFullColorImageProvider : NSObject
+```
+
 ## Mentions
 
-- [Creating a timeline entry](creating-a-timeline-entry.md)
+- [Creating a timeline entry](./creating-a-timeline-entry.md)
 
 #### Overview
 
@@ -24,45 +31,46 @@ All graphic complications support full-color images; however, some watch faces d
 
 The template also often masks these image to produce circular images or rounded rectangles.
 
-For information about the image sizes and masks, see [`Apple Watch Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/watch/human-interface-guidelines/).
+For information about the image sizes and masks, see [Apple Watch Human Interface Guidelines](https://developer.apple.com/watch/human-interface-guidelines/).
 
 ## Topics
 
 ### Creating an Image Provider
-- [convenience init(fullColorImage: UIImage)](clkfullcolorimageprovider/init(fullcolorimage:).md)
+- [convenience init(fullColorImage: UIImage)](./clkfullcolorimageprovider/init%28fullcolorimage%29.md)
   Creates an image provider with the specified full-color image.
-- [convenience init(fullColorImage: UIImage, tintedImageProvider: CLKImageProvider?)](clkfullcolorimageprovider/init(fullcolorimage:tintedimageprovider:).md)
+- [convenience init(fullColorImage: UIImage, tintedImageProvider: CLKImageProvider?)](./clkfullcolorimageprovider/init%28fullcolorimage,tintedimageprovider%29.md)
   Creates an image provider that produces full-color and tinted images.
 ### Getting the Image Data
-- [var image: UIImage](clkfullcolorimageprovider/image.md)
+- [var image: UIImage](./clkfullcolorimageprovider/image.md)
   The full-color image to display.
-- [var tintedImageProvider: CLKImageProvider?](clkfullcolorimageprovider/tintedimageprovider.md)
+- [var tintedImageProvider: CLKImageProvider?](./clkfullcolorimageprovider/tintedimageprovider.md)
   An image provider that produces alternative images for tinted graphic complications.
 ### Setting the Accessibility Label
-- [var accessibilityLabel: String?](clkfullcolorimageprovider/accessibilitylabel.md)
+- [var accessibilityLabel: String?](./clkfullcolorimageprovider/accessibilitylabel.md)
   A succinct label that identifies the purpose of the image.
 ### Creating Empty Image Providers
-- [init()](clkfullcolorimageprovider/init.md)
+- [init()](./clkfullcolorimageprovider/init%28%29.md)
   Creates an empty full color image provider.
-- [class func new() -> Self](clkfullcolorimageprovider/new.md)
+- [class func new() -> Self](./clkfullcolorimageprovider/new%28%29.md)
   Creates an empty full color image provider.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CLKImageProvider](clkimageprovider.md)
+### Image providers
+- [class CLKImageProvider](./clkimageprovider.md)
   An image displayed by a complication.
 
 

@@ -1,7 +1,8 @@
 # startIndex
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An index to the first weight in the collection.
 
@@ -21,7 +22,7 @@ var startIndex: BlendShapeWeights.Index { get }
 
 #### Discussion
 
-For more on the sequence’s beginning index, see [`startIndex`](https://developer.apple.com/documentation/swift/array/startindex).
+For more on the sequence’s beginning index, see [`startIndex`](../../Swift/array/startindex.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # Reserved
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 Six bytes.
 
@@ -11,27 +12,28 @@ Set to `0`.
 
 ## See Also
 
-- [Sample description size](sound_sample_description_version_0/sample_description_size.md)
+### Data fields
+- [Sample description size](./sample_description_size.md)
   A 32-bit integer indicating the number of bytes in the sample description.
-- [Data format](sound_sample_description_version_0/data_format.md)
+- [Data format](./data_format.md)
   A 32-bit integer indicating the format of the stored data.
-- [Data reference index](sound_sample_description_version_0/data_reference_index.md)
+- [Data reference index](./data_reference_index.md)
   A 16-bit integer that contains the index of the data reference to use to retrieve data associated with samples that use this sample description.
-- [Version](sound_sample_description_version_0/version.md)
+- [Version](./version.md)
   A 16-bit integer that holds the sample description version.
-- [Revision level](sound_sample_description_version_0/revision_level.md)
+- [Revision level](./revision_level.md)
   A 16-bit integer.
-- [Vendor](sound_sample_description_version_0/vendor.md)
+- [Vendor](./vendor.md)
   A 32-bit integer.
-- [Number of channels](sound_sample_description_version_0/number_of_channels.md)
+- [Number of channels](./number_of_channels.md)
   A 16-bit integer that indicates the number of sound channels used by the sound sample.
-- [Sample size](sound_sample_description_version_0/sample_size.md)
+- [Sample size](./sample_size.md)
   A 16-bit integer that specifies the number of bits in each uncompressed sound sample.
-- [Compression ID](sound_sample_description_version_0/compression_id.md)
+- [Compression ID](./compression_id.md)
   A 16-bit integer.
-- [Packet size](sound_sample_description_version_0/packet_size.md)
+- [Packet size](./packet_size.md)
   A 16-bit integer.
-- [Sample rate](sound_sample_description_version_0/sample_rate.md)
+- [Sample rate](./sample_rate.md)
   A 32-bit unsigned fixed-point number (16.16) that indicates the rate at which the sound samples were obtained.
 
 

@@ -1,17 +1,22 @@
 # minWidth
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The table column’s minimum width, in points.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var minWidth: CGFloat { get set }
+```
+
+```objc
+@property CGFloat minWidth;
 ```
 
 #### Discussion
@@ -22,13 +27,14 @@ The table column width can’t be less than the value of this property, whether 
 
 ## See Also
 
-- [var width: CGFloat](nstablecolumn/width.md)
+### Controlling Size
+- [var width: CGFloat](./width.md)
   The table column’s width, in points.
-- [var maxWidth: CGFloat](nstablecolumn/maxwidth.md)
+- [var maxWidth: CGFloat](./maxwidth.md)
   The table column’s maximum width, in points.
-- [var resizingMask: NSTableColumn.ResizingOptions](nstablecolumn/resizingmask.md)
+- [var resizingMask: NSTableColumn.ResizingOptions](./resizingmask.md)
   The table column’s resizing mask.
-- [func sizeToFit()](nstablecolumn/sizetofit.md)
+- [func sizeToFit()](./sizetofit%28%29.md)
   Resizes the table column to fit the width of its header cell.
 
 

@@ -1,7 +1,8 @@
 # writeAttributeSystemMode(withValue:expectedValueInterval:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 func writeAttributeSystemMode(withValue dataValueDictionary: [String : Any], expectedValueInterval expectedValueIntervalMs: NSNumber)
+```
+
+```objc
+- (void) writeAttributeSystemModeWithValue:(NSDictionary<NSString *,id> *) dataValueDictionary expectedValueInterval:(NSNumber *) expectedValueIntervalMs;
 ```
 
 

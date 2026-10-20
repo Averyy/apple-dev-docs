@@ -2,14 +2,14 @@
 
 **Framework**: Exception Handling
 
-The `NSExceptionHandlerDelegate` informal protocol describes methods that [`NSExceptionHandler`](nsexceptionhandler.md) objects call on their delegates when exceptions occur. An [`NSExceptionHandler`](nsexceptionhandler.md) object does not need to have a delegate. When one does, these delegate methods are asked to approve exception handling and logging for each monitored [`NSExceptionHandler`](nsexceptionhandler.md) object.
+The `NSExceptionHandlerDelegate` informal protocol describes methods that [`NSExceptionHandler`](./nsexceptionhandler.md) objects call on their delegates when exceptions occur. An [`NSExceptionHandler`](./nsexceptionhandler.md) object does not need to have a delegate. When one does, these delegate methods are asked to approve exception handling and logging for each monitored [`NSExceptionHandler`](./nsexceptionhandler.md) object.
 
 ## Topics
 
 ### Logging and handling exceptions
-- [func exceptionHandler(NSExceptionHandler!, shouldHandle: NSException!, mask: Int) -> Bool](../objectivec/nsobject-swift.class/exceptionhandler(_:shouldhandle:mask:).md)
+- [func exceptionHandler(NSExceptionHandler!, shouldHandle: NSException!, mask: Int) -> Bool](../ObjectiveC/nsobject-swift.class/exceptionhandler%28_,shouldhandle,mask%29.md)
   Implemented by the delegate to evaluate whether the delegating exception handler should handle a given exception.
-- [func exceptionHandler(NSExceptionHandler!, shouldLogException: NSException!, mask: Int) -> Bool](../objectivec/nsobject-swift.class/exceptionhandler(_:shouldlogexception:mask:).md)
+- [func exceptionHandler(NSExceptionHandler!, shouldLogException: NSException!, mask: Int) -> Bool](../ObjectiveC/nsobject-swift.class/exceptionhandler%28_,shouldlogexception,mask%29.md)
   Implemented by the delegate to evaluate whether the delegating exception hangler should log a given exception.
 
 

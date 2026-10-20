@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean that indicates whether the temporal scaler discards historical data from previous frames.
@@ -18,6 +19,10 @@ A Boolean that indicates whether the temporal scaler discards historical data fr
 
 ```swift
 var reset: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL reset;
 ```
 
 

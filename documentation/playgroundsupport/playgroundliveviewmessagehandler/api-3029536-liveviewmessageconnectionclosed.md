@@ -2,6 +2,7 @@
 
 **Framework**: Playground Support  
 **Kind**: intfm  
+**Role**: Instance Method  
 **Required**: Yes
 
 Informs the handler that the connection between the proxy and the remote object was closed.
@@ -16,9 +17,16 @@ Informs the handler that the connection between the proxy and the remote object 
 func liveViewMessageConnectionClosed()
 ```
 
+## Default Implementations
+
+### PlaygroundLiveViewMessageHandler Implementations
+- [func liveViewMessageConnectionClosed()](./api-3029537-liveviewmessageconnectionclosed.md)
+  Informs the handler that the connection between the proxy and the remote object was closed.
+
 ## See Also
 
-- [func liveViewMessageConnectionOpened()](playgroundliveviewmessagehandler/3029538-liveviewmessageconnectionopened.md)
+### Handling Connection Changes
+- [func liveViewMessageConnectionOpened()](./api-3029538-liveviewmessageconnectionopened.md)
   Informs the handler that it has connected to a remote object.
 
 

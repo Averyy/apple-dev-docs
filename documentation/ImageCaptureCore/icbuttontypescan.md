@@ -1,7 +1,8 @@
 # ICButtonTypeScan
 
 **Framework**: ImageCaptureCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A nonlocalized notification string to indicate that the Scan button on the device was pressed.
 
@@ -14,17 +15,22 @@ A nonlocalized notification string to indicate that the Scan button on the devic
 let ICButtonTypeScan: String
 ```
 
+```c
+extern NSString * const ICButtonTypeScan;
+```
+
 ## See Also
 
-- [let ICButtonTypeCopy: String](icbuttontypecopy.md)
+### Buttons
+- [let ICButtonTypeCopy: String](./icbuttontypecopy.md)
   A nonlocalized notification string to indicate that the Copy button on the device was pressed.
-- [let ICButtonTypeMail: String](icbuttontypemail.md)
+- [let ICButtonTypeMail: String](./icbuttontypemail.md)
   A nonlocalized notification string to indicate that the Mail button on the device was pressed.
-- [let ICButtonTypePrint: String](icbuttontypeprint.md)
+- [let ICButtonTypePrint: String](./icbuttontypeprint.md)
   A nonlocalized notification string to indicate that the Print button on the device was pressed.
-- [let ICButtonTypeTransfer: String](icbuttontypetransfer.md)
+- [let ICButtonTypeTransfer: String](./icbuttontypetransfer.md)
   A nonlocalized notification string to indicate that the Transfer button on the device was pressed.
-- [let ICButtonTypeWeb: String](icbuttontypeweb.md)
+- [let ICButtonTypeWeb: String](./icbuttontypeweb.md)
   A nonlocalized notification string to indicate that the Web button on the device was pressed.
 
 

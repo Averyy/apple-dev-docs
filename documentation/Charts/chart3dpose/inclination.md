@@ -1,7 +1,8 @@
 # inclination
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The inclination angle of the chart pose.
 

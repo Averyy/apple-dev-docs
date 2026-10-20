@@ -1,22 +1,24 @@
 # Number
 
 **Framework**: MIDIDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```c
 Number
 ```
 
 ## See Also
 
-- [Data](mididriverkit/iousermidipropertytype/data.md)
-- [Dictionary](mididriverkit/iousermidipropertytype/dictionary.md)
-- [String](mididriverkit/iousermidipropertytype/string.md)
+### Constants
+- [Data](./data.md)
+- [Dictionary](./dictionary.md)
+- [String](./string.md)
 
 
 ---

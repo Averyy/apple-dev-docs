@@ -1,7 +1,8 @@
 # perform()
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a widget’s configured action, like opening another app or performing an App Shortcut, custom shortcut, or system action.
 

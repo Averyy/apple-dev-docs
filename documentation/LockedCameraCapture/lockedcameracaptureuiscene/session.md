@@ -1,7 +1,8 @@
 # session
 
 **Framework**: LockedCameraCapture  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that can request to open the extension’s containing app and receives session configuration updates.
 
@@ -18,7 +19,7 @@ let session: LockedCameraCaptureSession
 
 #### Discussion
 
-Provided during the initialization of the [`LockedCameraCaptureExtensionScene`](lockedcameracaptureextensionscene.md). Only the system can initialize this object.
+Provided during the initialization of the [`LockedCameraCaptureExtensionScene`](../lockedcameracaptureextensionscene.md). Only the system can initialize this object.
 
 
 ---

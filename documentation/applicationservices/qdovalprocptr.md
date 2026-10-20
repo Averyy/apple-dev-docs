@@ -1,7 +1,8 @@
 # QDOvalProcPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias QDOvalProcPtr = (GrafVerb, UnsafePointer<Rect>?) -> Void
+```
+
+```c
+typedef void (*QDOvalProcPtr)(GrafVerb verb, const Rect *r);
 ```
 
 

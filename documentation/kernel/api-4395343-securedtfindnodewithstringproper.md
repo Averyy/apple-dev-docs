@@ -1,14 +1,15 @@
 # SecureDTFindNodeWithStringProperty
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 int SecureDTFindNodeWithStringProperty(const char *const propertyName, const char *const propertyValue, const DeviceTreeNode **const devicetreeNode);
 ```
 

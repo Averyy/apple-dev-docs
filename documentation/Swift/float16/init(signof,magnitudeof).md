@@ -1,7 +1,8 @@
 # init(signOf:magnitudeOf:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new floating-point value using the sign of one value and the magnitude of another.
 

@@ -1,7 +1,8 @@
 # SparseOrderCOLAMD
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The column AMD ordering for *AᵀA*.
 
@@ -20,21 +21,26 @@ The column AMD ordering for *AᵀA*.
 var SparseOrderCOLAMD: SparseOrder_t { get }
 ```
 
+```c
+SparseOrderCOLAMD
+```
+
 #### Discussion
 
-This ordering isn’t valid for symmetric factorizations (use [`SparseOrderAMD`](sparseorderamd.md) instead).
+This ordering isn’t valid for symmetric factorizations (use [`SparseOrderAMD`](./sparseorderamd.md) instead).
 
 ## See Also
 
-- [var SparseOrderDefault: SparseOrder_t](sparseorderdefault.md)
+### Constants
+- [var SparseOrderDefault: SparseOrder_t](./sparseorderdefault.md)
   The default ordering.
-- [var SparseOrderUser: SparseOrder_t](sparseorderuser.md)
+- [var SparseOrderUser: SparseOrder_t](./sparseorderuser.md)
   The user-supplied ordering, or identity if the order parameter is null.
-- [var SparseOrderAMD: SparseOrder_t](sparseorderamd.md)
+- [var SparseOrderAMD: SparseOrder_t](./sparseorderamd.md)
   Approximate minimum degree (AMD) ordering.
-- [var SparseOrderMetis: SparseOrder_t](sparseordermetis.md)
+- [var SparseOrderMetis: SparseOrder_t](./sparseordermetis.md)
   METIS nested dissection ordering.
-- [var SparseOrderMTMetis: SparseOrder_t](sparseordermtmetis.md)
+- [var SparseOrderMTMetis: SparseOrder_t](./sparseordermtmetis.md)
   Specifies type of fill-reducing ordering.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides the drag destination file’s name.
@@ -14,6 +15,10 @@ Provides the drag destination file’s name.
 ```swift
 @MainActor
 func filePromiseProvider(_ filePromiseProvider: NSFilePromiseProvider, fileNameForType fileType: String) -> String
+```
+
+```objc
+- (NSString *) filePromiseProvider:(NSFilePromiseProvider *) filePromiseProvider fileNameForType:(NSString *) fileType;
 ```
 
 #### Discussion
@@ -29,9 +34,10 @@ This method is called when the drag destination fulfills the file promise. Deter
 
 ## See Also
 
-- [func filePromiseProvider(NSFilePromiseProvider, writePromiseTo: URL, completionHandler: ((any Error)?) -> Void)](nsfilepromiseproviderdelegate/filepromiseprovider(_:writepromiseto:completionhandler:).md)
+### Handling File Promises
+- [func filePromiseProvider(NSFilePromiseProvider, writePromiseTo: URL, completionHandler: ((any Error)?) -> Void)](./filepromiseprovider%28_,writepromiseto,completionhandler%29.md)
   Writes the contents of a promise to the specified URL.
-- [func operationQueue(for: NSFilePromiseProvider) -> OperationQueue](nsfilepromiseproviderdelegate/operationqueue(for:).md)
+- [func operationQueue(for: NSFilePromiseProvider) -> OperationQueue](./operationqueue%28for%29.md)
   Returns the operation queue from which to issue the write request.
 
 

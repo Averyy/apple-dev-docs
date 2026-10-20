@@ -1,7 +1,8 @@
 # NSSwapBigDoubleToHost(_:)
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Swaps the bytes of a number.
 
@@ -20,45 +21,51 @@ Swaps the bytes of a number.
 func NSSwapBigDoubleToHost(_ x: NSSwappedDouble) -> Double
 ```
 
+```c
+static double NSSwapBigDoubleToHost(NSSwappedDouble x);
+```
+
 #### Discussion
 
-Converts the big-endian value in `x` to the current endian format and returns the resulting value. If it is necessary to swap the bytes of `x`, this function calls [`NSSwapDouble(_:)`](nsswapdouble(_:).md) to perform the swap.
+Converts the big-endian value in `x` to the current endian format and returns the resulting value. If it is necessary to swap the bytes of `x`, this function calls [`NSSwapDouble(_:)`](./nsswapdouble%28_%29.md) to perform the swap.
 
 ## See Also
 
-- [func NSSwapLittleDoubleToHost(NSSwappedDouble) -> Double](nsswaplittledoubletohost(_:).md)
+### Related Documentation
+- [func NSSwapLittleDoubleToHost(NSSwappedDouble) -> Double](./nsswaplittledoubletohost%28_%29.md)
   Swaps the bytes of a number.
-- [func NSSwapHostDoubleToBig(Double) -> NSSwappedDouble](nsswaphostdoubletobig(_:).md)
+- [func NSSwapHostDoubleToBig(Double) -> NSSwappedDouble](./nsswaphostdoubletobig%28_%29.md)
   Swaps the bytes of a number.
-- [func NSConvertHostDoubleToSwapped(Double) -> NSSwappedDouble](nsconverthostdoubletoswapped(_:).md)
+### Functions
+- [func NSConvertHostDoubleToSwapped(Double) -> NSSwappedDouble](./nsconverthostdoubletoswapped%28_%29.md)
   Performs a type conversion.
-- [func NSConvertHostFloatToSwapped(Float) -> NSSwappedFloat](nsconverthostfloattoswapped(_:).md)
+- [func NSConvertHostFloatToSwapped(Float) -> NSSwappedFloat](./nsconverthostfloattoswapped%28_%29.md)
   Performs a type conversion.
-- [func NSConvertSwappedDoubleToHost(NSSwappedDouble) -> Double](nsconvertswappeddoubletohost(_:).md)
+- [func NSConvertSwappedDoubleToHost(NSSwappedDouble) -> Double](./nsconvertswappeddoubletohost%28_%29.md)
   Performs a type conversion.
-- [func NSConvertSwappedFloatToHost(NSSwappedFloat) -> Float](nsconvertswappedfloattohost(_:).md)
+- [func NSConvertSwappedFloatToHost(NSSwappedFloat) -> Float](./nsconvertswappedfloattohost%28_%29.md)
   Performs a type conversion.
-- [func NSHostByteOrder() -> Int](nshostbyteorder().md)
+- [func NSHostByteOrder() -> Int](./nshostbyteorder%28%29.md)
   Returns the endian format.
-- [func NSSwapBigFloatToHost(NSSwappedFloat) -> Float](nsswapbigfloattohost(_:).md)
+- [func NSSwapBigFloatToHost(NSSwappedFloat) -> Float](./nsswapbigfloattohost%28_%29.md)
   Swaps the bytes of a number.
-- [func NSSwapBigIntToHost(UInt32) -> UInt32](nsswapbiginttohost(_:).md)
+- [func NSSwapBigIntToHost(UInt32) -> UInt32](./nsswapbiginttohost%28_%29.md)
   Swaps the bytes of a number.
-- [func NSSwapBigLongLongToHost(UInt64) -> UInt64](nsswapbiglonglongtohost(_:).md)
+- [func NSSwapBigLongLongToHost(UInt64) -> UInt64](./nsswapbiglonglongtohost%28_%29.md)
   Swaps the bytes of a number.
-- [func NSSwapBigLongToHost(UInt) -> UInt](nsswapbiglongtohost(_:).md)
+- [func NSSwapBigLongToHost(UInt) -> UInt](./nsswapbiglongtohost%28_%29.md)
   Swaps the bytes of a number.
-- [func NSSwapBigShortToHost(UInt16) -> UInt16](nsswapbigshorttohost(_:).md)
+- [func NSSwapBigShortToHost(UInt16) -> UInt16](./nsswapbigshorttohost%28_%29.md)
   Swaps the bytes of a number.
-- [func NSSwapDouble(NSSwappedDouble) -> NSSwappedDouble](nsswapdouble(_:).md)
+- [func NSSwapDouble(NSSwappedDouble) -> NSSwappedDouble](./nsswapdouble%28_%29.md)
   Swaps the bytes of a number.
-- [func NSSwapFloat(NSSwappedFloat) -> NSSwappedFloat](nsswapfloat(_:).md)
+- [func NSSwapFloat(NSSwappedFloat) -> NSSwappedFloat](./nsswapfloat%28_%29.md)
   Swaps the bytes of a number.
-- [func NSSwapHostDoubleToBig(Double) -> NSSwappedDouble](nsswaphostdoubletobig(_:).md)
+- [func NSSwapHostDoubleToBig(Double) -> NSSwappedDouble](./nsswaphostdoubletobig%28_%29.md)
   Swaps the bytes of a number.
-- [func NSSwapHostDoubleToLittle(Double) -> NSSwappedDouble](nsswaphostdoubletolittle(_:).md)
+- [func NSSwapHostDoubleToLittle(Double) -> NSSwappedDouble](./nsswaphostdoubletolittle%28_%29.md)
   Swaps the bytes of a number.
-- [func NSSwapHostFloatToBig(Float) -> NSSwappedFloat](nsswaphostfloattobig(_:).md)
+- [func NSSwapHostFloatToBig(Float) -> NSSwappedFloat](./nsswaphostfloattobig%28_%29.md)
   Swaps the bytes of a number.
 
 

@@ -1,7 +1,8 @@
 # permissions
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The permissions of the characteristic value.
 
@@ -20,21 +21,26 @@ The permissions of the characteristic value.
 var permissions: CBAttributePermissions { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) CBAttributePermissions permissions;
+```
+
 #### Discussion
 
-Characteristic permissions represent the read, write, and encryption permissions for a characteristic’s value. For a complete list and discussion of the available characteristic permissions, see [`CBAttributePermissions`](cbattributepermissions.md).
+Characteristic permissions represent the read, write, and encryption permissions for a characteristic’s value. For a complete list and discussion of the available characteristic permissions, see [`CBAttributePermissions`](../cbattributepermissions.md).
 
 ## See Also
 
-- [var value: Data?](cbmutablecharacteristic/value.md)
+### Managing a Mutable Characteristic
+- [var value: Data?](./value.md)
   The value of the characteristic.
-- [var descriptors: [CBDescriptor]?](cbmutablecharacteristic/descriptors.md)
+- [var descriptors: [CBDescriptor]?](./descriptors.md)
   An array of the characteristic’s descriptors.
-- [var properties: CBCharacteristicProperties](cbmutablecharacteristic/properties.md)
+- [var properties: CBCharacteristicProperties](./properties.md)
   The properties of the characteristic.
-- [struct CBAttributePermissions](cbattributepermissions.md)
+- [struct CBAttributePermissions](../cbattributepermissions.md)
   Values that represent the read, write, and encryption permissions for a characteristic’s value.
-- [var subscribedCentrals: [CBCentral]?](cbmutablecharacteristic/subscribedcentrals.md)
+- [var subscribedCentrals: [CBCentral]?](./subscribedcentrals.md)
   A list of centrals that are currently subscribed to the characteristic’s value.
 
 

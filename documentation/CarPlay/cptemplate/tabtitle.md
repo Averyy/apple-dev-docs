@@ -1,7 +1,8 @@
 # tabTitle
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A short title that describes the content of the tab.
 
@@ -16,17 +17,22 @@ A short title that describes the content of the tab.
 var tabTitle: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * tabTitle;
+```
+
 #### Discussion
 
 CarPlay only uses the title when the template is a root-template of a tab bar, otherwise setting this property has no effect.
 
 ## See Also
 
-- [var tabImage: UIImage?](cptemplate/tabimage.md)
+### Accessing Tab Information
+- [var tabImage: UIImage?](./tabimage.md)
   An image that represents the content of the tab.
-- [var tabSystemItem: UITabBarItem.SystemItem](cptemplate/tabsystemitem.md)
+- [var tabSystemItem: UITabBarItem.SystemItem](./tabsystemitem.md)
   A system object that provides a title and image for common tab content, such as contacts or favorites.
-- [var showsTabBadge: Bool](cptemplate/showstabbadge.md)
+- [var showsTabBadge: Bool](./showstabbadge.md)
   An indicator you use to call attention to the tab.
 
 

@@ -1,7 +1,8 @@
 # histogram
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Histogram of application hang time durations.
 

@@ -1,18 +1,19 @@
 # DispatchIO.StreamType.random
 
 **Framework**: Dispatch  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Access content randomly.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ case random
 
 ## See Also
 
-- [DispatchIO.StreamType.stream](dispatchio/streamtype/stream.md)
+### Stream Types
+- [DispatchIO.StreamType.stream](./stream.md)
   Access content sequentially, in a stream.
 
 

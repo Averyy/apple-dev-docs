@@ -1,7 +1,8 @@
 # receive(exactly:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Receive data from a connection.
 
@@ -19,6 +20,8 @@ Receive data from a connection.
 ```swift
 func receive(exactly: Int) async throws -> ApplicationProtocol.Message<Data>
 ```
+
+Available when `ApplicationProtocol` conforms to `StreamProtocol`.
 
 #### Discussion
 

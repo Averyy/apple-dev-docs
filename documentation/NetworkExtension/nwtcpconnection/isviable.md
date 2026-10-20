@@ -1,17 +1,20 @@
 # isViable
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The viability of a TCP connection indicates whether or not data can be transferred.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- macOS 10.11+
-- tvOS 17.0+
-- visionOS 1.0+
+- iOS 9.0+ - Deprecated in 18.0
+- iPadOS 9.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.11+ - Deprecated in 15.0
+- tvOS 17.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use the [`nw_connection_set_viability_changed_handler(_:_:)`](../../Network/nw_connection_set_viability_changed_handler%28_,_%29.md) function from the [Network](../../Network/Network.md) framework instead.
 
 ## Declaration
 
@@ -19,17 +22,22 @@ The viability of a TCP connection indicates whether or not data can be transferr
 var isViable: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isViable) BOOL viable;
+```
+
 #### Discussion
 
-Evaluates to [`true`](https://developer.apple.com/documentation/swift/true) if the connection can read and write data, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. Use Key-Value Observing to watch this property.
+Evaluates to [`true`](../../Swift/true.md) if the connection can read and write data, [`false`](../../Swift/false.md) otherwise. Use Key-Value Observing to watch this property.
 
 ## See Also
 
-- [var state: NWTCPConnectionState](nwtcpconnection/state.md)
+### Monitoring the connection status
+- [var state: NWTCPConnectionState](./state.md)
   The status of the connection.
-- [enum NWTCPConnectionState](nwtcpconnectionstate.md)
+- [enum NWTCPConnectionState](../nwtcpconnectionstate.md)
   Defined connection states. New types may be defined in the future.
-- [var error: (any Error)?](nwtcpconnection/error.md)
+- [var error: (any Error)?](./error.md)
   The connection-wide error property.
 
 

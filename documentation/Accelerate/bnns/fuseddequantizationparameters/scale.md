@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor of the scale.
 
@@ -11,8 +12,10 @@ The descriptor of the scale.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,9 +25,10 @@ var scale: BNNSNDArrayDescriptor?
 
 ## See Also
 
-- [var bias: BNNSNDArrayDescriptor?](bnns/fuseddequantizationparameters/bias.md)
+### Inspecting the Properties of a Fused Dequantization Parameters Structure
+- [var bias: BNNSNDArrayDescriptor?](./bias.md)
   The descriptor of the bias.
-- [var axis: Int?](bnns/fuseddequantizationparameters/axis.md)
+- [var axis: Int?](./axis.md)
   The index of the axis on which the function applies scale and bias.
 
 

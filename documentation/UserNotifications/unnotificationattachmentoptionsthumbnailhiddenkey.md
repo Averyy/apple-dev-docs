@@ -1,7 +1,8 @@
 # UNNotificationAttachmentOptionsThumbnailHiddenKey
 
 **Framework**: User Notifications  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value indicating whether the system hides the attachment’s thumbnail.
 
@@ -19,19 +20,24 @@ A Boolean value indicating whether the system hides the attachment’s thumbnail
 let UNNotificationAttachmentOptionsThumbnailHiddenKey: String
 ```
 
+```c
+extern NSString * const UNNotificationAttachmentOptionsThumbnailHiddenKey;
+```
+
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) containing a Boolean value. When set to [`true`](https://developer.apple.com/documentation/swift/true), the attachment’s thumbnail isn’t displayed. If you don’t include this key, the system shows the thumbnail.
+The value of this key is an [`NSNumber`](../Foundation/nsnumber.md) containing a Boolean value. When set to [`true`](../Swift/true.md), the attachment’s thumbnail isn’t displayed. If you don’t include this key, the system shows the thumbnail.
 
 ## See Also
 
-- [convenience init(identifier: String, url: URL, options: [AnyHashable : Any]?) throws](unnotificationattachment/init(identifier:url:options:)-83grx.md)
+### Creating an Attachment
+- [convenience init(identifier: String, url: URL, options: [AnyHashable : Any]?) throws](./unnotificationattachment/init%28identifier,url,options%29-83grx.md)
   Creates an attachment object from the specified file and options.
-- [let UNNotificationAttachmentOptionsTypeHintKey: String](unnotificationattachmentoptionstypehintkey.md)
+- [let UNNotificationAttachmentOptionsTypeHintKey: String](./unnotificationattachmentoptionstypehintkey.md)
   A hint about an attachment’s file type.
-- [let UNNotificationAttachmentOptionsThumbnailClippingRectKey: String](unnotificationattachmentoptionsthumbnailclippingrectkey.md)
+- [let UNNotificationAttachmentOptionsThumbnailClippingRectKey: String](./unnotificationattachmentoptionsthumbnailclippingrectkey.md)
   The clipping rectangle for a thumbnail image.
-- [let UNNotificationAttachmentOptionsThumbnailTimeKey: String](unnotificationattachmentoptionsthumbnailtimekey.md)
+- [let UNNotificationAttachmentOptionsThumbnailTimeKey: String](./unnotificationattachmentoptionsthumbnailtimekey.md)
   The frame number of an animation to use as a thumbnail image.
 
 

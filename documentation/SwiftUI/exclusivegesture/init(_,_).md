@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a gesture from two gestures where only one of them succeeds.
 
@@ -28,9 +29,10 @@ init(_ first: First, _ second: Second)
 
 ## See Also
 
-- [var first: First](exclusivegesture/first.md)
+### Creating the gesture
+- [var first: First](./first.md)
   The first of two gestures.
-- [var second: Second](exclusivegesture/second.md)
+- [var second: Second](./second.md)
   The second of two gestures.
 
 

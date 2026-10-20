@@ -1,7 +1,8 @@
 # AVPlayer.NetworkResourcePriority.default
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default priority level given to a player for loading network resources. Use this when the player requires an optimal level of network resources and streaming in high-quality resolution is ideal. Players with AVPlayerNetworkResourcePriorityHigh will take precedence over this player. This player will take precedence over players with AVPlayerNetworkResourcePriorityLow.
 
@@ -20,11 +21,16 @@ The default priority level given to a player for loading network resources. Use 
 case `default`
 ```
 
+```c
+AVPlayerNetworkResourcePriorityDefault
+```
+
 ## See Also
 
-- [AVPlayer.NetworkResourcePriority.high](avplayer/networkresourcepriority-swift.enum/high.md)
+### Priorities
+- [AVPlayer.NetworkResourcePriority.high](./high.md)
   Indicates a high priority level for loading network resources. Use this when the player requires a high level of network resources and streaming in high-quality resolution is crucial. This player will take precedence over other lower priority players.
-- [AVPlayer.NetworkResourcePriority.low](avplayer/networkresourcepriority-swift.enum/low.md)
+- [AVPlayer.NetworkResourcePriority.low](./low.md)
   Indicates a low priority level for loading network resources. Use this when the player requires minimal network bandwidth and streaming in high-quality resolution is not crucial. Other players with higher priority will take precedence over this player.
 
 

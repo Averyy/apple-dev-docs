@@ -1,7 +1,8 @@
 # document
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contents of the document.
 
@@ -21,11 +22,12 @@ let document: DocumentObservation.Container
 
 ## See Also
 
-- [let uuid: UUID](documentobservation/uuid.md)
+### Inspecting an observation
+- [let uuid: UUID](./uuid.md)
   A unique alphanumeric value that the framework assigns to the observation.
-- [let confidence: Float](documentobservation/confidence.md)
+- [let confidence: Float](./confidence.md)
   The level of confidence in the observation’s accuracy.
-- [let timeRange: CMTimeRange?](documentobservation/timerange.md)
+- [let timeRange: CMTimeRange?](./timerange.md)
   Time in a video frame where the observation was detected.
 
 

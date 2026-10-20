@@ -1,7 +1,8 @@
 # cameraMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A setting that chooses between the AR session’s camera and a virtual one.
 
@@ -19,7 +20,8 @@ A setting that chooses between the AR session’s camera and a virtual one.
 
 ## See Also
 
-- [var cameraTransform: Transform](arview/cameratransform.md)
+### Managing the camera
+- [var cameraTransform: Transform](./cameratransform.md)
   The transform of the currently active camera.
 
 

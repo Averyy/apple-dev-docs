@@ -1,7 +1,8 @@
 # accessibilityDescription
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized accessibility description describing the compass direction.
 
@@ -26,9 +27,10 @@ The description is suitable for Voice Over and other assistive technologies.
 
 ## See Also
 
-- [var abbreviation: String](wind/compassdirection-swift.enum/abbreviation.md)
+### Describing the compass direction
+- [var abbreviation: String](./abbreviation.md)
   A localized short abbreviation of the wind compass direction.
-- [var description: String](wind/compassdirection-swift.enum/description.md)
+- [var description: String](./description.md)
   A localized string describing the compass direction.
 
 

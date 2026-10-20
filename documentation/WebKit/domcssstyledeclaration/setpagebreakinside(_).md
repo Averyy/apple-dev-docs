@@ -1,7 +1,8 @@
 # setPageBreakInside(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setPageBreakInside(_ pageBreakInside: String!)
+```
+
+```objc
+- (void) setPageBreakInside:(NSString *) pageBreakInside;
 ```
 
 

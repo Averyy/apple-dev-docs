@@ -1,7 +1,8 @@
 # cropAndScale
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The crop and scale options.
 
@@ -21,9 +22,10 @@ let cropAndScale: VNImageCropAndScaleOption
 
 ## See Also
 
-- [var revision: Int](imagefeatureprint/revision.md)
+### Getting the properties
+- [var revision: Int](./revision.md)
   The feature extractor revision number.
-- [static let latestRevision: Int](imagefeatureprint/latestrevision.md)
+- [static let latestRevision: Int](./latestrevision.md)
   The latest feature extractor revision.
 
 

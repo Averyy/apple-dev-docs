@@ -1,7 +1,8 @@
 # FamilyControlsError.unauthorized
 
 **Framework**: Family Controls  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The calling app must be authorized to provide parental controls and access data.
 

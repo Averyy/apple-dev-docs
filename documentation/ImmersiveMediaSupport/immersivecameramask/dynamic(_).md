@@ -1,7 +1,8 @@
 # ImmersiveCameraMask.dynamic(_:)
 
 **Framework**: Immersive Media Support  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that defines a control points based dynamically generated mask.
 

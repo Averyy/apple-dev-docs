@@ -1,7 +1,8 @@
 # kPMDestinationFax
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies output to a fax. This destination is currently not supported.
 

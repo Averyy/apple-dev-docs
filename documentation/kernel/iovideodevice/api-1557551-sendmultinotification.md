@@ -1,14 +1,15 @@
 # sendMultiNotification
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual void sendMultiNotification(UInt32 numberNotifications, const IOVideoDeviceNotification *notifications);
 ```
 

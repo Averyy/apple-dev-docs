@@ -1,7 +1,8 @@
 # add(anchor:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified anchor to be tracked by the session.
 
@@ -15,6 +16,10 @@ Adds the specified anchor to be tracked by the session.
 func add(anchor: ARAnchor)
 ```
 
+```objc
+- (void) addAnchor:(ARAnchor *) anchor;
+```
+
 #### Discussion
 
 Changes to anchor tracking take effect when the next frame is captured.
@@ -25,7 +30,8 @@ Changes to anchor tracking take effect when the next frame is captured.
 
 ## See Also
 
-- [func remove(anchor: ARAnchor)](arsession/remove(anchor:).md)
+### Managing anchors
+- [func remove(anchor: ARAnchor)](./remove%28anchor%29.md)
   Removes the specified anchor from tracking by the session.
 
 

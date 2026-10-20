@@ -1,14 +1,15 @@
 # kUSB2LPMMaxL1Timeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 kUSB2LPMMaxL1Timeout = 0xFF00
 ```
 

@@ -1,7 +1,8 @@
 # kCMMetadataBaseDataType_ISOLatin1
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kCMMetadataBaseDataType_ISOLatin1: CFString
+```
+
+```c
+extern CFStringRef const kCMMetadataBaseDataType_ISOLatin1;
 ```
 
 

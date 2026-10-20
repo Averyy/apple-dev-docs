@@ -1,7 +1,8 @@
 # IntentCollectionSize
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -21,24 +22,25 @@ struct IntentCollectionSize
 ## Topics
 
 ### Initializers
-- [init(exactly: Int)](intentcollectionsize/init(exactly:).md)
-- [init(min: Int, max: Int)](intentcollectionsize/init(min:max:).md)
+- [init(exactly: Int)](./intentcollectionsize/init%28exactly%29.md)
+- [init(min: Int, max: Int)](./intentcollectionsize/init%28min,max%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByIntegerLiteral](../Swift/expressiblebyintegerliteral.md)
 
 ## See Also
 
-- [struct IntentItem](intentitem.md)
+### Items and collections
+- [struct IntentItem](./intentitem.md)
   A type describing a value returned from a dynamic options provider, plus information about how to display it to users.
-- [struct IntentItemCollection](intentitemcollection.md)
+- [struct IntentItemCollection](./intentitemcollection.md)
   Return this object to provide an advanced list of options, optionally divided in sections.
-- [struct IntentItemSection](intentitemsection.md)
+- [struct IntentItemSection](./intentitemsection.md)
   An object you use to divide dynamic options into sections.
-- [struct IntentResponseStream](intentresponsestream.md)
+- [struct IntentResponseStream](./intentresponsestream.md)
 
 
 ---

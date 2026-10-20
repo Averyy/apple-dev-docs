@@ -1,7 +1,8 @@
 # items
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The items displayed on the toolbar.
 
@@ -17,15 +18,20 @@ The items displayed on the toolbar.
 var items: [UIBarButtonItem]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<UIBarButtonItem *> * items;
+```
+
 #### Discussion
 
-The items, instances of [`UIBarButtonItem`](uibarbuttonitem.md), that are visible on the toolbar in the order they appear in this array. Any changes to this property aren’t animated. Use the [`setItems(_:animated:)`](uitoolbar/setitems(_:animated:).md) method to animate changes.
+The items, instances of [`UIBarButtonItem`](../uibarbuttonitem.md), that are visible on the toolbar in the order they appear in this array. Any changes to this property aren’t animated. Use the [`setItems(_:animated:)`](./setitems%28_,animated%29.md) method to animate changes.
 
 The default value is `nil`.
 
 ## See Also
 
-- [func setItems([UIBarButtonItem]?, animated: Bool)](uitoolbar/setitems(_:animated:).md)
+### Configuring toolbar items
+- [func setItems([UIBarButtonItem]?, animated: Bool)](./setitems%28_,animated%29.md)
   Sets the items on the toolbar by animating the changes.
 
 

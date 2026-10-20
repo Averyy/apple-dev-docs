@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsInternalMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The mask indicating that the USB device is internal.
 
@@ -10,7 +11,7 @@ The mask indicating that the USB device is internal.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsInternalMask = (1 << kUSBInformationDeviceIsInternalBit)
 ```
 

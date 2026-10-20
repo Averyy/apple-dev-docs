@@ -1,7 +1,8 @@
 # extrinsicOriginSource
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Identifies how the origin of the camera system’s extrinsics are determined.
 

@@ -1,7 +1,8 @@
 # unifiedAutoExposureDefaultsEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the input enables unified auto-exposure defaults.
 
@@ -17,22 +18,27 @@ A Boolean value that indicates whether the input enables unified auto-exposure d
 var unifiedAutoExposureDefaultsEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL unifiedAutoExposureDefaultsEnabled;
+```
+
 #### Discussion
 
-You may set the value of a capture device’s [`activeFormat`](avcapturedevice/activeformat.md) in two ways:
+You may set the value of a capture device’s [`activeFormat`](../avcapturedevice/activeformat.md) in two ways:
 
-1. Set it directly using one of the formats in the device’s [`formats`](avcapturedevice/formats.md) property.
-2. The capture session sets it on your behalf when you set its [`sessionPreset`](avcapturesession/sessionpreset.md) property.
+1. Set it directly using one of the formats in the device’s [`formats`](../avcapturedevice/formats.md) property.
+2. The capture session sets it on your behalf when you set its [`sessionPreset`](../avcapturesession/sessionpreset.md) property.
 
-Depending on the device and format, you may configure the default auto exposure behavior differently when you use one method or the other, resulting in non-uniform auto exposure behavior. Auto exposure defaults include [`minFrameRate`](avframeraterange/minframerate.md), [`maxFrameRate`](avframeraterange/maxframerate.md), and [`maxExposureDuration`](avcapturedevice/format/maxexposureduration.md). You can set this property to [`true`](https://developer.apple.com/documentation/swift/true) to ensure that the system applies consistent default behaviors to the device regardless of the way you set the active format.
+Depending on the device and format, you may configure the default auto exposure behavior differently when you use one method or the other, resulting in non-uniform auto exposure behavior. Auto exposure defaults include [`minFrameRate`](../avframeraterange/minframerate.md), [`maxFrameRate`](../avframeraterange/maxframerate.md), and [`maxExposureDuration`](../avcapturedevice/format/maxexposureduration.md). You can set this property to [`true`](../../Swift/true.md) to ensure that the system applies consistent default behaviors to the device regardless of the way you set the active format.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
-> **Note**:  Manually setting the device’s [`minFrameRate`](avframeraterange/minframerate.md), [`maxFrameRate`](avframeraterange/maxframerate.md), or [`maxExposureDuration`](avcapturedevice/format/maxexposureduration.md) overrides the device defaults, even if you set this property to [`true`](https://developer.apple.com/documentation/swift/true).
+> **Note**:  Manually setting the device’s [`minFrameRate`](../avframeraterange/minframerate.md), [`maxFrameRate`](../avframeraterange/maxframerate.md), or [`maxExposureDuration`](../avcapturedevice/format/maxexposureduration.md) overrides the device defaults, even if you set this property to [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var videoMinFrameDurationOverride: CMTime](avcapturedeviceinput/videominframedurationoverride.md)
+### Configuring video properties
+- [var videoMinFrameDurationOverride: CMTime](./videominframedurationoverride.md)
   A time value that acts as a modifier to a capture device’s active video minimum frame duration.
 
 

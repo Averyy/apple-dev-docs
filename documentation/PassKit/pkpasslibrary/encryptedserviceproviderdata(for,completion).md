@@ -1,7 +1,8 @@
 # encryptedServiceProviderData(for:completion:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.0+
@@ -14,7 +15,15 @@
 ## Declaration
 
 ```swift
+func encryptedServiceProviderData(for secureElementPass: PKSecureElementPass, completion: @escaping @Sendable ([AnyHashable : Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func encryptedServiceProviderData(for secureElementPass: PKSecureElementPass) async throws -> [AnyHashable : Any]
+```
+
+```objc
+- (void) encryptedServiceProviderDataForSecureElementPass:(PKSecureElementPass *) secureElementPass completion:(void (^)(NSDictionary *encryptedServiceProviderData, NSError *error)) completion;
 ```
 
 

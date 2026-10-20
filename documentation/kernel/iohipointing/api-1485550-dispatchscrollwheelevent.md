@@ -1,14 +1,15 @@
 # dispatchScrollWheelEvent
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+ - Deprecated in 10.15.1
 
 ## Declaration
 
-```swift
+```cpp
 virtual void dispatchScrollWheelEvent(short deltaAxis1, short deltaAxis2, short deltaAxis3, AbsoluteTime ts);
 ```
 

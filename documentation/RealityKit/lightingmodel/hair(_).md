@@ -1,7 +1,8 @@
 # LightingModel.hair(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -19,7 +20,8 @@ case hair(HairLightingModel)
 
 ## See Also
 
-- [static func hair() -> LightingModel](lightingmodel/hair.md)
+### Creating a hair model
+- [static func hair() -> LightingModel](./hair%28%29.md)
 
 
 ---

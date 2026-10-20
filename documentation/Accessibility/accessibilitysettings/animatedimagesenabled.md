@@ -1,7 +1,8 @@
 # animatedImagesEnabled
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the system setting for playing animated images is on.
 
@@ -22,13 +23,14 @@ static var animatedImagesEnabled: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the system setting for Animated Images is on; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) if the system setting for Animated Images is on; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [Animated images](animated-images.md)
+### Pausing animated images
+- [Animated images](../animated-images.md)
   Pause animations in animated images in your app when people turn off the Animated Images setting.
-- [static var animatedImagesEnabledDidChangeNotification: Notification.Name](accessibilitysettings/animatedimagesenableddidchangenotification.md)
+- [static var animatedImagesEnabledDidChangeNotification: Notification.Name](./animatedimagesenableddidchangenotification.md)
   A notification that posts when the system setting for playing animated images changes.
 
 

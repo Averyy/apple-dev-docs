@@ -1,14 +1,15 @@
 # xb_ptr
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 char *xb_ptr;
 ```
 

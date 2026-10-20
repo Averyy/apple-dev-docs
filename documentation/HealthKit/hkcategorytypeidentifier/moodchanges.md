@@ -1,7 +1,8 @@
 # moodChanges
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A category type that records mood changes as a symptom.
 
@@ -19,15 +20,20 @@ A category type that records mood changes as a symptom.
 static let moodChanges: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierMoodChanges;
+```
+
 #### Discussion
 
-These samples use values from the [`HKCategoryValuePresence`](hkcategoryvaluepresence.md) enumeration.
+These samples use values from the [`HKCategoryValuePresence`](../hkcategoryvaluepresence.md) enumeration.
 
 ## See Also
 
-- [static let headache: HKCategoryTypeIdentifier](hkcategorytypeidentifier/headache.md)
+### Neurological
+- [static let headache: HKCategoryTypeIdentifier](./headache.md)
   A category type that records headache as a symptom.
-- [static let memoryLapse: HKCategoryTypeIdentifier](hkcategorytypeidentifier/memorylapse.md)
+- [static let memoryLapse: HKCategoryTypeIdentifier](./memorylapse.md)
   A category type that records memory lapse as a symptom.
 
 

@@ -1,7 +1,8 @@
 # DataDestinationControl
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The identifier for the audio data destination control class.
 
@@ -10,25 +11,26 @@ The identifier for the audio data destination control class.
 
 ## Declaration
 
-```swift
+```c
 DataDestinationControl
 ```
 
 #### Discussion
 
-This class is a subclass of the [`IOUserAudioSelectorControl`](iouseraudioselectorcontrol.md) class that identifies where the element’s data goes to.
+This class is a subclass of the [`IOUserAudioSelectorControl`](../../iouseraudioselectorcontrol.md) class that identifies where the element’s data goes to.
 
 ## See Also
 
-- [SelectorControl](audiodriverkit/iouseraudioclassid/selectorcontrol.md)
+### Selector Controls
+- [SelectorControl](./selectorcontrol.md)
   The identifier for the audio selector control class.
-- [DataSourceControl](audiodriverkit/iouseraudioclassid/datasourcecontrol.md)
+- [DataSourceControl](./datasourcecontrol.md)
   The identifier for the audio data source control class.
-- [ClockSourceControl](audiodriverkit/iouseraudioclassid/clocksourcecontrol.md)
+- [ClockSourceControl](./clocksourcecontrol.md)
   The identifier for the audio clock source control class.
-- [HighPassFilterControl](audiodriverkit/iouseraudioclassid/highpassfiltercontrol.md)
+- [HighPassFilterControl](./highpassfiltercontrol.md)
   The identifier for the audio high pass filter control class.
-- [LineLevelControl](audiodriverkit/iouseraudioclassid/linelevelcontrol.md)
+- [LineLevelControl](./linelevelcontrol.md)
   The identifier for the audio line level control class.
 
 

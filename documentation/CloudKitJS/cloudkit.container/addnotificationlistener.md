@@ -1,7 +1,8 @@
 # addNotificationListener
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a function to call when a push notification occurs.
 
@@ -10,7 +11,7 @@ Adds a function to call when a push notification occurs.
 
 ## Declaration
 
-```swift
+```
 void addNotificationListener(
 	function listener
 );
@@ -18,21 +19,22 @@ void addNotificationListener(
 
 #### Discussion
 
-To subscribe to changes and register for push notifications, see `saveSubscription` in the [`CloudKit.Database`](cloudkit.database.md) class.
+To subscribe to changes and register for push notifications, see `saveSubscription` in the [`CloudKit.Database`](../cloudkit.database.md) class.
 
 ## Parameters
 
-- `listener`: The function to call when a push notification occurs. The function must have a single argument that is a [`CloudKit.Notification`](cloudkit.notification.md) object.
+- `listener`: The function to call when a push notification occurs. The function must have a single argument that is a [`CloudKit.Notification`](../cloudkit.notification.md) object.
 
 ## See Also
 
-- [removeNotificationListener](cloudkit.container/removenotificationlistener.md)
+### Receiving Notifications
+- [removeNotificationListener](./removenotificationlistener.md)
   Removes a function to call when a push notification occurs.
-- [registerForNotifications](cloudkit.container/registerfornotifications.md)
+- [registerForNotifications](./registerfornotifications.md)
   Registers to receive push notifications.
-- [unregisterForNotifications](cloudkit.container/unregisterfornotifications.md)
+- [unregisterForNotifications](./unregisterfornotifications.md)
   Unregisters to receive push notifications.
-- [isRegisteredForNotifications](cloudkit.container/isregisteredfornotifications.md)
+- [isRegisteredForNotifications](./isregisteredfornotifications.md)
   Boolean value indicating whether this container is registered to receive push notifications.
 
 

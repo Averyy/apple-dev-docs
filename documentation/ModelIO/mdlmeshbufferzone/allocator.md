@@ -2,6 +2,7 @@
 
 **Framework**: Model I/O  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The allocator object that created the zone.
@@ -20,13 +21,18 @@ The allocator object that created the zone.
 var allocator: any MDLMeshBufferAllocator { get }
 ```
 
+```objc
+@property (nonatomic, readonly) id<MDLMeshBufferAllocator> allocator;
+```
+
 #### Discussion
 
-Use the [`newZone(_:)`](mdlmeshbufferallocator/newzone(_:).md) method of a concrete class implementing the [`MDLMeshBufferAllocator`](mdlmeshbufferallocator.md) protocol to create a zone.
+Use the [`newZone(_:)`](../mdlmeshbufferallocator/newzone%28_%29.md) method of a concrete class implementing the [`MDLMeshBufferAllocator`](../mdlmeshbufferallocator.md) protocol to create a zone.
 
 ## See Also
 
-- [var capacity: Int](mdlmeshbufferzone/capacity.md)
+### Inspecting a Zone
+- [var capacity: Int](./capacity.md)
   The data capacity of the zone, in bytes.
 
 

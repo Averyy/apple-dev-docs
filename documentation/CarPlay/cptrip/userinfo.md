@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom object associated with the trip.
 
@@ -14,6 +15,10 @@ A custom object associated with the trip.
 
 ```swift
 var userInfo: Any? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) id userInfo;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # PrimitiveButtonStyleConfiguration
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The properties of a button.
 
@@ -23,32 +24,33 @@ struct PrimitiveButtonStyleConfiguration
 ## Topics
 
 ### Configuring a button’s label
-- [let label: PrimitiveButtonStyleConfiguration.Label](primitivebuttonstyleconfiguration/label-swift.property.md)
+- [let label: PrimitiveButtonStyleConfiguration.Label](./primitivebuttonstyleconfiguration/label-swift.property.md)
   A view that describes the effect of calling the button’s action.
-- [PrimitiveButtonStyleConfiguration.Label](primitivebuttonstyleconfiguration/label-swift.struct.md)
+- [PrimitiveButtonStyleConfiguration.Label](./primitivebuttonstyleconfiguration/label-swift.struct.md)
   A type-erased label of a button.
 ### Initiating a button’s action
-- [func trigger()](primitivebuttonstyleconfiguration/trigger.md)
+- [func trigger()](./primitivebuttonstyleconfiguration/trigger%28%29.md)
   Performs the button’s action.
 ### Defining the button’s purpose
-- [let role: ButtonRole?](primitivebuttonstyleconfiguration/role.md)
+- [let role: ButtonRole?](./primitivebuttonstyleconfiguration/role.md)
   An optional semantic role describing the button’s purpose.
 
 ## See Also
 
-- [func buttonStyle(_:)](view/buttonstyle(_:).md)
+### Styling buttons
+- [func buttonStyle(_:)](./view/buttonstyle%28_%29.md)
   Sets the style for buttons within this view to a button style with a custom appearance and standard interaction behavior.
-- [protocol ButtonStyle](buttonstyle.md)
+- [protocol ButtonStyle](./buttonstyle.md)
   A type that applies standard interaction behavior and a custom appearance to all buttons within a view hierarchy.
-- [struct ButtonStyleConfiguration](buttonstyleconfiguration.md)
+- [struct ButtonStyleConfiguration](./buttonstyleconfiguration.md)
   The properties of a button.
-- [protocol PrimitiveButtonStyle](primitivebuttonstyle.md)
+- [protocol PrimitiveButtonStyle](./primitivebuttonstyle.md)
   A type that applies custom interaction behavior and a custom appearance to all buttons within a view hierarchy.
-- [func signInWithAppleButtonStyle(SignInWithAppleButton.Style) -> some View](view/signinwithapplebuttonstyle(_:).md)
+- [func signInWithAppleButtonStyle(SignInWithAppleButton.Style) -> some View](./view/signinwithapplebuttonstyle%28_%29.md)
   Sets the style used for displaying the control (see `SignInWithAppleButton.Style`).
-- [func buttonSizing(ButtonSizing) -> some View](view/buttonsizing(_:).md)
+- [func buttonSizing(ButtonSizing) -> some View](./view/buttonsizing%28_%29.md)
   The preferred sizing behavior of buttons in the view hierarchy.
-- [struct ButtonSizing](buttonsizing.md)
+- [struct ButtonSizing](./buttonsizing.md)
   The sizing behavior of `Button`s and other button-like controls.
 
 

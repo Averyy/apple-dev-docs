@@ -1,7 +1,8 @@
 # errSessionInvalidId
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Detected an invalid session ID.
 
@@ -18,6 +19,10 @@ Detected an invalid session ID.
 
 ```swift
 var errSessionInvalidId: OSStatus { get }
+```
+
+```c
+errSessionInvalidId
 ```
 
 

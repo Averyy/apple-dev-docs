@@ -1,7 +1,8 @@
 # secondaryAction
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional secondary action, and button, for the navigation alert.
 
@@ -16,13 +17,18 @@ An optional secondary action, and button, for the navigation alert.
 var secondaryAction: CPAlertAction? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) CPAlertAction * secondaryAction;
+```
+
 #### Discussion
 
 The alert displays the button for a secondary action on the trailing edge of the alert.
 
 ## See Also
 
-- [var primaryAction: CPAlertAction](cpnavigationalert/primaryaction.md)
+### Getting the Actions
+- [var primaryAction: CPAlertAction](./primaryaction.md)
   The primary action, and button, for the navigation alert.
 
 

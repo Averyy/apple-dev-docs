@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier for the facial expression.
 
@@ -14,6 +15,10 @@ An identifier for the facial expression.
 
 ```swift
 var identifier: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
 ```
 
 #### Discussion
@@ -45,7 +50,8 @@ The possible values for a whole facial expression are:
 
 ## See Also
 
-- [var value: Double](srfacemetricsexpression/value.md)
+### Getting the expression identifier and analysis
+- [var value: Double](./value.md)
   The current position of the expression.
 
 

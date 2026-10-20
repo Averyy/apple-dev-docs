@@ -2,6 +2,7 @@
 
 **Framework**: Metal Performance Shaders  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 func texture(with pixelFormat: MTLPixelFormat, width: Int, height: Int) -> (any MTLTexture)?
+```
+
+```objc
+- (id<MTLTexture>) textureWithPixelFormat:(MTLPixelFormat) pixelFormat width:(NSUInteger) width height:(NSUInteger) height;
 ```
 
 

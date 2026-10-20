@@ -1,7 +1,8 @@
 # subset1
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An unsigned 32-bit integer that represents Virtio feature bits 32 through 63.
 
@@ -12,6 +13,10 @@ An unsigned 32-bit integer that represents Virtio feature bits 32 through 63.
 
 ```swift
 var subset1: UInt32 { get set }
+```
+
+```objc
+@property (readwrite) uint32_t subset1;
 ```
 
 

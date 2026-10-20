@@ -1,7 +1,8 @@
 # AuditFilter
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A single filter condition in an audit query request, specifying the field to filter on, the comparison operator, and one or more values to match against.
 
@@ -10,7 +11,7 @@ A single filter condition in an audit query request, specifying the field to fil
 
 ## Declaration
 
-```swift
+```
 object AuditFilter
 ```
 
@@ -39,7 +40,7 @@ Each field accepts only certain operators and value formats, summarized below.
 | Field | Operator | Accepted Values |
 | --- | --- | --- |
 | `eventTime` | `BETWEEN`, `GREATER_THAN`, `LESS_THAN` | ISO 8601 timestamps. Maximum lookback is 6 months. `BETWEEN` requires two values. `GREATER_THAN` and `LESS_THAN` each take a single timestamp. |
-| `entityType` | `IN` | Not a closed enum. A string matching the name of the API entity that changed, such as `Campaign`, `AdGroup`, `Keyword`, `NegativeKeyword`, `Ad`, `Creative`, `AdAccount`, `Org`, or `LocationGroup`. See [`Change History Endpoints`](change-history-endpoints.md) for the entity types this endpoint reports on. |
+| `entityType` | `IN` | Not a closed enum. A string matching the name of the API entity that changed, such as `Campaign`, `AdGroup`, `Keyword`, `NegativeKeyword`, `Ad`, `Creative`, `AdAccount`, `Org`, or `LocationGroup`. See [Change History Endpoints](./change-history-endpoints.md) for the entity types this endpoint reports on. |
 | `entityId` | `EQUALS`, `IN` | Entity ID string(s). Identifies the specific entity that changed. |
 | `eventType` | `IN` | `CREATE`, `UPDATE`, `DELETE` |
 | `userType` | `IN` | `CUSTOMER`, `CUSTOMER_API`, `APPLE_SUPPORT` |
@@ -62,22 +63,22 @@ Each field accepts only certain operators and value formats, summarized below.
 ## Topics
 
 ### Dictionaries
-- [object AuditFilter.Value](auditfilter/value-data.dictionary.md)
+- [object AuditFilter.Value](./auditfilter/value-data.dictionary.md)
   One or more filter values, provided as a string or array of strings.
 
 ## Properties
 
 - `field` (string): The name of the field to filter on. Standard event fields always available: `eventTime`, `entityType`, `entityId`, `userId`, `userType`, `txnId`. Parent identifier fields vary by `entityType`: `adAccountId` (for `Campaign`, `AdGroup`), `campaignId` (for `AdGroup`, `Keyword`, `NegativeKeyword`), `adGroupId` (for `Keyword`, `NegativeKeyword`). For non-time fields, the API supports only `EQUALS` and `IN`. It reserves `GREATER_THAN`, `LESS_THAN`, and `BETWEEN` for `eventTime`.
-- `operator` (AuditOperator): The comparison operator to apply. See [`AuditOperator`](auditoperator.md). For most fields use `IN`. For `eventTime` use `BETWEEN` for a bounded range, or `GREATER_THAN` or `LESS_THAN` for an open-ended range.
-- `value` (AuditFilter.Value): One or more filter values as strings. See [`AuditFilter.Value`](auditfilter/value-data.dictionary.md). For `BETWEEN`, provide exactly two values representing the inclusive lower and upper bounds.
+- `operator` (AuditOperator): The comparison operator to apply. See [`AuditOperator`](./auditoperator.md). For most fields use `IN`. For `eventTime` use `BETWEEN` for a bounded range, or `GREATER_THAN` or `LESS_THAN` for an open-ended range.
+- `value` (AuditFilter.Value): One or more filter values as strings. See [`AuditFilter.Value`](./auditfilter/value-data.dictionary.md). For `BETWEEN`, provide exactly two values representing the inclusive lower and upper bounds.
 
 ## See Also
 
-- [object AuditQuery](auditquery.md)
+- [object AuditQuery](./auditquery.md)
   Request body for the Query Change History endpoint.
-- [object AuditSorting](auditsorting.md)
+- [object AuditSorting](./auditsorting.md)
   A sort directive in an audit query request, specifying a field to sort by and the direction.
-- [object Pagination](pagination.md)
+- [object Pagination](./pagination.md)
   Pagination state in change history list responses.
 
 

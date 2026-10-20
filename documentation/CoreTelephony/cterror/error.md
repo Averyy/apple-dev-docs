@@ -1,7 +1,8 @@
 # error
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A code indicating the specific error.
 
@@ -17,9 +18,14 @@ A code indicating the specific error.
 var error: Int32
 ```
 
+```c
+SInt32 error;
+```
+
 ## See Also
 
-- [var domain: Int32](cterror/domain.md)
+### Getting Error Properties
+- [var domain: Int32](./domain.md)
   A numeric indication of the error domain.
 
 

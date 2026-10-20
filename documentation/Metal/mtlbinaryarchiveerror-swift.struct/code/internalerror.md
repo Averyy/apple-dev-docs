@@ -1,7 +1,8 @@
 # MTLBinaryArchiveError.Code.internalError
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error code that indicates the Metal framework has an internal problem.
 
@@ -19,27 +20,32 @@ An error code that indicates the Metal framework has an internal problem.
 case internalError
 ```
 
+```c
+MTLBinaryArchiveErrorInternalError
+```
+
 #### Discussion
 
-You can report the scenario that generated this error code with [`Feedback Assistant`](https://developer.apple.comhttps://feedbackassistant.apple.com).
+You can report the scenario that generated this error code with [Feedback Assistant](https://feedbackassistant.apple.com).
 
 ## See Also
 
-- [MTLBinaryArchiveError.Code.none](mtlbinaryarchiveerror-swift.struct/code/none.md)
+### Error codes
+- [MTLBinaryArchiveError.Code.none](./none.md)
   An error code that represents the absence of any problems.
-- [MTLBinaryArchiveError.Code.invalidFile](mtlbinaryarchiveerror-swift.struct/code/invalidfile.md)
+- [MTLBinaryArchiveError.Code.invalidFile](./invalidfile.md)
   An error code that indicates an app is using an invalid reference to an archive file, typically related to a URL.
-- [MTLBinaryArchiveError.Code.compilationFailure](mtlbinaryarchiveerror-swift.struct/code/compilationfailure.md)
+- [MTLBinaryArchiveError.Code.compilationFailure](./compilationfailure.md)
   An error code that indicates the archive’s inability to compile its contents, typically when serializing it to a URL.
-- [MTLBinaryArchiveError.Code.unexpectedElement](mtlbinaryarchiveerror-swift.struct/code/unexpectedelement.md)
+- [MTLBinaryArchiveError.Code.unexpectedElement](./unexpectedelement.md)
   An error code that indicates a problem with a configuration, typically in a descriptor or an archive’s inability to add linked functions.
-- [MTLBinaryArchiveError.Code.none](mtlbinaryarchiveerror-swift.struct/code/none.md)
+- [MTLBinaryArchiveError.Code.none](./none.md)
   An error code that represents the absence of any problems.
-- [MTLBinaryArchiveError.Code.invalidFile](mtlbinaryarchiveerror-swift.struct/code/invalidfile.md)
+- [MTLBinaryArchiveError.Code.invalidFile](./invalidfile.md)
   An error code that indicates an app is using an invalid reference to an archive file, typically related to a URL.
-- [MTLBinaryArchiveError.Code.compilationFailure](mtlbinaryarchiveerror-swift.struct/code/compilationfailure.md)
+- [MTLBinaryArchiveError.Code.compilationFailure](./compilationfailure.md)
   An error code that indicates the archive’s inability to compile its contents, typically when serializing it to a URL.
-- [MTLBinaryArchiveError.Code.unexpectedElement](mtlbinaryarchiveerror-swift.struct/code/unexpectedelement.md)
+- [MTLBinaryArchiveError.Code.unexpectedElement](./unexpectedelement.md)
   An error code that indicates a problem with a configuration, typically in a descriptor or an archive’s inability to add linked functions.
 
 

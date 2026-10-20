@@ -1,7 +1,8 @@
 # isPreview
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates when the widget appears in the widget gallery.
 
@@ -21,7 +22,7 @@ let isPreview: Bool
 
 ## Mentions
 
-- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
+- [Migrating ClockKit complications to WidgetKit](../converting-a-clockkit-app.md)
 
 
 ---

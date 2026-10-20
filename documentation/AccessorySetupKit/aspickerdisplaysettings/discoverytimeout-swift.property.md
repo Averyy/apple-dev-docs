@@ -1,7 +1,8 @@
 # discoveryTimeout
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Custom timeout for picker. Default is 30 seconds.
 
@@ -15,13 +16,18 @@ Custom timeout for picker. Default is 30 seconds.
 var discoveryTimeout: ASPickerDisplaySettings.DiscoveryTimeout { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) ASPickerDisplaySettingsDiscoveryTimeout discoveryTimeout;
+```
+
 ## Mentions
 
-- [Discovering and configuring accessories](discovering-and-configuring-accessories.md)
+- [Discovering and configuring accessories](../discovering-and-configuring-accessories.md)
 
 ## See Also
 
-- [ASPickerDisplaySettings.DiscoveryTimeout](aspickerdisplaysettings/discoverytimeout-swift.struct.md)
+### Customizing the discovery timeout
+- [ASPickerDisplaySettings.DiscoveryTimeout](./discoverytimeout-swift.struct.md)
   The type used for the accessory picker’s discovery timeout value.
 
 

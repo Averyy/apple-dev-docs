@@ -1,7 +1,8 @@
 # TrainTrip
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Location and scheduling information for a train trip.
 
@@ -10,13 +11,13 @@ Location and scheduling information for a train trip.
 
 ## Declaration
 
-```swift
+```
 object TrainTrip
 ```
 
 ## Properties
 
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `TrainTrip`
 - `arrivalStation` (TrainStation) *(required)*: The station where the train reservation ends.
 - `arrivalTime` (dateTimeISO8601) *(required)*: The scheduled time the train arrives.
 - `departureStation` (TrainStation) *(required)*: The station where the train reservation starts.
@@ -29,7 +30,8 @@ object TrainTrip
 
 ## See Also
 
-- [object TrainStation](trainstation.md)
+### Defining a Train Reservation
+- [object TrainStation](./trainstation.md)
   The name and location of a train station.
 
 

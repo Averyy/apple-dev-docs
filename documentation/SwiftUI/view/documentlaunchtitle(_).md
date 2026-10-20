@@ -1,7 +1,8 @@
 # documentLaunchTitle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the title displayed on the document launch card.
 
@@ -17,9 +18,26 @@ nonisolated
 func documentLaunchTitle(_ title: Text) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func documentLaunchTitle(_ titleKey: LocalizedStringKey) -> some View
+```
+
+```swift
+nonisolated
+func documentLaunchTitle(_ titleResource: LocalizedStringResource) -> some View
+```
+
+```swift
+nonisolated
+func documentLaunchTitle<S>(_ title: S) -> some View where S : StringProtocol
+```
+
 #### Discussion
 
-Use this modifier to override the default launch-card title, which is the application name. Apply the modifier to a [`DocumentLaunchView`](documentlaunchview.md) or any of its ancestors.
+Use this modifier to override the default launch-card title, which is the application name. Apply the modifier to a [`DocumentLaunchView`](../documentlaunchview.md) or any of its ancestors.
 
 ## Parameters
 
@@ -27,27 +45,28 @@ Use this modifier to override the default launch-card title, which is the applic
 
 ## See Also
 
-- [struct DocumentGroupLaunchScene](documentgrouplaunchscene.md)
+### Configuring the document launch experience
+- [struct DocumentGroupLaunchScene](../documentgrouplaunchscene.md)
   A launch scene for document-based applications.
-- [func documentLaunchTitle(_:)](scene/documentlaunchtitle(_:).md)
+- [func documentLaunchTitle(_:)](../scene/documentlaunchtitle%28_%29.md)
   Sets the title displayed on the document launch card.
-- [func documentLaunchSubtitle(_:)](scene/documentlaunchsubtitle(_:).md)
+- [func documentLaunchSubtitle(_:)](../scene/documentlaunchsubtitle%28_%29.md)
   Sets the subtitle displayed beneath the title on the document launch card.
-- [struct DocumentLaunchView](documentlaunchview.md)
+- [struct DocumentLaunchView](../documentlaunchview.md)
   A view to present when launching document-related user experience.
-- [func documentLaunchSubtitle(_:)](view/documentlaunchsubtitle(_:).md)
+- [func documentLaunchSubtitle(_:)](./documentlaunchsubtitle%28_%29.md)
   Sets the subtitle displayed beneath the title on the document launch card.
-- [func documentBrowserContextMenu(([URL]?) -> some View) -> some View](view/documentbrowsercontextmenu(_:).md)
+- [func documentBrowserContextMenu(([URL]?) -> some View) -> some View](./documentbrowsercontextmenu%28_%29.md)
   Adds to a `DocumentLaunchView` actions that accept a list of selected files as their parameter.
-- [struct DocumentLaunchGeometryProxy](documentlaunchgeometryproxy.md)
+- [struct DocumentLaunchGeometryProxy](../documentlaunchgeometryproxy.md)
   A proxy for access to the frame of the scene and its title view.
-- [struct DefaultDocumentGroupLaunchActions](defaultdocumentgrouplaunchactions.md)
+- [struct DefaultDocumentGroupLaunchActions](../defaultdocumentgrouplaunchactions.md)
   The default actions for the document group launch scene and the document launch view.
-- [struct NewDocumentButton](newdocumentbutton.md)
+- [struct NewDocumentButton](../newdocumentbutton.md)
   A button that creates and opens new documents.
-- [struct DefaultNewDocumentButtonLabel](defaultnewdocumentbuttonlabel.md)
+- [struct DefaultNewDocumentButtonLabel](../defaultnewdocumentbuttonlabel.md)
   The default label used for a new document button.
-- [struct DocumentCreationSource](documentcreationsource.md)
+- [struct DocumentCreationSource](../documentcreationsource.md)
   Describes the source used to create a new document.
 
 

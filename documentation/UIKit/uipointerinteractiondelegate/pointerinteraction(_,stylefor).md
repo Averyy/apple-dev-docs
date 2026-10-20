@@ -1,7 +1,8 @@
 # pointerInteraction(_:styleFor:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for a pointer style after an interaction receives a new region.
 
@@ -17,18 +18,23 @@ Asks the delegate for a pointer style after an interaction receives a new region
 optional func pointerInteraction(_ interaction: UIPointerInteraction, styleFor region: UIPointerRegion) -> UIPointerStyle?
 ```
 
+```objc
+- (UIPointerStyle *) pointerInteraction:(UIPointerInteraction *) interaction styleForRegion:(UIPointerRegion *) region;
+```
+
 #### Return Value
 
 A `UIPointerStyle` describing the desired hover effect or pointer appearance for the given `UIPointerRegion`.
 
 ## Parameters
 
-- `interaction`: This [`UIPointerInteraction`](uipointerinteraction.md).
-- `region`: The [`UIPointerRegion`](uipointerregion.md) that represents the entire surface of the interaction’s view.
+- `interaction`: This [`UIPointerInteraction`](../uipointerinteraction.md).
+- `region`: The [`UIPointerRegion`](../uipointerregion.md) that represents the entire surface of the interaction’s view.
 
 ## See Also
 
-- [func pointerInteraction(UIPointerInteraction, regionFor: UIPointerRegionRequest, defaultRegion: UIPointerRegion) -> UIPointerRegion?](uipointerinteractiondelegate/pointerinteraction(_:regionfor:defaultregion:).md)
+### Defining pointer styles for regions
+- [func pointerInteraction(UIPointerInteraction, regionFor: UIPointerRegionRequest, defaultRegion: UIPointerRegion) -> UIPointerRegion?](./pointerinteraction%28_,regionfor,defaultregion%29.md)
   Asks the delegate for a region as the pointer moves within the interaction’s view.
 
 

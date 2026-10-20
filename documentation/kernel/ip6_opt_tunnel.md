@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ip6_opt_tunnel {
     ...
 };
@@ -17,9 +17,9 @@ struct ip6_opt_tunnel {
 ## Topics
 
 ### Instance Properties
-- [ip6ot_encap_limit](ip6_opt_tunnel/3754521-ip6ot_encap_limit.md)
-- [ip6ot_len](ip6_opt_tunnel/3754522-ip6ot_len.md)
-- [ip6ot_type](ip6_opt_tunnel/3754523-ip6ot_type.md)
+- [ip6ot_encap_limit](./ip6_opt_tunnel/api-3754521-ip6ot_encap_limit.md)
+- [ip6ot_len](./ip6_opt_tunnel/api-3754522-ip6ot_len.md)
+- [ip6ot_type](./ip6_opt_tunnel/api-3754523-ip6ot_type.md)
 
 
 ---

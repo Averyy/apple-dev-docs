@@ -1,24 +1,25 @@
 # ParsingElement
 
 **Framework**: TVMLKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - tvOS 14.0+
 
 ## Declaration
 
-```swift
+```
 interface ParsingElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [innerHTML](parsingelement/3192165-innerhtml.md)
-- [outerHTML](parsingelement/3192167-outerhtml.md)
+- [innerHTML](./parsingelement/api-3192165-innerhtml.md)
+- [outerHTML](./parsingelement/api-3192167-outerhtml.md)
 ### Instance Methods
-- [insertAdjacentHTML](parsingelement/3192166-insertadjacenthtml.md)
+- [insertAdjacentHTML](./parsingelement/api-3192166-insertadjacenthtml.md)
 
 
 ---

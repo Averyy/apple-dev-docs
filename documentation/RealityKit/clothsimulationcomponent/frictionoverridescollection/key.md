@@ -1,7 +1,8 @@
 # ClothSimulationComponent.FrictionOverridesCollection.Key
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The pair of materials whose combined frictions are overridden.
 
@@ -19,20 +20,21 @@ struct Key
 ## Topics
 
 ### Creating a key
-- [init(String, String)](clothsimulationcomponent/frictionoverridescollection/key/init(_:_:).md)
+- [init(String, String)](./key/init%28_,_%29.md)
   Creates a material-pair key from the names of the two materials.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ClothSimulationComponent.FrictionOverridesCollection.Value](clothsimulationcomponent/frictionoverridescollection/value.md)
+### Identifying overrides
+- [ClothSimulationComponent.FrictionOverridesCollection.Value](./value.md)
   The combined frictions that override the frictions used between a pair of materials.
 
 

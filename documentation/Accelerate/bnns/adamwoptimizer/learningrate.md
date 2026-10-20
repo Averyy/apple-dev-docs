@@ -1,7 +1,8 @@
 # learningRate
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that specifies the learning rate.
 
@@ -11,8 +12,10 @@ A value that specifies the learning rate.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,23 +25,24 @@ var learningRate: Float { get set }
 
 ## See Also
 
-- [var beta1: Float](bnns/adamwoptimizer/beta1.md)
+### Inspecting the Properties of an AdamW Optimizer
+- [var beta1: Float](./beta1.md)
   A value that specifies the first-moment constant, in the range `0` to `1`.
-- [var beta2: Float](bnns/adamwoptimizer/beta2.md)
+- [var beta2: Float](./beta2.md)
   A value that specifies the second-moment constant, in the range `0` to `1`.
-- [var timeStep: Float](bnns/adamwoptimizer/timestep.md)
+- [var timeStep: Float](./timestep.md)
   A value that’s at least `1` and represents the optimizer’s current time.
-- [var epsilon: Float](bnns/adamwoptimizer/epsilon.md)
+- [var epsilon: Float](./epsilon.md)
   The epsilon value you use to improve numerical stability.
-- [var gradientScale: Float](bnns/adamwoptimizer/gradientscale.md)
+- [var gradientScale: Float](./gradientscale.md)
   A value that specifies the gradient scaling factor.
-- [var weightDecay: Float](bnns/adamwoptimizer/weightdecay.md)
+- [var weightDecay: Float](./weightdecay.md)
   The weight decay coefficient.
-- [var gradientClipping: BNNS.GradientClipping](bnns/adamwoptimizer/gradientclipping.md)
+- [var gradientClipping: BNNS.GradientClipping](./gradientclipping.md)
   The gradient clipping function and bounds.
-- [BNNS.GradientClipping](bnns/gradientclipping.md)
+- [BNNS.GradientClipping](../gradientclipping.md)
   Constants that describe clipping functions.
-- [var accumulatorCountMultiplier: Int](bnns/adamwoptimizer/accumulatorcountmultiplier.md)
+- [var accumulatorCountMultiplier: Int](./accumulatorcountmultiplier.md)
   The number of accumulators required for each parameter.
 
 

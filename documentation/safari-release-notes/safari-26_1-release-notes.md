@@ -1,6 +1,7 @@
 # Safari 26.1 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released November 3, 2025 — 26.1 (20622.2.11)
 
@@ -17,7 +18,7 @@ Safari 26.1 is available for iOS 26.1, iPadOS 26.1, visionOS 26.1, macOS 26.1, m
 - Fixed exposing content within dynamically expanded details elements in the accessibility tree.  (159937257)
 - Fixed the target of `aria-labelledby` not updating its accessibility label after dynamic `innerHTML` change in the label.  (160691619)
 
-##### Css
+##### CSS
 
 ###### New Features
 
@@ -47,7 +48,7 @@ Safari 26.1 is available for iOS 26.1, iPadOS 26.1, visionOS 26.1, macOS 26.1, m
 - Fixed native text inputs so that their background colors update when autofilled. (159014135)
 - Fixed checkboxes and radio buttons missing borders in the filled state when “Increased Contrast” is enabled on macOS. (159379948)
 
-##### Pdf
+##### PDF
 
 ###### Resolved Issues
 
@@ -64,7 +65,7 @@ Safari 26.1 is available for iOS 26.1, iPadOS 26.1, visionOS 26.1, macOS 26.1, m
 - Fixed an issue that caused cropped flexbox elements to render incorrectly. (161218029)
 - Fixed string search freezing when subject has large number (>1000). (161421015)
 
-##### Svg
+##### SVG
 
 ###### New Features
 
@@ -80,7 +81,7 @@ Safari 26.1 is available for iOS 26.1, iPadOS 26.1, visionOS 26.1, macOS 26.1, m
 
 - Fixed Safari ignoring the `style-src-elem` Content Security Policy directive ensuring it is checked before falling back to `style-src`, in line with CSP3 specifications. (157298407)
 
-##### Web Api
+##### Web API
 
 ###### Resolved Issues
 
@@ -92,7 +93,7 @@ Safari 26.1 is available for iOS 26.1, iPadOS 26.1, visionOS 26.1, macOS 26.1, m
 
 - Fixed issue where searching on certain text fails to find matches.  (159897282)
 
-##### Webgpu
+##### WebGPU
 
 ###### Resolved Issues
 
@@ -100,13 +101,13 @@ Safari 26.1 is available for iOS 26.1, iPadOS 26.1, visionOS 26.1, macOS 26.1, m
 - Fixed an issue where video playback using the WebGPU renderer in WebCodecs could display a black screen. (158442539)
 - Fixed an issue where WebGPU video textures failed to load in Three.js panoramas. (159918934)
 
-##### Webkit Api
+##### WebKit API
 
 ###### Resolved Issues
 
 - Fixed a crash when an app uses `WKWebView::loadRequest` API on background threads.  (162225842)
 
-##### Webrtc
+##### WebRTC
 
 ###### Resolved Issues
 
@@ -114,17 +115,18 @@ Safari 26.1 is available for iOS 26.1, iPadOS 26.1, visionOS 26.1, macOS 26.1, m
 
 ## See Also
 
-- [Safari 26.6 Release Notes](safari-26_6-release-notes.md)
+### Version 26
+- [Safari 26.6 Release Notes](./safari-26_6-release-notes.md)
   Released July 27, 2026 — 26.6 (20624.4.5)
-- [Safari 26.5 Release Notes](safari-26_5-release-notes.md)
+- [Safari 26.5 Release Notes](./safari-26_5-release-notes.md)
   Released May 11, 2026 — 26.5 (20624.2.5)
-- [Safari 26.4 Release Notes](safari-26_4-release-notes.md)
+- [Safari 26.4 Release Notes](./safari-26_4-release-notes.md)
   Released March 24, 2026 — 26.4 (20624.1.16)
-- [Safari 26.3 Release Notes](safari-26_3-release-notes.md)
+- [Safari 26.3 Release Notes](./safari-26_3-release-notes.md)
   Released February 11, 2026 — 26.3 (20623.2.7)
-- [Safari 26.2 Release Notes](safari-26_2-release-notes.md)
+- [Safari 26.2 Release Notes](./safari-26_2-release-notes.md)
   Released December 12, 2025 — 26.2 (20623.1.14)
-- [Safari 26.0 Release Notes](safari-26-release-notes.md)
+- [Safari 26.0 Release Notes](./safari-26-release-notes.md)
   Released September 15, 2025 — 26 (20622.1.22)
 
 

@@ -1,7 +1,8 @@
 # CSSM_BER_TAG
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_BER_TAG = uint8
+```
+
+```c
+typedef uint8 CSSM_BER_TAG;
 ```
 
 

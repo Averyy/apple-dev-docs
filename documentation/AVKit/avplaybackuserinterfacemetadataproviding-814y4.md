@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceMetadataProviding
 
 **Framework**: AVKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Provides metadata information about media content including title, artwork, and content type.
 
@@ -20,23 +21,24 @@ protocol AVPlaybackUserInterfaceMetadataProviding : AnyObject, Observable
 ## Topics
 
 ### Instance Properties
-- [var metadata: AVPlaybackUserInterfaceContentMetadata](avplaybackuserinterfacemetadataproviding-814y4/metadata.md)
+- [var metadata: AVPlaybackUserInterfaceContentMetadata](./avplaybackuserinterfacemetadataproviding-814y4/metadata.md)
   The metadata object containing information about the media content.
 
 ## Relationships
 
 ### Inherits From
-- [Observable](../observation/observable.md)
+- [Observable](../Observation/observable.md)
 ### Inherited By
-- [AVPlaybackUserInterfaceControllable](avplaybackuserinterfacecontrollable-92fri.md)
+- [AVPlaybackUserInterfaceControllable](./avplaybackuserinterfacecontrollable-92fri.md)
 
 ## See Also
 
-- [struct AVPlaybackUserInterfaceContentMetadata](avplaybackuserinterfacecontentmetadata-swift.struct.md)
+### Content metadata
+- [struct AVPlaybackUserInterfaceContentMetadata](./avplaybackuserinterfacecontentmetadata-swift.struct.md)
   A Swift-friendly structure representing media metadata.
-- [class AVPlaybackUserInterfaceContentArtwork](avplaybackuserinterfacecontentartwork.md)
+- [class AVPlaybackUserInterfaceContentArtwork](./avplaybackuserinterfacecontentartwork.md)
   Base class representing artwork or cover art for media content.
-- [class AVPlaybackUserInterfaceContentURLArtwork](avplaybackuserinterfacecontenturlartwork.md)
+- [class AVPlaybackUserInterfaceContentURLArtwork](./avplaybackuserinterfacecontenturlartwork.md)
   An artwork subclass that references artwork via a URL and content type.
 
 

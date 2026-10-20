@@ -1,7 +1,8 @@
 # IOUSBHostMatchingPropertyKey
 
 **Framework**: IOUSBHost  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Properties for implementing the matching service.
 
@@ -15,59 +16,64 @@ Properties for implementing the matching service.
 struct IOUSBHostMatchingPropertyKey
 ```
 
+```c
+typedef NSString * IOUSBHostMatchingPropertyKey;
+```
+
 ## Topics
 
 ### Device Properties
-- [static let vendorID: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/vendorid.md)
+- [static let vendorID: IOUSBHostMatchingPropertyKey](./iousbhostmatchingpropertykey/vendorid.md)
   The matching property for the device’s vendor ID.
-- [static let productID: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/productid.md)
+- [static let productID: IOUSBHostMatchingPropertyKey](./iousbhostmatchingpropertykey/productid.md)
   The matching property for the device’s product ID.
-- [static let deviceReleaseNumber: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/devicereleasenumber.md)
+- [static let deviceReleaseNumber: IOUSBHostMatchingPropertyKey](./iousbhostmatchingpropertykey/devicereleasenumber.md)
   The matching property for the device’s release number.
-- [static let configurationValue: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/configurationvalue.md)
+- [static let configurationValue: IOUSBHostMatchingPropertyKey](./iousbhostmatchingpropertykey/configurationvalue.md)
   The matching property for the device’s current configuration value.
-- [static let speed: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/speed.md)
+- [static let speed: IOUSBHostMatchingPropertyKey](./iousbhostmatchingpropertykey/speed.md)
   The matching property for the device’s enumeration speed.
-- [static let productIDArray: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/productidarray.md)
+- [static let productIDArray: IOUSBHostMatchingPropertyKey](./iousbhostmatchingpropertykey/productidarray.md)
   The matching property on a list of product IDs.
-- [static let productIDMask: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/productidmask.md)
+- [static let productIDMask: IOUSBHostMatchingPropertyKey](./iousbhostmatchingpropertykey/productidmask.md)
   The matching property on a mask of product IDs.
 ### Interface Properties
-- [static let interfaceNumber: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/interfacenumber.md)
+- [static let interfaceNumber: IOUSBHostMatchingPropertyKey](./iousbhostmatchingpropertykey/interfacenumber.md)
   The matching property for the device’s interface number.
-- [static let interfaceClass: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/interfaceclass.md)
+- [static let interfaceClass: IOUSBHostMatchingPropertyKey](./iousbhostmatchingpropertykey/interfaceclass.md)
   The matching property for the interface’s class ID.
-- [static let interfaceSubClass: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/interfacesubclass.md)
+- [static let interfaceSubClass: IOUSBHostMatchingPropertyKey](./iousbhostmatchingpropertykey/interfacesubclass.md)
   The matching property for the interface’s subclass ID.
-- [static let interfaceProtocol: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/interfaceprotocol.md)
+- [static let interfaceProtocol: IOUSBHostMatchingPropertyKey](./iousbhostmatchingpropertykey/interfaceprotocol.md)
   The matching property for the interface’s protocol.
 ### Protocol and Class Properties
-- [static let deviceProtocol: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/deviceprotocol.md)
+- [static let deviceProtocol: IOUSBHostMatchingPropertyKey](./iousbhostmatchingpropertykey/deviceprotocol.md)
   The matching property for the device’s protocol.
-- [static let deviceClass: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/deviceclass.md)
+- [static let deviceClass: IOUSBHostMatchingPropertyKey](./iousbhostmatchingpropertykey/deviceclass.md)
   The matching property for the device’s class.
-- [static let deviceSubClass: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/devicesubclass.md)
+- [static let deviceSubClass: IOUSBHostMatchingPropertyKey](./iousbhostmatchingpropertykey/devicesubclass.md)
   The matching property for the device’s subclass.
 ### Initializing the Structure
-- [init(rawValue: String)](iousbhostmatchingpropertykey/init(rawvalue:).md)
+- [init(rawValue: String)](./iousbhostmatchingpropertykey/init%28rawvalue%29.md)
   Creates the structure.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct IOUSBHostInterfacePropertyKey](iousbhostinterfacepropertykey.md)
+### IOServicePlane Properties
+- [struct IOUSBHostInterfacePropertyKey](./iousbhostinterfacepropertykey.md)
   Properties of a USB interface that describe its state.
-- [struct IOUSBHostDevicePropertyKey](iousbhostdevicepropertykey.md)
+- [struct IOUSBHostDevicePropertyKey](./iousbhostdevicepropertykey.md)
   Properties of a USB device that describe its state.
-- [typealias IOUSBHostPropertyKey](iousbhostpropertykey.md)
+- [typealias IOUSBHostPropertyKey](./iousbhostpropertykey.md)
   Properties that the USB host device and interface classes share.
 
 

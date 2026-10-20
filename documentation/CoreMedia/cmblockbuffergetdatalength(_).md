@@ -1,7 +1,8 @@
 # CMBlockBufferGetDataLength(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the total length of data that’s accessible by a block buffer.
 
@@ -20,6 +21,10 @@ Returns the total length of data that’s accessible by a block buffer.
 func CMBlockBufferGetDataLength(_ theBuffer: CMBlockBuffer) -> Int
 ```
 
+```c
+extern size_t CMBlockBufferGetDataLength(CMBlockBufferRef theBuffer);
+```
+
 #### Return Value
 
 Returns the total data length available via this `CMBlockBuffer`, or zero if it is empty, `NULL` if invalid.
@@ -34,11 +39,12 @@ Obtains the total data length reachable via a `CMBlockBuffer`. This total is the
 
 ## See Also
 
-- [func CMBlockBufferGetDataPointer(CMBlockBuffer, atOffset: Int, lengthAtOffsetOut: UnsafeMutablePointer<Int>?, totalLengthOut: UnsafeMutablePointer<Int>?, dataPointerOut: UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>?) -> OSStatus](cmblockbuffergetdatapointer(_:atoffset:lengthatoffsetout:totallengthout:datapointerout:).md)
+### Inspecting a Block Buffer
+- [func CMBlockBufferGetDataPointer(CMBlockBuffer, atOffset: Int, lengthAtOffsetOut: UnsafeMutablePointer<Int>?, totalLengthOut: UnsafeMutablePointer<Int>?, dataPointerOut: UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>?) -> OSStatus](./cmblockbuffergetdatapointer%28_,atoffset,lengthatoffsetout,totallengthout,datapointerout%29.md)
   Gains access to the data represented by a block buffer.
-- [func CMBlockBufferIsRangeContiguous(CMBlockBuffer, atOffset: Int, length: Int) -> Bool](cmblockbufferisrangecontiguous(_:atoffset:length:).md)
+- [func CMBlockBufferIsRangeContiguous(CMBlockBuffer, atOffset: Int, length: Int) -> Bool](./cmblockbufferisrangecontiguous%28_,atoffset,length%29.md)
   Returns a Boolean value that indicates whether the specified range within a block buffer is contiguous.
-- [func CMBlockBufferIsEmpty(CMBlockBuffer) -> Bool](cmblockbufferisempty(_:).md)
+- [func CMBlockBufferIsEmpty(CMBlockBuffer) -> Bool](./cmblockbufferisempty%28_%29.md)
   Returns a Boolean value that indicates whether the buffer is empty.
 
 

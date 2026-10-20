@@ -1,14 +1,15 @@
 # kBluetoothHCIErrorConnectionFailedToBeEstablished
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCIErrorConnectionFailedToBeEstablished = 0x3E
 ```
 

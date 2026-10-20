@@ -1,7 +1,8 @@
 # customPlaygroundQuickLook
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom playground Quick Look for the `String` instance.
 
@@ -14,6 +15,8 @@ A custom playground Quick Look for the `String` instance.
 - visionOS 1.0+
 - watchOS 2.0+
 
+> **Deprecated**: String.customPlaygroundQuickLook will be removed in a future Swift version
+
 ## Declaration
 
 ```swift
@@ -22,16 +25,17 @@ var customPlaygroundQuickLook: _PlaygroundQuickLook { get }
 
 ## See Also
 
-- [func index(of: Self.Element) -> Self.Index?](string/index(of:).md)
+### Infrequently Used Functionality
+- [func index(of: Self.Element) -> Self.Index?](./index%28of%29.md)
   Returns the first index where the specified value appears in the collection.
-- [init(NSString)](string/init(_:)-5a5lw.md)
-- [init(stringInterpolation: DefaultStringInterpolation)](string/init(stringinterpolation:).md)
+- [init(NSString)](./init%28_%29-5a5lw.md)
+- [init(stringInterpolation: DefaultStringInterpolation)](./init%28stringinterpolation%29.md)
   Creates a new instance from an interpolated string literal.
-- [init(stringLiteral: String)](string/init(stringliteral:).md)
+- [init(stringLiteral: String)](./init%28stringliteral%29.md)
   Creates an instance initialized to the given string value.
-- [init(unicodeScalarLiteral: Self.ExtendedGraphemeClusterLiteralType)](string/init(unicodescalarliteral:).md)
-- [init(extendedGraphemeClusterLiteral: Self.StringLiteralType)](string/init(extendedgraphemeclusterliteral:).md)
-- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?](string/withcontiguousstorageifavailable(_:).md)
+- [init(unicodeScalarLiteral: Self.ExtendedGraphemeClusterLiteralType)](./init%28unicodescalarliteral%29.md)
+- [init(extendedGraphemeClusterLiteral: Self.StringLiteralType)](./init%28extendedgraphemeclusterliteral%29.md)
+- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?](./withcontiguousstorageifavailable%28_%29.md)
   Executes a closure on the sequence’s contiguous storage.
 
 

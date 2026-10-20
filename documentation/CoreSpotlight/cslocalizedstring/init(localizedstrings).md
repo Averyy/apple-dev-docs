@@ -1,7 +1,8 @@
 # init(localizedStrings:)
 
 **Framework**: Core Spotlight  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a `CSLocalizedString` object with the specified dictionary of localized strings.
 
@@ -16,6 +17,10 @@ Initializes a `CSLocalizedString` object with the specified dictionary of locali
 
 ```swift
 init(localizedStrings: [AnyHashable : Any])
+```
+
+```objc
+- (instancetype) initWithLocalizedStrings:(NSDictionary *) localizedStrings;
 ```
 
 #### Return Value

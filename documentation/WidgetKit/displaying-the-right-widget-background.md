@@ -1,6 +1,7 @@
 # Displaying the right widget background
 
-**Framework**: WidgetKit
+**Framework**: WidgetKit  
+**Role**: Article
 
 Group your widget’s background views and mark them as removable to ensure your widget appears correctly for each context and platform.
 
@@ -8,7 +9,7 @@ Group your widget’s background views and mark them as removable to ensure your
 
 Widgets appear differently based on their context, including their background view, for example:
 
-- In the [`vibrant`](widgetrenderingmode/vibrant.md) appearance, the system removes the background of your widget or renders it with semi-translucent appearance.
+- In the [`vibrant`](./widgetrenderingmode/vibrant.md) appearance, the system removes the background of your widget or renders it with semi-translucent appearance.
 - In StandBy on iPhone, the system removes the background of your widget.
 
 To make sure your widget appears correctly, mark your background views as removable for every widget size.
@@ -17,10 +18,10 @@ To make sure your widget appears correctly, mark your background views as remova
 
 To mark your background views as removable:
 
-1. Add the [`containerBackground(_:for:)`](https://developer.apple.com/documentation/swiftui/view/containerbackground(_:for:)) modifier to your background views to define the background appearance of your widget and tell WidgetKit that it can remove the view where applicable.
-2. Move code that declares any background color or views inside the `containerBackground(for:)` view modifier and pass [`widget`](https://developer.apple.com/documentation/swiftui/containerbackgroundplacement/widget) to it. This makes sure WidgetKit automatically removes the background as needed.
+1. Add the [`containerBackground(_:for:)`](../SwiftUI/view/containerbackground%28_,for%29.md) modifier to your background views to define the background appearance of your widget and tell WidgetKit that it can remove the view where applicable.
+2. Move code that declares any background color or views inside the `containerBackground(for:)` view modifier and pass [`widget`](../SwiftUI/containerbackgroundplacement/widget.md) to it. This makes sure WidgetKit automatically removes the background as needed.
 
-The following code snippet from the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project defines a `gameBackground` color for the widget’s container background to make sure WidgetKit renders it with or without the background color as applicable.
+The following code snippet from the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](./emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project defines a `gameBackground` color for the widget’s container background to make sure WidgetKit renders it with or without the background color as applicable.
 
 ```swift
 var body: some View {
@@ -48,17 +49,17 @@ Marking background views as removable by defining a background container so you 
 
 On Apple Watch, rectangular widgets in the Smart Stack use a default dark material background. By adding a container background, the widget renders with a background that visually ties it to your app and makes it more recognizable to people.
 
-To detect whether a widget appears with or without a background, use the [`showsWidgetContainerBackground`](https://developer.apple.com/documentation/swiftui/environmentvalues/showswidgetcontainerbackground) environment variable.
+To detect whether a widget appears with or without a background, use the [`showsWidgetContainerBackground`](../SwiftUI/environmentvalues/showswidgetcontainerbackground.md) environment variable.
 
-##### Explicitly Opt Out of Background Removal
+##### Explicitly opt out of background removal
 
-Some widgets don’t have distinct foreground content, and background removal can negatively impact their functionality. For example, a widget might display a photo or map that takes up the entirety of the widget’s bounds. Removing the photo or map removes the functionality of the widget. If this case applies to your widget, set the [`containerBackgroundRemovable(_:)`](https://developer.apple.com/documentation/swiftui/widgetconfiguration/containerbackgroundremovable(_:)) modifier to `false` for your widget configuration.
+Some widgets don’t have distinct foreground content, and background removal can negatively impact their functionality. For example, a widget might display a photo or map that takes up the entirety of the widget’s bounds. Removing the photo or map removes the functionality of the widget. If this case applies to your widget, set the [`containerBackgroundRemovable(_:)`](../SwiftUI/widgetconfiguration/containerbackgroundremovable%28_%29.md) modifier to `false` for your widget configuration.
 
 > ❗ **Important**: Marking a background as nonremovable excludes your widget from the widget gallery in contexts that require a removable background; for example, on the iPad Lock Screen and in StandBy.
 
-##### Set the Background Color of Accessory Widgets
+##### Set the background color of accessory widgets
 
-Depending on your accessory widget or complication, you may need to set a consistent background for your accessory widget. Use [`AccessoryWidgetBackground`](accessorywidgetbackground.md) to draw a consistent background for your widget, as shown in the following example. It creates a view that’s similar to the circular Lock Screen widget that the Calendar app offers:
+Depending on your accessory widget or complication, you may need to set a consistent background for your accessory widget. Use [`AccessoryWidgetBackground`](./accessorywidgetbackground.md) to draw a consistent background for your widget, as shown in the following example. It creates a view that’s similar to the circular Lock Screen widget that the Calendar app offers:
 
 ```swift
 ZStack {
@@ -73,33 +74,34 @@ ZStack {
 
 ## See Also
 
-- [Supporting additional widget sizes](supporting-additional-widget-sizes.md)
+### Layout and presentation
+- [Supporting additional widget sizes](./supporting-additional-widget-sizes.md)
   Offer widgets in additional contexts by adding support for various widget sizes.
-- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
+- [Optimizing your widget for accented rendering mode and Liquid Glass](./optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
   Make your widget feel at home on Apple platforms and Liquid Glass by using accented rendering mode.
-- [Adding StandBy and CarPlay support to your widget](adding-standby-and-carplay-support-to-your-widget.md)
+- [Adding StandBy and CarPlay support to your widget](./adding-standby-and-carplay-support-to-your-widget.md)
   Ensure that your small system family widget works well in StandBy and CarPlay.
-- [struct WidgetRenderingMode](widgetrenderingmode.md)
+- [struct WidgetRenderingMode](./widgetrenderingmode.md)
   Constants that indicate the rendering mode for a widget.
-- [struct WidgetAccentedRenderingMode](widgetaccentedrenderingmode.md)
-  Constants that indicate the rendering mode for an `Image` in when displayed in a widget in [`accented`](widgetrenderingmode/accented.md) mode.
-- [struct AccessoryWidgetBackground](accessorywidgetbackground.md)
+- [struct WidgetAccentedRenderingMode](./widgetaccentedrenderingmode.md)
+  Constants that indicate the rendering mode for an `Image` in when displayed in a widget in [`accented`](./widgetrenderingmode/accented.md) mode.
+- [struct AccessoryWidgetBackground](./accessorywidgetbackground.md)
   An adaptive background view that provides a standard appearance based on the the widget’s environment.
-- [struct WidgetLocation](widgetlocation.md)
+- [struct WidgetLocation](./widgetlocation.md)
   Values that indicate different widget locations.
 - [func widgetAccentable(Bool) -> some View
-](../swiftui/view/widgetaccentable(_:).md)
+](../SwiftUI/view/widgetaccentable%28_%29.md)
   Adds the view and all of its subviews to the accented group.
 - [func widgetAccentedRenderingMode(WidgetAccentedRenderingMode?) -> some View
-](../swiftui/image/widgetaccentedrenderingmode(_:).md)
+](../SwiftUI/image/widgetaccentedrenderingmode%28_%29.md)
   Specifies the how to render an `Image` when using the `WidgetKit/WidgetRenderingMode/accented` mode.
-- [var widgetRenderingMode: WidgetRenderingMode](../swiftui/environmentvalues/widgetrenderingmode.md)
+- [var widgetRenderingMode: WidgetRenderingMode](../SwiftUI/environmentvalues/widgetrenderingmode.md)
   The widget’s rendering mode, based on where the system is displaying it.
-- [var widgetContentMargins: EdgeInsets](../swiftui/environmentvalues/widgetcontentmargins.md)
+- [var widgetContentMargins: EdgeInsets](../SwiftUI/environmentvalues/widgetcontentmargins.md)
   A property that identifies the content margins of a widget.
-- [static let widget: ContainerBackgroundPlacement](../swiftui/containerbackgroundplacement/widget.md)
+- [static let widget: ContainerBackgroundPlacement](../SwiftUI/containerbackgroundplacement/widget.md)
   The container background placement for a widget.
-- [var showsWidgetContainerBackground: Bool](../swiftui/environmentvalues/showswidgetcontainerbackground.md)
+- [var showsWidgetContainerBackground: Bool](../SwiftUI/environmentvalues/showswidgetcontainerbackground.md)
   An environment variable that indicates whether the background of a widget appears.
 
 

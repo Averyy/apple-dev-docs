@@ -1,7 +1,8 @@
 # initialize(fromContentsOf:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the buffer’s memory with every element of the source.
 
@@ -30,7 +31,7 @@ Prior to calling the `initialize(fromContentsOf:)` method on a buffer, the memor
 
 The returned index is the position of the next uninitialized element in the buffer, one past the index of the last element written. If `source` contains no elements, the returned index is equal to the buffer’s `startIndex`. If `source` contains as many elements as the buffer can hold, the returned index is equal to the buffer’s `endIndex`.
 
-> **Note**: `self.count` >= `source.count`
+> **Precondition**: `self.count` >= `source.count`
 
 > **Note**: The memory regions referenced by `source` and this buffer must not overlap.
 

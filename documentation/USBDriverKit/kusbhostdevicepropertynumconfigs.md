@@ -1,34 +1,36 @@
 # kUSBHostDevicePropertyNumConfigs
 
 **Framework**: USBDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 #define kUSBHostDevicePropertyNumConfigs
 ```
 
 ## See Also
 
-- [kUSBHostDevicePropertyAddress](kusbhostdevicepropertyaddress.md)
-- [kUSBHostDevicePropertyEnableLPM](kusbhostdevicepropertyenablelpm.md)
-- [kUSBHostDevicePropertyDeviceECID](kusbhostdevicepropertydeviceecid.md)
-- [kUSBHostDevicePropertyContainerID](kusbhostdevicepropertycontainerid.md)
-- [kUSBHostDevicePropertyVendorString](kusbhostdevicepropertyvendorstring.md)
-- [kUSBHostDevicePropertyMaxPacketSize](kusbhostdevicepropertymaxpacketsize.md)
-- [kUSBHostDevicePropertyProductString](kusbhostdevicepropertyproductstring.md)
-- [kUSBHostDevicePropertyDisablePortLPM](kusbhostdevicepropertydisableportlpm.md)
-- [kUSBHostDevicePropertyStandardVersion](kusbhostdevicepropertystandardversion.md)
-- [kUSBHostDevicePropertyDescriptorOverride](kusbhostdevicepropertydescriptoroverride.md)
-- [kUSBHostDevicePropertyProductStringIndex](kusbhostdevicepropertyproductstringindex.md)
-- [kUSBHostDevicePropertyRemoteWakeOverride](kusbhostdevicepropertyremotewakeoverride.md)
-- [kUSBHostDevicePropertyResumeRecoveryTime](kusbhostdevicepropertyresumerecoverytime.md)
-- [kUSBHostDevicePropertySerialNumberString](kusbhostdevicepropertyserialnumberstring.md)
-- [kUSBHostDevicePropertyCurrentConfiguration](kusbhostdevicepropertycurrentconfiguration.md)
+### Device Properties
+- [kUSBHostDevicePropertyAddress](./kusbhostdevicepropertyaddress.md)
+- [kUSBHostDevicePropertyEnableLPM](./kusbhostdevicepropertyenablelpm.md)
+- [kUSBHostDevicePropertyDeviceECID](./kusbhostdevicepropertydeviceecid.md)
+- [kUSBHostDevicePropertyContainerID](./kusbhostdevicepropertycontainerid.md)
+- [kUSBHostDevicePropertyVendorString](./kusbhostdevicepropertyvendorstring.md)
+- [kUSBHostDevicePropertyMaxPacketSize](./kusbhostdevicepropertymaxpacketsize.md)
+- [kUSBHostDevicePropertyProductString](./kusbhostdevicepropertyproductstring.md)
+- [kUSBHostDevicePropertyDisablePortLPM](./kusbhostdevicepropertydisableportlpm.md)
+- [kUSBHostDevicePropertyStandardVersion](./kusbhostdevicepropertystandardversion.md)
+- [kUSBHostDevicePropertyDescriptorOverride](./kusbhostdevicepropertydescriptoroverride.md)
+- [kUSBHostDevicePropertyProductStringIndex](./kusbhostdevicepropertyproductstringindex.md)
+- [kUSBHostDevicePropertyRemoteWakeOverride](./kusbhostdevicepropertyremotewakeoverride.md)
+- [kUSBHostDevicePropertyResumeRecoveryTime](./kusbhostdevicepropertyresumerecoverytime.md)
+- [kUSBHostDevicePropertySerialNumberString](./kusbhostdevicepropertyserialnumberstring.md)
+- [kUSBHostDevicePropertyCurrentConfiguration](./kusbhostdevicepropertycurrentconfiguration.md)
 
 
 ---

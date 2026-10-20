@@ -1,7 +1,8 @@
 # init(latitude:longitude:description:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a geolocation push content instance with the given latitude and longitude.
 

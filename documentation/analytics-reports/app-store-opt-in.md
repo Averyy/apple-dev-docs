@@ -1,6 +1,7 @@
 # App Store Opt-in
 
-**Framework**: Analytics Reports
+**Framework**: Analytics Reports  
+**Role**: Article
 
 Analyze the percentage of first-time app downloaders who choose to share their data with you.
 
@@ -10,11 +11,13 @@ The App Store provides an option for users to share diagnostic and usage data wi
 
 - Territories: Worldwide
 - Platforms: iOS, iPadOS, macOS, tvOS, visionOS
-- Availability: - Daily: Every day.
+- Availability:
+
+  - Daily: Every day.
 - History: On request, data is available beginning on January 1, 2024
 - Completeness: Within three days.
 
-The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [`Data Completeness and Corrections`](data-completeness-corrections.md).
+The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
 #### Report Fields
 
@@ -28,21 +31,22 @@ The Analytics Reports framework delivers new portions of report content as insta
 
 ## See Also
 
-- [App Clip Usage](app-clip-usage.md)
+### App Usage
+- [App Clip Usage](./app-clip-usage.md)
   Analyze how users engage with your App Clips.
-- [App Crashes](app-crashes.md)
+- [App Crashes](./app-crashes.md)
   Review crashes for your App Store apps based on app version and device type.
-- [App Store Installations and Deletions](app-installs.md)
+- [App Store Installations and Deletions](./app-installs.md)
   Analyze details on the number of times users install and delete your apps.
-- [App Sessions](app-sessions.md)
+- [App Sessions](./app-sessions.md)
   Analyze how often people open your App Store apps, and the average session duration.
-- [CarPlay App Usage](carplay-app-usage.md)
+- [CarPlay App Usage](./carplay-app-usage.md)
   Review how people use CarPlay in your app.
-- [Platform App Installs](platform-app-installs.md)
+- [Platform App Installs](./platform-app-installs.md)
   Analyze your app’s install data by date, install type, channel, device, platform version, and territory.
-- [Shortcut App Usage](shortcut-app-usage.md)
+- [Shortcut App Usage](./shortcut-app-usage.md)
   Analyze how often people use a shortcut action in your app.
-- [Shortcuts Actions Usage](shortcuts-actions-usage.md)
+- [Shortcuts Actions Usage](./shortcuts-actions-usage.md)
   Analyze how often people run shortcuts with your app’s actions.
 
 

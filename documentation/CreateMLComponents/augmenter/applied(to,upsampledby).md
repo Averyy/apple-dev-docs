@@ -1,7 +1,8 @@
 # applied(to:upsampledBy:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies an augmentation repeatedly to an array of inputs.
 
@@ -22,7 +23,7 @@ func applied<C, Annotation>(to elements: C, upsampledBy count: Int) -> Upsampled
 
 ## Mentions
 
-- [Augmenting images to expand your training data](augmenting-images-to-expand-your-training-data.md)
+- [Augmenting images to expand your training data](../augmenting-images-to-expand-your-training-data.md)
 
 #### Return Value
 
@@ -35,7 +36,8 @@ A sequence of augmented elements having `count` times the number of elements in 
 
 ## See Also
 
-- [func applied<S, Annotation>(to: S) -> AugmentationSequence<S, RandomTransformer, RandomNumberGenerator, Annotation>](augmenter/applied(to:).md)
+### Applying an augmentation
+- [func applied<S, Annotation>(to: S) -> AugmentationSequence<S, RandomTransformer, RandomNumberGenerator, Annotation>](./applied%28to%29.md)
   Applies an augmentation per input of the base sequence.
 
 

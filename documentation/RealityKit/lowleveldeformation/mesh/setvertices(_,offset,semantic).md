@@ -1,7 +1,8 @@
 # setVertices(_:offset:semantic:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Binds a Metal buffer to the vertex attribute with the specified semantic.
 
@@ -19,7 +20,7 @@ func setVertices(_ buffer: any MTLBuffer, offset: Int, semantic: LowLevelDeforma
 
 #### Discussion
 
-> **Note**: If the semantic is absent from the descriptor, if `offset` is out of bounds for `buffer`, or if the buffer is too small for the declared stride and vertex count.
+> **Throws**: If the semantic is absent from the descriptor, if `offset` is out of bounds for `buffer`, or if the buffer is too small for the declared stride and vertex count.
 
 ## Parameters
 

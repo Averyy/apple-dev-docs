@@ -1,12 +1,15 @@
 # CLKComplication
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Metadata about a custom complication.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
@@ -14,53 +17,58 @@ Metadata about a custom complication.
 class CLKComplication
 ```
 
+```objc
+@interface CLKComplication : NSObject
+```
+
 ## Mentions
 
-- [Creating a timeline entry](creating-a-timeline-entry.md)
-- [Sharing an Apple Watch face](sharing-an-apple-watch-face.md)
+- [Creating a timeline entry](./creating-a-timeline-entry.md)
+- [Sharing an Apple Watch face](./sharing-an-apple-watch-face.md)
 
 #### Overview
 
-ClockKit defines each complication by its [`family`](clkcomplication/family.md) and [`identifier`](clkcomplication/identifier.md) properties. Each pair represents a unique complication that the user can select when configuring a watch face. When creating timeline entries, check both properties before creating and filling the complication’s template.
+ClockKit defines each complication by its [`family`](./clkcomplication/family.md) and [`identifier`](./clkcomplication/identifier.md) properties. Each pair represents a unique complication that the user can select when configuring a watch face. When creating timeline entries, check both properties before creating and filling the complication’s template.
 
-You specify the possible [`family`](clkcomplication/family.md) and [`identifier`](clkcomplication/identifier.md) combinations in your data source’s [`getComplicationDescriptors(handler:)`](clkcomplicationdatasource/getcomplicationdescriptors(handler:).md) method. Each of the [`CLKComplicationDescriptor`](clkcomplicationdescriptor.md) objects you provide defines a unique identifier and the families that it supports.
+You specify the possible [`family`](./clkcomplication/family.md) and [`identifier`](./clkcomplication/identifier.md) combinations in your data source’s [`getComplicationDescriptors(handler:)`](./clkcomplicationdatasource/getcomplicationdescriptors%28handler%29.md) method. Each of the [`CLKComplicationDescriptor`](./clkcomplicationdescriptor.md) objects you provide defines a unique identifier and the families that it supports.
 
-In watchOS 6 and earlier, each app can have only one complication per supported family. When your app creates complication templates, determine the complication’s type from its [`family`](clkcomplication/family.md) property only. For more information, see [`Declaring complications for your app`](declaring-complications-for-your-app.md).
+In watchOS 6 and earlier, each app can have only one complication per supported family. When your app creates complication templates, determine the complication’s type from its [`family`](./clkcomplication/family.md) property only. For more information, see [Declaring complications for your app](./declaring-complications-for-your-app.md).
 
-You don’t create instances of this class directly. Instead, you retrieve them from the [`CLKComplicationServer`](clkcomplicationserver.md) object. Complication objects are only available when your complication is in use on the watch face.
+You don’t create instances of this class directly. Instead, you retrieve them from the [`CLKComplicationServer`](./clkcomplicationserver.md) object. Complication objects are only available when your complication is in use on the watch face.
 
-In addition to getting information about the complication, you use complication objects to extend or replace the timeline data for one of your active complications. When calling the [`extendTimeline(for:)`](clkcomplicationserver/extendtimeline(for:).md) and [`reloadTimeline(for:)`](clkcomplicationserver/reloadtimeline(for:).md) methods of the shared [`CLKComplicationServer`](clkcomplicationserver.md) object, pass the complication object you want to update.
+In addition to getting information about the complication, you use complication objects to extend or replace the timeline data for one of your active complications. When calling the [`extendTimeline(for:)`](./clkcomplicationserver/extendtimeline%28for%29.md) and [`reloadTimeline(for:)`](./clkcomplicationserver/reloadtimeline%28for%29.md) methods of the shared [`CLKComplicationServer`](./clkcomplicationserver.md) object, pass the complication object you want to update.
 
 ## Topics
 
 ### Accessing Data About the Complication
-- [var family: CLKComplicationFamily](clkcomplication/family.md)
+- [var family: CLKComplicationFamily](./clkcomplication/family.md)
   The family to which the complication belongs.
-- [var identifier: String](clkcomplication/identifier.md)
+- [var identifier: String](./clkcomplication/identifier.md)
   An identifier that specifies a complication if your app supports multiple complications per family.
-- [var userActivity: NSUserActivity?](clkcomplication/useractivity.md)
+- [var userActivity: NSUserActivity?](./clkcomplication/useractivity.md)
   An object that represents the state of the app at a moment in time.
-- [var userInfo: [AnyHashable : Any]?](clkcomplication/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./clkcomplication/userinfo.md)
   A dictionary of additional data associated with the complication.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CLKComplicationServer](clkcomplicationserver.md)
+### Other Symbols
+- [class CLKComplicationServer](./clkcomplicationserver.md)
   An object that manages the active complications for an app.
-- [class CLKComplicationTimelineEntry](clkcomplicationtimelineentry.md)
+- [class CLKComplicationTimelineEntry](./clkcomplicationtimelineentry.md)
   A container for the complication template object to display and the time to display it.
 
 

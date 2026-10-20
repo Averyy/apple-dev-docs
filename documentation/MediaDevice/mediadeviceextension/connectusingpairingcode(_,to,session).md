@@ -2,6 +2,7 @@
 
 **Framework**: Media Device  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called after the user has input their authorization into a user interface. Use the Security framework’s keychain to store any derived key material.
@@ -20,7 +21,7 @@ func connectUsingPairingCode(_ pairingCode: String?, to device: MediaOutputDevic
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 ## Parameters
 

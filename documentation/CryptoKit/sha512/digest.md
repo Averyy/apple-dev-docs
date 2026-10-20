@@ -1,7 +1,8 @@
 # SHA512.Digest
 
 **Framework**: Apple CryptoKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The digest type for a SHA512 hash function.
 
@@ -22,7 +23,8 @@ typealias Digest = SHA512Digest
 
 ## See Also
 
-- [struct SHA512Digest](sha512digest.md)
+### Specifying the output type
+- [struct SHA512Digest](../sha512digest.md)
   The output of a Secure Hashing Algorithm 2 (SHA-2) hash with a 512-bit digest.
 
 

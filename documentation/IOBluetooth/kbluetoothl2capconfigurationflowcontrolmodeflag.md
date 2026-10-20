@@ -1,10 +1,11 @@
 # kBluetoothL2CAPConfigurationFlowControlModeFlag
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,12 +13,17 @@
 var kBluetoothL2CAPConfigurationFlowControlModeFlag: BluetoothL2CAPConfigurationRetransmissionAndFlowControlFlags { get }
 ```
 
+```c
+kBluetoothL2CAPConfigurationFlowControlModeFlag
+```
+
 ## See Also
 
-- [var kBluetoothL2CAPConfigurationBasicL2CAPModeFlag: BluetoothL2CAPConfigurationRetransmissionAndFlowControlFlags](kbluetoothl2capconfigurationbasicl2capmodeflag.md)
-- [var kBluetoothL2CAPConfigurationEnhancedRetransmissionMode: BluetoothL2CAPConfigurationRetransmissionAndFlowControlFlags](kbluetoothl2capconfigurationenhancedretransmissionmode.md)
-- [var kBluetoothL2CAPConfigurationRetransmissionModeFlag: BluetoothL2CAPConfigurationRetransmissionAndFlowControlFlags](kbluetoothl2capconfigurationretransmissionmodeflag.md)
-- [var kBluetoothL2CAPConfigurationStreamingMode: BluetoothL2CAPConfigurationRetransmissionAndFlowControlFlags](kbluetoothl2capconfigurationstreamingmode.md)
+### Constants
+- [var kBluetoothL2CAPConfigurationBasicL2CAPModeFlag: BluetoothL2CAPConfigurationRetransmissionAndFlowControlFlags](./kbluetoothl2capconfigurationbasicl2capmodeflag.md)
+- [var kBluetoothL2CAPConfigurationEnhancedRetransmissionMode: BluetoothL2CAPConfigurationRetransmissionAndFlowControlFlags](./kbluetoothl2capconfigurationenhancedretransmissionmode.md)
+- [var kBluetoothL2CAPConfigurationRetransmissionModeFlag: BluetoothL2CAPConfigurationRetransmissionAndFlowControlFlags](./kbluetoothl2capconfigurationretransmissionmodeflag.md)
+- [var kBluetoothL2CAPConfigurationStreamingMode: BluetoothL2CAPConfigurationRetransmissionAndFlowControlFlags](./kbluetoothl2capconfigurationstreamingmode.md)
 
 
 ---

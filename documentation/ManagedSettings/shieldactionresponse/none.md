@@ -1,7 +1,8 @@
 # ShieldActionResponse.none
 
 **Framework**: Managed Settings  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An instruction that the system doesn’t need to take any additional action on behalf of the extension.
 
@@ -18,9 +19,10 @@ case none
 
 ## See Also
 
-- [ShieldActionResponse.close](shieldactionresponse/close.md)
+### Responses
+- [ShieldActionResponse.close](./close.md)
   An instruction for the system to close the current application or web browser.
-- [ShieldActionResponse.defer](shieldactionresponse/defer.md)
+- [ShieldActionResponse.defer](./defer.md)
   An instruction to defer a response to the action.
 
 

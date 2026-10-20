@@ -1,7 +1,8 @@
 # labelStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for labels within this view.
 
@@ -35,9 +36,10 @@ VStack {
 
 ## See Also
 
-- [struct Text](text.md)
+### Displaying text
+- [struct Text](../text.md)
   A view that displays one or more lines of read-only text.
-- [struct Label](label.md)
+- [struct Label](../label.md)
   A standard label for user interface items, consisting of an icon with a title.
 
 

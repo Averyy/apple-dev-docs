@@ -1,7 +1,8 @@
 # kCIAttributeTypeInteger
 
 **Framework**: Core Image  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An integer value.
 
@@ -10,7 +11,7 @@ An integer value.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,19 +20,24 @@ An integer value.
 let kCIAttributeTypeInteger: String
 ```
 
+```c
+extern NSString * const kCIAttributeTypeInteger;
+```
+
 ## See Also
 
-- [let kCIAttributeTypeTime: String](kciattributetypetime.md)
+### Constants
+- [let kCIAttributeTypeTime: String](./kciattributetypetime.md)
   A parametric time for transitions, specified as a floating-point value in the range of `0.0` to `1.0`.
-- [let kCIAttributeTypeScalar: String](kciattributetypescalar.md)
+- [let kCIAttributeTypeScalar: String](./kciattributetypescalar.md)
   A scalar value.
-- [let kCIAttributeTypeDistance: String](kciattributetypedistance.md)
+- [let kCIAttributeTypeDistance: String](./kciattributetypedistance.md)
   A distance.
-- [let kCIAttributeTypeAngle: String](kciattributetypeangle.md)
+- [let kCIAttributeTypeAngle: String](./kciattributetypeangle.md)
   An angle.
-- [let kCIAttributeTypeBoolean: String](kciattributetypeboolean.md)
+- [let kCIAttributeTypeBoolean: String](./kciattributetypeboolean.md)
   A Boolean value.
-- [let kCIAttributeTypeCount: String](kciattributetypecount.md)
+- [let kCIAttributeTypeCount: String](./kciattributetypecount.md)
   A positive integer value.
 
 

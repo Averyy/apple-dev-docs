@@ -1,7 +1,8 @@
 # allCases
 
 **Framework**: VisionEntitlementServices  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A collection of every entitlement case available on the current OS.
 

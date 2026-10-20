@@ -1,7 +1,8 @@
 # FileReaderSync
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface FileReaderSync
 ```
 
 ## Topics
 
 ### Instance Methods
-- [readAsArrayBuffer](filereadersync/1629337-readasarraybuffer.md)
-- [readAsBinaryString](filereadersync/1630596-readasbinarystring.md)
-- [readAsDataURL](filereadersync/1633739-readasdataurl.md)
-- [readAsText](filereadersync/1633521-readastext.md)
+- [readAsArrayBuffer](./filereadersync/api-1629337-readasarraybuffer.md)
+- [readAsBinaryString](./filereadersync/api-1630596-readasbinarystring.md)
+- [readAsDataURL](./filereadersync/api-1633739-readasdataurl.md)
+- [readAsText](./filereadersync/api-1633521-readastext.md)
 
 
 ---

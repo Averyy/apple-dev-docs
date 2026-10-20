@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,12 +19,17 @@
 var cropAmount: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float cropAmount;
+```
+
 ## See Also
 
-- [var centerStretchAmount: Float](cistretchcrop/centerstretchamount.md)
-- [var inputImage: CIImage?](cistretchcrop/inputimage.md)
+### Instance Properties
+- [var centerStretchAmount: Float](./centerstretchamount.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var size: CGPoint](cistretchcrop/size.md)
+- [var size: CGPoint](./size.md)
 
 
 ---

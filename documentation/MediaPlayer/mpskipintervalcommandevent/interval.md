@@ -1,7 +1,8 @@
 # interval
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The chosen interval, in seconds, for the skip command event.
 
@@ -18,6 +19,10 @@ The chosen interval, in seconds, for the skip command event.
 
 ```swift
 var interval: TimeInterval { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSTimeInterval interval;
 ```
 
 #### Discussion

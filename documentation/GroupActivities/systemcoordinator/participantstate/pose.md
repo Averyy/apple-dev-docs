@@ -1,7 +1,8 @@
 # pose
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position and rotation of the participant – at the time the system coordinator state last changed.
 
@@ -16,7 +17,7 @@ let pose: Pose3D?
 
 ## Mentions
 
-- [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
+- [Adding spatial Persona support to an activity](../../adding-spatial-persona-support-to-an-activity.md)
 
 #### Discussion
 

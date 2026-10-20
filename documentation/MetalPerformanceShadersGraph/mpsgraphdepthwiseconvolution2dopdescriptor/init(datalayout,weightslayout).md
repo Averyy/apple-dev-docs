@@ -1,7 +1,8 @@
 # init(dataLayout:weightsLayout:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a 2D-depthwise convolution descriptor with given properties and default values.
 
@@ -17,6 +18,10 @@ Creates a 2D-depthwise convolution descriptor with given properties and default 
 
 ```swift
 convenience init?(dataLayout: MPSGraphTensorNamedDataLayout, weightsLayout: MPSGraphTensorNamedDataLayout)
+```
+
+```objc
++ (instancetype) descriptorWithDataLayout:(MPSGraphTensorNamedDataLayout) dataLayout weightsLayout:(MPSGraphTensorNamedDataLayout) weightsLayout;
 ```
 
 #### Return Value

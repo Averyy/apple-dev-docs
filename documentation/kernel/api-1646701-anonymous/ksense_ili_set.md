@@ -1,14 +1,15 @@
 # kSENSE_ILI_Set
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSENSE_ILI_Set = 0x20
 ```
 

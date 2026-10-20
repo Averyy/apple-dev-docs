@@ -1,7 +1,8 @@
 # spin
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rotational velocity, measured in radians per second, to apply to the cell. Animatable.
 
@@ -19,21 +20,26 @@ The rotational velocity, measured in radians per second, to apply to the cell. A
 var spin: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat spin;
+```
+
 #### Discussion
 
-The spin of the cell will vary by a random amount with the range specified by [`spinRange`](caemittercell/spinrange.md).
+The spin of the cell will vary by a random amount with the range specified by [`spinRange`](./spinrange.md).
 
 The default value of this property is `0.0`.
 
 ## See Also
 
-- [var spinRange: CGFloat](caemittercell/spinrange.md)
+### Setting Emitter Cell Motion Attributes
+- [var spinRange: CGFloat](./spinrange.md)
   The amount by which the spin of the cell can vary over its lifetime. Animatable.
-- [var emissionLatitude: CGFloat](caemittercell/emissionlatitude.md)
+- [var emissionLatitude: CGFloat](./emissionlatitude.md)
   The latitudinal orientation of the emission angle. Animatable.
-- [var emissionLongitude: CGFloat](caemittercell/emissionlongitude.md)
+- [var emissionLongitude: CGFloat](./emissionlongitude.md)
   The longitudinal orientation of the emission angle. Animatable.
-- [var emissionRange: CGFloat](caemittercell/emissionrange.md)
+- [var emissionRange: CGFloat](./emissionrange.md)
   The angle, in radians, defining a cone around the emission angle. Animatable.
 
 

@@ -1,7 +1,8 @@
 # queryNextFrame()
 
 **Framework**: Compositor Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the next frame to use for drawing.
 
@@ -17,7 +18,7 @@ func queryNextFrame() -> LayerRenderer.Frame?
 
 ## Mentions
 
-- [Drawing fully immersive content using Metal](drawing-fully-immersive-content-using-metal.md)
+- [Drawing fully immersive content using Metal](../drawing-fully-immersive-content-using-metal.md)
 
 #### Return Value
 
@@ -31,9 +32,10 @@ The index of each returned frame is always greater than the index of the previou
 
 ## See Also
 
-- [LayerRenderer.Frame](layerrenderer/frame.md)
+### Drawing a frame of content
+- [LayerRenderer.Frame](./frame.md)
   A type that provides access to the timing information and data types you need to render a single frame of content.
-- [LayerRenderer.Drawable](layerrenderer/drawable.md)
+- [LayerRenderer.Drawable](./drawable.md)
   A type that provides the textures and information you need to draw a frame of content.
 
 

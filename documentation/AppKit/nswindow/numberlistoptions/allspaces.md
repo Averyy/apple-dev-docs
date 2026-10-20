@@ -1,7 +1,8 @@
 # allSpaces
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 10.6+
@@ -12,13 +13,18 @@
 static var allSpaces: NSWindow.NumberListOptions { get }
 ```
 
+```c
+NSWindowNumberListAllSpaces
+```
+
 #### Discussion
 
 The window numbers of windows visible on any space and belonging to the calling application.
 
 ## See Also
 
-- [static var allApplications: NSWindow.NumberListOptions](nswindow/numberlistoptions/allapplications.md)
+### Constants
+- [static var allApplications: NSWindow.NumberListOptions](./allapplications.md)
 
 
 ---

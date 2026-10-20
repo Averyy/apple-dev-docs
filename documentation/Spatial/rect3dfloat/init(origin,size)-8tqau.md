@@ -1,7 +1,8 @@
 # init(origin:size:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init(origin: Point3DFloat, size: Size3DFloat)
+```
+
+```c
+static SPRect3DFloat SPRect3DFloatMakeAtOrigin(SPPoint3DFloat origin, SPSize3DFloat size);
 ```
 
 #### Return Value

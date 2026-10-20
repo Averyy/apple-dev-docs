@@ -1,23 +1,28 @@
 # init(url:)
 
 **Framework**: SceneKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an audio source from the specified audio file.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 init?(url: URL)
+```
+
+```objc
+- (instancetype) initWithURL:(NSURL *) url;
 ```
 
 #### Return Value
@@ -30,9 +35,10 @@ A new audio source object.
 
 ## See Also
 
-- [convenience init?(named: String)](scnaudiosource/init(named:).md)
+### Creating an Audio Source
+- [convenience init?(named: String)](./init%28named%29.md)
   Returns the audio source associated with the specified filename.
-- [convenience init?(fileNamed: String)](scnaudiosource/init(filenamed:).md)
+- [convenience init?(fileNamed: String)](./init%28filenamed%29.md)
   Initializes an audio source from an audio file in the application’s main bundle.
 
 

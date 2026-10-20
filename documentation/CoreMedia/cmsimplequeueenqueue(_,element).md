@@ -1,7 +1,8 @@
 # CMSimpleQueueEnqueue(_:element:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Enqueues an element in the queue.
 
@@ -20,6 +21,10 @@ Enqueues an element in the queue.
 func CMSimpleQueueEnqueue(_ queue: CMSimpleQueue, element: UnsafeRawPointer) -> OSStatus
 ```
 
+```c
+extern OSStatus CMSimpleQueueEnqueue(CMSimpleQueueRef queue, const void *element);
+```
+
 #### Return Value
 
 Returns `noErr` if the call succeeds or `kCMSimpleQueueError_QueueIsFull` if the queue is full.
@@ -35,9 +40,10 @@ If the queue is full, this operation fails.
 
 ## See Also
 
-- [func CMSimpleQueueDequeue(CMSimpleQueue) -> UnsafeRawPointer?](cmsimplequeuedequeue(_:).md)
+### Managing Queues
+- [func CMSimpleQueueDequeue(CMSimpleQueue) -> UnsafeRawPointer?](./cmsimplequeuedequeue%28_%29.md)
   Dequeues an element from the queue.
-- [func CMSimpleQueueReset(CMSimpleQueue) -> OSStatus](cmsimplequeuereset(_:).md)
+- [func CMSimpleQueueReset(CMSimpleQueue) -> OSStatus](./cmsimplequeuereset%28_%29.md)
   Resets the queue.
 
 

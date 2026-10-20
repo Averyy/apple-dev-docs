@@ -1,7 +1,8 @@
 # init(gridPosition:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a graph node with the specified position on a grid.
 
@@ -19,13 +20,17 @@ Initializes a graph node with the specified position on a grid.
 init(gridPosition: vector_int2)
 ```
 
+```objc
+- (instancetype) initWithGridPosition:(vector_int2) gridPosition;
+```
+
 #### Return Value
 
 A new graph node representing the specified grid position.
 
 #### Discussion
 
-For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # AVStreamingKeyDeliveryContentKeyType
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A URL for a content key.
 
@@ -20,9 +21,14 @@ A URL for a content key.
 let AVStreamingKeyDeliveryContentKeyType: String
 ```
 
+```c
+extern NSString * const AVStreamingKeyDeliveryContentKeyType;
+```
+
 ## See Also
 
-- [let AVStreamingKeyDeliveryPersistentContentKeyType: String](avstreamingkeydeliverypersistentcontentkeytype.md)
+### FairPlay
+- [let AVStreamingKeyDeliveryPersistentContentKeyType: String](./avstreamingkeydeliverypersistentcontentkeytype.md)
   A URL for a persistent content key.
 
 

@@ -1,17 +1,22 @@
 # privateBrowsingEnabled
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether or not private browsing is enabled.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 var privateBrowsingEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL privateBrowsingEnabled;
 ```
 
 #### Discussion

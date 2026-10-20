@@ -1,7 +1,8 @@
 # currentEntitlements(for:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Gets the transactions that entitle the user to items purchased under a product ID.
 
@@ -36,9 +37,10 @@ If an ID for a regular IAP is provided, the returned sequence will contain no mo
 
 ## See Also
 
-- [static func currentEntitlement(for: String) async -> VerificationResult<Transaction>?](transaction/currententitlement(for:).md)
+### Deprecated
+- [static func currentEntitlement(for: String) async -> VerificationResult<Transaction>?](./currententitlement%28for%29.md)
   Gets the latest transactions that entitle the customer to a specified product.
-- [var offerPeriodStringRepresentation: String?](transaction/offerperiodstringrepresentation.md)
+- [var offerPeriodStringRepresentation: String?](./offerperiodstringrepresentation.md)
   The string representation of the offer period applied to the subscription offer for this transaction.
 
 

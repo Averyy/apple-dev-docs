@@ -1,7 +1,8 @@
 # contextMenuInteraction(_:configuration:dismissalPreviewForItemWithIdentifier:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for a preview of the item with the specified identifier when a context-menu interaction ends.
 
@@ -16,6 +17,10 @@ Asks the delegate for a preview of the item with the specified identifier when a
 
 ```swift
 optional func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configuration: UIContextMenuConfiguration, dismissalPreviewForItemWithIdentifier identifier: any NSCopying) -> UITargetedPreview?
+```
+
+```objc
+- (UITargetedPreview *) contextMenuInteraction:(UIContextMenuInteraction *) interaction configuration:(UIContextMenuConfiguration *) configuration dismissalPreviewForItemWithIdentifier:(id<NSCopying>) identifier;
 ```
 
 #### Return Value
@@ -34,13 +39,14 @@ The system calls this method when a context-menu dismissal occurs. Implement thi
 
 ## See Also
 
-- [func contextMenuInteraction(UIContextMenuInteraction, configuration: UIContextMenuConfiguration, highlightPreviewForItemWithIdentifier: any NSCopying) -> UITargetedPreview?](uicontextmenuinteractiondelegate/contextmenuinteraction(_:configuration:highlightpreviewforitemwithidentifier:).md)
+### Customizing the preview animations
+- [func contextMenuInteraction(UIContextMenuInteraction, configuration: UIContextMenuConfiguration, highlightPreviewForItemWithIdentifier: any NSCopying) -> UITargetedPreview?](./contextmenuinteraction%28_,configuration,highlightpreviewforitemwithidentifier%29.md)
   Asks the delegate for a preview of the item with the specified identifier when a context-menu interaction begins.
-- [Adding menus and shortcuts to the menu bar and user interface](adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
+- [Adding menus and shortcuts to the menu bar and user interface](../adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
   Provide quick access to useful actions by adding menus and keyboard shortcuts to your Mac app built with Mac Catalyst.
-- [func contextMenuInteraction(UIContextMenuInteraction, previewForHighlightingMenuWithConfiguration: UIContextMenuConfiguration) -> UITargetedPreview?](uicontextmenuinteractiondelegate/contextmenuinteraction(_:previewforhighlightingmenuwithconfiguration:).md)
+- [func contextMenuInteraction(UIContextMenuInteraction, previewForHighlightingMenuWithConfiguration: UIContextMenuConfiguration) -> UITargetedPreview?](./contextmenuinteraction%28_,previewforhighlightingmenuwithconfiguration%29.md)
   Returns the source view to use when animating the appearance of the preview interface.
-- [func contextMenuInteraction(UIContextMenuInteraction, previewForDismissingMenuWithConfiguration: UIContextMenuConfiguration) -> UITargetedPreview?](uicontextmenuinteractiondelegate/contextmenuinteraction(_:previewfordismissingmenuwithconfiguration:).md)
+- [func contextMenuInteraction(UIContextMenuInteraction, previewForDismissingMenuWithConfiguration: UIContextMenuConfiguration) -> UITargetedPreview?](./contextmenuinteraction%28_,previewfordismissingmenuwithconfiguration%29.md)
   Returns the destination view to use when animating the appearance of the preview interface.
 
 

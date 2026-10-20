@@ -1,14 +1,15 @@
 # MACOS_PANIC_HEADER_FLAG_STACKSHOT_FAILED_INCOMPLETE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13.1+
 
 ## Declaration
 
-```swift
+```c
 MACOS_PANIC_HEADER_FLAG_STACKSHOT_FAILED_INCOMPLETE
 ```
 

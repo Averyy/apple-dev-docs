@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOHibernatePreviewActive](1645082-anonymous/kiohibernatepreviewactive.md)
-- [kIOHibernatePreviewUpdates](1645082-anonymous/kiohibernatepreviewupdates.md)
+- [kIOHibernatePreviewActive](./api-1645082-anonymous/kiohibernatepreviewactive.md)
+- [kIOHibernatePreviewUpdates](./api-1645082-anonymous/kiohibernatepreviewupdates.md)
 
 
 ---

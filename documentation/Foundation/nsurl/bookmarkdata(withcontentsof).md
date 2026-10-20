@@ -1,7 +1,8 @@
 # bookmarkData(withContentsOf:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Initializes and returns bookmark data derived from an alias file pointed to by a specified URL.
 
@@ -20,6 +21,10 @@ Initializes and returns bookmark data derived from an alias file pointed to by a
 class func bookmarkData(withContentsOf bookmarkFileURL: URL) throws -> Data
 ```
 
+```objc
++ (NSData *) bookmarkDataWithContentsOfURL:(NSURL *) bookmarkFileURL error:(NSError **) error;
+```
+
 #### Return Value
 
 The bookmark data for the alias file.
@@ -30,7 +35,9 @@ This method doesn’t check to see if `bookmarkFileURL` points to an alias file.
 
 This method returns `nil` if bookmark data cannot be created.
 
-> **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -38,21 +45,22 @@ This method returns `nil` if bookmark data cannot be created.
 
 ## See Also
 
-- [func bookmarkData(options: NSURL.BookmarkCreationOptions, includingResourceValuesForKeys: [URLResourceKey]?, relativeTo: URL?) throws -> Data](nsurl/bookmarkdata(options:includingresourcevaluesforkeys:relativeto:).md)
+### Working with Bookmark Data
+- [func bookmarkData(options: NSURL.BookmarkCreationOptions, includingResourceValuesForKeys: [URLResourceKey]?, relativeTo: URL?) throws -> Data](./bookmarkdata%28options,includingresourcevaluesforkeys,relativeto%29.md)
   Returns a bookmark for the URL, created with specified options and resource values.
-- [class func resourceValues(forKeys: [URLResourceKey], fromBookmarkData: Data) -> [URLResourceKey : Any]?](nsurl/resourcevalues(forkeys:frombookmarkdata:).md)
+- [class func resourceValues(forKeys: [URLResourceKey], fromBookmarkData: Data) -> [URLResourceKey : Any]?](./resourcevalues%28forkeys,frombookmarkdata%29.md)
   Returns the resource values for properties identified by a specified array of keys contained in specified bookmark data.
-- [class func writeBookmarkData(Data, to: URL, options: NSURL.BookmarkFileCreationOptions) throws](nsurl/writebookmarkdata(_:to:options:).md)
+- [class func writeBookmarkData(Data, to: URL, options: NSURL.BookmarkFileCreationOptions) throws](./writebookmarkdata%28_,to,options%29.md)
   Creates an alias file on disk at a specified location with specified bookmark data.
-- [func startAccessingSecurityScopedResource() -> Bool](nsurl/startaccessingsecurityscopedresource.md)
+- [func startAccessingSecurityScopedResource() -> Bool](./startaccessingsecurityscopedresource%28%29.md)
   In an app that has adopted App Sandbox, makes the resource pointed to by a security-scoped URL available to the app.
-- [func stopAccessingSecurityScopedResource()](nsurl/stopaccessingsecurityscopedresource.md)
+- [func stopAccessingSecurityScopedResource()](./stopaccessingsecurityscopedresource%28%29.md)
   In an app that adopts App Sandbox, revokes access to the resource pointed to by a security-scoped URL.
-- [typealias BookmarkFileCreationOptions](nsurl/bookmarkfilecreationoptions.md)
+- [typealias BookmarkFileCreationOptions](./bookmarkfilecreationoptions.md)
   Options used when creating file bookmark data
-- [struct BookmarkCreationOptions](nsurl/bookmarkcreationoptions.md)
+- [struct BookmarkCreationOptions](./bookmarkcreationoptions.md)
   Options used when creating bookmark data.
-- [struct BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions.md)
+- [struct BookmarkResolutionOptions](./bookmarkresolutionoptions.md)
   Options used when resolving bookmark data.
 
 

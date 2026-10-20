@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: ContactProvider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier used for all default domains.
 

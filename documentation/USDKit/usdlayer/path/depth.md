@@ -1,7 +1,8 @@
 # depth
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of components in the path.
 

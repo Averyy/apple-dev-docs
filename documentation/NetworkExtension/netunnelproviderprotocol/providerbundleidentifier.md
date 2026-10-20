@@ -1,7 +1,8 @@
 # providerBundleIdentifier
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string identifying the specific Tunnel Provider extension that should be used with this configuration.
 
@@ -19,13 +20,18 @@ A string identifying the specific Tunnel Provider extension that should be used 
 var providerBundleIdentifier: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * providerBundleIdentifier;
+```
+
 #### Discussion
 
 A single app may contain multiple Tunnel Provider extensions. This property is used to specify which Tunnel Provider extension should be used with this configuration.
 
 ## See Also
 
-- [var providerConfiguration: [String : Any]?](netunnelproviderprotocol/providerconfiguration.md)
+### Accessing the tunnel configuration
+- [var providerConfiguration: [String : Any]?](./providerconfiguration.md)
   A dictionary containing keys and values defined by the Tunnel Provider developer.
 
 

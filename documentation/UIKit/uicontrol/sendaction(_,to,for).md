@@ -1,7 +1,8 @@
 # sendAction(_:to:for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the specified action method.
 
@@ -9,7 +10,7 @@ Calls the specified action method.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Calls the specified action method.
 func sendAction(_ action: Selector, to target: Any?, for event: UIEvent?)
 ```
 
+```objc
+- (void) sendAction:(SEL) action to:(id) target forEvent:(UIEvent *) event;
+```
+
 #### Discussion
 
-This method takes the provided information and forwards it to the singleton [`UIApplication`](uiapplication.md) object for dispatching. If you supplied a valid target object, the app calls the action method on that target object. If the target object is `nil`, the app searches the responder chain for an object that defines the method.
+This method takes the provided information and forwards it to the singleton [`UIApplication`](../uiapplication.md) object for dispatching. If you supplied a valid target object, the app calls the action method on that target object. If the target object is `nil`, the app searches the responder chain for an object that defines the method.
 
 Subclasses may override this method and use it to observe or modify the action-dispatching behavior. Implementations need to call `super` when they want to continue with the execution of the action method.
 
@@ -32,13 +37,15 @@ Subclasses may override this method and use it to observe or modify the action-d
 
 ## See Also
 
-- [func addTarget(Any?, action: Selector, for: UIControl.Event)](uicontrol/addtarget(_:action:for:).md)
+### Related Documentation
+- [func addTarget(Any?, action: Selector, for: UIControl.Event)](./addtarget%28_,action,for%29.md)
   Associates a target object and action method with the control.
-- [func performPrimaryAction()](uicontrol/performprimaryaction.md)
+### Triggering actions
+- [func performPrimaryAction()](./performprimaryaction%28%29.md)
   Calls the method associated with the control’s primary action.
-- [func sendAction(UIAction)](uicontrol/sendaction(_:).md)
+- [func sendAction(UIAction)](./sendaction%28_%29.md)
   Like -sendAction:to:forEvent:, this method is called by -sendActionsForControlEvents:. You may override this method to observe or modify behavior. If you override this method, you should call super precisely once to dispatch the action, or not call super to suppress sending that action.
-- [func sendActions(for: UIControl.Event)](uicontrol/sendactions(for:).md)
+- [func sendActions(for: UIControl.Event)](./sendactions%28for%29.md)
   Calls the action methods associated with the specified events.
 
 

@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean variable that indicates whether or not the current device supports document scanning.
 
@@ -17,13 +18,18 @@ A Boolean variable that indicates whether or not the current device supports doc
 class var isSupported: Bool { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly, getter=isSupported) BOOL supported;
+```
+
 #### Discussion
 
 This class method returns `false` for unsupported hardware.
 
 ## See Also
 
-- [var delegate: (any VNDocumentCameraViewControllerDelegate)?](vndocumentcameraviewcontroller/delegate.md)
+### Supporting the document camera
+- [var delegate: (any VNDocumentCameraViewControllerDelegate)?](./delegate.md)
   The delegate to be notified when the user saves or cancels the document scanner.
 
 

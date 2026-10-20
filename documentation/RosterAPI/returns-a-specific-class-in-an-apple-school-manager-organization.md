@@ -1,7 +1,8 @@
 # Read a class
 
 **Framework**: Roster API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Read a class from an Apple School Manager organization.
 
@@ -14,7 +15,7 @@ Read a class from an Apple School Manager organization.
 
 **Request**:
 
-```None
+```
 curl "https://api-school.apple.com/rosterapi/v1/classes/1234" \
     -H "Authorization: Bearer ${TOKEN}"
 ```
@@ -48,15 +49,27 @@ curl "https://api-school.apple.com/rosterapi/v1/classes/1234" \
 
 ## Parameters
 
-- `classId` (string) *(required)*: The identifier from the class. Use the `id` field from the [`Class`](class.md) object.
+### Path Parameters
+
+- `classId` (string) *(required)*: The identifier from the class. Use the `id` field from the [`Class`](./class.md) object.
+
+## Responses
+
+- `200` OK (`Class`, `application/json`): The request was successful.
+- `401` Unauthorized: The access token was invalid.
+- `403` Forbidden: Access to the requested class was forbidden.
+- `404` Not Found: The server didn’t find a class with the given `classId` in the organization.
+- `429`: The client made too many requests. The response includes an `X-Retry-After` header that indicates the number of seconds to wait before making another request.
+- `500` Internal Server Error: The server encountered an internal error.
 
 ## See Also
 
-- [object Class](class.md)
+### Information about classes
+- [object Class](./class.md)
   A class in an Apple School Manager organization.
-- [List classes](returns-a-list-of-classes-for-an-apple-school-manager-organization.md)
+- [List classes](./returns-a-list-of-classes-for-an-apple-school-manager-organization.md)
   List classes in an Apple School Manager organization.
-- [object Classes](classes.md)
+- [object Classes](./classes.md)
   A list of classes, with a token for pagination.
 
 

@@ -1,7 +1,8 @@
 # invalidRight
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name denotes a right, but not an appropriate right.
 

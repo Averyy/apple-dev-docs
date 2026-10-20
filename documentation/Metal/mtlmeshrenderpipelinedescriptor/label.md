@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var label: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * label;
 ```
 
 

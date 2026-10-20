@@ -1,11 +1,12 @@
 # CGEventField.scrollWheelEventAcceleratedDeltaAxis1
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,19 +14,24 @@
 case scrollWheelEventAcceleratedDeltaAxis1
 ```
 
+```c
+kCGScrollWheelEventAcceleratedDeltaAxis1
+```
+
 ## See Also
 
-- [CGEventField.mouseEventWindowUnderMousePointer](cgeventfield/mouseeventwindowundermousepointer.md)
-- [CGEventField.mouseEventWindowUnderMousePointerThatCanHandleThisEvent](cgeventfield/mouseeventwindowundermousepointerthatcanhandlethisevent.md)
-- [CGEventField.scrollWheelEventMomentumPhase](cgeventfield/scrollwheeleventmomentumphase.md)
-- [CGEventField.scrollWheelEventScrollCount](cgeventfield/scrollwheeleventscrollcount.md)
-- [CGEventField.scrollWheelEventScrollPhase](cgeventfield/scrollwheeleventscrollphase.md)
-- [CGEventField.eventUnacceleratedPointerMovementX](cgeventfield/eventunacceleratedpointermovementx.md)
-- [CGEventField.eventUnacceleratedPointerMovementY](cgeventfield/eventunacceleratedpointermovementy.md)
-- [CGEventField.scrollWheelEventAcceleratedDeltaAxis2](cgeventfield/scrollwheeleventaccelerateddeltaaxis2.md)
-- [CGEventField.scrollWheelEventMomentumOptionPhase](cgeventfield/scrollwheeleventmomentumoptionphase.md)
-- [CGEventField.scrollWheelEventRawDeltaAxis1](cgeventfield/scrollwheeleventrawdeltaaxis1.md)
-- [CGEventField.scrollWheelEventRawDeltaAxis2](cgeventfield/scrollwheeleventrawdeltaaxis2.md)
+### Enumeration Cases
+- [CGEventField.mouseEventWindowUnderMousePointer](./mouseeventwindowundermousepointer.md)
+- [CGEventField.mouseEventWindowUnderMousePointerThatCanHandleThisEvent](./mouseeventwindowundermousepointerthatcanhandlethisevent.md)
+- [CGEventField.scrollWheelEventMomentumPhase](./scrollwheeleventmomentumphase.md)
+- [CGEventField.scrollWheelEventScrollCount](./scrollwheeleventscrollcount.md)
+- [CGEventField.scrollWheelEventScrollPhase](./scrollwheeleventscrollphase.md)
+- [CGEventField.eventUnacceleratedPointerMovementX](./eventunacceleratedpointermovementx.md)
+- [CGEventField.eventUnacceleratedPointerMovementY](./eventunacceleratedpointermovementy.md)
+- [CGEventField.scrollWheelEventAcceleratedDeltaAxis2](./scrollwheeleventaccelerateddeltaaxis2.md)
+- [CGEventField.scrollWheelEventMomentumOptionPhase](./scrollwheeleventmomentumoptionphase.md)
+- [CGEventField.scrollWheelEventRawDeltaAxis1](./scrollwheeleventrawdeltaaxis1.md)
+- [CGEventField.scrollWheelEventRawDeltaAxis2](./scrollwheeleventrawdeltaaxis2.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # CHHapticEngine.FinishedAction.leaveEngineRunning
 
 **Framework**: Core Haptics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Keeps the engine running after it finishes playing all haptic patterns.
 
@@ -9,7 +10,7 @@ Keeps the engine running after it finishes playing all haptic patterns.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS ?+
+- macOS
 - tvOS 14.0+
 - visionOS 1.0+
 
@@ -19,9 +20,14 @@ Keeps the engine running after it finishes playing all haptic patterns.
 case leaveEngineRunning
 ```
 
+```c
+CHHapticEngineFinishedActionLeaveEngineRunning
+```
+
 ## See Also
 
-- [CHHapticEngine.FinishedAction.stopEngine](chhapticengine/finishedaction/stopengine.md)
+### Finished Actions
+- [CHHapticEngine.FinishedAction.stopEngine](./stopengine.md)
   Stops the engine after it finishes playing all haptic patterns.
 
 

@@ -1,7 +1,8 @@
 # quickLookPreview(_:in:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a Quick Look preview of the URLs you provide.
 
@@ -30,12 +31,13 @@ Quick Look updates the value of the selection binding to match the URL of the fi
 
 ## Parameters
 
-- `selection`: A [`Binding`](binding.md) to an element that’s part of the items collection. This is the URL that you currently want to preview.
+- `selection`: A [`Binding`](../binding.md) to an element that’s part of the items collection. This is the URL that you currently want to preview.
 - `items`: A collection of URLs to preview.
 
 ## See Also
 
-- [func quickLookPreview(Binding<URL?>) -> some View](view/quicklookpreview(_:).md)
+### Previewing content
+- [func quickLookPreview(Binding<URL?>) -> some View](./quicklookpreview%28_%29.md)
   Presents a Quick Look preview of the contents of a single URL.
 
 

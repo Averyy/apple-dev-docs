@@ -1,7 +1,8 @@
 # SubscriptionOptionGroupStyle
 
 **Framework**: StoreKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 18.0+
@@ -21,28 +22,29 @@ protocol SubscriptionOptionGroupStyle
 ## Topics
 
 ### Getting built-in subscription option group styles
-- [static var automatic: AutomaticSubscriptionOptionGroupStyle](subscriptionoptiongroupstyle/automatic.md)
-- [static var links: LinksSubscriptionOptionGroupStyle](subscriptionoptiongroupstyle/links.md)
-- [static var tabs: TabsSubscriptionOptionGroupStyle](subscriptionoptiongroupstyle/tabs.md)
+- [static var automatic: AutomaticSubscriptionOptionGroupStyle](./subscriptionoptiongroupstyle/automatic.md)
+- [static var links: LinksSubscriptionOptionGroupStyle](./subscriptionoptiongroupstyle/links.md)
+- [static var tabs: TabsSubscriptionOptionGroupStyle](./subscriptionoptiongroupstyle/tabs.md)
 ### Supporting types
-- [struct AutomaticSubscriptionOptionGroupStyle](automaticsubscriptionoptiongroupstyle.md)
-- [struct LinksSubscriptionOptionGroupStyle](linkssubscriptionoptiongroupstyle.md)
-- [struct TabsSubscriptionOptionGroupStyle](tabssubscriptionoptiongroupstyle.md)
-- [struct SubscriptionOptionGroupStyleOutput](subscriptionoptiongroupstyleoutput.md)
+- [struct AutomaticSubscriptionOptionGroupStyle](./automaticsubscriptionoptiongroupstyle.md)
+- [struct LinksSubscriptionOptionGroupStyle](./linkssubscriptionoptiongroupstyle.md)
+- [struct TabsSubscriptionOptionGroupStyle](./tabssubscriptionoptiongroupstyle.md)
+- [struct SubscriptionOptionGroupStyleOutput](./subscriptionoptiongroupstyleoutput.md)
 
 ## Relationships
 
 ### Conforming Types
-- [AutomaticSubscriptionOptionGroupStyle](automaticsubscriptionoptiongroupstyle.md)
-- [LinksSubscriptionOptionGroupStyle](linkssubscriptionoptiongroupstyle.md)
-- [TabsSubscriptionOptionGroupStyle](tabssubscriptionoptiongroupstyle.md)
+- [AutomaticSubscriptionOptionGroupStyle](./automaticsubscriptionoptiongroupstyle.md)
+- [LinksSubscriptionOptionGroupStyle](./linkssubscriptionoptiongroupstyle.md)
+- [TabsSubscriptionOptionGroupStyle](./tabssubscriptionoptiongroupstyle.md)
 
 ## See Also
 
+### Styling subscription option groups
 - [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View
-](../swiftui/view/subscriptionstoreoptiongroupstyle(_:).md)
+](../SwiftUI/view/subscriptionstoreoptiongroupstyle%28_%29.md)
   Sets the style subscription store views within this view use to display groups of subscription options.
-- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some StoreContent](storecontent/subscriptionstoreoptiongroupstyle(_:).md)
+- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some StoreContent](./storecontent/subscriptionstoreoptiongroupstyle%28_%29.md)
 
 
 ---

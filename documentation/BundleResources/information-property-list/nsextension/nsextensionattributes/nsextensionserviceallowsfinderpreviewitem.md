@@ -1,24 +1,27 @@
 # NSExtensionServiceAllowsFinderPreviewItem
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value indicating whether the extension appears in the Finder Preview pane and Quick Actions menu.
 
 **Availability**:
 - macOS 10.14+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `NSExtensionServiceAllowsFinderPreviewItem`
+- **Type**: boolean
 
 ## See Also
 
-- [NSExtensionServiceFinderPreviewIconName](information-property-list/nsextension/nsextensionattributes/nsextensionservicefinderpreviewiconname.md)
+### Quick Actions
+- [NSExtensionServiceFinderPreviewIconName](./nsextensionservicefinderpreviewiconname.md)
   The name of an icon for display when the extension appears in the Finder Preview pane and Quick Actions menu.
-- [NSExtensionServiceFinderPreviewLabel](information-property-list/nsextension/nsextensionattributes/nsextensionservicefinderpreviewlabel.md)
+- [NSExtensionServiceFinderPreviewLabel](./nsextensionservicefinderpreviewlabel.md)
   A name for display when the extension appears in the Finder Preview pane and Quick Actions menu.
-- [NSExtensionServiceRoleType](information-property-list/nsextension/nsextensionattributes/nsextensionserviceroletype.md)
+- [NSExtensionServiceRoleType](./nsextensionserviceroletype.md)
   The type of task an Action extension performs.
 
 

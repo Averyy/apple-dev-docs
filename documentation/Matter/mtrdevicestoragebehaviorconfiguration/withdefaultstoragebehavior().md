@@ -1,7 +1,8 @@
 # withDefaultStorageBehavior()
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create configuration with a default set of values. See description below for details.
 
@@ -18,6 +19,10 @@ Create configuration with a default set of values. See description below for det
 
 ```swift
 class func withDefaultStorageBehavior() -> Self
+```
+
+```objc
++ (instancetype) configurationWithDefaultStorageBehavior;
 ```
 
 

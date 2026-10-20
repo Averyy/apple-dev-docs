@@ -1,16 +1,19 @@
 # search
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An intent schema that navigates to search results.
 
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
-- Mac Catalyst 18.0+
-- macOS 15.0+
-- visionOS 2.0+
+- iOS 18.0+ - Deprecated in 27.0
+- iPadOS 18.0+ - Deprecated in 27.0
+- Mac Catalyst 18.0+ - Deprecated in 27.0
+- macOS 15.0+ - Deprecated in 27.0
+- visionOS 2.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use .system.searchInApp instead
 
 ## Declaration
 
@@ -20,7 +23,7 @@ var search: some AppSchemaIntent { get }
 
 #### Discussion
 
-To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `system` domain and one of your app’s actions matches the `search` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .system.search)` Swift macro. To make your app work with Siri, see [`Apple Intelligence and Siri AI`](apple-intelligence-and-siri-ai.md).
+To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `system` domain and one of your app’s actions matches the `search` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .system.search)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
 The following example shows an intent that conforms to the `search` schema:
 
@@ -42,7 +45,7 @@ The schema supports the following system experiences:
 - Siri
 - Shortcuts
 
-For more information about the App Intents framework and the experiences it supports, see [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md).
+For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
 
 
 ---

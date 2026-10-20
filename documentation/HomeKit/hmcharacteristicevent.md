@@ -1,7 +1,8 @@
 # HMCharacteristicEvent
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event that is evaluated based on the value of a characteristic.
 
@@ -19,41 +20,46 @@ An event that is evaluated based on the value of a characteristic.
 class HMCharacteristicEvent<TriggerValueType> where TriggerValueType : NSCopying
 ```
 
+```objc
+@interface HMCharacteristicEvent : HMEvent
+```
+
 ## Topics
 
 ### Creating a characteristic event
-- [init(characteristic: HMCharacteristic, triggerValue: TriggerValueType?)](hmcharacteristicevent/init(characteristic:triggervalue:).md)
+- [init(characteristic: HMCharacteristic, triggerValue: TriggerValueType?)](./hmcharacteristicevent/init%28characteristic,triggervalue%29.md)
   Creates a new characteristic event which triggers when the specified characteristic reaches the specified value.
 ### Inspecting the event
-- [var characteristic: HMCharacteristic](hmcharacteristicevent/characteristic.md)
+- [var characteristic: HMCharacteristic](./hmcharacteristicevent/characteristic.md)
   The characteristic associated with the event.
-- [var triggerValue: TriggerValueType?](hmcharacteristicevent/triggervalue.md)
+- [var triggerValue: TriggerValueType?](./hmcharacteristicevent/triggervalue.md)
   The value of the characteristic that triggers the event.
 ### Configuring the event
-- [func updateTriggerValue(TriggerValueType?, completionHandler: ((any Error)?) -> Void)](hmcharacteristicevent/updatetriggervalue(_:completionhandler:).md)
+- [func updateTriggerValue(TriggerValueType?, completionHandler: ((any Error)?) -> Void)](./hmcharacteristicevent/updatetriggervalue%28_,completionhandler%29.md)
   Changes the trigger value associated with this event.
 
 ## Relationships
 
 ### Inherits From
-- [HMEvent](hmevent.md)
+- [HMEvent](./hmevent.md)
 ### Inherited By
-- [HMMutableCharacteristicEvent](hmmutablecharacteristicevent.md)
+- [HMMutableCharacteristicEvent](./hmmutablecharacteristicevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMMutableCharacteristicEvent](hmmutablecharacteristicevent.md)
+### Characteristics
+- [class HMMutableCharacteristicEvent](./hmmutablecharacteristicevent.md)
   A mutable event that is evaluated based on the value of a characteristic.
 
 

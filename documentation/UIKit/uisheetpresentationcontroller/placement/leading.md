@@ -1,7 +1,8 @@
 # UISheetPresentationController.Placement.leading
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 case leading
+```
+
+```c
+UISheetPresentationControllerPlacementLeading
 ```
 
 

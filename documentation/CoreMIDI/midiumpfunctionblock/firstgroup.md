@@ -1,7 +1,8 @@
 # firstGroup
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var firstGroup: MIDIUMPGroupNumber { get }
+```
+
+```objc
+@property (nonatomic, readonly) MIDIUMPGroupNumber firstGroup;
 ```
 
 

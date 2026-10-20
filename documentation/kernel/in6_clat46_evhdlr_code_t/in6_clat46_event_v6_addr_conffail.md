@@ -1,14 +1,15 @@
 # IN6_CLAT46_EVENT_V6_ADDR_CONFFAIL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 IN6_CLAT46_EVENT_V6_ADDR_CONFFAIL
 ```
 

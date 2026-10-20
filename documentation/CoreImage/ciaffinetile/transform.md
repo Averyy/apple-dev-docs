@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The transform to apply to the image.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The transform to apply to the image.
 var transform: CGAffineTransform { get set }
 ```
 
+```objc
+@property (nonatomic) CGAffineTransform transform;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](ciaffinetile/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
 
 

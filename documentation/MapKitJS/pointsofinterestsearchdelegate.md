@@ -1,7 +1,8 @@
 # PointsOfInterestSearchDelegate
 
 **Framework**: MapKit JS  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 An object or callback function that MapKit JS calls when fetching points of interest.
 
@@ -10,7 +11,7 @@ An object or callback function that MapKit JS calls when fetching points of inte
 
 ## Declaration
 
-```swift
+```
 type PointsOfInterestSearchDelegate =
     | {
           searchDidError: (error: Error) => void;
@@ -31,9 +32,10 @@ You may pass an object to the search method instead of using of a search delegat
 
 ## See Also
 
-- [search(options)](pointsofinterestsearch/search.md)
+### Fetching points of interest
+- [search(options)](./pointsofinterestsearch/search.md)
   Fetches points of interest.
-- [interface PointsOfInterestSearchResponse](pointsofinterestsearchresponse.md)
+- [interface PointsOfInterestSearchResponse](./pointsofinterestsearchresponse.md)
   The result of a request used to fetch points of interest.
 
 

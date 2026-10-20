@@ -1,23 +1,28 @@
 # removeContentKeyRecipient(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate to remove the specified recipient.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func removeContentKeyRecipient(_ recipient: any AVContentKeyRecipient)
+```
+
+```objc
+- (void) removeContentKeyRecipient:(id<AVContentKeyRecipient>) recipient;
 ```
 
 ## Parameters
@@ -26,11 +31,12 @@ func removeContentKeyRecipient(_ recipient: any AVContentKeyRecipient)
 
 ## See Also
 
-- [var contentKeyRecipients: [any AVContentKeyRecipient]](avcontentkeysession/contentkeyrecipients.md)
+### Managing content key recipients
+- [var contentKeyRecipients: [any AVContentKeyRecipient]](./contentkeyrecipients.md)
   An array of content key recipients.
-- [protocol AVContentKeyRecipient](avcontentkeyrecipient.md)
+- [protocol AVContentKeyRecipient](../avcontentkeyrecipient.md)
   A protocol for requiring decryption keys for media data.
-- [func addContentKeyRecipient(any AVContentKeyRecipient)](avcontentkeysession/addcontentkeyrecipient(_:).md)
+- [func addContentKeyRecipient(any AVContentKeyRecipient)](./addcontentkeyrecipient%28_%29.md)
   Tells the delegate that the specified recipient should have access to the decryption keys loaded with the session.
 
 

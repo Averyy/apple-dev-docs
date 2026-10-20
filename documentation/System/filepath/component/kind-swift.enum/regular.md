@@ -1,7 +1,8 @@
 # FilePath.Component.Kind.regular
 
 **Framework**: System  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A file or directory name
 

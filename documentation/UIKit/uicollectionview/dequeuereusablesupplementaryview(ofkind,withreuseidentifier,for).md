@@ -1,7 +1,8 @@
 # dequeueReusableSupplementaryView(ofKind:withReuseIdentifier:for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dequeues a reusable supplementary view located by its identifier and kind.
 
@@ -9,7 +10,7 @@ Dequeues a reusable supplementary view located by its identifier and kind.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,21 @@ Dequeues a reusable supplementary view located by its identifier and kind.
 func dequeueReusableSupplementaryView(ofKind elementKind: String, withReuseIdentifier identifier: String, for indexPath: IndexPath) -> UICollectionReusableView
 ```
 
+```objc
+- (UICollectionReusableView *) dequeueReusableSupplementaryViewOfKind:(NSString *) elementKind withReuseIdentifier:(NSString *) identifier forIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
-A valid [`UICollectionReusableView`](uicollectionreusableview.md) object.
+A valid [`UICollectionReusableView`](../uicollectionreusableview.md) object.
 
 #### Discussion
 
 Call this method from your data source object when asked to provide a new supplementary view for the collection view. This method dequeues an existing view if one is available or creates a new one based on the class or nib file you previously registered.
 
-> ❗ **Important**:  You must register a class or nib file using the [`register(_:forSupplementaryViewOfKind:withReuseIdentifier:)`](uicollectionview/register(_:forsupplementaryviewofkind:withreuseidentifier:)-661io.md) or [`register(_:forSupplementaryViewOfKind:withReuseIdentifier:)`](uicollectionview/register(_:forsupplementaryviewofkind:withreuseidentifier:)-9hn73.md) method before calling this method. You can also register a set of default supplementary views with the layout object using the [`register(_:forDecorationViewOfKind:)`](uicollectionviewlayout/register(_:fordecorationviewofkind:)-361k6.md) or [`register(_:forDecorationViewOfKind:)`](uicollectionviewlayout/register(_:fordecorationviewofkind:)-35jf9.md) method.
+> ❗ **Important**:  You must register a class or nib file using the [`register(_:forSupplementaryViewOfKind:withReuseIdentifier:)`](./register%28_,forsupplementaryviewofkind,withreuseidentifier%29-661io.md) or [`register(_:forSupplementaryViewOfKind:withReuseIdentifier:)`](./register%28_,forsupplementaryviewofkind,withreuseidentifier%29-9hn73.md) method before calling this method. You can also register a set of default supplementary views with the layout object using the [`register(_:forDecorationViewOfKind:)`](../uicollectionviewlayout/register%28_,fordecorationviewofkind%29-361k6.md) or [`register(_:forDecorationViewOfKind:)`](../uicollectionviewlayout/register%28_,fordecorationviewofkind%29-35jf9.md) method.
 
-If you registered a class for the specified `identifier` and a new cell must be created, this method initializes the cell by calling its [`init(frame:)`](uiview/init(frame:).md) method. For nib-based cells, this method loads the cell object from the provided nib file. If an existing cell was available for reuse, this method calls the cell’s [`prepareForReuse()`](uicollectionreusableview/prepareforreuse().md) method instead.
+If you registered a class for the specified `identifier` and a new cell must be created, this method initializes the cell by calling its [`init(frame:)`](../uiview/init%28frame%29.md) method. For nib-based cells, this method loads the cell object from the provided nib file. If an existing cell was available for reuse, this method calls the cell’s [`prepareForReuse()`](../uicollectionreusableview/prepareforreuse%28%29.md) method instead.
 
 ## Parameters
 
@@ -38,13 +43,14 @@ If you registered a class for the specified `identifier` and a new cell must be 
 
 ## See Also
 
-- [UICollectionView.SupplementaryRegistration](uicollectionview/supplementaryregistration.md)
+### Creating headers and footers
+- [UICollectionView.SupplementaryRegistration](./supplementaryregistration.md)
   A registration for the collection view’s supplementary views.
-- [func dequeueConfiguredReusableSupplementary<Supplementary>(using: UICollectionView.SupplementaryRegistration<Supplementary>, for: IndexPath) -> Supplementary](uicollectionview/dequeueconfiguredreusablesupplementary(using:for:).md)
+- [func dequeueConfiguredReusableSupplementary<Supplementary>(using: UICollectionView.SupplementaryRegistration<Supplementary>, for: IndexPath) -> Supplementary](./dequeueconfiguredreusablesupplementary%28using,for%29.md)
   Dequeues a configured reusable supplementary view object.
-- [func register(AnyClass?, forSupplementaryViewOfKind: String, withReuseIdentifier: String)](uicollectionview/register(_:forsupplementaryviewofkind:withreuseidentifier:)-661io.md)
+- [func register(AnyClass?, forSupplementaryViewOfKind: String, withReuseIdentifier: String)](./register%28_,forsupplementaryviewofkind,withreuseidentifier%29-661io.md)
   Registers a class for use in creating supplementary views for the collection view.
-- [func register(UINib?, forSupplementaryViewOfKind: String, withReuseIdentifier: String)](uicollectionview/register(_:forsupplementaryviewofkind:withreuseidentifier:)-9hn73.md)
+- [func register(UINib?, forSupplementaryViewOfKind: String, withReuseIdentifier: String)](./register%28_,forsupplementaryviewofkind,withreuseidentifier%29-9hn73.md)
   Registers a nib file for use in creating supplementary views for the collection view.
 
 

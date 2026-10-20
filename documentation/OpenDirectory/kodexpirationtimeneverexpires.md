@@ -1,11 +1,12 @@
 # kODExpirationTimeNeverExpires
 
 **Framework**: Open Directory  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,9 +14,14 @@
 var kODExpirationTimeNeverExpires: Int { get }
 ```
 
+```c
+kODExpirationTimeNeverExpires
+```
+
 ## See Also
 
-- [var kODExpirationTimeExpired: Int](kodexpirationtimeexpired.md)
+### Constants
+- [var kODExpirationTimeExpired: Int](./kodexpirationtimeexpired.md)
 
 
 ---

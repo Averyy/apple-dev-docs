@@ -1,7 +1,8 @@
 # errSecServiceNotAvailable
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Self-check failed.
 
@@ -18,6 +19,10 @@ Self-check failed.
 
 ```swift
 var errSecServiceNotAvailable: OSStatus { get }
+```
+
+```c
+errSecServiceNotAvailable
 ```
 
 

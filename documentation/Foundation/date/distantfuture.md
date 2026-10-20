@@ -1,7 +1,8 @@
 # distantFuture
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A date value representing a date in the distant future.
 
@@ -26,7 +27,8 @@ The distant future is in terms of centuries.
 
 ## See Also
 
-- [static let distantPast: Date](date/distantpast.md)
+### Getting Temporal Boundaries
+- [static let distantPast: Date](./distantpast.md)
   A date value representing a date in the distant past.
 
 

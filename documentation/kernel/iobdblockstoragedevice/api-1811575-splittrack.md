@@ -5,12 +5,12 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn splitTrack(
  UInt32address) = 0;
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the status of the operation.
 
@@ -24,8 +24,9 @@ Issue an MMC RESERVE TRACK command with the ARSV bit.
 
 ## See Also
 
-- [init](iobdblockstoragedevice/1811554-init.md)
-- [readDiscStructure](iobdblockstoragedevice/1811564-readdiscstructure.md)
+### Miscellaneous
+- [init](./api-1811554-init.md)
+- [readDiscStructure](./api-1811564-readdiscstructure.md)
 
 
 ---

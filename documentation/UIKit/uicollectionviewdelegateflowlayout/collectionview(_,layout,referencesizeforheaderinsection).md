@@ -1,7 +1,8 @@
 # collectionView(_:layout:referenceSizeForHeaderInSection:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the size of the header view in the specified section.
 
@@ -9,7 +10,7 @@ Asks the delegate for the size of the header view in the specified section.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,17 @@ Asks the delegate for the size of the header view in the specified section.
 optional func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize
 ```
 
+```objc
+- (CGSize) collectionView:(UICollectionView *) collectionView layout:(UICollectionViewLayout *) collectionViewLayout referenceSizeForHeaderInSection:(NSInteger) section;
+```
+
 #### Return Value
 
 The size of the header. If you return a value of size (0, 0), no header is added.
 
 #### Discussion
 
-If you do not implement this method, the flow layout uses the value in its [`headerReferenceSize`](uicollectionviewflowlayout/headerreferencesize.md) property to set the size of the header.
+If you do not implement this method, the flow layout uses the value in its [`headerReferenceSize`](../uicollectionviewflowlayout/headerreferencesize.md) property to set the size of the header.
 
 During layout, only the size that corresponds to the appropriate scrolling direction is used. For example, for the vertical scrolling direction, the layout object uses the height value returned by your method. (In that instance, the width of the header would be set to the width of the collection view.) If the size in the appropriate scrolling dimension is 0, no header is added.
 
@@ -36,7 +41,8 @@ During layout, only the size that corresponds to the appropriate scrolling direc
 
 ## See Also
 
-- [func collectionView(UICollectionView, layout: UICollectionViewLayout, referenceSizeForFooterInSection: Int) -> CGSize](uicollectionviewdelegateflowlayout/collectionview(_:layout:referencesizeforfooterinsection:).md)
+### Getting the header and footer sizes
+- [func collectionView(UICollectionView, layout: UICollectionViewLayout, referenceSizeForFooterInSection: Int) -> CGSize](./collectionview%28_,layout,referencesizeforfooterinsection%29.md)
   Asks the delegate for the size of the footer view in the specified section.
 
 

@@ -1,7 +1,8 @@
 # VTOpticalFlowConfiguration.QualityPrioritization.normal
 
 **Framework**: Video Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A normal quality prioritization level.
 
@@ -17,9 +18,14 @@ A normal quality prioritization level.
 case normal
 ```
 
+```c
+VTOpticalFlowConfigurationQualityPrioritizationNormal
+```
+
 ## See Also
 
-- [VTOpticalFlowConfiguration.QualityPrioritization.quality](vtopticalflowconfiguration/qualityprioritization-swift.enum/quality.md)
+### Enumeration Cases
+- [VTOpticalFlowConfiguration.QualityPrioritization.quality](./quality.md)
   A quality prioritization level.
 
 

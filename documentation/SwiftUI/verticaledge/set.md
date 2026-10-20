@@ -1,7 +1,8 @@
 # VerticalEdge.Set
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An efficient set of vertical edges.
 
@@ -24,28 +25,28 @@ struct Set
 ## Topics
 
 ### Getting edge sets
-- [static let all: VerticalEdge.Set](verticaledge/set/all.md)
+- [static let all: VerticalEdge.Set](./set/all.md)
   A set containing the top and bottom vertical edges.
-- [static let top: VerticalEdge.Set](verticaledge/set/top.md)
+- [static let top: VerticalEdge.Set](./set/top.md)
   A set containing only the top vertical edge.
-- [static let bottom: VerticalEdge.Set](verticaledge/set/bottom.md)
+- [static let bottom: VerticalEdge.Set](./set/bottom.md)
   A set containing only the bottom vertical edge.
 ### Creating an edge set
-- [init(VerticalEdge)](verticaledge/set/init(_:).md)
+- [init(VerticalEdge)](./set/init%28_%29.md)
   Creates a set of edges containing only the specified vertical edge.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

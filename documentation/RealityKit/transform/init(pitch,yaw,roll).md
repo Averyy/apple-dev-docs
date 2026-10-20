@@ -1,7 +1,8 @@
 # init(pitch:yaw:roll:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new transform from the specified Euler angles.
 
@@ -11,7 +12,7 @@ Creates a new transform from the specified Euler angles.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -37,11 +38,12 @@ The rotation order using extrinsic rotation order is defined as:
 
 ## See Also
 
-- [init()](transform/init.md)
+### Creating a transform
+- [init()](./init%28%29.md)
   Creates a transform with the values of the identity transform.
-- [init(scale: SIMD3<Float>, rotation: simd_quatf, translation: SIMD3<Float>)](transform/init(scale:rotation:translation:).md)
+- [init(scale: SIMD3<Float>, rotation: simd_quatf, translation: SIMD3<Float>)](./init%28scale,rotation,translation%29.md)
   Creates a new transformation using the given values.
-- [init(matrix: float4x4)](transform/init(matrix:).md)
+- [init(matrix: float4x4)](./init%28matrix%29.md)
   Creates a new transform represented as a 4x4 matrix.
 
 

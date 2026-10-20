@@ -1,18 +1,19 @@
 # init(rawValue:)
 
 **Framework**: Core Text  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a line bound options enumeration with the specified raw value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 

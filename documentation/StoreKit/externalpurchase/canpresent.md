@@ -1,7 +1,8 @@
 # canPresent
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the app can successfully present the notice sheet to inform people about external purchases.
 
@@ -22,30 +23,31 @@ static var canPresent: Bool { get async }
 
 #### Discussion
 
-Check this property, as shown below, to determine whether your app can successfully call [`presentNoticeSheet()`](externalpurchase/presentnoticesheet().md) to inform people before showing external purchases:
+Check this property, as shown below, to determine whether your app can successfully call [`presentNoticeSheet()`](./presentnoticesheet%28%29.md) to inform people before showing external purchases:
 
 ```swift
 await externalPurchase.canPresent 
 ```
 
-Check the value of this property again whenever the App Store storefront changes by using the [`updates`](storefront/updates.md) asynchronous sequence of [`Storefront`](storefront.md).
+Check the value of this property again whenever the App Store storefront changes by using the [`updates`](../storefront/updates.md) asynchronous sequence of [`Storefront`](../storefront.md).
 
 This property is `true` if all the following conditions are met:
 
 - The current App Store storefront allows external purchase, and the person is eligible to make external purchases.
-- Your app configures the [`StoreKit external purchases or offers entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) entitlement, or it configures the  [`com.apple.developer.storekit.external-purchase`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase) entitlement and the [`SKExternalPurchase`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchase), including the country code for the current App Store storefront.
+- Your app configures the [`StoreKit external purchases or offers entitlement`](../../BundleResources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md) entitlement, or it configures the  [`com.apple.developer.storekit.external-purchase`](../../BundleResources/entitlements/com.apple.developer.storekit.external-purchase.md) entitlement and the [`SKExternalPurchase`](../../BundleResources/information-property-list/skexternalpurchase.md), including the country code for the current App Store storefront.
 
 Otherwise, this property is `false`.
 
-When this property is `false`, check [`canMakePayments`](appstore/canmakepayments.md) to determine whether your app can offer in-app purchases using the StoreKit [`Apple In-App Purchase`](in-app-purchase.md) APIs. For more information, see [`canMakePayments`](appstore/canmakepayments.md).
+When this property is `false`, check [`canMakePayments`](../appstore/canmakepayments.md) to determine whether your app can offer in-app purchases using the StoreKit [Apple In-App Purchase](../in-app-purchase.md) APIs. For more information, see [`canMakePayments`](../appstore/canmakepayments.md).
 
 ## See Also
 
-- [static func presentNoticeSheet() async throws -> ExternalPurchase.NoticeResult](externalpurchase/presentnoticesheet.md)
+### Offering an external purchase
+- [static func presentNoticeSheet() async throws -> ExternalPurchase.NoticeResult](./presentnoticesheet%28%29.md)
   Presents a notice sheet from Apple that informs people of external purchases before showing them, and determines if your app can present external purchases
-- [ExternalPurchase.NoticeResult](externalpurchase/noticeresult.md)
+- [ExternalPurchase.NoticeResult](./noticeresult.md)
   The options available to people while viewing the external purchase notice sheet.
-- [SKExternalPurchase](../bundleresources/information-property-list/skexternalpurchase.md)
+- [SKExternalPurchase](../../BundleResources/information-property-list/skexternalpurchase.md)
   A string array of country codes that indicates your app supports external purchases.
 
 

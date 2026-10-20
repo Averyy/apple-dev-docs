@@ -1,7 +1,8 @@
 # removeFlagInBox(boundingBox:flag:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the flag from all polygons in this box.
 
@@ -21,19 +22,20 @@ func removeFlagInBox(boundingBox: BoundingBox, flag: NavigationMeshResource.Flag
 
 ## See Also
 
-- [func removeAreaInBox(boundingBox: BoundingBox, area: NavigationMeshResource.Area)](navigationmeshresource/removeareainbox(boundingbox:area:).md)
+### Removing areas and flags
+- [func removeAreaInBox(boundingBox: BoundingBox, area: NavigationMeshResource.Area)](./removeareainbox%28boundingbox,area%29.md)
   Removes the area from all polygons in this box.
-- [func removeAreaInCylinder(position: SIMD3<Float>, radius: Float, halfHeight: Float, area: NavigationMeshResource.Area)](navigationmeshresource/removeareaincylinder(position:radius:halfheight:area:).md)
+- [func removeAreaInCylinder(position: SIMD3<Float>, radius: Float, halfHeight: Float, area: NavigationMeshResource.Area)](./removeareaincylinder%28position,radius,halfheight,area%29.md)
   Removes the area from all polygons in this cylinder.
-- [func removeFlagInCylinder(position: SIMD3<Float>, radius: Float, halfHeight: Float, flag: NavigationMeshResource.Flag)](navigationmeshresource/removeflagincylinder(position:radius:halfheight:flag:).md)
+- [func removeFlagInCylinder(position: SIMD3<Float>, radius: Float, halfHeight: Float, flag: NavigationMeshResource.Flag)](./removeflagincylinder%28position,radius,halfheight,flag%29.md)
   Removes the flag from all polygons in this cylinder.
-- [func removeAreaOnPolygons(polygonIndices: [Int], area: NavigationMeshResource.Area)](navigationmeshresource/removeareaonpolygons(polygonindices:area:).md)
+- [func removeAreaOnPolygons(polygonIndices: [Int], area: NavigationMeshResource.Area)](./removeareaonpolygons%28polygonindices,area%29.md)
   Removes the area from the polygons at these indices.
-- [func removeFlagOnPolygons(polygonIndices: [Int], flag: NavigationMeshResource.Flag)](navigationmeshresource/removeflagonpolygons(polygonindices:flag:).md)
+- [func removeFlagOnPolygons(polygonIndices: [Int], flag: NavigationMeshResource.Flag)](./removeflagonpolygons%28polygonindices,flag%29.md)
   Removes the flag from the polygons at these indices.
-- [func removeAreaOnOffMeshConnections(offMeshConnectionIndices: [Int], area: NavigationMeshResource.Area)](navigationmeshresource/removeareaonoffmeshconnections(offmeshconnectionindices:area:).md)
+- [func removeAreaOnOffMeshConnections(offMeshConnectionIndices: [Int], area: NavigationMeshResource.Area)](./removeareaonoffmeshconnections%28offmeshconnectionindices,area%29.md)
   Removes the area from the off-mesh connections at these indices.
-- [func removeFlagOnOffMeshConnections(offMeshConnectionIndices: [Int], flag: NavigationMeshResource.Flag)](navigationmeshresource/removeflagonoffmeshconnections(offmeshconnectionindices:flag:).md)
+- [func removeFlagOnOffMeshConnections(offMeshConnectionIndices: [Int], flag: NavigationMeshResource.Flag)](./removeflagonoffmeshconnections%28offmeshconnectionindices,flag%29.md)
   Removes the flag from the off-mesh connections at these indices.
 
 

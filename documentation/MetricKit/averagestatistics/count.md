@@ -1,7 +1,8 @@
 # count
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of samples used to calculate the average.
 
@@ -19,13 +20,14 @@ let count: Int
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
 ## See Also
 
-- [let average: Measurement<DimensionType>](averagestatistics/average.md)
+### Statistics
+- [let average: Measurement<DimensionType>](./average.md)
   The average measurement value.
-- [let standardDeviation: Double?](averagestatistics/standarddeviation.md)
+- [let standardDeviation: Double?](./standarddeviation.md)
   The standard deviation of the distribution of values used to calculate the average.
 
 

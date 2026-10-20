@@ -1,7 +1,8 @@
 # annotations
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shaped array of annotations.
 
@@ -22,9 +23,10 @@ var annotations: MLShapedArray<Scalar>
 
 ## See Also
 
-- [var count: Int](annotatedbatch/count.md)
+### Inspecting an annotated batch
+- [var count: Int](./count.md)
   The number of examples in the batch.
-- [var features: MLShapedArray<Scalar>](annotatedbatch/features.md)
+- [var features: MLShapedArray<Scalar>](./features.md)
   The shaped array of features.
 
 

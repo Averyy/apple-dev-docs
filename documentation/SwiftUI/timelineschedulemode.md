@@ -1,7 +1,8 @@
 # TimelineScheduleMode
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A mode of operation for timeline schedule updates.
 
@@ -22,27 +23,28 @@ enum TimelineScheduleMode
 
 #### Overview
 
-A [`TimelineView`](timelineview.md) provides a mode when calling its schedule’s [`entries(from:mode:)`](timelineschedule/entries(from:mode:).md) method. The view chooses a mode based on the state of the system. For example, a watchOS view might request a lower frequency of updates, using the [`TimelineScheduleMode.lowFrequency`](timelineschedulemode/lowfrequency.md) mode, when the user lowers their wrist.
+A [`TimelineView`](./timelineview.md) provides a mode when calling its schedule’s [`entries(from:mode:)`](./timelineschedule/entries%28from,mode%29.md) method. The view chooses a mode based on the state of the system. For example, a watchOS view might request a lower frequency of updates, using the [`TimelineScheduleMode.lowFrequency`](./timelineschedulemode/lowfrequency.md) mode, when the user lowers their wrist.
 
 ## Topics
 
 ### Getting timeline schedule modes
-- [TimelineScheduleMode.normal](timelineschedulemode/normal.md)
+- [TimelineScheduleMode.normal](./timelineschedulemode/normal.md)
   A mode that produces schedule updates at the schedule’s natural cadence.
-- [TimelineScheduleMode.lowFrequency](timelineschedulemode/lowfrequency.md)
+- [TimelineScheduleMode.lowFrequency](./timelineschedulemode/lowfrequency.md)
   A mode that produces schedule updates at a reduced rate.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [TimelineSchedule.Mode](timelineschedule/mode.md)
+### Specifying a mode
+- [TimelineSchedule.Mode](./timelineschedule/mode.md)
   An alias for the timeline schedule update mode.
 
 

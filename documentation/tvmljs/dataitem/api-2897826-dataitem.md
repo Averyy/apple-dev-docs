@@ -1,7 +1,8 @@
 # DataItem
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Creates a new data item.
 
@@ -10,7 +11,7 @@ Creates a new data item.
 
 ## Declaration
 
-```swift
+```
 new DataItem(
     in String type, 
     in String identifier
@@ -19,7 +20,7 @@ new DataItem(
 
 #### Discussion
 
-Each data item in the same type group must have a unique identifier. Assign any other JSON object keys to the data item after it has been created. [`Listing 1`](dataitem/2897826-dataitem#2902593.md) shows JSON objects being mapped to data items. The `url` and `title` keys and values are added to each data item after creation.
+Each data item in the same type group must have a unique identifier. Assign any other JSON object keys to the data item after it has been created. [Listing 1](./api-2897826-dataitem.md#2902593) shows JSON objects being mapped to data items. The `url` and `title` keys and values are added to each data item after creation.
 
 ```javascript
 let newItems = results.map((result) => {

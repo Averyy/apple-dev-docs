@@ -1,7 +1,8 @@
 # repeat(count:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an animation that repeats the specified number of times.
 
@@ -11,7 +12,7 @@ Creates an animation that repeats the specified number of times.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -30,13 +31,14 @@ A repeating copy of the calling animation resource.
 
 ## See Also
 
-- [static func generate(with: any AnimationDefinition) throws -> AnimationResource](animationresource/generate(with:).md)
+### Creating an animation resource
+- [static func generate(with: any AnimationDefinition) throws -> AnimationResource](./generate%28with%29.md)
   Creates an animation resource from a definition.
-- [static func sequence(with: [AnimationResource]) throws -> AnimationResource](animationresource/sequence(with:).md)
+- [static func sequence(with: [AnimationResource]) throws -> AnimationResource](./sequence%28with%29.md)
   Creates an animation resource that plays a collection of animations in a specified sequence.
-- [static func group(with: [AnimationResource]) throws -> AnimationResource](animationresource/group(with:).md)
+- [static func group(with: [AnimationResource]) throws -> AnimationResource](./group%28with%29.md)
   Creates an animation resource that simultaneously plays back a collection of animations.
-- [func `repeat`(duration: TimeInterval) -> AnimationResource](animationresource/repeat(duration:).md)
+- [func `repeat`(duration: TimeInterval) -> AnimationResource](./repeat%28duration%29.md)
   Repeats an animation for the specified amount of time.
 
 

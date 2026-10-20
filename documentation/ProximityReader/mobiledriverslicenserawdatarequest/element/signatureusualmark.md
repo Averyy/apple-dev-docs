@@ -1,7 +1,8 @@
 # signatureUsualMark
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The signature or usual mark of the mobile document holder.
 

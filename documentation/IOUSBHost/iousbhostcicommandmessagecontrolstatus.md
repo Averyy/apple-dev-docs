@@ -1,7 +1,8 @@
 # IOUSBHostCICommandMessageControlStatus
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,17 +14,22 @@
 var IOUSBHostCICommandMessageControlStatus: UInt32 { get }
 ```
 
+```c
+IOUSBHostCICommandMessageControlStatus
+```
+
 ## See Also
 
-- [var IOUSBHostCICommandMessageControlStatusPhase: UInt32](iousbhostcicommandmessagecontrolstatusphase.md)
-- [var IOUSBHostCICommandMessageData0DeviceAddress: UInt32](iousbhostcicommandmessagedata0deviceaddress.md)
-- [var IOUSBHostCICommandMessageData0DeviceAddressPhase: UInt32](iousbhostcicommandmessagedata0deviceaddressphase.md)
-- [var IOUSBHostCICommandMessageData0EndpointAddress: UInt32](iousbhostcicommandmessagedata0endpointaddress.md)
-- [var IOUSBHostCICommandMessageData0EndpointAddressPhase: UInt32](iousbhostcicommandmessagedata0endpointaddressphase.md)
-- [var IOUSBHostCICommandMessageData0RootPort: UInt32](iousbhostcicommandmessagedata0rootport.md)
-- [var IOUSBHostCICommandMessageData0RootPortPhase: UInt32](iousbhostcicommandmessagedata0rootportphase.md)
-- [var IOUSBHostCICommandMessageData0StreamID: UInt32](iousbhostcicommandmessagedata0streamid.md)
-- [var IOUSBHostCICommandMessageData0StreamIDPhase: UInt32](iousbhostcicommandmessagedata0streamidphase.md)
+### Constants
+- [var IOUSBHostCICommandMessageControlStatusPhase: UInt32](./iousbhostcicommandmessagecontrolstatusphase.md)
+- [var IOUSBHostCICommandMessageData0DeviceAddress: UInt32](./iousbhostcicommandmessagedata0deviceaddress.md)
+- [var IOUSBHostCICommandMessageData0DeviceAddressPhase: UInt32](./iousbhostcicommandmessagedata0deviceaddressphase.md)
+- [var IOUSBHostCICommandMessageData0EndpointAddress: UInt32](./iousbhostcicommandmessagedata0endpointaddress.md)
+- [var IOUSBHostCICommandMessageData0EndpointAddressPhase: UInt32](./iousbhostcicommandmessagedata0endpointaddressphase.md)
+- [var IOUSBHostCICommandMessageData0RootPort: UInt32](./iousbhostcicommandmessagedata0rootport.md)
+- [var IOUSBHostCICommandMessageData0RootPortPhase: UInt32](./iousbhostcicommandmessagedata0rootportphase.md)
+- [var IOUSBHostCICommandMessageData0StreamID: UInt32](./iousbhostcicommandmessagedata0streamid.md)
+- [var IOUSBHostCICommandMessageData0StreamIDPhase: UInt32](./iousbhostcicommandmessagedata0streamidphase.md)
 
 
 ---

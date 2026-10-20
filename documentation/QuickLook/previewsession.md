@@ -1,7 +1,8 @@
 # PreviewSession
 
 **Framework**: Quick Look  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure with which you can control an existing session and receive events for the current preview application.
 
@@ -17,20 +18,20 @@ struct PreviewSession
 ## Topics
 
 ### Instance Properties
-- [var events: some AsyncSequence<PreviewSession.Event, Never>](previewsession/events.md)
+- [var events: some AsyncSequence<PreviewSession.Event, Never>](./previewsession/events.md)
   An async sequence of preview session events.
 ### Instance Methods
-- [func close() async throws](previewsession/close.md)
+- [func close() async throws](./previewsession/close%28%29.md)
   Closes the preview session.
 ### Enumerations
-- [PreviewSession.Event](previewsession/event.md)
+- [PreviewSession.Event](./previewsession/event.md)
   An event from the preview session’s events stream.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

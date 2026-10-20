@@ -1,7 +1,8 @@
 # keyName
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the custom attribute key.
 
@@ -18,19 +19,24 @@ The name of the custom attribute key.
 var keyName: String { get }
 ```
 
+```objc
+@property (readonly) NSString * keyName;
+```
+
 #### Discussion
 
 The key name is a string that contains only ASCII characters and no punctuation other than the underscore (that is “_”). The prefix `kMD` is reserved. To create a custom attribute key name, it’s recommended that you use a reverse DNS format that includes your company name and does not include the period character (”.”). For example, a key name of the form `com_mycompany_myapp_mykeyname` works well.
 
 ## See Also
 
-- [var isMultiValued: Bool](cscustomattributekey/ismultivalued.md)
+### Getting the attribute details
+- [var isMultiValued: Bool](./ismultivalued.md)
   A Boolean value that indicates if the custom attribute is likely to have multiple values, such as arrays, associated with it.
-- [var isSearchable: Bool](cscustomattributekey/issearchable.md)
+- [var isSearchable: Bool](./issearchable.md)
   A Boolean value that indicates if the custom attribute can be specified as a search term.
-- [var isSearchableByDefault: Bool](cscustomattributekey/issearchablebydefault.md)
+- [var isSearchableByDefault: Bool](./issearchablebydefault.md)
   A Boolean value that indicates if the custom attribute should be searchable by default.
-- [var isUnique: Bool](cscustomattributekey/isunique.md)
+- [var isUnique: Bool](./isunique.md)
   A Boolean value that indicates if duplicate custom attribute values should be treated as the same value to save storage space.
 
 

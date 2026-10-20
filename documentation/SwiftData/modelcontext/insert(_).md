@@ -1,7 +1,8 @@
 # insert(_:)
 
 **Framework**: SwiftData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers the specified model with the context so it can include the model in the next save operation.
 
@@ -23,7 +24,7 @@ func insert<T>(_ model: T) where T : PersistentModel
 
 #### Discussion
 
-A model is given a temporary persistent identifier until the first time a context saves it, after which that context assigns a permanent identifier. If you call [`rollback()`](modelcontext/rollback().md) after inserting a model but before the next save operation, the context discards that model.
+A model is given a temporary persistent identifier until the first time a context saves it, after which that context assigns a permanent identifier. If you call [`rollback()`](./rollback%28%29.md) after inserting a model but before the next save operation, the context discards that model.
 
 ## Parameters
 
@@ -31,7 +32,8 @@ A model is given a temporary persistent identifier until the first time a contex
 
 ## See Also
 
-- [var insertedModelsArray: [any PersistentModel]](modelcontext/insertedmodelsarray.md)
+### Inserting models
+- [var insertedModelsArray: [any PersistentModel]](./insertedmodelsarray.md)
   The array of inserted models that the context is yet to persist.
 
 

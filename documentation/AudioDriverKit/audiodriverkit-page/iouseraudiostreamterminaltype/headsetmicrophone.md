@@ -1,7 +1,8 @@
 # HeadsetMicrophone
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A microphone attached to a headset.
 
@@ -10,15 +11,16 @@ A microphone attached to a headset.
 
 ## Declaration
 
-```swift
+```c
 HeadsetMicrophone
 ```
 
 ## See Also
 
-- [Microphone](audiodriverkit/iouseraudiostreamterminaltype/microphone.md)
+### Microphones
+- [Microphone](./microphone.md)
   An audio microphone.
-- [ReceiverMicrophone](audiodriverkit/iouseraudiostreamterminaltype/receivermicrophone.md)
+- [ReceiverMicrophone](./receivermicrophone.md)
   A microphone on a telephone receiver.
 
 

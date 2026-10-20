@@ -1,12 +1,13 @@
 # nextState
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cell’s next state.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ The cell’s next state.
 var nextState: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger nextState;
+```
+
 #### Discussion
 
 If a cell has three states, it cycles in this order: on, off, mixed, on, off, and so forth. If the cell has only two states, it toggles between them.
 
-For a list of constants representing the possible cell states, see [`NSCell.StateValue`](nscell/statevalue.md).
+For a list of constants representing the possible cell states, see [`NSCell.StateValue`](./statevalue.md).
 
 ## See Also
 
-- [var allowsMixedState: Bool](nscell/allowsmixedstate.md)
+### Managing Cell State
+- [var allowsMixedState: Bool](./allowsmixedstate.md)
   A Boolean value indicating whether the cell supports three states instead of two.
-- [func setNextState()](nscell/setnextstate.md)
+- [func setNextState()](./setnextstate%28%29.md)
   Changes cell’s state to the next value in the sequence.
-- [var state: NSControl.StateValue](nscell/state.md)
+- [var state: NSControl.StateValue](./state.md)
   The cell’s current state.
-- [NSControl.StateValue](nscontrol/statevalue.md)
+- [NSControl.StateValue](../nscontrol/statevalue.md)
   A constant that indicates whether a control is on, off, or in a mixed state.
 
 

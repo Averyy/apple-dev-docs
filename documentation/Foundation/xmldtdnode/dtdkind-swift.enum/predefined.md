@@ -1,7 +1,8 @@
 # XMLDTDNode.DTDKind.predefined
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies a predefined entity declaration.
 
@@ -15,37 +16,42 @@ Identifies a predefined entity declaration.
 case predefined
 ```
 
+```c
+NSXMLEntityPredefined
+```
+
 ## See Also
 
-- [XMLDTDNode.DTDKind.cdataAttribute](xmldtdnode/dtdkind-swift.enum/cdataattribute.md)
+### Enumeration Cases
+- [XMLDTDNode.DTDKind.cdataAttribute](./cdataattribute.md)
   Identifies an attribute-list declaration with a `CDATA` (character data) value type.
-- [XMLDTDNode.DTDKind.entitiesAttribute](xmldtdnode/dtdkind-swift.enum/entitiesattribute.md)
+- [XMLDTDNode.DTDKind.entitiesAttribute](./entitiesattribute.md)
   Identifies an attribute-list declaration with an `ENTITIES` value type (refers to multiple unparsed entities declared elsewhere in document).
-- [XMLDTDNode.DTDKind.entityAttribute](xmldtdnode/dtdkind-swift.enum/entityattribute.md)
+- [XMLDTDNode.DTDKind.entityAttribute](./entityattribute.md)
   Identifies an attribute-list declaration with an `ENTITY` value type (refers to unparsed entity declared in document).
-- [XMLDTDNode.DTDKind.enumerationAttribute](xmldtdnode/dtdkind-swift.enum/enumerationattribute.md)
+- [XMLDTDNode.DTDKind.enumerationAttribute](./enumerationattribute.md)
   Identifies an attribute-list declaration with an enumeration value type (list of all possible values).
-- [XMLDTDNode.DTDKind.idAttribute](xmldtdnode/dtdkind-swift.enum/idattribute.md)
+- [XMLDTDNode.DTDKind.idAttribute](./idattribute.md)
   Identifies an attribute-list declaration with an `ID` value type (per-document unique element name).
-- [XMLDTDNode.DTDKind.idRefAttribute](xmldtdnode/dtdkind-swift.enum/idrefattribute.md)
+- [XMLDTDNode.DTDKind.idRefAttribute](./idrefattribute.md)
   Identifies an attribute-list declaration with an `IDREF` value type (refers to element `ID` type).
-- [XMLDTDNode.DTDKind.idRefsAttribute](xmldtdnode/dtdkind-swift.enum/idrefsattribute.md)
+- [XMLDTDNode.DTDKind.idRefsAttribute](./idrefsattribute.md)
   Identifies an attribute-list declaration with an `IDREFS` value type (refers to multiple elements of `ID` type).
-- [XMLDTDNode.DTDKind.nmTokenAttribute](xmldtdnode/dtdkind-swift.enum/nmtokenattribute.md)
+- [XMLDTDNode.DTDKind.nmTokenAttribute](./nmtokenattribute.md)
   Identifies an attribute-list declaration with a `NMTOKEN` value type (name token).
-- [XMLDTDNode.DTDKind.nmTokensAttribute](xmldtdnode/dtdkind-swift.enum/nmtokensattribute.md)
+- [XMLDTDNode.DTDKind.nmTokensAttribute](./nmtokensattribute.md)
   Identifies an attribute-list declaration with a `NMTOKENS` value type (multiple name tokens)
-- [XMLDTDNode.DTDKind.notationAttribute](xmldtdnode/dtdkind-swift.enum/notationattribute.md)
+- [XMLDTDNode.DTDKind.notationAttribute](./notationattribute.md)
   Identifies an attribute-list declaration with a `NOTATION` value type (name of declared notation).
-- [XMLDTDNode.DTDKind.anyDeclaration](xmldtdnode/dtdkind-swift.enum/anydeclaration.md)
+- [XMLDTDNode.DTDKind.anyDeclaration](./anydeclaration.md)
   Identifies an `ANY` element declaration.
-- [XMLDTDNode.DTDKind.elementDeclaration](xmldtdnode/dtdkind-swift.enum/elementdeclaration.md)
+- [XMLDTDNode.DTDKind.elementDeclaration](./elementdeclaration.md)
   Identifies a declaration of an element with child elements.
-- [XMLDTDNode.DTDKind.emptyDeclaration](xmldtdnode/dtdkind-swift.enum/emptydeclaration.md)
+- [XMLDTDNode.DTDKind.emptyDeclaration](./emptydeclaration.md)
   Identifies a declaration (`EMPTY`) of an empty element.
-- [XMLDTDNode.DTDKind.mixedDeclaration](xmldtdnode/dtdkind-swift.enum/mixeddeclaration.md)
+- [XMLDTDNode.DTDKind.mixedDeclaration](./mixeddeclaration.md)
   Identifies a declaration of an element with mixed content (`(#PCDATA | child)`).
-- [XMLDTDNode.DTDKind.undefinedDeclaration](xmldtdnode/dtdkind-swift.enum/undefineddeclaration.md)
+- [XMLDTDNode.DTDKind.undefinedDeclaration](./undefineddeclaration.md)
   Identifies an undefined element declaration.
 
 

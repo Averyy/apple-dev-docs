@@ -1,7 +1,8 @@
 # pushRegistry(_:didInvalidatePushTokenFor:)
 
 **Framework**: PushKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the system invalidated the push token for the specified type.
 
@@ -19,18 +20,23 @@ Tells the delegate that the system invalidated the push token for the specified 
 optional func pushRegistry(_ registry: PKPushRegistry, didInvalidatePushTokenFor type: PKPushType)
 ```
 
+```objc
+- (void) pushRegistry:(PKPushRegistry *) registry didInvalidatePushTokenForType:(PKPushType) type;
+```
+
 #### Discussion
 
 The system calls this method when a previously provided push token is no longer valid for use. No action is necessary on your part to reregister the push type. Instead, use this method to notify your server not to send push notifications using the matching push token.
 
 ## Parameters
 
-- `registry`: The [`PKPushRegistry`](pkpushregistry.md) instance responsible for the delegate callback.
-- `type`: This is a [`PKPushType`](pkpushtype.md) constant, which is present in `[registry desiredPushTypes]`.
+- `registry`: The [`PKPushRegistry`](../pkpushregistry.md) instance responsible for the delegate callback.
+- `type`: This is a [`PKPushType`](../pkpushtype.md) constant, which is present in `[registry desiredPushTypes]`.
 
 ## See Also
 
-- [func pushRegistry(PKPushRegistry, didUpdate: PKPushCredentials, for: PKPushType)](pkpushregistrydelegate/pushregistry(_:didupdate:for:).md)
+### Responding to Registration Events
+- [func pushRegistry(PKPushRegistry, didUpdate: PKPushCredentials, for: PKPushType)](./pushregistry%28_,didupdate,for%29.md)
   Tells the delegate that the system updated the credentials for the specified type of push notification.
 
 

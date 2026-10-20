@@ -1,18 +1,19 @@
 # words
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A variable-length stream of native-endian 32-bit Universal MIDI Packets (UMP).
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ A variable-length stream of native-endian 32-bit Universal MIDI Packets (UMP).
 var words: (UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)
 ```
 
+```c
+UInt32 words[64];
+```
+
 ## See Also
 
-- [var timeStamp: MIDITimeStamp](midieventpacket/timestamp.md)
+### Configuring an Event Packet
+- [var timeStamp: MIDITimeStamp](./timestamp.md)
   The event packet timestamp.
-- [var wordCount: UInt32](midieventpacket/wordcount.md)
+- [var wordCount: UInt32](./wordcount.md)
   The number of valid MIDI 32-bit words in this event packet.
 
 

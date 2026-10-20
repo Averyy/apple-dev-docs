@@ -1,7 +1,8 @@
 # replaceAdjacencyEndIndices(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fills the per-vertex adjacency end-indices buffer using the given closure.
 
@@ -25,7 +26,7 @@ The value returned by `body`.
 
 After the closure returns, the framework validates every entry against the adjacency count. An out-of-range entry causes a throw.
 
-> **Note**: If any entry is greater than `renormalizing.adjacenciesCount`.
+> **Throws**: If any entry is greater than `renormalizing.adjacenciesCount`.
 
 ## Parameters
 

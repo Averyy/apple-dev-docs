@@ -1,7 +1,8 @@
 # NSExtensionActivationSupportsMovieWithMaxCount
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The maximum number of movie files that the app extension supports.
 
@@ -11,15 +12,17 @@ The maximum number of movie files that the app extension supports.
 - macOS 10.10+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: integer
+- **Name**: `NSExtensionActivationSupportsMovieWithMaxCount`
+- **Type**: integer
 
 ## See Also
 
-- [NSExtensionActivationSupportsFileWithMaxCount](information-property-list/nsextension/nsextensionattributes/nsextensionactivationrule/nsextensionactivationsupportsfilewithmaxcount.md)
+### Files
+- [NSExtensionActivationSupportsFileWithMaxCount](./nsextensionactivationsupportsfilewithmaxcount.md)
   The maximum number of all types of files that the app extension supports.
-- [NSExtensionActivationSupportsImageWithMaxCount](information-property-list/nsextension/nsextensionattributes/nsextensionactivationrule/nsextensionactivationsupportsimagewithmaxcount.md)
+- [NSExtensionActivationSupportsImageWithMaxCount](./nsextensionactivationsupportsimagewithmaxcount.md)
   The maximum number of image files that the app extension supports.
 
 

@@ -1,7 +1,8 @@
 # init(role:action:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button with a specified role that displays a custom label.
 
@@ -21,6 +22,8 @@ Creates a button with a specified role that displays a custom label.
 nonisolated init(role: ButtonRole?, action: @escaping @MainActor () -> Void, @ContentBuilder label: () -> Label)
 ```
 
+Available when `Label` conforms to `View`.
+
 ## Parameters
 
 - `role`: An optional semantic role that describes the button. A value of `nil` means that the button doesn’t have an assigned role.
@@ -29,11 +32,12 @@ nonisolated init(role: ButtonRole?, action: @escaping @MainActor () -> Void, @Co
 
 ## See Also
 
-- [init(_:role:action:)](button/init(_:role:action:).md)
+### Creating a button with a role
+- [init(_:role:action:)](./init%28_,role,action%29.md)
   Creates a button with a specified role that generates its label from a localized string resource.
-- [init(_:image:role:action:)](button/init(_:image:role:action:).md)
+- [init(_:image:role:action:)](./init%28_,image,role,action%29.md)
   Creates a button with a specified role that generates its label from a localized string resource and an image resource.
-- [init(_:systemImage:role:action:)](button/init(_:systemimage:role:action:).md)
+- [init(_:systemImage:role:action:)](./init%28_,systemimage,role,action%29.md)
   Creates a button with a specified role that generates its label from a localized string key and a system image.
 
 

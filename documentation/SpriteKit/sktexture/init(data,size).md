@@ -1,23 +1,28 @@
 # init(data:size:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new texture from raw pixel data.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 convenience init(data pixelData: Data, size: CGSize)
+```
+
+```objc
++ (instancetype) textureWithData:(NSData *) pixelData size:(CGSize) size;
 ```
 
 #### Return Value
@@ -28,7 +33,7 @@ A new texture object.
 
 The image data is copied before control is returned to your game.
 
-Creating textures from raw pixel data is useful if you have a CPU based routine for creating imagery. The following Swift code shows how you can use [`init(data:size:)`](sktexture/init(data:size:).md) to create a texture containing random colors and a solid alpha. The `bytes` array is populated by iterating over the total number of pixels and adding four [`UInt8`](https://developer.apple.com/documentation/swift/uint8) values for the red, green, blue, and alpha channels.
+Creating textures from raw pixel data is useful if you have a CPU based routine for creating imagery. The following Swift code shows how you can use [`init(data:size:)`](./init%28data,size%29.md) to create a texture containing random colors and a solid alpha. The `bytes` array is populated by iterating over the total number of pixels and adding four [`UInt8`](../../Swift/uint8.md) values for the red, green, blue, and alpha channels.
 
 ```swift
 let width = 128
@@ -54,9 +59,10 @@ let texture = SKTexture(data: data,
 
 ## See Also
 
-- [convenience init(data: Data, size: CGSize, rowLength: UInt32, alignment: UInt32)](sktexture/init(data:size:rowlength:alignment:).md)
+### Texture from Data
+- [convenience init(data: Data, size: CGSize, rowLength: UInt32, alignment: UInt32)](./init%28data,size,rowlength,alignment%29.md)
   Creates a new texture from custom formatted raw pixel data.
-- [convenience init(data: Data, size: CGSize, flipped: Bool)](sktexture/init(data:size:flipped:).md)
+- [convenience init(data: Data, size: CGSize, flipped: Bool)](./init%28data,size,flipped%29.md)
   Creates a new texture from raw pixel data.
 
 

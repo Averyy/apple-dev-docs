@@ -1,7 +1,8 @@
 # EnvironmentBlendingComponent.EnvironmentType
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of the environment types which support environment-blending.
 
@@ -17,16 +18,16 @@ enum EnvironmentType
 ## Topics
 
 ### Enumeration Cases
-- [EnvironmentBlendingComponent.EnvironmentType.surroundings](environmentblendingcomponent/environmenttype/surroundings.md)
+- [EnvironmentBlendingComponent.EnvironmentType.surroundings](./environmenttype/surroundings.md)
   The real-world surroundings of the user.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

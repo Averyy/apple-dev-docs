@@ -1,7 +1,8 @@
 # profilePictureForUser(using:completion:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 26.0+
@@ -9,7 +10,15 @@
 ## Declaration
 
 ```swift
+optional func profilePictureForUser(using loginManager: ASAuthorizationProviderExtensionLoginManager, completion: @escaping @Sendable (Data) -> Void)
+```
+
+```swift
 optional func profilePictureForUser(using loginManager: ASAuthorizationProviderExtensionLoginManager) async -> Data
+```
+
+```objc
+- (void) profilePictureForUserUsingLoginManager:(ASAuthorizationProviderExtensionLoginManager *) loginManager completion:(void (^)(NSData *jpegData)) completion;
 ```
 
 #### Discussion

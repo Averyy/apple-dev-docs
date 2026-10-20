@@ -1,16 +1,19 @@
 # MTRControllerFactoryParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- iOS 16.1+
-- iPadOS 16.1+
-- Mac Catalyst 16.1+
-- macOS 13.0+
-- tvOS 16.1+
-- visionOS 1.0+
-- watchOS 9.1+
+- iOS 16.1+ - Deprecated in 16.4
+- iPadOS 16.1+ - Deprecated in 16.4
+- Mac Catalyst 16.1+ - Deprecated in 16.4
+- macOS 13.0+ - Deprecated in 13.3
+- tvOS 16.1+ - Deprecated in 16.4
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 9.1+ - Deprecated in 9.4
+
+> **Deprecated**: Please use MTRDeviceControllerFactoryParams
 
 ## Declaration
 
@@ -18,25 +21,29 @@
 class MTRControllerFactoryParams
 ```
 
+```objc
+@interface MTRControllerFactoryParams : MTRDeviceControllerFactoryParams
+```
+
 ## Topics
 
 ### Instance Properties
-- [var cdCerts: [Data]?](mtrcontrollerfactoryparams/cdcerts.md)
-- [var paaCerts: [Data]?](mtrcontrollerfactoryparams/paacerts.md)
-- [var startServer: Bool](mtrcontrollerfactoryparams/startserver.md)
-- [var storageDelegate: any MTRPersistentStorageDelegate](mtrcontrollerfactoryparams/storagedelegate.md)
+- [var cdCerts: [Data]?](./mtrcontrollerfactoryparams/cdcerts.md)
+- [var paaCerts: [Data]?](./mtrcontrollerfactoryparams/paacerts.md)
+- [var startServer: Bool](./mtrcontrollerfactoryparams/startserver.md)
+- [var storageDelegate: any MTRPersistentStorageDelegate](./mtrcontrollerfactoryparams/storagedelegate.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRDeviceControllerFactoryParams](mtrdevicecontrollerfactoryparams.md)
+- [MTRDeviceControllerFactoryParams](./mtrdevicecontrollerfactoryparams.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

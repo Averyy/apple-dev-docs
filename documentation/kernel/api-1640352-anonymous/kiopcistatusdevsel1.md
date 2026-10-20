@@ -1,14 +1,15 @@
 # kIOPCIStatusDevSel1
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOPCIStatusDevSel1 = 0x0200
 ```
 

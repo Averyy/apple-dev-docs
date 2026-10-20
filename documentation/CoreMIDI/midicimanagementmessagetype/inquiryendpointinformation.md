@@ -1,21 +1,26 @@
 # MIDICIManagementMessageType.inquiryEndpointInformation
 
 **Framework**: Core MIDI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 case inquiryEndpointInformation
+```
+
+```c
+kMIDICIManagementMessageTypeInquiryEndpointInformation
 ```
 
 

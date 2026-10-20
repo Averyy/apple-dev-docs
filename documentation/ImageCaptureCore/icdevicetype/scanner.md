@@ -1,7 +1,8 @@
 # ICDeviceType.scanner
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device is a scanner.
 
@@ -18,9 +19,14 @@ The device is a scanner.
 case scanner
 ```
 
+```c
+ICDeviceTypeScanner
+```
+
 ## See Also
 
-- [ICDeviceType.camera](icdevicetype/camera.md)
+### Constants
+- [ICDeviceType.camera](./camera.md)
   The device is a camera.
 
 

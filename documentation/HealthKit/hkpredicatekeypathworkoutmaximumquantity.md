@@ -1,7 +1,8 @@
 # HKPredicateKeyPathWorkoutMaximumQuantity
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key path for accessing workouts with a matching maximum quantity.
 
@@ -19,21 +20,26 @@ The key path for accessing workouts with a matching maximum quantity.
 let HKPredicateKeyPathWorkoutMaximumQuantity: String
 ```
 
+```c
+extern NSString * const HKPredicateKeyPathWorkoutMaximumQuantity;
+```
+
 ## See Also
 
-- [let HKPredicateKeyPathWorkoutType: String](hkpredicatekeypathworkouttype.md)
+### Specifying predicate key paths
+- [let HKPredicateKeyPathWorkoutType: String](./hkpredicatekeypathworkouttype.md)
   The key path for accessing the workout’s type.
-- [let HKPredicateKeyPathWorkoutDuration: String](hkpredicatekeypathworkoutduration.md)
+- [let HKPredicateKeyPathWorkoutDuration: String](./hkpredicatekeypathworkoutduration.md)
   The key path for accessing the workout’s duration.
-- [let HKPredicateKeyPathWorkoutTotalDistance: String](hkpredicatekeypathworkouttotaldistance.md)
+- [let HKPredicateKeyPathWorkoutTotalDistance: String](./hkpredicatekeypathworkouttotaldistance.md)
   The key path for accessing the workout’s total distance.
-- [let HKPredicateKeyPathWorkoutTotalEnergyBurned: String](hkpredicatekeypathworkouttotalenergyburned.md)
+- [let HKPredicateKeyPathWorkoutTotalEnergyBurned: String](./hkpredicatekeypathworkouttotalenergyburned.md)
   The key path for accessing the workout’s total energy burned.
-- [let HKPredicateKeyPathWorkoutAverageQuantity: String](hkpredicatekeypathworkoutaveragequantity.md)
+- [let HKPredicateKeyPathWorkoutAverageQuantity: String](./hkpredicatekeypathworkoutaveragequantity.md)
   The key path for accessing workouts with a matching average quantity.
-- [let HKPredicateKeyPathWorkoutMinimumQuantity: String](hkpredicatekeypathworkoutminimumquantity.md)
+- [let HKPredicateKeyPathWorkoutMinimumQuantity: String](./hkpredicatekeypathworkoutminimumquantity.md)
   The key path for accessing workouts with a matching minimum quantity.
-- [let HKPredicateKeyPathWorkoutSumQuantity: String](hkpredicatekeypathworkoutsumquantity.md)
+- [let HKPredicateKeyPathWorkoutSumQuantity: String](./hkpredicatekeypathworkoutsumquantity.md)
   The key path for accessing workouts with a matching sum.
 
 

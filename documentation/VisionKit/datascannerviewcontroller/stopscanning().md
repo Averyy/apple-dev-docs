@@ -1,7 +1,8 @@
 # stopScanning()
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops scanning the camera’s live video for data.
 
@@ -19,19 +20,20 @@ func stopScanning()
 
 ## Mentions
 
-- [Scanning data with the camera](scanning-data-with-the-camera.md)
+- [Scanning data with the camera](../scanning-data-with-the-camera.md)
 
 #### Discussion
 
-This method removes all items from the [`recognizedItems`](datascannerviewcontroller/recognizeditems.md) property.
+This method removes all items from the [`recognizedItems`](./recognizeditems.md) property.
 
 ## See Also
 
-- [func startScanning() throws](datascannerviewcontroller/startscanning.md)
+### Scanning and recognizing items
+- [func startScanning() throws](./startscanning%28%29.md)
   Starts scanning the camera’s live video for data.
-- [var isScanning: Bool](datascannerviewcontroller/isscanning.md)
+- [var isScanning: Bool](./isscanning.md)
   A Boolean value that indicates whether the data scanner is actively looking for items.
-- [var recognizedItems: AsyncStream<[RecognizedItem]>](datascannerviewcontroller/recognizeditems.md)
+- [var recognizedItems: AsyncStream<[RecognizedItem]>](./recognizeditems.md)
   An asynchronous array of items that the data scanner currently recognizes in the camera’s live video.
 
 

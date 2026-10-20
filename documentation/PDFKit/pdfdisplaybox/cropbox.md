@@ -1,7 +1,8 @@
 # PDFDisplayBox.cropBox
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A rectangle defining the boundaries of the visible region , expressed in default user-space units. Default value equal to `kPDFDisplayBoxMediaBox`.
 
@@ -19,15 +20,20 @@ A rectangle defining the boundaries of the visible region , expressed in default
 case cropBox
 ```
 
+```c
+kPDFDisplayBoxCropBox
+```
+
 ## See Also
 
-- [PDFDisplayBox.mediaBox](pdfdisplaybox/mediabox.md)
+### Constants
+- [PDFDisplayBox.mediaBox](./mediabox.md)
   A rectangle defining the boundaries of the physical medium for display or printing, expressed in default user-space units.
-- [PDFDisplayBox.bleedBox](pdfdisplaybox/bleedbox.md)
+- [PDFDisplayBox.bleedBox](./bleedbox.md)
   A rectangle defining the boundaries of the clip region for the page contents in a production environment. Default value equal to `kPDFDisplayBoxCropBox`.
-- [PDFDisplayBox.trimBox](pdfdisplaybox/trimbox.md)
+- [PDFDisplayBox.trimBox](./trimbox.md)
   A rectangle defining the intended boundaries of the finished page. Default value equal to `kPDFDisplayBoxCropBox`.
-- [PDFDisplayBox.artBox](pdfdisplaybox/artbox.md)
+- [PDFDisplayBox.artBox](./artbox.md)
   A rectangle defining the boundaries of the page’s meaningful content including surrounding white space intended for display. Default value equal to `kPDFDisplayBoxCropBox`.
 
 

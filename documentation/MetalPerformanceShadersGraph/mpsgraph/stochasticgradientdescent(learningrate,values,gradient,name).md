@@ -1,7 +1,8 @@
 # stochasticGradientDescent(learningRate:values:gradient:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The Stochastic gradient descent performs a gradient descent.
 
@@ -17,6 +18,10 @@ The Stochastic gradient descent performs a gradient descent.
 
 ```swift
 func stochasticGradientDescent(learningRate learningRateTensor: MPSGraphTensor, values valuesTensor: MPSGraphTensor, gradient gradientTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) stochasticGradientDescentWithLearningRateTensor:(MPSGraphTensor *) learningRateTensor valuesTensor:(MPSGraphTensor *) valuesTensor gradientTensor:(MPSGraphTensor *) gradientTensor name:(NSString *) name;
 ```
 
 #### Return Value

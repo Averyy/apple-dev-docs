@@ -1,17 +1,22 @@
 # colorSyncProfileData
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Identifies an `NSData` object containing the ColorSync profile data.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 static let colorSyncProfileData: NSBitmapImageRep.PropertyKey
+```
+
+```c
+extern NSBitmapImageRepPropertyKey NSImageColorSyncProfileData;
 ```
 
 #### Discussion
@@ -20,31 +25,32 @@ It can be used for TIFF, JPEG, GIF, and PNG files. This value is set when readin
 
 ## See Also
 
-- [static let compressionFactor: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/compressionfactor.md)
+### Bitmap Properties
+- [static let compressionFactor: NSBitmapImageRep.PropertyKey](./compressionfactor.md)
   Identifies an `NSNumber` object containing the compression factor of the image.
-- [static let compressionMethod: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/compressionmethod.md)
+- [static let compressionMethod: NSBitmapImageRep.PropertyKey](./compressionmethod.md)
   Identifies an `NSNumber` object identifying the compression method of the image.
-- [static let currentFrame: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/currentframe.md)
+- [static let currentFrame: NSBitmapImageRep.PropertyKey](./currentframe.md)
   Identifies an `NSNumber` object containing the current frame for an animated GIF file.
-- [static let currentFrameDuration: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/currentframeduration.md)
+- [static let currentFrameDuration: NSBitmapImageRep.PropertyKey](./currentframeduration.md)
   Identifies an `NSNumber` object containing the duration (in seconds) of the current frame for an animated GIF image.
-- [static let ditherTransparency: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/dithertransparency.md)
+- [static let ditherTransparency: NSBitmapImageRep.PropertyKey](./dithertransparency.md)
   Identifies an `NSNumber` object containing a Boolean that indicates whether the image is dithered.
-- [static let exifData: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/exifdata.md)
+- [static let exifData: NSBitmapImageRep.PropertyKey](./exifdata.md)
   Identifies an `NSDictionary` object containing the EXIF data for the image.
-- [static let fallbackBackgroundColor: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/fallbackbackgroundcolor.md)
+- [static let fallbackBackgroundColor: NSBitmapImageRep.PropertyKey](./fallbackbackgroundcolor.md)
   Specifies the background color to use when writing to an image format (such as JPEG) that doesn’t support alpha.
-- [static let frameCount: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/framecount.md)
+- [static let frameCount: NSBitmapImageRep.PropertyKey](./framecount.md)
   Identifies an `NSNumber` object containing the number of frames in an animated GIF file.
-- [static let gamma: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/gamma.md)
+- [static let gamma: NSBitmapImageRep.PropertyKey](./gamma.md)
   Identifies an `NSNumber` object containing the gamma value for the image.
-- [static let interlaced: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/interlaced.md)
+- [static let interlaced: NSBitmapImageRep.PropertyKey](./interlaced.md)
   Identifies an `NSNumber` object containing a Boolean value that indicates whether the image is interlaced.
-- [static let loopCount: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/loopcount.md)
+- [static let loopCount: NSBitmapImageRep.PropertyKey](./loopcount.md)
   Identifies an `NSNumber` object containing the number of loops to make when animating a GIF image.
-- [static let progressive: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/progressive.md)
+- [static let progressive: NSBitmapImageRep.PropertyKey](./progressive.md)
   Identifies an `NSNumber` object containing a Boolean that indicates whether the image uses progressive encoding.
-- [static let rgbColorTable: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/rgbcolortable.md)
+- [static let rgbColorTable: NSBitmapImageRep.PropertyKey](./rgbcolortable.md)
   Identifies an `NSData` object containing the RGB color table.
 
 

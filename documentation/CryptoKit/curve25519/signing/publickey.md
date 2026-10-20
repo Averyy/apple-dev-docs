@@ -1,7 +1,8 @@
 # Curve25519.Signing.PublicKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A Curve25519 public key used to verify cryptographic signatures.
 
@@ -23,24 +24,25 @@ struct PublicKey
 ## Topics
 
 ### Creating a public key
-- [init<D>(rawRepresentation: D) throws](curve25519/signing/publickey/init(rawrepresentation:).md)
+- [init<D>(rawRepresentation: D) throws](./publickey/init%28rawrepresentation%29.md)
   Creates a Curve25519 public key from a data representation.
 ### Representing the key
-- [var rawRepresentation: Data](curve25519/signing/publickey/rawrepresentation.md)
+- [var rawRepresentation: Data](./publickey/rawrepresentation.md)
   A representation of the public key.
 ### Verifying a signature
-- [func isValidSignature<S, D>(S, for: D) -> Bool](curve25519/signing/publickey/isvalidsignature(_:for:).md)
+- [func isValidSignature<S, D>(S, for: D) -> Bool](./publickey/isvalidsignature%28_,for%29.md)
   Verifies an EdDSA signature over Curve25519.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Curve25519.Signing.PrivateKey](curve25519/signing/privatekey.md)
+### Using keys
+- [Curve25519.Signing.PrivateKey](./privatekey.md)
   A Curve25519 private key used to create cryptographic signatures.
 
 

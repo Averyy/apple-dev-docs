@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a new instance from the given integer, if it can be represented exactly.
@@ -35,6 +36,18 @@ let y = Int8(exactly: 1_000)
 ## Parameters
 
 - `source`: A value to convert to this type.
+
+## Default Implementations
+
+### BinaryFloatingPoint Implementations
+- [init?<Source>(exactly: Source)](../binaryfloatingpoint/init%28exactly%29-6fobm.md)
+  Creates a new instance from the given value, if it can be represented exactly.
+- [init?<Source>(exactly: Source)](../binaryfloatingpoint/init%28exactly%29-9lyid.md)
+  Creates a new value, if the given integer can be represented exactly.
+### Numeric Implementations
+- [init?<T>(exactly: T)](./init%28exactly%29-1dg3p.md)
+- [init?<T>(exactly: T)](./init%28exactly%29-8briw.md)
+- [init?<T>(exactly: T)](./init%28exactly%29-uz93.md)
 
 
 ---

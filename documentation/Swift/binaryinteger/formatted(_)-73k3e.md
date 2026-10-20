@@ -1,7 +1,8 @@
 # formatted(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Format `self` with the given format. `self` is first converted to `S.FormatInput` type, then format with the given format.
 

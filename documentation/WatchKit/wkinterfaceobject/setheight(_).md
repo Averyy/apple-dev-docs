@@ -1,7 +1,8 @@
 # setHeight(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the absolute height (in points) of the object.
 
@@ -14,9 +15,13 @@ Sets the absolute height (in points) of the object.
 func setHeight(_ height: CGFloat)
 ```
 
+```objc
+- (void) setHeight:(CGFloat) height;
+```
+
 #### Discussion
 
-You cannot use this method to alter the height of tables or the thickness of horizontal separator items. Changing the height of a [`WKInterfaceImage`](wkinterfaceimage.md) object causes the image’s content scaling mode to change to [`UIView.ContentMode.scaleToFill`](https://developer.apple.com/documentation/uikit/uiview/contentmode-swift.enum/scaletofill).
+You cannot use this method to alter the height of tables or the thickness of horizontal separator items. Changing the height of a [`WKInterfaceImage`](../wkinterfaceimage.md) object causes the image’s content scaling mode to change to [`UIView.ContentMode.scaleToFill`](../../UIKit/uiview/contentmode-swift.enum/scaletofill.md).
 
 Changes to the height of an object are animatable.
 
@@ -26,15 +31,16 @@ Changes to the height of an object are animatable.
 
 ## See Also
 
-- [func setWidth(CGFloat)](wkinterfaceobject/setwidth(_:).md)
+### Changing an Object’s Size
+- [func setWidth(CGFloat)](./setwidth%28_%29.md)
   Sets the absolute width (in points) of the object.
-- [func setRelativeWidth(CGFloat, withAdjustment: CGFloat)](wkinterfaceobject/setrelativewidth(_:withadjustment:).md)
+- [func setRelativeWidth(CGFloat, withAdjustment: CGFloat)](./setrelativewidth%28_,withadjustment%29.md)
   Sets the width of the object relative to its container.
-- [func setRelativeHeight(CGFloat, withAdjustment: CGFloat)](wkinterfaceobject/setrelativeheight(_:withadjustment:).md)
+- [func setRelativeHeight(CGFloat, withAdjustment: CGFloat)](./setrelativeheight%28_,withadjustment%29.md)
   Sets the height of the object relative to its container.
-- [func sizeToFitWidth()](wkinterfaceobject/sizetofitwidth.md)
+- [func sizeToFitWidth()](./sizetofitwidth%28%29.md)
   Sets the width of the object to fit its current content.
-- [func sizeToFitHeight()](wkinterfaceobject/sizetofitheight.md)
+- [func sizeToFitHeight()](./sizetofitheight%28%29.md)
   Sets the height of the object so that it fills the available vertical space.
 
 

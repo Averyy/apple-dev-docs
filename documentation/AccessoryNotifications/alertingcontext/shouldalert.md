@@ -1,7 +1,8 @@
 # shouldAlert
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates the recommended alerting behavior.
 
@@ -20,9 +21,10 @@ Use this property to closely match the iPhone’s alerting behavior. The system 
 
 ## See Also
 
-- [var notificationCanAlert: Bool](alertingcontext/notificationcanalert.md)
+### Determining alerting behavior
+- [var notificationCanAlert: Bool](./notificationcanalert.md)
   A Boolean value that indicates whether the accessory can alert the person for the notification.
-- [var isSuppressedByFocus: Bool](alertingcontext/issuppressedbyfocus.md)
+- [var isSuppressedByFocus: Bool](./issuppressedbyfocus.md)
   A Boolean value that indicates whether the device’s Focus state suppresses notification alerts.
 
 

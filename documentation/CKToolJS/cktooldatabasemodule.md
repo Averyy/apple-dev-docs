@@ -1,7 +1,8 @@
 # CKToolDatabaseModule
 
 **Framework**: CKTool JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The imported package that provides access to CloudKit containers and databases.
 
@@ -10,7 +11,7 @@ The imported package that provides access to CloudKit containers and databases.
 
 ## Declaration
 
-```swift
+```
 interface CKToolDatabaseModule
 ```
 
@@ -39,32 +40,33 @@ Importing package symbols this way supports tree-shaking.
 ## Topics
 
 ### Instance Methods
-- [createUuid](cktooldatabasemodule/createuuid.md)
+- [createUuid](./cktooldatabasemodule/createuuid.md)
   Creates a new `Uuid`.
-- [toBase64String](cktooldatabasemodule/tobase64string.md)
+- [toBase64String](./cktooldatabasemodule/tobase64string.md)
   Converts a regular string to a `Base64String`.
-- [toByte](cktooldatabasemodule/tobyte.md)
+- [toByte](./cktooldatabasemodule/tobyte.md)
   Converts a numeric value to a `Byte`.
-- [toByteArray](cktooldatabasemodule/tobytearray.md)
+- [toByteArray](./cktooldatabasemodule/tobytearray.md)
   Converts a numeric array to a `ByteArray`.
-- [toDouble](cktooldatabasemodule/todouble.md)
+- [toDouble](./cktooldatabasemodule/todouble.md)
   Converts a number or numeric string to a `Double`.
-- [toFloat](cktooldatabasemodule/tofloat.md)
+- [toFloat](./cktooldatabasemodule/tofloat.md)
   Converts a number or numeric string to a `Float`.
-- [toInt32](cktooldatabasemodule/toint32.md)
+- [toInt32](./cktooldatabasemodule/toint32.md)
   Converts a number to an `Int32`.
-- [toInt64](cktooldatabasemodule/toint64.md)
+- [toInt64](./cktooldatabasemodule/toint64.md)
   Converts a number or numeric string to a `Int64`.
-- [toNumber](cktooldatabasemodule/tonumber.md)
+- [toNumber](./cktooldatabasemodule/tonumber.md)
   Converts a supported numeric type to a JavaScript number.
-- [toUuid](cktooldatabasemodule/touuid.md)
+- [toUuid](./cktooldatabasemodule/touuid.md)
   Converts a string to a `Uuid`.
 
 ## See Also
 
-- [PromisesApi](promisesapi.md)
+### Promises API
+- [PromisesApi](./promisesapi.md)
   A class that exposes promise-based functions for interacting with the API.
-- [CancellablePromise](cancellablepromise.md)
+- [CancellablePromise](./cancellablepromise.md)
   A promise that has a function to cancel its operation.
 
 

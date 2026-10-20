@@ -1,7 +1,8 @@
 # spacing
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The spacing specifies the distance between elements at which they begin to merge.
 
@@ -15,6 +16,10 @@ The spacing specifies the distance between elements at which they begin to merge
 
 ```swift
 var spacing: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat spacing;
 ```
 
 

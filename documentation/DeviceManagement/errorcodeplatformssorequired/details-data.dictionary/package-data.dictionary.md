@@ -1,7 +1,8 @@
 # ErrorCodePlatformSSORequired.Details.Package
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary that specifies the package that the device uses to install an app with the SSO app extension used for Platform SSO.
 
@@ -10,7 +11,7 @@ A dictionary that specifies the package that the device uses to install an app w
 
 ## Declaration
 
-```swift
+```
 object ErrorCodePlatformSSORequired.Details.Package
 ```
 
@@ -19,6 +20,8 @@ object ErrorCodePlatformSSORequired.Details.Package
 - `ManifestURL` (string) *(required)*: The URL of the app manifest, which needs to begin with `https:`.
 - `PinningCerts` ([data]): An array of DER-encoded certificates to pin the connection when fetching the `ManifestURL`.
 - `PinningRevocationCheckRequired` (boolean): If `true`, certificate revocation checks require a positive response when using certificate pinning with `PinningCerts`.
+
+  **Default**: `false`
 
 
 ---

@@ -1,10 +1,11 @@
 # kBluetoothLEFeatureConnectionParamsRequestProcedure
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,16 +13,21 @@
 var kBluetoothLEFeatureConnectionParamsRequestProcedure: BluetoothLEFeatureBits { get }
 ```
 
+```c
+kBluetoothLEFeatureConnectionParamsRequestProcedure
+```
+
 ## See Also
 
-- [var kBluetoothLEFeatureExtendedRejectIndication: BluetoothLEFeatureBits](kbluetoothlefeatureextendedrejectindication.md)
-- [var kBluetoothLEFeatureExtendedScannerFilterPolicies: BluetoothLEFeatureBits](kbluetoothlefeatureextendedscannerfilterpolicies.md)
-- [var kBluetoothLEFeatureLEDataPacketLengthExtension: BluetoothLEFeatureBits](kbluetoothlefeatureledatapacketlengthextension.md)
-- [var kBluetoothLEFeatureLEEncryption: BluetoothLEFeatureBits](kbluetoothlefeatureleencryption.md)
-- [var kBluetoothLEFeatureLEPing: BluetoothLEFeatureBits](kbluetoothlefeatureleping.md)
-- [var kBluetoothLEFeatureLLPrivacy: BluetoothLEFeatureBits](kbluetoothlefeaturellprivacy.md)
-- [var kBluetoothLEFeatureSlaveInitiatedFeaturesExchange: BluetoothLEFeatureBits](kbluetoothlefeatureslaveinitiatedfeaturesexchange.md)
-- [var kBluetoothLEFeaturePeripheralInitiatedFeaturesExchange: BluetoothLEFeatureBits](kbluetoothlefeatureperipheralinitiatedfeaturesexchange.md)
+### Constants
+- [var kBluetoothLEFeatureExtendedRejectIndication: BluetoothLEFeatureBits](./kbluetoothlefeatureextendedrejectindication.md)
+- [var kBluetoothLEFeatureExtendedScannerFilterPolicies: BluetoothLEFeatureBits](./kbluetoothlefeatureextendedscannerfilterpolicies.md)
+- [var kBluetoothLEFeatureLEDataPacketLengthExtension: BluetoothLEFeatureBits](./kbluetoothlefeatureledatapacketlengthextension.md)
+- [var kBluetoothLEFeatureLEEncryption: BluetoothLEFeatureBits](./kbluetoothlefeatureleencryption.md)
+- [var kBluetoothLEFeatureLEPing: BluetoothLEFeatureBits](./kbluetoothlefeatureleping.md)
+- [var kBluetoothLEFeatureLLPrivacy: BluetoothLEFeatureBits](./kbluetoothlefeaturellprivacy.md)
+- [var kBluetoothLEFeatureSlaveInitiatedFeaturesExchange: BluetoothLEFeatureBits](./kbluetoothlefeatureslaveinitiatedfeaturesexchange.md)
+- [var kBluetoothLEFeaturePeripheralInitiatedFeaturesExchange: BluetoothLEFeatureBits](./kbluetoothlefeatureperipheralinitiatedfeaturesexchange.md)
 
 
 ---

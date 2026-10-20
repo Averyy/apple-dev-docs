@@ -1,7 +1,8 @@
 # CKShare.ParticipantRole.privateUser
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The participant has the private role.
 
@@ -20,17 +21,22 @@ The participant has the private role.
 case privateUser
 ```
 
+```c
+CKShareParticipantRolePrivateUser
+```
+
 #### Discussion
 
 A private user of a share can access the share.
 
 ## See Also
 
-- [CKShare.ParticipantRole.owner](ckshare/participantrole/owner.md)
+### Roles
+- [CKShare.ParticipantRole.owner](./owner.md)
   The participant is the share’s owner.
-- [CKShare.ParticipantRole.publicUser](ckshare/participantrole/publicuser.md)
+- [CKShare.ParticipantRole.publicUser](./publicuser.md)
   The participant has the public role.
-- [CKShare.ParticipantRole.unknown](ckshare/participantrole/unknown.md)
+- [CKShare.ParticipantRole.unknown](./unknown.md)
   The participant’s role is unknown.
 
 

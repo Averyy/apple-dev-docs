@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct mach_assert_3x {
     ...
 };
@@ -17,10 +17,10 @@ struct mach_assert_3x {
 ## Topics
 
 ### Instance Properties
-- [a](mach_assert_3x/4540722-a.md)
-- [b](mach_assert_3x/4540723-b.md)
-- [hdr](mach_assert_3x/4540724-hdr.md)
-- [op](mach_assert_3x/4540725-op.md)
+- [a](./mach_assert_3x/api-4540722-a.md)
+- [b](./mach_assert_3x/api-4540723-b.md)
+- [hdr](./mach_assert_3x/api-4540724-hdr.md)
+- [op](./mach_assert_3x/api-4540725-op.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MPSGraphPoolingReturnIndicesMode.localFlatten2D
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Returns indices within pooling window, flattened in 2 innermost dimensions. eg: HW in NCHW.
 
@@ -17,6 +18,10 @@ Returns indices within pooling window, flattened in 2 innermost dimensions. eg: 
 
 ```swift
 case localFlatten2D
+```
+
+```c
+MPSGraphPoolingReturnIndicesLocalFlatten2D
 ```
 
 

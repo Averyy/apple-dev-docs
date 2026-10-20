@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional subtitle or secondary description.
 

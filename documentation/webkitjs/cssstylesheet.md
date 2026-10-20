@@ -1,7 +1,8 @@
 # CSSStyleSheet
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,26 +10,26 @@
 
 ## Declaration
 
-```swift
+```
 interface CSSStyleSheet
 ```
 
 ## Topics
 
 ### Instance Properties
-- [cssRules](cssstylesheet/1634473-cssrules.md)
-- [ownerRule](cssstylesheet/1634415-ownerrule.md)
-- [rules](cssstylesheet/1629485-rules.md)
+- [cssRules](./cssstylesheet/api-1634473-cssrules.md)
+- [ownerRule](./cssstylesheet/api-1634415-ownerrule.md)
+- [rules](./cssstylesheet/api-1629485-rules.md)
 ### Instance Methods
-- [addRule](cssstylesheet/1630710-addrule.md)
-- [deleteRule](cssstylesheet/1629395-deleterule.md)
-- [insertRule](cssstylesheet/1629656-insertrule.md)
-- [removeRule](cssstylesheet/1633174-removerule.md)
+- [addRule](./cssstylesheet/api-1630710-addrule.md)
+- [deleteRule](./cssstylesheet/api-1629395-deleterule.md)
+- [insertRule](./cssstylesheet/api-1629656-insertrule.md)
+- [removeRule](./cssstylesheet/api-1633174-removerule.md)
 
 ## Relationships
 
 ### Inherits From
-- [StyleSheet](stylesheet.md)
+- [StyleSheet](./stylesheet.md)
 
 
 ---

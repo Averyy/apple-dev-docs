@@ -1,7 +1,8 @@
 # externalMediaContentIdentifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier from the app’s media content catalog for the currently displayed media item.
 
@@ -18,11 +19,16 @@ A unique identifier from the app’s media content catalog for the currently dis
 var externalMediaContentIdentifier: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * externalMediaContentIdentifier;
+```
+
 ## See Also
 
-- [var appEntityIdentifier: EntityIdentifier?](nsuseractivity/appentityidentifier.md)
+### Specifying app identifiers
+- [var appEntityIdentifier: EntityIdentifier?](./appentityidentifier.md)
   The identifier of an app entity that you associate with the user activity.
-- [var targetContentIdentifier: String?](nsuseractivity/targetcontentidentifier.md)
+- [var targetContentIdentifier: String?](./targetcontentidentifier.md)
   A string that identifies the user activity’s content.
 
 

@@ -1,7 +1,8 @@
 # style
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current presentation style of the stream.
 
@@ -15,11 +16,16 @@ The current presentation style of the stream.
 var style: SCShareableContentStyle { get }
 ```
 
+```objc
+@property (nonatomic, readonly) SCShareableContentStyle style;
+```
+
 ## See Also
 
-- [var contentRect: CGRect](scshareablecontentinfo/contentrect.md)
+### Shared content properties
+- [var contentRect: CGRect](./contentrect.md)
   The size and location of content for the stream.
-- [var pointPixelScale: Float](scshareablecontentinfo/pointpixelscale.md)
+- [var pointPixelScale: Float](./pointpixelscale.md)
   The scaling from points to output pixel resolution for the stream.
 
 

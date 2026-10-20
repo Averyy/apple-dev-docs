@@ -1,7 +1,8 @@
 # ARGeoTrackingStatus.Accuracy.medium
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Geo-tracking accuracy is average.
 
@@ -15,17 +16,22 @@ Geo-tracking accuracy is average.
 case medium
 ```
 
+```c
+ARGeoTrackingAccuracyMedium
+```
+
 #### Discussion
 
 This value indicates that visual localization is complete and geo-tracking accuracy is average.
 
 ## See Also
 
-- [ARGeoTrackingStatus.Accuracy.high](argeotrackingstatus/accuracy-swift.enum/high.md)
+### Accuracies
+- [ARGeoTrackingStatus.Accuracy.high](./high.md)
   Geo-tracking accuracy is high.
-- [ARGeoTrackingStatus.Accuracy.undetermined](argeotrackingstatus/accuracy-swift.enum/undetermined.md)
+- [ARGeoTrackingStatus.Accuracy.undetermined](./undetermined.md)
   Geo-tracking accuracy is undetermined.
-- [ARGeoTrackingStatus.Accuracy.low](argeotrackingstatus/accuracy-swift.enum/low.md)
+- [ARGeoTrackingStatus.Accuracy.low](./low.md)
   Geo-tracking accuracy is low.
 
 

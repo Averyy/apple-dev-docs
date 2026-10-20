@@ -1,7 +1,8 @@
 # encode(commandBuffer:inputMatrix:resultIndexMatrix:resultValueMatrix:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 func encode(commandBuffer: any MTLCommandBuffer, inputMatrix: MPSMatrix, resultIndexMatrix: MPSMatrix, resultValueMatrix: MPSMatrix)
+```
+
+```objc
+- (void) encodeToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer inputMatrix:(MPSMatrix *) inputMatrix resultIndexMatrix:(MPSMatrix *) resultIndexMatrix resultValueMatrix:(MPSMatrix *) resultValueMatrix;
 ```
 
 

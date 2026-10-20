@@ -1,7 +1,8 @@
 # subscription
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The auto-renewable subscription to merchandise.
 
@@ -22,9 +23,9 @@ var subscription: Product { get }
 
 #### Discussion
 
-[`SubscriptionStoreControlStyleConfiguration.Option`](subscriptionstorecontrolstyleconfiguration/option.md) is a dynamic member lookup type, which code refers to as `Option` when it’s a nested type. You don’t need to use the [`subscription`](subscriptionstorecontrolstyleconfiguration/option/subscription.md) property directly to access the properties of the [`Product`](product.md) value. Instead, access any properties of [`Product`](product.md) or [`Product.SubscriptionInfo`](product/subscriptioninfo.md) directly on the `Option` value.
+[`SubscriptionStoreControlStyleConfiguration.Option`](../option.md) is a dynamic member lookup type, which code refers to as `Option` when it’s a nested type. You don’t need to use the [`subscription`](./subscription.md) property directly to access the properties of the [`Product`](../../product.md) value. Instead, access any properties of [`Product`](../../product.md) or [`Product.SubscriptionInfo`](../../product/subscriptioninfo.md) directly on the `Option` value.
 
-The following code example creates a button for each subscription option and displays its name. The [`displayName`](product/displayname.md) property is available on [`SubscriptionStoreControlStyleConfiguration.Option`](subscriptionstorecontrolstyleconfiguration/option.md) to use as the button label.
+The following code example creates a button for each subscription option and displays its name. The [`displayName`](../../product/displayname.md) property is available on [`SubscriptionStoreControlStyleConfiguration.Option`](../option.md) to use as the button label.
 
 ```swift
 struct DisplayNameButtonsControlStyle: SubscriptionStoreControlStyle {
@@ -37,13 +38,14 @@ struct DisplayNameButtonsControlStyle: SubscriptionStoreControlStyle {
 }
 ```
 
-> ❗ **Important**:  Use the [`subscribe()`](subscriptionstorecontrolstyleconfiguration/option/subscribe().md) method on the [`SubscriptionStoreControlStyleConfiguration.Option`](subscriptionstorecontrolstyleconfiguration/option.md) value when a customer initiates a purchase. Don’t use [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-6dj6y.md) or related purchase methods on this property for initiating a purchase.
+> ❗ **Important**:  Use the [`subscribe()`](./subscribe%28%29.md) method on the [`SubscriptionStoreControlStyleConfiguration.Option`](../option.md) value when a customer initiates a purchase. Don’t use [`purchase(confirmIn:options:)`](../../product/purchase%28confirmin,options%29-6dj6y.md) or related purchase methods on this property for initiating a purchase.
 
 ## See Also
 
-- [var id: Product.ID](subscriptionstorecontrolstyleconfiguration/option/id.md)
+### Getting the subscription product and offer
+- [var id: Product.ID](./id.md)
   The product ID of the auto-renewable subscription.
-- [var activeOffer: Product.SubscriptionOffer?](subscriptionstorecontrolstyleconfiguration/option/activeoffer.md)
+- [var activeOffer: Product.SubscriptionOffer?](./activeoffer.md)
   The subscription offer the customer is eligible for, and that applies to the subscription option.
 
 

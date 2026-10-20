@@ -1,7 +1,8 @@
 # CMIOExtensionStreamFormat
 
 **Framework**: Core Media I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes the format of a media stream.
 
@@ -15,42 +16,47 @@ An object that describes the format of a media stream.
 class CMIOExtensionStreamFormat
 ```
 
+```objc
+@interface CMIOExtensionStreamFormat : NSObject
+```
+
 ## Topics
 
 ### Creating a Stream Format
-- [convenience init(formatDescription: CMFormatDescription, maxFrameDuration: CMTime, minFrameDuration: CMTime, validFrameDurations: [CMTime]?)](cmioextensionstreamformat/init(formatdescription:maxframeduration:minframeduration:validframedurations:).md)
+- [convenience init(formatDescription: CMFormatDescription, maxFrameDuration: CMTime, minFrameDuration: CMTime, validFrameDurations: [CMTime]?)](./cmioextensionstreamformat/init%28formatdescription,maxframeduration,minframeduration,validframedurations%29.md)
   Creates a stream format with a format description and frame durations.
 ### Configuring Frame Durations
-- [var minFrameDuration: CMTime](cmioextensionstreamformat/minframeduration.md)
+- [var minFrameDuration: CMTime](./cmioextensionstreamformat/minframeduration.md)
   The minimum frame duration a stream supports.
-- [var maxFrameDuration: CMTime](cmioextensionstreamformat/maxframeduration.md)
+- [var maxFrameDuration: CMTime](./cmioextensionstreamformat/maxframeduration.md)
   The maximum duration a stream supports.
-- [var validFrameDurations: [CMTime]?](cmioextensionstreamformat/validframedurations-707st.md)
+- [var validFrameDurations: [CMTime]?](./cmioextensionstreamformat/validframedurations-707st.md)
   An array of frame durations the stream supports.
 ### Accessing the Format Description
-- [var formatDescription: CMFormatDescription](cmioextensionstreamformat/formatdescription.md)
+- [var formatDescription: CMFormatDescription](./cmioextensionstreamformat/formatdescription.md)
   A description of the format of the stream’s media samples.
 ### Initializers
-- [init?(coder: NSCoder)](cmioextensionstreamformat/init(coder:).md)
+- [init?(coder: NSCoder)](./cmioextensionstreamformat/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var formats: [CMIOExtensionStreamFormat]](cmioextensionstreamsource/formats.md)
+### Accessing the Source Format
+- [var formats: [CMIOExtensionStreamFormat]](./cmioextensionstreamsource/formats.md)
   An array of formats that a stream supports.
 
 

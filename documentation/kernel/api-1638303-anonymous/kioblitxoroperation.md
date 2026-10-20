@@ -1,14 +1,15 @@
 # kIOBlitXorOperation
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOBlitXorOperation = 0x00020000 | kIOBlitTypeOperationType0
 ```
 

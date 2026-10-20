@@ -1,7 +1,8 @@
 # hasTolls
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a route has tolls.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether a route has tolls.
 
 ## Declaration
 
-```swift
+```
 hasTolls: boolean | null;
 ```
 
@@ -20,15 +21,16 @@ When `true`, this route has tolls. If `false`, this route doesn’t have any tol
 
 ## See Also
 
-- [steps](route/steps.md)
+### Route details
+- [steps](./steps.md)
   An array of steps that compose the overall route.
-- [name](route/name.md)
+- [name](./name.md)
   The name assigned to the route.
-- [distance](route/distance.md)
+- [distance](./distance.md)
   The route distance, in meters.
-- [expectedTravelTime](route/expectedtraveltime.md)
+- [expectedTravelTime](./expectedtraveltime.md)
   The expected travel time, in seconds.
-- [transportType](route/transporttype.md)
+- [transportType](./transporttype.md)
   The overall route transport type.
 
 

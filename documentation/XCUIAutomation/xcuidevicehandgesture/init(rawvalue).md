@@ -1,10 +1,11 @@
 # init(rawValue:)
 
 **Framework**: XCUIAutomation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- watchOS ?+
+- watchOS
 - Xcode 16.3+
 
 ## Declaration

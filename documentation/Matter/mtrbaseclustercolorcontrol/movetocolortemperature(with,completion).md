@@ -1,7 +1,8 @@
 # moveToColorTemperature(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func moveToColorTemperature(with params: MTRColorControlClusterMoveToColorTemperatureParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func moveToColorTemperature(with params: MTRColorControlClusterMoveToColorTemperatureParams) async throws
+```
+
+```objc
+- (void) moveToColorTemperatureWithParams:(MTRColorControlClusterMoveToColorTemperatureParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

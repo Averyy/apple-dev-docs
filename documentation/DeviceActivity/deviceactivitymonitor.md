@@ -1,7 +1,8 @@
 # DeviceActivityMonitor
 
 **Framework**: Device Activity  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The object that monitors scheduled device activity.
 
@@ -43,34 +44,34 @@ class MyMonitorExtension: DeviceActivityMonitor {
 ## Topics
 
 ### Configuring a Monitor
-- [init()](deviceactivitymonitor/init.md)
+- [init()](./deviceactivitymonitor/init%28%29.md)
   Creates a new monitor instance implemented by subclasses.
 ### Monitoring Scheduled Intervals
-- [func intervalDidEnd(for: DeviceActivityName)](deviceactivitymonitor/intervaldidend(for:).md)
+- [func intervalDidEnd(for: DeviceActivityName)](./deviceactivitymonitor/intervaldidend%28for%29.md)
   Indicates that the device activity interval ended.
-- [func intervalDidStart(for: DeviceActivityName)](deviceactivitymonitor/intervaldidstart(for:).md)
+- [func intervalDidStart(for: DeviceActivityName)](./deviceactivitymonitor/intervaldidstart%28for%29.md)
   Indicates that the device activity interval started.
-- [func intervalWillEndWarning(for: DeviceActivityName)](deviceactivitymonitor/intervalwillendwarning(for:).md)
+- [func intervalWillEndWarning(for: DeviceActivityName)](./deviceactivitymonitor/intervalwillendwarning%28for%29.md)
   Warns your app of an ongoing activity’s conclusion a specified time before the activity ends.
-- [func intervalWillStartWarning(for: DeviceActivityName)](deviceactivitymonitor/intervalwillstartwarning(for:).md)
+- [func intervalWillStartWarning(for: DeviceActivityName)](./deviceactivitymonitor/intervalwillstartwarning%28for%29.md)
   Warns your app of an upcoming activity a specified time before the activity starts.
 ### Monitoring Event Thresholds
-- [func eventDidReachThreshold(DeviceActivityEvent.Name, activity: DeviceActivityName)](deviceactivitymonitor/eventdidreachthreshold(_:activity:).md)
+- [func eventDidReachThreshold(DeviceActivityEvent.Name, activity: DeviceActivityName)](./deviceactivitymonitor/eventdidreachthreshold%28_,activity%29.md)
   Indicates that the activity reached its threshold.
-- [func eventWillReachThresholdWarning(DeviceActivityEvent.Name, activity: DeviceActivityName)](deviceactivitymonitor/eventwillreachthresholdwarning(_:activity:).md)
+- [func eventWillReachThresholdWarning(DeviceActivityEvent.Name, activity: DeviceActivityName)](./deviceactivitymonitor/eventwillreachthresholdwarning%28_,activity%29.md)
   Warns your app that an activity is about to reach its threshold.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

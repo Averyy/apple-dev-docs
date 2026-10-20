@@ -1,7 +1,8 @@
 # contextForSegue(withIdentifier:in:rowIndex:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the context object to pass to the specified interface controller when a row in a table is tapped.
 
@@ -14,15 +15,19 @@ Returns the context object to pass to the specified interface controller when a 
 func contextForSegue(withIdentifier segueIdentifier: String, in table: WKInterfaceTable, rowIndex: Int) -> Any?
 ```
 
+```objc
+- (id) contextForSegueWithIdentifier:(NSString *) segueIdentifier inTable:(WKInterfaceTable *) table rowIndex:(NSInteger) rowIndex;
+```
+
 #### Return Value
 
 The object to pass to the new interface controller. Use this object to communicate important information to the new interface controller, such as the data to display or any relevant state information. You may specify `nil` if you want, but doing so is not recommended.
 
 #### Discussion
 
-WatchKit calls this method when a segue attached to a table row is triggered. Use this method to provide the new interface controller with any contextual data it needs to display its content. The object you return is passed directly to the new interface controller’s [`awake(withContext:)`](wkinterfacecontroller/awake(withcontext:).md) method.
+WatchKit calls this method when a segue attached to a table row is triggered. Use this method to provide the new interface controller with any contextual data it needs to display its content. The object you return is passed directly to the new interface controller’s [`awake(withContext:)`](./awake%28withcontext%29.md) method.
 
-This method is called on your WatchKit extension’s main thread. Implementation of this method is optional but is recommended if you use segues in your storyboard file. You do not need to call `super` in your implementation. For segues originating from a button, use the [`contextsForSegue(withIdentifier:)`](wkinterfacecontroller/contextsforsegue(withidentifier:).md) method instead.
+This method is called on your WatchKit extension’s main thread. Implementation of this method is optional but is recommended if you use segues in your storyboard file. You do not need to call `super` in your implementation. For segues originating from a button, use the [`contextsForSegue(withIdentifier:)`](./contextsforsegue%28withidentifier%29.md) method instead.
 
 ## Parameters
 
@@ -32,11 +37,12 @@ This method is called on your WatchKit extension’s main thread. Implementation
 
 ## See Also
 
-- [func contextForSegue(withIdentifier: String) -> Any?](wkinterfacecontroller/contextforsegue(withidentifier:).md)
+### Managing segue-based transitions
+- [func contextForSegue(withIdentifier: String) -> Any?](./contextforsegue%28withidentifier%29.md)
   Returns the context object to pass to the specified interface controller when a button is tapped.
-- [func contextsForSegue(withIdentifier: String) -> [Any]?](wkinterfacecontroller/contextsforsegue(withidentifier:).md)
+- [func contextsForSegue(withIdentifier: String) -> [Any]?](./contextsforsegue%28withidentifier%29.md)
   Returns the context objects to pass to a page-based set of interface controllers when a button is tapped.
-- [func contextsForSegue(withIdentifier: String, in: WKInterfaceTable, rowIndex: Int) -> [Any]?](wkinterfacecontroller/contextsforsegue(withidentifier:in:rowindex:).md)
+- [func contextsForSegue(withIdentifier: String, in: WKInterfaceTable, rowIndex: Int) -> [Any]?](./contextsforsegue%28withidentifier,in,rowindex%29.md)
   Returns the context objects to pass to a page-based set of interface controllers when a row in a table is tapped.
 
 

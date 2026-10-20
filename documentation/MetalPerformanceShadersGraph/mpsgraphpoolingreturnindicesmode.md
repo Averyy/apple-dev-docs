@@ -1,7 +1,8 @@
 # MPSGraphPoolingReturnIndicesMode
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The flattening mode for returned indices with max-pooling.
 
@@ -19,39 +20,43 @@ The flattening mode for returned indices with max-pooling.
 enum MPSGraphPoolingReturnIndicesMode
 ```
 
+```c
+enum MPSGraphPoolingReturnIndicesMode : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPSGraphPoolingReturnIndicesMode.globalFlatten1D](mpsgraphpoolingreturnindicesmode/globalflatten1d.md)
+- [MPSGraphPoolingReturnIndicesMode.globalFlatten1D](./mpsgraphpoolingreturnindicesmode/globalflatten1d.md)
   Returns indices flattened in inner most (last) dimension.
-- [MPSGraphPoolingReturnIndicesMode.globalFlatten2D](mpsgraphpoolingreturnindicesmode/globalflatten2d.md)
+- [MPSGraphPoolingReturnIndicesMode.globalFlatten2D](./mpsgraphpoolingreturnindicesmode/globalflatten2d.md)
   Returns indices flattened in 2 innermost dimensions. eg: HW in NCHW.
-- [MPSGraphPoolingReturnIndicesMode.globalFlatten3D](mpsgraphpoolingreturnindicesmode/globalflatten3d.md)
+- [MPSGraphPoolingReturnIndicesMode.globalFlatten3D](./mpsgraphpoolingreturnindicesmode/globalflatten3d.md)
   Returns indices flattened in 3 innernost dimensions. eg: HWC in NHWC.
-- [MPSGraphPoolingReturnIndicesMode.globalFlatten4D](mpsgraphpoolingreturnindicesmode/globalflatten4d.md)
+- [MPSGraphPoolingReturnIndicesMode.globalFlatten4D](./mpsgraphpoolingreturnindicesmode/globalflatten4d.md)
   Returns indices flattened in 4 innermost dimensions.
-- [MPSGraphPoolingReturnIndicesMode.localFlatten1D](mpsgraphpoolingreturnindicesmode/localflatten1d.md)
+- [MPSGraphPoolingReturnIndicesMode.localFlatten1D](./mpsgraphpoolingreturnindicesmode/localflatten1d.md)
   Returns indices within pooling window, flattened in inner most dimension.
-- [MPSGraphPoolingReturnIndicesMode.localFlatten2D](mpsgraphpoolingreturnindicesmode/localflatten2d.md)
+- [MPSGraphPoolingReturnIndicesMode.localFlatten2D](./mpsgraphpoolingreturnindicesmode/localflatten2d.md)
   Returns indices within pooling window, flattened in 2 innermost dimensions. eg: HW in NCHW.
-- [MPSGraphPoolingReturnIndicesMode.localFlatten3D](mpsgraphpoolingreturnindicesmode/localflatten3d.md)
+- [MPSGraphPoolingReturnIndicesMode.localFlatten3D](./mpsgraphpoolingreturnindicesmode/localflatten3d.md)
   Returns indices within pooling window, flattened in 3 innernost dimensions. eg: HWC in NHWC.
-- [MPSGraphPoolingReturnIndicesMode.localFlatten4D](mpsgraphpoolingreturnindicesmode/localflatten4d.md)
+- [MPSGraphPoolingReturnIndicesMode.localFlatten4D](./mpsgraphpoolingreturnindicesmode/localflatten4d.md)
   Returns indices within pooling window, flattened in 4 innermost dimensions.
-- [MPSGraphPoolingReturnIndicesMode.none](mpsgraphpoolingreturnindicesmode/none.md)
+- [MPSGraphPoolingReturnIndicesMode.none](./mpsgraphpoolingreturnindicesmode/none.md)
   No indices returned.
 ### Initializers
-- [init?(rawValue: UInt)](mpsgraphpoolingreturnindicesmode/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mpsgraphpoolingreturnindicesmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

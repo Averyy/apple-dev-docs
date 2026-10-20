@@ -1,7 +1,8 @@
 # vertexCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of vertices in the input and output meshes.
 

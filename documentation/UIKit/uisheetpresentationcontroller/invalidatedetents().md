@@ -1,7 +1,8 @@
 # invalidateDetents()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the sheet to re-evaluate its detent value in the next layout pass.
 
@@ -16,13 +17,17 @@ Notifies the sheet to re-evaluate its detent value in the next layout pass.
 func invalidateDetents()
 ```
 
+```objc
+- (void) invalidateDetents;
+```
+
 #### Discussion
 
 When an external input (like a captured property) to a custom detent changes, call this method to notify the sheet to re-evaluate the detent.
 
-To animate custom detents to their new heights, call this method within [`animateChanges(_:)`](uisheetpresentationcontroller/animatechanges(_:).md).
+To animate custom detents to their new heights, call this method within [`animateChanges(_:)`](./animatechanges%28_%29.md).
 
-> **Note**:  You don’t need to call this method if [`detents`](uisheetpresentationcontroller/detents.md) only contains system detents, or if your custom detents only use information from the passed-in context.
+> **Note**:  You don’t need to call this method if [`detents`](./detents.md) only contains system detents, or if your custom detents only use information from the passed-in context.
 
 
 ---

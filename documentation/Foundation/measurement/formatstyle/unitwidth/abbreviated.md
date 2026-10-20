@@ -1,7 +1,8 @@
 # abbreviated
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An abbreviated unit width.
 
@@ -26,9 +27,10 @@ For example, `37.20 Cal` or `37,2 L`.
 
 ## See Also
 
-- [static var wide: Measurement<UnitType>.FormatStyle.UnitWidth](measurement/formatstyle/unitwidth/wide.md)
+### Unit widths
+- [static var wide: Measurement<UnitType>.FormatStyle.UnitWidth](./wide.md)
   A unit width that shows the full unit name.
-- [static var narrow: Measurement<UnitType>.FormatStyle.UnitWidth](measurement/formatstyle/unitwidth/narrow.md)
+- [static var narrow: Measurement<UnitType>.FormatStyle.UnitWidth](./narrow.md)
   The shortest unit width.
 
 

@@ -1,17 +1,22 @@
 # record(forUniqueId:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the person or group record that matches the given unique ID.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func record(forUniqueId uniqueId: String!) -> ABRecord!
+```
+
+```objc
+- (ABRecord *) recordForUniqueId:(NSString *) uniqueId;
 ```
 
 #### Return Value

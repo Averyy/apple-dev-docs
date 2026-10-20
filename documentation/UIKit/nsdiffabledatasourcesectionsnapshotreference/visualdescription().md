@@ -1,7 +1,8 @@
 # visualDescription()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string with an ASCII representation of the section snapshot.
 
@@ -16,6 +17,10 @@ Returns a string with an ASCII representation of the section snapshot.
 
 ```swift
 func visualDescription() -> String
+```
+
+```objc
+- (NSString *) visualDescription;
 ```
 
 #### Discussion

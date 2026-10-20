@@ -1,7 +1,8 @@
 # init(alignment:spacing:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance with the given spacing and horizontal alignment.
 

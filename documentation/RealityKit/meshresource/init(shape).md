@@ -1,7 +1,8 @@
 # init(shape:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Generates a MeshResource from a ShapeResource.
 
@@ -18,6 +19,13 @@ Generates a MeshResource from a ShapeResource.
 ```swift
 @MainActor
 @preconcurrency convenience init(shape resource: ShapeResource)
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency convenience init(shape resource: ShapeResource) async
 ```
 
 ## Parameters

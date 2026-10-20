@@ -1,7 +1,8 @@
 # capsLock
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Caps Lock key.
 
@@ -22,19 +23,20 @@ static let capsLock: EventModifiers
 
 ## See Also
 
-- [static let all: EventModifiers](eventmodifiers/all.md)
+### Getting modifier keys
+- [static let all: EventModifiers](./all.md)
   All possible modifier keys.
-- [static let command: EventModifiers](eventmodifiers/command.md)
+- [static let command: EventModifiers](./command.md)
   The Command key.
-- [static let control: EventModifiers](eventmodifiers/control.md)
+- [static let control: EventModifiers](./control.md)
   The Control key.
-- [static let numericPad: EventModifiers](eventmodifiers/numericpad.md)
+- [static let numericPad: EventModifiers](./numericpad.md)
   Any key on the numeric keypad.
-- [static let option: EventModifiers](eventmodifiers/option.md)
+- [static let option: EventModifiers](./option.md)
   The Option key.
-- [static let shift: EventModifiers](eventmodifiers/shift.md)
+- [static let shift: EventModifiers](./shift.md)
   The Shift key.
-- [static let function: EventModifiers](eventmodifiers/function.md)
+- [static let function: EventModifiers](./function.md)
   The Function key.
 
 

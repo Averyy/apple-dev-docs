@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct AsyncPendingTrans {
     ...
 };
@@ -17,10 +17,10 @@ struct AsyncPendingTrans {
 ## Topics
 
 ### Instance Properties
-- [fAltHandler](asyncpendingtrans/1457006-falthandler.md)
-- [fHandler](asyncpendingtrans/1457337-fhandler.md)
-- [fInUse](asyncpendingtrans/1457313-finuse.md)
-- [fTCode](asyncpendingtrans/1457111-ftcode.md)
+- [fAltHandler](./asyncpendingtrans/api-1457006-falthandler.md)
+- [fHandler](./asyncpendingtrans/api-1457337-fhandler.md)
+- [fInUse](./asyncpendingtrans/api-1457313-finuse.md)
+- [fTCode](./asyncpendingtrans/api-1457111-ftcode.md)
 
 
 ---

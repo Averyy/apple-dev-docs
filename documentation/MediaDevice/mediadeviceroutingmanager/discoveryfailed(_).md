@@ -1,7 +1,8 @@
 # discoveryFailed(_:)
 
 **Framework**: Media Device  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports a discovery failure to the system, indicating that the extension was unable to search for devices.
 
@@ -19,7 +20,7 @@ final func discoveryFailed(_ error: MediaDeviceError)
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 #### Discussion
 

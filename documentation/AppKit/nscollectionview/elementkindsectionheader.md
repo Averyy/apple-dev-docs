@@ -1,7 +1,8 @@
 # elementKindSectionHeader
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A supplementary view that acts as a header for a given section.
 
@@ -14,11 +15,16 @@ A supplementary view that acts as a header for a given section.
 class let elementKindSectionHeader: String
 ```
 
+```c
+extern NSCollectionViewSupplementaryElementKind const NSCollectionElementKindSectionHeader;
+```
+
 ## See Also
 
-- [class let elementKindInterItemGapIndicator: String](nscollectionview/elementkindinteritemgapindicator.md)
+### Type Properties
+- [class let elementKindInterItemGapIndicator: String](./elementkindinteritemgapindicator.md)
   The element kind string assigned to the attributes object when it represents an inter-item gap.
-- [class let elementKindSectionFooter: String](nscollectionview/elementkindsectionfooter.md)
+- [class let elementKindSectionFooter: String](./elementkindsectionfooter.md)
   A supplementary view that acts as a footer for a given section.
 
 

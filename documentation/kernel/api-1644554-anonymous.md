@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : int {
     ...
 };
@@ -17,13 +18,13 @@ enum : int {
 ## Topics
 
 ### Constants
-- [kTimingChangeRestrictedErr](1644554-anonymous/ktimingchangerestrictederr.md)
-- [kVideoBufferSizeErr](1644554-anonymous/kvideobuffersizeerr.md)
-- [kVideoCannotMirrorErr](1644554-anonymous/kvideocannotmirrorerr.md)
-- [kVideoI2CBusyErr](1644554-anonymous/kvideoi2cbusyerr.md)
-- [kVideoI2CReplyPendingErr](1644554-anonymous/kvideoi2creplypendingerr.md)
-- [kVideoI2CTransactionErr](1644554-anonymous/kvideoi2ctransactionerr.md)
-- [kVideoI2CTransactionTypeErr](1644554-anonymous/kvideoi2ctransactiontypeerr.md)
+- [kTimingChangeRestrictedErr](./api-1644554-anonymous/ktimingchangerestrictederr.md)
+- [kVideoBufferSizeErr](./api-1644554-anonymous/kvideobuffersizeerr.md)
+- [kVideoCannotMirrorErr](./api-1644554-anonymous/kvideocannotmirrorerr.md)
+- [kVideoI2CBusyErr](./api-1644554-anonymous/kvideoi2cbusyerr.md)
+- [kVideoI2CReplyPendingErr](./api-1644554-anonymous/kvideoi2creplypendingerr.md)
+- [kVideoI2CTransactionErr](./api-1644554-anonymous/kvideoi2ctransactionerr.md)
+- [kVideoI2CTransactionTypeErr](./api-1644554-anonymous/kvideoi2ctransactiontypeerr.md)
 
 
 ---

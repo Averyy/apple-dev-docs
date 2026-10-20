@@ -1,7 +1,8 @@
 # withStream(wrapping:_:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calls the given closure with an archive stream instance mapped to an object that conforms to the archive stream protocol.
 
@@ -11,7 +12,7 @@ Calls the given closure with an archive stream instance mapped to an object that
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -31,7 +32,8 @@ The result of the closure.
 
 ## See Also
 
-- [static func customStream<C>(instance: C) -> ArchiveStream?](archivestream/customstream(instance:).md)
+### Using Custom Streams
+- [static func customStream<C>(instance: C) -> ArchiveStream?](./customstream%28instance%29.md)
   Returns a new archive stream instance mapped to an object that conforms to the archive stream protocol.
 
 

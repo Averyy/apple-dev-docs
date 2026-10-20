@@ -1,7 +1,8 @@
 # cameraSystemBaseline
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the distance between centers of the lenses of the camera system that created the video.
 
@@ -25,11 +26,12 @@ The distance is in micrometers or thousandths of a millimeter. Can be nil if the
 
 ## See Also
 
-- [var cameraCalibrationDataLensCollection: CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection?](avspatialvideoconfiguration-swift.struct/cameracalibrationdatalenscollection.md)
+### Modifying the configuration
+- [var cameraCalibrationDataLensCollection: CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection?](./cameracalibrationdatalenscollection.md)
   Specifies intrinsic and extrinsic parameters for single or multiple lenses.
-- [var disparityAdjustment: Int32?](avspatialvideoconfiguration-swift.struct/disparityadjustment.md)
+- [var disparityAdjustment: Int32?](./disparityadjustment.md)
   Specifies a relative shift of the left and right images, which changes the zero parallax plane.
-- [var horizontalFieldOfView: UInt32?](avspatialvideoconfiguration-swift.struct/horizontalfieldofview.md)
+- [var horizontalFieldOfView: UInt32?](./horizontalfieldofview.md)
   Specifies horizontal field of view in thousandths of a degree. Can be nil if the value is unknown.
 
 

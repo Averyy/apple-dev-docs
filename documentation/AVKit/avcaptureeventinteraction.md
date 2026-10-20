@@ -1,7 +1,8 @@
 # AVCaptureEventInteraction
 
 **Framework**: AVKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that registers handlers to respond to capture events from system hardware buttons.
 
@@ -17,11 +18,15 @@ An object that registers handlers to respond to capture events from system hardw
 class AVCaptureEventInteraction
 ```
 
+```objc
+@interface AVCaptureEventInteraction : NSObject
+```
+
 #### Overview
 
 The system Camera app allows people to perform capture functions by pressing hardware buttons on their iOS device. UIKit apps can add similar functionality by using this type to register handlers that respond to interactions from device hardware.
 
-> **Note**:  In SwiftUI, respond to capture events from hardware buttons using [`onCameraCaptureEvent(isEnabled:action:)`](https://developer.apple.com/documentation/swiftui/view/oncameracaptureevent(isenabled:action:)) and [`onCameraCaptureEvent(isEnabled:primaryAction:secondaryAction:)`](https://developer.apple.com/documentation/swiftui/view/oncameracaptureevent(isenabled:primaryaction:secondaryaction:)) instead.
+> **Note**:  In SwiftUI, respond to capture events from hardware buttons using [`onCameraCaptureEvent(isEnabled:action:)`](../SwiftUI/view/oncameracaptureevent%28isenabled,action%29.md) and [`onCameraCaptureEvent(isEnabled:primaryAction:secondaryAction:)`](../SwiftUI/view/oncameracaptureevent%28isenabled,primaryaction,secondaryaction%29.md) instead.
 
 The following example shows how to add a handler that captures a photo when a user presses a hardware button on their device.
 
@@ -57,43 +62,46 @@ class CameraViewController: UIViewController {
 
 The event handler queries the capture event to determine its phase, and when the interaction ends, captures a photo.
 
-> ❗ **Important**:  You can only use this API for capture use cases. The system sends capture events only to apps that actively use the camera. Backgrounded capture apps, and apps not performing capture, don’t receive events. Adopting this API overrides default hardware button behavior, so apps must always respond appropriately to any events received. Failing to handle events results in a nonfunctional button that provides a poor user experience. If your app is temporarily unable to handle events, disable the interaction by setting its [`isEnabled`](avcaptureeventinteraction/isenabled.md) property to `false`, which restores the system button behavior.
+> ❗ **Important**:  You can only use this API for capture use cases. The system sends capture events only to apps that actively use the camera. Backgrounded capture apps, and apps not performing capture, don’t receive events.
+>
+> Adopting this API overrides default hardware button behavior, so apps must always respond appropriately to any events received. Failing to handle events results in a nonfunctional button that provides a poor user experience. If your app is temporarily unable to handle events, disable the interaction by setting its [`isEnabled`](./avcaptureeventinteraction/isenabled.md) property to `false`, which restores the system button behavior.
 
 ## Topics
 
 ### Creating an interaction
-- [init(handler: (AVCaptureEvent) -> Void)](avcaptureeventinteraction/init(handler:).md)
+- [init(handler: (AVCaptureEvent) -> Void)](./avcaptureeventinteraction/init%28handler%29.md)
   Creates a capture event interaction with a handler that responds to presses of hardware buttons.
-- [init(primary: (AVCaptureEvent) -> Void, secondary: (AVCaptureEvent) -> Void)](avcaptureeventinteraction/init(primary:secondary:).md)
+- [init(primary: (AVCaptureEvent) -> Void, secondary: (AVCaptureEvent) -> Void)](./avcaptureeventinteraction/init%28primary,secondary%29.md)
   Creates a capture event interaction with handlers that respond independently to presses of hardware buttons.
 ### Inspecting the interaction
-- [var isEnabled: Bool](avcaptureeventinteraction/isenabled.md)
+- [var isEnabled: Bool](./avcaptureeventinteraction/isenabled.md)
   A Boolean value that indicates whether this capture event interaction is in an enabled state.
-- [class var defaultCaptureSoundDisabled: Bool](avcaptureeventinteraction/defaultcapturesounddisabled.md)
+- [class var defaultCaptureSoundDisabled: Bool](./avcaptureeventinteraction/defaultcapturesounddisabled.md)
   A Boolean value that indicates whether the default sound is in a disabled state.
 ### Initializers
-- [init(eventHandler: (AVCaptureEvent) -> Void)](avcaptureeventinteraction/init(eventhandler:).md)
-- [init(primaryEventHandler: (AVCaptureEvent) -> Void, secondaryEventHandler: (AVCaptureEvent) -> Void)](avcaptureeventinteraction/init(primaryeventhandler:secondaryeventhandler:).md)
+- [init(eventHandler: (AVCaptureEvent) -> Void)](./avcaptureeventinteraction/init%28eventhandler%29.md)
+- [init(primaryEventHandler: (AVCaptureEvent) -> Void, secondaryEventHandler: (AVCaptureEvent) -> Void)](./avcaptureeventinteraction/init%28primaryeventhandler,secondaryeventhandler%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UIInteraction](../uikit/uiinteraction.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UIInteraction](../UIKit/uiinteraction.md)
 
 ## See Also
 
-- [class AVCaptureEvent](avcaptureevent.md)
+### Capture events
+- [class AVCaptureEvent](./avcaptureevent.md)
   An object that describes a user interaction with a system hardware button.
-- [class AVCaptureEventSound](avcaptureeventsound.md)
+- [class AVCaptureEventSound](./avcaptureeventsound.md)
   A sound object for a capture event.
 
 

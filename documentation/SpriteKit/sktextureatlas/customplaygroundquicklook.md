@@ -1,18 +1,21 @@
 # customPlaygroundQuickLook
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom playground quick look for this instance.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
+
+> **Deprecated**: SKTextureAtlas.customPlaygroundQuickLook will be removed in a future Swift version
 
 ## Declaration
 

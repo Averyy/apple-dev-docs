@@ -1,7 +1,8 @@
 # reverse
 
 **Framework**: OSLog  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Tells the framework to iterate backwards.
 
@@ -18,6 +19,10 @@ Tells the framework to iterate backwards.
 
 ```swift
 static var reverse: OSLogEnumerator.Options { get }
+```
+
+```c
+OSLogEnumeratorReverse
 ```
 
 #### Discussion

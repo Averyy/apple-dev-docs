@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 6.0+
@@ -17,9 +18,14 @@
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init?(coder: NSCoder)](nstextblock/init(coder:).md)
+### Initializing a text block
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

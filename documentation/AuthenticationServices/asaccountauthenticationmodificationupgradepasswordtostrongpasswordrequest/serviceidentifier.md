@@ -1,7 +1,8 @@
 # serviceIdentifier
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier that represents a particular service that the user needs a credential for, like a web site.
 
@@ -17,13 +18,18 @@ An identifier that represents a particular service that the user needs a credent
 var serviceIdentifier: ASCredentialServiceIdentifier { get }
 ```
 
+```objc
+@property (nonatomic, readonly) ASCredentialServiceIdentifier * serviceIdentifier;
+```
+
 ## See Also
 
-- [init(user: String, serviceIdentifier: ASCredentialServiceIdentifier, userInfo: [AnyHashable : Any]?)](asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest/init(user:serviceidentifier:userinfo:).md)
+### Creating Upgrade Requests in Your App
+- [init(user: String, serviceIdentifier: ASCredentialServiceIdentifier, userInfo: [AnyHashable : Any]?)](./init%28user,serviceidentifier,userinfo%29.md)
   Creates a request to upgrade from using a weak password to using a strong system-generated password.
-- [var user: String](asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest/user.md)
+- [var user: String](./user.md)
   The user name of the account to upgrade.
-- [var userInfo: [AnyHashable : Any]?](asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   A dictionary that contains values to pass to your account modification extension.
 
 

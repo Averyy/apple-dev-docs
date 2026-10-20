@@ -1,11 +1,12 @@
 # DocumentLinks
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object DocumentLinks
 ```
 
@@ -15,11 +16,12 @@ object DocumentLinks
 
 ## See Also
 
-- [object PagedDocumentLinks](pageddocumentlinks.md)
+### Objects
+- [object PagedDocumentLinks](./pageddocumentlinks.md)
   Links related to the response document, including paging links.
-- [object PagingInformation](paginginformation.md)
+- [object PagingInformation](./paginginformation.md)
   Paging information for data responses.
-- [object ResourceLinks](resourcelinks.md)
+- [object ResourceLinks](./resourcelinks.md)
 
 
 ---

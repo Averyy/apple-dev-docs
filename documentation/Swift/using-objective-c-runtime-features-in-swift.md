@@ -1,6 +1,7 @@
 # Using Objective-C Runtime Features in Swift
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Use selectors and key paths to interact with dynamic Objective-C APIs.
 
@@ -8,11 +9,11 @@ Use selectors and key paths to interact with dynamic Objective-C APIs.
 
 Some Objective-C APIs—like target-action—accept method or property names as parameters, then use those names to dynamically call or access the methods or properties. In Swift, you use the `#selector` and `#keyPath` expressions to represent those method or property names as selectors or key paths, respectively.
 
-##### Use Selectors to Arrange Calls to Objective C Methods
+##### Use Selectors to Arrange Calls to Objective-C Methods
 
-In Objective-C, a selector is a type that refers to the name of an Objective-C method. In Swift, Objective-C selectors are represented by the [`Selector`](https://developer.apple.com/documentation/objectivec/selector) structure, and you create them using the `#selector` expression.
+In Objective-C, a selector is a type that refers to the name of an Objective-C method. In Swift, Objective-C selectors are represented by the [`Selector`](../ObjectiveC/selector.md) structure, and you create them using the `#selector` expression.
 
-In Swift, you create a selector for an Objective-C method by placing the name of the method within the `#selector` expression: `#selector(MyViewController.tappedButton(_:))`. To construct a selector for a property’s Objective-C getter or setter method, prefix the property name using the `getter:` or `setter:` label, like `#selector(getter: MyViewController.myButton)`. The example below shows a selector being used as part of the target-action pattern to call a method in response to the [`touchUpInside`](https://developer.apple.com/documentation/uikit/uicontrol/event/touchupinside) event.
+In Swift, you create a selector for an Objective-C method by placing the name of the method within the `#selector` expression: `#selector(MyViewController.tappedButton(_:))`. To construct a selector for a property’s Objective-C getter or setter method, prefix the property name using the `getter:` or `setter:` label, like `#selector(getter: MyViewController.myButton)`. The example below shows a selector being used as part of the target-action pattern to call a method in response to the [`touchUpInside`](../UIKit/uicontrol/event/touchupinside.md) event.
 
 ```swift
 import UIKit
@@ -37,13 +38,13 @@ class MyViewController: UIViewController {
 
 If you need to disambiguate between overloaded functions, use parenthesized expressions along with the `as` operator to make the `#selector` expression refer unambiguously to a specific overload.
 
-##### Use Key Paths to Dynamically Access Objective C Properties
+##### Use Key Paths to Dynamically Access Objective-C Properties
 
 In Objective-C, a key is a string that identifies a specific property of an object. A key path is a string of dot-separated keys that specifies a sequence of object properties to traverse. Keys and key paths are frequently used for key-value coding (KVC), a mechanism for indirectly accessing an object’s attributes and relationships using string identifiers.
 
-> ❗ **Important**: Objective-C key paths are distinct from, but related to, key-path expressions in Swift. For information about key-path expressions, see [`Key-Path Expression`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/expressions#Key-Path-Expression) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/).
+> ❗ **Important**: Objective-C key paths are distinct from, but related to, key-path expressions in Swift. For information about key-path expressions, see [Key-Path Expression](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/expressions#Key-Path-Expression) in [The Swift Programming Language](https://docs.swift.org/swift-book/).
 
-You use the `#keyPath` string expression to create compiler-checked keys and key paths that can be used by KVC methods like [`value(forKey:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/value(forkey:)) and [`value(forKeyPath:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/value(forkeypath:)). The `#keyPath` string expression accepts chained method or property references. It also supports chaining through optional values within a chain, such as `#keyPath(Person.bestFriend.name)`. Key paths created using the `#keyPath` string expression don’t pass type information about the properties or methods they reference to the APIs that accept key paths.
+You use the `#keyPath` string expression to create compiler-checked keys and key paths that can be used by KVC methods like [`value(forKey:)`](../ObjectiveC/nsobject-swift.class/value%28forkey%29.md) and [`value(forKeyPath:)`](../ObjectiveC/nsobject-swift.class/value%28forkeypath%29.md). The `#keyPath` string expression accepts chained method or property references. It also supports chaining through optional values within a chain, such as `#keyPath(Person.bestFriend.name)`. Key paths created using the `#keyPath` string expression don’t pass type information about the properties or methods they reference to the APIs that accept key paths.
 
 The example below defines a `Person` class, creates two instances of it, and uses several `#keyPath` string expressions to access properties and properties of those properties:
 
@@ -80,17 +81,18 @@ gabrielle.value(forKeyPath: #keyPath(Person.friends.name))
 
 ## See Also
 
-- [Objective-C and C Code Customization](objective-c-and-c-code-customization.md)
+### Language Interoperability with Objective-C and C
+- [Objective-C and C Code Customization](./objective-c-and-c-code-customization.md)
   Apply macros to your Objective-C APIs to customize how they’re imported into Swift.
-- [Migrating Your Objective-C Code to Swift](migrating-your-objective-c-code-to-swift.md)
+- [Migrating Your Objective-C Code to Swift](./migrating-your-objective-c-code-to-swift.md)
   Learn the recommended steps to migrate your code.
-- [Cocoa Design Patterns](cocoa-design-patterns.md)
+- [Cocoa Design Patterns](./cocoa-design-patterns.md)
   Adopt and interoperate with Cocoa design patterns in your Swift apps.
-- [Handling Dynamically Typed Methods and Objects in Swift](handling-dynamically-typed-methods-and-objects-in-swift.md)
+- [Handling Dynamically Typed Methods and Objects in Swift](./handling-dynamically-typed-methods-and-objects-in-swift.md)
   Cast instances of the Objective-C `id` type to a specific Swift type.
-- [Imported C and Objective-C APIs](imported-c-and-objective-c-apis.md)
+- [Imported C and Objective-C APIs](./imported-c-and-objective-c-apis.md)
   Use native Swift syntax to interoperate with types and functions in C and Objective-C.
-- [Calling Objective-C APIs Asynchronously](calling-objective-c-apis-asynchronously.md)
+- [Calling Objective-C APIs Asynchronously](./calling-objective-c-apis-asynchronously.md)
   Learn how functions and methods that take a completion handler are converted to Swift asynchronous functions.
 
 

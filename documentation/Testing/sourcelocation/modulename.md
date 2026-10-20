@@ -1,18 +1,19 @@
 # moduleName
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the module containing the source file.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -24,17 +25,18 @@ var moduleName: String { get }
 
 #### Discussion
 
-The name of the module is derived from this instance’s [`fileID`](sourcelocation/fileid.md) property. It consists of the substring of the file ID up to the first forward-slash character (`"/"`.) For example, if the value of this instance’s [`fileID`](sourcelocation/fileid.md) property is `"FoodTruck/WheelTests.swift"`, the module name is `"FoodTruck"`.
+The name of the module is derived from this instance’s [`fileID`](./fileid.md) property. It consists of the substring of the file ID up to the first forward-slash character (`"/"`.) For example, if the value of this instance’s [`fileID`](./fileid.md) property is `"FoodTruck/WheelTests.swift"`, the module name is `"FoodTruck"`.
 
-The structure of file IDs is described in the documentation for the [`#fileID`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/fileID()) macro in the Swift standard library.
+The structure of file IDs is described in the documentation for the [#fileID](../../Swift/fileid%28%29.md) macro in the Swift standard library.
 
 ## See Also
 
-- [var fileID: String](sourcelocation/fileid.md)
+### Related Documentation
+- [var fileID: String](./fileid.md)
   The file ID of the source file.
-- [var fileName: String](sourcelocation/filename.md)
+- [var fileName: String](./filename.md)
   The name of the source file.
-- [#fileID](https://developer.apple.comhttps://developer.apple.com/documentation/swift/fileID())
+- [#fileID](../../Swift/fileid%28%29.md)
 
 
 ---

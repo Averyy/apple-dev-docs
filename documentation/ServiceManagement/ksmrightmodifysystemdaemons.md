@@ -1,7 +1,8 @@
 # kSMRightModifySystemDaemons
 
 **Framework**: Service Management  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The authorization rights key for modifying system daemons.
 
@@ -15,9 +16,14 @@ The authorization rights key for modifying system daemons.
 var kSMRightModifySystemDaemons: String { get }
 ```
 
+```c
+#define kSMRightModifySystemDaemons
+```
+
 ## See Also
 
-- [var kSMRightBlessPrivilegedHelper: String](ksmrightblessprivilegedhelper.md)
+### Constants
+- [var kSMRightBlessPrivilegedHelper: String](./ksmrightblessprivilegedhelper.md)
   The authorization rights key for approving and installing a privileged helper tool.
 
 

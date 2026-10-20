@@ -1,7 +1,8 @@
 # sender
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that performed the unwind action.
 
@@ -18,15 +19,20 @@ The object that performed the unwind action.
 var sender: Any? { get }
 ```
 
+```objc
+@property (readonly, nullable) id sender;
+```
+
 #### Discussion
 
 Use this property to determine which object in your interface triggered the unwind segue.
 
 ## See Also
 
-- [var source: UIViewController](uistoryboardunwindseguesource/source.md)
+### Getting the unwind segue attributes
+- [var source: UIViewController](./source.md)
   The view controller being dismissed by the unwind segue.
-- [var unwindAction: Selector](uistoryboardunwindseguesource/unwindaction.md)
+- [var unwindAction: Selector](./unwindaction.md)
   The action method associated with the unwind segue.
 
 

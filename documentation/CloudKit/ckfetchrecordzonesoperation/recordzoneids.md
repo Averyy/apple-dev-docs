@@ -1,7 +1,8 @@
 # recordZoneIDs
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The IDs of the record zones to retrieve.
 
@@ -10,7 +11,7 @@ The IDs of the record zones to retrieve.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,11 +21,15 @@ The IDs of the record zones to retrieve.
 var recordZoneIDs: [CKRecordZone.ID]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<CKRecordZoneID *> * recordZoneIDs;
+```
+
 #### Discussion
 
 Use this property to view or change the IDs of the record zones you want to retrieve. If you intend to change the value of this property, do so before you execute the operation or submit the operation to a queue.
 
-If you use the operation that [`fetchAllRecordZonesOperation()`](ckfetchrecordzonesoperation/fetchallrecordzonesoperation().md) returns, CloudKit ignores the contents of this property and sets its value to `nil`.
+If you use the operation that [`fetchAllRecordZonesOperation()`](./fetchallrecordzonesoperation%28%29.md) returns, CloudKit ignores the contents of this property and sets its value to `nil`.
 
 
 ---

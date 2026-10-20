@@ -1,7 +1,8 @@
 # Error
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The standard error envelope that the API returns when a request fails.
 
@@ -10,7 +11,7 @@ The standard error envelope that the API returns when a request fails.
 
 ## Declaration
 
-```swift
+```
 object Error
 ```
 
@@ -18,7 +19,7 @@ object Error
 
 The `Error` object is the standard error envelope that the API returns when a request fails.
 
-Change History endpoints use a separate, ChangeHistory-specific error object, [`ErrorMessage`](errormessage.md), whose `code` is a closed enum (`BAD_REQUEST`, `NOT_FOUND`, `NOT_AUTHED`) rather than the open string used here.
+Change History endpoints use a separate, ChangeHistory-specific error object, [`ErrorMessage`](./errormessage.md), whose `code` is a closed enum (`BAD_REQUEST`, `NOT_FOUND`, `NOT_AUTHED`) rather than the open string used here.
 
 Check `details` when you need to pinpoint exactly which part of the request was invalid, for example, a specific field value that violated a constraint or a missing required parameter.
 
@@ -44,15 +45,16 @@ Check `details` when you need to pinpoint exactly which part of the request was 
 
 - `code` (string) *(required)*: The reason the API rejected the request (such as `INVALID_ARGUMENT` or `UNAUTHORIZED`).
 - `message` (string): A human-readable error summary of what went wrong at the request level.
-- `details` ([ErrorDetail]): An array of zero or more error details objects that describe specific field-level or request-level violations. See [`ErrorDetail`](errordetail.md).
+- `details` ([ErrorDetail]): An array of zero or more error details objects that describe specific field-level or request-level violations. See [`ErrorDetail`](./errordetail.md).
 
 ## See Also
 
-- [object ErrorDetail](errordetail.md)
+### Error Responses
+- [object ErrorDetail](./errordetail.md)
   Field-level or request-level detail for a specific part of a failed API request.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   Certain endpoints return this envelope, which wraps an `Error` object, when a request fails.
-- [object Info](info.md)
+- [object Info](./info.md)
   Additional context that supplements an error detail’s message, varying by endpoint and error type.
 
 

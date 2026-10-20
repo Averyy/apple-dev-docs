@@ -1,7 +1,8 @@
 # safeArea(cornerAdaptation:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - macOS 26.0+

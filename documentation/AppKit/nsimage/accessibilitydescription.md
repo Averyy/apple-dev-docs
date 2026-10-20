@@ -1,7 +1,8 @@
 # accessibilityDescription
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image’s accessibility description.
 
@@ -12,6 +13,10 @@ The image’s accessibility description.
 
 ```swift
 var accessibilityDescription: String? { get set }
+```
+
+```objc
+@property (copy, nullable) NSString * accessibilityDescription;
 ```
 
 #### Discussion

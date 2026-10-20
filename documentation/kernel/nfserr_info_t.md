@@ -1,14 +1,15 @@
 # nfserr_info_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct nfserr_info {
     ...
 } nfserr_info_t;
@@ -17,9 +18,9 @@ typedef struct nfserr_info {
 ## Topics
 
 ### Instance Properties
-- [nei_error](nfserr_info_t/4360159-nei_error.md)
-- [nei_index](nfserr_info_t/4360160-nei_index.md)
-- [nei_name](nfserr_info_t/4360161-nei_name.md)
+- [nei_error](./nfserr_info_t/api-4360159-nei_error.md)
+- [nei_index](./nfserr_info_t/api-4360160-nei_index.md)
+- [nei_name](./nfserr_info_t/api-4360161-nei_name.md)
 
 
 ---

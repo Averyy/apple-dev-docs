@@ -1,7 +1,8 @@
 # textureKey
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -19,7 +20,8 @@ static let textureKey: String
 
 ## See Also
 
-- [static let scaleKey: String](physicallybasedmaterial/subsurfaceradius-swift.struct/scalekey.md)
+### Accessing parameter keys
+- [static let scaleKey: String](./scalekey.md)
 
 
 ---

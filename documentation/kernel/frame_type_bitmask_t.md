@@ -1,14 +1,15 @@
 # frame_type_bitmask_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 typedef __uint128_t frame_type_bitmask_t;
 ```
 

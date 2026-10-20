@@ -1,7 +1,8 @@
 # register(_:forTextAttachmentViewProviderType:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Register the UITextAttachmentViewProviderReusePolicy for all instances of a particular subclass of NSTextAttachmentViewProvider.
 
@@ -18,13 +19,18 @@ Register the UITextAttachmentViewProviderReusePolicy for all instances of a part
 func register(_ policy: UITextAttachmentViewProviderReusePolicy, forTextAttachmentViewProviderType viewProviderType: AnyClass)
 ```
 
+```objc
+- (void) registerTextAttachmentViewProviderReusePolicy:(UITextAttachmentViewProviderReusePolicy) policy forTextAttachmentViewProviderType:(Class) viewProviderType;
+```
+
 ## Mentions
 
-- [Managing viewport layout and attachment reuse in text views](managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
+- [Managing viewport layout and attachment reuse in text views](../managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
 
 ## See Also
 
-- [struct UITextAttachmentViewProviderReusePolicy](uitextattachmentviewproviderreusepolicy.md)
+### Managing attachment view reuse
+- [struct UITextAttachmentViewProviderReusePolicy](../uitextattachmentviewproviderreusepolicy.md)
   An option set that controls whether a text view reuses attachment view providers when scrolling or editing.
 
 

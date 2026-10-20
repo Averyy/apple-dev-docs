@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The instance of your file system type that your app extension provides.
@@ -17,7 +18,8 @@ var fileSystem: Self.FileSystem { get }
 
 ## See Also
 
-- [associatedtype FileSystem : FSUnaryFileSystem, FSUnaryFileSystemOperations](unaryfilesystemextension/filesystem-swift.associatedtype.md)
+### Declaring the implemented file system
+- [associatedtype FileSystem : FSUnaryFileSystem, FSUnaryFileSystemOperations](./filesystem-swift.associatedtype.md)
   The type of file system your app extension provides.
 
 

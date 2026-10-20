@@ -1,7 +1,8 @@
 # NSFileProviderFavoriteRankUnranked
 
 **Framework**: File Provider  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A value that indicates that the item is not ranked.
 
@@ -18,21 +19,26 @@ A value that indicates that the item is not ranked.
 let NSFileProviderFavoriteRankUnranked: UInt64
 ```
 
+```c
+extern const unsigned long long NSFileProviderFavoriteRankUnranked;
+```
+
 ## See Also
 
-- [var extendedAttributes: [String : Data]](nsfileprovideritemprotocol/extendedattributes.md)
+### Managing Metadata
+- [var extendedAttributes: [String : Data]](./nsfileprovideritemprotocol/extendedattributes.md)
   The extended file attributes synced by the File Provider extension.
-- [var fileSystemFlags: NSFileProviderFileSystemFlags](nsfileprovideritemprotocol/filesystemflags.md)
+- [var fileSystemFlags: NSFileProviderFileSystemFlags](./nsfileprovideritemprotocol/filesystemflags.md)
   Flags that define an item’s on-disk properties and its appearance in the user interface.
-- [struct NSFileProviderFileSystemFlags](nsfileproviderfilesystemflags.md)
+- [struct NSFileProviderFileSystemFlags](./nsfileproviderfilesystemflags.md)
   Flags that define an item’s on-disk properties and its appearance in the user interface.
-- [var tagData: Data?](nsfileprovideritemprotocol/tagdata.md)
+- [var tagData: Data?](./nsfileprovideritemprotocol/tagdata.md)
   An abstract data blob representing the tags associated with the item.
-- [var userInfo: [AnyHashable : Any]?](nsfileprovideritemprotocol/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./nsfileprovideritemprotocol/userinfo.md)
   A property list that contains additional data about the item.
-- [var favoriteRank: NSNumber?](nsfileprovideritemprotocol/favoriterank.md)
+- [var favoriteRank: NSNumber?](./nsfileprovideritemprotocol/favoriterank.md)
   A 64-bit, unsigned integer indicating the order of the favorite item in the Favorites list.
-- [var typeAndCreator: NSFileProviderTypeAndCreator](nsfileprovideritemprotocol/typeandcreator.md)
+- [var typeAndCreator: NSFileProviderTypeAndCreator](./nsfileprovideritemprotocol/typeandcreator.md)
   The file type and creator codes for the item.
 
 

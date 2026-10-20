@@ -1,7 +1,8 @@
 # registeredSmartCardTokens
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the tokenIDs of all currently registered smart card tokens
 
@@ -15,6 +16,10 @@ Returns the tokenIDs of all currently registered smart card tokens
 
 ```swift
 var registeredSmartCardTokens: [String] { get }
+```
+
+```objc
+@property (readonly) NSArray<NSString *> * registeredSmartCardTokens;
 ```
 
 

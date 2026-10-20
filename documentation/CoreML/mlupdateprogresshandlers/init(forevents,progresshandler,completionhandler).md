@@ -1,7 +1,8 @@
 # init(forEvents:progressHandler:completionHandler:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the collection of closures an update task uses to notify your app of its progress.
 
@@ -20,6 +21,10 @@ Creates the collection of closures an update task uses to notify your app of its
 init(forEvents interestedEvents: MLUpdateProgressEvent, progressHandler: ((MLUpdateContext) -> Void)?, completionHandler: @escaping (MLUpdateContext) -> Void)
 ```
 
+```objc
+- (instancetype) initForEvents:(MLUpdateProgressEvent) interestedEvents progressHandler:(void (^)(MLUpdateContext *context)) progressHandler completionHandler:(void (^)(MLUpdateContext *context)) completionHandler;
+```
+
 ## Parameters
 
 - `interestedEvents`: The events for which the update task will call your closures for, contained in an option set.
@@ -28,9 +33,10 @@ init(forEvents interestedEvents: MLUpdateProgressEvent, progressHandler: ((MLUpd
 
 ## See Also
 
-- [struct MLUpdateProgressEvent](mlupdateprogressevent.md)
+### Creating progress handlers
+- [struct MLUpdateProgressEvent](../mlupdateprogressevent.md)
   A type of event during a model update task.
-- [class MLUpdateContext](mlupdatecontext.md)
+- [class MLUpdateContext](../mlupdatecontext.md)
   The context an update task provides to your app’s completion and update progress handlers.
 
 

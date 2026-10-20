@@ -1,7 +1,8 @@
 # ASAccountAuthenticationModificationController
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that performs a request to modify an account’s authentication properties.
 
@@ -17,9 +18,13 @@ An object that performs a request to modify an account’s authentication proper
 class ASAccountAuthenticationModificationController
 ```
 
+```objc
+@interface ASAccountAuthenticationModificationController : NSObject
+```
+
 ## Mentions
 
-- [Upgrading Account Security With an Account Authentication Modification Extension](upgrading-account-security-with-an-account-authentication-modification-extension.md)
+- [Upgrading Account Security With an Account Authentication Modification Extension](./upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
 #### Overview
 
@@ -28,39 +33,40 @@ class ASAccountAuthenticationModificationController
 ## Topics
 
 ### Initiating Security Upgrades from Your App
-- [func perform(ASAccountAuthenticationModificationRequest)](asaccountauthenticationmodificationcontroller/perform(_:).md)
+- [func perform(ASAccountAuthenticationModificationRequest)](./asaccountauthenticationmodificationcontroller/perform%28_%29.md)
   Performs a request to upgrade the authentication credentials for an account to a strong password, or to use Sign in with Apple.
-- [class ASAccountAuthenticationModificationReplacePasswordWithSignInWithAppleRequest](asaccountauthenticationmodificationreplacepasswordwithsigninwithapplerequest.md)
+- [class ASAccountAuthenticationModificationReplacePasswordWithSignInWithAppleRequest](./asaccountauthenticationmodificationreplacepasswordwithsigninwithapplerequest.md)
   A request to upgrade from using a password to using Sign in with Apple.
-- [class ASAccountAuthenticationModificationUpgradePasswordToStrongPasswordRequest](asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest.md)
+- [class ASAccountAuthenticationModificationUpgradePasswordToStrongPasswordRequest](./asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest.md)
   A request to automatically upgrade from a weak password to a strong password.
-- [class ASAccountAuthenticationModificationRequest](asaccountauthenticationmodificationrequest.md)
+- [class ASAccountAuthenticationModificationRequest](./asaccountauthenticationmodificationrequest.md)
   A request to modify an account’s authentication properties.
 ### Configuring Requests
-- [var presentationContextProvider: (any ASAccountAuthenticationModificationControllerPresentationContextProviding)?](asaccountauthenticationmodificationcontroller/presentationcontextprovider.md)
+- [var presentationContextProvider: (any ASAccountAuthenticationModificationControllerPresentationContextProviding)?](./asaccountauthenticationmodificationcontroller/presentationcontextprovider.md)
   An object that provides a presentation context for the account modification request’s user interface.
-- [var delegate: (any ASAccountAuthenticationModificationControllerDelegate)?](asaccountauthenticationmodificationcontroller/delegate.md)
+- [var delegate: (any ASAccountAuthenticationModificationControllerDelegate)?](./asaccountauthenticationmodificationcontroller/delegate.md)
   An object that receives notifications about the request’s status.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Upgrading Account Security With an Account Authentication Modification Extension](upgrading-account-security-with-an-account-authentication-modification-extension.md)
+### Automatic security upgrades
+- [Upgrading Account Security With an Account Authentication Modification Extension](./upgrading-account-security-with-an-account-authentication-modification-extension.md)
   Automatically and transparently convert accounts to Sign in with Apple or to use strong passwords for improved security.
-- [class ASAccountAuthenticationModificationViewController](asaccountauthenticationmodificationviewcontroller.md)
+- [class ASAccountAuthenticationModificationViewController](./asaccountauthenticationmodificationviewcontroller.md)
   A view controller that can upgrade user passwords to strong passwords, or convert accounts to use Sign in with Apple.
-- [class ASAccountAuthenticationModificationExtensionContext](asaccountauthenticationmodificationextensioncontext.md)
+- [class ASAccountAuthenticationModificationExtensionContext](./asaccountauthenticationmodificationextensioncontext.md)
   An object that you interact with to change an account’s password or to upgrade to Sign in with Apple.
 
 

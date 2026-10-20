@@ -1,18 +1,19 @@
 # mediaType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of media that a track presents.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The type of media that a track presents.
 var mediaType: AVMediaType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVMediaType mediaType;
+```
+
 ## See Also
 
-- [var trackID: CMPersistentTrackID](avassettrack/trackid.md)
+### Identifying an asset track
+- [var trackID: CMPersistentTrackID](./trackid.md)
   The persistent unique identifier for this track.
-- [var asset: AVAsset?](avassettrack/asset.md)
+- [var asset: AVAsset?](./asset.md)
   The asset object that contains this track.
 
 

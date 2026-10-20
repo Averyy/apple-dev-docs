@@ -1,11 +1,12 @@
 # ExpressibleByExtendedGraphemeClusterLiteral Implementations
 
-**Framework**: PackageDescription
+**Framework**: PackageDescription  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(extendedGraphemeClusterLiteral: String)](version/init(extendedgraphemeclusterliteral:).md)
+- [init(extendedGraphemeClusterLiteral: String)](./init%28extendedgraphemeclusterliteral%29.md)
   Initializes a version struct with the provided extended grapheme cluster.
 
 

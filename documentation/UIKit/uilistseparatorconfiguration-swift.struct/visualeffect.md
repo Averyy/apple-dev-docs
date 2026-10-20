@@ -1,7 +1,8 @@
 # visualEffect
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The visual effect to use for the separators of the item the configuration applies to.
 
@@ -9,7 +10,7 @@ The visual effect to use for the separators of the item the configuration applie
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,10 @@ var visualEffect: UIVisualEffect? { get set }
 
 ## See Also
 
-- [var color: UIColor](uilistseparatorconfiguration-swift.struct/color.md)
+### Configuring separator appearance
+- [var color: UIColor](./color.md)
   The color to use for the separators of the item the configuration applies to.
-- [var multipleSelectionColor: UIColor](uilistseparatorconfiguration-swift.struct/multipleselectioncolor.md)
+- [var multipleSelectionColor: UIColor](./multipleselectioncolor.md)
   The color to use for the separators of the item the configuration applies to when the item is in a multiple-selection group.
 
 

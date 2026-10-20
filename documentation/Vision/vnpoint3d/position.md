@@ -1,7 +1,8 @@
 # position
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The three-dimensional position.
 
@@ -17,6 +18,10 @@ The three-dimensional position.
 
 ```swift
 var position: simd_float4x4 { get }
+```
+
+```objc
+@property (readonly) simd_float4x4 position;
 ```
 
 

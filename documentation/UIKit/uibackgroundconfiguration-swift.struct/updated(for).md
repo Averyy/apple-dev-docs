@@ -1,7 +1,8 @@
 # updated(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a configuration for the specified state by applying the configuration’s default values for that state to any properties that you haven’t customized.
 
@@ -10,7 +11,7 @@ Generates a configuration for the specified state by applying the configuration�
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

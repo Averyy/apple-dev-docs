@@ -1,7 +1,8 @@
 # promotionalOffer(id:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sets a promotional offer for the transaction in the testing environment.
 
@@ -21,9 +22,9 @@ static func promotionalOffer(id identifier: String) -> Product.PurchaseOption
 
 #### Discussion
 
-Use this purchase option when you test your app in Xcode using [`StoreKit Test`](https://developer.apple.com/documentation/storekittest) and call [`buyProduct(identifier:options:)`](https://developer.apple.com/documentation/storekittest/sktestsession/buyproduct(identifier:options:)). This method makes it possible to test promotional offers without supplying a signature.
+Use this purchase option when you test your app in Xcode using [StoreKit Test](../../../StoreKitTest/StoreKitTest.md) and call [`buyProduct(identifier:options:)`](../../../StoreKitTest/sktestsession/buyproduct%28identifier,options%29.md). This method makes it possible to test promotional offers without supplying a signature.
 
-Set up the promotional offer identifiers that you use in this call in your StoreKit configuration file. For more information, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode).
+Set up the promotional offer identifiers that you use in this call in your StoreKit configuration file. For more information, see [Setting up StoreKit Testing in Xcode](../../../Xcode/setting-up-storekit-testing-in-xcode.md).
 
 When you apply this option, the purchase transaction simulates a customer redeeming a promotional offer, and includes the promotional offer you specify.
 
@@ -33,11 +34,12 @@ When you apply this option, the purchase transaction simulates a customer redeem
 
 ## See Also
 
-- [static func purchaseDate(Date, renewalBehavior: Product.PurchaseOption.SubscriptionRenewalBehavior) -> Product.PurchaseOption](product/purchaseoption/purchasedate(_:renewalbehavior:).md)
+### Setting options for StoreKit Testing in Xcode
+- [static func purchaseDate(Date, renewalBehavior: Product.PurchaseOption.SubscriptionRenewalBehavior) -> Product.PurchaseOption](./purchasedate%28_,renewalbehavior%29.md)
   Sets the purchase date for the transaction in the testing environment, and indicates the renewal behavior for an auto-renewable subscription.
-- [Product.PurchaseOption.SubscriptionRenewalBehavior](product/purchaseoption/subscriptionrenewalbehavior.md)
+- [Product.PurchaseOption.SubscriptionRenewalBehavior](./subscriptionrenewalbehavior.md)
   Renewal options for auto-renewable subscriptions that you purchase in the testing environment.
-- [static func codeOffer(referenceName: String) -> Product.PurchaseOption](product/purchaseoption/codeoffer(referencename:).md)
+- [static func codeOffer(referenceName: String) -> Product.PurchaseOption](./codeoffer%28referencename%29.md)
   Sets an offer code for the transaction in the testing environment.
 
 

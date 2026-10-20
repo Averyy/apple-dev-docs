@@ -1,7 +1,8 @@
 # PKAddIdentityDocumentConfiguration
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Configuration to define the identity document.
 
@@ -9,13 +10,17 @@ Configuration to define the identity document.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- macOS ?+
+- macOS
 - visionOS 2.0+
 
 ## Declaration
 
 ```swift
 class PKAddIdentityDocumentConfiguration
+```
+
+```objc
+@interface PKAddIdentityDocumentConfiguration : PKAddSecureElementPassConfiguration
 ```
 
 #### Overview
@@ -25,50 +30,51 @@ Use this class for identity document passes. You provide the underlying metadata
 ## Topics
 
 ### Setting the metadata
-- [var metadata: PKIdentityDocumentMetadata](pkaddidentitydocumentconfiguration/metadata.md)
+- [var metadata: PKIdentityDocumentMetadata](./pkaddidentitydocumentconfiguration/metadata.md)
   A set of configurable metadata that defines the required information to add the corresponding pass to Wallet.
-- [class func forMetadata(PKIdentityDocumentMetadata, completion: (PKAddIdentityDocumentConfiguration?, (any Error)?) -> Void)](pkaddidentitydocumentconfiguration/formetadata(_:completion:).md)
+- [class func forMetadata(PKIdentityDocumentMetadata, completion: (PKAddIdentityDocumentConfiguration?, (any Error)?) -> Void)](./pkaddidentitydocumentconfiguration/formetadata%28_,completion%29.md)
   Returns the identity document configuration.
 
 ## Relationships
 
 ### Inherits From
-- [PKAddSecureElementPassConfiguration](pkaddsecureelementpassconfiguration.md)
+- [PKAddSecureElementPassConfiguration](./pkaddsecureelementpassconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
+### Identity passes and authorization
+- [Requesting identity data from a Wallet pass](./requesting-identity-data-from-a-wallet-pass.md)
   Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
-- [Configuring your environment for the Verify with Wallet API](configuring-your-environment-for-the-verify-with-wallet-api.md)
+- [Configuring your environment for the Verify with Wallet API](./configuring-your-environment-for-the-verify-with-wallet-api.md)
   Set up your environment to use Verify with Wallet.
-- [Verifying Wallet identity requests](verifying-wallet-identity-requests.md)
+- [Verifying Wallet identity requests](./verifying-wallet-identity-requests.md)
   Decrypt and verify an in-app presentment request on your server.
-- [class PKIdentityPhotoIDDescriptor](pkidentityphotoiddescriptor.md)
+- [class PKIdentityPhotoIDDescriptor](./pkidentityphotoiddescriptor.md)
   An object you use to request information from a user’s photo ID or equivalent document.
-- [class PKIdentityAnyOfDescriptor](pkidentityanyofdescriptor.md)
+- [class PKIdentityAnyOfDescriptor](./pkidentityanyofdescriptor.md)
   An object you use to request information from multiple identity documents.
-- [class PKIdentityDriversLicenseDescriptor](pkidentitydriverslicensedescriptor.md)
+- [class PKIdentityDriversLicenseDescriptor](./pkidentitydriverslicensedescriptor.md)
   An object for requesting information from a user’s driver’s license or equivalent document.
-- [class PKAddIdentityDocumentMetadata](pkaddidentitydocumentmetadata.md)
+- [class PKAddIdentityDocumentMetadata](./pkaddidentitydocumentmetadata.md)
   The object for specifying the metadata necessary to provision identity documents.
-- [enum PKAddIdentityDocumentType](pkaddidentitydocumenttype.md)
+- [enum PKAddIdentityDocumentType](./pkaddidentitydocumenttype.md)
   Classifications that reflect the type of identity document.
-- [struct JPKIPassContents](jpkipasscontents.md)
+- [struct JPKIPassContents](./jpkipasscontents.md)
   A set of actions for viewing and updating PINs, passwords, and signing abilities associated with digital identities on the JPKI applet.
-- [class PKAddPassMetadataPreview](pkaddpassmetadatapreview.md)
+- [class PKAddPassMetadataPreview](./pkaddpassmetadatapreview.md)
   A preview object that contains information representing the pass you add to Wallet.
-- [class PKIdentityDocumentMetadata](pkidentitydocumentmetadata.md)
+- [class PKIdentityDocumentMetadata](./pkidentitydocumentmetadata.md)
   A set of configured metadata that defines the required information to add the corresponding pass to Wallet.
-- [class PKIdentityNationalIDCardDescriptor](pkidentitynationalidcarddescriptor.md)
+- [class PKIdentityNationalIDCardDescriptor](./pkidentitynationalidcarddescriptor.md)
   An object for requesting information from a user’s national ID card.
-- [class PKJapanIndividualNumberCardMetadata](pkjapanindividualnumbercardmetadata.md)
+- [class PKJapanIndividualNumberCardMetadata](./pkjapanindividualnumbercardmetadata.md)
   A class that contains metadata indicating the specific product instance to provision.
 
 

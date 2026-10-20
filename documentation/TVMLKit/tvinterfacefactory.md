@@ -1,12 +1,15 @@
 # TVInterfaceFactory
 
 **Framework**: TVMLKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A factory for the creation of views and view controllers.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,40 +17,45 @@ A factory for the creation of views and view controllers.
 class TVInterfaceFactory
 ```
 
+```objc
+@interface TVInterfaceFactory : NSObject
+```
+
 #### Overview
 
-The app can extend or override the framework implementation by setting [`extendedInterfaceCreator`](tvinterfacefactory/extendedinterfacecreator.md).
+The app can extend or override the framework implementation by setting [`extendedInterfaceCreator`](./tvinterfacefactory/extendedinterfacecreator.md).
 
 ## Topics
 
 ### Extending an Interface
-- [var extendedInterfaceCreator: (any TVInterfaceCreating)?](tvinterfacefactory/extendedinterfacecreator.md)
+- [var extendedInterfaceCreator: (any TVInterfaceCreating)?](./tvinterfacefactory/extendedinterfacecreator.md)
   The interface that is being extended.
-- [class func shared() -> Self](tvinterfacefactory/shared.md)
+- [class func shared() -> Self](./tvinterfacefactory/shared%28%29.md)
   Returns the singleton instance of the interface factory.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [TVInterfaceCreating](tvinterfacecreating.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [TVInterfaceCreating](./tvinterfacecreating.md)
 
 ## See Also
 
-- [class TVViewElement](tvviewelement.md)
+### Views and View Controllers
+- [class TVViewElement](./tvviewelement.md)
   A representation of a read-only DOM node.
-- [protocol TVInterfaceCreating](tvinterfacecreating.md)
+- [protocol TVInterfaceCreating](./tvinterfacecreating.md)
   A protocol that defines methods used to create views and view controllers.
-- [class TVBrowserViewController](tvbrowserviewcontroller.md)
+- [class TVBrowserViewController](./tvbrowserviewcontroller.md)
   A view controller that presents content in a browsable, full-screen format.
-- [class TVDocumentViewController](tvdocumentviewcontroller.md)
+- [class TVDocumentViewController](./tvdocumentviewcontroller.md)
   A view controller that represents a TVMLKit document.
 
 

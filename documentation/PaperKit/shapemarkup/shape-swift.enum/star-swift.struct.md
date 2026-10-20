@@ -1,7 +1,8 @@
 # ShapeMarkup.Shape.Star
 
 **Framework**: PaperKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -19,23 +20,23 @@ struct Star
 ## Topics
 
 ### Initializers
-- [init(points: Int, innerRadius: CGFloat)](shapemarkup/shape-swift.enum/star-swift.struct/init(points:innerradius:).md)
+- [init(points: Int, innerRadius: CGFloat)](./star-swift.struct/init%28points,innerradius%29.md)
   Create a new star shape with alternating inner and outer points.
 ### Instance Properties
-- [var innerRadius: CGFloat](shapemarkup/shape-swift.enum/star-swift.struct/innerradius.md)
+- [var innerRadius: CGFloat](./star-swift.struct/innerradius.md)
   The radius of inner points relative to outer points, in unit coordinate space (0.0 to 1.0).
-- [var path: CGPath](shapemarkup/shape-swift.enum/star-swift.struct/path.md)
+- [var path: CGPath](./star-swift.struct/path.md)
   The path of the shape.
-- [var points: Int](shapemarkup/shape-swift.enum/star-swift.struct/points.md)
+- [var points: Int](./star-swift.struct/points.md)
   The number of points on the star.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

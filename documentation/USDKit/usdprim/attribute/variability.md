@@ -1,7 +1,8 @@
 # variability
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The variability of this attribute, which indicates whether its value can change over time.
 

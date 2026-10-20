@@ -1,7 +1,8 @@
 # recursive
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value indicating that the delete operation removes the item and all of its children.
 
@@ -16,6 +17,10 @@ A value indicating that the delete operation removes the item and all of its chi
 
 ```swift
 static var recursive: NSFileProviderDeleteItemOptions { get }
+```
+
+```c
+NSFileProviderDeleteItemRecursive
 ```
 
 

@@ -1,7 +1,8 @@
 # init(seedRepresentation:publicKey:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -20,7 +21,8 @@ init<D>(seedRepresentation: D, publicKey: XWingMLKEM768X25519.PublicKey?) throws
 
 ## See Also
 
-- [init<D>(integrityCheckedRepresentation: D) throws](xwingmlkem768x25519/privatekey/init(integritycheckedrepresentation:).md)
+### Creating a private key
+- [init<D>(integrityCheckedRepresentation: D) throws](./init%28integritycheckedrepresentation%29.md)
 
 
 ---

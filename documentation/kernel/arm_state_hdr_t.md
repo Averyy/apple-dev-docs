@@ -1,14 +1,15 @@
 # arm_state_hdr_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct arm_state_hdr {
     ...
 } arm_state_hdr_t;
@@ -17,8 +18,8 @@ typedef struct arm_state_hdr {
 ## Topics
 
 ### Instance Properties
-- [count](arm_state_hdr_t/3609636-count.md)
-- [flavor](arm_state_hdr_t/3609637-flavor.md)
+- [count](./arm_state_hdr_t/api-3609636-count.md)
+- [flavor](./arm_state_hdr_t/api-3609637-flavor.md)
 
 
 ---

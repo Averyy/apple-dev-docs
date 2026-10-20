@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct bpf_program {
     ...
 };
@@ -17,8 +17,8 @@ struct bpf_program {
 ## Topics
 
 ### Instance Properties
-- [bf_insns](bpf_program/1589683-bf_insns.md)
-- [bf_len](bpf_program/1589481-bf_len.md)
+- [bf_insns](./bpf_program/api-1589683-bf_insns.md)
+- [bf_len](./bpf_program/api-1589481-bf_len.md)
 
 
 ---

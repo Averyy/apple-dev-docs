@@ -1,7 +1,8 @@
 # makeUnicodeScalarIterator()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an iterator that will decode the code units into `Unicode.Scalar`s.
 

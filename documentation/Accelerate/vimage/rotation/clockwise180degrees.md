@@ -1,7 +1,8 @@
 # vImage.Rotation.clockwise180Degrees
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Rotate 180 degrees clockwise.
 
@@ -11,7 +12,7 @@ Rotate 180 degrees clockwise.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,23 +23,24 @@ case clockwise180Degrees
 
 ## See Also
 
-- [vImage.Rotation.angleInDegrees(_:)](vimage/rotation/angleindegrees(_:).md)
+### Enumeration Cases
+- [vImage.Rotation.angleInDegrees(_:)](./angleindegrees%28_%29.md)
   Rotate by any angle, which you specify in degrees.
-- [vImage.Rotation.angleInRadians(_:)](vimage/rotation/angleinradians(_:).md)
+- [vImage.Rotation.angleInRadians(_:)](./angleinradians%28_%29.md)
   Rotate by any angle, which you specify in radians.
-- [vImage.Rotation.clockwise0Degrees](vimage/rotation/clockwise0degrees.md)
+- [vImage.Rotation.clockwise0Degrees](./clockwise0degrees.md)
   Rotate 0 degrees (that is, copy without rotating).
-- [vImage.Rotation.clockwise270Degrees](vimage/rotation/clockwise270degrees.md)
+- [vImage.Rotation.clockwise270Degrees](./clockwise270degrees.md)
   Rotate 270 degrees clockwise.
-- [vImage.Rotation.clockwise90Degrees](vimage/rotation/clockwise90degrees.md)
+- [vImage.Rotation.clockwise90Degrees](./clockwise90degrees.md)
   Rotate 90 degrees clockwise.
-- [vImage.Rotation.counterClockwise0Degrees](vimage/rotation/counterclockwise0degrees.md)
+- [vImage.Rotation.counterClockwise0Degrees](./counterclockwise0degrees.md)
   Rotate 0 degrees (that is, copy without rotating).
-- [vImage.Rotation.counterClockwise180Degrees](vimage/rotation/counterclockwise180degrees.md)
+- [vImage.Rotation.counterClockwise180Degrees](./counterclockwise180degrees.md)
   Rotate 180 degrees counter-clockwise.
-- [vImage.Rotation.counterClockwise270Degrees](vimage/rotation/counterclockwise270degrees.md)
+- [vImage.Rotation.counterClockwise270Degrees](./counterclockwise270degrees.md)
   Rotate 270 degrees counter-clockwise.
-- [vImage.Rotation.counterClockwise90Degrees](vimage/rotation/counterclockwise90degrees.md)
+- [vImage.Rotation.counterClockwise90Degrees](./counterclockwise90degrees.md)
   Rotate 90 degrees counter-clockwise.
 
 

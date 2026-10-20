@@ -1,14 +1,15 @@
 # sDriveSupports48BitLBA
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 static bool sDriveSupports48BitLBA(const UInt16 *identifyData);
 ```
 

@@ -1,7 +1,8 @@
 # isProgressVisible
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns `YES` if the progress indicator is visible. The progress indicator is hidden when the user is actively interacting with the `UIPageControl`.
 
@@ -16,6 +17,10 @@ Returns `YES` if the progress indicator is visible. The progress indicator is hi
 
 ```swift
 var isProgressVisible: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly, getter=isProgressVisible) BOOL progressVisible;
 ```
 
 

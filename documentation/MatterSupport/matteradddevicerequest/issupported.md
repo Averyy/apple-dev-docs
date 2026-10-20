@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: MatterSupport  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that indicates whether `MatterAddDeviceRequest` usage is supported
 
@@ -10,7 +11,7 @@ A flag that indicates whether `MatterAddDeviceRequest` usage is supported
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

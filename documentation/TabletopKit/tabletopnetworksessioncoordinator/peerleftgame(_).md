@@ -2,6 +2,7 @@
 
 **Framework**: TabletopKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -15,8 +16,9 @@ func peerLeftGame(_ peerID: Self.Peer.ID)
 
 ## See Also
 
-- [func peerJoinedGame(Self.Peer.ID)](tabletopnetworksessioncoordinator/peerjoinedgame(_:).md)
-- [associatedtype Peer : Hashable, Identifiable](tabletopnetworksessioncoordinator/peer.md)
+### Managing network session peers
+- [func peerJoinedGame(Self.Peer.ID)](./peerjoinedgame%28_%29.md)
+- [associatedtype Peer : Hashable, Identifiable](./peer.md)
 
 
 ---

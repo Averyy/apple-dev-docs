@@ -1,7 +1,8 @@
 # reversed()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a view presenting the elements of the collection in reverse order.
 
@@ -40,7 +41,7 @@ print(reversedWord)
 // Prints "sdrawkcaB"
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

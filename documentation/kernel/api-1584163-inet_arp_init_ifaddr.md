@@ -1,14 +1,15 @@
 # inet_arp_init_ifaddr
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 void inet_arp_init_ifaddr(ifnet_t interface, ifaddr_t ipaddr);
 ```
 
@@ -29,8 +30,9 @@ For an example, see bsd/net/ether_inet_pr_module.c in xnu. Search for inet_arp_i
 
 ## See Also
 
-- [inet_arp_handle_input](1584164-inet_arp_handle_input.md)
-- [inet_arp_lookup](1584165-inet_arp_lookup.md)
+### Address Resolution
+- [inet_arp_handle_input](./api-1584164-inet_arp_handle_input.md)
+- [inet_arp_lookup](./api-1584165-inet_arp_lookup.md)
 
 
 ---

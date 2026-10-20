@@ -1,7 +1,8 @@
 # setPaddingTop(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setPaddingTop(_ paddingTop: String!)
+```
+
+```objc
+- (void) setPaddingTop:(NSString *) paddingTop;
 ```
 
 

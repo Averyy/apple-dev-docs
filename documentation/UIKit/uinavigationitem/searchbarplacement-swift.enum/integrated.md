@@ -1,7 +1,8 @@
 # UINavigationItem.SearchBarPlacement.integrated
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The navigation bar will place the search bar inline with other content, on the trailing edge. On iPhone, when the navigation bar belongs to a UINavigationController, the search bar may be integrated into the toolbar.
 
@@ -15,6 +16,10 @@ The navigation bar will place the search bar inline with other content, on the t
 
 ```swift
 case integrated
+```
+
+```c
+UINavigationItemSearchBarPlacementIntegrated
 ```
 
 

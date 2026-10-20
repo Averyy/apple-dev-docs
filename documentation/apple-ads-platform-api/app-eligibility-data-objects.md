@@ -1,6 +1,7 @@
 # App Eligibility Data Objects
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Reference the request and response objects used by the app eligibility and rejection reason endpoints.
 
@@ -9,22 +10,23 @@ Reference the request and response objects used by the app eligibility and rejec
 
 ## Topics
 
-- [object EligibilityQueryRequest](eligibilityqueryrequest.md)
+- [object EligibilityQueryRequest](./eligibilityqueryrequest.md)
   The request body for querying app eligibility.
-- [object EligibilityQueryResponse](eligibilityqueryresponse.md)
+- [object EligibilityQueryResponse](./eligibilityqueryresponse.md)
   The paginated response object for an app eligibility query.
-- [object RejectionReasonResponse](rejectionreasonresponse.md)
+- [object RejectionReasonResponse](./rejectionreasonresponse.md)
   The response object for a rejection reason operation.
-- [object AppDetailsResponse](appdetailsresponse.md)
+- [object AppDetailsResponse](./appdetailsresponse.md)
   The response object for a get app details operation.
-- [object AppDetails](appdetails.md)
+- [object AppDetails](./appdetails.md)
   Application details and metadata.
-- [object EligibilityResponse](eligibilityresponse.md)
+- [object EligibilityResponse](./eligibilityresponse.md)
   The response object describing an app’s eligibility for a specific supply placement, supply source, country or region, and device class.
 
 ## See Also
 
-- [App Eligibility Endpoints](app-eligibility-endpoints.md)
+### App Eligibility
+- [App Eligibility Endpoints](./app-eligibility-endpoints.md)
   Check whether apps qualify to run ads and look up rejection reasons for creatives.
 
 

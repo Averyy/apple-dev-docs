@@ -1,11 +1,12 @@
 # ParseableFormatStyle Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var parseStrategy: Date.ISO8601FormatStyle](date/iso8601formatstyle/parsestrategy.md)
+- [var parseStrategy: Date.ISO8601FormatStyle](./parsestrategy.md)
   The strategy used to parse a string into a date.
 
 

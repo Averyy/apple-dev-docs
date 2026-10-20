@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a simple material.
 
@@ -11,7 +12,7 @@ Creates a simple material.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ init()
 
 ## See Also
 
-- [init(color: SimpleMaterial.Color, roughness: MaterialScalarParameter, isMetallic: Bool)](simplematerial/init(color:roughness:ismetallic:)-1ebae.md)
+### Creating a simple material
+- [init(color: SimpleMaterial.Color, roughness: MaterialScalarParameter, isMetallic: Bool)](./init%28color,roughness,ismetallic%29-1ebae.md)
   Creates a simple material with specific characteristics in macOS.
 
 

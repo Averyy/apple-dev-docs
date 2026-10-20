@@ -1,7 +1,8 @@
 # ErrorLinks.Associated
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The associated resource links within an error’s navigation links.
 
@@ -10,14 +11,14 @@ The associated resource links within an error’s navigation links.
 
 ## Declaration
 
-```swift
+```
 object ErrorLinks.Associated
 ```
 
 ## Topics
 
 ### Objects
-- [object ErrorLinks.Associated.Meta](errorlinks/associated-data.dictionary/meta-data.dictionary.md)
+- [object ErrorLinks.Associated.Meta](./associated-data.dictionary/meta-data.dictionary.md)
   Metadata for an associated link within an error response.
 
 ## Properties

@@ -1,7 +1,8 @@
 # personSegmentationWithDepth
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that indicates that people occlude your app’s virtual content depending on depth.
 
@@ -15,15 +16,20 @@ An option that indicates that people occlude your app’s virtual content depend
 static var personSegmentationWithDepth: ARConfiguration.FrameSemantics { get }
 ```
 
+```c
+ARFrameSemanticPersonSegmentationWithDepth
+```
+
 #### Discussion
 
-The [`personSegmentationWithDepth`](arconfiguration/framesemantics-swift.struct/personsegmentationwithdepth.md) frame semantic specifies that any person ARKit detects in the camera feed should occlude virtual content, depending on the person’s depth in the scene.
+The [`personSegmentationWithDepth`](./personsegmentationwithdepth.md) frame semantic specifies that any person ARKit detects in the camera feed should occlude virtual content, depending on the person’s depth in the scene.
 
-When this option is enabled, ARKit sets the [`estimatedDepthData`](arframe/estimateddepthdata.md) and [`segmentationBuffer`](arframe/segmentationbuffer.md) properties to serve as a foundation for people occlusion. The standard renderers ([`ARView`](https://developer.apple.com/documentation/realitykit/arview), and [`ARSCNView`](arscnview.md)) use those properties to implement people occlusion for you. See [`frameSemantics`](arconfiguration/framesemantics-swift.property.md) for more information.
+When this option is enabled, ARKit sets the [`estimatedDepthData`](../../arframe/estimateddepthdata.md) and [`segmentationBuffer`](../../arframe/segmentationbuffer.md) properties to serve as a foundation for people occlusion. The standard renderers ([`ARView`](../../../RealityKit/arview.md), and [`ARSCNView`](../../arscnview.md)) use those properties to implement people occlusion for you. See [`frameSemantics`](../framesemantics-swift.property.md) for more information.
 
 ## See Also
 
-- [static var personSegmentation: ARConfiguration.FrameSemantics](arconfiguration/framesemantics-swift.struct/personsegmentation.md)
+### Occluding Virtual Content with People
+- [static var personSegmentation: ARConfiguration.FrameSemantics](./personsegmentation.md)
   An option that indicates that people occlude your app’s virtual content.
 
 

@@ -1,7 +1,8 @@
 # isPointerInteractionEnabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that enables pointer interaction.
 
@@ -17,19 +18,24 @@ A Boolean that enables pointer interaction.
 var isPointerInteractionEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite, getter=isPointerInteractionEnabled) BOOL pointerInteractionEnabled;
+```
+
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isHovered: Bool](uibutton/ishovered.md)
+### Supporting pointer interactions
+- [var isHovered: Bool](./ishovered.md)
   A Boolean value that indicates whether a pointer effect is active.
-- [var pointerStyleProvider: UIButton.PointerStyleProvider?](uibutton/pointerstyleprovider-y4eb.md)
+- [var pointerStyleProvider: UIButton.PointerStyleProvider?](./pointerstyleprovider-y4eb.md)
   A closure that returns the pointer style to use when the pointer hovers over the button.
-- [typealias PointerStyleProvider](uibutton/pointerstyleprovider-swift.typealias.md)
+- [typealias PointerStyleProvider](./pointerstyleprovider-swift.typealias.md)
   A type alias defining a closure that returns a pointer style to apply to a button.
-- [typealias UIButtonPointerStyleProvider](uibuttonpointerstyleprovider.md)
+- [typealias UIButtonPointerStyleProvider](../uibuttonpointerstyleprovider.md)
   A type alias defining a block that returns a pointer style to apply to a button.
 
 

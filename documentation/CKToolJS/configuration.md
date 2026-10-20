@@ -1,7 +1,8 @@
 # Configuration
 
 **Framework**: CKTool JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object you use to hold options for communicating with the API server.
 
@@ -10,7 +11,7 @@ An object you use to hold options for communicating with the API server.
 
 ## Declaration
 
-```swift
+```
 interface Configuration
 ```
 
@@ -23,21 +24,22 @@ Note: You shouldn’t create instances of this class directly.
 ## Topics
 
 ### Initializers
-- [Configuration](configuration/configuration.md)
+- [Configuration](./configuration/configuration.md)
   Internal use only.
 ### Instance Properties
-- [jsonParse](configuration/jsonparse.md)
+- [jsonParse](./configuration/jsonparse.md)
   A function that a response parser uses to interpret JSON from the API server.
-- [jsonStringify](configuration/jsonstringify.md)
+- [jsonStringify](./configuration/jsonstringify.md)
   A function that a request function uses to prepare JSON to send to the API server.
-- [serverUrl](configuration/serverurl.md)
+- [serverUrl](./configuration/serverurl.md)
   The URL of the API server.
 
 ## See Also
 
-- [CKToolNodeJsModule](cktoolnodejsmodule.md)
+### Configuration
+- [CKToolNodeJsModule](./cktoolnodejsmodule.md)
   The imported package that supports using the client library within a Node.js environment.
-- [CKToolBrowserModule](cktoolbrowsermodule.md)
+- [CKToolBrowserModule](./cktoolbrowsermodule.md)
   The imported package that supports using the client library within a web browser.
 
 

@@ -1,7 +1,8 @@
 # rect(corners:isUniform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a rectangle with the same corner style set on four corners.
 
@@ -32,7 +33,8 @@ When you provide `false` for `isUniform`, the system may calculate a different r
 
 ## See Also
 
-- [init(corners: Edge.Corner.Style, isUniform: Bool)](concentricrectangle/init(corners:isuniform:).md)
+### Creating a rectangle with the same corner style
+- [init(corners: Edge.Corner.Style, isUniform: Bool)](../concentricrectangle/init%28corners,isuniform%29.md)
   Creates a rectangle with the same corner style set on four corners.
 
 

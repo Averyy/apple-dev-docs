@@ -1,7 +1,8 @@
 # set(_:forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value of the specified key to a Boolean value.
 
@@ -20,9 +21,13 @@ Sets the value of the specified key to a Boolean value.
 func set(_ value: Bool, forKey defaultName: String)
 ```
 
+```objc
+- (void) setBool:(BOOL) value forKey:(NSString *) defaultName;
+```
+
 #### Discussion
 
-This method places the Boolean value in an [`NSNumber`](nsnumber.md) type before writing the key and value to the defaults database. After you call this method, the system generates a [`didChangeNotification`](userdefaults/didchangenotification.md) for registered observers.
+This method places the Boolean value in an [`NSNumber`](../nsnumber.md) type before writing the key and value to the defaults database. After you call this method, the system generates a [`didChangeNotification`](./didchangenotification.md) for registered observers.
 
 ## Parameters
 
@@ -31,15 +36,16 @@ This method places the Boolean value in an [`NSNumber`](nsnumber.md) type before
 
 ## See Also
 
-- [func set(Int, forKey: String)](userdefaults/set(_:forkey:)-3v852.md)
+### Setting the value for a key
+- [func set(Int, forKey: String)](./set%28_,forkey%29-3v852.md)
   Sets the value of the specified key to an integer.
-- [func set(Float, forKey: String)](userdefaults/set(_:forkey:)-1t5ec.md)
+- [func set(Float, forKey: String)](./set%28_,forkey%29-1t5ec.md)
   Sets the value of the specified key to a floating-point number.
-- [func set(Double, forKey: String)](userdefaults/set(_:forkey:)-2w22f.md)
+- [func set(Double, forKey: String)](./set%28_,forkey%29-2w22f.md)
   Sets the value of the specified key to a double.
-- [func set(URL?, forKey: String)](userdefaults/set(_:forkey:)-2bqjt.md)
+- [func set(URL?, forKey: String)](./set%28_,forkey%29-2bqjt.md)
   Sets the value of the specified key to a URL.
-- [func set(Any?, forKey: String)](userdefaults/set(_:forkey:)-8ab6d.md)
+- [func set(Any?, forKey: String)](./set%28_,forkey%29-8ab6d.md)
   Sets the value of the specified key to a property list object.
 
 

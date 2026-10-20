@@ -1,18 +1,21 @@
 # BNNSFilterCreateLayerTensorContraction(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new tensor-contraction layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,9 +23,13 @@ Returns a new tensor-contraction layer.
 func BNNSFilterCreateLayerTensorContraction(_ layer_params: UnsafePointer<BNNSLayerParametersTensorContraction>, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?
 ```
 
+```c
+BNNSFilterBNNSFilterCreateLayerTensorContraction(const BNNSLayerParametersTensorContraction *layer_params, const BNNSFilterParameters *filter_params);
+```
+
 #### Discussion
 
-A tensor contraction is the summation of the elements of two tensors over one or more indices. BNNS represents this in the `operation` parameter of a [`BNNSLayerParametersTensorContraction`](bnnslayerparameterstensorcontraction.md) structure as a string using Einstein’s summation convention.
+A tensor contraction is the summation of the elements of two tensors over one or more indices. BNNS represents this in the `operation` parameter of a [`BNNSLayerParametersTensorContraction`](./bnnslayerparameterstensorcontraction.md) structure as a string using Einstein’s summation convention.
 
 For example, the string:
 
@@ -32,7 +39,7 @@ For example, the string:
 
 Represents the operation:
 
-![General formula that describes mathematically the equation represented by the string a underscore i j p comma b underscore i j q hyphen greater than o underscore p q. o sub p sub q equals alpha times summation over i j times a sub i sub j sub p times b sub i sub j sub q](/images/com.apple.accelerate/media-3581536@2x.png)
+![General formula that describes mathematically the equation represented by the string a underscore i j p comma b underscore i j q hyphen greater than o underscore p q. o sub p sub q equals alpha times summation over i j times a sub i sub j sub p times b sub i sub j sub q](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3581536@2x.png)
 
 Inputs may be either trained parameters or inputs.
 
@@ -40,7 +47,7 @@ If the name preceding the underscore is `“w”`, the operation assumes the ten
 
 If the names of the left-hand side inputs match, the operation assumes the contraction is of a tensor with itself, for example, to calculate the Gram matrix or a dot product.
 
-In the case where one of the inputs is a weight or the operation is a contraction of a tensor with itself, use [`BNNSFilterApply(_:_:_:)`](bnnsfilterapply(_:_:_:).md) or [`BNNSFilterApplyBatch(_:_:_:_:_:_:)`](bnnsfilterapplybatch(_:_:_:_:_:_:).md). If the operation has two inputs, use [`BNNSFilterApplyTwoInput(_:_:_:_:)`](bnnsfilterapplytwoinput(_:_:_:_:).md) or [`BNNSFilterApplyTwoInputBatch(_:_:_:_:_:_:_:_:)`](bnnsfilterapplytwoinputbatch(_:_:_:_:_:_:_:_:).md).
+In the case where one of the inputs is a weight or the operation is a contraction of a tensor with itself, use [`BNNSFilterApply(_:_:_:)`](./bnnsfilterapply%28_,_,_%29.md) or [`BNNSFilterApplyBatch(_:_:_:_:_:_:)`](./bnnsfilterapplybatch%28_,_,_,_,_,_%29.md). If the operation has two inputs, use [`BNNSFilterApplyTwoInput(_:_:_:_:)`](./bnnsfilterapplytwoinput%28_,_,_,_%29.md) or [`BNNSFilterApplyTwoInputBatch(_:_:_:_:_:_:_:_:)`](./bnnsfilterapplytwoinputbatch%28_,_,_,_,_,_,_,_%29.md).
 
 Use a tensor contraction layer to also copy from one layer to another with a permutation of indices. For example, the string:
 
@@ -50,7 +57,7 @@ Use a tensor contraction layer to also copy from one layer to another with a per
 
 Represents the operation:
 
-![General formula that describes mathematically the equation represented by the a underscore i j hyphen greater than c underscore j i. Cap C equals alpha times Cap A sup cap T.](/images/com.apple.accelerate/media-3581537@2x.png)
+![General formula that describes mathematically the equation represented by the a underscore i j hyphen greater than c underscore j i. Cap C equals alpha times Cap A sup cap T.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3581537@2x.png)
 
 BNNS tensor contraction supports broadcasting by using `“*”` as the final index, for example, the following string matches additional indices of `a` and `c`.
 
@@ -137,7 +144,8 @@ On return, `outputValues` contains the following values:
 
 ## See Also
 
-- [struct BNNSLayerParametersTensorContraction](bnnslayerparameterstensorcontraction.md)
+### Tensor contraction layers
+- [struct BNNSLayerParametersTensorContraction](./bnnslayerparameterstensorcontraction.md)
   A structure that contains the parameters of a tensor-contraction layer.
 
 

@@ -1,7 +1,8 @@
 # collaborationViewDidDismissPopover(_:)
 
 **Framework**: Shared with You  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate after the system dismisses the popover.
 
@@ -18,15 +19,20 @@ Notifies the delegate after the system dismisses the popover.
 optional func collaborationViewDidDismissPopover(_ collaborationView: SWCollaborationView)
 ```
 
+```objc
+- (void) collaborationViewDidDismissPopover:(SWCollaborationView *) collaborationView;
+```
+
 ## Parameters
 
 - `collaborationView`: The related `SWCollaborationView`.
 
 ## See Also
 
-- [func collaborationViewShouldPresentPopover(SWCollaborationView) -> Bool](swcollaborationviewdelegate/collaborationviewshouldpresentpopover(_:).md)
+### Responding to popover activity
+- [func collaborationViewShouldPresentPopover(SWCollaborationView) -> Bool](./collaborationviewshouldpresentpopover%28_%29.md)
   Asks the delegate whether the system can display the popover.
-- [func collaborationViewWillPresentPopover(SWCollaborationView)](swcollaborationviewdelegate/collaborationviewwillpresentpopover(_:).md)
+- [func collaborationViewWillPresentPopover(SWCollaborationView)](./collaborationviewwillpresentpopover%28_%29.md)
   Notifies the delegate before the system presents the popover.
 
 

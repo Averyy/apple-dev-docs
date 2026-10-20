@@ -1,7 +1,8 @@
 # changedElements()
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the elements that changed since the previous input state.
 
@@ -11,7 +12,7 @@ Returns the elements that changed since the previous input state.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -29,12 +30,13 @@ Returns `nil` if there’s no previous input state, either because this is the f
 
 ## See Also
 
-- [func change(for: any GCPhysicalInputElement) -> GCDevicePhysicalInputElementChange](gcdevicephysicalinputstatediff/change(for:).md)
+### Getting changes
+- [func change(for: any GCPhysicalInputElement) -> GCDevicePhysicalInputElementChange](./change%28for%29.md)
   Returns whether the input value of an element changes.
-- [enum GCDevicePhysicalInputElementChange](gcdevicephysicalinputelementchange.md)
+- [enum GCDevicePhysicalInputElementChange](../gcdevicephysicalinputelementchange.md)
   Possible values that describe whether the input value of an element changes.
 - [func changedElements() -> (some Sequence<any GCPhysicalInputElement>)?
-](gcdevicephysicalinputstatediff/changedelements-2zzwm.md)
+](./changedelements%28%29-2zzwm.md)
   Returns the elements that changed since the previous input state.
 
 

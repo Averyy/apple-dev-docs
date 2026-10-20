@@ -1,7 +1,8 @@
 # pinConfirmation
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The way PIN confirmation is requested. `TKSmartCardPINConfirmationNone` by default.
 
@@ -20,9 +21,14 @@ The way PIN confirmation is requested. `TKSmartCardPINConfirmationNone` by defau
 var pinConfirmation: TKSmartCardUserInteractionForSecurePINChange.Confirmation { get set }
 ```
 
+```objc
+@property TKSmartCardPINConfirmation PINConfirmation;
+```
+
 ## See Also
 
-- [TKSmartCardUserInteractionForSecurePINChange.Confirmation](tksmartcarduserinteractionforsecurepinchange/confirmation.md)
+### Configuring User Interaction
+- [TKSmartCardUserInteractionForSecurePINChange.Confirmation](./confirmation.md)
 
 
 ---

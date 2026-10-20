@@ -1,7 +1,8 @@
 # timeIntervalSince(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the interval between the receiver and another given date.
 
@@ -20,6 +21,10 @@ Returns the interval between the receiver and another given date.
 func timeIntervalSince(_ anotherDate: Date) -> TimeInterval
 ```
 
+```objc
+- (NSTimeInterval) timeIntervalSinceDate:(NSDate *) anotherDate;
+```
+
 #### Return Value
 
 The interval between the receiver and the `anotherDate` parameter. If the receiver is earlier than `anotherDate`, the return value is negative. If `anotherDate` is `nil`, the results are undefined.
@@ -30,15 +35,16 @@ The interval between the receiver and the `anotherDate` parameter. If the receiv
 
 ## See Also
 
-- [var timeIntervalSinceNow: TimeInterval](nsdate/timeintervalsincenow.md)
+### Getting Time Intervals
+- [var timeIntervalSinceNow: TimeInterval](./timeintervalsincenow.md)
   The interval between the date object and the current date and time.
-- [var timeIntervalSinceReferenceDate: TimeInterval](nsdate/timeintervalsincereferencedate-swift.property.md)
+- [var timeIntervalSinceReferenceDate: TimeInterval](./timeintervalsincereferencedate-swift.property.md)
   The interval between the date object and 00:00:00 UTC on 1 January 2001.
-- [var timeIntervalSince1970: TimeInterval](nsdate/timeintervalsince1970.md)
+- [var timeIntervalSince1970: TimeInterval](./timeintervalsince1970.md)
   The interval between the date object and 00:00:00 UTC on 1 January 1970.
-- [class var timeIntervalSinceReferenceDate: TimeInterval](nsdate/timeintervalsincereferencedate-swift.type.property.md)
+- [class var timeIntervalSinceReferenceDate: TimeInterval](./timeintervalsincereferencedate-swift.type.property.md)
   The interval between 00:00:00 UTC on 1 January 2001 and the current date and time.
-- [var NSTimeIntervalSince1970: Double](nstimeintervalsince1970.md)
+- [var NSTimeIntervalSince1970: Double](../nstimeintervalsince1970.md)
   The number of seconds from 1 January 1970 to the reference date, 1 January 2001.
 
 

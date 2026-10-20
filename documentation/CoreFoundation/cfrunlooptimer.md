@@ -1,21 +1,26 @@
 # CFRunLoopTimer
 
 **Framework**: Core Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class CFRunLoopTimer
+```
+
+```c
+typedef struct __CFRunLoopTimer * CFRunLoopTimerRef;
 ```
 
 #### Overview
@@ -28,63 +33,64 @@ A repeating timer reschedules itself based on the scheduled firing time, not the
 
 Each run loop timer can be registered in only one run loop at a time, although it can be added to multiple run loop modes within that run loop.
 
-CFRunLoopTimer is “toll-free bridged” with its Cocoa Foundation counterpart, [`Timer`](https://developer.apple.com/documentation/foundation/timer). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSTimer *` parameter, you can pass in a `CFRunLoopTimerRef`, and in a function where you see a `CFRunLoopTimerRef` parameter, you can pass in an `NSTimer` instance. This also applies to concrete subclasses of `NSTimer`. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
+CFRunLoopTimer is “toll-free bridged” with its Cocoa Foundation counterpart, [`Timer`](../Foundation/timer.md). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSTimer *` parameter, you can pass in a `CFRunLoopTimerRef`, and in a function where you see a `CFRunLoopTimerRef` parameter, you can pass in an `NSTimer` instance. This also applies to concrete subclasses of `NSTimer`. See [Toll-Free Bridged Types](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
 
 ## Topics
 
 ### CFRunLoopTimer Miscellaneous Functions
-- [func CFRunLoopTimerCreateWithHandler(CFAllocator!, CFAbsoluteTime, CFTimeInterval, CFOptionFlags, CFIndex, ((CFRunLoopTimer?) -> Void)!) -> CFRunLoopTimer!](cfrunlooptimercreatewithhandler(_:_:_:_:_:_:).md)
+- [func CFRunLoopTimerCreateWithHandler(CFAllocator!, CFAbsoluteTime, CFTimeInterval, CFOptionFlags, CFIndex, ((CFRunLoopTimer?) -> Void)!) -> CFRunLoopTimer!](./cfrunlooptimercreatewithhandler%28_,_,_,_,_,_%29.md)
   Creates a new CFRunLoopTimer object with a block-based handler.
-- [func CFRunLoopTimerCreate(CFAllocator!, CFAbsoluteTime, CFTimeInterval, CFOptionFlags, CFIndex, CFRunLoopTimerCallBack!, UnsafeMutablePointer<CFRunLoopTimerContext>!) -> CFRunLoopTimer!](cfrunlooptimercreate(_:_:_:_:_:_:_:).md)
+- [func CFRunLoopTimerCreate(CFAllocator!, CFAbsoluteTime, CFTimeInterval, CFOptionFlags, CFIndex, CFRunLoopTimerCallBack!, UnsafeMutablePointer<CFRunLoopTimerContext>!) -> CFRunLoopTimer!](./cfrunlooptimercreate%28_,_,_,_,_,_,_%29.md)
   Creates a new CFRunLoopTimer object with a function callback.
-- [func CFRunLoopTimerDoesRepeat(CFRunLoopTimer!) -> Bool](cfrunlooptimerdoesrepeat(_:).md)
+- [func CFRunLoopTimerDoesRepeat(CFRunLoopTimer!) -> Bool](./cfrunlooptimerdoesrepeat%28_%29.md)
   Returns a Boolean value that indicates whether a CFRunLoopTimer object repeats.
-- [func CFRunLoopTimerGetContext(CFRunLoopTimer!, UnsafeMutablePointer<CFRunLoopTimerContext>!)](cfrunlooptimergetcontext(_:_:).md)
+- [func CFRunLoopTimerGetContext(CFRunLoopTimer!, UnsafeMutablePointer<CFRunLoopTimerContext>!)](./cfrunlooptimergetcontext%28_,_%29.md)
   Returns the context information for a CFRunLoopTimer object.
-- [func CFRunLoopTimerGetInterval(CFRunLoopTimer!) -> CFTimeInterval](cfrunlooptimergetinterval(_:).md)
+- [func CFRunLoopTimerGetInterval(CFRunLoopTimer!) -> CFTimeInterval](./cfrunlooptimergetinterval%28_%29.md)
   Returns the firing interval of a repeating CFRunLoopTimer object.
-- [func CFRunLoopTimerGetNextFireDate(CFRunLoopTimer!) -> CFAbsoluteTime](cfrunlooptimergetnextfiredate(_:).md)
+- [func CFRunLoopTimerGetNextFireDate(CFRunLoopTimer!) -> CFAbsoluteTime](./cfrunlooptimergetnextfiredate%28_%29.md)
   Returns the next firing time for a CFRunLoopTimer object.
-- [func CFRunLoopTimerGetOrder(CFRunLoopTimer!) -> CFIndex](cfrunlooptimergetorder(_:).md)
+- [func CFRunLoopTimerGetOrder(CFRunLoopTimer!) -> CFIndex](./cfrunlooptimergetorder%28_%29.md)
   Returns the ordering parameter for a CFRunLoopTimer object.
-- [func CFRunLoopTimerGetTypeID() -> CFTypeID](cfrunlooptimergettypeid().md)
+- [func CFRunLoopTimerGetTypeID() -> CFTypeID](./cfrunlooptimergettypeid%28%29.md)
   Returns the type identifier of the CFRunLoopTimer opaque type.
-- [func CFRunLoopTimerInvalidate(CFRunLoopTimer!)](cfrunlooptimerinvalidate(_:).md)
+- [func CFRunLoopTimerInvalidate(CFRunLoopTimer!)](./cfrunlooptimerinvalidate%28_%29.md)
   Invalidates a CFRunLoopTimer object, stopping it from ever firing again.
-- [func CFRunLoopTimerIsValid(CFRunLoopTimer!) -> Bool](cfrunlooptimerisvalid(_:).md)
+- [func CFRunLoopTimerIsValid(CFRunLoopTimer!) -> Bool](./cfrunlooptimerisvalid%28_%29.md)
   Returns a Boolean value that indicates whether a CFRunLoopTimer object is valid and able to fire.
-- [func CFRunLoopTimerSetNextFireDate(CFRunLoopTimer!, CFAbsoluteTime)](cfrunlooptimersetnextfiredate(_:_:).md)
+- [func CFRunLoopTimerSetNextFireDate(CFRunLoopTimer!, CFAbsoluteTime)](./cfrunlooptimersetnextfiredate%28_,_%29.md)
   Sets the next firing date for a CFRunLoopTimer object .
 ### Callbacks
-- [typealias CFRunLoopTimerCallBack](cfrunlooptimercallback.md)
+- [typealias CFRunLoopTimerCallBack](./cfrunlooptimercallback.md)
   Callback invoked when a CFRunLoopTimer object fires.
 ### Data Types
-- [struct CFRunLoopTimerContext](cfrunlooptimercontext.md)
+- [struct CFRunLoopTimerContext](./cfrunlooptimercontext.md)
   A structure that contains program-defined data and callbacks with which you can configure a CFRunLoopTimer’s behavior.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [class CFAllocator](cfallocator.md)
-- [class CFArray](cfarray.md)
-- [class CFAttributedString](cfattributedstring.md)
-- [class CFBag](cfbag.md)
-- [class CFBinaryHeap](cfbinaryheap.md)
-- [class CFBitVector](cfbitvector.md)
-- [class CFBoolean](cfboolean.md)
-- [class CFBundle](cfbundle.md)
-- [class CFCalendar](cfcalendar.md)
-- [class CFCharacterSet](cfcharacterset.md)
-- [class CFData](cfdata.md)
-- [class CFDate](cfdate.md)
-- [class CFDateFormatter](cfdateformatter.md)
-- [class CFDictionary](cfdictionary.md)
-- [class CFError](cferror.md)
+### Opaque Types
+- [class CFAllocator](./cfallocator.md)
+- [class CFArray](./cfarray.md)
+- [class CFAttributedString](./cfattributedstring.md)
+- [class CFBag](./cfbag.md)
+- [class CFBinaryHeap](./cfbinaryheap.md)
+- [class CFBitVector](./cfbitvector.md)
+- [class CFBoolean](./cfboolean.md)
+- [class CFBundle](./cfbundle.md)
+- [class CFCalendar](./cfcalendar.md)
+- [class CFCharacterSet](./cfcharacterset.md)
+- [class CFData](./cfdata.md)
+- [class CFDate](./cfdate.md)
+- [class CFDateFormatter](./cfdateformatter.md)
+- [class CFDictionary](./cfdictionary.md)
+- [class CFError](./cferror.md)
 
 
 ---

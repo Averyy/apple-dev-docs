@@ -1,7 +1,8 @@
 # CiIssue
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A warning or error produced during an Xcode Cloud build action, associated with a source file location.
 
@@ -10,14 +11,14 @@ A warning or error produced during an Xcode Cloud build action, associated with 
 
 ## Declaration
 
-```swift
+```
 object CiIssue
 ```
 
 ## Topics
 
 ### Objects
-- [object CiIssue.Attributes](ciissue/attributes-data.dictionary.md)
+- [object CiIssue.Attributes](./ciissue/attributes-data.dictionary.md)
   The attributes that describe an Issues resource.
 
 ## Properties
@@ -27,11 +28,14 @@ object CiIssue
 - `links` (ResourceLinks): The navigational links that include the self-link.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `ciIssues`
+
 ## See Also
 
-- [object FileLocation](filelocation.md)
+### Objects
+- [object FileLocation](./filelocation.md)
   A source code location reference indicating the file path, line number, and column of an issue in an Xcode Cloud build.
-- [object CiIssueResponse](ciissueresponse.md)
+- [object CiIssueResponse](./ciissueresponse.md)
   The response body for endpoints that read a single issue from an Xcode Cloud build action.
 
 

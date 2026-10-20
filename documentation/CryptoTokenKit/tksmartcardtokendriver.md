@@ -1,7 +1,8 @@
 # TKSmartCardTokenDriver
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The driver that acts as an entry point for smart card app extensions.
 
@@ -20,37 +21,42 @@ The driver that acts as an entry point for smart card app extensions.
 class TKSmartCardTokenDriver
 ```
 
+```objc
+@interface TKSmartCardTokenDriver : TKTokenDriver
+```
+
 ## Mentions
 
-- [Authenticating Users with a Cryptographic Token](authenticating-users-with-a-cryptographic-token.md)
+- [Authenticating Users with a Cryptographic Token](./authenticating-users-with-a-cryptographic-token.md)
 
 ## Topics
 
 ### Responding to Token Creation
-- [protocol TKSmartCardTokenDriverDelegate](tksmartcardtokendriverdelegate.md)
+- [protocol TKSmartCardTokenDriverDelegate](./tksmartcardtokendriverdelegate.md)
   The interface that a smart card token driver delegate implements to respond to token creation events.
 
 ## Relationships
 
 ### Inherits From
-- [TKTokenDriver](tktokendriver.md)
+- [TKTokenDriver](./tktokendriver.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Authenticating Users with a Cryptographic Token](authenticating-users-with-a-cryptographic-token.md)
+### Smart Card App Extensions
+- [Authenticating Users with a Cryptographic Token](./authenticating-users-with-a-cryptographic-token.md)
   Grant access to user accounts and the keychain by creating a smart card app extension.
-- [Configuring Smart Card Authentication](configuring-smart-card-authentication.md)
+- [Configuring Smart Card Authentication](./configuring-smart-card-authentication.md)
   Set preferences for smart card authentication operations, including those on managed devices.
-- [class TKSmartCardToken](tksmartcardtoken.md)
+- [class TKSmartCardToken](./tksmartcardtoken.md)
   A representation of a smart card based cryptographic token.
-- [class TKSmartCardTokenSession](tksmartcardtokensession.md)
+- [class TKSmartCardTokenSession](./tksmartcardtokensession.md)
   A token session that is based on a smart card token.
 
 

@@ -1,7 +1,8 @@
 # dismissAudioRecorderController()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the audio recording interface controller.
 
@@ -14,23 +15,28 @@ Dismisses the audio recording interface controller.
 func dismissAudioRecorderController()
 ```
 
+```objc
+- (void) dismissAudioRecorderController;
+```
+
 #### Discussion
 
-Use this method to interrupt media playback and dismiss a modal media interface controller. When you dismiss the recording interface programmatically, the recording controller passes a value of [`false`](https://developer.apple.com/documentation/swift/false) for the `didSave` parameter of your completion block.
+Use this method to interrupt media playback and dismiss a modal media interface controller. When you dismiss the recording interface programmatically, the recording controller passes a value of [`false`](../../Swift/false.md) for the `didSave` parameter of your completion block.
 
 ## See Also
 
-- [func presentMediaPlayerController(with: URL, options: [AnyHashable : Any]?, completion: (Bool, TimeInterval, (any Error)?) -> Void)](wkinterfacecontroller/presentmediaplayercontroller(with:options:completion:).md)
+### Presenting video and audio interfaces
+- [func presentMediaPlayerController(with: URL, options: [AnyHashable : Any]?, completion: (Bool, TimeInterval, (any Error)?) -> Void)](./presentmediaplayercontroller%28with,options,completion%29.md)
   Displays a modal interface for playing the specified media file.
-- [Media Player Options](media-player-options.md)
+- [Media Player Options](../media-player-options.md)
   Keys indicating media playback options.
-- [func dismissMediaPlayerController()](wkinterfacecontroller/dismissmediaplayercontroller.md)
+- [func dismissMediaPlayerController()](./dismissmediaplayercontroller%28%29.md)
   Dismisses the media interface controller.
-- [func presentAudioRecorderController(withOutputURL: URL, preset: WKAudioRecorderPreset, options: [AnyHashable : Any]?, completion: (Bool, (any Error)?) -> Void)](wkinterfacecontroller/presentaudiorecordercontroller(withoutputurl:preset:options:completion:).md)
+- [func presentAudioRecorderController(withOutputURL: URL, preset: WKAudioRecorderPreset, options: [AnyHashable : Any]?, completion: (Bool, (any Error)?) -> Void)](./presentaudiorecordercontroller%28withoutputurl,preset,options,completion%29.md)
   Display a standard interface for recording audio from the user’s Apple Watch.
-- [enum WKAudioRecorderPreset](wkaudiorecorderpreset.md)
+- [enum WKAudioRecorderPreset](../wkaudiorecorderpreset.md)
   Constants indicating the quality of audio recordings.
-- [Audio Recording Options](audio-recording-options.md)
+- [Audio Recording Options](../audio-recording-options.md)
   Options to specify when recording audio.
 
 

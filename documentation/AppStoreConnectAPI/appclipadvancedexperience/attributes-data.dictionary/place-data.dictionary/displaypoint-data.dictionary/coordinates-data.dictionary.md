@@ -1,7 +1,8 @@
 # AppClipAdvancedExperience.Attributes.Place.DisplayPoint.Coordinates
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The coordinates for a point of interest or business in Apple Maps.
 
@@ -10,7 +11,7 @@ The coordinates for a point of interest or business in Apple Maps.
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperience.Attributes.Place.DisplayPoint.Coordinates
 ```
 

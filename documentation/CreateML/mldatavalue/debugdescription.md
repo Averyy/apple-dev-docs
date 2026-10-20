@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the data value that’s suitable for output during debugging.
 
@@ -21,7 +22,8 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](mldatavalue/description.md)
+### Describing a data value
+- [var description: String](./description.md)
   A text representation of the data value.
 
 

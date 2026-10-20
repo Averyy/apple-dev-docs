@@ -1,22 +1,27 @@
 # init(identifier:forPlayer:)
 
 **Framework**: GameKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an achievement for a specific player.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.9+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 7.0+ - Deprecated in 8.0
+- iPadOS 7.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.9+ - Deprecated in 10.10
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
 
 ## Declaration
 
 ```swift
 init?(identifier: String?, forPlayer playerID: String)
+```
+
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier forPlayer:(NSString *) playerID;
 ```
 
 #### Discussion

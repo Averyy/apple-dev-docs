@@ -1,7 +1,8 @@
 # GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure in a response body for numeric rule results.
 
@@ -10,16 +11,16 @@ The data structure in a response body for numeric rule results.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.DataPoints](gamecentermatchmakingnumberruleresultsv1metricresponse/data-data.dictionary/datapoints-data.dictionary.md)
+- [object GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.DataPoints](./data-data.dictionary/datapoints-data.dictionary.md)
   The key properties of the data in the response.
-- [object GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.Dimensions](gamecentermatchmakingnumberruleresultsv1metricresponse/data-data.dictionary/dimensions-data.dictionary.md)
+- [object GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.Dimensions](./data-data.dictionary/dimensions-data.dictionary.md)
   The details of the data in the response.
 
 ## Properties
@@ -27,6 +28,8 @@ object GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data
 - `dataPoints` ([GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.DataPoints])
 - `dimensions` (GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.Dimensions)
 - `granularity` (string): The granularity of the data using the ISO 8601 format for durations.
+
+  **Allowed Values**: `P1D`, `PT1H`, `PT15M`
 
 
 ---

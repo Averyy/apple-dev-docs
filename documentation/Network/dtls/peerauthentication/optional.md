@@ -1,7 +1,8 @@
 # DTLS.PeerAuthentication.optional
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Requests the peer certificate, but if none is provided, proceed with the connection.
 

@@ -1,7 +1,8 @@
 # kAERemoteProcessProcessIDKey
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Use this key to obtain the process ID of the remote process, if available; if so, returned as a `CFNumberRef`.
 
@@ -12,6 +13,10 @@ Use this key to obtain the process ID of the remote process, if available; if so
 
 ```swift
 let kAERemoteProcessProcessIDKey: CFString!
+```
+
+```c
+const CFStringRef kAERemoteProcessProcessIDKey;
 ```
 
 

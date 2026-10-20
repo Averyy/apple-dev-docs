@@ -1,7 +1,8 @@
 # init(columns:rows:sourcePositions:destinationPositions:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a warp geometry grid of a specific size and warp translation, in point arrays.
 
@@ -11,7 +12,7 @@ Creates a warp geometry grid of a specific size and warp translation, in point a
 - Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 
 ## Declaration
@@ -26,7 +27,7 @@ A new warp geometry grid object.
 
 #### Discussion
 
-You supply the source and destination position as row-major arrays of normalized [`vector_float2`](https://developer.apple.com/documentation/simd/vector_float2) coordinates. The number of horizontal coordinates is the column count plus one and the number of vertical coordinates is the row count plus one. Passing `nil` as either of the position arguments results in an identity warp with vertices distributed evenly throughout the geometry. Passing `nil` to both `sourcePositions` and `destPositions` gives a result identical to [`init(columns:rows:)`](skwarpgeometrygrid/init(columns:rows:).md).
+You supply the source and destination position as row-major arrays of normalized [`vector_float2`](https://developer.apple.com/documentation/simd/vector_float2) coordinates. The number of horizontal coordinates is the column count plus one and the number of vertical coordinates is the row count plus one. Passing `nil` as either of the position arguments results in an identity warp with vertices distributed evenly throughout the geometry. Passing `nil` to both `sourcePositions` and `destPositions` gives a result identical to [`init(columns:rows:)`](./init%28columns,rows%29.md).
 
 ## Parameters
 
@@ -37,9 +38,10 @@ You supply the source and destination position as row-major arrays of normalized
 
 ## See Also
 
-- [convenience init(columns: Int, rows: Int)](skwarpgeometrygrid/init(columns:rows:).md)
+### Creating a Warp Geometry Grid
+- [convenience init(columns: Int, rows: Int)](./init%28columns,rows%29.md)
   Creates a warp geometry grid of a specified size.
-- [init?(coder: NSCoder)](skwarpgeometrygrid/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Tells you when to intialize a grid that was loaded from an archive.
 
 

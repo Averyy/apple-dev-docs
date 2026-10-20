@@ -1,7 +1,8 @@
 # release(reservedLocale:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Removes an asset locale reservation.
 
@@ -30,11 +31,12 @@ Unsubscribes from any assets that depended on the locale.
 
 ## See Also
 
-- [static func reserve(locale: Locale) async throws -> Bool](assetinventory/reserve(locale:).md)
+### Managing allocations
+- [static func reserve(locale: Locale) async throws -> Bool](./reserve%28locale%29.md)
   Add an asset locale to the app’s current reservations.
-- [static var reservedLocales: [Locale]](assetinventory/reservedlocales.md)
+- [static var reservedLocales: [Locale]](./reservedlocales.md)
   The app’s current asset locale reservations.
-- [static var maximumReservedLocales: Int](assetinventory/maximumreservedlocales.md)
+- [static var maximumReservedLocales: Int](./maximumreservedlocales.md)
   The number of locale reservations permitted to an app.
 
 

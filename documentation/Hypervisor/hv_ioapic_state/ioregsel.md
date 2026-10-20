@@ -1,15 +1,20 @@
 # ioregsel
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var ioregsel: UInt32
+```
+
+```c
+uint32_t ioregsel;
 ```
 
 

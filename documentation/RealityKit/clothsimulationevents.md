@@ -1,7 +1,8 @@
 # ClothSimulationEvents
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of events that a cloth simulation publishes during its lifetime.
 
@@ -19,20 +20,21 @@ enum ClothSimulationEvents
 ## Topics
 
 ### Observing simulation events
-- [ClothSimulationEvents.Start](clothsimulationevents/start.md)
+- [ClothSimulationEvents.Start](./clothsimulationevents/start.md)
   An event type that a cloth simulation publishes immediately after it starts.
-- [ClothSimulationEvents.BeforeUpdate](clothsimulationevents/beforeupdate.md)
+- [ClothSimulationEvents.BeforeUpdate](./clothsimulationevents/beforeupdate.md)
   An event type that a cloth simulation publishes immediately before performing an update.
-- [ClothSimulationEvents.AfterUpdate](clothsimulationevents/afterupdate.md)
+- [ClothSimulationEvents.AfterUpdate](./clothsimulationevents/afterupdate.md)
   An event type that a cloth simulation publishes immediately after performing an update.
 
 ## See Also
 
-- [enum ClothBodyEvents](clothbodyevents.md)
+### Cloth events
+- [enum ClothBodyEvents](./clothbodyevents.md)
   Types of events that a cloth body publishes during its lifetime.
-- [enum ClothColliderEvents](clothcolliderevents.md)
+- [enum ClothColliderEvents](./clothcolliderevents.md)
   Types of events that a cloth collider publishes during its lifetime.
-- [enum ClothQueryVolumeEvents](clothqueryvolumeevents.md)
+- [enum ClothQueryVolumeEvents](./clothqueryvolumeevents.md)
   Types of events that a cloth query volume publishes during its lifetime.
 
 

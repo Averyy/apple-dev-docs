@@ -1,7 +1,8 @@
 # isAdvertising
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the peripheral is advertising data.
 
@@ -20,16 +21,21 @@ A Boolean value that indicates whether the peripheral is advertising data.
 var isAdvertising: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) BOOL isAdvertising;
+```
+
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if the peripheral is advertising data as a result of successfully calling the [`startAdvertising(_:)`](cbperipheralmanager/startadvertising(_:).md) method. The value is [`false`](https://developer.apple.com/documentation/swift/false) if the peripheral is no longer advertising its data.
+This value is [`true`](../../Swift/true.md) if the peripheral is advertising data as a result of successfully calling the [`startAdvertising(_:)`](./startadvertising%28_%29.md) method. The value is [`false`](../../Swift/false.md) if the peripheral is no longer advertising its data.
 
 ## See Also
 
-- [func startAdvertising([String : Any]?)](cbperipheralmanager/startadvertising(_:).md)
+### Managing Advertising
+- [func startAdvertising([String : Any]?)](./startadvertising%28_%29.md)
   Advertises peripheral manager data.
-- [Advertising Data](advertising-data.md)
-- [func stopAdvertising()](cbperipheralmanager/stopadvertising.md)
+- [Advertising Data](../advertising-data.md)
+- [func stopAdvertising()](./stopadvertising%28%29.md)
   Stops advertising peripheral manager data.
 
 

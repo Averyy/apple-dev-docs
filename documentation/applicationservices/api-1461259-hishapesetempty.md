@@ -1,7 +1,8 @@
 # HIShapeSetEmpty(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 func HIShapeSetEmpty(_ inShape: HIMutableShape!) -> OSStatus
+```
+
+```c
+OSStatus HIShapeSetEmpty(HIMutableShapeRef inShape);
 ```
 
 

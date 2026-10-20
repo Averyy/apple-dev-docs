@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified nodes to the graph.
 
@@ -19,21 +20,26 @@ Adds the specified nodes to the graph.
 func add(_ nodes: [GKGraphNode])
 ```
 
+```objc
+- (void) addNodes:(NSArray<GKGraphNode *> *) nodes;
+```
+
 #### Discussion
 
 Calling this method does not connect the newly added nodes to others in the graph.
 
 ## Parameters
 
-- `nodes`: An array of graph node objects—instances of [`GKGraphNode`](gkgraphnode.md) or of one of its subclasses that adds geometry information.
+- `nodes`: An array of graph node objects—instances of [`GKGraphNode`](../gkgraphnode.md) or of one of its subclasses that adds geometry information.
 
 ## See Also
 
-- [func connectToLowestCostNode(node: GKGraphNode, bidirectional: Bool)](gkgraph/connecttolowestcostnode(node:bidirectional:).md)
+### Working with Nodes in a Graph
+- [func connectToLowestCostNode(node: GKGraphNode, bidirectional: Bool)](./connecttolowestcostnode%28node,bidirectional%29.md)
   Adds a node to the graph, connecting it to the node already in the graph for which the connection has the lowest cost.
-- [func remove([GKGraphNode])](gkgraph/remove(_:).md)
+- [func remove([GKGraphNode])](./remove%28_%29.md)
   Removes the specified nodes from the graph.
-- [var nodes: [GKGraphNode]?](gkgraph/nodes.md)
+- [var nodes: [GKGraphNode]?](./nodes.md)
   The list of nodes in the graph.
 
 

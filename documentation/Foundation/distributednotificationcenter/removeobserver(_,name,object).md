@@ -1,7 +1,8 @@
 # removeObserver(_:name:object:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes matching entries from the receiver’s dispatch table.
 
@@ -13,6 +14,10 @@ Removes matching entries from the receiver’s dispatch table.
 
 ```swift
 func removeObserver(_ observer: Any, name aName: NSNotification.Name?, object anObject: String?)
+```
+
+```objc
+- (void) removeObserver:(id) observer name:(NSNotificationName) aName object:(NSString *) anObject;
 ```
 
 #### Discussion
@@ -27,9 +32,10 @@ Be sure to invoke this method with `notificationName:nil notificationSender:nil`
 
 ## See Also
 
-- [func addObserver(Any, selector: Selector, name: NSNotification.Name?, object: String?)](distributednotificationcenter/addobserver(_:selector:name:object:).md)
+### Managing Observers
+- [func addObserver(Any, selector: Selector, name: NSNotification.Name?, object: String?)](./addobserver%28_,selector,name,object%29.md)
   Adds an entry to the notification center’s dispatch table with an observer, a selector, and an optional notification name and sender.
-- [func addObserver(Any, selector: Selector, name: NSNotification.Name?, object: String?, suspensionBehavior: DistributedNotificationCenter.SuspensionBehavior)](distributednotificationcenter/addobserver(_:selector:name:object:suspensionbehavior:).md)
+- [func addObserver(Any, selector: Selector, name: NSNotification.Name?, object: String?, suspensionBehavior: DistributedNotificationCenter.SuspensionBehavior)](./addobserver%28_,selector,name,object,suspensionbehavior%29.md)
   Adds an entry to the receiver’s dispatch table with a specific observer and suspended-notifications behavior, and optional notification name and sender.
 
 

@@ -1,7 +1,8 @@
 # allHTTPHeaderFields
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary containing all of the HTTP header fields for a request.
 
@@ -20,11 +21,17 @@ A dictionary containing all of the HTTP header fields for a request.
 var allHTTPHeaderFields: [String : String]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSDictionary<NSString *,NSString *> * allHTTPHeaderFields;
+```
+
 ## See Also
 
-- [var allHTTPHeaderFields: [String : String]?](nsmutableurlrequest/allhttpheaderfields.md)
+### Related Documentation
+- [var allHTTPHeaderFields: [String : String]?](../nsmutableurlrequest/allhttpheaderfields.md)
   A dictionary containing all of the HTTP header fields for a request.
-- [func value(forHTTPHeaderField: String) -> String?](nsurlrequest/value(forhttpheaderfield:).md)
+### Getting header fields
+- [func value(forHTTPHeaderField: String) -> String?](./value%28forhttpheaderfield%29.md)
   Returns the value of the specified HTTP header field.
 
 

@@ -1,7 +1,8 @@
 # init(participantUUID:streamDirection:)
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a video stream analyzer for the given call participant and stream option.
 
@@ -16,6 +17,10 @@ Creates a video stream analyzer for the given call participant and stream option
 init(participantUUID: String, streamDirection: SCVideoStreamAnalyzer.StreamDirection) throws
 ```
 
+```objc
+- (instancetype) initWithParticipantUUID:(NSString *) participantUUID streamDirection:(SCVideoStreamAnalyzerStreamDirection) streamDirection error:(NSError **) error;
+```
+
 #### Discussion
 
 > ❗ **Important**:  This class works only when the Communication Safety parental control in Screen Time is enabled, or when the Sensitive Content Warnings setting is on. This method throws an error if both settings are off, or if the device doesn’t support analysis for the specified stream direction.
@@ -27,7 +32,8 @@ init(participantUUID: String, streamDirection: SCVideoStreamAnalyzer.StreamDirec
 
 ## See Also
 
-- [SCVideoStreamAnalyzer.StreamDirection](scvideostreamanalyzer/streamdirection.md)
+### Creating a video stream analyzer
+- [SCVideoStreamAnalyzer.StreamDirection](./streamdirection.md)
   Options for the different types of analyzed video streams.
 
 

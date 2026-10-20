@@ -1,7 +1,8 @@
 # ContainerValues
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of container values associated with a given view.
 
@@ -24,7 +25,7 @@ struct ContainerValues
 
 SwiftUI exposes a collection of values associated with each view in the `ContainerValues` structure.
 
-Container values you set on a given view affect only that view. Like preferences, container values are able to be read by views above the view they’re set on. Unlike preferences, however, container values don’t have merging behavior because they don’t escape their closest container. In the following example, the container value is set on the contained view, but is dropped when it reaches the containing [`VStack`](vstack.md).
+Container values you set on a given view affect only that view. Like preferences, container values are able to be read by views above the view they’re set on. Unlike preferences, however, container values don’t have merging behavior because they don’t escape their closest container. In the following example, the container value is set on the contained view, but is dropped when it reaches the containing [`VStack`](./vstack.md).
 
 ```swift
 VStack {
@@ -69,7 +70,7 @@ ForEach(subviews: containedContent) { subviews in
 }
 ```
 
-Create a custom container value by declaring a new property in an extension to the container values structure and applying the [`Entry()`](entry().md) macro to the variable declaration:
+Create a custom container value by declaring a new property in an extension to the container values structure and applying the [`Entry()`](./entry%28%29.md) macro to the variable declaration:
 
 ```swift
 extension ContainerValues {
@@ -77,7 +78,7 @@ extension ContainerValues {
 }
 ```
 
-Clients of your value then access the value by reading it from the container values collection of a [`Subview`](subview.md).
+Clients of your value then access the value by reading it from the container values collection of a [`Subview`](./subview.md).
 
 Related pieces of container configuration can also be grouped under the same container values key.
 
@@ -117,25 +118,26 @@ extension View {
 ## Topics
 
 ### Instance Methods
-- [func hasTag<V>(V) -> Bool](containervalues/hastag(_:).md)
+- [func hasTag<V>(V) -> Bool](./containervalues/hastag%28_%29.md)
   Returns true if the container values contain a tag matching a given value.
-- [func tag<V>(for: V.Type) -> V?](containervalues/tag(for:).md)
+- [func tag<V>(for: V.Type) -> V?](./containervalues/tag%28for%29.md)
   The tag value for the given type if the container values contains one.
 ### Subscripts
-- [subscript<Key>(Key.Type) -> Key.Value](containervalues/subscript(_:).md)
+- [subscript<Key>(Key.Type) -> Key.Value](./containervalues/subscript%28_%29.md)
   Accesses the particular container value associated with a custom key.
 
 ## See Also
 
-- [struct Subview](subview.md)
+### Accessing a container’s subviews
+- [struct Subview](./subview.md)
   An opaque value representing a subview of another view.
-- [struct SubviewsCollection](subviewscollection.md)
+- [struct SubviewsCollection](./subviewscollection.md)
   An opaque collection representing the subviews of view.
-- [struct SubviewsCollectionSlice](subviewscollectionslice.md)
+- [struct SubviewsCollectionSlice](./subviewscollectionslice.md)
   A slice of a SubviewsCollection.
-- [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](view/containervalue(_:_:).md)
+- [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](./view/containervalue%28_,_%29.md)
   Sets a particular container value of a view.
-- [protocol ContainerValueKey](containervaluekey.md)
+- [protocol ContainerValueKey](./containervaluekey.md)
   A key for accessing container values.
 
 

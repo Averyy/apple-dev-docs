@@ -1,12 +1,15 @@
 # NSUserNotification
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A notification that can be scheduled for display in the notification center.
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 11.0
+
+> **Deprecated**: Use the [User Notifications](../UserNotifications/UserNotifications.md) framework instead.
 
 ## Declaration
 
@@ -14,94 +17,99 @@ A notification that can be scheduled for display in the notification center.
 class NSUserNotification
 ```
 
+```objc
+@interface NSUserNotification : NSObject
+```
+
 #### Overview
 
-When the system delivers a notification, information about when the notification was actually presented to the user (if at all) and other details are provided in the notification object. User applications can create [`NSUserNotification`](nsusernotification.md) objects and register them with the [`NSUserNotificationCenter`](nsusernotificationcenter.md) object to notify the user when an application requires attention.
+When the system delivers a notification, information about when the notification was actually presented to the user (if at all) and other details are provided in the notification object. User applications can create [`NSUserNotification`](./nsusernotification.md) objects and register them with the [`NSUserNotificationCenter`](./nsusernotificationcenter.md) object to notify the user when an application requires attention.
 
 ##### Threading Information
 
-The [`NSUserNotificationCenter`](nsusernotificationcenter.md) class and the `NSUserNotification` class are both thread safe.
+The [`NSUserNotificationCenter`](./nsusernotificationcenter.md) class and the `NSUserNotification` class are both thread safe.
 
 ## Topics
 
 ### Display Information
-- [var title: String?](nsusernotification/title.md)
+- [var title: String?](./nsusernotification/title.md)
   Specifies the title of the notification.
-- [var subtitle: String?](nsusernotification/subtitle.md)
+- [var subtitle: String?](./nsusernotification/subtitle.md)
   Specifies the subtitle of the notification.
-- [var informativeText: String?](nsusernotification/informativetext.md)
+- [var informativeText: String?](./nsusernotification/informativetext.md)
   The body text of the notification.
-- [var contentImage: NSImage?](nsusernotification/contentimage.md)
+- [var contentImage: NSImage?](./nsusernotification/contentimage.md)
   Image shown in the content of the notification.
-- [var identifier: String?](nsusernotification/identifier.md)
+- [var identifier: String?](./nsusernotification/identifier.md)
   A string that uniquely identifies a notification.
-- [var response: NSAttributedString?](nsusernotification/response.md)
+- [var response: NSAttributedString?](./nsusernotification/response.md)
   The response with which the user responded to a notification.
-- [var responsePlaceholder: String?](nsusernotification/responseplaceholder.md)
+- [var responsePlaceholder: String?](./nsusernotification/responseplaceholder.md)
   Optional placeholder string for inline reply field.
 ### Displayed Notification Buttons
-- [var hasActionButton: Bool](nsusernotification/hasactionbutton.md)
+- [var hasActionButton: Bool](./nsusernotification/hasactionbutton.md)
   A Boolean value that specifies whether the notification displays an action button.
-- [var actionButtonTitle: String](nsusernotification/actionbuttontitle.md)
+- [var actionButtonTitle: String](./nsusernotification/actionbuttontitle.md)
   Specifies the title of the action button displayed in the notification.
-- [var otherButtonTitle: String](nsusernotification/otherbuttontitle.md)
+- [var otherButtonTitle: String](./nsusernotification/otherbuttontitle.md)
   Specifies a custom title for the close button in an alert-style notification.
-- [var hasReplyButton: Bool](nsusernotification/hasreplybutton.md)
+- [var hasReplyButton: Bool](./nsusernotification/hasreplybutton.md)
   A Boolean value that specifies whether the notification displays a reply button.
 ### Delivery Timing
-- [var deliveryDate: Date?](nsusernotification/deliverydate.md)
+- [var deliveryDate: Date?](./nsusernotification/deliverydate.md)
   Specifies when the notification should be delivered.
-- [var actualDeliveryDate: Date?](nsusernotification/actualdeliverydate.md)
+- [var actualDeliveryDate: Date?](./nsusernotification/actualdeliverydate.md)
   The date this notification was actually delivered.
-- [var deliveryRepeatInterval: DateComponents?](nsusernotification/deliveryrepeatinterval.md)
+- [var deliveryRepeatInterval: DateComponents?](./nsusernotification/deliveryrepeatinterval.md)
   Specifies the date components that control how often a user notification is repeated.
-- [var deliveryTimeZone: TimeZone?](nsusernotification/deliverytimezone.md)
+- [var deliveryTimeZone: TimeZone?](./nsusernotification/deliverytimezone.md)
   Specify the time zone to interpret the delivery date in.
 ### Delivery Information
-- [var isPresented: Bool](nsusernotification/ispresented.md)
+- [var isPresented: Bool](./nsusernotification/ispresented.md)
   Specifies whether the user notification has been presented.
-- [var isRemote: Bool](nsusernotification/isremote.md)
+- [var isRemote: Bool](./nsusernotification/isremote.md)
   Specifies whether the remote was generated by a push notification.
-- [var soundName: String?](nsusernotification/soundname.md)
+- [var soundName: String?](./nsusernotification/soundname.md)
   Specifies the name of the sound to play when the notification is delivered.
 ### User Notification Activation Method
-- [var activationType: NSUserNotification.ActivationType](nsusernotification/activationtype-swift.property.md)
+- [var activationType: NSUserNotification.ActivationType](./nsusernotification/activationtype-swift.property.md)
   Specifies what caused a user notification to occur.
-- [var additionalActivationAction: NSUserNotificationAction?](nsusernotification/additionalactivationaction.md)
+- [var additionalActivationAction: NSUserNotificationAction?](./nsusernotification/additionalactivationaction.md)
   An additional action selected by the user.
-- [var additionalActions: [NSUserNotificationAction]?](nsusernotification/additionalactions.md)
+- [var additionalActions: [NSUserNotificationAction]?](./nsusernotification/additionalactions.md)
   The actions that can be taken on a notification in addition to the default action.
 ### User Notification User Information
-- [var userInfo: [String : Any]?](nsusernotification/userinfo.md)
+- [var userInfo: [String : Any]?](./nsusernotification/userinfo.md)
   Application-specific user info that can be attached to the notification.
 ### Constants
-- [NSUserNotification.ActivationType](nsusernotification/activationtype-swift.enum.md)
+- [NSUserNotification.ActivationType](./nsusernotification/activationtype-swift.enum.md)
   These constants describe how the user notification was activated.
-- [let NSUserNotificationDefaultSoundName: String](nsusernotificationdefaultsoundname.md)
+- [let NSUserNotificationDefaultSoundName: String](./nsusernotificationdefaultsoundname.md)
   The default notification sound.
 ### Initializers
-- [init()](nsusernotification/init.md)
+- [init()](./nsusernotification/init%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSUserNotificationAction](nsusernotificationaction.md)
+### User Notifications
+- [class NSUserNotificationAction](./nsusernotificationaction.md)
   An action that the user can take in response to receiving a notification.
-- [class NSUserNotificationCenter](nsusernotificationcenter.md)
+- [class NSUserNotificationCenter](./nsusernotificationcenter.md)
   An object that delivers notifications from apps to the user.
-- [protocol NSUserNotificationCenterDelegate](nsusernotificationcenterdelegate.md)
+- [protocol NSUserNotificationCenterDelegate](./nsusernotificationcenterdelegate.md)
   An interface that enables customizing the behavior of the default notification center.
 
 

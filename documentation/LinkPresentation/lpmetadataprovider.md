@@ -1,7 +1,8 @@
 # LPMetadataProvider
 
 **Framework**: Link Presentation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that retrieves metadata for a URL.
 
@@ -20,15 +21,19 @@ An object that retrieves metadata for a URL.
 class LPMetadataProvider
 ```
 
+```objc
+@interface LPMetadataProvider : NSObject
+```
+
 #### Overview
 
-Use [`LPMetadataProvider`](lpmetadataprovider.md) to fetch metadata for a URL, including its title, icon, and image or video links. All properties on the resulting [`LPLinkMetadata`](lplinkmetadata.md) instance are optional.
+Use [`LPMetadataProvider`](./lpmetadataprovider.md) to fetch metadata for a URL, including its title, icon, and image or video links. All properties on the resulting [`LPLinkMetadata`](./lplinkmetadata.md) instance are optional.
 
-> **Note**: To enable macOS clients to fetch metadata for remote URLs, add the [`com.apple.security.network.client`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.network.client) entitlement.
+> **Note**: To enable macOS clients to fetch metadata for remote URLs, add the [`com.apple.security.network.client`](../BundleResources/entitlements/com.apple.security.network.client.md) entitlement.
 
-#### Fetch Link Metadata From a Url
+#### Fetch link metadata from a URL
 
-For each metadata request, create an instance of [`LPMetadataProvider`](lpmetadataprovider.md) and call [`startFetchingMetadata(for:completionHandler:)`](lpmetadataprovider/startfetchingmetadata(for:completionhandler:)-54z5i.md).
+For each metadata request, create an instance of [`LPMetadataProvider`](./lpmetadataprovider.md) and call [`startFetchingMetadata(for:completionHandler:)`](./lpmetadataprovider/startfetchingmetadata%28for,completionhandler%29-54z5i.md).
 
 In the completion handler, check the error. If your user doesn’t have a network connection, the fetch can fail. If the server doesn’t respond or is too slow, the fetch can time out. Alternatively, the app may cancel the request, or an unknown error may occur.
 
@@ -48,38 +53,39 @@ metadataProvider.startFetchingMetadata(for: url) { metadata, error in
 }
 ```
 
-For more information about handling errors, see [`LPError`](lperror.md).
+For more information about handling errors, see [`LPError`](./lperror.md).
 
 ## Topics
 
 ### Fetching metadata
-- [func startFetchingMetadata(for: URL, completionHandler: (LPLinkMetadata?, (any Error)?) -> Void)](lpmetadataprovider/startfetchingmetadata(for:completionhandler:)-54z5i.md)
+- [func startFetchingMetadata(for: URL, completionHandler: (LPLinkMetadata?, (any Error)?) -> Void)](./lpmetadataprovider/startfetchingmetadata%28for,completionhandler%29-54z5i.md)
   Fetches metadata for the given URL.
-- [func cancel()](lpmetadataprovider/cancel.md)
+- [func cancel()](./lpmetadataprovider/cancel%28%29.md)
   Cancels a metadata request.
-- [var shouldFetchSubresources: Bool](lpmetadataprovider/shouldfetchsubresources.md)
+- [var shouldFetchSubresources: Bool](./lpmetadataprovider/shouldfetchsubresources.md)
   A Boolean value indicating whether to download subresources specified by the metadata.
-- [var timeout: TimeInterval](lpmetadataprovider/timeout.md)
+- [var timeout: TimeInterval](./lpmetadataprovider/timeout.md)
   The time interval after which the request automatically fails if it hasn’t already completed.
 ### Instance Methods
-- [func startFetchingMetadata(for: URLRequest, completionHandler: (LPLinkMetadata?, (any Error)?) -> Void)](lpmetadataprovider/startfetchingmetadata(for:completionhandler:)-9e6s8.md)
+- [func startFetchingMetadata(for: URLRequest, completionHandler: (LPLinkMetadata?, (any Error)?) -> Void)](./lpmetadataprovider/startfetchingmetadata%28for,completionhandler%29-9e6s8.md)
   Fetches metadata for the given `NSURLRequest`.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class LPLinkMetadata](lplinkmetadata.md)
+### Link metadata
+- [class LPLinkMetadata](./lplinkmetadata.md)
   An object that contains metadata about a URL.
 
 

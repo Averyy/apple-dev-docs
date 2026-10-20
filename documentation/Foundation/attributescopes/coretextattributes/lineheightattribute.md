@@ -1,7 +1,8 @@
 # AttributeScopes.CoreTextAttributes.LineHeightAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An attribute for defining the height of lines in a text.
 
@@ -23,15 +24,15 @@ enum LineHeightAttribute
 
 #### Overview
 
-> ❗ **Important**: Note that this attribute is not for usage with CoreText APIs directly, but exposed to give other frameworks common vocabulary to express the line height concept as defined by CoreText in Swift. For more details, see [`AttributeScopes.CoreTextAttributes`](attributescopes/coretextattributes.md).
+> ❗ **Important**: Note that this attribute is not for usage with CoreText APIs directly, but exposed to give other frameworks common vocabulary to express the line height concept as defined by CoreText in Swift. For more details, see [`AttributeScopes.CoreTextAttributes`](../coretextattributes.md).
 
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

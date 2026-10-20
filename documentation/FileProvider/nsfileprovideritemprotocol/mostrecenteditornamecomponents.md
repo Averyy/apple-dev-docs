@@ -1,7 +1,8 @@
 # mostRecentEditorNameComponents
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The most recent editor’s name.
 
@@ -18,13 +19,18 @@ The most recent editor’s name.
 optional var mostRecentEditorNameComponents: PersonNameComponents? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSPersonNameComponents * mostRecentEditorNameComponents;
+```
+
 ## See Also
 
-- [var isShared: Bool](nsfileprovideritemprotocol/isshared.md)
+### Sharing
+- [var isShared: Bool](./isshared.md)
   A Boolean value that indicates whether the item is shared with other users.
-- [var isSharedByCurrentUser: Bool](nsfileprovideritemprotocol/issharedbycurrentuser.md)
+- [var isSharedByCurrentUser: Bool](./issharedbycurrentuser.md)
   A Boolean value that indicates whether the item was shared by the current user.
-- [var ownerNameComponents: PersonNameComponents?](nsfileprovideritemprotocol/ownernamecomponents.md)
+- [var ownerNameComponents: PersonNameComponents?](./ownernamecomponents.md)
   The name of the item’s owner.
 
 

@@ -1,17 +1,22 @@
 # init(deviceWhite:alpha:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color object using the given opacity and grayscale values.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(deviceWhite white: CGFloat, alpha: CGFloat)
+```
+
+```objc
++ (NSColor *) colorWithDeviceWhite:(CGFloat) white alpha:(CGFloat) alpha;
 ```
 
 #### Return Value
@@ -29,13 +34,15 @@ Values below 0.0 are interpreted as 0.0, and values above 1.0 are interpreted as
 
 ## See Also
 
-- [func getWhite(UnsafeMutablePointer<CGFloat>?, alpha: UnsafeMutablePointer<CGFloat>?)](nscolor/getwhite(_:alpha:).md)
+### Related Documentation
+- [func getWhite(UnsafeMutablePointer<CGFloat>?, alpha: UnsafeMutablePointer<CGFloat>?)](./getwhite%28_,alpha%29.md)
   Returns the grayscale and alpha values of the color.
-- [init(white: CGFloat, alpha: CGFloat)](nscolor/init(white:alpha:).md)
+### Creating a color using white components
+- [init(white: CGFloat, alpha: CGFloat)](./init%28white,alpha%29.md)
   Creates a color object with the specified brightness and alpha channel values.
-- [init(calibratedWhite: CGFloat, alpha: CGFloat)](nscolor/init(calibratedwhite:alpha:).md)
+- [init(calibratedWhite: CGFloat, alpha: CGFloat)](./init%28calibratedwhite,alpha%29.md)
   Creates a color object using the given opacity and grayscale values.
-- [init(genericGamma22White: CGFloat, alpha: CGFloat)](nscolor/init(genericgamma22white:alpha:).md)
+- [init(genericGamma22White: CGFloat, alpha: CGFloat)](./init%28genericgamma22white,alpha%29.md)
   Returns a color object with the specified white and alpha values in the GenericGamma22 colorspace.
 
 

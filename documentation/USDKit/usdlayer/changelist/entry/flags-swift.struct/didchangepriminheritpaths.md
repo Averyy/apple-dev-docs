@@ -1,7 +1,8 @@
 # didChangePrimInheritPaths
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether a prim’s inherit paths list changed.
 

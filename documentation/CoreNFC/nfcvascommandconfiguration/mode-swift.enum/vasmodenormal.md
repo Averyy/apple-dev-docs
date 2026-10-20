@@ -1,19 +1,24 @@
 # VASModeNormal
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that indicates the Full VAS Protocol mode.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
+- iOS 13.0+ - Deprecated in 14.0 (renamed: NFCVASCommandConfiguration.Mode.normal)
+- iPadOS 13.0+ - Deprecated in 14.0 (renamed: NFCVASCommandConfiguration.Mode.normal)
+- Mac Catalyst 13.1+ - Deprecated in 14.0 (renamed: NFCVASCommandConfiguration.Mode.normal)
 
 ## Declaration
 
 ```swift
 static var VASModeNormal: NFCVASCommandConfiguration.Mode { get }
+```
+
+```c
+VASModeNormal
 ```
 
 

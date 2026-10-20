@@ -1,7 +1,8 @@
 # shadowColor
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of any shadow cast by a sprite.
 
@@ -16,8 +17,28 @@ The color of any shadow cast by a sprite.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+var shadowColor: UIColor { get set }
+```
+
+*macOS*
+
 ```swift
 var shadowColor: NSColor { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic) UIColor * shadowColor;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic) NSColor * shadowColor;
 ```
 
 #### Discussion
@@ -30,11 +51,12 @@ Shadows may be cast on content that is rendered prior to the sprite, even if tha
 
 ## See Also
 
-- [var ambientColor: UIColor](sklightnode/ambientcolor.md)
+### Configuring the Lighting Properties
+- [var ambientColor: UIColor](./ambientcolor.md)
   The ambient color of the light.
-- [var lightColor: UIColor](sklightnode/lightcolor.md)
+- [var lightColor: UIColor](./lightcolor.md)
   The diffuse and specular color of the light source.
-- [var falloff: CGFloat](sklightnode/falloff.md)
+- [var falloff: CGFloat](./falloff.md)
   The exponent for the rate of decay of the light source.
 
 

@@ -1,7 +1,8 @@
 # init(cString:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 15.4+
@@ -14,10 +15,11 @@ convenience init(cString name: UnsafeBufferPointer<CChar>)
 
 ## See Also
 
-- [convenience init(bytes: UnsafeBufferPointer<CChar>)](fsfilename/init(bytes:).md)
-- [convenience init(data: Data)](fsfilename/init(data:).md)
+### Creating a filename
+- [convenience init(bytes: UnsafeBufferPointer<CChar>)](./init%28bytes%29.md)
+- [convenience init(data: Data)](./init%28data%29.md)
   Creates a filename by copying a character sequence data object.
-- [convenience init(string: String)](fsfilename/init(string:).md)
+- [convenience init(string: String)](./init%28string%29.md)
   Creates a filename by copying a character sequence from a string instance.
 
 

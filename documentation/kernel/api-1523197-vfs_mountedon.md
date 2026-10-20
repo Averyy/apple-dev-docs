@@ -1,7 +1,8 @@
 # vfs_mountedon
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Check whether a given block device has a filesystem mounted on it.
 
@@ -10,11 +11,11 @@ Check whether a given block device has a filesystem mounted on it.
 
 ## Declaration
 
-```swift
+```c
 int vfs_mountedon(struct vnode *vp);
 ```
 
-#### Return_value
+#### Return Value
 
 EBUSY if vnode is indeed the source of a filesystem; 0 if it is not.
 

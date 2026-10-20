@@ -1,7 +1,8 @@
 # update(fromContentsOf:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the buffer slice’s initialized memory with every element of the source.
 
@@ -20,6 +21,8 @@ Updates the buffer slice’s initialized memory with every element of the source
 func update<Element>(fromContentsOf source: some Collection) -> Slice<Base>.Index where Base == UnsafeMutableBufferPointer<Element>
 ```
 
+Available when `Base` conforms to `Collection`.
+
 #### Return Value
 
 An index one past the index of the last element updated.
@@ -32,7 +35,7 @@ The returned index is one past the index of the last element updated. If `source
 
 > **Note**: The memory regions referenced by `source` and this buffer slice may overlap.
 
-> **Note**: `self.count` >= `source.count`
+> **Precondition**: `self.count` >= `source.count`
 
 ## Parameters
 

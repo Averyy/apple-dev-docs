@@ -1,7 +1,8 @@
 # textureSemantic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The intended use of the object’s texture property.
 
@@ -11,7 +12,7 @@ The intended use of the object’s texture property.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ static let textureSemantic: TextureResource.Semantic
 
 ## See Also
 
-- [var texture: PhysicallyBasedMaterial.Texture?](physicallybasedmaterial/roughness-swift.struct/texture.md)
+### Accessing roughness data
+- [var texture: PhysicallyBasedMaterial.Texture?](./texture.md)
   The roughness values as a UV-mapped image texture.
-- [var scale: Float](physicallybasedmaterial/roughness-swift.struct/scale.md)
+- [var scale: Float](./scale.md)
   The roughness value for the entire entity.
 
 

@@ -1,7 +1,8 @@
 # a
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A publisher to merge.
 
@@ -22,15 +23,16 @@ let a: A
 
 ## See Also
 
-- [let b: B](publishers/merge6/b.md)
+### Inspecting publisher properties
+- [let b: B](./b.md)
   A second publisher to merge.
-- [let c: C](publishers/merge6/c.md)
+- [let c: C](./c.md)
   A third publisher to merge.
-- [let d: D](publishers/merge6/d.md)
+- [let d: D](./d.md)
   A fourth publisher to merge.
-- [let e: E](publishers/merge6/e.md)
+- [let e: E](./e.md)
   A fifth publisher to merge.
-- [let f: F](publishers/merge6/f.md)
+- [let f: F](./f.md)
   A sixth publisher to merge.
 
 

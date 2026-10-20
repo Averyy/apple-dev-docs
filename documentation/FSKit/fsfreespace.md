@@ -1,7 +1,8 @@
 # FSFreeSpace
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A free space object that pairs free space values with atomic sequence numbers.
 
@@ -14,37 +15,42 @@ A free space object that pairs free space values with atomic sequence numbers.
 class FSFreeSpace
 ```
 
+```objc
+@interface FSFreeSpace : NSObject
+```
+
 ## Topics
 
 ### Creating a free space instance
-- [init()](fsfreespace/init.md)
+- [init()](./fsfreespace/init%28%29.md)
   Creates an unpopulated free space instance.
 ### Setting the free space value
-- [func populate(bytes: UInt64)](fsfreespace/populate(bytes:).md)
+- [func populate(bytes: UInt64)](./fsfreespace/populate%28bytes%29.md)
   Populates this instance with the given free space value and atomically assigns a sequence number.
 ### Working with special instances
-- [class var noUpdate: FSFreeSpace](fsfreespace/noupdate.md)
+- [class var noUpdate: FSFreeSpace](./fsfreespace/noupdate.md)
   A sentinel instance that indicates no free space update occurred.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [init?(newItem: FSItem, newItemName: FSFileName, newItemAttributes: FSItem.Attributes, directoryAttributes: FSItem.Attributes, freeSpace: FSFreeSpace?)](fscreateitemresult/init(newitem:newitemname:newitemattributes:directoryattributes:freespace:).md)
+### Creating a create-item result
+- [init?(newItem: FSItem, newItemName: FSFileName, newItemAttributes: FSItem.Attributes, directoryAttributes: FSItem.Attributes, freeSpace: FSFreeSpace?)](./fscreateitemresult/init%28newitem,newitemname,newitemattributes,directoryattributes,freespace%29.md)
   Creates a result for an item-creation operation.
-- [class FSFileName](fsfilename.md)
+- [class FSFileName](./fsfilename.md)
   The name of a file, expressed as a data buffer.
-- [FSItem.Attributes](fsitem/attributes.md)
+- [FSItem.Attributes](./fsitem/attributes.md)
   Attributes of an item, such as size, creation and modification times, and user and group identifiers.
 
 

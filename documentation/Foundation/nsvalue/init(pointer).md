@@ -1,7 +1,8 @@
 # init(pointer:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a value object containing the specified pointer.
 
@@ -20,19 +21,23 @@ Creates a value object containing the specified pointer.
 init(pointer: UnsafeRawPointer?)
 ```
 
+```objc
++ (NSValue *) valueWithPointer:(const void *) pointer;
+```
+
 #### Return Value
 
 A new value object that contains `aPointer`.
 
 #### Discussion
 
-This method is equivalent to invoking [`init(_:withObjCType:)`](nsvalue/init(_:withobjctype:).md) in this manner:
+This method is equivalent to invoking [`init(_:withObjCType:)`](./init%28_,withobjctype%29.md) in this manner:
 
 ```objc
 NSValue *theValue = [NSValue value:&aPointer withObjCType:@encode(void *)];
 ```
 
-This method does not copy the contents of `aPointer`, so you must not to free the memory at the pointer destination while the [`NSValue`](nsvalue.md) object exists. [`NSData`](nsdata.md) objects may be more suited for arbitrary pointers than [`NSValue`](nsvalue.md) objects.
+This method does not copy the contents of `aPointer`, so you must not to free the memory at the pointer destination while the [`NSValue`](../nsvalue.md) object exists. [`NSData`](../nsdata.md) objects may be more suited for arbitrary pointers than [`NSValue`](../nsvalue.md) objects.
 
 ## Parameters
 
@@ -40,11 +45,12 @@ This method does not copy the contents of `aPointer`, so you must not to free th
 
 ## See Also
 
-- [init(nonretainedObject: Any?)](nsvalue/init(nonretainedobject:).md)
+### Working with Pointer and Object Values
+- [init(nonretainedObject: Any?)](./init%28nonretainedobject%29.md)
   Creates a value object containing the specified object.
-- [var pointerValue: UnsafeMutableRawPointer?](nsvalue/pointervalue.md)
+- [var pointerValue: UnsafeMutableRawPointer?](./pointervalue.md)
   Returns the value as an untyped pointer.
-- [var nonretainedObjectValue: Any?](nsvalue/nonretainedobjectvalue.md)
+- [var nonretainedObjectValue: Any?](./nonretainedobjectvalue.md)
   The value as a non-retained pointer to an object.
 
 

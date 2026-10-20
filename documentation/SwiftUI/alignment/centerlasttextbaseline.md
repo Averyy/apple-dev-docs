@@ -1,7 +1,8 @@
 # centerLastTextBaseline
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A guide that marks the bottom-most text baseline in a view.
 
@@ -23,21 +24,22 @@ static var centerLastTextBaseline: Alignment { get }
 
 #### Discussion
 
-This alignment combines the [`center`](horizontalalignment/center.md) horizontal guide and the [`lastTextBaseline`](verticalalignment/lasttextbaseline.md) vertical guide:
+This alignment combines the [`center`](../horizontalalignment/center.md) horizontal guide and the [`lastTextBaseline`](../verticalalignment/lasttextbaseline.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-centerLastTextBaseline-1-iOS@2x.png)
+![A square that’s divided into four equal quadrants. The upper-](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Alignment-centerLastTextBaseline-1-iOS@2x.png)
 
 ## See Also
 
-- [static var leadingFirstTextBaseline: Alignment](alignment/leadingfirsttextbaseline.md)
+### Getting text baseline guides
+- [static var leadingFirstTextBaseline: Alignment](./leadingfirsttextbaseline.md)
   A guide that marks the leading edge and top-most text baseline in a view.
-- [static var centerFirstTextBaseline: Alignment](alignment/centerfirsttextbaseline.md)
+- [static var centerFirstTextBaseline: Alignment](./centerfirsttextbaseline.md)
   A guide that marks the top-most text baseline in a view.
-- [static var trailingFirstTextBaseline: Alignment](alignment/trailingfirsttextbaseline.md)
+- [static var trailingFirstTextBaseline: Alignment](./trailingfirsttextbaseline.md)
   A guide that marks the trailing edge and top-most text baseline in a view.
-- [static var leadingLastTextBaseline: Alignment](alignment/leadinglasttextbaseline.md)
+- [static var leadingLastTextBaseline: Alignment](./leadinglasttextbaseline.md)
   A guide that marks the leading edge and bottom-most text baseline in a view.
-- [static var trailingLastTextBaseline: Alignment](alignment/trailinglasttextbaseline.md)
+- [static var trailingLastTextBaseline: Alignment](./trailinglasttextbaseline.md)
   A guide that marks the trailing edge and bottom-most text baseline in a view.
 
 

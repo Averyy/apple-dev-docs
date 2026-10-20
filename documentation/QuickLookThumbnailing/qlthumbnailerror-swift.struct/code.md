@@ -1,7 +1,8 @@
 # QLThumbnailError.Code
 
 **Framework**: Quick Look Thumbnailing  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes that may be returned when generating a thumbnail.
 
@@ -18,39 +19,44 @@ Error codes that may be returned when generating a thumbnail.
 enum Code
 ```
 
+```c
+enum QLThumbnailError : NSInteger;
+```
+
 ## Topics
 
 ### Error Codes
-- [QLThumbnailError.Code.generationFailed](qlthumbnailerror-swift.struct/code/generationfailed.md)
+- [QLThumbnailError.Code.generationFailed](./code/generationfailed.md)
   The thumbnail couldn’t be created for the given file.
-- [QLThumbnailError.Code.noCachedThumbnail](qlthumbnailerror-swift.struct/code/nocachedthumbnail.md)
+- [QLThumbnailError.Code.noCachedThumbnail](./code/nocachedthumbnail.md)
   A low-quality thumbnail couldn’t be created.
-- [QLThumbnailError.Code.noCloudThumbnail](qlthumbnailerror-swift.struct/code/nocloudthumbnail.md)
+- [QLThumbnailError.Code.noCloudThumbnail](./code/nocloudthumbnail.md)
   The thumbnail for a remote file couldn’t be created.
-- [QLThumbnailError.Code.requestCancelled](qlthumbnailerror-swift.struct/code/requestcancelled.md)
+- [QLThumbnailError.Code.requestCancelled](./code/requestcancelled.md)
   The request to create a thumbnail was canceled.
-- [QLThumbnailError.Code.requestInvalid](qlthumbnailerror-swift.struct/code/requestinvalid.md)
+- [QLThumbnailError.Code.requestInvalid](./code/requestinvalid.md)
   The request to create a thumbnail was invalid, for example, there’s no file at a provided URL.
-- [QLThumbnailError.Code.savingToURLFailed](qlthumbnailerror-swift.struct/code/savingtourlfailed.md)
+- [QLThumbnailError.Code.savingToURLFailed](./code/savingtourlfailed.md)
   The thumbnail couldn’t be saved at the given URL.
 ### Initializers
-- [init?(rawValue: Int)](qlthumbnailerror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let QLThumbnailErrorDomain: String](qlthumbnailerrordomain.md)
+### Error Information
+- [let QLThumbnailErrorDomain: String](../qlthumbnailerrordomain.md)
   The error domain of the QuickLookThumbnailing framework.
-- [struct QLThumbnailError](qlthumbnailerror-swift.struct.md)
+- [struct QLThumbnailError](../qlthumbnailerror-swift.struct.md)
   Error information that might return when you generate a thumbnail.
 
 

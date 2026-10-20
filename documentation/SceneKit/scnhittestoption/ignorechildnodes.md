@@ -1,18 +1,19 @@
 # ignoreChildNodes
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to ignore child nodes when searching.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,28 +21,33 @@ An option to ignore child nodes when searching.
 static let ignoreChildNodes: SCNHitTestOption
 ```
 
+```c
+extern SCNHitTestOption const SCNHitTestIgnoreChildNodesKey;
+```
+
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a Boolean value. The default value is [`false`](https://developer.apple.com/documentation/swift/false), specifying that hit-testing may return objects from any portion of the node hierarchy. Specify [`true`](https://developer.apple.com/documentation/swift/true) to search only the node specified by the [`rootNode`](scnhittestoption/rootnode.md) key.
+The value for this key is an [`NSNumber`](../../Foundation/nsnumber.md) object containing a Boolean value. The default value is [`false`](../../Swift/false.md), specifying that hit-testing may return objects from any portion of the node hierarchy. Specify [`true`](../../Swift/true.md) to search only the node specified by the [`rootNode`](./rootnode.md) key.
 
 ## See Also
 
-- [static let backFaceCulling: SCNHitTestOption](scnhittestoption/backfaceculling.md)
+### Options
+- [static let backFaceCulling: SCNHitTestOption](./backfaceculling.md)
   An option to ignore faces not oriented toward the camera.
-- [static let boundingBoxOnly: SCNHitTestOption](scnhittestoption/boundingboxonly.md)
+- [static let boundingBoxOnly: SCNHitTestOption](./boundingboxonly.md)
   An option to search for objects by bounding box only.
-- [static let categoryBitMask: SCNHitTestOption](scnhittestoption/categorybitmask.md)
+- [static let categoryBitMask: SCNHitTestOption](./categorybitmask.md)
   An option to search only for objects matching a specified bitmask.
-- [static let clipToZRange: SCNHitTestOption](scnhittestoption/cliptozrange.md)
+- [static let clipToZRange: SCNHitTestOption](./cliptozrange.md)
   An option to search for objects only within the depth range of the current point of view.
-- [static let ignoreHiddenNodes: SCNHitTestOption](scnhittestoption/ignorehiddennodes.md)
+- [static let ignoreHiddenNodes: SCNHitTestOption](./ignorehiddennodes.md)
   An option to ignore hidden nodes when searching.
-- [static let rootNode: SCNHitTestOption](scnhittestoption/rootnode.md)
+- [static let rootNode: SCNHitTestOption](./rootnode.md)
   The root of the node hierarchy to be searched.
-- [static let searchMode: SCNHitTestOption](scnhittestoption/searchmode.md)
+- [static let searchMode: SCNHitTestOption](./searchmode.md)
   An option for the number and order of hit test results to provide.
-- [enum SCNHitTestSearchMode](scnhittestsearchmode.md)
-  Possible values for the [`searchMode`](scnhittestoption/searchmode.md) option used with hit-testing methods.
+- [enum SCNHitTestSearchMode](../scnhittestsearchmode.md)
+  Possible values for the [`searchMode`](./searchmode.md) option used with hit-testing methods.
 
 
 ---

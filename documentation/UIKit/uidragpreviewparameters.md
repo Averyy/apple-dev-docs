@@ -1,7 +1,8 @@
 # UIDragPreviewParameters
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A set of parameters for adjusting the appearance of a drag item preview or a targeted drag item preview.
 
@@ -18,32 +19,37 @@ A set of parameters for adjusting the appearance of a drag item preview or a tar
 class UIDragPreviewParameters
 ```
 
+```objc
+@interface UIDragPreviewParameters : UIPreviewParameters
+```
+
 #### Overview
 
-You can refine the appearance of a preview by providing additional parameters when creating a [`UIDragPreview`](uidragpreview.md) or [`UITargetedDragPreview`](uitargeteddragpreview.md) object. The parameters specify different visual aspects of the preview, including the background color and the visible area of the view associated with the preview.
+You can refine the appearance of a preview by providing additional parameters when creating a [`UIDragPreview`](./uidragpreview.md) or [`UITargetedDragPreview`](./uitargeteddragpreview.md) object. The parameters specify different visual aspects of the preview, including the background color and the visible area of the view associated with the preview.
 
 ## Relationships
 
 ### Inherits From
-- [UIPreviewParameters](uipreviewparameters.md)
+- [UIPreviewParameters](./uipreviewparameters.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UIDragPreview](uidragpreview.md)
+### Custom drag item previews
+- [class UIDragPreview](./uidragpreview.md)
   A graphical preview for a single drag item, used by the system after a drag has started and when no related animation is running.
-- [class UIDragPreviewTarget](uidragpreviewtarget.md)
+- [class UIDragPreviewTarget](./uidragpreviewtarget.md)
   A geometric specification for the source or destination of a drag item preview, used by the system when a user drops items or cancels a drag activity.
-- [class UITargetedDragPreview](uitargeteddragpreview.md)
+- [class UITargetedDragPreview](./uitargeteddragpreview.md)
   A drag item preview used by the system during lift, drop, or cancellation animation.
 
 

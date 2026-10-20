@@ -1,7 +1,8 @@
 # /(_:_:)
 
 **Framework**: Create ML  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Creates a column by dividing each element of the given column by the given value.
 
@@ -19,6 +20,16 @@ Creates a column by dividing each element of the given column by the given value
 static func / (a: MLUntypedColumn, b: any MLDataValueConvertible) -> MLUntypedColumn
 ```
 
+**Other overloads**:
+
+```swift
+static func / (a: MLUntypedColumn, b: MLUntypedColumn) -> MLUntypedColumn
+```
+
+```swift
+static func / (a: any MLDataValueConvertible, b: MLUntypedColumn) -> MLUntypedColumn
+```
+
 #### Return Value
 
 A new column if the column and value have the same underlying type; otherwise an invalid column.
@@ -30,11 +41,12 @@ A new column if the column and value have the same underlying type; otherwise an
 
 ## See Also
 
-- [static func + (MLUntypedColumn, any MLDataValueConvertible) -> MLUntypedColumn](mluntypedcolumn/+(_:_:)-4vnbk.md)
+### Combining a column with a value to generate an untyped column
+- [static func + (MLUntypedColumn, any MLDataValueConvertible) -> MLUntypedColumn](./plus%28_,_%29-4vnbk.md)
   Creates a column by adding each element of the given column to the given value.
-- [static func - (MLUntypedColumn, any MLDataValueConvertible) -> MLUntypedColumn](mluntypedcolumn/-(_:_:)-4uigi.md)
+- [static func - (MLUntypedColumn, any MLDataValueConvertible) -> MLUntypedColumn](./minus%28_,_%29-4uigi.md)
   Creates a column by subtracting the given value from each element of the given column.
-- [static func * (MLUntypedColumn, any MLDataValueConvertible) -> MLUntypedColumn](mluntypedcolumn/*(_:_:)-6gnlx.md)
+- [static func * (MLUntypedColumn, any MLDataValueConvertible) -> MLUntypedColumn](./star%28_,_%29-6gnlx.md)
   Creates a column by multiplying each element of the given column by the given value.
 
 

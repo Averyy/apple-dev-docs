@@ -1,12 +1,13 @@
 # isRulerVisible
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that controls whether the scroll view enclosing text views sharing the receiver’s layout manager displays the ruler.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,23 @@ A Boolean value that controls whether the scroll view enclosing text views shari
 var isRulerVisible: Bool { get set }
 ```
 
+```objc
+@property (getter=isRulerVisible) BOOL rulerVisible;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) to show the ruler, [`false`](https://developer.apple.com/documentation/swift/false) to hide the ruler. By default, the ruler is hidden.
+[`true`](../../Swift/true.md) to show the ruler, [`false`](../../Swift/false.md) to hide the ruler. By default, the ruler is hidden.
 
 ## See Also
 
-- [func toggleRuler(Any?)](nstext/toggleruler(_:).md)
+### Related Documentation
+- [func toggleRuler(Any?)](../nstext/toggleruler%28_%29.md)
   This action method shows or hides the ruler, if the receiver is enclosed in a scroll view.
-- [var usesRuler: Bool](nstextview/usesruler.md)
+### Using text formatting controls
+- [var usesRuler: Bool](./usesruler.md)
   A Boolean value that controls whether the text views sharing the receiver’s layout manager use a ruler.
-- [var usesInspectorBar: Bool](nstextview/usesinspectorbar.md)
+- [var usesInspectorBar: Bool](./usesinspectorbar.md)
   A Boolean value that indicates whether this text view uses the inspector bar.
 
 

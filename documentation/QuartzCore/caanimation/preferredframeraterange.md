@@ -1,7 +1,8 @@
 # preferredFrameRateRange
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var preferredFrameRateRange: CAFrameRateRange { get set }
+```
+
+```objc
+@property CAFrameRateRange preferredFrameRateRange;
 ```
 
 

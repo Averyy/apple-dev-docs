@@ -1,17 +1,18 @@
 # sliceId
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The texture slice to change.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ The texture slice to change.
 var sliceId: UInt32
 ```
 
+```c
+uint32_t sliceId;
+```
+
 ## See Also
 
-- [var mipMapLevel: UInt32](mtlmapindirectarguments/mipmaplevel.md)
+### Specifying texture location
+- [var mipMapLevel: UInt32](./mipmaplevel.md)
   The mipmap to change.
 
 

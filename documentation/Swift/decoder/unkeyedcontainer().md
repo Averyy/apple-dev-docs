@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the data stored in this decoder as represented in a container appropriate for holding values with no keys.
@@ -27,7 +28,7 @@ An unkeyed container view into this decoder.
 
 #### Discussion
 
-> **Note**: `DecodingError.typeMismatch` if the encountered stored value is not an unkeyed container.
+> **Throws**: `DecodingError.typeMismatch` if the encountered stored value is not an unkeyed container.
 
 
 ---

@@ -1,7 +1,8 @@
 # tracks
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The tracks an asset contains.
 
@@ -20,17 +21,20 @@ The tracks an asset contains.
 static var tracks: AVAsyncProperty<Root, [AVAssetTrack]> { get }
 ```
 
+Available when `Root` inherits `AVURLAsset`.
+
 ## Mentions
 
-- [Loading media data asynchronously](loading-media-data-asynchronously.md)
+- [Loading media data asynchronously](../loading-media-data-asynchronously.md)
 
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
 ## See Also
 
-- [func findCompatibleTrack(for: AVCompositionTrack, completionHandler: (AVAssetTrack?, (any Error)?) -> Void)](avurlasset/findcompatibletrack(for:completionhandler:).md)
+### Loading tracks
+- [func findCompatibleTrack(for: AVCompositionTrack, completionHandler: (AVAssetTrack?, (any Error)?) -> Void)](../avurlasset/findcompatibletrack%28for,completionhandler%29.md)
   Loads an asset track from which you can insert any time range into the composition track.
 
 

@@ -1,7 +1,8 @@
 # UIActivityItemsConfiguration
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration that allows a responder to export data through a variety of interactions.
 
@@ -18,65 +19,70 @@ A configuration that allows a responder to export data through a variety of inte
 class UIActivityItemsConfiguration
 ```
 
+```objc
+@interface UIActivityItemsConfiguration : NSObject
+```
+
 ## Mentions
 
-- [Collaborating and sharing copies of your data](collaborating-and-sharing-copies-of-your-data.md)
+- [Collaborating and sharing copies of your data](./collaborating-and-sharing-copies-of-your-data.md)
 
 ## Topics
 
 ### Creating an activity items configuration
-- [init(objects: [any NSItemProviderWriting])](uiactivityitemsconfiguration/init(objects:).md)
+- [init(objects: [any NSItemProviderWriting])](./uiactivityitemsconfiguration/init%28objects%29.md)
   Initializes and returns an activity items configuration with the specified objects.
-- [init(itemProviders: [NSItemProvider])](uiactivityitemsconfiguration/init(itemproviders:).md)
+- [init(itemProviders: [NSItemProvider])](./uiactivityitemsconfiguration/init%28itemproviders%29.md)
   Initializes and returns an activity items configuration with the specified item providers.
 ### Managing the configuration
-- [var localObject: Any?](uiactivityitemsconfiguration/localobject.md)
+- [var localObject: Any?](./uiactivityitemsconfiguration/localobject.md)
   A local object that represents the configuration.
-- [var metadataProvider: ((UIActivityItemsConfigurationMetadataKey) -> Any?)?](uiactivityitemsconfiguration/metadataprovider.md)
+- [var metadataProvider: ((UIActivityItemsConfigurationMetadataKey) -> Any?)?](./uiactivityitemsconfiguration/metadataprovider.md)
   A closure that provides metadata for the activity items.
-- [var perItemMetadataProvider: ((Int, UIActivityItemsConfigurationMetadataKey) -> Any?)?](uiactivityitemsconfiguration/peritemmetadataprovider.md)
+- [var perItemMetadataProvider: ((Int, UIActivityItemsConfigurationMetadataKey) -> Any?)?](./uiactivityitemsconfiguration/peritemmetadataprovider.md)
   A closure that provides metadata for each activity item.
-- [var applicationActivitiesProvider: (() -> [UIActivity])?](uiactivityitemsconfiguration/applicationactivitiesprovider.md)
+- [var applicationActivitiesProvider: (() -> [UIActivity])?](./uiactivityitemsconfiguration/applicationactivitiesprovider.md)
   A closure that provides application acitivites for the activity items.
-- [struct UIActivityItemsConfigurationMetadataKey](uiactivityitemsconfigurationmetadatakey.md)
+- [struct UIActivityItemsConfigurationMetadataKey](./uiactivityitemsconfigurationmetadatakey.md)
   A structure that defines keys for the metadata associated with an activity items configuration.
 ### Managing supported interactions
-- [var supportedInteractions: [UIActivityItemsConfigurationInteraction]](uiactivityitemsconfiguration/supportedinteractions.md)
+- [var supportedInteractions: [UIActivityItemsConfigurationInteraction]](./uiactivityitemsconfiguration/supportedinteractions.md)
   The types of interactions that the configuration supports.
-- [struct UIActivityItemsConfigurationInteraction](uiactivityitemsconfigurationinteraction.md)
+- [struct UIActivityItemsConfigurationInteraction](./uiactivityitemsconfigurationinteraction.md)
   A structure that describes types of interactions.
 ### Managing previews
-- [var previewProvider: ((Int, UIActivityItemsConfigurationPreviewIntent, CGSize) -> NSItemProvider?)?](uiactivityitemsconfiguration/previewprovider.md)
+- [var previewProvider: ((Int, UIActivityItemsConfigurationPreviewIntent, CGSize) -> NSItemProvider?)?](./uiactivityitemsconfiguration/previewprovider.md)
   A closure that provides previews for the activity items.
-- [struct UIActivityItemsConfigurationPreviewIntent](uiactivityitemsconfigurationpreviewintent.md)
+- [struct UIActivityItemsConfigurationPreviewIntent](./uiactivityitemsconfigurationpreviewintent.md)
   A structure that specifies the types of activity item previews.
 ### Restricting the sharing mode
-- [UIActivityViewController.CollaborationModeRestriction](uiactivityviewcontroller/collaborationmoderestriction.md)
+- [UIActivityViewController.CollaborationModeRestriction](./uiactivityviewcontroller/collaborationmoderestriction.md)
   An object that disables the sharing mode and optionally displays an alert.
-- [enum UIActivityCollaborationMode](uiactivitycollaborationmode.md)
+- [enum UIActivityCollaborationMode](./uiactivitycollaborationmode.md)
   A value that defines how the system shares an item.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UIActivityItemsConfigurationReading](uiactivityitemsconfigurationreading.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UIActivityItemsConfigurationReading](./uiactivityitemsconfigurationreading.md)
 
 ## See Also
 
-- [init(activityItems: [Any], applicationActivities: [UIActivity]?)](uiactivityviewcontroller/init(activityitems:applicationactivities:).md)
+### Initializing the activity view controller
+- [init(activityItems: [Any], applicationActivities: [UIActivity]?)](./uiactivityviewcontroller/init%28activityitems,applicationactivities%29.md)
   Initializes a new activity view controller object that acts on the specified data.
-- [convenience init(activityItemsConfiguration: any UIActivityItemsConfigurationReading)](uiactivityviewcontroller/init(activityitemsconfiguration:).md)
+- [convenience init(activityItemsConfiguration: any UIActivityItemsConfigurationReading)](./uiactivityviewcontroller/init%28activityitemsconfiguration%29.md)
   Initializes a new activity view controller object that acts on the specified configuration.
-- [protocol UIActivityItemsConfigurationReading](uiactivityitemsconfigurationreading.md)
+- [protocol UIActivityItemsConfigurationReading](./uiactivityitemsconfigurationreading.md)
   A set of methods adopted by an object so that the object can act as an activity items configuration.
 
 

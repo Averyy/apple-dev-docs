@@ -1,7 +1,8 @@
 # isStandard
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the format is in a deinterleaved native-endian float state.
 
@@ -20,21 +21,26 @@ A Boolean value that indicates whether the format is in a deinterleaved native-e
 var isStandard: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isStandard) BOOL standard;
+```
+
 #### Discussion
 
-This value returns [`true`](https://developer.apple.com/documentation/swift/true) if the format is [`AVAudioCommonFormat.pcmFormatFloat32`](avaudiocommonformat/pcmformatfloat32.md); otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+This value returns [`true`](../../Swift/true.md) if the format is [`AVAudioCommonFormat.pcmFormatFloat32`](../avaudiocommonformat/pcmformatfloat32.md); otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isInterleaved: Bool](avaudioformat/isinterleaved.md)
+### Determining the audio format
+- [var isInterleaved: Bool](./isinterleaved.md)
   A Boolean value that indicates whether the samples mix into one stream.
-- [var commonFormat: AVAudioCommonFormat](avaudioformat/commonformat.md)
+- [var commonFormat: AVAudioCommonFormat](./commonformat.md)
   The common format identifier instance.
-- [enum AVAudioCommonFormat](avaudiocommonformat.md)
+- [enum AVAudioCommonFormat](../avaudiocommonformat.md)
   The format options that describe common audio formats.
-- [var settings: [String : Any]](avaudioformat/settings.md)
+- [var settings: [String : Any]](./settings.md)
   A dictionary that represents the format as a dictionary using audio setting keys.
-- [var magicCookie: Data?](avaudioformat/magiccookie.md)
+- [var magicCookie: Data?](./magiccookie.md)
   An object that contains metadata that encoders and decoders require.
 
 

@@ -1,7 +1,8 @@
 # CredentialSession.ConnectivityEvent
 
 **Framework**: SecureElementCredential  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An event that a credential receives during card emulation.
 
@@ -18,21 +19,22 @@ struct ConnectivityEvent
 ## Topics
 
 ### Identifying the target instance
-- [let instanceApplicationIdentifier: Data](credentialsession/connectivityevent/instanceapplicationidentifier.md)
+- [let instanceApplicationIdentifier: Data](./connectivityevent/instanceapplicationidentifier.md)
   The instance application identifier associated with the credential that receives an event.
 ### Inspecting event data
-- [let data: Data](credentialsession/connectivityevent/data.md)
+- [let data: Data](./connectivityevent/data.md)
   The data a credential receives during card emulation.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case connectivityEvent(CredentialSession.ConnectivityEvent)](credentialsession/event/connectivityevent(_:).md)
+### Card emulation events
+- [case connectivityEvent(CredentialSession.ConnectivityEvent)](./event/connectivityevent%28_%29.md)
   A credential received a connectivity event during card emulation.
 
 

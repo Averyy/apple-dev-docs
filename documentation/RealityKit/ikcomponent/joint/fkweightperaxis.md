@@ -1,7 +1,8 @@
 # fkWeightPerAxis
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The per-axis weight of the source animation demand on the joint.
 

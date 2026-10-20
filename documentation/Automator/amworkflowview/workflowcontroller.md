@@ -1,7 +1,8 @@
 # workflowController
 
 **Framework**: Automator  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view’s workflow controller.
 
@@ -15,9 +16,14 @@ The view’s workflow controller.
 weak var workflowController: AMWorkflowController? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) AMWorkflowController * workflowController;
+```
+
 ## See Also
 
-- [var isEditable: Bool](amworkflowview/iseditable.md)
+### Configuring the Workflow View
+- [var isEditable: Bool](./iseditable.md)
   A Boolean value that indicates whether the workflow view is editable.
 
 

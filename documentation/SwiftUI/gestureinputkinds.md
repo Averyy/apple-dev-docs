@@ -1,7 +1,8 @@
 # GestureInputKinds
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An option set that specifies which input kinds a gesture should recognize.
 
@@ -23,27 +24,27 @@ struct GestureInputKinds
 ## Topics
 
 ### Gesture input options
-- [static let all: GestureInputKinds](gestureinputkinds/all.md)
+- [static let all: GestureInputKinds](./gestureinputkinds/all.md)
   All possible gesture input kinds, present and future.
-- [static let directTouch: GestureInputKinds](gestureinputkinds/directtouch.md)
+- [static let directTouch: GestureInputKinds](./gestureinputkinds/directtouch.md)
   A person is touching content directly.
-- [static let indirectTouch: GestureInputKinds](gestureinputkinds/indirecttouch.md)
+- [static let indirectTouch: GestureInputKinds](./gestureinputkinds/indirecttouch.md)
   A person is touching content indirectly.
-- [static let pencil: GestureInputKinds](gestureinputkinds/pencil.md)
+- [static let pencil: GestureInputKinds](./gestureinputkinds/pencil.md)
   A person is touching content directly with an Apple Pencil, or an other supported pencil device.
-- [static let pointer: GestureInputKinds](gestureinputkinds/pointer.md)
+- [static let pointer: GestureInputKinds](./gestureinputkinds/pointer.md)
   A person is pressing a mouse or a trackpad button while the pointer is pointing at content.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

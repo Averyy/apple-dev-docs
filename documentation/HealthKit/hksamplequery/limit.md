@@ -1,17 +1,18 @@
 # limit
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of samples that this query returns.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ The maximum number of samples that this query returns.
 var limit: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger limit;
+```
+
 #### Discussion
 
 This property’s value sets the maximum number of samples that the query returns upon completion.
 
-If you are specifically interested in retrieving only new samples (samples added since the last query), consider using an [`HKAnchoredObjectQuery`](hkanchoredobjectquery.md) query instead.
+If you are specifically interested in retrieving only new samples (samples added since the last query), consider using an [`HKAnchoredObjectQuery`](../hkanchoredobjectquery.md) query instead.
 
 ## See Also
 
-- [var sortDescriptors: [NSSortDescriptor]?](hksamplequery/sortdescriptors.md)
+### Getting Property Data
+- [var sortDescriptors: [NSSortDescriptor]?](./sortdescriptors.md)
   The sort descriptors that specify the order of the results returned by this query.
 
 

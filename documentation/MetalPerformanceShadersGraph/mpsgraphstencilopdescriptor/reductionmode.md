@@ -1,7 +1,8 @@
 # reductionMode
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reduction mode to use within the stencil window.
 
@@ -17,6 +18,10 @@ The reduction mode to use within the stencil window.
 
 ```swift
 var reductionMode: MPSGraphReductionMode { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSGraphReductionMode reductionMode;
 ```
 
 #### Discussion

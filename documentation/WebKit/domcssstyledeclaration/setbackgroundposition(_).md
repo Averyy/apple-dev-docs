@@ -1,7 +1,8 @@
 # setBackgroundPosition(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setBackgroundPosition(_ backgroundPosition: String!)
+```
+
+```objc
+- (void) setBackgroundPosition:(NSString *) backgroundPosition;
 ```
 
 

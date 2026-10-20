@@ -1,6 +1,8 @@
 # Continuing User Activities with Handoff
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: Sample Code  
+**Download**: [ContinuingUserActivitiesWithHandoff.zip](https://docs-assets.developer.apple.com/published/fb0d52fad60a/ContinuingUserActivitiesWithHandoff.zip)
 
 Define and manage which of your app’s activities can be continued between devices.
 
@@ -15,7 +17,7 @@ Define and manage which of your app’s activities can be continued between devi
 
 This sample app searches for Apple Store locations and shows them on a map. The user can choose a store’s map annotation to see its address and mark it as a favorite. As the user changes visible regions or inspects individual stores, the app uses Handoff to share these activities with the user’s other devices. If the user changes devices, they can use Handoff to launch the app and return to what they were doing on the original device.
 
-![Outlines of mobile and desktop devices, showing a specific point of interest on a map.](/images/com.apple.foundation/handoff-sample-code@2x.png)
+![Outlines of mobile and desktop devices, showing a specific point of interest on a map.](https://developer.apple.com/tutorials/images/com.apple.foundation/handoff-sample-code@2x.png)
 
 The sample project builds for both macOS and iOS, so you can run it on a Mac, iPhone, and iPad. The project does not contain a watchOS or tvOS app.
 
@@ -53,7 +55,7 @@ You implement Handoff by determining specific activities that a user can perform
 
 You use the app’s `Info.plist` to tell Handoff which activities your app can continue, by providing an entry with the key name `NSUserActivityTypes`. The type of this entry is `Array`, and each member is a `String` representing a supported Handoff activity. In the sample app, the macOS and iOS targets include the `map-viewing` and `store-editing` activities in their `Info.plist` files.
 
-```None
+```
 <key>NSUserActivityTypes</key>
 <array>
   <string>com.example.apple-samplecode.HandoffMapViewer.map-viewing</string>
@@ -121,7 +123,7 @@ func application(_ application: NSApplication, continue userActivity: NSUserActi
 }
 ```
 
-##### Update the Apps State
+##### Update the App’s State
 
 The view controllers receive the `NSUserActivity` in the `restoreUserActivityState(_:)` method. `MapViewController` inspects the activity to determine whether it is the map-viewing or the store-editing activity, and then updates the UI as needed. The map-viewing activity case resets the map region, by creating a new `MKCoordinateRegion` from the values in the `userInfo`.
 
@@ -142,7 +144,7 @@ func viewingRegion() -> MKCoordinateRegion? {
 
 In the case of the store-editing activity, the view controller also retrieves the store’s URL and location coordinates from the `userInfo`. The app waits until the map adds a `MKAnnotationView` for the store being edited, so it knows where to anchor the popover.
 
-##### Update the Original Devices State Optional
+##### Update the Original Device’s State (Optional)
 
 The `NSUserActivity` class has a `delegate` property of type `NSUserActivityDelegate`. This notifies the originating device when you continue an activity on another device. The originating device can use this to clean up its own UI state.
 
@@ -163,17 +165,18 @@ func userActivityWasContinued(_ userActivity: NSUserActivity) {
 
 ## See Also
 
-- [Creating a user activity object](creating-a-user-activity-object.md)
+### Activity Sharing
+- [Creating a user activity object](./creating-a-user-activity-object.md)
   Identify key user interactions and include the information to restore them later.
-- [Implementing Handoff in Your App](implementing-handoff-in-your-app.md)
+- [Implementing Handoff in Your App](./implementing-handoff-in-your-app.md)
   Create, send, and receive user activities directly.
-- [Increasing App Usage with Suggestions Based on User Activities](increasing-app-usage-with-suggestions-based-on-user-activities.md)
+- [Increasing App Usage with Suggestions Based on User Activities](./increasing-app-usage-with-suggestions-based-on-user-activities.md)
   Provide a continuous user experience by capturing information from your app and displaying this information as proactive suggestions across the system.
-- [Supporting the creation of Quick Notes](supporting-the-creation-of-quick-notes.md)
+- [Supporting the creation of Quick Notes](./supporting-the-creation-of-quick-notes.md)
   Support the creation of notes that include your app’s content.
-- [class NSUserActivity](nsuseractivity.md)
+- [class NSUserActivity](./nsuseractivity.md)
   A representation of the state of your app at a moment in time.
-- [protocol NSUserActivityDelegate](nsuseractivitydelegate.md)
+- [protocol NSUserActivityDelegate](./nsuseractivitydelegate.md)
   The interface through which a user activity instance notifies its delegate of updates.
 
 

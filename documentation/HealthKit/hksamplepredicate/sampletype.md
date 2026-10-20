@@ -1,7 +1,8 @@
 # sampleType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of samples that the query returns.
 
@@ -10,7 +11,7 @@ The type of samples that the query returns.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -21,7 +22,8 @@ let sampleType: HKSampleType
 
 ## See Also
 
-- [let nsPredicate: NSPredicate?](hksamplepredicate/nspredicate.md)
+### Accessing Sample Predicate Data
+- [let nsPredicate: NSPredicate?](./nspredicate.md)
   An optional predicate that further restricts the results that the query returns.
 
 

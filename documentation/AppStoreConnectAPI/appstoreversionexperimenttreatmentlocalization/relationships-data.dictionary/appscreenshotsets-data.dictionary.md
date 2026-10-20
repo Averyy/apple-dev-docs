@@ -1,21 +1,22 @@
 # AppStoreVersionExperimentTreatmentLocalization.Relationships.AppScreenshotSets
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 1.7+
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppScreenshotSets
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppScreenshotSets.Data](appstoreversionexperimenttreatmentlocalization/relationships-data.dictionary/appscreenshotsets-data.dictionary/data-data.dictionary.md)
+- [object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppScreenshotSets.Data](./appscreenshotsets-data.dictionary/data-data.dictionary.md)
   The request body you use to update an app store version experiment treatment localization.
 
 ## Properties
@@ -26,8 +27,9 @@ object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppScreensho
 
 ## See Also
 
-- [object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppPreviewSets](appstoreversionexperimenttreatmentlocalization/relationships-data.dictionary/apppreviewsets-data.dictionary.md)
-- [object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppStoreVersionExperimentTreatment](appstoreversionexperimenttreatmentlocalization/relationships-data.dictionary/appstoreversionexperimenttreatment-data.dictionary.md)
+### Objects
+- [object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppPreviewSets](./apppreviewsets-data.dictionary.md)
+- [object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppStoreVersionExperimentTreatment](./appstoreversionexperimenttreatment-data.dictionary.md)
 
 
 ---

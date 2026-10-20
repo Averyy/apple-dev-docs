@@ -1,6 +1,7 @@
 # Xcode 10.3 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -16,13 +17,14 @@ Xcode 10.3 includes SDKs for iOS 12.4, watchOS 5.3, macOS 10.14.6, and tvOS 12.4
 
 ## See Also
 
-- [Xcode 10.2.1 Release Notes](xcode-10_2_1-release-notes.md)
+### Xcode 10
+- [Xcode 10.2.1 Release Notes](./xcode-10_2_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 10.2 Release Notes](xcode-10_2-release-notes.md)
+- [Xcode 10.2 Release Notes](./xcode-10_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 10.1 Release Notes](xcode-10_1-release-notes.md)
+- [Xcode 10.1 Release Notes](./xcode-10_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 10 Release Notes](xcode-10-release-notes.md)
+- [Xcode 10 Release Notes](./xcode-10-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

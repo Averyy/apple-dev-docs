@@ -1,7 +1,8 @@
 # strokeOpacity
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The opacity of the stroke color.
 
@@ -10,7 +11,7 @@ The opacity of the stroke color.
 
 ## Declaration
 
-```swift
+```
 strokeOpacity?: number;
 ```
 
@@ -20,13 +21,14 @@ The value of this property can be in the range of `0` (fully transparent) to `1`
 
 ## See Also
 
-- [strokeColor](styleconstructoroptions/strokecolor.md)
+### Setting stroke styles
+- [strokeColor](./strokecolor.md)
   The stroke color of a line.
-- [strokeStart](styleconstructoroptions/strokestart.md)
+- [strokeStart](./strokestart.md)
   The unit distance along the line where a stroke begins.
-- [strokeEnd](styleconstructoroptions/strokeend.md)
+- [strokeEnd](./strokeend.md)
   The unit distance along the line where a stroke ends.
-- [lineGradient](styleconstructoroptions/linegradient.md)
+- [lineGradient](./linegradient.md)
   The gradient to apply along the line.
 
 

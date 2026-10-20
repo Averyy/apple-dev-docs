@@ -1,6 +1,7 @@
 # Swift access races
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Detects unsynchronized access to mutable state across multiple threads in Swift.
 
@@ -8,7 +9,7 @@ Detects unsynchronized access to mutable state across multiple threads in Swift.
 
 Use this check to detect when multiple threads call a mutating method on a structure, or when they pass a reference to a shared variable without synchronization, which can result in unpredictable behavior. Available in Xcode 9 and later.
 
-##### Access Race with Mutating Structure Methods
+##### Access race with mutating structure methods
 
 In the following example, the `producer()` function adds messages to a global array, and the `consumer()` function removes messages from the array and prints them. Because `producer()` executes on one thread and `consumer()`  executes on another, and both call mutating methods on the array, there is an access race on `messages`.
 
@@ -29,9 +30,9 @@ func consumer() {
 
 ###### Solution
 
-Use [`Dispatch`](https://developer.apple.com/documentation/dispatch) APIs to coordinate access to `messages` across multiple threads.
+Use [Dispatch](../Dispatch/Dispatch.md) APIs to coordinate access to `messages` across multiple threads.
 
-##### Access Race with in Out Parameters
+##### Access race with in-out parameters
 
 In the following example, the `writeNumbers()` function writes numbers to a global string. The `writeLetters()` function writes letters to the same string. Because the two functions execute on different threads and both access `log` by reference using `inout,` there is an access race on `log`.
 
@@ -49,17 +50,18 @@ func writeLetters() {
 
 ###### Solution
 
-Use [`Dispatch`](https://developer.apple.com/documentation/dispatch) APIs to coordinate access to `log` across multiple threads.
+Use [Dispatch](../Dispatch/Dispatch.md) APIs to coordinate access to `log` across multiple threads.
 
 ## See Also
 
-- [Data races](data-races.md)
+### Thread Sanitizer
+- [Data races](./data-races.md)
   Detects unsynchronized access to mutable state across multiple threads.
-- [Races on collections and other APIs](races-on-collections-and-other-apis.md)
+- [Races on collections and other APIs](./races-on-collections-and-other-apis.md)
   Detects when one thread accesses a mutable object while another thread is writing to it.
-- [Uninitialized mutexes](uninitialized-mutexes.md)
+- [Uninitialized mutexes](./uninitialized-mutexes.md)
   Detects when you use an uninitialized mutex.
-- [Thread leaks](thread-leaks.md)
+- [Thread leaks](./thread-leaks.md)
   Detects when you don’t close threads after use.
 
 

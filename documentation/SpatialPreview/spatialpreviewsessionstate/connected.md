@@ -1,13 +1,14 @@
 # SpatialPreviewSessionState.connected
 
 **Framework**: Spatial Preview  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session is actively connected
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -17,7 +18,7 @@ case connected
 
 ## Mentions
 
-- [Bridging an external USD runtime to Spatial Preview](bridging-an-external-usd-runtime-to-spatial-preview.md)
+- [Bridging an external USD runtime to Spatial Preview](../bridging-an-external-usd-runtime-to-spatial-preview.md)
 
 
 ---

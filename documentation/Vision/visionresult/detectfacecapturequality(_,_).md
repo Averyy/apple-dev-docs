@@ -1,7 +1,8 @@
 # VisionResult.detectFaceCaptureQuality(_:_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result from performing a detect face capture quality request.
 
@@ -22,11 +23,12 @@ case detectFaceCaptureQuality(DetectFaceCaptureQualityRequest, [FaceObservation]
 
 ## See Also
 
-- [case detectFaceLandmarks(DetectFaceLandmarksRequest, [FaceObservation])](visionresult/detectfacelandmarks(_:_:).md)
+### Getting the face and body detection result
+- [case detectFaceLandmarks(DetectFaceLandmarksRequest, [FaceObservation])](./detectfacelandmarks%28_,_%29.md)
   A result from performing a detect face landmarks request.
-- [case detectFaceRectangles(DetectFaceRectanglesRequest, [FaceObservation])](visionresult/detectfacerectangles(_:_:).md)
+- [case detectFaceRectangles(DetectFaceRectanglesRequest, [FaceObservation])](./detectfacerectangles%28_,_%29.md)
   A result from performing a detect face rectangles request.
-- [case detectHumanRectangles(DetectHumanRectanglesRequest, [HumanObservation])](visionresult/detecthumanrectangles(_:_:).md)
+- [case detectHumanRectangles(DetectHumanRectanglesRequest, [HumanObservation])](./detecthumanrectangles%28_,_%29.md)
   A result from performing a detect human rectangles request.
 
 

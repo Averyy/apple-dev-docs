@@ -1,7 +1,8 @@
 # UnitTemperature
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A unit of measure for temperature.
 
@@ -20,62 +21,67 @@ A unit of measure for temperature.
 class UnitTemperature
 ```
 
+```objc
+@interface NSUnitTemperature : NSDimension
+```
+
 #### Overview
 
-You typically use instances of [`UnitTemperature`](unittemperature.md) to represent specific quantities of temperature using the [`NSMeasurement`](nsmeasurement.md) class.
+You typically use instances of [`UnitTemperature`](./unittemperature.md) to represent specific quantities of temperature using the [`NSMeasurement`](./nsmeasurement.md) class.
 
 ##### Temperature
 
 Temperature is a comparative measure of thermal energy. The SI unit for temperature is the kelvin (K), which is defined in terms of the triple point of water. Temperature is also commonly measured by degrees of various scales, including Celsius (°C) and Fahrenheit (°F).
 
-The [`UnitTemperature`](unittemperature.md) class defines its [`baseUnit()`](dimension/baseunit().md) to be [`kelvin`](unittemperature/kelvin.md), and provides the following units, which are initialized using [`UnitConverterLinear`](unitconverterlinear.md) converters with the specified coefficients and constants:
+The [`UnitTemperature`](./unittemperature.md) class defines its [`baseUnit()`](./dimension/baseunit%28%29.md) to be [`kelvin`](./unittemperature/kelvin.md), and provides the following units, which are initialized using [`UnitConverterLinear`](./unitconverterlinear.md) converters with the specified coefficients and constants:
 
 | Name | Method | Symbol | Coefficient | Constant |
 | --- | --- | --- | --- | --- |
-| Kelvin | [`kelvin`](unittemperature/kelvin.md) | K | `1` | `0` |
-| Degree Celsius | [`celsius`](unittemperature/celsius.md) | °C | `1.0` | `273.15` |
-| Degree Fahrenheit | [`fahrenheit`](unittemperature/fahrenheit.md) | °F | `0.55555555555556` | `255.37222222222427` |
+| Kelvin | [`kelvin`](./unittemperature/kelvin.md) | K | `1` | `0` |
+| Degree Celsius | [`celsius`](./unittemperature/celsius.md) | °C | `1.0` | `273.15` |
+| Degree Fahrenheit | [`fahrenheit`](./unittemperature/fahrenheit.md) | °F | `0.55555555555556` | `255.37222222222427` |
 
 ## Topics
 
 ### Accessing the Base Unit
-- [class func baseUnit() -> Self](dimension/baseunit.md)
+- [class func baseUnit() -> Self](./dimension/baseunit%28%29.md)
   Returns the base unit.
 ### Accessing Predefined Units
-- [class var kelvin: UnitTemperature](unittemperature/kelvin.md)
+- [class var kelvin: UnitTemperature](./unittemperature/kelvin.md)
   The kelvin unit of temperature.
-- [class var celsius: UnitTemperature](unittemperature/celsius.md)
+- [class var celsius: UnitTemperature](./unittemperature/celsius.md)
   The degree Celsius unit of temperature.
-- [class var fahrenheit: UnitTemperature](unittemperature/fahrenheit.md)
+- [class var fahrenheit: UnitTemperature](./unittemperature/fahrenheit.md)
   The degree Fahrenheit unit of temperature.
 ### Initializers
-- [convenience init(forLocale: Locale, usage: MeasurementFormatUnitUsage<UnitTemperature>)](unittemperature/init(forlocale:usage:).md)
+- [convenience init(forLocale: Locale, usage: MeasurementFormatUnitUsage<UnitTemperature>)](./unittemperature/init%28forlocale,usage%29.md)
   Creates a `UnitTemperature` which the specified `locale` prefers for the specific `usage`.
 
 ## Relationships
 
 ### Inherits From
-- [Dimension](dimension.md)
+- [Dimension](./dimension.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UnitEnergy](unitenergy.md)
+### Energy, Heat, and Light
+- [class UnitEnergy](./unitenergy.md)
   A unit of measure for energy.
-- [class UnitPower](unitpower.md)
+- [class UnitPower](./unitpower.md)
   A unit of measure for power.
-- [class UnitIlluminance](unitilluminance.md)
+- [class UnitIlluminance](./unitilluminance.md)
   A unit of measure for illuminance.
 
 

@@ -1,7 +1,8 @@
 # init
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes a video device.
 
@@ -10,7 +11,7 @@ Initializes a video device.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init(IOUserVideoDriver *in_driver, OSString *in_device_uid, OSString *in_model_uid, OSString *in_manufacturer_uid);
 ```
 
@@ -27,9 +28,10 @@ True on success.
 
 ## See Also
 
-- [Create](iouservideodevice/create.md)
+### Creating a video device
+- [Create](./create.md)
   A static factory method that allocates and initializes a video device.
-- [IOUserVideoDriver](iouservideodriver.md)
+- [IOUserVideoDriver](../iouservideodriver.md)
   A video driver.
 
 

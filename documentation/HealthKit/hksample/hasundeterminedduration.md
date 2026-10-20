@@ -1,7 +1,8 @@
 # hasUndeterminedDuration
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the sample has an unknown duration.
 
@@ -19,17 +20,22 @@ Indicates whether the sample has an unknown duration.
 var hasUndeterminedDuration: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL hasUndeterminedDuration;
+```
+
 #### Discussion
 
-This property is [`true`](https://developer.apple.com/documentation/swift/true) if the sample’s [`endDate`](hksample/enddate.md) property is [`distantFuture`](https://developer.apple.com/documentation/foundation/nsdate/distantfuture).
+This property is [`true`](../../Swift/true.md) if the sample’s [`endDate`](./enddate.md) property is [`distantFuture`](../../Foundation/nsdate/distantfuture.md).
 
 ## See Also
 
-- [var startDate: Date](hksample/startdate.md)
+### Accessing the Sample’s Data
+- [var startDate: Date](./startdate.md)
   The sample’s start date.
-- [var endDate: Date](hksample/enddate.md)
+- [var endDate: Date](./enddate.md)
   The sample’s end date.
-- [var sampleType: HKSampleType](hksample/sampletype.md)
+- [var sampleType: HKSampleType](./sampletype.md)
   The sample type.
 
 

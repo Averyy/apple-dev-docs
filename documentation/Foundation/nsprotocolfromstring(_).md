@@ -1,7 +1,8 @@
 # NSProtocolFromString(_:)
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a the protocol with a given name.
 
@@ -20,6 +21,10 @@ Returns a the protocol with a given name.
 func NSProtocolFromString(_ namestr: String) -> Protocol?
 ```
 
+```c
+extern Protocol *NSProtocolFromString(NSString *namestr);
+```
+
 #### Return Value
 
 The protocol object named by `namestr`, or `nil` if no protocol by that name is currently loaded. If `namestr` is `nil`, returns `nil`.
@@ -30,15 +35,16 @@ The protocol object named by `namestr`, or `nil` if no protocol by that name is 
 
 ## See Also
 
-- [func NSClassFromString(String) -> AnyClass?](nsclassfromstring(_:).md)
+### Type Lookup
+- [func NSClassFromString(String) -> AnyClass?](./nsclassfromstring%28_%29.md)
   Obtains a class by name.
-- [func NSStringFromClass(AnyClass) -> String](nsstringfromclass(_:).md)
+- [func NSStringFromClass(AnyClass) -> String](./nsstringfromclass%28_%29.md)
   Returns the name of a class as a string.
-- [func NSSelectorFromString(String) -> Selector](nsselectorfromstring(_:).md)
+- [func NSSelectorFromString(String) -> Selector](./nsselectorfromstring%28_%29.md)
   Returns the selector with a given name.
-- [func NSStringFromSelector(Selector) -> String](nsstringfromselector(_:).md)
+- [func NSStringFromSelector(Selector) -> String](./nsstringfromselector%28_%29.md)
   Returns a string representation of a given selector.
-- [func NSStringFromProtocol(Protocol) -> String](nsstringfromprotocol(_:).md)
+- [func NSStringFromProtocol(Protocol) -> String](./nsstringfromprotocol%28_%29.md)
   Returns the name of a protocol as a string.
 
 

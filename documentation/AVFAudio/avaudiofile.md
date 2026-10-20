@@ -1,7 +1,8 @@
 # AVAudioFile
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents an audio file that the system can open for reading or writing.
 
@@ -20,88 +21,93 @@ An object that represents an audio file that the system can open for reading or 
 class AVAudioFile
 ```
 
+```objc
+@interface AVAudioFile : NSObject
+```
+
 #### Overview
 
-Regardless of the file format, you read and write using [`AVAudioPCMBuffer`](avaudiopcmbuffer.md) objects. These objects contain samples as [`AVAudioCommonFormat`](avaudiocommonformat.md) that the framework refers to as the file’s processing format. You convert to and from using the file’s actual format.
+Regardless of the file format, you read and write using [`AVAudioPCMBuffer`](./avaudiopcmbuffer.md) objects. These objects contain samples as [`AVAudioCommonFormat`](./avaudiocommonformat.md) that the framework refers to as the file’s processing format. You convert to and from using the file’s actual format.
 
-Reads and writes are always sequential. Random access is possible by setting the [`framePosition`](avaudiofile/frameposition.md) property.
+Reads and writes are always sequential. Random access is possible by setting the [`framePosition`](./avaudiofile/frameposition.md) property.
 
 ## Topics
 
 ### Creating an audio file
-- [init(forReading: URL) throws](avaudiofile/init(forreading:).md)
+- [init(forReading: URL) throws](./avaudiofile/init%28forreading%29.md)
   Opens a file for reading using the standard, deinterleaved floating point format.
-- [init(forReading: URL, commonFormat: AVAudioCommonFormat, interleaved: Bool) throws](avaudiofile/init(forreading:commonformat:interleaved:).md)
+- [init(forReading: URL, commonFormat: AVAudioCommonFormat, interleaved: Bool) throws](./avaudiofile/init%28forreading,commonformat,interleaved%29.md)
   Opens a file for reading using the specified processing format.
-- [init(forWriting: URL, settings: [String : Any]) throws](avaudiofile/init(forwriting:settings:).md)
+- [init(forWriting: URL, settings: [String : Any]) throws](./avaudiofile/init%28forwriting,settings%29.md)
   Opens a file for writing using the specified settings.
-- [init(forWriting: URL, settings: [String : Any], commonFormat: AVAudioCommonFormat, interleaved: Bool) throws](avaudiofile/init(forwriting:settings:commonformat:interleaved:).md)
+- [init(forWriting: URL, settings: [String : Any], commonFormat: AVAudioCommonFormat, interleaved: Bool) throws](./avaudiofile/init%28forwriting,settings,commonformat,interleaved%29.md)
   Opens a file for writing using a specified processing format and settings.
-- [init()](avaudiofile/init.md)
+- [init()](./avaudiofile/init%28%29.md)
 ### Reading and writing audio
-- [func read(into: AVAudioPCMBuffer) throws](avaudiofile/read(into:).md)
+- [func read(into: AVAudioPCMBuffer) throws](./avaudiofile/read%28into%29.md)
   Reads an entire audio buffer.
-- [func read(into: AVAudioPCMBuffer, frameCount: AVAudioFrameCount) throws](avaudiofile/read(into:framecount:).md)
+- [func read(into: AVAudioPCMBuffer, frameCount: AVAudioFrameCount) throws](./avaudiofile/read%28into,framecount%29.md)
   Reads a portion of an audio buffer using the number of frames you specify.
-- [func read(frameCount: AVAudioFrameCount) throws -> AVReadOnlyAudioPCMBuffer](avaudiofile/read(framecount:).md)
-- [func write(from: AVAudioPCMBuffer) throws](avaudiofile/write(from:)-6qgec.md)
+- [func read(frameCount: AVAudioFrameCount) throws -> AVReadOnlyAudioPCMBuffer](./avaudiofile/read%28framecount%29.md)
+- [func write(from: AVAudioPCMBuffer) throws](./avaudiofile/write%28from%29-6qgec.md)
   Writes an audio buffer sequentially.
-- [func write(from: AVReadOnlyAudioPCMBuffer) throws](avaudiofile/write(from:)-4zfhf.md)
-- [func close()](avaudiofile/close.md)
+- [func write(from: AVReadOnlyAudioPCMBuffer) throws](./avaudiofile/write%28from%29-4zfhf.md)
+- [func close()](./avaudiofile/close%28%29.md)
   Closes the audio file.
 ### Getting audio file properties
-- [var url: URL](avaudiofile/url.md)
+- [var url: URL](./avaudiofile/url.md)
   The location of the audio file.
-- [var fileFormat: AVAudioFormat](avaudiofile/fileformat.md)
+- [var fileFormat: AVAudioFormat](./avaudiofile/fileformat.md)
   The on-disk format of the file.
-- [var processingFormat: AVAudioFormat](avaudiofile/processingformat.md)
+- [var processingFormat: AVAudioFormat](./avaudiofile/processingformat.md)
   The processing format of the file.
-- [var length: AVAudioFramePosition](avaudiofile/length.md)
+- [var length: AVAudioFramePosition](./avaudiofile/length.md)
   The number of sample frames in the file.
-- [typealias AVAudioFramePosition](avaudioframeposition.md)
+- [typealias AVAudioFramePosition](./avaudioframeposition.md)
   A position in an audio file or stream.
-- [var framePosition: AVAudioFramePosition](avaudiofile/frameposition.md)
+- [var framePosition: AVAudioFramePosition](./avaudiofile/frameposition.md)
   The position in the file where the next read or write operation occurs.
-- [typealias AVAudioFrameCount](avaudioframecount.md)
+- [typealias AVAudioFrameCount](./avaudioframecount.md)
   A number of audio sample frames.
-- [let AVAudioFileTypeKey: String](avaudiofiletypekey.md)
+- [let AVAudioFileTypeKey: String](./avaudiofiletypekey.md)
   A string that indicates the audio file type.
-- [var isOpen: Bool](avaudiofile/isopen.md)
+- [var isOpen: Bool](./avaudiofile/isopen.md)
   A Boolean value that indicates whether the file is open.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
+### Audio data
+- [class AVAudioPCMBuffer](./avaudiopcmbuffer.md)
   An object that represents an audio buffer you use with PCM audio formats.
-- [class AVAudioCompressedBuffer](avaudiocompressedbuffer.md)
+- [class AVAudioCompressedBuffer](./avaudiocompressedbuffer.md)
   An object that represents an audio buffer that you use for compressed audio formats.
-- [struct AVReadOnlyAudioPCMBuffer](avreadonlyaudiopcmbuffer.md)
+- [struct AVReadOnlyAudioPCMBuffer](./avreadonlyaudiopcmbuffer.md)
   A read-only, Sendable audio buffer for safe concurrent access.
-- [class AVAudioBuffer](avaudiobuffer.md)
+- [class AVAudioBuffer](./avaudiobuffer.md)
   An object that represents a buffer of audio data with a format.
-- [class AVAudioFormat](avaudioformat.md)
+- [class AVAudioFormat](./avaudioformat.md)
   An object that describes the representation of an audio format.
-- [class AVAudioChannelLayout](avaudiochannellayout.md)
+- [class AVAudioChannelLayout](./avaudiochannellayout.md)
   An object that describes the roles of a set of audio channels.
-- [class AVAudioConverter](avaudioconverter.md)
+- [class AVAudioConverter](./avaudioconverter.md)
   An object that converts streams of audio between formats.
-- [class AVAudioTime](avaudiotime.md)
+- [class AVAudioTime](./avaudiotime.md)
   An object you use to represent a moment in time.
-- [Audio settings](audio-settings.md)
+- [Audio settings](./audio-settings.md)
   Configure audio processing settings using standard key and value constants.
 
 

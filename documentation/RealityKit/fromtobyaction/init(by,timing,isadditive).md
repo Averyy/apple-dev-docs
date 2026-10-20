@@ -1,7 +1,8 @@
 # init(by:timing:isAdditive:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new action to animate from the deaultSource by a transform relative to the starting transform.
 
@@ -18,6 +19,8 @@ Creates a new action to animate from the deaultSource by a transform relative to
 ```swift
 init(by: Value, timing: AnimationTimingFunction = .linear, isAdditive: Bool = false)
 ```
+
+Available when `Value` is `Transform`.
 
 #### Discussion
 

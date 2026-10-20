@@ -1,7 +1,8 @@
 # DeviceActivityReport.Context
 
 **Framework**: Device Activity  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A context indicating how your device activity report extension should configure its `DeviceActivityReportView`.
 
@@ -18,7 +19,7 @@ struct Context
 
 #### Overview
 
-You can use a [`DeviceActivityReport.Context`](deviceactivityreport/context.md) to create a [`DeviceActivityReport`](deviceactivityreport.md), which the system then provides to your app’s extension and allows it to configure the resulting report `View` in a particular way. For example, if you want to render either a pie chart or bar graph representing the user’s device activity, you can create the following custom contexts:
+You can use a [`DeviceActivityReport.Context`](./context.md) to create a [`DeviceActivityReport`](../deviceactivityreport.md), which the system then provides to your app’s extension and allows it to configure the resulting report `View` in a particular way. For example, if you want to render either a pie chart or bar graph representing the user’s device activity, you can create the following custom contexts:
 
 ```swift
 extension DeviceActivityReport.Context {
@@ -32,22 +33,22 @@ If your app instantiates a report with the `barGraph` context, then the system p
 ## Topics
 
 ### Initializers
-- [init(String)](deviceactivityreport/context/init(_:).md)
+- [init(String)](./context/init%28_%29.md)
   Creates a new instance with the specified raw value.
-- [init(rawValue: String)](deviceactivityreport/context/init(rawvalue:).md)
+- [init(rawValue: String)](./context/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 ### Instance Properties
-- [var rawValue: String](deviceactivityreport/context/rawvalue.md)
+- [var rawValue: String](./context/rawvalue.md)
   The underlying value that represents the given context.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

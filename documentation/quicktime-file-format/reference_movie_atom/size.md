@@ -1,15 +1,17 @@
 # Size
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The number of bytes in this reference movie atom.
 
 ## See Also
 
-- [Type](reference_movie_atom/type.md)
+### Data fields
+- [Type](./type.md)
   The type of this atom.
-- [Reference movie descriptor atom](reference_movie_atom/reference_movie_descriptor_atom.md)
+- [Reference movie descriptor atom](./reference_movie_descriptor_atom.md)
   A reference movie atom must contain at least one reference movie descriptor atom, and typically contains more than one.
 
 

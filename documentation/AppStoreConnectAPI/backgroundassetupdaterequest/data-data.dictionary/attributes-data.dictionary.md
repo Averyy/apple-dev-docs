@@ -1,7 +1,8 @@
 # BackgroundAssetUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to modify a background asset update request.
 
@@ -10,7 +11,7 @@ The request body you use to modify a background asset update request.
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetUpdateRequest.Data.Attributes
 ```
 

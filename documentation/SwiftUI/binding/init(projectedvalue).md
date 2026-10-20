@@ -1,7 +1,8 @@
 # init(projectedValue:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a binding from the value of another binding.
 
@@ -23,11 +24,12 @@ init(projectedValue: Binding<Value>)
 
 ## See Also
 
-- [init(_:)](binding/init(_:).md)
+### Creating a binding
+- [init(_:)](./init%28_%29.md)
   Creates a binding by projecting the base value to a hashable value.
-- [init(get:set:)](binding/init(get:set:).md)
+- [init(get:set:)](./init%28get,set%29.md)
   Creates a binding with closures that read and write the binding value.
-- [static func constant(Value) -> Binding<Value>](binding/constant(_:).md)
+- [static func constant(Value) -> Binding<Value>](./constant%28_%29.md)
   Creates a binding with an immutable value.
 
 

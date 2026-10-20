@@ -1,7 +1,8 @@
 # init(webpageURL:)
 
 **Framework**: Safari Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a universal link object with the URL.
 
@@ -14,9 +15,13 @@ Creates a universal link object with the URL.
 init?(webpageURL url: URL)
 ```
 
+```objc
+- (instancetype) initWithWebpageURL:(NSURL *) url;
+```
+
 #### Discussion
 
-This designated initializer creates a [`SFUniversalLink`](sfuniversallink.md) object.
+This designated initializer creates a [`SFUniversalLink`](../sfuniversallink.md) object.
 
 ## Parameters
 

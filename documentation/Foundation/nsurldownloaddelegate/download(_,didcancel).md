@@ -1,7 +1,8 @@
 # download(_:didCancel:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent if an authentication challenge is canceled due to the protocol implementation encountering an error.
 
@@ -14,9 +15,13 @@ Sent if an authentication challenge is canceled due to the protocol implementati
 optional func download(_ download: NSURLDownload, didCancel challenge: URLAuthenticationChallenge)
 ```
 
+```objc
+- (void) download:(NSURLDownload *) download didCancelAuthenticationChallenge:(NSURLAuthenticationChallenge *) challenge;
+```
+
 #### Discussion
 
-If the delegate receives this message the download will fail and the delegate will receive a [`download(_:didFailWithError:)`](nsurldownloaddelegate/download(_:didfailwitherror:).md) message.
+If the delegate receives this message the download will fail and the delegate will receive a [`download(_:didFailWithError:)`](./download%28_,didfailwitherror%29.md) message.
 
 ## Parameters
 
@@ -25,11 +30,12 @@ If the delegate receives this message the download will fail and the delegate wi
 
 ## See Also
 
-- [func download(NSURLDownload, canAuthenticateAgainstProtectionSpace: URLProtectionSpace) -> Bool](nsurldownloaddelegate/download(_:canauthenticateagainstprotectionspace:).md)
+### Download Authentication
+- [func download(NSURLDownload, canAuthenticateAgainstProtectionSpace: URLProtectionSpace) -> Bool](./download%28_,canauthenticateagainstprotectionspace%29.md)
   Sent to determine whether the delegate is able to respond to a protection space’s form of authentication.
-- [func download(NSURLDownload, didReceive: URLAuthenticationChallenge)](nsurldownloaddelegate/download(_:didreceive:)-1pc0v.md)
+- [func download(NSURLDownload, didReceive: URLAuthenticationChallenge)](./download%28_,didreceive%29-1pc0v.md)
   Sent when the URL download must authenticate a challenge in order to download the request.
-- [func downloadShouldUseCredentialStorage(NSURLDownload) -> Bool](nsurldownloaddelegate/downloadshouldusecredentialstorage(_:).md)
+- [func downloadShouldUseCredentialStorage(NSURLDownload) -> Bool](./downloadshouldusecredentialstorage%28_%29.md)
   Sent to determine whether the URL loader should consult the credential storage to authenticate the download.
 
 

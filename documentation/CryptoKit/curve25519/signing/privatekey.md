@@ -1,7 +1,8 @@
 # Curve25519.Signing.PrivateKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A Curve25519 private key used to create cryptographic signatures.
 
@@ -23,29 +24,30 @@ struct PrivateKey
 ## Topics
 
 ### Creating a private key
-- [init()](curve25519/signing/privatekey/init.md)
+- [init()](./privatekey/init%28%29.md)
   Creates a random Curve25519 private key for signing.
-- [init<D>(rawRepresentation: D) throws](curve25519/signing/privatekey/init(rawrepresentation:).md)
+- [init<D>(rawRepresentation: D) throws](./privatekey/init%28rawrepresentation%29.md)
   Creates a Curve25519 private key for signing from a data representation.
 ### Reporting the private key
-- [var rawRepresentation: Data](curve25519/signing/privatekey/rawrepresentation.md)
+- [var rawRepresentation: Data](./privatekey/rawrepresentation.md)
   The raw representation of the key as a collection of contiguous bytes.
 ### Finding the public key
-- [var publicKey: Curve25519.Signing.PublicKey](curve25519/signing/privatekey/publickey.md)
+- [var publicKey: Curve25519.Signing.PublicKey](./privatekey/publickey.md)
   The corresponding public key.
 ### Creating a signature
-- [func signature<D>(for: D) throws -> Data](curve25519/signing/privatekey/signature(for:).md)
+- [func signature<D>(for: D) throws -> Data](./privatekey/signature%28for%29.md)
   Generates an EdDSA signature over Curve25519.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Curve25519.Signing.PublicKey](curve25519/signing/publickey.md)
+### Using keys
+- [Curve25519.Signing.PublicKey](./publickey.md)
   A Curve25519 public key used to verify cryptographic signatures.
 
 

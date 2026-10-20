@@ -1,15 +1,18 @@
 # authorized
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The user authorized the app to use location services.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 8.0
+- iPadOS 2.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
 - macOS 10.6+
+
+> **Deprecated**: For iOS, use [`CLAuthorizationStatus.authorizedAlways`](./authorizedalways.md) or [`CLAuthorizationStatus.authorizedWhenInUse`](./authorizedwheninuse.md) instead.
 
 ## Declaration
 
@@ -17,17 +20,22 @@ The user authorized the app to use location services.
 static var authorized: CLAuthorizationStatus { get }
 ```
 
+```c
+kCLAuthorizationStatusAuthorized
+```
+
 ## See Also
 
-- [CLAuthorizationStatus.notDetermined](clauthorizationstatus/notdetermined.md)
+### Getting the authorization status
+- [CLAuthorizationStatus.notDetermined](./notdetermined.md)
   The user has not chosen whether the app can use location services.
-- [CLAuthorizationStatus.restricted](clauthorizationstatus/restricted.md)
+- [CLAuthorizationStatus.restricted](./restricted.md)
   The app is not authorized to use location services.
-- [CLAuthorizationStatus.denied](clauthorizationstatus/denied.md)
+- [CLAuthorizationStatus.denied](./denied.md)
   The user denied the use of location services for the app or they are disabled globally in Settings.
-- [CLAuthorizationStatus.authorizedAlways](clauthorizationstatus/authorizedalways.md)
+- [CLAuthorizationStatus.authorizedAlways](./authorizedalways.md)
   The user authorized the app to start location services at any time.
-- [CLAuthorizationStatus.authorizedWhenInUse](clauthorizationstatus/authorizedwheninuse.md)
+- [CLAuthorizationStatus.authorizedWhenInUse](./authorizedwheninuse.md)
   The user authorized the app to start location services while it is in use.
 
 

@@ -1,7 +1,8 @@
 # insert(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add a new skeleton to the container. Returns true if added. Returns false if it already exists.
 

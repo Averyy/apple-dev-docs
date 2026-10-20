@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -17,6 +18,10 @@
 
 ```swift
 func subscribeAttribute(withController controller: Any?, nodeId: UInt64, endpointId: NSNumber?, clusterId: NSNumber?, attributeId: NSNumber?, minInterval: NSNumber, maxInterval: NSNumber, params: [String : Any]?, establishedHandler: @escaping () -> Void)
+```
+
+```objc
+- (void) subscribeAttributeWithController:(id) controller nodeId:(uint64_t) nodeId endpointId:(NSNumber *) endpointId clusterId:(NSNumber *) clusterId attributeId:(NSNumber *) attributeId minInterval:(NSNumber *) minInterval maxInterval:(NSNumber *) maxInterval params:(NSDictionary<NSString *,id> *) params establishedHandler:(dispatch_block_t) establishedHandler;
 ```
 
 

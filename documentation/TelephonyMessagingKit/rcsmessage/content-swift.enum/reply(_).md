@@ -1,7 +1,8 @@
 # RCSMessage.Content.reply(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A content type for reply content.
 

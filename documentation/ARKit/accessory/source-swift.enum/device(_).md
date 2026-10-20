@@ -1,7 +1,8 @@
 # Accessory.Source.device(_:)
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Device this accessory was initialized with.
 

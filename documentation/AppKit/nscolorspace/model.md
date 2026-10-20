@@ -1,12 +1,13 @@
 # NSColorSpace.Model
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the abstract model on which color space objects are based.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,54 +15,59 @@ Constants that describe the abstract model on which color space objects are base
 enum Model
 ```
 
+```c
+enum NSColorSpaceModel : NSInteger;
+```
+
 ## Topics
 
 ### Color Spaces
-- [NSColorSpace.Model.unknown](nscolorspace/model/unknown.md)
+- [NSColorSpace.Model.unknown](./model/unknown.md)
   An unknown color-space model.
-- [NSColorSpace.Model.gray](nscolorspace/model/gray.md)
+- [NSColorSpace.Model.gray](./model/gray.md)
   The grayscale color-space model.
-- [NSColorSpace.Model.rgb](nscolorspace/model/rgb.md)
+- [NSColorSpace.Model.rgb](./model/rgb.md)
   The RGB (red-green-blue) color-space model.
-- [NSColorSpace.Model.cmyk](nscolorspace/model/cmyk.md)
+- [NSColorSpace.Model.cmyk](./model/cmyk.md)
   The CMYK (cyan-magenta-yellow-black) color-space model.
-- [NSColorSpace.Model.lab](nscolorspace/model/lab.md)
+- [NSColorSpace.Model.lab](./model/lab.md)
   The L*a*b* device-independent color-space model, which represents colors relative to a reference white point.
-- [NSColorSpace.Model.deviceN](nscolorspace/model/devicen.md)
+- [NSColorSpace.Model.deviceN](./model/devicen.md)
   The DeviceN color-space model from Adobe Systems, Inc.
-- [NSColorSpace.Model.indexed](nscolorspace/model/indexed.md)
+- [NSColorSpace.Model.indexed](./model/indexed.md)
   An indexed color space, which identifies discrete colors in a color list by index number.
-- [NSColorSpace.Model.patterned](nscolorspace/model/patterned.md)
+- [NSColorSpace.Model.patterned](./model/patterned.md)
   A pattern color space, which is a repeated image that creates a tiled pattern.
 ### Deprecated
-- [Deprecated symbols](model-deprecated-symbols.md)
+- [Deprecated symbols](../model-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 ### Initializers
-- [init?(rawValue: Int)](nscolorspace/model/init(rawvalue:).md)
+- [init?(rawValue: Int)](./model/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var cgColorSpace: CGColorSpace?](nscolorspace/cgcolorspace.md)
+### Accessing Color Space Data and Attributes
+- [var cgColorSpace: CGColorSpace?](./cgcolorspace.md)
   The Core Graphics color-space object that represents a color space equivalent to the color space’s.
-- [var colorSpaceModel: NSColorSpace.Model](nscolorspace/colorspacemodel.md)
+- [var colorSpaceModel: NSColorSpace.Model](./colorspacemodel.md)
   The model on which the color space is based.
-- [var colorSyncProfile: UnsafeMutableRawPointer?](nscolorspace/colorsyncprofile.md)
+- [var colorSyncProfile: UnsafeMutableRawPointer?](./colorsyncprofile.md)
   The ColorSync profile from which the color space was created.
-- [var iccProfileData: Data?](nscolorspace/iccprofiledata.md)
+- [var iccProfileData: Data?](./iccprofiledata.md)
   The ICC profile data from which the color space was created.
-- [var localizedName: String?](nscolorspace/localizedname.md)
+- [var localizedName: String?](./localizedname.md)
   The localized name of the color space.
-- [var numberOfColorComponents: Int](nscolorspace/numberofcolorcomponents.md)
+- [var numberOfColorComponents: Int](./numberofcolorcomponents.md)
   The number of components, excluding alpha, the color space supports.
 
 

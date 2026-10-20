@@ -1,7 +1,8 @@
 # VideoReader.CameraConfiguration.Resolution.medium
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.0+
@@ -18,8 +19,9 @@ case medium
 
 ## See Also
 
-- [VideoReader.CameraConfiguration.Resolution.high](videoreader/cameraconfiguration/resolution-swift.enum/high.md)
-- [VideoReader.CameraConfiguration.Resolution.low](videoreader/cameraconfiguration/resolution-swift.enum/low.md)
+### Camera resolutions
+- [VideoReader.CameraConfiguration.Resolution.high](./high.md)
+- [VideoReader.CameraConfiguration.Resolution.low](./low.md)
 
 
 ---

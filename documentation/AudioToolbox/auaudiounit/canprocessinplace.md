@@ -1,7 +1,8 @@
 # canProcessInPlace
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines whether an audio unit can process in place.
 
@@ -19,6 +20,18 @@ Determines whether an audio unit can process in place.
 var canProcessInPlace: Bool { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) BOOL canProcessInPlace;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) BOOL canProcessInPlace;
+```
+
 #### Discussion
 
 In-place processing is the ability for an audio unit to transform an input signal to an output signal in-place in the input buffer, without requiring a separate output buffer.
@@ -29,17 +42,19 @@ This version 3 property is partially bridged to the version 2 `kAudioUnitPropert
 
 ## See Also
 
-- [var renderBlock: AURenderBlock](auaudiounit/renderblock.md)
+### Related Documentation
+- [var renderBlock: AURenderBlock](./renderblock.md)
   The block that hosts use to ask the audio unit to render audio.
-- [var latency: TimeInterval](auaudiounit/latency.md)
+### Optimizing Performance
+- [var latency: TimeInterval](./latency.md)
   The audio unit’s processing latency, in seconds.
-- [var tailTime: TimeInterval](auaudiounit/tailtime.md)
+- [var tailTime: TimeInterval](./tailtime.md)
   The audio unit’s tail time, in seconds.
-- [var renderQuality: Int](auaudiounit/renderquality.md)
+- [var renderQuality: Int](./renderquality.md)
   Provides a trade-off between rendering quality and CPU load.
-- [var shouldBypassEffect: Bool](auaudiounit/shouldbypasseffect.md)
+- [var shouldBypassEffect: Bool](./shouldbypasseffect.md)
   Determines whether an effect should route input directly to output, without any processing.
-- [var isRenderingOffline: Bool](auaudiounit/isrenderingoffline.md)
+- [var isRenderingOffline: Bool](./isrenderingoffline.md)
   Communicates to an audio unit that it is rendering offline.
 
 

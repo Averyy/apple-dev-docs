@@ -1,7 +1,8 @@
 # encode(_:to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Does nothing since this estimator uses a pre-defined transformer.
 
@@ -22,7 +23,8 @@ func encode(_ transformer: Transformer, to encoder: inout any EstimatorEncoder) 
 
 ## See Also
 
-- [func decode(from: inout any EstimatorDecoder) throws -> Transformer](transformertoestimatoradaptor/decode(from:).md)
+### Encoding and Decoding
+- [func decode(from: inout any EstimatorDecoder) throws -> Transformer](./decode%28from%29.md)
   Returns the pre-defined transformer.
 
 

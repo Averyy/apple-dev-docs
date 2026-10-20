@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16ServiceClassLANAccessUsingPPP
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16ServiceClassLANAccessUsingPPP = 0x1102
 ```
 

@@ -1,7 +1,8 @@
 # pdfView
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the `PDFView` object associated with the thumbnail view.
 
@@ -17,6 +18,10 @@ Returns the `PDFView` object associated with the thumbnail view.
 
 ```swift
 weak var pdfView: PDFView? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) PDFView * PDFView;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # decodePredicateExpression(forKey:input:output:predicateConfiguration:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +18,8 @@
 ```swift
 mutating func decodePredicateExpression<each Input, Output>(forKey key: KeyedDecodingContainer<K>.Key, input: repeat (each Input).Type, output: Output.Type, predicateConfiguration: PredicateCodableConfiguration) throws -> (expression: any PredicateExpression<Output>, variable: (repeat PredicateExpressions.Variable<each Input>))
 ```
+
+Available when `K` conforms to `CodingKey`.
 
 
 ---

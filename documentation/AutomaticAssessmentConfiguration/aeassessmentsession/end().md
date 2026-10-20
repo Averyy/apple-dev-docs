@@ -1,7 +1,8 @@
 # end()
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends an assessment session.
 
@@ -17,15 +18,20 @@ Ends an assessment session.
 func end()
 ```
 
+```objc
+- (void) end;
+```
+
 #### Discussion
 
-Before calling the [`end()`](aeassessmentsession/end().md) method, be sure to stop the assessment and hide any sensitive information. After calling the method, wait until the session’s delegate receives the [`assessmentSessionDidEnd(_:)`](aeassessmentsessiondelegate/assessmentsessiondidend(_:).md) method before you report the assessment as complete to the user.
+Before calling the [`end()`](./end%28%29.md) method, be sure to stop the assessment and hide any sensitive information. After calling the method, wait until the session’s delegate receives the [`assessmentSessionDidEnd(_:)`](../aeassessmentsessiondelegate/assessmentsessiondidend%28_%29.md) method before you report the assessment as complete to the user.
 
 ## See Also
 
-- [func begin()](aeassessmentsession/begin.md)
+### Starting and stopping a session
+- [func begin()](./begin%28%29.md)
   Starts an assessment session.
-- [var isActive: Bool](aeassessmentsession/isactive.md)
+- [var isActive: Bool](./isactive.md)
   A Boolean that indicates whether an assessment session is running.
 
 

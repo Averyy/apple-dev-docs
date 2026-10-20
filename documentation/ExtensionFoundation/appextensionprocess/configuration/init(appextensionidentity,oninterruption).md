@@ -1,7 +1,8 @@
 # init(appExtensionIdentity:onInterruption:)
 
 **Framework**: ExtensionFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

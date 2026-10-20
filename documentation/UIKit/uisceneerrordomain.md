@@ -1,7 +1,8 @@
 # UISceneErrorDomain
 
 **Framework**: UIKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for scene-related errors.
 
@@ -18,11 +19,16 @@ The domain for scene-related errors.
 let UISceneErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const UISceneErrorDomain;
+```
+
 ## See Also
 
-- [UISceneError.Code](uisceneerror/code.md)
+### Errors
+- [UISceneError.Code](./uisceneerror/code.md)
   Error codes for issues with scenes.
-- [struct UISceneError](uisceneerror.md)
+- [struct UISceneError](./uisceneerror.md)
   Errors returned during the creation or management of a scene.
 
 

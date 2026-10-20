@@ -1,7 +1,8 @@
 # ManipulationComponent.InputDevice
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes an input device like a hand or a trackpad.
 
@@ -17,25 +18,25 @@ struct InputDevice
 ## Topics
 
 ### Instance Properties
-- [var chirality: ManipulationComponent.InputDevice.Chirality?](manipulationcomponent/inputdevice/chirality-swift.property.md)
+- [var chirality: ManipulationComponent.InputDevice.Chirality?](./inputdevice/chirality-swift.property.md)
   The hand chirality (left or right) of this input device, or `nil` if this input device has no hand chirality.
-- [var kind: ManipulationComponent.InputDevice.Kind](manipulationcomponent/inputdevice/kind-swift.property.md)
+- [var kind: ManipulationComponent.InputDevice.Kind](./inputdevice/kind-swift.property.md)
   The kind of this input device.
-- [var pose: Pose3DFloat?](manipulationcomponent/inputdevice/pose.md)
+- [var pose: Pose3DFloat?](./inputdevice/pose.md)
   The pose of this input device, or `nil` if this input device has no pose.
 ### Enumerations
-- [ManipulationComponent.InputDevice.Chirality](manipulationcomponent/inputdevice/chirality-swift.enum.md)
+- [ManipulationComponent.InputDevice.Chirality](./inputdevice/chirality-swift.enum.md)
   Describes hand chirality (left or right) of an input device.
-- [ManipulationComponent.InputDevice.Kind](manipulationcomponent/inputdevice/kind-swift.enum.md)
+- [ManipulationComponent.InputDevice.Kind](./inputdevice/kind-swift.enum.md)
   Describes the kind of an input device.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

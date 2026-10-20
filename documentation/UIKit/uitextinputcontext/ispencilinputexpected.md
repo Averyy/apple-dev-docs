@@ -1,7 +1,8 @@
 # isPencilInputExpected
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean value that indicates whether someone is likely to use Apple Pencil for input.
 
@@ -18,15 +19,20 @@ Returns a Boolean value that indicates whether someone is likely to use Apple Pe
 var isPencilInputExpected: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite, getter=isPencilInputExpected) BOOL pencilInputExpected;
+```
+
 #### Discussion
 
 When pencil input is likely, adjust your UI or perform any actions you need to accommodate that input. For example, you might adjust the size of UI elements to optimize them for handwriting input.
 
 ## See Also
 
-- [var isDictationInputExpected: Bool](uitextinputcontext/isdictationinputexpected.md)
+### Getting the expected input type
+- [var isDictationInputExpected: Bool](./isdictationinputexpected.md)
   Returns a Boolean value that indicates whether someone is likely to use dictation to input text to the app.
-- [var isHardwareKeyboardInputExpected: Bool](uitextinputcontext/ishardwarekeyboardinputexpected.md)
+- [var isHardwareKeyboardInputExpected: Bool](./ishardwarekeyboardinputexpected.md)
   Returns a Boolean value that indicates whether someone is likely to enter text using a hardware keyboard.
 
 

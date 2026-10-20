@@ -1,7 +1,8 @@
 # UIModalPresentationStyle.formSheet
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A presentation style that displays the content centered in the screen.
 
@@ -18,39 +19,44 @@ A presentation style that displays the content centered in the screen.
 case formSheet
 ```
 
+```c
+UIModalPresentationFormSheet
+```
+
 #### Discussion
 
-In a regular-width, regular-height size class, the system adds a layer with a Liquid Glass effect over the background content and centers the view controller’s content on top of this layer. The default content size is smaller than that of the [`UIModalPresentationStyle.pageSheet`](uimodalpresentationstyle/pagesheet.md) style. A part of the background content always remains visible.
+In a regular-width, regular-height size class, the system adds a layer with a Liquid Glass effect over the background content and centers the view controller’s content on top of this layer. The default content size is smaller than that of the [`UIModalPresentationStyle.pageSheet`](./pagesheet.md) style. A part of the background content always remains visible.
 
-To provide a custom content size, use the modal view controller’s [`preferredContentSize`](uiviewcontroller/preferredcontentsize.md) property.
+To provide a custom content size, use the modal view controller’s [`preferredContentSize`](../uiviewcontroller/preferredcontentsize.md) property.
 
 In a compact-width, regular-height size class, the system displays the view controller as a sheet with part of the background content visible near the top of the screen.
 
-In a compact-height size class, the behavior is the same as [`UIModalPresentationStyle.fullScreen`](uimodalpresentationstyle/fullscreen.md).
+In a compact-height size class, the behavior is the same as [`UIModalPresentationStyle.fullScreen`](./fullscreen.md).
 
-Where the background content remains visible, the system doesn’t call the presenting view controller’s [`viewWillDisappear(_:)`](uiviewcontroller/viewwilldisappear(_:).md) and [`viewDidDisappear(_:)`](uiviewcontroller/viewdiddisappear(_:).md) methods.
+Where the background content remains visible, the system doesn’t call the presenting view controller’s [`viewWillDisappear(_:)`](../uiviewcontroller/viewwilldisappear%28_%29.md) and [`viewDidDisappear(_:)`](../uiviewcontroller/viewdiddisappear%28_%29.md) methods.
 
 ## See Also
 
-- [UIModalPresentationStyle.automatic](uimodalpresentationstyle/automatic.md)
+### Presentations
+- [UIModalPresentationStyle.automatic](./automatic.md)
   The default presentation style chosen by the system.
-- [UIModalPresentationStyle.none](uimodalpresentationstyle/none.md)
+- [UIModalPresentationStyle.none](./none.md)
   A presentation style that indicates no adaptations should be made.
-- [UIModalPresentationStyle.fullScreen](uimodalpresentationstyle/fullscreen.md)
+- [UIModalPresentationStyle.fullScreen](./fullscreen.md)
   A presentation style in which the presented view covers the screen.
-- [UIModalPresentationStyle.pageSheet](uimodalpresentationstyle/pagesheet.md)
+- [UIModalPresentationStyle.pageSheet](./pagesheet.md)
   A presentation style that partially covers the underlying content.
-- [UIModalPresentationStyle.currentContext](uimodalpresentationstyle/currentcontext.md)
+- [UIModalPresentationStyle.currentContext](./currentcontext.md)
   A presentation style where the content is displayed over another view controller’s content.
-- [UIModalPresentationStyle.custom](uimodalpresentationstyle/custom.md)
+- [UIModalPresentationStyle.custom](./custom.md)
   A custom view presentation style that is managed by a custom presentation controller and one or more custom animator objects.
-- [UIModalPresentationStyle.overFullScreen](uimodalpresentationstyle/overfullscreen.md)
+- [UIModalPresentationStyle.overFullScreen](./overfullscreen.md)
   A view presentation style in which the presented view covers the screen.
-- [UIModalPresentationStyle.overCurrentContext](uimodalpresentationstyle/overcurrentcontext.md)
+- [UIModalPresentationStyle.overCurrentContext](./overcurrentcontext.md)
   A presentation style where the content is displayed over another view controller’s content.
-- [UIModalPresentationStyle.popover](uimodalpresentationstyle/popover.md)
+- [UIModalPresentationStyle.popover](./popover.md)
   A presentation style where the content is displayed in a popover view.
-- [UIModalPresentationStyle.blurOverFullScreen](uimodalpresentationstyle/bluroverfullscreen.md)
+- [UIModalPresentationStyle.blurOverFullScreen](./bluroverfullscreen.md)
   A presentation style that blurs the underlying content before displaying new content in a full-screen presentation.
 
 

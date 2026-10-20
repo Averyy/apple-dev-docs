@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [dot3ChipSetIntel82557](3753720-anonymous/dot3chipsetintel82557.md)
-- [dot3ChipSetIntel82586](3753720-anonymous/dot3chipsetintel82586.md)
-- [dot3ChipSetIntel82596](3753720-anonymous/dot3chipsetintel82596.md)
+- [dot3ChipSetIntel82557](./api-3753720-anonymous/dot3chipsetintel82557.md)
+- [dot3ChipSetIntel82586](./api-3753720-anonymous/dot3chipsetintel82586.md)
+- [dot3ChipSetIntel82596](./api-3753720-anonymous/dot3chipsetintel82596.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # Flight
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Location and scheduling information for an airplane flight.
 
@@ -10,13 +11,13 @@ Location and scheduling information for an airplane flight.
 
 ## Declaration
 
-```swift
+```
 object Flight
 ```
 
 ## Properties
 
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `Flight`
 - `arrivalAirport` (Airport) *(required)*: The airport where the flight ends.
 - `arrivalGate` (string): The airport gate where the flight ends.
 - `arrivalTerminal` (string): The airport terminal where the flight ends.
@@ -30,9 +31,10 @@ object Flight
 
 ## See Also
 
-- [object Airline](airline.md)
+### Defining a Flight Reservation
+- [object Airline](./airline.md)
   An airline’s name and identifier.
-- [object Airport](airport.md)
+- [object Airport](./airport.md)
   The name and location of an airport.
 
 

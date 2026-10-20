@@ -1,7 +1,8 @@
 # renderContext
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rendering context of the video composition.
 
@@ -19,11 +20,16 @@ The rendering context of the video composition.
 var renderContext: AVVideoCompositionRenderContext { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVVideoCompositionRenderContext * renderContext;
+```
+
 ## See Also
 
-- [var compositionTime: CMTime](avasynchronousvideocompositionrequest/compositiontime.md)
+### Inspecting the request
+- [var compositionTime: CMTime](./compositiontime.md)
   A time for which to compose the frame.
-- [var videoCompositionInstruction: any AVVideoCompositionInstructionProtocol](avasynchronousvideocompositionrequest/videocompositioninstruction.md)
+- [var videoCompositionInstruction: any AVVideoCompositionInstructionProtocol](./videocompositioninstruction.md)
   A video composition instruction that indicates how to compose the frame.
 
 

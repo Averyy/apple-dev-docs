@@ -1,7 +1,8 @@
 # windowManagerRole(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the role for windows derived from `self` when participating in a managed window context, such as full screen or Stage Manager.
 
@@ -45,23 +46,24 @@ struct MyApp: App {
 
 ## See Also
 
-- [struct WindowManagerRole](windowmanagerrole.md)
+### Managing window behavior
+- [struct WindowManagerRole](../windowmanagerrole.md)
   Options for defining how a scene’s windows behave when used within a managed window context, such as full screen mode and Stage Manager.
-- [struct WindowInteractionBehavior](windowinteractionbehavior.md)
+- [struct WindowInteractionBehavior](../windowinteractionbehavior.md)
   Options for enabling and disabling window interaction behaviors.
-- [func windowDismissBehavior(WindowInteractionBehavior) -> some View](view/windowdismissbehavior(_:).md)
+- [func windowDismissBehavior(WindowInteractionBehavior) -> some View](../view/windowdismissbehavior%28_%29.md)
   Configures the dismiss functionality for the window enclosing `self`.
-- [func windowFullScreenBehavior(WindowInteractionBehavior) -> some View](view/windowfullscreenbehavior(_:).md)
+- [func windowFullScreenBehavior(WindowInteractionBehavior) -> some View](../view/windowfullscreenbehavior%28_%29.md)
   Configures the full screen functionality for the window enclosing `self`.
-- [func windowMinimizeBehavior(WindowInteractionBehavior) -> some View](view/windowminimizebehavior(_:).md)
+- [func windowMinimizeBehavior(WindowInteractionBehavior) -> some View](../view/windowminimizebehavior%28_%29.md)
   Configures the minimize functionality for the window enclosing `self`.
-- [func windowResizeBehavior(WindowInteractionBehavior) -> some View](view/windowresizebehavior(_:).md)
+- [func windowResizeBehavior(WindowInteractionBehavior) -> some View](../view/windowresizebehavior%28_%29.md)
   Configures the resize functionality for the window enclosing `self`.
-- [func windowBackgroundDragBehavior(WindowInteractionBehavior) -> some Scene](scene/windowbackgrounddragbehavior(_:).md)
+- [func windowBackgroundDragBehavior(WindowInteractionBehavior) -> some Scene](./windowbackgrounddragbehavior%28_%29.md)
   Configures the behavior of dragging a window by its background.
-- [func allowsWindowActivationEvents() -> some View](view/allowswindowactivationevents.md)
+- [func allowsWindowActivationEvents() -> some View](../view/allowswindowactivationevents%28%29.md)
   Configures gestures in this view hierarchy to handle events that activate the containing window.
-- [func allowsWindowActivationEvents(Bool?) -> some View](view/allowswindowactivationevents(_:).md)
+- [func allowsWindowActivationEvents(Bool?) -> some View](../view/allowswindowactivationevents%28_%29.md)
   Configures whether gestures in this view hierarchy can handle events that activate the containing window.
 
 

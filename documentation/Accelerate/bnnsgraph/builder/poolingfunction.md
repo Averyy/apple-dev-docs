@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.PoolingFunction
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The pooling function
 
@@ -23,20 +24,20 @@ enum PoolingFunction
 ## Topics
 
 ### Enumeration Cases
-- [BNNSGraph.Builder.PoolingFunction.average(includePadding:)](bnnsgraph/builder/poolingfunction/average(includepadding:).md)
+- [BNNSGraph.Builder.PoolingFunction.average(includePadding:)](./poolingfunction/average%28includepadding%29.md)
   A function for pooling that computes the average of each element in the pooling kernel.
-- [BNNSGraph.Builder.PoolingFunction.l2Norm](bnnsgraph/builder/poolingfunction/l2norm.md)
+- [BNNSGraph.Builder.PoolingFunction.l2Norm](./poolingfunction/l2norm.md)
   A function for pooling that computes the square root of the sum of squares of each element in the pooling kernel.
-- [BNNSGraph.Builder.PoolingFunction.max](bnnsgraph/builder/poolingfunction/max.md)
+- [BNNSGraph.Builder.PoolingFunction.max](./poolingfunction/max.md)
   A function for pooling that computes the maximum of each element in the pooling kernel.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

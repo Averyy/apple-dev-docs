@@ -1,7 +1,8 @@
 # kAXDocumentAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The URL of the open document represented by this accessibility object. This attribute represents the URL as a string object.
 
@@ -12,6 +13,10 @@ The URL of the open document represented by this accessibility object. This attr
 
 ```swift
 var kAXDocumentAttribute: String { get }
+```
+
+```c
+#define kAXDocumentAttribute
 ```
 
 

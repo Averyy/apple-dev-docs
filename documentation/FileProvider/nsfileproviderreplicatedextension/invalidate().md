@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the file provider to perform any necessary cleanup so that the system can deallocate it.
@@ -19,6 +20,10 @@ Tells the file provider to perform any necessary cleanup so that the system can 
 func invalidate()
 ```
 
+```objc
+- (void) invalidate;
+```
+
 #### Discussion
 
 Your implementation should perform any necessary cleanup so that the system can dismiss and deallocate the file provider.
@@ -27,7 +32,8 @@ Your implementation should perform any necessary cleanup so that the system can 
 
 ## See Also
 
-- [init(domain: NSFileProviderDomain)](nsfileproviderreplicatedextension/init(domain:).md)
+### Creating and Removing File Providers
+- [init(domain: NSFileProviderDomain)](./init%28domain%29.md)
   Creates an instance of the file provider for the specified domain.
 
 

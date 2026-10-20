@@ -1,7 +1,8 @@
 # detachToWindow
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the popover has been closed because it is being detached to a window.
 
@@ -14,9 +15,14 @@ Specifies that the popover has been closed because it is being detached to a win
 static let detachToWindow: NSPopover.CloseReason
 ```
 
+```c
+extern NSPopoverCloseReasonValue const NSPopoverCloseReasonDetachToWindow;
+```
+
 ## See Also
 
-- [static let standard: NSPopover.CloseReason](nspopover/closereason/standard.md)
+### Constants
+- [static let standard: NSPopover.CloseReason](./standard.md)
   Specifies that the popover has been closed in a standard way.
 
 

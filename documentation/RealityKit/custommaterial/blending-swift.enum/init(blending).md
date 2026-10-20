@@ -1,7 +1,8 @@
 # init(blending:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom blending object from an existing physically based material’s blending object.
 
@@ -20,7 +21,7 @@ init(blending value: PhysicallyBasedMaterial.Blending)
 
 ## Parameters
 
-- `value`: The blending property from a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md).
+- `value`: The blending property from a [`PhysicallyBasedMaterial`](../../physicallybasedmaterial.md).
 
 
 ---

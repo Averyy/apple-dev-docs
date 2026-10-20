@@ -1,7 +1,8 @@
 # +(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Adds two angles and produces their sum.
 
@@ -11,7 +12,7 @@ Adds two angles and produces their sum.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,15 +23,16 @@ static func + (lhs: Angle2D, rhs: Angle2D) -> Angle2D
 
 ## See Also
 
-- [static func + (Angle2D) -> Angle2D](angle2d/+(_:).md)
+### Applying arithmetic operations
+- [static func + (Angle2D) -> Angle2D](./plus%28_%29.md)
   Returns the given angle unchanged.
-- [static func += (inout Angle2D, Angle2D)](angle2d/+=(_:_:).md)
+- [static func += (inout Angle2D, Angle2D)](./pluseq%28_,_%29.md)
   Adds two angles and stores the result in the left-hand-side variable.
-- [static func - (Angle2D) -> Angle2D](angle2d/-(_:).md)
+- [static func - (Angle2D) -> Angle2D](./minus%28_%29.md)
   Returns the additive inverse of the given angle.
-- [static func - (Angle2D, Angle2D) -> Angle2D](angle2d/-(_:_:).md)
+- [static func - (Angle2D, Angle2D) -> Angle2D](./minus%28_,_%29.md)
   Subtracts one angle from another and produces their difference.
-- [static func -= (inout Angle2D, Angle2D)](angle2d/-=(_:_:).md)
+- [static func -= (inout Angle2D, Angle2D)](./minuseq%28_,_%29.md)
   Subtracts the second angle from the first and stores the difference in the left-hand-side variable.
 
 

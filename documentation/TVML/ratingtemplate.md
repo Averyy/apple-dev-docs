@@ -8,7 +8,7 @@ Displays a rating for an item.
 
 Use the `ratingTemplate` element to display a rating for an item. The following figure shows the basic layout for a `ratingTemplate` page. The theme for the rating template defaults to the system preference.
 
-![Layout diagram showing a title area above a rating area.](/images/com.apple.TVML/ratingtemplate-1@2x.png)
+![Layout diagram showing a title area above a rating area.](https://developer.apple.com/tutorials/images/com.apple.TVML/ratingtemplate-1@2x.png)
 
 ##### Main Elements
 
@@ -25,8 +25,8 @@ The following listing shows the main elements of the `ratingTemplate` element in
 
 ###### Element Descriptions
 
-- **[`ratingBadge`](ratingbadge.md)**: The rating for the item.
-- **[`title`](title.md)**: The title for the rated item.
+- **[ratingBadge](./ratingbadge.md)**: The rating for the item.
+- **[title](./title.md)**: The title for the rated item.
 
 ##### Example
 
@@ -43,51 +43,52 @@ The following listing shows the TVML for a `ratingTemplate` example. The example
 
 The following figure shows the output for the above example:
 
-![Screenshot showing a title and 4 of 5 rating stars filled in.](/images/com.apple.TVML/ratingtemplate-2@2x.png)
+![Screenshot showing a title and 4 of 5 rating stars filled in.](https://developer.apple.com/tutorials/images/com.apple.TVML/ratingtemplate-2@2x.png)
 
 ## Topics
 
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [layoutDirection](layoutdirection.md)
+- [layoutDirection](./layoutdirection.md)
   Specifies the direction in which text is displayed.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [alertTemplate](alerttemplate.md)
+### Full-Page Templates
+- [alertTemplate](./alerttemplate.md)
   Displays important information to the user.
-- [catalogTemplate](catalogtemplate.md)
+- [catalogTemplate](./catalogtemplate.md)
   Displays groups of items along one side of a page and images of a group’s contents on the other side.
-- [compilationTemplate](compilationtemplate.md)
+- [compilationTemplate](./compilationtemplate.md)
   Displays information about a single media item and its components.
-- [descriptiveAlertTemplate](descriptivealerttemplate.md)
+- [descriptiveAlertTemplate](./descriptivealerttemplate.md)
   Displays large amounts of important information to the user.
-- [divTemplate](divtemplate.md)
+- [divTemplate](./divtemplate.md)
   Provides the ability to create pages that don’t conform to a layout defined by another template.
-- [formTemplate](formtemplate.md)
+- [formTemplate](./formtemplate.md)
   Provides the ability to gather information from the user.
-- [listTemplate](listtemplate.md)
+- [listTemplate](./listtemplate.md)
   Displays a list of items along one side of a page and the corresponding image on the other side.
-- [loadingTemplate](loadingtemplate.md)
+- [loadingTemplate](./loadingtemplate.md)
   Displays a spinner and description on the screen.
-- [mainTemplate](maintemplate.md)
+- [mainTemplate](./maintemplate.md)
   Displays user options for a media item.
-- [menuBarTemplate](menubartemplate.md)
+- [menuBarTemplate](./menubartemplate.md)
   Creates a page with items along the top and related information below.
-- [oneupTemplate](oneuptemplate.md)
+- [oneupTemplate](./oneuptemplate.md)
   Creates a page that allows users to navigate between full-screen images.
-- [paradeTemplate](paradetemplate.md)
+- [paradeTemplate](./paradetemplate.md)
   Displays a groups of items along one side of a page and scrolling images on the other side.
-- [productBundleTemplate](productbundletemplate.md)
+- [productBundleTemplate](./productbundletemplate.md)
   Displays information for a group of related media items.
-- [productTemplate](producttemplate.md)
+- [productTemplate](./producttemplate.md)
   Displays detailed information about a single product.
-- [searchTemplate](searchtemplate.md)
+- [searchTemplate](./searchtemplate.md)
   Searches for a media item based on user input.
 
 

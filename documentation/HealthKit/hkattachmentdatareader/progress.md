@@ -1,7 +1,8 @@
 # progress
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object you can use to track the progress while reading an attachment’s data.
 
@@ -10,7 +11,7 @@ An object you can use to track the progress while reading an attachment’s data
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -21,9 +22,10 @@ var progress: Progress { get }
 
 ## See Also
 
-- [var data: Data](hkattachmentdatareader/data.md)
+### Reading attachment data
+- [var data: Data](./data.md)
   The abstract’s data.
-- [var bytes: HKAttachment.AsyncBytes](hkattachmentdatareader/bytes.md)
+- [var bytes: HKAttachment.AsyncBytes](./bytes.md)
   An asynchronous sequence that provides the attachment’s data.
 
 

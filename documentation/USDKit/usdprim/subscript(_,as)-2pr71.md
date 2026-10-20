@@ -1,7 +1,8 @@
 # subscript(_:as:)
 
 **Framework**: USDKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 27.0+
@@ -10,6 +11,8 @@
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
+
+> **Deprecated**: Use USDArray<UInt32> for uint[] or USDArray<UInt64> for uint64[].
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # kVTCameraCalibrationLensDomain_Color
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 let kVTCameraCalibrationLensDomain_Color: CFString
+```
+
+```c
+extern CFStringRef const kVTCameraCalibrationLensDomain_Color;
 ```
 
 

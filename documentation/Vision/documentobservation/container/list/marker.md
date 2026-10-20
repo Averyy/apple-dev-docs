@@ -1,7 +1,8 @@
 # DocumentObservation.Container.List.Marker
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The symbol or character at the beginning of each list item.
 
@@ -22,36 +23,37 @@ enum Marker
 ## Topics
 
 ### Getting the list marker types
-- [DocumentObservation.Container.List.Marker.bullet](documentobservation/container/list/marker/bullet.md)
+- [DocumentObservation.Container.List.Marker.bullet](./marker/bullet.md)
   A bullet point symbol that precedes items in an unordered list.
-- [DocumentObservation.Container.List.Marker.compositeDecimal](documentobservation/container/list/marker/compositedecimal.md)
+- [DocumentObservation.Container.List.Marker.compositeDecimal](./marker/compositedecimal.md)
   A decimal character containing multiple numbers and digits that precedes items in a list.
-- [DocumentObservation.Container.List.Marker.decimal](documentobservation/container/list/marker/decimal.md)
+- [DocumentObservation.Container.List.Marker.decimal](./marker/decimal.md)
   A numerical character that precedes items in an ordered list.
-- [DocumentObservation.Container.List.Marker.decorativeDecimal](documentobservation/container/list/marker/decorativedecimal.md)
+- [DocumentObservation.Container.List.Marker.decorativeDecimal](./marker/decorativedecimal.md)
   A decorative character with a number enclosed in a circle that precedes items in a list.
-- [DocumentObservation.Container.List.Marker.hyphen](documentobservation/container/list/marker/hyphen.md)
+- [DocumentObservation.Container.List.Marker.hyphen](./marker/hyphen.md)
   A hyphen character that precedes items in a list.
-- [DocumentObservation.Container.List.Marker.lowercaseLatin](documentobservation/container/list/marker/lowercaselatin.md)
+- [DocumentObservation.Container.List.Marker.lowercaseLatin](./marker/lowercaselatin.md)
   A lowercase alphabetical character that precedes items in a list.
-- [DocumentObservation.Container.List.Marker.uppercaseLatin](documentobservation/container/list/marker/uppercaselatin.md)
+- [DocumentObservation.Container.List.Marker.uppercaseLatin](./marker/uppercaselatin.md)
   An uppercase alphabetical character that precedes items in a list.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var boundingRegion: NormalizedRegion](documentobservation/container/list/boundingregion.md)
+### Inspecting a list
+- [var boundingRegion: NormalizedRegion](./boundingregion.md)
   A polygon that defines the boundary of the list.
-- [var items: [DocumentObservation.Container.List.Item]](documentobservation/container/list/items.md)
+- [var items: [DocumentObservation.Container.List.Item]](./items.md)
   The elements of the list.
 
 

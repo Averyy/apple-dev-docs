@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 
 # mlx.optimizers.AdamW
 
-**
-
-- [.rst](../../../_sources/python/optimizers/_autosummary/mlx.optimizers.AdamW.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.optimizers.AdamW
-
- Table of contents 
-
-## Contents
-
-# mlx.optimizers.AdamW
-
 **class AdamW(*learning_rate: float | Callable[[array], array]*, *betas: List[float] = [0.9, 0.999]*, *eps: float = 1e-08*, *weight_decay: float = 0.01*, *bias_correction: bool = False*)**
 : The AdamW optimizer [1]. We update the weights with a weight_decay
 (\(\lambda\)) value:
@@ -63,5 +36,3 @@ Methods
 
 `apply_single`(gradient, parameter, state)
 Performs the AdamW parameter update by modifying the parameters passed into Adam.
-
-** Contents

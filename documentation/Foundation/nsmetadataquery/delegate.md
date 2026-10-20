@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The query’s delegate.
 
@@ -20,25 +21,30 @@ The query’s delegate.
 unowned(unsafe) var delegate: (any NSMetadataQueryDelegate)? { get set }
 ```
 
+```objc
+@property (assign, nullable) id<NSMetadataQueryDelegate> delegate;
+```
+
 #### Discussion
 
-This property contains an object that acts as the query’s delegate, or `nil`. The delegate must implement the [`NSMetadataQueryDelegate`](nsmetadataquerydelegate.md). Pass `nil` to remove the current delegate.
+This property contains an object that acts as the query’s delegate, or `nil`. The delegate must implement the [`NSMetadataQueryDelegate`](../nsmetadataquerydelegate.md). Pass `nil` to remove the current delegate.
 
 ## See Also
 
-- [var searchScopes: [Any]](nsmetadataquery/searchscopes.md)
+### Configuring queries
+- [var searchScopes: [Any]](./searchscopes.md)
   An array containing the search scopes.
-- [var predicate: NSPredicate?](nsmetadataquery/predicate.md)
+- [var predicate: NSPredicate?](./predicate.md)
   The predicate used to filter query results.
-- [var sortDescriptors: [NSSortDescriptor]](nsmetadataquery/sortdescriptors.md)
+- [var sortDescriptors: [NSSortDescriptor]](./sortdescriptors.md)
   An array of sort descriptor objects.
-- [var valueListAttributes: [String]](nsmetadataquery/valuelistattributes.md)
+- [var valueListAttributes: [String]](./valuelistattributes.md)
   An array of attributes whose values are gathered by the query.
-- [var groupingAttributes: [String]?](nsmetadataquery/groupingattributes.md)
+- [var groupingAttributes: [String]?](./groupingattributes.md)
   An array of grouping attributes. (read-only)
-- [var notificationBatchingInterval: TimeInterval](nsmetadataquery/notificationbatchinginterval.md)
+- [var notificationBatchingInterval: TimeInterval](./notificationbatchinginterval.md)
   The interval at which notification of updated results occurs.
-- [var searchItems: [Any]?](nsmetadataquery/searchitems.md)
+- [var searchItems: [Any]?](./searchitems.md)
   An array of objects that define the query’s scope.
 
 

@@ -1,14 +1,15 @@
 # kBluetoothHCIPageScanTypeReservedStart
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCIPageScanTypeReservedStart = 0x02
 ```
 

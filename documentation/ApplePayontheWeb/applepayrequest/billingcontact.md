@@ -1,7 +1,8 @@
 # billingContact
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The customer’s billing contact information.
 
@@ -11,7 +12,7 @@ The customer’s billing contact information.
 
 ## Declaration
 
-```swift
+```
 ApplePayPaymentContact billingContact;
 ```
 
@@ -19,17 +20,18 @@ ApplePayPaymentContact billingContact;
 
 If you have an up-to-date billing address for the customer on file, you can set it here. This billing address appears in the payment sheet. The user can either use the address you specify or select a different address.
 
-> **Note**:  If you supply a billing address, you must also request `“postalAddress”` in [`requiredBillingContactFields`](applepaypaymentrequest/requiredbillingcontactfields.md).
+> **Note**:  If you supply a billing address, you must also request `“postalAddress”` in [`requiredBillingContactFields`](../applepaypaymentrequest/requiredbillingcontactfields.md).
 
 ## See Also
 
-- [shippingContact](applepayrequest/shippingcontact.md)
+### Known contact information
+- [shippingContact](./shippingcontact.md)
   The customer’s shipping contact information.
-- [shippingContactEditingMode](applepayrequest/shippingcontacteditingmode.md)
+- [shippingContactEditingMode](./shippingcontacteditingmode.md)
   A value that indicates if the shipping mode prevents the user editing the shipping address.
-- [ApplePayPaymentContact](applepaypaymentcontact.md)
+- [ApplePayPaymentContact](../applepaypaymentcontact.md)
   Contact information fields to use for billing and shipping contact information.
-- [ApplePayShippingContactEditingMode](applepayshippingcontacteditingmode.md)
+- [ApplePayShippingContactEditingMode](../applepayshippingcontacteditingmode.md)
   Values that indicate whether the shipping mode prevents the user from editing fields of the shipping address.
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes a participant permission option object.
 

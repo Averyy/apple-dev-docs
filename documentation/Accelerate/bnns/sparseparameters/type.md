@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An enumeration that specifies special patterns, if any, in the sparsity.
 
@@ -11,8 +12,10 @@ An enumeration that specifies special patterns, if any, in the sparsity.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,9 +25,10 @@ let type: BNNS.SparsityType
 
 ## See Also
 
-- [let ratio: (numerator: UInt32, denominator: UInt32)](bnns/sparseparameters/ratio.md)
+### Inspecting the Properties of a Sparse Parameters Structure
+- [let ratio: (numerator: UInt32, denominator: UInt32)](./ratio.md)
   The sparsity ratio expressed as the numerator and the denominator.
-- [let targetSystem: BNNSTargetSystem](bnns/sparseparameters/targetsystem.md)
+- [let targetSystem: BNNSTargetSystem](./targetsystem.md)
   The target system.
 
 

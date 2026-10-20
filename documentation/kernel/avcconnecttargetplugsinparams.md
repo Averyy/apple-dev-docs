@@ -1,14 +1,15 @@
 # AVCConnectTargetPlugsInParams
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct _AVCConnectTargetPlugsInParams {
     ...
 } AVCConnectTargetPlugsInParams;
@@ -17,30 +18,31 @@ typedef struct _AVCConnectTargetPlugsInParams {
 ## Topics
 
 ### Instance Properties
-- [destPlugNum](avcconnecttargetplugsinparams/1440934-destplugnum.md)
-- [destPlugType](avcconnecttargetplugsinparams/1440915-destplugtype.md)
-- [destSubunitTypeAndID](avcconnecttargetplugsinparams/1440984-destsubunittypeandid.md)
-- [lockConnection](avcconnecttargetplugsinparams/1440978-lockconnection.md)
-- [permConnection](avcconnecttargetplugsinparams/1441030-permconnection.md)
-- [sourcePlugNum](avcconnecttargetplugsinparams/1441017-sourceplugnum.md)
-- [sourcePlugType](avcconnecttargetplugsinparams/1440988-sourceplugtype.md)
-- [sourceSubunitTypeAndID](avcconnecttargetplugsinparams/1441003-sourcesubunittypeandid.md)
+- [destPlugNum](./avcconnecttargetplugsinparams/api-1440934-destplugnum.md)
+- [destPlugType](./avcconnecttargetplugsinparams/api-1440915-destplugtype.md)
+- [destSubunitTypeAndID](./avcconnecttargetplugsinparams/api-1440984-destsubunittypeandid.md)
+- [lockConnection](./avcconnecttargetplugsinparams/api-1440978-lockconnection.md)
+- [permConnection](./avcconnecttargetplugsinparams/api-1441030-permconnection.md)
+- [sourcePlugNum](./avcconnecttargetplugsinparams/api-1441017-sourceplugnum.md)
+- [sourcePlugType](./avcconnecttargetplugsinparams/api-1440988-sourceplugtype.md)
+- [sourceSubunitTypeAndID](./avcconnecttargetplugsinparams/api-1441003-sourcesubunittypeandid.md)
 
 ## See Also
 
-- [IOFireWireAVCAsynchronousCommand](iofirewireavcasynchronouscommand.md)
-- [IOFireWireAVCTargetSpace](iofirewireavctargetspace.md)
+### AVC Support
+- [IOFireWireAVCAsynchronousCommand](./iofirewireavcasynchronouscommand.md)
+- [IOFireWireAVCTargetSpace](./iofirewireavctargetspace.md)
   object to centralize the AVC Target mode support
-- [IOFireWireAVCCommand](iofirewireavccommand.md)
-- [AVCCommandHandlerInfo](avccommandhandlerinfo.md)
-- [AVCConnectionRecord](avcconnectionrecord.md)
-- [AVCSubunitInfo](avcsubunitinfo.md)
-- [AVCConnectTargetPlugsOutParams](avcconnecttargetplugsoutparams.md)
-- [AVCGetTargetPlugConnectionInParams](avcgettargetplugconnectioninparams.md)
-- [AVCGetTargetPlugConnectionOutParams](avcgettargetplugconnectionoutparams.md)
-- [AVCSubunitPlugRecord](avcsubunitplugrecord.md)
-- [AVCUnitPlugRecord](avcunitplugrecord.md)
-- [AVCUnitPlugs](avcunitplugs.md)
+- [IOFireWireAVCCommand](./iofirewireavccommand.md)
+- [AVCCommandHandlerInfo](./avccommandhandlerinfo.md)
+- [AVCConnectionRecord](./avcconnectionrecord.md)
+- [AVCSubunitInfo](./avcsubunitinfo.md)
+- [AVCConnectTargetPlugsOutParams](./avcconnecttargetplugsoutparams.md)
+- [AVCGetTargetPlugConnectionInParams](./avcgettargetplugconnectioninparams.md)
+- [AVCGetTargetPlugConnectionOutParams](./avcgettargetplugconnectionoutparams.md)
+- [AVCSubunitPlugRecord](./avcsubunitplugrecord.md)
+- [AVCUnitPlugRecord](./avcunitplugrecord.md)
+- [AVCUnitPlugs](./avcunitplugs.md)
 
 
 ---

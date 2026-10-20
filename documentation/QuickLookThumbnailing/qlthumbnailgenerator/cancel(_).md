@@ -1,7 +1,8 @@
 # cancel(_:)
 
 **Framework**: Quick Look Thumbnailing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the generation of a thumbnail for a given request.
 
@@ -18,9 +19,13 @@ Cancels the generation of a thumbnail for a given request.
 func cancel(_ request: QLThumbnailGenerator.Request)
 ```
 
+```objc
+- (void) cancelRequest:(QLThumbnailGenerationRequest *) request;
+```
+
 ## Mentions
 
-- [Creating Quick Look Thumbnails to Preview Files in Your App](creating-quick-look-thumbnails-to-preview-files-in-your-app.md)
+- [Creating Quick Look Thumbnails to Preview Files in Your App](../creating-quick-look-thumbnails-to-preview-files-in-your-app.md)
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # ExtensionConfig.Media.Queues.ContentProtectionKey.Cks
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Configuration details for your service’s content protection system.
 
@@ -10,18 +11,21 @@ Configuration details for your service’s content protection system.
 
 ## Declaration
 
-```swift
+```
 object ExtensionConfig.Media.Queues.ContentProtectionKey.Cks
 ```
 
 ## Properties
 
-- `certUrl` (string): The URL of the certicate the client must use to sign requests to the `contentProtectionKey` endpoint. For more information, see [`contentProtectionKey`](extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionarykey.md).
+- `certUrl` (string): The URL of the certicate the client must use to sign requests to the `contentProtectionKey` endpoint. For more information, see [`contentProtectionKey`](../contentprotectionkey-data.dictionarykey.md).
+
+  **Maximum Length**: `4000`
 - `keySystem` (ContentProtectionKeySystem) *(required)*: The content’s encryption type. The only supported value is `ContentKeySystemFairPlayStreaming`.
 
 ## See Also
 
-- [object ExtensionConfig.Media.Queues.ContentProtectionKey.Hdr](extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary/hdr-data.dictionary.md)
+### Requiring Headers
+- [object ExtensionConfig.Media.Queues.ContentProtectionKey.Hdr](./hdr-data.dictionary.md)
   Headers to include with requests to the content protection key endpoint.
 
 

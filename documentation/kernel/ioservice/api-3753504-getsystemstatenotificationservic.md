@@ -1,14 +1,15 @@
 # getSystemStateNotificationService
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 static IOService * getSystemStateNotificationService(void);
 ```
 

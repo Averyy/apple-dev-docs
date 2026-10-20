@@ -1,17 +1,22 @@
 # readFileWrapper()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads data representing a file’s contents from the receiver and returns it as a file wrapper.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func readFileWrapper() -> FileWrapper?
+```
+
+```objc
+- (NSFileWrapper *) readFileWrapper;
 ```
 
 #### Return Value
@@ -24,7 +29,8 @@ In macOS 10.5 and earlier, the file contents pboard type allowed you to synthesi
 
 ## See Also
 
-- [func readFileContentsType(NSPasteboard.PasteboardType?, toFile: String) -> String?](nspasteboard/readfilecontentstype(_:tofile:).md)
+### Reading data (macOS 10.5 and earlier)
+- [func readFileContentsType(NSPasteboard.PasteboardType?, toFile: String) -> String?](./readfilecontentstype%28_,tofile%29.md)
   Reads data representing a file’s contents from the receiver and writes it to the specified file.
 
 

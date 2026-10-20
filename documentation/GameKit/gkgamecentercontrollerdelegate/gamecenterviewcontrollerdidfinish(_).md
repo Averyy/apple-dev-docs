@@ -2,17 +2,18 @@
 
 **Framework**: GameKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Handles when the player dismisses the dashboard.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 13.1+
-- macOS 10.9+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 6.0+ - Deprecated in 26.0
+- iPadOS 6.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.9+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Handles when the player dismisses the dashboard.
 func gameCenterViewControllerDidFinish(_ gameCenterViewController: GKGameCenterViewController)
 ```
 
+```objc
+- (void) gameCenterViewControllerDidFinish:(GKGameCenterViewController *) gameCenterViewController;
+```
+
 ## Mentions
 
-- [Displaying the Game Center dashboard](displaying-the-game-center-dashboard.md)
+- [Displaying the Game Center dashboard](../displaying-the-game-center-dashboard.md)
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # accessory
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accessory involved in the event, if any.
 
@@ -16,21 +17,26 @@ The accessory involved in the event, if any.
 var accessory: ASAccessory? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) ASAccessory * accessory;
+```
+
 ## Mentions
 
-- [Discovering and configuring accessories](discovering-and-configuring-accessories.md)
+- [Discovering and configuring accessories](../discovering-and-configuring-accessories.md)
 
 #### Discussion
 
-The session populates this member for event types like [`ASAccessoryEventType.accessoryAdded`](asaccessoryeventtype/accessoryadded.md) and [`ASAccessoryEventType.accessoryChanged`](asaccessoryeventtype/accessorychanged.md), but not for life cycle or picker events like [`ASAccessoryEventType.activated`](asaccessoryeventtype/activated.md) or [`ASAccessoryEventType.pickerDidPresent`](asaccessoryeventtype/pickerdidpresent.md).
+The session populates this member for event types like [`ASAccessoryEventType.accessoryAdded`](../asaccessoryeventtype/accessoryadded.md) and [`ASAccessoryEventType.accessoryChanged`](../asaccessoryeventtype/accessorychanged.md), but not for life cycle or picker events like [`ASAccessoryEventType.activated`](../asaccessoryeventtype/activated.md) or [`ASAccessoryEventType.pickerDidPresent`](../asaccessoryeventtype/pickerdidpresent.md).
 
 ## See Also
 
-- [class ASAccessory](asaccessory.md)
+### Inspecting the event
+- [class ASAccessory](../asaccessory.md)
   An accessory discovered by the accessory session.
-- [var eventType: ASAccessoryEventType](asaccessoryevent/eventtype.md)
+- [var eventType: ASAccessoryEventType](./eventtype.md)
   The type of event, such as accessory addition or removal, or picker presentation or removal.
-- [enum ASAccessoryEventType](asaccessoryeventtype.md)
+- [enum ASAccessoryEventType](../asaccessoryeventtype.md)
   An enumeration of the types of events encountered during accessory discovery
 
 

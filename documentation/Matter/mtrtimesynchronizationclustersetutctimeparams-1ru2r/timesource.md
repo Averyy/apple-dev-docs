@@ -1,7 +1,8 @@
 # timeSource
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.2+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var timeSource: NSNumber? { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSNumber * timeSource;
 ```
 
 

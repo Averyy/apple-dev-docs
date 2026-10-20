@@ -1,7 +1,8 @@
 # previewParametersProvider
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that provides the preview parameters for a drag item.
 
@@ -15,6 +16,10 @@ The object that provides the preview parameters for a drag item.
 
 ```swift
 var previewParametersProvider: ((UICollectionViewCell) -> UIDragPreviewParameters?)? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) UIDragPreviewParameters * (^previewParametersProvider)(UICollectionViewCell *);
 ```
 
 

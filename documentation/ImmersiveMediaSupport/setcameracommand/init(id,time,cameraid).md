@@ -1,7 +1,8 @@
 # init(id:time:cameraID:)
 
 **Framework**: Immersive Media Support  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a command with a specific ID, cameraID and start time.
 

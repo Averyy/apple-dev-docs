@@ -1,7 +1,8 @@
 # Read Alternative Distribution Package Information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about a specific alternative distribution package.
 
@@ -10,7 +11,7 @@ Get information about a specific alternative distribution package.
 
 ## Mentions
 
-- [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
+- [App Store Connect API 4.2 release notes](./app-store-connect-api-4-2-release-notes.md)
 
 #### Discussion
 
@@ -18,7 +19,7 @@ Get information about a specific alternative distribution package.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages/c925443b-7dfb-4cc5-8b1a-0074eb7d5fe9
 ```
 
@@ -55,20 +56,44 @@ https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages/c925443
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the alternative distribution package resource ID from the [`Read an app store version’s alternative distribution package`](./get-v1-appstoreversions-_id_-alternativedistributionpackage.md) response.
+
+### Query Parameters
+
 - `fields[alternativeDistributionPackageVersions]` ([string]): Additional fields to include for each alternative distribution package versions resource returned by the response.
+
+  **Allowed Values**: `url`, `urlExpirationDate`, `version`, `fileChecksum`, `state`, `variants`, `deltas`, `alternativeDistributionPackage`
 - `fields[alternativeDistributionPackages]` ([string]): Additional fields to include for each alternative distribution packages resource returned by the response.
+
+  **Allowed Values**: `sourceFileChecksum`, `versions`
 - `include` ([string]): The relationship data to include in the response.
+
+  **Allowed Values**: `versions`
 - `limit[versions]` (integer): The maximum number of related versions resources to return.
+
+  **Maximum**: `50`
+
+## Responses
+
+- `200` OK (`AlternativeDistributionPackageResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Creating alternative distribution packages](creating-alternative-distribution-packages.md)
+### Creating and reading distribution packages
+- [Creating alternative distribution packages](./creating-alternative-distribution-packages.md)
   Create distribution packages for your apps that you distribute on alternative marketplaces or on the web.
-- [Create an Alternative Distribution Package](post-v1-alternativedistributionpackages.md)
+- [Create an Alternative Distribution Package](./post-v1-alternativedistributionpackages.md)
   Create an alternative distribution package for an App Store version.
-- [Read an app store version’s alternative distribution package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
+- [Read an app store version’s alternative distribution package](./get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
   Read the alternative distribution package for a specific App Store version.
-- [Read Version Information for an Alternative Distribution Package](get-v1-alternativedistributionpackages-_id_-versions.md)
+- [Read Version Information for an Alternative Distribution Package](./get-v1-alternativedistributionpackages-_id_-versions.md)
   Get version detail information about a specific alternative distribution package.
 
 

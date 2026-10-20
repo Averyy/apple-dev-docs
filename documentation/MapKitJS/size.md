@@ -1,7 +1,8 @@
 # Size
 
 **Framework**: MapKit JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Interface
 
 A structure that represents a size.
 
@@ -10,25 +11,26 @@ A structure that represents a size.
 
 ## Declaration
 
-```swift
+```
 interface Size
 ```
 
 ## Topics
 
 ### Instance Properties
-- [height](size/height.md)
+- [height](./size/height.md)
   The height value of the size structure.
-- [width](size/width.md)
+- [width](./size/width.md)
   The width value of the size structure.
 
 ## See Also
 
-- [interface AnnotationCalloutDelegate](annotationcalloutdelegate.md)
+### Customize annotations
+- [interface AnnotationCalloutDelegate](./annotationcalloutdelegate.md)
   Methods for customizing the behavior and appearance of an annotation callout.
-- [const AnnotationCollisionMode](annotationcollisionmode.md)
+- [const AnnotationCollisionMode](./annotationcollisionmode.md)
   Constants that indicate the collision mode for an annotation.
-- [const AnnotationDisplayPriority](annotationdisplaypriority.md)
+- [const AnnotationDisplayPriority](./annotationdisplaypriority.md)
   Constants that indicate the priority for displaying annotations on the map.
 
 

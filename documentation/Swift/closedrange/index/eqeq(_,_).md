@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two values are equal.
 
@@ -19,6 +20,8 @@ Returns a Boolean value indicating whether two values are equal.
 ```swift
 static func == (lhs: ClosedRange<Bound>.Index, rhs: ClosedRange<Bound>.Index) -> Bool
 ```
+
+Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
 #### Discussion
 

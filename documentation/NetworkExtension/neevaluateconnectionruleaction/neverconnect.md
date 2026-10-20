@@ -1,7 +1,8 @@
 # NEEvaluateConnectionRuleAction.neverConnect
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Do not start the VPN.
 
@@ -19,9 +20,14 @@ Do not start the VPN.
 case neverConnect
 ```
 
+```c
+NEEvaluateConnectionRuleActionNeverConnect
+```
+
 ## See Also
 
-- [NEEvaluateConnectionRuleAction.connectIfNeeded](neevaluateconnectionruleaction/connectifneeded.md)
+### Rule Actions
+- [NEEvaluateConnectionRuleAction.connectIfNeeded](./connectifneeded.md)
   Start the VPN if connections to the matching hostname cannot be resolved.
 
 

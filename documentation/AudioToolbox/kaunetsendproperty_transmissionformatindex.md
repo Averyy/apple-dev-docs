@@ -1,10 +1,11 @@
 # kAUNetSendProperty_TransmissionFormatIndex
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,13 +13,18 @@
 var kAUNetSendProperty_TransmissionFormatIndex: AudioUnitPropertyID { get }
 ```
 
+```c
+kAUNetSendProperty_TransmissionFormatIndex
+```
+
 ## See Also
 
-- [var kAUNetSendProperty_Disconnect: AudioUnitPropertyID](kaunetsendproperty_disconnect.md)
-- [var kAUNetSendProperty_Password: AudioUnitPropertyID](kaunetsendproperty_password.md)
-- [var kAUNetSendProperty_PortNum: AudioUnitPropertyID](kaunetsendproperty_portnum.md)
-- [var kAUNetSendProperty_ServiceName: AudioUnitPropertyID](kaunetsendproperty_servicename.md)
-- [var kAUNetSendProperty_TransmissionFormat: AudioUnitPropertyID](kaunetsendproperty_transmissionformat.md)
+### Constants
+- [var kAUNetSendProperty_Disconnect: AudioUnitPropertyID](./kaunetsendproperty_disconnect.md)
+- [var kAUNetSendProperty_Password: AudioUnitPropertyID](./kaunetsendproperty_password.md)
+- [var kAUNetSendProperty_PortNum: AudioUnitPropertyID](./kaunetsendproperty_portnum.md)
+- [var kAUNetSendProperty_ServiceName: AudioUnitPropertyID](./kaunetsendproperty_servicename.md)
+- [var kAUNetSendProperty_TransmissionFormat: AudioUnitPropertyID](./kaunetsendproperty_transmissionformat.md)
 
 
 ---

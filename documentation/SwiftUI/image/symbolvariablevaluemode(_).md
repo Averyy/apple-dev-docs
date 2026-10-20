@@ -1,7 +1,8 @@
 # symbolVariableValueMode(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the variable value mode mode for symbol images within this view.
 

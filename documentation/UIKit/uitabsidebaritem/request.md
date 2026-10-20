@@ -1,7 +1,8 @@
 # UITabSidebarItem.Request
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -16,36 +17,41 @@
 class Request
 ```
 
+```objc
+@interface UITabSidebarItemRequest : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var content: UITabSidebarItem.Content](uitabsidebaritem/request/content.md)
+- [var content: UITabSidebarItem.Content](./request/content.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [var mode: UITabBarController.Mode](uitabbarcontroller/mode-swift.property.md)
+### Supporting the sidebar
+- [var mode: UITabBarController.Mode](../uitabbarcontroller/mode-swift.property.md)
   The display mode for a tab bar.
-- [UITabBarController.Mode](uitabbarcontroller/mode-swift.enum.md)
+- [UITabBarController.Mode](../uitabbarcontroller/mode-swift.enum.md)
   A tab bar’s display mode.
-- [var sidebar: UITabBarController.Sidebar](uitabbarcontroller/sidebar-swift.property.md)
+- [var sidebar: UITabBarController.Sidebar](../uitabbarcontroller/sidebar-swift.property.md)
   A tab bar’s corresponding sidebar.
-- [UITabBarController.Sidebar](uitabbarcontroller/sidebar-swift.class.md)
+- [UITabBarController.Sidebar](../uitabbarcontroller/sidebar-swift.class.md)
   An object for managing and configuring the sidebar.
-- [class UITabSidebarItem](uitabsidebaritem.md)
-- [UITabBarController.Sidebar.Animating](uitabbarcontroller/sidebar-swift.class/animating.md)
+- [class UITabSidebarItem](../uitabsidebaritem.md)
+- [UITabBarController.Sidebar.Animating](../uitabbarcontroller/sidebar-swift.class/animating.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NFCTag
 
 **Framework**: Core NFC  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An object that represents an NFC tag object.
 
@@ -18,7 +19,7 @@ enum NFCTag
 
 #### Overview
 
-When an NFC reader session detects a tag, it returns an [`NFCTag`](nfctag-swift.enum.md) object. Use this generic object to determine if the tag is available, and to retrieve an object of a specific tag type.
+When an NFC reader session detects a tag, it returns an [`NFCTag`](./nfctag-swift.enum.md) object. Use this generic object to determine if the tag is available, and to retrieve an object of a specific tag type.
 
 Listing 1. Getting a MIFARE Ultralight tag from an array of generic tags objects
 
@@ -54,33 +55,34 @@ func tagReaderSession(_ session: NFCTagReaderSession, didDetect tags: [NFCTag]) 
 ## Topics
 
 ### Getting Information About a Tag
-- [var isAvailable: Bool](nfctag-swift.enum/isavailable.md)
+- [var isAvailable: Bool](./nfctag-swift.enum/isavailable.md)
   A Boolean value that indicates whether a detected tag is available.
 ### Getting a Specific Tag Type
-- [case iso15693(any NFCISO15693Tag)](nfctag-swift.enum/iso15693(_:).md)
+- [case iso15693(any NFCISO15693Tag)](./nfctag-swift.enum/iso15693%28_%29.md)
   Gets a tag as an ISO 15693 tag object.
-- [case iso7816(any NFCISO7816Tag)](nfctag-swift.enum/iso7816(_:).md)
+- [case iso7816(any NFCISO7816Tag)](./nfctag-swift.enum/iso7816%28_%29.md)
   Gets a tag as an ISO 7816 tag object.
-- [case feliCa(any NFCFeliCaTag)](nfctag-swift.enum/felica(_:).md)
+- [case feliCa(any NFCFeliCaTag)](./nfctag-swift.enum/felica%28_%29.md)
   Gets a tag as a FeliCa tag object.
-- [case miFare(any NFCMiFareTag)](nfctag-swift.enum/mifare(_:).md)
+- [case miFare(any NFCMiFareTag)](./nfctag-swift.enum/mifare%28_%29.md)
   Get a tag as a MIFARE tag object.
 
 ## See Also
 
-- [Creating NFC Tags from Your iPhone](creating-nfc-tags-from-your-iphone.md)
+### Tag types
+- [Creating NFC Tags from Your iPhone](./creating-nfc-tags-from-your-iphone.md)
   Save data to tags, and interact with them using native tag protocols.
-- [protocol NFCISO7816Tag](nfciso7816tag.md)
+- [protocol NFCISO7816Tag](./nfciso7816tag.md)
   An interface for interacting with an ISO 7816 tag.
-- [protocol NFCISO15693Tag](nfciso15693tag.md)
+- [protocol NFCISO15693Tag](./nfciso15693tag.md)
   An interface for interacting with an ISO 15693 tag.
-- [protocol NFCFeliCaTag](nfcfelicatag.md)
+- [protocol NFCFeliCaTag](./nfcfelicatag.md)
   An interface for interacting with a FeliCa™ tag.
-- [protocol NFCMiFareTag](nfcmifaretag.md)
+- [protocol NFCMiFareTag](./nfcmifaretag.md)
   An interface for interacting with a MIFARE® tag.
-- [protocol NFCNDEFTag](nfcndeftag.md)
+- [protocol NFCNDEFTag](./nfcndeftag.md)
   An interface for interacting with an NDEF tag.
-- [class NFCTagCommandConfiguration](nfctagcommandconfiguration.md)
+- [class NFCTagCommandConfiguration](./nfctagcommandconfiguration.md)
   A set of parameters you use to define the configuration of an NFC tag command.
 
 

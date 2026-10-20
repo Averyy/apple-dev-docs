@@ -1,7 +1,8 @@
 # ComputeGraphComponent.SimulationState
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The playback state of a compute graph simulation.
 
@@ -21,18 +22,18 @@ enum SimulationState
 ## Topics
 
 ### Enumeration Cases
-- [ComputeGraphComponent.SimulationState.paused](computegraphcomponent/simulationstate/paused.md)
+- [ComputeGraphComponent.SimulationState.paused](./simulationstate/paused.md)
   The simulation is frozen; no steps are evaluated.
-- [ComputeGraphComponent.SimulationState.playing](computegraphcomponent/simulationstate/playing.md)
+- [ComputeGraphComponent.SimulationState.playing](./simulationstate/playing.md)
   The simulation advances each frame at its configured rate.
-- [ComputeGraphComponent.SimulationState.stepping](computegraphcomponent/simulationstate/stepping.md)
-  The simulation advances a single frame, then returns to [`ComputeGraphComponent.SimulationState.paused`](computegraphcomponent/simulationstate/paused.md).
+- [ComputeGraphComponent.SimulationState.stepping](./simulationstate/stepping.md)
+  The simulation advances a single frame, then returns to [`ComputeGraphComponent.SimulationState.paused`](./simulationstate/paused.md).
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

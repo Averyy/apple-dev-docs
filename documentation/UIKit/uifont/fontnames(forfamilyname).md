@@ -1,7 +1,8 @@
 # fontNames(forFamilyName:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an array of font names available in a particular font family.
 
@@ -9,7 +10,7 @@ Returns an array of font names available in a particular font family.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,23 +20,29 @@ Returns an array of font names available in a particular font family.
 class func fontNames(forFamilyName familyName: String) -> [String]
 ```
 
+```objc
++ (NSArray<NSString *> *) fontNamesForFamilyName:(NSString *) familyName;
+```
+
 #### Return Value
 
 An array of `NSString` objects, each of which contains a font name associated with the specified family.
 
 #### Discussion
 
-You can pass the returned strings as parameters to the [`init(name:size:)`](uifont/init(name:size:).md) method to retrieve an actual font object.
+You can pass the returned strings as parameters to the [`init(name:size:)`](./init%28name,size%29.md) method to retrieve an actual font object.
 
 ## Parameters
 
-- `familyName`: The name of the font family. Use the [`familyNames`](uifont/familynames.md) method to get an array of the available font family names on the system.
+- `familyName`: The name of the font family. Use the [`familyNames`](./familynames.md) method to get an array of the available font family names on the system.
 
 ## See Also
 
-- [init?(name: String, size: CGFloat)](uifont/init(name:size:).md)
+### Related Documentation
+- [init?(name: String, size: CGFloat)](./init%28name,size%29.md)
   Creates and returns a font object for the specified font name and size.
-- [class var familyNames: [String]](uifont/familynames.md)
+### Getting the Available Font Names
+- [class var familyNames: [String]](./familynames.md)
   Returns an array of font family names available on the system.
 
 

@@ -1,7 +1,8 @@
 # publishers
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of upstream publishers that this publisher merges together.
 

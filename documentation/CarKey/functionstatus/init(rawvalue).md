@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: CarKey  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a new function status with the specified value.
 
@@ -28,7 +29,8 @@ A new function status type.
 
 ## See Also
 
-- [init(Int)](functionstatus/init(_:).md)
+### Creating a Function Status Type
+- [init(Int)](./init%28_%29.md)
   Creates and returns a new function status with the specified value.
 
 

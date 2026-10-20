@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The menu system that the menu builder modifies.
@@ -19,9 +20,13 @@ The menu system that the menu builder modifies.
 var system: UIMenuSystem { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIMenuSystem * system;
+```
+
 #### Discussion
 
-Always check the [`system`](uimenubuilder/system.md) property to determine which menu system the builder is modifying before you add and remove menus. For example, when you want to modify the main menu bar, check [`system`](uimenubuilder/system.md) for [`main`](uimenusystem/main.md).
+Always check the [`system`](./system.md) property to determine which menu system the builder is modifying before you add and remove menus. For example, when you want to modify the main menu bar, check [`system`](./system.md) for [`main`](../uimenusystem/main.md).
 
 ```swift
 override func buildMenu(with builder: UIMenuBuilder) {
@@ -40,11 +45,12 @@ override func buildMenu(with builder: UIMenuBuilder) {
 
 ## See Also
 
-- [func menu(for: UIMenu.Identifier) -> UIMenu?](uimenubuilder/menu(for:).md)
+### Getting menu systems and elements
+- [func menu(for: UIMenu.Identifier) -> UIMenu?](./menu%28for%29.md)
   Gets the menu for the specified menu identifier.
-- [func action(for: UIAction.Identifier) -> UIAction?](uimenubuilder/action(for:).md)
+- [func action(for: UIAction.Identifier) -> UIAction?](./action%28for%29.md)
   Gets the action for the specified action identifier.
-- [func command(for: Selector, propertyList: Any?) -> UICommand?](uimenubuilder/command(for:propertylist:).md)
+- [func command(for: Selector, propertyList: Any?) -> UICommand?](./command%28for,propertylist%29.md)
   Gets the command for the specified selector and property list.
 
 

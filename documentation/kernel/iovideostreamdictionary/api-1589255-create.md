@@ -1,14 +1,15 @@
 # create
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static OSDictionary * create(UInt32 streamID, UInt32 startingDeviceChannelNumber, const OSDictionary *currentFormat, OSArray *availableFormats);
 ```
 

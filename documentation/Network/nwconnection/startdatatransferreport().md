@@ -1,7 +1,8 @@
 # startDataTransferReport()
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins a new data transfer report, which can later be collected.
 
@@ -22,15 +23,16 @@ final func startDataTransferReport() -> NWConnection.PendingDataTransferReport
 
 ## See Also
 
-- [Collecting Network Connection Metrics](collecting-network-connection-metrics.md)
+### Collecting Connection Metrics
+- [Collecting Network Connection Metrics](../collecting-network-connection-metrics.md)
   Use reports to understand how DNS and protocol handshakes impact connection establishment.
-- [func requestEstablishmentReport(queue: DispatchQueue, completion: (NWConnection.EstablishmentReport?) -> Void)](nwconnection/requestestablishmentreport(queue:completion:).md)
+- [func requestEstablishmentReport(queue: DispatchQueue, completion: (NWConnection.EstablishmentReport?) -> Void)](./requestestablishmentreport%28queue,completion%29.md)
   Requests a copy of the connection’s establishment report once the connection is in the ready state.
-- [NWConnection.EstablishmentReport](nwconnection/establishmentreport.md)
+- [NWConnection.EstablishmentReport](./establishmentreport.md)
   A report that provides metrics about the establishment of a connection.
-- [NWConnection.PendingDataTransferReport](nwconnection/pendingdatatransferreport.md)
+- [NWConnection.PendingDataTransferReport](./pendingdatatransferreport.md)
   An outstanding data transfer report that has yet to be collected.
-- [NWConnection.DataTransferReport](nwconnection/datatransferreport.md)
+- [NWConnection.DataTransferReport](./datatransferreport.md)
   A report that provides metrics about data being sent and received on a connection.
 
 

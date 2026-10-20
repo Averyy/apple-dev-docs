@@ -1,10 +1,13 @@
 # init(CGLContext:pixelFormat:colorSpace:composition:)
 
 **Framework**: Quartz  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.14
+
+> **Deprecated**: Quartz Composer OpenGL API deprecated. (Define QC_SILENCE_GL_DEPRECATION to silence these warnings)
 
 ## Declaration
 

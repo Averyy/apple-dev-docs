@@ -1,7 +1,8 @@
 # NSSize
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A two-dimensional size.
 
@@ -13,6 +14,10 @@ A two-dimensional size.
 
 ```swift
 typealias NSSize = CGSize
+```
+
+```c
+typedef CGSize NSSize;
 ```
 
 #### Discussion
@@ -28,38 +33,39 @@ When building for 64 bit systems, or building 32 bit like 64 bit, `NSSize` is ty
 ## Topics
 
 ### Managing Sizes
-- [func NSEqualSizes(NSSize, NSSize) -> Bool](nsequalsizes(_:_:).md)
+- [func NSEqualSizes(NSSize, NSSize) -> Bool](./nsequalsizes%28_,_%29.md)
   Returns a Boolean that indicates whether two size values are equal.
-- [func NSMakeSize(Double, Double) -> NSSize](nsmakesize(_:_:).md)
+- [func NSMakeSize(Double, Double) -> NSSize](./nsmakesize%28_,_%29.md)
   Returns a new `NSSize` from the specified values.
-- [func NSSizeFromString(String) -> NSSize](nssizefromstring(_:).md)
+- [func NSSizeFromString(String) -> NSSize](./nssizefromstring%28_%29.md)
   Returns an `NSSize` from a text-based representation.
-- [func NSStringFromSize(NSSize) -> String](nsstringfromsize(_:).md)
+- [func NSStringFromSize(NSSize) -> String](./nsstringfromsize%28_%29.md)
   Returns a string representation of a size.
-- [func NSSizeFromCGSize(CGSize) -> NSSize](nssizefromcgsize(_:).md)
+- [func NSSizeFromCGSize(CGSize) -> NSSize](./nssizefromcgsize%28_%29.md)
   Returns an `NSSize` typecast from a `CGSize`.
-- [func NSSizeToCGSize(NSSize) -> CGSize](nssizetocgsize(_:).md)
+- [func NSSizeToCGSize(NSSize) -> CGSize](./nssizetocgsize%28_%29.md)
   Returns a `CGSize` typecast from an `NSSize`.
 ### Zero Constant
-- [let NSZeroSize: NSSize](nszerosize.md)
+- [let NSZeroSize: NSSize](./nszerosize.md)
   An `NSSize` structure set to `0` in both dimensions.
 ### Related Types
-- [typealias NSSizeArray](nssizearray.md)
+- [typealias NSSizeArray](./nssizearray.md)
   Type indicating a parameter is an array of `NSSize` structures.
-- [typealias NSSizePointer](nssizepointer.md)
+- [typealias NSSizePointer](./nssizepointer.md)
   Type indicating parameter is a pointer to an `NSSize` structure.
 
 ## See Also
 
-- [struct CGFloat](../corefoundation/cgfloat-swift.struct.md)
+### Geometry
+- [struct CGFloat](../CoreFoundation/cgfloat-swift.struct.md)
   The basic type for floating-point scalar values in Core Graphics and related frameworks.
-- [typealias NSPoint](nspoint.md)
+- [typealias NSPoint](./nspoint.md)
   A point in a Cartesian coordinate system.
-- [typealias NSRect](nsrect.md)
+- [typealias NSRect](./nsrect.md)
   A rectangle.
-- [struct AffineTransform](affinetransform.md)
+- [struct AffineTransform](./affinetransform.md)
   A graphics coordinate transformation.
-- [struct NSEdgeInsets](nsedgeinsets.md)
+- [struct NSEdgeInsets](./nsedgeinsets.md)
   A description of the distance between the edges of two rectangles.
 
 

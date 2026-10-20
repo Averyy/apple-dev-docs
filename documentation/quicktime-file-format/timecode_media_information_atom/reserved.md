@@ -1,7 +1,8 @@
 # Reserved
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 16-bit integer that is reserved for use by Apple.
 
@@ -11,25 +12,26 @@ Set this field to `0`.
 
 ## See Also
 
-- [Size](timecode_media_information_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this time code media information atom.
-- [Type](timecode_media_information_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Version](timecode_media_information_atom/version.md)
+- [Version](./version.md)
   A 1-byte specification of the version of this timecode media information atom.
-- [Flags](timecode_media_information_atom/flags.md)
+- [Flags](./flags.md)
   A 3-byte space for timecode media information flags.
-- [Text font](timecode_media_information_atom/text_font.md)
+- [Text font](./text_font.md)
   A 16-bit integer that indicates the font to use.
-- [Text face](timecode_media_information_atom/text_face.md)
+- [Text face](./text_face.md)
   A 16-bit integer that indicates the font’s style.
-- [Text size](timecode_media_information_atom/text_size.md)
+- [Text size](./text_size.md)
   A 16-bit integer that specifies the point size of the time code text.
-- [Text color](timecode_media_information_atom/text_color.md)
+- [Text color](./text_color.md)
   A 48-bit RGB color value for the timecode text.
-- [Background color](timecode_media_information_atom/background_color.md)
+- [Background color](./background_color.md)
   A 48-bit RGB background color for the timecode text.
-- [Font name](timecode_media_information_atom/font_name.md)
+- [Font name](./font_name.md)
   A Pascal string specifying the name of the timecode text’s font.
 
 

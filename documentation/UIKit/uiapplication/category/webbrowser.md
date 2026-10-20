@@ -1,7 +1,8 @@
 # UIApplication.Category.webBrowser
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app is a web browser.
 
@@ -14,6 +15,10 @@ The app is a web browser.
 
 ```swift
 case webBrowser
+```
+
+```c
+UIApplicationCategoryWebBrowser
 ```
 
 

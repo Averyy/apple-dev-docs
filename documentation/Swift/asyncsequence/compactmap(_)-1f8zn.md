@@ -1,7 +1,8 @@
 # compactMap(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an asynchronous sequence that maps an error-throwing closure over the base sequence’s elements, omitting results that don’t return a value.
 
@@ -58,27 +59,28 @@ do {
 
 ## See Also
 
-- [func map<Transformed>((Self.Element) async -> Transformed) -> AsyncMapSequence<Self, Transformed>](asyncsequence/map(_:)-1q1k3.md)
+### Transforming a Sequence
+- [func map<Transformed>((Self.Element) async -> Transformed) -> AsyncMapSequence<Self, Transformed>](./map%28_%29-1q1k3.md)
   Creates an asynchronous sequence that maps the given closure over the asynchronous sequence’s elements.
-- [struct AsyncMapSequence](asyncmapsequence.md)
+- [struct AsyncMapSequence](../asyncmapsequence.md)
   An asynchronous sequence that maps the given closure over the asynchronous sequence’s elements.
-- [func map<Transformed>((Self.Element) async throws -> Transformed) -> AsyncThrowingMapSequence<Self, Transformed>](asyncsequence/map(_:)-70wgb.md)
+- [func map<Transformed>((Self.Element) async throws -> Transformed) -> AsyncThrowingMapSequence<Self, Transformed>](./map%28_%29-70wgb.md)
   Creates an asynchronous sequence that maps the given error-throwing closure over the asynchronous sequence’s elements.
-- [struct AsyncThrowingMapSequence](asyncthrowingmapsequence.md)
+- [struct AsyncThrowingMapSequence](../asyncthrowingmapsequence.md)
   An asynchronous sequence that maps the given error-throwing closure over the asynchronous sequence’s elements.
-- [func compactMap<ElementOfResult>((Self.Element) async -> ElementOfResult?) -> AsyncCompactMapSequence<Self, ElementOfResult>](asyncsequence/compactmap(_:)-gfdq.md)
+- [func compactMap<ElementOfResult>((Self.Element) async -> ElementOfResult?) -> AsyncCompactMapSequence<Self, ElementOfResult>](./compactmap%28_%29-gfdq.md)
   Creates an asynchronous sequence that maps the given closure over the asynchronous sequence’s elements, omitting results that don’t return a value.
-- [struct AsyncCompactMapSequence](asynccompactmapsequence.md)
+- [struct AsyncCompactMapSequence](../asynccompactmapsequence.md)
   An asynchronous sequence that maps a given closure over the asynchronous sequence’s elements, omitting results that don’t return a value.
-- [struct AsyncThrowingCompactMapSequence](asyncthrowingcompactmapsequence.md)
+- [struct AsyncThrowingCompactMapSequence](../asyncthrowingcompactmapsequence.md)
   An asynchronous sequence that maps an error-throwing closure over the base sequence’s elements, omitting results that don’t return a value.
-- [struct AsyncFlatMapSequence](asyncflatmapsequence.md)
+- [struct AsyncFlatMapSequence](../asyncflatmapsequence.md)
   An asynchronous sequence that concatenates the results of calling a given transformation with each element of this sequence.
-- [struct AsyncThrowingFlatMapSequence](asyncthrowingflatmapsequence.md)
+- [struct AsyncThrowingFlatMapSequence](../asyncthrowingflatmapsequence.md)
   An asynchronous sequence that concatenates the results of calling a given error-throwing transformation with each element of this sequence.
-- [func reduce<Result>(Result, (Result, Self.Element) async throws -> Result) async rethrows -> Result](asyncsequence/reduce(_:_:).md)
+- [func reduce<Result>(Result, (Result, Self.Element) async throws -> Result) async rethrows -> Result](./reduce%28_,_%29.md)
   Returns the result of combining the elements of the asynchronous sequence using the given closure.
-- [func reduce<Result>(into: Result, (inout Result, Self.Element) async throws -> Void) async rethrows -> Result](asyncsequence/reduce(into:_:).md)
+- [func reduce<Result>(into: Result, (inout Result, Self.Element) async throws -> Void) async rethrows -> Result](./reduce%28into,_%29.md)
   Returns the result of combining the elements of the asynchronous sequence using the given closure, given a mutable initial value.
 
 

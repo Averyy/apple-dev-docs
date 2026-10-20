@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the widget group should use the automatic grouping behavior provided the system.
 

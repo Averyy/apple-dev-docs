@@ -1,7 +1,8 @@
 # resetDatastore()
 
 **Framework**: TipKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Resets the tips’ datastore to the initial state for re-testing tip display rules and eligibility.
 
@@ -22,7 +23,7 @@ static func resetDatastore() throws
 
 #### Overview
 
-Must be called before [`configure(_:)`](tips/configure(_:).md).
+Must be called before [`configure(_:)`](./configure%28_%29.md).
 
 This function can also be called with the launch argument `-com.apple.TipKit.ResetDatastore 1`.
 
@@ -62,13 +63,14 @@ struct LandmarkTips: App {
 
 ## See Also
 
-- [static func showAllTipsForTesting()](tips/showalltipsfortesting.md)
+### Testing
+- [static func showAllTipsForTesting()](./showalltipsfortesting%28%29.md)
   Show all tips regardless of their display rule eligibility or display frequency status for UI testing of tips.
-- [static func showTipsForTesting([any Tip.Type])](tips/showtipsfortesting(_:).md)
+- [static func showTipsForTesting([any Tip.Type])](./showtipsfortesting%28_%29.md)
   Show specified tips regardless of their display rule eligibility or display frequency status for UI testing of certain tips.
-- [static func hideAllTipsForTesting()](tips/hidealltipsfortesting.md)
+- [static func hideAllTipsForTesting()](./hidealltipsfortesting%28%29.md)
   Hide all tips regardless of their display rule eligibility for UI testing without tips.
-- [static func hideTipsForTesting([any Tip.Type])](tips/hidetipsfortesting(_:).md)
+- [static func hideTipsForTesting([any Tip.Type])](./hidetipsfortesting%28_%29.md)
   Hide specified tips regardless of their display rule eligibility for UI testing without certain tips.
 
 

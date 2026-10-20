@@ -1,7 +1,8 @@
 # init(coordinatesAreNormalized:spatialScale:extrapolationValue:samplingMode:boxCoordinateMode:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new crop-resize layer.
 
@@ -11,8 +12,10 @@ Returns a new crop-resize layer.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 

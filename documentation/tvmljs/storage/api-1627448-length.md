@@ -1,7 +1,8 @@
 # length
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The number of key-value pairs currently in the storage list.
 
@@ -12,21 +13,30 @@ The number of key-value pairs currently in the storage list.
 
 ## Declaration
 
-```swift
+*tvOS*
+
+```
+readonly attribute int length;
+```
+
+*Safari Desktop, Safari Mobile*
+
+```
 readonly attribute unsigned long length;
 ```
 
 ## See Also
 
-- [clear](storage/1627404-clear.md)
+### Accessing Key-Value Pair Information
+- [clear](./api-1627404-clear.md)
   Removes all instances of key-value pairs from the storage list.
-- [getItem](storage/1627333-getitem.md)
+- [getItem](./api-1627333-getitem.md)
   Retrieves the data associated with the specified key.
-- [key](storage/1627380-key.md)
+- [key](./api-1627380-key.md)
   Returns the key located in the specified location.
-- [removeItem](storage/1627332-removeitem.md)
+- [removeItem](./api-1627332-removeitem.md)
   Deletes a key and all associated data from storage.
-- [setItem](storage/1627302-setitem.md)
+- [setItem](./api-1627302-setitem.md)
   Associates the given data with the given key.
 
 

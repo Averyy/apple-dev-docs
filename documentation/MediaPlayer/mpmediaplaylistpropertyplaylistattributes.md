@@ -1,18 +1,19 @@
 # MPMediaPlaylistPropertyPlaylistAttributes
 
 **Framework**: Media Player  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The attributes associated with the playlist.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,23 +21,28 @@ The attributes associated with the playlist.
 let MPMediaPlaylistPropertyPlaylistAttributes: String
 ```
 
+```c
+extern NSString * const MPMediaPlaylistPropertyPlaylistAttributes;
+```
+
 #### Discussion
 
-Value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing an [`NSInteger`](https://developer.apple.com/documentation/objectivec/nsinteger) data type. Fields in the `NSInteger` identify the attributes of the playlist. A playlist may have any combination of attributes described in [`MPMediaPlaylistAttribute`](mpmediaplaylistattribute.md). Can be used to build a media property predicate as described in [`MPMediaQuery`](mpmediaquery.md).
+Value is an [`NSNumber`](../Foundation/nsnumber.md) object containing an [`NSInteger`](../ObjectiveC/nsinteger.md) data type. Fields in the `NSInteger` identify the attributes of the playlist. A playlist may have any combination of attributes described in [`MPMediaPlaylistAttribute`](./mpmediaplaylistattribute.md). Can be used to build a media property predicate as described in [`MPMediaQuery`](./mpmediaquery.md).
 
 ## See Also
 
-- [let MPMediaPlaylistPropertyAuthorDisplayName: String](mpmediaplaylistpropertyauthordisplayname.md)
+### Property keys
+- [let MPMediaPlaylistPropertyAuthorDisplayName: String](./mpmediaplaylistpropertyauthordisplayname.md)
   App defined name for the playlist.
-- [let MPMediaPlaylistPropertyName: String](mpmediaplaylistpropertyname.md)
+- [let MPMediaPlaylistPropertyName: String](./mpmediaplaylistpropertyname.md)
   The name of the playlist.
-- [let MPMediaPlaylistPropertyDescriptionText: String](mpmediaplaylistpropertydescriptiontext.md)
+- [let MPMediaPlaylistPropertyDescriptionText: String](./mpmediaplaylistpropertydescriptiontext.md)
   Descriptive text for the playlist.
-- [let MPMediaPlaylistPropertyPersistentID: String](mpmediaplaylistpropertypersistentid.md)
+- [let MPMediaPlaylistPropertyPersistentID: String](./mpmediaplaylistpropertypersistentid.md)
   The persistent identifier for the playlist.
-- [let MPMediaPlaylistPropertyCloudGlobalID: String](mpmediaplaylistpropertycloudglobalid.md)
+- [let MPMediaPlaylistPropertyCloudGlobalID: String](./mpmediaplaylistpropertycloudglobalid.md)
   The cloud identifier for the playlist.
-- [let MPMediaPlaylistPropertySeedItems: String](mpmediaplaylistpropertyseeditems.md)
+- [let MPMediaPlaylistPropertySeedItems: String](./mpmediaplaylistpropertyseeditems.md)
   The items seeded to generate the playlist; applies only to Genius playlists.
 
 

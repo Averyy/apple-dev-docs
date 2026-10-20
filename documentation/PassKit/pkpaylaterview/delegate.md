@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate object that receives messages about the changes to the Apple Pay Later view.
 
@@ -10,15 +11,22 @@ A delegate object that receives messages about the changes to the Apple Pay Late
 - iPadOS 17.0+
 - visionOS 1.0+
 
+> **Deprecated**: Apple Pay Later is deprecated.
+
 ## Declaration
 
 ```swift
 unowned(unsafe) var delegate: any PKPayLaterViewDelegate { get set }
 ```
 
+```objc
+@property (nonatomic, assign) id<PKPayLaterViewDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol PKPayLaterViewDelegate](pkpaylaterviewdelegate.md)
+### Responding to changes in the view’s height
+- [protocol PKPayLaterViewDelegate](../pkpaylaterviewdelegate.md)
   Methods the framework calls when the Apple Pay Later view’s size changes.
 
 

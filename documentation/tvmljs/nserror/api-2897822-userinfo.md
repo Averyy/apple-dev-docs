@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The user info dictionary.
 
@@ -10,7 +11,7 @@ The user info dictionary.
 
 ## Declaration
 
-```swift
+```
 readonly attribute Object userInfo;
 ```
 
@@ -20,11 +21,12 @@ If the user info dictionary has not been set, this property is `nil`.
 
 ## See Also
 
-- [code](nserror/2897820-code.md)
+### Getting Error Properties
+- [code](./api-2897820-code.md)
   The error code.
-- [domain](nserror/2897831-domain.md)
+- [domain](./api-2897831-domain.md)
   A string containing the error domain.
-- [underlyingError](nserror/2897821-underlyingerror.md)
+- [underlyingError](./api-2897821-underlyingerror.md)
   The error that was encountered in an underlying implementation and caused the error that the receiver represents to occur.
 
 

@@ -1,17 +1,18 @@
 # GCDeviceAxisInput
 
 **Framework**: Game Controller  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An alias for a symbol name for backward compatibility with a previous SDK version.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,14 @@ typealias GCDeviceAxisInput = GCControllerAxisInput
 
 ## See Also
 
-- [typealias GCDeviceElement](gcdeviceelement.md)
+### Aliases for backward compatibility
+- [typealias GCDeviceElement](./gcdeviceelement.md)
   An alias for a symbol name for backward compatibility with a previous SDK version.
-- [typealias GCDeviceButtonInput](gcdevicebuttoninput.md)
+- [typealias GCDeviceButtonInput](./gcdevicebuttoninput.md)
   An alias for a symbol name for backward compatibility with a previous SDK version.
-- [typealias GCDeviceTouchpad](gcdevicetouchpad.md)
+- [typealias GCDeviceTouchpad](./gcdevicetouchpad.md)
   An alias for a symbol name for backward compatibility with a previous SDK version.
-- [typealias GCDeviceDirectionPad](gcdevicedirectionpad.md)
+- [typealias GCDeviceDirectionPad](./gcdevicedirectionpad.md)
   An alias for a symbol name for backward compatibility with a previous SDK version.
 
 

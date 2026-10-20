@@ -1,18 +1,19 @@
 # super_class
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A pointer to a [`Class`](class.md) data structure. Specifies the particular superclass of the instance to message.
+A pointer to a [`Class`](../class.md) data structure. Specifies the particular superclass of the instance to message.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,10 +21,15 @@ A pointer to a [`Class`](class.md) data structure. Specifies the particular supe
 var super_class: AnyClass
 ```
 
+```c
+Class super_class;
+```
+
 ## See Also
 
-- [var receiver: Unmanaged<AnyObject>](objc_super-swift.struct/receiver.md)
-  A pointer of type [`objc_object`](objc_object.md). Specifies an instance of a class.
+### Fields
+- [var receiver: Unmanaged<AnyObject>](./receiver.md)
+  A pointer of type [`objc_object`](../objc_object.md). Specifies an instance of a class.
 
 
 ---

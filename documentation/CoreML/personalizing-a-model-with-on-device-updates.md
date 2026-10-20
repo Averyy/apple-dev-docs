@@ -1,6 +1,8 @@
 # Personalizing a Model with On-Device Updates
 
-**Framework**: Core ML
+**Framework**: Core ML  
+**Role**: Sample Code  
+**Download**: [PersonalizingAModelWithOnDeviceUpdates.zip](https://docs-assets.developer.apple.com/published/9a8ff1fea55d/PersonalizingAModelWithOnDeviceUpdates.zip)
 
 Modify an updatable Core ML model by running an update task with labeled data.
 
@@ -12,21 +14,21 @@ Modify an updatable Core ML model by running an update task with labeled data.
 
 #### Overview
 
-With the [`Core ML`](CoreML.md) framework, you can customize an updatable model at runtime on the user’s device. Using this technique, you can create a personalized experience for the user while keeping their data private.
+With the [Core ML](./CoreML.md) framework, you can customize an updatable model at runtime on the user’s device. Using this technique, you can create a personalized experience for the user while keeping their data private.
 
-This sample demonstrates how to update the drawing classifier with an [`MLUpdateTask`](mlupdatetask.md). The app initiates an update task with the user’s drawings paired with a string label. Once the update is complete, the app uses the updated drawing classifier to recognize similar drawings from the user and convert each into its associated string label.
+This sample demonstrates how to update the drawing classifier with an [`MLUpdateTask`](./mlupdatetask.md). The app initiates an update task with the user’s drawings paired with a string label. Once the update is complete, the app uses the updated drawing classifier to recognize similar drawings from the user and convert each into its associated string label.
 
 > **Note**: Run this sample on a device or Simulator with iOS 13 or later, or iPadOS 13 or later.
 
-##### Prepare Your Model Update Data
+##### Prepare your model update data
 
 Gather your training data:
 
-1. Wrap each value of a datapoint in an [`MLFeatureValue`](mlfeaturevalue.md), one for each model input and output.
-2. Group all the feature values for a datapoint in an [`MLFeatureProvider`](mlfeatureprovider.md).
-3. Group all the feature providers in an [`MLBatchProvider`](mlbatchprovider.md).
+1. Wrap each value of a datapoint in an [`MLFeatureValue`](./mlfeaturevalue.md), one for each model input and output.
+2. Group all the feature values for a datapoint in an [`MLFeatureProvider`](./mlfeatureprovider.md).
+3. Group all the feature providers in an [`MLBatchProvider`](./mlbatchprovider.md).
 
-Each time the user adds a new emoji sticker, the app prompts the user to make three drawings, and uses those drawings to update the drawing classifier. It does this by first creating an [`MLDictionaryFeatureProvider`](mldictionaryfeatureprovider.md) that contains the feature values for a drawing and its label. The app appends each feature provider to an array, which it uses to create an [`MLArrayBatchProvider`](mlarraybatchprovider.md) at the end of the function.
+Each time the user adds a new emoji sticker, the app prompts the user to make three drawings, and uses those drawings to update the drawing classifier. It does this by first creating an [`MLDictionaryFeatureProvider`](./mldictionaryfeatureprovider.md) that contains the feature values for a drawing and its label. The app appends each feature provider to an array, which it uses to create an [`MLArrayBatchProvider`](./mlarraybatchprovider.md) at the end of the function.
 
 ```swift
  var featureProviders = [MLFeatureProvider]()
@@ -49,12 +51,12 @@ Each time the user adds a new emoji sticker, the app prompts the user to make th
 return MLArrayBatchProvider(array: featureProviders)
 ```
 
-The sample makes each `MLDictionaryFeatureProvider` by initializing it with a dictionary of two [`MLFeatureValue`](mlfeaturevalue.md) instances keyed by strings. The feature values are:
+The sample makes each `MLDictionaryFeatureProvider` by initializing it with a dictionary of two [`MLFeatureValue`](./mlfeaturevalue.md) instances keyed by strings. The feature values are:
 
 - The underlying image of the drawing keyed by `"drawing"`
 - The emoji character as a string keyed by `"label"`
 
-The sample creates a feature value for the emoji string by using [`init(string:)`](mlfeaturevalue/init(string:).md). However, to convert the drawing’s underlying [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) into a feature value, the sample acquires the image constraint of the model’s image input feature.
+The sample creates a feature value for the emoji string by using [`init(string:)`](./mlfeaturevalue/init%28string%29.md). However, to convert the drawing’s underlying [`CGImage`](../CoreGraphics/cgimage.md) into a feature value, the sample acquires the image constraint of the model’s image input feature.
 
 ```swift
 let imageFeatureValue = try? MLFeatureValue(cgImage: preparedImage,
@@ -62,7 +64,7 @@ let imageFeatureValue = try? MLFeatureValue(cgImage: preparedImage,
 return imageFeatureValue!
 ```
 
-The sample gets the drawing classifier’s `"drawing"` [`MLImageConstraint`](mlimageconstraint.md) by inspecting the [`MLModelDescription`](mlmodeldescription.md).
+The sample gets the drawing classifier’s `"drawing"` [`MLImageConstraint`](./mlimageconstraint.md) by inspecting the [`MLModelDescription`](./mlmodeldescription.md).
 
 ```swift
 /// - Tag: ImageConstraintProperty
@@ -79,14 +81,14 @@ extension UpdatableDrawingClassifier {
 }
 ```
 
-##### Create an Update Task
+##### Create an update task
 
-You create an [`MLUpdateTask`](mlupdatetask.md) by passing the following to an initializer:
+You create an [`MLUpdateTask`](./mlupdatetask.md) by passing the following to an initializer:
 
-- An [`MLBatchProvider`](mlbatchprovider.md) that contains your update data
+- An [`MLBatchProvider`](./mlbatchprovider.md) that contains your update data
 - The location of the compiled model youʼd like to update (*ModelName*`.mlmodelc`)
-- An [`MLModelConfiguration`](mlmodelconfiguration.md), if applicable
-- A completion handler with a single [`MLUpdateContext`](mlupdatecontext.md) parameter
+- An [`MLModelConfiguration`](./mlmodelconfiguration.md), if applicable
+- A completion handler with a single [`MLUpdateContext`](./mlupdatecontext.md) parameter
 
 The sample updates the drawing classifier model it’s currently using, which could be the original drawing classifier model or a previously updated model.
 
@@ -104,19 +106,19 @@ guard let updateTask = try? MLUpdateTask(forModelAt: url,
 
 > ❗ **Important**: An update task can only update a *compiled* model file—one whose name ends with `.mlmodelc`.
 
-##### Run the Update Task
+##### Run the update task
 
-You begin an update task by calling its [`resume()`](mltask/resume().md) method.
+You begin an update task by calling its [`resume()`](./mltask/resume%28%29.md) method.
 
 ```swift
 updateTask.resume()
 ```
 
-[`Core ML`](CoreML.md) updates the model on a separate thread and calls your completion handler when it finishes the update process.
+[Core ML](./CoreML.md) updates the model on a separate thread and calls your completion handler when it finishes the update process.
 
-##### Save the Updated Model
+##### Save the updated model
 
-Use your completion handler to save the updated model in the [`MLUpdateContext`](mlupdatecontext.md) to disk. The sample saves the updated model to the file system by first writing the model to a temporary location. Next, the sample moves the updated model to a permanent location, replacing any previously saved updated model.
+Use your completion handler to save the updated model in the [`MLUpdateContext`](./mlupdatecontext.md) to disk. The sample saves the updated model to the file system by first writing the model to a temporary location. Next, the sample moves the updated model to a permanent location, replacing any previously saved updated model.
 
 ```swift
 let updatedModel = updateContext.model
@@ -141,9 +143,9 @@ do {
 }
 ```
 
-##### Load the Updated Model
+##### Load the updated model
 
-Use your updated model by loading it with the model’s [`init(contentsOf:)`](mlmodel/init(contentsof:).md) initializer. The sample loads a new instance of `UpdatableDrawingClassifier` with the [`URL`](https://developer.apple.com/documentation/foundation/url) of the updated model file the app saved in the previous step.
+Use your updated model by loading it with the model’s [`init(contentsOf:)`](./mlmodel/init%28contentsof%29.md) initializer. The sample loads a new instance of `UpdatableDrawingClassifier` with the [`URL`](../Foundation/url.md) of the updated model file the app saved in the previous step.
 
 ```swift
 guard FileManager.default.fileExists(atPath: updatedModelURL.path) else {
@@ -162,9 +164,10 @@ updatedDrawingClassifier = model
 
 ## See Also
 
-- [class MLTask](mltask.md)
+### On-device model updates
+- [class MLTask](./mltask.md)
   An abstract base class for machine learning tasks.
-- [class MLUpdateTask](mlupdatetask.md)
+- [class MLUpdateTask](./mlupdatetask.md)
   A task that updates a model with additional training data.
 
 

@@ -1,7 +1,8 @@
 # isOnScreen
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the window is on screen.
 
@@ -15,13 +16,18 @@ A Boolean value that indicates whether the window is on screen.
 var isOnScreen: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isOnScreen) BOOL onScreen;
+```
+
 #### Discussion
 
 This value represents the macOS window server’s onscreen status of the window.
 
 ## See Also
 
-- [var isActive: Bool](scwindow/isactive.md)
+### Determining visibility
+- [var isActive: Bool](./isactive.md)
   A Boolean value that indicates if the window is currently streaming.
 
 

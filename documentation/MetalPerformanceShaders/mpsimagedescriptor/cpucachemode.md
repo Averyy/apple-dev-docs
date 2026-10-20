@@ -1,7 +1,8 @@
 # cpuCacheMode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The CPU cache mode of the underlying texture.
 
@@ -19,27 +20,32 @@ The CPU cache mode of the underlying texture.
 var cpuCacheMode: MTLCPUCacheMode { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLCPUCacheMode cpuCacheMode;
+```
+
 #### Discussion
 
-The default value is [`MTLCPUCacheMode.defaultCache`](https://developer.apple.com/documentation/metal/mtlcpucachemode/defaultcache).
+The default value is [`MTLCPUCacheMode.defaultCache`](../../Metal/mtlcpucachemode/defaultcache.md).
 
 ## See Also
 
-- [var width: Int](mpsimagedescriptor/width.md)
+### Properties
+- [var width: Int](./width.md)
   The width of the image.
-- [var height: Int](mpsimagedescriptor/height.md)
+- [var height: Int](./height.md)
   The height of the image.
-- [var featureChannels: Int](mpsimagedescriptor/featurechannels.md)
+- [var featureChannels: Int](./featurechannels.md)
   The number of feature channels per pixel.
-- [var numberOfImages: Int](mpsimagedescriptor/numberofimages.md)
+- [var numberOfImages: Int](./numberofimages.md)
   The number of images for batch processing.
-- [var pixelFormat: MTLPixelFormat](mpsimagedescriptor/pixelformat.md)
+- [var pixelFormat: MTLPixelFormat](./pixelformat.md)
   The pixel format for the underlying texture.
-- [var channelFormat: MPSImageFeatureChannelFormat](mpsimagedescriptor/channelformat.md)
+- [var channelFormat: MPSImageFeatureChannelFormat](./channelformat.md)
   The storage format to use for each channel in the image.
-- [var storageMode: MTLStorageMode](mpsimagedescriptor/storagemode.md)
+- [var storageMode: MTLStorageMode](./storagemode.md)
   The storage mode of underlying texture.
-- [var usage: MTLTextureUsage](mpsimagedescriptor/usage.md)
+- [var usage: MTLTextureUsage](./usage.md)
   Options to specify the intended usage of the underlying texture.
 
 

@@ -1,7 +1,8 @@
 # rangeOfFirstMatch(in:options:range:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the range of the first match of the regular expression within the specified range of the string.
 
@@ -20,29 +21,34 @@ Returns the range of the first match of the regular expression within the specif
 func rangeOfFirstMatch(in string: String, options: NSRegularExpression.MatchingOptions = [], range: NSRange) -> NSRange
 ```
 
+```objc
+- (NSRange) rangeOfFirstMatchInString:(NSString *) string options:(NSMatchingOptions) options range:(NSRange) range;
+```
+
 #### Return Value
 
 The range of the first match. Returns `{NSNotFound, 0}` if no match is found.
 
 #### Discussion
 
-This is a convenience method that calls [`enumerateMatches(in:options:range:using:)`](nsregularexpression/enumeratematches(in:options:range:using:).md).
+This is a convenience method that calls [`enumerateMatches(in:options:range:using:)`](./enumeratematches%28in,options,range,using%29.md).
 
 ## Parameters
 
 - `string`: The string to search.
-- `options`: The matching options to use. See [`NSRegularExpression.MatchingOptions`](nsregularexpression/matchingoptions.md) for possible values.
+- `options`: The matching options to use. See [`NSRegularExpression.MatchingOptions`](./matchingoptions.md) for possible values.
 - `range`: The range of the string to search.
 
 ## See Also
 
-- [func numberOfMatches(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange) -> Int](nsregularexpression/numberofmatches(in:options:range:).md)
+### Searching Strings Using Regular Expressions
+- [func numberOfMatches(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange) -> Int](./numberofmatches%28in,options,range%29.md)
   Returns the number of matches of the regular expression within the specified range of the string.
-- [func enumerateMatches(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange, using: (NSTextCheckingResult?, NSRegularExpression.MatchingFlags, UnsafeMutablePointer<ObjCBool>) -> Void)](nsregularexpression/enumeratematches(in:options:range:using:).md)
+- [func enumerateMatches(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange, using: (NSTextCheckingResult?, NSRegularExpression.MatchingFlags, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratematches%28in,options,range,using%29.md)
   Enumerates the string allowing the Block to handle each regular expression match.
-- [func matches(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange) -> [NSTextCheckingResult]](nsregularexpression/matches(in:options:range:).md)
+- [func matches(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange) -> [NSTextCheckingResult]](./matches%28in,options,range%29.md)
   Returns an array containing all the matches of the regular expression in the string.
-- [func firstMatch(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange) -> NSTextCheckingResult?](nsregularexpression/firstmatch(in:options:range:).md)
+- [func firstMatch(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange) -> NSTextCheckingResult?](./firstmatch%28in,options,range%29.md)
   Returns the first match of the regular expression within the specified range of the string.
 
 

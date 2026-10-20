@@ -1,7 +1,8 @@
 # device
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capture device the coordinator monitors to track its physical rotation.
 
@@ -18,13 +19,18 @@ The capture device the coordinator monitors to track its physical rotation.
 weak var device: AVCaptureDevice? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) AVCaptureDevice * device;
+```
+
 #### Discussion
 
-The coordinator updates its [`videoRotationAngleForHorizonLevelCapture`](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelcapture.md) property by monitoring the device’s physical rotation.
+The coordinator updates its [`videoRotationAngleForHorizonLevelCapture`](./videorotationangleforhorizonlevelcapture.md) property by monitoring the device’s physical rotation.
 
 ## See Also
 
-- [var previewLayer: CALayer?](avcapturedevice/rotationcoordinator/previewlayer.md)
+### Inspecting a coordinator’s configuration
+- [var previewLayer: CALayer?](./previewlayer.md)
   The layer that displays a camera preview the coordinator calculates a video rotation angle for.
 
 

@@ -1,7 +1,8 @@
 # InfoPlistHash.DataType
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 17.4+

@@ -1,12 +1,13 @@
 # NSBezierPath.ElementType
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify basic path element commands.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,44 +15,49 @@ Constants that specify basic path element commands.
 enum ElementType
 ```
 
+```c
+enum NSBezierPathElement : NSUInteger;
+```
+
 #### Overview
 
-These commands are enough to define all of the possible path shapes. Each command has one or more points that contain information needed to position the path element. Most path elements use the current drawing point as the starting point for drawing. For more information, see [`NSBezierPath`](nsbezierpath.md).
+These commands are enough to define all of the possible path shapes. Each command has one or more points that contain information needed to position the path element. Most path elements use the current drawing point as the starting point for drawing. For more information, see [`NSBezierPath`](../nsbezierpath.md).
 
 ## Topics
 
 ### Constants
-- [NSBezierPath.ElementType.moveTo](nsbezierpath/elementtype/moveto.md)
+- [NSBezierPath.ElementType.moveTo](./elementtype/moveto.md)
   Moves the path object’s current drawing point to the specified point.
-- [NSBezierPath.ElementType.lineTo](nsbezierpath/elementtype/lineto.md)
+- [NSBezierPath.ElementType.lineTo](./elementtype/lineto.md)
   Creates a straight line from the current drawing point to the specified point.
-- [NSBezierPath.ElementType.closePath](nsbezierpath/elementtype/closepath.md)
+- [NSBezierPath.ElementType.closePath](./elementtype/closepath.md)
   Marks the end of the current subpath at the specified point.
-- [NSBezierPath.ElementType.cubicCurveTo](nsbezierpath/elementtype/cubiccurveto.md)
-- [NSBezierPath.ElementType.quadraticCurveTo](nsbezierpath/elementtype/quadraticcurveto.md)
+- [NSBezierPath.ElementType.cubicCurveTo](./elementtype/cubiccurveto.md)
+- [NSBezierPath.ElementType.quadraticCurveTo](./elementtype/quadraticcurveto.md)
 ### Deprecated
-- [static var curveTo: NSBezierPath.ElementType](nsbezierpath/elementtype/curveto.md)
+- [static var curveTo: NSBezierPath.ElementType](./elementtype/curveto.md)
   Creates a curved line segment from the current point to the specified endpoint using two control points to define the curve.
 ### Initializers
-- [init?(rawValue: UInt)](nsbezierpath/elementtype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./elementtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSBezierPath.LineJoinStyle](nsbezierpath/linejoinstyle-swift.enum.md)
+### Constants
+- [NSBezierPath.LineJoinStyle](./linejoinstyle-swift.enum.md)
   Constants that specify the shape of the joins between connected segments of a stroked path.
-- [NSBezierPath.LineCapStyle](nsbezierpath/linecapstyle-swift.enum.md)
+- [NSBezierPath.LineCapStyle](./linecapstyle-swift.enum.md)
   Constants that specify the shape of endpoints for an open path when it is stroked.
-- [NSBezierPath.WindingRule](nsbezierpath/windingrule-swift.enum.md)
+- [NSBezierPath.WindingRule](./windingrule-swift.enum.md)
   Constants that specify the winding rule a Bézier path uses.
 
 

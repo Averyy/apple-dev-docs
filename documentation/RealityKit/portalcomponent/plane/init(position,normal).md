@@ -1,7 +1,8 @@
 # init(position:normal:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a portal plane with position and normal.
 

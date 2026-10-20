@@ -1,7 +1,8 @@
 # init(deviceQueue:delegate:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom Virtio device delegate provider.
 
@@ -12,6 +13,10 @@ Creates a custom Virtio device delegate provider.
 
 ```swift
 init(deviceQueue: dispatch_queue_t, delegate: any VZCustomVirtioDeviceConfigurationDelegate)
+```
+
+```objc
+- (instancetype) initWithDeviceQueue:(dispatch_queue_t) deviceQueue delegate:(id<VZCustomVirtioDeviceConfigurationDelegate>) delegate;
 ```
 
 ## Parameters

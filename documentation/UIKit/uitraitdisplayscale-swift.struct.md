@@ -1,7 +1,8 @@
 # UITraitDisplayScale
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A struct that represents the display scale trait.
 
@@ -10,7 +11,7 @@ A struct that represents the display scale trait.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,39 +22,40 @@ struct UITraitDisplayScale
 ## Relationships
 
 ### Conforms To
-- [UITraitDefinition](uitraitdefinition-64c15.md)
+- [UITraitDefinition](./uitraitdefinition-64c15.md)
 
 ## See Also
 
-- [struct UITraitAccessibilityContrast](uitraitaccessibilitycontrast-swift.struct.md)
+### Registering traits for observation
+- [struct UITraitAccessibilityContrast](./uitraitaccessibilitycontrast-swift.struct.md)
   A struct that represents the accessibility contrast setting trait.
-- [struct UITraitActiveAppearance](uitraitactiveappearance-swift.struct.md)
+- [struct UITraitActiveAppearance](./uitraitactiveappearance-swift.struct.md)
   A struct that represents the active appearance trait.
-- [struct UITraitDisplayGamut](uitraitdisplaygamut-swift.struct.md)
+- [struct UITraitDisplayGamut](./uitraitdisplaygamut-swift.struct.md)
   A struct that represents the display gamut trait.
-- [struct UITraitForceTouchCapability](uitraitforcetouchcapability-swift.struct.md)
+- [struct UITraitForceTouchCapability](./uitraitforcetouchcapability-swift.struct.md)
   A struct that represents the Force Touch capability trait.
-- [struct UITraitHDRHeadroomUsageLimit](uitraithdrheadroomusagelimit-swift.struct.md)
+- [struct UITraitHDRHeadroomUsageLimit](./uitraithdrheadroomusagelimit-swift.struct.md)
   A struct that represents the HDR headroom usage limit trait.
-- [struct UITraitHorizontalSizeClass](uitraithorizontalsizeclass-swift.struct.md)
+- [struct UITraitHorizontalSizeClass](./uitraithorizontalsizeclass-swift.struct.md)
   A struct that represents the horizontal size class trait.
-- [struct UITraitImageDynamicRange](uitraitimagedynamicrange-swift.struct.md)
+- [struct UITraitImageDynamicRange](./uitraitimagedynamicrange-swift.struct.md)
   A struct that represents the image dynamic range trait.
-- [struct UITraitLayoutDirection](uitraitlayoutdirection-swift.struct.md)
+- [struct UITraitLayoutDirection](./uitraitlayoutdirection-swift.struct.md)
   A struct that represents the layout direction trait.
-- [struct UITraitLegibilityWeight](uitraitlegibilityweight-swift.struct.md)
+- [struct UITraitLegibilityWeight](./uitraitlegibilityweight-swift.struct.md)
   A struct that represents the legibility weight trait.
-- [struct UITraitListEnvironment](uitraitlistenvironment-swift.struct.md)
+- [struct UITraitListEnvironment](./uitraitlistenvironment-swift.struct.md)
   A struct that represents the list environment trait.
-- [struct UITraitPreferredContentSizeCategory](uitraitpreferredcontentsizecategory-swift.struct.md)
+- [struct UITraitPreferredContentSizeCategory](./uitraitpreferredcontentsizecategory-swift.struct.md)
   A struct that represents the preferred content size category trait.
-- [struct UITraitResolvesNaturalAlignmentWithBaseWritingDirection](uitraitresolvesnaturalalignmentwithbasewritingdirection-swift.struct.md)
+- [struct UITraitResolvesNaturalAlignmentWithBaseWritingDirection](./uitraitresolvesnaturalalignmentwithbasewritingdirection-swift.struct.md)
   A struct that represents the trait that indicates whether the system resolves natural alignment with base writing direction.
-- [struct UITraitSceneCaptureState](uitraitscenecapturestate-swift.struct.md)
+- [struct UITraitSceneCaptureState](./uitraitscenecapturestate-swift.struct.md)
   A struct that represents the scene capture state trait.
-- [struct UITraitSplitViewControllerLayoutEnvironment](uitraitsplitviewcontrollerlayoutenvironment-swift.struct.md)
+- [struct UITraitSplitViewControllerLayoutEnvironment](./uitraitsplitviewcontrollerlayoutenvironment-swift.struct.md)
   A struct that represents the split view controller layout environment trait.
-- [struct UITraitTabAccessoryEnvironment](uitraittabaccessoryenvironment-swift.struct.md)
+- [struct UITraitTabAccessoryEnvironment](./uitraittabaccessoryenvironment-swift.struct.md)
   A struct that represents tab accessory environment trait.
 
 

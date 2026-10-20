@@ -1,7 +1,8 @@
 # readAttributeAverageMeasuredValueWindow(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeAverageMeasuredValueWindow(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeAverageMeasuredValueWindowWithParams:(MTRReadParams *) params;
 ```
 
 

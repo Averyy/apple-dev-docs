@@ -1,7 +1,8 @@
 # missingNotificationFilteringEntitlement
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error indicating that the notification service extension is missing the required filtering entitlement.
 
@@ -20,17 +21,18 @@ static var missingNotificationFilteringEntitlement: CXErrorCodeNotificationServi
 
 #### Discussion
 
-To call the [`reportNewIncomingVoIPPushPayload(_:completion:)`](cxprovider/reportnewincomingvoippushpayload(_:completion:).md) method, a notification service extension must have a `com.apple.developer.usernotifications.filtering` entitlement. To apply for this entitlement, see [`https://developer.apple.com/contact/request/notification-service`](https://developer.apple.comhttps://developer.apple.com/contact/request/notification-service).
+To call the [`reportNewIncomingVoIPPushPayload(_:completion:)`](../cxprovider/reportnewincomingvoippushpayload%28_,completion%29.md) method, a notification service extension must have a `com.apple.developer.usernotifications.filtering` entitlement. To apply for this entitlement, see [https://developer.apple.com/contact/request/notification-service](https://developer.apple.com/contact/request/notification-service).
 
-After you receive permission to use the entitlement, add [`com.apple.developer.usernotifications.filtering`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.usernotifications.filtering) to the entitlements file for the Notification Service Extension target.
+After you receive permission to use the entitlement, add [`com.apple.developer.usernotifications.filtering`](../../BundleResources/entitlements/com.apple.developer.usernotifications.filtering.md) to the entitlements file for the Notification Service Extension target.
 
 ## See Also
 
-- [static var invalidClientProcess: CXErrorCodeNotificationServiceExtensionError.Code](cxerrorcodenotificationserviceextensionerror-swift.struct/invalidclientprocess.md)
+### Understanding Error Codes
+- [static var invalidClientProcess: CXErrorCodeNotificationServiceExtensionError.Code](./invalidclientprocess.md)
   An error indicating that an invalid client process reported the incoming call.
-- [static var unknown: CXErrorCodeNotificationServiceExtensionError.Code](cxerrorcodenotificationserviceextensionerror-swift.struct/unknown.md)
+- [static var unknown: CXErrorCodeNotificationServiceExtensionError.Code](./unknown.md)
   An error that occurs when there is an unknown problem.
-- [CXErrorCodeNotificationServiceExtensionError.Code](cxerrorcodenotificationserviceextensionerror-swift.struct/code.md)
+- [CXErrorCodeNotificationServiceExtensionError.Code](./code.md)
   Constants for errors returned when reporting new, incoming VoIP calls.
 
 

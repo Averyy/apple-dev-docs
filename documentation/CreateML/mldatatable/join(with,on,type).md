@@ -1,7 +1,8 @@
 # join(with:on:type:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new data table by merging two data tables by the given columns.
 
@@ -26,13 +27,16 @@ A new data table.
 ## Parameters
 
 - `with`: Another data table to merge with this data table.
-- `columnsNamed`: The name of the columns to perform the `join` operation on. The method merges all rows with matching values in these columns. If you do not provide any column names, the method uses all the columns present in both tables.
+- `columnsNamed`: The name of the columns to perform the `join` operation on. The method merges all rows with matching values in these columns.
+
+  If you do not provide any column names, the method uses all the columns present in both tables.
 - `type`: The type of `join` operation, which are equivalent to SQL `join` types.
 
 ## See Also
 
-- [MLDataTable.JoinType](mldatatable/jointype.md)
-  Join types available for [`MLDataTable`](mldatatable.md) join operations.
+### Merging data tables
+- [MLDataTable.JoinType](./jointype.md)
+  Join types available for [`MLDataTable`](../mldatatable.md) join operations.
 
 
 ---

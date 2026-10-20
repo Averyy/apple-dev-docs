@@ -1,7 +1,8 @@
 # UITitlebar
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that you use to configure the title bar of a window in a Mac app built with Mac Catalyst.
 
@@ -15,13 +16,17 @@ An object that you use to configure the title bar of a window in a Mac app built
 class UITitlebar
 ```
 
+```objc
+@interface UITitlebar : NSObject
+```
+
 #### Overview
 
-Each [`UIWindowScene`](uiwindowscene.md) has a [`UITitlebar`](uititlebar.md) object available in Mac apps built with Mac Catalyst. You use this object to configure the title bar and its toolbar.
+Each [`UIWindowScene`](./uiwindowscene.md) has a [`UITitlebar`](./uititlebar.md) object available in Mac apps built with Mac Catalyst. You use this object to configure the title bar and its toolbar.
 
-To show or hide a title in the title bar, set the [`titleVisibility`](uititlebar/titlevisibility.md) property to [`UITitlebarTitleVisibility.visible`](uititlebartitlevisibility/visible.md) or [`UITitlebarTitleVisibility.hidden`](uititlebartitlevisibility/hidden.md). If you set the visibility to hidden and the title bar’s [`toolbar`](uititlebar/toolbar.md) property is `nil`, the window displays only the window control buttons (Close, Minimize, and Zoom).
+To show or hide a title in the title bar, set the [`titleVisibility`](./uititlebar/titlevisibility.md) property to [`UITitlebarTitleVisibility.visible`](./uititlebartitlevisibility/visible.md) or [`UITitlebarTitleVisibility.hidden`](./uititlebartitlevisibility/hidden.md). If you set the visibility to hidden and the title bar’s [`toolbar`](./uititlebar/toolbar.md) property is `nil`, the window displays only the window control buttons (Close, Minimize, and Zoom).
 
-To add a toolbar to a window, create an [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) object and assign it to the title bar’s [`toolbar`](uititlebar/toolbar.md) property. To automatically hide the toolbar when the window enters full-screen mode, set the [`autoHidesToolbarInFullScreen`](uititlebar/autohidestoolbarinfullscreen.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+To add a toolbar to a window, create an [`NSToolbar`](../AppKit/nstoolbar.md) object and assign it to the title bar’s [`toolbar`](./uititlebar/toolbar.md) property. To automatically hide the toolbar when the window enters full-screen mode, set the [`autoHidesToolbarInFullScreen`](./uititlebar/autohidestoolbarinfullscreen.md) property to [`true`](../Swift/true.md).
 
 ```swift
 func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -42,42 +47,43 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 ## Topics
 
 ### Configuring the title bar
-- [var separatorStyle: UITitlebarSeparatorStyle](uititlebar/separatorstyle.md)
+- [var separatorStyle: UITitlebarSeparatorStyle](./uititlebar/separatorstyle.md)
   The type of separator that the app displays between the title bar and content of a window.
-- [enum UITitlebarSeparatorStyle](uititlebarseparatorstyle.md)
+- [enum UITitlebarSeparatorStyle](./uititlebarseparatorstyle.md)
   Styles that determine the type of separator displayed between the title bar and content of a window.
-- [var titleVisibility: UITitlebarTitleVisibility](uititlebar/titlevisibility.md)
+- [var titleVisibility: UITitlebarTitleVisibility](./uititlebar/titlevisibility.md)
   A value that indicates the visibility of the title.
-- [enum UITitlebarTitleVisibility](uititlebartitlevisibility.md)
+- [enum UITitlebarTitleVisibility](./uititlebartitlevisibility.md)
   States that determine visibility of the title in the title bar.
-- [var representedURL: URL?](uititlebar/representedurl.md)
+- [var representedURL: URL?](./uititlebar/representedurl.md)
   A URL of the file or resource represented in the window.
 ### Configuring the toolbar
-- [var toolbar: NSToolbar?](uititlebar/toolbar.md)
+- [var toolbar: NSToolbar?](./uititlebar/toolbar.md)
   The toolbar displayed beneath or integrated with the title bar.
-- [var toolbarStyle: UITitlebarToolbarStyle](uititlebar/toolbarstyle.md)
+- [var toolbarStyle: UITitlebarToolbarStyle](./uititlebar/toolbarstyle.md)
   The style of the toolbar determining its appearance and location related to the title bar.
-- [enum UITitlebarToolbarStyle](uititlebartoolbarstyle.md)
+- [enum UITitlebarToolbarStyle](./uititlebartoolbarstyle.md)
   Styles that determine the toolbar’s appearance and location related to the title bar.
-- [var autoHidesToolbarInFullScreen: Bool](uititlebar/autohidestoolbarinfullscreen.md)
+- [var autoHidesToolbarInFullScreen: Bool](./uititlebar/autohidestoolbarinfullscreen.md)
   A Boolean value that determines whether the toolbar automatically hides in full-screen windows.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var titlebar: UITitlebar?](uiwindowscene/titlebar.md)
+### Configuring a window’s title bar
+- [var titlebar: UITitlebar?](./uiwindowscene/titlebar.md)
   The title bar displayed in a window of a Mac app.
 
 

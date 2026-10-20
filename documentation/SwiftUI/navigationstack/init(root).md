@@ -1,7 +1,8 @@
 # init(root:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a navigation stack that manages its own navigation state.
 

@@ -1,9 +1,10 @@
 # bindTarget
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-[`bindTarget`](animationdefinition/bindtarget.md) is not used.
+[`bindTarget`](../animationdefinition/bindtarget.md) is not used.
 
 **Availability**:
 - iOS 18.0+

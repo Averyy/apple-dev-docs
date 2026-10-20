@@ -1,14 +1,15 @@
 # isStrongDecision
 
 **Framework**: Cinematic  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A flag representing whether this is a strong decision.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 
@@ -24,10 +25,11 @@ A strong decision keeps focus for as long as possible on the detected subject.
 
 ## See Also
 
-- [var focusDetectionID: CNDecision.FocusDetectionID](cndecision-swift.struct/focusdetectionid-swift.property.md)
-- [var isUserDecision: Bool](cndecision-swift.struct/isuserdecision.md)
+### Instance Properties
+- [var focusDetectionID: CNDecision.FocusDetectionID](./focusdetectionid-swift.property.md)
+- [var isUserDecision: Bool](./isuserdecision.md)
   A flag representing whether this is a user-created decision or a base decision.
-- [var time: CMTime](cndecision-swift.struct/time.md)
+- [var time: CMTime](./time.md)
   The first presentation time that the subject should be in focus.
 
 

@@ -1,7 +1,8 @@
 # SCPreferencesUnlock(_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Releases exclusive access to the configuration preferences.
 
@@ -12,6 +13,10 @@ Releases exclusive access to the configuration preferences.
 
 ```swift
 func SCPreferencesUnlock(_ prefs: SCPreferences) -> Bool
+```
+
+```c
+Boolean SCPreferencesUnlock(SCPreferencesRef prefs);
 ```
 
 #### Return Value
@@ -28,7 +33,8 @@ After exclusive access has been released, other clients can establish exclusive 
 
 ## See Also
 
-- [func SCPreferencesLock(SCPreferences, Bool) -> Bool](scpreferenceslock(_:_:).md)
+### Managing Access to a Preferences Session
+- [func SCPreferencesLock(SCPreferences, Bool) -> Bool](./scpreferenceslock%28_,_%29.md)
   Locks access to the configuration preferences.
 
 

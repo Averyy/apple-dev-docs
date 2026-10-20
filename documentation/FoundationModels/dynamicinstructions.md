@@ -1,7 +1,8 @@
 # DynamicInstructions
 
 **Framework**: Foundation Models  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents dynamic instructions.
 
@@ -21,12 +22,12 @@ protocol DynamicInstructions
 
 ## Mentions
 
-- [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
-- [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
+- [Composing dynamic sessions with instructions and profiles](./composing-dynamic-sessions-with-instructions-and-profiles.md)
+- [Optimizing key-value caching in language model sessions](./optimizing-key-value-caching-in-language-model-sessions.md)
 
 #### Overview
 
-Dynamic instructions provide a declarative approach to assembling instructions and tools that a [`LanguageModelSession`](languagemodelsession.md) uses. The framework evaluates them before every request to the model, so the body can contain conditional logic that’s based on current app state.
+Dynamic instructions provide a declarative approach to assembling instructions and tools that a [`LanguageModelSession`](./languagemodelsession.md) uses. The framework evaluates them before every request to the model, so the body can contain conditional logic that’s based on current app state.
 
 ```swift
 struct PresentationInstructions: DynamicInstructions {
@@ -53,49 +54,50 @@ struct PresentationInstructions: DynamicInstructions {
 ## Topics
 
 ### Implementing dynamic instructions
-- [var body: Self.Body](dynamicinstructions/body-swift.property.md)
+- [var body: Self.Body](./dynamicinstructions/body-swift.property.md)
   The content of the dynamic instructions.
-- [associatedtype Body : DynamicInstructions](dynamicinstructions/body-swift.associatedtype.md)
+- [associatedtype Body : DynamicInstructions](./dynamicinstructions/body-swift.associatedtype.md)
   The type of dynamic instructions that represent these instructions.
-- [DynamicInstructions.ForEach](dynamicinstructions/foreach.md)
+- [DynamicInstructions.ForEach](./dynamicinstructions/foreach.md)
   A shorthand for producing content for each element of a collection.
-- [DynamicInstructions.SessionProperty](dynamicinstructions/sessionproperty.md)
+- [DynamicInstructions.SessionProperty](./dynamicinstructions/sessionproperty.md)
   A property wrapper that provides access to a session property within dynamic instructions.
 ### Building dynamic instructions
-- [struct DynamicInstructionsBuilder](dynamicinstructionsbuilder.md)
+- [struct DynamicInstructionsBuilder](./dynamicinstructionsbuilder.md)
   A result builder that combines tools and other content into dynamic instructions.
-- [struct EmptyDynamicInstructions](emptydynamicinstructions.md)
+- [struct EmptyDynamicInstructions](./emptydynamicinstructions.md)
   An empty dynamic instructions type.
-- [struct ConditionalDynamicInstructions](conditionaldynamicinstructions.md)
+- [struct ConditionalDynamicInstructions](./conditionaldynamicinstructions.md)
   A dynamic instructions type that conditionally selects between two conditions.
-- [struct AnyDynamicInstructions](anydynamicinstructions.md)
+- [struct AnyDynamicInstructions](./anydynamicinstructions.md)
   A dynamic instructions type that’s type-erased.
-- [struct TupleDynamicInstructions](tupledynamicinstructions.md)
+- [struct TupleDynamicInstructions](./tupledynamicinstructions.md)
   A dynamic instructions type that represents a tuple.
 
 ## Relationships
 
 ### Conforming Types
-- [AnyDynamicInstructions](anydynamicinstructions.md)
-- [ConditionalDynamicInstructions](conditionaldynamicinstructions.md)
-- [DynamicInstructionsForEach](dynamicinstructionsforeach.md)
-- [EmptyDynamicInstructions](emptydynamicinstructions.md)
-- [Instructions](instructions.md)
-- [TupleDynamicInstructions](tupledynamicinstructions.md)
+- [AnyDynamicInstructions](./anydynamicinstructions.md)
+- [ConditionalDynamicInstructions](./conditionaldynamicinstructions.md)
+- [DynamicInstructionsForEach](./dynamicinstructionsforeach.md)
+- [EmptyDynamicInstructions](./emptydynamicinstructions.md)
+- [Instructions](./instructions.md)
+- [TupleDynamicInstructions](./tupledynamicinstructions.md)
 
 ## See Also
 
-- [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
+### Dynamic profiles
+- [Composing dynamic sessions with instructions and profiles](./composing-dynamic-sessions-with-instructions-and-profiles.md)
   Adapt sessions dynamically at runtime by loading instructions and tools based on the state of your app.
-- [Origami: Crafting a dynamic tutorial for Apple Intelligence](origami-crafting-a-dynamic-tutorial-for-apple-intelligence.md)
+- [Origami: Crafting a dynamic tutorial for Apple Intelligence](./origami-crafting-a-dynamic-tutorial-for-apple-intelligence.md)
   Build interactive experiences with Foundation Models and Private Cloud Compute using multimodal prompts.
-- [struct DynamicInstructionsForEach](dynamicinstructionsforeach.md)
+- [struct DynamicInstructionsForEach](./dynamicinstructionsforeach.md)
   Dynamic instructions that produce content for each element of a collection.
-- [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
+- [LanguageModelSession.DynamicProfile](./languagemodelsession/dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
-- [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)
+- [LanguageModelSession.DynamicProfileModifier](./languagemodelsession/dynamicprofilemodifier.md)
   A protocol for creating reusable wrappers around dynamic profile content.
-- [LanguageModelSession.Profile](languagemodelsession/profile.md)
+- [LanguageModelSession.Profile](./languagemodelsession/profile.md)
   A profile that contains dynamic instructions.
 
 

@@ -1,7 +1,8 @@
 # sourceTypes
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source for the verifiable clinical records, for example from a SMART Health Card or an EU Digital COVID Certificate.
 
@@ -10,7 +11,7 @@ The source for the verifiable clinical records, for example from a SMART Health 
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ var sourceTypes: [HKVerifiableClinicalRecordSourceType]
 
 #### Discussion
 
-For a list of valid sources, see [`HKVerifiableClinicalRecordSourceType`](hkverifiableclinicalrecordsourcetype.md).
+For a list of valid sources, see [`HKVerifiableClinicalRecordSourceType`](../hkverifiableclinicalrecordsourcetype.md).
 
 ## See Also
 
-- [var recordTypes: [HKVerifiableClinicalRecordCredentialType]](hkverifiableclinicalrecordquerydescriptor/recordtypes.md)
+### Accessing Query Properties
+- [var recordTypes: [HKVerifiableClinicalRecordCredentialType]](./recordtypes.md)
   The types of records returned by this query.
-- [var predicate: NSPredicate?](hkverifiableclinicalrecordquerydescriptor/predicate.md)
+- [var predicate: NSPredicate?](./predicate.md)
   A predicate that limits the results returned by the query.
 
 

@@ -1,7 +1,8 @@
 # NEHotspotHelperCommand
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A command for the hotspot helper to handle.
 
@@ -17,53 +18,58 @@ A command for the hotspot helper to handle.
 class NEHotspotHelperCommand
 ```
 
+```objc
+@interface NEHotspotHelperCommand : NSObject
+```
+
 #### Overview
 
-NEHotspostHelperCommand objects are passed to the the Hotspot Helper app’s command handler block. The Hotspot Helper app processes the command, instantiates an [`NEHotspotHelperResponse`](nehotspothelperresponse.md) object, sets the annotated `network` or `networkList` (`Evaluate` or `FilterScanList` commands only), and then delivers the response to the system.
+NEHotspostHelperCommand objects are passed to the the Hotspot Helper app’s command handler block. The Hotspot Helper app processes the command, instantiates an [`NEHotspotHelperResponse`](./nehotspothelperresponse.md) object, sets the annotated `network` or `networkList` (`Evaluate` or `FilterScanList` commands only), and then delivers the response to the system.
 
 ## Topics
 
 ### Command information
-- [var commandType: NEHotspotHelperCommandType](nehotspothelpercommand/commandtype.md)
+- [var commandType: NEHotspotHelperCommandType](./nehotspothelpercommand/commandtype.md)
   The type of the command
-- [enum NEHotspotHelperCommandType](nehotspothelpercommandtype.md)
+- [enum NEHotspotHelperCommandType](./nehotspothelpercommandtype.md)
   An enumeration of hotspot command types.
-- [var network: NEHotspotNetwork?](nehotspothelpercommand/network.md)
+- [var network: NEHotspotNetwork?](./nehotspothelpercommand/network.md)
   The network associated with the command.
-- [var networkList: [NEHotspotNetwork]?](nehotspothelpercommand/networklist.md)
+- [var networkList: [NEHotspotNetwork]?](./nehotspothelpercommand/networklist.md)
   The list of networks associated with the command.
 ### Networking on the hotspot network
-- [func bind(to: NEHotspotHelperCommand)](../foundation/nsmutableurlrequest/bind(to:).md)
+- [func bind(to: NEHotspotHelperCommand)](../Foundation/nsmutableurlrequest/bind%28to%29.md)
   Binds a URL request to the network interface associated with the hotspot helper command instance.
-- [func createTCPConnection(NWEndpoint) -> NWTCPConnection](nehotspothelpercommand/createtcpconnection(_:).md)
+- [func createTCPConnection(NWEndpoint) -> NWTCPConnection](./nehotspothelpercommand/createtcpconnection%28_%29.md)
   Create a new TCP connection over the network associated with the command.
-- [func createUDPSession(NWEndpoint) -> NWUDPSession](nehotspothelpercommand/createudpsession(_:).md)
+- [func createUDPSession(NWEndpoint) -> NWUDPSession](./nehotspothelpercommand/createudpsession%28_%29.md)
   Creates a new UDP session over the network associated with the command.
 ### Response creation
-- [func createResponse(NEHotspotHelperResult) -> NEHotspotHelperResponse](nehotspothelpercommand/createresponse(_:).md)
+- [func createResponse(NEHotspotHelperResult) -> NEHotspotHelperResponse](./nehotspothelpercommand/createresponse%28_%29.md)
   Create a response to the command.
-- [enum NEHotspotHelperResult](nehotspothelperresult.md)
+- [enum NEHotspotHelperResult](./nehotspothelperresult.md)
   The result of handling a hotspot command.
 ### Instance Properties
-- [var interface: NWInterface](nehotspothelpercommand/interface-46dq.md)
+- [var interface: NWInterface](./nehotspothelpercommand/interface-46dq.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NEHotspotHelperResponse](nehotspothelperresponse.md)
+### Commands
+- [class NEHotspotHelperResponse](./nehotspothelperresponse.md)
   The hotspot helper’s response to a command.
-- [class NEHotspotNetwork](nehotspotnetwork.md)
+- [class NEHotspotNetwork](./nehotspotnetwork.md)
   Information about a Wi-Fi network associated with a command or a response.
 
 

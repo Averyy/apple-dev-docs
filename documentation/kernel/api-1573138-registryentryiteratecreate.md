@@ -1,21 +1,23 @@
 # RegistryEntryIterateCreate
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 OSStatus RegistryEntryIterateCreate(RegEntryIter *cookie);
 ```
 
 ## See Also
 
-- [RegistryEntryIterateDispose](1573037-registryentryiteratedispose.md)
-- [RegistryEntryIterate](1573113-registryentryiterate.md)
+### Entry Management
+- [RegistryEntryIterateDispose](./api-1573037-registryentryiteratedispose.md)
+- [RegistryEntryIterate](./api-1573113-registryentryiterate.md)
 
 
 ---

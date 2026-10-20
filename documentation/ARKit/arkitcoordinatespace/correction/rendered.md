@@ -1,7 +1,8 @@
 # ARKitCoordinateSpace.Correction.rendered
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Coordinate spaces are corrected to render over physical objects in passthrough displays.
 

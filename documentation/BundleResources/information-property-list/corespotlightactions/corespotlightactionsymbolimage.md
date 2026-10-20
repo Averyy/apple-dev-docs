@@ -1,7 +1,8 @@
 # CoreSpotlightActionSymbolImage
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of a SF Symbol to display next to the action’s title.
 
@@ -10,15 +11,17 @@ The name of a SF Symbol to display next to the action’s title.
 - iPadOS 15.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `CoreSpotlightActionSymbolImage`
+- **Type**: string
 
 ## See Also
 
-- [CoreSpotlightActionTitle](information-property-list/corespotlightactions/corespotlightactiontitle.md)
+### Action Properties
+- [CoreSpotlightActionTitle](./corespotlightactiontitle.md)
   The user-visible string that Spotlight displays as the title of the action.
-- [CoreSpotlightActionIdentifier](information-property-list/corespotlightactions/corespotlightactionidentifier.md)
+- [CoreSpotlightActionIdentifier](./corespotlightactionidentifier.md)
   A string an app defines to identify the action.
 
 

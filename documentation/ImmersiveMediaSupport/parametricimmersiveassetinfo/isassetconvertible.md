@@ -1,7 +1,8 @@
 # isAssetConvertible
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A result Boolean value that indicates whether the asset can be converted to parametric immersive. If opt-out `computeFormatDescription` in the initializer, this Boolean indicates whether the asset is convertible.
 

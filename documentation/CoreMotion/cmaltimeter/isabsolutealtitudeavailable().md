@@ -1,7 +1,8 @@
 # isAbsoluteAltitudeAvailable()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value indicating whether the current device reports changes in the absolute altitude.
 
@@ -17,19 +18,24 @@ Returns a Boolean value indicating whether the current device reports changes in
 class func isAbsoluteAltitudeAvailable() -> Bool
 ```
 
+```objc
++ (BOOL) isAbsoluteAltitudeAvailable;
+```
+
 #### Discussion
 
-Use this method to determine if altitude updates are available before calling the [`startAbsoluteAltitudeUpdates(to:withHandler:)`](cmaltimeter/startabsolutealtitudeupdates(to:withhandler:).md) method.
+Use this method to determine if altitude updates are available before calling the [`startAbsoluteAltitudeUpdates(to:withHandler:)`](./startabsolutealtitudeupdates%28to,withhandler%29.md) method.
 
 > **Note**:  Absolute altitude is only available on iPhone 12 and later and Apple Watch 6 or SE and later.
 
 ## See Also
 
-- [class func isRelativeAltitudeAvailable() -> Bool](cmaltimeter/isrelativealtitudeavailable.md)
+### Determining Altitude Availability
+- [class func isRelativeAltitudeAvailable() -> Bool](./isrelativealtitudeavailable%28%29.md)
   Returns a Boolean value indicating whether the current device supports generating data for relative altitude changes.
-- [class func authorizationStatus() -> CMAuthorizationStatus](cmaltimeter/authorizationstatus.md)
+- [class func authorizationStatus() -> CMAuthorizationStatus](./authorizationstatus%28%29.md)
   Returns a value indicating whether the app is authorized to retrieve altimeter data.
-- [enum CMAuthorizationStatus](cmauthorizationstatus.md)
+- [enum CMAuthorizationStatus](../cmauthorizationstatus.md)
   The authorization status for motion-related features.
 
 

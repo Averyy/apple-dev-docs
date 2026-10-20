@@ -1,7 +1,8 @@
 # MDS_HANDLE
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias MDS_HANDLE = CSSM_DL_HANDLE
+```
+
+```c
+typedef CSSM_DL_HANDLE MDS_HANDLE;
 ```
 
 

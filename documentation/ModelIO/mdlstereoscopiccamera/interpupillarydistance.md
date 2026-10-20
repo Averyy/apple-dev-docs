@@ -1,7 +1,8 @@
 # interPupillaryDistance
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance, in millimeters, between the stereoscopic camera’s two viewpoints.
 
@@ -19,17 +20,22 @@ The distance, in millimeters, between the stereoscopic camera’s two viewpoints
 var interPupillaryDistance: Float { get set }
 ```
 
+```objc
+@property (nonatomic, assign) float interPupillaryDistance;
+```
+
 #### Discussion
 
 Each viewpoint is assumed to be horizontally offset from the camera’s position by half the interocular distance.
 
 ## See Also
 
-- [var overlap: Float](mdlstereoscopiccamera/overlap.md)
+### Modeling Stereoscopic Imaging
+- [var overlap: Float](./overlap.md)
   The amount, as a fraction of image width, by which the images from the camera’s two viewpoints overlap.
-- [var leftVergence: Float](mdlstereoscopiccamera/leftvergence.md)
+- [var leftVergence: Float](./leftvergence.md)
   The angle, in degrees, at which the camera’s left viewpoint faces toward a central focal point.
-- [var rightVergence: Float](mdlstereoscopiccamera/rightvergence.md)
+- [var rightVergence: Float](./rightvergence.md)
   The angle, in degrees, at which the camera’s right viewpoint faces toward a central focal point.
 
 

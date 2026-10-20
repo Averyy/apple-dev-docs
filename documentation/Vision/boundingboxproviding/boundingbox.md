@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The bounding box of the object.
@@ -24,6 +25,11 @@ var boundingBox: NormalizedRect { get }
 #### Discussion
 
 The coordinate system is normalized to the dimensions of the processed image, with the origin at the lower-left corner of the image.
+
+## Default Implementations
+
+### BoundingBoxProviding Implementations
+- [var boundingBox: NormalizedRect](./boundingbox-73688.md)
 
 
 ---

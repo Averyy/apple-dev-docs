@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct dyld_chained_ptr_arm64e_shared_cache_rebase {
     ...
 };
@@ -17,11 +17,11 @@ struct dyld_chained_ptr_arm64e_shared_cache_rebase {
 ## Topics
 
 ### Instance Properties
-- [auth](dyld_chained_ptr_arm64e_shared_cache_rebase/4320754-auth.md)
-- [high8](dyld_chained_ptr_arm64e_shared_cache_rebase/4320755-high8.md)
-- [next](dyld_chained_ptr_arm64e_shared_cache_rebase/4320756-next.md)
-- [runtimeOffset](dyld_chained_ptr_arm64e_shared_cache_rebase/4320757-runtimeoffset.md)
-- [unused](dyld_chained_ptr_arm64e_shared_cache_rebase/4320758-unused.md)
+- [auth](./dyld_chained_ptr_arm64e_shared_cache_rebase/api-4320754-auth.md)
+- [high8](./dyld_chained_ptr_arm64e_shared_cache_rebase/api-4320755-high8.md)
+- [next](./dyld_chained_ptr_arm64e_shared_cache_rebase/api-4320756-next.md)
+- [runtimeOffset](./dyld_chained_ptr_arm64e_shared_cache_rebase/api-4320757-runtimeoffset.md)
+- [unused](./dyld_chained_ptr_arm64e_shared_cache_rebase/api-4320758-unused.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # data
 
 **Framework**: SecureElementCredential  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data a credential receives during card emulation.
 

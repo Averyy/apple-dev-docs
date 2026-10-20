@@ -1,7 +1,8 @@
 # HMAccessoryCategoryTypeSpeaker
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A speaker accessory.
 
@@ -19,9 +20,14 @@ A speaker accessory.
 let HMAccessoryCategoryTypeSpeaker: String
 ```
 
+```c
+extern NSString * const HMAccessoryCategoryTypeSpeaker;
+```
+
 ## See Also
 
-- [let HMAccessoryCategoryTypeAudioReceiver: String](hmaccessorycategorytypeaudioreceiver.md)
+### Audio and sound
+- [let HMAccessoryCategoryTypeAudioReceiver: String](./hmaccessorycategorytypeaudioreceiver.md)
   An audio receiver accessory that supports HAP and AirPlay2.
 
 

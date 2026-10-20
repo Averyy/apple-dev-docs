@@ -1,7 +1,8 @@
 # MDQuerySortComparatorFunction
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Callback function used to sort the results of a query.
 
@@ -15,7 +16,11 @@ Callback function used to sort the results of a query.
 typealias MDQuerySortComparatorFunction = (UnsafePointer<Unmanaged<CFTypeRef>?>?, UnsafePointer<Unmanaged<CFTypeRef>?>?, UnsafeMutableRawPointer?) -> CFComparisonResult
 ```
 
-#### Return_value
+```c
+typedef CFComparisonResult (*MDQuerySortComparatorFunction)(const CFTypeRef attrs1[], const CFTypeRef attrs2[], void *context);
+```
+
+#### Return Value
 
 The function must return one of the CFComparisonResults `kCFCompareLessThan`, `kCFCompareEqualTo`, or `kCFCompareGreaterThan`. There is no provision for unordered results. The comparison should be a total order relation and produce the same results for the same inputs.
 
@@ -28,9 +33,10 @@ The function must return one of the CFComparisonResults `kCFCompareLessThan`, `k
 
 ## See Also
 
-- [typealias MDQueryCreateResultFunction](mdquerycreateresultfunction.md)
+### Callbacks
+- [typealias MDQueryCreateResultFunction](./mdquerycreateresultfunction.md)
   Callback function used to create the result objects stored and returned by a query.
-- [typealias MDQueryCreateValueFunction](mdquerycreatevaluefunction.md)
+- [typealias MDQueryCreateValueFunction](./mdquerycreatevaluefunction.md)
   Callback function usedto create the value objects stored and returned by a query.
 
 

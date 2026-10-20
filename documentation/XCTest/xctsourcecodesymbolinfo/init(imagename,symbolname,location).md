@@ -1,7 +1,8 @@
 # init(imageName:symbolName:location:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an instance with a binary image name, source code location, and symbol name.
 
@@ -9,6 +10,10 @@ Initializes an instance with a binary image name, source code location, and symb
 
 ```swift
 init(imageName: String, symbolName: String, location: XCTSourceCodeLocation?)
+```
+
+```objc
+- (instancetype) initWithImageName:(NSString *) imageName symbolName:(NSString *) symbolName location:(XCTSourceCodeLocation *) location;
 ```
 
 ## Parameters

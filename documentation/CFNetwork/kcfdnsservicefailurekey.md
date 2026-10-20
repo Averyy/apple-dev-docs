@@ -1,7 +1,8 @@
 # kCFDNSServiceFailureKey
 
 **Framework**: CFNetwork  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -17,21 +18,26 @@
 let kCFDNSServiceFailureKey: CFString
 ```
 
+```c
+extern CFStringRef const kCFDNSServiceFailureKey;
+```
+
 #### Discussion
 
-If an error of type `kCFNetServicesErrorDNSServiceFailure` is returned, querying this key returns the last error returned by the DNS resolver libraries in response to the previous operation. To interpret the results, look up the error codes in `/usr/include/dns_sd.h` or [`DNS Service Discovery C`](https://developer.apple.com/documentation/dnssd/dns-service-discovery-c).
+If an error of type `kCFNetServicesErrorDNSServiceFailure` is returned, querying this key returns the last error returned by the DNS resolver libraries in response to the previous operation. To interpret the results, look up the error codes in `/usr/include/dns_sd.h` or [DNS Service Discovery C](../dnssd/dns-service-discovery-c.md).
 
 ## See Also
 
-- [let kCFURLErrorFailingURLErrorKey: CFString](kcfurlerrorfailingurlerrorkey.md)
+### Constants
+- [let kCFURLErrorFailingURLErrorKey: CFString](./kcfurlerrorfailingurlerrorkey.md)
   The URL that caused the load to fail as a `CFURLRef` object.
-- [let kCFURLErrorFailingURLStringErrorKey: CFString](kcfurlerrorfailingurlstringerrorkey.md)
+- [let kCFURLErrorFailingURLStringErrorKey: CFString](./kcfurlerrorfailingurlstringerrorkey.md)
   The URL that caused the load to fail as a `CFStringRef` object.
-- [let kCFGetAddrInfoFailureKey: CFString](kcfgetaddrinfofailurekey.md)
-- [let kCFSOCKSStatusCodeKey: CFString](kcfsocksstatuscodekey.md)
-- [let kCFSOCKSVersionKey: CFString](kcfsocksversionkey.md)
-- [let kCFSOCKSNegotiationMethodKey: CFString](kcfsocksnegotiationmethodkey.md)
-- [let kCFFTPStatusCodeKey: CFString](kcfftpstatuscodekey.md)
+- [let kCFGetAddrInfoFailureKey: CFString](./kcfgetaddrinfofailurekey.md)
+- [let kCFSOCKSStatusCodeKey: CFString](./kcfsocksstatuscodekey.md)
+- [let kCFSOCKSVersionKey: CFString](./kcfsocksversionkey.md)
+- [let kCFSOCKSNegotiationMethodKey: CFString](./kcfsocksnegotiationmethodkey.md)
+- [let kCFFTPStatusCodeKey: CFString](./kcfftpstatuscodekey.md)
 
 
 ---

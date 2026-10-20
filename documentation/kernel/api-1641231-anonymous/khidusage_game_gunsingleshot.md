@@ -1,14 +1,15 @@
 # kHIDUsage_Game_GunSingleShot
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Game_GunSingleShot = 0x33
 ```
 

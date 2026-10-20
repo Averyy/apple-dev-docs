@@ -1,7 +1,8 @@
 # AVMutableAssetDownloadStorageManagementPolicy
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mutable object that you use to create a new storage management policy.
 
@@ -18,35 +19,40 @@ A mutable object that you use to create a new storage management policy.
 class AVMutableAssetDownloadStorageManagementPolicy
 ```
 
+```objc
+@interface AVMutableAssetDownloadStorageManagementPolicy : AVAssetDownloadStorageManagementPolicy
+```
+
 ## Topics
 
 ### Managing storage
-- [var expirationDate: Date](avmutableassetdownloadstoragemanagementpolicy/expirationdate.md)
+- [var expirationDate: Date](./avmutableassetdownloadstoragemanagementpolicy/expirationdate.md)
   The expiration date for an asset.
-- [var priority: AVAssetDownloadedAssetEvictionPriority](avmutableassetdownloadstoragemanagementpolicy/priority.md)
+- [var priority: AVAssetDownloadedAssetEvictionPriority](./avmutableassetdownloadstoragemanagementpolicy/priority.md)
   The eviction priority for a downloaded asset.
-- [struct AVAssetDownloadedAssetEvictionPriority](avassetdownloadedassetevictionpriority.md)
+- [struct AVAssetDownloadedAssetEvictionPriority](./avassetdownloadedassetevictionpriority.md)
   Constants that define eviction priorities for a storage management policy.
 
 ## Relationships
 
 ### Inherits From
-- [AVAssetDownloadStorageManagementPolicy](avassetdownloadstoragemanagementpolicy.md)
+- [AVAssetDownloadStorageManagementPolicy](./avassetdownloadstoragemanagementpolicy.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVAssetDownloadStorageManager](avassetdownloadstoragemanager.md)
+### Offline storage management
+- [class AVAssetDownloadStorageManager](./avassetdownloadstoragemanager.md)
   An object that manages policies to automatically purge downloaded assets.
-- [class AVAssetDownloadStorageManagementPolicy](avassetdownloadstoragemanagementpolicy.md)
+- [class AVAssetDownloadStorageManagementPolicy](./avassetdownloadstoragemanagementpolicy.md)
   An object that defines a policy to automatically manage the storage of downloaded assets.
 
 

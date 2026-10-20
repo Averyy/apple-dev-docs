@@ -1,7 +1,8 @@
 # init(sampleBuffer:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a timed metadata group with a sample buffer.
 
@@ -26,13 +27,14 @@ An instance of `AVTimedMetadataGroup`.
 
 ## Parameters
 
-- `sampleBuffer`: A [`CMReadySampleBuffer`](https://developer.apple.com/documentation/coremedia/cmreadysamplebuffer) with media type [`kCMMediaType_Metadata`](https://developer.apple.com/documentation/coremedia/kcmmediatype_metadata).
+- `sampleBuffer`: A [`CMReadySampleBuffer`](../../CoreMedia/cmreadysamplebuffer.md) with media type [`kCMMediaType_Metadata`](../../CoreMedia/kcmmediatype_metadata.md).
 
 ## See Also
 
-- [init(items: [AVMetadataItem], timeRange: CMTimeRange)](avtimedmetadatagroup/init(items:timerange:).md)
+### Creating a timed metadata group
+- [init(items: [AVMetadataItem], timeRange: CMTimeRange)](./init%28items,timerange%29.md)
   Creates a timed metadata group initialized with the given metadata items.
-- [init?(sampleBuffer: CMSampleBuffer)](avtimedmetadatagroup/init(samplebuffer:)-bjuo.md)
+- [init?(sampleBuffer: CMSampleBuffer)](./init%28samplebuffer%29-bjuo.md)
 
 
 ---

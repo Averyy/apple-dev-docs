@@ -1,7 +1,8 @@
 # AppStoreVersion.Relationships.AppClipDefaultExperience.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related Default App Clip Experiences resource.
 
@@ -10,7 +11,7 @@ The type and ID of a related Default App Clip Experiences resource.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersion.Relationships.AppClipDefaultExperience.Data
 ```
 
@@ -18,6 +19,8 @@ object AppStoreVersion.Relationships.AppClipDefaultExperience.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Default App Clip Experiences resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `appClipDefaultExperiences`
 
 
 ---

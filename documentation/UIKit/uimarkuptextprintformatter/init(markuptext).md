@@ -1,7 +1,8 @@
 # init(markupText:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a markup-text print formatter initialized with an HTML string.
 
@@ -17,6 +18,10 @@ Returns a markup-text print formatter initialized with an HTML string.
 init(markupText: String)
 ```
 
+```objc
+- (instancetype) initWithMarkupText:(NSString *) markupText;
+```
+
 #### Return Value
 
 An instance of `UIMarkupTextPrintFormatter` or `nil` if the object could not be created.
@@ -27,7 +32,8 @@ An instance of `UIMarkupTextPrintFormatter` or `nil` if the object could not be 
 
 ## See Also
 
-- [var markupText: String?](uimarkuptextprintformatter/markuptext.md)
+### Related Documentation
+- [var markupText: String?](./markuptext.md)
   The HTML markup text for the print formatter.
 
 

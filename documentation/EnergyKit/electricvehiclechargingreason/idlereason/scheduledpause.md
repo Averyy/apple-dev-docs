@@ -1,14 +1,15 @@
 # ElectricVehicleChargingReason.IdleReason.scheduledPause
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reason that indicates charging pauses at a scheduled time.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,8 @@ case scheduledPause
 
 ## See Also
 
-- [ElectricVehicleChargingReason.IdleReason.scheduledEnd](electricvehiclechargingreason/idlereason/scheduledend.md)
+### Scheduled conditions
+- [ElectricVehicleChargingReason.IdleReason.scheduledEnd](./scheduledend.md)
   A reason that indicates charging stops at a scheduled end time.
 
 

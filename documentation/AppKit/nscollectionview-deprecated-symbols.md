@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,18 +12,18 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated methods
-- [func newItem(forRepresentedObject: Any) -> NSCollectionViewItem](nscollectionview/newitem(forrepresentedobject:).md)
+- [func newItem(forRepresentedObject: Any) -> NSCollectionViewItem](./nscollectionview/newitem%28forrepresentedobject%29.md)
   Returns the collection view item that is used for the specified object.
 ### Deprecated properties
-- [var itemPrototype: NSCollectionViewItem?](nscollectionview/itemprototype.md)
+- [var itemPrototype: NSCollectionViewItem?](./nscollectionview/itemprototype.md)
   The receiver’s collection view item prototype.
-- [var maxNumberOfRows: Int](nscollectionview/maxnumberofrows.md)
+- [var maxNumberOfRows: Int](./nscollectionview/maxnumberofrows.md)
   The maximum number of rows that the collection view displays.
-- [var maxNumberOfColumns: Int](nscollectionview/maxnumberofcolumns.md)
+- [var maxNumberOfColumns: Int](./nscollectionview/maxnumberofcolumns.md)
   The maximum number of columns that the collection view displays.
-- [var minItemSize: NSSize](nscollectionview/minitemsize.md)
+- [var minItemSize: NSSize](./nscollectionview/minitemsize.md)
   The minimum size (in points) of items in the collection view grid.
-- [var maxItemSize: NSSize](nscollectionview/maxitemsize.md)
+- [var maxItemSize: NSSize](./nscollectionview/maxitemsize.md)
   The maximum size (in points) of items in the collection view grid.
 
 

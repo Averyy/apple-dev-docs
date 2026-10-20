@@ -1,7 +1,8 @@
 # errorEstimate
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An estimate of the amount of error in the temperature measurement.
 
@@ -16,15 +17,20 @@ An estimate of the amount of error in the temperature measurement.
 var errorEstimate: Measurement<UnitTemperature> { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSMeasurement<NSUnitTemperature *> * errorEstimate;
+```
+
 #### Discussion
 
 This property is a delta value that can be positive or negative.
 
 ## See Also
 
-- [var timestamp: Date](srwristtemperature/timestamp.md)
+### Getting temperature information
+- [var timestamp: Date](./timestamp.md)
   The date and time when the device records the temperature.
-- [var value: Measurement<UnitTemperature>](srwristtemperature/value.md)
+- [var value: Measurement<UnitTemperature>](./value.md)
   The temperature sensor value in celsius.
 
 

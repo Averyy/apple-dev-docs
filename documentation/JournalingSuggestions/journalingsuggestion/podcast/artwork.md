@@ -1,7 +1,8 @@
 # artwork
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL to an image on disk for the podcast artwork.
 
@@ -16,9 +17,10 @@ var artwork: URL?
 
 ## See Also
 
-- [var show: String?](journalingsuggestion/podcast/show.md)
+### Identifying the podcast
+- [var show: String?](./show.md)
   The podcast’s show name.
-- [var episode: String?](journalingsuggestion/podcast/episode.md)
+- [var episode: String?](./episode.md)
   The podcast episode’s name.
 
 

@@ -1,7 +1,8 @@
 # setEnabled(_:forSegmentAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables the segment you specify.
 
@@ -9,7 +10,7 @@ Enables the segment you specify.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,26 +19,31 @@ Enables the segment you specify.
 func setEnabled(_ enabled: Bool, forSegmentAt segment: Int)
 ```
 
+```objc
+- (void) setEnabled:(BOOL) enabled forSegmentAtIndex:(NSUInteger) segment;
+```
+
 ## Parameters
 
-- `enabled`: [`true`](https://developer.apple.com/documentation/swift/true) to enable the segment you specify or [`false`](https://developer.apple.com/documentation/swift/false) to disable the segment. [`true`](https://developer.apple.com/documentation/swift/true) by default.
-- `segment`: An index number identifying a segment in the control. It must be a number between 0 and the number of segments ([`numberOfSegments`](uisegmentedcontrol/numberofsegments.md)) minus 1; the segmented control pins values exceeding this upper range to the last segment.
+- `enabled`: [`true`](../../Swift/true.md) to enable the segment you specify or [`false`](../../Swift/false.md) to disable the segment. [`true`](../../Swift/true.md) by default.
+- `segment`: An index number identifying a segment in the control. It must be a number between 0 and the number of segments ([`numberOfSegments`](./numberofsegments.md)) minus 1; the segmented control pins values exceeding this upper range to the last segment.
 
 ## See Also
 
-- [var isMomentary: Bool](uisegmentedcontrol/ismomentary.md)
+### Managing segment behavior and appearance
+- [var isMomentary: Bool](./ismomentary.md)
   A Boolean value that determines whether segments in the segmented control show selected state.
-- [func isEnabledForSegment(at: Int) -> Bool](uisegmentedcontrol/isenabledforsegment(at:).md)
+- [func isEnabledForSegment(at: Int) -> Bool](./isenabledforsegment%28at%29.md)
   Returns whether the indicated segment is enabled.
-- [func setContentOffset(CGSize, forSegmentAt: Int)](uisegmentedcontrol/setcontentoffset(_:forsegmentat:).md)
+- [func setContentOffset(CGSize, forSegmentAt: Int)](./setcontentoffset%28_,forsegmentat%29.md)
   Adjusts the offset for drawing the content (image or text) of the specified segment.
-- [func contentOffsetForSegment(at: Int) -> CGSize](uisegmentedcontrol/contentoffsetforsegment(at:).md)
+- [func contentOffsetForSegment(at: Int) -> CGSize](./contentoffsetforsegment%28at%29.md)
   Returns the offset for drawing the content (image or text) of the segment you specify.
-- [func setWidth(CGFloat, forSegmentAt: Int)](uisegmentedcontrol/setwidth(_:forsegmentat:).md)
+- [func setWidth(CGFloat, forSegmentAt: Int)](./setwidth%28_,forsegmentat%29.md)
   Sets the width of the segment at the index you specify.
-- [func widthForSegment(at: Int) -> CGFloat](uisegmentedcontrol/widthforsegment(at:).md)
+- [func widthForSegment(at: Int) -> CGFloat](./widthforsegment%28at%29.md)
   Returns the width of the segment at the index you specify.
-- [var apportionsSegmentWidthsByContent: Bool](uisegmentedcontrol/apportionssegmentwidthsbycontent.md)
+- [var apportionsSegmentWidthsByContent: Bool](./apportionssegmentwidthsbycontent.md)
   Indicates whether the control attempts to adjust segment widths based on their content widths.
 
 

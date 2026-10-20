@@ -1,7 +1,8 @@
 # goForward(for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to navigate the tab to the next page in its history.
 
@@ -15,12 +16,20 @@ Called to navigate the tab to the next page in its history.
 ## Declaration
 
 ```swift
+optional func goForward(for context: WKWebExtensionContext, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 optional func goForward(for context: WKWebExtensionContext) async throws
+```
+
+```objc
+- (void) goForwardForWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-Navigates to the next page in the tab’s web view via [`goForward()`](wkwebview/goforward().md) if not implemented.
+Navigates to the next page in the tab’s web view via [`goForward()`](../wkwebview/goforward%28%29.md) if not implemented.
 
 ## Parameters
 

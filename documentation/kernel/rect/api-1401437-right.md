@@ -1,7 +1,8 @@
 # right
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The horizontal coordinate of the lower-right point of the rectangle.
 
@@ -10,7 +11,7 @@ The horizontal coordinate of the lower-right point of the rectangle.
 
 ## Declaration
 
-```swift
+```c
 short right;
 ```
 

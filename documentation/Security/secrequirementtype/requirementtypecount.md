@@ -1,7 +1,8 @@
 # requirementTypeCount
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The number of valid requirement types.
 
@@ -13,6 +14,10 @@ The number of valid requirement types.
 
 ```swift
 static var requirementTypeCount: SecRequirementType { get }
+```
+
+```c
+kSecRequirementTypeCount
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # AppClipDefaultExperienceCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
@@ -10,18 +11,18 @@ The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object AppClipDefaultExperienceCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipDefaultExperienceCreateRequest.Data.Relationships.AppClip](appclipdefaultexperiencecreaterequest/data-data.dictionary/relationships-data.dictionary/appclip-data.dictionary.md)
+- [object AppClipDefaultExperienceCreateRequest.Data.Relationships.AppClip](./relationships-data.dictionary/appclip-data.dictionary.md)
   The relationship to the App Clips resource you set with the request that creates a Default App Clip Experiences resource.
-- [object AppClipDefaultExperienceCreateRequest.Data.Relationships.AppClipDefaultExperienceTemplate](appclipdefaultexperiencecreaterequest/data-data.dictionary/relationships-data.dictionary/appclipdefaultexperiencetemplate-data.dictionary.md)
+- [object AppClipDefaultExperienceCreateRequest.Data.Relationships.AppClipDefaultExperienceTemplate](./relationships-data.dictionary/appclipdefaultexperiencetemplate-data.dictionary.md)
   The relationship to the Default App Clip Experience Templates resource you set with the request that creates a Default App Clip Experiences resource.
-- [object AppClipDefaultExperienceCreateRequest.Data.Relationships.ReleaseWithAppStoreVersion](appclipdefaultexperiencecreaterequest/data-data.dictionary/relationships-data.dictionary/releasewithappstoreversion-data.dictionary.md)
+- [object AppClipDefaultExperienceCreateRequest.Data.Relationships.ReleaseWithAppStoreVersion](./relationships-data.dictionary/releasewithappstoreversion-data.dictionary.md)
   The relationship to the App Store Versions resource you set with the request that creates a Default App Clip Experiences resource.
 
 ## Properties
@@ -32,7 +33,8 @@ object AppClipDefaultExperienceCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object AppClipDefaultExperienceCreateRequest.Data.Attributes](appclipdefaultexperiencecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object AppClipDefaultExperienceCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   The attributes you set that describe the Default App Clip Experiences resource.
 
 

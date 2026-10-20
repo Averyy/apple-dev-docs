@@ -1,7 +1,8 @@
 # flatMap(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the concatenated results of mapping the given transformation over this sequence.
 
@@ -24,7 +25,7 @@ func flatMap<SegmentOfResult>(_ transform: @escaping (Self.Elements.Element) -> 
 
 Use this method to receive a single-level sequence when your transformation produces a sequence or collection for each element. Calling `flatMap(_:)` on a sequence `s` is equivalent to calling `s.map(transform).joined()`.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

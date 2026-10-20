@@ -1,6 +1,7 @@
 # Managing Reports
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: Article
 
 Retrieve performance data for campaigns, ad groups, ads, keywords, and search terms.
 
@@ -14,28 +15,28 @@ Query one of the following endpoints based on your promoted object type and the 
 
 | Method | Path | Description |
 | --- | --- | --- |
-| `POST` | `/v1/reports/apps/campaigns/query` | [`Campaigns Report`](get-app-campaign-reports.md) retrieves App Store campaign performance data. |
-| `POST` | `/v1/reports/apps/adgroups/query` | [`Ad Groups Report`](get-app-ad-group-reports.md) retrieves App Store ad group performance data. |
-| `POST` | `/v1/reports/apps/ads/query` | [`Ads Report`](get-app-ad-reports.md) retrieves App Store ad performance data. |
-| `POST` | `/v1/reports/apps/keywords/query` | [`Keywords Report`](get-app-keyword-reports.md) retrieves App Store keyword performance data. |
-| `POST` | `/v1/reports/apps/searchterms/query` | [`Search Terms Report`](get-app-search-term-reports.md) retrieves App Store search term performance data. |
-| `POST` | `/v1/reports/business-brands/campaigns/query` | [`Campaigns Report (Brands)`](get-brand-campaign-reports.md) retrieves Apple Maps campaign performance data. |
-| `POST` | `/v1/reports/business-brands/adgroups/query` | [`Ad Groups Report (Brands)`](get-brand-ad-group-reports.md) retrieves Apple Maps ad group performance data. |
-| `POST` | `/v1/reports/business-brands/ads/query` | [`Ads Report (Brands)`](get-brand-ad-reports.md) retrieves Apple Maps ad performance data. |
-| `POST` | `/v1/reports/business-brands/keywords/query` | [`Keywords Report (Brands)`](get-brand-keyword-reports.md) retrieves Apple Maps keyword performance data. |
-| `POST` | `/v1/reports/business-brands/searchterms/query` | [`Search Terms Report (Brands)`](get-brand-search-term-reports.md) retrieves Apple Maps search term performance data. |
+| `POST` | `/v1/reports/apps/campaigns/query` | [`Campaigns Report`](./get-app-campaign-reports.md) retrieves App Store campaign performance data. |
+| `POST` | `/v1/reports/apps/adgroups/query` | [`Ad Groups Report`](./get-app-ad-group-reports.md) retrieves App Store ad group performance data. |
+| `POST` | `/v1/reports/apps/ads/query` | [`Ads Report`](./get-app-ad-reports.md) retrieves App Store ad performance data. |
+| `POST` | `/v1/reports/apps/keywords/query` | [`Keywords Report`](./get-app-keyword-reports.md) retrieves App Store keyword performance data. |
+| `POST` | `/v1/reports/apps/searchterms/query` | [`Search Terms Report`](./get-app-search-term-reports.md) retrieves App Store search term performance data. |
+| `POST` | `/v1/reports/business-brands/campaigns/query` | [`Campaigns Report (Brands)`](./get-brand-campaign-reports.md) retrieves Apple Maps campaign performance data. |
+| `POST` | `/v1/reports/business-brands/adgroups/query` | [`Ad Groups Report (Brands)`](./get-brand-ad-group-reports.md) retrieves Apple Maps ad group performance data. |
+| `POST` | `/v1/reports/business-brands/ads/query` | [`Ads Report (Brands)`](./get-brand-ad-reports.md) retrieves Apple Maps ad performance data. |
+| `POST` | `/v1/reports/business-brands/keywords/query` | [`Keywords Report (Brands)`](./get-brand-keyword-reports.md) retrieves Apple Maps keyword performance data. |
+| `POST` | `/v1/reports/business-brands/searchterms/query` | [`Search Terms Report (Brands)`](./get-brand-search-term-reports.md) retrieves Apple Maps search term performance data. |
 
 ##### Build the Request
 
-Every report request uses either [`AppsReportingRequest`](appsreportingrequest.md) or [`BrandsReportingRequest`](brandsreportingrequest.md) as the request body. Both share the same top-level fields:
+Every report request uses either [`AppsReportingRequest`](./appsreportingrequest.md) or [`BrandsReportingRequest`](./brandsreportingrequest.md) as the request body. Both share the same top-level fields:
 
-- The `timeRange` field defines the reporting window via [`TimeRange`](timerange.md): `start` date, `end` date, `timeZone` (`UTC` or `ORTZ`), and optional `granularity` (`HOURLY`, `DAILY`, `WEEKLY`, `MONTHLY`).
-- The `filters` field is an array of [`Filter`](filter.md) conditions that narrow results by field, operator, and value.
-- The `sorting` field is an array of [`Sorting`](sorting.md) objects that order rows by field and direction.
-- The `pagination` field uses [`RequestPagination`](requestpagination.md), with `offset` and `pageSize` (maximum 5000, default 100).
+- The `timeRange` field defines the reporting window via [`TimeRange`](./timerange.md): `start` date, `end` date, `timeZone` (`UTC` or `ORTZ`), and optional `granularity` (`HOURLY`, `DAILY`, `WEEKLY`, `MONTHLY`).
+- The `filters` field is an array of [`Filter`](./filter.md) conditions that narrow results by field, operator, and value.
+- The `sorting` field is an array of [`Sorting`](./sorting.md) objects that order rows by field and direction.
+- The `pagination` field uses [`RequestPagination`](./requestpagination.md), with `offset` and `pageSize` (maximum 5000, default 100).
 - The `fields` field is an optional list of field names to return. Omit it to receive all fields.
 - The `groupBy` field is an optional dimensional breakdown. Supported values differ between Apps and Brands, and additional restrictions apply at the keyword and search term entity levels. When you omit `groupBy`, the response returns one aggregate row per entity with no dimensional breakdown. We recommend providing at least one `groupBy` value to get meaningful segmented data in most reporting use cases.
-- The `options` field sets row inclusion flags via [`AppsOptions`](appsoptions.md) or [`BrandsOptions`](brandsoptions.md).
+- The `options` field sets row inclusion flags via [`AppsOptions`](./appsoptions.md) or [`BrandsOptions`](./brandsoptions.md).
 
 ##### Read the Response
 
@@ -66,13 +67,13 @@ Apps and Brands campaigns measure different coverage: app installs and engagemen
 
 | Feature | Apps (`apps`) | Brands (`business-brands`) |
 | --- | --- | --- |
-| Request object | [`AppsReportingRequest`](appsreportingrequest.md) | [`BrandsReportingRequest`](brandsreportingrequest.md) |
+| Request object | [`AppsReportingRequest`](./appsreportingrequest.md) | [`BrandsReportingRequest`](./brandsreportingrequest.md) |
 | Campaign/ad-group `groupBy` dimensions | `deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`, `countryOrRegion` | `deviceClass`, `locationId`, `supplyPlacement` |
 | Keyword `groupBy` dimensions | `deviceClass`, `countryOrRegion` | `deviceClass` |
 | Search term `groupBy` dimensions | `deviceClass`, `countryOrRegion` | `deviceClass` |
 | Ad `groupBy` dimensions | `countryOrRegion` | `deviceClass`, `locationId`, `supplyPlacement` |
 | `EMPTY_METRICS` option | Supported | Not supported |
-| Creative metadata | [`AppsReportingCreative`](appsreportingcreative.md): includes `creativeSpec` and `destination` | [`BrandsReportingCreative`](brandsreportingcreative.md): includes `id`, `creativeType`, and `systemStatus` only |
+| Creative metadata | [`AppsReportingCreative`](./appsreportingcreative.md): includes `creativeSpec` and `destination` | [`BrandsReportingCreative`](./brandsreportingcreative.md): includes `id`, `creativeType`, and `systemStatus` only |
 | Location-level report | Not available | Not available |
 | Search term timezone | `ORTZ` only | `ORTZ` only |
 
@@ -85,23 +86,25 @@ The `options.includeRows` field controls which additional rows appear in the res
 
 ## See Also
 
-- [Insights Endpoints](insights-endpoints.md)
+### Related Documentation
+- [Insights Endpoints](./insights-endpoints.md)
   Query impression share and search term popularity data for your apps.
-- [Recommendations Endpoints](recommendations-endpoints.md)
+- [Recommendations Endpoints](./recommendations-endpoints.md)
   Query budget and Target CPA recommendations, then apply or dismiss them to adjust campaign spend and bids.
-- [Suggestions Endpoints](suggestions-endpoints.md)
+- [Suggestions Endpoints](./suggestions-endpoints.md)
   Discover keyword, phrase, category, and Target CPA suggestions to expand keywords and size bids.
-- [Change History Endpoints](change-history-endpoints.md)
+- [Change History Endpoints](./change-history-endpoints.md)
   Query audit summaries and retrieve change detail records for entities in an ad account.
-- [App Store Reports Endpoints](apps-reports-endpoints.md)
+### Reports
+- [App Store Reports Endpoints](./apps-reports-endpoints.md)
   Retrieve App Store performance metrics for campaigns, ad groups, ads, keywords, and search terms.
-- [Brands Reports Endpoints](brands-reports-endpoints.md)
+- [Brands Reports Endpoints](./brands-reports-endpoints.md)
   Retrieve performance data for Apple Maps campaigns, ad groups, ads, keywords, and search terms.
-- [Apps Data Objects](apps-reports-objects.md)
+- [Apps Data Objects](./apps-reports-objects.md)
   Request, response, and metadata objects for Apps report endpoints.
-- [Brands Data Objects](brands-reports-objects.md)
+- [Brands Data Objects](./brands-reports-objects.md)
   Explore the request, response, and metadata objects that Brands report endpoints use.
-- [Shared Objects](reports-shared-objects.md)
+- [Shared Objects](./reports-shared-objects.md)
   Define time ranges, filters, sorting, and pagination for report requests, and read the shared metrics in responses.
 
 

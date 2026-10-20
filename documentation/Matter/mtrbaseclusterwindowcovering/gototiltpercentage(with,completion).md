@@ -1,7 +1,8 @@
 # goToTiltPercentage(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func goToTiltPercentage(with params: MTRWindowCoveringClusterGoToTiltPercentageParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func goToTiltPercentage(with params: MTRWindowCoveringClusterGoToTiltPercentageParams) async throws
+```
+
+```objc
+- (void) goToTiltPercentageWithParams:(MTRWindowCoveringClusterGoToTiltPercentageParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

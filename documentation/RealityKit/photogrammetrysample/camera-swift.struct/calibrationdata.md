@@ -1,7 +1,8 @@
 # calibrationData
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calibration data (distortion parameters, etc) for this camera if available.
 

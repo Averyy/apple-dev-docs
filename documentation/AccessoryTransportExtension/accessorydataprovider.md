@@ -1,7 +1,8 @@
 # AccessoryDataProvider
 
 **Framework**: Accessory Transport Extension  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for an extension that receives iOS system notifications and curates their data for your accessory.
 
@@ -16,16 +17,16 @@ protocol AccessoryDataProvider : AppExtension, Sendable where Self.Configuration
 
 ## Mentions
 
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
-- [Forwarding notifications to your accessory using the internet transport type](forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
+- [Receiving iOS notifications on an accessory](./receiving-ios-notifications-on-an-accessory.md)
+- [Forwarding notifications to your accessory using the internet transport type](./forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
 #### Overview
 
-Implement this protocol in an extension with an `EXExtensionPointIdentifier` value of `com.apple.accessory-data-provider` to receive notification data for eventual forwarding to an accessory that you develop. The extension runs in a sandboxed environment and communicates with the system through the extension’s configuration object ([`AccessoryDataProviderConfiguration`](accessorydataproviderconfiguration.md)).
+Implement this protocol in an extension with an `EXExtensionPointIdentifier` value of `com.apple.accessory-data-provider` to receive notification data for eventual forwarding to an accessory that you develop. The extension runs in a sandboxed environment and communicates with the system through the extension’s configuration object ([`AccessoryDataProviderConfiguration`](./accessorydataproviderconfiguration.md)).
 
-> ❗ **Important**: The system requires your app extension to have the [`com.apple.developer.accessory-data-provider`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.accessory-data-provider) entitlement to use this protocol.
+> ❗ **Important**: The system requires your app extension to have the [`com.apple.developer.accessory-data-provider`](../BundleResources/entitlements/com.apple.developer.accessory-data-provider.md) entitlement to use this protocol.
 
-#### Add the Necessary Target Configuration
+#### Add the necessary target configuration
 
 In your extension’s target properties, include the `EXCapabilities` key with the value `AccessoryNotifications.NotificationsForwarding`:
 
@@ -45,9 +46,9 @@ In your extension’s target properties, include the `EXCapabilities` key with t
 </plist>
 ```
 
-#### Implement the Extension Point
+#### Implement the extension point
 
-In your extension’s Swift code, implement the protocol and declare the capability with your [`NotificationsForwarding.AccessoryNotificationsHandler`](https://developer.apple.com/documentation/accessorynotifications/notificationsforwarding/accessorynotificationshandler) implementation:
+In your extension’s Swift code, implement the protocol and declare the capability with your [`NotificationsForwarding.AccessoryNotificationsHandler`](../AccessoryNotifications/notificationsforwarding/accessorynotificationshandler.md) implementation:
 
 ```swift
 struct DataProvider: AccessoryDataProvider {
@@ -66,7 +67,7 @@ class MyNotificationsHandler: AccessoryNotificationsHandler {
 }
 ```
 
-#### Share Data Between the App and the Extension
+#### Share data between the app and the extension
 
 Configure a shared app group so your companion app can provide information to the extension. The extension has read-only access to the shared container. Use the shared container to store:
 
@@ -84,28 +85,29 @@ let sharedDefaults = UserDefaults(suiteName: "group.com.yourcompany.accessoryapp
 let authToken = sharedDefaults?.string(forKey: "ServerAuthToken")
 ```
 
-For more information, see [`Receiving iOS notifications on an accessory`](receiving-ios-notifications-on-an-accessory.md).
+For more information, see [Receiving iOS notifications on an accessory](./receiving-ios-notifications-on-an-accessory.md).
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+### Notification forwarding
+- [Receiving iOS notifications on an accessory](./receiving-ios-notifications-on-an-accessory.md)
   Create custom app extensions that manage iOS system notifications for your accessory.
-- [Forwarding notifications to your accessory using the internet transport type](forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
+- [Forwarding notifications to your accessory using the internet transport type](./forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
   Send notification data to your accessory over the internet when Bluetooth connectivity is unavailable.
-- [protocol AccessoryDataProviderConfiguration](accessorydataproviderconfiguration.md)
+- [protocol AccessoryDataProviderConfiguration](./accessorydataproviderconfiguration.md)
   A protocol that configures and manages communication between the extension and the system.
-- [protocol AccessoryTransportSecurity](accessorytransportsecurity.md)
+- [protocol AccessoryTransportSecurity](./accessorytransportsecurity.md)
   A protocol for an extension that handles cryptographic key exchange with your accessory.
-- [protocol AccessoryTransportSecurityConfiguration](accessorytransportsecurityconfiguration.md)
+- [protocol AccessoryTransportSecurityConfiguration](./accessorytransportsecurityconfiguration.md)
   A protocol that configures and manages communication between your security extension and the system.
-- [Accessory Notifications](../accessorynotifications/accessorynotifications.md)
+- [Accessory Notifications](../AccessoryNotifications/AccessoryNotifications.md)
   Receive forwarded iOS system notifications on an accessory that you develop.
 
 

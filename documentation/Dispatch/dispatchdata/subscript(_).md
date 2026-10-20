@@ -1,16 +1,17 @@
 # subscript(_:)
 
 **Framework**: Dispatch  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,8 +21,9 @@ subscript(index: DispatchData.Index) -> UInt8 { get }
 
 ## See Also
 
-- [func region(location: Int) -> (data: DispatchData, offset: Int)](dispatchdata/region(location:).md)
-- [DispatchData.Region](dispatchdata/region.md)
+### Accessing Buffer Data
+- [func region(location: Int) -> (data: DispatchData, offset: Int)](./region%28location%29.md)
+- [DispatchData.Region](./region.md)
 
 
 ---

@@ -1,17 +1,22 @@
 # types(filterableTo:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the data types that can be converted to the specified type using the available filter services.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func types(filterableTo type: NSPasteboard.PasteboardType) -> [NSPasteboard.PasteboardType]
+```
+
+```objc
++ (NSArray<NSString *> *) typesFilterableTo:(NSPasteboardType) type;
 ```
 
 #### Return Value
@@ -28,13 +33,14 @@ The array also contains the original type.
 
 ## See Also
 
-- [func availableType(from: [NSPasteboard.PasteboardType]) -> NSPasteboard.PasteboardType?](nspasteboard/availabletype(from:).md)
+### Validating contents
+- [func availableType(from: [NSPasteboard.PasteboardType]) -> NSPasteboard.PasteboardType?](./availabletype%28from%29.md)
   Scans the specified types for a type that the receiver supports.
-- [func canReadItem(withDataConformingToTypes: [String]) -> Bool](nspasteboard/canreaditem(withdataconformingtotypes:).md)
+- [func canReadItem(withDataConformingToTypes: [String]) -> Bool](./canreaditem%28withdataconformingtotypes%29.md)
   Returns a Boolean value that indicates whether the receiver contains any items that conform to the specified UTIs.
-- [func canReadObject(forClasses: [AnyClass], options: [NSPasteboard.ReadingOptionKey : Any]?) -> Bool](nspasteboard/canreadobject(forclasses:options:).md)
+- [func canReadObject(forClasses: [AnyClass], options: [NSPasteboard.ReadingOptionKey : Any]?) -> Bool](./canreadobject%28forclasses,options%29.md)
   Returns a Boolean value that indicates whether the receiver contains any items that can be represented as an instance of any class in a given array.
-- [var types: [NSPasteboard.PasteboardType]?](nspasteboard/types.md)
+- [var types: [NSPasteboard.PasteboardType]?](./types.md)
   An array of the receiver’s supported data types.
 
 

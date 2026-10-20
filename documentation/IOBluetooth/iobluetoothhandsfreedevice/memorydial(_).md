@@ -1,7 +1,8 @@
 # memoryDial(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the phone number stored in a speed dial or memory slot of the hands-free phone or headset.
 
@@ -14,15 +15,20 @@ Calls the phone number stored in a speed dial or memory slot of the hands-free p
 func memoryDial(_ memoryLocation: Int32)
 ```
 
+```objc
+- (void) memoryDial:(int) memoryLocation;
+```
+
 ## Parameters
 
 - `memoryLocation`: The speed dial or other memory index of a phone number.
 
 ## See Also
 
-- [func dialNumber(String!)](iobluetoothhandsfreedevice/dialnumber(_:).md)
+### Dialing Calls
+- [func dialNumber(String!)](./dialnumber%28_%29.md)
   Calls the phone number on a hands-free phone or headset.
-- [func redial()](iobluetoothhandsfreedevice/redial.md)
+- [func redial()](./redial%28%29.md)
   Calls the number stored on the hands-free phone or headset again.
 
 

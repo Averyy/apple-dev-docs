@@ -1,7 +1,8 @@
 # CHHapticError
 
 **Framework**: Core Haptics  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a framework error.
 
@@ -22,27 +23,28 @@ struct CHHapticError
 ## Topics
 
 ### Inspecting an Error
-- [static var errorDomain: String](chhapticerror/errordomain.md)
-- [CHHapticError.Code](chhapticerror/code.md)
+- [static var errorDomain: String](./chhapticerror/errordomain.md)
+- [CHHapticError.Code](./chhapticerror/code.md)
   Error codes for framework operations.
-- [Error Constants](error-constants.md)
+- [Error Constants](./error-constants.md)
   Error code constants for framework operations.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let CoreHapticsErrorDomain: String](corehapticserrordomain.md)
+### Haptic errors
+- [let CoreHapticsErrorDomain: String](./corehapticserrordomain.md)
   A string representation of the haptic error domain.
-- [CHHapticError.Code](chhapticerror/code.md)
+- [CHHapticError.Code](./chhapticerror/code.md)
   Error codes for framework operations.
 
 

@@ -1,7 +1,8 @@
 # touchState
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of the user’s touch on the surface of the touchpad.
 
@@ -19,11 +20,16 @@ The state of the user’s touch on the surface of the touchpad.
 var touchState: GCControllerTouchpad.TouchState { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GCTouchState touchState;
+```
+
 ## See Also
 
-- [GCControllerTouchpad.TouchState](gccontrollertouchpad/touchstate-swift.enum.md)
+### Accessing the input values
+- [GCControllerTouchpad.TouchState](./touchstate-swift.enum.md)
   The possible states of the user’s touch.
-- [var reportsAbsoluteTouchSurfaceValues: Bool](gccontrollertouchpad/reportsabsolutetouchsurfacevalues.md)
+- [var reportsAbsoluteTouchSurfaceValues: Bool](./reportsabsolutetouchsurfacevalues.md)
   A Boolean value that determines whether the touch values are absolute or relative.
 
 

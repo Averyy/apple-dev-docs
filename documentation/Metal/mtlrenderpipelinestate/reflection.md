@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The render pipeline’s reflection information, if available.
@@ -20,17 +21,21 @@ The render pipeline’s reflection information, if available.
 var reflection: MTLRenderPipelineReflection? { get }
 ```
 
+```objc
+@property (readonly, nullable) MTLRenderPipelineReflection * reflection;
+```
+
 #### Discussion
 
 The property is `nil` by default to help reduce your app’s memory footprint, but you can create reflection information when your app needs it.
 
-Create reflection information by building a pipeline from an [`MTL4Compiler`](mtl4compiler.md) instance with the following steps:
+Create reflection information by building a pipeline from an [`MTL4Compiler`](../mtl4compiler.md) instance with the following steps:
 
-1. Configure the [`shaderReflection`](mtl4pipelineoptions/shaderreflection.md) property of an [`MTL4PipelineOptions`](mtl4pipelineoptions.md) instance.
-2. Assign that instance to the [`options`](mtl4pipelinedescriptor/options.md) property of an [`MTL4PipelineDescriptor`](mtl4pipelinedescriptor.md) instance.
-3. Create a compute pipeline state by passing that pipeline descriptor to one of the [`MTL4Compiler`](mtl4compiler.md) instance’s methods.
+1. Configure the [`shaderReflection`](../mtl4pipelineoptions/shaderreflection.md) property of an [`MTL4PipelineOptions`](../mtl4pipelineoptions.md) instance.
+2. Assign that instance to the [`options`](../mtl4pipelinedescriptor/options.md) property of an [`MTL4PipelineDescriptor`](../mtl4pipelinedescriptor.md) instance.
+3. Create a compute pipeline state by passing that pipeline descriptor to one of the [`MTL4Compiler`](../mtl4compiler.md) instance’s methods.
 
-The property is `nil` when you create a pipeline state from an[`MTLDevice`](mtldevice.md) instance, such as with its [`makeRenderPipelineState(descriptor:)`](mtldevice/makerenderpipelinestate(descriptor:).md) method.
+The property is `nil` when you create a pipeline state from an[`MTLDevice`](../mtldevice.md) instance, such as with its [`makeRenderPipelineState(descriptor:)`](../mtldevice/makerenderpipelinestate%28descriptor%29.md) method.
 
 
 ---

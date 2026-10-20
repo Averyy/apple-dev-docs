@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Closes an item and releases associated cache resources.
@@ -12,7 +13,15 @@ Closes an item and releases associated cache resources.
 ## Declaration
 
 ```swift
+func close(_ item: FSItem, context: FSContext, replyHandler reply: @escaping @Sendable () -> Void)
+```
+
+```swift
 func close(_ item: FSItem, context: FSContext) async
+```
+
+```objc
+- (void) closeItem:(FSItem *) item context:(FSContext *) context replyHandler:(void (^)()) reply;
 ```
 
 #### Discussion
@@ -31,13 +40,14 @@ Your module receives this call once per item when all references are released an
 
 ## See Also
 
-- [func open(FSItem, modes: FSVolume.OpenModes, cacheMode: FSVolume.DataCacheMode, context: FSContext, replyHandler: (FSOpenItemResult?, (any Error)?) -> Void)](fsvolume/datacachehandler/open(_:modes:cachemode:context:replyhandler:).md)
+### Opening and closing items
+- [func open(FSItem, modes: FSVolume.OpenModes, cacheMode: FSVolume.DataCacheMode, context: FSContext, replyHandler: (FSOpenItemResult?, (any Error)?) -> Void)](./open%28_,modes,cachemode,context,replyhandler%29.md)
   Opens an item with cache mode negotiation.
-- [class FSOpenItemResult](fsopenitemresult.md)
+- [class FSOpenItemResult](../../fsopenitemresult.md)
   The result of an open-item call.
-- [FSVolume.DataCacheMode](fsvolume/datacachemode.md)
+- [FSVolume.DataCacheMode](../datacachemode.md)
   A type that defines the cache mode requested by the kernel for data operations.
-- [class FSContext](fscontext.md)
+- [class FSContext](../../fscontext.md)
   A context object that provides information about the initiator of a file system operation.
 
 

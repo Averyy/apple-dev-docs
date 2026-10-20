@@ -1,7 +1,8 @@
 # FaceGroupAnalyzer.Face
 
 **Framework**: Media Intelligence  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A face detected in an image asset.
 
@@ -21,50 +22,51 @@ struct Face
 
 ## Mentions
 
-- [Detecting and grouping faces in images](detecting-and-grouping-faces-in-images.md)
+- [Detecting and grouping faces in images](../detecting-and-grouping-faces-in-images.md)
 
 #### Overview
 
-This type represents a single face that [`FaceGroupAnalyzer`](facegroupanalyzer.md) detects in an image. It records the face’s location within the image, the identifier of the image it came from, and after [`update(subprogress:)`](facegroupanalyzer/update(subprogress:).md) runs, the entity the face belongs to.
+This type represents a single face that [`FaceGroupAnalyzer`](../facegroupanalyzer.md) detects in an image. It records the face’s location within the image, the identifier of the image it came from, and after [`update(subprogress:)`](./update%28subprogress%29.md) runs, the entity the face belongs to.
 
-The [`bounds`](facegroupanalyzer/face/bounds.md) rectangle uses normalized coordinates in the range `0.0` to `1.0` along both axes, with the origin at the top-left corner of the image.
+The [`bounds`](./face/bounds.md) rectangle uses normalized coordinates in the range `0.0` to `1.0` along both axes, with the origin at the top-left corner of the image.
 
 ## Topics
 
 ### Identifying a face
-- [let id: FaceGroupAnalyzer.Face.ID](facegroupanalyzer/face/id-swift.property.md)
+- [let id: FaceGroupAnalyzer.Face.ID](./face/id-swift.property.md)
   A unique identifier for the face.
-- [let entityID: FaceGroupAnalyzer.Entity.ID?](facegroupanalyzer/face/entityid.md)
+- [let entityID: FaceGroupAnalyzer.Entity.ID?](./face/entityid.md)
   An identifier for the entity this face belongs to.
-- [let assetID: MediaIntelligenceImageAsset.ID](facegroupanalyzer/face/assetid.md)
+- [let assetID: MediaIntelligenceImageAsset.ID](./face/assetid.md)
   An identifier for the image asset that contains this face.
-- [FaceGroupAnalyzer.Face.ID](facegroupanalyzer/face/id-swift.struct.md)
+- [FaceGroupAnalyzer.Face.ID](./face/id-swift.struct.md)
   A unique identifier for a detected face.
 ### Locating a face
-- [let bounds: CGRect](facegroupanalyzer/face/bounds.md)
+- [let bounds: CGRect](./face/bounds.md)
   A normalized rectangle describing the location of the face within its source image.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var allFaces: some AsyncSequence<FaceGroupAnalyzer.Face, any Error>](facegroupanalyzer/allfaces.md)
+### Retrieving faces and entities
+- [var allFaces: some AsyncSequence<FaceGroupAnalyzer.Face, any Error>](./allfaces.md)
   An async sequence of all faces in the analyzer.
-- [var allFacesByEntityID: some AsyncSequence<(entityID: FaceGroupAnalyzer.Entity.ID, faces: Array<FaceGroupAnalyzer.Face>), any Error>](facegroupanalyzer/allfacesbyentityid.md)
+- [var allFacesByEntityID: some AsyncSequence<(entityID: FaceGroupAnalyzer.Entity.ID, faces: Array<FaceGroupAnalyzer.Face>), any Error>](./allfacesbyentityid.md)
   An async sequence of all faces, grouped by entity.
-- [var allEntities: some AsyncSequence<FaceGroupAnalyzer.Entity, any Error>](facegroupanalyzer/allentities.md)
+- [var allEntities: some AsyncSequence<FaceGroupAnalyzer.Entity, any Error>](./allentities.md)
   An async sequence of all entities in the analyzer.
-- [var allAssetIDs: some AsyncSequence<MediaIntelligenceImageAsset.ID, any Error>](facegroupanalyzer/allassetids.md)
+- [var allAssetIDs: some AsyncSequence<MediaIntelligenceImageAsset.ID, any Error>](./allassetids.md)
   An async sequence of all asset identifiers in the analyzer.
-- [var allAssetIDsByEntityID: some AsyncSequence<(entityID: FaceGroupAnalyzer.Entity.ID, assetIDs: Array<MediaIntelligenceImageAsset.ID>), any Error>](facegroupanalyzer/allassetidsbyentityid.md)
+- [var allAssetIDsByEntityID: some AsyncSequence<(entityID: FaceGroupAnalyzer.Entity.ID, assetIDs: Array<MediaIntelligenceImageAsset.ID>), any Error>](./allassetidsbyentityid.md)
   An async sequence of all asset identifiers, grouped by entity.
-- [FaceGroupAnalyzer.Entity](facegroupanalyzer/entity.md)
+- [FaceGroupAnalyzer.Entity](./entity.md)
   A cluster of faces that belong to the same person.
 
 

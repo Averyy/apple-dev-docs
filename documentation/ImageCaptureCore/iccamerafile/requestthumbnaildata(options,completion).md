@@ -1,7 +1,8 @@
 # requestThumbnailData(options:completion:)
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests a thumbnail and executes the completion block in place of the delegate.
 
@@ -15,7 +16,15 @@ Requests a thumbnail and executes the completion block in place of the delegate.
 ## Declaration
 
 ```swift
+func requestThumbnailData(options: [ICCameraItemThumbnailOption : Any]? = nil, completion: @escaping @Sendable (Data?, (any Error)?) -> Void)
+```
+
+```swift
 func requestThumbnailData(options: [ICCameraItemThumbnailOption : Any]? = nil) async throws -> Data
+```
+
+```objc
+- (void) requestThumbnailDataWithOptions:(NSDictionary<NSString *,id> *) options completion:(void (^)(NSData *, NSError *)) completion;
 ```
 
 #### Discussion

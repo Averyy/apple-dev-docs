@@ -7,7 +7,7 @@ Outputs the given segment into the output segments array in big endian byte orde
 
 ## Declaration
 
-```swift
+```c
 static void outputSegment(
  PhysicalSegmentsegment, 
  void *segments, 
@@ -22,11 +22,12 @@ static void outputSegment(
 
 ## See Also
 
-- [getPhysicalSegments](iobigmemorycursor/1811632-getphysicalsegments.md)
+### Miscellaneous
+- [getPhysicalSegments](./api-1811632-getphysicalsegments.md)
   Generates a big endian physical scatter/gather list given a memory descriptor.
-- [initWithSpecification](iobigmemorycursor/1811657-initwithspecification.md)
+- [initWithSpecification](./api-1811657-initwithspecification.md)
   Primary initializer for the IOBigMemoryCursor class.
-- [withSpecification](iobigmemorycursor/1811699-withspecification.md)
+- [withSpecification](./api-1811699-withspecification.md)
   Creates and initializes an IOBigMemoryCursor in one operation.
 
 

@@ -1,19 +1,26 @@
 # shouldShowLinkedPeople
 
 **Framework**: Address Book UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the person view should display data from person records that are linked with the person record being displayed.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
+- iOS 4.0+ - Deprecated in 9.0
+- iPadOS 4.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use [`CNContactViewController`](../../ContactsUI/cncontactviewcontroller.md) instead.
 
 ## Declaration
 
 ```swift
 var shouldShowLinkedPeople: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL shouldShowLinkedPeople;
 ```
 
 #### Discussion
@@ -22,10 +29,11 @@ Linked records represent the same actual person. They often come from different 
 
 ## See Also
 
-- [var displayedPerson: ABRecord](abpersonviewcontroller/displayedperson.md)
+### Displaying Person Properties
+- [var displayedPerson: ABRecord](./displayedperson.md)
   The person displayed by the person view.
-- [var displayedProperties: [NSNumber]?](abpersonviewcontroller/displayedproperties.md)
-  Identifies the set of properties (such as name or telephone number) of [`displayedPerson`](abpersonviewcontroller/displayedperson.md) the receiver displays.
+- [var displayedProperties: [NSNumber]?](./displayedproperties.md)
+  Identifies the set of properties (such as name or telephone number) of [`displayedPerson`](./displayedperson.md) the receiver displays.
 
 
 ---

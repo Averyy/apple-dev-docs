@@ -1,7 +1,8 @@
 # init(shape:strides:contents:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a multidimensional shaped array from a one-dimensional array.
 

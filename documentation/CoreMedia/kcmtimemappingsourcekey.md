@@ -1,7 +1,8 @@
 # kCMTimeMappingSourceKey
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary key for a source time range.
 
@@ -20,11 +21,16 @@ A dictionary key for a source time range.
 let kCMTimeMappingSourceKey: CFString
 ```
 
+```c
+extern CFStringRef const kCMTimeMappingSourceKey;
+```
+
 ## See Also
 
-- [static let invalid: CMTimeMapping](cmtimemapping/invalid.md)
+### Constants
+- [static let invalid: CMTimeMapping](./cmtimemapping/invalid.md)
   An invalid time mapping.
-- [let kCMTimeMappingTargetKey: CFString](kcmtimemappingtargetkey.md)
+- [let kCMTimeMappingTargetKey: CFString](./kcmtimemappingtargetkey.md)
   A dictionary key for a target time range.
 
 

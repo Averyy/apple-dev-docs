@@ -1,6 +1,8 @@
 # Playing immersive media with AVKit
 
-**Framework**: AVKit
+**Framework**: AVKit  
+**Role**: Sample Code  
+**Download**: [PlayingImmersiveMediaWithAVKit.zip](https://docs-assets.developer.apple.com/published/f69a3f13c26a/PlayingImmersiveMediaWithAVKit.zip)
 
 Adopt the system playback interface to provide an immersive video watching experience.
 
@@ -10,21 +12,22 @@ Adopt the system playback interface to provide an immersive video watching exper
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC25 session 296: [`Support immersive video playback in visionOS apps`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/296).
+> **Note**: This sample code project is associated with WWDC25 session 296: [Support immersive video playback in visionOS apps](https://developer.apple.com/videos/play/wwdc2025/296).
 
 ## See Also
 
-- [Creating a multiview video playback experience in visionOS](creating-a-multiview-video-playback-experience-in-visionos.md)
+### Immersive and multiview media
+- [Creating a multiview video playback experience in visionOS](./creating-a-multiview-video-playback-experience-in-visionos.md)
   Build an interface that plays multiple videos simultaneously and handles transitions to different experience types gracefully.
-- [class AVExperienceController](avexperiencecontroller.md)
+- [class AVExperienceController](./avexperiencecontroller.md)
   An object that controls video experiences.
-- [class AVMultiviewManager](avmultiviewmanager.md)
+- [class AVMultiviewManager](./avmultiviewmanager.md)
   An object that manages viewing multiple videos at once.
-- [class AVGroupExperienceCoordinator](avgroupexperiencecoordinator.md)
+- [class AVGroupExperienceCoordinator](./avgroupexperiencecoordinator.md)
   An object that synchronizes viewing environment state across participants in a SharePlay session.
-- [class AVViewport](avviewport.md)
+- [class AVViewport](./avviewport.md)
   An object that provides configuration options for how the player displays content in different viewing contexts.
-- [class AVPortalViewport](avportalviewport.md)
+- [class AVPortalViewport](./avportalviewport.md)
   An object that defines the visual parameters for content displayed within a portal frame.
 
 

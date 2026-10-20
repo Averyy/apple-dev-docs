@@ -1,7 +1,8 @@
 # nonzeroBitCount
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bits equal to 1 in this value’s binary representation.
 

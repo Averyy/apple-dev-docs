@@ -1,7 +1,8 @@
 # nw_path_unsatisfied_reason_t
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 12.0+
@@ -18,28 +19,33 @@
 struct nw_path_unsatisfied_reason_t
 ```
 
+```c
+typedef enum { ... } nw_path_unsatisfied_reason_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(UInt32)](nw_path_unsatisfied_reason_t/init(_:).md)
-- [init(rawValue: UInt32)](nw_path_unsatisfied_reason_t/init(rawvalue:).md)
+- [init(UInt32)](./nw_path_unsatisfied_reason_t/init%28_%29.md)
+- [init(rawValue: UInt32)](./nw_path_unsatisfied_reason_t/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](nw_path_unsatisfied_reason_t/rawvalue.md)
+- [var rawValue: UInt32](./nw_path_unsatisfied_reason_t/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct nw_interface_radio_type_t](nw_interface_radio_type_t.md)
-- [struct nw_multipath_version_t](nw_multipath_version_t.md)
-- [struct nw_quic_stream_type_t](nw_quic_stream_type_t.md)
+### Structures
+- [struct nw_interface_radio_type_t](./nw_interface_radio_type_t.md)
+- [struct nw_multipath_version_t](./nw_multipath_version_t.md)
+- [struct nw_quic_stream_type_t](./nw_quic_stream_type_t.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # physicalMaximum
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The physical maximum for this element’s data.
 
@@ -18,7 +19,7 @@ var physicalMaximum: Int64?
 
 The physical maximum combines with the physical minimum to determine the shifting and scaling required to transform the raw report data into the actual value that has meaning for the device.
 
-See the HID specification for more details: [`https://www.usb.org/hid`](https://developer.apple.comhttps://www.usb.org/hid).
+See the HID specification for more details: [https://www.usb.org/hid](https://www.usb.org/hid).
 
 
 ---

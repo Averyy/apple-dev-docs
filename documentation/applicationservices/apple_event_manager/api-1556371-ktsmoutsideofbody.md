@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kTSMInsideOfActiveInputArea: Int](../coreservices/ktsminsideofactiveinputarea.md)
-- [var kTSMInsideOfBody: Int](../coreservices/ktsminsideofbody.md)
-- [var kTSMOutsideOfBody: Int](../coreservices/ktsmoutsideofbody.md)
+- [var kTSMInsideOfActiveInputArea: Int](../../coreservices/ktsminsideofactiveinputarea.md)
+- [var kTSMInsideOfBody: Int](../../coreservices/ktsminsideofbody.md)
+- [var kTSMOutsideOfBody: Int](../../coreservices/ktsmoutsideofbody.md)
 
 
 ---

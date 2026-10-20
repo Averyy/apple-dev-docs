@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 queue_chain_t fCommandChain;
 ```
 

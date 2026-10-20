@@ -1,7 +1,8 @@
 # xpc_connection_activate(_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Activates a new connection.
 
@@ -20,29 +21,34 @@ Activates a new connection.
 func xpc_connection_activate(_ connection: xpc_connection_t)
 ```
 
+```c
+extern void xpc_connection_activate(xpc_connection_t connection);
+```
+
 #### Discussion
 
-Connections start in an inactive state, so you must call [`xpc_connection_activate(_:)`](xpc_connection_activate(_:).md) on a connection before it will send or receive any messages.
+Connections start in an inactive state, so you must call [`xpc_connection_activate(_:)`](./xpc_connection_activate%28_%29.md) on a connection before it will send or receive any messages.
 
-Calling [`xpc_connection_activate(_:)`](xpc_connection_activate(_:).md) on an active connection has no effect. Releasing the last reference on an inactive connection that was created with a call to one of the `xpc_connection_create` functions is undefined.
+Calling [`xpc_connection_activate(_:)`](./xpc_connection_activate%28_%29.md) on an active connection has no effect. Releasing the last reference on an inactive connection that was created with a call to one of the `xpc_connection_create` functions is undefined.
 
-For backward compatibility reasons, [`xpc_connection_resume(_:)`](xpc_connection_resume(_:).md) on an inactive and not otherwise suspended XPC connection has the same effect as calling [`xpc_connection_activate(_:)`](xpc_connection_activate(_:).md). For new code, using [`xpc_connection_activate(_:)`](xpc_connection_activate(_:).md) is preferred.
+For backward compatibility reasons, [`xpc_connection_resume(_:)`](./xpc_connection_resume%28_%29.md) on an inactive and not otherwise suspended XPC connection has the same effect as calling [`xpc_connection_activate(_:)`](./xpc_connection_activate%28_%29.md). For new code, using [`xpc_connection_activate(_:)`](./xpc_connection_activate%28_%29.md) is preferred.
 
 ## See Also
 
-- [func xpc_main(xpc_connection_handler_t) -> Never](xpc_main(_:).md)
+### Life cycle
+- [func xpc_main(xpc_connection_handler_t) -> Never](./xpc_main%28_%29.md)
   Starts listening for incoming connections and processes them with the specified event handler.
-- [func xpc_connection_suspend(xpc_connection_t)](xpc_connection_suspend(_:).md)
+- [func xpc_connection_suspend(xpc_connection_t)](./xpc_connection_suspend%28_%29.md)
   Suspends the connection so the event handler block doesn’t fire and the connection doesn’t attempt to send any messages it has in its queue.
-- [func xpc_connection_resume(xpc_connection_t)](xpc_connection_resume(_:).md)
+- [func xpc_connection_resume(xpc_connection_t)](./xpc_connection_resume%28_%29.md)
   Resumes a suspended connection.
-- [func xpc_connection_cancel(xpc_connection_t)](xpc_connection_cancel(_:).md)
+- [func xpc_connection_cancel(xpc_connection_t)](./xpc_connection_cancel%28_%29.md)
   Cancels the connection and ensures that its event handler doesn’t fire again.
-- [func xpc_transaction_begin()](xpc_transaction_begin().md)
+- [func xpc_transaction_begin()](./xpc_transaction_begin%28%29.md)
   Informs the XPC runtime when a transaction begins, indicating that the service isn’t idle.
-- [func xpc_transaction_end()](xpc_transaction_end().md)
+- [func xpc_transaction_end()](./xpc_transaction_end%28%29.md)
   Informs the XPC runtime when a transaction ends.
-- [func xpc_connection_copy_invalidation_reason(xpc_connection_t) -> UnsafeMutablePointer<CChar>?](xpc_connection_copy_invalidation_reason(_:).md)
+- [func xpc_connection_copy_invalidation_reason(xpc_connection_t) -> UnsafeMutablePointer<CChar>?](./xpc_connection_copy_invalidation_reason%28_%29.md)
 
 
 ---

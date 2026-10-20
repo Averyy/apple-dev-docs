@@ -1,7 +1,8 @@
 # connection(_:didFailWithError:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent when a connection fails to load its request successfully.
 
@@ -18,6 +19,10 @@ Sent when a connection fails to load its request successfully.
 
 ```swift
 optional func connection(_ connection: NSURLConnection, didFailWithError error: any Error)
+```
+
+```objc
+- (void) connection:(NSURLConnection *) connection didFailWithError:(NSError *) error;
 ```
 
 #### Discussion

@@ -1,15 +1,16 @@
 # Rendering Arguments
 
-**Framework**: Quartz
+**Framework**: Quartz  
+**Role**: API Collection
 
-Arguments that you can pass to the [`render(atTime:arguments:)`](qcrenderer/render(attime:arguments:).md) method.
+Arguments that you can pass to the [`render(atTime:arguments:)`](./qcrenderer/render%28attime,arguments%29.md) method.
 
 ## Topics
 
 ### Constants
-- [let QCRendererEventKey: String](qcrenderereventkey.md)
+- [let QCRendererEventKey: String](./qcrenderereventkey.md)
   A key for a renderer event.
-- [let QCRendererMouseLocationKey: String](qcrenderermouselocationkey.md)
+- [let QCRendererMouseLocationKey: String](./qcrenderermouselocationkey.md)
   A key for the mouse location.
 
 

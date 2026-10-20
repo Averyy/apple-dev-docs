@@ -1,7 +1,8 @@
 # FSDataCacheError.Code.errorCacheInvalidationFailed
 
 **Framework**: FSKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Failed to invalidate (clear) cached data.
 
@@ -14,15 +15,20 @@ Failed to invalidate (clear) cached data.
 case errorCacheInvalidationFailed
 ```
 
+```c
+FSErrorCacheInvalidationFailed
+```
+
 ## See Also
 
-- [FSDataCacheError.Code.errorInvalidCacheModeCoherency](fsdatacacheerror/code/errorinvalidcachemodecoherency.md)
+### Error codes
+- [FSDataCacheError.Code.errorInvalidCacheModeCoherency](./errorinvalidcachemodecoherency.md)
   The requested cache mode and coherency type combination is invalid.
-- [FSDataCacheError.Code.errorInvalidCacheTransition](fsdatacacheerror/code/errorinvalidcachetransition.md)
+- [FSDataCacheError.Code.errorInvalidCacheTransition](./errorinvalidcachetransition.md)
   The cache transition is not allowed.
-- [FSDataCacheError.Code.errorCacheFlushFailed](fsdatacacheerror/code/errorcacheflushfailed.md)
+- [FSDataCacheError.Code.errorCacheFlushFailed](./errorcacheflushfailed.md)
   Failed to flush dirty cached data to storage.
-- [FSDataCacheError.Code.errorCacheOperationConflict](fsdatacacheerror/code/errorcacheoperationconflict.md)
+- [FSDataCacheError.Code.errorCacheOperationConflict](./errorcacheoperationconflict.md)
   A conflicting cache operation is in progress.
 
 

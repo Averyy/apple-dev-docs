@@ -1,7 +1,8 @@
 # preferredLocales
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns a list of the user’s preferred locales, as specified in Language & Region settings, taking into account any per-app language overrides.
 

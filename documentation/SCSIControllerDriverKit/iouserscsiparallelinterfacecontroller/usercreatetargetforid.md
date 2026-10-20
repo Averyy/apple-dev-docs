@@ -1,30 +1,31 @@
 # UserCreateTargetForID
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the specified target.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t UserCreateTargetForID(SCSIDeviceIdentifier targetID, OSDictionary *targetDict);
 ```
 
 #### Return Value
 
-A value that indicates the result of target creation. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+A value that indicates the result of target creation. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
 #### Discussion
 
 Your driver extension class calls this method to create a new target for the `targetID`. The framework creates the new target before the call returns.
 
-As part of the [`UserCreateTargetForID`](iouserscsiparallelinterfacecontroller/usercreatetargetforid.md) call, the kernel calls several APIs like [`UserInitializeTargetForID`](iouserscsiparallelinterfacecontroller/userinitializetargetforid.md) which run on the default dispatch queue of the dext. Synchronously calling [`UserCreateTargetForID`](iouserscsiparallelinterfacecontroller/usercreatetargetforid.md) from the default dispatch queue blocks the default dispatch queue until [`UserCreateTargetForID`](iouserscsiparallelinterfacecontroller/usercreatetargetforid.md) finishes. Subsequent calls from the kernel like [`UserInitializeTargetForID`](iouserscsiparallelinterfacecontroller/userinitializetargetforid.md) won’t have a chance to run on the default queue, leading to a deadlock.
+As part of the [`UserCreateTargetForID`](./usercreatetargetforid.md) call, the kernel calls several APIs like [`UserInitializeTargetForID`](./userinitializetargetforid.md) which run on the default dispatch queue of the dext. Synchronously calling [`UserCreateTargetForID`](./usercreatetargetforid.md) from the default dispatch queue blocks the default dispatch queue until [`UserCreateTargetForID`](./usercreatetargetforid.md) finishes. Subsequent calls from the kernel like [`UserInitializeTargetForID`](./userinitializetargetforid.md) won’t have a chance to run on the default queue, leading to a deadlock.
 
-You can avoid this problem by calling [`UserCreateTargetForID`](iouserscsiparallelinterfacecontroller/usercreatetargetforid.md) from an asynchronous handler function. Start by creating an async handler function for your custom dext class in its `iig` file, as shown below:
+You can avoid this problem by calling [`UserCreateTargetForID`](./usercreatetargetforid.md) from an asynchronous handler function. Start by creating an async handler function for your custom dext class in its `iig` file, as shown below:
 
 ```objc
 virtual void AsyncEventHandler ( OSAction *  action TARGET,                                 uint32_t    targetID ) = 0;
@@ -34,7 +35,7 @@ virtual void AsyncCreateTargetForID ( OSAction *  action,
                                     TYPE ( ExampleSCSIDext::AsyncEventHandler ) QUEUENAME ( AuxiliaryQueue );
 ```
 
-This handler function can then call [`UserCreateTargetForID`](iouserscsiparallelinterfacecontroller/usercreatetargetforid.md):
+This handler function can then call [`UserCreateTargetForID`](./usercreatetargetforid.md):
 
 ```objc
 void
@@ -47,7 +48,7 @@ IMPL ( MyCustomService, AsyncCreateTargetForID )
 }
 ```
 
-Then you can call this handler in [`UserStartController`](iouserscsiparallelinterfacecontroller/userstartcontroller.md):
+Then you can call this handler in [`UserStartController`](./userstartcontroller.md):
 
 ```objc
 kern_return_t
@@ -62,26 +63,27 @@ IMPL ( MyCustomService, UserStartController )
 }
 ```
 
-This implementation ensures [`UserStartController`](iouserscsiparallelinterfacecontroller/userstartcontroller.md) calls the event handler asynchronously, which frees up the default dispatch queue for subsequent calls.
+This implementation ensures [`UserStartController`](./userstartcontroller.md) calls the event handler asynchronously, which frees up the default dispatch queue for subsequent calls.
 
-> **Note**: The system calls this method on the queue named `AuxiliaryQueue` that your [`IOUserSCSIParallelInterfaceController`](iouserscsiparallelinterfacecontroller.md) creates.
+> **Note**: The system calls this method on the queue named `AuxiliaryQueue` that your [`IOUserSCSIParallelInterfaceController`](../iouserscsiparallelinterfacecontroller.md) creates.
 
 ## Parameters
 
 - `targetID`: The ID of the target to create.
-- `targetDict`: An [`OSDictionary`](https://developer.apple.com/documentation/driverkit/osdictionary) containing all of the target properties.
+- `targetDict`: An [`OSDictionary`](../../DriverKit/osdictionary.md) containing all of the target properties.
 
 ## See Also
 
-- [UserInitializeTargetForID](iouserscsiparallelinterfacecontroller/userinitializetargetforid.md)
+### Managing targets
+- [UserInitializeTargetForID](./userinitializetargetforid.md)
   Initializes a target device in response to a call from the framework.
-- [UserDestroyTargetForID](iouserscsiparallelinterfacecontroller/userdestroytargetforid.md)
+- [UserDestroyTargetForID](./userdestroytargetforid.md)
   Destroys the specified target.
-- [UserTargetPresentForID](iouserscsiparallelinterfacecontroller/usertargetpresentforid.md)
+- [UserTargetPresentForID](./usertargetpresentforid.md)
   Checks if a specific target is present.
-- [UserSetTargetProperties](iouserscsiparallelinterfacecontroller/usersettargetproperties.md)
+- [UserSetTargetProperties](./usersettargetproperties.md)
   Sets properties on the target.
-- [UserRemoveTargetProperties](iouserscsiparallelinterfacecontroller/userremovetargetproperties.md)
+- [UserRemoveTargetProperties](./userremovetargetproperties.md)
   Removes properties from a target.
 
 

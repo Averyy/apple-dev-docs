@@ -1,7 +1,8 @@
 # Clock
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A mechanism in which to measure time, and delay work until a given point in time.
 
@@ -31,40 +32,41 @@ For more information about specific clocks see `ContinuousClock` and `Suspending
 ## Topics
 
 ### Associated Types
-- [associatedtype Duration](clock/duration.md)
-- [associatedtype Instant : InstantProtocol](clock/instant.md)
+- [associatedtype Duration](./clock/duration.md)
+- [associatedtype Instant : InstantProtocol](./clock/instant.md)
 ### Instance Properties
-- [var minimumResolution: Self.Duration](clock/minimumresolution.md)
-- [var now: Self.Instant](clock/now.md)
+- [var minimumResolution: Self.Duration](./clock/minimumresolution.md)
+- [var now: Self.Instant](./clock/now.md)
 ### Instance Methods
-- [func measure(() throws -> Void) rethrows -> Self.Instant.Duration](clock/measure(_:)-2emvx.md)
+- [func measure(() throws -> Void) rethrows -> Self.Instant.Duration](./clock/measure%28_%29-2emvx.md)
   Measure the elapsed time to execute a closure.
-- [func measure(nonisolated(nonsending) () async throws -> Void) async rethrows -> Self.Instant.Duration](clock/measure(_:)-7l47m.md)
+- [func measure(nonisolated(nonsending) () async throws -> Void) async rethrows -> Self.Instant.Duration](./clock/measure%28_%29-7l47m.md)
   Measure the elapsed time to execute an asynchronous closure.
-- [func measure(isolation: isolated (any Actor)?, () async throws -> Void) async rethrows -> Self.Instant.Duration](clock/measure(isolation:_:).md)
-- [func sleep(for: Self.Instant.Duration, tolerance: Self.Instant.Duration?) async throws](clock/sleep(for:tolerance:).md)
+- [func measure(isolation: isolated (any Actor)?, () async throws -> Void) async rethrows -> Self.Instant.Duration](./clock/measure%28isolation,_%29.md)
+- [func sleep(for: Self.Instant.Duration, tolerance: Self.Instant.Duration?) async throws](./clock/sleep%28for,tolerance%29.md)
   Suspends for the given duration.
-- [func sleep(until: Self.Instant, tolerance: Self.Instant.Duration?) async throws](clock/sleep(until:tolerance:).md)
+- [func sleep(until: Self.Instant, tolerance: Self.Instant.Duration?) async throws](./clock/sleep%28until,tolerance%29.md)
 ### Type Properties
-- [static var continuous: ContinuousClock](clock/continuous.md)
+- [static var continuous: ContinuousClock](./clock/continuous.md)
   A clock that measures time that always increments but does not stop incrementing while the system is asleep.
-- [static var suspending: SuspendingClock](clock/suspending.md)
+- [static var suspending: SuspendingClock](./clock/suspending.md)
   A clock that measures time that always increments but stops incrementing while the system is asleep.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 ### Conforming Types
-- [ContinuousClock](continuousclock.md)
-- [SuspendingClock](suspendingclock.md)
+- [ContinuousClock](./continuousclock.md)
+- [SuspendingClock](./suspendingclock.md)
 
 ## See Also
 
-- [struct ContinuousClock](continuousclock.md)
+### Clocks
+- [struct ContinuousClock](./continuousclock.md)
   A clock that measures time that always increments and does not stop incrementing while the system is asleep.
-- [struct SuspendingClock](suspendingclock.md)
+- [struct SuspendingClock](./suspendingclock.md)
   A clock that measures time that always increments but stops incrementing while the system is asleep.
 
 

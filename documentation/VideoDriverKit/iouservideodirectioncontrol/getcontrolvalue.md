@@ -1,7 +1,8 @@
 # GetControlValue
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the current value of the control.
 
@@ -10,7 +11,7 @@ Gets the current value of the control.
 
 ## Declaration
 
-```swift
+```c
 bool GetControlValue();
 ```
 
@@ -20,7 +21,8 @@ The object’s work queue synchronizes access to the value.
 
 ## See Also
 
-- [SetControlValue](iouservideodirectioncontrol/setcontrolvalue.md)
+### Accessing the value
+- [SetControlValue](./setcontrolvalue.md)
   Sets the current control value.
 
 

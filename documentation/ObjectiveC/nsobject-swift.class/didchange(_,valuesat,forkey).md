@@ -1,23 +1,28 @@
 # didChange(_:valuesAt:forKey:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the observed object that the specified change has occurred on the indexes for a specified ordered to-many relationship.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func didChange(_ changeKind: NSKeyValueChange, valuesAt indexes: IndexSet, forKey key: String)
+```
+
+```objc
+- (void) didChange:(NSKeyValueChange) changeKind valuesAtIndexes:(NSIndexSet *) indexes forKey:(NSString *) key;
 ```
 
 #### Discussion
@@ -26,7 +31,7 @@ Use this method when implementing key-value-observing compliance manually.
 
 ##### Special Considerations
 
-You rarely need to override this method in subclasses, but if you do, be sure to call `super`. Calls to this method are always paired with a matching call to [`willChange(_:valuesAt:forKey:)`](nsobject-swift.class/willchange(_:valuesat:forkey:).md).
+You rarely need to override this method in subclasses, but if you do, be sure to call `super`. Calls to this method are always paired with a matching call to [`willChange(_:valuesAt:forKey:)`](./willchange%28_,valuesat,forkey%29.md).
 
 ## Parameters
 
@@ -36,15 +41,16 @@ You rarely need to override this method in subclasses, but if you do, be sure to
 
 ## See Also
 
-- [func willChangeValue(forKey: String)](nsobject-swift.class/willchangevalue(forkey:).md)
+### Notifying Observers of Changes
+- [func willChangeValue(forKey: String)](./willchangevalue%28forkey%29.md)
   Informs the observed object that the value of a given property is about to change.
-- [func didChangeValue(forKey: String)](nsobject-swift.class/didchangevalue(forkey:).md)
+- [func didChangeValue(forKey: String)](./didchangevalue%28forkey%29.md)
   Informs the observed object that the value of a given property has changed.
-- [func willChange(NSKeyValueChange, valuesAt: IndexSet, forKey: String)](nsobject-swift.class/willchange(_:valuesat:forkey:).md)
+- [func willChange(NSKeyValueChange, valuesAt: IndexSet, forKey: String)](./willchange%28_,valuesat,forkey%29.md)
   Informs the observed object that the specified change is about to be executed at given indexes for a specified ordered to-many relationship.
-- [func willChangeValue(forKey: String, withSetMutation: NSKeyValueSetMutationKind, using: Set<AnyHashable>)](nsobject-swift.class/willchangevalue(forkey:withsetmutation:using:).md)
+- [func willChangeValue(forKey: String, withSetMutation: NSKeyValueSetMutationKind, using: Set<AnyHashable>)](./willchangevalue%28forkey,withsetmutation,using%29.md)
   Informs the observed object that the specified change is about to be made to a specified unordered to-many relationship.
-- [func didChangeValue(forKey: String, withSetMutation: NSKeyValueSetMutationKind, using: Set<AnyHashable>)](nsobject-swift.class/didchangevalue(forkey:withsetmutation:using:).md)
+- [func didChangeValue(forKey: String, withSetMutation: NSKeyValueSetMutationKind, using: Set<AnyHashable>)](./didchangevalue%28forkey,withsetmutation,using%29.md)
   Informs the observed object that the specified change was made to a specified unordered to-many relationship.
 
 

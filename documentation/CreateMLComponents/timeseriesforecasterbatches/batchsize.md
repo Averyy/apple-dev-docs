@@ -1,7 +1,8 @@
 # batchSize
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The batch size.
 
@@ -22,15 +23,16 @@ let batchSize: Int
 
 ## See Also
 
-- [let annotations: MLShapedArray<Scalar>](timeseriesforecasterbatches/annotations.md)
+### Inspecting a time series forecaster batch
+- [let annotations: MLShapedArray<Scalar>](./annotations.md)
   The original annotations.
-- [let features: MLShapedArray<Scalar>](timeseriesforecasterbatches/features.md)
+- [let features: MLShapedArray<Scalar>](./features.md)
   The original features.
-- [let forecastWindowSize: Int](timeseriesforecasterbatches/forecastwindowsize.md)
+- [let forecastWindowSize: Int](./forecastwindowsize.md)
   The prediction sample count.
-- [let inputWindowSize: Int](timeseriesforecasterbatches/inputwindowsize.md)
+- [let inputWindowSize: Int](./inputwindowsize.md)
   The input sample count.
-- [var shufflesBatches: Bool](timeseriesforecasterbatches/shufflesbatches.md)
+- [var shufflesBatches: Bool](./shufflesbatches.md)
   A Boolean value indicating whether to shuffle the batches.
 
 

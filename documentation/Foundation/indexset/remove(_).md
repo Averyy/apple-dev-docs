@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove an integer from the `IndexSet`.
 
@@ -23,11 +24,12 @@ mutating func remove(_ integer: IndexSet.Element) -> IndexSet.Element?
 
 ## See Also
 
-- [func remove(integersIn: Range<IndexSet.Element>)](indexset/remove(integersin:)-7dhfw.md)
+### Removing Elements
+- [func remove(integersIn: Range<IndexSet.Element>)](./remove%28integersin%29-7dhfw.md)
   Remove a range of integers from the `IndexSet`.
-- [func remove(integersIn: ClosedRange<IndexSet.Element>)](indexset/remove(integersin:)-54370.md)
+- [func remove(integersIn: ClosedRange<IndexSet.Element>)](./remove%28integersin%29-54370.md)
   Remove a range of integers from the `IndexSet`.
-- [func removeAll()](indexset/removeall.md)
+- [func removeAll()](./removeall%28%29.md)
   Remove all values from the `IndexSet`.
 
 

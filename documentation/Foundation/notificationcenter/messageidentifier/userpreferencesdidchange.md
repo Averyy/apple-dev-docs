@@ -1,7 +1,8 @@
 # userPreferencesDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.4+
@@ -16,6 +17,8 @@
 ```swift
 static var userPreferencesDidChange: NotificationCenter.BaseMessageIdentifier<HKHealthStore.HKUserPreferencesDidChangeMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<HKHealthStore.HKUserPreferencesDidChangeMessage>`.
 
 
 ---

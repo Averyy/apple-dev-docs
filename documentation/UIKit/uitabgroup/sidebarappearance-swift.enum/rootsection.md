@@ -1,7 +1,8 @@
 # UITabGroup.SidebarAppearance.rootSection
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Displays the group and its children as a top-level group of the sidebar.
 
@@ -15,6 +16,10 @@ Displays the group and its children as a top-level group of the sidebar.
 
 ```swift
 case rootSection
+```
+
+```c
+UITabGroupSidebarAppearanceRootSection
 ```
 
 

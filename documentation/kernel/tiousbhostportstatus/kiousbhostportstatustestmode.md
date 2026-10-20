@@ -1,7 +1,8 @@
 # kIOUSBHostPortStatusTestMode
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The test mode status.
 
@@ -10,7 +11,7 @@ The test mode status.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHostPortStatusTestMode = IOUSBHostFamilyBit(15)
 ```
 

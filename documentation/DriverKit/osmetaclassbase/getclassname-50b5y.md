@@ -1,19 +1,20 @@
 # GetClassName
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the name of the class given an OSObject pointer.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 const char * GetClassName();
 ```
 
@@ -23,10 +24,11 @@ C-string class name, valid while the object is retained.
 
 ## See Also
 
-- [IsRemote](osmetaclassbase/isremote.md)
-- [GetClass](osmetaclassbase/getclass.md)
+### Getting Meta Information
+- [IsRemote](./isremote.md)
+- [GetClass](./getclass.md)
   Internal helper for GetClassName. Not to be called directly.
-- [getMetaClass](osmetaclassbase/getmetaclass.md)
+- [getMetaClass](./getmetaclass.md)
   Internal helper for GetClassName. Not to be called directly.
 
 

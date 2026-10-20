@@ -1,7 +1,8 @@
 # resumeRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command ResumeRequest
 
@@ -17,7 +18,15 @@ Command ResumeRequest
 ## Declaration
 
 ```swift
+func resumeRequest(with params: MTRDeviceEnergyManagementClusterResumeRequestParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func resumeRequest(with params: MTRDeviceEnergyManagementClusterResumeRequestParams?) async throws
+```
+
+```objc
+- (void) resumeRequestWithParams:(MTRDeviceEnergyManagementClusterResumeRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

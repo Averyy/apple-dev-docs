@@ -1,7 +1,8 @@
 # SecurityMessage.KeyType.encapsulatedKey
 
 **Framework**: Accessory Transport Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An encapsulated key, sent from the host to the accessory.
 
@@ -16,12 +17,13 @@ case encapsulatedKey
 
 ## Mentions
 
-- [Forwarding notifications to your accessory using the internet transport type](forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+- [Forwarding notifications to your accessory using the internet transport type](../../forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
+- [Receiving iOS notifications on an accessory](../../receiving-ios-notifications-on-an-accessory.md)
 
 ## See Also
 
-- [SecurityMessage.KeyType.publicKey](securitymessage/keytype-swift.enum/publickey.md)
+### Identifying key types
+- [SecurityMessage.KeyType.publicKey](./publickey.md)
   A public key, sent from the accessory to the host.
 
 

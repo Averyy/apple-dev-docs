@@ -1,7 +1,8 @@
 # tableView(_:dropSessionDidExit:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate when dragged content exits the table view’s bounds rectangle.
 
@@ -17,11 +18,15 @@ Notifies the delegate when dragged content exits the table view’s bounds recta
 optional func tableView(_ tableView: UITableView, dropSessionDidExit session: any UIDropSession)
 ```
 
+```objc
+- (void) tableView:(UITableView *) tableView dropSessionDidExit:(id<UIDropSession>) session;
+```
+
 #### Discussion
 
-The table view calls this method when dragged content exits its bounds rectangle. This method isn’t called again until the dragged content enters the table view’s bounds (triggering a call to the [`tableView(_:dropSessionDidEnter:)`](uitableviewdropdelegate/tableview(_:dropsessiondidenter:).md) method) and exits again.
+The table view calls this method when dragged content exits its bounds rectangle. This method isn’t called again until the dragged content enters the table view’s bounds (triggering a call to the [`tableView(_:dropSessionDidEnter:)`](./tableview%28_,dropsessiondidenter%29.md) method) and exits again.
 
-Use this method to clean up any state information that you configured in your [`tableView(_:dropSessionDidEnter:)`](uitableviewdropdelegate/tableview(_:dropsessiondidenter:).md) method.
+Use this method to clean up any state information that you configured in your [`tableView(_:dropSessionDidEnter:)`](./tableview%28_,dropsessiondidenter%29.md) method.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ Use this method to clean up any state information that you configured in your [`
 
 ## See Also
 
-- [func tableView(UITableView, dropSessionDidUpdate: any UIDropSession, withDestinationIndexPath: IndexPath?) -> UITableViewDropProposal](uitableviewdropdelegate/tableview(_:dropsessiondidupdate:withdestinationindexpath:).md)
+### Tracking the drag movements
+- [func tableView(UITableView, dropSessionDidUpdate: any UIDropSession, withDestinationIndexPath: IndexPath?) -> UITableViewDropProposal](./tableview%28_,dropsessiondidupdate,withdestinationindexpath%29.md)
   Proposes how to handle a drop at the specified location in the table view.
-- [func tableView(UITableView, dropSessionDidEnter: any UIDropSession)](uitableviewdropdelegate/tableview(_:dropsessiondidenter:).md)
+- [func tableView(UITableView, dropSessionDidEnter: any UIDropSession)](./tableview%28_,dropsessiondidenter%29.md)
   Notifies the delegate when dragged content enters the table view’s bounds rectangle.
-- [func tableView(UITableView, dropSessionDidEnd: any UIDropSession)](uitableviewdropdelegate/tableview(_:dropsessiondidend:).md)
+- [func tableView(UITableView, dropSessionDidEnd: any UIDropSession)](./tableview%28_,dropsessiondidend%29.md)
   Notifies the delegate when the drag operation ends.
 
 

@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL to a video on disk.
 
@@ -16,7 +17,8 @@ var url: URL
 
 ## See Also
 
-- [var date: Date?](journalingsuggestion/video/date.md)
+### Accessing video data
+- [var date: Date?](./date.md)
   The video’s creation date.
 
 

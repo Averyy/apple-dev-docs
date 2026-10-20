@@ -1,7 +1,8 @@
 # flatMapError(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new result, mapping any failure value using the given transformation and unwrapping the produced result.
 
@@ -20,6 +21,8 @@ Returns a new result, mapping any failure value using the given transformation a
 consuming func flatMapError<NewFailure>(_ transform: (Failure) -> Result<Success, NewFailure>) -> Result<Success, NewFailure> where NewFailure : Error
 ```
 
+Available when `Failure` conforms to `Error`.
+
 #### Return Value
 
 A `Result` instance, either from the closure or the previous `.success`.
@@ -30,11 +33,12 @@ A `Result` instance, either from the closure or the previous `.success`.
 
 ## See Also
 
-- [func map<NewSuccess>((Success) -> NewSuccess) -> Result<NewSuccess, Failure>](result/map(_:).md)
+### Transforming a Result
+- [func map<NewSuccess>((Success) -> NewSuccess) -> Result<NewSuccess, Failure>](./map%28_%29.md)
   Returns a new result, mapping any success value using the given transformation.
-- [func mapError<NewFailure>((Failure) -> NewFailure) -> Result<Success, NewFailure>](result/maperror(_:).md)
+- [func mapError<NewFailure>((Failure) -> NewFailure) -> Result<Success, NewFailure>](./maperror%28_%29.md)
   Returns a new result, mapping any failure value using the given transformation.
-- [func flatMap<NewSuccess>((Success) -> Result<NewSuccess, Failure>) -> Result<NewSuccess, Failure>](result/flatmap(_:).md)
+- [func flatMap<NewSuccess>((Success) -> Result<NewSuccess, Failure>) -> Result<NewSuccess, Failure>](./flatmap%28_%29.md)
   Returns a new result, mapping any success value using the given transformation and unwrapping the produced result.
 
 

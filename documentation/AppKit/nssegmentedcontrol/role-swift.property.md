@@ -1,7 +1,8 @@
 # role
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 27.0+
@@ -12,17 +13,22 @@
 var role: NSSegmentedControl.Role { get set }
 ```
 
+```objc
+@property NSSegmentedControlRole role;
+```
+
 ## See Also
 
-- [var trackingMode: NSSegmentedControl.SwitchTracking](nssegmentedcontrol/trackingmode.md)
+### Specifying the segment behavior
+- [var trackingMode: NSSegmentedControl.SwitchTracking](./trackingmode.md)
   The type of tracking behavior the control exhibits.
-- [NSSegmentedControl.SwitchTracking](nssegmentedcontrol/switchtracking.md)
+- [NSSegmentedControl.SwitchTracking](./switchtracking.md)
   Constants that specify the type of tracking behavior a segmented control exhibits.
-- [var segmentStyle: NSSegmentedControl.Style](nssegmentedcontrol/segmentstyle.md)
+- [var segmentStyle: NSSegmentedControl.Style](./segmentstyle.md)
   The visual style used to display the control.
-- [NSSegmentedControl.Style](nssegmentedcontrol/style.md)
-  The following constants specify the visual style used to display the segmented control. They are used by [`segmentStyle`](nssegmentedcontrol/segmentstyle.md).
-- [NSSegmentedControl.Role](nssegmentedcontrol/role-swift.enum.md)
+- [NSSegmentedControl.Style](./style.md)
+  The following constants specify the visual style used to display the segmented control. They are used by [`segmentStyle`](./segmentstyle.md).
+- [NSSegmentedControl.Role](./role-swift.enum.md)
 
 
 ---

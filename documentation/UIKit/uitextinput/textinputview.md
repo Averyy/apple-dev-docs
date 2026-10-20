@@ -1,7 +1,8 @@
 # textInputView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An affiliated view that provides a coordinate system for all geometric values in the protocol.
 
@@ -9,7 +10,7 @@ An affiliated view that provides a coordinate system for all geometric values in
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ An affiliated view that provides a coordinate system for all geometric values in
 optional var textInputView: UIView { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIView * textInputView;
+```
+
 #### Discussion
 
-The view that both draws the text and provides a coordinate system for all geometric values in this protocol. (This is typically an instance of the [`UITextInput`](uitextinput.md)-adopting class.) If this property is unimplemented, the first view in the responder chain is selected.
+The view that both draws the text and provides a coordinate system for all geometric values in this protocol. (This is typically an instance of the [`UITextInput`](../uitextinput.md)-adopting class.) If this property is unimplemented, the first view in the responder chain is selected.
 
 
 ---

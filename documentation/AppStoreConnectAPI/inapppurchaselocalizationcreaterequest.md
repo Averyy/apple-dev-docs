@@ -1,23 +1,26 @@
 # InAppPurchaseLocalizationCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an In-App Purchase localization.
 
 **Availability**:
-- App Store Connect API 2.0+
+- App Store Connect API 2.0+ - Deprecated in 4.4.1
+
+> **Deprecated**: This object is deprecated. Use [`InAppPurchaseLocalizationV2CreateRequest`](./inapppurchaselocalizationv2createrequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseLocalizationCreateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseLocalizationCreateRequest.Data](inapppurchaselocalizationcreaterequest/data-data.dictionary.md)
+- [object InAppPurchaseLocalizationCreateRequest.Data](./inapppurchaselocalizationcreaterequest/data-data.dictionary.md)
   The request body you use to create an In-App Purchase localization.
 
 ## Properties
@@ -26,15 +29,16 @@ object InAppPurchaseLocalizationCreateRequest
 
 ## See Also
 
-- [object InAppPurchaseContentResponse](inapppurchasecontentresponse.md)
+### Objects
+- [object InAppPurchaseContentResponse](./inapppurchasecontentresponse.md)
   A response containing a single hosted content record for an In-App Purchase.
-- [object InAppPurchaseContent](inapppurchasecontent.md)
+- [object InAppPurchaseContent](./inapppurchasecontent.md)
   Hosted downloadable content associated with a non-consumable In-App Purchase.
-- [object InAppPurchaseLocalizationUpdateRequest](inapppurchaselocalizationupdaterequest.md)
+- [object InAppPurchaseLocalizationUpdateRequest](./inapppurchaselocalizationupdaterequest.md)
   The request body you use to update an In-App Purchase localization update request.
-- [object InAppPurchaseLocalizationsResponse](inapppurchaselocalizationsresponse.md)
+- [object InAppPurchaseLocalizationsResponse](./inapppurchaselocalizationsresponse.md)
   The response body for endpoints that list localizations for an In-App Purchase.
-- [object InAppPurchaseLocalization](inapppurchaselocalization.md)
+- [object InAppPurchaseLocalization](./inapppurchaselocalization.md)
   The localized display name and description for an In-App Purchase shown to customers in a specific language.
 
 

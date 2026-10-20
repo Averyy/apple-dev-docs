@@ -1,7 +1,8 @@
 # motionEffects
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of motion effects for the view.
 
@@ -9,7 +10,7 @@ The array of motion effects for the view.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ The array of motion effects for the view.
 var motionEffects: [UIMotionEffect] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<__kindof UIMotionEffect *> * motionEffects;
+```
+
 ## See Also
 
-- [func addMotionEffect(UIMotionEffect)](uiview/addmotioneffect(_:).md)
+### Using motion effects
+- [func addMotionEffect(UIMotionEffect)](./addmotioneffect%28_%29.md)
   Begins applying a motion effect to the view.
-- [func removeMotionEffect(UIMotionEffect)](uiview/removemotioneffect(_:).md)
+- [func removeMotionEffect(UIMotionEffect)](./removemotioneffect%28_%29.md)
   Stops applying a motion effect to the view.
 
 

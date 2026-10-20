@@ -1,21 +1,26 @@
 # UIForceTouchCapability
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Keys that indicate the availability of 3D Touch on a device.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 enum UIForceTouchCapability
+```
+
+```c
+enum UIForceTouchCapability : NSInteger;
 ```
 
 #### Overview
@@ -25,28 +30,29 @@ Only certain devices support 3D Touch. On those that do, the user can disable 3D
 ## Topics
 
 ### Availability options
-- [UIForceTouchCapability.unknown](uiforcetouchcapability/unknown.md)
+- [UIForceTouchCapability.unknown](./uiforcetouchcapability/unknown.md)
   The availability of 3D Touch is unknown.
-- [UIForceTouchCapability.available](uiforcetouchcapability/available.md)
+- [UIForceTouchCapability.available](./uiforcetouchcapability/available.md)
   3D Touch is available on the device.
-- [UIForceTouchCapability.unavailable](uiforcetouchcapability/unavailable.md)
+- [UIForceTouchCapability.unavailable](./uiforcetouchcapability/unavailable.md)
   3D Touch isn’t available on the device.
 ### Initializers
-- [init?(rawValue: Int)](uiforcetouchcapability/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uiforcetouchcapability/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var forceTouchCapability: UIForceTouchCapability](uitraitcollection/forcetouchcapability.md)
+### Retrieving the force touch capability traits
+- [var forceTouchCapability: UIForceTouchCapability](./uitraitcollection/forcetouchcapability.md)
   The force touch capability value of the trait collection.
 
 

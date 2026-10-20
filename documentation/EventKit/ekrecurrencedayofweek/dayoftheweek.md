@@ -1,7 +1,8 @@
 # dayOfTheWeek
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The day of the week.
 
@@ -19,14 +20,20 @@ The day of the week.
 var dayOfTheWeek: EKWeekday { get }
 ```
 
+```objc
+@property (nonatomic, readonly) EKWeekday dayOfTheWeek;
+```
+
 #### Discussion
 
 Values are from `1` to `7`, with Sunday being `1`.
 
 ## See Also
 
-- [Calendar and Reminders Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009765)
-- [var weekNumber: Int](ekrecurrencedayofweek/weeknumber.md)
+### Related Documentation
+- [Calendar and Reminders Programming Guide](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009765)
+### Accessing Properties of a Day of the Week
+- [var weekNumber: Int](./weeknumber.md)
   The week number of the day of the week.
 
 

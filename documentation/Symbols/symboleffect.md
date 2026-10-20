@@ -1,7 +1,8 @@
 # SymbolEffect
 
 **Framework**: Symbols  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A presentation effect that you apply to a symbol-based image.
 
@@ -23,71 +24,72 @@ protocol SymbolEffect : Hashable, Sendable
 ## Topics
 
 ### Effects
-- [static var appear: AppearSymbolEffect](symboleffect/appear.md)
+- [static var appear: AppearSymbolEffect](./symboleffect/appear.md)
   An animation that makes the layers of a symbol-based image appear separately or as a whole.
-- [static var bounce: BounceSymbolEffect](symboleffect/bounce.md)
+- [static var bounce: BounceSymbolEffect](./symboleffect/bounce.md)
   An animation that applies a transitory scaling effect, or bounce, to the layers in a symbol-based image separately or as a whole.
-- [static var disappear: DisappearSymbolEffect](symboleffect/disappear.md)
+- [static var disappear: DisappearSymbolEffect](./symboleffect/disappear.md)
   An animation that makes the layers of a symbol-based image disappear separately or as a whole.
-- [static var pulse: PulseSymbolEffect](symboleffect/pulse.md)
+- [static var pulse: PulseSymbolEffect](./symboleffect/pulse.md)
   An animation that fades the opacity of some or all layers in a symbol-based image.
-- [static var scale: ScaleSymbolEffect](symboleffect/scale.md)
+- [static var scale: ScaleSymbolEffect](./symboleffect/scale.md)
   An animation that scales the layers in a symbol-based image separately or as a whole.
-- [static var variableColor: VariableColorSymbolEffect](symboleffect/variablecolor.md)
+- [static var variableColor: VariableColorSymbolEffect](./symboleffect/variablecolor.md)
   An animation that replaces the opacity of variable layers in a symbol-based image in a repeatable sequence.
-- [static var breathe: BreatheSymbolEffect](symboleffect/breathe.md)
+- [static var breathe: BreatheSymbolEffect](./symboleffect/breathe.md)
   A symbol effect that applies the Breathe animation to symbol images.
-- [static var rotate: RotateSymbolEffect](symboleffect/rotate.md)
+- [static var rotate: RotateSymbolEffect](./symboleffect/rotate.md)
   A symbol effect that applies the Rotate animation to symbol images.
-- [static var wiggle: WiggleSymbolEffect](symboleffect/wiggle.md)
+- [static var wiggle: WiggleSymbolEffect](./symboleffect/wiggle.md)
   A symbol effect that applies the Wiggle animation to symbol images.
 ### Accessing the configuration
-- [var configuration: SymbolEffectConfiguration](symboleffect/configuration.md)
+- [var configuration: SymbolEffectConfiguration](./symboleffect/configuration.md)
   A configuration for a symbol effect.
-- [struct SymbolEffectConfiguration](symboleffectconfiguration.md)
+- [struct SymbolEffectConfiguration](./symboleffectconfiguration.md)
   A type that specifies the configuration of a symbol effect.
 ### Type Properties
-- [static var automatic: AutomaticSymbolEffect](symboleffect/automatic.md)
+- [static var automatic: AutomaticSymbolEffect](./symboleffect/automatic.md)
   A transition that applies the default animation to a symbol-based image in a context-sensitive manner.
-- [static var drawOff: DrawOffSymbolEffect](symboleffect/drawoff.md)
+- [static var drawOff: DrawOffSymbolEffect](./symboleffect/drawoff.md)
   A symbol effect that applies the DrawOff animation to symbol images.
-- [static var drawOn: DrawOnSymbolEffect](symboleffect/drawon.md)
+- [static var drawOn: DrawOnSymbolEffect](./symboleffect/drawon.md)
   A symbol effect that applies the DrawOn animation to symbol images.
-- [static var replace: ReplaceSymbolEffect](symboleffect/replace.md)
+- [static var replace: ReplaceSymbolEffect](./symboleffect/replace.md)
   An animation that replaces the layers of one symbol-based image with those of another.
 
 ## Relationships
 
 ### Inherits From
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [AppearSymbolEffect](appearsymboleffect.md)
-- [AutomaticSymbolEffect](automaticsymboleffect.md)
-- [BounceSymbolEffect](bouncesymboleffect.md)
-- [BreatheSymbolEffect](breathesymboleffect.md)
-- [DisappearSymbolEffect](disappearsymboleffect.md)
-- [DrawOffSymbolEffect](drawoffsymboleffect.md)
-- [DrawOnSymbolEffect](drawonsymboleffect.md)
-- [PulseSymbolEffect](pulsesymboleffect.md)
-- [ReplaceSymbolEffect](replacesymboleffect.md)
-- [ReplaceSymbolEffect.MagicReplace](replacesymboleffect/magicreplace.md)
-- [RotateSymbolEffect](rotatesymboleffect.md)
-- [ScaleSymbolEffect](scalesymboleffect.md)
-- [VariableColorSymbolEffect](variablecolorsymboleffect.md)
-- [WiggleSymbolEffect](wigglesymboleffect.md)
+- [AppearSymbolEffect](./appearsymboleffect.md)
+- [AutomaticSymbolEffect](./automaticsymboleffect.md)
+- [BounceSymbolEffect](./bouncesymboleffect.md)
+- [BreatheSymbolEffect](./breathesymboleffect.md)
+- [DisappearSymbolEffect](./disappearsymboleffect.md)
+- [DrawOffSymbolEffect](./drawoffsymboleffect.md)
+- [DrawOnSymbolEffect](./drawonsymboleffect.md)
+- [PulseSymbolEffect](./pulsesymboleffect.md)
+- [ReplaceSymbolEffect](./replacesymboleffect.md)
+- [ReplaceSymbolEffect.MagicReplace](./replacesymboleffect/magicreplace.md)
+- [RotateSymbolEffect](./rotatesymboleffect.md)
+- [ScaleSymbolEffect](./scalesymboleffect.md)
+- [VariableColorSymbolEffect](./variablecolorsymboleffect.md)
+- [WiggleSymbolEffect](./wigglesymboleffect.md)
 
 ## See Also
 
-- [protocol DiscreteSymbolEffect](discretesymboleffect.md)
+### Symbol effect protocols
+- [protocol DiscreteSymbolEffect](./discretesymboleffect.md)
   An effect that performs a transient animation.
-- [protocol IndefiniteSymbolEffect](indefinitesymboleffect.md)
+- [protocol IndefiniteSymbolEffect](./indefinitesymboleffect.md)
   An animation that continually affects a symbol until it’s disabled or removed.
-- [protocol ContentTransitionSymbolEffect](contenttransitionsymboleffect.md)
+- [protocol ContentTransitionSymbolEffect](./contenttransitionsymboleffect.md)
   An effect that animates between symbols or different configurations of the same symbol.
-- [protocol TransitionSymbolEffect](transitionsymboleffect.md)
+- [protocol TransitionSymbolEffect](./transitionsymboleffect.md)
   An effect that animates a symbol in or out.
 
 

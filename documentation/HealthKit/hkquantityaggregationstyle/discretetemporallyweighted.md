@@ -1,7 +1,8 @@
 # HKQuantityAggregationStyle.discreteTemporallyWeighted
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Discrete samples that can be averaged over a time interval using a temporally weighted integration function.
 
@@ -19,13 +20,18 @@ Discrete samples that can be averaged over a time interval using a temporally we
 case discreteTemporallyWeighted
 ```
 
+```c
+HKQuantityAggregationStyleDiscreteTemporallyWeighted
+```
+
 ## See Also
 
-- [HKQuantityAggregationStyle.cumulative](hkquantityaggregationstyle/cumulative.md)
+### Aggregation Styles
+- [HKQuantityAggregationStyle.cumulative](./cumulative.md)
   Cumulative samples that can be summed over time.
-- [HKQuantityAggregationStyle.discreteArithmetic](hkquantityaggregationstyle/discretearithmetic.md)
+- [HKQuantityAggregationStyle.discreteArithmetic](./discretearithmetic.md)
   Discrete samples that can be averaged over time using an arithmetic mean.
-- [HKQuantityAggregationStyle.discreteEquivalentContinuousLevel](hkquantityaggregationstyle/discreteequivalentcontinuouslevel.md)
+- [HKQuantityAggregationStyle.discreteEquivalentContinuousLevel](./discreteequivalentcontinuouslevel.md)
   Discrete samples that can be combined over a time interval by computing the equivalent continuous sound level.
 
 

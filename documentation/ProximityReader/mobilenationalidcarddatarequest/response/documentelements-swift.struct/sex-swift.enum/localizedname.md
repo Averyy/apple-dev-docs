@@ -1,7 +1,8 @@
 # localizedName
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string containing the the localized name of the sex category.
 

@@ -1,7 +1,8 @@
 # init(scheme:user:password:host:port:path:query:fragment:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL format style with the given display options.
 
@@ -22,7 +23,7 @@ init(scheme: URL.FormatStyle.ComponentDisplayOption = .always, user: URL.FormatS
 
 #### Discussion
 
-Explicitly create a URL format style in situations where you want to format multiple URLs with the same style configuration. For one-time use, call [`formatted()`](url/formatted().md) for a default style, or create a style with [`url`](formatstyle/url.md) and customize it with the modifiers in Customizing style behavior.
+Explicitly create a URL format style in situations where you want to format multiple URLs with the same style configuration. For one-time use, call [`formatted()`](../formatted%28%29.md) for a default style, or create a style with [`url`](../../formatstyle/url.md) and customize it with the modifiers in Customizing style behavior.
 
 ## Parameters
 
@@ -37,9 +38,10 @@ Explicitly create a URL format style in situations where you want to format mult
 
 ## See Also
 
-- [URL.FormatStyle.ComponentDisplayOption](url/formatstyle/componentdisplayoption.md)
+### Creating a URL format style
+- [URL.FormatStyle.ComponentDisplayOption](./componentdisplayoption.md)
   A type that indicates whether a formatted URL should include a component.
-- [URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption.md)
+- [URL.FormatStyle.HostDisplayOption](./hostdisplayoption.md)
   A type that indicates whether a formatted URL should include the host component.
 
 

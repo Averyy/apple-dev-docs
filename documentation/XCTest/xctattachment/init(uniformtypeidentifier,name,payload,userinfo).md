@@ -1,7 +1,8 @@
 # init(uniformTypeIdentifier:name:payload:userInfo:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attachment containing the provided data payload, optionally with a custom UTI, name, and user-provided metadata dictionary.
 
@@ -11,9 +12,13 @@ Creates an attachment containing the provided data payload, optionally with a cu
 init(uniformTypeIdentifier identifier: String?, name: String?, payload: Data?, userInfo: [AnyHashable : Any]? = nil)
 ```
 
+```objc
+- (instancetype) initWithUniformTypeIdentifier:(NSString *) identifier name:(NSString *) name payload:(NSData *) payload userInfo:(NSDictionary *) userInfo;
+```
+
 #### Discussion
 
-Creates an attachment with a [`uniformTypeIdentifier`](xctattachment/uniformtypeidentifier.md) of `"public.data"` if the `identifier` parameter is `nil`.
+Creates an attachment with a [`uniformTypeIdentifier`](./uniformtypeidentifier.md) of `"public.data"` if the `identifier` parameter is `nil`.
 
 ## Parameters
 
@@ -24,9 +29,10 @@ Creates an attachment with a [`uniformTypeIdentifier`](xctattachment/uniformtype
 
 ## See Also
 
-- [convenience init(data: Data)](xctattachment/init(data:).md)
+### Creating Attachments from Data
+- [convenience init(data: Data)](./init%28data%29.md)
   Creates an attachment containing the provided data payload.
-- [convenience init(data: Data, uniformTypeIdentifier: String)](xctattachment/init(data:uniformtypeidentifier:).md)
+- [convenience init(data: Data, uniformTypeIdentifier: String)](./init%28data,uniformtypeidentifier%29.md)
   Creates an attachment containing the provided data payload, with a custom UTI.
 
 

@@ -1,17 +1,18 @@
 # origin
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The coordinates of the front upper-left corner of the region.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ The coordinates of the front upper-left corner of the region.
 var origin: MTLOrigin
 ```
 
+```c
+MTLOrigin origin;
+```
+
 ## See Also
 
-- [var size: MTLSize](mtlregion/size.md)
+### Getting and setting region information
+- [var size: MTLSize](./size.md)
   The dimensions of the region.
 
 

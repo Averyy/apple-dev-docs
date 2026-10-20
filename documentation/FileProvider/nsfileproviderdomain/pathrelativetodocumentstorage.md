@@ -1,7 +1,8 @@
 # pathRelativeToDocumentStorage
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The path of the domain’s subdirectory relative to the file provider’s shared container.
 
@@ -17,24 +18,29 @@ The path of the domain’s subdirectory relative to the file provider’s shared
 var pathRelativeToDocumentStorage: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * pathRelativeToDocumentStorage;
+```
+
 ## See Also
 
-- [var displayName: String](nsfileproviderdomain/displayname.md)
+### Accessing data
+- [var displayName: String](./displayname.md)
   The name of the domain displayed in the user interface.
-- [var identifier: NSFileProviderDomainIdentifier](nsfileproviderdomain/identifier.md)
+- [var identifier: NSFileProviderDomainIdentifier](./identifier.md)
   The domain’s unique identifier.
-- [var isReplicated: Bool](nsfileproviderdomain/isreplicated.md)
-- [var backingStoreIdentity: Data?](nsfileproviderdomain/backingstoreidentity.md)
+- [var isReplicated: Bool](./isreplicated.md)
+- [var backingStoreIdentity: Data?](./backingstoreidentity.md)
   A unique identifier for the backing store used by the system.
-- [var isHidden: Bool](nsfileproviderdomain/ishidden.md)
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value that determines whether the domain is visible to users.
-- [var userEnabled: Bool](nsfileproviderdomain/userenabled.md)
+- [var userEnabled: Bool](./userenabled.md)
   A Boolean value that indicates whether the user has enabled or disabled the domain.
-- [var isDisconnected: Bool](nsfileproviderdomain/isdisconnected.md)
+- [var isDisconnected: Bool](./isdisconnected.md)
   A Boolean value indicating that the domain is present, but disconnected from the file extension.
-- [var supportsSyncingTrash: Bool](nsfileproviderdomain/supportssyncingtrash.md)
-- [var userInfo: [AnyHashable : Any]?](nsfileproviderdomain/userinfo.md)
-- [var volumeUUID: UUID?](nsfileproviderdomain/volumeuuid.md)
+- [var supportsSyncingTrash: Bool](./supportssyncingtrash.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
+- [var volumeUUID: UUID?](./volumeuuid.md)
 
 
 ---

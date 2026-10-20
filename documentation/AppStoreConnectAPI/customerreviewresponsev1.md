@@ -1,7 +1,8 @@
 # CustomerReviewResponseV1
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A developer’s public reply to a customer review on the App Store.
 
@@ -10,16 +11,16 @@ A developer’s public reply to a customer review on the App Store.
 
 ## Declaration
 
-```swift
+```
 object CustomerReviewResponseV1
 ```
 
 ## Topics
 
 ### Objects
-- [object CustomerReviewResponseV1.Attributes](customerreviewresponsev1/attributes-data.dictionary.md)
+- [object CustomerReviewResponseV1.Attributes](./customerreviewresponsev1/attributes-data.dictionary.md)
   The attributes of the response to a customer’s review including its content.
-- [object CustomerReviewResponseV1.Relationships](customerreviewresponsev1/relationships-data.dictionary.md)
+- [object CustomerReviewResponseV1.Relationships](./customerreviewresponsev1/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -30,16 +31,19 @@ object CustomerReviewResponseV1
 - `relationships` (CustomerReviewResponseV1.Relationships): Navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `customerReviewResponses`
+
 ## See Also
 
-- [object CustomerReviewResponseV1Response](customerreviewresponsev1response.md)
+### Objects and types
+- [object CustomerReviewResponseV1Response](./customerreviewresponsev1response.md)
   The response body for endpoints that create, read, or modify a developer’s response to a customer review.
-- [object CustomerReviewResponseV1CreateRequest](customerreviewresponsev1createrequest.md)
+- [object CustomerReviewResponseV1CreateRequest](./customerreviewresponsev1createrequest.md)
   The request body to use to create a response to a customer review.
-- [object CustomerReview](customerreview.md)
+- [object CustomerReview](./customerreview.md)
   A customer’s rating and written review of your app on the App Store.
-- [object AppCustomerReviewsLinkagesResponse](appcustomerreviewslinkagesresponse.md)
-- [object CustomerReviewResponseLinkageResponse](customerreviewresponselinkageresponse.md)
+- [object AppCustomerReviewsLinkagesResponse](./appcustomerreviewslinkagesresponse.md)
+- [object CustomerReviewResponseLinkageResponse](./customerreviewresponselinkageresponse.md)
 
 
 ---

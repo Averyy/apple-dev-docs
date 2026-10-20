@@ -1,7 +1,8 @@
 # subscribeAttributeApplication(with:subscriptionEstablished:reportHandler:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func subscribeAttributeApplication(with params: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: @escaping (MTRApplicationBasicClusterApplicationStruct?, (any Error)?) -> Void)
+```
+
+```objc
+- (void) subscribeAttributeApplicationWithParams:(MTRSubscribeParams *) params subscriptionEstablished:(MTRSubscriptionEstablishedHandler) subscriptionEstablished reportHandler:(void (^)(MTRApplicationBasicClusterApplicationStruct *value, NSError *error)) reportHandler;
 ```
 
 

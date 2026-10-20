@@ -9,15 +9,16 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short CSS_CUSTOM;
 ```
 
 ## See Also
 
-- [CSS_INHERIT](deprecatedcssomvalue/2871282-css_inherit.md)
-- [CSS_PRIMITIVE_VALUE](deprecatedcssomvalue/2871020-css_primitive_value.md)
-- [CSS_VALUE_LIST](deprecatedcssomvalue/2871129-css_value_list.md)
+### Miscellaneous
+- [CSS_INHERIT](./api-2871282-css_inherit.md)
+- [CSS_PRIMITIVE_VALUE](./api-2871020-css_primitive_value.md)
+- [CSS_VALUE_LIST](./api-2871129-css_value_list.md)
 
 
 ---

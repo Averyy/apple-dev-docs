@@ -1,7 +1,8 @@
 # controlPointBuffers
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns a reference to a buffer where each entry contains a reference to a buffer of control points.
 
@@ -19,9 +20,13 @@ Assigns a reference to a buffer where each entry contains a reference to a buffe
 var controlPointBuffers: MTL4BufferRange { get set }
 ```
 
+```objc
+@property (nonatomic) MTL4BufferRange controlPointBuffers;
+```
+
 #### Discussion
 
-This property references a buffer that conceptually represents an array with one entry for each keyframe in the motion animation. Each one of these entries consists of a [`MTL4BufferRange`](mtl4bufferrange.md) that, in turn, references a buffer containing the control points corresponding to the keyframe.
+This property references a buffer that conceptually represents an array with one entry for each keyframe in the motion animation. Each one of these entries consists of a [`MTL4BufferRange`](../mtl4bufferrange.md) that, in turn, references a buffer containing the control points corresponding to the keyframe.
 
 You are responsible for ensuring the buffer address is not zero for the top-level buffer, as well as for all the vertex buffers it references.
 

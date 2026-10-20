@@ -1,7 +1,8 @@
 # SearchResponse.Results.AppleCuratorsSearchResult
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object containing the Apple curators’ search result.
 
@@ -10,7 +11,7 @@ An object containing the Apple curators’ search result.
 
 ## Declaration
 
-```swift
+```
 object SearchResponse.Results.AppleCuratorsSearchResult
 ```
 
@@ -22,25 +23,26 @@ object SearchResponse.Results.AppleCuratorsSearchResult
 
 ## See Also
 
-- [object SearchResponse.Results.ActivitiesSearchResult](searchresponse/results-data.dictionary/activitiessearchresult.md)
+### Related Objects
+- [object SearchResponse.Results.ActivitiesSearchResult](./activitiessearchresult.md)
   An object containing an activities’ search result.
-- [object SearchResponse.Results.AlbumsSearchResult](searchresponse/results-data.dictionary/albumssearchresult.md)
+- [object SearchResponse.Results.AlbumsSearchResult](./albumssearchresult.md)
   An object containing an albums’ search result.
-- [object SearchResponse.Results.ArtistsSearchResult](searchresponse/results-data.dictionary/artistssearchresult.md)
+- [object SearchResponse.Results.ArtistsSearchResult](./artistssearchresult.md)
   An object containing an artists’ search result.
-- [object SearchResponse.Results.CuratorsSearchResult](searchresponse/results-data.dictionary/curatorssearchresult.md)
+- [object SearchResponse.Results.CuratorsSearchResult](./curatorssearchresult.md)
   An object containing a curators’ search result.
-- [object SearchResponse.Results.MusicVideosSearchResult](searchresponse/results-data.dictionary/musicvideossearchresult.md)
+- [object SearchResponse.Results.MusicVideosSearchResult](./musicvideossearchresult.md)
   An object containing a music videos’ search result.
-- [object SearchResponse.Results.PlaylistsSearchResult](searchresponse/results-data.dictionary/playlistssearchresult.md)
+- [object SearchResponse.Results.PlaylistsSearchResult](./playlistssearchresult.md)
   An object containing a playlists’ search result.
-- [object SearchResponse.Results.RecordLabelsSearchResult](searchresponse/results-data.dictionary/recordlabelssearchresult.md)
+- [object SearchResponse.Results.RecordLabelsSearchResult](./recordlabelssearchresult.md)
   An object containing a record labels’ search result.
-- [object SearchResponse.Results.SongsSearchResult](searchresponse/results-data.dictionary/songssearchresult.md)
+- [object SearchResponse.Results.SongsSearchResult](./songssearchresult.md)
   An object containing a songs’ search result.
-- [object SearchResponse.Results.StationsSearchResult](searchresponse/results-data.dictionary/stationssearchresult.md)
+- [object SearchResponse.Results.StationsSearchResult](./stationssearchresult.md)
   An object containing a stations’ search result.
-- [object SearchResponse.Results.TopResultsSearchResult](searchresponse/results-data.dictionary/topresultssearchresult.md)
+- [object SearchResponse.Results.TopResultsSearchResult](./topresultssearchresult.md)
   An object containing a top results’ search result.
 
 

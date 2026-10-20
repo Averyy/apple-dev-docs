@@ -1,7 +1,8 @@
 # CLKWatchFaceLibrary.ErrorCode
 
 **Framework**: ClockKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes that the watch face library returns.
 
@@ -17,43 +18,48 @@ Error codes that the watch face library returns.
 enum ErrorCode
 ```
 
+```c
+enum CLKWatchFaceLibraryErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Errors
-- [CLKWatchFaceLibrary.ErrorCode.notFileURL](clkwatchfacelibrary/errorcode/notfileurl.md)
+- [CLKWatchFaceLibrary.ErrorCode.notFileURL](./errorcode/notfileurl.md)
   No file was found at the specified URL.
-- [CLKWatchFaceLibrary.ErrorCode.invalidFile](clkwatchfacelibrary/errorcode/invalidfile.md)
+- [CLKWatchFaceLibrary.ErrorCode.invalidFile](./errorcode/invalidfile.md)
   The specified file wasn’t a valid watch face file.
-- [CLKWatchFaceLibrary.ErrorCode.permissionDenied](clkwatchfacelibrary/errorcode/permissiondenied.md)
+- [CLKWatchFaceLibrary.ErrorCode.permissionDenied](./errorcode/permissiondenied.md)
   The app does not have permission to read the specified file.
-- [CLKWatchFaceLibrary.ErrorCode.faceNotAvailable](clkwatchfacelibrary/errorcode/facenotavailable.md)
+- [CLKWatchFaceLibrary.ErrorCode.faceNotAvailable](./errorcode/facenotavailable.md)
   The watch face is not available on this device.
-- [CLKWatchFaceLibrary.ErrorCode.notFileURL](clkwatchfacelibrary/errorcode/notfileurl.md)
+- [CLKWatchFaceLibrary.ErrorCode.notFileURL](./errorcode/notfileurl.md)
   No file was found at the specified URL.
-- [CLKWatchFaceLibrary.ErrorCode.invalidFile](clkwatchfacelibrary/errorcode/invalidfile.md)
+- [CLKWatchFaceLibrary.ErrorCode.invalidFile](./errorcode/invalidfile.md)
   The specified file wasn’t a valid watch face file.
-- [CLKWatchFaceLibrary.ErrorCode.permissionDenied](clkwatchfacelibrary/errorcode/permissiondenied.md)
+- [CLKWatchFaceLibrary.ErrorCode.permissionDenied](./errorcode/permissiondenied.md)
   The app does not have permission to read the specified file.
-- [CLKWatchFaceLibrary.ErrorCode.faceNotAvailable](clkwatchfacelibrary/errorcode/facenotavailable.md)
+- [CLKWatchFaceLibrary.ErrorCode.faceNotAvailable](./errorcode/facenotavailable.md)
   The watch face is not available on this device.
 ### Enumeration Cases
-- [CLKWatchFaceLibrary.ErrorCode.noURL](clkwatchfacelibrary/errorcode/nourl.md)
+- [CLKWatchFaceLibrary.ErrorCode.noURL](./errorcode/nourl.md)
 ### Initializers
-- [init?(rawValue: Int)](clkwatchfacelibrary/errorcode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./errorcode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class let ErrorDomain: String](clkwatchfacelibrary/errordomain.md)
+### Handling Errors
+- [class let ErrorDomain: String](./errordomain.md)
   The domain for errors while importing watch faces.
 
 

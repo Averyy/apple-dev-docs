@@ -1,7 +1,8 @@
 # VNCalculateImageAestheticsScoresRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that analyzes an image for aesthetically pleasing attributes.
 
@@ -19,26 +20,30 @@ An object that analyzes an image for aesthetically pleasing attributes.
 class VNCalculateImageAestheticsScoresRequest
 ```
 
+```objc
+@interface VNCalculateImageAestheticsScoresRequest : VNImageBasedRequest
+```
+
 ## Topics
 
 ### Accessing the results
-- [var results: [VNImageAestheticsScoresObservation]?](vncalculateimageaestheticsscoresrequest/results.md)
+- [var results: [VNImageAestheticsScoresObservation]?](./vncalculateimageaestheticsscoresrequest/results.md)
   The results of the aesthetics request.
-- [class VNImageAestheticsScoresObservation](vnimageaestheticsscoresobservation.md)
+- [class VNImageAestheticsScoresObservation](./vnimageaestheticsscoresobservation.md)
   An object that represents the overall score of aesthetic attributes for an image.
 
 ## Relationships
 
 ### Inherits From
-- [VNImageBasedRequest](vnimagebasedrequest.md)
+- [VNImageBasedRequest](./vnimagebasedrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

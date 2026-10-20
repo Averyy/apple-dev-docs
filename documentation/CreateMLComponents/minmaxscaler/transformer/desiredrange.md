@@ -1,7 +1,8 @@
 # desiredRange
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The desired range of transformed values.
 
@@ -22,7 +23,8 @@ var desiredRange: ClosedRange<Element>
 
 ## See Also
 
-- [var fittedRange: ClosedRange<Element>](minmaxscaler/transformer/fittedrange.md)
+### Getting the properties
+- [var fittedRange: ClosedRange<Element>](./fittedrange.md)
   The fitted range derived by the estimator when fitting.
 
 

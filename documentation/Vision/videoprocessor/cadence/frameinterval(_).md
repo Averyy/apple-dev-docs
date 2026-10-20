@@ -1,7 +1,8 @@
 # VideoProcessor.Cadence.frameInterval(_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A cadence that processes every frame you specify.
 
@@ -22,7 +23,8 @@ case frameInterval(Int)
 
 ## See Also
 
-- [VideoProcessor.Cadence.timeInterval(_:)](videoprocessor/cadence/timeinterval(_:).md)
+### Getting the intervals
+- [VideoProcessor.Cadence.timeInterval(_:)](./timeinterval%28_%29.md)
   A cadence that processes, at most, one frame during each interval you specify.
 
 

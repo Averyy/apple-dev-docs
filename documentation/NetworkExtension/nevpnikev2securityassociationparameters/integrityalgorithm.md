@@ -1,7 +1,8 @@
 # integrityAlgorithm
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The algorithm used by the Security Association to verify the integrity of data.
 
@@ -19,28 +20,33 @@ The algorithm used by the Security Association to verify the integrity of data.
 var integrityAlgorithm: NEVPNIKEv2IntegrityAlgorithm { get set }
 ```
 
+```objc
+@property NEVPNIKEv2IntegrityAlgorithm integrityAlgorithm;
+```
+
 #### Discussion
 
-The default value of this property is [`NEVPNIKEv2IntegrityAlgorithm.SHA256`](nevpnikev2integrityalgorithm/sha256.md).
+The default value of this property is [`NEVPNIKEv2IntegrityAlgorithm.SHA256`](../nevpnikev2integrityalgorithm/sha256.md).
 
 The system infers its IKE psedo-random number generation algorithm based on the integrity algorithm.
 
 ## See Also
 
-- [var encryptionAlgorithm: NEVPNIKEv2EncryptionAlgorithm](nevpnikev2securityassociationparameters/encryptionalgorithm.md)
+### IKEv2 Security Association parameters
+- [var encryptionAlgorithm: NEVPNIKEv2EncryptionAlgorithm](./encryptionalgorithm.md)
   The algorithm used by the Security Association to encrypt and decrypt data.
-- [enum NEVPNIKEv2EncryptionAlgorithm](nevpnikev2encryptionalgorithm.md)
+- [enum NEVPNIKEv2EncryptionAlgorithm](../nevpnikev2encryptionalgorithm.md)
   An enumeration of encryption algorithm values.
-- [enum NEVPNIKEv2IntegrityAlgorithm](nevpnikev2integrityalgorithm.md)
-- [var diffieHellmanGroup: NEVPNIKEv2DiffieHellmanGroup](nevpnikev2securityassociationparameters/diffiehellmangroup.md)
+- [enum NEVPNIKEv2IntegrityAlgorithm](../nevpnikev2integrityalgorithm.md)
+- [var diffieHellmanGroup: NEVPNIKEv2DiffieHellmanGroup](./diffiehellmangroup.md)
   The Diffie Hellman group used by the Security Association.
-- [enum NEVPNIKEv2DiffieHellmanGroup](nevpnikev2diffiehellmangroup.md)
+- [enum NEVPNIKEv2DiffieHellmanGroup](../nevpnikev2diffiehellmangroup.md)
   An enumeration of Diffie-Hellman group values.
-- [var lifetimeMinutes: Int32](nevpnikev2securityassociationparameters/lifetimeminutes.md)
+- [var lifetimeMinutes: Int32](./lifetimeminutes.md)
   The duration of the lifetime of the Security Association, in minutes.
-- [var postQuantumKeyExchangeMethods: [NEVPNIKEv2PostQuantumKeyExchangeMethod]](nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-3173s.md)
+- [var postQuantumKeyExchangeMethods: [NEVPNIKEv2PostQuantumKeyExchangeMethod]](./postquantumkeyexchangemethods-3173s.md)
   A list of the quantum-secure key exchange methods the Security Association uses.
-- [enum NEVPNIKEv2PostQuantumKeyExchangeMethod](nevpnikev2postquantumkeyexchangemethod.md)
+- [enum NEVPNIKEv2PostQuantumKeyExchangeMethod](../nevpnikev2postquantumkeyexchangemethod.md)
   Quantum-secure key exchange methods you use with IKEv2 servers.
 
 

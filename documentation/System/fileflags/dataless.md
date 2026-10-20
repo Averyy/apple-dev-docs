@@ -1,7 +1,8 @@
 # dataless
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 File is a dataless placeholder (content is stored remotely).
 

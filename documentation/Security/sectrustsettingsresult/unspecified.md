@@ -1,7 +1,8 @@
 # SecTrustSettingsResult.unspecified
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This certificate is neither trusted nor distrusted. This value can be used to specify an “allowed error” without assigning trust to a specific certificate.
 
@@ -13,6 +14,10 @@ This certificate is neither trusted nor distrusted. This value can be used to sp
 
 ```swift
 case unspecified
+```
+
+```c
+kSecTrustSettingsResultUnspecified
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # dominance
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The degree of how strong or meek the speaker sounds.
 
@@ -16,19 +17,24 @@ The degree of how strong or meek the speaker sounds.
 var dominance: Double { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) double dominance;
+```
+
 #### Discussion
 
 This property is a range from `-1` to `1`, where negative values indicate negative sentiment, and positive values indicate positive sentiment.
 
 ## See Also
 
-- [var confidence: Double](srspeechexpression/confidence.md)
+### Getting speech analytics
+- [var confidence: Double](./confidence.md)
   The level of confidence of the speaker.
-- [var mood: Double](srspeechexpression/mood.md)
+- [var mood: Double](./mood.md)
   An indication of how slurry, tired, or exhausted the speaker sounds compared to normal speech.
-- [var valence: Double](srspeechexpression/valence.md)
+- [var valence: Double](./valence.md)
   The degree of positive or negative emotion or sentiment of the speaker.
-- [var activation: Double](srspeechexpression/activation.md)
+- [var activation: Double](./activation.md)
   The level of energy or activation of the speaker.
 
 

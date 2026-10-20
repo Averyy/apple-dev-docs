@@ -1,7 +1,8 @@
 # MTLTensorDataType.metalFloat4e2m1
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 4-bit floating point data type with 2 exponent bits, 1 mantissa bit, and 1 sign bit.
 
@@ -17,6 +18,10 @@ A 4-bit floating point data type with 2 exponent bits, 1 mantissa bit, and 1 sig
 
 ```swift
 case metalFloat4e2m1
+```
+
+```c
+MTLTensorDataTypeMetalFloat4E2M1
 ```
 
 

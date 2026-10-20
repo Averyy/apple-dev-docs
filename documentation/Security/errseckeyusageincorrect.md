@@ -1,7 +1,8 @@
 # errSecKeyUsageIncorrect
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key usage is incorrect.
 
@@ -18,6 +19,10 @@ The key usage is incorrect.
 
 ```swift
 var errSecKeyUsageIncorrect: OSStatus { get }
+```
+
+```c
+errSecKeyUsageIncorrect
 ```
 
 

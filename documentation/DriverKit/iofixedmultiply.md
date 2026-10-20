@@ -1,25 +1,27 @@
 # IOFixedMultiply
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Multiplies two 16.16 fixed point numbers.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static IOFixed IOFixedMultiply(IOFixed a, IOFixed b);
 ```
 
 ## See Also
 
-- [IOFixedDivide](iofixeddivide.md)
+### Computing Fixed-Point Values
+- [IOFixedDivide](./iofixeddivide.md)
   Divides two 16.16 fixed point numbers.
 
 

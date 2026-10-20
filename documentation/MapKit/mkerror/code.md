@@ -1,7 +1,8 @@
 # MKError.Code
 
 **Framework**: MapKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error constants for the MapKit framework.
 
@@ -20,39 +21,44 @@ Error constants for the MapKit framework.
 enum Code
 ```
 
+```c
+enum MKErrorCode : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MKError.Code.decodingFailed](mkerror/code/decodingfailed.md)
+- [MKError.Code.decodingFailed](./code/decodingfailed.md)
   GeoJSON decoding failed.
-- [MKError.Code.directionsNotFound](mkerror/code/directionsnotfound.md)
+- [MKError.Code.directionsNotFound](./code/directionsnotfound.md)
   The framework couldn’t find the specified directions.
-- [MKError.Code.loadingThrottled](mkerror/code/loadingthrottled.md)
+- [MKError.Code.loadingThrottled](./code/loadingthrottled.md)
   The data didn’t load because data throttling is in effect.
-- [MKError.Code.placemarkNotFound](mkerror/code/placemarknotfound.md)
+- [MKError.Code.placemarkNotFound](./code/placemarknotfound.md)
   The specified placemark could not be found.
-- [MKError.Code.serverFailure](mkerror/code/serverfailure.md)
+- [MKError.Code.serverFailure](./code/serverfailure.md)
   The map server was unable to return the desired information.
-- [MKError.Code.unknown](mkerror/code/unknown.md)
+- [MKError.Code.unknown](./code/unknown.md)
   An unknown error occurred.
 ### Initializers
-- [init?(rawValue: UInt)](mkerror/code/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let MKErrorDomain: String](mkerrordomain.md)
+### Errors
+- [let MKErrorDomain: String](../mkerrordomain.md)
   The error domain for MapKit.
-- [struct MKError](mkerror.md)
+- [struct MKError](../mkerror.md)
   Error constants for the MapKit framework.
 
 

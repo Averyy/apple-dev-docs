@@ -1,7 +1,8 @@
 # remove(named:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the audio mix group with the given name, if it exists, from the component.
 

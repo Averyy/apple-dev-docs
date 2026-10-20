@@ -1,7 +1,8 @@
 # withLocale(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func withLocale(_ locale: Locale?) -> Self
+```
+
+```objc
+- (instancetype) configurationWithLocale:(NSLocale *) locale;
 ```
 
 

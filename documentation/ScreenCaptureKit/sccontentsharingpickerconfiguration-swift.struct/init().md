@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: ScreenCaptureKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a picker configuration with default values.
 

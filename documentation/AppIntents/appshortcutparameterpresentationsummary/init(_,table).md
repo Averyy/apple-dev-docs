@@ -1,7 +1,8 @@
 # init(_:table:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a presentation summary with the specified parameters.
 
@@ -11,7 +12,7 @@ Initializes a presentation summary with the specified parameters.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ init(_ summaryString: AppShortcutParameterPresentationSummaryString<Intent, Valu
 
 ## Parameters
 
-- `summaryString`: Represents the summary of the [`AppShortcutParameterPresentation`](appshortcutparameterpresentation.md). Example: “Call (.$person)”.
+- `summaryString`: Represents the summary of the [`AppShortcutParameterPresentation`](../appshortcutparameterpresentation.md). Example: “Call (.$person)”.
 - `table`: An optional `StaticString` representing the table to use when localizing the summary.
 
 

@@ -1,7 +1,8 @@
 # customizationLabel
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user-visible string identifying this item during bar customization.
 
@@ -15,6 +16,10 @@ The user-visible string identifying this item during bar customization.
 
 ```swift
 var customizationLabel: String { get }
+```
+
+```objc
+@property (copy, readonly) NSString * customizationLabel;
 ```
 
 

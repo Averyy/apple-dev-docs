@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new content rule list store in the specified directory.
 
@@ -18,6 +19,10 @@ Creates a new content rule list store in the specified directory.
 convenience init!(url: URL!)
 ```
 
+```objc
++ (instancetype) storeWithURL:(NSURL *) url;
+```
+
 #### Return Value
 
 A content rule store associated with the specified directory.
@@ -32,7 +37,8 @@ If the specified directory already contains compiled rule lists, this method loa
 
 ## See Also
 
-- [class func `default`() -> Self!](wkcontentruleliststore/default.md)
+### Creating a Content Rule List Store
+- [class func `default`() -> Self!](./default%28%29.md)
   Returns the default content rule list store.
 
 

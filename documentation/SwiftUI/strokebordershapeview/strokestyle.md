@@ -1,7 +1,8 @@
 # strokeStyle
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stroke style used when stroking this view’s shape.
 
@@ -23,13 +24,14 @@ nonisolated var strokeStyle: StrokeStyle { get set }
 
 ## See Also
 
-- [var background: Background](strokebordershapeview/background.md)
+### Getting shape view properties
+- [var background: Background](./background.md)
   The background shown beneath this view.
-- [var isAntialiased: Bool](strokebordershapeview/isantialiased.md)
+- [var isAntialiased: Bool](./isantialiased.md)
   Whether this shape should be drawn antialiased.
-- [var shape: Content](strokebordershapeview/shape.md)
+- [var shape: Content](./shape.md)
   The shape that this type draws and provides for other drawing operations.
-- [var style: Style](strokebordershapeview/style.md)
+- [var style: Style](./style.md)
   The style that strokes the border of this view’s shape.
 
 

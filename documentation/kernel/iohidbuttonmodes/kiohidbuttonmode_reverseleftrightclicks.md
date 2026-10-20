@@ -1,14 +1,15 @@
 # kIOHIDButtonMode_ReverseLeftRightClicks
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```c
 kIOHIDButtonMode_ReverseLeftRightClicks = 1
 ```
 

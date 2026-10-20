@@ -1,7 +1,8 @@
 # status
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current authorization status for the payment.
 
@@ -19,11 +20,16 @@ The current authorization status for the payment.
 var status: PKPaymentAuthorizationStatus { get set }
 ```
 
+```objc
+@property (nonatomic, assign) PKPaymentAuthorizationStatus status;
+```
+
 ## See Also
 
-- [var session: PKPaymentMerchantSession?](pkpaymentrequestmerchantsessionupdate/session.md)
+### Getting information for the merchant session update
+- [var session: PKPaymentMerchantSession?](./session.md)
   An object that validates the identity of a merchant for the payment request.
-- [class PKPaymentMerchantSession](pkpaymentmerchantsession.md)
+- [class PKPaymentMerchantSession](../pkpaymentmerchantsession.md)
   An object that validates the identity of a merchant for a payment request.
 
 

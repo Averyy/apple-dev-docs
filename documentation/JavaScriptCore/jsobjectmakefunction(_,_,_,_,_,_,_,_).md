@@ -1,7 +1,8 @@
 # JSObjectMakeFunction(_:_:_:_:_:_:_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a function with a specified script as its body.
 
@@ -19,9 +20,13 @@ Creates a function with a specified script as its body.
 func JSObjectMakeFunction(_ ctx: JSContextRef!, _ name: JSStringRef!, _ parameterCount: UInt32, _ parameterNames: UnsafePointer<JSStringRef?>!, _ body: JSStringRef!, _ sourceURL: JSStringRef!, _ startingLineNumber: Int32, _ exception: UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!
 ```
 
+```c
+JSObjectRefJSObjectMakeFunction(JSContextRef ctx, JSStringRef name, unsigned int parameterCount, JSStringRef const parameterNames[], JSStringRef body, JSStringRef sourceURL, int startingLineNumber, JSValueRef*exception);
+```
+
 #### Return Value
 
-A [`JSObjectRef`](jsobjectref.md) that is a function, or `NULL` if either `body` or `parameterNames` contains a syntax error. The object’s prototype is the default function prototype.
+A [`JSObjectRef`](./jsobjectref.md) that is a function, or `NULL` if either `body` or `parameterNames` contains a syntax error. The object’s prototype is the default function prototype.
 
 #### Discussion
 
@@ -30,45 +35,46 @@ Use this method when you want to execute a script repeatedly to avoid the cost o
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `name`: A [`JSStringRef`](jsstringref.md) that contains the function’s name. The system uses this when converting the function to a string. Pass `NULL` to create an anonymous function.
+- `name`: A [`JSStringRef`](./jsstringref.md) that contains the function’s name. The system uses this when converting the function to a string. Pass `NULL` to create an anonymous function.
 - `parameterCount`: An integer count of the number of parameter names in `parameterNames`.
-- `parameterNames`: A [`JSStringRef`](jsstringref.md) array that contains the names of the function’s parameters. Pass `NULL` if `parameterCount` is `0`.
-- `body`: A [`JSStringRef`](jsstringref.md) that contains the script to use as the function’s body.
-- `sourceURL`: A [`JSStringRef`](jsstringref.md) that contains a URL for the script’s source file. The system only uses this when reporting exceptions. Pass `NULL` if you don’t want to include source file information in exceptions.
+- `parameterNames`: A [`JSStringRef`](./jsstringref.md) array that contains the names of the function’s parameters. Pass `NULL` if `parameterCount` is `0`.
+- `body`: A [`JSStringRef`](./jsstringref.md) that contains the script to use as the function’s body.
+- `sourceURL`: A [`JSStringRef`](./jsstringref.md) that contains a URL for the script’s source file. The system only uses this when reporting exceptions. Pass `NULL` if you don’t want to include source file information in exceptions.
 - `startingLineNumber`: An integer value that specifies the script’s starting line number in the file at `sourceURL`. The system only uses this when reporting exceptions.
-- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
+- `exception`: A pointer to a [`JSValueRef`](./jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 
-- [func JSObjectCallAsConstructor(JSContextRef!, JSObjectRef!, Int, UnsafePointer<JSValueRef?>!, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](jsobjectcallasconstructor(_:_:_:_:_:).md)
+### Working with Objects
+- [func JSObjectCallAsConstructor(JSContextRef!, JSObjectRef!, Int, UnsafePointer<JSValueRef?>!, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](./jsobjectcallasconstructor%28_,_,_,_,_%29.md)
   Calls an object as a constructor.
-- [func JSObjectCallAsFunction(JSContextRef!, JSObjectRef!, JSObjectRef!, Int, UnsafePointer<JSValueRef?>!, UnsafeMutablePointer<JSValueRef?>!) -> JSValueRef!](jsobjectcallasfunction(_:_:_:_:_:_:).md)
+- [func JSObjectCallAsFunction(JSContextRef!, JSObjectRef!, JSObjectRef!, Int, UnsafePointer<JSValueRef?>!, UnsafeMutablePointer<JSValueRef?>!) -> JSValueRef!](./jsobjectcallasfunction%28_,_,_,_,_,_%29.md)
   Calls an object as a function.
-- [func JSObjectCopyPropertyNames(JSContextRef!, JSObjectRef!) -> JSPropertyNameArrayRef!](jsobjectcopypropertynames(_:_:).md)
+- [func JSObjectCopyPropertyNames(JSContextRef!, JSObjectRef!) -> JSPropertyNameArrayRef!](./jsobjectcopypropertynames%28_,_%29.md)
   Gets the names of an object’s enumerable properties.
-- [func JSObjectDeleteProperty(JSContextRef!, JSObjectRef!, JSStringRef!, UnsafeMutablePointer<JSValueRef?>!) -> Bool](jsobjectdeleteproperty(_:_:_:_:).md)
+- [func JSObjectDeleteProperty(JSContextRef!, JSObjectRef!, JSStringRef!, UnsafeMutablePointer<JSValueRef?>!) -> Bool](./jsobjectdeleteproperty%28_,_,_,_%29.md)
   Deletes a property from an object.
-- [func JSObjectGetPrivate(JSObjectRef!) -> UnsafeMutableRawPointer!](jsobjectgetprivate(_:).md)
+- [func JSObjectGetPrivate(JSObjectRef!) -> UnsafeMutableRawPointer!](./jsobjectgetprivate%28_%29.md)
   Gets an object’s private data.
-- [func JSObjectGetProperty(JSContextRef!, JSObjectRef!, JSStringRef!, UnsafeMutablePointer<JSValueRef?>!) -> JSValueRef!](jsobjectgetproperty(_:_:_:_:).md)
+- [func JSObjectGetProperty(JSContextRef!, JSObjectRef!, JSStringRef!, UnsafeMutablePointer<JSValueRef?>!) -> JSValueRef!](./jsobjectgetproperty%28_,_,_,_%29.md)
   Gets a property from an object.
-- [func JSObjectGetPropertyAtIndex(JSContextRef!, JSObjectRef!, UInt32, UnsafeMutablePointer<JSValueRef?>!) -> JSValueRef!](jsobjectgetpropertyatindex(_:_:_:_:).md)
+- [func JSObjectGetPropertyAtIndex(JSContextRef!, JSObjectRef!, UInt32, UnsafeMutablePointer<JSValueRef?>!) -> JSValueRef!](./jsobjectgetpropertyatindex%28_,_,_,_%29.md)
   Gets a property from an object by numeric index.
-- [func JSObjectGetPrototype(JSContextRef!, JSObjectRef!) -> JSValueRef!](jsobjectgetprototype(_:_:).md)
+- [func JSObjectGetPrototype(JSContextRef!, JSObjectRef!) -> JSValueRef!](./jsobjectgetprototype%28_,_%29.md)
   Gets an object’s prototype.
-- [func JSObjectHasProperty(JSContextRef!, JSObjectRef!, JSStringRef!) -> Bool](jsobjecthasproperty(_:_:_:).md)
+- [func JSObjectHasProperty(JSContextRef!, JSObjectRef!, JSStringRef!) -> Bool](./jsobjecthasproperty%28_,_,_%29.md)
   Tests whether an object has a specified property.
-- [func JSObjectIsConstructor(JSContextRef!, JSObjectRef!) -> Bool](jsobjectisconstructor(_:_:).md)
+- [func JSObjectIsConstructor(JSContextRef!, JSObjectRef!) -> Bool](./jsobjectisconstructor%28_,_%29.md)
   Tests whether you can call an object as a constructor.
-- [func JSObjectIsFunction(JSContextRef!, JSObjectRef!) -> Bool](jsobjectisfunction(_:_:).md)
+- [func JSObjectIsFunction(JSContextRef!, JSObjectRef!) -> Bool](./jsobjectisfunction%28_,_%29.md)
   Tests whether you can call an object as a function.
-- [func JSObjectMake(JSContextRef!, JSClassRef!, UnsafeMutableRawPointer!) -> JSObjectRef!](jsobjectmake(_:_:_:).md)
+- [func JSObjectMake(JSContextRef!, JSClassRef!, UnsafeMutableRawPointer!) -> JSObjectRef!](./jsobjectmake%28_,_,_%29.md)
   Creates a JavaScript object.
-- [func JSObjectMakeArray(JSContextRef!, Int, UnsafePointer<JSValueRef?>!, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](jsobjectmakearray(_:_:_:_:).md)
+- [func JSObjectMakeArray(JSContextRef!, Int, UnsafePointer<JSValueRef?>!, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](./jsobjectmakearray%28_,_,_,_%29.md)
   Creates a JavaScript array object.
-- [func JSObjectMakeConstructor(JSContextRef!, JSClassRef!, JSObjectCallAsConstructorCallback!) -> JSObjectRef!](jsobjectmakeconstructor(_:_:_:).md)
+- [func JSObjectMakeConstructor(JSContextRef!, JSClassRef!, JSObjectCallAsConstructorCallback!) -> JSObjectRef!](./jsobjectmakeconstructor%28_,_,_%29.md)
   Creates a JavaScript constructor.
-- [func JSObjectMakeDate(JSContextRef!, Int, UnsafePointer<JSValueRef?>!, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](jsobjectmakedate(_:_:_:_:).md)
+- [func JSObjectMakeDate(JSContextRef!, Int, UnsafePointer<JSValueRef?>!, UnsafeMutablePointer<JSValueRef?>!) -> JSObjectRef!](./jsobjectmakedate%28_,_,_,_%29.md)
   Creates a JavaScript date object as though invoking the built-in date constructor.
 
 

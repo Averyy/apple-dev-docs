@@ -1,7 +1,8 @@
 # getSnapshotWithCompletionHandler(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests a new snapshot and calls the completion handler you provide.
 
@@ -15,7 +16,15 @@ Requests a new snapshot and calls the completion handler you provide.
 ## Declaration
 
 ```swift
+func getSnapshotWithCompletionHandler(_ completionHandler: @escaping @MainActor @Sendable (MKLookAroundSnapshotter.Snapshot?, (any Error)?) -> Void)
+```
+
+```swift
 var snapshot: MKLookAroundSnapshotter.Snapshot { get async throws }
+```
+
+```objc
+- (void) getSnapshotWithCompletionHandler:(void (^)(MKLookAroundSnapshot *, NSError *)) completionHandler;
 ```
 
 ## Parameters
@@ -24,7 +33,8 @@ var snapshot: MKLookAroundSnapshotter.Snapshot { get async throws }
 
 ## See Also
 
-- [func cancel()](mklookaroundsnapshotter/cancel.md)
+### Starting and stopping a snapshot
+- [func cancel()](./cancel%28%29.md)
   Cancels an in-progress snapshot request.
 
 

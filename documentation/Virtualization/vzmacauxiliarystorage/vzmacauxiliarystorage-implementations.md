@@ -1,11 +1,12 @@
 # VZMacAuxiliaryStorage Implementations
 
-**Framework**: Virtualization
+**Framework**: Virtualization  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(contentsOfURL: URL)](vzmacauxiliarystorage/init(contentsofurl:).md)
+- [init(contentsOfURL: URL)](./init%28contentsofurl%29.md)
   Initializes an auxiliary storage object with data from the location at the URL you provide.
 
 

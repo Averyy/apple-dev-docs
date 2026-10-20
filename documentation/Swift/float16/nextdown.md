@@ -1,7 +1,8 @@
 # nextDown
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The greatest representable value that compares less than this value.
 

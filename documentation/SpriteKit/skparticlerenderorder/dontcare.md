@@ -1,7 +1,8 @@
 # SKParticleRenderOrder.dontCare
 
 **Framework**: SpriteKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The particles can be rendered in any order. SpriteKit may choose to reorder the particles to improve rendering performance.
 
@@ -20,11 +21,16 @@ The particles can be rendered in any order. SpriteKit may choose to reorder the 
 case dontCare
 ```
 
+```c
+SKParticleRenderOrderDontCare
+```
+
 ## See Also
 
-- [SKParticleRenderOrder.oldestLast](skparticlerenderorder/oldestlast.md)
+### Constants
+- [SKParticleRenderOrder.oldestLast](./oldestlast.md)
   The particles are rendered from newest to oldest. This is the default value.
-- [SKParticleRenderOrder.oldestFirst](skparticlerenderorder/oldestfirst.md)
+- [SKParticleRenderOrder.oldestFirst](./oldestfirst.md)
   The particles are rendered from oldest to newest.
 
 

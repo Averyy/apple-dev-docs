@@ -1,7 +1,8 @@
 # init(sendMessageIntent:attributedContent:)
 
 **Framework**: User Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(sendMessageIntent: INSendMessageIntent, attributedContent: NSAttributedString)
+```
+
+```objc
++ (instancetype) contextWithSendMessageIntent:(INSendMessageIntent *) sendMessageIntent attributedContent:(NSAttributedString *) attributedContent;
 ```
 
 

@@ -1,7 +1,8 @@
 # normalizationBetaGradient(withIncomingGradientTensor:sourceTensor:reductionAxes:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a normalization beta-gradient operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a normalization beta-gradient operation and returns the result tensor.
 
 ```swift
 func normalizationBetaGradient(withIncomingGradientTensor incomingGradientTensor: MPSGraphTensor, sourceTensor: MPSGraphTensor, reductionAxes axes: [NSNumber], name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) normalizationBetaGradientWithIncomingGradientTensor:(MPSGraphTensor *) incomingGradientTensor sourceTensor:(MPSGraphTensor *) sourceTensor reductionAxes:(NSArray<NSNumber *> *) axes name:(NSString *) name;
 ```
 
 #### Return Value

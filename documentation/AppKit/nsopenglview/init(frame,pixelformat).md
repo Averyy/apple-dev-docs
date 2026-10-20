@@ -1,17 +1,24 @@
 # init(frame:pixelFormat:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `NSOpenGLView` object initialized with the specified frame rectangle and pixel format.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Please use MTKView instead.
 
 ## Declaration
 
 ```swift
 init?(frame frameRect: NSRect, pixelFormat format: NSOpenGLPixelFormat?)
+```
+
+```objc
+- (instancetype) initWithFrame:(NSRect) frameRect pixelFormat:(NSOpenGLPixelFormat *) format;
 ```
 
 #### Return Value
@@ -25,8 +32,9 @@ An initialized `NSOpenGLView` object, or `nil` if the object could not be initia
 
 ## See Also
 
-- [class func defaultPixelFormat() -> NSOpenGLPixelFormat](nsopenglview/defaultpixelformat.md)
-  Returns a default [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object.
+### Related Documentation
+- [class func defaultPixelFormat() -> NSOpenGLPixelFormat](./defaultpixelformat%28%29.md)
+  Returns a default [`NSOpenGLPixelFormat`](../nsopenglpixelformat.md) object.
 
 
 ---

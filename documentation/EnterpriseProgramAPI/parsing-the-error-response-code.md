@@ -1,12 +1,13 @@
 # Parsing the Error Response Code
 
-**Framework**: Enterprise Program API
+**Framework**: Enterprise Program API  
+**Role**: Article
 
 Interpret the error details to troubleshoot API requests and perform programmatic error handling.
 
 #### Overview
 
-When your API request results in an error, you receive an [`ErrorResponse`](errorresponse.md) that contains an array of errors. The `code` property of the [`ErrorResponse`](errorresponse.md) helps you identify which part of your request may contain an error.
+When your API request results in an error, you receive an [`ErrorResponse`](./errorresponse.md) that contains an array of errors. The `code` property of the [`ErrorResponse`](./errorresponse.md) helps you identify which part of your request may contain an error.
 
 The error data (`ErrorResponse.Data`) fully describes an error through its properties, including `status`, `id`, `title`, `code`, and others. However, for programmatic error handling, use only the `code` property.
 
@@ -26,13 +27,13 @@ In many cases, the most general level of information provides all you need to kn
 
 You can analyze the parts of your request in order to trace the correlating error information. Requests consist of a method, path, and parameters or a request entity, as shown in the `GET` request annotated below.
 
-![An annotated GET request.](/images/com.apple.devpubs.enterprise-api/media-3040420@2x.png)
+![An annotated GET request.](https://developer.apple.com/tutorials/images/com.apple.devpubs.enterprise-api/media-3040420@2x.png)
 
 Likewise, the parts of a `POST` request are annotated below.
 
-![An annotated POST request.](/images/com.apple.devpubs.enterprise-api/media-3074413@2x.png)
+![An annotated POST request.](https://developer.apple.com/tutorials/images/com.apple.devpubs.enterprise-api/media-3074413@2x.png)
 
-If there’s an error in a request, the response returns an HTTP status code in the 400 range. The `code` parameter of the [`ErrorResponse`](errorresponse.md) helps you identify which part of your request may contain an error: the method, path, parameter, or entity.
+If there’s an error in a request, the response returns an HTTP status code in the 400 range. The `code` parameter of the [`ErrorResponse`](./errorresponse.md) helps you identify which part of your request may contain an error: the method, path, parameter, or entity.
 
 ##### Identify Errors with the Method
 
@@ -66,9 +67,10 @@ Responses that indicate the request’s *entity* contains an error include:
 
 ## See Also
 
-- [About the HTTP Status Code](about-the-http-status-code.md)
+### Handling Errors
+- [About the HTTP Status Code](./about-the-http-status-code.md)
   Learn how the status code helps you determine if an Enterprise Program  API request succeeded or why it failed.
-- [Pinpointing the Location of Errors](pinpointing-the-location-of-errors.md)
+- [Pinpointing the Location of Errors](./pinpointing-the-location-of-errors.md)
   Locate the specific source of the error.
 
 

@@ -1,7 +1,8 @@
 # NewIndexToUCStringUPP(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func NewIndexToUCStringUPP(_ userRoutine: IndexToUCStringProcPtr!) -> IndexToUCStringUPP!
+```
+
+```c
+IndexToUCStringUPP NewIndexToUCStringUPP(IndexToUCStringProcPtr userRoutine);
 ```
 
 

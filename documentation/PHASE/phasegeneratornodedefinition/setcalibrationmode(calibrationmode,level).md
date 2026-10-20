@@ -1,7 +1,8 @@
 # setCalibrationMode(calibrationMode:level:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Selects a loudness correction strategy and reference level.
 
@@ -19,16 +20,21 @@ Selects a loudness correction strategy and reference level.
 func setCalibrationMode(calibrationMode: PHASECalibrationMode, level: Double)
 ```
 
+```objc
+- (void) setCalibrationMode:(PHASECalibrationMode) calibrationMode level:(double) level;
+```
+
 ## Parameters
 
-- `calibrationMode`: A given strategy for sound pressure level. For a consistent user experience across platforms and output devices, choose [`PHASECalibrationMode.absoluteSpl`](phasecalibrationmode/absolutespl.md) or [`PHASECalibrationMode.relativeSpl`](phasecalibrationmode/relativespl.md).
+- `calibrationMode`: A given strategy for sound pressure level. For a consistent user experience across platforms and output devices, choose [`PHASECalibrationMode.absoluteSpl`](../phasecalibrationmode/absolutespl.md) or [`PHASECalibrationMode.relativeSpl`](../phasecalibrationmode/relativespl.md).
 - `level`: The loudness. The calibration mode determines this value’s unit and range.
 
 ## See Also
 
-- [var calibrationMode: PHASECalibrationMode](phasegeneratornodedefinition/calibrationmode.md)
+### Calibrating Loudness
+- [var calibrationMode: PHASECalibrationMode](./calibrationmode.md)
   A sound pressure level strategy for loudness correction.
-- [var level: Double](phasegeneratornodedefinition/level.md)
+- [var level: Double](./level.md)
   The node’s loudness.
 
 

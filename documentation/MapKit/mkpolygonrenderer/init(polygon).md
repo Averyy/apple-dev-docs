@@ -1,7 +1,8 @@
 # init(polygon:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new renderer that handles drawing for the specified polygon overlay object.
 
@@ -17,6 +18,10 @@ Creates a new renderer that handles drawing for the specified polygon overlay ob
 
 ```swift
 init(polygon: MKPolygon)
+```
+
+```objc
+- (instancetype) initWithPolygon:(MKPolygon *) polygon;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # didUpdateNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The focus for the UI has been updated.
 
@@ -19,13 +20,18 @@ nonisolated
 class let didUpdateNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIFocusDidUpdateNotification;
+```
+
 ## See Also
 
-- [class let animationCoordinatorUserInfoKey: String](uifocussystem/animationcoordinatoruserinfokey.md)
+### Responding to focus-related keys and notifications
+- [class let animationCoordinatorUserInfoKey: String](./animationcoordinatoruserinfokey.md)
   Updates the animation coordinator.
-- [class let focusUpdateContextUserInfoKey: String](uifocussystem/focusupdatecontextuserinfokey.md)
+- [class let focusUpdateContextUserInfoKey: String](./focusupdatecontextuserinfokey.md)
   Updates the context key.
-- [class let movementDidFailNotification: NSNotification.Name](uifocussystem/movementdidfailnotification.md)
+- [class let movementDidFailNotification: NSNotification.Name](./movementdidfailnotification.md)
   The focus failed to move to another item.
 
 

@@ -1,7 +1,8 @@
 # MLStyleTransfer.ModelParameters.ModelAlgorithmType.cnnLite
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style-transfer training algorithm that generates a model that prioritizes speed over image quality.
 
@@ -20,7 +21,8 @@ case cnnLite
 
 ## See Also
 
-- [MLStyleTransfer.ModelParameters.ModelAlgorithmType.cnn](mlstyletransfer/modelparameters/modelalgorithmtype/cnn.md)
+### Selecting an algorithm type
+- [MLStyleTransfer.ModelParameters.ModelAlgorithmType.cnn](./cnn.md)
   A style-transfer training algorithm that generates a model that prioritizes image quality over speed.
 
 

@@ -1,7 +1,8 @@
 # kColorSyncSigMediaWhitePointTag
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The signature of the media white point tag.
 
@@ -20,9 +21,14 @@ The signature of the media white point tag.
 var kColorSyncSigMediaWhitePointTag: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncSigMediaWhitePointTag;
+```
+
 ## See Also
 
-- [var kColorSyncSigMediaBlackPointTag: Unmanaged<CFString>!](kcolorsyncsigmediablackpointtag.md)
+### Identifying white and black points
+- [var kColorSyncSigMediaBlackPointTag: Unmanaged<CFString>!](./kcolorsyncsigmediablackpointtag.md)
   The signature of the media black point tag.
 
 

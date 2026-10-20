@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.CeilingMode
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The pooling ceiling mode.
 
@@ -23,18 +24,18 @@ enum CeilingMode
 ## Topics
 
 ### Enumeration Cases
-- [BNNSGraph.Builder.CeilingMode.ceiling](bnnsgraph/builder/ceilingmode/ceiling.md)
+- [BNNSGraph.Builder.CeilingMode.ceiling](./ceilingmode/ceiling.md)
   The operation calculates the output size using ceiling division.
-- [BNNSGraph.Builder.CeilingMode.floor](bnnsgraph/builder/ceilingmode/floor.md)
+- [BNNSGraph.Builder.CeilingMode.floor](./ceilingmode/floor.md)
   The operation calculates the output size using floor division.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

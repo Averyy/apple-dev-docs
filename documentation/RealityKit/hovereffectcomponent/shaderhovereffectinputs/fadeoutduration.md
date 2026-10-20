@@ -1,7 +1,8 @@
 # fadeOutDuration
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time it takes in seconds for the effect to fade out.
 

@@ -1,7 +1,8 @@
 # activatesGroup
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Causes other effects in the match group to become active.
 

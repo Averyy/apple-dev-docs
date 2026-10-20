@@ -1,20 +1,22 @@
 # RegisterDext
 
 **Framework**: BlockStorageDeviceDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 21.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t RegisterDext();
 ```
 
 ## See Also
 
-- [DoAsyncUnmapPriv](iouserblockstoragedevice/doasyncunmappriv.md)
+### Instance Methods
+- [DoAsyncUnmapPriv](./doasyncunmappriv.md)
 
 
 ---

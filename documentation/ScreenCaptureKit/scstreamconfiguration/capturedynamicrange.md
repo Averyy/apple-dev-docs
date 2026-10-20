@@ -1,7 +1,8 @@
 # captureDynamicRange
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var captureDynamicRange: SCCaptureDynamicRange { get set }
+```
+
+```objc
+@property (nonatomic, assign) SCCaptureDynamicRange captureDynamicRange;
 ```
 
 

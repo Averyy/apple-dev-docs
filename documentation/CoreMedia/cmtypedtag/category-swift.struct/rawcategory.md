@@ -1,7 +1,8 @@
 # rawCategory
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw 64-bit representation of the tag’s category.
 

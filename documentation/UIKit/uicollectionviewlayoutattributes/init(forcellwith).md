@@ -1,7 +1,8 @@
 # init(forCellWith:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a layout attributes object that represents a cell with the specified index path.
 
@@ -9,13 +10,17 @@ Creates and returns a layout attributes object that represents a cell with the s
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 convenience init(forCellWith indexPath: IndexPath)
+```
+
+```objc
++ (instancetype) layoutAttributesForCellWithIndexPath:(NSIndexPath *) indexPath;
 ```
 
 #### Return Value
@@ -32,9 +37,10 @@ Use this method to create a layout attributes object for a cell in the collectio
 
 ## See Also
 
-- [convenience init(forSupplementaryViewOfKind: String, with: IndexPath)](uicollectionviewlayoutattributes/init(forsupplementaryviewofkind:with:).md)
+### Creating layout attributes
+- [convenience init(forSupplementaryViewOfKind: String, with: IndexPath)](./init%28forsupplementaryviewofkind,with%29.md)
   Creates and returns a layout attributes object that represents the specified supplementary view.
-- [convenience init(forDecorationViewOfKind: String, with: IndexPath)](uicollectionviewlayoutattributes/init(fordecorationviewofkind:with:).md)
+- [convenience init(forDecorationViewOfKind: String, with: IndexPath)](./init%28fordecorationviewofkind,with%29.md)
   Creates and returns a layout attributes object that represents the specified decoration view.
 
 

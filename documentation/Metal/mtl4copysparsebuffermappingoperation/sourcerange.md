@@ -1,7 +1,8 @@
 # sourceRange
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range in the source buffer, in tiles.
 
@@ -17,6 +18,10 @@ The range in the source buffer, in tiles.
 
 ```swift
 var sourceRange: NSRange
+```
+
+```c
+NSRange sourceRange;
 ```
 
 #### Discussion

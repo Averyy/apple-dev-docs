@@ -1,7 +1,8 @@
 # CTFrameGetFrameAttributes(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the frame attributes used to create the frame.
 
@@ -20,6 +21,10 @@ Returns the frame attributes used to create the frame.
 func CTFrameGetFrameAttributes(_ frame: CTFrame) -> CFDictionary?
 ```
 
+```c
+extern CFDictionaryRefCTFrameGetFrameAttributes(CTFrameRef frame);
+```
+
 #### Return Value
 
 A reference to a CFDictionary object containing the frame attributes that were used to create the frame, or, if the frame was created without any frame attributes, `NULL`.
@@ -34,11 +39,12 @@ You can create a frame with an attributes dictionary to control various aspects 
 
 ## See Also
 
-- [func CTFrameGetStringRange(CTFrame) -> CFRange](ctframegetstringrange(_:).md)
+### Getting Frame Data
+- [func CTFrameGetStringRange(CTFrame) -> CFRange](./ctframegetstringrange%28_%29.md)
   Returns the range of characters originally requested to fill the frame.
-- [func CTFrameGetVisibleStringRange(CTFrame) -> CFRange](ctframegetvisiblestringrange(_:).md)
+- [func CTFrameGetVisibleStringRange(CTFrame) -> CFRange](./ctframegetvisiblestringrange%28_%29.md)
   Returns the range of characters that actually fit in the frame.
-- [func CTFrameGetPath(CTFrame) -> CGPath](ctframegetpath(_:).md)
+- [func CTFrameGetPath(CTFrame) -> CGPath](./ctframegetpath%28_%29.md)
   Returns the path used to create the frame.
 
 

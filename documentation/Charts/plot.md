@@ -1,7 +1,8 @@
 # Plot
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A mechanism for grouping chart contents into a single entity.
 
@@ -24,28 +25,29 @@ A mechanism for grouping chart contents into a single entity.
 ## Topics
 
 ### Initializers
-- [init(content: () -> Content)](plot/init(content:).md)
+- [init(content: () -> Content)](./plot/init%28content%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [ChartContent](chartcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ChartContent](./chartcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Creating a chart using Swift Charts](creating-a-chart-using-swift-charts.md)
+### Charts
+- [Creating a chart using Swift Charts](./creating-a-chart-using-swift-charts.md)
   Make a chart by combining chart building blocks in SwiftUI.
-- [Visualizing your app’s data](visualizing-your-app-s-data.md)
+- [Visualizing your app’s data](./visualizing-your-app-s-data.md)
   Build complex and interactive charts using Swift Charts.
-- [struct Chart](chart.md)
+- [struct Chart](./chart.md)
   A SwiftUI view that displays a chart.
-- [protocol ChartContent](chartcontent.md)
+- [protocol ChartContent](./chartcontent.md)
   A type that represents the content that you draw on a chart.
-- [struct ChartContentBuilder](chartcontentbuilder.md)
+- [struct ChartContentBuilder](./chartcontentbuilder.md)
   A result builder that you use to compose the contents of a chart.
 
 

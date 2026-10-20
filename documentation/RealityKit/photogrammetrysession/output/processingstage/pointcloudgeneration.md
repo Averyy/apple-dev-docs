@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Output.ProcessingStage.pointCloudGeneration
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+

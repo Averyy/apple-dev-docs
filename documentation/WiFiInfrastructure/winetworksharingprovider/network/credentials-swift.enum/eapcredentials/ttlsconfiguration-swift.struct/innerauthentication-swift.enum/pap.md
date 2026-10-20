@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication.pap
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that represents the Password Authentication Protocol (PAP).
 
@@ -18,13 +19,14 @@ case pap
 
 ## See Also
 
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication.chap](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/ttlsconfiguration-swift.struct/innerauthentication-swift.enum/chap.md)
+### Authentication types
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication.chap](./chap.md)
   The value that represents the Challenge-Handshake Authentication Protocol (CHAP).
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication.eap](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/ttlsconfiguration-swift.struct/innerauthentication-swift.enum/eap.md)
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication.eap](./eap.md)
   The value that represents the Extensible Authentication Protocol (EAP).
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication.mschap](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/ttlsconfiguration-swift.struct/innerauthentication-swift.enum/mschap.md)
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication.mschap](./mschap.md)
   The value that represents the Microsoft Challenge Handshake Authentication Protocol (MSCHAP).
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication.mschapV2](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/ttlsconfiguration-swift.struct/innerauthentication-swift.enum/mschapv2.md)
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication.mschapV2](./mschapv2.md)
   The value that represents the Microsoft Challenge Handshake Authentication Protocol version 2 (MSCHAPV2).
 
 

@@ -1,7 +1,8 @@
 # errSecCSCMSTooLarge
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The signature is too large to embed.
 
@@ -13,6 +14,10 @@ The signature is too large to embed.
 
 ```swift
 var errSecCSCMSTooLarge: OSStatus { get }
+```
+
+```c
+errSecCSCMSTooLarge
 ```
 
 

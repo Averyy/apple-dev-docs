@@ -1,7 +1,8 @@
 # CSSM_ALGCLASS_DIGEST
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_ALGCLASS_DIGEST: Int { get }
+```
+
+```c
+CSSM_ALGCLASS_DIGEST
 ```
 
 

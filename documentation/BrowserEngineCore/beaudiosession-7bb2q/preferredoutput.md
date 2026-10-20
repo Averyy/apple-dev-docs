@@ -1,7 +1,8 @@
 # preferredOutput
 
 **Framework**: BrowserEngineCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The output port the person sets as their preference.
 
@@ -22,9 +23,10 @@ The value is `nil` if a person hasn’t set a preference.
 
 ## See Also
 
-- [var availableOutputs: Array<AVAudioSessionPortDescription>](beaudiosession-7bb2q/availableoutputs.md)
+### Managing audio output
+- [var availableOutputs: Array<AVAudioSessionPortDescription>](./availableoutputs.md)
   An array of output ports available for audio routing in the current session.
-- [func setPreferredOutput(AVAudioSessionPortDescription?) throws](beaudiosession-7bb2q/setpreferredoutput(_:).md)
+- [func setPreferredOutput(AVAudioSessionPortDescription?) throws](./setpreferredoutput%28_%29.md)
   Sets the preferred audio output port for the session.
 
 

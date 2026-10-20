@@ -1,17 +1,22 @@
 # setEventSelector(_:target:refCon:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allow you to set a selector to be called when events occur on the OBEX session.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setEventSelector(_ inEventSelector: Selector!, target inEventSelectorTarget: Any!, refCon inUserRefCon: UnsafeMutableRawPointer!)
+```
+
+```objc
+- (void) setEventSelector:(SEL) inEventSelector target:(id) inEventSelectorTarget refCon:(void *) inUserRefCon;
 ```
 
 #### Discussion

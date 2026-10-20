@@ -1,7 +1,8 @@
 # URLSessionTaskMetrics
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object encapsulating the metrics for a session task.
 
@@ -20,45 +21,50 @@ An object encapsulating the metrics for a session task.
 class URLSessionTaskMetrics
 ```
 
+```objc
+@interface NSURLSessionTaskMetrics : NSObject
+```
+
 #### Overview
 
-Each [`URLSessionTaskMetrics`](urlsessiontaskmetrics.md) object contains the [`taskInterval`](urlsessiontaskmetrics/taskinterval.md) and [`redirectCount`](urlsessiontaskmetrics/redirectcount.md), as well as metrics for each request-and-response transaction made during the execution of the task.
+Each [`URLSessionTaskMetrics`](./urlsessiontaskmetrics.md) object contains the [`taskInterval`](./urlsessiontaskmetrics/taskinterval.md) and [`redirectCount`](./urlsessiontaskmetrics/redirectcount.md), as well as metrics for each request-and-response transaction made during the execution of the task.
 
 ## Topics
 
 ### Creating task metrics
-- [init()](urlsessiontaskmetrics/init.md)
+- [init()](./urlsessiontaskmetrics/init%28%29.md)
   Creates a task metrics instance.
 ### Accessing task metrics
-- [var transactionMetrics: [URLSessionTaskTransactionMetrics]](urlsessiontaskmetrics/transactionmetrics.md)
+- [var transactionMetrics: [URLSessionTaskTransactionMetrics]](./urlsessiontaskmetrics/transactionmetrics.md)
   An array of metrics for each individual request-response transaction made during the execution of the task.
-- [class URLSessionTaskTransactionMetrics](urlsessiontasktransactionmetrics.md)
+- [class URLSessionTaskTransactionMetrics](./urlsessiontasktransactionmetrics.md)
   An object that encapsualtes the performance metrics collected by the URL Loading System during the execution of a session task.
-- [var taskInterval: DateInterval](urlsessiontaskmetrics/taskinterval.md)
+- [var taskInterval: DateInterval](./urlsessiontaskmetrics/taskinterval.md)
   The time interval between when a task is instantiated and when the task is completed.
-- [var redirectCount: Int](urlsessiontaskmetrics/redirectcount.md)
+- [var redirectCount: Int](./urlsessiontaskmetrics/redirectcount.md)
   The number of redirects that occurred during the execution of the task.
 ### Type Methods
-- [class func new() -> Self](urlsessiontaskmetrics/new.md)
+- [class func new() -> Self](./urlsessiontaskmetrics/new%28%29.md)
   Creates a task metrics instance.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func urlSession(URLSession, task: URLSessionTask, didFinishCollecting: URLSessionTaskMetrics)](urlsessiontaskdelegate/urlsession(_:task:didfinishcollecting:).md)
+### Collecting task metrics
+- [func urlSession(URLSession, task: URLSessionTask, didFinishCollecting: URLSessionTaskMetrics)](./urlsessiontaskdelegate/urlsession%28_,task,didfinishcollecting%29.md)
   Tells the delegate that the session finished collecting metrics for the task.
 
 

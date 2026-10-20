@@ -1,7 +1,8 @@
 # matchingFontDescriptors(withMandatoryKeys:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns all the fonts available in the system with specified attributes that match those of the font.
 
@@ -9,7 +10,7 @@ Returns all the fonts available in the system with specified attributes that mat
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -17,6 +18,10 @@ Returns all the fonts available in the system with specified attributes that mat
 
 ```swift
 func matchingFontDescriptors(withMandatoryKeys mandatoryKeys: Set<UIFontDescriptor.AttributeName>?) -> [UIFontDescriptor]
+```
+
+```objc
+- (NSArray<UIFontDescriptor *> *) matchingFontDescriptorsWithMandatoryKeys:(NSSet<NSString *> *) mandatoryKeys;
 ```
 
 #### Return Value

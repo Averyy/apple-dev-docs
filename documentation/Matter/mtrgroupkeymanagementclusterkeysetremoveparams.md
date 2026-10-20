@@ -1,7 +1,8 @@
 # MTRGroupKeyManagementClusterKeySetRemoveParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,25 +19,29 @@
 class MTRGroupKeyManagementClusterKeySetRemoveParams
 ```
 
+```objc
+@interface MTRGroupKeyManagementClusterKeySetRemoveParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var groupKeySetID: NSNumber](mtrgroupkeymanagementclusterkeysetremoveparams/groupkeysetid.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrgroupkeymanagementclusterkeysetremoveparams/serversideprocessingtimeout.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrgroupkeymanagementclusterkeysetremoveparams/timedinvoketimeoutms.md)
+- [var groupKeySetID: NSNumber](./mtrgroupkeymanagementclusterkeysetremoveparams/groupkeysetid.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrgroupkeymanagementclusterkeysetremoveparams/serversideprocessingtimeout.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrgroupkeymanagementclusterkeysetremoveparams/timedinvoketimeoutms.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

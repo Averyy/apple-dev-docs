@@ -1,7 +1,8 @@
 # MPSeekCommandEventType.endSeeking
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the external media player stopped seeking.
 
@@ -10,7 +11,7 @@ Indicates the external media player stopped seeking.
 - iPadOS 7.1+
 - Mac Catalyst 13.1+
 - macOS 10.12.2+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 5.0+
 
@@ -20,9 +21,14 @@ Indicates the external media player stopped seeking.
 case endSeeking
 ```
 
+```c
+MPSeekCommandEventTypeEndSeeking
+```
+
 ## See Also
 
-- [MPSeekCommandEventType.beginSeeking](mpseekcommandeventtype/beginseeking.md)
+### Event types
+- [MPSeekCommandEventType.beginSeeking](./beginseeking.md)
   Indicates the external media player began seeking.
 
 

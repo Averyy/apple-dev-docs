@@ -1,7 +1,8 @@
 # Publishers.PrefetchStrategy.byRequest
 
 **Framework**: Combine  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A strategy that avoids prefetching and instead performs requests on demand.
 
@@ -26,7 +27,8 @@ This strategy just forwards the downstream’s requests to the upstream publishe
 
 ## See Also
 
-- [Publishers.PrefetchStrategy.keepFull](publishers/prefetchstrategy/keepfull.md)
+### Prefetching strategies
+- [Publishers.PrefetchStrategy.keepFull](./keepfull.md)
   A strategy to fill the buffer at subscription time, and keep it full thereafter.
 
 

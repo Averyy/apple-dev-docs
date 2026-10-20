@@ -1,7 +1,8 @@
 # reduceAcrossBatch
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 14.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var reduceAcrossBatch: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL reduceAcrossBatch;
 ```
 
 

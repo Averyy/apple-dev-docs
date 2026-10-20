@@ -1,7 +1,8 @@
 # trackingStates
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides an access to the asynchronous sequence of tracking session states
 
@@ -23,7 +24,7 @@ A `DockAccessory.TrackingStates` instance representing the current state of trac
 
 #### Discussion
 
-> **Note**: [`DockKitError.notConnected`](dockkiterror/notconnected.md) if device is disconnected, or [`DockKitError.notSupportedByDevice`](dockkiterror/notsupportedbydevice.md) if device doesn’t support updates.
+> **Throws**: [`DockKitError.notConnected`](../dockkiterror/notconnected.md) if device is disconnected, or [`DockKitError.notSupportedByDevice`](../dockkiterror/notsupportedbydevice.md) if device doesn’t support updates.
 
 
 ---

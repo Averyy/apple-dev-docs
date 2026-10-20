@@ -1,12 +1,13 @@
 # color
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,14 @@ The color of the receiver.
 var color: NSColor { get set }
 ```
 
+```objc
+@property (copy) NSColor * color;
+```
+
 ## See Also
 
-- [class func dragColor(NSColor, with: NSEvent, from: NSView) -> Bool](nscolorpanel/dragcolor(_:with:from:).md)
+### Setting color
+- [class func dragColor(NSColor, with: NSEvent, from: NSView) -> Bool](./dragcolor%28_,with,from%29.md)
   Drags a color into a destination view from the specified source view.
 
 

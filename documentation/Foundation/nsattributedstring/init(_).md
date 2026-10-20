@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a reference-type attributed string from the specified value-type attributed string.
 
@@ -22,7 +23,7 @@ convenience init(_ attrStr: AttributedString)
 
 #### Discussion
 
-This initializer includes all attribute scopes defined by the SDK, such as [`AttributeScopes.FoundationAttributes`](attributescopes/foundationattributes.md), [`AttributeScopes.SwiftUIAttributes`](attributescopes/swiftuiattributes.md), and [`AttributeScopes.AccessibilityAttributes`](attributescopes/accessibilityattributes.md). To use third-party attribute scopes, use the initializers [`init(_:including:)`](nsattributedstring/init(_:including:)-9gogq.md) or [`init(_:including:)`](nsattributedstring/init(_:including:)-8iy4i.md).
+This initializer includes all attribute scopes defined by the SDK, such as [`AttributeScopes.FoundationAttributes`](../attributescopes/foundationattributes.md), [`AttributeScopes.SwiftUIAttributes`](../attributescopes/swiftuiattributes.md), and [`AttributeScopes.AccessibilityAttributes`](../attributescopes/accessibilityattributes.md). To use third-party attribute scopes, use the initializers [`init(_:including:)`](./init%28_,including%29-9gogq.md) or [`init(_:including:)`](./init%28_,including%29-8iy4i.md).
 
 ## Parameters
 
@@ -30,9 +31,10 @@ This initializer includes all attribute scopes defined by the SDK, such as [`Att
 
 ## See Also
 
-- [convenience init<S>(AttributedString, including: S.Type) throws](nsattributedstring/init(_:including:)-9gogq.md)
+### Creating a formatted string
+- [convenience init<S>(AttributedString, including: S.Type) throws](./init%28_,including%29-9gogq.md)
   Creates a reference-type attributed string from the specified value-type attributed string, including an attribute scope.
-- [convenience init<S>(AttributedString, including: KeyPath<AttributeScopes, S.Type>) throws](nsattributedstring/init(_:including:)-8iy4i.md)
+- [convenience init<S>(AttributedString, including: KeyPath<AttributeScopes, S.Type>) throws](./init%28_,including%29-8iy4i.md)
   Creates a reference-type attributed string from the specified value-type attributed string, including an attribute scope that a key path identifies.
 
 

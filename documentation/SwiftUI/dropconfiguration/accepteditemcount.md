@@ -1,7 +1,8 @@
 # acceptedItemCount
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the number of items that the drop side wants to accept.
 

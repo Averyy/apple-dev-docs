@@ -1,18 +1,19 @@
 # sampleIsPartialSync
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a sample is a partial sync sample.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ A Boolean value that indicates whether a sample is a partial sync sample.
 var sampleIsPartialSync: ObjCBool
 ```
 
+```c
+BOOL sampleIsPartialSync;
+```
+
 ## See Also
 
-- [var sampleIsFullSync: ObjCBool](avsamplecursorsyncinfo/sampleisfullsync.md)
+### Sync information
+- [var sampleIsFullSync: ObjCBool](./sampleisfullsync.md)
   A Boolean value that indicates whether a sample is a full sync sample.
-- [var sampleIsDroppable: ObjCBool](avsamplecursorsyncinfo/sampleisdroppable.md)
+- [var sampleIsDroppable: ObjCBool](./sampleisdroppable.md)
   A Boolean value that indicates whether a sample is droppable.
 
 

@@ -1,7 +1,8 @@
 # unit
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -18,12 +19,15 @@
 final var unit: IntentParameter<Value>.Energy? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitEnergy>`.
+
 ## See Also
 
-- [IntentParameter.Energy](intentparameter/energy.md)
-- [var defaultUnit: IntentParameter<Value>.Energy?](intentparameter/defaultunit-2n8ud.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-493zp.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-6p731.md)
+### Accessing unit details
+- [IntentParameter.Energy](./energy.md)
+- [var defaultUnit: IntentParameter<Value>.Energy?](./defaultunit-2n8ud.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-493zp.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-6p731.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a view that represents the body of a table.
@@ -22,7 +23,7 @@ Creates a view that represents the body of a table.
 
 #### Discussion
 
-The system calls this method for each [`Table`](table.md) instance in a view hierarchy where this style is the current table style.
+The system calls this method for each [`Table`](../table.md) instance in a view hierarchy where this style is the current table style.
 
 ## Parameters
 
@@ -30,9 +31,10 @@ The system calls this method for each [`Table`](table.md) instance in a view hie
 
 ## See Also
 
-- [TableStyle.Configuration](tablestyle/configuration.md)
+### Creating custom table styles
+- [TableStyle.Configuration](./configuration.md)
   The properties of a table.
-- [associatedtype Body : View](tablestyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the body of a table.
 
 

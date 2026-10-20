@@ -1,7 +1,8 @@
 # model
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The model name of the accessory.
 
@@ -19,11 +20,16 @@ The model name of the accessory.
 var model: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * model;
+```
+
 ## See Also
 
-- [var firmwareVersion: String?](hmaccessory/firmwareversion.md)
+### Getting manufacturer information
+- [var firmwareVersion: String?](./firmwareversion.md)
   The firmware version of the accessory.
-- [var manufacturer: String?](hmaccessory/manufacturer.md)
+- [var manufacturer: String?](./manufacturer.md)
   The manufacturer of the accessory.
 
 

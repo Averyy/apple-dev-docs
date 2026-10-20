@@ -1,7 +1,8 @@
 # updateLineSpacing
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app intent conforms to the schema for updating the line spacing.
 

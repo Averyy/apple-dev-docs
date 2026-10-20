@@ -1,7 +1,8 @@
 # Publishers.LastWhere.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher uses its upstream publisher’s output type.
 
 ## See Also
 
-- [Publishers.LastWhere.Failure](publishers/lastwhere/failure.md)
+### Declaring supporting types
+- [Publishers.LastWhere.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

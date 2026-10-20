@@ -1,7 +1,8 @@
 # MEDecodedMessage
 
 **Framework**: MailKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains the RFC 2822 data for a message, without encryption or digital signatures.
 
@@ -14,46 +15,51 @@ An object that contains the RFC 2822 data for a message, without encryption or d
 class MEDecodedMessage
 ```
 
+```objc
+@interface MEDecodedMessage : NSObject
+```
+
 #### Overview
 
-When MailKit invokes your message security handler’s [`decodedMessage(forMessageData:)`](memessagedecoder/decodedmessage(formessagedata:).md) method, you decode the message data and return an instance of [`MEDecodedMessage`](medecodedmessage.md) that contains unencrypted MIME data.
+When MailKit invokes your message security handler’s [`decodedMessage(forMessageData:)`](./memessagedecoder/decodedmessage%28formessagedata%29.md) method, you decode the message data and return an instance of [`MEDecodedMessage`](./medecodedmessage.md) that contains unencrypted MIME data.
 
 ## Topics
 
 ### Decoding Messages
-- [var rawData: Data?](medecodedmessage/rawdata.md)
+- [var rawData: Data?](./medecodedmessage/rawdata.md)
   The decoded MIME data for a message.
-- [var securityInformation: MEMessageSecurityInformation](medecodedmessage/securityinformation.md)
+- [var securityInformation: MEMessageSecurityInformation](./medecodedmessage/securityinformation.md)
   An object that contains encryption and digital signature information about the message content.
 ### Initializers
-- [init(data: Data?, securityInformation: MEMessageSecurityInformation, context: Data?)](medecodedmessage/init(data:securityinformation:context:).md)
-- [init(data: Data?, securityInformation: MEMessageSecurityInformation, context: Data?, banner: MEDecodedMessageBanner?)](medecodedmessage/init(data:securityinformation:context:banner:).md)
-- [init?(coder: NSCoder)](medecodedmessage/init(coder:).md)
+- [init(data: Data?, securityInformation: MEMessageSecurityInformation, context: Data?)](./medecodedmessage/init%28data,securityinformation,context%29.md)
+- [init(data: Data?, securityInformation: MEMessageSecurityInformation, context: Data?, banner: MEDecodedMessageBanner?)](./medecodedmessage/init%28data,securityinformation,context,banner%29.md)
+- [init?(coder: NSCoder)](./medecodedmessage/init%28coder%29.md)
 ### Instance Properties
-- [var banner: MEDecodedMessageBanner?](medecodedmessage/banner.md)
-- [var context: Data?](medecodedmessage/context.md)
+- [var banner: MEDecodedMessageBanner?](./medecodedmessage/banner.md)
+- [var context: Data?](./medecodedmessage/context.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [protocol MEMessageDecoder](memessagedecoder.md)
+### Decrypting Messages and Verifying Signatures
+- [protocol MEMessageDecoder](./memessagedecoder.md)
   An object that decrypts messages and provides details about digital signatures.
-- [class MEMessageSigner](memessagesigner.md)
+- [class MEMessageSigner](./memessagesigner.md)
   An object that contains details about the person who signed a message.
-- [class MEMessageSecurityInformation](memessagesecurityinformation.md)
+- [class MEMessageSecurityInformation](./memessagesecurityinformation.md)
   An object that contains details about a message’s content, such as if it’s encrypted and who digitally signed it.
 
 

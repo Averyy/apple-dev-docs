@@ -1,7 +1,8 @@
 # init(item:title:image:icon:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a metadata object with the title, image, and icon for a shareable item.
 
@@ -14,20 +15,25 @@ Creates a metadata object with the title, image, and icon for a shareable item.
 convenience init(item: Any, title: String?, image: NSImage?, icon: NSImage?)
 ```
 
+```objc
+- (instancetype) initWithItem:(id) item title:(NSString *) title image:(NSImage *) image icon:(NSImage *) icon;
+```
+
 #### Return Value
 
 An initialized item to share.
 
 ## Parameters
 
-- `item`: The item to share from the Mac share sheet. The item must conform to the [`NSPasteboardWriting`](nspasteboardwriting.md) protocol, or be an [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) or [`NSDocument`](nsdocument.md) object.
+- `item`: The item to share from the Mac share sheet. The item must conform to the [`NSPasteboardWriting`](../nspasteboardwriting.md) protocol, or be an [`NSItemProvider`](../../Foundation/nsitemprovider.md) or [`NSDocument`](../nsdocument.md) object.
 - `title`: The localized name of the item.
 - `image`: An image to display as a preview for the item. For example, when you share a URL for a webpage, you might specify the hero image for that page or a rendering of the webpage itself.
 - `icon`: A thumbnail-size image of the source of the item. Typically, you specify your app’s icon but you can provide a different icon if the content has a different source.
 
 ## See Also
 
-- [init(item: Any, title: String?, imageProvider: NSItemProvider?, iconProvider: NSItemProvider?)](nspreviewrepresentingactivityitem/init(item:title:imageprovider:iconprovider:).md)
+### Creating a Preview Activity Item
+- [init(item: Any, title: String?, imageProvider: NSItemProvider?, iconProvider: NSItemProvider?)](./init%28item,title,imageprovider,iconprovider%29.md)
   Creates a metadata object that provides a title and images for a shareable item.
 
 

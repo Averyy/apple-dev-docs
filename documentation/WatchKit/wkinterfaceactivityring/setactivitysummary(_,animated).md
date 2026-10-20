@@ -1,7 +1,8 @@
 # setActivitySummary(_:animated:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the activity summary displayed by the activity ring view.
 
@@ -14,10 +15,14 @@ Sets the activity summary displayed by the activity ring view.
 func setActivitySummary(_ activitySummary: HKActivitySummary?, animated: Bool)
 ```
 
+```objc
+- (void) setActivitySummary:(HKActivitySummary *) activitySummary animated:(BOOL) animated;
+```
+
 ## Parameters
 
 - `activitySummary`: The new activity summary.
-- `animated`: If [`true`](https://developer.apple.com/documentation/swift/true), the change is animated.
+- `animated`: If [`true`](../../Swift/true.md), the change is animated.
 
 
 ---

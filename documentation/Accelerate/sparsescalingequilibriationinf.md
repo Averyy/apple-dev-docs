@@ -1,7 +1,8 @@
 # SparseScalingEquilibriationInf
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The norm equilibration scaling using infinity norm.
 
@@ -20,15 +21,20 @@ The norm equilibration scaling using infinity norm.
 var SparseScalingEquilibriationInf: SparseScaling_t { get }
 ```
 
+```c
+SparseScalingEquilibriationInf
+```
+
 ## See Also
 
-- [var SparseScalingDefault: SparseScaling_t](sparsescalingdefault.md)
+### Constants
+- [var SparseScalingDefault: SparseScaling_t](./sparsescalingdefault.md)
   Default scaling.
-- [var SparseScalingUser: SparseScaling_t](sparsescalinguser.md)
+- [var SparseScalingUser: SparseScaling_t](./sparsescalinguser.md)
   User scaling.
-- [var SparseScalingHungarianScalingOnly: SparseScaling_t](sparsescalinghungarianscalingonly.md)
+- [var SparseScalingHungarianScalingOnly: SparseScaling_t](./sparsescalinghungarianscalingonly.md)
   Scaling using the Hungarian algorithm.
-- [var SparseScalingHungarianScalingAndOrdering: SparseScaling_t](sparsescalinghungarianscalingandordering.md)
+- [var SparseScalingHungarianScalingAndOrdering: SparseScaling_t](./sparsescalinghungarianscalingandordering.md)
   Scaling and ordering using the Hungarian algorithm.
 
 

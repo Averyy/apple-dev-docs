@@ -1,14 +1,15 @@
 # kINQUIRY_PERIPHERAL_RMB_MediumRemovable
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kINQUIRY_PERIPHERAL_RMB_MediumRemovable = 0x80
 ```
 

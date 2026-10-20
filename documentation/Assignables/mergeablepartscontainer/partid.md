@@ -1,7 +1,8 @@
 # MergeablePartsContainer.PartID
 
 **Framework**: Assignables  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type for document layer IDs.
 
@@ -9,7 +10,7 @@ The type for document layer IDs.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,7 +20,8 @@ typealias PartID = MergeablePartsContainerPartID
 
 ## See Also
 
-- [var partIDs: [Self.PartID]](mergeablepartscontainer/partids.md)
+### Getting the part identifiers
+- [var partIDs: [Self.PartID]](./partids.md)
   Returns a collection of part IDs reflecting the manifest of parts available in the document.
 
 

@@ -1,7 +1,8 @@
 # init(title:message:actions:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action sheet template.
 
@@ -14,6 +15,10 @@ Creates an action sheet template.
 
 ```swift
 init(title: String?, message: String?, actions: [CPAlertAction])
+```
+
+```objc
+- (instancetype) initWithTitle:(NSString *) title message:(NSString *) message actions:(NSArray<CPAlertAction *> *) actions;
 ```
 
 #### Return Value

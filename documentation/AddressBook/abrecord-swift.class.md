@@ -1,17 +1,22 @@
 # ABRecord
 
 **Framework**: Address Book  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract class that defines the common properties for all Address Book records.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class ABRecord
+```
+
+```objc
+@interface ABRecord : NSObject
 ```
 
 #### Overview
@@ -23,54 +28,55 @@ The `ABRecord` class is “toll-free bridged” with its procedural C opaque-typ
 ## Topics
 
 ### Creating a Record
-- [init!(addressBook: ABAddressBook!)](abrecord-swift.class/init(addressbook:).md)
+- [init!(addressBook: ABAddressBook!)](./abrecord-swift.class/init%28addressbook%29.md)
   Initializes a record using the given address book.
-- [init!()](abrecord-swift.class/init.md)
+- [init!()](./abrecord-swift.class/init%28%29.md)
   Initializes a record using the shared address book.
 ### Retrieving and Setting Values
-- [func removeValue(forProperty: String!) -> Bool](abrecord-swift.class/removevalue(forproperty:).md)
+- [func removeValue(forProperty: String!) -> Bool](./abrecord-swift.class/removevalue%28forproperty%29.md)
   Removes the value for a given property.
-- [func setValue(Any!, forProperty: String!) -> Bool](abrecord-swift.class/setvalue(_:forproperty:).md)
+- [func setValue(Any!, forProperty: String!) -> Bool](./abrecord-swift.class/setvalue%28_,forproperty%29.md)
   Sets the value of a given property for a record.
-- [func setValue(Any!, forProperty: String!, error: ()) throws](abrecord-swift.class/setvalue(_:forproperty:error:).md)
+- [func setValue(Any!, forProperty: String!, error: ()) throws](./abrecord-swift.class/setvalue%28_,forproperty,error%29.md)
   Sets the value of a given property for a record, returning error information.
-- [func value(forProperty: String!) -> Any!](abrecord-swift.class/value(forproperty:).md)
+- [func value(forProperty: String!) -> Any!](./abrecord-swift.class/value%28forproperty%29.md)
   Returns the value of a given property for a record.
 ### Retrieving a Specific Record
-- [func isReadOnly() -> Bool](abrecord-swift.class/isreadonly.md)
+- [func isReadOnly() -> Bool](./abrecord-swift.class/isreadonly%28%29.md)
   Returns whether a record is read-only.
 ### Getting Identifying Information
-- [var displayName: String!](abrecord-swift.class/displayname.md)
+- [var displayName: String!](./abrecord-swift.class/displayname.md)
   A user-visible string representing the record.
-- [var uniqueId: String!](abrecord-swift.class/uniqueid.md)
+- [var uniqueId: String!](./abrecord-swift.class/uniqueid.md)
   Returns the unique ID for a record.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [ABGroup](abgroup.md)
-- [ABPerson](abperson.md)
+- [ABGroup](./abgroup.md)
+- [ABPerson](./abperson.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ABPerson](abperson.md)
+### Data Types
+- [class ABPerson](./abperson.md)
   An object that encapsulates all information about a person in the Address Book database.
-- [class ABGroup](abgroup.md)
+- [class ABGroup](./abgroup.md)
   An object that represents a group of records in the Address Book database.
-- [class ABMultiValue](abmultivalue-swift.class.md)
+- [class ABMultiValue](./abmultivalue-swift.class.md)
   An immutable representation of a property that might have multiple values.
-- [class ABMutableMultiValue](abmutablemultivalue-swift.class.md)
+- [class ABMutableMultiValue](./abmutablemultivalue-swift.class.md)
   A mutable representation of a property that might have multiple values.
-- [protocol ABImageClient](abimageclient.md)
+- [protocol ABImageClient](./abimageclient.md)
   Methods for responding to a request to load images associated with a contact.
 
 

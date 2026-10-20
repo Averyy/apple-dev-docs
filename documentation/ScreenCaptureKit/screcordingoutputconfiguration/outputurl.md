@@ -1,7 +1,8 @@
 # outputURL
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var outputURL: URL { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSURL * outputURL;
 ```
 
 

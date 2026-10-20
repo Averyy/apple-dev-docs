@@ -1,7 +1,8 @@
 # hasNextBatch
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the collection has information that allows it to fetch a subsequent batch of items.
 
@@ -19,6 +20,8 @@ A Boolean value that indicates whether the collection has information that allow
 ```swift
 var hasNextBatch: Bool { get }
 ```
+
+Available when `MusicItemType` conforms to `MusicItem`.
 
 
 ---

@@ -1,7 +1,8 @@
 # ChartScrollTargetBehaviorContext
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Contextual information that you can use to determine how to best adjust how charts scroll.
 
@@ -24,14 +25,15 @@ struct ChartScrollTargetBehaviorContext
 ## Topics
 
 ### Instance Properties
-- [var chartProxy: ChartProxy](chartscrolltargetbehaviorcontext/chartproxy.md)
+- [var chartProxy: ChartProxy](./chartscrolltargetbehaviorcontext/chartproxy.md)
   The chart proxy that you use to access the scales and plot area of the chart.
 ### Subscripts
-- [subscript<T>(dynamicMember _: KeyPath<ScrollTargetBehaviorContext, T>) -> T](chartscrolltargetbehaviorcontext/subscript(dynamicmember:).md)
+- [subscript<T>(dynamicMember _: KeyPath<ScrollTargetBehaviorContext, T>) -> T](./chartscrolltargetbehaviorcontext/subscript%28dynamicmember%29.md)
 
 ## See Also
 
-- [protocol ChartScrollTargetBehavior](chartscrolltargetbehavior.md)
+### Scrolling
+- [protocol ChartScrollTargetBehavior](./chartscrolltargetbehavior.md)
   A type that configures the scroll behavior of charts.
 
 

@@ -1,18 +1,19 @@
 # SCNPhysicsField
 
 **Framework**: SceneKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that applies forces, such as gravitation, electromagnetism, and turbulence, to physics bodies within a certain area of effect.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,89 +21,94 @@ An object that applies forces, such as gravitation, electromagnetism, and turbul
 class SCNPhysicsField
 ```
 
+```objc
+@interface SCNPhysicsField : NSObject
+```
+
 #### Overview
 
-You can create many types of field effects, such as gravitation, electromagnetism, and turbulence. To add a field effect to a scene, you create a physics field of the type you want to use and then attach it to the [`physicsField`](scnnode/physicsfield.md) property of a node in the scene.
+You can create many types of field effects, such as gravitation, electromagnetism, and turbulence. To add a field effect to a scene, you create a physics field of the type you want to use and then attach it to the [`physicsField`](./scnnode/physicsfield.md) property of a node in the scene.
 
-Physics fields can affect both [`SCNPhysicsBody`](scnphysicsbody.md) objects and the particles spawned by [`SCNParticleSystem`](scnparticlesystem.md) objects.
+Physics fields can affect both [`SCNPhysicsBody`](./scnphysicsbody.md) objects and the particles spawned by [`SCNParticleSystem`](./scnparticlesystem.md) objects.
 
 ## Topics
 
 ### Creating Physics Fields
-- [class func drag() -> SCNPhysicsField](scnphysicsfield/drag.md)
+- [class func drag() -> SCNPhysicsField](./scnphysicsfield/drag%28%29.md)
   Creates a field that slows any object in its area of effect with a force proportional to the object’s velocity.
-- [class func vortex() -> SCNPhysicsField](scnphysicsfield/vortex.md)
+- [class func vortex() -> SCNPhysicsField](./scnphysicsfield/vortex%28%29.md)
   Creates a field whose forces circulate around an axis.
-- [class func radialGravity() -> SCNPhysicsField](scnphysicsfield/radialgravity.md)
+- [class func radialGravity() -> SCNPhysicsField](./scnphysicsfield/radialgravity%28%29.md)
   Creates a field that accelerates objects toward its center.
-- [class func linearGravity() -> SCNPhysicsField](scnphysicsfield/lineargravity.md)
+- [class func linearGravity() -> SCNPhysicsField](./scnphysicsfield/lineargravity%28%29.md)
   Creates a field that accelerates objects in a specific direction.
-- [class func noiseField(smoothness: CGFloat, animationSpeed: CGFloat) -> SCNPhysicsField](scnphysicsfield/noisefield(smoothness:animationspeed:).md)
+- [class func noiseField(smoothness: CGFloat, animationSpeed: CGFloat) -> SCNPhysicsField](./scnphysicsfield/noisefield%28smoothness,animationspeed%29.md)
   Creates a field that applies random forces to objects in its area of effect.
-- [class func turbulenceField(smoothness: CGFloat, animationSpeed: CGFloat) -> SCNPhysicsField](scnphysicsfield/turbulencefield(smoothness:animationspeed:).md)
+- [class func turbulenceField(smoothness: CGFloat, animationSpeed: CGFloat) -> SCNPhysicsField](./scnphysicsfield/turbulencefield%28smoothness,animationspeed%29.md)
   Creates a field that applies random forces to objects in its area of effect, with magnitudes proportional to those objects’ velocities.
-- [class func spring() -> SCNPhysicsField](scnphysicsfield/spring.md)
+- [class func spring() -> SCNPhysicsField](./scnphysicsfield/spring%28%29.md)
   Creates a field that pulls objects toward its center with a spring-like force.
-- [class func electric() -> SCNPhysicsField](scnphysicsfield/electric.md)
+- [class func electric() -> SCNPhysicsField](./scnphysicsfield/electric%28%29.md)
   Creates a field that attracts or repels objects based on their electrical charge and on their distance from the field’s center.
-- [class func magnetic() -> SCNPhysicsField](scnphysicsfield/magnetic.md)
+- [class func magnetic() -> SCNPhysicsField](./scnphysicsfield/magnetic%28%29.md)
   Creates a field that attracts or repels objects based on their electrical charge, velocity, and distance from the field’s axis.
 ### Creating Custom Physics Fields
-- [class func customField(evaluationBlock: SCNFieldForceEvaluator) -> SCNPhysicsField](scnphysicsfield/customfield(evaluationblock:).md)
+- [class func customField(evaluationBlock: SCNFieldForceEvaluator) -> SCNPhysicsField](./scnphysicsfield/customfield%28evaluationblock%29.md)
   Creates a field that runs the specified block to determine the force a field applies to each object in its area of effect.
 ### Specifying a Field’s Area of Effect
-- [var halfExtent: SCNVector3](scnphysicsfield/halfextent.md)
+- [var halfExtent: SCNVector3](./scnphysicsfield/halfextent.md)
   A location marking the end of the field’s area of effect.
-- [var scope: SCNPhysicsFieldScope](scnphysicsfield/scope.md)
+- [var scope: SCNPhysicsFieldScope](./scnphysicsfield/scope.md)
   The area affected by the field, either inside or outside its region.
-- [var usesEllipsoidalExtent: Bool](scnphysicsfield/usesellipsoidalextent.md)
+- [var usesEllipsoidalExtent: Bool](./scnphysicsfield/usesellipsoidalextent.md)
   A Boolean value that determines whether the field’s area of effect is shaped like a box or ellipsoid.
-- [var offset: SCNVector3](scnphysicsfield/offset.md)
+- [var offset: SCNVector3](./scnphysicsfield/offset.md)
   The offset of the field’s center within its area of effect.
-- [var direction: SCNVector3](scnphysicsfield/direction.md)
+- [var direction: SCNVector3](./scnphysicsfield/direction.md)
   The field’s directional axis.
 ### Specifying a Field’s Behavior
-- [var strength: CGFloat](scnphysicsfield/strength.md)
+- [var strength: CGFloat](./scnphysicsfield/strength.md)
   A multiplier for the force that the field applies to objects in its area of effect.
-- [var falloffExponent: CGFloat](scnphysicsfield/falloffexponent.md)
+- [var falloffExponent: CGFloat](./scnphysicsfield/falloffexponent.md)
   An exponent that determines how the field’s strength diminishes with distance.
-- [var minimumDistance: CGFloat](scnphysicsfield/minimumdistance.md)
+- [var minimumDistance: CGFloat](./scnphysicsfield/minimumdistance.md)
   The minimum value for distance-based effects.
-- [var isActive: Bool](scnphysicsfield/isactive.md)
+- [var isActive: Bool](./scnphysicsfield/isactive.md)
   A Boolean value that determines whether the field’s effect is enabled.
-- [var isExclusive: Bool](scnphysicsfield/isexclusive.md)
+- [var isExclusive: Bool](./scnphysicsfield/isexclusive.md)
   A Boolean value that determines whether the field overrides other fields whose areas of effect it overlaps.
 ### Choosing Physics Bodies to Be Affected by the Field
-- [var categoryBitMask: Int](scnphysicsfield/categorybitmask.md)
+- [var categoryBitMask: Int](./scnphysicsfield/categorybitmask.md)
   A mask that defines which categories this physics field belongs to.
 ### Constants
-- [typealias SCNFieldForceEvaluator](scnfieldforceevaluator.md)
+- [typealias SCNFieldForceEvaluator](./scnfieldforceevaluator.md)
   The signature for a block that SceneKit calls to determine the effect of a custom field on an object.
-- [enum SCNPhysicsFieldScope](scnphysicsfieldscope.md)
-  Options for defining the region of space affected by a physics field, used by the [`scope`](scnphysicsfield/scope.md) property.
+- [enum SCNPhysicsFieldScope](./scnphysicsfieldscope.md)
+  Options for defining the region of space affected by a physics field, used by the [`scope`](./scnphysicsfield/scope.md) property.
 ### Initializers
-- [init?(coder: NSCoder)](scnphysicsfield/init(coder:).md)
+- [init?(coder: NSCoder)](./scnphysicsfield/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class SCNPhysicsWorld](scnphysicsworld.md)
+### Physics in a Scene
+- [class SCNPhysicsWorld](./scnphysicsworld.md)
   The global simulation of collisions, gravity, joints, and other physics effects in a scene.
-- [class SCNPhysicsBehavior](scnphysicsbehavior.md)
+- [class SCNPhysicsBehavior](./scnphysicsbehavior.md)
   The abstract superclass for joints, vehicle simulations, and other high-level behaviors that incorporate multiple physics bodies.
 
 

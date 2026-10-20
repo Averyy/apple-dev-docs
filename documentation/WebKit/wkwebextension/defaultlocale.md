@@ -1,7 +1,8 @@
 # defaultLocale
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default locale for the extension.
 
@@ -16,6 +17,10 @@ The default locale for the extension.
 
 ```swift
 var defaultLocale: Locale? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSLocale * defaultLocale;
 ```
 
 #### Discussion

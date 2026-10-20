@@ -1,7 +1,8 @@
 # verticalSizeClass
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vertical size class of the trait collection.
 
@@ -9,7 +10,7 @@ The vertical size class of the trait collection.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ The vertical size class of the trait collection.
 var verticalSizeClass: UIUserInterfaceSizeClass { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIUserInterfaceSizeClass verticalSizeClass;
+```
+
 ## Mentions
 
-- [Adapting your app when traits change](adapting-your-app-when-traits-change.md)
+- [Adapting your app when traits change](../adapting-your-app-when-traits-change.md)
 
 #### Discussion
 
-The default vertical size class for a trait collection is [`UIUserInterfaceSizeClass.unspecified`](uiuserinterfacesizeclass/unspecified.md).
+The default vertical size class for a trait collection is [`UIUserInterfaceSizeClass.unspecified`](../uiuserinterfacesizeclass/unspecified.md).
 
 ## See Also
 
-- [var horizontalSizeClass: UIUserInterfaceSizeClass](uitraitcollection/horizontalsizeclass.md)
+### Retrieving size class traits
+- [var horizontalSizeClass: UIUserInterfaceSizeClass](./horizontalsizeclass.md)
   The horizontal size class of the trait collection.
-- [enum UIUserInterfaceSizeClass](uiuserinterfacesizeclass.md)
+- [enum UIUserInterfaceSizeClass](../uiuserinterfacesizeclass.md)
   Constants that indicate the size class of a view.
 
 

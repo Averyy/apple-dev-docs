@@ -1,7 +1,8 @@
 # applying(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a configuration object by applying the values from the configuration you specify.
 
@@ -12,6 +13,10 @@ Creates a configuration object by applying the values from the configuration you
 
 ```swift
 func applying(_ configuration: NSImage.SymbolConfiguration) -> Self
+```
+
+```objc
+- (instancetype) configurationByApplyingConfiguration:(NSImageSymbolConfiguration *) configuration;
 ```
 
 #### Return Value

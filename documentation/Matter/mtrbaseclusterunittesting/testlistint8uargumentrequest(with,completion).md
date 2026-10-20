@@ -1,7 +1,8 @@
 # testListInt8UArgumentRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func testListInt8UArgumentRequest(with params: MTRUnitTestingClusterTestListInt8UArgumentRequestParams, completion: @escaping @Sendable (MTRUnitTestingClusterBooleanResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func testListInt8UArgumentRequest(with params: MTRUnitTestingClusterTestListInt8UArgumentRequestParams) async throws -> MTRUnitTestingClusterBooleanResponseParams
+```
+
+```objc
+- (void) testListInt8UArgumentRequestWithParams:(MTRUnitTestingClusterTestListInt8UArgumentRequestParams *) params completion:(void (^)(MTRUnitTestingClusterBooleanResponseParams *data, NSError *error)) completion;
 ```
 
 

@@ -1,13 +1,14 @@
 # Equatable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func != (borrowing Self, borrowing Self) -> Bool](discontiguousslice/index/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [static func == (DiscontiguousSlice<Base>.Index, DiscontiguousSlice<Base>.Index) -> Bool](discontiguousslice/index/==(_:_:).md)
+- [static func == (DiscontiguousSlice<Base>.Index, DiscontiguousSlice<Base>.Index) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
 
 

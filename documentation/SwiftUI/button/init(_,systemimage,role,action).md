@@ -1,7 +1,8 @@
 # init(_:systemImage:role:action:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button with a specified role that generates its label from a localized string key and a system image.
 
@@ -21,9 +22,23 @@ Creates a button with a specified role that generates its label from a localized
 nonisolated init(_ titleKey: LocalizedStringKey, systemImage: String, role: ButtonRole?, action: @escaping @MainActor () -> Void)
 ```
 
+Available when `Label` is `Label<Text, Image>`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, systemImage: String, role: ButtonRole?, action: @escaping @MainActor () -> Void)
+```
+
+```swift
+@export(implementation)
+nonisolated init<S>(_ title: S, systemImage: String, role: ButtonRole?, action: @escaping @MainActor () -> Void) where S : StringProtocol
+```
+
 #### Discussion
 
-This initializer creates a [`Label`](label.md) view on your behalf, and treats the localized key similar to [`init(_:tableName:bundle:comment:)`](text/init(_:tablename:bundle:comment:).md). See [`Text`](text.md) for more information about localizing strings.
+This initializer creates a [`Label`](../label.md) view on your behalf, and treats the localized key similar to [`init(_:tableName:bundle:comment:)`](../text/init%28_,tablename,bundle,comment%29.md). See [`Text`](../text.md) for more information about localizing strings.
 
 ## Parameters
 
@@ -34,11 +49,12 @@ This initializer creates a [`Label`](label.md) view on your behalf, and treats t
 
 ## See Also
 
-- [init(role: ButtonRole?, action: () -> Void, label: () -> Label)](button/init(role:action:label:).md)
+### Creating a button with a role
+- [init(role: ButtonRole?, action: () -> Void, label: () -> Label)](./init%28role,action,label%29.md)
   Creates a button with a specified role that displays a custom label.
-- [init(_:role:action:)](button/init(_:role:action:).md)
+- [init(_:role:action:)](./init%28_,role,action%29.md)
   Creates a button with a specified role that generates its label from a localized string resource.
-- [init(_:image:role:action:)](button/init(_:image:role:action:).md)
+- [init(_:image:role:action:)](./init%28_,image,role,action%29.md)
   Creates a button with a specified role that generates its label from a localized string resource and an image resource.
 
 

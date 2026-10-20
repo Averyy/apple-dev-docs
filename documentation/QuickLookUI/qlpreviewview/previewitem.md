@@ -1,7 +1,8 @@
 # previewItem
 
 **Framework**: Quick Look UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item to preview.
 
@@ -14,17 +15,22 @@ The item to preview.
 var previewItem: (any QLPreviewItem)! { get set }
 ```
 
+```objc
+@property (retain) id<QLPreviewItem> previewItem;
+```
+
 #### Discussion
 
-Quick Look requires Items you wish to conform to the [`QLPreviewItem`](qlpreviewitem.md) protocol. When you set this property, the [`QLPreviewView`](qlpreviewview.md) loads the preview asynchronously. Due to this asynchronous behavior, don’t assume that the preview is ready immediately after assigning it to this property.
+Quick Look requires Items you wish to conform to the [`QLPreviewItem`](../qlpreviewitem.md) protocol. When you set this property, the [`QLPreviewView`](../qlpreviewview.md) loads the preview asynchronously. Due to this asynchronous behavior, don’t assume that the preview is ready immediately after assigning it to this property.
 
 ## See Also
 
-- [func refreshPreviewItem()](qlpreviewview/refreshpreviewitem.md)
+### Displaying a Preview
+- [func refreshPreviewItem()](./refreshpreviewitem%28%29.md)
   Updates the preview to display the currently previewed item.
-- [var displayState: Any!](qlpreviewview/displaystate.md)
-  The current display state of the [`previewItem`](qlpreviewview/previewitem.md).
-- [var autostarts: Bool](qlpreviewview/autostarts.md)
+- [var displayState: Any!](./displaystate.md)
+  The current display state of the [`previewItem`](./previewitem.md).
+- [var autostarts: Bool](./autostarts.md)
   A Boolean value that determines whether the preview starts automatically.
 
 

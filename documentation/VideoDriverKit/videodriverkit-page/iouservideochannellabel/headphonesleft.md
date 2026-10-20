@@ -1,20 +1,22 @@
 # HeadphonesLeft
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 HeadphonesLeft
 ```
 
 ## See Also
 
-- [HeadphonesRight](videodriverkit/iouservideochannellabel/headphonesright.md)
+### Headphone channels
+- [HeadphonesRight](./headphonesright.md)
 
 
 ---

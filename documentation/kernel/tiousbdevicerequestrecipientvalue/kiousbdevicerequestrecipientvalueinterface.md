@@ -1,7 +1,8 @@
 # kIOUSBDeviceRequestRecipientValueInterface
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The recipient interface value.
 
@@ -10,7 +11,7 @@ The recipient interface value.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestRecipientValueInterface = 1
 ```
 

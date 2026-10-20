@@ -1,7 +1,8 @@
 # AVAudioEnvironmentDistanceAttenuationModel.exponential
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An exponential model that describes the drop-off in gain as the source moves away from the listener.
 
@@ -10,7 +11,7 @@ An exponential model that describes the drop-off in gain as the source moves awa
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ An exponential model that describes the drop-off in gain as the source moves awa
 case exponential
 ```
 
+```c
+AVAudioEnvironmentDistanceAttenuationModelExponential
+```
+
 #### Discussion
 
 The framework calculates this value as `distanceGain = (distance / referenceDistance) ^ (-rolloffFactor)`.
 
 ## See Also
 
-- [AVAudioEnvironmentDistanceAttenuationModel.inverse](avaudioenvironmentdistanceattenuationmodel/inverse.md)
+### Choosing an attenuation model
+- [AVAudioEnvironmentDistanceAttenuationModel.inverse](./inverse.md)
   An inverse model that describes the drop-off in gain as the source moves away from the listener.
-- [AVAudioEnvironmentDistanceAttenuationModel.linear](avaudioenvironmentdistanceattenuationmodel/linear.md)
+- [AVAudioEnvironmentDistanceAttenuationModel.linear](./linear.md)
   A linear model that describes the drop-off in gain as the source moves away from the listener.
 
 

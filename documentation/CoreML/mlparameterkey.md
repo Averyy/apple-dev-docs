@@ -1,7 +1,8 @@
 # MLParameterKey
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The keys for the parameter dictionary in a model configuration or a model update context.
 
@@ -20,97 +21,102 @@ The keys for the parameter dictionary in a model configuration or a model update
 class MLParameterKey
 ```
 
+```objc
+@interface MLParameterKey : MLKey
+```
+
 #### Overview
 
-Use an [`MLParameterKey`](mlparameterkey.md) to retrieve a model’s parameter value using:
+Use an [`MLParameterKey`](./mlparameterkey.md) to retrieve a model’s parameter value using:
 
-- The model’s [`parameterValue(for:)`](mlmodel/parametervalue(for:).md) method
-- The [`parameters`](mlmodelconfiguration/parameters.md) dictionary of an [`MLModelConfiguration`](mlmodelconfiguration.md)
-- The [`parameters`](mlupdatecontext/parameters.md) dictionary of an [`MLUpdateContext`](mlupdatecontext.md)
+- The model’s [`parameterValue(for:)`](./mlmodel/parametervalue%28for%29.md) method
+- The [`parameters`](./mlmodelconfiguration/parameters.md) dictionary of an [`MLModelConfiguration`](./mlmodelconfiguration.md)
+- The [`parameters`](./mlupdatecontext/parameters.md) dictionary of an [`MLUpdateContext`](./mlupdatecontext.md)
 
-> **Note**:  To access the parameter of a specific model within a pipeline model, use the parameter key’s [`scoped(to:)`](mlparameterkey/scoped(to:).md) method with the model’s name.
+> **Note**:  To access the parameter of a specific model within a pipeline model, use the parameter key’s [`scoped(to:)`](./mlparameterkey/scoped%28to%29.md) method with the model’s name.
 
-##### Overriding Model and Layer Parameters
+##### Overriding model and layer parameters
 
 To override a model’s default parameter values:
 
-1. Create an [`MLModelConfiguration`](mlmodelconfiguration.md) instance.
-2. Use an [`MLParameterKey`](mlparameterkey.md) for each parameter to set its value in the model configuration’s [`parameters`](mlmodelconfiguration/parameters.md) dictionary.
-3. Create a new model instance using [`init(contentsOf:configuration:)`](mlmodel/init(contentsof:configuration:).md) with your custom model configuration.
+1. Create an [`MLModelConfiguration`](./mlmodelconfiguration.md) instance.
+2. Use an [`MLParameterKey`](./mlparameterkey.md) for each parameter to set its value in the model configuration’s [`parameters`](./mlmodelconfiguration/parameters.md) dictionary.
+3. Create a new model instance using [`init(contentsOf:configuration:)`](./mlmodel/init%28contentsof,configuration%29.md) with your custom model configuration.
 
-##### Configuring Update Parameters
+##### Configuring update parameters
 
-To configure the update parameters for an [`MLUpdateTask`](mlupdatetask.md):
+To configure the update parameters for an [`MLUpdateTask`](./mlupdatetask.md):
 
-1. Create an [`MLModelConfiguration`](mlmodelconfiguration.md) instance.
-2. Use an [`MLParameterKey`](mlparameterkey.md) for each parameter to set its value in the model configuration’s [`parameters`](mlmodelconfiguration/parameters.md) dictionary.
+1. Create an [`MLModelConfiguration`](./mlmodelconfiguration.md) instance.
+2. Use an [`MLParameterKey`](./mlparameterkey.md) for each parameter to set its value in the model configuration’s [`parameters`](./mlmodelconfiguration/parameters.md) dictionary.
 3. Create a new update task with your custom model configuration.
 
-See [`Personalizing a Model with On-Device Updates`](personalizing-a-model-with-on-device-updates.md).
+See [Personalizing a Model with On-Device Updates](./personalizing-a-model-with-on-device-updates.md).
 
 ## Topics
 
 ### Scoping parameter keys
-- [func scoped(to: String) -> MLParameterKey](mlparameterkey/scoped(to:).md)
+- [func scoped(to: String) -> MLParameterKey](./mlparameterkey/scoped%28to%29.md)
   Creates a copy of a parameter key and adds the scope to it.
 ### Accessing model parameters
-- [class var numberOfNeighbors: MLParameterKey](mlparameterkey/numberofneighbors.md)
+- [class var numberOfNeighbors: MLParameterKey](./mlparameterkey/numberofneighbors.md)
   The key you use to access the number of neighbors that adjusts the affinity of a k-nearest-neighbor model.
-- [class var linkedModelFileName: MLParameterKey](mlparameterkey/linkedmodelfilename.md)
+- [class var linkedModelFileName: MLParameterKey](./mlparameterkey/linkedmodelfilename.md)
   The key you use to access the linked model’s filename.
-- [class var linkedModelSearchPath: MLParameterKey](mlparameterkey/linkedmodelsearchpath.md)
+- [class var linkedModelSearchPath: MLParameterKey](./mlparameterkey/linkedmodelsearchpath.md)
   The key you use to access the linked model’s search path.
 ### Accessing neural network layer parameters
-- [class var weights: MLParameterKey](mlparameterkey/weights.md)
+- [class var weights: MLParameterKey](./mlparameterkey/weights.md)
   The key you use to access the weights of a layer in a neural network model.
-- [class var biases: MLParameterKey](mlparameterkey/biases.md)
+- [class var biases: MLParameterKey](./mlparameterkey/biases.md)
   The key you use to access the biases of a layer in a neural network model.
 ### Accessing model update parameters
-- [class var learningRate: MLParameterKey](mlparameterkey/learningrate.md)
+- [class var learningRate: MLParameterKey](./mlparameterkey/learningrate.md)
   The key you use to access the optimizer’s learning rate parameter.
-- [class var momentum: MLParameterKey](mlparameterkey/momentum.md)
+- [class var momentum: MLParameterKey](./mlparameterkey/momentum.md)
   The key you use to access the stochastic gradient descent (SGD) optimizer’s momentum parameter.
-- [class var miniBatchSize: MLParameterKey](mlparameterkey/minibatchsize.md)
+- [class var miniBatchSize: MLParameterKey](./mlparameterkey/minibatchsize.md)
   The key you use to access the optimizer’s mini batch-size parameter.
-- [class var beta1: MLParameterKey](mlparameterkey/beta1.md)
+- [class var beta1: MLParameterKey](./mlparameterkey/beta1.md)
   The key you use to access the Adam optimizer’s first beta parameter.
-- [class var beta2: MLParameterKey](mlparameterkey/beta2.md)
+- [class var beta2: MLParameterKey](./mlparameterkey/beta2.md)
   The key you use to access the Adam optimizer’s second beta parameter.
-- [class var eps: MLParameterKey](mlparameterkey/eps.md)
+- [class var eps: MLParameterKey](./mlparameterkey/eps.md)
   The key you use to access the Adam optimizer’s epsilon parameter.
-- [class var epochs: MLParameterKey](mlparameterkey/epochs.md)
+- [class var epochs: MLParameterKey](./mlparameterkey/epochs.md)
   The key you use to access the optimizer’s epochs parameter.
-- [class var shuffle: MLParameterKey](mlparameterkey/shuffle.md)
+- [class var shuffle: MLParameterKey](./mlparameterkey/shuffle.md)
   The key you use to access the shuffle parameter, a Boolean value that determines whether the model randomizes the data between epochs.
-- [class var seed: MLParameterKey](mlparameterkey/seed.md)
+- [class var seed: MLParameterKey](./mlparameterkey/seed.md)
   The key you use to access the seed parameter that initializes the random number generator for the shuffle option.
 
 ## Relationships
 
 ### Inherits From
-- [MLKey](mlkey.md)
+- [MLKey](./mlkey.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [static var availableComputeDevices: [MLComputeDevice]](mlmodel/availablecomputedevices-6klyt.md)
+### Inspecting a model
+- [static var availableComputeDevices: [MLComputeDevice]](./mlmodel/availablecomputedevices-6klyt.md)
   The list of available compute devices that the model’s prediction methods use.
-- [var configuration: MLModelConfiguration](mlmodel/configuration.md)
+- [var configuration: MLModelConfiguration](./mlmodel/configuration.md)
   The configuration of the model set during initialization.
-- [var modelDescription: MLModelDescription](mlmodel/modeldescription.md)
+- [var modelDescription: MLModelDescription](./mlmodel/modeldescription.md)
   Model information you use at runtime during development, which Xcode also displays in its Core ML model editor view.
-- [class MLModelDescription](mlmodeldescription.md)
+- [class MLModelDescription](./mlmodeldescription.md)
   Information about a model, primarily the input and output format for each feature the model expects, and optional metadata.
-- [func parameterValue(for: MLParameterKey) throws -> Any](mlmodel/parametervalue(for:).md)
+- [func parameterValue(for: MLParameterKey) throws -> Any](./mlmodel/parametervalue%28for%29.md)
   Returns a model parameter value for a key.
 
 

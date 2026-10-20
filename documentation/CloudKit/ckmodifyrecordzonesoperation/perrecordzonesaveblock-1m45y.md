@@ -1,7 +1,8 @@
 # perRecordZoneSaveBlock
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure to execute when CloudKit saves a record zone.
 
@@ -11,7 +12,7 @@ The closure to execute when CloudKit saves a record zone.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -25,10 +26,12 @@ var perRecordZoneSaveBlock: ((CKRecordZone.ID, Result<CKRecordZone, any Error>) 
 This property is a closure that returns no value and has the following parameters:
 
 - The ID of the record zone that CloudKit saves.
-- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either - The record zone that CloudKit saves
-- An error that provides information about a failure saving the record zone.
+- A [`Result`](../../Swift/result.md) that contains either
 
-The closure executes once for each record zone in the [`recordZonesToSave`](ckmodifyrecordzonesoperation/recordzonestosave.md) property. Each time the closure executes, it executes serially with respect to the other record zone completion blocks of the operation.
+  - The record zone that CloudKit saves
+  - An error that provides information about a failure saving the record zone.
+
+The closure executes once for each record zone in the [`recordZonesToSave`](./recordzonestosave.md) property. Each time the closure executes, it executes serially with respect to the other record zone completion blocks of the operation.
 
 If you intend to use this closure to process results, set it before you execute the operation or submit the operation to a queue.
 

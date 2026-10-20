@@ -2,6 +2,7 @@
 
 **Framework**: ContactProvider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides an array of new and updated contact items to the observer.
@@ -18,7 +19,7 @@ func didUpdate(_ items: [ContactItem])
 
 #### Discussion
 
-You can call this method multiple times to fulfill the [`suggestedBatchSize`](contactitemchangeobserver/suggestedbatchsize.md). The observer creates the new contact items and updates the existing contact items with their new values.
+You can call this method multiple times to fulfill the [`suggestedBatchSize`](./suggestedbatchsize.md). The observer creates the new contact items and updates the existing contact items with their new values.
 
 ## Parameters
 
@@ -26,11 +27,12 @@ You can call this method multiple times to fulfill the [`suggestedBatchSize`](co
 
 ## See Also
 
-- [enum ContactItem](contactitem.md)
+### Providing change data
+- [enum ContactItem](../contactitem.md)
   An item in the contact database.
-- [func didDelete([ContactItem.Identifier])](contactitemchangeobserver/diddelete(_:).md)
+- [func didDelete([ContactItem.Identifier])](./diddelete%28_%29.md)
   Provides an array of deleted contact item identifiers to the observer.
-- [ContactItem.Identifier](contactitem/identifier.md)
+- [ContactItem.Identifier](../contactitem/identifier.md)
   The app’s identifier for an item in the contact database.
 
 

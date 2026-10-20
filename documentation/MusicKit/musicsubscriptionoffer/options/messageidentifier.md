@@ -1,7 +1,8 @@
 # messageIdentifier
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier for selecting the main message that the subscription offer sheet presents to the user.
 
@@ -19,7 +20,7 @@ var messageIdentifier: MusicSubscriptionOffer.MessageIdentifier
 
 #### Discussion
 
-Defaults to [`join`](musicsubscriptionoffer/messageidentifier/join.md).
+Defaults to [`join`](../messageidentifier/join.md).
 
 
 ---

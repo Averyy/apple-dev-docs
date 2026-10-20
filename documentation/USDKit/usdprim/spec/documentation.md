@@ -1,7 +1,8 @@
 # documentation
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authored documentation, or `nil` if not authored.
 

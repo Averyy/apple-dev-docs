@@ -1,7 +1,8 @@
 # Prewarm
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A flag that indicates starting or stopping for prewarming.
 
@@ -10,7 +11,7 @@ A flag that indicates starting or stopping for prewarming.
 
 ## Declaration
 
-```swift
+```c
 Prewarm
 ```
 
@@ -20,7 +21,8 @@ This option causes the minimal enabling or disabling of hardware, to minimize th
 
 ## See Also
 
-- [None](videodriverkit/iouservideostartstopflags/none.md)
+### Start/stop behaviors
+- [None](./none.md)
   A flag that indicates starting or stopping for normal I/O operation.
 
 

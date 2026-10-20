@@ -1,7 +1,8 @@
 # HMCharacteristicValueTargetDoorState.open
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An open door.
 
@@ -19,9 +20,14 @@ An open door.
 case open
 ```
 
+```c
+HMCharacteristicValueTargetDoorStateOpen
+```
+
 ## See Also
 
-- [HMCharacteristicValueTargetDoorState.closed](hmcharacteristicvaluetargetdoorstate/closed.md)
+### Door States
+- [HMCharacteristicValueTargetDoorState.closed](./closed.md)
   A closed door.
 
 

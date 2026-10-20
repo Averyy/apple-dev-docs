@@ -1,7 +1,8 @@
 # png
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The PNG image format.
 

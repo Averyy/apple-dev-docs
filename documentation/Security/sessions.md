@@ -1,6 +1,7 @@
 # Sessions
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: API Collection
 
 Manage login, authorization, and security sessions in macOS.
 
@@ -11,21 +12,21 @@ Use the `Security.AuthSession` API to work with session management and inquiry f
 ## Topics
 
 ### Creating a Session
-- [func SessionCreate(SessionCreationFlags, SessionAttributeBits) -> OSStatus](sessioncreate(_:_:).md)
+- [func SessionCreate(SessionCreationFlags, SessionAttributeBits) -> OSStatus](./sessioncreate%28_,_%29.md)
   Creates a security session.
-- [struct SessionCreationFlags](sessioncreationflags.md)
+- [struct SessionCreationFlags](./sessioncreationflags.md)
   The flags that affect the creation of a security session.
-- [struct SessionAttributeBits](sessionattributebits.md)
+- [struct SessionAttributeBits](./sessionattributebits.md)
   The attributes of a security session.
 ### Session Information
-- [func SessionGetInfo(SecuritySessionId, UnsafeMutablePointer<SecuritySessionId>?, UnsafeMutablePointer<SessionAttributeBits>?) -> OSStatus](sessiongetinfo(_:_:_:).md)
+- [func SessionGetInfo(SecuritySessionId, UnsafeMutablePointer<SecuritySessionId>?, UnsafeMutablePointer<SessionAttributeBits>?) -> OSStatus](./sessiongetinfo%28_,_,_%29.md)
   Obtains information about a security session.
-- [Session ID Values](session-id-values.md)
+- [Session ID Values](./session-id-values.md)
   Use these values as placeholders for specific sessions.
-- [typealias SecuritySessionId](securitysessionid.md)
+- [typealias SecuritySessionId](./securitysessionid.md)
   A type that contains an authorization session identifier.
 ### Result Codes
-- [Sessions API Result Codes](sessions-api-result-codes.md)
+- [Sessions API Result Codes](./sessions-api-result-codes.md)
   Recognize result codes specific to the sessions API.
 
 

@@ -1,14 +1,15 @@
 # kIOUSBEndpointDescriptorPacketSizeMultPhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBEndpointDescriptorPacketSizeMultPhase = IOUSBBitRangePhase(11, 12)
 ```
 

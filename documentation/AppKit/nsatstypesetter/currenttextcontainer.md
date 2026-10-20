@@ -1,12 +1,13 @@
 # currentTextContainer
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text container for the text being typeset.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The text container for the text being typeset.
 unowned(unsafe) var currentTextContainer: NSTextContainer? { get }
 ```
 
+```objc
+@property (assign, readonly, nullable) NSTextContainer * currentTextContainer;
+```
+
 ## See Also
 
-- [var lineFragmentPadding: CGFloat](nsatstypesetter/linefragmentpadding.md)
+### Getting the text container
+- [var lineFragmentPadding: CGFloat](./linefragmentpadding.md)
   The amount (in points) by which text is inset within line fragment rectangles.
 
 

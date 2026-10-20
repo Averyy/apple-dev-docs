@@ -1,7 +1,8 @@
 # accessibilityDragPoint(_:description:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The point an assistive technology should use to begin a drag interaction.
 
@@ -17,6 +18,25 @@ The point an assistive technology should use to begin a drag interaction.
 ```swift
 @export(implementation)
 nonisolated func accessibilityDragPoint(_ point: UnitPoint, description: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Content, Modifier>
+```
+
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityDragPoint(_ point: UnitPoint, description: LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityDragPoint(_ point: UnitPoint, description: Text, isEnabled: Bool) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityDragPoint<S>(_ point: UnitPoint, description: S, isEnabled: Bool) -> ModifiedContent<Content, Modifier> where S : StringProtocol
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # interfaceNames()
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 13.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func interfaceNames() -> [String]?
+```
+
+```objc
+- (NSArray<NSString *> *) interfaceNames;
 ```
 
 

@@ -1,7 +1,8 @@
 # callAsFunction(contentType:prepareDocument:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a new document window with preset contents.
 
@@ -17,7 +18,7 @@ Presents a new document window with preset contents.
 
 #### Discussion
 
-Don’t call this method directly. SwiftUI calls it when you call the [`newDocument`](environmentvalues/newdocument.md) action.
+Don’t call this method directly. SwiftUI calls it when you call the [`newDocument`](../environmentvalues/newdocument.md) action.
 
 For example, a Todo app might have a way to create a sample prepopulated Todo list as a part of onboarding experience:
 
@@ -35,7 +36,7 @@ newDocument(contentType: .todoList) { modelContext in
 }
 ```
 
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
+For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [Methods with Special Names](https://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
 
 ## Parameters
 
@@ -44,9 +45,10 @@ For information about how Swift uses the `callAsFunction()` method to simplify c
 
 ## See Also
 
-- [func callAsFunction(_:)](newdocumentaction/callasfunction(_:).md)
+### Calling the action
+- [func callAsFunction(_:)](./callasfunction%28_%29.md)
   Presents a new document window.
-- [func callAsFunction(contentType: UTType)](newdocumentaction/callasfunction(contenttype:).md)
+- [func callAsFunction(contentType: UTType)](./callasfunction%28contenttype%29.md)
   Presents a new document window.
 
 

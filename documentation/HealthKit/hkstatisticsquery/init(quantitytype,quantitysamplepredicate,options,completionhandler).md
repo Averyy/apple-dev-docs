@@ -1,17 +1,18 @@
 # init(quantityType:quantitySamplePredicate:options:completionHandler:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a statistics query instance that performs the specified calculations over the matching samples in the HeathKit store.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,9 +20,13 @@ Initializes a statistics query instance that performs the specified calculations
 init(quantityType: HKQuantityType, quantitySamplePredicate: NSPredicate?, options: HKStatisticsOptions = [], completionHandler handler: @escaping @Sendable (HKStatisticsQuery, HKStatistics?, (any Error)?) -> Void)
 ```
 
+```objc
+- (instancetype) initWithQuantityType:(HKQuantityType *) quantityType quantitySamplePredicate:(NSPredicate *) quantitySamplePredicate options:(HKStatisticsOptions) options completionHandler:(void (^)(HKStatisticsQuery *query, HKStatistics *result, NSError *error)) handler;
+```
+
 ## Mentions
 
-- [Executing Statistical Queries](executing-statistical-queries.md)
+- [Executing Statistical Queries](../executing-statistical-queries.md)
 
 #### Return Value
 
@@ -35,16 +40,19 @@ After instantiating the query, call the `HKHealthStore` class’s `executeQuery:
 
 ## Parameters
 
-- `quantityType`: The type of sample to search for. This type must be an instance of the [`HKQuantityType`](hkquantitytype.md) class. You cannot perform statistics queries using other sample types.
+- `quantityType`: The type of sample to search for. This type must be an instance of the [`HKQuantityType`](../hkquantitytype.md) class. You cannot perform statistics queries using other sample types.
 - `quantitySamplePredicate`: A predicate that limits the results returned by the query. You can pass `nil` if you want to perform the statistical calculation over all the samples of the specified type.
-- `options`: A list of options that define the type of statistical calculations performed and the way in which data from multiple sources are merged. For a list of valid options, see [`HKStatisticsOptions`](hkstatisticsoptions.md).
-- `handler`: A block that is called after the statistical calculations are complete. This block takes the following arguments: - **query**: A reference to the query calling this block.
-- **results**: A HealthKit statistics object that contains the requested statistical data, or `nil` if an error occurs.
-- **error**: If an error occurs, this parameter contains an object describing the error; otherwise, it is `nil`.
+- `options`: A list of options that define the type of statistical calculations performed and the way in which data from multiple sources are merged. For a list of valid options, see [`HKStatisticsOptions`](../hkstatisticsoptions.md).
+- `handler`: A block that is called after the statistical calculations are complete. This block takes the following arguments:
+
+  - **query**: A reference to the query calling this block.
+  - **results**: A HealthKit statistics object that contains the requested statistical data, or `nil` if an error occurs.
+  - **error**: If an error occurs, this parameter contains an object describing the error; otherwise, it is `nil`.
 
 ## See Also
 
-- [Executing Statistical Queries](executing-statistical-queries.md)
+### Creating Statistics Queries
+- [Executing Statistical Queries](../executing-statistical-queries.md)
   Create and run statistical queries.
 
 

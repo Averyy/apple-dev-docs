@@ -1,7 +1,8 @@
 # withMemoryRebound(to:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes the given closure while temporarily binding the buffer slice to instances of type `T`.
 
@@ -19,6 +20,8 @@ Executes the given closure while temporarily binding the buffer slice to instanc
 ```swift
 func withMemoryRebound<T, E, Result>(to type: T.Type, _ body: (UnsafeBufferPointer<T>) throws(E) -> Result) throws(E) -> Result where E : Error, T : ~Copyable, Result : ~Copyable
 ```
+
+Available when `Base` is `UnsafeRawBufferPointer`.
 
 #### Return Value
 
@@ -41,7 +44,9 @@ After executing `body`, this method rebinds memory back to its original binding 
 ## Parameters
 
 - `type`: The type to temporarily bind the memory referenced by this buffer slice.
-- `body`: A closure that takes a typed pointer to the same memory as this pointer, only bound to type `T`. The closure’s pointer argument is valid only for the duration of the closure’s execution. If `body` has a return value, that value is also used as the return value for the `withMemoryRebound(to:capacity:_:)` method. - type buffer: The buffer temporarily bound to instances of `T`.
+- `body`: A closure that takes a typed pointer to the same memory as this pointer, only bound to type `T`. The closure’s pointer argument is valid only for the duration of the closure’s execution. If `body` has a return value, that value is also used as the return value for the `withMemoryRebound(to:capacity:_:)` method.
+
+  - type buffer: The buffer temporarily bound to instances of `T`.
 
 
 ---

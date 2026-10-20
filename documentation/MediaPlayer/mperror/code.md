@@ -1,7 +1,8 @@
 # MPError.Code
 
 **Framework**: Media Player  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that represents error codes for framework operations.
 
@@ -20,44 +21,49 @@ An enumeration that represents error codes for framework operations.
 enum Code
 ```
 
+```c
+enum MPErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [MPError.Code.cancelled](mperror/code/cancelled.md)
+- [MPError.Code.cancelled](./code/cancelled.md)
   An error that indicates the system canceled the requested operation before it completed.
-- [MPError.Code.cloudServiceCapabilityMissing](mperror/code/cloudservicecapabilitymissing.md)
+- [MPError.Code.cloudServiceCapabilityMissing](./code/cloudservicecapabilitymissing.md)
   An error that indicates the operation can’t complete because iCloud services aren’t enabled.
-- [MPError.Code.networkConnectionFailed](mperror/code/networkconnectionfailed.md)
+- [MPError.Code.networkConnectionFailed](./code/networkconnectionfailed.md)
   An error that indicates the operation failed because the device can’t connect to the network.
-- [MPError.Code.notFound](mperror/code/notfound.md)
+- [MPError.Code.notFound](./code/notfound.md)
   An error that indicates the operation failed because the system can’t find the requested identifier in the current storefront.
-- [MPError.Code.notSupported](mperror/code/notsupported.md)
+- [MPError.Code.notSupported](./code/notsupported.md)
   An error that indicates the requested operation failed because the system doesn’t support it.
-- [MPError.Code.permissionDenied](mperror/code/permissiondenied.md)
+- [MPError.Code.permissionDenied](./code/permissiondenied.md)
   An error that indicates the operation can’t complete because the user doesn’t have permission to execute the operation.
-- [MPError.Code.requestTimedOut](mperror/code/requesttimedout.md)
+- [MPError.Code.requestTimedOut](./code/requesttimedout.md)
   An error that indicates the requested operation timed out.
-- [MPError.Code.unknown](mperror/code/unknown.md)
+- [MPError.Code.unknown](./code/unknown.md)
   An error that indicates the requested operation can’t complete due to an unknown error.
 ### Initializers
-- [init?(rawValue: Int)](mperror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var errorDomain: String](mperror/errordomain.md)
-- [let MPErrorDomain: String](mperrordomain.md)
+### Inspecting an error
+- [static var errorDomain: String](./errordomain.md)
+- [let MPErrorDomain: String](../mperrordomain.md)
   The Media Player framework error domain.
-- [Error constants](error-constants.md)
+- [Error constants](../error-constants.md)
   Error code constants for framework operations.
 
 

@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceContentURLArtwork
 
 **Framework**: AVKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An artwork subclass that references artwork via a URL and content type.
 
@@ -16,38 +17,43 @@ An artwork subclass that references artwork via a URL and content type.
 class AVPlaybackUserInterfaceContentURLArtwork
 ```
 
+```objc
+@interface AVPlaybackUserInterfaceContentURLArtwork : AVPlaybackUserInterfaceContentArtwork
+```
+
 ## Topics
 
 ### Instance Properties
-- [var contentType: UTType](avplaybackuserinterfacecontenturlartwork/contenttype.md)
+- [var contentType: UTType](./avplaybackuserinterfacecontenturlartwork/contenttype.md)
   The uniform type identifier for the artwork image data.
-- [var url: URL](avplaybackuserinterfacecontenturlartwork/url.md)
+- [var url: URL](./avplaybackuserinterfacecontenturlartwork/url.md)
   URL pointing to the artwork image resource.
 
 ## Relationships
 
 ### Inherits From
-- [AVPlaybackUserInterfaceContentArtwork](avplaybackuserinterfacecontentartwork.md)
+- [AVPlaybackUserInterfaceContentArtwork](./avplaybackuserinterfacecontentartwork.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AVPlaybackUserInterfaceMetadataProviding](avplaybackuserinterfacemetadataproviding-814y4.md)
+### Content metadata
+- [protocol AVPlaybackUserInterfaceMetadataProviding](./avplaybackuserinterfacemetadataproviding-814y4.md)
   Provides metadata information about media content including title, artwork, and content type.
-- [struct AVPlaybackUserInterfaceContentMetadata](avplaybackuserinterfacecontentmetadata-swift.struct.md)
+- [struct AVPlaybackUserInterfaceContentMetadata](./avplaybackuserinterfacecontentmetadata-swift.struct.md)
   A Swift-friendly structure representing media metadata.
-- [class AVPlaybackUserInterfaceContentArtwork](avplaybackuserinterfacecontentartwork.md)
+- [class AVPlaybackUserInterfaceContentArtwork](./avplaybackuserinterfacecontentartwork.md)
   Base class representing artwork or cover art for media content.
 
 

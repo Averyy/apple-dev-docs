@@ -1,7 +1,8 @@
 # VNElementType
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of the type of element in feature print data.
 
@@ -19,33 +20,38 @@ An enumeration of the type of element in feature print data.
 enum VNElementType
 ```
 
+```c
+enum VNElementType : NSUInteger;
+```
+
 ## Topics
 
 ### Element Types
-- [VNElementType.unknown](vnelementtype/unknown.md)
+- [VNElementType.unknown](./vnelementtype/unknown.md)
   The element type isn’t known.
-- [VNElementType.float](vnelementtype/float.md)
+- [VNElementType.float](./vnelementtype/float.md)
   The elements are floating-point numbers.
-- [VNElementType.double](vnelementtype/double.md)
+- [VNElementType.double](./vnelementtype/double.md)
   The elements are double-precision floating-point numbers.
 ### Creating an Element Type
-- [init?(rawValue: UInt)](vnelementtype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./vnelementtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var elementType: VNElementType](vnfeatureprintobservation/elementtype.md)
+### Determining Types of Feature Prints
+- [var elementType: VNElementType](./vnfeatureprintobservation/elementtype.md)
   The type of each element in the data.
-- [func VNElementTypeSize(VNElementType) -> Int](vnelementtypesize(_:).md)
+- [func VNElementTypeSize(VNElementType) -> Int](./vnelementtypesize%28_%29.md)
   Returns the size of a feature print element.
 
 

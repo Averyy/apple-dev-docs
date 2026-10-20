@@ -1,7 +1,8 @@
 # depthRange
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distances to the far and near clipping planes from the person viewing the content, in meters.
 
@@ -13,6 +14,10 @@ The distances to the far and near clipping planes from the person viewing the co
 
 ```swift
 var depthRange: simd_float2 { get nonmutating set }
+```
+
+```c
+simd_float2 cp_drawable_get_depth_range(cp_drawable_t drawable);
 ```
 
 #### Discussion

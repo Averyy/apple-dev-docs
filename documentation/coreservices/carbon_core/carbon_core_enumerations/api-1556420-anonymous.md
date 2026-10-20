@@ -5,11 +5,11 @@
 ## Topics
 
 ### Constants
-- [var kSharingPrivsNotApplicableIcon: Int](ksharingprivsnotapplicableicon.md)
-- [var kSharingPrivsReadOnlyIcon: Int](ksharingprivsreadonlyicon.md)
-- [var kSharingPrivsReadWriteIcon: Int](ksharingprivsreadwriteicon.md)
-- [var kSharingPrivsUnknownIcon: Int](ksharingprivsunknownicon.md)
-- [var kSharingPrivsWritableIcon: Int](ksharingprivswritableicon.md)
+- [var kSharingPrivsNotApplicableIcon: Int](../../ksharingprivsnotapplicableicon.md)
+- [var kSharingPrivsReadOnlyIcon: Int](../../ksharingprivsreadonlyicon.md)
+- [var kSharingPrivsReadWriteIcon: Int](../../ksharingprivsreadwriteicon.md)
+- [var kSharingPrivsUnknownIcon: Int](../../ksharingprivsunknownicon.md)
+- [var kSharingPrivsWritableIcon: Int](../../ksharingprivswritableicon.md)
 
 
 ---

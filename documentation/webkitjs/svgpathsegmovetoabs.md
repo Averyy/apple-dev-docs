@@ -1,7 +1,8 @@
 # SVGPathSegMovetoAbs
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGPathSegMovetoAbs
 ```
 
 ## Topics
 
 ### Instance Properties
-- [x](svgpathsegmovetoabs/1629099-x.md)
-- [y](svgpathsegmovetoabs/1633183-y.md)
+- [x](./svgpathsegmovetoabs/api-1629099-x.md)
+- [y](./svgpathsegmovetoabs/api-1633183-y.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGPathSeg](svgpathseg.md)
+- [SVGPathSeg](./svgpathseg.md)
 
 
 ---

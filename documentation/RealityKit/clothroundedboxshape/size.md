@@ -1,7 +1,8 @@
 # size
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the box along each axis.
 
@@ -22,7 +23,8 @@ Each component must be positive.
 
 ## See Also
 
-- [var edgeRadius: Float](clothroundedboxshape/edgeradius.md)
+### Configuring the geometry
+- [var edgeRadius: Float](./edgeradius.md)
   The radius of the rounded edges.
 
 

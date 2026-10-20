@@ -1,7 +1,8 @@
 # MultiLabelClassificationMetrics.ThresholdSelectionStrategy
 
 **Framework**: Create ML Components  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A strategy for selecting a confidence threshold.
 
@@ -20,41 +21,44 @@ A strategy for selecting a confidence threshold.
 enum ThresholdSelectionStrategy
 ```
 
+Available when `Label` conforms to `Hashable`.
+
 ## Topics
 
 ### Selection strategies
-- [MultiLabelClassificationMetrics.ThresholdSelectionStrategy.balancedPrecisionAndRecall](multilabelclassificationmetrics/thresholdselectionstrategy/balancedprecisionandrecall.md)
+- [MultiLabelClassificationMetrics.ThresholdSelectionStrategy.balancedPrecisionAndRecall](./thresholdselectionstrategy/balancedprecisionandrecall.md)
   A confidence threshold strategy that balances precision and recall equivalently.
-- [MultiLabelClassificationMetrics.ThresholdSelectionStrategy.fixed(_:)](multilabelclassificationmetrics/thresholdselectionstrategy/fixed(_:).md)
+- [MultiLabelClassificationMetrics.ThresholdSelectionStrategy.fixed(_:)](./thresholdselectionstrategy/fixed%28_%29.md)
   A confidence threshold strategy that uses the specified thresholds for each label.
-- [MultiLabelClassificationMetrics.ThresholdSelectionStrategy.precision(_:minimumRecall:)](multilabelclassificationmetrics/thresholdselectionstrategy/precision(_:minimumrecall:).md)
+- [MultiLabelClassificationMetrics.ThresholdSelectionStrategy.precision(_:minimumRecall:)](./thresholdselectionstrategy/precision%28_,minimumrecall%29.md)
   A confidence threshold strategy for a specific precision that has at least a minimum recall value.
-- [MultiLabelClassificationMetrics.ThresholdSelectionStrategy.recall(_:minimumPrecision:)](multilabelclassificationmetrics/thresholdselectionstrategy/recall(_:minimumprecision:).md)
+- [MultiLabelClassificationMetrics.ThresholdSelectionStrategy.recall(_:minimumPrecision:)](./thresholdselectionstrategy/recall%28_,minimumprecision%29.md)
   A confidence threshold strategy for a recall precision that has at least a minimum precision value.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(some Sequence<(classification: ClassificationDistribution<Label>, labels: Set<Label>)>, strategy: MultiLabelClassificationMetrics<Label>.ThresholdSelectionStrategy) throws](multilabelclassificationmetrics/init(_:strategy:).md)
+### Creating the distribution
+- [init(some Sequence<(classification: ClassificationDistribution<Label>, labels: Set<Label>)>, strategy: MultiLabelClassificationMetrics<Label>.ThresholdSelectionStrategy) throws](./init%28_,strategy%29.md)
   Creates multi-label classification metrics for classifications and ground truth labels.
-- [init(some Sequence<(classification: ClassificationDistribution<Label>, labels: Set<Label>)>, strategy: MultiLabelClassificationMetrics<Label>.ThresholdSelectionStrategy, labels: Set<Label>) throws](multilabelclassificationmetrics/init(_:strategy:labels:).md)
+- [init(some Sequence<(classification: ClassificationDistribution<Label>, labels: Set<Label>)>, strategy: MultiLabelClassificationMetrics<Label>.ThresholdSelectionStrategy, labels: Set<Label>) throws](./init%28_,strategy,labels%29.md)
   Creates multi-label classification metrics for classifications and ground truth labels.
-- [init(classifications: some Sequence<ClassificationDistribution<Label>>, groundTruth: some Sequence<Set<Label>>, strategy: MultiLabelClassificationMetrics<Label>.ThresholdSelectionStrategy) throws](multilabelclassificationmetrics/init(classifications:groundtruth:strategy:).md)
+- [init(classifications: some Sequence<ClassificationDistribution<Label>>, groundTruth: some Sequence<Set<Label>>, strategy: MultiLabelClassificationMetrics<Label>.ThresholdSelectionStrategy) throws](./init%28classifications,groundtruth,strategy%29.md)
   Creates multi-label classification metrics for classifications and ground truth labels.
-- [init(classifications: some Sequence<ClassificationDistribution<Label>>, groundTruth: some Sequence<Set<Label>>, strategy: MultiLabelClassificationMetrics<Label>.ThresholdSelectionStrategy, labels: Set<Label>) throws](multilabelclassificationmetrics/init(classifications:groundtruth:strategy:labels:).md)
+- [init(classifications: some Sequence<ClassificationDistribution<Label>>, groundTruth: some Sequence<Set<Label>>, strategy: MultiLabelClassificationMetrics<Label>.ThresholdSelectionStrategy, labels: Set<Label>) throws](./init%28classifications,groundtruth,strategy,labels%29.md)
   Creates multi-label classification metrics for classifications and ground truth labels.
-- [init(confidenceThresholds: [Label : Float])](multilabelclassificationmetrics/init(confidencethresholds:).md)
+- [init(confidenceThresholds: [Label : Float])](./init%28confidencethresholds%29.md)
   Creates empty multi-label classification metrics.
 
 

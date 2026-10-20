@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A tab’s subtitle.
 
@@ -18,17 +19,22 @@ A tab’s subtitle.
 var subtitle: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * subtitle;
+```
+
 ## See Also
 
-- [var title: String](uitab/title.md)
+### Accessing a tab’s appearance
+- [var title: String](./title.md)
   A tab’s title.
-- [var identifier: String](uitab/identifier.md)
+- [var identifier: String](./identifier.md)
   A string identifier for a tab.
-- [var image: UIImage?](uitab/image.md)
+- [var image: UIImage?](./image.md)
   A tab’s image.
-- [var badgeValue: String?](uitab/badgevalue.md)
+- [var badgeValue: String?](./badgevalue.md)
   A tab’s badge value.
-- [var viewController: UIViewController?](uitab/viewcontroller.md)
+- [var viewController: UIViewController?](./viewcontroller.md)
   The view controller that the system presents when someone selects a tab.
 
 

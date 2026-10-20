@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a blit option from a raw value.
 
@@ -21,7 +22,7 @@ init(rawValue: UInt)
 
 #### Discussion
 
-Use one of the [`MTLBlitOption`](mtlblitoption.md) type’s static properties, such as [`depthFromDepthStencil`](mtlblitoption/depthfromdepthstencil.md), [`stencilFromDepthStencil`](mtlblitoption/stencilfromdepthstencil.md), and [`rowLinearPVRTC`](mtlblitoption/rowlinearpvrtc.md) instead of creating a blit option yourself with this initializer.
+Use one of the [`MTLBlitOption`](../mtlblitoption.md) type’s static properties, such as [`depthFromDepthStencil`](./depthfromdepthstencil.md), [`stencilFromDepthStencil`](./stencilfromdepthstencil.md), and [`rowLinearPVRTC`](./rowlinearpvrtc.md) instead of creating a blit option yourself with this initializer.
 
 ## Parameters
 

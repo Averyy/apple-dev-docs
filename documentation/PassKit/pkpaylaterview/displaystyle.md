@@ -1,7 +1,8 @@
 # displayStyle
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style to use when presenting the Apple Pay Later visual merchandising widget view.
 
@@ -10,15 +11,22 @@ The style to use when presenting the Apple Pay Later visual merchandising widget
 - iPadOS 17.0+
 - visionOS 1.0+
 
+> **Deprecated**: Apple Pay Later is deprecated.
+
 ## Declaration
 
 ```swift
 var displayStyle: PKPayLaterDisplayStyle { get set }
 ```
 
+```objc
+@property (nonatomic, assign) PKPayLaterDisplayStyle displayStyle;
+```
+
 ## See Also
 
-- [enum PKPayLaterDisplayStyle](pkpaylaterdisplaystyle.md)
+### Styling the view
+- [enum PKPayLaterDisplayStyle](../pkpaylaterdisplaystyle.md)
   Values you use to style an Apple Pay Later visual merchandising widget.
 
 

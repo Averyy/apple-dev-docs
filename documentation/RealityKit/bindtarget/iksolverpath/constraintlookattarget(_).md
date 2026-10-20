@@ -1,7 +1,8 @@
 # constraintLookAtTarget(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The bind target of the named constraint’s target look at position.
 

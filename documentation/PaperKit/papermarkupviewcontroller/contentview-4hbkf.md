@@ -1,7 +1,8 @@
 # contentView
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content that markup appears on top of.
 
@@ -23,11 +24,12 @@ Default is `nil`.
 
 ## See Also
 
-- [var markup: PaperMarkup?](papermarkupviewcontroller/markup.md)
+### Displaying markup
+- [var markup: PaperMarkup?](./markup.md)
   The paper data that this view controller displays.
-- [var contentView: UIView?](papermarkupviewcontroller/contentview-4aeda.md)
+- [var contentView: UIView?](./contentview-4aeda.md)
   The content that markup appears on top of.
-- [var supportedFeatureSet: FeatureSet](papermarkupviewcontroller/supportedfeatureset.md)
+- [var supportedFeatureSet: FeatureSet](./supportedfeatureset.md)
   The supported PaperKit features on this canvas.
 
 

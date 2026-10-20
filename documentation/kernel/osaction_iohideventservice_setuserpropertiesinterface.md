@@ -1,14 +1,15 @@
 # OSAction_IOHIDEventService__SetUserPropertiesInterface
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 class OSAction_IOHIDEventService__SetUserPropertiesInterface : OSInterface
 ```
 

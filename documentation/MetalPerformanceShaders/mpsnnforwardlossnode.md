@@ -1,7 +1,8 @@
 # MPSNNForwardLossNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.0+
@@ -17,40 +18,44 @@
 class MPSNNForwardLossNode
 ```
 
+```objc
+@interface MPSNNForwardLossNode : MPSNNFilterNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, labels: MPSNNImageNode, lossDescriptor: MPSCNNLossDescriptor)](mpsnnforwardlossnode/init(source:labels:lossdescriptor:).md)
-- [init(source: MPSNNImageNode, labels: MPSNNImageNode, weights: MPSNNImageNode?, lossDescriptor: MPSCNNLossDescriptor)](mpsnnforwardlossnode/init(source:labels:weights:lossdescriptor:)-8c2l6.md)
-- [convenience init(source: MPSNNImageNode, labels: MPSNNImageNode, weights: MPSNNImageNode, lossDescriptor: MPSCNNLossDescriptor)](mpsnnforwardlossnode/init(source:labels:weights:lossdescriptor:)-9bsd7.md)
-- [init(sources: [MPSNNImageNode], lossDescriptor: MPSCNNLossDescriptor)](mpsnnforwardlossnode/init(sources:lossdescriptor:).md)
+- [init(source: MPSNNImageNode, labels: MPSNNImageNode, lossDescriptor: MPSCNNLossDescriptor)](./mpsnnforwardlossnode/init%28source,labels,lossdescriptor%29.md)
+- [init(source: MPSNNImageNode, labels: MPSNNImageNode, weights: MPSNNImageNode?, lossDescriptor: MPSCNNLossDescriptor)](./mpsnnforwardlossnode/init%28source,labels,weights,lossdescriptor%29-8c2l6.md)
+- [convenience init(source: MPSNNImageNode, labels: MPSNNImageNode, weights: MPSNNImageNode, lossDescriptor: MPSCNNLossDescriptor)](./mpsnnforwardlossnode/init%28source,labels,weights,lossdescriptor%29-9bsd7.md)
+- [init(sources: [MPSNNImageNode], lossDescriptor: MPSCNNLossDescriptor)](./mpsnnforwardlossnode/init%28sources,lossdescriptor%29.md)
 ### Instance Properties
-- [var delta: Float](mpsnnforwardlossnode/delta.md)
-- [var epsilon: Float](mpsnnforwardlossnode/epsilon.md)
-- [var labelSmoothing: Float](mpsnnforwardlossnode/labelsmoothing.md)
-- [var lossType: MPSCNNLossType](mpsnnforwardlossnode/losstype.md)
-- [var numberOfClasses: Int](mpsnnforwardlossnode/numberofclasses.md)
-- [var propertyCallBack: (any MPSNNLossCallback)?](mpsnnforwardlossnode/propertycallback.md)
-- [var reduceAcrossBatch: Bool](mpsnnforwardlossnode/reduceacrossbatch.md)
-- [var reductionType: MPSCNNReductionType](mpsnnforwardlossnode/reductiontype.md)
-- [var weight: Float](mpsnnforwardlossnode/weight.md)
+- [var delta: Float](./mpsnnforwardlossnode/delta.md)
+- [var epsilon: Float](./mpsnnforwardlossnode/epsilon.md)
+- [var labelSmoothing: Float](./mpsnnforwardlossnode/labelsmoothing.md)
+- [var lossType: MPSCNNLossType](./mpsnnforwardlossnode/losstype.md)
+- [var numberOfClasses: Int](./mpsnnforwardlossnode/numberofclasses.md)
+- [var propertyCallBack: (any MPSNNLossCallback)?](./mpsnnforwardlossnode/propertycallback.md)
+- [var reduceAcrossBatch: Bool](./mpsnnforwardlossnode/reduceacrossbatch.md)
+- [var reductionType: MPSCNNReductionType](./mpsnnforwardlossnode/reductiontype.md)
+- [var weight: Float](./mpsnnforwardlossnode/weight.md)
 ### Instance Methods
-- [func gradientFilter(withSource: MPSNNImageNode) -> MPSNNLossGradientNode](mpsnnforwardlossnode/gradientfilter(withsource:).md)
-- [func gradientFilter(withSources: [MPSNNImageNode]) -> MPSNNLossGradientNode](mpsnnforwardlossnode/gradientfilter(withsources:).md)
-- [func gradientFilters(withSource: MPSNNImageNode) -> [MPSNNLossGradientNode]](mpsnnforwardlossnode/gradientfilters(withsource:).md)
-- [func gradientFilters(withSources: [MPSNNImageNode]) -> [MPSNNLossGradientNode]](mpsnnforwardlossnode/gradientfilters(withsources:).md)
+- [func gradientFilter(withSource: MPSNNImageNode) -> MPSNNLossGradientNode](./mpsnnforwardlossnode/gradientfilter%28withsource%29.md)
+- [func gradientFilter(withSources: [MPSNNImageNode]) -> MPSNNLossGradientNode](./mpsnnforwardlossnode/gradientfilter%28withsources%29.md)
+- [func gradientFilters(withSource: MPSNNImageNode) -> [MPSNNLossGradientNode]](./mpsnnforwardlossnode/gradientfilters%28withsource%29.md)
+- [func gradientFilters(withSources: [MPSNNImageNode]) -> [MPSNNLossGradientNode]](./mpsnnforwardlossnode/gradientfilters%28withsources%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNFilterNode](mpsnnfilternode.md)
+- [MPSNNFilterNode](./mpsnnfilternode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

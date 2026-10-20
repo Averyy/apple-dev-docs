@@ -1,7 +1,8 @@
 # occlusionState
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The occlusion state of the app.
 
@@ -14,15 +15,21 @@ The occlusion state of the app.
 var occlusionState: NSApplication.OcclusionState { get }
 ```
 
+```objc
+@property (readonly) NSApplicationOcclusionState occlusionState;
+```
+
 #### Discussion
 
 The value of this property reflects whether any part of the app’s windows are visible to the user. Use this information to disable expensive screen updates when your app is not visible.
 
 ## See Also
 
-- [class let didChangeOcclusionStateNotification: NSNotification.Name](nsapplication/didchangeocclusionstatenotification.md)
+### Related Documentation
+- [class let didChangeOcclusionStateNotification: NSNotification.Name](./didchangeocclusionstatenotification.md)
   Posted when the app’s occlusion state changes.
-- [NSApplication.OcclusionState](nsapplication/occlusionstate-swift.struct.md)
+### Getting the Occlusion State
+- [NSApplication.OcclusionState](./occlusionstate-swift.struct.md)
   This constant indicates whether at least part of any window owned by this app is visible.
 
 

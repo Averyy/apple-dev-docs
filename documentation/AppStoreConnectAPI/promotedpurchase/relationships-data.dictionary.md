@@ -1,7 +1,8 @@
 # PromotedPurchase.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,15 +11,15 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object PromotedPurchase.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object PromotedPurchase.Relationships.InAppPurchaseV2](promotedpurchase/relationships-data.dictionary/inapppurchasev2-data.dictionary.md)
-- [object PromotedPurchase.Relationships.Subscription](promotedpurchase/relationships-data.dictionary/subscription-data.dictionary.md)
+- [object PromotedPurchase.Relationships.InAppPurchaseV2](./relationships-data.dictionary/inapppurchasev2-data.dictionary.md)
+- [object PromotedPurchase.Relationships.Subscription](./relationships-data.dictionary/subscription-data.dictionary.md)
 
 ## Properties
 
@@ -27,7 +28,8 @@ object PromotedPurchase.Relationships
 
 ## See Also
 
-- [object PromotedPurchase.Attributes](promotedpurchase/attributes-data.dictionary.md)
+### Objects and types
+- [object PromotedPurchase.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a promoted purchase resource.
 
 

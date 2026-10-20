@@ -1,7 +1,8 @@
 # controlPoint1
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The first control point for the cubic Bézier curve.
 
@@ -18,15 +19,20 @@ The first control point for the cubic Bézier curve.
 var controlPoint1: CGPoint { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGPoint controlPoint1;
+```
+
 #### Discussion
 
-This parameter contains the point you specified at initialization time. If you initialized the object with a [`UIView.AnimationCurve`](uiview/animationcurve.md) value instead, this property is set to [`CGPointZero`](https://developer.apple.com/documentation/coregraphics/cgpointzero).
+This parameter contains the point you specified at initialization time. If you initialized the object with a [`UIView.AnimationCurve`](../uiview/animationcurve.md) value instead, this property is set to [`CGPointZero`](../../CoreGraphics/cgpointzero.md).
 
 ## See Also
 
-- [var animationCurve: UIView.AnimationCurve](uicubictimingparameters/animationcurve.md)
+### Getting the timing parameters
+- [var animationCurve: UIView.AnimationCurve](./animationcurve.md)
   The standard UIKit animation curve to use for timing.
-- [var controlPoint2: CGPoint](uicubictimingparameters/controlpoint2.md)
+- [var controlPoint2: CGPoint](./controlpoint2.md)
   The second control point of the cubic Bézier curve.
 
 

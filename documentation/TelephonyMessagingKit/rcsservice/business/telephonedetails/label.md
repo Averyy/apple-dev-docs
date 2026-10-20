@@ -1,7 +1,8 @@
 # label
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The label for the phone number.
 
@@ -16,9 +17,10 @@ let label: String
 
 ## See Also
 
-- [let phoneNumber: String](rcsservice/business/telephonedetails/phonenumber.md)
+### Accessing telephone details
+- [let phoneNumber: String](./phonenumber.md)
   Phone number provided by business.
-- [let phoneNumberType: String](rcsservice/business/telephonedetails/phonenumbertype.md)
+- [let phoneNumberType: String](./phonenumbertype.md)
   A string to represent the type of phone number; for example, “Work”.
 
 

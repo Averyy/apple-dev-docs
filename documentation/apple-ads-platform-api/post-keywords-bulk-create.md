@@ -1,7 +1,8 @@
 # Bulk Create Keywords
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Creates multiple keywords in a single request.
 
@@ -141,13 +142,31 @@ Create three keywords with different match types.
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `KeywordCreateBulkRequest`
+
+## Responses
+
+- `200` OK (`KeywordCreateBulkResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Bulk Update Keywords](post-keywords-bulk-update.md)
+### Keywords
+- [Bulk Update Keywords](./post-keywords-bulk-update.md)
   Updates multiple keywords in a single request.
-- [Bulk Delete Keywords](post-keywords-bulk-delete.md)
+- [Bulk Delete Keywords](./post-keywords-bulk-delete.md)
   Soft-deletes multiple keywords in a single request.
 
 

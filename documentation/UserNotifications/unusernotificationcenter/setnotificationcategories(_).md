@@ -1,7 +1,8 @@
 # setNotificationCategories(_:)
 
 **Framework**: User Notifications  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers the notification categories that your app supports.
 
@@ -19,6 +20,10 @@ Registers the notification categories that your app supports.
 func setNotificationCategories(_ categories: Set<UNNotificationCategory>)
 ```
 
+```objc
+- (void) setNotificationCategories:(NSSet<UNNotificationCategory *> *) categories;
+```
+
 #### Discussion
 
 Call this method at launch time to register your app’s actionable notification types. This method registers all of your categories at once, replacing any previously registered categories with the new ones in the `categories` parameter. Typically, you call this method only once.
@@ -34,11 +39,12 @@ center.removeAllPendingNotificationRequests()
 
 ## Parameters
 
-- `categories`: A set of [`UNNotificationCategory`](unnotificationcategory.md) objects, each of which contains the actions that are displayed with the notification interface. This parameter must contain all of your app’s supported categories.
+- `categories`: A set of [`UNNotificationCategory`](../unnotificationcategory.md) objects, each of which contains the actions that are displayed with the notification interface. This parameter must contain all of your app’s supported categories.
 
 ## See Also
 
-- [func getNotificationCategories(completionHandler: (Set<UNNotificationCategory>) -> Void)](unusernotificationcenter/getnotificationcategories(completionhandler:).md)
+### Managing notification categories
+- [func getNotificationCategories(completionHandler: (Set<UNNotificationCategory>) -> Void)](./getnotificationcategories%28completionhandler%29.md)
   Fetches your app’s registered notification categories.
 
 

@@ -1,7 +1,8 @@
 # setPageBreakAfter(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setPageBreakAfter(_ pageBreakAfter: String!)
+```
+
+```objc
+- (void) setPageBreakAfter:(NSString *) pageBreakAfter;
 ```
 
 

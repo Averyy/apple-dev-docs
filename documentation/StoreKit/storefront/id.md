@@ -1,7 +1,8 @@
 # id
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An Apple-defined value that uniquely identifies an App Store storefront.
 
@@ -22,9 +23,10 @@ let id: String
 
 ## See Also
 
-- [static var current: Storefront?](storefront/current.md)
+### Identifying the storefront
+- [static var current: Storefront?](./current.md)
   The current App Store storefront for product purchases.
-- [let countryCode: String](storefront/countrycode.md)
+- [let countryCode: String](./countrycode.md)
   The three-letter code that represents the country or region associated with the App Store storefront.
 
 

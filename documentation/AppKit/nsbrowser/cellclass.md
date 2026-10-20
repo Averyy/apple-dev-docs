@@ -1,12 +1,13 @@
 # cellClass
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the `NSBrowserCell` class.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns the `NSBrowserCell` class.
 class var cellClass: AnyClass { get }
 ```
 
+```objc
+@property (class, readonly) Class cellClass;
+```
+
 #### Return Value
 
-Always returns the `NSBrowserCell` class (even if the developer has sent a [`setCellClass(_:)`](nsbrowser/setcellclass(_:).md) message to a particular instance).
+Always returns the `NSBrowserCell` class (even if the developer has sent a [`setCellClass(_:)`](./setcellclass%28_%29.md) message to a particular instance).
 
 #### Discussion
 
@@ -24,9 +29,10 @@ This method is used by `NSControl` during initialization and is not meant to be 
 
 ## See Also
 
-- [func setCellClass(AnyClass)](nsbrowser/setcellclass(_:).md)
+### Managing Component Types
+- [func setCellClass(AnyClass)](./setcellclass%28_%29.md)
   Sets the class of the cell to be used by the matrices in the columns of the browser.
-- [var cellPrototype: Any!](nsbrowser/cellprototype.md)
+- [var cellPrototype: Any!](./cellprototype.md)
   The prototype `NSCell` for displaying items in the matrices in the columns of the browser.
 
 

@@ -1,7 +1,8 @@
 # CountableClosedRange
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 8.0+
@@ -20,10 +21,11 @@ typealias CountableClosedRange<Bound> = ClosedRange<Bound> where Bound : Stridea
 
 ## See Also
 
-- [typealias DictionaryIndex](dictionaryindex.md)
-- [typealias SetIndex](setindex.md)
-- [typealias CountablePartialRangeFrom](countablepartialrangefrom.md)
-- [typealias CountableRange](countablerange.md)
+### Deprecated
+- [typealias DictionaryIndex](./dictionaryindex.md)
+- [typealias SetIndex](./setindex.md)
+- [typealias CountablePartialRangeFrom](./countablepartialrangefrom.md)
+- [typealias CountableRange](./countablerange.md)
 
 
 ---

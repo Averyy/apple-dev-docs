@@ -1,7 +1,8 @@
 # cornerRadius
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radius to use when drawing rounded corners for the cell.
 
@@ -12,6 +13,10 @@ The radius to use when drawing rounded corners for the cell.
 
 ```swift
 var cornerRadius: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic, assign) CGFloat cornerRadius;
 ```
 
 #### Discussion

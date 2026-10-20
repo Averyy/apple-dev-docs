@@ -1,7 +1,8 @@
 # CancellationRequest
 
 **Framework**: App Data Transfer  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that identifies a one-time request, or an individual instance of a recurring request, to cancel.
 
@@ -10,7 +11,7 @@ An object that identifies a one-time request, or an individual instance of a rec
 
 ## Declaration
 
-```swift
+```
 object CancellationRequest
 ```
 
@@ -20,9 +21,10 @@ object CancellationRequest
 
 ## See Also
 
-- [Cancel request](cancel-request.md)
+### Cancellation
+- [Cancel request](./cancel-request.md)
   Tells the server to stop processing an active request.
-- [object CancellationResponse](cancellationresponse.md)
+- [object CancellationResponse](./cancellationresponse.md)
   An object that describes the outcome of canceling a download request.
 
 

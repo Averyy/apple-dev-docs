@@ -1,7 +1,8 @@
 # platformIdentifier
 
 **Framework**: SecureElementCredential  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier that describes the hardware and operating system combination of a device, along with its version information.
 

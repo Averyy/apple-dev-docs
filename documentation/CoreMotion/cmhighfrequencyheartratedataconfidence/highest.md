@@ -1,7 +1,8 @@
 # CMHighFrequencyHeartRateDataConfidence.highest
 
 **Framework**: Core Motion  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The highest level of confidence in the heart rate data.
 
@@ -18,13 +19,18 @@ The highest level of confidence in the heart rate data.
 case highest
 ```
 
+```c
+CMHighFrequencyHeartRateDataConfidenceHighest
+```
+
 ## See Also
 
-- [CMHighFrequencyHeartRateDataConfidence.low](cmhighfrequencyheartratedataconfidence/low.md)
+### Levels of confidence
+- [CMHighFrequencyHeartRateDataConfidence.low](./low.md)
   A low level of confidence in the heart rate data.
-- [CMHighFrequencyHeartRateDataConfidence.medium](cmhighfrequencyheartratedataconfidence/medium.md)
+- [CMHighFrequencyHeartRateDataConfidence.medium](./medium.md)
   A medium level of confidence in the heart rate data.
-- [CMHighFrequencyHeartRateDataConfidence.high](cmhighfrequencyheartratedataconfidence/high.md)
+- [CMHighFrequencyHeartRateDataConfidence.high](./high.md)
   A high level of confidence in the heart rate data.
 
 

@@ -1,7 +1,8 @@
 # init(type:input:weights:output:bias:padding:activation:groupCount:stride:dilationStride:filterParameters:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new convolution layer.
 
@@ -11,8 +12,10 @@ Returns a new convolution layer.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -27,9 +30,9 @@ convenience init?(type convolutionType: BNNS.ConvolutionType, input: BNNSNDArray
 ## Parameters
 
 - `convolutionType`: An enumeration that specifies the convolution type.
-- `input`: The descriptor of the input. The data type of the input must be [`BNNSDataLayoutImageCHW`](bnnsdatalayoutimagechw.md).
-- `weights`: The descriptor of the weights. The data type of the weights must be [`BNNSDataLayoutConvolutionWeightsOIHW`](bnnsdatalayoutconvolutionweightsoihw.md), [`BNNSDataLayoutConvolutionWeightsOIHrWr`](bnnsdatalayoutconvolutionweightsoihrwr.md), [`BNNSDataLayoutConvolutionWeightsIOHrWr`](bnnsdatalayoutconvolutionweightsiohrwr.md), or [`BNNSDataLayoutConvolutionWeightsOIHW_Pack32`](bnnsdatalayoutconvolutionweightsoihw_pack32.md).
-- `output`: The descriptor of the output. The data type of the output must be [`BNNSDataLayoutImageCHW`](bnnsdatalayoutimagechw.md).
+- `input`: The descriptor of the input. The data type of the input must be [`BNNSDataLayoutImageCHW`](../../bnnsdatalayoutimagechw.md).
+- `weights`: The descriptor of the weights. The data type of the weights must be [`BNNSDataLayoutConvolutionWeightsOIHW`](../../bnnsdatalayoutconvolutionweightsoihw.md), [`BNNSDataLayoutConvolutionWeightsOIHrWr`](../../bnnsdatalayoutconvolutionweightsoihrwr.md), [`BNNSDataLayoutConvolutionWeightsIOHrWr`](../../bnnsdatalayoutconvolutionweightsiohrwr.md), or [`BNNSDataLayoutConvolutionWeightsOIHW_Pack32`](../../bnnsdatalayoutconvolutionweightsoihw_pack32.md).
+- `output`: The descriptor of the output. The data type of the output must be [`BNNSDataLayoutImageCHW`](../../bnnsdatalayoutimagechw.md).
 - `bias`: The descriptor of the bias.
 - `padding`: The padding, which is the number of virtual zeros added to the sides of each channel.
 - `activation`: The activation function that the layer applies to the output.

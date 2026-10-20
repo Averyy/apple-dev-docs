@@ -1,7 +1,8 @@
 # nw_framer_parse_output(_:_:_:_:_:)
 
 **Framework**: Network  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Examines the content of output data while inside your output handler.
 
@@ -20,6 +21,10 @@ Examines the content of output data while inside your output handler.
 func nw_framer_parse_output(_ framer: nw_framer_t, _ minimum_incomplete_length: Int, _ maximum_length: Int, _ temp_buffer: UnsafeMutablePointer<UInt8>?, _ parse: (UnsafeMutablePointer<UInt8>?, Int, Bool) -> Int) -> Bool
 ```
 
+```c
+bool nw_framer_parse_output(nw_framer_t framer, size_t minimum_incomplete_length, size_t maximum_length, uint8_t *temp_buffer, nw_framer_parse_completion_t parse);
+```
+
 #### Return Value
 
 Returns true if the requested length was available to parse, or false if the conditions could not be met.
@@ -34,19 +39,20 @@ Returns true if the requested length was available to parse, or false if the con
 
 ## See Also
 
-- [func nw_framer_set_output_handler(nw_framer_t, nw_framer_output_handler_t)](nw_framer_set_output_handler(_:_:).md)
+### Handling Output Data
+- [func nw_framer_set_output_handler(nw_framer_t, nw_framer_output_handler_t)](./nw_framer_set_output_handler%28_,_%29.md)
   Sets a block to handle new outbound messages.
-- [typealias nw_framer_output_handler_t](nw_framer_output_handler_t.md)
+- [typealias nw_framer_output_handler_t](./nw_framer_output_handler_t.md)
   A handler that notifies your protocol about a new outbound message.
-- [typealias nw_framer_parse_completion_t](nw_framer_parse_completion_t.md)
+- [typealias nw_framer_parse_completion_t](./nw_framer_parse_completion_t.md)
   A handler that examines a range of data being sent or received.
-- [func nw_framer_write_output(nw_framer_t, UnsafePointer<UInt8>, Int)](nw_framer_write_output(_:_:_:).md)
+- [func nw_framer_write_output(nw_framer_t, UnsafePointer<UInt8>, Int)](./nw_framer_write_output%28_,_,_%29.md)
   Sends arbitrary output data in a buffer from your protocol to the next protocol.
-- [func nw_framer_write_output_data(nw_framer_t, dispatch_data_t)](nw_framer_write_output_data(_:_:).md)
+- [func nw_framer_write_output_data(nw_framer_t, dispatch_data_t)](./nw_framer_write_output_data%28_,_%29.md)
   Sends arbitrary output data from your protocol to the next protocol.
-- [func nw_framer_write_output_no_copy(nw_framer_t, Int) -> Bool](nw_framer_write_output_no_copy(_:_:).md)
+- [func nw_framer_write_output_no_copy(nw_framer_t, Int) -> Bool](./nw_framer_write_output_no_copy%28_,_%29.md)
   Sends a specific number of bytes from a message while inside your output handler.
-- [func nw_framer_pass_through_output(nw_framer_t)](nw_framer_pass_through_output(_:).md)
+- [func nw_framer_pass_through_output(nw_framer_t)](./nw_framer_pass_through_output%28_%29.md)
   Indicates that your protocol no longer needs to handle output data.
 
 

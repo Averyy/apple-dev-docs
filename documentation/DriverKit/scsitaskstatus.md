@@ -1,19 +1,20 @@
 # SCSITaskStatus
 
 **Framework**: DriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Attributes for task status.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef enum SCSITaskStatus : unsigned int { ... } SCSITaskStatus;
 ```
 
@@ -30,39 +31,40 @@ The Task Status can only be modified by the SCSI Protocol Layer. The SCSI Applic
 ## Topics
 
 ### Constants
-- [kSCSITaskStatus_GOOD](scsitaskstatus/kscsitaskstatus_good.md)
-- [kSCSITaskStatus_CHECK_CONDITION](scsitaskstatus/kscsitaskstatus_check_condition.md)
-- [kSCSITaskStatus_CONDITION_MET](scsitaskstatus/kscsitaskstatus_condition_met.md)
-- [kSCSITaskStatus_BUSY](scsitaskstatus/kscsitaskstatus_busy.md)
-- [kSCSITaskStatus_INTERMEDIATE](scsitaskstatus/kscsitaskstatus_intermediate.md)
-- [kSCSITaskStatus_INTERMEDIATE_CONDITION_MET](scsitaskstatus/kscsitaskstatus_intermediate_condition_met.md)
-- [kSCSITaskStatus_RESERVATION_CONFLICT](scsitaskstatus/kscsitaskstatus_reservation_conflict.md)
-- [kSCSITaskStatus_TASK_SET_FULL](scsitaskstatus/kscsitaskstatus_task_set_full.md)
-- [kSCSITaskStatus_ACA_ACTIVE](scsitaskstatus/kscsitaskstatus_aca_active.md)
-- [kSCSITaskStatus_TaskTimeoutOccurred](scsitaskstatus/kscsitaskstatus_tasktimeoutoccurred.md)
-- [kSCSITaskStatus_ProtocolTimeoutOccurred](scsitaskstatus/kscsitaskstatus_protocoltimeoutoccurred.md)
-- [kSCSITaskStatus_DeviceNotResponding](scsitaskstatus/kscsitaskstatus_devicenotresponding.md)
-- [kSCSITaskStatus_DeviceNotPresent](scsitaskstatus/kscsitaskstatus_devicenotpresent.md)
-- [kSCSITaskStatus_DeliveryFailure](scsitaskstatus/kscsitaskstatus_deliveryfailure.md)
-- [kSCSITaskStatus_No_Status](scsitaskstatus/kscsitaskstatus_no_status.md)
+- [kSCSITaskStatus_GOOD](./scsitaskstatus/kscsitaskstatus_good.md)
+- [kSCSITaskStatus_CHECK_CONDITION](./scsitaskstatus/kscsitaskstatus_check_condition.md)
+- [kSCSITaskStatus_CONDITION_MET](./scsitaskstatus/kscsitaskstatus_condition_met.md)
+- [kSCSITaskStatus_BUSY](./scsitaskstatus/kscsitaskstatus_busy.md)
+- [kSCSITaskStatus_INTERMEDIATE](./scsitaskstatus/kscsitaskstatus_intermediate.md)
+- [kSCSITaskStatus_INTERMEDIATE_CONDITION_MET](./scsitaskstatus/kscsitaskstatus_intermediate_condition_met.md)
+- [kSCSITaskStatus_RESERVATION_CONFLICT](./scsitaskstatus/kscsitaskstatus_reservation_conflict.md)
+- [kSCSITaskStatus_TASK_SET_FULL](./scsitaskstatus/kscsitaskstatus_task_set_full.md)
+- [kSCSITaskStatus_ACA_ACTIVE](./scsitaskstatus/kscsitaskstatus_aca_active.md)
+- [kSCSITaskStatus_TaskTimeoutOccurred](./scsitaskstatus/kscsitaskstatus_tasktimeoutoccurred.md)
+- [kSCSITaskStatus_ProtocolTimeoutOccurred](./scsitaskstatus/kscsitaskstatus_protocoltimeoutoccurred.md)
+- [kSCSITaskStatus_DeviceNotResponding](./scsitaskstatus/kscsitaskstatus_devicenotresponding.md)
+- [kSCSITaskStatus_DeviceNotPresent](./scsitaskstatus/kscsitaskstatus_devicenotpresent.md)
+- [kSCSITaskStatus_DeliveryFailure](./scsitaskstatus/kscsitaskstatus_deliveryfailure.md)
+- [kSCSITaskStatus_No_Status](./scsitaskstatus/kscsitaskstatus_no_status.md)
 
 ## See Also
 
-- [IOLockAssertState](iolockassertstate.md)
-- [IORWLockAssertState](iorwlockassertstate.md)
-- [kC0DataMaxStringLen](kc0datamaxstringlen.md)
-- [kINQUIRY_ANSI_VERSION_Mask](kinquiry_ansi_version_mask.md)
-- [kINQUIRY_ANSI_VERSION_NoClaimedConformance](kinquiry_ansi_version_noclaimedconformance.md)
-- [kINQUIRY_ANSI_VERSION_SCSI_1_Compliant](kinquiry_ansi_version_scsi_1_compliant.md)
-- [kINQUIRY_ANSI_VERSION_SCSI_2_Compliant](kinquiry_ansi_version_scsi_2_compliant.md)
-- [kINQUIRY_ANSI_VERSION_SCSI_SPC_2_Compliant](kinquiry_ansi_version_scsi_spc_2_compliant.md)
-- [kINQUIRY_ANSI_VERSION_SCSI_SPC_3_Compliant](kinquiry_ansi_version_scsi_spc_3_compliant.md)
-- [kINQUIRY_ANSI_VERSION_SCSI_SPC_Compliant](kinquiry_ansi_version_scsi_spc_compliant.md)
-- [kINQUIRY_Byte3_AERC_Bit](kinquiry_byte3_aerc_bit.md)
-- [kINQUIRY_Byte3_AERC_Mask](kinquiry_byte3_aerc_mask.md)
-- [kINQUIRY_Byte3_HISUP_Bit](kinquiry_byte3_hisup_bit.md)
-- [kINQUIRY_Byte3_HISUP_Mask](kinquiry_byte3_hisup_mask.md)
-- [kINQUIRY_Byte3_NORMACA_Bit](kinquiry_byte3_normaca_bit.md)
+### Enumerations
+- [IOLockAssertState](./iolockassertstate.md)
+- [IORWLockAssertState](./iorwlockassertstate.md)
+- [kC0DataMaxStringLen](./kc0datamaxstringlen.md)
+- [kINQUIRY_ANSI_VERSION_Mask](./kinquiry_ansi_version_mask.md)
+- [kINQUIRY_ANSI_VERSION_NoClaimedConformance](./kinquiry_ansi_version_noclaimedconformance.md)
+- [kINQUIRY_ANSI_VERSION_SCSI_1_Compliant](./kinquiry_ansi_version_scsi_1_compliant.md)
+- [kINQUIRY_ANSI_VERSION_SCSI_2_Compliant](./kinquiry_ansi_version_scsi_2_compliant.md)
+- [kINQUIRY_ANSI_VERSION_SCSI_SPC_2_Compliant](./kinquiry_ansi_version_scsi_spc_2_compliant.md)
+- [kINQUIRY_ANSI_VERSION_SCSI_SPC_3_Compliant](./kinquiry_ansi_version_scsi_spc_3_compliant.md)
+- [kINQUIRY_ANSI_VERSION_SCSI_SPC_Compliant](./kinquiry_ansi_version_scsi_spc_compliant.md)
+- [kINQUIRY_Byte3_AERC_Bit](./kinquiry_byte3_aerc_bit.md)
+- [kINQUIRY_Byte3_AERC_Mask](./kinquiry_byte3_aerc_mask.md)
+- [kINQUIRY_Byte3_HISUP_Bit](./kinquiry_byte3_hisup_bit.md)
+- [kINQUIRY_Byte3_HISUP_Mask](./kinquiry_byte3_hisup_mask.md)
+- [kINQUIRY_Byte3_NORMACA_Bit](./kinquiry_byte3_normaca_bit.md)
 
 
 ---

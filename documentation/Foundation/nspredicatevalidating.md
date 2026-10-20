@@ -1,7 +1,8 @@
 # NSPredicateValidating
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 26.4+
@@ -18,18 +19,22 @@
 protocol NSPredicateValidating : NSObjectProtocol
 ```
 
+```objc
+@protocol NSPredicateValidating <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func visit(NSPredicate) throws](nspredicatevalidating/visit(_:)-491gq.md)
-- [func visit(NSComparisonPredicate.Operator) throws](nspredicatevalidating/visit(_:)-9r82q.md)
-- [func visit(NSExpression) throws](nspredicatevalidating/visit(_:)-9s9ho.md)
-- [func visitExpressionKeyPath(NSExpression, scope: String?, key: String?) throws](nspredicatevalidating/visitexpressionkeypath(_:scope:key:).md)
+- [func visit(NSPredicate) throws](./nspredicatevalidating/visit%28_%29-491gq.md)
+- [func visit(NSComparisonPredicate.Operator) throws](./nspredicatevalidating/visit%28_%29-9r82q.md)
+- [func visit(NSExpression) throws](./nspredicatevalidating/visit%28_%29-9s9ho.md)
+- [func visitExpressionKeyPath(NSExpression, scope: String?, key: String?) throws](./nspredicatevalidating/visitexpressionkeypath%28_,scope,key%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # guidedAccessRestrictionState(forIdentifier:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the restriction state for the specified guided access restriction.
 
@@ -9,7 +10,7 @@ Returns the restriction state for the specified guided access restriction.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ Returns the restriction state for the specified guided access restriction.
 static func guidedAccessRestrictionState(forIdentifier restrictionIdentifier: String) -> UIAccessibility.GuidedAccessRestrictionState
 ```
 
+```c
+extern UIGuidedAccessRestrictionState UIGuidedAccessRestrictionStateForIdentifier(NSString *restrictionIdentifier);
+```
+
 #### Return Value
 
-The current state of the guided access restriction. The initial state of all restrictions is [`UIAccessibility.GuidedAccessRestrictionState.allow`](uiaccessibility/guidedaccessrestrictionstate/allow.md).
+The current state of the guided access restriction. The initial state of all restrictions is [`UIAccessibility.GuidedAccessRestrictionState.allow`](./guidedaccessrestrictionstate/allow.md).
 
 ## Parameters
 
@@ -29,7 +34,8 @@ The current state of the guided access restriction. The initial state of all res
 
 ## See Also
 
-- [protocol UIGuidedAccessRestrictionDelegate](uiguidedaccessrestrictiondelegate.md)
+### Guided Access
+- [protocol UIGuidedAccessRestrictionDelegate](../uiguidedaccessrestrictiondelegate.md)
   A set of methods you use to add custom restrictions for the Guided Access feature in iOS.
 
 

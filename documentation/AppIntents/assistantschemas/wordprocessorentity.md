@@ -1,7 +1,8 @@
 # AssistantSchemas.WordProcessorEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for app entities that describe text documents.
 
@@ -23,20 +24,20 @@ protocol WordProcessorEntity : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var document: some AssistantSchemas.Entity](assistantschemas/wordprocessorentity/document.md)
+- [var document: some AssistantSchemas.Entity](./wordprocessorentity/document.md)
   The app entity describes a text document.
-- [var page: some AssistantSchemas.Entity](assistantschemas/wordprocessorentity/page.md)
+- [var page: some AssistantSchemas.Entity](./wordprocessorentity/page.md)
   The app entity describes a page in a text document.
-- [var template: some AssistantSchemas.Entity](assistantschemas/wordprocessorentity/template.md)
+- [var template: some AssistantSchemas.Entity](./wordprocessorentity/template.md)
   The app entity describes a text document template.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
-- [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
+- [AssistantSchema.EntitySchema](../assistantschema/entityschema.md)
+- [AssistantSchemas.EntitySchema](./entityschema.md)
 
 
 ---

@@ -1,18 +1,19 @@
 # particleBounce
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The restitution coefficient of each particle in the system. Animatable.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,43 +21,48 @@ The restitution coefficient of each particle in the system. Animatable.
 var particleBounce: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat particleBounce;
+```
+
 #### Discussion
 
-Restitution determines the amount of energy gained or lost in a collision. (To define collision behavior, see the [`colliderNodes`](scnparticlesystem/collidernodes.md) property.)
+Restitution determines the amount of energy gained or lost in a collision. (To define collision behavior, see the [`colliderNodes`](./collidernodes.md) property.)
 
-A value of `1.0` specifies that a particle loses no energy in a collision (for example, a particle that falls from a certain height onto a flat surface bounces back to the same height). Larger values specify energy gained, and smaller values specify a loss of energy. A value of `0.0` prevents particles from bouncing. You can randomize the bounce factors of particles in the system with the [`particleBounceVariation`](scnparticlesystem/particlebouncevariation.md) property.
+A value of `1.0` specifies that a particle loses no energy in a collision (for example, a particle that falls from a certain height onto a flat surface bounces back to the same height). Larger values specify energy gained, and smaller values specify a loss of energy. A value of `0.0` prevents particles from bouncing. You can randomize the bounce factors of particles in the system with the [`particleBounceVariation`](./particlebouncevariation.md) property.
 
 The default value is `0.7`.
 
-You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
+You can animate changes to this property’s value. See [Animating SceneKit Content](../animating-scenekit-content.md).
 
 ## See Also
 
-- [var isAffectedByGravity: Bool](scnparticlesystem/isaffectedbygravity.md)
+### Simulating Physics for Particles
+- [var isAffectedByGravity: Bool](./isaffectedbygravity.md)
   A Boolean value that determines whether gravity, as defined by the scene’s physics simulation, affects the motion of particles.
-- [var isAffectedByPhysicsFields: Bool](scnparticlesystem/isaffectedbyphysicsfields.md)
+- [var isAffectedByPhysicsFields: Bool](./isaffectedbyphysicsfields.md)
   A Boolean value that determines whether physics fields in the scene affect the motion of particles.
-- [var colliderNodes: [SCNNode]?](scnparticlesystem/collidernodes.md)
+- [var colliderNodes: [SCNNode]?](./collidernodes.md)
   The nodes whose geometry the system’s particles can collide with.
-- [var particleDiesOnCollision: Bool](scnparticlesystem/particlediesoncollision.md)
+- [var particleDiesOnCollision: Bool](./particlediesoncollision.md)
   A Boolean value that determines whether particles are removed from the scene upon colliding with another object.
-- [var acceleration: SCNVector3](scnparticlesystem/acceleration.md)
+- [var acceleration: SCNVector3](./acceleration.md)
   The constant acceleration vector, in units per second per second, applied to all particles in the system. Animatable.
-- [var dampingFactor: CGFloat](scnparticlesystem/dampingfactor.md)
+- [var dampingFactor: CGFloat](./dampingfactor.md)
   A factor that slows particles relative to their velocity. Animatable.
-- [var particleMass: CGFloat](scnparticlesystem/particlemass.md)
+- [var particleMass: CGFloat](./particlemass.md)
   The mass, in kilograms, of each particle in the system. Animatable.
-- [var particleMassVariation: CGFloat](scnparticlesystem/particlemassvariation.md)
+- [var particleMassVariation: CGFloat](./particlemassvariation.md)
   The range, in kilograms, of randomized particle masses. Animatable.
-- [var particleCharge: CGFloat](scnparticlesystem/particlecharge.md)
+- [var particleCharge: CGFloat](./particlecharge.md)
   The electric charge, in coulombs, of each particle in the system. Animatable.
-- [var particleChargeVariation: CGFloat](scnparticlesystem/particlechargevariation.md)
+- [var particleChargeVariation: CGFloat](./particlechargevariation.md)
   The range, in coulombs, of randomized particle charges. Animatable.
-- [var particleBounceVariation: CGFloat](scnparticlesystem/particlebouncevariation.md)
+- [var particleBounceVariation: CGFloat](./particlebouncevariation.md)
   The range of randomized restitution coefficients for particles. Animatable.
-- [var particleFriction: CGFloat](scnparticlesystem/particlefriction.md)
+- [var particleFriction: CGFloat](./particlefriction.md)
   The friction coefficient of each particle in the system. Animatable.
-- [var particleFrictionVariation: CGFloat](scnparticlesystem/particlefrictionvariation.md)
+- [var particleFrictionVariation: CGFloat](./particlefrictionvariation.md)
   The range of randomized friction coefficients for particles. Animatable.
 
 

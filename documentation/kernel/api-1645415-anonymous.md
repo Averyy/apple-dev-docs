@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDriverDescriptionSignature](1645415-anonymous/kdriverdescriptionsignature.md)
-- [kTheDescriptionSignature](1645415-anonymous/kthedescriptionsignature.md)
+- [kDriverDescriptionSignature](./api-1645415-anonymous/kdriverdescriptionsignature.md)
+- [kTheDescriptionSignature](./api-1645415-anonymous/kthedescriptionsignature.md)
 
 
 ---

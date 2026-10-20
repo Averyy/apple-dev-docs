@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [dot3ChipSetWesternDigital83C690](3753722-anonymous/dot3chipsetwesterndigital83c690.md)
-- [dot3ChipSetWesternDigital83C790](3753722-anonymous/dot3chipsetwesterndigital83c790.md)
+- [dot3ChipSetWesternDigital83C690](./api-3753722-anonymous/dot3chipsetwesterndigital83c690.md)
+- [dot3ChipSetWesternDigital83C790](./api-3753722-anonymous/dot3chipsetwesterndigital83c790.md)
 
 
 ---

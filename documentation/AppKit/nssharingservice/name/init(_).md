@@ -1,12 +1,13 @@
 # init(_:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sharing service name using the provided string.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](nssharingservice/name/init(rawvalue:).md)
+### Creating a Sharing Service Name
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates a sharing service name using the specified raw value.
 
 

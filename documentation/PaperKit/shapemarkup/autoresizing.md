@@ -1,7 +1,8 @@
 # autoresizing
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Automatic sizing behaviors for this markup.
 

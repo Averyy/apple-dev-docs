@@ -1,7 +1,8 @@
 # MLWordTagger.Token
 
 **Framework**: Create ML  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The token type of a word tagger, which is a string.
 
@@ -16,13 +17,14 @@ typealias Token = String
 
 ## See Also
 
-- [init(trainingData: [(tokens: [MLWordTagger.Token], labels: [String])], parameters: MLWordTagger.ModelParameters) throws](mlwordtagger/init(trainingdata:parameters:).md)
+### Creating and training a word tagger
+- [init(trainingData: [(tokens: [MLWordTagger.Token], labels: [String])], parameters: MLWordTagger.ModelParameters) throws](./init%28trainingdata,parameters%29.md)
   Creates a word tagger.
-- [init(trainingData:tokenColumn:labelColumn:parameters:)](mlwordtagger/init(trainingdata:tokencolumn:labelcolumn:parameters:).md)
+- [init(trainingData:tokenColumn:labelColumn:parameters:)](./init%28trainingdata,tokencolumn,labelcolumn,parameters%29.md)
   Creates a word tagger.
-- [MLWordTagger.ModelParameters](mlwordtagger/modelparameters-swift.struct.md)
+- [MLWordTagger.ModelParameters](./modelparameters-swift.struct.md)
   Parameters that specify model training parameters and validation data.
-- [let modelParameters: MLWordTagger.ModelParameters](mlwordtagger/modelparameters-swift.property.md)
+- [let modelParameters: MLWordTagger.ModelParameters](./modelparameters-swift.property.md)
   The configuration parameters that the word tagger used for training during initialization.
 
 

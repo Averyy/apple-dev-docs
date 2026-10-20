@@ -1,11 +1,12 @@
 # Identifiable Implementations
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [ReservedRegion.ID](reservedregion/id-swift.struct.md)
+- [ReservedRegion.ID](./id-swift.struct.md)
   An identifier for a reserved region.
 
 

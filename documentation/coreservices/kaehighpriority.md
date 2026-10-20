@@ -1,7 +1,8 @@
 # kAEHighPriority
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The Apple Event Manager posts the event at the beginning of the event queue of the server process.
 

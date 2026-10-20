@@ -1,18 +1,19 @@
 # printSchema
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Prints the generated records to the console.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ Prints the generated records to the console.
 static var printSchema: NSPersistentCloudKitContainerSchemaInitializationOptions { get }
 ```
 
+```c
+NSPersistentCloudKitContainerSchemaInitializationOptionsPrintSchema
+```
+
 ## See Also
 
-- [static var dryRun: NSPersistentCloudKitContainerSchemaInitializationOptions](nspersistentcloudkitcontainerschemainitializationoptions/dryrun.md)
+### Constants
+- [static var dryRun: NSPersistentCloudKitContainerSchemaInitializationOptions](./dryrun.md)
   A flag that indicates the container validates the model and generates the records, but doesn’t upload them to CloudKit.
 
 

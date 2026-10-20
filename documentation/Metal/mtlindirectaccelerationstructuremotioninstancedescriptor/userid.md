@@ -1,7 +1,8 @@
 # userID
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A user-assigned ID to help identify the instance.
 
@@ -17,6 +18,10 @@ A user-assigned ID to help identify the instance.
 
 ```swift
 var userID: UInt32
+```
+
+```c
+uint32_t userID;
 ```
 
 

@@ -1,7 +1,8 @@
 # GCDevicePhysicalInputElementChange.unknownChange
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 It’s unknown whether there’s a change to the input value.
 
@@ -19,9 +20,13 @@ It’s unknown whether there’s a change to the input value.
 case unknownChange
 ```
 
+```c
+GCDevicePhysicalInputElementUnknownChange
+```
+
 ## Mentions
 
-- [Handling input events](handling-input-events.md)
+- [Handling input events](../handling-input-events.md)
 
 #### Discussion
 
@@ -29,9 +34,10 @@ This occurs if Game Controller removes older input states from the queue.
 
 ## See Also
 
-- [GCDevicePhysicalInputElementChange.noChange](gcdevicephysicalinputelementchange/nochange.md)
+### States
+- [GCDevicePhysicalInputElementChange.noChange](./nochange.md)
   There’s no change to the input value.
-- [GCDevicePhysicalInputElementChange.changed](gcdevicephysicalinputelementchange/changed.md)
+- [GCDevicePhysicalInputElementChange.changed](./changed.md)
   There’s a change to the input value.
 
 

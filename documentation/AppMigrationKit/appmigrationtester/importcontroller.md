@@ -1,7 +1,8 @@
 # importController
 
 **Framework**: AppMigrationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An instance of the controller object you use to test your import code.
 
@@ -17,7 +18,8 @@ var importController: AppMigrationTester.AppImportController { get async throws 
 
 ## See Also
 
-- [AppMigrationTester.AppImportController](appmigrationtester/appimportcontroller.md)
+### Testing import
+- [AppMigrationTester.AppImportController](./appimportcontroller.md)
   A class you use to test your extension’s import code.
 
 

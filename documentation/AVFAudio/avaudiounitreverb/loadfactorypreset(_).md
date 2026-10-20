@@ -1,7 +1,8 @@
 # loadFactoryPreset(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the audio unit as a reverb preset.
 
@@ -19,9 +20,13 @@ Configures the audio unit as a reverb preset.
 func loadFactoryPreset(_ preset: AVAudioUnitReverbPreset)
 ```
 
+```objc
+- (void) loadFactoryPreset:(AVAudioUnitReverbPreset) preset;
+```
+
 #### Discussion
 
-For more information about possible values, see [`AVAudioUnitReverbPreset`](avaudiounitreverbpreset.md). The default value is [`AVAudioUnitReverbPreset.mediumHall`](avaudiounitreverbpreset/mediumhall.md).
+For more information about possible values, see [`AVAudioUnitReverbPreset`](../avaudiounitreverbpreset.md). The default value is [`AVAudioUnitReverbPreset.mediumHall`](../avaudiounitreverbpreset/mediumhall.md).
 
 ## Parameters
 
@@ -29,7 +34,8 @@ For more information about possible values, see [`AVAudioUnitReverbPreset`](avau
 
 ## See Also
 
-- [enum AVAudioUnitReverbPreset](avaudiounitreverbpreset.md)
+### Loading a reverb preset
+- [enum AVAudioUnitReverbPreset](../avaudiounitreverbpreset.md)
   Constants that represent preset reverbs.
 
 

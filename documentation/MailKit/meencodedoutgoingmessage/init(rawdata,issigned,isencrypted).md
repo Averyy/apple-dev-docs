@@ -1,7 +1,8 @@
 # init(rawData:isSigned:isEncrypted:)
 
 **Framework**: MailKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that contains the outgoing message’s encoded data, and indicates if the encoder encrypted or signed the message.
 
@@ -14,6 +15,10 @@ Creates an object that contains the outgoing message’s encoded data, and indic
 init(rawData: Data, isSigned: Bool, isEncrypted: Bool)
 ```
 
+```objc
+- (instancetype) initWithRawData:(NSData *) rawData isSigned:(BOOL) isSigned isEncrypted:(BOOL) isEncrypted;
+```
+
 ## Parameters
 
 - `rawData`: The encrypted, signed, or both encrypted and signed message data.
@@ -22,11 +27,12 @@ init(rawData: Data, isSigned: Bool, isEncrypted: Bool)
 
 ## See Also
 
-- [var isEncrypted: Bool](meencodedoutgoingmessage/isencrypted.md)
+### Encoding Outgoing Messages
+- [var isEncrypted: Bool](./isencrypted.md)
   A Boolean value that indicates if the message encoder encrypted the message.
-- [var isSigned: Bool](meencodedoutgoingmessage/issigned.md)
+- [var isSigned: Bool](./issigned.md)
   A Boolean value that indicates if the message encoder signed the message.
-- [var rawData: Data](meencodedoutgoingmessage/rawdata.md)
+- [var rawData: Data](./rawdata.md)
   The encrypted, signed, or both encrypted and signed data for the outgoing message.
 
 

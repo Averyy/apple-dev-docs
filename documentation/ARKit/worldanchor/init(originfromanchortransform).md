@@ -1,7 +1,8 @@
 # init(originFromAnchorTransform:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a world anchor from a position and orientation in world space.
 

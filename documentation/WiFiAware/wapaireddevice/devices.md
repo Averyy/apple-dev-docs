@@ -1,7 +1,8 @@
 # WAPairedDevice.Devices
 
 **Framework**: Wi-Fi Aware  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A dictionary holding a snapshot of currently paired devices accessible and known to your app.
 
@@ -18,7 +19,7 @@ typealias Devices = [WAPairedDevice.ID : WAPairedDevice]
 
 ## Mentions
 
-- [Connecting devices for peer-to-peer Wi-Fi](connecting-paired-devices.md)
+- [Connecting devices for peer-to-peer Wi-Fi](../connecting-paired-devices.md)
 
 #### Discussion
 
@@ -26,11 +27,12 @@ An empty dictionary indicates that no paired devices are known to your app.
 
 ## See Also
 
-- [struct WAPairedDevice](wapaireddevice.md)
+### Paired devices
+- [struct WAPairedDevice](../wapaireddevice.md)
   A known Wi-Fi Aware device that your app can connect to.
-- [WAPairedDevice.DevicesSequence](wapaireddevice/devicessequence.md)
+- [WAPairedDevice.DevicesSequence](./devicessequence.md)
   A sequence that vends updates to a paired device list, as the list changes.
-- [WAPairedDevice.PairingInfo](wapaireddevice/pairinginfo-swift.struct.md)
+- [WAPairedDevice.PairingInfo](./pairinginfo-swift.struct.md)
   A collection of unauthenticated information the system receives from a device before it’s paired for the first time.
 
 

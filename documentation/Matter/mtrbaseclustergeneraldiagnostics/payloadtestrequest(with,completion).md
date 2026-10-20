@@ -1,7 +1,8 @@
 # payloadTestRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command PayloadTestRequest
 
@@ -17,7 +18,15 @@ Command PayloadTestRequest
 ## Declaration
 
 ```swift
+func payloadTestRequest(with params: MTRGeneralDiagnosticsClusterPayloadTestRequestParams, completion: @escaping @Sendable (MTRGeneralDiagnosticsClusterPayloadTestResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func payloadTestRequest(with params: MTRGeneralDiagnosticsClusterPayloadTestRequestParams) async throws -> MTRGeneralDiagnosticsClusterPayloadTestResponseParams
+```
+
+```objc
+- (void) payloadTestRequestWithParams:(MTRGeneralDiagnosticsClusterPayloadTestRequestParams *) params completion:(void (^)(MTRGeneralDiagnosticsClusterPayloadTestResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

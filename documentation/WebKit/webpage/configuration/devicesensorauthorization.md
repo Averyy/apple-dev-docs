@@ -1,7 +1,8 @@
 # deviceSensorAuthorization
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Allows specifying how web resources may access device sensors.
 

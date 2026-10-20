@@ -1,7 +1,8 @@
 # collisionMode
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that determines how the map handles collisions between annotations.
 
@@ -10,7 +11,7 @@ A value that determines how the map handles collisions between annotations.
 
 ## Declaration
 
-```swift
+```
 get collisionMode(): AnnotationCollisionMode;
 ```
 

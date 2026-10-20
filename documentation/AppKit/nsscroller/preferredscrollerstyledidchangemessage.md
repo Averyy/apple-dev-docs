@@ -1,7 +1,8 @@
 # NSScroller.PreferredScrollerStyleDidChangeMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,13 +16,13 @@ struct PreferredScrollerStyleDidChangeMessage
 ## Topics
 
 ### Initializers
-- [init()](nsscroller/preferredscrollerstyledidchangemessage/init.md)
+- [init()](./preferredscrollerstyledidchangemessage/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

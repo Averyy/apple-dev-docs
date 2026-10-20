@@ -1186,9 +1186,8 @@
       "hash": "13db95b60766d860556512fa695446cf58c106e8247edcacc8478bb86dfa7b31"
     },
     "https://developer.apple.com/documentation/visionkit/structuring_recognized_text_on_a_document": {
-      "etag": "W/\"53fefa5285d96b70e447e45376b5b606\"",
       "file_path": "documentation/VisionKit/structuring_recognized_text_on_a_document.md",
-      "hash": "fac9e80f1c6c6b46dc4f035567d6e32ebf0f69b20cb7cd578f0d8f6ce2eb6bf3"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/visionkit/vndocumentcamerascan": {
       "etag": "\"5501-65d5608810164-df\"",
@@ -2435,9 +2434,8 @@
       "hash": "13db95b60766d860556512fa695446cf58c106e8247edcacc8478bb86dfa7b31"
     },
     "https://developer.apple.com/tutorials/data/documentation/visionkit/structuring_recognized_text_on_a_document.json": {
-      "etag": "W/\"53fefa5285d96b70e447e45376b5b606\"",
       "file_path": "documentation/VisionKit/structuring_recognized_text_on_a_document.md",
-      "hash": "fac9e80f1c6c6b46dc4f035567d6e32ebf0f69b20cb7cd578f0d8f6ce2eb6bf3"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/visionkit/vndocumentcamerascan.json": {
       "etag": "\"5501-65d5608810164-df\"",
@@ -2496,6 +2494,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 499
   }
 }

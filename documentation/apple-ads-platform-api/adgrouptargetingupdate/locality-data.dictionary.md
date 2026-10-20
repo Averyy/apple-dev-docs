@@ -1,7 +1,8 @@
 # AdGroupTargetingUpdate.Locality
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 City or locality targeting.
 
@@ -10,13 +11,13 @@ City or locality targeting.
 
 ## Declaration
 
-```swift
+```
 object AdGroupTargetingUpdate.Locality
 ```
 
 #### Discussion
 
-Locality IDs are returned by [`Search Geo Locations`](searches-for-a-list-of-geo-locations.md) or [`Query Geo Locations`](gets-a-list-of-geo-locations.md). Applies to App Store and Apple Maps campaigns. Uses the [`TargetingDataUpdate`](targetingdataupdate.md) `include`/`exclude` shape.
+Locality IDs are returned by [`Search Geo Locations`](../searches-for-a-list-of-geo-locations.md) or [`Query Geo Locations`](../gets-a-list-of-geo-locations.md). Applies to App Store and Apple Maps campaigns. Uses the [`TargetingDataUpdate`](../targetingdataupdate.md) `include`/`exclude` shape.
 
 ```json
 "locality": {

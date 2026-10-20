@@ -1,7 +1,8 @@
 # selectedImage
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An alternate image to display when the tab is selected. Default is nil.
 
@@ -16,6 +17,10 @@ An alternate image to display when the tab is selected. Default is nil.
 
 ```swift
 var selectedImage: UIImage? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) UIImage * selectedImage;
 ```
 
 

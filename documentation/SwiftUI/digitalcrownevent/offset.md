@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset of the digital crown when this event was sent.
 
@@ -16,7 +17,8 @@ var offset: Double
 
 ## See Also
 
-- [var velocity: Double](digitalcrownevent/velocity.md)
+### Getting events
+- [var velocity: Double](./velocity.md)
   The velocity at which the offset was changing when this event was sent.
 
 

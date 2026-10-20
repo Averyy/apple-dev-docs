@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locale in which the system performs the app intent.
 
@@ -27,7 +28,7 @@ The locale for a person’s request can differ from the app’s current locale i
 - A person makes a request in a language that’s different from the system’s locale.
 - A person creates a custom shortcut in the Shortcuts app that uses a locale different from their system locale.
 
-Where possible, use [`LocalizedStringResource`](https://developer.apple.com/documentation/foundation/localizedstringresource) APIs to localize app intents and let the system choose the right locale as needed. If localized string resources aren’t an option — for example, when you generate content on a server or on device using generative models and can’t easily localize results in the app — use the [`locale`](intentsystemcontext/locale.md) property as context to provide intent results that match the person’s locale.
+Where possible, use [`LocalizedStringResource`](../../Foundation/localizedstringresource.md) APIs to localize app intents and let the system choose the right locale as needed. If localized string resources aren’t an option — for example, when you generate content on a server or on device using generative models and can’t easily localize results in the app — use the [`locale`](./locale.md) property as context to provide intent results that match the person’s locale.
 
 
 ---

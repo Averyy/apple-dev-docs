@@ -1,7 +1,8 @@
 # IconServicesUsageFlags
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 16.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias IconServicesUsageFlags = UInt32
+```
+
+```c
+typedef UInt32 IconServicesUsageFlags;
 ```
 
 

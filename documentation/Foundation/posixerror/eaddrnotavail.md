@@ -1,7 +1,8 @@
 # EADDRNOTAVAIL
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Can’t assign requested address.
 

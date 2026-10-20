@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of time, in seconds, that the alert is visible.
 
@@ -16,13 +17,18 @@ The amount of time, in seconds, that the alert is visible.
 var duration: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval duration;
+```
+
 #### Discussion
 
-Set `duration` to zero to display the alert until dismissed by the user. When `duration` is not zero, [`CPNavigationAlertMinimumDuration`](cpnavigationalertminimumduration.md) determines the minimum amount of time the alert is visible.
+Set `duration` to zero to display the alert until dismissed by the user. When `duration` is not zero, [`CPNavigationAlertMinimumDuration`](../cpnavigationalertminimumduration.md) determines the minimum amount of time the alert is visible.
 
 ## See Also
 
-- [var CPNavigationAlertMinimumDuration: TimeInterval](cpnavigationalertminimumduration.md)
+### Getting the Alert Duration
+- [var CPNavigationAlertMinimumDuration: TimeInterval](../cpnavigationalertminimumduration.md)
   A constant that defines the minimum amount of time that an alert is visible.
 
 

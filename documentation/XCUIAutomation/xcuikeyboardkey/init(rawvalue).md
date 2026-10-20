@@ -1,18 +1,19 @@
 # init(rawValue:)
 
 **Framework**: XCUIAutomation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a constant with a string that represents a keyboard key.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -27,7 +28,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](xcuikeyboardkey/init(_:).md)
+### Initializers
+- [init(String)](./init%28_%29.md)
   Initializes a constant with a string that represents a keyboard key.
 
 

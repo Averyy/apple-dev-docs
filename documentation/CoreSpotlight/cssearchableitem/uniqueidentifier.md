@@ -1,7 +1,8 @@
 # uniqueIdentifier
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that uniquely identifies the searchable item within your app.
 
@@ -18,23 +19,28 @@ The value that uniquely identifies the searchable item within your app.
 var uniqueIdentifier: String { get set }
 ```
 
+```objc
+@property (copy) NSString * uniqueIdentifier;
+```
+
 #### Discussion
 
-This property is required because it’s the only way to identify searchable items in the index when you need to access or delete them. When you create a searchable item, the system generates a UUID by default, but you can replace the default value with a unique identifier that makes sense in the context of your app. If you want to use a custom value for [`uniqueIdentifier`](cssearchableitem/uniqueidentifier.md), be sure to set it before the item is indexed for the first time.
+This property is required because it’s the only way to identify searchable items in the index when you need to access or delete them. When you create a searchable item, the system generates a UUID by default, but you can replace the default value with a unique identifier that makes sense in the context of your app. If you want to use a custom value for [`uniqueIdentifier`](./uniqueidentifier.md), be sure to set it before the item is indexed for the first time.
 
 ## See Also
 
-- [var domainIdentifier: String?](cssearchableitem/domainidentifier.md)
+### Setting attributes on a searchable item
+- [var domainIdentifier: String?](./domainidentifier.md)
   An optional identifier that represents the domain or owner of the item.
-- [var attributeSet: CSSearchableItemAttributeSet](cssearchableitem/attributeset.md)
-  The set of attributes that contain metadata associated with the item in a [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md) object.
-- [var expirationDate: Date!](cssearchableitem/expirationdate.md)
+- [var attributeSet: CSSearchableItemAttributeSet](./attributeset.md)
+  The set of attributes that contain metadata associated with the item in a [`CSSearchableItemAttributeSet`](../cssearchableitemattributeset.md) object.
+- [var expirationDate: Date!](./expirationdate.md)
   The date after which the searchable item should no longer exist.
-- [var isUpdate: Bool](cssearchableitem/isupdate.md)
+- [var isUpdate: Bool](./isupdate.md)
   A Boolean value that indicates whether to treat the item as an update instead of a new item.
-- [var updateListenerOptions: CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.property.md)
+- [var updateListenerOptions: CSSearchableItem.UpdateListenerOptions](./updatelisteneroptions-swift.property.md)
   The types of notifications to request from Spotlight.
-- [CSSearchableItem.UpdateListenerOptions](cssearchableitem/updatelisteneroptions-swift.struct.md)
+- [CSSearchableItem.UpdateListenerOptions](./updatelisteneroptions-swift.struct.md)
   The options to generate summarization or prioritization information for a searchable item.
 
 

@@ -1,7 +1,8 @@
 # AppExtensionSceneBuilder
 
 **Framework**: ExtensionKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A custom parameter attribute that constructs extension scenes from closures.
 
@@ -24,38 +25,39 @@ A custom parameter attribute that constructs extension scenes from closures.
 ## Topics
 
 ### Building the scene’s content
-- [static func buildBlock<Content>(Content) -> some AppExtensionScene](appextensionscenebuilder/buildblock(_:).md)
+- [static func buildBlock<Content>(Content) -> some AppExtensionScene](./appextensionscenebuilder/buildblock%28_%29.md)
   Passes through a single extension scene unmodified.
-- [static func buildBlock<C0, C1>(C0, C1) -> some AppExtensionScene](appextensionscenebuilder/buildblock(_:_:).md)
+- [static func buildBlock<C0, C1>(C0, C1) -> some AppExtensionScene](./appextensionscenebuilder/buildblock%28_,_%29.md)
   Builds an extension scene by combining two scenes.
-- [static func buildBlock<C0, C1, C2>(C0, C1, C2) -> some AppExtensionScene](appextensionscenebuilder/buildblock(_:_:_:).md)
+- [static func buildBlock<C0, C1, C2>(C0, C1, C2) -> some AppExtensionScene](./appextensionscenebuilder/buildblock%28_,_,_%29.md)
   Builds an extension scene by combining three scenes.
-- [static func buildBlock<C0, C1, C2, C3>(C0, C1, C2, C3) -> some AppExtensionScene](appextensionscenebuilder/buildblock(_:_:_:_:).md)
+- [static func buildBlock<C0, C1, C2, C3>(C0, C1, C2, C3) -> some AppExtensionScene](./appextensionscenebuilder/buildblock%28_,_,_,_%29.md)
   Builds an extension scene by combining four scenes.
-- [static func buildBlock<C0, C1, C2, C3, C4>(C0, C1, C2, C3, C4) -> some AppExtensionScene](appextensionscenebuilder/buildblock(_:_:_:_:_:).md)
+- [static func buildBlock<C0, C1, C2, C3, C4>(C0, C1, C2, C3, C4) -> some AppExtensionScene](./appextensionscenebuilder/buildblock%28_,_,_,_,_%29.md)
   Builds an extension scene by combining five scenes.
-- [static func buildBlock<C0, C1, C2, C3, C4, C5>(C0, C1, C2, C3, C4, C5) -> some AppExtensionScene](appextensionscenebuilder/buildblock(_:_:_:_:_:_:).md)
+- [static func buildBlock<C0, C1, C2, C3, C4, C5>(C0, C1, C2, C3, C4, C5) -> some AppExtensionScene](./appextensionscenebuilder/buildblock%28_,_,_,_,_,_%29.md)
   Builds an extension scene by combining six scenes.
-- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6>(C0, C1, C2, C3, C4, C5, C6) -> some AppExtensionScene](appextensionscenebuilder/buildblock(_:_:_:_:_:_:_:).md)
+- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6>(C0, C1, C2, C3, C4, C5, C6) -> some AppExtensionScene](./appextensionscenebuilder/buildblock%28_,_,_,_,_,_,_%29.md)
   Builds an extension scene by combining seven scenes.
-- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7>(C0, C1, C2, C3, C4, C5, C6, C7) -> some AppExtensionScene](appextensionscenebuilder/buildblock(_:_:_:_:_:_:_:_:).md)
+- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7>(C0, C1, C2, C3, C4, C5, C6, C7) -> some AppExtensionScene](./appextensionscenebuilder/buildblock%28_,_,_,_,_,_,_,_%29.md)
   Builds an extension scene by combining eight scenes.
-- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8>(C0, C1, C2, C3, C4, C5, C6, C7, C8) -> some AppExtensionScene](appextensionscenebuilder/buildblock(_:_:_:_:_:_:_:_:_:).md)
+- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8>(C0, C1, C2, C3, C4, C5, C6, C7, C8) -> some AppExtensionScene](./appextensionscenebuilder/buildblock%28_,_,_,_,_,_,_,_,_%29.md)
   Builds an extension scene by combining nine scenes.
-- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9>(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9) -> some AppExtensionScene](appextensionscenebuilder/buildblock(_:_:_:_:_:_:_:_:_:_:).md)
+- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9>(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9) -> some AppExtensionScene](./appextensionscenebuilder/buildblock%28_,_,_,_,_,_,_,_,_,_%29.md)
   Builds an extension scene by combining ten scenes.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AppExtensionScene](appextensionscene.md)
+### UI definition
+- [protocol AppExtensionScene](./appextensionscene.md)
   An interface you use to provide a specific scene from your app extension’s UI.
-- [struct PrimitiveAppExtensionScene](primitiveappextensionscene.md)
+- [struct PrimitiveAppExtensionScene](./primitiveappextensionscene.md)
   A type you use to deliver the contents of your app-extension-based UI.
 
 

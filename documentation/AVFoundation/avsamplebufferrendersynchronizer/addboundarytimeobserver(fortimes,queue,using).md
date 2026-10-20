@@ -1,18 +1,19 @@
 # addBoundaryTimeObserver(forTimes:queue:using:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests invocation of a block when specified times are traversed during normal rendering.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,17 @@ Requests invocation of a block when specified times are traversed during normal 
 func addBoundaryTimeObserver(forTimes times: [NSValue], queue: dispatch_queue_t?, using block: @escaping @Sendable () -> Void) -> Any
 ```
 
+```objc
+- (id) addBoundaryTimeObserverForTimes:(NSArray<NSValue *> *) times queue:(dispatch_queue_t) queue usingBlock:(void (^)()) block;
+```
+
 #### Return Value
 
-An object that conforms to [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class). You must retain this value as long as you want the time observer to be invoked by the synchronizer. Pass this object to [`removeTimeObserver(_:)`](avsamplebufferrendersynchronizer/removetimeobserver(_:).md) to cancel time observation.
+An object that conforms to [`NSObject`](../../ObjectiveC/nsobject-swift.class.md). You must retain this value as long as you want the time observer to be invoked by the synchronizer. Pass this object to [`removeTimeObserver(_:)`](./removetimeobserver%28_%29.md) to cancel time observation.
 
 #### Discussion
 
-Always pair a call to this method with a call to [`removeTimeObserver(_:)`](avsamplebufferrendersynchronizer/removetimeobserver(_:).md). Releasing the observer without calling `removeTimeObserver(_:)` results in undefined behavior.
+Always pair a call to this method with a call to [`removeTimeObserver(_:)`](./removetimeobserver%28_%29.md). Releasing the observer without calling `removeTimeObserver(_:)` results in undefined behavior.
 
 ## Parameters
 
@@ -36,9 +41,10 @@ Always pair a call to this method with a call to [`removeTimeObserver(_:)`](avsa
 
 ## See Also
 
-- [func addPeriodicTimeObserver(forInterval: CMTime, queue: dispatch_queue_t?, using: (CMTime) -> Void) -> Any](avsamplebufferrendersynchronizer/addperiodictimeobserver(forinterval:queue:using:).md)
+### Observing time
+- [func addPeriodicTimeObserver(forInterval: CMTime, queue: dispatch_queue_t?, using: (CMTime) -> Void) -> Any](./addperiodictimeobserver%28forinterval,queue,using%29.md)
   Requests invocation of a block during rendering at specified time intervals.
-- [func removeTimeObserver(Any)](avsamplebufferrendersynchronizer/removetimeobserver(_:).md)
+- [func removeTimeObserver(Any)](./removetimeobserver%28_%29.md)
   Cancels the specified time observer.
 
 

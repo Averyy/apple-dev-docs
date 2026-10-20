@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,22 +18,22 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [bATAAddressNotFound](1644074-anonymous/bataaddressnotfound.md)
-- [bATABadBlock](1644074-anonymous/batabadblock.md)
-- [bATACommandAborted](1644074-anonymous/batacommandaborted.md)
-- [bATAIDNotFound](1644074-anonymous/bataidnotfound.md)
-- [bATAMediaChangeReq](1644074-anonymous/batamediachangereq.md)
-- [bATAMediaChanged](1644074-anonymous/batamediachanged.md)
-- [bATATrack0NotFound](1644074-anonymous/batatrack0notfound.md)
-- [bATAUncorrectable](1644074-anonymous/batauncorrectable.md)
-- [mATAAddressNotFound](1644074-anonymous/mataaddressnotfound.md)
-- [mATABadBlock](1644074-anonymous/matabadblock.md)
-- [mATACommandAborted](1644074-anonymous/matacommandaborted.md)
-- [mATAIDNotFound](1644074-anonymous/mataidnotfound.md)
-- [mATAMediaChangeReq](1644074-anonymous/matamediachangereq.md)
-- [mATAMediaChanged](1644074-anonymous/matamediachanged.md)
-- [mATATrack0NotFound](1644074-anonymous/matatrack0notfound.md)
-- [mATAUncorrectable](1644074-anonymous/matauncorrectable.md)
+- [bATAAddressNotFound](./api-1644074-anonymous/bataaddressnotfound.md)
+- [bATABadBlock](./api-1644074-anonymous/batabadblock.md)
+- [bATACommandAborted](./api-1644074-anonymous/batacommandaborted.md)
+- [bATAIDNotFound](./api-1644074-anonymous/bataidnotfound.md)
+- [bATAMediaChangeReq](./api-1644074-anonymous/batamediachangereq.md)
+- [bATAMediaChanged](./api-1644074-anonymous/batamediachanged.md)
+- [bATATrack0NotFound](./api-1644074-anonymous/batatrack0notfound.md)
+- [bATAUncorrectable](./api-1644074-anonymous/batauncorrectable.md)
+- [mATAAddressNotFound](./api-1644074-anonymous/mataaddressnotfound.md)
+- [mATABadBlock](./api-1644074-anonymous/matabadblock.md)
+- [mATACommandAborted](./api-1644074-anonymous/matacommandaborted.md)
+- [mATAIDNotFound](./api-1644074-anonymous/mataidnotfound.md)
+- [mATAMediaChangeReq](./api-1644074-anonymous/matamediachangereq.md)
+- [mATAMediaChanged](./api-1644074-anonymous/matamediachanged.md)
+- [mATATrack0NotFound](./api-1644074-anonymous/matatrack0notfound.md)
+- [mATAUncorrectable](./api-1644074-anonymous/matauncorrectable.md)
 
 
 ---

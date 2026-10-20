@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.spain
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Spanish in the HID specification.
 

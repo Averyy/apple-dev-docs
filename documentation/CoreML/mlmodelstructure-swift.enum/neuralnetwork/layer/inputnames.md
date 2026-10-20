@@ -1,7 +1,8 @@
 # inputNames
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The input names.
 
@@ -22,11 +23,12 @@ let inputNames: [String]
 
 ## See Also
 
-- [let name: String](mlmodelstructure-swift.enum/neuralnetwork/layer/name.md)
+### Accessing layer properties
+- [let name: String](./name.md)
   The layer name.
-- [let outputNames: [String]](mlmodelstructure-swift.enum/neuralnetwork/layer/outputnames.md)
+- [let outputNames: [String]](./outputnames.md)
   The output names.
-- [let type: String](mlmodelstructure-swift.enum/neuralnetwork/layer/type.md)
+- [let type: String](./type.md)
   The type of the layer, e,g, “elementwise”, “pooling”, etc.
 
 

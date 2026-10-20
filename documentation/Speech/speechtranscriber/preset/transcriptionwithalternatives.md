@@ -1,7 +1,8 @@
 # transcriptionWithAlternatives
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Configuration for transcription with editing suggestions.
 
@@ -21,13 +22,14 @@ static let transcriptionWithAlternatives: SpeechTranscriber.Preset
 
 ## See Also
 
-- [static let transcription: SpeechTranscriber.Preset](speechtranscriber/preset/transcription.md)
+### Standard presets
+- [static let transcription: SpeechTranscriber.Preset](./transcription.md)
   Configuration for basic, accurate transcription.
-- [static let timeIndexedTranscriptionWithAlternatives: SpeechTranscriber.Preset](speechtranscriber/preset/timeindexedtranscriptionwithalternatives.md)
+- [static let timeIndexedTranscriptionWithAlternatives: SpeechTranscriber.Preset](./timeindexedtranscriptionwithalternatives.md)
   Configuration for transcription with editing suggestions, cross-referenced to source audio.
-- [static let progressiveTranscription: SpeechTranscriber.Preset](speechtranscriber/preset/progressivetranscription.md)
+- [static let progressiveTranscription: SpeechTranscriber.Preset](./progressivetranscription.md)
   Configuration for immediate transcription of live audio.
-- [static let timeIndexedProgressiveTranscription: SpeechTranscriber.Preset](speechtranscriber/preset/timeindexedprogressivetranscription.md)
+- [static let timeIndexedProgressiveTranscription: SpeechTranscriber.Preset](./timeindexedprogressivetranscription.md)
   Configuration for immediate transcription of live audio, cross-referenced to stream time-codes.
 
 

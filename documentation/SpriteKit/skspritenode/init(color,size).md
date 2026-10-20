@@ -1,23 +1,44 @@
 # init(color:size:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a single-color sprite node.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+convenience init(color: UIColor, size: CGSize)
+```
+
+*macOS*
+
 ```swift
 convenience init(color: NSColor, size: CGSize)
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+- (instancetype) initWithColor:(UIColor *) color size:(CGSize) size;
+```
+
+*macOS*
+
+```objc
+- (instancetype) initWithColor:(NSColor *) color size:(CGSize) size;
 ```
 
 #### Return Value
@@ -26,12 +47,12 @@ A newly initialized sprite node.
 
 #### Discussion
 
-Although textured nodes are the most common way to use the [`SKSpriteNode`](skspritenode.md) class, you can also create sprite nodes without a texture. The behavior of the class changes when the node lacks a texture:
+Although textured nodes are the most common way to use the [`SKSpriteNode`](../skspritenode.md) class, you can also create sprite nodes without a texture. The behavior of the class changes when the node lacks a texture:
 
-- The sprite node that is returned from this method has its [`texture`](skspritenode/texture.md) property set to `nil`.
-- There is no texture to stretch, so the [`centerRect`](skspritenode/centerrect.md) parameter is ignored.
-- There is no colorization step; the [`color`](skspritenode/color.md) property is used as the sprite’s color.
-- The sprite node’s [`alpha`](sknode/alpha.md) component is used to determine how it is blended into the buffer.
+- The sprite node that is returned from this method has its [`texture`](./texture.md) property set to `nil`.
+- There is no texture to stretch, so the [`centerRect`](./centerrect.md) parameter is ignored.
+- There is no colorization step; the [`color`](./color.md) property is used as the sprite’s color.
+- The sprite node’s [`alpha`](../sknode/alpha.md) component is used to determine how it is blended into the buffer.
 
 Listing 1 shows how to create a red sprite node `100 x 100` points in size.
 

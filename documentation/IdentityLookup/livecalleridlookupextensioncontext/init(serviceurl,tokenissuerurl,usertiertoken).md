@@ -1,7 +1,8 @@
 # init(serviceURL:tokenIssuerURL:userTierToken:)
 
 **Framework**: SMS and Call Reporting  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the app extension context.
 

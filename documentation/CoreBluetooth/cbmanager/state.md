@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of the manager.
 
@@ -20,13 +21,18 @@ The current state of the manager.
 var state: CBManagerState { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) CBManagerState state;
+```
+
 #### Discussion
 
-This state is initially set to [`CBManagerState.unknown`](cbmanagerstate/unknown.md). When the state updates, the manager calls its delegate’s [`centralManagerDidUpdateState(_:)`](cbcentralmanagerdelegate/centralmanagerdidupdatestate(_:).md) method.
+This state is initially set to [`CBManagerState.unknown`](../cbmanagerstate/unknown.md). When the state updates, the manager calls its delegate’s [`centralManagerDidUpdateState(_:)`](../cbcentralmanagerdelegate/centralmanagerdidupdatestate%28_%29.md) method.
 
 ## See Also
 
-- [enum CBManagerState](cbmanagerstate.md)
+### Accessing the Manager’s Properties
+- [enum CBManagerState](../cbmanagerstate.md)
   The possible states of a Core Bluetooth manager.
 
 

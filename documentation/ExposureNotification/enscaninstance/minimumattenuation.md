@@ -1,19 +1,26 @@
 # minimumAttenuation
 
 **Framework**: Exposure Notification  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum attenuation of beacons received during the scan.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 var minimumAttenuation: ENAttenuation { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) ENAttenuation minimumAttenuation;
 ```
 
 #### Discussion
@@ -22,9 +29,10 @@ var minimumAttenuation: ENAttenuation { get }
 
 ## See Also
 
-- [var secondsSinceLastScan: Int](enscaninstance/secondssincelastscan.md)
+### Getting Scan Instance Properties
+- [var secondsSinceLastScan: Int](./secondssincelastscan.md)
   The number of seconds elapsed since the previous scan.
-- [var typicalAttenuation: ENAttenuation](enscaninstance/typicalattenuation.md)
+- [var typicalAttenuation: ENAttenuation](./typicalattenuation.md)
   The aggregation of the attenuations of beacons received during the scan.
 
 

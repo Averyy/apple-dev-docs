@@ -1,7 +1,8 @@
 # agentDidUpdate(_:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that an agent has just performed a simulation step.
 
@@ -19,9 +20,13 @@ Tells the delegate that an agent has just performed a simulation step.
 optional func agentDidUpdate(_ agent: GKAgent)
 ```
 
+```objc
+- (void) agentDidUpdate:(GKAgent *) agent;
+```
+
 #### Discussion
 
-Implement this method when you want to update a display based on the latest data from the agent simulation. Read the [`position`](gkagent2d/position.md) and [`rotation`](gkagent2d/rotation.md) properties of the agent (as a [`GKAgent2D`](gkagent2d.md) or [`GKAgent3D`](gkagent3d.md) object), then set the corresponding attributes of the object that provides the agent’s visual representation.
+Implement this method when you want to update a display based on the latest data from the agent simulation. Read the [`position`](../gkagent2d/position.md) and [`rotation`](../gkagent2d/rotation.md) properties of the agent (as a [`GKAgent2D`](../gkagent2d.md) or [`GKAgent3D`](../gkagent3d.md) object), then set the corresponding attributes of the object that provides the agent’s visual representation.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ Implement this method when you want to update a display based on the latest data
 
 ## See Also
 
-- [func agentWillUpdate(GKAgent)](gkagentdelegate/agentwillupdate(_:).md)
+### Synchronizing with Agents
+- [func agentWillUpdate(GKAgent)](./agentwillupdate%28_%29.md)
   Tells the delegate that an agent is about to perform its next simulation step.
 
 

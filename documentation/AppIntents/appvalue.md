@@ -1,7 +1,8 @@
 # AppValue
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that describes conceptual types you use in app intents.
 
@@ -11,7 +12,7 @@ An interface that describes conceptual types you use in app intents.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,38 +23,39 @@ protocol AppValue : PersistentlyIdentifiable, TypeDisplayRepresentable, _IntentV
 
 #### Overview
 
-This protocol serves as the base type for conceptual interfaces like [`AppEntity`](appentity.md) or [`AppEnum`](appenum.md).
+This protocol serves as the base type for conceptual interfaces like [`AppEntity`](./appentity.md) or [`AppEnum`](./appenum.md).
 
 ## Relationships
 
 ### Inherits From
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TypeDisplayRepresentable](typedisplayrepresentable.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TypeDisplayRepresentable](./typedisplayrepresentable.md)
 ### Inherited By
-- [AppEntity](appentity.md)
-- [AppEnum](appenum.md)
-- [AppUnionValueCasesProviding](appunionvaluecasesproviding.md)
-- [AssistantEntity](assistantentity.md)
-- [AssistantEnum](assistantenum.md)
-- [AssistantSchemaEntity](assistantschemaentity.md)
-- [AssistantSchemaEnum](assistantschemaenum.md)
-- [FileEntity](fileentity.md)
-- [IndexedEntity](indexedentity.md)
-- [OwnershipProvidingEntity](ownershipprovidingentity.md)
-- [SyncableEntity](syncableentity.md)
-- [TransientAppEntity](transientappentity.md)
-- [URLRepresentableEntity](urlrepresentableentity.md)
-- [URLRepresentableEnum](urlrepresentableenum.md)
-- [UniqueAppEntity](uniqueappentity.md)
+- [AppEntity](./appentity.md)
+- [AppEnum](./appenum.md)
+- [AppUnionValueCasesProviding](./appunionvaluecasesproviding.md)
+- [AssistantEntity](./assistantentity.md)
+- [AssistantEnum](./assistantenum.md)
+- [AssistantSchemaEntity](./assistantschemaentity.md)
+- [AssistantSchemaEnum](./assistantschemaenum.md)
+- [FileEntity](./fileentity.md)
+- [IndexedEntity](./indexedentity.md)
+- [OwnershipProvidingEntity](./ownershipprovidingentity.md)
+- [SyncableEntity](./syncableentity.md)
+- [TransientAppEntity](./transientappentity.md)
+- [URLRepresentableEntity](./urlrepresentableentity.md)
+- [URLRepresentableEnum](./urlrepresentableenum.md)
+- [UniqueAppEntity](./uniqueappentity.md)
 ### Conforming Types
-- [StringSearchScope](stringsearchscope.md)
-- [VideoCategory](videocategory.md)
+- [StringSearchScope](./stringsearchscope.md)
+- [VideoCategory](./videocategory.md)
 
 ## See Also
 
-- [protocol AnyIntentValue](anyintentvalue.md)
+### Foundational types
+- [protocol AnyIntentValue](./anyintentvalue.md)
   A type the system uses to access a parameter or property value.
 
 

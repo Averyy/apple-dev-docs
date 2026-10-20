@@ -1,7 +1,8 @@
 # insertionIndex
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the index at which you should insert the object in order to maintain a sorted array.
 
@@ -20,11 +21,16 @@ Returns the index at which you should insert the object in order to maintain a s
 static var insertionIndex: NSBinarySearchingOptions { get }
 ```
 
+```c
+NSBinarySearchingInsertionIndex
+```
+
 ## See Also
 
-- [static var firstEqual: NSBinarySearchingOptions](nsbinarysearchingoptions/firstequal.md)
+### Constants
+- [static var firstEqual: NSBinarySearchingOptions](./firstequal.md)
   Specifies that the search should return the first object in the range that is equal to the given object.
-- [static var lastEqual: NSBinarySearchingOptions](nsbinarysearchingoptions/lastequal.md)
+- [static var lastEqual: NSBinarySearchingOptions](./lastequal.md)
   Specifies that the search should return the last object in the range that is equal to the given object.
 
 

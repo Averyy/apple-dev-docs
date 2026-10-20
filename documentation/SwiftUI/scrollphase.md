@@ -1,7 +1,8 @@
 # ScrollPhase
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that describes the state of a scroll gesture of a scrollable view like a scroll view.
 
@@ -23,52 +24,53 @@ enum ScrollPhase
 
 #### Overview
 
-A scroll gesture can be in one of four phases: - idle: No active scroll is occurring. - panning: An active scroll being driven by the user is occurring. - decelerating: The user has stopped driving a scroll and the scroll view is decelerating to its final target. - animating: The system is animating to a final target as a result of a programmatic animated scroll from using a [`ScrollViewReader`](scrollviewreader.md) or [`scrollPosition(id:anchor:)`](view/scrollposition(id:anchor:).md) modifier.
+A scroll gesture can be in one of four phases: - idle: No active scroll is occurring. - panning: An active scroll being driven by the user is occurring. - decelerating: The user has stopped driving a scroll and the scroll view is decelerating to its final target. - animating: The system is animating to a final target as a result of a programmatic animated scroll from using a [`ScrollViewReader`](./scrollviewreader.md) or [`scrollPosition(id:anchor:)`](./view/scrollposition%28id,anchor%29.md) modifier.
 
-SwiftUI provides you a value of this type when using the [`onScrollPhaseChange(_:)`](view/onscrollphasechange(_:).md) modifier.
+SwiftUI provides you a value of this type when using the [`onScrollPhaseChange(_:)`](./view/onscrollphasechange%28_%29.md) modifier.
 
 ## Topics
 
 ### Getting scroll gesture states
-- [ScrollPhase.animating](scrollphase/animating.md)
+- [ScrollPhase.animating](./scrollphase/animating.md)
   The animating phase where the scroll view is animating towards a final target.
-- [ScrollPhase.decelerating](scrollphase/decelerating.md)
+- [ScrollPhase.decelerating](./scrollphase/decelerating.md)
   The decelerating phase where the user use has stopped interacting with the scroll view and the scroll view is decelerating towards its final target.
-- [ScrollPhase.idle](scrollphase/idle.md)
+- [ScrollPhase.idle](./scrollphase/idle.md)
   The idle phase where no kind of scrolling is occurring.
-- [ScrollPhase.interacting](scrollphase/interacting.md)
+- [ScrollPhase.interacting](./scrollphase/interacting.md)
   The interacting phase where the user is interacting with the scroll view.
-- [ScrollPhase.tracking](scrollphase/tracking.md)
+- [ScrollPhase.tracking](./scrollphase/tracking.md)
   The tracking phase where the scroll view is tracking a potential scroll by the user but the user hasn’t started a scroll.
 ### Checking for active scrolling
-- [var isScrolling: Bool](scrollphase/isscrolling.md)
+- [var isScrolling: Bool](./scrollphase/isscrolling.md)
   Whether the scroll view is actively scrolling.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func onScrollGeometryChange<T>(for: T.Type, of: (ScrollGeometry) -> T, action: (T, T) -> Void) -> some View](view/onscrollgeometrychange(for:of:action:).md)
+### Responding to scroll view changes
+- [func onScrollGeometryChange<T>(for: T.Type, of: (ScrollGeometry) -> T, action: (T, T) -> Void) -> some View](./view/onscrollgeometrychange%28for,of,action%29.md)
   Adds an action to be performed when a value, created from a scroll geometry, changes.
-- [func onScrollTargetVisibilityChange<ID>(idType: ID.Type, threshold: Double, ([ID]) -> Void) -> some View](view/onscrolltargetvisibilitychange(idtype:threshold:_:).md)
+- [func onScrollTargetVisibilityChange<ID>(idType: ID.Type, threshold: Double, ([ID]) -> Void) -> some View](./view/onscrolltargetvisibilitychange%28idtype,threshold,_%29.md)
   Adds an action to be called with information about what views would be considered visible.
-- [func onScrollVisibilityChange(threshold: Double, (Bool) -> Void) -> some View](view/onscrollvisibilitychange(threshold:_:).md)
+- [func onScrollVisibilityChange(threshold: Double, (Bool) -> Void) -> some View](./view/onscrollvisibilitychange%28threshold,_%29.md)
   Adds an action to be called when the view crosses the threshold to be considered on/off screen.
-- [func onScrollPhaseChange(_:)](view/onscrollphasechange(_:).md)
+- [func onScrollPhaseChange(_:)](./view/onscrollphasechange%28_%29.md)
   Adds an action to perform when the scroll phase of the first scroll view in the hierarchy changes.
-- [struct ScrollGeometry](scrollgeometry.md)
+- [struct ScrollGeometry](./scrollgeometry.md)
   A type that defines the geometry of a scroll view.
-- [struct ScrollPhaseChangeContext](scrollphasechangecontext.md)
+- [struct ScrollPhaseChangeContext](./scrollphasechangecontext.md)
   A type that provides you with more content when the phase of a scroll view changes.
 
 

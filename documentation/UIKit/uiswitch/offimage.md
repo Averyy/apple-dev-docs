@@ -1,7 +1,8 @@
 # offImage
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image displayed when the switch is in the off position.
 
@@ -17,6 +18,10 @@ The image displayed when the switch is in the off position.
 var offImage: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIImage * offImage;
+```
+
 #### Discussion
 
 In iOS 7 and later, this property has no effect.
@@ -25,7 +30,8 @@ In iOS 6, this image represents the interior contents of the switch. The image y
 
 ## See Also
 
-- [var onImage: UIImage?](uiswitch/onimage.md)
+### Deprecated
+- [var onImage: UIImage?](./onimage.md)
   The image displayed when the switch is in the on position.
 
 

@@ -1,7 +1,8 @@
 # neuronParameterC()
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func neuronParameterC() -> Float
+```
+
+```objc
+- (float) neuronParameterC;
 ```
 
 

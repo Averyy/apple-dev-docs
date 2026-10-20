@@ -1,12 +1,13 @@
 # ODSessionProxyAddress
 
 **Framework**: Open Directory  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The address to connect to via proxy. The value is of type `NSString`.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.6+
 
 ## Declaration
@@ -15,26 +16,31 @@ The address to connect to via proxy. The value is of type `NSString`.
 let ODSessionProxyAddress: String
 ```
 
+```c
+extern NSString * const ODSessionProxyAddress;
+```
+
 ## See Also
 
-- [let ODFrameworkErrorDomain: String](odframeworkerrordomain.md)
-- [let ODSessionProxyPassword: String](odsessionproxypassword.md)
+### Constants
+- [let ODFrameworkErrorDomain: String](./odframeworkerrordomain.md)
+- [let ODSessionProxyPassword: String](./odsessionproxypassword.md)
   The password to connect with via proxy. The value is of type `NSString`.
-- [let ODSessionProxyPort: String](odsessionproxyport.md)
+- [let ODSessionProxyPort: String](./odsessionproxyport.md)
   The port to connect to via proxy. The value is of type `NSNumber`.
-- [let ODSessionProxyUsername: String](odsessionproxyusername.md)
+- [let ODSessionProxyUsername: String](./odsessionproxyusername.md)
   The username to connect with via proxy. The value is of type `NSString`.
-- [let ODTrustTypeAnonymous: String](odtrusttypeanonymous.md)
-- [let ODTrustTypeJoined: String](odtrusttypejoined.md)
-- [let ODTrustTypeUsingCredentials: String](odtrusttypeusingcredentials.md)
-- [let kODAttributeTypeAltSecurityIdentities: String](kodattributetypealtsecurityidentities.md)
-- [let kODAttributeTypeHardwareUUID: String](kodattributetypehardwareuuid.md)
-- [let kODAttributeTypeMetaAmbiguousName: String](kodattributetypemetaambiguousname.md)
-- [let kODAttributeTypeMetaAugmentedAttributes: String](kodattributetypemetaaugmentedattributes.md)
-- [let kODAttributeTypeMetaRecordName: String](kodattributetypemetarecordname.md)
-- [let kODAttributeTypeNodeOptions: String](kodattributetypenodeoptions.md)
-- [let kODAttributeTypeNodeSASLRealm: String](kodattributetypenodesaslrealm.md)
-- [let kODAttributeTypeOperatingSystem: String](kodattributetypeoperatingsystem.md)
+- [let ODTrustTypeAnonymous: String](./odtrusttypeanonymous.md)
+- [let ODTrustTypeJoined: String](./odtrusttypejoined.md)
+- [let ODTrustTypeUsingCredentials: String](./odtrusttypeusingcredentials.md)
+- [let kODAttributeTypeAltSecurityIdentities: String](./kodattributetypealtsecurityidentities.md)
+- [let kODAttributeTypeHardwareUUID: String](./kodattributetypehardwareuuid.md)
+- [let kODAttributeTypeMetaAmbiguousName: String](./kodattributetypemetaambiguousname.md)
+- [let kODAttributeTypeMetaAugmentedAttributes: String](./kodattributetypemetaaugmentedattributes.md)
+- [let kODAttributeTypeMetaRecordName: String](./kodattributetypemetarecordname.md)
+- [let kODAttributeTypeNodeOptions: String](./kodattributetypenodeoptions.md)
+- [let kODAttributeTypeNodeSASLRealm: String](./kodattributetypenodesaslrealm.md)
+- [let kODAttributeTypeOperatingSystem: String](./kodattributetypeoperatingsystem.md)
 
 
 ---

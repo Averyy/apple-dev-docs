@@ -1,7 +1,8 @@
 # readAttributePIRUnoccupiedToOccupiedDelay(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributePIRUnoccupiedToOccupiedDelay(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributePIRUnoccupiedToOccupiedDelay() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributePIRUnoccupiedToOccupiedDelayWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

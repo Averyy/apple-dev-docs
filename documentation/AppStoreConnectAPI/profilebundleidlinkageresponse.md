@@ -1,21 +1,22 @@
 # ProfileBundleIdLinkageResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object ProfileBundleIdLinkageResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object ProfileBundleIdLinkageResponse.Data](profilebundleidlinkageresponse/data-data.dictionary.md)
+- [object ProfileBundleIdLinkageResponse.Data](./profilebundleidlinkageresponse/data-data.dictionary.md)
 
 ## Properties
 
@@ -24,18 +25,19 @@ object ProfileBundleIdLinkageResponse
 
 ## See Also
 
-- [object Profile](profile.md)
+### Objects
+- [object Profile](./profile.md)
   A provisioning profile that authorizes specific devices to run an app during development or distribution.
-- [object ProfileCreateRequest](profilecreaterequest.md)
+- [object ProfileCreateRequest](./profilecreaterequest.md)
   The request body you use to create a Profile.
-- [object ProfileResponse](profileresponse.md)
+- [object ProfileResponse](./profileresponse.md)
   The response body for endpoints that create or read a single provisioning profile.
-- [object ProfilesResponse](profilesresponse.md)
+- [object ProfilesResponse](./profilesresponse.md)
   The response body for endpoints that list provisioning profiles.
-- [object ProfilesWithoutIncludesResponse](profileswithoutincludesresponse.md)
+- [object ProfilesWithoutIncludesResponse](./profileswithoutincludesresponse.md)
   A response containing a list of provisioning profiles, without related resources.
-- [object ProfileCertificatesLinkagesResponse](profilecertificateslinkagesresponse.md)
-- [object ProfileDevicesLinkagesResponse](profiledeviceslinkagesresponse.md)
+- [object ProfileCertificatesLinkagesResponse](./profilecertificateslinkagesresponse.md)
+- [object ProfileDevicesLinkagesResponse](./profiledeviceslinkagesresponse.md)
 
 
 ---

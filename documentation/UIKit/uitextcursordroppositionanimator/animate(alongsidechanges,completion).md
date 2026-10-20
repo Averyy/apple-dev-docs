@@ -1,7 +1,8 @@
 # animate(alongsideChanges:completion:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Optionally, provide an animation block or completion block to run alongside cursor appearance or position update animations.
 
@@ -15,7 +16,15 @@ Optionally, provide an animation block or completion block to run alongside curs
 ## Declaration
 
 ```swift
+func animate(alongsideChanges animation: (() -> Void)?, completion: (() -> Void)? = nil)
+```
+
+```swift
 func animate(alongsideChanges animation: (() -> Void)?) async
+```
+
+```objc
+- (void) animateAlongsideChanges:(void (^)()) animation completion:(void (^)()) completion;
 ```
 
 

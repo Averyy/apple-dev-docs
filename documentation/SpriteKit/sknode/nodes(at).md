@@ -1,18 +1,19 @@
 # nodes(at:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of all visible descendants that intersect a point.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,18 +21,22 @@ Returns an array of all visible descendants that intersect a point.
 func nodes(at p: CGPoint) -> [SKNode]
 ```
 
+```objc
+- (NSArray<SKNode *> *) nodesAtPoint:(CGPoint) p;
+```
+
 ## Mentions
 
-- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
-- [Understanding Hit-Testing](understanding-hit-testing.md)
+- [Controlling User Interaction on Nodes](../controlling-user-interaction-on-nodes.md)
+- [Understanding Hit-Testing](../understanding-hit-testing.md)
 
 #### Return Value
 
-An array of all `SKNode` objects in the subtree that intersect the point. Only nodes that have an [`isHidden`](sknode/ishidden.md) of `false` and an [`alpha`](sknode/alpha.md) greater that zero are included in the returned array. If no nodes intersect the point, an empty array is returned.
+An array of all `SKNode` objects in the subtree that intersect the point. Only nodes that have an [`isHidden`](./ishidden.md) of `false` and an [`alpha`](./alpha.md) greater that zero are included in the returned array. If no nodes intersect the point, an empty array is returned.
 
 #### Discussion
 
-A point is considered to be in a node if it lies inside the rectangle returned by the [`calculateAccumulatedFrame()`](sknode/calculateaccumulatedframe().md) method.
+A point is considered to be in a node if it lies inside the rectangle returned by the [`calculateAccumulatedFrame()`](./calculateaccumulatedframe%28%29.md) method.
 
 ## Parameters
 
@@ -39,11 +44,12 @@ A point is considered to be in a node if it lies inside the rectangle returned b
 
 ## See Also
 
-- [Understanding Hit-Testing](understanding-hit-testing.md)
+### Hit Testing
+- [Understanding Hit-Testing](../understanding-hit-testing.md)
   Learn how find child nodes at a given point by using hit-testing.
-- [func contains(CGPoint) -> Bool](sknode/contains(_:).md)
+- [func contains(CGPoint) -> Bool](./contains%28_%29.md)
   Returns a Boolean value that indicates whether a point lies inside the parent’s coordinate system.
-- [func atPoint(CGPoint) -> SKNode](sknode/atpoint(_:).md)
+- [func atPoint(CGPoint) -> SKNode](./atpoint%28_%29.md)
   Returns the deepest visible descendant that intersects a point.
 
 

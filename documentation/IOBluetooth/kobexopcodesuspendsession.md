@@ -1,10 +1,11 @@
 # kOBEXOpCodeSuspendSession
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,12 +13,17 @@
 var kOBEXOpCodeSuspendSession: OBEXOpCodeSessionValues { get }
 ```
 
+```c
+kOBEXOpCodeSuspendSession
+```
+
 ## See Also
 
-- [var kOBEXOpCodeCloseSession: OBEXOpCodeSessionValues](kobexopcodeclosesession.md)
-- [var kOBEXOpCodeCreateSession: OBEXOpCodeSessionValues](kobexopcodecreatesession.md)
-- [var kOBEXOpCodeResumeSession: OBEXOpCodeSessionValues](kobexopcoderesumesession.md)
-- [var kOBEXOpCodeSetTimeout: OBEXOpCodeSessionValues](kobexopcodesettimeout.md)
+### Constants
+- [var kOBEXOpCodeCloseSession: OBEXOpCodeSessionValues](./kobexopcodeclosesession.md)
+- [var kOBEXOpCodeCreateSession: OBEXOpCodeSessionValues](./kobexopcodecreatesession.md)
+- [var kOBEXOpCodeResumeSession: OBEXOpCodeSessionValues](./kobexopcoderesumesession.md)
+- [var kOBEXOpCodeSetTimeout: OBEXOpCodeSessionValues](./kobexopcodesettimeout.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # setValueTransformer(_:forName:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Registers the provided value transformer with a given identifier.
 
@@ -20,6 +21,10 @@ Registers the provided value transformer with a given identifier.
 class func setValueTransformer(_ transformer: ValueTransformer?, forName name: NSValueTransformerName)
 ```
 
+```objc
++ (void) setValueTransformer:(NSValueTransformer *) transformer forName:(NSValueTransformerName) name;
+```
+
 ## Parameters
 
 - `transformer`: The transformer to register.
@@ -27,12 +32,14 @@ class func setValueTransformer(_ transformer: ValueTransformer?, forName name: N
 
 ## See Also
 
-- [Value Transformer Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ValueTransformers/ValueTransformers.html#//apple_ref/doc/uid/10000175i)
-- [init?(forName: NSValueTransformerName)](valuetransformer/init(forname:).md)
+### Related Documentation
+- [Value Transformer Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ValueTransformers/ValueTransformers.html#//apple_ref/doc/uid/10000175i)
+### Using the Name-Based Registry
+- [init?(forName: NSValueTransformerName)](./init%28forname%29.md)
   Returns the value transformer identified by a given identifier.
-- [class func valueTransformerNames() -> [NSValueTransformerName]](valuetransformer/valuetransformernames.md)
+- [class func valueTransformerNames() -> [NSValueTransformerName]](./valuetransformernames%28%29.md)
   Returns an array of all the registered value transformers.
-- [struct NSValueTransformerName](nsvaluetransformername.md)
+- [struct NSValueTransformerName](../nsvaluetransformername.md)
   Named value transformers defined by `NSValueTransformer`.
 
 

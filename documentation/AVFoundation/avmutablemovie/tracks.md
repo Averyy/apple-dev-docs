@@ -1,7 +1,8 @@
 # tracks
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tracks that a movie contains.
 
@@ -19,15 +20,20 @@ The tracks that a movie contains.
 var tracks: [AVMutableMovieTrack] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVMutableMovieTrack *> * tracks;
+```
+
 ## See Also
 
-- [func track(withTrackID: CMPersistentTrackID) -> AVMutableMovieTrack?](avmutablemovie/track(withtrackid:).md)
+### Accessing tracks
+- [func track(withTrackID: CMPersistentTrackID) -> AVMutableMovieTrack?](./track%28withtrackid%29.md)
   Retrieves a track in the movie that contains the specified identifier.
-- [func tracks(withMediaType: AVMediaType) -> [AVMutableMovieTrack]](avmutablemovie/tracks(withmediatype:).md)
+- [func tracks(withMediaType: AVMediaType) -> [AVMutableMovieTrack]](./tracks%28withmediatype%29.md)
   Retrieves tracks in the movie that present media of the specified type.
-- [func tracks(withMediaCharacteristic: AVMediaCharacteristic) -> [AVMutableMovieTrack]](avmutablemovie/tracks(withmediacharacteristic:).md)
+- [func tracks(withMediaCharacteristic: AVMediaCharacteristic) -> [AVMutableMovieTrack]](./tracks%28withmediacharacteristic%29.md)
   Retrieve tracks in the movie that present media of the specified characteristic.
-- [func unusedTrackID() -> CMPersistentTrackID](avmutablemovie/unusedtrackid.md)
+- [func unusedTrackID() -> CMPersistentTrackID](./unusedtrackid%28%29.md)
   Returns an identifier that no other tracks in the asset use.
 
 

@@ -1,7 +1,8 @@
 # reduce(_:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the result of combining the elements of the sequence using the given closure.
 
@@ -46,7 +47,7 @@ When `numbers.reduce(_:_:)` is called, the following steps occur:
 
 If the sequence has no elements, `nextPartialResult` is never executed and `initialResult` is the result of the call to `reduce(_:_:)`.
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 

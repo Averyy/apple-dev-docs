@@ -1,7 +1,8 @@
 # NSLocalNetworkUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app is requesting access to the local network.
 
@@ -12,9 +13,10 @@ A message that tells people why the app is requesting access to the local networ
 - tvOS 14.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSLocalNetworkUsageDescription` (Privacy - Local Network Usage Description)
+- **Type**: string
 
 #### Discussion
 
@@ -22,9 +24,10 @@ Any app that uses the local network, directly or indirectly, should include this
 
 ## See Also
 
-- [NSNearbyInteractionUsageDescription](information-property-list/nsnearbyinteractionusagedescription.md)
+### Networking
+- [NSNearbyInteractionUsageDescription](./nsnearbyinteractionusagedescription.md)
   A request for user permission to begin an interaction session with nearby devices.
-- [NSNearbyInteractionAllowOnceUsageDescription](information-property-list/nsnearbyinteractionallowonceusagedescription.md)
+- [NSNearbyInteractionAllowOnceUsageDescription](./nsnearbyinteractionallowonceusagedescription.md)
   A one-time request for user permission to begin an interaction session with nearby devices.
 
 

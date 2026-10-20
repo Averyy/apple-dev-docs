@@ -1,7 +1,8 @@
 # selectableMapFeatureSelectionAccessory
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An accessory for displaying place information when a person selects a map feature.
 
@@ -10,7 +11,7 @@ An accessory for displaying place information when a person selects a map featur
 
 ## Declaration
 
-```swift
+```
 get selectableMapFeatureSelectionAccessory(): PlaceSelectionAccessory | null;
 set selectableMapFeatureSelectionAccessory(
     value: PlaceSelectionAccessory | null,
@@ -19,9 +20,10 @@ set selectableMapFeatureSelectionAccessory(
 
 ## See Also
 
-- [selectableMapFeatures](map/selectablemapfeatures.md)
+### Selecting map features
+- [selectableMapFeatures](./selectablemapfeatures.md)
   An array of map features that users can select from the map.
-- [annotationForMapFeature](map/annotationformapfeature.md)
+- [annotationForMapFeature](./annotationformapfeature.md)
   The method MapKit JS calls when the framework creates a map feature annotation.
 
 

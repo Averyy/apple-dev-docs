@@ -1,12 +1,13 @@
 # hasAlpha
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the image data has an alpha channel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,27 +15,32 @@ A Boolean value that indicates whether the image data has an alpha channel.
 var hasAlpha: Bool { get set }
 ```
 
+```objc
+@property (getter=hasAlpha) BOOL alpha;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the receiver has a known alpha channel; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) if the receiver has a known alpha channel; otherwise, [`false`](../../Swift/false.md).
 
-Subclasses can set this property when loading image data to notify the parent class whether that data contains an alpha component. Specifying a value of [`true`](https://developer.apple.com/documentation/swift/true) does not add an alpha channel to the image data itself; it merely records the fact that the data has an alpha channel.
+Subclasses can set this property when loading image data to notify the parent class whether that data contains an alpha component. Specifying a value of [`true`](../../Swift/true.md) does not add an alpha channel to the image data itself; it merely records the fact that the data has an alpha channel.
 
 ## See Also
 
-- [var bitsPerSample: Int](nsimagerep/bitspersample.md)
+### Specifying Information About the Representation
+- [var bitsPerSample: Int](./bitspersample.md)
   The number of bits per sample in the object (if the object is a planar image, this property contains the number of bits per sample per plane).
-- [var colorSpaceName: NSColorSpaceName](nsimagerep/colorspacename.md)
+- [var colorSpaceName: NSColorSpaceName](./colorspacename.md)
   The name of the color space used by the image data.
-- [var isOpaque: Bool](nsimagerep/isopaque.md)
+- [var isOpaque: Bool](./isopaque.md)
   A Boolean value that indicates whether the image is opaque.
-- [var pixelsHigh: Int](nsimagerep/pixelshigh.md)
+- [var pixelsHigh: Int](./pixelshigh.md)
   The height of the image, measured in pixels.
-- [var pixelsWide: Int](nsimagerep/pixelswide.md)
+- [var pixelsWide: Int](./pixelswide.md)
   The width of the image, measured in pixels.
-- [var layoutDirection: NSImage.LayoutDirection](nsimagerep/layoutdirection.md)
+- [var layoutDirection: NSImage.LayoutDirection](./layoutdirection.md)
   The layout direction for the image.
-- [Device-Specific Value](device-specific-value.md)
+- [Device-Specific Value](../device-specific-value.md)
   A constant that is used by image representations to denote an attribute whose value changes to match the display device.
 
 

@@ -1,7 +1,8 @@
 # PKPaymentButtonStyle.white
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A white button with black lettering.
 
@@ -19,17 +20,22 @@ A white button with black lettering.
 case white
 ```
 
+```c
+PKPaymentButtonStyleWhite
+```
+
 #### Discussion
 
 Use the white button on backgrounds with colors that provide sufficient contrast. For white or light backgrounds, use either the white button with an outline or the black button.
 
 ## See Also
 
-- [PKPaymentButtonStyle.whiteOutline](pkpaymentbuttonstyle/whiteoutline.md)
+### Payment button styles
+- [PKPaymentButtonStyle.whiteOutline](./whiteoutline.md)
   A white button with black lettering and a black outline.
-- [PKPaymentButtonStyle.black](pkpaymentbuttonstyle/black.md)
+- [PKPaymentButtonStyle.black](./black.md)
   A black button with white lettering.
-- [PKPaymentButtonStyle.automatic](pkpaymentbuttonstyle/automatic.md)
+- [PKPaymentButtonStyle.automatic](./automatic.md)
   A button that automatically changes its appearance when the user switches between Light Mode and Dark Mode.
 
 

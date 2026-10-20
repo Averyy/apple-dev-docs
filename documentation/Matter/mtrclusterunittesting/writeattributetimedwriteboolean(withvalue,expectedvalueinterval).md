@@ -1,7 +1,8 @@
 # writeAttributeTimedWriteBoolean(withValue:expectedValueInterval:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func writeAttributeTimedWriteBoolean(withValue dataValueDictionary: [String : Any], expectedValueInterval expectedValueIntervalMs: NSNumber)
+```
+
+```objc
+- (void) writeAttributeTimedWriteBooleanWithValue:(NSDictionary<NSString *,id> *) dataValueDictionary expectedValueInterval:(NSNumber *) expectedValueIntervalMs;
 ```
 
 

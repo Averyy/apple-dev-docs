@@ -1,7 +1,8 @@
 # max
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The highest execution priority.
 
@@ -19,11 +20,16 @@ The highest execution priority.
 static let max: BADownload.Priority
 ```
 
+```c
+extern const BADownloaderPriority BADownloaderPriorityMax;
+```
+
 ## See Also
 
-- [static let `default`: BADownload.Priority](badownload/priority-swift.struct/default.md)
+### Getting system priorities
+- [static let `default`: BADownload.Priority](./default.md)
   The default execution priority.
-- [static let min: BADownload.Priority](badownload/priority-swift.struct/min.md)
+- [static let min: BADownload.Priority](./min.md)
   The lowest execution priority.
 
 

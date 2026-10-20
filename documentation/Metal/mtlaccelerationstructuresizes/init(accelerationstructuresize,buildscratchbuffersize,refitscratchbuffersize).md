@@ -1,17 +1,18 @@
 # init(accelerationStructureSize:buildScratchBufferSize:refitScratchBufferSize:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an acceleration sizes instance with specific values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -27,7 +28,8 @@ init(accelerationStructureSize: Int, buildScratchBufferSize: Int, refitScratchBu
 
 ## See Also
 
-- [init()](mtlaccelerationstructuresizes/init.md)
+### Creating an acceleration size structure
+- [init()](./init%28%29.md)
   Creates an acceleration sizes instance with default values.
 
 

@@ -1,7 +1,8 @@
 # VerticalEdge.bottom
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The bottom edge.
 
@@ -22,7 +23,8 @@ case bottom
 
 ## See Also
 
-- [VerticalEdge.top](verticaledge/top.md)
+### Getting the edges
+- [VerticalEdge.top](./top.md)
   The top edge.
 
 

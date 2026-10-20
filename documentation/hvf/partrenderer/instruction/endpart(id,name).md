@@ -1,7 +1,8 @@
 # PartRenderer.Instruction.endPart(id:name:)
 
 **Framework**: hvf  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The name value is for client use and is not set by the loader or scaler
 

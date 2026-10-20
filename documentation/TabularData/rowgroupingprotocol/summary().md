@@ -2,6 +2,7 @@
 
 **Framework**: TabularData  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Generates a group summaries instance of the row grouping’s columns.
@@ -23,9 +24,10 @@ func summary() -> any GroupSummaries
 
 ## See Also
 
-- [func summary(of: [String]) -> any GroupSummaries](rowgroupingprotocol/summary(of:).md)
+### Summarizing a Row Grouping
+- [func summary(of: [String]) -> any GroupSummaries](./summary%28of%29.md)
   Generates a group summaries instance of the row grouping’s columns you select by name.
-- [protocol GroupSummaries](groupsummaries.md)
+- [protocol GroupSummaries](../groupsummaries.md)
   A collection of group summaries.
 
 

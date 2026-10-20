@@ -1,7 +1,8 @@
 # PHASEStringMetaParameter
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A metaparameter with a text definition that can change over time.
 
@@ -19,30 +20,35 @@ A metaparameter with a text definition that can change over time.
 class PHASEStringMetaParameter
 ```
 
+```objc
+@interface PHASEStringMetaParameter : PHASEMetaParameter
+```
+
 #### Overview
 
 This class contains text that updates, like a “weather” metaparameter that the app changes from “rainy” to “sunny.”
 
-To create an instance of this class, first create a [`PHASEStringMetaParameterDefinition`](phasestringmetaparameterdefinition.md), and either:
+To create an instance of this class, first create a [`PHASEStringMetaParameterDefinition`](./phasestringmetaparameterdefinition.md), and either:
 
-- Register it with the engine by calling [`registerGlobalMetaParameter(metaParameterDefinition:)`](phaseassetregistry/registerglobalmetaparameter(metaparameterdefinition:).md), then access the instance of this class in the engine’s [`globalMetaParameters`](phaseassetregistry/globalmetaparameters.md) dictionary.
-- Pass it to the [`PHASESwitchNodeDefinition`](phaseswitchnodedefinition.md) initializer, [`init(switchMetaParameterDefinition:)`](phaseswitchnodedefinition/init(switchmetaparameterdefinition:).md), and then access the instance of this class in a sound event’s [`metaParameters`](phasesoundevent/metaparameters.md) dictionary.
+- Register it with the engine by calling [`registerGlobalMetaParameter(metaParameterDefinition:)`](./phaseassetregistry/registerglobalmetaparameter%28metaparameterdefinition%29.md), then access the instance of this class in the engine’s [`globalMetaParameters`](./phaseassetregistry/globalmetaparameters.md) dictionary.
+- Pass it to the [`PHASESwitchNodeDefinition`](./phaseswitchnodedefinition.md) initializer, [`init(switchMetaParameterDefinition:)`](./phaseswitchnodedefinition/init%28switchmetaparameterdefinition%29.md), and then access the instance of this class in a sound event’s [`metaParameters`](./phasesoundevent/metaparameters.md) dictionary.
 
 ## Relationships
 
 ### Inherits From
-- [PHASEMetaParameter](phasemetaparameter.md)
+- [PHASEMetaParameter](./phasemetaparameter.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASEStringMetaParameterDefinition](phasestringmetaparameterdefinition.md)
+### Textual Metaparameters
+- [class PHASEStringMetaParameterDefinition](./phasestringmetaparameterdefinition.md)
   A specification for a metaparameter defined by text.
 
 

@@ -1,7 +1,8 @@
 # contentText
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text displayed in the main content view.
 
@@ -14,17 +15,22 @@ The text displayed in the main content view.
 var contentText: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * contentText;
+```
+
 #### Discussion
 
-The content text is displayed in the caption button and indicates the purpose of the caption button. The last instance of [`contentImage`](tvcaptionbuttonview/contentimage.md) or [`contentText`](tvcaptionbuttonview/contenttext.md) that was set in your app is displayed by the caption button view.
+The content text is displayed in the caption button and indicates the purpose of the caption button. The last instance of [`contentImage`](./contentimage.md) or [`contentText`](./contenttext.md) that was set in your app is displayed by the caption button view.
 
 ## See Also
 
-- [var contentImage: UIImage?](tvcaptionbuttonview/contentimage.md)
+### Configuring the Caption Button
+- [var contentImage: UIImage?](./contentimage.md)
   The image displayed in the main content view.
-- [var title: String?](tvcaptionbuttonview/title.md)
+- [var title: String?](./title.md)
   The title for the caption button.
-- [var subtitle: String?](tvcaptionbuttonview/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   The subtitle of the caption button.
 
 

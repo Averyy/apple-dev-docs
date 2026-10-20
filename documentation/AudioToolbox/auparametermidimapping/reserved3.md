@@ -1,15 +1,20 @@
 # reserved3
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var reserved3: UInt32
+```
+
+```c
+UInt32 reserved3;
 ```
 
 

@@ -1,7 +1,8 @@
 # ExtensionConfig.Media.Queues.ContentProtectionKey
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Configuration details for your service’s content protection key endpoint.
 
@@ -10,31 +11,34 @@ Configuration details for your service’s content protection key endpoint.
 
 ## Declaration
 
-```swift
+```
 object ExtensionConfig.Media.Queues.ContentProtectionKey
 ```
 
 ## Topics
 
 ### Requiring Headers
-- [object ExtensionConfig.Media.Queues.ContentProtectionKey.Cks](extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary/cks-data.dictionary.md)
+- [object ExtensionConfig.Media.Queues.ContentProtectionKey.Cks](./contentprotectionkey-data.dictionary/cks-data.dictionary.md)
   Configuration details for your service’s content protection system.
-- [object ExtensionConfig.Media.Queues.ContentProtectionKey.Hdr](extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary/hdr-data.dictionary.md)
+- [object ExtensionConfig.Media.Queues.ContentProtectionKey.Hdr](./contentprotectionkey-data.dictionary/hdr-data.dictionary.md)
   Headers to include with requests to the content protection key endpoint.
 
 ## Properties
 
 - `cks` (ExtensionConfig.Media.Queues.ContentProtectionKey.Cks) *(required)*: The configuration details of your service’s content protection system.
 - `hdr` (ExtensionConfig.Media.Queues.ContentProtectionKey.Hdr): The headers to include with requests to this endpoint.
-- `url` (string) *(required)*: The relative path for the client to access the `contentProtectionKey` endpoint. For more information, see [`contentProtectionKey`](extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionarykey.md).
+- `url` (string) *(required)*: The relative path for the client to access the `contentProtectionKey` endpoint. For more information, see [`contentProtectionKey`](./contentprotectionkey-data.dictionarykey.md).
+
+  **Default**: `/queues/contentProtectionKey`; **Minimum Length**: `1`; **Maximum Length**: `4000`
 
 ## See Also
 
-- [object ExtensionConfig.Media.Queues.PlayMedia](extensionconfig/media-data.dictionary/queues-data.dictionary/playmedia-data.dictionary.md)
+### Requiring Headers and Specifying Paths for Specific Queue Endpoints
+- [object ExtensionConfig.Media.Queues.PlayMedia](./playmedia-data.dictionary.md)
   Configuration details for your service’s media playback queue.
-- [object ExtensionConfig.Media.Queues.UpdateActivity](extensionconfig/media-data.dictionary/queues-data.dictionary/updateactivity-data.dictionary.md)
+- [object ExtensionConfig.Media.Queues.UpdateActivity](./updateactivity-data.dictionary.md)
   Configuration details for your service’s update activity endpoint.
-- [object ExtensionConfig.Media.Queues.ContentPlaybackFailure](extensionconfig/media-data.dictionary/queues-data.dictionary/contentplaybackfailure-data.dictionary.md)
+- [object ExtensionConfig.Media.Queues.ContentPlaybackFailure](./contentplaybackfailure-data.dictionary.md)
   Configuration details for your service’s content playback failure endpoint.
 
 

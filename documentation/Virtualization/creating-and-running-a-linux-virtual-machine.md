@@ -1,6 +1,7 @@
 # Creating and Running a Linux Virtual Machine
 
-**Framework**: Virtualization
+**Framework**: Virtualization  
+**Role**: Article
 
 Design and run custom Linux guests on Apple silicon or Intel-based Mac Computers.
 
@@ -8,13 +9,13 @@ Design and run custom Linux guests on Apple silicon or Intel-based Mac Computers
 
 Running a Linux virtual machine (VM) is an additive process that starts with selecting a Linux distribution and obtaining Linux kernel and RAM disk images, and ends with instantiating and running the Linux VM on the user’s computer.
 
-There many Linux distributions to choose from, select one that both meets your app’s needs in terms of device and application support, and supports ARM64 or 64-bit Intel-based CPUs. You’ll also need to decide how much of the host computer’s CPU resources and memory to dedicate to the VM in order to configure a [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md). Unless your VM is solving self-contained computing problems, it’s likely your VM needs to interact with the user, access the network, and so on, so you’ll want to add devices to the VM to make this possible.
+There many Linux distributions to choose from, select one that both meets your app’s needs in terms of device and application support, and supports ARM64 or 64-bit Intel-based CPUs. You’ll also need to decide how much of the host computer’s CPU resources and memory to dedicate to the VM in order to configure a [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md). Unless your VM is solving self-contained computing problems, it’s likely your VM needs to interact with the user, access the network, and so on, so you’ll want to add devices to the VM to make this possible.
 
-Finally, after creating a suitable [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md), you’ll use a [`VZLinuxBootLoader`](vzlinuxbootloader.md) to launch your VM and a [`VZVirtualMachine`](vzvirtualmachine.md) instance to control it.
+Finally, after creating a suitable [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md), you’ll use a [`VZLinuxBootLoader`](./vzlinuxbootloader.md) to launch your VM and a [`VZVirtualMachine`](./vzvirtualmachine.md) instance to control it.
 
-##### Obtain the Kernel and Ram Disk Images
+##### Obtain the Kernel and RAM Disk Images
 
-You can obtain images for many Linux distributions, including [`Ubuntu Linux`](https://developer.apple.comhttps://cloud-images.ubuntu.com/releases/hirsute/release/unpacked/). Most Linux distributions provide downloadable kernel and RAM disk images that can run on Mac computers; however, you’ll need to download images for your specific CPU:
+You can obtain images for many Linux distributions, including [Ubuntu Linux](https://cloud-images.ubuntu.com/releases/hirsute/release/unpacked/). Most Linux distributions provide downloadable kernel and RAM disk images that can run on Mac computers; however, you’ll need to download images for your specific CPU:
 
 - For Apple silicon Mac computers, download ARM 64-bit images.
 - For Intel-based Mac computers, download AMD64 images.
@@ -27,9 +28,9 @@ Some Linux distributions store kernel images in a compressed format, sometimes i
 
 You can include the Linux kernel and RAM disk as resources in your Xcode project for use in your app, or implement a custom solution that allows the user to download and save images over the network.
 
-##### Set Up the Linux Vm Configuration
+##### Set Up the Linux VM Configuration
 
-Configure a [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) with the number of CPUs and amount of memory you want to use with your VM:
+Configure a [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) with the number of CPUs and amount of memory you want to use with your VM:
 
 **Swift**:
 
@@ -51,13 +52,13 @@ virtualMachineConfiguration.CPUCount = 2;
 virtualMachineConfiguration.memorySize = 2 * 1024 * 1024 * 1024;
 ```
 
-##### Add Devices to Your Vm
+##### Add Devices to Your VM
 
 Next, you’ll need to decide what devices your Linux VM needs. Because you can’t change or add devices to a running VM, consider what devices you’ll need to support your app’s use cases and add them to the VM’s configuration. For example, if you need:
 
-- To connect to network services from your VM, add a [`VZVirtioNetworkDeviceConfiguration`](vzvirtionetworkdeviceconfiguration.md).
-- A source of entropy, add a [`VZVirtioEntropyDeviceConfiguration`](vzvirtioentropydeviceconfiguration.md).
-- Audio devices, add [`VZVirtioSoundDeviceOutputStreamConfiguration`](vzvirtiosounddeviceoutputstreamconfiguration.md), [`VZVirtioSoundDeviceOutputStreamConfiguration`](vzvirtiosounddeviceoutputstreamconfiguration.md), and their associated stream sources and device configurations.
+- To connect to network services from your VM, add a [`VZVirtioNetworkDeviceConfiguration`](./vzvirtionetworkdeviceconfiguration.md).
+- A source of entropy, add a [`VZVirtioEntropyDeviceConfiguration`](./vzvirtioentropydeviceconfiguration.md).
+- Audio devices, add [`VZVirtioSoundDeviceOutputStreamConfiguration`](./vzvirtiosounddeviceoutputstreamconfiguration.md), [`VZVirtioSoundDeviceOutputStreamConfiguration`](./vzvirtiosounddeviceoutputstreamconfiguration.md), and their associated stream sources and device configurations.
 
 The example below adds a serial console, and sound input and output devices to the VM’s configuration:
 
@@ -99,11 +100,11 @@ soundDevice.streams = @[ inputStream ];
 virtualMachineConfiguration.audioDevices = @[ outputSoundDevice, inputSoundDevice ];
 ```
 
-For more information on devices that Linux guests can support, see the Devices section on the [`Virtualization`](Virtualization.md) framework.
+For more information on devices that Linux guests can support, see the Devices section on the [Virtualization](./Virtualization.md) framework.
 
 ##### Create a Boot Loader
 
-Create an instance of a [`VZLinuxBootLoader`](vzlinuxbootloader.md) on the `VZVirtualMachineConfiguration` with a Linux kernel and a RAM disk that you load from locations on disk:
+Create an instance of a [`VZLinuxBootLoader`](./vzlinuxbootloader.md) on the `VZVirtualMachineConfiguration` with a Linux kernel and a RAM disk that you load from locations on disk:
 
 **Swift**:
 
@@ -135,9 +136,9 @@ virtualMachineConfiguration.bootLoader = bootLoader;
 assert([virtualMachineConfiguration validateWithError:NULL]);
 ```
 
-##### Instantiate and Run the Linux Vm
+##### Instantiate and Run the Linux VM
 
-Instantiate a [`VZVirtualMachine`](vzvirtualmachine.md) from the `VZVirtualMachineConfiguration` that you use to start, stop, and control your Linux guest:
+Instantiate a [`VZVirtualMachine`](./vzvirtualmachine.md) from the `VZVirtualMachineConfiguration` that you use to start, stop, and control your Linux guest:
 
 **Swift**:
 
@@ -171,21 +172,22 @@ VZVirtualMachine *virtualMachine =  [[VZVirtualMachine alloc]   initWithConfigur
 
 ## See Also
 
-- [Running macOS in a virtual machine on Apple silicon](running-macos-in-a-virtual-machine-on-apple-silicon.md)
+### Virtual machine setup
+- [Running macOS in a virtual machine on Apple silicon](./running-macos-in-a-virtual-machine-on-apple-silicon.md)
   Install and run macOS in a virtual machine using the Virtualization framework.
-- [Running Linux in a Virtual Machine](running-linux-in-a-virtual-machine.md)
+- [Running Linux in a Virtual Machine](./running-linux-in-a-virtual-machine.md)
   Run a Linux operating system on your Mac using the Virtualization framework.
-- [Running GUI Linux in a virtual machine on a Mac](running-gui-linux-in-a-virtual-machine-on-a-mac.md)
+- [Running GUI Linux in a virtual machine on a Mac](./running-gui-linux-in-a-virtual-machine-on-a-mac.md)
   Install and run GUI Linux in a virtual machine using the Virtualization framework.
-- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
+- [Installing macOS on a Virtual Machine](./installing-macos-on-a-virtual-machine.md)
   Download a macOS restore image and install it in a new VM.
-- [Virtualize macOS on a Mac](virtualize-macos-on-a-mac.md)
+- [Virtualize macOS on a Mac](./virtualize-macos-on-a-mac.md)
   Configure and run macOS guests on Apple silicon.
-- [Virtualize Linux on a Mac](virtualize-linux-on-a-mac.md)
+- [Virtualize Linux on a Mac](./virtualize-linux-on-a-mac.md)
   Configure and run Linux guests on Apple silicon and Intel-based Mac computers.
-- [Running Intel Binaries in Linux VMs](running-intel-binaries-in-linux-vms.md)
+- [Running Intel Binaries in Linux VMs](./running-intel-binaries-in-linux-vms.md)
   Run x86_64 Linux binaries under ARM Linux on Apple silicon.
-- [Accelerating the performance of Rosetta](accelerating-the-performance-of-rosetta.md)
+- [Accelerating the performance of Rosetta](./accelerating-the-performance-of-rosetta.md)
   Improve Rosetta performance by adding support for the total store ordering (TSO) memory model to your Linux kernel.
 
 

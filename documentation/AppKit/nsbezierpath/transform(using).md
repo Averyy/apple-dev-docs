@@ -1,17 +1,22 @@
 # transform(using:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transforms all points in the path using the specified transform.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func transform(using transform: AffineTransform)
+```
+
+```objc
+- (void) transformUsingAffineTransform:(NSAffineTransform *) transform;
 ```
 
 #### Discussion

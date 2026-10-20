@@ -1,7 +1,8 @@
 # setAutoupdate(_:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the authorization view to update itself automatically.
 
@@ -14,27 +15,33 @@ Sets the authorization view to update itself automatically.
 func setAutoupdate(_ autoupdate: Bool)
 ```
 
+```objc
+- (void) setAutoupdate:(BOOL) autoupdate;
+```
+
 #### Discussion
 
-If autoupdates are enabled and the authorization times out (for example), the authorization view automatically relocks. If autoupdates are disabled, you have to call the [`updateStatus(_:)`](sfauthorizationview/updatestatus(_:).md) method to manually update the view if the status changes when the user has not clicked on the lock icon. Autoupdates are disabled by default. Because autoupdates poll, they can affect system performance.
+If autoupdates are enabled and the authorization times out (for example), the authorization view automatically relocks. If autoupdates are disabled, you have to call the [`updateStatus(_:)`](./updatestatus%28_%29.md) method to manually update the view if the status changes when the user has not clicked on the lock icon. Autoupdates are disabled by default. Because autoupdates poll, they can affect system performance.
 
 ## Parameters
 
-- `autoupdate`: Specifies whether the authorization view should update itself automatically. Set to [`true`](https://developer.apple.com/documentation/swift/true) to enable autoupdates.
+- `autoupdate`: Specifies whether the authorization view should update itself automatically. Set to [`true`](../../Swift/true.md) to enable autoupdates.
 
 ## See Also
 
-- [func updateStatus(Any!) -> Bool](sfauthorizationview/updatestatus(_:).md)
+### Related Documentation
+- [func updateStatus(Any!) -> Bool](./updatestatus%28_%29.md)
   Manually updates the authorization view.
-- [func setString(AuthorizationString!)](sfauthorizationview/setstring(_:).md)
+### Setting up the authorization view
+- [func setString(AuthorizationString!)](./setstring%28_%29.md)
   Sets the requested-right string to use with the default authorization rights set.
-- [func setAuthorizationRights(UnsafePointer<AuthorizationRights>!)](sfauthorizationview/setauthorizationrights(_:).md)
+- [func setAuthorizationRights(UnsafePointer<AuthorizationRights>!)](./setauthorizationrights%28_%29.md)
   Sets the authorization rights for this view.
-- [func setAutoupdate(Bool, interval: TimeInterval)](sfauthorizationview/setautoupdate(_:interval:).md)
+- [func setAutoupdate(Bool, interval: TimeInterval)](./setautoupdate%28_,interval%29.md)
   Sets the authorization view to update itself at a specific interval.
-- [func setFlags(AuthorizationFlags)](sfauthorizationview/setflags(_:).md)
+- [func setFlags(AuthorizationFlags)](./setflags%28_%29.md)
   Sets the current authorization flags for the view.
-- [func setEnabled(Bool)](sfauthorizationview/setenabled(_:).md)
+- [func setEnabled(Bool)](./setenabled%28_%29.md)
   Sets the current state of the authorization view.
 
 

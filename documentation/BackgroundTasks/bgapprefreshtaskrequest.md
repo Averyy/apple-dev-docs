@@ -1,7 +1,8 @@
 # BGAppRefreshTaskRequest
 
 **Framework**: Background Tasks  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request to launch your app in the background to execute a short refresh task.
 
@@ -18,38 +19,43 @@ A request to launch your app in the background to execute a short refresh task.
 class BGAppRefreshTaskRequest
 ```
 
+```objc
+@interface BGAppRefreshTaskRequest : BGTaskRequest
+```
+
 ## Mentions
 
-- [Choosing Background Strategies for Your App](choosing-background-strategies-for-your-app.md)
+- [Choosing Background Strategies for Your App](./choosing-background-strategies-for-your-app.md)
 
 ## Topics
 
 ### Initializing a refresh task request
-- [init(identifier: String)](bgapprefreshtaskrequest/init(identifier:).md)
+- [init(identifier: String)](./bgapprefreshtaskrequest/init%28identifier%29.md)
   Return a new refresh task request for the specified identifier.
 
 ## Relationships
 
 ### Inherits From
-- [BGTaskRequest](bgtaskrequest.md)
+- [BGTaskRequest](./bgtaskrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class BGProcessingTaskRequest](bgprocessingtaskrequest.md)
+### Task requests
+- [class BGProcessingTaskRequest](./bgprocessingtaskrequest.md)
   A request to launch your app in the background to execute a processing task that can take minutes to complete.
-- [class BGTaskRequest](bgtaskrequest.md)
+- [class BGTaskRequest](./bgtaskrequest.md)
   An abstract class for representing task requests.
-- [class BGHealthResearchTaskRequest](bghealthresearchtaskrequest.md)
+- [class BGHealthResearchTaskRequest](./bghealthresearchtaskrequest.md)
   A request to launch your app in the background to execute processing for a health research study in which a user participates.
-- [class BGContinuedProcessingTaskRequest](bgcontinuedprocessingtaskrequest.md)
+- [class BGContinuedProcessingTaskRequest](./bgcontinuedprocessingtaskrequest.md)
   A request for a workload that the system continues processing even if a person backgrounds the app.
 
 

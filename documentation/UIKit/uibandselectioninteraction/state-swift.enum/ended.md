@@ -1,7 +1,8 @@
 # UIBandSelectionInteraction.State.ended
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates the current interaction ended.
 
@@ -17,17 +18,22 @@ A state that indicates the current interaction ended.
 case ended
 ```
 
+```c
+UIBandSelectionInteractionStateEnded
+```
+
 #### Discussion
 
 Use this state to finalize the interaction. For example, you might finalize the selection of items in your view.
 
 ## See Also
 
-- [UIBandSelectionInteraction.State.possible](uibandselectioninteraction/state-swift.enum/possible.md)
+### Getting the selection state
+- [UIBandSelectionInteraction.State.possible](./possible.md)
   A state that indicates the interaction object is ready to start a new interaction.
-- [UIBandSelectionInteraction.State.began](uibandselectioninteraction/state-swift.enum/began.md)
+- [UIBandSelectionInteraction.State.began](./began.md)
   A state that indicates the interaction object began a new interaction.
-- [UIBandSelectionInteraction.State.selecting](uibandselectioninteraction/state-swift.enum/selecting.md)
+- [UIBandSelectionInteraction.State.selecting](./selecting.md)
   A state that indicates the interaction object is tracking changes to the selection rectangle.
 
 

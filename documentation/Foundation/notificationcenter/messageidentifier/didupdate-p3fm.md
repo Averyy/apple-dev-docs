@@ -1,7 +1,8 @@
 # didUpdate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,8 @@
 ```swift
 static var didUpdate: NotificationCenter.BaseMessageIdentifier<UIFocusSystem.DidUpdateMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UIFocusSystem.DidUpdateMessage>`.
 
 
 ---

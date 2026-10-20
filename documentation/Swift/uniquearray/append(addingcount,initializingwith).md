@@ -1,7 +1,8 @@
 # append(addingCount:initializingWith:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Append a given number of items to the end of this array by populating an output span.
 
@@ -26,7 +27,7 @@ If the array does not have sufficient capacity to hold the requested number of n
 
 If the callback fails to fully populate its output span or if it throws an error, then the array keeps all items that were successfully initialized before the callback terminated the insertion.
 
-> **Note**: O(`uninitializedCount`)
+> **Complexity**: O(`uninitializedCount`)
 
 ## Parameters
 

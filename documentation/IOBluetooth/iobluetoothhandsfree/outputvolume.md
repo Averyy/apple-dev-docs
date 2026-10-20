@@ -1,7 +1,8 @@
 # outputVolume
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Return the output volume
 
@@ -12,6 +13,10 @@ Return the output volume
 
 ```swift
 var outputVolume: Float { get set }
+```
+
+```objc
+@property (assign) float outputVolume;
 ```
 
 #### Return Value

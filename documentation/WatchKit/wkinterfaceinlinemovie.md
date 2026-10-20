@@ -1,7 +1,8 @@
 # WKInterfaceInlineMovie
 
 **Framework**: WatchKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interface element that displays a video’s poster image and supports inline playing of the video.
 
@@ -14,11 +15,15 @@ An interface element that displays a video’s poster image and supports inline 
 class WKInterfaceInlineMovie
 ```
 
+```objc
+@interface WKInterfaceInlineMovie : WKInterfaceObject
+```
+
 #### Overview
 
-In watchOS 2.0, you had to display video content using a [`WKInterfaceMovie`](wkinterfacemovie.md) object. This object displayed a poster image for the video, and when the user tapped the poster image, the video was shown in a separate, full-screen, modal view.
+In watchOS 2.0, you had to display video content using a [`WKInterfaceMovie`](./wkinterfacemovie.md) object. This object displayed a poster image for the video, and when the user tapped the poster image, the video was shown in a separate, full-screen, modal view.
 
-The [`WKInterfaceInlineMovie`](wkinterfaceinlinemovie.md) object also lets you display a poster image for your video; however, when the poster is tapped, this video replaces the poster image and plays in place. You can also create videos that play automatically as soon as the scene is presented.
+The [`WKInterfaceInlineMovie`](./wkinterfaceinlinemovie.md) object also lets you display a poster image for your video; however, when the poster is tapped, this video replaces the poster image and plays in place. You can also create videos that play automatically as soon as the scene is presented.
 
 Do not subclass or create instances of this class yourself. Instead, define outlets in your interface controller class and connect them to the corresponding objects in your storyboard file. For example, to refer to a movie object in your interface, define a property with the following syntax in your interface controller class:
 
@@ -44,7 +49,7 @@ The following table lists the encoding information to use when creating media fi
 
 | Media type | Recommended encoding |
 | --- | --- |
-| Video assets | Video codec: H.264 High Profile ![None](/images/com.apple.watchkit/spacer.png) Bit rate: 160 kpbs at up to 30 fps ![None](/images/com.apple.watchkit/spacer.png) Full screen resolution: 208 x 260 in portrait orientation ![None](/images/com.apple.watchkit/spacer.png) 16:9 resolution: 320 x 180 in landscape orientation ![None](/images/com.apple.watchkit/spacer.png) Audio bit rate: 32 kpbs stereo |
+| Video assets | Video codec: H.264 High Profile ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/spacer.png) Bit rate: 160 kpbs at up to 30 fps ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/spacer.png) Full screen resolution: 208 x 260 in portrait orientation ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/spacer.png) 16:9 resolution: 320 x 180 in landscape orientation ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/spacer.png) Audio bit rate: 32 kpbs stereo |
 | Audio-only assets | Bit rate: 32 kbps stereo |
 
 ##### Interface Builder Configuration Options
@@ -53,60 +58,61 @@ Xcode lets you configure information about your inline movie interface object in
 
 | Attribute | Description |
 | --- | --- |
-| Video Gravity | The sizing behavior for the movie. Use this attribute to determine whether the movie maintains its aspect ratio and how it fills the available space. You can also configure this value programmatically using the [`setVideoGravity(_:)`](wkinterfaceinlinemovie/setvideogravity(_:).md) method. |
-| Poster Image | The placeholder image to display for your movie. When the user taps the poster image, the movie begins to play inline. You can also configure this value programmatically using the [`setPosterImage(_:)`](wkinterfaceinlinemovie/setposterimage(_:).md) method. |
-| Loop | A boolean value indicating whether the movie plays in a continuous loop. If checked, the movie plays in a continuous loop. If unchecked, the movie plays once and then stops. You can also configure this value programmatically using the [`setLoops(_:)`](wkinterfaceinlinemovie/setloops(_:).md) method. |
-| Autoplay | A boolean value indicating whether the movie automatically plays as soon as the interface is presented. If checked, the movie automatically begins playing. If unchecked, the inline movie object displays the poster image instead. The movie does not begin playing until the user taps the poster, or until you programmatically call either the [`play()`](wkinterfaceinlinemovie/play().md) or [`playFromBeginning()`](wkinterfaceinlinemovie/playfrombeginning().md) method. You can also configure this value programmatically using the [`setAutoplays(_:)`](wkinterfaceinlinemovie/setautoplays(_:).md) method. |
+| Video Gravity | The sizing behavior for the movie. Use this attribute to determine whether the movie maintains its aspect ratio and how it fills the available space. You can also configure this value programmatically using the [`setVideoGravity(_:)`](./wkinterfaceinlinemovie/setvideogravity%28_%29.md) method. |
+| Poster Image | The placeholder image to display for your movie. When the user taps the poster image, the movie begins to play inline. You can also configure this value programmatically using the [`setPosterImage(_:)`](./wkinterfaceinlinemovie/setposterimage%28_%29.md) method. |
+| Loop | A boolean value indicating whether the movie plays in a continuous loop. If checked, the movie plays in a continuous loop. If unchecked, the movie plays once and then stops. You can also configure this value programmatically using the [`setLoops(_:)`](./wkinterfaceinlinemovie/setloops%28_%29.md) method. |
+| Autoplay | A boolean value indicating whether the movie automatically plays as soon as the interface is presented. If checked, the movie automatically begins playing. If unchecked, the inline movie object displays the poster image instead. The movie does not begin playing until the user taps the poster, or until you programmatically call either the [`play()`](./wkinterfaceinlinemovie/play%28%29.md) or [`playFromBeginning()`](./wkinterfaceinlinemovie/playfrombeginning%28%29.md) method. You can also configure this value programmatically using the [`setAutoplays(_:)`](./wkinterfaceinlinemovie/setautoplays%28_%29.md) method. |
 
 ## Topics
 
 ### Setting Movie Properties
-- [func setAutoplays(Bool)](wkinterfaceinlinemovie/setautoplays(_:).md)
+- [func setAutoplays(Bool)](./wkinterfaceinlinemovie/setautoplays%28_%29.md)
   Sets a Boolean value indicating whether the movie automatically begins playing as soon as the scene is presented.
-- [func setLoops(Bool)](wkinterfaceinlinemovie/setloops(_:).md)
+- [func setLoops(Bool)](./wkinterfaceinlinemovie/setloops%28_%29.md)
   Sets a Boolean value indicating whether the movie plays in a continuous loop.
-- [func setMovieURL(URL)](wkinterfaceinlinemovie/setmovieurl(_:).md)
+- [func setMovieURL(URL)](./wkinterfaceinlinemovie/setmovieurl%28_%29.md)
   Sets the URL of the movie to play.
-- [func setPosterImage(WKImage?)](wkinterfaceinlinemovie/setposterimage(_:).md)
+- [func setPosterImage(WKImage?)](./wkinterfaceinlinemovie/setposterimage%28_%29.md)
   Sets the poster image to display for the movie.
-- [func setVideoGravity(WKVideoGravity)](wkinterfaceinlinemovie/setvideogravity(_:).md)
+- [func setVideoGravity(WKVideoGravity)](./wkinterfaceinlinemovie/setvideogravity%28_%29.md)
   Sets the resizing behavior for the movie content.
 ### Controlling Playback
-- [func pause()](wkinterfaceinlinemovie/pause.md)
+- [func pause()](./wkinterfaceinlinemovie/pause%28%29.md)
   Pauses the movie.
-- [func play()](wkinterfaceinlinemovie/play.md)
+- [func play()](./wkinterfaceinlinemovie/play%28%29.md)
   Plays the movie.
-- [func playFromBeginning()](wkinterfaceinlinemovie/playfrombeginning.md)
+- [func playFromBeginning()](./wkinterfaceinlinemovie/playfrombeginning%28%29.md)
   Plays the movie from the beginning.
 ### Initializing for SwiftUI
-- [init()](wkinterfaceinlinemovie/init.md)
+- [init()](./wkinterfaceinlinemovie/init%28%29.md)
   Creates an inline movie object for use in SwiftUI.
 
 ## Relationships
 
 ### Inherits From
-- [WKInterfaceObject](wkinterfaceobject.md)
+- [WKInterfaceObject](./wkinterfaceobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class WKInterfaceImage](wkinterfaceimage.md)
+### Images and movies
+- [class WKInterfaceImage](./wkinterfaceimage.md)
   An image that can be displayed in the interface of your watchOS app.
-- [class WKImage](wkimage.md)
+- [class WKImage](./wkimage.md)
   A wrapper for images you use with a picker interface.
-- [protocol WKImageAnimatable](wkimageanimatable.md)
+- [protocol WKImageAnimatable](./wkimageanimatable.md)
   A collection of methods you can use to control the playback of animated images.
-- [class WKInterfaceMovie](wkinterfacemovie.md)
+- [class WKInterfaceMovie](./wkinterfacemovie.md)
   An interface element that lets you play video and audio content in your watchOS app.
-- [class WKInterfaceHMCamera](wkinterfacehmcamera.md)
+- [class WKInterfaceHMCamera](./wkinterfacehmcamera.md)
   An interface element that displays either a video stream or a single snapshot from an IP camera connected to HomeKit.
-- [enum WKVideoGravity](wkvideogravity.md)
+- [enum WKVideoGravity](./wkvideogravity.md)
   Constants indicating the appearance of video content.
 
 

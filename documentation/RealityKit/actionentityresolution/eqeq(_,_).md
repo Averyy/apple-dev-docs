@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: RealityKit  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Indicates whether two action entity resolutions are equal.
 

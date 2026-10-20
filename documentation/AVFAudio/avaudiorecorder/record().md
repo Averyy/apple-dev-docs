@@ -1,7 +1,8 @@
 # record()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts or resumes audio recording.
 
@@ -20,31 +21,36 @@ Starts or resumes audio recording.
 func record() -> Bool
 ```
 
+```objc
+- (BOOL) record;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if successful; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Calling this method implicitly calls [`prepareToRecord()`](avaudiorecorder/preparetorecord().md), which creates an audio file and prepares the system for recording.
+Calling this method implicitly calls [`prepareToRecord()`](./preparetorecord%28%29.md), which creates an audio file and prepares the system for recording.
 
 ## See Also
 
-- [func prepareToRecord() -> Bool](avaudiorecorder/preparetorecord.md)
+### Controlling recording
+- [func prepareToRecord() -> Bool](./preparetorecord%28%29.md)
   Creates an audio file and prepares the system for recording.
-- [func record(atTime: TimeInterval) -> Bool](avaudiorecorder/record(attime:).md)
+- [func record(atTime: TimeInterval) -> Bool](./record%28attime%29.md)
   Records audio starting at a specific time.
-- [func record(forDuration: TimeInterval) -> Bool](avaudiorecorder/record(forduration:).md)
+- [func record(forDuration: TimeInterval) -> Bool](./record%28forduration%29.md)
   Records audio for the indicated duration of time.
-- [func record(atTime: TimeInterval, forDuration: TimeInterval) -> Bool](avaudiorecorder/record(attime:forduration:).md)
+- [func record(atTime: TimeInterval, forDuration: TimeInterval) -> Bool](./record%28attime,forduration%29.md)
   Records audio starting at a specific time for the indicated duration.
-- [func pause()](avaudiorecorder/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses an audio recording.
-- [func stop()](avaudiorecorder/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops recording and closes the audio file.
-- [var isRecording: Bool](avaudiorecorder/isrecording.md)
+- [var isRecording: Bool](./isrecording.md)
   A Boolean value that indicates whether the audio recorder is recording.
-- [func deleteRecording() -> Bool](avaudiorecorder/deleterecording.md)
+- [func deleteRecording() -> Bool](./deleterecording%28%29.md)
   Deletes a recorded audio file.
 
 

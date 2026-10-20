@@ -1,11 +1,12 @@
 # kAudioHardwarePropertyBootChimeVolumeDecibelsToScalarTransferFunction
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,13 +14,18 @@
 var kAudioHardwarePropertyBootChimeVolumeDecibelsToScalarTransferFunction: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioHardwarePropertyBootChimeVolumeDecibelsToScalarTransferFunction
+```
+
 ## See Also
 
-- [var kAudioHardwarePropertyBootChimeVolumeDecibels: AudioObjectPropertySelector](kaudiohardwarepropertybootchimevolumedecibels.md)
-- [var kAudioHardwarePropertyBootChimeVolumeDecibelsToScalar: AudioObjectPropertySelector](kaudiohardwarepropertybootchimevolumedecibelstoscalar.md)
-- [var kAudioHardwarePropertyBootChimeVolumeRangeDecibels: AudioObjectPropertySelector](kaudiohardwarepropertybootchimevolumerangedecibels.md)
-- [var kAudioHardwarePropertyBootChimeVolumeScalar: AudioObjectPropertySelector](kaudiohardwarepropertybootchimevolumescalar.md)
-- [var kAudioHardwarePropertyBootChimeVolumeScalarToDecibels: AudioObjectPropertySelector](kaudiohardwarepropertybootchimevolumescalartodecibels.md)
+### Constants
+- [var kAudioHardwarePropertyBootChimeVolumeDecibels: AudioObjectPropertySelector](./kaudiohardwarepropertybootchimevolumedecibels.md)
+- [var kAudioHardwarePropertyBootChimeVolumeDecibelsToScalar: AudioObjectPropertySelector](./kaudiohardwarepropertybootchimevolumedecibelstoscalar.md)
+- [var kAudioHardwarePropertyBootChimeVolumeRangeDecibels: AudioObjectPropertySelector](./kaudiohardwarepropertybootchimevolumerangedecibels.md)
+- [var kAudioHardwarePropertyBootChimeVolumeScalar: AudioObjectPropertySelector](./kaudiohardwarepropertybootchimevolumescalar.md)
+- [var kAudioHardwarePropertyBootChimeVolumeScalarToDecibels: AudioObjectPropertySelector](./kaudiohardwarepropertybootchimevolumescalartodecibels.md)
 
 
 ---

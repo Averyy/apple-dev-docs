@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the default instance of `NSDecimalNumberHandler`.
 
@@ -20,6 +21,10 @@ Returns the default instance of `NSDecimalNumberHandler`.
 class var `default`: NSDecimalNumberHandler { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSDecimalNumberHandler * defaultDecimalNumberHandler;
+```
+
 #### Return Value
 
 The default instance of `NSDecimalNumberHandler`.
@@ -30,7 +35,8 @@ This default decimal number handler rounds to the closest possible return value.
 
 ## See Also
 
-- [Number and Value Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/NumbersandValues/NumbersandValues.html#//apple_ref/doc/uid/10000038i)
+### Related Documentation
+- [Number and Value Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/NumbersandValues/NumbersandValues.html#//apple_ref/doc/uid/10000038i)
 
 
 ---

@@ -1,7 +1,8 @@
 # kSystemKeychainDir
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var kSystemKeychainDir: String { get }
+```
+
+```c
+#define kSystemKeychainDir
 ```
 
 

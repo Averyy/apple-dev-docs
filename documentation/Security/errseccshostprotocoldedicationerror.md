@@ -1,7 +1,8 @@
 # errSecCSHostProtocolDedicationError
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Host protocol violation: operation not allowed with or for a dedicated guest.
 
@@ -13,6 +14,10 @@ Host protocol violation: operation not allowed with or for a dedicated guest.
 
 ```swift
 var errSecCSHostProtocolDedicationError: OSStatus { get }
+```
+
+```c
+errSecCSHostProtocolDedicationError
 ```
 
 

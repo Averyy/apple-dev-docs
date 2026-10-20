@@ -1,6 +1,7 @@
 # Implementing OAuth for the Apple Ads Platform API
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: Article
 
 Generate a key pair and request an access token to authenticate with the Apple Ads Platform API.
 
@@ -24,17 +25,17 @@ The implementation process:
 
 Account administrators invite users with API permissions using the following process:
 
-1. From [`Apple Ads`](https://developer.apple.comhttps://ads.apple.com), choose Sign In > Advanced and log in as an account administrator.
+1. From [Apple Ads](https://ads.apple.com), choose Sign In > Advanced and log in as an account administrator.
 2. From the Users menu in the top-right corner, select the account to invite users to.
 3. Choose Account Settings > User Management.
 4. Click Invite Users to invite users to your Apple Ads organization.
 5. In the User Details section, enter the user’s first name, last name, and Apple Account.
-6. In the User Access and Role section, select an API user role. For non-API roles, see [`Invite users to your account`](https://developer.apple.comhttps://ads.apple.com/help/advanced/0011-invite-users-to-your-account/).
+6. In the User Access and Role section, select an API user role. For non-API roles, see [Invite users to your account](https://ads.apple.com/help/advanced/0011-invite-users-to-your-account/).
 7. Click Send Invite. The invited user receives an email with a secure code. The user signs into the secure Apple URL in the email and inputs the provided code, which activates the user’s account.
 
 #### Generate a Private Key
 
-API users need to create a private key. If you’re using macOS or a Unix-like operating system, OpenSSL works natively. If you’re on a Windows platform, you need to download [`OpenSSL`](https://developer.apple.comhttps://www.openssl.org).
+API users need to create a private key. If you’re using macOS or a Unix-like operating system, OpenSSL works natively. If you’re on a Windows platform, you need to download [OpenSSL](https://www.openssl.org).
 
 This command uses OpenSSL to generate a new elliptic curve private key, which you use to sign requests and prove ownership of the public key you upload to Apple Ads:
 
@@ -55,7 +56,7 @@ LaZriCQnnqq4Vx+IscLFcrjBj+ulZzKlUQ==
 -----END EC PRIVATE KEY-----
 ```
 
-> ❗ **Important**: Always keep your private key secure and never share it. If your private key is compromised, you need to re-create a private key and client secret, and reupload it to your [`Apple Ads`](https://developer.apple.comhttps://ads.apple.com) account.
+> ❗ **Important**: Always keep your private key secure and never share it. If your private key is compromised, you need to re-create a private key and client secret, and reupload it to your [Apple Ads](https://ads.apple.com) account.
 
 #### Extract a Public Key
 
@@ -92,7 +93,7 @@ You can make edits to the public key by choosing Account Settings > API > Edit.
 
 #### Create a Client Secret
 
-A *client secret* is a JSON web token ([`JWT`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7519)) that you create and sign using your private key. Your client secret authenticates token requests to the authorization server. Only you and the authorization server know the client secret.
+A *client secret* is a JSON web token ([JWT](https://tools.ietf.org/html/rfc7519)) that you create and sign using your private key. Your client secret authenticates token requests to the authorization server. Only you and the authorization server know the client secret.
 
 The following example is a Python 3 script that generates, encodes, and signs the client secret using your private key. If you decide to create your own JWT using a different programming language and open-source library, make sure the library you use supports elliptic curve methods.
 
@@ -170,7 +171,7 @@ The client secret includes a payload with claims:
 
 The following is an example of an unencoded payload and header encoded into a JWT:
 
-```None
+```
 // Header
 {
 "alg": "ES256",
@@ -236,22 +237,23 @@ After accepting the credentials, the authorization server returns an access toke
 
 The response includes the following parameters:
 
-- **`access_token`**: String. Your `access_token` is a requirement to make calls to Apple Ads Platform API endpoints. See [`Managing Ad Accounts and API Access`](access-overview.md) for a complete walkthrough from this token to your first real request. Your `access_token` is valid for the number of seconds that `expires_in` specifies.
+- **`access_token`**: String. Your `access_token` is a requirement to make calls to Apple Ads Platform API endpoints. See [Managing Ad Accounts and API Access](./access-overview.md) for a complete walkthrough from this token to your first real request. Your `access_token` is valid for the number of seconds that `expires_in` specifies.
 - **`token_type`**: String. The type of access token. The value is always `Bearer`.
 - **`expires_in`**: Integer. The token lifetime (TTL) of one hour (3600 seconds).
 - **`scope`**: String. Defines the access permissions you request from the user, and limits the authorization of the access token you receive.
 
 ## See Also
 
-- [Calling the Apple Ads Platform API](calling-apple-ads-platform-api.md)
+### Essentials
+- [Calling the Apple Ads Platform API](./calling-apple-ads-platform-api.md)
   Authenticate requests, structure endpoint calls, and interpret responses when using the Apple Ads Platform API.
-- [Using Client Libraries](client-libraries.md)
+- [Using Client Libraries](./client-libraries.md)
   Integrate the Apple Ads Platform API using an Apple-maintained client library instead of a custom HTTP client.
-- [Applying Rate Limits](rate-limits.md)
+- [Applying Rate Limits](./rate-limits.md)
   Track your remaining quota and pace requests.
-- [Advertising Your App on the App Store](journey-app-store-ads.md)
+- [Advertising Your App on the App Store](./journey-app-store-ads.md)
   Set up and launch an App Store campaign, from account verification through keyword targeting to performance reporting.
-- [Advertising Your Business on Apple Maps](journey-apple-maps-brand-ads.md)
+- [Advertising Your Business on Apple Maps](./journey-apple-maps-brand-ads.md)
   Identify your brand, upload creative assets, build location groups, and create campaigns, ad groups, creatives, and ads to promote it on Apple Maps.
 
 

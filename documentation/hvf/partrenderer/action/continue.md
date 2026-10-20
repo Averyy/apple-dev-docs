@@ -1,7 +1,8 @@
 # PartRenderer.Action.continue
 
 **Framework**: hvf  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Continue rendering
 

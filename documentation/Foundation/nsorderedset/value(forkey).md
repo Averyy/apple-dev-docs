@@ -1,7 +1,8 @@
 # value(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an ordered set containing the results of invoking `valueForKey:` using key on each of the ordered set’s objects.
 
@@ -20,6 +21,10 @@ Returns an ordered set containing the results of invoking `valueForKey:` using k
 func value(forKey key: String) -> Any
 ```
 
+```objc
+- (id) valueForKey:(NSString *) key;
+```
+
 #### Return Value
 
 The ordered set of the values for the retrieved key. The returned ordered set might not have the same number of members as the receiver.
@@ -34,7 +39,8 @@ The returned ordered set will not contain any elements corresponding to instance
 
 ## See Also
 
-- [func setValue(Any?, forKey: String)](nsorderedset/setvalue(_:forkey:).md)
+### Key-Value Coding Support
+- [func setValue(Any?, forKey: String)](./setvalue%28_,forkey%29.md)
   Invokes `setValue:forKey:` on each of the receiver’s members using the specified value and key
 
 

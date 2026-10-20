@@ -1,7 +1,8 @@
 # init(completionHandler:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new request that tracks the optical from one image to another, with a system callback on completion.
 
@@ -19,13 +20,18 @@ Creates a new request that tracks the optical from one image to another, with a 
 init(completionHandler: VNRequestCompletionHandler? = nil)
 ```
 
+```objc
+- (instancetype) initWithCompletionHandler:(VNRequestCompletionHandler) completionHandler;
+```
+
 ## Parameters
 
 - `completionHandler`: The callback the system invokes when it completes the request.
 
 ## See Also
 
-- [init()](vntrackopticalflowrequest/init.md)
+### Creating an Optical Flow
+- [init()](./init%28%29.md)
   Creates a new request that tracks the optical from one image to another.
 
 

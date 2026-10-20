@@ -1,7 +1,8 @@
 # snow
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Softly falling particles that incorporate motion from a noise pattern
 

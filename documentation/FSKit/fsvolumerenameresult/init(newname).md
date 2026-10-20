@@ -1,7 +1,8 @@
 # init(newName:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a result for a volume-renaming operation.
 
@@ -14,6 +15,10 @@ Creates a result for a volume-renaming operation.
 init?(newName: FSFileName)
 ```
 
+```objc
+- (instancetype) initWithNewName:(FSFileName *) newName;
+```
+
 #### Return Value
 
 A populated result instance, or `nil` if validation fails.
@@ -24,7 +29,8 @@ A populated result instance, or `nil` if validation fails.
 
 ## See Also
 
-- [class FSFileName](fsfilename.md)
+### Creating a volume-rename result
+- [class FSFileName](../fsfilename.md)
   The name of a file, expressed as a data buffer.
 
 

@@ -1,7 +1,8 @@
 # leave()
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Leave the current multiplayer game
 
@@ -16,11 +17,12 @@ func leave()
 
 ## See Also
 
-- [func start()](tabletopnetworksession/start.md)
+### Joining multiplayer games
+- [func start()](./start%28%29.md)
   Start a new multiplayer game, promoting the local state of the table to all connected peers
-- [func join()](tabletopnetworksession/join.md)
+- [func join()](./join%28%29.md)
   Join an existing game started between the connected peers
-- [func terminate()](tabletopnetworksession/terminate.md)
+- [func terminate()](./terminate%28%29.md)
 
 
 ---

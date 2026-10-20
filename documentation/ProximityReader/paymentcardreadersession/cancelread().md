@@ -1,7 +1,8 @@
 # cancelRead()
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismiss the sheet that prompts someone to present their card for reading.
 

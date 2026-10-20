@@ -1,7 +1,8 @@
 # CNFetchRequest
 
 **Framework**: Contacts  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for contact fetch requests.
 
@@ -19,32 +20,37 @@ The base class for contact fetch requests.
 class CNFetchRequest
 ```
 
+```objc
+@interface CNFetchRequest : NSObject
+```
+
 #### Overview
 
-To fetch contacts, use [`CNContactFetchRequest`](cncontactfetchrequest.md).
+To fetch contacts, use [`CNContactFetchRequest`](./cncontactfetchrequest.md).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [CNChangeHistoryFetchRequest](cnchangehistoryfetchrequest.md)
-- [CNContactFetchRequest](cncontactfetchrequest.md)
+- [CNChangeHistoryFetchRequest](./cnchangehistoryfetchrequest.md)
+- [CNContactFetchRequest](./cncontactfetchrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CNContactFetchRequest](cncontactfetchrequest.md)
+### Fetch and save requests
+- [class CNContactFetchRequest](./cncontactfetchrequest.md)
   An object that defines the options to use when fetching contacts.
-- [class CNFetchResult](cnfetchresult.md)
+- [class CNFetchResult](./cnfetchresult.md)
   An object that represents the result of a change-history fetch request.
-- [class CNSaveRequest](cnsaverequest.md)
+- [class CNSaveRequest](./cnsaverequest.md)
   An object that collects the changes you want to save to the user’s contacts database.
 
 

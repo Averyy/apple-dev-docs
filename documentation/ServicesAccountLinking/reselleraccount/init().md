@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: ServicesAccountLinking  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.4+

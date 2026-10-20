@@ -1,7 +1,8 @@
 # Date.FormatStyle.Symbol.CyclicYear
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that specifies a format for a cyclic year in a date format style.
 
@@ -22,75 +23,76 @@ struct CyclicYear
 
 #### Overview
 
-Calendars such as the Chinese lunar calendar and Hindu calendars use 60-year cycles of year names. If the calendar doesn’t provide cyclic year-name data, or if the year value to format is out of the range of years for which the system provides cyclic name data, then the formatting is numeric, as in [`Date.FormatStyle.Symbol.Year`](date/formatstyle/symbol/year.md).
+Calendars such as the Chinese lunar calendar and Hindu calendars use 60-year cycles of year names. If the calendar doesn’t provide cyclic year-name data, or if the year value to format is out of the range of years for which the system provides cyclic name data, then the formatting is numeric, as in [`Date.FormatStyle.Symbol.Year`](./year.md).
 
-The [`Date.FormatStyle.Symbol.CyclicYear`](date/formatstyle/symbol/cyclicyear.md) type includes static factory variables that create custom [`Date.FormatStyle.Symbol.CyclicYear`](date/formatstyle/symbol/cyclicyear.md) objects:
+The [`Date.FormatStyle.Symbol.CyclicYear`](./cyclicyear.md) type includes static factory variables that create custom [`Date.FormatStyle.Symbol.CyclicYear`](./cyclicyear.md) objects:
 
 | Factory variable | Description |
 | --- | --- |
-| [`abbreviated`](date/formatstyle/symbol/cyclicyear/abbreviated.md) | A shortened representation of the cyclic year appropriate for space-constrained applications. |
-| [`narrow`](date/formatstyle/symbol/cyclicyear/narrow.md) | The shortest representation of the cyclic year. |
-| [`wide`](date/formatstyle/symbol/cyclicyear/wide.md) | The full representation of the cyclic year. |
+| [`abbreviated`](./cyclicyear/abbreviated.md) | A shortened representation of the cyclic year appropriate for space-constrained applications. |
+| [`narrow`](./cyclicyear/narrow.md) | The shortest representation of the cyclic year. |
+| [`wide`](./cyclicyear/wide.md) | The full representation of the cyclic year. |
 
-If no format is specified as a parameter, the [`abbreviated`](date/formatstyle/symbol/cyclicyear/abbreviated.md) static variable is the default format.
+If no format is specified as a parameter, the [`abbreviated`](./cyclicyear/abbreviated.md) static variable is the default format.
 
-For more information about formatting dates, see [`Date.FormatStyle`](date/formatstyle.md).
+For more information about formatting dates, see [`Date.FormatStyle`](../../formatstyle.md).
 
 ## Topics
 
 ### Modifying a Cyclic Year
-- [static var abbreviated: Date.FormatStyle.Symbol.CyclicYear](date/formatstyle/symbol/cyclicyear/abbreviated.md)
+- [static var abbreviated: Date.FormatStyle.Symbol.CyclicYear](./cyclicyear/abbreviated.md)
   Custom cyclic year format style that portrays a shortened cyclic year.
-- [static var narrow: Date.FormatStyle.Symbol.CyclicYear](date/formatstyle/symbol/cyclicyear/narrow.md)
+- [static var narrow: Date.FormatStyle.Symbol.CyclicYear](./cyclicyear/narrow.md)
   Custom cyclic year format style that portrays the shortest representation of a cyclic year.
-- [static var wide: Date.FormatStyle.Symbol.CyclicYear](date/formatstyle/symbol/cyclicyear/wide.md)
+- [static var wide: Date.FormatStyle.Symbol.CyclicYear](./cyclicyear/wide.md)
   Custom cyclic year format style that portrays a complete representation of a cyclic year.
 ### Comparing Cyclic Years
-- [static func == (Date, Date) -> Bool](date/==(_:_:).md)
+- [static func == (Date, Date) -> Bool](../../eqeq%28_,_%29.md)
   Returns true if the two `Date` values represent the same point in time.
 ### Type Properties
-- [static let omitted: Date.FormatStyle.Symbol.CyclicYear](date/formatstyle/symbol/cyclicyear/omitted.md)
+- [static let omitted: Date.FormatStyle.Symbol.CyclicYear](./cyclicyear/omitted.md)
   The option for not including the symbol in the formatted output.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Date.FormatStyle.Symbol.Day](date/formatstyle/symbol/day.md)
+### Modifying Date Style Format Symbols
+- [Date.FormatStyle.Symbol.Day](./day.md)
   A type that specifies the format for a day in a date format style.
-- [Date.FormatStyle.Symbol.DayOfYear](date/formatstyle/symbol/dayofyear.md)
+- [Date.FormatStyle.Symbol.DayOfYear](./dayofyear.md)
   A type that specifies the format for the day of the year in a date format style.
-- [Date.FormatStyle.Symbol.DayPeriod](date/formatstyle/symbol/dayperiod.md)
+- [Date.FormatStyle.Symbol.DayPeriod](./dayperiod.md)
   A type that specifies a format for the time period in a date format style.
-- [Date.FormatStyle.Symbol.Era](date/formatstyle/symbol/era.md)
+- [Date.FormatStyle.Symbol.Era](./era.md)
   A type that specifies a format for the era in a date format style.
-- [Date.FormatStyle.Symbol.Hour](date/formatstyle/symbol/hour.md)
+- [Date.FormatStyle.Symbol.Hour](./hour.md)
   A type that specifies a format for the hour in a date format style.
-- [Date.FormatStyle.Symbol.Minute](date/formatstyle/symbol/minute.md)
+- [Date.FormatStyle.Symbol.Minute](./minute.md)
   A type that specifies the format for the minutes in a date format style.
-- [Date.FormatStyle.Symbol.Month](date/formatstyle/symbol/month.md)
+- [Date.FormatStyle.Symbol.Month](./month.md)
   A type that specifies a format for the month in a date format style.
-- [Date.FormatStyle.Symbol.Quarter](date/formatstyle/symbol/quarter.md)
+- [Date.FormatStyle.Symbol.Quarter](./quarter.md)
   A type that specifies the format for the quarter in a date format style.
-- [Date.FormatStyle.Symbol.Second](date/formatstyle/symbol/second.md)
+- [Date.FormatStyle.Symbol.Second](./second.md)
   A type that specifies the format for the seconds in a date format style.
-- [Date.FormatStyle.Symbol.SecondFraction](date/formatstyle/symbol/secondfraction.md)
+- [Date.FormatStyle.Symbol.SecondFraction](./secondfraction.md)
   A type that specifies the format for the second fraction in a date format style.
-- [Date.FormatStyle.Symbol.StandaloneMonth](date/formatstyle/symbol/standalonemonth.md)
+- [Date.FormatStyle.Symbol.StandaloneMonth](./standalonemonth.md)
   A type that specifies the format for a standalone month.
-- [Date.FormatStyle.Symbol.StandaloneQuarter](date/formatstyle/symbol/standalonequarter.md)
+- [Date.FormatStyle.Symbol.StandaloneQuarter](./standalonequarter.md)
   A type that specifies the format for a standalone quarter.
-- [Date.FormatStyle.Symbol.StandaloneWeekday](date/formatstyle/symbol/standaloneweekday.md)
+- [Date.FormatStyle.Symbol.StandaloneWeekday](./standaloneweekday.md)
   A type that specifies the format for a standalone weekday.
-- [Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone.md)
+- [Date.FormatStyle.Symbol.TimeZone](./timezone.md)
   A type that specifies a format for the time zone in a date format style.
-- [Date.FormatStyle.Symbol.VerbatimHour](date/formatstyle/symbol/verbatimhour.md)
+- [Date.FormatStyle.Symbol.VerbatimHour](./verbatimhour.md)
   A type that specifies a format for the hour in a date format style.
 
 

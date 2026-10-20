@@ -1,7 +1,8 @@
 # explanation
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The model’s explanation for why it refused to generate a response.
 
@@ -22,7 +23,8 @@ nonisolated
 
 ## See Also
 
-- [var explanationStream: LanguageModelSession.ResponseStream<String>](languagemodelerror/refusal/explanationstream.md)
+### Getting a refusal explanation
+- [var explanationStream: LanguageModelSession.ResponseStream<String>](./explanationstream.md)
   The model’s explanation for why it refused to generate a response, delivered as it streams.
 
 

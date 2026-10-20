@@ -1,7 +1,8 @@
 # deviceCanBeDefaultInputDevice
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property key for a Boolean value that indicates whether the device can be a default input device.
 
@@ -15,21 +16,26 @@ A property key for a Boolean value that indicates whether the device can be a de
 static let deviceCanBeDefaultInputDevice: CMIOExtensionProperty
 ```
 
+```c
+extern CMIOExtensionProperty const CMIOExtensionPropertyDeviceCanBeDefaultInputDevice;
+```
+
 #### Discussion
 
 The property state for this property is a number that represents a Boolean value.
 
 ## See Also
 
-- [static let deviceModel: CMIOExtensionProperty](cmioextensionproperty/devicemodel.md)
+### Device Properties
+- [static let deviceModel: CMIOExtensionProperty](./devicemodel.md)
   A property key for the device model.
-- [static let deviceIsSuspended: CMIOExtensionProperty](cmioextensionproperty/deviceissuspended.md)
+- [static let deviceIsSuspended: CMIOExtensionProperty](./deviceissuspended.md)
   A property key for a Boolean value that indicates whether the device is in a suspended state.
-- [static let deviceTransportType: CMIOExtensionProperty](cmioextensionproperty/devicetransporttype.md)
+- [static let deviceTransportType: CMIOExtensionProperty](./devicetransporttype.md)
   A property key for the device transport type.
-- [static let deviceLinkedCoreAudioDeviceUID: CMIOExtensionProperty](cmioextensionproperty/devicelinkedcoreaudiodeviceuid.md)
+- [static let deviceLinkedCoreAudioDeviceUID: CMIOExtensionProperty](./devicelinkedcoreaudiodeviceuid.md)
   A property key for the UID of the linked Core Audio device.
-- [static let deviceCanBeDefaultOutputDevice: CMIOExtensionProperty](cmioextensionproperty/devicecanbedefaultoutputdevice.md)
+- [static let deviceCanBeDefaultOutputDevice: CMIOExtensionProperty](./devicecanbedefaultoutputdevice.md)
   A property key for a Boolean value that indicates whether the device can be a default output device.
 
 

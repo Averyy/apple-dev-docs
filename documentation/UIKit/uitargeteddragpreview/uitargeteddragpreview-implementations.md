@@ -1,13 +1,14 @@
 # UITargetedDragPreview Implementations
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [convenience init(forURL: URL, target: UIDragPreviewTarget)](uitargeteddragpreview/init(forurl:target:).md)
+- [convenience init(forURL: URL, target: UIDragPreviewTarget)](./init%28forurl,target%29.md)
   Initializes a new targeted drag item preview with a URL and a drag item preview.
-- [convenience init(forURL: URL, title: String?, target: UIDragPreviewTarget)](uitargeteddragpreview/init(forurl:title:target:).md)
+- [convenience init(forURL: URL, title: String?, target: UIDragPreviewTarget)](./init%28forurl,title,target%29.md)
   Initializes a new targeted drag item preview with a URL, a title, and a drag item preview.
 
 

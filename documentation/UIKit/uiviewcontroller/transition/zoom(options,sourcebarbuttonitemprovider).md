@@ -1,14 +1,15 @@
 # zoom(options:sourceBarButtonItemProvider:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- tvOS ?+
-- visionOS ?+
+- tvOS
+- visionOS
 
 ## Declaration
 

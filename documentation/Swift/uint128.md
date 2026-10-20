@@ -1,7 +1,8 @@
 # UInt128
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A 128-bit unsigned integer value type.
 
@@ -24,64 +25,65 @@ struct UInt128
 ## Topics
 
 ### Operators
-- [static func != (UInt128, UInt128) -> Bool](uint128/!=(_:_:).md)
+- [static func != (UInt128, UInt128) -> Bool](./uint128/noteq%28_,_%29.md)
 ### Initializers
-- [init(bitPattern: Int128)](uint128/init(bitpattern:).md)
+- [init(bitPattern: Int128)](./uint128/init%28bitpattern%29.md)
   Creates a new instance with the same memory representation as the given value.
 ### Default Implementations
-- [AdditiveArithmetic Implementations](uint128/additivearithmetic-implementations.md)
-- [AtomicRepresentable Implementations](uint128/atomicrepresentable-implementations.md)
-- [BinaryInteger Implementations](uint128/binaryinteger-implementations.md)
-- [Comparable Implementations](uint128/comparable-implementations.md)
-- [CustomReflectable Implementations](uint128/customreflectable-implementations.md)
-- [Decodable Implementations](uint128/decodable-implementations.md)
-- [Encodable Implementations](uint128/encodable-implementations.md)
-- [Equatable Implementations](uint128/equatable-implementations.md)
-- [ExpressibleByIntegerLiteral Implementations](uint128/expressiblebyintegerliteral-implementations.md)
-- [FixedWidthInteger Implementations](uint128/fixedwidthinteger-implementations.md)
-- [Hashable Implementations](uint128/hashable-implementations.md)
-- [Numeric Implementations](uint128/numeric-implementations.md)
-- [Strideable Implementations](uint128/strideable-implementations.md)
-- [UnsignedInteger Implementations](uint128/unsignedinteger-implementations.md)
+- [AdditiveArithmetic Implementations](./uint128/additivearithmetic-implementations.md)
+- [AtomicRepresentable Implementations](./uint128/atomicrepresentable-implementations.md)
+- [BinaryInteger Implementations](./uint128/binaryinteger-implementations.md)
+- [Comparable Implementations](./uint128/comparable-implementations.md)
+- [CustomReflectable Implementations](./uint128/customreflectable-implementations.md)
+- [Decodable Implementations](./uint128/decodable-implementations.md)
+- [Encodable Implementations](./uint128/encodable-implementations.md)
+- [Equatable Implementations](./uint128/equatable-implementations.md)
+- [ExpressibleByIntegerLiteral Implementations](./uint128/expressiblebyintegerliteral-implementations.md)
+- [FixedWidthInteger Implementations](./uint128/fixedwidthinteger-implementations.md)
+- [Hashable Implementations](./uint128/hashable-implementations.md)
+- [Numeric Implementations](./uint128/numeric-implementations.md)
+- [Strideable Implementations](./uint128/strideable-implementations.md)
+- [UnsignedInteger Implementations](./uint128/unsignedinteger-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AdditiveArithmetic](additivearithmetic.md)
-- [AtomicRepresentable](../synchronization/atomicrepresentable.md)
-- [BinaryInteger](binaryinteger.md)
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Comparable](comparable.md)
-- [ConvertibleFromBytes](convertiblefrombytes.md)
-- [ConvertibleToBytes](convertibletobytes.md)
-- [Copyable](copyable.md)
-- [CustomReflectable](customreflectable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Decodable](decodable.md)
-- [Encodable](encodable.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [ExpressibleByIntegerLiteral](expressiblebyintegerliteral.md)
-- [FixedWidthInteger](fixedwidthinteger.md)
-- [Hashable](hashable.md)
-- [LosslessStringConvertible](losslessstringconvertible.md)
-- [Numeric](numeric.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Strideable](strideable.md)
-- [UnsignedInteger](unsignedinteger.md)
+- [AdditiveArithmetic](./additivearithmetic.md)
+- [AtomicRepresentable](../Synchronization/atomicrepresentable.md)
+- [BinaryInteger](./binaryinteger.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [Comparable](./comparable.md)
+- [ConvertibleFromBytes](./convertiblefrombytes.md)
+- [ConvertibleToBytes](./convertibletobytes.md)
+- [Copyable](./copyable.md)
+- [CustomReflectable](./customreflectable.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [Decodable](./decodable.md)
+- [Encodable](./encodable.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [ExpressibleByIntegerLiteral](./expressiblebyintegerliteral.md)
+- [FixedWidthInteger](./fixedwidthinteger.md)
+- [Hashable](./hashable.md)
+- [LosslessStringConvertible](./losslessstringconvertible.md)
+- [Numeric](./numeric.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
+- [Strideable](./strideable.md)
+- [UnsignedInteger](./unsignedinteger.md)
 
 ## See Also
 
-- [struct UInt](uint.md)
+### Unsigned Integers
+- [struct UInt](./uint.md)
   An unsigned integer value type.
-- [struct UInt8](uint8.md)
+- [struct UInt8](./uint8.md)
   An 8-bit unsigned integer value type.
-- [struct UInt16](uint16.md)
+- [struct UInt16](./uint16.md)
   A 16-bit unsigned integer value type.
-- [struct UInt32](uint32.md)
+- [struct UInt32](./uint32.md)
   A 32-bit unsigned integer value type.
-- [struct UInt64](uint64.md)
+- [struct UInt64](./uint64.md)
   A 64-bit unsigned integer value type.
 
 

@@ -1,7 +1,8 @@
 # customRotors
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of supported rotors.
 
@@ -10,7 +11,7 @@ An array of supported rotors.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

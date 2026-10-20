@@ -1,7 +1,8 @@
 # errSecCSStaticCodeNotFound
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Cannot find code object on disk.
 
@@ -13,6 +14,10 @@ Cannot find code object on disk.
 
 ```swift
 var errSecCSStaticCodeNotFound: OSStatus { get }
+```
+
+```c
+errSecCSStaticCodeNotFound
 ```
 
 #### Discussion

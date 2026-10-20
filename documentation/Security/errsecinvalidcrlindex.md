@@ -1,7 +1,8 @@
 # errSecInvalidCRLIndex
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate revocation list index is not valid.
 
@@ -18,6 +19,10 @@ The certificate revocation list index is not valid.
 
 ```swift
 var errSecInvalidCRLIndex: OSStatus { get }
+```
+
+```c
+errSecInvalidCRLIndex
 ```
 
 

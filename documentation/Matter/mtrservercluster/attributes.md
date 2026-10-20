@@ -1,7 +1,8 @@
 # attributes
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 var attributes: [MTRServerAttribute] { get }
+```
+
+```objc
+@property (atomic, copy, readonly) NSArray<MTRServerAttribute *> * attributes;
 ```
 
 

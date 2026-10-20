@@ -1,7 +1,8 @@
 # supportExportToFiles
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the sheet offers the option to export the data to files.
 
@@ -13,6 +14,10 @@ A Boolean value that determines whether the sheet offers the option to export th
 
 ```swift
 var supportExportToFiles: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL supportExportToFiles;
 ```
 
 

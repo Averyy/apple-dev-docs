@@ -1,7 +1,8 @@
 # isShowing(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A Boolean value that indicates whether the split view interface is showing the specified column.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether the split view interface is showing the s
 func isShowing(_ column: UISplitViewController.Column) -> Bool
 ```
 
+```objc
+- (BOOL) isShowingColumn:(UISplitViewControllerColumn) column;
+```
+
 ## See Also
 
-- [func show(UISplitViewController.Column)](uisplitviewcontroller/show(_:).md)
+### Displaying the child view controllers
+- [func show(UISplitViewController.Column)](./show%28_%29.md)
   Presents the view controller in the specified column of the split view interface.
-- [func hide(UISplitViewController.Column)](uisplitviewcontroller/hide(_:).md)
+- [func hide(UISplitViewController.Column)](./hide%28_%29.md)
   Dismisses the view controller in the specified column of the split view interface.
-- [func show(UIViewController, sender: Any?)](uisplitviewcontroller/show(_:sender:).md)
+- [func show(UIViewController, sender: Any?)](./show%28_,sender%29.md)
   Presents the specified view controller as the primary view controller in the split view interface.
-- [func showDetailViewController(UIViewController, sender: Any?)](uisplitviewcontroller/showdetailviewcontroller(_:sender:).md)
+- [func showDetailViewController(UIViewController, sender: Any?)](./showdetailviewcontroller%28_,sender%29.md)
   Presents the specified view controller as the secondary view controller of the split view interface.
 
 

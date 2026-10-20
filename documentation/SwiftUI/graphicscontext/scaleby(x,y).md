@@ -1,7 +1,8 @@
 # scaleBy(x:y:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scales subsequent drawing operations by an amount in each dimension.
 
@@ -22,7 +23,7 @@ mutating func scaleBy(x: CGFloat, y: CGFloat)
 
 #### Discussion
 
-Calling this method is equivalent to updating the context’s [`transform`](graphicscontext/transform.md) directly using the given scale factors:
+Calling this method is equivalent to updating the context’s [`transform`](./transform.md) directly using the given scale factors:
 
 ```swift
 transform = transform.scaledBy(x: x, y: y)
@@ -35,13 +36,14 @@ transform = transform.scaledBy(x: x, y: y)
 
 ## See Also
 
-- [func rotate(by: Angle)](graphicscontext/rotate(by:).md)
+### Applying transforms
+- [func rotate(by: Angle)](./rotate%28by%29.md)
   Rotates subsequent drawing operations by an angle.
-- [func translateBy(x: CGFloat, y: CGFloat)](graphicscontext/translateby(x:y:).md)
+- [func translateBy(x: CGFloat, y: CGFloat)](./translateby%28x,y%29.md)
   Moves subsequent drawing operations by an amount in each dimension.
-- [func concatenate(CGAffineTransform)](graphicscontext/concatenate(_:).md)
+- [func concatenate(CGAffineTransform)](./concatenate%28_%29.md)
   Appends the given transform to the context’s existing transform.
-- [var transform: CGAffineTransform](graphicscontext/transform.md)
+- [var transform: CGAffineTransform](./transform.md)
   The current transform matrix, defining user space coordinates.
 
 

@@ -1,6 +1,7 @@
 # wrapMode
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 An option that determines the flow of the text.
 
@@ -24,21 +25,22 @@ token wrapMode = "flowing" (
 
 ## See Also
 
-- [content](content.md)
+### Properties
+- [content](./content.md)
   The characters that the text displays.
-- [font](font.md)
+- [font](./font.md)
   An array of font names.
-- [pointSize](pointsize.md)
+- [pointSize](./pointsize.md)
   The size of the text’s font.
-- [width](width.md)
+- [width](./width.md)
   The width of the text’s bounding box.
-- [height](height.md)
+- [height](./height.md)
   The height of the text’s bounding box.
-- [depth](depth.md)
+- [depth](./depth.md)
   A value that defines the depth, in scene units, of the text’s extrusion.
-- [horizontalAlignment](horizontalalignment.md)
+- [horizontalAlignment](./horizontalalignment.md)
   An option that controls the text’s horizontal placement within its bounding box.
-- [verticalAlignment](verticalalignment.md)
+- [verticalAlignment](./verticalalignment.md)
   An option that controls the text’s vertical placement within its bounding rectangle.
 
 

@@ -1,7 +1,8 @@
 # requestDeletion(in:)
 
 **Framework**: MarketplaceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prompts the person to delete the app.
 

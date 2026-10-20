@@ -1,7 +1,8 @@
 # SecRandomRef
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An abstract Core Foundation-type object containing information about a random number generator.
 
@@ -18,6 +19,10 @@ An abstract Core Foundation-type object containing information about a random nu
 
 ```swift
 typealias SecRandomRef = OpaquePointer
+```
+
+```c
+typedef const struct __SecRandom * SecRandomRef;
 ```
 
 

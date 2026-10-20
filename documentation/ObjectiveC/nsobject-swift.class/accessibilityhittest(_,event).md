@@ -1,7 +1,8 @@
 # accessibilityHitTest(_:event:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 ```swift
 @MainActor
 func accessibilityHitTest(_ point: CGPoint, event: UIEvent?) -> Any?
+```
+
+```objc
+- (id) accessibilityHitTest:(CGPoint) point withEvent:(UIEvent *) event;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the delegate if an element is currently focused, according to the internal state of the interaction’s view.
@@ -10,7 +11,7 @@ Asks the delegate if an element is currently focused, according to the internal 
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ func indirectScribbleInteraction(_ interaction: any UIInteraction, isElementFocu
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the element is the one currently focused.
+Returns [`true`](../../Swift/true.md) if the element is the one currently focused.
 
 ## Parameters
 
@@ -29,9 +30,10 @@ Returns [`true`](https://developer.apple.com/documentation/swift/true) if the el
 
 ## See Also
 
-- [func indirectScribbleInteraction(any UIInteraction, focusElementIfNeeded: Self.ElementIdentifier, referencePoint: CGPoint, completion: ((any UIResponder & UITextInput)?) -> Void)](uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:focuselementifneeded:referencepoint:completion:).md)
+### Managing Focus
+- [func indirectScribbleInteraction(any UIInteraction, focusElementIfNeeded: Self.ElementIdentifier, referencePoint: CGPoint, completion: ((any UIResponder & UITextInput)?) -> Void)](./indirectscribbleinteraction%28_,focuselementifneeded,referencepoint,completion%29.md)
   Asks the delegate to focus an element to handle text edits.
-- [func indirectScribbleInteraction(any UIInteraction, shouldDelayFocusForElement: Self.ElementIdentifier) -> Bool](uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:shoulddelayfocusforelement:).md)
+- [func indirectScribbleInteraction(any UIInteraction, shouldDelayFocusForElement: Self.ElementIdentifier) -> Bool](./indirectscribbleinteraction%28_,shoulddelayfocusforelement%29.md)
   Allow the delegate to delay focusing an element.
 
 

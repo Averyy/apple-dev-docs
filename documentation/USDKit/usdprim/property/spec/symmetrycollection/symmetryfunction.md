@@ -1,7 +1,8 @@
 # symmetryFunction
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The symmetry function token, or `nil` if not authored.
 

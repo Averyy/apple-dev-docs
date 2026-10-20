@@ -1,7 +1,8 @@
 # GameCenterAchievementVersionV2
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a Game Center achievement version v2 resource.
 
@@ -10,7 +11,7 @@ The data structure that represents a Game Center achievement version v2 resource
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementVersionV2
 ```
 
@@ -25,8 +26,8 @@ object GameCenterAchievementVersionV2
 ## Topics
 
 ### Dictionaries
-- [object GameCenterAchievementVersionV2.Attributes](gamecenterachievementversionv2/attributes-data.dictionary.md)
-- [object GameCenterAchievementVersionV2.Relationships](gamecenterachievementversionv2/relationships-data.dictionary.md)
+- [object GameCenterAchievementVersionV2.Attributes](./gamecenterachievementversionv2/attributes-data.dictionary.md)
+- [object GameCenterAchievementVersionV2.Relationships](./gamecenterachievementversionv2/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
 ## Properties
@@ -35,19 +36,20 @@ object GameCenterAchievementVersionV2
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (GameCenterAchievementVersionV2.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterAchievementVersions`
 
 ## See Also
 
-- [object GameCenterAchievementVersionV2CreateRequest](gamecenterachievementversionv2createrequest.md)
+### Objects
+- [object GameCenterAchievementVersionV2CreateRequest](./gamecenterachievementversionv2createrequest.md)
   The request body you use to create a Game Center achievement version v2.
-- [object GameCenterAchievementVersionV2Response](gamecenterachievementversionv2response.md)
+- [object GameCenterAchievementVersionV2Response](./gamecenterachievementversionv2response.md)
   A response that contains a single Game Center achievement version v2 resource.
-- [object GameCenterAchievementVersionsV2Response](gamecenterachievementversionsv2response.md)
+- [object GameCenterAchievementVersionsV2Response](./gamecenterachievementversionsv2response.md)
   A response that contains a single Game Center achievement version v2 resource.
-- [object GameCenterAchievementVersionV2InlineCreate](gamecenterachievementversionv2inlinecreate.md)
+- [object GameCenterAchievementVersionV2InlineCreate](./gamecenterachievementversionv2inlinecreate.md)
   The data structure that represents a Game Center achievement version v2 inline create resource.
-- [object GameCenterAchievementVersionV2LocalizationsLinkagesResponse](gamecenterachievementversionv2localizationslinkagesresponse.md)
+- [object GameCenterAchievementVersionV2LocalizationsLinkagesResponse](./gamecenterachievementversionv2localizationslinkagesresponse.md)
   A response that contains a list of Game Center achievement version v2 localization linkage resources.
 
 

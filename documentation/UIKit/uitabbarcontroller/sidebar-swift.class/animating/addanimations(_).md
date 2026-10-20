@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -14,6 +15,10 @@
 
 ```swift
 func addAnimations(_ animations: @escaping () -> Void)
+```
+
+```objc
+- (void) addAnimations:(void (^)()) animations;
 ```
 
 

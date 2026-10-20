@@ -1,7 +1,8 @@
 # deviceBrowserView(_:didEncounterError:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when the device browser encounters an error.
 
@@ -12,6 +13,10 @@ Invoked when the device browser encounters an error.
 
 ```swift
 optional func deviceBrowserView(_ deviceBrowserView: IKDeviceBrowserView!, didEncounterError error: (any Error)!)
+```
+
+```objc
+- (void) deviceBrowserView:(IKDeviceBrowserView *) deviceBrowserView didEncounterError:(NSError *) error;
 ```
 
 #### Discussion

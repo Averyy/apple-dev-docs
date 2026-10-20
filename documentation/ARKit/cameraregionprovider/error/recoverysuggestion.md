@@ -1,7 +1,8 @@
 # recoverySuggestion
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized message describing how one might recover from the failure.
 

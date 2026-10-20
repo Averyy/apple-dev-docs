@@ -1,7 +1,8 @@
 # source
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source of the error.
 

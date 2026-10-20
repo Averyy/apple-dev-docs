@@ -1,7 +1,8 @@
 # RemoveControl
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a user video control from the video clock device.
 
@@ -10,7 +11,7 @@ Removes a user video control from the video clock device.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t RemoveControl(IOUserVideoControl *in_control);
 ```
 
@@ -28,9 +29,10 @@ The control’s reference count will be decremented if it was successfully remov
 
 ## See Also
 
-- [AddControl](iouservideoclockdevice/addcontrol.md)
+### Managing video controls
+- [AddControl](./addcontrol.md)
   Adds a video control to the video clock device.
-- [IOUserVideoControl](iouservideocontrol.md)
+- [IOUserVideoControl](../iouservideocontrol.md)
   A base class for control objects.
 
 

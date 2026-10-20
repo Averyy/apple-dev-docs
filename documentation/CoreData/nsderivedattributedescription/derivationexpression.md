@@ -1,7 +1,8 @@
 # derivationExpression
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An expression for generating derived data.
 
@@ -20,13 +21,17 @@ An expression for generating derived data.
 var derivationExpression: NSExpression? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSExpression * derivationExpression;
+```
+
 #### Discussion
 
 When using derived attributes in an SQL store, this expression should be
 
 - a keypath expression (including @operation components)
 
-a function expression using one of the predefined functions defined in [`NSExpression`](https://developer.apple.com/documentation/foundation/nsexpression)
+a function expression using one of the predefined functions defined in [`NSExpression`](../../Foundation/nsexpression.md)
 
 Any keypaths used in the expression must be accessible from the entity on which the derived attribute is specified.
 

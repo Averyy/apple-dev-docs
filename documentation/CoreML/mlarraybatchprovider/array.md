@@ -1,7 +1,8 @@
 # array
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of feature providers.
 
@@ -18,6 +19,10 @@ The array of feature providers.
 
 ```swift
 var array: [any MLFeatureProvider] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<id<MLFeatureProvider>> * array;
 ```
 
 

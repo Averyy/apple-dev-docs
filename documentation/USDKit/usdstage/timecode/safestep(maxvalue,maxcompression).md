@@ -1,7 +1,8 @@
 # safeStep(maxValue:maxCompression:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a time delta small enough to represent a jump discontinuity, but large enough to survive scaling and shifting without collapsing to zero.
 

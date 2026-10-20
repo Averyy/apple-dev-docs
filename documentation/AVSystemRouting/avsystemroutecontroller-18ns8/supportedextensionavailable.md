@@ -1,7 +1,8 @@
 # supportedExtensionAvailable
 
 **Framework**: AVSystemRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether a supported system routing extension is available.
 

@@ -1,7 +1,8 @@
 # magicCookie
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,10 +21,11 @@ static let magicCookie: CMFormatDescription.EqualityMask
 
 ## See Also
 
-- [static let all: CMFormatDescription.EqualityMask](cmformatdescription/equalitymask/all.md)
-- [static let channelLayout: CMFormatDescription.EqualityMask](cmformatdescription/equalitymask/channellayout.md)
-- [static let extensions: CMFormatDescription.EqualityMask](cmformatdescription/equalitymask/extensions.md)
-- [static let streamBasicDescription: CMFormatDescription.EqualityMask](cmformatdescription/equalitymask/streambasicdescription.md)
+### Equality Masks
+- [static let all: CMFormatDescription.EqualityMask](./all.md)
+- [static let channelLayout: CMFormatDescription.EqualityMask](./channellayout.md)
+- [static let extensions: CMFormatDescription.EqualityMask](./extensions.md)
+- [static let streamBasicDescription: CMFormatDescription.EqualityMask](./streambasicdescription.md)
 
 
 ---

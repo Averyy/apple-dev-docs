@@ -1,7 +1,8 @@
 # rowLinearPVRTC
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A blit option that copies PVRTC data between a texture and a buffer.
 
@@ -19,12 +20,16 @@ A blit option that copies PVRTC data between a texture and a buffer.
 static var rowLinearPVRTC: MTLBlitOption { get }
 ```
 
+```c
+MTLBlitOptionRowLinearPVRTC
+```
+
 #### Discussion
 
 The PowerVR Texture Compression (PVRTC) format arranges blocks linearly in memory in row-major order, similar to other compressed texture formats. You can pass this option to some methods that copy data between a buffer and a texture, including the following:
 
-- [`copy(from:sourceOffset:sourceBytesPerRow:sourceBytesPerImage:sourceSize:to:destinationSlice:destinationLevel:destinationOrigin:options:)`](mtlblitcommandencoder/copy(from:sourceoffset:sourcebytesperrow:sourcebytesperimage:sourcesize:to:destinationslice:destinationlevel:destinationorigin:options:).md)
-- [`copy(from:sourceSlice:sourceLevel:sourceOrigin:sourceSize:to:destinationOffset:destinationBytesPerRow:destinationBytesPerImage:options:)`](mtlblitcommandencoder/copy(from:sourceslice:sourcelevel:sourceorigin:sourcesize:to:destinationoffset:destinationbytesperrow:destinationbytesperimage:options:).md)
+- [`copy(from:sourceOffset:sourceBytesPerRow:sourceBytesPerImage:sourceSize:to:destinationSlice:destinationLevel:destinationOrigin:options:)`](../mtlblitcommandencoder/copy%28from,sourceoffset,sourcebytesperrow,sourcebytesperimage,sourcesize,to,destinationslice,destinationlevel,destinationorigin,options%29.md)
+- [`copy(from:sourceSlice:sourceLevel:sourceOrigin:sourceSize:to:destinationOffset:destinationBytesPerRow:destinationBytesPerImage:options:)`](../mtlblitcommandencoder/copy%28from,sourceslice,sourcelevel,sourceorigin,sourcesize,to,destinationoffset,destinationbytesperrow,destinationbytesperimage,options%29.md)
 
 
 ---

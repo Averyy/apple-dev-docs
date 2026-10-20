@@ -1,14 +1,15 @@
 # task_inspect_deallocate_mig
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 void task_inspect_deallocate_mig(task_inspect_t task_inspect);
 ```
 

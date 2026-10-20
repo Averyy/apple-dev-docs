@@ -1,7 +1,8 @@
 # UILaunchScreenDefinitions
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 A collection of launch screen configuration dictionaries.
 
@@ -9,32 +10,33 @@ A collection of launch screen configuration dictionaries.
 - iOS 14.0+
 - iPadOS 14.0+
 
+## Details
 
-
-**Type**: dictionary 
+- **Name**: `UILaunchScreenDefinitions` (Launch Screen Definitions)
+- **Type**: array of dictionary 
 
 #### Discussion
 
-Each dictionary in the array resembles the one you might define for the [`UILaunchScreen`](information-property-list/uilaunchscreen.md) key, with the addition of a [`UILaunchScreenIdentifier`](information-property-list/uilaunchscreens/uilaunchscreendefinitions/uilaunchscreenidentifier.md) key that provides a unique identifier for the dictionary. You use that identifier when associating to the dictionary with a URL scheme in the [`UIURLToLaunchScreenAssociations`](information-property-list/uilaunchscreens/uiurltolaunchscreenassociations.md) array, or to indicate it as the default launch screen with the [`UIDefaultLaunchScreen`](information-property-list/uilaunchscreens/uidefaultlaunchscreen.md) key.
+Each dictionary in the array resembles the one you might define for the [`UILaunchScreen`](../uilaunchscreen.md) key, with the addition of a [`UILaunchScreenIdentifier`](./uilaunchscreendefinitions/uilaunchscreenidentifier.md) key that provides a unique identifier for the dictionary. You use that identifier when associating to the dictionary with a URL scheme in the [`UIURLToLaunchScreenAssociations`](./uiurltolaunchscreenassociations.md) array, or to indicate it as the default launch screen with the [`UIDefaultLaunchScreen`](./uidefaultlaunchscreen.md) key.
 
 ## Topics
 
 ### Identity
-- [UILaunchScreenIdentifier](information-property-list/uilaunchscreens/uilaunchscreendefinitions/uilaunchscreenidentifier.md)
+- [UILaunchScreenIdentifier](./uilaunchscreendefinitions/uilaunchscreenidentifier.md)
   A unique name for the launch screen configuration.
 ### Main Interface
-- [UIColorName](information-property-list/uilaunchscreens/uilaunchscreendefinitions/uicolorname.md)
+- [UIColorName](./uilaunchscreendefinitions/uicolorname.md)
   The name of a color to use as the background color on the launch screen.
-- [UIImageName](information-property-list/uilaunchscreens/uilaunchscreendefinitions/uiimagename.md)
+- [UIImageName](./uilaunchscreendefinitions/uiimagename.md)
   The name of an image to display during app launch.
-- [UIImageRespectsSafeAreaInsets](information-property-list/uilaunchscreens/uilaunchscreendefinitions/uiimagerespectssafeareainsets.md)
+- [UIImageRespectsSafeAreaInsets](./uilaunchscreendefinitions/uiimagerespectssafeareainsets.md)
   A Boolean that specifies whether the launch image should respect the safe area insets.
 ### Border Elements
-- [UINavigationBar](information-property-list/uilaunchscreens/uilaunchscreendefinitions/uinavigationbar.md)
+- [UINavigationBar](./uilaunchscreendefinitions/uinavigationbar.md)
   Navigation bar visibility and configuration during launch.
-- [UITabBar](information-property-list/uilaunchscreens/uilaunchscreendefinitions/uitabbar.md)
+- [UITabBar](./uilaunchscreendefinitions/uitabbar.md)
   Tab bar visibility and configuration during launch.
-- [UIToolbar](information-property-list/uilaunchscreens/uilaunchscreendefinitions/uitoolbar.md)
+- [UIToolbar](./uilaunchscreendefinitions/uitoolbar.md)
   Toolbar visibility and configuration during launch.
 
 

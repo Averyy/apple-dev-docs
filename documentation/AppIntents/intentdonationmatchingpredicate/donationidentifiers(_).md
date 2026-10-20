@@ -1,7 +1,8 @@
 # donationIdentifiers(_:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a predicate that matches one or more previous donations.
 
@@ -26,7 +27,7 @@ A predicate that matches the specified donations.
 
 #### Discussion
 
-When you donate an app intent using the methods of [`IntentDonationManager`](intentdonationmanager.md), the method returns a unique identifier for that donation. Use this method to create a predicate that matches all of the donations you specified.
+When you donate an app intent using the methods of [`IntentDonationManager`](../intentdonationmanager.md), the method returns a unique identifier for that donation. Use this method to create a predicate that matches all of the donations you specified.
 
 ## Parameters
 

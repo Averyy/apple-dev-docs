@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the given element exists in the set.
 
@@ -28,7 +29,8 @@ func contains(_ element: MarkupOrderedSet.Element) -> Bool
 
 ## See Also
 
-- [func firstIndex(of: MarkupOrderedSet.Element) -> Int?](markuporderedset/firstindex(of:).md)
+### Finding elements
+- [func firstIndex(of: MarkupOrderedSet.Element) -> Int?](./firstindex%28of%29.md)
   Returns the index of the given element in the set, or `nil` if the element is not a member of the set.
 
 

@@ -1,7 +1,8 @@
 # perform(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a framework request on the handler’s image.
 
@@ -22,10 +23,11 @@ final func perform<T>(_ request: T) async throws -> T.Result where T : TargetedR
 
 ## See Also
 
-- [func perform<each T>(repeat each T) async throws -> (repeat (each T).Result)](targetedimagerequesthandler/perform(_:)-1i4di.md)
+### Performing the request
+- [func perform<each T>(repeat each T) async throws -> (repeat (each T).Result)](./perform%28_%29-1i4di.md)
   Performs one or more framework requests on the handler’s image.
 - [func performAll(some Collection<any TargetedRequest>) -> some AsyncSequence<VisionResult, Never>
-](targetedimagerequesthandler/performall(_:).md)
+](./performall%28_%29.md)
   Schedules a collection of framework requests to perform on the handler’s image.
 
 

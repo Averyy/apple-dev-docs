@@ -1,7 +1,8 @@
 # cameraDistance(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Switch levels based on distance from the camera.
 
@@ -25,7 +26,8 @@ Each threshold specifies the maximum camera distance for a level. The last thres
 
 ## See Also
 
-- [static func screenArea([Float]) -> LevelOfDetailComponent.SelectionStrategy](levelofdetailcomponent/selectionstrategy/screenarea(_:).md)
+### Creating a strategy
+- [static func screenArea([Float]) -> LevelOfDetailComponent.SelectionStrategy](./screenarea%28_%29.md)
   Switch levels based on projected screen area (0.0 = invisible, 1.0 = fills screen).
 
 

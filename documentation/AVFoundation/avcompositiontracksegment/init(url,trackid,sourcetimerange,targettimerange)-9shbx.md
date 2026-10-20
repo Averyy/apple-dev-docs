@@ -1,7 +1,8 @@
 # init(URL:trackID:sourceTimeRange:targetTimeRange:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 4.0+

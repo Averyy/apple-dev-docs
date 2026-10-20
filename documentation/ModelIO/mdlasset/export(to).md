@@ -1,7 +1,8 @@
 # export(to:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes asset data to a file at the specified URL and reports errors that occur during export.
 
@@ -19,9 +20,13 @@ Writes asset data to a file at the specified URL and reports errors that occur d
 func export(to URL: URL) throws
 ```
 
+```objc
+- (BOOL) exportAssetToURL:(NSURL *) URL error:(NSError **) error;
+```
+
 #### Discussion
 
-The [`MDLAsset`](mdlasset.md) class infers the data format to export in from the [`pathExtension`](https://developer.apple.com/documentation/foundation/nsurl/pathextension) property of the specified URL. To determine whether a format is supported for export, call the [`canExportFileExtension(_:)`](mdlasset/canexportfileextension(_:).md) method.
+The [`MDLAsset`](../mdlasset.md) class infers the data format to export in from the [`pathExtension`](../../Foundation/nsurl/pathextension.md) property of the specified URL. To determine whether a format is supported for export, call the [`canExportFileExtension(_:)`](./canexportfileextension%28_%29.md) method.
 
 ## Parameters
 
@@ -29,8 +34,9 @@ The [`MDLAsset`](mdlasset.md) class infers the data format to export in from the
 
 ## See Also
 
-- [class func canExportFileExtension(String) -> Bool](mdlasset/canexportfileextension(_:).md)
-  Returns a Boolean value that indicates whether the [`MDLAsset`](mdlasset.md) class can write asset data as a file with the specified format extension.
+### Exporting an Asset
+- [class func canExportFileExtension(String) -> Bool](./canexportfileextension%28_%29.md)
+  Returns a Boolean value that indicates whether the [`MDLAsset`](../mdlasset.md) class can write asset data as a file with the specified format extension.
 
 
 ---

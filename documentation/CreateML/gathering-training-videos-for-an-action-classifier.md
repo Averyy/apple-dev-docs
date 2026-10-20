@@ -1,6 +1,7 @@
 # Gathering Training Videos for an Action Classifier
 
-**Framework**: Create ML
+**Framework**: Create ML  
+**Role**: Article
 
 Collect quality example videos that effectively train action classifiers.
 
@@ -8,11 +9,11 @@ Collect quality example videos that effectively train action classifiers.
 
 Create a robust action classifier by collecting high-quality videos that clearly show a person performing each action you want the classifier to recognize. In addition, gather videos of unrelated actions the classifier might witness. Use these to create a *negative class* of irrelevant actions, so the classifier distinguishes between these two types.
 
-For general information about how to create an action classifier, see [`Creating an Action Classifier Model`](creating-an-action-classifier-model.md).
+For general information about how to create an action classifier, see [Creating an Action Classifier Model](./creating-an-action-classifier-model.md).
 
 ##### Collect Videos for Each Action
 
-Action classifiers learn from example videos of a human performing an action. Create ML uses the [`Vision`](https://developer.apple.com/documentation/vision) framework to locate key body parts, called *landmarks*, in each video frame. Action classifiers learn how to recognize a human body’s movements by tracking these landmarks frame by frame. Keep the landmarks clearly visible by applying the following guidelines as you record example videos, or when assessing videos from other sources.
+Action classifiers learn from example videos of a human performing an action. Create ML uses the [Vision](../Vision/Vision.md) framework to locate key body parts, called *landmarks*, in each video frame. Action classifiers learn how to recognize a human body’s movements by tracking these landmarks frame by frame. Keep the landmarks clearly visible by applying the following guidelines as you record example videos, or when assessing videos from other sources.
 
 - Keep the camera still.
 - Record one person at a time.
@@ -37,7 +38,8 @@ Make additional negative classes for nonactions that take different spans of tim
 
 ## See Also
 
-- [Building an Action Classifier Data Source](building-an-action-classifier-data-source.md)
+### Action Classifier Data Sources
+- [Building an Action Classifier Data Source](./building-an-action-classifier-data-source.md)
   Arrange your training videos in multiple folders with labels that describe actions, or in a single folder with an annotation file.
 
 

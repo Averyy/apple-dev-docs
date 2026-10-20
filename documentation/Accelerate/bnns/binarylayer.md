@@ -1,7 +1,8 @@
 # BNNS.BinaryLayer
 
 **Framework**: Accelerate  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for layers that accept two inputs.
 
@@ -11,8 +12,10 @@ The base class for layers that accept two inputs.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,21 +26,22 @@ class BinaryLayer
 ## Topics
 
 ### Applying a Binary Layer
-- [func apply(batchSize: Int, inputA: BNNSNDArrayDescriptor, inputB: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor) throws](bnns/binarylayer/apply(batchsize:inputa:inputb:output:).md)
+- [func apply(batchSize: Int, inputA: BNNSNDArrayDescriptor, inputB: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor) throws](./binarylayer/apply%28batchsize,inputa,inputb,output%29.md)
   Applies the layer to a set of input object pairs, writing the result to a set of output objects.
-- [func applyBackward(batchSize: Int, inputA: BNNSNDArrayDescriptor, inputB: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, outputGradient: BNNSNDArrayDescriptor, generatingInputAGradient: BNNSNDArrayDescriptor, generatingInputBGradient: BNNSNDArrayDescriptor) throws](bnns/binarylayer/applybackward(batchsize:inputa:inputb:output:outputgradient:generatinginputagradient:generatinginputbgradient:).md)
+- [func applyBackward(batchSize: Int, inputA: BNNSNDArrayDescriptor, inputB: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, outputGradient: BNNSNDArrayDescriptor, generatingInputAGradient: BNNSNDArrayDescriptor, generatingInputBGradient: BNNSNDArrayDescriptor) throws](./binarylayer/applybackward%28batchsize,inputa,inputb,output,outputgradient,generatinginputagradient,generatinginputbgradient%29.md)
   Applies the layer backward to generate input gradients.
 
 ## Relationships
 
 ### Inherits From
-- [BNNS.Layer](bnns/layer.md)
+- [BNNS.Layer](./layer.md)
 
 ## See Also
 
-- [class Layer](bnns/layer.md)
+### Base Classes
+- [class Layer](./layer.md)
   The base class for layer objects that wrap filters and manage deinitialization.
-- [class UnaryLayer](bnns/unarylayer.md)
+- [class UnaryLayer](./unarylayer.md)
   The base class for layers that accept a single input.
 
 

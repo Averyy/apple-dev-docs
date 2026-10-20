@@ -1,6 +1,7 @@
 # StoreKit views
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: API Collection
 
 Display a customizable Apple In-App Purchase store using StoreKit views for SwiftUI.
 
@@ -8,184 +9,184 @@ Display a customizable Apple In-App Purchase store using StoreKit views for Swif
 
 The StoreKit views APIs provide UI to help you build a store for your Apple In-App Purchases, and provide a way for customers to complete the purchase. The views support localization, so your customers see the product names, descriptions, and prices appropriate to their App Store storefront.
 
-> **Note**:  Session 10013: [`Meet StoreKit for SwiftUI`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10013)
+> **Related session from WWDC23**:  Session 10013: [Meet StoreKit for SwiftUI](https://developer.apple.com/videos/play/wwdc2023/10013)
 
 StoreKit manages the layouts across all platforms, so the views look great on any device. You can use SwiftUI APIs to customize how the views integrate with your app.
 
-To use StoreKit views, configure your Apple In-App Purchase metadata in App Store Connect, or in a StoreKit configuration file in Xcode if you’re testing your app. Next, create the views using [`StoreView`](storeview.md), [`ProductView`](productview.md), or [`SubscriptionStoreView`](subscriptionstoreview.md). Finally, customize the default views to match your app by using your own icons, backgrounds, and other styling. Use [`Previews in Xcode`](https://developer.apple.com/documentation/swiftui/previews-in-xcode) to see your progress as you iterate on your design.
+To use StoreKit views, configure your Apple In-App Purchase metadata in App Store Connect, or in a StoreKit configuration file in Xcode if you’re testing your app. Next, create the views using [`StoreView`](./storeview.md), [`ProductView`](./productview.md), or [`SubscriptionStoreView`](./subscriptionstoreview.md). Finally, customize the default views to match your app by using your own icons, backgrounds, and other styling. Use [Previews in Xcode](../SwiftUI/previews-in-xcode.md) to see your progress as you iterate on your design.
 
-For more information on configuring your Apple In-App Purchase metadata, see [`Manage Apple In-App Purchases`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/devae49fb316). For more information on StoreKit configuration files in Xcode, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode).
+For more information on configuring your Apple In-App Purchase metadata, see [Manage Apple In-App Purchases](https://help.apple.com/app-store-connect/#/devae49fb316). For more information on StoreKit configuration files in Xcode, see [Setting up StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md).
 
 ## Topics
 
 ### Merchandising Apple In-App Purchases, subscriptions, and offers
-- [struct ProductView](productview.md)
+- [struct ProductView](./productview.md)
   A view that merchandises an individual Apple In-App Purchase product.
-- [struct StoreView](storeview.md)
+- [struct StoreView](./storeview.md)
   A view that merchandises a collection of Apple In-App Purchase products.
-- [struct SubscriptionStoreView](subscriptionstoreview.md)
+- [struct SubscriptionStoreView](./subscriptionstoreview.md)
   A view that merchandises a collection of auto-renewable subscription options that belong to the same subscription group.
-- [struct SubscriptionOfferView](subscriptionofferview.md)
-- [Backyard Birds: Building an app with SwiftData and widgets](../swiftui/backyard-birds-sample.md)
+- [struct SubscriptionOfferView](./subscriptionofferview.md)
+- [Backyard Birds: Building an app with SwiftData and widgets](../SwiftUI/backyard-birds-sample.md)
   Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.
 ### Styling product views
 - [func productViewStyle(some ProductViewStyle) -> some View
-](../swiftui/view/productviewstyle(_:).md)
+](../SwiftUI/view/productviewstyle%28_%29.md)
   Sets the style for In-App Purchase product views within a view.
 - [func productIconBorder() -> some View
-](../swiftui/view/producticonborder.md)
+](../SwiftUI/view/producticonborder%28%29.md)
   Adds a standard border to an in-app purchase product’s icon .
-- [protocol ProductViewStyle](productviewstyle.md)
+- [protocol ProductViewStyle](./productviewstyle.md)
   A type that specifies the appearance and interaction of Apple In-App Purchase products within the view hierarchy.
-- [struct ProductViewStyleConfiguration](productviewstyleconfiguration.md)
+- [struct ProductViewStyleConfiguration](./productviewstyleconfiguration.md)
   The properties of an Apple In-App Purchase product for use by custom product view styles.
 ### Styling subscription store controls
 - [func subscriptionStoreControlStyle(some SubscriptionStoreControlStyle) -> some View
-](../swiftui/view/subscriptionstorecontrolstyle(_:).md)
+](../SwiftUI/view/subscriptionstorecontrolstyle%28_%29.md)
   Sets the control style for subscription store views within a view.
 - [func subscriptionStoreControlStyle<S>(S, placement: S.Placement) -> some View
-](../swiftui/view/subscriptionstorecontrolstyle(_:placement:).md)
+](../SwiftUI/view/subscriptionstorecontrolstyle%28_,placement%29.md)
   Sets the control style and control placement for subscription store views within a view.
-- [protocol SubscriptionStoreControlStyle](subscriptionstorecontrolstyle.md)
+- [protocol SubscriptionStoreControlStyle](./subscriptionstorecontrolstyle.md)
   A type that specifies the appearance and interaction of controls in the subscription store view instances within the view hierarchy.
-- [struct SubscriptionStoreControlStyleConfiguration](subscriptionstorecontrolstyleconfiguration.md)
+- [struct SubscriptionStoreControlStyleConfiguration](./subscriptionstorecontrolstyleconfiguration.md)
   The properties of a subscription store control that includes the list of auto-renewable subscriptions to merchandise.
-- [protocol SubscriptionStoreControlPlacement](subscriptionstorecontrolplacement.md)
+- [protocol SubscriptionStoreControlPlacement](./subscriptionstorecontrolplacement.md)
   A type that specifies the placement of a subscription control in a subscription store view.
 ### Styling subscription offer views
-- [struct AutomaticSubscriptionOfferViewStyle](automaticsubscriptionofferviewstyle.md)
-- [struct CompactSubscriptionOfferViewStyle](compactsubscriptionofferviewstyle.md)
-- [struct SubscriptionOfferViewStyleConfiguration](subscriptionofferviewstyleconfiguration.md)
-- [protocol SubscriptionOfferViewStyle](subscriptionofferviewstyle.md)
+- [struct AutomaticSubscriptionOfferViewStyle](./automaticsubscriptionofferviewstyle.md)
+- [struct CompactSubscriptionOfferViewStyle](./compactsubscriptionofferviewstyle.md)
+- [struct SubscriptionOfferViewStyleConfiguration](./subscriptionofferviewstyleconfiguration.md)
+- [protocol SubscriptionOfferViewStyle](./subscriptionofferviewstyle.md)
 ### Configuring subscription store controls
 - [func subscriptionStoreControlIcon(icon: (Product, Product.SubscriptionInfo) -> some View) -> some View
-](../swiftui/view/subscriptionstorecontrolicon(icon:).md)
+](../SwiftUI/view/subscriptionstorecontrolicon%28icon%29.md)
   Sets a view to use to decorate individual subscription options within a subscription store view.
 - [func subscriptionStorePickerItemBackground(some ShapeStyle) -> some View
-](../swiftui/view/subscriptionstorepickeritembackground(_:).md)
+](../SwiftUI/view/subscriptionstorepickeritembackground%28_%29.md)
   Sets the background style for picker items of the subscription store view instances within a view.
 - [func subscriptionStorePickerItemBackground(some ShapeStyle, in: some Shape) -> some View
-](../swiftui/view/subscriptionstorepickeritembackground(_:in:).md)
+](../SwiftUI/view/subscriptionstorepickeritembackground%28_,in%29.md)
   Sets the background shape and style for subscription store view picker items within a view.
 - [func subscriptionStoreButtonLabel(SubscriptionStoreButtonLabel) -> some View
-](../swiftui/view/subscriptionstorebuttonlabel(_:).md)
+](../SwiftUI/view/subscriptionstorebuttonlabel%28_%29.md)
   Configures subscription store view instances within a view to use the provided button label.
-- [struct SubscriptionStoreButtonLabel](subscriptionstorebuttonlabel.md)
+- [struct SubscriptionStoreButtonLabel](./subscriptionstorebuttonlabel.md)
   The label of the subscribe button that a subscription store view uses.
 ### Creating custom subscription store control styles
-- [struct SubscriptionStoreButton](subscriptionstorebutton.md)
+- [struct SubscriptionStoreButton](./subscriptionstorebutton.md)
   A button for subscribing to an in-app subscription with a localized label and optional caption.
-- [struct SubscriptionStorePicker](subscriptionstorepicker.md)
+- [struct SubscriptionStorePicker](./subscriptionstorepicker.md)
   A composite control with a picker for selecting a subscription option and a button for confirming the subscription.
-- [struct SubscriptionStorePickerOption](subscriptionstorepickeroption.md)
+- [struct SubscriptionStorePickerOption](./subscriptionstorepickeroption.md)
   A subscription option within a subscription picker control.
 ### Declaring the structure of a subscription store
-- [struct SubscriptionOptionGroup](subscriptionoptiongroup.md)
+- [struct SubscriptionOptionGroup](./subscriptionoptiongroup.md)
   A group of subscription options that includes optional views for labels and marketing content.
-- [struct SubscriptionOptionGroupSet](subscriptionoptiongroupset.md)
+- [struct SubscriptionOptionGroupSet](./subscriptionoptiongroupset.md)
   A set of groups of subscription options that include optional views for labels and marketing content.
-- [struct SubscriptionPeriodGroupSet](subscriptionperiodgroupset.md)
-- [struct SubscriptionOptionSection](subscriptionoptionsection.md)
-- [protocol StoreContent](storecontent.md)
+- [struct SubscriptionPeriodGroupSet](./subscriptionperiodgroupset.md)
+- [struct SubscriptionOptionSection](./subscriptionoptionsection.md)
+- [protocol StoreContent](./storecontent.md)
   A type that represents the content of a store.
-- [struct StoreContentBuilder](storecontentbuilder.md)
+- [struct StoreContentBuilder](./storecontentbuilder.md)
   A result builder that creates store content from closures that you provide.
 ### Styling subscription option groups
 - [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View
-](../swiftui/view/subscriptionstoreoptiongroupstyle(_:).md)
+](../SwiftUI/view/subscriptionstoreoptiongroupstyle%28_%29.md)
   Sets the style subscription store views within this view use to display groups of subscription options.
-- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some StoreContent](storecontent/subscriptionstoreoptiongroupstyle(_:).md)
-- [protocol SubscriptionOptionGroupStyle](subscriptionoptiongroupstyle.md)
+- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some StoreContent](./storecontent/subscriptionstoreoptiongroupstyle%28_%29.md)
+- [protocol SubscriptionOptionGroupStyle](./subscriptionoptiongroupstyle.md)
 ### Adding backgrounds to subscription stores
 - [func containerBackground<S>(S, for: ContainerBackgroundPlacement) -> some View
-](../swiftui/view/containerbackground(_:for:).md)
+](../SwiftUI/view/containerbackground%28_,for%29.md)
   Sets the container background of the enclosing container using a view.
 - [func containerBackground<V>(for: ContainerBackgroundPlacement, alignment: Alignment, content: () -> V) -> some View
-](../swiftui/view/containerbackground(for:alignment:content:).md)
+](../SwiftUI/view/containerbackground%28for,alignment,content%29.md)
   Sets the container background of the enclosing container using a view.
 - [func subscriptionStoreControlBackground(some ShapeStyle) -> some View
-](../swiftui/view/subscriptionstorecontrolbackground(_:)-7jxa9.md)
+](../SwiftUI/view/subscriptionstorecontrolbackground%28_%29-7jxa9.md)
   Set a shape style to use for the background of subscription store view controls within the view.
 - [func subscriptionStoreControlBackground(SubscriptionStoreControlBackground) -> some View
-](../swiftui/view/subscriptionstorecontrolbackground(_:)-7ev89.md)
+](../SwiftUI/view/subscriptionstorecontrolbackground%28_%29-7ev89.md)
   Set a standard effect to use for the background of subscription store view controls within the view.
-- [static var subscriptionStore: ContainerBackgroundPlacement](../swiftui/containerbackgroundplacement/subscriptionstore.md)
+- [static var subscriptionStore: ContainerBackgroundPlacement](../SwiftUI/containerbackgroundplacement/subscriptionstore.md)
   An automatic placement within a subscription store view, based on the view’s context.
-- [static var subscriptionStoreHeader: ContainerBackgroundPlacement](../swiftui/containerbackgroundplacement/subscriptionstoreheader.md)
+- [static var subscriptionStoreHeader: ContainerBackgroundPlacement](../SwiftUI/containerbackgroundplacement/subscriptionstoreheader.md)
   A background placement behind the marketing content of a subscription store view.
-- [static var subscriptionStoreFullHeight: ContainerBackgroundPlacement](../swiftui/containerbackgroundplacement/subscriptionstorefullheight.md)
+- [static var subscriptionStoreFullHeight: ContainerBackgroundPlacement](../SwiftUI/containerbackgroundplacement/subscriptionstorefullheight.md)
   A background placement that spans the full height of a subscription store view.
-- [struct SubscriptionStoreControlBackground](subscriptionstorecontrolbackground.md)
+- [struct SubscriptionStoreControlBackground](./subscriptionstorecontrolbackground.md)
 ### Configuring accessory buttons
 - [func storeButton(Visibility, for: StoreButtonKind...) -> some View
-](../swiftui/view/storebutton(_:for:).md)
+](../SwiftUI/view/storebutton%28_,for%29.md)
   Specifies the visibility of auxiliary buttons that store view and subscription store view instances may use.
 - [func subscriptionStoreSignInAction((() -> ())?) -> some View
-](../swiftui/view/subscriptionstoresigninaction(_:).md)
+](../SwiftUI/view/subscriptionstoresigninaction%28_%29.md)
   Adds an action to perform when a person uses the sign-in button on a subscription store view within a view.
-- [struct StoreButtonKind](storebuttonkind.md)
+- [struct StoreButtonKind](./storebuttonkind.md)
   A button to display in a store view or subscription store view.
-- [struct SubscriptionOfferViewButtonKind](subscriptionofferviewbuttonkind.md)
+- [struct SubscriptionOfferViewButtonKind](./subscriptionofferviewbuttonkind.md)
 ### Configuring the subscription store policies
 - [func subscriptionStorePolicyDestination(for: SubscriptionStorePolicyKind, destination: () -> some View) -> some View
-](../swiftui/view/subscriptionstorepolicydestination(for:destination:).md)
+](../SwiftUI/view/subscriptionstorepolicydestination%28for,destination%29.md)
   Configures a view as the destination for a policy button action in subscription store views.
 - [func subscriptionStorePolicyDestination(url: URL, for: SubscriptionStorePolicyKind) -> some View
-](../swiftui/view/subscriptionstorepolicydestination(url:for:).md)
+](../SwiftUI/view/subscriptionstorepolicydestination%28url,for%29.md)
   Configures a URL as the destination for a policy button action in subscription store views.
 - [func subscriptionStorePolicyForegroundStyle(some ShapeStyle) -> some View
-](../swiftui/view/subscriptionstorepolicyforegroundstyle(_:).md)
+](../SwiftUI/view/subscriptionstorepolicyforegroundstyle%28_%29.md)
   Sets the style for the terms of service and privacy policy buttons within a subscription store view.
 - [func subscriptionStorePolicyForegroundStyle(some ShapeStyle, some ShapeStyle) -> some View
-](../swiftui/view/subscriptionstorepolicyforegroundstyle(_:_:).md)
+](../SwiftUI/view/subscriptionstorepolicyforegroundstyle%28_,_%29.md)
   Sets the primary and secondary style for the terms of service and privacy policy buttons within a subscription store view.
-- [struct SubscriptionStorePolicyKind](subscriptionstorepolicykind.md)
+- [struct SubscriptionStorePolicyKind](./subscriptionstorepolicykind.md)
   The type of policy, such as the terms of service or privacy policies.
 ### Selecting subscription offers
 - [func subscriptionPromotionalOffer(offer: (Product, Product.SubscriptionInfo) -> Product.SubscriptionOffer?, signature: (Product, Product.SubscriptionInfo, Product.SubscriptionOffer) async throws -> Product.SubscriptionOffer.Signature) -> some View
-](../swiftui/view/subscriptionpromotionaloffer(offer:signature:).md)
+](../SwiftUI/view/subscriptionpromotionaloffer%28offer,signature%29.md)
   Selects a promotional offer to apply to a purchase a customer makes from a subscription store view.
 - [func preferredSubscriptionOffer((Product, Product.SubscriptionInfo, [Product.SubscriptionOffer]) -> Product.SubscriptionOffer?) -> some View
-](../swiftui/view/preferredsubscriptionoffer(_:).md)
+](../SwiftUI/view/preferredsubscriptionoffer%28_%29.md)
   Selects a subscription offer to apply to a purchase that a customer makes from a subscription store view, a store view, or a product view.
 - [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View
-](../swiftui/view/offercoderedemption(ispresented:oncompletion:).md)
+](../SwiftUI/view/offercoderedemption%28ispresented,oncompletion%29.md)
 ### Configuring purchase options and product descriptions
 - [func inAppPurchaseOptions(((Product) async -> Set<Product.PurchaseOption>)?) -> some View
-](../swiftui/view/inapppurchaseoptions(_:).md)
+](../SwiftUI/view/inapppurchaseoptions%28_%29.md)
   Add a function to call before initiating a purchase from StoreKit view within this view, providing a set of options for the purchase.
 - [func productDescription(Visibility) -> some View
-](../swiftui/view/productdescription(_:).md)
+](../SwiftUI/view/productdescription%28_%29.md)
   Configure the visibility of labels displaying an in-app purchase product description within the view.
 ### Responding to store events
 - [func onInAppPurchaseStart(perform: ((Product) async -> ())?) -> some View
-](../swiftui/view/oninapppurchasestart(perform:).md)
+](../SwiftUI/view/oninapppurchasestart%28perform%29.md)
   Add an action to perform when a user triggers the purchase button on a StoreKit view within this view.
 - [func onInAppPurchaseCompletion(perform: ((Product, Result<Product.PurchaseResult, any Error>) async -> ())?) -> some View
-](../swiftui/view/oninapppurchasecompletion(perform:).md)
+](../SwiftUI/view/oninapppurchasecompletion%28perform%29.md)
   Add an action to perform when a purchase initiated from a StoreKit view within this view completes.
 ### Loading StoreKit data
 - [func storeProductTask(for: Product.ID, priority: TaskPriority, action: (Product.TaskState) async -> ()) -> some View
-](../swiftui/view/storeproducttask(for:priority:action:).md)
+](../SwiftUI/view/storeproducttask%28for,priority,action%29.md)
   Declares the view as dependent on an In-App Purchase product and returns a modified view.
 - [func storeProductsTask(for: some Collection<String> & Equatable & Sendable, priority: TaskPriority, action: (Product.CollectionTaskState) async -> ()) -> some View
-](../swiftui/view/storeproductstask(for:priority:action:).md)
+](../SwiftUI/view/storeproductstask%28for,priority,action%29.md)
   Declares the view as dependent on a collection of In-App Purchase products and returns a modified view.
 - [func currentEntitlementTask(for: String, priority: TaskPriority, action: (EntitlementTaskState<VerificationResult<Transaction>?>) async -> ()) -> some View
-](../swiftui/view/currententitlementtask(for:priority:action:).md)
+](../SwiftUI/view/currententitlementtask%28for,priority,action%29.md)
   Declares the view as dependent on the entitlement of an In-App Purchase product, and returns a modified view.
 - [func subscriptionStatusTask(for: String, priority: TaskPriority, action: (EntitlementTaskState<[Product.SubscriptionInfo.Status]>) async -> ()) -> some View
-](../swiftui/view/subscriptionstatustask(for:priority:action:).md)
+](../SwiftUI/view/subscriptionstatustask%28for,priority,action%29.md)
   Declares the view as dependent on the status of an auto-renewable subscription group, and returns a modified view.
-- [Product.CollectionTaskState](product/collectiontaskstate.md)
+- [Product.CollectionTaskState](./product/collectiontaskstate.md)
   The state of a task that loads a collection of products in the background.
-- [Product.TaskState](product/taskstate.md)
+- [Product.TaskState](./product/taskstate.md)
   The state of a task that loads a product in the background.
-- [enum EntitlementTaskState](entitlementtaskstate.md)
+- [enum EntitlementTaskState](./entitlementtaskstate.md)
   The state of an entitlement task.
 ### Requesting a refund
 - [func refundRequestSheet(for: Transaction.ID, isPresented: Binding<Bool>, onDismiss: ((Result<Transaction.RefundRequestStatus, Transaction.RefundRequestError>) -> ())?) -> some View
-](../swiftui/view/refundrequestsheet(for:ispresented:ondismiss:).md)
+](../SwiftUI/view/refundrequestsheet%28for,ispresented,ondismiss%29.md)
   Display the refund request sheet for the given transaction.
 
 

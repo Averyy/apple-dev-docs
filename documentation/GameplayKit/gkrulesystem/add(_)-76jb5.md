@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified rule to the system.
 
@@ -19,9 +20,13 @@ Adds the specified rule to the system.
 func add(_ rule: GKRule)
 ```
 
+```objc
+- (void) addRule:(GKRule *) rule;
+```
+
 #### Discussion
 
-Adding rules to the system also adds them to the [`agenda`](gkrulesystem/agenda.md) list, in decreasing order of the rules’ [`salience`](gkrule/salience.md) values. Rules with the same salience are listed in the agenda in the order in which they were added to the system.
+Adding rules to the system also adds them to the [`agenda`](./agenda.md) list, in decreasing order of the rules’ [`salience`](../gkrule/salience.md) values. Rules with the same salience are listed in the agenda in the order in which they were added to the system.
 
 ## Parameters
 
@@ -29,13 +34,15 @@ Adding rules to the system also adds them to the [`agenda`](gkrulesystem/agenda.
 
 ## See Also
 
-- [var agenda: [GKRule]](gkrulesystem/agenda.md)
+### Related Documentation
+- [var agenda: [GKRule]](./agenda.md)
   The list of rules to be considered when evaluating the system.
-- [var rules: [GKRule]](gkrulesystem/rules.md)
+### Managing a System’s List of Rules
+- [var rules: [GKRule]](./rules.md)
   The list of rules to be executed when evaluating the system.
-- [func add([GKRule])](gkrulesystem/add(_:)-7u5zw.md)
+- [func add([GKRule])](./add%28_%29-7u5zw.md)
   Adds the specified list of rules to the system.
-- [func removeAllRules()](gkrulesystem/removeallrules.md)
+- [func removeAllRules()](./removeallrules%28%29.md)
   Removes all rules from the system.
 
 

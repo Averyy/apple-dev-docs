@@ -1,7 +1,8 @@
 # curState
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 16-bit integer specifying the current dead-key state.
 
@@ -13,6 +14,10 @@ An unsigned 16-bit integer specifying the current dead-key state.
 
 ```swift
 var curState: UInt16
+```
+
+```c
+UInt16 curState;
 ```
 
 

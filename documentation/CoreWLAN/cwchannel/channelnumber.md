@@ -1,7 +1,8 @@
 # channelNumber
 
 **Framework**: Core WLAN  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The channel number.
 
@@ -14,11 +15,16 @@ The channel number.
 var channelNumber: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger channelNumber;
+```
+
 ## See Also
 
-- [var channelBand: CWChannelBand](cwchannel/channelband.md)
+### Instance Properties
+- [var channelBand: CWChannelBand](./channelband.md)
   The channel band.
-- [var channelWidth: CWChannelWidth](cwchannel/channelwidth.md)
+- [var channelWidth: CWChannelWidth](./channelwidth.md)
   The channel width.
 
 

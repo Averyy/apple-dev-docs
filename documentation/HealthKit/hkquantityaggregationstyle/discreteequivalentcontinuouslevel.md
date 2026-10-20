@@ -1,7 +1,8 @@
 # HKQuantityAggregationStyle.discreteEquivalentContinuousLevel
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Discrete samples that can be combined over a time interval by computing the equivalent continuous sound level.
 
@@ -19,17 +20,22 @@ Discrete samples that can be combined over a time interval by computing the equi
 case discreteEquivalentContinuousLevel
 ```
 
+```c
+HKQuantityAggregationStyleDiscreteEquivalentContinuousLevel
+```
+
 #### Discussion
 
 For more information on sound level meters, see IEC 61672-1.
 
 ## See Also
 
-- [HKQuantityAggregationStyle.cumulative](hkquantityaggregationstyle/cumulative.md)
+### Aggregation Styles
+- [HKQuantityAggregationStyle.cumulative](./cumulative.md)
   Cumulative samples that can be summed over time.
-- [HKQuantityAggregationStyle.discreteArithmetic](hkquantityaggregationstyle/discretearithmetic.md)
+- [HKQuantityAggregationStyle.discreteArithmetic](./discretearithmetic.md)
   Discrete samples that can be averaged over time using an arithmetic mean.
-- [HKQuantityAggregationStyle.discreteTemporallyWeighted](hkquantityaggregationstyle/discretetemporallyweighted.md)
+- [HKQuantityAggregationStyle.discreteTemporallyWeighted](./discretetemporallyweighted.md)
   Discrete samples that can be averaged over a time interval using a temporally weighted integration function.
 
 

@@ -1,11 +1,12 @@
 # FilterableMusicItem Implementations
 
-**Framework**: MusicKit
+**Framework**: MusicKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [typealias FilterType](curator/filtertype.md)
+- [typealias FilterType](./filtertype.md)
   The associated type that contains the curator properties your app uses as a filter for a catalog resource request.
 
 

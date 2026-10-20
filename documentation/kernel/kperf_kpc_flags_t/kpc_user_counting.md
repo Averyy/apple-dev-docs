@@ -1,14 +1,15 @@
 # KPC_USER_COUNTING
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 KPC_USER_COUNTING
 ```
 

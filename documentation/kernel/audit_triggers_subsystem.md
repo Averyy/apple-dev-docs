@@ -1,14 +1,15 @@
 # audit_triggers_subsystem
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 const struct audit_triggers_subsystem audit_triggers_subsystem;
 ```
 

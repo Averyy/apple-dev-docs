@@ -1,7 +1,8 @@
 # revision
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The algorithm or implementation the request uses.
 
@@ -22,9 +23,10 @@ let revision: DetectContoursRequest.Revision
 
 ## See Also
 
-- [static let supportedRevisions: [DetectContoursRequest.Revision]](detectcontoursrequest/supportedrevisions.md)
+### Getting the revision
+- [static let supportedRevisions: [DetectContoursRequest.Revision]](./supportedrevisions.md)
   The collection of revisions the request supports.
-- [DetectContoursRequest.Revision](detectcontoursrequest/revision-swift.enum.md)
+- [DetectContoursRequest.Revision](./revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 
 

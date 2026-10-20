@@ -1,7 +1,8 @@
 # applied(toWindow:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a prediction on a window of input features.
 
@@ -31,7 +32,8 @@ A shaped array of predictions with shape `[forecastWindowSize, annotationSize]`.
 
 ## See Also
 
-- [func applied(to:eventHandler:)](lineartimeseriesforecaster/model/applied(to:eventhandler:).md)
+### Applying the model
+- [func applied(to:eventHandler:)](./applied%28to,eventhandler%29.md)
   Performs a prediction on a shaped array of features.
 
 

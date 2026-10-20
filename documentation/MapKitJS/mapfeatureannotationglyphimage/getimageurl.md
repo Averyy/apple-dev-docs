@@ -1,7 +1,8 @@
 # getImageUrl(scale, callback)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the image URL of the map feature.
 
@@ -10,7 +11,7 @@ Returns the image URL of the map feature.
 
 ## Declaration
 
-```swift
+```
 getImageUrl(
     scale: number | undefined,
     callback: (url: string | null) => void,

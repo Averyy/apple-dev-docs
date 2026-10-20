@@ -1,7 +1,8 @@
 # buffers
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The barrier affects any buffer objects.
 
@@ -17,6 +18,10 @@ The barrier affects any buffer objects.
 
 ```swift
 static var buffers: MTLBarrierScope { get }
+```
+
+```c
+MTLBarrierScopeBuffers
 ```
 
 

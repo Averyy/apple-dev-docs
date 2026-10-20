@@ -1,7 +1,8 @@
 # target
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that performs the action through a selector.
 
@@ -14,11 +15,16 @@ The object that performs the action through a selector.
 weak var target: (any NSObjectProtocol)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSObject> target;
+```
+
 ## See Also
 
-- [var handler: (() -> Bool)?](nsaccessibilitycustomaction/handler.md)
+### Getting the Action
+- [var handler: (() -> Bool)?](./handler.md)
   The closure that handles the execution of the action.
-- [var selector: Selector?](nsaccessibilitycustomaction/selector.md)
+- [var selector: Selector?](./selector.md)
   The method to call on the target to perform the action.
 
 

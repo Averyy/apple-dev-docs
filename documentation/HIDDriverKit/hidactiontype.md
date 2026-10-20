@@ -1,31 +1,33 @@
 # HIDActionType
 
 **Framework**: HIDDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef enum { ... } HIDActionType;
 ```
 
 ## Topics
 
 ### Enumeration Cases
-- [kIOHIDActionTypeOutputReport](hidactiontype/kiohidactiontypeoutputreport.md)
-- [kIOHIDActionTypeOutputRequest](hidactiontype/kiohidactiontypeoutputrequest.md)
+- [kIOHIDActionTypeOutputReport](./hidactiontype/kiohidactiontypeoutputreport.md)
+- [kIOHIDActionTypeOutputRequest](./hidactiontype/kiohidactiontypeoutputrequest.md)
 
 ## See Also
 
-- [IOHIDCompletionAction](iohidcompletionaction.md)
+### Internal Structures
+- [IOHIDCompletionAction](./iohidcompletionaction.md)
   A function to call when a report operation completes.
-- [IOHIDCompletion](iohidcompletion.md)
+- [IOHIDCompletion](./iohidcompletion.md)
   A structure specifying the action to perform when a set/get report completes.
-- [HIDReportCommandType](hidreportcommandtype.md)
+- [HIDReportCommandType](./hidreportcommandtype.md)
   The type of the report command for a DriverKit driver.
 
 

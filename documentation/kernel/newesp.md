@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct newesp {
     ...
 };
@@ -17,8 +17,8 @@ struct newesp {
 ## Topics
 
 ### Instance Properties
-- [esp_seq](newesp/1426538-esp_seq.md)
-- [esp_spi](newesp/1426532-esp_spi.md)
+- [esp_seq](./newesp/api-1426538-esp_seq.md)
+- [esp_spi](./newesp/api-1426532-esp_spi.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(upstream:size:prefetch:whenFull:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that buffers elements received from an upstream publisher.
 

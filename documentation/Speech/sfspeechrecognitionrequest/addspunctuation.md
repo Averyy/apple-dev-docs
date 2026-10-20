@@ -1,7 +1,8 @@
 # addsPunctuation
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to add punctuation to speech recognition results.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether to add punctuation to speech recognition 
 
 ```swift
 var addsPunctuation: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL addsPunctuation;
 ```
 
 #### Discussion

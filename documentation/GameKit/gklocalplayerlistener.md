@@ -1,7 +1,8 @@
 # GKLocalPlayerListener
 
 **Framework**: GameKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that handles events for Game Center players.
 
@@ -16,47 +17,68 @@ A protocol that handles events for Game Center players.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, macOS, visionOS*
+
+```swift
+protocol GKLocalPlayerListener : GKChallengeListener, GKGameActivityListener, GKInviteEventListener, GKSavedGameListener, GKTurnBasedEventListener
+```
+
+*tvOS, watchOS*
+
 ```swift
 protocol GKLocalPlayerListener : GKChallengeListener, GKInviteEventListener, GKTurnBasedEventListener
 ```
 
+*iOS, iPadOS, Mac Catalyst, macOS, visionOS*
+
+```objc
+@protocol GKLocalPlayerListener <GKChallengeListener, GKGameActivityListener, GKInviteEventListener, GKTurnBasedEventListener, GKSavedGameListener>
+```
+
+*tvOS, watchOS*
+
+```objc
+@protocol GKLocalPlayerListener <GKChallengeListener, GKInviteEventListener, GKTurnBasedEventListener>
+```
+
 ## Mentions
 
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
-- [Saving the player’s game data to an iCloud account](saving-the-player-s-game-data-to-an-icloud-account.md)
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Finding multiple players for a game](./finding-multiple-players-for-a-game.md)
+- [Saving the player’s game data to an iCloud account](./saving-the-player-s-game-data-to-an-icloud-account.md)
+- [Starting turn-based matches and passing turns between players](./starting-turn-based-matches-and-passing-turns-between-players.md)
 
 #### Overview
 
-Adopt the [`GKLocalPlayerListener`](gklocalplayerlistener.md) protocol to listen for and handle a variety of Game Center events for player accounts instead of the individual [`GKChallengeListener`](gkchallengelistener.md), [`GKInviteEventListener`](gkinviteeventlistener.md), [`GKSavedGameListener`](gksavedgamelistener.md), and [`GKTurnBasedEventListener`](gkturnbasedeventlistener.md) protocols.
+Adopt the [`GKLocalPlayerListener`](./gklocalplayerlistener.md) protocol to listen for and handle a variety of Game Center events for player accounts instead of the individual [`GKChallengeListener`](./gkchallengelistener.md), [`GKInviteEventListener`](./gkinviteeventlistener.md), [`GKSavedGameListener`](./gksavedgamelistener.md), and [`GKTurnBasedEventListener`](./gkturnbasedeventlistener.md) protocols.
 
 ## Relationships
 
 ### Inherits From
-- [GKChallengeListener](gkchallengelistener.md)
-- [GKGameActivityListener](gkgameactivitylistener.md)
-- [GKInviteEventListener](gkinviteeventlistener.md)
-- [GKSavedGameListener](gksavedgamelistener.md)
-- [GKTurnBasedEventListener](gkturnbasedeventlistener.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [GKChallengeListener](./gkchallengelistener.md)
+- [GKGameActivityListener](./gkgameactivitylistener.md)
+- [GKInviteEventListener](./gkinviteeventlistener.md)
+- [GKSavedGameListener](./gksavedgamelistener.md)
+- [GKTurnBasedEventListener](./gkturnbasedeventlistener.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Connecting players with their friends in your game](connecting-players-with-their-friends-in-your-game.md)
+### Players
+- [Connecting players with their friends in your game](./connecting-players-with-their-friends-in-your-game.md)
   Give players the ability to connect and interact with friends in your game.
-- [Saving the player’s game data to an iCloud account](saving-the-player-s-game-data-to-an-icloud-account.md)
+- [Saving the player’s game data to an iCloud account](./saving-the-player-s-game-data-to-an-icloud-account.md)
   Save game data during play or after a game in the player’s iCloud account that’s accessible from any device.
-- [Protecting the player’s privacy using scoped identifiers](protecting-the-player-s-privacy-using-scoped-identifiers.md)
+- [Protecting the player’s privacy using scoped identifiers](./protecting-the-player-s-privacy-using-scoped-identifiers.md)
   Use the scoped identifiers that GameKit provides you as player IDs when transmitting or saving player data.
-- [class GKLocalPlayer](gklocalplayer.md)
+- [class GKLocalPlayer](./gklocalplayer.md)
   The local player who signs in to Game Center on the device running the game.
-- [class GKPlayer](gkplayer.md)
+- [class GKPlayer](./gkplayer.md)
   A remote player who the local player running your game can invite and communicate with through Game Center.
-- [class GKBasePlayer](gkbaseplayer.md)
+- [class GKBasePlayer](./gkbaseplayer.md)
   A class that provides common data and methods for the different player objects.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
   A notification that posts after GameKit authenticates the local player.
-- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gkplayerdidchangenotificationname.md)
+- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gkplayerdidchangenotificationname.md)
   A notification that posts when a player object’s data changes.
 
 

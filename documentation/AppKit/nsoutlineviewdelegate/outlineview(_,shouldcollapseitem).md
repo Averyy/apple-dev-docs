@@ -1,12 +1,13 @@
 # outlineView(_:shouldCollapseItem:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the outline view should collapse a given item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Returns a Boolean value that indicates whether the outline view should collapse 
 optional func outlineView(_ outlineView: NSOutlineView, shouldCollapseItem item: Any) -> Bool
 ```
 
+```objc
+- (BOOL) outlineView:(NSOutlineView *) outlineView shouldCollapseItem:(id) item;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to permit `outlineView` to collapse `item`, [`false`](https://developer.apple.com/documentation/swift/false) to deny permission.
+[`true`](../../Swift/true.md) to permit `outlineView` to collapse `item`, [`false`](../../Swift/false.md) to deny permission.
 
 #### Discussion
 
@@ -34,7 +39,8 @@ return [outlineView rowForItem:item]!=0;
 
 ## See Also
 
-- [func outlineView(NSOutlineView, shouldExpandItem: Any) -> Bool](nsoutlineviewdelegate/outlineview(_:shouldexpanditem:).md)
+### Expanding and Collapsing the Outline
+- [func outlineView(NSOutlineView, shouldExpandItem: Any) -> Bool](./outlineview%28_,shouldexpanditem%29.md)
   Returns a Boolean value that indicates whether the outline view should expand a given item.
 
 

@@ -1,7 +1,8 @@
 # SecAsn1Template_struct
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines one element of a BER or DER encoding.
 
@@ -9,10 +10,12 @@ A structure that defines one element of a BER or DER encoding.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.0+
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 12.0
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
+
+> **Deprecated**: SecAsn1 is not supported.
 
 ## Declaration
 
@@ -20,21 +23,25 @@ A structure that defines one element of a BER or DER encoding.
 struct SecAsn1Template_struct
 ```
 
+```c
+struct SecAsn1Template_struct;
+```
+
 ## Topics
 
 ### Initializers
-- [init(kind: UInt32, offset: UInt32, sub: UnsafeRawPointer, size: UInt32)](secasn1template_struct/init(kind:offset:sub:size:).md)
+- [init(kind: UInt32, offset: UInt32, sub: UnsafeRawPointer, size: UInt32)](./secasn1template_struct/init%28kind,offset,sub,size%29.md)
   Creates a new template structure.
 ### Instance Properties
-- [var kind: UInt32](secasn1template_struct/kind.md)
-- [var offset: UInt32](secasn1template_struct/offset.md)
-- [var size: UInt32](secasn1template_struct/size.md)
-- [var sub: UnsafeRawPointer](secasn1template_struct/sub.md)
+- [var kind: UInt32](./secasn1template_struct/kind.md)
+- [var offset: UInt32](./secasn1template_struct/offset.md)
+- [var size: UInt32](./secasn1template_struct/size.md)
+- [var sub: UnsafeRawPointer](./secasn1template_struct/sub.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

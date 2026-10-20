@@ -1,7 +1,8 @@
 # orientation
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The orientation of the text.
 
@@ -22,11 +23,12 @@ static let orientation: NSAttributedString.TextLayoutSectionKey
 
 #### Discussion
 
-An [`NSNumber`](nsnumber.md) object containing an [`NSLayoutManager.TextLayoutOrientation`](https://developer.apple.com/documentation/appkit/nslayoutmanager/textlayoutorientation) value. The default value is [`NSLayoutManager.TextLayoutOrientation.horizontal`](https://developer.apple.com/documentation/appkit/nslayoutmanager/textlayoutorientation/horizontal).
+An [`NSNumber`](../../nsnumber.md) object containing an [`NSLayoutManager.TextLayoutOrientation`](../../../AppKit/nslayoutmanager/textlayoutorientation.md) value. The default value is [`NSLayoutManager.TextLayoutOrientation.horizontal`](../../../AppKit/nslayoutmanager/textlayoutorientation/horizontal.md).
 
 ## See Also
 
-- [static let range: NSAttributedString.TextLayoutSectionKey](nsattributedstring/textlayoutsectionkey/range.md)
+### Getting keys for text layouts
+- [static let range: NSAttributedString.TextLayoutSectionKey](./range.md)
   The character range.
 
 

@@ -1,7 +1,8 @@
 # NSApplication.WindowListOptions
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 This constant indicates a window ordering.
 
@@ -14,39 +15,44 @@ This constant indicates a window ordering.
 struct WindowListOptions
 ```
 
+```c
+enum NSWindowListOptions : NSInteger;
+```
+
 ## Topics
 
 ### Options
-- [static var orderedFrontToBack: NSApplication.WindowListOptions](nsapplication/windowlistoptions/orderedfronttoback.md)
-  The app’s onscreen windows in front-to-back order. By default, [`windows`](nsapplication/windows.md) is used.
+- [static var orderedFrontToBack: NSApplication.WindowListOptions](./windowlistoptions/orderedfronttoback.md)
+  The app’s onscreen windows in front-to-back order. By default, [`windows`](./windows.md) is used.
 ### Initializers
-- [init(rawValue: Int)](nsapplication/windowlistoptions/init(rawvalue:).md)
+- [init(rawValue: Int)](./windowlistoptions/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var keyWindow: NSWindow?](nsapplication/keywindow.md)
+### Managing App Windows
+- [var keyWindow: NSWindow?](./keywindow.md)
   The window that currently receives keyboard events.
-- [var mainWindow: NSWindow?](nsapplication/mainwindow.md)
+- [var mainWindow: NSWindow?](./mainwindow.md)
   The app’s main window.
-- [func window(withWindowNumber: Int) -> NSWindow?](nsapplication/window(withwindownumber:).md)
+- [func window(withWindowNumber: Int) -> NSWindow?](./window%28withwindownumber%29.md)
   Returns the window corresponding to the specified window number.
-- [var windows: [NSWindow]](nsapplication/windows.md)
+- [var windows: [NSWindow]](./windows.md)
   An array of the app’s window objects.
-- [func enumerateWindows(options: NSApplication.WindowListOptions, using: (NSWindow, UnsafeMutablePointer<ObjCBool>) -> Void)](nsapplication/enumeratewindows(options:using:).md)
+- [func enumerateWindows(options: NSApplication.WindowListOptions, using: (NSWindow, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratewindows%28options,using%29.md)
   Executes a block for each of the app’s windows.
-- [func makeWindowsPerform(Selector, inOrder: Bool) -> NSWindow?](nsapplication/makewindowsperform(_:inorder:).md)
+- [func makeWindowsPerform(Selector, inOrder: Bool) -> NSWindow?](./makewindowsperform%28_,inorder%29.md)
   Sends the specified message to each of the app’s window objects until one returns a non-`nil` value.
 
 

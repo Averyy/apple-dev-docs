@@ -1,19 +1,20 @@
 # getLength
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns length of data present.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 size_t getLength() const;
 ```
 
@@ -23,9 +24,10 @@ Length of data present.
 
 ## See Also
 
-- [getCapacity](osdata/getcapacity.md)
+### Inspecting a Data Object
+- [getCapacity](./getcapacity.md)
   Returns length of preallocated capacity.
-- [OSDataGetLength](osdatagetlength.md)
+- [OSDataGetLength](../osdatagetlength.md)
 
 
 ---

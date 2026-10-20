@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBMaxFSIsocEndpointReqCount](1646387-anonymous/kusbmaxfsisocendpointreqcount.md)
-- [kUSBMaxHSIsocEndpointReqCount](1646387-anonymous/kusbmaxhsisocendpointreqcount.md)
-- [kUSBMaxHSIsocFrameCount](1646387-anonymous/kusbmaxhsisocframecount.md)
+- [kUSBMaxFSIsocEndpointReqCount](./api-1646387-anonymous/kusbmaxfsisocendpointreqcount.md)
+- [kUSBMaxHSIsocEndpointReqCount](./api-1646387-anonymous/kusbmaxhsisocendpointreqcount.md)
+- [kUSBMaxHSIsocFrameCount](./api-1646387-anonymous/kusbmaxhsisocframecount.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # SpatialTrackingSession.Configuration.Camera.back
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The camera on the back of the device.
 

@@ -1,13 +1,14 @@
 # element::terminate
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Ends the lifetime of the current element, if terminate is true.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -17,7 +18,7 @@ void element::terminate(bool terminate)
 
 #### Discussion
 
-> **Note**: ![Graph](/images/com.apple.computegraph/element__terminate.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/element__terminate.svg)
 
 ## Parameters
 

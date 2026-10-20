@@ -1,15 +1,20 @@
 # u
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var u: IOBluetoothL2CAPChannelEvent.__Unnamed_union_u
+```
+
+```c
+union { ... } u;
 ```
 
 

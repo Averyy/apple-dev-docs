@@ -1,7 +1,8 @@
 # location(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the location of the user interaction in the specified view’s coordinate system.
 
@@ -16,6 +17,10 @@ Returns the location of the user interaction in the specified view’s coordinat
 
 ```swift
 func location(in view: UIView?) -> CGPoint
+```
+
+```objc
+- (CGPoint) locationInView:(UIView *) view;
 ```
 
 #### Return Value

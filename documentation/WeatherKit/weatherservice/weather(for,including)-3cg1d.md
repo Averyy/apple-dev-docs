@@ -1,7 +1,8 @@
 # weather(for:including:)
 
 **Framework**: WeatherKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the weather forecast for the requested location.
 
@@ -27,11 +28,11 @@ The requested weather data set.
 
 #### Discussion
 
-> **Note**: Weather data error `WeatherError`
+> **Throws**: Weather data error `WeatherError`
 
 This is a variadic API in which any combination of data sets can be requested and returned as a tuple. Here’s an example:
 
-```None
+```
 let current = try await service.weather(for: newYork, including: .current)
 ```
 

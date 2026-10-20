@@ -2,6 +2,7 @@
 
 **Framework**: TabletopKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -15,7 +16,8 @@ var initialState: Self.State { get }
 
 ## See Also
 
-- [associatedtype State : SeatState](tableseat/state.md)
+### Getting the seat data
+- [associatedtype State : SeatState](./state.md)
 
 
 ---

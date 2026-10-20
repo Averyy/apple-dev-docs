@@ -1,7 +1,8 @@
 # HMCameraAudioControl
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that controls a camera’s audio settings.
 
@@ -19,31 +20,36 @@ An object that controls a camera’s audio settings.
 class HMCameraAudioControl
 ```
 
+```objc
+@interface HMCameraAudioControl : HMCameraControl
+```
+
 ## Topics
 
 ### Controlling audio characteristics
-- [var mute: HMCharacteristic?](hmcameraaudiocontrol/mute.md)
-- [var volume: HMCharacteristic?](hmcameraaudiocontrol/volume.md)
+- [var mute: HMCharacteristic?](./hmcameraaudiocontrol/mute.md)
+- [var volume: HMCharacteristic?](./hmcameraaudiocontrol/volume.md)
 
 ## Relationships
 
 ### Inherits From
-- [HMCameraControl](hmcameracontrol.md)
+- [HMCameraControl](./hmcameracontrol.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var microphoneControl: HMCameraAudioControl?](hmcameraprofile/microphonecontrol.md)
+### Playing audio
+- [var microphoneControl: HMCameraAudioControl?](./hmcameraprofile/microphonecontrol.md)
   Controls the microphone settings on the camera.
-- [var speakerControl: HMCameraAudioControl?](hmcameraprofile/speakercontrol.md)
+- [var speakerControl: HMCameraAudioControl?](./hmcameraprofile/speakercontrol.md)
   Controls the speaker settings on the camera.
 
 

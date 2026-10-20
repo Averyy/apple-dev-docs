@@ -1,7 +1,8 @@
 # merge(with:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Combines elements from this publisher with those from another publisher of the same type, delivering an interleaved sequence of elements.
 

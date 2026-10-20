@@ -1,7 +1,8 @@
 # RCSService.Business.Card.Media
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Structure containing information about media in a card.
 
@@ -17,37 +18,38 @@ struct Media
 ## Topics
 
 ### Accessing card media properties
-- [let url: URL](rcsservice/business/card/media/url.md)
+- [let url: URL](./media/url.md)
   URL of media.
-- [let contentType: UTType?](rcsservice/business/card/media/contenttype.md)
+- [let contentType: UTType?](./media/contenttype.md)
   Content type of media.
-- [let fileSize: Measurement<UnitInformationStorage>](rcsservice/business/card/media/filesize.md)
+- [let fileSize: Measurement<UnitInformationStorage>](./media/filesize.md)
   File size of media.
-- [let thumbnailURL: URL?](rcsservice/business/card/media/thumbnailurl.md)
+- [let thumbnailURL: URL?](./media/thumbnailurl.md)
   URL of thumbnail.
-- [let thumbnailContentType: UTType?](rcsservice/business/card/media/thumbnailcontenttype.md)
+- [let thumbnailContentType: UTType?](./media/thumbnailcontenttype.md)
   Content type of thumbnail.
-- [let thumbnailFileSize: Measurement<UnitInformationStorage>?](rcsservice/business/card/media/thumbnailfilesize.md)
+- [let thumbnailFileSize: Measurement<UnitInformationStorage>?](./media/thumbnailfilesize.md)
   File size of thumbnail.
-- [let displayHeight: RCSService.Business.Card.Media.Height](rcsservice/business/card/media/displayheight.md)
+- [let displayHeight: RCSService.Business.Card.Media.Height](./media/displayheight.md)
   The display height for media.
-- [RCSService.Business.Card.Media.Height](rcsservice/business/card/media/height.md)
+- [RCSService.Business.Card.Media.Height](./media/height.md)
   Enumeration indicating the height of the media.
-- [let description: String?](rcsservice/business/card/media/description.md)
+- [let description: String?](./media/description.md)
   Description of media.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [RCSService.Business.Card.Width](rcsservice/business/card/width.md)
+### Supporting types
+- [RCSService.Business.Card.Width](./width.md)
   Enumeration specifying the width of a card.
 
 

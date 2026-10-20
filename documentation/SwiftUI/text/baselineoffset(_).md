@@ -1,7 +1,8 @@
 # baselineOffset(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the vertical offset for the text relative to its baseline.
 
@@ -45,9 +46,9 @@ HStack(alignment: .top) {
 
 By drawing a border around each text view, you can see how the text moves, and how that affects the view.
 
-![Three text views, each with the word “Hello” outlined by a border and](/images/com.apple.SwiftUI/SwiftUI-Text-baselineOffset@2x.png)
+![Three text views, each with the word “Hello” outlined by a border and](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-Text-baselineOffset@2x.png)
 
-The first view, with a negative offset, grows downward to handle the lowered text. The last view, with a positive offset, grows upward. The enclosing [`HStack`](hstack.md) instance, shown in gray, ensures all the text views remain aligned at their top edge, regardless of the offset.
+The first view, with a negative offset, grows downward to handle the lowered text. The last view, with a positive offset, grows upward. The enclosing [`HStack`](../hstack.md) instance, shown in gray, ensures all the text views remain aligned at their top edge, regardless of the offset.
 
 ## Parameters
 
@@ -55,35 +56,36 @@ The first view, with a negative offset, grows downward to handle the lowered tex
 
 ## See Also
 
-- [func foregroundStyle<S>(S) -> Text](text/foregroundstyle(_:).md)
+### Styling the view’s text
+- [func foregroundStyle<S>(S) -> Text](./foregroundstyle%28_%29.md)
   Sets the style of the text displayed by this view.
-- [func bold() -> Text](text/bold.md)
+- [func bold() -> Text](./bold%28%29.md)
   Applies a bold or emphasized treatment to the fonts of the text.
-- [func bold(Bool) -> Text](text/bold(_:).md)
+- [func bold(Bool) -> Text](./bold%28_%29.md)
   Applies a bold font weight to the text.
-- [func italic() -> Text](text/italic.md)
+- [func italic() -> Text](./italic%28%29.md)
   Applies italics to the text.
-- [func italic(Bool) -> Text](text/italic(_:).md)
+- [func italic(Bool) -> Text](./italic%28_%29.md)
   Applies italics to the text.
-- [func strikethrough(Bool, color: Color?) -> Text](text/strikethrough(_:color:).md)
+- [func strikethrough(Bool, color: Color?) -> Text](./strikethrough%28_,color%29.md)
   Applies a strikethrough to the text.
-- [func strikethrough(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> Text](text/strikethrough(_:pattern:color:).md)
+- [func strikethrough(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> Text](./strikethrough%28_,pattern,color%29.md)
   Applies a strikethrough to the text.
-- [func underline(Bool, color: Color?) -> Text](text/underline(_:color:).md)
+- [func underline(Bool, color: Color?) -> Text](./underline%28_,color%29.md)
   Applies an underline to the text.
-- [func underline(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> Text](text/underline(_:pattern:color:).md)
+- [func underline(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> Text](./underline%28_,pattern,color%29.md)
   Applies an underline to the text.
-- [func monospaced(Bool) -> Text](text/monospaced(_:).md)
+- [func monospaced(Bool) -> Text](./monospaced%28_%29.md)
   Modifies the font of the text to use the fixed-width variant of the current font, if possible.
-- [func monospacedDigit() -> Text](text/monospaceddigit.md)
+- [func monospacedDigit() -> Text](./monospaceddigit%28%29.md)
   Modifies the text view’s font to use fixed-width digits, while leaving other characters proportionally spaced.
-- [func kerning(CGFloat) -> Text](text/kerning(_:).md)
+- [func kerning(CGFloat) -> Text](./kerning%28_%29.md)
   Sets the spacing, or kerning, between characters.
-- [func tracking(CGFloat) -> Text](text/tracking(_:).md)
+- [func tracking(CGFloat) -> Text](./tracking%28_%29.md)
   Sets the tracking for the text.
-- [Text.Case](text/case.md)
+- [Text.Case](./case.md)
   A scheme for transforming the capitalization of characters within text.
-- [struct DateStyle](text/datestyle.md)
+- [struct DateStyle](./datestyle.md)
   A predefined style used to display a `Date`.
 
 

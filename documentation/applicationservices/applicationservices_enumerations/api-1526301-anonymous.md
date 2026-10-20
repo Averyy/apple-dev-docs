@@ -5,13 +5,13 @@
 ## Topics
 
 ### Constants
-- [var badPasteboardFlavorErr: Int](badpasteboardflavorerr.md)
-- [var badPasteboardIndexErr: Int](badpasteboardindexerr.md)
-- [var badPasteboardItemErr: Int](badpasteboarditemerr.md)
-- [var badPasteboardSyncErr: Int](badpasteboardsyncerr.md)
-- [var duplicatePasteboardFlavorErr: Int](duplicatepasteboardflavorerr.md)
-- [var noPasteboardPromiseKeeperErr: Int](nopasteboardpromisekeepererr.md)
-- [var notPasteboardOwnerErr: Int](notpasteboardownererr.md)
+- [var badPasteboardFlavorErr: Int](../badpasteboardflavorerr.md)
+- [var badPasteboardIndexErr: Int](../badpasteboardindexerr.md)
+- [var badPasteboardItemErr: Int](../badpasteboarditemerr.md)
+- [var badPasteboardSyncErr: Int](../badpasteboardsyncerr.md)
+- [var duplicatePasteboardFlavorErr: Int](../duplicatepasteboardflavorerr.md)
+- [var noPasteboardPromiseKeeperErr: Int](../nopasteboardpromisekeepererr.md)
+- [var notPasteboardOwnerErr: Int](../notpasteboardownererr.md)
 
 
 ---

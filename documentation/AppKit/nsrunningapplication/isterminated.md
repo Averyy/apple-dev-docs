@@ -1,7 +1,8 @@
 # isTerminated
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates that the receiver’s application has terminated.
 
@@ -14,19 +15,24 @@ Indicates that the receiver’s application has terminated.
 var isTerminated: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isTerminated) BOOL terminated;
+```
+
 #### Discussion
 
-The value of terminated is [`true`](https://developer.apple.com/documentation/swift/true) if the receiver’s application has terminated, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+The value of terminated is [`true`](../../Swift/true.md) if the receiver’s application has terminated, otherwise [`false`](../../Swift/false.md).
 
 This property is observable using key-value observing.
 
 ## See Also
 
-- [func forceTerminate() -> Bool](nsrunningapplication/forceterminate.md)
+### Terminating applications
+- [func forceTerminate() -> Bool](./forceterminate%28%29.md)
   Attempts to force the receiver to quit.
-- [func terminate() -> Bool](nsrunningapplication/terminate.md)
+- [func terminate() -> Bool](./terminate%28%29.md)
   Attempts to quit the receiver normally.
-- [class func terminateAutomaticallyTerminableApplications()](nsrunningapplication/terminateautomaticallyterminableapplications.md)
+- [class func terminateAutomaticallyTerminableApplications()](./terminateautomaticallyterminableapplications%28%29.md)
   Terminates invisibly running applications as if triggered by system memory pressure.
 
 

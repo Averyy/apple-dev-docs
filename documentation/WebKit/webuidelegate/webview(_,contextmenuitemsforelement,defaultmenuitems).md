@@ -1,17 +1,22 @@
 # webView(_:contextMenuItemsForElement:defaultMenuItems:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns menu items to display in an element’s contextual menu.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 optional func webView(_ sender: WebView!, contextMenuItemsForElement element: [AnyHashable : Any]!, defaultMenuItems: [Any]!) -> [Any]!
+```
+
+```objc
+- (NSArray *) webView:(WebView *) sender contextMenuItemsForElement:(NSDictionary *) element defaultMenuItems:(NSArray *) defaultMenuItems;
 ```
 
 #### Return Value
@@ -25,12 +30,13 @@ This method is invoked every time the user clicks the right mouse button, or con
 ## Parameters
 
 - `sender`: The web view that sent the message.
-- `element`: A dictionary that describes the element that was clicked. See “Constants” in [`WebView`](webview-swift.class.md) for information about the key-value pairs in this dictionary.
-- `defaultMenuItems`: The menu items included by default in the element’s contextual menu. See [`Menu Item Tags`](menu-item-tags.md) for values you can use to differentiate among specific menu items.
+- `element`: A dictionary that describes the element that was clicked. See “Constants” in [`WebView`](../webview-swift.class.md) for information about the key-value pairs in this dictionary.
+- `defaultMenuItems`: The menu items included by default in the element’s contextual menu. See [Menu Item Tags](../menu-item-tags.md) for values you can use to differentiate among specific menu items.
 
 ## See Also
 
-- [func webView(WebView!, mouseDidMoveOverElement: [AnyHashable : Any]!, modifierFlags: Int)](webuidelegate/webview(_:mousedidmoveoverelement:modifierflags:).md)
+### Handling Mouse Events
+- [func webView(WebView!, mouseDidMoveOverElement: [AnyHashable : Any]!, modifierFlags: Int)](./webview%28_,mousedidmoveoverelement,modifierflags%29.md)
   Updates information about the element the user is mousing over.
 
 

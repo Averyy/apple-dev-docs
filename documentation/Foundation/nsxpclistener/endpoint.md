@@ -1,7 +1,8 @@
 # endpoint
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an endpoint object that may be sent over an existing connection.
 
@@ -20,13 +21,18 @@ Returns an endpoint object that may be sent over an existing connection.
 var endpoint: NSXPCListenerEndpoint { get }
 ```
 
+```objc
+@property (retain, readonly) NSXPCListenerEndpoint * endpoint;
+```
+
 #### Discussion
 
-The receiver of the endpoint can use this object to create a new connection to this [`NSXPCListener`](nsxpclistener.md) object. The resulting `NSXPCListenerEndpoint` object uniquely names this listener object across connections.
+The receiver of the endpoint can use this object to create a new connection to this [`NSXPCListener`](../nsxpclistener.md) object. The resulting `NSXPCListenerEndpoint` object uniquely names this listener object across connections.
 
 ## See Also
 
-- [Daemons and Services Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/Introduction.html#//apple_ref/doc/uid/10000172i)
+### Related Documentation
+- [Daemons and Services Programming Guide](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/Introduction.html#//apple_ref/doc/uid/10000172i)
 
 
 ---

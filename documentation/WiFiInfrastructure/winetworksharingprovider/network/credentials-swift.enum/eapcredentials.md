@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.Credentials.EAPCredentials
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure containing the credentials for a Wi-Fi network with 802.1x enterprise authentication.
 
@@ -19,48 +20,48 @@ struct EAPCredentials
 ## Topics
 
 ### Structures
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.ClientIdentity](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/clientidentity-swift.struct.md)
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.ClientIdentity](./eapcredentials/clientidentity-swift.struct.md)
   A structure that represents the client’s identity.
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.FASTConfiguration](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/fastconfiguration-swift.struct.md)
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.FASTConfiguration](./eapcredentials/fastconfiguration-swift.struct.md)
   Configuration for EAP-FAST.
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/tlsconfiguration-swift.struct.md)
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration](./eapcredentials/tlsconfiguration-swift.struct.md)
   Configuration for the TLS protocol.
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/ttlsconfiguration-swift.struct.md)
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration](./eapcredentials/ttlsconfiguration-swift.struct.md)
   The configuration for authentication that uses EAP-TTLS.
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TrustedServers](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/trustedservers-swift.struct.md)
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.TrustedServers](./eapcredentials/trustedservers-swift.struct.md)
   A structure that describes trusted authentication servers.
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.UserLogin](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/userlogin-swift.struct.md)
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.UserLogin](./eapcredentials/userlogin-swift.struct.md)
   A person’s login information.
 ### Instance Properties
-- [let acceptedEAPTypes: Set<WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType>](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/acceptedeaptypes.md)
+- [let acceptedEAPTypes: Set<WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType>](./eapcredentials/acceptedeaptypes.md)
   The EAP types allowed for this network.
-- [let clientIdentity: WINetworkSharingProvider.Network.Credentials.EAPCredentials.ClientIdentity?](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/clientidentity-swift.property.md)
+- [let clientIdentity: WINetworkSharingProvider.Network.Credentials.EAPCredentials.ClientIdentity?](./eapcredentials/clientidentity-swift.property.md)
   The information used to authenticate the client’s identity.
-- [let fastConfiguration: WINetworkSharingProvider.Network.Credentials.EAPCredentials.FASTConfiguration?](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/fastconfiguration-swift.property.md)
+- [let fastConfiguration: WINetworkSharingProvider.Network.Credentials.EAPCredentials.FASTConfiguration?](./eapcredentials/fastconfiguration-swift.property.md)
   The configuration to use for EAP-FAST.
-- [let outerIdentity: String?](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/outeridentity.md)
+- [let outerIdentity: String?](./eapcredentials/outeridentity.md)
   A name that hides the user’s actual name.
-- [let tlsConfiguration: WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration?](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/tlsconfiguration-swift.property.md)
+- [let tlsConfiguration: WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration?](./eapcredentials/tlsconfiguration-swift.property.md)
   The configuration to use for Transport Layer Security (TLS).
-- [let trustedServers: WINetworkSharingProvider.Network.Credentials.EAPCredentials.TrustedServers](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/trustedservers-swift.property.md)
+- [let trustedServers: WINetworkSharingProvider.Network.Credentials.EAPCredentials.TrustedServers](./eapcredentials/trustedservers-swift.property.md)
   The information used to authenticate the server.
-- [let ttlsConfiguration: WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration?](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/ttlsconfiguration-swift.property.md)
+- [let ttlsConfiguration: WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration?](./eapcredentials/ttlsconfiguration-swift.property.md)
   The configuration to use for Tunneled Transport Layer Security (TTLS).
-- [let userLogin: WINetworkSharingProvider.Network.Credentials.EAPCredentials.UserLogin?](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/userlogin-swift.property.md)
+- [let userLogin: WINetworkSharingProvider.Network.Credentials.EAPCredentials.UserLogin?](./eapcredentials/userlogin-swift.property.md)
   The information used authenticate the user and log them in.
 ### Enumerations
-- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/eaptype.md)
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType](./eapcredentials/eaptype.md)
   The EAP types allowed for this network
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

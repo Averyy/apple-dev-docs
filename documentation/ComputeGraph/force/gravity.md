@@ -1,13 +1,14 @@
 # force::gravity
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies a gravity force to the current element
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -17,7 +18,7 @@ void force::gravity(float gravity)
 
 #### Discussion
 
-> **Note**: ![Graph](/images/com.apple.computegraph/force__gravity.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/force__gravity.svg)
 
 ## Parameters
 

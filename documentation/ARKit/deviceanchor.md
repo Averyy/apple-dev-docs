@@ -1,7 +1,8 @@
 # DeviceAnchor
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The position and orientation of Apple Vision Pro.
 
@@ -17,48 +18,49 @@ struct DeviceAnchor
 
 #### Overview
 
-You create a device anchor by starting an [`ARKitSession`](arkitsession.md) with a [`WorldTrackingProvider`](worldtrackingprovider.md) and calling its [`queryDeviceAnchor(atTimestamp:)`](worldtrackingprovider/querydeviceanchor(attimestamp:).md) method.
+You create a device anchor by starting an [`ARKitSession`](./arkitsession.md) with a [`WorldTrackingProvider`](./worldtrackingprovider.md) and calling its [`queryDeviceAnchor(atTimestamp:)`](./worldtrackingprovider/querydeviceanchor%28attimestamp%29.md) method.
 
 ## Topics
 
 ### Inspecting a device anchor
-- [var originFromAnchorTransform: simd_float4x4](deviceanchor/originfromanchortransform.md)
+- [var originFromAnchorTransform: simd_float4x4](./deviceanchor/originfromanchortransform.md)
   The transform from the device to the origin coordinate system.
-- [var trackingState: DeviceAnchor.TrackingState](deviceanchor/trackingstate-swift.property.md)
+- [var trackingState: DeviceAnchor.TrackingState](./deviceanchor/trackingstate-swift.property.md)
   Tracking state of this anchor
-- [DeviceAnchor.TrackingState](deviceanchor/trackingstate-swift.enum.md)
+- [DeviceAnchor.TrackingState](./deviceanchor/trackingstate-swift.enum.md)
   Values that describe the tracking state of a device anchor.
-- [var isTracked: Bool](deviceanchor/istracked.md)
+- [var isTracked: Bool](./deviceanchor/istracked.md)
   A Boolean value that indicates whether ARKit is tracking the device.
-- [var description: String](deviceanchor/description.md)
+- [var description: String](./deviceanchor/description.md)
   A textual representation of this anchor.
-- [var id: UUID](deviceanchor/id.md)
+- [var id: UUID](./deviceanchor/id.md)
   The unique identifier of this anchor.
 ### Default Implementations
-- [ARKitCoordinateSpaceProviding Implementations](deviceanchor/arkitcoordinatespaceproviding-implementations.md)
+- [ARKitCoordinateSpaceProviding Implementations](./deviceanchor/arkitcoordinatespaceproviding-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
-- [Anchor](anchor.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TrackableAnchor](trackableanchor.md)
+- [ARKitCoordinateSpaceProviding](./arkitcoordinatespaceproviding.md)
+- [Anchor](./anchor.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TrackableAnchor](./trackableanchor.md)
 
 ## See Also
 
-- [Tracking specific points in world space](../visionos/tracking-points-in-world-space.md)
+### World tracking
+- [Tracking specific points in world space](../visionOS/tracking-points-in-world-space.md)
   Retrieve the position and orientation of anchors your app stores in ARKit.
-- [Placing entities using head and device transform](../visionos/placing-entities-using-head-and-device-transform.md)
+- [Placing entities using head and device transform](../visionOS/placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
-- [class WorldTrackingProvider](worldtrackingprovider.md)
+- [class WorldTrackingProvider](./worldtrackingprovider.md)
   A source of live data about the device pose and anchors in a person’s surroundings.
-- [struct WorldAnchor](worldanchor.md)
+- [struct WorldAnchor](./worldanchor.md)
   A fixed location in a person’s surroundings.
 
 

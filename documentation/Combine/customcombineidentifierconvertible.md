@@ -1,7 +1,8 @@
 # CustomCombineIdentifierConvertible
 
 **Framework**: Combine  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for uniquely identifying publisher streams.
 
@@ -22,7 +23,7 @@ protocol CustomCombineIdentifierConvertible
 
 #### Overview
 
-If you create a custom [`Subscription`](subscription.md) or [`Subscriber`](subscriber.md) type, implement this protocol so that development tools can uniquely identify publisher chains in your app. If your type is a class, Combine provides an implementation of [`combineIdentifier`](customcombineidentifierconvertible/combineidentifier.md) for you. If your type is a structure, set up the identifier as follows:
+If you create a custom [`Subscription`](./subscription.md) or [`Subscriber`](./subscriber.md) type, implement this protocol so that development tools can uniquely identify publisher chains in your app. If your type is a class, Combine provides an implementation of [`combineIdentifier`](./customcombineidentifierconvertible/combineidentifier.md) for you. If your type is a structure, set up the identifier as follows:
 
 ```swift
 let combineIdentifier = CombineIdentifier()
@@ -31,22 +32,23 @@ let combineIdentifier = CombineIdentifier()
 ## Topics
 
 ### Identifying publisher streams
-- [var combineIdentifier: CombineIdentifier](customcombineidentifierconvertible/combineidentifier.md)
+- [var combineIdentifier: CombineIdentifier](./customcombineidentifierconvertible/combineidentifier.md)
   A unique identifier for identifying publisher streams.
 
 ## Relationships
 
 ### Inherited By
-- [Subscriber](subscriber.md)
-- [Subscription](subscription.md)
+- [Subscriber](./subscriber.md)
+- [Subscription](./subscription.md)
 ### Conforming Types
-- [AnySubscriber](anysubscriber.md)
-- [Subscribers.Assign](subscribers/assign.md)
-- [Subscribers.Sink](subscribers/sink.md)
+- [AnySubscriber](./anysubscriber.md)
+- [Subscribers.Assign](./subscribers/assign.md)
+- [Subscribers.Sink](./subscribers/sink.md)
 
 ## See Also
 
-- [struct CombineIdentifier](combineidentifier.md)
+### Debugging Identifiers
+- [struct CombineIdentifier](./combineidentifier.md)
   A unique identifier for identifying publisher streams.
 
 

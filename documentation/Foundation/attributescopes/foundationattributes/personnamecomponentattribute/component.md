@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.PersonNameComponentAttribute.Component
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 15.0+
@@ -21,26 +22,26 @@ enum Component
 ## Topics
 
 ### Enumeration Cases
-- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute.Component.delimiter](attributescopes/foundationattributes/personnamecomponentattribute/component/delimiter.md)
-- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute.Component.familyName](attributescopes/foundationattributes/personnamecomponentattribute/component/familyname.md)
-- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute.Component.givenName](attributescopes/foundationattributes/personnamecomponentattribute/component/givenname.md)
-- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute.Component.middleName](attributescopes/foundationattributes/personnamecomponentattribute/component/middlename.md)
-- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute.Component.namePrefix](attributescopes/foundationattributes/personnamecomponentattribute/component/nameprefix.md)
-- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute.Component.nameSuffix](attributescopes/foundationattributes/personnamecomponentattribute/component/namesuffix.md)
-- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute.Component.nickname](attributescopes/foundationattributes/personnamecomponentattribute/component/nickname.md)
+- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute.Component.delimiter](./component/delimiter.md)
+- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute.Component.familyName](./component/familyname.md)
+- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute.Component.givenName](./component/givenname.md)
+- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute.Component.middleName](./component/middlename.md)
+- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute.Component.namePrefix](./component/nameprefix.md)
+- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute.Component.nameSuffix](./component/namesuffix.md)
+- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute.Component.nickname](./component/nickname.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../../Swift/copyable.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Escapable](../../../../Swift/escapable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [RawRepresentable](../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

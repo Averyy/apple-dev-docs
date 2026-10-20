@@ -1,7 +1,8 @@
 # tileDefinitions
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tile definitions used for this rule.
 
@@ -20,17 +21,22 @@ The tile definitions used for this rule.
 var tileDefinitions: [SKTileDefinition] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<SKTileDefinition *> * tileDefinitions;
+```
+
 #### Discussion
 
 When this rule is evaluated and its conditions met, one of the definitions is randomly selected for placement based on their placement weights.
 
 ## See Also
 
-- [var adjacency: SKTileAdjacencyMask](sktilegrouprule/adjacency.md)
+### Accessing or Setting Tile Group Rule Properties
+- [var adjacency: SKTileAdjacencyMask](./adjacency.md)
   The adjacency requirement for this rule.
-- [struct SKTileAdjacencyMask](sktileadjacencymask.md)
+- [struct SKTileAdjacencyMask](../sktileadjacencymask.md)
   An enumeration defining how neighboring tiles are automatically placed next to each other.
-- [var name: String?](sktilegrouprule/name.md)
+- [var name: String?](./name.md)
   A name associated with the tile group rule.
 
 

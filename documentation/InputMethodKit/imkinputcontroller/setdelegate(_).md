@@ -1,7 +1,8 @@
 # setDelegate(_:)
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the delegate for input controller  object.
 
@@ -14,13 +15,18 @@ Sets the delegate for input controller  object.
 func setDelegate(_ newDelegate: Any!)
 ```
 
+```objc
+- (void) setDelegate:(id) newDelegate;
+```
+
 ## Parameters
 
 - `newDelegate`: The delegate object to set.
 
 ## See Also
 
-- [func delegate() -> Any!](imkinputcontroller/delegate.md)
+### Managing the Delegate
+- [func delegate() -> Any!](./delegate%28%29.md)
   Returns the delegate for input controller  object.
 
 

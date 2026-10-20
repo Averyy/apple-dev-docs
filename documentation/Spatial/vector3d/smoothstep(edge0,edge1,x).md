@@ -1,7 +1,8 @@
 # smoothstep(edge0:edge1:x:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Spatial vector that represents the smooth interpolation at `x` between two vectors.
 

@@ -2,22 +2,27 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
-A [`CIImage`](ciimage.md) object that encapsulates the operations configured in the filter.
+A [`CIImage`](../ciimage.md) object that encapsulates the operations configured in the filter.
 
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var outputImage: CIImage? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) CIImage * outputImage;
 ```
 
 

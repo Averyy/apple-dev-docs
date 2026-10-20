@@ -1,7 +1,8 @@
 # SecIdentityCopySystemIdentity(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtains the system identity associated with a specified domain.
 
@@ -14,18 +15,22 @@ Obtains the system identity associated with a specified domain.
 func SecIdentityCopySystemIdentity(_ domain: CFString, _ idRef: UnsafeMutablePointer<SecIdentity?>, _ actualDomain: UnsafeMutablePointer<CFString?>?) -> OSStatus
 ```
 
+```c
+OSStatus SecIdentityCopySystemIdentity(CFStringRef domain, SecIdentityRef*idRef, CFStringRef*actualDomain);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
-If no system identity exists for the specified domain, a domain specific alternate may be returned instead. This is typically (but not exclusively) the system default identity. ([`kSecIdentityDomainDefault`](ksecidentitydomaindefault.md)).
+If no system identity exists for the specified domain, a domain specific alternate may be returned instead. This is typically (but not exclusively) the system default identity. ([`kSecIdentityDomainDefault`](./ksecidentitydomaindefault.md)).
 
 ## Parameters
 
-- `domain`: The domain for which you want to find an identity, typically in reverse DNS notation, such as `com.apple.security`. You may also pass the values defined in [`System Identity Domains`](system-identity-domains.md).
-- `idRef`: On return, the identity object of the system-wide identity associated with the specified domain. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
+- `domain`: The domain for which you want to find an identity, typically in reverse DNS notation, such as `com.apple.security`. You may also pass the values defined in [System Identity Domains](./system-identity-domains.md).
+- `idRef`: On return, the identity object of the system-wide identity associated with the specified domain. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release this object when you are finished with it.
 - `actualDomain`: On return, the actual domain name of the returned identity object is returned here. This may be different from the requested domain. Pass `NULL` if you do not want this information.
 
 

@@ -1,7 +1,8 @@
 # entityDescription
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The entity description of the persistent history transaction entity.
 
@@ -20,15 +21,20 @@ The entity description of the persistent history transaction entity.
 class var entityDescription: NSEntityDescription? { get }
 ```
 
+```objc
+@property (class, readonly, nullable) NSEntityDescription * entityDescription;
+```
+
 #### Discussion
 
-The entity description of [`NSPersistentHistoryTransaction`](nspersistenthistorytransaction.md) lists the properties of the persistent history change. This can be useful for filtering your request.
+The entity description of [`NSPersistentHistoryTransaction`](../nspersistenthistorytransaction.md) lists the properties of the persistent history change. This can be useful for filtering your request.
 
 ## See Also
 
-- [class var fetchRequest: NSFetchRequest<any NSFetchRequestResult>?](nspersistenthistorytransaction/fetchrequest.md)
+### Customizing History Fetch Requests
+- [class var fetchRequest: NSFetchRequest<any NSFetchRequestResult>?](./fetchrequest.md)
   A fetch request that has the persistent history transaction as the entity.
-- [class func entityDescription(with: NSManagedObjectContext) -> NSEntityDescription?](nspersistenthistorytransaction/entitydescription(with:).md)
+- [class func entityDescription(with: NSManagedObjectContext) -> NSEntityDescription?](./entitydescription%28with%29.md)
   Requests an entity description using the provided context for the managed object type affected by the transaction.
 
 

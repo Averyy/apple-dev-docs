@@ -1,18 +1,19 @@
 # SCNPyramid
 
 **Framework**: SceneKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A right rectangular pyramid geometry.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,73 +21,78 @@ A right rectangular pyramid geometry.
 class SCNPyramid
 ```
 
+```objc
+@interface SCNPyramid : SCNGeometry
+```
+
 #### Overview
 
-![None](/images/com.apple.scenekit/media-2929810@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929810@2x.png)
 
-A pyramid defines the surface of a solid whose base is a rectangle, and whose four triangular side faces converge at a point centered above its base. Define the shape of the pyramid’s base in the x- and z-axis dimensions of its local coordinate space with the [`width`](scnpyramid/width.md) and [`length`](scnpyramid/length.md) properties, and its extent in the y-axis dimension with the [`height`](scnpyramid/height.md) property. To position and orient a pyramid in a scene, attach it to the [`geometry`](scnnode/geometry.md) property of an [`SCNNode`](scnnode.md) object.
+A pyramid defines the surface of a solid whose base is a rectangle, and whose four triangular side faces converge at a point centered above its base. Define the shape of the pyramid’s base in the x- and z-axis dimensions of its local coordinate space with the [`width`](./scnpyramid/width.md) and [`length`](./scnpyramid/length.md) properties, and its extent in the y-axis dimension with the [`height`](./scnpyramid/height.md) property. To position and orient a pyramid in a scene, attach it to the [`geometry`](./scnnode/geometry.md) property of an [`SCNNode`](./scnnode.md) object.
 
-Control the level of detail with the [`widthSegmentCount`](scnpyramid/widthsegmentcount.md), [`lengthSegmentCount`](scnpyramid/lengthsegmentcount.md), and [`heightSegmentCount`](scnpyramid/heightsegmentcount.md) properties. A higher segment count produces more vertices, which can improve rendering quality for certain lighting models or custom shader effects, but at a cost to rendering performance.
+Control the level of detail with the [`widthSegmentCount`](./scnpyramid/widthsegmentcount.md), [`lengthSegmentCount`](./scnpyramid/lengthsegmentcount.md), and [`heightSegmentCount`](./scnpyramid/heightsegmentcount.md) properties. A higher segment count produces more vertices, which can improve rendering quality for certain lighting models or custom shader effects, but at a cost to rendering performance.
 
-A pyramid contains five [`SCNGeometryElement`](scngeometryelement.md) objects, corresponding to its base and each of its four sides. SceneKit can render each element using a different material. For details, see the [`materials`](scngeometry/materials.md) property in [`SCNGeometry`](scngeometry.md).
+A pyramid contains five [`SCNGeometryElement`](./scngeometryelement.md) objects, corresponding to its base and each of its four sides. SceneKit can render each element using a different material. For details, see the [`materials`](./scngeometry/materials.md) property in [`SCNGeometry`](./scngeometry.md).
 
 ## Topics
 
 ### Creating a Pyramid
-- [convenience init(width: CGFloat, height: CGFloat, length: CGFloat)](scnpyramid/init(width:height:length:).md)
+- [convenience init(width: CGFloat, height: CGFloat, length: CGFloat)](./scnpyramid/init%28width,height,length%29.md)
   Creates a pyramid geometry with the specified width, height, and length.
 ### Adjusting a Pyramid’s Dimensions
-- [var width: CGFloat](scnpyramid/width.md)
+- [var width: CGFloat](./scnpyramid/width.md)
   The extent of the pyramid along its x-axis. Animatable.
-- [var height: CGFloat](scnpyramid/height.md)
+- [var height: CGFloat](./scnpyramid/height.md)
   The extent of the pyramid along its y-axis. Animatable.
-- [var length: CGFloat](scnpyramid/length.md)
+- [var length: CGFloat](./scnpyramid/length.md)
   The extent of the pyramid along its z-axis. Animatable.
 ### Adjusting Geometric Detail
-- [var widthSegmentCount: Int](scnpyramid/widthsegmentcount.md)
+- [var widthSegmentCount: Int](./scnpyramid/widthsegmentcount.md)
   The number of subdivisions in each face of the pyramid along its x-axis. Animatable.
-- [var heightSegmentCount: Int](scnpyramid/heightsegmentcount.md)
+- [var heightSegmentCount: Int](./scnpyramid/heightsegmentcount.md)
   The number of subdivisions in each face of the pyramid along its y-axis. Animatable.
-- [var lengthSegmentCount: Int](scnpyramid/lengthsegmentcount.md)
+- [var lengthSegmentCount: Int](./scnpyramid/lengthsegmentcount.md)
   The number of subdivisions in each face of the pyramid along its z-axis. Animatable.
 
 ## Relationships
 
 ### Inherits From
-- [SCNGeometry](scngeometry.md)
+- [SCNGeometry](./scngeometry.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [SCNAnimatable](scnanimatable.md)
-- [SCNBoundingVolume](scnboundingvolume.md)
-- [SCNShadable](scnshadable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [SCNAnimatable](./scnanimatable.md)
+- [SCNBoundingVolume](./scnboundingvolume.md)
+- [SCNShadable](./scnshadable.md)
 
 ## See Also
 
-- [class SCNFloor](scnfloor.md)
+### Basic Shapes
+- [class SCNFloor](./scnfloor.md)
   A plane that can optionally display a reflection of the scene above it.
-- [class SCNBox](scnbox.md)
+- [class SCNBox](./scnbox.md)
   A six-sided polyhedron geometry whose faces are all rectangles, optionally with rounded edges and corners.
-- [class SCNCapsule](scncapsule.md)
+- [class SCNCapsule](./scncapsule.md)
   A right circular cylinder geometry whose ends are capped with hemispheres.
-- [class SCNCone](scncone.md)
+- [class SCNCone](./scncone.md)
   A right circular cone or frustum geometry.
-- [class SCNCylinder](scncylinder.md)
+- [class SCNCylinder](./scncylinder.md)
   A right circular cylinder geometry.
-- [class SCNPlane](scnplane.md)
+- [class SCNPlane](./scnplane.md)
   A rectangular, one-sided plane geometry of specified width and height.
-- [class SCNSphere](scnsphere.md)
+- [class SCNSphere](./scnsphere.md)
   A sphere (or ball or globe) geometry.
-- [class SCNTorus](scntorus.md)
+- [class SCNTorus](./scntorus.md)
   A torus, or ring-shaped geometry.
-- [class SCNTube](scntube.md)
+- [class SCNTube](./scntube.md)
   A tube or pipe geometry—a right circular cylinder with a circular hole along its central axis.
 
 

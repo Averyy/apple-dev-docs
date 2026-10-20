@@ -1,7 +1,8 @@
 # BillingEvent
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The user interaction that triggers a charge for a campaign.
 
@@ -10,9 +11,14 @@ The user interaction that triggers a charge for a campaign.
 
 ## Declaration
 
-```swift
+```
 string BillingEvent
 ```
+
+## Possible Values
+
+- `TAPS`: The campaign is charged each time a user taps an ad. For App Ads campaigns, compatible with `MANUAL_CPT` and `MAX_CONVERSIONS`. For Apple Maps campaigns, compatible with `MANUAL_CPT` and `MAX_ENGAGEMENTS`.
+- `IMPRESSIONS`: The campaign is charged per thousand impressions (CPM). Required for the `MANUAL_CPM` bid strategy. Available only for Apple Maps campaigns (`promotedObjectType: BUSINESS_BRAND`).
 
 #### Discussion
 
@@ -22,19 +28,19 @@ App Store campaigns use `TAPS`. Apple Maps campaigns support both `TAPS` (for ta
 
 ## See Also
 
-- [type CampaignStatus](campaignstatus.md)
+- [type CampaignStatus](./campaignstatus.md)
   Advertiser-configurable run state for a campaign.
-- [type CampaignSystemStatus](campaignsystemstatus.md)
+- [type CampaignSystemStatus](./campaignsystemstatus.md)
   System-evaluated delivery state indicating whether a campaign is currently running.
-- [type CampaignDisplayStatus](campaigndisplaystatus.md)
+- [type CampaignDisplayStatus](./campaigndisplaystatus.md)
   Rolled-up delivery state for a campaign, combining advertiser settings and system conditions into a single user-facing label.
-- [type CampaignSystemStatusReason](campaignsystemstatusreason.md)
+- [type CampaignSystemStatusReason](./campaignsystemstatusreason.md)
   A reason code explaining why a campaign is not currently running.
-- [type CampaignSystemLimitedStatusReason](campaignsystemlimitedstatusreason.md)
+- [type CampaignSystemLimitedStatusReason](./campaignsystemlimitedstatusreason.md)
   A reason code indicating that a campaign is running but delivering at reduced capacity.
-- [type PromotedObjectType](promotedobjecttype.md)
+- [type PromotedObjectType](./promotedobjecttype.md)
   The category of entity that a campaign promotes, determining which values apply.
-- [type Currency](currency.md)
+- [type Currency](./currency.md)
   The currency code used for monetary values in the Apple Ads Platform API.
 
 

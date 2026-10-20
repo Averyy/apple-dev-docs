@@ -1,17 +1,24 @@
 # SecTransformMetaAttributeType.ref
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A direct reference to an attribute’s value.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
 ```swift
 case ref
+```
+
+```c
+kSecTransformMetaAttributeRef
 ```
 
 #### Discussion

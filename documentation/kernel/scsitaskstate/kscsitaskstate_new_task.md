@@ -1,14 +1,15 @@
 # kSCSITaskState_NEW_TASK
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 kSCSITaskState_NEW_TASK = 0
 ```
 

@@ -1,7 +1,8 @@
 # init(scale:texture:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a clearcoat object using a single value or a texture.
 
@@ -11,7 +12,7 @@ Creates a clearcoat object using a single value or a texture.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -32,9 +33,10 @@ If you specify `texture`, RealityKit calculates the clearcoat intensity for the 
 
 ## See Also
 
-- [init(floatLiteral: Float)](physicallybasedmaterial/clearcoat-swift.struct/init(floatliteral:).md)
+### Creating a clearcoat object
+- [init(floatLiteral: Float)](./init%28floatliteral%29.md)
   Creates a clearcoat object using a single value.
-- [init(CustomMaterial.Clearcoat)](physicallybasedmaterial/clearcoat-swift.struct/init(_:).md)
+- [init(CustomMaterial.Clearcoat)](./init%28_%29.md)
   Creates a clearcoat object from a custom material’s clearcoat property.
 
 

@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.U
 
 # mlx.nn.Upsample
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Upsample.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Upsample
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Upsample
-
 **class Upsample(*scale_factor: float | Tuple*, *mode: Literal['nearest', 'linear', 'cubic'] = 'nearest'*, *align_corners: bool = False*, *antialias: bool = False*)**
 : Upsample the input signal spatially.
 The spatial dimensions are by convention dimensions `1` to `x.ndim -
@@ -85,33 +58,34 @@ when downsampling with `"linear"` or `"cubic"` mode. For
 `align_corners=True`. Default: `False`.
 
 Examples
->>> import mlx.core as mx
->>> import mlx.nn as nn
->>> x = mx.arange(1, 5).reshape((1, 2, 2, 1))
->>> x
-array([[[[1],
-         [2]],
-        [[3],
-         [4]]]], dtype=int32)
->>> n = nn.Upsample(scale_factor=2, mode='nearest')
->>> n(x).squeeze()
-array([[1, 1, 2, 2],
-       [1, 1, 2, 2],
-       [3, 3, 4, 4],
-       [3, 3, 4, 4]], dtype=int32)
->>> b = nn.Upsample(scale_factor=2, mode='linear')
->>> b(x).squeeze()
-array([[1, 1.25, 1.75, 2],
-       [1.5, 1.75, 2.25, 2.5],
-       [2.5, 2.75, 3.25, 3.5],
-       [3, 3.25, 3.75, 4]], dtype=float32)
->>> b = nn.Upsample(scale_factor=2, mode='linear', align_corners=True)
->>> b(x).squeeze()
-array([[1, 1.33333, 1.66667, 2],
-       [1.66667, 2, 2.33333, 2.66667],
-       [2.33333, 2.66667, 3, 3.33333],
-       [3, 3.33333, 3.66667, 4]], dtype=float32)
+
+  ```
+  >>> import mlx.core as mx
+  >>> import mlx.nn as nn
+  >>> x = mx.arange(1, 5).reshape((1, 2, 2, 1))
+  >>> x
+  array([[[[1],
+           [2]],
+          [[3],
+           [4]]]], dtype=int32)
+  >>> n = nn.Upsample(scale_factor=2, mode='nearest')
+  >>> n(x).squeeze()
+  array([[1, 1, 2, 2],
+         [1, 1, 2, 2],
+         [3, 3, 4, 4],
+         [3, 3, 4, 4]], dtype=int32)
+  >>> b = nn.Upsample(scale_factor=2, mode='linear')
+  >>> b(x).squeeze()
+  array([[1, 1.25, 1.75, 2],
+         [1.5, 1.75, 2.25, 2.5],
+         [2.5, 2.75, 3.25, 3.5],
+         [3, 3.25, 3.75, 4]], dtype=float32)
+  >>> b = nn.Upsample(scale_factor=2, mode='linear', align_corners=True)
+  >>> b(x).squeeze()
+  array([[1, 1.33333, 1.66667, 2],
+         [1.66667, 2, 2.33333, 2.66667],
+         [2.33333, 2.66667, 3, 3.33333],
+         [3, 3.33333, 3.66667, 4]], dtype=float32)
+  ```
 
 Methods
-
-** Contents

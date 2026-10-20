@@ -5,14 +5,14 @@
 ## Topics
 
 ### Constants
-- [var componentDontRegister: Int](componentdontregister.md)
-- [var componentNotCaptured: Int](componentnotcaptured.md)
+- [var componentDontRegister: Int](../../componentdontregister.md)
+- [var componentNotCaptured: Int](../../componentnotcaptured.md)
   This component has not been captured.
-- [var invalidComponentID: Int](invalidcomponentid.md)
+- [var invalidComponentID: Int](../../invalidcomponentid.md)
   Invalid component ID.
-- [var retryComponentRegistrationErr: Int](retrycomponentregistrationerr.md)
-- [var unresolvedComponentDLLErr: Int](unresolvedcomponentdllerr.md)
-- [var validInstancesExist: Int](validinstancesexist.md)
+- [var retryComponentRegistrationErr: Int](../../retrycomponentregistrationerr.md)
+- [var unresolvedComponentDLLErr: Int](../../unresolvedcomponentdllerr.md)
+- [var validInstancesExist: Int](../../validinstancesexist.md)
   This component has open connections.
 
 

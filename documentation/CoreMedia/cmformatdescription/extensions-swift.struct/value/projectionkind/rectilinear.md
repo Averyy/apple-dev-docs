@@ -1,7 +1,8 @@
 # rectilinear
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates rectilinear projection. Generally less than 90 degree field of view with no barrel distortion.
 

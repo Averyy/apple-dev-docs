@@ -1,7 +1,8 @@
 # VNBarcodeObservation
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents barcode information that an image analysis request detects.
 
@@ -19,53 +20,58 @@ An object that represents barcode information that an image analysis request det
 class VNBarcodeObservation
 ```
 
+```objc
+@interface VNBarcodeObservation : VNRectangleObservation
+```
+
 #### Overview
 
-This type of observation results from a [`VNDetectBarcodesRequest`](vndetectbarcodesrequest.md). It contains information about the detected barcode, including parsed payload data for supported symbologies.
+This type of observation results from a [`VNDetectBarcodesRequest`](./vndetectbarcodesrequest.md). It contains information about the detected barcode, including parsed payload data for supported symbologies.
 
 ## Topics
 
 ### Parsing the Payload
-- [var payloadStringValue: String?](vnbarcodeobservation/payloadstringvalue.md)
+- [var payloadStringValue: String?](./vnbarcodeobservation/payloadstringvalue.md)
   A string value that represents the barcode payload.
-- [var payloadData: Data?](vnbarcodeobservation/payloaddata.md)
+- [var payloadData: Data?](./vnbarcodeobservation/payloaddata.md)
   The raw data representation of the barcode’s payload.
-- [var supplementalPayloadString: String?](vnbarcodeobservation/supplementalpayloadstring.md)
+- [var supplementalPayloadString: String?](./vnbarcodeobservation/supplementalpayloadstring.md)
   The supplemental code decoded as a string value.
-- [var supplementalPayloadData: Data?](vnbarcodeobservation/supplementalpayloaddata.md)
-- [var supplementalCompositeType: VNBarcodeCompositeType](vnbarcodeobservation/supplementalcompositetype.md)
+- [var supplementalPayloadData: Data?](./vnbarcodeobservation/supplementalpayloaddata.md)
+- [var supplementalCompositeType: VNBarcodeCompositeType](./vnbarcodeobservation/supplementalcompositetype.md)
   The supplemental composite type.
-- [var isGS1DataCarrier: Bool](vnbarcodeobservation/isgs1datacarrier.md)
+- [var isGS1DataCarrier: Bool](./vnbarcodeobservation/isgs1datacarrier.md)
   A Boolean value that indicates whether the barcode carries any global standards data.
 ### Reading Barcode Descriptors
-- [var barcodeDescriptor: CIBarcodeDescriptor?](vnbarcodeobservation/barcodedescriptor.md)
+- [var barcodeDescriptor: CIBarcodeDescriptor?](./vnbarcodeobservation/barcodedescriptor.md)
   An object that describes the low-level details about the barcode and its data.
 ### Identifying Barcode Types
-- [var symbology: VNBarcodeSymbology](vnbarcodeobservation/symbology.md)
+- [var symbology: VNBarcodeSymbology](./vnbarcodeobservation/symbology.md)
   The symbology of the observed barcode.
 ### Identifying Barcode Colors
-- [var isColorInverted: Bool](vnbarcodeobservation/iscolorinverted.md)
+- [var isColorInverted: Bool](./vnbarcodeobservation/iscolorinverted.md)
   A Boolean value that indicates whether the barcode is color inverted.
 
 ## Relationships
 
 ### Inherits From
-- [VNRectangleObservation](vnrectangleobservation.md)
+- [VNRectangleObservation](./vnrectangleobservation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [VNRequestRevisionProviding](./vnrequestrevisionproviding.md)
 
 ## See Also
 
-- [var results: [VNBarcodeObservation]?](vndetectbarcodesrequest/results.md)
+### Accessing the Results
+- [var results: [VNBarcodeObservation]?](./vndetectbarcodesrequest/results.md)
   The results of a barcode detection request.
 
 

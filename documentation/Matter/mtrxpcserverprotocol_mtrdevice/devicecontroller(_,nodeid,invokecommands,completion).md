@@ -1,7 +1,8 @@
 # deviceController(_:nodeID:invokeCommands:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+optional func deviceController(_ controller: UUID, nodeID: NSNumber, invokeCommands commands: [[MTRCommandWithRequiredResponse]], completion: @escaping @Sendable ([[String : Any]]?, (any Error)?) -> Void)
+```
+
+```swift
 optional func deviceController(_ controller: UUID, nodeID: NSNumber, invokeCommands commands: [[MTRCommandWithRequiredResponse]]) async throws -> [[String : Any]]
+```
+
+```objc
+- (void) deviceController:(NSUUID *) controller nodeID:(NSNumber *) nodeID invokeCommands:(NSArray<NSArray<MTRCommandWithRequiredResponse *> *> *) commands completion:(MTRDeviceResponseHandler) completion;
 ```
 
 

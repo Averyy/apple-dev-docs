@@ -1,14 +1,15 @@
 # ri_npm
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 int32_t ri_npm;
 ```
 

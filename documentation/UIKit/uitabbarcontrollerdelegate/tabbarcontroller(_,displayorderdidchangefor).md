@@ -1,7 +1,8 @@
 # tabBarController(_:displayOrderDidChangeFor:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate that the display order for the specified tab has been changed by the user.
 
@@ -17,9 +18,13 @@ Notifies the delegate that the display order for the specified tab has been chan
 optional func tabBarController(_ tabBarController: UITabBarController, displayOrderDidChangeFor group: UITabGroup)
 ```
 
+```objc
+- (void) tabBarController:(UITabBarController *) tabBarController displayOrderDidChangeForGroup:(UITabGroup *) group;
+```
+
 ## Mentions
 
-- [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
+- [Elevating your iPad app with a tab bar and sidebar](../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
 
 ---

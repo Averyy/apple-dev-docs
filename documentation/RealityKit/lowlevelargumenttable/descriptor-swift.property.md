@@ -1,7 +1,8 @@
 # descriptor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor that describes the buffer and texture slots of this argument table.
 
@@ -19,7 +20,8 @@ final var descriptor: LowLevelArgumentTable.Descriptor { get }
 
 ## See Also
 
-- [LowLevelArgumentTable.Descriptor](lowlevelargumenttable/descriptor-swift.struct.md)
+### Inspecting the table
+- [LowLevelArgumentTable.Descriptor](./descriptor-swift.struct.md)
   The buffer and texture slot configuration for an argument table.
 
 

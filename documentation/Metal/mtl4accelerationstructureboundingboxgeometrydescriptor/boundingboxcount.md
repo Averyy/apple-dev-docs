@@ -1,7 +1,8 @@
 # boundingBoxCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Describes the number of bounding boxes the `boundingBoxBuffer` contains.
 
@@ -17,6 +18,10 @@ Describes the number of bounding boxes the `boundingBoxBuffer` contains.
 
 ```swift
 var boundingBoxCount: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger boundingBoxCount;
 ```
 
 

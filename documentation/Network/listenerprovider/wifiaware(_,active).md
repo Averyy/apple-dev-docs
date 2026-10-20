@@ -1,7 +1,8 @@
 # wifiAware(_:active:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sets a network listener to publish Wi-Fi Aware services to the selected paired devices.
 
@@ -14,6 +15,8 @@ Sets a network listener to publish Wi-Fi Aware services to the selected paired d
 ```swift
 static func wifiAware(_ action: WAPublisherListener.Action, active requestedDuration: Duration? = nil) -> Self
 ```
+
+Available when `Self` is `WAPublisherListener`.
 
 #### Return Value
 

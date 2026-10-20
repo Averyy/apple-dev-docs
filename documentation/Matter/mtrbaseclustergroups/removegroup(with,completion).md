@@ -1,7 +1,8 @@
 # removeGroup(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func removeGroup(with params: MTRGroupsClusterRemoveGroupParams, completion: @escaping @Sendable (MTRGroupsClusterRemoveGroupResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func removeGroup(with params: MTRGroupsClusterRemoveGroupParams) async throws -> MTRGroupsClusterRemoveGroupResponseParams
+```
+
+```objc
+- (void) removeGroupWithParams:(MTRGroupsClusterRemoveGroupParams *) params completion:(void (^)(MTRGroupsClusterRemoveGroupResponseParams *data, NSError *error)) completion;
 ```
 
 

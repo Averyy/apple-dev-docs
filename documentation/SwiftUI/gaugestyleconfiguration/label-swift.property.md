@@ -1,7 +1,8 @@
 # label
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view that describes the purpose of the gauge.
 
@@ -21,7 +22,8 @@ var label: GaugeStyleConfiguration.Label
 
 ## See Also
 
-- [GaugeStyleConfiguration.Label](gaugestyleconfiguration/label-swift.struct.md)
+### Describing the purpose of the gauge
+- [GaugeStyleConfiguration.Label](./label-swift.struct.md)
   A type-erased label of a gauge, describing its purpose.
 
 

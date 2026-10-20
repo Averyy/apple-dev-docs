@@ -1,7 +1,8 @@
 # UITextFormattingViewController.TextAlignment
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Text formatting horizontal alignment state.
 
@@ -17,30 +18,35 @@ Text formatting horizontal alignment state.
 struct TextAlignment
 ```
 
+```c
+typedef NSString * UITextFormattingViewControllerTextAlignment;
+```
+
 ## Topics
 
 ### Initializers
-- [init(nsTextAlignment: NSTextAlignment)](uitextformattingviewcontroller/textalignment/init(nstextalignment:).md)
-- [init(rawValue: String)](uitextformattingviewcontroller/textalignment/init(rawvalue:).md)
+- [init(nsTextAlignment: NSTextAlignment)](./textalignment/init%28nstextalignment%29.md)
+- [init(rawValue: String)](./textalignment/init%28rawvalue%29.md)
 ### Instance Properties
-- [var nsTextAlignment: NSTextAlignment](uitextformattingviewcontroller/textalignment/nstextalignment.md)
+- [var nsTextAlignment: NSTextAlignment](./textalignment/nstextalignment.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UITextFormattingViewController.ComponentKey](uitextformattingviewcontroller/componentkey.md)
+### Data Types
+- [UITextFormattingViewController.ComponentKey](./componentkey.md)
   Predefined text formatting view controller components.
-- [UITextFormattingViewController.Highlight](uitextformattingviewcontroller/highlight.md)
+- [UITextFormattingViewController.Highlight](./highlight.md)
   Text formatting highlight state.
-- [UITextFormattingViewController.TextList](uitextformattingviewcontroller/textlist.md)
+- [UITextFormattingViewController.TextList](./textlist.md)
   Text formatting text list state.
 
 

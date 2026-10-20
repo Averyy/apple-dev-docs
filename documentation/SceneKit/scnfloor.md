@@ -1,18 +1,19 @@
 # SCNFloor
 
 **Framework**: SceneKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A plane that can optionally display a reflection of the scene above it.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,70 +21,75 @@ A plane that can optionally display a reflection of the scene above it.
 class SCNFloor
 ```
 
+```objc
+@interface SCNFloor : SCNGeometry
+```
+
 #### Overview
 
-![None](/images/com.apple.scenekit/media-2929804@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929804@2x.png)
 
-By default, a floor extends infinitely in the x- and z-axis dimensions of its local coordinate space, and is located in the plane whose y-coordinate is zero. To position and orient a floor in a scene, attach it to the [`geometry`](scnnode/geometry.md) property of an [`SCNNode`](scnnode.md) object. Often, you use a floor to provide a background for a scene.
+By default, a floor extends infinitely in the x- and z-axis dimensions of its local coordinate space, and is located in the plane whose y-coordinate is zero. To position and orient a floor in a scene, attach it to the [`geometry`](./scnnode/geometry.md) property of an [`SCNNode`](./scnnode.md) object. Often, you use a floor to provide a background for a scene.
 
-If a floor’s [`reflectivity`](scnfloor/reflectivity.md) property is greater than zero, SceneKit automatically renders reflections for all geometries above it. Optionally, you can add an opacity gradient so that reflections of scene contents closer to the floor appear more clearly than those of scene contents further from it. You control the floor’s reflectivity using the properties listed in Adding Reflections to a Floor.
+If a floor’s [`reflectivity`](./scnfloor/reflectivity.md) property is greater than zero, SceneKit automatically renders reflections for all geometries above it. Optionally, you can add an opacity gradient so that reflections of scene contents closer to the floor appear more clearly than those of scene contents further from it. You control the floor’s reflectivity using the properties listed in Adding Reflections to a Floor.
 
 ## Topics
 
 ### Adding Reflections to a Floor
-- [var reflectivity: CGFloat](scnfloor/reflectivity.md)
+- [var reflectivity: CGFloat](./scnfloor/reflectivity.md)
   The intensity of the scene’s reflection on the floor. Animatable.
-- [var reflectionFalloffEnd: CGFloat](scnfloor/reflectionfalloffend.md)
+- [var reflectionFalloffEnd: CGFloat](./scnfloor/reflectionfalloffend.md)
   The distance from the floor at which scene contents are no longer reflected. Animatable.
-- [var reflectionFalloffStart: CGFloat](scnfloor/reflectionfalloffstart.md)
+- [var reflectionFalloffStart: CGFloat](./scnfloor/reflectionfalloffstart.md)
   The distance from the floor at which scene contents are reflected at full intensity. Animatable.
-- [var reflectionResolutionScaleFactor: CGFloat](scnfloor/reflectionresolutionscalefactor.md)
+- [var reflectionResolutionScaleFactor: CGFloat](./scnfloor/reflectionresolutionscalefactor.md)
   The resolution scale factor of the offscreen buffer that SceneKit uses to render reflections.
-- [var reflectionCategoryBitMask: Int](scnfloor/reflectioncategorybitmask.md)
+- [var reflectionCategoryBitMask: Int](./scnfloor/reflectioncategorybitmask.md)
   A mask that defines which categories of other objects show reflections on the floor.
 ### Adjusting a Floor’s Size
-- [var width: CGFloat](scnfloor/width.md)
+- [var width: CGFloat](./scnfloor/width.md)
   The extent of the floor along its x-axis. Animatable.
-- [var length: CGFloat](scnfloor/length.md)
+- [var length: CGFloat](./scnfloor/length.md)
   The extent of the floor along its z-axis. Animatable.
 
 ## Relationships
 
 ### Inherits From
-- [SCNGeometry](scngeometry.md)
+- [SCNGeometry](./scngeometry.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [SCNAnimatable](scnanimatable.md)
-- [SCNBoundingVolume](scnboundingvolume.md)
-- [SCNShadable](scnshadable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [SCNAnimatable](./scnanimatable.md)
+- [SCNBoundingVolume](./scnboundingvolume.md)
+- [SCNShadable](./scnshadable.md)
 
 ## See Also
 
-- [class SCNBox](scnbox.md)
+### Basic Shapes
+- [class SCNBox](./scnbox.md)
   A six-sided polyhedron geometry whose faces are all rectangles, optionally with rounded edges and corners.
-- [class SCNCapsule](scncapsule.md)
+- [class SCNCapsule](./scncapsule.md)
   A right circular cylinder geometry whose ends are capped with hemispheres.
-- [class SCNCone](scncone.md)
+- [class SCNCone](./scncone.md)
   A right circular cone or frustum geometry.
-- [class SCNCylinder](scncylinder.md)
+- [class SCNCylinder](./scncylinder.md)
   A right circular cylinder geometry.
-- [class SCNPlane](scnplane.md)
+- [class SCNPlane](./scnplane.md)
   A rectangular, one-sided plane geometry of specified width and height.
-- [class SCNPyramid](scnpyramid.md)
+- [class SCNPyramid](./scnpyramid.md)
   A right rectangular pyramid geometry.
-- [class SCNSphere](scnsphere.md)
+- [class SCNSphere](./scnsphere.md)
   A sphere (or ball or globe) geometry.
-- [class SCNTorus](scntorus.md)
+- [class SCNTorus](./scntorus.md)
   A torus, or ring-shaped geometry.
-- [class SCNTube](scntube.md)
+- [class SCNTube](./scntube.md)
   A tube or pipe geometry—a right circular cylinder with a circular hole along its central axis.
 
 

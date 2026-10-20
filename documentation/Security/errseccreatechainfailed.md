@@ -1,7 +1,8 @@
 # errSecCreateChainFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The attempt to create a certificate chain failed.
 
@@ -18,6 +19,10 @@ The attempt to create a certificate chain failed.
 
 ```swift
 var errSecCreateChainFailed: OSStatus { get }
+```
+
+```c
+errSecCreateChainFailed
 ```
 
 

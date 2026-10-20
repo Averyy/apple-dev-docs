@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The sequence of dates within a schedule.
@@ -23,11 +24,12 @@ associatedtype Entries : Sequence where Self.Entries.Element == Date
 
 #### Discussion
 
-The [`entries(from:mode:)`](timelineschedule/entries(from:mode:).md) method returns a value of this type, which is a [`Sequence`](https://developer.apple.com/documentation/swift/sequence) of dates in ascending order. A [`TimelineView`](timelineview.md) that you create with a schedule updates its content at the moments in time corresponding to the dates included in the sequence.
+The [`entries(from:mode:)`](./entries%28from,mode%29.md) method returns a value of this type, which is a [`Sequence`](../../Swift/sequence.md) of dates in ascending order. A [`TimelineView`](../timelineview.md) that you create with a schedule updates its content at the moments in time corresponding to the dates included in the sequence.
 
 ## See Also
 
-- [func entries(from: Date, mode: Self.Mode) -> Self.Entries](timelineschedule/entries(from:mode:).md)
+### Getting a sequence of dates
+- [func entries(from: Date, mode: Self.Mode) -> Self.Entries](./entries%28from,mode%29.md)
   Provides a sequence of dates starting around a given date.
 
 

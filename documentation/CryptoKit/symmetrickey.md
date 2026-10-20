@@ -1,7 +1,8 @@
 # SymmetricKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A symmetric cryptographic key.
 
@@ -22,42 +23,43 @@ struct SymmetricKey
 
 #### Overview
 
-You typically derive a symmetric key from an instance of a shared secret ([`SharedSecret`](sharedsecret.md)) that you obtain through key agreement. You use a symmetric key to compute a message authentication code like [`HMAC`](hmac.md), or to open and close a sealed box ([`ChaChaPoly.SealedBox`](chachapoly/sealedbox.md) or [`AES.GCM.SealedBox`](aes/gcm/sealedbox.md)) using a cipher like [`ChaChaPoly`](chachapoly.md) or [`AES`](aes.md).
+You typically derive a symmetric key from an instance of a shared secret ([`SharedSecret`](./sharedsecret.md)) that you obtain through key agreement. You use a symmetric key to compute a message authentication code like [`HMAC`](./hmac.md), or to open and close a sealed box ([`ChaChaPoly.SealedBox`](./chachapoly/sealedbox.md) or [`AES.GCM.SealedBox`](./aes/gcm/sealedbox.md)) using a cipher like [`ChaChaPoly`](./chachapoly.md) or [`AES`](./aes.md).
 
 ## Topics
 
 ### Creating a key
-- [init<D>(data: D)](symmetrickey/init(data:).md)
+- [init<D>(data: D)](./symmetrickey/init%28data%29.md)
   Creates a key from the given data.
-- [init(size: SymmetricKeySize)](symmetrickey/init(size:).md)
+- [init(size: SymmetricKeySize)](./symmetrickey/init%28size%29.md)
   Generates a new random key of the given size.
 ### Getting the key length
-- [var bitCount: Int](symmetrickey/bitcount.md)
+- [var bitCount: Int](./symmetrickey/bitcount.md)
   The number of bits in the key.
 ### Initializers
-- [init(copying: RawSpan)](symmetrickey/init(copying:).md)
+- [init(copying: RawSpan)](./symmetrickey/init%28copying%29.md)
   Creates a key from the given data.
-- [init(copyingWithZeroing: inout MutableRawSpan)](symmetrickey/init(copyingwithzeroing:).md)
+- [init(copyingWithZeroing: inout MutableRawSpan)](./symmetrickey/init%28copyingwithzeroing%29.md)
   Creates a key from the given data, zeroing out the bytes afterward.
-- [init<E>(size: SymmetricKeySize, initializingWith: (inout OutputRawSpan) throws(E) -> Void) throws(E)](symmetrickey/init(size:initializingwith:).md)
+- [init<E>(size: SymmetricKeySize, initializingWith: (inout OutputRawSpan) throws(E) -> Void) throws(E)](./symmetrickey/init%28size,initializingwith%29.md)
   Creates a new key of the given size where the key contents are initialized via a callback.
 ### Instance Properties
-- [var bytes: RawSpan](symmetrickey/bytes.md)
+- [var bytes: RawSpan](./symmetrickey/bytes.md)
   Access the raw bytes of the key.
 
 ## Relationships
 
 ### Conforms To
-- [ContiguousBytes](../foundation/contiguousbytes.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ContiguousBytes](../Foundation/contiguousbytes.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HMAC](hmac.md)
+### Message authentication codes
+- [struct HMAC](./hmac.md)
   A hash-based message authentication algorithm.
-- [struct SymmetricKeySize](symmetrickeysize.md)
+- [struct SymmetricKeySize](./symmetrickeysize.md)
   The sizes that a symmetric cryptographic key can take.
 
 

@@ -1,11 +1,12 @@
 # ADClientErrorRequestClientError
 
 **Framework**: iAd  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 ## Declaration
 
-```swift
+```c
 ADClientErrorRequestClientError
 ```
 

@@ -1,7 +1,8 @@
 # background
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var background: MTRContentLauncherClusterStyleInformationStruct? { get set }
+```
+
+```objc
+@property (nonatomic, copy) MTRContentLauncherClusterStyleInformationStruct * background;
 ```
 
 

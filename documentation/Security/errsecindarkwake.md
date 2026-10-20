@@ -1,7 +1,8 @@
 # errSecInDarkWake
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The user interface cannot be displayed because the system is in a dark wake state.
 
@@ -18,6 +19,10 @@ The user interface cannot be displayed because the system is in a dark wake stat
 
 ```swift
 var errSecInDarkWake: OSStatus { get }
+```
+
+```c
+errSecInDarkWake
 ```
 
 

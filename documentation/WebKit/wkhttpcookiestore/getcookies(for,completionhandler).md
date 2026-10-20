@@ -1,7 +1,8 @@
 # getCookies(for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -13,7 +14,15 @@
 ## Declaration
 
 ```swift
+func getCookies(for url: URL, completionHandler: @escaping @MainActor @Sendable ([HTTPCookie]) -> Void)
+```
+
+```swift
 func cookies(for url: URL) async -> [HTTPCookie]
+```
+
+```objc
+- (void) getCookiesForURL:(NSURL *) url completionHandler:(void (^)(NSArray<NSHTTPCookie *> *)) completionHandler;
 ```
 
 #### Discussion

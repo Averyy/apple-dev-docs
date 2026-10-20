@@ -1,7 +1,8 @@
 # MPSNDArrayIdentity
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -17,33 +18,37 @@
 class MPSNDArrayIdentity
 ```
 
+```objc
+@interface MPSNDArrayIdentity : MPSNDArrayUnaryKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpsndarrayidentity/init(device:).md)
+- [init(device: any MTLDevice)](./mpsndarrayidentity/init%28device%29.md)
 ### Instance Methods
-- [func reshape(with: (any MTLComputeCommandEncoder)?, commandBuffer: (any MTLCommandBuffer)?, sourceArray: MPSNDArray, dimensionCount: Int, dimensionSizes: UnsafeMutablePointer<Int>, destinationArray: MPSNDArray?) -> MPSNDArray?](mpsndarrayidentity/reshape(with:commandbuffer:sourcearray:dimensioncount:dimensionsizes:destinationarray:).md)
-- [func reshape(with: (any MTLComputeCommandEncoder)?, commandBuffer: (any MTLCommandBuffer)?, sourceArray: MPSNDArray, shape: [NSNumber], destinationArray: MPSNDArray?) -> MPSNDArray?](mpsndarrayidentity/reshape(with:commandbuffer:sourcearray:shape:destinationarray:).md)
-- [func reshape(with: (any MTLCommandBuffer)?, sourceArray: MPSNDArray, dimensionCount: Int, dimensionSizes: UnsafeMutablePointer<Int>, destinationArray: MPSNDArray?) -> MPSNDArray?](mpsndarrayidentity/reshape(with:sourcearray:dimensioncount:dimensionsizes:destinationarray:).md)
-- [func reshape(with: (any MTLCommandBuffer)?, sourceArray: MPSNDArray, shape: [NSNumber], destinationArray: MPSNDArray?) -> MPSNDArray?](mpsndarrayidentity/reshape(with:sourcearray:shape:destinationarray:).md)
-- [func reshape(withMTL4CommandEncoder: any MTL4ComputeCommandEncoder, sourceArray: MPSNDArray, dimensionCount: Int, dimensionSizes: UnsafeMutablePointer<Int>, destinationArray: MPSNDArray)](mpsndarrayidentity/reshape(withmtl4commandencoder:sourcearray:dimensioncount:dimensionsizes:destinationarray:).md)
-- [func reshape(withMTL4CommandEncoder: any MTL4ComputeCommandEncoder, sourceArray: MPSNDArray, shape: [NSNumber], destinationArray: MPSNDArray)](mpsndarrayidentity/reshape(withmtl4commandencoder:sourcearray:shape:destinationarray:).md)
-- [func reshape(withSourceArray: MPSNDArray, shape: [NSNumber]) -> MPSNDArray?](mpsndarrayidentity/reshape(withsourcearray:shape:).md)
+- [func reshape(with: (any MTLComputeCommandEncoder)?, commandBuffer: (any MTLCommandBuffer)?, sourceArray: MPSNDArray, dimensionCount: Int, dimensionSizes: UnsafeMutablePointer<Int>, destinationArray: MPSNDArray?) -> MPSNDArray?](./mpsndarrayidentity/reshape%28with,commandbuffer,sourcearray,dimensioncount,dimensionsizes,destinationarray%29.md)
+- [func reshape(with: (any MTLComputeCommandEncoder)?, commandBuffer: (any MTLCommandBuffer)?, sourceArray: MPSNDArray, shape: [NSNumber], destinationArray: MPSNDArray?) -> MPSNDArray?](./mpsndarrayidentity/reshape%28with,commandbuffer,sourcearray,shape,destinationarray%29.md)
+- [func reshape(with: (any MTLCommandBuffer)?, sourceArray: MPSNDArray, dimensionCount: Int, dimensionSizes: UnsafeMutablePointer<Int>, destinationArray: MPSNDArray?) -> MPSNDArray?](./mpsndarrayidentity/reshape%28with,sourcearray,dimensioncount,dimensionsizes,destinationarray%29.md)
+- [func reshape(with: (any MTLCommandBuffer)?, sourceArray: MPSNDArray, shape: [NSNumber], destinationArray: MPSNDArray?) -> MPSNDArray?](./mpsndarrayidentity/reshape%28with,sourcearray,shape,destinationarray%29.md)
+- [func reshape(withMTL4CommandEncoder: any MTL4ComputeCommandEncoder, sourceArray: MPSNDArray, dimensionCount: Int, dimensionSizes: UnsafeMutablePointer<Int>, destinationArray: MPSNDArray)](./mpsndarrayidentity/reshape%28withmtl4commandencoder,sourcearray,dimensioncount,dimensionsizes,destinationarray%29.md)
+- [func reshape(withMTL4CommandEncoder: any MTL4ComputeCommandEncoder, sourceArray: MPSNDArray, shape: [NSNumber], destinationArray: MPSNDArray)](./mpsndarrayidentity/reshape%28withmtl4commandencoder,sourcearray,shape,destinationarray%29.md)
+- [func reshape(withSourceArray: MPSNDArray, shape: [NSNumber]) -> MPSNDArray?](./mpsndarrayidentity/reshape%28withsourcearray,shape%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNDArrayUnaryKernel](mpsndarrayunarykernel.md)
+- [MPSNDArrayUnaryKernel](./mpsndarrayunarykernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

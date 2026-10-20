@@ -1,7 +1,8 @@
 # getCFRunLoop()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the receiver’s underlying run loop object.
 
@@ -20,9 +21,13 @@ Returns the receiver’s underlying run loop object.
 func getCFRunLoop() -> CFRunLoop
 ```
 
+```objc
+- (CFRunLoopRef) getCFRunLoop;
+```
+
 #### Return Value
 
-The receiver’s underlying [`CFRunLoop`](https://developer.apple.com/documentation/corefoundation/cfrunloop) object.
+The receiver’s underlying [`CFRunLoop`](../../CoreFoundation/cfrunloop.md) object.
 
 #### Discussion
 
@@ -30,15 +35,16 @@ You can use the returned run loop to configure the current run loop using Core F
 
 ## See Also
 
-- [class var current: RunLoop](runloop/current.md)
+### Accessing Run Loops and Modes
+- [class var current: RunLoop](./current.md)
   Returns the run loop for the current thread.
-- [var currentMode: RunLoop.Mode?](runloop/currentmode.md)
+- [var currentMode: RunLoop.Mode?](./currentmode.md)
   The receiver’s current input mode.
-- [func limitDate(forMode: RunLoop.Mode) -> Date?](runloop/limitdate(formode:).md)
+- [func limitDate(forMode: RunLoop.Mode) -> Date?](./limitdate%28formode%29.md)
   Performs one pass through the run loop in the specified mode and returns the date at which the next timer is scheduled to fire.
-- [class var main: RunLoop](runloop/main.md)
+- [class var main: RunLoop](./main.md)
   Returns the run loop of the main thread.
-- [RunLoop.Mode](runloop/mode.md)
+- [RunLoop.Mode](./mode.md)
   Modes that a run loop operates in.
 
 

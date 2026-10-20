@@ -1,7 +1,8 @@
 # VNComputeStage
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Types that represent the compute stage.
 
@@ -19,33 +20,38 @@ Types that represent the compute stage.
 struct VNComputeStage
 ```
 
+```c
+typedef NSString * VNComputeStage;
+```
+
 ## Topics
 
 ### Get the Compute Stages
-- [static let main: VNComputeStage](vncomputestage/main.md)
+- [static let main: VNComputeStage](./vncomputestage/main.md)
   A stage that represents where the system performs the main functionality.
-- [static let postProcessing: VNComputeStage](vncomputestage/postprocessing.md)
+- [static let postProcessing: VNComputeStage](./vncomputestage/postprocessing.md)
   A stage that represents where the system performs additional analysis from the main compute stage.
 ### Create a Compute Stage
-- [init(rawValue: String)](vncomputestage/init(rawvalue:).md)
+- [init(rawValue: String)](./vncomputestage/init%28rawvalue%29.md)
   Creates a compute stage with the value you specify.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class VNGeometryUtils](vngeometryutils.md)
+### Utilities
+- [class VNGeometryUtils](./vngeometryutils.md)
   Utility methods to determine the geometries of various Vision types.
-- [class VNVideoProcessor](vnvideoprocessor.md)
+- [class VNVideoProcessor](./vnvideoprocessor.md)
   An object that performs offline analysis of video content.
-- [struct VNVideoProcessingOption](vnvideoprocessingoption.md)
+- [struct VNVideoProcessingOption](./vnvideoprocessingoption.md)
   Options to pass to the video processor when adding requests.
 
 

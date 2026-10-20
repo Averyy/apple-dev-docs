@@ -1,7 +1,8 @@
 # AVMetricPlayerItemInitialLikelyToKeepUpEvent
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event that represents the initial state for whether playback is likely to continue without stalling.
 
@@ -20,34 +21,39 @@ An event that represents the initial state for whether playback is likely to con
 class AVMetricPlayerItemInitialLikelyToKeepUpEvent
 ```
 
+```objc
+@interface AVMetricPlayerItemInitialLikelyToKeepUpEvent : AVMetricPlayerItemLikelyToKeepUpEvent
+```
+
 ## Topics
 
 ### Inspecting the event
-- [var contentKeyRequestEvents: [AVMetricContentKeyRequestEvent]](avmetricplayeriteminitiallikelytokeepupevent/contentkeyrequestevents.md)
-- [var mediaSegmentRequestEvents: [AVMetricHLSMediaSegmentRequestEvent]](avmetricplayeriteminitiallikelytokeepupevent/mediasegmentrequestevents.md)
-- [var playlistRequestEvents: [AVMetricHLSPlaylistRequestEvent]](avmetricplayeriteminitiallikelytokeepupevent/playlistrequestevents.md)
+- [var contentKeyRequestEvents: [AVMetricContentKeyRequestEvent]](./avmetricplayeriteminitiallikelytokeepupevent/contentkeyrequestevents.md)
+- [var mediaSegmentRequestEvents: [AVMetricHLSMediaSegmentRequestEvent]](./avmetricplayeriteminitiallikelytokeepupevent/mediasegmentrequestevents.md)
+- [var playlistRequestEvents: [AVMetricHLSPlaylistRequestEvent]](./avmetricplayeriteminitiallikelytokeepupevent/playlistrequestevents.md)
 
 ## Relationships
 
 ### Inherits From
-- [AVMetricPlayerItemLikelyToKeepUpEvent](avmetricplayeritemlikelytokeepupevent.md)
+- [AVMetricPlayerItemLikelyToKeepUpEvent](./avmetricplayeritemlikelytokeepupevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVMetricPlayerItemStallEvent](avmetricplayeritemstallevent.md)
+### Buffering
+- [class AVMetricPlayerItemStallEvent](./avmetricplayeritemstallevent.md)
   An event that represents when playback stalls.
-- [class AVMetricPlayerItemLikelyToKeepUpEvent](avmetricplayeritemlikelytokeepupevent.md)
+- [class AVMetricPlayerItemLikelyToKeepUpEvent](./avmetricplayeritemlikelytokeepupevent.md)
   An event that represents when playback is likely to continue without stalling.
 
 

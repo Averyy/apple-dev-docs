@@ -1,17 +1,18 @@
 # CIFeatureTypeQRCode
 
 **Framework**: Core Image  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Core Image feature type for QR code object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,19 +20,24 @@ A Core Image feature type for QR code object.
 let CIFeatureTypeQRCode: String
 ```
 
+```c
+extern NSString * const CIFeatureTypeQRCode;
+```
+
 #### Discussion
 
 To detect QR codes in an image or video, pass this to `/CIDetector/detectorOfType:context:options:`
 
-Use the [`CIQRCodeFeature`](ciqrcodefeature.md) class to find more information about the detected QR code.
+Use the [`CIQRCodeFeature`](./ciqrcodefeature.md) class to find more information about the detected QR code.
 
 ## See Also
 
-- [let CIFeatureTypeFace: String](cifeaturetypeface.md)
+### Feature Types
+- [let CIFeatureTypeFace: String](./cifeaturetypeface.md)
   A Core Image feature type for person’s face.
-- [let CIFeatureTypeRectangle: String](cifeaturetyperectangle.md)
+- [let CIFeatureTypeRectangle: String](./cifeaturetyperectangle.md)
   A Core Image feature type for rectangular object.
-- [let CIFeatureTypeText: String](cifeaturetypetext.md)
+- [let CIFeatureTypeText: String](./cifeaturetypetext.md)
   A Core Image feature type for text.
 
 

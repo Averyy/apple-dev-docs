@@ -1,14 +1,15 @@
 # StandardUSB::kDeviceRequestRecipientDevice
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 StandardUSB::kDeviceRequestRecipientDevice = kIOUSBDeviceRequestRecipientDevice
 ```
 

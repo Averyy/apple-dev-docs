@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPCIDeviceDozeState](1640322-anonymous/kiopcidevicedozestate.md)
-- [kIOPCIDeviceOffState](1640322-anonymous/kiopcideviceoffstate.md)
-- [kIOPCIDeviceOnState](1640322-anonymous/kiopcideviceonstate.md)
-- [kIOPCIDevicePausedState](1640322-anonymous/kiopcidevicepausedstate.md)
-- [kIOPCIDevicePowerStateCount](1640322-anonymous/kiopcidevicepowerstatecount.md)
+- [kIOPCIDeviceDozeState](./api-1640322-anonymous/kiopcidevicedozestate.md)
+- [kIOPCIDeviceOffState](./api-1640322-anonymous/kiopcideviceoffstate.md)
+- [kIOPCIDeviceOnState](./api-1640322-anonymous/kiopcideviceonstate.md)
+- [kIOPCIDevicePausedState](./api-1640322-anonymous/kiopcidevicepausedstate.md)
+- [kIOPCIDevicePowerStateCount](./api-1640322-anonymous/kiopcidevicepowerstatecount.md)
 
 
 ---

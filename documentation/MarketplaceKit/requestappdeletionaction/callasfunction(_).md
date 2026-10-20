@@ -1,7 +1,8 @@
 # callAsFunction(_:)
 
 **Framework**: MarketplaceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests deletion of the specified app with someone’s confirmation.
 

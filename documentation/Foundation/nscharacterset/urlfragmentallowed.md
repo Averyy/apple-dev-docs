@@ -1,7 +1,8 @@
 # urlFragmentAllowed
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the character set for characters allowed in a fragment URL component.
 
@@ -20,21 +21,26 @@ Returns the character set for characters allowed in a fragment URL component.
 class var urlFragmentAllowed: CharacterSet { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSCharacterSet * URLFragmentAllowedCharacterSet;
+```
+
 #### Discussion
 
 The fragment component of a URL is the component after a `#` symbol. For example, in the URL `http://www.example.com/index.html#jumpLocation`, the fragment is `jumpLocation`.
 
 ## See Also
 
-- [class var urlHostAllowed: CharacterSet](nscharacterset/urlhostallowed.md)
+### Getting Character Sets for URL Encoding
+- [class var urlHostAllowed: CharacterSet](./urlhostallowed.md)
   Returns the character set for characters allowed in a host URL subcomponent.
-- [class var urlPasswordAllowed: CharacterSet](nscharacterset/urlpasswordallowed.md)
+- [class var urlPasswordAllowed: CharacterSet](./urlpasswordallowed.md)
   Returns the character set for characters allowed in a password URL subcomponent.
-- [class var urlPathAllowed: CharacterSet](nscharacterset/urlpathallowed.md)
+- [class var urlPathAllowed: CharacterSet](./urlpathallowed.md)
   Returns the character set for characters allowed in a path URL component.
-- [class var urlQueryAllowed: CharacterSet](nscharacterset/urlqueryallowed.md)
+- [class var urlQueryAllowed: CharacterSet](./urlqueryallowed.md)
   Returns the character set for characters allowed in a query URL component.
-- [class var urlUserAllowed: CharacterSet](nscharacterset/urluserallowed.md)
+- [class var urlUserAllowed: CharacterSet](./urluserallowed.md)
   Returns the character set for characters allowed in a user URL subcomponent.
 
 

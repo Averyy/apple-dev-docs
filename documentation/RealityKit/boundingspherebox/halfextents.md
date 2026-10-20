@@ -1,7 +1,8 @@
 # halfExtents
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The half-extents of the optional axis-aligned bounding box.
 
@@ -23,9 +24,10 @@ When non-`nil`, the renderer uses the box for culling. Setting this to a value e
 
 ## See Also
 
-- [var center: SIMD3<Float>](boundingspherebox/center.md)
+### Accessing the dimensions
+- [var center: SIMD3<Float>](./center.md)
   The center of the bounding volume in model space.
-- [var fullExtents: SIMD3<Float>?](boundingspherebox/fullextents.md)
+- [var fullExtents: SIMD3<Float>?](./fullextents.md)
   The full extents of the optional axis-aligned bounding box.
 
 

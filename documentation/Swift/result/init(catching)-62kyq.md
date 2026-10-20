@@ -1,7 +1,8 @@
 # init(catching:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new result by evaluating a throwing closure, capturing the returned value as a success, or any thrown error as a failure.
 
@@ -19,6 +20,8 @@ Creates a new result by evaluating a throwing closure, capturing the returned va
 ```swift
 init(catching body: () throws(Failure) -> Success)
 ```
+
+Available when `Failure` conforms to `Error`.
 
 ## Parameters
 

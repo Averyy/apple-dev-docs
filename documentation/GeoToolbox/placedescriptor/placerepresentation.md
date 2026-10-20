@@ -1,7 +1,8 @@
 # PlaceDescriptor.PlaceRepresentation
 
 **Framework**: GeoToolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that represent a physical place, suitable for use when searching or retrieving rich data.
 
@@ -23,30 +24,31 @@ enum PlaceRepresentation
 ## Topics
 
 ### Place representations
-- [var address: String?](placedescriptor/address.md)
+- [var address: String?](./address.md)
   A full address, that one could use in postal or administrative scenarios.
-- [var coordinate: CLLocationCoordinate2D?](placedescriptor/coordinate.md)
+- [var coordinate: CLLocationCoordinate2D?](./coordinate.md)
   The latitude and longitude for a place.
 ### Enumeration cases
-- [PlaceDescriptor.PlaceRepresentation.address(_:)](placedescriptor/placerepresentation/address(_:).md)
+- [PlaceDescriptor.PlaceRepresentation.address(_:)](./placerepresentation/address%28_%29.md)
   Full address, as you’d use in postal or administrative scenarios.
-- [PlaceDescriptor.PlaceRepresentation.coordinate(_:)](placedescriptor/placerepresentation/coordinate(_:).md)
+- [PlaceDescriptor.PlaceRepresentation.coordinate(_:)](./placerepresentation/coordinate%28_%29.md)
   A physical location described by its latitude and longitude.
-- [PlaceDescriptor.PlaceRepresentation.deviceLocation(_:)](placedescriptor/placerepresentation/devicelocation(_:).md)
+- [PlaceDescriptor.PlaceRepresentation.deviceLocation(_:)](./placerepresentation/devicelocation%28_%29.md)
   Physical location in a coordinate system that a device would collect.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [PlaceDescriptor.SupportingPlaceRepresentation](placedescriptor/supportingplacerepresentation.md)
+### Values that describe places and mapping service providers
+- [PlaceDescriptor.SupportingPlaceRepresentation](./supportingplacerepresentation.md)
   Values that describe the representation of a physical place using proprietary attributes, such as an alphanumeric location identifier from a mapping service provider.
 
 

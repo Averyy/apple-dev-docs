@@ -1,7 +1,8 @@
 # CMProjectionType
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants describing the projection surface information in a 3D video buffer or channel.
 
@@ -20,49 +21,54 @@ Constants describing the projection surface information in a 3D video buffer or 
 enum CMProjectionType
 ```
 
+```c
+enum CMProjectionType : uint64_t;
+```
+
 ## Topics
 
 ### Projection Surfaces
-- [CMProjectionType.rectangular](cmprojectiontype/rectangular.md)
+- [CMProjectionType.rectangular](./cmprojectiontype/rectangular.md)
   Video content displays on a flat, rectangular 2D surface.
-- [CMProjectionType.equirectangular](cmprojectiontype/equirectangular.md)
+- [CMProjectionType.equirectangular](./cmprojectiontype/equirectangular.md)
   Video content displays as a 360 degree equirectangular projection.
-- [CMProjectionType.halfEquirectangular](cmprojectiontype/halfequirectangular.md)
+- [CMProjectionType.halfEquirectangular](./cmprojectiontype/halfequirectangular.md)
   Video content displays as a 180 degree equirectangular projection.
-- [CMProjectionType.fisheye](cmprojectiontype/fisheye.md)
+- [CMProjectionType.fisheye](./cmprojectiontype/fisheye.md)
   Video content displays as a fisheye projection.
 ### Enumeration Cases
-- [CMProjectionType.parametricImmersive](cmprojectiontype/parametricimmersive.md)
+- [CMProjectionType.parametricImmersive](./cmprojectiontype/parametricimmersive.md)
 ### Initializers
-- [init?(rawValue: UInt64)](cmprojectiontype/init(rawvalue:).md)
+- [init?(rawValue: UInt64)](./cmprojectiontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CMMetadata](cmmetadata.md)
+### Metadata
+- [CMMetadata](./cmmetadata.md)
   The APIs for working with the framework’s Metadata Identifier Services and Metadata Data Type Registry.
-- [CMTag](cmtag-api.md)
+- [CMTag](./cmtag-api.md)
   Types and interfaces for working with Core Media tags.
-- [class CMTag](cmtag-swift.class.md)
+- [class CMTag](./cmtag-swift.class.md)
   A tag to set additional metadata on media buffers.
-- [class CMTypedTag](cmtypedtag.md)
+- [class CMTypedTag](./cmtypedtag.md)
   A tag to set additional metadata on media buffers, with an associated Swift type for its value.
-- [CMTagCollection](cmtagcollection.md)
+- [CMTagCollection](./cmtagcollection.md)
   Objective-C types and interfaces for working with Core Media tag collections.
-- [struct CMStereoViewComponents](cmstereoviewcomponents.md)
+- [struct CMStereoViewComponents](./cmstereoviewcomponents.md)
   Constants describing the stereo views contained within a buffer or channel.
-- [struct CMStereoViewInterpretationOptions](cmstereoviewinterpretationoptions.md)
+- [struct CMStereoViewInterpretationOptions](./cmstereoviewinterpretationoptions.md)
   Create a set of stereo view interpretation options from a constant.
-- [enum CMPackingType](cmpackingtype.md)
+- [enum CMPackingType](./cmpackingtype.md)
   The type of packing within each video frame, if any.
 
 

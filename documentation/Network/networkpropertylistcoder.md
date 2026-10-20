@@ -1,7 +1,8 @@
 # NetworkPropertyListCoder
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -21,17 +22,17 @@ struct NetworkPropertyListCoder
 ## Topics
 
 ### Instance Methods
-- [func makeDecoder() -> PropertyListDecoder](networkpropertylistcoder/makedecoder.md)
+- [func makeDecoder() -> PropertyListDecoder](./networkpropertylistcoder/makedecoder%28%29.md)
   Make a PropertyListDecoder that can be used to decode into a Decodable type.
-- [func makeEncoder() -> PropertyListEncoder](networkpropertylistcoder/makeencoder.md)
+- [func makeEncoder() -> PropertyListEncoder](./networkpropertylistcoder/makeencoder%28%29.md)
   Make a PropertyListEncoder that can be used to encode an Encodable type.
 
 ## Relationships
 
 ### Conforms To
-- [NetworkCoder](networkcoder.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NetworkCoder](./networkcoder.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

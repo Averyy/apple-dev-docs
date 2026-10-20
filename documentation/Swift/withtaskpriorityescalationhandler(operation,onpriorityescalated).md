@@ -1,7 +1,8 @@
 # withTaskPriorityEscalationHandler(operation:onPriorityEscalated:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Runs the passed `operation` while registering a task priority escalation handler. The handler will be triggered concurrently to the current task if the current is subject to priority escalation.
 
@@ -35,7 +36,7 @@ If multiple task escalation handlers are nested they will all be triggered.
 
 Task escalation propagates through structured concurrency child-tasks.
 
-> **Note**: When the `operation` throws an error
+> **Throws**: When the `operation` throws an error
 
 ## Parameters
 
@@ -44,17 +45,18 @@ Task escalation propagates through structured concurrency child-tasks.
 
 ## See Also
 
-- [init(name: String?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:priority:operation:)-2dll5.md)
+### Creating a Task
+- [init(name: String?, priority: TaskPriority?, operation: sending () async -> Success)](./task/init%28name,priority,operation%29-2dll5.md)
   Runs the given nonthrowing operation asynchronously as part of a new *unstructured* top-level task.
-- [init(name: String?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(name:priority:operation:)-43wmk.md)
+- [init(name: String?, priority: TaskPriority?, operation: sending () async throws -> Success)](./task/init%28name,priority,operation%29-43wmk.md)
   Runs the given throwing operation asynchronously as part of a new *unstructured* top-level task.
-- [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(name:executorpreference:priority:operation:)-59bfi.md)
+- [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success)](./task/init%28name,executorpreference,priority,operation%29-59bfi.md)
   Runs the given throwing operation asynchronously as part of a new *unstructured* top-level task.
-- [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:executorpreference:priority:operation:)-81pay.md)
+- [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success)](./task/init%28name,executorpreference,priority,operation%29-81pay.md)
   Runs the given nonthrowing operation asynchronously as part of a new *unstructured* top-level task.
-- [static var currentPriority: TaskPriority](task/currentpriority.md)
+- [static var currentPriority: TaskPriority](./task/currentpriority.md)
   The current task’s priority.
-- [static var basePriority: TaskPriority?](task/basepriority.md)
+- [static var basePriority: TaskPriority?](./task/basepriority.md)
   The current task’s base priority.
 
 

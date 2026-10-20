@@ -1,7 +1,8 @@
 # destPosition(at:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the destination position of a vertex.
 
@@ -20,13 +21,17 @@ Returns the destination position of a vertex.
 func destPosition(at index: Int) -> vector_float2
 ```
 
+```objc
+- (vector_float2) destPositionAtIndex:(NSInteger) index;
+```
+
 #### Return Value
 
 The normalized position of the specified vertex in `destPositions`.
 
 #### Discussion
 
-The specified index must be between 0 and the warp geometry grid’s [`vertexCount`](skwarpgeometrygrid/vertexcount.md) `- 1`.
+The specified index must be between 0 and the warp geometry grid’s [`vertexCount`](./vertexcount.md) `- 1`.
 
 ## Parameters
 
@@ -34,11 +39,12 @@ The specified index must be between 0 and the warp geometry grid’s [`vertexCou
 
 ## See Also
 
-- [func replacingByDestinationPositions(positions: [SIMD2<Float>]) -> SKWarpGeometryGrid](skwarpgeometrygrid/replacingbydestinationpositions(positions:).md)
+### Accessing or Setting Grid Vertices
+- [func replacingByDestinationPositions(positions: [SIMD2<Float>]) -> SKWarpGeometryGrid](./replacingbydestinationpositions%28positions%29.md)
   Returns a copy of this grid, updated with the argument destination positions.
-- [func replacingBySourcePositions(positions: [SIMD2<Float>]) -> SKWarpGeometryGrid](skwarpgeometrygrid/replacingbysourcepositions(positions:).md)
+- [func replacingBySourcePositions(positions: [SIMD2<Float>]) -> SKWarpGeometryGrid](./replacingbysourcepositions%28positions%29.md)
   Returns a copy of this grid, updated with the argument source positions.
-- [func sourcePosition(at: Int) -> vector_float2](skwarpgeometrygrid/sourceposition(at:).md)
+- [func sourcePosition(at: Int) -> vector_float2](./sourceposition%28at%29.md)
   Returns the source position of a vertex.
 
 

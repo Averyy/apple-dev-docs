@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The automatic scroll edge effect style.
 
@@ -16,6 +17,10 @@ The automatic scroll edge effect style.
 
 ```swift
 class var automatic: UIScrollEdgeEffect.Style { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) UIScrollEdgeEffectStyle * automaticStyle;
 ```
 
 

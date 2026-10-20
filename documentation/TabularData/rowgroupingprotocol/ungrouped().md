@@ -2,6 +2,7 @@
 
 **Framework**: TabularData  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Generates a data frame that contains all the rows from each group in the row grouping.

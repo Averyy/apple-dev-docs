@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBDFeaturesReadBit](1645939-anonymous/kbdfeaturesreadbit.md)
-- [kBDFeaturesWriteBit](1645939-anonymous/kbdfeatureswritebit.md)
+- [kBDFeaturesReadBit](./api-1645939-anonymous/kbdfeaturesreadbit.md)
+- [kBDFeaturesWriteBit](./api-1645939-anonymous/kbdfeatureswritebit.md)
 
 
 ---

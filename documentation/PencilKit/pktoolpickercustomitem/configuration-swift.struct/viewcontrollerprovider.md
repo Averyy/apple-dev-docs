@@ -1,7 +1,8 @@
 # viewControllerProvider
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure to provide a view controller above the system controls in the tool attributes popover.
 

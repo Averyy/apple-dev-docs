@@ -1,7 +1,8 @@
 # ICScannerFeature
 
 **Framework**: ImageCaptureCore  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract class that describes a scanner feature.
 
@@ -14,46 +15,51 @@ An abstract class that describes a scanner feature.
 class ICScannerFeature
 ```
 
+```objc
+@interface ICScannerFeature : NSObject
+```
+
 #### Overview
 
-The ImageCaptureCore framework defines three concrete subclasses of scanner features: [`ICScannerFeatureEnumeration`](icscannerfeatureenumeration.md), [`ICScannerFeatureRange`](icscannerfeaturerange.md), and [`ICScannerFeatureBoolean`](icscannerfeatureboolean.md). Scanner functional units may have one or more instances of these classes to allow users to choose scanner-specific settings or operations before performing a scan.
+The ImageCaptureCore framework defines three concrete subclasses of scanner features: [`ICScannerFeatureEnumeration`](./icscannerfeatureenumeration.md), [`ICScannerFeatureRange`](./icscannerfeaturerange.md), and [`ICScannerFeatureBoolean`](./icscannerfeatureboolean.md). Scanner functional units may have one or more instances of these classes to allow users to choose scanner-specific settings or operations before performing a scan.
 
 ## Topics
 
 ### Instance Properties
-- [var humanReadableName: String?](icscannerfeature/humanreadablename.md)
-- [var internalName: String?](icscannerfeature/internalname.md)
-- [var tooltip: String?](icscannerfeature/tooltip.md)
-- [var type: ICScannerFeatureType](icscannerfeature/type.md)
+- [var humanReadableName: String?](./icscannerfeature/humanreadablename.md)
+- [var internalName: String?](./icscannerfeature/internalname.md)
+- [var tooltip: String?](./icscannerfeature/tooltip.md)
+- [var type: ICScannerFeatureType](./icscannerfeature/type.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [ICScannerFeatureBoolean](icscannerfeatureboolean.md)
-- [ICScannerFeatureEnumeration](icscannerfeatureenumeration.md)
-- [ICScannerFeatureRange](icscannerfeaturerange.md)
-- [ICScannerFeatureTemplate](icscannerfeaturetemplate.md)
+- [ICScannerFeatureBoolean](./icscannerfeatureboolean.md)
+- [ICScannerFeatureEnumeration](./icscannerfeatureenumeration.md)
+- [ICScannerFeatureRange](./icscannerfeaturerange.md)
+- [ICScannerFeatureTemplate](./icscannerfeaturetemplate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ICScannerFeatureBoolean](icscannerfeatureboolean.md)
+### Features
+- [class ICScannerFeatureBoolean](./icscannerfeatureboolean.md)
   A feature with a value of `YES` or `NO`.
-- [class ICScannerFeatureEnumeration](icscannerfeatureenumeration.md)
+- [class ICScannerFeatureEnumeration](./icscannerfeatureenumeration.md)
   A feature that can have one of several discrete values, strings or numbers.
-- [class ICScannerFeatureRange](icscannerfeaturerange.md)
+- [class ICScannerFeatureRange](./icscannerfeaturerange.md)
   A feature with a value that lies within a range.
-- [class ICScannerFeatureTemplate](icscannerfeaturetemplate.md)
+- [class ICScannerFeatureTemplate](./icscannerfeaturetemplate.md)
   A group of one or more rectangular scan areas that can be used with a scanner functional unit.
-- [enum ICScannerFeatureType](icscannerfeaturetype.md)
+- [enum ICScannerFeatureType](./icscannerfeaturetype.md)
   The types of scanner features.
 
 

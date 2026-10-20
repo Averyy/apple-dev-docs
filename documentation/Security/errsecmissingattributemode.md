@@ -1,7 +1,8 @@
 # errSecMissingAttributeMode
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A mode attribute is missing.
 
@@ -18,6 +19,10 @@ A mode attribute is missing.
 
 ```swift
 var errSecMissingAttributeMode: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeMode
 ```
 
 

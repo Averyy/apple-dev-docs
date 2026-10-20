@@ -1,7 +1,8 @@
 # BetaRecruitmentCriterionUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a beta recruitment criterion update request.
 
@@ -10,21 +11,21 @@ The request body you use to update a beta recruitment criterion update request.
 
 ## Declaration
 
-```swift
+```
 object BetaRecruitmentCriterionUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BetaRecruitmentCriterionUpdateRequest.Data.Attributes](betarecruitmentcriterionupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object BetaRecruitmentCriterionUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a beta recruitment criterion update request resource.
 
 ## Properties
 
 - `attributes` (BetaRecruitmentCriterionUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `betaRecruitmentCriteria`
 
 
 ---

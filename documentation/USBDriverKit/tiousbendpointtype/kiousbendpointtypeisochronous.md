@@ -1,7 +1,8 @@
 # kIOUSBEndpointTypeIsochronous
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An endpoint you use for isochronous transfers.
 
@@ -10,17 +11,18 @@ An endpoint you use for isochronous transfers.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBEndpointTypeIsochronous
 ```
 
 ## See Also
 
-- [kIOUSBEndpointTypeControl](tiousbendpointtype/kiousbendpointtypecontrol.md)
+### Getting the Endpoint Types
+- [kIOUSBEndpointTypeControl](./kiousbendpointtypecontrol.md)
   A control endpoint for the device.
-- [kIOUSBEndpointTypeBulk](tiousbendpointtype/kiousbendpointtypebulk.md)
+- [kIOUSBEndpointTypeBulk](./kiousbendpointtypebulk.md)
   An endpoint you use for bulk transfers.
-- [kIOUSBEndpointTypeInterrupt](tiousbendpointtype/kiousbendpointtypeinterrupt.md)
+- [kIOUSBEndpointTypeInterrupt](./kiousbendpointtypeinterrupt.md)
   An endpoint you use for interrupts.
 
 

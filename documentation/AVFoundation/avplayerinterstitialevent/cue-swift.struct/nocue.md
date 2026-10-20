@@ -1,7 +1,8 @@
 # noCue
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A cue that indicates that playback starts at the interstitial event time or date.
 
@@ -20,11 +21,16 @@ A cue that indicates that playback starts at the interstitial event time or date
 static let noCue: AVPlayerInterstitialEvent.Cue
 ```
 
+```c
+extern AVPlayerInterstitialEventCue const AVPlayerInterstitialEventNoCue;
+```
+
 ## See Also
 
-- [static let joinCue: AVPlayerInterstitialEvent.Cue](avplayerinterstitialevent/cue-swift.struct/joincue.md)
+### Cues
+- [static let joinCue: AVPlayerInterstitialEvent.Cue](./joincue.md)
   A cue that indicates that playback occurs before starting primary playback, regardless of initial primary playback position.
-- [static let leaveCue: AVPlayerInterstitialEvent.Cue](avplayerinterstitialevent/cue-swift.struct/leavecue.md)
+- [static let leaveCue: AVPlayerInterstitialEvent.Cue](./leavecue.md)
   A cue that indicates event playback occurs after primary playback ends without error, either at the end of the primary asset or at the client-specified forward playback end time.
 
 

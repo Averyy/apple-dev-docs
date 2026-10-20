@@ -1,7 +1,8 @@
 # url
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL identifying the target file on the local filesystem.
 
@@ -17,15 +18,20 @@ The URL identifying the target file on the local filesystem.
 var url: URL? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSURL * URL;
+```
+
 ## See Also
 
-- [var uti: String?](uidocumentinteractioncontroller/uti.md)
+### Accessing the target document’s attributes
+- [var uti: String?](./uti.md)
   The type of the target file.
-- [var name: String?](uidocumentinteractioncontroller/name.md)
+- [var name: String?](./name.md)
   The name of the target file.
-- [var icons: [UIImage]](uidocumentinteractioncontroller/icons.md)
+- [var icons: [UIImage]](./icons.md)
   The images associated with the target file.
-- [var annotation: Any?](uidocumentinteractioncontroller/annotation.md)
+- [var annotation: Any?](./annotation.md)
   Custom property list information for the target file.
 
 

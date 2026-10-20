@@ -1,7 +1,8 @@
 # eventChangedNotification
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that contains details about an event in a persistent CloudKit container.
 
@@ -20,17 +21,22 @@ A notification that contains details about an event in a persistent CloudKit con
 class let eventChangedNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const NSPersistentCloudKitContainerEventChangedNotification;
+```
+
 ## See Also
 
-- [NSPersistentCloudKitContainer.Event](nspersistentcloudkitcontainer/event.md)
+### Monitoring Container Events
+- [NSPersistentCloudKitContainer.Event](./event.md)
   An object that represents activity in a persistent CloudKit container.
-- [NSPersistentCloudKitContainer.EventType](nspersistentcloudkitcontainer/eventtype.md)
+- [NSPersistentCloudKitContainer.EventType](./eventtype.md)
   The type of event in a persistent CloudKit container, either setup, import, or export.
-- [class NSPersistentCloudKitContainerEventRequest](nspersistentcloudkitcontainereventrequest.md)
+- [class NSPersistentCloudKitContainerEventRequest](../nspersistentcloudkitcontainereventrequest.md)
   A request to fetch setup, import, or export events in a persistent CloudKit container.
-- [class NSPersistentCloudKitContainerEventResult](nspersistentcloudkitcontainereventresult.md)
+- [class NSPersistentCloudKitContainerEventResult](../nspersistentcloudkitcontainereventresult.md)
   The result of a request to fetch persistent CloudKit container events.
-- [class let eventNotificationUserInfoKey: String](nspersistentcloudkitcontainer/eventnotificationuserinfokey.md)
+- [class let eventNotificationUserInfoKey: String](./eventnotificationuserinfokey.md)
   The user info dictionary key for the persistent CloudKit container event.
 
 

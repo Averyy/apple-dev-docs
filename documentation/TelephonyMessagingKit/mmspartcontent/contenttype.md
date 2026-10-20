@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content type of the part, as a Uniform Type Identifier.
 
@@ -37,21 +38,22 @@ Most MMS clients support the following content types:
 - `video/3gp`
 - `video/3gp`
 
-You can also use custom content types, such as a [`UTType`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct) based on a custom MIME type.
+You can also use custom content types, such as a [`UTType`](../../UniformTypeIdentifiers/uttype-swift.struct.md) based on a custom MIME type.
 
 ## See Also
 
-- [var data: Data](mmspartcontent/data.md)
+### Accessing part properties
+- [var data: Data](./data.md)
   The raw data used for the MMS content part.
-- [var disposition: MMSPartContent.MMSDispositionType](mmspartcontent/disposition.md)
+- [var disposition: MMSPartContent.MMSDispositionType](./disposition.md)
   The disposition of the MMS part, indicating whether the part renders inline or as an attachment.
-- [MMSPartContent.MMSDispositionType](mmspartcontent/mmsdispositiontype.md)
+- [MMSPartContent.MMSDispositionType](./mmsdispositiontype.md)
   A structure that defines the disposition of the content part when rendered.
-- [var filename: String](mmspartcontent/filename.md)
+- [var filename: String](./filename.md)
   The file name of the MMS part.
-- [var contentID: String](mmspartcontent/contentid.md)
+- [var contentID: String](./contentid.md)
   A unique identifier for the part.
-- [struct UTType](../uniformtypeidentifiers/uttype-swift.struct.md)
+- [struct UTType](../../UniformTypeIdentifiers/uttype-swift.struct.md)
   A structure that represents a type of data to load, send, or receive.
 
 

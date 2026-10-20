@@ -1,7 +1,8 @@
 # ordered
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Tool call steps that must be satisfied in sequential order.
 
@@ -22,15 +23,16 @@ var ordered: [ToolExpectation]
 
 #### Discussion
 
-Each entry is either a single [`ToolExpectation`](toolexpectation.md) or an [`anyOrder(_:)`](toolexpectation/anyorder(_:).md) group where multiple tools must all be called at that position (in any relative order).
+Each entry is either a single [`ToolExpectation`](../toolexpectation.md) or an [`anyOrder(_:)`](../toolexpectation/anyorder%28_%29.md) group where multiple tools must all be called at that position (in any relative order).
 
 ## See Also
 
-- [var unordered: [ToolExpectation]](trajectoryexpectation/unordered.md)
+### Combining expectations
+- [var unordered: [ToolExpectation]](./unordered.md)
   Tool calls that must occur at some point, regardless of position.
-- [var disallowed: [ToolExpectation]](trajectoryexpectation/disallowed.md)
+- [var disallowed: [ToolExpectation]](./disallowed.md)
   Tools that the model must NOT call.
-- [var allowsAdditionalCalls: Bool](trajectoryexpectation/allowsadditionalcalls.md)
+- [var allowsAdditionalCalls: Bool](./allowsadditionalcalls.md)
   A Boolean value that indicates whether to allow tool calls that don’t match any expectation.
 
 

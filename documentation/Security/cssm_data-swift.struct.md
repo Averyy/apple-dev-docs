@@ -1,7 +1,8 @@
 # cssm_data
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,19 +14,23 @@
 struct cssm_data
 ```
 
+```c
+struct cssm_data;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cssm_data-swift.struct/init.md)
-- [init(Length: Int, Data: UnsafeMutablePointer<UInt8>?)](cssm_data-swift.struct/init(length:data:).md)
+- [init()](./cssm_data-swift.struct/init%28%29.md)
+- [init(Length: Int, Data: UnsafeMutablePointer<UInt8>?)](./cssm_data-swift.struct/init%28length,data%29.md)
 ### Instance Properties
-- [var Data: UnsafeMutablePointer<UInt8>?](cssm_data-swift.struct/data.md)
-- [var Length: Int](cssm_data-swift.struct/length.md)
+- [var Data: UnsafeMutablePointer<UInt8>?](./cssm_data-swift.struct/data.md)
+- [var Length: Int](./cssm_data-swift.struct/length.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

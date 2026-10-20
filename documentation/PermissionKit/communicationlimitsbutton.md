@@ -1,7 +1,8 @@
 # CommunicationLimitsButton
 
 **Framework**: PermissionKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A button that presents a system UI to a parent or guardian to ask for an exception to a child’s communication limits.
 
@@ -22,19 +23,19 @@ A button that presents a system UI to a parent or guardian to ask for an excepti
 ## Topics
 
 ### Creating a view
-- [init(question: PermissionQuestion<CommunicationTopic>, label: () -> Label)](communicationlimitsbutton/init(question:label:).md)
+- [init(question: PermissionQuestion<CommunicationTopic>, label: () -> Label)](./communicationlimitsbutton/init%28question,label%29.md)
   Creates a new instance.
-- [var body: some View](communicationlimitsbutton/body.md)
+- [var body: some View](./communicationlimitsbutton/body.md)
   The body of the view.
-- [let question: PermissionQuestion<CommunicationTopic>](communicationlimitsbutton/question.md)
+- [let question: PermissionQuestion<CommunicationTopic>](./communicationlimitsbutton/question.md)
   The question to ask a parent or guardian about making an exception to their child’s communication limits.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 
 ---

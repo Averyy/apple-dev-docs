@@ -1,7 +1,8 @@
 # AVVideoCompositionInstructionProtocol
 
 **Framework**: AVFoundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines the interface for a video composition instruction.
 
@@ -19,6 +20,10 @@ A protocol that defines the interface for a video composition instruction.
 protocol AVVideoCompositionInstructionProtocol : NSObjectProtocol, Sendable
 ```
 
+```objc
+@protocol AVVideoCompositionInstruction <NSObject>
+```
+
 #### Overview
 
 A video composition maintains an array of instructions that describe how to compose its content.
@@ -26,35 +31,36 @@ A video composition maintains an array of instructions that describe how to comp
 ## Topics
 
 ### Getting track ID settings
-- [var passthroughTrackID: CMPersistentTrackID](avvideocompositioninstructionprotocol/passthroughtrackid.md)
+- [var passthroughTrackID: CMPersistentTrackID](./avvideocompositioninstructionprotocol/passthroughtrackid.md)
   An identifier of a source track to pass through without compositing.
-- [var requiredSourceTrackIDs: [NSValue]?](avvideocompositioninstructionprotocol/requiredsourcetrackids.md)
+- [var requiredSourceTrackIDs: [NSValue]?](./avvideocompositioninstructionprotocol/requiredsourcetrackids.md)
   The identifiers of the video tracks the instruction requires to compose frames.
-- [var requiredSourceSampleDataTrackIDs: [NSNumber]](avvideocompositioninstructionprotocol/requiredsourcesampledatatrackids.md)
+- [var requiredSourceSampleDataTrackIDs: [NSNumber]](./avvideocompositioninstructionprotocol/requiredsourcesampledatatrackids.md)
   The identifiers of the sample data tracks the instruction requires to compose frames.
 ### Getting tweening settings
-- [var containsTweening: Bool](avvideocompositioninstructionprotocol/containstweening.md)
+- [var containsTweening: Bool](./avvideocompositioninstructionprotocol/containstweening.md)
   A Boolean value that indicates whether the composition contains tweening.
 ### Getting post-processing status
-- [var enablePostProcessing: Bool](avvideocompositioninstructionprotocol/enablepostprocessing.md)
+- [var enablePostProcessing: Bool](./avvideocompositioninstructionprotocol/enablepostprocessing.md)
   A Boolean value that indicates whether the composition enables post-processing.
 ### Getting timing settings
-- [var timeRange: CMTimeRange](avvideocompositioninstructionprotocol/timerange.md)
+- [var timeRange: CMTimeRange](./avvideocompositioninstructionprotocol/timerange.md)
   The time range during which the instruction is effective.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [AVMutableVideoCompositionInstruction](avmutablevideocompositioninstruction.md)
-- [AVVideoCompositionInstruction](avvideocompositioninstruction-swift.class.md)
+- [AVMutableVideoCompositionInstruction](./avmutablevideocompositioninstruction.md)
+- [AVVideoCompositionInstruction](./avvideocompositioninstruction-swift.class.md)
 
 ## See Also
 
-- [var instructions: [any AVVideoCompositionInstructionProtocol]](avmutablevideocomposition/instructions.md)
+### Specifying composition instructions
+- [var instructions: [any AVVideoCompositionInstructionProtocol]](./avmutablevideocomposition/instructions.md)
   The video composition instructions.
 
 

@@ -1,7 +1,8 @@
 # minimumGroupingDigits
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 See \c kCFNumberFormatterMinGroupingDigits in \c CFNumberFormatter for an explanation on how minimum grouping digits is used.
 
@@ -18,6 +19,10 @@ See \c kCFNumberFormatterMinGroupingDigits in \c CFNumberFormatter for an explan
 
 ```swift
 var minimumGroupingDigits: Int { get set }
+```
+
+```objc
+@property NSInteger minimumGroupingDigits;
 ```
 
 

@@ -1,7 +1,8 @@
 # AsyncThrowingStream.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The asynchronous iterator for iterating an asynchronous stream.
 
@@ -20,6 +21,8 @@ The asynchronous iterator for iterating an asynchronous stream.
 struct Iterator
 ```
 
+Available when `Failure` conforms to `Error`.
+
 #### Overview
 
 This type is not `Sendable`. Don’t use it from multiple concurrent contexts. It is a programmer error to invoke `next()` from a concurrent context that contends with another such call, which results in a call to `fatalError()`.
@@ -27,22 +30,23 @@ This type is not `Sendable`. Don’t use it from multiple concurrent contexts. I
 ## Topics
 
 ### Iterating over Elements
-- [func next() async throws -> Element?](asyncthrowingstream/iterator/next.md)
+- [func next() async throws -> Element?](./iterator/next%28%29.md)
   The next value from the asynchronous stream.
 ### Instance Methods
-- [func next(isolation: isolated (any Actor)?) async throws(Failure) -> Element?](asyncthrowingstream/iterator/next(isolation:).md)
+- [func next(isolation: isolated (any Actor)?) async throws(Failure) -> Element?](./iterator/next%28isolation%29.md)
   The next value from the asynchronous stream.
 ### Default Implementations
-- [AsyncIteratorProtocol Implementations](asyncthrowingstream/iterator/asynciteratorprotocol-implementations.md)
+- [AsyncIteratorProtocol Implementations](./iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../asynciteratorprotocol.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> AsyncThrowingStream<Element, Failure>.Iterator](asyncthrowingstream/makeasynciterator.md)
+### Creating an Iterator
+- [func makeAsyncIterator() -> AsyncThrowingStream<Element, Failure>.Iterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 
 

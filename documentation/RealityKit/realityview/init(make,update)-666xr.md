@@ -1,7 +1,8 @@
 # init(make:update:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new reality view for visionOS with an optional update closure.
 
@@ -13,6 +14,15 @@ Creates a new reality view for visionOS with an optional update closure.
 ```swift
 nonisolated
 init(make: @escaping @MainActor @Sendable (inout RealityViewContent) async -> Void, update: (@MainActor (inout RealityViewContent) -> Void)? = nil) where Content == RealityViewContent.Body<RealityViewDefaultPlaceholder>
+```
+
+Available when `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(make: @escaping @MainActor @Sendable (inout RealityViewCameraContent) async -> Void, update: (@MainActor (inout RealityViewCameraContent) -> Void)? = nil) where Content == RealityViewCameraContent.Body<RealityViewDefaultPlaceholder>
 ```
 
 #### Discussion
@@ -34,11 +44,12 @@ RealityView { content in
 
 ## See Also
 
-- [init<P>(make: (inout RealityViewContent) async -> Void, update: ((inout RealityViewContent) -> Void)?, placeholder: () -> P)](realityview/init(make:update:placeholder:)-4c8yv.md)
+### Creating a reality view for visionOS
+- [init<P>(make: (inout RealityViewContent) async -> Void, update: ((inout RealityViewContent) -> Void)?, placeholder: () -> P)](./init%28make,update,placeholder%29-4c8yv.md)
   Creates a new reality view for visionOS with an optional update closure and placeholder view.
-- [init<A>(make: (inout RealityViewContent, RealityViewAttachments) async -> Void, update: ((inout RealityViewContent, RealityViewAttachments) -> Void)?, attachments: () -> A)](realityview/init(make:update:attachments:).md)
+- [init<A>(make: (inout RealityViewContent, RealityViewAttachments) async -> Void, update: ((inout RealityViewContent, RealityViewAttachments) -> Void)?, attachments: () -> A)](./init%28make,update,attachments%29.md)
   Creates a reality view for visionOS, with attachments and an optional update closure.
-- [init<A, P>(make: (inout RealityViewContent, RealityViewAttachments) async -> Void, update: ((inout RealityViewContent, RealityViewAttachments) -> Void)?, placeholder: () -> P, attachments: () -> A)](realityview/init(make:update:placeholder:attachments:).md)
+- [init<A, P>(make: (inout RealityViewContent, RealityViewAttachments) async -> Void, update: ((inout RealityViewContent, RealityViewAttachments) -> Void)?, placeholder: () -> P, attachments: () -> A)](./init%28make,update,placeholder,attachments%29.md)
   Creates a reality view for visionOS, with attachments, an optional update closure, and placeholder view.
 
 

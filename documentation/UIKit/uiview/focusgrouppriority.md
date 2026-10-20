@@ -1,7 +1,8 @@
 # focusGroupPriority
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The importance of the item within a focus group, used by the focus system to determine the group’s primary item.
 
@@ -17,6 +18,10 @@ The importance of the item within a focus group, used by the focus system to det
 var focusGroupPriority: UIFocusGroupPriority { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) UIFocusGroupPriority focusGroupPriority;
+```
+
 #### Discussion
 
 The system automatically assigns each focusable item in a focus group one of the predefined system priorities. The visible item with the highest priority is the group’s primary item.
@@ -25,15 +30,16 @@ You can override the default priority of an item to customize the primary item o
 
 ## See Also
 
-- [var canBecomeFocused: Bool](uiview/canbecomefocused.md)
+### Working with focus
+- [var canBecomeFocused: Bool](./canbecomefocused.md)
   A Boolean value that indicates whether the view is currently capable of being focused.
-- [class var inheritedAnimationDuration: TimeInterval](uiview/inheritedanimationduration.md)
+- [class var inheritedAnimationDuration: TimeInterval](./inheritedanimationduration.md)
   Returns the inherited duration of the current animation.
-- [var isFocused: Bool](uiview/isfocused.md)
+- [var isFocused: Bool](./isfocused.md)
   A Boolean value that indicates whether the item is currently focused.
-- [var focusGroupIdentifier: String?](uiview/focusgroupidentifier.md)
+- [var focusGroupIdentifier: String?](./focusgroupidentifier.md)
   The identifier of the focus group that this view belongs to.
-- [var focusEffect: UIFocusEffect?](uiview/focuseffect.md)
+- [var focusEffect: UIFocusEffect?](./focuseffect.md)
   The visual effect to apply when the view becomes focused.
 
 

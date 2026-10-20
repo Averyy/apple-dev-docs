@@ -1,7 +1,8 @@
 # CMFormatDescription.Error
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that describes format description errors.
 
@@ -23,15 +24,15 @@ struct Error
 ## Topics
 
 ### Errors
-- [static let allocationFailed: NSError](cmformatdescription/error/allocationfailed.md)
-- [static let invalidParameter: NSError](cmformatdescription/error/invalidparameter.md)
-- [static let valueNotAvailable: NSError](cmformatdescription/error/valuenotavailable.md)
+- [static let allocationFailed: NSError](./error/allocationfailed.md)
+- [static let invalidParameter: NSError](./error/invalidparameter.md)
+- [static let valueNotAvailable: NSError](./error/valuenotavailable.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

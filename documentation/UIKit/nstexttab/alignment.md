@@ -1,7 +1,8 @@
 # alignment
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text alignment of the text tab.
 
@@ -19,11 +20,16 @@ The text alignment of the text tab.
 var alignment: NSTextAlignment { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTextAlignment alignment;
+```
+
 ## See Also
 
-- [var options: [NSTextTab.OptionKey : Any]](nstexttab/options.md)
+### Getting text tab information
+- [var options: [NSTextTab.OptionKey : Any]](./options.md)
   The dictionary of attributes for the text tab.
-- [class func columnTerminators(for: Locale?) -> CharacterSet](nstexttab/columnterminators(for:).md)
+- [class func columnTerminators(for: Locale?) -> CharacterSet](./columnterminators%28for%29.md)
   Returns the column terminators for the specified locale.
 
 

@@ -1,7 +1,8 @@
 # CiTestResult.Attributes.DestinationTestResults
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The results of a test action Xcode Cloud performed using a specific test destination.
 
@@ -10,7 +11,7 @@ The results of a test action Xcode Cloud performed using a specific test destina
 
 ## Declaration
 
-```swift
+```
 object CiTestResult.Attributes.DestinationTestResults
 ```
 
@@ -24,7 +25,8 @@ object CiTestResult.Attributes.DestinationTestResults
 
 ## See Also
 
-- [type CiTestStatus](citeststatus.md)
+### Objects and types
+- [type CiTestStatus](../../citeststatus.md)
   A string that represents test status information.
 
 

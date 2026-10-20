@@ -1,26 +1,29 @@
 # LSEnvironment
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 Environment variables to set before launching the app.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `LSEnvironment` (Environment variables)
+- **Type**: dictionary
 
 ## See Also
 
-- [NSPrincipalClass](information-property-list/nsprincipalclass.md)
+### Launch
+- [NSPrincipalClass](./nsprincipalclass.md)
   The name of the bundle’s main executable class.
-- [CLKComplicationPrincipalClass](information-property-list/clkcomplicationprincipalclass.md)
+- [CLKComplicationPrincipalClass](./clkcomplicationprincipalclass.md)
   The name of the class that implements the complication data source protocol.
-- [CFBundleExecutable](information-property-list/cfbundleexecutable.md)
+- [CFBundleExecutable](./cfbundleexecutable.md)
   The name of the bundle’s executable file.
-- [UIApplicationShortcutItems](information-property-list/uiapplicationshortcutitems.md)
+- [UIApplicationShortcutItems](./uiapplicationshortcutitems.md)
 
 
 ---

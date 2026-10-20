@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notification that device attestation has completed.
@@ -18,7 +19,15 @@ Notification that device attestation has completed.
 ## Declaration
 
 ```swift
+func commissioning(_ commissioning: MTRCommissioningOperation, completedDeviceAttestation attestationDeviceInfo: MTRDeviceAttestationDeviceInfo, error: (any Error)?, completion: @escaping @Sendable () -> Void)
+```
+
+```swift
 func commissioning(_ commissioning: MTRCommissioningOperation, completedDeviceAttestation attestationDeviceInfo: MTRDeviceAttestationDeviceInfo, error: (any Error)?) async
+```
+
+```objc
+- (void) commissioning:(MTRCommissioningOperation *) commissioning completedDeviceAttestation:(MTRDeviceAttestationDeviceInfo *) attestationDeviceInfo error:(NSError *) error completion:(dispatch_block_t) completion;
 ```
 
 #### Discussion

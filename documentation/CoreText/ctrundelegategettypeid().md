@@ -1,7 +1,8 @@
 # CTRunDelegateGetTypeID()
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type of CTRunDelegate objects.
 
@@ -20,13 +21,18 @@ Returns the type of CTRunDelegate objects.
 func CTRunDelegateGetTypeID() -> CFTypeID
 ```
 
+```c
+extern CFTypeID CTRunDelegateGetTypeID();
+```
+
 #### Discussion
 
 The return type is a Core Foundation type (CTType).
 
 ## See Also
 
-- [func CTRunDelegateGetRefCon(CTRunDelegate) -> UnsafeMutableRawPointer](ctrundelegategetrefcon(_:).md)
+### Getting Information About a Run Delegate
+- [func CTRunDelegateGetRefCon(CTRunDelegate) -> UnsafeMutableRawPointer](./ctrundelegategetrefcon%28_%29.md)
   Returns a run delegate’s “refCon” value.
 
 

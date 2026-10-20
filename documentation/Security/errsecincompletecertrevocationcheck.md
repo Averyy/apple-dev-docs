@@ -1,7 +1,8 @@
 # errSecIncompleteCertRevocationCheck
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An incomplete certificate revocation check occurred.
 
@@ -18,6 +19,10 @@ An incomplete certificate revocation check occurred.
 
 ```swift
 var errSecIncompleteCertRevocationCheck: OSStatus { get }
+```
+
+```c
+errSecIncompleteCertRevocationCheck
 ```
 
 

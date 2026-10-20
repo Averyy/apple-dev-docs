@@ -1,6 +1,7 @@
 # Decompressing single files
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Article
 
 Recreate a single file from a compressed file.
 
@@ -8,11 +9,11 @@ Recreate a single file from a compressed file.
 
 In this article, you’ll learn how to use AppleArchive to decompress a previously compressed file, and write the decompressed data to a file.
 
-The code below decompresses the file generated using the steps explained in [`Compressing single files`](compressing-single-files.md).
+The code below decompresses the file generated using the steps explained in [Compressing single files](./compressing-single-files.md).
 
-##### Create the File Stream to Read the Source Archive
+##### Create the file stream to read the source archive
 
-The [`ArchiveByteStream`](https://developer.apple.com/documentation/applearchive/archivebytestream) class provides static factory methods that create streams for different functions. In this case, use [`fileStream(path:mode:options:permissions:)`](https://developer.apple.com/documentation/applearchive/archivebytestream/filestream(path:mode:options:permissions:)) to create a byte stream that reads the source file:
+The [`ArchiveByteStream`](../AppleArchive/archivebytestream.md) class provides static factory methods that create streams for different functions. In this case, use [`fileStream(path:mode:options:permissions:)`](../AppleArchive/archivebytestream/filestream%28path,mode,options,permissions%29.md) to create a byte stream that reads the source file:
 
 ```swift
 let archiveFilePath = FilePath(NSTemporaryDirectory() + "myFile.pdf.lzfse")
@@ -29,9 +30,9 @@ defer {
 }
 ```
 
-##### Create the File Stream to Write the Decompressed File
+##### Create the file stream to write the decompressed file
 
-You also use [`fileStream(path:mode:options:permissions:)`](https://developer.apple.com/documentation/applearchive/archivebytestream/filestream(path:mode:options:permissions:)) to create the file stream that writes the decompressed file to the file system. In this case, use the [`writeOnly`](https://developer.apple.com/documentation/system/filedescriptor/accessmode/writeonly) mode:
+You also use [`fileStream(path:mode:options:permissions:)`](../AppleArchive/archivebytestream/filestream%28path,mode,options,permissions%29.md) to create the file stream that writes the decompressed file to the file system. In this case, use the [`writeOnly`](../System/filedescriptor/accessmode/writeonly.md) mode:
 
 ```swift
 let destinationFilePath = FilePath(NSTemporaryDirectory() + "myFile_decompressed.pdf")
@@ -48,7 +49,7 @@ defer {
 }
 ```
 
-##### Create the Decompression Stream
+##### Create the decompression stream
 
 Create the decompression stream. Specify the file-reading stream as the input stream that provides the compressed data:
 
@@ -62,9 +63,9 @@ defer {
 }
 ```
 
-##### Decompress the Source Archive
+##### Decompress the source archive
 
-Finally, call [`process(readingFrom:writingTo:)`](https://developer.apple.com/documentation/applearchive/archivebytestream/process(readingfrom:writingto:)) to write the output of the decompression stream to the file-writing stream:
+Finally, call [`process(readingFrom:writingTo:)`](../AppleArchive/archivebytestream/process%28readingfrom,writingto%29.md) to write the output of the decompression stream to the file-writing stream:
 
 ```swift
 do {
@@ -75,19 +76,20 @@ do {
 }
 ```
 
-On return, `myFile_decompressed.pdf` exists in [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/foundation/nstemporarydirectory()) and contains the decompressed contents of `myFile.pdf.lzfse`.
+On return, `myFile_decompressed.pdf` exists in [`NSTemporaryDirectory()`](../Foundation/nstemporarydirectory%28%29.md) and contains the decompressed contents of `myFile.pdf.lzfse`.
 
 ## See Also
 
-- [Compressing single files](compressing-single-files.md)
+### Directories, Files, and Data Archives
+- [Compressing single files](./compressing-single-files.md)
   Compress a single file and store the result on the file system.
-- [Compressing file system directories](compressing-file-system-directories.md)
+- [Compressing file system directories](./compressing-file-system-directories.md)
   Compress the contents of an entire directory and store the result on the file system.
-- [Decompressing and extracting an archived directory](decompressing-and-extracting-an-archived-directory.md)
+- [Decompressing and extracting an archived directory](./decompressing-and-extracting-an-archived-directory.md)
   Recreate an entire file system directory from an archive file.
-- [Compressing and saving a string to the file system](compressing-and-saving-a-string-to-the-file-system.md)
+- [Compressing and saving a string to the file system](./compressing-and-saving-a-string-to-the-file-system.md)
   Compress the contents of a Unicode string and store the result on the file system.
-- [Decompressing and parsing an archived string](decompressing-and-parsing-an-archived-string.md)
+- [Decompressing and parsing an archived string](./decompressing-and-parsing-an-archived-string.md)
   Recreate a string from an archive file.
 
 

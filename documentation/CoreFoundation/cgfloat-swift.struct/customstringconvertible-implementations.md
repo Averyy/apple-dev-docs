@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: Core Foundation
+**Framework**: Core Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](cgfloat-swift.struct/description.md)
+- [var description: String](./description.md)
   A textual representation of `self`.
 
 

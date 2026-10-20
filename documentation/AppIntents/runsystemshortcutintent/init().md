@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an intent that performs a person’s configured action.
 

@@ -1,7 +1,8 @@
 # isAccessibilityElement
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the item is an accessibility element an assistive application can access.
 
@@ -9,7 +10,7 @@ A Boolean value indicating whether the item is an accessibility element an assis
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ A Boolean value indicating whether the item is an accessibility element an assis
 var isAccessibilityElement: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL isAccessibilityElement;
+```
+
 #### Discussion
 
-The default value for this property is [`false`](https://developer.apple.com/documentation/swift/false). If the receiver is a UIKit control, the default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value for this property is [`false`](../../Swift/false.md). If the receiver is a UIKit control, the default value is [`true`](../../Swift/true.md).
 
 
 ---

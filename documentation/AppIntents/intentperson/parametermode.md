@@ -1,7 +1,8 @@
 # IntentPerson.ParameterMode
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of interface to show when someone chooses a parameter that contains information about a person.
 
@@ -11,7 +12,7 @@ The type of interface to show when someone chooses a parameter that contains inf
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,35 +24,36 @@ enum ParameterMode
 ## Topics
 
 ### Getting the interface type
-- [IntentPerson.ParameterMode.contact](intentperson/parametermode/contact.md)
+- [IntentPerson.ParameterMode.contact](./parametermode/contact.md)
   The parameter shows an interface allowing the user to pick a contact
-- [IntentPerson.ParameterMode.email](intentperson/parametermode/email.md)
+- [IntentPerson.ParameterMode.email](./parametermode/email.md)
   The parameter shows an interface allowing the user to pick an email
-- [IntentPerson.ParameterMode.emailOrPhone](intentperson/parametermode/emailorphone.md)
+- [IntentPerson.ParameterMode.emailOrPhone](./parametermode/emailorphone.md)
   The parameter shows an interface allowing the user to pick an email or phone number
-- [IntentPerson.ParameterMode.phone](intentperson/parametermode/phone.md)
+- [IntentPerson.ParameterMode.phone](./parametermode/phone.md)
   The parameter shows an interface allowing the user to pick a phone number
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [var handle: IntentPerson.Handle?](intentperson/handle-swift.property.md)
+### Getting identifying information
+- [var handle: IntentPerson.Handle?](./handle-swift.property.md)
   The primary `Handle` used to contact this `IntentPerson`
-- [var aliases: [IntentPerson.Handle]](intentperson/aliases.md)
+- [var aliases: [IntentPerson.Handle]](./aliases.md)
   Other secondary `Handle`s used to contact this `IntentPerson`, if any
-- [var isMe: Bool](intentperson/isme.md)
+- [var isMe: Bool](./isme.md)
   Whether this `IntentPerson` represents the owner of the device
-- [var image: DisplayRepresentation.Image?](intentperson/image.md)
+- [var image: DisplayRepresentation.Image?](./image.md)
   An image representing this `IntentPerson`
-- [IntentPerson.Handle](intentperson/handle-swift.struct.md)
+- [IntentPerson.Handle](./handle-swift.struct.md)
   A type that describes a single way to contact a person.
 
 

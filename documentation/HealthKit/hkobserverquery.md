@@ -1,7 +1,8 @@
 # HKObserverQuery
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A long-running query that monitors the HealthKit store and updates your app when the HealthKit store saves or deletes a matching sample.
 
@@ -19,9 +20,13 @@ A long-running query that monitors the HealthKit store and updates your app when
 class HKObserverQuery
 ```
 
+```objc
+@interface HKObserverQuery : HKQuery
+```
+
 ## Mentions
 
-- [Reading data from HealthKit](reading-data-from-healthkit.md)
+- [Reading data from HealthKit](./reading-data-from-healthkit.md)
 
 #### Overview
 
@@ -34,38 +39,39 @@ Observer queries are immutable: You set their properties when you first create t
 ## Topics
 
 ### Creating Observer Queries
-- [Executing Observer Queries](executing-observer-queries.md)
+- [Executing Observer Queries](./executing-observer-queries.md)
   Create and run observer queries.
-- [init(sampleType: HKSampleType, predicate: NSPredicate?, updateHandler: (HKObserverQuery, HKObserverQueryCompletionHandler, (any Error)?) -> Void)](hkobserverquery/init(sampletype:predicate:updatehandler:).md)
+- [init(sampleType: HKSampleType, predicate: NSPredicate?, updateHandler: (HKObserverQuery, HKObserverQueryCompletionHandler, (any Error)?) -> Void)](./hkobserverquery/init%28sampletype,predicate,updatehandler%29.md)
   Instantiates and returns a query that monitors the HealthKit store and responds to changes.
-- [init(queryDescriptors: [HKQueryDescriptor], updateHandler: (HKObserverQuery, Set<HKSampleType>?, HKObserverQueryCompletionHandler, (any Error)?) -> Void)](hkobserverquery/init(querydescriptors:updatehandler:).md)
+- [init(queryDescriptors: [HKQueryDescriptor], updateHandler: (HKObserverQuery, Set<HKSampleType>?, HKObserverQueryCompletionHandler, (any Error)?) -> Void)](./hkobserverquery/init%28querydescriptors,updatehandler%29.md)
   Creates a query that monitors the HealthKit store and responds to any changes matching any of the query descriptors you provided.
-- [typealias HKObserverQueryCompletionHandler](hkobserverquerycompletionhandler.md)
+- [typealias HKObserverQueryCompletionHandler](./hkobserverquerycompletionhandler.md)
   The completion handler for background deliveries.
 
 ## Relationships
 
 ### Inherits From
-- [HKQuery](hkquery.md)
+- [HKQuery](./hkquery.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HKActivitySummaryQueryDescriptor](hkactivitysummaryquerydescriptor.md)
+### Long-running queries
+- [struct HKActivitySummaryQueryDescriptor](./hkactivitysummaryquerydescriptor.md)
   A query interface that reads activity summaries using Swift concurrency.
-- [class HKActivitySummaryQuery](hkactivitysummaryquery.md)
+- [class HKActivitySummaryQuery](./hkactivitysummaryquery.md)
   A query for reading activity summary objects from the HealthKit store.
-- [struct HKAnchoredObjectQueryDescriptor](hkanchoredobjectquerydescriptor.md)
+- [struct HKAnchoredObjectQueryDescriptor](./hkanchoredobjectquerydescriptor.md)
   A query interface that runs anchored object queries using Swift concurrency.
-- [class HKAnchoredObjectQuery](hkanchoredobjectquery.md)
+- [class HKAnchoredObjectQuery](./hkanchoredobjectquery.md)
   A query that returns changes to the HealthKit store, including a snapshot of new changes and continuous monitoring as a long-running query.
 
 

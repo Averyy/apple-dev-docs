@@ -1,7 +1,8 @@
 # com.apple.developer.accessory-transport-extension
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An entitlement that enables your app extension to send sensitive data to an accessory.
 
@@ -9,23 +10,25 @@ An entitlement that enables your app extension to send sensitive data to an acce
 - iOS 26.2+
 - iPadOS 26.2+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.accessory-transport-extension`
+- **Type**: boolean
 
 #### Discussion
 
-If your app implements [`AccessoryTransportAppExtension`](https://developer.apple.com/documentation/accessorytransportextension/accessorytransportappextension), the framework requires the extension to have this entitlement with a value of `true` in its signature.
+If your app implements [`AccessoryTransportAppExtension`](../../AccessoryTransportExtension/accessorytransportappextension.md), the framework requires the extension to have this entitlement with a value of `true` in its signature.
 
-For more information, see [`Receiving iOS notifications on an accessory`](https://developer.apple.com/documentation/accessorytransportextension/receiving-ios-notifications-on-an-accessory).
+For more information, see [Receiving iOS notifications on an accessory](../../AccessoryTransportExtension/receiving-ios-notifications-on-an-accessory.md).
 
-For information on adding entitlements to your app, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
+For information on adding entitlements to your app, see [Adding capabilities to your app](../../Xcode/adding-capabilities-to-your-app.md).
 
 ## See Also
 
-- [com.apple.developer.accessory-transport-security](entitlements/com.apple.developer.accessory-transport-security.md)
+### Accessory Transport Extension
+- [com.apple.developer.accessory-transport-security](./com.apple.developer.accessory-transport-security.md)
   An entitlement that enables your app extension to exchange cryptographic keys with an accessory.
-- [com.apple.developer.accessory-data-provider](entitlements/com.apple.developer.accessory-data-provider.md)
+- [com.apple.developer.accessory-data-provider](./com.apple.developer.accessory-data-provider.md)
   An entitlement that enables your app extension to receive data for an accessory.
 
 

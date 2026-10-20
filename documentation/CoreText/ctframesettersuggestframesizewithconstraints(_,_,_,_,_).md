@@ -1,7 +1,8 @@
 # CTFramesetterSuggestFrameSizeWithConstraints(_:_:_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determines the frame size needed for a string range.
 
@@ -20,6 +21,10 @@ Determines the frame size needed for a string range.
 func CTFramesetterSuggestFrameSizeWithConstraints(_ framesetter: CTFramesetter, _ stringRange: CFRange, _ frameAttributes: CFDictionary?, _ constraints: CGSize, _ fitRange: UnsafeMutablePointer<CFRange>?) -> CGSize
 ```
 
+```c
+extern CGSize CTFramesetterSuggestFrameSizeWithConstraints(CTFramesetterRef framesetter, CFRange stringRange, CFDictionaryRef frameAttributes, CGSize constraints, CFRange *fitRange);
+```
+
 #### Return Value
 
 The actual dimensions for the given string range and constraints.
@@ -33,7 +38,7 @@ This function can be used to determine how much space is needed to display a str
 - `framesetter`: The framesetter used for measuring the frame size.
 - `stringRange`: The string range to which the frame size applies. The string range is a range over the string used to create the framesetter. If the length portion of the range is set to `0`, then the framesetter continues to add lines until it runs out of text or space.
 - `frameAttributes`: Additional attributes that control the frame filling process, or `NULL` if there are no such attributes.
-- `constraints`: The width and height to which the frame size is constrained. A value of [`CGFLOAT_MAX`](https://developer.apple.com/documentation/corefoundation/cgfloat_max) for either dimension indicates that it should be treated as unconstrained.
+- `constraints`: The width and height to which the frame size is constrained. A value of [`CGFLOAT_MAX`](../CoreFoundation/cgfloat_max.md) for either dimension indicates that it should be treated as unconstrained.
 - `fitRange`: On return, contains the range of the string that actually fit in the constrained size.
 
 

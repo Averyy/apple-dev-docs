@@ -1,7 +1,8 @@
 # showsMapTypeControl
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether to display a control that lets users choose the map type.
 
@@ -10,7 +11,7 @@ A Boolean value that determines whether to display a control that lets users cho
 
 ## Declaration
 
-```swift
+```
 get showsMapTypeControl(): boolean;
 set showsMapTypeControl(showsMapTypeControl: boolean);
 ```
@@ -21,13 +22,14 @@ The map type control enables users to select whether to show a standard, satelli
 
 ## See Also
 
-- [showsCompass](map/showscompass.md)
+### Showing the map’s controls
+- [showsCompass](./showscompass.md)
   A feature visibility setting that determines when the compass is visible.
-- [showsScale](map/showsscale.md)
+- [showsScale](./showsscale.md)
   A feature visibility setting that determines when the map displays the map’s scale indicator.
-- [showsUserLocationControl](map/showsuserlocationcontrol.md)
+- [showsUserLocationControl](./showsuserlocationcontrol.md)
   A Boolean value that determines whether the user location control is visible.
-- [showsZoomControl](map/showszoomcontrol.md)
+- [showsZoomControl](./showszoomcontrol.md)
   A Boolean value that determines whether to display a control for zooming in and zooming out on a map.
 
 

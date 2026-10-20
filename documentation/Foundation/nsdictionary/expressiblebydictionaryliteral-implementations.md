@@ -1,11 +1,12 @@
 # ExpressibleByDictionaryLiteral Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [convenience init(dictionaryLiteral: (Any, Any)...)](nsdictionary/init(dictionaryliteral:).md)
+- [convenience init(dictionaryLiteral: (Any, Any)...)](./init%28dictionaryliteral%29.md)
   Initializes a newly allocated dictionary from the given key-value pairs.
 
 

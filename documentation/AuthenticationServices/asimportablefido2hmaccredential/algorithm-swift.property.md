@@ -1,7 +1,8 @@
 # algorithm
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Algorithm used to generate the shared secret from the credentials.
 

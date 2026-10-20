@@ -1,7 +1,8 @@
 # SKTileAdjacencyMask
 
 **Framework**: SpriteKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An enumeration defining how neighboring tiles are automatically placed next to each other.
 
@@ -20,66 +21,71 @@ An enumeration defining how neighboring tiles are automatically placed next to e
 struct SKTileAdjacencyMask
 ```
 
+```c
+enum SKTileAdjacencyMask : NSUInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](sktileadjacencymask/init(rawvalue:).md)
+- [init(rawValue: UInt)](./sktileadjacencymask/init%28rawvalue%29.md)
 ### Masks
-- [static var adjacencyAll: SKTileAdjacencyMask](sktileadjacencymask/adjacencyall.md)
-- [static var adjacencyDown: SKTileAdjacencyMask](sktileadjacencymask/adjacencydown.md)
-- [static var adjacencyDownEdge: SKTileAdjacencyMask](sktileadjacencymask/adjacencydownedge.md)
-- [static var adjacencyLeft: SKTileAdjacencyMask](sktileadjacencymask/adjacencyleft.md)
-- [static var adjacencyLeftEdge: SKTileAdjacencyMask](sktileadjacencymask/adjacencyleftedge.md)
-- [static var adjacencyLowerLeft: SKTileAdjacencyMask](sktileadjacencymask/adjacencylowerleft.md)
-- [static var adjacencyLowerLeftCorner: SKTileAdjacencyMask](sktileadjacencymask/adjacencylowerleftcorner.md)
-- [static var adjacencyLowerLeftEdge: SKTileAdjacencyMask](sktileadjacencymask/adjacencylowerleftedge.md)
-- [static var adjacencyLowerRight: SKTileAdjacencyMask](sktileadjacencymask/adjacencylowerright.md)
-- [static var adjacencyLowerRightCorner: SKTileAdjacencyMask](sktileadjacencymask/adjacencylowerrightcorner.md)
-- [static var adjacencyLowerRightEdge: SKTileAdjacencyMask](sktileadjacencymask/adjacencylowerrightedge.md)
-- [static var adjacencyRight: SKTileAdjacencyMask](sktileadjacencymask/adjacencyright.md)
-- [static var adjacencyRightEdge: SKTileAdjacencyMask](sktileadjacencymask/adjacencyrightedge.md)
-- [static var adjacencyUp: SKTileAdjacencyMask](sktileadjacencymask/adjacencyup.md)
-- [static var adjacencyUpEdge: SKTileAdjacencyMask](sktileadjacencymask/adjacencyupedge.md)
-- [static var adjacencyUpperLeft: SKTileAdjacencyMask](sktileadjacencymask/adjacencyupperleft.md)
-- [static var adjacencyUpperLeftCorner: SKTileAdjacencyMask](sktileadjacencymask/adjacencyupperleftcorner.md)
-- [static var adjacencyUpperLeftEdge: SKTileAdjacencyMask](sktileadjacencymask/adjacencyupperleftedge.md)
-- [static var adjacencyUpperRight: SKTileAdjacencyMask](sktileadjacencymask/adjacencyupperright.md)
-- [static var adjacencyUpperRightCorner: SKTileAdjacencyMask](sktileadjacencymask/adjacencyupperrightcorner.md)
-- [static var adjacencyUpperRightEdge: SKTileAdjacencyMask](sktileadjacencymask/adjacencyupperrightedge.md)
-- [static var hexFlatAdjacencyAll: SKTileAdjacencyMask](sktileadjacencymask/hexflatadjacencyall.md)
-- [static var hexFlatAdjacencyDown: SKTileAdjacencyMask](sktileadjacencymask/hexflatadjacencydown.md)
-- [static var hexFlatAdjacencyLowerLeft: SKTileAdjacencyMask](sktileadjacencymask/hexflatadjacencylowerleft.md)
-- [static var hexFlatAdjacencyLowerRight: SKTileAdjacencyMask](sktileadjacencymask/hexflatadjacencylowerright.md)
-- [static var hexFlatAdjacencyUp: SKTileAdjacencyMask](sktileadjacencymask/hexflatadjacencyup.md)
-- [static var hexFlatAdjacencyUpperLeft: SKTileAdjacencyMask](sktileadjacencymask/hexflatadjacencyupperleft.md)
-- [static var hexFlatAdjacencyUpperRight: SKTileAdjacencyMask](sktileadjacencymask/hexflatadjacencyupperright.md)
-- [static var hexPointyAdjacencyAdd: SKTileAdjacencyMask](sktileadjacencymask/hexpointyadjacencyadd.md)
-- [static var hexPointyAdjacencyLeft: SKTileAdjacencyMask](sktileadjacencymask/hexpointyadjacencyleft.md)
-- [static var hexPointyAdjacencyLowerLeft: SKTileAdjacencyMask](sktileadjacencymask/hexpointyadjacencylowerleft.md)
-- [static var hexPointyAdjacencyLowerRight: SKTileAdjacencyMask](sktileadjacencymask/hexpointyadjacencylowerright.md)
-- [static var hexPointyAdjacencyRight: SKTileAdjacencyMask](sktileadjacencymask/hexpointyadjacencyright.md)
-- [static var hexPointyAdjacencyUpperLeft: SKTileAdjacencyMask](sktileadjacencymask/hexpointyadjacencyupperleft.md)
-- [static var hexPointyAdjacencyUpperRight: SKTileAdjacencyMask](sktileadjacencymask/hexpointyadjacencyupperright.md)
+- [static var adjacencyAll: SKTileAdjacencyMask](./sktileadjacencymask/adjacencyall.md)
+- [static var adjacencyDown: SKTileAdjacencyMask](./sktileadjacencymask/adjacencydown.md)
+- [static var adjacencyDownEdge: SKTileAdjacencyMask](./sktileadjacencymask/adjacencydownedge.md)
+- [static var adjacencyLeft: SKTileAdjacencyMask](./sktileadjacencymask/adjacencyleft.md)
+- [static var adjacencyLeftEdge: SKTileAdjacencyMask](./sktileadjacencymask/adjacencyleftedge.md)
+- [static var adjacencyLowerLeft: SKTileAdjacencyMask](./sktileadjacencymask/adjacencylowerleft.md)
+- [static var adjacencyLowerLeftCorner: SKTileAdjacencyMask](./sktileadjacencymask/adjacencylowerleftcorner.md)
+- [static var adjacencyLowerLeftEdge: SKTileAdjacencyMask](./sktileadjacencymask/adjacencylowerleftedge.md)
+- [static var adjacencyLowerRight: SKTileAdjacencyMask](./sktileadjacencymask/adjacencylowerright.md)
+- [static var adjacencyLowerRightCorner: SKTileAdjacencyMask](./sktileadjacencymask/adjacencylowerrightcorner.md)
+- [static var adjacencyLowerRightEdge: SKTileAdjacencyMask](./sktileadjacencymask/adjacencylowerrightedge.md)
+- [static var adjacencyRight: SKTileAdjacencyMask](./sktileadjacencymask/adjacencyright.md)
+- [static var adjacencyRightEdge: SKTileAdjacencyMask](./sktileadjacencymask/adjacencyrightedge.md)
+- [static var adjacencyUp: SKTileAdjacencyMask](./sktileadjacencymask/adjacencyup.md)
+- [static var adjacencyUpEdge: SKTileAdjacencyMask](./sktileadjacencymask/adjacencyupedge.md)
+- [static var adjacencyUpperLeft: SKTileAdjacencyMask](./sktileadjacencymask/adjacencyupperleft.md)
+- [static var adjacencyUpperLeftCorner: SKTileAdjacencyMask](./sktileadjacencymask/adjacencyupperleftcorner.md)
+- [static var adjacencyUpperLeftEdge: SKTileAdjacencyMask](./sktileadjacencymask/adjacencyupperleftedge.md)
+- [static var adjacencyUpperRight: SKTileAdjacencyMask](./sktileadjacencymask/adjacencyupperright.md)
+- [static var adjacencyUpperRightCorner: SKTileAdjacencyMask](./sktileadjacencymask/adjacencyupperrightcorner.md)
+- [static var adjacencyUpperRightEdge: SKTileAdjacencyMask](./sktileadjacencymask/adjacencyupperrightedge.md)
+- [static var hexFlatAdjacencyAll: SKTileAdjacencyMask](./sktileadjacencymask/hexflatadjacencyall.md)
+- [static var hexFlatAdjacencyDown: SKTileAdjacencyMask](./sktileadjacencymask/hexflatadjacencydown.md)
+- [static var hexFlatAdjacencyLowerLeft: SKTileAdjacencyMask](./sktileadjacencymask/hexflatadjacencylowerleft.md)
+- [static var hexFlatAdjacencyLowerRight: SKTileAdjacencyMask](./sktileadjacencymask/hexflatadjacencylowerright.md)
+- [static var hexFlatAdjacencyUp: SKTileAdjacencyMask](./sktileadjacencymask/hexflatadjacencyup.md)
+- [static var hexFlatAdjacencyUpperLeft: SKTileAdjacencyMask](./sktileadjacencymask/hexflatadjacencyupperleft.md)
+- [static var hexFlatAdjacencyUpperRight: SKTileAdjacencyMask](./sktileadjacencymask/hexflatadjacencyupperright.md)
+- [static var hexPointyAdjacencyAdd: SKTileAdjacencyMask](./sktileadjacencymask/hexpointyadjacencyadd.md)
+- [static var hexPointyAdjacencyLeft: SKTileAdjacencyMask](./sktileadjacencymask/hexpointyadjacencyleft.md)
+- [static var hexPointyAdjacencyLowerLeft: SKTileAdjacencyMask](./sktileadjacencymask/hexpointyadjacencylowerleft.md)
+- [static var hexPointyAdjacencyLowerRight: SKTileAdjacencyMask](./sktileadjacencymask/hexpointyadjacencylowerright.md)
+- [static var hexPointyAdjacencyRight: SKTileAdjacencyMask](./sktileadjacencymask/hexpointyadjacencyright.md)
+- [static var hexPointyAdjacencyUpperLeft: SKTileAdjacencyMask](./sktileadjacencymask/hexpointyadjacencyupperleft.md)
+- [static var hexPointyAdjacencyUpperRight: SKTileAdjacencyMask](./sktileadjacencymask/hexpointyadjacencyupperright.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var adjacency: SKTileAdjacencyMask](sktilegrouprule/adjacency.md)
+### Accessing or Setting Tile Group Rule Properties
+- [var adjacency: SKTileAdjacencyMask](./sktilegrouprule/adjacency.md)
   The adjacency requirement for this rule.
-- [var name: String?](sktilegrouprule/name.md)
+- [var name: String?](./sktilegrouprule/name.md)
   A name associated with the tile group rule.
-- [var tileDefinitions: [SKTileDefinition]](sktilegrouprule/tiledefinitions.md)
+- [var tileDefinitions: [SKTileDefinition]](./sktilegrouprule/tiledefinitions.md)
   The tile definitions used for this rule.
 
 

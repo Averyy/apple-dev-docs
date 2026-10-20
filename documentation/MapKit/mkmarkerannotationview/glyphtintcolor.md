@@ -1,7 +1,8 @@
 # glyphTintColor
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color to apply to the glyph text or image.
 
@@ -15,9 +16,30 @@ The color to apply to the glyph text or image.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+@NSCopying
+var glyphTintColor: UIColor? { get set }
+```
+
+*macOS*
+
 ```swift
 @NSCopying
 var glyphTintColor: NSColor? { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, nullable) UIColor * glyphTintColor;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, copy, nullable) NSColor * glyphTintColor;
 ```
 
 #### Discussion
@@ -26,11 +48,12 @@ The default value of this property is `nil`, which applies the standard tint col
 
 ## See Also
 
-- [var glyphText: String?](mkmarkerannotationview/glyphtext.md)
+### Setting the Marker Content
+- [var glyphText: String?](./glyphtext.md)
   The text to display in the marker balloon.
-- [var glyphImage: UIImage?](mkmarkerannotationview/glyphimage.md)
+- [var glyphImage: UIImage?](./glyphimage.md)
   An image to display in the marker balloon.
-- [var selectedGlyphImage: UIImage?](mkmarkerannotationview/selectedglyphimage.md)
+- [var selectedGlyphImage: UIImage?](./selectedglyphimage.md)
   An image to display when the user selects the marker.
 
 

@@ -1,7 +1,8 @@
 # defaultMaxConcurrentOperationCount
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default maximum number of operations to invoke concurrently in a queue.
 
@@ -20,15 +21,20 @@ The default maximum number of operations to invoke concurrently in a queue.
 class var defaultMaxConcurrentOperationCount: Int { get }
 ```
 
+```c
+static const NSInteger NSOperationQueueDefaultMaxConcurrentOperationCount;
+```
+
 #### Discussion
 
 The operation queue determines this number dynamically based on current system conditions.
 
 ## See Also
 
-- [var qualityOfService: QualityOfService](operationqueue/qualityofservice.md)
+### Managing the Execution of Operations
+- [var qualityOfService: QualityOfService](./qualityofservice.md)
   The default service level to apply to operations that the queue invokes.
-- [var maxConcurrentOperationCount: Int](operationqueue/maxconcurrentoperationcount.md)
+- [var maxConcurrentOperationCount: Int](./maxconcurrentoperationcount.md)
   The maximum number of queued operations that can run at the same time.
 
 

@@ -1,7 +1,8 @@
 # LibraryContentProvider
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A source of Xcode library and code completion content.
 
@@ -22,7 +23,7 @@ protocol LibraryContentProvider
 
 #### Overview
 
-Xcode discovers implementations of the `LibraryContentProvider` protocol in your project or workspace and examines their contents for items that it can add to the Xcode library. Add views by implementing the content provider’s computed [`views`](librarycontentprovider/views.md) property, and returning an array of [`LibraryItem`](libraryitem.md) instances initialized with the views you want to publish:
+Xcode discovers implementations of the `LibraryContentProvider` protocol in your project or workspace and examines their contents for items that it can add to the Xcode library. Add views by implementing the content provider’s computed [`views`](./librarycontentprovider/views.md) property, and returning an array of [`LibraryItem`](./libraryitem.md) instances initialized with the views you want to publish:
 
 ```swift
 struct LibraryViewContent: LibraryContentProvider {
@@ -32,7 +33,7 @@ struct LibraryViewContent: LibraryContentProvider {
 }
 ```
 
-Add view modifiers by implementing the [`modifiers(base:)`](librarycontentprovider/modifiers(base:).md) method and similarly returning an array of library items initialized with the modifiers you want to publish. For view modifiers, you also specify the type to which the modifiers apply:
+Add view modifiers by implementing the [`modifiers(base:)`](./librarycontentprovider/modifiers%28base%29.md) method and similarly returning an array of library items initialized with the modifiers you want to publish. For view modifiers, you also specify the type to which the modifiers apply:
 
 ```swift
 struct LibraryModifierContent: LibraryContentProvider {
@@ -42,25 +43,26 @@ struct LibraryModifierContent: LibraryContentProvider {
 }
 ```
 
-For modifiers that you define in an extension to [`View`](https://developer.apple.com/documentation/swiftui/view), you can provide any view conformer as the `base`. For modifiers that you define on a particular view type, provide that type as the `base`.
+For modifiers that you define in an extension to [`View`](../SwiftUI/view.md), you can provide any view conformer as the `base`. For modifiers that you define on a particular view type, provide that type as the `base`.
 
 ## Topics
 
 ### Adding Views
-- [var views: [LibraryItem]](librarycontentprovider/views.md)
+- [var views: [LibraryItem]](./librarycontentprovider/views.md)
   The SwiftUI views that you want to add to the Xcode library.
 ### Adding Modifiers
-- [func modifiers(base: Self.ModifierBase) -> [LibraryItem]](librarycontentprovider/modifiers(base:).md)
+- [func modifiers(base: Self.ModifierBase) -> [LibraryItem]](./librarycontentprovider/modifiers%28base%29.md)
   Indicates a collection of SwiftUI view modifiers to add to the Xcode library.
-- [associatedtype ModifierBase = Any](librarycontentprovider/modifierbase.md)
+- [associatedtype ModifierBase = Any](./librarycontentprovider/modifierbase.md)
   A type to use as a base for modifier completions.
 ### Building Arrays
-- [struct LibraryContentBuilder](librarycontentbuilder.md)
+- [struct LibraryContentBuilder](./librarycontentbuilder.md)
   A function builder for generating arrays of library items without requiring full array literal syntax.
 
 ## See Also
 
-- [struct LibraryItem](libraryitem.md)
+### Library customization
+- [struct LibraryItem](./libraryitem.md)
   A single item to add to the Xcode library.
 
 

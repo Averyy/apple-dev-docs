@@ -1,7 +1,8 @@
 # synchronize
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Bring IOMemoryDescriptor and IODMACommand buffers into sync.
 
@@ -10,11 +11,11 @@ Bring IOMemoryDescriptor and IODMACommand buffers into sync.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn synchronize(IOOptionBits options);
 ```
 
-#### Return_value
+#### Return Value
 
 kIOReturnNotReady if not prepared, kIOReturnBadArgument if invalid options are passed, kIOReturnSuccess otherwise.
 
@@ -28,21 +29,22 @@ This method should not be called unless a prepare was previously issued. If need
 
 ## See Also
 
-- [prepare](iodmacommand/1811284-prepare.md)
+### Preparing the Transfer Operation
+- [prepare](./api-1811284-prepare.md)
   Prepare the memory for an I/O transfer.
-- [- prepare](iodmacommand/1547728-prepare.md)
+- [- prepare](./api-1547728-prepare.md)
   Prepare the memory for an I/O transfer.
-- [prepareWithSpecification](iodmacommand/1811291-preparewithspecification.md)
+- [prepareWithSpecification](./api-1811291-preparewithspecification.md)
   Prepare the memory for an I/O transfer with a new specification.
-- [- prepareWithSpecification](iodmacommand/1547733-preparewithspecification.md)
+- [- prepareWithSpecification](./api-1547733-preparewithspecification.md)
   Prepare the memory for an I/O transfer with a new specification.
-- [- prepareWithSpecification](iodmacommand/3516451-preparewithspecification.md)
+- [- prepareWithSpecification](./api-3516451-preparewithspecification.md)
   Prepare the memory for an I/O transfer with a new specification.
-- [complete](iodmacommand/1811081-complete.md)
+- [complete](./api-1811081-complete.md)
   Complete processing of DMA mappings after an I/O transfer is finished.
-- [- complete](iodmacommand/1547730-complete.md)
+- [- complete](./api-1547730-complete.md)
   Complete processing of DMA mappings after an I/O transfer is finished.
-- [synchronize](iodmacommand/1811316-synchronize.md)
+- [synchronize](./api-1811316-synchronize.md)
   Bring IOMemoryDescriptor and IODMACommand buffers into sync.
 
 

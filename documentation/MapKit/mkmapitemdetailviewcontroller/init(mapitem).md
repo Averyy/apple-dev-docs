@@ -1,7 +1,8 @@
 # init(mapItem:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a map item detail view controller.
 
@@ -18,6 +19,10 @@ Create a map item detail view controller.
 init(mapItem: MKMapItem?)
 ```
 
+```objc
+- (instancetype) initWithMapItem:(MKMapItem *) mapItem;
+```
+
 #### Discussion
 
 Displays an inline map with the place data.
@@ -28,7 +33,8 @@ Displays an inline map with the place data.
 
 ## See Also
 
-- [init(mapItem: MKMapItem?, displaysMap: Bool)](mkmapitemdetailviewcontroller/init(mapitem:displaysmap:).md)
+### Creating a map item detail view controller
+- [init(mapItem: MKMapItem?, displaysMap: Bool)](./init%28mapitem,displaysmap%29.md)
   Create a map item detail view controller
 
 

@@ -1,7 +1,8 @@
 # mapFeature
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The map feature.
 
@@ -19,15 +20,16 @@ var mapFeature: MapFeature? { get }
 
 ## See Also
 
-- [var mapFeatureAnnotation: MKMapFeatureAnnotation?](mkmapitemrequest/mapfeatureannotation.md)
+### Configuring the item request
+- [var mapFeatureAnnotation: MKMapFeatureAnnotation?](./mapfeatureannotation.md)
   The feature annotation.
-- [var mapItemIdentifier: MKMapItem.Identifier?](mkmapitemrequest/mapitemidentifier.md)
+- [var mapItemIdentifier: MKMapItem.Identifier?](./mapitemidentifier.md)
   The map item identifer.
-- [var feature: MapFeature](mkmapitemrequest/feature.md)
+- [var feature: MapFeature](./feature.md)
   The map feature.
-- [var featureAnnotation: MKMapFeatureAnnotation](mkmapitemrequest/featureannotation.md)
+- [var featureAnnotation: MKMapFeatureAnnotation](./featureannotation.md)
   The feature annotation.
-- [var placeDescriptor: PlaceDescriptor?](mkmapitemrequest/placedescriptor.md)
+- [var placeDescriptor: PlaceDescriptor?](./placedescriptor.md)
   The place descriptor that contains information that’s helpful in uniquely identifying this place.
 
 

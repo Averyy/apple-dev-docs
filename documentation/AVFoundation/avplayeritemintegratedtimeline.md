@@ -1,7 +1,8 @@
 # AVPlayerItemIntegratedTimeline
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that models the timeline and playback sequence of a primary player item and scheduled interstitial events.
 
@@ -20,6 +21,10 @@ An object that models the timeline and playback sequence of a primary player ite
 class AVPlayerItemIntegratedTimeline
 ```
 
+```objc
+@interface AVPlayerItemIntegratedTimeline : NSObject
+```
+
 #### Overview
 
 The timeline models all regions to traverse during playback. A player may not present portions of the primary item when exiting an interstitial event with a positive resumption offset.
@@ -27,63 +32,64 @@ The timeline models all regions to traverse during playback. A player may not pr
 ## Topics
 
 ### Inspecting snapshots
-- [var currentSnapshot: AVPlayerItemIntegratedTimelineSnapshot](avplayeritemintegratedtimeline/currentsnapshot.md)
+- [var currentSnapshot: AVPlayerItemIntegratedTimelineSnapshot](./avplayeritemintegratedtimeline/currentsnapshot.md)
   An immutable representation of the timeline state at time of request.
-- [class AVPlayerItemIntegratedTimelineSnapshot](avplayeritemintegratedtimelinesnapshot.md)
+- [class AVPlayerItemIntegratedTimelineSnapshot](./avplayeritemintegratedtimelinesnapshot.md)
   An immutable representation of inspectable details of an integrated timeline object.
-- [class let snapshotsOutOfSyncNotification: NSNotification.Name](avplayeritemintegratedtimeline/snapshotsoutofsyncnotification.md)
+- [class let snapshotsOutOfSyncNotification: NSNotification.Name](./avplayeritemintegratedtimeline/snapshotsoutofsyncnotification.md)
   A notification the system posts when the snapshot objects provided by this timeline become out of sync with the current timeline state.
 ### Inspecting the time and date
-- [var currentTime: CMTime](avplayeritemintegratedtimeline/currenttime.md)
+- [var currentTime: CMTime](./avplayeritemintegratedtimeline/currenttime.md)
   The current time on the integrated timeline.
-- [var currentDate: Date?](avplayeritemintegratedtimeline/currentdate.md)
+- [var currentDate: Date?](./avplayeritemintegratedtimeline/currentdate.md)
   The current date of playback.
 ### Seeking
-- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: ((Bool) -> Void)?)](avplayeritemintegratedtimeline/seek(to:tolerancebefore:toleranceafter:completionhandler:).md)
+- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: ((Bool) -> Void)?)](./avplayeritemintegratedtimeline/seek%28to,tolerancebefore,toleranceafter,completionhandler%29.md)
   Seeks to a particular time in the integrated time domain.
-- [func seek(to: Date, completionHandler: ((Bool) -> Void)?)](avplayeritemintegratedtimeline/seek(to:completionhandler:).md)
+- [func seek(to: Date, completionHandler: ((Bool) -> Void)?)](./avplayeritemintegratedtimeline/seek%28to,completionhandler%29.md)
   Seeks to a particular date in the integrated time domain.
 ### Observing time changes
-- [func periodicTimes(forInterval: CMTime) -> AVPlayerItemIntegratedTimeline.PeriodicTimes](avplayeritemintegratedtimeline/periodictimes(forinterval:).md)
+- [func periodicTimes(forInterval: CMTime) -> AVPlayerItemIntegratedTimeline.PeriodicTimes](./avplayeritemintegratedtimeline/periodictimes%28forinterval%29.md)
   Returns an asynchronous sequence of times periodically as playback progresses.
-- [func boundaryTimes(for: AVPlayerItemSegment, offsetsIntoSegment: [CMTime]) -> AVPlayerItemIntegratedTimeline.BoundaryTimes](avplayeritemintegratedtimeline/boundarytimes(for:offsetsintosegment:).md)
+- [func boundaryTimes(for: AVPlayerItemSegment, offsetsIntoSegment: [CMTime]) -> AVPlayerItemIntegratedTimeline.BoundaryTimes](./avplayeritemintegratedtimeline/boundarytimes%28for,offsetsintosegment%29.md)
   Returns an asynchronous sequence of times whenever playback reaches a segment time in the segment.
-- [AVPlayerItemIntegratedTimeline.BoundaryTimes](avplayeritemintegratedtimeline/boundarytimes.md)
+- [AVPlayerItemIntegratedTimeline.BoundaryTimes](./avplayeritemintegratedtimeline/boundarytimes.md)
   An asynchronous sequence of boundary time values.
-- [AVPlayerItemIntegratedTimeline.PeriodicTimes](avplayeritemintegratedtimeline/periodictimes.md)
+- [AVPlayerItemIntegratedTimeline.PeriodicTimes](./avplayeritemintegratedtimeline/periodictimes.md)
   An asynchronous sequence of periodic time values.
-- [protocol AVPlayerItemIntegratedTimelineObserver](avplayeritemintegratedtimelineobserver.md)
+- [protocol AVPlayerItemIntegratedTimelineObserver](./avplayeritemintegratedtimelineobserver.md)
   A protocol for objects that perform timeline observations.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Providing an integrated view of your timeline when playing HLS interstitials](providing-an-integrated-view-of-your-timeline-when-playing-hls-interstitials.md)
+### Interstitials
+- [Providing an integrated view of your timeline when playing HLS interstitials](./providing-an-integrated-view-of-your-timeline-when-playing-hls-interstitials.md)
   Go beyond simple ad insertion with point and fill occupancy HLS interstitials.
-- [class AVPlayerInterstitialEvent](avplayerinterstitialevent.md)
+- [class AVPlayerInterstitialEvent](./avplayerinterstitialevent.md)
   An object that provides instructions for how a player presents interstitial content.
-- [class AVPlayerInterstitialEventController](avplayerinterstitialeventcontroller.md)
+- [class AVPlayerInterstitialEventController](./avplayerinterstitialeventcontroller.md)
   An object that schedules interstitial events for items played by the primary player.
-- [class AVPlayerInterstitialEventMonitor](avplayerinterstitialeventmonitor.md)
+- [class AVPlayerInterstitialEventMonitor](./avplayerinterstitialeventmonitor.md)
   An object that monitors the scheduling and progress of interstitial events.
-- [let AVPlayerInterstitialEventMonitorScheduleRequestErrorKey: String](avplayerinterstitialeventmonitorschedulerequesterrorkey.md)
+- [let AVPlayerInterstitialEventMonitorScheduleRequestErrorKey: String](./avplayerinterstitialeventmonitorschedulerequesterrorkey.md)
   userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSError. Absent if the request succeeded
-- [let AVPlayerInterstitialEventMonitorScheduleRequestIdentifierKey: String](avplayerinterstitialeventmonitorschedulerequestidentifierkey.md)
+- [let AVPlayerInterstitialEventMonitorScheduleRequestIdentifierKey: String](./avplayerinterstitialeventmonitorschedulerequestidentifierkey.md)
   userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSString.
-- [let AVPlayerInterstitialEventMonitorScheduleRequestResponseKey: String](avplayerinterstitialeventmonitorschedulerequestresponsekey.md)
+- [let AVPlayerInterstitialEventMonitorScheduleRequestResponseKey: String](./avplayerinterstitialeventmonitorschedulerequestresponsekey.md)
   userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSData. Absent if the request failed.
 
 

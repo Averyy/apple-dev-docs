@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an operation for accepting shares.
 
@@ -20,13 +21,18 @@ Creates an operation for accepting shares.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Discussion
 
 You can use this operation only once.
 
 ## See Also
 
-- [convenience init(shareMetadatas: [CKShare.Metadata])](ckacceptsharesoperation/init(sharemetadatas:).md)
+### Creating a Share Accept Operation
+- [convenience init(shareMetadatas: [CKShare.Metadata])](./init%28sharemetadatas%29.md)
   Creates an operation for accepting the specified shares.
 
 

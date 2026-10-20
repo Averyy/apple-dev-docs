@@ -1,7 +1,8 @@
 # NSErrorMergePolicy
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The default merge policy for all managed object contexts.
 
@@ -10,7 +11,7 @@ The default merge policy for all managed object contexts.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,21 +21,26 @@ The default merge policy for all managed object contexts.
 var NSErrorMergePolicy: AnyObject
 ```
 
+```c
+extern id NSErrorMergePolicy;
+```
+
 #### Discussion
 
-If a save fails because of conflicting objects, you can find the IDs of those objects in error’s `userInfo` dictionary. Use the [`NSInsertedObjectsKey`](nsinsertedobjectskey.md) and [`NSUpdatedObjectsKey`](nsupdatedobjectskey.md) keys to extract the object IDs.
+If a save fails because of conflicting objects, you can find the IDs of those objects in error’s `userInfo` dictionary. Use the [`NSInsertedObjectsKey`](./nsinsertedobjectskey.md) and [`NSUpdatedObjectsKey`](./nsupdatedobjectskey.md) keys to extract the object IDs.
 
 ## See Also
 
-- [var NSMergeByPropertyStoreTrumpMergePolicy: AnyObject](nsmergebypropertystoretrumpmergepolicy.md)
+### Policies
+- [var NSMergeByPropertyStoreTrumpMergePolicy: AnyObject](./nsmergebypropertystoretrumpmergepolicy.md)
   A property-based merge policy that applies external changes.
-- [var NSMergeByPropertyObjectTrumpMergePolicy: AnyObject](nsmergebypropertyobjecttrumpmergepolicy.md)
+- [var NSMergeByPropertyObjectTrumpMergePolicy: AnyObject](./nsmergebypropertyobjecttrumpmergepolicy.md)
   A property-based merge policy that applies in-memory changes.
-- [var NSOverwriteMergePolicy: AnyObject](nsoverwritemergepolicy.md)
+- [var NSOverwriteMergePolicy: AnyObject](./nsoverwritemergepolicy.md)
   A merge policy that overwrites the entire stored object.
-- [var NSRollbackMergePolicy: AnyObject](nsrollbackmergepolicy.md)
+- [var NSRollbackMergePolicy: AnyObject](./nsrollbackmergepolicy.md)
   A merge policy that discards unsaved changes.
-- [enum NSMergePolicyType](nsmergepolicytype.md)
+- [enum NSMergePolicyType](./nsmergepolicytype.md)
   Constants that define merge policy types.
 
 

@@ -1,23 +1,28 @@
 # reallocate
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A prototype for a function callback that reallocates memory of a requested size for an existing block of memory.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var reallocate: CFAllocatorReallocateCallBack!
+```
+
+```c
+CFAllocatorReallocateCallBack reallocate;
 ```
 
 #### Discussion

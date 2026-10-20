@@ -1,7 +1,8 @@
 # isUniform(overDimensions:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the transform scales equally over the specified dimensions.
 
@@ -11,7 +12,7 @@ Returns a Boolean value that indicates whether the transform scales equally over
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -26,11 +27,12 @@ func isUniform(overDimensions: Dimension3DSet) -> Bool
 
 ## See Also
 
-- [func is3DProjection() -> Bool](projectivetransform3d/is3dprojection.md)
+### Checking characteristics
+- [func is3DProjection() -> Bool](./is3dprojection%28%29.md)
   Returns a Boolean value that indicates whether the transform is a 3D projection.
-- [var isAffine: Bool](projectivetransform3d/isaffine.md)
+- [var isAffine: Bool](./isaffine.md)
   A Boolean value that indicates whether the transform is affine.
-- [var isInvertible: Bool](projectivetransform3d/isinvertible.md)
+- [var isInvertible: Bool](./isinvertible.md)
   Returns a Boolean value that indicates whether the transform is invertible.
 
 

@@ -1,7 +1,8 @@
 # window
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The window in which the press initially occurred.
 
@@ -16,6 +17,10 @@ The window in which the press initially occurred.
 
 ```swift
 var window: UIWindow? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) UIWindow * window;
 ```
 
 #### Discussion

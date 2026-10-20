@@ -1,7 +1,8 @@
 # GL_COMPRESSED_RGBA8_ETC2_EAC
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_COMPRESSED_RGBA8_ETC2_EAC: Int32 { get }
+```
+
+```c
+#define GL_COMPRESSED_RGBA8_ETC2_EAC
 ```
 
 

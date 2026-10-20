@@ -1,7 +1,8 @@
 # captureDescriptors
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Enables serializing pipeline scripts.
 
@@ -19,9 +20,13 @@ Enables serializing pipeline scripts.
 static var captureDescriptors: MTL4PipelineDataSetSerializerConfiguration { get }
 ```
 
+```c
+MTL4PipelineDataSetSerializerConfigurationCaptureDescriptors
+```
+
 #### Discussion
 
-Set this mask to use [`serializeAsPipelinesScript()`](mtl4pipelinedatasetserializer/serializeaspipelinesscript().md).
+Set this mask to use [`serializeAsPipelinesScript()`](../mtl4pipelinedatasetserializer/serializeaspipelinesscript%28%29.md).
 
 This for the default behavior.
 

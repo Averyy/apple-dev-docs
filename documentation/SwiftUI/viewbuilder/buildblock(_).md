@@ -1,7 +1,8 @@
 # buildBlock(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Passes a single piece of content written as a child view through unmodified.
 
@@ -21,13 +22,50 @@ Passes a single piece of content written as a child view through unmodified.
 static func buildBlock<Content>(_ content: Content) -> Content
 ```
 
+**Other overloads**:
+
+```swift
+@export(implementation)
+static func buildBlock<each Content>(_ content: repeat each Content) -> TupleContent<repeat each Content>
+```
+
+```swift
+@export(implementation)
+static func buildBlock<each Content>(_ content: repeat each Content) -> TupleView<(repeat each Content)> where repeat each Content : View
+```
+
+```swift
+@export(implementation)
+static func buildBlock<each Content>(_ content: repeat each Content) -> some AccessibilityRotorContent where repeat each Content : AccessibilityRotorContent
+```
+
+```swift
+@export(implementation)
+static func buildBlock<each Content>(_ content: repeat each Content) -> some Commands where repeat each Content : Commands
+```
+
+```swift
+@export(implementation)
+static func buildBlock<each Content>(_ content: repeat each Content) -> some CustomizableToolbarContent where repeat each Content : CustomizableToolbarContent
+```
+
+```swift
+@export(implementation)
+static func buildBlock<each Content>(_ content: repeat each Content) -> some ToolbarContent where repeat each Content : ToolbarContent
+```
+
+```swift
+static func buildBlock<each C>(_ content: repeat each C) -> AnyChartContent where repeat each C : ChartContent
+```
+
 #### Discussion
 
 An example of a single item written as child content is `{ Text("Hello") }`.
 
 ## See Also
 
-- [static buildBlock()](viewbuilder/buildblock.md)
+### Building content
+- [static buildBlock()](./buildblock%28%29.md)
   Builds an empty content from a block containing no statements.
 
 

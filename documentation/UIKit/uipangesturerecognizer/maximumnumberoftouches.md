@@ -1,7 +1,8 @@
 # maximumNumberOfTouches
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of fingers that can touch the view for gesture recognition.
 
@@ -17,17 +18,22 @@ The maximum number of fingers that can touch the view for gesture recognition.
 var maximumNumberOfTouches: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger maximumNumberOfTouches;
+```
+
 ## Mentions
 
-- [Handling pan gestures](handling-pan-gestures.md)
+- [Handling pan gestures](../handling-pan-gestures.md)
 
 #### Discussion
 
-The default value is [`NSUIntegerMax`](https://developer.apple.com/documentation/objectivec/nsuintegermax).
+The default value is [`NSUIntegerMax`](../../ObjectiveC/nsuintegermax.md).
 
 ## See Also
 
-- [var minimumNumberOfTouches: Int](uipangesturerecognizer/minimumnumberoftouches.md)
+### Configuring the gesture recognizer
+- [var minimumNumberOfTouches: Int](./minimumnumberoftouches.md)
   The minimum number of fingers that can touch the view for gesture recognition.
 
 

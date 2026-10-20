@@ -1,7 +1,8 @@
 # blendLayer
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The order in which the framework composites the animation.
 
@@ -11,7 +12,7 @@ The order in which the framework composites the animation.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,13 +26,14 @@ The framework applies multiple animations on the same target in ascending order 
 
 ## See Also
 
-- [var root: any BlendTreeNode](blendtreeanimation/root.md)
+### Configuring the animation
+- [var root: any BlendTreeNode](./root.md)
   The first node in a tree of animations.
-- [var name: String](blendtreeanimation/name.md)
+- [var name: String](./name.md)
   A textual name for the animation.
-- [var bindTarget: BindTarget](blendtreeanimation/bindtarget.md)
+- [var bindTarget: BindTarget](./bindtarget.md)
   A textual name that identifies the particular property that animates.
-- [var isAdditive: Bool](blendtreeanimation/isadditive.md)
+- [var isAdditive: Bool](./isadditive.md)
   A Boolean value that indicates whether the animation builds on the current state of the target entity or resets the state before running.
 
 

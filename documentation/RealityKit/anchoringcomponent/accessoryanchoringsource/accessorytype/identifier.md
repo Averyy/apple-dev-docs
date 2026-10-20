@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The uniform type identifier for the accessory.
 

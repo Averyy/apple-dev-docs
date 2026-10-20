@@ -1,7 +1,8 @@
 # CKDatabase.Scope.private
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The private database.
 
@@ -20,6 +21,10 @@ The private database.
 case `private`
 ```
 
+```c
+CKDatabaseScopePrivate
+```
+
 #### Discussion
 
 Records in a private database:
@@ -30,9 +35,10 @@ Records in a private database:
 
 ## See Also
 
-- [CKDatabase.Scope.public](ckdatabase/scope/public.md)
+### Database Scopes
+- [CKDatabase.Scope.public](./public.md)
   The public database.
-- [CKDatabase.Scope.shared](ckdatabase/scope/shared.md)
+- [CKDatabase.Scope.shared](./shared.md)
   The shared database.
 
 

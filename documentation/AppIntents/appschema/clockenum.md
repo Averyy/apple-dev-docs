@@ -1,7 +1,8 @@
 # AppSchema.ClockEnum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies enum schemas in the clock domain.
 
@@ -21,25 +22,26 @@ protocol ClockEnum : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var alarmTriggerState: some AppSchemaEnum](appschema/clockenum/alarmtriggerstate.md)
+- [var alarmTriggerState: some AppSchemaEnum](./clockenum/alarmtriggerstate.md)
   An enum schema for an alarm trigger state parameter.
-- [var stopwatchState: some AppSchemaEnum](appschema/clockenum/stopwatchstate.md)
+- [var stopwatchState: some AppSchemaEnum](./clockenum/stopwatchstate.md)
   An enum schema for a stopwatch state parameter.
-- [var timerState: some AppSchemaEnum](appschema/clockenum/timerstate.md)
+- [var timerState: some AppSchemaEnum](./clockenum/timerstate.md)
   An enum schema for a timer state parameter.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Enum](appschema/enum.md)
+- [AppSchema.Enum](./enum.md)
 
 ## See Also
 
-- [var alarmTriggerState: some AppSchemaEnum](appschema/clockenum/alarmtriggerstate.md)
+### Types for static parameters
+- [var alarmTriggerState: some AppSchemaEnum](./clockenum/alarmtriggerstate.md)
   An enum schema for an alarm trigger state parameter.
-- [var timerState: some AppSchemaEnum](appschema/clockenum/timerstate.md)
+- [var timerState: some AppSchemaEnum](./clockenum/timerstate.md)
   An enum schema for a timer state parameter.
 
 

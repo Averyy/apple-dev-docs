@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: TranslationUIProvider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a default configuration for the given extension.
 
@@ -19,7 +20,7 @@ Creates a default configuration for the given extension.
 
 ## Parameters
 
-- `appExtension`: An instance of the extension that conforms to the [`TranslationUIProviderExtension`](translationuiproviderextension.md) protocol.
+- `appExtension`: An instance of the extension that conforms to the [`TranslationUIProviderExtension`](../translationuiproviderextension.md) protocol.
 
 
 ---

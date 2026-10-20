@@ -1,7 +1,8 @@
 # SpeechTranscriber.TranscriptionOption
 
 **Framework**: Speech  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options relating to the text of the transcription.
 
@@ -22,23 +23,24 @@ enum TranscriptionOption
 ## Topics
 
 ### Transcription options
-- [SpeechTranscriber.TranscriptionOption.etiquetteReplacements](speechtranscriber/transcriptionoption/etiquettereplacements.md)
+- [SpeechTranscriber.TranscriptionOption.etiquetteReplacements](./transcriptionoption/etiquettereplacements.md)
   Replaces certain words and phrases with a redacted form.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [SpeechTranscriber.ReportingOption](speechtranscriber/reportingoption.md)
+### Configuring transcription
+- [SpeechTranscriber.ReportingOption](./reportingoption.md)
   Options relating to the transcriber’s result delivery.
-- [SpeechTranscriber.ResultAttributeOption](speechtranscriber/resultattributeoption.md)
+- [SpeechTranscriber.ResultAttributeOption](./resultattributeoption.md)
   Options relating to the attributes of the transcription.
 
 

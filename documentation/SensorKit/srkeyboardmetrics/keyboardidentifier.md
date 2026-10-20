@@ -1,7 +1,8 @@
 # keyboardIdentifier
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the keyboard in the keyboard list.
 
@@ -16,19 +17,24 @@ The identifier of the keyboard in the keyboard list.
 var keyboardIdentifier: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * keyboardIdentifier;
+```
+
 ## See Also
 
-- [var duration: TimeInterval](srkeyboardmetrics/duration.md)
+### Inspecting Keyboard Configuration and Sessions
+- [var duration: TimeInterval](./duration.md)
   The duration that the report spans.
-- [var version: String](srkeyboardmetrics/version.md)
+- [var version: String](./version.md)
   The version of keyboard metrics.
-- [var width: Measurement<UnitLength>](srkeyboardmetrics/width.md)
+- [var width: Measurement<UnitLength>](./width.md)
   The width, in millimeters, of the keyboard in the report.
-- [var height: Measurement<UnitLength>](srkeyboardmetrics/height.md)
+- [var height: Measurement<UnitLength>](./height.md)
   The height, in millimeters, of the keyboard in the report.
-- [var inputModes: [String]](srkeyboardmetrics/inputmodes.md)
+- [var inputModes: [String]](./inputmodes.md)
   The active keyboard languages in the session.
-- [var sessionIdentifiers: [String]](srkeyboardmetrics/sessionidentifiers.md)
+- [var sessionIdentifiers: [String]](./sessionidentifiers.md)
   The identifiers for the keyboard sessions that report metrics to the sample.
 
 

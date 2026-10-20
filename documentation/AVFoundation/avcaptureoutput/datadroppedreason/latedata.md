@@ -1,7 +1,8 @@
 # AVCaptureOutput.DataDroppedReason.lateData
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system dropped data because you’ve configured capture output to drop data when delegate queue is in a blocked state, and there’s data to deliver.
 
@@ -19,17 +20,22 @@ The system dropped data because you’ve configured capture output to drop data 
 case lateData
 ```
 
+```c
+AVCaptureOutputDataDroppedReasonLateData
+```
+
 #### Discussion
 
-Use the [`alwaysDiscardsLateVideoFrames`](avcapturevideodataoutput/alwaysdiscardslatevideoframes.md) property of [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) or the [`alwaysDiscardsLateDepthData`](avcapturedepthdataoutput/alwaysdiscardslatedepthdata.md) property of [`AVCaptureDepthDataOutput`](avcapturedepthdataoutput.md) to choose whether the capture output discards data.
+Use the [`alwaysDiscardsLateVideoFrames`](../../avcapturevideodataoutput/alwaysdiscardslatevideoframes.md) property of [`AVCaptureVideoDataOutput`](../../avcapturevideodataoutput.md) or the [`alwaysDiscardsLateDepthData`](../../avcapturedepthdataoutput/alwaysdiscardslatedepthdata.md) property of [`AVCaptureDepthDataOutput`](../../avcapturedepthdataoutput.md) to choose whether the capture output discards data.
 
 ## See Also
 
-- [AVCaptureOutput.DataDroppedReason.none](avcaptureoutput/datadroppedreason/none.md)
+### Reasons
+- [AVCaptureOutput.DataDroppedReason.none](./none.md)
   The system didn’t drop data.
-- [AVCaptureOutput.DataDroppedReason.outOfBuffers](avcaptureoutput/datadroppedreason/outofbuffers.md)
+- [AVCaptureOutput.DataDroppedReason.outOfBuffers](./outofbuffers.md)
   The system dropped data because the capture output exhausted its internal pool of memory buffers.
-- [AVCaptureOutput.DataDroppedReason.discontinuity](avcaptureoutput/datadroppedreason/discontinuity.md)
+- [AVCaptureOutput.DataDroppedReason.discontinuity](./discontinuity.md)
   The system dropped data because the device providing data experienced a discontinuity, and the output lost an unknown number of data objects.
 
 

@@ -1,7 +1,8 @@
 # kSpeechVoiceCreator
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The synthesizer that is required to use the voice. 
 
@@ -12,6 +13,10 @@ The synthesizer that is required to use the voice.
 
 ```swift
 let kSpeechVoiceCreator: CFString
+```
+
+```c
+const CFStringRef kSpeechVoiceCreator;
 ```
 
 #### Discussion

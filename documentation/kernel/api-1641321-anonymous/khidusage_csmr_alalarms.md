@@ -1,14 +1,15 @@
 # kHIDUsage_Csmr_ALAlarms
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Csmr_ALAlarms = 0x1B2
 ```
 

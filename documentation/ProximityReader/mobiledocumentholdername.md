@@ -1,7 +1,8 @@
 # MobileDocumentHolderName
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the mobile identity document holder’s name.
 
@@ -19,18 +20,18 @@ struct MobileDocumentHolderName
 ## Topics
 
 ### Instance Properties
-- [let components: PersonNameComponents](mobiledocumentholdername/components.md)
+- [let components: PersonNameComponents](./mobiledocumentholdername/components.md)
   A component representation of the name.
-- [let name: String](mobiledocumentholdername/name.md)
+- [let name: String](./mobiledocumentholdername/name.md)
   A string representation of the name.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

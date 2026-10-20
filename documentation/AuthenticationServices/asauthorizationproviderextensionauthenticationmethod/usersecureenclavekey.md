@@ -1,7 +1,8 @@
 # ASAuthorizationProviderExtensionAuthenticationMethod.userSecureEnclaveKey
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Secure Enclave key authentication.
 
@@ -14,9 +15,14 @@ Secure Enclave key authentication.
 case userSecureEnclaveKey
 ```
 
+```c
+ASAuthorizationProviderExtensionAuthenticationMethodUserSecureEnclaveKey
+```
+
 ## See Also
 
-- [ASAuthorizationProviderExtensionAuthenticationMethod.password](asauthorizationproviderextensionauthenticationmethod/password.md)
+### Identifying the methods
+- [ASAuthorizationProviderExtensionAuthenticationMethod.password](./password.md)
   Password authentication.
 
 

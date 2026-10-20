@@ -1,7 +1,8 @@
 # fetchDataRecord(ofTypes:for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches a data record containing the given extension data types for a specific known web extension context.
 
@@ -15,7 +16,15 @@ Fetches a data record containing the given extension data types for a specific k
 ## Declaration
 
 ```swift
+func fetchDataRecord(ofTypes dataTypes: Set<WKWebExtension.DataType>, for extensionContext: WKWebExtensionContext, completionHandler: @escaping (WKWebExtension.DataRecord?) -> Void)
+```
+
+```swift
 func dataRecord(ofTypes dataTypes: Set<WKWebExtension.DataType>, for extensionContext: WKWebExtensionContext) async -> WKWebExtension.DataRecord?
+```
+
+```objc
+- (void) fetchDataRecordOfTypes:(NSSet<NSString *> *) dataTypes forExtensionContext:(WKWebExtensionContext *) extensionContext completionHandler:(void (^)(WKWebExtensionDataRecord *)) completionHandler;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # kAXSelectedColumnsChangedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Notification that the set of selected columns changed.
 
@@ -12,6 +13,10 @@ Notification that the set of selected columns changed.
 
 ```swift
 var kAXSelectedColumnsChangedNotification: String { get }
+```
+
+```c
+#define kAXSelectedColumnsChangedNotification
 ```
 
 

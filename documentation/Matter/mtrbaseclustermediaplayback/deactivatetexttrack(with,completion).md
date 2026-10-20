@@ -1,7 +1,8 @@
 # deactivateTextTrack(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command DeactivateTextTrack
 
@@ -17,7 +18,15 @@ Command DeactivateTextTrack
 ## Declaration
 
 ```swift
+func deactivateTextTrack(with params: MTRMediaPlaybackClusterDeactivateTextTrackParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func deactivateTextTrack(with params: MTRMediaPlaybackClusterDeactivateTextTrackParams?) async throws
+```
+
+```objc
+- (void) deactivateTextTrackWithParams:(MTRMediaPlaybackClusterDeactivateTextTrackParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

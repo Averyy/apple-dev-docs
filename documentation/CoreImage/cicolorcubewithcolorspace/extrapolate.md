@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 If true, then the filter extrapolates the color cube for any RGB component values outside the range 0.0 to 1.0.
@@ -20,15 +21,20 @@ If true, then the filter extrapolates the color cube for any RGB component value
 var extrapolate: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) bool extrapolate;
+```
+
 ## See Also
 
-- [var colorSpace: CGColorSpace?](cicolorcubewithcolorspace/colorspace.md)
+### Instance Properties
+- [var colorSpace: CGColorSpace?](./colorspace.md)
   The working color space.
-- [var cubeData: Data](cicolorcubewithcolorspace/cubedata.md)
+- [var cubeData: Data](./cubedata.md)
   The cube texture data to use as a color lookup table.
-- [var cubeDimension: Float](cicolorcubewithcolorspace/cubedimension.md)
+- [var cubeDimension: Float](./cubedimension.md)
   The length, in texels, of each side of the cube texture.
-- [var inputImage: CIImage?](cicolorcubewithcolorspace/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
 
 

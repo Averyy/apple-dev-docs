@@ -1,10 +1,11 @@
 # IOBluetoothHandsFreeSMSSupport
 
 **Framework**: IOBluetooth  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,42 +13,47 @@
 enum IOBluetoothHandsFreeSMSSupport
 ```
 
+```c
+enum IOBluetoothHandsFreeSMSSupport : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [IOBluetoothHandsFreeSMSSupport.manufactureSpecificSMSSupport](iobluetoothhandsfreesmssupport/manufacturespecificsmssupport.md)
-- [IOBluetoothHandsFreeSMSSupport.phase2SMSSupport](iobluetoothhandsfreesmssupport/phase2smssupport.md)
-- [IOBluetoothHandsFreeSMSSupport.phase2pSMSSupport](iobluetoothhandsfreesmssupport/phase2psmssupport.md)
+- [IOBluetoothHandsFreeSMSSupport.manufactureSpecificSMSSupport](./iobluetoothhandsfreesmssupport/manufacturespecificsmssupport.md)
+- [IOBluetoothHandsFreeSMSSupport.phase2SMSSupport](./iobluetoothhandsfreesmssupport/phase2smssupport.md)
+- [IOBluetoothHandsFreeSMSSupport.phase2pSMSSupport](./iobluetoothhandsfreesmssupport/phase2psmssupport.md)
 ### Initializers
-- [init?(rawValue: UInt)](iobluetoothhandsfreesmssupport/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./iobluetoothhandsfreesmssupport/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct BluetoothAMPCommandRejectReason](bluetoothampcommandrejectreason.md)
-- [struct BluetoothAMPCreatePhysicalLinkResponseStatus](bluetoothampcreatephysicallinkresponsestatus.md)
-- [struct BluetoothAMPDisconnectPhysicalLinkResponseStatus](bluetoothampdisconnectphysicallinkresponsestatus.md)
-- [struct BluetoothAMPDiscoverResponseControllerStatus](bluetoothampdiscoverresponsecontrollerstatus.md)
-- [struct BluetoothAMPGetAssocResponseStatus](bluetoothampgetassocresponsestatus.md)
-- [struct BluetoothAMPGetInfoResponseStatus](bluetoothampgetinforesponsestatus.md)
-- [struct BluetoothAMPManagerCode](bluetoothampmanagercode.md)
-- [struct BluetoothHCIPowerState](bluetoothhcipowerstate.md)
-- [struct BluetoothL2CAPCommandCode](bluetoothl2capcommandcode.md)
-- [struct BluetoothL2CAPCommandRejectReason](bluetoothl2capcommandrejectreason.md)
-- [struct BluetoothL2CAPConfigurationOption](bluetoothl2capconfigurationoption.md)
-- [struct BluetoothL2CAPConfigurationResult](bluetoothl2capconfigurationresult.md)
-- [struct BluetoothL2CAPConfigurationRetransmissionAndFlowControlFlags](bluetoothl2capconfigurationretransmissionandflowcontrolflags.md)
-- [struct BluetoothL2CAPConnectionResult](bluetoothl2capconnectionresult.md)
-- [struct BluetoothL2CAPConnectionStatus](bluetoothl2capconnectionstatus.md)
+### Enumerations
+- [struct BluetoothAMPCommandRejectReason](./bluetoothampcommandrejectreason.md)
+- [struct BluetoothAMPCreatePhysicalLinkResponseStatus](./bluetoothampcreatephysicallinkresponsestatus.md)
+- [struct BluetoothAMPDisconnectPhysicalLinkResponseStatus](./bluetoothampdisconnectphysicallinkresponsestatus.md)
+- [struct BluetoothAMPDiscoverResponseControllerStatus](./bluetoothampdiscoverresponsecontrollerstatus.md)
+- [struct BluetoothAMPGetAssocResponseStatus](./bluetoothampgetassocresponsestatus.md)
+- [struct BluetoothAMPGetInfoResponseStatus](./bluetoothampgetinforesponsestatus.md)
+- [struct BluetoothAMPManagerCode](./bluetoothampmanagercode.md)
+- [struct BluetoothHCIPowerState](./bluetoothhcipowerstate.md)
+- [struct BluetoothL2CAPCommandCode](./bluetoothl2capcommandcode.md)
+- [struct BluetoothL2CAPCommandRejectReason](./bluetoothl2capcommandrejectreason.md)
+- [struct BluetoothL2CAPConfigurationOption](./bluetoothl2capconfigurationoption.md)
+- [struct BluetoothL2CAPConfigurationResult](./bluetoothl2capconfigurationresult.md)
+- [struct BluetoothL2CAPConfigurationRetransmissionAndFlowControlFlags](./bluetoothl2capconfigurationretransmissionandflowcontrolflags.md)
+- [struct BluetoothL2CAPConnectionResult](./bluetoothl2capconnectionresult.md)
+- [struct BluetoothL2CAPConnectionStatus](./bluetoothl2capconnectionstatus.md)
 
 
 ---

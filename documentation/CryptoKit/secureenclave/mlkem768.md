@@ -1,7 +1,8 @@
 # SecureEnclave.MLKEM768
 
 **Framework**: Apple CryptoKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An implementation of the MLKEM768 key encapsulation mechanism that operates within the Secure Enclave.
 
@@ -23,19 +24,20 @@ enum MLKEM768
 ## Topics
 
 ### Keys
-- [SecureEnclave.MLKEM768.PrivateKey](secureenclave/mlkem768/privatekey.md)
+- [SecureEnclave.MLKEM768.PrivateKey](./mlkem768/privatekey.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [SecureEnclave.P256](secureenclave/p256.md)
+### Using the secure enclave
+- [SecureEnclave.P256](./p256.md)
   An elliptic curve that enables NIST P-256 signatures and key agreement within the Secure Enclave.
-- [SecureEnclave.MLKEM1024](secureenclave/mlkem1024.md)
+- [SecureEnclave.MLKEM1024](./mlkem1024.md)
   An implementation of the MLKEM1024 key encapsulation mechanism that operates within the Secure Enclave.
 
 

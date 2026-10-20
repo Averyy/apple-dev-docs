@@ -1,7 +1,8 @@
 # withPositions(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides access to the positions of all the vertices within a callback.
 
@@ -30,9 +31,10 @@ The provided span is only valid for the lifetime of the callback.
 
 ## See Also
 
-- [func position(at: UInt32) -> SIMD3<Float>](clothposeresource/position(at:).md)
+### Accessing pose positions
+- [func position(at: UInt32) -> SIMD3<Float>](./position%28at%29.md)
   Returns the position of the vertex at the given index.
-- [var vertexCount: Int](clothposeresource/vertexcount.md)
+- [var vertexCount: Int](./vertexcount.md)
   The number of vertices in the pose resource.
 
 

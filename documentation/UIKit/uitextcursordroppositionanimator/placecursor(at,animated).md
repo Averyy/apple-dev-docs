@@ -1,7 +1,8 @@
 # placeCursor(at:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Controls the placement of the cursor, using @c textInput and @c position to compute the final frame for the cursor view.
 
@@ -16,6 +17,10 @@ Controls the placement of the cursor, using @c textInput and @c position to comp
 
 ```swift
 func placeCursor(at position: UITextPosition!, animated: Bool)
+```
+
+```objc
+- (void) placeCursorAtPosition:(UITextPosition *) position animated:(BOOL) animated;
 ```
 
 

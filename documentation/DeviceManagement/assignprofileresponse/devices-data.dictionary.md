@@ -1,11 +1,12 @@
 # AssignProfileResponse.Devices
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object AssignProfileResponse.Devices
 ```
 
@@ -15,9 +16,10 @@ object AssignProfileResponse.Devices
 
 ## See Also
 
-- [object ProfileServiceRequest](profileservicerequest.md)
+### Request and Response
+- [object ProfileServiceRequest](../profileservicerequest.md)
   The request for assigning a profile to a set of devices.
-- [object AssignProfileResponse](assignprofileresponse.md)
+- [object AssignProfileResponse](../assignprofileresponse.md)
 
 
 ---

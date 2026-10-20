@@ -1,7 +1,8 @@
 # headTracked(_:soundStageSize:)
 
 **Framework**: Audio Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create a head-tracked spatial audio experience with a specific anchoring strategy and sound stage size.
 
@@ -13,6 +14,8 @@ Create a head-tracked spatial audio experience with a specific anchoring strateg
 ```swift
 static func headTracked(_ anchoringStrategy: SpatialAudioExperiences.AnchoringStrategy, soundStageSize: SpatialAudioExperiences.SoundStageSize = .automatic) -> Self
 ```
+
+Available when `Self` is `HeadTrackedSpatialAudio`.
 
 
 ---

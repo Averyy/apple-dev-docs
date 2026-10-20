@@ -1,17 +1,18 @@
 # directPathTransmission
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A spatial category that refers to the unfiltered audio signal.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ A spatial category that refers to the unfiltered audio signal.
 static let directPathTransmission: PHASESpatialCategory
 ```
 
+```c
+extern PHASESpatialCategory const PHASESpatialCategoryDirectPathTransmission;
+```
+
 ## See Also
 
-- [static let earlyReflections: PHASESpatialCategory](phasespatialcategory/earlyreflections.md)
+### Categories
+- [static let earlyReflections: PHASESpatialCategory](./earlyreflections.md)
   A spatial category that refers to the earlier echoes along the duration of sound resonance.
-- [static let lateReverb: PHASESpatialCategory](phasespatialcategory/latereverb.md)
+- [static let lateReverb: PHASESpatialCategory](./latereverb.md)
   A spatial category that refers to the later echoes along the duration of sound resonance.
 
 

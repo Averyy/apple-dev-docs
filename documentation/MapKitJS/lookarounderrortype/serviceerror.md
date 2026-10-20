@@ -1,7 +1,8 @@
 # ServiceError
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An error type that indicates the service supporting the Look Around view isn’t available.
 
@@ -10,7 +11,7 @@ An error type that indicates the service supporting the Look Around view isn’t
 
 ## Declaration
 
-```swift
+```
 readonly ServiceError: "service-error";
 ```
 

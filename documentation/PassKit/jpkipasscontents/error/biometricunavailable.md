@@ -1,13 +1,16 @@
 # JPKIPassContents.Error.biometricUnavailable
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Biometric authorization isn’t available.
 
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
+- iOS 18.0+ - Deprecated in 18.4
+- iPadOS 18.0+ - Deprecated in 18.4
+
+> **Deprecated**: Use biometricAuthenticationFailed(laError: LocalAuthentication.LAError) instead
 
 ## Declaration
 
@@ -17,13 +20,14 @@ case biometricUnavailable
 
 ## See Also
 
-- [JPKIPassContents.Error.appNotForeground](jpkipasscontents/error/appnotforeground.md)
+### Error cases
+- [JPKIPassContents.Error.appNotForeground](./appnotforeground.md)
   The calling app isn’t in the foreground.
-- [JPKIPassContents.Error.incorrectUserAuthentication](jpkipasscontents/error/incorrectuserauthentication.md)
+- [JPKIPassContents.Error.incorrectUserAuthentication](./incorrectuserauthentication.md)
   The provided credential authentication request wasn’t accepted.
-- [JPKIPassContents.Error.invalidInput](jpkipasscontents/error/invalidinput.md)
+- [JPKIPassContents.Error.invalidInput](./invalidinput.md)
   The PIN or password doesn’t meet the specified conditions.
-- [JPKIPassContents.Error.resourceNotAvailable](jpkipasscontents/error/resourcenotavailable.md)
+- [JPKIPassContents.Error.resourceNotAvailable](./resourcenotavailable.md)
   The system resouce is currently unavailable.
 
 

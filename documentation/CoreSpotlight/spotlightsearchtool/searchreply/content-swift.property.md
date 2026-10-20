@@ -1,7 +1,8 @@
 # content
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The result content — determines what to display and how.
 
@@ -20,17 +21,18 @@ let content: SpotlightSearchTool.SearchReply.Content
 
 ## Mentions
 
-- [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
+- [Making your indexed content available to Foundation Models](../../making-your-indexed-content-available-to-foundation-models.md)
 
 ## See Also
 
-- [let label: String?](spotlightsearchtool/searchreply/label.md)
+### Getting the reply details
+- [let label: String?](./label.md)
   A short, LLM-generated description of what the result represents.
-- [let status: SpotlightSearchTool.SearchReply.Status](spotlightsearchtool/searchreply/status-swift.property.md)
+- [let status: SpotlightSearchTool.SearchReply.Status](./status-swift.property.md)
   An indicator of whether the current query is complete or still in progress.
-- [SpotlightSearchTool.SearchReply.Content](spotlightsearchtool/searchreply/content-swift.enum.md)
+- [SpotlightSearchTool.SearchReply.Content](./content-swift.enum.md)
   What this set of results represents — determines display strategy.
-- [SpotlightSearchTool.SearchReply.Status](spotlightsearchtool/searchreply/status-swift.enum.md)
+- [SpotlightSearchTool.SearchReply.Status](./status-swift.enum.md)
 
 
 ---

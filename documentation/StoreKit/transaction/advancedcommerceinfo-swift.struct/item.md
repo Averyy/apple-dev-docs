@@ -1,7 +1,8 @@
 # Transaction.AdvancedCommerceInfo.Item
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The developer-defined product that was purchased.
 
@@ -23,29 +24,30 @@ struct Item
 ## Topics
 
 ### Structures
-- [Transaction.AdvancedCommerceInfo.Item.Details](transaction/advancedcommerceinfo-swift.struct/item/details-swift.struct.md)
+- [Transaction.AdvancedCommerceInfo.Item.Details](./item/details-swift.struct.md)
   The item details.
 ### Instance Properties
-- [let details: Transaction.AdvancedCommerceInfo.Item.Details](transaction/advancedcommerceinfo-swift.struct/item/details-swift.property.md)
+- [let details: Transaction.AdvancedCommerceInfo.Item.Details](./item/details-swift.property.md)
   The item’s details.
-- [let refunds: [Transaction.AdvancedCommerceInfo.Refund]?](transaction/advancedcommerceinfo-swift.struct/item/refunds.md)
+- [let refunds: [Transaction.AdvancedCommerceInfo.Refund]?](./item/refunds.md)
   The list of refunds that were issued as part of this transaction.
-- [let revocationDate: Date?](transaction/advancedcommerceinfo-swift.struct/item/revocationdate.md)
+- [let revocationDate: Date?](./item/revocationdate.md)
   The date access to this item was revoked.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Transaction.AdvancedCommerceInfo.Offer](transaction/advancedcommerceinfo-swift.struct/offer.md)
+### Structures
+- [Transaction.AdvancedCommerceInfo.Offer](./offer.md)
   Information about the offer that was redeemed as part of the purchase.
-- [Transaction.AdvancedCommerceInfo.Refund](transaction/advancedcommerceinfo-swift.struct/refund.md)
+- [Transaction.AdvancedCommerceInfo.Refund](./refund.md)
   Information about refunds that were issued as part of this transaction.
 
 

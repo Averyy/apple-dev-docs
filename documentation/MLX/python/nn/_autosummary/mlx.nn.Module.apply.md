@@ -6,34 +6,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.M
 
 # mlx.nn.Module.apply
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Module.apply.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Module.apply
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Module.apply
-
-**Module.apply(*map_fn: Callable[[array], array]*, *filter_fn: Callable[[Module, str, Any], bool] | None = None*) → [Module](../module.html#mlx.nn.Module)**
+**Module.apply(*map_fn: Callable[[array], array]*, *filter_fn: Callable[[Module, str, Any], bool] | None = None*) → [Module](../module.md#mlx.nn.Module)**
 : Map all the parameters using the provided `map_fn` and immediately
 update the module with the mapped parameters.
 For instance running `model.apply(lambda x: x.astype(mx.float16))`
@@ -47,5 +20,3 @@ map (default: `Module.valid_parameter_filter()`).
 
 Returns:
 The module instance after updating the parameters.
-
-** Contents

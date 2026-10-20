@@ -1,7 +1,8 @@
 # readAttributeSupportedWiFiBands(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSupportedWiFiBands(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSupportedWiFiBands() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeSupportedWiFiBandsWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(posixUID:authority:)
 
 **Framework**: Collaboration  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the user identity with the given POSIX UID in the specified identity authority.
 
@@ -12,6 +13,10 @@ Returns the user identity with the given POSIX UID in the specified identity aut
 
 ```swift
 init?(posixUID uid: uid_t, authority: CBIdentityAuthority)
+```
+
+```objc
++ (CBUserIdentity *) userIdentityWithPosixUID:(uid_t) uid authority:(CBIdentityAuthority *) authority;
 ```
 
 #### Return Value
@@ -25,7 +30,8 @@ The user identity with the given UID in the specified identity authority, or `ni
 
 ## See Also
 
-- [var posixUID: uid_t](cbuseridentity/posixuid.md)
+### Using UIDs
+- [var posixUID: uid_t](./posixuid.md)
   Returns the POSIX UID of the identity.
 
 

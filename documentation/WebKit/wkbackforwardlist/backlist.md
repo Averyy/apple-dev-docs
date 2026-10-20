@@ -1,7 +1,8 @@
 # backList
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of items that precede the current item.
 
@@ -18,13 +19,18 @@ The array of items that precede the current item.
 var backList: [WKBackForwardListItem] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<WKBackForwardListItem *> * backList;
+```
+
 #### Discussion
 
 The items are in the order in which the web view originally visited them.
 
 ## See Also
 
-- [var forwardList: [WKBackForwardListItem]](wkbackforwardlist/forwardlist.md)
+### Getting Sublists
+- [var forwardList: [WKBackForwardListItem]](./forwardlist.md)
   The array of items that follow the current item.
 
 

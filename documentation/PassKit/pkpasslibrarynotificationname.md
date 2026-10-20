@@ -1,17 +1,18 @@
 # PKPassLibraryNotificationName
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The types of notifications that the pass library posts.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,31 +20,36 @@ The types of notifications that the pass library posts.
 struct PKPassLibraryNotificationName
 ```
 
+```c
+typedef NSString * PKPassLibraryNotificationName;
+```
+
 ## Topics
 
 ### Creating a pass library notification name
-- [init(rawValue: String)](pkpasslibrarynotificationname/init(rawvalue:).md)
+- [init(rawValue: String)](./pkpasslibrarynotificationname/init%28rawvalue%29.md)
   Creates a pass library notification name according to the provided raw value.
-- [init(String)](pkpasslibrarynotificationname/init(_:).md)
+- [init(String)](./pkpasslibrarynotificationname/init%28_%29.md)
   Creates a pass library notification name according to the provided string.
 ### Notification names
-- [static let PKPassLibraryDidChange: PKPassLibraryNotificationName](pkpasslibrarynotificationname/pkpasslibrarydidchange.md)
+- [static let PKPassLibraryDidChange: PKPassLibraryNotificationName](./pkpasslibrarynotificationname/pkpasslibrarydidchange.md)
   A notification that PassKit posts when the pass library changes.
-- [static let PKPassLibraryRemotePaymentPassesDidChange: PKPassLibraryNotificationName](pkpasslibrarynotificationname/pkpasslibraryremotepaymentpassesdidchange.md)
+- [static let PKPassLibraryRemotePaymentPassesDidChange: PKPassLibraryNotificationName](./pkpasslibrarynotificationname/pkpasslibraryremotepaymentpassesdidchange.md)
   A notification that PassKit posts when it adds or removes a pass on a paired remote device.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PKPassLibraryNotificationKey](pkpasslibrarynotificationkey.md)
+### Receiving notifications
+- [struct PKPassLibraryNotificationKey](./pkpasslibrarynotificationkey.md)
   The user info keys that a pass library notification uses.
 
 

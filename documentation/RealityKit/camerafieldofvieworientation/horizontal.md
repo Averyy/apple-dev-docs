@@ -1,7 +1,8 @@
 # CameraFieldOfViewOrientation.horizontal
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Applies the field-of-view degrees in the camera’s horizontal axis.
 

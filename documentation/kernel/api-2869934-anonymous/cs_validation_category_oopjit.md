@@ -1,14 +1,15 @@
 # CS_VALIDATION_CATEGORY_OOPJIT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 CS_VALIDATION_CATEGORY_OOPJIT = 9
 ```
 

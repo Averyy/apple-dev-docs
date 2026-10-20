@@ -1,7 +1,8 @@
 # CTLineGetPenOffsetForFlush(_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the pen offset required to draw flush text.
 
@@ -20,6 +21,10 @@ Gets the pen offset required to draw flush text.
 func CTLineGetPenOffsetForFlush(_ line: CTLine, _ flushFactor: CGFloat, _ flushWidth: Double) -> Double
 ```
 
+```c
+extern double CTLineGetPenOffsetForFlush(CTLineRef line, CGFloat flushFactor, double flushWidth);
+```
+
 #### Return Value
 
 The offset from the current pen position for the flush operation.
@@ -32,11 +37,12 @@ The offset from the current pen position for the flush operation.
 
 ## See Also
 
-- [func CTLineGetGlyphCount(CTLine) -> CFIndex](ctlinegetglyphcount(_:).md)
+### Getting Line Data
+- [func CTLineGetGlyphCount(CTLine) -> CFIndex](./ctlinegetglyphcount%28_%29.md)
   Returns the total glyph count for the line object.
-- [func CTLineGetGlyphRuns(CTLine) -> CFArray](ctlinegetglyphruns(_:).md)
+- [func CTLineGetGlyphRuns(CTLine) -> CFArray](./ctlinegetglyphruns%28_%29.md)
   Returns the array of glyph runs that make up the line object.
-- [func CTLineGetStringRange(CTLine) -> CFRange](ctlinegetstringrange(_:).md)
+- [func CTLineGetStringRange(CTLine) -> CFRange](./ctlinegetstringrange%28_%29.md)
   Gets the range of characters that originally spawned the glyphs in the line.
 
 

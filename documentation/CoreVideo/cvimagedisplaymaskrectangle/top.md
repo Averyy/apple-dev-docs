@@ -1,7 +1,8 @@
 # top
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vertical pixel offset of the rectangle from the top of the bounding raster.
 
@@ -22,7 +23,7 @@ var top: UInt16
 
 #### Discussion
 
-This value is always less than [`referenceRasterHeight`](cvimagedisplaymaskrectangle/referencerasterheight.md).
+This value is always less than [`referenceRasterHeight`](./referencerasterheight.md).
 
 
 ---

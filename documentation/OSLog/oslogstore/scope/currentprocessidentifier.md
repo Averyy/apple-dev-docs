@@ -1,7 +1,8 @@
 # OSLogStore.Scope.currentProcessIdentifier
 
 **Framework**: OSLog  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 15.0+
@@ -18,9 +19,14 @@
 case currentProcessIdentifier
 ```
 
+```c
+OSLogStoreCurrentProcessIdentifier
+```
+
 ## See Also
 
-- [OSLogStore.Scope.system](oslogstore/scope/system.md)
+### Enumeration Cases
+- [OSLogStore.Scope.system](./system.md)
 
 
 ---

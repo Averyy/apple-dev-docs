@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: Foundation  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the attribute that corresponds to a specified key path.
 
@@ -23,17 +24,18 @@ subscript<K>(dynamicMember keyPath: KeyPath<AttributeDynamicLookup, K>) -> K.Val
 
 ## See Also
 
-- [subscript<T>(T.Type) -> T.Value?](attributecontainer/subscript(_:).md)
+### Accessing Attributes
+- [subscript<T>(T.Type) -> T.Value?](./subscript%28_%29.md)
   Returns the attribute that corresponds to a specified key.
-- [subscript<S>(dynamicMember _: KeyPath<AttributeScopes, S.Type>) -> ScopedAttributeContainer<S>](attributecontainer/subscript(dynamicmember:)-3jcvx.md)
+- [subscript<S>(dynamicMember _: KeyPath<AttributeScopes, S.Type>) -> ScopedAttributeContainer<S>](./subscript%28dynamicmember%29-3jcvx.md)
   Returns the attribute container that corresponds to a specified key path.
-- [subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> AttributeContainer.Builder<K>](attributecontainer/subscript(dynamicmember:)-60ps5.md)
+- [subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> AttributeContainer.Builder<K>](./subscript%28dynamicmember%29-60ps5.md)
   Returns a modified attribute container as part of building a chain of attributes.
-- [static subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> AttributeContainer.Builder<K>](attributecontainer/subscript(dynamicmember:)-swift.type.subscript.md)
+- [static subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> AttributeContainer.Builder<K>](./subscript%28dynamicmember%29-swift.type.subscript.md)
   Returns a modified attribute container as part of building a chain of attributes, for use as a static method.
-- [protocol AttributedStringKey](attributedstringkey.md)
+- [protocol AttributedStringKey](../attributedstringkey.md)
   A type that defines an attribute’s name and type.
-- [AttributeContainer.Builder](attributecontainer/builder.md)
+- [AttributeContainer.Builder](./builder.md)
   A type that iteratively builds attribute containers by setting attribute values.
 
 

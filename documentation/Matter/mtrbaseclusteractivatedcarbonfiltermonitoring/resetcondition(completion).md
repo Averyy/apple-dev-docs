@@ -1,7 +1,8 @@
 # resetCondition(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func resetCondition(completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func resetCondition() async throws
+```
+
+```objc
+- (void) resetConditionWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

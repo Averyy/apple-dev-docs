@@ -1,7 +1,8 @@
 # drawableRenderContextStencilFormat
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metal pixel format matching that of the stencil texture used in the layer renderer drawable’s render context.
 
@@ -19,11 +20,12 @@ var drawableRenderContextStencilFormat: MTLPixelFormat { get set }
 
 This value corresponds to the pixel format of the stencil texture you attach to your Metal pipeline.
 
-> **Note**: For more information, see [`MTLRenderPassAttachmentDescriptor`](https://developer.apple.com/documentation/metal/mtlrenderpassattachmentdescriptor).
+> **Note**: For more information, see [`MTLRenderPassAttachmentDescriptor`](../../../Metal/mtlrenderpassattachmentdescriptor.md).
 
 ## See Also
 
-- [var drawableRenderContextRasterSampleCount: Int](layerrenderer/configuration-swift.struct/drawablerendercontextrastersamplecount.md)
+### Configurating the render context
+- [var drawableRenderContextRasterSampleCount: Int](./drawablerendercontextrastersamplecount.md)
   The multisample antialiasing sample count used for rendering.
 
 

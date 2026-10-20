@@ -1,7 +1,8 @@
 # resultMatrixOrigin
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,12 +18,17 @@
 var resultMatrixOrigin: MTLOrigin { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLOrigin resultMatrixOrigin;
+```
+
 ## See Also
 
-- [var batchSize: Int](mpsmatrixbinarykernel/batchsize.md)
-- [var batchStart: Int](mpsmatrixbinarykernel/batchstart.md)
-- [var primarySourceMatrixOrigin: MTLOrigin](mpsmatrixbinarykernel/primarysourcematrixorigin.md)
-- [var secondarySourceMatrixOrigin: MTLOrigin](mpsmatrixbinarykernel/secondarysourcematrixorigin.md)
+### Instance Properties
+- [var batchSize: Int](./batchsize.md)
+- [var batchStart: Int](./batchstart.md)
+- [var primarySourceMatrixOrigin: MTLOrigin](./primarysourcematrixorigin.md)
+- [var secondarySourceMatrixOrigin: MTLOrigin](./secondarysourcematrixorigin.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # RequestReviewAction
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An instance that tells StoreKit to request an App Store rating or review, if appropriate.
 
@@ -21,7 +22,7 @@ struct RequestReviewAction
 
 #### Overview
 
-Read the [`requestReview`](https://developer.apple.com/documentation/swiftui/environmentvalues/requestreview) environment value to get an instance of this structure for a given [`Environment`](https://developer.apple.com/documentation/swiftui/environment). Call the instance to tell StoreKit to ask the user to rate or review your app, if appropriate. You call the instance directly because it defines a [`callAsFunction()`](requestreviewaction/callasfunction().md) method that Swift calls when you call the instance.
+Read the [`requestReview`](../SwiftUI/environmentvalues/requestreview.md) environment value to get an instance of this structure for a given [`Environment`](../SwiftUI/environment.md). Call the instance to tell StoreKit to ask the user to rate or review your app, if appropriate. You call the instance directly because it defines a [`callAsFunction()`](./requestreviewaction/callasfunction%28%29.md) method that Swift calls when you call the instance.
 
 When you call this API in your shipping app and the system displays a rating and review request view, the system handles the entire process for you. Although you normally call this method when it makes sense in the user experience flow of your app, App Store policy governs the actual display of a rating and review request view. When your app calls this API, StoreKit uses the following criteria:
 
@@ -30,35 +31,36 @@ When you call this API in your shipping app and the system displays a rating and
 
 > **Note**:  Because this API may not present an alert, don’t call it in response to a button tap or other user action.
 
-It’s up to your app to decide on the best timing for requesting reviews. For design guidance, see Human Interface Guidelines > [`Ratings and reviews`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews).
+It’s up to your app to decide on the best timing for requesting reviews. For design guidance, see Human Interface Guidelines > [Ratings and reviews](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews).
 
-##### Test Review Requests
+##### Test review requests
 
 When your app calls this method while it’s in development mode, StoreKit always displays the rating and review request view, so you can test the user interface and experience. However, this method has no effect in apps that you distribute for beta testing using TestFlight.
 
-##### Provide a Persistent Link to Your Product Page Optional
+##### Provide a persistent link to your product page (optional)
 
 People can review your app at any time on the App Store. To make it easier for people to leave reviews, you may include a persistent link to your App Store product page in your app’s settings or configuration screens. Append the query parameter `action=write-review` to your product page URL to automatically open the App Store page where users can write a review.
 
 ## Topics
 
 ### Call as function
-- [func callAsFunction()](requestreviewaction/callasfunction.md)
+- [func callAsFunction()](./requestreviewaction/callasfunction%28%29.md)
   Tells StoreKit to ask the user to rate or review your app, if appropriate.
 ### Environment value
-- [var requestReview: RequestReviewAction](../swiftui/environmentvalues/requestreview.md)
+- [var requestReview: RequestReviewAction](../SwiftUI/environmentvalues/requestreview.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Requesting App Store reviews](requesting-app-store-reviews.md)
+### Reviews
+- [Requesting App Store reviews](./requesting-app-store-reviews.md)
   Implement best practices for prompting users to review your app in the App Store.
-- [class SKStoreReviewController](skstorereviewcontroller.md)
+- [class SKStoreReviewController](./skstorereviewcontroller.md)
   An object that controls the process of requesting App Store ratings and reviews from customers.
 
 

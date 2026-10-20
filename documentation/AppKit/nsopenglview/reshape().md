@@ -1,17 +1,24 @@
 # reshape()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called by Cocoa when the view’s visible rectangle or bounds change.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Please use MTKView instead.
 
 ## Declaration
 
 ```swift
 func reshape()
+```
+
+```objc
+- (void) reshape;
 ```
 
 #### Discussion
@@ -20,7 +27,8 @@ Cocoa typically calls this method during scrolling and resize operations but may
 
 ## See Also
 
-- [func update()](nsopenglview/update.md)
+### Managing the Visible Region
+- [func update()](./update%28%29.md)
   Called by Cocoa when the view’s window moves or when the view itself moves or is resized.
 
 

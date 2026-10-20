@@ -1,7 +1,8 @@
 # toolbar
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Toolbar menu group.
 
@@ -18,15 +19,20 @@ The Toolbar menu group.
 static let toolbar: UIMenu.Identifier
 ```
 
+```c
+extern UIMenuIdentifier const UIMenuToolbar;
+```
+
 #### Discussion
 
 The Toolbar menu group contains menu elements to show and hide the toolbar, and to customize the toolbar.
 
 ## See Also
 
-- [static let sidebar: UIMenu.Identifier](uimenu/identifier-swift.struct/sidebar.md)
+### View menus
+- [static let sidebar: UIMenu.Identifier](./sidebar.md)
   The Sidebar menu group.
-- [static let fullscreen: UIMenu.Identifier](uimenu/identifier-swift.struct/fullscreen.md)
+- [static let fullscreen: UIMenu.Identifier](./fullscreen.md)
   The Full Screen menu.
 
 

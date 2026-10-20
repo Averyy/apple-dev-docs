@@ -1,15 +1,16 @@
 # UITableViewCell.SeparatorStyle
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The style for cells to use as separators.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,45 +18,50 @@ The style for cells to use as separators.
 enum SeparatorStyle
 ```
 
+```c
+enum UITableViewCellSeparatorStyle : NSInteger;
+```
+
 #### Overview
 
-You use these constants to set the value of the [`separatorStyle`](uitableview/separatorstyle.md) property defined by [`UITableView`](uitableview.md).
+You use these constants to set the value of the [`separatorStyle`](../uitableview/separatorstyle.md) property defined by [`UITableView`](../uitableview.md).
 
 ## Topics
 
 ### Constants
-- [UITableViewCell.SeparatorStyle.none](uitableviewcell/separatorstyle/none.md)
+- [UITableViewCell.SeparatorStyle.none](./separatorstyle/none.md)
   The separator cell has no distinct style.
-- [UITableViewCell.SeparatorStyle.singleLine](uitableviewcell/separatorstyle/singleline.md)
+- [UITableViewCell.SeparatorStyle.singleLine](./separatorstyle/singleline.md)
   The separator cell has a single line running across its width.
-- [UITableViewCell.SeparatorStyle.singleLineEtched](uitableviewcell/separatorstyle/singlelineetched.md)
+- [UITableViewCell.SeparatorStyle.singleLineEtched](./separatorstyle/singlelineetched.md)
   The separator cell has double lines running across its width, giving it an etched look.
 ### Initializers
-- [init?(rawValue: Int)](uitableviewcell/separatorstyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./separatorstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var separatorStyle: UITableViewCell.SeparatorStyle](uitableview/separatorstyle.md)
+### Customizing the separator appearance
+- [var separatorStyle: UITableViewCell.SeparatorStyle](../uitableview/separatorstyle.md)
   The style for table cells to use as separators.
-- [var separatorColor: UIColor?](uitableview/separatorcolor.md)
+- [var separatorColor: UIColor?](../uitableview/separatorcolor.md)
   The color of separator rows in the table view.
-- [var separatorEffect: UIVisualEffect?](uitableview/separatoreffect.md)
+- [var separatorEffect: UIVisualEffect?](../uitableview/separatoreffect.md)
   The effect to apply to table separators.
-- [var separatorInset: UIEdgeInsets](uitableview/separatorinset.md)
+- [var separatorInset: UIEdgeInsets](../uitableview/separatorinset.md)
   The default inset of cell separators.
-- [var separatorInsetReference: UITableView.SeparatorInsetReference](uitableview/separatorinsetreference-swift.property.md)
+- [var separatorInsetReference: UITableView.SeparatorInsetReference](../uitableview/separatorinsetreference-swift.property.md)
   An indicator of how to interpret the separator inset value.
-- [UITableView.SeparatorInsetReference](uitableview/separatorinsetreference-swift.enum.md)
+- [UITableView.SeparatorInsetReference](../uitableview/separatorinsetreference-swift.enum.md)
   Constants that indicate how to interpret the separator inset value of a table view.
 
 

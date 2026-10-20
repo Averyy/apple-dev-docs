@@ -1,7 +1,8 @@
 # LowLevelBufferResource.Descriptor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The capacity and alignment requirements for a buffer resource.
 
@@ -20,24 +21,25 @@ struct Descriptor
 ## Topics
 
 ### Creating a descriptor
-- [init(capacity: Int, sizeMultiple: Int)](lowlevelbufferresource/descriptor-swift.struct/init(capacity:sizemultiple:).md)
+- [init(capacity: Int, sizeMultiple: Int)](./descriptor-swift.struct/init%28capacity,sizemultiple%29.md)
   Creates a buffer descriptor with the given capacity and size alignment.
 ### Configuring the buffer size
-- [var capacity: Int](lowlevelbufferresource/descriptor-swift.struct/capacity.md)
+- [var capacity: Int](./descriptor-swift.struct/capacity.md)
   The capacity of the buffer, in bytes.
-- [var sizeMultiple: Int](lowlevelbufferresource/descriptor-swift.struct/sizemultiple.md)
+- [var sizeMultiple: Int](./descriptor-swift.struct/sizemultiple.md)
   The required alignment of the buffer’s size, in bytes.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var descriptor: LowLevelBufferResource.Descriptor](lowlevelbufferresource/descriptor-swift.property.md)
+### Inspecting the descriptor
+- [var descriptor: LowLevelBufferResource.Descriptor](./descriptor-swift.property.md)
   The descriptor used to create this buffer resource.
 
 

@@ -1,7 +1,8 @@
 # netServiceWillPublish(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate that the network is ready to publish the service.
 
@@ -19,9 +20,13 @@ Notifies the delegate that the network is ready to publish the service.
 optional func netServiceWillPublish(_ sender: NetService)
 ```
 
+```objc
+- (void) netServiceWillPublish:(NSNetService *) sender;
+```
+
 #### Discussion
 
-Publication of the service proceeds asynchronously and may still generate a call to the delegate’s [`netService(_:didNotPublish:)`](netservicedelegate/netservice(_:didnotpublish:).md) method if an error occurs.
+Publication of the service proceeds asynchronously and may still generate a call to the delegate’s [`netService(_:didNotPublish:)`](./netservice%28_,didnotpublish%29.md) method if an error occurs.
 
 ## Parameters
 
@@ -29,22 +34,24 @@ Publication of the service proceeds asynchronously and may still generate a call
 
 ## See Also
 
-- [Bonjour Overview](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/NetServices/Introduction.html#//apple_ref/doc/uid/10000119i)
-- [NSNetServices and CFNetServices Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Networking/Conceptual/NSNetServiceProgGuide/Introduction.html#//apple_ref/doc/uid/TP40002736)
-- [func netService(NetService, didNotPublish: [String : NSNumber])](netservicedelegate/netservice(_:didnotpublish:).md)
+### Related Documentation
+- [Bonjour Overview](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/NetServices/Introduction.html#//apple_ref/doc/uid/10000119i)
+- [NSNetServices and CFNetServices Programming Guide](https://developer.apple.com/library/archive/documentation/Networking/Conceptual/NSNetServiceProgGuide/Introduction.html#//apple_ref/doc/uid/TP40002736)
+### Using Network Services
+- [func netService(NetService, didNotPublish: [String : NSNumber])](./netservice%28_,didnotpublish%29.md)
   Notifies the delegate that a service could not be published.
-- [func netServiceDidPublish(NetService)](netservicedelegate/netservicedidpublish(_:).md)
+- [func netServiceDidPublish(NetService)](./netservicedidpublish%28_%29.md)
   Notifies the delegate that a service was successfully published.
-- [func netServiceWillResolve(NetService)](netservicedelegate/netservicewillresolve(_:).md)
+- [func netServiceWillResolve(NetService)](./netservicewillresolve%28_%29.md)
   Notifies the delegate that the network is ready to resolve the service.
-- [func netService(NetService, didNotResolve: [String : NSNumber])](netservicedelegate/netservice(_:didnotresolve:).md)
+- [func netService(NetService, didNotResolve: [String : NSNumber])](./netservice%28_,didnotresolve%29.md)
   Informs the delegate that an error occurred during resolution of a given service.
-- [func netServiceDidResolveAddress(NetService)](netservicedelegate/netservicedidresolveaddress(_:).md)
+- [func netServiceDidResolveAddress(NetService)](./netservicedidresolveaddress%28_%29.md)
   Informs the delegate that the address for a given service was resolved.
-- [func netService(NetService, didUpdateTXTRecord: Data)](netservicedelegate/netservice(_:didupdatetxtrecord:).md)
+- [func netService(NetService, didUpdateTXTRecord: Data)](./netservice%28_,didupdatetxtrecord%29.md)
   Notifies the delegate that the TXT record for a given service has been updated.
-- [func netServiceDidStop(NetService)](netservicedelegate/netservicedidstop(_:).md)
-  Informs the delegate that a [`publish()`](netservice/publish().md) or [`resolve(withTimeout:)`](netservice/resolve(withtimeout:).md) request was stopped.
+- [func netServiceDidStop(NetService)](./netservicedidstop%28_%29.md)
+  Informs the delegate that a [`publish()`](../netservice/publish%28%29.md) or [`resolve(withTimeout:)`](../netservice/resolve%28withtimeout%29.md) request was stopped.
 
 
 ---

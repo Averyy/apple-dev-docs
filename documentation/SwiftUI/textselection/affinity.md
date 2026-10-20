@@ -1,7 +1,8 @@
 # affinity
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Return the selection affinity of the selection.
 

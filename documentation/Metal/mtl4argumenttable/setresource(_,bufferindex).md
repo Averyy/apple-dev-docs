@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Binds a resource to a buffer binding slot.
@@ -20,14 +21,18 @@ Binds a resource to a buffer binding slot.
 func setResource(_ resourceID: MTLResourceID, bufferIndex bindingIndex: Int)
 ```
 
+```objc
+- (void) setResource:(MTLResourceID) resourceID atBufferIndex:(NSUInteger) bindingIndex;
+```
+
 ## Mentions
 
-- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+- [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
 ## Parameters
 
-- `resourceID`: The [`MTLResourceID`](mtlresourceid.md) of the Metal resource to bind.
-- `bindingIndex`: A valid binding index in the buffer binding range. It is an error for this value to match or exceed the value of property [`maxBufferBindCount`](mtl4argumenttabledescriptor/maxbufferbindcount.md) on the descriptor from which you created this argument table.
+- `resourceID`: The [`MTLResourceID`](../mtlresourceid.md) of the Metal resource to bind.
+- `bindingIndex`: A valid binding index in the buffer binding range. It is an error for this value to match or exceed the value of property [`maxBufferBindCount`](../mtl4argumenttabledescriptor/maxbufferbindcount.md) on the descriptor from which you created this argument table.
 
 
 ---

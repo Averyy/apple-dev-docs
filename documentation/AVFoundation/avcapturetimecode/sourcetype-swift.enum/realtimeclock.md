@@ -1,7 +1,8 @@
 # AVCaptureTimecode.SourceType.realTimeClock
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Synchronizes timecode to the system clock for real-time applications. Useful for live events or scenarios requiring alignment with the actual time of day.
 
@@ -18,11 +19,16 @@ Synchronizes timecode to the system clock for real-time applications. Useful for
 case realTimeClock
 ```
 
+```c
+AVCaptureTimecodeSourceTypeRealTimeClock
+```
+
 ## See Also
 
-- [AVCaptureTimecode.SourceType.external](avcapturetimecode/sourcetype-swift.enum/external.md)
+### Source types
+- [AVCaptureTimecode.SourceType.external](./external.md)
   Synchronizes timecode to an external timecode data stream. Ideal for professional audio and video synchronization with external quarter-frame MIDI or HID timecode hardware.
-- [AVCaptureTimecode.SourceType.frameCount](avcapturetimecode/sourcetype-swift.enum/framecount.md)
+- [AVCaptureTimecode.SourceType.frameCount](./framecount.md)
   No internal or external source is adopted. Timecodes are zero-based, sequentially generated frame counts.
 
 

@@ -1,7 +1,8 @@
 # MTRUnitTestingClusterTestNullableOptionalResponseParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,31 +19,35 @@
 class MTRUnitTestingClusterTestNullableOptionalResponseParams
 ```
 
+```objc
+@interface MTRUnitTestingClusterTestNullableOptionalResponseParams : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(responseValue: [String : Any]) throws](mtrunittestingclustertestnullableoptionalresponseparams/init(responsevalue:).md)
+- [init(responseValue: [String : Any]) throws](./mtrunittestingclustertestnullableoptionalresponseparams/init%28responsevalue%29.md)
 ### Instance Properties
-- [var originalValue: NSNumber?](mtrunittestingclustertestnullableoptionalresponseparams/originalvalue.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrunittestingclustertestnullableoptionalresponseparams/timedinvoketimeoutms.md)
-- [var value: NSNumber?](mtrunittestingclustertestnullableoptionalresponseparams/value.md)
-- [var wasNull: NSNumber?](mtrunittestingclustertestnullableoptionalresponseparams/wasnull.md)
-- [var wasPresent: NSNumber](mtrunittestingclustertestnullableoptionalresponseparams/waspresent.md)
+- [var originalValue: NSNumber?](./mtrunittestingclustertestnullableoptionalresponseparams/originalvalue.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrunittestingclustertestnullableoptionalresponseparams/timedinvoketimeoutms.md)
+- [var value: NSNumber?](./mtrunittestingclustertestnullableoptionalresponseparams/value.md)
+- [var wasNull: NSNumber?](./mtrunittestingclustertestnullableoptionalresponseparams/wasnull.md)
+- [var wasPresent: NSNumber](./mtrunittestingclustertestnullableoptionalresponseparams/waspresent.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRTestClusterClusterTestNullableOptionalResponseParams](mtrtestclusterclustertestnullableoptionalresponseparams.md)
+- [MTRTestClusterClusterTestNullableOptionalResponseParams](./mtrtestclusterclustertestnullableoptionalresponseparams.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

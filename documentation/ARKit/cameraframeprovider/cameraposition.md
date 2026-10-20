@@ -1,7 +1,8 @@
 # CameraFrameProvider.CameraPosition
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe possible camera positions.
 
@@ -17,27 +18,28 @@ enum CameraPosition
 ## Topics
 
 ### Camera positions
-- [CameraFrameProvider.CameraPosition.left](cameraframeprovider/cameraposition/left.md)
+- [CameraFrameProvider.CameraPosition.left](./cameraposition/left.md)
   Left camera.
 ### Enumeration Cases
-- [CameraFrameProvider.CameraPosition.right](cameraframeprovider/cameraposition/right.md)
+- [CameraFrameProvider.CameraPosition.right](./cameraposition/right.md)
   Right camera.
 ### Instance Properties
-- [var description: String](cameraframeprovider/cameraposition/description.md)
+- [var description: String](./cameraposition/description.md)
   A textual representation of CameraFrameProvider.CameraPosition
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CameraFrameProvider.CameraType](cameraframeprovider/cameratype.md)
+### Enumerations
+- [CameraFrameProvider.CameraType](./cameratype.md)
   Values that describe possible camera types.
 
 

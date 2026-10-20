@@ -1,7 +1,8 @@
 # isDismissable
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
@@ -12,10 +13,15 @@
 var isDismissable: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isDismissable) BOOL dismissable;
+```
+
 ## See Also
 
-- [var primaryActionTitle: String](medecodedmessagebanner/primaryactiontitle.md)
-- [var title: String](medecodedmessagebanner/title.md)
+### Instance Properties
+- [var primaryActionTitle: String](./primaryactiontitle.md)
+- [var title: String](./title.md)
 
 
 ---

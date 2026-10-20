@@ -1,7 +1,8 @@
 # init(type:buffer:)
 
 **Framework**: GSS  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 5.0+
@@ -27,7 +28,8 @@ Initialize a new IOV buffer structure with the given configuration.
 
 ## See Also
 
-- [init()](gss_iov_buffer_desc_struct/init.md)
+### Initialization
+- [init()](./init%28%29.md)
   Initialize a new, empty IOV buffer structure.
 
 

@@ -1,7 +1,8 @@
 # zoneID
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the deleted record zone.
 
@@ -11,7 +12,7 @@ The identifier of the deleted record zone.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ var zoneID: CKRecordZone.ID { get }
 
 ## See Also
 
-- [var purged: Bool](ckdatabase/databasechange/deletion/purged.md)
+### Identifying the Deleted Record Zone
+- [var purged: Bool](./purged.md)
   A Boolean value that indicates whether the user deleted the record zone when managing their iCloud storage.
 
 

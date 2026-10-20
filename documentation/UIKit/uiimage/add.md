@@ -1,7 +1,8 @@
 # add
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard image for indicating the addition of content.
 
@@ -19,15 +20,20 @@ The standard image for indicating the addition of content.
 class var add: UIImage { get }
 ```
 
+```objc
+@property (class, strong, readonly) UIImage * addImage;
+```
+
 ## See Also
 
-- [class var remove: UIImage](uiimage/remove.md)
+### Getting standard system images
+- [class var remove: UIImage](./remove.md)
   The standard image for indicating the removal of content.
-- [class var actions: UIImage](uiimage/actions.md)
+- [class var actions: UIImage](./actions.md)
   The standard image for indicating user-initiated actions.
-- [class var checkmark: UIImage](uiimage/checkmark.md)
+- [class var checkmark: UIImage](./checkmark.md)
   The standard image for a checkmark on a filled-circle background.
-- [class var strokedCheckmark: UIImage](uiimage/strokedcheckmark.md)
+- [class var strokedCheckmark: UIImage](./strokedcheckmark.md)
   The standard image for a checkmark on a tinted circle with a white-stroked border.
 
 

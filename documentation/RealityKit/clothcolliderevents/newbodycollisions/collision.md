@@ -1,7 +1,8 @@
 # ClothColliderEvents.NewBodyCollisions.Collision
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collision with a cloth body.
 
@@ -19,23 +20,24 @@ struct Collision
 ## Topics
 
 ### Identifying the collider
-- [let bodyEntity: Entity](clothcolliderevents/newbodycollisions/collision/bodyentity.md)
+- [let bodyEntity: Entity](./collision/bodyentity.md)
   The entity of the body that collided with the collider.
-- [var bodyComponent: ClothBodyComponent?](clothcolliderevents/newbodycollisions/collision/bodycomponent.md)
-  The [`ClothBodyComponent`](clothbodycomponent.md) of the colliding body, if still present on the entity.
+- [var bodyComponent: ClothBodyComponent?](./collision/bodycomponent.md)
+  The [`ClothBodyComponent`](../../clothbodycomponent.md) of the colliding body, if still present on the entity.
 ### Accessing affected particles
-- [func withParticleIndices<Result>((Span<UInt32>) -> Result) -> Result](clothcolliderevents/newbodycollisions/collision/withparticleindices(_:).md)
+- [func withParticleIndices<Result>((Span<UInt32>) -> Result) -> Result](./collision/withparticleindices%28_%29.md)
   Provides access to the indices of particles that collided with the collider.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func withCollisions<Result>((Span<ClothColliderEvents.NewBodyCollisions.Collision>) -> Result) -> Result](clothcolliderevents/newbodycollisions/withcollisions(_:).md)
+### Accessing collision data
+- [func withCollisions<Result>((Span<ClothColliderEvents.NewBodyCollisions.Collision>) -> Result) -> Result](./withcollisions%28_%29.md)
   Provides access to the collisions with cloth bodies that took place.
 
 

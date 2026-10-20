@@ -1,7 +1,8 @@
 # SecTaskCreateWithAuditToken(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a task object for the task that sent the Mach message represented by the audit token.
 
@@ -15,9 +16,13 @@ Creates a task object for the task that sent the Mach message represented by the
 func SecTaskCreateWithAuditToken(_ allocator: CFAllocator?, _ token: audit_token_t) -> SecTask?
 ```
 
+```c
+SecTaskRefSecTaskCreateWithAuditToken(CFAllocatorRef allocator, audit_token_t token);
+```
+
 #### Return Value
 
-A new task, or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free this task’s memory when you are done with it.
+A new task, or `NULL` on error. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free this task’s memory when you are done with it.
 
 ## Parameters
 

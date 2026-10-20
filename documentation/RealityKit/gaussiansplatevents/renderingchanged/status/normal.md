@@ -1,7 +1,8 @@
 # GaussianSplatEvents.RenderingChanged.Status.normal
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework renders the splats at full quality.
 

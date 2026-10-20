@@ -1,7 +1,8 @@
 # allowsReverseTransformation()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the receiver can reverse a transformation.
 
@@ -20,19 +21,24 @@ Returns a Boolean value that indicates whether the receiver can reverse a transf
 class func allowsReverseTransformation() -> Bool
 ```
 
+```objc
++ (BOOL) allowsReverseTransformation;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver supports reverse value transformations, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver supports reverse value transformations, otherwise [`false`](../../Swift/false.md).
 
-The default is [`true`](https://developer.apple.com/documentation/swift/true).
+The default is [`true`](../../Swift/true.md).
 
 #### Discussion
 
-Subclasses should override this method to return [`false`](https://developer.apple.com/documentation/swift/false) if they do not support reverse value transformations.
+Subclasses should override this method to return [`false`](../../Swift/false.md) if they do not support reverse value transformations.
 
 ## See Also
 
-- [class func transformedValueClass() -> AnyClass](valuetransformer/transformedvalueclass.md)
+### Getting Information About a Transformer
+- [class func transformedValueClass() -> AnyClass](./transformedvalueclass%28%29.md)
   Returns the class of the value returned by the receiver for a forward transformation.
 
 

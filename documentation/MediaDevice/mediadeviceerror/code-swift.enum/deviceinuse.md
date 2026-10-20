@@ -1,7 +1,8 @@
 # MediaDeviceError.Code.deviceInUse
 
 **Framework**: Media Device  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Device is in use by another session.
 

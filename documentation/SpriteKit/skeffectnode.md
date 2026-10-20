@@ -1,18 +1,19 @@
 # SKEffectNode
 
 **Framework**: SpriteKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A node that renders its children into a separate buffer, optionally applying an effect, before drawing the final result.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,93 +21,98 @@ A node that renders its children into a separate buffer, optionally applying an 
 class SKEffectNode
 ```
 
+```objc
+@interface SKEffectNode : SKNode
+```
+
 ## Mentions
 
-- [About Node Drawing Order](about-node-drawing-order.md)
-- [Adding a Video to a Scene](adding-a-video-to-a-scene.md)
-- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
-- [Creating a New Node By Rendering To a Texture](creating-a-new-node-by-rendering-to-a-texture.md)
-- [Warping SpriteKit Content By Using an Effect Node](warping-spritekit-content-by-using-an-effect-node.md)
+- [About Node Drawing Order](./about-node-drawing-order.md)
+- [Adding a Video to a Scene](./adding-a-video-to-a-scene.md)
+- [Animate the Warping of a Sprite](./animate-the-warping-of-a-sprite.md)
+- [Creating a New Node By Rendering To a Texture](./creating-a-new-node-by-rendering-to-a-texture.md)
+- [Warping SpriteKit Content By Using an Effect Node](./warping-spritekit-content-by-using-an-effect-node.md)
 
 #### Overview
 
-An [`SKEffectNode`](skeffectnode.md) object renders its children into a buffer and optionally applies a Core Image filter to this rendered output. Because effect nodes conform to [`SKWarpable`](skwarpable.md), you can also use them to apply distortions to nodes that don’t implement the protocol, such as shape and video nodes. Use effect nodes to incorporate sophisticated special effects into a scene or to cache the contents of a static subtree for faster rendering performance.
+An [`SKEffectNode`](./skeffectnode.md) object renders its children into a buffer and optionally applies a Core Image filter to this rendered output. Because effect nodes conform to [`SKWarpable`](./skwarpable.md), you can also use them to apply distortions to nodes that don’t implement the protocol, such as shape and video nodes. Use effect nodes to incorporate sophisticated special effects into a scene or to cache the contents of a static subtree for faster rendering performance.
 
 Each time a new frame is rendered using the effect node, the effect node follows these steps:
 
 1. It draws its children into a private framebuffer.
-2. It applies a Core Image effect to the private framebuffer. This stage is optional; see the [`filter`](skeffectnode/filter.md) and [`shouldEnableEffects`](skeffectnode/shouldenableeffects.md) properties.
+2. It applies a Core Image effect to the private framebuffer. This stage is optional; see the [`filter`](./skeffectnode/filter.md) and [`shouldEnableEffects`](./skeffectnode/shouldenableeffects.md) properties.
 3. It blends the contents of its private framebuffer into its parent’s framebuffer, using one of the standard sprite blend modes.
-4. It discards its private framebuffer. This step is optional; see the [`shouldRasterize`](skeffectnode/shouldrasterize.md) property.
+4. It discards its private framebuffer. This step is optional; see the [`shouldRasterize`](./skeffectnode/shouldrasterize.md) property.
 
 ## Topics
 
 ### Applying Core Image Filters with an Effect Node
-- [Applying Special Effects to a Node’s Children](applying-special-effects-to-a-node-s-children.md)
+- [Applying Special Effects to a Node’s Children](./applying-special-effects-to-a-node-s-children.md)
   Apply the Core Image suite of filters to child nodes of an effect node.
-- [var filter: CIFilter?](skeffectnode/filter.md)
+- [var filter: CIFilter?](./skeffectnode/filter.md)
   The Core Image filter to apply.
-- [var shouldEnableEffects: Bool](skeffectnode/shouldenableeffects.md)
+- [var shouldEnableEffects: Bool](./skeffectnode/shouldenableeffects.md)
   A Boolean value that determines whether the effect node applies the filter to its children as they are drawn.
-- [var shouldCenterFilter: Bool](skeffectnode/shouldcenterfilter.md)
+- [var shouldCenterFilter: Bool](./skeffectnode/shouldcenterfilter.md)
   A Boolean value that determines whether the effect node automatically sets the filter’s image center.
 ### Warping Nodes with an Effect Node
-- [Warping SpriteKit Content By Using an Effect Node](warping-spritekit-content-by-using-an-effect-node.md)
+- [Warping SpriteKit Content By Using an Effect Node](./warping-spritekit-content-by-using-an-effect-node.md)
   Distort the child nodes of an effect node by applying a warping effect.
 ### Applying a Shader with an Effect Node
-- [var shader: SKShader?](skeffectnode/shader.md)
+- [var shader: SKShader?](./skeffectnode/shader.md)
   A custom shader that is called when the effect node is blended into the parent’s framebuffer.
-- [var attributeValues: [String : SKAttributeValue]](skeffectnode/attributevalues.md)
+- [var attributeValues: [String : SKAttributeValue]](./skeffectnode/attributevalues.md)
   The values of each attribute associated with the node’s attached shader.
-- [func setValue(SKAttributeValue, forAttribute: String)](skeffectnode/setvalue(_:forattribute:).md)
+- [func setValue(SKAttributeValue, forAttribute: String)](./skeffectnode/setvalue%28_,forattribute%29.md)
   Sets an attribute value for an attached shader.
-- [func value(forAttributeNamed: String) -> SKAttributeValue?](skeffectnode/value(forattributenamed:).md)
+- [func value(forAttributeNamed: String) -> SKAttributeValue?](./skeffectnode/value%28forattributenamed%29.md)
   Gets the value of a shader attribute.
 ### Flattening an Effect Node’s Child Tree for Performance Improvement
-- [Improving the Performance of Static Content](improving-the-performance-of-static-content.md)
+- [Improving the Performance of Static Content](./improving-the-performance-of-static-content.md)
   Flatten a portion of your node hierarchy to a single texture to improve performance.
-- [var shouldRasterize: Bool](skeffectnode/shouldrasterize.md)
+- [var shouldRasterize: Bool](./skeffectnode/shouldrasterize.md)
   A Boolean value that indicates whether the results of rendering the child nodes should be cached.
 ### Configuring Alpha Blending
-- [var blendMode: SKBlendMode](skeffectnode/blendmode.md)
+- [var blendMode: SKBlendMode](./skeffectnode/blendmode.md)
   The blend mode used to draw the node’s contents into its parent’s framebuffer.
 
 ## Relationships
 
 ### Inherits From
-- [SKNode](sknode.md)
+- [SKNode](./sknode.md)
 ### Inherited By
-- [SKScene](skscene.md)
+- [SKScene](./skscene.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [SKWarpable](skwarpable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UICoordinateSpace](../uikit/uicoordinatespace.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIFocusItem](../uikit/uifocusitem.md)
-- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [SKWarpable](./skwarpable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UICoordinateSpace](../UIKit/uicoordinatespace.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIFocusItem](../UIKit/uifocusitem.md)
+- [UIFocusItemContainer](../UIKit/uifocusitemcontainer.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [class SKCropNode](skcropnode.md)
+### Nodes that Modify Drawing
+- [class SKCropNode](./skcropnode.md)
   A node that masks pixels drawn by its children so that only some pixels are seen.
-- [class SKTransformNode](sktransformnode.md)
+- [class SKTransformNode](./sktransformnode.md)
   A node that allows its children to rotate in 3D.
 
 

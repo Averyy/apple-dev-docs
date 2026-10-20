@@ -1,7 +1,8 @@
 # HMCharacteristicValueLockPhysicalControlsState.locked
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The physical control is locked.
 
@@ -19,9 +20,14 @@ The physical control is locked.
 case locked
 ```
 
+```c
+HMCharacteristicValueLockPhysicalControlsStateLocked
+```
+
 ## See Also
 
-- [HMCharacteristicValueLockPhysicalControlsState.notLocked](hmcharacteristicvaluelockphysicalcontrolsstate/notlocked.md)
+### Lock Physical Control State
+- [HMCharacteristicValueLockPhysicalControlsState.notLocked](./notlocked.md)
   The physical control is unlocked.
 
 

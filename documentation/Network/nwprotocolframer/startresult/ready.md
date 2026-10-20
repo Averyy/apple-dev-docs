@@ -1,7 +1,8 @@
 # NWProtocolFramer.StartResult.ready
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The protocol is immediately ready to send and receive data.
 
@@ -22,8 +23,9 @@ case ready
 
 ## See Also
 
-- [NWProtocolFramer.StartResult.willMarkReady](nwprotocolframer/startresult/willmarkready.md)
-  The protocol will perform a handshake, preventing the overall connection from becoming ready until [`markReady()`](nwprotocolframer/instance/markready().md) is called.
+### Start Results
+- [NWProtocolFramer.StartResult.willMarkReady](./willmarkready.md)
+  The protocol will perform a handshake, preventing the overall connection from becoming ready until [`markReady()`](../instance/markready%28%29.md) is called.
 
 
 ---

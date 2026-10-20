@@ -1,7 +1,8 @@
 # previouslyElapsedDuration
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of time that elapsed before the most recent pause of the countdown.
 
@@ -22,9 +23,10 @@ If the countdown was never paused or resumed, the value is zero.
 
 ## See Also
 
-- [init(totalCountdownDuration: TimeInterval, previouslyElapsedDuration: TimeInterval)](alarmpresentationstate/mode-swift.enum/paused/init(totalcountdownduration:previouslyelapsedduration:).md)
+### Pausing an alarm
+- [init(totalCountdownDuration: TimeInterval, previouslyElapsedDuration: TimeInterval)](./init%28totalcountdownduration,previouslyelapsedduration%29.md)
   Creates an instance of a paused state.
-- [var totalCountdownDuration: TimeInterval](alarmpresentationstate/mode-swift.enum/paused/totalcountdownduration.md)
+- [var totalCountdownDuration: TimeInterval](./totalcountdownduration.md)
   The total duration of the countdown.
 
 

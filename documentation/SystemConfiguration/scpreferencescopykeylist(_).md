@@ -1,7 +1,8 @@
 # SCPreferencesCopyKeyList(_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the currently defined preference keys.
 
@@ -14,6 +15,10 @@ Returns the currently defined preference keys.
 func SCPreferencesCopyKeyList(_ prefs: SCPreferences) -> CFArray?
 ```
 
+```c
+CFArrayRefSCPreferencesCopyKeyList(SCPreferencesRef prefs);
+```
+
 #### Return Value
 
 An array of currently defined preference keys. You must release the returned value.
@@ -24,9 +29,10 @@ An array of currently defined preference keys. You must release the returned val
 
 ## See Also
 
-- [func SCPreferencesGetTypeID() -> CFTypeID](scpreferencesgettypeid().md)
+### Getting Information About a Preferences Session
+- [func SCPreferencesGetTypeID() -> CFTypeID](./scpreferencesgettypeid%28%29.md)
   Returns the type identifier of all `SCPreferences` instances.
-- [func SCPreferencesGetSignature(SCPreferences) -> CFData?](scpreferencesgetsignature(_:).md)
+- [func SCPreferencesGetSignature(SCPreferences) -> CFData?](./scpreferencesgetsignature%28_%29.md)
   Returns a value that can be used to determine if the saved configuration preferences have changed.
 
 

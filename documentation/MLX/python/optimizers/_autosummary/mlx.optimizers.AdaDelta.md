@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 
 # mlx.optimizers.AdaDelta
 
-**
-
-- [.rst](../../../_sources/python/optimizers/_autosummary/mlx.optimizers.AdaDelta.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.optimizers.AdaDelta
-
- Table of contents 
-
-## Contents
-
-# mlx.optimizers.AdaDelta
-
 **class AdaDelta(*learning_rate: float | Callable[[array], array]*, *rho: float = 0.9*, *eps: float = 1e-06*)**
 : The AdaDelta optimizer with a learning rate [1].
 Our AdaDelta implementation follows the original paper. In detail,
@@ -61,5 +34,3 @@ Performs the AdaDelta parameter update and stores \(v\) and \(u\) in the optimiz
 
 `init_single`(parameter, state)
 Initialize optimizer state
-
-** Contents

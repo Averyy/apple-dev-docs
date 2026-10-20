@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a metallic object from a custom material’s metallic property.
 
@@ -20,7 +21,7 @@ init(_ value: CustomMaterial.Metallic)
 
 #### Discussion
 
-In PBR rendering, the `metallic` property represents the reflectiveness of an entity. This initializer creates a new object from the [`metallic`](custommaterial/metallic-swift.property.md) property of a [`CustomMaterial`](custommaterial.md).
+In PBR rendering, the `metallic` property represents the reflectiveness of an entity. This initializer creates a new object from the [`metallic`](../../custommaterial/metallic-swift.property.md) property of a [`CustomMaterial`](../../custommaterial.md).
 
 ## Parameters
 
@@ -28,9 +29,10 @@ In PBR rendering, the `metallic` property represents the reflectiveness of an en
 
 ## See Also
 
-- [init(floatLiteral: Float)](physicallybasedmaterial/metallic-swift.struct/init(floatliteral:).md)
+### Creating a metallic object
+- [init(floatLiteral: Float)](./init%28floatliteral%29.md)
   Creates an object from single value.
-- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](physicallybasedmaterial/metallic-swift.struct/init(scale:texture:).md)
+- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](./init%28scale,texture%29.md)
   Creates an object from a color or texture.
 
 

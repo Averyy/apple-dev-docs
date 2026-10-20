@@ -1,7 +1,8 @@
 # CSSMERR_TP_NO_USER_INTERACTION
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSMERR_TP_NO_USER_INTERACTION: Int { get }
+```
+
+```c
+CSSMERR_TP_NO_USER_INTERACTION
 ```
 
 

@@ -1,6 +1,7 @@
 # Indexing argument buffers
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Assign resource indices within an argument buffer.
 
@@ -8,7 +9,7 @@ Assign resource indices within an argument buffer.
 
 You can index an argument buffer similarly to buffers, textures, and samplers. However, you index individual argument buffer resources with a generic `[[id(n)]]` attribute instead of the specific type `[[buffer(n)]]`, `[[texture(n)]]`, and `[[sampler(n)]]` attributes.
 
-> **Note**:  Because argument buffers are represented by [`MTLBuffer`](mtlbuffer.md) objects, they can be explicitly distinguished from regular buffers in the Metal shading language if they contain any resources indexed with the `[[id(n)]]` attribute. If any member of a Metal shading language structure has an `[[id(n)]]` attribute, the whole structure is treated as an argument buffer.
+> **Note**:  Because argument buffers are represented by [`MTLBuffer`](./mtlbuffer.md) objects, they can be explicitly distinguished from regular buffers in the Metal shading language if they contain any resources indexed with the `[[id(n)]]` attribute. If any member of a Metal shading language structure has an `[[id(n)]]` attribute, the whole structure is treated as an argument buffer.
 
 Manually assigned argument buffer resource indices don’t need to be contiguous, but they need to be unique and arranged in an increasing order. The following example shows manual and automatic index assignment:
 
@@ -23,7 +24,7 @@ struct My_Aggregate_AB {
 };
 ```
 
-##### Automatically Assigned Index Ids
+##### Automatically assigned index IDs
 
 If the `[[id(n)]]` attribute is omitted for any argument buffer resource, an index ID is automatically assigned according to preset rules:
 
@@ -79,23 +80,24 @@ fragment float4 my_fragment(
 
 ## See Also
 
-- [Improving CPU performance by using argument buffers](improving-cpu-performance-by-using-argument-buffers.md)
+### Argument buffers
+- [Improving CPU performance by using argument buffers](./improving-cpu-performance-by-using-argument-buffers.md)
   Optimize your app’s performance by grouping your resources into argument buffers.
-- [Managing groups of resources with argument buffers](managing-groups-of-resources-with-argument-buffers.md)
+- [Managing groups of resources with argument buffers](./managing-groups-of-resources-with-argument-buffers.md)
   Create argument buffers to organize related resources.
-- [Tracking the resource residency of argument buffers](tracking-the-resource-residency-of-argument-buffers.md)
+- [Tracking the resource residency of argument buffers](./tracking-the-resource-residency-of-argument-buffers.md)
   Optimize resource performance within an argument buffer.
-- [Rendering terrain dynamically with argument buffers](rendering-terrain-dynamically-with-argument-buffers.md)
+- [Rendering terrain dynamically with argument buffers](./rendering-terrain-dynamically-with-argument-buffers.md)
   Use argument buffers to render terrain in real time with a GPU-driven pipeline.
-- [Encoding argument buffers on the GPU](encoding-argument-buffers-on-the-gpu.md)
+- [Encoding argument buffers on the GPU](./encoding-argument-buffers-on-the-gpu.md)
   Use a compute pass to encode an argument buffer and access its arguments in a subsequent render pass.
-- [Using argument buffers with resource heaps](using-argument-buffers-with-resource-heaps.md)
+- [Using argument buffers with resource heaps](./using-argument-buffers-with-resource-heaps.md)
   Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
-- [class MTLArgumentDescriptor](mtlargumentdescriptor.md)
+- [class MTLArgumentDescriptor](./mtlargumentdescriptor.md)
   A representation of an argument within an argument buffer.
-- [protocol MTLArgumentEncoder](mtlargumentencoder.md)
+- [protocol MTLArgumentEncoder](./mtlargumentencoder.md)
   An interface you can use to encode argument data into an argument buffer.
-- [var MTLAttributeStrideStatic: Int](mtlattributestridestatic.md)
+- [var MTLAttributeStrideStatic: Int](./mtlattributestridestatic.md)
 
 
 ---

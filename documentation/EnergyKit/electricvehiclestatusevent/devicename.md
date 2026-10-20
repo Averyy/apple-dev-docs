@@ -1,14 +1,15 @@
 # deviceName
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human-readable name for the device.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,9 +19,10 @@ let deviceName: String
 
 ## See Also
 
-- [let deviceID: String](electricvehiclestatusevent/deviceid.md)
+### Identifying the device and venue
+- [let deviceID: String](./deviceid.md)
   A unique, stable identifier for the device.
-- [let venueID: UUID](electricvehiclestatusevent/venueid.md)
+- [let venueID: UUID](./venueid.md)
   An identifier for the venue in which the event occurs.
 
 

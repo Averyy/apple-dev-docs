@@ -1,7 +1,8 @@
 # DockAccessory.Observation.ObservationType.humanBody
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The frame contains a human body.
 

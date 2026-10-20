@@ -1,7 +1,8 @@
 # allowsJSHandleCreationInPageWorld
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether `window.webkit.createJSHandle` will be available in `WKContentWorld.page` The default value of this property is `false`.
 

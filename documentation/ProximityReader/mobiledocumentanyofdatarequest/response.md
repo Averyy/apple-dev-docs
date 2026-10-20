@@ -1,7 +1,8 @@
 # MobileDocumentAnyOfDataRequest.Response
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that contains the response information from a successful data request.
 
@@ -19,16 +20,16 @@ struct Response
 ## Topics
 
 ### Instance Properties
-- [var documentResponse: any MobileDocumentDataResponse](mobiledocumentanyofdatarequest/response/documentresponse.md)
+- [var documentResponse: any MobileDocumentDataResponse](./response/documentresponse.md)
   The document response from a successful request.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

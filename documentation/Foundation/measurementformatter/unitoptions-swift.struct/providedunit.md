@@ -1,7 +1,8 @@
 # providedUnit
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -18,14 +19,19 @@
 static var providedUnit: MeasurementFormatter.UnitOptions { get }
 ```
 
+```c
+NSMeasurementFormatterUnitOptionsProvidedUnit
+```
+
 #### Discussion
 
 Specifies that the provided unit for the measurement should be used.
 
 ## See Also
 
-- [static var naturalScale: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/naturalscale.md)
-- [static var temperatureWithoutUnit: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/temperaturewithoutunit.md)
+### Working with options
+- [static var naturalScale: MeasurementFormatter.UnitOptions](./naturalscale.md)
+- [static var temperatureWithoutUnit: MeasurementFormatter.UnitOptions](./temperaturewithoutunit.md)
 
 
 ---

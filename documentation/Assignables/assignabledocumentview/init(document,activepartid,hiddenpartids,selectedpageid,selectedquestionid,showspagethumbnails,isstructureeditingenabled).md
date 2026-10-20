@@ -1,7 +1,8 @@
 # init(document:activePartID:hiddenPartIDs:selectedPageID:selectedQuestionID:showsPageThumbnails:isStructureEditingEnabled:)
 
 **Framework**: Assignables  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Displays an `AssignableDocument`.
 
@@ -9,7 +10,7 @@ Displays an `AssignableDocument`.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ Displays an `AssignableDocument`.
 
 - Example:
 
-```None
+```
     AssignableDocumentView(
         document: $document,
         activePartID: activeLayerID,
@@ -41,7 +42,7 @@ Displays an `AssignableDocument`.
 
 ## Parameters
 
-- `document`: A binding to the [`AssignableDocumentView.Document`](assignabledocumentview/document.md) to present in the view.
+- `document`: A binding to the [`AssignableDocumentView.Document`](./document.md) to present in the view.
 - `activePartID`: The `PartID` to enable user interaction on.
 - `hiddenPartIDs`: A set of `PartID`s to hide on this view. Treated as a set.
 - `selectedPageID`: A binding to the selected page id.

@@ -1,7 +1,8 @@
 # isActive
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the picker is active.
 
@@ -17,6 +18,10 @@ A Boolean value that indicates if the picker is active.
 
 ```swift
 var isActive: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, getter=isActive) BOOL active;
 ```
 
 #### Discussion

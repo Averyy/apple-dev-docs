@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the decision.
 

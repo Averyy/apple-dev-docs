@@ -1,12 +1,13 @@
 # MLSupportVectorClassifier.ModelParameters
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Parameters that affect the process of training a model.
 
 **Availability**:
-- macOS 10.14+
+- macOS 10.14+ - Deprecated in 14.0
 
 ## Declaration
 
@@ -17,51 +18,52 @@ struct ModelParameters
 ## Topics
 
 ### Creating parameters
-- [init(validation: MLSupportVectorClassifier.ModelParameters.ValidationData, maxIterations: Int, penalty: Double, convergenceThreshold: Double, featureRescaling: Bool)](mlsupportvectorclassifier/modelparameters-swift.struct/init(validation:maxiterations:penalty:convergencethreshold:featurerescaling:).md)
+- [init(validation: MLSupportVectorClassifier.ModelParameters.ValidationData, maxIterations: Int, penalty: Double, convergenceThreshold: Double, featureRescaling: Bool)](./modelparameters-swift.struct/init%28validation,maxiterations,penalty,convergencethreshold,featurerescaling%29.md)
   Creates a new set of parameters.
-- [init(validationData: MLDataTable?, maxIterations: Int, penalty: Double, convergenceThreshold: Double, featureRescaling: Bool)](mlsupportvectorclassifier/modelparameters-swift.struct/init(validationdata:maxiterations:penalty:convergencethreshold:featurerescaling:).md)
+- [init(validationData: MLDataTable?, maxIterations: Int, penalty: Double, convergenceThreshold: Double, featureRescaling: Bool)](./modelparameters-swift.struct/init%28validationdata,maxiterations,penalty,convergencethreshold,featurerescaling%29.md)
   Creates a new set of parameters.
-- [MLSupportVectorClassifier.ModelParameters.ValidationData](mlsupportvectorclassifier/modelparameters-swift.struct/validationdata-swift.enum.md)
+- [MLSupportVectorClassifier.ModelParameters.ValidationData](./modelparameters-swift.struct/validationdata-swift.enum.md)
   Values for specifying validation data.
 ### Accessing parameters
-- [var convergenceThreshold: Double](mlsupportvectorclassifier/modelparameters-swift.struct/convergencethreshold.md)
-- [var featureRescaling: Bool](mlsupportvectorclassifier/modelparameters-swift.struct/featurerescaling.md)
-- [var maxIterations: Int](mlsupportvectorclassifier/modelparameters-swift.struct/maxiterations.md)
-- [var penalty: Double](mlsupportvectorclassifier/modelparameters-swift.struct/penalty.md)
-- [var validationData: MLDataTable?](mlsupportvectorclassifier/modelparameters-swift.struct/validationdata-swift.property.md)
+- [var convergenceThreshold: Double](./modelparameters-swift.struct/convergencethreshold.md)
+- [var featureRescaling: Bool](./modelparameters-swift.struct/featurerescaling.md)
+- [var maxIterations: Int](./modelparameters-swift.struct/maxiterations.md)
+- [var penalty: Double](./modelparameters-swift.struct/penalty.md)
+- [var validationData: MLDataTable?](./modelparameters-swift.struct/validationdata-swift.property.md)
   Validation data represented as a `MLDataTable`.
-- [var validation: MLSupportVectorClassifier.ModelParameters.ValidationData](mlsupportvectorclassifier/modelparameters-swift.struct/validation.md)
+- [var validation: MLSupportVectorClassifier.ModelParameters.ValidationData](./modelparameters-swift.struct/validation.md)
   Validation data.
 ### Describing parameters
-- [var description: String](mlsupportvectorclassifier/modelparameters-swift.struct/description.md)
+- [var description: String](./modelparameters-swift.struct/description.md)
   A text representation of the model parameters for a support vector classifier.
-- [var debugDescription: String](mlsupportvectorclassifier/modelparameters-swift.struct/debugdescription.md)
+- [var debugDescription: String](./modelparameters-swift.struct/debugdescription.md)
   A text representation of the model parameters for a support vector classifier that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlsupportvectorclassifier/modelparameters-swift.struct/playgrounddescription.md)
+- [var playgroundDescription: Any](./modelparameters-swift.struct/playgrounddescription.md)
   A description of the model parameters for a support vector classifier shown in a playground.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlsupportvectorclassifier/modelparameters-swift.struct/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlsupportvectorclassifier/modelparameters-swift.struct/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlsupportvectorclassifier/modelparameters-swift.struct/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./modelparameters-swift.struct/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./modelparameters-swift.struct/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./modelparameters-swift.struct/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
 
 ## See Also
 
-- [init(trainingData:targetColumn:featureColumns:parameters:)](mlsupportvectorclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:).md)
+### Creating and training a support vector classifier
+- [init(trainingData:targetColumn:featureColumns:parameters:)](./init%28trainingdata,targetcolumn,featurecolumns,parameters%29.md)
   Creates a support vector classifier.
-- [let modelParameters: MLSupportVectorClassifier.ModelParameters](mlsupportvectorclassifier/modelparameters-swift.property.md)
+- [let modelParameters: MLSupportVectorClassifier.ModelParameters](./modelparameters-swift.property.md)
   The underlying parameters used when training the model.
-- [var targetColumn: String](mlsupportvectorclassifier/targetcolumn.md)
+- [var targetColumn: String](./targetcolumn.md)
   The name of the column you selected at initialization to define which categories the classifier predicts.
-- [var featureColumns: [String]](mlsupportvectorclassifier/featurecolumns.md)
+- [var featureColumns: [String]](./featurecolumns.md)
   The names of the columns you selected at initialization to train the classifier.
 
 

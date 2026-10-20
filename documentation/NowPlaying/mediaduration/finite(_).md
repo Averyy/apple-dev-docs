@@ -1,7 +1,8 @@
 # MediaDuration.finite(_:)
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Content with a known duration.
 

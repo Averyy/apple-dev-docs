@@ -1,7 +1,8 @@
 # TKTLVTag
 
 **Framework**: CryptoTokenKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type used to identify TLV format tags.
 
@@ -20,15 +21,20 @@ The type used to identify TLV format tags.
 typealias TKTLVTag = UInt64
 ```
 
+```c
+typedef UInt64 TKTLVTag;
+```
+
 #### Discussion
 
 Although some encodings tags do not have any size restrictions, the CryptoTokenKit framework supports tag lengths only up to 64-bits.
 
 ## See Also
 
-- [init(tag: TKTLVTag, value: Data)](tkbertlvrecord/init(tag:value:).md)
+### Creating TLV Records
+- [init(tag: TKTLVTag, value: Data)](./tkbertlvrecord/init%28tag,value%29.md)
   Initializes a BER-TLV record with the specified tag and value.
-- [init(tag: TKTLVTag, records: [TKTLVRecord])](tkbertlvrecord/init(tag:records:).md)
+- [init(tag: TKTLVTag, records: [TKTLVRecord])](./tkbertlvrecord/init%28tag,records%29.md)
   Initializes a BER-TLV record with the specified tag and an array of TLV subrecords.
 
 

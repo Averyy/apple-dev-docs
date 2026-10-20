@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Readonly property  containing the session configuration set in the construction.
 
@@ -19,7 +20,8 @@ var configuration: PhotogrammetrySession.Configuration { get }
 
 ## See Also
 
-- [PhotogrammetrySession.Configuration](photogrammetrysession/configuration-swift.struct.md)
+### Configuring the session
+- [PhotogrammetrySession.Configuration](./configuration-swift.struct.md)
   The configuration parameters for a photogrammetry session.
 
 

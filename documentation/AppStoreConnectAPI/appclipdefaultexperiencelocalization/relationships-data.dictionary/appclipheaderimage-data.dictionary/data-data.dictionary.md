@@ -1,7 +1,8 @@
 # AppClipDefaultExperienceLocalization.Relationships.AppClipHeaderImage.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related App Clip Header Images resource.
 
@@ -10,7 +11,7 @@ The type and ID of a related App Clip Header Images resource.
 
 ## Declaration
 
-```swift
+```
 object AppClipDefaultExperienceLocalization.Relationships.AppClipHeaderImage.Data
 ```
 
@@ -18,6 +19,8 @@ object AppClipDefaultExperienceLocalization.Relationships.AppClipHeaderImage.Dat
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related App Clip Header Images resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `appClipHeaderImages`
 
 
 ---

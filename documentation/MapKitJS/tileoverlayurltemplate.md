@@ -1,7 +1,8 @@
 # TileOverlayUrlTemplate
 
 **Framework**: MapKit JS  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A type that specifies the URL template for a tile overlay.
 
@@ -10,7 +11,7 @@ A type that specifies the URL template for a tile overlay.
 
 ## Declaration
 
-```swift
+```
 type TileOverlayUrlTemplate =
     | string
     | ((
@@ -28,27 +29,28 @@ You may set the URL template as either a template string or a function.
 
 The template string must be in the format: `https://myserver/tile?x={x}&y={y}&z={z}&scale={scale}`. MapKit JS replaces the `x`, `y`, `z`, and `scale` values depending on the displayed map region and screen resolution, then loads an image from that URL. You can also add custom values to the template string. For example, a template string could look like: `https://{subdomain}.customtileserver.com/{z}/{x}/{y}?lang={lang}`. In this case, you must define `TileOverlay.data.subdomain` and `TileOverlay.data.lang` for the placeholders to populate. Also, note that not all parameters are necessary in a template string. The `scale` parameter is absent in this example.
 
-You can provide a callback function instead of the template string. When MapKit JS needs to request new tiles, it invokes the [`imageForTile`](tileoverlay/imagefortile.md) callback with the parameters `x`, `y`, `z`, `scale`, and `data`. The callback function must return a URL for the provided parameters. Return `null` if there is no tile for the requested coordinates.
+You can provide a callback function instead of the template string. When MapKit JS needs to request new tiles, it invokes the [`imageForTile`](./tileoverlay/imagefortile.md) callback with the parameters `x`, `y`, `z`, `scale`, and `data`. The callback function must return a URL for the provided parameters. Return `null` if there is no tile for the requested coordinates.
 
-To provide tile images directly instead of URLs, use a [`TileOverlayImageCallback`](tileoverlayimagecallback.md).
+To provide tile images directly instead of URLs, use a [`TileOverlayImageCallback`](./tileoverlayimagecallback.md).
 
 ## See Also
 
-- [Adding interactivity to overlays](adding-interactivity-to-overlays.md)
+### Overlays
+- [Adding interactivity to overlays](./adding-interactivity-to-overlays.md)
   Configure and respond to overlays to make them interactive.
-- [class Overlay](overlay.md)
+- [class Overlay](./overlay.md)
   An abstract base object that defines the methods and properties for map overlays.
-- [class Style](style.md)
+- [class Style](./style.md)
   A set of observable style properties for overlays, including the color and opacity of strokes and fills, and line styles.
-- [class CircleOverlay](circleoverlay.md)
+- [class CircleOverlay](./circleoverlay.md)
   A circular overlay with a configurable radius that centers on a specific geographic coordinate.
-- [class PolylineOverlay](polylineoverlay.md)
+- [class PolylineOverlay](./polylineoverlay.md)
   An overlay of connected line segments that don’t form a closed shape.
-- [class PolygonOverlay](polygonoverlay.md)
+- [class PolygonOverlay](./polygonoverlay.md)
   An overlay consisting of one or more points that forms a closed shape.
-- [interface OverlayOptions](overlayoptions.md)
+- [interface OverlayOptions](./overlayoptions.md)
   A dictionary of options that determines an overlay’s data, and indicates whether it’s visible, in an enabled state, and in a selected state.
-- [class TileOverlay](tileoverlay.md)
+- [class TileOverlay](./tileoverlay.md)
   An overlay that covers an area of the map with bitmapped tiles.
 
 

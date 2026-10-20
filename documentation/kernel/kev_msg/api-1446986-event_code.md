@@ -1,7 +1,8 @@
 # event_code
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The event's code.
 
@@ -10,7 +11,7 @@ The event's code.
 
 ## Declaration
 
-```swift
+```c
 u_int32_t event_code;
 ```
 

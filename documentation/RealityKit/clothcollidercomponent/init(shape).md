@@ -1,7 +1,8 @@
 # init(shape:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a cloth collider component with the given shape.
 
@@ -22,9 +23,10 @@ init(shape: ClothColliderShape)
 
 ## See Also
 
-- [init(mesh: ClothMeshResource, bias: Float)](clothcollidercomponent/init(mesh:bias:).md)
+### Creating a cloth collider
+- [init(mesh: ClothMeshResource, bias: Float)](./init%28mesh,bias%29.md)
   Creates a cloth collider component with a mesh shape built from the given mesh resource.
-- [init(meshShape: ClothMeshShape)](clothcollidercomponent/init(meshshape:).md)
+- [init(meshShape: ClothMeshShape)](./init%28meshshape%29.md)
   Creates a cloth collider component with the given mesh shape.
 
 

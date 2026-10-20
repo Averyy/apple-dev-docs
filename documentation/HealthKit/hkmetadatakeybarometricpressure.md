@@ -1,7 +1,8 @@
 # HKMetadataKeyBarometricPressure
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The metadata key for the barometric pressure associated with a sample.
 
@@ -19,17 +20,22 @@ The metadata key for the barometric pressure associated with a sample.
 let HKMetadataKeyBarometricPressure: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyBarometricPressure;
+```
+
 #### Discussion
 
-This key takes an [`HKQuantity`](hkquantity.md) value that measures the barometric pressure in units of pressure, such as [`atmosphere()`](hkunit/atmosphere().md), [`pascal()`](hkunit/pascal().md), or [`millimeterOfMercury()`](hkunit/millimeterofmercury().md).
+This key takes an [`HKQuantity`](./hkquantity.md) value that measures the barometric pressure in units of pressure, such as [`atmosphere()`](./hkunit/atmosphere%28%29.md), [`pascal()`](./hkunit/pascal%28%29.md), or [`millimeterOfMercury()`](./hkunit/millimeterofmercury%28%29.md).
 
 ## See Also
 
-- [let HKMetadataKeyWeatherCondition: String](hkmetadatakeyweathercondition.md)
+### Weather Keys
+- [let HKMetadataKeyWeatherCondition: String](./hkmetadatakeyweathercondition.md)
   A key that represents the weather condition during the sample.
-- [let HKMetadataKeyWeatherHumidity: String](hkmetadatakeyweatherhumidity.md)
+- [let HKMetadataKeyWeatherHumidity: String](./hkmetadatakeyweatherhumidity.md)
   A key that represents the weather humidity during the sample.
-- [let HKMetadataKeyWeatherTemperature: String](hkmetadatakeyweathertemperature.md)
+- [let HKMetadataKeyWeatherTemperature: String](./hkmetadatakeyweathertemperature.md)
   A key that represents the weather temperature during the sample.
 
 

@@ -1,17 +1,19 @@
 # ImageCaptureCore Enumerations
 
-**Framework**: ImageCaptureCore
+**Framework**: ImageCaptureCore  
+**Role**: API Collection
 
 ## Topics
 
 ### Enumerations
-- [enum ICMediaPresentation](icmediapresentation.md)
+- [enum ICMediaPresentation](./icmediapresentation.md)
 
 ## See Also
 
-- [ImageCaptureCore Constants](imagecapturecore-constants.md)
-- [ImageCaptureCore Data Types](imagecapturecore-data-types.md)
-- [ImageCaptureCore Macros](imagecapturecore-macros.md)
+### Articles
+- [ImageCaptureCore Constants](./imagecapturecore-constants.md)
+- [ImageCaptureCore Data Types](./imagecapturecore-data-types.md)
+- [ImageCaptureCore Macros](./imagecapturecore-macros.md)
 
 
 ---

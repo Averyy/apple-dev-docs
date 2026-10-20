@@ -1,7 +1,8 @@
 # playbackState
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current playback state of the app.
 
@@ -20,13 +21,18 @@ The current playback state of the app.
 var playbackState: MPNowPlayingPlaybackState { get set }
 ```
 
+```objc
+@property (nonatomic) MPNowPlayingPlaybackState playbackState;
+```
+
 #### Discussion
 
 This property only applies to macOS. You must set this property every time the app begins or halts playback, otherwise remote control functionality may not work as expected.
 
 ## See Also
 
-- [enum MPNowPlayingPlaybackState](mpnowplayingplaybackstate.md)
+### Setting the playback state in macOS
+- [enum MPNowPlayingPlaybackState](../mpnowplayingplaybackstate.md)
   The playback state of the app.
 
 

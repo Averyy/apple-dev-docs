@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance by decoding from the given decoder.
 
@@ -20,6 +21,8 @@ Creates a new instance by decoding from the given decoder.
 init(from decoder: any Decoder) throws
 ```
 
+Available when `Bound` conforms to `Comparable` and `Decodable`.
+
 #### Discussion
 
 This initializer throws an error if reading from the decoder fails, or if the data read is corrupted or otherwise invalid.
@@ -30,7 +33,8 @@ This initializer throws an error if reading from the decoder fails, or if the da
 
 ## See Also
 
-- [func encode(to: any Encoder) throws](closedrange/encode(to:).md)
+### Encoding and Decoding a Range
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Encodes this value into the given encoder.
 
 

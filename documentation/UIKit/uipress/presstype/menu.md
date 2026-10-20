@@ -1,7 +1,8 @@
 # UIPress.PressType.menu
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that represents the menu button.
 
@@ -18,11 +19,16 @@ A constant that represents the menu button.
 case menu
 ```
 
+```c
+UIPressTypeMenu
+```
+
 ## See Also
 
-- [UIPress.PressType.playPause](uipress/presstype/playpause.md)
+### Actions
+- [UIPress.PressType.playPause](./playpause.md)
   A constant that represents the play/pause button.
-- [UIPress.PressType.select](uipress/presstype/select.md)
+- [UIPress.PressType.select](./select.md)
   A constant that represents the select button.
 
 

@@ -1,7 +1,8 @@
 # ComposedTransformer.Input
 
 **Framework**: Create ML Components  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The input type.
 
@@ -22,11 +23,12 @@ typealias Input = Inner.Input
 
 ## See Also
 
-- [func applied(to: ComposedTransformer<Inner, Outer>.Input, eventHandler: EventHandler?) async throws -> ComposedTransformer<Inner, Outer>.Output](composedtransformer/applied(to:eventhandler:).md)
+### Performing the transformation
+- [func applied(to: ComposedTransformer<Inner, Outer>.Input, eventHandler: EventHandler?) async throws -> ComposedTransformer<Inner, Outer>.Output](./applied%28to,eventhandler%29.md)
   Performs the composed transformation on a single input.
-- [ComposedTransformer.Intermediate](composedtransformer/intermediate.md)
+- [ComposedTransformer.Intermediate](./intermediate.md)
   The intermediate type.
-- [ComposedTransformer.Output](composedtransformer/output.md)
+- [ComposedTransformer.Output](./output.md)
   The output type.
 
 

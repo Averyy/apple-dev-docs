@@ -1,7 +1,8 @@
 # addScaleOp(_:inverse:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func addScaleOp(_ animatedValueName: String, inverse: Bool) -> MDLTransformScaleOp
+```
+
+```objc
+- (MDLTransformScaleOp *) addScaleOp:(NSString *) animatedValueName inverse:(bool) inverse;
 ```
 
 

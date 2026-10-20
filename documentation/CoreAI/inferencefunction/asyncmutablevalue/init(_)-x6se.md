@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize the state from an existing ndArray.
 
@@ -28,11 +29,12 @@ init(_ ndArray: consuming NDArray)
 
 ## See Also
 
-- [init(consuming CVMutablePixelBuffer)](inferencefunction/asyncmutablevalue/init(_:)-4aqgq.md)
+### Creating an async mutable value
+- [init(consuming CVMutablePixelBuffer)](./init%28_%29-4aqgq.md)
   Initialize the state from an existing pixel buffer.
-- [init(descriptor: consuming InferenceValue.Descriptor)](inferencefunction/asyncmutablevalue/init(descriptor:).md)
+- [init(descriptor: consuming InferenceValue.Descriptor)](./init%28descriptor%29.md)
   Initialize a new state by creating a value matching the provided descriptor.
-- [init(unsafeBuffer: consuming any MTLBuffer, byteOffset: Int, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int], interleaveLayout: NDArray.InterleaveLayout?)](inferencefunction/asyncmutablevalue/init(unsafebuffer:byteoffset:scalartype:shape:strides:interleavelayout:).md)
+- [init(unsafeBuffer: consuming any MTLBuffer, byteOffset: Int, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int], interleaveLayout: NDArray.InterleaveLayout?)](./init%28unsafebuffer,byteoffset,scalartype,shape,strides,interleavelayout%29.md)
   Creates an async ndArray value that directly references the provided metal buffer, interpreted as the specified scalar type and shape.
 
 

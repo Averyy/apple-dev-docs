@@ -1,7 +1,8 @@
 # isFinal
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether this context represents the final message being sent or received.
 
@@ -22,7 +23,8 @@ final let isFinal: Bool
 
 ## See Also
 
-- [func protocolMetadata(definition: NWProtocolDefinition) -> NWProtocolMetadata?](nwconnection/contentcontext/protocolmetadata(definition:).md)
+### Inspecting Receive Contexts
+- [func protocolMetadata(definition: NWProtocolDefinition) -> NWProtocolMetadata?](./protocolmetadata%28definition%29.md)
   Retreives the metadata associated with a specific protocol.
 
 

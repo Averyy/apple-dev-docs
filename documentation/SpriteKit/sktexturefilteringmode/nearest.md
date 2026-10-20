@@ -1,7 +1,8 @@
 # SKTextureFilteringMode.nearest
 
 **Framework**: SpriteKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Each pixel is drawn using the nearest point in the texture. This mode is faster, but the results are often pixelated.
 
@@ -10,7 +11,7 @@ Each pixel is drawn using the nearest point in the texture. This mode is faster,
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.9+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,14 @@ Each pixel is drawn using the nearest point in the texture. This mode is faster,
 case nearest
 ```
 
+```c
+SKTextureFilteringNearest
+```
+
 ## See Also
 
-- [SKTextureFilteringMode.linear](sktexturefilteringmode/linear.md)
+### Constants
+- [SKTextureFilteringMode.linear](./linear.md)
   Each pixel is drawn by using a linear filter of multiple texels in the texture. This mode produces higher quality results but may be slower.
 
 

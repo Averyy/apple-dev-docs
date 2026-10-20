@@ -1,7 +1,8 @@
 # expandingShape(at:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a shape-expanded tensor with a dimension of 1 inserted at the specified shape indices.
 
@@ -20,6 +21,12 @@ Returns a shape-expanded tensor with a dimension of 1 inserted at the specified 
 func expandingShape(at axes: Int...) -> MLTensor
 ```
 
+**Other overloads**:
+
+```swift
+func expandingShape(at axes: [Int]) -> MLTensor
+```
+
 #### Discussion
 
 For example:
@@ -36,13 +43,14 @@ y.shape // is [1, 2]
 
 ## See Also
 
-- [func bandPart(lowerBandCount: Int, upperBandCount: Int) -> MLTensor](mltensor/bandpart(lowerbandcount:upperbandcount:).md)
+### Accessing the extended tensor, sign and reciprocal
+- [func bandPart(lowerBandCount: Int, upperBandCount: Int) -> MLTensor](./bandpart%28lowerbandcount,upperbandcount%29.md)
   Returns a new tensor with the same shape where everything outside a central band in each innermost matrix is set to zero.
-- [func tiled(multiples: [Int]) -> MLTensor](mltensor/tiled(multiples:).md)
+- [func tiled(multiples: [Int]) -> MLTensor](./tiled%28multiples%29.md)
   Returns a tensor by replicating its elements multiple times.
-- [func sign() -> MLTensor](mltensor/sign.md)
+- [func sign() -> MLTensor](./sign%28%29.md)
   Returns the sign of the tensor’s elements.
-- [func reciprocal() -> MLTensor](mltensor/reciprocal.md)
+- [func reciprocal() -> MLTensor](./reciprocal%28%29.md)
   Computes the reciprocal of the tensor’s elements.
 
 

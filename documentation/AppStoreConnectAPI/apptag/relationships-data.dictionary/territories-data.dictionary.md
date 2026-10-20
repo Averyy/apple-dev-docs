@@ -1,7 +1,8 @@
 # AppTag.Relationships.Territories
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object AppTag.Relationships.Territories
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppTag.Relationships.Territories.Data](apptag/relationships-data.dictionary/territories-data.dictionary/data-data.dictionary.md)
+- [object AppTag.Relationships.Territories.Data](./territories-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

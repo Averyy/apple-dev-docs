@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that contains a description of the error.
 
@@ -19,7 +20,7 @@ var localizedDescription: String? { get }
 
 #### Discussion
 
-For more information, see [`localizedDescription`](https://developer.apple.com/documentation/foundation/nserror/localizeddescription).
+For more information, see [`localizedDescription`](../../../Foundation/nserror/localizeddescription.md).
 
 
 ---

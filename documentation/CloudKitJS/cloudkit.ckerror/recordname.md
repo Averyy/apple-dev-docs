@@ -1,7 +1,8 @@
 # recordName
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the record that the operation failed on.
 
@@ -10,7 +11,7 @@ The name of the record that the operation failed on.
 
 ## Declaration
 
-```swift
+```
 readonly attribute String recordName;
 ```
 
@@ -20,9 +21,10 @@ This property value is `Undefined` if the error is unrelated to a record operati
 
 ## See Also
 
-- [subscriptionID](cloudkit.ckerror/subscriptionid.md)
+### Identifying the Operation
+- [subscriptionID](./subscriptionid.md)
   A string that is a unique identifier for the subscription where the error occurred.
-- [zoneID](cloudkit.ckerror/zoneid.md)
+- [zoneID](./zoneid.md)
   The record zone in the database where the error occurred.
 
 

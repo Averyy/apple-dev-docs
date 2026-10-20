@@ -1,7 +1,8 @@
 # UIView.Invalidations
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Changes that cause an aspect of a view to be invalid and require an update.
 
@@ -10,7 +11,7 @@ Changes that cause an aspect of a view to be invalid and require an update.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - Swift 5.1+
 
 ## Declaration
@@ -22,24 +23,25 @@ enum Invalidations
 ## Topics
 
 ### Invalidation types
-- [UIView.Invalidations.Configuration](uiview/invalidations/configuration.md)
+- [UIView.Invalidations.Configuration](./invalidations/configuration.md)
   A change that invalidates a view’s configuration.
-- [UIView.Invalidations.Constraints](uiview/invalidations/constraints.md)
+- [UIView.Invalidations.Constraints](./invalidations/constraints.md)
   A change that invalidates a view’s constraints.
-- [UIView.Invalidations.Display](uiview/invalidations/display.md)
+- [UIView.Invalidations.Display](./invalidations/display.md)
   A change that requires the system to redraw a view’s content.
-- [UIView.Invalidations.IntrinsicContentSize](uiview/invalidations/intrinsiccontentsize.md)
+- [UIView.Invalidations.IntrinsicContentSize](./invalidations/intrinsiccontentsize.md)
   A change that invalidates a view’s intrinsic size.
-- [UIView.Invalidations.Layout](uiview/invalidations/layout.md)
+- [UIView.Invalidations.Layout](./invalidations/layout.md)
   A change that invalidates the layout of the containing view’s subviews.
-- [UIView.Invalidations.Tuple](uiview/invalidations/tuple.md)
+- [UIView.Invalidations.Tuple](./invalidations/tuple.md)
   A change that invalidates a combination of factors covered by the other invalidation types.
 ### Structures
-- [UIView.Invalidations.Properties](uiview/invalidations/properties.md)
+- [UIView.Invalidations.Properties](./invalidations/properties.md)
 
 ## See Also
 
-- [func invalidate(view: UIView)](uiviewinvalidating/invalidate(view:).md)
+### Invalidating the view
+- [func invalidate(view: UIView)](../uiviewinvalidating/invalidate%28view%29.md)
   Indicates to the system that an aspect of a view is invalid and triggers the necessary update.
 
 

@@ -1,7 +1,8 @@
 # init(center:radius:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a circle object using the specified coordinate and radius.
 
@@ -20,6 +21,10 @@ Creates and returns a circle object using the specified coordinate and radius.
 convenience init(center coord: CLLocationCoordinate2D, radius: CLLocationDistance)
 ```
 
+```objc
++ (instancetype) circleWithCenterCoordinate:(CLLocationCoordinate2D) coord radius:(CLLocationDistance) radius;
+```
+
 #### Return Value
 
 A circle overlay object.
@@ -31,8 +36,10 @@ A circle overlay object.
 
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
-- [convenience init(mapRect: MKMapRect)](mkcircle/init(maprect:).md)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Creating a circle overlay
+- [convenience init(mapRect: MKMapRect)](./init%28maprect%29.md)
   Creates and returns a circle object that derives the circular area from the specified rectangle.
 
 

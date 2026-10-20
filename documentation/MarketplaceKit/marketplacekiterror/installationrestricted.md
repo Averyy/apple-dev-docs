@@ -1,7 +1,8 @@
 # MarketplaceKitError.installationRestricted
 
 **Framework**: MarketplaceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that app installation is restricted on this device.
 
@@ -17,13 +18,14 @@ case installationRestricted
 
 ## See Also
 
-- [MarketplaceKitError.appNotInstalled](marketplacekiterror/appnotinstalled.md)
+### Installation and permission errors
+- [MarketplaceKitError.appNotInstalled](./appnotinstalled.md)
   An error that indicates that a requested operation requires that the app first exists on the device.
-- [MarketplaceKitError.installationOfMarketplaceDenied](marketplacekiterror/installationofmarketplacedenied.md)
+- [MarketplaceKitError.installationOfMarketplaceDenied](./installationofmarketplacedenied.md)
   An error that indicates that the device disallows the installation of marketplaces.
-- [MarketplaceKitError.mismatchedInstallType](marketplacekiterror/mismatchedinstalltype.md)
+- [MarketplaceKitError.mismatchedInstallType](./mismatchedinstalltype.md)
   An error that indicates the provided install type (install, update, restore) doesn’t match the install that results.
-- [MarketplaceKitError.missingInstallVerificationToken](marketplacekiterror/missinginstallverificationtoken.md)
+- [MarketplaceKitError.missingInstallVerificationToken](./missinginstallverificationtoken.md)
   An error that indicates the required install verification token is missing.
 
 

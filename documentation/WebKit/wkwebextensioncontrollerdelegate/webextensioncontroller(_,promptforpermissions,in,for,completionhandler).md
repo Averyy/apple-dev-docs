@@ -1,7 +1,8 @@
 # webExtensionController(_:promptForPermissions:in:for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when an extension context requests permissions.
 
@@ -15,7 +16,15 @@ Called when an extension context requests permissions.
 ## Declaration
 
 ```swift
+optional func webExtensionController(_ controller: WKWebExtensionController, promptForPermissions permissions: Set<WKWebExtension.Permission>, in tab: (any WKWebExtensionTab)?, for extensionContext: WKWebExtensionContext, completionHandler: @escaping (Set<WKWebExtension.Permission>, Date?) -> Void)
+```
+
+```swift
 optional func webExtensionController(_ controller: WKWebExtensionController, promptForPermissions permissions: Set<WKWebExtension.Permission>, in tab: (any WKWebExtensionTab)?, for extensionContext: WKWebExtensionContext) async -> (Set<WKWebExtension.Permission>, Date?)
+```
+
+```objc
+- (void) webExtensionController:(WKWebExtensionController *) controller promptForPermissions:(NSSet<NSString *> *) permissions inTab:(id<WKWebExtensionTab>) tab forExtensionContext:(WKWebExtensionContext *) extensionContext completionHandler:(void (^)(NSSet<NSString *> *allowedPermissions, NSDate *expirationDate)) completionHandler;
 ```
 
 #### Discussion

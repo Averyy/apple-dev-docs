@@ -1,7 +1,8 @@
 # domain
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The StateReporting domain this state belongs to
 
@@ -19,9 +20,10 @@ let domain: String
 
 ## See Also
 
-- [let label: String](metricmanager/reportedstate/label.md)
+### State details
+- [let label: String](./label.md)
   The state label
-- [let duration: Measurement<UnitDuration>](metricmanager/reportedstate/duration.md)
+- [let duration: Measurement<UnitDuration>](./duration.md)
   The duration when the state was active during performance data collection.
 
 

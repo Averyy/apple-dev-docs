@@ -1,7 +1,8 @@
 # clearTargetPaths()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears all authored target paths on this relationship.
 

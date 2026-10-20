@@ -1,7 +1,8 @@
 # providerFileTypeIdentifiers
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of type identifiers that correspond to file types your delegate object can provide.
 
@@ -18,17 +19,22 @@ An array of type identifiers that correspond to file types your delegate object 
 var providerFileTypeIdentifiers: [String]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NSString *> * providerFileTypeIdentifiers;
+```
+
 #### Discussion
 
-Use this property to specify the file types that your app or Core Spotlight delegate app extension can provide to satisfy a drag-and-drop request involving a searchable item. When a drag-and-drop action occurs, the app receiving the data selects the type it wants from the identifiers you provide. For types in this property, the system calls the [`fileURL(for:itemIdentifier:typeIdentifier:inPlace:)`](cssearchableindexdelegate/fileurl(for:itemidentifier:typeidentifier:inplace:).md) method of your delegate object, which you use to deliver a copy of the requested file.
+Use this property to specify the file types that your app or Core Spotlight delegate app extension can provide to satisfy a drag-and-drop request involving a searchable item. When a drag-and-drop action occurs, the app receiving the data selects the type it wants from the identifiers you provide. For types in this property, the system calls the [`fileURL(for:itemIdentifier:typeIdentifier:inPlace:)`](../cssearchableindexdelegate/fileurl%28for,itemidentifier,typeidentifier,inplace%29.md) method of your delegate object, which you use to deliver a copy of the requested file.
 
 Arrange the types in this property in order from highest to lowest fidelity.
 
 ## See Also
 
-- [var providerDataTypeIdentifiers: [String]?](cssearchableitemattributeset/providerdatatypeidentifiers.md)
+### Providing item representations
+- [var providerDataTypeIdentifiers: [String]?](./providerdatatypeidentifiers.md)
   An array of type identifiers that correspond to data types your delegate object can provide.
-- [var providerInPlaceFileTypeIdentifiers: [String]?](cssearchableitemattributeset/providerinplacefiletypeidentifiers.md)
+- [var providerInPlaceFileTypeIdentifiers: [String]?](./providerinplacefiletypeidentifiers.md)
   An array of type identifiers that correspond to in-place file types your delegate object can provide.
 
 

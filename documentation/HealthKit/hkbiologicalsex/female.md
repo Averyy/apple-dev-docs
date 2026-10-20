@@ -1,7 +1,8 @@
 # HKBiologicalSex.female
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant indicating that the user is female.
 
@@ -19,13 +20,18 @@ A constant indicating that the user is female.
 case female
 ```
 
+```c
+HKBiologicalSexFemale
+```
+
 ## See Also
 
-- [HKBiologicalSex.notSet](hkbiologicalsex/notset.md)
+### Constants
+- [HKBiologicalSex.notSet](./notset.md)
   A constant indicating that either the user’s biological sex characteristic type is not set, or the user has not granted your app permission to read that characteristic type.
-- [HKBiologicalSex.male](hkbiologicalsex/male.md)
+- [HKBiologicalSex.male](./male.md)
   A constant indicating that the user is male.
-- [HKBiologicalSex.other](hkbiologicalsex/other.md)
+- [HKBiologicalSex.other](./other.md)
   A constant indicating that the user is otherwise not categorized as either male or female.
 
 

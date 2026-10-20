@@ -1,7 +1,8 @@
 # max
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum representable integer in this type.
 
@@ -19,6 +20,8 @@ The maximum representable integer in this type.
 ```swift
 static var max: Self { get }
 ```
+
+Available when `Self` conforms to `FixedWidthInteger`.
 
 #### Discussion
 

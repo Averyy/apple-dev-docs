@@ -1,7 +1,8 @@
 # kAXPressAction
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Simulates a single click, such as on a button.
 
@@ -12,6 +13,10 @@ Simulates a single click, such as on a button.
 
 ```swift
 var kAXPressAction: String { get }
+```
+
+```c
+#define kAXPressAction
 ```
 
 

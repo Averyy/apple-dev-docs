@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.SortOrder.decreasingDepth
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Particles closer to camera are rendered first
 

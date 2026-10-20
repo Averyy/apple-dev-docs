@@ -1,7 +1,8 @@
 # toolbarVerticalCompressionBehavior(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets how bars should compress when different types of toolbars are hosted together and space is constrained.
 
@@ -48,11 +49,12 @@ struct ContentView: View {
 
 ## See Also
 
-- [func toolbarVerticalBehavior(ToolbarVerticalBehavior) -> some View](view/toolbarverticalbehavior(_:).md)
+### Configuring vertical toolbar behavior
+- [func toolbarVerticalBehavior(ToolbarVerticalBehavior) -> some View](./toolbarverticalbehavior%28_%29.md)
   Sets the behavior for the vertical bar.
-- [struct ToolbarVerticalBehavior](toolbarverticalbehavior.md)
+- [struct ToolbarVerticalBehavior](../toolbarverticalbehavior.md)
   A behavior that determines whether the vertical bar is used.
-- [struct ToolbarVerticalCompressionBehavior](toolbarverticalcompressionbehavior.md)
+- [struct ToolbarVerticalCompressionBehavior](../toolbarverticalcompressionbehavior.md)
   A behavior that determines how bars compress when the system places different types of bars together and space is constrained.
 
 

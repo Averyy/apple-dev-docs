@@ -1,7 +1,8 @@
 # page
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The size is roughly the size of a page of paper, appropriate for informational or compositional content.
 
@@ -20,13 +21,16 @@ The size is roughly the size of a page of paper, appropriate for informational o
 static var page: PagePresentationSizing { get }
 ```
 
+Available when `Self` is `PagePresentationSizing`.
+
 ## See Also
 
-- [static var automatic: AutomaticPresentationSizing](presentationsizing/automatic.md)
+### Getting built-in presentation size
+- [static var automatic: AutomaticPresentationSizing](./automatic.md)
   The default presentation sizing, appropriate for the platform.
-- [static var fitted: FittedPresentationSizing](presentationsizing/fitted.md)
+- [static var fitted: FittedPresentationSizing](./fitted.md)
   The presentation sizing is dictated by the ideal size of the content
-- [static var form: FormPresentationSizing](presentationsizing/form.md)
+- [static var form: FormPresentationSizing](./form.md)
   The size is appropriate for forms and slightly less wide than`.page`
 
 

@@ -1,7 +1,8 @@
 # tableView(_:shouldIndentWhileEditingRowAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether the background of the specified row should be indented while the table view is in editing mode.
 
@@ -18,13 +19,17 @@ Asks the delegate whether the background of the specified row should be indented
 optional func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool
 ```
 
+```objc
+- (BOOL) tableView:(UITableView *) tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the background of the row should be indented, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the background of the row should be indented, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-If the delegate does not implement this method, the default is [`true`](https://developer.apple.com/documentation/swift/true). This method is unrelated to [`tableView(_:indentationLevelForRowAt:)`](uitableviewdelegate/tableview(_:indentationlevelforrowat:).md).
+If the delegate does not implement this method, the default is [`true`](../../Swift/true.md). This method is unrelated to [`tableView(_:indentationLevelForRowAt:)`](./tableview%28_,indentationlevelforrowat%29.md).
 
 ## Parameters
 
@@ -33,13 +38,14 @@ If the delegate does not implement this method, the default is [`true`](https://
 
 ## See Also
 
-- [func tableView(UITableView, willBeginEditingRowAt: IndexPath)](uitableviewdelegate/tableview(_:willbegineditingrowat:).md)
+### Editing table rows
+- [func tableView(UITableView, willBeginEditingRowAt: IndexPath)](./tableview%28_,willbegineditingrowat%29.md)
   Tells the delegate that the table view is about to go into editing mode.
-- [func tableView(UITableView, didEndEditingRowAt: IndexPath?)](uitableviewdelegate/tableview(_:didendeditingrowat:).md)
+- [func tableView(UITableView, didEndEditingRowAt: IndexPath?)](./tableview%28_,didendeditingrowat%29.md)
   Tells the delegate that the table view has left editing mode.
-- [func tableView(UITableView, editingStyleForRowAt: IndexPath) -> UITableViewCell.EditingStyle](uitableviewdelegate/tableview(_:editingstyleforrowat:).md)
+- [func tableView(UITableView, editingStyleForRowAt: IndexPath) -> UITableViewCell.EditingStyle](./tableview%28_,editingstyleforrowat%29.md)
   Asks the delegate for the editing style of a row at a particular location in a table view.
-- [func tableView(UITableView, titleForDeleteConfirmationButtonForRowAt: IndexPath) -> String?](uitableviewdelegate/tableview(_:titlefordeleteconfirmationbuttonforrowat:).md)
+- [func tableView(UITableView, titleForDeleteConfirmationButtonForRowAt: IndexPath) -> String?](./tableview%28_,titlefordeleteconfirmationbuttonforrowat%29.md)
   Changes the default title of the delete-confirmation button.
 
 

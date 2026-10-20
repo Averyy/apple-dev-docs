@@ -1,7 +1,8 @@
 # HMCharacteristicValueLockMechanismState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the state of a lock mechanism.
 
@@ -19,29 +20,33 @@ Possible values for the state of a lock mechanism.
 enum HMCharacteristicValueLockMechanismState
 ```
 
+```c
+enum HMCharacteristicValueLockMechanismState : NSInteger;
+```
+
 ## Topics
 
 ### Lock Mechanism State
-- [HMCharacteristicValueLockMechanismState.unsecured](hmcharacteristicvaluelockmechanismstate/unsecured.md)
+- [HMCharacteristicValueLockMechanismState.unsecured](./hmcharacteristicvaluelockmechanismstate/unsecured.md)
   The lock mechanism is unlocked.
-- [HMCharacteristicValueLockMechanismState.secured](hmcharacteristicvaluelockmechanismstate/secured.md)
+- [HMCharacteristicValueLockMechanismState.secured](./hmcharacteristicvaluelockmechanismstate/secured.md)
   The lock mechanism is locked.
-- [HMCharacteristicValueLockMechanismState.jammed](hmcharacteristicvaluelockmechanismstate/jammed.md)
+- [HMCharacteristicValueLockMechanismState.jammed](./hmcharacteristicvaluelockmechanismstate/jammed.md)
   The lock mechanism is jammed.
-- [HMCharacteristicValueLockMechanismState.unknown](hmcharacteristicvaluelockmechanismstate/unknown.md)
+- [HMCharacteristicValueLockMechanismState.unknown](./hmcharacteristicvaluelockmechanismstate/unknown.md)
   The lock mechanism is in an unknown state.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluelockmechanismstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluelockmechanismstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

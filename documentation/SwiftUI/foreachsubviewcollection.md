@@ -1,7 +1,8 @@
 # ForEachSubviewCollection
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection which allows a view to be treated as a collection of its subviews in a for each loop.
 
@@ -23,18 +24,19 @@ struct ForEachSubviewCollection<Content> where Content : View
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [struct ForEach](foreach.md)
+### Iterating over dynamic data
+- [struct ForEach](./foreach.md)
   A structure that computes views on demand from an underlying collection of identified data.
-- [struct ForEachSectionCollection](foreachsectioncollection.md)
+- [struct ForEachSectionCollection](./foreachsectioncollection.md)
   A collection which allows a view to be treated as a collection of its sections in a for each loop.
-- [protocol DynamicViewContent](dynamicviewcontent.md)
+- [protocol DynamicViewContent](./dynamicviewcontent.md)
   A type of view that generates views from an underlying collection of data.
 
 

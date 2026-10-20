@@ -1,7 +1,8 @@
 # clearPayloads()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears all authored payloads on this prim.
 

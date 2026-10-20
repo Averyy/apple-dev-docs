@@ -1,7 +1,8 @@
 # localizedName(forFilterName:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the localized name for the specified filter name.
 
@@ -19,6 +20,10 @@ Returns the localized name for the specified filter name.
 class func localizedName(forFilterName filterName: String) -> String?
 ```
 
+```objc
++ (NSString *) localizedNameForFilterName:(NSString *) filterName;
+```
+
 #### Return Value
 
 The localized name for the filter.
@@ -29,11 +34,12 @@ The localized name for the filter.
 
 ## See Also
 
-- [class func localizedName(forCategory: String) -> String](cifilter-swift.class/localizedname(forcategory:).md)
+### Getting localized information for registered filters
+- [class func localizedName(forCategory: String) -> String](./localizedname%28forcategory%29.md)
   Returns  the localized name for the specified filter category.
-- [class func localizedDescription(forFilterName: String) -> String?](cifilter-swift.class/localizeddescription(forfiltername:).md)
+- [class func localizedDescription(forFilterName: String) -> String?](./localizeddescription%28forfiltername%29.md)
   Returns the localized description of a filter for display in the user interface.
-- [class func localizedReferenceDocumentation(forFilterName: String) -> URL?](cifilter-swift.class/localizedreferencedocumentation(forfiltername:).md)
+- [class func localizedReferenceDocumentation(forFilterName: String) -> URL?](./localizedreferencedocumentation%28forfiltername%29.md)
   Returns the location of the localized reference documentation that describes the filter.
 
 

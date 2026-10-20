@@ -1,7 +1,8 @@
 # init(value:in:step:format:label:onEditingChanged:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stepper configured to increment or decrement a binding to a value using a step value and within a range of values you provide, displaying its value with an applied format style.
 
@@ -19,6 +20,8 @@ Creates a stepper configured to increment or decrement a binding to a value usin
 nonisolated
 init<F>(value: Binding<F.FormatInput>, in bounds: ClosedRange<F.FormatInput>, step: F.FormatInput.Stride = 1, format: F, @ContentBuilder label: () -> Label, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where F : ParseableFormatStyle, F.FormatInput : BinaryFloatingPoint, F.FormatOutput == String
 ```
+
+Available when `Label` conforms to `View`.
 
 #### Discussion
 
@@ -45,11 +48,11 @@ struct StepperView: View {
 }
 ```
 
-![A view displaying a stepper with a step size of five, and a](/images/com.apple.SwiftUI/SwiftUI-Stepper-value-step-range@2x.png)
+![A view displaying a stepper with a step size of five, and a](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-Stepper-value-step-range@2x.png)
 
 ## Parameters
 
-- `value`: A [`Binding`](binding.md) to a value that you provide.
+- `value`: A [`Binding`](../binding.md) to a value that you provide.
 - `bounds`: A closed range that describes the upper and lower bounds permitted by the stepper.
 - `step`: The amount to increment or decrement the stepper when the user clicks or taps the stepper’s increment or decrement buttons, respectively.
 - `format`: A format style of type `F` to use when converting between the string the user edits and the underlying value of type `F.FormatInput`. If `format` can’t perform the conversion, the stepper leaves `value` unchanged. If the user stops editing the text in an invalid state, the stepper updates the text to the last known valid value.
@@ -58,11 +61,12 @@ struct StepperView: View {
 
 ## See Also
 
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, label: () -> Label, onEditingChanged: (Bool) -> Void)](stepper/init(value:in:step:label:oneditingchanged:).md)
+### Creating a stepper over a range
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, label: () -> Label, onEditingChanged: (Bool) -> Void)](./init%28value,in,step,label,oneditingchanged%29.md)
   Creates a stepper configured to increment or decrement a binding to a value using a step value and within a range of values you provide.
-- [init(_:value:in:step:onEditingChanged:)](stepper/init(_:value:in:step:oneditingchanged:).md)
+- [init(_:value:in:step:onEditingChanged:)](./init%28_,value,in,step,oneditingchanged%29.md)
   Creates a stepper instance that increments and decrements a binding to a value, by a step size and within a closed range that you provide.
-- [init(_:value:in:step:format:onEditingChanged:)](stepper/init(_:value:in:step:format:oneditingchanged:).md)
+- [init(_:value:in:step:format:onEditingChanged:)](./init%28_,value,in,step,format,oneditingchanged%29.md)
   Creates a stepper instance that increments and decrements a binding to a value, by a step size and within a closed range that you provide, displaying its value with an applied format style.
 
 

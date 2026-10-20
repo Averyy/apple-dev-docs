@@ -2,6 +2,7 @@
 
 **Framework**: DeveloperToolsSupport  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A type to use as a base for modifier completions.
@@ -23,11 +24,12 @@ associatedtype ModifierBase = Any
 
 #### Discussion
 
-To verify that the completion for a modifier compiles, you specify modifiers as they apply to some base type. Since most modifiers can modify any SwiftUI view, you typically specify any concrete implementation of the [`View`](https://developer.apple.com/documentation/swiftui/view) protocol for `ModifierBase`. However, some modifiers apply to more specific types, like [`Image`](https://developer.apple.com/documentation/swiftui/image) or [`Text`](https://developer.apple.com/documentation/swiftui/text), or to an entirely different type like [`Shape`](https://developer.apple.com/documentation/swiftui/shape).
+To verify that the completion for a modifier compiles, you specify modifiers as they apply to some base type. Since most modifiers can modify any SwiftUI view, you typically specify any concrete implementation of the [`View`](../../SwiftUI/view.md) protocol for `ModifierBase`. However, some modifiers apply to more specific types, like [`Image`](../../SwiftUI/image.md) or [`Text`](../../SwiftUI/text.md), or to an entirely different type like [`Shape`](../../SwiftUI/shape.md).
 
 ## See Also
 
-- [func modifiers(base: Self.ModifierBase) -> [LibraryItem]](librarycontentprovider/modifiers(base:).md)
+### Adding Modifiers
+- [func modifiers(base: Self.ModifierBase) -> [LibraryItem]](./modifiers%28base%29.md)
   Indicates a collection of SwiftUI view modifiers to add to the Xcode library.
 
 

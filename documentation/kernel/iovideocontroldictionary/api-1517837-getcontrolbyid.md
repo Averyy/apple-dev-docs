@@ -1,14 +1,15 @@
 # getControlByID
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static OSDictionary * getControlByID(OSArray *controlList, UInt32 controlID);
 ```
 

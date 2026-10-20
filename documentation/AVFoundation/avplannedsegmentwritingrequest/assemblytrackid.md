@@ -1,7 +1,8 @@
 # assemblyTrackID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The trackID identifies which track should be written to this segment file. This is the same track ID in the AVAssetTrackPlan object. This is also the trackID the AVAssetWritingPlanner uses to build the assembled AVComposition before it calls the completion handler.
 
@@ -19,13 +20,18 @@ The trackID identifies which track should be written to this segment file. This 
 var assemblyTrackID: CMPersistentTrackID { get }
 ```
 
+```objc
+@property (readonly) CMPersistentTrackID assemblyTrackID;
+```
+
 ## See Also
 
-- [var timeRange: CMTimeRange](avplannedsegmentwritingrequest/timerange.md)
+### Inspecting the request
+- [var timeRange: CMTimeRange](./timerange.md)
   The PTS range for this segment.
-- [var segmentFileOutputURL: URL](avplannedsegmentwritingrequest/segmentfileoutputurl.md)
+- [var segmentFileOutputURL: URL](./segmentfileoutputurl.md)
   The URL of the file where this incremental segment should be written to.
-- [var progress: Float](avplannedsegmentwritingrequest/progress.md)
+- [var progress: Float](./progress.md)
   The current progress for the track identified by assemblyTrackID.
 
 

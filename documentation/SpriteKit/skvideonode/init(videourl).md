@@ -1,23 +1,30 @@
 # init(videoURL:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a video node using a URL that points to a video file.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS ?+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 7.0+ - Deprecated in 8.0
+- iPadOS 7.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.8+ - Deprecated in 10.10
+- tvOS
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use [`init(url:)`](./init%28url%29-2im38.md) instead.
 
 ## Declaration
 
 ```swift
 init(videoURL url: URL)
+```
+
+```objc
+- (instancetype) initWithVideoURL:(NSURL *) url;
 ```
 
 #### Return Value
@@ -30,15 +37,16 @@ An initialized video node.
 
 ## See Also
 
-- [init(avPlayer: AVPlayer)](skvideonode/init(avplayer:)-9ydbu.md)
-  Initializes a video node using an existing [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) object.
-- [init(fileNamed: String)](skvideonode/init(filenamed:).md)
+### Creating a Video Node
+- [init(avPlayer: AVPlayer)](./init%28avplayer%29-9ydbu.md)
+  Initializes a video node using an existing [`AVPlayer`](../../AVFoundation/avplayer.md) object.
+- [init(fileNamed: String)](./init%28filenamed%29.md)
   Initializes a video node using a video file stored in the app bundle.
-- [init(url: URL)](skvideonode/init(url:)-2im38.md)
+- [init(url: URL)](./init%28url%29-2im38.md)
   Initializes a video node using a URL.
-- [init?(coder: NSCoder)](skvideonode/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Tells you when to initialize a video node that was created from an archive.
-- [init(videoFileNamed: String)](skvideonode/init(videofilenamed:).md)
+- [init(videoFileNamed: String)](./init%28videofilenamed%29.md)
   Initializes a video node using a video file stored in the app bundle.
 
 

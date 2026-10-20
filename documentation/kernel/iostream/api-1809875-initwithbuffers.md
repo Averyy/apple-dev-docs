@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool initWithBuffers(
  OSArray *buffers,
  IOStreamMode mode = kIOStreamModeOutput,
@@ -22,8 +22,9 @@ virtual bool initWithBuffers(
 
 ## See Also
 
-- [free](iostream/1809867-free.md)
-- [withBuffers](iostream/1809882-withbuffers.md)
+### Creating IOStream objects
+- [free](./api-1809867-free.md)
+- [withBuffers](./api-1809882-withbuffers.md)
 
 
 ---

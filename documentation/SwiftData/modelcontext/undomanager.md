@@ -1,7 +1,8 @@
 # undoManager
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that provides undo support for the context.
 
@@ -23,7 +24,7 @@ var undoManager: UndoManager? { get set }
 
 #### Discussion
 
-Assign an instance of [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) to this property to enable undo support for the context. The undo manager can be exclusive to the context, or an existing manager should you want to integrate this context’s undo operations with those of the rest of your app.
+Assign an instance of [`UndoManager`](../../Foundation/undomanager.md) to this property to enable undo support for the context. The undo manager can be exclusive to the context, or an existing manager should you want to integrate this context’s undo operations with those of the rest of your app.
 
 If the context does use an undo manager, improve performance by temporarily setting this property to `nil` when performing expensive operations, such as importing large numbers of models.
 
@@ -31,7 +32,8 @@ The default value is `nil`.
 
 ## See Also
 
-- [func processPendingChanges()](modelcontext/processpendingchanges.md)
+### Performing undo and redo
+- [func processPendingChanges()](./processpendingchanges%28%29.md)
   Tells the undo manager to record any changes made to the context’s registered models.
 
 

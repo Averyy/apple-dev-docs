@@ -1,16 +1,17 @@
 # init
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the network packet object.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
@@ -24,7 +25,8 @@ Do not call this method directly. Submission queues initialize packets before re
 
 ## See Also
 
-- [free](iousernetworkpacket/free.md)
+### Configuring the Network Packet
+- [free](./free.md)
   Performs any final cleanup for the network packet.
 
 

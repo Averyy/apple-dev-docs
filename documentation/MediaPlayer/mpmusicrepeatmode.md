@@ -1,7 +1,8 @@
 # MPMusicRepeatMode
 
 **Framework**: Media Player  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The repeat modes for the media player.
 
@@ -18,47 +19,52 @@ The repeat modes for the media player.
 enum MPMusicRepeatMode
 ```
 
+```c
+enum MPMusicRepeatMode : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MPMusicRepeatMode.default](mpmusicrepeatmode/default.md)
+- [MPMusicRepeatMode.default](./mpmusicrepeatmode/default.md)
   The user’s preferred repeat mode.
-- [MPMusicRepeatMode.none](mpmusicrepeatmode/none.md)
+- [MPMusicRepeatMode.none](./mpmusicrepeatmode/none.md)
   The music player will not repeat the current song or playlist.
-- [MPMusicRepeatMode.one](mpmusicrepeatmode/one.md)
+- [MPMusicRepeatMode.one](./mpmusicrepeatmode/one.md)
   The music player will repeat the current song.
-- [MPMusicRepeatMode.all](mpmusicrepeatmode/all.md)
+- [MPMusicRepeatMode.all](./mpmusicrepeatmode/all.md)
   The music player will repeat the current playlist.
 ### Initializers
-- [init?(rawValue: Int)](mpmusicrepeatmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mpmusicrepeatmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var nowPlayingItem: MPMediaItem?](mpmusicplayercontroller/nowplayingitem.md)
+### Managing playback mode and state
+- [var nowPlayingItem: MPMediaItem?](./mpmusicplayercontroller/nowplayingitem.md)
   The currently-playing media item, or the media item in a queue that you designated to begin playback with.
-- [var indexOfNowPlayingItem: Int](mpmusicplayercontroller/indexofnowplayingitem.md)
+- [var indexOfNowPlayingItem: Int](./mpmusicplayercontroller/indexofnowplayingitem.md)
   The index of the now playing item in the current playback queue.
-- [var playbackState: MPMusicPlaybackState](mpmusicplayercontroller/playbackstate.md)
+- [var playbackState: MPMusicPlaybackState](./mpmusicplayercontroller/playbackstate.md)
   The current playback state of the music player.
-- [var repeatMode: MPMusicRepeatMode](mpmusicplayercontroller/repeatmode.md)
+- [var repeatMode: MPMusicRepeatMode](./mpmusicplayercontroller/repeatmode.md)
   The current repeat mode of the music player.
-- [var shuffleMode: MPMusicShuffleMode](mpmusicplayercontroller/shufflemode.md)
+- [var shuffleMode: MPMusicShuffleMode](./mpmusicplayercontroller/shufflemode.md)
   The current shuffle mode of the music player.
-- [enum MPMusicPlaybackState](mpmusicplaybackstate.md)
+- [enum MPMusicPlaybackState](./mpmusicplaybackstate.md)
   The music player playback state modes.
-- [enum MPMusicShuffleMode](mpmusicshufflemode.md)
+- [enum MPMusicShuffleMode](./mpmusicshufflemode.md)
   The shuffle modes for the media player.
-- [var volume: Float](mpmusicplayercontroller/volume.md)
+- [var volume: Float](./mpmusicplayercontroller/volume.md)
   The audio playback volume for the music player, in the range from `0.0` (silent) through `1.0` (maximum volume).
 
 

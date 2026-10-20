@@ -1,7 +1,8 @@
 # SystemLanguageModel.UseCase
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the use case for prompting.
 
@@ -21,24 +22,25 @@ struct UseCase
 ## Topics
 
 ### Getting the general use case
-- [static let general: SystemLanguageModel.UseCase](systemlanguagemodel/usecase/general.md)
+- [static let general: SystemLanguageModel.UseCase](./usecase/general.md)
   A use case for general prompting.
 ### Getting the content tagging use case
-- [static let contentTagging: SystemLanguageModel.UseCase](systemlanguagemodel/usecase/contenttagging.md)
+- [static let contentTagging: SystemLanguageModel.UseCase](./usecase/contenttagging.md)
   A use case for content tagging.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [convenience init(useCase: SystemLanguageModel.UseCase, guardrails: SystemLanguageModel.Guardrails)](systemlanguagemodel/init(usecase:guardrails:).md)
+### Creating a model for a use case
+- [convenience init(useCase: SystemLanguageModel.UseCase, guardrails: SystemLanguageModel.Guardrails)](./init%28usecase,guardrails%29.md)
   Creates a system language model instance for a specific use case.
-- [SystemLanguageModel.Guardrails](systemlanguagemodel/guardrails.md)
+- [SystemLanguageModel.Guardrails](./guardrails.md)
   A set of controls that flag sensitive content from model input and output.
 
 

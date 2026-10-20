@@ -1,18 +1,19 @@
 # putBytes
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A pointer to a function that copies data to the data consumer. For more information, see [`CGDataConsumerPutBytesCallback`](cgdataconsumerputbytescallback.md).
+A pointer to a function that copies data to the data consumer. For more information, see [`CGDataConsumerPutBytesCallback`](../cgdataconsumerputbytescallback.md).
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ A pointer to a function that copies data to the data consumer. For more informat
 var putBytes: CGDataConsumerPutBytesCallback?
 ```
 
+```c
+CGDataConsumerPutBytesCallback putBytes;
+```
+
 ## See Also
 
-- [var releaseConsumer: CGDataConsumerReleaseInfoCallback?](cgdataconsumercallbacks/releaseconsumer.md)
+### Instance Properties
+- [var releaseConsumer: CGDataConsumerReleaseInfoCallback?](./releaseconsumer.md)
   A pointer to a function that handles clean-up for the data consumer, or `NULL`.
 
 

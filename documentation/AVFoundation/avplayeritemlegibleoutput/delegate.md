@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate of the output class.
 
@@ -19,6 +20,10 @@ The delegate of the output class.
 weak var delegate: (any AVPlayerItemLegibleOutputPushDelegate)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) id<AVPlayerItemLegibleOutputPushDelegate> delegate;
+```
+
 #### Discussion
 
 Because the delegate is held using a zeroing-weak reference, this property has a value of `nil` after a delegate that was previously set has been deallocated.
@@ -27,13 +32,14 @@ This property does not support key-value observing.
 
 ## See Also
 
-- [func setDelegate((any AVPlayerItemLegibleOutputPushDelegate)?, queue: dispatch_queue_t?)](avplayeritemlegibleoutput/setdelegate(_:queue:).md)
+### Configuring the delegate
+- [func setDelegate((any AVPlayerItemLegibleOutputPushDelegate)?, queue: dispatch_queue_t?)](./setdelegate%28_,queue%29.md)
   Sets the receiver’s delegate and a dispatch queue on which the delegate is called.
-- [protocol AVPlayerItemLegibleOutputPushDelegate](avplayeritemlegibleoutputpushdelegate.md)
+- [protocol AVPlayerItemLegibleOutputPushDelegate](../avplayeritemlegibleoutputpushdelegate.md)
   Methods you can implement to provide alternative attributed-string output.
-- [var advanceIntervalForDelegateInvocation: TimeInterval](avplayeritemlegibleoutput/advanceintervalfordelegateinvocation.md)
+- [var advanceIntervalForDelegateInvocation: TimeInterval](./advanceintervalfordelegateinvocation.md)
   The time interval, in seconds, that a player item legible output object messages its delegate earlier than normal.
-- [var delegateQueue: dispatch_queue_t?](avplayeritemlegibleoutput/delegatequeue.md)
+- [var delegateQueue: dispatch_queue_t?](./delegatequeue.md)
   The dispatch queue on which the delegate is called.
 
 

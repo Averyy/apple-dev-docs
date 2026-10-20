@@ -1,7 +1,8 @@
 # mSampleRate
 
 **Framework**: AudioDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of sample frames per second of the data in the stream.
 
@@ -10,7 +11,7 @@ The number of sample frames per second of the data in the stream.
 
 ## Declaration
 
-```swift
+```c
 double mSampleRate;
 ```
 

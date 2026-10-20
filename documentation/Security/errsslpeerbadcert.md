@@ -1,7 +1,8 @@
 # errSSLPeerBadCert
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A bad certificate was encountered.
 
@@ -18,6 +19,10 @@ A bad certificate was encountered.
 
 ```swift
 var errSSLPeerBadCert: OSStatus { get }
+```
+
+```c
+errSSLPeerBadCert
 ```
 
 

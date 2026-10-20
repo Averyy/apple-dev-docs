@@ -1,7 +1,8 @@
 # confidence
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The confidence level of the heart rate value.
 
@@ -17,11 +18,16 @@ The confidence level of the heart rate value.
 var confidence: CMHighFrequencyHeartRateDataConfidence { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMHighFrequencyHeartRateDataConfidence confidence;
+```
+
 ## See Also
 
-- [var heartRate: Double](cmhighfrequencyheartratedata/heartrate.md)
+### Accessing heart rate data
+- [var heartRate: Double](./heartrate.md)
   The heart rate value in units of beats per minute (BPM).
-- [enum CMHighFrequencyHeartRateDataConfidence](cmhighfrequencyheartratedataconfidence.md)
+- [enum CMHighFrequencyHeartRateDataConfidence](../cmhighfrequencyheartratedataconfidence.md)
   The level of confidence in the accuracy of the heart rate data.
 
 

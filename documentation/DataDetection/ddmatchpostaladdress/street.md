@@ -1,7 +1,8 @@
 # street
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The street name in a postal address.
 
@@ -20,15 +21,20 @@ The street name in a postal address.
 var street: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * street;
+```
+
 ## See Also
 
-- [var city: String?](ddmatchpostaladdress/city.md)
+### Getting postal address information
+- [var city: String?](./city.md)
   The city name in a postal address.
-- [var state: String?](ddmatchpostaladdress/state.md)
+- [var state: String?](./state.md)
   The state name in a postal address.
-- [var postalCode: String?](ddmatchpostaladdress/postalcode.md)
+- [var postalCode: String?](./postalcode.md)
   The postal code in a postal address.
-- [var country: String?](ddmatchpostaladdress/country.md)
+- [var country: String?](./country.md)
   The country or region name in a postal address.
 
 

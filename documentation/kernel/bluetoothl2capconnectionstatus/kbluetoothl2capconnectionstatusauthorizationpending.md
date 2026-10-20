@@ -1,14 +1,15 @@
 # kBluetoothL2CAPConnectionStatusAuthorizationPending
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothL2CAPConnectionStatusAuthorizationPending = 0x0002
 ```
 

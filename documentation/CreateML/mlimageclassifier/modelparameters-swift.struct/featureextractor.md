@@ -1,16 +1,19 @@
 # featureExtractor
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying base model the training session uses to extract image features as it trains an image classifier.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 10.14+
+- iOS 15.0+ - Deprecated in 16.0
+- iPadOS 15.0+ - Deprecated in 16.0
+- Mac Catalyst 15.0+ - Deprecated in 16.0
+- macOS 10.14+ - Deprecated in 11.0
 - visionOS 1.0+
+
+> **Deprecated**: Use featureExtractor in ModelAlgorithmType instead.
 
 ## Declaration
 
@@ -26,15 +29,16 @@ In either case, you train your model to map the feature extractor’s output to 
 
 ## See Also
 
-- [var algorithm: MLImageClassifier.ModelParameters.ModelAlgorithmType](mlimageclassifier/modelparameters-swift.struct/algorithm.md)
+### Accessing the training parameters
+- [var algorithm: MLImageClassifier.ModelParameters.ModelAlgorithmType](./algorithm.md)
   Model algorithm to be used
-- [var validation: MLImageClassifier.ModelParameters.ValidationData](mlimageclassifier/modelparameters-swift.struct/validation.md)
+- [var validation: MLImageClassifier.ModelParameters.ValidationData](./validation.md)
   The image classifier’s validation dataset.
-- [var maxIterations: Int](mlimageclassifier/modelparameters-swift.struct/maxiterations.md)
+- [var maxIterations: Int](./maxiterations.md)
   The maximum number of iterations the training session can use.
-- [var augmentationOptions: MLImageClassifier.ImageAugmentationOptions](mlimageclassifier/modelparameters-swift.struct/augmentationoptions.md)
+- [var augmentationOptions: MLImageClassifier.ImageAugmentationOptions](./augmentationoptions.md)
   The variations the training session uses to generate more variety in the training dataset.
-- [var validationData: [String : [URL]]?](mlimageclassifier/modelparameters-swift.struct/validationdata-swift.property.md)
+- [var validationData: [String : [URL]]?](./validationdata-swift.property.md)
   A set of images that the training process uses for validation.
 
 

@@ -1,7 +1,8 @@
 # formUnion(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the contents of the given range set to this range set.
 
@@ -20,9 +21,11 @@ Adds the contents of the given range set to this range set.
 mutating func formUnion(_ other: RangeSet<Bound>)
 ```
 
+Available when `Bound` conforms to `Comparable`.
+
 #### Discussion
 
-> **Note**: O(*m* + *n*), where *m* and *n* are the number of ranges in this and the other range set.
+> **Complexity**: O(*m* + *n*), where *m* and *n* are the number of ranges in this and the other range set.
 
 ## Parameters
 

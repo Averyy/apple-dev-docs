@@ -1,7 +1,8 @@
 # HKMedicationDoseEvent.LogStatus.taken
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The person logs that they took the medication dose.
 
@@ -17,6 +18,10 @@ The person logs that they took the medication dose.
 
 ```swift
 case taken
+```
+
+```c
+HKMedicationDoseEventLogStatusTaken
 ```
 
 

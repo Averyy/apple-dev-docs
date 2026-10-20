@@ -1,7 +1,8 @@
 # MTRChannelType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,25 +19,29 @@
 enum MTRChannelType
 ```
 
+```c
+enum MTRChannelType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRChannelType.OTT](mtrchanneltype/ott.md)
-- [MTRChannelType.cable](mtrchanneltype/cable.md)
-- [MTRChannelType.satellite](mtrchanneltype/satellite.md)
-- [MTRChannelType.terrestrial](mtrchanneltype/terrestrial.md)
+- [MTRChannelType.OTT](./mtrchanneltype/ott.md)
+- [MTRChannelType.cable](./mtrchanneltype/cable.md)
+- [MTRChannelType.satellite](./mtrchanneltype/satellite.md)
+- [MTRChannelType.terrestrial](./mtrchanneltype/terrestrial.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrchanneltype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrchanneltype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # IOUSBHostFreeDescriptor
 
 **Framework**: USBDriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Releases the specified configuration descriptor.
 
@@ -10,7 +11,7 @@ Releases the specified configuration descriptor.
 
 ## Declaration
 
-```swift
+```c
 void IOUSBHostFreeDescriptor(const IOUSBConfigurationDescriptor *descriptor);
 ```
 
@@ -20,11 +21,12 @@ void IOUSBHostFreeDescriptor(const IOUSBConfigurationDescriptor *descriptor);
 
 ## See Also
 
-- [IOUSBHostFreeDescriptor](iousbhostfreedescriptor-2hkne.md)
+### Disposing of Descriptors
+- [IOUSBHostFreeDescriptor](./iousbhostfreedescriptor-2hkne.md)
   Releases the specified device descriptor.
-- [IOUSBHostFreeDescriptor](iousbhostfreedescriptor-5j4pp.md)
+- [IOUSBHostFreeDescriptor](./iousbhostfreedescriptor-5j4pp.md)
   Releases the specified BOS descriptor.
-- [IOUSBHostFreeDescriptor](iousbhostfreedescriptor-3fve6.md)
+- [IOUSBHostFreeDescriptor](./iousbhostfreedescriptor-3fve6.md)
   Releases the specified string descriptor.
 
 

@@ -1,7 +1,8 @@
 # aeBuildSyntaxUncoercedHex
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A hex string must be coerced to a type.
 

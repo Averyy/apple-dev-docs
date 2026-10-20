@@ -1,16 +1,19 @@
 # KeywordListResponse
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response details of targeting keyword requests.
 
 **Availability**:
-- Search Ads 2.0+
+- Search Ads 2.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object KeywordListResponse
 ```
 
@@ -22,17 +25,18 @@ object KeywordListResponse
 
 ## See Also
 
-- [object Keyword](keyword.md)
+### Keywords Request and Response Objects
+- [object Keyword](./keyword.md)
   Targeting keyword parameters to use in requests and responses.
-- [object NegativeKeyword](negativekeyword.md)
+- [object NegativeKeyword](./negativekeyword.md)
   Negative keyword parameters to use in requests and responses.
-- [object KeywordResponse](keywordresponse.md)
+- [object KeywordResponse](./keywordresponse.md)
   A container for the targeting keywords response body.
-- [object KeywordUpdateRequest](keywordupdaterequest.md)
+- [object KeywordUpdateRequest](./keywordupdaterequest.md)
   Targeting keyword parameters to use in requests and responses.
-- [object NegativeKeywordResponse](negativekeywordresponse.md)
+- [object NegativeKeywordResponse](./negativekeywordresponse.md)
   A container for the negative keyword response body.
-- [object NegativeKeywordListResponse](negativekeywordlistresponse.md)
+- [object NegativeKeywordListResponse](./negativekeywordlistresponse.md)
   The response details of negative keyword requests.
 
 

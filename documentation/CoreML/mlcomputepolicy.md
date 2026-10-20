@@ -1,7 +1,8 @@
 # MLComputePolicy
 
 **Framework**: Core ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The compute policy determining what compute device, or compute devices, to execute ML workloads on.
 
@@ -23,38 +24,39 @@ struct MLComputePolicy
 ## Topics
 
 ### Compute policies
-- [static var cpuAndGPU: MLComputePolicy](mlcomputepolicy/cpuandgpu.md)
+- [static var cpuAndGPU: MLComputePolicy](./mlcomputepolicy/cpuandgpu.md)
   Execute ML workloads using the GPU if available, otherwise falling back to the CPU.
-- [static var cpuOnly: MLComputePolicy](mlcomputepolicy/cpuonly.md)
+- [static var cpuOnly: MLComputePolicy](./mlcomputepolicy/cpuonly.md)
   Execute ML workloads using the CPU.
 ### Creating a compute policy
-- [init(MLComputeUnits)](mlcomputepolicy/init(_:).md)
+- [init(MLComputeUnits)](./mlcomputepolicy/init%28_%29.md)
   Creates a new compute policy using the given compute units.
 ### Default Implementations
-- [CustomReflectable Implementations](mlcomputepolicy/customreflectable-implementations.md)
-- [CustomStringConvertible Implementations](mlcomputepolicy/customstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./mlcomputepolicy/customreflectable-implementations.md)
+- [CustomStringConvertible Implementations](./mlcomputepolicy/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class MLComputePlan](mlcomputeplan-1w21n.md)
+### Compute plan
+- [class MLComputePlan](./mlcomputeplan-1w21n.md)
   A class representing the compute plan of a model.
-- [enum MLModelStructure](mlmodelstructure-swift.enum.md)
+- [enum MLModelStructure](./mlmodelstructure-swift.enum.md)
   An enum representing the structure of a model.
-- [func withMLTensorComputePolicy<R>(MLComputePolicy, () async throws -> R) async rethrows -> R](withmltensorcomputepolicy(_:_:)-8stx9.md)
+- [func withMLTensorComputePolicy<R>(MLComputePolicy, () async throws -> R) async rethrows -> R](./withmltensorcomputepolicy%28_,_%29-8stx9.md)
   Calls the given closure within a task-local context using the specified compute policy to influence what compute device tensor operations are executed on.
-- [func withMLTensorComputePolicy<Result>(MLComputePolicy, () throws -> Result) rethrows -> Result](withmltensorcomputepolicy(_:_:)-6z33x.md)
+- [func withMLTensorComputePolicy<Result>(MLComputePolicy, () throws -> Result) rethrows -> Result](./withmltensorcomputepolicy%28_,_%29-6z33x.md)
   Calls the given closure within a task-local context using the specified compute policy to influence what compute device tensor operations are executed on.
 
 

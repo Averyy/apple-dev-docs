@@ -1,7 +1,8 @@
 # heightAnchor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A layout anchor representing the height of the view’s frame.
 
@@ -18,33 +19,38 @@ A layout anchor representing the height of the view’s frame.
 var heightAnchor: NSLayoutDimension { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSLayoutDimension * heightAnchor;
+```
+
 #### Discussion
 
-Use this anchor to create constraints with the view’s height. You can combine this anchor only with other [`NSLayoutDimension`](nslayoutdimension.md) anchors. For more information, see [`NSLayoutAnchor`](nslayoutanchor.md).
+Use this anchor to create constraints with the view’s height. You can combine this anchor only with other [`NSLayoutDimension`](../nslayoutdimension.md) anchors. For more information, see [`NSLayoutAnchor`](../nslayoutanchor.md).
 
 ## See Also
 
-- [var bottomAnchor: NSLayoutYAxisAnchor](uiview/bottomanchor.md)
+### Creating constraints using layout anchors
+- [var bottomAnchor: NSLayoutYAxisAnchor](./bottomanchor.md)
   A layout anchor representing the bottom edge of the view’s frame.
-- [var centerXAnchor: NSLayoutXAxisAnchor](uiview/centerxanchor.md)
+- [var centerXAnchor: NSLayoutXAxisAnchor](./centerxanchor.md)
   A layout anchor representing the horizontal center of the view’s frame.
-- [var centerYAnchor: NSLayoutYAxisAnchor](uiview/centeryanchor.md)
+- [var centerYAnchor: NSLayoutYAxisAnchor](./centeryanchor.md)
   A layout anchor representing the vertical center of the view’s frame.
-- [var firstBaselineAnchor: NSLayoutYAxisAnchor](uiview/firstbaselineanchor.md)
+- [var firstBaselineAnchor: NSLayoutYAxisAnchor](./firstbaselineanchor.md)
   A layout anchor representing the baseline for the topmost line of text in the view.
-- [var lastBaselineAnchor: NSLayoutYAxisAnchor](uiview/lastbaselineanchor.md)
+- [var lastBaselineAnchor: NSLayoutYAxisAnchor](./lastbaselineanchor.md)
   A layout anchor representing the baseline for the bottommost line of text in the view.
-- [var leadingAnchor: NSLayoutXAxisAnchor](uiview/leadinganchor.md)
+- [var leadingAnchor: NSLayoutXAxisAnchor](./leadinganchor.md)
   A layout anchor representing the leading edge of the view’s frame.
-- [var leftAnchor: NSLayoutXAxisAnchor](uiview/leftanchor.md)
+- [var leftAnchor: NSLayoutXAxisAnchor](./leftanchor.md)
   A layout anchor representing the left edge of the view’s frame.
-- [var rightAnchor: NSLayoutXAxisAnchor](uiview/rightanchor.md)
+- [var rightAnchor: NSLayoutXAxisAnchor](./rightanchor.md)
   A layout anchor representing the right edge of the view’s frame.
-- [var topAnchor: NSLayoutYAxisAnchor](uiview/topanchor.md)
+- [var topAnchor: NSLayoutYAxisAnchor](./topanchor.md)
   A layout anchor representing the top edge of the view’s frame.
-- [var trailingAnchor: NSLayoutXAxisAnchor](uiview/trailinganchor.md)
+- [var trailingAnchor: NSLayoutXAxisAnchor](./trailinganchor.md)
   A layout anchor representing the trailing edge of the view’s frame.
-- [var widthAnchor: NSLayoutDimension](uiview/widthanchor.md)
+- [var widthAnchor: NSLayoutDimension](./widthanchor.md)
   A layout anchor representing the width of the view’s frame.
 
 

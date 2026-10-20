@@ -1,7 +1,8 @@
 # characterPicker
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard identifier for selecting special characters such as Emoji.
 
@@ -14,9 +15,14 @@ The standard identifier for selecting special characters such as Emoji.
 static let characterPicker: NSTouchBarItem.Identifier
 ```
 
+```c
+extern NSTouchBarItemIdentifier const NSTouchBarItemIdentifierCharacterPicker;
+```
+
 ## See Also
 
-- [static let candidateList: NSTouchBarItem.Identifier](nstouchbaritem/identifier-swift.struct/candidatelist.md)
+### Creating identifiers for multiple choice items
+- [static let candidateList: NSTouchBarItem.Identifier](./candidatelist.md)
   The standard identifier for a candidate list bar item.
 
 

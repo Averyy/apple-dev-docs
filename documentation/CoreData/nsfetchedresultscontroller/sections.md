@@ -1,7 +1,8 @@
 # sections
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sections for the fetch results.
 
@@ -10,7 +11,7 @@ The sections for the fetch results.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.12+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ The sections for the fetch results.
 var sections: [any NSFetchedResultsSectionInfo]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSArray<id<NSFetchedResultsSectionInfo>> * sections;
+```
+
 #### Discussion
 
-The objects in the sections array implement the [`NSFetchedResultsSectionInfo`](nsfetchedresultssectioninfo.md) protocol.
+The objects in the sections array implement the [`NSFetchedResultsSectionInfo`](../nsfetchedresultssectioninfo.md) protocol.
 
-You typically use the sections array when implementing `UITableViewDataSource` methods, such as [`numberOfSections(in:)`](https://developer.apple.com/documentation/uikit/uitableviewdatasource/numberofsections(in:)) and [`tableView(_:titleForHeaderInSection:)`](https://developer.apple.com/documentation/uikit/uitableviewdatasource/tableview(_:titleforheaderinsection:)).
+You typically use the sections array when implementing `UITableViewDataSource` methods, such as [`numberOfSections(in:)`](../../UIKit/uitableviewdatasource/numberofsections%28in%29.md) and [`tableView(_:titleForHeaderInSection:)`](../../UIKit/uitableviewdatasource/tableview%28_,titleforheaderinsection%29.md).
 
 ## See Also
 
-- [func section(forSectionIndexTitle: String, at: Int) -> Int](nsfetchedresultscontroller/section(forsectionindextitle:at:).md)
+### Querying Section Information
+- [func section(forSectionIndexTitle: String, at: Int) -> Int](./section%28forsectionindextitle,at%29.md)
   Returns the section number for a given section title and index in the section index.
 
 

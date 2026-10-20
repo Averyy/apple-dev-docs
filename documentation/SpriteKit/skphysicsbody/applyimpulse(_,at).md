@@ -1,23 +1,28 @@
 # applyImpulse(_:at:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies an impulse to a specific point of a physics body.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func applyImpulse(_ impulse: CGVector, at point: CGPoint)
+```
+
+```objc
+- (void) applyImpulse:(CGVector) impulse atPoint:(CGPoint) point;
 ```
 
 #### Discussion
@@ -31,17 +36,18 @@ Because this impulse is applied to a specific point on the object, it may change
 
 ## See Also
 
-- [Making Physics Bodies Move](making-physics-bodies-move.md)
+### Applying Forces and Impulses to a Physics Body
+- [Making Physics Bodies Move](../making-physics-bodies-move.md)
   Move a body using various physics properties, like velocity, gravity or impulses.
-- [func applyForce(CGVector)](skphysicsbody/applyforce(_:).md)
+- [func applyForce(CGVector)](./applyforce%28_%29.md)
   Applies a force to the center of gravity of a physics body.
-- [func applyTorque(CGFloat)](skphysicsbody/applytorque(_:).md)
+- [func applyTorque(CGFloat)](./applytorque%28_%29.md)
   Applies torque to an object.
-- [func applyForce(CGVector, at: CGPoint)](skphysicsbody/applyforce(_:at:).md)
+- [func applyForce(CGVector, at: CGPoint)](./applyforce%28_,at%29.md)
   Applies a force to a specific point of a physics body.
-- [func applyImpulse(CGVector)](skphysicsbody/applyimpulse(_:).md)
+- [func applyImpulse(CGVector)](./applyimpulse%28_%29.md)
   Applies an impulse to the center of gravity of a physics body.
-- [func applyAngularImpulse(CGFloat)](skphysicsbody/applyangularimpulse(_:).md)
+- [func applyAngularImpulse(CGFloat)](./applyangularimpulse%28_%29.md)
   Applies an impulse that imparts angular momentum to an object.
 
 

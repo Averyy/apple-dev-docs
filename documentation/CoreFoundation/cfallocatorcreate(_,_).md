@@ -1,18 +1,19 @@
 # CFAllocatorCreate(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an allocator object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates an allocator object.
 func CFAllocatorCreate(_ allocator: CFAllocator!, _ context: UnsafeMutablePointer<CFAllocatorContext>!) -> Unmanaged<CFAllocator>!
 ```
 
+```c
+extern CFAllocatorRefCFAllocatorCreate(CFAllocatorRef allocator, CFAllocatorContext *context);
+```
+
 #### Return Value
 
-The new allocator object, or `NULL` if there was a problem allocating memory. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+The new allocator object, or `NULL` if there was a problem allocating memory. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
@@ -30,8 +35,8 @@ You use this function to create custom allocators which you can then pass into v
 
 ## Parameters
 
-- `allocator`: The existing allocator to use to allocate memory for the new allocator. Pass the [`kCFAllocatorUseContext`](kcfallocatorusecontext.md) constant for this parameter to allocate memory using the appropriate function callback specified in the `context` parameter. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to allocate memory for the new allocator using the default allocator.
-- `context`: A structure of type [`CFAllocatorContext`](cfallocatorcontext.md). The fields of this structure hold (among other things) function pointers to callbacks used for allocating, reallocating, and deallocating memory.
+- `allocator`: The existing allocator to use to allocate memory for the new allocator. Pass the [`kCFAllocatorUseContext`](./kcfallocatorusecontext.md) constant for this parameter to allocate memory using the appropriate function callback specified in the `context` parameter. Pass `NULL` or [`kCFAllocatorDefault`](./kcfallocatordefault.md) to allocate memory for the new allocator using the default allocator.
+- `context`: A structure of type [`CFAllocatorContext`](./cfallocatorcontext.md). The fields of this structure hold (among other things) function pointers to callbacks used for allocating, reallocating, and deallocating memory.
 
 
 ---

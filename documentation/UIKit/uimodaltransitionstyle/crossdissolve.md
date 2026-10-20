@@ -1,19 +1,24 @@
 # UIModalTransitionStyle.crossDissolve
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case crossDissolve
+```
+
+```c
+UIModalTransitionStyleCrossDissolve
 ```
 
 #### Discussion
@@ -22,9 +27,10 @@ When the view controller is presented, the current view fades out while the new 
 
 ## See Also
 
-- [UIModalTransitionStyle.coverVertical](uimodaltransitionstyle/coververtical.md)
-- [UIModalTransitionStyle.flipHorizontal](uimodaltransitionstyle/fliphorizontal.md)
-- [UIModalTransitionStyle.partialCurl](uimodaltransitionstyle/partialcurl.md)
+### Constants
+- [UIModalTransitionStyle.coverVertical](./coververtical.md)
+- [UIModalTransitionStyle.flipHorizontal](./fliphorizontal.md)
+- [UIModalTransitionStyle.partialCurl](./partialcurl.md)
 
 
 ---

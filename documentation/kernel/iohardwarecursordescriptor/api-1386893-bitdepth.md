@@ -1,7 +1,8 @@
 # bitDepth
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Number bits per pixel, or a QD/QT pixel type, for example kIO8IndexedPixelFormat, kIO32ARGBPixelFormat.
 
@@ -10,7 +11,7 @@ Number bits per pixel, or a QD/QT pixel type, for example kIO8IndexedPixelFormat
 
 ## Declaration
 
-```swift
+```c
 UInt32 bitDepth;
 ```
 

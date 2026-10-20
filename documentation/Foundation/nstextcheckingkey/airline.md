@@ -1,7 +1,8 @@
 # airline
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that corresponds to the airline of a transit result.
 
@@ -20,9 +21,14 @@ A key that corresponds to the airline of a transit result.
 static let airline: NSTextCheckingKey
 ```
 
+```c
+extern NSTextCheckingKey const NSTextCheckingAirlineKey;
+```
+
 ## See Also
 
-- [static let flight: NSTextCheckingKey](nstextcheckingkey/flight.md)
+### Constants
+- [static let flight: NSTextCheckingKey](./flight.md)
   A key that corresponds to the flight component of a transit result.
 
 

@@ -1,7 +1,8 @@
 # continue
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The constant that defines the Continue label on the button.
 
@@ -22,9 +23,10 @@ static let `continue`: SignInWithAppleButton.Label
 
 ## See Also
 
-- [static let signIn: SignInWithAppleButton.Label](signinwithapplebutton/label/signin.md)
+### Labels
+- [static let signIn: SignInWithAppleButton.Label](./signin.md)
   The constant that defines the Sign in with Apple label on the button.
-- [static let signUp: SignInWithAppleButton.Label](signinwithapplebutton/label/signup.md)
+- [static let signUp: SignInWithAppleButton.Label](./signup.md)
   The constant that defines the Sign up with Apple label on the button.
 
 

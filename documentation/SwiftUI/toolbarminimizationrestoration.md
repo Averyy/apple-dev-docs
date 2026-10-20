@@ -1,7 +1,8 @@
 # ToolbarMinimizationRestoration
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The restoration behavior during toolbar minimization.
 
@@ -22,7 +23,7 @@ struct ToolbarMinimizationRestoration
 
 #### Overview
 
-Use this type with the [`toolbarMinimizationRestoration(_:for:)`](view/toolbarminimizationrestoration(_:for:).md) modifier to control when a minimized toolbar restores. By default the toolbar restores when the user reverses scroll direction; with [`atScrollEdge`](toolbarminimizationrestoration/atscrolledge.md), the toolbar instead restores only when the scroll view’s content reaches the scroll edge – appropriate for screens where the bar is mostly chrome that doesn’t need to follow the user.
+Use this type with the [`toolbarMinimizationRestoration(_:for:)`](./view/toolbarminimizationrestoration%28_,for%29.md) modifier to control when a minimized toolbar restores. By default the toolbar restores when the user reverses scroll direction; with [`atScrollEdge`](./toolbarminimizationrestoration/atscrolledge.md), the toolbar instead restores only when the scroll view’s content reaches the scroll edge – appropriate for screens where the bar is mostly chrome that doesn’t need to follow the user.
 
 ```swift
 .toolbarMinimizationBehavior(
@@ -34,30 +35,31 @@ Use this type with the [`toolbarMinimizationRestoration(_:for:)`](view/toolbarmi
 ## Topics
 
 ### Getting restoration options
-- [static let atScrollEdge: ToolbarMinimizationRestoration](toolbarminimizationrestoration/atscrolledge.md)
+- [static let atScrollEdge: ToolbarMinimizationRestoration](./toolbarminimizationrestoration/atscrolledge.md)
   The toolbar restores only when the scroll view’s content reaches the scroll edge.
-- [static let automatic: ToolbarMinimizationRestoration](toolbarminimizationrestoration/automatic.md)
+- [static let automatic: ToolbarMinimizationRestoration](./toolbarminimizationrestoration/automatic.md)
   The system determines the restoration behavior.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func toolbarMinimizationBehavior(ToolbarMinimizationBehavior, for: ToolbarPlacement...) -> some View](view/toolbarminimizationbehavior(_:for:).md)
+### Minimizing a toolbar
+- [func toolbarMinimizationBehavior(ToolbarMinimizationBehavior, for: ToolbarPlacement...) -> some View](./view/toolbarminimizationbehavior%28_,for%29.md)
   Sets the minimize behavior for the specified bars.
-- [struct ToolbarMinimizationBehavior](toolbarminimizationbehavior.md)
+- [struct ToolbarMinimizationBehavior](./toolbarminimizationbehavior.md)
   The minimization behavior of a toolbar.
-- [func toolbarMinimizationRestoration(ToolbarMinimizationRestoration, for: ToolbarPlacement...) -> some View](view/toolbarminimizationrestoration(_:for:).md)
+- [func toolbarMinimizationRestoration(ToolbarMinimizationRestoration, for: ToolbarPlacement...) -> some View](./view/toolbarminimizationrestoration%28_,for%29.md)
   Sets the restoration behavior for the specified bars during minimization.
-- [func toolbarMinimizationSafeAreaAdjustment(ToolbarMinimizationSafeAreaAdjustment, for: ToolbarPlacement...) -> some View](view/toolbarminimizationsafeareaadjustment(_:for:).md)
+- [func toolbarMinimizationSafeAreaAdjustment(ToolbarMinimizationSafeAreaAdjustment, for: ToolbarPlacement...) -> some View](./view/toolbarminimizationsafeareaadjustment%28_,for%29.md)
   Sets the safe area adjustment for the specified bars during minimization.
-- [struct ToolbarMinimizationSafeAreaAdjustment](toolbarminimizationsafeareaadjustment.md)
+- [struct ToolbarMinimizationSafeAreaAdjustment](./toolbarminimizationsafeareaadjustment.md)
   The safe area adjustment during toolbar minimization.
 
 

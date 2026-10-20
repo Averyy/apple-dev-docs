@@ -1,7 +1,8 @@
 # AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Relationships.AppCustomProductPageLocalization
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The custom product page localization to associate with the new app asset library placement ordering request.
 
@@ -10,14 +11,14 @@ The custom product page localization to associate with the new app asset library
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Relationships.AppCustomProductPageLocalization
 ```
 
 ## Topics
 
 ### Objects
-- [object AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Relationships.AppCustomProductPageLocalization.Data](appassetlibraryplacementorderingrequestcreaterequest/data-data.dictionary/relationships-data.dictionary/appcustomproductpagelocalization-data.dictionary/data-data.dictionary.md)
+- [object AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Relationships.AppCustomProductPageLocalization.Data](./appcustomproductpagelocalization-data.dictionary/data-data.dictionary.md)
   The request body you use to create an app asset library placement ordering request.
 
 ## Properties
@@ -26,11 +27,12 @@ object AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Relationships.A
 
 ## See Also
 
-- [object AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Relationships.OrderedPlacements](appassetlibraryplacementorderingrequestcreaterequest/data-data.dictionary/relationships-data.dictionary/orderedplacements-data.dictionary.md)
+### Objects
+- [object AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Relationships.OrderedPlacements](./orderedplacements-data.dictionary.md)
   The placements to order, listed in the sequence you want them to display.
-- [object AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Relationships.AppStoreVersionLocalization](appassetlibraryplacementorderingrequestcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionlocalization-data.dictionary.md)
+- [object AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Relationships.AppStoreVersionLocalization](./appstoreversionlocalization-data.dictionary.md)
   The App Store version localization to associate with the new app asset library placement ordering request.
-- [object AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization](appassetlibraryplacementorderingrequestcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimenttreatmentlocalization-data.dictionary.md)
+- [object AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization](./appstoreversionexperimenttreatmentlocalization-data.dictionary.md)
   The App Store version experiment treatment localization to associate with the new app asset library placement ordering request.
 
 

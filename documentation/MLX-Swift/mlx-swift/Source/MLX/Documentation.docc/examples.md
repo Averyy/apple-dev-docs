@@ -8,12 +8,7 @@ url: https://github.com/ml-explore/mlx-swift/blob/main/Source/MLX/Documentation.
 
 Swift example code for MLX and MLXNN.
 
-@Metadata {
-    @CallToAction(
-        purpose: download,
-        url: "https://github.com/ml-explore/mlx-swift-examples/archive/refs/heads/main.zip")
-    @PageKind(sampleCode)
-}
+
 
 ## Overview
 

@@ -1,7 +1,8 @@
 # init(exactly:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new value, if the given integer can be represented exactly.
 

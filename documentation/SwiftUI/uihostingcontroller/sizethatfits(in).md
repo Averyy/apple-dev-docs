@@ -1,7 +1,8 @@
 # sizeThatFits(in:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates and returns the most appropriate size for the current view.
 
@@ -29,10 +30,11 @@ The size that offers the best fit for the root view and its contents.
 
 ## See Also
 
-- [var sizingOptions: UIHostingControllerSizingOptions](uihostingcontroller/sizingoptions.md)
+### Managing the size
+- [var sizingOptions: UIHostingControllerSizingOptions](./sizingoptions.md)
   The options for how the hosting controller tracks changes to the size of its SwiftUI content.
-- [func preferredContentSizeDidChange(forChildContentContainer: any UIContentContainer)](uihostingcontroller/preferredcontentsizedidchange(forchildcontentcontainer:).md)
-- [var safeAreaRegions: SafeAreaRegions](uihostingcontroller/safearearegions.md)
+- [func preferredContentSizeDidChange(forChildContentContainer: any UIContentContainer)](./preferredcontentsizedidchange%28forchildcontentcontainer%29.md)
+- [var safeAreaRegions: SafeAreaRegions](./safearearegions.md)
   The safe area regions that this view controller adds to its view.
 
 

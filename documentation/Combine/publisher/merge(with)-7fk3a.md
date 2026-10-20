@@ -1,7 +1,8 @@
 # merge(with:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Combines elements from this publisher with those from another publisher of the same type, delivering an interleaved sequence of elements.
 
@@ -30,19 +31,20 @@ A publisher that emits an event when either upstream publisher emits an event.
 
 ## See Also
 
-- [func merge<P>(with: P) -> Publishers.Merge<Self, P>](publisher/merge(with:)-7qt71.md)
+### Republishing elements from multiple publishers as an interleaved stream
+- [func merge<P>(with: P) -> Publishers.Merge<Self, P>](./merge%28with%29-7qt71.md)
   Combines elements from this publisher with those from another publisher, delivering an interleaved sequence of elements.
-- [func merge<B, C>(with: B, C) -> Publishers.Merge3<Self, B, C>](publisher/merge(with:_:).md)
+- [func merge<B, C>(with: B, C) -> Publishers.Merge3<Self, B, C>](./merge%28with,_%29.md)
   Combines elements from this publisher with those from two other publishers, delivering an interleaved sequence of elements.
-- [func merge<B, C, D>(with: B, C, D) -> Publishers.Merge4<Self, B, C, D>](publisher/merge(with:_:_:).md)
+- [func merge<B, C, D>(with: B, C, D) -> Publishers.Merge4<Self, B, C, D>](./merge%28with,_,_%29.md)
   Combines elements from this publisher with those from three other publishers, delivering an interleaved sequence of elements.
-- [func merge<B, C, D, E>(with: B, C, D, E) -> Publishers.Merge5<Self, B, C, D, E>](publisher/merge(with:_:_:_:).md)
+- [func merge<B, C, D, E>(with: B, C, D, E) -> Publishers.Merge5<Self, B, C, D, E>](./merge%28with,_,_,_%29.md)
   Combines elements from this publisher with those from four other publishers, delivering an interleaved sequence of elements.
-- [func merge<B, C, D, E, F>(with: B, C, D, E, F) -> Publishers.Merge6<Self, B, C, D, E, F>](publisher/merge(with:_:_:_:_:).md)
+- [func merge<B, C, D, E, F>(with: B, C, D, E, F) -> Publishers.Merge6<Self, B, C, D, E, F>](./merge%28with,_,_,_,_%29.md)
   Combines elements from this publisher with those from five other publishers, delivering an interleaved sequence of elements.
-- [func merge<B, C, D, E, F, G>(with: B, C, D, E, F, G) -> Publishers.Merge7<Self, B, C, D, E, F, G>](publisher/merge(with:_:_:_:_:_:).md)
+- [func merge<B, C, D, E, F, G>(with: B, C, D, E, F, G) -> Publishers.Merge7<Self, B, C, D, E, F, G>](./merge%28with,_,_,_,_,_%29.md)
   Combines elements from this publisher with those from six other publishers, delivering an interleaved sequence of elements.
-- [func merge<B, C, D, E, F, G, H>(with: B, C, D, E, F, G, H) -> Publishers.Merge8<Self, B, C, D, E, F, G, H>](publisher/merge(with:_:_:_:_:_:_:).md)
+- [func merge<B, C, D, E, F, G, H>(with: B, C, D, E, F, G, H) -> Publishers.Merge8<Self, B, C, D, E, F, G, H>](./merge%28with,_,_,_,_,_,_%29.md)
   Combines elements from this publisher with those from seven other publishers, delivering an interleaved sequence of elements.
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Natural Language  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the option with a raw value.
 

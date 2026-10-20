@@ -1,7 +1,8 @@
 # StatusTestArrayValueArrayObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A status value for the test status item array.
 
@@ -16,7 +17,7 @@ A status value for the test status item array.
 
 ## Declaration
 
-```swift
+```
 object StatusTestArrayValueArrayObject
 ```
 

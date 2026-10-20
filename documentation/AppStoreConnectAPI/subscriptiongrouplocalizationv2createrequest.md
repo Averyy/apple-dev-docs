@@ -1,7 +1,8 @@
 # SubscriptionGroupLocalizationV2CreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a subscription group localization with the v2 API.
 
@@ -10,14 +11,14 @@ The request body you use to create a subscription group localization with the v2
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupLocalizationV2CreateRequest
 ```
 
 ## Topics
 
 ### Objects and types
-- [object SubscriptionGroupLocalizationV2CreateRequest.Data](subscriptiongrouplocalizationv2createrequest/data-data.dictionary.md)
+- [object SubscriptionGroupLocalizationV2CreateRequest.Data](./subscriptiongrouplocalizationv2createrequest/data-data.dictionary.md)
   The request body you use to create a subscription group localization.
 
 ## Properties
@@ -26,13 +27,14 @@ object SubscriptionGroupLocalizationV2CreateRequest
 
 ## See Also
 
-- [object SubscriptionGroupLocalizationV2](subscriptiongrouplocalizationv2.md)
+### Objects
+- [object SubscriptionGroupLocalizationV2](./subscriptiongrouplocalizationv2.md)
   The localized custom name for a subscription group configured with the v2 API, shown to customers in a specific language.
-- [object SubscriptionGroupLocalizationV2Response](subscriptiongrouplocalizationv2response.md)
+- [object SubscriptionGroupLocalizationV2Response](./subscriptiongrouplocalizationv2response.md)
   The response body for endpoints that create, read, or modify a subscription group localization with the v2 API.
-- [object SubscriptionGroupLocalizationV2UpdateRequest](subscriptiongrouplocalizationv2updaterequest.md)
+- [object SubscriptionGroupLocalizationV2UpdateRequest](./subscriptiongrouplocalizationv2updaterequest.md)
   The request body you use to modify a subscription group localization.
-- [object SubscriptionGroupLocalizationsV2Response](subscriptiongrouplocalizationsv2response.md)
+- [object SubscriptionGroupLocalizationsV2Response](./subscriptiongrouplocalizationsv2response.md)
   The response body for endpoints that list subscription group localizations configured with the v2 API.
 
 

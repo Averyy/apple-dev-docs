@@ -1,7 +1,8 @@
 # graph
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The graph on which the operation is defined.
 
@@ -17,6 +18,10 @@ The graph on which the operation is defined.
 
 ```swift
 var graph: MPSGraph { get }
+```
+
+```objc
+@property (nonatomic, readonly) MPSGraph * graph;
 ```
 
 

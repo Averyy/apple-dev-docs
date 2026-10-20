@@ -1,7 +1,8 @@
 # Publishers.TimeGroupingStrategy.byTime(_:_:)
 
 **Framework**: Combine  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A grouping that collects and periodically publishes items.
 
@@ -22,7 +23,8 @@ case byTime(Context, Context.SchedulerTimeType.Stride)
 
 ## See Also
 
-- [case byTimeOrCount(Context, Context.SchedulerTimeType.Stride, Int)](publishers/timegroupingstrategy/bytimeorcount(_:_:_:).md)
+### Time groupings
+- [case byTimeOrCount(Context, Context.SchedulerTimeType.Stride, Int)](./bytimeorcount%28_,_,_%29.md)
   A grouping that collects and publishes items periodically or when a buffer reaches a maximum size.
 
 

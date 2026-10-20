@@ -7,12 +7,12 @@ Start sending data on a stream.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn startStream(
  void);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns kIOReturnSuccess if the stream was successfully started.
 
@@ -22,13 +22,14 @@ This must be implemented by a subclass.
 
 ## See Also
 
-- [getStreamMode](iostream/1809626-getstreammode.md)
+### Stream control
+- [getStreamMode](./api-1809626-getstreammode.md)
   Returns the mode of the stream, either input or output.
-- [setStreamMode](iostream/1809631-setstreammode.md)
+- [setStreamMode](./api-1809631-setstreammode.md)
   Sets the mode of the stream, either input or output.
-- [stopStream](iostream/1809642-stopstream.md)
+- [stopStream](./api-1809642-stopstream.md)
   Stop sending data on a stream.
-- [suspendStream](iostream/1809648-suspendstream.md)
+- [suspendStream](./api-1809648-suspendstream.md)
   Temporarily suspend data flow on the stream.
 
 

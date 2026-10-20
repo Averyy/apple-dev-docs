@@ -1,7 +1,8 @@
 # DocumentObservation.Container.Text
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a region of text in a document.
 
@@ -22,41 +23,42 @@ struct Text
 ## Topics
 
 ### Accessing the text
-- [var detectedData: [DocumentObservation.Container.DataDetectorMatch]](documentobservation/container/text-swift.struct/detecteddata.md)
+- [var detectedData: [DocumentObservation.Container.DataDetectorMatch]](./text-swift.struct/detecteddata.md)
   Detected content in the document matched to a specific type of data, such as emails, phone numbers, addresses, and so on.
-- [var lines: [RecognizedTextObservation]](documentobservation/container/text-swift.struct/lines.md)
+- [var lines: [RecognizedTextObservation]](./text-swift.struct/lines.md)
   The text grouped by line.
-- [var transcript: String](documentobservation/container/text-swift.struct/transcript.md)
+- [var transcript: String](./text-swift.struct/transcript.md)
   The complete text as a string.
-- [var words: [RecognizedTextObservation]?](documentobservation/container/text-swift.struct/words.md)
+- [var words: [RecognizedTextObservation]?](./text-swift.struct/words.md)
   An instance property that returns individual words in a text container.
 ### Inspecting the text
-- [var boundingRegion: NormalizedRegion](documentobservation/container/text-swift.struct/boundingregion.md)
+- [var boundingRegion: NormalizedRegion](./text-swift.struct/boundingregion.md)
   A polygon that defines the boundary of text.
-- [var textAlignment: DocumentObservation.Container.Text.Alignment?](documentobservation/container/text-swift.struct/textalignment.md)
+- [var textAlignment: DocumentObservation.Container.Text.Alignment?](./text-swift.struct/textalignment.md)
   The alignment of the text within its container.
-- [DocumentObservation.Container.Text.Alignment](documentobservation/container/text-swift.struct/alignment.md)
+- [DocumentObservation.Container.Text.Alignment](./text-swift.struct/alignment.md)
   The different text alignment types within a container.
 ### Getting the bounding region
-- [func boundingRegion(for: Range<String.Index>) -> NormalizedRegion?](documentobservation/container/text-swift.struct/boundingregion(for:).md)
+- [func boundingRegion(for: Range<String.Index>) -> NormalizedRegion?](./text-swift.struct/boundingregion%28for%29.md)
   Calculates a bounding region around the range of characters within a string.
 
 ## Relationships
 
 ### Conforms To
-- [BoundingRegionProviding](boundingregionproviding.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BoundingRegionProviding](../../boundingregionproviding.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [DocumentObservation.Container.List](documentobservation/container/list.md)
+### Getting the sections in a document
+- [DocumentObservation.Container.List](./list.md)
   A structure that represents a list of items within a document.
-- [DocumentObservation.Container.Table](documentobservation/container/table.md)
+- [DocumentObservation.Container.Table](./table.md)
   A structure that represents a table within a document.
 
 

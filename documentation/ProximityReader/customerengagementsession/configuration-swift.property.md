@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configuration for this session.
 
@@ -18,13 +19,14 @@ final let configuration: CustomerEngagementSession.Configuration
 
 ## See Also
 
-- [CustomerEngagementSession.Configuration](customerengagementsession/configuration-swift.struct.md)
+### Configuring a session
+- [CustomerEngagementSession.Configuration](./configuration-swift.struct.md)
   A set of configuration options for a customer engagement session.
-- [func open(using: CustomerEngagement.Token?) async throws](customerengagementsession/open(using:).md)
+- [func open(using: CustomerEngagement.Token?) async throws](./open%28using%29.md)
   Opens the engagement session.
-- [func close() async throws](customerengagementsession/close.md)
+- [func close() async throws](./close%28%29.md)
   Closes the engagement session.
-- [CustomerEngagementSession.Token](customerengagementsession/token-swift.struct.md)
+- [CustomerEngagementSession.Token](./token-swift.struct.md)
   A session token.
 
 

@@ -1,7 +1,8 @@
 # error
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 var error: (any Error)? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSError * error;
 ```
 
 

@@ -1,7 +1,8 @@
 # suggestedRoomUniqueIdentifier
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier corresponding to the room that the framework suggests.
 
@@ -16,17 +17,22 @@ The identifier corresponding to the room that the framework suggests.
 var suggestedRoomUniqueIdentifier: UUID? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSUUID * suggestedRoomUniqueIdentifier;
+```
+
 #### Discussion
 
-If `nil`, then any room may be suggested. See [`uniqueIdentifier`](hmhome/uniqueidentifier.md) for more information.
+If `nil`, then any room may be suggested. See [`uniqueIdentifier`](../hmhome/uniqueidentifier.md) for more information.
 
 ## See Also
 
-- [var homeUniqueIdentifier: UUID?](hmaccessorysetuprequest/homeuniqueidentifier.md)
+### Setting up accessorices
+- [var homeUniqueIdentifier: UUID?](./homeuniqueidentifier.md)
   The identifier corresponding to the home that the accessory should be added to when being set up.
-- [var payload: HMAccessorySetupPayload?](hmaccessorysetuprequest/payload.md)
+- [var payload: HMAccessorySetupPayload?](./payload.md)
   The payload to use for accessory setup.
-- [var suggestedAccessoryName: String?](hmaccessorysetuprequest/suggestedaccessoryname.md)
+- [var suggestedAccessoryName: String?](./suggestedaccessoryname.md)
   The name that the framework suggests when the user names the accessory being set up.
 
 

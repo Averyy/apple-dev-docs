@@ -1,7 +1,8 @@
 # signpostCategory
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The developer-specified category of the custom metric represented by the object.
 
@@ -19,7 +20,8 @@ let signpostCategory: String
 
 ## See Also
 
-- [let signpostName: String](signpostintervalmetric/signpostname.md)
+### Signpost details
+- [let signpostName: String](./signpostname.md)
   The developer-specified name of the custom metric represented by the object.
 
 

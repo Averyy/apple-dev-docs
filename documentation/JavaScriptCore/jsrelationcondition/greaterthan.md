@@ -1,7 +1,8 @@
 # JSRelationCondition.greaterThan
 
 **Framework**: JavaScriptCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case greaterThan
+```
+
+```c
+kJSRelationConditionGreaterThan
 ```
 
 #### Discussion

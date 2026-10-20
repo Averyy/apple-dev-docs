@@ -1,7 +1,8 @@
 # HKMetadataKeyBodyTemperatureSensorLocation
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The location where a specific body temperature reading was taken.
 
@@ -19,14 +20,18 @@ The location where a specific body temperature reading was taken.
 let HKMetadataKeyBodyTemperatureSensorLocation: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyBodyTemperatureSensorLocation;
+```
+
 #### Discussion
 
-This key takes an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object whose value is [`HKBodyTemperatureSensorLocation`](hkbodytemperaturesensorlocation.md).
+This key takes an [`NSNumber`](../Foundation/nsnumber.md) object whose value is [`HKBodyTemperatureSensorLocation`](./hkbodytemperaturesensorlocation.md).
 
 ## Topics
 
 ### Valid Locations
-- [enum HKBodyTemperatureSensorLocation](hkbodytemperaturesensorlocation.md)
+- [enum HKBodyTemperatureSensorLocation](./hkbodytemperaturesensorlocation.md)
   Constants that indicate where on the body a temperature reading was taken.
 
 

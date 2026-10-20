@@ -1,7 +1,8 @@
 # SignpostRecord
 
 **Framework**: MetricKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A record of a signpost event associated with a diagnostic report.
 
@@ -19,44 +20,45 @@ struct SignpostRecord
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
 
 #### Discussion
 
-This describes a single signpost event that was active around the time of a diagnostic event. Each record carries a subsystem, category, and name that identify the signpost, along with an [`interval`](signpostrecord/interval.md) covering the signpost’s duration. For instantaneous signposts, the start and end of the interval are equal, giving a duration of zero.
+This describes a single signpost event that was active around the time of a diagnostic event. Each record carries a subsystem, category, and name that identify the signpost, along with an [`interval`](./signpostrecord/interval.md) covering the signpost’s duration. For instantaneous signposts, the start and end of the interval are equal, giving a duration of zero.
 
-Access signpost records through [`signpostData`](diagnosticreport/environment-swift.struct/signpostdata.md) on the diagnostic report’s environment.
+Access signpost records through [`signpostData`](./diagnosticreport/environment-swift.struct/signpostdata.md) on the diagnostic report’s environment.
 
 ## Topics
 
 ### Signpost details
-- [let subsystem: String](signpostrecord/subsystem.md)
+- [let subsystem: String](./signpostrecord/subsystem.md)
   Signpost subsystem
-- [let category: String](signpostrecord/category.md)
+- [let category: String](./signpostrecord/category.md)
   Signpost category
-- [let name: String](signpostrecord/name.md)
+- [let name: String](./signpostrecord/name.md)
   Signpost name
 ### Timing
-- [let interval: DateInterval](signpostrecord/interval.md)
+- [let interval: DateInterval](./signpostrecord/interval.md)
   Time interval for the signpost For instant signposts, start and end are the same (duration == 0)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CallStackTree](callstacktree.md)
+### Call stack data
+- [struct CallStackTree](./callstacktree.md)
   A tree structure representing a collection of call stacks captured during a diagnostic event.
-- [struct CallStackThread](callstackthread.md)
+- [struct CallStackThread](./callstackthread.md)
   A single stack thread within a call stack tree.
-- [struct CallStackFrame](callstackframe.md)
+- [struct CallStackFrame](./callstackframe.md)
   A single frame within a call stack thread.
 
 

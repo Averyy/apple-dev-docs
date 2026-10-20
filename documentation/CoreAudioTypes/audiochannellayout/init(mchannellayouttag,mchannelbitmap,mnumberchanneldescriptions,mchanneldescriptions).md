@@ -1,7 +1,8 @@
 # init(mChannelLayoutTag:mChannelBitmap:mNumberChannelDescriptions:mChannelDescriptions:)
 
 **Framework**: Core Audio Types  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ init(mChannelLayoutTag: AudioChannelLayoutTag, mChannelBitmap: AudioChannelBitma
 
 ## See Also
 
-- [init()](audiochannellayout/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

@@ -1,18 +1,19 @@
 # CTCharacterCollection.adobeJapan2
 
 **Framework**: Core Text  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The Adobe-Japan2 mapping.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ The Adobe-Japan2 mapping.
 case adobeJapan2
 ```
 
+```c
+kCTCharacterCollectionAdobeJapan2
+```
+
 ## See Also
 
-- [CTCharacterCollection.identityMapping](ctcharactercollection/identitymapping.md)
+### Constants
+- [CTCharacterCollection.identityMapping](./identitymapping.md)
   The character identifier is equal to the glyph index.
-- [CTCharacterCollection.adobeCNS1](ctcharactercollection/adobecns1.md)
+- [CTCharacterCollection.adobeCNS1](./adobecns1.md)
   The Adobe-CNS1 mapping.
-- [CTCharacterCollection.adobeGB1](ctcharactercollection/adobegb1.md)
+- [CTCharacterCollection.adobeGB1](./adobegb1.md)
   The Adobe-GB1 mapping.
-- [CTCharacterCollection.adobeJapan1](ctcharactercollection/adobejapan1.md)
+- [CTCharacterCollection.adobeJapan1](./adobejapan1.md)
   The Adobe-Japan1 mapping.
-- [CTCharacterCollection.adobeKorea1](ctcharactercollection/adobekorea1.md)
+- [CTCharacterCollection.adobeKorea1](./adobekorea1.md)
   The Adobe-Korea1 mapping.
 
 

@@ -1,7 +1,8 @@
 # title
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The text to display in the annotation’s callout.
 
@@ -10,7 +11,7 @@ The text to display in the annotation’s callout.
 
 ## Declaration
 
-```swift
+```
 title?: string;
 ```
 
@@ -20,11 +21,12 @@ The title to show in the callout. The default value is `null`.
 
 ## See Also
 
-- [data](annotationconstructoroptions/data.md)
+### Creating data and titles
+- [data](./data.md)
   Data that you define and assign to the annotation.
-- [subtitle](annotationconstructoroptions/subtitle.md)
+- [subtitle](./subtitle.md)
   The text to display as a subtitle on the second line of an annotation’s callout.
-- [accessibilityLabel](annotationconstructoroptions/accessibilitylabel.md)
+- [accessibilityLabel](./accessibilitylabel.md)
   Accessibility text for the annotation.
 
 

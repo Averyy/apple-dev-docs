@@ -1,7 +1,8 @@
 # beginAnalysis(of:)
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Analyzes video frames for the given capture device input.
 
@@ -16,9 +17,13 @@ Analyzes video frames for the given capture device input.
 func beginAnalysis(of captureDeviceInput: AVCaptureDeviceInput) throws
 ```
 
+```objc
+- (BOOL) beginAnalysisOfCaptureDeviceInput:(AVCaptureDeviceInput *) captureDeviceInput error:(NSError **) error;
+```
+
 #### Discussion
 
-Call this method to begin analyzing a video stream from the given [`AVCaptureDeviceInput`](https://developer.apple.com/documentation/avfoundation/avcapturedeviceinput). If the framework detects sensitive content in the video stream, the `AVCaptureDeviceInput` interrupts subsequent frames with the `AVCaptureSessionInterruptionReasonSensitiveContentMitigationActivated` interruption reason to effectively censor the video stream on the person’s behalf. When your app is ready to show the video stream again, resume analysis by calling [`continueStream()`](scvideostreamanalyzer/continuestream().md).
+Call this method to begin analyzing a video stream from the given [`AVCaptureDeviceInput`](../../AVFoundation/avcapturedeviceinput.md). If the framework detects sensitive content in the video stream, the `AVCaptureDeviceInput` interrupts subsequent frames with the `AVCaptureSessionInterruptionReasonSensitiveContentMitigationActivated` interruption reason to effectively censor the video stream on the person’s behalf. When your app is ready to show the video stream again, resume analysis by calling [`continueStream()`](./continuestream%28%29.md).
 
 ## Parameters
 
@@ -26,13 +31,14 @@ Call this method to begin analyzing a video stream from the given [`AVCaptureDev
 
 ## See Also
 
-- [func analyze(CVPixelBuffer)](scvideostreamanalyzer/analyze(_:).md)
+### Analyzing a video stream
+- [func analyze(CVPixelBuffer)](./analyze%28_%29.md)
   Analyzes individual video-stream frames for sensitive content.
-- [func beginAnalysis(of: VTDecompressionSession) throws](scvideostreamanalyzer/beginanalysis(of:)-9ehkx.md)
+- [func beginAnalysis(of: VTDecompressionSession) throws](./beginanalysis%28of%29-9ehkx.md)
   Analyzes video frames for the given decompression session.
-- [var analysisChanges: some AsyncSequence<SCSensitivityAnalysis, any Error>](scvideostreamanalyzer/analysischanges.md)
+- [var analysisChanges: some AsyncSequence<SCSensitivityAnalysis, any Error>](./analysischanges.md)
   A stream your app uses to receive video-stream analysis results.
-- [func endAnalysis()](scvideostreamanalyzer/endanalysis.md)
+- [func endAnalysis()](./endanalysis%28%29.md)
   Stops stream analysis.
 
 

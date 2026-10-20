@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of values on this axis.
 

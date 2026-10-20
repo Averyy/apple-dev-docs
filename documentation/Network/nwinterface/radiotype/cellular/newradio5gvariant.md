@@ -1,7 +1,8 @@
 # NWInterface.RadioType.Cellular.NewRadio5GVariant
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 15.0+
@@ -21,16 +22,16 @@ enum NewRadio5GVariant
 ## Topics
 
 ### Enumeration Cases
-- [NWInterface.RadioType.Cellular.NewRadio5GVariant.mmWave](nwinterface/radiotype/cellular/newradio5gvariant/mmwave.md)
-- [NWInterface.RadioType.Cellular.NewRadio5GVariant.sub6GHz](nwinterface/radiotype/cellular/newradio5gvariant/sub6ghz.md)
+- [NWInterface.RadioType.Cellular.NewRadio5GVariant.mmWave](./newradio5gvariant/mmwave.md)
+- [NWInterface.RadioType.Cellular.NewRadio5GVariant.sub6GHz](./newradio5gvariant/sub6ghz.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

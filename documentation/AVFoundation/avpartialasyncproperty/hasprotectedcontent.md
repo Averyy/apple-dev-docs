@@ -1,7 +1,8 @@
 # hasProtectedContent
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the asset contains protected content.
 
@@ -19,11 +20,13 @@ A Boolean value that indicates whether the asset contains protected content.
 static var hasProtectedContent: AVAsyncProperty<Root, Bool> { get }
 ```
 
+Available when `Root` inherits `AVAsset`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
-Assets that contain protected content may not be playable without successful authorization, even if the value of its [`isPlayable`](avasset/isplayable.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+Assets that contain protected content may not be playable without successful authorization, even if the value of its [`isPlayable`](../avasset/isplayable.md) property is [`true`](../../Swift/true.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # UITextPlaceholder
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A placeholder object that reserves visual space in a text input view.
 
@@ -19,29 +20,34 @@ A placeholder object that reserves visual space in a text input view.
 class UITextPlaceholder
 ```
 
+```objc
+@interface UITextPlaceholder : NSObject
+```
+
 ## Topics
 
 ### Accessing the selection rectangles
-- [var rects: [UITextSelectionRect]](uitextplaceholder/rects.md)
+- [var rects: [UITextSelectionRect]](./uitextplaceholder/rects.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [func insertTextPlaceholder(with: CGSize) -> UITextPlaceholder](uitextinput/inserttextplaceholder(with:).md)
+### Managing placeholders
+- [func insertTextPlaceholder(with: CGSize) -> UITextPlaceholder](./uitextinput/inserttextplaceholder%28with%29.md)
   Inserts a placeholder object to reserve visual space during text input.
-- [func remove(UITextPlaceholder)](uitextinput/remove(_:).md)
+- [func remove(UITextPlaceholder)](./uitextinput/remove%28_%29.md)
   Removes a placeholder object from the text input view.
 
 

@@ -1,18 +1,19 @@
 # BNNSFlags
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that control the behavior of a filter parameter.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,28 +21,32 @@ Options that control the behavior of a filter parameter.
 struct BNNSFlags
 ```
 
+```c
+typedef enum { ... } BNNSFlags;
+```
+
 ## Topics
 
 ### Filter Flags
-- [static var useClientPointer: BNNSFlags](bnnsflags/useclientpointer.md)
+- [static var useClientPointer: BNNSFlags](./bnnsflags/useclientpointer.md)
   A flag that instructs the filter to use pointers to data you provide at creation time.
 ### Raw Values
-- [init(UInt32)](bnnsflags/init(_:).md)
-- [var rawValue: UInt32](bnnsflags/rawvalue.md)
+- [init(UInt32)](./bnnsflags/init%28_%29.md)
+- [var rawValue: UInt32](./bnnsflags/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

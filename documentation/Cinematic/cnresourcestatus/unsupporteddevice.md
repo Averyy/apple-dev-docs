@@ -1,7 +1,8 @@
 # CNResourceStatus.unsupportedDevice
 
 **Framework**: Cinematic  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device lacks hardware capabilities for the given configuration
 
@@ -16,6 +17,10 @@ The device lacks hardware capabilities for the given configuration
 
 ```swift
 case unsupportedDevice
+```
+
+```c
+CNResourceStatusUnsupportedDevice
 ```
 
 

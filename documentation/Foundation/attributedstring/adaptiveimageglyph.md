@@ -1,7 +1,8 @@
 # AttributedString.AdaptiveImageGlyph
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -21,25 +22,25 @@ struct AdaptiveImageGlyph
 ## Topics
 
 ### Initializers
-- [init(NSAdaptiveImageGlyph)](attributedstring/adaptiveimageglyph/init(_:)-7hag2.md)
-- [init(NSAdaptiveImageGlyph)](attributedstring/adaptiveimageglyph/init(_:)-8ahts.md)
-- [init(imageContent: Data)](attributedstring/adaptiveimageglyph/init(imagecontent:).md)
+- [init(NSAdaptiveImageGlyph)](./adaptiveimageglyph/init%28_%29-7hag2.md)
+- [init(NSAdaptiveImageGlyph)](./adaptiveimageglyph/init%28_%29-8ahts.md)
+- [init(imageContent: Data)](./adaptiveimageglyph/init%28imagecontent%29.md)
 ### Instance Properties
-- [let contentDescription: String](attributedstring/adaptiveimageglyph/contentdescription.md)
-- [let contentIdentifier: String](attributedstring/adaptiveimageglyph/contentidentifier.md)
-- [let imageContent: Data](attributedstring/adaptiveimageglyph/imagecontent.md)
+- [let contentDescription: String](./adaptiveimageglyph/contentdescription.md)
+- [let contentIdentifier: String](./adaptiveimageglyph/contentidentifier.md)
+- [let imageContent: Data](./adaptiveimageglyph/imagecontent.md)
 ### Type Properties
-- [static var contentType: UTType](attributedstring/adaptiveimageglyph/contenttype.md)
+- [static var contentType: UTType](./adaptiveimageglyph/contenttype.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

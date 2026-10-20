@@ -1,7 +1,8 @@
 # Predicate(_:)
 
 **Framework**: Foundation  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - iOS 17.0+
@@ -21,7 +22,8 @@
 
 ## See Also
 
-- [macro Expression<each Input, Output>((repeat each Input) -> Output) -> Expression<repeat each Input, Output>](expression(_:).md)
+### Macros
+- [macro Expression<each Input, Output>((repeat each Input) -> Output) -> Expression<repeat each Input, Output>](./expression%28_%29.md)
 
 
 ---

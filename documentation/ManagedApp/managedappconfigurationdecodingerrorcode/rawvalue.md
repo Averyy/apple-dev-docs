@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: ManagedApp  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error code’s value in its underlying type.
 

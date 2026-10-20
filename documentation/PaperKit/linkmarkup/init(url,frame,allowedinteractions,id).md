@@ -1,7 +1,8 @@
 # init(url:frame:allowedInteractions:id:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a new link markup from the specified parameters.
 

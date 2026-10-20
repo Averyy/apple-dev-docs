@@ -1,7 +1,8 @@
 # GameCenterLeaderboardSetV2CreateRequest.Data.Relationships.Versions
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describes the versions of the Game Center leaderboard set.
 
@@ -10,7 +11,7 @@ The data that describes the versions of the Game Center leaderboard set.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetV2CreateRequest.Data.Relationships.Versions
 ```
 
@@ -21,7 +22,7 @@ object GameCenterLeaderboardSetV2CreateRequest.Data.Relationships.Versions
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardSetV2CreateRequest.Data.Relationships.Versions.Data](gamecenterleaderboardsetv2createrequest/data-data.dictionary/relationships-data.dictionary/versions-data.dictionary/data-data.dictionary.md)
+- [object GameCenterLeaderboardSetV2CreateRequest.Data.Relationships.Versions.Data](./versions-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 
@@ -29,11 +30,12 @@ object GameCenterLeaderboardSetV2CreateRequest.Data.Relationships.Versions
 
 ## See Also
 
-- [object GameCenterLeaderboardSetV2CreateRequest.Data.Relationships.GameCenterDetail](gamecenterleaderboardsetv2createrequest/data-data.dictionary/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
+### Dictionaries
+- [object GameCenterLeaderboardSetV2CreateRequest.Data.Relationships.GameCenterDetail](./gamecenterdetail-data.dictionary.md)
   The data that describes the Game Center detail of the Game Center leaderboard set.
-- [object GameCenterLeaderboardSetV2CreateRequest.Data.Relationships.GameCenterGroup](gamecenterleaderboardsetv2createrequest/data-data.dictionary/relationships-data.dictionary/gamecentergroup-data.dictionary.md)
+- [object GameCenterLeaderboardSetV2CreateRequest.Data.Relationships.GameCenterGroup](./gamecentergroup-data.dictionary.md)
   The data that describes the Game Center group of the Game Center leaderboard set.
-- [object GameCenterLeaderboardSetV2CreateRequest.Data.Relationships.GameCenterLeaderboards](gamecenterleaderboardsetv2createrequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboards-data.dictionary.md)
+- [object GameCenterLeaderboardSetV2CreateRequest.Data.Relationships.GameCenterLeaderboards](./gamecenterleaderboards-data.dictionary.md)
   The data that describes the Game Center leaderboards of the Game Center leaderboard set.
 
 

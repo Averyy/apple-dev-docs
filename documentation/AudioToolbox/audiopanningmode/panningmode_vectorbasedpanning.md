@@ -1,17 +1,18 @@
 # AudioPanningMode.panningMode_VectorBasedPanning
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A vector-based panning algorithm.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ A vector-based panning algorithm.
 case panningMode_VectorBasedPanning
 ```
 
+```c
+kPanningMode_VectorBasedPanning
+```
+
 ## See Also
 
-- [AudioPanningMode.panningMode_SoundField](audiopanningmode/panningmode_soundfield.md)
+### Modes
+- [AudioPanningMode.panningMode_SoundField](./panningmode_soundfield.md)
   The SoundField panning algorithm.
 
 

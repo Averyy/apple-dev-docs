@@ -1,17 +1,22 @@
 # sourceURL
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source URL of the XML document.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var sourceURL: Unmanaged<CFURL>!
+```
+
+```c
+CFURLRef sourceURL;
 ```
 
 

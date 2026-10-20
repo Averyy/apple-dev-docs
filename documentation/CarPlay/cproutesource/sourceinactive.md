@@ -1,7 +1,8 @@
 # CPRouteSource.sourceInactive
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No current route source.
 
@@ -14,6 +15,10 @@ No current route source.
 
 ```swift
 case sourceInactive
+```
+
+```c
+CPRouteSourceInactive
 ```
 
 

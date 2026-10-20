@@ -2,6 +2,7 @@
 
 **Framework**: TabularData  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The name of the column.

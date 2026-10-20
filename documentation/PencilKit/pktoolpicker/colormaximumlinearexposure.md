@@ -1,7 +1,8 @@
 # colorMaximumLinearExposure
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Maximum linear exposure for the color picker used by the tool picker. Can be used to enable picking HDR colors.
 
@@ -15,6 +16,10 @@ Maximum linear exposure for the color picker used by the tool picker. Can be use
 
 ```swift
 var colorMaximumLinearExposure: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic, assign) CGFloat colorMaximumLinearExposure;
 ```
 
 #### Discussion

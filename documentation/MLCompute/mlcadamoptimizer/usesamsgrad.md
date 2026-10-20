@@ -1,16 +1,17 @@
 # usesAMSGrad
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to use a variant of the algorithm.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether to use a variant of the algorithm.
 var usesAMSGrad: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL usesAMSGrad;
+```
+
 ## See Also
 
-- [var beta1: Float](mlcadamoptimizer/beta1.md)
+### Inspecting an Adam Optimizer
+- [var beta1: Float](./beta1.md)
   The coefficent for computing running averages of gradient.
-- [var beta2: Float](mlcadamoptimizer/beta2.md)
+- [var beta2: Float](./beta2.md)
   The coefficent for computing running averages of square of gradient.
-- [var epsilon: Float](mlcadamoptimizer/epsilon.md)
+- [var epsilon: Float](./epsilon.md)
   The epsilon value for improving numerical stability.
-- [var timeStep: Int](mlcadamoptimizer/timestep.md)
+- [var timeStep: Int](./timestep.md)
   The initial timestep for the update.
 
 

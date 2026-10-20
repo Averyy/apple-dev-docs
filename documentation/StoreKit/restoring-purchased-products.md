@@ -1,6 +1,7 @@
 # Restoring purchased products
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: Article
 
 Give customers functionality that restores their purchases in your app to maintain access to purchased content.
 
@@ -24,9 +25,9 @@ Restoring completed transactions creates a new transaction for each previously c
 
 Give the user an appropriate level of control over the content that’s downloaded again. For example, don’t automatically download three years of daily newspapers or hundreds of megabytes of game levels at the same time.
 
-##### Refresh the App Receipt
+##### Refresh the app receipt
 
-Create a receipt refresh request, set a delegate, and start the request. The request supports optional properties for obtaining receipts in various states, such as expired receipts, during testing. For details, see the [`init(receiptProperties:)`](skreceiptrefreshrequest/init(receiptproperties:).md) method of [`SKReceiptRefreshRequest`](skreceiptrefreshrequest.md).
+Create a receipt refresh request, set a delegate, and start the request. The request supports optional properties for obtaining receipts in various states, such as expired receipts, during testing. For details, see the [`init(receiptProperties:)`](./skreceiptrefreshrequest/init%28receiptproperties%29.md) method of [`SKReceiptRefreshRequest`](./skreceiptrefreshrequest.md).
 
 **Swift**:
 
@@ -46,15 +47,15 @@ request.delegate = self;
 
 After the app receipt refreshes, examine it and deliver any additional products, as necessary.
 
-##### Restore Completed Transactions
+##### Restore completed transactions
 
-Your app starts restoring completed transactions by calling the [`restoreCompletedTransactions()`](skpaymentqueue/restorecompletedtransactions().md) method of [`SKPaymentQueue`](skpaymentqueue.md). This call sends a request to the App Store to restore all of your app’s completed transactions. If your app sets a value for the [`applicationUsername`](skmutablepayment/applicationusername.md) property of its payment requests, use the [`restoreCompletedTransactions(withApplicationUsername:)`](skpaymentqueue/restorecompletedtransactions(withapplicationusername:).md) method to provide the same information when restoring the transactions.
+Your app starts restoring completed transactions by calling the [`restoreCompletedTransactions()`](./skpaymentqueue/restorecompletedtransactions%28%29.md) method of [`SKPaymentQueue`](./skpaymentqueue.md). This call sends a request to the App Store to restore all of your app’s completed transactions. If your app sets a value for the [`applicationUsername`](./skmutablepayment/applicationusername.md) property of its payment requests, use the [`restoreCompletedTransactions(withApplicationUsername:)`](./skpaymentqueue/restorecompletedtransactions%28withapplicationusername%29.md) method to provide the same information when restoring the transactions.
 
-The App Store generates a new transaction to restore each previously completed transaction. The restored transaction refers to the original transaction. Instances of [`SKPaymentTransaction`](skpaymenttransaction.md) have an [`original`](skpaymenttransaction/original.md) property, and the entries in the receipt have an [`original_transaction_id`](https://developer.apple.com/documentation/appstorereceipts/original_transaction_id) field value.
+The App Store generates a new transaction to restore each previously completed transaction. The restored transaction refers to the original transaction. Instances of [`SKPaymentTransaction`](./skpaymenttransaction.md) have an [`original`](./skpaymenttransaction/original.md) property, and the entries in the receipt have an [`original_transaction_id`](../AppStoreReceipts/original_transaction_id.md) field value.
 
-> **Note**:  The date fields have slightly different meanings for restored purchases. For details, see the `purchase_date` and `original_purchase_date` fields in the [`responseBody.Receipt.In_app`](https://developer.apple.com/documentation/appstorereceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary).
+> **Note**:  The date fields have slightly different meanings for restored purchases. For details, see the `purchase_date` and `original_purchase_date` fields in the [`responseBody.Receipt.In_app`](../AppStoreReceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary.md).
 
-StoreKit calls the transaction queue observer with a status of [`SKPaymentTransactionState.restored`](skpaymenttransactionstate/restored.md) for each restored transaction, as described in [`Processing a transaction`](processing-a-transaction.md). The action you take depends on your app’s design.
+StoreKit calls the transaction queue observer with a status of [`SKPaymentTransactionState.restored`](./skpaymenttransactionstate/restored.md) for each restored transaction, as described in [Processing a transaction](./processing-a-transaction.md). The action you take depends on your app’s design.
 
 If your app uses the app receipt and doesn’t have Apple-hosted content, this code isn’t needed because your app doesn’t restore completed transactions. Finish any restored transactions immediately.
 
@@ -91,13 +92,14 @@ If your app doesn’t use the app receipt, it examines all completed transaction
 
 ## See Also
 
-- [class SKReceiptRefreshRequest](skreceiptrefreshrequest.md)
+### Providing access to previously purchased products
+- [class SKReceiptRefreshRequest](./skreceiptrefreshrequest.md)
   A request to the App Store to get the app receipt, which represents the customer’s transactions with your app.
-- [class SKRequest](skrequest.md)
+- [class SKRequest](./skrequest.md)
   An abstract class that represents a request to the App Store.
-- [class SKPaymentTransaction](skpaymenttransaction.md)
+- [class SKPaymentTransaction](./skpaymenttransaction.md)
   An object in the payment queue.
-- [func SKTerminateForInvalidReceipt()](skterminateforinvalidreceipt().md)
+- [func SKTerminateForInvalidReceipt()](./skterminateforinvalidreceipt%28%29.md)
   Terminates an app if the license to use the app has expired.
 
 

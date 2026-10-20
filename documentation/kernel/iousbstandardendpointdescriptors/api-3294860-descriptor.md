@@ -1,7 +1,8 @@
 # descriptor
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A valid endpoint descriptor.
 
@@ -10,17 +11,18 @@ A valid endpoint descriptor.
 
 ## Declaration
 
-```swift
+```c
 IOUSBEndpointDescriptor descriptor;
 ```
 
 ## See Also
 
-- [bcdUSB](iousbstandardendpointdescriptors/3294859-bcdusb.md)
+### Getting the Properties
+- [bcdUSB](./api-3294859-bcdusb.md)
   A binary-coded decimal value that indicates the USB version that the device supports.
-- [ssCompanionDescriptor](iousbstandardendpointdescriptors/3294861-sscompaniondescriptor.md)
+- [ssCompanionDescriptor](./api-3294861-sscompaniondescriptor.md)
   The companion descriptor for SuperSpeed devices.
-- [sspCompanionDescriptor](iousbstandardendpointdescriptors/3294862-sspcompaniondescriptor.md)
+- [sspCompanionDescriptor](./api-3294862-sspcompaniondescriptor.md)
   The companion descriptor for SuperSpeedPlus devices.
 
 

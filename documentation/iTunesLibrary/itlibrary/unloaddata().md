@@ -1,7 +1,8 @@
 # unloadData()
 
 **Framework**: iTunes Library  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unloads the data that the framework uses.
 
@@ -15,9 +16,14 @@ Unloads the data that the framework uses.
 func unloadData()
 ```
 
+```objc
+- (void) unloadData;
+```
+
 ## See Also
 
-- [func reloadData() -> Bool](itlibrary/reloaddata.md)
+### Loading and Unloading Data
+- [func reloadData() -> Bool](./reloaddata%28%29.md)
   Refreshes the data that the framework uses.
 
 

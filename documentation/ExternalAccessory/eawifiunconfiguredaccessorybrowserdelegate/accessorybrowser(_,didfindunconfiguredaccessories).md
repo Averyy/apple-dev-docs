@@ -2,6 +2,7 @@
 
 **Framework**: External Accessory  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Indicates that the browser found a new unconfigured accessory that matches the filter predicate defined at the start of the search.
@@ -18,18 +19,23 @@ Indicates that the browser found a new unconfigured accessory that matches the f
 func accessoryBrowser(_ browser: EAWiFiUnconfiguredAccessoryBrowser, didFindUnconfiguredAccessories accessories: Set<EAWiFiUnconfiguredAccessory>)
 ```
 
+```objc
+- (void) accessoryBrowser:(EAWiFiUnconfiguredAccessoryBrowser *) browser didFindUnconfiguredAccessories:(NSSet<EAWiFiUnconfiguredAccessory *> *) accessories;
+```
+
 #### Discussion
 
-When a new unconfigured accessory is found, it’s added to the browser’s set of accessories, which is available in the [`unconfiguredAccessories`](eawifiunconfiguredaccessorybrowser/unconfiguredaccessories.md) property. A delegate can implement this method to present to the user the current list of unconfigured accessories. Because this method is called every time a new unconfigured accessory is found, you might use this callback as a prompt to check the list of accessories in [`unconfiguredAccessories`](eawifiunconfiguredaccessorybrowser/unconfiguredaccessories.md).
+When a new unconfigured accessory is found, it’s added to the browser’s set of accessories, which is available in the [`unconfiguredAccessories`](../eawifiunconfiguredaccessorybrowser/unconfiguredaccessories.md) property. A delegate can implement this method to present to the user the current list of unconfigured accessories. Because this method is called every time a new unconfigured accessory is found, you might use this callback as a prompt to check the list of accessories in [`unconfiguredAccessories`](../eawifiunconfiguredaccessorybrowser/unconfiguredaccessories.md).
 
 ## Parameters
 
-- `browser`: The instance of [`EAWiFiUnconfiguredAccessoryBrowser`](eawifiunconfiguredaccessorybrowser.md) that is generating the event.
-- `accessories`: The set of [`EAWiFiUnconfiguredAccessory`](eawifiunconfiguredaccessory.md) objects that have been found since the last update.
+- `browser`: The instance of [`EAWiFiUnconfiguredAccessoryBrowser`](../eawifiunconfiguredaccessorybrowser.md) that is generating the event.
+- `accessories`: The set of [`EAWiFiUnconfiguredAccessory`](../eawifiunconfiguredaccessory.md) objects that have been found since the last update.
 
 ## See Also
 
-- [func accessoryBrowser(EAWiFiUnconfiguredAccessoryBrowser, didRemoveUnconfiguredAccessories: Set<EAWiFiUnconfiguredAccessory>)](eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser(_:didremoveunconfiguredaccessories:).md)
+### Getting Updates About the Search Process
+- [func accessoryBrowser(EAWiFiUnconfiguredAccessoryBrowser, didRemoveUnconfiguredAccessories: Set<EAWiFiUnconfiguredAccessory>)](./accessorybrowser%28_,didremoveunconfiguredaccessories%29.md)
   Indicates that the browser removed an unconfigured accessory from the search results.
 
 

@@ -1,7 +1,8 @@
 # fetchHistory(during:completionHandler:)
 
 **Framework**: Screen Time  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches web history that occurred during the date interval you specify.
 
@@ -14,7 +15,15 @@ Fetches web history that occurred during the date interval you specify.
 ## Declaration
 
 ```swift
+func fetchHistory(during interval: DateInterval, completionHandler: @escaping @Sendable (Set<URL>?, (any Error)?) -> Void)
+```
+
+```swift
 func fetchHistory(during interval: DateInterval) async throws -> Set<URL>
+```
+
+```objc
+- (void) fetchHistoryDuringInterval:(NSDateInterval *) interval completionHandler:(void (^)(NSSet<NSURL *> *urls, NSError *error)) completionHandler;
 ```
 
 ## Parameters

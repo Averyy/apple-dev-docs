@@ -1,7 +1,8 @@
 # LOM Setup Request
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information from a device to set up lights-out management (LOM).
 
@@ -10,9 +11,9 @@ Get information from a device to set up lights-out management (LOM).
 
 #### Discussion
 
-This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOutManagementLOM`](lightsoutmanagementlom.md) configuration and is available in macOS 11 and later on [`supported macOS devices`](https://developer.apple.comhttps://support.apple.com/guide/deployment/lights-out-management-payload-settings-dep580cf25bc/web).
+This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOutManagementLOM`](./lightsoutmanagementlom.md) configuration and is available in macOS 11 and later on [supported macOS devices](https://support.apple.com/guide/deployment/lights-out-management-payload-settings-dep580cf25bc/web).
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -22,7 +23,7 @@ This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOu
 | Allowed in user enrollment | N/A |
 | Required access right | DeviceLockAndRemovePasscode |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -67,9 +68,9 @@ This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOu
 ## Topics
 
 ### Commands and responses
-- [object LOMSetupRequestCommand](lomsetuprequestcommand.md)
+- [object LOMSetupRequestCommand](./lomsetuprequestcommand.md)
   The command to get information from a device to set up lights-out management (LOM).
-- [object LOMSetupRequestResponse](lomsetuprequestresponse.md)
+- [object LOMSetupRequestResponse](./lomsetuprequestresponse.md)
   A response from the device after it processes the command to get information from a device to set up lights-out management (LOM).
 
 ## Endpoint
@@ -78,11 +79,19 @@ This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOu
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `LOMSetupRequestCommand`
+
 The request object the server returns for the LOM Setup Request Command.
+
+## Responses
+
+- `200` OK (`LOMSetupRequestResponse`, `application/xml`): The response object the system returns for the LOM Setup Request Command.
 
 ## See Also
 
-- [LOM Device Request](lom-device-request-command.md)
+### Lights-out management
+- [LOM Device Request](./lom-device-request-command.md)
   Send requests to a device using lights-out management (LOM).
 
 

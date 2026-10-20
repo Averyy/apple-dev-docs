@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -10,12 +11,21 @@
 ## Declaration
 
 ```swift
+func synchronize(flags: FSSyncFlags, replyHandler reply: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func synchronize(flags: FSSyncFlags) async throws
+```
+
+```objc
+- (void) synchronizeWithFlags:(FSSyncFlags) flags replyHandler:(void (^)(NSError *error)) reply;
 ```
 
 ## See Also
 
-- [enum FSSyncFlags](fssyncflags.md)
+### Performing synchronization
+- [enum FSSyncFlags](../../fssyncflags.md)
   Behavior flags for use with synchronization calls.
 
 

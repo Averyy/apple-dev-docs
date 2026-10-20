@@ -1,7 +1,8 @@
 # stem
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The non-extension portion of this file or directory  component.
 

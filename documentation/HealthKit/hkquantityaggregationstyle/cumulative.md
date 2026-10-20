@@ -1,7 +1,8 @@
 # HKQuantityAggregationStyle.cumulative
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Cumulative samples that can be summed over time.
 
@@ -19,17 +20,22 @@ Cumulative samples that can be summed over time.
 case cumulative
 ```
 
+```c
+HKQuantityAggregationStyleCumulative
+```
+
 #### Discussion
 
 Use cumulative types to measure a total value over a given time period. Step count, distance, inhaler usage, nutritional information, and energy burned are all cumulative quantity types.
 
 ## See Also
 
-- [HKQuantityAggregationStyle.discreteArithmetic](hkquantityaggregationstyle/discretearithmetic.md)
+### Aggregation Styles
+- [HKQuantityAggregationStyle.discreteArithmetic](./discretearithmetic.md)
   Discrete samples that can be averaged over time using an arithmetic mean.
-- [HKQuantityAggregationStyle.discreteTemporallyWeighted](hkquantityaggregationstyle/discretetemporallyweighted.md)
+- [HKQuantityAggregationStyle.discreteTemporallyWeighted](./discretetemporallyweighted.md)
   Discrete samples that can be averaged over a time interval using a temporally weighted integration function.
-- [HKQuantityAggregationStyle.discreteEquivalentContinuousLevel](hkquantityaggregationstyle/discreteequivalentcontinuouslevel.md)
+- [HKQuantityAggregationStyle.discreteEquivalentContinuousLevel](./discreteequivalentcontinuouslevel.md)
   Discrete samples that can be combined over a time interval by computing the equivalent continuous sound level.
 
 

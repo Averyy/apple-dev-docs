@@ -1,7 +1,8 @@
 # supportedIdentifiers
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of animal identifiers that the request can detect.
 

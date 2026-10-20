@@ -1,7 +1,8 @@
 # console
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that indicates the text appears in a console context.
 
@@ -20,19 +21,24 @@ nonisolated
 static let console: UIAccessibilityTextualContext
 ```
 
+```c
+extern UIAccessibilityTextualContext const UIAccessibilityTextualContextConsole;
+```
+
 ## See Also
 
-- [static let fileSystem: UIAccessibilityTextualContext](uiaccessibilitytextualcontext/filesystem.md)
+### Constants
+- [static let fileSystem: UIAccessibilityTextualContext](./filesystem.md)
   A constant that indicates the text appears in a file-system context.
-- [static let messaging: UIAccessibilityTextualContext](uiaccessibilitytextualcontext/messaging.md)
+- [static let messaging: UIAccessibilityTextualContext](./messaging.md)
   A constant that indicates the text appears in a messaging context.
-- [static let narrative: UIAccessibilityTextualContext](uiaccessibilitytextualcontext/narrative.md)
+- [static let narrative: UIAccessibilityTextualContext](./narrative.md)
   A constant that indicates the text appears in a narrative speech context.
-- [static let sourceCode: UIAccessibilityTextualContext](uiaccessibilitytextualcontext/sourcecode.md)
+- [static let sourceCode: UIAccessibilityTextualContext](./sourcecode.md)
   A constant that indicates the text appears in a source-code context.
-- [static let spreadsheet: UIAccessibilityTextualContext](uiaccessibilitytextualcontext/spreadsheet.md)
+- [static let spreadsheet: UIAccessibilityTextualContext](./spreadsheet.md)
   A constant that indicates the text appears in a spreadsheet context.
-- [static let wordProcessing: UIAccessibilityTextualContext](uiaccessibilitytextualcontext/wordprocessing.md)
+- [static let wordProcessing: UIAccessibilityTextualContext](./wordprocessing.md)
   A constant that indicates the text appears in a word-processing context.
 
 

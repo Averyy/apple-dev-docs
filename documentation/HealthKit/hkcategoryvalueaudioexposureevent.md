@@ -1,17 +1,20 @@
 # HKCategoryValueAudioExposureEvent
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Categories that indicate audio exposure events.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS ?+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 14.0 (renamed: HKCategoryValueEnvironmentalAudioExposureEvent)
+- iPadOS 13.0+ - Deprecated in 14.0 (renamed: HKCategoryValueEnvironmentalAudioExposureEvent)
+- Mac Catalyst 13.1+ - Deprecated in 14.0 (renamed: HKCategoryValueEnvironmentalAudioExposureEvent)
+- macOS
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: HKCategoryValueEnvironmentalAudioExposureEvent)
+- watchOS 6.0+ - Deprecated in 7.0 (renamed: HKCategoryValueEnvironmentalAudioExposureEvent)
+
+> **Deprecated**: Use [`HKCategoryValueEnvironmentalAudioExposureEvent`](./hkcategoryvalueenvironmentalaudioexposureevent.md) instead.
 
 ## Declaration
 
@@ -19,55 +22,60 @@ Categories that indicate audio exposure events.
 enum HKCategoryValueAudioExposureEvent
 ```
 
+```c
+enum HKCategoryValueAudioExposureEvent : NSInteger;
+```
+
 ## Topics
 
 ### Exposure Events
-- [HKCategoryValueAudioExposureEvent.loudEnvironment](hkcategoryvalueaudioexposureevent/loudenvironment.md)
+- [HKCategoryValueAudioExposureEvent.loudEnvironment](./hkcategoryvalueaudioexposureevent/loudenvironment.md)
   Exposure to a loud environment.
 ### Initializers
-- [init?(rawValue: Int)](hkcategoryvalueaudioexposureevent/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkcategoryvalueaudioexposureevent/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum HKCategoryValue](hkcategoryvalue.md)
+### Assigning Values
+- [enum HKCategoryValue](./hkcategoryvalue.md)
   Categories that are undefined.
-- [enum HKCategoryValueCervicalMucusQuality](hkcategoryvaluecervicalmucusquality.md)
+- [enum HKCategoryValueCervicalMucusQuality](./hkcategoryvaluecervicalmucusquality.md)
   Categories that represent the user’s cervical mucus quality.
-- [enum HKCategoryValueMenstrualFlow](hkcategoryvaluemenstrualflow.md)
+- [enum HKCategoryValueMenstrualFlow](./hkcategoryvaluemenstrualflow.md)
   Categories that indicate the amount of menstrual flow for a given sample.
-- [enum HKCategoryValueOvulationTestResult](hkcategoryvalueovulationtestresult.md)
+- [enum HKCategoryValueOvulationTestResult](./hkcategoryvalueovulationtestresult.md)
   Categories that represent the result of an ovulation home test.
-- [enum HKCategoryValueContraceptive](hkcategoryvaluecontraceptive.md)
+- [enum HKCategoryValueContraceptive](./hkcategoryvaluecontraceptive.md)
   The type of contraceptive.
-- [enum HKCategoryValueSleepAnalysis](hkcategoryvaluesleepanalysis.md)
+- [enum HKCategoryValueSleepAnalysis](./hkcategoryvaluesleepanalysis.md)
   Categories that represent the result of a sleep analysis.
-- [enum HKCategoryValueAppetiteChanges](hkcategoryvalueappetitechanges.md)
+- [enum HKCategoryValueAppetiteChanges](./hkcategoryvalueappetitechanges.md)
   Categories that represent change in appetite.
-- [enum HKCategoryValuePresence](hkcategoryvaluepresence.md)
+- [enum HKCategoryValuePresence](./hkcategoryvaluepresence.md)
   Categories that indicate whether a symptom is present.
-- [enum HKCategoryValueSeverity](hkcategoryvalueseverity.md)
+- [enum HKCategoryValueSeverity](./hkcategoryvalueseverity.md)
   Categories that represent the severity of a symptom.
-- [enum HKCategoryValueEnvironmentalAudioExposureEvent](hkcategoryvalueenvironmentalaudioexposureevent.md)
+- [enum HKCategoryValueEnvironmentalAudioExposureEvent](./hkcategoryvalueenvironmentalaudioexposureevent.md)
   Exposure events for environmental audio.
-- [enum HKCategoryValueHeadphoneAudioExposureEvent](hkcategoryvalueheadphoneaudioexposureevent.md)
+- [enum HKCategoryValueHeadphoneAudioExposureEvent](./hkcategoryvalueheadphoneaudioexposureevent.md)
   Exposure events for headphone audio.
-- [enum HKCategoryValueLowCardioFitnessEvent](hkcategoryvaluelowcardiofitnessevent.md)
+- [enum HKCategoryValueLowCardioFitnessEvent](./hkcategoryvaluelowcardiofitnessevent.md)
   A value that indicates a low-level cardio fitness event.
-- [enum HKAppleWalkingSteadinessClassification](hkapplewalkingsteadinessclassification.md)
+- [enum HKAppleWalkingSteadinessClassification](./hkapplewalkingsteadinessclassification.md)
   A classification of a score based on the steadiness of the user’s gait.
-- [enum HKCategoryValueAppleWalkingSteadinessEvent](hkcategoryvalueapplewalkingsteadinessevent.md)
+- [enum HKCategoryValueAppleWalkingSteadinessEvent](./hkcategoryvalueapplewalkingsteadinessevent.md)
   The value of an event triggered by a reduced score for the steadiness of the user’s gait.
-- [enum HKCategoryValuePregnancyTestResult](hkcategoryvaluepregnancytestresult.md)
+- [enum HKCategoryValuePregnancyTestResult](./hkcategoryvaluepregnancytestresult.md)
   Category values that indicate the results of a home pregnancy test.
 
 

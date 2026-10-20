@@ -1,14 +1,15 @@
 # purgeable_volatile_resident
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 mach_vm_size_t purgeable_volatile_resident;
 ```
 

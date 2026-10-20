@@ -1,7 +1,8 @@
 # SpeechManagerVersion()
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determines the current version of the Speech SynthesisManager installed in the system.
 
@@ -14,7 +15,11 @@ Determines the current version of the Speech SynthesisManager installed in the s
 func SpeechManagerVersion() -> NumVersion
 ```
 
-#### Return_value
+```c
+NumVersion SpeechManagerVersion(void);
+```
+
+#### Return Value
 
 The version of theSpeech Synthesis Manager installed in the system, in the formatof the first 4 bytes of a `'vers'` resource. 
 
@@ -24,15 +29,16 @@ Use this call to determine whether your program can accessfeatures of the Speech
 
 ## See Also
 
-- [func CopySpeechProperty(SpeechChannel, CFString, UnsafeMutablePointer<CFTypeRef?>) -> OSErr](1459075-copyspeechproperty.md)
+### Obtaining Information About Speech and Speech Channels
+- [func CopySpeechProperty(SpeechChannel, CFString, UnsafeMutablePointer<CFTypeRef?>) -> OSErr](./api-1459075-copyspeechproperty.md)
   Gets the value associated with the specified property of a speech channel.
-- [func GetSpeechPitch(SpeechChannel, UnsafeMutablePointer<Fixed>) -> OSErr](1464774-getspeechpitch.md)
+- [func GetSpeechPitch(SpeechChannel, UnsafeMutablePointer<Fixed>) -> OSErr](./api-1464774-getspeechpitch.md)
   Gets a speech channel’s current speech pitch.
-- [func GetSpeechRate(SpeechChannel, UnsafeMutablePointer<Fixed>) -> OSErr](1460797-getspeechrate.md)
+- [func GetSpeechRate(SpeechChannel, UnsafeMutablePointer<Fixed>) -> OSErr](./api-1460797-getspeechrate.md)
   Gets a speech channel’s current speech rate.
-- [func SpeechBusy() -> Int16](1464581-speechbusy.md)
+- [func SpeechBusy() -> Int16](./api-1464581-speechbusy.md)
   Determines whether any channels of speech are currentlysynthesizing speech.
-- [func SpeechBusySystemWide() -> Int16](1460113-speechbusysystemwide.md)
+- [func SpeechBusySystemWide() -> Int16](./api-1460113-speechbusysystemwide.md)
   Determines if any speech is currently being synthesizedin your application or elsewhere on the computer.
 
 

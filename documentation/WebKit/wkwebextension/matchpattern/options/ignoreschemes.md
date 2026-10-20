@@ -1,7 +1,8 @@
 # ignoreSchemes
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the scheme components should be ignored while matching.
 
@@ -16,6 +17,10 @@ Indicates that the scheme components should be ignored while matching.
 
 ```swift
 static var ignoreSchemes: WKWebExtension.MatchPattern.Options { get }
+```
+
+```c
+WKWebExtensionMatchPatternOptionsIgnoreSchemes
 ```
 
 

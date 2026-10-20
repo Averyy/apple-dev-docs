@@ -1,7 +1,8 @@
 # init(conversationID:isTranslating:localLanguage:remoteLanguage:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action that starts or stops translation.
 

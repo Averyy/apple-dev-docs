@@ -1,7 +1,8 @@
 # addComponent(foundIn:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds any instances of the component system’s component class in the specified entity to the component system.
 
@@ -19,9 +20,13 @@ Adds any instances of the component system’s component class in the specified 
 func addComponent(foundIn entity: GKEntity)
 ```
 
+```objc
+- (void) addComponentWithEntity:(GKEntity *) entity;
+```
+
 #### Discussion
 
-This method examines the [`components`](gkentity/components.md) array of the specified entity, adding any components whose type matches the component system’s [`componentClass`](gkcomponentsystem/componentclass.md) property to the component system.
+This method examines the [`components`](../gkentity/components.md) array of the specified entity, adding any components whose type matches the component system’s [`componentClass`](./componentclass.md) property to the component system.
 
 ## Parameters
 
@@ -29,15 +34,16 @@ This method examines the [`components`](gkentity/components.md) array of the spe
 
 ## See Also
 
-- [var componentClass: AnyClass](gkcomponentsystem/componentclass.md)
+### Managing a List of Components
+- [var componentClass: AnyClass](./componentclass.md)
   The class of components managed by the component system.
-- [var components: [ComponentType]](gkcomponentsystem/components.md)
+- [var components: [ComponentType]](./components.md)
   The component system’s list of components.
-- [func addComponent(ComponentType)](gkcomponentsystem/addcomponent(_:).md)
+- [func addComponent(ComponentType)](./addcomponent%28_%29.md)
   Adds a component instance to the component system.
-- [func removeComponent(ComponentType)](gkcomponentsystem/removecomponent(_:).md)
+- [func removeComponent(ComponentType)](./removecomponent%28_%29.md)
   Removes the specified component instance from the component system.
-- [func removeComponent(foundIn: GKEntity)](gkcomponentsystem/removecomponent(foundin:).md)
+- [func removeComponent(foundIn: GKEntity)](./removecomponent%28foundin%29.md)
   Removes any instances of the component system’s component class in the specified entity from the component system.
 
 

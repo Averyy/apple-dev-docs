@@ -1,7 +1,8 @@
 # init(forCASEAuthenticatedTag:privilege:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 init?(forCASEAuthenticatedTag caseAuthenticatedTag: NSNumber, privilege: MTRAccessControlEntryPrivilege)
+```
+
+```objc
++ (MTRAccessGrant *) accessGrantForCASEAuthenticatedTag:(NSNumber *) caseAuthenticatedTag privilege:(MTRAccessControlEntryPrivilege) privilege;
 ```
 
 

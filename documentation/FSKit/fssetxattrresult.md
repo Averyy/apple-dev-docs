@@ -1,7 +1,8 @@
 # FSSetXattrResult
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The result of a set-extended-attributes call.
 
@@ -14,45 +15,50 @@ The result of a set-extended-attributes call.
 class FSSetXattrResult
 ```
 
+```objc
+@interface FSSetXattrResult : FSVolumeHandlerResult
+```
+
 #### Overview
 
-Use this type in your implementation of  [`setXattr(named:to:on:policy:context:replyHandler:)`](fsvolume/xattrhandler/setxattr(named:to:on:policy:context:replyhandler:).md).
+Use this type in your implementation of  [`setXattr(named:to:on:policy:context:replyHandler:)`](./fsvolume/xattrhandler/setxattr%28named,to,on,policy,context,replyhandler%29.md).
 
 ## Topics
 
 ### Creating a set-extended-attributes result
-- [init?(freeSpace: FSFreeSpace?)](fssetxattrresult/init(freespace:).md)
+- [init?(freeSpace: FSFreeSpace?)](./fssetxattrresult/init%28freespace%29.md)
   Creates a result for an extended-attribute-setting operation.
-- [class FSFreeSpace](fsfreespace.md)
+- [class FSFreeSpace](./fsfreespace.md)
   A free space object that pairs free space values with atomic sequence numbers.
 
 ## Relationships
 
 ### Inherits From
-- [FSVolumeHandlerResult](fsvolumehandlerresult.md)
+- [FSVolumeHandlerResult](./fsvolumehandlerresult.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func getXattr(named: FSFileName, of: FSItem, context: FSContext, replyHandler: (FSGetXattrResult?, (any Error)?) -> Void)](fsvolume/xattrhandler/getxattr(named:of:context:replyhandler:).md)
+### Reading and writing
+- [func getXattr(named: FSFileName, of: FSItem, context: FSContext, replyHandler: (FSGetXattrResult?, (any Error)?) -> Void)](./fsvolume/xattrhandler/getxattr%28named,of,context,replyhandler%29.md)
   Gets the specified extended attribute of the given item.
-- [class FSGetXattrResult](fsgetxattrresult.md)
+- [class FSGetXattrResult](./fsgetxattrresult.md)
   The result of a get-extended-attributes call.
-- [func listXattrs(of: FSItem, context: FSContext, replyHandler: (FSListXattrsResult?, (any Error)?) -> Void)](fsvolume/xattrhandler/listxattrs(of:context:replyhandler:).md)
+- [func listXattrs(of: FSItem, context: FSContext, replyHandler: (FSListXattrsResult?, (any Error)?) -> Void)](./fsvolume/xattrhandler/listxattrs%28of,context,replyhandler%29.md)
   Gets the list of extended attributes currently set on the given item.
-- [class FSListXattrsResult](fslistxattrsresult.md)
+- [class FSListXattrsResult](./fslistxattrsresult.md)
   The result of a list-extended-attributes call.
-- [func setXattr(named: FSFileName, to: Data?, on: FSItem, policy: FSVolume.SetXattrPolicy, context: FSContext, replyHandler: (FSSetXattrResult?, (any Error)?) -> Void)](fsvolume/xattrhandler/setxattr(named:to:on:policy:context:replyhandler:).md)
+- [func setXattr(named: FSFileName, to: Data?, on: FSItem, policy: FSVolume.SetXattrPolicy, context: FSContext, replyHandler: (FSSetXattrResult?, (any Error)?) -> Void)](./fsvolume/xattrhandler/setxattr%28named,to,on,policy,context,replyhandler%29.md)
   Sets the specified extended attribute data on the given item.
-- [FSVolume.SetXattrPolicy](fsvolume/setxattrpolicy.md)
+- [FSVolume.SetXattrPolicy](./fsvolume/setxattrpolicy.md)
   Flags to specify the policy when setting extended file attributes.
-- [func supportedXattrNames(for: FSItem) -> [FSFileName]](fsvolume/xattrhandler/supportedxattrnames(for:).md)
+- [func supportedXattrNames(for: FSItem) -> [FSFileName]](./fsvolume/xattrhandler/supportedxattrnames%28for%29.md)
   Returns an array that specifies the extended attribute names the given item supports.
 
 

@@ -1,7 +1,8 @@
 # init(name:description:type:guides:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a property that contains a string type.
 
@@ -17,6 +18,20 @@ Creates a property that contains a string type.
 
 ```swift
 init<RegexOutput>(name: String, description: String? = nil, type: String.Type, guides: [Regex<RegexOutput>] = [])
+```
+
+**Other overloads**:
+
+```swift
+init<RegexOutput>(name: String, description: String? = nil, type: String?.Type, guides: [Regex<RegexOutput>] = [])
+```
+
+```swift
+init<Value>(name: String, description: String? = nil, type: Value.Type, guides: [GenerationGuide<Value>] = []) where Value : Generable
+```
+
+```swift
+init<Value>(name: String, description: String? = nil, type: Value?.Type, guides: [GenerationGuide<Value>] = []) where Value : Generable
 ```
 
 ## Parameters

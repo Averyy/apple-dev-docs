@@ -1,7 +1,8 @@
 # shouldFetchRootRecord
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the root record should be fetched with this record.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the root record should be fetched with th
 
 ## Declaration
 
-```swift
+```
 attribute boolean? shouldFetchRootRecord;
 ```
 

@@ -1,7 +1,8 @@
 # MEComposeSessionError.Code.invalidHeaders
 
 **Framework**: MailKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error code that indicates one or more of the message’s headers are invalid.
 
@@ -14,11 +15,16 @@ An error code that indicates one or more of the message’s headers are invalid.
 case invalidHeaders
 ```
 
+```c
+MEComposeSessionErrorCodeInvalidHeaders
+```
+
 ## See Also
 
-- [MEComposeSessionError.Code.invalidBody](mecomposesessionerror/code/invalidbody.md)
+### Indicating Erroneous States
+- [MEComposeSessionError.Code.invalidBody](./invalidbody.md)
   An error code that indicates the message’s body is invalid.
-- [MEComposeSessionError.Code.invalidRecipients](mecomposesessionerror/code/invalidrecipients.md)
+- [MEComposeSessionError.Code.invalidRecipients](./invalidrecipients.md)
   An error code that indicates one or more of the message’s recipients are invalid.
 
 

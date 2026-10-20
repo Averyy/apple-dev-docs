@@ -1,7 +1,8 @@
 # prefersRTFD(in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the specified range of text prefers RTFD formatting.
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether the specified range of text prefe
 func prefersRTFD(in range: NSRange) -> Bool
 ```
 
+```objc
+- (BOOL) prefersRTFDInRange:(NSRange) range;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the range of text prefers RTFD formatting, or [`false`](https://developer.apple.com/documentation/swift/false) if you can use the RTF format instead.
+[`true`](../../Swift/true.md) if the range of text prefers RTFD formatting, or [`false`](../../Swift/false.md) if you can use the RTF format instead.
 
 #### Discussion
 
@@ -34,9 +39,10 @@ When an attributed string contains attachments, you must save it using the RTFD 
 
 ## See Also
 
-- [class var textTypes: [String]](nsattributedstring/texttypes.md)
+### Getting the supported text-file formats
+- [class var textTypes: [String]](./texttypes.md)
   An array of UTI strings that identify the file types that attributed strings support, either directly or through a user-installed filter service.
-- [class var textUnfilteredTypes: [String]](nsattributedstring/textunfilteredtypes.md)
+- [class var textUnfilteredTypes: [String]](./textunfilteredtypes.md)
   An array of UTI strings that identify the file types that attributed strings support directly.
 
 

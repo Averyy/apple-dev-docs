@@ -1,7 +1,8 @@
 # MTL4MachineLearningPipelineDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Description for a machine learning pipeline state.
 
@@ -19,39 +20,44 @@ Description for a machine learning pipeline state.
 class MTL4MachineLearningPipelineDescriptor
 ```
 
+```objc
+@interface MTL4MachineLearningPipelineDescriptor : MTL4PipelineDescriptor
+```
+
 ## Topics
 
 ### Instance Properties
-- [var label: String?](mtl4machinelearningpipelinedescriptor/label.md)
+- [var label: String?](./mtl4machinelearningpipelinedescriptor/label.md)
   Assigns an optional string that helps identify pipeline states you create from this descriptor.
-- [var machineLearningFunctionDescriptor: MTL4FunctionDescriptor?](mtl4machinelearningpipelinedescriptor/machinelearningfunctiondescriptor.md)
+- [var machineLearningFunctionDescriptor: MTL4FunctionDescriptor?](./mtl4machinelearningpipelinedescriptor/machinelearningfunctiondescriptor.md)
   Assigns the function that the machine learning pipeline you create from this descriptor executes.
 ### Instance Methods
-- [func inputDimensions(bufferIndex: Int) -> MTLTensorExtents?](mtl4machinelearningpipelinedescriptor/inputdimensions(bufferindex:).md)
+- [func inputDimensions(bufferIndex: Int) -> MTLTensorExtents?](./mtl4machinelearningpipelinedescriptor/inputdimensions%28bufferindex%29.md)
   Obtains the dimensions of the input tensor at `bufferIndex` if set, `nil` otherwise.
-- [func reset()](mtl4machinelearningpipelinedescriptor/reset.md)
+- [func reset()](./mtl4machinelearningpipelinedescriptor/reset%28%29.md)
   Resets the descriptor to its default values.
-- [func setInputDimensions(MTLTensorExtents?, bufferIndex: Int)](mtl4machinelearningpipelinedescriptor/setinputdimensions(_:bufferindex:)-34gir.md)
+- [func setInputDimensions(MTLTensorExtents?, bufferIndex: Int)](./mtl4machinelearningpipelinedescriptor/setinputdimensions%28_,bufferindex%29-34gir.md)
   Sets the dimension of an input tensor at a buffer index.
-- [func setInputDimensions([MTLTensorExtents], bufferIndex: Int)](mtl4machinelearningpipelinedescriptor/setinputdimensions(_:bufferindex:)-8fnq7.md)
+- [func setInputDimensions([MTLTensorExtents], bufferIndex: Int)](./mtl4machinelearningpipelinedescriptor/setinputdimensions%28_,bufferindex%29-8fnq7.md)
   Sets the dimensions of multiple input tensors on a range of buffer bindings.
 
 ## Relationships
 
 ### Inherits From
-- [MTL4PipelineDescriptor](mtl4pipelinedescriptor.md)
+- [MTL4PipelineDescriptor](./mtl4pipelinedescriptor.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTL4MachineLearningPipelineReflection](mtl4machinelearningpipelinereflection.md)
+### Configuring a machine learning pipeline
+- [class MTL4MachineLearningPipelineReflection](./mtl4machinelearningpipelinereflection.md)
   Represents reflection information for a machine learning pipeline state.
 
 

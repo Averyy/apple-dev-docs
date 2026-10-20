@@ -1,12 +1,15 @@
 # graphicsPort
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The low-level, platform-specific graphics context represented by the graphic port.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Use [`cgContext`](./cgcontext.md) instead.
 
 ## Declaration
 
@@ -14,9 +17,13 @@ The low-level, platform-specific graphics context represented by the graphic por
 var graphicsPort: UnsafeMutableRawPointer { get }
 ```
 
+```objc
+@property (readonly) void * graphicsPort;
+```
+
 #### Discussion
 
-In macOS, this is the Core Graphics context, a [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) object (opaque type).
+In macOS, this is the Core Graphics context, a [`CGContext`](../../CoreGraphics/cgcontext.md) object (opaque type).
 
 
 ---

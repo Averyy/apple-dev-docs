@@ -1,7 +1,8 @@
 # scrollDirection
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scroll direction of the layout.
 
@@ -14,11 +15,15 @@ The scroll direction of the layout.
 var scrollDirection: NSCollectionView.ScrollDirection { get set }
 ```
 
+```objc
+@property NSCollectionViewScrollDirection scrollDirection;
+```
+
 #### Discussion
 
-The flow layout scrolls along one axis only, either horizontally or vertically. When the scroll direction is [`NSCollectionView.ScrollDirection.vertical`](nscollectionview/scrolldirection/vertical.md), the width of the content never exceeds the width of the collection view itself but the height grows as needed to accommodate the current items. When the scroll direction is [`NSCollectionView.ScrollDirection.horizontal`](nscollectionview/scrolldirection/horizontal.md), the height never exceeds the height of the collection view but the width grows as needed.
+The flow layout scrolls along one axis only, either horizontally or vertically. When the scroll direction is [`NSCollectionView.ScrollDirection.vertical`](../nscollectionview/scrolldirection/vertical.md), the width of the content never exceeds the width of the collection view itself but the height grows as needed to accommodate the current items. When the scroll direction is [`NSCollectionView.ScrollDirection.horizontal`](../nscollectionview/scrolldirection/horizontal.md), the height never exceeds the height of the collection view but the width grows as needed.
 
-The default value of this property is [`NSCollectionView.ScrollDirection.vertical`](nscollectionview/scrolldirection/vertical.md).
+The default value of this property is [`NSCollectionView.ScrollDirection.vertical`](../nscollectionview/scrolldirection/vertical.md).
 
 
 ---

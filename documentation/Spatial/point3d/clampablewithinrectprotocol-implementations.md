@@ -1,11 +1,12 @@
 # ClampableWithinRectProtocol Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func clamp(to: Rect3D)](point3d/clamp(to:).md)
+- [func clamp(to: Rect3D)](./clamp%28to%29.md)
   Clamps the mutable point to the specified rectangle.
 
 

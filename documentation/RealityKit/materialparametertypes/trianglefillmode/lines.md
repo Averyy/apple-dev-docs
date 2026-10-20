@@ -1,7 +1,8 @@
 # MaterialParameterTypes.TriangleFillMode.lines
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Triangles and triangle strips are rasterized as lines
 

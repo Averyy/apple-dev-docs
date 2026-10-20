@@ -1,26 +1,28 @@
 # OSCreateSerializationFromObject
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 OSSerializationPtrOSCreateSerializationFromObject(OSObjectPtr obj);
 ```
 
 ## See Also
 
-- [OSCreateSerializationFromBytes](oscreateserializationfrombytes.md)
-- [free](osserialization/free.md)
-- [OSSerializationFreeBufferHandler](osserializationfreebufferhandler.md)
-- [OSSerializationPtr](osserializationptr.md)
+### Creating a Serialization Object
+- [OSCreateSerializationFromBytes](./oscreateserializationfrombytes.md)
+- [free](./osserialization/free.md)
+- [OSSerializationFreeBufferHandler](./osserializationfreebufferhandler.md)
+- [OSSerializationPtr](./osserializationptr.md)
 
 
 ---

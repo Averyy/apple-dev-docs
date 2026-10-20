@@ -1,7 +1,8 @@
 # linearImpulse
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An impulse in newton seconds (in physics simulation space).
 

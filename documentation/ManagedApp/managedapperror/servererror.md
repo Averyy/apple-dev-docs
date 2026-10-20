@@ -1,7 +1,8 @@
 # ManagedAppError.serverError
 
 **Framework**: ManagedApp  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates a failure requesting a secret from the asset server.
 

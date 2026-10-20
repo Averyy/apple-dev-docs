@@ -1,7 +1,8 @@
 # kMDItemAudioTrackNumber
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The track number of a song or composition when it is part of an album. A CFNumber (integer).
 
@@ -12,6 +13,10 @@ The track number of a song or composition when it is part of an album. A CFNumbe
 
 ```swift
 let kMDItemAudioTrackNumber: CFString!
+```
+
+```c
+const CFStringRef kMDItemAudioTrackNumber;
 ```
 
 

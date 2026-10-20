@@ -1,14 +1,15 @@
 # kINQUIRY_PRODUCT_IDENTIFICATION_Length
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kINQUIRY_PRODUCT_IDENTIFICATION_Length = 16
 ```
 

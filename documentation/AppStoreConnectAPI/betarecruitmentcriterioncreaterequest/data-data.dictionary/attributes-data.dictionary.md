@@ -1,7 +1,8 @@
 # BetaRecruitmentCriterionCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a beta recruitment criterion create request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a beta recruitment criterion create request resource.
 
 ## Declaration
 
-```swift
+```
 object BetaRecruitmentCriterionCreateRequest.Data.Attributes
 ```
 

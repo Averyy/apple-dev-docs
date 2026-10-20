@@ -1,7 +1,8 @@
 # linkedCoreAudioDeviceUID
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A universal identifier of the audio device linked to this device.
 
@@ -15,21 +16,26 @@ A universal identifier of the audio device linked to this device.
 var linkedCoreAudioDeviceUID: String? { get set }
 ```
 
+```objc
+@property (atomic, strong, nullable) NSString * linkedCoreAudioDeviceUID;
+```
+
 #### Discussion
 
-The key for this property is [`deviceLinkedCoreAudioDeviceUID`](cmioextensionproperty/devicelinkedcoreaudiodeviceuid.md).
+The key for this property is [`deviceLinkedCoreAudioDeviceUID`](../cmioextensionproperty/devicelinkedcoreaudiodeviceuid.md).
 
 ## See Also
 
-- [var model: String?](cmioextensiondeviceproperties/model.md)
+### Configuring Device Properties
+- [var model: String?](./model.md)
   A device model string.
-- [var transportType: Int?](cmioextensiondeviceproperties/transporttype-96gm.md)
+- [var transportType: Int?](./transporttype-96gm.md)
   The transport type of the device, such as USB or HDMI.
-- [var suspended: Bool?](cmioextensiondeviceproperties/suspended-eru0.md)
+- [var suspended: Bool?](./suspended-eru0.md)
   A Boolean value that indicates whether the device is in a suspended state.
-- [func setPropertyState(CMIOExtensionPropertyState<AnyObject>?, forProperty: CMIOExtensionProperty)](cmioextensiondeviceproperties/setpropertystate(_:forproperty:).md)
+- [func setPropertyState(CMIOExtensionPropertyState<AnyObject>?, forProperty: CMIOExtensionProperty)](./setpropertystate%28_,forproperty%29.md)
   Sets the value of a device property.
-- [var propertiesDictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>]](cmioextensiondeviceproperties/propertiesdictionary.md)
+- [var propertiesDictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>]](./propertiesdictionary.md)
   A dictionary of properties for a device.
 
 

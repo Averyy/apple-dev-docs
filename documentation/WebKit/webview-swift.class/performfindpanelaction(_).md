@@ -1,12 +1,13 @@
 # performFindPanelAction(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An action method that opens the Find menu and Find panel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ An action method that opens the Find menu and Find panel.
 func performFindPanelAction(_ sender: Any?)
 ```
 
+```objc
+- (void) performFindPanelAction:(id) sender;
+```
+
 #### Discussion
 
-This method behaves similar to the [`performFindPanelAction(_:)`](https://developer.apple.com/documentation/appkit/nstextview/performfindpanelaction(_:)) method in [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview).
+This method behaves similar to the [`performFindPanelAction(_:)`](../../AppKit/nstextview/performfindpanelaction%28_%29.md) method in [`NSTextView`](../../AppKit/nstextview.md).
 
 ## Parameters
 

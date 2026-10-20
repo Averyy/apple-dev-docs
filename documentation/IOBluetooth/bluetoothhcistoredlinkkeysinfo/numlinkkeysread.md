@@ -1,15 +1,20 @@
 # numLinkKeysRead
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var numLinkKeysRead: UInt16
+```
+
+```c
+uint16_t numLinkKeysRead;
 ```
 
 

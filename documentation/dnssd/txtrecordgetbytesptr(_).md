@@ -1,7 +1,8 @@
 # TXTRecordGetBytesPtr(_:)
 
 **Framework**: dnssd  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Allows you to retrieve a pointer to the raw bytes within a TXTRecordRef.
 
@@ -20,9 +21,13 @@ Allows you to retrieve a pointer to the raw bytes within a TXTRecordRef.
 func TXTRecordGetBytesPtr(_ txtRecord: UnsafePointer<TXTRecordRef>!) -> UnsafeRawPointer!
 ```
 
+```c
+const void *TXTRecordGetBytesPtr(const TXTRecordRef *txtRecord);
+```
+
 #### Return Value
 
-Returns a pointer to the raw bytes inside the TXTRecordRef which you can pass directly to [`DNSServiceRegister(_:_:_:_:_:_:_:_:_:_:_:_:)`](dnsserviceregister(_:_:_:_:_:_:_:_:_:_:_:_:).md) or to [`DNSServiceUpdateRecord(_:_:_:_:_:_:)`](dnsserviceupdaterecord(_:_:_:_:_:_:).md).
+Returns a pointer to the raw bytes inside the TXTRecordRef which you can pass directly to [`DNSServiceRegister(_:_:_:_:_:_:_:_:_:_:_:_:)`](./dnsserviceregister%28_,_,_,_,_,_,_,_,_,_,_,_%29.md) or to [`DNSServiceUpdateRecord(_:_:_:_:_:_:)`](./dnsserviceupdaterecord%28_,_,_,_,_,_%29.md).
 
 ## Parameters
 
@@ -30,15 +35,16 @@ Returns a pointer to the raw bytes inside the TXTRecordRef which you can pass di
 
 ## See Also
 
-- [func TXTRecordCreate(UnsafeMutablePointer<TXTRecordRef>!, UInt16, UnsafeMutableRawPointer!)](txtrecordcreate(_:_:_:).md)
+### TXT Record Construction Functions
+- [func TXTRecordCreate(UnsafeMutablePointer<TXTRecordRef>!, UInt16, UnsafeMutableRawPointer!)](./txtrecordcreate%28_,_,_%29.md)
   Creates a new empty TXTRecordRef referencing the specified storage.
-- [func TXTRecordDeallocate(UnsafeMutablePointer<TXTRecordRef>!)](txtrecorddeallocate(_:).md)
+- [func TXTRecordDeallocate(UnsafeMutablePointer<TXTRecordRef>!)](./txtrecorddeallocate%28_%29.md)
   Releases resources associated with a TXT record.
-- [func TXTRecordGetLength(UnsafePointer<TXTRecordRef>!) -> UInt16](txtrecordgetlength(_:).md)
+- [func TXTRecordGetLength(UnsafePointer<TXTRecordRef>!) -> UInt16](./txtrecordgetlength%28_%29.md)
   Allows you to determine the length of the raw bytes within a TXTRecordRef.
-- [func TXTRecordRemoveValue(UnsafeMutablePointer<TXTRecordRef>!, UnsafePointer<CChar>!) -> DNSServiceErrorType](txtrecordremovevalue(_:_:).md)
+- [func TXTRecordRemoveValue(UnsafeMutablePointer<TXTRecordRef>!, UnsafePointer<CChar>!) -> DNSServiceErrorType](./txtrecordremovevalue%28_,_%29.md)
   Removes a key from a TXTRecordRef.
-- [func TXTRecordSetValue(UnsafeMutablePointer<TXTRecordRef>!, UnsafePointer<CChar>!, UInt8, UnsafeRawPointer!) -> DNSServiceErrorType](txtrecordsetvalue(_:_:_:_:).md)
+- [func TXTRecordSetValue(UnsafeMutablePointer<TXTRecordRef>!, UnsafePointer<CChar>!, UInt8, UnsafeRawPointer!) -> DNSServiceErrorType](./txtrecordsetvalue%28_,_,_,_%29.md)
   Adds a key (optionally with value) to a TXTRecordRef.
 
 

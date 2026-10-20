@@ -1,7 +1,8 @@
 # PG_PCI_BAR_MMIO
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The base address register to use when advertising the graphics stack inside a virtual machine.
 
@@ -15,6 +16,10 @@ The base address register to use when advertising the graphics stack inside a vi
 var PG_PCI_BAR_MMIO: Int32 { get }
 ```
 
+```c
+#define PG_PCI_BAR_MMIO
+```
+
 #### Discussion
 
 Specify the following characteristics for the memory that this base address register references:
@@ -23,17 +28,18 @@ Specify the following characteristics for the memory that this base address regi
 - Place MSI interrupt vectors between offsets `0x0000` and `0x0FFF` of this memory block.
 - Place MMIO mapped registers starting at offset `0x1000`.
 
-When you see a read or write access to this memory region, call [`mmioRead(atOffset:)`](pgdevice/mmioread(atoffset:).md) or [`mmioWrite(atOffset:value:)`](pgdevice/mmiowrite(atoffset:value:).md) on the host device. The framework aligns reads and writes to addresses that are multiples of `4` bytes with a length of `4` bytes.
+When you see a read or write access to this memory region, call [`mmioRead(atOffset:)`](./pgdevice/mmioread%28atoffset%29.md) or [`mmioWrite(atOffset:value:)`](./pgdevice/mmiowrite%28atoffset,value%29.md) on the host device. The framework aligns reads and writes to addresses that are multiples of `4` bytes with a length of `4` bytes.
 
 ## See Also
 
-- [var PG_PCI_DEVICE_ID: Int32](pg_pci_device_id.md)
+### PCI Device Characteristics
+- [var PG_PCI_DEVICE_ID: Int32](./pg_pci_device_id.md)
   The PCI device identifier to use when advertising the graphics stack inside a virtual machine.
-- [var PG_PCI_VENDOR_ID: Int32](pg_pci_vendor_id.md)
+- [var PG_PCI_VENDOR_ID: Int32](./pg_pci_vendor_id.md)
   The vendor identifier to use when advertising the graphics stack inside a virtual machine.
-- [var PG_PCI_MAX_MSI_VECTORS: Int32](pg_pci_max_msi_vectors.md)
+- [var PG_PCI_MAX_MSI_VECTORS: Int32](./pg_pci_max_msi_vectors.md)
   The number of MSI vectors that you need to allocate for the graphics configuration.
-- [func PGCopyOptionROMURL() -> URL](pgcopyoptionromurl().md)
+- [func PGCopyOptionROMURL() -> URL](./pgcopyoptionromurl%28%29.md)
   Copies the URL of the ROM image to use on the guest graphics device.
 
 

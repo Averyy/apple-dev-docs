@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio preview output object.
 
@@ -12,6 +13,10 @@ Creates an audio preview output object.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

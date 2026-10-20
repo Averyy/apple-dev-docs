@@ -1,7 +1,8 @@
 # init(name:description:parameters:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tool definition with the name, description, and parameter schema you provide.
 
@@ -27,7 +28,8 @@ init(name: String, description: String, parameters: GenerationSchema)
 
 ## See Also
 
-- [init(tool: some Tool)](transcript/tooldefinition/init(tool:).md)
+### Creating a tool definition
+- [init(tool: some Tool)](./init%28tool%29.md)
   Creates a tool definition that describes the tool you provide.
 
 

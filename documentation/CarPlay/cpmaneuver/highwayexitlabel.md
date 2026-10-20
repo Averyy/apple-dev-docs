@@ -1,7 +1,8 @@
 # highwayExitLabel
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that describes a highway exit.
 
@@ -16,6 +17,10 @@ A string that describes a highway exit.
 var highwayExitLabel: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * highwayExitLabel;
+```
+
 #### Discussion
 
 Set the label to a string that describes the exit, as in the example:
@@ -27,13 +32,14 @@ Set the label to a string that describes the exit, as in the example:
 
 ## See Also
 
-- [var maneuverType: CPManeuverType](cpmaneuver/maneuvertype.md)
+### Providing maneuver information
+- [var maneuverType: CPManeuverType](./maneuvertype.md)
   A value that represents the type of maneuver.
-- [var roadFollowingManeuverVariants: [String]?](cpmaneuver/roadfollowingmaneuvervariants.md)
+- [var roadFollowingManeuverVariants: [String]?](./roadfollowingmaneuvervariants.md)
   An array of strings that represent the names of the road following this maneuver, arranged from most to least preferred.
-- [var linkedLaneGuidance: CPLaneGuidance](cpmaneuver/linkedlaneguidance.md)
+- [var linkedLaneGuidance: CPLaneGuidance](./linkedlaneguidance.md)
   A value that represents lane guidance associated with this maneuver.
-- [var trafficSide: CPTrafficSide](cpmaneuver/trafficside.md)
+- [var trafficSide: CPTrafficSide](./trafficside.md)
   A value that represents which side of the road the traffic drives on.
 
 

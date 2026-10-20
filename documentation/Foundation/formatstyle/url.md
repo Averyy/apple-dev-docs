@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A style for formatting a URL.
 
@@ -20,9 +21,11 @@ A style for formatting a URL.
 static var url: URL.FormatStyle { get }
 ```
 
+Available when `Self` is `URL.FormatStyle`.
+
 #### Discussion
 
-Use the dot-notation form of this type property when the call point allows the use of [`URL.FormatStyle`](url/formatstyle.md). You typically do this when calling the [`formatted(_:)`](url/formatted(_:).md) method of [`URL`](url.md).
+Use the dot-notation form of this type property when the call point allows the use of [`URL.FormatStyle`](../url/formatstyle.md). You typically do this when calling the [`formatted(_:)`](../url/formatted%28_%29.md) method of [`URL`](../url.md).
 
 The format style provided by this static accessor provides a default behavior. To customize formatting behavior, use the modifiers in Customizing style behavior.
 
@@ -38,7 +41,8 @@ let formatted = url.formatted(.url
 
 ## See Also
 
-- [struct FormatStyle](url/formatstyle.md)
+### Applying URL styles
+- [struct FormatStyle](../url/formatstyle.md)
   A structure that converts between URL instances and their textual representations.
 
 

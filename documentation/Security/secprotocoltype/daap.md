@@ -1,7 +1,8 @@
 # SecProtocolType.DAAP
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates DAAP.
 
@@ -13,6 +14,10 @@ Indicates DAAP.
 
 ```swift
 case DAAP
+```
+
+```c
+kSecProtocolTypeDAAP
 ```
 
 

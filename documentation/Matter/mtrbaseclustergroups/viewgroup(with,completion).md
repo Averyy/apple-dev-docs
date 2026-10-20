@@ -1,7 +1,8 @@
 # viewGroup(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func viewGroup(with params: MTRGroupsClusterViewGroupParams, completion: @escaping @Sendable (MTRGroupsClusterViewGroupResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func viewGroup(with params: MTRGroupsClusterViewGroupParams) async throws -> MTRGroupsClusterViewGroupResponseParams
+```
+
+```objc
+- (void) viewGroupWithParams:(MTRGroupsClusterViewGroupParams *) params completion:(void (^)(MTRGroupsClusterViewGroupResponseParams *data, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # cameraCalibrationDataLensCollection
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies intrinsic and extrinsic parameters for single or multiple lenses.
 
@@ -25,11 +26,12 @@ The property value is an array of dictionaries describing the camera calibration
 
 ## See Also
 
-- [var cameraSystemBaseline: UInt32?](avspatialvideoconfiguration-swift.struct/camerasystembaseline.md)
+### Modifying the configuration
+- [var cameraSystemBaseline: UInt32?](./camerasystembaseline.md)
   Specifies the distance between centers of the lenses of the camera system that created the video.
-- [var disparityAdjustment: Int32?](avspatialvideoconfiguration-swift.struct/disparityadjustment.md)
+- [var disparityAdjustment: Int32?](./disparityadjustment.md)
   Specifies a relative shift of the left and right images, which changes the zero parallax plane.
-- [var horizontalFieldOfView: UInt32?](avspatialvideoconfiguration-swift.struct/horizontalfieldofview.md)
+- [var horizontalFieldOfView: UInt32?](./horizontalfieldofview.md)
   Specifies horizontal field of view in thousandths of a degree. Can be nil if the value is unknown.
 
 

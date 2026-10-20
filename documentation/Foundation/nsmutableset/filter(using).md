@@ -1,7 +1,8 @@
 # filter(using:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Evaluates a given predicate against the set’s content and removes from the set those objects for which the predicate returns false.
 
@@ -18,6 +19,10 @@ Evaluates a given predicate against the set’s content and removes from the set
 
 ```swift
 func filter(using predicate: NSPredicate)
+```
+
+```objc
+- (void) filterUsingPredicate:(NSPredicate *) predicate;
 ```
 
 #### Discussion
@@ -39,13 +44,14 @@ NSPredicate *predicate =
 
 ## See Also
 
-- [func add(Any)](nsmutableset/add(_:).md)
+### Adding and removing entries
+- [func add(Any)](./add%28_%29.md)
   Adds a given object to the set, if it is not already a member.
-- [func remove(Any)](nsmutableset/remove(_:).md)
+- [func remove(Any)](./remove%28_%29.md)
   Removes a given object from the set.
-- [func removeAllObjects()](nsmutableset/removeallobjects.md)
+- [func removeAllObjects()](./removeallobjects%28%29.md)
   Empties the set of all of its members.
-- [func addObjects(from: [Any])](nsmutableset/addobjects(from:).md)
+- [func addObjects(from: [Any])](./addobjects%28from%29.md)
   Adds to the set each object contained in a given array that is not already a member.
 
 

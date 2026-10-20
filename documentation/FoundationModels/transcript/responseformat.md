@@ -1,7 +1,8 @@
 # Transcript.ResponseFormat
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A response format that the model must conform its output to.
 
@@ -22,28 +23,28 @@ struct ResponseFormat
 ## Topics
 
 ### Creating a response format
-- [init(schema: GenerationSchema)](transcript/responseformat/init(schema:).md)
+- [init(schema: GenerationSchema)](./responseformat/init%28schema%29.md)
   Creates a response format with a schema.
-- [init<Content>(type: Content.Type)](transcript/responseformat/init(type:).md)
+- [init<Content>(type: Content.Type)](./responseformat/init%28type%29.md)
   Creates a response format with type you specify.
 ### Inspecting the name
-- [var name: String](transcript/responseformat/name.md)
+- [var name: String](./responseformat/name.md)
   A name associated with the response format.
 ### Accessing the kind of format
-- [let kind: Transcript.ResponseFormat.Kind](transcript/responseformat/kind-swift.property.md)
+- [let kind: Transcript.ResponseFormat.Kind](./responseformat/kind-swift.property.md)
   The way the response format constrains the model’s output.
-- [Transcript.ResponseFormat.Kind](transcript/responseformat/kind-swift.enum.md)
+- [Transcript.ResponseFormat.Kind](./responseformat/kind-swift.enum.md)
   A representation of the different ways a response format can constrain model output.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

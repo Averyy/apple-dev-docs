@@ -1,14 +1,15 @@
 # igps_snd_reports
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 u_int igps_snd_reports;
 ```
 

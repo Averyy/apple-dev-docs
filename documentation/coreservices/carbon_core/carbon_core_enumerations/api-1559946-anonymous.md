@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var invalidIconRefErr: Int](invalidiconreferr.md)
-- [var noIconDataAvailableErr: Int](noicondataavailableerr.md)
-- [var noSuchIconErr: Int](nosuchiconerr.md)
+- [var invalidIconRefErr: Int](../../invalidiconreferr.md)
+- [var noIconDataAvailableErr: Int](../../noicondataavailableerr.md)
+- [var noSuchIconErr: Int](../../nosuchiconerr.md)
 
 
 ---

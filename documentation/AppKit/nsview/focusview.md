@@ -1,17 +1,22 @@
 # focusView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The currently focused view object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var focusView: NSView? { get }
+```
+
+```objc
+@property (class, strong, readonly, nullable) NSView * focusView;
 ```
 
 #### Discussion

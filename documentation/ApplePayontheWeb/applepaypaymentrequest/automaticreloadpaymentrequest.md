@@ -1,7 +1,8 @@
 # automaticReloadPaymentRequest
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that requests an automatic reload payment, such as a store card top-up.
 
@@ -11,13 +12,13 @@ A property that requests an automatic reload payment, such as a store card top-u
 
 ## Declaration
 
-```swift
+```
 ApplePayAutomaticReloadPaymentRequest automaticReloadPaymentRequest;
 ```
 
 ## Mentions
 
-- [Apple Pay on the Web Version 14 Release Notes](apple-pay-on-the-web-version-14-release-notes.md)
+- [Apple Pay on the Web Version 14 Release Notes](../apple-pay-on-the-web-version-14-release-notes.md)
 
 #### Discussion
 
@@ -25,11 +26,12 @@ Set this property to indicate that the payment request is for an automatic reloa
 
 Apple Pay issues an Apple Pay Merchant Token if the user’s payment network supports merchant-specific payment tokens. Otherwise, Apple Pay issues a device token for the payment request.
 
-> ❗ **Important**:  You can’t use this property with [`multiTokenContexts`](applepaypaymentrequest/multitokencontexts.md) or [`recurringPaymentRequest`](applepaypaymentrequest/recurringpaymentrequest.md) properties. Simultaneous use of these properties results in an error and cancels the payment request.
+> ❗ **Important**:  You can’t use this property with [`multiTokenContexts`](./multitokencontexts.md) or [`recurringPaymentRequest`](./recurringpaymentrequest.md) properties. Simultaneous use of these properties results in an error and cancels the payment request.
 
 ## See Also
 
-- [ApplePayAutomaticReloadPaymentRequest](applepayautomaticreloadpaymentrequest.md)
+### Requesting automatic reload payments
+- [ApplePayAutomaticReloadPaymentRequest](../applepayautomaticreloadpaymentrequest.md)
   A dictionary that represents a request to set up an automatic reload payment, such as a store card top-up or a prepaid account.
 
 

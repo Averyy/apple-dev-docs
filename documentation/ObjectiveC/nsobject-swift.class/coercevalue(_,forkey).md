@@ -1,18 +1,23 @@
 # coerceValue(_:forKey:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Uses type info from the class description and `NSScriptCoercionHandler` to attempt to convert `value` for `key` to the proper type, if necessary.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 func coerceValue(_ value: Any?, forKey key: String) -> Any?
+```
+
+```objc
+- (id) coerceValue:(id) value forKey:(NSString *) key;
 ```
 
 #### Discussion

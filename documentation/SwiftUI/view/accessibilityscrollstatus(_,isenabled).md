@@ -1,7 +1,8 @@
 # accessibilityScrollStatus(_:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
 
@@ -19,6 +20,23 @@ Changes the announcement provided by accessibility technologies when a user scro
 ```swift
 @export(implementation)
 nonisolated func accessibilityScrollStatus(_ status: LocalizedStringResource, isEnabled: Bool = true) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityScrollStatus(_ status: Text, isEnabled: Bool = true) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
+```
+
+```swift
+nonisolated
+func accessibilityScrollStatus(_ status: some StringProtocol, isEnabled: Bool = true) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
+```
+
+```swift
+nonisolated
+func accessibilityScrollStatus(_ statusKey: LocalizedStringKey, isEnabled: Bool = true) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
 ```
 
 #### Discussion
@@ -49,25 +67,26 @@ By default, VoiceOver announces “Page X of Y” while scrolling.
 
 ## See Also
 
-- [func accessibilityAction(AccessibilityActionKind, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityaction(_:_:).md)
+### Actions
+- [func accessibilityAction(AccessibilityActionKind, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./accessibilityaction%28_,_%29.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
-- [func accessibilityActions<Content>(() -> Content) -> some View](view/accessibilityactions(_:).md)
+- [func accessibilityActions<Content>(() -> Content) -> some View](./accessibilityactions%28_%29.md)
   Adds multiple accessibility actions to the view.
-- [func accessibilityActions<Content>(category: AccessibilityActionCategory, () -> Content) -> some View](view/accessibilityactions(category:_:).md)
+- [func accessibilityActions<Content>(category: AccessibilityActionCategory, () -> Content) -> some View](./accessibilityactions%28category,_%29.md)
   Adds multiple accessibility actions to the view with a specific category. Actions allow assistive technologies, such as VoiceOver, to interact with the view by invoking the action and are grouped by their category. When multiple action modifiers with an equal category are applied to the view, the actions are combined together.
-- [func accessibilityAction(named:_:)](view/accessibilityaction(named:_:).md)
+- [func accessibilityAction(named:_:)](./accessibilityaction%28named,_%29.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
-- [func accessibilityAction<Label>(action: () -> Void, label: () -> Label) -> some View](view/accessibilityaction(action:label:).md)
+- [func accessibilityAction<Label>(action: () -> Void, label: () -> Label) -> some View](./accessibilityaction%28action,label%29.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
-- [func accessibilityAction<I, Label>(intent: I, label: () -> Label) -> some View](view/accessibilityaction(intent:label:).md)
+- [func accessibilityAction<I, Label>(intent: I, label: () -> Label) -> some View](./accessibilityaction%28intent,label%29.md)
   Adds an accessibility action labeled by the contents of `label` to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action. When the action is performed, the `intent` will be invoked.
-- [func accessibilityAction<I>(AccessibilityActionKind, intent: I) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityaction(_:intent:).md)
+- [func accessibilityAction<I>(AccessibilityActionKind, intent: I) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./accessibilityaction%28_,intent%29.md)
   Adds an accessibility action representing `actionKind` to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action. When the action is performed, the `intent` will be invoked.
-- [func accessibilityAction(named:intent:)](view/accessibilityaction(named:intent:).md)
+- [func accessibilityAction(named:intent:)](./accessibilityaction%28named,intent%29.md)
   Adds an accessibility action labeled `name` to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action. When the action is performed, the `intent` will be invoked.
-- [func accessibilityAdjustableAction((AccessibilityAdjustmentDirection) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityadjustableaction(_:).md)
+- [func accessibilityAdjustableAction((AccessibilityAdjustmentDirection) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./accessibilityadjustableaction%28_%29.md)
   Adds an accessibility adjustable action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
-- [func accessibilityScrollAction((Edge) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityscrollaction(_:).md)
+- [func accessibilityScrollAction((Edge) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./accessibilityscrollaction%28_%29.md)
   Adds an accessibility scroll action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 
 

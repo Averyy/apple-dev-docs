@@ -1,7 +1,8 @@
 # RenderLayer
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A named identifier for a group of meshes and lights.
 
@@ -21,7 +22,7 @@ struct RenderLayer
 
 #### Overview
 
-Use a [`RenderLayer`](renderlayer.md) to associate a light with the entities it should illuminate, or to mark which entities a light affects. Every entity belongs to [`defaultLayer`](renderlayer/defaultlayer.md) unless its [`RenderLayerComponent`](renderlayercomponent.md) specifies otherwise.
+Use a [`RenderLayer`](./renderlayer.md) to associate a light with the entities it should illuminate, or to mark which entities a light affects. Every entity belongs to [`defaultLayer`](./renderlayer/defaultlayer.md) unless its [`RenderLayerComponent`](./renderlayercomponent.md) specifies otherwise.
 
 Define your own layers as static constants in an extension so they’re easy to reuse:
 
@@ -35,35 +36,36 @@ extension RenderLayer {
 ## Topics
 
 ### Accessing default layers
-- [static var defaultLayer: RenderLayer](renderlayer/defaultlayer.md)
+- [static var defaultLayer: RenderLayer](./renderlayer/defaultlayer.md)
   The default layer.
 ### Grouping render layers
-- [RenderLayer.Set](renderlayer/set.md)
+- [RenderLayer.Set](./renderlayer/set.md)
   An unordered collection of unique render layers.
 ### Initializers
-- [init(StaticString)](renderlayer/init(_:).md)
+- [init(StaticString)](./renderlayer/init%28_%29.md)
   Creates a custom render layer with the specified compile-time constant name.
-- [init?(rawValue: String)](renderlayer/init(rawvalue:).md)
+- [init?(rawValue: String)](./renderlayer/init%28rawvalue%29.md)
   Creates a custom render layer with the specified runtime name.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct RenderLayerComponent](renderlayercomponent.md)
+### Portals, clipping, and occlusion
+- [struct RenderLayerComponent](./renderlayercomponent.md)
   A component that defines which layers an entity participates in.
-- [struct ClippingComponent](clippingcomponent.md)
+- [struct ClippingComponent](./clippingcomponent.md)
   A component that clips entities and their children to a customizable bounding box volume with feathered edges.
-- [struct OcclusionCullingComponent](occlusioncullingcomponent.md)
+- [struct OcclusionCullingComponent](./occlusioncullingcomponent.md)
   A component that controls whether the system performs occlusion culling on the owning Entity and its descendants.
 
 

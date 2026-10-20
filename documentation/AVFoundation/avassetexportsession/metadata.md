@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metadata an export session writes to the output container file.
 
@@ -19,9 +20,14 @@ The metadata an export session writes to the output container file.
 var metadata: [AVMetadataItem]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<AVMetadataItem *> * metadata;
+```
+
 ## See Also
 
-- [var metadataItemFilter: AVMetadataItemFilter?](avassetexportsession/metadataitemfilter.md)
+### Configuring metadata
+- [var metadataItemFilter: AVMetadataItemFilter?](./metadataitemfilter.md)
   An object the export session uses to filter the metadata items it transfers to the output asset.
 
 

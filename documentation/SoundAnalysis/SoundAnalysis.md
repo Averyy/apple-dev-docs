@@ -1,7 +1,8 @@
 # Sound Analysis
 
 **Framework**: Sound Analysis  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Classify various sounds by analyzing audio files or streams.
 
@@ -16,32 +17,32 @@ Classify various sounds by analyzing audio files or streams.
 
 #### Overview
 
-Identify specific sounds in your app, such as laughter or applause, by creating an [`SNClassifySoundRequest`](snclassifysoundrequest.md) to analyze an audio file or stream. Sound requests can identify over 300 sounds. Alternatively, you identify a custom set of sounds by providing the sound request with a custom Core ML model. You train a custom sound classification model by creating an [`MLSoundClassifier`](https://developer.apple.com/documentation/createml/mlsoundclassifier) with audio data in [`Create ML`](https://developer.apple.com/documentation/createml).
+Identify specific sounds in your app, such as laughter or applause, by creating an [`SNClassifySoundRequest`](./snclassifysoundrequest.md) to analyze an audio file or stream. Sound requests can identify over 300 sounds. Alternatively, you identify a custom set of sounds by providing the sound request with a custom Core ML model. You train a custom sound classification model by creating an [`MLSoundClassifier`](../CreateML/mlsoundclassifier.md) with audio data in [Create ML](../CreateML/CreateML.md).
 
 ## Topics
 
 ### Audio analyzers
-- [Classifying Sounds in an Audio File](classifying-sounds-in-an-audio-file.md)
+- [Classifying Sounds in an Audio File](./classifying-sounds-in-an-audio-file.md)
   Identify individual sounds in a file, such as a recording, with an audio file analyzer.
-- [class SNAudioFileAnalyzer](snaudiofileanalyzer.md)
+- [class SNAudioFileAnalyzer](./snaudiofileanalyzer.md)
   An analyzer that runs sound classification requests on an audio file.
-- [Classifying Sounds in an Audio Stream](classifying-sounds-in-an-audio-stream.md)
+- [Classifying Sounds in an Audio Stream](./classifying-sounds-in-an-audio-stream.md)
   Identify individual sounds in an audio data stream, such as from a microphone, with an audio stream analyzer.
-- [class SNAudioStreamAnalyzer](snaudiostreamanalyzer.md)
+- [class SNAudioStreamAnalyzer](./snaudiostreamanalyzer.md)
   An object you create to analyze a stream of audio data and provide the results to your app.
 ### Sound classification requests
-- [Classifying Live Audio Input with a Built-in Sound Classifier](classifying-live-audio-input-with-a-built-in-sound-classifier.md)
+- [Classifying Live Audio Input with a Built-in Sound Classifier](./classifying-live-audio-input-with-a-built-in-sound-classifier.md)
   Detect and identify hundreds of sounds by using a trained classifier.
-- [class SNClassifySoundRequest](snclassifysoundrequest.md)
+- [class SNClassifySoundRequest](./snclassifysoundrequest.md)
   A request that classifies sound using a Core ML model.
-- [class SNClassificationResult](snclassificationresult.md)
+- [class SNClassificationResult](./snclassificationresult.md)
   A result that contains the highest-ranking classifications in a time range.
 ### Errors
-- [struct SNError](snerror.md)
+- [struct SNError](./snerror.md)
   An error from the Sound Analysis framework.
-- [SNError.Code](snerror/code.md)
+- [SNError.Code](./snerror/code.md)
   The enumerated error codes that the Sound Analysis framework produces.
-- [let SNErrorDomain: String](snerrordomain.md)
+- [let SNErrorDomain: String](./snerrordomain.md)
   A string that identifies the Sound Analysis error domain.
 
 

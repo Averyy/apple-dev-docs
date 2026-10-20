@@ -1,7 +1,8 @@
 # SCStreamOutputType.screen
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An output type that represents a screen capture sample buffer.
 
@@ -19,15 +20,20 @@ An output type that represents a screen capture sample buffer.
 case screen
 ```
 
+```c
+SCStreamOutputTypeScreen
+```
+
 #### Discussion
 
-This output represents a sample buffer that wraps a [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) backed by an [`IOSurface`](https://developer.apple.com/documentation/iosurface/iosurface).
+This output represents a sample buffer that wraps a [CVPixelBuffer](../../CoreVideo/cvpixelbuffer-q2e.md) backed by an [`IOSurface`](../../IOSurface/iosurface-page.md).
 
-The width, height, and pixel format of the sample buffer reflect what you define in [`SCStreamConfiguration`](scstreamconfiguration.md). When capturing multiple windows, the system bases the width and height on the display you pass in through [`SCContentFilter`](sccontentfilter.md). You can set a background color for multi-window sample buffers by setting [`backgroundColor`](scstreamconfiguration/backgroundcolor.md); otherwise the default color is black.
+The width, height, and pixel format of the sample buffer reflect what you define in [`SCStreamConfiguration`](../scstreamconfiguration.md). When capturing multiple windows, the system bases the width and height on the display you pass in through [`SCContentFilter`](../sccontentfilter.md). You can set a background color for multi-window sample buffers by setting [`backgroundColor`](../scstreamconfiguration/backgroundcolor.md); otherwise the default color is black.
 
 ## See Also
 
-- [SCStreamOutputType.audio](scstreamoutputtype/audio.md)
+### Output types
+- [SCStreamOutputType.audio](./audio.md)
   An output type that represents an audio capture sample buffer.
 
 

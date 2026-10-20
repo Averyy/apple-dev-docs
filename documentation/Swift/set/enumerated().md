@@ -1,7 +1,8 @@
 # enumerated()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
 
@@ -63,15 +64,16 @@ for i in shorterIndices {
 // Prints "Mateo"
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## See Also
 
-- [func forEach((Self.Element) throws -> Void) rethrows](set/foreach(_:).md)
+### Iterating over a Set
+- [func forEach((Self.Element) throws -> Void) rethrows](./foreach%28_%29.md)
   Calls the given closure on each element in the sequence in the same order as a `for`-`in` loop.
-- [func makeIterator() -> Set<Element>.Iterator](set/makeiterator.md)
+- [func makeIterator() -> Set<Element>.Iterator](./makeiterator%28%29.md)
   Returns an iterator over the members of the set.
-- [var underestimatedCount: Int](set/underestimatedcount.md)
+- [var underestimatedCount: Int](./underestimatedcount.md)
   A value less than or equal to the number of elements in the collection.
 
 

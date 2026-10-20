@@ -1,7 +1,8 @@
 # unit
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,12 +19,15 @@
 final var unit: IntentParameter<Value>.InformationStorage? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitInformationStorage>`.
+
 ## See Also
 
-- [IntentParameter.InformationStorage](intentparameter/informationstorage.md)
-- [var defaultUnit: IntentParameter<Value>.InformationStorage?](intentparameter/defaultunit-ry6s.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-9qbxt.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-f41e.md)
+### Accessing unit details
+- [IntentParameter.InformationStorage](./informationstorage.md)
+- [var defaultUnit: IntentParameter<Value>.InformationStorage?](./defaultunit-ry6s.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-9qbxt.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-f41e.md)
 
 
 ---

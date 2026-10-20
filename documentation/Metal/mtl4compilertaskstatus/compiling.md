@@ -1,7 +1,8 @@
 # MTL4CompilerTaskStatus.compiling
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The compiler task is currently compiling.
 
@@ -17,6 +18,10 @@ The compiler task is currently compiling.
 
 ```swift
 case compiling
+```
+
+```c
+MTL4CompilerTaskStatusCompiling
 ```
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a compute stage with the value you specify.
 

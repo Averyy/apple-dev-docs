@@ -1,7 +1,8 @@
 # appendInterpolation(_:privacy:attributes:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends an interpolated object description with the specified attributes.
 
@@ -11,7 +12,7 @@ Appends an interpolated object description with the specified attributes.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -26,13 +27,14 @@ mutating func appendInterpolation(_ argumentObject: @autoclosure @escaping () ->
 
 ## Parameters
 
-- `argumentObject`: The interpolated object, which the system automatically wraps in a closure. The object itself doesn’t appear in the log message. Instead, the system calls the object’s [`description`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/description) method and incorporates the value it returns.
-- `privacy`: The privacy level of the interpolated value, which the system applies when it renders the value in a log message. For more information, see [`OSLogPrivacy`](oslogprivacy.md). The default value is [`auto`](oslogprivacy/auto.md).
-- `attributes`: Additional information about the interpolated value. Tools that process log messages interpret these attributes, which you typically provide as key-value pairs. For example, Instruments processes any e_ngineering types_ you embed in this value. For more information, see [`Instruments Developer Help`](https://developer.apple.comhttps://help.apple.com/instruments/developer/mac/current/#/devcd5016d31).
+- `argumentObject`: The interpolated object, which the system automatically wraps in a closure. The object itself doesn’t appear in the log message. Instead, the system calls the object’s [`description`](../../ObjectiveC/nsobjectprotocol/description.md) method and incorporates the value it returns.
+- `privacy`: The privacy level of the interpolated value, which the system applies when it renders the value in a log message. For more information, see [`OSLogPrivacy`](../oslogprivacy.md). The default value is [`auto`](../oslogprivacy/auto.md).
+- `attributes`: Additional information about the interpolated value. Tools that process log messages interpret these attributes, which you typically provide as key-value pairs. For example, Instruments processes any e_ngineering types_ you embed in this value. For more information, see [Instruments Developer Help](https://help.apple.com/instruments/developer/mac/current/#/devcd5016d31).
 
 ## See Also
 
-- [func appendInterpolation(@autoclosure () -> NSObject, privacy: OSLogPrivacy)](osloginterpolation/appendinterpolation(_:privacy:).md)
+### Appending Objects
+- [func appendInterpolation(@autoclosure () -> NSObject, privacy: OSLogPrivacy)](./appendinterpolation%28_,privacy%29.md)
   Appends an interpolated object description.
 
 

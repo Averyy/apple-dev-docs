@@ -1,7 +1,8 @@
 # outerAngleInDegrees
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The outer angle of the spotlight in degrees.
 
@@ -25,13 +26,14 @@ The default value is `60.0` degrees.
 
 ## See Also
 
-- [var intensity: Float](spotlightcomponent/intensity.md)
+### Configuring the spotlight
+- [var intensity: Float](./intensity.md)
   The intensity of the spotlight measured in lumen.
-- [var innerAngleInDegrees: Float](spotlightcomponent/innerangleindegrees.md)
+- [var innerAngleInDegrees: Float](./innerangleindegrees.md)
   The inner angle of the spotlight in degrees.
-- [var attenuationRadius: Float](spotlightcomponent/attenuationradius.md)
+- [var attenuationRadius: Float](./attenuationradius.md)
   The distance from the light source where its intensity reaches zero.
-- [var attenuationFalloffExponent: Float](spotlightcomponent/attenuationfalloffexponent.md)
+- [var attenuationFalloffExponent: Float](./attenuationfalloffexponent.md)
   The exponent value for the light’s intensity falloff-transition curve.
 
 

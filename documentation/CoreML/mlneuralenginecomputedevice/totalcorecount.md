@@ -1,7 +1,8 @@
 # totalCoreCount
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of cores in the Neural Engine.
 
@@ -18,6 +19,10 @@ The total number of cores in the Neural Engine.
 
 ```swift
 var totalCoreCount: Int { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) NSInteger totalCoreCount;
 ```
 
 

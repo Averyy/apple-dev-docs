@@ -1,7 +1,8 @@
 # title
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A user-displayable name for the password credential to be saved.
 
@@ -15,6 +16,10 @@ A user-displayable name for the password credential to be saved.
 
 ```swift
 var title: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * title;
 ```
 
 #### Discussion

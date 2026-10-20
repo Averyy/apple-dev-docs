@@ -1,7 +1,8 @@
 # Artist.FilterType
 
 **Framework**: MusicKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The associated type that contains the artist properties your app uses as a filter for a catalog resource request.
 

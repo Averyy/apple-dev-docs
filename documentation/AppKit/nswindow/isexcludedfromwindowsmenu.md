@@ -1,12 +1,13 @@
 # isExcludedFromWindowsMenu
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the window is excluded from the application’s Windows menu.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ A Boolean value that indicates whether the window is excluded from the applicati
 var isExcludedFromWindowsMenu: Bool { get set }
 ```
 
+```objc
+@property (getter=isExcludedFromWindowsMenu) BOOL excludedFromWindowsMenu;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the window is excluded from the Windows menu; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). The default initial setting is [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) when the window is excluded from the Windows menu; otherwise, [`false`](../../Swift/false.md). The default initial setting is [`false`](../../Swift/false.md).
 
 
 ---

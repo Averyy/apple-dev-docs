@@ -1,7 +1,8 @@
 # cell()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates the default configuration you use to style a cell in a list.
 
@@ -10,7 +11,7 @@ Creates the default configuration you use to style a cell in a list.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -28,33 +29,34 @@ Create this configuration to update the content and styling of a cell in a list.
 
 For an appearance consistent with system defaults, display your cell in a table view or collection view list that you configure with one of the following enumeration cases:
 
-- [`UITableView.Style.plain`](uitableview/style-swift.enum/plain.md)
-- [`UITableView.Style.grouped`](uitableview/style-swift.enum/grouped.md)
-- [`UITableView.Style.insetGrouped`](uitableview/style-swift.enum/insetgrouped.md)
-- [`UICollectionLayoutListConfiguration.Appearance.plain`](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/plain.md)
-- [`UICollectionLayoutListConfiguration.Appearance.grouped`](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/grouped.md)
-- [`UICollectionLayoutListConfiguration.Appearance.insetGrouped`](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/insetgrouped.md)
+- [`UITableView.Style.plain`](../uitableview/style-swift.enum/plain.md)
+- [`UITableView.Style.grouped`](../uitableview/style-swift.enum/grouped.md)
+- [`UITableView.Style.insetGrouped`](../uitableview/style-swift.enum/insetgrouped.md)
+- [`UICollectionLayoutListConfiguration.Appearance.plain`](../uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/plain.md)
+- [`UICollectionLayoutListConfiguration.Appearance.grouped`](../uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/grouped.md)
+- [`UICollectionLayoutListConfiguration.Appearance.insetGrouped`](../uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/insetgrouped.md)
 
-Configure the background of your cell using one of the [`UIBackgroundConfiguration`](uibackgroundconfiguration-swift.struct.md) options below. Match the background of your cell to the corresponding table view or collection view styles as follows:
+Configure the background of your cell using one of the [`UIBackgroundConfiguration`](../uibackgroundconfiguration-swift.struct.md) options below. Match the background of your cell to the corresponding table view or collection view styles as follows:
 
 | Background configuration option | Matching table view or collection view styles |
 | --- | --- |
-| [`listPlainCell()`](uibackgroundconfiguration-swift.struct/listplaincell().md) | [`UITableView.Style.plain`](uitableview/style-swift.enum/plain.md), [`UICollectionLayoutListConfiguration.Appearance.plain`](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/plain.md) |
-| [`listGroupedCell()`](uibackgroundconfiguration-swift.struct/listgroupedcell().md) | [`UITableView.Style.grouped`](uitableview/style-swift.enum/grouped.md), [`UITableView.Style.insetGrouped`](uitableview/style-swift.enum/insetgrouped.md), [`UICollectionLayoutListConfiguration.Appearance.grouped`](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/grouped.md), [`UICollectionLayoutListConfiguration.Appearance.insetGrouped`](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/insetgrouped.md) |
+| [`listPlainCell()`](../uibackgroundconfiguration-swift.struct/listplaincell%28%29.md) | [`UITableView.Style.plain`](../uitableview/style-swift.enum/plain.md), [`UICollectionLayoutListConfiguration.Appearance.plain`](../uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/plain.md) |
+| [`listGroupedCell()`](../uibackgroundconfiguration-swift.struct/listgroupedcell%28%29.md) | [`UITableView.Style.grouped`](../uitableview/style-swift.enum/grouped.md), [`UITableView.Style.insetGrouped`](../uitableview/style-swift.enum/insetgrouped.md), [`UICollectionLayoutListConfiguration.Appearance.grouped`](../uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/grouped.md), [`UICollectionLayoutListConfiguration.Appearance.insetGrouped`](../uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/insetgrouped.md) |
 
 ## See Also
 
-- [static func subtitleCell() -> UIListContentConfiguration](uilistcontentconfiguration-swift.struct/subtitlecell.md)
+### Creating default cell configurations
+- [static func subtitleCell() -> UIListContentConfiguration](./subtitlecell%28%29.md)
   Creates the default configuration you use to style a cell that’s in a list and contains subtitle text.
-- [static func valueCell() -> UIListContentConfiguration](uilistcontentconfiguration-swift.struct/valuecell.md)
+- [static func valueCell() -> UIListContentConfiguration](./valuecell%28%29.md)
   Creates the default configuration you use to style a cell that’s in a list and contains side-by-side value text.
-- [static func sidebarCell() -> UIListContentConfiguration](uilistcontentconfiguration-swift.struct/sidebarcell.md)
+- [static func sidebarCell() -> UIListContentConfiguration](./sidebarcell%28%29.md)
   Creates the default configuration you use to style a cell in a sidebar list.
-- [static func sidebarSubtitleCell() -> UIListContentConfiguration](uilistcontentconfiguration-swift.struct/sidebarsubtitlecell.md)
+- [static func sidebarSubtitleCell() -> UIListContentConfiguration](./sidebarsubtitlecell%28%29.md)
   Creates the default configuration you use to style a cell that’s in a sidebar list and contains subtitle text.
-- [static func accompaniedSidebarCell() -> UIListContentConfiguration](uilistcontentconfiguration-swift.struct/accompaniedsidebarcell.md)
+- [static func accompaniedSidebarCell() -> UIListContentConfiguration](./accompaniedsidebarcell%28%29.md)
   Creates the default configuration you use to style a cell in an accompanied sidebar list.
-- [static func accompaniedSidebarSubtitleCell() -> UIListContentConfiguration](uilistcontentconfiguration-swift.struct/accompaniedsidebarsubtitlecell.md)
+- [static func accompaniedSidebarSubtitleCell() -> UIListContentConfiguration](./accompaniedsidebarsubtitlecell%28%29.md)
   Creates the default configuration you use to style a cell that’s in an accompanied sidebar list and contains subtitle text.
 
 

@@ -1,7 +1,8 @@
 # CLLocationCoordinate2DIsValid(_:)
 
 **Framework**: Core Location  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value indicating whether the specified coordinate is valid.
 
@@ -20,9 +21,13 @@ Returns a Boolean value indicating whether the specified coordinate is valid.
 func CLLocationCoordinate2DIsValid(_ coord: CLLocationCoordinate2D) -> Bool
 ```
 
+```c
+extern BOOL CLLocationCoordinate2DIsValid(CLLocationCoordinate2D coord);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the coordinate is valid or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+[`true`](../Swift/true.md) if the coordinate is valid or [`false`](../Swift/false.md) if it is not.
 
 #### Discussion
 
@@ -37,7 +42,8 @@ A coordinate is considered invalid if it meets at least one of the following cri
 
 ## See Also
 
-- [let kCLLocationCoordinate2DInvalid: CLLocationCoordinate2D](kcllocationcoordinate2dinvalid.md)
+### Validating a coordinate
+- [let kCLLocationCoordinate2DInvalid: CLLocationCoordinate2D](./kcllocationcoordinate2dinvalid.md)
   An invalid coordinate value.
 
 

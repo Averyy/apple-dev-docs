@@ -1,7 +1,8 @@
 # omitted
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that hides the day period marker.
 
@@ -26,11 +27,12 @@ This type represents the hour period numerically only. For example, `8` (for 8 a
 
 ## See Also
 
-- [static let abbreviated: Date.FormatStyle.Symbol.Hour.AMPMStyle](date/formatstyle/symbol/hour/ampmstyle/abbreviated.md)
+### Creating AMPM Styles
+- [static let abbreviated: Date.FormatStyle.Symbol.Hour.AMPMStyle](./abbreviated.md)
   A type that specifies the abbreviated day period for when the locale prefers using day period with hour.
-- [static let narrow: Date.FormatStyle.Symbol.Hour.AMPMStyle](date/formatstyle/symbol/hour/ampmstyle/narrow.md)
+- [static let narrow: Date.FormatStyle.Symbol.Hour.AMPMStyle](./narrow.md)
   A type that specifies the narrow day period if the locale prefers using day period with hour.
-- [static let wide: Date.FormatStyle.Symbol.Hour.AMPMStyle](date/formatstyle/symbol/hour/ampmstyle/wide.md)
+- [static let wide: Date.FormatStyle.Symbol.Hour.AMPMStyle](./wide.md)
   A type that represents the wide day period if the locale prefers using day period with hour.
 
 

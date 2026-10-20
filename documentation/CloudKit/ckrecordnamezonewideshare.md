@@ -1,7 +1,8 @@
 # CKRecordNameZoneWideShare
 
 **Framework**: CloudKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of a share record that manages a shared record zone.
 
@@ -20,9 +21,13 @@ The name of a share record that manages a shared record zone.
 let CKRecordNameZoneWideShare: String
 ```
 
+```c
+extern NSString * const CKRecordNameZoneWideShare;
+```
+
 #### Discussion
 
-When you create an instance of [`CKShare`](ckshare.md) for sharing a record zone, CloudKit automatically assigns this constant as the [`recordName`](ckrecord/id/recordname.md) element of the share record’s [`recordID`](ckrecord/recordid.md). After you save the share record to iCloud, you can fetch it by reconstructing the record ID using this constant, as the following example shows:
+When you create an instance of [`CKShare`](./ckshare.md) for sharing a record zone, CloudKit automatically assigns this constant as the [`recordName`](./ckrecord/id/recordname.md) element of the share record’s [`recordID`](./ckrecord/recordid.md). After you save the share record to iCloud, you can fetch it by reconstructing the record ID using this constant, as the following example shows:
 
 ```swift
 func fetchShare(
@@ -53,9 +58,10 @@ func fetchShare(
 
 ## See Also
 
-- [convenience init(recordName: String)](ckrecord/id/init(recordname:).md)
+### Creating a Record ID
+- [convenience init(recordName: String)](./ckrecord/id/init%28recordname%29.md)
   Creates a new record ID with the specified name in the default zone.
-- [convenience init(recordName: String, zoneID: CKRecordZone.ID)](ckrecord/id/init(recordname:zoneid:).md)
+- [convenience init(recordName: String, zoneID: CKRecordZone.ID)](./ckrecord/id/init%28recordname,zoneid%29.md)
   Creates a new record ID with the specified name and zone information.
 
 

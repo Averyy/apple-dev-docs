@@ -1,7 +1,8 @@
 # AVCaptureSynchronizedMetadataObjectData
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for metadata objects collected using synchronized capture.
 
@@ -17,35 +18,40 @@ A container for metadata objects collected using synchronized capture.
 class AVCaptureSynchronizedMetadataObjectData
 ```
 
+```objc
+@interface AVCaptureSynchronizedMetadataObjectData : AVCaptureSynchronizedData
+```
+
 ## Topics
 
 ### Accessing synchronized data
-- [var metadataObjects: [AVMetadataObject]](avcapturesynchronizedmetadataobjectdata/metadataobjects.md)
+- [var metadataObjects: [AVMetadataObject]](./avcapturesynchronizedmetadataobjectdata/metadataobjects.md)
   The list of metadata objects captured at this synchronization timestamp.
 
 ## Relationships
 
 ### Inherits From
-- [AVCaptureSynchronizedData](avcapturesynchronizeddata.md)
+- [AVCaptureSynchronizedData](./avcapturesynchronizeddata.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVCaptureDataOutputSynchronizer](avcapturedataoutputsynchronizer.md)
+### Synchronized capture
+- [class AVCaptureDataOutputSynchronizer](./avcapturedataoutputsynchronizer.md)
   An object that coordinates time-matched delivery of data from multiple capture outputs.
-- [class AVCaptureSynchronizedDataCollection](avcapturesynchronizeddatacollection.md)
+- [class AVCaptureSynchronizedDataCollection](./avcapturesynchronizeddatacollection.md)
   A set of data samples collected simultaneously from multiple capture outputs.
-- [class AVCaptureSynchronizedSampleBufferData](avcapturesynchronizedsamplebufferdata.md)
+- [class AVCaptureSynchronizedSampleBufferData](./avcapturesynchronizedsamplebufferdata.md)
   A container for video or audio samples collected using synchronized capture.
-- [class AVCaptureSynchronizedDepthData](avcapturesynchronizeddepthdata.md)
+- [class AVCaptureSynchronizedDepthData](./avcapturesynchronizeddepthdata.md)
   A container for scene depth information collected using synchronized capture.
-- [class AVCaptureSynchronizedData](avcapturesynchronizeddata.md)
+- [class AVCaptureSynchronizedData](./avcapturesynchronizeddata.md)
   The abstract superclass for media samples collected using synchronized capture.
 
 

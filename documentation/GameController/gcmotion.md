@@ -1,7 +1,8 @@
 # GCMotion
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A controller profile that supports orientation and motion.
 
@@ -19,93 +20,98 @@ A controller profile that supports orientation and motion.
 class GCMotion
 ```
 
+```objc
+@interface GCMotion : NSObject
+```
+
 #### Overview
 
-The motion controller profile provides attitude and rotation data, as well as acceleration and sensor information. Use this profile to get motion input from a controller that measures acceleration and rotation rate. If the controller’s [`motion`](gccontroller/motion.md) property is a `GCMotion` object, the controller supports motion.
+The motion controller profile provides attitude and rotation data, as well as acceleration and sensor information. Use this profile to get motion input from a controller that measures acceleration and rotation rate. If the controller’s [`motion`](./gccontroller/motion.md) property is a `GCMotion` object, the controller supports motion.
 
 This illustration shows the direction of the x, y, and z axes of an iPhone when held upright.
 
-![An illustration of a vertical iPhone with the  x-axis passing through its center from side to side, the y-axis passing through its center from top to bottom, and the z-axis passing through its center from back to front.](/images/com.apple.gamecontroller/media-2930224@2x.png)
+![An illustration of a vertical iPhone with the  x-axis passing through its center from side to side, the y-axis passing through its center from top to bottom, and the z-axis passing through its center from back to front.](https://developer.apple.com/tutorials/images/com.apple.gamecontroller/media-2930224@2x.png)
 
 ## Topics
 
 ### Getting the Controller
-- [var controller: GCController?](gcmotion/controller.md)
+- [var controller: GCController?](./gcmotion/controller.md)
   The controller for the profile.
 ### Receiving a Callback When Input Values Change
-- [var valueChangedHandler: GCMotionValueChangedHandler?](gcmotion/valuechangedhandler.md)
+- [var valueChangedHandler: GCMotionValueChangedHandler?](./gcmotion/valuechangedhandler.md)
   The block that the profile calls when an element’s value changes.
-- [typealias GCMotionValueChangedHandler](gcmotionvaluechangedhandler.md)
+- [typealias GCMotionValueChangedHandler](./gcmotionvaluechangedhandler.md)
   The signature for the block that the profile calls when an element’s value changes.
 ### Verifying Capabilities
-- [var hasAttitude: Bool](gcmotion/hasattitude.md)
+- [var hasAttitude: Bool](./gcmotion/hasattitude.md)
   A Boolean value that indicates whether the controller provides attitude data.
-- [var hasRotationRate: Bool](gcmotion/hasrotationrate.md)
+- [var hasRotationRate: Bool](./gcmotion/hasrotationrate.md)
   A Boolean value that indicates whether the controller provides rotation data.
-- [var hasGravityAndUserAcceleration: Bool](gcmotion/hasgravityanduseracceleration.md)
+- [var hasGravityAndUserAcceleration: Bool](./gcmotion/hasgravityanduseracceleration.md)
   A Boolean value that indicates whether the controller provides gravity and user acceleration data.
-- [var hasAttitudeAndRotationRate: Bool](gcmotion/hasattitudeandrotationrate.md)
+- [var hasAttitudeAndRotationRate: Bool](./gcmotion/hasattitudeandrotationrate.md)
   A Boolean value that indicates whether the controller provides attitude and rotation data.
 ### Accessing Attitude and Rotation Data
-- [var attitude: GCQuaternion](gcmotion/attitude.md)
+- [var attitude: GCQuaternion](./gcmotion/attitude.md)
   The attitude of the controller.
-- [struct GCQuaternion](gcquaternion.md)
+- [struct GCQuaternion](./gcquaternion.md)
   A quaternion that represents a controller’s measurement of attitude.
-- [var rotationRate: GCRotationRate](gcmotion/rotationrate.md)
+- [var rotationRate: GCRotationRate](./gcmotion/rotationrate.md)
   The rotation rate of the controller.
-- [struct GCRotationRate](gcrotationrate.md)
+- [struct GCRotationRate](./gcrotationrate.md)
   A structure that represents rotation rates around the x, y, and z axes.
-- [struct GCEulerAngles](gceulerangles.md)
+- [struct GCEulerAngles](./gceulerangles.md)
   A structure that specifies the controller’s attitude as a series of rotations around the x, y, and z axes.
 ### Accessing Gravity and Acceleration Data
-- [var acceleration: GCAcceleration](gcmotion/acceleration.md)
+- [var acceleration: GCAcceleration](./gcmotion/acceleration.md)
   The total acceleration of the controller that includes gravity and the acceleration the user applies to the controller.
-- [var gravity: GCAcceleration](gcmotion/gravity.md)
+- [var gravity: GCAcceleration](./gcmotion/gravity.md)
   The gravity acceleration vector from the controller’s reference frame.
-- [var userAcceleration: GCAcceleration](gcmotion/useracceleration.md)
+- [var userAcceleration: GCAcceleration](./gcmotion/useracceleration.md)
   The acceleration that the user applies to the controller.
-- [struct GCAcceleration](gcacceleration.md)
+- [struct GCAcceleration](./gcacceleration.md)
   A three-dimensional acceleration vector.
 ### Accessing Sensor Data
-- [var sensorsRequireManualActivation: Bool](gcmotion/sensorsrequiremanualactivation.md)
+- [var sensorsRequireManualActivation: Bool](./gcmotion/sensorsrequiremanualactivation.md)
   A Boolean value that indicates whether the sensors that compute the motion data require manual activation.
-- [var sensorsActive: Bool](gcmotion/sensorsactive.md)
+- [var sensorsActive: Bool](./gcmotion/sensorsactive.md)
   A Boolean value that indicates whether the sensors that compute the motion data are active.
 ### Setting Snapshot Values
-- [func setStateFrom(GCMotion)](gcmotion/setstatefrom(_:).md)
+- [func setStateFrom(GCMotion)](./gcmotion/setstatefrom%28_%29.md)
   Copies the input values from a specified motion profile to a snapshot of a motion profile.
-- [func setAttitude(GCQuaternion)](gcmotion/setattitude(_:).md)
+- [func setAttitude(GCQuaternion)](./gcmotion/setattitude%28_%29.md)
   Sets the controller’s attitude.
-- [func setRotationRate(GCRotationRate)](gcmotion/setrotationrate(_:).md)
+- [func setRotationRate(GCRotationRate)](./gcmotion/setrotationrate%28_%29.md)
   Sets the controller’s rotation rate.
-- [func setAcceleration(GCAcceleration)](gcmotion/setacceleration(_:).md)
+- [func setAcceleration(GCAcceleration)](./gcmotion/setacceleration%28_%29.md)
   Sets the total acceleration of the controller that includes gravity and the user’s acceleration.
-- [func setGravity(GCAcceleration)](gcmotion/setgravity(_:).md)
+- [func setGravity(GCAcceleration)](./gcmotion/setgravity%28_%29.md)
   Sets the controller’s gravity data.
-- [func setUserAcceleration(GCAcceleration)](gcmotion/setuseracceleration(_:).md)
+- [func setUserAcceleration(GCAcceleration)](./gcmotion/setuseracceleration%28_%29.md)
   Sets the acceleration the user applies to the controller.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Input](input.md)
+### Game controller profiles
+- [Input](./input.md)
   Receive controller input in the way that best integrates with the flow of your game or game engine.
-- [class GCDeviceBattery](gcdevicebattery.md)
+- [class GCDeviceBattery](./gcdevicebattery.md)
   The charge level and state of a device’s battery.
-- [class GCDeviceHaptics](gcdevicehaptics.md)
+- [class GCDeviceHaptics](./gcdevicehaptics.md)
   The locations of haptic actuators on a game controller.
-- [class GCDeviceLight](gcdevicelight.md)
+- [class GCDeviceLight](./gcdevicelight.md)
   The colored light on a device.
 
 

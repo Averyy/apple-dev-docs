@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration run by the session.
 
@@ -18,19 +19,24 @@ The configuration run by the session.
 var configuration: NIConfiguration? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NIConfiguration * configuration;
+```
+
 #### Discussion
 
-An app doesn’t set this property. Instead, NI sets its value to reflect the object that the app passed in to [`run(_:)`](nisession/run(_:).md).
+An app doesn’t set this property. Instead, NI sets its value to reflect the object that the app passed in to [`run(_:)`](./run%28_%29.md).
 
 ## See Also
 
-- [var discoveryToken: NIDiscoveryToken?](nisession/discoverytoken.md)
+### Connecting to a peer device
+- [var discoveryToken: NIDiscoveryToken?](./discoverytoken.md)
   A temporary, random identifier for a device.
-- [class NIDiscoveryToken](nidiscoverytoken.md)
+- [class NIDiscoveryToken](../nidiscoverytoken.md)
   An object that uniquely identifies a peer that participates in an interaction session.
-- [func run(NIConfiguration)](nisession/run(_:).md)
+- [func run(NIConfiguration)](./run%28_%29.md)
   Starts a session with a nearby peer.
-- [var delegateQueue: dispatch_queue_t?](nisession/delegatequeue.md)
+- [var delegateQueue: dispatch_queue_t?](./delegatequeue.md)
   The dispatch queue on which the session invokes delegate callbacks.
 
 

@@ -1,7 +1,8 @@
 # ResolverSpecificationBuilder.Specification
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -18,15 +19,17 @@
 struct Specification<Output, each R> where Output : _IntentValue, repeat each R : Resolver
 ```
 
+Available when `Property` conforms to `_IntentValue`.
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [ResolverSpecification](resolverspecification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [ResolverSpecification](../resolverspecification.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Sequence](../../Swift/sequence.md)
 
 
 ---

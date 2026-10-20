@@ -1,14 +1,15 @@
 # query
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - CKTool JS 1.2.15+
 
 ## Declaration
 
-```swift
+```
 attribute CKDBQuery query;
 ```
 

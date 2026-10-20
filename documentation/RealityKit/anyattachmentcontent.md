@@ -1,7 +1,8 @@
 # AnyAttachmentContent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased attachment content.
 
@@ -22,27 +23,28 @@ An `AnyAttachmentContent` allows changing the type of attachment used in a given
 ## Topics
 
 ### Initializers
-- [init<Content>(Content)](anyattachmentcontent/init(_:).md)
-  Creates an instance that type-erases [`AttachmentContent`](attachmentcontent.md).
+- [init<Content>(Content)](./anyattachmentcontent/init%28_%29.md)
+  Creates an instance that type-erases [`AttachmentContent`](./attachmentcontent.md).
 
 ## Relationships
 
 ### Conforms To
-- [AttachmentContent](attachmentcontent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttachmentContent](./attachmentcontent.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AttachmentContentBuilder](attachmentcontentbuilder.md)
+### Attachment types
+- [struct AttachmentContentBuilder](./attachmentcontentbuilder.md)
   A result builder that creates attachment content from closures.
-- [protocol AttachmentContent](attachmentcontent.md)
+- [protocol AttachmentContent](./attachmentcontent.md)
   A type that provides content for an attachment content builder.
-- [struct TuplePackAttachmentContent](tuplepackattachmentcontent.md)
-- [struct ConditionalAttachmentContent](conditionalattachmentcontent.md)
-- [struct EmptyAttachmentContent](emptyattachmentcontent.md)
+- [struct TuplePackAttachmentContent](./tuplepackattachmentcontent.md)
+- [struct ConditionalAttachmentContent](./conditionalattachmentcontent.md)
+- [struct EmptyAttachmentContent](./emptyattachmentcontent.md)
   A attachment content that doesn’t contain any content.
-- [struct TupleAttachmentContent](tupleattachmentcontent.md)
+- [struct TupleAttachmentContent](./tupleattachmentcontent.md)
 
 
 ---

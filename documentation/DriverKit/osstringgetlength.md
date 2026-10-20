@@ -1,23 +1,25 @@
 # OSStringGetLength
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 size_t OSStringGetLength(OSStringPtr string);
 ```
 
 ## See Also
 
-- [getLength](osstring/getlength.md)
+### Inspecting a String
+- [getLength](./osstring/getlength.md)
   Returns length of string not including null terminator.
 
 

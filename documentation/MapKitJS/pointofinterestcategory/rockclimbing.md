@@ -1,7 +1,8 @@
 # RockClimbing
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for rock-climbing facilities.
 
@@ -10,7 +11,7 @@ The point-of-interest category for rock-climbing facilities.
 
 ## Declaration
 
-```swift
+```
 readonly RockClimbing: "RockClimbing";
 ```
 

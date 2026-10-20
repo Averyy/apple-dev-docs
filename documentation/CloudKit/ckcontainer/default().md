@@ -1,7 +1,8 @@
 # default()
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the app’s default container.
 
@@ -10,7 +11,7 @@ Returns the app’s default container.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,19 +21,24 @@ Returns the app’s default container.
 class func `default`() -> CKContainer
 ```
 
+```objc
++ (CKContainer *) defaultContainer;
+```
+
 ## Mentions
 
-- [Designing and Creating a CloudKit Database](designing-and-creating-a-cloudkit-database.md)
+- [Designing and Creating a CloudKit Database](../designing-and-creating-a-cloudkit-database.md)
 
 #### Discussion
 
-Use this method to retrieve your app’s default container. This is the one you typically use to store your app’s data. If you want the container for a different app, create a container using the [`init(identifier:)`](ckcontainer/init(identifier:).md) method.
+Use this method to retrieve your app’s default container. This is the one you typically use to store your app’s data. If you want the container for a different app, create a container using the [`init(identifier:)`](./init%28identifier%29.md) method.
 
 During development, the container uses the development environment. When you release your app, the container uses the production environment.
 
 ## See Also
 
-- [init(identifier: String)](ckcontainer/init(identifier:).md)
+### Creating Containers
+- [init(identifier: String)](./init%28identifier%29.md)
   Creates a container for the specified identifier.
 
 

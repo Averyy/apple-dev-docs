@@ -1,7 +1,8 @@
 # arcadeButton(row:column:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the name of the arcade stick button at the specified location.
 
@@ -11,7 +12,7 @@ Returns the name of the arcade stick button at the specified location.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

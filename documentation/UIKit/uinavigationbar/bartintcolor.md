@@ -1,7 +1,8 @@
 # barTintColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color to apply to the navigation bar background.
 
@@ -9,7 +10,7 @@ The tint color to apply to the navigation bar background.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ The tint color to apply to the navigation bar background.
 var barTintColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIColor * barTintColor;
+```
+
 #### Discussion
 
-This color is made translucent by default unless you set the [`isTranslucent`](uinavigationbar/istranslucent.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+This color is made translucent by default unless you set the [`isTranslucent`](./istranslucent.md) property to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func backgroundImage(for: UIBarMetrics) -> UIImage?](uinavigationbar/backgroundimage(for:).md)
+### Changing the background
+- [func backgroundImage(for: UIBarMetrics) -> UIImage?](./backgroundimage%28for%29.md)
   Returns the background image for given bar metrics.
-- [func setBackgroundImage(UIImage?, for: UIBarMetrics)](uinavigationbar/setbackgroundimage(_:for:).md)
+- [func setBackgroundImage(UIImage?, for: UIBarMetrics)](./setbackgroundimage%28_,for%29.md)
   Sets the background image for given bar metrics.
-- [func backgroundImage(for: UIBarPosition, barMetrics: UIBarMetrics) -> UIImage?](uinavigationbar/backgroundimage(for:barmetrics:).md)
+- [func backgroundImage(for: UIBarPosition, barMetrics: UIBarMetrics) -> UIImage?](./backgroundimage%28for,barmetrics%29.md)
   Returns the background image to use for a given bar position and set of metrics.
-- [func setBackgroundImage(UIImage?, for: UIBarPosition, barMetrics: UIBarMetrics)](uinavigationbar/setbackgroundimage(_:for:barmetrics:).md)
+- [func setBackgroundImage(UIImage?, for: UIBarPosition, barMetrics: UIBarMetrics)](./setbackgroundimage%28_,for,barmetrics%29.md)
   Sets the background image to use for a given bar position and set of metrics.
 
 

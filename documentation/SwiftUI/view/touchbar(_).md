@@ -1,7 +1,8 @@
 # touchBar(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the Touch Bar content to be shown in the Touch Bar when applicable.
 
@@ -21,7 +22,7 @@ A view that contains the Touch Bar content.
 
 #### Discussion
 
-Use [`touchBar(_:)`](view/touchbar(_:).md) to provide a static set of views that are displayed by the Touch Bar when appropriate, depending on whether the view has focus.
+Use [`touchBar(_:)`](./touchbar%28_%29.md) to provide a static set of views that are displayed by the Touch Bar when appropriate, depending on whether the view has focus.
 
 The example below provides Touch Bar content in-line, that creates the content the Touch Bar displays:
 
@@ -42,7 +43,7 @@ TextField("TouchBar Demo", text: $placeholder)
     }
 ```
 
-![A Touch Bar that shows content you create by using a static collection](/images/com.apple.SwiftUI/SwiftUI-touchbar-static@2x.png)
+![A Touch Bar that shows content you create by using a static collection](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-touchbar-static@2x.png)
 
 ## Parameters
 
@@ -50,17 +51,18 @@ TextField("TouchBar Demo", text: $placeholder)
 
 ## See Also
 
-- [func touchBar<Content>(content: () -> Content) -> some View](view/touchbar(content:).md)
+### Managing Touch Bar input
+- [func touchBar<Content>(content: () -> Content) -> some View](./touchbar%28content%29.md)
   Sets the content that the Touch Bar displays.
-- [func touchBarItemPrincipal(Bool) -> some View](view/touchbaritemprincipal(_:).md)
+- [func touchBarItemPrincipal(Bool) -> some View](./touchbaritemprincipal%28_%29.md)
   Sets principal views that have special significance to this Touch Bar.
-- [func touchBarCustomizationLabel(Text) -> some View](view/touchbarcustomizationlabel(_:).md)
+- [func touchBarCustomizationLabel(Text) -> some View](./touchbarcustomizationlabel%28_%29.md)
   Sets a user-visible string that identifies the view’s functionality.
-- [func touchBarItemPresence(TouchBarItemPresence) -> some View](view/touchbaritempresence(_:).md)
+- [func touchBarItemPresence(TouchBarItemPresence) -> some View](./touchbaritempresence%28_%29.md)
   Sets the behavior of the user-customized view.
-- [struct TouchBar](touchbar.md)
+- [struct TouchBar](../touchbar.md)
   A container for a view that you can show in the Touch Bar.
-- [enum TouchBarItemPresence](touchbaritempresence.md)
+- [enum TouchBarItemPresence](../touchbaritempresence.md)
   Options that affect user customization of the Touch Bar.
 
 

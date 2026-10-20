@@ -1,7 +1,8 @@
 # fetchEvents(after:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a fetch request for events that occur after a specified event from a persistent CloudKit container.
 
@@ -20,6 +21,10 @@ Creates a fetch request for events that occur after a specified event from a per
 class func fetchEvents(after event: NSPersistentCloudKitContainer.Event?) -> Self
 ```
 
+```objc
++ (instancetype) fetchEventsAfterEvent:(NSPersistentCloudKitContainerEvent *) event;
+```
+
 #### Return Value
 
 A request object that fetches persistent CloudKit container events by executing in a managed object context.
@@ -30,13 +35,14 @@ A request object that fetches persistent CloudKit container events by executing 
 
 ## See Also
 
-- [class func fetchEvents(after: Date) -> Self](nspersistentcloudkitcontainereventrequest/fetchevents(after:)-5izg7.md)
+### Fetching Events
+- [class func fetchEvents(after: Date) -> Self](./fetchevents%28after%29-5izg7.md)
   Creates a fetch request for events after a specified date from a persistent CloudKit container.
-- [class func fetchEvents(matchingFetch: NSFetchRequest<any NSFetchRequestResult>) -> Self](nspersistentcloudkitcontainereventrequest/fetchevents(matchingfetch:).md)
+- [class func fetchEvents(matchingFetch: NSFetchRequest<any NSFetchRequestResult>) -> Self](./fetchevents%28matchingfetch%29.md)
   Creates a fetch request for events that match a specified fetch request from a persistent CloudKit container.
-- [class func fetchForEvents() -> NSFetchRequest<any NSFetchRequestResult>](nspersistentcloudkitcontainereventrequest/fetchforevents.md)
+- [class func fetchForEvents() -> NSFetchRequest<any NSFetchRequestResult>](./fetchforevents%28%29.md)
   Creates a fetch request for all events in a persistent CloudKit container.
-- [var resultType: NSPersistentCloudKitContainerEventResult.ResultType](nspersistentcloudkitcontainereventrequest/resulttype.md)
+- [var resultType: NSPersistentCloudKitContainerEventResult.ResultType](./resulttype.md)
   The type of result that the request returns.
 
 

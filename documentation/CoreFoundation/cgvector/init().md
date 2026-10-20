@@ -1,18 +1,19 @@
 # init()
 
 **Framework**: Core Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a vector whose components are both zero.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [static var zero: CGVector](cgvector/zero.md)
+### Special Values
+- [static var zero: CGVector](./zero.md)
 
 
 ---

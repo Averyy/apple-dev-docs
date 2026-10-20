@@ -1,7 +1,8 @@
 # tokenNotificationURL
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL you provide to receive life-cycle notifications from the Apple Pay servers about the Apple Pay merchant token for the recurring payment.
 
@@ -18,15 +19,20 @@ A URL you provide to receive life-cycle notifications from the Apple Pay servers
 var tokenNotificationURL: URL? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSURL * tokenNotificationURL;
+```
+
 #### Discussion
 
-The [`tokenNotificationURL`](pkrecurringpaymentrequest/tokennotificationurl.md) is optional. Set this property to receive notifications for life-cycle updates to the merchant token, for example, when the card issuer or the user deletes the merchant token.
+The [`tokenNotificationURL`](./tokennotificationurl.md) is optional. Set this property to receive notifications for life-cycle updates to the merchant token, for example, when the card issuer or the user deletes the merchant token.
 
-For more information about handling merchant token life-cycle notifications, see [`Receiving and handling merchant token notifications`](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/receiving-and-handling-merchant-token-notifications).
+For more information about handling merchant token life-cycle notifications, see [Receiving and handling merchant token notifications](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/receiving-and-handling-merchant-token-notifications).
 
 ## See Also
 
-- [var managementURL: URL](pkrecurringpaymentrequest/managementurl.md)
+### Managing payment tokens
+- [var managementURL: URL](./managementurl.md)
   A URL to a web page where the user can update or delete the payment method for the recurring payment.
 
 

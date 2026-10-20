@@ -1,7 +1,8 @@
 # AVAssetResourceLoadingRequestor
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains information about the originator of a resource-loading request.
 
@@ -19,39 +20,44 @@ An object that contains information about the originator of a resource-loading r
 class AVAssetResourceLoadingRequestor
 ```
 
+```objc
+@interface AVAssetResourceLoadingRequestor : NSObject
+```
+
 ## Topics
 
 ### Retrieving expired session reports
-- [var providesExpiredSessionReports: Bool](avassetresourceloadingrequestor/providesexpiredsessionreports.md)
+- [var providesExpiredSessionReports: Bool](./avassetresourceloadingrequestor/providesexpiredsessionreports.md)
   A Boolean value that indicates whether the requestor provides expired session reports.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAssetResourceLoader](avassetresourceloader.md)
+### Resource loading
+- [class AVAssetResourceLoader](./avassetresourceloader.md)
   An object that mediates resource requests from a URL asset.
-- [protocol AVAssetResourceLoaderDelegate](avassetresourceloaderdelegate.md)
+- [protocol AVAssetResourceLoaderDelegate](./avassetresourceloaderdelegate.md)
   Methods you can implement to handle resource-loading requests coming from a URL asset.
-- [class AVAssetResourceLoadingRequest](avassetresourceloadingrequest.md)
+- [class AVAssetResourceLoadingRequest](./avassetresourceloadingrequest.md)
   An object that encapsulates information about a resource request from a resource loader object.
-- [class AVAssetResourceRenewalRequest](avassetresourcerenewalrequest.md)
+- [class AVAssetResourceRenewalRequest](./avassetresourcerenewalrequest.md)
   An object that encapsulates information about a resource request from a resource loader to renew a previously issued request.
-- [class AVAssetResourceLoadingDataRequest](avassetresourceloadingdatarequest.md)
+- [class AVAssetResourceLoadingDataRequest](./avassetresourceloadingdatarequest.md)
   An object for requesting data from a resource that an asset resource-loading request references.
-- [class AVAssetResourceLoadingContentInformationRequest](avassetresourceloadingcontentinformationrequest.md)
+- [class AVAssetResourceLoadingContentInformationRequest](./avassetresourceloadingcontentinformationrequest.md)
   A query for retrieving essential information about a resource that an asset resource-loading request references.
 
 

@@ -1,7 +1,8 @@
 # withoutImplicitSecurityScope
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 5.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static var withoutImplicitSecurityScope: CFURLBookmarkCreationOptions { get }
+```
+
+```c
+kCFURLBookmarkCreationWithoutImplicitSecurityScope
 ```
 
 

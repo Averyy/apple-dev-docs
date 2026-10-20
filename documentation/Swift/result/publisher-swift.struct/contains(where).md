@@ -1,7 +1,8 @@
 # contains(where:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -17,6 +18,8 @@
 ```swift
 func contains(where predicate: (Result<Success, Failure>.Publisher.Output) -> Bool) -> Result<Bool, Failure>.Publisher
 ```
+
+Available when `Failure` conforms to `Error`.
 
 
 ---

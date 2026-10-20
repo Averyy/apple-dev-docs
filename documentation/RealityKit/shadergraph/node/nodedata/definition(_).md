@@ -1,9 +1,10 @@
 # ShaderGraph.Node.NodeData.definition(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-A node defined by a [`ShaderGraph.NodeDefinition`](shadergraph/nodedefinition.md) from a [`ShaderGraph.NodeLibrary`](shadergraph/nodelibrary.md).
+A node defined by a [`ShaderGraph.NodeDefinition`](../../nodedefinition.md) from a [`ShaderGraph.NodeLibrary`](../../nodelibrary.md).
 
 **Availability**:
 - iOS 27.0+

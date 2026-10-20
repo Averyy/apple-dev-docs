@@ -1,56 +1,58 @@
 # App Event Localizations
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: API Collection
 
 Create and update in-app event metadata that’s localized.
 
 #### Overview
 
-> **Note**:  The in-app event screenshot and in-app event video clip relationships are deprecated. Manage in-app event media with the [`App Asset Library`](app-asset-library.md) and [`App Asset Library placements`](app-asset-library-placements.md) instead.
+> **Note**:  The in-app event screenshot and in-app event video clip relationships are deprecated. Manage in-app event media with the [App Asset Library](./app-asset-library.md) and [placements](./app-asset-library-placements.md) instead.
 
 ## Topics
 
 ### Endpoints
-- [Read app event localization information](get-v1-appeventlocalizations-_id_.md)
+- [Read app event localization information](./get-v1-appeventlocalizations-_id_.md)
   Get information about a specific app event localization.
-- [List all video clips for an app event localization](get-v1-appeventlocalizations-_id_-appeventvideoclips.md)
+- [List all video clips for an app event localization](./get-v1-appeventlocalizations-_id_-appeventvideoclips.md)
   Get a list of video clips for a specific app event localization.
-- [List app event video clip IDs for an app event localization](get-v1-appeventlocalizations-_id_-relationships-appeventvideoclips.md)
-- [List all screenshots for an app event localization](get-v1-appeventlocalizations-_id_-appeventscreenshots.md)
+- [List app event video clip IDs for an app event localization](./get-v1-appeventlocalizations-_id_-relationships-appeventvideoclips.md)
+- [List all screenshots for an app event localization](./get-v1-appeventlocalizations-_id_-appeventscreenshots.md)
   Get a list of screenshots for a specific app event localization.
-- [List app event screenshot IDs for an app event localization](get-v1-appeventlocalizations-_id_-relationships-appeventscreenshots.md)
-- [Modify an app event localization](patch-v1-appeventlocalizations-_id_.md)
+- [List app event screenshot IDs for an app event localization](./get-v1-appeventlocalizations-_id_-relationships-appeventscreenshots.md)
+- [Modify an app event localization](./patch-v1-appeventlocalizations-_id_.md)
   Update the localized metadata for a specific in-app event.
-- [Create an app event localization](post-v1-appeventlocalizations.md)
+- [Create an app event localization](./post-v1-appeventlocalizations.md)
   Add a new localization for an in-app event.
-- [Delete an app event localization](delete-v1-appeventlocalizations-_id_.md)
+- [Delete an app event localization](./delete-v1-appeventlocalizations-_id_.md)
   Delete localized metadata that you configured for an in-app event.
-- [List related placements](get-v1-appeventlocalizations-_id_-placements.md)
+- [List related placements](./get-v1-appeventlocalizations-_id_-placements.md)
   List the placements for an in-app event localization.
-- [List the placement IDs for an in-app event localization](get-v1-appeventlocalizations-_id_-relationships-placements.md)
+- [List the placement IDs for an in-app event localization](./get-v1-appeventlocalizations-_id_-relationships-placements.md)
   Get a list of placement resource IDs for a specific in-app event localization.
 ### Objects
-- [object AppEventLocalization](appeventlocalization.md)
+- [object AppEventLocalization](./appeventlocalization.md)
   The localized name, short description, and long description for an App Store app event in a specific language.
-- [object AppEventLocalizationCreateRequest](appeventlocalizationcreaterequest.md)
+- [object AppEventLocalizationCreateRequest](./appeventlocalizationcreaterequest.md)
   The request body you use to create an app event localization.
-- [object AppEventLocalizationResponse](appeventlocalizationresponse.md)
+- [object AppEventLocalizationResponse](./appeventlocalizationresponse.md)
   The response body for endpoints that create, read, or modify a localized in-app event entry.
-- [object AppEventLocalizationUpdateRequest](appeventlocalizationupdaterequest.md)
+- [object AppEventLocalizationUpdateRequest](./appeventlocalizationupdaterequest.md)
   The request body you use to update an app event localization update request.
-- [object AppEventLocalizationsResponse](appeventlocalizationsresponse.md)
+- [object AppEventLocalizationsResponse](./appeventlocalizationsresponse.md)
   The response body for endpoints that list localized entries for an in-app event.
-- [object AppEventLocalizationAppEventScreenshotsLinkagesResponse](appeventlocalizationappeventscreenshotslinkagesresponse.md)
-- [object AppEventLocalizationAppEventVideoClipsLinkagesResponse](appeventlocalizationappeventvideoclipslinkagesresponse.md)
-- [object AppEventLocalizationsLinkagesResponse](appeventlocalizationslinkagesresponse.md)
-- [object AppEventLocalizationPlacementsLinkagesResponse](appeventlocalizationplacementslinkagesresponse.md)
+- [object AppEventLocalizationAppEventScreenshotsLinkagesResponse](./appeventlocalizationappeventscreenshotslinkagesresponse.md)
+- [object AppEventLocalizationAppEventVideoClipsLinkagesResponse](./appeventlocalizationappeventvideoclipslinkagesresponse.md)
+- [object AppEventLocalizationsLinkagesResponse](./appeventlocalizationslinkagesresponse.md)
+- [object AppEventLocalizationPlacementsLinkagesResponse](./appeventlocalizationplacementslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
 
 ## See Also
 
-- [App Event Video Clips](app-event-video-clips.md)
+### Managing App Event Metadata
+- [App Event Video Clips](./app-event-video-clips.md)
   Create and update video clips your product page uses for the card or detail view of an in-app event.
-- [App Event Screenshots](app-event-screenshots.md)
+- [App Event Screenshots](./app-event-screenshots.md)
   Create and update screenshots your product page uses for the card or detail view of an in-app event.
 
 

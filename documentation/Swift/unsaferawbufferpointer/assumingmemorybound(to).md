@@ -1,7 +1,8 @@
 # assumingMemoryBound(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a typed buffer to the memory referenced by this buffer, assuming that the memory is already bound to the specified type.
 

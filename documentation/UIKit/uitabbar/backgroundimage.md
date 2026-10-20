@@ -1,7 +1,8 @@
 # backgroundImage
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom background image for the tab bar.
 
@@ -9,7 +10,7 @@ The custom background image for the tab bar.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ The custom background image for the tab bar.
 var backgroundImage: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIImage * backgroundImage;
+```
+
 #### Discussion
 
-If you specify a stretchable background image, the tab bar stretches your image to fill the available space. If your image is not stretchable and not large enough to fill the available space, the tab bar tiles the image. For information about how stretching works, see the [`UIImage.ResizingMode`](uiimage/resizingmode-swift.enum.md) type in [`UIImage`](uiimage.md).
+If you specify a stretchable background image, the tab bar stretches your image to fill the available space. If your image is not stretchable and not large enough to fill the available space, the tab bar tiles the image. For information about how stretching works, see the [`UIImage.ResizingMode`](../uiimage/resizingmode-swift.enum.md) type in [`UIImage`](../uiimage.md).
 
-When a custom background image is present, the tab bar does not draw any blur effects behind itself, even when the [`isTranslucent`](uitabbar/istranslucent.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+When a custom background image is present, the tab bar does not draw any blur effects behind itself, even when the [`isTranslucent`](./istranslucent.md) property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var barTintColor: UIColor?](uitabbar/bartintcolor.md)
+### Changing the background
+- [var barTintColor: UIColor?](./bartintcolor.md)
   The tint color to apply to the tab bar background.
 
 

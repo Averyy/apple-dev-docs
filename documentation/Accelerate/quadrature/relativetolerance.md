@@ -1,7 +1,8 @@
 # relativeTolerance
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The requested relative tolerance on the result.
 
@@ -11,7 +12,7 @@ The requested relative tolerance on the result.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ var relativeTolerance: Double { get set }
 
 ## See Also
 
-- [var absoluteTolerance: Double](quadrature/absolutetolerance.md)
+### Instance Properties
+- [var absoluteTolerance: Double](./absolutetolerance.md)
   The requested absolute tolerance on the result.
 
 

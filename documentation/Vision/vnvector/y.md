@@ -1,7 +1,8 @@
 # y
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A signed projection that indicates the vector’s direction on the y-axis.
 
@@ -19,21 +20,26 @@ A signed projection that indicates the vector’s direction on the y-axis.
 var y: Double { get }
 ```
 
+```objc
+@property (readonly) double y;
+```
+
 ## See Also
 
-- [var length: Double](vnvector/length.md)
+### Inspecting a Vector
+- [var length: Double](./length.md)
   The length, or absolute value, of the vector.
-- [var r: Double](vnvector/r.md)
+- [var r: Double](./r.md)
   The radius, absolute value, or length of the vector.
-- [var theta: Double](vnvector/theta.md)
+- [var theta: Double](./theta.md)
   The angle between the vector direction and the positive direction of the x-axis.
-- [var squaredLength: Double](vnvector/squaredlength.md)
+- [var squaredLength: Double](./squaredlength.md)
   The squared length of the vector.
-- [var x: Double](vnvector/x.md)
+- [var x: Double](./x.md)
   A signed projection that indicates the vector’s direction on the x-axis.
-- [class func dotProduct(of: VNVector, vector: VNVector) -> Double](vnvector/dotproduct(of:vector:).md)
+- [class func dotProduct(of: VNVector, vector: VNVector) -> Double](./dotproduct%28of,vector%29.md)
   Caclulates the dot product of two vectors.
-- [class func unitVector(for: VNVector) -> VNVector](vnvector/unitvector(for:).md)
+- [class func unitVector(for: VNVector) -> VNVector](./unitvector%28for%29.md)
   Calculates a vector that’s normalized by preserving its direction, so that the vector length equals 1.0.
 
 

@@ -1,7 +1,8 @@
 # common
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The common key space.
 
@@ -18,6 +19,10 @@ The common key space.
 
 ```swift
 static let common: AVMetadataKeySpace
+```
+
+```c
+extern AVMetadataKeySpace const AVMetadataKeySpaceCommon;
 ```
 
 #### Discussion

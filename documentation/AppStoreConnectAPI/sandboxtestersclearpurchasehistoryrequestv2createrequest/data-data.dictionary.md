@@ -1,7 +1,8 @@
 # SandboxTestersClearPurchaseHistoryRequestV2CreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a request to clear sandbox tester purchase history.
 
@@ -10,20 +11,20 @@ The request body you use to create a request to clear sandbox tester purchase hi
 
 ## Declaration
 
-```swift
+```
 object SandboxTestersClearPurchaseHistoryRequestV2CreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object SandboxTestersClearPurchaseHistoryRequestV2CreateRequest.Data.Relationships](sandboxtestersclearpurchasehistoryrequestv2createrequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object SandboxTestersClearPurchaseHistoryRequestV2CreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `relationships` (SandboxTestersClearPurchaseHistoryRequestV2CreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `sandboxTestersClearPurchaseHistoryRequest`
 
 
 ---

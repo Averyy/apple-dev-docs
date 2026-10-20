@@ -1,14 +1,15 @@
 # throttle_get_thread_effective_io_policy
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.13.4+
 
 ## Declaration
 
-```swift
+```c
 int throttle_get_thread_effective_io_policy(void);
 ```
 

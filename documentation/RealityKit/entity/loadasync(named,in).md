@@ -1,16 +1,17 @@
 # loadAsync(named:in:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a load request that creates an entity by asynchronously loading it from a bundle.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 18.0 (renamed: init(named:in:))
+- iPadOS 13.0+ - Deprecated in 18.0 (renamed: init(named:in:))
+- Mac Catalyst 13.0+ - Deprecated in 18.0 (renamed: init(named:in:))
+- macOS 10.15+ - Deprecated in 15.0 (renamed: init(named:in:))
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: init(named:in:))
 
 ## Declaration
 
@@ -21,7 +22,7 @@ Returns a load request that creates an entity by asynchronously loading it from 
 
 ## Mentions
 
-- [Loading remote assets in multiplayer apps](loading-remote-assets.md)
+- [Loading remote assets in multiplayer apps](../loading-remote-assets.md)
 
 #### Return Value
 
@@ -33,7 +34,7 @@ RealityKit supports loading entities from USD (`.usd`, `.usda`, `.usdc`, `.usdz`
 
 When building your app, Xcode automatically converts any Reality Composer projects (`.rcproject`) in the selected target into Reality files, which it then copies into your app’s bundle.
 
-For more information on loading entities, see [`Loading entities from a file`](loading-entities-from-a-file.md).
+For more information on loading entities, see [Loading entities from a file](../loading-entities-from-a-file.md).
 
 ## Parameters
 
@@ -42,11 +43,12 @@ For more information on loading entities, see [`Loading entities from a file`](l
 
 ## See Also
 
-- [static func load(named: String, in: Bundle?) throws -> Entity](entity/load(named:in:).md)
+### Loading an entity hierarchy
+- [static func load(named: String, in: Bundle?) throws -> Entity](./load%28named,in%29.md)
   Returns an entity by synchronously loading it from a bundle.
-- [static func load(contentsOf: URL, withName: String?) throws -> Entity](entity/load(contentsof:withname:).md)
+- [static func load(contentsOf: URL, withName: String?) throws -> Entity](./load%28contentsof,withname%29.md)
   Returns an entity by synchronously loading it from a file URL.
-- [static func loadAsync(contentsOf: URL, withName: String?) -> LoadRequest<Entity>](entity/loadasync(contentsof:withname:).md)
+- [static func loadAsync(contentsOf: URL, withName: String?) -> LoadRequest<Entity>](./loadasync%28contentsof,withname%29.md)
   Returns a load request that creates an entity by asynchronously loading it from a file URL and preserving the entity’s hierarchy.
 
 

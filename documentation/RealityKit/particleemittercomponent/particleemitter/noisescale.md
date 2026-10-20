@@ -1,7 +1,8 @@
 # noiseScale
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Scale of the noise (turbulence) patterns. Defaults to 1.
 

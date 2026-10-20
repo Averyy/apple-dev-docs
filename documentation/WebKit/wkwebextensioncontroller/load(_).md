@@ -1,7 +1,8 @@
 # load(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads the specified extension context.
 
@@ -18,13 +19,18 @@ Loads the specified extension context.
 func load(_ extensionContext: WKWebExtensionContext) throws
 ```
 
+```objc
+- (BOOL) loadExtensionContext:(WKWebExtensionContext *) extensionContext error:(NSError **) error;
+```
+
 #### Discussion
 
 Causes the context to start, loading any background content, and injecting any content into relevant tabs.
 
 ## See Also
 
-- [func load(WKWebExtensionContext) throws](wkwebextensioncontroller/load(_:).md)
+### Related Documentation
+- [func load(WKWebExtensionContext) throws](./load%28_%29.md)
   Loads the specified extension context.
 
 

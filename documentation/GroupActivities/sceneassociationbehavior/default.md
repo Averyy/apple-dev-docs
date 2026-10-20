@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A behavior that matches the activity to a scene using the identifier of your activity object.
 
@@ -21,17 +22,18 @@ static let `default`: SceneAssociationBehavior
 
 ## Mentions
 
-- [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
+- [Adding spatial Persona support to an activity](../adding-spatial-persona-support-to-an-activity.md)
 
 #### Discussion
 
-With this option, the system uses the string in the [`activityIdentifier`](groupactivity/activityidentifier.md) property of your [`GroupActivity`](groupactivity.md) object to locate an appropriate scene. Choose this option if your app has only one scene, or if you always use the same scene to display the intended activity.
+With this option, the system uses the string in the [`activityIdentifier`](../groupactivity/activityidentifier.md) property of your [`GroupActivity`](../groupactivity.md) object to locate an appropriate scene. Choose this option if your app has only one scene, or if you always use the same scene to display the intended activity.
 
 ## See Also
 
-- [static func content(String) -> SceneAssociationBehavior](sceneassociationbehavior/content(_:).md)
+### Getting the scene-association options
+- [static func content(String) -> SceneAssociationBehavior](./content%28_%29.md)
   A behavior that matches the activity to a scene using a custom string that you supply.
-- [static let none: SceneAssociationBehavior](sceneassociationbehavior/none.md)
+- [static let none: SceneAssociationBehavior](./none.md)
   A behavior that doesn’t match any scenes to the activity.
 
 

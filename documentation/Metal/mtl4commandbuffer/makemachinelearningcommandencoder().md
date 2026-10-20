@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a machine learning command encoder.
@@ -20,9 +21,13 @@ Creates a machine learning command encoder.
 func makeMachineLearningCommandEncoder() -> (any MTL4MachineLearningCommandEncoder)?
 ```
 
+```objc
+- (id<MTL4MachineLearningCommandEncoder>) machineLearningCommandEncoder;
+```
+
 #### Return Value
 
-The created [`MTL4MachineLearningCommandEncoder`](mtl4machinelearningcommandencoder.md) instance , or `nil` if the function fails.
+The created [`MTL4MachineLearningCommandEncoder`](../mtl4machinelearningcommandencoder.md) instance , or `nil` if the function fails.
 
 
 ---

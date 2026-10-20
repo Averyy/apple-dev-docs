@@ -1,7 +1,8 @@
 # prepareInterfaceToConvertAccountToSignInWithApple(for:existingCredential:userInfo:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the view controller’s interface that displays when converting an account that uses password authentication to use Sign in with Apple.
 
@@ -17,9 +18,13 @@ Prepares the view controller’s interface that displays when converting an acco
 func prepareInterfaceToConvertAccountToSignInWithApple(for serviceIdentifier: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, userInfo: [AnyHashable : Any]? = nil)
 ```
 
+```objc
+- (void) prepareInterfaceToConvertAccountToSignInWithAppleForServiceIdentifier:(ASCredentialServiceIdentifier *) serviceIdentifier existingCredential:(ASPasswordCredential *) existingCredential userInfo:(NSDictionary *) userInfo;
+```
+
 ## Mentions
 
-- [Upgrading Account Security With an Account Authentication Modification Extension](upgrading-account-security-with-an-account-authentication-modification-extension.md)
+- [Upgrading Account Security With an Account Authentication Modification Extension](../upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
 ## Parameters
 
@@ -29,9 +34,10 @@ func prepareInterfaceToConvertAccountToSignInWithApple(for serviceIdentifier: AS
 
 ## See Also
 
-- [func convertAccountToSignInWithAppleWithoutUserInteraction(for: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, userInfo: [AnyHashable : Any]?)](asaccountauthenticationmodificationviewcontroller/convertaccounttosigninwithapplewithoutuserinteraction(for:existingcredential:userinfo:).md)
+### Upgrading to Sign in with Apple
+- [func convertAccountToSignInWithAppleWithoutUserInteraction(for: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, userInfo: [AnyHashable : Any]?)](./convertaccounttosigninwithapplewithoutuserinteraction%28for,existingcredential,userinfo%29.md)
   Converts an account’s authentication mechanism from using passwords to using Sign in with Apple.
-- [ASAccountAuthenticationModificationSupportsUpgradeToSignInWithApple](../bundleresources/information-property-list/nsextension/asaccountauthenticationmodificationsupportsupgradetosigninwithapple.md)
+- [ASAccountAuthenticationModificationSupportsUpgradeToSignInWithApple](../../BundleResources/information-property-list/nsextension/asaccountauthenticationmodificationsupportsupgradetosigninwithapple.md)
   A Boolean value that indicates whether the extension supports upgrading from using password authentication to using Sign in with Apple.
 
 

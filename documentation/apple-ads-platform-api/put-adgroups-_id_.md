@@ -1,7 +1,8 @@
 # Update an Ad Group
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Update an existing ad group’s name, status, bid strategy, targeting, or scheduling.
 
@@ -12,11 +13,11 @@ Update an existing ad group’s name, status, bid strategy, targeting, or schedu
 
 This endpoint updates an existing ad group. Only include the fields you want to modify. See the Determine Which Fields You Can Update section below to confirm which fields you can change.
 
-For ad groups under an auto-bidding campaign, see [`AdGroupUpdate.BidStrategy`](adgroupupdate/bidstrategy-data.dictionary.md) for how to echo the campaign’s bid strategy so the API doesn’t reject a `GET`-then-`PUT` round trip.
+For ad groups under an auto-bidding campaign, see [`AdGroupUpdate.BidStrategy`](./adgroupupdate/bidstrategy-data.dictionary.md) for how to echo the campaign’s bid strategy so the API doesn’t reject a `GET`-then-`PUT` round trip.
 
 ##### Determine Which Fields You Can Update
 
-To change any field marked Yes below, use this endpoint. Fields marked No are either only settable at creation via [`Create an Ad Group`](post-adgroups.md) or are system-computed. Sending them in an update request has no effect. See the Notes column for which applies to a given field. The `cpaCap` field is marked Deprecated: the API still accepts it on update for backward compatibility, but new integrations should use `bidStrategy` instead.
+To change any field marked Yes below, use this endpoint. Fields marked No are either only settable at creation via [`Create an Ad Group`](./post-adgroups.md) or are system-computed. Sending them in an update request has no effect. See the Notes column for which applies to a given field. The `cpaCap` field is marked Deprecated: the API still accepts it on update for backward compatibility, but new integrations should use `bidStrategy` instead.
 
 | Field | Mutable | Notes |
 | --- | --- | --- |
@@ -26,7 +27,7 @@ To change any field marked Yes below, use this endpoint. Fields marked No are ei
 | `endTime` | Yes | Ad group schedule end time. |
 | `automatedKeywordsOptIn` | Yes | Toggle Search Match automated keyword targeting. |
 | `automatedKeywordsRequired` | **No** | Set at creation. Whether automated keyword generation is required for this ad group. Immutable afterward. |
-| `bidStrategy` | Yes | You can update `bidStrategyType`, `bidStrategyGoal`, and `bid`. You must send `bidStrategyType` and `bidStrategyGoal` together, matched per the pairings in [`BidStrategy`](bidstrategy.md). See [`BidStrategyUpdate`](bidstrategyupdate.md). |
+| `bidStrategy` | Yes | You can update `bidStrategyType`, `bidStrategyGoal`, and `bid`. You must send `bidStrategyType` and `bidStrategyGoal` together, matched per the pairings in [`BidStrategy`](./bidstrategy.md). See [`BidStrategyUpdate`](./bidstrategyupdate.md). |
 | `targeting` | Yes | Supports partial updates. The request modifies only the targeting dimensions it includes. Omitted dimensions remain unchanged. |
 | `cpaCap` | Deprecated | Still accepted on update for backward compatibility, but deprecated in favor of `bidStrategy` with `MAX_CONVERSIONS`. |
 | `campaignId` | **No** | Set at creation. Identifies the parent campaign. Immutable afterward. |
@@ -39,7 +40,7 @@ To change any field marked Yes below, use this endpoint. Fields marked No are ei
 | `displayStatus` | No | Computed, rolled-up delivery state combining `status` and `systemStatus`. Read-only. |
 | `creationTime` | No | Set when the ad group is created. Read-only. |
 | `modificationTime` | No | Updated automatically on every change. Read-only. |
-| `deleted` | No | Managed via [`Delete an Ad Group`](delete-adgroups-_id_.md), not via update. Read-only. |
+| `deleted` | No | Managed via [`Delete an Ad Group`](./delete-adgroups-_id_.md), not via update. Read-only. |
 
 #### Payload Examples
 
@@ -284,17 +285,38 @@ PUT /v1/adgroups/555666780
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `AdGroupUpdate`
+
+## Responses
+
+- `200` OK (`AdGroupResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create an Ad Group](post-adgroups.md)
+- [Create an Ad Group](./post-adgroups.md)
   Create a new ad group within a campaign, defining targeting, bid strategy, and scheduling for a set of ads.
-- [Query Ad Groups](post-adgroups-query.md)
+- [Query Ad Groups](./post-adgroups-query.md)
   Query ad groups using filters, sorting, and pagination.
-- [Get an Ad Group](get-adgroups-_id_.md)
+- [Get an Ad Group](./get-adgroups-_id_.md)
   Retrieve a single ad group by its unique identifier.
-- [Delete an Ad Group](delete-adgroups-_id_.md)
+- [Delete an Ad Group](./delete-adgroups-_id_.md)
   Soft-delete an ad group by its unique identifier, along with all ads and keywords associated with it.
 
 

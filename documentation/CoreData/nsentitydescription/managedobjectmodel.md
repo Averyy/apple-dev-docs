@@ -1,7 +1,8 @@
 # managedObjectModel
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The managed object model with which the receiver is associated.
 
@@ -10,7 +11,7 @@ The managed object model with which the receiver is associated.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,23 +21,29 @@ The managed object model with which the receiver is associated.
 unowned(unsafe) var managedObjectModel: NSManagedObjectModel { get }
 ```
 
+```objc
+@property (assign, readonly) NSManagedObjectModel * managedObjectModel;
+```
+
 ## See Also
 
-- [func setEntities([NSEntityDescription], forConfigurationName: String)](nsmanagedobjectmodel/setentities(_:forconfigurationname:).md)
+### Related Documentation
+- [func setEntities([NSEntityDescription], forConfigurationName: String)](../nsmanagedobjectmodel/setentities%28_,forconfigurationname%29.md)
   Associates the specified entities with the model using the given configuration name.
-- [var entities: [NSEntityDescription]](nsmanagedobjectmodel/entities.md)
+- [var entities: [NSEntityDescription]](../nsmanagedobjectmodel/entities.md)
   The entities in the model.
-- [var name: String?](nsentitydescription/name.md)
+### Getting descriptive information
+- [var name: String?](./name.md)
   The entity name of the receiver.
-- [var managedObjectClassName: String!](nsentitydescription/managedobjectclassname.md)
+- [var managedObjectClassName: String!](./managedobjectclassname.md)
   The name of the class that represents the receiver’s entity.
-- [var renamingIdentifier: String?](nsentitydescription/renamingidentifier.md)
+- [var renamingIdentifier: String?](./renamingidentifier.md)
   The renaming identifier for the receiver.
-- [var isAbstract: Bool](nsentitydescription/isabstract.md)
+- [var isAbstract: Bool](./isabstract.md)
   A Boolean value that indicates whether the receiver represents an abstract entity.
-- [var userInfo: [AnyHashable : Any]?](nsentitydescription/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   The user info dictionary of the receiver.
-- [var coreSpotlightDisplayNameExpression: NSExpression](nsentitydescription/corespotlightdisplaynameexpression.md)
+- [var coreSpotlightDisplayNameExpression: NSExpression](./corespotlightdisplaynameexpression.md)
   The expression that computes the CoreSpotlight display name for instances of the entity.
 
 

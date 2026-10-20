@@ -1,7 +1,8 @@
 # endpointsById
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Endpoint information for all endpoints of the commissionee. Will be present only if readEndpointInformation is set to YES on MTRCommissioningParameters.
 
@@ -18,6 +19,10 @@ Endpoint information for all endpoints of the commissionee. Will be present only
 
 ```swift
 var endpointsById: [NSNumber : MTREndpointInfo]? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSDictionary<NSNumber *,MTREndpointInfo *> * endpointsById;
 ```
 
 #### Discussion

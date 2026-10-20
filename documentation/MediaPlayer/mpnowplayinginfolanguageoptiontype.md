@@ -1,7 +1,8 @@
 # MPNowPlayingInfoLanguageOptionType
 
 **Framework**: Media Player  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The language option type to use for the Now Playing item.
 
@@ -20,37 +21,42 @@ The language option type to use for the Now Playing item.
 enum MPNowPlayingInfoLanguageOptionType
 ```
 
+```c
+enum MPNowPlayingInfoLanguageOptionType : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPNowPlayingInfoLanguageOptionType.audible](mpnowplayinginfolanguageoptiontype/audible.md)
+- [MPNowPlayingInfoLanguageOptionType.audible](./mpnowplayinginfolanguageoptiontype/audible.md)
   Indicates an audible language option is used.
-- [MPNowPlayingInfoLanguageOptionType.legible](mpnowplayinginfolanguageoptiontype/legible.md)
+- [MPNowPlayingInfoLanguageOptionType.legible](./mpnowplayinginfolanguageoptiontype/legible.md)
   Indicates a written language option is used.
 ### Initializers
-- [init?(rawValue: UInt)](mpnowplayinginfolanguageoptiontype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mpnowplayinginfolanguageoptiontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var displayName: String?](mpnowplayinginfolanguageoption/displayname.md)
+### Retrieving language option properties
+- [var displayName: String?](./mpnowplayinginfolanguageoption/displayname.md)
   The display name for a language option.
-- [var identifier: String?](mpnowplayinginfolanguageoption/identifier.md)
+- [var identifier: String?](./mpnowplayinginfolanguageoption/identifier.md)
   The unique identifier for the language option.
-- [var languageOptionCharacteristics: [String]?](mpnowplayinginfolanguageoption/languageoptioncharacteristics.md)
+- [var languageOptionCharacteristics: [String]?](./mpnowplayinginfolanguageoption/languageoptioncharacteristics.md)
   The characteristics that describe the content of the language option.
-- [var languageTag: String?](mpnowplayinginfolanguageoption/languagetag.md)
+- [var languageTag: String?](./mpnowplayinginfolanguageoption/languagetag.md)
   The abbreviated language code for the language option.
-- [var languageOptionType: MPNowPlayingInfoLanguageOptionType](mpnowplayinginfolanguageoption/languageoptiontype.md)
+- [var languageOptionType: MPNowPlayingInfoLanguageOptionType](./mpnowplayinginfolanguageoption/languageoptiontype.md)
   The type of language option.
 
 

@@ -1,7 +1,8 @@
 # changesWhenNFKCCaseFolded
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is one that is not identical to its NFKC case-fold mapping.
 
@@ -22,7 +23,7 @@ var changesWhenNFKCCaseFolded: Bool { get }
 
 #### Discussion
 
-This property corresponds to the “Changes_When_NFKC_Casefolded” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Changes_When_NFKC_Casefolded” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

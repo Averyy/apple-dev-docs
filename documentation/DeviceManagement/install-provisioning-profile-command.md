@@ -1,7 +1,8 @@
 # Install Provisioning Profile
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Install a provisioning profile on a device.
 
@@ -16,7 +17,7 @@ Install a provisioning profile on a device.
 
 ## Mentions
 
-- [Installing provisioning profiles on devices](installing-provisioning-profiles-on-devices.md)
+- [Installing provisioning profiles on devices](./installing-provisioning-profiles-on-devices.md)
 
 #### Discussion
 
@@ -24,7 +25,7 @@ No error occurs if the provisioning profile is already present.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowProvisioningInstallationRemoval |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -127,9 +128,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object InstallProvisioningProfileCommand](installprovisioningprofilecommand.md)
+- [object InstallProvisioningProfileCommand](./installprovisioningprofilecommand.md)
   The command to install a provisioning profile on a device.
-- [object InstallProvisioningProfileResponse](installprovisioningprofileresponse.md)
+- [object InstallProvisioningProfileResponse](./installprovisioningprofileresponse.md)
   A response from the device after it processes the command to install a provisioning profile on a device.
 
 ## Endpoint
@@ -138,19 +139,27 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `InstallProvisioningProfileCommand`
+
 The request object the server returns for the Install Provisioning Profile Command.
+
+## Responses
+
+- `200` OK (`InstallProvisioningProfileResponse`, `application/xml`): The response object the system returns for the Install Provisioning Profile Command.
 
 ## See Also
 
-- [Install Profile](install-profile-command.md)
+### Profile management
+- [Install Profile](./install-profile-command.md)
   Install a configuration profile on a device.
-- [Profile List](profile-list-command.md)
+- [Profile List](./profile-list-command.md)
   Get a list of installed profiles on a device.
-- [Remove Profile](remove-profile-command.md)
+- [Remove Profile](./remove-profile-command.md)
   Remove a previously installed profile from the device.
-- [Provisioning Profile List](provisioning-profile-list-command.md)
+- [Provisioning Profile List](./provisioning-profile-list-command.md)
   Get a list of installed provisioning profiles on a device.
-- [Remove Provisioning Profile](remove-provisioning-profile-command.md)
+- [Remove Provisioning Profile](./remove-provisioning-profile-command.md)
   Remove a previously installed provisioning profile from a device.
 
 

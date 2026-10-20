@@ -1,7 +1,8 @@
 # variantPreferences
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferences the player item uses when selecting variant playlists.
 
@@ -21,17 +22,22 @@ nonisolated
 var variantPreferences: AVVariantPreferences { get set }
 ```
 
+```objc
+@property AVVariantPreferences variantPreferences;
+```
+
 #### Discussion
 
-The default value is [`AVVariantPreferenceNone`](avvariantpreferences/avvariantpreferencenone.md).
+The default value is [`AVVariantPreferenceNone`](../avvariantpreferences/avvariantpreferencenone.md).
 
 > **Note**:  Changing variant preferences during playback might result in a variant switch.
 
 ## See Also
 
-- [struct AVVariantPreferences](avvariantpreferences.md)
+### Setting variant behavior
+- [struct AVVariantPreferences](../avvariantpreferences.md)
   Defines the preferences the player item uses when selecting variant playlists.
-- [var startsOnFirstEligibleVariant: Bool](avplayeritem/startsonfirsteligiblevariant.md)
+- [var startsOnFirstEligibleVariant: Bool](./startsonfirsteligiblevariant.md)
   A Boolean value that indicates whether playback starts with the first eligible variant that appears in the stream’s main playlist.
 
 

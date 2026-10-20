@@ -1,7 +1,8 @@
 # IntentValueContainer
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container that stores a value that supports intent value conversion.
 
@@ -29,29 +30,30 @@ This container serves as an intermediate representation when converting between 
 ## Topics
 
 ### Structures
-- [IntentValueContainer.ConversionContext](intentvaluecontainer/conversioncontext.md)
+- [IntentValueContainer.ConversionContext](./intentvaluecontainer/conversioncontext.md)
   A context that provides additional information for value conversion.
 ### Operators
-- [static func == (IntentValueContainer, IntentValueContainer) -> Bool](intentvaluecontainer/==(_:_:).md)
+- [static func == (IntentValueContainer, IntentValueContainer) -> Bool](./intentvaluecontainer/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two containers are equal.
 ### Default Implementations
-- [IntentValueExpressing Implementations](intentvaluecontainer/intentvalueexpressing-implementations.md)
+- [IntentValueExpressing Implementations](./intentvaluecontainer/intentvalueexpressing-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [IntentValueExpressing](intentvalueexpressing.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [IntentValueExpressing](./intentvalueexpressing.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol IntentValueQuery](intentvaluequery.md)
+### Intent queries
+- [protocol IntentValueQuery](./intentvaluequery.md)
   A query that provides entity values to the system; for example, for visual intelligence search.
-- [struct IntentValueExpression](intentvalueexpression.md)
+- [struct IntentValueExpression](./intentvalueexpression.md)
   A type that represents a lazily evaluated intent value.
 
 

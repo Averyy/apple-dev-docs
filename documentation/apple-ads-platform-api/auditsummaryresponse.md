@@ -1,7 +1,8 @@
 # AuditSummaryResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response envelope returned by the Query Change History endpoint, wrapping an array of audit summary rows with pagination metadata.
 
@@ -10,13 +11,13 @@ The response envelope returned by the Query Change History endpoint, wrapping an
 
 ## Declaration
 
-```swift
+```
 object AuditSummaryResponse
 ```
 
 #### Discussion
 
-The `AuditSummaryResponse` object is the response envelope returned by `POST /v1/change-history/query` ([`Query Change History`](query-audit-summary-_-grouped-by-transaction.md)). The `result` array contains one `AuditSummary` row per unique (`userType`, `modifiedBy`, `transactionId`, `eventType`, `entityType`) combination matching the query filters.
+The `AuditSummaryResponse` object is the response envelope returned by `POST /v1/change-history/query` ([`Query Change History`](./query-audit-summary-_-grouped-by-transaction.md)). The `result` array contains one `AuditSummary` row per unique (`userType`, `modifiedBy`, `transactionId`, `eventType`, `entityType`) combination matching the query filters.
 
 Use `pagination` to navigate large result sets.
 
@@ -57,23 +58,23 @@ Use `pagination` to navigate large result sets.
 
 ## Properties
 
-- `result` ([AuditSummary]): The array of [`AuditSummary`](auditsummary.md) rows matching the query. Each row represents one transaction grouping. Read-only.
-- `pagination` (Pagination): Pagination state for the response. See [`Pagination`](pagination.md). Contains `offset`, `pageSize`, and `totalCount`. `totalCount` is `0` when you set `needTotals` to `"false"` in the request options, which avoids a costly COUNT query. Read-only.
-- `error` (ErrorMessage): Present when the request failed. See [`ErrorMessage`](errormessage.md). Contains error details. Read-only.
+- `result` ([AuditSummary]): The array of [`AuditSummary`](./auditsummary.md) rows matching the query. Each row represents one transaction grouping. Read-only.
+- `pagination` (Pagination): Pagination state for the response. See [`Pagination`](./pagination.md). Contains `offset`, `pageSize`, and `totalCount`. `totalCount` is `0` when you set `needTotals` to `"false"` in the request options, which avoids a costly COUNT query. Read-only.
+- `error` (ErrorMessage): Present when the request failed. See [`ErrorMessage`](./errormessage.md). Contains error details. Read-only.
 
 ## See Also
 
-- [object ActivityDetail](activitydetail.md)
+- [object ActivityDetail](./activitydetail.md)
   A group of field-level changes that occurred within a single activity context in a change details record.
-- [object AuditSummary](auditsummary.md)
+- [object AuditSummary](./auditsummary.md)
   One row in the query change history response, grouping a single actor’s entity changes in one transaction by entity type and event type.
-- [object BaseAuditResponse](baseauditresponse.md)
+- [object BaseAuditResponse](./baseauditresponse.md)
   Common response envelope fields shared by all change history response objects.
-- [object ChangeDetails](changedetails.md)
+- [object ChangeDetails](./changedetails.md)
   Field-level change record for a single API entity within a transaction.
-- [object ChangeDetailsResponse](changedetailsresponse.md)
+- [object ChangeDetailsResponse](./changedetailsresponse.md)
   The response envelope returned by the Get Change History Detail endpoint, wrapping an array of change detail records with pagination metadata.
-- [object ErrorMessage](errormessage.md)
+- [object ErrorMessage](./errormessage.md)
   Error information returned in a change history response when a request fails.
 
 

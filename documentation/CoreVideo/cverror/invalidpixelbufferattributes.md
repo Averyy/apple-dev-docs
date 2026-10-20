@@ -1,7 +1,8 @@
 # invalidPixelBufferAttributes
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A CVBuffer cannot be created with the given attributes.
 

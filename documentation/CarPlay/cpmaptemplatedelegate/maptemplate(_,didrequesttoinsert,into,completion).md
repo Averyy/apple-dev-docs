@@ -1,7 +1,8 @@
 # mapTemplate(_:didRequestToInsert:into:completion:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the built-in navigation system sends a waypoint to the device for a specific segment.
 
@@ -13,7 +14,15 @@ Called when the built-in navigation system sends a waypoint to the device for a 
 ## Declaration
 
 ```swift
+optional func mapTemplate(_ mapTemplate: CPMapTemplate, didRequestToInsert waypoint: CPNavigationWaypoint, into segment: CPRouteSegment, completion: @escaping (CPTravelEstimates) -> Void)
+```
+
+```swift
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, didRequestToInsert waypoint: CPNavigationWaypoint, into segment: CPRouteSegment) async -> CPTravelEstimates
+```
+
+```objc
+- (void) mapTemplate:(CPMapTemplate *) mapTemplate didRequestToInsertWaypoint:(CPNavigationWaypoint *) waypoint intoSegment:(CPRouteSegment *) segment completion:(void (^)(CPTravelEstimates *travelEstimates)) completion;
 ```
 
 

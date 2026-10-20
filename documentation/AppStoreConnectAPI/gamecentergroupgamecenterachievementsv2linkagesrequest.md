@@ -1,7 +1,8 @@
 # GameCenterGroupGameCenterAchievementsV2LinkagesRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a Game Center group Game Center achievement linkage request resource.
 
@@ -10,7 +11,7 @@ The data structure that represents a Game Center group Game Center achievement l
 
 ## Declaration
 
-```swift
+```
 object GameCenterGroupGameCenterAchievementsV2LinkagesRequest
 ```
 
@@ -21,7 +22,7 @@ object GameCenterGroupGameCenterAchievementsV2LinkagesRequest
 ## Topics
 
 ### Dictionaries
-- [object GameCenterGroupGameCenterAchievementsV2LinkagesRequest.Data](gamecentergroupgamecenterachievementsv2linkagesrequest/data-data.dictionary.md)
+- [object GameCenterGroupGameCenterAchievementsV2LinkagesRequest.Data](./gamecentergroupgamecenterachievementsv2linkagesrequest/data-data.dictionary.md)
 
 ## Properties
 
@@ -29,35 +30,36 @@ object GameCenterGroupGameCenterAchievementsV2LinkagesRequest
 
 ## See Also
 
-- [object GameCenterGroup](gamecentergroup.md)
+### Objects
+- [object GameCenterGroup](./gamecentergroup.md)
   A named group that shares leaderboards and achievements across multiple apps in Game Center.
-- [object GameCenterGroupCreateRequest](gamecentergroupcreaterequest.md)
+- [object GameCenterGroupCreateRequest](./gamecentergroupcreaterequest.md)
   The request body you use to create a group.
-- [object GameCenterGroupGameCenterAchievementsV2LinkagesResponse](gamecentergroupgamecenterachievementsv2linkagesresponse.md)
+- [object GameCenterGroupGameCenterAchievementsV2LinkagesResponse](./gamecentergroupgamecenterachievementsv2linkagesresponse.md)
   A response that contains a list of Game Center group Game Center achievement linkage resources.
-- [object GameCenterGroupGameCenterLeaderboardSetsV2LinkagesRequest](gamecentergroupgamecenterleaderboardsetsv2linkagesrequest.md)
+- [object GameCenterGroupGameCenterLeaderboardSetsV2LinkagesRequest](./gamecentergroupgamecenterleaderboardsetsv2linkagesrequest.md)
   The data structure that represents a Game Center group Game Center leaderboard set linkage request resource.
-- [object GameCenterGroupGameCenterLeaderboardSetsV2LinkagesResponse](gamecentergroupgamecenterleaderboardsetsv2linkagesresponse.md)
+- [object GameCenterGroupGameCenterLeaderboardSetsV2LinkagesResponse](./gamecentergroupgamecenterleaderboardsetsv2linkagesresponse.md)
   A response that contains a list of Game Center group Game Center leaderboard set linkage resources.
-- [object GameCenterGroupGameCenterLeaderboardsV2LinkagesRequest](gamecentergroupgamecenterleaderboardsv2linkagesrequest.md)
+- [object GameCenterGroupGameCenterLeaderboardsV2LinkagesRequest](./gamecentergroupgamecenterleaderboardsv2linkagesrequest.md)
   The data structure that represents a Game Center group Game Center leaderboard linkage request resource.
-- [object GameCenterGroupGameCenterLeaderboardsV2LinkagesResponse](gamecentergroupgamecenterleaderboardsv2linkagesresponse.md)
+- [object GameCenterGroupGameCenterLeaderboardsV2LinkagesResponse](./gamecentergroupgamecenterleaderboardsv2linkagesresponse.md)
   A response that contains a list of Game Center group Game Center leaderboard linkage resources.
-- [object GameCenterGroupGameCenterAchievementsLinkagesRequest](gamecentergroupgamecenterachievementslinkagesrequest.md)
+- [object GameCenterGroupGameCenterAchievementsLinkagesRequest](./gamecentergroupgamecenterachievementslinkagesrequest.md)
   The request body you use to create a relationship between a group and an achievement.
-- [object GameCenterGroupGameCenterAchievementsLinkagesResponse](gamecentergroupgamecenterachievementslinkagesresponse.md)
+- [object GameCenterGroupGameCenterAchievementsLinkagesResponse](./gamecentergroupgamecenterachievementslinkagesresponse.md)
   A response that confirms a relationship between a group and an achievement.
-- [object GameCenterGroupGameCenterLeaderboardSetsLinkagesRequest](gamecentergroupgamecenterleaderboardsetslinkagesrequest.md)
+- [object GameCenterGroupGameCenterLeaderboardSetsLinkagesRequest](./gamecentergroupgamecenterleaderboardsetslinkagesrequest.md)
   The request body you use to create a relationship between a group and a leaderboard set.
-- [object GameCenterGroupGameCenterLeaderboardSetsLinkagesResponse](gamecentergroupgamecenterleaderboardsetslinkagesresponse.md)
+- [object GameCenterGroupGameCenterLeaderboardSetsLinkagesResponse](./gamecentergroupgamecenterleaderboardsetslinkagesresponse.md)
   A response that confirms a relationship between a group and leaderboard set.
-- [object GameCenterGroupGameCenterLeaderboardsLinkagesRequest](gamecentergroupgamecenterleaderboardslinkagesrequest.md)
+- [object GameCenterGroupGameCenterLeaderboardsLinkagesRequest](./gamecentergroupgamecenterleaderboardslinkagesrequest.md)
   The request body you use to create a relationship between a group and a leaderboard.
-- [object GameCenterGroupGameCenterLeaderboardsLinkagesResponse](gamecentergroupgamecenterleaderboardslinkagesresponse.md)
+- [object GameCenterGroupGameCenterLeaderboardsLinkagesResponse](./gamecentergroupgamecenterleaderboardslinkagesresponse.md)
   A response that confirms a relationship between a group and a leaderboard.
-- [object GameCenterGroupResponse](gamecentergroupresponse.md)
+- [object GameCenterGroupResponse](./gamecentergroupresponse.md)
   A response containing a single Game Center group that shares leaderboards and achievements across apps.
-- [object GameCenterGroupUpdateRequest](gamecentergroupupdaterequest.md)
+- [object GameCenterGroupUpdateRequest](./gamecentergroupupdaterequest.md)
   The request body you use to update a group.
 
 

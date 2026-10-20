@@ -1,7 +1,8 @@
 # ICDeviceLocationTypeMask.shared
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mask for detecting a device shared by another Mac host.
 
@@ -18,15 +19,20 @@ A mask for detecting a device shared by another Mac host.
 case shared
 ```
 
+```c
+ICDeviceLocationTypeMaskShared
+```
+
 ## See Also
 
-- [ICDeviceLocationTypeMask.bluetooth](icdevicelocationtypemask/bluetooth.md)
+### Constants
+- [ICDeviceLocationTypeMask.bluetooth](./bluetooth.md)
   A mask for detecting a paired Bluetooth device.
-- [ICDeviceLocationTypeMask.bonjour](icdevicelocationtypemask/bonjour.md)
+- [ICDeviceLocationTypeMask.bonjour](./bonjour.md)
   A mask for detecting a network device that publishes a Bonjour service.
-- [ICDeviceLocationTypeMask.local](icdevicelocationtypemask/local.md)
+- [ICDeviceLocationTypeMask.local](./local.md)
   A mask for detecting a local device, such as USB or FireWire.
-- [ICDeviceLocationTypeMask.remote](icdevicelocationtypemask/remote.md)
+- [ICDeviceLocationTypeMask.remote](./remote.md)
   A mask for detecting a remote device, such as a shared, Bonjour, or Bluetooth device.
 
 

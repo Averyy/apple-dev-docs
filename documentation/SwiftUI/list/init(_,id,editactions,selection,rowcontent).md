@@ -1,7 +1,8 @@
 # init(_:id:editActions:selection:rowContent:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a list that computes its rows on demand from an underlying collection of identifiable data, enables editing the collection, and requires a selection of a single row.
 
@@ -13,6 +14,20 @@ Creates a list that computes its rows on demand from an underlying collection of
 ```swift
 nonisolated
 init<Data, ID, RowContent>(_ data: Binding<Data>, id: KeyPath<Data.Element, ID>, editActions: EditActions<Data>, selection: Binding<SelectionValue>, @ContentBuilder rowContent: @escaping (Binding<Data.Element>) -> RowContent) where Content == ForEach<IndexedIdentifierCollection<Data, ID>, ID, EditableCollectionContent<RowContent, Data>>, Data : MutableCollection, Data : RandomAccessCollection, ID : Hashable, RowContent : View, Data.Index : Hashable
+```
+
+Available when `SelectionValue` conforms to `Hashable` and `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init<Data, ID, RowContent>(_ data: Binding<Data>, id: KeyPath<Data.Element, ID>, editActions: EditActions<Data>, selection: Binding<SelectionValue?>?, @ContentBuilder rowContent: @escaping (Binding<Data.Element>) -> RowContent) where Content == ForEach<IndexedIdentifierCollection<Data, ID>, ID, EditableCollectionContent<RowContent, Data>>, Data : MutableCollection, Data : RandomAccessCollection, ID : Hashable, RowContent : View, Data.Index : Hashable
+```
+
+```swift
+nonisolated
+init<Data, ID, RowContent>(_ data: Binding<Data>, id: KeyPath<Data.Element, ID>, editActions: EditActions<Data>, selection: Binding<Set<SelectionValue>>?, @ContentBuilder rowContent: @escaping (Binding<Data.Element>) -> RowContent) where Content == ForEach<IndexedIdentifierCollection<Data, ID>, ID, EditableCollectionContent<RowContent, Data>>, Data : MutableCollection, Data : RandomAccessCollection, ID : Hashable, RowContent : View, Data.Index : Hashable
 ```
 
 #### Discussion
@@ -32,9 +47,9 @@ List(
 }
 ```
 
-Use [`deleteDisabled(_:)`](view/deletedisabled(_:).md) and [`moveDisabled(_:)`](view/movedisabled(_:).md) to disable respectively delete or move actions on a per-row basis.
+Use [`deleteDisabled(_:)`](../view/deletedisabled%28_%29.md) and [`moveDisabled(_:)`](../view/movedisabled%28_%29.md) to disable respectively delete or move actions on a per-row basis.
 
-Explicit [`onDelete(perform:)`](dynamicviewcontent/ondelete(perform:).md), [`onMove(perform:)`](dynamicviewcontent/onmove(perform:).md), or [`swipeActions(edge:allowsFullSwipe:content:)`](view/swipeactions(edge:allowsfullswipe:content:).md) modifiers override any synthesized action.
+Explicit [`onDelete(perform:)`](../dynamicviewcontent/ondelete%28perform%29.md), [`onMove(perform:)`](../dynamicviewcontent/onmove%28perform%29.md), or [`swipeActions(edge:allowsFullSwipe:content:)`](../view/swipeactions%28edge,allowsfullswipe,content%29.md) modifiers override any synthesized action.
 
 ## Parameters
 
@@ -46,11 +61,12 @@ Explicit [`onDelete(perform:)`](dynamicviewcontent/ondelete(perform:).md), [`onM
 
 ## See Also
 
-- [init<Data, RowContent>(Binding<Data>, editActions: EditActions<Data>, rowContent: (Binding<Data.Element>) -> RowContent)](list/init(_:editactions:rowcontent:).md)
+### Creating a list from editable data
+- [init<Data, RowContent>(Binding<Data>, editActions: EditActions<Data>, rowContent: (Binding<Data.Element>) -> RowContent)](./init%28_,editactions,rowcontent%29.md)
   Creates a list that computes its rows on demand from an underlying collection of identifiable data and enables editing the collection.
-- [init(_:editActions:selection:rowContent:)](list/init(_:editactions:selection:rowcontent:).md)
+- [init(_:editActions:selection:rowContent:)](./init%28_,editactions,selection,rowcontent%29.md)
   Creates a list that computes its rows on demand from an underlying collection of identifiable data, enables editing the collection, and requires a selection of a single row.
-- [init<Data, ID, RowContent>(Binding<Data>, id: KeyPath<Data.Element, ID>, editActions: EditActions<Data>, rowContent: (Binding<Data.Element>) -> RowContent)](list/init(_:id:editactions:rowcontent:).md)
+- [init<Data, ID, RowContent>(Binding<Data>, id: KeyPath<Data.Element, ID>, editActions: EditActions<Data>, rowContent: (Binding<Data.Element>) -> RowContent)](./init%28_,id,editactions,rowcontent%29.md)
   Creates a list that computes its rows on demand from an underlying collection of identifiable data and enables editing the collection.
 
 

@@ -1,7 +1,8 @@
 # init(workingColorSpace:targetColorSpace:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color match from a working color space and a target display color space.
 
@@ -19,7 +20,7 @@ init(workingColorSpace: CGColorSpace, targetColorSpace: CGColorSpace) throws(Low
 
 #### Discussion
 
-> **Note**: [`LowLevelRendererError`](lowlevelrenderererror.md) if either color space is not a supported linear gamut.
+> **Throws**: [`LowLevelRendererError`](../../lowlevelrenderererror.md) if either color space is not a supported linear gamut.
 
 ## Parameters
 
@@ -28,7 +29,8 @@ init(workingColorSpace: CGColorSpace, targetColorSpace: CGColorSpace) throws(Low
 
 ## See Also
 
-- [init(colorGamutConversion: simd_half3x3, enableClampValues: Bool)](lowlevelrenderer/colormatch-swift.struct/init(colorgamutconversion:enableclampvalues:).md)
+### Creating a color match
+- [init(colorGamutConversion: simd_half3x3, enableClampValues: Bool)](./init%28colorgamutconversion,enableclampvalues%29.md)
   Creates a color match using an explicit gamut conversion matrix.
 
 

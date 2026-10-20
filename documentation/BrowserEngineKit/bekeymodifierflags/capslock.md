@@ -1,7 +1,8 @@
 # BEKeyModifierFlags.capsLock
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A flag that indicates that the Caps Lock key is engaged.
 
@@ -17,11 +18,16 @@ A flag that indicates that the Caps Lock key is engaged.
 case capsLock
 ```
 
+```c
+BEKeyModifierFlagCapsLock
+```
+
 ## See Also
 
-- [BEKeyModifierFlags.shift](bekeymodifierflags/shift.md)
+### Getting caps-shift information
+- [BEKeyModifierFlags.shift](./shift.md)
   A flag that indicates that the Shift key is depressed.
-- [BEKeyModifierFlags.none](bekeymodifierflags/none.md)
+- [BEKeyModifierFlags.none](./none.md)
   A flag that indicates no active key modifiers.
 
 

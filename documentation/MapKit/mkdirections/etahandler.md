@@ -1,23 +1,28 @@
 # MKDirections.ETAHandler
 
 **Framework**: MapKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The block to use for processing travel-time information.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias ETAHandler = (MKDirections.ETAResponse?, (any Error)?) -> Void
+```
+
+```c
+typedef void (^)(MKETAResponse *, NSError *) MKETAHandler;
 ```
 
 #### Discussion
@@ -31,9 +36,10 @@ The implementation of your block needs to check for a value in the `error` param
 
 ## See Also
 
-- [func calculateETA(completionHandler: (MKDirections.ETAResponse?, (any Error)?) -> Void)](mkdirections/calculateeta(completionhandler:).md)
+### Getting the ETA
+- [func calculateETA(completionHandler: (MKDirections.ETAResponse?, (any Error)?) -> Void)](./calculateeta%28completionhandler%29.md)
   Begins calculating the requested travel-time information asynchronously.
-- [MKDirections.ETAResponse](mkdirections/etaresponse.md)
+- [MKDirections.ETAResponse](./etaresponse.md)
   The travel-time information that Apple servers return.
 
 

@@ -1,7 +1,8 @@
 # screenArea(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Switch levels based on projected screen area (0.0 = invisible, 1.0 = fills screen).
 
@@ -25,7 +26,8 @@ Each threshold specifies the minimum screen area for a level, in descending orde
 
 ## See Also
 
-- [static func cameraDistance([Float]) -> LevelOfDetailComponent.SelectionStrategy](levelofdetailcomponent/selectionstrategy/cameradistance(_:).md)
+### Creating a strategy
+- [static func cameraDistance([Float]) -> LevelOfDetailComponent.SelectionStrategy](./cameradistance%28_%29.md)
   Switch levels based on distance from the camera.
 
 

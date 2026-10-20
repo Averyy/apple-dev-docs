@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The configuration instance that assists in encoding another type.
@@ -20,6 +21,12 @@ The configuration instance that assists in encoding another type.
 ```swift
 static var encodingConfiguration: Self.EncodingConfiguration { get }
 ```
+
+## Default Implementations
+
+### AttributeScope Implementations
+- [static var encodingConfiguration: AttributeScopeCodableConfiguration](../attributescope/encodingconfiguration-73uew.md)
+  The configuration for encoding the attribute scope.
 
 
 ---

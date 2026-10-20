@@ -1,7 +1,8 @@
 # controlPointBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A buffer that contains curve control points.
 
@@ -19,9 +20,13 @@ A buffer that contains curve control points.
 var controlPointBuffer: (any MTLBuffer)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MTLBuffer> controlPointBuffer;
+```
+
 #### Discussion
 
-You provide control points in the format that matches the [`controlPointFormat`](mtlaccelerationstructurecurvegeometrydescriptor/controlpointformat.md) property. This property needs to have a non-nil value when you build an acceleration structure.
+You provide control points in the format that matches the [`controlPointFormat`](./controlpointformat.md) property. This property needs to have a non-nil value when you build an acceleration structure.
 
 
 ---

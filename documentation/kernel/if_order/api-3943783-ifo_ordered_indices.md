@@ -1,14 +1,15 @@
 # ifo_ordered_indices
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 mach_vm_address_t ifo_ordered_indices;
 ```
 

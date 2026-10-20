@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kIconServicesNoBadgeFlag: Int](kiconservicesnobadgeflag.md)
-- [var kIconServicesNormalUsageFlag: Int](kiconservicesnormalusageflag.md)
-- [var kIconServicesUpdateIfNeededFlag: Int](kiconservicesupdateifneededflag.md)
+- [var kIconServicesNoBadgeFlag: Int](../../kiconservicesnobadgeflag.md)
+- [var kIconServicesNormalUsageFlag: Int](../../kiconservicesnormalusageflag.md)
+- [var kIconServicesUpdateIfNeededFlag: Int](../../kiconservicesupdateifneededflag.md)
 
 
 ---

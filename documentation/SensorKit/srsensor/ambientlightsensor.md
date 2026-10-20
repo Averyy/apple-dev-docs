@@ -1,7 +1,8 @@
 # ambientLightSensor
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A sensor that provides ambient light information.
 
@@ -16,15 +17,20 @@ A sensor that provides ambient light information.
 static let ambientLightSensor: SRSensor
 ```
 
+```c
+extern SRSensor const SRSensorAmbientLightSensor;
+```
+
 #### Discussion
 
-The [`sample`](srfetchresult/sample.md) type for this sensor is [`SRAmbientLightSample`](srambientlightsample.md).
+The [`sample`](../srfetchresult/sample.md) type for this sensor is [`SRAmbientLightSample`](../srambientlightsample.md).
 
-You need to provide a reason to record ambient light by adding the [`SRSensorUsageAmbientLightSensor`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail/srsensorusageambientlightsensor) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
+You need to provide a reason to record ambient light by adding the [`SRSensorUsageAmbientLightSensor`](../../BundleResources/information-property-list/nssensorkitusagedetail/srsensorusageambientlightsensor.md) dictionary to the [`NSSensorKitUsageDetail`](../../BundleResources/information-property-list/nssensorkitusagedetail.md) key in the information property list.
 
 ## See Also
 
-- [static let ambientPressure: SRSensor](srsensor/ambientpressure.md)
+### Reading environment sensors
+- [static let ambientPressure: SRSensor](./ambientpressure.md)
   A sensor that provides pressure and temperature metrics.
 
 

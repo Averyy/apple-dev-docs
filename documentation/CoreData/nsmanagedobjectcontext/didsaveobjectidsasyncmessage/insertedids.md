@@ -1,7 +1,8 @@
 # insertedIDs
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Object IDs of objects that were inserted during this save.
 

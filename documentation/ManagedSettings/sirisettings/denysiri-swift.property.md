@@ -1,7 +1,8 @@
 # denySiri
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to prevent access to Siri.
 
@@ -22,7 +23,8 @@ If your app doesn’t configure this setting, the value is `nil`.
 
 ## See Also
 
-- [static let denySiri: SettingMetadata<Bool>](sirisettings/denysiri-swift.type.property.md)
+### Restricting Siri usage
+- [static let denySiri: SettingMetadata<Bool>](./denysiri-swift.type.property.md)
   The metadata for the constraint that configures access to Siri.
 
 

@@ -1,7 +1,8 @@
 # InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest.Data.Relationships.OfferCode
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an In-App Purchase offer code one-time use code for a data relationships offer code.
 
@@ -10,14 +11,14 @@ The request body you use to create an In-App Purchase offer code one-time use co
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest.Data.Relationships.OfferCode
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest.Data.Relationships.OfferCode.Data](inapppurchaseoffercodeonetimeusecodecreaterequest/data-data.dictionary/relationships-data.dictionary/offercode-data.dictionary/data-data.dictionary.md)
+- [object InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest.Data.Relationships.OfferCode.Data](./offercode-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

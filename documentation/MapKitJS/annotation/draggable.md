@@ -1,7 +1,8 @@
 # draggable
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the user can drag the annotation.
 
@@ -10,22 +11,23 @@ A Boolean value that determines whether the user can drag the annotation.
 
 ## Declaration
 
-```swift
+```
 get draggable(): boolean;
 set draggable(value: boolean);
 ```
 
 #### Discussion
 
-The user can move the annotation if the [`draggable`](annotationconstructoroptions/draggable.md) property is `true`.
+The user can move the annotation if the [`draggable`](../annotationconstructoroptions/draggable.md) property is `true`.
 
 ## See Also
 
-- [animates](annotation/animates.md)
+### Getting and setting interaction behavior
+- [animates](./animates.md)
   A Boolean value that determines whether the framework animates the annotation.
-- [selected](annotation/selected.md)
+- [selected](./selected.md)
   A Boolean value that indicates whether the map shows the annotation in a selected state.
-- [enabled](annotation/enabled.md)
+- [enabled](./enabled.md)
   A Boolean value that determines whether the annotation responds to user interaction.
 
 

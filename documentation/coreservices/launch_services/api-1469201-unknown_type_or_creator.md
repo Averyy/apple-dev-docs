@@ -7,9 +7,9 @@ Represents an unknown file type or creator.
 ## Topics
 
 ### Constants
-- [var kLSUnknownType: OSType](klsunknowntype.md)
+- [var kLSUnknownType: OSType](../klsunknowntype.md)
   The value to supply as the file type (for example,to the `LSGetApplicationForInfo` function)if no file type information is available.
-- [var kLSUnknownCreator: OSType](klsunknowncreator.md)
+- [var kLSUnknownCreator: OSType](../klsunknowncreator.md)
   The value to supply as the creator signatureif no file creator information is available.
 
 

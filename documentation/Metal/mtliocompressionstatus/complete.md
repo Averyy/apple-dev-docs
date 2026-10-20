@@ -1,7 +1,8 @@
 # MTLIOCompressionStatus.complete
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the compression API successfully flushed and destroyed a compression context.
 
@@ -19,9 +20,14 @@ Indicates the compression API successfully flushed and destroyed a compression c
 case complete
 ```
 
+```c
+MTLIOCompressionStatusComplete
+```
+
 ## See Also
 
-- [MTLIOCompressionStatus.error](mtliocompressionstatus/error.md)
+### Compression result states
+- [MTLIOCompressionStatus.error](./error.md)
   Indicates the compression API had an error while flushing and destroying a compression context.
 
 

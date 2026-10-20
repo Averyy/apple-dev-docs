@@ -1,7 +1,8 @@
 # NumericSummary
 
 **Framework**: TabularData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A summary of a numerical column.
 
@@ -23,49 +24,50 @@ struct NumericSummary<Element> where Element : BinaryFloatingPoint
 ## Topics
 
 ### Creating a Summary
-- [init()](numericsummary/init.md)
+- [init()](./numericsummary/init%28%29.md)
   Creates an empty numeric summary with default values.
-- [init(someCount: Int, noneCount: Int, mean: Element, standardDeviation: Element, min: Element, max: Element, median: Element, firstQuartile: Element, thirdQuartile: Element)](numericsummary/init(somecount:nonecount:mean:standarddeviation:min:max:median:firstquartile:thirdquartile:).md)
+- [init(someCount: Int, noneCount: Int, mean: Element, standardDeviation: Element, min: Element, max: Element, median: Element, firstQuartile: Element, thirdQuartile: Element)](./numericsummary/init%28somecount,nonecount,mean,standarddeviation,min,max,median,firstquartile,thirdquartile%29.md)
   Creates an empty numeric summary.
 ### Inspecting a Summary
-- [var debugDescription: String](numericsummary/debugdescription.md)
+- [var debugDescription: String](./numericsummary/debugdescription.md)
   A text representation of the summary’s statistics suitable for debugging.
-- [var someCount: Int](numericsummary/somecount.md)
+- [var someCount: Int](./numericsummary/somecount.md)
   The number of non-missing elements in the column.
-- [var noneCount: Int](numericsummary/nonecount.md)
+- [var noneCount: Int](./numericsummary/nonecount.md)
   The number of missing elements in the column.
-- [var totalCount: Int](numericsummary/totalcount.md)
+- [var totalCount: Int](./numericsummary/totalcount.md)
   The total number of elements in the column.
 ### Getting Statistical Values
-- [var max: Element](numericsummary/max.md)
+- [var max: Element](./numericsummary/max.md)
   The largest value, excluding missing elements.
-- [var mean: Element](numericsummary/mean.md)
+- [var mean: Element](./numericsummary/mean.md)
   The arithmetic mean of a column’s values that excludes missing elements.
-- [var median: Element](numericsummary/median.md)
+- [var median: Element](./numericsummary/median.md)
   The midpoint value that’s above half of the non-missing elements’ values and below the other half’s values.
-- [var min: Element](numericsummary/min.md)
+- [var min: Element](./numericsummary/min.md)
   The smallest value, excluding missing elements.
-- [var standardDeviation: Element](numericsummary/standarddeviation.md)
+- [var standardDeviation: Element](./numericsummary/standarddeviation.md)
   The standard deviation of a column’s values that excludes missing elements.
-- [var firstQuartile: Element](numericsummary/firstquartile.md)
+- [var firstQuartile: Element](./numericsummary/firstquartile.md)
   The value that’s above 25% of the non-missing elements’ values.
-- [var thirdQuartile: Element](numericsummary/thirdquartile.md)
+- [var thirdQuartile: Element](./numericsummary/thirdquartile.md)
   The value that’s above 75% of the non-missing elements’ values.
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CategoricalSummary](categoricalsummary.md)
+### Statistical Summaries
+- [struct CategoricalSummary](./categoricalsummary.md)
   A categorical summary of a collection’s elements.
-- [struct AnyCategoricalSummary](anycategoricalsummary.md)
+- [struct AnyCategoricalSummary](./anycategoricalsummary.md)
   A type-erased categorical summary.
 
 

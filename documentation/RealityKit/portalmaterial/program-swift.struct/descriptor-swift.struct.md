@@ -1,9 +1,10 @@
 # PortalMaterial.Program.Descriptor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-Configuration used to compile a [`PortalMaterial.Program`](portalmaterial/program-swift.struct.md).
+Configuration used to compile a [`PortalMaterial.Program`](../program-swift.struct.md).
 
 **Availability**:
 - iOS 27.0+
@@ -22,24 +23,25 @@ struct Descriptor
 ## Topics
 
 ### Creating a descriptor
-- [init(shaderGraph: ShaderGraph, inputValues: [String : MaterialParameters.Value], constantValues: MTLFunctionConstantValues)](portalmaterial/program-swift.struct/descriptor-swift.struct/init(shadergraph:inputvalues:constantvalues:).md)
+- [init(shaderGraph: ShaderGraph, inputValues: [String : MaterialParameters.Value], constantValues: MTLFunctionConstantValues)](./descriptor-swift.struct/init%28shadergraph,inputvalues,constantvalues%29.md)
   Creates a descriptor with the given shader graph and optional initial values.
 ### Configuring the shader program
-- [var shaderGraph: ShaderGraph](portalmaterial/program-swift.struct/descriptor-swift.struct/shadergraph.md)
+- [var shaderGraph: ShaderGraph](./descriptor-swift.struct/shadergraph.md)
   The shader graph that describes the shading logic for this program.
-- [var inputValues: [String : MaterialParameters.Value]](portalmaterial/program-swift.struct/descriptor-swift.struct/inputvalues.md)
+- [var inputValues: [String : MaterialParameters.Value]](./descriptor-swift.struct/inputvalues.md)
   Initial values for the inputs that the shader graph declares.
-- [var constantValues: MTLFunctionConstantValues](portalmaterial/program-swift.struct/descriptor-swift.struct/constantvalues.md)
+- [var constantValues: MTLFunctionConstantValues](./descriptor-swift.struct/constantvalues.md)
   Values for the function-constant inputs that the shader graph declares.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../../Swift/equatable.md)
 
 ## See Also
 
-- [var descriptor: PortalMaterial.Program.Descriptor](portalmaterial/program-swift.struct/descriptor-swift.property.md)
+### Configuring the program
+- [var descriptor: PortalMaterial.Program.Descriptor](./descriptor-swift.property.md)
   The descriptor that produced this program.
 
 

@@ -1,7 +1,8 @@
 # ScrollTransitionPhase.bottomTrailing
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The scroll transition is being applied to a view that is about to move into the visible area at the bottom edge of a vertical scroll view, or the trailing edge of a horizontal scroll view.
 
@@ -22,9 +23,10 @@ case bottomTrailing
 
 ## See Also
 
-- [ScrollTransitionPhase.identity](scrolltransitionphase/identity.md)
+### Getting the phase
+- [ScrollTransitionPhase.identity](./identity.md)
   The scroll transition is being applied to a view that is in the visible area.
-- [ScrollTransitionPhase.topLeading](scrolltransitionphase/topleading.md)
+- [ScrollTransitionPhase.topLeading](./topleading.md)
   The scroll transition is being applied to a view that is about to move into the visible area at the top edge of a vertical scroll view, or the leading edge of a horizont scroll view.
 
 

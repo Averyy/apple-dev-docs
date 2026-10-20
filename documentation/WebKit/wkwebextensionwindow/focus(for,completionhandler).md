@@ -1,7 +1,8 @@
 # focus(for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to focus the window.
 
@@ -15,7 +16,15 @@ Called to focus the window.
 ## Declaration
 
 ```swift
+optional func focus(for context: WKWebExtensionContext, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 optional func focus(for context: WKWebExtensionContext) async throws
+```
+
+```objc
+- (void) focusForWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion

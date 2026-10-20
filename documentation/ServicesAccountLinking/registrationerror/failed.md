@@ -1,7 +1,8 @@
 # failed
 
 **Framework**: ServicesAccountLinking  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Registration failed.
 

@@ -1,7 +1,8 @@
 # course
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction in which the device is traveling.
 
@@ -10,7 +11,7 @@ The direction in which the device is traveling.
 
 ## Declaration
 
-```swift
+```
 attribute Double? course;
 ```
 

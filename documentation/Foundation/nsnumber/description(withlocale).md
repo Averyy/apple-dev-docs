@@ -1,7 +1,8 @@
 # description(withLocale:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string that represents the contents of the number object for a given locale.
 
@@ -20,15 +21,19 @@ Returns a string that represents the contents of the number object for a given l
 func description(withLocale locale: Any?) -> String
 ```
 
+```objc
+- (NSString *) descriptionWithLocale:(id) locale;
+```
+
 #### Return Value
 
 A string that represents the contents of the number object formatted using the locale information in `locale`.
 
 #### Discussion
 
-For example, if you have an `NSNumber` object that has the integer value 522, sending it the [`description(withLocale:)`](nsnumber/description(withlocale:).md) message returns the string “522”.
+For example, if you have an `NSNumber` object that has the integer value 522, sending it the [`description(withLocale:)`](./description%28withlocale%29.md) message returns the string “522”.
 
-To obtain the string representation, this method invokes `NSString`’s   [`initWithFormat:locale:`](nsstring/initwithformat:locale:.md) method, supplying the format based on the type the `NSNumber` object was created with:
+To obtain the string representation, this method invokes `NSString`’s   [`initWithFormat:locale:`](../nsstring/initwithformat_locale_.md) method, supplying the format based on the type the `NSNumber` object was created with:
 
 | Data Type | Format Specification |
 | --- | --- |
@@ -51,7 +56,8 @@ To obtain the string representation, this method invokes `NSString`’s   [`init
 
 ## See Also
 
-- [var stringValue: String](nsnumber/stringvalue.md)
+### Retrieving String Representations
+- [var stringValue: String](./stringvalue.md)
   The number object’s value expressed as a human-readable string.
 
 

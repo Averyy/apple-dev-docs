@@ -1,7 +1,8 @@
 # VTPixelRotationSessionRotateImage(_:_:_:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Rotates a source pixel buffer and writes the output to the destination pixel buffer.
 
@@ -17,6 +18,10 @@ Rotates a source pixel buffer and writes the output to the destination pixel buf
 
 ```swift
 func VTPixelRotationSessionRotateImage(_ session: VTPixelRotationSession, _ sourceBuffer: CVPixelBuffer, _ destinationBuffer: CVPixelBuffer) -> OSStatus
+```
+
+```c
+extern OSStatus VTPixelRotationSessionRotateImage(VTPixelRotationSessionRef session, CVPixelBufferRef sourceBuffer, CVPixelBufferRef destinationBuffer);
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # AVCIImageFilteringResult
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An output video frame processed with Core Image filtering.
 
@@ -22,31 +23,32 @@ struct AVCIImageFilteringResult
 ## Topics
 
 ### Creating a result
-- [init(resultImage: CIImage, ciContext: CIContext?)](avciimagefilteringresult/init(resultimage:cicontext:).md)
+- [init(resultImage: CIImage, ciContext: CIContext?)](./avciimagefilteringresult/init%28resultimage,cicontext%29.md)
 ### Inspecting the result
-- [let ciContext: CIContext?](avciimagefilteringresult/cicontext.md)
+- [let ciContext: CIContext?](./avciimagefilteringresult/cicontext.md)
   The core image context used to render the image
-- [let resultImage: CIImage](avciimagefilteringresult/resultimage.md)
+- [let resultImage: CIImage](./avciimagefilteringresult/resultimage.md)
   Provides the filtered video frame image to AVFoundation for further processing or display.
 
 ## See Also
 
-- [convenience init(configuration: AVVideoComposition.Configuration)](avvideocomposition/init(configuration:).md)
+### Creating a video composition
+- [convenience init(configuration: AVVideoComposition.Configuration)](./avvideocomposition/init%28configuration%29.md)
   Initialize an AVVideoComposition with a configuration.
-- [AVVideoComposition.Configuration](avvideocomposition/configuration.md)
+- [AVVideoComposition.Configuration](./avvideocomposition/configuration.md)
   Configurable properties for initializing a new AVVideoComposition instance.
-- [convenience init(applyingFiltersTo: AVAsset, applier: (AVCIImageFilteringParameters) async throws -> AVCIImageFilteringResult) async throws](avvideocomposition/init(applyingfiltersto:applier:).md)
+- [convenience init(applyingFiltersTo: AVAsset, applier: (AVCIImageFilteringParameters) async throws -> AVCIImageFilteringResult) async throws](./avvideocomposition/init%28applyingfiltersto,applier%29.md)
   Creates a video composition configured to apply Core Image filters to each video frame of the specified asset.
-- [class func videoComposition(with: AVAsset, applyingCIFiltersWithHandler: (AVAsynchronousCIImageFilteringRequest) -> Void, completionHandler: (AVVideoComposition?, (any Error)?) -> Void)](avvideocomposition/videocomposition(with:applyingcifilterswithhandler:completionhandler:).md)
+- [class func videoComposition(with: AVAsset, applyingCIFiltersWithHandler: (AVAsynchronousCIImageFilteringRequest) -> Void, completionHandler: (AVVideoComposition?, (any Error)?) -> Void)](./avvideocomposition/videocomposition%28with,applyingcifilterswithhandler,completionhandler%29.md)
   Returns a new video composition that’s configured to apply Core Image filters to each video frame of the specified asset.
-- [class AVAsynchronousCIImageFilteringRequest](avasynchronousciimagefilteringrequest.md)
+- [class AVAsynchronousCIImageFilteringRequest](./avasynchronousciimagefilteringrequest.md)
   An object that supports using Core Image filters to process an individual video frame in a video composition.
-- [struct AVCIImageFilteringParameters](avciimagefilteringparameters.md)
-- [class func videoComposition(withPropertiesOf: AVAsset, completionHandler: (AVVideoComposition?, (any Error)?) -> Void)](avvideocomposition/videocomposition(withpropertiesof:completionhandler:).md)
+- [struct AVCIImageFilteringParameters](./avciimagefilteringparameters.md)
+- [class func videoComposition(withPropertiesOf: AVAsset, completionHandler: (AVVideoComposition?, (any Error)?) -> Void)](./avvideocomposition/videocomposition%28withpropertiesof,completionhandler%29.md)
   Returns a new video composition that’s configured to present the video tracks of the specified asset.
-- [init(propertiesOf: AVAsset)](avvideocomposition/init(propertiesof:).md)
+- [init(propertiesOf: AVAsset)](./avvideocomposition/init%28propertiesof%29.md)
   Creates a video composition object configured to present the video tracks of the specified asset.
-- [init(asset: AVAsset, applyingCIFiltersWithHandler: (AVAsynchronousCIImageFilteringRequest) -> Void)](avvideocomposition/init(asset:applyingcifilterswithhandler:).md)
+- [init(asset: AVAsset, applyingCIFiltersWithHandler: (AVAsynchronousCIImageFilteringRequest) -> Void)](./avvideocomposition/init%28asset,applyingcifilterswithhandler%29.md)
   Creates a video composition configured to apply Core Image filters to each video frame of the specified asset.
 
 

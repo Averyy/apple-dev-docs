@@ -1,7 +1,8 @@
 # modifier(active:identity:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a transition defined between an active modifier and an identity modifier.
 
@@ -22,7 +23,8 @@ static func modifier<E>(active: E, identity: E) -> AnyTransition where E : ViewM
 
 ## See Also
 
-- [init<T>(T)](anytransition/init(_:).md)
+### Creating a custom transition
+- [init<T>(T)](./init%28_%29.md)
   Create an instance that type-erases `transition`.
 
 

@@ -1,7 +1,8 @@
 # ReplaceSymbolEffect.MagicReplace
 
 **Framework**: Symbols  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A symbol effect applies the MagicReplace animation to symbol images.
 
@@ -27,20 +28,20 @@ The MagicReplace effect animates common elements across symbol images.
 ## Topics
 
 ### Instance Properties
-- [var configuration: SymbolEffectConfiguration](replacesymboleffect/magicreplace/configuration.md)
+- [var configuration: SymbolEffectConfiguration](./magicreplace/configuration.md)
   The configuration for the effect.
 
 ## Relationships
 
 ### Conforms To
-- [ContentTransitionSymbolEffect](contenttransitionsymboleffect.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SymbolEffect](symboleffect.md)
+- [ContentTransitionSymbolEffect](../contenttransitionsymboleffect.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SymbolEffect](../symboleffect.md)
 
 
 ---

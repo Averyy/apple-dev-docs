@@ -1,26 +1,28 @@
 # bLength
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t bLength;
 ```
 
 ## See Also
 
-- [bDescriptorType](iousbinterfaceassociationdescriptor/bdescriptortype.md)
-- [bFirstInterface](iousbinterfaceassociationdescriptor/bfirstinterface.md)
-- [bInterfaceCount](iousbinterfaceassociationdescriptor/binterfacecount.md)
-- [bFunctionClass](iousbinterfaceassociationdescriptor/bfunctionclass.md)
-- [bFunctionSubClass](iousbinterfaceassociationdescriptor/bfunctionsubclass.md)
-- [bFunctionProtocol](iousbinterfaceassociationdescriptor/bfunctionprotocol.md)
-- [iFunction](iousbinterfaceassociationdescriptor/ifunction.md)
+### Accessing the Descriptor Properties
+- [bDescriptorType](./bdescriptortype.md)
+- [bFirstInterface](./bfirstinterface.md)
+- [bInterfaceCount](./binterfacecount.md)
+- [bFunctionClass](./bfunctionclass.md)
+- [bFunctionSubClass](./bfunctionsubclass.md)
+- [bFunctionProtocol](./bfunctionprotocol.md)
+- [iFunction](./ifunction.md)
 
 
 ---

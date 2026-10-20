@@ -1,7 +1,8 @@
 # seek(to:resumeAt:completion:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -14,7 +15,15 @@
 ## Declaration
 
 ```swift
+func seek(to time: Double, resumeAt engineTime: AVAudioTime, completion handler: (@Sendable (PHASESoundEvent.SeekHandlerReason) -> Void)? = nil)
+```
+
+```swift
 func seek(to time: Double, resumeAt engineTime: AVAudioTime) async -> PHASESoundEvent.SeekHandlerReason
+```
+
+```objc
+- (void) seekToTime:(double) time resumeAtEngineTime:(AVAudioTime *) engineTime completion:(void (^)(PHASESoundEventSeekHandlerReason reason)) handler;
 ```
 
 #### Discussion

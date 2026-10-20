@@ -1,14 +1,15 @@
 # kBluetoothHCICommandCreateNewUnitKey
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandCreateNewUnitKey = 0x000B
 ```
 

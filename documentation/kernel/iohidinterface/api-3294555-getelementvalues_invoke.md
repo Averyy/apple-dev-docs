@@ -1,14 +1,15 @@
 # GetElementValues_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15+ - Deprecated in 10.15.1
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t GetElementValues_Invoke(const IORPC rpc, OSMetaClassBase *target, GetElementValues_Handler func);
 ```
 

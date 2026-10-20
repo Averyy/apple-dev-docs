@@ -1,7 +1,8 @@
 # init(shape:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a reshape transformer.
 

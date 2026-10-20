@@ -1,7 +1,8 @@
 # custom(angle:)
 
 **Framework**: Symbols  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of the effect requesting an animation that moves back and forth along an axis with the passed in angle.
 

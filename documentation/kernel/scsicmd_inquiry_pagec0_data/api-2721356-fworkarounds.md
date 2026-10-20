@@ -1,14 +1,15 @@
 # fWorkArounds
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12.2+
 
 ## Declaration
 
-```swift
+```c
 UInt64 fWorkArounds;
 ```
 

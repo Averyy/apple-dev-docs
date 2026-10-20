@@ -1,15 +1,17 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer that identifies the atom type.
 
 ## See Also
 
-- [Size](free_space_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in the atom.
-- [Free space](free_space_atom/free_space.md)
+- [Free space](./free_space.md)
   Bytes of free space.
 
 

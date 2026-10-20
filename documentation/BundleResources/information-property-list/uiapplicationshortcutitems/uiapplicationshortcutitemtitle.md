@@ -1,24 +1,27 @@
 # UIApplicationShortcutItemTitle
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `UIApplicationShortcutItemTitle`
+- **Type**: string
 
 ## See Also
 
-- [UIApplicationShortcutItemIconFile](information-property-list/uiapplicationshortcutitems/uiapplicationshortcutitemiconfile.md)
-- [UIApplicationShortcutItemIconSymbolName](information-property-list/uiapplicationshortcutitems/uiapplicationshortcutitemiconsymbolname.md)
-- [UIApplicationShortcutItemIconType](information-property-list/uiapplicationshortcutitems/uiapplicationshortcutitemicontype.md)
-- [UIApplicationShortcutItemSubtitle](information-property-list/uiapplicationshortcutitems/uiapplicationshortcutitemsubtitle.md)
-- [UIApplicationShortcutItemType](information-property-list/uiapplicationshortcutitems/uiapplicationshortcutitemtype.md)
-- [UIApplicationShortcutItemUserInfo](information-property-list/uiapplicationshortcutitems/uiapplicationshortcutitemuserinfo.md)
+### Item Configuration
+- [UIApplicationShortcutItemIconFile](./uiapplicationshortcutitemiconfile.md)
+- [UIApplicationShortcutItemIconSymbolName](./uiapplicationshortcutitemiconsymbolname.md)
+- [UIApplicationShortcutItemIconType](./uiapplicationshortcutitemicontype.md)
+- [UIApplicationShortcutItemSubtitle](./uiapplicationshortcutitemsubtitle.md)
+- [UIApplicationShortcutItemType](./uiapplicationshortcutitemtype.md)
+- [UIApplicationShortcutItemUserInfo](./uiapplicationshortcutitemuserinfo.md)
 
 
 ---

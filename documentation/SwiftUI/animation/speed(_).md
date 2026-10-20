@@ -1,7 +1,8 @@
 # speed(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the duration of an animation by adjusting its speed.
 
@@ -54,6 +55,8 @@ struct ContentView: View {
 }
 ```
 
+[Video: A video that shows two capsules side by side that animate using the ease-in ease-out animation. The capsule on the left is short, while the capsule on the right is tall. They animate for half a second with the short capsule growing upwards to match the height of the tall capsule. Then the tall capsule shrinks to match the original height of the short capsule. For another half second, the capsule on the left shrinks to its original height, followed by the capsule on the right growing to its original height.](https://developer.apple.com/tutorials/videos/com.apple.SwiftUI/animation-18-speed.mp4)
+
 Setting `speed` to a lower number slows the animation, extending its duration. For example, a one-second animation with a speed of `0.25` takes four seconds to complete.
 
 ```swift
@@ -82,17 +85,20 @@ struct ContentView: View {
 }
 ```
 
+[Video: A video that shows two capsules side by side that animate using the ease-in ease-out animation. The capsule on the left is short, while the right-side capsule is tall. They animate for four seconds with the short capsule growing upwards to match the height of the tall capsule. Then the tall capsule shrinks to match the original height of the short capsule. For another four seconds, the capsule on the left shrinks to its original height, followed by the capsule on the right growing to its original height.](https://developer.apple.com/tutorials/videos/com.apple.SwiftUI/animation-19-speed-slow.mp4)
+
 ## Parameters
 
 - `speed`: The speed at which SwiftUI performs the animation.
 
 ## See Also
 
-- [func delay(TimeInterval) -> Animation](animation/delay(_:).md)
+### Configuring an animation
+- [func delay(TimeInterval) -> Animation](./delay%28_%29.md)
   Delays the start of the animation by the specified number of seconds.
-- [func repeatCount(Int, autoreverses: Bool) -> Animation](animation/repeatcount(_:autoreverses:).md)
+- [func repeatCount(Int, autoreverses: Bool) -> Animation](./repeatcount%28_,autoreverses%29.md)
   Repeats the animation for a specific number of times.
-- [func repeatForever(autoreverses: Bool) -> Animation](animation/repeatforever(autoreverses:).md)
+- [func repeatForever(autoreverses: Bool) -> Animation](./repeatforever%28autoreverses%29.md)
   Repeats the animation for the lifespan of the view containing the animation.
 
 

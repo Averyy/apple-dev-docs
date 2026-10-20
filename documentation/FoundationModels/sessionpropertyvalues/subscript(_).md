@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Foundation Models  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the value stored for the given session property key.
 

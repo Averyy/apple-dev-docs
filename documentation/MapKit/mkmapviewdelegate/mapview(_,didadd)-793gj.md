@@ -1,7 +1,8 @@
 # mapView(_:didAdd:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the map view adds one or more renderer objects to the map.
 
@@ -19,6 +20,10 @@ Tells the delegate when the map view adds one or more renderer objects to the ma
 optional func mapView(_ mapView: MKMapView, didAdd renderers: [MKOverlayRenderer])
 ```
 
+```objc
+- (void) mapView:(MKMapView *) mapView didAddOverlayRenderers:(NSArray<MKOverlayRenderer *> *) renderers;
+```
+
 #### Discussion
 
 The map view adds renderer objects when it needs them to draw their contents, which might be prior to those contents appearing onscreen. It calls this method to let you know that the renderer is active and in use. By the time the map view calls this method, it has already added specified renderers to the map.
@@ -30,13 +35,14 @@ The map view adds renderer objects when it needs them to draw their contents, wh
 
 ## See Also
 
-- [func mapView(MKMapView, selectionAccessoryFor: any MKAnnotation) -> MKSelectionAccessory?](mkmapviewdelegate/mapview(_:selectionaccessoryfor:).md)
+### Managing the display of overlays
+- [func mapView(MKMapView, selectionAccessoryFor: any MKAnnotation) -> MKSelectionAccessory?](./mapview%28_,selectionaccessoryfor%29.md)
   Specifies the accessory to display for a selected annotation
-- [func mapView(MKMapView, rendererFor: any MKOverlay) -> MKOverlayRenderer](mkmapviewdelegate/mapview(_:rendererfor:).md)
+- [func mapView(MKMapView, rendererFor: any MKOverlay) -> MKOverlayRenderer](./mapview%28_,rendererfor%29.md)
   Asks the delegate for a renderer object to use when drawing the specified overlay.
-- [func mapView(MKMapView, viewFor: any MKOverlay) -> MKOverlayView](mkmapviewdelegate/mapview(_:viewfor:)-6j267.md)
+- [func mapView(MKMapView, viewFor: any MKOverlay) -> MKOverlayView](./mapview%28_,viewfor%29-6j267.md)
   Asks the delegate for the overlay view to use when displaying the specified overlay object.
-- [func mapView(MKMapView, didAddOverlayViews: [Any])](mkmapviewdelegate/mapview(_:didaddoverlayviews:).md)
+- [func mapView(MKMapView, didAddOverlayViews: [Any])](./mapview%28_,didaddoverlayviews%29.md)
   Tells the delegate when the map adds one or more overlay views to the map.
 
 

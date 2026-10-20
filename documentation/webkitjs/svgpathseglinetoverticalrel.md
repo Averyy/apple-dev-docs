@@ -1,7 +1,8 @@
 # SVGPathSegLinetoVerticalRel
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGPathSegLinetoVerticalRel
 ```
 
 ## Topics
 
 ### Instance Properties
-- [y](svgpathseglinetoverticalrel/1631988-y.md)
+- [y](./svgpathseglinetoverticalrel/api-1631988-y.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGPathSeg](svgpathseg.md)
+- [SVGPathSeg](./svgpathseg.md)
 
 
 ---

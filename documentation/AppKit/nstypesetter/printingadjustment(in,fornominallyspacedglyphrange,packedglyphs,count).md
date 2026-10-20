@@ -1,17 +1,22 @@
 # printingAdjustment(in:forNominallySpacedGlyphRange:packedGlyphs:count:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the interglyph spacing in the specified range when sent to a printer.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func printingAdjustment(in layoutMgr: NSLayoutManager, forNominallySpacedGlyphRange nominallySpacedGlyphsRange: NSRange, packedGlyphs: UnsafePointer<UInt8>, count packedGlyphsCount: Int) -> NSSize
+```
+
+```objc
++ (NSSize) printingAdjustmentInLayoutManager:(NSLayoutManager *) layoutMgr forNominallySpacedGlyphRange:(NSRange) nominallySpacedGlyphsRange packedGlyphs:(const unsigned char *) packedGlyphs count:(NSUInteger) packedGlyphsCount;
 ```
 
 #### Return Value
@@ -27,7 +32,8 @@ The interglyph spacing in the specified range when sent to a printer. If the fon
 
 ## See Also
 
-- [func baselineOffset(in: NSLayoutManager, glyphIndex: Int) -> CGFloat](nstypesetter/baselineoffset(in:glyphindex:).md)
+### Getting information about glyphs
+- [func baselineOffset(in: NSLayoutManager, glyphIndex: Int) -> CGFloat](./baselineoffset%28in,glyphindex%29.md)
   Returns the distance from the bottom of the line fragment rectangle in which the glyph resides to the glyph baseline.
 
 

@@ -1,7 +1,8 @@
 # init(named:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a sharing service instance representing the specified service name.
 
@@ -14,6 +15,10 @@ Returns a sharing service instance representing the specified service name.
 init?(named serviceName: NSSharingService.Name)
 ```
 
+```objc
++ (NSSharingService *) sharingServiceNamed:(NSSharingServiceName) serviceName;
+```
+
 #### Return Value
 
 An instance of `NSSharingService` for the specified service name.
@@ -24,13 +29,15 @@ An instance of `NSSharingService` for the specified service name.
 
 ## See Also
 
-- [class func sharingServices(forItems: [Any]) -> [NSSharingService]](nssharingservice/sharingservices(foritems:).md)
+### Related Documentation
+- [class func sharingServices(forItems: [Any]) -> [NSSharingService]](./sharingservices%28foritems%29.md)
   Returns a list of sharing services which could share all the provided items together.
-- [func canPerform(withItems: [Any]?) -> Bool](nssharingservice/canperform(withitems:).md)
+- [func canPerform(withItems: [Any]?) -> Bool](./canperform%28withitems%29.md)
   Returns whether the service can share all the specified items.
-- [init(title: String, image: NSImage, alternateImage: NSImage?, handler: () -> Void)](nssharingservice/init(title:image:alternateimage:handler:).md)
+### Creating a Sharing Service
+- [init(title: String, image: NSImage, alternateImage: NSImage?, handler: () -> Void)](./init%28title,image,alternateimage,handler%29.md)
   Creates a custom sharing service object.
-- [NSSharingService.Name](nssharingservice/name.md)
+- [NSSharingService.Name](./name.md)
   Constants that describe the sharing services that macOS supports.
 
 

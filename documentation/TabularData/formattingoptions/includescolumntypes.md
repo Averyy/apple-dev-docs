@@ -1,7 +1,8 @@
 # includesColumnTypes
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the description includes the column types.
 
@@ -22,19 +23,20 @@ var includesColumnTypes: Bool
 
 ## See Also
 
-- [var dateFormatStyle: Date.FormatStyle](formattingoptions/dateformatstyle.md)
+### Getting the Properties
+- [var dateFormatStyle: Date.FormatStyle](./dateformatstyle.md)
   The date format style.
-- [var floatingPointFormatStyle: FloatingPointFormatStyle<Double>](formattingoptions/floatingpointformatstyle.md)
+- [var floatingPointFormatStyle: FloatingPointFormatStyle<Double>](./floatingpointformatstyle.md)
   The floating point format style.
-- [var integerFormatStyle: IntegerFormatStyle<Int>](formattingoptions/integerformatstyle.md)
+- [var integerFormatStyle: IntegerFormatStyle<Int>](./integerformatstyle.md)
   The integer format style.
-- [var locale: Locale](formattingoptions/locale.md)
+- [var locale: Locale](./locale.md)
   The locale.
-- [var maximumCellWidth: Int](formattingoptions/maximumcellwidth.md)
+- [var maximumCellWidth: Int](./maximumcellwidth.md)
   The largest number of characters a description can generate per cell.
-- [var maximumLineWidth: Int](formattingoptions/maximumlinewidth.md)
+- [var maximumLineWidth: Int](./maximumlinewidth.md)
   The largest number of characters a description can generate per line.
-- [var maximumRowCount: Int](formattingoptions/maximumrowcount.md)
+- [var maximumRowCount: Int](./maximumrowcount.md)
   The largest number of rows a description can generate.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a new value, if the given integer can be represented exactly.
@@ -28,6 +29,14 @@ If the given integer cannot be represented exactly, the result is `nil`.
 ## Parameters
 
 - `value`: The integer to convert to a floating-point value.
+
+## Default Implementations
+
+### BinaryFloatingPoint Implementations
+- [init?<Source>(exactly: Source)](../binaryfloatingpoint/init%28exactly%29-6fobm.md)
+  Creates a new instance from the given value, if it can be represented exactly.
+- [init?<Source>(exactly: Source)](../binaryfloatingpoint/init%28exactly%29-9lyid.md)
+  Creates a new value, if the given integer can be represented exactly.
 
 
 ---

@@ -1,7 +1,8 @@
 # GaussianSplatResource.ProjectionMode.perspective
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Projects splats using a standard perspective projection.
 

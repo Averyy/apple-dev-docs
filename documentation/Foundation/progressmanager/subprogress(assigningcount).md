@@ -1,7 +1,8 @@
 # subprogress(assigningCount:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a `Subprogress` representing a portion of `self` which can be passed to any method that reports progress.
 

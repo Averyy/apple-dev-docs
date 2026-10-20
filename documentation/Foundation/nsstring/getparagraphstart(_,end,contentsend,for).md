@@ -1,7 +1,8 @@
 # getParagraphStart(_:end:contentsEnd:for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns by reference the beginning of the first paragraph and the end of the last paragraph touched by the given range.
 
@@ -20,11 +21,15 @@ Returns by reference the beginning of the first paragraph and the end of the las
 func getParagraphStart(_ startPtr: UnsafeMutablePointer<Int>?, end parEndPtr: UnsafeMutablePointer<Int>?, contentsEnd contentsEndPtr: UnsafeMutablePointer<Int>?, for range: NSRange)
 ```
 
+```objc
+- (void) getParagraphStart:(NSUInteger *) startPtr end:(NSUInteger *) parEndPtr contentsEnd:(NSUInteger *) contentsEndPtr forRange:(NSRange) range;
+```
+
 #### Discussion
 
 A paragraph is any segment of text delimited by a carriage return (`U+000D`), newline (`U+000A`), or paragraph separator (`U+2029`).
 
-If `aRange` is contained with a single paragraph, of course, the returned indexes all belong to that paragraph. Similar to [`getLineStart(_:end:contentsEnd:for:)`](nsstring/getlinestart(_:end:contentsend:for:).md), you can use the results of this method to construct the ranges for paragraphs.
+If `aRange` is contained with a single paragraph, of course, the returned indexes all belong to that paragraph. Similar to [`getLineStart(_:end:contentsEnd:for:)`](./getlinestart%28_,end,contentsend,for%29.md), you can use the results of this method to construct the ranges for paragraphs.
 
 ## Parameters
 
@@ -35,11 +40,12 @@ If `aRange` is contained with a single paragraph, of course, the returned indexe
 
 ## See Also
 
-- [func getLineStart(UnsafeMutablePointer<Int>?, end: UnsafeMutablePointer<Int>?, contentsEnd: UnsafeMutablePointer<Int>?, for: NSRange)](nsstring/getlinestart(_:end:contentsend:for:).md)
+### Determining Line and Paragraph Ranges
+- [func getLineStart(UnsafeMutablePointer<Int>?, end: UnsafeMutablePointer<Int>?, contentsEnd: UnsafeMutablePointer<Int>?, for: NSRange)](./getlinestart%28_,end,contentsend,for%29.md)
   Returns by reference the beginning of the first line and the end of the last line touched by the given range.
-- [func lineRange(for: NSRange) -> NSRange](nsstring/linerange(for:).md)
+- [func lineRange(for: NSRange) -> NSRange](./linerange%28for%29.md)
   Returns the range of characters representing the line or lines containing a given range.
-- [func paragraphRange(for: NSRange) -> NSRange](nsstring/paragraphrange(for:).md)
+- [func paragraphRange(for: NSRange) -> NSRange](./paragraphrange%28for%29.md)
   Returns the range of characters representing the paragraph or paragraphs containing a given range.
 
 

@@ -1,7 +1,8 @@
 # SRAuthorizationStatus.denied
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 User has denied authorization to this application or data collection is disabled in Settings.
 
@@ -14,6 +15,10 @@ User has denied authorization to this application or data collection is disabled
 
 ```swift
 case denied
+```
+
+```c
+SRAuthorizationStatusDenied
 ```
 
 

@@ -1,7 +1,8 @@
 # AttributedString.LocalizationOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configuration options for the localization of text.
 
@@ -23,17 +24,17 @@ struct LocalizationOptions
 ## Topics
 
 ### Initializers
-- [init()](attributedstring/localizationoptions/init.md)
+- [init()](./localizationoptions/init%28%29.md)
 ### Instance Properties
-- [var applyReplacementIndexAttribute: Bool](attributedstring/localizationoptions/applyreplacementindexattribute.md)
-- [var concepts: [InflectionConcept]?](attributedstring/localizationoptions/concepts.md)
+- [var applyReplacementIndexAttribute: Bool](./localizationoptions/applyreplacementindexattribute.md)
+- [var concepts: [InflectionConcept]?](./localizationoptions/concepts.md)
   The inflection concepts for achieving automatic grammar agreement during localization.
-- [var inflect: Bool](attributedstring/localizationoptions/inflect.md)
+- [var inflect: Bool](./localizationoptions/inflect.md)
   Whether attributes for automatic grammar agreement and formatting should be processed upon loading the string. Default value is `true`.
-- [var replacements: [any CVarArg]?](attributedstring/localizationoptions/replacements.md)
+- [var replacements: [any CVarArg]?](./localizationoptions/replacements.md)
 ### Type Methods
-- [static func localizedPhraseConcept(String) -> AttributedString.LocalizationOptions](attributedstring/localizationoptions/localizedphraseconcept(_:).md)
-- [static func termsOfAddressConcept([TermOfAddress]) -> AttributedString.LocalizationOptions](attributedstring/localizationoptions/termsofaddressconcept(_:).md)
+- [static func localizedPhraseConcept(String) -> AttributedString.LocalizationOptions](./localizationoptions/localizedphraseconcept%28_%29.md)
+- [static func termsOfAddressConcept([TermOfAddress]) -> AttributedString.LocalizationOptions](./localizationoptions/termsofaddressconcept%28_%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # symmetricDifference(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new range set representing the values in this range set or the given range set, but not both.
 
@@ -19,6 +20,8 @@ Returns a new range set representing the values in this range set or the given r
 ```swift
 func symmetricDifference(_ other: RangeSet<Bound>) -> RangeSet<Bound>
 ```
+
+Available when `Bound` conforms to `Comparable`.
 
 #### Return Value
 

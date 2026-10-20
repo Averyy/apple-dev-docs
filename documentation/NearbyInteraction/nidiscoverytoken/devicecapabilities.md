@@ -1,7 +1,8 @@
 # deviceCapabilities
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A protocol object that describes the nearby interaction capabilities of a person’s device.
 
@@ -18,13 +19,17 @@ A protocol object that describes the nearby interaction capabilities of a person
 var deviceCapabilities: any NIDeviceCapability { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) id<NIDeviceCapability> deviceCapabilities;
+```
+
 ## Mentions
 
-- [Extending advanced direction finding and ranging](extending-advanced-direction-finding-and-ranging.md)
+- [Extending advanced direction finding and ranging](../extending-advanced-direction-finding-and-ranging.md)
 
 #### Discussion
 
-Use the [`NIDeviceCapability`](nidevicecapability.md) instance this property returns to detect the available capabilities on a person’s device.
+Use the [`NIDeviceCapability`](../nidevicecapability.md) instance this property returns to detect the available capabilities on a person’s device.
 
 
 ---

@@ -1,7 +1,8 @@
 # outputDescriptorType
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor type of the output.
 
@@ -11,8 +12,10 @@ The descriptor type of the output.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,9 +25,10 @@ var outputDescriptorType: BNNS.DescriptorType
 
 ## See Also
 
-- [var inputDescriptorType: BNNS.DescriptorType](bnns/fusedunaryarithmeticparameters/inputdescriptortype.md)
+### Inspecting the Properties of a Fused Arithmetic Parameters Structure
+- [var inputDescriptorType: BNNS.DescriptorType](./inputdescriptortype.md)
   The descriptor type of the input.
-- [var function: BNNS.ArithmeticUnaryFunction](bnns/fusedunaryarithmeticparameters/function.md)
+- [var function: BNNS.ArithmeticUnaryFunction](./function.md)
   The arithmetic function.
 
 

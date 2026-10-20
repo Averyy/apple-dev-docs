@@ -1,7 +1,8 @@
 # network(ssid:credentials:)
 
 **Framework**: MatterSupport  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Maintains information about a specific Wi-Fi network.
 
@@ -10,7 +11,7 @@ Maintains information about a specific Wi-Fi network.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -29,7 +30,8 @@ The credentials represent the passphrase that the system needs to associate to t
 
 ## See Also
 
-- [static var defaultSystemNetwork: MatterAddDeviceExtensionRequestHandler.WiFiNetworkAssociation](matteradddeviceextensionrequesthandler/wifinetworkassociation/defaultsystemnetwork.md)
+### Getting network information
+- [static var defaultSystemNetwork: MatterAddDeviceExtensionRequestHandler.WiFiNetworkAssociation](./defaultsystemnetwork.md)
   The current Wi-Fi network of the iOS device.
 
 

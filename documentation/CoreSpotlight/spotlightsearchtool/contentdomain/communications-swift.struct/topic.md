@@ -1,9 +1,10 @@
 # topic
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Attributes queried for the subject/body field. Default: [`textContent`](searchableitemattribute/textcontent.md)
+Attributes queried for the subject/body field. Default: [`textContent`](../../../searchableitemattribute/textcontent.md)
 
 **Availability**:
 - iOS 27.0+
@@ -20,14 +21,15 @@ var topic: [SearchableItemAttribute]?
 
 ## See Also
 
-- [var authors: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/communications-swift.struct/authors.md)
-  Attributes queried for the author field. Default: [`authorNames`](searchableitemattribute/authornames.md)
-- [var received: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/communications-swift.struct/received.md)
-  Attributes queried for the received date field. Default: [`contentCreationDate`](searchableitemattribute/contentcreationdate.md)
-- [var recipients: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/communications-swift.struct/recipients.md)
-  Attributes queried for the recipient field. Default: [`recipientNames`](searchableitemattribute/recipientnames.md)
-- [var sent: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/communications-swift.struct/sent.md)
-  Attributes queried for the sent date field. Default: [`contentCreationDate`](searchableitemattribute/contentcreationdate.md)
+### Getting the domain attributes
+- [var authors: [SearchableItemAttribute]?](./authors.md)
+  Attributes queried for the author field. Default: [`authorNames`](../../../searchableitemattribute/authornames.md)
+- [var received: [SearchableItemAttribute]?](./received.md)
+  Attributes queried for the received date field. Default: [`contentCreationDate`](../../../searchableitemattribute/contentcreationdate.md)
+- [var recipients: [SearchableItemAttribute]?](./recipients.md)
+  Attributes queried for the recipient field. Default: [`recipientNames`](../../../searchableitemattribute/recipientnames.md)
+- [var sent: [SearchableItemAttribute]?](./sent.md)
+  Attributes queried for the sent date field. Default: [`contentCreationDate`](../../../searchableitemattribute/contentcreationdate.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates the listener.
 
@@ -20,17 +21,22 @@ Invalidates the listener.
 func invalidate()
 ```
 
+```objc
+- (void) invalidate;
+```
+
 #### Discussion
 
 After calling this method, no more connections are created. Once a listener is invalidated it may not be resumed or suspended.
 
 ## See Also
 
-- [func activate()](nsxpclistener/activate.md)
+### Managing connection state
+- [func activate()](./activate%28%29.md)
   Activates the listener.
-- [func resume()](nsxpclistener/resume.md)
+- [func resume()](./resume%28%29.md)
   Starts processing of incoming requests.
-- [func suspend()](nsxpclistener/suspend.md)
+- [func suspend()](./suspend%28%29.md)
   Suspends the listener.
 
 

@@ -1,7 +1,8 @@
 # MDLAnimatedMatrix4x4
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 11.0+
@@ -17,31 +18,35 @@
 class MDLAnimatedMatrix4x4
 ```
 
+```objc
+@interface MDLAnimatedMatrix4x4 : MDLAnimatedValue
+```
+
 ## Topics
 
 ### Instance Properties
-- [var double4x4Array: [double4x4]](mdlanimatedmatrix4x4/double4x4array.md)
-- [var float4x4Array: [float4x4]](mdlanimatedmatrix4x4/float4x4array.md)
+- [var double4x4Array: [double4x4]](./mdlanimatedmatrix4x4/double4x4array.md)
+- [var float4x4Array: [float4x4]](./mdlanimatedmatrix4x4/float4x4array.md)
 ### Instance Methods
-- [func double4x4Value(atTime: TimeInterval) -> matrix_double4x4](mdlanimatedmatrix4x4/double4x4value(attime:).md)
-- [func float4x4Value(atTime: TimeInterval) -> matrix_float4x4](mdlanimatedmatrix4x4/float4x4value(attime:).md)
-- [func reset(double4Array: [double4x4], atTimes: [TimeInterval])](mdlanimatedmatrix4x4/reset(double4array:attimes:).md)
-- [func reset(float4x4Array: [float4x4], atTimes: [TimeInterval])](mdlanimatedmatrix4x4/reset(float4x4array:attimes:).md)
-- [func setDouble4x4(matrix_double4x4, atTime: TimeInterval)](mdlanimatedmatrix4x4/setdouble4x4(_:attime:).md)
-- [func setFloat4x4(matrix_float4x4, atTime: TimeInterval)](mdlanimatedmatrix4x4/setfloat4x4(_:attime:).md)
+- [func double4x4Value(atTime: TimeInterval) -> matrix_double4x4](./mdlanimatedmatrix4x4/double4x4value%28attime%29.md)
+- [func float4x4Value(atTime: TimeInterval) -> matrix_float4x4](./mdlanimatedmatrix4x4/float4x4value%28attime%29.md)
+- [func reset(double4Array: [double4x4], atTimes: [TimeInterval])](./mdlanimatedmatrix4x4/reset%28double4array,attimes%29.md)
+- [func reset(float4x4Array: [float4x4], atTimes: [TimeInterval])](./mdlanimatedmatrix4x4/reset%28float4x4array,attimes%29.md)
+- [func setDouble4x4(matrix_double4x4, atTime: TimeInterval)](./mdlanimatedmatrix4x4/setdouble4x4%28_,attime%29.md)
+- [func setFloat4x4(matrix_float4x4, atTime: TimeInterval)](./mdlanimatedmatrix4x4/setfloat4x4%28_,attime%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MDLAnimatedValue](mdlanimatedvalue.md)
+- [MDLAnimatedValue](./mdlanimatedvalue.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

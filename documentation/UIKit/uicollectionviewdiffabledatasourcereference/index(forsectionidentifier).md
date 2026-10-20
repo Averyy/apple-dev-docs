@@ -1,7 +1,8 @@
 # index(forSectionIdentifier:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an index for the section with the identifier you specify in the collection view.
 
@@ -18,9 +19,14 @@ Returns an index for the section with the identifier you specify in the collecti
 func index(forSectionIdentifier identifier: Any) -> Int
 ```
 
+```objc
+- (NSInteger) indexForSectionIdentifier:(SectionIdentifierType) identifier;
+```
+
 ## See Also
 
-- [func sectionIdentifier(for: Int) -> Any?](uicollectionviewdiffabledatasourcereference/sectionidentifier(for:).md)
+### Identifying sections
+- [func sectionIdentifier(for: Int) -> Any?](./sectionidentifier%28for%29.md)
   Returns an identifier for the section at the index you specify in the collection view.
 
 

@@ -1,7 +1,8 @@
 # Package.Dependency.Kind
 
 **Framework**: PackageDescription  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of dependency.
 
@@ -17,22 +18,23 @@ enum Kind
 ## Topics
 
 ### Enumeration Cases
-- [Package.Dependency.Kind.fileSystem(name:path:)](package/dependency/kind-swift.enum/filesystem(name:path:).md)
+- [Package.Dependency.Kind.fileSystem(name:path:)](./kind-swift.enum/filesystem%28name,path%29.md)
   A dependency located at the given path.
-- [case registry(id: String, requirement: Package.Dependency.RegistryRequirement)](package/dependency/kind-swift.enum/registry(id:requirement:).md)
+- [case registry(id: String, requirement: Package.Dependency.RegistryRequirement)](./kind-swift.enum/registry%28id,requirement%29.md)
   A dependency based on a registry requirement.
-- [case sourceControl(name: String?, location: String, requirement: Package.Dependency.SourceControlRequirement)](package/dependency/kind-swift.enum/sourcecontrol(name:location:requirement:).md)
+- [case sourceControl(name: String?, location: String, requirement: Package.Dependency.SourceControlRequirement)](./kind-swift.enum/sourcecontrol%28name,location,requirement%29.md)
   A dependency based on a source control requirement.
 
 ## See Also
 
-- [let kind: Package.Dependency.Kind](package/dependency/kind-swift.property.md)
+### Describing a Package Dependency
+- [let kind: Package.Dependency.Kind](./kind-swift.property.md)
   A description of the package dependency.
-- [struct Version](version.md)
+- [struct Version](../../version.md)
   A version according to the semantic versioning specification.
-- [var name: String?](package/dependency/name.md)
+- [var name: String?](./name.md)
   The name of the dependency.
-- [var url: String?](package/dependency/url.md)
+- [var url: String?](./url.md)
   The Git URL of the package dependency.
 
 

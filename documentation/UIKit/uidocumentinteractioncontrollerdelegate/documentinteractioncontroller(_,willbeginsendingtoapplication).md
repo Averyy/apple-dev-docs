@@ -1,7 +1,8 @@
 # documentInteractionController(_:willBeginSendingToApplication:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a document interaction controller’s document is about to be opened by the specified application.
 
@@ -17,9 +18,13 @@ Called when a document interaction controller’s document is about to be opened
 optional func documentInteractionController(_ controller: UIDocumentInteractionController, willBeginSendingToApplication application: String?)
 ```
 
+```objc
+- (void) documentInteractionController:(UIDocumentInteractionController *) controller willBeginSendingToApplication:(NSString *) application;
+```
+
 #### Discussion
 
-This method is called when the user chooses to open a document, which could occur from within a document preview. When a document is passed to another application, the contents of the document interaction controller’s [`annotation`](uidocumentinteractioncontroller/annotation.md) property are passed with it. You can use this method to configure the contents of that property or prepare your own application for handing off the document.
+This method is called when the user chooses to open a document, which could occur from within a document preview. When a document is passed to another application, the contents of the document interaction controller’s [`annotation`](../uidocumentinteractioncontroller/annotation.md) property are passed with it. You can use this method to configure the contents of that property or prepare your own application for handing off the document.
 
 ## Parameters
 
@@ -28,9 +33,10 @@ This method is called when the user chooses to open a document, which could occu
 
 ## See Also
 
-- [func documentInteractionController(UIDocumentInteractionController, didEndSendingToApplication: String?)](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:didendsendingtoapplication:).md)
+### Opening files
+- [func documentInteractionController(UIDocumentInteractionController, didEndSendingToApplication: String?)](./documentinteractioncontroller%28_,didendsendingtoapplication%29.md)
   Called when a document interaction controller’s document has been handed off to the specified application.
-- [func documentInteractionController(UIDocumentInteractionController, performAction: Selector?) -> Bool](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:performaction:).md)
+- [func documentInteractionController(UIDocumentInteractionController, performAction: Selector?) -> Bool](./documentinteractioncontroller%28_,performaction%29.md)
   Called when a document interaction controller wants its delegate to perform a specified action with the associated document.
 
 

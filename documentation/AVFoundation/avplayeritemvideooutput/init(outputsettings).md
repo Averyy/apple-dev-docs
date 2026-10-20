@@ -1,7 +1,8 @@
 # init(outputSettings:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a video output object initialized with the specified output settings.
 
@@ -19,19 +20,24 @@ Creates a video output object initialized with the specified output settings.
 init(outputSettings: [String : any Sendable]?)
 ```
 
+```objc
+- (instancetype) initWithOutputSettings:(NSDictionary<NSString *,id> *) outputSettings;
+```
+
 #### Discussion
 
-For uncompressed video output, start with `kCVPixelBuffer*` keys in `<CoreVideo/CVPixelBuffer.h>`. In addition to the keys in `CVPixelBuffer.h`, uncompressed video settings dictionaries may also provide a value for [`AVVideoAllowWideColorKey`](avvideoallowwidecolorkey.md).
+For uncompressed video output, start with `kCVPixelBuffer*` keys in `<CoreVideo/CVPixelBuffer.h>`. In addition to the keys in `CVPixelBuffer.h`, uncompressed video settings dictionaries may also provide a value for [`AVVideoAllowWideColorKey`](../avvideoallowwidecolorkey.md).
 
 ## Parameters
 
-- `outputSettings`: The client requirements for output [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) objects, expressed using the constants in `AVVideoSettings.h`.
+- `outputSettings`: The client requirements for output [CVPixelBuffer](../../CoreVideo/cvpixelbuffer-q2e.md) objects, expressed using the constants in `AVVideoSettings.h`.
 
 ## See Also
 
-- [init(pixelBufferAttributes: [String : any Sendable]?)](avplayeritemvideooutput/init(pixelbufferattributes:)-7n7v8.md)
+### Creating a video output
+- [init(pixelBufferAttributes: [String : any Sendable]?)](./init%28pixelbufferattributes%29-7n7v8.md)
   Creates a video output object using the specified pixel buffer attributes.
-- [convenience init(pixelBufferAttributes: CVPixelBufferAttributes)](avplayeritemvideooutput/init(pixelbufferattributes:)-18izh.md)
+- [convenience init(pixelBufferAttributes: CVPixelBufferAttributes)](./init%28pixelbufferattributes%29-18izh.md)
   Initializes an instance of AVPlayerItemVideoOutput, using the specified pixel buffer attributes, for video image output
 
 

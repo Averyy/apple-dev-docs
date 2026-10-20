@@ -1,7 +1,8 @@
 # CGImageSourceStatus
 
 **Framework**: Image I/O  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The set of status values for images and image sources.
 
@@ -20,43 +21,48 @@ The set of status values for images and image sources.
 enum CGImageSourceStatus
 ```
 
+```c
+enum CGImageSourceStatus : int32_t;
+```
+
 #### Overview
 
-The [`CGImageSourceGetStatus(_:)`](cgimagesourcegetstatus(_:).md) and [`CGImageSourceGetStatusAtIndex(_:_:)`](cgimagesourcegetstatusatindex(_:_:).md) functions return these values.
+The [`CGImageSourceGetStatus(_:)`](./cgimagesourcegetstatus%28_%29.md) and [`CGImageSourceGetStatusAtIndex(_:_:)`](./cgimagesourcegetstatusatindex%28_,_%29.md) functions return these values.
 
 ## Topics
 
 ### Status Values
-- [CGImageSourceStatus.statusUnexpectedEOF](cgimagesourcestatus/statusunexpectedeof.md)
+- [CGImageSourceStatus.statusUnexpectedEOF](./cgimagesourcestatus/statusunexpectedeof.md)
   The end of the file occurred unexpectedly.
-- [CGImageSourceStatus.statusInvalidData](cgimagesourcestatus/statusinvaliddata.md)
+- [CGImageSourceStatus.statusInvalidData](./cgimagesourcestatus/statusinvaliddata.md)
   The data is not valid.
-- [CGImageSourceStatus.statusUnknownType](cgimagesourcestatus/statusunknowntype.md)
+- [CGImageSourceStatus.statusUnknownType](./cgimagesourcestatus/statusunknowntype.md)
   The image is an unknown type.
-- [CGImageSourceStatus.statusReadingHeader](cgimagesourcestatus/statusreadingheader.md)
+- [CGImageSourceStatus.statusReadingHeader](./cgimagesourcestatus/statusreadingheader.md)
   The image source is reading the header.
-- [CGImageSourceStatus.statusIncomplete](cgimagesourcestatus/statusincomplete.md)
+- [CGImageSourceStatus.statusIncomplete](./cgimagesourcestatus/statusincomplete.md)
   The operation is not complete
-- [CGImageSourceStatus.statusComplete](cgimagesourcestatus/statuscomplete.md)
+- [CGImageSourceStatus.statusComplete](./cgimagesourcestatus/statuscomplete.md)
   The operation is complete.
 ### Initializers
-- [init?(rawValue: Int32)](cgimagesourcestatus/init(rawvalue:).md)
+- [init?(rawValue: Int32)](./cgimagesourcestatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func CGImageSourceGetStatus(CGImageSource) -> CGImageSourceStatus](cgimagesourcegetstatus(_:).md)
+### Getting the Image Status
+- [func CGImageSourceGetStatus(CGImageSource) -> CGImageSourceStatus](./cgimagesourcegetstatus%28_%29.md)
   Return the status of an image source.
-- [func CGImageSourceGetStatusAtIndex(CGImageSource, Int) -> CGImageSourceStatus](cgimagesourcegetstatusatindex(_:_:).md)
+- [func CGImageSourceGetStatusAtIndex(CGImageSource, Int) -> CGImageSourceStatus](./cgimagesourcegetstatusatindex%28_,_%29.md)
   Returns the current status of an image at the specified location in the image source.
 
 

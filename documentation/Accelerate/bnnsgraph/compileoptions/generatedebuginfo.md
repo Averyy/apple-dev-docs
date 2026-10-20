@@ -1,7 +1,8 @@
 # generateDebugInfo
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether the generated graph includes debug info.
 
@@ -11,7 +12,7 @@ A Boolean value that specifies whether the generated graph includes debug info.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ var generateDebugInfo: Bool { get set }
 
 ## See Also
 
-- [var useSingleThread: Bool](bnnsgraph/compileoptions/usesinglethread.md)
+### Specifying and querying compilation options
+- [var useSingleThread: Bool](./usesinglethread.md)
   A Boolean value that specifies whether the graph executes on one thread.
-- [var optimizationPreference: BNNSGraph.CompileOptions.OptimizationPreference](bnnsgraph/compileoptions/optimizationpreference-swift.property.md)
+- [var optimizationPreference: BNNSGraph.CompileOptions.OptimizationPreference](./optimizationpreference-swift.property.md)
   A constant that specifies the graph compilation-optimization preferences.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: WidgetKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Handle push tokens changing for widgets reloads and relevance refreshes.
@@ -22,7 +23,7 @@ func pushTokenDidChange(_ pushInfo: WidgetPushInfo, widgets: [WidgetInfo])
 
 ## Mentions
 
-- [Updating widgets with WidgetKit push notifications](updating-widgets-with-widgetkit-push-notifications.md)
+- [Updating widgets with WidgetKit push notifications](../updating-widgets-with-widgetkit-push-notifications.md)
 
 ## Parameters
 

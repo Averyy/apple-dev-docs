@@ -1,7 +1,8 @@
 # Start
 
 **Framework**: BlockStorageDeviceDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the current service and associates it with the specified provider.
 
@@ -10,31 +11,32 @@ Starts the current service and associates it with the specified provider.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t Start(IOService *provider);
 ```
 
 #### Return Value
 
-A value that indicates the service-starting result. Return [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) to inidicate success. To indicate a failure, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants) for error definitions.
+A value that indicates the service-starting result. Return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) to inidicate success. To indicate a failure, see [IOKit Constants](../../iokit/iokit_constants.md) for error definitions.
 
 #### Discussion
 
-After successfully matching the specified `provider` to your driver’s service, the system instantiates your service object and calls this method. Use this method to configure your driver’s data structures and setup the associated hardware. You might also store a reference to the `provider` object for later use. After configuring your driver, call the [`RegisterService`](https://developer.apple.com/documentation/driverkit/ioservice/registerservice) method to let the system know your service is running.
+After successfully matching the specified `provider` to your driver’s service, the system instantiates your service object and calls this method. Use this method to configure your driver’s data structures and setup the associated hardware. You might also store a reference to the `provider` object for later use. After configuring your driver, call the [`RegisterService`](../../DriverKit/ioservice/registerservice.md) method to let the system know your service is running.
 
 Always call `super` early in your implementation of this method.
 
 ## Parameters
 
-- `provider`: The provider object that matches the current service. Cast this object to the class you expect. The system retains this object for the duration of your `Start` method. The system continues to retain the object if your service starts successfully, releasing it only after calling your service’s [`Stop`](iouserblockstoragedevice/stop.md) method.
+- `provider`: The provider object that matches the current service. Cast this object to the class you expect. The system retains this object for the duration of your `Start` method. The system continues to retain the object if your service starts successfully, releasing it only after calling your service’s [`Stop`](./stop.md) method.
 
 ## See Also
 
-- [init](iouserblockstoragedevice/init.md)
+### Running the Service
+- [init](./init.md)
   Handles the basic initialization of the service.
-- [Stop](iouserblockstoragedevice/stop.md)
+- [Stop](./stop.md)
   Stops the service associated with the specified provider.
-- [free](iouserblockstoragedevice/free.md)
+- [free](./free.md)
   Performs any final cleanup for the service.
 
 

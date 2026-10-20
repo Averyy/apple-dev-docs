@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A reference to an object that conforms to the CloudKit sharing controller delegate protocol.
 
@@ -17,15 +18,20 @@ A reference to an object that conforms to the CloudKit sharing controller delega
 weak var delegate: (any UICloudSharingControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id<UICloudSharingControllerDelegate> delegate;
+```
+
 #### Discussion
 
-The [`UICloudSharingController`](uicloudsharingcontroller.md) instance can interact with your app by way of a delegate object (an object that conforms to the [`UICloudSharingControllerDelegate`](uicloudsharingcontrollerdelegate.md) protocol). If you provide a delegate object to the controller, the controller can notify your app of status changes to the [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) record that happen while the user interacts with the controller’s user interface. The controller can also ask the delegate object for app-specific settings, such as a title, for display in the controller’s user interface.
+The [`UICloudSharingController`](../uicloudsharingcontroller.md) instance can interact with your app by way of a delegate object (an object that conforms to the [`UICloudSharingControllerDelegate`](../uicloudsharingcontrollerdelegate.md) protocol). If you provide a delegate object to the controller, the controller can notify your app of status changes to the [`CKShare`](../../CloudKit/ckshare.md) record that happen while the user interacts with the controller’s user interface. The controller can also ask the delegate object for app-specific settings, such as a title, for display in the controller’s user interface.
 
 Although providing a delegate object is not required, doing so ensures that, at a minimum, a meaningful title is displayed in the controller’s user interface.
 
 ## See Also
 
-- [protocol UICloudSharingControllerDelegate](uicloudsharingcontrollerdelegate.md)
+### Customizing the cloud sharing controller behavior
+- [protocol UICloudSharingControllerDelegate](../uicloudsharingcontrollerdelegate.md)
   The protocol you implement to provide additional information to, and receive notifications from, the CloudKit sharing controller.
 
 

@@ -1,7 +1,8 @@
 # UnfoldSequence.Iterator
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that provides the sequence’s iteration interface and encapsulates its iteration state.
 
@@ -22,7 +23,8 @@ typealias Iterator = UnfoldSequence<Element, State>
 
 ## See Also
 
-- [typealias UnfoldFirstSequence](unfoldfirstsequence.md)
+### Type Aliases
+- [typealias UnfoldFirstSequence](../unfoldfirstsequence.md)
   The return type of `sequence(first:next:)`.
 
 

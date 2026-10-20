@@ -1,19 +1,20 @@
 # OnQueue
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the current thread matches the dispatch queue’s thread.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool OnQueue();
 ```
 
@@ -27,9 +28,10 @@ Use this method to determine if your code is running on the same thread as the c
 
 ## See Also
 
-- [GetName](iodispatchqueue/getname.md)
+### Getting Queue Information
+- [GetName](./getname.md)
   Returns the name of the queue as a C string.
-- [IODispatchQueueName](iodispatchqueuename.md)
+- [IODispatchQueueName](../iodispatchqueuename.md)
   A buffer for specifying the name of a dispatch queue.
 
 

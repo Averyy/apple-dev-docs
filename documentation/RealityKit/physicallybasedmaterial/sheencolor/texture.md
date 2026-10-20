@@ -1,7 +1,8 @@
 # texture
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional image texture for defining the property.
 
@@ -11,7 +12,7 @@ An optional image texture for defining the property.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ var texture: PhysicallyBasedMaterial.Texture?
 
 ## See Also
 
-- [static let textureSemantic: TextureResource.Semantic](physicallybasedmaterial/sheencolor/texturesemantic.md)
+### Accessing texture data
+- [static let textureSemantic: TextureResource.Semantic](./texturesemantic.md)
   The intended use of the object’s texture property.
 
 

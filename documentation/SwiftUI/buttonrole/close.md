@@ -1,7 +1,8 @@
 # close
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A role that indicates a button that closes the current operation.
 

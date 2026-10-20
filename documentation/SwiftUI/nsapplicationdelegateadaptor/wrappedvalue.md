@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying delegate.
 
@@ -17,7 +18,8 @@ The underlying delegate.
 
 ## See Also
 
-- [var projectedValue: ObservedObject<DelegateType>.Wrapper](nsapplicationdelegateadaptor/projectedvalue.md)
+### Getting the delegate adaptor
+- [var projectedValue: ObservedObject<DelegateType>.Wrapper](./projectedvalue.md)
   A projection of the observed object that provides bindings to its properties.
 
 

@@ -1,7 +1,8 @@
 # BEScrollViewScrollUpdate.Phase.ended
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A scroll phase that indicates the scroll gesture has ended.
 
@@ -15,6 +16,10 @@ A scroll phase that indicates the scroll gesture has ended.
 
 ```swift
 case ended
+```
+
+```c
+BEScrollViewScrollUpdatePhaseEnded
 ```
 
 

@@ -1,7 +1,8 @@
 # rotationY
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Rotation Y is extracted.
 
@@ -21,9 +22,10 @@ static let rotationY: SampledAnimation<JointTransforms>.SkeletalAnimationOperati
 
 ## See Also
 
-- [static let rotationX: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](sampledanimation/skeletalanimationoperation/rootmotionoptions/rotationx.md)
+### Extracting rotation
+- [static let rotationX: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](./rotationx.md)
   Rotation X is extracted.
-- [static let rotationZ: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](sampledanimation/skeletalanimationoperation/rootmotionoptions/rotationz.md)
+- [static let rotationZ: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](./rotationz.md)
   Rotation Z is extracted.
 
 

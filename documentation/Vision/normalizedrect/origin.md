@@ -1,7 +1,8 @@
 # origin
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The lower left-hand corner of the rectangle.
 
@@ -22,11 +23,12 @@ var origin: CGPoint { get }
 
 ## See Also
 
-- [let cgRect: CGRect](normalizedrect/cgrect.md)
+### Inspecting a normalized rectangle
+- [let cgRect: CGRect](./cgrect.md)
   The normalized rectangle as a Core Graphics rectangle.
-- [var width: CGFloat](normalizedrect/width.md)
+- [var width: CGFloat](./width.md)
   The width of the rectangle.
-- [var height: CGFloat](normalizedrect/height.md)
+- [var height: CGFloat](./height.md)
   The height of the rectangle.
 
 

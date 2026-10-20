@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: PushKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object that receives notifications coming from the push registry object.
 
@@ -19,15 +20,20 @@ The delegate object that receives notifications coming from the push registry ob
 weak var delegate: (any PKPushRegistryDelegate)? { get set }
 ```
 
+```objc
+@property (weak, readwrite, nullable) id<PKPushRegistryDelegate> delegate;
+```
+
 #### Discussion
 
-You must assign a valid object to this property before modifying the [`desiredPushTypes`](pkpushregistry/desiredpushtypes.md) property. A valid delegate object is required to receive push tokens and payload data from incoming pushes.
+You must assign a valid object to this property before modifying the [`desiredPushTypes`](./desiredpushtypes.md) property. A valid delegate object is required to receive push tokens and payload data from incoming pushes.
 
-For more information about the methods of the `PKPushRegistryDelegate` protocol, see [`PKPushRegistryDelegate`](pkpushregistrydelegate.md).
+For more information about the methods of the `PKPushRegistryDelegate` protocol, see [`PKPushRegistryDelegate`](../pkpushregistrydelegate.md).
 
 ## See Also
 
-- [protocol PKPushRegistryDelegate](pkpushregistrydelegate.md)
+### Receiving the Notification Data
+- [protocol PKPushRegistryDelegate](../pkpushregistrydelegate.md)
   The methods that you use to handle incoming PushKit notifications and registration events.
 
 

@@ -1,14 +1,15 @@
 # StandardUSB::Descriptor
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 typedef struct StandardUSB::Descriptor {
     ...
 } StandardUSB::Descriptor;
@@ -17,8 +18,8 @@ typedef struct StandardUSB::Descriptor {
 ## Topics
 
 ### Instance Properties
-- [bDescriptorType](standardusb_descriptor/3794056-bdescriptortype.md)
-- [bLength](standardusb_descriptor/3794057-blength.md)
+- [bDescriptorType](./standardusb_descriptor/api-3794056-bdescriptortype.md)
+- [bLength](./standardusb_descriptor/api-3794057-blength.md)
 
 
 ---

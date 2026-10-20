@@ -1,7 +1,8 @@
 # readableDraggedTypes
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array containing dragged file types that are readable.
 
@@ -14,9 +15,13 @@ An array containing dragged file types that are readable.
 class var readableDraggedTypes: [String] { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSArray<NSString *> * readableDraggedTypes;
+```
+
 #### Discussion
 
-A view must register what types it accepts via [`registerForDraggedTypes(_:)`](nsview/registerfordraggedtypes(_:).md).  Use that class method to get the file promise drag types that [`NSFilePromiseReceiver`](nsfilepromisereceiver.md) can accept, in order to register a view to accept promised files. [`NSFilePromiseReceiver`](nsfilepromisereceiver.md) can accept file promises from both the item-based [`NSFilePromiseProvider`](nsfilepromiseprovider.md) and the non-item based API. If you don’t register all these drag types, you might not be notified about some file promise drags. Register using the following code:
+A view must register what types it accepts via [`registerForDraggedTypes(_:)`](../nsview/registerfordraggedtypes%28_%29.md).  Use that class method to get the file promise drag types that [`NSFilePromiseReceiver`](../nsfilepromisereceiver.md) can accept, in order to register a view to accept promised files. [`NSFilePromiseReceiver`](../nsfilepromisereceiver.md) can accept file promises from both the item-based [`NSFilePromiseProvider`](../nsfilepromiseprovider.md) and the non-item based API. If you don’t register all these drag types, you might not be notified about some file promise drags. Register using the following code:
 
 **Swift**:
 

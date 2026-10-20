@@ -1,7 +1,8 @@
 # NSViewRepresentable.LayoutOptions
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 13.0+

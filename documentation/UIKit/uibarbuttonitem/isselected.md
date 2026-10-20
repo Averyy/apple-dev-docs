@@ -1,7 +1,8 @@
 # isSelected
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the button is in a selected state.
 
@@ -17,19 +18,24 @@ A Boolean value that indicates whether the button is in a selected state.
 var isSelected: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite, getter=isSelected) BOOL selected;
+```
+
 ## See Also
 
-- [var style: UIBarButtonItem.Style](uibarbuttonitem/style-swift.property.md)
+### Customizing item appearance
+- [var style: UIBarButtonItem.Style](./style-swift.property.md)
   The style of the item.
-- [UIBarButtonItem.Style](uibarbuttonitem/style-swift.enum.md)
+- [UIBarButtonItem.Style](./style-swift.enum.md)
   Constants that specify the style of an item.
-- [var tintColor: UIColor?](uibarbuttonitem/tintcolor.md)
+- [var tintColor: UIColor?](./tintcolor.md)
   The tint color to apply to the button item.
-- [var isHidden: Bool](uibarbuttonitem/ishidden.md)
+- [var isHidden: Bool](./ishidden.md)
   A Boolean that determines the visibility of the item.
-- [var width: CGFloat](uibarbuttonitem/width.md)
+- [var width: CGFloat](./width.md)
   The width of the item.
-- [var possibleTitles: Set<String>?](uibarbuttonitem/possibletitles.md)
+- [var possibleTitles: Set<String>?](./possibletitles.md)
   The set of possible titles to display on the bar button.
 
 

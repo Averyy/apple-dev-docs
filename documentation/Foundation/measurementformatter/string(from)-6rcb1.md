@@ -1,7 +1,8 @@
 # string(from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and returns a localized string representation of the provided measurement.
 
@@ -30,9 +31,10 @@ A user-readable string that represents the measurement.
 
 ## See Also
 
-- [func string(from: Measurement<Unit>) -> String](measurementformatter/string(from:)-wt9y.md)
+### Converting Measurements
+- [func string(from: Measurement<Unit>) -> String](./string%28from%29-wt9y.md)
   Creates and returns a localized string representation of the provided measurement.
-- [func string(from: Unit) -> String](measurementformatter/string(from:)-4hwjz.md)
+- [func string(from: Unit) -> String](./string%28from%29-4hwjz.md)
   Creates and returns a localized string representation of the provided unit of measure.
 
 

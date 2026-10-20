@@ -1,21 +1,28 @@
 # callStackTree
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app call stack associated with the CPU exception.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 12.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 27.2
+- iPadOS 14.0+ - Deprecated in 27.2
+- Mac Catalyst 14.0+ - Deprecated in 27.0
+- macOS 12.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`callStackTree`](../cpuexceptiondiagnostic/callstacktree.md) instead.
 
 ## Declaration
 
 ```swift
 var callStackTree: MXCallStackTree { get }
+```
+
+```objc
+@property (strong, readonly, nonnull) MXCallStackTree * callStackTree;
 ```
 
 

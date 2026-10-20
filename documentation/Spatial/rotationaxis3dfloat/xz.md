@@ -1,7 +1,8 @@
 # xz
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The xz-axis, expressed in unit coordinates.
 

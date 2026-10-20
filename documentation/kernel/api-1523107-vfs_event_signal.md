@@ -1,7 +1,8 @@
 # vfs_event_signal
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Post a kqueue-style event on a filesystem (EVFILT_FS).
 
@@ -10,11 +11,11 @@ Post a kqueue-style event on a filesystem (EVFILT_FS).
 
 ## Declaration
 
-```swift
+```c
 void vfs_event_signal(fsid_t *fsid, u_int32_t event, intptr_t data);
 ```
 
-#### Return_value
+#### Return Value
 
 void.
 

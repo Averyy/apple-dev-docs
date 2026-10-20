@@ -1,6 +1,7 @@
 # Evaluating an app’s video color using video test equipment
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Article
 
 Output test pattern files to a vectorscope or waveform analyzer to review the video signals.
 
@@ -11,9 +12,9 @@ AVFoundation automatically applies color management to video during playback. Ve
 - Output the test pattern files to a vectorscope or waveform analyzer to analyze the video signals.
 - Verify the correct colorspace conversion matrices on a vectorscope, and verify the gamma, quantization errors, and range expansion or compression on a waveform monitor.
 
-![An illustration showing two test pattern analyses. At the top is an analysis using a vectorscope, and at the bottom is an analysis using a waveform analyzer.](/images/com.apple.avfoundation/media-3733686@2x.png)
+![An illustration showing two test pattern analyses. At the top is an analysis using a vectorscope, and at the bottom is an analysis using a waveform analyzer.](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-3733686@2x.png)
 
-##### Analyze Your Video Signal Using a Vectorscope
+##### Analyze your video signal using a vectorscope
 
 A vectorscope plots the two chroma components of a video signal and measures their color relationship. Vectorscopes often include printed boxes indicating standard colors. Ideally, a correctly reproduced color bar signal should “hit” the vectorscope boxes.
 
@@ -23,15 +24,15 @@ Output QuickTime test patterns to a vectorscope to analyze the video signals. Vi
 
 Typically, vectorscopes contain a set of six boxes (yellow, cyan, green, magenta, red, and blue) representing 75% color bars, and another set for 100% color bars. These boxes correspond to sections C and D of the test pattern file `QuickTime_Test_Pattern_HD.mov,` shown below:
 
-![A QuickTime test pattern HD movie file with color and grayscale patterns. The top of the movie contains dark levels, the middle has multi-colored bars and the bottom has white light levels.](/images/com.apple.avfoundation/media-3712975@2x.png)
+![A QuickTime test pattern HD movie file with color and grayscale patterns. The top of the movie contains dark levels, the middle has multi-colored bars and the bottom has white light levels.](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-3712975@2x.png)
 
 Consider the color correct if the representation’s color vector “hits” inside the corresponding box during testing.
 
 These boxes typically represent only HD or only SD color bars, not content converted from one standard to the other. For example, Rec. 709 (HD) 75% red is different from Rec. 601 (SD) 75% red, and a converted signal typically wouldn’t either hit HD or SD targets.
 
-To learn how to use test pattern files to confirm the proper color management of your app’s video, see [`Open test patterns and verify color characteristics`](evaluating-video-using-quicktime-test-pattern-files#Open-test-patterns-and-verify-color-characteristics.md).
+To learn how to use test pattern files to confirm the proper color management of your app’s video, see [Open test patterns and verify color characteristics](./evaluating-video-using-quicktime-test-pattern-files.md#Open-test-patterns-and-verify-color-characteristics).
 
-##### Analyze Your Video Signal Using a Waveform Monitor
+##### Analyze your video signal using a waveform monitor
 
 A waveform monitor displays the composite of the amplitude of all lines in a given frame of video over time. Among other things, this instrument helps ensure the use of all values with no truncated (crushed) range of blacks or whites.
 
@@ -46,9 +47,10 @@ The following are elements of the QuickTime Test Pattern movie file to examine o
 
 ## See Also
 
-- [Evaluating video using QuickTime test pattern files](evaluating-video-using-quicktime-test-pattern-files.md)
+### Video evaluation
+- [Evaluating video using QuickTime test pattern files](./evaluating-video-using-quicktime-test-pattern-files.md)
   Check color reproduction of your app or workflow by using test pattern files.
-- [Evaluating an app’s video color using light-measurement Instruments](evaluating-an-app-s-video-color-using-light-measurement-instruments.md)
+- [Evaluating an app’s video color using light-measurement Instruments](./evaluating-an-app-s-video-color-using-light-measurement-instruments.md)
   Measure front-of-screen luminance by using test pattern files with a spectroradiometer or colorimeter.
 
 

@@ -1,7 +1,8 @@
 # midiNote
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The MIDI note number.
 
@@ -19,19 +20,24 @@ The MIDI note number.
 var midiNote: Float { get set }
 ```
 
+```objc
+@property (readwrite) float midiNote;
+```
+
 #### Discussion
 
-If the instrument within the [`AVMusicTrack`](avmusictrack.md) destination audio unit supports fractional values, you use this to generate arbitrary tunings. The valid range of values depends on the destination audio unit, and is usually between `0.0` and `127.0`.
+If the instrument within the [`AVMusicTrack`](../avmusictrack.md) destination audio unit supports fractional values, you use this to generate arbitrary tunings. The valid range of values depends on the destination audio unit, and is usually between `0.0` and `127.0`.
 
 ## See Also
 
-- [var velocity: Float](avextendednoteonevent/velocity.md)
+### Configuring a note-on event
+- [var velocity: Float](./velocity.md)
   The MDI velocity.
-- [var instrumentID: UInt32](avextendednoteonevent/instrumentid.md)
+- [var instrumentID: UInt32](./instrumentid.md)
   The instrument identifier.
-- [var groupID: UInt32](avextendednoteonevent/groupid.md)
+- [var groupID: UInt32](./groupid.md)
   The audio unit channel that handles the event.
-- [var duration: AVMusicTimeStamp](avextendednoteonevent/duration.md)
+- [var duration: AVMusicTimeStamp](./duration.md)
   The duration of the event, in beats.
 
 

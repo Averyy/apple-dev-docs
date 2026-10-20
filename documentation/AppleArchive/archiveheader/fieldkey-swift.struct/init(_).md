@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Apple Archive  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new field key from the key you specify.
 
@@ -11,7 +12,7 @@ Creates a new field key from the key you specify.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # isRequired
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the assessment requires this executable. Defaults to `NO`.
 
@@ -15,11 +16,15 @@ Whether the assessment requires this executable. Defaults to `NO`.
 var isRequired: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, getter=isRequired) BOOL required;
+```
+
 #### Discussion
 
-Governs what happens when the executable cannot be enforced — for example, when signature validation fails under [`allowsOnlyParticipantsToRun`](aeassessmentconfiguration/allowsonlyparticipantstorun.md). A non-required participant is silently dropped; a required one prevents the session from beginning.
+Governs what happens when the executable cannot be enforced — for example, when signature validation fails under [`allowsOnlyParticipantsToRun`](../aeassessmentconfiguration/allowsonlyparticipantstorun.md). A non-required participant is silently dropped; a required one prevents the session from beginning.
 
-> **Note**: [`requiresSignatureValidation`](aeassessmentbinaryexecutable/requiressignaturevalidation.md).
+> **See Also**: [`requiresSignatureValidation`](../aeassessmentbinaryexecutable/requiressignaturevalidation.md).
 
 
 ---

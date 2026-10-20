@@ -1,7 +1,8 @@
 # GCPoint2Zero
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The origin for a two dimensional point.
 
@@ -19,17 +20,22 @@ The origin for a two dimensional point.
 let GCPoint2Zero: GCPoint2
 ```
 
+```c
+extern const GCPoint2 GCPoint2Zero;
+```
+
 #### Discussion
 
 This constant represents the `(0, 0)` origin.
 
 ## See Also
 
-- [init()](gcpoint2/init.md)
+### Creating a point
+- [init()](./gcpoint2/init%28%29.md)
   Creates a two dimensional point with coordinates `(0, 0)`.
-- [init(x: Float, y: Float)](gcpoint2/init(x:y:).md)
+- [init(x: Float, y: Float)](./gcpoint2/init%28x,y%29.md)
   Creates a two dimensional point with the given coordinates.
-- [func GCPoint2Make(Float, Float) -> GCPoint2](gcpoint2make(_:_:).md)
+- [func GCPoint2Make(Float, Float) -> GCPoint2](./gcpoint2make%28_,_%29.md)
   Returns a point with the specified coordinates in a two-dimensional coordinate system.
 
 

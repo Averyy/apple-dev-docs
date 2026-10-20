@@ -1,17 +1,22 @@
 # IOBluetoothDevicePair
 
 **Framework**: IOBluetooth  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An instance of IOBluetoothDevicePair represents a pairing attempt to a remote Bluetooth device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class IOBluetoothDevicePair
+```
+
+```objc
+@interface IOBluetoothDevicePair : NSObject
 ```
 
 #### Overview
@@ -25,64 +30,65 @@ Once started, the pairing can be stopped. This will set the delegate to nil and 
 ## Topics
 
 ### Initializers
-- [convenience init!(device: IOBluetoothDevice!)](iobluetoothdevicepair/init(device:).md)
+- [convenience init!(device: IOBluetoothDevice!)](./iobluetoothdevicepair/init%28device%29.md)
   Creates an autorelease IOBluetoothDevicePair object with a device as the pairing target.
 ### Instance Properties
-- [var delegate: AnyObject!](iobluetoothdevicepair/delegate.md)
+- [var delegate: AnyObject!](./iobluetoothdevicepair/delegate.md)
 ### Instance Methods
-- [func device() -> IOBluetoothDevice!](iobluetoothdevicepair/device.md)
+- [func device() -> IOBluetoothDevice!](./iobluetoothdevicepair/device%28%29.md)
   Get the IOBluetoothDevice being used by the object.
-- [func replyPINCode(Int, pinCode: UnsafeMutablePointer<BluetoothPINCode>!)](iobluetoothdevicepair/replypincode(_:pincode:).md)
+- [func replyPINCode(Int, pinCode: UnsafeMutablePointer<BluetoothPINCode>!)](./iobluetoothdevicepair/replypincode%28_,pincode%29.md)
   This is the required reply to the devicePairingPINCodeRequest delegate message. Set the PIN code to use during pairing if required.
-- [func replyUserConfirmation(Bool)](iobluetoothdevicepair/replyuserconfirmation(_:).md)
+- [func replyUserConfirmation(Bool)](./iobluetoothdevicepair/replyuserconfirmation%28_%29.md)
   This is the required reply to the devicePairingUserConfirmationRequest delegate message.
-- [func setDevice(IOBluetoothDevice!)](iobluetoothdevicepair/setdevice(_:).md)
+- [func setDevice(IOBluetoothDevice!)](./iobluetoothdevicepair/setdevice%28_%29.md)
   Set the device object to pair with. It is retained by the object.
-- [func start() -> IOReturn](iobluetoothdevicepair/start.md)
+- [func start() -> IOReturn](./iobluetoothdevicepair/start%28%29.md)
   Kicks off the pairing with the device.
-- [func stop()](iobluetoothdevicepair/stop.md)
+- [func stop()](./iobluetoothdevicepair/stop%28%29.md)
   Stops the current pairing. Removes the delegate and disconnects if device was connected.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CBCentralManagerDelegate](../corebluetooth/cbcentralmanagerdelegate.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CBCentralManagerDelegate](../CoreBluetooth/cbcentralmanagerdelegate.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class IOBluetoothDevice](iobluetoothdevice.md)
+### Classes
+- [class IOBluetoothDevice](./iobluetoothdevice.md)
   An instance of IOBluetoothDevice represents a single remote Bluetooth device.
-- [class IOBluetoothDeviceInquiry](iobluetoothdeviceinquiry.md)
+- [class IOBluetoothDeviceInquiry](./iobluetoothdeviceinquiry.md)
   Object representing a device inquiry that finds Bluetooth devices in-range of the computer, and (optionally) retrieves name information for them.
-- [class IOBluetoothDeviceRef](iobluetoothdeviceref.md)
+- [class IOBluetoothDeviceRef](./iobluetoothdeviceref.md)
   An object that represents a Bluetooth I/O device.
-- [class IOBluetoothHandsFree](iobluetoothhandsfree.md)
+- [class IOBluetoothHandsFree](./iobluetoothhandsfree.md)
   Hands free profile class.
-- [class IOBluetoothHandsFreeAudioGateway](iobluetoothhandsfreeaudiogateway.md)
+- [class IOBluetoothHandsFreeAudioGateway](./iobluetoothhandsfreeaudiogateway.md)
   An object that sends data to a connected Bluetooth hands-free phone or headset and processes commands from it.
-- [class IOBluetoothHandsFreeDevice](iobluetoothhandsfreedevice.md)
+- [class IOBluetoothHandsFreeDevice](./iobluetoothhandsfreedevice.md)
   An object you use to manage phone calls on a connected Bluetooth hands-free phone or headset.
-- [class IOBluetoothHostController](iobluetoothhostcontroller.md)
+- [class IOBluetoothHostController](./iobluetoothhostcontroller.md)
   This class is a representation of a Bluetooth Host Controller Interface that is present on the local computer (either plugged in externally or available internally).
-- [class IOBluetoothL2CAPChannel](iobluetoothl2capchannel.md)
+- [class IOBluetoothL2CAPChannel](./iobluetoothl2capchannel.md)
   An instance of IOBluetoothL2CAPChannel represents a single open L2CAP channel.
-- [class IOBluetoothL2CAPChannelRef](iobluetoothl2capchannelref.md)
-- [class IOBluetoothOBEXSession](iobluetoothobexsession.md)
+- [class IOBluetoothL2CAPChannelRef](./iobluetoothl2capchannelref.md)
+- [class IOBluetoothOBEXSession](./iobluetoothobexsession.md)
   An OBEX Session with a Bluetooth RFCOMM channel as the transport.
-- [class IOBluetoothObject](iobluetoothobject.md)
-- [class IOBluetoothObjectRef](iobluetoothobjectref.md)
-- [class IOBluetoothRFCOMMChannel](iobluetoothrfcommchannel.md)
+- [class IOBluetoothObject](./iobluetoothobject.md)
+- [class IOBluetoothObjectRef](./iobluetoothobjectref.md)
+- [class IOBluetoothRFCOMMChannel](./iobluetoothrfcommchannel.md)
   An instance of this class represents an RFCOMM channel as defined by the Bluetooth SDP spec..
-- [class IOBluetoothRFCOMMChannelRef](iobluetoothrfcommchannelref.md)
-- [class IOBluetoothSDPDataElement](iobluetoothsdpdataelement.md)
+- [class IOBluetoothRFCOMMChannelRef](./iobluetoothrfcommchannelref.md)
+- [class IOBluetoothSDPDataElement](./iobluetoothsdpdataelement.md)
   An instance of this class represents a single SDP data element as defined by the Bluetooth SDP spec.
 
 

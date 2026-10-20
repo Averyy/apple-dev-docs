@@ -1,7 +1,8 @@
 # type
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The summary item’s type that indicates whether the amount is final.
 
@@ -19,17 +20,22 @@ The summary item’s type that indicates whether the amount is final.
 var type: PKPaymentSummaryItemType { get set }
 ```
 
+```objc
+@property (nonatomic, assign) PKPaymentSummaryItemType type;
+```
+
 #### Discussion
 
-This property defaults to a [`PKPaymentSummaryItemType.final`](pkpaymentsummaryitemtype/final.md) type. See [`PKPaymentSummaryItemType`](pkpaymentsummaryitemtype.md) for other values.
+This property defaults to a [`PKPaymentSummaryItemType.final`](../pkpaymentsummaryitemtype/final.md) type. See [`PKPaymentSummaryItemType`](../pkpaymentsummaryitemtype.md) for other values.
 
 ## See Also
 
-- [var label: String](pkpaymentsummaryitem/label.md)
+### Describing summary items
+- [var label: String](./label.md)
   A short, localized description of the item.
-- [var amount: NSDecimalNumber](pkpaymentsummaryitem/amount.md)
+- [var amount: NSDecimalNumber](./amount.md)
   The summary item’s amount.
-- [enum PKPaymentSummaryItemType](pkpaymentsummaryitemtype.md)
+- [enum PKPaymentSummaryItemType](../pkpaymentsummaryitemtype.md)
   Constants that describe the type of the payment summary item, such as final or pending.
 
 

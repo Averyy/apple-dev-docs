@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A scroll edge effect the system applies automatically when pinned content overlaps scrolling content.
 
@@ -22,9 +23,10 @@ static var automatic: ScrollEdgeEffectStyle { get }
 
 ## See Also
 
-- [static var hard: ScrollEdgeEffectStyle](scrolledgeeffectstyle/hard.md)
+### Creating a scroll edge effect style
+- [static var hard: ScrollEdgeEffectStyle](./hard.md)
   A scroll edge effect that provides a linear, nearly opaque boundary between pinned controls and scrolling content.
-- [static var soft: ScrollEdgeEffectStyle](scrolledgeeffectstyle/soft.md)
+- [static var soft: ScrollEdgeEffectStyle](./soft.md)
   A scroll edge effect that provides a subtle, blurred boundary between pinned controls and scrolling content.
 
 

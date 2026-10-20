@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the filled column suitable for debugging.
 
@@ -20,11 +21,14 @@ A text representation of the filled column suitable for debugging.
 var debugDescription: String { get }
 ```
 
+Available when `Base` conforms to `OptionalColumnProtocol`.
+
 ## See Also
 
-- [var description: String](filledcolumn/description.md)
+### Describing a Column
+- [var description: String](./description.md)
   A mirror that reflects the filled column.
-- [func description(options: FormattingOptions) -> String](filledcolumn/description(options:).md)
+- [func description(options: FormattingOptions) -> String](./description%28options%29.md)
   Generates a string description of the filled column.
 
 

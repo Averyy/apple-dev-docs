@@ -1,7 +1,8 @@
 # tIOUSBDeviceCapabilityType
 
 **Framework**: USBDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants for the device capability types.
 
@@ -10,55 +11,56 @@ Constants for the device capability types.
 
 ## Declaration
 
-```swift
+```c
 enum tIOUSBDeviceCapabilityType : unsigned int;
 ```
 
 ## Topics
 
 ### Getting the Capability Types
-- [kIOUSBDeviceCapabilityTypeBatteryInfo](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypebatteryinfo.md)
-- [kIOUSBDeviceCapabilityTypeBillboard](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypebillboard.md)
-- [kIOUSBDeviceCapabilityTypeBillboardAltMode](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypebillboardaltmode.md)
-- [kIOUSBDeviceCapabilityTypeContainerID](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypecontainerid.md)
-- [kIOUSBDeviceCapabilityTypePdConsumerPort](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypepdconsumerport.md)
-- [kIOUSBDeviceCapabilityTypePdProviderPort](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypepdproviderport.md)
-- [kIOUSBDeviceCapabilityTypePlatform](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypeplatform.md)
-- [kIOUSBDeviceCapabilityTypePowerDelivery](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypepowerdelivery.md)
-- [kIOUSBDeviceCapabilityTypePrecisionMeasurement](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypeprecisionmeasurement.md)
-- [kIOUSBDeviceCapabilityTypeSuperSpeed](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypesuperspeed.md)
-- [kIOUSBDeviceCapabilityTypeSuperSpeedPlus](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypesuperspeedplus.md)
-- [kIOUSBDeviceCapabilityTypeUSB20Extension](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypeusb20extension.md)
-- [kIOUSBDeviceCapabilityTypeWireless](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypewireless.md)
-- [kIOUSBDeviceCapabilityTypeWirelessExt](tiousbdevicecapabilitytype/kiousbdevicecapabilitytypewirelessext.md)
+- [kIOUSBDeviceCapabilityTypeBatteryInfo](./tiousbdevicecapabilitytype/kiousbdevicecapabilitytypebatteryinfo.md)
+- [kIOUSBDeviceCapabilityTypeBillboard](./tiousbdevicecapabilitytype/kiousbdevicecapabilitytypebillboard.md)
+- [kIOUSBDeviceCapabilityTypeBillboardAltMode](./tiousbdevicecapabilitytype/kiousbdevicecapabilitytypebillboardaltmode.md)
+- [kIOUSBDeviceCapabilityTypeContainerID](./tiousbdevicecapabilitytype/kiousbdevicecapabilitytypecontainerid.md)
+- [kIOUSBDeviceCapabilityTypePdConsumerPort](./tiousbdevicecapabilitytype/kiousbdevicecapabilitytypepdconsumerport.md)
+- [kIOUSBDeviceCapabilityTypePdProviderPort](./tiousbdevicecapabilitytype/kiousbdevicecapabilitytypepdproviderport.md)
+- [kIOUSBDeviceCapabilityTypePlatform](./tiousbdevicecapabilitytype/kiousbdevicecapabilitytypeplatform.md)
+- [kIOUSBDeviceCapabilityTypePowerDelivery](./tiousbdevicecapabilitytype/kiousbdevicecapabilitytypepowerdelivery.md)
+- [kIOUSBDeviceCapabilityTypePrecisionMeasurement](./tiousbdevicecapabilitytype/kiousbdevicecapabilitytypeprecisionmeasurement.md)
+- [kIOUSBDeviceCapabilityTypeSuperSpeed](./tiousbdevicecapabilitytype/kiousbdevicecapabilitytypesuperspeed.md)
+- [kIOUSBDeviceCapabilityTypeSuperSpeedPlus](./tiousbdevicecapabilitytype/kiousbdevicecapabilitytypesuperspeedplus.md)
+- [kIOUSBDeviceCapabilityTypeUSB20Extension](./tiousbdevicecapabilitytype/kiousbdevicecapabilitytypeusb20extension.md)
+- [kIOUSBDeviceCapabilityTypeWireless](./tiousbdevicecapabilitytype/kiousbdevicecapabilitytypewireless.md)
+- [kIOUSBDeviceCapabilityTypeWirelessExt](./tiousbdevicecapabilitytype/kiousbdevicecapabilitytypewirelessext.md)
 
 ## See Also
 
-- [IOUSBBOSDescriptor](iousbbosdescriptor.md)
+### Capability Descriptors
+- [IOUSBBOSDescriptor](./iousbbosdescriptor.md)
   The structure for storing a binary object store (BOS) descriptor.
-- [IOUSBDeviceCapabilityDescriptorHeader](iousbdevicecapabilitydescriptorheader.md)
+- [IOUSBDeviceCapabilityDescriptorHeader](./iousbdevicecapabilitydescriptorheader.md)
   The device capability descriptor header.
-- [IOUSBDeviceCapabilityBillboard](iousbdevicecapabilitybillboard.md)
+- [IOUSBDeviceCapabilityBillboard](./iousbdevicecapabilitybillboard.md)
   The structure for the billboard device capability.
-- [IOUSBDeviceCapabilityBillboardAltConfig](iousbdevicecapabilitybillboardaltconfig.md)
+- [IOUSBDeviceCapabilityBillboardAltConfig](./iousbdevicecapabilitybillboardaltconfig.md)
   The structure for the billboard alternative configuration device capability.
-- [IOUSBDeviceCapabilityBillboardAltConfigCompatibility](iousbdevicecapabilitybillboardaltconfigcompatibility.md)
+- [IOUSBDeviceCapabilityBillboardAltConfigCompatibility](./iousbdevicecapabilitybillboardaltconfigcompatibility.md)
   The structure for the billboard alternative configuration compatibility device capability.
-- [IOUSBDeviceCapabilityBillboardAltMode](iousbdevicecapabilitybillboardaltmode.md)
+- [IOUSBDeviceCapabilityBillboardAltMode](./iousbdevicecapabilitybillboardaltmode.md)
   The structure for the billboard alternative mode device capability.
-- [IOUSBDeviceCapabilityContainerID](iousbdevicecapabilitycontainerid.md)
+- [IOUSBDeviceCapabilityContainerID](./iousbdevicecapabilitycontainerid.md)
   The structure for the container ID device capability.
-- [IOUSBDeviceCapabilitySuperSpeedUSB](iousbdevicecapabilitysuperspeedusb.md)
+- [IOUSBDeviceCapabilitySuperSpeedUSB](./iousbdevicecapabilitysuperspeedusb.md)
   The structure for the super-speed USB device capability.
-- [IOUSBDeviceCapabilitySuperSpeedPlusUSB](iousbdevicecapabilitysuperspeedplususb.md)
+- [IOUSBDeviceCapabilitySuperSpeedPlusUSB](./iousbdevicecapabilitysuperspeedplususb.md)
   The structure for the super-speed plus USB device capability.
-- [IOUSBDeviceCapabilityUSB2Extension](iousbdevicecapabilityusb2extension.md)
+- [IOUSBDeviceCapabilityUSB2Extension](./iousbdevicecapabilityusb2extension.md)
   The structure for the USB 2 extension device capability.
-- [IOUSBPlatformCapabilityDescriptor](iousbplatformcapabilitydescriptor.md)
+- [IOUSBPlatformCapabilityDescriptor](./iousbplatformcapabilitydescriptor.md)
   The structure for the platform capability descriptor.
-- [SuperSpeed Device Capabilities](superspeed_device_capabilities-enum.md)
+- [SuperSpeed Device Capabilities](./superspeed_device_capabilities-enum.md)
   Constants for configuring super-speed device capabilities.
-- [SuperSpeedPlus Device Capabilities](superspeedplus_device_capabiliti-enum.md)
+- [SuperSpeedPlus Device Capabilities](./superspeedplus_device_capabiliti-enum.md)
   Constants for configuring super-speed plus device capabilities.
 
 

@@ -1,7 +1,8 @@
 # minimal
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Windowing controls will occupy as little of the scene’s space as possible
 
@@ -14,6 +15,10 @@ Windowing controls will occupy as little of the scene’s space as possible
 
 ```swift
 class var minimal: UIWindowScene.WindowingControlStyle { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) UISceneWindowingControlStyle * minimalStyle;
 ```
 
 

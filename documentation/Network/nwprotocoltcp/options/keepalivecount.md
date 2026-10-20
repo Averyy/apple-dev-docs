@@ -1,7 +1,8 @@
 # keepaliveCount
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of keepalive probes that TCP sends before terminating the connection.
 
@@ -22,11 +23,12 @@ var keepaliveCount: Int { get set }
 
 ## See Also
 
-- [var enableKeepalive: Bool](nwprotocoltcp/options/enablekeepalive.md)
+### Configuring Keepalives
+- [var enableKeepalive: Bool](./enablekeepalive.md)
   A Boolean that enables TCP keepalives.
-- [var keepaliveIdle: Int](nwprotocoltcp/options/keepaliveidle.md)
+- [var keepaliveIdle: Int](./keepaliveidle.md)
   The number of seconds of idleness that TCP waits before sending keepalive probes.
-- [var keepaliveInterval: Int](nwprotocoltcp/options/keepaliveinterval.md)
+- [var keepaliveInterval: Int](./keepaliveinterval.md)
   The number of seconds that TCP waits between sending keepalive probes.
 
 

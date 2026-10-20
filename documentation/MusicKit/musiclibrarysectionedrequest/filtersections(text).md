@@ -1,7 +1,8 @@
 # filterSections(text:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Filters sections by a specific string.
 

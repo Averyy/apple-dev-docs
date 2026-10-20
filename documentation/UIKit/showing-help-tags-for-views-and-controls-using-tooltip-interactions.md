@@ -1,6 +1,8 @@
 # Showing help tags for views and controls using tooltip interactions
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [ShowingHelpTagsForViewsAndControlsUsingTooltipInteractions.zip](https://docs-assets.developer.apple.com/published/199a44d512cb/ShowingHelpTagsForViewsAndControlsUsingTooltipInteractions.zip)
 
 Explain the purpose of interface elements by showing a tooltip when a person positions the pointer over the element.
 
@@ -14,18 +16,18 @@ Explain the purpose of interface elements by showing a tooltip when a person pos
 
 This sample shows how to display a tooltip (also known as a *help tag*) that explains the purpose of, or provides additional information about, an interface element such as a view or control without shifting a person’s focus away from the primary interface. A tooltip appears when a person positions the pointer over a view or control for a few seconds. The tooltip remains visible for a few seconds or until the pointer moves away from the interface element.
 
-For guidelines on designing the content of your tooltips, see the [`Help`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/macos/user-interaction/help/) section of the macOS Human Interface Guidelines.
+For guidelines on designing the content of your tooltips, see the [Help](https://developer.apple.com/design/human-interface-guidelines/macos/user-interaction/help/) section of the macOS Human Interface Guidelines.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Tooltips are available in the sample app when running in macOS 12 or later. To build and run the sample app:
 
 1. Choose Product > Destination > My Mac.
 2. Click Product > Run.
 
-##### Add a Tooltip to a View
+##### Add a tooltip to a view
 
-To show a tooltip when the pointer hovers over a view, the sample creates a [`UIToolTipInteraction`](uitooltipinteraction.md) object and passes in the default tooltip text. Then the sample adds the interaction to a [`UIView`](uiview.md) using the view’s [`addInteraction(_:)`](uiview/addinteraction(_:).md) method.
+To show a tooltip when the pointer hovers over a view, the sample creates a [`UIToolTipInteraction`](./uitooltipinteraction.md) object and passes in the default tooltip text. Then the sample adds the interaction to a [`UIView`](./uiview.md) using the view’s [`addInteraction(_:)`](./uiview/addinteraction%28_%29.md) method.
 
 ```swift
 lazy var viewWithDefaultTooltip: UIView = {
@@ -40,7 +42,7 @@ lazy var viewWithDefaultTooltip: UIView = {
 }()
 ```
 
-The sample uses the same approach for other types of views too, for instance, to add a tooltip to an instance of [`UILabel`](uilabel.md):
+The sample uses the same approach for other types of views too, for instance, to add a tooltip to an instance of [`UILabel`](./uilabel.md):
 
 ```swift
 lazy var labelWithTooltip: UILabel = {
@@ -55,9 +57,9 @@ lazy var labelWithTooltip: UILabel = {
 }()
 ```
 
-##### Add a Tooltip to a Control
+##### Add a tooltip to a control
 
-For interface elements that derive from [`UIControl`](uicontrol.md), such as [`UIButton`](uibutton.md), the sample uses the [`toolTip`](uicontrol/tooltip.md) property to set the default text that appears in the tooltip instead of adding an interaction to the control.
+For interface elements that derive from [`UIControl`](./uicontrol.md), such as [`UIButton`](./uibutton.md), the sample uses the [`toolTip`](./uicontrol/tooltip.md) property to set the default text that appears in the tooltip instead of adding an interaction to the control.
 
 ```swift
 lazy var buttonWithTooltip: UIButton = {
@@ -76,11 +78,11 @@ lazy var buttonWithTooltip: UIButton = {
 }()
 ```
 
-##### Change the Tooltip Text of a View
+##### Change the tooltip text of a view
 
-Setting the [`defaultToolTip`](uitooltipinteraction/defaulttooltip.md) property of a tooltip interaction and setting the [`toolTip`](uicontrol/tooltip.md) property of a control are convenient ways to show tooltip text that doesn’t change while the app runs. However, there may be times when an app needs to determine the contents of the tooltip based on the state of the app or logic specific to the app. For instance, the sample app looks up the name of a view’s background color and displays the name in a tooltip when the pointer hovers over that view.
+Setting the [`defaultToolTip`](./uitooltipinteraction/defaulttooltip.md) property of a tooltip interaction and setting the [`toolTip`](./uicontrol/tooltip.md) property of a control are convenient ways to show tooltip text that doesn’t change while the app runs. However, there may be times when an app needs to determine the contents of the tooltip based on the state of the app or logic specific to the app. For instance, the sample app looks up the name of a view’s background color and displays the name in a tooltip when the pointer hovers over that view.
 
-To show the background color name in a tooltip, the sample creates an instance of [`UIToolTipInteraction`](uitooltipinteraction.md) and sets its [`delegate`](uitooltipinteraction/delegate.md) property to an instance of `ViewWithBackgroundColorTooltip`, which is a custom view that conforms to the [`UIToolTipInteractionDelegate`](uitooltipinteractiondelegate.md) protocol. Then the sample adds the interaction to the view.
+To show the background color name in a tooltip, the sample creates an instance of [`UIToolTipInteraction`](./uitooltipinteraction.md) and sets its [`delegate`](./uitooltipinteraction/delegate.md) property to an instance of `ViewWithBackgroundColorTooltip`, which is a custom view that conforms to the [`UIToolTipInteractionDelegate`](./uitooltipinteractiondelegate.md) protocol. Then the sample adds the interaction to the view.
 
 ```swift
 lazy var viewWithBackgroundColorTooltip: UIView = {
@@ -96,7 +98,7 @@ lazy var viewWithBackgroundColorTooltip: UIView = {
 }()
 ```
 
-Next, `ViewWithBackgroundColorTooltip` implements the [`toolTipInteraction(_:configurationAt:)`](uitooltipinteractiondelegate/tooltipinteraction(_:configurationat:).md) method, and returns a [`UIToolTipConfiguration`](uitooltipconfiguration.md) object that contains the name of the background color as the text of the tooltip. If the color name isn’t available, the method returns `nil`, which prevents the tooltip from displaying.
+Next, `ViewWithBackgroundColorTooltip` implements the [`toolTipInteraction(_:configurationAt:)`](./uitooltipinteractiondelegate/tooltipinteraction%28_,configurationat%29.md) method, and returns a [`UIToolTipConfiguration`](./uitooltipconfiguration.md) object that contains the name of the background color as the text of the tooltip. If the color name isn’t available, the method returns `nil`, which prevents the tooltip from displaying.
 
 ```swift
 class ViewWithBackgroundColorTooltip: UIView, UIToolTipInteractionDelegate {
@@ -116,9 +118,9 @@ class ViewWithBackgroundColorTooltip: UIView, UIToolTipInteractionDelegate {
 }
 ```
 
-##### Change the Tooltip Text of a Control
+##### Change the tooltip text of a control
 
-To change the tooltip text of a control like the sample’s shopping cart button, the sample provides a tooltip interaction delegate as it did with the custom view. But instead of creating a tooltip interaction, it sets the button’s [`toolTip`](uicontrol/tooltip.md) property to the default text. This causes the control to create a [`UIToolTipInteraction`](uitooltipinteraction.md) object and assign it to the [`toolTipInteraction`](uicontrol/tooltipinteraction.md) property. The sample then uses the property to assign a delegate to the interaction.
+To change the tooltip text of a control like the sample’s shopping cart button, the sample provides a tooltip interaction delegate as it did with the custom view. But instead of creating a tooltip interaction, it sets the button’s [`toolTip`](./uicontrol/tooltip.md) property to the default text. This causes the control to create a [`UIToolTipInteraction`](./uitooltipinteraction.md) object and assign it to the [`toolTipInteraction`](./uicontrol/tooltipinteraction.md) property. The sample then uses the property to assign a delegate to the interaction.
 
 ```swift
 lazy var shoppingCartButtonWithTooltip: UIButton = {
@@ -138,7 +140,7 @@ lazy var shoppingCartButtonWithTooltip: UIButton = {
 }()
 ```
 
-The sample also implements the [`toolTipInteraction(_:configurationAt:)`](uitooltipinteractiondelegate/tooltipinteraction(_:configurationat:).md) delegate method, which returns a [`UIToolTipConfiguration`](uitooltipconfiguration.md) object that contains the tooltip text describing the purpose of the button and the number of items in the shopping cart.
+The sample also implements the [`toolTipInteraction(_:configurationAt:)`](./uitooltipinteractiondelegate/tooltipinteraction%28_,configurationat%29.md) delegate method, which returns a [`UIToolTipConfiguration`](./uitooltipconfiguration.md) object that contains the tooltip text describing the purpose of the button and the number of items in the shopping cart.
 
 ```swift
 func toolTipInteraction(_ interaction: UIToolTipInteraction, configurationAt point: CGPoint) -> UIToolTipConfiguration? {
@@ -157,11 +159,11 @@ func toolTipInteraction(_ interaction: UIToolTipInteraction, configurationAt poi
 }
 ```
 
-##### Specify the Hover Region
+##### Specify the hover region
 
-In addition to setting the tooltip text in a [`UIToolTipConfiguration`](uitooltipconfiguration.md) object, a delegate can specify the region of an interface element where the pointer must hover to trigger the display of the tooltip. The sample app, for example, shows a view that displays a tooltip after positioning the pointer over the top or bottom regions of the view, but not when the pointer is over the middle area.
+In addition to setting the tooltip text in a [`UIToolTipConfiguration`](./uitooltipconfiguration.md) object, a delegate can specify the region of an interface element where the pointer must hover to trigger the display of the tooltip. The sample app, for example, shows a view that displays a tooltip after positioning the pointer over the top or bottom regions of the view, but not when the pointer is over the middle area.
 
-To determine whether the pointer location is in the top or bottom region of the view, the sample uses the `point` value that the method [`toolTipInteraction(_:configurationAt:)`](uitooltipinteractiondelegate/tooltipinteraction(_:configurationat:).md) provides. When the pointer is in one of those regions, the delegate method returns a tooltip configuration that contains the tooltip text and the source rectangle, which defines the area of the view that the pointer must hover over to trigger the display of the tooltip.
+To determine whether the pointer location is in the top or bottom region of the view, the sample uses the `point` value that the method [`toolTipInteraction(_:configurationAt:)`](./uitooltipinteractiondelegate/tooltipinteraction%28_,configurationat%29.md) provides. When the pointer is in one of those regions, the delegate method returns a tooltip configuration that contains the tooltip text and the source rectangle, which defines the area of the view that the pointer must hover over to trigger the display of the tooltip.
 
 ```swift
 class ViewWithTooltipRegion: UIView, UIToolTipInteractionDelegate {
@@ -221,9 +223,10 @@ class TextViewWithTooltip: UITextView, UIToolTipInteractionDelegate {
 
 ## See Also
 
-- [class UIToolTipInteraction](uitooltipinteraction.md)
+### Tooltips
+- [class UIToolTipInteraction](./uitooltipinteraction.md)
   An interaction object that makes it possible to show a tooltip when hovering a pointer over a view or control.
-- [protocol UIToolTipInteractionDelegate](uitooltipinteractiondelegate.md)
+- [protocol UIToolTipInteractionDelegate](./uitooltipinteractiondelegate.md)
   An interface that provides tooltip settings to an interaction.
 
 

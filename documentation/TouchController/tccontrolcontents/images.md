@@ -1,7 +1,8 @@
 # images
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of objects used to render the control.
 
@@ -14,6 +15,10 @@ The array of objects used to render the control.
 
 ```swift
 var images: [TCControlImage] { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSArray<TCControlImage *> * images;
 ```
 
 

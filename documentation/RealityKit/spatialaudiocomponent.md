@@ -1,7 +1,8 @@
 # SpatialAudioComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that configures how sounds emit from an entity into a person’s environment.
 
@@ -33,23 +34,23 @@ let resource = try AudioFileResource.load(named: "MyAudioFile")
 entity.playAudio(resource) // Audio file is played spatially from entity
 ```
 
-`SpatialAudioComponent` allows you to further customize the playback characteristics of spatial audio sources. The [`gain`](spatialaudiocomponent/gain.md), [`directLevel`](spatialaudiocomponent/directlevel.md), and [`reverbLevel`](spatialaudiocomponent/reverblevel.md) properties are in relative decibels, in the range `[-Decibel.infinity, Decibel.zero]`, where `-Decibel.infinity` is silent and `Decibel.zero` is nominal.
+`SpatialAudioComponent` allows you to further customize the playback characteristics of spatial audio sources. The [`gain`](./spatialaudiocomponent/gain.md), [`directLevel`](./spatialaudiocomponent/directlevel.md), and [`reverbLevel`](./spatialaudiocomponent/reverblevel.md) properties are in relative decibels, in the range `[-Decibel.infinity, Decibel.zero]`, where `-Decibel.infinity` is silent and `Decibel.zero` is nominal.
 
-For example, you can adjust the overall level of all sounds the entity plays with the [`gain`](spatialaudiocomponent/gain.md) property.
+For example, you can adjust the overall level of all sounds the entity plays with the [`gain`](./spatialaudiocomponent/gain.md) property.
 
 ```swift
 entity.spatialAudio = SpatialAudioComponent(gain: -10)
 ```
 
-You can reduce the amount of reverb you apply to all sounds the entity plays with the [`reverbLevel`](spatialaudiocomponent/reverblevel.md) property. Reduce this value to make the sounds less reverberant and more intimate. Set [`reverbLevel`](spatialaudiocomponent/reverblevel.md) to `-Decibel.infinity` to cause the sounds to collapse into the head of the listener.
+You can reduce the amount of reverb you apply to all sounds the entity plays with the [`reverbLevel`](./spatialaudiocomponent/reverblevel.md) property. Reduce this value to make the sounds less reverberant and more intimate. Set [`reverbLevel`](./spatialaudiocomponent/reverblevel.md) to `-Decibel.infinity` to cause the sounds to collapse into the head of the listener.
 
 ```swift
 entity.spatialAudio?.reverbLevel = -6
 ```
 
-You can update [`gain`](spatialaudiocomponent/gain.md), [`directLevel`](spatialaudiocomponent/directlevel.md), and [`reverbLevel`](spatialaudiocomponent/reverblevel.md) properties dynamically. For example, you can update them when your app’s state changes, or in the context of a custom RealityKit system.
+You can update [`gain`](./spatialaudiocomponent/gain.md), [`directLevel`](./spatialaudiocomponent/directlevel.md), and [`reverbLevel`](./spatialaudiocomponent/reverblevel.md) properties dynamically. For example, you can update them when your app’s state changes, or in the context of a custom RealityKit system.
 
-The [`directivity`](spatialaudiocomponent/directivity.md) property allows you to configure the radiation pattern for sound that an entity emits.
+The [`directivity`](./spatialaudiocomponent/directivity.md) property allows you to configure the radiation pattern for sound that an entity emits.
 
 ```swift
 entity.spatialAudio?.directivity = .beam(focus: 0.5)
@@ -72,9 +73,9 @@ parent.addChild(audioSource)
 audioSource.orientation = .init(angle: .pi, axis: [0, 1, 0])
 ```
 
-This is only a consideration if you explicitly set a [`directivity`](spatialaudiocomponent/directivity.md) other than the default `.beam(focus: .zero)`, which projects sound evenly for all frequencies in all directions.
+This is only a consideration if you explicitly set a [`directivity`](./spatialaudiocomponent/directivity.md) other than the default `.beam(focus: .zero)`, which projects sound evenly for all frequencies in all directions.
 
-The [`distanceAttenuation`](spatialaudiocomponent/distanceattenuation.md) property allows you to configure the way that a sound level decreases as the distance between the listener and the sound source increases.
+The [`distanceAttenuation`](./spatialaudiocomponent/distanceattenuation.md) property allows you to configure the way that a sound level decreases as the distance between the listener and the sound source increases.
 
 ```swift
 entity.spatialAudio?.distanceAttenuation = .rolloff(factor: 2)
@@ -83,42 +84,43 @@ entity.spatialAudio?.distanceAttenuation = .rolloff(factor: 2)
 ## Topics
 
 ### Initializers
-- [init(gain: Audio.Decibel, directLevel: Audio.Decibel, reverbLevel: Audio.Decibel, directivity: Audio.Directivity)](spatialaudiocomponent/init(gain:directlevel:reverblevel:directivity:).md)
+- [init(gain: Audio.Decibel, directLevel: Audio.Decibel, reverbLevel: Audio.Decibel, directivity: Audio.Directivity)](./spatialaudiocomponent/init%28gain,directlevel,reverblevel,directivity%29.md)
   Creates a spatial audio component from a gain value, a direct level, a reverb level, and a directivity value.
-- [init(gain: Audio.Decibel, directLevel: Audio.Decibel, reverbLevel: Audio.Decibel, directivity: Audio.Directivity, distanceAttenuation: Audio.DistanceAttenuation)](spatialaudiocomponent/init(gain:directlevel:reverblevel:directivity:distanceattenuation:).md)
+- [init(gain: Audio.Decibel, directLevel: Audio.Decibel, reverbLevel: Audio.Decibel, directivity: Audio.Directivity, distanceAttenuation: Audio.DistanceAttenuation)](./spatialaudiocomponent/init%28gain,directlevel,reverblevel,directivity,distanceattenuation%29.md)
   Creates a spatial audio component from a gain value, a direct level, a reverb level, a directivity value, and a distance attenuation value.
 ### Instance Properties
-- [var directLevel: Audio.Decibel](spatialaudiocomponent/directlevel.md)
+- [var directLevel: Audio.Decibel](./spatialaudiocomponent/directlevel.md)
   The level of the direct unreverberated signal that an entity emits.
-- [var directivity: Audio.Directivity](spatialaudiocomponent/directivity.md)
+- [var directivity: Audio.Directivity](./spatialaudiocomponent/directivity.md)
   The radiation pattern for sound that an entity emits.
-- [var distanceAttenuation: Audio.DistanceAttenuation](spatialaudiocomponent/distanceattenuation.md)
+- [var distanceAttenuation: Audio.DistanceAttenuation](./spatialaudiocomponent/distanceattenuation.md)
   A value that specifies the way that the sound level decreases as the distance between the listener and the sound source increases.
-- [var gain: Audio.Decibel](spatialaudiocomponent/gain.md)
+- [var gain: Audio.Decibel](./spatialaudiocomponent/gain.md)
   The overall level for all sounds that an entity emits.
-- [var reverbLevel: Audio.Decibel](spatialaudiocomponent/reverblevel.md)
+- [var reverbLevel: Audio.Decibel](./spatialaudiocomponent/reverblevel.md)
   The level of reverberated signal that an entity emits.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Component](./component.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [Creating a Spaceship game](creating-a-spaceship-game.md)
+### Audio source components
+- [Creating a Spaceship game](./creating-a-spaceship-game.md)
   Build an immersive game using RealityKit audio, simulation, and rendering features.
-- [Playing spatial audio](../visionos/playing-spatial-audio-in-visionos.md)
+- [Playing spatial audio](../visionOS/playing-spatial-audio-in-visionos.md)
   Create and adjust spatial audio in visionOS with RealityKit.
-- [struct AmbientAudioComponent](ambientaudiocomponent.md)
+- [struct AmbientAudioComponent](./ambientaudiocomponent.md)
   A component that configures the ambient rendering of sounds from an entity.
-- [struct ChannelAudioComponent](channelaudiocomponent.md)
+- [struct ChannelAudioComponent](./channelaudiocomponent.md)
   A component that configures channel-based rendering of sounds from an entity.
 
 

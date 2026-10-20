@@ -1,15 +1,20 @@
 # NSPathControl.Style.standard
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case standard
+```
+
+```c
+NSPathStyleStandard
 ```
 
 #### Discussion
@@ -18,7 +23,8 @@ The standard display style and behavior. All path component cells are displayed 
 
 ## See Also
 
-- [NSPathControl.Style.popUp](nspathcontrol/style/popup.md)
+### Constants
+- [NSPathControl.Style.popUp](./popup.md)
 
 
 ---

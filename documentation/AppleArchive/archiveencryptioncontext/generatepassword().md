@@ -1,7 +1,8 @@
 # generatePassword()
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a new password.
 
@@ -11,7 +12,7 @@ Generates a new password.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -30,9 +31,10 @@ This function generates a new high entropy password, stores it in the context, a
 
 ## See Also
 
-- [var password: String?](archiveencryptioncontext/password.md)
+### Setting a password
+- [var password: String?](./password.md)
   The password used to encrypt or decrypt an archive.
-- [func setPassword(String) throws](archiveencryptioncontext/setpassword(_:).md)
+- [func setPassword(String) throws](./setpassword%28_%29.md)
   Sets the password from the supplied string.
 
 

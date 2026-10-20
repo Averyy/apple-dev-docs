@@ -7,7 +7,7 @@ Sets the preventSystemSleepFlag variable.
 
 ## Declaration
 
-```swift
+```c
 void setPreventSystemSleepFlag (
  unsigned long );
 ```
@@ -18,35 +18,36 @@ Called by the parent.
 
 ## See Also
 
-- [childHasRequestedPower](iopowerconnection/1810220-childhasrequestedpower.md)
+### Miscellaneous
+- [childHasRequestedPower](./api-1810220-childhasrequestedpower.md)
   Return the flag that says whether the child has called requestPowerDomainState.
-- [getAwaitingAck](iopowerconnection/1810241-getawaitingack.md)
+- [getAwaitingAck](./api-1810241-getawaitingack.md)
   Returns the awaitingAck variable.
-- [getDesiredDomainState](iopowerconnection/1810268-getdesireddomainstate.md)
+- [getDesiredDomainState](./api-1810268-getdesireddomainstate.md)
   Returns the desiredDomainState variable.
-- [getPreventIdleSleepFlag](iopowerconnection/1810287-getpreventidlesleepflag.md)
+- [getPreventIdleSleepFlag](./api-1810287-getpreventidlesleepflag.md)
   Returns the preventIdleSleepFlag variable.
-- [getPreventSystemSleepFlag](iopowerconnection/1810313-getpreventsystemsleepflag.md)
+- [getPreventSystemSleepFlag](./api-1810313-getpreventsystemsleepflag.md)
   Returns the preventSystemSleepFlag variable.
-- [getReadyFlag](iopowerconnection/1810329-getreadyflag.md)
+- [getReadyFlag](./api-1810329-getreadyflag.md)
   Returns the readyFlag variable.
-- [parentCurrentPowerFlags](iopowerconnection/1810355-parentcurrentpowerflags.md)
+- [parentCurrentPowerFlags](./api-1810355-parentcurrentpowerflags.md)
   Returns the currentPowerFlags variable.
-- [parentKnowsState](iopowerconnection/1810379-parentknowsstate.md)
+- [parentKnowsState](./api-1810379-parentknowsstate.md)
   Returns the stateKnown variable.
-- [setAwaitingAck](iopowerconnection/1810405-setawaitingack.md)
+- [setAwaitingAck](./api-1810405-setawaitingack.md)
   Sets the awaitingAck variable.
-- [setChildHasRequestedPower](iopowerconnection/1810436-setchildhasrequestedpower.md)
+- [setChildHasRequestedPower](./api-1810436-setchildhasrequestedpower.md)
   Set the flag that says that the child has called requestPowerDomainState.
-- [setDesiredDomainState](iopowerconnection/1810465-setdesireddomainstate.md)
+- [setDesiredDomainState](./api-1810465-setdesireddomainstate.md)
   Sets the desiredDomainState variable.
-- [setParentCurrentPowerFlags](iopowerconnection/1810489-setparentcurrentpowerflags.md)
+- [setParentCurrentPowerFlags](./api-1810489-setparentcurrentpowerflags.md)
   Sets the currentPowerFlags variable.
-- [setParentKnowsState](iopowerconnection/1810522-setparentknowsstate.md)
+- [setParentKnowsState](./api-1810522-setparentknowsstate.md)
   Sets the stateKnown variable.
-- [setPreventIdleSleepFlag](iopowerconnection/1810555-setpreventidlesleepflag.md)
+- [setPreventIdleSleepFlag](./api-1810555-setpreventidlesleepflag.md)
   Sets the preventIdleSleepFlag variable.
-- [setReadyFlag](iopowerconnection/1810620-setreadyflag.md)
+- [setReadyFlag](./api-1810620-setreadyflag.md)
   Sets the readyFlag variable.
 
 

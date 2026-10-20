@@ -1,7 +1,8 @@
 # MKMapItemTypeIdentifier
 
 **Framework**: MapKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that indicates the type of a serialized map item.
 
@@ -18,6 +19,10 @@ A constant that indicates the type of a serialized map item.
 
 ```swift
 let MKMapItemTypeIdentifier: String
+```
+
+```c
+extern NSString * const MKMapItemTypeIdentifier;
 ```
 
 

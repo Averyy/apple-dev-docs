@@ -1,7 +1,8 @@
 # UIAccessibilityContrast.unspecified
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unspecified contrast.
 
@@ -18,11 +19,16 @@ An unspecified contrast.
 case unspecified
 ```
 
+```c
+UIAccessibilityContrastUnspecified
+```
+
 ## See Also
 
-- [UIAccessibilityContrast.normal](uiaccessibilitycontrast/normal.md)
+### Contrast settings
+- [UIAccessibilityContrast.normal](./normal.md)
   A normal contrast level.
-- [UIAccessibilityContrast.high](uiaccessibilitycontrast/high.md)
+- [UIAccessibilityContrast.high](./high.md)
   A high contrast level.
 
 

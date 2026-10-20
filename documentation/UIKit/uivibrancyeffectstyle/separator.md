@@ -1,7 +1,8 @@
 # UIVibrancyEffectStyle.separator
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style for separator lines.
 
@@ -15,6 +16,10 @@ A style for separator lines.
 
 ```swift
 case separator
+```
+
+```c
+UIVibrancyEffectStyleSeparator
 ```
 
 

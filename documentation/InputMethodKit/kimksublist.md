@@ -1,7 +1,8 @@
 # kIMKSubList
 
 **Framework**: InputMethodKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.5+
@@ -12,10 +13,15 @@
 var kIMKSubList: Int { get }
 ```
 
+```c
+kIMKSubList
+```
+
 ## See Also
 
-- [var kIMKAnnotation: Int](kimkannotation.md)
-- [var kIMKMain: Int](kimkmain.md)
+### Constants
+- [var kIMKAnnotation: Int](./kimkannotation.md)
+- [var kIMKMain: Int](./kimkmain.md)
 
 
 ---

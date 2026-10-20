@@ -1,7 +1,8 @@
 # data
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 Data that you define and assign to the annotation.
 
@@ -10,7 +11,7 @@ Data that you define and assign to the annotation.
 
 ## Declaration
 
-```swift
+```
 data?: object;
 ```
 
@@ -20,11 +21,12 @@ Custom data to associate with this annotation. The default value is `{}.`
 
 ## See Also
 
-- [title](annotationconstructoroptions/title.md)
+### Creating data and titles
+- [title](./title.md)
   The text to display in the annotation’s callout.
-- [subtitle](annotationconstructoroptions/subtitle.md)
+- [subtitle](./subtitle.md)
   The text to display as a subtitle on the second line of an annotation’s callout.
-- [accessibilityLabel](annotationconstructoroptions/accessibilitylabel.md)
+- [accessibilityLabel](./accessibilitylabel.md)
   Accessibility text for the annotation.
 
 

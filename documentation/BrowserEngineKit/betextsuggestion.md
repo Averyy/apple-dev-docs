@@ -1,14 +1,15 @@
 # BETextSuggestion
 
 **Framework**: BrowserEngineKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A text suggestion to insert into a document.
 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- macOS ?+
+- macOS
 - tvOS 17.4+
 - visionOS 1.1+
 
@@ -18,50 +19,55 @@ A text suggestion to insert into a document.
 class BETextSuggestion
 ```
 
+```objc
+@interface BETextSuggestion : NSObject
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](./integrating-custom-browser-text-views-with-uikit.md)
 
 #### Overview
 
-Don’t create instances of this class. The system provides instances to your app through a text view’s [`insert(_:)`](betextinput/insert(_:)-5iryn.md) method when it suggests text insertions, for example, an AutoFill suggestion.
+Don’t create instances of this class. The system provides instances to your app through a text view’s [`insert(_:)`](./betextinput/insert%28_%29-5iryn.md) method when it suggests text insertions, for example, an AutoFill suggestion.
 
 ## Topics
 
 ### Creating a text suggestion
-- [init(inputText: String)](betextsuggestion/init(inputtext:).md)
+- [init(inputText: String)](./betextsuggestion/init%28inputtext%29.md)
   Initializes a new text suggestion with the given input text.
 ### Getting the suggested text
-- [var inputText: String](betextsuggestion/inputtext.md)
+- [var inputText: String](./betextsuggestion/inputtext.md)
   Text that will be inserted into the document when the user chooses the suggestion.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [BEAutoFillTextSuggestion](beautofilltextsuggestion.md)
+- [BEAutoFillTextSuggestion](./beautofilltextsuggestion.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class BEAutoFillTextSuggestion](beautofilltextsuggestion.md)
+### Replacements and AutoFill
+- [class BEAutoFillTextSuggestion](./beautofilltextsuggestion.md)
   A suggestion object that provides AutoFill text content for web form fields based on a person’s usage patterns.
-- [class BETextAlternatives](betextalternatives.md)
+- [class BETextAlternatives](./betextalternatives.md)
   An object that provides alternative text suggestions for a person’s text selection.
-- [class BETextDocumentContext](betextdocumentcontext.md)
+- [class BETextDocumentContext](./betextdocumentcontext.md)
   Information about the text surrounding a selection in a document.
-- [class BETextDocumentRequest](betextdocumentrequest.md)
+- [class BETextDocumentRequest](./betextdocumentrequest.md)
   A description of the contextual information that a text document request retrieves.
-- [BETextDocumentRequest.Options](betextdocumentrequest/options-swift.struct.md)
+- [BETextDocumentRequest.Options](./betextdocumentrequest/options-swift.struct.md)
   Options that describe the contextual information for a text document request.
-- [struct BETextReplacementOptions](betextreplacementoptions.md)
+- [struct BETextReplacementOptions](./betextreplacementoptions.md)
   Options that determine the way your app processes text in webpages.
 
 

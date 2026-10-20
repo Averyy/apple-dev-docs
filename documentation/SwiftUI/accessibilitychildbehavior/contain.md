@@ -1,7 +1,8 @@
 # contain
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Any child accessibility elements become children of the new accessibility element.
 
@@ -53,13 +54,14 @@ A new accessibility element is created when:
 - The view contains multiple or zero accessibility elements.
 - The view contains a single accessibility element with no children.
 
-> **Note**: If an accessibility element is not created, the [`AccessibilityChildBehavior`](accessibilitychildbehavior.md) of the existing accessibility element is modified.
+> **Note**: If an accessibility element is not created, the [`AccessibilityChildBehavior`](../accessibilitychildbehavior.md) of the existing accessibility element is modified.
 
 ## See Also
 
-- [static let combine: AccessibilityChildBehavior](accessibilitychildbehavior/combine.md)
+### Getting behaviors
+- [static let combine: AccessibilityChildBehavior](./combine.md)
   Any child accessibility element’s properties are merged into the new accessibility element.
-- [static let ignore: AccessibilityChildBehavior](accessibilitychildbehavior/ignore.md)
+- [static let ignore: AccessibilityChildBehavior](./ignore.md)
   Any child accessibility elements become hidden.
 
 

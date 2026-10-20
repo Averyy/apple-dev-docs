@@ -1,7 +1,8 @@
 # WKExtendedRuntimeSessionInvalidationReason
 
 **Framework**: WatchKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The reasons why a session can become invalid.
 
@@ -14,6 +15,10 @@ The reasons why a session can become invalid.
 enum WKExtendedRuntimeSessionInvalidationReason
 ```
 
+```c
+enum WKExtendedRuntimeSessionInvalidationReason : NSInteger;
+```
+
 #### Overview
 
 Sessions become invalid when they encounter an error, or when they stop running.
@@ -21,38 +26,39 @@ Sessions become invalid when they encounter an error, or when they stop running.
 ## Topics
 
 ### Invalidation Reasons
-- [WKExtendedRuntimeSessionInvalidationReason.error](wkextendedruntimesessioninvalidationreason/error.md)
+- [WKExtendedRuntimeSessionInvalidationReason.error](./wkextendedruntimesessioninvalidationreason/error.md)
   An error prevented the session from running.
-- [WKExtendedRuntimeSessionInvalidationReason.none](wkextendedruntimesessioninvalidationreason/none.md)
+- [WKExtendedRuntimeSessionInvalidationReason.none](./wkextendedruntimesessioninvalidationreason/none.md)
   The session ended normally.
-- [WKExtendedRuntimeSessionInvalidationReason.sessionInProgress](wkextendedruntimesessioninvalidationreason/sessioninprogress.md)
+- [WKExtendedRuntimeSessionInvalidationReason.sessionInProgress](./wkextendedruntimesessioninvalidationreason/sessioninprogress.md)
   This app already has a running session.
-- [WKExtendedRuntimeSessionInvalidationReason.expired](wkextendedruntimesessioninvalidationreason/expired.md)
+- [WKExtendedRuntimeSessionInvalidationReason.expired](./wkextendedruntimesessioninvalidationreason/expired.md)
   The session used all of its allocated time.
-- [WKExtendedRuntimeSessionInvalidationReason.resignedFrontmost](wkextendedruntimesessioninvalidationreason/resignedfrontmost.md)
+- [WKExtendedRuntimeSessionInvalidationReason.resignedFrontmost](./wkextendedruntimesessioninvalidationreason/resignedfrontmost.md)
   The app lost its frontmost status.
-- [WKExtendedRuntimeSessionInvalidationReason.suppressedBySystem](wkextendedruntimesessioninvalidationreason/suppressedbysystem.md)
+- [WKExtendedRuntimeSessionInvalidationReason.suppressedBySystem](./wkextendedruntimesessioninvalidationreason/suppressedbysystem.md)
   The system is in a state that doesn’t allow sessions of this type.
 ### Initializers
-- [init?(rawValue: Int)](wkextendedruntimesessioninvalidationreason/init(rawvalue:).md)
+- [init?(rawValue: Int)](./wkextendedruntimesessioninvalidationreason/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func extendedRuntimeSessionDidStart(WKExtendedRuntimeSession)](wkextendedruntimesessiondelegate/extendedruntimesessiondidstart(_:).md)
+### Monitoring State Changes
+- [func extendedRuntimeSessionDidStart(WKExtendedRuntimeSession)](./wkextendedruntimesessiondelegate/extendedruntimesessiondidstart%28_%29.md)
   Indicates that the session has started running.
-- [func extendedRuntimeSessionWillExpire(WKExtendedRuntimeSession)](wkextendedruntimesessiondelegate/extendedruntimesessionwillexpire(_:).md)
+- [func extendedRuntimeSessionWillExpire(WKExtendedRuntimeSession)](./wkextendedruntimesessiondelegate/extendedruntimesessionwillexpire%28_%29.md)
   Indicates that the session is about to expire.
-- [func extendedRuntimeSession(WKExtendedRuntimeSession, didInvalidateWith: WKExtendedRuntimeSessionInvalidationReason, error: (any Error)?)](wkextendedruntimesessiondelegate/extendedruntimesession(_:didinvalidatewith:error:).md)
+- [func extendedRuntimeSession(WKExtendedRuntimeSession, didInvalidateWith: WKExtendedRuntimeSessionInvalidationReason, error: (any Error)?)](./wkextendedruntimesessiondelegate/extendedruntimesession%28_,didinvalidatewith,error%29.md)
   Indicates that the session has encountered an error or stopped running.
 
 

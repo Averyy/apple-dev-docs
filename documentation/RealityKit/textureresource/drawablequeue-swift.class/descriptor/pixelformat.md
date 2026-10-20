@@ -1,7 +1,8 @@
 # pixelFormat
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size and bit layout of all pixels in each drawable’s texture.
 
@@ -11,7 +12,7 @@ The size and bit layout of all pixels in each drawable’s texture.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

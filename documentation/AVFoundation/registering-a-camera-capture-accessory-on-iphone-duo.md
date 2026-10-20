@@ -1,6 +1,7 @@
 # Registering a camera capture accessory on iPhone Duo
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Article
 
 Provide content to the person in front of the camera by pairing it with your capture interface.
 
@@ -8,11 +9,11 @@ Provide content to the person in front of the camera by pairing it with your cap
 
 Consider an app that records someone reading from a script. The person holding the device sees the capture interface, and the person in front of the camera sees nothing. They look away from the lens to read, or they memorize the script and lose the take. On iPhone Duo, an outer display faces the same way as the camera, so the app presents the script to the person who needs to read from it.
 
-![An illustration of the iPhone Duo, fully open and seen from the back. The rear cameras sit on one panel, and the outer display fills the other, facing the same direction as those cameras. The display shows several lines of a script for the person in front of the camera to read.](/images/com.apple.avfoundation/camera-capture-accessory-script@2x.png)
+![An illustration of the iPhone Duo, fully open and seen from the back. The rear cameras sit on one panel, and the outer display fills the other, facing the same direction as those cameras. The display shows several lines of a script for the person in front of the camera to read.](https://developer.apple.com/tutorials/images/com.apple.avfoundation/camera-capture-accessory-script@2x.png)
 
-Your app declares the content as a [`UISceneAccessory`](https://developer.apple.com/documentation/uikit/uisceneaccessory) and attaches it to the view that shows your capture interface. The system decides when and where to present it. Presentation happens while your app is in the foreground with an active capture session, while the capture interface runs on the inner display. Because the decision belongs to the system, treat accessory content as an enhancement.
+Your app declares the content as a [scene accessory](../UIKit/uisceneaccessory.md) and attaches it to the view that shows your capture interface. The system decides when and where to present it. Presentation happens while your app is in the foreground with an active capture session, while the capture interface runs on the inner display. Because the decision belongs to the system, treat accessory content as an enhancement.
 
-#### Decide What to Show on the Outer Display
+#### Decide what to show on the outer display
 
 Decide what the person in front of the camera needs to see while recording. For example, your app can scroll a script at a readable pace, count down before recording starts, or show how much of the subject the camera sees.
 
@@ -24,13 +25,13 @@ Consider the following before you design the content:
 
 Design your capture interface so it works when no outer display exists, and when the system presents nothing there. Accessory content enhances your app, and never carries a task your app can’t complete without it.
 
-#### Register Content on Your Capture Interface
+#### Register content on your capture interface
 
 To scope content to the camera, register the accessory on the same view that shows your capture interface. The system presents your content only while that interface is onscreen, and stops when someone navigates away. Registration returns an object that reports whether the system can present the content. Later sections use that object to respond to availability and to turn the content off.
 
 **SwiftUI**:
 
-Add the [`sceneAccessory(content:)`](https://developer.apple.com/documentation/swiftui/view/sceneaccessory(content:)) modifier to the view that shows your capture interface, and declare a [`CameraCaptureAccessory`](https://developer.apple.com/documentation/swiftui/cameracaptureaccessory) inside it:
+Add the [`sceneAccessory(content:)`](../SwiftUI/view/sceneaccessory%28content%29.md) modifier to the view that shows your capture interface, and declare a [`CameraCaptureAccessory`](../SwiftUI/cameracaptureaccessory.md) inside it:
 
 ```swift
 struct CameraView: View {
@@ -50,7 +51,7 @@ struct CameraView: View {
 
 **UIKit**:
 
-Create an accessory with the [`cameraCapture(sceneConfiguration:userInfo:)`](https://developer.apple.com/documentation/uikit/uisceneaccessory/cameracapture(sceneconfiguration:userinfo:)) factory method, and pass it to [`registerSceneAccessory(_:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/registersceneaccessory(_:)) on the view controller that shows your capture interface:
+Create an accessory with the [`cameraCapture(sceneConfiguration:userInfo:)`](../UIKit/uisceneaccessory/cameracapture%28sceneconfiguration,userinfo%29.md) factory method, and pass it to [`registerSceneAccessory(_:)`](../UIKit/uiviewcontroller/registersceneaccessory%28_%29.md) on the view controller that shows your capture interface:
 
 ```swift
 class CameraViewController: UIViewController {
@@ -71,11 +72,11 @@ class CameraViewController: UIViewController {
 }
 ```
 
-Hold a strong reference to the [`UISceneAccessoryRegistration`](https://developer.apple.com/documentation/uikit/uisceneaccessoryregistration) that registering returns. Your app reads and sets its properties to track availability and to turn the content off. Call [`unregisterSceneAccessory(_:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/unregistersceneaccessory(_:)) when your app stops offering the content, rather than hiding it.
+Hold a strong reference to the [`UISceneAccessoryRegistration`](../UIKit/uisceneaccessoryregistration.md) that registering returns. Your app reads and sets its properties to track availability and to turn the content off. Call [`unregisterSceneAccessory(_:)`](../UIKit/uiviewcontroller/unregistersceneaccessory%28_%29.md) when your app stops offering the content, rather than hiding it.
 
-The system assigns the session role for the accessory’s scene, and your app never sets it. Unlike ordinary window scenes, accessory scenes have no project-level configuration, so a scene manifest entry for one has no effect. If your scene delegate handles several kinds of scene, compare the session role against [`windowCameraCaptureAccessory`](https://developer.apple.com/documentation/uikit/uiscenesession/role-swift.struct/windowcameracaptureaccessory) to identify this one.
+The system assigns the session role for the accessory’s scene, and your app never sets it. Unlike ordinary window scenes, accessory scenes have no project-level configuration, so a scene manifest entry for one has no effect. If your scene delegate handles several kinds of scene, compare the session role against [`windowCameraCaptureAccessory`](../UIKit/uiscenesession/role-swift.struct/windowcameracaptureaccessory.md) to identify this one.
 
-#### Share State with Your Accessory Content
+#### Share state with your accessory content
 
 Your capture interface and your accessory content belong to the same capture session, so both need the same state. Rather than sending updates to your accessory content, give it the object your app already uses, and let each side read what it needs. A control the subject taps on the outer display then changes what the person holding the device sees, with no message passing in between.
 
@@ -127,13 +128,13 @@ class ScriptSceneDelegate: NSObject, UIWindowSceneDelegate {
 
 Keep a strong reference to the object you pass. The accessory identifies the object for the scene, and isn’t a place to store it.
 
-#### Respond to Changes in Availability
+#### Respond to changes in availability
 
 Availability tells you whether the system can present your content, and only the system sets it. Turning the content on and off is your app’s decision, and the registration keeps the two separate. When the system can’t present anything, hide the outer display controls.
 
 **SwiftUI**:
 
-Add [`onAvailabilityChange(perform:)`](https://developer.apple.com/documentation/swiftui/sceneaccessorycontent/onavailabilitychange(perform:)) to your accessory content:
+Add [`onAvailabilityChange(perform:)`](../SwiftUI/sceneaccessorycontent/onavailabilitychange%28perform%29.md) to your accessory content:
 
 ```swift
 CameraCaptureAccessory {
@@ -146,7 +147,7 @@ CameraCaptureAccessory {
 
 **UIKit**:
 
-Read [`isAvailable`](https://developer.apple.com/documentation/uikit/uisceneaccessoryregistration/isavailable) where you update your interface. Availability supports observation, so reading it in [`updateProperties()`](https://developer.apple.com/documentation/uikit/uiviewcontroller/updateproperties()) keeps your controls current without a notification:
+Read [`isAvailable`](../UIKit/uisceneaccessoryregistration/isavailable.md) where you update your interface. Availability supports observation, so reading it in [`updateProperties()`](../UIKit/uiviewcontroller/updateproperties%28%29.md) keeps your controls current without a notification:
 
 ```swift
 override func updateProperties() {
@@ -160,7 +161,7 @@ Availability changes for reasons your app doesn’t cause. The system presents t
 
 When the system can’t present anything, the registration stays inactive and availability stays false, which means one code path works everywhere. Accessories of different kinds never compete. An app that shows slides on a connected display can present capture content on the outer display at the same time.
 
-#### Let People Turn the Content Off
+#### Let people turn the content off
 
 Rather than unregistering the accessory, give people a control in your capture interface that turns the content off. Turning the content off says nothing about whether the system can present anything.
 
@@ -176,7 +177,7 @@ CameraCaptureAccessory(isEnabled: $isScriptEnabled) {
 
 **UIKit**:
 
-Set [`isEnabled`](https://developer.apple.com/documentation/uikit/uisceneaccessoryregistration/isenabled) on the registration:
+Set [`isEnabled`](../UIKit/uisceneaccessoryregistration/isenabled.md) on the registration:
 
 ```swift
 registration?.isEnabled = isScriptEnabled
@@ -184,7 +185,7 @@ registration?.isEnabled = isScriptEnabled
 
 Accessory content is on by default. Turning it off dismisses the content, and the views come and go the way your main scene’s do. Keep any state that has to persist in your model rather than in the view that presents it.
 
-#### Test Your Accessory Content on Device
+#### Test your accessory content on device
 
 Create your app’s accessory content from ordinary views, so you can check its layout in previews or in Simulator, and confirm that it reads the same state as your capture interface.
 
@@ -192,31 +193,32 @@ Because Simulator doesn’t have a camera, always test anything that depends on 
 
 ## See Also
 
-- [Setting up a capture session](setting-up-a-capture-session.md)
+### Capture sessions
+- [Setting up a capture session](./setting-up-a-capture-session.md)
   Configure input devices, output media, preview views, and basic settings before capturing photos or video.
-- [Accessing the camera while multitasking on iPad](../avkit/accessing-the-camera-while-multitasking-on-ipad.md)
+- [Accessing the camera while multitasking on iPad](../AVKit/accessing-the-camera-while-multitasking-on-ipad.md)
   Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
-- [AVCam: Building a camera app](avcam-building-a-camera-app.md)
+- [AVCam: Building a camera app](./avcam-building-a-camera-app.md)
   Capture photos and record video using the front and rear iPhone and iPad cameras.
-- [Building a responsive camera app that launches quickly](building-a-responsive-camera-app-that-launches-quickly.md)
+- [Building a responsive camera app that launches quickly](./building-a-responsive-camera-app-that-launches-quickly.md)
   Show a camera preview sooner by deferring capture output setup and postponing noncritical interface elements.
-- [Capturing Cinematic video](capturing-cinematic-video.md)
+- [Capturing Cinematic video](./capturing-cinematic-video.md)
   Capture video with an adjustable depth of field and focus points.
-- [Supporting Center Stage front camera in your iOS app](supporting-center-stage-front-camera-in-your-ios-app.md)
+- [Supporting Center Stage front camera in your iOS app](./supporting-center-stage-front-camera-in-your-ios-app.md)
   Enable Center Stage for photos and videos on the iPhone front camera.
-- [AVMultiCamPiP: Capturing from Multiple Cameras](avmulticampip-capturing-from-multiple-cameras.md)
+- [AVMultiCamPiP: Capturing from Multiple Cameras](./avmulticampip-capturing-from-multiple-cameras.md)
   Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session.
-- [AVCamBarcode: detecting barcodes and faces](avcambarcode-detecting-barcodes-and-faces.md)
+- [AVCamBarcode: detecting barcodes and faces](./avcambarcode-detecting-barcodes-and-faces.md)
   Identify machine readable codes or faces by using the camera.
-- [class AVCaptureSession](avcapturesession.md)
+- [class AVCaptureSession](./avcapturesession.md)
   An object that configures capture behavior and coordinates the flow of data from input devices to capture outputs.
-- [class AVCaptureMultiCamSession](avcapturemulticamsession.md)
+- [class AVCaptureMultiCamSession](./avcapturemulticamsession.md)
   A capture session that supports simultaneous capture from multiple inputs of the same media type.
-- [class AVCaptureInput](avcaptureinput.md)
+- [class AVCaptureInput](./avcaptureinput.md)
   An abstract superclass for objects that provide input data to a capture session.
-- [class AVCaptureOutput](avcaptureoutput.md)
+- [class AVCaptureOutput](./avcaptureoutput.md)
   An abstract superclass for objects that provide media output destinations for a capture session.
-- [class AVCaptureConnection](avcaptureconnection.md)
+- [class AVCaptureConnection](./avcaptureconnection.md)
   An object that represents a connection from a capture input to a capture output.
 
 

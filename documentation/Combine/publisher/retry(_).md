@@ -1,7 +1,8 @@
 # retry(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to recreate a failed subscription with the upstream publisher up to the number of times you specify.
 
@@ -26,9 +27,9 @@ A publisher that attempts to recreate its subscription to a failed upstream publ
 
 #### Discussion
 
-Use [`retry(_:)`](publisher/retry(_:).md) to try a connecting to an upstream publisher after a failed connection attempt.
+Use [`retry(_:)`](./retry%28_%29.md) to try a connecting to an upstream publisher after a failed connection attempt.
 
-In the example below, a [`URLSession.DataTaskPublisher`](https://developer.apple.com/documentation/foundation/urlsession/datataskpublisher) attempts to connect to a remote URL. If the connection attempt succeeds, it publishes the remote service’s HTML to the downstream publisher and completes normally. Otherwise, the retry operator attempts to reestablish the connection. If after three attempts the publisher still can’t connect to the remote URL, the [`catch(_:)`](publisher/catch(_:).md) operator replaces the error with a new publisher that publishes a “connection timed out” HTML page. After the downstream subscriber receives the timed out message, the stream completes normally.
+In the example below, a [`URLSession.DataTaskPublisher`](../../Foundation/urlsession/datataskpublisher.md) attempts to connect to a remote URL. If the connection attempt succeeds, it publishes the remote service’s HTML to the downstream publisher and completes normally. Otherwise, the retry operator attempts to reestablish the connection. If after three attempts the publisher still can’t connect to the remote URL, the [`catch(_:)`](./catch%28_%29.md) operator replaces the error with a new publisher that publishes a “connection timed out” HTML page. After the downstream subscriber receives the timed out message, the stream completes normally.
 
 ```swift
 struct WebSiteData: Codable {
@@ -61,11 +62,12 @@ After exceeding the specified number of retries, the publisher passes the failur
 
 ## See Also
 
-- [func assertNoFailure(String, file: StaticString, line: UInt) -> Publishers.AssertNoFailure<Self>](publisher/assertnofailure(_:file:line:).md)
+### Handling errors
+- [func assertNoFailure(String, file: StaticString, line: UInt) -> Publishers.AssertNoFailure<Self>](./assertnofailure%28_,file,line%29.md)
   Raises a fatal error when its upstream publisher fails, and otherwise republishes all received input.
-- [func `catch`<P>((Self.Failure) -> P) -> Publishers.Catch<Self, P>](publisher/catch(_:).md)
+- [func `catch`<P>((Self.Failure) -> P) -> Publishers.Catch<Self, P>](./catch%28_%29.md)
   Handles errors from an upstream publisher by replacing it with another publisher.
-- [func tryCatch<P>((Self.Failure) throws -> P) -> Publishers.TryCatch<Self, P>](publisher/trycatch(_:).md)
+- [func tryCatch<P>((Self.Failure) throws -> P) -> Publishers.TryCatch<Self, P>](./trycatch%28_%29.md)
   Handles errors from an upstream publisher by either replacing it with another publisher or throwing a new error.
 
 

@@ -1,7 +1,8 @@
 # USBDriverKit
 
 **Framework**: USBDriverKit  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Develop drivers for USB-based devices.
 
@@ -10,82 +11,82 @@ Develop drivers for USB-based devices.
 
 #### Overview
 
-Use the [`USBDriverKit`](USBDriverKit.md) framework to develop drivers for custom or non-class-compliant USB devices for use with macOS. The objects in this framework serve as providers for your driver. Use them as is to access the device configurations, interfaces, and endpoints of the USB device. Each object provides methods for fetching any needed descriptors from the USB device, and for initiating requests to perform your driver’s custom behaviors.
+Use the [USBDriverKit](./USBDriverKit.md) framework to develop drivers for custom or non-class-compliant USB devices for use with macOS. The objects in this framework serve as providers for your driver. Use them as is to access the device configurations, interfaces, and endpoints of the USB device. Each object provides methods for fetching any needed descriptors from the USB device, and for initiating requests to perform your driver’s custom behaviors.
 
-Develop your driver by subclassing [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice) in the [`DriverKit`](https://developer.apple.com/documentation/driverkit) framework. On macOS, use the [`System Extensions`](https://developer.apple.com/documentation/systemextensions) framework to install and upgrade your driver. On iPadOS, the system automatically discovers and upgrades drivers along with their host apps.
+Develop your driver by subclassing [`IOService`](../DriverKit/ioservice.md) in the [DriverKit](../DriverKit/DriverKit.md) framework. On macOS, use the [System Extensions](../SystemExtensions/SystemExtensions.md) framework to install and upgrade your driver. On iPadOS, the system automatically discovers and upgrades drivers along with their host apps.
 
 > **Note**:  USBDriverKit is available on macOS for Intel and Apple Silicon devices, and on iPadOS for devices with an M-series chip.
 
 ## Topics
 
 ### Essentials
-- [com.apple.developer.driverkit.transport.usb](../bundleresources/entitlements/com.apple.developer.driverkit.transport.usb.md)
+- [com.apple.developer.driverkit.transport.usb](../BundleResources/entitlements/com.apple.developer.driverkit.transport.usb.md)
   An array of dictionaries that identify the USB devices the driver supports.
 ### Samples
-- [DriverKit sample code](../driverkit/driverkit-sample-code.md)
+- [DriverKit sample code](../DriverKit/driverkit-sample-code.md)
   Explore projects that demonstrate how to write macOS device drivers with the DriverKit family of frameworks.
 ### Providers
-- [IOUSBHostInterface](iousbhostinterface.md)
+- [IOUSBHostInterface](./iousbhostinterface.md)
   A provider object that manages interactions with an interface of the USB device.
-- [IOUSBHostDevice](iousbhostdevice.md)
+- [IOUSBHostDevice](./iousbhostdevice.md)
   A provider object that represents the USB device.
 ### Endpoint Communication
-- [IOUSBHostPipe](iousbhostpipe.md)
+- [IOUSBHostPipe](./iousbhostpipe.md)
   An object you use to transfer data to or from a USB endpoint.
 ### USB Specifications
-- [USB Device Descriptors](usb-device-descriptors.md)
+- [USB Device Descriptors](./usb-device-descriptors.md)
   Determine the capabilities and configuration of a device using descriptors from the USB specification.
-- [Additional Specifications](additional-specifications.md)
+- [Additional Specifications](./additional-specifications.md)
   Request information from a device and get hardware and timing information.
-- [Registry Property Names](registry-property-names.md)
+- [Registry Property Names](./registry-property-names.md)
   Search for specific keys in the device registry.
-- [Utilities](utilities.md)
+- [Utilities](./utilities.md)
   Manipulate bit structures and convert integers between device- and platform-native formats.
 ### References
-- [USBDriverKit Enumerations](usbdriverkit-enumerations.md)
-- [USBDriverKit Functions](usbdriverkit-functions.md)
-- [USBDriverKit Data Types](usbdriverkit-data-types.md)
-- [USBDriverKit Macros](usbdriverkit-macros.md)
+- [USBDriverKit Enumerations](./usbdriverkit-enumerations.md)
+- [USBDriverKit Functions](./usbdriverkit-functions.md)
+- [USBDriverKit Data Types](./usbdriverkit-data-types.md)
+- [USBDriverKit Macros](./usbdriverkit-macros.md)
 ### Macros
-- [IOUSBHOST_PROPERTY_DEPRECATED](iousbhost_property_deprecated.md)
-- [kUSBHostBillboardDevicePropertyAltModeFailed](kusbhostbillboarddevicepropertyaltmodefailed.md)
-- [kUSBHostBillboardDevicePropertyAltModePowerFailed](kusbhostbillboarddevicepropertyaltmodepowerfailed.md)
-- [kUSBHostBillboardDevicePropertyCurrentMode](kusbhostbillboarddevicepropertycurrentmode.md)
-- [kUSBHostBillboardDevicePropertyModeValueDisplayPort](kusbhostbillboarddevicepropertymodevaluedisplayport.md)
-- [kUSBHostBillboardDevicePropertyModeValueThunderbolt](kusbhostbillboarddevicepropertymodevaluethunderbolt.md)
-- [kUSBHostBillboardDevicePropertyModeValueUSB4](kusbhostbillboarddevicepropertymodevalueusb4.md)
-- [kUSBHostBillboardDevicePropertyPreferredMode](kusbhostbillboarddevicepropertypreferredmode.md)
-- [kUSBHostBillboardDevicePropertySupportedModes](kusbhostbillboarddevicepropertysupportedmodes.md)
-- [kUSBHostBillboardDevicePropertyVersion](kusbhostbillboarddevicepropertyversion.md)
-- [kUSBHostControllerPropertyProtocolRevision](kusbhostcontrollerpropertyprotocolrevision.md)
-- [kUSBHostDevicePropertyFunction](kusbhostdevicepropertyfunction.md)
-- [kUSBHostDevicePropertyIdlePolicy](kusbhostdevicepropertyidlepolicy.md)
-- [kUSBHostDevicePropertyPowerSinkAllocation](kusbhostdevicepropertypowersinkallocation.md)
-- [kUSBHostDevicePropertyUSB3Preferred](kusbhostdevicepropertyusb3preferred.md)
-- [kUSBHostDevicePropertyUSB3Required](kusbhostdevicepropertyusb3required.md)
-- [kUSBHostPortPropertyIOPortServicePath](kusbhostportpropertyioportservicepath.md)
-- [kUSBHostPortPropertyProtocolCompanionRevision1](kusbhostportpropertyprotocolcompanionrevision1.md)
-- [kUSBHostPortPropertyProtocolCompanionRevision2](kusbhostportpropertyprotocolcompanionrevision2.md)
-- [kUSBHostPortPropertyProtocolCompanionRevision3](kusbhostportpropertyprotocolcompanionrevision3.md)
-- [kUSBHostPortPropertyProtocolRevision1](kusbhostportpropertyprotocolrevision1.md)
-- [kUSBHostPortPropertyProtocolRevision2](kusbhostportpropertyprotocolrevision2.md)
-- [kUSBHostPortPropertyProtocolRevision3](kusbhostportpropertyprotocolrevision3.md)
-- [kUSBHostPortPropertyProtocolRevision4](kusbhostportpropertyprotocolrevision4.md)
-- [kUSBHostPortPropertyTransportState](kusbhostportpropertytransportstate.md)
-- [kUSBHostPortPropertyUSB2ExternalRemoteWake](kusbhostportpropertyusb2externalremotewake.md)
-- [kUSBHostPortPropertyUSB2Repeater](kusbhostportpropertyusb2repeater.md)
-- [kUSBHostPropertyLinkSpeed](kusbhostpropertylinkspeed.md)
+- [IOUSBHOST_PROPERTY_DEPRECATED](./iousbhost_property_deprecated.md)
+- [kUSBHostBillboardDevicePropertyAltModeFailed](./kusbhostbillboarddevicepropertyaltmodefailed.md)
+- [kUSBHostBillboardDevicePropertyAltModePowerFailed](./kusbhostbillboarddevicepropertyaltmodepowerfailed.md)
+- [kUSBHostBillboardDevicePropertyCurrentMode](./kusbhostbillboarddevicepropertycurrentmode.md)
+- [kUSBHostBillboardDevicePropertyModeValueDisplayPort](./kusbhostbillboarddevicepropertymodevaluedisplayport.md)
+- [kUSBHostBillboardDevicePropertyModeValueThunderbolt](./kusbhostbillboarddevicepropertymodevaluethunderbolt.md)
+- [kUSBHostBillboardDevicePropertyModeValueUSB4](./kusbhostbillboarddevicepropertymodevalueusb4.md)
+- [kUSBHostBillboardDevicePropertyPreferredMode](./kusbhostbillboarddevicepropertypreferredmode.md)
+- [kUSBHostBillboardDevicePropertySupportedModes](./kusbhostbillboarddevicepropertysupportedmodes.md)
+- [kUSBHostBillboardDevicePropertyVersion](./kusbhostbillboarddevicepropertyversion.md)
+- [kUSBHostControllerPropertyProtocolRevision](./kusbhostcontrollerpropertyprotocolrevision.md)
+- [kUSBHostDevicePropertyFunction](./kusbhostdevicepropertyfunction.md)
+- [kUSBHostDevicePropertyIdlePolicy](./kusbhostdevicepropertyidlepolicy.md)
+- [kUSBHostDevicePropertyPowerSinkAllocation](./kusbhostdevicepropertypowersinkallocation.md)
+- [kUSBHostDevicePropertyUSB3Preferred](./kusbhostdevicepropertyusb3preferred.md)
+- [kUSBHostDevicePropertyUSB3Required](./kusbhostdevicepropertyusb3required.md)
+- [kUSBHostPortPropertyIOPortServicePath](./kusbhostportpropertyioportservicepath.md)
+- [kUSBHostPortPropertyProtocolCompanionRevision1](./kusbhostportpropertyprotocolcompanionrevision1.md)
+- [kUSBHostPortPropertyProtocolCompanionRevision2](./kusbhostportpropertyprotocolcompanionrevision2.md)
+- [kUSBHostPortPropertyProtocolCompanionRevision3](./kusbhostportpropertyprotocolcompanionrevision3.md)
+- [kUSBHostPortPropertyProtocolRevision1](./kusbhostportpropertyprotocolrevision1.md)
+- [kUSBHostPortPropertyProtocolRevision2](./kusbhostportpropertyprotocolrevision2.md)
+- [kUSBHostPortPropertyProtocolRevision3](./kusbhostportpropertyprotocolrevision3.md)
+- [kUSBHostPortPropertyProtocolRevision4](./kusbhostportpropertyprotocolrevision4.md)
+- [kUSBHostPortPropertyTransportState](./kusbhostportpropertytransportstate.md)
+- [kUSBHostPortPropertyUSB2ExternalRemoteWake](./kusbhostportpropertyusb2externalremotewake.md)
+- [kUSBHostPortPropertyUSB2Repeater](./kusbhostportpropertyusb2repeater.md)
+- [kUSBHostPropertyLinkSpeed](./kusbhostpropertylinkspeed.md)
 ### Enumeration Cases
-- [kIOUSBLinkSpeed10Gbps](kiousblinkspeed10gbps.md)
-- [kIOUSBLinkSpeed20Gbps](kiousblinkspeed20gbps.md)
-- [kIOUSBLinkSpeed40Gbps](kiousblinkspeed40gbps.md)
-- [kIOUSBLinkSpeed5Gbps](kiousblinkspeed5gbps.md)
-- [kIOUSBLinkSpeed80Gbps](kiousblinkspeed80gbps.md)
-- [kIOUSBLinkSpeedFull](kiousblinkspeedfull.md)
-- [kIOUSBLinkSpeedHigh](kiousblinkspeedhigh.md)
-- [kIOUSBLinkSpeedLow](kiousblinkspeedlow.md)
+- [kIOUSBLinkSpeed10Gbps](./kiousblinkspeed10gbps.md)
+- [kIOUSBLinkSpeed20Gbps](./kiousblinkspeed20gbps.md)
+- [kIOUSBLinkSpeed40Gbps](./kiousblinkspeed40gbps.md)
+- [kIOUSBLinkSpeed5Gbps](./kiousblinkspeed5gbps.md)
+- [kIOUSBLinkSpeed80Gbps](./kiousblinkspeed80gbps.md)
+- [kIOUSBLinkSpeedFull](./kiousblinkspeedfull.md)
+- [kIOUSBLinkSpeedHigh](./kiousblinkspeedhigh.md)
+- [kIOUSBLinkSpeedLow](./kiousblinkspeedlow.md)
 ### Enumerations
-- [tIOUSB40LinkStateTimeout](tiousb40linkstatetimeout.md)
+- [tIOUSB40LinkStateTimeout](./tiousb40linkstatetimeout.md)
 
 
 ---

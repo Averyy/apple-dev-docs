@@ -1,7 +1,8 @@
 # init(certificationDeclaration:deviceAttestationCertificate:productAttestationIntermediateCertificate:)
 
 **Framework**: MatterSupport  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the credential object.
 
@@ -10,7 +11,7 @@ Creates the credential object.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,17 +1,22 @@
 # handleSave(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles the Save AppleScript command by attempting to save the document.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func handleSave(_ command: NSScriptCommand) -> Any?
+```
+
+```objc
+- (id) handleSaveScriptCommand:(NSScriptCommand *) command;
 ```
 
 #### Discussion
@@ -24,13 +29,14 @@ Extracts Save command arguments from the `command` object and uses them to deter
 
 ## See Also
 
-- [func handleClose(NSCloseCommand) -> Any?](nsdocument/handleclose(_:).md)
+### Handling Script Commands
+- [func handleClose(NSCloseCommand) -> Any?](./handleclose%28_%29.md)
   Handles the Close AppleScript command by attempting to close the document.
-- [func handlePrint(NSScriptCommand) -> Any?](nsdocument/handleprint(_:).md)
+- [func handlePrint(NSScriptCommand) -> Any?](./handleprint%28_%29.md)
   Handles the Print AppleScript command by attempting to print the document.
-- [var objectSpecifier: NSScriptObjectSpecifier](nsdocument/objectspecifier.md)
+- [var objectSpecifier: NSScriptObjectSpecifier](./objectspecifier.md)
   Returns the object specifier that represents the document.
-- [var lastComponentOfFileName: String](nsdocument/lastcomponentoffilename.md)
+- [var lastComponentOfFileName: String](./lastcomponentoffilename.md)
   The name of the document seen by the user in AppleScript.
 
 

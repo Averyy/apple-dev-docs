@@ -1,7 +1,8 @@
 # AppAssetLibraryPlacementOrderingRequestCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an app asset library placement ordering request.
 
@@ -10,14 +11,14 @@ The request body you use to create an app asset library placement ordering reque
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryPlacementOrderingRequestCreateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object AppAssetLibraryPlacementOrderingRequestCreateRequest.Data](appassetlibraryplacementorderingrequestcreaterequest/data-data.dictionary.md)
+- [object AppAssetLibraryPlacementOrderingRequestCreateRequest.Data](./appassetlibraryplacementorderingrequestcreaterequest/data-data.dictionary.md)
   The request body you use to create an app asset library placement ordering request.
 
 ## Properties
@@ -26,9 +27,10 @@ object AppAssetLibraryPlacementOrderingRequestCreateRequest
 
 ## See Also
 
-- [object AppAssetLibraryPlacementOrderingRequest](appassetlibraryplacementorderingrequest.md)
+### Objects and types
+- [object AppAssetLibraryPlacementOrderingRequest](./appassetlibraryplacementorderingrequest.md)
   A request that sets the display order of an app’s asset library placements within a localization.
-- [object AppAssetLibraryPlacementOrderingRequestResponse](appassetlibraryplacementorderingrequestresponse.md)
+- [object AppAssetLibraryPlacementOrderingRequestResponse](./appassetlibraryplacementorderingrequestresponse.md)
   The response body for endpoints that create an app asset library placement ordering request.
 
 

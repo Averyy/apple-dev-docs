@@ -1,7 +1,8 @@
 # FloatingPointClassification.signalingNaN
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A signaling NaN (“not a number”).
 

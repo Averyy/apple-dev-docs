@@ -1,7 +1,8 @@
 # DropSession.Phase.dataTransferCompleted
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Dragged items have been transferred. You can remove temporary items, perform any cleanup if needed.
 

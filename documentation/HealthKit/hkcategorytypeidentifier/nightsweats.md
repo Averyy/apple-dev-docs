@@ -1,7 +1,8 @@
 # nightSweats
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A category type that records night sweats as a symptom.
 
@@ -19,13 +20,18 @@ A category type that records night sweats as a symptom.
 static let nightSweats: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierNightSweats;
+```
+
 #### Discussion
 
-These samples use values from the  [`HKCategoryValueSeverity`](hkcategoryvalueseverity.md) enumeration.
+These samples use values from the  [`HKCategoryValueSeverity`](../hkcategoryvalueseverity.md) enumeration.
 
 ## See Also
 
-- [static let sleepChanges: HKCategoryTypeIdentifier](hkcategorytypeidentifier/sleepchanges.md)
+### Sleep
+- [static let sleepChanges: HKCategoryTypeIdentifier](./sleepchanges.md)
   A category type that records sleep changes as a symptom.
 
 

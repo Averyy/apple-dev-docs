@@ -1,7 +1,8 @@
 # weekdays
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 On which days of the week the event should occur
 

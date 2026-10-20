@@ -1,7 +1,8 @@
 # PasteboardClear(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.3+
@@ -10,6 +11,10 @@
 
 ```swift
 func PasteboardClear(_ inPasteboard: Pasteboard) -> OSStatus
+```
+
+```c
+OSStatus PasteboardClear(PasteboardRef inPasteboard);
 ```
 
 

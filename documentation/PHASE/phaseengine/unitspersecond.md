@@ -1,7 +1,8 @@
 # unitsPerSecond
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A conversion factor from seconds to your app’s preferred unit of time.
 
@@ -19,13 +20,18 @@ A conversion factor from seconds to your app’s preferred unit of time.
 var unitsPerSecond: Double { get set }
 ```
 
+```objc
+@property (nonatomic, assign) double unitsPerSecond;
+```
+
 #### Discussion
 
 Time-based properties throughout the framework apply the value you supply for this property to their value.
 
 ## See Also
 
-- [var unitsPerMeter: Double](phaseengine/unitspermeter.md)
+### Measuring Units
+- [var unitsPerMeter: Double](./unitspermeter.md)
   A conversion factor from meters to your app’s preferred unit of measurement.
 
 

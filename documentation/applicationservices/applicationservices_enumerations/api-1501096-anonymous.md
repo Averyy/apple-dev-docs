@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kCurrentProcess: Int](kcurrentprocess.md)
-- [var kNoProcess: Int](knoprocess.md)
-- [var kSystemProcess: Int](ksystemprocess.md)
+- [var kCurrentProcess: Int](../kcurrentprocess.md)
+- [var kNoProcess: Int](../knoprocess.md)
+- [var kSystemProcess: Int](../ksystemprocess.md)
 
 
 ---

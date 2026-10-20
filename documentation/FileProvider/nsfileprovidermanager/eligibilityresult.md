@@ -1,7 +1,8 @@
 # NSFileProviderManager.EligibilityResult
 
 **Framework**: File Provider  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify whether a URL is eligible for storing a domain.
 
@@ -17,23 +18,24 @@ enum EligibilityResult
 ## Topics
 
 ### Determining eligibility
-- [NSFileProviderManager.EligibilityResult.eligible](nsfileprovidermanager/eligibilityresult/eligible.md)
-- [NSFileProviderManager.EligibilityResult.ineligible(_:)](nsfileprovidermanager/eligibilityresult/ineligible(_:).md)
-- [struct NSFileProviderVolumeUnsupportedReason](nsfileprovidervolumeunsupportedreason.md)
+- [NSFileProviderManager.EligibilityResult.eligible](./eligibilityresult/eligible.md)
+- [NSFileProviderManager.EligibilityResult.ineligible(_:)](./eligibilityresult/ineligible%28_%29.md)
+- [struct NSFileProviderVolumeUnsupportedReason](../nsfileprovidervolumeunsupportedreason.md)
   Constants that describe why an external volume might not be eligible for storing a domain.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 ## See Also
 
-- [func stateDirectoryURL() throws -> URL](nsfileprovidermanager/statedirectoryurl.md)
+### Working with external volumes
+- [func stateDirectoryURL() throws -> URL](./statedirectoryurl%28%29.md)
   Returns a URL for a directory for storing state information for the domain.
-- [class func checkDomainsCanBeStoredOnVolume(at: URL) throws -> NSFileProviderManager.EligibilityResult](nsfileprovidermanager/checkdomainscanbestoredonvolume(at:).md)
+- [class func checkDomainsCanBeStoredOnVolume(at: URL) throws -> NSFileProviderManager.EligibilityResult](./checkdomainscanbestoredonvolume%28at%29.md)
   Checks whether the specified URL is eligible for storing a domain.
-- [protocol NSFileProviderExternalVolumeHandling](nsfileproviderexternalvolumehandling.md)
+- [protocol NSFileProviderExternalVolumeHandling](../nsfileproviderexternalvolumehandling.md)
   A protocol that defines the interface for handling external volumes.
 
 

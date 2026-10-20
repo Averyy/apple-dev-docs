@@ -1,7 +1,8 @@
 # MPSCNNConvolutionGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a gradient convolution kernel.
 
@@ -19,38 +20,43 @@ A representation of a gradient convolution kernel.
 class MPSCNNConvolutionGradientNode
 ```
 
+```objc
+@interface MPSCNNConvolutionGradientNode : MPSNNGradientFilterNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, convolutionGradientState: MPSCNNConvolutionGradientStateNode, weights: (any MPSCNNConvolutionDataSource)?)](mpscnnconvolutiongradientnode/init(sourcegradient:sourceimage:convolutiongradientstate:weights:).md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, convolutionGradientState: MPSCNNConvolutionGradientStateNode, weights: (any MPSCNNConvolutionDataSource)?)](./mpscnnconvolutiongradientnode/init%28sourcegradient,sourceimage,convolutiongradientstate,weights%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+- [MPSNNGradientFilterNode](./mpsnngradientfilternode.md)
 ### Inherited By
-- [MPSCNNConvolutionTransposeGradientNode](mpscnnconvolutiontransposegradientnode.md)
-- [MPSCNNFullyConnectedGradientNode](mpscnnfullyconnectedgradientnode.md)
+- [MPSCNNConvolutionTransposeGradientNode](./mpscnnconvolutiontransposegradientnode.md)
+- [MPSCNNFullyConnectedGradientNode](./mpscnnfullyconnectedgradientnode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MPSNNTrainableNode](mpsnntrainablenode.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MPSNNTrainableNode](./mpsnntrainablenode.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNBinaryConvolutionNode](mpscnnbinaryconvolutionnode.md)
+### Convolution Layer Nodes
+- [class MPSCNNBinaryConvolutionNode](./mpscnnbinaryconvolutionnode.md)
   A representation of a convolution kernel with binary weights and an input image using binary approximations.
-- [class MPSCNNConvolutionNode](mpscnnconvolutionnode.md)
+- [class MPSCNNConvolutionNode](./mpscnnconvolutionnode.md)
   A representation of a convolution kernel.
-- [class MPSCNNConvolutionTransposeNode](mpscnnconvolutiontransposenode.md)
+- [class MPSCNNConvolutionTransposeNode](./mpscnnconvolutiontransposenode.md)
   A representation of a transposed convolution.
-- [class MPSCNNConvolutionGradientStateNode](mpscnnconvolutiongradientstatenode.md)
+- [class MPSCNNConvolutionGradientStateNode](./mpscnnconvolutiongradientstatenode.md)
   A representation of a gradient convolution state.
-- [class MPSCNNCrossChannelNormalizationGradientNode](mpscnncrosschannelnormalizationgradientnode.md)
+- [class MPSCNNCrossChannelNormalizationGradientNode](./mpscnncrosschannelnormalizationgradientnode.md)
   A representation of a gradient normalization kernel applied across feature channels.
 
 

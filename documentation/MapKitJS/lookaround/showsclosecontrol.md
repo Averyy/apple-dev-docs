@@ -1,7 +1,8 @@
 # showsCloseControl
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the Look Around view displays a close control.
 
@@ -10,14 +11,15 @@ A Boolean value that indicates whether the Look Around view displays a close con
 
 ## Declaration
 
-```swift
+```
 get showsCloseControl(): boolean;
 set showsCloseControl(value: boolean);
 ```
 
 ## See Also
 
-- [showsDialogControl](lookaround/showsdialogcontrol.md)
+### Controlling the display of window controls
+- [showsDialogControl](./showsdialogcontrol.md)
   A Boolean value that indicates whether the Look Around view displays shows a control that allow someone to expand the Look Around view.
 
 

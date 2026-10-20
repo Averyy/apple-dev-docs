@@ -1,7 +1,8 @@
 # CM2ProfilePtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias CM2ProfilePtr = UnsafeMutablePointer<CM2Profile>
+```
+
+```c
+typedef struct CM2Profile *CM2ProfilePtr;
 ```
 
 

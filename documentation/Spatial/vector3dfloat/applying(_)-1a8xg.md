@@ -1,7 +1,8 @@
 # applying(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the vector that results from applying an affine transform to the vector.
 

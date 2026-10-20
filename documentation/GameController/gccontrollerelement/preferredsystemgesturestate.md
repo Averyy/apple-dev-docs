@@ -1,7 +1,8 @@
 # preferredSystemGestureState
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred state for handling input when the user binds the element to a system gesture.
 
@@ -19,15 +20,20 @@ The preferred state for handling input when the user binds the element to a syst
 var preferredSystemGestureState: GCControllerElement.SystemGestureState { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) GCSystemGestureState preferredSystemGestureState;
+```
+
 #### Discussion
 
-In rare situations, you may use this property to disable system gestures. However, the system isn’t guaranteed to respect this property. The default value for this property is [`GCControllerElement.SystemGestureState.enabled`](gccontrollerelement/systemgesturestate/enabled.md).
+In rare situations, you may use this property to disable system gestures. However, the system isn’t guaranteed to respect this property. The default value for this property is [`GCControllerElement.SystemGestureState.enabled`](./systemgesturestate/enabled.md).
 
 ## See Also
 
-- [var isBoundToSystemGesture: Bool](gccontrollerelement/isboundtosystemgesture.md)
+### Handling system gesture input
+- [var isBoundToSystemGesture: Bool](./isboundtosystemgesture.md)
   A Boolean value that indicates whether the user binds the element to a system gesture.
-- [GCControllerElement.SystemGestureState](gccontrollerelement/systemgesturestate.md)
+- [GCControllerElement.SystemGestureState](./systemgesturestate.md)
   A state for handling input when an element is part of a system gesture.
 
 

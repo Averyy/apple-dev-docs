@@ -1,7 +1,8 @@
 # selectedChild
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently selected tab.
 
@@ -18,13 +19,18 @@ The currently selected tab.
 var selectedChild: UITab? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UITab * selectedChild;
+```
+
 ## See Also
 
-- [var children: [UITab]](uitabgroup/children.md)
+### Accessing tabs
+- [var children: [UITab]](./children.md)
   The tabs within a tab group.
-- [func tab(forIdentifier: String) -> UITab?](uitabgroup/tab(foridentifier:).md)
+- [func tab(forIdentifier: String) -> UITab?](./tab%28foridentifier%29.md)
   Returns a tab with a matching identifier, if any.
-- [var defaultChildIdentifier: String?](uitabgroup/defaultchildidentifier.md)
+- [var defaultChildIdentifier: String?](./defaultchildidentifier.md)
   The identifier for the default subitem.
 
 

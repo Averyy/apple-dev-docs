@@ -1,7 +1,8 @@
 # virtualMachine
 
 **Framework**: JavaScriptCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The JavaScript virtual machine to which the context belongs.
 
@@ -19,19 +20,24 @@ The JavaScript virtual machine to which the context belongs.
 var virtualMachine: JSVirtualMachine! { get }
 ```
 
+```objc
+@property (strong, readonly) JSVirtualMachine * virtualMachine;
+```
+
 #### Discussion
 
-To create a context associated with a specific virtual machine, allowing JavaScript values to be passed between contexts that share the same virtual machine, use the [`init(virtualMachine:)`](jscontext/init(virtualmachine:).md) initializer.
+To create a context associated with a specific virtual machine, allowing JavaScript values to be passed between contexts that share the same virtual machine, use the [`init(virtualMachine:)`](./init%28virtualmachine%29.md) initializer.
 
 ## See Also
 
-- [var globalObject: JSValue!](jscontext/globalobject.md)
+### Working with JavaScript global state
+- [var globalObject: JSValue!](./globalobject.md)
   The JavaScript global object associated with the context.
-- [var exception: JSValue!](jscontext/exception.md)
+- [var exception: JSValue!](./exception.md)
   A JavaScript exception to be thrown in evaluation of the script.
-- [var exceptionHandler: ((JSContext?, JSValue?) -> Void)!](jscontext/exceptionhandler.md)
+- [var exceptionHandler: ((JSContext?, JSValue?) -> Void)!](./exceptionhandler.md)
   A block to be invoked should evaluating a script result in a JavaScript exception being thrown.
-- [var name: String!](jscontext/name.md)
+- [var name: String!](./name.md)
   A descriptive name for the context.
 
 

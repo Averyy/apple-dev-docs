@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: Cinematic  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 init(configuration: CNImageRenderingSessionConfiguration)
+```
+
+```objc
+- (instancetype) initWithConfiguration:(CNImageRenderingSessionConfiguration *) configuration;
 ```
 
 

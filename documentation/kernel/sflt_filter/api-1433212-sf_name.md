@@ -1,7 +1,8 @@
 # sf_name
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A name used for debug purposes.
 
@@ -10,47 +11,48 @@ A name used for debug purposes.
 
 ## Declaration
 
-```swift
+```c
 char *sf_name;
 ```
 
 ## See Also
 
-- [sf_handle](sflt_filter/1433190-sf_handle.md)
+### Fields
+- [sf_handle](./api-1433190-sf_handle.md)
   A value used to find socket filters by applications. An application can use this value to specify that this filter should be attached when using the SO_NKE socket option.
-- [sf_flags](sflt_filter/1433199-sf_flags.md)
+- [sf_flags](./api-1433199-sf_flags.md)
   Indicate whether this filter should be attached to all new sockets or just those that request the filter be attached using the SO_NKE socket option. If this filter utilizes the socket filter extension fields, it must also set SFLT_EXTENDED.
-- [sf_unregistered](sflt_filter/1433198-sf_unregistered.md)
+- [sf_unregistered](./api-1433198-sf_unregistered.md)
   Your function for being notified when your filter has been unregistered.
-- [sf_attach](sflt_filter/1433170-sf_attach.md)
+- [sf_attach](./api-1433170-sf_attach.md)
   Your function for handling attaches to sockets.
-- [sf_detach](sflt_filter/1433233-sf_detach.md)
+- [sf_detach](./api-1433233-sf_detach.md)
   Your function for handling detaches from sockets.
-- [sf_notify](sflt_filter/1433204-sf_notify.md)
+- [sf_notify](./api-1433204-sf_notify.md)
   Your function for handling events. May be null.
-- [sf_data_in](sflt_filter/1433174-sf_data_in.md)
+- [sf_data_in](./api-1433174-sf_data_in.md)
   Your function for handling incoming data. May be null.
-- [sf_data_out](sflt_filter/1433165-sf_data_out.md)
+- [sf_data_out](./api-1433165-sf_data_out.md)
   Your function for handling outgoing data. May be null.
-- [sf_connect_in](sflt_filter/1433268-sf_connect_in.md)
+- [sf_connect_in](./api-1433268-sf_connect_in.md)
   Your function for handling inbound connections. May be null.
-- [sf_connect_out](sflt_filter/1433264-sf_connect_out.md)
+- [sf_connect_out](./api-1433264-sf_connect_out.md)
   Your function for handling outbound connections. May be null.
-- [sf_bind](sflt_filter/1433208-sf_bind.md)
+- [sf_bind](./api-1433208-sf_bind.md)
   Your function for handling binds. May be null.
-- [sf_setoption](sflt_filter/1433206-sf_setoption.md)
+- [sf_setoption](./api-1433206-sf_setoption.md)
   Your function for handling setsockopt. May be null.
-- [sf_getoption](sflt_filter/1433191-sf_getoption.md)
+- [sf_getoption](./api-1433191-sf_getoption.md)
   Your function for handling getsockopt. May be null.
-- [sf_listen](sflt_filter/1433202-sf_listen.md)
+- [sf_listen](./api-1433202-sf_listen.md)
   Your function for handling listen. May be null.
-- [sf_ioctl](sflt_filter/1433284-sf_ioctl.md)
+- [sf_ioctl](./api-1433284-sf_ioctl.md)
   Your function for handling ioctls. May be null.
-- [sf_len](sflt_filter/1809366-sf_len.md)
+- [sf_len](./api-1809366-sf_len.md)
   Length of socket filter extension structure; developers must initialize this to sizeof sflt_filter_ext structure. This field and all fields following it will only be valid if SFLT_EXTENDED flag is set in sf_flags field.
-- [sf_ext_accept](sflt_filter/1809374-sf_ext_accept.md)
+- [sf_ext_accept](./api-1809374-sf_ext_accept.md)
   Your function for handling inbound connections at accept time. May be null.
-- [sf_ext_rsvd](sflt_filter/1809385-sf_ext_rsvd.md)
+- [sf_ext_rsvd](./api-1809385-sf_ext_rsvd.md)
   Reserved for future use; you must initialize the reserved fields with zeroes.
 
 

@@ -1,7 +1,8 @@
 # SetName
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the name of the driver.
 
@@ -10,13 +11,13 @@ Sets the name of the driver.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetName(OSString *in_name);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -24,19 +25,20 @@ If the change succeeds, the framework sends a notification to the host to update
 
 ## Parameters
 
-- `in_name`: The name to set, as an [`OSString`](https://developer.apple.com/documentation/driverkit/osstring).
+- `in_name`: The name to set, as an [`OSString`](../../DriverKit/osstring.md).
 
 ## See Also
 
-- [GetClassID](iouseraudiodriver/getclassid.md)
+### Getting Information About the Class
+- [GetClassID](./getclassid.md)
   Gets the audio class identifier of the object.
-- [GetBaseClassID](iouseraudiodriver/getbaseclassid.md)
+- [GetBaseClassID](./getbaseclassid.md)
   Gets the audio class identifier of the base class object.
-- [IOUserAudioClassID](audiodriverkit/iouseraudioclassid.md)
+- [IOUserAudioClassID](../audiodriverkit-page/iouseraudioclassid.md)
   An identifier for the type of audio object.
-- [GetWorkQueue](iouseraudiodriver/getworkqueue.md)
+- [GetWorkQueue](./getworkqueue.md)
   Gets the work queue created by the audio object, as a pointer to a dispatch queue.
-- [GetName](iouseraudiodriver/getname.md)
+- [GetName](./getname.md)
   Gets the name of the driver.
 
 

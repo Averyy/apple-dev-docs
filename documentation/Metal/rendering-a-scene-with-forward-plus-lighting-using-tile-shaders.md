@@ -1,6 +1,8 @@
 # Rendering a scene with forward plus lighting using tile shaders
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [RenderingASceneWithForwardPlusLightingUsingTileShaders.zip](https://docs-assets.developer.apple.com/published/73528988a5ff/RenderingASceneWithForwardPlusLightingUsingTileShaders.zip)
 
 Implement a forward plus renderer using the latest features on Apple GPUs.
 
@@ -13,9 +15,9 @@ Implement a forward plus renderer using the latest features on Apple GPUs.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC 2019 session [`601: Modern Rendering with Metal`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/601/).
+> **Note**: This sample code project is associated with WWDC 2019 session [601: Modern Rendering with Metal](https://developer.apple.com/videos/play/wwdc19/601/).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To run the app:
 
@@ -24,13 +26,14 @@ To run the app:
 
 ## See Also
 
-- [Rendering a scene with deferred lighting in Objective-C](rendering-a-scene-with-deferred-lighting-in-objective-c.md)
+### Lighting techniques
+- [Rendering a scene with deferred lighting in Objective-C](./rendering-a-scene-with-deferred-lighting-in-objective-c.md)
   Avoid expensive lighting calculations by implementing a deferred lighting renderer optimized for immediate mode and tile-based deferred renderer GPUs.
-- [Rendering a scene with deferred lighting in Swift](rendering-a-scene-with-deferred-lighting-in-swift.md)
+- [Rendering a scene with deferred lighting in Swift](./rendering-a-scene-with-deferred-lighting-in-swift.md)
   Avoid expensive lighting calculations by implementing a deferred lighting renderer optimized for immediate mode and tile-based deferred renderer GPUs.
-- [Rendering a scene with deferred lighting in C++](rendering-a-scene-with-deferred-lighting-in-c++.md)
+- [Rendering a scene with deferred lighting in C++](./rendering-a-scene-with-deferred-lighting-in-cplusplus.md)
   Avoid expensive lighting calculations by implementing a deferred lighting renderer optimized for immediate mode and tile-based deferred renderer GPUs.
-- [Rendering reflections with fewer render passes](rendering-reflections-with-fewer-render-passes.md)
+- [Rendering reflections with fewer render passes](./rendering-reflections-with-fewer-render-passes.md)
   Use layer selection to reduce the number of render passes needed to generate an environment map.
 
 

@@ -1,16 +1,17 @@
 # indirectComputeCommand(at:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the compute command at the given index.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 14.0+
-- tvOS 13.0+
-- visionOS ?+
+- iOS 13.0+ - Deprecated in 14.0 (renamed: indirectComputeCommandAt)
+- iPadOS 13.0+ - Deprecated in 14.0 (renamed: indirectComputeCommandAt)
+- Mac Catalyst 14.0+ - Deprecated in 14.0 (renamed: indirectComputeCommandAt)
+- tvOS 13.0+ - Deprecated in 14.0 (renamed: indirectComputeCommandAt)
+- visionOS
 
 ## Declaration
 
@@ -28,9 +29,10 @@ Call this method only if the indirect command buffer contains compute commands.
 
 ## See Also
 
-- [func indirectRenderCommandAt(Int) -> any MTLIndirectRenderCommand](mtlindirectcommandbuffer/indirectrendercommandat(_:).md)
+### Retrieving commands
+- [func indirectRenderCommandAt(Int) -> any MTLIndirectRenderCommand](./indirectrendercommandat%28_%29.md)
   Gets the render command at the given index.
-- [func indirectComputeCommandAt(Int) -> any MTLIndirectComputeCommand](mtlindirectcommandbuffer/indirectcomputecommandat(_:).md)
+- [func indirectComputeCommandAt(Int) -> any MTLIndirectComputeCommand](./indirectcomputecommandat%28_%29.md)
   Gets the compute command at the given index.
 
 

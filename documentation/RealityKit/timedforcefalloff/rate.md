@@ -1,7 +1,8 @@
 # rate
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The temporal falloff / attenuation rate.
 

@@ -1,7 +1,8 @@
 # OwnershipProvidingEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that provides the system with ownership and sharing context for an app entity.
 
@@ -22,9 +23,9 @@ protocol OwnershipProvidingEntity : AppEntity
 
 #### Overview
 
-When your app passes app entities as parameters to an [`AppIntent`](appintent.md) and returns them from app intent results, people can use Apple Intelligence, Siri, and custom shortcuts to work with those entities across apps. For destructive or sensitive actions like deleting or updating an app entity, your app can require a person’s confirmation. Additionally, Apple Intelligence and Siri may also request a person’s confirmation. Conform your app entities to [`OwnershipProvidingEntity`](ownershipprovidingentity.md) so the system prompts for confirmation — with appropriate context in the confirmation dialog — when an intent acts on shared or publicly accessible app entities.
+When your app passes app entities as parameters to an [`AppIntent`](./appintent.md) and returns them from app intent results, people can use Apple Intelligence, Siri, and custom shortcuts to work with those entities across apps. For destructive or sensitive actions like deleting or updating an app entity, your app can require a person’s confirmation. Additionally, Apple Intelligence and Siri may also request a person’s confirmation. Conform your app entities to [`OwnershipProvidingEntity`](./ownershipprovidingentity.md) so the system prompts for confirmation — with appropriate context in the confirmation dialog — when an intent acts on shared or publicly accessible app entities.
 
-The following example shows an app entity for a photo album that updates its [`ownership`](ownershipprovidingentity/ownership.md) based on whether a person shares the album with their family or publishes it publicly:
+The following example shows an app entity for a photo album that updates its [`ownership`](./ownershipprovidingentity/ownership.md) based on whether a person shares the album with their family or publishes it publicly:
 
 ```swift
 @AppEntity(schema: .photos.album)
@@ -54,41 +55,42 @@ struct PhotoAlbumEntity: OwnershipProvidingEntity {
 ## Topics
 
 ### Instance Properties
-- [var ownership: EntityOwnership](ownershipprovidingentity/ownership.md)
+- [var ownership: EntityOwnership](./ownershipprovidingentity/ownership.md)
   The sharing and ownership state of the entity.
 
 ## Relationships
 
 ### Inherits From
-- [AppEntity](appentity.md)
-- [AppValue](appvalue.md)
-- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
-- [DisplayRepresentable](displayrepresentable.md)
-- [Identifiable](../swift/identifiable.md)
-- [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TypeDisplayRepresentable](typedisplayrepresentable.md)
+- [AppEntity](./appentity.md)
+- [AppValue](./appvalue.md)
+- [CustomLocalizedStringResourceConvertible](../Foundation/customlocalizedstringresourceconvertible.md)
+- [DisplayRepresentable](./displayrepresentable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [InstanceDisplayRepresentable](./instancedisplayrepresentable.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TypeDisplayRepresentable](./typedisplayrepresentable.md)
 
 ## See Also
 
-- [protocol AppEntity](appentity.md)
+### App entity types
+- [protocol AppEntity](./appentity.md)
   An interface for making a custom type or app-specific concept discoverable by Apple Intelligence and experiences like Siri or the Shortcuts app.
-- [protocol FileEntity](fileentity.md)
+- [protocol FileEntity](./fileentity.md)
   An entity that refers to a document or other file.
-- [protocol IndexedEntity](indexedentity.md)
+- [protocol IndexedEntity](./indexedentity.md)
   An interface that allows you to include an entity in your app’s Spotlight index.
-- [protocol SyncableEntity](syncableentity.md)
+- [protocol SyncableEntity](./syncableentity.md)
   An interface that indicates your entity has an identifier that’s consistent across devices.
-- [protocol TransientAppEntity](transientappentity.md)
+- [protocol TransientAppEntity](./transientappentity.md)
   A type that represents a transient model object which exposes its interface to App Intents via properties. Note that `TransientAppEntity` types are not meant to be queried.
-- [protocol UniqueAppEntity](uniqueappentity.md)
+- [protocol UniqueAppEntity](./uniqueappentity.md)
   An AppEntity subtype for entities that only have a single instance.
-- [macro UnionValue()](unionvalue().md)
-- [protocol AppUnionValue](appunionvalue.md)
+- [macro UnionValue()](./unionvalue%28%29.md)
+- [protocol AppUnionValue](./appunionvalue.md)
   A protocol that provides nominal type identity and metadata for union values.
-- [protocol AppUnionValueCasesProviding](appunionvaluecasesproviding.md)
+- [protocol AppUnionValueCasesProviding](./appunionvaluecasesproviding.md)
   A protocol for the cases enumeration of an `AppUnionValue`.
 
 

@@ -1,17 +1,22 @@
 # setupPanel(_:deviceContainsSuitableMedia:promptString:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This delegate method allows the delegate to determine if the media inserted in the device is suitable for whatever operation is to be performed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setupPanel(_ aPanel: DRSetupPanel!, deviceContainsSuitableMedia device: DRDevice!, promptString prompt: AutoreleasingUnsafeMutablePointer<NSString?>!) -> Bool
+```
+
+```objc
+- (BOOL) setupPanel:(DRSetupPanel *) aPanel deviceContainsSuitableMedia:(DRDevice *) device promptString:(NSString **) prompt;
 ```
 
 #### Return Value

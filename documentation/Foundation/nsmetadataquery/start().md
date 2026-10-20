@@ -1,7 +1,8 @@
 # start()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to start the query.
 
@@ -20,17 +21,21 @@ Attempts to start the query.
 func start() -> Bool
 ```
 
+```objc
+- (BOOL) startQuery;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) when successful; otherwise, [`false`](../../Swift/false.md).
 
-A query may fail to start if it does not specify a [`predicate`](nsmetadataquery/predicate.md), or if the query has already been started.
+A query may fail to start if it does not specify a [`predicate`](./predicate.md), or if the query has already been started.
 
 #### Discussion
 
 A query can’t be started if the receiver is already running a query or no predicate has been specified.
 
-This method must be called from the receiver’s [`operationQueue`](nsmetadataquery/operationqueue.md) or on the main thread. For example:
+This method must be called from the receiver’s [`operationQueue`](./operationqueue.md) or on the main thread. For example:
 
 **Swift**:
 
@@ -52,13 +57,14 @@ NSMetadataQuery *query = // Initialize and set up a query
 
 ## See Also
 
-- [var isStarted: Bool](nsmetadataquery/isstarted.md)
+### Running queries
+- [var isStarted: Bool](./isstarted.md)
   A Boolean value that indicates whether the query has started. (read-only)
-- [var isGathering: Bool](nsmetadataquery/isgathering.md)
+- [var isGathering: Bool](./isgathering.md)
   A Boolean value that indicates whether the receiver is in the initial gathering phase of the query. (read-only)
-- [var isStopped: Bool](nsmetadataquery/isstopped.md)
+- [var isStopped: Bool](./isstopped.md)
   A Boolean value that indicates whether the query has stopped.
-- [func stop()](nsmetadataquery/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops the receiver’s current query from gathering any further results.
 
 

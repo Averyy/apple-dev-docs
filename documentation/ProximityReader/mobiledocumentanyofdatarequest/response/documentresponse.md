@@ -1,7 +1,8 @@
 # documentResponse
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The document response from a successful request.
 

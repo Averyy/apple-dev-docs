@@ -1,7 +1,8 @@
 # takeOwnership
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The file system allows taking ownership of a file.
 
@@ -12,6 +13,10 @@ The file system allows taking ownership of a file.
 
 ```swift
 static var takeOwnership: FSVolume.AccessMask { get }
+```
+
+```c
+FSAccessTakeOwnership
 ```
 
 

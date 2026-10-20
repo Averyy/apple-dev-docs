@@ -1,7 +1,8 @@
 # kAXValueCGSizeType
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.11+
@@ -10,6 +11,10 @@
 
 ```swift
 let kAXValueCGSizeType: UInt32
+```
+
+```c
+const UInt32 kAXValueCGSizeType;
 ```
 
 

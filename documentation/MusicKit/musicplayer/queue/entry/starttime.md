@@ -1,7 +1,8 @@
 # startTime
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional start time for this entry of the playback queue.
 

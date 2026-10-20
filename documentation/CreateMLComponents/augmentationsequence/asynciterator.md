@@ -1,7 +1,8 @@
 # AugmentationSequence.AsyncIterator
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The iterator that produces elements in the augmentation sequence.
 
@@ -20,16 +21,18 @@ The iterator that produces elements in the augmentation sequence.
 struct AsyncIterator
 ```
 
+Available when `Base` conforms to `Sequence`, `RandomTransformer` conforms to `RandomTransformer`, `RandomNumberGenerator` conforms to `RandomNumberGenerator`, `Base.Element` is `AnnotatedFeature<RandomTransformer.Input, Annotation>`, and `RandomTransformer.Input` is `RandomTransformer.Output`.
+
 ## Topics
 
 ### Getting the next element
-- [func next() async throws -> Base.Element?](augmentationsequence/asynciterator/next.md)
+- [func next() async throws -> Base.Element?](./asynciterator/next%28%29.md)
   Produces the next element in the augmentation sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../Swift/asynciteratorprotocol.md)
 
 
 ---

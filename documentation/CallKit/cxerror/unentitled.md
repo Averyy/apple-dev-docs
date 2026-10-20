@@ -1,7 +1,8 @@
 # unentitled
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The caller doesn’t have the correct entitlement.
 
@@ -20,9 +21,10 @@ static var unentitled: CXError.Code { get }
 
 ## See Also
 
-- [static var invalidArgument: CXError.Code](cxerror/invalidargument.md)
+### Constants
+- [static var invalidArgument: CXError.Code](./invalidargument.md)
   The argument is invalid.
-- [static var unknownError: CXError.Code](cxerror/unknownerror.md)
+- [static var unknownError: CXError.Code](./unknownerror.md)
   An unknown error occurred.
 
 

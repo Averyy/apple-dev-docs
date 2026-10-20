@@ -1,7 +1,8 @@
 # zeroPadSizeX
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 10.0+
@@ -17,9 +18,14 @@
 var zeroPadSizeX: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger zeroPadSizeX;
+```
+
 ## See Also
 
-- [var zeroPadSizeY: Int](mpscnnpoolingaverage/zeropadsizey.md)
+### Instance Properties
+- [var zeroPadSizeY: Int](./zeropadsizey.md)
 
 
 ---

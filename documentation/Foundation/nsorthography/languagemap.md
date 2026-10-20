@@ -1,7 +1,8 @@
 # languageMap
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary that maps script tags to arrays of language tags.
 
@@ -20,23 +21,28 @@ A dictionary that maps script tags to arrays of language tags.
 var languageMap: [String : [String]] { get }
 ```
 
+```objc
+@property (copy, readonly) NSDictionary<NSString *,NSArray<NSString *> *> * languageMap;
+```
+
 #### Discussion
 
 The dictionary’s keys are ISO 15924 script codes (such as `"Latn"` or `"Cyrl"`) and its values are arrays of BCP-47 language tags (such as `"en"`, `"fr"`, or `"de"`).
 
 ## See Also
 
-- [var dominantLanguage: String](nsorthography/dominantlanguage.md)
+### Determining Correspondences Between Languages and Scripts
+- [var dominantLanguage: String](./dominantlanguage.md)
   The first language in the list of languages for the dominant script.
-- [var dominantScript: String](nsorthography/dominantscript.md)
+- [var dominantScript: String](./dominantscript.md)
   The dominant script for the text.
-- [func dominantLanguage(forScript: String) -> String?](nsorthography/dominantlanguage(forscript:).md)
+- [func dominantLanguage(forScript: String) -> String?](./dominantlanguage%28forscript%29.md)
   Returns the dominant language for the specified script.
-- [func languages(forScript: String) -> [String]?](nsorthography/languages(forscript:).md)
+- [func languages(forScript: String) -> [String]?](./languages%28forscript%29.md)
   Returns the list of languages for the specified script.
-- [var allScripts: [String]](nsorthography/allscripts.md)
+- [var allScripts: [String]](./allscripts.md)
   The scripts appearing as keys in the language map.
-- [var allLanguages: [String]](nsorthography/alllanguages.md)
+- [var allLanguages: [String]](./alllanguages.md)
   The languages appearing in values of the language map.
 
 

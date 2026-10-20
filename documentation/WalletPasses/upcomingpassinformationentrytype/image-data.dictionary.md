@@ -1,7 +1,8 @@
 # UpcomingPassInformationEntryType.Image
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents the image shown within the detail views of upcoming pass information entries.
 
@@ -12,7 +13,7 @@ An object that represents the image shown within the detail views of upcoming pa
 
 ## Declaration
 
-```swift
+```
 object UpcomingPassInformationEntryType.Image
 ```
 
@@ -23,7 +24,8 @@ object UpcomingPassInformationEntryType.Image
 
 ## See Also
 
-- [object UpcomingPassInformationEntryType.ImageURLEntry](upcomingpassinformationentrytype/imageurlentry-data.dictionary.md)
+### Adding data for the type of multievent pass entry
+- [object UpcomingPassInformationEntryType.ImageURLEntry](./imageurlentry-data.dictionary.md)
   An object that represents the image specifications for the upcoming pass information entry.
 
 

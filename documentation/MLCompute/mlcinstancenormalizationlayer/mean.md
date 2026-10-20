@@ -1,16 +1,17 @@
 # mean
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The running mean tensor.
 
 **Availability**:
-- iOS 14.5+
-- iPadOS 14.5+
-- Mac Catalyst 14.5+
-- macOS 11.3+
-- tvOS 14.5+
+- iOS 14.5+ - Deprecated in 17.4
+- iPadOS 14.5+ - Deprecated in 17.4
+- Mac Catalyst 14.5+ - Deprecated in 17.4
+- macOS 11.3+ - Deprecated in 14.3
+- tvOS 14.5+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,23 +19,28 @@ The running mean tensor.
 var mean: MLCTensor? { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly, nullable) MLCTensor * mean;
+```
+
 ## See Also
 
-- [var beta: MLCTensor?](mlcinstancenormalizationlayer/beta.md)
+### Inspecting Instance Normalization Layers
+- [var beta: MLCTensor?](./beta.md)
   The beta tensor.
-- [var betaParameter: MLCTensorParameter?](mlcinstancenormalizationlayer/betaparameter.md)
+- [var betaParameter: MLCTensorParameter?](./betaparameter.md)
   The beta tensor parameter you use for optimizer updates.
-- [var featureChannelCount: Int](mlcinstancenormalizationlayer/featurechannelcount.md)
+- [var featureChannelCount: Int](./featurechannelcount.md)
   The number of feature channels.
-- [var gamma: MLCTensor?](mlcinstancenormalizationlayer/gamma.md)
+- [var gamma: MLCTensor?](./gamma.md)
   The gamma tensor.
-- [var gammaParameter: MLCTensorParameter?](mlcinstancenormalizationlayer/gammaparameter.md)
+- [var gammaParameter: MLCTensorParameter?](./gammaparameter.md)
   The gamma tensor parameter you use for optimizer updates.
-- [var momentum: Float](mlcinstancenormalizationlayer/momentum.md)
+- [var momentum: Float](./momentum.md)
   The momentum value for the running mean and variance computation.
-- [var variance: MLCTensor?](mlcinstancenormalizationlayer/variance.md)
+- [var variance: MLCTensor?](./variance.md)
   The running variance tensor.
-- [var varianceEpsilon: Float](mlcinstancenormalizationlayer/varianceepsilon.md)
+- [var varianceEpsilon: Float](./varianceepsilon.md)
   The variance epsilon you use for numerical stability.
 
 

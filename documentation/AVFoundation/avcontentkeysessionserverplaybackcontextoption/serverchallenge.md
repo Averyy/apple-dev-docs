@@ -1,7 +1,8 @@
 # serverChallenge
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies a nonce to include in the secure server playback context (SPC) to prevent replay attacks.
 
@@ -20,13 +21,18 @@ Specifies a nonce to include in the secure server playback context (SPC) to prev
 static let serverChallenge: AVContentKeySessionServerPlaybackContextOption
 ```
 
+```c
+extern AVContentKeySessionServerPlaybackContextOption const AVContentKeySessionServerPlaybackContextOptionServerChallenge;
+```
+
 #### Discussion
 
-Specify this value as an 8-byte [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object. If you don’t specify a value for this key, the system assumes a default server challenge of `0`.
+Specify this value as an 8-byte [`NSData`](../../Foundation/nsdata.md) object. If you don’t specify a value for this key, the system assumes a default server challenge of `0`.
 
 ## See Also
 
-- [static let protocolVersions: AVContentKeySessionServerPlaybackContextOption](avcontentkeysessionserverplaybackcontextoption/protocolversions.md)
+### Server playback context options
+- [static let protocolVersions: AVContentKeySessionServerPlaybackContextOption](./protocolversions.md)
   Specifies the versions of the content protection protocols supported by the application.
 
 

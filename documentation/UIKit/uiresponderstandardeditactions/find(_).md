@@ -1,7 +1,8 @@
 # find(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins a search for content in your app’s interface.
 
@@ -18,11 +19,15 @@ Begins a search for content in your app’s interface.
 optional func find(_ sender: Any?)
 ```
 
+```objc
+- (void) find:(id) sender;
+```
+
 #### Discussion
 
 UIKit calls this method when the user selects the Find command from an editing menu. Your implementation should present the UI for finding textual content in your view.
 
-For example, a view using a find interaction might call [`presentFindNavigator(showingReplace:)`](uifindinteraction/presentfindnavigator(showingreplace:).md) to present the system find panel.
+For example, a view using a find interaction might call [`presentFindNavigator(showingReplace:)`](../uifindinteraction/presentfindnavigator%28showingreplace%29.md) to present the system find panel.
 
 ## Parameters
 
@@ -30,13 +35,14 @@ For example, a view using a find interaction might call [`presentFindNavigator(s
 
 ## See Also
 
-- [func findNext(Any?)](uiresponderstandardeditactions/findnext(_:).md)
+### Handling find and replace commands
+- [func findNext(Any?)](./findnext%28_%29.md)
   Finds the next match in your app’s interface.
-- [func findPrevious(Any?)](uiresponderstandardeditactions/findprevious(_:).md)
+- [func findPrevious(Any?)](./findprevious%28_%29.md)
   Finds the previous match in your app’s interface.
-- [func findAndReplace(Any?)](uiresponderstandardeditactions/findandreplace(_:).md)
+- [func findAndReplace(Any?)](./findandreplace%28_%29.md)
   Begins a search for content in your app’s interface and provides a replacement.
-- [func useSelectionForFind(Any?)](uiresponderstandardeditactions/useselectionforfind(_:).md)
+- [func useSelectionForFind(Any?)](./useselectionforfind%28_%29.md)
   Begins a search for the selected content in your app’s interface.
 
 

@@ -1,7 +1,8 @@
 # removeAll()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove all the skeletons.
 

@@ -1,7 +1,8 @@
 # contact
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contact that the user updated.
 
@@ -17,6 +18,10 @@ The contact that the user updated.
 
 ```swift
 var contact: CNContact { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) CNContact * contact;
 ```
 
 

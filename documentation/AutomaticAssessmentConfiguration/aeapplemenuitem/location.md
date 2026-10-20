@@ -1,7 +1,8 @@
 # location
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Location item.
 
@@ -13,6 +14,10 @@ The Location item.
 
 ```swift
 static let location: AEAppleMenuItem
+```
+
+```c
+extern AEAppleMenuItem const AEAppleMenuItemLocation;
 ```
 
 

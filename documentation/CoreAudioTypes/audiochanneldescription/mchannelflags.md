@@ -1,7 +1,8 @@
 # mChannelFlags
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio channel flags that indicate how to interpret the channel coordinates.
 
@@ -20,24 +21,29 @@ The audio channel flags that indicate how to interpret the channel coordinates.
 var mChannelFlags: AudioChannelFlags
 ```
 
+```c
+AudioChannelFlags mChannelFlags;
+```
+
 #### Discussion
 
-See [`Audio Channel Coordinates`](audio-channel-coordinates.md) for possible values.
+See [Audio Channel Coordinates](../audio-channel-coordinates.md) for possible values.
 
 ## See Also
 
-- [var mChannelLabel: AudioChannelLabel](audiochanneldescription/mchannellabel.md)
+### Accessing the Data
+- [var mChannelLabel: AudioChannelLabel](./mchannellabel.md)
   A label that describes the audio channel.
-- [var mCoordinates: (Float32, Float32, Float32)](audiochanneldescription/mcoordinates.md)
+- [var mCoordinates: (Float32, Float32, Float32)](./mcoordinates.md)
   The coordinates that specify a precise speaker location.
-- [typealias AudioChannelLabel](audiochannellabel.md)
+- [typealias AudioChannelLabel](../audiochannellabel.md)
   Identifies how an audio data channel is to be used.
-- [Audio Channel Coordinates](audio-channel-coordinates.md)
-  Used in the `mChannelFlags` field of an [`AudioChannelDescription`](audiochanneldescription.md) structure.
-- [struct AudioChannelFlags](audiochannelflags.md)
+- [Audio Channel Coordinates](../audio-channel-coordinates.md)
+  Used in the `mChannelFlags` field of an [`AudioChannelDescription`](../audiochanneldescription.md) structure.
+- [struct AudioChannelFlags](../audiochannelflags.md)
   Constants that define the audio channel flags of an audio channel description.
-- [Audio Channel Labels](audio-channel-labels.md)
-  Channel labels for use in the `mChannelLabel` field of an [`AudioChannelDescription`](audiochanneldescription.md) structure.
+- [Audio Channel Labels](../audio-channel-labels.md)
+  Channel labels for use in the `mChannelLabel` field of an [`AudioChannelDescription`](../audiochanneldescription.md) structure.
 
 
 ---

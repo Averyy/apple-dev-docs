@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of the speech recognition task.
 
@@ -18,15 +19,20 @@ The current state of the speech recognition task.
 var state: SFSpeechRecognitionTaskState { get }
 ```
 
+```objc
+@property (nonatomic, readonly) SFSpeechRecognitionTaskState state;
+```
+
 #### Discussion
 
-Check the value of this property to get the state of the in-progress speech recognition session. For valid values, see [`SFSpeechRecognitionTaskState`](sfspeechrecognitiontaskstate.md).
+Check the value of this property to get the state of the in-progress speech recognition session. For valid values, see [`SFSpeechRecognitionTaskState`](../sfspeechrecognitiontaskstate.md).
 
 ## See Also
 
-- [enum SFSpeechRecognitionTaskState](sfspeechrecognitiontaskstate.md)
+### Monitoring recognition progress
+- [enum SFSpeechRecognitionTaskState](../sfspeechrecognitiontaskstate.md)
   The state of the task associated with the recognition request.
-- [var error: (any Error)?](sfspeechrecognitiontask/error.md)
+- [var error: (any Error)?](./error.md)
   An error object that specifies the error that occurred during a speech recognition task.
 
 

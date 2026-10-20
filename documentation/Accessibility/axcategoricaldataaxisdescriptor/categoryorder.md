@@ -1,7 +1,8 @@
 # categoryOrder
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of every category value for the axis in the order they appear visually in the graph or legend.
 
@@ -18,6 +19,10 @@ A list of every category value for the axis in the order they appear visually in
 
 ```swift
 var categoryOrder: [String] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray<NSString *> * categoryOrder;
 ```
 
 #### Discussion

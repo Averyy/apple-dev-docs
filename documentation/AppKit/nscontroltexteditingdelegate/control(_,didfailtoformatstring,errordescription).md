@@ -1,12 +1,13 @@
 # control(_:didFailToFormatString:errorDescription:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when the formatter for the cell belonging to the specified control cannot convert a string to an underlying object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Invoked when the formatter for the cell belonging to the specified control canno
 optional func control(_ control: NSControl, didFailToFormatString string: String, errorDescription error: String?) -> Bool
 ```
 
+```objc
+- (BOOL) control:(NSControl *) control didFailToFormatString:(NSString *) string errorDescription:(NSString *) error;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the value in the string parameter should be accepted as is; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) if the value in the parameter should be rejected.
+[`true`](../../Swift/true.md) if the value in the string parameter should be accepted as is; otherwise, [`false`](../../Swift/false.md) if the value in the parameter should be rejected.
 
 #### Discussion
 
@@ -31,7 +36,8 @@ Your implementation of this method should evaluate the error or query the user a
 
 ## See Also
 
-- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](../foundation/formatter/getobjectvalue(_:for:errordescription:).md)
+### Related Documentation
+- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](../../Foundation/formatter/getobjectvalue%28_,for,errordescription%29.md)
   The default implementation of this method raises an exception.
 
 

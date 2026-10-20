@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: SMS and Call Reporting  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+

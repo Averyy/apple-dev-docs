@@ -1,7 +1,8 @@
 # noChecksumPreferred(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Skip computing checksums when sending UDP packets.
 

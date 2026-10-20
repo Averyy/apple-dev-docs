@@ -1,7 +1,8 @@
 # MusicDeveloperTokenProvider
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that music requests use to access Apple Music API.
 
@@ -23,28 +24,29 @@ protocol MusicDeveloperTokenProvider : Sendable
 ## Topics
 
 ### Instance Methods
-- [func developerToken(options: MusicTokenRequestOptions) async throws -> String](musicdevelopertokenprovider/developertoken(options:).md)
+- [func developerToken(options: MusicTokenRequestOptions) async throws -> String](./musicdevelopertokenprovider/developertoken%28options%29.md)
   Fetches and returns a developer token for Apple Music API.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [DefaultMusicTokenProvider](defaultmusictokenprovider.md)
+- [DefaultMusicTokenProvider](./defaultmusictokenprovider.md)
 
 ## See Also
 
-- [typealias MusicTokenProvider](musictokenprovider.md)
+### Token management
+- [typealias MusicTokenProvider](./musictokenprovider.md)
   An object that music requests use to access Apple Music API.
-- [class MusicUserTokenProvider](musicusertokenprovider.md)
+- [class MusicUserTokenProvider](./musicusertokenprovider.md)
   A class that music requests use to fetch user tokens your app requires to access Apple Music API.
-- [struct MusicTokenRequestOptions](musictokenrequestoptions.md)
+- [struct MusicTokenRequestOptions](./musictokenrequestoptions.md)
   Options that music requests pass into token provider methods to fetch a required token for accessing Apple Music API.
-- [enum MusicTokenRequestError](musictokenrequesterror.md)
+- [enum MusicTokenRequestError](./musictokenrequesterror.md)
   An error that the token provider or music requests can throw upon requesting any token necessary for accessing Apple Music API.
-- [class DefaultMusicTokenProvider](defaultmusictokenprovider.md)
+- [class DefaultMusicTokenProvider](./defaultmusictokenprovider.md)
   The default token provider that music requests use to access Apple Music API.
 
 

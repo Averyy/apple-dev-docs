@@ -1,7 +1,8 @@
 # animationDuration()
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the animation duration used by all animations within this transaction group.
 
@@ -19,21 +20,26 @@ Returns the animation duration used by all animations within this transaction gr
 class func animationDuration() -> CFTimeInterval
 ```
 
+```objc
++ (CFTimeInterval) animationDuration;
+```
+
 #### Return Value
 
 An interval of time used as the duration.
 
 #### Discussion
 
-You can retrieve the animation duration for a specific transaction by calling the [`value(forKey:)`](catransaction/value(forkey:).md) method of the transaction object and asking for the [`kCATransactionAnimationDuration`](kcatransactionanimationduration.md) key.
+You can retrieve the animation duration for a specific transaction by calling the [`value(forKey:)`](./value%28forkey%29.md) method of the transaction object and asking for the [`kCATransactionAnimationDuration`](../kcatransactionanimationduration.md) key.
 
 ## See Also
 
-- [class func setAnimationDuration(CFTimeInterval)](catransaction/setanimationduration(_:).md)
+### Overriding Animation Duration and Timing
+- [class func setAnimationDuration(CFTimeInterval)](./setanimationduration%28_%29.md)
   Sets the animation duration used by all animations within this transaction group.
-- [class func animationTimingFunction() -> CAMediaTimingFunction?](catransaction/animationtimingfunction.md)
+- [class func animationTimingFunction() -> CAMediaTimingFunction?](./animationtimingfunction%28%29.md)
   Returns the timing function used for all animations within this transaction group.
-- [class func setAnimationTimingFunction(CAMediaTimingFunction?)](catransaction/setanimationtimingfunction(_:).md)
+- [class func setAnimationTimingFunction(CAMediaTimingFunction?)](./setanimationtimingfunction%28_%29.md)
   Sets the timing function used for all animations within this transaction group.
 
 

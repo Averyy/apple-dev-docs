@@ -1,7 +1,8 @@
 # MERAWProcessingParameter.List
 
 **Framework**: MediaExtension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes a list parameter of a RAW processor.
 
@@ -14,45 +15,50 @@ An object that describes a list parameter of a RAW processor.
 class List
 ```
 
+```objc
+@interface MERAWProcessingListParameter : MERAWProcessingParameter
+```
+
 ## Topics
 
 ### Creating a list parameter object
-- [convenience init(name: String, key: String, description: String, list: [MERAWProcessingParameter.ListElement], initialValue: Int, neutralValue: Int?, cameraValue: Int?)](merawprocessingparameter/list/init(name:key:description:list:initialvalue:neutralvalue:cameravalue:).md)
+- [convenience init(name: String, key: String, description: String, list: [MERAWProcessingParameter.ListElement], initialValue: Int, neutralValue: Int?, cameraValue: Int?)](./list/init%28name,key,description,list,initialvalue,neutralvalue,cameravalue%29.md)
   Creates a list parameter object.
 ### Properties
-- [var currentValue: Int](merawprocessingparameter/list/currentvalue.md)
+- [var currentValue: Int](./list/currentvalue.md)
   Get or set the current value for this parameter.
-- [var initialValue: Int](merawprocessingparameter/list/initialvalue.md)
+- [var initialValue: Int](./list/initialvalue.md)
   The initial value for this parameter as defined in the sequence metadata.
-- [var listElements: [MERAWProcessingParameter.ListElement]](merawprocessingparameter/list/listelements.md)
+- [var listElements: [MERAWProcessingParameter.ListElement]](./list/listelements.md)
   The ordered array of `MERAWProcessingListElementParameter` which make up this list.
 ### Instance Properties
-- [var cameraValue: Int?](merawprocessingparameter/list/cameravalue.md)
-- [var neutralValue: Int?](merawprocessingparameter/list/neutralvalue.md)
+- [var cameraValue: Int?](./list/cameravalue.md)
+- [var neutralValue: Int?](./list/neutralvalue.md)
 
 ## Relationships
 
 ### Inherits From
-- [MERAWProcessingParameter](merawprocessingparameter.md)
+- [MERAWProcessingParameter](../merawprocessingparameter.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [MERAWProcessingParameter.Boolean](merawprocessingparameter/boolean.md)
+### Processing parameters
+- [MERAWProcessingParameter.Boolean](./boolean.md)
   An object that describes a Boolean parameter of a RAW processor.
-- [MERAWProcessingParameter.FloatingPoint](merawprocessingparameter/floatingpoint.md)
+- [MERAWProcessingParameter.FloatingPoint](./floatingpoint.md)
   An object that describes a floating-point parameter of a RAW processor.
-- [MERAWProcessingParameter.Integer](merawprocessingparameter/integer.md)
+- [MERAWProcessingParameter.Integer](./integer.md)
   An object that describes an integer parameter of a RAW processor.
-- [MERAWProcessingParameter.ListElement](merawprocessingparameter/listelement.md)
+- [MERAWProcessingParameter.ListElement](./listelement.md)
   An object that describes a list element parameter of a RAW processor.
-- [MERAWProcessingParameter.SubGroup](merawprocessingparameter/subgroup.md)
+- [MERAWProcessingParameter.SubGroup](./subgroup.md)
   An object that describes a sub group parameter of a RAW processor.
 
 

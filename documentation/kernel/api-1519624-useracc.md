@@ -1,14 +1,15 @@
 # useracc
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 int useracc(user_addr_ut addr, user_size_ut len, int prot);
 ```
 

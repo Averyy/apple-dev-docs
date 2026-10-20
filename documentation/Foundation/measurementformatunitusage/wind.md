@@ -1,7 +1,8 @@
 # wind
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Describes the unit for wind speed
 
@@ -19,6 +20,8 @@ Describes the unit for wind speed
 ```swift
 static var wind: MeasurementFormatUnitUsage<UnitSpeed> { get }
 ```
+
+Available when `UnitType` is `UnitSpeed`.
 
 
 ---

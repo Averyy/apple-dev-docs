@@ -1,7 +1,8 @@
 # automaticallyAdjustsVideoMirroring
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you can enable mirroring based on a session’s configuration.
 
@@ -18,17 +19,22 @@ A Boolean value that indicates whether you can enable mirroring based on a sessi
 var automaticallyAdjustsVideoMirroring: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL automaticallyAdjustsVideoMirroring;
+```
+
 #### Discussion
 
-For some session configurations, the connection mirrors the video data by default. When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the value of [`isVideoMirrored`](avcaptureconnection/isvideomirrored.md) may change, depending on the configuration of the session. For example, the value may change after switching to a different capture device input.
+For some session configurations, the connection mirrors the video data by default. When the value of this property is [`true`](../../Swift/true.md), the value of [`isVideoMirrored`](./isvideomirrored.md) may change, depending on the configuration of the session. For example, the value may change after switching to a different capture device input.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var isVideoMirroringSupported: Bool](avcaptureconnection/isvideomirroringsupported.md)
+### Mirroring a video
+- [var isVideoMirroringSupported: Bool](./isvideomirroringsupported.md)
   A Boolean value that indicates whether the connection supports video mirroring.
-- [var isVideoMirrored: Bool](avcaptureconnection/isvideomirrored.md)
+- [var isVideoMirrored: Bool](./isvideomirrored.md)
   A Boolean value that indicates whether the connection horizontally flips the video flowing through it.
 
 

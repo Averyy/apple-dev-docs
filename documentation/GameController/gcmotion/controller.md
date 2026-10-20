@@ -1,7 +1,8 @@
 # controller
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller for the profile.
 
@@ -17,6 +18,10 @@ The controller for the profile.
 
 ```swift
 weak var controller: GCController? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly) GCController * controller;
 ```
 
 

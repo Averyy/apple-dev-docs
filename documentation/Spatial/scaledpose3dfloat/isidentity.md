@@ -1,7 +1,8 @@
 # isIdentity
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns true if the scaled pose is the identity pose.
 

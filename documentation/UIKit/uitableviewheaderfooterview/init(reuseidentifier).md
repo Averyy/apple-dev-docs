@@ -1,7 +1,8 @@
 # init(reuseIdentifier:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a header-footer view with the specified reuse identifier.
 
@@ -9,7 +10,7 @@ Initializes a header-footer view with the specified reuse identifier.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Initializes a header-footer view with the specified reuse identifier.
 init(reuseIdentifier: String?)
 ```
 
+```objc
+- (instancetype) initWithReuseIdentifier:(NSString *) reuseIdentifier;
+```
+
 #### Return Value
 
-An initialized [`UITableViewHeaderFooterView`](uitableviewheaderfooterview.md) object or `nil` if the object could not be created.
+An initialized [`UITableViewHeaderFooterView`](../uitableviewheaderfooterview.md) object or `nil` if the object could not be created.
 
 #### Discussion
 
@@ -32,7 +37,8 @@ Once set, you can’t change the reuse identifier for the returned view object.
 
 ## See Also
 
-- [init?(coder: NSCoder)](uitableviewheaderfooterview/init(coder:).md)
+### Creating the view
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a header-footer view from data in an unarchiver.
 
 

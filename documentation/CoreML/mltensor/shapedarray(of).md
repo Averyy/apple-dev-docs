@@ -1,7 +1,8 @@
 # shapedArray(of:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a materialized representation of the tensor.
 

@@ -1,7 +1,8 @@
 # handAnchors(at:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Queries for hand anchors at the provided target timestamp.
 
@@ -28,9 +29,10 @@ A tuple that contains optional left and right anchors for the given time. Anchor
 
 ## See Also
 
-- [var state: DataProviderState](handtrackingprovider/state.md)
+### Inspecting a hand-tracking provider
+- [var state: DataProviderState](./state.md)
   The current status of data coming from a provider.
-- [var description: String](handtrackingprovider/description.md)
+- [var description: String](./description.md)
   A textual representation of this hand tracking provider.
 
 

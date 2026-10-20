@@ -1,7 +1,8 @@
 # isEmitting
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Disables/enables particle emission, independent of `simulationState`. Existing particles will not be affected.
 

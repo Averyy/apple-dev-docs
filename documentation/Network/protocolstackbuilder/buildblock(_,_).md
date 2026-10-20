@@ -1,7 +1,8 @@
 # buildBlock(_:_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 26.0+

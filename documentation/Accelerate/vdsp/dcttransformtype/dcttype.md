@@ -1,7 +1,8 @@
 # dctType
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vDSP DCT type of this value.
 
@@ -11,7 +12,7 @@ The vDSP DCT type of this value.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

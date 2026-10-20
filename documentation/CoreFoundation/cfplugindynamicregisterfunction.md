@@ -1,18 +1,19 @@
 # CFPlugInDynamicRegisterFunction
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A callback which provides a plug-in the opportunity to dynamically register its types with a host.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ A callback which provides a plug-in the opportunity to dynamically register its 
 typealias CFPlugInDynamicRegisterFunction = (CFPlugIn?) -> Void
 ```
 
+```c
+typedef void (*)(struct __CFBundle *) CFPlugInDynamicRegisterFunction;
+```
+
 #### Discussion
 
-This callback is called as a plug-in is being loaded. This provides the plugin the means to dynamically register its types and factories with a plug-in’s host. The call is triggered by the presence of [`kCFPlugInDynamicRegistrationKey`](kcfplugindynamicregistrationkey.md) in the plug-in’s information property list.
+This callback is called as a plug-in is being loaded. This provides the plugin the means to dynamically register its types and factories with a plug-in’s host. The call is triggered by the presence of [`kCFPlugInDynamicRegistrationKey`](./kcfplugindynamicregistrationkey.md) in the plug-in’s information property list.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ This callback is called as a plug-in is being loaded. This provides the plugin t
 
 ## See Also
 
-- [typealias CFPlugInFactoryFunction](cfpluginfactoryfunction.md)
+### Callbacks
+- [typealias CFPlugInFactoryFunction](./cfpluginfactoryfunction.md)
   Callback function that a plug-in author must implement to create a plug-in instance.
-- [typealias CFPlugInUnloadFunction](cfpluginunloadfunction.md)
+- [typealias CFPlugInUnloadFunction](./cfpluginunloadfunction.md)
   Callback function that is called, if present, just before a plug-in’s code is unloaded.
 
 

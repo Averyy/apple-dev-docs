@@ -1,7 +1,8 @@
 # none
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No active scaling behavior.
 

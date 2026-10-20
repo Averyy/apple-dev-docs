@@ -1,7 +1,8 @@
 # birthLocation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The possible locations for newly spawned particles, relative to the emitter shape. Defaults to surface.
 

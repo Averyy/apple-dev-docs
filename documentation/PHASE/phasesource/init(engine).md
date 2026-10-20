@@ -1,7 +1,8 @@
 # init(engine:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a single point in the environment from which sound emanates.
 
@@ -19,13 +20,18 @@ Creates a single point in the environment from which sound emanates.
 init(engine: PHASEEngine)
 ```
 
+```objc
+- (instancetype) initWithEngine:(PHASEEngine *) engine;
+```
+
 ## Parameters
 
 - `engine`: The object that controls this class’ associated audio output.
 
 ## See Also
 
-- [init(engine: PHASEEngine, shapes: [PHASEShape])](phasesource/init(engine:shapes:).md)
+### Creating a Source
+- [init(engine: PHASEEngine, shapes: [PHASEShape])](./init%28engine,shapes%29.md)
   Creates a voluminous area in the environment from which sound emanates.
 
 

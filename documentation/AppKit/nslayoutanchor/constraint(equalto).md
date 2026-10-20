@@ -1,7 +1,8 @@
 # constraint(equalTo:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a constraint that defines one item’s attribute as equal to another.
 
@@ -14,9 +15,13 @@ Returns a constraint that defines one item’s attribute as equal to another.
 func constraint(equalTo anchor: NSLayoutAnchor<AnchorType>) -> NSLayoutConstraint
 ```
 
+```objc
+- (NSLayoutConstraint *) constraintEqualToAnchor:(NSLayoutAnchor<id> *) anchor;
+```
+
 #### Return Value
 
-An [`NSLayoutConstraint`](nslayoutconstraint.md) object that defines an equal relationship between the attributes represented by the two layout anchors.
+An [`NSLayoutConstraint`](../nslayoutconstraint.md) object that defines an equal relationship between the attributes represented by the two layout anchors.
 
 #### Discussion
 
@@ -61,23 +66,25 @@ NSLayoutGuide *margin = self.view.layoutMarginsGuide;
 
 ## Parameters
 
-- `anchor`: A layout anchor from an [`NSView`](nsview.md) or [`NSLayoutGuide`](nslayoutguide.md) object. You must use a subclass of [`NSLayoutAnchor`](nslayoutanchor.md) that matches the current anchor. For example, if you call this method on an [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md) object, this parameter must be another [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md).
+- `anchor`: A layout anchor from an [`NSView`](../nsview.md) or [`NSLayoutGuide`](../nslayoutguide.md) object. You must use a subclass of [`NSLayoutAnchor`](../nslayoutanchor.md) that matches the current anchor. For example, if you call this method on an [`NSLayoutXAxisAnchor`](../nslayoutxaxisanchor.md) object, this parameter must be another [`NSLayoutXAxisAnchor`](../nslayoutxaxisanchor.md).
 
 ## See Also
 
-- [class NSLayoutConstraint](nslayoutconstraint.md)
+### Related Documentation
+- [class NSLayoutConstraint](../nslayoutconstraint.md)
   The relationship between two user interface objects that must be satisfied by the constraint-based layout system.
-- [class NSLayoutAnchor](nslayoutanchor.md)
+- [class NSLayoutAnchor](../nslayoutanchor.md)
   A factory class for creating layout constraint objects using a fluent API.
-- [func constraint(equalTo: NSLayoutAnchor<AnchorType>, constant: CGFloat) -> NSLayoutConstraint](nslayoutanchor/constraint(equalto:constant:).md)
+### Building constraints
+- [func constraint(equalTo: NSLayoutAnchor<AnchorType>, constant: CGFloat) -> NSLayoutConstraint](./constraint%28equalto,constant%29.md)
   Returns a constraint that defines one item’s attribute as equal to another item’s attribute plus a constant offset.
-- [func constraint(greaterThanOrEqualTo: NSLayoutAnchor<AnchorType>) -> NSLayoutConstraint](nslayoutanchor/constraint(greaterthanorequalto:).md)
+- [func constraint(greaterThanOrEqualTo: NSLayoutAnchor<AnchorType>) -> NSLayoutConstraint](./constraint%28greaterthanorequalto%29.md)
   Returns a constraint that defines one item’s attribute as greater than or equal to another.
-- [func constraint(greaterThanOrEqualTo: NSLayoutAnchor<AnchorType>, constant: CGFloat) -> NSLayoutConstraint](nslayoutanchor/constraint(greaterthanorequalto:constant:).md)
+- [func constraint(greaterThanOrEqualTo: NSLayoutAnchor<AnchorType>, constant: CGFloat) -> NSLayoutConstraint](./constraint%28greaterthanorequalto,constant%29.md)
   Returns a constraint that defines one item’s attribute as greater than or equal to another item’s attribute plus a constant offset.
-- [func constraint(lessThanOrEqualTo: NSLayoutAnchor<AnchorType>) -> NSLayoutConstraint](nslayoutanchor/constraint(lessthanorequalto:).md)
+- [func constraint(lessThanOrEqualTo: NSLayoutAnchor<AnchorType>) -> NSLayoutConstraint](./constraint%28lessthanorequalto%29.md)
   Returns a constraint that defines one item’s attribute as less than or equal to another.
-- [func constraint(lessThanOrEqualTo: NSLayoutAnchor<AnchorType>, constant: CGFloat) -> NSLayoutConstraint](nslayoutanchor/constraint(lessthanorequalto:constant:).md)
+- [func constraint(lessThanOrEqualTo: NSLayoutAnchor<AnchorType>, constant: CGFloat) -> NSLayoutConstraint](./constraint%28lessthanorequalto,constant%29.md)
   Returns a constraint that defines one item’s attribute as less than or equal to another item’s attribute plus a constant offset.
 
 

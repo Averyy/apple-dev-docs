@@ -1,9 +1,10 @@
 # IKImageBrowserDropOperation
 
 **Framework**: Quartz  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-These constants specify the locations for dropping items onto the browser view. Used by the method [`setDrop(_:dropOperation:)`](ikimagebrowserview/setdrop(_:dropoperation:).md).
+These constants specify the locations for dropping items onto the browser view. Used by the method [`setDrop(_:dropOperation:)`](./ikimagebrowserview/setdrop%28_,dropoperation%29.md).
 
 **Availability**:
 - macOS 10.4+
@@ -14,32 +15,37 @@ These constants specify the locations for dropping items onto the browser view. 
 struct IKImageBrowserDropOperation
 ```
 
+```c
+typedef enum { ... } IKImageBrowserDropOperation;
+```
+
 ## Topics
 
 ### Constants
-- [var IKImageBrowserDropOn: IKImageBrowserDropOperation](ikimagebrowserdropon.md)
+- [var IKImageBrowserDropOn: IKImageBrowserDropOperation](./ikimagebrowserdropon.md)
   Drop the item on the cell.
-- [var IKImageBrowserDropBefore: IKImageBrowserDropOperation](ikimagebrowserdropbefore.md)
+- [var IKImageBrowserDropBefore: IKImageBrowserDropOperation](./ikimagebrowserdropbefore.md)
   Drop the item before the cell.
 ### Initializers
-- [init(UInt32)](ikimagebrowserdropoperation/init(_:).md)
-- [init(rawValue: UInt32)](ikimagebrowserdropoperation/init(rawvalue:).md)
+- [init(UInt32)](./ikimagebrowserdropoperation/init%28_%29.md)
+- [init(rawValue: UInt32)](./ikimagebrowserdropoperation/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](ikimagebrowserdropoperation/rawvalue.md)
+- [var rawValue: UInt32](./ikimagebrowserdropoperation/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct IKImageBrowserCellState](ikimagebrowsercellstate.md)
-  The possible states for the browser cell. These values are used by the [`cellState()`](ikimagebrowsercell/cellstate().md) method.
+### Informal Protocols
+- [struct IKImageBrowserCellState](./ikimagebrowsercellstate.md)
+  The possible states for the browser cell. These values are used by the [`cellState()`](./ikimagebrowsercell/cellstate%28%29.md) method.
 
 
 ---

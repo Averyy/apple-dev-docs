@@ -2,6 +2,7 @@
 
 **Framework**: CarPlay  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -15,13 +16,18 @@
 func instrumentClusterControllerDidConnect(_ instrumentClusterWindow: UIWindow)
 ```
 
+```objc
+- (void) instrumentClusterControllerDidConnectWindow:(UIWindow *) instrumentClusterWindow;
+```
+
 ## See Also
 
-- [func instrumentClusterController(CPInstrumentClusterController, didChangeCompassSetting: CPInstrumentClusterSetting)](cpinstrumentclustercontrollerdelegate/instrumentclustercontroller(_:didchangecompasssetting:).md)
-- [func instrumentClusterController(CPInstrumentClusterController, didChangeSpeedLimitSetting: CPInstrumentClusterSetting)](cpinstrumentclustercontrollerdelegate/instrumentclustercontroller(_:didchangespeedlimitsetting:).md)
-- [func instrumentClusterControllerDidDisconnectWindow(UIWindow)](cpinstrumentclustercontrollerdelegate/instrumentclustercontrollerdiddisconnectwindow(_:).md)
-- [func instrumentClusterControllerDidZoom(in: CPInstrumentClusterController)](cpinstrumentclustercontrollerdelegate/instrumentclustercontrollerdidzoom(in:).md)
-- [func instrumentClusterControllerDidZoomOut(CPInstrumentClusterController)](cpinstrumentclustercontrollerdelegate/instrumentclustercontrollerdidzoomout(_:).md)
+### Instance Methods
+- [func instrumentClusterController(CPInstrumentClusterController, didChangeCompassSetting: CPInstrumentClusterSetting)](./instrumentclustercontroller%28_,didchangecompasssetting%29.md)
+- [func instrumentClusterController(CPInstrumentClusterController, didChangeSpeedLimitSetting: CPInstrumentClusterSetting)](./instrumentclustercontroller%28_,didchangespeedlimitsetting%29.md)
+- [func instrumentClusterControllerDidDisconnectWindow(UIWindow)](./instrumentclustercontrollerdiddisconnectwindow%28_%29.md)
+- [func instrumentClusterControllerDidZoom(in: CPInstrumentClusterController)](./instrumentclustercontrollerdidzoom%28in%29.md)
+- [func instrumentClusterControllerDidZoomOut(CPInstrumentClusterController)](./instrumentclustercontrollerdidzoomout%28_%29.md)
 
 
 ---

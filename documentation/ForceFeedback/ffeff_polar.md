@@ -1,7 +1,8 @@
 # FFEFF_POLAR
 
 **Framework**: Force Feedback  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,14 +14,19 @@
 var FFEFF_POLAR: Int { get }
 ```
 
+```c
+FFEFF_POLAR
+```
+
 #### Discussion
 
 Polar coordinates
 
 ## See Also
 
-- [var FFEFF_CARTESIAN: Int](ffeff_cartesian.md)
-- [var FFEFF_SPHERICAL: Int](ffeff_spherical.md)
+### Constants
+- [var FFEFF_CARTESIAN: Int](./ffeff_cartesian.md)
+- [var FFEFF_SPHERICAL: Int](./ffeff_spherical.md)
 
 
 ---

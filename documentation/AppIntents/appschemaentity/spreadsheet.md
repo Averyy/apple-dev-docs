@@ -1,7 +1,8 @@
 # spreadsheet
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of entity schemas in the spreadsheet domain.
 
@@ -17,6 +18,8 @@ The collection of entity schemas in the spreadsheet domain.
 ```swift
 static var spreadsheet: some AppSchema.SpreadsheetEntity { get }
 ```
+
+Available when `Self` is `AppSchema.Entity`.
 
 
 ---

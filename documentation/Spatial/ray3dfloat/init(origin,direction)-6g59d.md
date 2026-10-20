@@ -1,7 +1,8 @@
 # init(origin:direction:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a ray from single-precision simd vectors that describe the origin and direction.
 

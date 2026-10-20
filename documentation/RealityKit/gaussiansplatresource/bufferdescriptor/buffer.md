@@ -1,7 +1,8 @@
 # buffer
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The buffer that stores the property’s values.
 

@@ -1,7 +1,8 @@
 # init(requestRevision:boundingBox:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an observation with a revision number and bounding box.
 
@@ -19,6 +20,10 @@ Creates an observation with a revision number and bounding box.
 convenience init(requestRevision: Int, boundingBox: CGRect)
 ```
 
+```objc
++ (instancetype) observationWithRequestRevision:(NSUInteger) requestRevision boundingBox:(CGRect) boundingBox;
+```
+
 ## Parameters
 
 - `requestRevision`: The revision of the request to use.
@@ -26,7 +31,8 @@ convenience init(requestRevision: Int, boundingBox: CGRect)
 
 ## See Also
 
-- [convenience init(boundingBox: CGRect)](vndetectedobjectobservation/init(boundingbox:).md)
+### Creating an Observation
+- [convenience init(boundingBox: CGRect)](./init%28boundingbox%29.md)
   Creates an observation with a bounding box.
 
 

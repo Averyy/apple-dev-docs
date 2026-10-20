@@ -1,7 +1,8 @@
 # resizeBilinear(withGradientTensor:input:scaleOffsetTensor:layout:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a Resize gradient operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a Resize gradient operation and returns the result tensor.
 
 ```swift
 func resizeBilinear(withGradientTensor gradient: MPSGraphTensor, input: MPSGraphTensor, scaleOffsetTensor scaleOffset: MPSGraphTensor, layout: MPSGraphTensorNamedDataLayout, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) resizeBilinearWithGradientTensor:(MPSGraphTensor *) gradient input:(MPSGraphTensor *) input scaleOffsetTensor:(MPSGraphTensor *) scaleOffset layout:(MPSGraphTensorNamedDataLayout) layout name:(NSString *) name;
 ```
 
 #### Return Value

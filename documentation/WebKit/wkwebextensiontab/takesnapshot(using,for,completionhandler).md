@@ -1,7 +1,8 @@
 # takeSnapshot(using:for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to capture a snapshot of the current webpage as an image.
 
@@ -14,8 +15,40 @@ Called to capture a snapshot of the current webpage as an image.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+optional func takeSnapshot(using configuration: WKSnapshotConfiguration, for context: WKWebExtensionContext, completionHandler: @escaping (UIImage?, (any Error)?) -> Void)
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+optional func snapshot(using configuration: WKSnapshotConfiguration, for context: WKWebExtensionContext) async throws -> UIImage?
+```
+
+*macOS*
+
+```swift
+optional func takeSnapshot(using configuration: WKSnapshotConfiguration, for context: WKWebExtensionContext, completionHandler: @escaping (NSImage?, (any Error)?) -> Void)
+```
+
+*macOS*
+
 ```swift
 optional func snapshot(using configuration: WKSnapshotConfiguration, for context: WKWebExtensionContext) async throws -> NSImage?
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+- (void) takeSnapshotUsingConfiguration:(WKSnapshotConfiguration *) configuration forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(UIImage *webpageImage, NSError *error)) completionHandler;
+```
+
+*macOS*
+
+```objc
+- (void) takeSnapshotUsingConfiguration:(WKSnapshotConfiguration *) configuration forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSImage *webpageImage, NSError *error)) completionHandler;
 ```
 
 #### Discussion

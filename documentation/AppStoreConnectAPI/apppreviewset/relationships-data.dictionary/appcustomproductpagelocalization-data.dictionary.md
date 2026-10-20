@@ -1,21 +1,22 @@
 # AppPreviewSet.Relationships.AppCustomProductPageLocalization
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 1.7+
 
 ## Declaration
 
-```swift
+```
 object AppPreviewSet.Relationships.AppCustomProductPageLocalization
 ```
 
 ## Topics
 
 ### Objects
-- [object AppPreviewSet.Relationships.AppCustomProductPageLocalization.Data](apppreviewset/relationships-data.dictionary/appcustomproductpagelocalization-data.dictionary/data-data.dictionary.md)
+- [object AppPreviewSet.Relationships.AppCustomProductPageLocalization.Data](./appcustomproductpagelocalization-data.dictionary/data-data.dictionary.md)
   The request body you use to update an app preview set.
 
 ## Properties
@@ -24,11 +25,12 @@ object AppPreviewSet.Relationships.AppCustomProductPageLocalization
 
 ## See Also
 
-- [object AppPreviewSet.Relationships.AppPreviews](apppreviewset/relationships-data.dictionary/apppreviews-data.dictionary.md)
+### Objects
+- [object AppPreviewSet.Relationships.AppPreviews](./apppreviews-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppPreviewSet.Relationships.AppStoreVersionLocalization](apppreviewset/relationships-data.dictionary/appstoreversionlocalization-data.dictionary.md)
+- [object AppPreviewSet.Relationships.AppStoreVersionLocalization](./appstoreversionlocalization-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppPreviewSet.Relationships.AppStoreVersionExperimentTreatmentLocalization](apppreviewset/relationships-data.dictionary/appstoreversionexperimenttreatmentlocalization-data.dictionary.md)
+- [object AppPreviewSet.Relationships.AppStoreVersionExperimentTreatmentLocalization](./appstoreversionexperimenttreatmentlocalization-data.dictionary.md)
 
 
 ---

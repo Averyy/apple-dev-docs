@@ -1,7 +1,8 @@
 # vDSP_biquadm_DestroySetup
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Destroys a single-precision multichannel biquad IIR setup object.
 
@@ -10,7 +11,7 @@ Destroys a single-precision multichannel biquad IIR setup object.
 
 ## Declaration
 
-```swift
+```c
 void vDSP_biquadm_DestroySetup(vDSP_biquadm_Setup __setup);
 ```
 

@@ -1,7 +1,8 @@
 # faceAngle
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rotation of the face.
 
@@ -10,7 +11,7 @@ The rotation of the face.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,15 +20,20 @@ The rotation of the face.
 var faceAngle: Float { get }
 ```
 
+```objc
+@property (assign, readonly) float faceAngle;
+```
+
 #### Discussion
 
 Rotation is measured counterclockwise in degrees, with zero indicating that a line drawn between the eyes is horizontal relative to the image orientation.
 
 ## See Also
 
-- [var bounds: CGRect](cifacefeature/bounds-swift.property.md)
+### Locating Faces
+- [var bounds: CGRect](./bounds-swift.property.md)
   A rectangle indicating the position and extent of the face feature in image coordinates.
-- [var hasFaceAngle: Bool](cifacefeature/hasfaceangle-swift.property.md)
+- [var hasFaceAngle: Bool](./hasfaceangle-swift.property.md)
   A Boolean value that indicates whether information about face rotation is available.
 
 

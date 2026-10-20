@@ -1,7 +1,8 @@
 # readAttributeAliroReaderGroupSubIdentifier(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeAliroReaderGroupSubIdentifier(completion: @escaping @Sendable (Data?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeAliroReaderGroupSubIdentifier() async throws -> Data
+```
+
+```objc
+- (void) readAttributeAliroReaderGroupSubIdentifierWithCompletion:(void (^)(NSData *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The electrocardiogram data in microvolts.
 
@@ -16,10 +17,15 @@ The electrocardiogram data in microvolts.
 var value: Measurement<UnitElectricPotentialDifference> { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSMeasurement<NSUnitElectricPotentialDifference *> * value;
+```
+
 ## See Also
 
-- [var flags: SRElectrocardiogramData.Flags](srelectrocardiogramdata/flags-swift.property.md)
-- [SRElectrocardiogramData.Flags](srelectrocardiogramdata/flags-swift.struct.md)
+### Getting electrocardiogram details
+- [var flags: SRElectrocardiogramData.Flags](./flags-swift.property.md)
+- [SRElectrocardiogramData.Flags](./flags-swift.struct.md)
   Sensor context or events that occur during a sample ECG data reading.
 
 

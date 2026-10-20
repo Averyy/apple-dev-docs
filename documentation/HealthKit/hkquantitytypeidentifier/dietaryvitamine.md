@@ -1,7 +1,8 @@
 # dietaryVitaminE
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A quantity sample type that measures the amount of vitamin E consumed.
 
@@ -19,41 +20,47 @@ A quantity sample type that measures the amount of vitamin E consumed.
 static let dietaryVitaminE: HKQuantityTypeIdentifier
 ```
 
+```c
+extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierDietaryVitaminE;
+```
+
 #### Discussion
 
-These samples use mass units (described in [`HKUnit`](hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
+These samples use mass units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 
 ## See Also
 
-- [struct HKQuantityTypeIdentifier](hkquantitytypeidentifier.md)
+### Related Documentation
+- [struct HKQuantityTypeIdentifier](../hkquantitytypeidentifier.md)
   The identifiers that create quantity type objects.
-- [class HKQuantitySample](hkquantitysample.md)
+- [class HKQuantitySample](../hkquantitysample.md)
   A sample that represents a quantity, including the value and the units.
-- [class HKQuantity](hkquantity.md)
+- [class HKQuantity](../hkquantity.md)
   An object that stores a value for a given unit.
-- [static let dietaryVitaminA: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryvitamina.md)
+### Vitamins
+- [static let dietaryVitaminA: HKQuantityTypeIdentifier](./dietaryvitamina.md)
   A quantity sample type that measures the amount of vitamin A consumed.
-- [static let dietaryThiamin: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietarythiamin.md)
+- [static let dietaryThiamin: HKQuantityTypeIdentifier](./dietarythiamin.md)
   A quantity sample type that measures the amount of thiamin (vitamin B1) consumed.
-- [static let dietaryRiboflavin: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryriboflavin.md)
+- [static let dietaryRiboflavin: HKQuantityTypeIdentifier](./dietaryriboflavin.md)
   A quantity sample type that measures the amount of riboflavin (vitamin B2) consumed.
-- [static let dietaryNiacin: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryniacin.md)
+- [static let dietaryNiacin: HKQuantityTypeIdentifier](./dietaryniacin.md)
   A quantity sample type that measures the amount of niacin (vitamin B3) consumed.
-- [static let dietaryPantothenicAcid: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietarypantothenicacid.md)
+- [static let dietaryPantothenicAcid: HKQuantityTypeIdentifier](./dietarypantothenicacid.md)
   A quantity sample type that measures the amount of pantothenic acid (vitamin B5) consumed.
-- [static let dietaryVitaminB6: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryvitaminb6.md)
+- [static let dietaryVitaminB6: HKQuantityTypeIdentifier](./dietaryvitaminb6.md)
   A quantity sample type that measures the amount of pyridoxine (vitamin B6) consumed.
-- [static let dietaryBiotin: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietarybiotin.md)
+- [static let dietaryBiotin: HKQuantityTypeIdentifier](./dietarybiotin.md)
   A quantity sample type that measures the amount of biotin (vitamin B7) consumed.
-- [static let dietaryVitaminB12: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryvitaminb12.md)
+- [static let dietaryVitaminB12: HKQuantityTypeIdentifier](./dietaryvitaminb12.md)
   A quantity sample type that measures the amount of cyanocobalamin (vitamin B12) consumed.
-- [static let dietaryVitaminC: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryvitaminc.md)
+- [static let dietaryVitaminC: HKQuantityTypeIdentifier](./dietaryvitaminc.md)
   A quantity sample type that measures the amount of vitamin C consumed.
-- [static let dietaryVitaminD: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryvitamind.md)
+- [static let dietaryVitaminD: HKQuantityTypeIdentifier](./dietaryvitamind.md)
   A quantity sample type that measures the amount of vitamin D consumed.
-- [static let dietaryVitaminK: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryvitamink.md)
+- [static let dietaryVitaminK: HKQuantityTypeIdentifier](./dietaryvitamink.md)
   A quantity sample type that measures the amount of vitamin K consumed.
-- [static let dietaryFolate: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryfolate.md)
+- [static let dietaryFolate: HKQuantityTypeIdentifier](./dietaryfolate.md)
   A quantity sample type that measures the amount of folate (folic acid) consumed.
 
 

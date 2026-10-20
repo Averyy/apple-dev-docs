@@ -1,7 +1,8 @@
 # withMutableUniforms(ofType:_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the given closure with an inout reference to the underlying storage bound to the custom uniforms argument of a surface shader and geometry modifier.
 
@@ -20,18 +21,19 @@ mutating func withMutableUniforms<UniformsType>(ofType: UniformsType.Type, _ cal
 
 #### Discussion
 
-This method operates like [`withMutableUniforms(ofType:stage:_:)`](custommaterial/withmutableuniforms(oftype:stage:_:).md) but sets the same value for all stages at once.
+This method operates like [`withMutableUniforms(ofType:stage:_:)`](./withmutableuniforms%28oftype,stage,_%29.md) but sets the same value for all stages at once.
 
 When using this form, ensure that the custom uniforms arguments passed to each stage of your CustomMaterial are of the same type.
 
 ## See Also
 
-- [var program: CustomMaterial.Program](custommaterial/program-swift.property.md)
-- [var custom: CustomMaterial.Custom](custommaterial/custom-swift.property.md)
+### Setting shader properties
+- [var program: CustomMaterial.Program](./program-swift.property.md)
+- [var custom: CustomMaterial.Custom](./custom-swift.property.md)
   User-defined properties for the material’s shader functions.
-- [var lightingModel: CustomMaterial.LightingModel](custommaterial/lightingmodel-swift.property.md)
+- [var lightingModel: CustomMaterial.LightingModel](./lightingmodel-swift.property.md)
   The lighting model that the material uses.
-- [func withMutableUniforms<UniformsType>(ofType: UniformsType.Type, stage: CustomShaderStage, (inout UniformsType, inout CustomMaterial.ResourceStorage<UniformsType>) -> Void)](custommaterial/withmutableuniforms(oftype:stage:_:).md)
+- [func withMutableUniforms<UniformsType>(ofType: UniformsType.Type, stage: CustomShaderStage, (inout UniformsType, inout CustomMaterial.ResourceStorage<UniformsType>) -> Void)](./withmutableuniforms%28oftype,stage,_%29.md)
   Calls the given closure with an inout reference to the underlying storage bound to the custom uniforms argument of a surface shader or geometry modifier.
 
 

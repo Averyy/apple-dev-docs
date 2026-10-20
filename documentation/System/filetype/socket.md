@@ -1,7 +1,8 @@
 # socket
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Socket
 

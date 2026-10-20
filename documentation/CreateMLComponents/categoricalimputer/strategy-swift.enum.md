@@ -1,7 +1,8 @@
 # CategoricalImputer.Strategy
 
 **Framework**: Create ML Components  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An imputation strategy.
 
@@ -23,22 +24,23 @@ enum Strategy
 ## Topics
 
 ### Imputer strategies
-- [CategoricalImputer.Strategy.constant(_:)](categoricalimputer/strategy-swift.enum/constant(_:).md)
+- [CategoricalImputer.Strategy.constant(_:)](./strategy-swift.enum/constant%28_%29.md)
   Imputation strategy that replaces missing elements with a constant.
-- [CategoricalImputer.Strategy.mode](categoricalimputer/strategy-swift.enum/mode.md)
+- [CategoricalImputer.Strategy.mode](./strategy-swift.enum/mode.md)
   Imputation strategy that replaces missing elements with the mode.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func fitted<S>(to: S, eventHandler: EventHandler?) -> CategoricalImputer<Element>.Transformer](categoricalimputer/fitted(to:eventhandler:).md)
+### Fitting
+- [func fitted<S>(to: S, eventHandler: EventHandler?) -> CategoricalImputer<Element>.Transformer](./fitted%28to,eventhandler%29.md)
   Fits a categorical imputer to a sequence of elements.
-- [protocol Transformer](transformer.md)
+- [protocol Transformer](../transformer.md)
   A transformer that takes an input and produces an output.
 
 

@@ -1,7 +1,8 @@
 # applicationTypeIdentifier
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string identifier that represents the payment application type (kernel) used to read the card.
 

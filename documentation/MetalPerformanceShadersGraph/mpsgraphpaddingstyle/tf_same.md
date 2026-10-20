@@ -1,7 +1,8 @@
 # MPSGraphPaddingStyle.TF_SAME
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 TF_SAME
 
@@ -17,6 +18,10 @@ TF_SAME
 
 ```swift
 case TF_SAME
+```
+
+```c
+MPSGraphPaddingStyleTF_SAME
 ```
 
 

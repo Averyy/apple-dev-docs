@@ -1,13 +1,14 @@
 # team_id
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The team identifier used to sign the process.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ The team identifier used to sign the process.
 var team_id: es_string_token_t
 ```
 
+```c
+es_string_token_t team_id;
+```
+
 ## See Also
 
-- [var codesigning_flags: UInt32](es_process_t/codesigning_flags.md)
+### Inspecting Code Signing Properties
+- [var codesigning_flags: UInt32](./codesigning_flags.md)
   The flags used to sign the process.
-- [var cdhash: es_cdhash_t](es_process_t/cdhash.md)
+- [var cdhash: es_cdhash_t](./cdhash.md)
   The code directory hash value.
-- [var signing_id: es_string_token_t](es_process_t/signing_id.md)
+- [var signing_id: es_string_token_t](./signing_id.md)
   The identifier used to sign the process.
 
 

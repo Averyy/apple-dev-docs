@@ -1,7 +1,8 @@
 # AppIntent.ExecutionTargets
 
 **Framework**: App Intents  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 27.0+
@@ -20,9 +21,10 @@ typealias ExecutionTargets = IntentExecutionTargets
 
 ## See Also
 
-- [static var allowedExecutionTargets: IntentExecutionTargets](appintent/allowedexecutiontargets.md)
+### Specifying the intent’s allowed target
+- [static var allowedExecutionTargets: IntentExecutionTargets](./allowedexecutiontargets.md)
   The list of targets this intent can be executed against.
-- [struct IntentExecutionTargets](intentexecutiontargets.md)
+- [struct IntentExecutionTargets](../intentexecutiontargets.md)
   A set of options that describes which process performs an intent or entity query.
 
 

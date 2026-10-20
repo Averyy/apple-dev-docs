@@ -1,7 +1,8 @@
 # thumbnail
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional thumbnail image associated with the context.
 
@@ -18,6 +19,10 @@ An optional thumbnail image associated with the context.
 var thumbnail: CGImage? { get set }
 ```
 
+```objc
+@property (nonatomic, nullable) CGImageRef thumbnail;
+```
+
 #### Discussion
 
 Schoolwork displays the thumbnail along with your content to help teachers and students more easily recognize a given context. For example, you could use a variation of your app icon for your main app context, an open book for a reading exercise, or a calculator to represent a math quiz. Create thumbnails that match the style of your app.
@@ -26,11 +31,12 @@ The image you provide should have at least 80 pixels on a side, and at most 330 
 
 ## See Also
 
-- [var identifier: String](clscontext/identifier.md)
+### Identifying the context
+- [var identifier: String](./identifier.md)
   A string that uniquely identifies a context among its siblings.
-- [var title: String](clscontext/title.md)
+- [var title: String](./title.md)
   The name of the context as it appears to users.
-- [var summary: String?](clscontext/summary.md)
+- [var summary: String?](./summary.md)
   An optional, user-visible description of the context.
 
 

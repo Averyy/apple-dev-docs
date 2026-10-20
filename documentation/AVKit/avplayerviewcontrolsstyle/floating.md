@@ -1,7 +1,8 @@
 # AVPlayerViewControlsStyle.floating
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The view displays playback controls in a floating window over the video content.
 
@@ -14,19 +15,24 @@ The view displays playback controls in a floating window over the video content.
 case floating
 ```
 
+```c
+AVPlayerViewControlsStyleFloating
+```
+
 #### Discussion
 
 This style matches the look of QuickTime Player’s playback controls.
 
 ## See Also
 
-- [AVPlayerViewControlsStyle.none](avplayerviewcontrolsstyle/none.md)
+### Controls styles
+- [AVPlayerViewControlsStyle.none](./none.md)
   The view displays no playback controls.
-- [AVPlayerViewControlsStyle.inline](avplayerviewcontrolsstyle/inline.md)
+- [AVPlayerViewControlsStyle.inline](./inline.md)
   The view displays playback controls in a bar along the view’s bottom edge.
-- [AVPlayerViewControlsStyle.minimal](avplayerviewcontrolsstyle/minimal.md)
+- [AVPlayerViewControlsStyle.minimal](./minimal.md)
   The view presents basic controls to play and pause playback.
-- [static var `default`: AVPlayerViewControlsStyle](avplayerviewcontrolsstyle/default.md)
+- [static var `default`: AVPlayerViewControlsStyle](./default.md)
   The view’s default controls style.
 
 

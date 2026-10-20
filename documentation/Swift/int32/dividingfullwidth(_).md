@@ -1,7 +1,8 @@
 # dividingFullWidth(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a tuple containing the quotient and remainder of dividing the given value by this value.
 

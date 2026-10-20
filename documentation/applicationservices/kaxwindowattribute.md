@@ -1,7 +1,8 @@
 # kAXWindowAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXWindowAttribute: String { get }
+```
+
+```c
+#define kAXWindowAttribute
 ```
 
 #### Discussion

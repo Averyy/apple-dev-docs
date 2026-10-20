@@ -1,7 +1,8 @@
 # commissioning(_:failedWithError:metrics:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notification that commissioning has failed.
 
@@ -18,6 +19,10 @@ Notification that commissioning has failed.
 
 ```swift
 optional func commissioning(_ commissioning: MTRCommissioningOperation, failedWithError error: any Error, metrics: MTRMetrics)
+```
+
+```objc
+- (void) commissioning:(MTRCommissioningOperation *) commissioning failedWithError:(NSError *) error metrics:(MTRMetrics *) metrics;
 ```
 
 

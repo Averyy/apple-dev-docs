@@ -1,7 +1,8 @@
 # SiriSettings
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure Siri settings.
 
@@ -16,7 +17,7 @@ The declaration to configure Siri settings.
 
 ## Declaration
 
-```swift
+```
 object SiriSettings
 ```
 
@@ -24,7 +25,7 @@ object SiriSettings
 
 Specify `com.apple.configuration.siri.settings` as the declaration type.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -36,7 +37,7 @@ Specify `com.apple.configuration.siri.settings` as the declaration type.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration Examples
+##### Configuration examples
 
 This configuration restricts Siri features.
 
@@ -58,44 +59,69 @@ This configuration restricts Siri features.
 
 ## Properties
 
-- `AllowSiriAI` (boolean): If `false`, disables the Siri AI specific features of Siri. Available: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
-- `AllowUserGeneratedContent` (boolean): If `false`, disables Siri user-generated content. Available: iOS 26.4+ | iPadOS 26.4+ | watchOS 26.4+
-- `AllowWhileLocked` (boolean): If `false`, disables Siri while locked. Available: iOS 26.4+ | iPadOS 26.4+ | watchOS 26.4+
-- `Enabled` (boolean): If `false`, disables Siri. Available: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+ | tvOS 27+ | visionOS 26.4+
-- `ForceProfanityFilter` (boolean): If `true`, forces Siri profanity filter. Available: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+
-- `ForceReduceSensitiveContent` (boolean): If `true`, forces Siri to reduce sensitive content. Available: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+- `AllowSiriAI` (boolean): If `false`, disables the Siri AI specific features of Siri.
+
+  Available: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+
+  **Default**: `true`
+- `AllowUserGeneratedContent` (boolean): If `false`, disables Siri user-generated content.
+
+  Available: iOS 26.4+ | iPadOS 26.4+ | watchOS 26.4+
+
+  **Default**: `true`
+- `AllowWhileLocked` (boolean): If `false`, disables Siri while locked.
+
+  Available: iOS 26.4+ | iPadOS 26.4+ | watchOS 26.4+
+
+  **Default**: `true`
+- `Enabled` (boolean): If `false`, disables Siri.
+
+  Available: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+ | tvOS 27+ | visionOS 26.4+
+
+  **Default**: `true`
+- `ForceProfanityFilter` (boolean): If `true`, forces Siri profanity filter.
+
+  Available: iOS 26.4+ | iPadOS 26.4+ | macOS 26.4+
+
+  **Default**: `false`
+- `ForceReduceSensitiveContent` (boolean): If `true`, forces Siri to reduce sensitive content.
+
+  Available: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+
+  **Default**: `false`
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
 
 

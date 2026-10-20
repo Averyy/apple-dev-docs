@@ -1,12 +1,13 @@
 # init(identifier:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized `WebPreferences` object, creating one if it does not exist.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,23 +15,28 @@ Returns an initialized `WebPreferences` object, creating one if it does not exis
 init!(identifier anIdentifier: String!)
 ```
 
+```objc
+- (instancetype) initWithIdentifier:(NSString *) anIdentifier;
+```
+
 #### Return Value
 
-A newly initialized [`WebPreferences`](webpreferences.md) object with the identifier; if an existing `WebPreferences` object with that identifier exists, it is returned instead.
+A newly initialized [`WebPreferences`](../webpreferences.md) object with the identifier; if an existing `WebPreferences` object with that identifier exists, it is returned instead.
 
 #### Discussion
 
-The `anIdentifier` argument should be unique—it is prepended to the keys used to store the receiver’s attributes in the user defaults database. [`WebView`](webview-swift.class.md) objects can share a [`WebPreferences`](webpreferences.md) object by using the same preferences identifier.
+The `anIdentifier` argument should be unique—it is prepended to the keys used to store the receiver’s attributes in the user defaults database. [`WebView`](../webview-swift.class.md) objects can share a [`WebPreferences`](../webpreferences.md) object by using the same preferences identifier.
 
-Typically, you do not invoke this method directly. Instead, you set the preferences identifier by sending a [`preferencesIdentifier`](webview-swift.class/preferencesidentifier.md) message to your WebView object. This method is the designated initializer for the WebPreferences class.
+Typically, you do not invoke this method directly. Instead, you set the preferences identifier by sending a [`preferencesIdentifier`](../webview-swift.class/preferencesidentifier.md) message to your WebView object. This method is the designated initializer for the WebPreferences class.
 
 ## Parameters
 
-- `anIdentifier`: A unique identifier for the [`WebPreferences`](webpreferences.md) object
+- `anIdentifier`: A unique identifier for the [`WebPreferences`](../webpreferences.md) object
 
 ## See Also
 
-- [var identifier: String!](webpreferences/identifier.md)
+### Related Documentation
+- [var identifier: String!](./identifier.md)
   The receiver’s identifier.
 
 

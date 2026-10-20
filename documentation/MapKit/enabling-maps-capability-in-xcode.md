@@ -1,6 +1,7 @@
 # Enabling Maps capability in Xcode
 
-**Framework**: MapKit
+**Framework**: MapKit  
+**Role**: Article
 
 Configure your routing app to support providing directions.
 
@@ -18,17 +19,18 @@ A routing app, an iOS app that provides point-to-point directions, requires Maps
 
 The screenshot below shows the Maps capability:
 
-![A screenshot showing the Maps capability with no route modes selected. ](/images/com.apple.mapkit/media-3737976@2x.png)
+![A screenshot showing the Maps capability with no route modes selected. ](https://developer.apple.com/tutorials/images/com.apple.mapkit/media-3737976@2x.png)
 
-For more information on enabling capabilities in your app, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app). For more information on providing directions in your app, see [`MKDirections`](mkdirections.md).
+For more information on enabling capabilities in your app, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md). For more information on providing directions in your app, see [`MKDirections`](./mkdirections.md).
 
 ## See Also
 
-- [Identifying unique locations with Place IDs](identifying-unique-locations-with-place-ids.md)
+### Essentials
+- [Identifying unique locations with Place IDs](./identifying-unique-locations-with-place-ids.md)
   Obtain information about a point of interest that persists over its lifetime.
-- [class MKMapView](mkmapview.md)
+- [class MKMapView](./mkmapview.md)
   An embeddable map interface, similar to the one that the Maps app provides.
-- [class MKMapItem](mkmapitem.md)
+- [class MKMapItem](./mkmapitem.md)
   A point of interest on the map.
 
 

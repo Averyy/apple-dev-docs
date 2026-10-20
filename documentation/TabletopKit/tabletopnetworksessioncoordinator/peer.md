@@ -2,6 +2,7 @@
 
 **Framework**: TabletopKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:
@@ -15,8 +16,9 @@ associatedtype Peer : Hashable, Identifiable where Self.Peer.ID == UUID
 
 ## See Also
 
-- [func peerJoinedGame(Self.Peer.ID)](tabletopnetworksessioncoordinator/peerjoinedgame(_:).md)
-- [func peerLeftGame(Self.Peer.ID)](tabletopnetworksessioncoordinator/peerleftgame(_:).md)
+### Managing network session peers
+- [func peerJoinedGame(Self.Peer.ID)](./peerjoinedgame%28_%29.md)
+- [func peerLeftGame(Self.Peer.ID)](./peerleftgame%28_%29.md)
 
 
 ---

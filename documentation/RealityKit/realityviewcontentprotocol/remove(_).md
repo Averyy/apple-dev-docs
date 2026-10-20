@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an entity from this content, if present.
 
@@ -21,11 +22,12 @@ func remove(_ entity: Entity)
 
 ## See Also
 
-- [func add(Entity)](realityviewcontentprotocol/add(_:).md)
+### Managing view content
+- [func add(Entity)](./add%28_%29.md)
   Adds an entity to this content.
-- [associatedtype Entities : EntityCollection](realityviewcontentprotocol/entities-swift.associatedtype.md)
+- [associatedtype Entities : EntityCollection](./entities-swift.associatedtype.md)
   The type of collection used for `entities`.
-- [var entities: Self.Entities](realityviewcontentprotocol/entities-swift.property.md)
+- [var entities: Self.Entities](./entities-swift.property.md)
   A collection of RealityKit entities that this view content renders within the scene.
 
 

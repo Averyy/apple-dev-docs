@@ -1,7 +1,8 @@
 # MTROTAProviderDelegate
 
 **Framework**: Matter  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 16.0+
@@ -18,27 +19,31 @@
 protocol MTROTAProviderDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol MTROTAProviderDelegate <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func handleApplyUpdateRequest(forNodeID: NSNumber, controller: MTRDeviceController, params: MTROTASoftwareUpdateProviderClusterApplyUpdateRequestParams, completion: (MTROTASoftwareUpdateProviderClusterApplyUpdateResponseParams?, (any Error)?) -> Void)](mtrotaproviderdelegate/handleapplyupdaterequest(fornodeid:controller:params:completion:).md)
-- [func handleApplyUpdateRequest(forNodeID: NSNumber, controller: MTRDeviceController, params: MTROtaSoftwareUpdateProviderClusterApplyUpdateRequestParams, completionHandler: (MTROtaSoftwareUpdateProviderClusterApplyUpdateResponseParams?, (any Error)?) -> Void)](mtrotaproviderdelegate/handleapplyupdaterequest(fornodeid:controller:params:completionhandler:).md)
-- [func handleBDXQuery(forNodeID: NSNumber, controller: MTRDeviceController, blockSize: NSNumber, blockIndex: NSNumber, bytesToSkip: NSNumber, completion: (Data?, Bool) -> Void)](mtrotaproviderdelegate/handlebdxquery(fornodeid:controller:blocksize:blockindex:bytestoskip:completion:).md)
-- [func handleBDXQuery(forNodeID: NSNumber, controller: MTRDeviceController, blockSize: NSNumber, blockIndex: NSNumber, bytesToSkip: NSNumber, completionHandler: (Data?, Bool) -> Void)](mtrotaproviderdelegate/handlebdxquery(fornodeid:controller:blocksize:blockindex:bytestoskip:completionhandler:).md)
-- [func handleBDXTransferSessionBegin(forNodeID: NSNumber, controller: MTRDeviceController, fileDesignator: String, offset: NSNumber, completion: ((any Error)?) -> Void)](mtrotaproviderdelegate/handlebdxtransfersessionbegin(fornodeid:controller:filedesignator:offset:completion:).md)
-- [func handleBDXTransferSessionBegin(forNodeID: NSNumber, controller: MTRDeviceController, fileDesignator: String, offset: NSNumber, completionHandler: ((any Error)?) -> Void)](mtrotaproviderdelegate/handlebdxtransfersessionbegin(fornodeid:controller:filedesignator:offset:completionhandler:).md)
-- [func handleBDXTransferSessionEnd(forNodeID: NSNumber, controller: MTRDeviceController, error: (any Error)?)](mtrotaproviderdelegate/handlebdxtransfersessionend(fornodeid:controller:error:).md)
-- [func handleNotifyUpdateApplied(forNodeID: NSNumber, controller: MTRDeviceController, params: MTROTASoftwareUpdateProviderClusterNotifyUpdateAppliedParams, completion: ((any Error)?) -> Void)](mtrotaproviderdelegate/handlenotifyupdateapplied(fornodeid:controller:params:completion:).md)
-- [func handleNotifyUpdateApplied(forNodeID: NSNumber, controller: MTRDeviceController, params: MTROtaSoftwareUpdateProviderClusterNotifyUpdateAppliedParams, completionHandler: ((any Error)?) -> Void)](mtrotaproviderdelegate/handlenotifyupdateapplied(fornodeid:controller:params:completionhandler:).md)
-- [func handleQueryImage(forNodeID: NSNumber, controller: MTRDeviceController, params: MTROTASoftwareUpdateProviderClusterQueryImageParams, completion: (MTROTASoftwareUpdateProviderClusterQueryImageResponseParams?, (any Error)?) -> Void)](mtrotaproviderdelegate/handlequeryimage(fornodeid:controller:params:completion:).md)
-- [func handleQueryImage(forNodeID: NSNumber, controller: MTRDeviceController, params: MTROtaSoftwareUpdateProviderClusterQueryImageParams, completionHandler: (MTROtaSoftwareUpdateProviderClusterQueryImageResponseParams?, (any Error)?) -> Void)](mtrotaproviderdelegate/handlequeryimage(fornodeid:controller:params:completionhandler:).md)
-- [func handleBDXTransferSessionEnd(forNodeID: NSNumber, controller: MTRDeviceController, metrics: MTRMetrics, error: (any Error)?)](mtrotaproviderdelegate/handlebdxtransfersessionend(fornodeid:controller:metrics:error:).md)
+- [func handleApplyUpdateRequest(forNodeID: NSNumber, controller: MTRDeviceController, params: MTROTASoftwareUpdateProviderClusterApplyUpdateRequestParams, completion: (MTROTASoftwareUpdateProviderClusterApplyUpdateResponseParams?, (any Error)?) -> Void)](./mtrotaproviderdelegate/handleapplyupdaterequest%28fornodeid,controller,params,completion%29.md)
+- [func handleApplyUpdateRequest(forNodeID: NSNumber, controller: MTRDeviceController, params: MTROtaSoftwareUpdateProviderClusterApplyUpdateRequestParams, completionHandler: (MTROtaSoftwareUpdateProviderClusterApplyUpdateResponseParams?, (any Error)?) -> Void)](./mtrotaproviderdelegate/handleapplyupdaterequest%28fornodeid,controller,params,completionhandler%29.md)
+- [func handleBDXQuery(forNodeID: NSNumber, controller: MTRDeviceController, blockSize: NSNumber, blockIndex: NSNumber, bytesToSkip: NSNumber, completion: (Data?, Bool) -> Void)](./mtrotaproviderdelegate/handlebdxquery%28fornodeid,controller,blocksize,blockindex,bytestoskip,completion%29.md)
+- [func handleBDXQuery(forNodeID: NSNumber, controller: MTRDeviceController, blockSize: NSNumber, blockIndex: NSNumber, bytesToSkip: NSNumber, completionHandler: (Data?, Bool) -> Void)](./mtrotaproviderdelegate/handlebdxquery%28fornodeid,controller,blocksize,blockindex,bytestoskip,completionhandler%29.md)
+- [func handleBDXTransferSessionBegin(forNodeID: NSNumber, controller: MTRDeviceController, fileDesignator: String, offset: NSNumber, completion: ((any Error)?) -> Void)](./mtrotaproviderdelegate/handlebdxtransfersessionbegin%28fornodeid,controller,filedesignator,offset,completion%29.md)
+- [func handleBDXTransferSessionBegin(forNodeID: NSNumber, controller: MTRDeviceController, fileDesignator: String, offset: NSNumber, completionHandler: ((any Error)?) -> Void)](./mtrotaproviderdelegate/handlebdxtransfersessionbegin%28fornodeid,controller,filedesignator,offset,completionhandler%29.md)
+- [func handleBDXTransferSessionEnd(forNodeID: NSNumber, controller: MTRDeviceController, error: (any Error)?)](./mtrotaproviderdelegate/handlebdxtransfersessionend%28fornodeid,controller,error%29.md)
+- [func handleNotifyUpdateApplied(forNodeID: NSNumber, controller: MTRDeviceController, params: MTROTASoftwareUpdateProviderClusterNotifyUpdateAppliedParams, completion: ((any Error)?) -> Void)](./mtrotaproviderdelegate/handlenotifyupdateapplied%28fornodeid,controller,params,completion%29.md)
+- [func handleNotifyUpdateApplied(forNodeID: NSNumber, controller: MTRDeviceController, params: MTROtaSoftwareUpdateProviderClusterNotifyUpdateAppliedParams, completionHandler: ((any Error)?) -> Void)](./mtrotaproviderdelegate/handlenotifyupdateapplied%28fornodeid,controller,params,completionhandler%29.md)
+- [func handleQueryImage(forNodeID: NSNumber, controller: MTRDeviceController, params: MTROTASoftwareUpdateProviderClusterQueryImageParams, completion: (MTROTASoftwareUpdateProviderClusterQueryImageResponseParams?, (any Error)?) -> Void)](./mtrotaproviderdelegate/handlequeryimage%28fornodeid,controller,params,completion%29.md)
+- [func handleQueryImage(forNodeID: NSNumber, controller: MTRDeviceController, params: MTROtaSoftwareUpdateProviderClusterQueryImageParams, completionHandler: (MTROtaSoftwareUpdateProviderClusterQueryImageResponseParams?, (any Error)?) -> Void)](./mtrotaproviderdelegate/handlequeryimage%28fornodeid,controller,params,completionhandler%29.md)
+- [func handleBDXTransferSessionEnd(forNodeID: NSNumber, controller: MTRDeviceController, metrics: MTRMetrics, error: (any Error)?)](./mtrotaproviderdelegate/handlebdxtransfersessionend%28fornodeid,controller,metrics,error%29.md)
   Notify the delegate when a BDX Session ends for some node.  The controller identifies the fabric the node is on, and the nodeID identifies the node within that fabric.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

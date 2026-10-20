@@ -1,10 +1,11 @@
 # kPannerParam_Distance
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,13 +13,18 @@
 var kPannerParam_Distance: AudioUnitParameterID { get }
 ```
 
+```c
+kPannerParam_Distance
+```
+
 ## See Also
 
-- [var kPannerParam_Azimuth: AudioUnitParameterID](kpannerparam_azimuth.md)
-- [var kPannerParam_CoordScale: AudioUnitParameterID](kpannerparam_coordscale.md)
-- [var kPannerParam_Elevation: AudioUnitParameterID](kpannerparam_elevation.md)
-- [var kPannerParam_Gain: AudioUnitParameterID](kpannerparam_gain.md)
-- [var kPannerParam_RefDistance: AudioUnitParameterID](kpannerparam_refdistance.md)
+### Constants
+- [var kPannerParam_Azimuth: AudioUnitParameterID](./kpannerparam_azimuth.md)
+- [var kPannerParam_CoordScale: AudioUnitParameterID](./kpannerparam_coordscale.md)
+- [var kPannerParam_Elevation: AudioUnitParameterID](./kpannerparam_elevation.md)
+- [var kPannerParam_Gain: AudioUnitParameterID](./kpannerparam_gain.md)
+- [var kPannerParam_RefDistance: AudioUnitParameterID](./kpannerparam_refdistance.md)
 
 
 ---

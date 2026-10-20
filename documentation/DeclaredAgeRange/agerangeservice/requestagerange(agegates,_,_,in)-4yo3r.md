@@ -1,7 +1,8 @@
 # requestAgeRange(ageGates:_:_:in:)
 
 **Framework**: Declared Age Range  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests an age range for the person logged onto iCloud on the device.
 
@@ -16,7 +17,7 @@ func requestAgeRange(ageGates threshold1: Int, _ threshold2: Int? = nil, _ thres
 
 #### Return Value
 
-An [`AgeRangeService.Response`](agerangeservice/response.md) value indicating whether the person shared their age range.
+An [`AgeRangeService.Response`](./response.md) value indicating whether the person shared their age range.
 
 #### Discussion
 
@@ -24,7 +25,7 @@ This method presents a system-provided interface that allows people to share the
 
 The system may return age ranges that override the age gates you specify based on the person’s location and applicable regulations. When local regulations require specific age gates, the returned age range reflects regulatory requirements rather than the bounds of your age gates.
 
-> **Note**: An [`AgeRangeService.Error`](agerangeservice/error.md) when the request fails.
+> **Throws**: An [`AgeRangeService.Error`](./error.md) when the request fails.
 
 ## Parameters
 
@@ -35,15 +36,16 @@ The system may return age ranges that override the age gates you specify based o
 
 ## See Also
 
-- [AgeRangeService.AgeRangeDeclaration](agerangeservice/agerangedeclaration.md)
+### Getting the age range
+- [AgeRangeService.AgeRangeDeclaration](./agerangedeclaration.md)
   Constants that describe how an adult, parent, or guardian set the age range.
-- [AgeRangeService.AgeRange](agerangeservice/agerange.md)
+- [AgeRangeService.AgeRange](./agerange.md)
   Information about a person’s age range based on their response to an age range request.
-- [func requestAgeRange(ageGates: Int, Int?, Int?, in: UIViewController) async throws -> AgeRangeService.Response](agerangeservice/requestagerange(agegates:_:_:in:)-2go8c.md)
+- [func requestAgeRange(ageGates: Int, Int?, Int?, in: UIViewController) async throws -> AgeRangeService.Response](./requestagerange%28agegates,_,_,in%29-2go8c.md)
   Requests an age range for the person signed in to iCloud on the device.
-- [AgeRangeService.Response](agerangeservice/response.md)
+- [AgeRangeService.Response](./response.md)
   A response indicating whether a person shared their age range or declined to share it.
-- [AgeRangeService.ParentalControls](agerangeservice/parentalcontrols.md)
+- [AgeRangeService.ParentalControls](./parentalcontrols.md)
   An option set to define parental controls enabled and shared as a part of age range declaration.
 
 

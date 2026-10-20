@@ -1,7 +1,8 @@
 # full
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A rich, detailed callout style that is suitable for large map views.
 
@@ -24,11 +25,12 @@ Use this style for map views on iPadOS and macOS. Use the sheet presentation to 
 
 ## See Also
 
-- [MapItemDetailSelectionAccessoryStyle.CalloutStyle](mapitemdetailselectionaccessorystyle/calloutstyle.md)
+### Callout styles
+- [MapItemDetailSelectionAccessoryStyle.CalloutStyle](../calloutstyle.md)
   The style to use for callout content.
-- [static var automatic: MapItemDetailSelectionAccessoryStyle.CalloutStyle](mapitemdetailselectionaccessorystyle/calloutstyle/automatic.md)
+- [static var automatic: MapItemDetailSelectionAccessoryStyle.CalloutStyle](./automatic.md)
   A value that allows the framework to choose an appropriate callout style automatically.
-- [static var compact: MapItemDetailSelectionAccessoryStyle.CalloutStyle](mapitemdetailselectionaccessorystyle/calloutstyle/compact.md)
+- [static var compact: MapItemDetailSelectionAccessoryStyle.CalloutStyle](./compact.md)
   A compact, space-saving callout style.
 
 

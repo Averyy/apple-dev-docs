@@ -1,7 +1,8 @@
 # invalid
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 4.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static let invalid: CMSampleTimingInfo
+```
+
+```c
+extern const CMSampleTimingInfo kCMTimingInfoInvalid;
 ```
 
 

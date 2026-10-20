@@ -1,7 +1,8 @@
 # vImageConvolveMultiKernel_ARGB8888(_:_:_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Convolves each channel of an 8-bit-per-channel, 4-channel interleaved image by one of the four 2D kernels.
 
@@ -20,13 +21,17 @@ Convolves each channel of an 8-bit-per-channel, 4-channel interleaved image by o
 func vImageConvolveMultiKernel_ARGB8888(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ tempBuffer: UnsafeMutableRawPointer!, _ srcOffsetToROI_X: vImagePixelCount, _ srcOffsetToROI_Y: vImagePixelCount, _ kernels: UnsafeMutablePointer<UnsafePointer<Int16>?>!, _ kernel_height: UInt32, _ kernel_width: UInt32, _ divisors: UnsafePointer<Int32>!, _ biases: UnsafePointer<Int32>!, _ backgroundColor: UnsafePointer<UInt8>!, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageConvolveMultiKernel_ARGB8888(const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, vImagePixelCount srcOffsetToROI_X, vImagePixelCount srcOffsetToROI_Y, const int16_t * kernels[4], uint32_t kernel_height, uint32_t kernel_width, const int32_t divisors[4], const int32_t biases[4], const Pixel_8888 backgroundColor, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [`Data Types and Constants`](data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
 #### Discussion
 
-##### Optimize Performance with Temporary Buffers
+##### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 
@@ -53,13 +58,19 @@ You can use the same workspace memory for a group of images that are different s
 - `divisors`: An array of values, for normalization purposes, to divide into the convolution results. Supply one value for each channel.
 - `biases`: An array of four values to add to each element of the convolution result for one channel, before clipping. The first value is for the alpha channel, the second for red, the third for green, and the fourth for blue
 - `backgroundColor`: A background color. If you supply a color, you need to also set the `kvImageBackgroundColorFill` flag; otherwise, the function ignores the color.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md). To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) flag. Pass one of the following flags to specify how vImage handles pixel locations beyond the edge of the source image: [`kvImageCopyInPlace`](kvimagecopyinplace.md), [`kvImageTruncateKernel`](kvimagetruncatekernel.md), [`kvImageBackgroundColorFill`](kvimagebackgroundcolorfill.md), or [`kvImageEdgeExtend`](kvimageedgeextend.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md).
+
+  To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](./kvimagegettempbuffersize.md) flag.
+
+  Pass one of the following flags to specify how vImage handles pixel locations beyond the edge of the source image: [`kvImageCopyInPlace`](./kvimagecopyinplace.md), [`kvImageTruncateKernel`](./kvimagetruncatekernel.md), [`kvImageBackgroundColorFill`](./kvimagebackgroundcolorfill.md), or [`kvImageEdgeExtend`](./kvimageedgeextend.md).
 
 ## See Also
 
-- [func vImageConvolveWithBias_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Int16>!, UInt32, UInt32, Int32, Int32, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](vimageconvolvewithbias_argb8888(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+### Related Documentation
+- [func vImageConvolveWithBias_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafePointer<Int16>!, UInt32, UInt32, Int32, Int32, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](./vimageconvolvewithbias_argb8888%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Convolves an 8-bit-per-channel, 4-channel interleaved image by a 2D kernel and adds a bias.
-- [func vImageConvolveMultiKernel_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafeMutablePointer<UnsafePointer<Float>?>, UInt32, UInt32, UnsafePointer<Float>, UnsafePointer<Float>, vImage_Flags) -> vImage_Error](vimageconvolvemultikernel_argbffff(_:_:_:_:_:_:_:_:_:_:_:).md)
+### Convolving with multiple kernels
+- [func vImageConvolveMultiKernel_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafeMutablePointer<UnsafePointer<Float>?>, UInt32, UInt32, UnsafePointer<Float>, UnsafePointer<Float>, vImage_Flags) -> vImage_Error](./vimageconvolvemultikernel_argbffff%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Convolves each channel of a floating-point 32-bit-per-channel, 4-channel interleaved image by one of the four 2D kernels.
 
 

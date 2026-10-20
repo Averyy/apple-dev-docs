@@ -1,7 +1,8 @@
 # beats(forHostTime:error:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the beat the system plays at the specified host time.
 
@@ -19,6 +20,10 @@ Gets the beat the system plays at the specified host time.
 func beats(forHostTime inHostTime: UInt64, error outError: NSErrorPointer) -> AVMusicTimeStamp
 ```
 
+```objc
+- (AVMusicTimeStamp) beatsForHostTime:(UInt64) inHostTime error:(NSError **) outError;
+```
+
 #### Discussion
 
 This call is valid when the player is in a playing state. It returns `0` with an error, otherwise, or if the starting position of the player is after the specified host time. This method uses the sequence’s tempo map to retrieve a beat time from the specified host time.
@@ -30,11 +35,12 @@ This call is valid when the player is in a playing state. It returns `0` with an
 
 ## See Also
 
-- [func beats(forSeconds: TimeInterval) -> AVMusicTimeStamp](avaudiosequencer/beats(forseconds:).md)
+### Handling beat range
+- [func beats(forSeconds: TimeInterval) -> AVMusicTimeStamp](./beats%28forseconds%29.md)
   Gets the beat position (timestamp) for the specified time in the track.
-- [var AVMusicTimeStampEndOfTrack: Double](avmusictimestampendoftrack.md)
+- [var AVMusicTimeStampEndOfTrack: Double](../avmusictimestampendoftrack.md)
   A timestamp you use to access all events in a music track through a beat range.
-- [typealias AVBeatRange](avbeatrange-swift.typealias.md)
+- [typealias AVBeatRange](../avbeatrange-swift.typealias.md)
   A specific time range within a music track.
 
 

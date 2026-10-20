@@ -1,7 +1,8 @@
 # vfs_clearflags
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Clear flags on a mount.
 
@@ -10,11 +11,11 @@ Clear flags on a mount.
 
 ## Declaration
 
-```swift
+```c
 void vfs_clearflags(mount_t mp, uint64_t flags);
 ```
 
-#### Return_value
+#### Return Value
 
 void.
 

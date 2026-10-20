@@ -1,7 +1,8 @@
 # expirationHandler
 
 **Framework**: Background Tasks  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A handler called shortly before the task’s background time expires.
 
@@ -18,9 +19,13 @@ A handler called shortly before the task’s background time expires.
 var expirationHandler: (() -> Void)? { get set }
 ```
 
+```objc
+@property (strong, nullable) void (^expirationHandler)();
+```
+
 ## Mentions
 
-- [Performing long-running tasks on iOS and iPadOS](performing-long-running-tasks-on-ios-and-ipados.md)
+- [Performing long-running tasks on iOS and iPadOS](../performing-long-running-tasks-on-ios-and-ipados.md)
 
 #### Discussion
 
@@ -32,11 +37,14 @@ The manager sets the value `expirationHandler` to `nil` after the handler comple
 
 ## Parameters
 
-- `expirationHandler`: The expiration handler takes no arguments and has no return value. Use the handler to cancel any ongoing work and to do any required cleanup in as short a time as possible. The handler may be called before the background process uses the full amount of its allocated time.
+- `expirationHandler`: The expiration handler takes no arguments and has no return value. Use the handler to cancel any ongoing work and to do any required cleanup in as short a time as possible.
+
+  The handler may be called before the background process uses the full amount of its allocated time.
 
 ## See Also
 
-- [func setTaskCompleted(success: Bool)](bgtask/settaskcompleted(success:).md)
+### Configuring a Task
+- [func setTaskCompleted(success: Bool)](./settaskcompleted%28success%29.md)
   Informs the background task scheduler that the task is complete.
 
 

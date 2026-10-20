@@ -1,7 +1,8 @@
 # path
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The path of the command being invoked.
 
@@ -18,6 +19,10 @@ The path of the command being invoked.
 
 ```swift
 var path: MTRCommandPath { get set }
+```
+
+```objc
+@property (nonatomic, retain) MTRCommandPath * path;
 ```
 
 

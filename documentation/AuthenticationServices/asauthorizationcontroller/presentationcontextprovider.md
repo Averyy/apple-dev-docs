@@ -1,7 +1,8 @@
 # presentationContextProvider
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate that provides a display context in which the system can present an authorization interface to the user.
 
@@ -19,9 +20,14 @@ A delegate that provides a display context in which the system can present an au
 weak var presentationContextProvider: (any ASAuthorizationControllerPresentationContextProviding)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<ASAuthorizationControllerPresentationContextProviding> presentationContextProvider;
+```
+
 ## See Also
 
-- [protocol ASAuthorizationControllerPresentationContextProviding](asauthorizationcontrollerpresentationcontextproviding.md)
+### Presenting requests
+- [protocol ASAuthorizationControllerPresentationContextProviding](../asauthorizationcontrollerpresentationcontextproviding.md)
   An interface the controller uses to ask a delegate for a presentation context.
 
 

@@ -1,7 +1,8 @@
 # contexts(matchingIdentifierPath:completion:)
 
 **Framework**: ClassKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches all the contexts along a given identifier path.
 
@@ -15,14 +16,26 @@ Fetches all the contexts along a given identifier path.
 ## Declaration
 
 ```swift
+func contexts(matchingIdentifierPath identifierPath: [String], completion: @escaping @Sendable ([CLSContext], (any Error)?) -> Void)
+```
+
+```swift
 func contexts(matchingIdentifierPath identifierPath: [String]) async throws -> [CLSContext]
+```
+
+```objc
+- (void) contextsMatchingIdentifierPath:(NSArray<NSString *> *) identifierPath completion:(void (^)(NSArray<CLSContext *> *contexts, NSError *error)) completion;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func contexts(matchingIdentifierPath identifierPath: [String]) async throws -> [CLSContext]
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func contexts(matchingIdentifierPath identifierPath: [String]) async throws -> [CLSContext]
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 Use this method to get all of the named contexts along the identifier path. For example:
 
@@ -36,20 +49,21 @@ store.contexts(matchingIdentifierPath: ["game", "level-1"]) { contexts, _ in
 // Prints "game" and then "level-1"
 ```
 
-The identifier path is taken starting from [`mainAppContext`](clsdatastore/mainappcontext.md), which lies at the root of your app’s context hiearchy. For each context that doesn’t exist along the path, the data store calls its delegate’s [`createContext(forIdentifier:parentContext:parentIdentifierPath:)`](clsdatastoredelegate/createcontext(foridentifier:parentcontext:parentidentifierpath:).md) method to create the context. If contexts are missing and the data store has no delegate, the returned list of contexts is incomplete.
+The identifier path is taken starting from [`mainAppContext`](./mainappcontext.md), which lies at the root of your app’s context hiearchy. For each context that doesn’t exist along the path, the data store calls its delegate’s [`createContext(forIdentifier:parentContext:parentIdentifierPath:)`](../clsdatastoredelegate/createcontext%28foridentifier,parentcontext,parentidentifierpath%29.md) method to create the context. If contexts are missing and the data store has no delegate, the returned list of contexts is incomplete.
 
 > ❗ **Important**:  ClassKit calls your completion handler on an arbitrary thread. If you need to do work on a particular thread from inside the handler, dispatch that work to the appropriate queue.
 
 ## Parameters
 
-- `identifierPath`: An array of strings that trace a path of identifiers from [`mainAppContext`](clsdatastore/mainappcontext.md) to a target context.
+- `identifierPath`: An array of strings that trace a path of identifiers from [`mainAppContext`](./mainappcontext.md) to a target context.
 - `completion`: A closure that the method calls with the matching contexts and an optional error that indicates the reason for failure, if any.
 
 ## See Also
 
-- [func contexts(matching: NSPredicate, completion: ([CLSContext], (any Error)?) -> Void)](clsdatastore/contexts(matching:completion:).md)
+### Finding contexts that match criteria
+- [func contexts(matching: NSPredicate, completion: ([CLSContext], (any Error)?) -> Void)](./contexts%28matching,completion%29.md)
   Fetches all the contexts matching a predicate.
-- [struct CLSPredicateKeyPath](clspredicatekeypath.md)
+- [struct CLSPredicateKeyPath](../clspredicatekeypath.md)
   The set of possible key paths you use to search for contexts.
 
 

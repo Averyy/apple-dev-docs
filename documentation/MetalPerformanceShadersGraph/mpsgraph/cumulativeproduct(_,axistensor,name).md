@@ -1,7 +1,8 @@
 # cumulativeProduct(_:axisTensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the cumulative product of the input tensor along the specified axis.
 
@@ -17,6 +18,10 @@ Computes the cumulative product of the input tensor along the specified axis.
 
 ```swift
 func cumulativeProduct(_ tensor: MPSGraphTensor, axisTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) cumulativeProductWithTensor:(MPSGraphTensor *) tensor axisTensor:(MPSGraphTensor *) axisTensor name:(NSString *) name;
 ```
 
 #### Return Value

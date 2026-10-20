@@ -1,7 +1,8 @@
 # aboveHand
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An anchor location above the center of the palm in the world space, regardless how the hand is rotated.
 

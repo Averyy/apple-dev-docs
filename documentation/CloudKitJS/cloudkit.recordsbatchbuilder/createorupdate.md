@@ -1,7 +1,8 @@
 # createOrUpdate
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates or updates one or more records depending on the information provided.
 
@@ -10,7 +11,7 @@ Creates or updates one or more records depending on the information provided.
 
 ## Declaration
 
-```swift
+```
 CloudKit.RecordsBatchBuilder createOrUpdate(
 	CloudKit.Record|CloudKit.Record[] records,
 	optional Object options
@@ -23,9 +24,9 @@ The object that received this method call.
 
 #### Discussion
 
-This is a convenience method for adding create and update operations rather than adding them separately using the [`create`](cloudkit.recordsbatchbuilder/create.md) and [`update`](cloudkit.recordsbatchbuilder/update.md) methods. Depending on the information in the record, this method determines whether the record should be created or updated.
+This is a convenience method for adding create and update operations rather than adding them separately using the [`create`](./create.md) and [`update`](./update.md) methods. Depending on the information in the record, this method determines whether the record should be created or updated.
 
-The type of operation depends on the values of the `recordName` and `recordChangeTag` keys in the [`CloudKit.Record`](cloudkit.record.md) dictionaries.
+The type of operation depends on the values of the `recordName` and `recordChangeTag` keys in the [`CloudKit.Record`](../cloudkit.record.md) dictionaries.
 
 - To create a record with a server-generated record name, set the `recordName` and `recordChangeTag` keys to `null`.
 - To create a record with a specified record name, set the `recordName` key to the record name and set `recordChangeTag` to `null`.
@@ -35,16 +36,17 @@ An error occurs if the `recordName` key is `null` and the `recordChangeTag` key 
 
 ## Parameters
 
-- `records`: A [`CloudKit.Record`](cloudkit.record.md) dictionary representing the record to create or update, if you are updating a single record. If you are updating multiple records, this parameter is an array of [`CloudKit.Record`](cloudkit.record.md) dictionaries representing the records to create or update. Only the values of the fields in the dictionaries are set.
+- `records`: A [`CloudKit.Record`](../cloudkit.record.md) dictionary representing the record to create or update, if you are updating a single record. If you are updating multiple records, this parameter is an array of [`CloudKit.Record`](../cloudkit.record.md) dictionaries representing the records to create or update. Only the values of the fields in the dictionaries are set.
 - `options`: A dictionary containing options for this operation. This parameter contains a single `desiredKeys` key that is an array of field names (`String` values). Only the fields specified in the array are set.
 
 ## See Also
 
-- [create](cloudkit.recordsbatchbuilder/create.md)
+### Creating and Updating Records
+- [create](./create.md)
   Creates one or more records.
-- [update](cloudkit.recordsbatchbuilder/update.md)
+- [update](./update.md)
   Updates one or more existing records.
-- [forceUpdate](cloudkit.recordsbatchbuilder/forceupdate.md)
+- [forceUpdate](./forceupdate.md)
   Updates one or more existing records regardless of conflicts.
 
 

@@ -1,7 +1,8 @@
 # viewDidLoad()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the split view controller after its view loads into memory.
 
@@ -14,9 +15,13 @@ Configures the split view controller after its view loads into memory.
 func viewDidLoad()
 ```
 
+```objc
+- (void) viewDidLoad;
+```
+
 #### Discussion
 
-[`NSSplitViewController`](nssplitviewcontroller.md) overrides this method from its parent class, [`NSViewController`](nsviewcontroller.md). If you override this method in a subclass, you must call `super`.
+[`NSSplitViewController`](../nssplitviewcontroller.md) overrides this method from its parent class, [`NSViewController`](../nsviewcontroller.md). If you override this method in a subclass, you must call `super`.
 
 
 ---

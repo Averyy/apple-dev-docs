@@ -1,7 +1,8 @@
 # GenerationOptions.ToolCallingMode.Kind
 
 **Framework**: Foundation Models  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A representation of the different ways a model can use tools.
 
@@ -22,24 +23,25 @@ enum Kind
 ## Topics
 
 ### Tool calling mode cases
-- [GenerationOptions.ToolCallingMode.Kind.allowed](generationoptions/toolcallingmode-swift.struct/kind-swift.enum/allowed.md)
+- [GenerationOptions.ToolCallingMode.Kind.allowed](./kind-swift.enum/allowed.md)
   The model may call tools.
-- [GenerationOptions.ToolCallingMode.Kind.disallowed](generationoptions/toolcallingmode-swift.struct/kind-swift.enum/disallowed.md)
+- [GenerationOptions.ToolCallingMode.Kind.disallowed](./kind-swift.enum/disallowed.md)
   The model can’t call any tools.
-- [GenerationOptions.ToolCallingMode.Kind.required](generationoptions/toolcallingmode-swift.struct/kind-swift.enum/required.md)
+- [GenerationOptions.ToolCallingMode.Kind.required](./kind-swift.enum/required.md)
   The model must call one or more tools.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var kind: GenerationOptions.ToolCallingMode.Kind](generationoptions/toolcallingmode-swift.struct/kind-swift.property.md)
+### Accessing the content
+- [var kind: GenerationOptions.ToolCallingMode.Kind](./kind-swift.property.md)
   The tool-calling behavior this mode represents.
 
 

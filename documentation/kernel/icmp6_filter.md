@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct icmp6_filter {
     ...
 };
@@ -17,7 +17,7 @@ struct icmp6_filter {
 ## Topics
 
 ### Instance Properties
-- [icmp6_filt](icmp6_filter/3754019-icmp6_filt.md)
+- [icmp6_filt](./icmp6_filter/api-3754019-icmp6_filt.md)
 
 
 ---

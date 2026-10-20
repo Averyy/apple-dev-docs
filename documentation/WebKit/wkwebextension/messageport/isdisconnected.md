@@ -1,7 +1,8 @@
 # isDisconnected
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the message port is disconnected.
 
@@ -16,6 +17,10 @@ Indicates whether the message port is disconnected.
 
 ```swift
 var isDisconnected: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isDisconnected) BOOL disconnected;
 ```
 
 

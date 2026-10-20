@@ -1,23 +1,28 @@
 # CFGetAllocator(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the allocator used to allocate a Core Foundation object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFGetAllocator(_ cf: CFTypeRef!) -> CFAllocator!
+```
+
+```c
+extern CFAllocatorRefCFGetAllocator(CFTypeRef cf);
 ```
 
 #### Return Value
@@ -34,7 +39,8 @@ When you are creating a Core Foundation object sometimes you want to ensure that
 
 ## See Also
 
-- [func CFGetRetainCount(CFTypeRef!) -> CFIndex](cfgetretaincount(_:).md)
+### Memory Management
+- [func CFGetRetainCount(CFTypeRef!) -> CFIndex](./cfgetretaincount%28_%29.md)
   Returns the reference count of a Core Foundation object.
 
 

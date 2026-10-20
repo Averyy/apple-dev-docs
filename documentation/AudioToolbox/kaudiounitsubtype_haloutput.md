@@ -1,10 +1,11 @@
 # kAudioUnitSubType_HALOutput
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kAudioUnitSubType_HALOutput: UInt32 { get }
 ```
 
+```c
+kAudioUnitSubType_HALOutput
+```
+
 ## See Also
 
-- [var kAudioUnitSubType_DefaultOutput: UInt32](kaudiounitsubtype_defaultoutput.md)
-- [var kAudioUnitSubType_SystemOutput: UInt32](kaudiounitsubtype_systemoutput.md)
+### Constants
+- [var kAudioUnitSubType_DefaultOutput: UInt32](./kaudiounitsubtype_defaultoutput.md)
+- [var kAudioUnitSubType_SystemOutput: UInt32](./kaudiounitsubtype_systemoutput.md)
 
 
 ---

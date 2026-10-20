@@ -1,7 +1,8 @@
 # AVPlayerViewController
 
 **Framework**: AVKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view controller that displays content from a player and presents a native user interface to control playback.
 
@@ -19,14 +20,18 @@ A view controller that displays content from a player and presents a native user
 class AVPlayerViewController
 ```
 
+```objc
+@interface AVPlayerViewController : UIViewController
+```
+
 ## Mentions
 
-- [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)
-- [Customizing the tvOS playback experience](customizing-the-tvos-playback-experience.md)
-- [Adopting Picture in Picture in a custom player](adopting-picture-in-picture-in-a-custom-player.md)
-- [Trimming and exporting media in visionOS](trimming-and-exporting-media-in-visionos.md)
-- [Working with interstitial content](working-with-interstitial-content.md)
-- [Adopting Picture in Picture in a standard player](adopting-picture-in-picture-in-a-standard-player.md)
+- [Adopting the system player interface in visionOS](./adopting-the-system-player-interface-in-visionos.md)
+- [Customizing the tvOS playback experience](./customizing-the-tvos-playback-experience.md)
+- [Adopting Picture in Picture in a custom player](./adopting-picture-in-picture-in-a-custom-player.md)
+- [Trimming and exporting media in visionOS](./trimming-and-exporting-media-in-visionos.md)
+- [Working with interstitial content](./working-with-interstitial-content.md)
+- [Adopting Picture in Picture in a standard player](./adopting-picture-in-picture-in-a-standard-player.md)
 
 #### Overview
 
@@ -34,208 +39,209 @@ A player view controller makes it simple to add media playback capabilities to y
 
 > ❗ **Important**:  The framework doesn’t support subclassing `AVPlayerViewController`.
 
-##### Support Airplay
+##### Support AirPlay
 
-AirPlay lets people stream media to Apple TV, HomePod, and AirPlay 2-compatible speakers and smart TVs. A player view controller supports AirPlay automatically, but you need to configure your app to enable it. See [`Configuring your app for media playback`](https://developer.apple.com/documentation/avfoundation/configuring-your-app-for-media-playback) for more information about configuring your app for background playback.
+AirPlay lets people stream media to Apple TV, HomePod, and AirPlay 2-compatible speakers and smart TVs. A player view controller supports AirPlay automatically, but you need to configure your app to enable it. See [Configuring your app for media playback](../AVFoundation/configuring-your-app-for-media-playback.md) for more information about configuring your app for background playback.
 
-##### Adopt Picture in Picture Playback
+##### Adopt Picture in Picture playback
 
 `AVPlayerViewController` provides Picture in Picture (PiP) playback in iOS and tvOS. PiP playback lets people minimize the video player to a small floating window so they can perform other activities in the primary app or in another app.
 
-> **Note**: To enable PiP playback in your macOS app, use [`AVPlayerView`](avplayerview.md).
+> **Note**: To enable PiP playback in your macOS app, use [`AVPlayerView`](./avplayerview.md).
 
-##### Customize the Tvos Playback Experience
+##### Customize the tvOS playback experience
 
 `AVPlayerViewController` in tvOS brings advanced Siri Remote control features to your app. This support lets people play and navigate your content, and access supporting features like subtitles and alternate audio tracks. This object also provides support for using Siri Remote voice commands, such as “Skip ahead 15 seconds” and “What did they say?” to control playback of your content.
 
-AVKit for tvOS extends the features of `AVPlayerViewController` and [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) to provide additional ways to navigate and present content. Features unique to the tvOS player user interface include:
+AVKit for tvOS extends the features of `AVPlayerViewController` and [`AVPlayerItem`](../AVFoundation/avplayeritem.md) to provide additional ways to navigate and present content. Features unique to the tvOS player user interface include:
 
 - Navigation Marker Groups. A group of navigation markers that allow a viewer to jump between significant events in the media timeline. The most common type of navigation marker group is a chapter list, but you can also create additional or alternative means of navigation — for example, to allow someone to quickly jump between key moments in a recorded sporting event. The player view controller lets a person choose between multiple marker groups for navigating through the media timeline.
 
-Use the [`AVNavigationMarkersGroup`](avnavigationmarkersgroup.md) class to create and describe navigation markers, and then use the [`navigationMarkerGroups`](https://developer.apple.com/documentation/avfoundation/avplayeritem/navigationmarkergroups) property to associate marker groups with the current `AVPlayerItem` object.
+Use the [`AVNavigationMarkersGroup`](./avnavigationmarkersgroup.md) class to create and describe navigation markers, and then use the [`navigationMarkerGroups`](../AVFoundation/avplayeritem/navigationmarkergroups.md) property to associate marker groups with the current `AVPlayerItem` object.
 
 - Interstitial Content. Some content might not relate to the main content that your app presents, or might have different presentation requirements. For example, you might not allow people to skip over advertisements when scrubbing through the playback timeline, or to skip mandatory legal notices.
 
-Use the [`AVInterstitialTimeRange`](avinterstitialtimerange.md) class to describe interstitial content, and the [`interstitialTimeRanges`](https://developer.apple.com/documentation/avfoundation/avplayeritem/interstitialtimeranges) property to associate those time ranges with the current `AVPlayerItem` object.
+Use the [`AVInterstitialTimeRange`](./avinterstitialtimerange.md) class to describe interstitial content, and the [`interstitialTimeRanges`](../AVFoundation/avplayeritem/interstitialtimeranges.md) property to associate those time ranges with the current `AVPlayerItem` object.
 
 - Content Proposals. When presenting serialized content, like a TV show, you often want to propose additional content for someone to watch when the current episode ends. It’s straightforward to add this functionality to your app using content proposals.
 
-Use the [`AVContentProposal`](avcontentproposal.md) class to describe the proposed content, and set it as the [`nextContentProposal`](https://developer.apple.com/documentation/avfoundation/avplayeritem/nextcontentproposal) property of the current `AVPlayerItem` object. You can implement the methods of the player view controller’s [`delegate`](avplayerviewcontroller/delegate.md) object to prepare to present a content proposal, and perform actions in response to someone accepting, rejecting, or deferring the proposal.
+Use the [`AVContentProposal`](./avcontentproposal.md) class to describe the proposed content, and set it as the [`nextContentProposal`](../AVFoundation/avplayeritem/nextcontentproposal.md) property of the current `AVPlayerItem` object. You can implement the methods of the player view controller’s [`delegate`](./avplayerviewcontroller/delegate.md) object to prepare to present a content proposal, and perform actions in response to someone accepting, rejecting, or deferring the proposal.
 
 ## Topics
 
 ### Configuring presentation
-- [var showsPlaybackControls: Bool](avplayerviewcontroller/showsplaybackcontrols.md)
+- [var showsPlaybackControls: Bool](./avplayerviewcontroller/showsplaybackcontrols.md)
   A Boolean value that indicates whether the player view controller shows playback controls.
-- [var contentOverlayView: UIView?](avplayerviewcontroller/contentoverlayview.md)
+- [var contentOverlayView: UIView?](./avplayerviewcontroller/contentoverlayview.md)
   A view that displays between the video content and the playback controls.
-- [var videoGravity: AVLayerVideoGravity](avplayerviewcontroller/videogravity.md)
+- [var videoGravity: AVLayerVideoGravity](./avplayerviewcontroller/videogravity.md)
   A string that specifies how the video displays within the bounds of the view controller’s view.
-- [var videoBounds: CGRect](avplayerviewcontroller/videobounds.md)
+- [var videoBounds: CGRect](./avplayerviewcontroller/videobounds.md)
   The size and position of the video image within the bounds of the view controller’s view.
-- [var showsTimecodes: Bool](avplayerviewcontroller/showstimecodes.md)
+- [var showsTimecodes: Bool](./avplayerviewcontroller/showstimecodes.md)
   A Boolean value that determines whether the player view displays timecodes, if available.
-- [var appliesPreferredDisplayCriteriaAutomatically: Bool](avplayerviewcontroller/appliespreferreddisplaycriteriaautomatically.md)
+- [var appliesPreferredDisplayCriteriaAutomatically: Bool](./avplayerviewcontroller/appliespreferreddisplaycriteriaautomatically.md)
   A Boolean value that indicates whether the view controller automatically sets the screen’s display criteria to match that of the currently playing asset.
 ### Customizing the tvOS player UI
-- [var playbackControlsIncludeTransportBar: Bool](avplayerviewcontroller/playbackcontrolsincludetransportbar.md)
+- [var playbackControlsIncludeTransportBar: Bool](./avplayerviewcontroller/playbackcontrolsincludetransportbar.md)
   A Boolean value that indicates whether the player shows the transport bar and related controls.
-- [var playbackControlsIncludeInfoViews: Bool](avplayerviewcontroller/playbackcontrolsincludeinfoviews.md)
+- [var playbackControlsIncludeInfoViews: Bool](./avplayerviewcontroller/playbackcontrolsincludeinfoviews.md)
   A Boolean value that indicates whether the player presents video metadata, navigation markers, and playback settings views when someone requests them.
-- [var transportBarIncludesTitleView: Bool](avplayerviewcontroller/transportbarincludestitleview.md)
+- [var transportBarIncludesTitleView: Bool](./avplayerviewcontroller/transportbarincludestitleview.md)
   A Boolean value that indicates whether the player user interface shows the title view above the scrubber.
-- [var transportBarCustomMenuItems: [UIMenuElement]](avplayerviewcontroller/transportbarcustommenuitems.md)
+- [var transportBarCustomMenuItems: [UIMenuElement]](./avplayerviewcontroller/transportbarcustommenuitems.md)
   An array of actions and menus to display with the default player controls.
-- [var customInfoViewControllers: [UIViewController]](avplayerviewcontroller/custominfoviewcontrollers.md)
+- [var customInfoViewControllers: [UIViewController]](./avplayerviewcontroller/custominfoviewcontrollers.md)
   An array of view controllers to display as content tabs in the player user interface.
-- [var infoViewActions: [UIAction]!](avplayerviewcontroller/infoviewactions.md)
+- [var infoViewActions: [UIAction]!](./avplayerviewcontroller/infoviewactions.md)
   An array of actions to present in the Info content view.
-- [var contextualActions: [UIAction]](avplayerviewcontroller/contextualactions.md)
+- [var contextualActions: [UIAction]](./avplayerviewcontroller/contextualactions.md)
   An array of action controls to present contextually during playback.
-- [var customOverlayViewController: UIViewController?](avplayerviewcontroller/customoverlayviewcontroller.md)
+- [var customOverlayViewController: UIViewController?](./avplayerviewcontroller/customoverlayviewcontroller.md)
   A view controller that presents custom content over the player view.
-- [var unobscuredContentGuide: UILayoutGuide](avplayerviewcontroller/unobscuredcontentguide.md)
+- [var unobscuredContentGuide: UILayoutGuide](./avplayerviewcontroller/unobscuredcontentguide.md)
   A layout guide that represents an area that fixed-position playback controls don’t obscure when visible.
-- [var customInfoViewController: UIViewController?](avplayerviewcontroller/custominfoviewcontroller.md)
+- [var customInfoViewController: UIViewController?](./avplayerviewcontroller/custominfoviewcontroller.md)
   A view controller that provides client-specific content and controls alongside system-provided information and settings panels.
 ### Configuring the visionOS player UI
-- [var infoViewActions: [UIAction]!](avplayerviewcontroller/infoviewactions.md)
+- [var infoViewActions: [UIAction]!](./avplayerviewcontroller/infoviewactions.md)
   An array of actions to present in the Info content view.
-- [var customInfoViewControllers: [UIViewController]](avplayerviewcontroller/custominfoviewcontrollers.md)
+- [var customInfoViewControllers: [UIViewController]](./avplayerviewcontroller/custominfoviewcontrollers.md)
   An array of view controllers to display as content tabs in the player user interface.
-- [var contextualActions: [UIAction]](avplayerviewcontroller/contextualactions.md)
+- [var contextualActions: [UIAction]](./avplayerviewcontroller/contextualactions.md)
   An array of action controls to present contextually during playback.
-- [var contextualActionsInfoView: UIView](avplayerviewcontroller/contextualactionsinfoview.md)
+- [var contextualActionsInfoView: UIView](./avplayerviewcontroller/contextualactionsinfoview.md)
   A view the system shows adjacent to the contextual actions that’s suitable for showing related information.
-- [var contextualActionsPreviewImage: UIImage?](avplayerviewcontroller/contextualactionspreviewimage.md)
+- [var contextualActionsPreviewImage: UIImage?](./avplayerviewcontroller/contextualactionspreviewimage.md)
   An image to show alongside the contextual actions.
-- [var requiresMonoscopicViewingMode: Bool](avplayerviewcontroller/requiresmonoscopicviewingmode.md)
+- [var requiresMonoscopicViewingMode: Bool](./avplayerviewcontroller/requiresmonoscopicviewingmode.md)
   A Boolean value that indicates whether to permit playback of 2D video content only.
-- [var experienceController: AVExperienceController](avplayerviewcontroller/experiencecontroller.md)
+- [var experienceController: AVExperienceController](./avplayerviewcontroller/experiencecontroller.md)
   The experience controller for this view controller.
-- [var groupExperienceCoordinator: AVGroupExperienceCoordinator](avplayerviewcontroller/groupexperiencecoordinator.md)
+- [var groupExperienceCoordinator: AVGroupExperienceCoordinator](./avplayerviewcontroller/groupexperiencecoordinator.md)
   The group experience coordinator for this view controller.
-- [var viewport: AVViewport](avplayerviewcontroller/viewport.md)
+- [var viewport: AVViewport](./avplayerviewcontroller/viewport.md)
   A configuration object that manages viewport settings for different presentation modes.
-- [class AVViewport](avviewport.md)
+- [class AVViewport](./avviewport.md)
   An object that provides configuration options for how the player displays content in different viewing contexts.
 ### Presenting the visionOS trimming UI
-- [var canBeginTrimming: Bool](avplayerviewcontroller/canbegintrimming.md)
+- [var canBeginTrimming: Bool](./avplayerviewcontroller/canbegintrimming.md)
   A Boolean value that indicates whether the current media supports trimming.
-- [func beginTrimming(completionHandler: ((Bool) -> Void)?)](avplayerviewcontroller/begintrimming(completionhandler:).md)
+- [func beginTrimming(completionHandler: ((Bool) -> Void)?)](./avplayerviewcontroller/begintrimming%28completionhandler%29.md)
   Presents the system trimming interface controls inside the player view.
 ### Configuring frame analysis
-- [var allowsVideoFrameAnalysis: Bool](avplayerviewcontroller/allowsvideoframeanalysis.md)
+- [var allowsVideoFrameAnalysis: Bool](./avplayerviewcontroller/allowsvideoframeanalysis.md)
   A Boolean value that indicates whether to perform video frame analysis.
-- [var toggleLookupAction: UIAction](avplayerviewcontroller/togglelookupaction.md)
+- [var toggleLookupAction: UIAction](./avplayerviewcontroller/togglelookupaction.md)
   An action that enables the visual lookup interface.
-- [var videoFrameAnalysisTypes: AVVideoFrameAnalysisType](avplayerviewcontroller/videoframeanalysistypes.md)
+- [var videoFrameAnalysisTypes: AVVideoFrameAnalysisType](./avplayerviewcontroller/videoframeanalysistypes.md)
   The types of analysis a player view controller performs on a paused video frame.
-- [struct AVVideoFrameAnalysisType](avvideoframeanalysistype.md)
+- [struct AVVideoFrameAnalysisType](./avvideoframeanalysistype.md)
   Constants that define the types of analysis a player view controller may perform on a paused video frame.
 ### Configuring playback speed
-- [var speeds: [AVPlaybackSpeed]](avplayerviewcontroller/speeds.md)
+- [var speeds: [AVPlaybackSpeed]](./avplayerviewcontroller/speeds.md)
   A list of user-selectable playback speeds to show in the playback speed control.
-- [var selectedSpeed: AVPlaybackSpeed?](avplayerviewcontroller/selectedspeed.md)
+- [var selectedSpeed: AVPlaybackSpeed?](./avplayerviewcontroller/selectedspeed.md)
   The currently selected playback speed.
-- [func selectSpeed(AVPlaybackSpeed)](avplayerviewcontroller/selectspeed(_:).md)
+- [func selectSpeed(AVPlaybackSpeed)](./avplayerviewcontroller/selectspeed%28_%29.md)
   Selects a specified playback speed.
-- [class AVPlaybackSpeed](avplaybackspeed.md)
+- [class AVPlaybackSpeed](./avplaybackspeed.md)
   An object that represents a user-selectable playback speed in a playback user interface.
 ### Configuring Picture in Picture
-- [var allowsPictureInPicturePlayback: Bool](avplayerviewcontroller/allowspictureinpictureplayback.md)
+- [var allowsPictureInPicturePlayback: Bool](./avplayerviewcontroller/allowspictureinpictureplayback.md)
   A Boolean value that indicates whether the player allows Picture in Picture playback.
-- [var canStartPictureInPictureAutomaticallyFromInline: Bool](avplayerviewcontroller/canstartpictureinpictureautomaticallyfrominline.md)
+- [var canStartPictureInPictureAutomaticallyFromInline: Bool](./avplayerviewcontroller/canstartpictureinpictureautomaticallyfrominline.md)
   A Boolean value that indicates whether Picture in Picture starts automatically when transitioning to the background when the view controller presents its content inline.
 ### Managing full-screen behavior
-- [var entersFullScreenWhenPlaybackBegins: Bool](avplayerviewcontroller/entersfullscreenwhenplaybackbegins.md)
+- [var entersFullScreenWhenPlaybackBegins: Bool](./avplayerviewcontroller/entersfullscreenwhenplaybackbegins.md)
   A Boolean value that determines whether the player automatically displays in full screen when someone taps the Play button.
-- [var exitsFullScreenWhenPlaybackEnds: Bool](avplayerviewcontroller/exitsfullscreenwhenplaybackends.md)
+- [var exitsFullScreenWhenPlaybackEnds: Bool](./avplayerviewcontroller/exitsfullscreenwhenplaybackends.md)
   A Boolean value that indicates whether the player exits full-screen mode when playback ends.
 ### Managing subtitles
-- [var allowedSubtitleOptionLanguages: [String]?](avplayerviewcontroller/allowedsubtitleoptionlanguages.md)
+- [var allowedSubtitleOptionLanguages: [String]?](./avplayerviewcontroller/allowedsubtitleoptionlanguages.md)
   An array of language codes that restrict the set of subtitle languages available.
-- [var requiresFullSubtitles: Bool](avplayerviewcontroller/requiresfullsubtitles.md)
+- [var requiresFullSubtitles: Bool](./avplayerviewcontroller/requiresfullsubtitles.md)
   A Boolean value that indicates whether someone can disable the display of subtitles.
-- [class var mediaCharacteristicsForSupportedCustomMediaSelectionSchemes: [AVMediaCharacteristic]](avplayerviewcontroller/mediacharacteristicsforsupportedcustommediaselectionschemes.md)
+- [class var mediaCharacteristicsForSupportedCustomMediaSelectionSchemes: [AVMediaCharacteristic]](./avplayerviewcontroller/mediacharacteristicsforsupportedcustommediaselectionschemes.md)
 ### Preventing navigation
-- [var requiresLinearPlayback: Bool](avplayerviewcontroller/requireslinearplayback.md)
+- [var requiresLinearPlayback: Bool](./avplayerviewcontroller/requireslinearplayback.md)
   A Boolean value that determines whether the player allows someone to skip media content.
 ### Configuring skipping behavior
-- [var isSkipForwardEnabled: Bool](avplayerviewcontroller/isskipforwardenabled.md)
+- [var isSkipForwardEnabled: Bool](./avplayerviewcontroller/isskipforwardenabled.md)
   A Boolean value that indicates whether forward-skipping is available.
-- [var isSkipBackwardEnabled: Bool](avplayerviewcontroller/isskipbackwardenabled.md)
+- [var isSkipBackwardEnabled: Bool](./avplayerviewcontroller/isskipbackwardenabled.md)
   A Boolean value that indicates whether backward-skipping is available.
-- [var skippingBehavior: AVPlayerViewControllerSkippingBehavior](avplayerviewcontroller/skippingbehavior.md)
+- [var skippingBehavior: AVPlayerViewControllerSkippingBehavior](./avplayerviewcontroller/skippingbehavior.md)
   The behavior that skipping gestures perform.
-- [enum AVPlayerViewControllerSkippingBehavior](avplayerviewcontrollerskippingbehavior.md)
+- [enum AVPlayerViewControllerSkippingBehavior](./avplayerviewcontrollerskippingbehavior.md)
   Constants that represent the player view controller’s skipping behavior.
 ### Determining display readiness
-- [var isReadyForDisplay: Bool](avplayerviewcontroller/isreadyfordisplay.md)
+- [var isReadyForDisplay: Bool](./avplayerviewcontroller/isreadyfordisplay.md)
   A Boolean value that indicates whether the player item’s first video frame is ready for display.
 ### Updating Now Playing information
-- [var updatesNowPlayingInfoCenter: Bool](avplayerviewcontroller/updatesnowplayinginfocenter.md)
+- [var updatesNowPlayingInfoCenter: Bool](./avplayerviewcontroller/updatesnowplayinginfocenter.md)
   A Boolean value that indicates whether the view controller updates Now Playing information.
 ### Proposing additional content
-- [var contentProposalViewController: AVContentProposalViewController!](avplayerviewcontroller/contentproposalviewcontroller.md)
+- [var contentProposalViewController: AVContentProposalViewController!](./avplayerviewcontroller/contentproposalviewcontroller.md)
   The view controller responsible for the presentation of content proposals.
 ### Accessing the player
-- [var player: AVPlayer?](avplayerviewcontroller/player.md)
+- [var player: AVPlayer?](./avplayerviewcontroller/player.md)
   The player object that provides the media content for the view controller to display.
 ### Accessing the delegate object
-- [var delegate: (any AVPlayerViewControllerDelegate)?](avplayerviewcontroller/delegate.md)
+- [var delegate: (any AVPlayerViewControllerDelegate)?](./avplayerviewcontroller/delegate.md)
   The delegate object for the player view controller.
 ### Configuring pixel buffers
-- [var pixelBufferAttributes: [String : Any]?](avplayerviewcontroller/pixelbufferattributes.md)
+- [var pixelBufferAttributes: [String : Any]?](./avplayerviewcontroller/pixelbufferattributes.md)
   The pixel buffer attributes of the video frames the view controller presents.
 ### High dynamic range
-- [var preferredDisplayDynamicRange: AVDisplayDynamicRange](avplayerviewcontroller/preferreddisplaydynamicrange.md)
+- [var preferredDisplayDynamicRange: AVDisplayDynamicRange](./avplayerviewcontroller/preferreddisplaydynamicrange.md)
   Describes how High Dynamic Range (HDR) video content renders.
-- [enum AVDisplayDynamicRange](avdisplaydynamicrange.md)
+- [enum AVDisplayDynamicRange](./avdisplaydynamicrange.md)
   Describes how High Dynamic Range (HDR) video content renders.
 
 ## Relationships
 
 ### Inherits From
-- [UIViewController](../uikit/uiviewcontroller.md)
+- [UIViewController](../UIKit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UIContentContainer](../uikit/uicontentcontainer.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIStateRestoring](../uikit/uistaterestoring.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UIContentContainer](../UIKit/uicontentcontainer.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../UIKit/uistaterestoring.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [Playing video content in a standard user interface](playing-video-content-in-a-standard-user-interface.md)
+### Standard player interfaces
+- [Playing video content in a standard user interface](./playing-video-content-in-a-standard-user-interface.md)
   Play media full screen, embedded inline, or in a floating Picture in Picture (PiP) window using a player view controller.
-- [Customizing the tvOS playback experience](customizing-the-tvos-playback-experience.md)
+- [Customizing the tvOS playback experience](./customizing-the-tvos-playback-experience.md)
   Adopt the latest features of the redesigned tvOS player user interface to provide a more streamlined way to watch your content.
-- [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)
+- [Adopting the system player interface in visionOS](./adopting-the-system-player-interface-in-visionos.md)
   Provide an optimized viewing experience for watching 3D video content.
-- [protocol AVPlayerViewControllerDelegate](avplayerviewcontrollerdelegate.md)
+- [protocol AVPlayerViewControllerDelegate](./avplayerviewcontrollerdelegate.md)
   A protocol that defines the methods to implement to respond to player view controller events.
-- [class AVPlayerView](avplayerview.md)
+- [class AVPlayerView](./avplayerview.md)
   A view that displays content from a player and presents a native user interface to control playback.
-- [protocol AVPlayerViewDelegate](avplayerviewdelegate.md)
+- [protocol AVPlayerViewDelegate](./avplayerviewdelegate.md)
   A protocol that defines the methods to implement to participate in the player view’s full-screen presentation life cycle.
-- [struct VideoPlayer](videoplayer.md)
+- [struct VideoPlayer](./videoplayer.md)
   A view that displays content from a player and a native user interface to control playback.
 
 

@@ -1,7 +1,8 @@
 # CMClock.StartTimePattern
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -21,22 +22,22 @@ struct StartTimePattern
 ## Topics
 
 ### Initializers
-- [init(clockStartTime: CMTime, hostClockStartTime: CMTime, deltaBetweenPreferredStartTimes: CMTime)](cmclock/starttimepattern/init(clockstarttime:hostclockstarttime:deltabetweenpreferredstarttimes:).md)
+- [init(clockStartTime: CMTime, hostClockStartTime: CMTime, deltaBetweenPreferredStartTimes: CMTime)](./starttimepattern/init%28clockstarttime,hostclockstarttime,deltabetweenpreferredstarttimes%29.md)
 ### Instance Properties
-- [var clockStartTime: CMTime](cmclock/starttimepattern/clockstarttime.md)
+- [var clockStartTime: CMTime](./starttimepattern/clockstarttime.md)
   The clock time of the next preferred start time.
-- [var deltaBetweenPreferredStartTimes: CMTime](cmclock/starttimepattern/deltabetweenpreferredstarttimes.md)
+- [var deltaBetweenPreferredStartTimes: CMTime](./starttimepattern/deltabetweenpreferredstarttimes.md)
   The delta between successive preferred start times.
-- [var hostClockStartTime: CMTime](cmclock/starttimepattern/hostclockstarttime.md)
+- [var hostClockStartTime: CMTime](./starttimepattern/hostclockstarttime.md)
   The host clock time of the next preferred start time.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

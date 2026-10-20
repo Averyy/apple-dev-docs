@@ -1,14 +1,15 @@
 # configureReportGated
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 void configureReportGated(uint64_t channel_id, uint64_t action, void *result);
 ```
 

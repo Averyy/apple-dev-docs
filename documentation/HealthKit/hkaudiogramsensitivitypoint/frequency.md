@@ -1,7 +1,8 @@
 # frequency
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frequency tested in the hearing test.
 
@@ -20,15 +21,20 @@ The frequency tested in the hearing test.
 var frequency: HKQuantity { get }
 ```
 
+```objc
+@property (copy, readonly) HKQuantity * frequency;
+```
+
 #### Discussion
 
-This object uses [`hertz()`](hkunit/hertz().md) units.
+This object uses [`hertz()`](../hkunit/hertz%28%29.md) units.
 
 ## See Also
 
-- [var leftEarSensitivity: HKQuantity?](hkaudiogramsensitivitypoint/leftearsensitivity.md)
+### Accessing Data
+- [var leftEarSensitivity: HKQuantity?](./leftearsensitivity.md)
   The sensitivity of the left ear.
-- [var rightEarSensitivity: HKQuantity?](hkaudiogramsensitivitypoint/rightearsensitivity.md)
+- [var rightEarSensitivity: HKQuantity?](./rightearsensitivity.md)
   The sensitivity of the right ear.
 
 

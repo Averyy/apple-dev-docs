@@ -1,7 +1,8 @@
 # UIEditMenuInteraction
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interaction that provides edit operations using a menu.
 
@@ -18,20 +19,24 @@ An interaction that provides edit operations using a menu.
 class UIEditMenuInteraction
 ```
 
+```objc
+@interface UIEditMenuInteraction : NSObject
+```
+
 ## Mentions
 
-- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
+- [Building a desktop-class iPad app](./building-a-desktop-class-ipad-app.md)
 
 #### Overview
 
 Edit menu interactions provide edit actions — such as cut, copy, and paste — for the content a view displays. The presentation style the interaction uses to display the actions conforms to the input method of the interaction. For touch interactions, the actions display in an editing menu. When responding to a secondary click on devices with pointer-based input, the actions display in a context menu.
 
-Standard UIKit classes, such as [`UITextView`](uitextview.md) and [`UITextField`](uitextfield.md), are preconfigured to use edit menu interactions.
+Standard UIKit classes, such as [`UITextView`](./uitextview.md) and [`UITextField`](./uitextfield.md), are preconfigured to use edit menu interactions.
 
 To add an edit menu interaction to a generic view:
 
 1. Create an edit menu interaction object, and pass an optional delegate into the default initializer.
-2. Call the [`addInteraction(_:)`](uiview/addinteraction(_:).md) method on your view to add the interaction.
+2. Call the [`addInteraction(_:)`](./uiview/addinteraction%28_%29.md) method on your view to add the interaction.
 3. Create a gesture recognizer to trigger the interaction and add it to the view.
 
 The following example creates an edit menu interaction triggered by a long press.
@@ -61,52 +66,54 @@ override func viewDidLoad() {
 }
 ```
 
-By default, an edit menu interaction generates a menu that includes commands for the standard edit actions your view implements. For more information on these actions, see [`UIResponderStandardEditActions`](uiresponderstandardeditactions.md). You can use the interaction’s delegate to add additional items to the menu and set the target rectangle to display around using methods in the [`UIEditMenuInteractionDelegate`](uieditmenuinteractiondelegate.md) protocol. For text views, you can specify the items the menu displays for specific text ranges using methods from the [`UITextViewDelegate`](uitextviewdelegate.md), [`UITextFieldDelegate`](uitextfielddelegate.md), or [`UITextInput`](uitextinput.md) protocols.
+By default, an edit menu interaction generates a menu that includes commands for the standard edit actions your view implements. For more information on these actions, see [`UIResponderStandardEditActions`](./uiresponderstandardeditactions.md). You can use the interaction’s delegate to add additional items to the menu and set the target rectangle to display around using methods in the [`UIEditMenuInteractionDelegate`](./uieditmenuinteractiondelegate.md) protocol. For text views, you can specify the items the menu displays for specific text ranges using methods from the [`UITextViewDelegate`](./uitextviewdelegate.md), [`UITextFieldDelegate`](./uitextfielddelegate.md), or [`UITextInput`](./uitextinput.md) protocols.
 
-> **Note**:  Session 10071: [`Adopt desktop-class editing interactions`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10071)
+> **Related Sessions from WWDC22**:  Session 10071: [Adopt desktop-class editing interactions](https://developer.apple.com/wwdc22/10071)
 
 ## Topics
 
 ### Creating an edit menu interaction
-- [init(delegate: (any UIEditMenuInteractionDelegate)?)](uieditmenuinteraction/init(delegate:).md)
+- [init(delegate: (any UIEditMenuInteractionDelegate)?)](./uieditmenuinteraction/init%28delegate%29.md)
   Initializes an edit menu interaction object with the delegate object you specify.
 ### Managing edit menu interactions
-- [var delegate: (any UIEditMenuInteractionDelegate)?](uieditmenuinteraction/delegate.md)
+- [var delegate: (any UIEditMenuInteractionDelegate)?](./uieditmenuinteraction/delegate.md)
   An object that customizes presentation of the menu and actions to display for an edit menu interaction.
-- [func presentEditMenu(with: UIEditMenuConfiguration)](uieditmenuinteraction/presenteditmenu(with:).md)
+- [func presentEditMenu(with: UIEditMenuConfiguration)](./uieditmenuinteraction/presenteditmenu%28with%29.md)
   Presents an edit menu using the object you provide for configuration.
-- [func reloadVisibleMenu()](uieditmenuinteraction/reloadvisiblemenu.md)
+- [func reloadVisibleMenu()](./uieditmenuinteraction/reloadvisiblemenu%28%29.md)
   Updates the actions an edit menu displays.
-- [func updateVisibleMenuPosition(animated: Bool)](uieditmenuinteraction/updatevisiblemenuposition(animated:).md)
+- [func updateVisibleMenuPosition(animated: Bool)](./uieditmenuinteraction/updatevisiblemenuposition%28animated%29.md)
   Updates the position of the currently visible menu with an option to animate the action.
-- [func dismissMenu()](uieditmenuinteraction/dismissmenu.md)
+- [func dismissMenu()](./uieditmenuinteraction/dismissmenu%28%29.md)
   Dismiss the edit menu if present.
-- [func location(in: UIView?) -> CGPoint](uieditmenuinteraction/location(in:).md)
+- [func location(in: UIView?) -> CGPoint](./uieditmenuinteraction/location%28in%29.md)
   Returns the location of the user interaction in the specified view’s coordinate system.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UIInteraction](uiinteraction.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UIInteraction](./uiinteraction.md)
 
 ## See Also
 
-- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
+### Related Documentation
+- [Building a desktop-class iPad app](./building-a-desktop-class-ipad-app.md)
   Optimize your iPad app’s user experience by adopting desktop-class enhancements for multitasking with Stage Manager, document interactions, text editing, search, and more.
-- [protocol UIEditMenuInteractionDelegate](uieditmenuinteractiondelegate.md)
+### Edit menus
+- [protocol UIEditMenuInteractionDelegate](./uieditmenuinteractiondelegate.md)
   The methods for customizing the menu the interaction displays.
-- [class UIEditMenuConfiguration](uieditmenuconfiguration.md)
+- [class UIEditMenuConfiguration](./uieditmenuconfiguration.md)
   An object containing the configuration details for the menu your app presents in response to an edit menu interaction.
-- [protocol UIResponderStandardEditActions](uiresponderstandardeditactions.md)
+- [protocol UIResponderStandardEditActions](./uiresponderstandardeditactions.md)
   A set of standard methods that apps can adopt to support editing.
 
 

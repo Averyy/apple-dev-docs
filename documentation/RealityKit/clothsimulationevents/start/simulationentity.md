@@ -1,7 +1,8 @@
 # simulationEntity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity that has the simulation component that this event originates from.
 

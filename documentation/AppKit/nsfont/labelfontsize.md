@@ -1,17 +1,22 @@
 # labelFontSize
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the size of the standard label font.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var labelFontSize: CGFloat { get }
+```
+
+```objc
+@property (class, readonly) CGFloat labelFontSize;
 ```
 
 #### Return Value
@@ -20,27 +25,28 @@ The label font size in points.
 
 #### Discussion
 
-The label font (Lucida Grande Regular 10 point) is used for the labels on toolbar buttons and to label tick marks on full-size sliders. For more information on system fonts, see Human Interface Guidelines > [`Typography`](https://developer.apple.com/design/human-interface-guidelines/typography).
+The label font (Lucida Grande Regular 10 point) is used for the labels on toolbar buttons and to label tick marks on full-size sliders. For more information on system fonts, see Human Interface Guidelines > [Typography](https://developer.apple.com/design/human-interface-guidelines/typography).
 
 ## See Also
 
-- [class func labelFont(ofSize: CGFloat) -> NSFont](nsfont/labelfont(ofsize:).md)
+### Creating UI Element Fonts
+- [class func labelFont(ofSize: CGFloat) -> NSFont](./labelfont%28ofsize%29.md)
   Returns the font used for standard interface labels in the specified size.
-- [class func messageFont(ofSize: CGFloat) -> NSFont](nsfont/messagefont(ofsize:).md)
+- [class func messageFont(ofSize: CGFloat) -> NSFont](./messagefont%28ofsize%29.md)
   Returns the font used for standard interface items, such as button labels, menu items, and so on, in the specified size.
-- [class func menuBarFont(ofSize: CGFloat) -> NSFont](nsfont/menubarfont(ofsize:).md)
+- [class func menuBarFont(ofSize: CGFloat) -> NSFont](./menubarfont%28ofsize%29.md)
   Returns the font used for menu bar items, in the specified size.
-- [class func menuFont(ofSize: CGFloat) -> NSFont](nsfont/menufont(ofsize:).md)
+- [class func menuFont(ofSize: CGFloat) -> NSFont](./menufont%28ofsize%29.md)
   Returns the font used for menu items, in the specified size.
-- [class func controlContentFont(ofSize: CGFloat) -> NSFont](nsfont/controlcontentfont(ofsize:).md)
+- [class func controlContentFont(ofSize: CGFloat) -> NSFont](./controlcontentfont%28ofsize%29.md)
   Returns the font used for the content of controls in the specified size.
-- [class func titleBarFont(ofSize: CGFloat) -> NSFont](nsfont/titlebarfont(ofsize:).md)
+- [class func titleBarFont(ofSize: CGFloat) -> NSFont](./titlebarfont%28ofsize%29.md)
   Returns the font used for window title bars, in the specified size.
-- [class func paletteFont(ofSize: CGFloat) -> NSFont](nsfont/palettefont(ofsize:).md)
+- [class func paletteFont(ofSize: CGFloat) -> NSFont](./palettefont%28ofsize%29.md)
   Returns the font used for palette window title bars, in the specified size.
-- [class func toolTipsFont(ofSize: CGFloat) -> NSFont](nsfont/tooltipsfont(ofsize:).md)
+- [class func toolTipsFont(ofSize: CGFloat) -> NSFont](./tooltipsfont%28ofsize%29.md)
   Returns the font used for tool tips labels, in the specified size.
-- [class func systemFontSize(for: NSControl.ControlSize) -> CGFloat](nsfont/systemfontsize(for:).md)
+- [class func systemFontSize(for: NSControl.ControlSize) -> CGFloat](./systemfontsize%28for%29.md)
   Returns the font size used for the specified control size.
 
 

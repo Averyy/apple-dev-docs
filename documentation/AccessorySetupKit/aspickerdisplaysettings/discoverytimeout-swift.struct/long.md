@@ -1,7 +1,8 @@
 # long
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A picker discovery timeout value that times out after about five minutes.
 
@@ -16,15 +17,20 @@ A picker discovery timeout value that times out after about five minutes.
 static let long: ASPickerDisplaySettings.DiscoveryTimeout
 ```
 
+```c
+extern const ASPickerDisplaySettingsDiscoveryTimeout ASPickerDisplaySettingsDiscoveryTimeoutLong;
+```
+
 ## See Also
 
-- [class var `default`: ASPickerDisplaySettings](aspickerdisplaysettings/default.md)
+### Determining discovery timeout
+- [class var `default`: ASPickerDisplaySettings](../default.md)
   An empty settings object.
-- [static let short: ASPickerDisplaySettings.DiscoveryTimeout](aspickerdisplaysettings/discoverytimeout-swift.struct/short.md)
+- [static let short: ASPickerDisplaySettings.DiscoveryTimeout](./short.md)
   A picker discovery timeout value that times out after about about 60 seconds.
-- [static let medium: ASPickerDisplaySettings.DiscoveryTimeout](aspickerdisplaysettings/discoverytimeout-swift.struct/medium.md)
+- [static let medium: ASPickerDisplaySettings.DiscoveryTimeout](./medium.md)
   A picker discovery timeout value that times out after about two minutes.
-- [static let unbounded: ASPickerDisplaySettings.DiscoveryTimeout](aspickerdisplaysettings/discoverytimeout-swift.struct/unbounded.md)
+- [static let unbounded: ASPickerDisplaySettings.DiscoveryTimeout](./unbounded.md)
   A picker discovery that only times out when the app tells it to.
 
 

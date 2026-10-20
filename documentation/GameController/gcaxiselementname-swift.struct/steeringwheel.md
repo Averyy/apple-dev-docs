@@ -1,7 +1,8 @@
 # steeringWheel
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the steering wheel on the element.
 

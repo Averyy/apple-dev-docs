@@ -1,7 +1,8 @@
 # videoPreviewLayer
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The video preview layer associated with the connection.
 
@@ -18,17 +19,22 @@ The video preview layer associated with the connection.
 var videoPreviewLayer: AVCaptureVideoPreviewLayer? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVCaptureVideoPreviewLayer * videoPreviewLayer;
+```
+
 #### Discussion
 
-The connection sets the property in its [`init(inputPort:videoPreviewLayer:)`](avcaptureconnection/init(inputport:videopreviewlayer:).md) initializer.
+The connection sets the property in its [`init(inputPort:videoPreviewLayer:)`](./init%28inputport,videopreviewlayer%29.md) initializer.
 
 ## See Also
 
-- [var inputPorts: [AVCaptureInput.Port]](avcaptureconnection/inputports.md)
+### Inspecting a connection
+- [var inputPorts: [AVCaptureInput.Port]](./inputports.md)
   An array of the connection’s input ports.
-- [var output: AVCaptureOutput?](avcaptureconnection/output.md)
+- [var output: AVCaptureOutput?](./output.md)
   The connection’s output port, if applicable.
-- [var audioChannels: [AVCaptureAudioChannel]](avcaptureconnection/audiochannels.md)
+- [var audioChannels: [AVCaptureAudioChannel]](./audiochannels.md)
   An array of audio channels that the connection provides.
 
 

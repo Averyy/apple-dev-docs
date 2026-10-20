@@ -1,7 +1,8 @@
 # formatted(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Formats the decimal using the provided format style.
 
@@ -42,9 +43,10 @@ let formattedFR = decimal.formatted(frStyle) // 123 456,789
 
 ## See Also
 
-- [func formatted() -> String](decimal/formatted.md)
+### Formatting decimals
+- [func formatted() -> String](./formatted%28%29.md)
   Formats the decimal using a default localized format style.
-- [Decimal.FormatStyle](decimal/formatstyle.md)
+- [Decimal.FormatStyle](./formatstyle.md)
   A structure that converts between decimal values and their textual representations.
 
 

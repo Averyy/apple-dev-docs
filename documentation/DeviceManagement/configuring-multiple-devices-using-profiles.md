@@ -1,6 +1,7 @@
 # Configuring multiple devices using profiles
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Create and deploy configuration profiles to managed devices.
 
@@ -17,7 +18,7 @@ You have several options for deploying configuration profiles:
 
 > ❗ **Important**:  Configuration profiles are for enterprise use only. With the exceptions of the APN, VPN, and Wi-Fi profiles, don’t use configuration profiles with consumer apps.
 
-#### Pair Restrictions with Capabilities in Managed Profiles
+#### Pair restrictions with capabilities in managed profiles
 
 Configure each managed profile, so it’s clear to the user what new capability they’ll receive on the device when they comply with an associated retstrictions or requirement.
 
@@ -27,23 +28,23 @@ For example, your IT policy may require a device to have a 6-character passcode 
 - Deliver a single managed profile with both a passcode restriction payload and a VPN payload. This approach allows a grace period on iOs and iPadOS before a user must set a compliant passcode.
 - Deliver a profile with a passcode restriction, poll the device until it indicates compliance, and then deliver the VPN payload.
 
-#### Define a Profile
+#### Define a profile
 
 Configuration profiles are in a property list format, which any XML tool can read and write.
 
-The configuration property list contains the properties listed in the [`TopLevel`](toplevel.md) object. These properties describe the profile and the rules for deploying it. Specific configuration values are stored in an array of payloads in the `PayloadContent` property.
+The configuration property list contains the properties listed in the [`TopLevel`](./toplevel.md) object. These properties describe the profile and the rules for deploying it. Specific configuration values are stored in an array of payloads in the `PayloadContent` property.
 
-Each payload’s contents contain profile-specific keys (see [`Profile-specific payload keys`](profile-specific-payload-keys.md)) and keys that are common to all payloads (see the following list of key definitions).
+Each payload’s contents contain profile-specific keys (see [Profile-specific payload keys](./profile-specific-payload-keys.md)) and keys that are common to all payloads (see the following list of key definitions).
 
 - **`PayloadType` (String)**: The payload type, specified on each payload domain’s reference page.
 - **`PayloadVersion` (Integer)**: The version of this specific payload.
-- **`PayloadIdentifier` (String)**: The reverse-DNS-style identifier for the payload. This identifier is usually the same as the [`TopLevel`](toplevel.md) value, with an additional component appended.
+- **`PayloadIdentifier` (String)**: The reverse-DNS-style identifier for the payload. This identifier is usually the same as the [`TopLevel`](./toplevel.md) value, with an additional component appended.
 - **`PayloadUUID` (String)**: The globally unique identifier for the payload. The actual content is unimportant, but must be globally unique. In macOS, use `uuidgen` to generate UUIDs.
 - **`PayloadDisplayName` (String)**: The human-readable name for the profile payload. The name is displayed on the Detail screen and doesn’t have to be unique.
 - **`PayloadDescription` (String)**: The human-readable description of this payload. This description is shown on the Detail screen.
 - **`PayloadOrganization` (String)**: The human-readable string containing the name of the organization that provided the profile. This value doesn’t need to match the organization payload value in the enclosing dictionary.
 
-#### Encrypt and Sign a Profile
+#### Encrypt and sign a profile
 
 Encrypting a profile protects its contents from unauthorized access. The encrypted profile can only be decrypted using a private key previously installed on a device. To encrypt a profile:
 
@@ -54,7 +55,7 @@ Encrypting a profile protects its contents from unauthorized access. The encrypt
 
 Signing a profile guarantees data integrity. To sign a profile, place the XML property list in a DER-encoded, CMS Signed Data structure. When replacing a signed configuration profile, if you don’t sign the replacement using the exact same signing identity, the device rejects the replacement, unless installing the replacement using the MDM protocol.
 
-#### Example Scep Configuration Profile
+#### Example SCEP configuration profile
 
 The listing below shows the contents of an example profile, containing a Simple Certificate Enrollment Protocol (SCEP) payload.
 

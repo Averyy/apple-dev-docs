@@ -1,7 +1,8 @@
 # init(image:)
 
 **Framework**: TVUIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new poster view using the supplied image.
 
@@ -12,6 +13,10 @@ Creates a new poster view using the supplied image.
 
 ```swift
 init(image: UIImage?)
+```
+
+```objc
+- (instancetype) initWithImage:(UIImage *) image;
 ```
 
 #### Discussion

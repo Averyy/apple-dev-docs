@@ -1,7 +1,8 @@
 # appendInterpolation(_:format:privacy:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends an interpolated collection of raw bytes.
 
@@ -11,7 +12,7 @@ Appends an interpolated collection of raw bytes.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -27,16 +28,17 @@ Don’t call this function directly. The system calls it automatically when inte
 ## Parameters
 
 - `pointer`: A pointer to data with an implicit size.
-- `format`: The format to apply to the pointer. You format pointers as one of several different options. If you don’t specify this parameter, the system doesn’t format the value. For more information, see [`OSLogPointerFormat`](oslogpointerformat.md).
+- `format`: The format to apply to the pointer. You format pointers as one of several different options. If you don’t specify this parameter, the system doesn’t format the value. For more information, see [`OSLogPointerFormat`](../oslogpointerformat.md).
 - `privacy`: The privacy level of the information. If you don’t specify this parameter, the system uses the default rules to determine whether to show the information.
 
 ## See Also
 
-- [func appendInterpolation(@autoclosure () -> UnsafeRawPointer, bytes: @autoclosure () -> Int, format: OSLogPointerFormat, privacy: OSLogPrivacy)](osloginterpolation/appendinterpolation(_:bytes:format:privacy:).md)
+### Appending Pointer Data
+- [func appendInterpolation(@autoclosure () -> UnsafeRawPointer, bytes: @autoclosure () -> Int, format: OSLogPointerFormat, privacy: OSLogPrivacy)](./appendinterpolation%28_,bytes,format,privacy%29.md)
   Appends interpolated pointer data.
-- [func appendInterpolation(@autoclosure () -> UnsafeRawPointer, bytes: @autoclosure () -> Int, format: OSLogPointerFormat, privacy: OSLogPrivacy, attributes: String)](osloginterpolation/appendinterpolation(_:bytes:format:privacy:attributes:).md)
+- [func appendInterpolation(@autoclosure () -> UnsafeRawPointer, bytes: @autoclosure () -> Int, format: OSLogPointerFormat, privacy: OSLogPrivacy, attributes: String)](./appendinterpolation%28_,bytes,format,privacy,attributes%29.md)
   Appends interpolated pointer data with the specified attributes.
-- [func appendInterpolation(@autoclosure () -> UnsafeRawBufferPointer, format: OSLogPointerFormat, privacy: OSLogPrivacy, attributes: String)](osloginterpolation/appendinterpolation(_:format:privacy:attributes:)-93lbs.md)
+- [func appendInterpolation(@autoclosure () -> UnsafeRawBufferPointer, format: OSLogPointerFormat, privacy: OSLogPrivacy, attributes: String)](./appendinterpolation%28_,format,privacy,attributes%29-93lbs.md)
   Appends an interpolated collection of raw bytes with the specified attributes.
 
 

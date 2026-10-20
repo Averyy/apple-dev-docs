@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an MPSGraphTensorData with an MTLTensor.
 
@@ -17,6 +18,10 @@ Initializes an MPSGraphTensorData with an MTLTensor.
 
 ```swift
 init(_ tensor: any MTLTensor)
+```
+
+```objc
+- (instancetype) initWithMTLTensor:(id<MTLTensor>) tensor;
 ```
 
 #### Return Value

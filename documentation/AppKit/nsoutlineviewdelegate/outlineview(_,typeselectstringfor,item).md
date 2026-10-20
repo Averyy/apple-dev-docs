@@ -1,7 +1,8 @@
 # outlineView(_:typeSelectStringFor:item:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the string that is used for type selection for a given column and item.
 
@@ -13,6 +14,10 @@ Returns the string that is used for type selection for a given column and item.
 ```swift
 @MainActor
 optional func outlineView(_ outlineView: NSOutlineView, typeSelectStringFor tableColumn: NSTableColumn?, item: Any) -> String?
+```
+
+```objc
+- (NSString *) outlineView:(NSOutlineView *) outlineView typeSelectStringForTableColumn:(NSTableColumn *) tableColumn item:(id) item;
 ```
 
 #### Return Value
@@ -39,9 +44,10 @@ and you can return this value from the delegate method if you wish.
 
 ## See Also
 
-- [func outlineView(NSOutlineView, nextTypeSelectMatchFromItem: Any, toItem: Any, for: String) -> Any?](nsoutlineviewdelegate/outlineview(_:nexttypeselectmatchfromitem:toitem:for:).md)
+### Supporting Type Select
+- [func outlineView(NSOutlineView, nextTypeSelectMatchFromItem: Any, toItem: Any, for: String) -> Any?](./outlineview%28_,nexttypeselectmatchfromitem,toitem,for%29.md)
   Returns the first item that matches the searchString from within the range of startItem to endItem
-- [func outlineView(NSOutlineView, shouldTypeSelectFor: NSEvent, withCurrentSearch: String?) -> Bool](nsoutlineviewdelegate/outlineview(_:shouldtypeselectfor:withcurrentsearch:).md)
+- [func outlineView(NSOutlineView, shouldTypeSelectFor: NSEvent, withCurrentSearch: String?) -> Bool](./outlineview%28_,shouldtypeselectfor,withcurrentsearch%29.md)
   Returns a Boolean value that indicates whether type select should proceed for a given event and search string.
 
 

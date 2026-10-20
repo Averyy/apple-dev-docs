@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,7 +17,15 @@
 ## Declaration
 
 ```swift
+func deviceController(_ controller: UUID, nodeID: NSNumber, openCommissioningWindowWithSetupPasscode setupPasscode: NSNumber, discriminator: NSNumber, duration: NSNumber, completion: @escaping @Sendable (MTRSetupPayload?, (any Error)?) -> Void)
+```
+
+```swift
 func deviceController(_ controller: UUID, nodeID: NSNumber, openCommissioningWindowWithSetupPasscode setupPasscode: NSNumber, discriminator: NSNumber, duration: NSNumber) async throws -> MTRSetupPayload
+```
+
+```objc
+- (void) deviceController:(NSUUID *) controller nodeID:(NSNumber *) nodeID openCommissioningWindowWithSetupPasscode:(NSNumber *) setupPasscode discriminator:(NSNumber *) discriminator duration:(NSNumber *) duration completion:(MTRDeviceOpenCommissioningWindowHandler) completion;
 ```
 
 

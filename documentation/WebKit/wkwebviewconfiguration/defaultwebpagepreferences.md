@@ -1,7 +1,8 @@
 # defaultWebpagePreferences
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default preferences to use when loading and rendering content.
 
@@ -19,13 +20,18 @@ The default preferences to use when loading and rendering content.
 var defaultWebpagePreferences: WKWebpagePreferences! { get set }
 ```
 
+```objc
+@property (nonatomic, copy, null_resettable) WKWebpagePreferences * defaultWebpagePreferences;
+```
+
 #### Discussion
 
 Use this property to specify the JavaScript settings and content mode for new webpages. When the web view navigates to a new page, it passes the default preferences to its navigation delegate, which can modify the preferences or pass them as they are.
 
 ## See Also
 
-- [var preferences: WKPreferences](wkwebviewconfiguration/preferences.md)
+### Configuring the web view’s preferences
+- [var preferences: WKPreferences](./preferences.md)
   The object that manages the preference-related settings for the web view.
 
 

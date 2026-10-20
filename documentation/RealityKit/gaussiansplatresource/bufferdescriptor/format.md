@@ -1,7 +1,8 @@
 # format
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The element format of each value in the buffer.
 

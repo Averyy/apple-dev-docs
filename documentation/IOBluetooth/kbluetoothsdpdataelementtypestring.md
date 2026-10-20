@@ -1,10 +1,11 @@
 # kBluetoothSDPDataElementTypeString
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,18 +13,23 @@
 var kBluetoothSDPDataElementTypeString: Int { get }
 ```
 
+```c
+kBluetoothSDPDataElementTypeString
+```
+
 ## See Also
 
-- [var kBluetoothSDPDataElementTypeBoolean: Int](kbluetoothsdpdataelementtypeboolean.md)
-- [var kBluetoothSDPDataElementTypeDataElementAlternative: Int](kbluetoothsdpdataelementtypedataelementalternative.md)
-- [var kBluetoothSDPDataElementTypeDataElementSequence: Int](kbluetoothsdpdataelementtypedataelementsequence.md)
-- [var kBluetoothSDPDataElementTypeNil: Int](kbluetoothsdpdataelementtypenil.md)
-- [var kBluetoothSDPDataElementTypeReservedEnd: Int](kbluetoothsdpdataelementtypereservedend.md)
-- [var kBluetoothSDPDataElementTypeReservedStart: Int](kbluetoothsdpdataelementtypereservedstart.md)
-- [var kBluetoothSDPDataElementTypeSignedInt: Int](kbluetoothsdpdataelementtypesignedint.md)
-- [var kBluetoothSDPDataElementTypeURL: Int](kbluetoothsdpdataelementtypeurl.md)
-- [var kBluetoothSDPDataElementTypeUUID: Int](kbluetoothsdpdataelementtypeuuid.md)
-- [var kBluetoothSDPDataElementTypeUnsignedInt: Int](kbluetoothsdpdataelementtypeunsignedint.md)
+### Constants
+- [var kBluetoothSDPDataElementTypeBoolean: Int](./kbluetoothsdpdataelementtypeboolean.md)
+- [var kBluetoothSDPDataElementTypeDataElementAlternative: Int](./kbluetoothsdpdataelementtypedataelementalternative.md)
+- [var kBluetoothSDPDataElementTypeDataElementSequence: Int](./kbluetoothsdpdataelementtypedataelementsequence.md)
+- [var kBluetoothSDPDataElementTypeNil: Int](./kbluetoothsdpdataelementtypenil.md)
+- [var kBluetoothSDPDataElementTypeReservedEnd: Int](./kbluetoothsdpdataelementtypereservedend.md)
+- [var kBluetoothSDPDataElementTypeReservedStart: Int](./kbluetoothsdpdataelementtypereservedstart.md)
+- [var kBluetoothSDPDataElementTypeSignedInt: Int](./kbluetoothsdpdataelementtypesignedint.md)
+- [var kBluetoothSDPDataElementTypeURL: Int](./kbluetoothsdpdataelementtypeurl.md)
+- [var kBluetoothSDPDataElementTypeUUID: Int](./kbluetoothsdpdataelementtypeuuid.md)
+- [var kBluetoothSDPDataElementTypeUnsignedInt: Int](./kbluetoothsdpdataelementtypeunsignedint.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NEDNSSettingsManager
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object you use to create and manage a DNS settings configuration.
 
@@ -18,55 +19,60 @@ An object you use to create and manage a DNS settings configuration.
 class NEDNSSettingsManager
 ```
 
+```objc
+@interface NEDNSSettingsManager : NSObject
+```
+
 #### Overview
 
-When your app starts up, access the shared instance of the DNS settings manager, and load existing settings from the preferences using [`loadFromPreferences(completionHandler:)`](nednssettingsmanager/loadfrompreferences(completionhandler:).md). You can define your DNS server configuration, and persist it by calling [`saveToPreferences(completionHandler:)`](nednssettingsmanager/savetopreferences(completionhandler:).md).
+When your app starts up, access the shared instance of the DNS settings manager, and load existing settings from the preferences using [`loadFromPreferences(completionHandler:)`](./nednssettingsmanager/loadfrompreferences%28completionhandler%29.md). You can define your DNS server configuration, and persist it by calling [`saveToPreferences(completionHandler:)`](./nednssettingsmanager/savetopreferences%28completionhandler%29.md).
 
 In order to use your DNS settings, the user needs to enable it in the Settings app on iOS or in System Preferences on macOS.
 
 ## Topics
 
 ### Managing DNS configurations
-- [class func shared() -> NEDNSSettingsManager](nednssettingsmanager/shared.md)
+- [class func shared() -> NEDNSSettingsManager](./nednssettingsmanager/shared%28%29.md)
   Access the single instance of a DNS settings manager.
-- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](nednssettingsmanager/loadfrompreferences(completionhandler:).md)
+- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](./nednssettingsmanager/loadfrompreferences%28completionhandler%29.md)
   Load your DNS settings configuration from the system networking preferences.
-- [func saveToPreferences(completionHandler: ((any Error)?) -> Void)](nednssettingsmanager/savetopreferences(completionhandler:).md)
+- [func saveToPreferences(completionHandler: ((any Error)?) -> Void)](./nednssettingsmanager/savetopreferences%28completionhandler%29.md)
   Save your DNS settings configuration to the system networking preferences.
-- [func removeFromPreferences(completionHandler: ((any Error)?) -> Void)](nednssettingsmanager/removefrompreferences(completionhandler:).md)
+- [func removeFromPreferences(completionHandler: ((any Error)?) -> Void)](./nednssettingsmanager/removefrompreferences%28completionhandler%29.md)
   Remove your DNS settings configuration from the system networking preferences.
 ### Accessing DNS configuration properties
-- [var isEnabled: Bool](nednssettingsmanager/isenabled.md)
+- [var isEnabled: Bool](./nednssettingsmanager/isenabled.md)
   A Boolean you use to query the enabled state of the DNS settings configuration.
-- [var dnsSettings: NEDNSSettings?](nednssettingsmanager/dnssettings.md)
+- [var dnsSettings: NEDNSSettings?](./nednssettingsmanager/dnssettings.md)
   An object that contains the configuration settings for a DNS server.
-- [var localizedDescription: String?](nednssettingsmanager/localizeddescription.md)
+- [var localizedDescription: String?](./nednssettingsmanager/localizeddescription.md)
   A string that contains the display name of the DNS settings configuration.
-- [var onDemandRules: [NEOnDemandRule]?](nednssettingsmanager/ondemandrules.md)
+- [var onDemandRules: [NEOnDemandRule]?](./nednssettingsmanager/ondemandrules.md)
   A list of ordered rules that defines the networks on which the DNS settings will apply.
 ### Handling errors
-- [let NEDNSSettingsErrorDomain: String](nednssettingserrordomain.md)
+- [let NEDNSSettingsErrorDomain: String](./nednssettingserrordomain.md)
   The domain for errors resulting from calls to the DNS settings manager.
-- [enum NEDNSSettingsManagerError](nednssettingsmanagererror.md)
+- [enum NEDNSSettingsManagerError](./nednssettingsmanagererror.md)
   Error codes specific to DNS managers.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NEDNSOverHTTPSSettings](nednsoverhttpssettings.md)
+### DNS configuration
+- [class NEDNSOverHTTPSSettings](./nednsoverhttpssettings.md)
   The DNS resolver settings for a DNS-over-HTTPS server.
-- [class NEDNSOverTLSSettings](nednsovertlssettings.md)
+- [class NEDNSOverTLSSettings](./nednsovertlssettings.md)
   The DNS resolver settings for a DNS-over-TLS server.
 
 

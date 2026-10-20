@@ -1,7 +1,8 @@
 # cameraFlashMode
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The flash mode used by the active camera.
 
@@ -16,21 +17,27 @@ The flash mode used by the active camera.
 var cameraFlashMode: UIImagePickerController.CameraFlashMode { get set }
 ```
 
+```objc
+@property (nonatomic) UIImagePickerControllerCameraFlashMode cameraFlashMode;
+```
+
 #### Discussion
 
-The various flash modes are listed in the [`UIImagePickerController.CameraFlashMode`](uiimagepickercontroller/cameraflashmode-swift.enum.md) enumeration. The default value is [`UIImagePickerController.CameraFlashMode.auto`](uiimagepickercontroller/cameraflashmode-swift.enum/auto.md).
+The various flash modes are listed in the [`UIImagePickerController.CameraFlashMode`](./cameraflashmode-swift.enum.md) enumeration. The default value is [`UIImagePickerController.CameraFlashMode.auto`](./cameraflashmode-swift.enum/auto.md).
 
-The value of this property specifies the behavior of the still-image flash when the value of the [`cameraCaptureMode`](uiimagepickercontroller/cameracapturemode-swift.property.md) property is [`UIImagePickerController.CameraCaptureMode.photo`](uiimagepickercontroller/cameracapturemode-swift.enum/photo.md), and specifies the behavior of the video torch when [`cameraCaptureMode`](uiimagepickercontroller/cameracapturemode-swift.property.md) is [`UIImagePickerController.CameraCaptureMode.video`](uiimagepickercontroller/cameracapturemode-swift.enum/video.md).
+The value of this property specifies the behavior of the still-image flash when the value of the [`cameraCaptureMode`](./cameracapturemode-swift.property.md) property is [`UIImagePickerController.CameraCaptureMode.photo`](./cameracapturemode-swift.enum/photo.md), and specifies the behavior of the video torch when [`cameraCaptureMode`](./cameracapturemode-swift.property.md) is [`UIImagePickerController.CameraCaptureMode.video`](./cameracapturemode-swift.enum/video.md).
 
 ## See Also
 
-- [var cameraDevice: UIImagePickerController.CameraDevice](uiimagepickercontroller/cameradevice-swift.property.md)
+### Related Documentation
+- [var cameraDevice: UIImagePickerController.CameraDevice](./cameradevice-swift.property.md)
   The camera used by the image picker controller.
-- [var cameraCaptureMode: UIImagePickerController.CameraCaptureMode](uiimagepickercontroller/cameracapturemode-swift.property.md)
+- [var cameraCaptureMode: UIImagePickerController.CameraCaptureMode](./cameracapturemode-swift.property.md)
   The capture mode used by the camera.
-- [class func isFlashAvailable(for: UIImagePickerController.CameraDevice) -> Bool](uiimagepickercontroller/isflashavailable(for:).md)
+### Configuring the flash behavior
+- [class func isFlashAvailable(for: UIImagePickerController.CameraDevice) -> Bool](./isflashavailable%28for%29.md)
   Queries whether the specified camera has flash illumination capability.
-- [UIImagePickerController.CameraFlashMode](uiimagepickercontroller/cameraflashmode-swift.enum.md)
+- [UIImagePickerController.CameraFlashMode](./cameraflashmode-swift.enum.md)
   Constants that specify the flash mode to use with the active camera.
 
 

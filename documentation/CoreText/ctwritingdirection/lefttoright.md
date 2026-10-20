@@ -1,21 +1,26 @@
 # CTWritingDirection.leftToRight
 
 **Framework**: Core Text  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 case leftToRight
+```
+
+```c
+kCTWritingDirectionLeftToRight
 ```
 
 #### Discussion
@@ -24,8 +29,9 @@ The writing direction is left to right.
 
 ## See Also
 
-- [CTWritingDirection.natural](ctwritingdirection/natural.md)
-- [CTWritingDirection.rightToLeft](ctwritingdirection/righttoleft.md)
+### Constants
+- [CTWritingDirection.natural](./natural.md)
+- [CTWritingDirection.rightToLeft](./righttoleft.md)
 
 
 ---

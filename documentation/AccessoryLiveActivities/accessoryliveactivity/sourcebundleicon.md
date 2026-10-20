@@ -1,7 +1,8 @@
 # sourceBundleIcon
 
 **Framework**: Accessory Live Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The icon of the app that initiated the Live Activity.
 
@@ -17,7 +18,7 @@ let sourceBundleIcon: AccessoryLiveActivity.IconFile?
 
 ## Mentions
 
-- [Receiving Live Activity updates and alerts on an accessory](receiving-live-activities-on-an-accessory.md)
+- [Receiving Live Activity updates and alerts on an accessory](../receiving-live-activities-on-an-accessory.md)
 
 #### Overview
 
@@ -25,7 +26,8 @@ Help people recognize a Live Activity by including the originating app’s icon 
 
 ## See Also
 
-- [AccessoryLiveActivity.IconFile](accessoryliveactivity/iconfile.md)
+### Accessing the app’s icon
+- [AccessoryLiveActivity.IconFile](./iconfile.md)
   An on-demand reference to the app icon of the app that started the Live Activity.
 
 

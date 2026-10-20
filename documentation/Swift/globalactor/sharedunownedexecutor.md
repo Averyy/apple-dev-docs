@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 Shorthand for referring to the `shared.unownedExecutor` of this global actor.
@@ -23,13 +24,19 @@ static var sharedUnownedExecutor: UnownedSerialExecutor { get }
 
 #### Discussion
 
-When declaring a global actor with a custom executor, prefer to implement the underlying actor’s [`unownedExecutor`](actor/unownedexecutor.md) property, and leave this `sharedUnownedExecutor` default implementation in-place as it will simply delegate to the `shared.unownedExecutor`.
+When declaring a global actor with a custom executor, prefer to implement the underlying actor’s [`unownedExecutor`](../actor/unownedexecutor.md) property, and leave this `sharedUnownedExecutor` default implementation in-place as it will simply delegate to the `shared.unownedExecutor`.
 
 The value of this property must be equivalent to `shared.unownedExecutor`, as it may be used by the Swift concurrency runtime or explicit user code with that assumption in mind.
 
 Returning different executors for different invocations of this computed property is also illegal, as it could lead to inconsistent synchronization of the underlying actor.
 
-> **Note**: [`SerialExecutor`](serialexecutor.md)
+> **See Also**: [`SerialExecutor`](../serialexecutor.md)
+
+## Default Implementations
+
+### GlobalActor Implementations
+- [static var sharedUnownedExecutor: UnownedSerialExecutor](./sharedunownedexecutor-7vdm6.md)
+  Shorthand for referring to the `shared.unownedExecutor` of this global actor.
 
 
 ---

@@ -1,12 +1,13 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new remote notifications options structure.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

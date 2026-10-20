@@ -1,7 +1,8 @@
 # WAPairedDevice.DevicesSequence.AsyncIterator
 
 **Framework**: Wi-Fi Aware  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An iterator for the sequence of devices.
 
@@ -19,24 +20,25 @@ class AsyncIterator
 ## Topics
 
 ### Getting the next asynchronous update
-- [WAPairedDevice.DevicesSequence.AsyncIterator.Element](wapaireddevice/devicessequence/asynciterator/element.md)
+- [WAPairedDevice.DevicesSequence.AsyncIterator.Element](./asynciterator/element.md)
   A dictionary holding a snapshot of currently paired devices accessible to your app.
-- [func next() async throws -> WAPairedDevice.DevicesSequence.AsyncIterator.Element?](wapaireddevice/devicessequence/asynciterator/next.md)
+- [func next() async throws -> WAPairedDevice.DevicesSequence.AsyncIterator.Element?](./asynciterator/next%28%29.md)
   Returns the next dictionary in the sequence.
 ### Throwing an error
-- [WAPairedDevice.DevicesSequence.AsyncIterator.Failure](wapaireddevice/devicessequence/asynciterator/failure.md)
+- [WAPairedDevice.DevicesSequence.AsyncIterator.Failure](./asynciterator/failure.md)
   The type of error that the sequence can produce.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> WAPairedDevice.DevicesSequence.AsyncIterator](wapaireddevice/devicessequence/makeasynciterator.md)
+### Getting async updates
+- [func makeAsyncIterator() -> WAPairedDevice.DevicesSequence.AsyncIterator](./makeasynciterator%28%29.md)
   Makes an asynchronous iterator that provides successive device snapshots when the list of paired devices known to the app changes.
-- [WAPairedDevice.DevicesSequence.Element](wapaireddevice/devicessequence/element.md)
+- [WAPairedDevice.DevicesSequence.Element](./element.md)
   A dictionary holding a snapshot of currently paired devices accessible to your app.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a render command encoder from a render pass descriptor with additional options.
@@ -20,20 +21,24 @@ Creates a render command encoder from a render pass descriptor with additional o
 func makeRenderCommandEncoder(descriptor: MTL4RenderPassDescriptor, options: MTL4RenderEncoderOptions = []) -> (any MTL4RenderCommandEncoder)?
 ```
 
+```objc
+- (id<MTL4RenderCommandEncoder>) renderCommandEncoderWithDescriptor:(MTL4RenderPassDescriptor *) descriptor options:(MTL4RenderEncoderOptions) options;
+```
+
 #### Return Value
 
-The created [`MTL4RenderCommandEncoder`](mtl4rendercommandencoder.md) instance, or `nil` if the function fails.
+The created [`MTL4RenderCommandEncoder`](../mtl4rendercommandencoder.md) instance, or `nil` if the function fails.
 
 #### Discussion
 
-This method creates a render command encoder to encode a render pass, whilst providing you the option to define some render pass characteristics via an instance of [`MTL4RenderEncoderOptions`](mtl4renderencoderoptions.md).
+This method creates a render command encoder to encode a render pass, whilst providing you the option to define some render pass characteristics via an instance of [`MTL4RenderEncoderOptions`](../mtl4renderencoderoptions.md).
 
 Use these options to configure suspending/resuming render command encoders, which allow you to encode render passes from multiple threads simultaneously.
 
 ## Parameters
 
 - `descriptor`: Descriptor for the render pass.
-- `options`: [`MTL4RenderEncoderOptions`](mtl4renderencoderoptions.md) instance that provide render pass options.
+- `options`: [`MTL4RenderEncoderOptions`](../mtl4renderencoderoptions.md) instance that provide render pass options.
 
 
 ---

@@ -1,14 +1,17 @@
 # AppStoreVersionExperiment.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
-- App Store Connect API 1.7+
+- App Store Connect API 1.7+ - Deprecated in 2.4
+
+> **Deprecated**: This object is deprecated.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperiment.Attributes
 ```
 
@@ -18,12 +21,13 @@ object AppStoreVersionExperiment.Attributes
 - `name` (string)
 - `reviewRequired` (boolean)
 - `startDate` (date-time)
-- `state` (string)
+- `state` (string): **Allowed Values**: `PREPARE_FOR_SUBMISSION`, `READY_FOR_REVIEW`, `WAITING_FOR_REVIEW`, `IN_REVIEW`, `ACCEPTED`, `APPROVED`, `REJECTED`, `COMPLETED`, `STOPPED`
 - `trafficProportion` (integer)
 
 ## See Also
 
-- [object AppStoreVersionExperiment.Relationships](appstoreversionexperiment/relationships-data.dictionary.md)
+### Objects
+- [object AppStoreVersionExperiment.Relationships](./relationships-data.dictionary.md)
 
 
 ---

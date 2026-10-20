@@ -1,7 +1,8 @@
 # evaluation(on:userColumn:itemColumn:ratingColumn:cutoffs:excludingObserved:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the metrics for the given testing data.
 
@@ -12,6 +13,12 @@ Computes the metrics for the given testing data.
 
 ```swift
 func evaluation(on testingData: DataFrame, userColumn: String, itemColumn: String, ratingColumn: String? = nil, cutoffs: [Int] = [1, 2, 3, 4, 5], excludingObserved: Bool = true) -> MLRecommenderMetrics
+```
+
+**Other overloads**:
+
+```swift
+func evaluation(on testingData: MLDataTable, userColumn: String, itemColumn: String, ratingColumn: String? = nil, cutoffs: [Int] = [1, 2, 3, 4, 5], excludingObserved: Bool = true) -> MLRecommenderMetrics
 ```
 
 #### Discussion
@@ -35,7 +42,8 @@ where |A ∩ P𝑘| is the number of elements in the intersection of A and P𝑘
 
 ## See Also
 
-- [struct MLRecommenderMetrics](mlrecommendermetrics.md)
+### Evaluating a recommender
+- [struct MLRecommenderMetrics](../mlrecommendermetrics.md)
   Metrics you use to evaluate a recommender’s performance.
 
 

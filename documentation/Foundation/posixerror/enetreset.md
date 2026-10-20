@@ -1,7 +1,8 @@
 # ENETRESET
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Network dropped connection on reset.
 

@@ -1,7 +1,8 @@
 # longitude
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The longitude of the location.
 
@@ -16,7 +17,8 @@ var longitude: Double
 
 ## See Also
 
-- [var latitude: Double](rcsmessage/geolocationpush/latitude.md)
+### Accessing geolocation properties
+- [var latitude: Double](./latitude.md)
   The latitude of the location.
 
 

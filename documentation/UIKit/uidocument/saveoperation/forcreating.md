@@ -1,15 +1,16 @@
 # UIDocument.SaveOperation.forCreating
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The document is being saved for the first time.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@ The document is being saved for the first time.
 case forCreating
 ```
 
+```c
+UIDocumentSaveForCreating
+```
+
 ## See Also
 
-- [UIDocument.SaveOperation.forOverwriting](uidocument/saveoperation/foroverwriting.md)
+### Constants
+- [UIDocument.SaveOperation.forOverwriting](./foroverwriting.md)
   The document is being saved by overwriting the current version.
 
 

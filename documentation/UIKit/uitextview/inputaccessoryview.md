@@ -1,7 +1,8 @@
 # inputAccessoryView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom accessory view to display when the text view becomes the first responder.
 
@@ -9,12 +10,16 @@ The custom accessory view to display when the text view becomes the first respon
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 
 ## Declaration
 
 ```swift
 var inputAccessoryView: UIView? { get set }
+```
+
+```objc
+@property (strong, readwrite, nullable) UIView * inputAccessoryView;
 ```
 
 #### Discussion
@@ -23,7 +28,8 @@ The default value of this property is `nil`. Assigning a view to this property c
 
 ## See Also
 
-- [var inputView: UIView?](uitextview/inputview.md)
+### Replacing the system input views
+- [var inputView: UIView?](./inputview.md)
   The custom input view to display when the text view becomes the first responder.
 
 

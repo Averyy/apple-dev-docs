@@ -1,7 +1,8 @@
 # HKActivityMoveMode
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the value measured by the Move ring on the user’s device.
 
@@ -19,6 +20,10 @@ Constants that specify the value measured by the Move ring on the user’s devic
 enum HKActivityMoveMode
 ```
 
+```c
+enum HKActivityMoveMode : NSInteger;
+```
+
 #### Overview
 
 For younger users, HealthKit’s activity summary can track move time instead of active energy burned:
@@ -30,50 +35,51 @@ For younger users, HealthKit’s activity summary can track move time instead of
 ## Topics
 
 ### Move Modes
-- [HKActivityMoveMode.activeEnergy](hkactivitymovemode/activeenergy.md)
+- [HKActivityMoveMode.activeEnergy](./hkactivitymovemode/activeenergy.md)
   A value that indicates the Move ring measures active energy burned.
-- [HKActivityMoveMode.appleMoveTime](hkactivitymovemode/applemovetime.md)
+- [HKActivityMoveMode.appleMoveTime](./hkactivitymovemode/applemovetime.md)
   A value that indicates the Activity app’s Move ring measures Apple Move Time.
 ### Initializers
-- [init?(rawValue: Int)](hkactivitymovemode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkactivitymovemode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var activityMoveMode: HKActivityMoveMode](hkactivitysummary/activitymovemode.md)
+### Accessing the summary’s data
+- [var activityMoveMode: HKActivityMoveMode](./hkactivitysummary/activitymovemode.md)
   The move mode that they system used for this activity summary.
-- [var activeEnergyBurned: HKQuantity](hkactivitysummary/activeenergyburned.md)
+- [var activeEnergyBurned: HKQuantity](./hkactivitysummary/activeenergyburned.md)
   The amount of active energy the user burned during the specified day.
-- [var activeEnergyBurnedGoal: HKQuantity](hkactivitysummary/activeenergyburnedgoal.md)
+- [var activeEnergyBurnedGoal: HKQuantity](./hkactivitysummary/activeenergyburnedgoal.md)
   The user’s daily goal for active energy burned.
-- [var appleMoveTime: HKQuantity](hkactivitysummary/applemovetime.md)
+- [var appleMoveTime: HKQuantity](./hkactivitysummary/applemovetime.md)
   The amount of time the user spent performing activities that involve full-body movements during the specified day.
-- [var appleMoveTimeGoal: HKQuantity](hkactivitysummary/applemovetimegoal.md)
+- [var appleMoveTimeGoal: HKQuantity](./hkactivitysummary/applemovetimegoal.md)
   The user’s daily goal for move time.
-- [var appleExerciseTime: HKQuantity](hkactivitysummary/appleexercisetime.md)
+- [var appleExerciseTime: HKQuantity](./hkactivitysummary/appleexercisetime.md)
   The amount of time that the user has spent exercising during the specified day.
-- [var appleExerciseTimeGoal: HKQuantity](hkactivitysummary/appleexercisetimegoal.md)
+- [var appleExerciseTimeGoal: HKQuantity](./hkactivitysummary/appleexercisetimegoal.md)
   The user’s daily exercise goal.
-- [var exerciseTimeGoal: HKQuantity?](hkactivitysummary/exercisetimegoal.md)
+- [var exerciseTimeGoal: HKQuantity?](./hkactivitysummary/exercisetimegoal.md)
   The user’s daily goal for exercise time.
-- [var appleStandHours: HKQuantity](hkactivitysummary/applestandhours.md)
+- [var appleStandHours: HKQuantity](./hkactivitysummary/applestandhours.md)
   The number hours in the specified day during which the user has stood and moved for at least a minute per hour.
-- [var standHoursGoal: HKQuantity?](hkactivitysummary/standhoursgoal.md)
+- [var standHoursGoal: HKQuantity?](./hkactivitysummary/standhoursgoal.md)
   The user’s daily goal for stand hours.
-- [var appleStandHoursGoal: HKQuantity](hkactivitysummary/applestandhoursgoal.md)
+- [var appleStandHoursGoal: HKQuantity](./hkactivitysummary/applestandhoursgoal.md)
   The user’s daily goal for stand hours.
-- [enum HKCategoryValueAppleStandHour](hkcategoryvalueapplestandhour.md)
+- [enum HKCategoryValueAppleStandHour](./hkcategoryvalueapplestandhour.md)
   Categories that the system used to indicate whether the user stood during the sample’s duration.
-- [func dateComponents(for: Calendar) -> DateComponents](hkactivitysummary/datecomponents(for:).md)
+- [func dateComponents(for: Calendar) -> DateComponents](./hkactivitysummary/datecomponents%28for%29.md)
   Date components that uniquely identify the day represented by the summary object.
 
 

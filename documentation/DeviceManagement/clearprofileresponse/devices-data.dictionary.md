@@ -1,11 +1,12 @@
 # ClearProfileResponse.Devices
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object ClearProfileResponse.Devices
 ```
 
@@ -15,9 +16,10 @@ object ClearProfileResponse.Devices
 
 ## See Also
 
-- [object ClearProfileRequest](clearprofilerequest.md)
+### Request and Response
+- [object ClearProfileRequest](../clearprofilerequest.md)
   The request used to remove a profile from devices.
-- [object ClearProfileResponse](clearprofileresponse.md)
+- [object ClearProfileResponse](../clearprofileresponse.md)
 
 
 ---

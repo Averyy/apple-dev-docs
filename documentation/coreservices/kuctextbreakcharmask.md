@@ -1,7 +1,8 @@
 # kUCTextBreakCharMask
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 If the bit specified by this mask is set, boundaries of characters may be located (with surrogate pairs treated as a single character).
 

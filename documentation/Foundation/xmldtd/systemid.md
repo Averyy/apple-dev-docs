@@ -1,7 +1,8 @@
 # systemID
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the receiver’s system identifier.
 
@@ -15,9 +16,14 @@ Returns the receiver’s system identifier.
 var systemID: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * systemID;
+```
+
 ## See Also
 
-- [var publicID: String?](xmldtd/publicid.md)
+### Managing DTD Identifiers
+- [var publicID: String?](./publicid.md)
   Returns the receiver’s public identifier.
 
 

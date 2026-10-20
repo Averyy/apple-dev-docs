@@ -1,7 +1,8 @@
 # Path.Element
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An element of a path.
 
@@ -24,29 +25,30 @@ enum Element
 ## Topics
 
 ### Getting path elements
-- [Path.Element.closeSubpath](path/element/closesubpath.md)
+- [Path.Element.closeSubpath](./element/closesubpath.md)
   A line from the start point of the current subpath (if any) to the current point, which terminates the subpath.
-- [case curve(to: CGPoint, control1: CGPoint, control2: CGPoint)](path/element/curve(to:control1:control2:).md)
+- [case curve(to: CGPoint, control1: CGPoint, control2: CGPoint)](./element/curve%28to,control1,control2%29.md)
   A cubic Bézier curve from the previous current point to the given end-point, using the two control points to define the curve.
-- [Path.Element.line(to:)](path/element/line(to:).md)
+- [Path.Element.line(to:)](./element/line%28to%29.md)
   A line from the previous current point to the given point, which becomes the new current point.
-- [Path.Element.move(to:)](path/element/move(to:).md)
+- [Path.Element.move(to:)](./element/move%28to%29.md)
   A path element that terminates the current subpath (without closing it) and defines a new current point.
-- [case quadCurve(to: CGPoint, control: CGPoint)](path/element/quadcurve(to:control:).md)
+- [case quadCurve(to: CGPoint, control: CGPoint)](./element/quadcurve%28to,control%29.md)
   A quadratic Bézier curve from the previous current point to the given end-point, using the single control point to define the curve.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func forEach((Path.Element) -> Void)](path/foreach(_:).md)
+### Operating over path elements
+- [func forEach((Path.Element) -> Void)](./foreach%28_%29.md)
   Calls `body` with each element in the path.
 
 

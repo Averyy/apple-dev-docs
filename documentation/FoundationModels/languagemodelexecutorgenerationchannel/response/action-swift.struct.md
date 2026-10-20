@@ -1,7 +1,8 @@
 # LanguageModelExecutorGenerationChannel.Response.Action
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An operation that can be performed on a response entry.
 
@@ -21,38 +22,39 @@ struct Action
 
 #### Overview
 
-`Action` is an enum-like struct; construct one with a leading-dot factory such as [`appendText(_:segmentID:tokenCount:)`](languagemodelexecutorgenerationchannel/response/action-swift.struct/appendtext(_:segmentid:tokencount:).md).
+`Action` is an enum-like struct; construct one with a leading-dot factory such as [`appendText(_:segmentID:tokenCount:)`](./action-swift.struct/appendtext%28_,segmentid,tokencount%29.md).
 
 ## Topics
 
 ### Response action cases
-- [static func addAttachmentSegment(Transcript.AttachmentSegment) -> LanguageModelExecutorGenerationChannel.Response.Action](languagemodelexecutorgenerationchannel/response/action-swift.struct/addattachmentsegment(_:).md)
+- [static func addAttachmentSegment(Transcript.AttachmentSegment) -> LanguageModelExecutorGenerationChannel.Response.Action](./action-swift.struct/addattachmentsegment%28_%29.md)
   Creates an action that adds an attachment segment to the entry.
 ### Response action constants
-- [static func appendText(String, segmentID: String?, tokenCount: Int) -> LanguageModelExecutorGenerationChannel.Response.Action](languagemodelexecutorgenerationchannel/response/action-swift.struct/appendtext(_:segmentid:tokencount:).md)
+- [static func appendText(String, segmentID: String?, tokenCount: Int) -> LanguageModelExecutorGenerationChannel.Response.Action](./action-swift.struct/appendtext%28_,segmentid,tokencount%29.md)
   Creates an action that appends text to the entry’s current text segment.
-- [static func removeAttachmentSegment(id: String) -> LanguageModelExecutorGenerationChannel.Response.Action](languagemodelexecutorgenerationchannel/response/action-swift.struct/removeattachmentsegment(id:).md)
+- [static func removeAttachmentSegment(id: String) -> LanguageModelExecutorGenerationChannel.Response.Action](./action-swift.struct/removeattachmentsegment%28id%29.md)
   Creates an action that removes an attachment segment from the entry.
-- [static func replaceTextSegment(String, segmentID: String?, tokenCount: Int) -> LanguageModelExecutorGenerationChannel.Response.Action](languagemodelexecutorgenerationchannel/response/action-swift.struct/replacetextsegment(_:segmentid:tokencount:).md)
+- [static func replaceTextSegment(String, segmentID: String?, tokenCount: Int) -> LanguageModelExecutorGenerationChannel.Response.Action](./action-swift.struct/replacetextsegment%28_,segmentid,tokencount%29.md)
   Creates an action that replaces the entry’s current text segment.
-- [static func updateMetadata([String : any ConvertibleToGeneratedContent]) -> LanguageModelExecutorGenerationChannel.Response.Action](languagemodelexecutorgenerationchannel/response/action-swift.struct/updatemetadata(_:).md)
+- [static func updateMetadata([String : any ConvertibleToGeneratedContent]) -> LanguageModelExecutorGenerationChannel.Response.Action](./action-swift.struct/updatemetadata%28_%29.md)
   Creates an action that replaces the entry’s metadata.
-- [static func updateUsage(input: LanguageModelExecutorGenerationChannel.Usage.Input, output: LanguageModelExecutorGenerationChannel.Usage.Output, metadata: [String : any ConvertibleToGeneratedContent]) -> LanguageModelExecutorGenerationChannel.Response.Action](languagemodelexecutorgenerationchannel/response/action-swift.struct/updateusage(input:output:metadata:).md)
+- [static func updateUsage(input: LanguageModelExecutorGenerationChannel.Usage.Input, output: LanguageModelExecutorGenerationChannel.Usage.Output, metadata: [String : any ConvertibleToGeneratedContent]) -> LanguageModelExecutorGenerationChannel.Response.Action](./action-swift.struct/updateusage%28input,output,metadata%29.md)
   Creates an action that replaces the entry’s token-usage totals.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var action: LanguageModelExecutorGenerationChannel.Response.Action](languagemodelexecutorgenerationchannel/response/action-swift.property.md)
+### Handling a response
+- [var action: LanguageModelExecutorGenerationChannel.Response.Action](./action-swift.property.md)
   The action to perform.
-- [var entryID: String?](languagemodelexecutorgenerationchannel/response/entryid.md)
+- [var entryID: String?](./entryid.md)
   The identifier for the entry.
-- [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](languagemodelexecutorgenerationchannel/textsegmentreplacement.md)
+- [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](../textsegmentreplacement.md)
   A replacement for a streaming entry’s current text segment.
 
 

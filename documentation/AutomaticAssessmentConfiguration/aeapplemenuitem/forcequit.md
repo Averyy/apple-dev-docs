@@ -1,7 +1,8 @@
 # forceQuit
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Force Quit item, covering both the Force Quit Applications window and quitting an app outright.
 
@@ -13,6 +14,10 @@ The Force Quit item, covering both the Force Quit Applications window and quitti
 
 ```swift
 static let forceQuit: AEAppleMenuItem
+```
+
+```c
+extern AEAppleMenuItem const AEAppleMenuItemForceQuit;
 ```
 
 

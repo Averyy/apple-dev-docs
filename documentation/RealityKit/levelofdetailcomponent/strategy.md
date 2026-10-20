@@ -1,7 +1,8 @@
 # strategy
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -19,11 +20,12 @@ var strategy: LevelOfDetailComponent.SelectionStrategy
 
 ## See Also
 
-- [LevelOfDetailComponent.SelectionStrategy](levelofdetailcomponent/selectionstrategy.md)
+### Choosing a level
+- [LevelOfDetailComponent.SelectionStrategy](./selectionstrategy.md)
   The strategy used to select which detail level to display.
-- [var levelSelection: LevelOfDetailComponent.LevelSelection](levelofdetailcomponent/levelselection-swift.property.md)
+- [var levelSelection: LevelOfDetailComponent.LevelSelection](./levelselection-swift.property.md)
   The level selection mode. Defaults to automatic selection based on the strategy.
-- [LevelOfDetailComponent.LevelSelection](levelofdetailcomponent/levelselection-swift.struct.md)
+- [LevelOfDetailComponent.LevelSelection](./levelselection-swift.struct.md)
   Controls whether LOD selection is automatic or manually overridden.
 
 

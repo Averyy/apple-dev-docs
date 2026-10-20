@@ -1,7 +1,8 @@
 # cancelProxyWithError(_:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the DNS proxy.
 
@@ -18,6 +19,10 @@ Cancels the DNS proxy.
 func cancelProxyWithError(_ error: (any Error)?)
 ```
 
+```objc
+- (void) cancelProxyWithError:(NSError *) error;
+```
+
 #### Discussion
 
 Call this method from within the proxy provider when you need to stop the proxy due to a network error that renders the proxy no longer viable.
@@ -30,9 +35,10 @@ Call this method from within the proxy provider when you need to stop the proxy 
 
 ## See Also
 
-- [func startProxy(options: [String : Any]?, completionHandler: ((any Error)?) -> Void)](nednsproxyprovider/startproxy(options:completionhandler:).md)
+### Managing the DNS proxy life cycle
+- [func startProxy(options: [String : Any]?, completionHandler: ((any Error)?) -> Void)](./startproxy%28options,completionhandler%29.md)
   Starts the DNS proxy.
-- [func stopProxy(with: NEProviderStopReason, completionHandler: () -> Void)](nednsproxyprovider/stopproxy(with:completionhandler:).md)
+- [func stopProxy(with: NEProviderStopReason, completionHandler: () -> Void)](./stopproxy%28with,completionhandler%29.md)
   Stops the DNS proxy.
 
 

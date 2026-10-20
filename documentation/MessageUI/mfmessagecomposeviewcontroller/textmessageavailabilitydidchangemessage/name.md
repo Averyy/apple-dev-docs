@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Message UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The existing Objective-C notification name
 

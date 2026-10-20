@@ -1,7 +1,8 @@
 # audioVariants
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the extended attribute property that returns the audio variants for the song.
 
@@ -19,6 +20,8 @@ An identifier for the extended attribute property that returns the audio variant
 ```swift
 static let audioVariants: MusicExtendedAttributeProperty<Song, [AudioVariant]>
 ```
+
+Available when `Root` is `Song`.
 
 
 ---

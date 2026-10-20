@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Describes the type of this binary function.
@@ -18,6 +19,10 @@ Describes the type of this binary function.
 
 ```swift
 var functionType: MTLFunctionType { get }
+```
+
+```objc
+@property (readonly) MTLFunctionType functionType;
 ```
 
 

@@ -1,6 +1,7 @@
 # Confirming the Details of an Intent
 
-**Framework**: SiriKit
+**Framework**: SiriKit  
+**Role**: Article
 
 Perform final validation of the intent parameters and verify that your services are ready to fulfill the intent.
 
@@ -31,39 +32,40 @@ func confirm(startWorkout intent: INStartWorkoutIntent,
 }
 ```
 
-Providing a custom [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object with your response during confirmation is recommended but not required. If SiriKit needs to launch your app for any reason, it passes the provided activity object to your app. Your app can use any information in the object to take further actions. For example, you might include custom data in the user activity object that your app can then use to configure its interface.
+Providing a custom [`NSUserActivity`](../Foundation/nsuseractivity.md) object with your response during confirmation is recommended but not required. If SiriKit needs to launch your app for any reason, it passes the provided activity object to your app. Your app can use any information in the object to take further actions. For example, you might include custom data in the user activity object that your app can then use to configure its interface.
 
 ## See Also
 
-- [Adding User Interactivity with Siri Shortcuts and the Shortcuts App](adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md)
+### Articles
+- [Adding User Interactivity with Siri Shortcuts and the Shortcuts App](./adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md)
   Add custom intents and parameters to help users interact more quickly and effectively with Siri and the Shortcuts app.
-- [Defining Relevant Shortcuts for the Siri Watch Face](defining-relevant-shortcuts-for-the-siri-watch-face.md)
+- [Defining Relevant Shortcuts for the Siri Watch Face](./defining-relevant-shortcuts-for-the-siri-watch-face.md)
   Inform Siri when your app’s shortcuts may be useful to the user.
-- [Deleting Donated Shortcuts](deleting-donated-shortcuts.md)
+- [Deleting Donated Shortcuts](./deleting-donated-shortcuts.md)
   Remove your donations from Siri.
-- [Dispatching intents to handlers](dispatching-intents-to-handlers.md)
+- [Dispatching intents to handlers](./dispatching-intents-to-handlers.md)
   Provide SiriKit with an intent handler capable of handling a specific intent.
-- [Improving Siri Media Interactions and App Selection](improving-siri-media-interactions-and-app-selection.md)
+- [Improving Siri Media Interactions and App Selection](./improving-siri-media-interactions-and-app-selection.md)
   Fine-tune voice controls and improve Siri Suggestions by sharing app capabilities, customized names, and listening habits with the system.
-- [Improving interactions between Siri and your messaging app](improving-interactions-between-siri-and-your-messaging-app.md)
+- [Improving interactions between Siri and your messaging app](./improving-interactions-between-siri-and-your-messaging-app.md)
   Donate app-specific content, use Siri’s contact suggestions, and adopt the latest platform features to create a more consistent messaging experience.
-- [Registering Custom Vocabulary with SiriKit](registering-custom-vocabulary-with-sirikit.md)
+- [Registering Custom Vocabulary with SiriKit](./registering-custom-vocabulary-with-sirikit.md)
   Register your app’s custom terminology, and provide sample phrases for how to use your app with Siri.
-- [Handling an Intent](handling-an-intent.md)
+- [Handling an Intent](./handling-an-intent.md)
   Fulfill the intent and provide feedback to SiriKit about what you did.
-- [Resolving the Parameters of an Intent](resolving-the-parameters-of-an-intent.md)
+- [Resolving the Parameters of an Intent](./resolving-the-parameters-of-an-intent.md)
   Validate the parameters of an intent and make sure that you have the information you need to continue.
-- [Generating a List of Ride Options](generating-a-list-of-ride-options.md)
+- [Generating a List of Ride Options](./generating-a-list-of-ride-options.md)
   Generate ride options for Maps to display to the user.
-- [Handling the Ride-Booking Intents](handling-the-ride-booking-intents.md)
+- [Handling the Ride-Booking Intents](./handling-the-ride-booking-intents.md)
   Support the different intent-handling sequences for booking rides with Shortcuts or Maps.
-- [Donating Reservations](donating-reservations.md)
+- [Donating Reservations](./donating-reservations.md)
   Inform Siri of reservations made from your app.
-- [Specifying Synonyms for Your App Name](specifying-synonyms-for-your-app-name.md)
+- [Specifying Synonyms for Your App Name](./specifying-synonyms-for-your-app-name.md)
   Provide alternative names for your app that are more familiar or easier for users to speak.
-- [Intent Phrases](intent-phrases.md)
+- [Intent Phrases](./intent-phrases.md)
   The keys that you include in your global vocabulary file to show how users engage your app from Siri.
-- [Localizing Your Vocabulary for Chinese Dialects](localizing-your-vocabulary-for-chinese-dialects.md)
+- [Localizing Your Vocabulary for Chinese Dialects](./localizing-your-vocabulary-for-chinese-dialects.md)
   Apply emphasis markers to your pronunciation tips to assist Siri with Chinese dialects.
 
 

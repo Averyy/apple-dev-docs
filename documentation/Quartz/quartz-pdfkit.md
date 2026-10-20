@@ -1,12 +1,13 @@
 # Quartz PDFKit Symbols
 
-**Framework**: Quartz
+**Framework**: Quartz  
+**Role**: API Collection
 
 Create and modify PDF documents.
 
 #### Overview
 
-For full documentation of these symbols, see [`PDFKit`](https://developer.apple.com/documentation/pdfkit)
+For full documentation of these symbols, see [PDFKit](../PDFKit/PDFKit.md)
 
 
 ---

@@ -10,15 +10,16 @@ The version of CloudKit JS.
 
 ## Declaration
 
-```swift
+```
 const String VERSION;
 ```
 
 ## See Also
 
-- [BUILD_VERSION](cloudkit/build_version.md)
+### Constants
+- [BUILD_VERSION](./build_version.md)
   The CloudKit JS build number.
-- [CLOUDKIT_LOADED](cloudkit/cloudkit_loaded.md)
+- [CLOUDKIT_LOADED](./cloudkit_loaded.md)
   An event that is fired when CloudKit JS is loaded. Used when `CloudKit.js` is loaded asynchronously.
 
 

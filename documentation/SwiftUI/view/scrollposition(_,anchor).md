@@ -1,7 +1,8 @@
 # scrollPosition(_:anchor:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Associates a binding to a scroll position with a scroll view within this view.
 
@@ -23,7 +24,7 @@ func scrollPosition(_ position: Binding<ScrollPosition>, anchor: UnitPoint? = ni
 
 #### Discussion
 
-Use this modifier to control where a scroll view is positioned. You can use the [`ScrollPosition`](scrollposition.md) type to scroll in a variety of ways:
+Use this modifier to control where a scroll view is positioned. You can use the [`ScrollPosition`](../scrollposition.md) type to scroll in a variety of ways:
 
 - scroll to a view with a provided identity
 - scroll to a concrete offset
@@ -36,7 +37,7 @@ You can create a scroll position with a specified view identity type
     = ScrollPosition(idType: MyItem.ID.self)
 ```
 
-SwiftUI will use that along with the views in the scroll view’s scroll target layout to programmatically scroll to those views and to update the [`viewID`](scrollposition/viewid.md) property as the user scrolls. Use the [`scrollTargetLayout(isEnabled:)`](view/scrolltargetlayout(isenabled:).md) modifier to configure which the layout that contains your scroll targets.
+SwiftUI will use that along with the views in the scroll view’s scroll target layout to programmatically scroll to those views and to update the [`viewID`](../scrollposition/viewid.md) property as the user scrolls. Use the [`scrollTargetLayout(isEnabled:)`](./scrolltargetlayout%28isenabled%29.md) modifier to configure which the layout that contains your scroll targets.
 
 When scrolling to a view with an identifier, SwiftUI will update the position with the value of the top-most view scrolled within the visible region of the scroll view.
 
@@ -58,7 +59,7 @@ ScrollView {
 .scrollPosition($position)
 ```
 
-You can then query the currently scrolled id by using the [`viewID(type:)`](scrollposition/viewid(type:).md).
+You can then query the currently scrolled id by using the [`viewID(type:)`](../scrollposition/viewid%28type%29.md).
 
 ```swift
 let viewID: MyItem.ID = position.viewID(type: MyItem.ID.self)
@@ -99,19 +100,20 @@ ScrollView {
 .scrollPosition($position, anchor: .bottom)
 ```
 
-For example, providing a value of [`bottom`](unitpoint/bottom.md) will prefer to have the bottom-most view chosen and prefer to scroll to views aligned to the bottom.
+For example, providing a value of [`bottom`](../unitpoint/bottom.md) will prefer to have the bottom-most view chosen and prefer to scroll to views aligned to the bottom.
 
 ## See Also
 
-- [func scrollPosition(id: Binding<(some Hashable)?>, anchor: UnitPoint?) -> some View](view/scrollposition(id:anchor:).md)
+### Managing scroll position
+- [func scrollPosition(id: Binding<(some Hashable)?>, anchor: UnitPoint?) -> some View](./scrollposition%28id,anchor%29.md)
   Associates a binding to be updated when a scroll view within this view scrolls.
-- [func defaultScrollAnchor(UnitPoint?) -> some View](view/defaultscrollanchor(_:).md)
+- [func defaultScrollAnchor(UnitPoint?) -> some View](./defaultscrollanchor%28_%29.md)
   Associates an anchor to control which part of the scroll view’s content should be rendered by default.
-- [func defaultScrollAnchor(UnitPoint?, for: ScrollAnchorRole) -> some View](view/defaultscrollanchor(_:for:).md)
+- [func defaultScrollAnchor(UnitPoint?, for: ScrollAnchorRole) -> some View](./defaultscrollanchor%28_,for%29.md)
   Associates an anchor to control the position of a scroll view in a particular circumstance.
-- [struct ScrollAnchorRole](scrollanchorrole.md)
+- [struct ScrollAnchorRole](../scrollanchorrole.md)
   A type defining the role of a scroll anchor.
-- [struct ScrollPosition](scrollposition.md)
+- [struct ScrollPosition](../scrollposition.md)
   A type that defines the semantic position of where a scroll view is scrolled within its content.
 
 

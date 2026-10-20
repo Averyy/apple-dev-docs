@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of value.
 
@@ -22,27 +23,28 @@ var type: MLFeatureType { get }
 
 ## See Also
 
-- [var doubleValue: Double?](mlsendablefeaturevalue/doublevalue.md)
+### Accessing the values
+- [var doubleValue: Double?](./doublevalue.md)
   The double-precision floating-point value, if the contained value is a double.
-- [var float16Value: Float16?](mlsendablefeaturevalue/float16value.md)
+- [var float16Value: Float16?](./float16value.md)
   The 16-bit floating-point value, if the contained value is a 16-bit float.
-- [var floatValue: Float?](mlsendablefeaturevalue/floatvalue.md)
+- [var floatValue: Float?](./floatvalue.md)
   The single-precision floating-point value, if the contained value is a float.
-- [var integerDictionaryValue: [Int : Double]?](mlsendablefeaturevalue/integerdictionaryvalue.md)
+- [var integerDictionaryValue: [Int : Double]?](./integerdictionaryvalue.md)
   The integer dictionary value, if the contained value is a dictionary of integers to numbers.
-- [var integerValue: Int?](mlsendablefeaturevalue/integervalue.md)
+- [var integerValue: Int?](./integervalue.md)
   The integer value, if the contained value is an integer.
-- [var isScalar: Bool](mlsendablefeaturevalue/isscalar.md)
+- [var isScalar: Bool](./isscalar.md)
   A Boolean value indicating whether the value is a single number.
-- [var isShapedArray: Bool](mlsendablefeaturevalue/isshapedarray.md)
+- [var isShapedArray: Bool](./isshapedarray.md)
   A Boolean value indicating whether the value is a shaped array.
-- [var isUndefined: Bool](mlsendablefeaturevalue/isundefined.md)
+- [var isUndefined: Bool](./isundefined.md)
   A Boolean value indicating whether the value is missing or undefined.
-- [var stringArrayValue: [String]?](mlsendablefeaturevalue/stringarrayvalue.md)
+- [var stringArrayValue: [String]?](./stringarrayvalue.md)
   The string array value, if the contained value is an array of string.
-- [var stringDictionaryValue: [String : Double]?](mlsendablefeaturevalue/stringdictionaryvalue.md)
+- [var stringDictionaryValue: [String : Double]?](./stringdictionaryvalue.md)
   The string dictionary value, if the contained value is a dictionary of strings to numbers.
-- [var stringValue: String?](mlsendablefeaturevalue/stringvalue.md)
+- [var stringValue: String?](./stringvalue.md)
   The string value, if the contained value is a string.
 
 

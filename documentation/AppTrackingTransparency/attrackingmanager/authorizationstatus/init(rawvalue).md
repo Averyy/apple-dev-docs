@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: App Tracking Transparency  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an authorization status.
 

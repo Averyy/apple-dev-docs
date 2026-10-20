@@ -1,7 +1,8 @@
 # SofaType.lShaped
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A sofa shape that resembles the letter L.
 
@@ -18,13 +19,14 @@ case lShaped
 
 ## See Also
 
-- [SofaType.rectangular](sofatype/rectangular.md)
+### Choosing a sofa type
+- [SofaType.rectangular](./rectangular.md)
   A sofa shape that resembles a rectangle.
-- [SofaType.singleSeat](sofatype/singleseat.md)
+- [SofaType.singleSeat](./singleseat.md)
   A sofa that resembles a loveseat.
-- [SofaType.lShapedExtension](sofatype/lshapedextension.md)
+- [SofaType.lShapedExtension](./lshapedextension.md)
   The short side of the L-shape sofa.
-- [SofaType.unidentified](sofatype/unidentified.md)
+- [SofaType.unidentified](./unidentified.md)
   An uncategorized sofa shape.
 
 

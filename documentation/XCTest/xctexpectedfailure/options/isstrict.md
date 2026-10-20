@@ -1,7 +1,8 @@
 # isStrict
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the test reports an error if the expected failure doesn’t occur.
 
@@ -11,15 +12,20 @@ A Boolean value that indicates whether the test reports an error if the expected
 var isStrict: Bool { get set }
 ```
 
+```objc
+@property (getter=isStrict) BOOL strict;
+```
+
 #### Discussion
 
 The default is `true`. Set this property to `false` to prevent the test from recording the unfilled expected failure as an issue.
 
 ## See Also
 
-- [class func nonStrict() -> XCTExpectedFailure.Options](xctexpectedfailure/options/nonstrict.md)
+### Specifying Options
+- [class func nonStrict() -> XCTExpectedFailure.Options](./nonstrict%28%29.md)
   Options that specify that an unfulfilled expected failure doesn’t generate a test failure.
-- [var isEnabled: Bool](xctexpectedfailure/options/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the test checks for the expected failure.
 
 

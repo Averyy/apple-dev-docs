@@ -1,7 +1,8 @@
 # SKANError.Code
 
 **Framework**: StoreKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the type of error for an ad network attribution operation.
 
@@ -17,50 +18,55 @@ Constants that indicate the type of error for an ad network attribution operatio
 enum Code
 ```
 
+```c
+enum SKANError : NSInteger;
+```
+
 ## Topics
 
 ### Error Codes
-- [SKANError.Code.adNetworkIdMissing](skanerror-swift.struct/code/adnetworkidmissing.md)
+- [SKANError.Code.adNetworkIdMissing](./code/adnetworkidmissing.md)
   The ad network identifier in the ad impression doesn’t match the value in the information property list.
-- [SKANError.Code.impressionMissingRequiredValue](skanerror-swift.struct/code/impressionmissingrequiredvalue.md)
+- [SKANError.Code.impressionMissingRequiredValue](./code/impressionmissingrequiredvalue.md)
   A required value is missing from a view-through ad impression.
-- [SKANError.Code.impressionNotFound](skanerror-swift.struct/code/impressionnotfound.md)
+- [SKANError.Code.impressionNotFound](./code/impressionnotfound.md)
   The system can’t find the ad impression.
-- [SKANError.Code.impressionTooShort](skanerror-swift.struct/code/impressiontooshort.md)
-- [SKANError.Code.invalidAdvertisedAppId](skanerror-swift.struct/code/invalidadvertisedappid.md)
+- [SKANError.Code.impressionTooShort](./code/impressiontooshort.md)
+- [SKANError.Code.invalidAdvertisedAppId](./code/invalidadvertisedappid.md)
   The App Store ID of the advertised app is invalid.
-- [SKANError.Code.invalidCampaignId](skanerror-swift.struct/code/invalidcampaignid.md)
+- [SKANError.Code.invalidCampaignId](./code/invalidcampaignid.md)
   The campaign identifier that you provided is invalid.
-- [SKANError.Code.invalidConversionValue](skanerror-swift.struct/code/invalidconversionvalue.md)
+- [SKANError.Code.invalidConversionValue](./code/invalidconversionvalue.md)
   The conversion value is invalid.
-- [SKANError.Code.invalidSourceAppId](skanerror-swift.struct/code/invalidsourceappid.md)
+- [SKANError.Code.invalidSourceAppId](./code/invalidsourceappid.md)
   The App Store ID of the app displaying the ad is invalid.
-- [SKANError.Code.invalidVersion](skanerror-swift.struct/code/invalidversion.md)
+- [SKANError.Code.invalidVersion](./code/invalidversion.md)
   The SKAdNetwork version number is invalid.
-- [SKANError.Code.mismatchedSourceAppId](skanerror-swift.struct/code/mismatchedsourceappid.md)
+- [SKANError.Code.mismatchedSourceAppId](./code/mismatchedsourceappid.md)
   The source app identifier in the ad impression doesn’t match the app identifier in the source app.
-- [SKANError.Code.unknown](skanerror-swift.struct/code/unknown.md)
+- [SKANError.Code.unknown](./code/unknown.md)
   An unknown error occurred.
-- [SKANError.Code.unsupported](skanerror-swift.struct/code/unsupported.md)
+- [SKANError.Code.unsupported](./code/unsupported.md)
   Your app attempted to use functionality that isn’t supported in the specified version.
 ### Initializers
-- [init?(rawValue: Int)](skanerror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let SKANErrorDomain: String](skanerrordomain.md)
+### Error handling
+- [let SKANErrorDomain: String](../skanerrordomain.md)
   A string that identifies the SKAdNetwork error domain.
-- [struct SKANError](skanerror-swift.struct.md)
+- [struct SKANError](../skanerror-swift.struct.md)
   An error that an ad network attribution operation returns.
 
 

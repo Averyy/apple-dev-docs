@@ -1,7 +1,8 @@
 # prepareProtectionClasses(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Performs one-time tasks that prepare Spotlight to search for content in one or more protected search indexes.
 
@@ -18,6 +19,10 @@ Performs one-time tasks that prepare Spotlight to search for content in one or m
 class func prepareProtectionClasses(_ protectionClasses: [FileProtectionType])
 ```
 
+```objc
++ (void) prepareProtectionClasses:(NSArray<NSString *> *) protectionClasses;
+```
+
 #### Discussion
 
 Call this method once during your app’s lifecycle to give Spotlight time to load the resources it needs for search. This method prepares only the indexes that have the specified protetction levels. This preparation comes at a cost, so measure your app’s performance and determine an appropriate time to call it. For example, you might call it when you load an interface that includes search features.
@@ -30,7 +35,8 @@ You don’t need to call this method more than once during the lifetime of your 
 
 ## See Also
 
-- [class func prepare()](csuserquery/prepare.md)
+### Preparing to search
+- [class func prepare()](./prepare%28%29.md)
   Performs one-time tasks that prepare Spotlight to search for content in all search indexes.
 
 

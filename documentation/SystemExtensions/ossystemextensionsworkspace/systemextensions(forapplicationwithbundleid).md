@@ -1,7 +1,8 @@
 # systemExtensions(forApplicationWithBundleID:)
 
 **Framework**: System Extensions  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -12,6 +13,10 @@
 
 ```swift
 func systemExtensions(forApplicationWithBundleID bundleID: String) throws -> Set<OSSystemExtensionProperties>
+```
+
+```objc
+- (NSSet<OSSystemExtensionProperties *> *) systemExtensionsForApplicationWithBundleID:(NSString *) bundleID error:(NSError **) out_error;
 ```
 
 #### Return Value

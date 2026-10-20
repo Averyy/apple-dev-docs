@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Name of the operation.
 
@@ -17,6 +18,10 @@ Name of the operation.
 
 ```swift
 var name: String { get }
+```
+
+```objc
+@property (nonatomic, readonly, nonnull) NSString * name;
 ```
 
 

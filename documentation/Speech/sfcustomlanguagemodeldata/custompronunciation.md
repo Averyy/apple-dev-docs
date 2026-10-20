@@ -1,7 +1,8 @@
 # SFCustomLanguageModelData.CustomPronunciation
 
 **Framework**: Speech  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A term to be introduced into the speech recognition model’s vocabulary.
 
@@ -21,35 +22,36 @@ struct CustomPronunciation
 
 #### Overview
 
-Attempts to add terms that are already in the model’s vocabulary will be ignored. Pronunciations that use X-SAMPA symbols that are not supported will be ignored; see [`supportedPhonemes(locale:)`](sfcustomlanguagemodeldata/supportedphonemes(locale:).md) for the set of supported symbols.
+Attempts to add terms that are already in the model’s vocabulary will be ignored. Pronunciations that use X-SAMPA symbols that are not supported will be ignored; see [`supportedPhonemes(locale:)`](./supportedphonemes%28locale%29.md) for the set of supported symbols.
 
 ## Topics
 
 ### Creating a term
-- [init(grapheme: String, phonemes: [String])](sfcustomlanguagemodeldata/custompronunciation/init(grapheme:phonemes:).md)
+- [init(grapheme: String, phonemes: [String])](./custompronunciation/init%28grapheme,phonemes%29.md)
 ### Inspecting a term
-- [let grapheme: String](sfcustomlanguagemodeldata/custompronunciation/grapheme.md)
+- [let grapheme: String](./custompronunciation/grapheme.md)
   The written representation of the term, the way it is expected to appear in transcriptions.
-- [let phonemes: [String]](sfcustomlanguagemodeldata/custompronunciation/phonemes.md)
+- [let phonemes: [String]](./custompronunciation/phonemes.md)
   Zero or more phonetic representations of the term, given as X-SAMPA strings.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [DataInsertable](datainsertable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [DataInsertable](../datainsertable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func insert(term: SFCustomLanguageModelData.CustomPronunciation)](sfcustomlanguagemodeldata/insert(term:).md)
+### Adding terms
+- [func insert(term: SFCustomLanguageModelData.CustomPronunciation)](./insert%28term%29.md)
   Add a custom term to the vocabulary.
-- [static func supportedPhonemes(locale: Locale) -> [String]](sfcustomlanguagemodeldata/supportedphonemes(locale:).md)
+- [static func supportedPhonemes(locale: Locale) -> [String]](./supportedphonemes%28locale%29.md)
   List the supported subset of X-SAMPA pronunciations supported by this locale for the Speech framework.
 
 

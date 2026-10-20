@@ -1,7 +1,8 @@
 # replaceIndices(using:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a Metal index buffer that you can use to replace the indices of this low-level mesh.
 
@@ -26,15 +27,16 @@ The buffer’s contents are in an uninitialized state.
 
 ## Parameters
 
-- `commandBuffer`: The [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) you intend to use for reading. RealityKit waits for the command buffer to complete before discarding the buffer.
+- `commandBuffer`: The [`MTLCommandBuffer`](../../Metal/mtlcommandbuffer.md) you intend to use for reading. RealityKit waits for the command buffer to complete before discarding the buffer.
 
 ## See Also
 
-- [func read(bufferIndex: Int, using: any MTLCommandBuffer) -> any MTLBuffer](lowlevelmesh/read(bufferindex:using:).md)
+### Accessing mesh data on the GPU with Metal
+- [func read(bufferIndex: Int, using: any MTLCommandBuffer) -> any MTLBuffer](./read%28bufferindex,using%29.md)
   Retrieves a Metal vertex buffer at the specified index, for GPU reading.
-- [func readIndices(using: any MTLCommandBuffer) -> any MTLBuffer](lowlevelmesh/readindices(using:).md)
+- [func readIndices(using: any MTLCommandBuffer) -> any MTLBuffer](./readindices%28using%29.md)
   Retrieves the Metal index buffer for GPU reading.
-- [func replace(bufferIndex: Int, using: any MTLCommandBuffer) -> any MTLBuffer](lowlevelmesh/replace(bufferindex:using:).md)
+- [func replace(bufferIndex: Int, using: any MTLCommandBuffer) -> any MTLBuffer](./replace%28bufferindex,using%29.md)
   Retrieves a Metal vertex buffer you can use to replace the contents of the specified buffer on the GPU using Metal.
 
 

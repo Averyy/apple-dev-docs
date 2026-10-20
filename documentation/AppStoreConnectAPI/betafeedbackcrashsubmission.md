@@ -1,7 +1,8 @@
 # BetaFeedbackCrashSubmission
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A crash report submitted by a TestFlight beta tester, linked to the build, bundle, and tester that produced it.
 
@@ -10,16 +11,16 @@ A crash report submitted by a TestFlight beta tester, linked to the build, bundl
 
 ## Declaration
 
-```swift
+```
 object BetaFeedbackCrashSubmission
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BetaFeedbackCrashSubmission.Attributes](betafeedbackcrashsubmission/attributes-data.dictionary.md)
+- [object BetaFeedbackCrashSubmission.Attributes](./betafeedbackcrashsubmission/attributes-data.dictionary.md)
   Attributes that describe a beta feedback crash submission resource.
-- [object BetaFeedbackCrashSubmission.Relationships](betafeedbackcrashsubmission/relationships-data.dictionary.md)
+- [object BetaFeedbackCrashSubmission.Relationships](./betafeedbackcrashsubmission/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,21 +29,22 @@ object BetaFeedbackCrashSubmission
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (BetaFeedbackCrashSubmission.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `betaFeedbackCrashSubmissions`
 
 ## See Also
 
-- [object BetaCrashLog](betacrashlog.md)
+### Objects
+- [object BetaCrashLog](./betacrashlog.md)
   The crash log details from a TestFlight tester’s device, including the stack trace and metadata captured at the time of the crash.
-- [object BetaCrashLogResponse](betacrashlogresponse.md)
+- [object BetaCrashLogResponse](./betacrashlogresponse.md)
   A response containing a single crash log from a TestFlight tester’s device.
-- [object BetaFeedbackCrashSubmissionResponse](betafeedbackcrashsubmissionresponse.md)
+- [object BetaFeedbackCrashSubmissionResponse](./betafeedbackcrashsubmissionresponse.md)
   A response containing a single crash report submitted by a TestFlight beta tester.
-- [object BetaFeedbackCrashSubmissionsResponse](betafeedbackcrashsubmissionsresponse.md)
+- [object BetaFeedbackCrashSubmissionsResponse](./betafeedbackcrashsubmissionsresponse.md)
   A response containing a list of crash reports submitted by TestFlight beta testers.
-- [object BetaFeedbackCrashSubmissionCrashLogLinkageResponse](betafeedbackcrashsubmissioncrashloglinkageresponse.md)
+- [object BetaFeedbackCrashSubmissionCrashLogLinkageResponse](./betafeedbackcrashsubmissioncrashloglinkageresponse.md)
   A response containing the resource identifier of the crash log linked to a crash feedback submission.
-- [type DeviceConnectionType](deviceconnectiontype.md)
+- [type DeviceConnectionType](./deviceconnectiontype.md)
   A string that represents the ways a device was connected for a specific crash.
 
 

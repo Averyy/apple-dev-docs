@@ -1,7 +1,8 @@
 # setCookiePolicy(_:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a cookie policy that indicates whether the cookie store allows cookie storage.
 
@@ -15,7 +16,15 @@ Sets a cookie policy that indicates whether the cookie store allows cookie stora
 ## Declaration
 
 ```swift
+func setCookiePolicy(_ policy: WKHTTPCookieStore.CookiePolicy, completionHandler: (@MainActor @Sendable () -> Void)? = nil)
+```
+
+```swift
 func setCookiePolicy(_ policy: WKHTTPCookieStore.CookiePolicy) async
+```
+
+```objc
+- (void) setCookiePolicy:(WKCookiePolicy) policy completionHandler:(void (^)(void)) completionHandler;
 ```
 
 ## Parameters
@@ -25,9 +34,10 @@ func setCookiePolicy(_ policy: WKHTTPCookieStore.CookiePolicy) async
 
 ## See Also
 
-- [func getCookiePolicy((WKHTTPCookieStore.CookiePolicy) -> Void)](wkhttpcookiestore/getcookiepolicy(_:).md)
+### Permitting cookie storage
+- [func getCookiePolicy((WKHTTPCookieStore.CookiePolicy) -> Void)](./getcookiepolicy%28_%29.md)
   Returns a cookie policy that indicates whether the cookie store allows cookie storage.
-- [WKHTTPCookieStore.CookiePolicy](wkhttpcookiestore/cookiepolicy.md)
+- [WKHTTPCookieStore.CookiePolicy](./cookiepolicy.md)
   An enumeration with cases that indicate whether a cookie store allows cookie storage.
 
 

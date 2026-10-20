@@ -1,7 +1,8 @@
 # NavigatorOnLine
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface NavigatorOnLine
 ```
 
 ## Topics
 
 ### Instance Properties
-- [onLine](navigatoronline/2528120-online.md)
+- [onLine](./navigatoronline/api-2528120-online.md)
 
 
 ---

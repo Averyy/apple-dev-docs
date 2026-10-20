@@ -1,7 +1,8 @@
 # setRotationMatrix(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -18,12 +19,17 @@
 func setRotationMatrix(_ rotationMatrix: matrix_float3x3)
 ```
 
+```objc
+- (void) setRotationMatrix:(matrix_float3x3) rotationMatrix;
+```
+
 ## See Also
 
-- [var xRotation: CGFloat](sktransformnode/xrotation.md)
-- [var yRotation: CGFloat](sktransformnode/yrotation.md)
-- [func setEulerAngles(vector_float3)](sktransformnode/seteulerangles(_:).md)
-- [func setQuaternion(simd_quatf)](sktransformnode/setquaternion(_:).md)
+### Rotating Child Nodes
+- [var xRotation: CGFloat](./xrotation.md)
+- [var yRotation: CGFloat](./yrotation.md)
+- [func setEulerAngles(vector_float3)](./seteulerangles%28_%29.md)
+- [func setQuaternion(simd_quatf)](./setquaternion%28_%29.md)
 
 
 ---

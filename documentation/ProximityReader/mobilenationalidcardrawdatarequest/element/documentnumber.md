@@ -1,7 +1,8 @@
 # documentNumber
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The document’s number, as defined by the document’s issuing authority.
 

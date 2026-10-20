@@ -1,7 +1,8 @@
 # UICellAccessory.MenuSelectedElementDidChangeHandler
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closure type that defines a handler to perform when a user selects an element in the menu.
 
@@ -9,7 +10,7 @@ A closure type that defines a handler to perform when a user selects an element 
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,10 @@ typealias MenuSelectedElementDidChangeHandler = (UIMenu) -> Void
 
 ## See Also
 
-- [static func popUpMenu(UIMenu, displayed: UICellAccessory.DisplayedState, options: UICellAccessory.PopUpMenuOptions, selectedElementDidChangeHandler: UICellAccessory.MenuSelectedElementDidChangeHandler?) -> UICellAccessory](uicellaccessory-swift.struct/popupmenu(_:displayed:options:selectedelementdidchangehandler:).md)
+### Creating a popup menu accessory
+- [static func popUpMenu(UIMenu, displayed: UICellAccessory.DisplayedState, options: UICellAccessory.PopUpMenuOptions, selectedElementDidChangeHandler: UICellAccessory.MenuSelectedElementDidChangeHandler?) -> UICellAccessory](./popupmenu%28_,displayed,options,selectedelementdidchangehandler%29.md)
   Creates a popup menu system accessory with the specified menu, display state, configuration options, and optional selection handler.
-- [UICellAccessory.PopUpMenuOptions](uicellaccessory-swift.struct/popupmenuoptions.md)
+- [UICellAccessory.PopUpMenuOptions](./popupmenuoptions.md)
   Configuration options for a popup menu accessory.
 
 

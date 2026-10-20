@@ -1,13 +1,14 @@
 # random::integer
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Generates a pseudo-random 32-bit unsigned integer.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ A pseudo-random 32-bit unsigned integer.
 
 This function generates a random integer covering the full range of 32-bit unsigned values and increments the internal random seed for subsequent calls.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/random__integer.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/random__integer.svg)
 
 
 ---

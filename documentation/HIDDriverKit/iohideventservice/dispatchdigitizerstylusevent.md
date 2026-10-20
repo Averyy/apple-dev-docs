@@ -1,23 +1,24 @@
 # dispatchDigitizerStylusEvent
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dispatches a digitizer stylus event to the system.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t dispatchDigitizerStylusEvent(uint64_t timeStamp, IOHIDDigitizerStylusData *stylusData);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -26,27 +27,28 @@ The default implementation of this method does nothing. Subclasses must override
 ## Parameters
 
 - `timeStamp`: The timestamp of the event. Use the timestamp of the report element that is the source of the event.
-- `stylusData`: A structure containing the stylus data. For more information, see [`IOHIDDigitizerStylusData`](iohiddigitizerstylusdata.md).
+- `stylusData`: A structure containing the stylus data. For more information, see [`IOHIDDigitizerStylusData`](../iohiddigitizerstylusdata.md).
 
 ## See Also
 
-- [dispatchKeyboardEvent](iohideventservice/dispatchkeyboardevent.md)
+### Dispatching Events
+- [dispatchKeyboardEvent](./dispatchkeyboardevent.md)
   Dispatches a keyboard-related event to the system.
-- [dispatchRelativePointerEvent](iohideventservice/dispatchrelativepointerevent.md)
+- [dispatchRelativePointerEvent](./dispatchrelativepointerevent.md)
   Dispatches a relative pointer event to the system.
-- [dispatchAbsolutePointerEvent](iohideventservice/dispatchabsolutepointerevent.md)
+- [dispatchAbsolutePointerEvent](./dispatchabsolutepointerevent.md)
   Dispatches an absolute pointer event to the system.
-- [dispatchDigitizerTouchEvent](iohideventservice/dispatchdigitizertouchevent.md)
+- [dispatchDigitizerTouchEvent](./dispatchdigitizertouchevent.md)
   Dispatches a digitizer touch event to the system.
-- [dispatchRelativeScrollWheelEvent](iohideventservice/dispatchrelativescrollwheelevent.md)
+- [dispatchRelativeScrollWheelEvent](./dispatchrelativescrollwheelevent.md)
   Dispatches a relative scroll wheel event to the system.
-- [dispatchEvent](iohideventservice/dispatchevent.md)
+- [dispatchEvent](./dispatchevent.md)
   Dispatches a HID event to the system.
-- [IOHIDKeyboardEventOptions](iohidkeyboardeventoptions.md)
+- [IOHIDKeyboardEventOptions](../iohidkeyboardeventoptions.md)
   Options that you use to dispatch keyboard events.
-- [IOHIDPointerEventOptions](iohidpointereventoptions.md)
+- [IOHIDPointerEventOptions](../iohidpointereventoptions.md)
   Options that you use to dispatch pointer-related events.
-- [IOHIDScrollEventOptions](iohidscrolleventoptions.md)
+- [IOHIDScrollEventOptions](../iohidscrolleventoptions.md)
   Options that you use to dispatch scrolling-related events.
 
 

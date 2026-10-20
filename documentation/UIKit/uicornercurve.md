@@ -1,7 +1,8 @@
 # UICornerCurve
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The corner curve to apply to a view.
 
@@ -17,31 +18,35 @@ The corner curve to apply to a view.
 enum UICornerCurve
 ```
 
+```c
+enum UICornerCurve : NSInteger;
+```
+
 ## Topics
 
 ### Choosing a corner style
-- [UICornerCurve.automatic](uicornercurve/automatic.md)
+- [UICornerCurve.automatic](./uicornercurve/automatic.md)
   Selects the corner style automatically.
-- [UICornerCurve.circular](uicornercurve/circular.md)
+- [UICornerCurve.circular](./uicornercurve/circular.md)
   Always uses a circular corner style.
-- [UICornerCurve.continuous](uicornercurve/continuous.md)
+- [UICornerCurve.continuous](./uicornercurve/continuous.md)
   Always uses a continuous corner style.
 ### Initializers
-- [init?(rawValue: Int)](uicornercurve/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uicornercurve/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

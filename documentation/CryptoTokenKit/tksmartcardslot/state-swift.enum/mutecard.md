@@ -1,7 +1,8 @@
 # TKSmartCardSlot.State.muteCard
 
 **Framework**: CryptoTokenKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 9.0+
@@ -18,16 +19,21 @@
 case muteCard
 ```
 
+```c
+TKSmartCardSlotStateMuteCard
+```
+
 #### Discussion
 
 A Smart Card is inserted, but is mute, or does not provide responses to commands.
 
 ## See Also
 
-- [TKSmartCardSlot.State.missing](tksmartcardslot/state-swift.enum/missing.md)
-- [TKSmartCardSlot.State.empty](tksmartcardslot/state-swift.enum/empty.md)
-- [TKSmartCardSlot.State.probing](tksmartcardslot/state-swift.enum/probing.md)
-- [TKSmartCardSlot.State.validCard](tksmartcardslot/state-swift.enum/validcard.md)
+### Constants
+- [TKSmartCardSlot.State.missing](./missing.md)
+- [TKSmartCardSlot.State.empty](./empty.md)
+- [TKSmartCardSlot.State.probing](./probing.md)
+- [TKSmartCardSlot.State.validCard](./validcard.md)
 
 
 ---

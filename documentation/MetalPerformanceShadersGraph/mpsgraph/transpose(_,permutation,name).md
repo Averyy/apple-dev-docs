@@ -1,7 +1,8 @@
 # transpose(_:permutation:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a permutation operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a permutation operation and returns the result tensor.
 
 ```swift
 func transpose(_ tensor: MPSGraphTensor, permutation: [NSNumber], name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) transposeTensor:(MPSGraphTensor *) tensor permutation:(NSArray<NSNumber *> *) permutation name:(NSString *) name;
 ```
 
 #### Return Value

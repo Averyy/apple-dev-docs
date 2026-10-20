@@ -1,7 +1,8 @@
 # Movie data atom ('mdat')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that contains movie data.
 
@@ -12,13 +13,13 @@ As with the free and skip atoms, the movie data atom is structured quite simply.
 ## Topics
 
 ### Data fields
-- [Size](movie_data_atom/size.md)
+- [Size](./movie_data_atom/size.md)
   A 32-bit integer that specifies the number of bytes in this media data atom.
-- [Type](movie_data_atom/type.md)
+- [Type](./movie_data_atom/type.md)
   A 32-bit integer that identifies the atom type.
-- [Extended size](movie_data_atom/extended_size.md)
+- [Extended size](./movie_data_atom/extended_size.md)
   A 64-bit integer that specifies the number of bytes in this media data atom.
-- [Movie media data](movie_data_atom/movie_media_data.md)
+- [Movie media data](./movie_data_atom/movie_media_data.md)
   The movie’s media data.
 
 

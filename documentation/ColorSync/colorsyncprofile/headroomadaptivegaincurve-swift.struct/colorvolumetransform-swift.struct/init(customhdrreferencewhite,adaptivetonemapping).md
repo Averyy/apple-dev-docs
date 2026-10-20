@@ -1,7 +1,8 @@
 # init(customHDRReferenceWhite:adaptiveToneMapping:)
 
 **Framework**: ColorSync  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color volume transform.
 
@@ -22,7 +23,7 @@ init(customHDRReferenceWhite: Float? = nil, adaptiveToneMapping: ColorSyncProfil
 
 #### Discussion
 
-> **Note**: [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.invalidHDRReferenceWhite(_:)`](colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/invalidhdrreferencewhite(_:).md) if `customHDRReferenceWhite` is less than or equal to `0`.
+> **Throws**: [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.invalidHDRReferenceWhite(_:)`](../error/invalidhdrreferencewhite%28_%29.md) if `customHDRReferenceWhite` is less than or equal to `0`.
 
 ## Parameters
 

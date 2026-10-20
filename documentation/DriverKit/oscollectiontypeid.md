@@ -1,25 +1,27 @@
 # OSCollectionTypeID
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 OSCollectionType OSCollectionTypeID(OSObjectPtr obj);
 ```
 
 ## See Also
 
-- [OSCollectionTypeName](oscollectiontypename.md)
-- [Collection Types](3180990-collection_types.md)
-- [OSCollectionType](oscollectiontype.md)
+### Getting Type Information
+- [OSCollectionTypeName](./oscollectiontypename.md)
+- [Collection Types](./api-3180990-collection_types.md)
+- [OSCollectionType](./oscollectiontype.md)
 
 
 ---

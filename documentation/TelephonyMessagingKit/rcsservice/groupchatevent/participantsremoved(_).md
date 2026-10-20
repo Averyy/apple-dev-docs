@@ -1,7 +1,8 @@
 # RCSService.GroupChatEvent.participantsRemoved(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Participants have been removed from a group chat.
 
@@ -16,11 +17,12 @@ case participantsRemoved(RCSService.GroupChatParticipantsRemovedEvent)
 
 ## See Also
 
-- [case participantsAdded(RCSService.GroupChatParticipantsAddedEvent)](rcsservice/groupchatevent/participantsadded(_:).md)
+### Participant events
+- [case participantsAdded(RCSService.GroupChatParticipantsAddedEvent)](./participantsadded%28_%29.md)
   Participants have been added to a group chat.
-- [RCSService.GroupChatParticipantsAddedEvent](rcsservice/groupchatparticipantsaddedevent.md)
+- [RCSService.GroupChatParticipantsAddedEvent](../groupchatparticipantsaddedevent.md)
   Event triggered when participants are added to a group.
-- [RCSService.GroupChatParticipantsRemovedEvent](rcsservice/groupchatparticipantsremovedevent.md)
+- [RCSService.GroupChatParticipantsRemovedEvent](../groupchatparticipantsremovedevent.md)
   Event triggered when participants are removed from a group.
 
 

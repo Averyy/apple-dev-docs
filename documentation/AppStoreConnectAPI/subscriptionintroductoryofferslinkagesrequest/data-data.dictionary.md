@@ -1,7 +1,8 @@
 # SubscriptionIntroductoryOffersLinkagesRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data identifying an introductory offer linked to a subscription.
 
@@ -10,14 +11,14 @@ The resource linkage data identifying an introductory offer linked to a subscrip
 
 ## Declaration
 
-```swift
+```
 object SubscriptionIntroductoryOffersLinkagesRequest.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionIntroductoryOffers`
 
 
 ---

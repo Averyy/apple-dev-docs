@@ -1,7 +1,8 @@
 # timeToAttain
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Describes time required to enter this state from next lower state (in microseconds). Unused; drivers may specify 0.
 
@@ -10,7 +11,7 @@ Describes time required to enter this state from next lower state (in microsecon
 
 ## Declaration
 
-```swift
+```c
 unsigned long timeToAttain;
 ```
 

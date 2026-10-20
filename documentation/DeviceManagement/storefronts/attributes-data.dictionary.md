@@ -1,7 +1,8 @@
 # Storefronts.Attributes
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for the storefronts resource.
 
@@ -10,7 +11,7 @@ The attributes for the storefronts resource.
 
 ## Declaration
 
-```swift
+```
 object Storefronts.Attributes
 ```
 

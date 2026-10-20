@@ -1,7 +1,8 @@
 # isModalInPresentation
 
 **Framework**: Image Playground  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the view controller enforces a modal behavior.
 

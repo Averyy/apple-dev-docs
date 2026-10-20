@@ -1,7 +1,8 @@
 # IODestroyPlugInInterface(_:)
 
 **Framework**: IOKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 func IODestroyPlugInInterface(_ interface: UnsafeMutablePointer<UnsafeMutablePointer<IOCFPlugInInterface>?>!) -> kern_return_t
+```
+
+```c
+kern_return_t IODestroyPlugInInterface(IOCFPlugInInterface **interface);
 ```
 
 

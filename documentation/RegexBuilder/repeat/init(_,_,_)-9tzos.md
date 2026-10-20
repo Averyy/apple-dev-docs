@@ -1,7 +1,8 @@
 # init(_:_:_:)
 
 **Framework**: RegexBuilder  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
 
@@ -11,7 +12,7 @@ Creates a regex component that matches the given component repeated a number of 
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

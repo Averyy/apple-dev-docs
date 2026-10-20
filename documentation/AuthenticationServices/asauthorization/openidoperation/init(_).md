@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an operation from the given string.
 
@@ -22,7 +23,7 @@ init(_ rawValue: String)
 
 #### Discussion
 
-Typically you use one of the predefined operations, like [`operationLogin`](asauthorization/openidoperation/operationlogin.md), instead of initializing one from a string.
+Typically you use one of the predefined operations, like [`operationLogin`](./operationlogin.md), instead of initializing one from a string.
 
 ## Parameters
 
@@ -30,7 +31,8 @@ Typically you use one of the predefined operations, like [`operationLogin`](asau
 
 ## See Also
 
-- [init(rawValue: String)](asauthorization/openidoperation/init(rawvalue:).md)
+### Creating an Operation
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates an operation from the given string.
 
 

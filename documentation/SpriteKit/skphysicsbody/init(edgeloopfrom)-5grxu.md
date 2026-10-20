@@ -1,18 +1,19 @@
 # init(edgeLoopFrom:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an edge loop from a path.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates an edge loop from a path.
 init(edgeLoopFrom path: CGPath)
 ```
 
+```objc
++ (SKPhysicsBody *) bodyWithEdgeLoopFromPath:(CGPathRef) path;
+```
+
 ## Mentions
 
-- [Shaping a Physics Body to Match a Node’s Graphics](shaping-a-physics-body-to-match-a-node-s-graphics.md)
+- [Shaping a Physics Body to Match a Node’s Graphics](../shaping-a-physics-body-to-match-a-node-s-graphics.md)
 
 #### Return Value
 
@@ -32,7 +37,7 @@ A new edge-based physics body.
 
 If the path is not already closed, a loop is automatically created by joining the last point to the first.
 
-An edge has no volume or mass and is always treated as if the [`isDynamic`](skphysicsbody/isdynamic.md) property is equal to [`false`](https://developer.apple.com/documentation/swift/false). Edges may only collide with volume-based physics bodies.
+An edge has no volume or mass and is always treated as if the [`isDynamic`](./isdynamic.md) property is equal to [`false`](../../Swift/false.md). Edges may only collide with volume-based physics bodies.
 
 ## Parameters
 
@@ -40,13 +45,14 @@ An edge has no volume or mass and is always treated as if the [`isDynamic`](skph
 
 ## See Also
 
-- [Creating an Edge Loop Around a Scene](creating-an-edge-loop-around-a-scene.md)
+### Creating an Edge-Based Physics Body
+- [Creating an Edge Loop Around a Scene](../creating-an-edge-loop-around-a-scene.md)
   Border your scene with an obstacle that physics bodies cannot penetrate.
-- [init(edgeLoopFrom: CGRect)](skphysicsbody/init(edgeloopfrom:)-8sqfy.md)
+- [init(edgeLoopFrom: CGRect)](./init%28edgeloopfrom%29-8sqfy.md)
   Creates an edge loop from a rectangle.
-- [init(edgeFrom: CGPoint, to: CGPoint)](skphysicsbody/init(edgefrom:to:).md)
+- [init(edgeFrom: CGPoint, to: CGPoint)](./init%28edgefrom,to%29.md)
   Creates an edge between two points.
-- [init(edgeChainFrom: CGPath)](skphysicsbody/init(edgechainfrom:).md)
+- [init(edgeChainFrom: CGPath)](./init%28edgechainfrom%29.md)
   Creates an edge chain from a path.
 
 

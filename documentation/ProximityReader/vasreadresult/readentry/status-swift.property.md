@@ -1,7 +1,8 @@
 # status
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status word that represents the outcome of the VAS read attempt for this reward pass.
 
@@ -18,7 +19,8 @@ let status: VASReadResult.ReadEntry.Status
 
 ## See Also
 
-- [VASReadResult.ReadEntry.Status](vasreadresult/readentry/status-swift.enum.md)
+### Getting the status word
+- [VASReadResult.ReadEntry.Status](./status-swift.enum.md)
   Status words that indicate the possible read outcomes.
 
 

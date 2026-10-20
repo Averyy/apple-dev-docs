@@ -1,7 +1,8 @@
 # GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.default
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default grounding shadow behavior for the device’s platform.
 
@@ -19,9 +20,9 @@ case `default`
 
 #### Discussion
 
-In visionOS, the default case is equivalent to [`GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.fade`](groundingshadowcomponent/fadebehaviornearphysicalobjects-swift.enum/fade.md) when the the system can detect the entity represents a UI; otherwise,[`GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.constant`](groundingshadowcomponent/fadebehaviornearphysicalobjects-swift.enum/constant.md).
+In visionOS, the default case is equivalent to [`GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.fade`](./fade.md) when the the system can detect the entity represents a UI; otherwise,[`GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.constant`](./constant.md).
 
-In iOS, the default case is equivalent to [`GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.constant`](groundingshadowcomponent/fadebehaviornearphysicalobjects-swift.enum/constant.md).
+In iOS, the default case is equivalent to [`GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.constant`](./constant.md).
 
 
 ---

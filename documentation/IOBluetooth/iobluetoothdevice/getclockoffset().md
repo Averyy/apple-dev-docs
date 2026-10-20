@@ -1,17 +1,22 @@
 # getClockOffset()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the clock offset value of the device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getClockOffset() -> BluetoothClockOffset
+```
+
+```objc
+- (BluetoothClockOffset) getClockOffset;
 ```
 
 #### Return Value

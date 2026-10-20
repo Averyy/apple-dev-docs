@@ -1,7 +1,8 @@
 # cameraAnchor(isActive:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the view that should act as the virtual camera for Apple Vision Pro 2D Persona stream.
 
@@ -43,19 +44,22 @@ struct ExampleSelfPreviewWhenFocusedView: View {
 
 ## Parameters
 
-- `isActive`: Whether or not the camera anchor is active. You can use this value to ensure that only one camera anchor is active at a time if you want to create multiple views that could act as the anchor in your app.
+- `isActive`: Whether or not the camera anchor is active.
+
+  You can use this value to ensure that only one camera anchor is active at a time if you want to create multiple views that could act as the anchor in your app.
 
 ## See Also
 
-- [struct CameraView](../homekit/cameraview.md)
+### Displaying media
+- [struct CameraView](../../HomeKit/cameraview.md)
   A SwiftUI view into which a video stream or an image snapshot is rendered.
-- [struct NowPlayingView](../watchkit/nowplayingview.md)
+- [struct NowPlayingView](../../WatchKit/nowplayingview.md)
   A view that displays the system’s Now Playing interface so that the user can control audio.
-- [struct VideoPlayer](../avkit/videoplayer.md)
+- [struct VideoPlayer](../../AVKit/videoplayer.md)
   A view that displays content from a player and a native user interface to control playback.
-- [func continuityDevicePicker(isPresented: Binding<Bool>, onDidConnect: ((AVContinuityDevice?) -> Void)?) -> some View](view/continuitydevicepicker(ispresented:ondidconnect:).md)
+- [func continuityDevicePicker(isPresented: Binding<Bool>, onDidConnect: ((AVContinuityDevice?) -> Void)?) -> some View](./continuitydevicepicker%28ispresented,ondidconnect%29.md)
   A `continuityDevicePicker` should be used to discover and connect nearby continuity device through a button interface or other form of activation. On tvOS, this presents a fullscreen continuity device picker experience when selected. The modal view covers as much the screen of `self` as possible when a given condition is true.
-- [func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View](view/foveatedstreamingpausesheet(session:).md)
+- [func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View](./foveatedstreamingpausesheet%28session%29.md)
   Tells the system to present a sheet with controls for resuming or ending the foveated streaming session when it pauses.
 
 

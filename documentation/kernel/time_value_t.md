@@ -1,14 +1,15 @@
 # time_value_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct time_value {
     ...
 } time_value_t;
@@ -17,8 +18,8 @@ typedef struct time_value {
 ## Topics
 
 ### Instance Properties
-- [microseconds](time_value_t/1569001-microseconds.md)
-- [seconds](time_value_t/1569000-seconds.md)
+- [microseconds](./time_value_t/api-1569001-microseconds.md)
+- [seconds](./time_value_t/api-1569000-seconds.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(size:range:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates uniform bins covering the given range.
 

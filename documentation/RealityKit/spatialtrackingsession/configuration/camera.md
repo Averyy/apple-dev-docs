@@ -1,7 +1,8 @@
 # SpatialTrackingSession.Configuration.Camera
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines the camera feed the RealityView renders.
 
@@ -18,28 +19,29 @@ enum Camera
 ## Topics
 
 ### Enumeration Cases
-- [SpatialTrackingSession.Configuration.Camera.back](spatialtrackingsession/configuration/camera/back.md)
+- [SpatialTrackingSession.Configuration.Camera.back](./camera/back.md)
   The camera on the back of the device.
-- [SpatialTrackingSession.Configuration.Camera.front](spatialtrackingsession/configuration/camera/front.md)
+- [SpatialTrackingSession.Configuration.Camera.front](./camera/front.md)
   The camera on the front of the device.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 ## See Also
 
-- [class SpatialTrackingSession](spatialtrackingsession.md)
+### Spatial tracking
+- [class SpatialTrackingSession](../../spatialtrackingsession.md)
   An object that incorporates spatial tracking capabilities into your RealityKit apps.
-- [SpatialTrackingSession.Configuration](spatialtrackingsession/configuration.md)
+- [SpatialTrackingSession.Configuration](../configuration.md)
   A type for configuring the spatial tracking session.
-- [SpatialTrackingSession.Configuration.AnchorCapability](spatialtrackingsession/configuration/anchorcapability.md)
+- [SpatialTrackingSession.Configuration.AnchorCapability](./anchorcapability.md)
   A type that defines various anchor tracking capabilities.
-- [SpatialTrackingSession.Configuration.SceneUnderstandingCapability](spatialtrackingsession/configuration/sceneunderstandingcapability.md)
+- [SpatialTrackingSession.Configuration.SceneUnderstandingCapability](./sceneunderstandingcapability.md)
   Defines how system behaviors use scene understanding.
-- [SpatialTrackingSession.UnavailableCapabilities](spatialtrackingsession/unavailablecapabilities.md)
+- [SpatialTrackingSession.UnavailableCapabilities](../unavailablecapabilities.md)
   A type that contains the unavailable capabilities of the current spatial tracking session.
 
 

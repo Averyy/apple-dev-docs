@@ -1,7 +1,8 @@
 # isLowercase
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar’s letterform is considered lowercase.
 
@@ -22,7 +23,7 @@ var isLowercase: Bool { get }
 
 #### Discussion
 
-This property corresponds to the “Lowercase” and the “Other_Lowercase” properties in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Lowercase” and the “Other_Lowercase” properties in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

@@ -1,7 +1,8 @@
 # init(timeValue:timeScale:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a valid CVTime value. Note: When `timeValue` has nonzero value, `timeScale` must be greater than 0.
 

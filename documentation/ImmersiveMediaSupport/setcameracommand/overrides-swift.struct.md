@@ -1,7 +1,8 @@
 # SetCameraCommand.Overrides
 
 **Framework**: Immersive Media Support  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Override camera/venue params
 
@@ -25,22 +26,22 @@ struct Overrides
 ## Topics
 
 ### Initializers
-- [init(rotation: Rotation3DFloat?, lensDefinitionData: ImmersiveCameraLensDefinition?, maskData: ImmersiveDynamicMask?)](setcameracommand/overrides-swift.struct/init(rotation:lensdefinitiondata:maskdata:).md)
+- [init(rotation: Rotation3DFloat?, lensDefinitionData: ImmersiveCameraLensDefinition?, maskData: ImmersiveDynamicMask?)](./overrides-swift.struct/init%28rotation,lensdefinitiondata,maskdata%29.md)
 ### Instance Properties
-- [var lensDefinitionData: ImmersiveCameraLensDefinition?](setcameracommand/overrides-swift.struct/lensdefinitiondata.md)
+- [var lensDefinitionData: ImmersiveCameraLensDefinition?](./overrides-swift.struct/lensdefinitiondata.md)
   Inline lens definition (ILPD) data to override lens calibration
-- [var maskData: ImmersiveDynamicMask?](setcameracommand/overrides-swift.struct/maskdata.md)
+- [var maskData: ImmersiveDynamicMask?](./overrides-swift.struct/maskdata.md)
   Dynamic mask data to override camera mask
-- [var rotation: Rotation3DFloat?](setcameracommand/overrides-swift.struct/rotation.md)
-  Camera rotation to override the rotation in [`pose`](immersivecamera/pose.md).
+- [var rotation: Rotation3DFloat?](./overrides-swift.struct/rotation.md)
+  Camera rotation to override the rotation in [`pose`](../immersivecamera/pose.md).
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

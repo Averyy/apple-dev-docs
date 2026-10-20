@@ -1,18 +1,19 @@
 # accessibilityShowButtonShapes
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the system preference for Show Button Shapes is enabled.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 1000.0 (renamed: accessibilityShowBorders)
+- iPadOS 14.0+ - Deprecated in 1000.0 (renamed: accessibilityShowBorders)
+- Mac Catalyst 14.0+ - Deprecated in 1000.0 (renamed: accessibilityShowBorders)
+- macOS 11.0+ - Deprecated in 1000.0 (renamed: accessibilityShowBorders)
+- tvOS 14.0+ - Deprecated in 1000.0 (renamed: accessibilityShowBorders)
+- visionOS 1.0+ - Deprecated in 1000.0 (renamed: accessibilityShowBorders)
+- watchOS 7.0+ - Deprecated in 1000.0 (renamed: accessibilityShowBorders)
 
 ## Declaration
 
@@ -26,11 +27,12 @@ If this property’s value is true, interactive custom controls such as buttons 
 
 ## See Also
 
-- [var accessibilityReduceTransparency: Bool](environmentvalues/accessibilityreducetransparency.md)
+### Improving legibility
+- [var accessibilityReduceTransparency: Bool](./accessibilityreducetransparency.md)
   Whether the system preference for Reduce Transparency is enabled.
-- [var legibilityWeight: LegibilityWeight?](environmentvalues/legibilityweight.md)
+- [var legibilityWeight: LegibilityWeight?](./legibilityweight.md)
   The font weight to apply to text.
-- [enum LegibilityWeight](legibilityweight.md)
+- [enum LegibilityWeight](../legibilityweight.md)
   The Accessibility Bold Text user setting options.
 
 

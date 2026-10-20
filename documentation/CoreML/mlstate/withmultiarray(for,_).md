@@ -1,7 +1,8 @@
 # withMultiArray(for:_:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -20,7 +21,8 @@ func withMultiArray<R>(for stateName: String, _ body: (MLMultiArray) throws -> R
 
 ## See Also
 
-- [func withMultiArray<R>((MLMultiArray) -> R) throws -> R](mlstate/withmultiarray(_:).md)
+### Getting a state buffer
+- [func withMultiArray<R>((MLMultiArray) -> R) throws -> R](./withmultiarray%28_%29.md)
 
 
 ---

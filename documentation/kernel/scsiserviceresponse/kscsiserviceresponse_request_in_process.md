@@ -1,14 +1,15 @@
 # kSCSIServiceResponse_Request_In_Process
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 kSCSIServiceResponse_Request_In_Process = 0
 ```
 

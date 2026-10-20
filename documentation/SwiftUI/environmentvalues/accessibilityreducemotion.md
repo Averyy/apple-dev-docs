@@ -1,7 +1,8 @@
 # accessibilityReduceMotion
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the system preference for Reduce Motion is enabled.
 
@@ -26,9 +27,10 @@ If this property’s value is true, UI should avoid large animations, especially
 
 ## See Also
 
-- [var accessibilityDimFlashingLights: Bool](environmentvalues/accessibilitydimflashinglights.md)
+### Minimizing motion
+- [var accessibilityDimFlashingLights: Bool](./accessibilitydimflashinglights.md)
   Whether the setting to reduce flashing or strobing lights in video content is on. This setting can also be used to determine if UI in playback controls should be shown to indicate upcoming content that includes flashing or strobing lights.
-- [var accessibilityPlayAnimatedImages: Bool](environmentvalues/accessibilityplayanimatedimages.md)
+- [var accessibilityPlayAnimatedImages: Bool](./accessibilityplayanimatedimages.md)
   Whether the setting for playing animations in an animated image is on. When this value is false, any presented image that contains animation should not play automatically.
 
 

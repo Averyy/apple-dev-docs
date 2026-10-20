@@ -1,7 +1,8 @@
 # UITabBar.ItemPositioning.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies automatic tab bar item positioning according to the user interface idiom, as follows:
 
@@ -9,7 +10,7 @@ Specifies automatic tab bar item positioning according to the user interface idi
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,16 +19,21 @@ Specifies automatic tab bar item positioning according to the user interface idi
 case automatic
 ```
 
+```c
+UITabBarItemPositioningAutomatic
+```
+
 #### Discussion
 
 - In a horizontally compact environment, the tab bar spreads items across the entire space, adjusting inter-item spacing as needed.
-- In a horizontally regular environment, the tab bar uses the [`itemWidth`](uitabbar/itemwidth.md) and [`itemSpacing`](uitabbar/itemspacing.md) properties to set the width of items and the spacing between items, positioning those items in the center of the available space. This configuration has the potential to leave space along the left and right edges of the tab bar.
+- In a horizontally regular environment, the tab bar uses the [`itemWidth`](../itemwidth.md) and [`itemSpacing`](../itemspacing.md) properties to set the width of items and the spacing between items, positioning those items in the center of the available space. This configuration has the potential to leave space along the left and right edges of the tab bar.
 
 ## See Also
 
-- [UITabBar.ItemPositioning.fill](uitabbar/itempositioning-swift.enum/fill.md)
+### Constants
+- [UITabBar.ItemPositioning.fill](./fill.md)
   Distribute items across the entire width of the tab bar.
-- [UITabBar.ItemPositioning.centered](uitabbar/itempositioning-swift.enum/centered.md)
+- [UITabBar.ItemPositioning.centered](./centered.md)
   Center items in the available space.
 
 

@@ -1,7 +1,8 @@
 # transform(at:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the prim’s composed local transform at the specified time.
 

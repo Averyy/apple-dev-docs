@@ -1,7 +1,8 @@
 # Audio channel layout
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An audio channel layout structure.
 
@@ -11,13 +12,14 @@ A big-endian `AudioChannelLayout` structure as defined in CoreAudioTypes.h. See 
 
 ## See Also
 
-- [Size](audio_channel_layout_atom/size.md)
+### Data fields
+- [Size](./size.md)
   An unsigned 32-bit integer holding the size of the audio channel layout atom.
-- [Type](audio_channel_layout_atom/type.md)
+- [Type](./type.md)
   An unsigned 32-bit field.
-- [Version](audio_channel_layout_atom/version.md)
+- [Version](./version.md)
   A 1-byte specification of the version of the audio channel layout atom.
-- [Flags](audio_channel_layout_atom/flags.md)
+- [Flags](./flags.md)
   A 3-byte space for audio channel layout flags.
 
 

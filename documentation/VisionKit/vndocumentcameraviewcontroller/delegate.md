@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate to be notified when the user saves or cancels the document scanner.
 
@@ -17,19 +18,24 @@ The delegate to be notified when the user saves or cancels the document scanner.
 weak var delegate: (any VNDocumentCameraViewControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<VNDocumentCameraViewControllerDelegate> delegate;
+```
+
 #### Overview
 
 The delegate receives one of the following three calls:
 
-- [`documentCameraViewController(_:didFinishWith:)`](vndocumentcameraviewcontrollerdelegate/documentcameraviewcontroller(_:didfinishwith:).md) when the camera successfully completes a scan.
-- [`documentCameraViewControllerDidCancel(_:)`](vndocumentcameraviewcontrollerdelegate/documentcameraviewcontrollerdidcancel(_:).md) when the user cancels out of the document camera interface.
-- [`documentCameraViewController(_:didFailWithError:)`](vndocumentcameraviewcontrollerdelegate/documentcameraviewcontroller(_:didfailwitherror:).md) when the document scan fails or is unable to capture a photo.
+- [`documentCameraViewController(_:didFinishWith:)`](../vndocumentcameraviewcontrollerdelegate/documentcameraviewcontroller%28_,didfinishwith%29.md) when the camera successfully completes a scan.
+- [`documentCameraViewControllerDidCancel(_:)`](../vndocumentcameraviewcontrollerdelegate/documentcameraviewcontrollerdidcancel%28_%29.md) when the user cancels out of the document camera interface.
+- [`documentCameraViewController(_:didFailWithError:)`](../vndocumentcameraviewcontrollerdelegate/documentcameraviewcontroller%28_,didfailwitherror%29.md) when the document scan fails or is unable to capture a photo.
 
 Your app is responsible for dismissing the document camera in all delegate methods.
 
 ## See Also
 
-- [class var isSupported: Bool](vndocumentcameraviewcontroller/issupported.md)
+### Supporting the document camera
+- [class var isSupported: Bool](./issupported.md)
   A Boolean variable that indicates whether or not the current device supports document scanning.
 
 

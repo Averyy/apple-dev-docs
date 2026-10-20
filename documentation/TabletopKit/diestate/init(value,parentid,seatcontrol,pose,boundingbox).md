@@ -1,7 +1,8 @@
 # init(value:parentID:seatControl:pose:boundingBox:)
 
 **Framework**: TabletopKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the state of a die using the specified current value, location, and player interactions.
 
@@ -16,7 +17,8 @@ init(value: Int, parentID: EquipmentIdentifier, seatControl: ControllingSeats = 
 
 ## See Also
 
-- [init(value: Int, parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, entity: Entity)](diestate/init(value:parentid:seatcontrol:pose:entity:).md)
+### Creating a die state
+- [init(value: Int, parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, entity: Entity)](./init%28value,parentid,seatcontrol,pose,entity%29.md)
   Creates a die state with the given die value, parent, controlling seats, pose, and associated entity providing the bounding box.
 
 

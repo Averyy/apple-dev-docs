@@ -1,7 +1,8 @@
 # BulkKeywordUpdate.Status
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The updated keyword status for a bulk keyword update item.
 
@@ -10,9 +11,14 @@ The updated keyword status for a bulk keyword update item.
 
 ## Declaration
 
-```swift
+```
 string BulkKeywordUpdate.Status
 ```
+
+## Possible Values
+
+- `ENABLED`: Keyword is active and eligible to serve.
+- `PAUSED`: Keyword is paused and will not serve.
 
 #### Discussion
 

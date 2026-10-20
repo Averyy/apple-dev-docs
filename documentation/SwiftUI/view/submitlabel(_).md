@@ -1,7 +1,8 @@
 # submitLabel(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the submit label for this view.
 
@@ -34,11 +35,12 @@ Form {
 
 ## Parameters
 
-- `submitLabel`: One of the cases specified in [`SubmitLabel`](submitlabel.md).
+- `submitLabel`: One of the cases specified in [`SubmitLabel`](../submitlabel.md).
 
 ## See Also
 
-- [struct SubmitLabel](submitlabel.md)
+### Labeling a submission event
+- [struct SubmitLabel](../submitlabel.md)
   A semantic label describing the label of submission within a view hierarchy.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a view representing the body of a group box.
@@ -22,7 +23,7 @@ Creates a view representing the body of a group box.
 
 #### Discussion
 
-SwiftUI calls this method for each instance of [`GroupBox`](groupbox.md) created within a view hierarchy where this style is the current group box style.
+SwiftUI calls this method for each instance of [`GroupBox`](../groupbox.md) created within a view hierarchy where this style is the current group box style.
 
 ## Parameters
 
@@ -30,9 +31,10 @@ SwiftUI calls this method for each instance of [`GroupBox`](groupbox.md) created
 
 ## See Also
 
-- [GroupBoxStyle.Configuration](groupboxstyle/configuration.md)
+### Creating custom group box styles
+- [GroupBoxStyle.Configuration](./configuration.md)
   The properties of a group box instance.
-- [associatedtype Body : View](groupboxstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the body of a group box.
 
 

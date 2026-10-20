@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a given object from the set.
 
@@ -20,9 +21,13 @@ Removes a given object from the set.
 func remove(_ object: Any)
 ```
 
+```objc
+- (void) removeObject:(ObjectType) object;
+```
+
 #### Discussion
 
-If `object` is present in the set, decrements the count associated with it. If the count is decremented to `0`, `object` is removed from the set. [`remove(_:)`](nscountedset/remove(_:).md) does nothing if `object` is not present in the set.
+If `object` is present in the set, decrements the count associated with it. If the count is decremented to `0`, `object` is removed from the set. [`remove(_:)`](./remove%28_%29.md) does nothing if `object` is not present in the set.
 
 ## Parameters
 
@@ -30,9 +35,11 @@ If `object` is present in the set, decrements the count associated with it. If t
 
 ## See Also
 
-- [func count(for: Any) -> Int](nscountedset/count(for:).md)
+### Related Documentation
+- [func count(for: Any) -> Int](./count%28for%29.md)
   Returns the count associated with a given object in the set.
-- [func add(Any)](nscountedset/add(_:).md)
+### Adding and Removing Entries
+- [func add(Any)](./add%28_%29.md)
   Adds a given object to the set.
 
 

@@ -1,16 +1,17 @@
 # UIPageViewController.SpineLocation.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No spine.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,17 +19,22 @@ No spine.
 case none
 ```
 
+```c
+UIPageViewControllerSpineLocationNone
+```
+
 #### Discussion
 
-This spine location is not valid if the transition style is [`UIPageViewController.TransitionStyle.pageCurl`](uipageviewcontroller/transitionstyle-swift.enum/pagecurl.md).
+This spine location is not valid if the transition style is [`UIPageViewController.TransitionStyle.pageCurl`](../transitionstyle-swift.enum/pagecurl.md).
 
 ## See Also
 
-- [UIPageViewController.SpineLocation.min](uipageviewcontroller/spinelocation-swift.enum/min.md)
+### Constants
+- [UIPageViewController.SpineLocation.min](./min.md)
   Spine at the left or top edge of the screen.
-- [UIPageViewController.SpineLocation.mid](uipageviewcontroller/spinelocation-swift.enum/mid.md)
+- [UIPageViewController.SpineLocation.mid](./mid.md)
   Spine in the middle or the screen.
-- [UIPageViewController.SpineLocation.max](uipageviewcontroller/spinelocation-swift.enum/max.md)
+- [UIPageViewController.SpineLocation.max](./max.md)
   Spine at the right or bottom edge of the screen.
 
 

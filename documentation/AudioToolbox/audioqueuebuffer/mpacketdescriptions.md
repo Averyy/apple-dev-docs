@@ -1,22 +1,27 @@
 # mPacketDescriptions
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of `AudioStreamPacketDescription` structures for the buffer.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var mPacketDescriptions: UnsafeMutablePointer<AudioStreamPacketDescription>? { get }
+```
+
+```c
+AudioStreamPacketDescription * const mPacketDescriptions;
 ```
 
 

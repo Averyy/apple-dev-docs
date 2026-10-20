@@ -1,7 +1,8 @@
 # setCategory(_:mode:policy:options:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the session category, mode, route-sharing policy, and options.
 
@@ -19,26 +20,31 @@ Sets the session category, mode, route-sharing policy, and options.
 func setCategory(_ category: AVAudioSession.Category, mode: AVAudioSession.Mode, policy: AVAudioSession.RouteSharingPolicy, options: AVAudioSession.CategoryOptions = []) throws
 ```
 
+```objc
+- (BOOL) setCategory:(AVAudioSessionCategory) category mode:(AVAudioSessionMode) mode routeSharingPolicy:(AVAudioSessionRouteSharingPolicy) policy options:(AVAudioSessionCategoryOptions) options error:(NSError **) outError;
+```
+
 #### Discussion
 
-You specify options only with a default routing policy. With a long-form route-sharing policy, you can use the [`playback`](avaudiosession/category-swift.struct/playback.md) category and the [`default`](avaudiosession/mode-swift.struct/default.md), [`moviePlayback`](avaudiosession/mode-swift.struct/movieplayback.md), and [`spokenAudio`](avaudiosession/mode-swift.struct/spokenaudio.md) modes.
+You specify options only with a default routing policy. With a long-form route-sharing policy, you can use the [`playback`](./category-swift.struct/playback.md) category and the [`default`](./mode-swift.struct/default.md), [`moviePlayback`](./mode-swift.struct/movieplayback.md), and [`spokenAudio`](./mode-swift.struct/spokenaudio.md) modes.
 
 ## Parameters
 
-- `category`: The category to apply to the audio session. See [`AVAudioSession.Category`](avaudiosession/category-swift.struct.md) for supported category values.
-- `mode`: The audio session mode to apply to the audio session. For a list of values, see [`AVAudioSession.Mode`](avaudiosession/mode-swift.struct.md).
-- `policy`: The route-sharing policy to apply to the audio session. For a list of values, see [`AVAudioSession.RouteSharingPolicy`](avaudiosession/routesharingpolicy-swift.enum.md).
-- `options`: A mask of additional options for handling audio. For a list of constants, see [`AVAudioSession.CategoryOptions`](avaudiosession/categoryoptions-swift.struct.md).
+- `category`: The category to apply to the audio session. See [`AVAudioSession.Category`](./category-swift.struct.md) for supported category values.
+- `mode`: The audio session mode to apply to the audio session. For a list of values, see [`AVAudioSession.Mode`](./mode-swift.struct.md).
+- `policy`: The route-sharing policy to apply to the audio session. For a list of values, see [`AVAudioSession.RouteSharingPolicy`](./routesharingpolicy-swift.enum.md).
+- `options`: A mask of additional options for handling audio. For a list of constants, see [`AVAudioSession.CategoryOptions`](./categoryoptions-swift.struct.md).
 
 ## See Also
 
-- [func setCategory(AVAudioSession.Category, mode: AVAudioSession.Mode, options: AVAudioSession.CategoryOptions) throws](avaudiosession/setcategory(_:mode:options:).md)
+### Configuring standard audio behaviors
+- [func setCategory(AVAudioSession.Category, mode: AVAudioSession.Mode, options: AVAudioSession.CategoryOptions) throws](./setcategory%28_,mode,options%29.md)
   Sets the audio session’s category, mode, and options.
-- [func setCategory(AVAudioSession.Category, options: AVAudioSession.CategoryOptions) throws](avaudiosession/setcategory(_:options:).md)
+- [func setCategory(AVAudioSession.Category, options: AVAudioSession.CategoryOptions) throws](./setcategory%28_,options%29.md)
   Sets the audio session’s category with the specified options.
-- [func setCategory(AVAudioSession.Category) throws](avaudiosession/setcategory(_:).md)
+- [func setCategory(AVAudioSession.Category) throws](./setcategory%28_%29.md)
   Sets the audio session’s category.
-- [func setMode(AVAudioSession.Mode) throws](avaudiosession/setmode(_:).md)
+- [func setMode(AVAudioSession.Mode) throws](./setmode%28_%29.md)
   Sets the audio session’s mode.
 
 

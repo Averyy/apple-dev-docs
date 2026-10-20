@@ -1,7 +1,8 @@
 # GaussianSplatComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that renders 3D Gaussian splat data.
 
@@ -30,7 +31,7 @@ Gaussian splats require a device with Apple7 GPU family support.
 
 #### Providing Splat Data
 
-You supply splat data to the component through a [`GaussianSplatResource`](gaussiansplatresource.md). Initially, the only supported resource type is a [`GaussianSplatResource.BufferResource`](gaussiansplatresource/bufferresource-swift.struct.md). A buffer resource describes per-splat properties stored in one or more `LowLevelBuffer` instances. A [`GaussianSplatResource.BufferDescriptor`](gaussiansplatresource/bufferdescriptor.md) specifies the low-level buffer, data format, byte offset, and stride for each property.
+You supply splat data to the component through a [`GaussianSplatResource`](./gaussiansplatresource.md). Initially, the only supported resource type is a [`GaussianSplatResource.BufferResource`](./gaussiansplatresource/bufferresource-swift.struct.md). A buffer resource describes per-splat properties stored in one or more `LowLevelBuffer` instances. A [`GaussianSplatResource.BufferDescriptor`](./gaussiansplatresource/bufferdescriptor.md) specifies the low-level buffer, data format, byte offset, and stride for each property.
 
 A single splat requires the following properties:
 
@@ -98,7 +99,7 @@ If the entity also contains a `GroundingShadowComponent`, the framework generate
 
 #### Performance Considerations
 
-Rendering cost correlates with splat count and overdraw. The framework enforces an internal limit on the total number of splats, and the [`GaussianSplatResource.BufferResource`](gaussiansplatresource/bufferresource-swift.struct.md) initializer throws if you exceed it. To reduce cost, you can:
+Rendering cost correlates with splat count and overdraw. The framework enforces an internal limit on the total number of splats, and the [`GaussianSplatResource.BufferResource`](./gaussiansplatresource/bufferresource-swift.struct.md) initializer throws if you exceed it. To reduce cost, you can:
 
 - Reduce splat count through pruning during the training pipeline.
 - Minimize overdraw by culling low-opacity splats before you provide data to the component.
@@ -106,16 +107,16 @@ Rendering cost correlates with splat count and overdraw. The framework enforces 
 ## Topics
 
 ### Initializers
-- [init(GaussianSplatResource)](gaussiansplatcomponent/init(_:).md)
+- [init(GaussianSplatResource)](./gaussiansplatcomponent/init%28_%29.md)
   Creates a component that displays a Gaussian splat resource.
 ### Instance Properties
-- [var splatResource: GaussianSplatResource](gaussiansplatcomponent/splatresource.md)
+- [var splatResource: GaussianSplatResource](./gaussiansplatcomponent/splatresource.md)
   The splat data and rendering options the component displays.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # IOMallocPageable
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Allocates pageable memory in the kernel map.
 
@@ -10,11 +11,11 @@ Allocates pageable memory in the kernel map.
 
 ## Declaration
 
-```swift
+```c
 void * IOMallocPageable(vm_size_t size, vm_size_t alignment);
 ```
 
-#### Return_value
+#### Return Value
 
 Pointer to the allocated memory, or zero on failure.
 
@@ -29,12 +30,13 @@ This is a utility to allocate pageable memory in the kernel. This function may b
 
 ## See Also
 
-- [IOMalloc](1575326-iomalloc.md)
+### Allocation
+- [IOMalloc](./api-1575326-iomalloc.md)
   Allocates general purpose, wired memory in the kernel map.
-- [IOMallocAligned](1575291-iomallocaligned.md)
+- [IOMallocAligned](./api-1575291-iomallocaligned.md)
   Allocates wired memory in the kernel map, with an alignment restriction.
-- [IOMallocZero](3074962-iomalloczero.md)
-- [IORangeAllocator](iorangeallocator.md)
+- [IOMallocZero](./api-3074962-iomalloczero.md)
+- [IORangeAllocator](./iorangeallocator.md)
   A utility class to manage allocations from a range.
 
 

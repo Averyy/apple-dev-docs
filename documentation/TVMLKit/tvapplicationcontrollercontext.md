@@ -1,12 +1,15 @@
 # TVApplicationControllerContext
 
 **Framework**: TVMLKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Launch information provided to the TV application controller.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,36 +17,41 @@ Launch information provided to the TV application controller.
 class TVApplicationControllerContext
 ```
 
+```objc
+@interface TVApplicationControllerContext : NSObject
+```
+
 ## Topics
 
 ### Providing Launch Information
-- [var javaScriptApplicationURL: URL](tvapplicationcontrollercontext/javascriptapplicationurl.md)
+- [var javaScriptApplicationURL: URL](./tvapplicationcontrollercontext/javascriptapplicationurl.md)
   URL pointing to the controlling JavaScript file for the application.
-- [var launchOptions: [String : Any]](tvapplicationcontrollercontext/launchoptions.md)
+- [var launchOptions: [String : Any]](./tvapplicationcontrollercontext/launchoptions.md)
   Data passed to the JavaScript launch callback method.
-- [var storageIdentifier: String?](tvapplicationcontrollercontext/storageidentifier.md)
+- [var storageIdentifier: String?](./tvapplicationcontrollercontext/storageidentifier.md)
   Optional identifier for a local storage file.
-- [var supportsPictureInPicturePlayback: Bool](tvapplicationcontrollercontext/supportspictureinpictureplayback.md)
+- [var supportsPictureInPicturePlayback: Bool](./tvapplicationcontrollercontext/supportspictureinpictureplayback.md)
   A Boolean value that indicates whether your app can display content in a picture-in-picture format.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Implementing a Hybrid TV App with TVMLKit](implementing-a-hybrid-tv-app-with-tvmlkit.md)
+### JavaScript Environment
+- [Implementing a Hybrid TV App with TVMLKit](./implementing-a-hybrid-tv-app-with-tvmlkit.md)
   Display content options with document view controllers and fetch and populate content with TVMLKit JS.
-- [class TVApplicationController](tvapplicationcontroller.md)
+- [class TVApplicationController](./tvapplicationcontroller.md)
   An object that bridges the UI, navigation stack, storage, and event handling from JavaScript.
 
 

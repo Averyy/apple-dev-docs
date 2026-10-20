@@ -6,39 +6,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.co
 
 # mlx.core.concatenate
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.concatenate.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.concatenate
-
- Table of contents 
-
-## Contents
-
-# mlx.core.concatenate
-
-**concatenate(*arrays: list[array]*, *axis: int | None = 0*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**concatenate(*arrays: list[array]*, *axis: int | None = 0*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Concatenate the arrays along the given axis.
 
 Parameters:
 
-**arrays** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[array](mlx.core.array.html#mlx.core.array)*)*) – Input [list](https://docs.python.org/3/builtins/stdtypes.html#list) or [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple) of arrays.
+**arrays** ([list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[array](mlx.core.array.md#mlx.core.array)*)*) – Input [list](https://docs.python.org/3/builtins/stdtypes.html#list) or [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple) of arrays.
 **axis** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Optional axis to concatenate along. If
 unspecified defaults to `0`.
 
@@ -46,6 +19,4 @@ Returns:
 The concatenated array.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

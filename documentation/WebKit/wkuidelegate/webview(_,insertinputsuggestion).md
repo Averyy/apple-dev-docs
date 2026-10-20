@@ -1,7 +1,8 @@
 # webView(_:insertInputSuggestion:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -11,6 +12,10 @@
 
 ```swift
 optional func webView(_ webView: WKWebView, insertInputSuggestion inputSuggestion: UIInputSuggestion)
+```
+
+```objc
+- (void) webView:(WKWebView *) webView insertInputSuggestion:(UIInputSuggestion *) inputSuggestion;
 ```
 
 #### Discussion

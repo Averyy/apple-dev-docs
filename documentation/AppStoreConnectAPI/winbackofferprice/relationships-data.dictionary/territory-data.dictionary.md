@@ -1,7 +1,8 @@
 # WinBackOfferPrice.Relationships.Territory
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object WinBackOfferPrice.Relationships.Territory
 ```
 
 ## Topics
 
 ### Objects
-- [object WinBackOfferPrice.Relationships.Territory.Data](winbackofferprice/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary.md)
+- [object WinBackOfferPrice.Relationships.Territory.Data](./territory-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties
@@ -26,7 +27,8 @@ object WinBackOfferPrice.Relationships.Territory
 
 ## See Also
 
-- [object WinBackOfferPrice.Relationships.SubscriptionPricePoint](winbackofferprice/relationships-data.dictionary/subscriptionpricepoint-data.dictionary.md)
+### Objects
+- [object WinBackOfferPrice.Relationships.SubscriptionPricePoint](./subscriptionpricepoint-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 

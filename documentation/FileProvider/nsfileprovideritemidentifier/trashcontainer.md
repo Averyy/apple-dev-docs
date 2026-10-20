@@ -1,7 +1,8 @@
 # trashContainer
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The persistent identifier for the parent of all trashed items.
 
@@ -18,15 +19,20 @@ The persistent identifier for the parent of all trashed items.
 static let trashContainer: NSFileProviderItemIdentifier
 ```
 
+```c
+extern NSFileProviderItemIdentifier const NSFileProviderTrashContainerItemIdentifier;
+```
+
 #### Discussion
 
-When the user moves an item to the trash, the system sets its [`parentItemIdentifier`](nsfileprovideritemprotocol/parentitemidentifier.md) to [`trashContainer`](nsfileprovideritemidentifier/trashcontainer.md). Your extension must enumerate all trashed items on request.
+When the user moves an item to the trash, the system sets its [`parentItemIdentifier`](../nsfileprovideritemprotocol/parentitemidentifier.md) to [`trashContainer`](./trashcontainer.md). Your extension must enumerate all trashed items on request.
 
 ## See Also
 
-- [static let rootContainer: NSFileProviderItemIdentifier](nsfileprovideritemidentifier/rootcontainer.md)
+### Constants
+- [static let rootContainer: NSFileProviderItemIdentifier](./rootcontainer.md)
   The persistent identifier for the root directory of the file provider’s shared file hierarchy.
-- [static let workingSet: NSFileProviderItemIdentifier](nsfileprovideritemidentifier/workingset.md)
+- [static let workingSet: NSFileProviderItemIdentifier](./workingset.md)
   The persistent identifier representing the working set of documents and directories.
 
 

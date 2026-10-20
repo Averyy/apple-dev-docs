@@ -1,7 +1,8 @@
 # silenceSecondaryAudioHintNotification
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when the primary audio from other apps starts and stops.
 
@@ -19,11 +20,15 @@ A notification the system posts when the primary audio from other apps starts an
 class let silenceSecondaryAudioHintNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVAudioSessionSilenceSecondaryAudioHintNotification;
+```
+
 #### Discussion
 
 Subscribe to this notification to ensure that the system notifies your app when optional secondary audio muting should begin or end. The system sends this notification only to registered listeners who are currently in the foreground and have an active audio session.
 
-This notification’s [`userInfo`](https://developer.apple.com/documentation/foundation/nsnotification/userinfo) dictionary contains a [`AVAudioSession.SilenceSecondaryAudioHintType`](avaudiosession/silencesecondaryaudiohinttype.md) value for the [`AVAudioSessionSilenceSecondaryAudioHintTypeKey`](avaudiosessionsilencesecondaryaudiohinttypekey.md). Use the audio hint type to determine if your secondary audio muting should begin or end.
+This notification’s [`userInfo`](../../Foundation/nsnotification/userinfo.md) dictionary contains a [`AVAudioSession.SilenceSecondaryAudioHintType`](./silencesecondaryaudiohinttype.md) value for the [`AVAudioSessionSilenceSecondaryAudioHintTypeKey`](../avaudiosessionsilencesecondaryaudiohinttypekey.md). Use the audio hint type to determine if your secondary audio muting should begin or end.
 
 ```swift
 func handleSecondaryAudio(notification: Notification) {
@@ -47,21 +52,22 @@ The system posts this notification on the main thread.
 ## Topics
 
 ### User info keys
-- [let AVAudioSessionSilenceSecondaryAudioHintTypeKey: String](avaudiosessionsilencesecondaryaudiohinttypekey.md)
+- [let AVAudioSessionSilenceSecondaryAudioHintTypeKey: String](../avaudiosessionsilencesecondaryaudiohinttypekey.md)
   A user info key that you use to retrieve the silence secondary audio hint type.
 ### User info values
-- [AVAudioSession.SilenceSecondaryAudioHintType](avaudiosession/silencesecondaryaudiohinttype.md)
+- [AVAudioSession.SilenceSecondaryAudioHintType](./silencesecondaryaudiohinttype.md)
   Constants that indicate whether optional secondary audio muting should begin or end.
 
 ## See Also
 
-- [var isOtherAudioPlaying: Bool](avaudiosession/isotheraudioplaying.md)
+### Mixing with other audio
+- [var isOtherAudioPlaying: Bool](./isotheraudioplaying.md)
   A Boolean value that indicates whether another app is playing audio.
-- [var secondaryAudioShouldBeSilencedHint: Bool](avaudiosession/secondaryaudioshouldbesilencedhint.md)
+- [var secondaryAudioShouldBeSilencedHint: Bool](./secondaryaudioshouldbesilencedhint.md)
   A Boolean value that indicates whether another app, with a nonmixable audio session, is playing audio.
-- [var allowHapticsAndSystemSoundsDuringRecording: Bool](avaudiosession/allowhapticsandsystemsoundsduringrecording.md)
+- [var allowHapticsAndSystemSoundsDuringRecording: Bool](./allowhapticsandsystemsoundsduringrecording.md)
   A Boolean value that indicates whether system sounds and haptics play while recording from audio input.
-- [func setAllowHapticsAndSystemSoundsDuringRecording(Bool) throws](avaudiosession/setallowhapticsandsystemsoundsduringrecording(_:).md)
+- [func setAllowHapticsAndSystemSoundsDuringRecording(Bool) throws](./setallowhapticsandsystemsoundsduringrecording%28_%29.md)
   Sets a Boolean value that indicates whether system sounds and haptics play while recording from audio input.
 
 

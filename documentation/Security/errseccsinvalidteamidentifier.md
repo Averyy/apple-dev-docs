@@ -1,7 +1,8 @@
 # errSecCSInvalidTeamIdentifier
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Team Identifier string is invalid.
 
@@ -13,6 +14,10 @@ A Team Identifier string is invalid.
 
 ```swift
 var errSecCSInvalidTeamIdentifier: OSStatus { get }
+```
+
+```c
+errSecCSInvalidTeamIdentifier
 ```
 
 

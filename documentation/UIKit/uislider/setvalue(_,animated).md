@@ -1,7 +1,8 @@
 # setValue(_:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the slider’s current value, allowing you to animate the change visually.
 
@@ -17,18 +18,23 @@ Sets the slider’s current value, allowing you to animate the change visually.
 func setValue(_ value: Float, animated: Bool)
 ```
 
+```objc
+- (void) setValue:(float) value animated:(BOOL) animated;
+```
+
 #### Discussion
 
-If you specify a value that is beyond the minimum or maximum values, the slider limits the value to the minimum or maximum. For example, if the minimum value is 0.0 and you specify -1.0, the slider sets the [`value`](uislider/value.md) property to 0.0.
+If you specify a value that is beyond the minimum or maximum values, the slider limits the value to the minimum or maximum. For example, if the minimum value is 0.0 and you specify -1.0, the slider sets the [`value`](./value.md) property to 0.0.
 
 ## Parameters
 
-- `value`: The new value to assign to the [`value`](uislider/value.md) property
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to animate the change in value; otherwise, specify [`false`](https://developer.apple.com/documentation/swift/false) to update the slider’s appearance immediately. Animations are performed asynchronously and do not block the calling thread.
+- `value`: The new value to assign to the [`value`](./value.md) property
+- `animated`: Specify [`true`](../../Swift/true.md) to animate the change in value; otherwise, specify [`false`](../../Swift/false.md) to update the slider’s appearance immediately. Animations are performed asynchronously and do not block the calling thread.
 
 ## See Also
 
-- [var value: Float](uislider/value.md)
+### Accessing the slider’s value
+- [var value: Float](./value.md)
   The slider’s current value.
 
 

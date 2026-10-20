@@ -1,7 +1,8 @@
 # MEError
 
 **Framework**: MediaExtension  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A MediaExtension framework error.
 
@@ -16,72 +17,73 @@ struct MEError
 
 #### Overview
 
-If a [`MediaExtension`](MediaExtension.md) method fails, the [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object contains an [`MEError`](meerror-swift.struct.md) instance that provides specific information about the failure.
+If a [MediaExtension](./MediaExtension.md) method fails, the [`NSError`](../Foundation/nserror.md) object contains an [`MEError`](./meerror-swift.struct.md) instance that provides specific information about the failure.
 
 ## Topics
 
 ### Identifying the error domain and codes
-- [static var allocationFailure: MEError.Code](meerror-swift.struct/allocationfailure.md)
+- [static var allocationFailure: MEError.Code](./meerror-swift.struct/allocationfailure.md)
   An error code that indicates the extension can’t allocate memory.
-- [static var endOfStream: MEError.Code](meerror-swift.struct/endofstream.md)
+- [static var endOfStream: MEError.Code](./meerror-swift.struct/endofstream.md)
   An error code that indicates the extension reached the end of the source file.
-- [static var internalFailure: MEError.Code](meerror-swift.struct/internalfailure.md)
+- [static var internalFailure: MEError.Code](./meerror-swift.struct/internalfailure.md)
   An error code that indicates the extension encountered an internal operation failure, such as code loading.
-- [static var invalidParameter: MEError.Code](meerror-swift.struct/invalidparameter.md)
+- [static var invalidParameter: MEError.Code](./meerror-swift.struct/invalidparameter.md)
   An error code that indicates the extension received an invalid parameter.
-- [static var locationNotAvailable: MEError.Code](meerror-swift.struct/locationnotavailable.md)
+- [static var locationNotAvailable: MEError.Code](./meerror-swift.struct/locationnotavailable.md)
   An error code that indicates a specific sample isn’t contiguous, spans more than one file, or is for some other reason unsuitable to read directly from a file.
-- [static var noSamples: MEError.Code](meerror-swift.struct/nosamples.md)
+- [static var noSamples: MEError.Code](./meerror-swift.struct/nosamples.md)
   An error code that indicates there are no samples in the track or a request to load a sample buffer fails.
-- [static var noSuchEdit: MEError.Code](meerror-swift.struct/nosuchedit.md)
+- [static var noSuchEdit: MEError.Code](./meerror-swift.struct/nosuchedit.md)
   An error code that indicates the plug-in track reader received a request to return an edit that’s out of range.
-- [static var parsingFailure: MEError.Code](meerror-swift.struct/parsingfailure.md)
+- [static var parsingFailure: MEError.Code](./meerror-swift.struct/parsingfailure.md)
   An error code that indicates the extension encountered an error while parsing the media.
-- [static var permissionDenied: MEError.Code](meerror-swift.struct/permissiondenied.md)
+- [static var permissionDenied: MEError.Code](./meerror-swift.struct/permissiondenied.md)
   An error code that indicates the extension received a request to perform an invalid operation on a byte source.
-- [static var propertyNotSupported: MEError.Code](meerror-swift.struct/propertynotsupported.md)
+- [static var propertyNotSupported: MEError.Code](./meerror-swift.struct/propertynotsupported.md)
   An error code that indicates the extension encountered a property it doesn’t support reading and writing to.
-- [static var referenceMissing: MEError.Code](meerror-swift.struct/referencemissing.md)
+- [static var referenceMissing: MEError.Code](./meerror-swift.struct/referencemissing.md)
   An error code that indicates the decoder received a request to decode a sample without decoding the required reference frame dependencies first.
-- [static var unsupportedFeature: MEError.Code](meerror-swift.struct/unsupportedfeature.md)
+- [static var unsupportedFeature: MEError.Code](./meerror-swift.struct/unsupportedfeature.md)
   An error code that indicates the extension doesn’t support an aspect of the media.
 ### Inspecting an error
-- [var code: Int](../foundation/nserror/code.md)
+- [var code: Int](../Foundation/nserror/code.md)
   The error code.
-- [var errorCode: Int](../foundation/customnserror/errorcode.md)
+- [var errorCode: Int](../Foundation/customnserror/errorcode.md)
   The error code within the given domain.
-- [var errorUserInfo: [String : Any]](../foundation/customnserror/erroruserinfo.md)
+- [var errorUserInfo: [String : Any]](../Foundation/customnserror/erroruserinfo.md)
   The user-info dictionary.
-- [var hashValue: Int](../swift/hashable/hashvalue.md)
+- [var hashValue: Int](../Swift/hashable/hashvalue.md)
   The hash value.
-- [var userInfo: [String : Any]](../foundation/nserror/userinfo.md)
+- [var userInfo: [String : Any]](../Foundation/nserror/userinfo.md)
   The user info dictionary.
-- [static func == (borrowing Self, borrowing Self) -> Bool](../swift/equatable/==(_:_:).md)
+- [static func == (borrowing Self, borrowing Self) -> Bool](../Swift/equatable/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (borrowing Self, borrowing Self) -> Bool](../swift/equatable/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](../Swift/equatable/noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [func hash(into: inout Hasher)](../swift/hashable/hash(into:).md)
+- [func hash(into: inout Hasher)](../Swift/hashable/hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
-- [MEError.Code](meerror-swift.struct/code.md)
+- [MEError.Code](./meerror-swift.struct/code.md)
   An enumeration that models media extension error codes.
 ### Type Properties
-- [static var errorDomain: String](meerror-swift.struct/errordomain.md)
+- [static var errorDomain: String](./meerror-swift.struct/errordomain.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let MediaExtensionErrorDomain: String](mediaextensionerrordomain.md)
+### Errors
+- [let MediaExtensionErrorDomain: String](./mediaextensionerrordomain.md)
   The domain of the error.
-- [MEError.Code](meerror-swift.struct/code.md)
+- [MEError.Code](./meerror-swift.struct/code.md)
   An enumeration that models media extension error codes.
 
 

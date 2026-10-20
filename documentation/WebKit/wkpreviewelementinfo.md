@@ -1,15 +1,16 @@
 # WKPreviewElementInfo
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The `WKPreviewElement` object contains information for previewing a webpage.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 10.0+ - Deprecated in 13.0 (renamed: WKContextMenuElementInfo)
+- iPadOS 10.0+ - Deprecated in 13.0 (renamed: WKContextMenuElementInfo)
+- Mac Catalyst 13.1+ - Deprecated in 13.1 (renamed: WKContextMenuElementInfo)
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: WKContextMenuElementInfo)
 
 ## Declaration
 
@@ -17,28 +18,33 @@ The `WKPreviewElement` object contains information for previewing a webpage.
 class WKPreviewElementInfo
 ```
 
+```objc
+@interface WKPreviewElementInfo : NSObject
+```
+
 ## Topics
 
 ### Accessing the Preview Link
-- [var linkURL: URL?](wkpreviewelementinfo/linkurl.md)
+- [var linkURL: URL?](./wkpreviewelementinfo/linkurl.md)
   The link for the webpage to be previewed.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol WKPreviewActionItem](wkpreviewactionitem.md)
+### Preview
+- [protocol WKPreviewActionItem](./wkpreviewactionitem.md)
   The `WKPreviewActionItem` protocol provides access to the properties of a Preview action item.
 
 

@@ -1,7 +1,8 @@
 # rows
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entire slice as a collection of rows.
 
@@ -22,11 +23,12 @@ var rows: DataFrame.Rows { get set }
 
 ## See Also
 
-- [var shape: (rows: Int, columns: Int)](dataframe/slice/shape.md)
+### Inspecting a Slice
+- [var shape: (rows: Int, columns: Int)](./shape.md)
   The number of rows and columns in the slice.
-- [var columns: [AnyColumnSlice]](dataframe/slice/columns.md)
+- [var columns: [AnyColumnSlice]](./columns.md)
   The entire slice as a collection of columns.
-- [var base: DataFrame](dataframe/slice/base.md)
+- [var base: DataFrame](./base.md)
   The underlying data frame.
 
 

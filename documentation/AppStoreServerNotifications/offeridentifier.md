@@ -1,7 +1,8 @@
 # offerIdentifier
 
 **Framework**: App Store Server Notifications  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The string identifier of an offer that you create in App Store Connect.
 
@@ -10,25 +11,26 @@ The string identifier of an offer that you create in App Store Connect.
 
 ## Declaration
 
-```swift
+```
 string offerIdentifier
 ```
 
 #### Discussion
 
-The `offerIdentifier` is a string that you provide in App Store Connect when you set up an offer. All offer types ([`offerType`](offertype.md)) have offer identifiers, except for introductory offers.
+The `offerIdentifier` is a string that you provide in App Store Connect when you set up an offer. All offer types ([`offerType`](./offertype.md)) have offer identifiers, except for introductory offers.
 
-For more information on offer codes, see [`Supporting offer codes in your app`](https://developer.apple.com/documentation/storekit/supporting-offer-codes-in-your-app). For more information on promotional offers, see [`Set up promotional offers for auto-renewable subscriptions`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev16dfca448).
+For more information on offer codes, see [Supporting offer codes in your app](../StoreKit/supporting-offer-codes-in-your-app.md). For more information on promotional offers, see [Set up promotional offers for auto-renewable subscriptions](https://help.apple.com/app-store-connect/#/dev16dfca448).
 
 ## See Also
 
-- [type eligibleWinBackOfferIds](eligiblewinbackofferids.md)
+### Offers
+- [type eligibleWinBackOfferIds](./eligiblewinbackofferids.md)
   An array of win-back offer identifiers that a customer is eligible to redeem, which sorts the identifiers to present the better offers first.
-- [type offerPeriod](offerperiod.md)
+- [type offerPeriod](./offerperiod.md)
   The duration of the offer.
-- [type offerType](offertype.md)
+- [type offerType](./offertype.md)
   The type of offer.
-- [type offerDiscountType](offerdiscounttype.md)
+- [type offerDiscountType](./offerdiscounttype.md)
   The payment mode for a discount offer on an In-App Purchase.
 
 

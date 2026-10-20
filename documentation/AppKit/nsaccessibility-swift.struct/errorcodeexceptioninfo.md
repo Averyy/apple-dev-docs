@@ -1,12 +1,13 @@
 # ErrorCodeExceptionInfo
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An integer error code for debugging.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ An integer error code for debugging.
 static let ErrorCodeExceptionInfo: String
 ```
 
+```c
+extern NSString * const NSAccessibilityErrorCodeExceptionInfo;
+```
+
 #### Discussion
 
-This key will appear in an exception’s dictionary. Its value will be an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+This key will appear in an exception’s dictionary. Its value will be an [`NSNumber`](../../Foundation/nsnumber.md).
 
 
 ---

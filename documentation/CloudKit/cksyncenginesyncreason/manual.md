@@ -1,7 +1,8 @@
 # CKSyncEngineSyncReason.manual
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A manual sync operation.
 
@@ -20,13 +21,18 @@ A manual sync operation.
 case manual
 ```
 
+```c
+CKSyncEngineSyncReasonManual
+```
+
 #### Discussion
 
-The sync engine uses this reason only when your app invokes the [`fetchChangesWithCompletionHandler:`](cksyncengine-4b4w9/fetchchangeswithcompletionhandler:.md) and [`sendChangesWithCompletionHandler:`](cksyncengine-4b4w9/sendchangeswithcompletionhandler:.md) methods and their variants.
+The sync engine uses this reason only when your app invokes the [`fetchChangesWithCompletionHandler:`](../cksyncengine-4b4w9/fetchchangeswithcompletionhandler_.md) and [`sendChangesWithCompletionHandler:`](../cksyncengine-4b4w9/sendchangeswithcompletionhandler_.md) methods and their variants.
 
 ## See Also
 
-- [CKSyncEngineSyncReason.scheduled](cksyncenginesyncreason/scheduled.md)
+### Sync reasons
+- [CKSyncEngineSyncReason.scheduled](./scheduled.md)
   The sync engine automatically scheduled this sync.
 
 

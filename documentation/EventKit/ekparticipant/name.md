@@ -1,7 +1,8 @@
 # name
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The participant’s name.
 
@@ -19,19 +20,24 @@ The participant’s name.
 var name: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * name;
+```
+
 ## See Also
 
-- [var isCurrentUser: Bool](ekparticipant/iscurrentuser.md)
+### Accessing Participant Properties
+- [var isCurrentUser: Bool](./iscurrentuser.md)
   A Boolean value indicating whether this participant represents the owner of this account.
-- [var participantRole: EKParticipantRole](ekparticipant/participantrole.md)
+- [var participantRole: EKParticipantRole](./participantrole.md)
   The participant’s role in the event.
-- [var participantStatus: EKParticipantStatus](ekparticipant/participantstatus.md)
+- [var participantStatus: EKParticipantStatus](./participantstatus.md)
   The participant’s attendance status.
-- [var participantType: EKParticipantType](ekparticipant/participanttype.md)
+- [var participantType: EKParticipantType](./participanttype.md)
   The participant’s type.
-- [var url: URL](ekparticipant/url.md)
+- [var url: URL](./url.md)
   The URL representing this participant.
-- [var contactPredicate: NSPredicate](ekparticipant/contactpredicate.md)
+- [var contactPredicate: NSPredicate](./contactpredicate.md)
   A predicate to use with the Contacts framework to retrieve the corresponding contact instance.
 
 

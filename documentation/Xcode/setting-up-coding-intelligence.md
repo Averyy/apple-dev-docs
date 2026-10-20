@@ -1,6 +1,7 @@
 # Setting up coding intelligence
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Enable intelligence tools that you want to use in Xcode.
 
@@ -8,15 +9,15 @@ Enable intelligence tools that you want to use in Xcode.
 
 To use coding intelligence in Xcode, go to the Intelligence settings and turn on the agent and chat products that you want to use. Choose Xcode > Settings and select Intelligence in the sidebar. Where available, you can turn on Claude or ChatGPT in Xcode. You can also use coding tools from other providers.
 
-![A screenshot of the Intelligence settings showing the About Intelligence in Xcode and Privacy link, and the Agents, Model Context Protocol, and Chat setting sections.](/images/com.apple.Xcode/intelligence-settings@2x.png)
+![A screenshot of the Intelligence settings showing the About Intelligence in Xcode and Privacy link, and the Agents, Model Context Protocol, and Chat setting sections.](https://developer.apple.com/tutorials/images/com.apple.Xcode/intelligence-settings@2x.png)
 
 After you enable an agent or chat provider in the Intelligence settings, you can enter prompts in the coding assistant. When you enter prompts, the agent or model that you set up in the Intelligence settings may access your project files and other information when processing your requests. For more information about sharing your project files with agents and models, click “About Intelligence in Xcode & Privacy…” in the Intelligence settings.
 
-Help agents reach your goals faster with additional guidance and tools that you and Xcode provide. You control which commands, tools, and skills agents use to perform tasks on your behalf. For more information, see [`Extending and customizing agents`](extending-and-customizing-agents.md).
+Help agents reach your goals faster with additional guidance and tools that you and Xcode provide. You control which commands, tools, and skills agents use to perform tasks on your behalf. For more information, see [Extending and customizing agents](./extending-and-customizing-agents.md).
 
-To give agents that you use outside of Xcode access to your project and Xcode capabilities, see [`Giving external agents access to Xcode`](giving-external-agents-access-to-xcode.md).
+To give agents that you use outside of Xcode access to your project and Xcode capabilities, see [Giving external agents access to Xcode](./giving-external-agents-access-to-xcode.md).
 
-#### Enable Agents
+#### Enable agents
 
 When you choose an agent in the coding assistant, it automatically has access to Xcode capabilities, such as building and testing your app. To enable an agent:
 
@@ -28,17 +29,17 @@ If you have an account, sign in:
 1. In the agent settings, click the More button (…) in the Account row.
 2. In the next sheets, and in the browser window if one appears, follow the instructions to sign in and enter your credentials.
 
-![A screenshot of the Claude Agent settings showing the Model and Account rows.](/images/com.apple.Xcode/intelligence-settings-claude-agent@2x.png)
+![A screenshot of the Claude Agent settings showing the Model and Account rows.](https://developer.apple.com/tutorials/images/com.apple.Xcode/intelligence-settings-claude-agent@2x.png)
 
 For more information about an agent, click the privacy policy and terms of use links that appear at the bottom of the agent settings.
 
 To enable an agent that doesn’t appear in Intelligence settings and supports the Agent Client Protocol (ACP), click Add an Agent under Agents, enter information in the next sheet, and click Add.
 
-![A screenshot of the Add an ACP Agent sheet with the agent settings and Add button below.](/images/com.apple.Xcode/intelligence-settings-add-agent@2x.png)
+![A screenshot of the Add an ACP Agent sheet with the agent settings and Add button below.](https://developer.apple.com/tutorials/images/com.apple.Xcode/intelligence-settings-add-agent@2x.png)
 
-After you download agents, Xcode automatically updates the downloads if possible. To manage agent downloads, see [`Downloading and installing additional Xcode components`](downloading-and-installing-additional-xcode-components.md).
+After you download agents, Xcode automatically updates the downloads if possible. To manage agent downloads, see [Downloading and installing additional Xcode components](./downloading-and-installing-additional-xcode-components.md).
 
-#### Enable Chatgpt in Xcode
+#### Enable ChatGPT in Xcode
 
 To use ChatGPT in Xcode (with or without an account):
 
@@ -59,7 +60,7 @@ For more information about OpenAI products, click “OpenAI Terms of Use…” a
 
 To turn off ChatGPT in Xcode, toggle ChatGPT in Xcode off in the ChatGPT in Xcode settings.
 
-#### Enable Claude Sonnet Opus
+#### Enable Claude Sonnet & Opus
 
 To use Claude Sonnet & Opus:
 
@@ -69,7 +70,7 @@ To use Claude Sonnet & Opus:
 
 For more information about Anthropic products, click “Anthropic Terms of Use…” at the bottom of the Claude settings.
 
-#### Use Another Chat Provider
+#### Use another chat provider
 
 To use another chat provider, click the Add a Chat Provider button under Chat. To add a provider that’s hosted on the internet, select Internet Hosted, enter the URL and other details, and click Add in the dialog that appears. To add a provider that’s hosted locally on your Mac, select Locally Hosted and enter a port and optional description instead.
 
@@ -78,15 +79,16 @@ If you add another provider, it needs to support the Chat Completions API. In ad
 - `{Model provider URL}/v1/models`
 - `{Model provider URL}/v1/chat/completions`
 
-#### Configure Managed Devices
+#### Configure managed devices
 
-To turn off the coding assistant for managed devices, set the `CodingAssistantAllowExternalIntegrations` key to `false` in a mobile device management (MDM) profile. For more information, see [`Device management restrictions for Mac computers`](https://developer.apple.comhttps://support.apple.com/guide/deployment/restrictions-for-mac-depba790e53/web).
+To turn off the coding assistant for managed devices, set the `CodingAssistantAllowExternalIntegrations` key to `false` in a mobile device management (MDM) profile. For more information, see [Device management restrictions for Mac computers](https://support.apple.com/guide/deployment/restrictions-for-mac-depba790e53/web).
 
 ## See Also
 
-- [Writing code with intelligence in Xcode](writing-code-with-intelligence-in-xcode.md)
+### Essentials
+- [Writing code with intelligence in Xcode](./writing-code-with-intelligence-in-xcode.md)
   Start conversations with an agent or model in Xcode to generate code, navigate unfamiliar codebases, and fix or refactor existing code.
-- [Using coding intelligence in the source editor](using-coding-intelligence-in-the-source-editor.md)
+- [Using coding intelligence in the source editor](./using-coding-intelligence-in-the-source-editor.md)
   Submit prompts in the same place you want to make changes to your code.
 
 

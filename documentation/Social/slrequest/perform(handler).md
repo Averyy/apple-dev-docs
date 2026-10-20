@@ -1,7 +1,8 @@
 # perform(handler:)
 
 **Framework**: Social  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs an asynchronous request and calls the specified handler when done.
 
@@ -17,13 +18,18 @@ Performs an asynchronous request and calls the specified handler when done.
 func perform(handler: SLRequestHandler!)
 ```
 
+```objc
+- (void) performRequestWithHandler:(SLRequestHandler) handler;
+```
+
 ## Parameters
 
-- `handler`: The handler to call when the request is done. The parameters for this handler are described in [`SLRequestHandler`](slrequesthandler.md). This handler is not guaranteed to be called on any particular thread and should not be nil.
+- `handler`: The handler to call when the request is done. The parameters for this handler are described in [`SLRequestHandler`](../slrequesthandler.md). This handler is not guaranteed to be called on any particular thread and should not be nil.
 
 ## See Also
 
-- [typealias SLRequestHandler](slrequesthandler.md)
+### Sending a Request
+- [typealias SLRequestHandler](../slrequesthandler.md)
   The callback handler for a request.
 
 

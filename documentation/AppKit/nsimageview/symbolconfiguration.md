@@ -1,7 +1,8 @@
 # symbolConfiguration
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies a combination of point size, weight, and scale to use when sizing and displaying symbol images.
 
@@ -15,13 +16,18 @@ Specifies a combination of point size, weight, and scale to use when sizing and 
 var symbolConfiguration: NSImage.SymbolConfiguration? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSImageSymbolConfiguration * symbolConfiguration;
+```
+
 #### Discussion
 
 If a symbol configuration isn’t provided, the image view uses a default size, weight, and scale provided by the system. The default value is `nil`.
 
 ## See Also
 
-- [var image: NSImage?](nsimageview/image.md)
+### Specifying the image
+- [var image: NSImage?](./image.md)
   The image displayed by the image view.
 
 

@@ -1,17 +1,22 @@
 # init(headerTextProvider:row1Column1TextProvider:row1Column2TextProvider:row2Column1TextProvider:row2Column2TextProvider:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a template that has a header and two columns of text.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
 
 ## Declaration
 
 ```swift
 init(headerTextProvider: CLKTextProvider, row1Column1TextProvider: CLKTextProvider, row1Column2TextProvider: CLKTextProvider, row2Column1TextProvider: CLKTextProvider, row2Column2TextProvider: CLKTextProvider)
+```
+
+```objc
+- (instancetype) initWithHeaderTextProvider:(CLKTextProvider *) headerTextProvider row1Column1TextProvider:(CLKTextProvider *) row1Column1TextProvider row1Column2TextProvider:(CLKTextProvider *) row1Column2TextProvider row2Column1TextProvider:(CLKTextProvider *) row2Column1TextProvider row2Column2TextProvider:(CLKTextProvider *) row2Column2TextProvider;
 ```
 
 ## Parameters
@@ -24,7 +29,8 @@ init(headerTextProvider: CLKTextProvider, row1Column1TextProvider: CLKTextProvid
 
 ## See Also
 
-- [init(headerImageProvider: CLKImageProvider?, headerTextProvider: CLKTextProvider, row1Column1TextProvider: CLKTextProvider, row1Column2TextProvider: CLKTextProvider, row2Column1TextProvider: CLKTextProvider, row2Column2TextProvider: CLKTextProvider)](clkcomplicationtemplatemodularlargetable/init(headerimageprovider:headertextprovider:row1column1textprovider:row1column2textprovider:row2column1textprovider:row2column2textprovider:).md)
+### Creating the Template
+- [init(headerImageProvider: CLKImageProvider?, headerTextProvider: CLKTextProvider, row1Column1TextProvider: CLKTextProvider, row1Column2TextProvider: CLKTextProvider, row2Column1TextProvider: CLKTextProvider, row2Column2TextProvider: CLKTextProvider)](./init%28headerimageprovider,headertextprovider,row1column1textprovider,row1column2textprovider,row2column1textprovider,row2column2textprovider%29.md)
   Creates a template that has a header row with an image and text, and two columns of text.
 
 

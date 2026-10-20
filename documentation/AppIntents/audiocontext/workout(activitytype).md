@@ -1,7 +1,8 @@
 # workout(activityType:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A workout session of the given activity type.
 

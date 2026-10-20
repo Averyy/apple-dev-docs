@@ -1,7 +1,8 @@
 # captureImage(in:completionHandler:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - Mac Catalyst 18.2+
@@ -10,7 +11,15 @@
 ## Declaration
 
 ```swift
+class func captureImage(in rect: CGRect, completionHandler: (@Sendable (CGImage?, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 class func captureImage(in rect: CGRect) async throws -> CGImage
+```
+
+```objc
++ (void) captureImageInRect:(CGRect) rect completionHandler:(void (^)(CGImageRef image, NSError *error)) completionHandler;
 ```
 
 #### Discussion

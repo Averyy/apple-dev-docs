@@ -1,7 +1,8 @@
 # DisplayRepresentation.Image.DisplayStyle
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The style with which to display the image for this `DisplayRepresentation`.
 
@@ -11,7 +12,7 @@ The style with which to display the image for this `DisplayRepresentation`.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -27,17 +28,17 @@ Note that these are only used when an image, not a symbol name, is specified. Wh
 ## Topics
 
 ### Type Properties
-- [static var circular: DisplayRepresentation.Image.DisplayStyle](displayrepresentation/image-swift.struct/displaystyle/circular.md)
+- [static var circular: DisplayRepresentation.Image.DisplayStyle](./displaystyle/circular.md)
   Display this representation in a circle.
-- [static var `default`: DisplayRepresentation.Image.DisplayStyle](displayrepresentation/image-swift.struct/displaystyle/default.md)
+- [static var `default`: DisplayRepresentation.Image.DisplayStyle](./displaystyle/default.md)
   Display this representation in the default style.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

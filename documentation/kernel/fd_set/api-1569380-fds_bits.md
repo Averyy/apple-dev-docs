@@ -1,14 +1,15 @@
 # fds_bits
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 __int32_t fds_bits[32];
 ```
 

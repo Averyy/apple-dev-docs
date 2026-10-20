@@ -1,7 +1,8 @@
 # menu(for:string:options:atLocation:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a menu containing contextual menu items suitable for certain kinds of detected results.
 
@@ -14,13 +15,17 @@ Provides a menu containing contextual menu items suitable for certain kinds of d
 func menu(for result: NSTextCheckingResult, string checkedString: String, options: [NSSpellChecker.OptionKey : Any]? = nil, atLocation location: NSPoint, in view: NSView) -> NSMenu?
 ```
 
+```objc
+- (NSMenu *) menuForResult:(NSTextCheckingResult *) result string:(NSString *) checkedString options:(NSDictionary<NSString *,id> *) options atLocation:(NSPoint) location inView:(NSView *) view;
+```
+
 #### Return Value
 
 A menu suitable for displaying as a contextual menu, or adding to another contextual menu as a submenu.
 
 ## Parameters
 
-- `result`: The [`NSTextCheckingResult`](https://developer.apple.com/documentation/foundation/nstextcheckingresult) instance for the checked string.
+- `result`: The [`NSTextCheckingResult`](../../Foundation/nstextcheckingresult.md) instance for the checked string.
 - `checkedString`: The string that has been checked.
 - `options`: The options dictionary allows clients to pass in information associated with the document. See `Spell Checking Option Dictionary Keys` for possible key-value pairs.
 - `location`: The location, in the view’s coordinate system, to display the menu.
@@ -28,7 +33,8 @@ A menu suitable for displaying as a contextual menu, or adding to another contex
 
 ## See Also
 
-- [NSSpellChecker.OptionKey](nsspellchecker/optionkey.md)
+### Data Detector Interaction
+- [NSSpellChecker.OptionKey](./optionkey.md)
   Constants that define options for text checking.
 
 

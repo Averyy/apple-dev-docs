@@ -1,7 +1,8 @@
 # NSFileProviderErrorDomain
 
 **Framework**: File Provider  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for the File Provider extension.
 
@@ -18,17 +19,22 @@ The error domain for the File Provider extension.
 let NSFileProviderErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const NSFileProviderErrorDomain;
+```
+
 ## See Also
 
-- [struct NSFileProviderError](nsfileprovidererror.md)
+### Errors
+- [struct NSFileProviderError](./nsfileprovidererror.md)
   A structure that contains information about File Provider extension errors.
-- [NSFileProviderError.Code](nsfileprovidererror/code.md)
+- [NSFileProviderError.Code](./nsfileprovidererror/code.md)
   The error codes for the File Provider extension.
-- [let NSFileProviderErrorItemKey: String](nsfileprovidererroritemkey.md)
+- [let NSFileProviderErrorItemKey: String](./nsfileprovidererroritemkey.md)
   The key for accessing information about sync-related errors.
-- [let NSFileProviderErrorNonExistentItemIdentifierKey: String](nsfileprovidererrornonexistentitemidentifierkey.md)
+- [let NSFileProviderErrorNonExistentItemIdentifierKey: String](./nsfileprovidererrornonexistentitemidentifierkey.md)
   The key for accessing the specified item’s identifier when the item doesn’t exist.
-- [let NSFileProviderErrorCollidingItemKey: String](nsfileprovidererrorcollidingitemkey.md)
+- [let NSFileProviderErrorCollidingItemKey: String](./nsfileprovidererrorcollidingitemkey.md)
   The key for accessing the existing item from a filename collision error’s user info dictionary.
 
 

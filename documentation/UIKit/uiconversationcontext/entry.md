@@ -1,7 +1,8 @@
 # UIConversationContext.Entry
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A base class that represents a message in a conversation.
 
@@ -16,58 +17,63 @@ A base class that represents a message in a conversation.
 class Entry
 ```
 
+```objc
+@interface UIConversationEntry : NSObject
+```
+
 ## Topics
 
 ### Identifying the entry
-- [var entryIdentifier: String](uiconversationcontext/entry/entryidentifier.md)
+- [var entryIdentifier: String](./entry/entryidentifier.md)
   A string that uniquely identifies this specific entry in the conversation.
-- [var replyThreadIdentifier: String?](uiconversationcontext/entry/replythreadidentifier.md)
+- [var replyThreadIdentifier: String?](./entry/replythreadidentifier.md)
   An optional string that identifies another message in a conversation, when this entry is a reply to that message.
 ### Getting entry details
-- [var text: String](uiconversationcontext/entry/text.md)
+- [var text: String](./entry/text.md)
   A string that contains the message’s text.
-- [var sentDate: Date](uiconversationcontext/entry/sentdate.md)
+- [var sentDate: Date](./entry/sentdate.md)
   A date that notes when the sender added the message to the conversation.
 ### Identifying entry participants
-- [var senderIdentifier: String](uiconversationcontext/entry/senderidentifier.md)
+- [var senderIdentifier: String](./entry/senderidentifier.md)
   A string that identifies the message’s sender.
-- [var primaryRecipientIdentifiers: Set<String>](uiconversationcontext/entry/primaryrecipientidentifiers.md)
+- [var primaryRecipientIdentifiers: Set<String>](./entry/primaryrecipientidentifiers.md)
   A set of strings that identifies the primary recipients of the message.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [UIMailConversationContext.MailEntry](uimailconversationcontext/mailentry.md)
-- [UIMessageConversationContext.MessageEntry](uimessageconversationcontext/messageentry.md)
+- [UIMailConversationContext.MailEntry](../uimailconversationcontext/mailentry.md)
+- [UIMessageConversationContext.MessageEntry](../uimessageconversationcontext/messageentry.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Adopting Smart Reply in your messaging or email app](adopting-smart-reply-in-your-messaging-or-email-app.md)
+### Smart Reply for messaging
+- [Adopting Smart Reply in your messaging or email app](../adopting-smart-reply-in-your-messaging-or-email-app.md)
   Generate reply suggestions by using Apple Intelligence and put selected text into your text UI.
-- [class UIConversationContext](uiconversationcontext.md)
+- [class UIConversationContext](../uiconversationcontext.md)
   A base class that represents a conversation between participants, such as in an email or messaging app.
-- [class UIMailConversationContext](uimailconversationcontext.md)
+- [class UIMailConversationContext](../uimailconversationcontext.md)
   A class that represents an email conversation.
-- [UIMailConversationContext.MailEntry](uimailconversationcontext/mailentry.md)
+- [UIMailConversationContext.MailEntry](../uimailconversationcontext/mailentry.md)
   A class that represents a specific email in an email thread.
-- [class UIMessageConversationContext](uimessageconversationcontext.md)
+- [class UIMessageConversationContext](../uimessageconversationcontext.md)
   A class that represents a message conversation.
-- [UIMessageConversationContext.MessageEntry](uimessageconversationcontext/messageentry.md)
+- [UIMessageConversationContext.MessageEntry](../uimessageconversationcontext/messageentry.md)
   A class that represents a message in a message conversation.
-- [class UIInputSuggestion](uiinputsuggestion.md)
+- [class UIInputSuggestion](../uiinputsuggestion.md)
   A base class you use to handle suggestions from the keyboard or system.
-- [class UIPhotoSearchSuggestion](uiphotosearchsuggestion.md)
+- [class UIPhotoSearchSuggestion](../uiphotosearchsuggestion.md)
   An input suggestion that carries photo search metadata for people, subjects, locations, and time periods.
-- [class UISmartReplySuggestion](uismartreplysuggestion.md)
+- [class UISmartReplySuggestion](../uismartreplysuggestion.md)
   A class you use to handle a Smart Reply suggestion.
 
 

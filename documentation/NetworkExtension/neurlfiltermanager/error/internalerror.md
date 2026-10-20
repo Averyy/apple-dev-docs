@@ -1,7 +1,8 @@
 # NEURLFilterManager.Error.internalError
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An internal error occurred.
 
@@ -19,7 +20,8 @@ case internalError
 
 ## See Also
 
-- [NEURLFilterManager.Error.unknown](neurlfiltermanager/error/unknown.md)
+### Other errors
+- [NEURLFilterManager.Error.unknown](./unknown.md)
   The system encountered an unknown error.
 
 

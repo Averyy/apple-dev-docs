@@ -1,7 +1,8 @@
 # item(for:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the item in this response that corresponds to the given identifier.
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Construct from a raw value
 

@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceTimelineSegmentType.primary
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The segment contains primary program content.
 
@@ -14,6 +15,10 @@ The segment contains primary program content.
 
 ```swift
 case primary
+```
+
+```c
+AVPlaybackUserInterfaceTimelineSegmentTypePrimary
 ```
 
 

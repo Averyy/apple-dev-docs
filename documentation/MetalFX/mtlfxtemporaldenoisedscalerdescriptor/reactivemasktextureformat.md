@@ -1,7 +1,8 @@
 # reactiveMaskTextureFormat
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format of the reactive mask input texture for a scaler you create from this descriptor.
 
@@ -16,6 +17,10 @@ The pixel format of the reactive mask input texture for a scaler you create from
 
 ```swift
 var reactiveMaskTextureFormat: MTLPixelFormat { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLPixelFormat reactiveMaskTextureFormat;
 ```
 
 

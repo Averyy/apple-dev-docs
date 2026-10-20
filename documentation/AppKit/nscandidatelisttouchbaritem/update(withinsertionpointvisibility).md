@@ -1,7 +1,8 @@
 # update(withInsertionPointVisibility:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the candidate list visibility configuration based on the client’s insertion point state.
 
@@ -14,9 +15,14 @@ Updates the candidate list visibility configuration based on the client’s inse
 func update(withInsertionPointVisibility isVisible: Bool)
 ```
 
+```objc
+- (void) updateWithInsertionPointVisibility:(BOOL) isVisible;
+```
+
 ## See Also
 
-- [var isCandidateListVisible: Bool](nscandidatelisttouchbaritem/iscandidatelistvisible.md)
+### Managing candidate list visibility
+- [var isCandidateListVisible: Bool](./iscandidatelistvisible.md)
   A Boolean value that represents the visibility of this item’s candidate list.
 
 

@@ -1,21 +1,36 @@
 # challengeComposeController(withPlayers:message:completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a challenge compose view controller with preselected player identifiers and a message.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 7.0+ - Deprecated in 8.0
+- iPadOS 7.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS 9.0+ - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use the [`challengeComposeController(withMessage:players:completion:)`](./challengecomposecontroller%28withmessage,players,completion%29.md) method instead.
 
 ## Declaration
 
 ```swift
 func challengeComposeController(withPlayers playerIDs: [String]?, message: String?, completionHandler: GKChallengeComposeCompletionBlock? = nil) -> UIViewController?
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+- (UIViewController *) challengeComposeControllerWithPlayers:(NSArray<NSString *> *) playerIDs message:(NSString *) message completionHandler:(GKChallengeComposeCompletionBlock) completionHandler;
+```
+
+*macOS*
+
+```objc
+- (NSViewController *) challengeComposeControllerWithPlayers:(NSArray<NSString *> *) playerIDs message:(NSString *) message completionHandler:(GKChallengeComposeCompletionBlock) completionHandler;
 ```
 
 #### Return Value
@@ -36,13 +51,14 @@ The view controller returned is presented modally from the top view controller. 
 
 ## See Also
 
-- [func selectChallengeablePlayers([GKPlayer], withCompletionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](gkachievement/selectchallengeableplayers(_:withcompletionhandler:).md)
+### Issuing Achievement Challenges
+- [func selectChallengeablePlayers([GKPlayer], withCompletionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](./selectchallengeableplayers%28_,withcompletionhandler%29.md)
   Finds the subset of players who can earn an achievement.
-- [func challengeComposeController(withMessage: String?, players: [GKPlayer], completion: GKChallengeComposeHandler?) -> UIViewController](gkachievement/challengecomposecontroller(withmessage:players:completion:).md)
+- [func challengeComposeController(withMessage: String?, players: [GKPlayer], completion: GKChallengeComposeHandler?) -> UIViewController](./challengecomposecontroller%28withmessage,players,completion%29.md)
   Provides a view controller that you present to the player to issue an achievement challenge.
-- [typealias GKChallengeComposeHandler](gkchallengecomposehandler.md)
+- [typealias GKChallengeComposeHandler](../gkchallengecomposehandler.md)
   A completion block that provides information about the player who issues a challenge and the players who receive it.
-- [func challengeComposeController(withMessage: String?, players: [GKPlayer], completionHandler: GKChallengeComposeCompletionBlock?) -> UIViewController](gkachievement/challengecomposecontroller(withmessage:players:completionhandler:).md)
+- [func challengeComposeController(withMessage: String?, players: [GKPlayer], completionHandler: GKChallengeComposeCompletionBlock?) -> UIViewController](./challengecomposecontroller%28withmessage,players,completionhandler%29.md)
   Provides a view controller that you present to the player to issue an achievement challenge.
 
 

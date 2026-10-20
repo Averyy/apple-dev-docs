@@ -1,7 +1,8 @@
 # MPNowPlayingInfoPropertyChapterCount
 
 **Framework**: Media Player  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The total number of chapters in the Now Playing item.
 
@@ -10,7 +11,7 @@ The total number of chapters in the Now Playing item.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.12.2+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 5.0+
 
@@ -20,41 +21,46 @@ The total number of chapters in the Now Playing item.
 let MPNowPlayingInfoPropertyChapterCount: String
 ```
 
+```c
+extern NSString * const MPNowPlayingInfoPropertyChapterCount;
+```
+
 #### Discussion
 
-Value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object configured as an [`NSUInteger`](https://developer.apple.com/documentation/objectivec/nsuinteger).
+Value is an [`NSNumber`](../Foundation/nsnumber.md) object configured as an [`NSUInteger`](../ObjectiveC/nsuinteger.md).
 
 ## See Also
 
-- [let MPNowPlayingInfoCollectionIdentifier: String](mpnowplayinginfocollectionidentifier.md)
+### Accessing Now Playing metadata properties
+- [let MPNowPlayingInfoCollectionIdentifier: String](./mpnowplayinginfocollectionidentifier.md)
   The identifier of the collection the Now Playing item belongs to.
-- [let MPNowPlayingInfoPropertyAdTimeRanges: String](mpnowplayinginfopropertyadtimeranges.md)
+- [let MPNowPlayingInfoPropertyAdTimeRanges: String](./mpnowplayinginfopropertyadtimeranges.md)
   A list of ad breaks in the Now Playing item.
-- [let MPNowPlayingInfoPropertyAvailableLanguageOptions: String](mpnowplayinginfopropertyavailablelanguageoptions.md)
+- [let MPNowPlayingInfoPropertyAvailableLanguageOptions: String](./mpnowplayinginfopropertyavailablelanguageoptions.md)
   The available language option groups for the Now Playing item.
-- [let MPNowPlayingInfoPropertyAssetURL: String](mpnowplayinginfopropertyasseturl.md)
+- [let MPNowPlayingInfoPropertyAssetURL: String](./mpnowplayinginfopropertyasseturl.md)
   The URL pointing to the Now Playing item’s underlying asset.
-- [let MPNowPlayingInfoPropertyChapterNumber: String](mpnowplayinginfopropertychapternumber.md)
+- [let MPNowPlayingInfoPropertyChapterNumber: String](./mpnowplayinginfopropertychapternumber.md)
   The number corresponding to the currently playing chapter.
-- [let MPNowPlayingInfoPropertyCreditsStartTime: String](mpnowplayinginfopropertycreditsstarttime.md)
+- [let MPNowPlayingInfoPropertyCreditsStartTime: String](./mpnowplayinginfopropertycreditsstarttime.md)
   The start time for the credits, in seconds, without ads, for the Now Playing item.
-- [let MPNowPlayingInfoPropertyCurrentLanguageOptions: String](mpnowplayinginfopropertycurrentlanguageoptions.md)
+- [let MPNowPlayingInfoPropertyCurrentLanguageOptions: String](./mpnowplayinginfopropertycurrentlanguageoptions.md)
   The currently active language options for the Now Playing item.
-- [let MPNowPlayingInfoPropertyCurrentPlaybackDate: String](mpnowplayinginfopropertycurrentplaybackdate.md)
+- [let MPNowPlayingInfoPropertyCurrentPlaybackDate: String](./mpnowplayinginfopropertycurrentplaybackdate.md)
   The date associated with the current elapsed playback time.
-- [let MPNowPlayingInfoPropertyDefaultPlaybackRate: String](mpnowplayinginfopropertydefaultplaybackrate.md)
+- [let MPNowPlayingInfoPropertyDefaultPlaybackRate: String](./mpnowplayinginfopropertydefaultplaybackrate.md)
   The default playback rate for the Now Playing item.
-- [let MPNowPlayingInfoPropertyElapsedPlaybackTime: String](mpnowplayinginfopropertyelapsedplaybacktime.md)
+- [let MPNowPlayingInfoPropertyElapsedPlaybackTime: String](./mpnowplayinginfopropertyelapsedplaybacktime.md)
   The elapsed time of the Now Playing item, in seconds.
-- [let MPNowPlayingInfoPropertyExcludeFromSuggestions: String](mpnowplayinginfopropertyexcludefromsuggestions.md)
+- [let MPNowPlayingInfoPropertyExcludeFromSuggestions: String](./mpnowplayinginfopropertyexcludefromsuggestions.md)
   A number that denotes whether to exclude the Now Playing item from content suggestions.
-- [let MPNowPlayingInfoPropertyExternalContentIdentifier: String](mpnowplayinginfopropertyexternalcontentidentifier.md)
+- [let MPNowPlayingInfoPropertyExternalContentIdentifier: String](./mpnowplayinginfopropertyexternalcontentidentifier.md)
   The opaque identifier that uniquely identifies the Now Playing item, even through app relaunches.
-- [let MPNowPlayingInfoPropertyExternalUserProfileIdentifier: String](mpnowplayinginfopropertyexternaluserprofileidentifier.md)
+- [let MPNowPlayingInfoPropertyExternalUserProfileIdentifier: String](./mpnowplayinginfopropertyexternaluserprofileidentifier.md)
   The opaque identifier that uniquely identifies the profile the Now Playing item plays from, even through app relaunches.
-- [let MPNowPlayingInfoPropertyInternationalStandardRecordingCode: String](mpnowplayinginfopropertyinternationalstandardrecordingcode.md)
+- [let MPNowPlayingInfoPropertyInternationalStandardRecordingCode: String](./mpnowplayinginfopropertyinternationalstandardrecordingcode.md)
   The International Standard Recording Code (ISRC) of the Now Playing item.
-- [let MPNowPlayingInfoPropertyIsLiveStream: String](mpnowplayinginfopropertyislivestream.md)
+- [let MPNowPlayingInfoPropertyIsLiveStream: String](./mpnowplayinginfopropertyislivestream.md)
   A number that denotes whether the Now Playing item is a live stream.
 
 

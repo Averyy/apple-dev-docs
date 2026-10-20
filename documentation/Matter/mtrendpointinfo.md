@@ -1,7 +1,8 @@
 # MTREndpointInfo
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Meta-data about an endpoint of a Matter node.
 
@@ -20,33 +21,37 @@ Meta-data about an endpoint of a Matter node.
 class MTREndpointInfo
 ```
 
+```objc
+@interface MTREndpointInfo : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](mtrendpointinfo/init(coder:).md)
+- [init?(coder: NSCoder)](./mtrendpointinfo/init%28coder%29.md)
 ### Instance Properties
-- [var children: [MTREndpointInfo]](mtrendpointinfo/children.md)
+- [var children: [MTREndpointInfo]](./mtrendpointinfo/children.md)
   The direct children of this endpoint. This excludes indirect descendants even if they are listed in the PartsList attribute of this endpoint due to the Full-Family Pattern being used. Refer to Endpoint Composition Patterns in the Matter specification for details.
-- [var deviceTypes: [MTRDeviceTypeRevision]](mtrendpointinfo/devicetypes.md)
-- [var endpointID: NSNumber](mtrendpointinfo/endpointid.md)
-- [var partsList: [NSNumber]](mtrendpointinfo/partslist.md)
+- [var deviceTypes: [MTRDeviceTypeRevision]](./mtrendpointinfo/devicetypes.md)
+- [var endpointID: NSNumber](./mtrendpointinfo/endpointid.md)
+- [var partsList: [NSNumber]](./mtrendpointinfo/partslist.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

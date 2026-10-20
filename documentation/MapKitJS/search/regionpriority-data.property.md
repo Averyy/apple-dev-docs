@@ -1,7 +1,8 @@
 # regionPriority
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A region priority value that controls whether results occur outside, or strictly within, the region.
 
@@ -10,14 +11,14 @@ A region priority value that controls whether results occur outside, or strictly
 
 ## Declaration
 
-```swift
+```
 get regionPriority(): RegionPriority;
 set regionPriority(value: RegionPriority);
 ```
 
 #### Discussion
 
-For more information on region priorities, see [`RegionPriority`](search/regionpriority-data.var.md).
+For more information on region priorities, see [`RegionPriority`](./regionpriority-data.var.md).
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # recordLabels
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The record labels for the album.
 

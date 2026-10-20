@@ -1,7 +1,8 @@
 # addPasses(data:completion:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -12,7 +13,15 @@
 ## Declaration
 
 ```swift
+func addPasses(data passesData: [Data], completion completionHandler: @escaping @Sendable (PKPassLibraryAddPassesStatus) -> Void)
+```
+
+```swift
 func addPasses(data passesData: [Data]) async -> PKPassLibraryAddPassesStatus
+```
+
+```objc
+- (void) addPassesWithData:(NSArray<NSData *> *) passesData completionHandler:(void (^)(PKPassLibraryAddPassesStatus )) completionHandler;
 ```
 
 

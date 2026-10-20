@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SensorKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an absolute time from a raw value.
 
@@ -22,7 +23,8 @@ init(_ rawValue: CFTimeInterval)
 
 ## See Also
 
-- [init(rawValue: CFTimeInterval)](srabsolutetime/init(rawvalue:).md)
+### Creating an Absolute Time
+- [init(rawValue: CFTimeInterval)](./init%28rawvalue%29.md)
   Creates an absolute time from a raw value.
 
 

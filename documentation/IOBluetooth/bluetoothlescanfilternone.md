@@ -1,10 +1,11 @@
 # BluetoothLEScanFilterNone
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var BluetoothLEScanFilterNone: BluetoothLEScanFilter { get }
 ```
 
+```c
+BluetoothLEScanFilterNone
+```
+
 ## See Also
 
-- [var BluetoothLEScanFilterWhitelist: BluetoothLEScanFilter](bluetoothlescanfilterwhitelist.md)
-- [var BluetoothLEScanFilterSafelist: BluetoothLEScanFilter](bluetoothlescanfiltersafelist.md)
+### Constants
+- [var BluetoothLEScanFilterWhitelist: BluetoothLEScanFilter](./bluetoothlescanfilterwhitelist.md)
+- [var BluetoothLEScanFilterSafelist: BluetoothLEScanFilter](./bluetoothlescanfiltersafelist.md)
 
 
 ---

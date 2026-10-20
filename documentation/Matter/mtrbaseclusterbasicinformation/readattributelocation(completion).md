@@ -1,7 +1,8 @@
 # readAttributeLocation(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeLocation(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeLocation() async throws -> String
+```
+
+```objc
+- (void) readAttributeLocationWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

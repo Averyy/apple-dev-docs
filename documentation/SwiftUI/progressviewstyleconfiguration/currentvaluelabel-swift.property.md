@@ -1,7 +1,8 @@
 # currentValueLabel
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view that describes the current value of a progress view.
 
@@ -28,7 +29,8 @@ If the progress view is defined using a `Progress` instance, then this label is 
 
 ## See Also
 
-- [ProgressViewStyleConfiguration.CurrentValueLabel](progressviewstyleconfiguration/currentvaluelabel-swift.struct.md)
+### Configuring the current value label
+- [ProgressViewStyleConfiguration.CurrentValueLabel](./currentvaluelabel-swift.struct.md)
   A type-erased label that describes the current value of a progress view.
 
 

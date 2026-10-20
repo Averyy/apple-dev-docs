@@ -1,7 +1,8 @@
 # description
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this instance.
 

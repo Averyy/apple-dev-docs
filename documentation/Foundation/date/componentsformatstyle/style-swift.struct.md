@@ -1,7 +1,8 @@
 # Date.ComponentsFormatStyle.Style
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 15.0+
@@ -21,26 +22,26 @@ struct Style
 ## Topics
 
 ### Type Properties
-- [static var abbreviated: Date.ComponentsFormatStyle.Style](date/componentsformatstyle/style-swift.struct/abbreviated.md)
+- [static var abbreviated: Date.ComponentsFormatStyle.Style](./style-swift.struct/abbreviated.md)
   Shows the fields in the abbreviation. For example, “2 hr, 10 min”, “2小時10分鐘”
-- [static var condensedAbbreviated: Date.ComponentsFormatStyle.Style](date/componentsformatstyle/style-swift.struct/condensedabbreviated.md)
+- [static var condensedAbbreviated: Date.ComponentsFormatStyle.Style](./style-swift.struct/condensedabbreviated.md)
   Uses the abbreviated form but condensed if possible. For example, “2hr 10min”, “2小時10分鐘”
-- [static var narrow: Date.ComponentsFormatStyle.Style](date/componentsformatstyle/style-swift.struct/narrow.md)
+- [static var narrow: Date.ComponentsFormatStyle.Style](./style-swift.struct/narrow.md)
   Shows the fields in the shortest form possible. For example, “2h 10m”, “2時10分”
-- [static var spellOut: Date.ComponentsFormatStyle.Style](date/componentsformatstyle/style-swift.struct/spellout.md)
+- [static var spellOut: Date.ComponentsFormatStyle.Style](./style-swift.struct/spellout.md)
   Values are spelled out and fields are displayed in their full name. For example, “two hours, ten minutes”, “2小時10分鐘”
-- [static var wide: Date.ComponentsFormatStyle.Style](date/componentsformatstyle/style-swift.struct/wide.md)
+- [static var wide: Date.ComponentsFormatStyle.Style](./style-swift.struct/wide.md)
   Shows the fields in their full spelling. For example, “2 hour, 10 minutes”, “2小時10分鐘”
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

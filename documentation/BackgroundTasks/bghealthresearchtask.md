@@ -1,7 +1,8 @@
 # BGHealthResearchTask
 
 **Framework**: Background Tasks  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A time-consuming, necessary processing task that runs while the app is in the background to prepare data essential to a health research study.
 
@@ -17,33 +18,38 @@ A time-consuming, necessary processing task that runs while the app is in the ba
 class BGHealthResearchTask
 ```
 
+```objc
+@interface BGHealthResearchTask : BGProcessingTask
+```
+
 ## Mentions
 
-- [Choosing Background Strategies for Your App](choosing-background-strategies-for-your-app.md)
+- [Choosing Background Strategies for Your App](./choosing-background-strategies-for-your-app.md)
 
 ## Relationships
 
 ### Inherits From
-- [BGProcessingTask](bgprocessingtask.md)
+- [BGProcessingTask](./bgprocessingtask.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Using background tasks to update your app](../uikit/using-background-tasks-to-update-your-app.md)
+### Background tasks
+- [Using background tasks to update your app](../UIKit/using-background-tasks-to-update-your-app.md)
   Configure your app to perform tasks in the background to make efficient use of processing time and power.
-- [Refreshing and Maintaining Your App Using Background Tasks](refreshing-and-maintaining-your-app-using-background-tasks.md)
+- [Refreshing and Maintaining Your App Using Background Tasks](./refreshing-and-maintaining-your-app-using-background-tasks.md)
   Use scheduled background tasks for refreshing your app content and for performing maintenance.
-- [Choosing Background Strategies for Your App](choosing-background-strategies-for-your-app.md)
+- [Choosing Background Strategies for Your App](./choosing-background-strategies-for-your-app.md)
   Select the best method of scheduling background runtime for your app.
-- [class BGProcessingTask](bgprocessingtask.md)
+- [class BGProcessingTask](./bgprocessingtask.md)
   A time-consuming processing task that runs while the app is in the background.
-- [class BGAppRefreshTask](bgapprefreshtask.md)
+- [class BGAppRefreshTask](./bgapprefreshtask.md)
   An object representing a short task typically used to refresh content that’s run while the app is in the background.
 
 

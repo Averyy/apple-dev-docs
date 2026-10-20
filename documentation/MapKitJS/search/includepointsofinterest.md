@@ -1,7 +1,8 @@
 # includePointsOfInterest
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the search results should include points of interest.
 
@@ -10,14 +11,14 @@ A Boolean value that indicates whether the search results should include points 
 
 ## Declaration
 
-```swift
+```
 get includePointsOfInterest(): boolean;
 set includePointsOfInterest(value: boolean);
 ```
 
 #### Discussion
 
-If you set this value to `false` and include a [`pointOfInterestFilter`](search/pointofinterestfilter.md), the filter takes precedence and MapKit JS ignores the `false` value. The default value is `true`.
+If you set this value to `false` and include a [`pointOfInterestFilter`](./pointofinterestfilter.md), the filter takes precedence and MapKit JS ignores the `false` value. The default value is `true`.
 
 
 ---

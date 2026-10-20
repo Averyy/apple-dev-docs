@@ -1,7 +1,8 @@
 # disconnectHandler
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block to be executed when the port disconnects.
 
@@ -16,6 +17,10 @@ The block to be executed when the port disconnects.
 
 ```swift
 var disconnectHandler: (((any Error)?) -> Void)? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) void (^disconnectHandler)(NSError *error);
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # contains(_:inCircumferentialRingOfWidth:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a ring around this circle’s circumference contains the specified point.
 
@@ -27,7 +28,8 @@ func contains(_ point: NormalizedPoint, inCircumferentialRingOfWidth ringWidth: 
 
 ## See Also
 
-- [func contains(NormalizedPoint) -> Bool](normalizedcircle/contains(_:).md)
+### Determining whether the circle contains a point
+- [func contains(NormalizedPoint) -> Bool](./contains%28_%29.md)
   Returns a Boolean value that indicates whether this circle, including its boundary, contains the specified point.
 
 

@@ -1,7 +1,8 @@
 # unconfiguredAccessories
 
 **Framework**: External Accessory  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of unconfigured accessories that have been discovered.
 
@@ -18,17 +19,22 @@ The set of unconfigured accessories that have been discovered.
 var unconfiguredAccessories: Set<EAWiFiUnconfiguredAccessory> { get }
 ```
 
+```objc
+@property (atomic, copy, readonly) NSSet<EAWiFiUnconfiguredAccessory *> * unconfiguredAccessories;
+```
+
 #### Discussion
 
-The set of accessories in this property represents a snapshot that includes only those objects that match the filter predicate defined when starting the search. You can think of this property as representing the primary list of unconfigured accessories that have been found. Note that the [`accessoryBrowser(_:didFindUnconfiguredAccessories:)`](eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser(_:didfindunconfiguredaccessories:).md) delegate method is called when accessories are added to this list; similarly, [`accessoryBrowser(_:didRemoveUnconfiguredAccessories:)`](eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser(_:didremoveunconfiguredaccessories:).md) is called when accessories are removed from this list.
+The set of accessories in this property represents a snapshot that includes only those objects that match the filter predicate defined when starting the search. You can think of this property as representing the primary list of unconfigured accessories that have been found. Note that the [`accessoryBrowser(_:didFindUnconfiguredAccessories:)`](../eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser%28_,didfindunconfiguredaccessories%29.md) delegate method is called when accessories are added to this list; similarly, [`accessoryBrowser(_:didRemoveUnconfiguredAccessories:)`](../eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser%28_,didremoveunconfiguredaccessories%29.md) is called when accessories are removed from this list.
 
 ## See Also
 
-- [func configureAccessory(EAWiFiUnconfiguredAccessory, withConfigurationUIOn: UIViewController)](eawifiunconfiguredaccessorybrowser/configureaccessory(_:withconfigurationuion:).md)
+### Finding and Configuring Accessories
+- [func configureAccessory(EAWiFiUnconfiguredAccessory, withConfigurationUIOn: UIViewController)](./configureaccessory%28_,withconfigurationuion%29.md)
   Begins the configuration process for the specified accessory.
-- [func startSearchingForUnconfiguredAccessories(matching: NSPredicate?)](eawifiunconfiguredaccessorybrowser/startsearchingforunconfiguredaccessories(matching:).md)
+- [func startSearchingForUnconfiguredAccessories(matching: NSPredicate?)](./startsearchingforunconfiguredaccessories%28matching%29.md)
   Starts the search for unconfigured accessories that match the specified predicate.
-- [func stopSearchingForUnconfiguredAccessories()](eawifiunconfiguredaccessorybrowser/stopsearchingforunconfiguredaccessories.md)
+- [func stopSearchingForUnconfiguredAccessories()](./stopsearchingforunconfiguredaccessories%28%29.md)
   Stops the search for unconfigured accessories.
 
 

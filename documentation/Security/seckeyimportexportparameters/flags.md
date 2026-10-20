@@ -1,7 +1,8 @@
 # flags
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bitwise `OR` of zero or more key import/export flags.
 
@@ -14,9 +15,13 @@ The bitwise `OR` of zero or more key import/export flags.
 var flags: SecKeyImportExportFlags
 ```
 
+```c
+SecKeyImportExportFlags flags;
+```
+
 #### Discussion
 
-Use the values from [`SecKeyImportExportFlags`](seckeyimportexportflags.md).
+Use the values from [`SecKeyImportExportFlags`](../seckeyimportexportflags.md).
 
 
 ---

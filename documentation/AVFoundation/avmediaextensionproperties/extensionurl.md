@@ -1,7 +1,8 @@
 # extensionURL
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file URL of the Media Extension bundle.
 
@@ -14,14 +15,19 @@ The file URL of the Media Extension bundle.
 var extensionURL: URL { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSURL * extensionURL;
+```
+
 ## See Also
 
-- [var extensionName: String](avmediaextensionproperties/extensionname.md)
+### Inspecting the extension
+- [var extensionName: String](./extensionname.md)
   The name of the Media Extension.
-- [var containingBundleName: String](avmediaextensionproperties/containingbundlename.md)
+- [var containingBundleName: String](./containingbundlename.md)
   The name of the containing app bundle.
-- [var extensionIdentifier: String](avmediaextensionproperties/extensionidentifier.md)
-- [var containingBundleURL: URL](avmediaextensionproperties/containingbundleurl.md)
+- [var extensionIdentifier: String](./extensionidentifier.md)
+- [var containingBundleURL: URL](./containingbundleurl.md)
   The file URL of the host application for the Media Extension.
 
 

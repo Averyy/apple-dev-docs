@@ -1,101 +1,102 @@
 # Collection Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var count: Int](substring/utf8view/count.md)
+- [var count: Int](./count.md)
   The number of elements in the collection.
-- [var endIndex: Substring.UTF8View.Index](substring/utf8view/endindex.md)
+- [var endIndex: Substring.UTF8View.Index](./endindex.md)
   The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.
-- [var first: Self.Element?](substring/utf8view/first.md)
+- [var first: Self.Element?](./first.md)
   The first element of the collection.
-- [var indices: Substring.UTF8View.Indices](substring/utf8view/indices-swift.property.md)
+- [var indices: Substring.UTF8View.Indices](./indices-swift.property.md)
   The indices that are valid for subscripting the collection, in ascending order.
-- [var isEmpty: Bool](substring/utf8view/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value indicating whether the collection is empty.
-- [var startIndex: Substring.UTF8View.Index](substring/utf8view/startindex.md)
+- [var startIndex: Substring.UTF8View.Index](./startindex.md)
   The position of the first element in a nonempty collection.
-- [var underestimatedCount: Int](substring/utf8view/underestimatedcount.md)
+- [var underestimatedCount: Int](./underestimatedcount.md)
   A value less than or equal to the number of elements in the collection.
 ### Instance Methods
-- [func distance(from: Substring.UTF8View.Index, to: Substring.UTF8View.Index) -> Int](substring/utf8view/distance(from:to:).md)
+- [func distance(from: Substring.UTF8View.Index, to: Substring.UTF8View.Index) -> Int](./distance%28from,to%29.md)
   Returns the distance between two indices.
-- [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](substring/utf8view/drop(while:).md)
+- [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](./drop%28while%29.md)
   Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.
-- [func dropFirst(Int) -> Self.SubSequence](substring/utf8view/dropfirst(_:).md)
+- [func dropFirst(Int) -> Self.SubSequence](./dropfirst%28_%29.md)
   Returns a subsequence containing all but the given number of initial elements.
-- [func firstIndex(of: Self.Element) -> Self.Index?](substring/utf8view/firstindex(of:).md)
+- [func firstIndex(of: Self.Element) -> Self.Index?](./firstindex%28of%29.md)
   Returns the first index where the specified value appears in the collection.
-- [func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](substring/utf8view/firstindex(where:).md)
+- [func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](./firstindex%28where%29.md)
   Returns the first index in which an element of the collection satisfies the given predicate.
-- [func formIndex(inout Self.Index, offsetBy: Int)](substring/utf8view/formindex(_:offsetby:).md)
+- [func formIndex(inout Self.Index, offsetBy: Int)](./formindex%28_,offsetby%29.md)
   Offsets the given index by the specified distance.
-- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](substring/utf8view/formindex(_:offsetby:limitedby:).md)
+- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](./formindex%28_,offsetby,limitedby%29.md)
   Offsets the given index by the specified distance, or so that it equals the given limiting index.
-- [func formIndex(after: inout Substring.UTF8View.Index)](substring/utf8view/formindex(after:).md)
+- [func formIndex(after: inout Substring.UTF8View.Index)](./formindex%28after%29.md)
   Replaces the given index with its successor.
-- [func index(Substring.UTF8View.Index, offsetBy: Int) -> Substring.UTF8View.Index](substring/utf8view/index(_:offsetby:).md)
+- [func index(Substring.UTF8View.Index, offsetBy: Int) -> Substring.UTF8View.Index](./index%28_,offsetby%29.md)
   Returns an index that is the specified distance from the given index.
-- [func index(Substring.UTF8View.Index, offsetBy: Int, limitedBy: Substring.UTF8View.Index) -> Substring.UTF8View.Index?](substring/utf8view/index(_:offsetby:limitedby:).md)
+- [func index(Substring.UTF8View.Index, offsetBy: Int, limitedBy: Substring.UTF8View.Index) -> Substring.UTF8View.Index?](./index%28_,offsetby,limitedby%29.md)
   Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
-- [func index(after: Substring.UTF8View.Index) -> Substring.UTF8View.Index](substring/utf8view/index(after:).md)
+- [func index(after: Substring.UTF8View.Index) -> Substring.UTF8View.Index](./index%28after%29.md)
   Returns the position immediately after the given index.
-- [func index(of: Self.Element) -> Self.Index?](substring/utf8view/index(of:).md)
+- [func index(of: Self.Element) -> Self.Index?](./index%28of%29.md)
   Returns the first index where the specified value appears in the collection.
-- [func indices(of: Self.Element) -> RangeSet<Self.Index>](substring/utf8view/indices(of:).md)
+- [func indices(of: Self.Element) -> RangeSet<Self.Index>](./indices%28of%29.md)
   Returns the indices of all the elements that are equal to the given element.
-- [func indices(where: (Self.Element) throws -> Bool) rethrows -> RangeSet<Self.Index>](substring/utf8view/indices(where:).md)
+- [func indices(where: (Self.Element) throws -> Bool) rethrows -> RangeSet<Self.Index>](./indices%28where%29.md)
   Returns the indices of all the elements that match the given predicate.
-- [func makeIterator() -> IndexingIterator<Self>](substring/utf8view/makeiterator.md)
+- [func makeIterator() -> IndexingIterator<Self>](./makeiterator%28%29.md)
   Returns an iterator over the elements of the collection.
-- [func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]](substring/utf8view/map(_:)-3dhqn.md)
+- [func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]](./map%28_%29-3dhqn.md)
   Returns an array containing the results of mapping the given closure over the sequence’s elements.
-- [func popFirst() -> Self.Element?](substring/utf8view/popfirst.md)
+- [func popFirst() -> Self.Element?](./popfirst%28%29.md)
   Removes and returns the first element of the collection.
-- [func prefix(Int) -> Self.SubSequence](substring/utf8view/prefix(_:).md)
+- [func prefix(Int) -> Self.SubSequence](./prefix%28_%29.md)
   Returns a subsequence, up to the specified maximum length, containing the initial elements of the collection.
-- [func prefix(through: Self.Index) -> Self.SubSequence](substring/utf8view/prefix(through:).md)
+- [func prefix(through: Self.Index) -> Self.SubSequence](./prefix%28through%29.md)
   Returns a subsequence from the start of the collection through the specified position.
-- [func prefix(upTo: Self.Index) -> Self.SubSequence](substring/utf8view/prefix(upto:).md)
+- [func prefix(upTo: Self.Index) -> Self.SubSequence](./prefix%28upto%29.md)
   Returns a subsequence from the start of the collection up to, but not including, the specified position.
-- [func prefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](substring/utf8view/prefix(while:).md)
+- [func prefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](./prefix%28while%29.md)
   Returns a subsequence containing the initial elements until `predicate` returns `false` and skipping the remaining elements.
-- [func randomElement() -> Self.Element?](substring/utf8view/randomelement.md)
+- [func randomElement() -> Self.Element?](./randomelement%28%29.md)
   Returns a random element of the collection.
-- [func randomElement<T>(using: inout T) -> Self.Element?](substring/utf8view/randomelement(using:).md)
+- [func randomElement<T>(using: inout T) -> Self.Element?](./randomelement%28using%29.md)
   Returns a random element of the collection, using the given generator as a source for randomness.
-- [func removeFirst() -> Self.Element](substring/utf8view/removefirst.md)
+- [func removeFirst() -> Self.Element](./removefirst%28%29.md)
   Removes and returns the first element of the collection.
-- [func removeFirst(Int)](substring/utf8view/removefirst(_:).md)
+- [func removeFirst(Int)](./removefirst%28_%29.md)
   Removes the specified number of elements from the beginning of the collection.
-- [func removingSubranges(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](substring/utf8view/removingsubranges(_:).md)
+- [func removingSubranges(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](./removingsubranges%28_%29.md)
   Returns a collection of the elements in this collection that are not represented by the given range set.
-- [func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [Self.SubSequence]](substring/utf8view/split(maxsplits:omittingemptysubsequences:whereseparator:).md)
+- [func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [Self.SubSequence]](./split%28maxsplits,omittingemptysubsequences,whereseparator%29.md)
   Returns the longest possible subsequences of the collection, in order, that don’t contain elements satisfying the given predicate.
-- [func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](substring/utf8view/split(separator:maxsplits:omittingemptysubsequences:).md)
+- [func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](./split%28separator,maxsplits,omittingemptysubsequences%29.md)
   Returns the longest possible subsequences of the collection, in order, around elements equal to the given element.
-- [func suffix(from: Self.Index) -> Self.SubSequence](substring/utf8view/suffix(from:).md)
+- [func suffix(from: Self.Index) -> Self.SubSequence](./suffix%28from%29.md)
   Returns a subsequence from the specified position to the end of the collection.
 ### Subscripts
-- [subscript(UnboundedRange) -> Self.SubSequence](substring/utf8view/subscript(_:)-3zacs.md)
-- [subscript<R>(R) -> Self.SubSequence](substring/utf8view/subscript(_:)-6liln.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](./subscript%28_%29-3zacs.md)
+- [subscript<R>(R) -> Self.SubSequence](./subscript%28_%29-6liln.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
-- [subscript(Range<Substring.UTF8View.Index>) -> Substring.UTF8View](substring/utf8view/subscript(_:)-7hfz9.md)
+- [subscript(Range<Substring.UTF8View.Index>) -> Substring.UTF8View](./subscript%28_%29-7hfz9.md)
   Accesses a contiguous subrange of the collection’s elements.
-- [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](substring/utf8view/subscript(_:)-9ouv5.md)
+- [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](./subscript%28_%29-9ouv5.md)
   Accesses a view of this collection with the elements at the given indices.
-- [subscript(Substring.UTF8View.Index) -> Substring.UTF8View.Element](substring/utf8view/subscript(_:)-goc1.md)
+- [subscript(Substring.UTF8View.Index) -> Substring.UTF8View.Element](./subscript%28_%29-goc1.md)
   Accesses the element at the specified position.
 ### Type Aliases
-- [Substring.UTF8View.Index](substring/utf8view/index.md)
+- [Substring.UTF8View.Index](./index.md)
   A type that represents a position in the collection.
-- [Substring.UTF8View.Indices](substring/utf8view/indices-swift.typealias.md)
+- [Substring.UTF8View.Indices](./indices-swift.typealias.md)
   A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [Substring.UTF8View.Iterator](substring/utf8view/iterator.md)
+- [Substring.UTF8View.Iterator](./iterator.md)
   A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [Substring.UTF8View.SubSequence](substring/utf8view/subsequence.md)
+- [Substring.UTF8View.SubSequence](./subsequence.md)
   A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
 
 

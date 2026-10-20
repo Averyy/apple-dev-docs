@@ -1,7 +1,8 @@
 # init(modes:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a provider that reconstructs a person’s surroundings.
 
@@ -16,7 +17,7 @@ init(modes: [SceneReconstructionProvider.Mode] = [])
 
 #### Discussion
 
-You can pass additional modes, such as [`SceneReconstructionProvider.Mode.classification`](scenereconstructionprovider/mode/classification.md), if you need more than the default mesh data.
+You can pass additional modes, such as [`SceneReconstructionProvider.Mode.classification`](./mode/classification.md), if you need more than the default mesh data.
 
 ## Parameters
 
@@ -24,11 +25,12 @@ You can pass additional modes, such as [`SceneReconstructionProvider.Mode.classi
 
 ## See Also
 
-- [let modes: [SceneReconstructionProvider.Mode]](scenereconstructionprovider/modes.md)
+### Creating a scene reconstruction provider
+- [let modes: [SceneReconstructionProvider.Mode]](./modes.md)
   The modes of scene reconstruction a provider supplies.
-- [SceneReconstructionProvider.Mode](scenereconstructionprovider/mode.md)
+- [SceneReconstructionProvider.Mode](./mode.md)
   The additional kinds of information you can request about a person’s surroundings.
-- [static var isSupported: Bool](scenereconstructionprovider/issupported.md)
+- [static var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the current runtime environment supports scene reconstruction providers.
 
 

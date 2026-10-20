@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,8 +21,9 @@ var shape: Content
 
 ## See Also
 
-- [var anchor: UnitPoint](rotatedshape/anchor.md)
-- [var angle: Angle](rotatedshape/angle.md)
+### Getting the shape’s characteristics
+- [var anchor: UnitPoint](./anchor.md)
+- [var angle: Angle](./angle.md)
 
 
 ---

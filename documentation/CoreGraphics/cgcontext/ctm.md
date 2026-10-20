@@ -1,7 +1,8 @@
 # ctm
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the current transformation matrix.
 
@@ -10,7 +11,7 @@ Returns the current transformation matrix.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ Returns the current transformation matrix.
 var ctm: CGAffineTransform { get }
 ```
 
+```c
+extern CGAffineTransform CGContextGetCTM(CGContextRef c);
+```
+
 ## See Also
 
-- [func rotate(by: CGFloat)](cgcontext/rotate(by:).md)
+### Working with the Current Transformation Matrix
+- [func rotate(by: CGFloat)](./rotate%28by%29.md)
   Rotates the user coordinate system in a context.
-- [func scaleBy(x: CGFloat, y: CGFloat)](cgcontext/scaleby(x:y:).md)
+- [func scaleBy(x: CGFloat, y: CGFloat)](./scaleby%28x,y%29.md)
   Changes the scale of the user coordinate system in a context.
-- [func translateBy(x: CGFloat, y: CGFloat)](cgcontext/translateby(x:y:).md)
+- [func translateBy(x: CGFloat, y: CGFloat)](./translateby%28x,y%29.md)
   Changes the origin of the user coordinate system in a context.
-- [func concatenate(CGAffineTransform)](cgcontext/concatenate(_:).md)
+- [func concatenate(CGAffineTransform)](./concatenate%28_%29.md)
   Transforms the user coordinate system in a context using a specified matrix.
 
 

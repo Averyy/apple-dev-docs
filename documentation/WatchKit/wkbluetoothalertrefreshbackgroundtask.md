@@ -1,7 +1,8 @@
 # WKBluetoothAlertRefreshBackgroundTask
 
 **Framework**: WatchKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A task for handling timely Bluetooth alerts in the background.
 
@@ -14,57 +15,62 @@ A task for handling timely Bluetooth alerts in the background.
 class WKBluetoothAlertRefreshBackgroundTask
 ```
 
+```objc
+@interface WKBluetoothAlertRefreshBackgroundTask : WKRefreshBackgroundTask
+```
+
 ## Mentions
 
-- [Using background tasks](using-background-tasks.md)
+- [Using background tasks](./using-background-tasks.md)
 
 #### Overview
 
-Your app can receive [`WKBluetoothAlertRefreshBackgroundTask`](wkbluetoothalertrefreshbackgroundtask.md) tasks to handle timely alerts in the background. Use these tasks to reconnect a peripheral and handle a critical alert. Apps that use timely alerts can also scan for a specific system identifier (UUID) while in the background. You can then perform the initial connection and pair the devices if necessary.
+Your app can receive [`WKBluetoothAlertRefreshBackgroundTask`](./wkbluetoothalertrefreshbackgroundtask.md) tasks to handle timely alerts in the background. Use these tasks to reconnect a peripheral and handle a critical alert. Apps that use timely alerts can also scan for a specific system identifier (UUID) while in the background. You can then perform the initial connection and pair the devices if necessary.
 
-To receive timely alerts, your peripheral must use Generic Attribute Profile (GATT) transactions. Call [`setNotifyValue(_:for:)`](https://developer.apple.com/documentation/corebluetooth/cbperipheral/setnotifyvalue(_:for:)) to enable notifications for the specified characteristic. Then, any changes to the peripheral’s characteristic wakes your app using a [`WKBluetoothAlertRefreshBackgroundTask`](wkbluetoothalertrefreshbackgroundtask.md) task. Use this task to reconnect to the peripheral and handle the critical alert.
+To receive timely alerts, your peripheral must use Generic Attribute Profile (GATT) transactions. Call [`setNotifyValue(_:for:)`](../CoreBluetooth/cbperipheral/setnotifyvalue%28_,for%29.md) to enable notifications for the specified characteristic. Then, any changes to the peripheral’s characteristic wakes your app using a [`WKBluetoothAlertRefreshBackgroundTask`](./wkbluetoothalertrefreshbackgroundtask.md) task. Use this task to reconnect to the peripheral and handle the critical alert.
 
-> **Note**:  In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/swiftui/scene/backgroundtask(_:action:)).
+> **Note**:  In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](../SwiftUI/scene/backgroundtask%28_,action%29.md).
 
 The critical alerts and background scans share a budget. Your app can only use five timely alerts or background scans within a rolling 24-hour window.
 
-When your app receives a timely alert and your budget has only one Bluetooth alert task remaining, the system raises a [`leGattNearBackgroundNotificationLimit`](https://developer.apple.com/documentation/corebluetooth/cberror-swift.struct/legattnearbackgroundnotificationlimit) error. If you exceed the budget, it raises a [`leGattExceededBackgroundNotificationLimit`](https://developer.apple.com/documentation/corebluetooth/cberror-swift.struct/legattexceededbackgroundnotificationlimit) error. The system passes these errors to your [`CBPeripheralDelegate`](https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate), by calling methods like the [`peripheral(_:didUpdateValueFor:error:)`](https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didupdatevaluefor:error:)-1xyna) method.
+When your app receives a timely alert and your budget has only one Bluetooth alert task remaining, the system raises a [`leGattNearBackgroundNotificationLimit`](../CoreBluetooth/cberror-swift.struct/legattnearbackgroundnotificationlimit.md) error. If you exceed the budget, it raises a [`leGattExceededBackgroundNotificationLimit`](../CoreBluetooth/cberror-swift.struct/legattexceededbackgroundnotificationlimit.md) error. The system passes these errors to your [`CBPeripheralDelegate`](../CoreBluetooth/cbperipheraldelegate.md), by calling methods like the [`peripheral(_:didUpdateValueFor:error:)`](../CoreBluetooth/cbperipheraldelegate/peripheral%28_,didupdatevaluefor,error%29-1xyna.md) method.
 
 If you exceed your budget, your app doesn’t receive any timely alerts until additional background budget becomes available. The user can reset this budget by launching your app.
 
 ## Relationships
 
 ### Inherits From
-- [WKRefreshBackgroundTask](wkrefreshbackgroundtask.md)
+- [WKRefreshBackgroundTask](./wkrefreshbackgroundtask.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Using background tasks](using-background-tasks.md)
+### Background tasks
+- [Using background tasks](./using-background-tasks.md)
   Handle scheduled update tasks in the background, and respond to background system interactions including Siri intents and incoming Bluetooth messages.
-- [Preparing to take your watchOS app’s snapshot](preparing-to-take-your-watchos-app-s-snapshot.md)
+- [Preparing to take your watchOS app’s snapshot](./preparing-to-take-your-watchos-app-s-snapshot.md)
   Provide a timely, accurate snapshot of your app by using snapshot background tasks.
-- [class WKApplicationRefreshBackgroundTask](wkapplicationrefreshbackgroundtask.md)
+- [class WKApplicationRefreshBackgroundTask](./wkapplicationrefreshbackgroundtask.md)
   A task that updates your app’s state in the background.
-- [class WKURLSessionRefreshBackgroundTask](wkurlsessionrefreshbackgroundtask.md)
+- [class WKURLSessionRefreshBackgroundTask](./wkurlsessionrefreshbackgroundtask.md)
   A task that responds to background URL sessions.
-- [class WKWatchConnectivityRefreshBackgroundTask](wkwatchconnectivityrefreshbackgroundtask.md)
+- [class WKWatchConnectivityRefreshBackgroundTask](./wkwatchconnectivityrefreshbackgroundtask.md)
   A background task used to receive background updates from the Watch Connectivity framework.
-- [class WKIntentDidRunRefreshBackgroundTask](wkintentdidrunrefreshbackgroundtask.md)
+- [class WKIntentDidRunRefreshBackgroundTask](./wkintentdidrunrefreshbackgroundtask.md)
   A background task used to update your app after a SiriKit intent runs.
-- [class WKRelevantShortcutRefreshBackgroundTask](wkrelevantshortcutrefreshbackgroundtask.md)
+- [class WKRelevantShortcutRefreshBackgroundTask](./wkrelevantshortcutrefreshbackgroundtask.md)
   A background task used to periodically donate relevant Siri shortcuts.
-- [class WKSnapshotRefreshBackgroundTask](wksnapshotrefreshbackgroundtask.md)
+- [class WKSnapshotRefreshBackgroundTask](./wksnapshotrefreshbackgroundtask.md)
   A background task used to update your app’s user interface in preparation for a snapshot.
-- [class WKRefreshBackgroundTask](wkrefreshbackgroundtask.md)
+- [class WKRefreshBackgroundTask](./wkrefreshbackgroundtask.md)
   The abstract superclass for WatchKit’s background task classes.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an `AnyBidirectionalCollection` having the same underlying collection as `other`.
 
@@ -24,7 +25,7 @@ init?(_ other: AnyCollection<Element>)
 
 If the underlying collection stored by `other` does not satisfy `BidirectionalCollection`, the result is `nil`.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

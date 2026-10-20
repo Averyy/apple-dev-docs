@@ -1,7 +1,8 @@
 # EquipmentIdentifier
 
 **Framework**: TabletopKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A unique identifier for equipment.
 
@@ -21,48 +22,49 @@ The equipment identifier needs to be unique across all instances of the same tab
 ## Topics
 
 ### Creating equipment identifiers
-- [init(Int)](equipmentidentifier/init(_:).md)
+- [init(Int)](./equipmentidentifier/init%28_%29.md)
 ### Getting identifier values
-- [let rawValue: Int](equipmentidentifier/rawvalue.md)
+- [let rawValue: Int](./equipmentidentifier/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Implementing playing card overlap and physical characteristics](implementing-playing-card-overlap-and-physical-characteristics.md)
+### Equipment
+- [Implementing playing card overlap and physical characteristics](./implementing-playing-card-overlap-and-physical-characteristics.md)
   Add interactive card game behavior for a pile of playing cards with physically realistic stacking and overlapping.
-- [protocol Equipment](equipment.md)
+- [protocol Equipment](./equipment.md)
   A protocol for equipment that players directly interact with in a game.
-- [struct EquipmentCollection](equipmentcollection.md)
+- [struct EquipmentCollection](./equipmentcollection.md)
   A collection of equipment whose state can be inspected and modified.
-- [protocol EntityEquipment](entityequipment.md)
+- [protocol EntityEquipment](./entityequipment.md)
   A protocol for equipment in a game that you render using RealityKit.
-- [protocol EquipmentState](equipmentstate.md)
+- [protocol EquipmentState](./equipmentstate.md)
   A protocol for the equipment data that TabletopKit syncs between players.
-- [struct EquipmentStateCollection](equipmentstatecollection.md)
+- [struct EquipmentStateCollection](./equipmentstatecollection.md)
   A collection of equipment states that can be inspected and modified.
-- [struct BaseEquipmentState](baseequipmentstate.md)
+- [struct BaseEquipmentState](./baseequipmentstate.md)
   A state for equipment that contains no equipment-specific data.
-- [protocol CustomEquipmentState](customequipmentstate.md)
+- [protocol CustomEquipmentState](./customequipmentstate.md)
   A specialized protocol for the equipment state that allows to accommodate custom data that TabletopKit syncs between players.
-- [protocol MutableEquipmentState](mutableequipmentstate.md)
+- [protocol MutableEquipmentState](./mutableequipmentstate.md)
   A protocol for equipment data that TabletopKit syncs between players, and that can be mutated.
-- [struct CardState](cardstate.md)
+- [struct CardState](./cardstate.md)
   A state for cards that contains face up and down information.
-- [struct DieState](diestate.md)
+- [struct DieState](./diestate.md)
   A state for dice that contains the current value.
-- [struct RawValueState](rawvaluestate.md)
+- [struct RawValueState](./rawvaluestate.md)
   A state for equipment that contains a game-specific value.
-- [enum ControllingSeats](controllingseats.md)
+- [enum ControllingSeats](./controllingseats.md)
   The seats that can manipulate or interact with the equipment.
 
 

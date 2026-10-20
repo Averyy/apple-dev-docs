@@ -1,23 +1,25 @@
 # copyinstr
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 int copyinstr(const user_addr_t uaddr, void *kaddr, size_t len, size_t *done);
 ```
 
 ## See Also
 
-- [copyin](1441036-copyin.md)
-- [copyout](1441088-copyout.md)
-- [copyoutstr](1441047-copyoutstr.md)
-- [copystr](1441079-copystr.md)
+### copyio
+- [copyin](./api-1441036-copyin.md)
+- [copyout](./api-1441088-copyout.md)
+- [copyoutstr](./api-1441047-copyoutstr.md)
+- [copystr](./api-1441079-copystr.md)
 
 
 ---

@@ -1,19 +1,20 @@
 # isEqualTo
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares all members of two dictionaries with isEqualTo().
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool isEqualTo(const OSDictionary *aDictionary) const;
 ```
 
@@ -31,9 +32,10 @@ If the dictionaries have equal counts, each member is compared with the other at
 
 ## See Also
 
-- [isEqualTo](osdictionary/isequalto-2p9or.md)
+### Comparing Dictionaries
+- [isEqualTo](./isequalto-2p9or.md)
   Compares certain members of two dictionaries with isEqualTo().
-- [isEqualTo](osdictionary/isequalto-3kuk7.md)
+- [isEqualTo](./isequalto-3kuk7.md)
   Compares the dictionary with an OSObject
 
 

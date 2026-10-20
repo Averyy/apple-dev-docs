@@ -1,7 +1,8 @@
 # ImageRenderer
 
 **Framework**: SwiftUI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that creates images from SwiftUI views.
 
@@ -22,11 +23,11 @@ final class ImageRenderer<Content> where Content : View
 
 #### Overview
 
-Use `ImageRenderer` to export bitmap image data from a SwiftUI view. You initialize the renderer with a view, then render images on demand, either by calling the [`render(rasterizationScale:renderer:)`](imagerenderer/render(rasterizationscale:renderer:).md) method, or by using the renderer’s properties to create a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage), [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage), or [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage).
+Use `ImageRenderer` to export bitmap image data from a SwiftUI view. You initialize the renderer with a view, then render images on demand, either by calling the [`render(rasterizationScale:renderer:)`](./imagerenderer/render%28rasterizationscale,renderer%29.md) method, or by using the renderer’s properties to create a [`CGImage`](../CoreGraphics/cgimage.md), [`NSImage`](../AppKit/nsimage.md), or [`UIImage`](../UIKit/uiimage.md).
 
-By drawing to a [`Canvas`](canvas.md) and exporting with an `ImageRenderer`, you can generate images from any progammatically-rendered content, like paths, shapes, gradients, and more. You can also render standard SwiftUI views like [`Text`](text.md) views, or containers of multiple view types.
+By drawing to a [`Canvas`](./canvas.md) and exporting with an `ImageRenderer`, you can generate images from any progammatically-rendered content, like paths, shapes, gradients, and more. You can also render standard SwiftUI views like [`Text`](./text.md) views, or containers of multiple view types.
 
-The following example uses a private `createAwardView(forUser:date:)` method to create a game app’s view of a trophy symbol with a user name and date. This view combines a [`Canvas`](canvas.md) that applies a shadow filter with two [`Text`](text.md) views into a [`VStack`](vstack.md). A [`Button`](button.md) allows the person to save this view. The button’s action uses an `ImageRenderer` to rasterize a `CGImage` and then calls a private `uploadAchievementImage(_:)` method to encode and upload the image.
+The following example uses a private `createAwardView(forUser:date:)` method to create a game app’s view of a trophy symbol with a user name and date. This view combines a [`Canvas`](./canvas.md) that applies a shadow filter with two [`Text`](./text.md) views into a [`VStack`](./vstack.md). A [`Button`](./button.md) allows the person to save this view. The button’s action uses an `ImageRenderer` to rasterize a `CGImage` and then calls a private `uploadAchievementImage(_:)` method to encode and upload the image.
 
 ```swift
 var body: some View {
@@ -59,15 +60,15 @@ private func createAwardView(forUser: String, date: Date) -> some View {
 }
 ```
 
-![A large trophy symbol, drawn with a mint-colored shadow. Below this, a](/images/com.apple.SwiftUI/ImageRenderer-1@2x.png)
+![A large trophy symbol, drawn with a mint-colored shadow. Below this, a](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ImageRenderer-1@2x.png)
 
-Because `ImageRenderer` conforms to [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject), you can use it to produce a stream of images as its properties change. Subscribe to the renderer’s [`objectWillChange`](imagerenderer/objectwillchange.md) publisher, then use the renderer to rasterize a new image each time the subscriber receives an update.
+Because `ImageRenderer` conforms to [`ObservableObject`](../Combine/observableobject.md), you can use it to produce a stream of images as its properties change. Subscribe to the renderer’s [`objectWillChange`](./imagerenderer/objectwillchange.md) publisher, then use the renderer to rasterize a new image each time the subscriber receives an update.
 
-> ❗ **Important**: `ImageRenderer` output only includes views that SwiftUI rasterizes directly using its own drawing primitives, such as text, images, shapes, and composite views of these types. It does not include views whose contents are composited by Core Animation layers, such as more complex controls and containers, web views, media players, and most types of UIKit and AppKit views. In those cases, `ImageRenderer` displays a placeholder image, similar to the behavior of [`drawingGroup(opaque:colorMode:)`](view/drawinggroup(opaque:colormode:).md). Whether a particular view is rendered using SwiftUI’s own drawing primitives or composited by Core Animation may change in future releases. However, any view that is currently supported is guaranteed to remain supported.
+> ❗ **Important**: `ImageRenderer` output only includes views that SwiftUI rasterizes directly using its own drawing primitives, such as text, images, shapes, and composite views of these types. It does not include views whose contents are composited by Core Animation layers, such as more complex controls and containers, web views, media players, and most types of UIKit and AppKit views. In those cases, `ImageRenderer` displays a placeholder image, similar to the behavior of [`drawingGroup(opaque:colorMode:)`](./view/drawinggroup%28opaque,colormode%29.md). Whether a particular view is rendered using SwiftUI’s own drawing primitives or composited by Core Animation may change in future releases. However, any view that is currently supported is guaranteed to remain supported.
 
-##### Rendering to a Pdf Context
+##### Rendering to a PDF context
 
-The [`render(rasterizationScale:renderer:)`](imagerenderer/render(rasterizationscale:renderer:).md) method renders the specified view to any [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext). That means you aren’t limited to creating a rasterized `CGImage`. For example, you can generate PDF data by rendering to a PDF context. The resulting PDF maintains resolution-independence for supported members of the view hierarchy, such as text, symbol images, lines, shapes, and fills.
+The [`render(rasterizationScale:renderer:)`](./imagerenderer/render%28rasterizationscale,renderer%29.md) method renders the specified view to any [`CGContext`](../CoreGraphics/cgcontext.md). That means you aren’t limited to creating a rasterized `CGImage`. For example, you can generate PDF data by rendering to a PDF context. The resulting PDF maintains resolution-independence for supported members of the view hierarchy, such as text, symbol images, lines, shapes, and fills.
 
 The following example uses the `createAwardView(forUser:date:)` method from the previous example, and exports its contents as an 800-by-600 point PDF to the file URL `renderURL`. It uses the `size` parameter sent to the rendering closure to center the `trophyAndDate` view vertically and horizontally on the page.
 
@@ -100,51 +101,51 @@ var body: some View {
 }
 ```
 
-##### Creating an Image From Drawing Instructions
+##### Creating an image from drawing instructions
 
-`ImageRenderer` makes it possible to create a custom image by drawing into a [`Canvas`](canvas.md), rendering a `CGImage` from it, and using that to initialize an [`Image`](image.md). To simplify this process, use the `Image` initializer [`init(size:label:opaque:colorMode:renderer:)`](image/init(size:label:opaque:colormode:renderer:).md), which takes a closure whose argument is a [`GraphicsContext`](graphicscontext.md) that you can directly draw into.
+`ImageRenderer` makes it possible to create a custom image by drawing into a [`Canvas`](./canvas.md), rendering a `CGImage` from it, and using that to initialize an [`Image`](./image.md). To simplify this process, use the `Image` initializer [`init(size:label:opaque:colorMode:renderer:)`](./image/init%28size,label,opaque,colormode,renderer%29.md), which takes a closure whose argument is a [`GraphicsContext`](./graphicscontext.md) that you can directly draw into.
 
 ## Topics
 
 ### Creating an image renderer
-- [init(content: Content)](imagerenderer/init(content:).md)
+- [init(content: Content)](./imagerenderer/init%28content%29.md)
   Creates a renderer object with a source content view.
 ### Providing the source view
-- [var content: Content](imagerenderer/content.md)
+- [var content: Content](./imagerenderer/content.md)
   The root view rendered by this image renderer.
 ### Accessing renderer properties
-- [var proposedSize: ProposedViewSize](imagerenderer/proposedsize.md)
+- [var proposedSize: ProposedViewSize](./imagerenderer/proposedsize.md)
   The size proposed to the root view.
-- [var scale: CGFloat](imagerenderer/scale.md)
+- [var scale: CGFloat](./imagerenderer/scale.md)
   The scale at which to render the image.
-- [var isOpaque: Bool](imagerenderer/isopaque.md)
+- [var isOpaque: Bool](./imagerenderer/isopaque.md)
   A Boolean value that indicates whether the alpha channel of the image is fully opaque.
-- [var colorMode: ColorRenderingMode](imagerenderer/colormode.md)
+- [var colorMode: ColorRenderingMode](./imagerenderer/colormode.md)
   The working color space and storage format of the image.
-- [var allowedDynamicRange: Image.DynamicRange?](imagerenderer/alloweddynamicrange.md)
+- [var allowedDynamicRange: Image.DynamicRange?](./imagerenderer/alloweddynamicrange.md)
   The allowed dynamic range of the image, or nil to mark that the dynamic range of the image should be unrestricted. This property defaults to `sdr`, i.e. HDR content will be tone mapped to SDR.
 ### Rendering images
-- [func render(rasterizationScale: CGFloat, renderer: (CGSize, (CGContext) -> Void) -> Void)](imagerenderer/render(rasterizationscale:renderer:).md)
+- [func render(rasterizationScale: CGFloat, renderer: (CGSize, (CGContext) -> Void) -> Void)](./imagerenderer/render%28rasterizationscale,renderer%29.md)
   Draws the renderer’s current contents to an arbitrary Core Graphics context.
-- [var cgImage: CGImage?](imagerenderer/cgimage.md)
+- [var cgImage: CGImage?](./imagerenderer/cgimage.md)
   The current contents of the view, rasterized as a Core Graphics image.
-- [var nsImage: NSImage?](imagerenderer/nsimage.md)
+- [var nsImage: NSImage?](./imagerenderer/nsimage.md)
   The current contents of the view, rasterized as an AppKit image.
-- [var uiImage: UIImage?](imagerenderer/uiimage.md)
+- [var uiImage: UIImage?](./imagerenderer/uiimage.md)
   The current contents of the view, rasterized as a UIKit image.
 ### Producing a stream of images
-- [let objectWillChange: PassthroughSubject<Void, Never>](imagerenderer/objectwillchange.md)
+- [let objectWillChange: PassthroughSubject<Void, Never>](./imagerenderer/objectwillchange.md)
   A publisher that informs subscribers of changes to the image.
-- [var isObservationEnabled: Bool](imagerenderer/isobservationenabled.md)
+- [var isObservationEnabled: Bool](./imagerenderer/isobservationenabled.md)
   If observers of this observed object should be notified when the produced image changes.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Observable](../observation/observable.md)
-- [ObservableObject](../combine/observableobject.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Observable](../Observation/observable.md)
+- [ObservableObject](../Combine/observableobject.md)
 
 
 ---

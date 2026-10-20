@@ -1,7 +1,8 @@
 # prominentValues
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Values in this array may receive unique visual representations or behaviors.
 
@@ -21,9 +22,10 @@ var prominentValues: [Float] { get set }
 
 ## See Also
 
-- [var value: Float](avcaptureslider/value.md)
+### Accessing the control value
+- [var value: Float](./value.md)
   The current value of the slider.
-- [var localizedValueFormat: String?](avcaptureslider/localizedvalueformat.md)
+- [var localizedValueFormat: String?](./localizedvalueformat.md)
   A localized string that defines the presentation of the slider’s value.
 
 

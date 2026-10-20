@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct kev_netevent_apnfallbk_data {
     ...
 };
@@ -17,8 +17,8 @@ struct kev_netevent_apnfallbk_data {
 ## Topics
 
 ### Instance Properties
-- [epid](kev_netevent_apnfallbk_data/3944308-epid.md)
-- [euuid](kev_netevent_apnfallbk_data/3944309-euuid.md)
+- [epid](./kev_netevent_apnfallbk_data/api-3944308-epid.md)
+- [euuid](./kev_netevent_apnfallbk_data/api-3944309-euuid.md)
 
 
 ---

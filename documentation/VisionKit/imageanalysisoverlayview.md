@@ -1,7 +1,8 @@
 # ImageAnalysisOverlayView
 
 **Framework**: VisionKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view that enables people to interact with recognized text, barcodes, and other objects in an image.
 
@@ -17,154 +18,155 @@ A view that enables people to interact with recognized text, barcodes, and other
 
 ## Mentions
 
-- [Enabling Live Text interactions with images](enabling-live-text-interactions-with-images.md)
+- [Enabling Live Text interactions with images](./enabling-live-text-interactions-with-images.md)
 
 #### Overview
 
-This class enables people to interact with specific content types ([`ImageAnalysisOverlayView.InteractionTypes`](imageanalysisoverlayview/interactiontypes.md)) that the framework identifies in an image. For example:
+This class enables people to interact with specific content types ([`ImageAnalysisOverlayView.InteractionTypes`](./imageanalysisoverlayview/interactiontypes.md)) that the framework identifies in an image. For example:
 
-- The Live Text interface enables them to select any text present in the image ([`textSelection`](imageanalysisoverlayview/interactiontypes/textselection.md)), or invoke a URL ([`dataDetectors`](imageanalysisoverlayview/interactiontypes/datadetectors.md)). The text selection UI offers framework-standard buttons for copying selected text, or looking it up on the web for more information.
-- The *subject lift* feature identifies a wide variety of objects, or *subjects*, in images with the [`imageSubject`](imageanalysisoverlayview/interactiontypes/imagesubject.md) interaction type, and provides your app with an image of the objects with the background removed. The [`visualLookUp`](imageanalysisoverlayview/interactiontypes/visuallookup.md) type supplements this feature by adding a button in the bottom corner of the view that people can click or tap for more information about the recognized subjects.
+- The Live Text interface enables them to select any text present in the image ([`textSelection`](./imageanalysisoverlayview/interactiontypes/textselection.md)), or invoke a URL ([`dataDetectors`](./imageanalysisoverlayview/interactiontypes/datadetectors.md)). The text selection UI offers framework-standard buttons for copying selected text, or looking it up on the web for more information.
+- The *subject lift* feature identifies a wide variety of objects, or *subjects*, in images with the [`imageSubject`](./imageanalysisoverlayview/interactiontypes/imagesubject.md) interaction type, and provides your app with an image of the objects with the background removed. The [`visualLookUp`](./imageanalysisoverlayview/interactiontypes/visuallookup.md) type supplements this feature by adding a button in the bottom corner of the view that people can click or tap for more information about the recognized subjects.
 
-#### Configure the Interface and Begin Interaction
+#### Configure the interface and begin interaction
 
 To connect the interface with an image that your app displays, add a new instance of this class as a subview to your app’s image view.
 
-Choose the items that the framework recognizes in an image by configuring the  [`preferredInteractionTypes`](imageanalysisoverlayview/preferredinteractiontypes.md) property. To recognize all types of content, specify the [`automatic`](imageanalysisoverlayview/interactiontypes/automatic.md) option, or choose a combination of types by assigning an array:
+Choose the items that the framework recognizes in an image by configuring the  [`preferredInteractionTypes`](./imageanalysisoverlayview/preferredinteractiontypes.md) property. To recognize all types of content, specify the [`automatic`](./imageanalysisoverlayview/interactiontypes/automatic.md) option, or choose a combination of types by assigning an array:
 
 ```swift
 overlayView.preferredInteractionTypes = [.textSelection, .imageSubject]
 ```
 
-To begin interaction, call one of the [`ImageAnalyzer`](imageanalyzer.md) class’s `analyze` methods, such as [`analyze(_:configuration:)`](imageanalyzer/analyze(_:configuration:).md) and set the result onto this class’s [`analysis`](imageanalysisoverlayview/analysis.md) property.
+To begin interaction, call one of the [`ImageAnalyzer`](./imageanalyzer.md) class’s `analyze` methods, such as [`analyze(_:configuration:)`](./imageanalyzer/analyze%28_,configuration%29.md) and set the result onto this class’s [`analysis`](./imageanalysisoverlayview/analysis.md) property.
 
-You can take more control over the interaction or provide details about your app’s image view by implementing a delegate ([`ImageAnalysisInteractionDelegate`](imageanalysisinteractiondelegate.md)) and assigning it to the [`delegate`](imageanalysisinteraction/delegate.md) property. Your app needs to define the interactive area within the image either by setting the [`trackingImageView`](imageanalysisoverlayview/trackingimageview.md) property, or by implementing the delegate’s [`contentsRect(for:)`](imageanalysisoverlayviewdelegate/contentsrect(for:).md) method.
+You can take more control over the interaction or provide details about your app’s image view by implementing a delegate ([`ImageAnalysisInteractionDelegate`](./imageanalysisinteractiondelegate.md)) and assigning it to the [`delegate`](./imageanalysisinteraction/delegate.md) property. Your app needs to define the interactive area within the image either by setting the [`trackingImageView`](./imageanalysisoverlayview/trackingimageview.md) property, or by implementing the delegate’s [`contentsRect(for:)`](./imageanalysisoverlayviewdelegate/contentsrect%28for%29.md) method.
 
 ## Topics
 
 ### Creating overlay views
-- [convenience init(any ImageAnalysisOverlayViewDelegate)](imageanalysisoverlayview/init(_:).md)
+- [convenience init(any ImageAnalysisOverlayViewDelegate)](./imageanalysisoverlayview/init%28_%29.md)
   Creates an overlay view with the specified delegate object.
-- [init(frame: NSRect)](imageanalysisoverlayview/init(frame:).md)
+- [init(frame: NSRect)](./imageanalysisoverlayview/init%28frame%29.md)
   Creates an overlay view with the specified frame rectangle.
-- [init?(coder: NSCoder)](imageanalysisoverlayview/init(coder:).md)
+- [init?(coder: NSCoder)](./imageanalysisoverlayview/init%28coder%29.md)
   Creates an overlay view from data in a coder object.
 ### Configuring overlay views
-- [var delegate: (any ImageAnalysisOverlayViewDelegate)?](imageanalysisoverlayview/delegate.md)
+- [var delegate: (any ImageAnalysisOverlayViewDelegate)?](./imageanalysisoverlayview/delegate.md)
   An object that handles image analysis interface callbacks.
-- [var analysis: ImageAnalysis?](imageanalysisoverlayview/analysis.md)
+- [var analysis: ImageAnalysis?](./imageanalysisoverlayview/analysis.md)
   The results of analyzing an image for items that people can interact with.
-- [var preferredInteractionTypes: ImageAnalysisOverlayView.InteractionTypes](imageanalysisoverlayview/preferredinteractiontypes.md)
+- [var preferredInteractionTypes: ImageAnalysisOverlayView.InteractionTypes](./imageanalysisoverlayview/preferredinteractiontypes.md)
   The types of interactions that people can perform with the image in this overlay view.
-- [ImageAnalysisOverlayView.InteractionTypes](imageanalysisoverlayview/interactiontypes.md)
+- [ImageAnalysisOverlayView.InteractionTypes](./imageanalysisoverlayview/interactiontypes.md)
   The types of interactions that people can perform with an image.
-- [var trackingImageView: NSImageView?](imageanalysisoverlayview/trackingimageview.md)
+- [var trackingImageView: NSImageView?](./imageanalysisoverlayview/trackingimageview.md)
   The image view that contains the image.
-- [var activeInteractionTypes: ImageAnalysisOverlayView.InteractionTypes](imageanalysisoverlayview/activeinteractiontypes.md)
+- [var activeInteractionTypes: ImageAnalysisOverlayView.InteractionTypes](./imageanalysisoverlayview/activeinteractiontypes.md)
   The types of interactions that a person actively performs.
 ### Responding to view events
-- [func viewDidMoveToSuperview()](imageanalysisoverlayview/viewdidmovetosuperview.md)
+- [func viewDidMoveToSuperview()](./imageanalysisoverlayview/viewdidmovetosuperview%28%29.md)
   Notifies your app when the view initially appears.
 ### Accessing text information
-- [var text: String](imageanalysisoverlayview/text.md)
+- [var text: String](./imageanalysisoverlayview/text.md)
   The text contents of the current image analysis.
-- [var selectedText: String](imageanalysisoverlayview/selectedtext.md)
+- [var selectedText: String](./imageanalysisoverlayview/selectedtext.md)
   The current selected text.
-- [var selectedAttributedText: AttributedString](imageanalysisoverlayview/selectedattributedtext.md)
+- [var selectedAttributedText: AttributedString](./imageanalysisoverlayview/selectedattributedtext.md)
   The current selected attributed text.
-- [var hasActiveTextSelection: Bool](imageanalysisoverlayview/hasactivetextselection.md)
+- [var hasActiveTextSelection: Bool](./imageanalysisoverlayview/hasactivetextselection.md)
   A Boolean value that indicates whether a person or the app has text selected within the image.
-- [func analysisHasText(at: CGPoint) -> Bool](imageanalysisoverlayview/analysishastext(at:).md)
+- [func analysisHasText(at: CGPoint) -> Bool](./imageanalysisoverlayview/analysishastext%28at%29.md)
   Returns a Boolean value that indicates whether the analysis finds text at the specified point.
-- [func hasText(at: CGPoint) -> Bool](imageanalysisoverlayview/hastext(at:).md)
+- [func hasText(at: CGPoint) -> Bool](./imageanalysisoverlayview/hastext%28at%29.md)
   Returns a Boolean value that indicates whether active text exists at the specified point.
-- [func hasDataDetector(at: CGPoint) -> Bool](imageanalysisoverlayview/hasdatadetector(at:).md)
+- [func hasDataDetector(at: CGPoint) -> Bool](./imageanalysisoverlayview/hasdatadetector%28at%29.md)
   Returns a Boolean value that indicates whether the analysis detects data at the specified point.
 ### Managing text selection
-- [var selectedRanges: [Range<String.Index>]](imageanalysisoverlayview/selectedranges.md)
+- [var selectedRanges: [Range<String.Index>]](./imageanalysisoverlayview/selectedranges.md)
   The current selected ranges.
-- [func resetSelection()](imageanalysisoverlayview/resetselection.md)
+- [func resetSelection()](./imageanalysisoverlayview/resetselection%28%29.md)
   Removes a person’s text selection from the interface.
 ### Accessing image subjects
-- [var subjects: Set<ImageAnalysisOverlayView.Subject>](imageanalysisoverlayview/subjects.md)
+- [var subjects: Set<ImageAnalysisOverlayView.Subject>](./imageanalysisoverlayview/subjects.md)
   The set of all subjects the framework identifies in an image.
-- [ImageAnalysisOverlayView.Subject](imageanalysisoverlayview/subject.md)
+- [ImageAnalysisOverlayView.Subject](./imageanalysisoverlayview/subject.md)
   An area of interest in an image that the framework identifies as a primary focal point.
-- [func image(for: Set<ImageAnalysisOverlayView.Subject>) async throws -> NSImage](imageanalysisoverlayview/image(for:).md)
+- [func image(for: Set<ImageAnalysisOverlayView.Subject>) async throws -> NSImage](./imageanalysisoverlayview/image%28for%29.md)
   Provides an image asynchronously that contains the given subjects with the background removed.
-- [func subject(at: CGPoint) async -> ImageAnalysisOverlayView.Subject?](imageanalysisoverlayview/subject(at:).md)
+- [func subject(at: CGPoint) async -> ImageAnalysisOverlayView.Subject?](./imageanalysisoverlayview/subject%28at%29.md)
   Returns the subject at the given point within the overlay view’s image, if one exists.
 ### Managing image subjects
-- [func beginSubjectAnalysisIfNecessary()](imageanalysisoverlayview/beginsubjectanalysisifnecessary.md)
+- [func beginSubjectAnalysisIfNecessary()](./imageanalysisoverlayview/beginsubjectanalysisifnecessary%28%29.md)
   Begins subject analysis on the overlay view’s image.
-- [var highlightedSubjects: Set<ImageAnalysisOverlayView.Subject>](imageanalysisoverlayview/highlightedsubjects.md)
+- [var highlightedSubjects: Set<ImageAnalysisOverlayView.Subject>](./imageanalysisoverlayview/highlightedsubjects.md)
   All highlighted subjects in the overlay view’s image.
 ### Querying the interface state
-- [var liveTextButtonVisible: Bool](imageanalysisoverlayview/livetextbuttonvisible.md)
+- [var liveTextButtonVisible: Bool](./imageanalysisoverlayview/livetextbuttonvisible.md)
   A Boolean value that indicates whether the Live Text button appears.
-- [var isSupplementaryInterfaceHidden: Bool](imageanalysisoverlayview/issupplementaryinterfacehidden.md)
+- [var isSupplementaryInterfaceHidden: Bool](./imageanalysisoverlayview/issupplementaryinterfacehidden.md)
   A Boolean value that indicates whether the view hides supplementary interface objects.
-- [func hasInteractiveItem(at: CGPoint) -> Bool](imageanalysisoverlayview/hasinteractiveitem(at:).md)
+- [func hasInteractiveItem(at: CGPoint) -> Bool](./imageanalysisoverlayview/hasinteractiveitem%28at%29.md)
   Returns a Boolean value that indicates whether active text, data detectors, or supplementary interface objects exist at the specified point.
-- [func hasSupplementaryInterface(at: CGPoint) -> Bool](imageanalysisoverlayview/hassupplementaryinterface(at:).md)
+- [func hasSupplementaryInterface(at: CGPoint) -> Bool](./imageanalysisoverlayview/hassupplementaryinterface%28at%29.md)
   Returns a Boolean value that indicates whether supplementary interface objects exist at the specified point.
-- [var selectableItemsHighlighted: Bool](imageanalysisoverlayview/selectableitemshighlighted.md)
+- [var selectableItemsHighlighted: Bool](./imageanalysisoverlayview/selectableitemshighlighted.md)
   A Boolean value that indicates whether the overlay view highlights actionable text or data that the analyzer detects in text.
 ### Customizing the interface
-- [func setSupplementaryInterfaceHidden(Bool, animated: Bool)](imageanalysisoverlayview/setsupplementaryinterfacehidden(_:animated:).md)
+- [func setSupplementaryInterfaceHidden(Bool, animated: Bool)](./imageanalysisoverlayview/setsupplementaryinterfacehidden%28_,animated%29.md)
   Hides or shows supplementary interface objects, such as the Live Text button and the interface for Quick Actions, depending on the item type.
-- [var supplementaryInterfaceContentInsets: NSEdgeInsets](imageanalysisoverlayview/supplementaryinterfacecontentinsets.md)
+- [var supplementaryInterfaceContentInsets: NSEdgeInsets](./imageanalysisoverlayview/supplementaryinterfacecontentinsets.md)
   The distances the edges of content are inset from the supplementary interface.
-- [var supplementaryInterfaceFont: NSFont?](imageanalysisoverlayview/supplementaryinterfacefont.md)
+- [var supplementaryInterfaceFont: NSFont?](./imageanalysisoverlayview/supplementaryinterfacefont.md)
   The font to use for the supplementary interface.
-- [ImageAnalysisOverlayView.MenuTag](imageanalysisoverlayview/menutag.md)
+- [ImageAnalysisOverlayView.MenuTag](./imageanalysisoverlayview/menutag.md)
   Tags that enable your app to manage image-analysis context menu items.
 ### Managing custom image views
-- [var contentsRect: CGRect](imageanalysisoverlayview/contentsrect.md)
+- [var contentsRect: CGRect](./imageanalysisoverlayview/contentsrect.md)
   Returns the rectangle, in unit coordinates, that contains the image within the superview.
-- [func setContentsRectNeedsUpdate()](imageanalysisoverlayview/setcontentsrectneedsupdate.md)
+- [func setContentsRectNeedsUpdate()](./imageanalysisoverlayview/setcontentsrectneedsupdate%28%29.md)
   Informs the view that contains the image when the layout changes and the view needs to reload its content.
 ### Errors
-- [ImageAnalysisOverlayView.SubjectUnavailable](imageanalysisoverlayview/subjectunavailable.md)
+- [ImageAnalysisOverlayView.SubjectUnavailable](./imageanalysisoverlayview/subjectunavailable.md)
   Error conditions that can occur during subject analysis.
 
 ## Relationships
 
 ### Inherits From
-- [NSView](../appkit/nsview.md)
+- [NSView](../AppKit/nsview.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](../AppKit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../AppKit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../AppKit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../AppKit/nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](../AppKit/nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
 
 ## See Also
 
-- [Enabling Live Text interactions with images](enabling-live-text-interactions-with-images.md)
+### Content recognition and interaction in images
+- [Enabling Live Text interactions with images](./enabling-live-text-interactions-with-images.md)
   Add a Live Text interface that enables users to perform actions with text and QR codes that appear in images.
-- [class ImageAnalyzer](imageanalyzer.md)
+- [class ImageAnalyzer](./imageanalyzer.md)
   An object that finds items in images that people can interact with, such as subjects, text, and QR codes.
-- [class ImageAnalysis](imageanalysis.md)
+- [class ImageAnalysis](./imageanalysis.md)
   An object that represents the results of analyzing an image, and provides the input for the Live Text interface object.
-- [class ImageAnalysisInteraction](imageanalysisinteraction.md)
+- [class ImageAnalysisInteraction](./imageanalysisinteraction.md)
   An interface that enables people to interact with recognized text, barcodes, and other objects in an image.
-- [protocol ImageAnalysisInteractionDelegate](imageanalysisinteractiondelegate.md)
+- [protocol ImageAnalysisInteractionDelegate](./imageanalysisinteractiondelegate.md)
   A delegate that handles image-analysis and user-interaction callbacks for an interaction object.
-- [protocol ImageAnalysisOverlayViewDelegate](imageanalysisoverlayviewdelegate.md)
+- [protocol ImageAnalysisOverlayViewDelegate](./imageanalysisoverlayviewdelegate.md)
   A delegate that handles image-analysis and user-interaction callbacks for an overlay view.
-- [struct CameraRegionView](cameraregionview.md)
+- [struct CameraRegionView](./cameraregionview.md)
   This view displays a stabilized region of interest within a person’s view and provides passthrough camera feed for that selected region.
 
 

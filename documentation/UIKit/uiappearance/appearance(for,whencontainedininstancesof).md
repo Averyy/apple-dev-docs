@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Returns the appearance proxy for the object when it’s contained in the hierarchy the specified classes describe and has the specified trait collection.
@@ -17,6 +18,10 @@ Returns the appearance proxy for the object when it’s contained in the hierarc
 
 ```swift
 static func appearance(for trait: UITraitCollection, whenContainedInInstancesOf containerTypes: [any UIAppearanceContainer.Type]) -> Self
+```
+
+```objc
++ (instancetype) appearanceForTraitCollection:(UITraitCollection *) trait whenContainedInInstancesOfClasses:(NSArray<Class<UIAppearanceContainer>> *) containerTypes;
 ```
 
 #### Return Value
@@ -36,11 +41,12 @@ Do not set `containerTypes` to an unrelated list of types or to a list that does
 
 ## See Also
 
-- [static func appearance() -> Self](uiappearance/appearance.md)
+### Working with the appearance proxy
+- [static func appearance() -> Self](./appearance%28%29.md)
   Returns the appearance proxy for the receiver.
-- [static func appearance(for: UITraitCollection) -> Self](uiappearance/appearance(for:).md)
+- [static func appearance(for: UITraitCollection) -> Self](./appearance%28for%29.md)
   Returns the appearance proxy for the receiver that has the passed trait collection.
-- [static func appearance(whenContainedInInstancesOf: [any UIAppearanceContainer.Type]) -> Self](uiappearance/appearance(whencontainedininstancesof:).md)
+- [static func appearance(whenContainedInInstancesOf: [any UIAppearanceContainer.Type]) -> Self](./appearance%28whencontainedininstancesof%29.md)
   Returns the appearance proxy for the object when it’s contained in the hierarchy the specified classes describe.
 
 

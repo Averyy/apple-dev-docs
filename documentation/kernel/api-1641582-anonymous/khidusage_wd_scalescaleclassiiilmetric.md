@@ -1,14 +1,15 @@
 # kHIDUsage_WD_ScaleScaleClassIIILMetric
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_WD_ScaleScaleClassIIILMetric = 0x25
 ```
 

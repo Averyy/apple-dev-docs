@@ -1,7 +1,8 @@
 # AVAudioBitRateStrategy_LongTermAverage
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A value that represents an average bit rate strategy.
 
@@ -20,13 +21,18 @@ A value that represents an average bit rate strategy.
 let AVAudioBitRateStrategy_LongTermAverage: String
 ```
 
+```c
+extern NSString * const AVAudioBitRateStrategy_LongTermAverage;
+```
+
 ## See Also
 
-- [let AVAudioBitRateStrategy_Constant: String](avaudiobitratestrategy_constant.md)
+### Bit rate strategy values
+- [let AVAudioBitRateStrategy_Constant: String](./avaudiobitratestrategy_constant.md)
   A value that represents a constant bit rate strategy.
-- [let AVAudioBitRateStrategy_VariableConstrained: String](avaudiobitratestrategy_variableconstrained.md)
+- [let AVAudioBitRateStrategy_VariableConstrained: String](./avaudiobitratestrategy_variableconstrained.md)
   A value that represents a constrained variable bit rate strategy.
-- [let AVAudioBitRateStrategy_Variable: String](avaudiobitratestrategy_variable.md)
+- [let AVAudioBitRateStrategy_Variable: String](./avaudiobitratestrategy_variable.md)
   A value that represents a variable bit rate strategy.
 
 

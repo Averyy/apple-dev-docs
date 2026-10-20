@@ -1,7 +1,8 @@
 # ShaderGraphMaterial.Error
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -20,18 +21,18 @@ enum Error
 ## Topics
 
 ### Enumeration Cases
-- [ShaderGraphMaterial.Error.incorrectTypeForParameterName](shadergraphmaterial/error/incorrecttypeforparametername.md)
-- [ShaderGraphMaterial.Error.parameterNameNotFound](shadergraphmaterial/error/parameternamenotfound.md)
+- [ShaderGraphMaterial.Error.incorrectTypeForParameterName](./error/incorrecttypeforparametername.md)
+- [ShaderGraphMaterial.Error.parameterNameNotFound](./error/parameternamenotfound.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

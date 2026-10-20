@@ -1,7 +1,8 @@
 # init(screenSize:layers:label:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 A convenience initializer that creates a rate map descriptor with a set of layer descriptors.
 
@@ -11,7 +12,7 @@ A convenience initializer that creates a rate map descriptor with a set of layer
 - Mac Catalyst 13.4+
 - macOS 10.15.4+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ convenience init(screenSize: MTLSize, layers: [MTLRasterizationRateLayerDescript
 
 #### Return Value
 
-A descriptor object whose [`screenSize`](mtlrasterizationratemapdescriptor/screensize.md) and [`label`](mtlrasterizationratemapdescriptor/label.md) properties are set to the provided values and whose rate map layers are set to the array you provided.
+A descriptor object whose [`screenSize`](./screensize.md) and [`label`](./label.md) properties are set to the provided values and whose rate map layers are set to the array you provided.
 
 ## Parameters
 
@@ -31,9 +32,10 @@ A descriptor object whose [`screenSize`](mtlrasterizationratemapdescriptor/scree
 
 ## See Also
 
-- [convenience init(screenSize: MTLSize, label: String?)](mtlrasterizationratemapdescriptor/init(screensize:label:).md)
+### Creating rate map descriptors
+- [convenience init(screenSize: MTLSize, label: String?)](./init%28screensize,label%29.md)
   A convenience initializer that creates a rate map descriptor with a given size and identifier.
-- [convenience init(screenSize: MTLSize, layer: MTLRasterizationRateLayerDescriptor, label: String?)](mtlrasterizationratemapdescriptor/init(screensize:layer:label:).md)
+- [convenience init(screenSize: MTLSize, layer: MTLRasterizationRateLayerDescriptor, label: String?)](./init%28screensize,layer,label%29.md)
   A convenience initializer that creates a rate map descriptor with a single rate layer.
 
 

@@ -1,7 +1,8 @@
 # MACaptionAppearanceTextEdgeStyle
 
 **Framework**: Media Accessibility  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that specifies a style for the outside of the text.
 
@@ -19,43 +20,48 @@ A value that specifies a style for the outside of the text.
 enum MACaptionAppearanceTextEdgeStyle
 ```
 
+```c
+enum MACaptionAppearanceTextEdgeStyle : CFIndex;
+```
+
 ## Topics
 
 ### Constants
-- [MACaptionAppearanceTextEdgeStyle.undefined](macaptionappearancetextedgestyle/undefined.md)
+- [MACaptionAppearanceTextEdgeStyle.undefined](./macaptionappearancetextedgestyle/undefined.md)
   An edge style has not been specified.
-- [MACaptionAppearanceTextEdgeStyle.none](macaptionappearancetextedgestyle/none.md)
+- [MACaptionAppearanceTextEdgeStyle.none](./macaptionappearancetextedgestyle/none.md)
   The text should not have a styled edge.
-- [MACaptionAppearanceTextEdgeStyle.raised](macaptionappearancetextedgestyle/raised.md)
+- [MACaptionAppearanceTextEdgeStyle.raised](./macaptionappearancetextedgestyle/raised.md)
   An edge makes the text appear to rise above the background.
-- [MACaptionAppearanceTextEdgeStyle.depressed](macaptionappearancetextedgestyle/depressed.md)
+- [MACaptionAppearanceTextEdgeStyle.depressed](./macaptionappearancetextedgestyle/depressed.md)
   An edge makes the text appear pushed in.
-- [MACaptionAppearanceTextEdgeStyle.uniform](macaptionappearancetextedgestyle/uniform.md)
+- [MACaptionAppearanceTextEdgeStyle.uniform](./macaptionappearancetextedgestyle/uniform.md)
   A thin outline lies along the edge of the text.
-- [MACaptionAppearanceTextEdgeStyle.dropShadow](macaptionappearancetextedgestyle/dropshadow.md)
+- [MACaptionAppearanceTextEdgeStyle.dropShadow](./macaptionappearancetextedgestyle/dropshadow.md)
   An edge makes the text appear to float above the background.
 ### Initializers
-- [init?(rawValue: CFIndex)](macaptionappearancetextedgestyle/init(rawvalue:).md)
+- [init?(rawValue: CFIndex)](./macaptionappearancetextedgestyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum MACaptionAppearanceDomain](macaptionappearancedomain.md)
+### Constants
+- [enum MACaptionAppearanceDomain](./macaptionappearancedomain.md)
   A value that specifies which domain to retrieve a preference setting from.
-- [enum MACaptionAppearanceDisplayType](macaptionappearancedisplaytype.md)
+- [enum MACaptionAppearanceDisplayType](./macaptionappearancedisplaytype.md)
   A value that specifies the type of captions to display.
-- [enum MACaptionAppearanceBehavior](macaptionappearancebehavior.md)
+- [enum MACaptionAppearanceBehavior](./macaptionappearancebehavior.md)
   A value that indicates the preferred behavior for a preference setting.
-- [enum MACaptionAppearanceFontStyle](macaptionappearancefontstyle.md)
+- [enum MACaptionAppearanceFontStyle](./macaptionappearancefontstyle.md)
   A value that specifies a font style.
 
 

@@ -1,7 +1,8 @@
 # MTL4UpdateSparseBufferMappingOperation
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Groups together arguments for an operation to update a sparse buffer mapping.
 
@@ -19,36 +20,41 @@ Groups together arguments for an operation to update a sparse buffer mapping.
 struct MTL4UpdateSparseBufferMappingOperation
 ```
 
+```c
+typedef struct { ... } MTL4UpdateSparseBufferMappingOperation;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](mtl4updatesparsebuffermappingoperation/init.md)
-- [init(mode: MTLSparseTextureMappingMode, bufferRange: NSRange, heapOffset: Int)](mtl4updatesparsebuffermappingoperation/init(mode:bufferrange:heapoffset:).md)
+- [init()](./mtl4updatesparsebuffermappingoperation/init%28%29.md)
+- [init(mode: MTLSparseTextureMappingMode, bufferRange: NSRange, heapOffset: Int)](./mtl4updatesparsebuffermappingoperation/init%28mode,bufferrange,heapoffset%29.md)
 ### Instance Properties
-- [var bufferRange: NSRange](mtl4updatesparsebuffermappingoperation/bufferrange.md)
+- [var bufferRange: NSRange](./mtl4updatesparsebuffermappingoperation/bufferrange.md)
   The range in the buffer, in tiles.
-- [var heapOffset: Int](mtl4updatesparsebuffermappingoperation/heapoffset.md)
+- [var heapOffset: Int](./mtl4updatesparsebuffermappingoperation/heapoffset.md)
   The starting offset in the heap, in tiles.
-- [var mode: MTLSparseTextureMappingMode](mtl4updatesparsebuffermappingoperation/mode.md)
+- [var mode: MTLSparseTextureMappingMode](./mtl4updatesparsebuffermappingoperation/mode.md)
   The mode of the mapping operation to perform.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [enum MTLBufferSparseTier](mtlbuffersparsetier.md)
+### Sparse resources
+- [enum MTLBufferSparseTier](./mtlbuffersparsetier.md)
   Enumerates the different support levels for sparse buffers.
-- [struct MTL4CopySparseBufferMappingOperation](mtl4copysparsebuffermappingoperation.md)
+- [struct MTL4CopySparseBufferMappingOperation](./mtl4copysparsebuffermappingoperation.md)
   Groups together arguments for an operation to copy a sparse buffer mapping.
-- [enum MTLTextureSparseTier](mtltexturesparsetier.md)
+- [enum MTLTextureSparseTier](./mtltexturesparsetier.md)
   Enumerates the different support levels for sparse textures.
-- [struct MTL4CopySparseTextureMappingOperation](mtl4copysparsetexturemappingoperation.md)
+- [struct MTL4CopySparseTextureMappingOperation](./mtl4copysparsetexturemappingoperation.md)
   Groups together arguments for an operation to copy a sparse texture mapping.
-- [struct MTL4UpdateSparseTextureMappingOperation](mtl4updatesparsetexturemappingoperation.md)
+- [struct MTL4UpdateSparseTextureMappingOperation](./mtl4updatesparsetexturemappingoperation.md)
   Groups together arguments for an operation to update a sparse texture mapping.
 
 

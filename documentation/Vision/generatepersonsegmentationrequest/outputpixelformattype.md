@@ -1,7 +1,8 @@
 # outputPixelFormatType
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The desired pixel format of the observation.
 
@@ -22,15 +23,16 @@ final var outputPixelFormatType: OSType { get set }
 
 #### Discussion
 
-The default value is [`kCVPixelFormatType_OneComponent8`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_onecomponent8).
+The default value is [`kCVPixelFormatType_OneComponent8`](../../CoreVideo/kcvpixelformattype_onecomponent8.md).
 
 ## See Also
 
-- [var qualityLevel: GeneratePersonSegmentationRequest.QualityLevel](generatepersonsegmentationrequest/qualitylevel-swift.property.md)
+### Configuring a request
+- [var qualityLevel: GeneratePersonSegmentationRequest.QualityLevel](./qualitylevel-swift.property.md)
   A value that indicates how the request balances accuracy and performance.
-- [GeneratePersonSegmentationRequest.QualityLevel](generatepersonsegmentationrequest/qualitylevel-swift.enum.md)
+- [GeneratePersonSegmentationRequest.QualityLevel](./qualitylevel-swift.enum.md)
   Constants that define the levels of quality for a person-segmentation request.
-- [var supportedOutputPixelFormats: [OSType]](generatepersonsegmentationrequest/supportedoutputpixelformats.md)
+- [var supportedOutputPixelFormats: [OSType]](./supportedoutputpixelformats.md)
   The collection of supported pixel format types.
 
 

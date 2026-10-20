@@ -1,7 +1,8 @@
 # polygonApproximation(epsilon:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+

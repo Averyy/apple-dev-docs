@@ -1,7 +1,8 @@
 # init(leaderboard:playerScope:)
 
 **Framework**: GameKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view controller that presents a leaderboard with data for the specified players.
 
@@ -19,6 +20,10 @@ Creates a view controller that presents a leaderboard with data for the specifie
 init(leaderboard: GKLeaderboard, playerScope: GKLeaderboard.PlayerScope)
 ```
 
+```objc
+- (instancetype) initWithLeaderboard:(GKLeaderboard *) leaderboard playerScope:(GKLeaderboardPlayerScope) playerScope;
+```
+
 #### Return Value
 
 The initialized view controller.
@@ -30,17 +35,18 @@ The initialized view controller.
 
 ## See Also
 
-- [init(state: GKGameCenterViewControllerState)](gkgamecenterviewcontroller/init(state:).md)
+### Configuring Game Center content
+- [init(state: GKGameCenterViewControllerState)](./init%28state%29.md)
   Creates a view controller that presents the specified Game Center content.
-- [enum GKGameCenterViewControllerState](gkgamecenterviewcontrollerstate.md)
+- [enum GKGameCenterViewControllerState](../gkgamecenterviewcontrollerstate.md)
   The type of content for the view controller to present.
-- [init(leaderboardID: String, playerScope: GKLeaderboard.PlayerScope, timeScope: GKLeaderboard.TimeScope)](gkgamecenterviewcontroller/init(leaderboardid:playerscope:timescope:).md)
+- [init(leaderboardID: String, playerScope: GKLeaderboard.PlayerScope, timeScope: GKLeaderboard.TimeScope)](./init%28leaderboardid,playerscope,timescope%29.md)
   Creates a view controller that presents a leaderboard with data from the specified players and time period.
-- [init(leaderboardSetID: String)](gkgamecenterviewcontroller/init(leaderboardsetid:).md)
+- [init(leaderboardSetID: String)](./init%28leaderboardsetid%29.md)
   Creates a view controller that presents a leaderboard set.
-- [init(achievementID: String)](gkgamecenterviewcontroller/init(achievementid:).md)
+- [init(achievementID: String)](./init%28achievementid%29.md)
   Creates a view controller that presents an achievement.
-- [init(player: GKPlayer)](gkgamecenterviewcontroller/init(player:).md)
+- [init(player: GKPlayer)](./init%28player%29.md)
   Creates a view controller that presents a player’s Game Center profile.
 
 

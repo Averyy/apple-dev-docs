@@ -1,6 +1,7 @@
 # Managing Content Ratings, Alternate Versions, and Equivalencies
 
-**Framework**: Apple Music API
+**Framework**: Apple Music API  
+**Role**: Article
 
 Handle multiple and alternate versions of content.
 
@@ -34,19 +35,20 @@ GET https://api.music.apple.com/v1/catalog/us/albums?filter[equivalents]=1540031
 
 ## See Also
 
-- [Generating Developer Tokens](generating-developer-tokens.md)
+### Essentials
+- [Generating Developer Tokens](./generating-developer-tokens.md)
   Generate a developer token needed to make requests to Apple Music API.
-- [User Authentication for MusicKit](user-authentication-for-musickit.md)
+- [User Authentication for MusicKit](./user-authentication-for-musickit.md)
   Authenticate requests for user data using the Music User Token.
-- [Handling Requests and Responses](handling-requests-and-responses.md)
+- [Handling Requests and Responses](./handling-requests-and-responses.md)
   Write a request and handle responses from the API.
-- [Handling Resource Representation and Relationships](handling-resource-representation-and-relationships.md)
+- [Handling Resource Representation and Relationships](./handling-resource-representation-and-relationships.md)
   Fetch resources with extended attributes and included relationships and relationship views.
-- [Storefronts and Localization](storefronts-and-localization.md)
+- [Storefronts and Localization](./storefronts-and-localization.md)
   Pick a region-specific geographic location from which to retrieve catalog information, or retrieve information from the user’s personal library.
-- [Common Objects](common-objects.md)
+- [Common Objects](./common-objects.md)
   Understand the common JSON objects that framework responses contain.
-- [Fetching Resources by Page](fetching-resources-by-page.md)
+- [Fetching Resources by Page](./fetching-resources-by-page.md)
   Use pagination to fetch the next set of objects.
 
 

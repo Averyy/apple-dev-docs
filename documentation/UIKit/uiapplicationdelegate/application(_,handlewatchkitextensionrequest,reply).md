@@ -1,7 +1,8 @@
 # application(_:handleWatchKitExtensionRequest:reply:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to respond to a request from a paired watchOS app.
 
@@ -9,26 +10,36 @@ Asks the delegate to respond to a request from a paired watchOS app.
 - iOS 8.2+
 - iPadOS 8.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
+optional func application(_ application: UIApplication, handleWatchKitExtensionRequest userInfo: [AnyHashable : Any]?, reply: @escaping ([AnyHashable : Any]?) -> Void)
+```
+
+```swift
 optional func application(_ application: UIApplication, handleWatchKitExtensionRequest userInfo: [AnyHashable : Any]?) async -> [AnyHashable : Any]?
+```
+
+```objc
+- (void) application:(UIApplication *) application handleWatchKitExtensionRequest:(NSDictionary *) userInfo reply:(void (^)(NSDictionary *replyInfo)) reply;
 ```
 
 #### Discussion
 
 If your iOS app and watchOS app coordinate efforts to perform certain tasks, implement this method and use it to respond to requests from the watchOS app. After finishing the request, execute the provided `reply` block (if any) to return the results.
 
-Because this method is likely to be called while your app is in the background, call the [`beginBackgroundTask(withName:expirationHandler:)`](uiapplication/beginbackgroundtask(withname:expirationhandler:).md) method at the start of your implementation and the [`endBackgroundTask(_:)`](uiapplication/endbackgroundtask(_:).md) method after you have processed the reply and executed the `reply` block. Starting a background task ensures that your app is not suspended before it has a chance to send its reply.
+Because this method is likely to be called while your app is in the background, call the [`beginBackgroundTask(withName:expirationHandler:)`](../uiapplication/beginbackgroundtask%28withname,expirationhandler%29.md) method at the start of your implementation and the [`endBackgroundTask(_:)`](../uiapplication/endbackgroundtask%28_%29.md) method after you have processed the reply and executed the `reply` block. Starting a background task ensures that your app is not suspended before it has a chance to send its reply.
 
 ## Parameters
 
 - `application`: Your singleton app object.
 - `userInfo`: A dictionary provided by the watchOS app with the request information. Use the data in this dictionary to process the request from the watchOS app.
-- `reply`: A block to execute with the results of the request. This block has no return value and takes the following parameter: - **replyInfo**: A dictionary containing data to return to the watchOS app. The contents of the dictionary must be serializable to a property list file. The contents of this dictionary are at your discretion and you may specify `nil`.
+- `reply`: A block to execute with the results of the request. This block has no return value and takes the following parameter:
+
+  - **replyInfo**: A dictionary containing data to return to the watchOS app. The contents of the dictionary must be serializable to a property list file. The contents of this dictionary are at your discretion and you may specify `nil`.
 
 
 ---

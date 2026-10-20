@@ -1,7 +1,8 @@
 # setRegistrationHandler(handler:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the registration handler work item for the dispatch source.
 
@@ -10,9 +11,9 @@ Sets the registration handler work item for the dispatch source.
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -32,11 +33,12 @@ Installing a registration handler is a way to be notified when that set up is co
 
 ## See Also
 
-- [func setEventHandler(handler: DispatchWorkItem)](dispatchsourceprotocol/seteventhandler(handler:).md)
+### Installing Event Handlers
+- [func setEventHandler(handler: DispatchWorkItem)](./seteventhandler%28handler%29.md)
   Sets the event handler work item for the dispatch source.
-- [func setEventHandler(qos: DispatchQoS, flags: DispatchWorkItemFlags, handler: Self.DispatchSourceHandler?)](dispatchsourceprotocol/seteventhandler(qos:flags:handler:).md)
-- [func setRegistrationHandler(qos: DispatchQoS, flags: DispatchWorkItemFlags, handler: Self.DispatchSourceHandler?)](dispatchsourceprotocol/setregistrationhandler(qos:flags:handler:).md)
-- [DispatchSourceProtocol.DispatchSourceHandler](dispatchsourceprotocol/dispatchsourcehandler.md)
+- [func setEventHandler(qos: DispatchQoS, flags: DispatchWorkItemFlags, handler: Self.DispatchSourceHandler?)](./seteventhandler%28qos,flags,handler%29.md)
+- [func setRegistrationHandler(qos: DispatchQoS, flags: DispatchWorkItemFlags, handler: Self.DispatchSourceHandler?)](./setregistrationhandler%28qos,flags,handler%29.md)
+- [DispatchSourceProtocol.DispatchSourceHandler](./dispatchsourcehandler.md)
 
 
 ---

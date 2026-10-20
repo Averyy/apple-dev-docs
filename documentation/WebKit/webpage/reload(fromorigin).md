@@ -1,7 +1,8 @@
 # reload(fromOrigin:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads the current webpage.
 
@@ -29,7 +30,8 @@ An async sequence you use to track the loading progress of the navigation. If th
 
 ## See Also
 
-- [func stopLoading()](webpage/stoploading.md)
+### Managing the loading process
+- [func stopLoading()](./stoploading%28%29.md)
   Stops loading all resources on the current page.
 
 

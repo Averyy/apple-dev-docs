@@ -1,7 +1,8 @@
 # HMCharacteristicValueSmokeDetectionStatus
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for smoke detection status.
 
@@ -19,25 +20,29 @@ Possible values for smoke detection status.
 enum HMCharacteristicValueSmokeDetectionStatus
 ```
 
+```c
+enum HMCharacteristicValueSmokeDetectionStatus : NSInteger;
+```
+
 ## Topics
 
 ### Smoke Detection Status
-- [HMCharacteristicValueSmokeDetectionStatus.none](hmcharacteristicvaluesmokedetectionstatus/none.md)
+- [HMCharacteristicValueSmokeDetectionStatus.none](./hmcharacteristicvaluesmokedetectionstatus/none.md)
   No smoke detected.
-- [HMCharacteristicValueSmokeDetectionStatus.detected](hmcharacteristicvaluesmokedetectionstatus/detected.md)
+- [HMCharacteristicValueSmokeDetectionStatus.detected](./hmcharacteristicvaluesmokedetectionstatus/detected.md)
   Smoke detected.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluesmokedetectionstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluesmokedetectionstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # isContinuous
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the transaction originated from an action that produces a sequence of values.
 
@@ -26,11 +27,12 @@ This value is `true` if a continuous action created the transaction, and is `fal
 
 ## See Also
 
-- [var scrollTargetAnchor: UnitPoint?](transaction/scrolltargetanchor.md)
+### Getting information about a transaction
+- [var scrollTargetAnchor: UnitPoint?](./scrolltargetanchor.md)
   The preferred alignment of the view within a scroll view’s visible region when scrolling to a view.
-- [var tracksVelocity: Bool](transaction/tracksvelocity.md)
+- [var tracksVelocity: Bool](./tracksvelocity.md)
   Whether this transaction will track the velocity of any animatable properties that change.
-- [subscript<K>(K.Type) -> K.Value](transaction/subscript(_:).md)
+- [subscript<K>(K.Type) -> K.Value](./subscript%28_%29.md)
   Accesses the transaction value associated with a custom key.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Symbols  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A configuration for a symbol effect.
@@ -23,7 +24,8 @@ var configuration: SymbolEffectConfiguration { get }
 
 ## See Also
 
-- [struct SymbolEffectConfiguration](symboleffectconfiguration.md)
+### Accessing the configuration
+- [struct SymbolEffectConfiguration](../symboleffectconfiguration.md)
   A type that specifies the configuration of a symbol effect.
 
 

@@ -1,7 +1,8 @@
 # nanoseconds(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts the specified number of nanoseconds into an instance of this scheduler time type.
 
@@ -22,13 +23,14 @@ static func nanoseconds(_ ns: Int) -> RunLoop.SchedulerTimeType.Stride
 
 ## See Also
 
-- [static func microseconds(Int) -> RunLoop.SchedulerTimeType.Stride](runloop/schedulertimetype/stride/microseconds(_:).md)
+### Converting to Seconds
+- [static func microseconds(Int) -> RunLoop.SchedulerTimeType.Stride](./microseconds%28_%29.md)
   Converts the specified number of microseconds into an instance of this scheduler time type.
-- [static func milliseconds(Int) -> RunLoop.SchedulerTimeType.Stride](runloop/schedulertimetype/stride/milliseconds(_:).md)
+- [static func milliseconds(Int) -> RunLoop.SchedulerTimeType.Stride](./milliseconds%28_%29.md)
   Converts the specified number of milliseconds into an instance of this scheduler time type.
-- [static func seconds(Double) -> RunLoop.SchedulerTimeType.Stride](runloop/schedulertimetype/stride/seconds(_:)-4kk8j.md)
+- [static func seconds(Double) -> RunLoop.SchedulerTimeType.Stride](./seconds%28_%29-4kk8j.md)
   Converts the specified number of seconds, as a floating-point value, into an instance of this scheduler time type.
-- [static func seconds(Int) -> RunLoop.SchedulerTimeType.Stride](runloop/schedulertimetype/stride/seconds(_:)-48wwk.md)
+- [static func seconds(Int) -> RunLoop.SchedulerTimeType.Stride](./seconds%28_%29-48wwk.md)
   Converts the specified number of seconds into an instance of this scheduler time type.
 
 

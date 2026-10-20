@@ -1,7 +1,8 @@
 # boundingBox
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounding box of the detected object.
 
@@ -21,9 +22,10 @@ var boundingBox: CGRect
 
 ## See Also
 
-- [var confidence: Float](detectedobject/confidence.md)
+### Getting the properties
+- [var confidence: Float](./confidence.md)
   The detection confidence. The value will always be between 0.0 and 1.0.
-- [var label: Label](detectedobject/label.md)
+- [var label: Label](./label.md)
   The detected object label.
 
 

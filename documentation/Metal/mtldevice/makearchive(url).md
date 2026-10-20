@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new archive from data available at an `NSURL` address.
@@ -20,13 +21,17 @@ Creates a new archive from data available at an `NSURL` address.
 func makeArchive(url: URL) throws -> any MTL4Archive
 ```
 
+```objc
+- (id<MTL4Archive>) newArchiveWithURL:(NSURL *) url error:(NSError **) error;
+```
+
 #### Return Value
 
-A [`MTL4Archive`](mtl4archive.md) instance, or `nil` if the function failed.
+A [`MTL4Archive`](../mtl4archive.md) instance, or `nil` if the function failed.
 
 ## Parameters
 
-- `url`: An `NSURL` instance that represents the path from which the device loads the [`MTL4Archive`](mtl4archive.md).
+- `url`: An `NSURL` instance that represents the path from which the device loads the [`MTL4Archive`](../mtl4archive.md).
 
 
 ---

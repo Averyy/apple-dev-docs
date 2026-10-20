@@ -1,7 +1,8 @@
 # ManipulationComponent.InputDevice.Kind.indirectPinch
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An indirectly targeted pinching hand.
 

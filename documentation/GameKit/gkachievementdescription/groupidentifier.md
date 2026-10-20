@@ -1,7 +1,8 @@
 # groupIdentifier
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the group that the achievement description is part of.
 
@@ -18,6 +19,10 @@ The identifier for the group that the achievement description is part of.
 
 ```swift
 var groupIdentifier: String? { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly, nullable) NSString * groupIdentifier;
 ```
 
 #### Discussion

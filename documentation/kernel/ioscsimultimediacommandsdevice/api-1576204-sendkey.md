@@ -1,14 +1,15 @@
 # SendKey
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn SendKey(IOMemoryDescriptor *buffer, const DVDKeyClass keyClass, const UInt8 agid, const DVDKeyFormat keyFormat);
 ```
 

@@ -1,7 +1,8 @@
 # RealityView.DefaultPlaceholder
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.0+

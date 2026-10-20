@@ -1,7 +1,8 @@
 # errSecInvalidExtendedKeyUsage
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The extended key usage is not valid.
 
@@ -18,6 +19,10 @@ The extended key usage is not valid.
 
 ```swift
 var errSecInvalidExtendedKeyUsage: OSStatus { get }
+```
+
+```c
+errSecInvalidExtendedKeyUsage
 ```
 
 

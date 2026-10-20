@@ -1,7 +1,8 @@
 # init(title:image:identifier:viewControllerProvider:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tab object.
 
@@ -18,15 +19,19 @@ Creates a tab object.
 init(title: String, image: UIImage?, identifier: String, viewControllerProvider: ((UITab) -> UIViewController)? = nil)
 ```
 
+```objc
+- (instancetype) initWithTitle:(NSString *) title image:(UIImage *) image identifier:(NSString *) identifier viewControllerProvider:(UIViewController * (^)(UITab *)) viewControllerProvider;
+```
+
 ## Mentions
 
-- [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
+- [Elevating your iPad app with a tab bar and sidebar](../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
 ## Parameters
 
 - `title`: The tab’s title.
 - `image`: The tab’s image.
-- `identifier`: An identifier string for the tab. Each identifier must be unique across all the tabs managed by a [`UITabBarController`](uitabbarcontroller.md).
+- `identifier`: An identifier string for the tab. Each identifier must be unique across all the tabs managed by a [`UITabBarController`](../uitabbarcontroller.md).
 - `viewControllerProvider`: The view controller that the system presents when someone selects the tab.
 
 

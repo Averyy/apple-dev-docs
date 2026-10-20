@@ -1,7 +1,8 @@
 # EmptyHoverEffect
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A base hover effect used to build additional effects.
 
@@ -25,15 +26,16 @@ struct EmptyHoverEffect
 ## Relationships
 
 ### Conforms To
-- [CustomHoverEffect](customhovereffect.md)
+- [CustomHoverEffect](./customhovereffect.md)
 
 ## See Also
 
-- [struct AutomaticHoverEffect](automatichovereffect.md)
+### Supporting types
+- [struct AutomaticHoverEffect](./automatichovereffect.md)
   The default hover effect based on the surrounding context.
-- [struct HighlightHoverEffect](highlighthovereffect.md)
+- [struct HighlightHoverEffect](./highlighthovereffect.md)
   A hover effect that highlights views using a light source to indicate position.
-- [struct LiftHoverEffect](lifthovereffect.md)
+- [struct LiftHoverEffect](./lifthovereffect.md)
   A hover effect that slides the pointer under the view and disappears as the view scales up and gains a shadow.
 
 

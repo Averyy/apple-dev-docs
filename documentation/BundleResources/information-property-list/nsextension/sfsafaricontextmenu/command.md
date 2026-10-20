@@ -1,20 +1,23 @@
 # Command
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The command to send to the app extension when the user selects the context menu item.
 
 **Availability**:
 - macOS 10.11.5+
 
+## Details
 
-
-**Type**: string
+- **Name**: `Command`
+- **Type**: string
 
 ## See Also
 
-- [Text](information-property-list/nsextension/sfsafaricontextmenu/text.md)
+### Menu Item Configuration
+- [Text](./text.md)
   The text to display for the context menu item.
 
 

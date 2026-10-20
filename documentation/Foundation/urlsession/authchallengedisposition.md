@@ -1,7 +1,8 @@
 # URLSession.AuthChallengeDisposition
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants passed by session or task delegates to the provided continuation block in response to an authentication challenge.
 
@@ -20,33 +21,38 @@ Constants passed by session or task delegates to the provided continuation block
 enum AuthChallengeDisposition
 ```
 
+```c
+enum NSURLSessionAuthChallengeDisposition : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [URLSession.AuthChallengeDisposition.useCredential](urlsession/authchallengedisposition/usecredential.md)
+- [URLSession.AuthChallengeDisposition.useCredential](./authchallengedisposition/usecredential.md)
   Use the specified credential, which may be `nil`.
-- [URLSession.AuthChallengeDisposition.performDefaultHandling](urlsession/authchallengedisposition/performdefaulthandling.md)
+- [URLSession.AuthChallengeDisposition.performDefaultHandling](./authchallengedisposition/performdefaulthandling.md)
   Use the default handling for the challenge as though this delegate method were not implemented. The provided credential parameter is ignored.
-- [URLSession.AuthChallengeDisposition.cancelAuthenticationChallenge](urlsession/authchallengedisposition/cancelauthenticationchallenge.md)
+- [URLSession.AuthChallengeDisposition.cancelAuthenticationChallenge](./authchallengedisposition/cancelauthenticationchallenge.md)
   Cancel the entire request. The provided credential parameter is ignored.
-- [URLSession.AuthChallengeDisposition.rejectProtectionSpace](urlsession/authchallengedisposition/rejectprotectionspace.md)
+- [URLSession.AuthChallengeDisposition.rejectProtectionSpace](./authchallengedisposition/rejectprotectionspace.md)
   Reject this challenge, and call the authentication delegate method again with the next authentication protection space. The provided credential parameter is ignored.
 ### Initializers
-- [init?(rawValue: Int)](urlsession/authchallengedisposition/init(rawvalue:).md)
+- [init?(rawValue: Int)](./authchallengedisposition/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func urlSession(URLSession, didReceive: URLAuthenticationChallenge, completionHandler: (URLSession.AuthChallengeDisposition, URLCredential?) -> Void)](urlsessiondelegate/urlsession(_:didreceive:completionhandler:).md)
+### Handling authentication challenges
+- [func urlSession(URLSession, didReceive: URLAuthenticationChallenge, completionHandler: (URLSession.AuthChallengeDisposition, URLCredential?) -> Void)](../urlsessiondelegate/urlsession%28_,didreceive,completionhandler%29.md)
   Requests credentials from the delegate in response to a session-level authentication request from the remote server.
 
 

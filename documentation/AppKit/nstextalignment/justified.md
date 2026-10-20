@@ -1,7 +1,8 @@
 # NSTextAlignment.justified
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Text is justified.
 
@@ -14,15 +15,20 @@ Text is justified.
 case justified
 ```
 
+```c
+NSTextAlignmentJustified
+```
+
 ## See Also
 
-- [NSTextAlignment.left](nstextalignment/left.md)
+### Constants
+- [NSTextAlignment.left](./left.md)
   Text is left-aligned.
-- [NSTextAlignment.right](nstextalignment/right.md)
+- [NSTextAlignment.right](./right.md)
   Text is right-aligned.
-- [NSTextAlignment.center](nstextalignment/center.md)
+- [NSTextAlignment.center](./center.md)
   Text is center-aligned.
-- [NSTextAlignment.natural](nstextalignment/natural.md)
+- [NSTextAlignment.natural](./natural.md)
   Text uses the default alignment for the current localization of the app.
 
 

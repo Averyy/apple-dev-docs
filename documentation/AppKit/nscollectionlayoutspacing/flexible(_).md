@@ -1,7 +1,8 @@
 # flexible(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a space equivalent to or greater than the specified number of points, depending on the available space.
 
@@ -14,9 +15,14 @@ Creates a space equivalent to or greater than the specified number of points, de
 class func flexible(_ flexibleSpacing: CGFloat) -> Self
 ```
 
+```objc
++ (instancetype) flexibleSpacing:(CGFloat) flexibleSpacing;
+```
+
 ## See Also
 
-- [class func fixed(CGFloat) -> Self](nscollectionlayoutspacing/fixed(_:).md)
+### Creating spacing
+- [class func fixed(CGFloat) -> Self](./fixed%28_%29.md)
   Creates a space equivalent to the specified number of points.
 
 

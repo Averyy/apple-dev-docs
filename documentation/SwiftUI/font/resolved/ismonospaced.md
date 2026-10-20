@@ -1,7 +1,8 @@
 # isMonospaced
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns `true` if a resolved font is monospaced, false otherwise.
 

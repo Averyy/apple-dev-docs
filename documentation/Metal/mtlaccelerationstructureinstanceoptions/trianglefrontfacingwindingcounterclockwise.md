@@ -1,7 +1,8 @@
 # triangleFrontFacingWindingCounterClockwise
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the instance specifies front facing triangles in counter-clockwise order.
 
@@ -19,13 +20,18 @@ Specifies that the instance specifies front facing triangles in counter-clockwis
 static var triangleFrontFacingWindingCounterClockwise: MTLAccelerationStructureInstanceOptions { get }
 ```
 
+```c
+MTLAccelerationStructureInstanceOptionTriangleFrontFacingWindingCounterClockwise
+```
+
 ## See Also
 
-- [static var disableTriangleCulling: MTLAccelerationStructureInstanceOptions](mtlaccelerationstructureinstanceoptions/disabletriangleculling.md)
+### Usage options
+- [static var disableTriangleCulling: MTLAccelerationStructureInstanceOptions](./disabletriangleculling.md)
   An option that turns off culling for this instance if ray intersector has culling enabled.
-- [static var opaque: MTLAccelerationStructureInstanceOptions](mtlaccelerationstructureinstanceoptions/opaque.md)
+- [static var opaque: MTLAccelerationStructureInstanceOptions](./opaque.md)
   Specifies that intersectors should treat the instance as opaque.
-- [static var nonOpaque: MTLAccelerationStructureInstanceOptions](mtlaccelerationstructureinstanceoptions/nonopaque.md)
+- [static var nonOpaque: MTLAccelerationStructureInstanceOptions](./nonopaque.md)
   Specifies that intersectors should treat the instance as non-opaque.
 
 

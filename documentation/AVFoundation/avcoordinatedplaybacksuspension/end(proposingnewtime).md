@@ -1,7 +1,8 @@
 # end(proposingNewTime:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends a suspension and proposes a new playback time to the group.
 
@@ -19,6 +20,10 @@ Ends a suspension and proposes a new playback time to the group.
 func end(proposingNewTime time: CMTime)
 ```
 
+```objc
+- (void) endProposingNewTime:(CMTime) time;
+```
+
 #### Discussion
 
 If this is the last suspension, the coordinator proposes a new time to the group without changing the group’s playback rate. If it isn’t, the coordinator only proposes the new time after all other suspensions end.
@@ -27,11 +32,12 @@ A suspension that ends after this one ends can override the proposed time. Simil
 
 ## Parameters
 
-- `time`: The proposed playback time. Passing a nonnumeric time results in the same behavior as calling the [`end()`](avcoordinatedplaybacksuspension/end().md) method.
+- `time`: The proposed playback time. Passing a nonnumeric time results in the same behavior as calling the [`end()`](./end%28%29.md) method.
 
 ## See Also
 
-- [func end()](avcoordinatedplaybacksuspension/end.md)
+### Ending a suspension
+- [func end()](./end%28%29.md)
   Ends a suspension.
 
 

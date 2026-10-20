@@ -1,16 +1,17 @@
 # Fetching and displaying managed apps
 
-**Framework**: ManagedAppDistribution
+**Framework**: ManagedAppDistribution  
+**Role**: Article
 
 Provide a consistent app presentation when displaying managed apps.
 
 #### Overview
 
-Your app can take advantage of Managed App Distribution features to display download status and launch apps. Obtain a list of [`ManagedApp`](managedapp.md) objects, then display that list of apps in a custom view.
+Your app can take advantage of Managed App Distribution features to display download status and launch apps. Obtain a list of [`ManagedApp`](./managedapp.md) objects, then display that list of apps in a custom view.
 
 ##### Fetching
 
-This code snippet defines a model that obtains a list of apps from a [`ManagedAppLibrary`](managedapplibrary.md).
+This code snippet defines a model that obtains a list of apps from a [`ManagedAppLibrary`](./managedapplibrary.md).
 
 ```swift
 import ManagedAppDistribution
@@ -39,7 +40,7 @@ import Observation
 
 After you fetch the list of apps from the model, display them in a compact content style within your custom view.
 
-![An image of the bottom of an iPhone showing an app with a banner that contains a title, subtitle, and an install button.](/images/com.apple.ManagedAppDistribution/fetching-displaying-managed-apps@2x.png)
+![An image of the bottom of an iPhone showing an app with a banner that contains a title, subtitle, and an install button.](https://developer.apple.com/tutorials/images/com.apple.ManagedAppDistribution/fetching-displaying-managed-apps@2x.png)
 
 This code snippet demonstrates how to display the list of apps.
 
@@ -68,9 +69,10 @@ struct AppList: View {
 
 ## See Also
 
-- [struct ManagedApp](managedapp.md)
+### Essentials
+- [struct ManagedApp](./managedapp.md)
   A representation of a managed app.
-- [class ManagedAppLibrary](managedapplibrary.md)
+- [class ManagedAppLibrary](./managedapplibrary.md)
   A representation of a library of managed apps.
 
 

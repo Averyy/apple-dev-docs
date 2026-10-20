@@ -1,16 +1,17 @@
 # DequeuePackets
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves multiple network packets from the queue.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual uint32_t DequeuePackets(IOUserNetworkPacket **packets, uint32_t maxDequeueCount);
 ```
 
@@ -29,11 +30,12 @@ Call this method to retrieve multiple packets from the submission queue. This me
 
 ## See Also
 
-- [EnqueuePacket](iousernetworkpacketqueue/enqueuepacket.md)
+### Queueing and Dequeueing Packets
+- [EnqueuePacket](./enqueuepacket.md)
   Adds a single network packet to the queue for processing.
-- [EnqueuePackets](iousernetworkpacketqueue/enqueuepackets-qzx.md)
+- [EnqueuePackets](./enqueuepackets-qzx.md)
   Adds multiple network packets to the queue for processing.
-- [DequeuePacket](iousernetworkpacketqueue/dequeuepacket.md)
+- [DequeuePacket](./dequeuepacket.md)
   Retrieves a single network packet from the queue.
 
 

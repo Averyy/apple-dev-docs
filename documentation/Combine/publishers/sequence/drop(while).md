@@ -1,7 +1,8 @@
 # drop(while:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -18,17 +19,20 @@
 func drop(while predicate: (Elements.Element) -> Bool) -> Publishers.Sequence<DropWhileSequence<Elements>, Failure>
 ```
 
+Available when `Elements` conforms to `Sequence` and `Failure` conforms to `Error`.
+
 ## See Also
 
-- [func dropFirst(Int) -> Publishers.Sequence<DropFirstSequence<Elements>, Failure>](publishers/sequence/dropfirst(_:).md)
-- [func append<S>(S) -> Publishers.Sequence<Elements, Failure>](publishers/sequence/append(_:)-45rm8.md)
-- [func append(Publishers.Sequence<Elements, Failure>) -> Publishers.Sequence<Elements, Failure>](publishers/sequence/append(_:)-3dj6k.md)
-- [func append(Publishers.Sequence<Elements, Failure>.Output...) -> Publishers.Sequence<Elements, Failure>](publishers/sequence/append(_:)-2knh4.md)
-- [func prepend<S>(S) -> Publishers.Sequence<Elements, Failure>](publishers/sequence/prepend(_:)-1r564.md)
-- [func prepend(Publishers.Sequence<Elements, Failure>) -> Publishers.Sequence<Elements, Failure>](publishers/sequence/prepend(_:)-71f7p.md)
-- [func prepend(Publishers.Sequence<Elements, Failure>.Output...) -> Publishers.Sequence<Elements, Failure>](publishers/sequence/prepend(_:)-2ros1.md)
-- [func prefix(Int) -> Publishers.Sequence<PrefixSequence<Elements>, Failure>](publishers/sequence/prefix(_:).md)
-- [func prefix(while: (Elements.Element) -> Bool) -> Publishers.Sequence<[Elements.Element], Failure>](publishers/sequence/prefix(while:).md)
+### Applying sequence operations to elements
+- [func dropFirst(Int) -> Publishers.Sequence<DropFirstSequence<Elements>, Failure>](./dropfirst%28_%29.md)
+- [func append<S>(S) -> Publishers.Sequence<Elements, Failure>](./append%28_%29-45rm8.md)
+- [func append(Publishers.Sequence<Elements, Failure>) -> Publishers.Sequence<Elements, Failure>](./append%28_%29-3dj6k.md)
+- [func append(Publishers.Sequence<Elements, Failure>.Output...) -> Publishers.Sequence<Elements, Failure>](./append%28_%29-2knh4.md)
+- [func prepend<S>(S) -> Publishers.Sequence<Elements, Failure>](./prepend%28_%29-1r564.md)
+- [func prepend(Publishers.Sequence<Elements, Failure>) -> Publishers.Sequence<Elements, Failure>](./prepend%28_%29-71f7p.md)
+- [func prepend(Publishers.Sequence<Elements, Failure>.Output...) -> Publishers.Sequence<Elements, Failure>](./prepend%28_%29-2ros1.md)
+- [func prefix(Int) -> Publishers.Sequence<PrefixSequence<Elements>, Failure>](./prefix%28_%29.md)
+- [func prefix(while: (Elements.Element) -> Bool) -> Publishers.Sequence<[Elements.Element], Failure>](./prefix%28while%29.md)
 
 
 ---

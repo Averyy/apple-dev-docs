@@ -1,7 +1,8 @@
 # CMFormatDescription.TimeCode.Flag
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 13.0+
@@ -21,20 +22,20 @@ struct Flag
 ## Topics
 
 ### Time Code Flags
-- [static let dropFrame: CMFormatDescription.TimeCode.Flag](cmformatdescription/timecode/flag/dropframe.md)
-- [static let negTimesOK: CMFormatDescription.TimeCode.Flag](cmformatdescription/timecode/flag/negtimesok.md)
-- [static let twentyFourHourMax: CMFormatDescription.TimeCode.Flag](cmformatdescription/timecode/flag/twentyfourhourmax.md)
+- [static let dropFrame: CMFormatDescription.TimeCode.Flag](./flag/dropframe.md)
+- [static let negTimesOK: CMFormatDescription.TimeCode.Flag](./flag/negtimesok.md)
+- [static let twentyFourHourMax: CMFormatDescription.TimeCode.Flag](./flag/twentyfourhourmax.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../../Swift/optionset.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../../Swift/setalgebra.md)
 
 
 ---

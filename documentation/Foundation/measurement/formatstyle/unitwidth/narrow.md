@@ -1,7 +1,8 @@
 # narrow
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shortest unit width.
 
@@ -26,9 +27,10 @@ This width may condense the spacing between the value and the unit; for example,
 
 ## See Also
 
-- [static var wide: Measurement<UnitType>.FormatStyle.UnitWidth](measurement/formatstyle/unitwidth/wide.md)
+### Unit widths
+- [static var wide: Measurement<UnitType>.FormatStyle.UnitWidth](./wide.md)
   A unit width that shows the full unit name.
-- [static var abbreviated: Measurement<UnitType>.FormatStyle.UnitWidth](measurement/formatstyle/unitwidth/abbreviated.md)
+- [static var abbreviated: Measurement<UnitType>.FormatStyle.UnitWidth](./abbreviated.md)
   An abbreviated unit width.
 
 

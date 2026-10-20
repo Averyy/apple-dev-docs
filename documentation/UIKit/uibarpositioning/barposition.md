@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The position of the bar.
@@ -10,13 +11,17 @@ The position of the bar.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var barPosition: UIBarPosition { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIBarPosition barPosition;
 ```
 
 

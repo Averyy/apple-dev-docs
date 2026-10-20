@@ -1,14 +1,15 @@
 # IOUSBHostCIIsochronousTransferControlFrameNumber
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCIIsochronousTransferControlFrameNumber = IOUSBBitRange(16, 23)
 ```
 

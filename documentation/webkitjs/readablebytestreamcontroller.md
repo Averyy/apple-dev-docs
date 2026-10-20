@@ -1,7 +1,8 @@
 # ReadableByteStreamController
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,18 +10,18 @@
 
 ## Declaration
 
-```swift
+```
 interface ReadableByteStreamController
 ```
 
 ## Topics
 
 ### Instance Properties
-- [desiredSize](readablebytestreamcontroller/2871436-desiredsize.md)
+- [desiredSize](./readablebytestreamcontroller/api-2871436-desiredsize.md)
 ### Instance Methods
-- [close](readablebytestreamcontroller/2871191-close.md)
-- [enqueue](readablebytestreamcontroller/2871124-enqueue.md)
-- [error](readablebytestreamcontroller/2871096-error.md)
+- [close](./readablebytestreamcontroller/api-2871191-close.md)
+- [enqueue](./readablebytestreamcontroller/api-2871124-enqueue.md)
+- [error](./readablebytestreamcontroller/api-2871096-error.md)
 
 
 ---

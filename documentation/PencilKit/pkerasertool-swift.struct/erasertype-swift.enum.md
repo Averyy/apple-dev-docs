@@ -1,7 +1,8 @@
 # PKEraserTool.EraserType
 
 **Framework**: PencilKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the behavior of the eraser.
 
@@ -21,26 +22,27 @@ enum EraserType
 ## Topics
 
 ### Eraser types
-- [PKEraserTool.EraserType.vector](pkerasertool-swift.struct/erasertype-swift.enum/vector.md)
+- [PKEraserTool.EraserType.vector](./erasertype-swift.enum/vector.md)
   An eraser that removes an entire drawn line.
-- [PKEraserTool.EraserType.bitmap](pkerasertool-swift.struct/erasertype-swift.enum/bitmap.md)
+- [PKEraserTool.EraserType.bitmap](./erasertype-swift.enum/bitmap.md)
   An eraser that removes only those portions of the drawing it touches.
-- [PKEraserTool.EraserType.fixedWidthBitmap](pkerasertool-swift.struct/erasertype-swift.enum/fixedwidthbitmap.md)
+- [PKEraserTool.EraserType.fixedWidthBitmap](./erasertype-swift.enum/fixedwidthbitmap.md)
 ### Getting the width information
-- [var defaultWidth: CGFloat](pkerasertool-swift.struct/erasertype-swift.enum/defaultwidth.md)
+- [var defaultWidth: CGFloat](./erasertype-swift.enum/defaultwidth.md)
   The default width for an eraser type.
-- [var validWidthRange: ClosedRange<CGFloat>](pkerasertool-swift.struct/erasertype-swift.enum/validwidthrange.md)
+- [var validWidthRange: ClosedRange<CGFloat>](./erasertype-swift.enum/validwidthrange.md)
   The valid width range for an eraser type.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var eraserType: PKEraserTool.EraserType](pkerasertool-swift.struct/erasertype-swift.property.md)
+### Getting the eraser type
+- [var eraserType: PKEraserTool.EraserType](./erasertype-swift.property.md)
   The behavior adopted by the eraser when deleting content.
 
 

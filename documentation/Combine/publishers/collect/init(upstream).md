@@ -1,7 +1,8 @@
 # init(upstream:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that buffers items.
 

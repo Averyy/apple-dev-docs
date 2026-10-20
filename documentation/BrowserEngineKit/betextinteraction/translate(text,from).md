@@ -1,7 +1,8 @@
 # translate(text:from:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a translation of the text.
 
@@ -17,6 +18,10 @@ Presents a translation of the text.
 func translate(text: String, from presentationRect: CGRect)
 ```
 
+```objc
+- (void) translateText:(NSString *) text fromRect:(CGRect) presentationRect;
+```
+
 ## Parameters
 
 - `text`: The text to translate.
@@ -24,7 +29,8 @@ func translate(text: String, from presentationRect: CGRect)
 
 ## See Also
 
-- [func transliterateChinese(forText: String)](betextinteraction/transliteratechinese(fortext:).md)
+### Translation and transliteration
+- [func transliterateChinese(forText: String)](./transliteratechinese%28fortext%29.md)
   Converts text between traditional and simplified Chinese.
 
 

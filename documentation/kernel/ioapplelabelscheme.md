@@ -1,47 +1,49 @@
 # IOAppleLabelScheme
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```cpp
 class IOAppleLabelScheme : IOFilterScheme
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- attachMediaObjectToDeviceTree](ioapplelabelscheme/1476113-attachmediaobjecttodevicetree.md)
-- [- detachMediaObjectFromDeviceTree](ioapplelabelscheme/1476136-detachmediaobjectfromdevicetree.md)
-- [- free](ioapplelabelscheme/1476143-free.md)
-- [- getMetaClass](ioapplelabelscheme/1476122-getmetaclass.md)
-- [- init](ioapplelabelscheme/1476130-init.md)
-- [- instantiateDesiredMediaObject](ioapplelabelscheme/1476093-instantiatedesiredmediaobject.md)
-- [- instantiateMediaObject](ioapplelabelscheme/1476139-instantiatemediaobject.md)
-- [- isContentCorrupt](ioapplelabelscheme/1476098-iscontentcorrupt.md)
-- [- isContentInvalid](ioapplelabelscheme/1476106-iscontentinvalid.md)
-- [- probe](ioapplelabelscheme/1476096-probe.md)
-- [- scan](ioapplelabelscheme/1476158-scan.md)
-- [- start](ioapplelabelscheme/1476149-start.md)
-- [- stop](ioapplelabelscheme/1476133-stop.md)
+- [- attachMediaObjectToDeviceTree](./ioapplelabelscheme/api-1476113-attachmediaobjecttodevicetree.md)
+- [- detachMediaObjectFromDeviceTree](./ioapplelabelscheme/api-1476136-detachmediaobjectfromdevicetree.md)
+- [- free](./ioapplelabelscheme/api-1476143-free.md)
+- [- getMetaClass](./ioapplelabelscheme/api-1476122-getmetaclass.md)
+- [- init](./ioapplelabelscheme/api-1476130-init.md)
+- [- instantiateDesiredMediaObject](./ioapplelabelscheme/api-1476093-instantiatedesiredmediaobject.md)
+- [- instantiateMediaObject](./ioapplelabelscheme/api-1476139-instantiatemediaobject.md)
+- [- isContentCorrupt](./ioapplelabelscheme/api-1476098-iscontentcorrupt.md)
+- [- isContentInvalid](./ioapplelabelscheme/api-1476106-iscontentinvalid.md)
+- [- probe](./ioapplelabelscheme/api-1476096-probe.md)
+- [- scan](./ioapplelabelscheme/api-1476158-scan.md)
+- [- start](./ioapplelabelscheme/api-1476149-start.md)
+- [- stop](./ioapplelabelscheme/api-1476133-stop.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOFilterScheme](iofilterscheme.md)
+- [IOFilterScheme](./iofilterscheme.md)
 
 ## See Also
 
-- [IOApplePartitionScheme](ioapplepartitionscheme.md)
-- [IOFDiskPartitionScheme](iofdiskpartitionscheme.md)
-- [IOGUIDPartitionScheme](ioguidpartitionscheme.md)
-- [IOPartitionScheme](iopartitionscheme.md)
+### Schemes
+- [IOApplePartitionScheme](./ioapplepartitionscheme.md)
+- [IOFDiskPartitionScheme](./iofdiskpartitionscheme.md)
+- [IOGUIDPartitionScheme](./ioguidpartitionscheme.md)
+- [IOPartitionScheme](./iopartitionscheme.md)
   The common base class for all partition scheme objects.
-- [IOFilterScheme](iofilterscheme.md)
+- [IOFilterScheme](./iofilterscheme.md)
   The common base class for all filter scheme objects.
 
 

@@ -1,7 +1,8 @@
 # cellularServiceID
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Service identifier to use for this request.
 
@@ -16,9 +17,10 @@ var cellularServiceID: CellularServiceID
 
 ## See Also
 
-- [var groupHandle: RCSHandle.Group](rcsservice/removegroupchatparticipantsrequest/grouphandle.md)
+### Accessing request properties
+- [var groupHandle: RCSHandle.Group](./grouphandle.md)
   Group handle indicating the group from which to remove participants.
-- [var participants: [RCSHandle.URI]](rcsservice/removegroupchatparticipantsrequest/participants.md)
+- [var participants: [RCSHandle.URI]](./participants.md)
   Array of participants to be removed from group.
 
 

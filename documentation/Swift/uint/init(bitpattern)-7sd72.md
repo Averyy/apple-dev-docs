@@ -1,7 +1,8 @@
 # init(bitPattern:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new value with the bit pattern of the given pointer.
 

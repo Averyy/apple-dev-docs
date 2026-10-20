@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a predicate by decoding from the coder you specify.
 
@@ -20,17 +21,22 @@ Creates a predicate by decoding from the coder you specify.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## Parameters
 
 - `coder`: The coder to read data from.
 
 ## See Also
 
-- [Displaying searchable content by using a search controller](../uikit/displaying-searchable-content-by-using-a-search-controller.md)
+### Creating Comparison Predicates
+- [Displaying searchable content by using a search controller](../../UIKit/displaying-searchable-content-by-using-a-search-controller.md)
   Create a user interface with searchable content in a table view.
-- [init(leftExpression: NSExpression, rightExpression: NSExpression, customSelector: Selector)](nscomparisonpredicate/init(leftexpression:rightexpression:customselector:).md)
+- [init(leftExpression: NSExpression, rightExpression: NSExpression, customSelector: Selector)](./init%28leftexpression,rightexpression,customselector%29.md)
   Creates a predicate that you form by combining specified left and right expressions using a specified selector.
-- [init(leftExpression: NSExpression, rightExpression: NSExpression, modifier: NSComparisonPredicate.Modifier, type: NSComparisonPredicate.Operator, options: NSComparisonPredicate.Options)](nscomparisonpredicate/init(leftexpression:rightexpression:modifier:type:options:).md)
+- [init(leftExpression: NSExpression, rightExpression: NSExpression, modifier: NSComparisonPredicate.Modifier, type: NSComparisonPredicate.Operator, options: NSComparisonPredicate.Options)](./init%28leftexpression,rightexpression,modifier,type,options%29.md)
   Creates a predicate to a specified type that you form by combining specified left and right expressions using a specified modifier and options.
 
 

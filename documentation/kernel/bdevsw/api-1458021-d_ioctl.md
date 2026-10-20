@@ -1,14 +1,15 @@
 # d_ioctl
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 ioctl_fcn_t *d_ioctl;
 ```
 

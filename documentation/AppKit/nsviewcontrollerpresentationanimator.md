@@ -1,12 +1,13 @@
 # NSViewControllerPresentationAnimator
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that let you define animations to play when transitioning between two view controllers.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,24 +15,28 @@ A set of methods that let you define animations to play when transitioning betwe
 protocol NSViewControllerPresentationAnimator : NSObjectProtocol
 ```
 
+```objc
+@protocol NSViewControllerPresentationAnimator <NSObject>
+```
+
 #### Overview
 
-Implement this protocol only if you want to provide custom animations. You might find what you need in the [`NSViewController.TransitionOptions`](nsviewcontroller/transitionoptions.md) enumeration, which provides many predefined animations.
+Implement this protocol only if you want to provide custom animations. You might find what you need in the [`NSViewController.TransitionOptions`](./nsviewcontroller/transitionoptions.md) enumeration, which provides many predefined animations.
 
 A class that adopts this protocol is responsible for both presenting and dismissing a view controller.
 
 ## Topics
 
 ### Animating Presentation and Dismissal of View Controllers
-- [func animatePresentation(of: NSViewController, from: NSViewController)](nsviewcontrollerpresentationanimator/animatepresentation(of:from:).md)
+- [func animatePresentation(of: NSViewController, from: NSViewController)](./nsviewcontrollerpresentationanimator/animatepresentation%28of,from%29.md)
   Called when the specified view controller is about to be presented.
-- [func animateDismissal(of: NSViewController, from: NSViewController)](nsviewcontrollerpresentationanimator/animatedismissal(of:from:).md)
+- [func animateDismissal(of: NSViewController, from: NSViewController)](./nsviewcontrollerpresentationanimator/animatedismissal%28of,from%29.md)
   Called when a previously-presented view controller is about to be dismissed.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

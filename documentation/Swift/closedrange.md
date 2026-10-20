@@ -1,7 +1,8 @@
 # ClosedRange
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An interval from a lower bound up to, and including, an upper bound.
 
@@ -50,7 +51,7 @@ zeroInclusive.isEmpty
 // false
 ```
 
-#### Using a Closed Range As a Collection of Consecutive Values
+#### Using a Closed Range as a Collection of Consecutive Values
 
 When a closed range uses integers as its lower and upper bounds, or any other type that conforms to the `Strideable` protocol with an integer stride, you can use that range in a `for`-`in` loop or with any sequence or collection method. The elements of the range are the consecutive values from its lower bound up to, and including, its upper bound.
 
@@ -68,114 +69,115 @@ Because floating-point types such as `Float` and `Double` are their own `Stride`
 ## Topics
 
 ### Creating a Range
-- [static func ... (Self, Self) -> ClosedRange<Self>](comparable/'...(_:_:).md)
+- [static func ... (Self, Self) -> ClosedRange<Self>](./comparable/dotdotdot%28_,_%29.md)
   Returns a closed range that contains both of its bounds.
 ### Converting Ranges
-- [func relative<C>(to: C) -> Range<Bound>](closedrange/relative(to:).md)
+- [func relative<C>(to: C) -> Range<Bound>](./closedrange/relative%28to%29.md)
   Returns the range of indices described by this range expression within the given collection.
 ### Inspecting a Range
-- [var isEmpty: Bool](closedrange/isempty.md)
+- [var isEmpty: Bool](./closedrange/isempty.md)
   A Boolean value indicating whether the range contains no elements.
-- [let lowerBound: Bound](closedrange/lowerbound.md)
+- [let lowerBound: Bound](./closedrange/lowerbound.md)
   The range’s lower bound.
-- [let upperBound: Bound](closedrange/upperbound.md)
+- [let upperBound: Bound](./closedrange/upperbound.md)
   The range’s upper bound.
 ### Checking for Containment
-- [static func ~= (Self, Self.Bound) -> Bool](closedrange/~=(_:_:).md)
+- [static func ~= (Self, Self.Bound) -> Bool](./closedrange/tildeeq%28_,_%29.md)
   Returns a Boolean value indicating whether a value is included in a range.
 ### Clamping a Range
-- [func clamped(to: ClosedRange<Bound>) -> ClosedRange<Bound>](closedrange/clamped(to:).md)
+- [func clamped(to: ClosedRange<Bound>) -> ClosedRange<Bound>](./closedrange/clamped%28to%29.md)
   Returns a copy of this range clamped to the given limiting range.
 ### Comparing Ranges
-- [static func == (ClosedRange<Bound>, ClosedRange<Bound>) -> Bool](closedrange/==(_:_:).md)
+- [static func == (ClosedRange<Bound>, ClosedRange<Bound>) -> Bool](./closedrange/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two ranges are equal.
-- [static func != (borrowing Self, borrowing Self) -> Bool](closedrange/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./closedrange/noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [func overlaps(Range<Bound>) -> Bool](closedrange/overlaps(_:)-947dt.md)
+- [func overlaps(Range<Bound>) -> Bool](./closedrange/overlaps%28_%29-947dt.md)
   Returns a Boolean value indicating whether this range and the given range contain an element in common.
-- [func overlaps(ClosedRange<Bound>) -> Bool](closedrange/overlaps(_:)-7dfep.md)
+- [func overlaps(ClosedRange<Bound>) -> Bool](./closedrange/overlaps%28_%29-7dfep.md)
   Returns a Boolean value indicating whether this range and the given closed range contain an element in common.
 ### Manipulating Indices
-- [func hash(into: inout Hasher)](closedrange/hash(into:).md)
+- [func hash(into: inout Hasher)](./closedrange/hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Describing a Range
-- [var description: String](closedrange/description.md)
+- [var description: String](./closedrange/description.md)
   A textual representation of the range.
-- [var debugDescription: String](closedrange/debugdescription.md)
+- [var debugDescription: String](./closedrange/debugdescription.md)
   A textual representation of the range, suitable for debugging.
-- [var customMirror: Mirror](closedrange/custommirror.md)
+- [var customMirror: Mirror](./closedrange/custommirror.md)
   The custom mirror for this instance.
 ### Encoding and Decoding a Range
-- [func encode(to: any Encoder) throws](closedrange/encode(to:).md)
+- [func encode(to: any Encoder) throws](./closedrange/encode%28to%29.md)
   Encodes this value into the given encoder.
-- [init(from: any Decoder) throws](closedrange/init(from:).md)
+- [init(from: any Decoder) throws](./closedrange/init%28from%29.md)
   Creates a new instance by decoding from the given decoder.
 ### Infrequently Used Functionality
-- [init(uncheckedBounds: (lower: Bound, upper: Bound))](closedrange/init(uncheckedbounds:).md)
+- [init(uncheckedBounds: (lower: Bound, upper: Bound))](./closedrange/init%28uncheckedbounds%29.md)
   Creates an instance with the given bounds.
-- [var hashValue: Int](closedrange/hashvalue.md)
+- [var hashValue: Int](./closedrange/hashvalue.md)
   The hash value.
 ### Initializers
-- [init(Range<Bound>)](closedrange/init(_:)-er19.md)
+- [init(Range<Bound>)](./closedrange/init%28_%29-er19.md)
   Creates an instance equivalent to the given `Range`.
-- [init(ClosedRange<Bound>)](closedrange/init(_:)-rhzn.md)
+- [init(ClosedRange<Bound>)](./closedrange/init%28_%29-rhzn.md)
   Now that Range is conditionally a collection when Bound: Strideable, CountableRange is no longer needed. This is a deprecated initializer for any remaining uses of Range(countableRange).
 ### Instance Methods
-- [func contains(Range<Bound>) -> Bool](closedrange/contains(_:)-29358.md)
+- [func contains(Range<Bound>) -> Bool](./closedrange/contains%28_%29-29358.md)
   Returns a Boolean value indicating whether the given range is contained within this closed range.
-- [func contains(ClosedRange<Bound>) -> Bool](closedrange/contains(_:)-822cl.md)
+- [func contains(ClosedRange<Bound>) -> Bool](./closedrange/contains%28_%29-822cl.md)
   Returns a Boolean value indicating whether the given closed range is contained within this closed range.
 ### Default Implementations
-- [BidirectionalCollection Implementations](closedrange/bidirectionalcollection-implementations.md)
-- [Collection Implementations](closedrange/collection-implementations.md)
-- [CustomDebugStringConvertible Implementations](closedrange/customdebugstringconvertible-implementations.md)
-- [CustomReflectable Implementations](closedrange/customreflectable-implementations.md)
-- [CustomStringConvertible Implementations](closedrange/customstringconvertible-implementations.md)
-- [Decodable Implementations](closedrange/decodable-implementations.md)
-- [Encodable Implementations](closedrange/encodable-implementations.md)
-- [Equatable Implementations](closedrange/equatable-implementations.md)
-- [Hashable Implementations](closedrange/hashable-implementations.md)
-- [RangeExpression Implementations](closedrange/rangeexpression-implementations.md)
-- [Sequence Implementations](closedrange/sequence-implementations.md)
+- [BidirectionalCollection Implementations](./closedrange/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./closedrange/collection-implementations.md)
+- [CustomDebugStringConvertible Implementations](./closedrange/customdebugstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./closedrange/customreflectable-implementations.md)
+- [CustomStringConvertible Implementations](./closedrange/customstringconvertible-implementations.md)
+- [Decodable Implementations](./closedrange/decodable-implementations.md)
+- [Encodable Implementations](./closedrange/encodable-implementations.md)
+- [Equatable Implementations](./closedrange/equatable-implementations.md)
+- [Hashable Implementations](./closedrange/hashable-implementations.md)
+- [RangeExpression Implementations](./closedrange/rangeexpression-implementations.md)
+- [Sequence Implementations](./closedrange/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BNNSGraph.Builder.SliceIndex](../accelerate/bnnsgraph/builder/sliceindex.md)
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [Collection](collection.md)
-- [ConvertibleToBytes](convertibletobytes.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomReflectable](customreflectable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [CustomTestStringConvertible](../testing/customteststringconvertible.md)
-- [Decodable](decodable.md)
-- [Encodable](encodable.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [Hashable](hashable.md)
-- [MLShapedArrayRangeExpression](../coreml/mlshapedarrayrangeexpression.md)
-- [MLTensorRangeExpression](../coreml/mltensorrangeexpression.md)
-- [NDArray.RangeExpression](../coreai/ndarray/rangeexpression.md)
-- [PositionScaleRange](../charts/positionscalerange.md)
-- [RandomAccessCollection](randomaccesscollection.md)
-- [RangeExpression](rangeexpression.md)
-- [ScaleDomain](../charts/scaledomain.md)
-- [ScaleRange](../charts/scalerange.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [BNNSGraph.Builder.SliceIndex](../Accelerate/bnnsgraph/builder/sliceindex.md)
+- [BidirectionalCollection](./bidirectionalcollection.md)
+- [Collection](./collection.md)
+- [ConvertibleToBytes](./convertibletobytes.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [CustomReflectable](./customreflectable.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [CustomTestStringConvertible](../Testing/customteststringconvertible.md)
+- [Decodable](./decodable.md)
+- [Encodable](./encodable.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [Hashable](./hashable.md)
+- [MLShapedArrayRangeExpression](../CoreML/mlshapedarrayrangeexpression.md)
+- [MLTensorRangeExpression](../CoreML/mltensorrangeexpression.md)
+- [NDArray.RangeExpression](../CoreAI/ndarray/rangeexpression.md)
+- [PositionScaleRange](../Charts/positionscalerange.md)
+- [RandomAccessCollection](./randomaccesscollection.md)
+- [RangeExpression](./rangeexpression.md)
+- [ScaleDomain](../Charts/scaledomain.md)
+- [ScaleRange](../Charts/scalerange.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
+- [Sequence](./sequence.md)
 
 ## See Also
 
-- [static func ..< (Self, Self) -> Range<Self>](comparable/'.._(_:_:).md)
+### Ranges
+- [static func ..< (Self, Self) -> Range<Self>](./comparable/dotdotop%28_,_%29.md)
   Returns a half-open range that contains its lower bound but not its upper bound.
-- [struct Range](range.md)
+- [struct Range](./range.md)
   A half-open interval from a lower bound up to, but not including, an upper bound.
-- [struct RangeSet](rangeset.md)
+- [struct RangeSet](./rangeset.md)
   A set of values of any comparable type, represented by ranges.
-- [static func ... (Self, Self) -> ClosedRange<Self>](comparable/'...(_:_:).md)
+- [static func ... (Self, Self) -> ClosedRange<Self>](./comparable/dotdotdot%28_,_%29.md)
   Returns a closed range that contains both of its bounds.
 
 

@@ -1,7 +1,8 @@
 # contentLayoutGuide
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content layout guide provides the layout area for the UITabBarController unobscured by the tab bar or sidebar.
 
@@ -16,6 +17,10 @@ The content layout guide provides the layout area for the UITabBarController uno
 
 ```swift
 var contentLayoutGuide: UILayoutGuide { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) UILayoutGuide * contentLayoutGuide;
 ```
 
 

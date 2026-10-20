@@ -1,7 +1,8 @@
 # GameCenterChallengeImageUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a challenge.
 
@@ -10,21 +11,21 @@ The request body you use to update a challenge.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeImageUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterChallengeImageUpdateRequest.Data.Attributes](gamecenterchallengeimageupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterChallengeImageUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a challenge resource.
 
 ## Properties
 
 - `attributes` (GameCenterChallengeImageUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterChallengeImages`
 
 
 ---

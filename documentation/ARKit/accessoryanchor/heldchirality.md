@@ -1,7 +1,8 @@
 # heldChirality
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Which hand the accessory is currently held in. Returns nil if the accessory is not held.
 

@@ -1,7 +1,8 @@
 # title
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The notification’s title.
 
@@ -19,17 +20,22 @@ The notification’s title.
 var title: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * title;
+```
+
 #### Discussion
 
 CloudKit uses this value to set the `title` push notification property.
 
-See [`Generating a remote notification`](https://developer.apple.com/documentation/usernotifications/generating-a-remote-notification) for more detail about push notification properties.
+See [Generating a remote notification](../../../UserNotifications/generating-a-remote-notification.md) for more detail about push notification properties.
 
 ## See Also
 
-- [var titleLocalizationKey: String?](cksubscription/notificationinfo-swift.class/titlelocalizationkey.md)
+### Accessing the Notification Title
+- [var titleLocalizationKey: String?](./titlelocalizationkey.md)
   The key that identifies the localized string for the notification’s title.
-- [var titleLocalizationArgs: [CKRecord.FieldKey]?](cksubscription/notificationinfo-swift.class/titlelocalizationargs.md)
+- [var titleLocalizationArgs: [CKRecord.FieldKey]?](./titlelocalizationargs.md)
   The fields for building a notification’s title.
 
 

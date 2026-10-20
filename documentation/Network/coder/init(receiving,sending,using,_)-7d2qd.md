@@ -1,7 +1,8 @@
 # init(receiving:sending:using:_:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a Coder protocol
 

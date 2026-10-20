@@ -1,7 +1,8 @@
 # PMPresetCreatePrintSettings(_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a print settings object with settings that correspond to a preset.
 
@@ -14,21 +15,26 @@ Creates a print settings object with settings that correspond to a preset.
 func PMPresetCreatePrintSettings(_ preset: PMPreset, _ session: PMPrintSession, _ printSettings: UnsafeMutablePointer<PMPrintSettings?>) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus PMPresetCreatePrintSettings(PMPreset preset, PMPrintSession session, PMPrintSettings  _Nullable *printSettings);
+```
 
-A result code. See [`Result Codes`](core_printing#1670007.md).
+#### Return Value
+
+A result code. See [Result Codes](./core_printing.md#1670007).
 
 ## Parameters
 
-- `preset`: The preset whose settings you want to obtain. You can use the function [`PMPrinterCopyPresets(_:_:)`](1459117-pmprintercopypresets.md) to obtain the presets for a given printer.
+- `preset`: The preset whose settings you want to obtain. You can use the function [`PMPrinterCopyPresets(_:_:)`](./api-1459117-pmprintercopypresets.md) to obtain the presets for a given printer.
 - `session`: The session you use to present the Print dialog.
-- `printSettings`: A pointer to your [`PMPrintSettings`](pmprintsettings.md) variable. On return, the variable refers to a print settings object with settings that correspond to the specified preset. You are responsible for releasing the print settings object with the function [`PMRelease(_:)`](1461402-pmrelease.md).
+- `printSettings`: A pointer to your [`PMPrintSettings`](./pmprintsettings.md) variable. On return, the variable refers to a print settings object with settings that correspond to the specified preset. You are responsible for releasing the print settings object with the function [`PMRelease(_:)`](./api-1461402-pmrelease.md).
 
 ## See Also
 
-- [func PMPresetCopyName(PMPreset, UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus](1460343-pmpresetcopyname.md)
+### Using Printer Presets
+- [func PMPresetCopyName(PMPreset, UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus](./api-1460343-pmpresetcopyname.md)
   Obtains the localized name for a preset.
-- [func PMPresetGetAttributes(PMPreset, UnsafeMutablePointer<Unmanaged<CFDictionary>?>) -> OSStatus](1459042-pmpresetgetattributes.md)
+- [func PMPresetGetAttributes(PMPreset, UnsafeMutablePointer<Unmanaged<CFDictionary>?>) -> OSStatus](./api-1459042-pmpresetgetattributes.md)
   Obtains the attributes of a preset.
 
 

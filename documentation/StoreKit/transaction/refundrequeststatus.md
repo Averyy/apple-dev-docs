@@ -1,7 +1,8 @@
 # Transaction.RefundRequestStatus
 
 **Framework**: StoreKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The status codes for refund requests.
 
@@ -22,39 +23,40 @@ enum RefundRequestStatus
 
 #### Overview
 
-The following methods throw the refund request status: [`beginRefundRequest(in:)`](transaction/beginrefundrequest(in:)-9k0pj.md),  [`beginRefundRequest(for:in:)`](transaction/beginrefundrequest(for:in:)-65tph.md), [`beginRefundRequest(in:)`](transaction/beginrefundrequest(in:)-63bvd.md), and [`beginRefundRequest(for:in:)`](transaction/beginrefundrequest(for:in:)-9mscy.md).
+The following methods throw the refund request status: [`beginRefundRequest(in:)`](./beginrefundrequest%28in%29-9k0pj.md),  [`beginRefundRequest(for:in:)`](./beginrefundrequest%28for,in%29-65tph.md), [`beginRefundRequest(in:)`](./beginrefundrequest%28in%29-63bvd.md), and [`beginRefundRequest(for:in:)`](./beginrefundrequest%28for,in%29-9mscy.md).
 
 The refund request status reflects the status of the request, not the status of the refund itself.
 
 ## Topics
 
 ### Getting Refund Request Status
-- [Transaction.RefundRequestStatus.userCancelled](transaction/refundrequeststatus/usercancelled.md)
+- [Transaction.RefundRequestStatus.userCancelled](./refundrequeststatus/usercancelled.md)
   The user canceled submission of their refund request.
-- [Transaction.RefundRequestStatus.success](transaction/refundrequeststatus/success.md)
+- [Transaction.RefundRequestStatus.success](./refundrequeststatus/success.md)
   The App Store has received the refund request.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Testing refund requests](testing-refund-requests.md)
+### Requesting refunds
+- [Testing refund requests](../testing-refund-requests.md)
   Test your app’s implementation of refund requests, and your app’s and server’s handling of approved and declined refunds.
-- [func beginRefundRequest(in: UIWindowScene) async throws -> Transaction.RefundRequestStatus](transaction/beginrefundrequest(in:)-9k0pj.md)
+- [func beginRefundRequest(in: UIWindowScene) async throws -> Transaction.RefundRequestStatus](./beginrefundrequest%28in%29-9k0pj.md)
   Presents the refund request sheet for the transaction in a window scene.
-- [func beginRefundRequest(in: NSViewController) async throws -> Transaction.RefundRequestStatus](transaction/beginrefundrequest(in:)-63bvd.md)
+- [func beginRefundRequest(in: NSViewController) async throws -> Transaction.RefundRequestStatus](./beginrefundrequest%28in%29-63bvd.md)
   Presents the refund request sheet for the transaction in a view controller.
-- [static func beginRefundRequest(for: UInt64, in: UIWindowScene) async throws -> Transaction.RefundRequestStatus](transaction/beginrefundrequest(for:in:)-65tph.md)
+- [static func beginRefundRequest(for: UInt64, in: UIWindowScene) async throws -> Transaction.RefundRequestStatus](./beginrefundrequest%28for,in%29-65tph.md)
   Presents the refund request sheet for the specified transaction in a window scene.
-- [static func beginRefundRequest(for: UInt64, in: NSViewController) async throws -> Transaction.RefundRequestStatus](transaction/beginrefundrequest(for:in:)-9mscy.md)
+- [static func beginRefundRequest(for: UInt64, in: NSViewController) async throws -> Transaction.RefundRequestStatus](./beginrefundrequest%28for,in%29-9mscy.md)
   Presents the refund request sheet for the specified transaction in a view controller.
-- [Transaction.RefundRequestError](transaction/refundrequesterror.md)
+- [Transaction.RefundRequestError](./refundrequesterror.md)
   The error codes for refund requests.
 
 

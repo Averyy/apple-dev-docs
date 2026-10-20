@@ -1,7 +1,8 @@
 # registeredContentTypesForOpenInPlace
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Registered content types that the system can load as open-in-place files.
 
@@ -20,11 +21,24 @@ Registered content types that the system can load as open-in-place files.
 var registeredContentTypesForOpenInPlace: [UTType] { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<UTType *> * registeredContentTypesForOpenInPlace;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSArray<UTType *> * registeredContentTypesForOpenInPlace;
+```
+
 ## See Also
 
-- [var registeredContentTypes: [UTType]](nsitemprovider/registeredcontenttypes.md)
+### Registering content types
+- [var registeredContentTypes: [UTType]](./registeredcontenttypes.md)
   Registered content types in the order the app registers each type.
-- [func registeredContentTypes(conformingTo: UTType) -> [UTType]](nsitemprovider/registeredcontenttypes(conformingto:).md)
+- [func registeredContentTypes(conformingTo: UTType) -> [UTType]](./registeredcontenttypes%28conformingto%29.md)
   Returns an array of registered content types that conform to a specified content type.
 
 

@@ -1,7 +1,8 @@
 # errSecMobileMeFailedConsistencyCheck
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 MobileMe found a failed consistency check.
 
@@ -18,6 +19,10 @@ MobileMe found a failed consistency check.
 
 ```swift
 var errSecMobileMeFailedConsistencyCheck: OSStatus { get }
+```
+
+```c
+errSecMobileMeFailedConsistencyCheck
 ```
 
 

@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOSyncer* syncer;
 ```
 
@@ -15,9 +15,10 @@ IOSyncer for use by IOATAController
 
 ## See Also
 
-- [state](ioatabuscommand/state.md)
-- [reserved](ioatabuscommand/reserved.md)
-- [queueChain](ioatabuscommand/queuechain.md)
+### Instance Variables
+- [state](./state.md)
+- [reserved](./reserved.md)
+- [queueChain](./queuechain.md)
 
 
 ---

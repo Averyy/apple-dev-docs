@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A type for which the conforming type provides a containment test.
@@ -23,7 +24,8 @@ associatedtype Element
 
 ## See Also
 
-- [func contains(Self.Element) -> Bool](setalgebra/contains(_:).md)
+### Testing for Membership
+- [func contains(Self.Element) -> Bool](./contains%28_%29.md)
   Returns a Boolean value that indicates whether the given element exists in the set.
 
 

@@ -1,7 +1,8 @@
 # lineGradient
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The gradient to apply along the line.
 
@@ -10,23 +11,24 @@ The gradient to apply along the line.
 
 ## Declaration
 
-```swift
+```
 lineGradient?: LineGradient;
 ```
 
 #### Discussion
 
-If a style has both [`strokeColor`](style/strokecolor.md) and [`lineGradient`](style/linegradient.md) definitions, [`lineGradient`](style/linegradient.md) takes precedence and displays. If you don’t define a color at the start or end location within the gradient, MapKit JS uses the style’s [`strokeColor`](style/strokecolor.md).
+If a style has both [`strokeColor`](../style/strokecolor.md) and [`lineGradient`](../style/linegradient.md) definitions, [`lineGradient`](../style/linegradient.md) takes precedence and displays. If you don’t define a color at the start or end location within the gradient, MapKit JS uses the style’s [`strokeColor`](../style/strokecolor.md).
 
 ## See Also
 
-- [strokeColor](styleconstructoroptions/strokecolor.md)
+### Setting stroke styles
+- [strokeColor](./strokecolor.md)
   The stroke color of a line.
-- [strokeOpacity](styleconstructoroptions/strokeopacity.md)
+- [strokeOpacity](./strokeopacity.md)
   The opacity of the stroke color.
-- [strokeStart](styleconstructoroptions/strokestart.md)
+- [strokeStart](./strokestart.md)
   The unit distance along the line where a stroke begins.
-- [strokeEnd](styleconstructoroptions/strokeend.md)
+- [strokeEnd](./strokeend.md)
   The unit distance along the line where a stroke ends.
 
 

@@ -1,7 +1,8 @@
 # providerBundleIdentifier
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that contains the bundle identifier of the push provider.
 
@@ -17,9 +18,14 @@ A string that contains the bundle identifier of the push provider.
 var providerBundleIdentifier: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * providerBundleIdentifier;
+```
+
 ## See Also
 
-- [var providerConfiguration: [String : Any]](neapppushmanager/providerconfiguration.md)
+### Inspecting provider properties
+- [var providerConfiguration: [String : Any]](./providerconfiguration.md)
   A dictionary that contains vendor-specific key-value pairs, that you use to configure a provider.
 
 

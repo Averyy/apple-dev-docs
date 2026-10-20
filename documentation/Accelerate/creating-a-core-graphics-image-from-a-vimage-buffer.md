@@ -1,6 +1,7 @@
 # Creating a Core Graphics Image from a vImage Buffer
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Article
 
 Create displayable representations of vImage buffers.
 
@@ -10,7 +11,7 @@ vImage provides a function for creating Core Graphics images from vImage buffers
 
 ##### Create the Image
 
-You create a Core Graphics image from the buffer, and initialize a [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) instance from that. The [`createCGImage(format:flags:)`](vimage_buffer/createcgimage(format:flags:).md) function returns a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance based on the supplied Core Graphics image format (for more information, see [`Converting bitmap data between Core Graphics images and vImage buffers`](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)).
+You create a Core Graphics image from the buffer, and initialize a [`UIImage`](../UIKit/uiimage.md) instance from that. The [`createCGImage(format:flags:)`](./vimage_buffer/createcgimage%28format,flags%29.md) function returns a [`CGImage`](../CoreGraphics/cgimage.md) instance based on the supplied Core Graphics image format (for more information, see [Converting bitmap data between Core Graphics images and vImage buffers](./converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)).
 
 The following example shows how to create a Core Graphics image from a vImage buffer:
 
@@ -25,23 +26,24 @@ if let result = result {
 
 ## See Also
 
-- [Converting bitmap data between Core Graphics images and vImage buffers](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
+### Image Processing Essentials
+- [Converting bitmap data between Core Graphics images and vImage buffers](./converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
   Pass image data between Core Graphics and vImage to create and manipulate images.
-- [Creating and Populating Buffers from Core Graphics Images](creating-and-populating-buffers-from-core-graphics-images.md)
+- [Creating and Populating Buffers from Core Graphics Images](./creating-and-populating-buffers-from-core-graphics-images.md)
   Initialize vImage buffers from Core Graphics images.
-- [Building a Basic Image-Processing Workflow](building-a-basic-image-processing-workflow.md)
+- [Building a Basic Image-Processing Workflow](./building-a-basic-image-processing-workflow.md)
   Resize an image with vImage.
-- [Applying geometric transforms to images](applying-geometric-transforms-to-images.md)
+- [Applying geometric transforms to images](./applying-geometric-transforms-to-images.md)
   Reflect, shear, rotate, and scale image buffers using vImage.
-- [Compositing images with alpha blending](compositing-images-with-alpha-blending.md)
+- [Compositing images with alpha blending](./compositing-images-with-alpha-blending.md)
   Combine two images by using alpha blending to create a single output.
-- [Compositing images with vImage blend modes](compositing-images-with-vimage-blend-modes.md)
+- [Compositing images with vImage blend modes](./compositing-images-with-vimage-blend-modes.md)
   Combine two images by using blend modes to create a single output.
-- [Applying vImage operations to regions of interest](applying-vimage-operations-to-regions-of-interest.md)
+- [Applying vImage operations to regions of interest](./applying-vimage-operations-to-regions-of-interest.md)
   Limit the effect of vImage operations to rectangular regions of interest.
-- [Optimizing image-processing performance](optimizing-image-processing-performance.md)
+- [Optimizing image-processing performance](./optimizing-image-processing-performance.md)
   Improve your app’s performance by converting image buffer formats from interleaved to planar.
-- [vImage](vimage-library.md)
+- [vImage](./vimage-library.md)
   Manipulate large images using the CPU’s vector processor.
 
 

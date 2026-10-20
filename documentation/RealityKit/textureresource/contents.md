@@ -1,7 +1,8 @@
 # TextureResource.Contents
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that references the pixel data for each mipmap level of a texture.
 
@@ -26,25 +27,26 @@ Mipmaps are progressively smaller versions of the same texture image. Each level
 ## Topics
 
 ### Creating the content
-- [init(mipmapLevels: [TextureResource.Contents.MipmapLevel])](textureresource/contents/init(mipmaplevels:).md)
+- [init(mipmapLevels: [TextureResource.Contents.MipmapLevel])](./contents/init%28mipmaplevels%29.md)
   Creates a texture contents object from an array of mipmaps.
 ### Defining the content
-- [TextureResource.Contents.MipmapLevel](textureresource/contents/mipmaplevel.md)
+- [TextureResource.Contents.MipmapLevel](./contents/mipmaplevel.md)
   An object that references the pixel data for a single mipmap of a texture.
-- [TextureResource.Contents.Slice](textureresource/contents/slice.md)
+- [TextureResource.Contents.Slice](./contents/slice.md)
   An object that references the pixel data for a single slice of a mipmap.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [TextureResource.Format](textureresource/format.md)
+### Creating a texture resource
+- [TextureResource.Format](./format.md)
   The pixel format and encoding of a texture.
-- [TextureResource.Compression](textureresource/compression.md)
+- [TextureResource.Compression](./compression.md)
   The compression to apply when importing an image as a texture.
 
 

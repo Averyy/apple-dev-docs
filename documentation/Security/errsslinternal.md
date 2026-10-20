@@ -1,7 +1,8 @@
 # errSSLInternal
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Internal error.
 
@@ -18,6 +19,10 @@ Internal error.
 
 ```swift
 var errSSLInternal: OSStatus { get }
+```
+
+```c
+errSSLInternal
 ```
 
 

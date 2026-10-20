@@ -1,7 +1,8 @@
 # largeBlob
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request’s binary large object value.
 
@@ -20,9 +21,10 @@ var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput? { get 
 
 ## See Also
 
-- [var allowedCredentials: [ASAuthorizationPlatformPublicKeyCredentialDescriptor]](asauthorizationplatformpublickeycredentialassertionrequest/allowedcredentials.md)
+### Accessing request properties
+- [var allowedCredentials: [ASAuthorizationPlatformPublicKeyCredentialDescriptor]](./allowedcredentials.md)
   The array of allowed credentials.
-- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?](asauthorizationplatformpublickeycredentialassertionrequest/prf-47uoa.md)
+- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?](./prf-47uoa.md)
 
 
 ---

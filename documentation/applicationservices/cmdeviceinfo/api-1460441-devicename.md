@@ -1,7 +1,8 @@
 # deviceName
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 See the CFDictionary documentation for a description of the `CFDictionaryRef` data type.
 
@@ -12,6 +13,10 @@ See the CFDictionary documentation for a description of the `CFDictionaryRef` da
 
 ```swift
 var deviceName: UnsafeMutablePointer<Unmanaged<CFDictionary>?>!
+```
+
+```c
+CFDictionaryRef *deviceName;
 ```
 
 

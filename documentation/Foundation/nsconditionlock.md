@@ -1,7 +1,8 @@
 # NSConditionLock
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A lock that can be associated with specific, user-defined conditions.
 
@@ -20,63 +21,68 @@ A lock that can be associated with specific, user-defined conditions.
 class NSConditionLock
 ```
 
+```objc
+@interface NSConditionLock : NSObject
+```
+
 #### Overview
 
-Using an [`NSConditionLock`](nsconditionlock.md) object, you can ensure that a thread can acquire a lock only if a certain condition is met. Once it has acquired the lock and executed the critical section of code, the thread can relinquish the lock and set the associated condition to something new. The conditions themselves are arbitrary: you define them as needed for your application.
+Using an [`NSConditionLock`](./nsconditionlock.md) object, you can ensure that a thread can acquire a lock only if a certain condition is met. Once it has acquired the lock and executed the critical section of code, the thread can relinquish the lock and set the associated condition to something new. The conditions themselves are arbitrary: you define them as needed for your application.
 
 ## Topics
 
 ### Initializing an NSConditionLock Object
-- [init(condition: Int)](nsconditionlock/init(condition:).md)
+- [init(condition: Int)](./nsconditionlock/init%28condition%29.md)
   Initializes a newly allocated `NSConditionLock` object and sets its condition.
 ### Accessing the Condition
-- [var condition: Int](nsconditionlock/condition.md)
+- [var condition: Int](./nsconditionlock/condition.md)
   The condition associated with the receiver.
 ### Acquiring and Releasing a Lock
-- [func lock(before: Date) -> Bool](nsconditionlock/lock(before:).md)
+- [func lock(before: Date) -> Bool](./nsconditionlock/lock%28before%29.md)
   Attempts to acquire a lock before a specified moment in time.
-- [func lock(whenCondition: Int)](nsconditionlock/lock(whencondition:).md)
+- [func lock(whenCondition: Int)](./nsconditionlock/lock%28whencondition%29.md)
   Attempts to acquire a lock.
-- [func lock(whenCondition: Int, before: Date) -> Bool](nsconditionlock/lock(whencondition:before:).md)
+- [func lock(whenCondition: Int, before: Date) -> Bool](./nsconditionlock/lock%28whencondition,before%29.md)
   Attempts to acquire a lock before a specified moment in time.
-- [func `try`() -> Bool](nsconditionlock/try.md)
+- [func `try`() -> Bool](./nsconditionlock/try%28%29.md)
   Attempts to acquire a lock without regard to the receiver’s condition.
-- [func tryLock(whenCondition: Int) -> Bool](nsconditionlock/trylock(whencondition:).md)
+- [func tryLock(whenCondition: Int) -> Bool](./nsconditionlock/trylock%28whencondition%29.md)
   Attempts to acquire a lock if the receiver’s condition is equal to the specified condition.
-- [func unlock(withCondition: Int)](nsconditionlock/unlock(withcondition:).md)
+- [func unlock(withCondition: Int)](./nsconditionlock/unlock%28withcondition%29.md)
   Relinquishes the lock and sets the receiver’s condition.
 ### Identifying the Condition Lock
-- [var name: String?](nsconditionlock/name.md)
+- [var name: String?](./nsconditionlock/name.md)
   The name associated with the receiver.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSLocking](nslocking.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSLocking](./nslocking.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class Thread](thread.md)
+### Threads and Locking
+- [class Thread](./thread.md)
   A thread of execution.
-- [protocol NSLocking](nslocking.md)
+- [protocol NSLocking](./nslocking.md)
   The elementary methods adopted by classes that define lock objects.
-- [class NSLock](nslock.md)
+- [class NSLock](./nslock.md)
   An object that coordinates the operation of multiple threads of execution within the same application.
-- [class NSRecursiveLock](nsrecursivelock.md)
+- [class NSRecursiveLock](./nsrecursivelock.md)
   A lock that may be acquired multiple times by the same thread without causing a deadlock.
-- [class NSDistributedLock](nsdistributedlock.md)
+- [class NSDistributedLock](./nsdistributedlock.md)
   A lock that multiple applications on multiple hosts can use to restrict access to some shared resource, such as a file.
-- [class NSCondition](nscondition.md)
+- [class NSCondition](./nscondition.md)
   A condition variable whose semantics follow those used for POSIX-style conditions.
 
 

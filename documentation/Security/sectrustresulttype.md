@@ -1,7 +1,8 @@
 # SecTrustResultType
 
 **Framework**: Security  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Trust evaluation result codes.
 
@@ -20,43 +21,47 @@ Trust evaluation result codes.
 enum SecTrustResultType
 ```
 
+```c
+enum SecTrustResultType : uint32_t;
+```
+
 #### Overview
 
-You get one of these constants when you call the [`SecTrustGetTrustResult(_:_:)`](sectrustgettrustresult(_:_:).md) method after evaluating a trust instance with either the [`SecTrustEvaluateWithError(_:_:)`](sectrustevaluatewitherror(_:_:).md) method or the [`SecTrustEvaluateAsyncWithError(_:_:_:)`](sectrustevaluateasyncwitherror(_:_:_:).md) method. If evaluation fails and [`SecTrustGetTrustResult(_:_:)`](sectrustgettrustresult(_:_:).md) reports [`SecTrustResultType.recoverableTrustFailure`](sectrustresulttype/recoverabletrustfailure.md), you might be able to change parameters like the evaluation date, and reevaluate to obtain a passing result, as described in [`Configuring a Trust`](configuring-a-trust.md).
+You get one of these constants when you call the [`SecTrustGetTrustResult(_:_:)`](./sectrustgettrustresult%28_,_%29.md) method after evaluating a trust instance with either the [`SecTrustEvaluateWithError(_:_:)`](./sectrustevaluatewitherror%28_,_%29.md) method or the [`SecTrustEvaluateAsyncWithError(_:_:_:)`](./sectrustevaluateasyncwitherror%28_,_,_%29.md) method. If evaluation fails and [`SecTrustGetTrustResult(_:_:)`](./sectrustgettrustresult%28_,_%29.md) reports [`SecTrustResultType.recoverableTrustFailure`](./sectrustresulttype/recoverabletrustfailure.md), you might be able to change parameters like the evaluation date, and reevaluate to obtain a passing result, as described in [Configuring a Trust](./configuring-a-trust.md).
 
 See an individual constant below for more information about how to handle that result type in your app.
 
 ## Topics
 
 ### Result Codes
-- [SecTrustResultType.unspecified](sectrustresulttype/unspecified.md)
+- [SecTrustResultType.unspecified](./sectrustresulttype/unspecified.md)
   The user did not specify a trust setting.
-- [SecTrustResultType.proceed](sectrustresulttype/proceed.md)
+- [SecTrustResultType.proceed](./sectrustresulttype/proceed.md)
   The user granted permission to trust the certificate for the purposes designated in the specified policies.
-- [SecTrustResultType.deny](sectrustresulttype/deny.md)
+- [SecTrustResultType.deny](./sectrustresulttype/deny.md)
   The user specified that the certificate should not be trusted.
-- [SecTrustResultType.recoverableTrustFailure](sectrustresulttype/recoverabletrustfailure.md)
+- [SecTrustResultType.recoverableTrustFailure](./sectrustresulttype/recoverabletrustfailure.md)
   Trust is denied, but recovery may be possible.
-- [SecTrustResultType.fatalTrustFailure](sectrustresulttype/fataltrustfailure.md)
+- [SecTrustResultType.fatalTrustFailure](./sectrustresulttype/fataltrustfailure.md)
   Trust is denied and no simple fix is available.
-- [SecTrustResultType.otherError](sectrustresulttype/othererror.md)
+- [SecTrustResultType.otherError](./sectrustresulttype/othererror.md)
   A value that indicates a failure other than trust evaluation.
-- [SecTrustResultType.invalid](sectrustresulttype/invalid.md)
+- [SecTrustResultType.invalid](./sectrustresulttype/invalid.md)
   An indication of an invalid setting or result.
-- [SecTrustResultType.confirm](sectrustresulttype/confirm.md)
+- [SecTrustResultType.confirm](./sectrustresulttype/confirm.md)
   User confirmation is required before proceeding.
 ### Initializers
-- [init?(rawValue: UInt32)](sectrustresulttype/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./sectrustresulttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

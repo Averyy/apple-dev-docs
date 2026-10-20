@@ -1,7 +1,8 @@
 # replacingCharacters(in:with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new string in which the characters in a specified range of the receiver are replaced by a given string.
 
@@ -20,6 +21,10 @@ Returns a new string in which the characters in a specified range of the receive
 func replacingCharacters(in range: NSRange, with replacement: String) -> String
 ```
 
+```objc
+- (NSString *) stringByReplacingCharactersInRange:(NSRange) range withString:(NSString *) replacement;
+```
+
 #### Return Value
 
 A new string in which the characters in `range` of the receiver are replaced by `replacement`.
@@ -31,11 +36,13 @@ A new string in which the characters in `range` of the receiver are replaced by 
 
 ## See Also
 
-- [func replacingPercentEscapes(using: UInt) -> String?](nsstring/replacingpercentescapes(using:).md)
+### Related Documentation
+- [func replacingPercentEscapes(using: UInt) -> String?](./replacingpercentescapes%28using%29.md)
   Returns a new string made by replacing in the receiver all percent escapes with the matching characters as determined by a given encoding.
-- [func replacingOccurrences(of: String, with: String) -> String](nsstring/replacingoccurrences(of:with:).md)
+### Replacing Substrings
+- [func replacingOccurrences(of: String, with: String) -> String](./replacingoccurrences%28of,with%29.md)
   Returns a new string in which all occurrences of a target string in the receiver are replaced by another given string.
-- [func replacingOccurrences(of: String, with: String, options: NSString.CompareOptions, range: NSRange) -> String](nsstring/replacingoccurrences(of:with:options:range:).md)
+- [func replacingOccurrences(of: String, with: String, options: NSString.CompareOptions, range: NSRange) -> String](./replacingoccurrences%28of,with,options,range%29.md)
   Returns a new string in which all occurrences of a target string in a specified range of the receiver are replaced by another given string.
 
 

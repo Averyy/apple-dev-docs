@@ -1,13 +1,14 @@
 # delegate
 
 **Framework**: Spatial Preview  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional synchronous undo/redo event delegate
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

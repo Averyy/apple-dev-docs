@@ -1,7 +1,8 @@
 # WidgetFamily.systemMedium
 
 **Framework**: WidgetKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A medium-sized widget.
 
@@ -20,8 +21,8 @@ case systemMedium
 
 ## Mentions
 
-- [Adding interactivity to widgets and Live Activities](adding-interactivity-to-widgets-and-live-activities.md)
-- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
+- [Adding interactivity to widgets and Live Activities](../adding-interactivity-to-widgets-and-live-activities.md)
+- [Preparing widgets for additional platforms, contexts, and appearances](../preparing-widgets-for-additional-contexts-and-appearances.md)
 
 #### Discussion
 
@@ -29,13 +30,14 @@ The medium system widget can appear on the Home Screen or in the Today View in i
 
 ## See Also
 
-- [WidgetFamily.systemSmall](widgetfamily/systemsmall.md)
+### Accessing system families
+- [WidgetFamily.systemSmall](./systemsmall.md)
   A small widget.
-- [WidgetFamily.systemLarge](widgetfamily/systemlarge.md)
+- [WidgetFamily.systemLarge](./systemlarge.md)
   A large widget.
-- [WidgetFamily.systemExtraLarge](widgetfamily/systemextralarge.md)
+- [WidgetFamily.systemExtraLarge](./systemextralarge.md)
   An extra-large widget.
-- [WidgetFamily.systemExtraLargePortrait](widgetfamily/systemextralargeportrait.md)
+- [WidgetFamily.systemExtraLargePortrait](./systemextralargeportrait.md)
   An extra-large widget that uses a portrait orientation.
 
 

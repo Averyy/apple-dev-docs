@@ -1,7 +1,8 @@
 # init(_:systemImage:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a label with a system icon image and a title generated from a localized string.
 
@@ -21,6 +22,20 @@ Creates a label with a system icon image and a title generated from a localized 
 nonisolated init(_ titleResource: LocalizedStringResource, systemImage name: String)
 ```
 
+Available when `Title` is `Text` and `Icon` is `Image`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, systemImage name: String)
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, systemImage name: String) where S : StringProtocol
+```
+
 ## Parameters
 
 - `titleResource`: A title generated from a localized string.
@@ -28,13 +43,14 @@ nonisolated init(_ titleResource: LocalizedStringResource, systemImage name: Str
 
 ## See Also
 
-- [init(_:image:)](label/init(_:image:).md)
+### Creating a label
+- [init(_:image:)](./init%28_,image%29.md)
   Creates a label with an icon image and a title generated from a localized string.
-- [init(title: () -> Title, icon: () -> Icon)](label/init(title:icon:).md)
+- [init(title: () -> Title, icon: () -> Icon)](./init%28title,icon%29.md)
   Creates a label with a custom title and icon.
-- [init(_:)](label/init(_:).md)
+- [init(_:)](./init%28_%29.md)
   Creates a label representing a family activity application.
-- [init(_:image:)](label/init(_:image:).md)
+- [init(_:image:)](./init%28_,image%29.md)
   Creates a label with an icon image and a title generated from a localized string.
 
 

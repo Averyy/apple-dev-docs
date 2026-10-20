@@ -1,7 +1,8 @@
 # init(_:including:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attribute container from a dictionary and an attribute scope that a key path identifies.
 
@@ -31,11 +32,12 @@ This initializer only collects attributes from `dictionary` that exist in the pr
 
 ## See Also
 
-- [init()](attributecontainer/init.md)
+### Creating an Attribute Container
+- [init()](./init%28%29.md)
   Creates an empty attribute container.
-- [init<S>([NSAttributedString.Key : Any], including: S.Type) throws](attributecontainer/init(_:including:)-2mw0o.md)
+- [init<S>([NSAttributedString.Key : Any], including: S.Type) throws](./init%28_,including%29-2mw0o.md)
   Creates an attribute container from a dictionary and an attribute scope.
-- [init([NSAttributedString.Key : Any])](attributecontainer/init(_:).md)
+- [init([NSAttributedString.Key : Any])](./init%28_%29.md)
   Creates an attribute container from a dictionary, using default attribute scopes.
 
 

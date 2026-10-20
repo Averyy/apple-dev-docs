@@ -1,12 +1,13 @@
 # NSBitmapImageRep.PropertyKey
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that identify bitmap image representation properties.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,76 +15,81 @@ Constants that identify bitmap image representation properties.
 struct PropertyKey
 ```
 
+```c
+typedef NSString * NSBitmapImageRepPropertyKey;
+```
+
 #### Discussion
 
-Use these constants with [`representationOfImageReps(in:using:properties:)`](nsbitmapimagerep/representationofimagereps(in:using:properties:).md), [`representation(using:properties:)`](nsbitmapimagerep/representation(using:properties:).md), [`setPixel(_:atX:y:)`](nsbitmapimagerep/setpixel(_:atx:y:).md), and [`value(forProperty:)`](nsbitmapimagerep/value(forproperty:).md).
+Use these constants with [`representationOfImageReps(in:using:properties:)`](./representationofimagereps%28in,using,properties%29.md), [`representation(using:properties:)`](./representation%28using,properties%29.md), [`setPixel(_:atX:y:)`](./setpixel%28_,atx,y%29.md), and [`value(forProperty:)`](./value%28forproperty%29.md).
 
-When using the [`value(forProperty:)`](nsbitmapimagerep/value(forproperty:).md) method to retrieve the the value for any of these keys, be sure to check that the returned value is non-`nil` before you attempt to use it. A bitmap image representation may return `nil` for any values that have not yet been set.
+When using the [`value(forProperty:)`](./value%28forproperty%29.md) method to retrieve the the value for any of these keys, be sure to check that the returned value is non-`nil` before you attempt to use it. A bitmap image representation may return `nil` for any values that have not yet been set.
 
 ## Topics
 
 ### Bitmap Properties
-- [static let colorSyncProfileData: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/colorsyncprofiledata.md)
+- [static let colorSyncProfileData: NSBitmapImageRep.PropertyKey](./propertykey/colorsyncprofiledata.md)
   Identifies an `NSData` object containing the ColorSync profile data.
-- [static let compressionFactor: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/compressionfactor.md)
+- [static let compressionFactor: NSBitmapImageRep.PropertyKey](./propertykey/compressionfactor.md)
   Identifies an `NSNumber` object containing the compression factor of the image.
-- [static let compressionMethod: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/compressionmethod.md)
+- [static let compressionMethod: NSBitmapImageRep.PropertyKey](./propertykey/compressionmethod.md)
   Identifies an `NSNumber` object identifying the compression method of the image.
-- [static let currentFrame: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/currentframe.md)
+- [static let currentFrame: NSBitmapImageRep.PropertyKey](./propertykey/currentframe.md)
   Identifies an `NSNumber` object containing the current frame for an animated GIF file.
-- [static let currentFrameDuration: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/currentframeduration.md)
+- [static let currentFrameDuration: NSBitmapImageRep.PropertyKey](./propertykey/currentframeduration.md)
   Identifies an `NSNumber` object containing the duration (in seconds) of the current frame for an animated GIF image.
-- [static let ditherTransparency: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/dithertransparency.md)
+- [static let ditherTransparency: NSBitmapImageRep.PropertyKey](./propertykey/dithertransparency.md)
   Identifies an `NSNumber` object containing a Boolean that indicates whether the image is dithered.
-- [static let exifData: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/exifdata.md)
+- [static let exifData: NSBitmapImageRep.PropertyKey](./propertykey/exifdata.md)
   Identifies an `NSDictionary` object containing the EXIF data for the image.
-- [static let fallbackBackgroundColor: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/fallbackbackgroundcolor.md)
+- [static let fallbackBackgroundColor: NSBitmapImageRep.PropertyKey](./propertykey/fallbackbackgroundcolor.md)
   Specifies the background color to use when writing to an image format (such as JPEG) that doesn’t support alpha.
-- [static let frameCount: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/framecount.md)
+- [static let frameCount: NSBitmapImageRep.PropertyKey](./propertykey/framecount.md)
   Identifies an `NSNumber` object containing the number of frames in an animated GIF file.
-- [static let gamma: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/gamma.md)
+- [static let gamma: NSBitmapImageRep.PropertyKey](./propertykey/gamma.md)
   Identifies an `NSNumber` object containing the gamma value for the image.
-- [static let interlaced: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/interlaced.md)
+- [static let interlaced: NSBitmapImageRep.PropertyKey](./propertykey/interlaced.md)
   Identifies an `NSNumber` object containing a Boolean value that indicates whether the image is interlaced.
-- [static let loopCount: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/loopcount.md)
+- [static let loopCount: NSBitmapImageRep.PropertyKey](./propertykey/loopcount.md)
   Identifies an `NSNumber` object containing the number of loops to make when animating a GIF image.
-- [static let progressive: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/progressive.md)
+- [static let progressive: NSBitmapImageRep.PropertyKey](./propertykey/progressive.md)
   Identifies an `NSNumber` object containing a Boolean that indicates whether the image uses progressive encoding.
-- [static let rgbColorTable: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/rgbcolortable.md)
+- [static let rgbColorTable: NSBitmapImageRep.PropertyKey](./propertykey/rgbcolortable.md)
   Identifies an `NSData` object containing the RGB color table.
 ### Initializers
-- [init(String)](nsbitmapimagerep/propertykey/init(_:).md)
-- [init(rawValue: String)](nsbitmapimagerep/propertykey/init(rawvalue:).md)
+- [init(String)](./propertykey/init%28_%29.md)
+- [init(rawValue: String)](./propertykey/init%28rawvalue%29.md)
 ### Type Properties
-- [static let imageIPTCData: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/imageiptcdata.md)
-- [static let imageIPTCData: NSBitmapImageRep.PropertyKey](nsbitmapimagerep/propertykey/imageiptcdata.md)
+- [static let imageIPTCData: NSBitmapImageRep.PropertyKey](./propertykey/imageiptcdata.md)
+- [static let imageIPTCData: NSBitmapImageRep.PropertyKey](./propertykey/imageiptcdata.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func getTIFFCompressionTypes(UnsafeMutablePointer<UnsafePointer<NSBitmapImageRep.TIFFCompression>?>, count: UnsafeMutablePointer<Int>)](nsbitmapimagerep/gettiffcompressiontypes(_:count:).md)
+### Managing Compression Types
+- [class func getTIFFCompressionTypes(UnsafeMutablePointer<UnsafePointer<NSBitmapImageRep.TIFFCompression>?>, count: UnsafeMutablePointer<Int>)](./gettiffcompressiontypes%28_,count%29.md)
   Returns by indirection an array of all available compression types that can be used when writing a TIFF image.
-- [class func localizedName(forTIFFCompressionType: NSBitmapImageRep.TIFFCompression) -> String?](nsbitmapimagerep/localizedname(fortiffcompressiontype:).md)
+- [class func localizedName(forTIFFCompressionType: NSBitmapImageRep.TIFFCompression) -> String?](./localizedname%28fortiffcompressiontype%29.md)
   Returns an autoreleased string containing the localized name for the specified compression type.
-- [func canBeCompressed(using: NSBitmapImageRep.TIFFCompression) -> Bool](nsbitmapimagerep/canbecompressed(using:).md)
+- [func canBeCompressed(using: NSBitmapImageRep.TIFFCompression) -> Bool](./canbecompressed%28using%29.md)
   Tests whether the bitmap image representation can be compressed by the specified compression scheme.
-- [func setCompression(NSBitmapImageRep.TIFFCompression, factor: Float)](nsbitmapimagerep/setcompression(_:factor:).md)
+- [func setCompression(NSBitmapImageRep.TIFFCompression, factor: Float)](./setcompression%28_,factor%29.md)
   Sets the bitmap image representation’s compression type and compression factor.
-- [func getCompression(UnsafeMutablePointer<NSBitmapImageRep.TIFFCompression>?, factor: UnsafeMutablePointer<Float>?)](nsbitmapimagerep/getcompression(_:factor:).md)
+- [func getCompression(UnsafeMutablePointer<NSBitmapImageRep.TIFFCompression>?, factor: UnsafeMutablePointer<Float>?)](./getcompression%28_,factor%29.md)
   Returns by indirection the bitmap image representation’s compression type and compression factor.
-- [func setProperty(NSBitmapImageRep.PropertyKey, withValue: Any?)](nsbitmapimagerep/setproperty(_:withvalue:).md)
+- [func setProperty(NSBitmapImageRep.PropertyKey, withValue: Any?)](./setproperty%28_,withvalue%29.md)
   Sets the specified property of the bitmap image representation to the specified value.
-- [func value(forProperty: NSBitmapImageRep.PropertyKey) -> Any?](nsbitmapimagerep/value(forproperty:).md)
+- [func value(forProperty: NSBitmapImageRep.PropertyKey) -> Any?](./value%28forproperty%29.md)
   Returns the value for the specified property.
-- [NSBitmapImageRep.TIFFCompression](nsbitmapimagerep/tiffcompression.md)
+- [NSBitmapImageRep.TIFFCompression](./tiffcompression.md)
   Constants that represent the supported TIFF data-compression schemes.
 
 

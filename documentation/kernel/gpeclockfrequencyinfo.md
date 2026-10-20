@@ -1,14 +1,15 @@
 # gPEClockFrequencyInfo
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 clock_frequency_info_t gPEClockFrequencyInfo;
 ```
 

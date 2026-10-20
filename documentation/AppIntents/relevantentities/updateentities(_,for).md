@@ -1,7 +1,8 @@
 # updateEntities(_:for:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Donates suggested entities for a single context.
 
@@ -22,13 +23,13 @@ func updateEntities(_ entities: [any AppEntity], for context: AppEntityContext) 
 
 ## Mentions
 
-- [Donating your app’s data and actions to the system](donating-your-apps-data-and-actions-to-the-system.md)
+- [Donating your app’s data and actions to the system](../donating-your-apps-data-and-actions-to-the-system.md)
 
 #### Discussion
 
 Replaces any previously donated entities associated with the given context.
 
-> **Note**: An error if the donation fails.
+> **Throws**: An error if the donation fails.
 
 ## Parameters
 

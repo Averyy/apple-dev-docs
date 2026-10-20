@@ -1,7 +1,8 @@
 # MKLocalSearchRegionPriority.default
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value indicating that the results can originate from outside the specified region.
 
@@ -20,9 +21,14 @@ A value indicating that the results can originate from outside the specified reg
 case `default`
 ```
 
+```c
+MKLocalSearchRegionPriorityDefault
+```
+
 ## See Also
 
-- [MKLocalSearchRegionPriority.required](mklocalsearchregionpriority/required.md)
+### Setting region priority
+- [MKLocalSearchRegionPriority.required](./required.md)
   A value indicating that no results can originate from outside the specified region.
 
 

@@ -1,18 +1,23 @@
 # animationDidEnd(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the delegate when the specified animation completes its run.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 nonisolated
 optional func animationDidEnd(_ animation: NSAnimation)
+```
+
+```objc
+- (void) animationDidEnd:(NSAnimation *) animation;
 ```
 
 #### Discussion
@@ -25,15 +30,17 @@ When an `NSAnimation` object reaches the end of its planned duration, it has a p
 
 ## See Also
 
-- [protocol NSAnimationDelegate](nsanimationdelegate.md)
-  A set of optional methods implemented by delegates of [`NSAnimation`](nsanimation.md) objects.
-- [var currentProgress: NSAnimation.Progress](nsanimation/currentprogress.md)
+### Related Documentation
+- [protocol NSAnimationDelegate](../nsanimationdelegate.md)
+  A set of optional methods implemented by delegates of [`NSAnimation`](../nsanimation.md) objects.
+- [var currentProgress: NSAnimation.Progress](../nsanimation/currentprogress.md)
   The current progress of the animation.
-- [func animationDidStop(NSAnimation)](nsanimationdelegate/animationdidstop(_:).md)
+### Controlling and Monitoring an Animation
+- [func animationDidStop(NSAnimation)](./animationdidstop%28_%29.md)
   Sent to the delegate when the specified animation is stopped before it completes its run.
-- [func animationShouldStart(NSAnimation) -> Bool](nsanimationdelegate/animationshouldstart(_:).md)
+- [func animationShouldStart(NSAnimation) -> Bool](./animationshouldstart%28_%29.md)
   Sent to the delegate just after an animation is started.
-- [func animation(NSAnimation, valueForProgress: NSAnimation.Progress) -> Float](nsanimationdelegate/animation(_:valueforprogress:).md)
+- [func animation(NSAnimation, valueForProgress: NSAnimation.Progress) -> Float](./animation%28_,valueforprogress%29.md)
   Requests a custom curve value for the current progress value.
 
 

@@ -1,7 +1,8 @@
 # international3
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The keyboard code for the third international key.
 
@@ -19,23 +20,28 @@ The keyboard code for the third international key.
 static let international3: GCKeyCode
 ```
 
+```c
+extern const GCKeyCode GCKeyCodeInternational3;
+```
+
 ## See Also
 
-- [static let international1: GCKeyCode](gckeycode/international1.md)
+### International Keys
+- [static let international1: GCKeyCode](./international1.md)
   The keyboard code for the first international key.
-- [static let international2: GCKeyCode](gckeycode/international2.md)
+- [static let international2: GCKeyCode](./international2.md)
   The keyboard code for the second international key.
-- [static let international4: GCKeyCode](gckeycode/international4.md)
+- [static let international4: GCKeyCode](./international4.md)
   The keyboard code for the fourth international key.
-- [static let international5: GCKeyCode](gckeycode/international5.md)
+- [static let international5: GCKeyCode](./international5.md)
   The keyboard code for the fifth international key.
-- [static let international6: GCKeyCode](gckeycode/international6.md)
+- [static let international6: GCKeyCode](./international6.md)
   The keyboard code for the sixth international key.
-- [static let international7: GCKeyCode](gckeycode/international7.md)
+- [static let international7: GCKeyCode](./international7.md)
   The keyboard code for the seventh international key.
-- [static let international8: GCKeyCode](gckeycode/international8.md)
+- [static let international8: GCKeyCode](./international8.md)
   The keyboard code for the eighth international key.
-- [static let international9: GCKeyCode](gckeycode/international9.md)
+- [static let international9: GCKeyCode](./international9.md)
   The keyboard code for the ninth international key.
 
 

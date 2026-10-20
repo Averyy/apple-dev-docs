@@ -1,7 +1,8 @@
 # init(content:destination:cellularServiceID:messageID:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new send encrypted message request with the given parameters.
 
@@ -16,16 +17,17 @@ init(content: RCSMessage.FileTransfer, destination: RCSHandle, cellularServiceID
 
 ## Parameters
 
-- `content`: The content of the message to send, as an instance of [`RCSMessage.FileTransfer`](rcsmessage/filetransfer.md).
+- `content`: The content of the message to send, as an instance of [`RCSMessage.FileTransfer`](../../rcsmessage/filetransfer.md).
 - `destination`: The destination handle to send the message to.
 - `cellularServiceID`: The service identifier to use for the message.
 - `messageID`: The message identifier to use for the message.
 
 ## See Also
 
-- [init(content: RCSMessage.GeolocationPush, destination: RCSHandle, cellularServiceID: CellularServiceID, messageID: RCSMessageID)](rcsservice/sendencryptedmessagerequest/init(content:destination:cellularserviceid:messageid:)-3ox0y.md)
+### Creating a request
+- [init(content: RCSMessage.GeolocationPush, destination: RCSHandle, cellularServiceID: CellularServiceID, messageID: RCSMessageID)](./init%28content,destination,cellularserviceid,messageid%29-3ox0y.md)
   Creates a new send encrypted message request with the given parameters.
-- [init(content: RCSMessage.Text, destination: RCSHandle, cellularServiceID: CellularServiceID, messageID: RCSMessageID)](rcsservice/sendencryptedmessagerequest/init(content:destination:cellularserviceid:messageid:)-6dm2z.md)
+- [init(content: RCSMessage.Text, destination: RCSHandle, cellularServiceID: CellularServiceID, messageID: RCSMessageID)](./init%28content,destination,cellularserviceid,messageid%29-6dm2z.md)
   Creates a new send encrypted message request with the given parameters.
 
 

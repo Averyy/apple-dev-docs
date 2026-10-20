@@ -2,6 +2,7 @@
 
 **Framework**: DeveloperToolsSupport  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 **Availability**:
@@ -22,10 +23,11 @@ static func makePreview() throws -> Preview
 
 ## See Also
 
-- [static var preview: Preview](previewregistry/preview.md)
-- [static var column: Int](previewregistry/column.md)
-- [static var fileID: String](previewregistry/fileid.md)
-- [static var line: Int](previewregistry/line.md)
+### Making a preview
+- [static var preview: Preview](./preview.md)
+- [static var column: Int](./column.md)
+- [static var fileID: String](./fileid.md)
+- [static var line: Int](./line.md)
 
 
 ---

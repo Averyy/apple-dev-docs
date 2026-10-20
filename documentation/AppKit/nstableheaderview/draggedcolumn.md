@@ -1,17 +1,22 @@
 # draggedColumn
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the column that the user is dragging.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var draggedColumn: Int { get }
+```
+
+```objc
+@property (readonly) NSInteger draggedColumn;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ If the user is dragging a column, this property contains the index of that colum
 
 ## See Also
 
-- [var draggedDistance: CGFloat](nstableheaderview/draggeddistance.md)
+### Checking altered columns
+- [var draggedDistance: CGFloat](./draggeddistance.md)
   The horizontal distance that the user has dragged a column.
-- [var resizedColumn: Int](nstableheaderview/resizedcolumn.md)
+- [var resizedColumn: Int](./resizedcolumn.md)
   The index of the column that the user is resizing.
 
 

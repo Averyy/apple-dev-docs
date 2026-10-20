@@ -1,17 +1,18 @@
 # init(version:info:retain:release:copyDescription:)
 
 **Framework**: System Configuration  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a dynamic store context with the specified values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 

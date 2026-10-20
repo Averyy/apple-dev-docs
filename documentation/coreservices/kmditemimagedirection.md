@@ -1,7 +1,8 @@
 # kMDItemImageDirection
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
  The direction of the item's image, in degrees from true north. A CFString.
 
@@ -12,6 +13,10 @@
 
 ```swift
 let kMDItemImageDirection: CFString!
+```
+
+```c
+const CFStringRef kMDItemImageDirection;
 ```
 
 

@@ -1,7 +1,8 @@
 # didBecomeActive(with:)
 
 **Framework**: Messages  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked after the Messages extension becomes active.
 
@@ -16,9 +17,13 @@ Invoked after the Messages extension becomes active.
 func didBecomeActive(with conversation: MSConversation)
 ```
 
+```objc
+- (void) didBecomeActiveWithConversation:(MSConversation *) conversation;
+```
+
 #### Discussion
 
-Override this method to respond after the Messages extension becomes active. The extension becomes active both when the user selects the extension from the app drawer, and when the user selects a message in the transcript that represents an [`MSMessage`](msmessage.md) object created by a copy of the extension.
+Override this method to respond after the Messages extension becomes active. The extension becomes active both when the user selects the extension from the app drawer, and when the user selects a message in the transcript that represents an [`MSMessage`](../msmessage.md) object created by a copy of the extension.
 
 ## Parameters
 
@@ -26,15 +31,16 @@ Override this method to respond after the Messages extension becomes active. The
 
 ## See Also
 
-- [var activeConversation: MSConversation?](msmessagesappviewcontroller/activeconversation.md)
+### Managing the Extension’s State
+- [var activeConversation: MSConversation?](./activeconversation.md)
   The conversation currently displayed in the transcript.
-- [func dismiss()](msmessagesappviewcontroller/dismiss.md)
+- [func dismiss()](./dismiss%28%29.md)
   Dismisses the extension and marks it for termination.
-- [func willBecomeActive(with: MSConversation)](msmessagesappviewcontroller/willbecomeactive(with:).md)
+- [func willBecomeActive(with: MSConversation)](./willbecomeactive%28with%29.md)
   Invoked just before the Messages extension becomes active.
-- [func willResignActive(with: MSConversation)](msmessagesappviewcontroller/willresignactive(with:).md)
+- [func willResignActive(with: MSConversation)](./willresignactive%28with%29.md)
   Invoked just before the message resigns its active status.
-- [func didResignActive(with: MSConversation)](msmessagesappviewcontroller/didresignactive(with:).md)
+- [func didResignActive(with: MSConversation)](./didresignactive%28with%29.md)
   Invoked after the message resigns its active status.
 
 

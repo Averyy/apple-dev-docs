@@ -1,17 +1,22 @@
 # string
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The characters of the receiver’s text.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var string: String { get set }
+```
+
+```objc
+@property (copy) NSString * string;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ For performance reasons, this value is the current backing store of the text obj
 
 ## See Also
 
-- [Cocoa Text Architecture Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/TextFonts/Conceptual/CocoaTextArchitecture/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009459)
+### Related Documentation
+- [Cocoa Text Architecture Guide](https://developer.apple.com/library/archive/documentation/TextFonts/Conceptual/CocoaTextArchitecture/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009459)
 
 
 ---

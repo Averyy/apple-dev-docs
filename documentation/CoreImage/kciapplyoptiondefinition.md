@@ -1,7 +1,8 @@
 # kCIApplyOptionDefinition
 
 **Framework**: Core Image  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain of definition (DOD) of the produced image.
 
@@ -14,17 +15,22 @@ The domain of definition (DOD) of the produced image.
 let kCIApplyOptionDefinition: String
 ```
 
+```c
+extern NSString * const kCIApplyOptionDefinition;
+```
+
 #### Discussion
 
-The associated value is either a Core Image filter shape or a four-element array ([`NSArray`](https://developer.apple.com/documentation/foundation/nsarray)) that specifies a rectangle.
+The associated value is either a Core Image filter shape or a four-element array ([`NSArray`](../Foundation/nsarray.md)) that specifies a rectangle.
 
 ## See Also
 
-- [let kCIApplyOptionExtent: String](kciapplyoptionextent.md)
+### Constants
+- [let kCIApplyOptionExtent: String](./kciapplyoptionextent.md)
   The extent of the image.
-- [let kCIApplyOptionUserInfo: String](kciapplyoptionuserinfo.md)
+- [let kCIApplyOptionUserInfo: String](./kciapplyoptionuserinfo.md)
   Information needed by a callback. The associated value is an object that Core Image will pass to any callbacks invoked for that filter.
-- [let kCIApplyOptionColorSpace: String](kciapplyoptioncolorspace.md)
+- [let kCIApplyOptionColorSpace: String](./kciapplyoptioncolorspace.md)
   The color space of the produced image.
 
 

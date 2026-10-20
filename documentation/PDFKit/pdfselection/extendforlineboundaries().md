@@ -1,7 +1,8 @@
 # extendForLineBoundaries()
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -17,10 +18,15 @@
 func extendForLineBoundaries()
 ```
 
+```objc
+- (void) extendSelectionForLineBoundaries;
+```
+
 ## See Also
 
-- [func numberOfTextRanges(on: PDFPage) -> Int](pdfselection/numberoftextranges(on:).md)
-- [func range(at: Int, on: PDFPage) -> NSRange](pdfselection/range(at:on:).md)
+### Instance Methods
+- [func numberOfTextRanges(on: PDFPage) -> Int](./numberoftextranges%28on%29.md)
+- [func range(at: Int, on: PDFPage) -> NSRange](./range%28at,on%29.md)
 
 
 ---

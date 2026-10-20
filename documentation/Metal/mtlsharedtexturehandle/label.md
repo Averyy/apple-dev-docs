@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies the texture.
 
@@ -19,13 +20,18 @@ A string that identifies the texture.
 var label: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * label;
+```
+
 #### Discussion
 
-Object and command labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. See [`Naming resources and commands`](https://developer.apple.com/documentation/xcode/naming-resources-and-commands).
+Object and command labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. See [Naming resources and commands](../../Xcode/naming-resources-and-commands.md).
 
 ## See Also
 
-- [var device: any MTLDevice](mtlsharedtexturehandle/device.md)
+### Identifying the shared texture handle
+- [var device: any MTLDevice](./device.md)
   The device object that created the texture.
 
 

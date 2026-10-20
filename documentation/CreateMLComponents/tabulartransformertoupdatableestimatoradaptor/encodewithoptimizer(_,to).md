@@ -1,7 +1,8 @@
 # encodeWithOptimizer(_:to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Does nothing since this estimator uses a pre-defined transformer.
 
@@ -22,11 +23,12 @@ func encodeWithOptimizer(_ transformer: Transformer, to encoder: inout any Estim
 
 ## See Also
 
-- [func encode(Transformer, to: inout any EstimatorEncoder) throws](tabulartransformertoupdatableestimatoradaptor/encode(_:to:).md)
+### Encoding and decoding
+- [func encode(Transformer, to: inout any EstimatorEncoder) throws](./encode%28_,to%29.md)
   Does nothing since this estimator uses a pre-defined transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> Transformer](tabulartransformertoupdatableestimatoradaptor/decode(from:).md)
+- [func decode(from: inout any EstimatorDecoder) throws -> Transformer](./decode%28from%29.md)
   Returns the pre-defined transformer.
-- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> Transformer](tabulartransformertoupdatableestimatoradaptor/decodewithoptimizer(from:).md)
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> Transformer](./decodewithoptimizer%28from%29.md)
   Returns the pre-defined transformer.
 
 

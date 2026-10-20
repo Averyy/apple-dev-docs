@@ -1,7 +1,8 @@
 # evictsObjectsWithDiscardedContent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the cache will automatically evict discardable-content objects whose content has been discarded.
 
@@ -20,13 +21,18 @@ Whether the cache will automatically evict discardable-content objects whose con
 var evictsObjectsWithDiscardedContent: Bool { get set }
 ```
 
+```objc
+@property BOOL evictsObjectsWithDiscardedContent;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the cache will evict a discardable-content object after its content is discarded. If [`false`](https://developer.apple.com/documentation/swift/false), it will not. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If [`true`](../../Swift/true.md), the cache will evict a discardable-content object after its content is discarded. If [`false`](../../Swift/false.md), it will not. The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [protocol NSDiscardableContent](nsdiscardablecontent.md)
+### Managing Discardable Content
+- [protocol NSDiscardableContent](../nsdiscardablecontent.md)
   You implement this protocol when a class’s objects have subcomponents that can be discarded when not being used, thereby giving an application a smaller memory footprint.
 
 

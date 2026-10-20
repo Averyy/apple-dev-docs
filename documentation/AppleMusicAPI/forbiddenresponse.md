@@ -1,7 +1,8 @@
 # ForbiddenResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response object indicating that the request wasn’t accepted due to an issue with the authentication.
 
@@ -10,7 +11,7 @@ A response object indicating that the request wasn’t accepted due to an issue 
 
 ## Declaration
 
-```swift
+```
 object ForbiddenResponse
 ```
 
@@ -20,13 +21,14 @@ object ForbiddenResponse
 
 ## See Also
 
-- [object EmptyBodyResponse](emptybodyresponse.md)
+### Related Objects
+- [object EmptyBodyResponse](./emptybodyresponse.md)
   A response object that contains no content.
-- [object ErrorsResponse](errorsresponse.md)
+- [object ErrorsResponse](./errorsresponse.md)
   A response object indicating that an error occurred while processing the request.
-- [object UnauthorizedResponse](unauthorizedresponse.md)
+- [object UnauthorizedResponse](./unauthorizedresponse.md)
   A response object indicating that the request’s authorization is missing or invalid.
-- [object ResourceCollectionResponse](resourcecollectionresponse.md)
+- [object ResourceCollectionResponse](./resourcecollectionresponse.md)
   A response object composed of resource objects for the request.
 
 

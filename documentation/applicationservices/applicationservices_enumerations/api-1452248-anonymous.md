@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kATSUBackgroundCallback: Int](katsubackgroundcallback.md)
-- [var kATSUBackgroundColor: Int](katsubackgroundcolor.md)
+- [var kATSUBackgroundCallback: Int](../katsubackgroundcallback.md)
+- [var kATSUBackgroundColor: Int](../katsubackgroundcolor.md)
 
 
 ---

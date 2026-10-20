@@ -1,13 +1,14 @@
 # element::color
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the current color of the element.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ The color as a 4-component vector (red, green, blue, alpha)
 
 Use this function to read the element’s RGBA color values, including both the color channels and opacity.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/element__color.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/element__color.svg)
 
 
 ---

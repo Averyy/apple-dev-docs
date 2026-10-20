@@ -1,7 +1,8 @@
 # progress(forTrack:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the progress for a specific track identified by its assemblyTrackID.
 
@@ -19,6 +20,10 @@ Returns the progress for a specific track identified by its assemblyTrackID.
 func progress(forTrack assemblyTrackID: CMPersistentTrackID) -> Float
 ```
 
+```objc
+- (float) progressForTrack:(CMPersistentTrackID) assemblyTrackID;
+```
+
 #### Return Value
 
 A float value between 0.0 and 1.0 representing the percentage of duration completed for the track. Returns 0.0 if the track ID is not found.
@@ -33,7 +38,8 @@ The progress is calculated as the ratio of completed duration to total duration 
 
 ## See Also
 
-- [var overallProgress: Float](avassetwritingplannerprogress/overallprogress.md)
+### Getting progress
+- [var overallProgress: Float](./overallprogress.md)
   The overall progress across all tracks.
 
 

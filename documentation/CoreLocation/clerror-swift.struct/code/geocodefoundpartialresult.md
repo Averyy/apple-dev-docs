@@ -1,7 +1,8 @@
 # CLError.Code.geocodeFoundPartialResult
 
 **Framework**: Core Location  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates the geocode request yielded a partial result.
 
@@ -20,11 +21,16 @@ A constant that indicates the geocode request yielded a partial result.
 case geocodeFoundPartialResult
 ```
 
+```c
+kCLErrorGeocodeFoundPartialResult
+```
+
 ## See Also
 
-- [CLError.Code.geocodeCanceled](clerror-swift.struct/code/geocodecanceled.md)
+### Getting geocoding errors
+- [CLError.Code.geocodeCanceled](./geocodecanceled.md)
   A constant that indicates the geocode request was canceled.
-- [CLError.Code.geocodeFoundNoResult](clerror-swift.struct/code/geocodefoundnoresult.md)
+- [CLError.Code.geocodeFoundNoResult](./geocodefoundnoresult.md)
   A constant that indicates the geocode request yielded no result.
 
 

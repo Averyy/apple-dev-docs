@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kATSBoldQDStretch: Int](katsboldqdstretch.md)
-- [var kATSItalicQDSkew: Int](katsitalicqdskew.md)
-- [var kATSRadiansFactor: Int](katsradiansfactor.md)
+- [var kATSBoldQDStretch: Int](../katsboldqdstretch.md)
+- [var kATSItalicQDSkew: Int](../katsitalicqdskew.md)
+- [var kATSRadiansFactor: Int](../katsradiansfactor.md)
 
 
 ---

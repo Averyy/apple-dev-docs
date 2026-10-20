@@ -1,7 +1,8 @@
 # allowCommentsAndWhitespace
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Ignore whitespace and #-prefixed comments in the pattern.
 
@@ -20,19 +21,24 @@ Ignore whitespace and #-prefixed comments in the pattern.
 static var allowCommentsAndWhitespace: NSRegularExpression.Options { get }
 ```
 
+```c
+NSRegularExpressionAllowCommentsAndWhitespace
+```
+
 ## See Also
 
-- [static var caseInsensitive: NSRegularExpression.Options](nsregularexpression/options-swift.struct/caseinsensitive.md)
+### Constants
+- [static var caseInsensitive: NSRegularExpression.Options](./caseinsensitive.md)
   Match letters in the pattern independent of case.
-- [static var ignoreMetacharacters: NSRegularExpression.Options](nsregularexpression/options-swift.struct/ignoremetacharacters.md)
+- [static var ignoreMetacharacters: NSRegularExpression.Options](./ignoremetacharacters.md)
   Treat the entire pattern as a literal string.
-- [static var dotMatchesLineSeparators: NSRegularExpression.Options](nsregularexpression/options-swift.struct/dotmatcheslineseparators.md)
+- [static var dotMatchesLineSeparators: NSRegularExpression.Options](./dotmatcheslineseparators.md)
   Allow `.` to match any character, including line separators.
-- [static var anchorsMatchLines: NSRegularExpression.Options](nsregularexpression/options-swift.struct/anchorsmatchlines.md)
+- [static var anchorsMatchLines: NSRegularExpression.Options](./anchorsmatchlines.md)
   Allow `^` and `$` to match the start and end of lines.
-- [static var useUnixLineSeparators: NSRegularExpression.Options](nsregularexpression/options-swift.struct/useunixlineseparators.md)
+- [static var useUnixLineSeparators: NSRegularExpression.Options](./useunixlineseparators.md)
   Treat only `\n` as a line separator (otherwise, all standard line separators are used).
-- [static var useUnicodeWordBoundaries: NSRegularExpression.Options](nsregularexpression/options-swift.struct/useunicodewordboundaries.md)
+- [static var useUnicodeWordBoundaries: NSRegularExpression.Options](./useunicodewordboundaries.md)
   Use Unicode `TR#29` to specify word boundaries (otherwise, traditional regular expression word boundaries are used).
 
 

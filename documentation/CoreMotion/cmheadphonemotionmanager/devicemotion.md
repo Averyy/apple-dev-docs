@@ -1,7 +1,8 @@
 # deviceMotion
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The latest device-motion data.
 
@@ -16,6 +17,10 @@ The latest device-motion data.
 
 ```swift
 var deviceMotion: CMDeviceMotion? { get }
+```
+
+```objc
+@property (readonly, nullable) CMDeviceMotion * deviceMotion;
 ```
 
 #### Discussion

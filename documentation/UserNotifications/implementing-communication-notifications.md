@@ -1,6 +1,7 @@
 # Implementing communication notifications
 
-**Framework**: User Notifications
+**Framework**: User Notifications  
+**Role**: Article
 
 Configure and display your app’s communication notifications by using intents.
 
@@ -8,15 +9,15 @@ Configure and display your app’s communication notifications by using intents.
 
 Communication notifications provide a rich experience for direct communications. These notifications have a distinct user experience that features prominent avatars and group names. Communication notifications are unique in their ability to break through the scheduled notification summary by default, and can also break through a Focus.
 
-Enable the Communication Notifications capability in your app and include the activity types that your app supports in its `NSUserActivityTypes` array. Your app initializes relevant participants of the communication, configures an intent object that describes the communication taking place, and then donates the interaction. Siri uses these donations to refine suggestions given to the user. After your app donates the interaction, your app updates the incoming notification’s content and displays a communication notification. To learn more about SiriKit interaction donations, see [`Donating Shortcuts`](https://developer.apple.com/documentation/sirikit/donating-shortcuts).
+Enable the Communication Notifications capability in your app and include the activity types that your app supports in its `NSUserActivityTypes` array. Your app initializes relevant participants of the communication, configures an intent object that describes the communication taking place, and then donates the interaction. Siri uses these donations to refine suggestions given to the user. After your app donates the interaction, your app updates the incoming notification’s content and displays a communication notification. To learn more about SiriKit interaction donations, see [Donating Shortcuts](../SiriKit/donating-shortcuts.md).
 
-##### Enable Communication Notifications
+##### Enable communication notifications
 
-Enable the Communication Notifications capability in your app target before you implement communication notifications. To learn more about enabling capabilities, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app). Add the class name of each intent that your app supports to the `NSUserActivityTypes` array in your `Info.plist`. To support [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent) donations, for example, ensure the `NSUserActivityTypes` array includes the string `INSendMessageIntent`.
+Enable the Communication Notifications capability in your app target before you implement communication notifications. To learn more about enabling capabilities, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md). Add the class name of each intent that your app supports to the `NSUserActivityTypes` array in your `Info.plist`. To support [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent) donations, for example, ensure the `NSUserActivityTypes` array includes the string `INSendMessageIntent`.
 
-Once you enable the Communications Notifications capability, begin updating the content of notifications that your app receives so it can display communication notifications. Implement this functionality wherever your app can receive notifications, including your app’s Notification Service Extension (NSE), which you use to modify the content of incoming notifications when your app is in the background. For more information about handling notifications in the background, refer to [`Modifying content in newly delivered notifications`](modifying-content-in-newly-delivered-notifications.md).
+Once you enable the Communications Notifications capability, begin updating the content of notifications that your app receives so it can display communication notifications. Implement this functionality wherever your app can receive notifications, including your app’s Notification Service Extension (NSE), which you use to modify the content of incoming notifications when your app is in the background. For more information about handling notifications in the background, refer to [Modifying content in newly delivered notifications](./modifying-content-in-newly-delivered-notifications.md).
 
-##### Identify the Participants
+##### Identify the participants
 
 You must include relevant participants in communication notifications to ensure correct display and breakthrough behavior. Create an [`INPerson`](https://developer.apple.com/documentation/intents/inperson) object for each relevant participant of a communication when your app receives a communication notification. The current user is always a recipient of an incoming communication notification. Don’t include the current user as a participant of the communication for your app’s intent donations.
 
@@ -24,7 +25,7 @@ If a person in your app matches a contact in address book, provide the contact i
 
 If the information necessary to ensure an exact match isn’t available, create an [`INPersonHandle`](https://developer.apple.com/documentation/intents/inpersonhandle) specific to your app. Set the person’s [`INPersonSuggestionType`](https://developer.apple.com/documentation/intents/inpersonsuggestiontype) to whichever type it most closely resembles, which provides a contact suggestion to the user if a matching contact isn’t found.
 
-##### Configure a Message Intent
+##### Configure a message intent
 
 When the user receives a message, you create an [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent). An [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent) has a single sender and one or more recipients. For incoming communication notification donations, the system includes the current user as a recipient in addition to those your app provides in the `recipients` array. Provide a unique `conversationIdentifier` that represents the conversation. Use the same identifier for each message that the user receives in the same conversation. This is especially important for group conversations where the group name and membership can change for each message.
 
@@ -55,7 +56,7 @@ let intent = INSendMessageIntent(recipients: nil,
 
 For group message intents, provide an array that contains the other participants of the message for the `recipients` parameter. For example, in a group of three participants that includes the current user, the `sender` of the message and the current user are already represented. The `recipients` array contains one object — the other recipient. Group conversations can also provide a [`speakableGroupName`](https://developer.apple.com/documentation/intents/insendmessageintent/speakablegroupname) if the conversation has a name. The notification shows a summary of the recipients if your app doesn’t provide one. Call [`setImage:forParameterNamed:`](https://developer.apple.com/documentation/intents/inintent/setimage:forparameternamed:) on the intent using the [`speakableGroupName`](https://developer.apple.com/documentation/intents/insendmessageintent/speakablegroupname) parameter to provide an avatar for a group message. Set the avatar image prior to donating the interaction.
 
-##### Configure a Call Intent
+##### Configure a call intent
 
 When the user receives an incoming call, you create an [`INStartCallIntent`](https://developer.apple.com/documentation/intents/instartcallintent). An [`INStartCallIntent`](https://developer.apple.com/documentation/intents/instartcallintent) has an array of one or more contacts that are participants of the call. For incoming communication notification donations, the system includes the current user as a recipient in addition to those added to the `contacts` array. Provide the most accurate additional information available about the call, including a callback record to use in the event of a missed call. The example below represents a call between `caller` and the current user. The caller’s image becomes the avatar for the notification.
 
@@ -83,11 +84,11 @@ let intent = INStartCallIntent(callRecordFilter: nil,
 
 For group call intents, add the other participants to the `contacts` parameter array. In a group of three participants that includes the current user, for example, only include the caller and the third participant in the `contacts` array. Call [`setImage:forParameterNamed:`](https://developer.apple.com/documentation/intents/inintent/setimage:forparameternamed:) on the intent using the [`callRecordToCallBack`](https://developer.apple.com/documentation/intents/instartcallintent/callrecordtocallback) parameter to provide an avatar for a group call. Set the avatar image prior to donating the interaction.
 
-##### Donate an Interaction and Update the Notification
+##### Donate an interaction and update the notification
 
 After you configure a communication intent, donate an interaction for the intent. Initialize an [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) object from the previously configured message or call intent. Set the interaction’s direction to [`INInteractionDirection.incoming`](https://developer.apple.com/documentation/intents/ininteractiondirection/incoming). This indicates the user is the recipient of an interaction — the incoming communication. Call [`donate(completion:)`](https://developer.apple.com/documentation/intents/ininteraction/donate(completion:)) on the interaction and handle errors that may occur in its completion handler.
 
-If the donation completes successfully, update the content of a received notification to display a communication notification. Call [`updating(from:)`](unnotificationcontent/updating(from:).md) on the received notification content. Use the updated notification content to display a communication notification. In the example below, the handling of this process happens in an NSE. Call the `contentHandler` with the updated notification content to display a communication notification before returning from the [`didReceive(_:withContentHandler:)`](unnotificationserviceextension/didreceive(_:withcontenthandler:).md) method.
+If the donation completes successfully, update the content of a received notification to display a communication notification. Call [`updating(from:)`](./unnotificationcontent/updating%28from%29.md) on the received notification content. Use the updated notification content to display a communication notification. In the example below, the handling of this process happens in an NSE. Call the `contentHandler` with the updated notification content to display a communication notification before returning from the [`didReceive(_:withContentHandler:)`](./unnotificationserviceextension/didreceive%28_,withcontenthandler%29.md) method.
 
 ```swift
 func didReceive(_ request: UNNotificationRequest,
@@ -132,13 +133,13 @@ func didReceive(_ request: UNNotificationRequest,
 }
 ```
 
-##### Donate Outgoing Interactions
+##### Donate outgoing interactions
 
 Outgoing interactions are important to enable proper breakthrough behavior. An outgoing interaction represents a decision or action that the user initiates. Siri uses outgoing intent donations to refine suggestions to the user in a variety of ways, including Share Sheet recommendations and contact suggestions.
 
 Initializing an outgoing interaction is similar to initializing an incoming interaction. Set the `direction` of an outgoing interaction to [`INInteractionDirection.outgoing`](https://developer.apple.com/documentation/intents/ininteractiondirection/outgoing) prior to donating. The process to donate an outgoing [`INStartCallIntent`](https://developer.apple.com/documentation/intents/instartcallintent) interaction is identical to the process to donate incoming interactions. When donating an outgoing [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent) interaction, however, the current user becomes the sender. Therefore, leave the `sender` parameter of an outgoing [`INSendMessageIntent`](https://developer.apple.com/documentation/intents/insendmessageintent) `nil`, and provide the recipients of the message, and any other metadata available.
 
-##### Additional Donation Metadata
+##### Additional donation metadata
 
 You can provide optional donation metadata for message intent donations in the form of [`INSendMessageIntentDonationMetadata`](https://developer.apple.com/documentation/intents/insendmessageintentdonationmetadata) objects. This additional metadata changes the behavior of the interaction donation.
 
@@ -156,19 +157,20 @@ Reserve this functionality for instances where the sender has explicitly chosen 
 
 ## See Also
 
-- [protocol UNNotificationContentProviding](unnotificationcontentproviding.md)
+### Notification content
+- [protocol UNNotificationContentProviding](./unnotificationcontentproviding.md)
   A protocol the system uses to provide context relevant to user notifications.
-- [class UNNotificationActionIcon](unnotificationactionicon.md)
+- [class UNNotificationActionIcon](./unnotificationactionicon.md)
   An icon associated with an action.
-- [class UNMutableNotificationContent](unmutablenotificationcontent.md)
+- [class UNMutableNotificationContent](./unmutablenotificationcontent.md)
   The editable content for a notification.
-- [class UNNotificationContent](unnotificationcontent.md)
+- [class UNNotificationContent](./unnotificationcontent.md)
   The uneditable content of a notification.
-- [class UNNotificationAttachment](unnotificationattachment.md)
+- [class UNNotificationAttachment](./unnotificationattachment.md)
   A media file associated with a notification.
-- [class UNNotificationSound](unnotificationsound.md)
+- [class UNNotificationSound](./unnotificationsound.md)
   The sound played upon delivery of a notification.
-- [struct UNNotificationSoundName](unnotificationsoundname.md)
+- [struct UNNotificationSoundName](./unnotificationsoundname.md)
   A string providing the name of a sound file.
 
 

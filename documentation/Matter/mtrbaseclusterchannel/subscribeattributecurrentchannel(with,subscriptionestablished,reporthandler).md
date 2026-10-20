@@ -1,7 +1,8 @@
 # subscribeAttributeCurrentChannel(with:subscriptionEstablished:reportHandler:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func subscribeAttributeCurrentChannel(with params: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: @escaping (MTRChannelClusterChannelInfoStruct?, (any Error)?) -> Void)
+```
+
+```objc
+- (void) subscribeAttributeCurrentChannelWithParams:(MTRSubscribeParams *) params subscriptionEstablished:(MTRSubscriptionEstablishedHandler) subscriptionEstablished reportHandler:(void (^)(MTRChannelClusterChannelInfoStruct *value, NSError *error)) reportHandler;
 ```
 
 

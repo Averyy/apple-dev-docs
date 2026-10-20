@@ -1,7 +1,8 @@
 # immediate
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to bring the app to the foreground immediately after the system resolves the intent’s parameters.
 

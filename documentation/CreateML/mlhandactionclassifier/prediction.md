@@ -1,7 +1,8 @@
 # MLHandActionClassifier.Prediction
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of predictions, each paired with its confidence, for a range of video frames.
 
@@ -21,22 +22,23 @@ struct Prediction
 ## Topics
 
 ### Inspecting a prediction
-- [var results: [(label: String, confidence: Double)]](mlhandactionclassifier/prediction/results.md)
+- [var results: [(label: String, confidence: Double)]](./prediction/results.md)
   An array of prediction labels and their confidences for a hand action.
-- [var frameRange: Range<Int>](mlhandactionclassifier/prediction/framerange.md)
+- [var frameRange: Range<Int>](./prediction/framerange.md)
   The range of frame rates the hand action classifier used to make its prediction.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func prediction(from: URL) throws -> [MLHandActionClassifier.Prediction]](mlhandactionclassifier/prediction(from:).md)
+### Testing a hand action classifier
+- [func prediction(from: URL) throws -> [MLHandActionClassifier.Prediction]](./prediction%28from%29.md)
   Generates an array of hand-action predictions for a video.
-- [func predictions(from: [URL]) throws -> [[MLHandActionClassifier.Prediction]]](mlhandactionclassifier/predictions(from:).md)
+- [func predictions(from: [URL]) throws -> [[MLHandActionClassifier.Prediction]]](./predictions%28from%29.md)
   Generates an array of hand action predictions for each video in a URL array.
 
 

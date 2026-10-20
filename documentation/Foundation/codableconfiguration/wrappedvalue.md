@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying value to make codable, using data from the configuration provider.
 

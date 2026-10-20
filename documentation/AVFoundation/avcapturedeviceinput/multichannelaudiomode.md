@@ -1,7 +1,8 @@
 # multichannelAudioMode
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The multichannel audio mode to apply when recording audio.
 
@@ -18,20 +19,25 @@ The multichannel audio mode to apply when recording audio.
 var multichannelAudioMode: AVCaptureMultichannelAudioMode { get set }
 ```
 
+```objc
+@property (nonatomic) AVCaptureMultichannelAudioMode multichannelAudioMode;
+```
+
 #### Discussion
 
 This property only takes effect when the system routes audio through the built-in microphone. The system ignores the value when an external microphone is in use.
 
-The default value is [`AVCaptureMultichannelAudioMode.none`](avcapturemultichannelaudiomode/none.md), which indicates to use single channel audio recording.
+The default value is [`AVCaptureMultichannelAudioMode.none`](../avcapturemultichannelaudiomode/none.md), which indicates to use single channel audio recording.
 
 ## See Also
 
-- [func isMultichannelAudioModeSupported(AVCaptureMultichannelAudioMode) -> Bool](avcapturedeviceinput/ismultichannelaudiomodesupported(_:).md)
+### Configuring audio properties
+- [func isMultichannelAudioModeSupported(AVCaptureMultichannelAudioMode) -> Bool](./ismultichannelaudiomodesupported%28_%29.md)
   A Boolean value that indicates whether the input supports the specified multichannel audio mode.
-- [enum AVCaptureMultichannelAudioMode](avcapturemultichannelaudiomode.md)
+- [enum AVCaptureMultichannelAudioMode](../avcapturemultichannelaudiomode.md)
   Constants that indicate the modes of multichannel audio.
-- [var isWindNoiseRemovalSupported: Bool](avcapturedeviceinput/iswindnoiseremovalsupported.md)
-- [var isWindNoiseRemovalEnabled: Bool](avcapturedeviceinput/iswindnoiseremovalenabled.md)
+- [var isWindNoiseRemovalSupported: Bool](./iswindnoiseremovalsupported.md)
+- [var isWindNoiseRemovalEnabled: Bool](./iswindnoiseremovalenabled.md)
 
 
 ---

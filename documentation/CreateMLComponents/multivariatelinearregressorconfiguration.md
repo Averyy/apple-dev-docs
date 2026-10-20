@@ -1,7 +1,8 @@
 # MultivariateLinearRegressorConfiguration
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A linear regressor configuration.
 
@@ -23,53 +24,54 @@ struct MultivariateLinearRegressorConfiguration
 ## Topics
 
 ### Creating a configuration
-- [init()](multivariatelinearregressorconfiguration/init.md)
+- [init()](./multivariatelinearregressorconfiguration/init%28%29.md)
   Creates a default linear regressor configuration.
 ### Getting the properties
-- [var batchSize: Int](multivariatelinearregressorconfiguration/batchsize.md)
+- [var batchSize: Int](./multivariatelinearregressorconfiguration/batchsize.md)
   The number of examples in each training batch.
-- [var maximumIterationCount: Int](multivariatelinearregressorconfiguration/maximumiterationcount.md)
+- [var maximumIterationCount: Int](./multivariatelinearregressorconfiguration/maximumiterationcount.md)
   The maximum number of allowed passes through the data.
-- [var earlyStoppingTolerance: Float](multivariatelinearregressorconfiguration/earlystoppingtolerance.md)
+- [var earlyStoppingTolerance: Float](./multivariatelinearregressorconfiguration/earlystoppingtolerance.md)
   The early-stopping tolerance.
-- [var earlyStoppingIterationCount: Int](multivariatelinearregressorconfiguration/earlystoppingiterationcount.md)
+- [var earlyStoppingIterationCount: Int](./multivariatelinearregressorconfiguration/earlystoppingiterationcount.md)
   The number of iterations to use when evaluating whether to stop early.
-- [var learningRate: Float](multivariatelinearregressorconfiguration/learningrate.md)
+- [var learningRate: Float](./multivariatelinearregressorconfiguration/learningrate.md)
   The optimizer learning rate.
-- [var randomSeed: Int?](multivariatelinearregressorconfiguration/randomseed.md)
+- [var randomSeed: Int?](./multivariatelinearregressorconfiguration/randomseed.md)
   A seed to generate reproducible results from random operations.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol Regressor](regressor.md)
+### Regressors
+- [protocol Regressor](./regressor.md)
   A transformer that predicts a float value.
-- [struct LinearRegressor](linearregressor.md)
+- [struct LinearRegressor](./linearregressor.md)
   A linear regressor.
-- [struct LinearRegressorModel](linearregressormodel.md)
+- [struct LinearRegressorModel](./linearregressormodel.md)
   A trained linear regressor model.
-- [struct MultivariateLinearRegressor](multivariatelinearregressor.md)
+- [struct MultivariateLinearRegressor](./multivariatelinearregressor.md)
   A multivariate linear regressor.
-- [MultivariateLinearRegressor.Model](multivariatelinearregressor/model.md)
+- [MultivariateLinearRegressor.Model](./multivariatelinearregressor/model.md)
   A trained multivariate linear regressor model.
-- [struct FullyConnectedNetworkRegressor](fullyconnectednetworkregressor.md)
+- [struct FullyConnectedNetworkRegressor](./fullyconnectednetworkregressor.md)
   A regressor that uses a fully connected network.
-- [struct FullyConnectedNetworkRegressorModel](fullyconnectednetworkregressormodel.md)
+- [struct FullyConnectedNetworkRegressorModel](./fullyconnectednetworkregressormodel.md)
   A regressor model that uses a fully connected network.
-- [struct BoostedTreeRegressor](boostedtreeregressor.md)
+- [struct BoostedTreeRegressor](./boostedtreeregressor.md)
   A gradient boosted decision tree regressor.
-- [struct TreeRegressorModel](treeregressormodel.md)
+- [struct TreeRegressorModel](./treeregressormodel.md)
   A trained tree regressor model.
-- [enum OptimizationStrategy](optimizationstrategy.md)
+- [enum OptimizationStrategy](./optimizationstrategy.md)
   A linear optimization strategy.
 
 

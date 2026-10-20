@@ -1,7 +1,8 @@
 # CVPixelBufferUnlockBaseAddress(_:_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Unlocks the base address of the pixel buffer.
 
@@ -20,26 +21,31 @@ Unlocks the base address of the pixel buffer.
 func CVPixelBufferUnlockBaseAddress(_ pixelBuffer: CVPixelBuffer, _ unlockFlags: CVPixelBufferLockFlags) -> CVReturn
 ```
 
+```c
+extern CVReturn CVPixelBufferUnlockBaseAddress(CVPixelBufferRef pixelBuffer, CVPixelBufferLockFlags unlockFlags);
+```
+
 #### Return Value
 
-A Core Video result code. See [`Core Video Constants`](core-video-constants.md) for possible values.
+A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 
 #### Discussion
 
-You must call the [`CVPixelBufferLockBaseAddress(_:_:)`](cvpixelbufferlockbaseaddress(_:_:).md) function before accessing pixel data with the CPU, and call the [`CVPixelBufferUnlockBaseAddress(_:_:)`](cvpixelbufferunlockbaseaddress(_:_:).md) function afterward. If you include the [`readOnly`](cvpixelbufferlockflags/readonly.md) value in the `lockFlags` parameter when locking the buffer, you must also include it when unlocking the buffer. Using the flag asymmetrically results in undefined behavior.
+You must call the [`CVPixelBufferLockBaseAddress(_:_:)`](./cvpixelbufferlockbaseaddress%28_,_%29.md) function before accessing pixel data with the CPU, and call the [`CVPixelBufferUnlockBaseAddress(_:_:)`](./cvpixelbufferunlockbaseaddress%28_,_%29.md) function afterward. If you include the [`readOnly`](./cvpixelbufferlockflags/readonly.md) value in the `lockFlags` parameter when locking the buffer, you must also include it when unlocking the buffer. Using the flag asymmetrically results in undefined behavior.
 
 > ❗ **Important**:  When accessing pixel data with the GPU, locking is not necessary and can impair performance.
 
 ## Parameters
 
 - `pixelBuffer`: The pixel buffer whose base address you want to unlock.
-- `unlockFlags`: The option you passed when you locked the buffer. Pass [`readOnly`](cvpixelbufferlockflags/readonly.md) if you locked the buffer for reading only, or pass no flags if you locked it for both reading and writing.
+- `unlockFlags`: The option you passed when you locked the buffer. Pass [`readOnly`](./cvpixelbufferlockflags/readonly.md) if you locked the buffer for reading only, or pass no flags if you locked it for both reading and writing.
 
 ## See Also
 
-- [func CVPixelBufferFillExtendedPixels(CVPixelBuffer) -> CVReturn](cvpixelbufferfillextendedpixels(_:).md)
+### Modifying Pixel Buffers
+- [func CVPixelBufferFillExtendedPixels(CVPixelBuffer) -> CVReturn](./cvpixelbufferfillextendedpixels%28_%29.md)
   Fills the extended pixels of the pixel buffer.
-- [func CVPixelBufferLockBaseAddress(CVPixelBuffer, CVPixelBufferLockFlags) -> CVReturn](cvpixelbufferlockbaseaddress(_:_:).md)
+- [func CVPixelBufferLockBaseAddress(CVPixelBuffer, CVPixelBufferLockFlags) -> CVReturn](./cvpixelbufferlockbaseaddress%28_,_%29.md)
   Locks the base address of the pixel buffer.
 
 

@@ -2,17 +2,22 @@
 
 **Framework**: WebKit  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Creates a new plug-in view.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 static func plugInView(withArguments arguments: [AnyHashable : Any]!) -> NSView!
+```
+
+```objc
++ (NSView *) plugInViewWithArguments:(NSDictionary *) arguments;
 ```
 
 #### Return Value

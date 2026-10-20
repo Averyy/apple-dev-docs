@@ -1,7 +1,8 @@
 # ContentTransition
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A kind of transition that applies to the content within a single view, rather than to the insertion or removal of a view.
 
@@ -22,58 +23,59 @@ struct ContentTransition
 
 #### Overview
 
-Set the behavior of content transitions within a view with the [`contentTransition(_:)`](view/contenttransition(_:).md) modifier, passing in one of the defined transitions, such as [`opacity`](contenttransition/opacity.md) or [`interpolate`](contenttransition/interpolate.md) as the parameter.
+Set the behavior of content transitions within a view with the [`contentTransition(_:)`](./view/contenttransition%28_%29.md) modifier, passing in one of the defined transitions, such as [`opacity`](./contenttransition/opacity.md) or [`interpolate`](./contenttransition/interpolate.md) as the parameter.
 
-> 💡 **Tip**: Content transitions only take effect within transactions that apply an [`Animation`](animation.md) to the views inside the [`contentTransition(_:)`](view/contenttransition(_:).md) modifier.
+> 💡 **Tip**: Content transitions only take effect within transactions that apply an [`Animation`](./animation.md) to the views inside the [`contentTransition(_:)`](./view/contenttransition%28_%29.md) modifier.
 
-Content transitions only take effect within the context of an [`Animation`](animation.md) block.
+Content transitions only take effect within the context of an [`Animation`](./animation.md) block.
 
 ## Topics
 
 ### Getting content transitions
-- [static let identity: ContentTransition](contenttransition/identity.md)
+- [static let identity: ContentTransition](./contenttransition/identity.md)
   The identity content transition, which indicates that content changes shouldn’t animate.
-- [static let interpolate: ContentTransition](contenttransition/interpolate.md)
+- [static let interpolate: ContentTransition](./contenttransition/interpolate.md)
   A content transition that indicates the views attempt to interpolate their contents during transitions, where appropriate.
-- [static func numericText(countsDown: Bool) -> ContentTransition](contenttransition/numerictext(countsdown:).md)
+- [static func numericText(countsDown: Bool) -> ContentTransition](./contenttransition/numerictext%28countsdown%29.md)
   Creates a content transition intended to be used with `Text` views displaying numeric text. In certain environments changes to the text will enable a nonstandard transition tailored to numeric characters that count up or down.
-- [static func numericText(value: Double) -> ContentTransition](contenttransition/numerictext(value:).md)
+- [static func numericText(value: Double) -> ContentTransition](./contenttransition/numerictext%28value%29.md)
   Creates a content transition intended to be used with `Text` views displaying numbers.
-- [static let opacity: ContentTransition](contenttransition/opacity.md)
+- [static let opacity: ContentTransition](./contenttransition/opacity.md)
   A content transition that indicates content fades from transparent to opaque on insertion, and from opaque to transparent on removal.
-- [static var symbolEffect: ContentTransition](contenttransition/symboleffect.md)
+- [static var symbolEffect: ContentTransition](./contenttransition/symboleffect.md)
   A content transition that applies the default symbol effect transition to symbol images within the inserted or removed view hierarchy. Other views are unaffected by this transition.
-- [static func symbolEffect<T>(T, options: SymbolEffectOptions) -> ContentTransition](contenttransition/symboleffect(_:options:).md)
+- [static func symbolEffect<T>(T, options: SymbolEffectOptions) -> ContentTransition](./contenttransition/symboleffect%28_,options%29.md)
   Creates a content transition that applies the symbol Replace animation to symbol images that it is applied to.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func transition(_:)](view/transition(_:).md)
+### Defining transitions
+- [func transition(_:)](./view/transition%28_%29.md)
   Associates a transition with the view.
-- [protocol Transition](transition.md)
+- [protocol Transition](./transition.md)
   A description of view changes to apply when a view is added to and removed from the view hierarchy.
-- [struct TransitionProperties](transitionproperties.md)
+- [struct TransitionProperties](./transitionproperties.md)
   The properties a `Transition` can have.
-- [enum TransitionPhase](transitionphase.md)
+- [enum TransitionPhase](./transitionphase.md)
   An indication of which the current stage of a transition.
-- [struct AsymmetricTransition](asymmetrictransition.md)
+- [struct AsymmetricTransition](./asymmetrictransition.md)
   A composite `Transition` that uses a different transition for insertion versus removal.
-- [struct AnyTransition](anytransition.md)
+- [struct AnyTransition](./anytransition.md)
   A type-erased transition.
-- [func contentTransition(ContentTransition) -> some View](view/contenttransition(_:).md)
+- [func contentTransition(ContentTransition) -> some View](./view/contenttransition%28_%29.md)
   Modifies the view to use a given transition as its method of animating changes to the contents of its views.
-- [var contentTransition: ContentTransition](environmentvalues/contenttransition.md)
+- [var contentTransition: ContentTransition](./environmentvalues/contenttransition.md)
   The current method of animating the contents of views.
-- [var contentTransitionAddsDrawingGroup: Bool](environmentvalues/contenttransitionaddsdrawinggroup.md)
+- [var contentTransitionAddsDrawingGroup: Bool](./environmentvalues/contenttransitionaddsdrawinggroup.md)
   A Boolean value that controls whether views that render content transitions use GPU-accelerated rendering.
-- [struct PlaceholderContentView](placeholdercontentview.md)
+- [struct PlaceholderContentView](./placeholdercontentview.md)
   A placeholder used to construct an inline modifier, transition, or other helper type.
 
 

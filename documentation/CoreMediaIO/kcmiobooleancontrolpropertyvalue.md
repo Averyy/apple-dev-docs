@@ -1,7 +1,8 @@
 # kCMIOBooleanControlPropertyValue
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var kCMIOBooleanControlPropertyValue: Int { get }
+```
+
+```c
+kCMIOBooleanControlPropertyValue
 ```
 
 

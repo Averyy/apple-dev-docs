@@ -1,6 +1,7 @@
 # TN3149: Fetching Contacts change history events
 
-**Framework**: Technotes
+**Framework**: Technotes  
+**Role**: Technote
 
 Learn how to fetch and process the most recent changes to the Contacts database.
 
@@ -15,11 +16,11 @@ The Contacts framework has a new fetch request to retrieve information from the 
 5. Process a change history event.
 6. Save the starting history token.
 
-> ❗ **Important**: Your app needs to obtain permission from the user before accessing Contacts entries. See [`Requesting Authorization to Access Contacts`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/requesting_authorization_to_access_contacts) for details.
+> ❗ **Important**: Your app needs to obtain permission from the user before accessing Contacts entries. See [Requesting Authorization to Access Contacts](../Contacts/requesting_authorization_to_access_contacts.md) for details.
 
-#### Adopt the Change History Event Visitor Protocol
+#### Adopt the change history event visitor protocol
 
-The [`CNChangeHistoryEvent`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryevent?language=objc) class encapsulates all possible changes that the system can make to the Contacts database, such as dropping cached information, adding a contact, or updating a group. To receive these changes in your app, create and use a class that conforms to the [`CNChangeHistoryEventVisitor`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor?language=objc) protocol. Classes adopting this protocol must implement the [`visitDropEverythingEvent:`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/3113275-visitdropeverythingevent), [`visitAddContactEvent:`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/3113269-visitaddcontactevent/), [`visitUpdateContactEvent:`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/3113278-visitupdatecontactevent), and [`visitDeleteContactEvent:`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/3113273-visitdeletecontactevent) instance methods.
+The [CNChangeHistoryEvent](../Contacts/cnchangehistoryevent.md) class encapsulates all possible changes that the system can make to the Contacts database, such as dropping cached information, adding a contact, or updating a group. To receive these changes in your app, create and use a class that conforms to the [CNChangeHistoryEventVisitor](../Contacts/cnchangehistoryeventvisitor.md) protocol. Classes adopting this protocol must implement the [visitDropEverythingEvent:](../Contacts/cnchangehistoryeventvisitor/api-3113275-visitdropeverythingevent.md), [visitAddContactEvent:](../Contacts/cnchangehistoryeventvisitor/api-3113269-visitaddcontactevent.md), [visitUpdateContactEvent:](../Contacts/cnchangehistoryeventvisitor/api-3113278-visitupdatecontactevent.md), and [visitDeleteContactEvent:](../Contacts/cnchangehistoryeventvisitor/api-3113273-visitdeletecontactevent.md) instance methods.
 
 ```objc
 @interface MyEventVisitor : NSObject <CNChangeHistoryEventVisitor>
@@ -48,17 +49,17 @@ The [`CNChangeHistoryEvent`](https://developer.apple.comhttps://developer.apple.
 @end
 ```
 
-[`CNChangeHistoryEventVisitor`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor?language=objc) also provides optional methods such as [`visitAddMemberToGroupEvent:`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/3113271-visitaddmembertogroupevent). Each method provides the change history event associated with the changes. Inspect the properties of the event to detemine the new values or modifications brought to contact properties. For example, [`visitUpdateContactEvent:`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/3113278-visitupdatecontactevent) provides a [`CNChangeHistoryUpdateContactEvent`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryupdatecontactevent?language=objc) object whose [`contact`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryupdatecontactevent/3113287-contact?language=objc) instance property contains updated information about an existing contact. Compare [`contact`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryupdatecontactevent/3113287-contact?language=objc) to your app’s cached contact properties to determine what properties were updated.
+[`CNChangeHistoryEventVisitor`](../Contacts/cnchangehistoryeventvisitor.md) also provides optional methods such as [visitAddMemberToGroupEvent:](../Contacts/cnchangehistoryeventvisitor/api-3113271-visitaddmembertogroupevent.md). Each method provides the change history event associated with the changes. Inspect the properties of the event to detemine the new values or modifications brought to contact properties. For example, [`visitUpdateContactEvent:`](../Contacts/cnchangehistoryeventvisitor/api-3113278-visitupdatecontactevent.md) provides a [CNChangeHistoryUpdateContactEvent](../Contacts/cnchangehistoryupdatecontactevent.md) object whose [contact](../Contacts/cnchangehistoryupdatecontactevent/api-3113287-contact.md) instance property contains updated information about an existing contact. Compare [`contact`](../Contacts/cnchangehistoryupdatecontactevent/api-3113287-contact.md) to your app’s cached contact properties to determine what properties were updated.
 
-#### Create a Change History Fetch Request
+#### Create a change history fetch request
 
-Call [`CNChangeHistoryFetchRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryfetchrequest?language=objc) to create a change history fetch request.
+Call [CNChangeHistoryFetchRequest](../Contacts/cnchangehistoryfetchrequest.md) to create a change history fetch request.
 
 ```objc
 CNChangeHistoryFetchRequest *fetchRequest = [[CNChangeHistoryFetchRequest alloc] init];
 ```
 
-The change history fetch request can be configured to fetch a range of change events that have occurred to the Contacts database. The range of events begins with a starting history token, [`startingToken`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryfetchrequest/3294189-startingtoken?language=objc), and ends with the current state of the database. This starting token has a default value of `nil`. If you provide an existing starting token from a previous change history fetch, the request only returns changes that occurred in history after this token.
+The change history fetch request can be configured to fetch a range of change events that have occurred to the Contacts database. The range of events begins with a starting history token, [startingToken](../Contacts/cnchangehistoryfetchrequest/api-3294189-startingtoken.md), and ends with the current state of the database. This starting token has a default value of `nil`. If you provide an existing starting token from a previous change history fetch, the request only returns changes that occurred in history after this token.
 
 ```objc
 @property (nonatomic, copy) NSData *historyToken;
@@ -69,42 +70,42 @@ fetchRequest.startingToken = self.historyToken;
 
 If your token has a `nil` value, is invalid or expired, the fetch request returns a drop event followed by an add event for every contact and group in the Contacts database. The drop event indicates that apps should drop cached information. The token can be persisted between the app launches on the current device.
 
-#### Configure a Change History Fetch Request
+#### Configure a change history fetch request
 
-Each [`CNChangeHistoryFetchRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryfetchrequest?language=objc) object comes with default values that can affect the result of the operation. [`CNChangeHistoryFetchRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryfetchrequest?language=objc) provides several properties to update these default values.
+Each [`CNChangeHistoryFetchRequest`](../Contacts/cnchangehistoryfetchrequest.md) object comes with default values that can affect the result of the operation. [`CNChangeHistoryFetchRequest`](../Contacts/cnchangehistoryfetchrequest.md) provides several properties to update these default values.
 
-The fetch request always returns changes to contacts. Changes to groups are optional. If you want to also fetch group changes, set [`includeGroupChanges`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryfetchrequest/3294186-includegroupchanges?language=objc) to `YES`. This property indicates whether to add group changes to the fetch result. The default value is `NO`.
+The fetch request always returns changes to contacts. Changes to groups are optional. If you want to also fetch group changes, set [includeGroupChanges](../Contacts/cnchangehistoryfetchrequest/api-3294186-includegroupchanges.md) to `YES`. This property indicates whether to add group changes to the fetch result. The default value is `NO`.
 
 ```objc
 fetchRequest.includeGroupChanges = YES;
 ```
 
-The fetch request returns immutable [`CNContact`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cncontact?language=objc) and [`CNGroup`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cngroup?language=objc) objects. To fetch mutable contact and group objects, set [`mutableObjects`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryfetchrequest/3294187-mutableobjects?language=objc) to `YES`. This property indicates whether to return mutable objects. The default value is `NO`.
+The fetch request returns immutable [CNContact](../Contacts/cncontact.md) and [CNGroup](../Contacts/cngroup.md) objects. To fetch mutable contact and group objects, set [mutableObjects](../Contacts/cnchangehistoryfetchrequest/api-3294187-mutableobjects.md) to `YES`. This property indicates whether to return mutable objects. The default value is `NO`.
 
 ```objc
 fetchRequest.mutableObjects = YES;
 ```
 
-The fetch request returns contact changes as unified contacts. A unified contact is a synthesized merged result of contacts from different accounts that represent the same person. To fetch individual contact changes, set [`shouldUnifyResults`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryfetchrequest/3294188-shouldunifyresults?language=objc) to `NO`. This property specifies whether to return contact changes for either unified contacts or individual contacts. The default value is `YES`.
+The fetch request returns contact changes as unified contacts. A unified contact is a synthesized merged result of contacts from different accounts that represent the same person. To fetch individual contact changes, set [shouldUnifyResults](../Contacts/cnchangehistoryfetchrequest/api-3294188-shouldunifyresults.md) to `NO`. This property specifies whether to return contact changes for either unified contacts or individual contacts. The default value is `YES`.
 
 ```objc
 fetchRequest.shouldUnifyResults = NO;
 ```
 
-The Contacts framework limits the contact properties that you fetch to the unique identifier when executing a change history fetch request. The request always and primarily returns the [`CNContactIdentifierKey`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cncontactidentifierkey?language=objc) key. To fetch additional contact properties, update [`additionalContactKeyDescriptors`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryfetchrequest/3294184-additionalcontactkeydescriptors?language=objc) with contact keys. This property takes an array of key descriptors, [`CNKeyDescriptor`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/contact_keys). For example, if you want to fetch the email addresses and family name of contacts in addition to their unique identifiers, add the [`CNContactEmailAddressesKey`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cncontactfamilynamekey?language=objc) and [`CNContactEmailAddressesKey`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cncontactfamilynamekey?language=objc) keys to [`additionalContactKeyDescriptors`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryfetchrequest/3294184-additionalcontactkeydescriptors?language=objc) .
+The Contacts framework limits the contact properties that you fetch to the unique identifier when executing a change history fetch request. The request always and primarily returns the [CNContactIdentifierKey](../Contacts/cncontactidentifierkey.md) key. To fetch additional contact properties, update [additionalContactKeyDescriptors](../Contacts/cnchangehistoryfetchrequest/api-3294184-additionalcontactkeydescriptors.md) with contact keys. This property takes an array of key descriptors, [CNKeyDescriptor](../Contacts/contact_keys.md). For example, if you want to fetch the email addresses and family name of contacts in addition to their unique identifiers, add the [CNContactEmailAddressesKey](../Contacts/cncontactfamilynamekey.md) and [`CNContactFamilyNameKey`](../Contacts/cncontactfamilynamekey.md) keys to [`additionalContactKeyDescriptors`](../Contacts/cnchangehistoryfetchrequest/api-3294184-additionalcontactkeydescriptors.md) .
 
 ```objc
 fetchRequest.additionalContactKeyDescriptors = @[CNContactEmailAddressesKey, CNContactFamilyNameKey];
 ```
 
-A transaction author, [`transactionAuthor`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnsaverequest/3824780-transactionauthor?language=objc), is a string that you provide to identify the author who performs a save request. Transaction authors use reverse-domain-style notation. We recommend using your app’s bundle identifier as the transaction author when your app is saving changes to Contacts.
+A transaction author, [transactionAuthor](../Contacts/cnsaverequest/api-3824780-transactionauthor.md), is a string that you provide to identify the author who performs a save request. Transaction authors use reverse-domain-style notation. We recommend using your app’s bundle identifier as the transaction author when your app is saving changes to Contacts.
 
 ```objc
 CNSaveRequest *saveRequest = [[CNSaveRequest alloc] init];
 saveRequest.transactionAuthor = @"com.mycompany.myappname";
 ```
 
-You can later filter that author from fetched change history events. The fetch result won’t include changes made by authors you would like to ignore or exclude. To exclude changes made by certain authors, update [`excludedTransactionAuthors`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryfetchrequest/3294185-excludedtransactionauthors?language=objc) with these authors.
+You can later filter that author from fetched change history events. The fetch result won’t include changes made by authors you would like to ignore or exclude. To exclude changes made by certain authors, update [excludedTransactionAuthors](../Contacts/cnchangehistoryfetchrequest/api-3294185-excludedtransactionauthors.md) with these authors.
 
 ```objc
 fetchRequest.excludedTransactionAuthors = @[@"com.mycompany.myappname"];
@@ -112,9 +113,9 @@ fetchRequest.excludedTransactionAuthors = @[@"com.mycompany.myappname"];
 
 > **Note**: Transaction authors allow you to filter transactions returned in the fetched change history events. They don’t provide any information about the author responsible for making a given change.
 
-#### Execute the Change History Fetch Request
+#### Execute the change history fetch request
 
-Call [`enumeratorForChangeHistoryFetchRequest:error:`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cncontactstore/3294190-enumeratorforchangehistoryfetchr?language=occ) on an instance of [`CNContactStore`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cncontactstore?language=objc) to execute the change history fetch request. Pass the created [`CNChangeHistoryFetchRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryfetchrequest?language=objc) object and a [`NSError`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/nserror?language=occ) object to the call.
+Call [enumeratorForChangeHistoryFetchRequest:error:](../Contacts/cncontactstore/api-3294190-enumeratorforchangehistoryfetchr.md) on an instance of [CNContactStore](../Contacts/cncontactstore.md) to execute the change history fetch request. Pass the created [`CNChangeHistoryFetchRequest`](../Contacts/cnchangehistoryfetchrequest.md) object and a [NSError](../Foundation/nserror.md) object to the call.
 
 ```objc
 NSError *error = nil;
@@ -122,11 +123,11 @@ NSError *error = nil;
 CNFetchResult<NSEnumerator<CNChangeHistoryEvent *> *> *fetchResult = [self.store enumeratorForChangeHistoryFetchRequest:fetchRequest error:&error];
 ```
 
-If the fetch request succeeds, [`enumeratorForChangeHistoryFetchRequest:error:`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cncontactstore/3294190-enumeratorforchangehistoryfetchr?language=occ) returns a [`CNFetchResult`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnfetchresult?language=objc) object. Process the change history events returned in the [`value`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnfetchresult/3294194-value?language=objc) property of [`CNFetchResult`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnfetchresult?language=objc). If the fetch request fails, [`enumeratorForChangeHistoryFetchRequest:error:`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cncontactstore/3294190-enumeratorforchangehistoryfetchr?language=occ) returns `nil`.
+If the fetch request succeeds, [`enumeratorForChangeHistoryFetchRequest:error:`](../Contacts/cncontactstore/api-3294190-enumeratorforchangehistoryfetchr.md) returns a [CNFetchResult](../Contacts/cnfetchresult.md) object. Process the change history events returned in the [value](../Contacts/cnfetchresult/api-3294194-value.md) property of [`CNFetchResult`](../Contacts/cnfetchresult.md). If the fetch request fails, [`enumeratorForChangeHistoryFetchRequest:error:`](../Contacts/cncontactstore/api-3294190-enumeratorforchangehistoryfetchr.md) returns `nil`.
 
-#### Process a Change History Event
+#### Process a change history event
 
-To process a change history event, call [`acceptEventVisitor:`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryevent/3113267-accepteventvisitor/) on an instance of a class that conforms to [`CNChangeHistoryEventVisitor`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor?language=objc).
+To process a change history event, call [acceptEventVisitor:](../Contacts/cnchangehistoryevent/api-3113267-accepteventvisitor.md) on an instance of a class that conforms to [`CNChangeHistoryEventVisitor`](../Contacts/cnchangehistoryeventvisitor.md).
 
 ```objc
 MyEventVisitor *myEventVisitor = [[MyEventVisitor alloc] init];
@@ -137,11 +138,11 @@ for (CNChangeHistoryEvent *event in fetchResult.value) {
 
 If your app receives a drop everything event, enough has changed since the last time your app fetched the history changes that an incremental sync is no longer possible. Following the drop everything event, your app receives an add event for each contact and group currently in the database. This allows you to implement full syncs and incremental syncs using the same code.
 
-> ❗ **Important**: Using [`isKindOfClass`](https://developer.apple.comhttps://developer.apple.com/documentation/objectivec/1418956-nsobject/1418511-iskindofclass/) to determine the specific class of a change history event isn’t recommended. Use the protocol instance methods as described in [`Adopt the change history event visitor protocol`](tn3149-fetching-change-history-events#Adopt-the-change-history-event-visitor-protocol.md).
+> ❗ **Important**: Using [isKindOfClass](../ObjectiveC/api-1418956-nsobject/api-1418511-iskindofclass.md) to determine the specific class of a change history event isn’t recommended. Use the protocol instance methods as described in [Adopt the change history event visitor protocol](./tn3149-fetching-change-history-events.md#Adopt-the-change-history-event-visitor-protocol).
 
-#### Save the Starting History Token
+#### Save the starting history token
 
-If the fetch request succeeds, inspect the [`currentHistoryToken`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cncontactstore/3113739-currenthistorytoken/) property of [`CNFetchResult`](https://developer.apple.comhttps://developer.apple.com/documentation/contacts/cnfetchresult?language=objc). This property provides the history token for the current fetch request. Your app should save this token, then use it when fetching the next change history events.
+If the fetch request succeeds, inspect the [currentHistoryToken](../Contacts/cncontactstore/api-3113739-currenthistorytoken.md) property of [`CNFetchResult`](../Contacts/cnfetchresult.md). This property provides the history token for the current fetch request. Your app should save this token, then use it when fetching the next change history events.
 
 ```objc
 self.historyToken = fetchResult.currentHistoryToken; 

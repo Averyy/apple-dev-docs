@@ -1,7 +1,8 @@
 # kIOUSB30LinKStateU2RxDetectDelay
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The USB 2.0 receive detect delay.
 
@@ -10,7 +11,7 @@ The USB 2.0 receive detect delay.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30LinKStateU2RxDetectDelay = 100
 ```
 

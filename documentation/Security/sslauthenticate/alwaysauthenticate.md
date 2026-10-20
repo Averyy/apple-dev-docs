@@ -1,7 +1,8 @@
 # SSLAuthenticate.alwaysAuthenticate
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that client-side authentication is required.
 
@@ -13,6 +14,10 @@ Indicates that client-side authentication is required.
 
 ```swift
 case alwaysAuthenticate
+```
+
+```c
+kAlwaysAuthenticate
 ```
 
 

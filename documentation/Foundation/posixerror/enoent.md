@@ -1,7 +1,8 @@
 # ENOENT
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No such file or directory.
 

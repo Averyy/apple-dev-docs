@@ -1,18 +1,23 @@
 # ES_TCC_AUTHORIZATION_REASON_MISSING_USAGE_STRING
 
 **Framework**: Endpoint Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A system process changed the authorization right
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var ES_TCC_AUTHORIZATION_REASON_MISSING_USAGE_STRING: es_tcc_authorization_reason_t { get }
+```
+
+```c
+ES_TCC_AUTHORIZATION_REASON_MISSING_USAGE_STRING
 ```
 
 

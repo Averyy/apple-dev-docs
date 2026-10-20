@@ -1,7 +1,8 @@
 # init(resolvingAliasFileAt:options:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL that refers to the location specified by resolving an alias file.
 
@@ -22,7 +23,7 @@ init(resolvingAliasFileAt url: URL, options: URL.BookmarkResolutionOptions = [])
 
 #### Discussion
 
-If the `url` argument doesn’t refer to an alias file (as defined by the [`isAliasFileKey`](urlresourcekey/isaliasfilekey.md) property), the returned URL is the same as the `url` argument.
+If the `url` argument doesn’t refer to an alias file (as defined by the [`isAliasFileKey`](../urlresourcekey/isaliasfilekey.md) property), the returned URL is the same as the `url` argument.
 
 This method throws an error in the following cases:
 
@@ -30,15 +31,16 @@ This method throws an error in the following cases:
 - The original file or directory is unknown or unreachable.
 - The original file or directory is on a volume that the system can’t locate or can’t mount.
 
-This method doesn’t support the [`withSecurityScope`](nsurl/bookmarkresolutionoptions/withsecurityscope.md) option.
+This method doesn’t support the [`withSecurityScope`](../nsurl/bookmarkresolutionoptions/withsecurityscope.md) option.
 
 ## See Also
 
-- [init(resolvingBookmarkData: Data, options: URL.BookmarkResolutionOptions, relativeTo: URL?, bookmarkDataIsStale: inout Bool) throws](url/init(resolvingbookmarkdata:options:relativeto:bookmarkdataisstale:)-3ic6f.md)
+### Creating a URL by resolving a bookmark
+- [init(resolvingBookmarkData: Data, options: URL.BookmarkResolutionOptions, relativeTo: URL?, bookmarkDataIsStale: inout Bool) throws](./init%28resolvingbookmarkdata,options,relativeto,bookmarkdataisstale%29-3ic6f.md)
   Creates a URL that refers to a location specified by resolving bookmark data.
-- [typealias BookmarkResolutionOptions](url/bookmarkresolutionoptions.md)
+- [typealias BookmarkResolutionOptions](./bookmarkresolutionoptions.md)
   An alias for the bookmark resolution options type.
-- [struct BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions.md)
+- [struct BookmarkResolutionOptions](../nsurl/bookmarkresolutionoptions.md)
   Options used when resolving bookmark data.
 
 

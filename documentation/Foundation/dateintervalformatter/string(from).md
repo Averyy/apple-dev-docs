@@ -1,7 +1,8 @@
 # string(from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a formatted string for the given date interval.
 
@@ -18,6 +19,10 @@ Returns a formatted string for the given date interval.
 
 ```swift
 func string(from dateInterval: DateInterval) -> String?
+```
+
+```objc
+- (NSString *) stringFromDateInterval:(NSDateInterval *) dateInterval;
 ```
 
 

@@ -1,9 +1,10 @@
 # isTabViewSidebarAvailable
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A Boolean value that indicates whether a tab sidebar is available within the content of a surrounding [`TabView`](tabview.md).
+A Boolean value that indicates whether a tab sidebar is available within the content of a surrounding [`TabView`](../tabview.md).
 
 **Availability**:
 - iOS 27.0+
@@ -22,7 +23,7 @@ var isTabViewSidebarAvailable: Bool { get }
 
 #### Discussion
 
-This value is only meaningful inside the content views of a [`TabView`](tabview.md) that uses a sidebar-capable style such as [`sidebarAdaptable`](tabviewstyle/sidebaradaptable.md). Reading it from a view that is not nested inside a `TabView`’s content — for example, a view above the `TabView` in the hierarchy — returns `false`.
+This value is only meaningful inside the content views of a [`TabView`](../tabview.md) that uses a sidebar-capable style such as [`sidebarAdaptable`](../tabviewstyle/sidebaradaptable.md). Reading it from a view that is not nested inside a `TabView`’s content — for example, a view above the `TabView` in the hierarchy — returns `false`.
 
 ```swift
 struct ContentView: View {

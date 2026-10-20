@@ -1,7 +1,8 @@
 # writeAttributeLongCharString(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeLongCharString(withValue value: String, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeLongCharString(withValue value: String) async throws
+```
+
+```objc
+- (void) writeAttributeLongCharStringWithValue:(NSString *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

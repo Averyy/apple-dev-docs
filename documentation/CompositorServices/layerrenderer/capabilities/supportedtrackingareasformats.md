@@ -1,7 +1,8 @@
 # supportedTrackingAreasFormats
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of tracking areas formats that the layer supports for its textures.
 

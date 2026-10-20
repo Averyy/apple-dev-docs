@@ -1,7 +1,8 @@
 # change(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func change(with params: MTRChannelClusterChangeChannelParams, completion: @escaping @Sendable (MTRChannelClusterChangeChannelResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func change(with params: MTRChannelClusterChangeChannelParams) async throws -> MTRChannelClusterChangeChannelResponseParams
+```
+
+```objc
+- (void) changeChannelWithParams:(MTRChannelClusterChangeChannelParams *) params completion:(void (^)(MTRChannelClusterChangeChannelResponseParams *data, NSError *error)) completion;
 ```
 
 

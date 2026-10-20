@@ -1,14 +1,15 @@
 # Getting Started with Spring Joints
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Connect two physics bodies with a spring joint.
 
 #### Overview
 
-The following Swift code shows how you can create a spring joint between sprite nodes. The physics body of `staticNode` has its [`isDynamic`](skphysicsbody/isdynamic.md) property set to [`false`](https://developer.apple.com/documentation/swift/false), preventing it from being affected by gravity. It is animated with an [`SKAction`](skaction.md) to move it upward.
+The following Swift code shows how you can create a spring joint between sprite nodes. The physics body of `staticNode` has its [`isDynamic`](./skphysicsbody/isdynamic.md) property set to [`false`](../Swift/false.md), preventing it from being affected by gravity. It is animated with an [`SKAction`](./skaction.md) to move it upward.
 
-`dynamicNode` is joined to `staticNode` with an [`SKPhysicsJointSpring`](skphysicsjointspring.md) named `spring`, with a frequency of 0.5 and a damping of 0.2.
+`dynamicNode` is joined to `staticNode` with an [`SKPhysicsJointSpring`](./skphysicsjointspring.md) named `spring`, with a frequency of 0.5 and a damping of 0.2.
 
 The result is that as `staticNode` moves vertically, `dynamicNode` follows the upward path with a slight delay and bounce.
 

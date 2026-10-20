@@ -1,7 +1,8 @@
 # didChangeAutomaticQuoteSubstitution
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didChangeAutomaticQuoteSubstitution: NotificationCenter.BaseMessageIdentifier<NSSpellChecker.DidChangeAutomaticQuoteSubstitutionMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSSpellChecker.DidChangeAutomaticQuoteSubstitutionMessage>`.
 
 
 ---

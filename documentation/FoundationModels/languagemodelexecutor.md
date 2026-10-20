@@ -1,7 +1,8 @@
 # LanguageModelExecutor
 
 **Framework**: Foundation Models  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines the interface for responding to session requests.
 
@@ -21,14 +22,14 @@ protocol LanguageModelExecutor : Sendable
 
 #### Overview
 
-An executor is the bridge between the framework types and the system that actually generates the tokens, like a server API or a local inference engine. A [`LanguageModel`](languagemodel.md) pairs with exactly one executor type and the framework instantiates the executor from the [`Configuration`](languagemodelexecutor/configuration.md) the model provides.
+An executor is the bridge between the framework types and the system that actually generates the tokens, like a server API or a local inference engine. A [`LanguageModel`](./languagemodel.md) pairs with exactly one executor type and the framework instantiates the executor from the [`Configuration`](./languagemodelexecutor/configuration.md) the model provides.
 
 Every request can include preferences that control generation:
 
-- **[`GenerationOptions`](generationoptions.md)**: Configures the sampling strategy, temperature, and maximum response length.
-- **[`ContextOptions`](contextoptions.md)**: Configures the prompting behavior and thinking effort.
+- **[`GenerationOptions`](./generationoptions.md)**: Configures the sampling strategy, temperature, and maximum response length.
+- **[`ContextOptions`](./contextoptions.md)**: Configures the prompting behavior and thinking effort.
 
-When the framework calls [`respond(to:model:streamingInto:)`](languagemodelexecutor/respond(to:model:streaminginto:).md), handle converting the transcript into the format your model expects and applying generation options. In some cases, you may need to fall back when your model can’t do exactly what was asked, like using temperature to approximate sampling options:
+When the framework calls [`respond(to:model:streamingInto:)`](./languagemodelexecutor/respond%28to,model,streaminginto%29.md), handle converting the transcript into the format your model expects and applying generation options. In some cases, you may need to fall back when your model can’t do exactly what was asked, like using temperature to approximate sampling options:
 
 ```swift
 // Parse generation and context options
@@ -48,45 +49,46 @@ func respond(
 }
 ```
 
-Use [`LanguageModelExecutorGenerationChannel`](languagemodelexecutorgenerationchannel.md) to stream incremental events back as generation progresses. You don’t return a value or close the channel explicitly. The channel finishes when the method returns or when an error is thrown.
+Use [`LanguageModelExecutorGenerationChannel`](./languagemodelexecutorgenerationchannel.md) to stream incremental events back as generation progresses. You don’t return a value or close the channel explicitly. The channel finishes when the method returns or when an error is thrown.
 
 ## Topics
 
 ### Creating an executor
-- [init(configuration: Self.Configuration) throws](languagemodelexecutor/init(configuration:).md)
+- [init(configuration: Self.Configuration) throws](./languagemodelexecutor/init%28configuration%29.md)
   Creates an executor from a configuration.
-- [associatedtype Configuration : Hashable, Sendable](languagemodelexecutor/configuration.md)
+- [associatedtype Configuration : Hashable, Sendable](./languagemodelexecutor/configuration.md)
 ### Prewarming the model
-- [func prewarm(model: Self.Model, transcript: Transcript)](languagemodelexecutor/prewarm(model:transcript:).md)
+- [func prewarm(model: Self.Model, transcript: Transcript)](./languagemodelexecutor/prewarm%28model,transcript%29.md)
   Loads assets into memory or pre-fills caches ahead of a request.
-- [associatedtype Model : LanguageModel](languagemodelexecutor/model.md)
+- [associatedtype Model : LanguageModel](./languagemodelexecutor/model.md)
   The model type this executor processes requests for.
 ### Handling the response
-- [func respond(to: LanguageModelExecutorGenerationRequest, model: Self.Model, streamingInto: LanguageModelExecutorGenerationChannel) async throws](languagemodelexecutor/respond(to:model:streaminginto:).md)
+- [func respond(to: LanguageModelExecutorGenerationRequest, model: Self.Model, streamingInto: LanguageModelExecutorGenerationChannel) async throws](./languagemodelexecutor/respond%28to,model,streaminginto%29.md)
   Creates a response stream containing deltas.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [PrivateCloudComputeLanguageModel.Executor](privatecloudcomputelanguagemodel/executor.md)
-- [SystemLanguageModel.Executor](systemlanguagemodel/executor.md)
+- [PrivateCloudComputeLanguageModel.Executor](./privatecloudcomputelanguagemodel/executor.md)
+- [SystemLanguageModel.Executor](./systemlanguagemodel/executor.md)
 
 ## See Also
 
-- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
+### Custom language model provider
+- [Running a Core AI model in a Foundation Models session](./running-a-core-ai-model-in-a-foundation-models-session.md)
   Send requests on device to an open source model you export with Core AI to get a consistent API experience.
-- [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
+- [Optimizing key-value caching in language model sessions](./optimizing-key-value-caching-in-language-model-sessions.md)
   Prevent repeated token processing by preserving the cached state across turns.
-- [protocol LanguageModel](languagemodel.md)
+- [protocol LanguageModel](./languagemodel.md)
   A protocol that you use to interface with a model.
-- [struct LanguageModelCapabilities](languagemodelcapabilities.md)
+- [struct LanguageModelCapabilities](./languagemodelcapabilities.md)
   A set of capabilities that a language model provides.
-- [struct LanguageModelExecutorGenerationChannel](languagemodelexecutorgenerationchannel.md)
+- [struct LanguageModelExecutorGenerationChannel](./languagemodelexecutorgenerationchannel.md)
   A type you use to send model output deltas and updates to the framework.
-- [struct LanguageModelExecutorGenerationRequest](languagemodelexecutorgenerationrequest.md)
+- [struct LanguageModelExecutorGenerationRequest](./languagemodelexecutorgenerationrequest.md)
   A type that contains the details for a generation request.
 
 

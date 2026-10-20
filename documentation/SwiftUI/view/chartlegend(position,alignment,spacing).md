@@ -1,7 +1,8 @@
 # chartLegend(position:alignment:spacing:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the legend for charts.
 
@@ -29,9 +30,10 @@ Configures the legend for charts.
 
 ## See Also
 
-- [func chartLegend(Visibility) -> some View](view/chartlegend(_:).md)
+### Legends
+- [func chartLegend(Visibility) -> some View](./chartlegend%28_%29.md)
   Configures the legend for charts.
-- [func chartLegend<Content>(position: AnnotationPosition, alignment: Alignment?, spacing: CGFloat?, content: () -> Content) -> some View](view/chartlegend(position:alignment:spacing:content:).md)
+- [func chartLegend<Content>(position: AnnotationPosition, alignment: Alignment?, spacing: CGFloat?, content: () -> Content) -> some View](./chartlegend%28position,alignment,spacing,content%29.md)
   Configures the legend for charts.
 
 

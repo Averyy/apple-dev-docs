@@ -2,6 +2,7 @@
 
 **Framework**: MapKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The projected rectangle that encompasses the overlay.
@@ -21,13 +22,18 @@ The projected rectangle that encompasses the overlay.
 var boundingMapRect: MKMapRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MKMapRect boundingMapRect;
+```
+
 #### Discussion
 
 This property contains the smallest rectangle that completely encompasses the overlay. Implementers of this protocol need to set this area when implementing their overlay class, and after setting it, not change it. Specify the rectangle using projected coordinates — that is, coordinates you obtain by projecting the globe onto a two-dimensional surface.
 
 ## See Also
 
-- [var coordinate: CLLocationCoordinate2D](mkoverlay/coordinate.md)
+### Describing the overlay geometry
+- [var coordinate: CLLocationCoordinate2D](./coordinate.md)
   The approximate center point of the overlay area.
 
 

@@ -1,7 +1,8 @@
 # isContainer
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Item is a directory (includes packages) or volume.
 

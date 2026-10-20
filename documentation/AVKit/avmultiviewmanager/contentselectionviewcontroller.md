@@ -1,7 +1,8 @@
 # contentSelectionViewController
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view controller that presents a user interface to select additional video content to display.
 
@@ -21,7 +22,8 @@ Implement this property to add custom user interface elements. The primary role 
 
 ## See Also
 
-- [class AVContentSelectionViewController](avcontentselectionviewcontroller.md)
+### Providing additional UI
+- [class AVContentSelectionViewController](../avcontentselectionviewcontroller.md)
   A view controller for providing additional UI to the multiview experience.
 
 

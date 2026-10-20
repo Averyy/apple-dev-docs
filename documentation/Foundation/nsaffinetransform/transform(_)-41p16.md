@@ -1,7 +1,8 @@
 # transform(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the receiver’s transform to the specified point and returns the result.
 
@@ -15,6 +16,10 @@ Applies the receiver’s transform to the specified point and returns the result
 func transform(_ aPoint: NSPoint) -> NSPoint
 ```
 
+```objc
+- (NSPoint) transformPoint:(NSPoint) aPoint;
+```
+
 #### Return Value
 
 The resulting point after applying the receiver’s transformations.
@@ -25,9 +30,10 @@ The resulting point after applying the receiver’s transformations.
 
 ## See Also
 
-- [func transform(NSSize) -> NSSize](nsaffinetransform/transform(_:)-5r6ol.md)
+### Transforming Data and Objects
+- [func transform(NSSize) -> NSSize](./transform%28_%29-5r6ol.md)
   Applies the receiver’s transform to the specified size and returns the results.
-- [func transform(NSBezierPath) -> NSBezierPath](nsaffinetransform/transform(_:)-6z1xo.md)
+- [func transform(NSBezierPath) -> NSBezierPath](./transform%28_%29-6z1xo.md)
   Creates and returns a new Bézier path object with each point in the given path transformed by the receiver.
 
 

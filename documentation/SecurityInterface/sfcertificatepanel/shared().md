@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a fully initialized, singleton certificate panel object.
 
@@ -14,9 +15,13 @@ Returns a fully initialized, singleton certificate panel object.
 class func shared() -> SFCertificatePanel!
 ```
 
+```objc
++ (SFCertificatePanel *) sharedCertificatePanel;
+```
+
 #### Discussion
 
-Use this method if your application displays a single certificate panel or sheet at a time. If your application can display multiple certificate panels or sheets at once, you must allocate separate object instances (using the [`alloc`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/alloc) class method inherited from [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class)) and initialize them (using the [`init()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/init()) instance method, also inherited from [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class)) instead of using this class method.
+Use this method if your application displays a single certificate panel or sheet at a time. If your application can display multiple certificate panels or sheets at once, you must allocate separate object instances (using the [`alloc`](../../ObjectiveC/nsobject-swift.class/alloc.md) class method inherited from [`NSObject`](../../ObjectiveC/nsobject-swift.class.md)) and initialize them (using the [`init()`](../../ObjectiveC/nsobject-swift.class/init%28%29.md) instance method, also inherited from [`NSObject`](../../ObjectiveC/nsobject-swift.class.md)) instead of using this class method.
 
 
 ---

@@ -1,7 +1,8 @@
 # SCRecordingOutput
 
 **Framework**: ScreenCaptureKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 27.0+
@@ -17,32 +18,37 @@
 class SCRecordingOutput
 ```
 
+```objc
+@interface SCRecordingOutput : NSObject
+```
+
 ## Topics
 
 ### Creating a recording output
-- [init(configuration: SCRecordingOutputConfiguration, delegate: any SCRecordingOutputDelegate)](screcordingoutput/init(configuration:delegate:).md)
-- [class SCRecordingOutputConfiguration](screcordingoutputconfiguration.md)
-- [protocol SCRecordingOutputDelegate](screcordingoutputdelegate.md)
+- [init(configuration: SCRecordingOutputConfiguration, delegate: any SCRecordingOutputDelegate)](./screcordingoutput/init%28configuration,delegate%29.md)
+- [class SCRecordingOutputConfiguration](./screcordingoutputconfiguration.md)
+- [protocol SCRecordingOutputDelegate](./screcordingoutputdelegate.md)
 ### Monitoring recording progress
-- [var recordedDuration: CMTime](screcordingoutput/recordedduration.md)
-- [var recordedFileSize: Int](screcordingoutput/recordedfilesize.md)
+- [var recordedDuration: CMTime](./screcordingoutput/recordedduration.md)
+- [var recordedFileSize: Int](./screcordingoutput/recordedfilesize.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func addRecordingOutput(SCRecordingOutput) throws](scstream/addrecordingoutput(_:).md)
-- [func removeRecordingOutput(SCRecordingOutput) throws](scstream/removerecordingoutput(_:).md)
+### Adding and removing recording output
+- [func addRecordingOutput(SCRecordingOutput) throws](./scstream/addrecordingoutput%28_%29.md)
+- [func removeRecordingOutput(SCRecordingOutput) throws](./scstream/removerecordingoutput%28_%29.md)
 
 
 ---

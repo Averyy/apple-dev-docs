@@ -1,7 +1,8 @@
 # SubscriptionAppStoreReviewScreenshot
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A screenshot of the subscription paywall submitted alongside a subscription for App Store review.
 
@@ -10,16 +11,16 @@ A screenshot of the subscription paywall submitted alongside a subscription for 
 
 ## Declaration
 
-```swift
+```
 object SubscriptionAppStoreReviewScreenshot
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionAppStoreReviewScreenshot.Attributes](subscriptionappstorereviewscreenshot/attributes-data.dictionary.md)
+- [object SubscriptionAppStoreReviewScreenshot.Attributes](./subscriptionappstorereviewscreenshot/attributes-data.dictionary.md)
   Attributes that describe a subscription app store review screenshot resource.
-- [object SubscriptionAppStoreReviewScreenshot.Relationships](subscriptionappstorereviewscreenshot/relationships-data.dictionary.md)
+- [object SubscriptionAppStoreReviewScreenshot.Relationships](./subscriptionappstorereviewscreenshot/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,15 +29,16 @@ object SubscriptionAppStoreReviewScreenshot
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (SubscriptionAppStoreReviewScreenshot.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionAppStoreReviewScreenshots`
 
 ## See Also
 
-- [object SubscriptionAppStoreReviewScreenshotCreateRequest](subscriptionappstorereviewscreenshotcreaterequest.md)
+### Objects
+- [object SubscriptionAppStoreReviewScreenshotCreateRequest](./subscriptionappstorereviewscreenshotcreaterequest.md)
   The request body you use to create a subscription App Store review screenshot.
-- [object SubscriptionAppStoreReviewScreenshotResponse](subscriptionappstorereviewscreenshotresponse.md)
+- [object SubscriptionAppStoreReviewScreenshotResponse](./subscriptionappstorereviewscreenshotresponse.md)
   A response containing a single App Store review screenshot for a subscription.
-- [object SubscriptionAppStoreReviewScreenshotUpdateRequest](subscriptionappstorereviewscreenshotupdaterequest.md)
+- [object SubscriptionAppStoreReviewScreenshotUpdateRequest](./subscriptionappstorereviewscreenshotupdaterequest.md)
   The request body you use to update a subscription app store review screenshot update request.
 
 

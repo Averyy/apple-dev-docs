@@ -1,7 +1,8 @@
 # audioContinuous
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An audio event with a looped waveform of arbitrary length.
 
@@ -19,17 +20,22 @@ An audio event with a looped waveform of arbitrary length.
 static let audioContinuous: CHHapticEvent.EventType
 ```
 
+```c
+extern CHHapticEventType CHHapticEventTypeAudioContinuous;
+```
+
 #### Discussion
 
 Continuous audio patterns take the form of lengthier feedback over a period of time. You must provide continuous events with a duration to determine their endpoint.
 
 ## See Also
 
-- [static let audioCustom: CHHapticEvent.EventType](chhapticevent/eventtype/audiocustom.md)
+### Enumerating Haptic Types
+- [static let audioCustom: CHHapticEvent.EventType](./audiocustom.md)
   An audio event using a waveform that you supply.
-- [static let hapticTransient: CHHapticEvent.EventType](chhapticevent/eventtype/haptictransient.md)
+- [static let hapticTransient: CHHapticEvent.EventType](./haptictransient.md)
   A brief impulse occurring at a specific point in time, like the feedback from toggling a switch.
-- [static let hapticContinuous: CHHapticEvent.EventType](chhapticevent/eventtype/hapticcontinuous.md)
+- [static let hapticContinuous: CHHapticEvent.EventType](./hapticcontinuous.md)
   A haptic event with a looped waveform of arbitrary length.
 
 

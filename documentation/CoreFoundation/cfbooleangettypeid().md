@@ -1,23 +1,28 @@
 # CFBooleanGetTypeID()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the Core Foundation type identifier for the CFBoolean opaque type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFBooleanGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CFBooleanGetTypeID();
 ```
 
 #### Return Value
@@ -26,7 +31,8 @@ The Core Foundation type identifier for CFBoolean opaque type.
 
 ## See Also
 
-- [func CFBooleanGetValue(CFBoolean!) -> Bool](cfbooleangetvalue(_:).md)
+### CFBoolean Miscellaneous Functions
+- [func CFBooleanGetValue(CFBoolean!) -> Bool](./cfbooleangetvalue%28_%29.md)
   Returns the value of a CFBoolean object as a standard C type `Boolean`.
 
 

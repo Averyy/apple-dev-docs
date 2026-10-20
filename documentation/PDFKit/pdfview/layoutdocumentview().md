@@ -1,7 +1,8 @@
 # layoutDocumentView()
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs layout of the inner views.
 
@@ -19,17 +20,22 @@ Performs layout of the inner views.
 func layoutDocumentView()
 ```
 
+```objc
+- (void) layoutDocumentView;
+```
+
 #### Discussion
 
 The `PDFView` actually contains several subviews, such as the document view (where the PDF is actually drawn) and a “matte view” (which may appear as a gray area around the PDF content, depending on the scaling). Changes to the PDF content may require changes to these inner views, so you must call this method explicitly if you use PDF Kit utility classes to add or remove a page, rotate a page, or perform other operations affecting visible layout.
 
-This method is called automatically from `PDFView` methods that affect the visible layout (such as `setDocument(_:)`, `setDisplayBox(_:)` or [`zoomIn(_:)`](pdfview/zoomin(_:).md)).
+This method is called automatically from `PDFView` methods that affect the visible layout (such as `setDocument(_:)`, `setDisplayBox(_:)` or [`zoomIn(_:)`](./zoomin%28_%29.md)).
 
 ## See Also
 
-- [var documentView: UIView?](pdfview/documentview.md)
+### Specializing the View
+- [var documentView: UIView?](./documentview.md)
   The innermost view used by `PDFView` or by your `PDFView` subclass.
-- [Draw Operations](draw-operations.md)
+- [Draw Operations](../draw-operations.md)
   Draw in a PDF page.
 
 

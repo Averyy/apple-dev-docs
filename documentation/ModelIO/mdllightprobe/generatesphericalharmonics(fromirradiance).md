@@ -1,7 +1,8 @@
 # generateSphericalHarmonics(fromIrradiance:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates spherical harmonics information based on the light probe’s irradiance texture.
 
@@ -19,9 +20,13 @@ Generates spherical harmonics information based on the light probe’s irradianc
 func generateSphericalHarmonics(fromIrradiance sphericalHarmonicsLevel: Int)
 ```
 
+```objc
+- (void) generateSphericalHarmonicsFromIrradiance:(NSUInteger) sphericalHarmonicsLevel;
+```
+
 #### Discussion
 
-Spherical harmonic coefficients describe the distribution of light around a light source with less high-frequency detail than a cube map texture, but they can be used more efficiently in real-time rendering. After calling this method, use the [`sphericalHarmonicsCoefficients`](mdllightprobe/sphericalharmonicscoefficients.md) property to access the generated coefficients.
+Spherical harmonic coefficients describe the distribution of light around a light source with less high-frequency detail than a cube map texture, but they can be used more efficiently in real-time rendering. After calling this method, use the [`sphericalHarmonicsCoefficients`](./sphericalharmonicscoefficients.md) property to access the generated coefficients.
 
 ## Parameters
 
@@ -29,9 +34,10 @@ Spherical harmonic coefficients describe the distribution of light around a ligh
 
 ## See Also
 
-- [var sphericalHarmonicsCoefficients: Data?](mdllightprobe/sphericalharmonicscoefficients.md)
+### Working with Spherical Harmonics
+- [var sphericalHarmonicsCoefficients: Data?](./sphericalharmonicscoefficients.md)
   Data containing the spherical harmonics coefficients for the light.
-- [var sphericalHarmonicsLevel: Int](mdllightprobe/sphericalharmonicslevel.md)
+- [var sphericalHarmonicsLevel: Int](./sphericalharmonicslevel.md)
   The number of levels of spherical harmonics information in the light probe.
 
 

@@ -1,7 +1,8 @@
 # loadAchievementDescriptions(completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads all associated achievements that have defined deep links to this game activity definition.
 
@@ -16,7 +17,15 @@ Loads all associated achievements that have defined deep links to this game acti
 ## Declaration
 
 ```swift
+func loadAchievementDescriptions(completionHandler: @escaping @Sendable ([GKAchievementDescription]?, (any Error)?) -> Void)
+```
+
+```swift
 var achievementDescriptions: [GKAchievementDescription] { get async throws }
+```
+
+```objc
+- (void) loadAchievementDescriptionsWithCompletionHandler:(void (^)(NSArray<GKAchievementDescription *> *achievementDescriptions, NSError *error)) completionHandler;
 ```
 
 

@@ -1,7 +1,8 @@
 # AlternativeDistributionPackage.Relationships.Versions.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage identifying an alternative distribution package version associated with a package.
 
@@ -10,18 +11,18 @@ The resource linkage identifying an alternative distribution package version ass
 
 ## Declaration
 
-```swift
+```
 object AlternativeDistributionPackage.Relationships.Versions.Data
 ```
 
 #### Discussion
 
-For more information on the object that owns this version data, see [`AlternativeDistributionPackage.Relationships.Versions`](alternativedistributionpackage/relationships-data.dictionary/versions-data.dictionary.md).
+For more information on the object that owns this version data, see [`AlternativeDistributionPackage.Relationships.Versions`](../versions-data.dictionary.md).
 
 ## Properties
 
 - `id` (string) *(required)*: An opaque resource ID that uniquely identifies the alternative distribution package version.
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `alternativeDistributionPackageVersions`
 
 
 ---

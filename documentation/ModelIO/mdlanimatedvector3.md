@@ -1,7 +1,8 @@
 # MDLAnimatedVector3
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 11.0+
@@ -17,31 +18,35 @@
 class MDLAnimatedVector3
 ```
 
+```objc
+@interface MDLAnimatedVector3 : MDLAnimatedValue
+```
+
 ## Topics
 
 ### Instance Properties
-- [var double3Array: [SIMD3<Double>]](mdlanimatedvector3/double3array.md)
-- [var float3Array: [SIMD3<Float>]](mdlanimatedvector3/float3array.md)
+- [var double3Array: [SIMD3<Double>]](./mdlanimatedvector3/double3array.md)
+- [var float3Array: [SIMD3<Float>]](./mdlanimatedvector3/float3array.md)
 ### Instance Methods
-- [func double3Value(atTime: TimeInterval) -> vector_double3](mdlanimatedvector3/double3value(attime:).md)
-- [func float3Value(atTime: TimeInterval) -> vector_float3](mdlanimatedvector3/float3value(attime:).md)
-- [func reset(double3Array: [SIMD3<Double>], atTimes: [TimeInterval])](mdlanimatedvector3/reset(double3array:attimes:).md)
-- [func reset(float3Array: [SIMD3<Float>], atTimes: [TimeInterval])](mdlanimatedvector3/reset(float3array:attimes:).md)
-- [func setDouble3(vector_double3, atTime: TimeInterval)](mdlanimatedvector3/setdouble3(_:attime:).md)
-- [func setFloat3(vector_float3, atTime: TimeInterval)](mdlanimatedvector3/setfloat3(_:attime:).md)
+- [func double3Value(atTime: TimeInterval) -> vector_double3](./mdlanimatedvector3/double3value%28attime%29.md)
+- [func float3Value(atTime: TimeInterval) -> vector_float3](./mdlanimatedvector3/float3value%28attime%29.md)
+- [func reset(double3Array: [SIMD3<Double>], atTimes: [TimeInterval])](./mdlanimatedvector3/reset%28double3array,attimes%29.md)
+- [func reset(float3Array: [SIMD3<Float>], atTimes: [TimeInterval])](./mdlanimatedvector3/reset%28float3array,attimes%29.md)
+- [func setDouble3(vector_double3, atTime: TimeInterval)](./mdlanimatedvector3/setdouble3%28_,attime%29.md)
+- [func setFloat3(vector_float3, atTime: TimeInterval)](./mdlanimatedvector3/setfloat3%28_,attime%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MDLAnimatedValue](mdlanimatedvalue.md)
+- [MDLAnimatedValue](./mdlanimatedvalue.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

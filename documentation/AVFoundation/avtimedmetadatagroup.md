@@ -1,7 +1,8 @@
 # AVTimedMetadataGroup
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A collection of metadata items that are valid for use during a specific time range.
 
@@ -20,9 +21,13 @@ A collection of metadata items that are valid for use during a specific time ran
 class AVTimedMetadataGroup
 ```
 
+```objc
+@interface AVTimedMetadataGroup : AVMetadataGroup
+```
+
 ## Mentions
 
-- [Presenting chapter markers](presenting-chapter-markers.md)
+- [Presenting chapter markers](./presenting-chapter-markers.md)
 
 #### Overview
 
@@ -31,54 +36,55 @@ For example, `AVTimedMetadataGroups` are used to represent chapters, optionally 
 ## Topics
 
 ### Creating a timed metadata group
-- [convenience init?(sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>)](avtimedmetadatagroup/init(samplebuffer:)-6atlv.md)
+- [convenience init?(sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>)](./avtimedmetadatagroup/init%28samplebuffer%29-6atlv.md)
   Creates a timed metadata group with a sample buffer.
-- [init(items: [AVMetadataItem], timeRange: CMTimeRange)](avtimedmetadatagroup/init(items:timerange:).md)
+- [init(items: [AVMetadataItem], timeRange: CMTimeRange)](./avtimedmetadatagroup/init%28items,timerange%29.md)
   Creates a timed metadata group initialized with the given metadata items.
-- [init?(sampleBuffer: CMSampleBuffer)](avtimedmetadatagroup/init(samplebuffer:)-bjuo.md)
+- [init?(sampleBuffer: CMSampleBuffer)](./avtimedmetadatagroup/init%28samplebuffer%29-bjuo.md)
 ### Accessing group attributes
-- [var items: [AVMetadataItem]](avtimedmetadatagroup/items.md)
+- [var items: [AVMetadataItem]](./avtimedmetadatagroup/items.md)
   An array of metadata items in the timed metadata group.
-- [var timeRange: CMTimeRange](avtimedmetadatagroup/timerange.md)
+- [var timeRange: CMTimeRange](./avtimedmetadatagroup/timerange.md)
   The time range for the timed metadata.
 ### Creating a format description
-- [func copyFormatDescription() -> CMMetadataFormatDescription?](avtimedmetadatagroup/copyformatdescription.md)
+- [func copyFormatDescription() -> CMMetadataFormatDescription?](./avtimedmetadatagroup/copyformatdescription%28%29.md)
   Creates a format description based on the receiver’s items.
 
 ## Relationships
 
 ### Inherits From
-- [AVMetadataGroup](avmetadatagroup.md)
+- [AVMetadataGroup](./avmetadatagroup.md)
 ### Inherited By
-- [AVMutableTimedMetadataGroup](avmutabletimedmetadatagroup.md)
+- [AVMutableTimedMetadataGroup](./avmutabletimedmetadatagroup.md)
 ### Conforms To
-- [AVAssetReaderOutput.SupportedPayload](avassetreaderoutput/supportedpayload.md)
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [AVAssetReaderOutput.SupportedPayload](./avassetreaderoutput/supportedpayload.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Presenting chapter markers](presenting-chapter-markers.md)
+### Timed metadata
+- [Presenting chapter markers](./presenting-chapter-markers.md)
   Add chapter markers to enable users to quickly navigate your content.
-- [class AVMetadataGroup](avmetadatagroup.md)
+- [class AVMetadataGroup](./avmetadatagroup.md)
   A collection of metadata items associated with a timeline segment.
-- [class AVMutableTimedMetadataGroup](avmutabletimedmetadatagroup.md)
+- [class AVMutableTimedMetadataGroup](./avmutabletimedmetadatagroup.md)
   A mutable collection of metadata items that are valid for use during a specific time range.
-- [class AVDateRangeMetadataGroup](avdaterangemetadatagroup.md)
+- [class AVDateRangeMetadataGroup](./avdaterangemetadatagroup.md)
   A collection of metadata items that are valid for use within a specific date range.
-- [class AVMutableDateRangeMetadataGroup](avmutabledaterangemetadatagroup.md)
+- [class AVMutableDateRangeMetadataGroup](./avmutabledaterangemetadatagroup.md)
   A mutable collection of metadata items that are valid for use within a specific range of dates.
-- [class AVPlayerItemMediaDataCollector](avplayeritemmediadatacollector.md)
+- [class AVPlayerItemMediaDataCollector](./avplayeritemmediadatacollector.md)
   The abstract base for media data collectors.
-- [class AVPlayerItemMetadataCollector](avplayeritemmetadatacollector.md)
+- [class AVPlayerItemMetadataCollector](./avplayeritemmetadatacollector.md)
   An object used to capture the date range metadata defined for an HTTP Live Streaming asset.
 
 

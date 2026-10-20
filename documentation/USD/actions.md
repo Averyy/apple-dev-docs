@@ -1,6 +1,7 @@
 # actions
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 A list of actions that make up the group.
 
@@ -16,13 +17,14 @@ rel actions
 
 ## See Also
 
-- [info:id](info-id.md)
+### Properties
+- [info:id](./info-id.md)
   The action’s unique identifier.
-- [type](type.md)
+- [type](./type.md)
   An option that controls the order in which the actions execute.
-- [loops](loops.md)
+- [loops](./loops.md)
   A Boolean value indicating whether the group loops.
-- [performCount](performcount.md)
+- [performCount](./performcount.md)
   A value that specifies the number of times the group’s actions repeat.
 
 

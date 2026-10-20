@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of the data frame by feeding them into a hasher.
 

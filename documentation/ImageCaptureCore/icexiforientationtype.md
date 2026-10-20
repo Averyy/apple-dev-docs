@@ -1,21 +1,26 @@
 # ICEXIFOrientationType
 
 **Framework**: ImageCaptureCore  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The file’s orientation type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
 ```swift
 enum ICEXIFOrientationType
+```
+
+```c
+enum ICEXIFOrientationType : NSUInteger;
 ```
 
 #### Overview
@@ -41,42 +46,43 @@ The meaning of this value is defined by the `EXIF` specification. Here is what t
 ## Topics
 
 ### Constants
-- [ICEXIFOrientationType.orientation1](icexiforientationtype/orientation1.md)
+- [ICEXIFOrientationType.orientation1](./icexiforientationtype/orientation1.md)
   Normal
-- [ICEXIFOrientationType.orientation2](icexiforientationtype/orientation2.md)
+- [ICEXIFOrientationType.orientation2](./icexiforientationtype/orientation2.md)
   Flipped horizontally
-- [ICEXIFOrientationType.orientation3](icexiforientationtype/orientation3.md)
+- [ICEXIFOrientationType.orientation3](./icexiforientationtype/orientation3.md)
   Rotated 180°
-- [ICEXIFOrientationType.orientation4](icexiforientationtype/orientation4.md)
+- [ICEXIFOrientationType.orientation4](./icexiforientationtype/orientation4.md)
   Flipped vertically
-- [ICEXIFOrientationType.orientation5](icexiforientationtype/orientation5.md)
+- [ICEXIFOrientationType.orientation5](./icexiforientationtype/orientation5.md)
   Rotated 90° CCW and flipped vertically
-- [ICEXIFOrientationType.orientation6](icexiforientationtype/orientation6.md)
+- [ICEXIFOrientationType.orientation6](./icexiforientationtype/orientation6.md)
   Rotated 90° CCW
-- [ICEXIFOrientationType.orientation7](icexiforientationtype/orientation7.md)
+- [ICEXIFOrientationType.orientation7](./icexiforientationtype/orientation7.md)
   Rotated 90° CW and flipped vertically
-- [ICEXIFOrientationType.orientation8](icexiforientationtype/orientation8.md)
+- [ICEXIFOrientationType.orientation8](./icexiforientationtype/orientation8.md)
   Rotated 90° CW
 ### Initializers
-- [init?(rawValue: UInt)](icexiforientationtype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./icexiforientationtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var orientation: ICEXIFOrientationType](iccamerafile/orientation.md)
+### Inspecting a File’s EXIF Data
+- [var orientation: ICEXIFOrientationType](./iccamerafile/orientation.md)
   The orientation to use when downloading the image.
-- [var exifCreationDate: Date?](iccamerafile/exifcreationdate.md)
+- [var exifCreationDate: Date?](./iccamerafile/exifcreationdate.md)
   The `EXIF` creation date of the file.
-- [var exifModificationDate: Date?](iccamerafile/exifmodificationdate.md)
+- [var exifModificationDate: Date?](./iccamerafile/exifmodificationdate.md)
   The `EXIF` modification date of the file.
 
 

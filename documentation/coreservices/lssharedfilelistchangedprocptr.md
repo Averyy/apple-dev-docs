@@ -1,7 +1,8 @@
 # LSSharedFileListChangedProcPtr
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 16.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias LSSharedFileListChangedProcPtr = (LSSharedFileList, UnsafeMutableRawPointer) -> Void
+```
+
+```c
+typedef void (*LSSharedFileListChangedProcPtr)(LSSharedFileListRef inList, void *context);
 ```
 
 

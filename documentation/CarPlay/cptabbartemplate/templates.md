@@ -1,7 +1,8 @@
 # templates
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tab bar’s templates.
 
@@ -16,15 +17,20 @@ The tab bar’s templates.
 var templates: [CPTemplate] { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSArray<__kindof CPTemplate *> * templates;
+```
+
 #### Discussion
 
-The array contains the root template from each of the tab bar’s tabs. To add new templates to the tab bar, to remove or reorder existing templates, or to update a template’s tab bar appearance, use the [`updateTemplates(_:)`](cptabbartemplate/updatetemplates(_:).md) method.
+The array contains the root template from each of the tab bar’s tabs. To add new templates to the tab bar, to remove or reorder existing templates, or to update a template’s tab bar appearance, use the [`updateTemplates(_:)`](./updatetemplates%28_%29.md) method.
 
 ## See Also
 
-- [func updateTemplates([CPTemplate])](cptabbartemplate/updatetemplates(_:).md)
+### Managing the Templates
+- [func updateTemplates([CPTemplate])](./updatetemplates%28_%29.md)
   Adds, removes, reorders, or updates the tab bar’s templates.
-- [class var maximumTabCount: Int](cptabbartemplate/maximumtabcount.md)
+- [class var maximumTabCount: Int](./maximumtabcount.md)
   The maximum number of tabs that the template can display.
 
 

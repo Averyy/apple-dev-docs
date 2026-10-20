@@ -1,7 +1,8 @@
 # EndUserLicenseAgreementUpdateRequest.Data.Relationships.Territories
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object EndUserLicenseAgreementUpdateRequest.Data.Relationships.Territories
 ```
 
 ## Topics
 
 ### Objects
-- [object EndUserLicenseAgreementUpdateRequest.Data.Relationships.Territories.Data](enduserlicenseagreementupdaterequest/data-data.dictionary/relationships-data.dictionary/territories-data.dictionary/data-data.dictionary.md)
+- [object EndUserLicenseAgreementUpdateRequest.Data.Relationships.Territories.Data](./territories-data.dictionary/data-data.dictionary.md)
   The type and ID of a resource that you’re relating with the resource you’re updating.
 
 ## Properties

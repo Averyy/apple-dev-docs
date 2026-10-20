@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOWorkLoop *workLoop;
 ```
 
@@ -15,12 +15,13 @@ What is the work-loop for this event source.
 
 ## See Also
 
-- [reserved](ioeventsource/reserved.md)
-- [refcon](ioeventsource/refcon.md)
-- [owner](ioeventsource/owner.md)
-- [eventChainNext](ioeventsource/eventchainnext.md)
-- [enabled](ioeventsource/enabled.md)
-- [action](ioeventsource/action-8l7.md)
+### Instance Variables
+- [reserved](./reserved.md)
+- [refcon](./refcon.md)
+- [owner](./owner.md)
+- [eventChainNext](./eventchainnext.md)
+- [enabled](./enabled.md)
+- [action](./action-8l7.md)
 
 
 ---

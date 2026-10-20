@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Style of gradient drawn by the layer.
 
@@ -19,19 +20,24 @@ Style of gradient drawn by the layer.
 var type: CAGradientLayerType { get set }
 ```
 
+```objc
+@property (copy) CAGradientLayerType type;
+```
+
 #### Discussion
 
-Defaults to [`axial`](cagradientlayertype/axial.md).
+Defaults to [`axial`](../cagradientlayertype/axial.md).
 
 ## See Also
 
-- [var colors: [Any]?](cagradientlayer/colors.md)
+### Gradient Style Properties
+- [var colors: [Any]?](./colors.md)
   An array of `CGColorRef` objects defining the color of each gradient stop. Animatable.
-- [var locations: [NSNumber]?](cagradientlayer/locations.md)
+- [var locations: [NSNumber]?](./locations.md)
   An optional array of NSNumber objects defining the location of each gradient stop. Animatable.
-- [var endPoint: CGPoint](cagradientlayer/endpoint.md)
+- [var endPoint: CGPoint](./endpoint.md)
   The end point of the gradient when drawn in the layer’s coordinate space. Animatable.
-- [var startPoint: CGPoint](cagradientlayer/startpoint.md)
+- [var startPoint: CGPoint](./startpoint.md)
   The start point of the gradient when drawn in the layer’s coordinate space. Animatable.
 
 

@@ -1,7 +1,8 @@
 # LibraryGenreFilter
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Genre properties your app uses as a filter for a library request.
 
@@ -23,9 +24,9 @@ protocol LibraryGenreFilter
 ## Topics
 
 ### Instance Properties
-- [var id: MusicItemID](librarygenrefilter/id.md)
+- [var id: MusicItemID](./librarygenrefilter/id.md)
   The unique identifier for the genre.
-- [var name: String](librarygenrefilter/name.md)
+- [var name: String](./librarygenrefilter/name.md)
   The localized name of the genre.
 
 

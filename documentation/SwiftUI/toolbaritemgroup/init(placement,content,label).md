@@ -1,7 +1,8 @@
 # init(placement:content:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a toolbar item group with the specified placement, content, and a label describing that content.
 
@@ -21,9 +22,11 @@ nonisolated
 init<C, L>(placement: ToolbarItemPlacement = .automatic, @ContentBuilder content: () -> C, @ContentBuilder label: () -> L) where Content == LabeledToolbarItemGroupContent<C, L>, C : View, L : View
 ```
 
+Available when `Content` conforms to `View`.
+
 #### Discussion
 
-A toolbar item group provided a label wraps its content within a [`ControlGroup`](controlgroup.md) which allows the content to collapse down into a menu that presents its content based on available space.
+A toolbar item group provided a label wraps its content within a [`ControlGroup`](../controlgroup.md) which allows the content to collapse down into a menu that presents its content based on available space.
 
 ## Parameters
 
@@ -33,7 +36,8 @@ A toolbar item group provided a label wraps its content within a [`ControlGroup`
 
 ## See Also
 
-- [init(placement: ToolbarItemPlacement, content: () -> Content)](toolbaritemgroup/init(placement:content:).md)
+### Creating a toolbar item group
+- [init(placement: ToolbarItemPlacement, content: () -> Content)](./init%28placement,content%29.md)
   Creates a toolbar item group with a specified placement and content.
 
 

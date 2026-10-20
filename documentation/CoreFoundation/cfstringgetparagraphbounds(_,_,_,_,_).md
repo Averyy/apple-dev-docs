@@ -1,7 +1,8 @@
 # CFStringGetParagraphBounds(_:_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Given a range of characters in a string, obtains the paragraph bounds—that is, the indexes of the first character and the final characters of the paragraph(s) containing the range.
 
@@ -20,9 +21,13 @@ Given a range of characters in a string, obtains the paragraph bounds—that is,
 func CFStringGetParagraphBounds(_ string: CFString!, _ range: CFRange, _ parBeginIndex: UnsafeMutablePointer<CFIndex>!, _ parEndIndex: UnsafeMutablePointer<CFIndex>!, _ contentsEndIndex: UnsafeMutablePointer<CFIndex>!)
 ```
 
+```c
+extern void CFStringGetParagraphBounds(CFStringRef string, CFRange range, CFIndex *parBeginIndex, CFIndex *parEndIndex, CFIndex *contentsEndIndex);
+```
+
 #### Discussion
 
-This function is the same as [`CFStringGetLineBounds(_:_:_:_:_:)`](cfstringgetlinebounds(_:_:_:_:_:).md)(), however it only looks for paragraphs (that is, it does not stop at Unicode NextLine or LineSeparator characters).
+This function is the same as [`CFStringGetLineBounds(_:_:_:_:_:)`](./cfstringgetlinebounds%28_,_,_,_,_%29.md)(), however it only looks for paragraphs (that is, it does not stop at Unicode NextLine or LineSeparator characters).
 
 This function is a convenience function for determining the beginning and ending indexes of one or more paragraph in the given range of a string. It is useful, for example, when each line represents a “record” of some sort; you might search for some substring, but want to extract the record of which the substring is a part.
 

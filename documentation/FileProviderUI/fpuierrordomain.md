@@ -1,7 +1,8 @@
 # FPUIErrorDomain
 
 **Framework**: File Provider UI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for errors raised by the File Provider UI extension.
 
@@ -18,9 +19,14 @@ The error domain for errors raised by the File Provider UI extension.
 let FPUIErrorDomain: String
 ```
 
+```c
+extern NSString * const FPUIErrorDomain;
+```
+
 ## See Also
 
-- [enum FPUIExtensionErrorCode](fpuiextensionerrorcode.md)
+### Errors
+- [enum FPUIExtensionErrorCode](./fpuiextensionerrorcode.md)
   The error codes for errors raised by the File Provider UI extension.
 
 

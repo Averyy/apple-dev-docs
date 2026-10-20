@@ -1,7 +1,8 @@
 # CommunicationHandle
 
 **Framework**: PermissionKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Contact information for identifying and communicating with a person.
 
@@ -25,37 +26,38 @@ Use this structure to specify contact information like phone numbers, email addr
 ## Topics
 
 ### Specifying handle types
-- [CommunicationHandle.Kind](communicationhandle/kind-swift.enum.md)
+- [CommunicationHandle.Kind](./communicationhandle/kind-swift.enum.md)
   An enumeration that identifies different types of communication handles.
 ### Creating handles
-- [init(value: String, kind: CommunicationHandle.Kind)](communicationhandle/init(value:kind:).md)
+- [init(value: String, kind: CommunicationHandle.Kind)](./communicationhandle/init%28value,kind%29.md)
   Creates a communication handle.
 ### Accessing properties
-- [var value: String](communicationhandle/value.md)
+- [var value: String](./communicationhandle/value.md)
   The value of the communication handle.
-- [var kind: CommunicationHandle.Kind](communicationhandle/kind-swift.property.md)
+- [var kind: CommunicationHandle.Kind](./communicationhandle/kind-swift.property.md)
   The type of communication handle.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
+### Response management
 - [func responses<Topic>(for: Topic.Type) -> some AsyncSequence<PermissionResponse<Topic>, Never>
-](askcenter/responses(for:).md)
+](./askcenter/responses%28for%29.md)
   Registers the topic type with the system and returns an asynchronous sequence of responses.
-- [struct PermissionResponse](permissionresponse.md)
+- [struct PermissionResponse](./permissionresponse.md)
   A full permission response that includes the original question and chosen answer.
-- [struct PermissionChoice](permissionchoice.md)
+- [struct PermissionChoice](./permissionchoice.md)
   A class that uniquely identifies a specific, statically defined permission choice.
-- [class CommunicationLimits](communicationlimits.md)
+- [class CommunicationLimits](./communicationlimits.md)
   A type that encapsulates the communication limits for your app.
 
 

@@ -1,7 +1,8 @@
 # enhancedMoveHue(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func enhancedMoveHue(with params: MTRColorControlClusterEnhancedMoveHueParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func enhancedMoveHue(with params: MTRColorControlClusterEnhancedMoveHueParams) async throws
+```
+
+```objc
+- (void) enhancedMoveHueWithParams:(MTRColorControlClusterEnhancedMoveHueParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

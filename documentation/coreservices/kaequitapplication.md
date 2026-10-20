@@ -1,7 +1,8 @@
 # kAEQuitApplication
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Event that causes the application to quit.
 

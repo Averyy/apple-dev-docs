@@ -1,7 +1,8 @@
 # soVoiceDescription
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Get basic voice information.
 

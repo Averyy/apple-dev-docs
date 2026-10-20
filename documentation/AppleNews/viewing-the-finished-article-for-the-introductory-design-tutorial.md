@@ -1,6 +1,7 @@
 # Viewing the Finished Article for the Introductory Design Tutorial
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 See the full JSON code from this tutorial.
 
@@ -8,7 +9,7 @@ See the full JSON code from this tutorial.
 
 This page brings together all of the Apple News Format features from this tutorial as a template that you can use for your News articles. If you followed the steps throughout this tutorial, the following example code should match the code in your `article.json` file.
 
-You can copy or download this template (which is also the `article.json` file in `News_Design_Tutorial_6_Embeds`) and modify it to create your own News articles. See [`Download the Article Bundle Examples`](setting-up-the-introductory-tutorial#Download-the-Article-Bundle-Examples.md). To preview this article, see [`Preview the Article Bundle Examples`](setting-up-the-introductory-tutorial#Preview-the-Article-Bundle-Examples.md).
+You can copy or download this template (which is also the `article.json` file in `News_Design_Tutorial_6_Embeds`) and modify it to create your own News articles. See [Download the Article Bundle Examples](./setting-up-the-introductory-tutorial.md#Download-the-Article-Bundle-Examples). To preview this article, see [Preview the Article Bundle Examples](./setting-up-the-introductory-tutorial.md#Preview-the-Article-Bundle-Examples).
 
 > **Note**:  If your `article.json` file refers to an image using a URL that begins with `bundle://`, that image must be located within the same folder as your `article.json` file.
 
@@ -418,33 +419,34 @@ You can copy or download this template (which is also the `article.json` file in
 
 ##### Previous
 
-[`Adding a Podcast`](adding-a-podcast.md)
+[Adding a Podcast](./adding-a-podcast.md)
 
 ##### Next
 
-[`Setting Up the Advanced Tutorials`](setting-up-the-advanced-tutorials.md)
+[Setting Up the Advanced Tutorials](./setting-up-the-advanced-tutorials.md)
 
 ## See Also
 
-- [Setting Up the Introductory Tutorial](setting-up-the-introductory-tutorial.md)
+### Introductory Design Tutorial
+- [Setting Up the Introductory Tutorial](./setting-up-the-introductory-tutorial.md)
   Download the tutorial files, and learn about what you’ll create in the introductory tutorial.
-- [Creating Your First Article](creating-your-first-article.md)
+- [Creating Your First Article](./creating-your-first-article.md)
   Create an article with text components and component text styles.
-- [Positioning Text Components](positioning-text-components.md)
+- [Positioning Text Components](./positioning-text-components.md)
   Adjust the positions of the text components in your article—for example, place the article body off-center.
-- [Adding a Divider](adding-a-divider.md)
+- [Adding a Divider](./adding-a-divider.md)
   Create a horizontal, styled divider that extends to the right edge of the display.
-- [Adding an Image and Captions](adding-an-image-and-captions.md)
+- [Adding an Image and Captions](./adding-an-image-and-captions.md)
   Create a photo that extends to both edges of the display, with captions that appear in the article layout and in full-screen view.
-- [Adding a Pull Quote](adding-a-pull-quote.md)
+- [Adding a Pull Quote](./adding-a-pull-quote.md)
   Break an existing body component into two components, and then insert a pull quote between them.
-- [Adding a Gallery of Images](adding-a-gallery-of-images.md)
+- [Adding a Gallery of Images](./adding-a-gallery-of-images.md)
   Display three images as a sequential gallery.
-- [Adding a Mosaic of Images](adding-a-mosaic-of-images.md)
+- [Adding a Mosaic of Images](./adding-a-mosaic-of-images.md)
   Display five images as mosaic tiles.
-- [Adding a Tweet](adding-a-tweet.md)
+- [Adding a Tweet](./adding-a-tweet.md)
   Include a tweet in an article.
-- [Adding a Podcast](adding-a-podcast.md)
+- [Adding a Podcast](./adding-a-podcast.md)
   Add a link to a podcast that displays the podcast artwork and the podcast show or episode information.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the current value of the effect.
@@ -24,7 +25,8 @@ func effectValue(size: CGSize) -> ProjectionTransform
 
 ## See Also
 
-- [func ignoredByLayout() -> _IgnoredByLayoutEffect<Self>](geometryeffect/ignoredbylayout.md)
+### Applying effects
+- [func ignoredByLayout() -> _IgnoredByLayoutEffect<Self>](./ignoredbylayout%28%29.md)
   Returns an effect that produces the same geometry transform as this effect, but only applies the transform while rendering its view.
 
 

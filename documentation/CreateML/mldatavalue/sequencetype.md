@@ -1,7 +1,8 @@
 # MLDataValue.SequenceType
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A sequence of data values.
 
@@ -22,32 +23,33 @@ struct SequenceType
 ## Topics
 
 ### Creating a dictionary type
-- [init(_:)](mldatavalue/sequencetype/init(_:).md)
+- [init(_:)](./sequencetype/init%28_%29.md)
 ### Default Implementations
-- [MLDataValueConvertible Implementations](mldatavalue/sequencetype/mldatavalueconvertible-implementations.md)
+- [MLDataValueConvertible Implementations](./sequencetype/mldatavalueconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [MLDataValueConvertible](mldatavalueconvertible.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../Swift/bidirectionalcollection.md)
+- [Collection](../../Swift/collection.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [MLDataValueConvertible](../mldatavalueconvertible.md)
+- [RandomAccessCollection](../../Swift/randomaccesscollection.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [var sequenceValue: MLDataValue.SequenceType?](mldatavalue/sequencevalue.md)
+### Accessing array values
+- [var sequenceValue: MLDataValue.SequenceType?](./sequencevalue.md)
   The underlying sequence.
-- [var multiArrayValue: MLDataValue.MultiArrayType?](mldatavalue/multiarrayvalue.md)
+- [var multiArrayValue: MLDataValue.MultiArrayType?](./multiarrayvalue.md)
   The underlying multidimensional array.
-- [MLDataValue.MultiArrayType](mldatavalue/multiarraytype.md)
+- [MLDataValue.MultiArrayType](./multiarraytype.md)
   A multidimensional array of data values.
 
 

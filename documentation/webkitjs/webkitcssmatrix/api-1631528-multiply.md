@@ -1,7 +1,8 @@
 # multiply
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns the result of multiplying this matrix by a given matrix that is on the right.
 
@@ -11,13 +12,13 @@ Returns the result of multiplying this matrix by a given matrix that is on the r
 
 ## Declaration
 
-```swift
+```
 WebKitCSSMatrix multiply(
     optional WebKitCSSMatrix? secondMatrix
 );
 ```
 
-#### Return_value
+#### Return Value
 
 A new matrix that is the result of multiplying this matrix by the given matrix.
 
@@ -31,19 +32,20 @@ The given matrix is on the right of the multiplication. This matrix is not modif
 
 ## See Also
 
-- [inverse](webkitcssmatrix/1633805-inverse.md)
+### Applying Operations
+- [inverse](./api-1633805-inverse.md)
   Returns the inverse of this matrix.
-- [translate](webkitcssmatrix/1630758-translate.md)
+- [translate](./api-1630758-translate.md)
   Returns the result of translating this matrix by a given vector.
-- [scale](webkitcssmatrix/1632184-scale.md)
+- [scale](./api-1632184-scale.md)
   Returns the result of scaling this matrix by a given vector.
-- [rotate](webkitcssmatrix/1629773-rotate.md)
+- [rotate](./api-1629773-rotate.md)
   Returns the result of rotating this matrix by a given vector.
-- [rotateAxisAngle](webkitcssmatrix/1632317-rotateaxisangle.md)
+- [rotateAxisAngle](./api-1632317-rotateaxisangle.md)
   Returns the result of rotating this matrix by a given vector and angle.
-- [skewX](webkitcssmatrix/1633353-skewx.md)
+- [skewX](./api-1633353-skewx.md)
   Specifies a skew transformation along the x-axis by the given angle.
-- [skewY](webkitcssmatrix/1631022-skewy.md)
+- [skewY](./api-1631022-skewy.md)
   Specifies a skew transformation along the y-axis by the given angle.
 
 

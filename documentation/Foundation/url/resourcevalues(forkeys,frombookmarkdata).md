@@ -1,7 +1,8 @@
 # resourceValues(forKeys:fromBookmarkData:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the resource values for properties identified by a specified array of keys contained in specified bookmark data.
 
@@ -26,15 +27,16 @@ If the result dictionary does not contain a resource value for one or more of th
 
 ## See Also
 
-- [func bookmarkData(options: URL.BookmarkCreationOptions, includingResourceValuesForKeys: Set<URLResourceKey>?, relativeTo: URL?) throws -> Data](url/bookmarkdata(options:includingresourcevaluesforkeys:relativeto:).md)
+### Creating bookmarks
+- [func bookmarkData(options: URL.BookmarkCreationOptions, includingResourceValuesForKeys: Set<URLResourceKey>?, relativeTo: URL?) throws -> Data](./bookmarkdata%28options,includingresourcevaluesforkeys,relativeto%29.md)
   Returns bookmark data for the URL, created with specified options and resource values.
-- [static func bookmarkData(withContentsOf: URL) throws -> Data](url/bookmarkdata(withcontentsof:).md)
+- [static func bookmarkData(withContentsOf: URL) throws -> Data](./bookmarkdata%28withcontentsof%29.md)
   Initializes and returns bookmark data derived from an alias file pointed to by a specified URL.
-- [static func writeBookmarkData(Data, to: URL) throws](url/writebookmarkdata(_:to:).md)
+- [static func writeBookmarkData(Data, to: URL) throws](./writebookmarkdata%28_,to%29.md)
   Creates an alias file on disk at a specified location with specified bookmark data.
-- [typealias BookmarkCreationOptions](url/bookmarkcreationoptions.md)
+- [typealias BookmarkCreationOptions](./bookmarkcreationoptions.md)
   An alias for bookmark creation options.
-- [struct BookmarkCreationOptions](nsurl/bookmarkcreationoptions.md)
+- [struct BookmarkCreationOptions](../nsurl/bookmarkcreationoptions.md)
   Options used when creating bookmark data.
 
 

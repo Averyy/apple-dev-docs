@@ -1,18 +1,21 @@
 # init(coordinateRegion:interactionModes:showsUserLocation:userTrackingMode:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a map that displays a coordinate region and optionally configures available interactions, user location, and tracking behavior.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS ?+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 17.0
+- iPadOS 14.0+ - Deprecated in 17.0
+- Mac Catalyst 14.0+ - Deprecated in 17.0
+- macOS 11.0+ - Deprecated in 14.0
+- tvOS 14.0+ - Deprecated in 17.0
+- visionOS
+- watchOS 7.0+ - Deprecated in 10.0
+
+> **Deprecated**: Use [`Map`](../map.md) initializers that take a [`MapContentBuilder`](../mapcontentbuilder.md) instead.
 
 ## Declaration
 
@@ -30,11 +33,12 @@ Creates a map that displays a coordinate region and optionally configures availa
 
 ## See Also
 
-- [init<Items, Annotation>(coordinateRegion: Binding<MKCoordinateRegion>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?, annotationItems: Items, annotationContent: (Items.Element) -> Annotation)](map/init(coordinateregion:interactionmodes:showsuserlocation:usertrackingmode:annotationitems:annotationcontent:).md)
+### Initializers
+- [init<Items, Annotation>(coordinateRegion: Binding<MKCoordinateRegion>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?, annotationItems: Items, annotationContent: (Items.Element) -> Annotation)](./init%28coordinateregion,interactionmodes,showsuserlocation,usertrackingmode,annotationitems,annotationcontent%29.md)
   Creates a map that displays a coordinate region with annotations, and optionally configures available interactions, user location, and tracking behavior.
-- [init(mapRect: Binding<MKMapRect>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?)](map/init(maprect:interactionmodes:showsuserlocation:usertrackingmode:).md)
+- [init(mapRect: Binding<MKMapRect>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?)](./init%28maprect,interactionmodes,showsuserlocation,usertrackingmode%29.md)
   Creates a map that displays a map rectangle and optionally configures available interactions, user location, and tracking behavior.
-- [init<Items, Annotation>(mapRect: Binding<MKMapRect>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?, annotationItems: Items, annotationContent: (Items.Element) -> Annotation)](map/init(maprect:interactionmodes:showsuserlocation:usertrackingmode:annotationitems:annotationcontent:).md)
+- [init<Items, Annotation>(mapRect: Binding<MKMapRect>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?, annotationItems: Items, annotationContent: (Items.Element) -> Annotation)](./init%28maprect,interactionmodes,showsuserlocation,usertrackingmode,annotationitems,annotationcontent%29.md)
   Creates a map that displays a map rectangle with annotations, and optionally configures available interactions, user location, and tracking behavior.
 
 

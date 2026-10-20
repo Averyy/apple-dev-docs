@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An optional name for the input/output command buffer.
@@ -20,11 +21,16 @@ An optional name for the input/output command buffer.
 var label: String? { get set }
 ```
 
+```objc
+@property (atomic, copy, nullable) NSString * label;
+```
+
 ## See Also
 
-- [func pushDebugGroup(String)](mtliocommandbuffer/pushdebuggroup(_:).md)
+### Debugging a command buffer
+- [func pushDebugGroup(String)](./pushdebuggroup%28_%29.md)
   Sets the current name for this input/output command encoder by adding it to the top of the debug name stack.
-- [func popDebugGroup()](mtliocommandbuffer/popdebuggroup.md)
+- [func popDebugGroup()](./popdebuggroup%28%29.md)
   Restores the previous name for this input/output command encoder by removing the top item of the debug name stack.
 
 

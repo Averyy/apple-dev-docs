@@ -1,14 +1,15 @@
 # kBluetoothVoiceSettingInputDataFormat2sComplement
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothVoiceSettingInputDataFormat2sComplement = 0x040
 ```
 

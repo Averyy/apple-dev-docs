@@ -1,7 +1,8 @@
 # WKMediaPlaybackState.playing
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The media is playing.
 
@@ -18,13 +19,18 @@ The media is playing.
 case playing
 ```
 
+```c
+WKMediaPlaybackStatePlaying
+```
+
 ## See Also
 
-- [WKMediaPlaybackState.none](wkmediaplaybackstate/none.md)
+### Constants
+- [WKMediaPlaybackState.none](./none.md)
   There is no media to play back.
-- [WKMediaPlaybackState.paused](wkmediaplaybackstate/paused.md)
+- [WKMediaPlaybackState.paused](./paused.md)
   The media playback is paused.
-- [WKMediaPlaybackState.suspended](wkmediaplaybackstate/suspended.md)
+- [WKMediaPlaybackState.suspended](./suspended.md)
   The media is not playing, and cannot be resumed until the user revokes the suspension.
 
 

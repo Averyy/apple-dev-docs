@@ -1,11 +1,12 @@
 # kAudioTransportManagerPropertyTransportType
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,10 +14,15 @@
 var kAudioTransportManagerPropertyTransportType: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioTransportManagerPropertyTransportType
+```
+
 ## See Also
 
-- [var kAudioTransportManagerPropertyEndPointList: AudioObjectPropertySelector](kaudiotransportmanagerpropertyendpointlist.md)
-- [var kAudioTransportManagerPropertyTranslateUIDToEndPoint: AudioObjectPropertySelector](kaudiotransportmanagerpropertytranslateuidtoendpoint.md)
+### Constants
+- [var kAudioTransportManagerPropertyEndPointList: AudioObjectPropertySelector](./kaudiotransportmanagerpropertyendpointlist.md)
+- [var kAudioTransportManagerPropertyTranslateUIDToEndPoint: AudioObjectPropertySelector](./kaudiotransportmanagerpropertytranslateuidtoendpoint.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ManipulationComponent.Dynamics.TranslationBehavior
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Definition of different standardized translation behaviors for an object.
 
@@ -17,18 +18,18 @@ struct TranslationBehavior
 ## Topics
 
 ### Type Properties
-- [static var none: ManipulationComponent.Dynamics.TranslationBehavior](manipulationcomponent/dynamics-swift.struct/translationbehavior-swift.struct/none.md)
+- [static var none: ManipulationComponent.Dynamics.TranslationBehavior](./translationbehavior-swift.struct/none.md)
   No active rotation behavior.
-- [static var unconstrained: ManipulationComponent.Dynamics.TranslationBehavior](manipulationcomponent/dynamics-swift.struct/translationbehavior-swift.struct/unconstrained.md)
+- [static var unconstrained: ManipulationComponent.Dynamics.TranslationBehavior](./translationbehavior-swift.struct/unconstrained.md)
   Rotation is unconstrained in all axes.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

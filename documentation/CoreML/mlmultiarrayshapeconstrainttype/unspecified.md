@@ -1,7 +1,8 @@
 # MLMultiArrayShapeConstraintType.unspecified
 
 **Framework**: Core ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constraint type is undefined.
 
@@ -20,11 +21,16 @@ The constraint type is undefined.
 case unspecified
 ```
 
+```c
+MLMultiArrayShapeConstraintTypeUnspecified
+```
+
 ## See Also
 
-- [MLMultiArrayShapeConstraintType.enumerated](mlmultiarrayshapeconstrainttype/enumerated.md)
+### Constraint types
+- [MLMultiArrayShapeConstraintType.enumerated](./enumerated.md)
   The constraint is an array of allowed shapes.
-- [MLMultiArrayShapeConstraintType.range](mlmultiarrayshapeconstrainttype/range.md)
+- [MLMultiArrayShapeConstraintType.range](./range.md)
   The constraint is a set of ranges allowed for the array shape.
 
 

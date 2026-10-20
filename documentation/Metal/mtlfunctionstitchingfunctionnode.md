@@ -1,7 +1,8 @@
 # MTLFunctionStitchingFunctionNode
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A call graph node that describes a function call and its inputs.
 
@@ -19,54 +20,59 @@ A call graph node that describes a function call and its inputs.
 class MTLFunctionStitchingFunctionNode
 ```
 
+```objc
+@interface MTLFunctionStitchingFunctionNode : NSObject
+```
+
 #### Overview
 
-When the Metal device object evaluates the function graph to compile the stitched function, it evaluates the nodes stored in the [`arguments`](mtlfunctionstitchingfunctionnode/arguments.md) property that it hasn’t already evaluated, and then calls the function specified by [`name`](mtlfunctionstitchingfunctionnode/name.md) to generate the node’s output.
+When the Metal device object evaluates the function graph to compile the stitched function, it evaluates the nodes stored in the [`arguments`](./mtlfunctionstitchingfunctionnode/arguments.md) property that it hasn’t already evaluated, and then calls the function specified by [`name`](./mtlfunctionstitchingfunctionnode/name.md) to generate the node’s output.
 
-If the function has side effects on the input data, use the [`controlDependencies`](mtlfunctionstitchingfunctionnode/controldependencies.md) property on other nodes to specify whether the Metal device object needs to evaluate this node first.
+If the function has side effects on the input data, use the [`controlDependencies`](./mtlfunctionstitchingfunctionnode/controldependencies.md) property on other nodes to specify whether the Metal device object needs to evaluate this node first.
 
 ## Topics
 
 ### Initializing a function node
-- [init(name: String, arguments: [any MTLFunctionStitchingNode], controlDependencies: [MTLFunctionStitchingFunctionNode])](mtlfunctionstitchingfunctionnode/init(name:arguments:controldependencies:).md)
+- [init(name: String, arguments: [any MTLFunctionStitchingNode], controlDependencies: [MTLFunctionStitchingFunctionNode])](./mtlfunctionstitchingfunctionnode/init%28name,arguments,controldependencies%29.md)
   Creates a new function node.
 ### Configuring a function node
-- [var name: String](mtlfunctionstitchingfunctionnode/name.md)
+- [var name: String](./mtlfunctionstitchingfunctionnode/name.md)
   The name of the function to call.
-- [var arguments: [any MTLFunctionStitchingNode]](mtlfunctionstitchingfunctionnode/arguments.md)
+- [var arguments: [any MTLFunctionStitchingNode]](./mtlfunctionstitchingfunctionnode/arguments.md)
   An ordered list of the nodes that provide the function’s arguments.
-- [var controlDependencies: [MTLFunctionStitchingFunctionNode]](mtlfunctionstitchingfunctionnode/controldependencies.md)
+- [var controlDependencies: [MTLFunctionStitchingFunctionNode]](./mtlfunctionstitchingfunctionnode/controldependencies.md)
   The list of nodes that need to execute before executing the node.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MTLFunctionStitchingNode](mtlfunctionstitchingnode.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MTLFunctionStitchingNode](./mtlfunctionstitchingnode.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Customizing shaders using function pointers and stitching](customizing-shaders-using-function-pointers-and-stitching.md)
+### Stitched function libraries
+- [Customizing shaders using function pointers and stitching](./customizing-shaders-using-function-pointers-and-stitching.md)
   Define custom shader behavior at runtime by creating functions from existing ones and preferentially linking to others in a dynamic library.
-- [class MTLStitchedLibraryDescriptor](mtlstitchedlibrarydescriptor.md)
+- [class MTLStitchedLibraryDescriptor](./mtlstitchedlibrarydescriptor.md)
   A description of a new library of procedurally generated functions.
-- [class MTLFunctionStitchingGraph](mtlfunctionstitchinggraph.md)
+- [class MTLFunctionStitchingGraph](./mtlfunctionstitchinggraph.md)
   A description of a new stitched function.
-- [class MTLFunctionStitchingInputNode](mtlfunctionstitchinginputnode.md)
+- [class MTLFunctionStitchingInputNode](./mtlfunctionstitchinginputnode.md)
   A call graph node that describes an input to the call graph.
-- [protocol MTLFunctionStitchingNode](mtlfunctionstitchingnode.md)
+- [protocol MTLFunctionStitchingNode](./mtlfunctionstitchingnode.md)
   A protocol to identify call graph nodes.
-- [class MTLFunctionStitchingAttributeAlwaysInline](mtlfunctionstitchingattributealwaysinline.md)
+- [class MTLFunctionStitchingAttributeAlwaysInline](./mtlfunctionstitchingattributealwaysinline.md)
   An attribute to specify that Metal needs to inline all of the function calls when generating the stitched function.
-- [protocol MTLFunctionStitchingAttribute](mtlfunctionstitchingattribute.md)
+- [protocol MTLFunctionStitchingAttribute](./mtlfunctionstitchingattribute.md)
   A protocol to identify types that customize how the Metal compiler stitches a function together.
 
 

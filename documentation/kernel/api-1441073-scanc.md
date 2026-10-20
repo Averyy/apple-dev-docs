@@ -1,14 +1,15 @@
 # scanc
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 size_t scanc(size_t, u_char *, const u_char *, u_char);
 ```
 

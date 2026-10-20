@@ -1,21 +1,23 @@
 # IOFindValueForName
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 IOReturn IOFindValueForName(const char *string, const IONamedValue *regValueArray, int *value);
 ```
 
 ## See Also
 
-- [OSPrintMemory](1543117-osprintmemory.md)
-- [IOFindNameForValue](1575325-iofindnameforvalue.md)
+### Helpers
+- [OSPrintMemory](./api-1543117-osprintmemory.md)
+- [IOFindNameForValue](./api-1575325-iofindnameforvalue.md)
 
 
 ---

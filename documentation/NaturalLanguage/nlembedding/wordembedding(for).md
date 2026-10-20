@@ -1,7 +1,8 @@
 # wordEmbedding(for:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Retrieves a word embedding for a given language.
 
@@ -20,23 +21,28 @@ Retrieves a word embedding for a given language.
 class func wordEmbedding(for language: NLLanguage) -> NLEmbedding?
 ```
 
+```objc
++ (NLEmbedding *) wordEmbeddingForLanguage:(NLLanguage) language;
+```
+
 ## Mentions
 
-- [Finding similarities between pieces of text](finding-similarities-between-pieces-of-text.md)
+- [Finding similarities between pieces of text](../finding-similarities-between-pieces-of-text.md)
 
 #### Return Value
 
-An [`NLEmbedding`](nlembedding.md) if available, otherwise `nil`.
+An [`NLEmbedding`](../nlembedding.md) if available, otherwise `nil`.
 
 ## Parameters
 
-- `language`: The language of the word embedding, such as [`french`](nllanguage/french.md).
+- `language`: The language of the word embedding, such as [`french`](../nllanguage/french.md).
 
 ## See Also
 
-- [class func wordEmbedding(for: NLLanguage, revision: Int) -> NLEmbedding?](nlembedding/wordembedding(for:revision:).md)
+### Creating a word embedding
+- [class func wordEmbedding(for: NLLanguage, revision: Int) -> NLEmbedding?](./wordembedding%28for,revision%29.md)
   Retrieves a word embedding for a given language and revision.
-- [convenience init(contentsOf: URL) throws](nlembedding/init(contentsof:).md)
+- [convenience init(contentsOf: URL) throws](./init%28contentsof%29.md)
   Creates a word embedding from a model file.
 
 

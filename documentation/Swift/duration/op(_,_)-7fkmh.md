@@ -1,7 +1,8 @@
 # /(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 **Availability**:
 - iOS 16.0+
@@ -20,10 +21,11 @@ static func / (lhs: Duration, rhs: Double) -> Duration
 
 ## See Also
 
-- [static func * (Duration, Double) -> Duration](duration/*(_:_:)-3d469.md)
-- [static func *= <T>(inout Duration, T)](duration/*=(_:_:).md)
-- [static func /= (inout Duration, Double)](duration/_=(_:_:)-10rgx.md)
-- [static func /= <T>(inout Duration, T)](duration/_=(_:_:)-1qfv3.md)
+### Performing calculations on durations
+- [static func * (Duration, Double) -> Duration](./star%28_,_%29-3d469.md)
+- [static func *= <T>(inout Duration, T)](./stareq%28_,_%29.md)
+- [static func /= (inout Duration, Double)](./opeq%28_,_%29-10rgx.md)
+- [static func /= <T>(inout Duration, T)](./opeq%28_,_%29-1qfv3.md)
 
 
 ---

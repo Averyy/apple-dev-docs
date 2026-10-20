@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns whether a gesture at the given point in the view needs to begin.
@@ -18,9 +19,13 @@ Returns whether a gesture at the given point in the view needs to begin.
 func textInteractionGesture(_ gestureType: BEGestureType, shouldBeginAt point: CGPoint) -> Bool
 ```
 
+```objc
+- (BOOL) textInteractionGesture:(BEGestureType) gestureType shouldBeginAtPoint:(CGPoint) point;
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 #### Return Value
 

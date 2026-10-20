@@ -1,7 +1,8 @@
 # init(identifier:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns nil if there is no table with the given identifier.
 
@@ -18,6 +19,10 @@ Returns nil if there is no table with the given identifier.
 
 ```swift
 init?(identifier: String)
+```
+
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier;
 ```
 
 

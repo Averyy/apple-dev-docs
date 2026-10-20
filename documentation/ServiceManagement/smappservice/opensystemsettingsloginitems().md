@@ -1,7 +1,8 @@
 # openSystemSettingsLoginItems()
 
 **Framework**: Service Management  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Opens System Settings to the Login Items control panel.
 
@@ -15,9 +16,13 @@ Opens System Settings to the Login Items control panel.
 class func openSystemSettingsLoginItems()
 ```
 
+```objc
++ (void) openSystemSettingsLoginItems;
+```
+
 ## Mentions
 
-- [Updating helper executables from earlier versions of macOS](updating-helper-executables-from-earlier-versions-of-macos.md)
+- [Updating helper executables from earlier versions of macOS](../updating-helper-executables-from-earlier-versions-of-macos.md)
 
 
 ---

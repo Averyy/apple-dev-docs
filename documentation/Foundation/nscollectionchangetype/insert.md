@@ -1,7 +1,8 @@
 # NSCollectionChangeType.insert
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A change type that represents the insertion of an object into an ordered collection.
 
@@ -20,9 +21,14 @@ A change type that represents the insertion of an object into an ordered collect
 case insert
 ```
 
+```c
+NSCollectionChangeInsert
+```
+
 ## See Also
 
-- [NSCollectionChangeType.remove](nscollectionchangetype/remove.md)
+### Types of Ordered Collection Changes
+- [NSCollectionChangeType.remove](./remove.md)
   A change type that represents the removal of an object from an ordered collection.
 
 

@@ -1,7 +1,8 @@
 # schedule(after:interval:tolerance:_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the action at some time after the specified date, at the specified frequency, taking into account tolerance if possible.
 
@@ -26,19 +27,20 @@ The immediate scheduler ignores `date` and performs the action immediately.
 
 ## See Also
 
-- [func schedule(() -> Void)](scheduler/schedule(_:).md)
+### Scheduling actions
+- [func schedule(() -> Void)](./schedule%28_%29.md)
   Performs the action at the next possible opportunity, without options.
-- [func schedule(after: Self.SchedulerTimeType, () -> Void)](scheduler/schedule(after:_:).md)
+- [func schedule(after: Self.SchedulerTimeType, () -> Void)](./schedule%28after,_%29.md)
   Performs the action at some time after the specified date, using the scheduler’s minimum tolerance.
-- [func schedule(after: Self.SchedulerTimeType, interval: Self.SchedulerTimeType.Stride, () -> Void) -> any Cancellable](scheduler/schedule(after:interval:_:).md)
+- [func schedule(after: Self.SchedulerTimeType, interval: Self.SchedulerTimeType.Stride, () -> Void) -> any Cancellable](./schedule%28after,interval,_%29.md)
   Performs the action at some time after the specified date, at the specified frequency, using minimum tolerance possible for this Scheduler.
-- [func schedule(after: Self.SchedulerTimeType, interval: Self.SchedulerTimeType.Stride, tolerance: Self.SchedulerTimeType.Stride, options: Self.SchedulerOptions?, () -> Void) -> any Cancellable](scheduler/schedule(after:interval:tolerance:options:_:).md)
+- [func schedule(after: Self.SchedulerTimeType, interval: Self.SchedulerTimeType.Stride, tolerance: Self.SchedulerTimeType.Stride, options: Self.SchedulerOptions?, () -> Void) -> any Cancellable](./schedule%28after,interval,tolerance,options,_%29.md)
   Performs the action at some time after the specified date, at the specified frequency, optionally taking into account tolerance if possible.
-- [func schedule(after: Self.SchedulerTimeType, tolerance: Self.SchedulerTimeType.Stride, () -> Void)](scheduler/schedule(after:tolerance:_:).md)
+- [func schedule(after: Self.SchedulerTimeType, tolerance: Self.SchedulerTimeType.Stride, () -> Void)](./schedule%28after,tolerance,_%29.md)
   Performs the action at some time after the specified date.
-- [func schedule(after: Self.SchedulerTimeType, tolerance: Self.SchedulerTimeType.Stride, options: Self.SchedulerOptions?, () -> Void)](scheduler/schedule(after:tolerance:options:_:).md)
+- [func schedule(after: Self.SchedulerTimeType, tolerance: Self.SchedulerTimeType.Stride, options: Self.SchedulerOptions?, () -> Void)](./schedule%28after,tolerance,options,_%29.md)
   Performs the action at some time after the specified date.
-- [func schedule(options: Self.SchedulerOptions?, () -> Void)](scheduler/schedule(options:_:).md)
+- [func schedule(options: Self.SchedulerOptions?, () -> Void)](./schedule%28options,_%29.md)
   Performs the action at the next possible opportunity.
 
 

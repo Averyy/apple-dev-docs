@@ -1,7 +1,8 @@
 # options
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The options to use for comparison.
 

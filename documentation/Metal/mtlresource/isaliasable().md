@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 A Boolean value that indicates whether future heap resource allocations may alias against the resource’s memory.
@@ -20,17 +21,22 @@ A Boolean value that indicates whether future heap resource allocations may alia
 func isAliasable() -> Bool
 ```
 
+```objc
+- (BOOL) isAliasable;
+```
+
 #### Return Value
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). The value is [`true`](https://developer.apple.com/documentation/swift/true) only if the [`makeAliasable()`](mtlresource/makealiasable().md) method was previously called on this resource.
+The default value is [`false`](../../Swift/false.md). The value is [`true`](../../Swift/true.md) only if the [`makeAliasable()`](./makealiasable%28%29.md) method was previously called on this resource.
 
 ## See Also
 
-- [var heapOffset: Int](mtlresource/heapoffset.md)
+### Managing heap resources
+- [var heapOffset: Int](./heapoffset.md)
   The distance, in bytes, from the beginning of the heap to the first byte of the resource, if you allocated the resource on a heap.
-- [var heap: (any MTLHeap)?](mtlresource/heap.md)
+- [var heap: (any MTLHeap)?](./heap.md)
   The heap on which the resource is allocated, if any.
-- [func makeAliasable()](mtlresource/makealiasable.md)
+- [func makeAliasable()](./makealiasable%28%29.md)
   Allows future heap resource allocations to alias against the resource’s memory, reusing it.
 
 

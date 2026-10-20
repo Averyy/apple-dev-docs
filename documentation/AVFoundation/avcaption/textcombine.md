@@ -1,7 +1,8 @@
 # AVCaption.TextCombine
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The caption’s supported rendering policy options.
 
@@ -17,6 +18,10 @@ The caption’s supported rendering policy options.
 enum TextCombine
 ```
 
+```c
+enum AVCaptionTextCombine : NSInteger;
+```
+
 #### Overview
 
 Text combine is a special rendering policy that combines multiple characters into one unit and presents it in upright position in a vertical text flow. This presentation achieves a horizontal-in-vertical layout (or Tate-Chu-Yoko layout), which lets the caption render a horizontal text string in vertical text.
@@ -24,38 +29,39 @@ Text combine is a special rendering policy that combines multiple characters int
 ## Topics
 
 ### Text combine options
-- [AVCaption.TextCombine.all](avcaption/textcombine/all.md)
+- [AVCaption.TextCombine.all](./textcombine/all.md)
   An option that combines all of the characters.
-- [AVCaption.TextCombine.none](avcaption/textcombine/none.md)
+- [AVCaption.TextCombine.none](./textcombine/none.md)
   An option that doesn’t combine text upright.
-- [AVCaption.TextCombine.oneDigit](avcaption/textcombine/onedigit.md)
+- [AVCaption.TextCombine.oneDigit](./textcombine/onedigit.md)
   An option that makes one digit upright.
-- [AVCaption.TextCombine.twoDigits](avcaption/textcombine/twodigits.md)
+- [AVCaption.TextCombine.twoDigits](./textcombine/twodigits.md)
   An option that combines two consecutive digits.
-- [AVCaption.TextCombine.threeDigits](avcaption/textcombine/threedigits.md)
+- [AVCaption.TextCombine.threeDigits](./textcombine/threedigits.md)
   An option that combines three consecutive digits.
-- [AVCaption.TextCombine.fourDigits](avcaption/textcombine/fourdigits.md)
+- [AVCaption.TextCombine.fourDigits](./textcombine/fourdigits.md)
   An option that combines four consecutive digits.
 ### Initializers
-- [init?(rawValue: Int)](avcaption/textcombine/init(rawvalue:).md)
+- [init?(rawValue: Int)](./textcombine/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func ruby(at: String.Index) -> (AVCaption.Ruby?, Range<String.Index>)](avcaption/ruby(at:).md)
+### Accessing advanced typography
+- [func ruby(at: String.Index) -> (AVCaption.Ruby?, Range<String.Index>)](./ruby%28at%29.md)
   Returns the ruby text at the index position.
-- [AVCaption.Ruby](avcaption/ruby.md)
+- [AVCaption.Ruby](./ruby.md)
   An object that presents ruby characters.
-- [func textCombine(at: String.Index) -> (AVCaption.TextCombine, Range<String.Index>)](avcaption/textcombine(at:).md)
+- [func textCombine(at: String.Index) -> (AVCaption.TextCombine, Range<String.Index>)](./textcombine%28at%29.md)
   Returns the text combine at the index position.
 
 

@@ -1,7 +1,8 @@
 # userGesturePerformed(in:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Should be called by the app when a user gesture is performed in a specific tab.
 
@@ -18,11 +19,15 @@ Should be called by the app when a user gesture is performed in a specific tab.
 func userGesturePerformed(in tab: any WKWebExtensionTab)
 ```
 
+```objc
+- (void) userGesturePerformedInTab:(id<WKWebExtensionTab>) tab;
+```
+
 #### Discussion
 
 When a user gesture is performed in a tab, this method should be called to update the extension context.
 
-This enables the extension to be aware of the user gesture, potentially granting it access to features that require user interaction, such as `activeTab`. Not required if using [`performAction(for:)`](wkwebextensioncontext/performaction(for:).md).
+This enables the extension to be aware of the user gesture, potentially granting it access to features that require user interaction, such as `activeTab`. Not required if using [`performAction(for:)`](./performaction%28for%29.md).
 
 ## Parameters
 
@@ -30,7 +35,8 @@ This enables the extension to be aware of the user gesture, potentially granting
 
 ## See Also
 
-- [func hasActiveUserGesture(in: any WKWebExtensionTab) -> Bool](wkwebextensioncontext/hasactiveusergesture(in:).md)
+### Related Documentation
+- [func hasActiveUserGesture(in: any WKWebExtensionTab) -> Bool](./hasactiveusergesture%28in%29.md)
   Indicates if a user gesture is currently active in the specified tab.
 
 

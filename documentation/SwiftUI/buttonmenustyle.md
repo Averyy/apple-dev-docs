@@ -1,7 +1,8 @@
 # ButtonMenuStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A menu style that displays a button that toggles the display of the menu’s contents when pressed.
 
@@ -22,22 +23,23 @@ struct ButtonMenuStyle
 
 #### Overview
 
-Use [`button`](menustyle/button.md) to construct this style.
+Use [`button`](./menustyle/button.md) to construct this style.
 
 ## Topics
 
 ### Creating the menu style
-- [init()](buttonmenustyle/init.md)
+- [init()](./buttonmenustyle/init%28%29.md)
   Creates a button menu style.
 
 ## Relationships
 
 ### Conforms To
-- [MenuStyle](menustyle.md)
+- [MenuStyle](./menustyle.md)
 
 ## See Also
 
-- [struct DefaultMenuStyle](defaultmenustyle.md)
+### Supporting types
+- [struct DefaultMenuStyle](./defaultmenustyle.md)
   The default menu style, based on the menu’s context.
 
 

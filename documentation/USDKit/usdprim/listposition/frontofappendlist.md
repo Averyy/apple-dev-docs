@@ -1,7 +1,8 @@
 # USDPrim.ListPosition.frontOfAppendList
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Insert at the front of the append list.
 

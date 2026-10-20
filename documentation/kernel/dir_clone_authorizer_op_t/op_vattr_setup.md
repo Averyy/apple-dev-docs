@@ -1,14 +1,15 @@
 # OP_VATTR_SETUP
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12.4+
 
 ## Declaration
 
-```swift
+```c
 OP_VATTR_SETUP = 1
 ```
 

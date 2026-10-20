@@ -7,14 +7,14 @@ Creates and initializes an IOLittleMemoryCursor in one operation.
 
 ## Declaration
 
-```swift
+```c
 static IOLittleMemoryCursor * withSpecification(
  IOPhysicalLength maxSegmentSize, 
  IOPhysicalLength maxTransferSize, 
  IOPhysicalLength alignment = 1);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns a new memory cursor if successfully created and initialized, 0 otherwise.
 
@@ -30,11 +30,12 @@ Factory function to create and initialize an IOLittleMemoryCursor in one operati
 
 ## See Also
 
-- [getPhysicalSegments](iolittlememorycursor/1812505-getphysicalsegments.md)
+### Miscellaneous
+- [getPhysicalSegments](./api-1812505-getphysicalsegments.md)
   Generates a little endian physical scatter/gather list given a memory descriptor.
-- [initWithSpecification](iolittlememorycursor/1812512-initwithspecification.md)
+- [initWithSpecification](./api-1812512-initwithspecification.md)
   Primary initializer for the IOLittleMemoryCursor class.
-- [outputSegment](iolittlememorycursor/1812519-outputsegment.md)
+- [outputSegment](./api-1812519-outputsegment.md)
   Outputs the given segment into the output segments array in little endian byte order.
 
 

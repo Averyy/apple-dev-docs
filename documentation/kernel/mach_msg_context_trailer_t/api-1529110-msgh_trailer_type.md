@@ -1,14 +1,15 @@
 # msgh_trailer_type
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 mach_msg_trailer_type_t msgh_trailer_type;
 ```
 

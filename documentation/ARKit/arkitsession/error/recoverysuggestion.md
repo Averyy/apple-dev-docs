@@ -1,7 +1,8 @@
 # recoverySuggestion
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized message that describes how someone might recover from the error.
 
@@ -17,7 +18,8 @@ let recoverySuggestion: String?
 
 ## See Also
 
-- [let failureReason: String?](arkitsession/error/failurereason.md)
+### Providing recovery suggestions
+- [let failureReason: String?](./failurereason.md)
   A localized message that describes why the error occurred.
 
 

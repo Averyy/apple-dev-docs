@@ -1,7 +1,8 @@
 # ILMessageFilterSubAction.promotionalOthers
 
 **Framework**: SMS and Call Reporting  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Prevents the system from showing the message normally, filtered as an Others message.
 
@@ -17,11 +18,16 @@ Prevents the system from showing the message normally, filtered as an Others mes
 case promotionalOthers
 ```
 
+```c
+ILMessageFilterSubActionPromotionalOthers
+```
+
 ## See Also
 
-- [ILMessageFilterSubAction.promotionalOffers](ilmessagefiltersubaction/promotionaloffers.md)
+### Promotional Subactions
+- [ILMessageFilterSubAction.promotionalOffers](./promotionaloffers.md)
   Prevents the system from showing the message normally, filtered as an Offers message.
-- [ILMessageFilterSubAction.promotionalCoupons](ilmessagefiltersubaction/promotionalcoupons.md)
+- [ILMessageFilterSubAction.promotionalCoupons](./promotionalcoupons.md)
   Prevents the system from showing the message normally, filtered as an Coupons message.
 
 

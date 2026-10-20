@@ -1,7 +1,8 @@
 # defaultResolverSpecification
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -17,6 +18,8 @@
 ```swift
 static var defaultResolverSpecification: Wrapped.UnwrappedType.Specification { get }
 ```
+
+Available when `Wrapped` conforms to `_IntentValue`.
 
 
 ---

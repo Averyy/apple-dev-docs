@@ -1,7 +1,8 @@
 # BetaAppLocalizationsResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that list localized TestFlight app metadata entries.
 
@@ -10,7 +11,7 @@ The response body for endpoints that list localized TestFlight app metadata entr
 
 ## Declaration
 
-```swift
+```
 object BetaAppLocalizationsResponse
 ```
 
@@ -23,19 +24,21 @@ object BetaAppLocalizationsResponse
 
 ## See Also
 
-- [List beta app localizations](get-v1-betaapplocalizations.md)
+### Related Documentation
+- [List beta app localizations](./get-v1-betaapplocalizations.md)
   Find and list beta app localizations for all apps and locales.
-- [object BetaAppLocalization](betaapplocalization.md)
+### Objects
+- [object BetaAppLocalization](./betaapplocalization.md)
   The localized feedback URL, marketing URL, and privacy policy URL shown to TestFlight testers for a specific language.
-- [object BetaAppLocalizationCreateRequest](betaapplocalizationcreaterequest.md)
+- [object BetaAppLocalizationCreateRequest](./betaapplocalizationcreaterequest.md)
   The request body you use to create a Beta App Localization.
-- [object BetaAppLocalizationResponse](betaapplocalizationresponse.md)
+- [object BetaAppLocalizationResponse](./betaapplocalizationresponse.md)
   The response body for endpoints that create, read, or modify localized TestFlight app metadata.
-- [object BetaAppLocalizationsWithoutIncludesResponse](betaapplocalizationswithoutincludesresponse.md)
+- [object BetaAppLocalizationsWithoutIncludesResponse](./betaapplocalizationswithoutincludesresponse.md)
   A response containing a list of TestFlight app localizations, without related resources.
-- [object BetaAppLocalizationUpdateRequest](betaapplocalizationupdaterequest.md)
+- [object BetaAppLocalizationUpdateRequest](./betaapplocalizationupdaterequest.md)
   The request body you use to update a Beta App Localization.
-- [object BetaAppLocalizationAppLinkageResponse](betaapplocalizationapplinkageresponse.md)
+- [object BetaAppLocalizationAppLinkageResponse](./betaapplocalizationapplinkageresponse.md)
 
 
 ---

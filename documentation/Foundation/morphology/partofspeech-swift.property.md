@@ -1,7 +1,8 @@
 # partOfSpeech
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The grammatical part of speech used for inflecting strings with this morphology.
 
@@ -22,17 +23,18 @@ var partOfSpeech: Morphology.PartOfSpeech?
 
 ## See Also
 
-- [var isUnspecified: Bool](morphology/isunspecified.md)
+### Accessing Grammatical Properties
+- [var isUnspecified: Bool](./isunspecified.md)
   A Boolean value that indicates whether this instance specifies no particular grammar.
-- [var grammaticalGender: Morphology.GrammaticalGender?](morphology/grammaticalgender-swift.property.md)
+- [var grammaticalGender: Morphology.GrammaticalGender?](./grammaticalgender-swift.property.md)
   The grammatical gender used for inflecting strings with this morphology.
-- [Morphology.GrammaticalGender](morphology/grammaticalgender-swift.enum.md)
+- [Morphology.GrammaticalGender](./grammaticalgender-swift.enum.md)
   A representation of grammatical gender, used for inflecting strings.
-- [var number: Morphology.GrammaticalNumber?](morphology/number.md)
+- [var number: Morphology.GrammaticalNumber?](./number.md)
   The grammatical number used for inflecting strings with this morphology.
-- [Morphology.GrammaticalNumber](morphology/grammaticalnumber.md)
+- [Morphology.GrammaticalNumber](./grammaticalnumber.md)
   A representation of grammatical number, used for inflecting strings.
-- [Morphology.PartOfSpeech](morphology/partofspeech-swift.enum.md)
+- [Morphology.PartOfSpeech](./partofspeech-swift.enum.md)
   A representation of grammatical parts of speech, used for inflecting strings.
 
 

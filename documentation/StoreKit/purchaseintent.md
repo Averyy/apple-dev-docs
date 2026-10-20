@@ -1,7 +1,8 @@
 # PurchaseIntent
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An instance that emits purchase intents, which indicate that the customer initiated a purchase outside of your app, for your app to complete.
 
@@ -19,9 +20,9 @@ struct PurchaseIntent
 
 ## Mentions
 
-- [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
-- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
-- [Promoting Apple In-App Purchases](promoting-in-app-purchases.md)
+- [Supporting win-back offers in your app](./supporting-win-back-offers-in-your-app.md)
+- [Supporting promoted Apple In-App Purchases in your app](./supporting-promoted-in-app-purchases-in-your-app.md)
+- [Promoting Apple In-App Purchases](./promoting-in-app-purchases.md)
 
 #### Overview
 
@@ -30,13 +31,13 @@ Using `PurchaseIntent` is required in the following cases:
 - If you promote Apple In-App Purchases on the App Store
 - If you turn off the Streamlined Purchasing setting in App Store Connect and use win-back offers or contingent pricing
 
-You set up these offers and settings in App Store Connect. For more information, see [`Promote Apple In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/promote-in-app-purchases), [`Set up win-back offers`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-win-back-offers), and [`Manage Streamlined Purchasing`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/manage-streamlined-purchasing).
+You set up these offers and settings in App Store Connect. For more information, see [Promote Apple In-App Purchases](https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/promote-in-app-purchases), [Set up win-back offers](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-win-back-offers), and [Manage Streamlined Purchasing](https://developer.apple.com/help/app-store-connect/manage-subscriptions/manage-streamlined-purchasing).
 
-> ❗ **Important**:  To enable promoted Apple In-App Purchases, your app must use either [`PurchaseIntent`](purchaseintent.md) (starting in iOS 16.4) or [`paymentQueue(_:shouldAddStorePayment:for:)`](skpaymenttransactionobserver/paymentqueue(_:shouldaddstorepayment:for:).md) (starting in iOS 11). Don’t use both at the same time. If necessary, use conditional compilation to identify the OS version the app is running in. For more information, see [`Running code on a specific platform or OS version`](https://developer.apple.com/documentation/xcode/running-code-on-a-specific-version).
+> ❗ **Important**:  To enable promoted Apple In-App Purchases, your app must use either [`PurchaseIntent`](./purchaseintent.md) (starting in iOS 16.4) or [`paymentQueue(_:shouldAddStorePayment:for:)`](./skpaymenttransactionobserver/paymentqueue%28_,shouldaddstorepayment,for%29.md) (starting in iOS 11). Don’t use both at the same time. If necessary, use conditional compilation to identify the OS version the app is running in. For more information, see [Running code on a specific platform or OS version](../Xcode/running-code-on-a-specific-version.md).
 
-When a customer selects a promoted product on the App Store or a win-back offer outside of your app, it initiates a purchase that they complete in your app. If they don’t have your app installed, the system prompts them to download it. After the app downloads, the transaction continues in the app, which receives a purchase intent from the [`intents`](purchaseintent/intents.md) sequence.
+When a customer selects a promoted product on the App Store or a win-back offer outside of your app, it initiates a purchase that they complete in your app. If they don’t have your app installed, the system prompts them to download it. After the app downloads, the transaction continues in the app, which receives a purchase intent from the [`intents`](./purchaseintent/intents.md) sequence.
 
-The purchase intent identifies the [`product`](purchaseintent/product.md) the customer selected. To enable customers to complete the purchase, call [`purchase(options:)`](product/purchase(options:).md) on this product instance. The following example code receives the purchase intent, and calls a method to complete the purchase workflow:
+The purchase intent identifies the [`product`](./purchaseintent/product.md) the customer selected. To enable customers to complete the purchase, call [`purchase(options:)`](./product/purchase%28options%29.md) on this product instance. The following example code receives the purchase intent, and calls a method to complete the purchase workflow:
 
 ```swift
 func purchaseProduct(_ product: Product) async {
@@ -57,7 +58,7 @@ for await purchaseIntent in PurchaseIntent.intents {
 
 ```
 
-For more information, see [`Supporting promoted Apple In-App Purchases in your app`](supporting-promoted-in-app-purchases-in-your-app.md) and [`Supporting win-back offers in your app`](supporting-win-back-offers-in-your-app.md).
+For more information, see [Supporting promoted Apple In-App Purchases in your app](./supporting-promoted-in-app-purchases-in-your-app.md) and [Supporting win-back offers in your app](./supporting-win-back-offers-in-your-app.md).
 
 In Mac apps built with Mac Catalyst, this instance doesn’t emit purchase intents for promoted Apple In-App Purchases because the Mac App Store doesn’t support this feature.
 
@@ -66,36 +67,37 @@ In Mac apps built with Mac Catalyst, this instance doesn’t emit purchase inten
 ## Topics
 
 ### Identifying the product
-- [var id: Product.ID](purchaseintent/id.md)
+- [var id: Product.ID](./purchaseintent/id.md)
   The product identifier of the Apple In-App Purchase that the customer selects to purchase outside of the app.
-- [let product: Product](purchaseintent/product.md)
+- [let product: Product](./purchaseintent/product.md)
   The product information of the Apple In-App Purchase the customer selects to purchase outside of the app.
 ### Getting purchase intents
-- [static var intents: PurchaseIntent.PurchaseIntents](purchaseintent/intents.md)
+- [static var intents: PurchaseIntent.PurchaseIntents](./purchaseintent/intents.md)
   The asynchronous sequence that emits a purchase intent when customers initiate a purchase outside of the app.
-- [PurchaseIntent.PurchaseIntents](purchaseintent/purchaseintents.md)
+- [PurchaseIntent.PurchaseIntents](./purchaseintent/purchaseintents.md)
   An asynchronous sequence of purchase intents for purchases that customers initiate outside of the app.
 ### Identifying the offer
-- [let offer: Product.SubscriptionOffer?](purchaseintent/offer.md)
+- [let offer: Product.SubscriptionOffer?](./purchaseintent/offer.md)
   The subscription offer that the customer redeems outside of your app.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
+### Promoted Apple In-App Purchases
+- [Supporting promoted Apple In-App Purchases in your app](./supporting-promoted-in-app-purchases-in-your-app.md)
   Display promoted Apple In-App Purchases on your product page and handle purchases that users initiate on the App Store.
-- [Product.PromotionInfo](product/promotioninfo.md)
+- [Product.PromotionInfo](./product/promotioninfo.md)
   Information about a promoted Apple In-App Purchase that customizes its order and visibility on the device.
-- [Testing promoted Apple In-App Purchases](testing-promoted-in-app-purchases.md)
+- [Testing promoted Apple In-App Purchases](./testing-promoted-in-app-purchases.md)
   Test your Apple In-App Purchases before making your app available in the App Store.
 
 

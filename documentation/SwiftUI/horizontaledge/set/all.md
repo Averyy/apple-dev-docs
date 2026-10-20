@@ -1,7 +1,8 @@
 # all
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A set containing the leading and trailing horizontal edges.
 
@@ -22,9 +23,10 @@ static let all: HorizontalEdge.Set
 
 ## See Also
 
-- [static let leading: HorizontalEdge.Set](horizontaledge/set/leading.md)
+### Getting edge sets
+- [static let leading: HorizontalEdge.Set](./leading.md)
   A set containing only the leading horizontal edge.
-- [static let trailing: HorizontalEdge.Set](horizontaledge/set/trailing.md)
+- [static let trailing: HorizontalEdge.Set](./trailing.md)
   A set containing only the trailing horizontal edge.
 
 

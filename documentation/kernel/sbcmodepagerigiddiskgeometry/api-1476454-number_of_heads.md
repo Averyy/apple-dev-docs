@@ -1,14 +1,15 @@
 # NUMBER_OF_HEADS
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 UInt8 NUMBER_OF_HEADS;
 ```
 

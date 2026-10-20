@@ -1,7 +1,8 @@
 # simulationClock
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The clock that tracks the pace of this simulation.
 
@@ -20,11 +21,12 @@ var simulationClock: CMClockOrTimebase { get }
 
 Syncing with this clock ensures synchronization with the simulation. For instance, an animation can be played using this clock to ensure that the motion of said animation is synchronized with the simulation.
 
-This clock generally tries to match [`targetClock`](clothsimulationcomponent/targetclock.md), but the two can deviate at times. This is because the simulation may not be able to perfectly follow the target clock due to [`maximumStepsPerUpdate`](clothsimulationcomponent/maximumstepsperupdate-swift.property.md).
+This clock generally tries to match [`targetClock`](./targetclock.md), but the two can deviate at times. This is because the simulation may not be able to perfectly follow the target clock due to [`maximumStepsPerUpdate`](./maximumstepsperupdate-swift.property.md).
 
 ## See Also
 
-- [var targetClock: CMClockOrTimebase](clothsimulationcomponent/targetclock.md)
+### Synchronizing the clock
+- [var targetClock: CMClockOrTimebase](./targetclock.md)
   The clock that this simulation attempts to follow.
 
 

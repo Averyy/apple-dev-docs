@@ -1,7 +1,8 @@
 # AsyncStream.Continuation.Termination.finished
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The stream finished as a result of calling the continuation’s `finish` method.
 
@@ -22,7 +23,8 @@ case finished
 
 ## See Also
 
-- [AsyncStream.Continuation.Termination.cancelled](asyncstream/continuation/termination/cancelled.md)
+### Termination States
+- [AsyncStream.Continuation.Termination.cancelled](./cancelled.md)
   The stream finished as a result of cancellation.
 
 

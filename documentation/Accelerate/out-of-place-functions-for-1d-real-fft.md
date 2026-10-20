@@ -1,6 +1,7 @@
 # Out-of-Place Functions for 1D Real FFT
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Perform fast Fourier transforms out of place on 1D real data.
 
@@ -72,7 +73,8 @@ The temporary buffer versions perform the same operation but use a temporary buf
 
 ## See Also
 
-- [In-Place Functions for 1D Real FFT](in-place-functions-for-1d-real-fft.md)
+### Functions for 1D Real FFT
+- [In-Place Functions for 1D Real FFT](./in-place-functions-for-1d-real-fft.md)
   Perform fast Fourier transforms in place on 1D real data.
 
 

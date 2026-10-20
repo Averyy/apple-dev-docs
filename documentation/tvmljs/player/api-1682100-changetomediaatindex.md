@@ -1,7 +1,8 @@
 # changeToMediaAtIndex
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Immediately begins playing the media item at the specified index in the playlist.
 
@@ -10,7 +11,7 @@ Immediately begins playing the media item at the specified index in the playlist
 
 ## Declaration
 
-```swift
+```
 void changeToMediaAtIndex(
     in int index
 );
@@ -22,21 +23,22 @@ void changeToMediaAtIndex(
 
 ## See Also
 
-- [pause](player/1627417-pause.md)
+### Controlling Playback
+- [pause](./api-1627417-pause.md)
   Pauses the currently playing media item.
-- [next](player/1682103-next.md)
+- [next](./api-1682103-next.md)
   Immediately begins playing the next media item in the playlist.
-- [play](player/1627432-play.md)
+- [play](./api-1627432-play.md)
   Plays the currently selected media item.
-- [playbackState](player/1627387-playbackstate.md)
+- [playbackState](./api-1627387-playbackstate.md)
   The current state of the player.
-- [playbackRate](player/1682104-playbackrate.md)
+- [playbackRate](./api-1682104-playbackrate.md)
   The playback speed.
-- [previous](player/1682106-previous.md)
+- [previous](./api-1682106-previous.md)
   Immediately begins playing the previous media item in the playlist.
-- [seekToTime](player/1627368-seektotime.md)
+- [seekToTime](./api-1627368-seektotime.md)
   Sets the playback point to a specified time.
-- [stop](player/1627406-stop.md)
+- [stop](./api-1627406-stop.md)
   Stops the currently playing item and dismisses the player UI.
 
 

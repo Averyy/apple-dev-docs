@@ -1,7 +1,8 @@
 # CKDatabase.Scope
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that represent the scope of a database.
 
@@ -20,31 +21,36 @@ Constants that represent the scope of a database.
 enum Scope
 ```
 
+```c
+enum CKDatabaseScope : NSInteger;
+```
+
 ## Topics
 
 ### Database Scopes
-- [CKDatabase.Scope.public](ckdatabase/scope/public.md)
+- [CKDatabase.Scope.public](./scope/public.md)
   The public database.
-- [CKDatabase.Scope.private](ckdatabase/scope/private.md)
+- [CKDatabase.Scope.private](./scope/private.md)
   The private database.
-- [CKDatabase.Scope.shared](ckdatabase/scope/shared.md)
+- [CKDatabase.Scope.shared](./scope/shared.md)
   The shared database.
 ### Initializers
-- [init?(rawValue: Int)](ckdatabase/scope/init(rawvalue:).md)
+- [init?(rawValue: Int)](./scope/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var databaseScope: CKDatabase.Scope](ckdatabase/databasescope.md)
+### Getting the Database Type
+- [var databaseScope: CKDatabase.Scope](./databasescope.md)
   The type of database.
 
 

@@ -1,14 +1,15 @@
 # TransmissionPower
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 typedef SInt8 TransmissionPower;
 ```
 

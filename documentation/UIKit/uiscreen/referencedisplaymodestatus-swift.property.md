@@ -1,7 +1,8 @@
 # referenceDisplayModeStatus
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status of the screen’s reference display mode.
 
@@ -17,17 +18,22 @@ The status of the screen’s reference display mode.
 var referenceDisplayModeStatus: UIScreen.ReferenceDisplayModeStatus { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIScreenReferenceDisplayModeStatus referenceDisplayModeStatus;
+```
+
 #### Discussion
 
 > **Note**:  *Reference display mode* refers to Pro Display Mode on the iPad Pro 12.9-inch (5th generation or later).
 
 ## See Also
 
-- [UIScreen.ReferenceDisplayModeStatus](uiscreen/referencedisplaymodestatus-swift.enum.md)
+### Getting the reference display mode status
+- [UIScreen.ReferenceDisplayModeStatus](./referencedisplaymodestatus-swift.enum.md)
   Describes a screen’s reference display mode status.
-- [var currentEDRHeadroom: CGFloat](uiscreen/currentedrheadroom.md)
+- [var currentEDRHeadroom: CGFloat](./currentedrheadroom.md)
   The screen’s current headroom when displaying extended dynamic range content.
-- [var potentialEDRHeadroom: CGFloat](uiscreen/potentialedrheadroom.md)
+- [var potentialEDRHeadroom: CGFloat](./potentialedrheadroom.md)
   The screen’s maximum headroom when displaying extended dynamic range content.
 
 

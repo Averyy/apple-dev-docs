@@ -1,7 +1,8 @@
 # GameCenterDetailBlockedPlayersLinkagesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that list the blocked player IDs related to a Game Center detail.
 
@@ -10,14 +11,14 @@ The response body for endpoints that list the blocked player IDs related to a Ga
 
 ## Declaration
 
-```swift
+```
 object GameCenterDetailBlockedPlayersLinkagesResponse
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterDetailBlockedPlayersLinkagesResponse.Data](gamecenterdetailblockedplayerslinkagesresponse/data-data.dictionary.md)
+- [object GameCenterDetailBlockedPlayersLinkagesResponse.Data](./gamecenterdetailblockedplayerslinkagesresponse/data-data.dictionary.md)
   The resource identifier for a blocked player related to a Game Center detail.
 
 ## Properties
@@ -28,13 +29,14 @@ object GameCenterDetailBlockedPlayersLinkagesResponse
 
 ## See Also
 
-- [object GameCenterDetailPlayer](gamecenterdetailplayer.md)
+### Objects
+- [object GameCenterDetailPlayer](./gamecenterdetailplayer.md)
   A Game Center player tied to a single game, whom you can block from playing that game.
-- [object GameCenterDetailPlayerResponse](gamecenterdetailplayerresponse.md)
+- [object GameCenterDetailPlayerResponse](./gamecenterdetailplayerresponse.md)
   The response body for endpoints that modify a Game Center player in an app’s Game Center configuration.
-- [object GameCenterDetailPlayerUpdateRequest](gamecenterdetailplayerupdaterequest.md)
+- [object GameCenterDetailPlayerUpdateRequest](./gamecenterdetailplayerupdaterequest.md)
   The request body you use to update a Game Center detail player.
-- [object GameCenterDetailPlayersResponse](gamecenterdetailplayersresponse.md)
+- [object GameCenterDetailPlayersResponse](./gamecenterdetailplayersresponse.md)
   The response body for endpoints that list the blocked players for a game.
 
 

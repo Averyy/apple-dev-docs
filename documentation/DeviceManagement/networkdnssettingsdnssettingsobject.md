@@ -1,7 +1,8 @@
 # NetworkDNSSettingsDNSSettingsObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary that defines a configuration for an encrypted DNS server.
 
@@ -14,23 +15,30 @@ A dictionary that defines a configuration for an encrypted DNS server.
 
 ## Declaration
 
-```swift
+```
 object NetworkDNSSettingsDNSSettingsObject
 ```
 
 ## Properties
 
 - `AllowFailover` (boolean): If `true`, the device allows failover to the default system DNS resolver.
+
+  **Default**: `false`
 - `DNSProtocol` (string) *(required)*: The encrypted transport protocol used to communicate with the DNS server.
+
+  **Allowed Values**: `HTTPS`, `TLS`
 - `IdentityAssetReference` (string): Specifies the identifier of an asset declaration containing an identity that the system uses to authenticate the user to the DNS resolver.
 - `ServerAddresses` ([string]): An unordered list of DNS server IP address strings. These IP addresses can be a mixture of IPv4 and IPv6 addresses.
 - `ServerName` (string): The hostname of a DNS-over-TLS server used to validate the server certificate, as defined in RFC 7858. If no `ServerAddresses` are provided, the system uses the hostname to determine the server addresses. This key must be present only if the DNSProtocol is `TLS`.
 - `ServerURL` (string): The URI template of a DNS-over-HTTPS server, as defined in RFC 8484. This URL needs to use the `https://` scheme, and the system uses the hostname or address in the URL to validate the server certificate. If no `ServerAddresses` are provided, the system uses the hostname or address in the URL to determine the server addresses. Required if `DNSProtocol` is `HTTPS`.
-- `SupplementalMatchDomains` ([string]): A list of domain strings used to determine which DNS queries use the DNS server. If not set, all domains use the DNS server. The system supports a single wildcard (`\*`) prefix, but it’s not required. For example, both `\*.example.com` and `example.com` match against `mydomain.example.com` and `your.domain.example.com`, but don’t match against `mydomain-example.com`.
+- `SupplementalMatchDomains` ([string]): A list of domain strings used to determine which DNS queries use the DNS server. If not set, all domains use the DNS server.
+
+  The system supports a single wildcard (`\*`) prefix, but it’s not required. For example, both `\*.example.com` and `example.com` match against `mydomain.example.com` and `your.domain.example.com`, but don’t match against `mydomain-example.com`.
 
 ## See Also
 
-- [object NetworkDNSSettingsOnDemandRulesElementObject](networkdnssettingsondemandruleselementobject.md)
+### Objects
+- [object NetworkDNSSettingsOnDemandRulesElementObject](./networkdnssettingsondemandruleselementobject.md)
   An array of rules that define the DNS settings. If not set, the system always applies the DNS settings. These rules are identical to the `OnDemandRules` array in VPN payloads.
 
 

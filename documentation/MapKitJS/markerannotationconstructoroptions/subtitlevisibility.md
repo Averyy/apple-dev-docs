@@ -1,7 +1,8 @@
 # subtitleVisibility
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A value that determines the behavior of the subtitle’s visibility.
 
@@ -10,29 +11,30 @@ A value that determines the behavior of the subtitle’s visibility.
 
 ## Declaration
 
-```swift
+```
 subtitleVisibility?: FeatureVisibility;
 ```
 
 #### Discussion
 
-The subtitle visibility controls the subtitle that renders below the balloon part of the marker. The default value is [`Adaptive`](featurevisibility/adaptive.md).
+The subtitle visibility controls the subtitle that renders below the balloon part of the marker. The default value is [`Adaptive`](../featurevisibility/adaptive.md).
 
 For adaptive visibility, the subtitle is always hidden in the normal state, by default. In the selected state, the subtitle follows the same rules as the title.
 
 ## See Also
 
-- [color](markerannotationconstructoroptions/color.md)
+### Setting marker annotation properties
+- [color](./color.md)
   The background color of the balloon.
-- [glyphColor](markerannotationconstructoroptions/glyphcolor.md)
+- [glyphColor](./glyphcolor.md)
   The fill color of the glyph.
-- [glyphText](markerannotationconstructoroptions/glyphtext.md)
+- [glyphText](./glyphtext.md)
   The text to display in the marker balloon.
-- [glyphImage](markerannotationconstructoroptions/glyphimage.md)
+- [glyphImage](./glyphimage.md)
   The image to display in the marker balloon.
-- [selectedGlyphImage](markerannotationconstructoroptions/selectedglyphimage.md)
+- [selectedGlyphImage](./selectedglyphimage.md)
   The image to display in the balloon when the user selects the marker.
-- [titleVisibility](markerannotationconstructoroptions/titlevisibility.md)
+- [titleVisibility](./titlevisibility.md)
   A value that determines the behavior of the title’s visibility.
 
 

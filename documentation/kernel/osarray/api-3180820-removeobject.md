@@ -1,7 +1,8 @@
 # removeObject
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Removes a current member of the array.
 
@@ -11,7 +12,15 @@ Removes a current member of the array.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+void removeObject(uint32_t index);
+```
+
+*macOS*
+
+```cpp
 virtual void removeObject(unsigned int index);
 ```
 
@@ -25,19 +34,20 @@ Removes a current member of the array, shifting down all following members. The 
 
 ## See Also
 
-- [- getObject](osarray/3180816-getobject.md)
+### Accessing Elements
+- [- getObject](./api-3180816-getobject.md)
   Returns a member of the array.
-- [- getLastObject](osarray/3180814-getlastobject.md)
+- [- getLastObject](./api-3180814-getlastobject.md)
   Returns the last member of the array.
-- [- getNextIndexOfObject](osarray/3180815-getnextindexofobject.md)
+- [- getNextIndexOfObject](./api-3180815-getnextindexofobject.md)
   Searches the array for an object.
-- [- setObject](osarray/3180822-setobject.md)
+- [- setObject](./api-3180822-setobject.md)
   Appends an object as the last member of the array.
-- [- setObject](osarray/3433840-setobject.md)
+- [- setObject](./api-3433840-setobject.md)
   Sets an object as the member of the array at a given index.
-- [- iterateObjects](../driverkit/osarray/iterateobjects.md)
+- [- iterateObjects](../../DriverKit/osarray/iterateobjects.md)
   Iterates the array calling a callback block for each member.
-- [- replaceObject](osarray/3180821-replaceobject.md)
+- [- replaceObject](./api-3180821-replaceobject.md)
   Removes a current member of the array and replaces it with another object.
 
 

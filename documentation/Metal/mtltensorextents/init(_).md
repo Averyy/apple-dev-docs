@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tensor with extents from an array of dimension values.
 

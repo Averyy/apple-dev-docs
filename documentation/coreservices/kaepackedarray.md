@@ -1,7 +1,8 @@
 # kAEPackedArray
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Array items consist of data of the same size and same type, and are packed without regard for word boundaries.
 

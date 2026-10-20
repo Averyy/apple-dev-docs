@@ -1,7 +1,8 @@
 # P384.KeyAgreement.PublicKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A P-384 public key used for key agreement.
 
@@ -23,48 +24,49 @@ struct PublicKey
 ## Topics
 
 ### Creating a public key
-- [init<D>(rawRepresentation: D) throws](p384/keyagreement/publickey/init(rawrepresentation:).md)
+- [init<D>(rawRepresentation: D) throws](./publickey/init%28rawrepresentation%29.md)
   Creates a P-384 public key for key agreement from a collection of bytes.
-- [init<Bytes>(compactRepresentation: Bytes) throws](p384/keyagreement/publickey/init(compactrepresentation:).md)
+- [init<Bytes>(compactRepresentation: Bytes) throws](./publickey/init%28compactrepresentation%29.md)
   Creates a P-384 public key for key agreement from a compact representation of the key.
-- [init<Bytes>(derRepresentation: Bytes) throws](p384/keyagreement/publickey/init(derrepresentation:).md)
+- [init<Bytes>(derRepresentation: Bytes) throws](./publickey/init%28derrepresentation%29.md)
   Creates a P-384 public key for key agreement from a Distinguished Encoding Rules (DER) encoded representation.
-- [init(pemRepresentation: String) throws](p384/keyagreement/publickey/init(pemrepresentation:).md)
+- [init(pemRepresentation: String) throws](./publickey/init%28pemrepresentation%29.md)
   Creates a P-384 public key for key agreement from a Privacy-Enhanced Mail (PEM) representation.
-- [init<Bytes>(x963Representation: Bytes) throws](p384/keyagreement/publickey/init(x963representation:).md)
+- [init<Bytes>(x963Representation: Bytes) throws](./publickey/init%28x963representation%29.md)
   Creates a P-384 public key for key agreement from an ANSI x9.63 representation.
-- [init<Bytes>(compressedRepresentation: Bytes) throws](p384/keyagreement/publickey/init(compressedrepresentation:).md)
+- [init<Bytes>(compressedRepresentation: Bytes) throws](./publickey/init%28compressedrepresentation%29.md)
   Creates a P-384 public key for key agreement from a compressed representation of the key.
 ### Representing the key
-- [var rawRepresentation: Data](p384/keyagreement/publickey/rawrepresentation.md)
+- [var rawRepresentation: Data](./publickey/rawrepresentation.md)
   A full representation of the public key.
-- [var compactRepresentation: Data?](p384/keyagreement/publickey/compactrepresentation.md)
+- [var compactRepresentation: Data?](./publickey/compactrepresentation.md)
   A compact representation of the public key.
-- [var derRepresentation: Data](p384/keyagreement/publickey/derrepresentation.md)
+- [var derRepresentation: Data](./publickey/derrepresentation.md)
   A Distinguished Encoding Rules (DER) encoded representation of the public key.
-- [var pemRepresentation: String](p384/keyagreement/publickey/pemrepresentation.md)
+- [var pemRepresentation: String](./publickey/pemrepresentation.md)
   A Privacy-Enhanced Mail (PEM) representation of the public key.
-- [var x963Representation: Data](p384/keyagreement/publickey/x963representation.md)
+- [var x963Representation: Data](./publickey/x963representation.md)
   An ANSI x9.63 representation of the public key.
-- [var compressedRepresentation: Data](p384/keyagreement/publickey/compressedrepresentation.md)
+- [var compressedRepresentation: Data](./publickey/compressedrepresentation.md)
   A compressed representation of the public key.
 ### Default Implementations
-- [HPKEDiffieHellmanPublicKey Implementations](p384/keyagreement/publickey/hpkediffiehellmanpublickey-implementations.md)
-- [HPKEPublicKeySerialization Implementations](p384/keyagreement/publickey/hpkepublickeyserialization-implementations.md)
+- [HPKEDiffieHellmanPublicKey Implementations](./publickey/hpkediffiehellmanpublickey-implementations.md)
+- [HPKEPublicKeySerialization Implementations](./publickey/hpkepublickeyserialization-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [HPKEDiffieHellmanPublicKey](hpkediffiehellmanpublickey.md)
-- [HPKEPublicKeySerialization](hpkepublickeyserialization.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [HPKEDiffieHellmanPublicKey](../../hpkediffiehellmanpublickey.md)
+- [HPKEPublicKeySerialization](../../hpkepublickeyserialization.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [P384.KeyAgreement.PrivateKey](p384/keyagreement/privatekey.md)
+### Using keys
+- [P384.KeyAgreement.PrivateKey](./privatekey.md)
   A P-384 private key used for key agreement.
 
 

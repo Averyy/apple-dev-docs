@@ -1,7 +1,8 @@
 # beginMonitoring()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the system to start monitoring the download.
 
@@ -18,15 +19,16 @@ Informs the system to start monitoring the download.
 
 ## Mentions
 
-- [Downloading files in a web browser with an alternative browser engine](downloading-files-in-a-web-browser.md)
+- [Downloading files in a web browser with an alternative browser engine](../downloading-files-in-a-web-browser.md)
 
 #### Return Value
 
-If you called [`useDownloadsFolder(placeholderType:finalFileCreatedHandler:)`](bedownloadmonitor-9bwls/usedownloadsfolder(placeholdertype:finalfilecreatedhandler:).md), this method returns the placeholder location that the system creates to host the downloaded content; otherwise, it returns `nil`.
+If you called [`useDownloadsFolder(placeholderType:finalFileCreatedHandler:)`](./usedownloadsfolder%28placeholdertype,finalfilecreatedhandler%29.md), this method returns the placeholder location that the system creates to host the downloaded content; otherwise, it returns `nil`.
 
 ## See Also
 
-- [func resumeMonitoring(placeholderURL: URL) async throws](bedownloadmonitor-9bwls/resumemonitoring(placeholderurl:).md)
+### Reporting progress to the system
+- [func resumeMonitoring(placeholderURL: URL) async throws](./resumemonitoring%28placeholderurl%29.md)
   Informs the system that it needs to resume monitoring the download.
 
 

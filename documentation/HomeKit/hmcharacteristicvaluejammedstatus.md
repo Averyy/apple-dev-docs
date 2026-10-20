@@ -1,7 +1,8 @@
 # HMCharacteristicValueJammedStatus
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the jammed status.
 
@@ -19,25 +20,29 @@ Possible values for the jammed status.
 enum HMCharacteristicValueJammedStatus
 ```
 
+```c
+enum HMCharacteristicValueJammedStatus : NSInteger;
+```
+
 ## Topics
 
 ### Jammed Status
-- [HMCharacteristicValueJammedStatus.none](hmcharacteristicvaluejammedstatus/none.md)
+- [HMCharacteristicValueJammedStatus.none](./hmcharacteristicvaluejammedstatus/none.md)
   The accessory isn’t jammed.
-- [HMCharacteristicValueJammedStatus.jammed](hmcharacteristicvaluejammedstatus/jammed.md)
+- [HMCharacteristicValueJammedStatus.jammed](./hmcharacteristicvaluejammedstatus/jammed.md)
   The accessory is jammed and can’t move.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluejammedstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluejammedstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

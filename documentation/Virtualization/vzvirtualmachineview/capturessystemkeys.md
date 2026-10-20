@@ -1,7 +1,8 @@
 # capturesSystemKeys
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the system should send certain system keyboard shortcuts to the guest instead of the host.
 
@@ -14,15 +15,20 @@ A Boolean value that determines whether the system should send certain system ke
 var capturesSystemKeys: Bool { get set }
 ```
 
+```objc
+@property BOOL capturesSystemKeys;
+```
+
 #### Discussion
 
 Defaults to `false.`
 
 ## See Also
 
-- [var automaticallyReconfiguresDisplay: Bool](vzvirtualmachineview/automaticallyreconfiguresdisplay.md)
+### Configuring the VM
+- [var automaticallyReconfiguresDisplay: Bool](./automaticallyreconfiguresdisplay.md)
   A Boolean value that indicates whether the graphics display associated with this view automatically reconfigures with respect to view changes.
-- [var virtualMachine: VZVirtualMachine?](vzvirtualmachineview/virtualmachine.md)
+- [var virtualMachine: VZVirtualMachine?](./virtualmachine.md)
   The VM to display in the view.
 
 

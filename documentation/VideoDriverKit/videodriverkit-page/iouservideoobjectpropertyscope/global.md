@@ -1,7 +1,8 @@
 # Global
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The scope for properties that apply to the object as a whole.
 
@@ -10,7 +11,7 @@ The scope for properties that apply to the object as a whole.
 
 ## Declaration
 
-```swift
+```c
 Global
 ```
 
@@ -20,11 +21,12 @@ All objects have a global scope, and for most objects, it is their only scope.
 
 ## See Also
 
-- [Input](videodriverkit/iouservideoobjectpropertyscope/input.md)
+### Property scopes
+- [Input](./input.md)
   The scope for properties that apply to the input side of an object.
-- [Output](videodriverkit/iouservideoobjectpropertyscope/output.md)
+- [Output](./output.md)
   The scope for properties that apply to the output side of an object.
-- [PlayThrough](videodriverkit/iouservideoobjectpropertyscope/playthrough.md)
+- [PlayThrough](./playthrough.md)
   The scope for properties that apply to the play-through side of an object.
 
 

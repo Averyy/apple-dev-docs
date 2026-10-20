@@ -1,7 +1,8 @@
 # sampleTime
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time as a number of audio samples that the current audio device tracks.
 
@@ -20,11 +21,16 @@ The time as a number of audio samples that the current audio device tracks.
 var sampleTime: AVAudioFramePosition { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAudioFramePosition sampleTime;
+```
+
 ## See Also
 
-- [var sampleRate: Double](avaudiotime/samplerate.md)
+### Getting sample rate information
+- [var sampleRate: Double](./samplerate.md)
   The sampling rate that the sample time property expresses.
-- [var isSampleTimeValid: Bool](avaudiotime/issampletimevalid.md)
+- [var isSampleTimeValid: Bool](./issampletimevalid.md)
   A Boolean value that indicates whether the sample time and sample rate properties are in a valid state.
 
 

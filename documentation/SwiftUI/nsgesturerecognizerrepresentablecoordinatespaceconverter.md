@@ -1,9 +1,10 @@
 # NSGestureRecognizerRepresentableCoordinateSpaceConverter
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-A structure used to convert locations to and from coordinate spaces in the hierarchy of the SwiftUI view associated with an [`NSGestureRecognizerRepresentable`](nsgesturerecognizerrepresentable.md).
+A structure used to convert locations to and from coordinate spaces in the hierarchy of the SwiftUI view associated with an [`NSGestureRecognizerRepresentable`](./nsgesturerecognizerrepresentable.md).
 
 **Availability**:
 - macOS 26.0+
@@ -17,27 +18,28 @@ struct NSGestureRecognizerRepresentableCoordinateSpaceConverter
 ## Topics
 
 ### Instance Properties
-- [var localLocation: CGPoint](nsgesturerecognizerrepresentablecoordinatespaceconverter/locallocation.md)
+- [var localLocation: CGPoint](./nsgesturerecognizerrepresentablecoordinatespaceconverter/locallocation.md)
   The represented gesture recognizer’s current location in the coordinate space of the SwiftUI view it’s attached to.
-- [var localTranslation: CGPoint?](nsgesturerecognizerrepresentablecoordinatespaceconverter/localtranslation.md)
+- [var localTranslation: CGPoint?](./nsgesturerecognizerrepresentablecoordinatespaceconverter/localtranslation.md)
   The represented gesture recognizer’s current translation in the coordinate space of the SwiftUI view it’s attached to, or `nil` if the represented gesture recognizer doesn’t respond to `-translationInView:` selector.
-- [var localVelocity: CGPoint?](nsgesturerecognizerrepresentablecoordinatespaceconverter/localvelocity.md)
+- [var localVelocity: CGPoint?](./nsgesturerecognizerrepresentablecoordinatespaceconverter/localvelocity.md)
   The represented gesture recognizer’s current velocity in the coordinate space of the SwiftUI view it’s attached to, or `nil` if the represented gesture recognizer doesn’t respond to `-velocityInView:` selector.
 ### Instance Methods
-- [func convert(globalPoint: CGPoint, to: some CoordinateSpaceProtocol) -> CGPoint](nsgesturerecognizerrepresentablecoordinatespaceconverter/convert(globalpoint:to:).md)
+- [func convert(globalPoint: CGPoint, to: some CoordinateSpaceProtocol) -> CGPoint](./nsgesturerecognizerrepresentablecoordinatespaceconverter/convert%28globalpoint,to%29.md)
   Converts a point in the global coordinate space to a SwiftUI coordinate space of an ancestor of the view the gesture recognizer is attached to.
-- [func location(in: some CoordinateSpaceProtocol) -> CGPoint](nsgesturerecognizerrepresentablecoordinatespaceconverter/location(in:).md)
+- [func location(in: some CoordinateSpaceProtocol) -> CGPoint](./nsgesturerecognizerrepresentablecoordinatespaceconverter/location%28in%29.md)
   Converts the represented gesture recognizer’s current location to a SwiftUI coordinate space of an ancestor of the view the gesture recognizer is attached to.
-- [func translation(in: some CoordinateSpaceProtocol) -> CGPoint?](nsgesturerecognizerrepresentablecoordinatespaceconverter/translation(in:).md)
+- [func translation(in: some CoordinateSpaceProtocol) -> CGPoint?](./nsgesturerecognizerrepresentablecoordinatespaceconverter/translation%28in%29.md)
   Converts the represented gesture recognizer’s current translation to a SwiftUI coordinate space of an ancestor of the view the gesture recognizer is attached to.
-- [func velocity(in: some CoordinateSpaceProtocol) -> CGPoint?](nsgesturerecognizerrepresentablecoordinatespaceconverter/velocity(in:).md)
+- [func velocity(in: some CoordinateSpaceProtocol) -> CGPoint?](./nsgesturerecognizerrepresentablecoordinatespaceconverter/velocity%28in%29.md)
   Converts the represented gesture recognizer’s current velocity to a SwiftUI coordinate space of an ancestor of the view the gesture recognizer is attached to.
 
 ## See Also
 
-- [protocol NSGestureRecognizerRepresentable](nsgesturerecognizerrepresentable.md)
+### Adding AppKit gesture recognizers into SwiftUI view hierarchies
+- [protocol NSGestureRecognizerRepresentable](./nsgesturerecognizerrepresentable.md)
   A wrapper for an `NSGestureRecognizer` that you use to integrate that gesture recognizer into your SwiftUI hierarchy.
-- [struct NSGestureRecognizerRepresentableContext](nsgesturerecognizerrepresentablecontext.md)
+- [struct NSGestureRecognizerRepresentableContext](./nsgesturerecognizerrepresentablecontext.md)
   Contextual information about the state of the system that you use to create and update a represented gesture recognizer.
 
 

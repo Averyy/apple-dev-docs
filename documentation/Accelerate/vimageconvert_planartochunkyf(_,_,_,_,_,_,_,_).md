@@ -1,7 +1,8 @@
 # vImageConvert_PlanarToChunkyF(_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Interleaves the specifed number of floating-point 32-bit planar buffers into a floating-point 32 -bit-per-channel interleaved buffer.
 
@@ -20,9 +21,13 @@ Interleaves the specifed number of floating-point 32-bit planar buffers into a f
 func vImageConvert_PlanarToChunkyF(_ srcPlanarBuffers: UnsafeMutablePointer<UnsafePointer<vImage_Buffer>?>, _ destChannels: UnsafeMutablePointer<UnsafeMutableRawPointer?>, _ channelCount: UInt32, _ destStrideBytes: Int, _ destWidth: vImagePixelCount, _ destHeight: vImagePixelCount, _ destRowBytes: Int, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageConvert_PlanarToChunkyF(const vImage_Buffer * srcPlanarBuffers[], void * destChannels[], unsigned int channelCount, size_t destStrideBytes, vImagePixelCount destWidth, vImagePixelCount destHeight, size_t destRowBytes, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -126,14 +131,14 @@ printf("[%f, %f, %f, %f, %f, %f, %f, %f]\n",
 
 ## Parameters
 
-- `srcPlanarBuffers`: An array that contains `channelCount` source planar vImage buffers. Each source buffer must be the same height and width, but they may have different [`rowBytes`](vimage_buffer/rowbytes.md) values.
+- `srcPlanarBuffers`: An array that contains `channelCount` source planar vImage buffers. Each source buffer must be the same height and width, but they may have different [`rowBytes`](./vimage_buffer/rowbytes.md) values.
 - `destChannels`: An array that contains pointers to the start of each channel in the destination buffer.
 - `channelCount`: The number of channels in the destination image.
 - `destStrideBytes`: The number of bytes between consecutive pixels in a channel in the same row.
 - `destWidth`: The width, in pixels, of the destination channels and the source planar buffers.
 - `destHeight`: The height, in pixels, of the destination channels and the source planar buffers.
 - `destRowBytes`: The distance, in bytes, between the corresponding pixels in consecutive rows in the destination buffer, including any unused space between them.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 
 ---

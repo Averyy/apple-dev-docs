@@ -1,14 +1,15 @@
 # vio_last_alloc
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 vm_offset_t vio_last_alloc;
 ```
 

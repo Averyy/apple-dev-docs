@@ -1,7 +1,8 @@
 # commonPrefix(with:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the longest common ancestor path of this path and `other`.
 

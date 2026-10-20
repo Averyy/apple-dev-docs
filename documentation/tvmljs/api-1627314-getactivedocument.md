@@ -1,7 +1,8 @@
 # getActiveDocument
 
 **Framework**: TVMLKit JS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the currently active document.
 
@@ -10,11 +11,11 @@ Retrieves the currently active document.
 
 ## Declaration
 
-```swift
+```
 Document getActiveDocument();
 ```
 
-#### Return_value
+#### Return Value
 
 The currently active document.
 
@@ -24,11 +25,12 @@ The currently active document is the document that the user is interacting with.
 
 ## See Also
 
-- [UUID](1627409-uuid.md)
+### Manipulating the Document
+- [UUID](./api-1627409-uuid.md)
   Generates a unique UUID.
-- [canOpenURL](2123042-canopenurl.md)
+- [canOpenURL](./api-2123042-canopenurl.md)
   Determines if a deep-link to another app can be opened.
-- [openURL](1627399-openurl.md)
+- [openURL](./api-1627399-openurl.md)
   Opens a deep link into another app.
 
 

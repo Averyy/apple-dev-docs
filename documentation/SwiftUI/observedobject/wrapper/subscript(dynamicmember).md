@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Gets a binding to the value of a specified key path.
 

@@ -1,7 +1,8 @@
 # animation
 
 **Framework**: Image Playground  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that yields animated images.
 
@@ -20,11 +21,12 @@ static let animation: ImagePlaygroundStyle
 
 ## See Also
 
-- [static let illustration: ImagePlaygroundStyle](imageplaygroundstyle/illustration.md)
+### Getting the style options
+- [static let illustration: ImagePlaygroundStyle](./illustration.md)
   An option that yields images in a 2D cartoon style.
-- [static let sketch: ImagePlaygroundStyle](imageplaygroundstyle/sketch.md)
+- [static let sketch: ImagePlaygroundStyle](./sketch.md)
   An option that yields images in the style of a hand-drawn sketch.
-- [static var all: [ImagePlaygroundStyle]](imageplaygroundstyle/all.md)
+- [static var all: [ImagePlaygroundStyle]](./all.md)
   An option that allows the creation of images in any style.
 
 

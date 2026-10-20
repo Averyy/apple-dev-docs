@@ -1,7 +1,8 @@
 # MeshResource.Skeleton
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A skeleton consists of a hierarchy of joints. Each joint defines a coordinate space. Portions of a model may be thought of as having a position in a joint’s local space.
 
@@ -38,33 +39,34 @@ When unanimated, the pose of a skinned model is defined by the rest pose of each
 ## Topics
 
 ### Structures
-- [MeshResource.Skeleton.Joint](meshresource/skeleton/joint.md)
-  A named joint in a [`MeshResource.Skeleton`](meshresource/skeleton.md).
+- [MeshResource.Skeleton.Joint](./skeleton/joint.md)
+  A named joint in a [`MeshResource.Skeleton`](./skeleton.md).
 ### Initializers
-- [init?(id: String, jointNames: [String], inverseBindPoseMatrices: [simd_float4x4], restPoseTransforms: [Transform]?, parentIndices: [Int?]?)](meshresource/skeleton/init(id:jointnames:inversebindposematrices:restposetransforms:parentindices:).md)
+- [init?(id: String, jointNames: [String], inverseBindPoseMatrices: [simd_float4x4], restPoseTransforms: [Transform]?, parentIndices: [Int?]?)](./skeleton/init%28id,jointnames,inversebindposematrices,restposetransforms,parentindices%29.md)
   Creates a skeleton from arrays which define its joints. Returns `nil` if there was an issue converting the parameters to a valid skeleton.
-- [init(id: String, joints: [MeshResource.Skeleton.Joint])](meshresource/skeleton/init(id:joints:).md)
+- [init(id: String, joints: [MeshResource.Skeleton.Joint])](./skeleton/init%28id,joints%29.md)
   Creates a skeleton from an array of joints.
 ### Instance Properties
-- [var id: String](meshresource/skeleton/id.md)
+- [var id: String](./skeleton/id.md)
   The unique identifier of this skeleton. This acts as a stable identity for this object.
-- [var joints: [MeshResource.Skeleton.Joint]](meshresource/skeleton/joints.md)
+- [var joints: [MeshResource.Skeleton.Joint]](./skeleton/joints.md)
   The joints which define this skeleton’s hierarchy.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
+- [Identifiable](../../Swift/identifiable.md)
 
 ## See Also
 
-- [MeshResource.Skeleton.Joint](meshresource/skeleton/joint.md)
-  A named joint in a [`MeshResource.Skeleton`](meshresource/skeleton.md).
-- [struct MeshSkeletonCollection](meshskeletoncollection.md)
+### Mesh skeletons
+- [MeshResource.Skeleton.Joint](./skeleton/joint.md)
+  A named joint in a [`MeshResource.Skeleton`](./skeleton.md).
+- [struct MeshSkeletonCollection](../meshskeletoncollection.md)
   An object that holds a collection of skeletons used by a mesh resource.
-- [struct MeshJointInfluence](meshjointinfluence.md)
+- [struct MeshJointInfluence](../meshjointinfluence.md)
   A binding to a joint, which consists of the joint’s index and the weight of that joint’s influence on a vertex.
-- [MeshResource.JointInfluences](meshresource/jointinfluences.md)
+- [MeshResource.JointInfluences](./jointinfluences.md)
   A buffer of vertex-joint influences which bind the mesh part’s vertices to a skeleton via a skinning deformation.
 
 

@@ -1,7 +1,8 @@
 # MuteControl
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The identifier for the audio mute control class.
 
@@ -10,7 +11,7 @@ The identifier for the audio mute control class.
 
 ## Declaration
 
-```swift
+```c
 MuteControl
 ```
 

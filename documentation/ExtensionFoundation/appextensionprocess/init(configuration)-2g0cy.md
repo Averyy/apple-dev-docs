@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: ExtensionFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Finds an existing process for the specified app extension or creates a new one synchronously.
 
@@ -32,9 +33,10 @@ After receiving an instance of this type, use its methods to configure an XPC co
 
 ## See Also
 
-- [init(configuration: AppExtensionProcess.Configuration) async throws](appextensionprocess/init(configuration:)-38zf.md)
+### Creating the app-extension process
+- [init(configuration: AppExtensionProcess.Configuration) async throws](./init%28configuration%29-38zf.md)
   Finds an existing process for the specified app extension or creates a new one asynchronously.
-- [AppExtensionProcess.Configuration](appextensionprocess/configuration.md)
+- [AppExtensionProcess.Configuration](./configuration.md)
   A structure that holds the identity of an app extension and process-related details.
 
 

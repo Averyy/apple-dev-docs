@@ -1,7 +1,8 @@
 # itemIndex
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the scrubber item that is represented by the item’s layout attributes.
 
@@ -14,11 +15,16 @@ The index of the scrubber item that is represented by the item’s layout attrib
 var itemIndex: Int { get set }
 ```
 
+```objc
+@property NSInteger itemIndex;
+```
+
 ## See Also
 
-- [var alpha: CGFloat](nsscrubberlayoutattributes/alpha.md)
+### Controlling the layout
+- [var alpha: CGFloat](./alpha.md)
   The item’s alpha value.
-- [var frame: NSRect](nsscrubberlayoutattributes/frame.md)
+- [var frame: NSRect](./frame.md)
   The frame of the scrubber item.
 
 

@@ -1,32 +1,35 @@
 # AppPreviewSetCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
 **Availability**:
-- App Store Connect API 1.2+
+- App Store Connect API 1.2+ - Deprecated in 4.5
+
+> **Deprecated**: This object is deprecated. Use [`AppAssetLibraryPlacementCreateRequest`](../appassetlibraryplacementcreaterequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object AppPreviewSetCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppPreviewSetCreateRequest.Data.Attributes](apppreviewsetcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppPreviewSetCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes you set that describe the new resource.
-- [object AppPreviewSetCreateRequest.Data.Relationships](apppreviewsetcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object AppPreviewSetCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other localized resources that you can set with this request.
 
 ## Properties
 
 - `attributes` (AppPreviewSetCreateRequest.Data.Attributes) *(required)*
 - `relationships` (AppPreviewSetCreateRequest.Data.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appPreviewSets`
 
 
 ---

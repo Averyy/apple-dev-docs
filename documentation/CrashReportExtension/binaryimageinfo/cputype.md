@@ -1,7 +1,8 @@
 # cpuType
 
 **Framework**: CrashReportExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The binary image’s CPU type.
 
@@ -9,9 +10,9 @@ The binary image’s CPU type.
 - iOS 27.0+
 - iPadOS 27.0+
 - macOS 27.0+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,15 +22,16 @@ let cpuType: cpu_type_t
 
 ## See Also
 
-- [let baseAddress: UInt64](binaryimageinfo/baseaddress.md)
+### Inspecting binary image properties
+- [let baseAddress: UInt64](./baseaddress.md)
   The base address of the binary image.
-- [let cpuSubType: cpu_subtype_t](binaryimageinfo/cpusubtype.md)
+- [let cpuSubType: cpu_subtype_t](./cpusubtype.md)
   The binary image’s CPU subtype.
-- [let path: String](binaryimageinfo/path.md)
+- [let path: String](./path.md)
   The path to the binary image.
-- [let size: UInt64](binaryimageinfo/size.md)
+- [let size: UInt64](./size.md)
   The size of the binary image.
-- [let uuid: UUID?](binaryimageinfo/uuid.md)
+- [let uuid: UUID?](./uuid.md)
   The UUID of the binary image.
 
 

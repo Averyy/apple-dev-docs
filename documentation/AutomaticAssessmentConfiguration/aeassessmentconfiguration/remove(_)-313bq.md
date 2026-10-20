@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the availability of a previously allowed app.
 
@@ -17,9 +18,13 @@ Removes the availability of a previously allowed app.
 func remove(_ application: AEAssessmentApplication)
 ```
 
+```objc
+- (void) removeApplication:(AEAssessmentApplication *) application;
+```
+
 #### Discussion
 
-Use this method to remove apps that you previously added to the list of apps that are available during an assessment with the `AEAssessmentConfiguration/setConfiguration(_:for:)` method. You can get the list of currently allowed apps by accessing the configuration’s [`configurationsByApplication`](aeassessmentconfiguration/configurationsbyapplication.md) property.
+Use this method to remove apps that you previously added to the list of apps that are available during an assessment with the `AEAssessmentConfiguration/setConfiguration(_:for:)` method. You can get the list of currently allowed apps by accessing the configuration’s [`configurationsByApplication`](./configurationsbyapplication.md) property.
 
 ## Parameters
 

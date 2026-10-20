@@ -1,14 +1,15 @@
 # kINQUIRY_ISO_IEC_VERSION_Mask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kINQUIRY_ISO_IEC_VERSION_Mask = 0xC0
 ```
 

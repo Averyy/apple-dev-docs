@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Matches if the provided string matches the signing identifier of the code.
 

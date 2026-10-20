@@ -1,7 +1,8 @@
 # isRelationalAttribute
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the path is an attribute on a relationship target.
 

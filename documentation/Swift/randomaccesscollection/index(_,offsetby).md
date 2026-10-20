@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns an index that is the specified distance from the given index.
@@ -38,12 +39,18 @@ print(s[i])
 
 The value passed as `distance` must not offset `i` beyond the bounds of the collection.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 
 - `i`: A valid index of the collection.
 - `distance`: The distance to offset `i`. `distance` must not be negative unless the collection conforms to the `BidirectionalCollection` protocol.
+
+## Default Implementations
+
+### BidirectionalCollection Implementations
+- [func index(Self.Index, offsetBy: Self.Index.Stride) -> Self.Index](../bidirectionalcollection/index%28_,offsetby%29-3cj6r.md)
+  Returns an index that is the specified distance from the given index.
 
 
 ---

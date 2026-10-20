@@ -1,7 +1,8 @@
 # jointLocalTransforms
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The local space transforms for each joint.
 
@@ -22,11 +23,12 @@ Local space refers to a joint’s position relative to its parent joint.
 
 ## See Also
 
-- [var jointModelTransforms: [simd_float4x4]](arskeleton3d/jointmodeltransforms-i6yu.md)
+### Getting a Joint’s Pose
+- [var jointModelTransforms: [simd_float4x4]](./jointmodeltransforms-i6yu.md)
   The model space transforms for each joint.
-- [func localTransform(for: ARSkeleton.JointName) -> simd_float4x4?](arskeleton3d/localtransform(for:).md)
+- [func localTransform(for: ARSkeleton.JointName) -> simd_float4x4?](./localtransform%28for%29.md)
   Returns the local transform for a joint with a given name.
-- [func modelTransform(for: ARSkeleton.JointName) -> simd_float4x4?](arskeleton3d/modeltransform(for:).md)
+- [func modelTransform(for: ARSkeleton.JointName) -> simd_float4x4?](./modeltransform%28for%29.md)
   Returns the model transform for a joint with a given name.
 
 

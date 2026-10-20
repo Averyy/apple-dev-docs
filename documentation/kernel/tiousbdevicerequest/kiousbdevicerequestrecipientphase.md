@@ -1,7 +1,8 @@
 # kIOUSBDeviceRequestRecipientPhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The recipient phase.
 
@@ -10,7 +11,7 @@ The recipient phase.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestRecipientPhase = IOUSBBitRangePhase(0, 4)
 ```
 

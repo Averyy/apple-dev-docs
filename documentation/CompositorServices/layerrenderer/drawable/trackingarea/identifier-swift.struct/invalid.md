@@ -1,7 +1,8 @@
 # invalid
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Identifier reserved as invalid.
 
@@ -17,7 +18,7 @@ static let invalid: LayerRenderer.Drawable.TrackingArea.Identifier
 
 #### Discussion
 
-Should not be used as identifier for [`addTrackingArea(identifier:)`](layerrenderer/drawable/addtrackingarea(identifier:).md).
+Should not be used as identifier for [`addTrackingArea(identifier:)`](../../addtrackingarea%28identifier%29.md).
 
 
 ---

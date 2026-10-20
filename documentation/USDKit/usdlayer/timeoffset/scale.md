@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scale factor applied during composition.
 

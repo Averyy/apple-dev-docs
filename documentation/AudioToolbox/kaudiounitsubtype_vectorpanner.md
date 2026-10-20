@@ -1,10 +1,11 @@
 # kAudioUnitSubType_VectorPanner
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kAudioUnitSubType_VectorPanner: UInt32 { get }
 ```
 
+```c
+kAudioUnitSubType_VectorPanner
+```
+
 ## See Also
 
-- [var kAudioUnitSubType_HRTFPanner: UInt32](kaudiounitsubtype_hrtfpanner.md)
-- [var kAudioUnitSubType_SoundFieldPanner: UInt32](kaudiounitsubtype_soundfieldpanner.md)
-- [var kAudioUnitSubType_SphericalHeadPanner: UInt32](kaudiounitsubtype_sphericalheadpanner.md)
+### Constants
+- [var kAudioUnitSubType_HRTFPanner: UInt32](./kaudiounitsubtype_hrtfpanner.md)
+- [var kAudioUnitSubType_SoundFieldPanner: UInt32](./kaudiounitsubtype_soundfieldpanner.md)
+- [var kAudioUnitSubType_SphericalHeadPanner: UInt32](./kaudiounitsubtype_sphericalheadpanner.md)
 
 
 ---

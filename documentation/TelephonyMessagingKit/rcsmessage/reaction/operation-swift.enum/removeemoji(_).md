@@ -1,7 +1,8 @@
 # RCSMessage.Reaction.Operation.removeEmoji(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An operation type for removing one or more emoji reactions.
 

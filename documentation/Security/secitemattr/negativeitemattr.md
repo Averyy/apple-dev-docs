@@ -1,7 +1,8 @@
 # SecItemAttr.negativeItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the negative attribute.
 
@@ -13,6 +14,10 @@ Identifies the negative attribute.
 
 ```swift
 case negativeItemAttr
+```
+
+```c
+kSecNegativeItemAttr
 ```
 
 #### Discussion

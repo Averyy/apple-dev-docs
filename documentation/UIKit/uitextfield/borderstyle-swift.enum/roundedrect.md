@@ -1,16 +1,17 @@
 # UITextField.BorderStyle.roundedRect
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Displays a rounded-style border for the text field.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@ Displays a rounded-style border for the text field.
 case roundedRect
 ```
 
+```c
+UITextBorderStyleRoundedRect
+```
+
 ## See Also
 
-- [UITextField.BorderStyle.none](uitextfield/borderstyle-swift.enum/none.md)
+### Constants
+- [UITextField.BorderStyle.none](./none.md)
   The text field does not display a border.
-- [UITextField.BorderStyle.line](uitextfield/borderstyle-swift.enum/line.md)
+- [UITextField.BorderStyle.line](./line.md)
   Displays a thin rectangle around the text field.
-- [UITextField.BorderStyle.bezel](uitextfield/borderstyle-swift.enum/bezel.md)
+- [UITextField.BorderStyle.bezel](./bezel.md)
   Displays a bezel-style border for the text field. This style is typically used for standard data-entry fields.
 
 

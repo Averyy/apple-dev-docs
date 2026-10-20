@@ -1,7 +1,8 @@
 # BodyTrackingComponent.Target.any
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Any person that is detected in front of the camera.
 
@@ -18,7 +19,8 @@ case any
 
 ## See Also
 
-- [BodyTrackingComponent.Target.body(identifier:)](bodytrackingcomponent/target-swift.enum/body(identifier:).md)
+### Body tracking target types
+- [BodyTrackingComponent.Target.body(identifier:)](./body%28identifier%29.md)
   A person detected by ARKit.
 
 

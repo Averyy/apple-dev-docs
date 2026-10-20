@@ -1,7 +1,8 @@
 # allowsTypeSelect
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the table view allows the user to type characters to select rows.
 
@@ -14,9 +15,13 @@ A Boolean value indicating whether the table view allows the user to type charac
 var allowsTypeSelect: Bool { get set }
 ```
 
+```objc
+@property BOOL allowsTypeSelect;
+```
+
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true). Set it to [`false`](https://developer.apple.com/documentation/swift/false) if you want to disable selecting rows by typing.
+The default value of this property is [`true`](../../Swift/true.md). Set it to [`false`](../../Swift/false.md) if you want to disable selecting rows by typing.
 
 
 ---

@@ -1,15 +1,16 @@
 # ExpressibleByIntegerLiteral Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(integerLiteral: Int64)](float16/init(integerliteral:).md)
+- [init(integerLiteral: Int64)](./init%28integerliteral%29.md)
   Creates an instance initialized to the specified integer value.
-- [init(integerLiteral: Self)](float16/init(integerliteral:)-1mjyo.md)
+- [init(integerLiteral: Self)](./init%28integerliteral%29-1mjyo.md)
 ### Type Aliases
-- [typealias IntegerLiteralType](float16/integerliteraltype.md)
+- [typealias IntegerLiteralType](./integerliteraltype.md)
   A type that represents an integer literal.
 
 

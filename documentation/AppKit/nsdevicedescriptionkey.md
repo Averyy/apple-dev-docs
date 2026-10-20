@@ -1,12 +1,13 @@
 # NSDeviceDescriptionKey
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 These constants are the keys for device description dictionaries.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,52 +15,57 @@ These constants are the keys for device description dictionaries.
 struct NSDeviceDescriptionKey
 ```
 
+```c
+typedef NSString * NSDeviceDescriptionKey;
+```
+
 ## Topics
 
 ### Type Properties
-- [static let bitsPerSample: NSDeviceDescriptionKey](nsdevicedescriptionkey/bitspersample.md)
+- [static let bitsPerSample: NSDeviceDescriptionKey](./nsdevicedescriptionkey/bitspersample.md)
   The corresponding value is an `NSNumber` object containing an integer that gives the bit depth of the window’s raster image (2-bit, 8-bit, and so forth).
-- [static let colorSpaceName: NSDeviceDescriptionKey](nsdevicedescriptionkey/colorspacename.md)
+- [static let colorSpaceName: NSDeviceDescriptionKey](./nsdevicedescriptionkey/colorspacename.md)
   The corresponding value is an `NSString` object giving the name of the window’s color space.
-- [static let isPrinter: NSDeviceDescriptionKey](nsdevicedescriptionkey/isprinter.md)
+- [static let isPrinter: NSDeviceDescriptionKey](./nsdevicedescriptionkey/isprinter.md)
   If there is a corresponding value, this indicates that the display device is a printer.
-- [static let isScreen: NSDeviceDescriptionKey](nsdevicedescriptionkey/isscreen.md)
+- [static let isScreen: NSDeviceDescriptionKey](./nsdevicedescriptionkey/isscreen.md)
   If there is a corresponding value, this indicates that the display device is a screen.
-- [static let resolution: NSDeviceDescriptionKey](nsdevicedescriptionkey/resolution.md)
+- [static let resolution: NSDeviceDescriptionKey](./nsdevicedescriptionkey/resolution.md)
   The corresponding value is an `NSValue` object containing a value of type `NSSize` that describes the window’s raster resolution in dots per inch (dpi).
-- [static let size: NSDeviceDescriptionKey](nsdevicedescriptionkey/size.md)
+- [static let size: NSDeviceDescriptionKey](./nsdevicedescriptionkey/size.md)
   The corresponding value is an `NSValue` object containing a value of type `NSSize` that gives the size of the window’s frame rectangle.
 ### Initializers
-- [init(String)](nsdevicedescriptionkey/init(_:).md)
-- [init(rawValue: String)](nsdevicedescriptionkey/init(rawvalue:).md)
+- [init(String)](./nsdevicedescriptionkey/init%28_%29.md)
+- [init(rawValue: String)](./nsdevicedescriptionkey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var depth: NSWindow.Depth](nsscreen/depth.md)
+### Getting Screen Information
+- [var depth: NSWindow.Depth](./nsscreen/depth.md)
   The current bit depth and colorspace information of the screen.
-- [var frame: NSRect](nsscreen/frame.md)
+- [var frame: NSRect](./nsscreen/frame.md)
   The dimensions and location of the screen.
-- [var supportedWindowDepths: UnsafePointer<NSWindow.Depth>](nsscreen/supportedwindowdepths.md)
+- [var supportedWindowDepths: UnsafePointer<NSWindow.Depth>](./nsscreen/supportedwindowdepths.md)
   A zero-terminated array of the window depths supported by the screen.
-- [var deviceDescription: [NSDeviceDescriptionKey : Any]](nsscreen/devicedescription.md)
+- [var deviceDescription: [NSDeviceDescriptionKey : Any]](./nsscreen/devicedescription.md)
   The device dictionary for the screen.
-- [var colorSpace: NSColorSpace?](nsscreen/colorspace.md)
+- [var colorSpace: NSColorSpace?](./nsscreen/colorspace.md)
   The color space of the screen.
-- [var localizedName: String](nsscreen/localizedname.md)
+- [var localizedName: String](./nsscreen/localizedname.md)
   The localized name of the display.
-- [func canRepresent(NSDisplayGamut) -> Bool](nsscreen/canrepresent(_:).md)
+- [func canRepresent(NSDisplayGamut) -> Bool](./nsscreen/canrepresent%28_%29.md)
   A Boolean value indicating whether the color space of the screen is capable of representing the specified display gamut.
-- [enum NSDisplayGamut](nsdisplaygamut.md)
-- [class var screensHaveSeparateSpaces: Bool](nsscreen/screenshaveseparatespaces.md)
+- [enum NSDisplayGamut](./nsdisplaygamut.md)
+- [class var screensHaveSeparateSpaces: Bool](./nsscreen/screenshaveseparatespaces.md)
   Returns a Boolean value indicating whether each screen can have its own set of spaces.
 
 

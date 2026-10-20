@@ -1,12 +1,13 @@
 # acceptsFirstResponder
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the text field is editable and accepts first responder status.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ A Boolean value that indicates whether the text field is editable and accepts fi
 var acceptsFirstResponder: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL acceptsFirstResponder;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the text field is editable and can become the first responder; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the text field is editable and can become the first responder; otherwise, [`false`](../../Swift/false.md).
 
 
 ---

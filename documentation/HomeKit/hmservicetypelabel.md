@@ -1,7 +1,8 @@
 # HMServiceTypeLabel
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A label namespace service used when an accessory supports multiple services of the same type.
 
@@ -19,9 +20,14 @@ A label namespace service used when an accessory supports multiple services of t
 let HMServiceTypeLabel: String
 ```
 
+```c
+extern NSString * const HMServiceTypeLabel;
+```
+
 ## See Also
 
-- [let HMServiceTypeAccessoryInformation: String](hmservicetypeaccessoryinformation.md)
+### Information
+- [let HMServiceTypeAccessoryInformation: String](./hmservicetypeaccessoryinformation.md)
   An accessory information service.
 
 

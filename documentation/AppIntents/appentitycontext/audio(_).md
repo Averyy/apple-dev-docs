@@ -1,7 +1,8 @@
 # audio(_:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 An audio-related context.
 
@@ -22,7 +23,7 @@ static func audio(_ audioContext: AudioContext) -> AppEntityContext
 
 ## Parameters
 
-- `audioContext`: The specific [`AudioContext`](audiocontext.md) describing the audio activity for this donation.
+- `audioContext`: The specific [`AudioContext`](../audiocontext.md) describing the audio activity for this donation.
 
 
 ---

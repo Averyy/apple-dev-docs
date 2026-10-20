@@ -1,7 +1,8 @@
 # CLLocationUpdate.Updates
 
 **Framework**: Core Location  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents an asynchronous sequence of location updates.
 
@@ -22,26 +23,27 @@ struct Updates
 
 #### Overview
 
-[`CLLocationUpdate`](cllocationupdate.md) uses this structure to asynchronously deliver a stream of location updates to your app when you call [`liveUpdates(_:)`](cllocationupdate/liveupdates(_:).md).
+[`CLLocationUpdate`](../cllocationupdate.md) uses this structure to asynchronously deliver a stream of location updates to your app when you call [`liveUpdates(_:)`](./liveupdates%28_%29.md).
 
 ## Topics
 
 ### Type aliases
-- [CLLocationUpdate.Updates.Iterator](cllocationupdate/updates/iterator.md)
+- [CLLocationUpdate.Updates.Iterator](./updates/iterator.md)
   The type of the update’s iterator.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func liveUpdates(CLLocationUpdate.LiveConfiguration) -> CLLocationUpdate.Updates](cllocationupdate/liveupdates(_:).md)
+### Receiving location updates
+- [static func liveUpdates(CLLocationUpdate.LiveConfiguration) -> CLLocationUpdate.Updates](./liveupdates%28_%29.md)
   Tells Core Location to start delivering the location updates it produces for the configuration you specify.
-- [CLLocationUpdate.LiveConfiguration](cllocationupdate/liveconfiguration.md)
+- [CLLocationUpdate.LiveConfiguration](./liveconfiguration.md)
   Values that indicate the kind of positioning updates the framework delivers.
 
 

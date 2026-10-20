@@ -1,7 +1,8 @@
 # HKUserMotionContext
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of motion performed during the sample.
 
@@ -19,27 +20,31 @@ The type of motion performed during the sample.
 enum HKUserMotionContext
 ```
 
+```c
+enum HKUserMotionContext : NSInteger;
+```
+
 ## Topics
 
 ### Motion contexts
-- [HKUserMotionContext.notSet](hkusermotioncontext/notset.md)
+- [HKUserMotionContext.notSet](./hkusermotioncontext/notset.md)
   The person’s motion was not specified.
-- [HKUserMotionContext.active](hkusermotioncontext/active.md)
+- [HKUserMotionContext.active](./hkusermotioncontext/active.md)
   The person was active during the sample.
-- [HKUserMotionContext.stationary](hkusermotioncontext/stationary.md)
+- [HKUserMotionContext.stationary](./hkusermotioncontext/stationary.md)
   The person was stationary during the sample.
 ### Initializers
-- [init?(rawValue: Int)](hkusermotioncontext/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkusermotioncontext/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

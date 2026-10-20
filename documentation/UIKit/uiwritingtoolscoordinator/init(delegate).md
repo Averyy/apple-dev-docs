@@ -1,7 +1,8 @@
 # init(delegate:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a writing tools coordinator and assigns the specified delegate object to it.
 
@@ -17,9 +18,13 @@ Creates a writing tools coordinator and assigns the specified delegate object to
 init(delegate: (any UIWritingToolsCoordinator.Delegate)?)
 ```
 
+```objc
+- (instancetype) initWithDelegate:(id<UIWritingToolsCoordinatorDelegate>) delegate;
+```
+
 #### Discussion
 
-Create the coordinator object during your view’s initialization, and assign the object to your view. Use the [`addInteraction(_:)`](uiview/addinteraction(_:).md) method to add the object to your view.
+Create the coordinator object during your view’s initialization, and assign the object to your view. Use the [`addInteraction(_:)`](../uiview/addinteraction%28_%29.md) method to add the object to your view.
 
 ## Parameters
 

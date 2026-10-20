@@ -1,7 +1,8 @@
 # NSTextLayoutFragment
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents the layout fragment typically corresponding to a rendering surface, such as a layer or view subclass.
 
@@ -14,94 +15,99 @@ A class that represents the layout fragment typically corresponding to a renderi
 class NSTextLayoutFragment
 ```
 
+```objc
+@interface NSTextLayoutFragment : NSObject
+```
+
 ## Topics
 
 ### Creating a layout fragment
-- [init?(coder: NSCoder)](nstextlayoutfragment/init(coder:).md)
+- [init?(coder: NSCoder)](./nstextlayoutfragment/init%28coder%29.md)
   Creates a new layout fragment with the coder you provide.
-- [init(textElement: NSTextElement, range: NSTextRange?)](nstextlayoutfragment/init(textelement:range:).md)
+- [init(textElement: NSTextElement, range: NSTextRange?)](./nstextlayoutfragment/init%28textelement,range%29.md)
   Create a new layout fragment using the provided text element and range.
 ### Getting line fragments
-- [var textLineFragments: [NSTextLineFragment]](nstextlayoutfragment/textlinefragments.md)
+- [var textLineFragments: [NSTextLineFragment]](./nstextlayoutfragment/textlinefragments.md)
   An array of text line fragments.
-- [NSTextLayoutFragment.EnumerationOptions](nstextlayoutfragment/enumerationoptions.md)
+- [NSTextLayoutFragment.EnumerationOptions](./nstextlayoutfragment/enumerationoptions.md)
   Values that describe options for enumerating text layout fragments.
-- [func textLineFragment(for: any NSTextLocation, isUpstreamAffinity: Bool) -> NSTextLineFragment?](nstextlayoutfragment/textlinefragment(for:isupstreamaffinity:).md)
+- [func textLineFragment(for: any NSTextLocation, isUpstreamAffinity: Bool) -> NSTextLineFragment?](./nstextlayoutfragment/textlinefragment%28for,isupstreamaffinity%29.md)
   Returns a text line fragment from a specific text location in the document.
-- [func textLineFragment(forVerticalOffset: CGFloat, requiresExactMatch: Bool) -> NSTextLineFragment?](nstextlayoutfragment/textlinefragment(forverticaloffset:requiresexactmatch:).md)
+- [func textLineFragment(forVerticalOffset: CGFloat, requiresExactMatch: Bool) -> NSTextLineFragment?](./nstextlayoutfragment/textlinefragment%28forverticaloffset,requiresexactmatch%29.md)
   Returns the text line fragment for the vertical offset you provide, or the closest text line fragment beyond the vertical offset.
 ### Getting element information
-- [var state: NSTextLayoutFragment.State](nstextlayoutfragment/state-swift.property.md)
+- [var state: NSTextLayoutFragment.State](./nstextlayoutfragment/state-swift.property.md)
   The layout information state.
-- [NSTextLayoutFragment.State](nstextlayoutfragment/state-swift.enum.md)
+- [NSTextLayoutFragment.State](./nstextlayoutfragment/state-swift.enum.md)
   Values that describe the possible layout states.
-- [var rangeInElement: NSTextRange](nstextlayoutfragment/rangeinelement.md)
+- [var rangeInElement: NSTextRange](./nstextlayoutfragment/rangeinelement.md)
   The range inside the text element relative to the document origin.
-- [var textElement: NSTextElement?](nstextlayoutfragment/textelement.md)
+- [var textElement: NSTextElement?](./nstextlayoutfragment/textelement.md)
   The parent text element.
 ### Accessing the layout manager
-- [var textLayoutManager: NSTextLayoutManager?](nstextlayoutfragment/textlayoutmanager.md)
+- [var textLayoutManager: NSTextLayoutManager?](./nstextlayoutfragment/textlayoutmanager.md)
   The layout manager for this text layout fragment.
 ### Drawing the fragment and attachments
-- [var layoutFragmentFrame: CGRect](nstextlayoutfragment/layoutfragmentframe.md)
+- [var layoutFragmentFrame: CGRect](./nstextlayoutfragment/layoutfragmentframe.md)
   The rectangle the framework uses for tiling the layout fragment inside the target layout coordinate system.
-- [var renderingSurfaceBounds: CGRect](nstextlayoutfragment/renderingsurfacebounds.md)
+- [var renderingSurfaceBounds: CGRect](./nstextlayoutfragment/renderingsurfacebounds.md)
   The bounds defining the area required for rendering the contents.
-- [func draw(at: CGPoint, in: CGContext)](nstextlayoutfragment/draw(at:in:).md)
+- [func draw(at: CGPoint, in: CGContext)](./nstextlayoutfragment/draw%28at,in%29.md)
   Renders the visual representation of this element in the specified graphics context.
-- [func invalidateLayout()](nstextlayoutfragment/invalidatelayout.md)
+- [func invalidateLayout()](./nstextlayoutfragment/invalidatelayout%28%29.md)
   Invalidates any layout information associated with the text layout fragment.
-- [var textAttachmentViewProviders: [NSTextAttachmentViewProvider]](nstextlayoutfragment/textattachmentviewproviders.md)
+- [var textAttachmentViewProviders: [NSTextAttachmentViewProvider]](./nstextlayoutfragment/textattachmentviewproviders.md)
   The attachment view provider associated with the text layout fragment.
-- [func frameForTextAttachment(at: any NSTextLocation) -> CGRect](nstextlayoutfragment/framefortextattachment(at:).md)
+- [func frameForTextAttachment(at: any NSTextLocation) -> CGRect](./nstextlayoutfragment/framefortextattachment%28at%29.md)
   Returns the frame in the text layout fragment coordinate system for the attachment at the location you specify.
 ### Accessing the layout processing queue
-- [var layoutQueue: OperationQueue?](nstextlayoutfragment/layoutqueue.md)
+- [var layoutQueue: OperationQueue?](./nstextlayoutfragment/layoutqueue.md)
   The queue on which the framework dispatches layout operations.
 ### Defining margins and padding
-- [var bottomMargin: CGFloat](nstextlayoutfragment/bottommargin.md)
+- [var bottomMargin: CGFloat](./nstextlayoutfragment/bottommargin.md)
   The amount of space reserved during paragraph layout between the bottom of the last line in the paragraph and the bottom of the text layout fragment.
-- [var leadingPadding: CGFloat](nstextlayoutfragment/leadingpadding.md)
+- [var leadingPadding: CGFloat](./nstextlayoutfragment/leadingpadding.md)
   The amount of margin space reserved during paragraph layout between the leading edge of the text layout fragment and the start of the lines in the paragraph.
-- [var topMargin: CGFloat](nstextlayoutfragment/topmargin.md)
+- [var topMargin: CGFloat](./nstextlayoutfragment/topmargin.md)
   The amount of space reserved during paragraph layout between the top of the text layout fragment and the top of the first line in the paragraph.
-- [var trailingPadding: CGFloat](nstextlayoutfragment/trailingpadding.md)
+- [var trailingPadding: CGFloat](./nstextlayoutfragment/trailingpadding.md)
   The amount of margin space reserved during paragraph layout between the end of the lines in the paragraph and the trailing edge of the text layout fragment.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [NSTextViewportRenderingSurfaceKey](nstextviewportrenderingsurfacekey.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [NSTextViewportRenderingSurfaceKey](./nstextviewportrenderingsurfacekey.md)
 
 ## See Also
 
-- [Using TextKit 2 to interact with text](../uikit/using-textkit-2-to-interact-with-text.md)
+### Layout
+- [Using TextKit 2 to interact with text](../UIKit/using-textkit-2-to-interact-with-text.md)
   Interact with text by managing text selection and inserting custom text elements.
-- [Managing viewport layout and attachment reuse in text views](../uikit/managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
+- [Managing viewport layout and attachment reuse in text views](../UIKit/managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
   Customize layout and preserve attachment views in your text view subclass.
-- [class NSTextLayoutManager](nstextlayoutmanager.md)
+- [class NSTextLayoutManager](./nstextlayoutmanager.md)
   The primary class that you use to manage text layout and presentation for custom text displays.
-- [class NSTextContainer](nstextcontainer.md)
+- [class NSTextContainer](./nstextcontainer.md)
   A region where text layout occurs.
-- [class NSTextLineFragment](nstextlinefragment.md)
+- [class NSTextLineFragment](./nstextlinefragment.md)
   A class that represents a line fragment as a single textual layout and rendering unit inside a text layout fragment.
-- [class NSTextViewportLayoutController](nstextviewportlayoutcontroller.md)
+- [class NSTextViewportLayoutController](./nstextviewportlayoutcontroller.md)
   Manages the layout process inside the viewport interacting with its delegate.
-- [protocol NSTextLayoutOrientationProvider](nstextlayoutorientationprovider.md)
+- [protocol NSTextLayoutOrientationProvider](./nstextlayoutorientationprovider.md)
   A set of methods that define the orientation of text for an object.
-- [protocol NSTextViewportRenderingSurface](nstextviewportrenderingsurface.md)
+- [protocol NSTextViewportRenderingSurface](./nstextviewportrenderingsurface.md)
   A protocol that identifies a view or layer as a drawable element for a text layout fragment.
-- [protocol NSTextViewportRenderingSurfaceKey](nstextviewportrenderingsurfacekey.md)
+- [protocol NSTextViewportRenderingSurfaceKey](./nstextviewportrenderingsurfacekey.md)
   A protocol that lets you use an object to identify a rendering surface when storing or retrieving it.
 
 

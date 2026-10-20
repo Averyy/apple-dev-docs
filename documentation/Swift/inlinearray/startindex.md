@@ -1,7 +1,8 @@
 # startIndex
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the first element in a nonempty array.
 
@@ -24,7 +25,7 @@ var startIndex: InlineArray<count, Element>.Index { get }
 
 If the array is empty, `startIndex` is equal to `endIndex`.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

@@ -1,7 +1,8 @@
 # InstallProfileCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to install a configuration profile on a device.
 
@@ -16,14 +17,14 @@ The command to install a configuration profile on a device.
 
 ## Declaration
 
-```swift
+```
 object InstallProfileCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object InstallProfileCommand.Command](installprofilecommand/command-data.dictionary.md)
+- [object InstallProfileCommand.Command](./installprofilecommand/command-data.dictionary.md)
   The command to install a configuration profile on a device.
 
 ## Properties
@@ -33,7 +34,8 @@ object InstallProfileCommand
 
 ## See Also
 
-- [object InstallProfileResponse](installprofileresponse.md)
+### Commands and responses
+- [object InstallProfileResponse](./installprofileresponse.md)
   A response from the device after it processes the command to install a configuration profile on a device.
 
 

@@ -1,7 +1,8 @@
 # linearMotionAlongY
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The linear motion limits along the y-axis.
 

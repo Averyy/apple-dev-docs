@@ -1,12 +1,13 @@
 # tableView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The table view that contains the table column.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The table view that contains the table column.
 weak var tableView: NSTableView? { get set }
 ```
 
+```objc
+@property (weak, nullable) NSTableView * tableView;
+```
+
 #### Discussion
 
-You should never need to set this property; it’s set automatically when you add a table column to a table view using the `NSTableView` class’s method [`addTableColumn(_:)`](nstableview/addtablecolumn(_:).md).
+You should never need to set this property; it’s set automatically when you add a table column to a table view using the `NSTableView` class’s method [`addTableColumn(_:)`](../nstableview/addtablecolumn%28_%29.md).
 
 ## See Also
 
-- [func addTableColumn(NSTableColumn)](nstableview/addtablecolumn(_:).md)
+### Related Documentation
+- [func addTableColumn(NSTableColumn)](../nstableview/addtablecolumn%28_%29.md)
   Adds the specified column as the last column of the table view.
 
 

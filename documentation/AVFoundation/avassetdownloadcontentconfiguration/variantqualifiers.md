@@ -1,7 +1,8 @@
 # variantQualifiers
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The variant qualifiers for this configuration.
 
@@ -20,11 +21,16 @@ The variant qualifiers for this configuration.
 var variantQualifiers: [AVAssetVariantQualifier] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<AVAssetVariantQualifier *> * variantQualifiers;
+```
+
 ## See Also
 
-- [class AVAssetVariantQualifier](avassetvariantqualifier.md)
+### Accessing configuration details
+- [class AVAssetVariantQualifier](../avassetvariantqualifier.md)
   An object that represents an HTTP Live Streaming asset variant.
-- [var mediaSelections: [AVMediaSelection]](avassetdownloadcontentconfiguration/mediaselections.md)
+- [var mediaSelections: [AVMediaSelection]](./mediaselections.md)
   The media selections of an asset that a task downloads.
 
 

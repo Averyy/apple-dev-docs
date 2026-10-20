@@ -1,7 +1,8 @@
 # ManagedPreferences.PayloadContent
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The dictionary containing app preference domains. The key names are application preference domain identifiers (for example, `com.example.my-app`), or the string `.GlobalPreferences` for the global domain. The values are the corresponding forced and set-once preferences.
 
@@ -10,14 +11,14 @@ The dictionary containing app preference domains. The key names are application 
 
 ## Declaration
 
-```swift
+```
 object ManagedPreferences.PayloadContent
 ```
 
 ## Topics
 
 ### Objects
-- [object ManagedPreferences.PayloadContent.ANY](managedpreferences/payloadcontent-data.dictionary/any-data.dictionary.md)
+- [object ManagedPreferences.PayloadContent.ANY](./payloadcontent-data.dictionary/any-data.dictionary.md)
   The dictionary containing app preference domains.
 
 ## Properties

@@ -1,7 +1,8 @@
 # appliedContentSizeCategoryLimitsDescription
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that lists each of the view’s superviews, its content size category, and whether that view has content size category limits.
 
@@ -18,11 +19,16 @@ A string that lists each of the view’s superviews, its content size category, 
 var appliedContentSizeCategoryLimitsDescription: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * appliedContentSizeCategoryLimitsDescription;
+```
+
 ## See Also
 
-- [var minimumContentSizeCategory: UIContentSizeCategory?](uiview/minimumcontentsizecategory.md)
+### Managing font-sizing preferences
+- [var minimumContentSizeCategory: UIContentSizeCategory?](./minimumcontentsizecategory.md)
   The minimum content size category for the view and its subviews.
-- [var maximumContentSizeCategory: UIContentSizeCategory?](uiview/maximumcontentsizecategory.md)
+- [var maximumContentSizeCategory: UIContentSizeCategory?](./maximumcontentsizecategory.md)
   The maximum content size category for the view and its subviews.
 
 

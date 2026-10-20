@@ -1,7 +1,8 @@
 # init(image:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a message compose button that displays a custom image.
 
@@ -14,6 +15,10 @@ Creates a message compose button that displays a custom image.
 
 ```swift
 init(image: UIImage)
+```
+
+```objc
+- (instancetype) initWithImage:(UIImage *) image;
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ A message compose button with the custom image.
 
 ## See Also
 
-- [init()](cpmessagecomposebarbutton/init.md)
+### Creating a Message Compose Bar Button
+- [init()](./init%28%29.md)
   Creates a message compose button with a system-provided image.
 
 

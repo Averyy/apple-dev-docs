@@ -1,7 +1,8 @@
 # baseColor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The optional base color texture for the decal. Expects pre-multiplied alpha texture.
 

@@ -1,7 +1,8 @@
 # markerType
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style of the list marker.
 
@@ -21,11 +22,12 @@ var markerType: DocumentObservation.Container.List.Marker? { get }
 
 ## See Also
 
-- [var content: DocumentObservation.Container](documentobservation/container/list/item/content.md)
+### Inspecting an item
+- [var content: DocumentObservation.Container](./content.md)
   The content of the list item.
-- [var itemString: String](documentobservation/container/list/item/itemstring.md)
+- [var itemString: String](./itemstring.md)
   The transcript of the list item, excluding the list marker.
-- [var markerString: String](documentobservation/container/list/item/markerstring.md)
+- [var markerString: String](./markerstring.md)
   The list marker as a string.
 
 

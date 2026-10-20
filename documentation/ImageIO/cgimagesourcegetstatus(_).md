@@ -1,7 +1,8 @@
 # CGImageSourceGetStatus(_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Return the status of an image source.
 
@@ -20,9 +21,13 @@ Return the status of an image source.
 func CGImageSourceGetStatus(_ isrc: CGImageSource) -> CGImageSourceStatus
 ```
 
+```c
+extern CGImageSourceStatus CGImageSourceGetStatus(CGImageSourceRef isrc);
+```
+
 #### Return Value
 
-Returns the current status of the image source. See [`CGImageSourceStatus`](cgimagesourcestatus.md) for a list of possible values.
+Returns the current status of the image source. See [`CGImageSourceStatus`](./cgimagesourcestatus.md) for a list of possible values.
 
 #### Discussion
 
@@ -34,9 +39,10 @@ Status information is particularly informative for incremental image sources, bu
 
 ## See Also
 
-- [func CGImageSourceGetStatusAtIndex(CGImageSource, Int) -> CGImageSourceStatus](cgimagesourcegetstatusatindex(_:_:).md)
+### Getting the Image Status
+- [func CGImageSourceGetStatusAtIndex(CGImageSource, Int) -> CGImageSourceStatus](./cgimagesourcegetstatusatindex%28_,_%29.md)
   Returns the current status of an image at the specified location in the image source.
-- [enum CGImageSourceStatus](cgimagesourcestatus.md)
+- [enum CGImageSourceStatus](./cgimagesourcestatus.md)
   The set of status values for images and image sources.
 
 

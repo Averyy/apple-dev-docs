@@ -1,7 +1,8 @@
 # init(texture:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object from an image texture.
 
@@ -49,7 +50,8 @@ The following Metal code shows how to use the ambient occlusion texture in a sur
 
 ## See Also
 
-- [init(PhysicallyBasedMaterial.AmbientOcclusion)](custommaterial/ambientocclusion-swift.struct/init(_:).md)
+### Creating an ambient occlusion object
+- [init(PhysicallyBasedMaterial.AmbientOcclusion)](./init%28_%29.md)
   Creates an object from a physically based material’s ambient occlusion property.
 
 

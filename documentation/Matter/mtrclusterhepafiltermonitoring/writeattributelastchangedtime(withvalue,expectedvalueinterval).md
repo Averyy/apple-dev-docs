@@ -1,7 +1,8 @@
 # writeAttributeLastChangedTime(withValue:expectedValueInterval:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 func writeAttributeLastChangedTime(withValue dataValueDictionary: [String : Any], expectedValueInterval expectedValueIntervalMs: NSNumber)
+```
+
+```objc
+- (void) writeAttributeLastChangedTimeWithValue:(NSDictionary<NSString *,id> *) dataValueDictionary expectedValueInterval:(NSNumber *) expectedValueIntervalMs;
 ```
 
 

@@ -1,7 +1,8 @@
 # isPathEmpty
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the current path contains any subpaths.
 
@@ -10,7 +11,7 @@ Indicates whether the current path contains any subpaths.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ Indicates whether the current path contains any subpaths.
 var isPathEmpty: Bool { get }
 ```
 
+```c
+extern bool CGContextIsPathEmpty(CGContextRef c);
+```
+
 ## See Also
 
-- [var boundingBoxOfPath: CGRect](cgcontext/boundingboxofpath.md)
+### Examining the Current Graphics Path
+- [var boundingBoxOfPath: CGRect](./boundingboxofpath.md)
   Returns the smallest rectangle that contains the current path.
-- [var currentPointOfPath: CGPoint](cgcontext/currentpointofpath.md)
+- [var currentPointOfPath: CGPoint](./currentpointofpath.md)
   Returns the current point in a non-empty path.
-- [func pathContains(CGPoint, mode: CGPathDrawingMode) -> Bool](cgcontext/pathcontains(_:mode:).md)
+- [func pathContains(CGPoint, mode: CGPathDrawingMode) -> Bool](./pathcontains%28_,mode%29.md)
   Checks to see whether the specified point is contained in the current path.
 
 

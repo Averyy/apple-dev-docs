@@ -1,7 +1,8 @@
 # Delete an Activity Localization
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Remove a specific localization from a Game Center activity.
 
@@ -14,18 +15,30 @@ Remove a specific localization from a Game Center activity.
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*
+
+## Responses
+
+- `204` No Content
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read Activity Localization Information](get-v1-gamecenteractivitylocalizations-_id_.md)
+### Managing Game Center activities
+- [Read Activity Localization Information](./get-v1-gamecenteractivitylocalizations-_id_.md)
   Get information for a specific Game Center activity localization.
-- [Read Image Information for an Activity Localization](get-v1-gamecenteractivitylocalizations-_id_-image.md)
+- [Read Image Information for an Activity Localization](./get-v1-gamecenteractivitylocalizations-_id_-image.md)
   Get details about the image for a specific Game Center activity localization.
-- [Get the image ID for a Game Center activity localization](get-v1-gamecenteractivitylocalizations-_id_-relationships-image.md)
-- [Add an Activity Localization](post-v1-gamecenteractivitylocalizations.md)
+- [Get the image ID for a Game Center activity localization](./get-v1-gamecenteractivitylocalizations-_id_-relationships-image.md)
+- [Add an Activity Localization](./post-v1-gamecenteractivitylocalizations.md)
   Add a localization for a specific Game Center activity.
-- [Modify an Activity Localization](patch-v1-gamecenteractivitylocalizations-_id_.md)
+- [Modify an Activity Localization](./patch-v1-gamecenteractivitylocalizations-_id_.md)
   Update localization information for a specific Game Center activity.
 
 

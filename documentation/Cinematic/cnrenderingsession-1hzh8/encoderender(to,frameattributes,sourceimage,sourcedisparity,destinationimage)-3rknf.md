@@ -1,14 +1,15 @@
 # encodeRender(to:frameAttributes:sourceImage:sourceDisparity:destinationImage:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encode a command to render a shallow depth of field (SDoF) image to a pixel buffer.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 27.0+
 - tvOS 27.0+
 

@@ -1,6 +1,7 @@
 # Configuring your project to use mergeable libraries
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Use mergeable dynamic libraries to get app launch times similar to static linking in release builds, without losing dynamically linked build times in debug builds.
 
@@ -14,15 +15,15 @@ In this context, a debug or development build is unoptimized, where either the `
 
 In debug builds, Xcode 15 or later treats mergeable dependencies like normal dynamic libraries, without the overhead of creating mergeable metadata and merging all the libraries. In release builds, Xcode creates the mergeable metadata in your dynamic libraries, and merges dependencies into the target binary.
 
-![A diagram that shows the difference between app binary structure and size in debug and release builds.](/images/com.apple.Xcode/configuring-your-project-to-use-mergeable-libraries@2x.png)
+![A diagram that shows the difference between app binary structure and size in debug and release builds.](https://developer.apple.com/tutorials/images/com.apple.Xcode/configuring-your-project-to-use-mergeable-libraries@2x.png)
 
 In release builds, the binary is slightly larger, but avoids the overhead of loading dynamic links at runtime.
 
-> **Note**: Session 10268: [`Meet mergeable libraries`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10268)
+> **Related sessions from WWDC23**: Session 10268: [Meet mergeable libraries](https://developer.apple.com/videos/play/wwdc2023/10268)
 
-##### Merge Libraries Automatically in Xcode
+##### Merge libraries automatically in Xcode
 
-To automatically merge libraries, first open your project in Xcode 15 or later. Then, add the `MERGED_BINARY_TYPE` build setting to your app target, and set the value to `automatic`. With this build setting, Xcode treats mergeable dependencies like normal dynamic libraries in debug builds, but performs steps in release mode to automatically handle merging for direct dependencies. For more information on the `MERGED_BINARY_TYPE` build setting, see [`Create Merged Binary`](build-settings-reference#Create-Merged-Binary.md).
+To automatically merge libraries, first open your project in Xcode 15 or later. Then, add the `MERGED_BINARY_TYPE` build setting to your app target, and set the value to `automatic`. With this build setting, Xcode treats mergeable dependencies like normal dynamic libraries in debug builds, but performs steps in release mode to automatically handle merging for direct dependencies. For more information on the `MERGED_BINARY_TYPE` build setting, see [Create Merged Binary](./build-settings-reference.md#Create-Merged-Binary).
 
 A *direct dependency* is a library that meets two criteria:
 
@@ -38,7 +39,7 @@ In release builds:
 - Xcode also combines any mergeable pre-built XCFrameworks listed in your target’s Link Binary with Libraries build phase.
 - Xcode embeds mergeable target products in either the merged binary product or into a product, such as an app, that contains the merged binary product. Xcode does *not* include the binaries from the libraries in the embedded copy.
 
-> **Note**: Xcode does not automatically build indirect dependencies as mergeable in release builds. To configure indirect dependencies for merging, see the [`Manually configure merging`](https://developer.apple.com#Manually-configure-merging) section below.
+> **Note**: Xcode does not automatically build indirect dependencies as mergeable in release builds. To configure indirect dependencies for merging, see the [Manually configure merging](https://developer.apple.com#Manually-configure-merging) section below.
 
 In debug builds:
 
@@ -48,7 +49,7 @@ In debug builds:
 - Xcode embeds those target dependency products in either the merged binary product, or into a product containing the merged binary product. Xcode doesn’t include their binaries in the embedded copy (this is the same as the release build behavior).
 - Xcode also copies the target dependency products into a special location in the merged binary product. This special location contains only the binaries of the target dependency products. The merged binary product has an additional `@rpath` that points to the special location.
 
-##### Manually Configure Merging
+##### Manually configure merging
 
 In some cases, you may want to manually configure merging between your app or framework target and dependent libraries. For example, you might not want to automatically merge dependencies that you share between an app and an app extension if you’re concerned about the app extension’s binary size. To set up manual merging, configure your app or framework target, then configure your dependent libraries.
 
@@ -58,9 +59,9 @@ In your app or framework target, add the build setting `MERGED_BINARY_TYPE` and 
 - In debug builds, Xcode links any of your target’s direct dependencies which have `MERGEABLE_LIBRARY` enabled, but not `MAKE_MERGEABLE` with the linker flags `-reexport_framework`, `-reexport-l`, and so on.
 - Xcode uses normal linking for targets that don’t have `MERGEABLE_LIBRARY` enabled. This is the same linking that Xcode uses for static libraries, or dynamic libraries that aren’t mergeable.
 
-For each dependent library that you want to use merging, add the build setting `MERGEABLE_LIBRARY`, and set it to `YES`. For more information on the `MERGEABLE_LIBRARY` build setting, see [`Build Mergeable Library`](build-settings-reference#Build-Mergeable-Library.md).
+For each dependent library that you want to use merging, add the build setting `MERGEABLE_LIBRARY`, and set it to `YES`. For more information on the `MERGEABLE_LIBRARY` build setting, see [Build Mergeable Library](./build-settings-reference.md#Build-Mergeable-Library).
 
-##### Reduce Dependencies with a Group Library
+##### Reduce dependencies with a group library
 
 To create a group library that organizes your dependencies in your top level framework or app project:
 
@@ -70,24 +71,25 @@ To create a group library that organizes your dependencies in your top level fra
 - Add your group library as a dependency to your app or framework’s target.
 - Remove the individual libraries that you added to your group library as dependencies from your app or framework’s target.
 
-##### Create a Pre Built Mergeable Library
+##### Create a pre-built mergeable library
 
 To create a mergeable library that you can distribute as a binary package rather than as source:
 
 - Enable the Build Mergeable Library build setting on your library target.
-- Create an XCFramework from an archive of your library. For more information, see [`Creating a multiplatform binary framework bundle`](creating-a-multi-platform-binary-framework-bundle.md).
+- Create an XCFramework from an archive of your library. For more information, see [Creating a multiplatform binary framework bundle](./creating-a-multi-platform-binary-framework-bundle.md).
 
 When you include your mergeable library in an XCFramework, Xcode adds the key `MergeableMetadata` to the XCFramework’s `Info.plist` file to indicate to other projects that your library in the XCFramework is mergeable. You can only use XCFrameworks with mergeable metadata in Xcode 15 and later; in earlier versions, Xcode returns a build error.
 
-To use your XCFramework that contains mergeable metadata, add it to the Link Binaries build phase of a target that you configured for automatic or manual merging. For more information, see [`Link against additional frameworks and libraries`](customizing-the-build-phases-of-a-target#Link-against-additional-frameworks-and-libraries.md).
+To use your XCFramework that contains mergeable metadata, add it to the Link Binaries build phase of a target that you configured for automatic or manual merging. For more information, see [Link against additional frameworks and libraries](./customizing-the-build-phases-of-a-target.md#Link-against-additional-frameworks-and-libraries).
 
 ## See Also
 
-- [Improving the speed of incremental builds](improving-the-speed-of-incremental-builds.md)
+### Performance
+- [Improving the speed of incremental builds](./improving-the-speed-of-incremental-builds.md)
   Tell the Xcode build system about your project’s target-related dependencies, and reduce the compiler workload during each build cycle.
-- [Improving build efficiency with good coding practices](improving-build-efficiency-with-good-coding-practices.md)
+- [Improving build efficiency with good coding practices](./improving-build-efficiency-with-good-coding-practices.md)
   Shorten compile times by reducing the number of symbols your code exports and by giving the compiler the explicit information it needs.
-- [Building your project with explicit module dependencies](building-your-project-with-explicit-module-dependencies.md)
+- [Building your project with explicit module dependencies](./building-your-project-with-explicit-module-dependencies.md)
   Reduce compile times by eliminating unnecessary module variants using the Xcode build system.
 
 

@@ -1,7 +1,8 @@
 # makeCaptureScope(commandQueue:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func makeCaptureScope(commandQueue: any MTL4CommandQueue) -> any MTLCaptureScope
+```
+
+```objc
+- (id<MTLCaptureScope>) newCaptureScopeWithMTL4CommandQueue:(id<MTL4CommandQueue>) commandQueue;
 ```
 
 

@@ -1,7 +1,8 @@
 # contactPickerDidClose(_:)
 
 **Framework**: Contacts UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 In macOS, called when the contact picker’s popover has closed.
 
@@ -14,15 +15,20 @@ In macOS, called when the contact picker’s popover has closed.
 optional func contactPickerDidClose(_ picker: CNContactPicker)
 ```
 
+```objc
+- (void) contactPickerDidClose:(CNContactPicker *) picker;
+```
+
 ## Parameters
 
 - `picker`: The contact picker popover to be closed.
 
 ## See Also
 
-- [func contactPickerDidCancel(CNContactPickerViewController)](cncontactpickerdelegate/contactpickerdidcancel(_:).md)
+### Dismissing the Picker Interface
+- [func contactPickerDidCancel(CNContactPickerViewController)](./contactpickerdidcancel%28_%29.md)
   In iOS, called when the user taps Cancel.
-- [func contactPickerWillClose(CNContactPicker)](cncontactpickerdelegate/contactpickerwillclose(_:).md)
+- [func contactPickerWillClose(CNContactPicker)](./contactpickerwillclose%28_%29.md)
   In macOS, called when the contact picker’s popover is about to close.
 
 

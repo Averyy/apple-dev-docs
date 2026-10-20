@@ -1,7 +1,8 @@
 # imageSubtitle
 
 **Framework**: Messages  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subtitle for the image or media file.
 
@@ -16,25 +17,30 @@ The subtitle for the image or media file.
 var imageSubtitle: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * imageSubtitle;
+```
+
 #### Discussion
 
 The subtitle is drawn using white text, just below the title. This property defaults to `nil`.
 
 ## See Also
 
-- [var image: UIImage?](msmessagetemplatelayout/image.md)
+### Assigning Visual Elements
+- [var image: UIImage?](./image.md)
   An image used to represent the message in the transcript.
-- [var mediaFileURL: URL?](msmessagetemplatelayout/mediafileurl.md)
+- [var mediaFileURL: URL?](./mediafileurl.md)
   A media file used to represent the message in the transcript.
-- [var imageTitle: String?](msmessagetemplatelayout/imagetitle.md)
+- [var imageTitle: String?](./imagetitle.md)
   The title for the image or media file.
-- [var caption: String?](msmessagetemplatelayout/caption.md)
+- [var caption: String?](./caption.md)
   A left-aligned caption for the message bubble.
-- [var subcaption: String?](msmessagetemplatelayout/subcaption.md)
+- [var subcaption: String?](./subcaption.md)
   A left-aligned subcaption for the message bubble.
-- [var trailingCaption: String?](msmessagetemplatelayout/trailingcaption.md)
+- [var trailingCaption: String?](./trailingcaption.md)
   A right-aligned caption for the message bubble.
-- [var trailingSubcaption: String?](msmessagetemplatelayout/trailingsubcaption.md)
+- [var trailingSubcaption: String?](./trailingsubcaption.md)
   A right-aligned subcaption for the message bubble.
 
 

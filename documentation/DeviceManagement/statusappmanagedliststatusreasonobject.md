@@ -1,7 +1,8 @@
 # StatusAppManagedListStatusReasonObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about a status error.
 
@@ -14,14 +15,14 @@ Information about a status error.
 
 ## Declaration
 
-```swift
+```
 object StatusAppManagedListStatusReasonObject
 ```
 
 ## Topics
 
 ### Objects
-- [object StatusAppManagedListStatusReason_DetailsObject](statusappmanagedliststatusreason_detailsobject.md)
+- [object StatusAppManagedListStatusReason_DetailsObject](./statusappmanagedliststatusreason_detailsobject.md)
   A dictionary that contains additional details about the state.
 
 ## Properties
@@ -32,7 +33,8 @@ object StatusAppManagedListStatusReasonObject
 
 ## See Also
 
-- [object StatusAppManagedListManagedConfigurationObject](statusappmanagedlistmanagedconfigurationobject.md)
+### Objects
+- [object StatusAppManagedListManagedConfigurationObject](./statusappmanagedlistmanagedconfigurationobject.md)
   The status of app or extension managed configurations. This key is only present when managed configurations are available for the managed app or any of its extensions.
 
 

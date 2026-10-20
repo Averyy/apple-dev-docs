@@ -1,7 +1,8 @@
 # MediaPlaybackSnapshot.PlaybackState.stopped
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Playback is stopped.
 

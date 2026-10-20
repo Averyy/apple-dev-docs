@@ -1,7 +1,8 @@
 # contacts()
 
 **Framework**: Core MIDI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the array of network hosts.
 
@@ -18,17 +19,22 @@ Returns the array of network hosts.
 func contacts() -> Set<MIDINetworkHost>
 ```
 
+```objc
+- (NSSet<MIDINetworkHost *> *) contacts;
+```
+
 #### Return Value
 
 The set of MIDI network host objects.
 
 ## See Also
 
-- [func addContact(MIDINetworkHost) -> Bool](midinetworksession/addcontact(_:).md)
+### Managing Contacts
+- [func addContact(MIDINetworkHost) -> Bool](./addcontact%28_%29.md)
   Adds a host as a contact.
-- [func removeContact(MIDINetworkHost) -> Bool](midinetworksession/removecontact(_:).md)
+- [func removeContact(MIDINetworkHost) -> Bool](./removecontact%28_%29.md)
   Removes a host as a contact.
-- [let MIDINetworkNotificationContactsDidChange: String](midinetworknotificationcontactsdidchange.md)
+- [let MIDINetworkNotificationContactsDidChange: String](../midinetworknotificationcontactsdidchange.md)
   Indicates that the list of contacts changed.
 
 

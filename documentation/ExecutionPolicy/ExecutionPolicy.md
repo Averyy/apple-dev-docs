@@ -1,7 +1,8 @@
 # Execution Policy
 
 **Framework**: Execution Policy  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Provide functionality so developer tools can manage execution policy exceptions.
 
@@ -16,12 +17,12 @@ This framework provides the ability for developer tools to manage execution poli
 ## Topics
 
 ### Structures
-- [struct EPError](eperror-swift.struct.md)
+- [struct EPError](./eperror-swift.struct.md)
 ### Classes
-- [class EPDeveloperTool](epdevelopertool.md)
-- [class EPExecutionPolicy](epexecutionpolicy.md)
+- [class EPDeveloperTool](./epdevelopertool.md)
+- [class EPExecutionPolicy](./epexecutionpolicy.md)
 ### Reference
-- [ExecutionPolicy Constants](executionpolicy-constants.md)
+- [ExecutionPolicy Constants](./executionpolicy-constants.md)
 
 
 ---

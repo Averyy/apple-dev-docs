@@ -1,23 +1,25 @@
 # bmRequestType
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t bmRequestType;
 ```
 
 ## See Also
 
-- [bRequest](iousbdevicerequest/brequest.md)
-- [wValue](iousbdevicerequest/wvalue.md)
-- [wIndex](iousbdevicerequest/windex.md)
-- [wLength](iousbdevicerequest/wlength.md)
+### Getting the Request Data
+- [bRequest](./brequest.md)
+- [wValue](./wvalue.md)
+- [wIndex](./windex.md)
+- [wLength](./wlength.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # Entity.Observable
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An observable interface to an entity’s properties and components, enabling reactive updates using Swift’s Observation framework.
 
@@ -27,24 +28,24 @@ When you access properties in this structure, they participate in Observation. T
 ## Topics
 
 ### Structures
-- [Entity.Observable.Components](entity/observable-swift.struct/components-swift.struct.md)
+- [Entity.Observable.Components](./observable-swift.struct/components-swift.struct.md)
   An observable collection of an entity’s attached components, allowing for reactive updates based on component changes.
 ### Instance Properties
-- [var children: Entity.ChildCollection](entity/observable-swift.struct/children.md)
+- [var children: Entity.ChildCollection](./observable-swift.struct/children.md)
   The collection of child entities, allowing observation of its contents
-- [var components: Entity.Observable.Components](entity/observable-swift.struct/components-swift.property.md)
+- [var components: Entity.Observable.Components](./observable-swift.struct/components-swift.property.md)
   The components an entity manages, enabling observation of their presence and values.
-- [var isEnabled: Bool](entity/observable-swift.struct/isenabled.md)
+- [var isEnabled: Bool](./observable-swift.struct/isenabled.md)
   A Boolean value that indicates whether the entity is enabled in the scene, allowing observation of its state.
-- [var name: String](entity/observable-swift.struct/name.md)
+- [var name: String](./observable-swift.struct/name.md)
   The entity’s name, enabling observation of its changes.
-- [var orientation: simd_quatf](entity/observable-swift.struct/orientation.md)
+- [var orientation: simd_quatf](./observable-swift.struct/orientation.md)
   The entity’s local orientation, allowing observation of its rotation.
-- [var position: SIMD3<Float>](entity/observable-swift.struct/position.md)
+- [var position: SIMD3<Float>](./observable-swift.struct/position.md)
   The entity’s local position, allowing observation of its translation.
-- [var scale: SIMD3<Float>](entity/observable-swift.struct/scale.md)
+- [var scale: SIMD3<Float>](./observable-swift.struct/scale.md)
   The entity’s local scale, enabling observation of its size.
-- [var transform: Transform](entity/observable-swift.struct/transform.md)
+- [var transform: Transform](./observable-swift.struct/transform.md)
   The entity’s position, rotation, and scale, enabling observation of its complete spatial state.
 
 

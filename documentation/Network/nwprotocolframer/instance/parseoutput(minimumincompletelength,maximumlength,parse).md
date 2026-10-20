@@ -1,7 +1,8 @@
 # parseOutput(minimumIncompleteLength:maximumLength:parse:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Examines the content of output data while inside your output handler.
 
@@ -32,11 +33,12 @@ Returns true if the requested length was available to parse, or false if the con
 
 ## See Also
 
-- [func writeOutput(data: Data)](nwprotocolframer/instance/writeoutput(data:)-ydvk.md)
+### Writing Output
+- [func writeOutput(data: Data)](./writeoutput%28data%29-ydvk.md)
   Sends arbitrary output data from your protocol to the next protocol.
-- [func writeOutputNoCopy(length: Int) throws](nwprotocolframer/instance/writeoutputnocopy(length:).md)
+- [func writeOutputNoCopy(length: Int) throws](./writeoutputnocopy%28length%29.md)
   Sends a specific number of bytes from a message while inside your output handler.
-- [func passThroughOutput()](nwprotocolframer/instance/passthroughoutput.md)
+- [func passThroughOutput()](./passthroughoutput%28%29.md)
   Indicates that your protocol no longer needs to handle output data.
 
 

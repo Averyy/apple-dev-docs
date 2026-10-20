@@ -1,7 +1,8 @@
 # executeFunction(_:arguments:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Synchronously executes the specified function with the provided context.
 
@@ -26,7 +27,7 @@ If the underlying model contains dynamic shaped inputs or outputs, these must be
 
 The same context must only be used by a single thread at a time.
 
-> **Note**: `BNNSGraphContextExecute`
+> **See Also**: `BNNSGraphContextExecute`
 
 ## Parameters
 

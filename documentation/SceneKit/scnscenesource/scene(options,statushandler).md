@@ -1,18 +1,19 @@
 # scene(options:statusHandler:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads the entire scene graph from the scene source and calls the specified block to provide progress information.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,24 +21,29 @@ Loads the entire scene graph from the scene source and calls the specified block
 func scene(options: [SCNSceneSource.LoadingOption : Any]? = nil, statusHandler: SCNSceneSourceStatusHandler? = nil) -> SCNScene?
 ```
 
+```objc
+- (SCNScene *) sceneWithOptions:(NSDictionary<NSString *,id> *) options statusHandler:(SCNSceneSourceStatusHandler) statusHandler;
+```
+
 #### Return Value
 
-An [`SCNScene`](scnscene.md) object containing the entire scene graph from the scene source, or `nil` if loading was not successful.
+An [`SCNScene`](../scnscene.md) object containing the entire scene graph from the scene source, or `nil` if loading was not successful.
 
 #### Discussion
 
-Use this method if you need to monitor progress while loading a scene from the scene source. For simpler scene loading, use the [`scene(options:)`](scnscenesource/scene(options:).md) method or the [`SCNScene`](scnscene.md) method [`init(url:options:)`](scnscene/init(url:options:)-7ugvv.md).
+Use this method if you need to monitor progress while loading a scene from the scene source. For simpler scene loading, use the [`scene(options:)`](./scene%28options%29.md) method or the [`SCNScene`](../scnscene.md) method [`init(url:options:)`](../scnscene/init%28url,options%29-7ugvv.md).
 
-A scene source can contain objects that are not part of its scene graph. To obtain these objects, you must load them individually with the the [`entryWithIdentifier:withClass:`](scnscenesource/entrywithidentifier:withclass:.md) or [`entries(passingTest:)`](scnscenesource/entries(passingtest:).md) method. For example, a scene file containing a game character could include several animations for the character geometry (such as running, jumping, and standing idle). Because you typically do not apply multiple animations at once, the scene file contains these animations without their being attached to the character geometry.
+A scene source can contain objects that are not part of its scene graph. To obtain these objects, you must load them individually with the the [`entryWithIdentifier:withClass:`](./entrywithidentifier_withclass_.md) or [`entries(passingTest:)`](./entries%28passingtest%29.md) method. For example, a scene file containing a game character could include several animations for the character geometry (such as running, jumping, and standing idle). Because you typically do not apply multiple animations at once, the scene file contains these animations without their being attached to the character geometry.
 
 ## Parameters
 
 - `options`: A dictionary containing options that affect scene loading. See `Scene Loading Options` for available keys and values. Pass `nil` to use default options.
-- `statusHandler`: An [`SCNSceneSourceStatusHandler`](scnscenesourcestatushandler.md) block. SceneKit calls this block periodically to report progress while loading the scene.
+- `statusHandler`: An [`SCNSceneSourceStatusHandler`](../scnscenesourcestatushandler.md) block. SceneKit calls this block periodically to report progress while loading the scene.
 
 ## See Also
 
-- [func scene(options: [SCNSceneSource.LoadingOption : Any]?) throws -> SCNScene](scnscenesource/scene(options:).md)
+### Loading a Complete Scene
+- [func scene(options: [SCNSceneSource.LoadingOption : Any]?) throws -> SCNScene](./scene%28options%29.md)
   Instantiates a scene from the scene source with the specified options.
 
 

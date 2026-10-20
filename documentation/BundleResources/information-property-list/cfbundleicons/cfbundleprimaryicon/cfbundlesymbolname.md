@@ -1,7 +1,8 @@
 # CFBundleSymbolName
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of the symbol to show in the action sheet, and in Finder’s sidebar on macOS.
 
@@ -9,9 +10,10 @@ The name of the symbol to show in the action sheet, and in Finder’s sidebar on
 - iOS 13.0+
 - iPadOS 13.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `CFBundleSymbolName`
+- **Type**: string
 
 #### Discussion
 
@@ -22,17 +24,17 @@ The system associates the given symbol with your application. The system display
 
 To use a symbol from SF Symbols as the icon, set the value of `CFBundleSymbolName` to the symbol’s name. For example, to use the `flame.fill` symbol, configure the `Info.plist` entry as follows:
 
-![Screenshot showing the Icon files portion of an Info.plist file containing a primary icon entry with CFBundleSymbolName inside of that. The value of CFBundleSymbolName is a string containing the value “flame.fill”.](/images/com.apple.bundleresources/media-3922506@2x.png)
+![Screenshot showing the Icon files portion of an Info.plist file containing a primary icon entry with CFBundleSymbolName inside of that. The value of CFBundleSymbolName is a string containing the value “flame.fill”.](https://developer.apple.com/tutorials/images/com.apple.bundleresources/media-3922506@2x.png)
 
 The resulting item shown on the action sheet looks like this:
 
-![A screenshot of an action sheet entry showing an icon using the flame.fill SF symbol. ](/images/com.apple.bundleresources/media-3922500@2x.png)
+![A screenshot of an action sheet entry showing an icon using the flame.fill SF symbol. ](https://developer.apple.com/tutorials/images/com.apple.bundleresources/media-3922500@2x.png)
 
 In the Finder sidebar, it looks like this:
 
-![A screenshot of Finder, showing the flame.fill SF Symbol in the sidebar.](/images/com.apple.bundleresources/media-3922503@2x.png)
+![A screenshot of Finder, showing the flame.fill SF Symbol in the sidebar.](https://developer.apple.com/tutorials/images/com.apple.bundleresources/media-3922503@2x.png)
 
-To create a custom symbol for your app, see [`Creating custom symbols`](https://developer.apple.com/documentation/technologyoverviews/custom-sf-symbols).
+To create a custom symbol for your app, see [Creating custom symbols](../../../../TechnologyOverviews/custom-sf-symbols.md).
 
 
 ---

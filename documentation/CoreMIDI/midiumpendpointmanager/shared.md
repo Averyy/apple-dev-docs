@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 class var shared: MIDIUMPEndpointManager { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) MIDIUMPEndpointManager * sharedInstance;
 ```
 
 

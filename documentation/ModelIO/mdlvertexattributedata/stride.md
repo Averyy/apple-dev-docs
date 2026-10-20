@@ -1,7 +1,8 @@
 # stride
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stride, in bytes, between vertex information for consecutive vertices in the data.
 
@@ -19,11 +20,16 @@ The stride, in bytes, between vertex information for consecutive vertices in the
 var stride: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger stride;
+```
+
 ## See Also
 
-- [var dataStart: UnsafeMutableRawPointer](mdlvertexattributedata/datastart.md)
+### Accessing Data for a Vertex Attribute
+- [var dataStart: UnsafeMutableRawPointer](./datastart.md)
   The offset, in bytes, from the start of the data to where vertex attribute information begins.
-- [var format: MDLVertexFormat](mdlvertexattributedata/format.md)
+- [var format: MDLVertexFormat](./format.md)
   The format of per-vertex data for the attribute.
 
 

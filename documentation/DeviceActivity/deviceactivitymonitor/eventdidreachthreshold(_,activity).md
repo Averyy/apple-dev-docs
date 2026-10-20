@@ -1,7 +1,8 @@
 # eventDidReachThreshold(_:activity:)
 
 **Framework**: Device Activity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates that the activity reached its threshold.
 
@@ -27,7 +28,8 @@ The system invokes this method when use of the `activity` reaches its threshold.
 
 ## See Also
 
-- [func eventWillReachThresholdWarning(DeviceActivityEvent.Name, activity: DeviceActivityName)](deviceactivitymonitor/eventwillreachthresholdwarning(_:activity:).md)
+### Monitoring Event Thresholds
+- [func eventWillReachThresholdWarning(DeviceActivityEvent.Name, activity: DeviceActivityName)](./eventwillreachthresholdwarning%28_,activity%29.md)
   Warns your app that an activity is about to reach its threshold.
 
 

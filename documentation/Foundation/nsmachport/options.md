@@ -1,7 +1,8 @@
 # NSMachPort.Options
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Used to remove access rights to a mach port when the `NSMachPort` object is invalidated or destroyed.
 
@@ -20,27 +21,31 @@ Used to remove access rights to a mach port when the `NSMachPort` object is inva
 struct Options
 ```
 
+```c
+enum NSMachPortOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var deallocateReceiveRight: NSMachPort.Options](nsmachport/options/deallocatereceiveright.md)
+- [static var deallocateReceiveRight: NSMachPort.Options](./options/deallocatereceiveright.md)
   Remove a receive right when the `NSMachPort` object is invalidated or destroyed.
-- [static var deallocateSendRight: NSMachPort.Options](nsmachport/options/deallocatesendright.md)
+- [static var deallocateSendRight: NSMachPort.Options](./options/deallocatesendright.md)
   Deallocate a send right when the `NSMachPort` object is invalidated or destroyed.
 ### Initializers
-- [init(rawValue: UInt)](nsmachport/options/init(rawvalue:).md)
+- [init(rawValue: UInt)](./options/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

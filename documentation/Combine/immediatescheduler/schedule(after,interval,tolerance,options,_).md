@@ -1,7 +1,8 @@
 # schedule(after:interval:tolerance:options:_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the action at some time after the specified date, at the specified frequency, optionally taking into account tolerance if possible.
 
@@ -27,9 +28,10 @@ The immediate scheduler ignores `date` and performs the action immediately.
 
 ## See Also
 
-- [func schedule(after: ImmediateScheduler.SchedulerTimeType, tolerance: ImmediateScheduler.SchedulerTimeType.Stride, options: ImmediateScheduler.SchedulerOptions?, () -> Void)](immediatescheduler/schedule(after:tolerance:options:_:).md)
+### Scheduling actions
+- [func schedule(after: ImmediateScheduler.SchedulerTimeType, tolerance: ImmediateScheduler.SchedulerTimeType.Stride, options: ImmediateScheduler.SchedulerOptions?, () -> Void)](./schedule%28after,tolerance,options,_%29.md)
   Performs the action at some time after the specified date.
-- [func schedule(options: ImmediateScheduler.SchedulerOptions?, () -> Void)](immediatescheduler/schedule(options:_:).md)
+- [func schedule(options: ImmediateScheduler.SchedulerOptions?, () -> Void)](./schedule%28options,_%29.md)
   Performs the action at the next possible opportunity.
 
 

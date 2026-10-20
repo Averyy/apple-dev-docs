@@ -1,7 +1,8 @@
 # sourceFrame
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - visionOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var sourceFrame: WKFrameInfo { get }
+```
+
+```objc
+@property (nonatomic, readonly) WKFrameInfo * sourceFrame;
 ```
 
 #### Discussion

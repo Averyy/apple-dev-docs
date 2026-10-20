@@ -1,23 +1,28 @@
 # CFNumberFormatterSetFormat(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the format string of a number formatter.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFNumberFormatterSetFormat(_ formatter: CFNumberFormatter!, _ formatString: CFString!)
+```
+
+```c
+extern void CFNumberFormatterSetFormat(CFNumberFormatterRef formatter, CFStringRef formatString);
 ```
 
 #### Discussion
@@ -27,11 +32,12 @@ The format string may override other properties previously set using other funct
 ## Parameters
 
 - `formatter`: The number formatter to modify.
-- `formatString`: The format string to be used by `formatter`. See [`Creating and Using CFNumberFormatter Objects`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDataFormatting/Articles/dfCreatingCFNumberFormatters.html#//apple_ref/doc/uid/TP40002342) for more information.
+- `formatString`: The format string to be used by `formatter`. See [Creating and Using CFNumberFormatter Objects](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDataFormatting/Articles/dfCreatingCFNumberFormatters.html#//apple_ref/doc/uid/TP40002342) for more information.
 
 ## See Also
 
-- [func CFNumberFormatterSetProperty(CFNumberFormatter!, CFNumberFormatterKey!, CFTypeRef!)](cfnumberformattersetproperty(_:_:_:).md)
+### Configuring a Number Formatter
+- [func CFNumberFormatterSetProperty(CFNumberFormatter!, CFNumberFormatterKey!, CFTypeRef!)](./cfnumberformattersetproperty%28_,_,_%29.md)
   Sets a number formatter property using a key-value pair.
 
 

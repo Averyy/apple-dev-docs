@@ -1,14 +1,15 @@
 # getTimestamp
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn getTimestamp(uint64_t *timestamp) const;
 ```
 

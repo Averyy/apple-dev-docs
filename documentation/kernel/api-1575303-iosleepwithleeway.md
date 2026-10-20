@@ -1,24 +1,26 @@
 # IOSleepWithLeeway
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 void IOSleepWithLeeway(unsigned int intervalMilliseconds, unsigned int leewayMilliseconds);
 ```
 
 ## See Also
 
-- [IODelay](1575328-iodelay.md)
+### Sleep
+- [IODelay](./api-1575328-iodelay.md)
   Spin delay for a number of microseconds.
-- [IOPause](1575333-iopause.md)
+- [IOPause](./api-1575333-iopause.md)
   Spin delay for a number of nanoseconds.
-- [IOSleep](1575320-iosleep.md)
+- [IOSleep](./api-1575320-iosleep.md)
   Sleep the calling thread for a number of milliseconds.
 
 

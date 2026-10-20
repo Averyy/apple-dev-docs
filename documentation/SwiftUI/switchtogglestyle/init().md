@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a switch toggle style.
 
@@ -23,7 +24,7 @@ init()
 
 #### Discussion
 
-Don’t call this initializer directly. Instead, use the [`switch`](togglestyle/switch.md) static variable to create this style:
+Don’t call this initializer directly. Instead, use the [`switch`](../togglestyle/switch.md) static variable to create this style:
 
 ```swift
 Toggle("Enhance Sound", isOn: $isEnhanced)
@@ -32,7 +33,8 @@ Toggle("Enhance Sound", isOn: $isEnhanced)
 
 ## See Also
 
-- [init(tint: Color)](switchtogglestyle/init(tint:).md)
+### Creating the toggle style
+- [init(tint: Color)](./init%28tint%29.md)
   Creates a switch style with a tint color.
 
 

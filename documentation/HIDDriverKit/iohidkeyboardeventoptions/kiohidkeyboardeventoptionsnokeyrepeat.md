@@ -1,17 +1,18 @@
 # kIOHIDKeyboardEventOptionsNoKeyRepeat
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An option for not applying the default key repeat logic to the event.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOHIDKeyboardEventOptionsNoKeyRepeat
 ```
 

@@ -1,7 +1,8 @@
 # prompt
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 DOMString? prompt(
     optional DOMString message, 
     optional DOMString defaultValue

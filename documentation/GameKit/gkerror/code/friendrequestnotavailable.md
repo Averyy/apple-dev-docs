@@ -1,7 +1,8 @@
 # GKError.Code.friendRequestNotAvailable
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The player can’t send a friend request at this time from this device.
 
@@ -20,13 +21,18 @@ The player can’t send a friend request at this time from this device.
 case friendRequestNotAvailable
 ```
 
+```c
+GKErrorFriendRequestNotAvailable
+```
+
 ## See Also
 
-- [GKError.Code.friendListDescriptionMissing](gkerror/code/friendlistdescriptionmissing.md)
+### Friend List Errors
+- [GKError.Code.friendListDescriptionMissing](./friendlistdescriptionmissing.md)
   Access to the local player’s list of friends denied for lack of a reason.
-- [GKError.Code.friendListRestricted](gkerror/code/friendlistrestricted.md)
+- [GKError.Code.friendListRestricted](./friendlistrestricted.md)
   Access to the local player’s list of friends restricted.
-- [GKError.Code.friendListDenied](gkerror/code/friendlistdenied.md)
+- [GKError.Code.friendListDenied](./friendlistdenied.md)
   Access to the local player’s list of friends denied.
 
 

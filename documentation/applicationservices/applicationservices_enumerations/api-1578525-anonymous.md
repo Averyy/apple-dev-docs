@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kICServicesTCPMask: Int](kicservicestcpmask.md)
-- [var kICServicesUDPMask: Int](kicservicesudpmask.md)
+- [var kICServicesTCPMask: Int](../kicservicestcpmask.md)
+- [var kICServicesUDPMask: Int](../kicservicesudpmask.md)
 
 
 ---

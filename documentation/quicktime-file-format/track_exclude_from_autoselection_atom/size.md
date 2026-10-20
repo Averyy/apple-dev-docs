@@ -1,7 +1,8 @@
 # Size
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer that specifies the number of bytes in the track exclude from autoselection atom.
 
@@ -11,7 +12,8 @@ This must be `8`, as this atom must contain no data.
 
 ## See Also
 
-- [Type](track_exclude_from_autoselection_atom/type.md)
+### Data fields
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
 
 

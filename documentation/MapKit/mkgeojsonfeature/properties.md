@@ -1,7 +1,8 @@
 # properties
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional serialized JSON data that corresponds to the properties key.
 
@@ -20,15 +21,20 @@ Optional serialized JSON data that corresponds to the properties key.
 var properties: Data? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSData * properties;
+```
+
 #### Discussion
 
 MapKit exposes these optional properties but treats them as opaque.
 
 ## See Also
 
-- [var geometry: [any MKShape & MKGeoJSONObject]](mkgeojsonfeature/geometry.md)
+### Feature properties
+- [var geometry: [any MKShape & MKGeoJSONObject]](./geometry.md)
   The shape or shapes associated with the GeoJSON feature.
-- [var identifier: String?](mkgeojsonfeature/identifier.md)
+- [var identifier: String?](./identifier.md)
   An optional identifier the class returns as a string.
 
 

@@ -1,7 +1,8 @@
 # preferredSurroundingsEffect(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies an effect to passthrough video.
 
@@ -21,7 +22,7 @@ A view that exhibits the specified preference.
 
 #### Discussion
 
-Use this modifier to indicate a preference for the appearance of passthrough video when displaying the modified view. For example, you can enhance the immersiveness of a scene that uses the default [`mixed`](immersionstyle/mixed.md) immersion style by applying the [`systemDark`](surroundingseffect/systemdark.md) preference to a view inside the scene:
+Use this modifier to indicate a preference for the appearance of passthrough video when displaying the modified view. For example, you can enhance the immersiveness of a scene that uses the default [`mixed`](../immersionstyle/mixed.md) immersion style by applying the [`systemDark`](../surroundingseffect/systemdark.md) preference to a view inside the scene:
 
 ```swift
 ImmersiveSpace(id: "orbit") {
@@ -42,11 +43,12 @@ Use a value of `nil` to indicate that you have no preference. You typically do t
 
 ## See Also
 
-- [struct SurroundingsEffect](surroundingseffect.md)
+### Configuring passthrough
+- [struct SurroundingsEffect](../surroundingseffect.md)
   Effects that the system can apply to passthrough video.
-- [func breakthroughEffect(BreakthroughEffect) -> some View](view/breakthrougheffect(_:).md)
+- [func breakthroughEffect(BreakthroughEffect) -> some View](./breakthrougheffect%28_%29.md)
   Ensures that the view is always visible to the user, even when other content is occluding it, like 3D models.
-- [struct BreakthroughEffect](breakthrougheffect.md)
+- [struct BreakthroughEffect](../breakthrougheffect.md)
   The way a presentation shows through content in front of it.
 
 

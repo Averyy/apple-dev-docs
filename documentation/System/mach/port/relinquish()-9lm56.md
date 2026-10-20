@@ -1,7 +1,8 @@
 # relinquish()
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transfer ownership of the underlying port right to the caller.
 
@@ -19,6 +20,8 @@ Transfer ownership of the underlying port right to the caller.
 ```swift
 consuming func relinquish() -> (name: mach_port_name_t, context: mach_port_context_t)
 ```
+
+Available when `RightType` is `Mach.ReceiveRight`.
 
 #### Discussion
 

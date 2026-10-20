@@ -1,13 +1,14 @@
 # UIDeviceOrientationIsValidInterfaceOrientation(_:)
 
 **Framework**: UIKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,12 @@ func UIDeviceOrientationIsValidInterfaceOrientation(_ orientation: UIDeviceOrien
 
 ## See Also
 
-- [func UIDeviceOrientationIsLandscape(UIDeviceOrientation) -> Bool](uideviceorientationislandscape(_:).md)
-- [func UIDeviceOrientationIsPortrait(UIDeviceOrientation) -> Bool](uideviceorientationisportrait(_:).md)
-- [func UIInterfaceOrientationIsLandscape(UIInterfaceOrientation) -> Bool](uiinterfaceorientationislandscape(_:).md)
-- [func UIInterfaceOrientationIsPortrait(UIInterfaceOrientation) -> Bool](uiinterfaceorientationisportrait(_:).md)
-- [func UIWritingToolsCoordinatorTextAnimationDebugDescription(UIWritingToolsCoordinator.TextAnimation) -> String](uiwritingtoolscoordinatortextanimationdebugdescription(_:).md)
+### Functions
+- [func UIDeviceOrientationIsLandscape(UIDeviceOrientation) -> Bool](./uideviceorientationislandscape%28_%29.md)
+- [func UIDeviceOrientationIsPortrait(UIDeviceOrientation) -> Bool](./uideviceorientationisportrait%28_%29.md)
+- [func UIInterfaceOrientationIsLandscape(UIInterfaceOrientation) -> Bool](./uiinterfaceorientationislandscape%28_%29.md)
+- [func UIInterfaceOrientationIsPortrait(UIInterfaceOrientation) -> Bool](./uiinterfaceorientationisportrait%28_%29.md)
+- [func UIWritingToolsCoordinatorTextAnimationDebugDescription(UIWritingToolsCoordinator.TextAnimation) -> String](./uiwritingtoolscoordinatortextanimationdebugdescription%28_%29.md)
 
 
 ---

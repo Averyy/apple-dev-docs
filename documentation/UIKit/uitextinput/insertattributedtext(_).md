@@ -1,7 +1,8 @@
 # insertAttributedText(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -14,6 +15,10 @@
 
 ```swift
 optional func insertAttributedText(_ string: NSAttributedString)
+```
+
+```objc
+- (void) insertAttributedText:(NSAttributedString *) string;
 ```
 
 

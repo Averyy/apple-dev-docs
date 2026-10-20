@@ -1,14 +1,15 @@
 # double_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 typedef double double_t;
 ```
 

@@ -1,7 +1,8 @@
 # PDFInterpolationQuality.high
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The case specifying high interpolation quality.
 
@@ -19,11 +20,16 @@ The case specifying high interpolation quality.
 case high
 ```
 
+```c
+kPDFInterpolationQualityHigh
+```
+
 ## See Also
 
-- [PDFInterpolationQuality.none](pdfinterpolationquality/none.md)
+### Enumeration Cases
+- [PDFInterpolationQuality.none](./none.md)
   The case where no interpolation quality is specified.
-- [PDFInterpolationQuality.low](pdfinterpolationquality/low.md)
+- [PDFInterpolationQuality.low](./low.md)
   The case specifying low interpolation quality.
 
 

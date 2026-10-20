@@ -1,7 +1,8 @@
 # state
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of the transaction in the test environment.
 
@@ -18,6 +19,10 @@ The state of the transaction in the test environment.
 
 ```swift
 var state: SKPaymentTransactionState { get }
+```
+
+```objc
+@property (nonatomic, readonly) SKPaymentTransactionState state;
 ```
 
 #### Discussion

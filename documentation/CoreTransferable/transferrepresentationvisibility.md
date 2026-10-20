@@ -1,7 +1,8 @@
 # TransferRepresentationVisibility
 
 **Framework**: Core Transferable  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The visibility levels that specify the kinds of apps and processes that can see an item in transit.
 
@@ -23,25 +24,26 @@ struct TransferRepresentationVisibility
 ## Topics
 
 ### Specifying transfer visibility
-- [static let all: TransferRepresentationVisibility](transferrepresentationvisibility/all.md)
+- [static let all: TransferRepresentationVisibility](./transferrepresentationvisibility/all.md)
   The visibility level that specifies that any app or process can access the item.
-- [static let team: TransferRepresentationVisibility](transferrepresentationvisibility/team.md)
+- [static let team: TransferRepresentationVisibility](./transferrepresentationvisibility/team.md)
   The visibility level that specifies that the item is visible only to apps created by the current app’s development team.
-- [static let group: TransferRepresentationVisibility](transferrepresentationvisibility/group.md)
+- [static let group: TransferRepresentationVisibility](./transferrepresentationvisibility/group.md)
   The visibility level that specifies that the item is visible only to macOS apps in the same App Group.
-- [static let ownProcess: TransferRepresentationVisibility](transferrepresentationvisibility/ownprocess.md)
+- [static let ownProcess: TransferRepresentationVisibility](./transferrepresentationvisibility/ownprocess.md)
   The visibility level that specifies that the item is visible only within the app that’s the source of the item.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ProxyRepresentation](proxyrepresentation.md)
+### Transfer customization
+- [struct ProxyRepresentation](./proxyrepresentation.md)
   A transfer representation that uses another type’s transfer representation as its own.
 
 

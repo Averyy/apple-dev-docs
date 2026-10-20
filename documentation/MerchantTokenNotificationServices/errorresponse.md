@@ -1,7 +1,8 @@
 # ErrorResponse
 
 **Framework**: Apple Pay Merchant Token Management API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about errors that the API returns in the response body whenever an API request is unsuccessful.
 
@@ -11,7 +12,7 @@ Information about errors that the API returns in the response body whenever an A
 
 ## Declaration
 
-```swift
+```
 object ErrorResponse
 ```
 

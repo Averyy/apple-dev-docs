@@ -1,7 +1,8 @@
 # relationships(forDestination:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array containing the relationships of the receiver where the entity description of the relationship is a given entity.
 
@@ -10,7 +11,7 @@ Returns an array containing the relationships of the receiver where the entity d
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Returns an array containing the relationships of the receiver where the entity d
 func relationships(forDestination entity: NSEntityDescription) -> [NSRelationshipDescription]
 ```
 
+```objc
+- (NSArray<NSRelationshipDescription *> *) relationshipsWithDestinationEntity:(NSEntityDescription *) entity;
+```
+
 #### Return Value
 
-An array containing the relationships of the receiver where the entity description of the relationship is `entity`. Elements in the array are instances of [`NSRelationshipDescription`](nsrelationshipdescription.md).
+An array containing the relationships of the receiver where the entity description of the relationship is `entity`. Elements in the array are instances of [`NSRelationshipDescription`](../nsrelationshipdescription.md).
 
 ## Parameters
 
@@ -30,13 +35,14 @@ An array containing the relationships of the receiver where the entity descripti
 
 ## See Also
 
-- [var propertiesByName: [String : NSPropertyDescription]](nsentitydescription/propertiesbyname.md)
+### Working with properties
+- [var propertiesByName: [String : NSPropertyDescription]](./propertiesbyname.md)
   A dictionary containing the properties of the receiver.
-- [var properties: [NSPropertyDescription]](nsentitydescription/properties.md)
+- [var properties: [NSPropertyDescription]](./properties.md)
   An array containing the properties of the receiver.
-- [var attributesByName: [String : NSAttributeDescription]](nsentitydescription/attributesbyname.md)
+- [var attributesByName: [String : NSAttributeDescription]](./attributesbyname.md)
   The attributes of the receiver in a dictionary.
-- [var relationshipsByName: [String : NSRelationshipDescription]](nsentitydescription/relationshipsbyname.md)
+- [var relationshipsByName: [String : NSRelationshipDescription]](./relationshipsbyname.md)
   The relationships of the receiver in a dictionary.
 
 

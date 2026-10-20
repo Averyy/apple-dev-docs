@@ -1,12 +1,13 @@
 # NSImageView.FrameStyle.grayBezel
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A gray, concave bezel that makes the image look sunken.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ A gray, concave bezel that makes the image look sunken.
 case grayBezel
 ```
 
+```c
+NSImageFrameGrayBezel
+```
+
 ## See Also
 
-- [NSImageView.FrameStyle.none](nsimageview/framestyle/none.md)
+### Constants
+- [NSImageView.FrameStyle.none](./none.md)
   An invisible frame
-- [NSImageView.FrameStyle.photo](nsimageview/framestyle/photo.md)
+- [NSImageView.FrameStyle.photo](./photo.md)
   A thin black outline and a dropped shadow.
-- [NSImageView.FrameStyle.groove](nsimageview/framestyle/groove.md)
+- [NSImageView.FrameStyle.groove](./groove.md)
   A thin groove that looks etched around the image.
-- [NSImageView.FrameStyle.button](nsimageview/framestyle/button.md)
+- [NSImageView.FrameStyle.button](./button.md)
   A convex bezel that makes the image stand out in relief, like a button.
 
 

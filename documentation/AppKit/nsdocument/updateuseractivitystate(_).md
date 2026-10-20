@@ -1,7 +1,8 @@
 # updateUserActivityState(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the state of the given user activity.
 
@@ -14,9 +15,13 @@ Updates the state of the given user activity.
 func updateUserActivityState(_ activity: NSUserActivity)
 ```
 
+```objc
+- (void) updateUserActivityState:(NSUserActivity *) activity;
+```
+
 #### Discussion
 
-The default implementation of this method puts the document’s [`fileURL`](nsdocument/fileurl.md) into the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object’s [`userInfo`](https://developer.apple.com/documentation/foundation/nsuseractivity/userinfo) dictionary with the [`NSUserActivityDocumentURLKey`](nsuseractivitydocumenturlkey.md). [`NSDocument`](nsdocument.md) automatically sets the [`needsSave`](https://developer.apple.com/documentation/foundation/nsuseractivity/needssave) property of the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) to [`true`](https://developer.apple.com/documentation/swift/true) when the [`fileURL`](nsdocument/fileurl.md) changes.
+The default implementation of this method puts the document’s [`fileURL`](./fileurl.md) into the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object’s [`userInfo`](../../Foundation/nsuseractivity/userinfo.md) dictionary with the [`NSUserActivityDocumentURLKey`](../nsuseractivitydocumenturlkey.md). [`NSDocument`](../nsdocument.md) automatically sets the [`needsSave`](../../Foundation/nsuseractivity/needssave.md) property of the [`NSUserActivity`](../../Foundation/nsuseractivity.md) to [`true`](../../Swift/true.md) when the [`fileURL`](./fileurl.md) changes.
 
 ## Parameters
 
@@ -24,11 +29,13 @@ The default implementation of this method puts the document’s [`fileURL`](nsdo
 
 ## See Also
 
-- [class NSDocument](nsdocument.md)
+### Related Documentation
+- [class NSDocument](../nsdocument.md)
   An abstract class that defines the interface for macOS documents.
-- [var userActivity: NSUserActivity?](nsdocument/useractivity.md)
+### Supporting User Activities
+- [var userActivity: NSUserActivity?](./useractivity.md)
   An object that encapsulates a user activity the document supports.
-- [let NSUserActivityDocumentURLKey: String](nsuseractivitydocumenturlkey.md)
+- [let NSUserActivityDocumentURLKey: String](../nsuseractivitydocumenturlkey.md)
   The key that identifies the document associated with a user activity.
 
 

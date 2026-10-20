@@ -1,7 +1,8 @@
 # sec_certificate_copy_ref(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_certificate_copy_ref(_ certificate: sec_certificate_t) -> Unmanaged<SecCertificate>
+```
+
+```c
+SecCertificateRefsec_certificate_copy_ref(sec_certificate_t certificate);
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # isDebugged
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Flag indicating that the process has been attached by a debugger.
 

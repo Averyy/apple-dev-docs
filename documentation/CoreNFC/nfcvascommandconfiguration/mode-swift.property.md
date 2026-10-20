@@ -1,7 +1,8 @@
 # mode
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A VAS protocol mode.
 
@@ -16,13 +17,18 @@ A VAS protocol mode.
 var mode: NFCVASCommandConfiguration.Mode { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NFCVASMode mode;
+```
+
 ## See Also
 
-- [typealias VASMode](vasmode.md)
+### Setting Configuration Items
+- [typealias VASMode](../vasmode.md)
   Constants that indicate the VAS protocol mode.
-- [var passTypeIdentifier: String](nfcvascommandconfiguration/passtypeidentifier.md)
+- [var passTypeIdentifier: String](./passtypeidentifier.md)
   A type identifier for the Wallet Pass.
-- [var url: URL?](nfcvascommandconfiguration/url.md)
+- [var url: URL?](./url.md)
   A merchant URL.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The traits that describe the current environment of the layout, such as the size classes and display scale factor.
@@ -17,6 +18,10 @@ The traits that describe the current environment of the layout, such as the size
 
 ```swift
 var traitCollection: UITraitCollection { get }
+```
+
+```objc
+@property (nonatomic, readonly) UITraitCollection * traitCollection;
 ```
 
 

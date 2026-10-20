@@ -1,7 +1,8 @@
 # columnNumber
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The column number of the XML document being processed by the parser.
 
@@ -20,17 +21,22 @@ The column number of the XML document being processed by the parser.
 var columnNumber: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger columnNumber;
+```
+
 #### Discussion
 
 The column refers to the nesting level of the XML elements in the document. You may access this property once a parsing operation has begun or after an error occurs.
 
 ## See Also
 
-- [var lineNumber: Int](xmlparser/linenumber.md)
+### Obtaining Parser State
+- [var lineNumber: Int](./linenumber.md)
   The line number of the XML document being processed by the parser.
-- [var publicID: String?](xmlparser/publicid.md)
+- [var publicID: String?](./publicid.md)
   The public identifier of the external entity referenced in the XML document.
-- [var systemID: String?](xmlparser/systemid.md)
+- [var systemID: String?](./systemid.md)
   The system identifier of the external entity referenced in the XML document.
 
 

@@ -1,7 +1,8 @@
 # run()
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the intent in the current test session.
 
@@ -23,7 +24,7 @@ func run() async throws -> ResolvedIntentResult
 
 ## Mentions
 
-- [Testing your App Intents code](testing-your-app-intents-code.md)
+- [Testing your App Intents code](../testing-your-app-intents-code.md)
 
 #### Return Value
 

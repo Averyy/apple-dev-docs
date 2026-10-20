@@ -1,17 +1,24 @@
 # shortText
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A shorter version of the text.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
 ```swift
 var shortText: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * shortText;
 ```
 
 #### Discussion
@@ -20,7 +27,8 @@ The text provider uses this string before attempting to truncate the long versio
 
 ## See Also
 
-- [var text: String](clksimpletextprovider/text.md)
+### Getting the Text
+- [var text: String](./text.md)
   The long version of text that you want to display.
 
 

@@ -1,7 +1,8 @@
 # windowToolbarFullScreenVisibility(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the visibility of the window toolbar when the window enters full screen mode.
 
@@ -47,19 +48,20 @@ struct RootView: View {
 
 ## See Also
 
-- [struct WindowVisibilityToggle](windowvisibilitytoggle.md)
+### Configuring window visibility
+- [struct WindowVisibilityToggle](../windowvisibilitytoggle.md)
   A specialized button for toggling the visibility of a window.
-- [func defaultLaunchBehavior(SceneLaunchBehavior) -> some Scene](scene/defaultlaunchbehavior(_:).md)
+- [func defaultLaunchBehavior(SceneLaunchBehavior) -> some Scene](../scene/defaultlaunchbehavior%28_%29.md)
   Sets the default launch behavior for this scene.
-- [func restorationBehavior(SceneRestorationBehavior) -> some Scene](scene/restorationbehavior(_:).md)
+- [func restorationBehavior(SceneRestorationBehavior) -> some Scene](../scene/restorationbehavior%28_%29.md)
   Sets the restoration behavior for this scene.
-- [struct SceneLaunchBehavior](scenelaunchbehavior.md)
+- [struct SceneLaunchBehavior](../scenelaunchbehavior.md)
   The launch behavior for a scene.
-- [struct SceneRestorationBehavior](scenerestorationbehavior.md)
+- [struct SceneRestorationBehavior](../scenerestorationbehavior.md)
   The restoration behavior for a scene.
-- [func persistentSystemOverlays(Visibility) -> some Scene](scene/persistentsystemoverlays(_:).md)
+- [func persistentSystemOverlays(Visibility) -> some Scene](../scene/persistentsystemoverlays%28_%29.md)
   Sets the preferred visibility of the non-transient system views overlaying the app.
-- [struct WindowToolbarFullScreenVisibility](windowtoolbarfullscreenvisibility.md)
+- [struct WindowToolbarFullScreenVisibility](../windowtoolbarfullscreenvisibility.md)
   The visibility of the window toolbar with respect to full screen mode.
 
 

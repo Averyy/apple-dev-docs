@@ -1,14 +1,15 @@
 # kIOAccelSurfaceBeamSyncSwaps
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kIOAccelSurfaceBeamSyncSwaps = 0x00000001
 ```
 

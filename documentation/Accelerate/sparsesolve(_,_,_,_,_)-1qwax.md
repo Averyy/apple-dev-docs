@@ -1,7 +1,8 @@
 # SparseSolve(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Solves the equation *Ax = b* for vectors of double-precision values using the specified iterative method and opaque preconditioner.
 
@@ -20,9 +21,13 @@ Solves the equation *Ax = b* for vectors of double-precision values using the sp
 func SparseSolve(_ method: SparseIterativeMethod, _ A: SparseMatrix_Double, _ b: DenseVector_Double, _ x: DenseVector_Double, _ Preconditioner: SparseOpaquePreconditioner_Double) -> SparseIterativeStatus_t
 ```
 
+```c
+static SparseIterativeStatus_t SparseSolve(SparseIterativeMethod method, SparseMatrix_Double A, DenseVector_Double b, DenseVector_Double x, SparseOpaquePreconditioner_Double Preconditioner);
+```
+
 #### Return Value
 
-A [`SparseIterativeStatus_t`](sparseiterativestatus_t.md) enumeration that represents the status of the iterative solve.
+A [`SparseIterativeStatus_t`](./sparseiterativestatus_t.md) enumeration that represents the status of the iterative solve.
 
 #### Discussion
 
@@ -30,7 +35,7 @@ Use this function to solve a system of linear equations using a factored coeffic
 
 The following figure shows two systems of equations where the coefficient matrix is sparse:
 
-![A mathematical equation that has one set of three simultaneous equations on the left. Each equation has three unknowns. The same set of simultaneous equations appears on the right as a single matrix equation, A x equals B. The single matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.](/images/com.apple.accelerate/media-3703935@2x.png)
+![A mathematical equation that has one set of three simultaneous equations on the left. Each equation has three unknowns. The same set of simultaneous equations appears on the right as a single matrix equation, A x equals B. The single matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3703935@2x.png)
 
 The following code solves this system by applying a diagonal scaling preconditioner and using the least squares minimum residual method:
 
@@ -122,15 +127,16 @@ On return, x`Values` contains the values `[1.0, 2.0, 3.0]`.
 
 ## See Also
 
-- [func SparseSolve(SparseIterativeMethod, SparseMatrix_Float, DenseVector_Float, DenseVector_Float, SparseOpaquePreconditioner_Float) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-3aphv.md)
+### Iterative sparse solve functions with preconditioner
+- [func SparseSolve(SparseIterativeMethod, SparseMatrix_Float, DenseVector_Float, DenseVector_Float, SparseOpaquePreconditioner_Float) -> SparseIterativeStatus_t](./sparsesolve%28_,_,_,_,_%29-3aphv.md)
   Solves the equation *Ax = b* for vectors of single-precision values using the specified iterative method and opaque preconditioner.
-- [func SparseSolve(SparseIterativeMethod, SparseMatrix_Double, DenseVector_Double, DenseVector_Double, SparsePreconditioner_t) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-5vs11.md)
+- [func SparseSolve(SparseIterativeMethod, SparseMatrix_Double, DenseVector_Double, DenseVector_Double, SparsePreconditioner_t) -> SparseIterativeStatus_t](./sparsesolve%28_,_,_,_,_%29-5vs11.md)
   Solves the equation *Ax = b* for vectors of double-precision values using the specified iterative method and preconditioner type.
-- [func SparseSolve(SparseIterativeMethod, SparseMatrix_Float, DenseVector_Float, DenseVector_Float, SparsePreconditioner_t) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-9nzvm.md)
+- [func SparseSolve(SparseIterativeMethod, SparseMatrix_Float, DenseVector_Float, DenseVector_Float, SparsePreconditioner_t) -> SparseIterativeStatus_t](./sparsesolve%28_,_,_,_,_%29-9nzvm.md)
   Solves the equation *Ax = b* for vectors of single-precision values using the specified iterative method and preconditioner type.
-- [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Double, DenseVector_Double) -> Void, DenseVector_Double, DenseVector_Double, SparseOpaquePreconditioner_Double) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-6i1nx.md)
+- [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Double, DenseVector_Double) -> Void, DenseVector_Double, DenseVector_Double, SparseOpaquePreconditioner_Double) -> SparseIterativeStatus_t](./sparsesolve%28_,_,_,_,_%29-6i1nx.md)
   Solves the equation *Ax = b* for vectors of double-precision values, treating *A* as an operator and using the specified iterative method and preconditioner.
-- [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Float, DenseVector_Float) -> Void, DenseVector_Float, DenseVector_Float, SparseOpaquePreconditioner_Float) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-7wnum.md)
+- [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Float, DenseVector_Float) -> Void, DenseVector_Float, DenseVector_Float, SparseOpaquePreconditioner_Float) -> SparseIterativeStatus_t](./sparsesolve%28_,_,_,_,_%29-7wnum.md)
   Solves the equation *Ax = b* for vectors of single-precision values, treating *A* as an operator and using the specified iterative method and preconditioner.
 
 

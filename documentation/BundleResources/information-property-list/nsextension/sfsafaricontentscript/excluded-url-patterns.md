@@ -1,20 +1,23 @@
 # Excluded URL Patterns
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The webpages that the script can’t be injected into.
 
 **Availability**:
 - macOS 10.11.5+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `Excluded URL Patterns`
+- **Type**: array of string 
 
 ## See Also
 
-- [Allowed URL Patterns](information-property-list/nsextension/sfsafaricontentscript/allowed-url-patterns.md)
+### URL Patterns
+- [Allowed URL Patterns](./allowed-url-patterns.md)
   The webpages that the script can be injected into.
 
 

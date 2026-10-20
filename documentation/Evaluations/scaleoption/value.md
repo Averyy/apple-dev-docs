@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The numeric value for this option, used for metric aggregation.
 

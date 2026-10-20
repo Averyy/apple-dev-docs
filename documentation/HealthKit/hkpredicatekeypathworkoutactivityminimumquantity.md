@@ -1,7 +1,8 @@
 # HKPredicateKeyPathWorkoutActivityMinimumQuantity
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key path for accessing activities with a matching minimum quantity.
 
@@ -19,23 +20,28 @@ The key path for accessing activities with a matching minimum quantity.
 let HKPredicateKeyPathWorkoutActivityMinimumQuantity: String
 ```
 
+```c
+extern NSString * const HKPredicateKeyPathWorkoutActivityMinimumQuantity;
+```
+
 ## See Also
 
-- [let HKPredicateKeyPathWorkoutActivity: String](hkpredicatekeypathworkoutactivity.md)
+### Specifying predicate key paths
+- [let HKPredicateKeyPathWorkoutActivity: String](./hkpredicatekeypathworkoutactivity.md)
   The key path for accessing a specific workout activity.
-- [let HKPredicateKeyPathWorkoutActivityType: String](hkpredicatekeypathworkoutactivitytype.md)
+- [let HKPredicateKeyPathWorkoutActivityType: String](./hkpredicatekeypathworkoutactivitytype.md)
   The key path for accessing activities that match a workout activity type.
-- [let HKPredicateKeyPathWorkoutActivityStartDate: String](hkpredicatekeypathworkoutactivitystartdate.md)
+- [let HKPredicateKeyPathWorkoutActivityStartDate: String](./hkpredicatekeypathworkoutactivitystartdate.md)
   The key path for accessing activities with a matching start date.
-- [let HKPredicateKeyPathWorkoutActivityEndDate: String](hkpredicatekeypathworkoutactivityenddate.md)
+- [let HKPredicateKeyPathWorkoutActivityEndDate: String](./hkpredicatekeypathworkoutactivityenddate.md)
   The key path for accessing activities with a matching end date.
-- [let HKPredicateKeyPathWorkoutActivityDuration: String](hkpredicatekeypathworkoutactivityduration.md)
+- [let HKPredicateKeyPathWorkoutActivityDuration: String](./hkpredicatekeypathworkoutactivityduration.md)
   The key path for accessing activities with a matching duration.
-- [let HKPredicateKeyPathWorkoutActivityAverageQuantity: String](hkpredicatekeypathworkoutactivityaveragequantity.md)
+- [let HKPredicateKeyPathWorkoutActivityAverageQuantity: String](./hkpredicatekeypathworkoutactivityaveragequantity.md)
   The key path for accessing activities with a matching average quantity.
-- [let HKPredicateKeyPathWorkoutActivityMaximumQuantity: String](hkpredicatekeypathworkoutactivitymaximumquantity.md)
+- [let HKPredicateKeyPathWorkoutActivityMaximumQuantity: String](./hkpredicatekeypathworkoutactivitymaximumquantity.md)
   The key path for accessing activities with a matching maximum quantity.
-- [let HKPredicateKeyPathWorkoutActivitySumQuantity: String](hkpredicatekeypathworkoutactivitysumquantity.md)
+- [let HKPredicateKeyPathWorkoutActivitySumQuantity: String](./hkpredicatekeypathworkoutactivitysumquantity.md)
   The key path for accessing activities with a matching sum.
 
 

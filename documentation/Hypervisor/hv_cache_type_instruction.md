@@ -1,12 +1,13 @@
 # HV_CACHE_TYPE_INSTRUCTION
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The value that describes a cached instuction value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The value that describes a cached instuction value.
 var HV_CACHE_TYPE_INSTRUCTION: hv_cache_type_t { get }
 ```
 
+```c
+HV_CACHE_TYPE_INSTRUCTION
+```
+
 ## See Also
 
-- [var HV_CACHE_TYPE_DATA: hv_cache_type_t](hv_cache_type_data.md)
+### Constants
+- [var HV_CACHE_TYPE_DATA: hv_cache_type_t](./hv_cache_type_data.md)
   The value that describes a cached data value.
 
 

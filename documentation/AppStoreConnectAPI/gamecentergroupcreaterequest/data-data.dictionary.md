@@ -1,7 +1,8 @@
 # GameCenterGroupCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a Game Center group.
 
@@ -10,20 +11,20 @@ The request body you use to create a Game Center group.
 
 ## Declaration
 
-```swift
+```
 object GameCenterGroupCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterGroupCreateRequest.Data.Attributes](gamecentergroupcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterGroupCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a group resource.
 
 ## Properties
 
 - `attributes` (GameCenterGroupCreateRequest.Data.Attributes)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterGroups`
 
 
 ---

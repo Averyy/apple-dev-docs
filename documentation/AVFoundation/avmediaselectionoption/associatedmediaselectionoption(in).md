@@ -1,7 +1,8 @@
 # associatedMediaSelectionOption(in:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a media selection option associated with the receiver in a given group.
 
@@ -20,13 +21,17 @@ Returns a media selection option associated with the receiver in a given group.
 func associatedMediaSelectionOption(in mediaSelectionGroup: AVMediaSelectionGroup) -> AVMediaSelectionOption?
 ```
 
+```objc
+- (AVMediaSelectionOption *) associatedMediaSelectionOptionInMediaSelectionGroup:(AVMediaSelectionGroup *) mediaSelectionGroup;
+```
+
 #### Return Value
 
 A media selection option associated with the receiver in `mediaSelectionGroup`, or `nil` if none were found.
 
 #### Discussion
 
-Audible media selection options often have associated legible media selection options; in particular, audible options are typically associated with forced-only subtitle options with the same locale. See [`containsOnlyForcedSubtitles`](avmediacharacteristic/containsonlyforcedsubtitles.md) for a discussion of forced-only subtitles.
+Audible media selection options often have associated legible media selection options; in particular, audible options are typically associated with forced-only subtitle options with the same locale. See [`containsOnlyForcedSubtitles`](../avmediacharacteristic/containsonlyforcedsubtitles.md) for a discussion of forced-only subtitles.
 
 ## Parameters
 

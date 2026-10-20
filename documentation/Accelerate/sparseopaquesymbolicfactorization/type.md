@@ -1,18 +1,19 @@
 # type
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The factorization type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The factorization type.
 var type: SparseFactorization_t
 ```
 
+```c
+SparseFactorization_t type;
+```
+
 ## See Also
 
-- [var status: SparseStatus_t](sparseopaquesymbolicfactorization/status.md)
+### Instance Properties
+- [var status: SparseStatus_t](./status.md)
   The status of the factorization.
-- [struct SparseStatus_t](sparsestatus_t.md)
+- [struct SparseStatus_t](../sparsestatus_t.md)
   Constants that describe the status of a factorization.
-- [var factorization: UnsafeMutableRawPointer?](sparseopaquesymbolicfactorization/factorization.md)
+- [var factorization: UnsafeMutableRawPointer?](./factorization.md)
   A pointer to a private internal representation of the symbolic factor.
-- [struct SparseFactorization_t](sparsefactorization_t.md)
+- [struct SparseFactorization_t](../sparsefactorization_t.md)
   Constants that define the factorization type.
 
 

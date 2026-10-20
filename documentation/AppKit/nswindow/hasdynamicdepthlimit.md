@@ -1,12 +1,13 @@
 # hasDynamicDepthLimit
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the window’s depth limit can change to match the depth of the screen it’s on.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,31 +15,36 @@ A Boolean value that indicates whether the window’s depth limit can change to 
 var hasDynamicDepthLimit: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL hasDynamicDepthLimit;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the window has a dynamic depth limit; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). When the value of [`hasDynamicDepthLimit`](nswindow/hasdynamicdepthlimit.md) is [`false`](https://developer.apple.com/documentation/swift/false), the window uses either its preset depth limit or the default depth limit. A different, and non-dynamic, depth limit can be set using the [`depthLimit`](nswindow/depthlimit.md) property.
+The value of this property is [`true`](../../Swift/true.md) when the window has a dynamic depth limit; otherwise, [`false`](../../Swift/false.md). When the value of [`hasDynamicDepthLimit`](./hasdynamicdepthlimit.md) is [`false`](../../Swift/false.md), the window uses either its preset depth limit or the default depth limit. A different, and non-dynamic, depth limit can be set using the [`depthLimit`](./depthlimit.md) property.
 
 ## See Also
 
-- [var depthLimit: NSWindow.Depth](nswindow/depthlimit.md)
+### Accessing Window Information
+- [var depthLimit: NSWindow.Depth](./depthlimit.md)
   The depth limit of the window.
-- [class var defaultDepthLimit: NSWindow.Depth](nswindow/defaultdepthlimit.md)
+- [class var defaultDepthLimit: NSWindow.Depth](./defaultdepthlimit.md)
   Returns the default depth limit for instances of `NSWindow`.
-- [var windowNumber: Int](nswindow/windownumber.md)
+- [var windowNumber: Int](./windownumber.md)
   The window number of the window’s window device.
-- [class func windowNumbers(options: NSWindow.NumberListOptions) -> [NSNumber]?](nswindow/windownumbers(options:).md)
+- [class func windowNumbers(options: NSWindow.NumberListOptions) -> [NSNumber]?](./windownumbers%28options%29.md)
   Returns the window numbers for all visible windows satisfying the specified options.
-- [var deviceDescription: [NSDeviceDescriptionKey : Any]](nswindow/devicedescription.md)
+- [var deviceDescription: [NSDeviceDescriptionKey : Any]](./devicedescription.md)
   A dictionary containing information about the window’s resolution, such as color, depth, and so on.
-- [struct NSDeviceDescriptionKey](nsdevicedescriptionkey.md)
+- [struct NSDeviceDescriptionKey](../nsdevicedescriptionkey.md)
   These constants are the keys for device description dictionaries.
-- [var canBecomeVisibleWithoutLogin: Bool](nswindow/canbecomevisiblewithoutlogin.md)
+- [var canBecomeVisibleWithoutLogin: Bool](./canbecomevisiblewithoutlogin.md)
   A Boolean value that indicates whether the window can be displayed at the login window.
-- [var sharingType: NSWindow.SharingType](nswindow/sharingtype-swift.property.md)
+- [var sharingType: NSWindow.SharingType](./sharingtype-swift.property.md)
   A Boolean value that indicates the level of access other processes have to the window’s content.
-- [var backingType: NSWindow.BackingStoreType](nswindow/backingtype.md)
+- [var backingType: NSWindow.BackingStoreType](./backingtype.md)
   The window’s backing store type.
-- [func displayLink(target: Any, selector: Selector) -> CADisplayLink](nswindow/displaylink(target:selector:).md)
+- [func displayLink(target: Any, selector: Selector) -> CADisplayLink](./displaylink%28target,selector%29.md)
   Returns a new display link whose callback will be invoked in-sync with the display the window is on.
 
 

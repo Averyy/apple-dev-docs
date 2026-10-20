@@ -1,7 +1,8 @@
 # stateChangedNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the document object posts when there’s a change in the state of the document.
 
@@ -18,9 +19,13 @@ nonisolated
 class let stateChangedNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIDocumentStateChangedNotification;
+```
+
 #### Discussion
 
-When handling this notification, check the value of the [`documentState`](uidocument/documentstate.md) property to see what the new state is, and then proceed accordingly. There’s no `userInfo` dictionary.
+When handling this notification, check the value of the [`documentState`](./documentstate.md) property to see what the new state is, and then proceed accordingly. There’s no `userInfo` dictionary.
 
 
 ---

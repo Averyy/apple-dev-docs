@@ -1,12 +1,13 @@
 # stringValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the receiver’s cell as an `NSString` object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,25 +15,30 @@ The value of the receiver’s cell as an `NSString` object.
 var stringValue: String { get set }
 ```
 
+```objc
+@property (copy) NSString * stringValue;
+```
+
 #### Discussion
 
-If the control contains many cells (for example, `NSMatrix`), then this property contains the value of the currently selected cell. If the control is in the process of editing the affected cell, then it invokes the  [`validateEditing()`](nscontrol/validateediting().md) method before getting the value.
+If the control contains many cells (for example, `NSMatrix`), then this property contains the value of the currently selected cell. If the control is in the process of editing the affected cell, then it invokes the  [`validateEditing()`](./validateediting%28%29.md) method before getting the value.
 
 If the cell is being edited, setting this property aborts all editing before setting the value. If the cell does not inherit from `NSActionCell`, setting this property marks the cell’s interior as needing to be redisplayed; `NSActionCell` performs its own updating of cells.
 
 ## See Also
 
-- [var doubleValue: Double](nscontrol/doublevalue.md)
+### Accessing the Control’s Value
+- [var doubleValue: Double](./doublevalue.md)
   The value of the receiver’s cell as a double-precision floating-point number.
-- [var floatValue: Float](nscontrol/floatvalue.md)
+- [var floatValue: Float](./floatvalue.md)
   The value of the receiver’s cell as a single-precision floating-point number.
-- [var intValue: Int32](nscontrol/intvalue.md)
+- [var intValue: Int32](./intvalue.md)
   The value of the receiver’s cell as an integer.
-- [var integerValue: Int](nscontrol/integervalue.md)
+- [var integerValue: Int](./integervalue.md)
   The value of the receiver’s cell as an integer value.
-- [var objectValue: Any?](nscontrol/objectvalue.md)
+- [var objectValue: Any?](./objectvalue.md)
   The value of the receiver’s cell as an Objective-C object.
-- [var attributedStringValue: NSAttributedString](nscontrol/attributedstringvalue.md)
+- [var attributedStringValue: NSAttributedString](./attributedstringvalue.md)
   The value of the receiver’s cell as an attributed string.
 
 

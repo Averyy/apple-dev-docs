@@ -1,7 +1,8 @@
 # COMPRESSION_LZRAVEN
 
 **Framework**: Compression  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The LZRAVEN compression algorithm, which is recommended for high-compression ratio with fast decoding on Apple platforms.
 
@@ -9,7 +10,7 @@ The LZRAVEN compression algorithm, which is recommended for high-compression rat
 - iOS 27.0+
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
-- macOS ?+
+- macOS
 - tvOS 27.0+
 - visionOS 27.0+
 - watchOS 27.0+
@@ -20,15 +21,19 @@ The LZRAVEN compression algorithm, which is recommended for high-compression rat
 var COMPRESSION_LZRAVEN: compression_algorithm { get }
 ```
 
+```c
+COMPRESSION_LZRAVEN
+```
+
 #### Discussion
 
-LZRAVEN is the Apple high-compression algorithm, designed to replace [`COMPRESSION_LZMA`](compression_lzma.md) across Apple platforms. It combines LZ77 with modern entropy coding, adaptive context-sensitive modeling, and near-optimal parsing to often achieve a slightly better compression ratio than [`COMPRESSION_LZMA`](compression_lzma.md). LZRAVEN uses an 8 MB dictionary and encodes faster than [`COMPRESSION_LZMA`](compression_lzma.md) while decoding 3x faster on Apple silicon, where the decoder leverages vector units to process multiple symbols per operation.
+LZRAVEN is the Apple high-compression algorithm, designed to replace [`COMPRESSION_LZMA`](./compression_lzma.md) across Apple platforms. It combines LZ77 with modern entropy coding, adaptive context-sensitive modeling, and near-optimal parsing to often achieve a slightly better compression ratio than [`COMPRESSION_LZMA`](./compression_lzma.md). LZRAVEN uses an 8 MB dictionary and encodes faster than [`COMPRESSION_LZMA`](./compression_lzma.md) while decoding 3x faster on Apple silicon, where the decoder leverages vector units to process multiple symbols per operation.
 
 An LZRAVEN-encoded buffer begins with a stream header that encodes global encoder parameters, defines the quantized size of the LZ dictionary, and provides reserved feature flags for future extensions. The stream header is followed by a sequence of compressed or uncompressed blocks that are terminated by an empty block.
 
-Each block begins with a header that encodes the block’s compressed size and feature flags. A block can be either compressed or stored uncompressed when compression would provide no benefit. LZRAVEN is practical for latency-sensitive workloads where [`COMPRESSION_LZMA`](compression_lzma.md) decode speed would be prohibitive.
+Each block begins with a header that encodes the block’s compressed size and feature flags. A block can be either compressed or stored uncompressed when compression would provide no benefit. LZRAVEN is practical for latency-sensitive workloads where [`COMPRESSION_LZMA`](./compression_lzma.md) decode speed would be prohibitive.
 
-LZRAVEN is available through the buffer API only — [`compression_encode_buffer(_:_:_:_:_:_:)`](compression_encode_buffer(_:_:_:_:_:_:).md) and [`compression_decode_buffer(_:_:_:_:_:_:)`](compression_decode_buffer(_:_:_:_:_:_:).md).
+LZRAVEN is available through the buffer API only — [`compression_encode_buffer(_:_:_:_:_:_:)`](./compression_encode_buffer%28_,_,_,_,_,_%29.md) and [`compression_decode_buffer(_:_:_:_:_:_:)`](./compression_decode_buffer%28_,_,_,_,_,_%29.md).
 
 The decoder requires approximately 36 KB of scratch memory, making it well suited for memory-constrained environments.
 
@@ -36,21 +41,22 @@ The decoder requires approximately 36 KB of scratch memory, making it well suite
 
 ## See Also
 
-- [var COMPRESSION_LZFSE: compression_algorithm](compression_lzfse.md)
+### Algorithm Constants
+- [var COMPRESSION_LZFSE: compression_algorithm](./compression_lzfse.md)
   The LZFSE compression algorithm, which is recommended for use on Apple platforms.
-- [var COMPRESSION_LZ4: compression_algorithm](compression_lz4.md)
+- [var COMPRESSION_LZ4: compression_algorithm](./compression_lz4.md)
   The LZ4 compression algorithm for fast compression.
-- [var COMPRESSION_LZ4_RAW: compression_algorithm](compression_lz4_raw.md)
+- [var COMPRESSION_LZ4_RAW: compression_algorithm](./compression_lz4_raw.md)
   The LZ4 compression algorithm, without frame headers.
-- [var COMPRESSION_LZMA: compression_algorithm](compression_lzma.md)
+- [var COMPRESSION_LZMA: compression_algorithm](./compression_lzma.md)
   The LZMA compression algorithm, which is recommended for high-compression ratio.
-- [var COMPRESSION_ZLIB: compression_algorithm](compression_zlib.md)
+- [var COMPRESSION_ZLIB: compression_algorithm](./compression_zlib.md)
   The zlib compression algorithm, which is recommended for cross-platform compression.
-- [var COMPRESSION_BROTLI: compression_algorithm](compression_brotli.md)
+- [var COMPRESSION_BROTLI: compression_algorithm](./compression_brotli.md)
   The Brotli compression algorithm, which is recommended for text compression.
-- [var COMPRESSION_LZBITMAP: compression_algorithm](compression_lzbitmap.md)
+- [var COMPRESSION_LZBITMAP: compression_algorithm](./compression_lzbitmap.md)
   The LZBITMAP compression algorithm, which is designed to exploit the vector instruction set of current CPUs.
-- [var COMPRESSION_LZMESH: compression_algorithm](compression_lzmesh.md)
+- [var COMPRESSION_LZMESH: compression_algorithm](./compression_lzmesh.md)
   The LZMESH compression algorithm, which is recommended for fast, general-purpose compression on Apple platforms.
 
 

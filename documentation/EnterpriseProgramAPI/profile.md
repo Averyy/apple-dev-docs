@@ -1,22 +1,23 @@
 # Profile
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a Profiles  resource.
 
 ## Declaration
 
-```swift
+```
 object Profile
 ```
 
 ## Topics
 
 ### Objects
-- [object Profile.Attributes](profile/attributes-data.dictionary.md)
+- [object Profile.Attributes](./profile/attributes-data.dictionary.md)
   Attributes that describe a Profiles resource.
-- [object Profile.Relationships](profile/relationships-data.dictionary.md)
+- [object Profile.Relationships](./profile/relationships-data.dictionary.md)
   The relationships you included in the request and those on which you can operate.
 
 ## Properties
@@ -25,17 +26,20 @@ object Profile
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource
 - `relationships` (Profile.Relationships): Navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `profiles`
 - `links` (ResourceLinks): Navigational links that include the self-link.
 
 ## See Also
 
-- [object ProfileCreateRequest](profilecreaterequest.md)
+### Objects
+- [object ProfileCreateRequest](./profilecreaterequest.md)
   The request body you use to create a Profile.
-- [object ProfileResponse](profileresponse.md)
+- [object ProfileResponse](./profileresponse.md)
   A response that contains a single Profiles resource.
-- [object ProfilesResponse](profilesresponse.md)
+- [object ProfilesResponse](./profilesresponse.md)
   A response that contains a list of Profiles resources.
-- [object ProfilesWithoutIncludesResponse](profileswithoutincludesresponse.md)
+- [object ProfilesWithoutIncludesResponse](./profileswithoutincludesresponse.md)
 
 
 ---

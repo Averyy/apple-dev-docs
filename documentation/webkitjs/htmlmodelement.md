@@ -1,7 +1,8 @@
 # HTMLModElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLModElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [cite](htmlmodelement/1631408-cite.md)
-- [dateTime](htmlmodelement/1633683-datetime.md)
+- [cite](./htmlmodelement/api-1631408-cite.md)
+- [dateTime](./htmlmodelement/api-1633683-datetime.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # CodableRepresentation
 
 **Framework**: Core Transferable  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transfer representation for types that participate in Swift’s protocols for encoding and decoding.
 
@@ -23,7 +24,7 @@ struct CodableRepresentation<Item, Encoder, Decoder> where Item : Transferable, 
 
 ## Mentions
 
-- [Choosing a transfer representation for a model type](choosing-a-transfer-representation-for-a-model-type.md)
+- [Choosing a transfer representation for a model type](./choosing-a-transfer-representation-for-a-model-type.md)
 
 #### Overview
 
@@ -42,26 +43,27 @@ struct Todo: Codable, Transferable {
 }
 ```
 
-> ❗ **Important**: If your app declares custom uniform type identifiers, include corresponding entries in the app’s `Info.plist`. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/uniformtypeidentifiers/defining-file-and-data-types-for-your-app).
+> ❗ **Important**: If your app declares custom uniform type identifiers, include corresponding entries in the app’s `Info.plist`. For more information, see [Defining file and data types for your app](../UniformTypeIdentifiers/defining-file-and-data-types-for-your-app.md).
 
 ## Topics
 
 ### Creating a transfer representation
-- [init(for: Item.Type, contentType: UTType)](codablerepresentation/init(for:contenttype:).md)
+- [init(for: Item.Type, contentType: UTType)](./codablerepresentation/init%28for,contenttype%29.md)
   Creates a transfer representation for a given type and type identifier.
-- [init(for: Item.Type, contentType: UTType, encoder: Encoder, decoder: Decoder)](codablerepresentation/init(for:contenttype:encoder:decoder:).md)
+- [init(for: Item.Type, contentType: UTType, encoder: Encoder, decoder: Decoder)](./codablerepresentation/init%28for,contenttype,encoder,decoder%29.md)
   Creates a transfer representation for a given type with the encoder and decoder you supply.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TransferRepresentation](transferrepresentation.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TransferRepresentation](./transferrepresentation.md)
 
 ## See Also
 
-- [struct DataRepresentation](datarepresentation.md)
+### Data transfer
+- [struct DataRepresentation](./datarepresentation.md)
   A transfer representation for types that provide their own binary data conversion.
 
 

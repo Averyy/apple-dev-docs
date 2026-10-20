@@ -1,9 +1,10 @@
 # waitUntilCompleted()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Waits until the [`CIRenderTask`](cirendertask.md) finishes and returns.
+Waits until the [`CIRenderTask`](../cirendertask.md) finishes and returns.
 
 **Availability**:
 - iOS 11.0+
@@ -19,9 +20,13 @@ Waits until the [`CIRenderTask`](cirendertask.md) finishes and returns.
 func waitUntilCompleted() throws -> CIRenderInfo
 ```
 
+```objc
+- (CIRenderInfo *) waitUntilCompletedAndReturnError:(NSError **) error;
+```
+
 #### Discussion
 
-Synchronously blocks execution until the [`CIRenderTask`](cirendertask.md) either completes or fails (with error).  Calling this method after [`startTask(toRender:to:)`](cicontext/starttask(torender:to:).md) or [`startTask(toRender:from:to:at:)`](cicontext/starttask(torender:from:to:at:).md) makes the render task behave synchronously, as if the CPU and GPU were operating as a single unit.
+Synchronously blocks execution until the [`CIRenderTask`](../cirendertask.md) either completes or fails (with error).  Calling this method after [`startTask(toRender:to:)`](../cicontext/starttask%28torender,to%29.md) or [`startTask(toRender:from:to:at:)`](../cicontext/starttask%28torender,from,to,at%29.md) makes the render task behave synchronously, as if the CPU and GPU were operating as a single unit.
 
 
 ---

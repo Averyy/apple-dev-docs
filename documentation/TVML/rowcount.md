@@ -1,6 +1,7 @@
 # rowCount
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Specifies the number of rows in a shelf.
 
@@ -8,19 +9,20 @@ Specifies the number of rows in a shelf.
 
 Items inside of the shelf fill up a column before moving to the next column.
 
-##### Values for Rowcount
+##### Values for rowCount
 
 - **Integer**: The number of rows contained inside of a shelf.
 
-##### Values That Use Rowcount
+##### Values that Use rowCount
 
-- [`shelf`](shelf.md)
+- [shelf](./shelf.md)
 
 ## See Also
 
-- [centered](centered.md)
+### Element Alignment
+- [centered](./centered.md)
   Centers media items in a shelf.
-- [minLength](minlength.md)
+- [minLength](./minlength.md)
   Reserves space for an element.
 
 

@@ -1,7 +1,8 @@
 # init(filePath:lineNumber:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new instance with a file path and a line number.
 
@@ -18,9 +19,10 @@ convenience init(filePath: StaticString = #filePath, lineNumber: UInt = #line)
 
 ## See Also
 
-- [init(fileURL: URL, lineNumber: Int)](xctsourcecodelocation/init(fileurl:linenumber:).md)
+### Initializers
+- [init(fileURL: URL, lineNumber: Int)](./init%28fileurl,linenumber%29.md)
   Initializes a new instance with a file URL and a line number.
-- [convenience init(filePath: String, lineNumber: Int)](xctsourcecodelocation/init(filepath:linenumber:)-3hzmr.md)
+- [convenience init(filePath: String, lineNumber: Int)](./init%28filepath,linenumber%29-3hzmr.md)
   Initializes a new instance with a file path and a line number.
 
 

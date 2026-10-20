@@ -1,7 +1,8 @@
 # KeyPress.Result
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A result value returned from a key-press action that indicates whether the action consumed the event.
 
@@ -22,18 +23,18 @@ enum Result
 ## Topics
 
 ### Getting the result
-- [KeyPress.Result.handled](keypress/result/handled.md)
+- [KeyPress.Result.handled](./result/handled.md)
   The action consumed the event, preventing dispatch from continuing.
-- [KeyPress.Result.ignored](keypress/result/ignored.md)
+- [KeyPress.Result.ignored](./result/ignored.md)
   The action ignored the event, allowing dispatch to continue.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

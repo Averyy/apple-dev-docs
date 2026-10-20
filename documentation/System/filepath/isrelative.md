@@ -1,7 +1,8 @@
 # isRelative
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns true if this path is not absolute (see `isAbsolute`).
 
@@ -24,11 +25,15 @@ var isRelative: Bool { get }
 
 Examples:
 
-- Unix: - `~/bar`
-- `tmp/foo.txt`
-- Windows: - `bar\baz`
-- `C:Users\`
-- `\Users`
+- Unix:
+
+  - `~/bar`
+  - `tmp/foo.txt`
+- Windows:
+
+  - `bar\baz`
+  - `C:Users\`
+  - `\Users`
 
 
 ---

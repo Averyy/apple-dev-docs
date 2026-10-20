@@ -1,11 +1,12 @@
 # Animatable Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var animatableData: Vector3D](point3d/animatabledata.md)
+- [var animatableData: Vector3D](./animatabledata.md)
   The data to animate.
 
 

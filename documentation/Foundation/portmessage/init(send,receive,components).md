@@ -1,7 +1,8 @@
 # init(send:receive:components:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated `NSPortMessage` object to send given data on a given port and to receiver replies on another given port.
 
@@ -13,6 +14,10 @@ Initializes a newly allocated `NSPortMessage` object to send given data on a giv
 
 ```swift
 init(send sendPort: Port?, receive replyPort: Port?, components: [Any]?)
+```
+
+```objc
+- (instancetype) initWithSendPort:(NSPort *) sendPort receivePort:(NSPort *) replyPort components:(NSArray *) components;
 ```
 
 #### Return Value
@@ -33,9 +38,10 @@ This is the designated initializer for `NSPortMessage`.
 
 ## See Also
 
-- [var msgid: UInt32](portmessage/msgid.md)
+### Related Documentation
+- [var msgid: UInt32](./msgid.md)
   Returns the identifier for the receiver.
-- [Distributed Objects Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DistrObjects/DistrObjects.html#//apple_ref/doc/uid/10000102i)
+- [Distributed Objects Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DistrObjects/DistrObjects.html#//apple_ref/doc/uid/10000102i)
 
 
 ---

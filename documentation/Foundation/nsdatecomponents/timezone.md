@@ -1,7 +1,8 @@
 # timeZone
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time zone used to interpret the date components.
 
@@ -20,13 +21,18 @@ The time zone used to interpret the date components.
 var timeZone: TimeZone? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSTimeZone * timeZone;
+```
+
 #### Discussion
 
-See [`Calendars, Date Components, and Calendar Units`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/Articles/dtCalendars.html#//apple_ref/doc/uid/TP40003470) in [`Date and Time Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html#//apple_ref/doc/uid/10000039i).
+See [Calendars, Date Components, and Calendar Units](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/Articles/dtCalendars.html#//apple_ref/doc/uid/TP40003470) in [Date and Time Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html#//apple_ref/doc/uid/10000039i).
 
 ## See Also
 
-- [var calendar: Calendar?](nsdatecomponents/calendar.md)
+### Setting a Calendar and Time Zone
+- [var calendar: Calendar?](./calendar.md)
   The calendar used to interpret the date components.
 
 

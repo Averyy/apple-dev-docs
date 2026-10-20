@@ -1,7 +1,8 @@
 # getFileProviderServicesForItem(at:completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the services provided by the File Provider extension that manages the item at the given URL.
 
@@ -15,7 +16,15 @@ Returns the services provided by the File Provider extension that manages the it
 ## Declaration
 
 ```swift
+func getFileProviderServicesForItem(at url: URL, completionHandler: @escaping @Sendable ([NSFileProviderServiceName : NSFileProviderService]?, (any Error)?) -> Void)
+```
+
+```swift
 func fileProviderServicesForItem(at url: URL) async throws -> [NSFileProviderServiceName : NSFileProviderService]
+```
+
+```objc
+- (void) getFileProviderServicesForItemAtURL:(NSURL *) url completionHandler:(void (^)(NSDictionary<NSString *,NSFileProviderService *> *services, NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -24,12 +33,12 @@ Use the returned services to perform custom actions defined by the services’ p
 
 To access the service:
 
-1. Use the desired service’s name to get the [`NSFileProviderService`](nsfileproviderservice.md) object for the service. This object can only be used to operate on the item specified by the `url` parameter.
-2. Get the [`NSXPCConnection`](nsxpcconnection.md) object from the service.
-3. Set the connection’s [`remoteObjectInterface`](nsxpcconnection/remoteobjectinterface.md) property, using the service’s protocol.
+1. Use the desired service’s name to get the [`NSFileProviderService`](../nsfileproviderservice.md) object for the service. This object can only be used to operate on the item specified by the `url` parameter.
+2. Get the [`NSXPCConnection`](../nsxpcconnection.md) object from the service.
+3. Set the connection’s [`remoteObjectInterface`](../nsxpcconnection/remoteobjectinterface.md) property, using the service’s protocol.
 4. (Optional) Provide any additional configuration for the connection.
-5. Call [`resume()`](nsxpcconnection/resume().md) on the connection.
-6. Get the proxy from the connection’s [`remoteObjectProxy`](nsxpcconnection/remoteobjectproxy.md) property.
+5. Call [`resume()`](../nsxpcconnection/resume%28%29.md) on the connection.
+6. Get the proxy from the connection’s [`remoteObjectProxy`](../nsxpcconnection/remoteobjectproxy.md) property.
 7. Call the custom action methods on the proxy object.
 
 The listing below shows a sample implementation for accessing a File Provider service’s remote proxy object.
@@ -84,19 +93,22 @@ FileManager.default.getFileProviderServicesForItem(at: url) { (services, error) 
 }
 ```
 
-For more information, see [`Defining the Service’s Protocol`](nsfileproviderservice#Defining-the-Services-Protocol.md).
+For more information, see [Defining the Service’s Protocol](../nsfileproviderservice.md#Defining-the-Services-Protocol).
 
 ## Parameters
 
 - `url`: The file URL of a document or directory.
-- `completionHandler`: A block that is called on an anonymous background queue. The system passes this block the following parameters: - **`services`**: If the request is successful, this property contains a dictionary with zero or more [`NSFileProviderServiceName`](nsfileproviderservicename.md) keys and their corresponding [`NSFileProviderService`](nsfileproviderservice.md) values; otherwise, it is set to `nil`.
-- **`error`**: If an error occurs, this property contains an object that describes the error; otherwise, it is set to `nil`.
+- `completionHandler`: A block that is called on an anonymous background queue. The system passes this block the following parameters:
+
+  - **`services`**: If the request is successful, this property contains a dictionary with zero or more [`NSFileProviderServiceName`](../nsfileproviderservicename.md) keys and their corresponding [`NSFileProviderService`](../nsfileproviderservice.md) values; otherwise, it is set to `nil`.
+  - **`error`**: If an error occurs, this property contains an object that describes the error; otherwise, it is set to `nil`.
 
 ## See Also
 
-- [class NSFileProviderService](nsfileproviderservice.md)
+### Accessing file provider services
+- [class NSFileProviderService](../nsfileproviderservice.md)
   A service that provides a custom communication channel between your app and a File Provider extension.
-- [struct NSFileProviderServiceName](nsfileproviderservicename.md)
+- [struct NSFileProviderServiceName](../nsfileproviderservicename.md)
   The name used to identify a File Provider service.
 
 

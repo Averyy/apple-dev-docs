@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a video processor to perform Vision requests against the specified video asset.
 
@@ -19,13 +20,18 @@ Creates a video processor to perform Vision requests against the specified video
 init(url videoURL: URL)
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) videoURL;
+```
+
 ## Parameters
 
 - `videoURL`: The video asset URL. The specified asset must be a video format supported by AVFoundation.
 
 ## See Also
 
-- [init(URL: URL)](vnvideoprocessor/init(url:)-38vj9.md)
+### Creating a Video Processor
+- [init(URL: URL)](./init%28url%29-38vj9.md)
 
 
 ---

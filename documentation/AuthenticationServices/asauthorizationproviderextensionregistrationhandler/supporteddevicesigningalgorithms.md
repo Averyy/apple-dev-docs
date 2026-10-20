@@ -1,7 +1,8 @@
 # supportedDeviceSigningAlgorithms
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 optional var supportedDeviceSigningAlgorithms: [ASAuthorizationProviderExtensionSigningAlgorithm] { get }
+```
+
+```objc
+@property (readonly) NSArray<NSNumber *> * supportedDeviceSigningAlgorithms;
 ```
 
 #### Discussion

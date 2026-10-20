@@ -1,12 +1,13 @@
 # NSTextInput
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that text views need to implement to interact properly with the text input management system.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ A set of methods that text views need to implement to interact properly with the
 protocol NSTextInput
 ```
 
+```objc
+@protocol NSTextInput
+```
+
 #### Overview
 
-> ❗ **Important**:  [`NSTextInput`](nstextinput.md) protocol is slated for deprecation. Please use the [`NSTextInputClient`](nstextinputclient.md) protocol instead.
+> ❗ **Important**:  [`NSTextInput`](./nstextinput.md) protocol is slated for deprecation. Please use the [`NSTextInputClient`](./nstextinputclient.md) protocol instead.
 
 `NSTextView` and its abstract superclass `NSText` are the only classes included in Cocoa that implement `NSTextInput`. To create another text view class, you can either subclass `NSTextView` (and not `NSText`, for historical reasons), or subclass `NSView` and implement the `NSTextInput` protocol.
 
@@ -25,13 +30,13 @@ protocol NSTextInput
 ## Topics
 
 ### Deprecated
-- [Deprecated symbols](nstextinput-deprecated-symbols.md)
+- [Deprecated symbols](./nstextinput-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 
 ### Conforming Types
-- [NSTextView](nstextview.md)
+- [NSTextView](./nstextview.md)
 
 
 ---

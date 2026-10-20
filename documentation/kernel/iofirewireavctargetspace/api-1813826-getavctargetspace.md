@@ -7,7 +7,7 @@ returns the IOFireWireAVCTargetSpace object for the given FireWire bus
 
 ## Declaration
 
-```swift
+```c
 static IOFireWireAVCTargetSpace *getAVCTargetSpace(
  IOFireWireController *bus);
 ```
@@ -18,9 +18,10 @@ static IOFireWireAVCTargetSpace *getAVCTargetSpace(
 
 ## See Also
 
-- [init](iofirewireavctargetspace/1813830-init.md)
+### Miscellaneous
+- [init](./api-1813830-init.md)
   initializes the IOFireWireAVCTargetSpace object
-- [publishAVCUnitDirectory](iofirewireavctargetspace/1813834-publishavcunitdirectory.md)
+- [publishAVCUnitDirectory](./api-1813834-publishavcunitdirectory.md)
   Creates a local AVC Unit directory if it doesn't already exist
 
 

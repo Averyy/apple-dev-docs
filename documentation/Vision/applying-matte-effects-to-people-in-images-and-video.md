@@ -1,6 +1,8 @@
 # Applying Matte Effects to People in Images and Video
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: Sample Code  
+**Download**: [ApplyingMatteEffectsToPeopleInImagesAndVideo.zip](https://docs-assets.developer.apple.com/published/6419e39ee70c/ApplyingMatteEffectsToPeopleInImagesAndVideo.zip)
 
 Generate image masks for people automatically by using semantic person-segmentation.
 
@@ -12,9 +14,9 @@ Generate image masks for people automatically by using semantic person-segmentat
 
 #### Overview
 
-You can use image masks to make selective adjustments to particular areas of an image. For example, the illustration below shows how to use a mask to perform a blend operation to replace the background behind the subject. ![An illustration of an image-processing operation that blends an original and mask image of a person with a replacement background image. The operation produces a new image that replaces the original background with the background image.](/images/Vision/image_mask.png)
+You can use image masks to make selective adjustments to particular areas of an image. For example, the illustration below shows how to use a mask to perform a blend operation to replace the background behind the subject. ![An illustration of an image-processing operation that blends an original and mask image of a person with a replacement background image. The operation produces a new image that replaces the original background with the background image.](https://developer.apple.com/tutorials/images/Vision/image_mask.png)
 
-In iOS and tvOS 15 and macOS 12, Vision makes it simple for you to generate image masks for people it finds in images and video by using the [`VNGeneratePersonSegmentationRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vngeneratepersonsegmentationrequest) class. This new request type brings the semantic person-segmentation capabilities found in frameworks like ARKit and AVFoundation to the Vision framework.
+In iOS and tvOS 15 and macOS 12, Vision makes it simple for you to generate image masks for people it finds in images and video by using the [VNGeneratePersonSegmentationRequest](./vngeneratepersonsegmentationrequest.md) class. This new request type brings the semantic person-segmentation capabilities found in frameworks like ARKit and AVFoundation to the Vision framework.
 
 The sample app uses the front-facing camera to capture video of the user. It runs a person-segmentation request on each video frame to produce an image mask. Then, it uses Core Image to perform a blend operation that replaces the original video frame’s background with an image that the app dynamically generates and colors based on the user’s head movements. Finally, it renders the image on screen using Metal.
 
@@ -22,7 +24,7 @@ The sample app uses the front-facing camera to capture video of the user. It run
 
 ##### Prepare the Requests
 
-The app uses two Vision requests to perform its logic: [`VNDetectFaceRectanglesRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vndetectfacerectanglesrequest) and [`VNGeneratePersonSegmentationRequest`](https://developer.apple.comhttp://developer.apple.com/documentation/vision/vngeneratepersonsegmentationrequest). It uses `VNDetectFaceRectanglesRequest` to detect a bounding rectangle around a person’s face. The observation the request produces also includes the [`roll`](https://developer.apple.comhttp://developer.apple.com/documentation/vision/vnfaceobservation/2980939-roll), [`yaw`](https://developer.apple.comhttp://developer.apple.com/documentation/vision/vnfaceobservation/2980940-yaw), and new in iOS and tvOS 15 and macOS 12, the [`pitch`](https://developer.apple.comhttp://developer.apple.com/documentation/vision/vnfaceobservation/3750998-pitch) angles of the rectangle. The app uses the angles to dynamically calculate background colors as the user moves their head.
+The app uses two Vision requests to perform its logic: [VNDetectFaceRectanglesRequest](./vndetectfacerectanglesrequest.md) and [VNGeneratePersonSegmentationRequest](http://developer.apple.com/documentation/vision/vngeneratepersonsegmentationrequest). It uses `VNDetectFaceRectanglesRequest` to detect a bounding rectangle around a person’s face. The observation the request produces also includes the [roll](http://developer.apple.com/documentation/vision/vnfaceobservation/2980939-roll), [yaw](http://developer.apple.com/documentation/vision/vnfaceobservation/2980940-yaw), and new in iOS and tvOS 15 and macOS 12, the [pitch](http://developer.apple.com/documentation/vision/vnfaceobservation/3750998-pitch) angles of the rectangle. The app uses the angles to dynamically calculate background colors as the user moves their head.
 
 ```swift
 // Create a request to detect face rectangles.
@@ -34,9 +36,9 @@ facePoseRequest = VNDetectFaceRectanglesRequest { [weak self] request, _ in
 facePoseRequest.revision = VNDetectFaceRectanglesRequestRevision3
 ```
 
-`VNGeneratePersonSegmentationRequest` generates an image mask for a person it detects in an image. The app can set the value for request’s [`qualityLevel`](https://developer.apple.comhttp://developer.apple.com/documentation/vision/vngeneratepersonsegmentationrequest/3750989-qualitylevel) property to `.fast`, `.balanced`, or `.accurate`; this value determines the quality of the generated mask as shown in the illustration below.
+`VNGeneratePersonSegmentationRequest` generates an image mask for a person it detects in an image. The app can set the value for request’s [qualityLevel](http://developer.apple.com/documentation/vision/vngeneratepersonsegmentationrequest/3750989-qualitylevel) property to `.fast`, `.balanced`, or `.accurate`; this value determines the quality of the generated mask as shown in the illustration below.
 
-![An image that shows the quality of the image masks that the request generates when it uses its .fast, .balanced, and .accurate quality level settings.](/images/Vision/quality_levels.png)
+![An image that shows the quality of the image masks that the request generates when it uses its .fast, .balanced, and .accurate quality level settings.](https://developer.apple.com/tutorials/images/Vision/quality_levels.png)
 
 Because the sample processes live video, it chooses `.balanced`, which provides a mixture of accuracy and performance. It also sets the format of the mask image that the request generates to an 8-bit, one-component format where `0` represents black.
 
@@ -69,7 +71,7 @@ private func processVideoFrame(_ framePixelBuffer: CVPixelBuffer) {
 
 ##### Render the Results
 
-The sample processes the results of the requests by taking the original frame, the mask image, and a background image that it dynamically generates based on the roll, pitch, and yaw angles of the user’s face. It creates a [`CIImage`](https://developer.apple.comhttp://developer.apple.com/documentation/coreimage/ciimage) object for each image.
+The sample processes the results of the requests by taking the original frame, the mask image, and a background image that it dynamically generates based on the roll, pitch, and yaw angles of the user’s face. It creates a [CIImage](http://developer.apple.com/documentation/coreimage/ciimage) object for each image.
 
 ```swift
 // Create CIImage objects for the video frame and the segmentation mask.
@@ -110,19 +112,20 @@ currentCIImage = blendFilter.outputImage?.oriented(.left)
 
 ## See Also
 
-- [Detecting human actions in a live video feed](../createml/detecting-human-actions-in-a-live-video-feed.md)
+### Image sequence analysis
+- [Detecting human actions in a live video feed](../CreateML/detecting-human-actions-in-a-live-video-feed.md)
   Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
-- [Segmenting and colorizing individuals from a surrounding scene](segmenting-and-colorizing-individuals-from-a-surrounding-scene.md)
+- [Segmenting and colorizing individuals from a surrounding scene](./segmenting-and-colorizing-individuals-from-a-surrounding-scene.md)
   Use the Vision framework to isolate and apply colors to people in an image.
-- [class VNStatefulRequest](vnstatefulrequest.md)
+- [class VNStatefulRequest](./vnstatefulrequest.md)
   An abstract request type that builds evidence of a condition over time.
-- [class VNGeneratePersonSegmentationRequest](vngeneratepersonsegmentationrequest.md)
+- [class VNGeneratePersonSegmentationRequest](./vngeneratepersonsegmentationrequest.md)
   An object that produces a matte image for a person it finds in the input image.
-- [class VNGeneratePersonInstanceMaskRequest](vngeneratepersoninstancemaskrequest.md)
+- [class VNGeneratePersonInstanceMaskRequest](./vngeneratepersoninstancemaskrequest.md)
   An object that produces a mask of individual people it finds in the input image.
-- [class VNDetectDocumentSegmentationRequest](vndetectdocumentsegmentationrequest.md)
+- [class VNDetectDocumentSegmentationRequest](./vndetectdocumentsegmentationrequest.md)
   An object that detects rectangular regions that contain text in the input image.
-- [class VNSequenceRequestHandler](vnsequencerequesthandler.md)
+- [class VNSequenceRequestHandler](./vnsequencerequesthandler.md)
   An object that processes image-analysis requests for each frame in a sequence.
 
 

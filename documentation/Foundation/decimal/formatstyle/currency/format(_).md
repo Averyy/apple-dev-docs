@@ -1,7 +1,8 @@
 # format(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Formats a decimal value, using this style.
 
@@ -26,7 +27,7 @@ A string representation of `value`, formatted according to the style’s configu
 
 #### Discussion
 
-Use this method when you want to create a single style instance, and then use it to format multiple decimal values. To format a single decimal value, use the [`Decimal`](decimal.md) instance method [`formatted(_:)`](decimal/formatted(_:).md), passing in an instance of [`Decimal.FormatStyle.Currency`](decimal/formatstyle/currency.md).
+Use this method when you want to create a single style instance, and then use it to format multiple decimal values. To format a single decimal value, use the [`Decimal`](../../../decimal.md) instance method [`formatted(_:)`](../../formatted%28_%29.md), passing in an instance of [`Decimal.FormatStyle.Currency`](../currency.md).
 
 ## Parameters
 

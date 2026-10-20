@@ -1,7 +1,8 @@
 # Text.LayoutKey
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A preference key that provides the `Text.Layout` values for all text views in the queried subtree.
 
@@ -23,15 +24,15 @@ struct LayoutKey
 ## Topics
 
 ### Structures
-- [Text.LayoutKey.AnchoredLayout](text/layoutkey/anchoredlayout.md)
+- [Text.LayoutKey.AnchoredLayout](./layoutkey/anchoredlayout.md)
   The layout of one text view, together with an anchor for the position of that view.
 
 ## Relationships
 
 ### Conforms To
-- [PreferenceKey](preferencekey.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [PreferenceKey](../preferencekey.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

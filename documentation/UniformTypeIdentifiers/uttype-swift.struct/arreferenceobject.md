@@ -1,7 +1,8 @@
 # arReferenceObject
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents an augmented reality reference object.
 
@@ -24,13 +25,14 @@ static var arReferenceObject: UTType { get }
 
 The identifier for this type is `com.apple.arobject`.
 
-This type conforms to [`UTTypeData`](uttypedata.md).
+This type conforms to [`UTTypeData`](../uttypedata.md).
 
 ## See Also
 
-- [static var realityFile: UTType](uttype-swift.struct/realityfile.md)
+### Apple 3D content
+- [static var realityFile: UTType](./realityfile.md)
   A type that represents a Reality Composer file.
-- [static var sceneKitScene: UTType](uttype-swift.struct/scenekitscene.md)
+- [static var sceneKitScene: UTType](./scenekitscene.md)
   A type that represents a SceneKit serialized scene.
 
 

@@ -1,7 +1,8 @@
 # decode(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decodes the provided data into native MapKit types that a map can display.
 
@@ -20,13 +21,17 @@ Decodes the provided data into native MapKit types that a map can display.
 func decode(_ data: Data) throws -> [any MKGeoJSONObject]
 ```
 
+```objc
+- (NSArray<id<MKGeoJSONObject>> *) geoJSONObjectsWithData:(NSData *) data error:(NSError **) errorPtr;
+```
+
 #### Return Value
 
-An array of [`MKGeoJSONObject`](mkgeojsonobject.md) objects, or an error if the decoder encounters an issue.
+An array of [`MKGeoJSONObject`](../mkgeojsonobject.md) objects, or an error if the decoder encounters an issue.
 
 ## Parameters
 
-- `data`: An [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object that contains the JSON to decode.
+- `data`: An [`NSData`](../../Foundation/nsdata.md) object that contains the JSON to decode.
 
 
 ---

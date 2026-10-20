@@ -1,7 +1,8 @@
 # AccessoryTransport.internet
 
 **Framework**: Accessory Transport Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A transport method that uses the internet for data delivery.
 
@@ -16,20 +17,21 @@ case internet
 
 ## Mentions
 
-- [Forwarding notifications to your accessory using the internet transport type](forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+- [Forwarding notifications to your accessory using the internet transport type](../forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
+- [Receiving iOS notifications on an accessory](../receiving-ios-notifications-on-an-accessory.md)
 
 #### Discussion
 
-The system requires [`SecurityMessage.CipherSuite.xWing`](securitymessage/ciphersuite-swift.enum/xwing.md) cryptography for this transport method. The system tries this transport method if Bluetooth and local network are unavailable.
+The system requires [`SecurityMessage.CipherSuite.xWing`](../securitymessage/ciphersuite-swift.enum/xwing.md) cryptography for this transport method. The system tries this transport method if Bluetooth and local network are unavailable.
 
 > **Note**: Internet transport uses a different encryption mechanism than Bluetooth. The system handles encryption and decryption transparently using Symmetric Key Ratchet derivation from the initial key exchange.
 
 ## See Also
 
-- [AccessoryTransport.bluetooth](accessorytransport/bluetooth.md)
+### Identifying transport types
+- [AccessoryTransport.bluetooth](./bluetooth.md)
   A transport method that uses Bluetooth for data delivery.
-- [AccessoryTransport.localNetwork](accessorytransport/localnetwork.md)
+- [AccessoryTransport.localNetwork](./localnetwork.md)
   A transport method that uses the local network for data delivery.
 
 

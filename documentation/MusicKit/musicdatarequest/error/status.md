@@ -1,7 +1,8 @@
 # status
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The HTTP status code for the error.
 

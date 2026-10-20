@@ -1,7 +1,8 @@
 # ExpressibleByExtendedGraphemeClusterLiteral
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can be initialized with a string literal containing a single extended grapheme cluster.
 
@@ -32,45 +33,46 @@ print(snowflake)
 // Prints "❄︎"
 ```
 
-### Conforming to Expressiblebyextendedgraphemeclusterliteral
+### Conforming to ExpressibleByExtendedGraphemeClusterLiteral
 
 To add `ExpressibleByExtendedGraphemeClusterLiteral` conformance to your custom type, implement the required initializer.
 
 ## Topics
 
 ### Associated Types
-- [associatedtype ExtendedGraphemeClusterLiteralType : _ExpressibleByBuiltinExtendedGraphemeClusterLiteral](expressiblebyextendedgraphemeclusterliteral/extendedgraphemeclusterliteraltype.md)
+- [associatedtype ExtendedGraphemeClusterLiteralType : _ExpressibleByBuiltinExtendedGraphemeClusterLiteral](./expressiblebyextendedgraphemeclusterliteral/extendedgraphemeclusterliteraltype.md)
   A type that represents an extended grapheme cluster literal.
 ### Initializers
-- [init(extendedGraphemeClusterLiteral: Self.ExtendedGraphemeClusterLiteralType)](expressiblebyextendedgraphemeclusterliteral/init(extendedgraphemeclusterliteral:).md)
+- [init(extendedGraphemeClusterLiteral: Self.ExtendedGraphemeClusterLiteralType)](./expressiblebyextendedgraphemeclusterliteral/init%28extendedgraphemeclusterliteral%29.md)
   Creates an instance initialized to the given value.
 
 ## Relationships
 
 ### Inherits From
-- [ExpressibleByUnicodeScalarLiteral](expressiblebyunicodescalarliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](./expressiblebyunicodescalarliteral.md)
 ### Inherited By
-- [ExpressibleByStringInterpolation](expressiblebystringinterpolation.md)
-- [ExpressibleByStringLiteral](expressiblebystringliteral.md)
-- [StringProtocol](stringprotocol.md)
+- [ExpressibleByStringInterpolation](./expressiblebystringinterpolation.md)
+- [ExpressibleByStringLiteral](./expressiblebystringliteral.md)
+- [StringProtocol](./stringprotocol.md)
 ### Conforming Types
-- [Character](character.md)
-- [StaticString](staticstring.md)
-- [String](string.md)
-- [String.LocalizationValue](string/localizationvalue.md)
-- [Substring](substring.md)
+- [Character](./character.md)
+- [StaticString](./staticstring.md)
+- [String](./string.md)
+- [String.LocalizationValue](./string/localizationvalue.md)
+- [Substring](./substring.md)
 
 ## See Also
 
-- [protocol ExpressibleByStringLiteral](expressiblebystringliteral.md)
+### String Literals
+- [protocol ExpressibleByStringLiteral](./expressiblebystringliteral.md)
   A type that can be initialized with a string literal.
-- [protocol ExpressibleByUnicodeScalarLiteral](expressiblebyunicodescalarliteral.md)
+- [protocol ExpressibleByUnicodeScalarLiteral](./expressiblebyunicodescalarliteral.md)
   A type that can be initialized with a string literal containing a single Unicode scalar value.
-- [protocol ExpressibleByStringInterpolation](expressiblebystringinterpolation.md)
+- [protocol ExpressibleByStringInterpolation](./expressiblebystringinterpolation.md)
   A type that can be initialized by string interpolation with a string literal that includes expressions.
-- [protocol StringInterpolationProtocol](stringinterpolationprotocol.md)
+- [protocol StringInterpolationProtocol](./stringinterpolationprotocol.md)
   Represents the contents of a string literal with interpolations while it’s being built up.
-- [struct DefaultStringInterpolation](defaultstringinterpolation.md)
+- [struct DefaultStringInterpolation](./defaultstringinterpolation.md)
   Represents a string literal with interpolations while it’s being built up.
 
 

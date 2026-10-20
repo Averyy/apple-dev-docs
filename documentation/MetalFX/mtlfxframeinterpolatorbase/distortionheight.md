@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The height, in pixels, of the content region within the distortion texture to use as input.
@@ -19,9 +20,13 @@ The height, in pixels, of the content region within the distortion texture to us
 var distortionHeight: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger distortionHeight;
+```
+
 #### Discussion
 
-When set to zero (the default), the frame interpolator uses [`contentHeight`](mtlfxframeinterpolatorbase/contentheight.md) instead.
+When set to zero (the default), the frame interpolator uses [`contentHeight`](./contentheight.md) instead.
 
 
 ---

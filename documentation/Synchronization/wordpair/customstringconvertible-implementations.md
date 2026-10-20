@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: Synchronization
+**Framework**: Synchronization  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](wordpair/description.md)
+- [var description: String](./description.md)
   A string that represents the contents of the word pair.
 
 

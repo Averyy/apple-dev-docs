@@ -1,7 +1,8 @@
 # predefinedEntityDeclaration(forName:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a DTD node representing the predefined entity declaration with the specified name.
 
@@ -15,9 +16,13 @@ Returns a DTD node representing the predefined entity declaration with the speci
 class func predefinedEntityDeclaration(forName name: String) -> XMLDTDNode?
 ```
 
+```objc
++ (NSXMLDTDNode *) predefinedEntityDeclarationForName:(NSString *) name;
+```
+
 #### Return Value
 
-An autoreleased [`XMLDTDNode`](xmldtdnode.md) object, or `nil` if there is no match for `name`.
+An autoreleased [`XMLDTDNode`](../xmldtdnode.md) object, or `nil` if there is no match for `name`.
 
 #### Discussion
 
@@ -29,13 +34,14 @@ The five predefined entity references (or character references) are “<” (les
 
 ## See Also
 
-- [func elementDeclaration(forName: String) -> XMLDTDNode?](xmldtd/elementdeclaration(forname:).md)
+### Getting DTD Nodes by Name
+- [func elementDeclaration(forName: String) -> XMLDTDNode?](./elementdeclaration%28forname%29.md)
   Returns the DTD node representing an element declaration for a specified element.
-- [func attributeDeclaration(forName: String, elementName: String) -> XMLDTDNode?](xmldtd/attributedeclaration(forname:elementname:).md)
+- [func attributeDeclaration(forName: String, elementName: String) -> XMLDTDNode?](./attributedeclaration%28forname,elementname%29.md)
   Returns the DTD node representing an attribute-list declaration for a given attribute and its element.
-- [func entityDeclaration(forName: String) -> XMLDTDNode?](xmldtd/entitydeclaration(forname:).md)
+- [func entityDeclaration(forName: String) -> XMLDTDNode?](./entitydeclaration%28forname%29.md)
   Returns the DTD node representing the entity declaration for a specified entity.
-- [func notationDeclaration(forName: String) -> XMLDTDNode?](xmldtd/notationdeclaration(forname:).md)
+- [func notationDeclaration(forName: String) -> XMLDTDNode?](./notationdeclaration%28forname%29.md)
   Returns the DTD node representing the notation declaration identified by the specified notation name.
 
 

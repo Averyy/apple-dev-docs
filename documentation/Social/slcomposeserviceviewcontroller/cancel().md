@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Social  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the animated dismissal of the compose view.
 
@@ -17,9 +18,13 @@ Starts the animated dismissal of the compose view.
 func cancel()
 ```
 
+```objc
+- (void) cancel;
+```
+
 #### Discussion
 
-When the cancel animation finishes, this method calls [`didSelectCancel()`](slcomposeserviceviewcontroller/didselectcancel().md). A subclass shouldn’t need to override `cancel`. In rare cases a subclass may call `cancel`, such as in response to a catastrophic failure during user interaction with the compose view.
+When the cancel animation finishes, this method calls [`didSelectCancel()`](./didselectcancel%28%29.md). A subclass shouldn’t need to override `cancel`. In rare cases a subclass may call `cancel`, such as in response to a catastrophic failure during user interaction with the compose view.
 
 
 ---

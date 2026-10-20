@@ -1,7 +1,8 @@
 # init(client:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.15+
@@ -10,6 +11,10 @@
 
 ```swift
 init(client: any NSTextCheckingClient)
+```
+
+```objc
+- (instancetype) initWithClient:(id<NSTextCheckingClient>) client;
 ```
 
 

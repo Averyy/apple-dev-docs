@@ -1,7 +1,8 @@
 # CLKComplicationWidgetMigrationConfiguration
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract class that specifies WidgetKit complications.
 
@@ -14,38 +15,43 @@ An abstract class that specifies WidgetKit complications.
 class CLKComplicationWidgetMigrationConfiguration
 ```
 
+```objc
+@interface CLKComplicationWidgetMigrationConfiguration : NSObject
+```
+
 #### Overview
 
-The [`CLKComplicationWidgetMigrationConfiguration`](clkcomplicationwidgetmigrationconfiguration.md) class is the basis for all classes that describe watchOS complications in WidgetKit. Because it’s an abstract class, you don’t instantiate it directly. Instead, create one of its concrete subclasses: [`CLKComplicationStaticWidgetMigrationConfiguration`](clkcomplicationstaticwidgetmigrationconfiguration.md), [`CLKComplicationAppIntentWidgetMigrationConfiguration`](clkcomplicationappintentwidgetmigrationconfiguration.md), or [`CLKComplicationIntentWidgetMigrationConfiguration`](clkcomplicationintentwidgetmigrationconfiguration.md).
+The [`CLKComplicationWidgetMigrationConfiguration`](./clkcomplicationwidgetmigrationconfiguration.md) class is the basis for all classes that describe watchOS complications in WidgetKit. Because it’s an abstract class, you don’t instantiate it directly. Instead, create one of its concrete subclasses: [`CLKComplicationStaticWidgetMigrationConfiguration`](./clkcomplicationstaticwidgetmigrationconfiguration.md), [`CLKComplicationAppIntentWidgetMigrationConfiguration`](./clkcomplicationappintentwidgetmigrationconfiguration.md), or [`CLKComplicationIntentWidgetMigrationConfiguration`](./clkcomplicationintentwidgetmigrationconfiguration.md).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [CLKComplicationAppIntentWidgetMigrationConfiguration](clkcomplicationappintentwidgetmigrationconfiguration.md)
-- [CLKComplicationIntentWidgetMigrationConfiguration](clkcomplicationintentwidgetmigrationconfiguration.md)
-- [CLKComplicationStaticWidgetMigrationConfiguration](clkcomplicationstaticwidgetmigrationconfiguration.md)
+- [CLKComplicationAppIntentWidgetMigrationConfiguration](./clkcomplicationappintentwidgetmigrationconfiguration.md)
+- [CLKComplicationIntentWidgetMigrationConfiguration](./clkcomplicationintentwidgetmigrationconfiguration.md)
+- [CLKComplicationStaticWidgetMigrationConfiguration](./clkcomplicationstaticwidgetmigrationconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var widgetMigrator: any CLKComplicationWidgetMigrator](clkcomplicationdatasource/widgetmigrator.md)
+### Migrating to WidgetKit
+- [var widgetMigrator: any CLKComplicationWidgetMigrator](./clkcomplicationdatasource/widgetmigrator.md)
   A migrator that maps ClockKit complications to their WidgetKit replacements.
-- [class CLKComplicationStaticWidgetMigrationConfiguration](clkcomplicationstaticwidgetmigrationconfiguration.md)
+- [class CLKComplicationStaticWidgetMigrationConfiguration](./clkcomplicationstaticwidgetmigrationconfiguration.md)
   A configuration object that specifies a static complication in WidgetKit.
-- [class CLKComplicationAppIntentWidgetMigrationConfiguration](clkcomplicationappintentwidgetmigrationconfiguration.md)
+- [class CLKComplicationAppIntentWidgetMigrationConfiguration](./clkcomplicationappintentwidgetmigrationconfiguration.md)
   A configuration object that specifies a WidgetKit complication that uses app intents.
-- [class CLKComplicationIntentWidgetMigrationConfiguration](clkcomplicationintentwidgetmigrationconfiguration.md)
+- [class CLKComplicationIntentWidgetMigrationConfiguration](./clkcomplicationintentwidgetmigrationconfiguration.md)
   A configuration object that specifies an intents-based complication in WidgetKit.
-- [protocol CLKComplicationWidgetMigrator](clkcomplicationwidgetmigrator.md)
+- [protocol CLKComplicationWidgetMigrator](./clkcomplicationwidgetmigrator.md)
   A protocol that maps ClockKit complications to their WidgetKit replacements.
 
 

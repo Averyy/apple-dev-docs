@@ -1,14 +1,15 @@
 # PE_cpu_power_enable
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 void PE_cpu_power_enable(int cpu_id);
 ```
 

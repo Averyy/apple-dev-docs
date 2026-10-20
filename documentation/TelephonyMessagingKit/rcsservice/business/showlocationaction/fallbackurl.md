@@ -1,7 +1,8 @@
 # fallbackURL
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Fallback URL to use when unable to perform operation.
 
@@ -16,11 +17,12 @@ let fallbackURL: URL?
 
 ## See Also
 
-- [let method: RCSService.Business.ShowLocationAction.Method](rcsservice/business/showlocationaction/method-swift.property.md)
+### Accessing action properties
+- [let method: RCSService.Business.ShowLocationAction.Method](./method-swift.property.md)
   The method to use.
-- [RCSService.Business.ShowLocationAction.Method](rcsservice/business/showlocationaction/method-swift.enum.md)
+- [RCSService.Business.ShowLocationAction.Method](./method-swift.enum.md)
   Enumeration indicating method to use when searching for location.
-- [let label: String?](rcsservice/business/showlocationaction/label.md)
+- [let label: String?](./label.md)
   Label to use for location.
 
 

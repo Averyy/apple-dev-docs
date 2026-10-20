@@ -1,7 +1,8 @@
 # substroke(range:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of this stroke containing the control points in the given range.
 
@@ -20,7 +21,7 @@ func substroke(range: ClosedRange<CGFloat>) -> PKStroke
 
 ## Mentions
 
-- [Controlling stroke rendering for animation and editing](controlling-stroke-rendering-for-animation-and-editing.md)
+- [Controlling stroke rendering for animation and editing](../controlling-stroke-rendering-for-animation-and-editing.md)
 
 #### Return Value
 

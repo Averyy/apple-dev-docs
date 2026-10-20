@@ -1,7 +1,8 @@
 # hiking
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The point of interest category for hiking areas.
 
@@ -20,35 +21,40 @@ The point of interest category for hiking areas.
 static let hiking: MKPointOfInterestCategory
 ```
 
+```c
+extern MKPointOfInterestCategory const MKPointOfInterestCategoryHiking;
+```
+
 ## See Also
 
-- [static let baseball: MKPointOfInterestCategory](mkpointofinterestcategory/baseball.md)
+### Sports
+- [static let baseball: MKPointOfInterestCategory](./baseball.md)
   The point of interest category for baseball parks.
-- [static let basketball: MKPointOfInterestCategory](mkpointofinterestcategory/basketball.md)
+- [static let basketball: MKPointOfInterestCategory](./basketball.md)
   The point of interest category for basketball courts.
-- [static let bowling: MKPointOfInterestCategory](mkpointofinterestcategory/bowling.md)
+- [static let bowling: MKPointOfInterestCategory](./bowling.md)
   The point of interest category for bowling lanes.
-- [static let goKart: MKPointOfInterestCategory](mkpointofinterestcategory/gokart.md)
+- [static let goKart: MKPointOfInterestCategory](./gokart.md)
   The point of interest category for go-kart services.
-- [static let golf: MKPointOfInterestCategory](mkpointofinterestcategory/golf.md)
+- [static let golf: MKPointOfInterestCategory](./golf.md)
   The point of interest category for golf courses.
-- [static let miniGolf: MKPointOfInterestCategory](mkpointofinterestcategory/minigolf.md)
+- [static let miniGolf: MKPointOfInterestCategory](./minigolf.md)
   The point of interest category for mini-golf areas.
-- [static let rockClimbing: MKPointOfInterestCategory](mkpointofinterestcategory/rockclimbing.md)
+- [static let rockClimbing: MKPointOfInterestCategory](./rockclimbing.md)
   The point of interest category for rock-climbing areas.
-- [static let skatePark: MKPointOfInterestCategory](mkpointofinterestcategory/skatepark.md)
+- [static let skatePark: MKPointOfInterestCategory](./skatepark.md)
   The point of interest category for skate parks.
-- [static let skating: MKPointOfInterestCategory](mkpointofinterestcategory/skating.md)
+- [static let skating: MKPointOfInterestCategory](./skating.md)
   The point of interest category for skating areas.
-- [static let skiing: MKPointOfInterestCategory](mkpointofinterestcategory/skiing.md)
+- [static let skiing: MKPointOfInterestCategory](./skiing.md)
   The point of interest category for skiing areas.
-- [static let soccer: MKPointOfInterestCategory](mkpointofinterestcategory/soccer.md)
+- [static let soccer: MKPointOfInterestCategory](./soccer.md)
   The point of interest category for soccer fields.
-- [static let stadium: MKPointOfInterestCategory](mkpointofinterestcategory/stadium.md)
+- [static let stadium: MKPointOfInterestCategory](./stadium.md)
   The point of interest category for stadiums.
-- [static let tennis: MKPointOfInterestCategory](mkpointofinterestcategory/tennis.md)
+- [static let tennis: MKPointOfInterestCategory](./tennis.md)
   The point of interest category for tennis courts.
-- [static let volleyball: MKPointOfInterestCategory](mkpointofinterestcategory/volleyball.md)
+- [static let volleyball: MKPointOfInterestCategory](./volleyball.md)
   The point of interest category for volleyball courts.
 
 

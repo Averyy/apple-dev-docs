@@ -1,7 +1,8 @@
 # switchMetaParameterDefinition
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The meta parameter that holds the name of the child node to invoke.
 
@@ -19,13 +20,18 @@ The meta parameter that holds the name of the child node to invoke.
 var switchMetaParameterDefinition: PHASEStringMetaParameterDefinition { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) PHASEStringMetaParameterDefinition * switchMetaParameterDefinition;
+```
+
 #### Discussion
 
-The framework sets the value of this property to the [`init(switchMetaParameterDefinition:)`](phaseswitchnodedefinition/init(switchmetaparameterdefinition:).md) argument.
+The framework sets the value of this property to the [`init(switchMetaParameterDefinition:)`](./init%28switchmetaparameterdefinition%29.md) argument.
 
 ## See Also
 
-- [func addSubtree(PHASESoundEventNodeDefinition, switchValue: String)](phaseswitchnodedefinition/addsubtree(_:switchvalue:).md)
+### Managing Child Nodes
+- [func addSubtree(PHASESoundEventNodeDefinition, switchValue: String)](./addsubtree%28_,switchvalue%29.md)
   Adds a child node with the given switch value.
 
 

@@ -1,7 +1,8 @@
 # minFrameDuration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The screen input’s minimum frame duration.
 
@@ -14,6 +15,10 @@ The screen input’s minimum frame duration.
 var minFrameDuration: CMTime { get set }
 ```
 
+```objc
+@property (nonatomic) CMTime minFrameDuration;
+```
+
 #### Discussion
 
 The `minFrameDuration` is the reciprocal of its maximum frame rate.
@@ -22,9 +27,10 @@ You use this property to request a maximum frame rate at which the input produce
 
 ## See Also
 
-- [var cropRect: CGRect](avcapturescreeninput/croprect.md)
+### Setting video capture options
+- [var cropRect: CGRect](./croprect.md)
   Indicates the bounding rectangle of the screen area to be captured, in pixels.
-- [var scaleFactor: CGFloat](avcapturescreeninput/scalefactor.md)
+- [var scaleFactor: CGFloat](./scalefactor.md)
   Indicates the factor by which video buffers captured from the screen are to be scaled.
 
 

@@ -1,7 +1,8 @@
 # latestFocusRegion
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The latest eye input data, to be used to enable foveated streaming.
 

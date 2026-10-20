@@ -1,7 +1,8 @@
 # PrivacyPassIssuerURL
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The URL of the Privacy Pass issuer.
 
@@ -10,9 +11,10 @@ The URL of the Privacy Pass issuer.
 - iPadOS 27.2+
 - macOS 27.2+
 
+## Details
 
-
-**Type**: string
+- **Name**: `PrivacyPassIssuerURL`
+- **Type**: string
 
 #### Discussion
 
@@ -20,7 +22,8 @@ This field is required for Live Caller ID extensions and optional for URL filter
 
 ## See Also
 
-- [PIRServerURL](information-property-list/nspirconfiguration/pirserverurl.md)
+### Configuring URLs
+- [PIRServerURL](./pirserverurl.md)
   The URL of the PIR server.
 
 

@@ -1,7 +1,8 @@
 # sort(columnNamed:byIncreasingOrder:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new data table by sorting the table by the given column.
 
@@ -26,7 +27,7 @@ A new data table.
 ## Parameters
 
 - `columnNamed`: The name of the column to sort the rows of data table.
-- `byIncreasingOrder`: Set this value to [`true`](https://developer.apple.com/documentation/swift/true) to sort the table in ascending order.
+- `byIncreasingOrder`: Set this value to [`true`](../../Swift/true.md) to sort the table in ascending order.
 
 
 ---

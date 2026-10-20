@@ -1,23 +1,28 @@
 # setMaxAllowedRotationAngle(_:forJoint:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the rotation limit, in degrees, for the specified node.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 func setMaxAllowedRotationAngle(_ angle: CGFloat, forJoint node: SCNNode)
+```
+
+```objc
+- (void) setMaxAllowedRotationAngle:(CGFloat) angle forJoint:(SCNNode *) node;
 ```
 
 #### Discussion
@@ -29,13 +34,14 @@ The default rotation limit for each joint is 180 degrees in either direction, al
 ## Parameters
 
 - `angle`: The maximum rotation, in degrees, that SceneKit should apply to the specified node when evaluating the constraint.
-- `node`: A node affected by the constraint—either the node whose [`constraints`](scnnode/constraints.md) property references the constraint, or one of that node’s parent or ancestor nodes up to the node specified by the constraint’s [`chainRootNode`](scnikconstraint/chainrootnode.md) property.
+- `node`: A node affected by the constraint—either the node whose [`constraints`](../scnnode/constraints.md) property references the constraint, or one of that node’s parent or ancestor nodes up to the node specified by the constraint’s [`chainRootNode`](./chainrootnode.md) property.
 
 ## See Also
 
-- [var chainRootNode: SCNNode](scnikconstraint/chainrootnode.md)
+### Adjusting the Constraint’s Limits of Motion
+- [var chainRootNode: SCNNode](./chainrootnode.md)
   The parent node of the hierarchy affected by the constraint.
-- [func maxAllowedRotationAngle(forJoint: SCNNode) -> CGFloat](scnikconstraint/maxallowedrotationangle(forjoint:).md)
+- [func maxAllowedRotationAngle(forJoint: SCNNode) -> CGFloat](./maxallowedrotationangle%28forjoint%29.md)
   Returns the rotation limit, in degrees, for the specified node.
 
 

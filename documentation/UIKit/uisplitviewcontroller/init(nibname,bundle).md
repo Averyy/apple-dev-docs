@@ -1,7 +1,8 @@
 # init(nibName:bundle:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a split view controller with the nib file in the specified bundle.
 
@@ -9,7 +10,7 @@ Creates a split view controller with the nib file in the specified bundle.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ Creates a split view controller with the nib file in the specified bundle.
 init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
 ```
 
+```objc
+- (instancetype) initWithNibName:(NSString *) nibNameOrNil bundle:(NSBundle *) nibBundleOrNil;
+```
+
 ## See Also
 
-- [init(style: UISplitViewController.Style)](uisplitviewcontroller/init(style:).md)
+### Creating a split view controller
+- [init(style: UISplitViewController.Style)](./init%28style%29.md)
   Creates a split view controller with the specified column style.
-- [init?(coder: NSCoder)](uisplitviewcontroller/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a split view controller from data in an unarchiver.
 
 

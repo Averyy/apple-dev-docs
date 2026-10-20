@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core Location  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a location monitor with the name you specify.
 

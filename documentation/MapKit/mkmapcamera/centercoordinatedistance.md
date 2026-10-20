@@ -1,7 +1,8 @@
 # centerCoordinateDistance
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance from the center point of the map to the camera, in meters.
 
@@ -20,15 +21,20 @@ The distance from the center point of the map to the camera, in meters.
 var centerCoordinateDistance: CLLocationDistance { get set }
 ```
 
+```objc
+@property (nonatomic) CLLocationDistance centerCoordinateDistance;
+```
+
 ## See Also
 
-- [var centerCoordinate: CLLocationCoordinate2D](mkmapcamera/centercoordinate.md)
+### Configuring the viewing angle
+- [var centerCoordinate: CLLocationCoordinate2D](./centercoordinate.md)
   The map coordinate at the center of the map view.
-- [var heading: CLLocationDirection](mkmapcamera/heading.md)
+- [var heading: CLLocationDirection](./heading.md)
   The heading of the camera (in degrees) relative to true north.
-- [var pitch: CGFloat](mkmapcamera/pitch.md)
+- [var pitch: CGFloat](./pitch.md)
   The viewing angle of the camera, in degrees.
-- [var altitude: CLLocationDistance](mkmapcamera/altitude.md)
+- [var altitude: CLLocationDistance](./altitude.md)
   The altitude above the ground, in meters.
 
 

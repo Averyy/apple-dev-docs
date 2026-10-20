@@ -1,7 +1,8 @@
 # VSUserAccountManager
 
 **Framework**: Video Subscriber Account  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The object that coordinates your app’s user account actions.
 
@@ -19,56 +20,61 @@ The object that coordinates your app’s user account actions.
 class VSUserAccountManager
 ```
 
+```objc
+@interface VSUserAccountManager : NSObject
+```
+
 #### Overview
 
-Don’t create `VSUserAccountManager` directly; use [`shared`](vsuseraccountmanager/shared.md).
+Don’t create `VSUserAccountManager` directly; use [`shared`](./vsuseraccountmanager/shared.md).
 
 ## Topics
 
 ### Getting the account manager
-- [class var shared: VSUserAccountManager](vsuseraccountmanager/shared.md)
+- [class var shared: VSUserAccountManager](./vsuseraccountmanager/shared.md)
   A shared instance of the user account manager class.
 ### Getting user accounts
-- [func userAccounts(options: VSUserAccountManager.QueryOptions) async throws -> [VSUserAccount]](vsuseraccountmanager/useraccounts(options:).md)
+- [func userAccounts(options: VSUserAccountManager.QueryOptions) async throws -> [VSUserAccount]](./vsuseraccountmanager/useraccounts%28options%29.md)
   Returns a list of registered user accounts for your app.
-- [VSUserAccountManager.QueryOptions](vsuseraccountmanager/queryoptions.md)
+- [VSUserAccountManager.QueryOptions](./vsuseraccountmanager/queryoptions.md)
   Constants that represent options you use to fetch a list of user accounts.
 ### Updating a user account
-- [func update(VSUserAccount) async throws](vsuseraccountmanager/update(_:).md)
+- [func update(VSUserAccount) async throws](./vsuseraccountmanager/update%28_%29.md)
   Registers a new user account.
 ### Signing people in automatically
-- [VSUserAccountManager.AutoSignInToken](vsuseraccountmanager/autosignintoken-swift.struct.md)
+- [VSUserAccountManager.AutoSignInToken](./vsuseraccountmanager/autosignintoken-swift.struct.md)
   A value that represents a person’s account and their consent to Automatic Sign-In.
-- [VSUserAccountManager.AutoSignInTokenUpdateContext](vsuseraccountmanager/autosignintokenupdatecontext.md)
+- [VSUserAccountManager.AutoSignInTokenUpdateContext](./vsuseraccountmanager/autosignintokenupdatecontext.md)
   An object that contains information about a person’s choice in the Automatic Sign-In prompt.
-- [VSUserAccountManager.AutoSignInAuthorization](vsuseraccountmanager/autosigninauthorization.md)
+- [VSUserAccountManager.AutoSignInAuthorization](./vsuseraccountmanager/autosigninauthorization.md)
   The possible states the framework sets for Automatic Sign-In.
-- [var autoSignInToken: VSUserAccountManager.AutoSignInToken](vsuseraccountmanager/autosignintoken-swift.property.md)
+- [var autoSignInToken: VSUserAccountManager.AutoSignInToken](./vsuseraccountmanager/autosignintoken-swift.property.md)
   The current Automatic Sign-In token.
-- [func deleteAutoSignInToken() async throws](vsuseraccountmanager/deleteautosignintoken.md)
+- [func deleteAutoSignInToken() async throws](./vsuseraccountmanager/deleteautosignintoken%28%29.md)
   Deletes the value of the current Automatic Sign-In token.
-- [func requestAutoSignInAuthorization() async throws -> VSUserAccountManager.AutoSignInTokenUpdateContext](vsuseraccountmanager/requestautosigninauthorization.md)
+- [func requestAutoSignInAuthorization() async throws -> VSUserAccountManager.AutoSignInTokenUpdateContext](./vsuseraccountmanager/requestautosigninauthorization%28%29.md)
   Presents a modal sheet that offers a person to opt in to Automatic Sign-In.
-- [func updateAutoSignInToken(String, updateContext: VSUserAccountManager.AutoSignInTokenUpdateContext) async throws](vsuseraccountmanager/updateautosignintoken(_:updatecontext:).md)
+- [func updateAutoSignInToken(String, updateContext: VSUserAccountManager.AutoSignInTokenUpdateContext) async throws](./vsuseraccountmanager/updateautosignintoken%28_,updatecontext%29.md)
   Sets the current Automatic Sign-In token.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Signing people in to their media accounts automatically](signing-people-in-to-media-apps-automatically.md)
+### User account management
+- [Signing people in to their media accounts automatically](./signing-people-in-to-media-apps-automatically.md)
   Implement single sign-on for media-streaming apps by managing a sign-in token on a person’s Apple Account.
-- [struct VSUserAccount](vsuseraccount-swift.struct.md)
+- [struct VSUserAccount](./vsuseraccount-swift.struct.md)
   An object that represents a user’s account.
 
 

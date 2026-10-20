@@ -1,7 +1,8 @@
 # navigationController(_:interactionControllerFor:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the delegate to return an interactive animator object for use during view controller transitions.
 
@@ -9,7 +10,7 @@ Allows the delegate to return an interactive animator object for use during view
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Allows the delegate to return an interactive animator object for use during view
 optional func navigationController(_ navigationController: UINavigationController, interactionControllerFor animationController: any UIViewControllerAnimatedTransitioning) -> (any UIViewControllerInteractiveTransitioning)?
 ```
 
+```objc
+- (id<UIViewControllerInteractiveTransitioning>) navigationController:(UINavigationController *) navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>) animationController;
+```
+
 #### Return Value
 
-The animator object responsible for managing the transition animations, or `nil` if you want to use the standard navigation controller transitions. The object you return must conform to the [`UIViewControllerInteractiveTransitioning`](uiviewcontrollerinteractivetransitioning.md) protocol.
+The animator object responsible for managing the transition animations, or `nil` if you want to use the standard navigation controller transitions. The object you return must conform to the [`UIViewControllerInteractiveTransitioning`](../uiviewcontrollerinteractivetransitioning.md) protocol.
 
 #### Discussion
 
@@ -29,15 +34,16 @@ Implement this delegate method when you want to provide a custom, interactive tr
 ## Parameters
 
 - `navigationController`: The navigation controller whose navigation stack is changing.
-- `animationController`: The noninteractive animator object provided by the delegate’s [`navigationController(_:animationControllerFor:from:to:)`](uinavigationcontrollerdelegate/navigationcontroller(_:animationcontrollerfor:from:to:).md) method.
+- `animationController`: The noninteractive animator object provided by the delegate’s [`navigationController(_:animationControllerFor:from:to:)`](./navigationcontroller%28_,animationcontrollerfor,from,to%29.md) method.
 
 ## See Also
 
-- [func navigationController(UINavigationController, animationControllerFor: UINavigationController.Operation, from: UIViewController, to: UIViewController) -> (any UIViewControllerAnimatedTransitioning)?](uinavigationcontrollerdelegate/navigationcontroller(_:animationcontrollerfor:from:to:).md)
+### Supporting custom transition animations
+- [func navigationController(UINavigationController, animationControllerFor: UINavigationController.Operation, from: UIViewController, to: UIViewController) -> (any UIViewControllerAnimatedTransitioning)?](./navigationcontroller%28_,animationcontrollerfor,from,to%29.md)
   Allows the delegate to return a noninteractive animator object for use during view controller transitions.
-- [func navigationControllerPreferredInterfaceOrientationForPresentation(UINavigationController) -> UIInterfaceOrientation](uinavigationcontrollerdelegate/navigationcontrollerpreferredinterfaceorientationforpresentation(_:).md)
+- [func navigationControllerPreferredInterfaceOrientationForPresentation(UINavigationController) -> UIInterfaceOrientation](./navigationcontrollerpreferredinterfaceorientationforpresentation%28_%29.md)
   Returns the preferred orientation for presentation of the navigation controller, as determined by the delegate.
-- [func navigationControllerSupportedInterfaceOrientations(UINavigationController) -> UIInterfaceOrientationMask](uinavigationcontrollerdelegate/navigationcontrollersupportedinterfaceorientations(_:).md)
+- [func navigationControllerSupportedInterfaceOrientations(UINavigationController) -> UIInterfaceOrientationMask](./navigationcontrollersupportedinterfaceorientations%28_%29.md)
   Returns the complete set of supported interface orientations for the navigation controller, as determined by the delegate.
 
 

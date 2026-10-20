@@ -1,15 +1,16 @@
 # UIBarStyle
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines the stylistic appearance of different types of views.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,45 +18,50 @@ Defines the stylistic appearance of different types of views.
 enum UIBarStyle
 ```
 
+```c
+enum UIBarStyle : NSInteger;
+```
+
 ## Topics
 
 ### Bar styles
-- [UIBarStyle.default](uibarstyle/default.md)
+- [UIBarStyle.default](./uibarstyle/default.md)
   The default style normally associated with the given view.
-- [UIBarStyle.black](uibarstyle/black.md)
+- [UIBarStyle.black](./uibarstyle/black.md)
   A black background with light content.
-- [static var blackOpaque: UIBarStyle](uibarstyle/blackopaque.md)
+- [static var blackOpaque: UIBarStyle](./uibarstyle/blackopaque.md)
   A deprecated opaque style.
-- [UIBarStyle.blackTranslucent](uibarstyle/blacktranslucent.md)
+- [UIBarStyle.blackTranslucent](./uibarstyle/blacktranslucent.md)
   A deprecated translucent style.
 ### Initializers
-- [init?(rawValue: Int)](uibarstyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uibarstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isEnabled: Bool](uisearchbar/isenabled.md)
+### Configuring the search bar
+- [var isEnabled: Bool](./uisearchbar/isenabled.md)
   A Boolean value indicating whether the search bar is in the enabled state.
-- [var barTintColor: UIColor?](uisearchbar/bartintcolor.md)
+- [var barTintColor: UIColor?](./uisearchbar/bartintcolor.md)
   The tint color to apply to the search bar background.
-- [var searchBarStyle: UISearchBar.Style](uisearchbar/searchbarstyle.md)
+- [var searchBarStyle: UISearchBar.Style](./uisearchbar/searchbarstyle.md)
   A search bar style that specifies the search bar’s appearance.
-- [UISearchBar.Style](uisearchbar/style.md)
+- [UISearchBar.Style](./uisearchbar/style.md)
   Specifies whether the search bar has a background.
-- [var tintColor: UIColor!](uisearchbar/tintcolor.md)
+- [var tintColor: UIColor!](./uisearchbar/tintcolor.md)
   The tint color to apply to key elements in the search bar.
-- [var isTranslucent: Bool](uisearchbar/istranslucent.md)
+- [var isTranslucent: Bool](./uisearchbar/istranslucent.md)
   A Boolean value that indicates whether the search bar is translucent (true) or not (false).
-- [var barStyle: UIBarStyle](uisearchbar/barstyle.md)
+- [var barStyle: UIBarStyle](./uisearchbar/barstyle.md)
   A bar style that specifies the search bar’s appearance.
 
 

@@ -1,7 +1,8 @@
 # alphaChannelIsOpaque
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 True if the alpha channel in the image data is fully opaque.
 

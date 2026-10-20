@@ -1,7 +1,8 @@
 # dimensions(in:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the subview for its dimensions and alignment guides.
 
@@ -22,19 +23,19 @@ func dimensions(in proposal: ProposedViewSize) -> ViewDimensions
 
 #### Return Value
 
-A [`ViewDimensions`](viewdimensions.md) instance that includes a height and width, as well as a set of alignment guides.
+A [`ViewDimensions`](../viewdimensions.md) instance that includes a height and width, as well as a set of alignment guides.
 
 #### Discussion
 
-Call this method to ask a subview of a custom [`Layout`](layout.md) type about its size and alignment properties. You can call it from your implementation of any of that protocol’s methods, like [`placeSubviews(in:proposal:subviews:cache:)`](layout/placesubviews(in:proposal:subviews:cache:).md) or [`sizeThatFits(proposal:subviews:cache:)`](layout/sizethatfits(proposal:subviews:cache:).md), to get information for your layout calculations.
+Call this method to ask a subview of a custom [`Layout`](../layout.md) type about its size and alignment properties. You can call it from your implementation of any of that protocol’s methods, like [`placeSubviews(in:proposal:subviews:cache:)`](../layout/placesubviews%28in,proposal,subviews,cache%29.md) or [`sizeThatFits(proposal:subviews:cache:)`](../layout/sizethatfits%28proposal,subviews,cache%29.md), to get information for your layout calculations.
 
 When you call this method, you propose a size using the `proposal` parameter. The subview can choose its own size, but might take the proposal into account. You can call this method more than once with different proposals to find out if the view is flexible. For example, you can propose:
 
-- [`zero`](proposedviewsize/zero.md) to get the subview’s minimum size.
-- [`infinity`](proposedviewsize/infinity.md) to get the subview’s maximum size.
-- [`unspecified`](proposedviewsize/unspecified.md) to get the subview’s ideal size.
+- [`zero`](../proposedviewsize/zero.md) to get the subview’s minimum size.
+- [`infinity`](../proposedviewsize/infinity.md) to get the subview’s maximum size.
+- [`unspecified`](../proposedviewsize/unspecified.md) to get the subview’s ideal size.
 
-If you need only the view’s height and width, you can use the [`sizeThatFits(_:)`](layoutsubview/sizethatfits(_:).md) method instead.
+If you need only the view’s height and width, you can use the [`sizeThatFits(_:)`](./sizethatfits%28_%29.md) method instead.
 
 ## Parameters
 
@@ -42,11 +43,12 @@ If you need only the view’s height and width, you can use the [`sizeThatFits(_
 
 ## See Also
 
-- [func sizeThatFits(ProposedViewSize) -> CGSize](layoutsubview/sizethatfits(_:).md)
+### Getting subview characteristics
+- [func sizeThatFits(ProposedViewSize) -> CGSize](./sizethatfits%28_%29.md)
   Asks the subview for its size.
-- [var spacing: ViewSpacing](layoutsubview/spacing.md)
+- [var spacing: ViewSpacing](./spacing.md)
   The subviews’s preferred spacing values.
-- [var priority: Double](layoutsubview/priority.md)
+- [var priority: Double](./priority.md)
   The layout priority of the subview.
 
 

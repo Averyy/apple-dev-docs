@@ -1,7 +1,8 @@
 # init(imageProperties:imageUTType:)
 
 **Framework**: Quartz  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a save options accessory pane for the provided image properties and uniform type identifier.
 
@@ -14,6 +15,10 @@ Initializes a save options accessory pane for the provided image properties and 
 init!(imageProperties: [AnyHashable : Any]!, imageUTType: String!)
 ```
 
+```objc
+- (instancetype) initWithImageProperties:(NSDictionary *) imageProperties imageUTType:(NSString *) imageUTType;
+```
+
 #### Return Value
 
 The initialized object.
@@ -21,11 +26,12 @@ The initialized object.
 ## Parameters
 
 - `imageProperties`: A dictionary of image properties.
-- `imageUTType`: A string that specifies a uniform type identifier, such as  `JPEG`. See [`Uniform Type Identifiers Overview`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_intro/understand_utis_intro.html#//apple_ref/doc/uid/TP40001319).
+- `imageUTType`: A string that specifies a uniform type identifier, such as  `JPEG`. See [Uniform Type Identifiers Overview](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_intro/understand_utis_intro.html#//apple_ref/doc/uid/TP40001319).
 
 ## See Also
 
-- [func addAccessoryView(to: NSSavePanel!)](iksaveoptions/addaccessoryview(to:).md)
+### Creating A Save Options Accessory View
+- [func addAccessoryView(to: NSSavePanel!)](./addaccessoryview%28to%29.md)
   Adds `IKSaveOptions` accessory view to a `NSSavePanel`.
 
 

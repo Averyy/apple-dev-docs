@@ -1,7 +1,8 @@
 # Int16.SIMD32Storage
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Storage for a vector of 32 integers.
 
@@ -24,24 +25,24 @@ struct SIMD32Storage
 ## Topics
 
 ### Initializers
-- [init()](int16/simd32storage/init.md)
+- [init()](./simd32storage/init%28%29.md)
   Creates a vector with zero in all lanes.
 ### Instance Properties
-- [var scalarCount: Int](int16/simd32storage/scalarcount.md)
+- [var scalarCount: Int](./simd32storage/scalarcount.md)
   The number of scalars, or elements, in the vector.
 ### Subscripts
-- [subscript(Int) -> Int16](int16/simd32storage/subscript(_:).md)
+- [subscript(Int) -> Int16](./simd32storage/subscript%28_%29.md)
   Accesses the element at the specified index.
 ### Type Aliases
-- [Int16.SIMD32Storage.Scalar](int16/simd32storage/scalar.md)
+- [Int16.SIMD32Storage.Scalar](./simd32storage/scalar.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [SIMDStorage](simdstorage.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](../bitwisecopyable.md)
+- [SIMDStorage](../simdstorage.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

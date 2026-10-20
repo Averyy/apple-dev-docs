@@ -1,9 +1,10 @@
 # immersiveSpace
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The named coordinate space that represents the currently opened [`ImmersiveSpace`](immersivespace.md) scene. If no immersive space is currently opened, this CoordinateSpace provides the same behavior as the `.global` coordinate space.
+The named coordinate space that represents the currently opened [`ImmersiveSpace`](../immersivespace.md) scene. If no immersive space is currently opened, this CoordinateSpace provides the same behavior as the `.global` coordinate space.
 
 **Availability**:
 - visionOS 1.1+
@@ -13,6 +14,8 @@ The named coordinate space that represents the currently opened [`ImmersiveSpace
 ```swift
 static var immersiveSpace: NamedCoordinateSpace { get }
 ```
+
+Available when `Self` is `NamedCoordinateSpace`.
 
 #### Discussion
 
@@ -47,21 +50,22 @@ if let transform = appModel.immersiveSpaceFromRobot {
 }
 ```
 
-To apply scale and rotation relative to a view’s origin, don’t set them at the same time using [`transform3DEffect(_:)`](view/transform3deffect(_:).md). Instead, set them separately using [`scaleEffect(_:anchor:)`](view/scaleeffect(_:anchor:).md) together with [`rotation3DEffect(_:anchor:)`](view/rotation3deffect(_:anchor:).md).
+To apply scale and rotation relative to a view’s origin, don’t set them at the same time using [`transform3DEffect(_:)`](../view/transform3deffect%28_%29.md). Instead, set them separately using [`scaleEffect(_:anchor:)`](../view/scaleeffect%28_,anchor%29.md) together with [`rotation3DEffect(_:anchor:)`](../view/rotation3deffect%28_,anchor%29.md).
 
-> **Note**: See WWDC24 session [`10153: Dive deep into volumes and immersive spaces`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10153/) for details on how to convert between coordinate spaces with SwiftUI and RealityKit.
+> **Note**: See WWDC24 session [10153: Dive deep into volumes and immersive spaces](https://developer.apple.com/wwdc24/10153/) for details on how to convert between coordinate spaces with SwiftUI and RealityKit.
 
 ## See Also
 
-- [static var global: GlobalCoordinateSpace](coordinatespaceprotocol/global.md)
+### Getting built-in coordinate spaces
+- [static var global: GlobalCoordinateSpace](./global.md)
   The global coordinate space at the root of the view hierarchy.
-- [static var local: LocalCoordinateSpace](coordinatespaceprotocol/local.md)
+- [static var local: LocalCoordinateSpace](./local.md)
   The local coordinate space of the current view.
-- [static func named(some Hashable) -> NamedCoordinateSpace](coordinatespaceprotocol/named(_:).md)
+- [static func named(some Hashable) -> NamedCoordinateSpace](./named%28_%29.md)
   Creates a named coordinate space using the given value.
-- [static var scrollView: NamedCoordinateSpace](coordinatespaceprotocol/scrollview.md)
+- [static var scrollView: NamedCoordinateSpace](./scrollview.md)
   The named coordinate space that is added by the system for the innermost containing scroll view.
-- [static func scrollView(axis: Axis) -> Self](coordinatespaceprotocol/scrollview(axis:).md)
+- [static func scrollView(axis: Axis) -> Self](./scrollview%28axis%29.md)
   The named coordinate space that is added by the system for the innermost containing scroll view that allows scrolling along the provided axis.
 
 

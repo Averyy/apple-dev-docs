@@ -1,11 +1,12 @@
 # OperationParameter Implementations
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func graphBuilderTensor(BNNSGraph.Builder) -> BNNSGraph.Builder.Tensor<T>](bnnsgraph/builder/tensor/graphbuildertensor(_:).md)
+- [func graphBuilderTensor(BNNSGraph.Builder) -> BNNSGraph.Builder.Tensor<T>](./graphbuildertensor%28_%29.md)
   Returns a tensor for the specified BNNS Graph builder.
 
 

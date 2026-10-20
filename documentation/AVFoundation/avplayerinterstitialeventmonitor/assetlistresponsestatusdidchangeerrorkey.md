@@ -1,7 +1,8 @@
 # assetListResponseStatusDidChangeErrorKey
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key to retrieve the error related to a change in an interstitial event’s asset list response.
 
@@ -20,15 +21,20 @@ A key to retrieve the error related to a change in an interstitial event’s ass
 class let assetListResponseStatusDidChangeErrorKey: String
 ```
 
+```c
+extern NSString * const AVPlayerInterstitialEventMonitorAssetListResponseStatusDidChangeErrorKey;
+```
+
 #### Discussion
 
-This key only exists in the notification’s [`userInfo`](https://developer.apple.com/documentation/foundation/notification/userinfo) dictionary when the status is [`AVPlayerInterstitialEventAssetListResponseStatus.unavailable`](avplayerinterstitialeventassetlistresponsestatus/unavailable.md). Use it to retrieve an error object that provides information about the failure to read the asset list.
+This key only exists in the notification’s [`userInfo`](../../Foundation/notification/userinfo.md) dictionary when the status is [`AVPlayerInterstitialEventAssetListResponseStatus.unavailable`](../avplayerinterstitialeventassetlistresponsestatus/unavailable.md). Use it to retrieve an error object that provides information about the failure to read the asset list.
 
 ## See Also
 
-- [class let assetListResponseStatusDidChangeEventKey: String](avplayerinterstitialeventmonitor/assetlistresponsestatusdidchangeeventkey.md)
+### User information keys
+- [class let assetListResponseStatusDidChangeEventKey: String](./assetlistresponsestatusdidchangeeventkey.md)
   A key to retrieve the interstitial event that has an asset list response status change.
-- [class let assetListResponseStatusDidChangeStatusKey: String](avplayerinterstitialeventmonitor/assetlistresponsestatusdidchangestatuskey.md)
+- [class let assetListResponseStatusDidChangeStatusKey: String](./assetlistresponsestatusdidchangestatuskey.md)
   A key to retrieve the asset list response status.
 
 

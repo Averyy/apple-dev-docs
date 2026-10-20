@@ -1,7 +1,8 @@
 # startIndex
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the first subview.
 
@@ -22,15 +23,16 @@ var startIndex: Int { get }
 
 ## See Also
 
-- [subscript(_:)](layoutsubviews/subscript(_:).md)
+### Accessing subviews
+- [subscript(_:)](./subscript%28_%29.md)
   Gets the subview proxies in the specified range.
-- [var endIndex: Int](layoutsubviews/endindex.md)
+- [var endIndex: Int](./endindex.md)
   An index that’s one higher than the last subview.
-- [LayoutSubviews.Element](layoutsubviews/element.md)
+- [LayoutSubviews.Element](./element.md)
   A type that contains a proxy value.
-- [LayoutSubviews.Index](layoutsubviews/index.md)
+- [LayoutSubviews.Index](./index.md)
   A type that you can use to index proxy values.
-- [LayoutSubviews.SubSequence](layoutsubviews/subsequence.md)
+- [LayoutSubviews.SubSequence](./subsequence.md)
   A type that contains a subsequence of proxy values.
 
 

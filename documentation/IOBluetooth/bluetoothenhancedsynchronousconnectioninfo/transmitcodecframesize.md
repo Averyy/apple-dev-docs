@@ -1,15 +1,20 @@
 # transmitCodecFrameSize
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var transmitCodecFrameSize: BluetoothHCITransmitCodecFrameSize
+```
+
+```c
+BluetoothHCITransmitCodecFrameSize transmitCodecFrameSize;
 ```
 
 

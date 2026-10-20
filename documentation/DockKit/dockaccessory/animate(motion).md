@@ -1,7 +1,8 @@
 # animate(motion:)
 
 **Framework**: DockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts an animation sequence.
 
@@ -25,7 +26,7 @@ A progress object that reports the progress during execution of the animation se
 
 This method moves the dock accessory along a predefined trajectory to convey a characteristic. Do this only if you disable system tracking.
 
-> **Note**: [`DockKitError.notConnected`](dockkiterror/notconnected.md) if device isn’t connected, [`DockKitError.frameRateTooHigh`](dockkiterror/frameratetoohigh.md) if calling the method too frequently, or [`DockKitError.notSupported`](dockkiterror/notsupported.md) in macOS.
+> **Throws**: [`DockKitError.notConnected`](../dockkiterror/notconnected.md) if device isn’t connected, [`DockKitError.frameRateTooHigh`](../dockkiterror/frameratetoohigh.md) if calling the method too frequently, or [`DockKitError.notSupported`](../dockkiterror/notsupported.md) in macOS.
 
 ## Parameters
 
@@ -33,11 +34,12 @@ This method moves the dock accessory along a predefined trajectory to convey a c
 
 ## See Also
 
-- [func setRegionOfInterest(CGRect) async throws](dockaccessory/setregionofinterest(_:).md)
+### Performing animation
+- [func setRegionOfInterest(CGRect) async throws](./setregionofinterest%28_%29.md)
   Sets the area in the video frame in which the dock accessory tracks a subject.
-- [var regionOfInterest: CGRect](dockaccessory/regionofinterest.md)
+- [var regionOfInterest: CGRect](./regionofinterest.md)
   The area in the video frame in which the dock accessory tracks a subject.
-- [DockAccessory.Animation](dockaccessory/animation.md)
+- [DockAccessory.Animation](./animation.md)
   Character animations that describe how to move the dock accessory.
 
 

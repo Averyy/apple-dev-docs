@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -12,6 +13,10 @@
 
 ```swift
 class var `default`: SFSafariViewController.DataStore { get }
+```
+
+```objc
+@property (class, nonatomic, strong, readonly) SFSafariViewControllerDataStore * defaultDataStore;
 ```
 
 

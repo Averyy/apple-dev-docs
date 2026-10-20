@@ -1,7 +1,8 @@
 # departureDate
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The departure date for the trip.
 
@@ -10,33 +11,34 @@ The departure date for the trip.
 
 ## Declaration
 
-```swift
+```
 departureDate?: Date;
 ```
 
 ## Mentions
 
-- [MapKit JS 5](mapkit-js-5.md)
+- [MapKit JS 5](../mapkit-js-5.md)
 
 #### Discussion
 
-Specify either a `departureDate` or an [`arrivalDate`](directionsrequest/arrivaldate.md), don’t set both. If you send both values, MapKit JS logs a warning.
+Specify either a `departureDate` or an [`arrivalDate`](./arrivaldate.md), don’t set both. If you send both values, MapKit JS logs a warning.
 
 ## See Also
 
-- [origin](directionsrequest/origin.md)
+### Directions request
+- [origin](./origin.md)
   The starting point for routing directions.
-- [destination](directionsrequest/destination.md)
+- [destination](./destination.md)
   The end point for routing directions.
-- [arrivalDate](directionsrequest/arrivaldate.md)
+- [arrivalDate](./arrivaldate.md)
   The arrival date for the trip.
-- [requestsAlternateRoutes](directionsrequest/requestsalternateroutes.md)
+- [requestsAlternateRoutes](./requestsalternateroutes.md)
   A Boolean value that indicates whether the server returns multiple routes when they’re available.
-- [transportType](directionsrequest/transporttype.md)
+- [transportType](./transporttype.md)
   The mode of transportation the directions apply to.
-- [avoidTolls](directionsrequest/avoidtolls.md)
+- [avoidTolls](./avoidtolls.md)
   A Boolean value that prioritizes routes to avoid tolls.
-- [signal](directionsrequest/signal.md)
+- [signal](./signal.md)
   A signal object allowing you to cancel the request.
 
 

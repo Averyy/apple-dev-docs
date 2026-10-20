@@ -1,7 +1,8 @@
 # userContentController
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that coordinates interactions between your app’s native code and the webpage’s scripts and other content.
 

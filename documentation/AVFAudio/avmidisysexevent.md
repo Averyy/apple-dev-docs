@@ -1,7 +1,8 @@
 # AVMIDISysexEvent
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a MIDI system exclusive message.
 
@@ -19,6 +20,10 @@ An object that represents a MIDI system exclusive message.
 class AVMIDISysexEvent
 ```
 
+```objc
+@interface AVMIDISysexEvent : AVMusicEvent
+```
+
 #### Overview
 
 You can’t modify the size and contents of this event once you create it.
@@ -26,29 +31,30 @@ You can’t modify the size and contents of this event once you create it.
 ## Topics
 
 ### Creating a system exclusive event
-- [init(data: Data)](avmidisysexevent/init(data:).md)
+- [init(data: Data)](./avmidisysexevent/init%28data%29.md)
   Creates a system event with the data you specify.
 ### Getting the event size
-- [var sizeInBytes: UInt32](avmidisysexevent/sizeinbytes.md)
+- [var sizeInBytes: UInt32](./avmidisysexevent/sizeinbytes.md)
   The size of the data that this event contains.
 
 ## Relationships
 
 ### Inherits From
-- [AVMusicEvent](avmusicevent.md)
+- [AVMusicEvent](./avmusicevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVMIDINoteEvent](avmidinoteevent.md)
+### Handling MIDI events
+- [class AVMIDINoteEvent](./avmidinoteevent.md)
   An object that represents MIDI note on or off messages.
-- [class AVMIDIMetaEvent](avmidimetaevent.md)
+- [class AVMIDIMetaEvent](./avmidimetaevent.md)
   An object that represents MIDI meta event messages.
 
 

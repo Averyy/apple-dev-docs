@@ -1,7 +1,8 @@
 # volumeIsEncrypted
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the volume is encrypted.
 
@@ -22,29 +23,30 @@ var volumeIsEncrypted: Bool? { get }
 
 ## See Also
 
-- [var volumeIsAutomounted: Bool?](urlresourcevalues/volumeisautomounted.md)
+### Volume status values
+- [var volumeIsAutomounted: Bool?](./volumeisautomounted.md)
   A Boolean value that indicates whether the volume is automounted.
-- [var volumeIsBrowsable: Bool?](urlresourcevalues/volumeisbrowsable.md)
+- [var volumeIsBrowsable: Bool?](./volumeisbrowsable.md)
   A Boolean value that indicates whether the volume is visible through the user interface.
-- [var volumeIsEjectable: Bool?](urlresourcevalues/volumeisejectable.md)
+- [var volumeIsEjectable: Bool?](./volumeisejectable.md)
   A Boolean value that indicates whether the volume’s media is ejectable from the drive mechanism under software control.
-- [var volumeIsInternal: Bool?](urlresourcevalues/volumeisinternal.md)
+- [var volumeIsInternal: Bool?](./volumeisinternal.md)
   A Boolean value that indicates whether the volume’s device is connected to an internal bus, or nil if not available.
-- [var volumeIsJournaling: Bool?](urlresourcevalues/volumeisjournaling.md)
+- [var volumeIsJournaling: Bool?](./volumeisjournaling.md)
   A Boolean value that indicates whether the volume is currently using a journal for speedy recovery after an unplanned restart.
-- [var volumeIsLocal: Bool?](urlresourcevalues/volumeislocal.md)
+- [var volumeIsLocal: Bool?](./volumeislocal.md)
   A Boolean value that indicates whether the volume is on a local device.
-- [var volumeIsReadOnly: Bool?](urlresourcevalues/volumeisreadonly.md)
+- [var volumeIsReadOnly: Bool?](./volumeisreadonly.md)
   A Boolean value that indicates whether the volume is read-only.
-- [var volumeIsRemovable: Bool?](urlresourcevalues/volumeisremovable.md)
+- [var volumeIsRemovable: Bool?](./volumeisremovable.md)
   A Boolean value that indicates whether the volume’s media is removable from the drive mechanism.
-- [var volumeIsRootFileSystem: Bool?](urlresourcevalues/volumeisrootfilesystem.md)
+- [var volumeIsRootFileSystem: Bool?](./volumeisrootfilesystem.md)
   A Boolean value that indicates whether the volume is the root file system.
-- [var volumeTypeName: String?](urlresourcevalues/volumetypename.md)
+- [var volumeTypeName: String?](./volumetypename.md)
   The volume’s type name, as a string.
-- [var volumeSubtype: Int?](urlresourcevalues/volumesubtype.md)
+- [var volumeSubtype: Int?](./volumesubtype.md)
   An integer value that indicates the file system subtype.
-- [var volumeMountFromLocation: String?](urlresourcevalues/volumemountfromlocation.md)
+- [var volumeMountFromLocation: String?](./volumemountfromlocation.md)
   The file system device location, as a string.
 
 

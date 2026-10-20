@@ -1,7 +1,8 @@
 # Pass.Barcodes
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An array of barcode objects on a Pass.
 
@@ -12,16 +13,16 @@ An array of barcode objects on a Pass.
 
 ## Declaration
 
-```swift
+```
 object Pass.Barcodes
 ```
 
 ## Mentions
 
-- [Creating a coupon pass](creating-a-coupon-pass.md)
-- [Creating a Poster Generic Pass](creating-a-poster-generic-pass.md)
-- [Creating a store card pass](creating-a-store-card-pass.md)
-- [Creating a poster event pass using semantic tags](creating-an-event-pass-using-semantic-tags.md)
+- [Creating a coupon pass](../creating-a-coupon-pass.md)
+- [Creating a Poster Generic Pass](../creating-a-poster-generic-pass.md)
+- [Creating a store card pass](../creating-a-store-card-pass.md)
+- [Creating a poster event pass using semantic tags](../creating-an-event-pass-using-semantic-tags.md)
 
 #### Discussion
 
@@ -29,14 +30,19 @@ object Pass.Barcodes
 
 ## Properties
 
-- `altText` (string): The text to display near the barcode. For example, a human-readable version of the barcode data in case the barcode doesn’t scan. The alternative text isn’t displayed for watchOS.
+- `altText` (string): The text to display near the barcode. For example, a human-readable version of the barcode data in case the barcode doesn’t scan.
+
+  The alternative text isn’t displayed for watchOS.
 - `format` (string) *(required)*: The format of the barcode.
+
+  **Allowed Values**: `PKBarcodeFormatQR`, `PKBarcodeFormatPDF417`, `PKBarcodeFormatAztec`, `PKBarcodeFormatCode128`, `PKBarcodeFormatCode39`, `PKBarcodeFormatCodabar`, `PKBarcodeFormatEAN13`, `PKBarcodeFormatI2of5`
 - `message` (string) *(required)*: The message or payload to display as a barcode.
 - `messageEncoding` (string) *(required)*: The IANA character set name of the text encoding to use to convert `message` from a string representation to a data representation that the system renders as a barcode, such as `“iso-8859-1”`.
 
 ## See Also
 
-- [object Pass.Barcode](pass/barcode-data.dictionary.md)
+### Adding barcodes
+- [object Pass.Barcode](./barcode-data.dictionary.md)
   An object that represents a barcode shown on a pass.
 
 

@@ -1,7 +1,8 @@
 # distance(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The distance to another operation queue scheduler time.
 
@@ -30,11 +31,12 @@ The time interval between this time and the other time.
 
 ## See Also
 
-- [var date: Date](operationqueue/schedulertimetype/date.md)
+### Managing Scheduler Time Type Properties
+- [var date: Date](./date.md)
   The date this type represents.
-- [func advanced(by: OperationQueue.SchedulerTimeType.Stride) -> OperationQueue.SchedulerTimeType](operationqueue/schedulertimetype/advanced(by:).md)
+- [func advanced(by: OperationQueue.SchedulerTimeType.Stride) -> OperationQueue.SchedulerTimeType](./advanced%28by%29.md)
   Calculates an operation queue scheduler time by advancing the scheduler time type’s date by the given interval.
-- [OperationQueue.SchedulerTimeType.Stride](operationqueue/schedulertimetype/stride.md)
+- [OperationQueue.SchedulerTimeType.Stride](./stride.md)
   The interval by which operation queue times advance.
 
 

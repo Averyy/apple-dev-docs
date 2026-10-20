@@ -1,7 +1,8 @@
 # init(application:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a metric that measures memory use in the target app.
 
@@ -19,13 +20,18 @@ Initializes a metric that measures memory use in the target app.
 init(application: XCUIApplication)
 ```
 
+```objc
+- (instancetype) initWithApplication:(XCUIApplication *) application;
+```
+
 ## Parameters
 
 - `application`: The application to be tested.
 
 ## See Also
 
-- [init()](xctmemorymetric/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Initializes a metric that measures memory use in the current process.
 
 

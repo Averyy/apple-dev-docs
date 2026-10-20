@@ -1,16 +1,17 @@
 # init(dimension:reductionType:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scatter layer with the dimension and reduction type you specify.
 
 **Availability**:
-- iOS 14.5+
-- iPadOS 14.5+
-- Mac Catalyst 14.5+
-- macOS 11.3+
-- tvOS 14.5+
+- iOS 14.5+ - Deprecated in 17.4
+- iPadOS 14.5+ - Deprecated in 17.4
+- Mac Catalyst 14.5+ - Deprecated in 17.4
+- macOS 11.3+ - Deprecated in 14.3
+- tvOS 14.5+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,9 +19,13 @@ Creates a scatter layer with the dimension and reduction type you specify.
 convenience init?(dimension: Int, reductionType: MLCReductionType)
 ```
 
+```objc
++ (instancetype) layerWithDimension:(NSUInteger) dimension reductionType:(MLCReductionType) reductionType;
+```
+
 #### Discussion
 
-> ❗ **Important**:  The reduction type can be either [`MLCReductionType.none`](mlcreductiontype/none.md) or [`MLCReductionType.sum`](mlcreductiontype/sum.md).
+> ❗ **Important**:  The reduction type can be either [`MLCReductionType.none`](../mlcreductiontype/none.md) or [`MLCReductionType.sum`](../mlcreductiontype/sum.md).
 
 ## Parameters
 

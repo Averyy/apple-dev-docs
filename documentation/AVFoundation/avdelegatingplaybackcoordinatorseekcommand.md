@@ -1,7 +1,8 @@
 # AVDelegatingPlaybackCoordinatorSeekCommand
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A command that indicates to seek to a new time in the item timeline.
 
@@ -19,41 +20,46 @@ A command that indicates to seek to a new time in the item timeline.
 class AVDelegatingPlaybackCoordinatorSeekCommand
 ```
 
+```objc
+@interface AVDelegatingPlaybackCoordinatorSeekCommand : AVDelegatingPlaybackCoordinatorPlaybackControlCommand
+```
+
 ## Topics
 
 ### Accessing command details
-- [var shouldBufferInAnticipationOfPlayback: Bool](avdelegatingplaybackcoordinatorseekcommand/shouldbufferinanticipationofplayback.md)
+- [var shouldBufferInAnticipationOfPlayback: Bool](./avdelegatingplaybackcoordinatorseekcommand/shouldbufferinanticipationofplayback.md)
   A Boolean value that indicates whether the player starts buffering in anticipation of a request to begin playback.
-- [var anticipatedPlaybackRate: Float](avdelegatingplaybackcoordinatorseekcommand/anticipatedplaybackrate.md)
+- [var anticipatedPlaybackRate: Float](./avdelegatingplaybackcoordinatorseekcommand/anticipatedplaybackrate.md)
   The rate at which the coordinator expects playback to resume.
-- [var itemTime: CMTime](avdelegatingplaybackcoordinatorseekcommand/itemtime.md)
+- [var itemTime: CMTime](./avdelegatingplaybackcoordinatorseekcommand/itemtime.md)
   The time to seek to in the item timeline.
-- [var completionDueDate: Date?](avdelegatingplaybackcoordinatorseekcommand/completionduedate.md)
+- [var completionDueDate: Date?](./avdelegatingplaybackcoordinatorseekcommand/completionduedate.md)
   The deadline by which the coordinator expects the delegate to handle the command.
 
 ## Relationships
 
 ### Inherits From
-- [AVDelegatingPlaybackCoordinatorPlaybackControlCommand](avdelegatingplaybackcoordinatorplaybackcontrolcommand.md)
+- [AVDelegatingPlaybackCoordinatorPlaybackControlCommand](./avdelegatingplaybackcoordinatorplaybackcontrolcommand.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVDelegatingPlaybackCoordinatorPlaybackControlCommand](avdelegatingplaybackcoordinatorplaybackcontrolcommand.md)
+### Playback commands
+- [class AVDelegatingPlaybackCoordinatorPlaybackControlCommand](./avdelegatingplaybackcoordinatorplaybackcontrolcommand.md)
   An abstract superclass for playback commands.
-- [class AVDelegatingPlaybackCoordinatorPlayCommand](avdelegatingplaybackcoordinatorplaycommand.md)
+- [class AVDelegatingPlaybackCoordinatorPlayCommand](./avdelegatingplaybackcoordinatorplaycommand.md)
   A command that indicates to play at a specific rate and time.
-- [class AVDelegatingPlaybackCoordinatorPauseCommand](avdelegatingplaybackcoordinatorpausecommand.md)
+- [class AVDelegatingPlaybackCoordinatorPauseCommand](./avdelegatingplaybackcoordinatorpausecommand.md)
   A command that indicates to pause playback.
-- [class AVDelegatingPlaybackCoordinatorBufferingCommand](avdelegatingplaybackcoordinatorbufferingcommand.md)
+- [class AVDelegatingPlaybackCoordinatorBufferingCommand](./avdelegatingplaybackcoordinatorbufferingcommand.md)
   A command that indicates to start buffering data in preparation for playback.
 
 

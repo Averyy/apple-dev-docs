@@ -1,17 +1,18 @@
 # PHASENormalizationMode.dynamic
 
 **Framework**: PHASE  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that instructs the framework to adjust a sound’s volume according to the user’s output device.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ A mode that instructs the framework to adjust a sound’s volume according to th
 case dynamic
 ```
 
+```c
+PHASENormalizationModeDynamic
+```
+
 #### Discussion
 
-For more information, see [`PHASENormalizationMode`](phasenormalizationmode.md).
+For more information, see [`PHASENormalizationMode`](../phasenormalizationmode.md).
 
 ## See Also
 
-- [PHASENormalizationMode.none](phasenormalizationmode/none.md)
+### Loudness Normalization Modes
+- [PHASENormalizationMode.none](./none.md)
   A mode that instructs the framework not to adjust a sound’s volume according to the user’s output device.
 
 

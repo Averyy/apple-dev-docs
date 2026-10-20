@@ -1,14 +1,15 @@
 # fetchDriverOutputStats
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 void fetchDriverOutputStats(uint32_t *outErrors, uint32_t *outPackets);
 ```
 

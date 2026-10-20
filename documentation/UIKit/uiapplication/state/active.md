@@ -1,7 +1,8 @@
 # UIApplication.State.active
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app is running in the foreground and currently receiving events.
 
@@ -9,7 +10,7 @@ The app is running in the foreground and currently receiving events.
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ The app is running in the foreground and currently receiving events.
 case active
 ```
 
+```c
+UIApplicationStateActive
+```
+
 ## See Also
 
-- [UIApplication.State.inactive](uiapplication/state/inactive.md)
+### Constants
+- [UIApplication.State.inactive](./inactive.md)
   The app is running in the foreground but isn’t receiving events.
-- [UIApplication.State.background](uiapplication/state/background.md)
+- [UIApplication.State.background](./background.md)
   The app is running in the background.
 
 

@@ -1,7 +1,8 @@
 # keyWithLocalID(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the metadata for the local identifier you specify.
 

@@ -1,21 +1,26 @@
 # UIBarButtonItem.Style.plain
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A button style with plain text styling.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case plain
+```
+
+```c
+UIBarButtonItemStylePlain
 ```
 
 #### Discussion
@@ -24,11 +29,12 @@ This item style is the default.
 
 ## See Also
 
-- [UIBarButtonItem.Style.prominent](uibarbuttonitem/style-swift.enum/prominent.md)
+### Constants
+- [UIBarButtonItem.Style.prominent](./prominent.md)
   A button item style for a prominent button.
-- [UIBarButtonItem.Style.bordered](uibarbuttonitem/style-swift.enum/bordered.md)
+- [UIBarButtonItem.Style.bordered](./bordered.md)
   A simple button style with a border.
-- [static var done: UIBarButtonItem.Style](uibarbuttonitem/style-swift.enum/done.md)
+- [static var done: UIBarButtonItem.Style](./done.md)
   A button style for a done button.
 
 

@@ -1,6 +1,8 @@
 # Obscuring virtual items in a scene behind real-world items
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [AllowingObjectsToInteractWithRealWorldObjects.zip](https://docs-assets.developer.apple.com/published/fdec7d3cd980/AllowingObjectsToInteractWithRealWorldObjects.zip)
 
 Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
 
@@ -10,11 +12,13 @@ Increase the realism of an immersive experience by adding entities with invisibl
 
 #### Overview
 
-You can create layered effects using an [`OcclusionMaterial`](https://developer.apple.com/documentation/realitykit/occlusionmaterial), which is an invisible material that hides objects that render behind it. This sample project demonstrates how to hide entities behind real-world objects with [`ARKit`](https://developer.apple.com/documentation/arkit) by gathering live data about a person’s surroundings and applyng the `OcclusionMaterial` to them.
+You can create layered effects using an [`OcclusionMaterial`](../RealityKit/occlusionmaterial.md), which is an invisible material that hides objects that render behind it. This sample project demonstrates how to hide entities behind real-world objects with [ARKit](../ARKit/ARKit.md) by gathering live data about a person’s surroundings and applyng the `OcclusionMaterial` to them.
 
-##### Capture the Anchors From the Scene
+[Video: A video recording of a visionOS app displaying a translucent window with a 3D chair model that reacts to pinch-to-drag gesture movement, and that people can hide behind read-world objects.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/sample-worldocclusion-1-main-view.mov)
 
-The sample uses the `MeshAnchorGenerator` class to retrieve anchor information from [`SceneReconstructionProvider`](https://developer.apple.com/documentation/arkit/scenereconstructionprovider). In the following code snippet, the generator takes in the root entity from the reality view to perform actions on the entities and create a dictionary to store the collection of anchors:
+##### Capture the anchors from the scene
+
+The sample uses the `MeshAnchorGenerator` class to retrieve anchor information from [`SceneReconstructionProvider`](../ARKit/scenereconstructionprovider.md). In the following code snippet, the generator takes in the root entity from the reality view to perform actions on the entities and create a dictionary to store the collection of anchors:
 
 ```swift
 import SwiftUI
@@ -36,7 +40,7 @@ class MeshAnchorGenerator {
 }
 ```
 
-The `run(_:)` method processes all anchor updates asynchronously from the [`SceneReconstructionProvider`](https://developer.apple.com/documentation/arkit/scenereconstructionprovider). When an anchor detects either an `.added` or an `.updated` event, it creates a new entity if one isn’t already present, and it updates its mesh, material, and transform properties:
+The `run(_:)` method processes all anchor updates asynchronously from the [`SceneReconstructionProvider`](../ARKit/scenereconstructionprovider.md). When an anchor detects either an `.added` or an `.updated` event, it creates a new entity if one isn’t already present, and it updates its mesh, material, and transform properties:
 
 ```swift
 @MainActor
@@ -98,9 +102,9 @@ func run(_ sceneRec: SceneReconstructionProvider) async {
 
 > ❗ **Important**: To use `SceneReconstructionProvider`, your app must add the `NSWorldSensingUsageDescription` property key list entry to the `info.plist`.
 
-##### Start Scene Reconstruction
+##### Start scene reconstruction
 
-To track the anchors, the app starts an ARKit session. It uses `runSession(_:)` to initiate the [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) with [`SceneReconstructionProvider`](https://developer.apple.com/documentation/arkit/scenereconstructionprovider), to perform scene reconstruction:
+To track the anchors, the app starts an ARKit session. It uses `runSession(_:)` to initiate the [`ARKitSession`](../ARKit/arkitsession.md) with [`SceneReconstructionProvider`](../ARKit/scenereconstructionprovider.md), to perform scene reconstruction:
 
 ```swift
 import RealityKit
@@ -142,7 +146,7 @@ func runSession(_ meshAnchors: Entity) {
 
 The method constructs the `MeshAnchorGenerator` class with the `meshAnchors`. Then it initiates the ARKit session while handling any potential errors. Finally, the app proceeds with the generation process by invoking the `run(_:)` method with the `sceneReconstruction` instance.
 
-##### Setting Up the Drag Gesture
+##### Setting up the drag gesture
 
 In the immersive scene, the app loads a chair model that is moveable with drag gestures. The app creates the `translationGesture` to convert the person’s gesture movements to the entity’s positions, so that a person can target the chair model and move it around the space:
 
@@ -173,7 +177,7 @@ var translationGesture: some Gesture {
 }
 ```
 
-##### Put It All Together Into a View
+##### Put it all together into a view
 
 The app loads all of the content into a reality view. It creates the `meshAnchors` entity and calls the `runSession(_:)` method with it, which initiates the ARKit session and adds child entities of anchors with occlusion materials to `meshAnchors`. Then the app adds the `meshAnchors` into the reality view:
 
@@ -219,19 +223,20 @@ struct WorldOcclusionView: View {
 }
 ```
 
-Finally, the app creates a chair model and sets the chair to accept user input with [`InputTargetComponent`](https://developer.apple.com/documentation/realitykit/inputtargetcomponent). Then it sets the chair with `TargetModelComponent`, enabling the chair to work with `translationGesture`. The app then adds the chair model to the reality view.
+Finally, the app creates a chair model and sets the chair to accept user input with [`InputTargetComponent`](../RealityKit/inputtargetcomponent.md). Then it sets the chair with `TargetModelComponent`, enabling the chair to work with `translationGesture`. The app then adds the chair model to the reality view.
 
 ## See Also
 
-- [Animating hand models in visionOS](animating-hand-models-in-visionos.md)
+### Integrating ARKit
+- [Animating hand models in visionOS](./animating-hand-models-in-visionos.md)
   Substitute a person’s hands with custom models in a fully immersive space.
-- [Creating a 3D painting space](creating-a-painting-space-in-visionos.md)
+- [Creating a 3D painting space](./creating-a-painting-space-in-visionos.md)
   Implement a painting canvas entity, and update its mesh to represent a stroke.
-- [Tracking and visualizing hand movement](tracking-and-visualizing-hand-movement.md)
+- [Tracking and visualizing hand movement](./tracking-and-visualizing-hand-movement.md)
   Use hand-tracking anchors to display a visual representation of hand transforms in visionOS.
-- [Displaying an entity that follows a person’s view](displaying-a-3d-object-that-moves-to-stay-in-a-person's-view.md)
+- [Displaying an entity that follows a person’s view](./displaying-a-3d-object-that-moves-to-stay-in-a-persons-view.md)
   Create an entity that tracks and follows head movement in an immersive scene.
-- [Applying mesh to real-world surroundings](applying-mesh-to-real-world-surroundings.md)
+- [Applying mesh to real-world surroundings](./applying-mesh-to-real-world-surroundings.md)
   Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
 
 

@@ -1,7 +1,8 @@
 # tag
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A 4-byte attribute tag.
 
@@ -14,9 +15,13 @@ A 4-byte attribute tag.
 var tag: SecKeychainAttrType
 ```
 
+```c
+SecKeychainAttrType tag;
+```
+
 #### Discussion
 
-See [`SecItemAttr`](secitemattr.md) for valid attribute types.
+See [`SecItemAttr`](../secitemattr.md) for valid attribute types.
 
 
 ---

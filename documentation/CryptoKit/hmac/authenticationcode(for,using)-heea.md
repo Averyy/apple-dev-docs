@@ -1,7 +1,8 @@
 # authenticationCode(for:using:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Computes a message authentication code for the given data.
 

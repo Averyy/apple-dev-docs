@@ -1,7 +1,8 @@
 # isSuspended
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If true, the controller has been suspended via `suspend` and not resumed yet.
 
@@ -18,6 +19,10 @@ If true, the controller has been suspended via `suspend` and not resumed yet.
 
 ```swift
 var isSuspended: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isSuspended) BOOL suspended;
 ```
 
 

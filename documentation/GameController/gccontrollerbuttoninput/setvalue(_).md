@@ -1,7 +1,8 @@
 # setValue(_:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the pressure value of a snapshot of a button.
 
@@ -19,9 +20,13 @@ Sets the pressure value of a snapshot of a button.
 func setValue(_ value: Float)
 ```
 
+```objc
+- (void) setValue:(float) value;
+```
+
 #### Discussion
 
-This method does nothing if the associated controller isn’t a snapshot (its [`isSnapshot`](gccontroller/issnapshot.md) property is [`false`](https://developer.apple.com/documentation/swift/false)`)`.
+This method does nothing if the associated controller isn’t a snapshot (its [`isSnapshot`](../gccontroller/issnapshot.md) property is [`false`](../../Swift/false.md)`)`.
 
 ## Parameters
 

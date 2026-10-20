@@ -1,7 +1,8 @@
 # hover()
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves the pointer over the element.
 
@@ -9,13 +10,17 @@ Moves the pointer over the element.
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- macOS ?+
+- macOS
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 func hover()
+```
+
+```objc
+- (void) hover;
 ```
 
 #### Discussion

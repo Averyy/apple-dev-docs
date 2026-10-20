@@ -1,7 +1,8 @@
 # kMIDIPropertyDriverVersion
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The version of the driver that owns a device, entity, or endpoint.
 
@@ -18,9 +19,14 @@ The version of the driver that owns a device, entity, or endpoint.
 let kMIDIPropertyDriverVersion: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyDriverVersion;
+```
+
 ## See Also
 
-- [let kMIDIPropertyDriverOwner: CFString](kmidipropertydriverowner.md)
+### Drivers
+- [let kMIDIPropertyDriverOwner: CFString](./kmidipropertydriverowner.md)
   The name of the driver that owns a device, entity, or endpoint.
 
 

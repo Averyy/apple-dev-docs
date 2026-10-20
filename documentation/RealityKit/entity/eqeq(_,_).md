@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: RealityKit  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Indicates whether two entities are equal.
 
@@ -11,7 +12,7 @@ Indicates whether two entities are equal.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # setProgress(on:to:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set a progress for an achievement for a player.
 
@@ -19,9 +20,13 @@ Set a progress for an achievement for a player.
 func setProgress(on achievement: GKAchievement, to percentComplete: Double)
 ```
 
+```objc
+- (void) setProgressOnAchievement:(GKAchievement *) achievement toPercentComplete:(double) percentComplete;
+```
+
 ## Mentions
 
-- [Creating activities for your game](creating-activities-for-your-game.md)
+- [Creating activities for your game](../creating-activities-for-your-game.md)
 
 #### Discussion
 
@@ -29,13 +34,14 @@ The framework reports achievement progress when the activity ends.
 
 ## See Also
 
-- [var achievements: Set<GKAchievement>](gkgameactivity/achievements.md)
+### Getting and removing achievements
+- [var achievements: Set<GKAchievement>](./achievements.md)
   All achievements that have been associated with this activity.
-- [func removeAchievements([GKAchievement])](gkgameactivity/removeachievements(_:).md)
+- [func removeAchievements([GKAchievement])](./removeachievements%28_%29.md)
   Removes all achievements if they exist.
-- [func progress(on: GKAchievement) -> Double](gkgameactivity/progress(on:).md)
+- [func progress(on: GKAchievement) -> Double](./progress%28on%29.md)
   Get the achievement progress from a specific achievement of the local player if previously set.
-- [func setAchievementCompleted(GKAchievement)](gkgameactivity/setachievementcompleted(_:).md)
+- [func setAchievementCompleted(GKAchievement)](./setachievementcompleted%28_%29.md)
   Set progress to 100% for an achievement for a player.
 
 

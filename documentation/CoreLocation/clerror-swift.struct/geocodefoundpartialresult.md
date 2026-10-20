@@ -1,7 +1,8 @@
 # geocodeFoundPartialResult
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that indicates the geocode request yielded a partial result.
 
@@ -22,9 +23,10 @@ static var geocodeFoundPartialResult: CLError.Code { get }
 
 ## See Also
 
-- [static var geocodeCanceled: CLError.Code](clerror-swift.struct/geocodecanceled.md)
+### Getting geocoding errors
+- [static var geocodeCanceled: CLError.Code](./geocodecanceled.md)
   A constant that indicates the geocode request was canceled.
-- [static var geocodeFoundNoResult: CLError.Code](clerror-swift.struct/geocodefoundnoresult.md)
+- [static var geocodeFoundNoResult: CLError.Code](./geocodefoundnoresult.md)
   A constant that indicates the geocode request yielded no result.
 
 

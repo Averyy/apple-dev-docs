@@ -1,15 +1,20 @@
 # total
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 var total: UInt64 { get }
+```
+
+```objc
+@property (readonly) unsigned long long total;
 ```
 
 

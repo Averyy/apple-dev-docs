@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The radius of the Gaussian distribution.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The radius of the Gaussian distribution.
 var radius: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float radius;
+```
+
 ## See Also
 
-- [var center: CGPoint](cigaussiangradient/center.md)
+### Instance Properties
+- [var center: CGPoint](./center.md)
   The center of the effect as x and y coordinates.
-- [var color0: CIColor](cigaussiangradient/color0.md)
+- [var color0: CIColor](./color0.md)
   The first color to use in the gradient.
-- [var color1: CIColor](cigaussiangradient/color1.md)
+- [var color1: CIColor](./color1.md)
   The second color to use in the gradient.
 
 

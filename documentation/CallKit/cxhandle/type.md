@@ -1,7 +1,8 @@
 # type
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the handle.
 
@@ -18,13 +19,18 @@ The type of the handle.
 var type: CXHandle.HandleType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CXHandleType type;
+```
+
 #### Discussion
 
-For possible values, see [`CXHandle.HandleType`](cxhandle/handletype.md).
+For possible values, see [`CXHandle.HandleType`](./handletype.md).
 
 ## See Also
 
-- [var value: String](cxhandle/value.md)
+### Accessing Handle Attributes
+- [var value: String](./value.md)
   The value of the handle.
 
 

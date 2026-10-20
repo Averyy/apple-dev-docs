@@ -1,7 +1,8 @@
 # IOUSBInterfaceDescriptor
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A descriptor for a specific interface of a USB device.
 
@@ -10,7 +11,7 @@ A descriptor for a specific interface of a USB device.
 
 ## Declaration
 
-```swift
+```c
 typedef struct IOUSBInterfaceDescriptor IOUSBInterfaceDescriptor;
 ```
 
@@ -23,33 +24,35 @@ For more information about this descriptor type, see USB 3.2, 9.6.5.
 ## Topics
 
 ### Getting the Properties
-- [bLength](iousbinterfacedescriptor/1546453-blength.md)
+- [bLength](./iousbinterfacedescriptor/api-1546453-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbinterfacedescriptor/1546203-bdescriptortype.md)
+- [bDescriptorType](./iousbinterfacedescriptor/api-1546203-bdescriptortype.md)
   The type of the descriptor.
-- [bInterfaceNumber](iousbinterfacedescriptor/1545982-binterfacenumber.md)
+- [bInterfaceNumber](./iousbinterfacedescriptor/api-1545982-binterfacenumber.md)
   The number of this interface.
-- [bAlternateSetting](iousbinterfacedescriptor/1546130-balternatesetting.md)
+- [bAlternateSetting](./iousbinterfacedescriptor/api-1546130-balternatesetting.md)
   The value for selecting an alternative setting for the interface that the interface number references.
-- [bNumEndpoints](iousbinterfacedescriptor/1546478-bnumendpoints.md)
+- [bNumEndpoints](./iousbinterfacedescriptor/api-1546478-bnumendpoints.md)
   The number of endpoints that the interface uses.
-- [bInterfaceClass](iousbinterfacedescriptor/1546292-binterfaceclass.md)
+- [bInterfaceClass](./iousbinterfacedescriptor/api-1546292-binterfaceclass.md)
   The class code.
-- [bInterfaceSubClass](iousbinterfacedescriptor/1546353-binterfacesubclass.md)
+- [bInterfaceSubClass](./iousbinterfacedescriptor/api-1546353-binterfacesubclass.md)
   The subclass code.
-- [bInterfaceProtocol](iousbinterfacedescriptor/1545890-binterfaceprotocol.md)
+- [bInterfaceProtocol](./iousbinterfacedescriptor/api-1545890-binterfaceprotocol.md)
   The protocol code.
-- [iInterface](iousbinterfacedescriptor/1545956-iinterface.md)
+- [iInterface](./iousbinterfacedescriptor/api-1545956-iinterface.md)
   The index of the string descriptor describing this interface.
 
 ## See Also
 
-- [IOUSBInterfaceDescriptorPtr](iousbinterfacedescriptorptr.md)
+### Interface Descriptors
+- [IOUSBInterfaceDescriptorPtr](./iousbinterfacedescriptorptr.md)
   A pointer to a USB interface descriptor.
-- [IOUSBInterfaceAssociationDescriptor](iousbinterfaceassociationdescriptor.md)
+- [IOUSBInterfaceAssociationDescriptor](./iousbinterfaceassociationdescriptor.md)
   The descriptor that associates multiple interfaces to the same function.
-- [IOUSBInterfaceAssociationDescriptorPtr](iousbinterfaceassociationdescriptorptr.md)
+- [IOUSBInterfaceAssociationDescriptorPtr](./iousbinterfaceassociationdescriptorptr.md)
   A pointer to a USB interface association descriptor.
+### Related Documentation
 - [IOUSBInterfaceDescriptor](../iokit/usb_h_user-space/iousbinterfacedescriptor.md)
 
 

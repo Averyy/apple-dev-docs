@@ -1,7 +1,8 @@
 # cssm_query_size_data
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,20 +14,24 @@
 struct cssm_query_size_data
 ```
 
+```c
+struct cssm_query_size_data;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cssm_query_size_data-swift.struct/init.md)
-- [init(SizeInputBlock: uint32, SizeOutputBlock: uint32)](cssm_query_size_data-swift.struct/init(sizeinputblock:sizeoutputblock:).md)
+- [init()](./cssm_query_size_data-swift.struct/init%28%29.md)
+- [init(SizeInputBlock: uint32, SizeOutputBlock: uint32)](./cssm_query_size_data-swift.struct/init%28sizeinputblock,sizeoutputblock%29.md)
 ### Instance Properties
-- [var SizeInputBlock: uint32](cssm_query_size_data-swift.struct/sizeinputblock.md)
-- [var SizeOutputBlock: uint32](cssm_query_size_data-swift.struct/sizeoutputblock.md)
+- [var SizeInputBlock: uint32](./cssm_query_size_data-swift.struct/sizeinputblock.md)
+- [var SizeOutputBlock: uint32](./cssm_query_size_data-swift.struct/sizeoutputblock.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # SecurityInfoResponse.SecurityInfo.FirewallSettings.ApplicationsItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes the allowed apps.
 
@@ -10,7 +11,7 @@ A dictionary that describes the allowed apps.
 
 ## Declaration
 
-```swift
+```
 object SecurityInfoResponse.SecurityInfo.FirewallSettings.ApplicationsItem
 ```
 

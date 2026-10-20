@@ -1,7 +1,8 @@
 # MLObjectDetector.ModelParameters.ValidationData
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A validation dataset for an object detector.
 
@@ -17,22 +18,23 @@ enum ValidationData
 ## Topics
 
 ### Designating validation data
-- [MLObjectDetector.ModelParameters.ValidationData.split(strategy:)](mlobjectdetector/modelparameters-swift.struct/validationdata/split(strategy:).md)
+- [MLObjectDetector.ModelParameters.ValidationData.split(strategy:)](./validationdata/split%28strategy%29.md)
   A validation dataset Create ML derives by randomly selecting a portion of the object detector’s training dataset using the split strategy.
-- [MLObjectDetector.ModelParameters.ValidationData.dataFrame(_:imageColumn:annotationColumn:)](mlobjectdetector/modelparameters-swift.struct/validationdata/dataframe(_:imagecolumn:annotationcolumn:).md)
+- [MLObjectDetector.ModelParameters.ValidationData.dataFrame(_:imageColumn:annotationColumn:)](./validationdata/dataframe%28_,imagecolumn,annotationcolumn%29.md)
   Set validation data from the MLDataTable provided.
-- [MLObjectDetector.ModelParameters.ValidationData.dataSource(_:)](mlobjectdetector/modelparameters-swift.struct/validationdata/datasource(_:).md)
+- [MLObjectDetector.ModelParameters.ValidationData.dataSource(_:)](./validationdata/datasource%28_%29.md)
   A validation dataset you provide as a data source.
-- [MLObjectDetector.ModelParameters.ValidationData.table(_:imageColumn:annotationColumn:)](mlobjectdetector/modelparameters-swift.struct/validationdata/table(_:imagecolumn:annotationcolumn:).md)
+- [MLObjectDetector.ModelParameters.ValidationData.table(_:imageColumn:annotationColumn:)](./validationdata/table%28_,imagecolumn,annotationcolumn%29.md)
   A validation dataset you provide as a data table.
-- [MLObjectDetector.ModelParameters.ValidationData.none](mlobjectdetector/modelparameters-swift.struct/validationdata/none.md)
+- [MLObjectDetector.ModelParameters.ValidationData.none](./validationdata/none.md)
   An empty validation dataset that skips the model validation phase after training.
 
 ## See Also
 
-- [MLObjectDetector.ModelParameters.ModelAlgorithmType](mlobjectdetector/modelparameters-swift.struct/modelalgorithmtype.md)
+### Supporting types
+- [MLObjectDetector.ModelParameters.ModelAlgorithmType](./modelalgorithmtype.md)
   An object-detector training algorithm.
-- [MLObjectDetector.ModelParameters.FeatureExtractorType](mlobjectdetector/modelparameters-swift.struct/featureextractortype.md)
+- [MLObjectDetector.ModelParameters.FeatureExtractorType](./featureextractortype.md)
   The underlying base model that extracts image features for an object-detector training session.
 
 

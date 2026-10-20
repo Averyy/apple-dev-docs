@@ -1,23 +1,44 @@
 # init(image:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new texture object from an image object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+convenience init(image: UIImage)
+```
+
+*macOS*
+
 ```swift
 convenience init(image: NSImage)
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
++ (instancetype) textureWithImage:(UIImage *) image;
+```
+
+*macOS*
+
+```objc
++ (instancetype) textureWithImage:(NSImage *) image;
 ```
 
 #### Return Value
@@ -34,7 +55,8 @@ The image data is copied before control is returned to your game.
 
 ## See Also
 
-- [convenience init(cgImage: CGImage)](sktexture/init(cgimage:)-27ovb.md)
+### Texture from Image
+- [convenience init(cgImage: CGImage)](./init%28cgimage%29-27ovb.md)
   Create a new texture object from a Quartz 2D image.
 
 

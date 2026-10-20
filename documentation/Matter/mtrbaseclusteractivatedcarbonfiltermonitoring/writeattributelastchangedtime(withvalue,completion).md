@@ -1,7 +1,8 @@
 # writeAttributeLastChangedTime(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeLastChangedTime(withValue value: NSNumber?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeLastChangedTime(withValue value: NSNumber?) async throws
+```
+
+```objc
+- (void) writeAttributeLastChangedTimeWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

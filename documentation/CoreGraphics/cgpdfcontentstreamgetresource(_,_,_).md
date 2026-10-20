@@ -1,7 +1,8 @@
 # CGPDFContentStreamGetResource(_:_:_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the specified resource from a PDF content stream object.
 
@@ -10,7 +11,7 @@ Gets the specified resource from a PDF content stream object.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Gets the specified resource from a PDF content stream object.
 
 ```swift
 func CGPDFContentStreamGetResource(_ cs: CGPDFContentStreamRef, _ category: UnsafePointer<CChar>, _ name: UnsafePointer<CChar>) -> CGPDFObjectRef?
+```
+
+```c
+extern CGPDFObjectRefCGPDFContentStreamGetResource(CGPDFContentStreamRef cs, const char *category, const char *name);
 ```
 
 #### Return Value
@@ -36,7 +41,8 @@ You can use this function to obtain resources used by the content stream, such a
 
 ## See Also
 
-- [func CGPDFContentStreamGetStreams(CGPDFContentStreamRef) -> CFArray?](cgpdfcontentstreamgetstreams(_:).md)
+### Getting Data from a PDF Content Stream Object
+- [func CGPDFContentStreamGetStreams(CGPDFContentStreamRef) -> CFArray?](./cgpdfcontentstreamgetstreams%28_%29.md)
   Gets the array of PDF content streams contained in a PDF content stream object.
 
 

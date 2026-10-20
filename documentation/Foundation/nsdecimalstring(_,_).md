@@ -1,7 +1,8 @@
 # NSDecimalString(_:_:)
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a string representation of the decimal value appropriate for the specified locale.
 
@@ -20,10 +21,14 @@ Returns a string representation of the decimal value appropriate for the specifi
 func NSDecimalString(_ dcm: UnsafePointer<Decimal>, _ locale: Any?) -> String
 ```
 
+```c
+extern NSString *NSDecimalString(const NSDecimal *dcm, id locale);
+```
+
 ## Parameters
 
 - `dcm`: The decimal value to represent.
-- `locale`: Either an instance of [`NSLocale`](nslocale.md) or a dictionary with a string value corresponding to the [`decimalSeparator`](nslocale/key/decimalseparator.md) key.
+- `locale`: Either an instance of [`NSLocale`](./nslocale.md) or a dictionary with a string value corresponding to the [`decimalSeparator`](./nslocale/key/decimalseparator.md) key.
 
 
 ---

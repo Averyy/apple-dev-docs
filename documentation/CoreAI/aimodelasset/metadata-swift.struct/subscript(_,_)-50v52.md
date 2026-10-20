@@ -1,7 +1,8 @@
 # subscript(_:_:)
 
 **Framework**: Core AI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a custom metadata Boolean value for the specified key.
 
@@ -20,17 +21,18 @@ subscript(key: String, type: Bool.Type = Bool.self) -> Bool? { get set }
 
 ## See Also
 
-- [var creatorDefinedMetadata: [String : AIModelAsset.Metadata.CreatorDefinedValue]](aimodelasset/metadata-swift.struct/creatordefinedmetadata.md)
+### Accessing creator-defined metadata
+- [var creatorDefinedMetadata: [String : AIModelAsset.Metadata.CreatorDefinedValue]](./creatordefinedmetadata.md)
   The custom key-value pairs defined by the model’s creator.
-- [subscript(String, String.Type) -> String?](aimodelasset/metadata-swift.struct/subscript(_:_:)-44ov4.md)
+- [subscript(String, String.Type) -> String?](./subscript%28_,_%29-44ov4.md)
   Accesses a custom metadata string value for the specified key.
-- [subscript(String, [AIModelAsset.Metadata.CreatorDefinedValue].Type) -> [AIModelAsset.Metadata.CreatorDefinedValue]?](aimodelasset/metadata-swift.struct/subscript(_:_:)-5o1kb.md)
+- [subscript(String, [AIModelAsset.Metadata.CreatorDefinedValue].Type) -> [AIModelAsset.Metadata.CreatorDefinedValue]?](./subscript%28_,_%29-5o1kb.md)
   Accesses a custom metadata array value for the specified key.
-- [subscript(String, [String : AIModelAsset.Metadata.CreatorDefinedValue].Type) -> [String : AIModelAsset.Metadata.CreatorDefinedValue]?](aimodelasset/metadata-swift.struct/subscript(_:_:)-5se5j.md)
+- [subscript(String, [String : AIModelAsset.Metadata.CreatorDefinedValue].Type) -> [String : AIModelAsset.Metadata.CreatorDefinedValue]?](./subscript%28_,_%29-5se5j.md)
   Accesses a custom metadata dictionary value for the specified key.
-- [subscript(String, Double.Type) -> Double?](aimodelasset/metadata-swift.struct/subscript(_:_:)-6bxrd.md)
+- [subscript(String, Double.Type) -> Double?](./subscript%28_,_%29-6bxrd.md)
   Accesses a custom metadata number value for the specified key.
-- [subscript(String, Int.Type) -> Int?](aimodelasset/metadata-swift.struct/subscript(_:_:)-9hpy0.md)
+- [subscript(String, Int.Type) -> Int?](./subscript%28_,_%29-9hpy0.md)
   Accesses a custom metadata integer value for the specified key.
 
 

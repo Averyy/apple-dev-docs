@@ -1,7 +1,8 @@
 # GetIndVoice(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets a voice specification structure for a voice bypassing an index to the `GetIndVoice` function.
 
@@ -14,9 +15,13 @@ Gets a voice specification structure for a voice bypassing an index to the `GetI
 func GetIndVoice(_ index: Int16, _ voice: UnsafeMutablePointer<VoiceSpec>) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr GetIndVoice(SInt16 index, VoiceSpec *voice);
+```
 
-A resultcode. See [`Result Codes`](speech_synthesis_manager#1659745.md).
+#### Return Value
+
+A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
 #### Discussion
 
@@ -33,13 +38,14 @@ If you specify an index value beyond the number of availablevoices, the `GetIndV
 
 ## See Also
 
-- [func CountVoices(UnsafeMutablePointer<Int16>) -> OSErr](1459947-countvoices.md)
+### Getting Information About Voices
+- [func CountVoices(UnsafeMutablePointer<Int16>) -> OSErr](./api-1459947-countvoices.md)
   Determines how many voices are available.
-- [func GetVoiceDescription(UnsafePointer<VoiceSpec>?, UnsafeMutablePointer<VoiceDescription>?, Int) -> OSErr](1463940-getvoicedescription.md)
+- [func GetVoiceDescription(UnsafePointer<VoiceSpec>?, UnsafeMutablePointer<VoiceDescription>?, Int) -> OSErr](./api-1463940-getvoicedescription.md)
   Gets a description of a voice by using the `GetVoiceDescription` function.
-- [func GetVoiceInfo(UnsafePointer<VoiceSpec>?, OSType, UnsafeMutableRawPointer) -> OSErr](1461410-getvoiceinfo.md)
+- [func GetVoiceInfo(UnsafePointer<VoiceSpec>?, OSType, UnsafeMutableRawPointer) -> OSErr](./api-1461410-getvoiceinfo.md)
   Gets the same information about a voice that the `GetVoiceDescription` function provides,or to determine in which file and resource a voice is stored. 
-- [func MakeVoiceSpec(OSType, OSType, UnsafeMutablePointer<VoiceSpec>) -> OSErr](1461446-makevoicespec.md)
+- [func MakeVoiceSpec(OSType, OSType, UnsafeMutablePointer<VoiceSpec>) -> OSErr](./api-1461446-makevoicespec.md)
   Sets the fields of a voice specification structure. 
 
 

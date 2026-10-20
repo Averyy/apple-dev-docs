@@ -1,7 +1,8 @@
 # NSMigrationEntityMappingKey
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Key for the entity mapping object.
 
@@ -10,7 +11,7 @@ Key for the entity mapping object.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,21 +21,26 @@ Key for the entity mapping object.
 let NSMigrationEntityMappingKey: String
 ```
 
+```c
+extern NSString * const NSMigrationEntityMappingKey;
+```
+
 #### Discussion
 
 To access this key in a custom value expression string in the Xcode mapping model editor use `$entityMapping`.
 
 ## See Also
 
-- [let NSMigrationManagerKey: String](nsmigrationmanagerkey.md)
+### Constants
+- [let NSMigrationManagerKey: String](./nsmigrationmanagerkey.md)
   Key for the migration manager.
-- [let NSMigrationSourceObjectKey: String](nsmigrationsourceobjectkey.md)
+- [let NSMigrationSourceObjectKey: String](./nsmigrationsourceobjectkey.md)
   Key for the source object.
-- [let NSMigrationDestinationObjectKey: String](nsmigrationdestinationobjectkey.md)
+- [let NSMigrationDestinationObjectKey: String](./nsmigrationdestinationobjectkey.md)
   Key for the destination object.
-- [let NSMigrationPropertyMappingKey: String](nsmigrationpropertymappingkey.md)
+- [let NSMigrationPropertyMappingKey: String](./nsmigrationpropertymappingkey.md)
   Key for the property mapping object.
-- [let NSMigrationEntityPolicyKey: String](nsmigrationentitypolicykey.md)
+- [let NSMigrationEntityPolicyKey: String](./nsmigrationentitypolicykey.md)
   Key for the entity migration policy object.
 
 

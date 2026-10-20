@@ -1,7 +1,8 @@
 # hv_vcpu_interrupt(_:_:)
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Forces the vCPU instances you provide to immediately exit the VM.
 
@@ -14,9 +15,13 @@ Forces the vCPU instances you provide to immediately exit the VM.
 func hv_vcpu_interrupt(_ vcpus: UnsafeMutablePointer<hv_vcpuid_t>, _ vcpu_count: UInt32) -> hv_return_t
 ```
 
+```c
+extern hv_return_t hv_vcpu_interrupt(hv_vcpuid_t *vcpus, unsigned int vcpu_count);
+```
+
 #### Return Value
 
-[`HV_SUCCESS`](hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](hv_return_t.md).
+[`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
 ## Parameters
 
@@ -25,15 +30,16 @@ func hv_vcpu_interrupt(_ vcpus: UnsafeMutablePointer<hv_vcpuid_t>, _ vcpu_count:
 
 ## See Also
 
-- [func hv_vcpu_run_until(hv_vcpuid_t, UInt64) -> hv_return_t](hv_vcpu_run_until(_:_:).md)
+### Runtime
+- [func hv_vcpu_run_until(hv_vcpuid_t, UInt64) -> hv_return_t](./hv_vcpu_run_until%28_,_%29.md)
   Executes a vCPU until it reaches the deadline defined in absolute time units you provide.
-- [func hv_vcpu_flush(hv_vcpuid_t) -> hv_return_t](hv_vcpu_flush(_:).md)
+- [func hv_vcpu_flush(hv_vcpuid_t) -> hv_return_t](./hv_vcpu_flush%28_%29.md)
   Flushes the cached state of a vCPU.
-- [func hv_vcpu_get_exec_time(hv_vcpu_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vcpu_get_exec_time(_:_:).md)
+- [func hv_vcpu_get_exec_time(hv_vcpu_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](./hv_vcpu_get_exec_time%28_,_%29.md)
   Returns, by reference, the cumulative execution time of a vCPU, in nanoseconds.
-- [func hv_vcpu_run(hv_vcpu_t) -> hv_return_t](hv_vcpu_run(_:).md)
+- [func hv_vcpu_run(hv_vcpu_t) -> hv_return_t](./hv_vcpu_run%28_%29.md)
   Starts the execution of a vCPU.
-- [Execution Deadlines](3553338-execution-deadlines.md)
+- [Execution Deadlines](./api-3553338-execution-deadlines.md)
   An enumeration that describes available execution deadlines available to vCPUs.
 
 

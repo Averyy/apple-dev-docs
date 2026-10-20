@@ -1,18 +1,21 @@
 # GKPeerConnectionState.stateConnected
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A peer connected to the session.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 3.0+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- Mac Catalyst 3.0+ - Deprecated in 7.0
+- macOS 10.8+ - Deprecated in 10.10
+- tvOS 9.0+ - Deprecated in 18.4
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 3.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
@@ -20,15 +23,20 @@ A peer connected to the session.
 case stateConnected
 ```
 
+```c
+GKPeerStateConnected
+```
+
 ## See Also
 
-- [GKPeerConnectionState.stateAvailable](gkpeerconnectionstate/stateavailable.md)
+### Constants
+- [GKPeerConnectionState.stateAvailable](./stateavailable.md)
   A peer not connected to the session, but one that the session can connect to.
-- [GKPeerConnectionState.stateUnavailable](gkpeerconnectionstate/stateunavailable.md)
+- [GKPeerConnectionState.stateUnavailable](./stateunavailable.md)
   A peer that is no longer interested in receiving connections.
-- [GKPeerConnectionState.stateDisconnected](gkpeerconnectionstate/statedisconnected.md)
+- [GKPeerConnectionState.stateDisconnected](./statedisconnected.md)
   A peer that disconnected from the session.
-- [GKPeerConnectionState.stateConnecting](gkpeerconnectionstate/stateconnecting.md)
+- [GKPeerConnectionState.stateConnecting](./stateconnecting.md)
   A peer attempting to connect to the session.
 
 

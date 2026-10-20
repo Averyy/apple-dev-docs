@@ -1,14 +1,15 @@
 # inet_aton
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 int inet_aton(const char *, struct in_addr *);
 ```
 

@@ -1,7 +1,8 @@
 # ReferenceConvertible
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A decoration applied to types that are backed by a Foundation reference type.
 
@@ -29,39 +30,40 @@ All `ReferenceConvertible` types are hashable, equatable, and provide descriptio
 ## Topics
 
 ### Supporting types
-- [associatedtype ReferenceType : NSObject, NSCopying](referenceconvertible/referencetype.md)
+- [associatedtype ReferenceType : NSObject, NSCopying](./referenceconvertible/referencetype.md)
 
 ## Relationships
 
 ### Inherits From
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 ### Conforming Types
-- [AffineTransform](affinetransform.md)
-- [Calendar](calendar.md)
-- [CharacterSet](characterset.md)
-- [Data](data.md)
-- [Date](date.md)
-- [DateComponents](datecomponents.md)
-- [DateInterval](dateinterval.md)
-- [IndexPath](indexpath.md)
-- [IndexSet](indexset.md)
-- [Locale](locale.md)
-- [Measurement](measurement.md)
-- [Notification](notification.md)
-- [PersonNameComponents](personnamecomponents.md)
-- [TimeZone](timezone.md)
-- [URL](url.md)
-- [URLComponents](urlcomponents.md)
-- [URLQueryItem](urlqueryitem.md)
-- [URLRequest](urlrequest.md)
-- [UUID](uuid.md)
+- [AffineTransform](./affinetransform.md)
+- [Calendar](./calendar.md)
+- [CharacterSet](./characterset.md)
+- [Data](./data.md)
+- [Date](./date.md)
+- [DateComponents](./datecomponents.md)
+- [DateInterval](./dateinterval.md)
+- [IndexPath](./indexpath.md)
+- [IndexSet](./indexset.md)
+- [Locale](./locale.md)
+- [Measurement](./measurement.md)
+- [Notification](./notification.md)
+- [PersonNameComponents](./personnamecomponents.md)
+- [TimeZone](./timezone.md)
+- [URL](./url.md)
+- [URLComponents](./urlcomponents.md)
+- [URLQueryItem](./urlqueryitem.md)
+- [URLRequest](./urlrequest.md)
+- [UUID](./uuid.md)
 
 ## See Also
 
-- [Classes Bridged to Swift Standard Library Value Types](classes-bridged-to-swift-standard-library-value-types.md)
+### Swift Support
+- [Classes Bridged to Swift Standard Library Value Types](./classes-bridged-to-swift-standard-library-value-types.md)
   Use bridged reference types when you need reference semantics or Foundation-specific behavior.
 
 

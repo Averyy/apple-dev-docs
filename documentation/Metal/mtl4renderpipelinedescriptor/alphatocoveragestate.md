@@ -1,7 +1,8 @@
 # alphaToCoverageState
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether to read and use the alpha channel fragment output of color attachments to compute a sample coverage mask.
 
@@ -17,6 +18,10 @@ Indicates whether to read and use the alpha channel fragment output of color att
 
 ```swift
 var alphaToCoverageState: MTL4AlphaToCoverageState { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTL4AlphaToCoverageState alphaToCoverageState;
 ```
 
 

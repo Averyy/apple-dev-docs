@@ -1,7 +1,8 @@
 # init(revolutions:localAxis:timingFunction:isAdditive:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new spin action.
 

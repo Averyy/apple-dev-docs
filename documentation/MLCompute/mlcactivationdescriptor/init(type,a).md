@@ -1,21 +1,26 @@
 # init(type:a:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an activation descriptor with the activation type and parameter a that you specify.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 convenience init?(type activationType: MLCActivationType, a: Float)
+```
+
+```objc
++ (instancetype) descriptorWithType:(MLCActivationType) activationType a:(float) a;
 ```
 
 #### Discussion
@@ -24,31 +29,31 @@ Use this initializer to create one of the following activation descriptors:
 
 - **CELU**: `f(x) = max(0, x) + min(0, a * (exp(x / a) − 1))`
 
-Activation type: [`MLCActivationType.celu`](mlcactivationtype/celu.md)
+Activation type: [`MLCActivationType.celu`](../mlcactivationtype/celu.md)
 
 For common behavior, set `a` to `1.0`.
 
 - **HardShrink**: `f(x) = x`, if `x > a` or `x < −a`, else `0`
 
-Activation type: [`MLCActivationType.hardShrink`](mlcactivationtype/hardshrink.md)
+Activation type: [`MLCActivationType.hardShrink`](../mlcactivationtype/hardshrink.md)
 
 For common behavior, set `a` to `0.5`.
 
 - **Parametric ELU**: `f(x) = x >= 0 ? x : a * (exp(x) - 1)`
 
-Activation type: [`MLCActivationType.elu`](mlcactivationtype/elu.md)
+Activation type: [`MLCActivationType.elu`](../mlcactivationtype/elu.md)
 
 For common behavior, set `a` to `1.0`.
 
 - **ReLU**: `f(x) = x >= 0 ? x : a * x`
 
-Activation type: [`MLCActivationType.relu`](mlcactivationtype/relu.md)
+Activation type: [`MLCActivationType.relu`](../mlcactivationtype/relu.md)
 
 This is also referred to as Leaky ReLU. Some literature defines classical ReLU as `max(0, x)`. If you want this common behavior, set `a` to `0.0`.
 
 - **SoftShrink**: `f(x) = x - a`, if `x > a, x + a`, if `x < −a`, else `0`
 
-Activation type: [`MLCActivationType.softShrink`](mlcactivationtype/softshrink.md)
+Activation type: [`MLCActivationType.softShrink`](../mlcactivationtype/softshrink.md)
 
 For common behavior, set `a` to `0.5`.
 
@@ -59,13 +64,14 @@ For common behavior, set `a` to `0.5`.
 
 ## See Also
 
-- [convenience init?(type: MLCActivationType)](mlcactivationdescriptor/init(type:).md)
+### Creating Activation Descriptors
+- [convenience init?(type: MLCActivationType)](./init%28type%29.md)
   Creates an activation descriptor with the activation type you specify.
-- [convenience init?(type: MLCActivationType, a: Float, b: Float)](mlcactivationdescriptor/init(type:a:b:).md)
+- [convenience init?(type: MLCActivationType, a: Float, b: Float)](./init%28type,a,b%29.md)
   Creates an activation descriptor with the activation type and parameters a and b that you specify.
-- [convenience init?(type: MLCActivationType, a: Float, b: Float, c: Float)](mlcactivationdescriptor/init(type:a:b:c:).md)
+- [convenience init?(type: MLCActivationType, a: Float, b: Float, c: Float)](./init%28type,a,b,c%29.md)
   Creates an activation descriptor with the activation type and parameters a, b, and c that you specify.
-- [enum MLCActivationType](mlcactivationtype.md)
+- [enum MLCActivationType](../mlcactivationtype.md)
   An activation type that you specify for an activation descriptor.
 
 

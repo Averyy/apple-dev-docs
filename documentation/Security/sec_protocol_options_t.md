@@ -1,7 +1,8 @@
 # sec_protocol_options_t
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A `sec_protocol_options` instance is a container of options for security protocol instances, such as TLS. Protocol options are used to configure security protocols in the network stack. For example, clients may set the maximum and minimum allowed TLS versions through protocol options.
 
@@ -18,6 +19,10 @@ A `sec_protocol_options` instance is a container of options for security protoco
 
 ```swift
 typealias sec_protocol_options_t = any OS_sec_protocol_options
+```
+
+```c
+typedef NSObject<OS_sec_protocol_options> * sec_protocol_options_t;
 ```
 
 

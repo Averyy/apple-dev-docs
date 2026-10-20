@@ -1,7 +1,8 @@
 # update(deltaTime:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells all component instances managed by the system to perform their custom periodic actions.
 
@@ -19,9 +20,13 @@ Tells all component instances managed by the system to perform their custom peri
 func update(deltaTime seconds: TimeInterval)
 ```
 
+```objc
+- (void) updateWithDeltaTime:(NSTimeInterval) seconds;
+```
+
 #### Discussion
 
-Typically, you call this method in response to a per-frame game loop method such as [`update(_:)`](https://developer.apple.com/documentation/spritekit/skscene/update(_:)) (SpriteKit) or [`renderer(_:updateAtTime:)`](https://developer.apple.com/documentation/scenekit/scnscenerendererdelegate/renderer(_:updateattime:)) (SceneKit). GameplayKit then forwards to the [`update(deltaTime:)`](gkcomponent/update(deltatime:).md) method of all [`GKComponent`](gkcomponent.md) subclass objects managed by the component system, allowing you to execute per-frame logic for each component instance in a deterministic order.
+Typically, you call this method in response to a per-frame game loop method such as [`update(_:)`](../../SpriteKit/skscene/update%28_%29.md) (SpriteKit) or [`renderer(_:updateAtTime:)`](../../SceneKit/scnscenerendererdelegate/renderer%28_,updateattime%29.md) (SceneKit). GameplayKit then forwards to the [`update(deltaTime:)`](../gkcomponent/update%28deltatime%29.md) method of all [`GKComponent`](../gkcomponent.md) subclass objects managed by the component system, allowing you to execute per-frame logic for each component instance in a deterministic order.
 
 ## Parameters
 

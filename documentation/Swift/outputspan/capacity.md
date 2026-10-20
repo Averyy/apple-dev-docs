@@ -1,7 +1,8 @@
 # capacity
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of elements that this output span can contain.
 

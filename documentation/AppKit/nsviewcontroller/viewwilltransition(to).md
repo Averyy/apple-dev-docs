@@ -1,7 +1,8 @@
 # viewWillTransition(to:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 For a view controller that is part of an app extension, called when its view is about to be resized.
 
@@ -14,6 +15,10 @@ For a view controller that is part of an app extension, called when its view is 
 func viewWillTransition(to newSize: NSSize)
 ```
 
+```objc
+- (void) viewWillTransitionToSize:(NSSize) newSize;
+```
+
 #### Discussion
 
 Override this method if you want to change layout in response to the change in size, potentially in an animated way.
@@ -24,15 +29,16 @@ Override this method if you want to change layout in response to the change in s
 
 ## See Also
 
-- [var extensionContext: NSExtensionContext?](nsviewcontroller/extensioncontext.md)
+### Configuring an App Extension View Controller
+- [var extensionContext: NSExtensionContext?](./extensioncontext.md)
   For a view controller that is part of an app extension, the app extension context.
-- [var preferredScreenOrigin: NSPoint](nsviewcontroller/preferredscreenorigin.md)
+- [var preferredScreenOrigin: NSPoint](./preferredscreenorigin.md)
   For a view controller that is part of an app extension, the preferred screen origin.
-- [var preferredMaximumSize: NSSize](nsviewcontroller/preferredmaximumsize.md)
+- [var preferredMaximumSize: NSSize](./preferredmaximumsize.md)
   For a view controller that is part of an app extension, the largest allowable size for the app extension’s primary view, in screen units.
-- [var preferredMinimumSize: NSSize](nsviewcontroller/preferredminimumsize.md)
+- [var preferredMinimumSize: NSSize](./preferredminimumsize.md)
   For a view controller that is part of an app extension, the smallest allowable size for the app extension’s primary view, in screen units.
-- [var sourceItemView: NSView?](nsviewcontroller/sourceitemview.md)
+- [var sourceItemView: NSView?](./sourceitemview.md)
 
 
 ---

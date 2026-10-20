@@ -1,14 +1,15 @@
 # VFS_RECOVERY_ROLE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 VFS_RECOVERY_ROLE
 ```
 

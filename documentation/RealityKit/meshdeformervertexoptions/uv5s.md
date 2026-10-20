@@ -1,7 +1,8 @@
 # uv5s
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies uv5s only.
 
@@ -21,19 +22,20 @@ static var uv5s: MeshDeformerVertexOptions { get }
 
 ## See Also
 
-- [static var uvs: MeshDeformerVertexOptions](meshdeformervertexoptions/uvs.md)
+### Specifying texture coordinates
+- [static var uvs: MeshDeformerVertexOptions](./uvs.md)
   Specifies uvs only.
-- [static var uv1s: MeshDeformerVertexOptions](meshdeformervertexoptions/uv1s.md)
+- [static var uv1s: MeshDeformerVertexOptions](./uv1s.md)
   Specifies uv1s only.
-- [static var uv2s: MeshDeformerVertexOptions](meshdeformervertexoptions/uv2s.md)
+- [static var uv2s: MeshDeformerVertexOptions](./uv2s.md)
   Specifies uv2s only.
-- [static var uv3s: MeshDeformerVertexOptions](meshdeformervertexoptions/uv3s.md)
+- [static var uv3s: MeshDeformerVertexOptions](./uv3s.md)
   Specifies uv3s only.
-- [static var uv4s: MeshDeformerVertexOptions](meshdeformervertexoptions/uv4s.md)
+- [static var uv4s: MeshDeformerVertexOptions](./uv4s.md)
   Specifies uv4s only.
-- [static var uv6s: MeshDeformerVertexOptions](meshdeformervertexoptions/uv6s.md)
+- [static var uv6s: MeshDeformerVertexOptions](./uv6s.md)
   Specifies uv6s only.
-- [static var uv7s: MeshDeformerVertexOptions](meshdeformervertexoptions/uv7s.md)
+- [static var uv7s: MeshDeformerVertexOptions](./uv7s.md)
   Specifies uv7s only.
 
 

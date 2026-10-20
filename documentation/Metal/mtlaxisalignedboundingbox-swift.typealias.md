@@ -1,17 +1,18 @@
 # MTLAxisAlignedBoundingBox
 
 **Framework**: Metal  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The bounds for an axis-aligned bounding box.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -22,24 +23,25 @@ typealias MTLAxisAlignedBoundingBox = _MTLAxisAlignedBoundingBox
 ## Topics
 
 ### Instance Properties
-- [var max: MTLPackedFloat3](mtlaxisalignedboundingbox-swift.typealias/max.md)
-- [var min: MTLPackedFloat3](mtlaxisalignedboundingbox-swift.typealias/min.md)
+- [var max: MTLPackedFloat3](./mtlaxisalignedboundingbox-swift.typealias/max.md)
+- [var min: MTLPackedFloat3](./mtlaxisalignedboundingbox-swift.typealias/min.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias MTLPackedFloat3](mtlpackedfloat3-swift.typealias.md)
+### Supporting types
+- [typealias MTLPackedFloat3](./mtlpackedfloat3-swift.typealias.md)
   }
-- [typealias MTLPackedFloat4x3](mtlpackedfloat4x3-swift.typealias.md)
+- [typealias MTLPackedFloat4x3](./mtlpackedfloat4x3-swift.typealias.md)
   A structure that contains the top three rows of a 4x4 matrix of 32-bit floating-point values, in column-major order.
-- [func MTLPackedFloat3Make(Float, Float, Float) -> MTLPackedFloat3](mtlpackedfloat3make(_:_:_:).md)
+- [func MTLPackedFloat3Make(Float, Float, Float) -> MTLPackedFloat3](./mtlpackedfloat3make%28_,_,_%29.md)
   Returns a new packed vector with three floating-point values.
-- [struct MTL4BufferRange](mtl4bufferrange.md)
-- [func MTL4BufferRangeMake(MTLGPUAddress, UInt64) -> MTL4BufferRange](mtl4bufferrangemake(_:_:).md)
+- [struct MTL4BufferRange](./mtl4bufferrange.md)
+- [func MTL4BufferRangeMake(MTLGPUAddress, UInt64) -> MTL4BufferRange](./mtl4bufferrangemake%28_,_%29.md)
 
 
 ---

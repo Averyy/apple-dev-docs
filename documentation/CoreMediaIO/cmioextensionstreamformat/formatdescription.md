@@ -1,7 +1,8 @@
 # formatDescription
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the format of the stream’s media samples.
 
@@ -13,6 +14,10 @@ A description of the format of the stream’s media samples.
 
 ```swift
 var formatDescription: CMFormatDescription { get }
+```
+
+```objc
+@property (atomic, strong, readonly) CMFormatDescriptionRef formatDescription;
 ```
 
 

@@ -1,7 +1,8 @@
 # objectAlreadyAssociatedToHome
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An attempt to associate an object with a home when it’s already associated with that home.
 
@@ -21,11 +22,12 @@ static var objectAlreadyAssociatedToHome: HMError.Code { get }
 
 ## See Also
 
-- [static var invalidAssociatedServiceType: HMError.Code](hmerror/invalidassociatedservicetype.md)
+### Detecting association errors
+- [static var invalidAssociatedServiceType: HMError.Code](./invalidassociatedservicetype.md)
   An error indicating an invalid service type.
-- [static var objectAssociatedToAnotherHome: HMError.Code](hmerror/objectassociatedtoanotherhome.md)
+- [static var objectAssociatedToAnotherHome: HMError.Code](./objectassociatedtoanotherhome.md)
   An attempt to associate an object with a home when it’s already associated with another home.
-- [static var objectNotAssociatedToAnyHome: HMError.Code](hmerror/objectnotassociatedtoanyhome.md)
+- [static var objectNotAssociatedToAnyHome: HMError.Code](./objectnotassociatedtoanyhome.md)
   An attempt to perform an operation on an object that is not associated to any home.
 
 

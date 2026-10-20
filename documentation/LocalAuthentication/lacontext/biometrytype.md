@@ -1,7 +1,8 @@
 # biometryType
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of biometric authentication supported by the device.
 
@@ -19,19 +20,24 @@ The type of biometric authentication supported by the device.
 var biometryType: LABiometryType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) LABiometryType biometryType;
+```
+
 #### Discussion
 
-Use the value of this property to ensure that any authentication-related user prompts you create match the biometric capabilities of the device. For example, if the value of this property is [`LABiometryType.faceID`](labiometrytype/faceid.md), don’t refer to Touch ID in an authentication prompt.
+Use the value of this property to ensure that any authentication-related user prompts you create match the biometric capabilities of the device. For example, if the value of this property is [`LABiometryType.faceID`](../labiometrytype/faceid.md), don’t refer to Touch ID in an authentication prompt.
 
-This property is set only after you call the [`canEvaluatePolicy(_:error:)`](lacontext/canevaluatepolicy(_:error:).md) method, and is set no matter what the call returns. The default value is [`LABiometryType.none`](labiometrytype/none.md).
+This property is set only after you call the [`canEvaluatePolicy(_:error:)`](./canevaluatepolicy%28_,error%29.md) method, and is set no matter what the call returns. The default value is [`LABiometryType.none`](../labiometrytype/none.md).
 
 ## See Also
 
-- [func canEvaluatePolicy(LAPolicy, error: NSErrorPointer) -> Bool](lacontext/canevaluatepolicy(_:error:).md)
+### Checking availability
+- [func canEvaluatePolicy(LAPolicy, error: NSErrorPointer) -> Bool](./canevaluatepolicy%28_,error%29.md)
   Assesses whether authentication can proceed for a given policy.
-- [enum LAPolicy](lapolicy.md)
+- [enum LAPolicy](../lapolicy.md)
   The set of available local authentication policies.
-- [enum LABiometryType](labiometrytype.md)
+- [enum LABiometryType](../labiometrytype.md)
   The set of available biometric authentication types.
 
 

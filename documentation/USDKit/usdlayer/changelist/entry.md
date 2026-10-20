@@ -1,7 +1,8 @@
 # USDLayer.ChangeList.Entry
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A single change entry describing modifications at a path.
 
@@ -22,25 +23,25 @@ struct Entry
 ## Topics
 
 ### Structures
-- [USDLayer.ChangeList.Entry.Flags](usdlayer/changelist/entry/flags-swift.struct.md)
+- [USDLayer.ChangeList.Entry.Flags](./entry/flags-swift.struct.md)
   Boolean flags describing structural changes to a spec.
-- [USDLayer.ChangeList.Entry.InfoChange](usdlayer/changelist/entry/infochange.md)
+- [USDLayer.ChangeList.Entry.InfoChange](./entry/infochange.md)
   Old and new values for a changed info field.
 ### Instance Properties
-- [var flags: USDLayer.ChangeList.Entry.Flags](usdlayer/changelist/entry/flags-swift.property.md)
+- [var flags: USDLayer.ChangeList.Entry.Flags](./entry/flags-swift.property.md)
   Structural change flags for this entry.
-- [var infoChanged: [(USDToken, USDLayer.ChangeList.Entry.InfoChange)]](usdlayer/changelist/entry/infochanged.md)
+- [var infoChanged: [(USDToken, USDLayer.ChangeList.Entry.InfoChange)]](./entry/infochanged.md)
   Info field changes, keyed by field name. Each `InfoChange` contains the old and new values.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(delegate:queue:)
 
 **Framework**: Core NFC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new session instance for processing NFC payment tags.
 
@@ -19,9 +20,9 @@ convenience init(delegate: any NFCTagReaderSessionDelegate, queue: DispatchQueue
 
 #### Discussion
 
-Creating a session requires that your app have the [`Near Field Communication Tag Reader Session Formats Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.nfc.readersession.formats) entitlement; if it’s missing, your delegate receives the callback [`tagReaderSession(_:didInvalidateWithError:)`](nfctagreadersessiondelegate-2joku/tagreadersession(_:didinvalidatewitherror:).md) with the error [`NFCReaderError.Code.readerErrorSecurityViolation`](nfcreadererror-swift.struct/code/readererrorsecurityviolation.md). Additionally, the app’s information property list must contain a non-empty usage description string. If it’s absent, the delegate doesn’t receive tag-discovery callbacks.
+Creating a session requires that your app have the [`Near Field Communication Tag Reader Session Formats Entitlement`](../../BundleResources/entitlements/com.apple.developer.nfc.readersession.formats.md) entitlement; if it’s missing, your delegate receives the callback [`tagReaderSession(_:didInvalidateWithError:)`](../nfctagreadersessiondelegate-2joku/tagreadersession%28_,didinvalidatewitherror%29.md) with the error [`NFCReaderError.Code.readerErrorSecurityViolation`](../nfcreadererror-swift.struct/code/readererrorsecurityviolation.md). Additionally, the app’s information property list must contain a non-empty usage description string. If it’s absent, the delegate doesn’t receive tag-discovery callbacks.
 
-When the session discovers an ISO 7816-compatible tag, the session performs a `SELECT` command for each application identifier provided in [`ISO7816 application identifiers for NFC Tag Reader Session`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers). The `SELECT` command searches for the identifiers in the order in which they appear in the array. The session calls the [`tagReaderSession(_:didDetect:)`](nfctagreadersessiondelegate-2joku/tagreadersession(_:diddetect:).md) delegate method after the first successful `SELECT` command. The [`initialSelectedAID`](nfciso7816tag/initialselectedaid.md) property of the found tag contains the selected identifier.
+When the session discovers an ISO 7816-compatible tag, the session performs a `SELECT` command for each application identifier provided in [`ISO7816 application identifiers for NFC Tag Reader Session`](../../BundleResources/entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers.md). The `SELECT` command searches for the identifiers in the order in which they appear in the array. The session calls the [`tagReaderSession(_:didDetect:)`](../nfctagreadersessiondelegate-2joku/tagreadersession%28_,diddetect%29.md) delegate method after the first successful `SELECT` command. The [`initialSelectedAID`](../nfciso7816tag/initialselectedaid.md) property of the found tag contains the selected identifier.
 
 ## Parameters
 
@@ -30,7 +31,8 @@ When the session discovers an ISO 7816-compatible tag, the session performs a `S
 
 ## See Also
 
-- [protocol NFCTagReaderSessionDelegate](nfctagreadersessiondelegate-2joku.md)
+### Creating a tag reader session
+- [protocol NFCTagReaderSessionDelegate](../nfctagreadersessiondelegate-2joku.md)
   A protocol that an object implements to receive callbacks sent from an NFC tag reader session.
 
 

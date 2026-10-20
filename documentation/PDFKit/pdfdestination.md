@@ -1,7 +1,8 @@
 # PDFDestination
 
 **Framework**: PDFKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A `PDFDestination` object describes a point on a PDF page.
 
@@ -19,55 +20,60 @@ A `PDFDestination` object describes a point on a PDF page.
 class PDFDestination
 ```
 
+```objc
+@interface PDFDestination : NSObject
+```
+
 #### Overview
 
-In typical usage, you do not initialize `PDFDestination` objects but rather get them as either attributes of [`PDFAnnotationLink`](pdfannotationlink.md) or [`PDFOutline`](pdfoutline.md) objects, or in response to the `PDFView` method [`currentDestination`](pdfview/currentdestination.md).
+In typical usage, you do not initialize `PDFDestination` objects but rather get them as either attributes of [`PDFAnnotationLink`](./pdfannotationlink.md) or [`PDFOutline`](./pdfoutline.md) objects, or in response to the `PDFView` method [`currentDestination`](./pdfview/currentdestination.md).
 
 ## Topics
 
 ### Initializing a Destination
-- [init(page: PDFPage, at: CGPoint)](pdfdestination/init(page:at:).md)
+- [init(page: PDFPage, at: CGPoint)](./pdfdestination/init%28page,at%29.md)
   Initializes the destination.
 ### Getting Pages and Points
-- [var page: PDFPage?](pdfdestination/page.md)
+- [var page: PDFPage?](./pdfdestination/page.md)
   Returns the page that the destination refers to.
-- [var point: CGPoint](pdfdestination/point.md)
+- [var point: CGPoint](./pdfdestination/point.md)
   Returns the point, in page space, that the destination refers to.
-- [let kPDFDestinationUnspecifiedValue: CGFloat](kpdfdestinationunspecifiedvalue.md)
+- [let kPDFDestinationUnspecifiedValue: CGFloat](./kpdfdestinationunspecifiedvalue.md)
 ### Getting a Relative Location
-- [func compare(PDFDestination) -> ComparisonResult](pdfdestination/compare(_:).md)
+- [func compare(PDFDestination) -> ComparisonResult](./pdfdestination/compare%28_%29.md)
   Returns a comparison result that indicates the location of the destination in the document, relative to the current position.
 ### Instance Properties
-- [var zoom: CGFloat](pdfdestination/zoom.md)
+- [var zoom: CGFloat](./pdfdestination/zoom.md)
 ### Initializers
-- [init(page: PDFPage, atPoint: CGPoint)](pdfdestination/init(page:atpoint:).md)
+- [init(page: PDFPage, atPoint: CGPoint)](./pdfdestination/init%28page,atpoint%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var page: PDFPage?](pdfannotation/page.md)
+### Accessing Information About an Annotation
+- [var page: PDFPage?](./pdfannotation/page.md)
   Returns the page that the annotation is associated with.
-- [var modificationDate: Date?](pdfannotation/modificationdate.md)
+- [var modificationDate: Date?](./pdfannotation/modificationdate.md)
   Returns the modification date of the annotation.
-- [var userName: String?](pdfannotation/username.md)
+- [var userName: String?](./pdfannotation/username.md)
   Returns the name of the user who created the annotation.
-- [var type: String?](pdfannotation/type.md)
+- [var type: String?](./pdfannotation/type.md)
   Returns the type of the annotation.
-- [var action: PDFAction?](pdfannotation/action.md)
+- [var action: PDFAction?](./pdfannotation/action.md)
   An object that represents an action for a PDF element, such as a link annotation.
-- [class PDFAction](pdfaction.md)
+- [class PDFAction](./pdfaction.md)
   An action that is performed when, for example, a PDF annotation is activated or an outline item is clicked.
 
 

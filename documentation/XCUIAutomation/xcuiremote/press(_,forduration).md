@@ -1,18 +1,23 @@
 # press(_:forDuration:)
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a press and hold of a button on a physical remote control, holding for the specified duration.
 
 **Availability**:
-- tvOS ?+
+- tvOS
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 func press(_ remoteButton: XCUIRemote.Button, forDuration duration: TimeInterval)
+```
+
+```objc
+- (void) pressButton:(XCUIRemoteButton) remoteButton forDuration:(NSTimeInterval) duration;
 ```
 
 ## Parameters
@@ -22,9 +27,10 @@ func press(_ remoteButton: XCUIRemote.Button, forDuration duration: TimeInterval
 
 ## See Also
 
-- [func press(XCUIRemote.Button)](xcuiremote/press(_:).md)
+### Pressing remote buttons
+- [func press(XCUIRemote.Button)](./press%28_%29.md)
   Sends a momentary press of a button on a physical remote control.
-- [enum XCUIRemoteButton](xcuiremote/button.md)
+- [enum XCUIRemoteButton](./button.md)
   A button on a physical remote control.
 
 

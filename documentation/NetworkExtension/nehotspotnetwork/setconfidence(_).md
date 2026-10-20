@@ -1,7 +1,8 @@
 # setConfidence(_:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicate the level of confidence in being able to handle the network.
 
@@ -17,9 +18,13 @@ Indicate the level of confidence in being able to handle the network.
 func setConfidence(_ confidence: NEHotspotHelperConfidence)
 ```
 
+```objc
+- (void) setConfidence:(NEHotspotHelperConfidence) confidence;
+```
+
 #### Discussion
 
-Hotspot Helper apps use this method in the response to the [`NEHotspotHelperCommandType.evaluate`](nehotspothelpercommandtype/evaluate.md) and [`NEHotspotHelperCommandType.filterScanList`](nehotspothelpercommandtype/filterscanlist.md) commands.
+Hotspot Helper apps use this method in the response to the [`NEHotspotHelperCommandType.evaluate`](../nehotspothelpercommandtype/evaluate.md) and [`NEHotspotHelperCommandType.filterScanList`](../nehotspothelpercommandtype/filterscanlist.md) commands.
 
 ## Parameters
 
@@ -27,9 +32,10 @@ Hotspot Helper apps use this method in the response to the [`NEHotspotHelperComm
 
 ## See Also
 
-- [enum NEHotspotHelperConfidence](nehotspothelperconfidence.md)
+### Network annotation
+- [enum NEHotspotHelperConfidence](../nehotspothelperconfidence.md)
   A type that indicates the hotspot helper’s confidence in its ability to handle the network.
-- [func setPassword(String)](nehotspotnetwork/setpassword(_:).md)
+- [func setPassword(String)](./setpassword%28_%29.md)
   Provide the password for a protected network.
 
 

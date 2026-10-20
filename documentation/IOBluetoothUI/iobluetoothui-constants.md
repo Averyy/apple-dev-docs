@@ -1,20 +1,22 @@
 # IOBluetoothUI Constants
 
-**Framework**: IOBluetooth UI
+**Framework**: IOBluetooth UI  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var kBluetoothKeyboardANSIReturn: BluetoothKeyboardReturnType](kbluetoothkeyboardansireturn.md)
-- [var kBluetoothKeyboardISOReturn: BluetoothKeyboardReturnType](kbluetoothkeyboardisoreturn.md)
-- [var kBluetoothKeyboardJISReturn: BluetoothKeyboardReturnType](kbluetoothkeyboardjisreturn.md)
-- [var kBluetoothKeyboardNoReturn: BluetoothKeyboardReturnType](kbluetoothkeyboardnoreturn.md)
+- [var kBluetoothKeyboardANSIReturn: BluetoothKeyboardReturnType](./kbluetoothkeyboardansireturn.md)
+- [var kBluetoothKeyboardISOReturn: BluetoothKeyboardReturnType](./kbluetoothkeyboardisoreturn.md)
+- [var kBluetoothKeyboardJISReturn: BluetoothKeyboardReturnType](./kbluetoothkeyboardjisreturn.md)
+- [var kBluetoothKeyboardNoReturn: BluetoothKeyboardReturnType](./kbluetoothkeyboardnoreturn.md)
 
 ## See Also
 
-- [IOBluetoothUIUserLib.h](iobluetoothuiuserlib-h.md)
-- [IOBluetoothUI Enumerations](iobluetoothui-enumerations.md)
-- [IOBluetoothUI Functions](iobluetoothui-functions.md)
+### Reference
+- [IOBluetoothUIUserLib.h](./iobluetoothuiuserlib-h.md)
+- [IOBluetoothUI Enumerations](./iobluetoothui-enumerations.md)
+- [IOBluetoothUI Functions](./iobluetoothui-functions.md)
 
 
 ---

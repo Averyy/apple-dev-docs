@@ -1,7 +1,8 @@
 # availability
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Availability of remote end.
 
@@ -16,7 +17,8 @@ let availability: RCSService.RemoteCapabilities.Availability?
 
 ## See Also
 
-- [RCSService.RemoteCapabilities.Availability](rcsservice/remotecapabilities/availability-swift.enum.md)
+### Accessing availability
+- [RCSService.RemoteCapabilities.Availability](./availability-swift.enum.md)
   Enumeration indicating the availability of the remote end.
 
 

@@ -1,7 +1,8 @@
 # spelling
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mode in which autocorrect checks for spelling as the user types.
 
@@ -17,9 +18,14 @@ A mode in which autocorrect checks for spelling as the user types.
 static var spelling: AEAssessmentConfiguration.AutocorrectMode { get }
 ```
 
+```c
+AEAutocorrectModeSpelling
+```
+
 ## See Also
 
-- [static var punctuation: AEAssessmentConfiguration.AutocorrectMode](aeassessmentconfiguration/autocorrectmode-swift.struct/punctuation.md)
+### Modes
+- [static var punctuation: AEAssessmentConfiguration.AutocorrectMode](./punctuation.md)
   A mode in which autocorrect checks punctuation as the user types.
 
 

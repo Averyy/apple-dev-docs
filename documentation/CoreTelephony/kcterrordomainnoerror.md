@@ -1,7 +1,8 @@
 # kCTErrorDomainNoError
 
 **Framework**: Core Telephony  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain value indicating there is no error.
 
@@ -17,11 +18,16 @@ The domain value indicating there is no error.
 var kCTErrorDomainNoError: Int { get }
 ```
 
+```c
+kCTErrorDomainNoError
+```
+
 ## See Also
 
-- [var kCTErrorDomainMach: Int](kcterrordomainmach.md)
+### Error Domains
+- [var kCTErrorDomainMach: Int](./kcterrordomainmach.md)
   The domain value for errors reported by Mach.
-- [var kCTErrorDomainPOSIX: Int](kcterrordomainposix.md)
+- [var kCTErrorDomainPOSIX: Int](./kcterrordomainposix.md)
   The domain value for errors from POSIX.
 
 

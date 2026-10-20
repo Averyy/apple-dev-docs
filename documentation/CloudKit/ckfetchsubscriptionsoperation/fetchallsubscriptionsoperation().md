@@ -1,7 +1,8 @@
 # fetchAllSubscriptionsOperation()
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an operation that fetches all of the user’s subscriptions.
 
@@ -10,7 +11,7 @@ Returns an operation that fetches all of the user’s subscriptions.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 6.0+
 
@@ -20,9 +21,13 @@ Returns an operation that fetches all of the user’s subscriptions.
 class func fetchAllSubscriptionsOperation() -> Self
 ```
 
+```objc
++ (instancetype) fetchAllSubscriptionsOperation;
+```
+
 #### Discussion
 
-After creating the operation, set the [`fetchSubscriptionCompletionBlock`](ckfetchsubscriptionsoperation/fetchsubscriptioncompletionblock-207ep.md) property to process the results.
+After creating the operation, set the [`fetchSubscriptionCompletionBlock`](./fetchsubscriptioncompletionblock-207ep.md) property to process the results.
 
 
 ---

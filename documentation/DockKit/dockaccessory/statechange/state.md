@@ -1,7 +1,8 @@
 # state
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of the dock accessory associated with the event.
 
@@ -19,7 +20,8 @@ let state: DockAccessory.State
 
 ## See Also
 
-- [let accessory: DockAccessory?](dockaccessory/statechange/accessory.md)
+### Getting properties
+- [let accessory: DockAccessory?](./accessory.md)
   The dock accessory that generated the event.
 
 

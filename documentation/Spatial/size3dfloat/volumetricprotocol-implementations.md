@@ -1,16 +1,17 @@
 # VolumetricProtocol Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var size: Size3DFloat](size3dfloat/size.md)
+- [var size: Size3DFloat](./size.md)
   The size of the volume.
 ### Instance Methods
-- [func contains(anyOf: [Point3DFloat]) -> Bool](size3dfloat/contains(anyof:).md)
+- [func contains(anyOf: [Point3DFloat]) -> Bool](./contains%28anyof%29.md)
   Returns a Boolean value that indicates whether this volume contains any of the specified points.
-- [func intersection(Size3DFloat) -> Size3DFloat?](size3dfloat/intersection(_:).md)
+- [func intersection(Size3DFloat) -> Size3DFloat?](./intersection%28_%29.md)
   Returns the intersection of two volumetric entities.
 
 

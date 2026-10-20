@@ -1,7 +1,8 @@
 # reloadSections(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads the data in the specified sections of the collection view.
 
@@ -12,6 +13,10 @@ Reloads the data in the specified sections of the collection view.
 
 ```swift
 func reloadSections(_ sections: IndexSet)
+```
+
+```objc
+- (void) reloadSections:(NSIndexSet *) sections;
 ```
 
 #### Discussion
@@ -26,9 +31,10 @@ Do not call this method in the middle of animation blocks where items are being 
 
 ## See Also
 
-- [func reloadData()](nscollectionview/reloaddata.md)
+### Reloading Content
+- [func reloadData()](./reloaddata%28%29.md)
   Reloads all of the data for the collection view.
-- [func reloadItems(at: Set<IndexPath>)](nscollectionview/reloaditems(at:).md)
+- [func reloadItems(at: Set<IndexPath>)](./reloaditems%28at%29.md)
   Reloads only the specified items.
 
 

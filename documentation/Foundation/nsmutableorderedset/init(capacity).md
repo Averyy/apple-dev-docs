@@ -1,7 +1,8 @@
 # init(capacity:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized mutable ordered set with a given initial capacity.
 
@@ -20,6 +21,10 @@ Returns an initialized mutable ordered set with a given initial capacity.
 init(capacity numItems: Int)
 ```
 
+```objc
+- (instancetype) initWithCapacity:(NSUInteger) numItems;
+```
+
 #### Return Value
 
 An initialized mutable ordered set with initial capacity to hold `numItems` members.
@@ -36,7 +41,8 @@ This method is a designated initializer of `NSMutableOrderedSet`.
 
 ## See Also
 
-- [init()](nsmutableorderedset/init.md)
+### Creating a Mutable Ordered Set
+- [init()](./init%28%29.md)
   Initializes a newly allocated mutable ordered set.
 
 

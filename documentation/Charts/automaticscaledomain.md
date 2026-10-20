@@ -1,7 +1,8 @@
 # AutomaticScaleDomain
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A domain that the chart infers from its data.
 
@@ -22,24 +23,25 @@ struct AutomaticScaleDomain
 
 #### Overview
 
-Use [`automatic`](scaledomain/automatic.md) to get an instance of this type.
+Use [`automatic`](./scaledomain/automatic.md) to get an instance of this type.
 
 ## Relationships
 
 ### Conforms To
-- [ScaleDomain](scaledomain.md)
+- [ScaleDomain](./scaledomain.md)
 
 ## See Also
 
-- [protocol ScaleRange](scalerange.md)
+### Scales
+- [protocol ScaleRange](./scalerange.md)
   A type that you can use to configure the range of a chart.
-- [protocol PositionScaleRange](positionscalerange.md)
+- [protocol PositionScaleRange](./positionscalerange.md)
   A type that configures the x-axis and y-axis values.
-- [struct PlotDimensionScaleRange](plotdimensionscalerange.md)
+- [struct PlotDimensionScaleRange](./plotdimensionscalerange.md)
   A range that represents the plot area’s width or height.
-- [protocol ScaleDomain](scaledomain.md)
+- [protocol ScaleDomain](./scaledomain.md)
   A type that you can use to configure the domain of a chart.
-- [struct ScaleType](scaletype.md)
+- [struct ScaleType](./scaletype.md)
   The ways you can scale the domain or range of a plot.
 
 

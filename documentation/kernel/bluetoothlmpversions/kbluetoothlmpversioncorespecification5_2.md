@@ -1,14 +1,15 @@
 # kBluetoothLMPVersionCoreSpecification5_2
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothLMPVersionCoreSpecification5_2 = 0x0b
 ```
 

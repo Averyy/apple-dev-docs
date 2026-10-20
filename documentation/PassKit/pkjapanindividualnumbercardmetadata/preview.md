@@ -1,7 +1,8 @@
 # preview
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that contains information representing the pass for provisioning.
 
@@ -9,7 +10,7 @@ An object that contains information representing the pass for provisioning.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- macOS ?+
+- macOS
 - visionOS 2.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ An object that contains information representing the pass for provisioning.
 var preview: PKAddPassMetadataPreview { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite, nonnull) PKAddPassMetadataPreview * preview;
+```
+
 ## See Also
 
-- [var authenticationPassword: String?](pkjapanindividualnumbercardmetadata/authenticationpassword.md)
+### Defining configuration
+- [var authenticationPassword: String?](./authenticationpassword.md)
   A string that specifies the authentication password when provisioning the pass.
-- [var signingPassword: String?](pkjapanindividualnumbercardmetadata/signingpassword.md)
+- [var signingPassword: String?](./signingpassword.md)
   A string that sets the signing password when you provision the pass.
 
 

@@ -1,11 +1,12 @@
 # kAudioHardwarePropertySleepingIsAllowed
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,23 +14,28 @@
 var kAudioHardwarePropertySleepingIsAllowed: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioHardwarePropertySleepingIsAllowed
+```
+
 ## See Also
 
-- [var kAudioHardwarePropertyBoxList: AudioObjectPropertySelector](kaudiohardwarepropertyboxlist.md)
-- [var kAudioHardwarePropertyDefaultInputDevice: AudioObjectPropertySelector](kaudiohardwarepropertydefaultinputdevice.md)
-- [var kAudioHardwarePropertyDefaultOutputDevice: AudioObjectPropertySelector](kaudiohardwarepropertydefaultoutputdevice.md)
-- [var kAudioHardwarePropertyDefaultSystemOutputDevice: AudioObjectPropertySelector](kaudiohardwarepropertydefaultsystemoutputdevice.md)
-- [var kAudioHardwarePropertyDevices: AudioObjectPropertySelector](kaudiohardwarepropertydevices.md)
-- [var kAudioHardwarePropertyHogModeIsAllowed: AudioObjectPropertySelector](kaudiohardwarepropertyhogmodeisallowed.md)
-- [var kAudioHardwarePropertyIsInitingOrExiting: AudioObjectPropertySelector](kaudiohardwarepropertyisinitingorexiting.md)
-- [var kAudioHardwarePropertyMixStereoToMono: AudioObjectPropertySelector](kaudiohardwarepropertymixstereotomono.md)
-- [var kAudioHardwarePropertyPlugInList: AudioObjectPropertySelector](kaudiohardwarepropertypluginlist.md)
-- [var kAudioHardwarePropertyPowerHint: AudioObjectPropertySelector](kaudiohardwarepropertypowerhint.md)
-- [var kAudioHardwarePropertyProcessIsAudible: AudioObjectPropertySelector](kaudiohardwarepropertyprocessisaudible.md)
-- [var kAudioHardwarePropertyProcessIsMaster: AudioObjectPropertySelector](kaudiohardwarepropertyprocessismaster.md)
-- [var kAudioHardwarePropertyServiceRestarted: AudioObjectPropertySelector](kaudiohardwarepropertyservicerestarted.md)
-- [var kAudioHardwarePropertyTranslateBundleIDToPlugIn: AudioObjectPropertySelector](kaudiohardwarepropertytranslatebundleidtoplugin.md)
-- [var kAudioHardwarePropertyTranslateBundleIDToTransportManager: AudioObjectPropertySelector](kaudiohardwarepropertytranslatebundleidtotransportmanager.md)
+### Constants
+- [var kAudioHardwarePropertyBoxList: AudioObjectPropertySelector](./kaudiohardwarepropertyboxlist.md)
+- [var kAudioHardwarePropertyDefaultInputDevice: AudioObjectPropertySelector](./kaudiohardwarepropertydefaultinputdevice.md)
+- [var kAudioHardwarePropertyDefaultOutputDevice: AudioObjectPropertySelector](./kaudiohardwarepropertydefaultoutputdevice.md)
+- [var kAudioHardwarePropertyDefaultSystemOutputDevice: AudioObjectPropertySelector](./kaudiohardwarepropertydefaultsystemoutputdevice.md)
+- [var kAudioHardwarePropertyDevices: AudioObjectPropertySelector](./kaudiohardwarepropertydevices.md)
+- [var kAudioHardwarePropertyHogModeIsAllowed: AudioObjectPropertySelector](./kaudiohardwarepropertyhogmodeisallowed.md)
+- [var kAudioHardwarePropertyIsInitingOrExiting: AudioObjectPropertySelector](./kaudiohardwarepropertyisinitingorexiting.md)
+- [var kAudioHardwarePropertyMixStereoToMono: AudioObjectPropertySelector](./kaudiohardwarepropertymixstereotomono.md)
+- [var kAudioHardwarePropertyPlugInList: AudioObjectPropertySelector](./kaudiohardwarepropertypluginlist.md)
+- [var kAudioHardwarePropertyPowerHint: AudioObjectPropertySelector](./kaudiohardwarepropertypowerhint.md)
+- [var kAudioHardwarePropertyProcessIsAudible: AudioObjectPropertySelector](./kaudiohardwarepropertyprocessisaudible.md)
+- [var kAudioHardwarePropertyProcessIsMaster: AudioObjectPropertySelector](./kaudiohardwarepropertyprocessismaster.md)
+- [var kAudioHardwarePropertyServiceRestarted: AudioObjectPropertySelector](./kaudiohardwarepropertyservicerestarted.md)
+- [var kAudioHardwarePropertyTranslateBundleIDToPlugIn: AudioObjectPropertySelector](./kaudiohardwarepropertytranslatebundleidtoplugin.md)
+- [var kAudioHardwarePropertyTranslateBundleIDToTransportManager: AudioObjectPropertySelector](./kaudiohardwarepropertytranslatebundleidtotransportmanager.md)
 
 
 ---

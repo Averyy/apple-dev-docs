@@ -1,7 +1,8 @@
 # propertySupportsAirPrint
 
 **Framework**: External Accessory  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The accessory indicates that it supports AirPrint.
 
@@ -19,11 +20,16 @@ The accessory indicates that it supports AirPrint.
 static var propertySupportsAirPrint: EAWiFiUnconfiguredAccessoryProperties { get }
 ```
 
+```c
+EAWiFiUnconfiguredAccessoryPropertySupportsAirPrint
+```
+
 ## See Also
 
-- [static var propertySupportsAirPlay: EAWiFiUnconfiguredAccessoryProperties](eawifiunconfiguredaccessoryproperties/propertysupportsairplay.md)
+### Getting the Accessory Properties
+- [static var propertySupportsAirPlay: EAWiFiUnconfiguredAccessoryProperties](./propertysupportsairplay.md)
   The accessory indicates that it supports AirPlay.
-- [static var propertySupportsHomeKit: EAWiFiUnconfiguredAccessoryProperties](eawifiunconfiguredaccessoryproperties/propertysupportshomekit.md)
+- [static var propertySupportsHomeKit: EAWiFiUnconfiguredAccessoryProperties](./propertysupportshomekit.md)
   The accessory indicates that it supports HomeKit.
 
 

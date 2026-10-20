@@ -1,7 +1,8 @@
 # OS_nw_proxy_config
 
 **Framework**: Network  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 12.0+
@@ -18,10 +19,14 @@
 protocol OS_nw_proxy_config : NSObjectProtocol
 ```
 
+```objc
+@protocol OS_nw_proxy_config <NSObject>
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

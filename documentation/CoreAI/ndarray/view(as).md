@@ -1,7 +1,8 @@
 # view(as:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a read-only, typed view of this array’s elements.
 
@@ -24,15 +25,16 @@ A read-only view of the array’s elements.
 
 ## Parameters
 
-- `type`: The Swift type that corresponds to this array’s [`scalarType`](ndarray/scalartype-swift.property.md). For example, pass `Int32.self` for an array with scalar type `.int32`.
+- `type`: The Swift type that corresponds to this array’s [`scalarType`](./scalartype-swift.property.md). For example, pass `Int32.self` for an array with scalar type `.int32`.
 
 ## See Also
 
-- [func mutableView<T>(as: T.Type) -> NDArray.MutableView<T>](ndarray/mutableview(as:).md)
+### Accessing elements
+- [func mutableView<T>(as: T.Type) -> NDArray.MutableView<T>](./mutableview%28as%29.md)
   Returns a mutable, typed view of this array’s elements.
-- [func rawView() -> NDArray.RawView](ndarray/rawview.md)
+- [func rawView() -> NDArray.RawView](./rawview%28%29.md)
   Returns a read-only, raw view of this array’s storage.
-- [func mutableRawView() -> NDArray.MutableRawView](ndarray/mutablerawview.md)
+- [func mutableRawView() -> NDArray.MutableRawView](./mutablerawview%28%29.md)
   Returns a mutable, raw view of this array’s storage.
 
 

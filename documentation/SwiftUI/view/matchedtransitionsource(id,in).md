@@ -1,7 +1,8 @@
 # matchedTransitionSource(id:in:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Identifies this view as the source of a navigation transition, such as a zoom transition.
 
@@ -24,15 +25,16 @@ func matchedTransitionSource(id: some Hashable, in namespace: Namespace.ID) -> s
 ## Parameters
 
 - `id`: The identifier, often derived from the identifier of the data being displayed by the view.
-- `namespace`: The namespace in which defines the `id`. New namespaces are created by adding an [`Namespace`](namespace.md) variable to a [`View`](view.md) type and reading its value in the view’s body method.
+- `namespace`: The namespace in which defines the `id`. New namespaces are created by adding an [`Namespace`](../namespace.md) variable to a [`View`](../view.md) type and reading its value in the view’s body method.
 
 ## See Also
 
-- [func matchedTransitionSource(id: some Hashable, in: Namespace.ID, configuration: (EmptyMatchedTransitionSourceConfiguration) -> some MatchedTransitionSourceConfiguration) -> some View](view/matchedtransitionsource(id:in:configuration:).md)
+### Defining matched transitions
+- [func matchedTransitionSource(id: some Hashable, in: Namespace.ID, configuration: (EmptyMatchedTransitionSourceConfiguration) -> some MatchedTransitionSourceConfiguration) -> some View](./matchedtransitionsource%28id,in,configuration%29.md)
   Identifies this view as the source of a navigation transition, such as a zoom transition.
-- [protocol MatchedTransitionSourceConfiguration](matchedtransitionsourceconfiguration.md)
+- [protocol MatchedTransitionSourceConfiguration](../matchedtransitionsourceconfiguration.md)
   A configuration that defines the appearance of a matched transition source.
-- [struct EmptyMatchedTransitionSourceConfiguration](emptymatchedtransitionsourceconfiguration.md)
+- [struct EmptyMatchedTransitionSourceConfiguration](../emptymatchedtransitionsourceconfiguration.md)
   An unstyled matched transition source configuration.
 
 

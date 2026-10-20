@@ -1,7 +1,8 @@
 # CKRecord.ID
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that uniquely identifies a record in a database.
 
@@ -10,7 +11,7 @@ An object that uniquely identifies a record in a database.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -18,6 +19,10 @@ An object that uniquely identifies a record in a database.
 
 ```swift
 class ID
+```
+
+```objc
+@interface CKRecordID : NSObject
 ```
 
 #### Overview
@@ -30,72 +35,73 @@ CloudKit generally creates record IDs when it first saves a new record, but you 
 
 Don’t subclass `CKRecordID`.
 
-##### Interacting with Record Ids
+##### Interacting with Record IDs
 
 After you create a `CKRecordID` object, interactions with that object typically involve creating a new record or retrieving an existing record from a database.
 
-You might also use record IDs when you can’t use a [`CKRecord.Reference`](ckrecord/reference.md) object to refer to a record. References are only valid within a single zone of a database. To refer to objects outside of the current zone or database, save the strings in the record’s `CKRecordID` and [`CKRecordZone.ID`](ckrecordzone/id.md) objects. When you want to retrieve the record later, use those strings to recreate the record and zone ID objects so that you can fetch the record.
+You might also use record IDs when you can’t use a [`CKRecord.Reference`](./reference.md) object to refer to a record. References are only valid within a single zone of a database. To refer to objects outside of the current zone or database, save the strings in the record’s `CKRecordID` and [`CKRecordZone.ID`](../ckrecordzone/id.md) objects. When you want to retrieve the record later, use those strings to recreate the record and zone ID objects so that you can fetch the record.
 
-###### Creating Record Ids for New Records
+###### Creating Record IDs for New Records
 
-To assign a custom record ID to a new record, you must create the `CKRecordID` object first. You need to know the intended name and zone information for that record, which might also require creating a [`CKRecordZone.ID`](ckrecordzone/id.md) object. After creating the record ID object, initialize your new record using its [`init(recordType:recordID:)`](ckrecord/init(recordtype:recordid:).md) method.
+To assign a custom record ID to a new record, you must create the `CKRecordID` object first. You need to know the intended name and zone information for that record, which might also require creating a [`CKRecordZone.ID`](../ckrecordzone/id.md) object. After creating the record ID object, initialize your new record using its [`init(recordType:recordID:)`](./init%28recordtype,recordid%29.md) method.
 
-###### Using Record Ids to Fetch Records
+###### Using Record IDs to Fetch Records
 
-Use a record ID to fetch the corresponding [`CKRecord`](ckrecord.md) object from a database quickly. You perform the fetch operation using a [`CKFetchRecordsOperation`](ckfetchrecordsoperation.md) object or the [`fetch(withRecordID:completionHandler:)`](ckdatabase/fetch(withrecordid:completionhandler:).md) method of the [`CKDatabase`](ckdatabase.md) class. In both cases, CloudKit returns the record asynchronously using the handler you provide.
+Use a record ID to fetch the corresponding [`CKRecord`](../ckrecord.md) object from a database quickly. You perform the fetch operation using a [`CKFetchRecordsOperation`](../ckfetchrecordsoperation.md) object or the [`fetch(withRecordID:completionHandler:)`](../ckdatabase/fetch%28withrecordid,completionhandler%29.md) method of the [`CKDatabase`](../ckdatabase.md) class. In both cases, CloudKit returns the record asynchronously using the handler you provide.
 
 ## Topics
 
 ### Creating a Record ID
-- [convenience init(recordName: String)](ckrecord/id/init(recordname:).md)
+- [convenience init(recordName: String)](./id/init%28recordname%29.md)
   Creates a new record ID with the specified name in the default zone.
-- [convenience init(recordName: String, zoneID: CKRecordZone.ID)](ckrecord/id/init(recordname:zoneid:).md)
+- [convenience init(recordName: String, zoneID: CKRecordZone.ID)](./id/init%28recordname,zoneid%29.md)
   Creates a new record ID with the specified name and zone information.
-- [let CKRecordNameZoneWideShare: String](ckrecordnamezonewideshare.md)
+- [let CKRecordNameZoneWideShare: String](../ckrecordnamezonewideshare.md)
   The name of a share record that manages a shared record zone.
 ### Getting the Record ID’s Name
-- [var recordName: String](ckrecord/id/recordname.md)
+- [var recordName: String](./id/recordname.md)
   The unique name of the record.
 ### Getting the Record ID’s Zone
-- [var zoneID: CKRecordZone.ID](ckrecord/id/zoneid.md)
+- [var zoneID: CKRecordZone.ID](./id/zoneid.md)
   The ID of the zone that contains the record.
 ### Initializers
-- [init?(coder: NSCoder)](ckrecord/id/init(coder:).md)
+- [init?(coder: NSCoder)](./id/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var recordID: CKRecord.ID](ckrecord/recordid.md)
+### Accessing the Record’s Metadata
+- [var recordID: CKRecord.ID](./recordid.md)
   The unique ID of the record.
-- [var recordType: CKRecord.RecordType](ckrecord/recordtype-6v7au.md)
+- [var recordType: CKRecord.RecordType](./recordtype-6v7au.md)
   The value that your app defines to identify the type of record.
-- [CKRecord.SystemType](ckrecord/systemtype.md)
+- [CKRecord.SystemType](./systemtype.md)
   Possible values for record types of system records.
-- [var creationDate: Date?](ckrecord/creationdate.md)
+- [var creationDate: Date?](./creationdate.md)
   The time when CloudKit first saves the record to the server.
-- [var creatorUserRecordID: CKRecord.ID?](ckrecord/creatoruserrecordid.md)
+- [var creatorUserRecordID: CKRecord.ID?](./creatoruserrecordid.md)
   The ID of the user who creates the record.
-- [var modificationDate: Date?](ckrecord/modificationdate.md)
+- [var modificationDate: Date?](./modificationdate.md)
   The most recent time that CloudKit saved the record to the server.
-- [var lastModifiedUserRecordID: CKRecord.ID?](ckrecord/lastmodifieduserrecordid.md)
+- [var lastModifiedUserRecordID: CKRecord.ID?](./lastmodifieduserrecordid.md)
   The ID of the user who most recently modified the record.
-- [var recordChangeTag: String?](ckrecord/recordchangetag.md)
+- [var recordChangeTag: String?](./recordchangetag.md)
   The server change token for the record.
 
 

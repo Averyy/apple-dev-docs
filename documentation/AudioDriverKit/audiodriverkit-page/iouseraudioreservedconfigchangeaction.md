@@ -1,7 +1,8 @@
 # IOUserAudioReservedConfigChangeAction
 
 **Framework**: AudioDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Identifiers for object state changes that require a configuration change.
 
@@ -10,18 +11,18 @@ Identifiers for object state changes that require a configuration change.
 
 ## Declaration
 
-```swift
+```c
 enum IOUserAudioReservedConfigChangeAction : uint64_t;
 ```
 
 ## Topics
 
 ### Configuration Change Identifiers
-- [RingBufferFrameSize](audiodriverkit/iouseraudioreservedconfigchangeaction/ringbufferframesize.md)
+- [RingBufferFrameSize](./iouseraudioreservedconfigchangeaction/ringbufferframesize.md)
   An indicator for a change to the ring buffer frame size.
-- [SampleRate](audiodriverkit/iouseraudioreservedconfigchangeaction/samplerate.md)
+- [SampleRate](./iouseraudioreservedconfigchangeaction/samplerate.md)
   An indicator for a change to the sample rate.
-- [StreamFormat](audiodriverkit/iouseraudioreservedconfigchangeaction/streamformat.md)
+- [StreamFormat](./iouseraudioreservedconfigchangeaction/streamformat.md)
   An indicator for a change to the stream format.
 
 

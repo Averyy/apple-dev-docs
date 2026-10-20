@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var iIOAbort: Int](iioabort.md)
-- [var iMemFullErr: Int](imemfullerr.md)
+- [var iIOAbort: Int](../../iioabort.md)
+- [var iMemFullErr: Int](../../imemfullerr.md)
 
 
 ---

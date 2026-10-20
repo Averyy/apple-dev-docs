@@ -1,7 +1,8 @@
 # cameras
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of active cameras.
 
@@ -19,13 +20,14 @@ final var cameras: LowLevelRenderer.CameraArray { get set }
 
 #### Discussion
 
-Set `cameras.count` to the number of active cameras before calling [`render(using:_:)`](lowlevelrenderer/render(using:_:).md)..
+Set `cameras.count` to the number of active cameras before calling [`render(using:_:)`](./render%28using,_%29.md)..
 
 ## See Also
 
-- [LowLevelRenderer.CameraArray](lowlevelrenderer/cameraarray.md)
+### Configuring cameras
+- [LowLevelRenderer.CameraArray](./cameraarray.md)
   A mutable, fixed-capacity array of camera values.
-- [LowLevelRenderer.Camera](lowlevelrenderer/camera.md)
+- [LowLevelRenderer.Camera](./camera.md)
   The view and projection parameters for a single camera.
 
 

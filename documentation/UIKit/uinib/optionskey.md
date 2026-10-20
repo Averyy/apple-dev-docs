@@ -1,16 +1,17 @@
 # UINib.OptionsKey
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that specify how to unarchive and instantiate the nib.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,27 +19,32 @@ Options that specify how to unarchive and instantiate the nib.
 struct OptionsKey
 ```
 
+```c
+typedef NSString * UINibOptionsKey;
+```
+
 ## Topics
 
 ### Keys
-- [static let externalObjects: UINib.OptionsKey](uinib/optionskey/externalobjects.md)
+- [static let externalObjects: UINib.OptionsKey](./optionskey/externalobjects.md)
   The replacements for any proxy objects in the nib file.
 ### Initializers
-- [init(rawValue: String)](uinib/optionskey/init(rawvalue:).md)
+- [init(rawValue: String)](./optionskey/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func instantiate(withOwner: Any?, options: [UINib.OptionsKey : Any]?) -> [Any]](uinib/instantiate(withowner:options:).md)
+### Retrieving objects from the nib file
+- [func instantiate(withOwner: Any?, options: [UINib.OptionsKey : Any]?) -> [Any]](./instantiate%28withowner,options%29.md)
   Unarchives and instantiates the in-memory contents of the nib object’s nib file, creating a distinct object tree and set of top-level objects.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a new instance by decoding from the given decoder.
@@ -28,6 +29,12 @@ This initializer throws an error if reading from the decoder fails, or if the da
 ## Parameters
 
 - `decoder`: The decoder to read data from.
+
+## Default Implementations
+
+### Decodable Implementations
+- [init(from: any Decoder) throws](./init%28from%29-8cbq4.md)
+  Creates a new vector by decoding scalars from the given decoder.
 
 
 ---

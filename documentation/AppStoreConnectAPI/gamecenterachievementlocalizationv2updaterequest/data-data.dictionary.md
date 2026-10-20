@@ -1,7 +1,8 @@
 # GameCenterAchievementLocalizationV2UpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,7 +11,7 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementLocalizationV2UpdateRequest.Data
 ```
 
@@ -23,14 +24,14 @@ object GameCenterAchievementLocalizationV2UpdateRequest.Data
 ## Topics
 
 ### Dictionaries
-- [object GameCenterAchievementLocalizationV2UpdateRequest.Data.Attributes](gamecenterachievementlocalizationv2updaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterAchievementLocalizationV2UpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The request body you use to modify a Game Center achievement localization update request.
 
 ## Properties
 
 - `attributes` (GameCenterAchievementLocalizationV2UpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterAchievementLocalizations`
 
 
 ---

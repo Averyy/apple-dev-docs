@@ -1,7 +1,8 @@
 # ColorSyncMutableProfile
 
 **Framework**: ColorSync  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reference to a mutable ICC color profile.
 
@@ -20,17 +21,22 @@ A reference to a mutable ICC color profile.
 class ColorSyncMutableProfile
 ```
 
+```c
+typedef struct ColorSyncProfile * ColorSyncMutableProfileRef;
+```
+
 ## Relationships
 
 ### Inherits From
-- [ColorSyncProfile](colorsyncprofile.md)
+- [ColorSyncProfile](./colorsyncprofile.md)
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [class ColorSyncProfile](colorsyncprofile.md)
+### Profiling objects
+- [class ColorSyncProfile](./colorsyncprofile.md)
   A reference to an immutable International Color Consortium (ICC) color profile.
 
 

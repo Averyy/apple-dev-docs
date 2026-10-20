@@ -1,14 +1,15 @@
 # kSENSE_KEY_VENDOR_SPECIFIC
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSENSE_KEY_VENDOR_SPECIFIC = 0x09
 ```
 

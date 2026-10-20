@@ -1,7 +1,8 @@
 # UICollectionViewDropProposal.Intent
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating how you intend to handle a drop.
 
@@ -17,33 +18,38 @@ Constants indicating how you intend to handle a drop.
 enum Intent
 ```
 
+```c
+enum UICollectionViewDropIntent : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UICollectionViewDropProposal.Intent.insertAtDestinationIndexPath](uicollectionviewdropproposal/intent-swift.enum/insertatdestinationindexpath.md)
+- [UICollectionViewDropProposal.Intent.insertAtDestinationIndexPath](./intent-swift.enum/insertatdestinationindexpath.md)
   Insert the dropped items at the specified index path.
-- [UICollectionViewDropProposal.Intent.insertIntoDestinationIndexPath](uicollectionviewdropproposal/intent-swift.enum/insertintodestinationindexpath.md)
+- [UICollectionViewDropProposal.Intent.insertIntoDestinationIndexPath](./intent-swift.enum/insertintodestinationindexpath.md)
   Incorporate the dropped items into the item at the specified index path.
-- [UICollectionViewDropProposal.Intent.unspecified](uicollectionviewdropproposal/intent-swift.enum/unspecified.md)
+- [UICollectionViewDropProposal.Intent.unspecified](./intent-swift.enum/unspecified.md)
   No drop proposal was specified.
 ### Initializers
-- [init?(rawValue: Int)](uicollectionviewdropproposal/intent-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./intent-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var intent: UICollectionViewDropProposal.Intent](uicollectionviewdropproposal/intent-swift.property.md)
+### Getting the Proposed Drop Location
+- [var intent: UICollectionViewDropProposal.Intent](./intent-swift.property.md)
   The option to use when incorporating the dropped items into your content.
-- [enum UIDropOperation](uidropoperation.md)
+- [enum UIDropOperation](../uidropoperation.md)
   Operation types that determine how a drag and drop activity resolves when the user drops a drag item.
 
 

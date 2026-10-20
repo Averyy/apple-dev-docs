@@ -1,7 +1,8 @@
 # AssistantSchemas.ReaderEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for app entities that describe documents.
 
@@ -23,18 +24,18 @@ protocol ReaderEntity : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var document: some AssistantSchemas.Entity](assistantschemas/readerentity/document.md)
+- [var document: some AssistantSchemas.Entity](./readerentity/document.md)
   The app entity describes a document.
-- [var page: some AssistantSchemas.Entity](assistantschemas/readerentity/page.md)
+- [var page: some AssistantSchemas.Entity](./readerentity/page.md)
   The app entity describes a page.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
-- [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
+- [AssistantSchema.EntitySchema](../assistantschema/entityschema.md)
+- [AssistantSchemas.EntitySchema](./entityschema.md)
 
 
 ---

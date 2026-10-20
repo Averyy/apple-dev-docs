@@ -1,7 +1,8 @@
 # ApplePayMerchandisingView
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -17,15 +18,15 @@
 ## Topics
 
 ### Initializers
-- [init(amount: Decimal, currency: Locale.Currency, region: Locale.Region, action: ApplePayMerchandisingAction, style: ApplePayMerchandisingStyle, partners: ApplePayMerchandisingPartnerConfiguration, fallback: () -> Fallback)](applepaymerchandisingview/init(amount:currency:region:action:style:partners:fallback:).md)
+- [init(amount: Decimal, currency: Locale.Currency, region: Locale.Region, action: ApplePayMerchandisingAction, style: ApplePayMerchandisingStyle, partners: ApplePayMerchandisingPartnerConfiguration, fallback: () -> Fallback)](./applepaymerchandisingview/init%28amount,currency,region,action,style,partners,fallback%29.md)
   Constructs a view displaying Pay Later Promotional information given a configuration
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 
 ---

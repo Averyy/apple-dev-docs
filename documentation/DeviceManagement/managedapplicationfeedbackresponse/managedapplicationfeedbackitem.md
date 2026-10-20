@@ -1,7 +1,8 @@
 # ManagedApplicationFeedbackResponse.ManagedApplicationFeedbackItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that contains a managed app’s feedback item.
 
@@ -15,14 +16,14 @@ A dictionary that contains a managed app’s feedback item.
 
 ## Declaration
 
-```swift
+```
 object ManagedApplicationFeedbackResponse.ManagedApplicationFeedbackItem
 ```
 
 ## Topics
 
 ### Objects
-- [object ManagedApplicationFeedbackResponse.ManagedApplicationFeedbackItem.Feedback](managedapplicationfeedbackresponse/managedapplicationfeedbackitem/feedback-data.dictionary.md)
+- [object ManagedApplicationFeedbackResponse.ManagedApplicationFeedbackItem.Feedback](./managedapplicationfeedbackitem/feedback-data.dictionary.md)
   A dictionary that contains a managed app’s feedback items.
 
 ## Properties
@@ -32,7 +33,8 @@ object ManagedApplicationFeedbackResponse.ManagedApplicationFeedbackItem
 
 ## See Also
 
-- [object ManagedApplicationFeedbackResponse.ErrorChainItem](managedapplicationfeedbackresponse/errorchainitem.md)
+### Objects
+- [object ManagedApplicationFeedbackResponse.ErrorChainItem](./errorchainitem.md)
   A dictionary that describes an error chain item.
 
 

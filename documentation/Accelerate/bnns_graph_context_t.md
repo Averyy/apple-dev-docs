@@ -1,7 +1,8 @@
 # bnns_graph_context_t
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that wraps a compiled graph object.
 
@@ -20,37 +21,42 @@ An object that wraps a compiled graph object.
 struct bnns_graph_context_t
 ```
 
+```c
+typedef struct { ... } bnns_graph_context_t;
+```
+
 #### Overview
 
-The [`bnns_graph_context_t`](bnns_graph_context_t.md) object wraps a [`bnns_graph_t`](bnns_graph_t.md) instance and adds mutable data storage. BNNS requires mutability to support dynamic shapes and other execution objects.
+The [`bnns_graph_context_t`](./bnns_graph_context_t.md) object wraps a [`bnns_graph_t`](./bnns_graph_t.md) instance and adds mutable data storage. BNNS requires mutability to support dynamic shapes and other execution objects.
 
-You must ensure that the underlying [`bnns_graph_t`](bnns_graph_t.md) instance remains valid throughout the lifetime of the context.
+You must ensure that the underlying [`bnns_graph_t`](./bnns_graph_t.md) instance remains valid throughout the lifetime of the context.
 
 ## Topics
 
 ### Initializing a context
-- [init()](bnns_graph_context_t/init.md)
+- [init()](./bnns_graph_context_t/init%28%29.md)
   Creates an empty graph context structure.
-- [init(data: UnsafeMutableRawPointer?, size: Int)](bnns_graph_context_t/init(data:size:).md)
+- [init(data: UnsafeMutableRawPointer?, size: Int)](./bnns_graph_context_t/init%28data,size%29.md)
   Creates a graph context structure from the specified opaque graph context object.
 ### Specifying a context’s properties
-- [var data: UnsafeMutableRawPointer?](bnns_graph_context_t/data.md)
+- [var data: UnsafeMutableRawPointer?](./bnns_graph_context_t/data.md)
   A pointer to the opaque graph context object.
-- [var size: Int](bnns_graph_context_t/size.md)
+- [var size: Int](./bnns_graph_context_t/size.md)
   The size, in bytes, of the opaque graph context object.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [func BNNSGraphContextMake(bnns_graph_t) -> bnns_graph_context_t](bnnsgraphcontextmake(_:).md)
+### Creating and destroying a context
+- [func BNNSGraphContextMake(bnns_graph_t) -> bnns_graph_context_t](./bnnsgraphcontextmake%28_%29.md)
   Returns an allocated and initialized graph context from the specified graph.
-- [func BNNSGraphContextMakeStreaming(bnns_graph_t, UnsafePointer<CChar>?, Int, UnsafePointer<BNNSTensor>?) -> bnns_graph_context_t](bnnsgraphcontextmakestreaming(_:_:_:_:).md)
+- [func BNNSGraphContextMakeStreaming(bnns_graph_t, UnsafePointer<CChar>?, Int, UnsafePointer<BNNSTensor>?) -> bnns_graph_context_t](./bnnsgraphcontextmakestreaming%28_,_,_,_%29.md)
   Returns an allocated and initialized graph context with streaming support from the specified graph.
-- [func BNNSGraphContextDestroy(bnns_graph_context_t)](bnnsgraphcontextdestroy(_:).md)
+- [func BNNSGraphContextDestroy(bnns_graph_context_t)](./bnnsgraphcontextdestroy%28_%29.md)
   Destroys the specified graph context.
 
 

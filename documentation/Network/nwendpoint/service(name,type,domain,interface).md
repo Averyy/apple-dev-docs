@@ -1,7 +1,8 @@
 # NWEndpoint.service(name:type:domain:interface:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An endpoint represented as a Bonjour service.
 
@@ -22,11 +23,12 @@ case service(name: String, type: String, domain: String, interface: NWInterface?
 
 ## See Also
 
-- [case hostPort(host: NWEndpoint.Host, port: NWEndpoint.Port)](nwendpoint/hostport(host:port:).md)
+### Endpoint Types
+- [case hostPort(host: NWEndpoint.Host, port: NWEndpoint.Port)](./hostport%28host,port%29.md)
   An endpoint represented as a host and port, with the host including both names and addresses.
-- [NWEndpoint.url(_:)](nwendpoint/url(_:).md)
+- [NWEndpoint.url(_:)](./url%28_%29.md)
   An endpoint represented as a URL, with host and port values inferred from the URL.
-- [case unix(path: String)](nwendpoint/unix(path:).md)
+- [case unix(path: String)](./unix%28path%29.md)
   An endpoint represented as a UNIX domain path.
 
 

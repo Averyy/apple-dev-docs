@@ -1,7 +1,8 @@
 # contentRatingRanking
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The rating for a video item.
 
@@ -10,7 +11,7 @@ The rating for a video item.
 
 ## Declaration
 
-```swift
+```
 attribute int contentRatingRanking;
 ```
 
@@ -20,9 +21,10 @@ The rating is a value from `0`-`1000`. This value corresponds to a specific rati
 
 ## See Also
 
-- [contentRatingDomain](mediaitem/1627422-contentratingdomain.md)
+### Rating Media Content
+- [contentRatingDomain](./api-1627422-contentratingdomain.md)
   The domain that the rating applies to.
-- [isExplicit](mediaitem/1627358-isexplicit.md)
+- [isExplicit](./api-1627358-isexplicit.md)
   A Boolean value indicating whether the item has explicit lyrics.
 
 

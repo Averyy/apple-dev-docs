@@ -1,7 +1,8 @@
 # select(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func select(with params: MTRMediaInputClusterSelectInputParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func select(with params: MTRMediaInputClusterSelectInputParams) async throws
+```
+
+```objc
+- (void) selectInputWithParams:(MTRMediaInputClusterSelectInputParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

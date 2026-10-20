@@ -1,18 +1,19 @@
 # column
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The column in the source file.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -24,7 +25,7 @@ var column: Int { get set }
 
 #### Discussion
 
-> **Note**: The value of this property must be greater than `0`.
+> **Precondition**: The value of this property must be greater than `0`.
 
 
 ---

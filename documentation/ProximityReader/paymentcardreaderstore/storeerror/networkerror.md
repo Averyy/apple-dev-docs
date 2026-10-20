@@ -1,7 +1,8 @@
 # PaymentCardReaderStore.StoreError.networkError
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user needs to be online to fetch or resolve a batch.
 

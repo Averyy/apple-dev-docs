@@ -1,19 +1,24 @@
 # loadedRemotely
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 static var loadedRemotely: AudioComponentInstantiationOptions { get }
+```
+
+```c
+kAudioComponentInstantiation_LoadedRemotely
 ```
 
 

@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the request.
 
@@ -14,17 +15,22 @@ A unique identifier for the request.
 var uuid: UUID { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUUID * UUID;
+```
+
 ## Mentions
 
-- [Supporting Single Sign-On in a Web Browser App](supporting-single-sign-on-in-a-web-browser-app.md)
+- [Supporting Single Sign-On in a Web Browser App](../supporting-single-sign-on-in-a-web-browser-app.md)
 
 ## See Also
 
-- [var url: URL](aswebauthenticationsessionrequest/url.md)
+### Interpreting a request
+- [var url: URL](./url.md)
   The web address the browser should use to perform the authentication request.
-- [var shouldUseEphemeralSession: Bool](aswebauthenticationsessionrequest/shoulduseephemeralsession.md)
+- [var shouldUseEphemeralSession: Bool](./shoulduseephemeralsession.md)
   A Boolean that indicates whether the browser should use a private browsing session.
-- [var additionalHeaderFields: [String : String]?](aswebauthenticationsessionrequest/additionalheaderfields.md)
+- [var additionalHeaderFields: [String : String]?](./additionalheaderfields.md)
   Additional headers to send when loading the initial URL.
 
 

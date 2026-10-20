@@ -1,7 +1,8 @@
 # VTTemporalNoiseFilterParameters
 
 **Framework**: Video Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Encapsulates the frame-level parameters necessary for processing a source frame using temporal noise-filter processor.
 
@@ -17,43 +18,48 @@ Encapsulates the frame-level parameters necessary for processing a source frame 
 class VTTemporalNoiseFilterParameters
 ```
 
+```objc
+@interface VTTemporalNoiseFilterParameters : NSObject
+```
+
 #### Overview
 
-This object is intended for sending input parameters into the `processWithParameters` method of the `VTFrameProcessor` class. Temporal noise-filter processor utilizes past and future reference frames, provided in presentation time order, to reduce noise from the source frame. The `previousFrameCount` and `nextFrameCount` properties in [`VTTemporalNoiseFilterConfiguration`](vttemporalnoisefilterconfiguration.md) represent the maximum number of past and future reference frames that the processor can use to achieve optimum noise reduction quality. The number of reference frames provided shall depend on their availability, but at a minimum, you must provide one reference frame, either past or future. The parameter `destinationFrame` stores the output frame that the processor returns to the caller upon the successful completion of the `processWithParameters` operation.
+This object is intended for sending input parameters into the `processWithParameters` method of the `VTFrameProcessor` class. Temporal noise-filter processor utilizes past and future reference frames, provided in presentation time order, to reduce noise from the source frame. The `previousFrameCount` and `nextFrameCount` properties in [`VTTemporalNoiseFilterConfiguration`](./vttemporalnoisefilterconfiguration.md) represent the maximum number of past and future reference frames that the processor can use to achieve optimum noise reduction quality. The number of reference frames provided shall depend on their availability, but at a minimum, you must provide one reference frame, either past or future. The parameter `destinationFrame` stores the output frame that the processor returns to the caller upon the successful completion of the `processWithParameters` operation.
 
 ## Topics
 
 ### Creating a parameters object
-- [init?(sourceFrame: VTFrameProcessorFrame, nextFrames: [VTFrameProcessorFrame], previousFrames: [VTFrameProcessorFrame], destinationFrame: VTFrameProcessorFrame, filterStrength: Float, hasDiscontinuity: Bool)](vttemporalnoisefilterparameters/init(sourceframe:nextframes:previousframes:destinationframe:filterstrength:hasdiscontinuity:).md)
+- [init?(sourceFrame: VTFrameProcessorFrame, nextFrames: [VTFrameProcessorFrame], previousFrames: [VTFrameProcessorFrame], destinationFrame: VTFrameProcessorFrame, filterStrength: Float, hasDiscontinuity: Bool)](./vttemporalnoisefilterparameters/init%28sourceframe,nextframes,previousframes,destinationframe,filterstrength,hasdiscontinuity%29.md)
   Creates a new `VTTemporalNoiseFilterParameters` object.
 ### Inspecting the parameters
-- [var sourceFrame: VTFrameProcessorFrame](vttemporalnoisefilterparameters/sourceframe.md)
+- [var sourceFrame: VTFrameProcessorFrame](./vttemporalnoisefilterparameters/sourceframe.md)
   Current source frame; must be non `nil`.
-- [var nextFrames: [VTFrameProcessorFrame]](vttemporalnoisefilterparameters/nextframes.md)
+- [var nextFrames: [VTFrameProcessorFrame]](./vttemporalnoisefilterparameters/nextframes.md)
   Future reference frames in presentation time order that you use to process the source frame.
-- [var previousFrames: [VTFrameProcessorFrame]](vttemporalnoisefilterparameters/previousframes.md)
+- [var previousFrames: [VTFrameProcessorFrame]](./vttemporalnoisefilterparameters/previousframes.md)
   Past reference frames in presentation time order that you use to process the source frame.
-- [var filterStrength: Float](vttemporalnoisefilterparameters/filterstrength.md)
+- [var filterStrength: Float](./vttemporalnoisefilterparameters/filterstrength.md)
   A parameter to control the strength of noise-filtering. The value can range from the minimum strength of 0.0 to the maximum strength of 1.0. Change in filter strength causes the processor to flush all frames in the queue prior to processing the source frame.
-- [var hasDiscontinuity: Bool](vttemporalnoisefilterparameters/hasdiscontinuity.md)
+- [var hasDiscontinuity: Bool](./vttemporalnoisefilterparameters/hasdiscontinuity.md)
   A Boolean that indicates sequence discontinuity, forcing the processor to reset prior to processing the source frame.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [VTFrameProcessorParameters](vtframeprocessorparameters.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [VTFrameProcessorParameters](./vtframeprocessorparameters.md)
 
 ## See Also
 
-- [class VTTemporalNoiseFilterConfiguration](vttemporalnoisefilterconfiguration.md)
+### Temporal noise filter
+- [class VTTemporalNoiseFilterConfiguration](./vttemporalnoisefilterconfiguration.md)
   A configuration object to initiate a frame processor and use temporal noise-filter processor.
 
 

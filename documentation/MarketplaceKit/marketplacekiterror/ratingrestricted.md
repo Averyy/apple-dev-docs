@@ -1,7 +1,8 @@
 # MarketplaceKitError.ratingRestricted
 
 **Framework**: MarketplaceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the requested app’s age rating is beyond that allowed for the device.
 
@@ -17,17 +18,18 @@ case ratingRestricted
 
 ## Mentions
 
-- [Providing age-rating appropriate content](providing-age-rating-appropriate-content.md)
+- [Providing age-rating appropriate content](../providing-age-rating-appropriate-content.md)
 
 #### Discussion
 
-For more information, see [`maximumAllowedAgeRating`](applibrary/maximumallowedagerating.md).
+For more information, see [`maximumAllowedAgeRating`](../applibrary/maximumallowedagerating.md).
 
 ## See Also
 
-- [MarketplaceKitError.ageRatingExceptionNotNeeded](marketplacekiterror/ageratingexceptionnotneeded.md)
+### Age-rating errors
+- [MarketplaceKitError.ageRatingExceptionNotNeeded](./ageratingexceptionnotneeded.md)
   An error that indicates the app requests an unnecessary age-rating exception.
-- [MarketplaceKitError.missingAgeRatingExceptionRequest](marketplacekiterror/missingageratingexceptionrequest.md)
+- [MarketplaceKitError.missingAgeRatingExceptionRequest](./missingageratingexceptionrequest.md)
   An error that indicates the app needs to request an age-rating exception.
 
 

@@ -1,7 +1,8 @@
 # init(rect:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a filter shape object with a rectangle.
 
@@ -17,6 +18,10 @@ Initializes a filter shape object with a rectangle.
 
 ```swift
 init(rect r: CGRect)
+```
+
+```objc
+- (instancetype) initWithRect:(CGRect) r;
 ```
 
 #### Return Value

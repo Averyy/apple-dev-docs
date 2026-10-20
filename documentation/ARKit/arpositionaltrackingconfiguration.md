@@ -1,7 +1,8 @@
 # ARPositionalTrackingConfiguration
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration that tracks only the device’s position in 3D space.
 
@@ -15,6 +16,10 @@ A configuration that tracks only the device’s position in 3D space.
 class ARPositionalTrackingConfiguration
 ```
 
+```objc
+@interface ARPositionalTrackingConfiguration : ARConfiguration
+```
+
 #### Overview
 
 Enables 6 degrees of freedom tracking of the iOS device by running the camera at lowest possible resolution and frame rate. Use this configuration when you don’t need to parse the camera feed, such as for example, virtual reality scenarios.
@@ -22,36 +27,37 @@ Enables 6 degrees of freedom tracking of the iOS device by running the camera at
 ## Topics
 
 ### Creating a Configuration
-- [init()](arpositionaltrackingconfiguration/init.md)
+- [init()](./arpositionaltrackingconfiguration/init%28%29.md)
   Creates a new positional tracking configuration.
-- [var initialWorldMap: ARWorldMap?](arpositionaltrackingconfiguration/initialworldmap.md)
+- [var initialWorldMap: ARWorldMap?](./arpositionaltrackingconfiguration/initialworldmap.md)
   The state from a previous AR session to attempt to resume with this session configuration.
 ### Detecting Real-World Surfaces
-- [var planeDetection: ARWorldTrackingConfiguration.PlaneDetection](arpositionaltrackingconfiguration/planedetection.md)
+- [var planeDetection: ARWorldTrackingConfiguration.PlaneDetection](./arpositionaltrackingconfiguration/planedetection.md)
   A value that specifies if and how the session automatically attempts to detect flat surfaces in the camera-captured image.
 
 ## Relationships
 
 ### Inherits From
-- [ARConfiguration](arconfiguration.md)
+- [ARConfiguration](./arconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Understanding World Tracking](understanding-world-tracking.md)
+### Spatial Tracking
+- [Understanding World Tracking](./understanding-world-tracking.md)
   Discover features and best practices for building rear-camera AR experiences.
-- [class ARWorldTrackingConfiguration](arworldtrackingconfiguration.md)
+- [class ARWorldTrackingConfiguration](./arworldtrackingconfiguration.md)
   A configuration that tracks the position of a device in relation to objects in the environment.
-- [class ARGeoTrackingConfiguration](argeotrackingconfiguration.md)
+- [class ARGeoTrackingConfiguration](./argeotrackingconfiguration.md)
   A configuration that tracks locations with GPS, map data, and a device’s compass.
-- [class AROrientationTrackingConfiguration](arorientationtrackingconfiguration.md)
+- [class AROrientationTrackingConfiguration](./arorientationtrackingconfiguration.md)
   A configuration that tracks only the device’s orientation using the rear-facing camera.
 
 

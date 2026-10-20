@@ -1,7 +1,8 @@
 # AudioQueuePause(_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Pauses audio playback or recording.
 
@@ -19,13 +20,17 @@ Pauses audio playback or recording.
 func AudioQueuePause(_ inAQ: AudioQueueRef) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioQueuePause(AudioQueueRef inAQ);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
 
 #### Discussion
 
-Pausing an audio queue does not affect buffers or reset the audio queue. To resume playback or recording, call [`AudioQueueStart(_:_:)`](audioqueuestart(_:_:).md).
+Pausing an audio queue does not affect buffers or reset the audio queue. To resume playback or recording, call [`AudioQueueStart(_:_:)`](./audioqueuestart%28_,_%29.md).
 
 ## Parameters
 
@@ -33,15 +38,16 @@ Pausing an audio queue does not affect buffers or reset the audio queue. To resu
 
 ## See Also
 
-- [func AudioQueueStart(AudioQueueRef, UnsafePointer<AudioTimeStamp>?) -> OSStatus](audioqueuestart(_:_:).md)
+### Controlling Audio Queues
+- [func AudioQueueStart(AudioQueueRef, UnsafePointer<AudioTimeStamp>?) -> OSStatus](./audioqueuestart%28_,_%29.md)
   Begins playing or recording audio.
-- [func AudioQueuePrime(AudioQueueRef, UInt32, UnsafeMutablePointer<UInt32>?) -> OSStatus](audioqueueprime(_:_:_:).md)
+- [func AudioQueuePrime(AudioQueueRef, UInt32, UnsafeMutablePointer<UInt32>?) -> OSStatus](./audioqueueprime%28_,_,_%29.md)
   Decodes enqueued buffers in preparation for playback.
-- [func AudioQueueFlush(AudioQueueRef) -> OSStatus](audioqueueflush(_:).md)
+- [func AudioQueueFlush(AudioQueueRef) -> OSStatus](./audioqueueflush%28_%29.md)
   Resets an audio queue’s decoder state.
-- [func AudioQueueStop(AudioQueueRef, Bool) -> OSStatus](audioqueuestop(_:_:).md)
+- [func AudioQueueStop(AudioQueueRef, Bool) -> OSStatus](./audioqueuestop%28_,_%29.md)
   Stops playing or recording audio.
-- [func AudioQueueReset(AudioQueueRef) -> OSStatus](audioqueuereset(_:).md)
+- [func AudioQueueReset(AudioQueueRef) -> OSStatus](./audioqueuereset%28_%29.md)
   Resets an audio queue.
 
 

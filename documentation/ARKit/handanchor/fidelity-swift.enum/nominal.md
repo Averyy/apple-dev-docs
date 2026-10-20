@@ -1,7 +1,8 @@
 # HandAnchor.Fidelity.nominal
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Nominal fidelity.
 

@@ -1,7 +1,8 @@
 # relinquishDevice()
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops receiving events from the racing wheel.
 
@@ -15,11 +16,16 @@ Stops receiving events from the racing wheel.
 func relinquishDevice()
 ```
 
+```objc
+- (void) relinquishDevice;
+```
+
 ## See Also
 
-- [func acquireDevice() throws](gcracingwheel/acquiredevice.md)
+### Getting events
+- [func acquireDevice() throws](./acquiredevice%28%29.md)
   Starts receiving events from the racing wheel.
-- [var isAcquired: Bool](gcracingwheel/isacquired.md)
+- [var isAcquired: Bool](./isacquired.md)
   A Boolean value that indicates whether the racing wheel sends events to the app.
 
 

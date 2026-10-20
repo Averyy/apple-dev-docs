@@ -1,7 +1,8 @@
 # userKeyInvalid
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 14.4+
@@ -12,10 +13,15 @@
 static var userKeyInvalid: ASAuthorizationProviderExtensionRequestOptions { get }
 ```
 
+```c
+ASAuthorizationProviderExtensionRequestOptionsUserKeyInvalid
+```
+
 ## See Also
 
-- [static var registrationDeviceKeyMigration: ASAuthorizationProviderExtensionRequestOptions](asauthorizationproviderextensionrequestoptions/registrationdevicekeymigration.md)
-- [static var registrationSharedDeviceKeys: ASAuthorizationProviderExtensionRequestOptions](asauthorizationproviderextensionrequestoptions/registrationshareddevicekeys.md)
+### Type Properties
+- [static var registrationDeviceKeyMigration: ASAuthorizationProviderExtensionRequestOptions](./registrationdevicekeymigration.md)
+- [static var registrationSharedDeviceKeys: ASAuthorizationProviderExtensionRequestOptions](./registrationshareddevicekeys.md)
 
 
 ---

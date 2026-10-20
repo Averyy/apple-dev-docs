@@ -1,17 +1,22 @@
 # originalString(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Return the string that consists of the precomposed Unicode characters.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func originalString(_ sender: Any!) -> NSAttributedString!
+```
+
+```objc
+- (NSAttributedString *) originalString:(id) sender;
 ```
 
 #### Return Value

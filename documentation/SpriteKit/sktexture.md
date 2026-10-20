@@ -1,18 +1,19 @@
 # SKTexture
 
 **Framework**: SpriteKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An image, decoded on the GPU, that can be used to render various SpriteKit objects.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,89 +21,94 @@ An image, decoded on the GPU, that can be used to render various SpriteKit objec
 class SKTexture
 ```
 
+```objc
+@interface SKTexture : NSObject
+```
+
 ## Mentions
 
-- [Getting Started with Sprite Nodes](getting-started-with-sprite-nodes.md)
-- [Loading and Using Textures](loading-and-using-textures.md)
-- [About Texture Atlases](about-texture-atlases.md)
-- [Maximizing Node Drawing Performance](maximizing-node-drawing-performance.md)
-- [Maximizing Texture Performance](maximizing-texture-performance.md)
-- [Preloading Textures into Memory](preloading-textures-into-memory.md)
+- [Getting Started with Sprite Nodes](./getting-started-with-sprite-nodes.md)
+- [Loading and Using Textures](./loading-and-using-textures.md)
+- [About Texture Atlases](./about-texture-atlases.md)
+- [Maximizing Node Drawing Performance](./maximizing-node-drawing-performance.md)
+- [Maximizing Texture Performance](./maximizing-texture-performance.md)
+- [Preloading Textures into Memory](./preloading-textures-into-memory.md)
 
 #### Overview
 
-An [`SKTexture`](sktexture.md) object is an image that can be applied to [`SKSpriteNode`](skspritenode.md) and [`SKShapeNode`](skshapenode.md) objects, particles created by an [`SKEmitterNode`](skemitternode.md) object, or tiles used in an [`SKTileMapNode`](sktilemapnode.md). A texture object manages the texture data and graphics resources that are needed to render the image. Most texture objects are created from source images stored in your app bundle—your game’s artwork. Once created, a texture object’s contents are immutable. Multiple sprites can share the same texture object, sharing a single resource.
+An [`SKTexture`](./sktexture.md) object is an image that can be applied to [`SKSpriteNode`](./skspritenode.md) and [`SKShapeNode`](./skshapenode.md) objects, particles created by an [`SKEmitterNode`](./skemitternode.md) object, or tiles used in an [`SKTileMapNode`](./sktilemapnode.md). A texture object manages the texture data and graphics resources that are needed to render the image. Most texture objects are created from source images stored in your app bundle—your game’s artwork. Once created, a texture object’s contents are immutable. Multiple sprites can share the same texture object, sharing a single resource.
 
 ##### Deallocating a Texture
 
-After a texture is loaded into the graphics hardware memory, it stays in memory until the referencing [`SKTexture`](sktexture.md) object is deleted. This means that between levels (or in a dynamic game), you may need to make sure a texture object is deleted. Delete a [`SKTexture`](sktexture.md) object by removing any strong references to it, including:
+After a texture is loaded into the graphics hardware memory, it stays in memory until the referencing [`SKTexture`](./sktexture.md) object is deleted. This means that between levels (or in a dynamic game), you may need to make sure a texture object is deleted. Delete a [`SKTexture`](./sktexture.md) object by removing any strong references to it, including:
 
-- All texture references from [`SKSpriteNode`](skspritenode.md) and [`SKEffectNode`](skeffectnode.md) objects in your game
+- All texture references from [`SKSpriteNode`](./skspritenode.md) and [`SKEffectNode`](./skeffectnode.md) objects in your game
 - Any strong references to the texture in your own code
-- An [`SKTextureAtlas`](sktextureatlas.md) object that was used to create the texture object
+- An [`SKTextureAtlas`](./sktextureatlas.md) object that was used to create the texture object
 
 ## Topics
 
 ### First Steps
-- [Loading and Using Textures](loading-and-using-textures.md)
+- [Loading and Using Textures](./loading-and-using-textures.md)
   Learn the basics about using textures in SpriteKit.
-- [Texture Initializers](texture-initializers.md)
+- [Texture Initializers](./texture-initializers.md)
   See the various ways to create and use textures in SpriteKit.
 ### Reading a Texture’s Size and Optional Source Location
-- [func size() -> CGSize](sktexture/size.md)
+- [func size() -> CGSize](./sktexture/size%28%29.md)
   Gets the size of the texture.
-- [func textureRect() -> CGRect](sktexture/texturerect.md)
+- [func textureRect() -> CGRect](./sktexture/texturerect%28%29.md)
   Gets a rectangle that defines the portion of the texture used to render its image.
 ### Configuring a Texture’s Behavior for Scaling
-- [var filteringMode: SKTextureFilteringMode](sktexture/filteringmode.md)
+- [var filteringMode: SKTextureFilteringMode](./sktexture/filteringmode.md)
   The filtering mode used when the size of a sprite drawn with the texture is not drawn at the texture’s native size.
-- [enum SKTextureFilteringMode](sktexturefilteringmode.md)
+- [enum SKTextureFilteringMode](./sktexturefilteringmode.md)
   Texture filtering modes to use when the texture is drawn in a size other than its native size.
-- [var usesMipmaps: Bool](sktexture/usesmipmaps.md)
+- [var usesMipmaps: Bool](./sktexture/usesmipmaps.md)
   A Boolean value that indicates whether the texture attempts to generate mipmaps.
 ### Getting a Texture’s Underlying Image
-- [func cgImage() -> CGImage](sktexture/cgimage.md)
+- [func cgImage() -> CGImage](./sktexture/cgimage%28%29.md)
   Returns the texture’s image data as a Quartz 2D image.
 ### Preloading a Texture for Performance
-- [Preloading Textures into Memory](preloading-textures-into-memory.md)
+- [Preloading Textures into Memory](./preloading-textures-into-memory.md)
   Decompress images ahead of time to avoid performance issues during gameplay.
-- [func preload(completionHandler: () -> Void)](sktexture/preload(completionhandler:).md)
+- [func preload(completionHandler: () -> Void)](./sktexture/preload%28completionhandler%29.md)
   Load texture data into memory, calling a completion handler after the task completes.
-- [class func preload([SKTexture], withCompletionHandler: () -> Void)](sktexture/preload(_:withcompletionhandler:).md)
+- [class func preload([SKTexture], withCompletionHandler: () -> Void)](./sktexture/preload%28_,withcompletionhandler%29.md)
   Load the data of multiple textures into memory.
 ### Instance Properties
-- [var customPlaygroundQuickLook: PlaygroundQuickLook](sktexture/customplaygroundquicklook.md)
+- [var customPlaygroundQuickLook: PlaygroundQuickLook](./sktexture/customplaygroundquicklook.md)
 ### Initializers
-- [convenience init(CGImage: CGImage)](sktexture/init(cgimage:)-4ypk.md)
-- [init?(coder: NSCoder)](sktexture/init(coder:).md)
-- [convenience init(rect: CGRect, inTexture: SKTexture)](sktexture/init(rect:intexture:).md)
+- [convenience init(CGImage: CGImage)](./sktexture/init%28cgimage%29-4ypk.md)
+- [init?(coder: NSCoder)](./sktexture/init%28coder%29.md)
+- [convenience init(rect: CGRect, inTexture: SKTexture)](./sktexture/init%28rect,intexture%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [SKMutableTexture](skmutabletexture.md)
+- [SKMutableTexture](./skmutabletexture.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Maximizing Texture Performance](maximizing-texture-performance.md)
+### Textures
+- [Maximizing Texture Performance](./maximizing-texture-performance.md)
   Speed up image display and enable more images to be displayed at one time.
-- [class SKTextureAtlas](sktextureatlas.md)
+- [class SKTextureAtlas](./sktextureatlas.md)
   A collection of textures optimized for storage and drawing performance.
-- [class SKMutableTexture](skmutabletexture.md)
+- [class SKMutableTexture](./skmutabletexture.md)
   A texture whose contents can be dynamically updated.
 
 

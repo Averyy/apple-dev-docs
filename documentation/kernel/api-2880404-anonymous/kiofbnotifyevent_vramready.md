@@ -1,14 +1,15 @@
 # kIOFBNotifyEvent_VRAMReady
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 kIOFBNotifyEvent_VRAMReady = (1ULL << 9)
 ```
 

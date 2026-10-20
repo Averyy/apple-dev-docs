@@ -1,7 +1,8 @@
 # formatted(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a locale-aware string representation of a measurement using the provided measurement format style.
 
@@ -20,13 +21,15 @@ Generates a locale-aware string representation of a measurement using the provid
 func formatted<S>(_ style: S) -> S.FormatOutput where S : FormatStyle, S.FormatInput == Measurement<UnitType>
 ```
 
+Available when `UnitType` inherits `Dimension`.
+
 #### Return Value
 
 A string, formatted according to the provided style.
 
 #### Discussion
 
-Use the [`formatted(_:)`](measurement/formatted(_:).md) method to create a string representation of a measurement using a custom measurement format style. You can specify the width of the unit name, the numeric formatting of the value, and the intended usage type of the measurement. You can use the [`Measurement.FormatStyle`](measurement/formatstyle.md) static factory method `measurement(width:usage:numberFormat:)` to create a custom format style as a parameter to the method, such as in the following example:
+Use the [`formatted(_:)`](./formatted%28_%29.md) method to create a string representation of a measurement using a custom measurement format style. You can specify the width of the unit name, the numeric formatting of the value, and the intended usage type of the measurement. You can use the [`Measurement.FormatStyle`](./formatstyle.md) static factory method `measurement(width:usage:numberFormat:)` to create a custom format style as a parameter to the method, such as in the following example:
 
 ```swift
 let temp = Measurement<UnitTemperature>(value: 38, unit: .celsius)
@@ -40,11 +43,12 @@ let formattedTemp = temp.formatted(.measurement(width: .wide, usage: .weather, n
 
 ## See Also
 
-- [func formatted() -> String](measurement/formatted.md)
+### Formatting a Measurement
+- [func formatted() -> String](./formatted%28%29.md)
   Generates a locale-aware string representation of a measurement using the default measurement format style.
-- [Measurement.FormatStyle](measurement/formatstyle.md)
+- [Measurement.FormatStyle](./formatstyle.md)
   A type that provides localized representations of measurements.
-- [Measurement.AttributedStyle](measurement/attributedstyle.md)
+- [Measurement.AttributedStyle](./attributedstyle.md)
   A type that provides localized representations of measurements with an attributed string.
 
 

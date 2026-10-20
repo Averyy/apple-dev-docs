@@ -1,6 +1,8 @@
 # Compressing an image using linear algebra
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Sample Code  
+**Download**: [CompressingAnImageUsingLinearAlgebra.zip](https://docs-assets.developer.apple.com/published/f3385c2aa082/CompressingAnImageUsingLinearAlgebra.zip)
 
 Reduce the storage size of an image using singular value decomposition (SVD).
 
@@ -10,21 +12,21 @@ Reduce the storage size of an image using singular value decomposition (SVD).
 
 #### Overview
 
-This sample code project decomposes an image into three factors using [`singular value decomposition`](https://developer.apple.comhttps://mathworld.wolfram.com/SingularValueDecomposition.html) (SVD). The sample compresses an image by computing the products of the factors submatrices. The image below shows two photographs. The first is the original image, and the second is the same image after the sample applies 10:1 compression:
+This sample code project decomposes an image into three factors using [singular value decomposition](https://mathworld.wolfram.com/SingularValueDecomposition.html) (SVD). The sample compresses an image by computing the products of the factors submatrices. The image below shows two photographs. The first is the original image, and the second is the same image after the sample applies 10:1 compression:
 
-![Two photographs. The first contains a grayscale image of some flowers. The second shows the same image after compression and shows some degradation and compression artifacts.](/images/com.apple.accelerate/accelerate-denoising.png)
+![Two photographs. The first contains a grayscale image of some flowers. The second shows the same image after compression and shows some degradation and compression artifacts.](https://developer.apple.com/tutorials/images/com.apple.accelerate/accelerate-denoising.png)
 
 Any *m* x *n* matrix, *A*, has an SVD factorization that decomposes it into three factors:
 
 - The *m* x *m*  matrix *U* that contains the left singular vectors of matrix *A*
-- The *m* x *n*  diagonal matrix *Σ* that contains the [`singular values`](https://developer.apple.comhttps://mathworld.wolfram.com/SingularValue.html) of matrix *A*, arranged in descending order
+- The *m* x *n*  diagonal matrix *Σ* that contains the [singular values](https://mathworld.wolfram.com/SingularValue.html) of matrix *A*, arranged in descending order
 - The *n* x *n*  transposed matrix *V* that contains the right singular vectors of matrix *A*
 
 The sample uses the Linear Algebra Package (LAPACK) function `sgesvdx_` to compute the SVD.
 
 The figure below shows the SVD of a 5 x 3 matrix:
 
-![A diagram showing the singular value decomposition of five-times-three matrix A into three-times-three matrix U multiplied by five-times-three diagonal matrix sigma multiplied by five-times-five transposed matrix V.](/images/com.apple.accelerate/accelerate-figure-1.png)
+![A diagram showing the singular value decomposition of five-times-three matrix A into three-times-three matrix U multiplied by five-times-three diagonal matrix sigma multiplied by five-times-five transposed matrix V.](https://developer.apple.com/tutorials/images/com.apple.accelerate/accelerate-figure-1.png)
 
 When matrix *A* contains image information, the magnitude of the singular values correlate to the visual significance of features in the image.
 
@@ -32,9 +34,9 @@ The sample reduces the storage size of the original image by returning the produ
 
 For example, if the diagonal elements of *Σ*  are `[2000, 1000, 24]` and you define `k` as `2`, the app keeps `[2000, 1000]` and discards `24`. The following figure shows the matrix multiply function for this example, where the first two singular values contain significant values:
 
-![A diagram showing the singular value decomposition of five-times-three matrix A into three-times-two matrix U multiplied by two-times-two diagonal matrix sigma multiplied by two-times-five transposed matrix V.](/images/com.apple.accelerate/accelerate-figure-2.png)
+![A diagram showing the singular value decomposition of five-times-three matrix A into three-times-two matrix U multiplied by two-times-two diagonal matrix sigma multiplied by two-times-five transposed matrix V.](https://developer.apple.com/tutorials/images/com.apple.accelerate/accelerate-figure-2.png)
 
-##### Create a Matrix From the Source Image
+##### Create a matrix from the source image
 
 The sample defines a `Matrix` structure that simplifies passing image data to Accelerate’s linear algebra libraries.
 
@@ -79,7 +81,7 @@ public struct Matrix {
 }
 ```
 
-The `Matrix` type provides an initializer that returns a new matrix that contains a 32-bit grayscale copy of the pixel values of a vImage buffer. The `init(cgImage:)` function passes `kvImageNoAllocate` to [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](vimagebuffer_initwithcgimage(_:_:_:_:_:).md) and uses the matrix’s memory allocation. This ensures that there are no extra bytes at the end of each row. See “Create floating point pixels to use with vDSP” in [`Finding the sharpest image in a sequence of captured images`](finding-the-sharpest-image-in-a-sequence-of-captured-images.md) for more information on row byte padding.
+The `Matrix` type provides an initializer that returns a new matrix that contains a 32-bit grayscale copy of the pixel values of a vImage buffer. The `init(cgImage:)` function passes `kvImageNoAllocate` to [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](./vimagebuffer_initwithcgimage%28_,_,_,_,_%29.md) and uses the matrix’s memory allocation. This ensures that there are no extra bytes at the end of each row. See “Create floating point pixels to use with vDSP” in [Finding the sharpest image in a sequence of captured images](./finding-the-sharpest-image-in-a-sequence-of-captured-images.md) for more information on row byte padding.
 
 ```swift
 /// The 32-bit planar image format that the `Matrix` type uses to
@@ -132,7 +134,7 @@ guard
 }
 ```
 
-##### Create the Factor Matrices
+##### Create the factor matrices
 
 The `Matrix` type provides an initializer that returns a new zero-filled matrix.
 
@@ -171,7 +173,7 @@ let vt = Matrix(rowCount: k,
                 columnCount: a.columnCount )
 ```
 
-##### Define the Svd Options
+##### Define the SVD options
 
 The sample requires fully populated *U* and *Vᵀ* matrices, and defines the `JOBU` and `JOBVT` parameters that it passes to `sgesvdx_` as `V`. In order to specify that `sgesvdx_` returns a specified number of singular values, the sample defines the `RANGE` parameter as `I`.
 
@@ -181,7 +183,7 @@ var JOBVT = Int8("V".utf8.first!)
 var RANGE = Int8("I".utf8.first!)
 ```
 
-##### Create the Workspaces
+##### Create the workspaces
 
 Before computing the SVD, the sample performs a workspace query to calculate the optimal size of the workspace that `sgesvdx_` requires. The following code specifies `LWORK` as `-1` and passes a pointer to a single `Float` to the `WORK` parameter.
 
@@ -224,9 +226,9 @@ defer {
 }
 ```
 
-##### Use Lapack to Compute the Svd
+##### Use LAPACK to compute the SVD
 
-To avoid multiple nested calls to [`withUnsafePointer(to:_:)`](https://developer.apple.com/documentation/swift/withunsafepointer(to:_:)-35wrn), the sample declares variables that shadow some of the matrix properties to pass to the SVD routine as [`UnsafePointer`](https://developer.apple.com/documentation/swift/unsafepointer) structures.
+To avoid multiple nested calls to [`withUnsafePointer(to:_:)`](../Swift/withunsafepointer%28to,_%29-35wrn.md), the sample declares variables that shadow some of the matrix properties to pass to the SVD routine as [`UnsafePointer`](../Swift/unsafepointer.md) structures.
 
 ```swift
 var m = __LAPACK_int(a.m)
@@ -275,7 +277,7 @@ sgesvdx_(&JOBU,
 
 On return, the matrices `sigma`, `u`, and `vt` contain the SVD result.
 
-##### Convert the Singular Values Vector to a Matrix
+##### Convert the singular values vector to a matrix
 
 The `sgesvdx_` function computes the singular values as a vector. To convert the vector of `k` diagonal values to a `k * k` diagonal matrix, the `Matrix` type provides an initializer that returns a new matrix from diagonal values.
 
@@ -307,9 +309,9 @@ let sigma = Matrix(diagonal: svdResult.sigma.data,
 
 ```
 
-##### Multiply the Factors
+##### Multiply the factors
 
-The `Matrix` type provides a static function that wraps [`cblas_sgemm(_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](cblas_sgemm(_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md) to multiply two matrices.
+The `Matrix` type provides a static function that wraps [`cblas_sgemm(_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](./cblas_sgemm%28_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md) to multiply two matrices.
 
 ```swift
 public static func multiply(a: Matrix,
@@ -350,9 +352,9 @@ Matrix.multiply(a: u_sigma,
                 c: u_sigma_vt)
 ```
 
-##### Create a Core Graphics Image From the Product of the Factors
+##### Create a Core Graphics image from the product of the factors
 
-The `cgImage` computed property returns a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance from a matrix’s data. The computed property creates a temporary vImage buffer that shares its data with the matrix and uses the same planar 32-bit [`vImage_CGImageFormat`](vimage_cgimageformat.md) that the `init(cgImage:)` initializer uses to convert a Core Graphics image to a matrix.
+The `cgImage` computed property returns a [`CGImage`](../CoreGraphics/cgimage.md) instance from a matrix’s data. The computed property creates a temporary vImage buffer that shares its data with the matrix and uses the same planar 32-bit [`vImage_CGImageFormat`](./vimage_cgimageformat.md) that the `init(cgImage:)` initializer uses to convert a Core Graphics image to a matrix.
 
 ```swift
 /// Returns a 32-bit per pixel, grayscale `CGImage`instance of the matrix's data.
@@ -370,11 +372,12 @@ public var cgImage: CGImage? {
 
 ## See Also
 
-- [Solving systems of linear equations with LAPACK](solving-systems-of-linear-equations-with-lapack.md)
+### Linear Algebra
+- [Solving systems of linear equations with LAPACK](./solving-systems-of-linear-equations-with-lapack.md)
   Select the optimal LAPACK routine to solve a system of linear equations.
-- [Finding an interpolating polynomial using the Vandermonde method](finding-an-interpolating-polynomial-using-the-vandermonde-method.md)
+- [Finding an interpolating polynomial using the Vandermonde method](./finding-an-interpolating-polynomial-using-the-vandermonde-method.md)
   Use LAPACK to solve a linear system and find an interpolating polynomial to construct new points between a series of known data points.
-- [BLAS](blas-library.md)
+- [BLAS](./blas-library.md)
   Perform common linear algebra operations with Apple’s implementation of the Basic Linear Algebra Subprograms (BLAS).
 
 

@@ -1,12 +1,15 @@
 # init(showsMenuIndicator:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a borderless button menu style, specifying whether to show a visual menu indicator.
 
 **Availability**:
-- macOS 11.0+
+- macOS 11.0+ - Deprecated in 12.0
+
+> **Deprecated**: Use [`menuIndicator(_:)`](../view/menuindicator%28_%29.md) instead.
 
 ## Declaration
 
@@ -21,7 +24,8 @@ init(showsMenuIndicator: Bool)
 
 ## See Also
 
-- [init()](borderlessbuttonmenustyle/init.md)
+### Creating a bordeless button menu style
+- [init()](./init%28%29.md)
   Creates a borderless button menu style.
 
 

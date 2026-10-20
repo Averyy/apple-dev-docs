@@ -1,12 +1,13 @@
 # ABAddRecordsError
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The records could not be added.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,28 @@ The records could not be added.
 var ABAddRecordsError: Int { get }
 ```
 
+```c
+ABAddRecordsError
+```
+
 #### Discussion
 
-- [`ABAddRecordsError`](abaddrecordserror.md)
-- [`ABPropertyReadOnlyError`](abpropertyreadonlyerror.md)
-- [`ABPropertyUnsupportedBySourceError`](abpropertyunsupportedbysourceerror.md)
-- [`ABPropertyValueValidationError`](abpropertyvaluevalidationerror.md)
-- [`ABRemoveRecordsError`](abremoverecordserror.md)
+- [`ABAddRecordsError`](./abaddrecordserror.md)
+- [`ABPropertyReadOnlyError`](./abpropertyreadonlyerror.md)
+- [`ABPropertyUnsupportedBySourceError`](./abpropertyunsupportedbysourceerror.md)
+- [`ABPropertyValueValidationError`](./abpropertyvaluevalidationerror.md)
+- [`ABRemoveRecordsError`](./abremoverecordserror.md)
 
 ## See Also
 
-- [var ABRemoveRecordsError: Int](abremoverecordserror.md)
+### Constants
+- [var ABRemoveRecordsError: Int](./abremoverecordserror.md)
   The records could not be removed.
-- [var ABPropertyValueValidationError: Int](abpropertyvaluevalidationerror.md)
+- [var ABPropertyValueValidationError: Int](./abpropertyvaluevalidationerror.md)
   The property value is not valid.
-- [var ABPropertyUnsupportedBySourceError: Int](abpropertyunsupportedbysourceerror.md)
+- [var ABPropertyUnsupportedBySourceError: Int](./abpropertyunsupportedbysourceerror.md)
   The property is not supported by the source.
-- [var ABPropertyReadOnlyError: Int](abpropertyreadonlyerror.md)
+- [var ABPropertyReadOnlyError: Int](./abpropertyreadonlyerror.md)
   The property is read-only.
 
 

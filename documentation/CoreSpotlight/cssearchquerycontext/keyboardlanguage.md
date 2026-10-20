@@ -1,7 +1,8 @@
 # keyboardLanguage
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language used for the query.
 
@@ -18,13 +19,18 @@ The language used for the query.
 var keyboardLanguage: String? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSString * keyboardLanguage;
+```
+
 ## See Also
 
-- [var fetchAttributes: [String]](cssearchquerycontext/fetchattributes.md)
+### Configuring search behavior
+- [var fetchAttributes: [String]](./fetchattributes.md)
   The attributes the system fetches for the searchable items.
-- [var sourceOptions: CSSearchQueryContext.SourceOptions](cssearchquerycontext/sourceoptions-swift.property.md)
+- [var sourceOptions: CSSearchQueryContext.SourceOptions](./sourceoptions-swift.property.md)
   The query source options to allow or deny Mail messages in the search.
-- [CSSearchQueryContext.SourceOptions](cssearchquerycontext/sourceoptions-swift.struct.md)
+- [CSSearchQueryContext.SourceOptions](./sourceoptions-swift.struct.md)
   The query source options to allow or deny Mail messages in the search.
 
 

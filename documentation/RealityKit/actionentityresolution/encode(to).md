@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the action entity resolution data into an encoder.
 
@@ -21,7 +22,7 @@ func encode(to encoder: any Encoder) throws
 
 #### Discussion
 
-If the value fails to encode anything, `encoder` will encode an empty keyed container. This function throws an [`Error`](https://developer.apple.com/documentation/swift/error) if any values are invalid for the given encoder’s format.
+If the value fails to encode anything, `encoder` will encode an empty keyed container. This function throws an [`Error`](../../Swift/error.md) if any values are invalid for the given encoder’s format.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # AppClipHeaderImage
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The image displayed on the App Clip card for a default App Clip experience, uploaded as part of App Clip configuration.
 
@@ -10,16 +11,16 @@ The image displayed on the App Clip card for a default App Clip experience, uplo
 
 ## Declaration
 
-```swift
+```
 object AppClipHeaderImage
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipHeaderImage.Attributes](appclipheaderimage/attributes-data.dictionary.md)
+- [object AppClipHeaderImage.Attributes](./appclipheaderimage/attributes-data.dictionary.md)
   The attributes that describe the image that appears on the App Clip card of a default App Clip experience.
-- [object AppClipHeaderImage.Relationships](appclipheaderimage/relationships-data.dictionary.md)
+- [object AppClipHeaderImage.Relationships](./appclipheaderimage/relationships-data.dictionary.md)
   The relationships of the App Clip Header Images resource you included in the request and those on which you can operate.
 
 ## Properties
@@ -30,13 +31,16 @@ object AppClipHeaderImage
 - `relationships` (AppClipHeaderImage.Relationships): The navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `appClipHeaderImages`
+
 ## See Also
 
-- [object AppClipHeaderImageResponse](appclipheaderimageresponse.md)
+### Objects
+- [object AppClipHeaderImageResponse](./appclipheaderimageresponse.md)
   A response containing a single header image for a default App Clip experience.
-- [object AppClipHeaderImageCreateRequest](appclipheaderimagecreaterequest.md)
+- [object AppClipHeaderImageCreateRequest](./appclipheaderimagecreaterequest.md)
   The request body you use to reserve an image asset that appears on the App Clip card of a default App Clip experience.
-- [object AppClipHeaderImageUpdateRequest](appclipheaderimageupdaterequest.md)
+- [object AppClipHeaderImageUpdateRequest](./appclipheaderimageupdaterequest.md)
   The request body you use to commit the image asset for a default App Clip experience.
 
 

@@ -1,7 +1,8 @@
 # hasSameAddress(as:)
 
 **Framework**: Core MIDI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares this host instance with another to see if they share the same address value.
 
@@ -16,6 +17,10 @@ Compares this host instance with another to see if they share the same address v
 
 ```swift
 func hasSameAddress(as other: MIDINetworkHost) -> Bool
+```
+
+```objc
+- (BOOL) hasSameAddressAs:(MIDINetworkHost *) other;
 ```
 
 #### Return Value

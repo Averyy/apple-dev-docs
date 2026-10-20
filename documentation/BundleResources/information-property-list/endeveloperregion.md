@@ -1,7 +1,8 @@
 # ENDeveloperRegion
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A string that specifies the region that the app supports.
 
@@ -9,9 +10,10 @@ A string that specifies the region that the app supports.
 - iOS 13.7+
 - iPadOS 13.7+
 
+## Details
 
-
-**Type**: string
+- **Name**: `ENDeveloperRegion`
+- **Type**: string
 
 #### Discussion
 
@@ -21,7 +23,8 @@ All ExposureNotification apps must specify the region for which they work by add
 
 ## See Also
 
-- [ENAPIVersion](information-property-list/enapiversion.md)
+### Exposure notification
+- [ENAPIVersion](./enapiversion.md)
   A number that specifies the version of the API to use.
 
 

@@ -1,7 +1,8 @@
 # activate()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Activates the listener.
 
@@ -20,21 +21,26 @@ Activates the listener.
 func activate()
 ```
 
+```objc
+- (void) activate;
+```
+
 #### Discussion
 
-Connections start in an inactive state. You must call [`activate()`](nsxpclistener/activate().md) on a connection before it can send or receive any messages.
+Connections start in an inactive state. You must call [`activate()`](./activate%28%29.md) on a connection before it can send or receive any messages.
 
-Calling [`activate()`](nsxpclistener/activate().md) on an active connection has no effect.
+Calling [`activate()`](./activate%28%29.md) on an active connection has no effect.
 
-For backward compatibility reasons, calling [`resume()`](nsxpclistener/resume().md) on an inactive and otherwise not suspended [`NSXPCListener`](nsxpclistener.md) has the same effect as calling [`activate()`](nsxpclistener/activate().md). For new code, prefer [`activate()`](nsxpclistener/activate().md).
+For backward compatibility reasons, calling [`resume()`](./resume%28%29.md) on an inactive and otherwise not suspended [`NSXPCListener`](../nsxpclistener.md) has the same effect as calling [`activate()`](./activate%28%29.md). For new code, prefer [`activate()`](./activate%28%29.md).
 
 ## See Also
 
-- [func resume()](nsxpclistener/resume.md)
+### Managing connection state
+- [func resume()](./resume%28%29.md)
   Starts processing of incoming requests.
-- [func invalidate()](nsxpclistener/invalidate.md)
+- [func invalidate()](./invalidate%28%29.md)
   Invalidates the listener.
-- [func suspend()](nsxpclistener/suspend.md)
+- [func suspend()](./suspend%28%29.md)
   Suspends the listener.
 
 

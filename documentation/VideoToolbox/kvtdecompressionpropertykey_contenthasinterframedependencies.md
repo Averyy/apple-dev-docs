@@ -1,7 +1,8 @@
 # kVTDecompressionPropertyKey_ContentHasInterframeDependencies
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An optional Boolean property indicating if the content being decoded has interframe dependencies, if the decoder knows.
 
@@ -17,6 +18,10 @@ An optional Boolean property indicating if the content being decoded has interfr
 
 ```swift
 let kVTDecompressionPropertyKey_ContentHasInterframeDependencies: CFString
+```
+
+```c
+extern CFStringRef const kVTDecompressionPropertyKey_ContentHasInterframeDependencies;
 ```
 
 #### Discussion

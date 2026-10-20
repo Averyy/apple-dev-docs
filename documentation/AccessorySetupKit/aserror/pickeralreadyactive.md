@@ -1,7 +1,8 @@
 # pickerAlreadyActive
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,7 +16,8 @@ static var pickerAlreadyActive: ASError.Code { get }
 
 ## See Also
 
-- [static var pickerRestricted: ASError.Code](aserror/pickerrestricted.md)
+### Picker errors
+- [static var pickerRestricted: ASError.Code](./pickerrestricted.md)
 
 
 ---

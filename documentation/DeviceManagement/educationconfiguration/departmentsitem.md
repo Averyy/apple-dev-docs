@@ -1,7 +1,8 @@
 # EducationConfiguration.DepartmentsItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 A department in the organization.
 
@@ -13,7 +14,7 @@ A department in the organization.
 
 ## Declaration
 
-```swift
+```
 object EducationConfiguration.DepartmentsItem
 ```
 
@@ -24,11 +25,12 @@ object EducationConfiguration.DepartmentsItem
 
 ## See Also
 
-- [object EducationConfiguration.DeviceGroupsItem](educationconfiguration/devicegroupsitem.md)
+### Objects
+- [object EducationConfiguration.DeviceGroupsItem](./devicegroupsitem.md)
   A device group in the organization.
-- [object EducationConfiguration.GroupsItem](educationconfiguration/groupsitem.md)
+- [object EducationConfiguration.GroupsItem](./groupsitem.md)
   An array of dictionaries defining groups.
-- [object EducationConfiguration.UsersItem](educationconfiguration/usersitem.md)
+- [object EducationConfiguration.UsersItem](./usersitem.md)
   A user in the organization.
 
 

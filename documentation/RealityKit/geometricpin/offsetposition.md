@@ -1,7 +1,8 @@
 # offsetPosition
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Offset from the pin’s base position.
 

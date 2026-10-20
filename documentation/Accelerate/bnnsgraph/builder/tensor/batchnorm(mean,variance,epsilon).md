@@ -1,7 +1,8 @@
 # batchNorm(mean:variance:epsilon:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a batch normalization operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a batch normalization operation to the current graph.
 ```swift
 func batchNorm(mean: some BNNSGraph.Builder.OperationParameter<T>, variance: some BNNSGraph.Builder.OperationParameter<T>, epsilon: Float = .ulpOfOne.squareRoot()) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

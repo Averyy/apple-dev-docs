@@ -1,7 +1,8 @@
 # ASAuthorizationWebBrowserPublicKeyCredentialManager
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that you use to request access to a person’s passkeys in a web browser, and that reports on the access status.
 
@@ -17,47 +18,52 @@ A class that you use to request access to a person’s passkeys in a web browser
 class ASAuthorizationWebBrowserPublicKeyCredentialManager
 ```
 
+```objc
+@interface ASAuthorizationWebBrowserPublicKeyCredentialManager : NSObject
+```
+
 ## Mentions
 
-- [Authenticating people by using passkeys in browser apps](authenticating-people-by-using-passkeys-in-browser-apps.md)
+- [Authenticating people by using passkeys in browser apps](./authenticating-people-by-using-passkeys-in-browser-apps.md)
 
 ## Topics
 
 ### Creating credential managers
-- [init()](asauthorizationwebbrowserpublickeycredentialmanager/init.md)
+- [init()](./asauthorizationwebbrowserpublickeycredentialmanager/init%28%29.md)
   Initializes a credential manager.
 ### Requesting access to passkeys
-- [var authorizationStateForPlatformCredentials: ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState](asauthorizationwebbrowserpublickeycredentialmanager/authorizationstateforplatformcredentials.md)
+- [var authorizationStateForPlatformCredentials: ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState](./asauthorizationwebbrowserpublickeycredentialmanager/authorizationstateforplatformcredentials.md)
   Returns a value that indicates whether the browser app has access to a person’s passkeys.
-- [func requestAuthorizationForPublicKeyCredentials((ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState) -> Void)](asauthorizationwebbrowserpublickeycredentialmanager/requestauthorizationforpublickeycredentials(_:).md)
+- [func requestAuthorizationForPublicKeyCredentials((ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState) -> Void)](./asauthorizationwebbrowserpublickeycredentialmanager/requestauthorizationforpublickeycredentials%28_%29.md)
   Requests a person’s permission to use their passkeys.
-- [ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState](asauthorizationwebbrowserpublickeycredentialmanager/authorizationstate.md)
+- [ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState](./asauthorizationwebbrowserpublickeycredentialmanager/authorizationstate.md)
   An enumeration of values that indicate whether the browser app has access to a person’s passkeys.
 ### Using passkeys
-- [func platformCredentials(forRelyingParty: String) async -> [ASAuthorizationWebBrowserPlatformPublicKeyCredential]](asauthorizationwebbrowserpublickeycredentialmanager/platformcredentials(forrelyingparty:).md)
+- [func platformCredentials(forRelyingParty: String) async -> [ASAuthorizationWebBrowserPlatformPublicKeyCredential]](./asauthorizationwebbrowserpublickeycredentialmanager/platformcredentials%28forrelyingparty%29.md)
   Gets a list of passkeys available for authenticating with the given relying party.
-- [struct ASAuthorizationWebBrowserPlatformPublicKeyCredential](asauthorizationwebbrowserplatformpublickeycredential-swift.struct.md)
+- [struct ASAuthorizationWebBrowserPlatformPublicKeyCredential](./asauthorizationwebbrowserplatformpublickeycredential-swift.struct.md)
   A structure that describes a passkey stored in the keychain, or managed by a third-party credential manager.
 ### Type Properties
-- [class var isDeviceConfiguredForPasskeys: Bool](asauthorizationwebbrowserpublickeycredentialmanager/isdeviceconfiguredforpasskeys.md)
+- [class var isDeviceConfiguredForPasskeys: Bool](./asauthorizationwebbrowserpublickeycredentialmanager/isdeviceconfiguredforpasskeys.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Authenticating people by using passkeys in browser apps](authenticating-people-by-using-passkeys-in-browser-apps.md)
+### Website authorization
+- [Authenticating people by using passkeys in browser apps](./authenticating-people-by-using-passkeys-in-browser-apps.md)
   Provide a secure and convenient alternative to passwords.
 
 

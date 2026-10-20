@@ -1,7 +1,8 @@
 # CVImageCleanAperture
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An image’s clean aperture is a region of video to display.
 
@@ -28,42 +29,43 @@ This represents a rectangle within the image that’s free from transition artif
 ## Topics
 
 ### Initializers
-- [init(width: Float, height: Float, horizontalOffset: Float, verticalOffset: Float)](cvimagecleanaperture/init(width:height:horizontaloffset:verticaloffset:).md)
+- [init(width: Float, height: Float, horizontalOffset: Float, verticalOffset: Float)](./cvimagecleanaperture/init%28width,height,horizontaloffset,verticaloffset%29.md)
 ### Instance Properties
-- [var height: Float](cvimagecleanaperture/height.md)
+- [var height: Float](./cvimagecleanaperture/height.md)
   Height of the clean aperture.
-- [var horizontalOffset: Float](cvimagecleanaperture/horizontaloffset.md)
+- [var horizontalOffset: Float](./cvimagecleanaperture/horizontaloffset.md)
   Horizontal offset from the center of the image buffer.
-- [var verticalOffset: Float](cvimagecleanaperture/verticaloffset.md)
+- [var verticalOffset: Float](./cvimagecleanaperture/verticaloffset.md)
   Vertical offset from the center of the image buffer.
-- [var width: Float](cvimagecleanaperture/width.md)
+- [var width: Float](./cvimagecleanaperture/width.md)
   Width of the clean aperture.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [CVAttachmentValueRepresentable](cvattachmentvaluerepresentable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [CVAttachmentValueRepresentable](./cvattachmentvaluerepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [typealias CVImageBuffer](cvimagebuffer.md)
+### Data types
+- [typealias CVImageBuffer](./cvimagebuffer.md)
   A reference to a Core Video image buffer.
-- [struct CVImageSize](cvimagesize.md)
+- [struct CVImageSize](./cvimagesize.md)
   Size of image buffer expressed as pixel count.
-- [enum CVImageBufferOriginPosition](cvimagebufferoriginposition.md)
-- [struct CVImagePixelAspectRatio](cvimagepixelaspectratio.md)
+- [enum CVImageBufferOriginPosition](./cvimagebufferoriginposition.md)
+- [struct CVImagePixelAspectRatio](./cvimagepixelaspectratio.md)
   Aspect ratio of each pixel in the image buffer.
-- [struct CVImageDisplayMaskRectangle](cvimagedisplaymaskrectangle.md)
+- [struct CVImageDisplayMaskRectangle](./cvimagedisplaymaskrectangle.md)
   Specifies the rectangular display area within the image.
-- [struct CVImageStereoDisplayMaskRectangle](cvimagestereodisplaymaskrectangle.md)
+- [struct CVImageStereoDisplayMaskRectangle](./cvimagestereodisplaymaskrectangle.md)
   Specifies the rectangular display area within a view of stereo image.
-- [struct CVImageChromaField](cvimagechromafield.md)
+- [struct CVImageChromaField](./cvimagechromafield.md)
   Information about chroma field in the 2VUY format image data.
 
 

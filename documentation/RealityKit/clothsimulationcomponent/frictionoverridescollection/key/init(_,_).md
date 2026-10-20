@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a material-pair key from the names of the two materials.
 

@@ -1,7 +1,8 @@
 # workoutPlan
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -18,7 +19,7 @@ var workoutPlan: WorkoutPlan? { get async throws }
 
 #### Discussion
 
-You need to import the [`WorkoutKit`](https://developer.apple.com/documentation/workoutkit) framework to access this property.
+You need to import the [WorkoutKit](../../WorkoutKit/WorkoutKit.md) framework to access this property.
 
 
 ---

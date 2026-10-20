@@ -1,7 +1,8 @@
 # connectionDidFinishLoading(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent when a connection has finished loading successfully.
 
@@ -20,6 +21,10 @@ Sent when a connection has finished loading successfully.
 optional func connectionDidFinishLoading(_ connection: NSURLConnection)
 ```
 
+```objc
+- (void) connectionDidFinishLoading:(NSURLConnection *) connection;
+```
+
 #### Discussion
 
 The delegate will receive no further messages for `connection`.
@@ -30,7 +35,8 @@ The delegate will receive no further messages for `connection`.
 
 ## See Also
 
-- [func connection(NSURLConnection, didSendBodyData: Int, totalBytesWritten: Int, totalBytesExpectedToWrite: Int)](nsurlconnectiondatadelegate/connection(_:didsendbodydata:totalbyteswritten:totalbytesexpectedtowrite:).md)
+### Receiving Connection Progress
+- [func connection(NSURLConnection, didSendBodyData: Int, totalBytesWritten: Int, totalBytesExpectedToWrite: Int)](./connection%28_,didsendbodydata,totalbyteswritten,totalbytesexpectedtowrite%29.md)
   Sent as the body (message data) of a request is transmitted (such as in an HTTP POST request).
 
 

@@ -1,7 +1,8 @@
 # prepareQueueFull
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The prepare queue is full, as a result of there being too many write requests in the queue.
 
@@ -22,35 +23,36 @@ static var prepareQueueFull: CBATTError.Code { get }
 
 ## See Also
 
-- [static var success: CBATTError.Code](cbatterror-swift.struct/success.md)
+### Error Codes
+- [static var success: CBATTError.Code](./success.md)
   The ATT command or request successfully completed.
-- [static var invalidHandle: CBATTError.Code](cbatterror-swift.struct/invalidhandle.md)
+- [static var invalidHandle: CBATTError.Code](./invalidhandle.md)
   The attribute handle is invalid on this peripheral.
-- [static var readNotPermitted: CBATTError.Code](cbatterror-swift.struct/readnotpermitted.md)
+- [static var readNotPermitted: CBATTError.Code](./readnotpermitted.md)
   The permissions prohibit reading the attribute’s value.
-- [static var writeNotPermitted: CBATTError.Code](cbatterror-swift.struct/writenotpermitted.md)
+- [static var writeNotPermitted: CBATTError.Code](./writenotpermitted.md)
   The permissions prohibit writing the attribute’s value.
-- [static var invalidPdu: CBATTError.Code](cbatterror-swift.struct/invalidpdu.md)
+- [static var invalidPdu: CBATTError.Code](./invalidpdu.md)
   The attribute Protocol Data Unit (PDU) is invalid.
-- [static var insufficientAuthentication: CBATTError.Code](cbatterror-swift.struct/insufficientauthentication.md)
+- [static var insufficientAuthentication: CBATTError.Code](./insufficientauthentication.md)
   Reading or writing the attribute’s value failed for lack of authentication.
-- [static var requestNotSupported: CBATTError.Code](cbatterror-swift.struct/requestnotsupported.md)
+- [static var requestNotSupported: CBATTError.Code](./requestnotsupported.md)
   The attribute server doesn’t support the request received from the client.
-- [static var invalidOffset: CBATTError.Code](cbatterror-swift.struct/invalidoffset.md)
+- [static var invalidOffset: CBATTError.Code](./invalidoffset.md)
   The specified offset value was past the end of the attribute’s value.
-- [static var insufficientAuthorization: CBATTError.Code](cbatterror-swift.struct/insufficientauthorization.md)
+- [static var insufficientAuthorization: CBATTError.Code](./insufficientauthorization.md)
   Reading or writing the attribute’s value failed for lack of authorization.
-- [static var attributeNotFound: CBATTError.Code](cbatterror-swift.struct/attributenotfound.md)
+- [static var attributeNotFound: CBATTError.Code](./attributenotfound.md)
   The attribute wasn’t found within the specified attribute handle range.
-- [static var attributeNotLong: CBATTError.Code](cbatterror-swift.struct/attributenotlong.md)
+- [static var attributeNotLong: CBATTError.Code](./attributenotlong.md)
   The ATT read blob request can’t read or write the attribute.
-- [static var insufficientEncryptionKeySize: CBATTError.Code](cbatterror-swift.struct/insufficientencryptionkeysize.md)
+- [static var insufficientEncryptionKeySize: CBATTError.Code](./insufficientencryptionkeysize.md)
   The encryption key size used for encrypting this link is insufficient.
-- [static var invalidAttributeValueLength: CBATTError.Code](cbatterror-swift.struct/invalidattributevaluelength.md)
+- [static var invalidAttributeValueLength: CBATTError.Code](./invalidattributevaluelength.md)
   The length of the attribute’s value is invalid for the intended operation.
-- [static var unlikelyError: CBATTError.Code](cbatterror-swift.struct/unlikelyerror.md)
+- [static var unlikelyError: CBATTError.Code](./unlikelyerror.md)
   The ATT request encountered an unlikely error and wasn’t completed.
-- [static var insufficientEncryption: CBATTError.Code](cbatterror-swift.struct/insufficientencryption.md)
+- [static var insufficientEncryption: CBATTError.Code](./insufficientencryption.md)
   Reading or writing the attribute’s value failed for lack of encryption.
 
 

@@ -1,7 +1,8 @@
 # removeSubrange(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a range of characters from the attributed string.
 
@@ -26,11 +27,12 @@ mutating func removeSubrange(_ range: some RangeExpression<AttributedString.Inde
 
 ## See Also
 
-- [func insert(some AttributedStringProtocol, at: AttributedString.Index)](attributedstring/insert(_:at:).md)
+### Modifying an Attributed String
+- [func insert(some AttributedStringProtocol, at: AttributedString.Index)](./insert%28_,at%29.md)
   Inserts the specified string at a specific index in the attributed string.
-- [AttributedString.Index](attributedstring/index.md)
+- [AttributedString.Index](./index.md)
   A type that represents the position of a character or code unit within an attributed string.
-- [func replaceSubrange(some RangeExpression<AttributedString.Index>, with: some AttributedStringProtocol)](attributedstring/replacesubrange(_:with:).md)
+- [func replaceSubrange(some RangeExpression<AttributedString.Index>, with: some AttributedStringProtocol)](./replacesubrange%28_,with%29.md)
   Replaces the contents in a range of the attributed string.
 
 

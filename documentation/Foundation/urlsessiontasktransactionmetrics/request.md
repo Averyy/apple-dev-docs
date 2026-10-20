@@ -1,7 +1,8 @@
 # request
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transaction request.
 
@@ -20,9 +21,14 @@ The transaction request.
 var request: URLRequest { get }
 ```
 
+```objc
+@property (copy, readonly) NSURLRequest * request;
+```
+
 ## See Also
 
-- [var response: URLResponse?](urlsessiontasktransactionmetrics/response.md)
+### Accessing request and response
+- [var response: URLResponse?](./response.md)
   The transaction response.
 
 

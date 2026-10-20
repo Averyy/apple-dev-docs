@@ -1,7 +1,8 @@
 # configureForResumableExport()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the export session for resumable export.
 
@@ -52,9 +53,10 @@ try await exportSession.export(to: outputURL, as: .mov)
 
 ## See Also
 
-- [AVAssetExportSession.ResumptionState](avassetexportsession/resumptionstate.md)
+### Configuring resumable export
+- [AVAssetExportSession.ResumptionState](./resumptionstate.md)
   Represents the resumption state of the export session.
-- [AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason.md)
+- [AVAssetExportSession.ResumptionFailureReason](./resumptionfailurereason.md)
   The reason that configuring the export session for resumption failed.
 
 

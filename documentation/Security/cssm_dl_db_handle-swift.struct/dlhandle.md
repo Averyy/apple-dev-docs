@@ -1,7 +1,8 @@
 # DLHandle
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var DLHandle: CSSM_DL_HANDLE
+```
+
+```c
+CSSM_DL_HANDLE DLHandle;
 ```
 
 

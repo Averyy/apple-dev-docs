@@ -1,7 +1,8 @@
 # roll
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that represents the barrel roll angle of the hovering Apple Pencil.
 
@@ -24,15 +25,16 @@ This value is `.zero` when the user starts using their Apple Pencil, and changes
 
 ## See Also
 
-- [let altitude: Angle](pencilhoverpose/altitude.md)
+### Getting the hover characteristics
+- [let altitude: Angle](./altitude.md)
   A value that represents the altitude angle of the hovering Apple Pencil.
-- [let anchor: UnitPoint](pencilhoverpose/anchor.md)
+- [let anchor: UnitPoint](./anchor.md)
   The location of an Apple Pencil hovering in the area above the view’s bounds, expressed as a normalized anchor point relative to that view.
-- [let azimuth: Angle](pencilhoverpose/azimuth.md)
+- [let azimuth: Angle](./azimuth.md)
   A value that represents the azimuth angle of a hovering Apple Pencil.
-- [let location: CGPoint](pencilhoverpose/location.md)
+- [let location: CGPoint](./location.md)
   The location of an Apple Pencil hovering in the area above the view’s bounds, expressed as a point in that view’s coordinate space.
-- [let zDistance: CGFloat](pencilhoverpose/zdistance.md)
+- [let zDistance: CGFloat](./zdistance.md)
   The normalized distance between the screen and a hovering Apple Pencil.
 
 

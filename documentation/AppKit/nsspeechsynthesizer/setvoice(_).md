@@ -1,12 +1,15 @@
 # setVoice(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the receiver’s current voice.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 14.0
+
+> **Deprecated**: Use AVSpeechSynthesizer in AVFoundation instead
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Sets the receiver’s current voice.
 func setVoice(_ voice: NSSpeechSynthesizer.VoiceName?) -> Bool
 ```
 
+```objc
+- (BOOL) setVoice:(NSSpeechSynthesizerVoiceName) voice;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when the receiver is not currently synthesizing speech and the current voice is set successfully, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) when the receiver is not currently synthesizing speech and the current voice is set successfully, [`false`](../../Swift/false.md) otherwise.
 
 ## Parameters
 
@@ -24,15 +31,17 @@ func setVoice(_ voice: NSSpeechSynthesizer.VoiceName?) -> Bool
 
 ## See Also
 
-- [class var defaultVoice: NSSpeechSynthesizer.VoiceName](nsspeechsynthesizer/defaultvoice.md)
+### Related Documentation
+- [class var defaultVoice: NSSpeechSynthesizer.VoiceName](./defaultvoice.md)
   Provides the identifier of the default voice.
-- [var usesFeedbackWindow: Bool](nsspeechsynthesizer/usesfeedbackwindow.md)
+### Configuring Speech Synthesizers
+- [var usesFeedbackWindow: Bool](./usesfeedbackwindow.md)
   Indicates whether the receiver uses the speech feedback window.
-- [func voice() -> NSSpeechSynthesizer.VoiceName?](nsspeechsynthesizer/voice.md)
+- [func voice() -> NSSpeechSynthesizer.VoiceName?](./voice%28%29.md)
   Returns the identifier of the receiver’s current voice.
-- [var rate: Float](nsspeechsynthesizer/rate.md)
+- [var rate: Float](./rate.md)
   The synthesizer’s speaking rate (words per minute).
-- [var volume: Float](nsspeechsynthesizer/volume.md)
+- [var volume: Float](./volume.md)
   The synthesizer’s speaking volume.
 
 

@@ -1,7 +1,8 @@
 # MPSCNNUpsamplingNearestNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a nearest spatial upsampling filter.
 
@@ -19,33 +20,38 @@ A representation of a nearest spatial upsampling filter.
 class MPSCNNUpsamplingNearestNode
 ```
 
+```objc
+@interface MPSCNNUpsamplingNearestNode : MPSNNFilterNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, integerScaleFactorX: Int, integerScaleFactorY: Int)](mpscnnupsamplingnearestnode/init(source:integerscalefactorx:integerscalefactory:).md)
+- [init(source: MPSNNImageNode, integerScaleFactorX: Int, integerScaleFactorY: Int)](./mpscnnupsamplingnearestnode/init%28source,integerscalefactorx,integerscalefactory%29.md)
 ### Instance Properties
-- [var scaleFactorX: Double](mpscnnupsamplingnearestnode/scalefactorx.md)
-- [var scaleFactorY: Double](mpscnnupsamplingnearestnode/scalefactory.md)
+- [var scaleFactorX: Double](./mpscnnupsamplingnearestnode/scalefactorx.md)
+- [var scaleFactorY: Double](./mpscnnupsamplingnearestnode/scalefactory.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNFilterNode](mpsnnfilternode.md)
+- [MPSNNFilterNode](./mpsnnfilternode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNUpsamplingBilinearNode](mpscnnupsamplingbilinearnode.md)
+### Upsampling Layer Nodes
+- [class MPSCNNUpsamplingBilinearNode](./mpscnnupsamplingbilinearnode.md)
   A representation of a bilinear spatial upsampling filter.
-- [class MPSCNNUpsamplingBilinearGradientNode](mpscnnupsamplingbilineargradientnode.md)
+- [class MPSCNNUpsamplingBilinearGradientNode](./mpscnnupsamplingbilineargradientnode.md)
   A representation of a gradient bilinear spatial upsampling filter.
-- [class MPSCNNUpsamplingNearestGradientNode](mpscnnupsamplingnearestgradientnode.md)
+- [class MPSCNNUpsamplingNearestGradientNode](./mpscnnupsamplingnearestgradientnode.md)
   A representation of a gradient nearest spatial upsampling filter.
 
 

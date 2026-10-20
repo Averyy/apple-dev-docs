@@ -1,7 +1,8 @@
 # coachingOverlayViewWillActivate(_:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells you when the coaching overlay view activates.
 
@@ -15,13 +16,18 @@ Tells you when the coaching overlay view activates.
 optional func coachingOverlayViewWillActivate(_ coachingOverlayView: ARCoachingOverlayView)
 ```
 
+```objc
+- (void) coachingOverlayViewWillActivate:(ARCoachingOverlayView *) coachingOverlayView;
+```
+
 #### Discussion
 
 Override this function to hide your app’s UI while the coaching overlay is active.
 
 ## See Also
 
-- [func coachingOverlayViewDidDeactivate(ARCoachingOverlayView)](arcoachingoverlayviewdelegate/coachingoverlayviewdiddeactivate(_:).md)
+### Enabling Coaching
+- [func coachingOverlayViewDidDeactivate(ARCoachingOverlayView)](./coachingoverlayviewdiddeactivate%28_%29.md)
   Tells you when the coaching experience is completely deactivated.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a fixed-capacity ordered collection of mesh instances for the given render targets.
@@ -20,13 +21,13 @@ func makeMeshInstanceArray(renderTargets: LowLevelRenderTarget.DescriptorSet, co
 
 #### Return Value
 
-A newly created [`LowLevelMeshInstanceArray`](lowlevelmeshinstancearray.md).
+A newly created [`LowLevelMeshInstanceArray`](../lowlevelmeshinstancearray.md).
 
 #### Discussion
 
-Pass the resulting array to [`setMeshInstances(_:at:)`](lowlevelrenderer/setmeshinstances(_:at:).md) to submit it for rendering.
+Pass the resulting array to [`setMeshInstances(_:at:)`](../lowlevelrenderer/setmeshinstances%28_,at%29.md) to submit it for rendering.
 
-> **Note**: An error if allocation fails.
+> **Throws**: An error if allocation fails.
 
 ## Parameters
 
@@ -35,13 +36,14 @@ Pass the resulting array to [`setMeshInstances(_:at:)`](lowlevelrenderer/setmesh
 
 ## See Also
 
-- [func makeMeshResource(descriptor: LowLevelMeshResource.Descriptor) throws -> LowLevelMeshResource](lowlevelrendercontext/makemeshresource(descriptor:).md)
+### Creating meshes
+- [func makeMeshResource(descriptor: LowLevelMeshResource.Descriptor) throws -> LowLevelMeshResource](./makemeshresource%28descriptor%29.md)
   Creates a mesh resource from the given descriptor.
-- [func makeMeshPart(resource: LowLevelMeshResource, indexOffset: Int, indexCount: Int, primitive: MTLPrimitiveType, windingOrder: MTLWinding, bounds: BoundingSphereBox) throws -> LowLevelMeshPart](lowlevelrendercontext/makemeshpart(resource:indexoffset:indexcount:primitive:windingorder:bounds:).md)
+- [func makeMeshPart(resource: LowLevelMeshResource, indexOffset: Int, indexCount: Int, primitive: MTLPrimitiveType, windingOrder: MTLWinding, bounds: BoundingSphereBox) throws -> LowLevelMeshPart](./makemeshpart%28resource,indexoffset,indexcount,primitive,windingorder,bounds%29.md)
   Creates a mesh part that selects a contiguous range of indices from a mesh resource.
-- [func makeMeshInstance(meshPart: LowLevelMeshPart, pipeline: LowLevelRenderPipelineState, geometryArguments: LowLevelArgumentTable?, surfaceArguments: LowLevelArgumentTable?, lightingArguments: LowLevelArgumentTable?, transform: simd_float4x4, sortCategory: LowLevelMeshInstance.SortCategory) throws -> LowLevelMeshInstance](lowlevelrendercontext/makemeshinstance(meshpart:pipeline:geometryarguments:surfacearguments:lightingarguments:transform:sortcategory:).md)
+- [func makeMeshInstance(meshPart: LowLevelMeshPart, pipeline: LowLevelRenderPipelineState, geometryArguments: LowLevelArgumentTable?, surfaceArguments: LowLevelArgumentTable?, lightingArguments: LowLevelArgumentTable?, transform: simd_float4x4, sortCategory: LowLevelMeshInstance.SortCategory) throws -> LowLevelMeshInstance](./makemeshinstance%28meshpart,pipeline,geometryarguments,surfacearguments,lightingarguments,transform,sortcategory%29.md)
   Creates a drawable mesh instance pairing a mesh part with a compiled pipeline state and optional per-draw argument tables.
-- [func makeInstanceTransformResource(instanceCapacity: Int) throws -> LowLevelInstanceTransformResource](lowlevelrendercontext/makeinstancetransformresource(instancecapacity:).md)
+- [func makeInstanceTransformResource(instanceCapacity: Int) throws -> LowLevelInstanceTransformResource](./makeinstancetransformresource%28instancecapacity%29.md)
   Creates a transform buffer resource for GPU instancing.
 
 

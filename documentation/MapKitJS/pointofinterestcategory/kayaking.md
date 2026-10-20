@@ -1,7 +1,8 @@
 # Kayaking
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for kayaking locations.
 
@@ -10,7 +11,7 @@ The point-of-interest category for kayaking locations.
 
 ## Declaration
 
-```swift
+```
 readonly Kayaking: "Kayaking";
 ```
 

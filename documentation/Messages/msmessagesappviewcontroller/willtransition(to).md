@@ -1,7 +1,8 @@
 # willTransition(to:)
 
 **Framework**: Messages  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the view controller that the extension is about to transition to a new presentation style.
 
@@ -16,31 +17,36 @@ Tells the view controller that the extension is about to transition to a new pre
 func willTransition(to presentationStyle: MSMessagesAppPresentationStyle)
 ```
 
+```objc
+- (void) willTransitionToPresentationStyle:(MSMessagesAppPresentationStyle) presentationStyle;
+```
+
 #### Discussion
 
-Override this method to update your extension’s layout while the extension is transitioning between the [`MSMessagesAppPresentationStyle.compact`](msmessagesapppresentationstyle/compact.md) and [`MSMessagesAppPresentationStyle.expanded`](msmessagesapppresentationstyle/expanded.md) styles. The user can switch between styles by tapping the collapse and expand buttons in the Messages app.  You can also programmatically trigger a transition by calling [`requestPresentationStyle(_:)`](msmessagesappviewcontroller/requestpresentationstyle(_:).md).
+Override this method to update your extension’s layout while the extension is transitioning between the [`MSMessagesAppPresentationStyle.compact`](../msmessagesapppresentationstyle/compact.md) and [`MSMessagesAppPresentationStyle.expanded`](../msmessagesapppresentationstyle/expanded.md) styles. The user can switch between styles by tapping the collapse and expand buttons in the Messages app.  You can also programmatically trigger a transition by calling [`requestPresentationStyle(_:)`](./requestpresentationstyle%28_%29.md).
 
-The system doesn’t call this method on a view controller that is presenting a live view in the transcript or input field—in other words, when the view controller’s [`presentationStyle`](msmessagesappviewcontroller/presentationstyle.md) property is set to the [`MSMessagesAppPresentationStyle.transcript`](msmessagesapppresentationstyle/transcript.md) value.
+The system doesn’t call this method on a view controller that is presenting a live view in the transcript or input field—in other words, when the view controller’s [`presentationStyle`](./presentationstyle.md) property is set to the [`MSMessagesAppPresentationStyle.transcript`](../msmessagesapppresentationstyle/transcript.md) value.
 
-> **Note**:  Because the keyboard is not available in the [`MSMessagesAppPresentationStyle.compact`](msmessagesapppresentationstyle/compact.md) style, adding text fields or text views to your compact layout is not recommended.
+> **Note**:  Because the keyboard is not available in the [`MSMessagesAppPresentationStyle.compact`](../msmessagesapppresentationstyle/compact.md) style, adding text fields or text views to your compact layout is not recommended.
 
 ## Parameters
 
-- `presentationStyle`: The new presentation style. For a list of possible styles, see [`MSMessagesAppPresentationStyle`](msmessagesapppresentationstyle.md).
+- `presentationStyle`: The new presentation style. For a list of possible styles, see [`MSMessagesAppPresentationStyle`](../msmessagesapppresentationstyle.md).
 
 ## See Also
 
-- [var presentationStyle: MSMessagesAppPresentationStyle](msmessagesappviewcontroller/presentationstyle.md)
+### Working with Presentation Styles and Contexts
+- [var presentationStyle: MSMessagesAppPresentationStyle](./presentationstyle.md)
   The extension’s current presentation style.
-- [func requestPresentationStyle(MSMessagesAppPresentationStyle)](msmessagesappviewcontroller/requestpresentationstyle(_:).md)
+- [func requestPresentationStyle(MSMessagesAppPresentationStyle)](./requestpresentationstyle%28_%29.md)
   Asks the extension’s user interface to transition to the provided style.
-- [func didTransition(to: MSMessagesAppPresentationStyle)](msmessagesappviewcontroller/didtransition(to:).md)
+- [func didTransition(to: MSMessagesAppPresentationStyle)](./didtransition%28to%29.md)
   Tells the view controller that the extension has transitioned to a new presentation style.
-- [enum MSMessagesAppPresentationStyle](msmessagesapppresentationstyle.md)
+- [enum MSMessagesAppPresentationStyle](../msmessagesapppresentationstyle.md)
   Presentation styles that describe your iMessage app’s appearance.
-- [var presentationContext: MSMessagesAppPresentationContext](msmessagesappviewcontroller/presentationcontext.md)
+- [var presentationContext: MSMessagesAppPresentationContext](./presentationcontext.md)
   The context describing where your iMessage app is presented.
-- [enum MSMessagesAppPresentationContext](msmessagesapppresentationcontext.md)
+- [enum MSMessagesAppPresentationContext](../msmessagesapppresentationcontext.md)
   Presentation contexts describing where your iMessage app appears.
 
 

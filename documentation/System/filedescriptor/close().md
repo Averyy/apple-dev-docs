@@ -1,7 +1,8 @@
 # close()
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes a file descriptor.
 
@@ -22,7 +23,7 @@ func close() throws
 
 ## Mentions
 
-- [Adopting Swift File Operations](adopting-file-operations.md)
+- [Adopting Swift File Operations](../adopting-file-operations.md)
 
 #### Discussion
 
@@ -32,7 +33,8 @@ The corresponding C function is `close`.
 
 ## See Also
 
-- [func closeAfter<R>(() throws -> R) throws -> R](filedescriptor/closeafter(_:).md)
+### Closing a File
+- [func closeAfter<R>(() throws -> R) throws -> R](./closeafter%28_%29.md)
   Runs a closure and then closes the file descriptor, even if an error occurs.
 
 

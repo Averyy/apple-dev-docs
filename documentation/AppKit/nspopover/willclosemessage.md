@@ -1,7 +1,8 @@
 # NSPopover.WillCloseMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,18 +16,18 @@ struct WillCloseMessage
 ## Topics
 
 ### Initializers
-- [init(popover: NSPopover, closeReason: NSPopover.CloseReason)](nspopover/willclosemessage/init(popover:closereason:).md)
+- [init(popover: NSPopover, closeReason: NSPopover.CloseReason)](./willclosemessage/init%28popover,closereason%29.md)
 ### Instance Properties
-- [var closeReason: NSPopover.CloseReason](nspopover/willclosemessage/closereason.md)
-- [var popover: NSPopover](nspopover/willclosemessage/popover.md)
+- [var closeReason: NSPopover.CloseReason](./willclosemessage/closereason.md)
+- [var popover: NSPopover](./willclosemessage/popover.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # VZUSBScreenCoordinatePointingDeviceConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines the configuration for a USB pointing device that reports absolute coordinates.
 
@@ -14,6 +15,10 @@ An object that defines the configuration for a USB pointing device that reports 
 class VZUSBScreenCoordinatePointingDeviceConfiguration
 ```
 
+```objc
+@interface VZUSBScreenCoordinatePointingDeviceConfiguration : VZPointingDeviceConfiguration
+```
+
 #### Overview
 
 A `VZVirtualMachineView` can use this device to send pointer events to the VM.
@@ -21,27 +26,28 @@ A `VZVirtualMachineView` can use this device to send pointer events to the VM.
 ## Topics
 
 ### Creating pointing devices
-- [init()](vzusbscreencoordinatepointingdeviceconfiguration/init.md)
+- [init()](./vzusbscreencoordinatepointingdeviceconfiguration/init%28%29.md)
   Creates a new pointing device.
 
 ## Relationships
 
 ### Inherits From
-- [VZPointingDeviceConfiguration](vzpointingdeviceconfiguration.md)
+- [VZPointingDeviceConfiguration](./vzpointingdeviceconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZMacTrackpadConfiguration](vzmactrackpadconfiguration.md)
+### Pointing devices
+- [class VZMacTrackpadConfiguration](./vzmactrackpadconfiguration.md)
   The class that represents the configuration for a Mac trackpad.
-- [class VZPointingDeviceConfiguration](vzpointingdeviceconfiguration.md)
+- [class VZPointingDeviceConfiguration](./vzpointingdeviceconfiguration.md)
   The base class for a pointing device configuration.
 
 

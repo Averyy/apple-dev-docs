@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object that implements the device.
 
@@ -12,6 +13,10 @@ The delegate object that implements the device.
 
 ```swift
 weak var delegate: (any VZCustomVirtioDeviceConfigurationDelegate)? { get }
+```
+
+```objc
+@property (weak, readonly) id<VZCustomVirtioDeviceConfigurationDelegate> delegate;
 ```
 
 

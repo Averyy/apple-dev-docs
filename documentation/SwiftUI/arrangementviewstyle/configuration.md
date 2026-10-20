@@ -1,7 +1,8 @@
 # ArrangementViewStyle.Configuration
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The configuration the style uses to create the arrangement view.
 
@@ -22,9 +23,10 @@ typealias Configuration = ArrangementViewStyleConfiguration
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](arrangementviewstyle/makebody(configuration:).md)
+### Creating a view using an arrangement view style
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view for the arrangement view style from the configuration.
-- [associatedtype Body : View](arrangementviewstyle/body.md)
+- [associatedtype Body : View](./body.md)
 
 
 ---

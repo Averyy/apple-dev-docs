@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 func setMeshBuffer(_ buffer: any MTLBuffer, offset: Int, at index: Int)
+```
+
+```objc
+- (void) setMeshBuffer:(id<MTLBuffer>) buffer offset:(NSUInteger) offset atIndex:(NSUInteger) index;
 ```
 
 

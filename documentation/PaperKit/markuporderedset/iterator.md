@@ -1,7 +1,8 @@
 # MarkupOrderedSet.Iterator
 
 **Framework**: PaperKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An iterator over the elements of a markup ordered set.
 
@@ -21,13 +22,13 @@ struct Iterator
 ## Topics
 
 ### Instance Methods
-- [func next() -> (any Markup)?](markuporderedset/iterator/next.md)
+- [func next() -> (any Markup)?](./iterator/next%28%29.md)
   Advances to the next element and returns it, or `nil` if no next element exists.
 
 ## Relationships
 
 ### Conforms To
-- [IteratorProtocol](../swift/iteratorprotocol.md)
+- [IteratorProtocol](../../Swift/iteratorprotocol.md)
 
 
 ---

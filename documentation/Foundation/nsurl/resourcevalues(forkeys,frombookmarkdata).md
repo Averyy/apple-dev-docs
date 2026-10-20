@@ -1,7 +1,8 @@
 # resourceValues(forKeys:fromBookmarkData:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the resource values for properties identified by a specified array of keys contained in specified bookmark data.
 
@@ -20,34 +21,40 @@ Returns the resource values for properties identified by a specified array of ke
 class func resourceValues(forKeys keys: [URLResourceKey], fromBookmarkData bookmarkData: Data) -> [URLResourceKey : Any]?
 ```
 
+```objc
++ (NSDictionary<NSString *,id> *) resourceValuesForKeys:(NSArray<NSString *> *) keys fromBookmarkData:(NSData *) bookmarkData;
+```
+
 #### Return Value
 
 A dictionary of the requested resource values contained in `bookmarkData`.
 
 ## Parameters
 
-- `keys`: An array of names of URL resource properties. In addition to the standard, system-defined resource properties, you can also request any custom properties that you provided when you created the bookmark. See the [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](nsurl/bookmarkdata(options:includingresourcevaluesforkeys:relativeto:).md) method for details.
+- `keys`: An array of names of URL resource properties. In addition to the standard, system-defined resource properties, you can also request any custom properties that you provided when you created the bookmark. See the [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](./bookmarkdata%28options,includingresourcevaluesforkeys,relativeto%29.md) method for details.
 - `bookmarkData`: The bookmark data from which you want to retrieve resource values.
 
 ## See Also
 
-- [struct URLResourceKey](urlresourcekey.md)
+### Related Documentation
+- [struct URLResourceKey](../urlresourcekey.md)
   Keys that apply to file system URLs.
-- [class func bookmarkData(withContentsOf: URL) throws -> Data](nsurl/bookmarkdata(withcontentsof:).md)
+### Working with Bookmark Data
+- [class func bookmarkData(withContentsOf: URL) throws -> Data](./bookmarkdata%28withcontentsof%29.md)
   Initializes and returns bookmark data derived from an alias file pointed to by a specified URL.
-- [func bookmarkData(options: NSURL.BookmarkCreationOptions, includingResourceValuesForKeys: [URLResourceKey]?, relativeTo: URL?) throws -> Data](nsurl/bookmarkdata(options:includingresourcevaluesforkeys:relativeto:).md)
+- [func bookmarkData(options: NSURL.BookmarkCreationOptions, includingResourceValuesForKeys: [URLResourceKey]?, relativeTo: URL?) throws -> Data](./bookmarkdata%28options,includingresourcevaluesforkeys,relativeto%29.md)
   Returns a bookmark for the URL, created with specified options and resource values.
-- [class func writeBookmarkData(Data, to: URL, options: NSURL.BookmarkFileCreationOptions) throws](nsurl/writebookmarkdata(_:to:options:).md)
+- [class func writeBookmarkData(Data, to: URL, options: NSURL.BookmarkFileCreationOptions) throws](./writebookmarkdata%28_,to,options%29.md)
   Creates an alias file on disk at a specified location with specified bookmark data.
-- [func startAccessingSecurityScopedResource() -> Bool](nsurl/startaccessingsecurityscopedresource.md)
+- [func startAccessingSecurityScopedResource() -> Bool](./startaccessingsecurityscopedresource%28%29.md)
   In an app that has adopted App Sandbox, makes the resource pointed to by a security-scoped URL available to the app.
-- [func stopAccessingSecurityScopedResource()](nsurl/stopaccessingsecurityscopedresource.md)
+- [func stopAccessingSecurityScopedResource()](./stopaccessingsecurityscopedresource%28%29.md)
   In an app that adopts App Sandbox, revokes access to the resource pointed to by a security-scoped URL.
-- [typealias BookmarkFileCreationOptions](nsurl/bookmarkfilecreationoptions.md)
+- [typealias BookmarkFileCreationOptions](./bookmarkfilecreationoptions.md)
   Options used when creating file bookmark data
-- [struct BookmarkCreationOptions](nsurl/bookmarkcreationoptions.md)
+- [struct BookmarkCreationOptions](./bookmarkcreationoptions.md)
   Options used when creating bookmark data.
-- [struct BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions.md)
+- [struct BookmarkResolutionOptions](./bookmarkresolutionoptions.md)
   Options used when resolving bookmark data.
 
 

@@ -1,7 +1,8 @@
 # GKLeaderboard.TimeScope
 
 **Framework**: GameKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies the time period for filtering data.
 
@@ -20,37 +21,42 @@ Specifies the time period for filtering data.
 enum TimeScope
 ```
 
+```c
+enum GKLeaderboardTimeScope : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [GKLeaderboard.TimeScope.today](gkleaderboard/timescope-swift.enum/today.md)
+- [GKLeaderboard.TimeScope.today](./timescope-swift.enum/today.md)
   Loads data for the past 24 hours.
-- [GKLeaderboard.TimeScope.week](gkleaderboard/timescope-swift.enum/week.md)
+- [GKLeaderboard.TimeScope.week](./timescope-swift.enum/week.md)
   Loads data for the past week.
-- [GKLeaderboard.TimeScope.allTime](gkleaderboard/timescope-swift.enum/alltime.md)
+- [GKLeaderboard.TimeScope.allTime](./timescope-swift.enum/alltime.md)
   Loads a player’s best score.
 ### Initializers
-- [init?(rawValue: Int)](gkleaderboard/timescope-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./timescope-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func loadEntries(for: GKLeaderboard.PlayerScope, timeScope: GKLeaderboard.TimeScope, range: NSRange, completionHandler: (GKLeaderboard.Entry?, [GKLeaderboard.Entry]?, Int, (any Error)?) -> Void)](gkleaderboard/loadentries(for:timescope:range:completionhandler:).md)
+### Loading Scores
+- [func loadEntries(for: GKLeaderboard.PlayerScope, timeScope: GKLeaderboard.TimeScope, range: NSRange, completionHandler: (GKLeaderboard.Entry?, [GKLeaderboard.Entry]?, Int, (any Error)?) -> Void)](./loadentries%28for,timescope,range,completionhandler%29.md)
   Returns the scores for the local player and other players for the specified type of player, time period, and ranks.
-- [func loadEntries(for: [GKPlayer], timeScope: GKLeaderboard.TimeScope, completionHandler: (GKLeaderboard.Entry?, [GKLeaderboard.Entry]?, (any Error)?) -> Void)](gkleaderboard/loadentries(for:timescope:completionhandler:).md)
+- [func loadEntries(for: [GKPlayer], timeScope: GKLeaderboard.TimeScope, completionHandler: (GKLeaderboard.Entry?, [GKLeaderboard.Entry]?, (any Error)?) -> Void)](./loadentries%28for,timescope,completionhandler%29.md)
   Returns the scores for the local player and other players for the specified time period.
-- [GKLeaderboard.PlayerScope](gkleaderboard/playerscope-swift.enum.md)
+- [GKLeaderboard.PlayerScope](./playerscope-swift.enum.md)
   Specifies the type of players for filtering data.
-- [GKLeaderboard.Entry](gkleaderboard/entry.md)
+- [GKLeaderboard.Entry](./entry.md)
   Information about a single score by a player on a leaderboard.
 
 

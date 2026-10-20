@@ -1,7 +1,8 @@
 # impact
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Particles that emit in a radial pattern and simulate dust from an object hitting the ground
 

@@ -1,7 +1,8 @@
 # FloatingPointClassification.negativeZero
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value equal to zero with a negative sign.
 

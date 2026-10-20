@@ -1,7 +1,8 @@
 # init(content:destination:cellularServiceID:messageID:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new send encrypted message request with the given parameters.
 
@@ -16,7 +17,7 @@ init(content: RCSMessage.Reaction, destination: RCSHandle, cellularServiceID: Ce
 
 ## Parameters
 
-- `content`: The content of the message to send, as an instance of [`RCSMessage.Reaction`](rcsmessage/reaction.md).
+- `content`: The content of the message to send, as an instance of [`RCSMessage.Reaction`](../../rcsmessage/reaction.md).
 - `destination`: The destination handle to send the message to.
 - `cellularServiceID`: The service identifier to use for the message.
 - `messageID`: The message identifier to use for the message.

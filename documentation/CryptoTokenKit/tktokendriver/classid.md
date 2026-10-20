@@ -1,7 +1,8 @@
 # TKTokenDriver.ClassID
 
 **Framework**: CryptoTokenKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of the class identifier for the token driver.
 
@@ -20,13 +21,18 @@ The type of the class identifier for the token driver.
 typealias ClassID = String
 ```
 
+```c
+typedef NSString * TKTokenDriverClassID;
+```
+
 ## See Also
 
-- [var delegate: (any TKTokenDriverDelegate)?](tktokendriver/delegate.md)
+### Responding to Token Creation
+- [var delegate: (any TKTokenDriverDelegate)?](./delegate.md)
   The token driver delegate.
-- [protocol TKTokenDriverDelegate](tktokendriverdelegate.md)
+- [protocol TKTokenDriverDelegate](../tktokendriverdelegate.md)
   The interface that a token driver delegate implements to respond to token creation events.
-- [TKTokenDriver.Configuration](tktokendriver/configuration.md)
+- [TKTokenDriver.Configuration](./configuration.md)
   A configuration for one class of token.
 
 

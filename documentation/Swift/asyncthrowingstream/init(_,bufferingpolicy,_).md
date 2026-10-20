@@ -1,7 +1,8 @@
 # init(_:bufferingPolicy:_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Constructs an asynchronous stream for an element type, using the specified buffering policy and element-producing closure.
 
@@ -62,9 +63,10 @@ do {
 
 ## See Also
 
-- [AsyncThrowingStream.Continuation.BufferingPolicy](asyncthrowingstream/continuation/bufferingpolicy.md)
+### Creating a Continuation-Based Stream
+- [AsyncThrowingStream.Continuation.BufferingPolicy](./continuation/bufferingpolicy.md)
   A strategy that handles exhaustion of a buffer’s capacity.
-- [AsyncThrowingStream.Continuation](asyncthrowingstream/continuation.md)
+- [AsyncThrowingStream.Continuation](./continuation.md)
   A mechanism to interface between synchronous code and an asynchronous stream.
 
 

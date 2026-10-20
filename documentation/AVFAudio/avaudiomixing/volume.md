@@ -2,6 +2,7 @@
 
 **Framework**: AVFAudio  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The bus’s input volume.
@@ -21,9 +22,13 @@ The bus’s input volume.
 var volume: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float volume;
+```
+
 #### Discussion
 
-The default value is `1.0`, and the range of valid values is `0.0` to `1.0`. Only the [`AVAudioEnvironmentNode`](avaudioenvironmentnode.md) and the [`AVAudioMixerNode`](avaudiomixernode.md) implement this property.
+The default value is `1.0`, and the range of valid values is `0.0` to `1.0`. Only the [`AVAudioEnvironmentNode`](../avaudioenvironmentnode.md) and the [`AVAudioMixerNode`](../avaudiomixernode.md) implement this property.
 
 
 ---

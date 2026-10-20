@@ -1,7 +1,8 @@
 # Scene.AnchorCollection.Element
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element traversed by the iterator.
 
@@ -11,7 +12,7 @@ The type of element traversed by the iterator.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ typealias Element = HasAnchoring
 
 ## See Also
 
-- [func makeIterator() -> Scene.AnchorCollection.Iterator](scene/anchorcollection/makeiterator.md)
+### Iterating over the collection
+- [func makeIterator() -> Scene.AnchorCollection.Iterator](./makeiterator%28%29.md)
   Returns an iterator over the elements of the collection.
-- [Scene.AnchorCollection.Iterator](scene/anchorcollection/iterator.md)
+- [Scene.AnchorCollection.Iterator](./iterator.md)
   An iterator that presents the elements of the collection.
 
 

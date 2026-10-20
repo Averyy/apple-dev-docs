@@ -1,7 +1,8 @@
 # errSecCSInvalidRuntimeVersion
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid runtime version was explicity set.
 
@@ -13,6 +14,10 @@ An invalid runtime version was explicity set.
 
 ```swift
 var errSecCSInvalidRuntimeVersion: OSStatus { get }
+```
+
+```c
+errSecCSInvalidRuntimeVersion
 ```
 
 

@@ -1,7 +1,8 @@
 # WAPublisherListener
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configures a network listener to publish a service over Wi-Fi Aware and accept incoming connections from paired devices.
 
@@ -18,7 +19,7 @@ struct WAPublisherListener
 
 #### Overview
 
-Devices can publish services for other Wi-Fi Aware devices to use by creating a `NetworkListener` object from the [`Network`](https://developer.apple.comhttps://developer.apple.com/documentation/Network) framework, and passing in a `.wifiAware()` instruction indicating the `WAPublishableService` to provide, and the set of `WAPairedDevice` that can connect to the service. The code below configures the `NetworkListener` as a Wi-Fi Aware publisher by passing in a `.wifiAware()` instruction:
+Devices can publish services for other Wi-Fi Aware devices to use by creating a `NetworkListener` object from the [Network](../Network/Network.md) framework, and passing in a `.wifiAware()` instruction indicating the `WAPublishableService` to provide, and the set of `WAPairedDevice` that can connect to the service. The code below configures the `NetworkListener` as a Wi-Fi Aware publisher by passing in a `.wifiAware()` instruction:
 
 ```swift
 NetworkListener(for: .wifiAware( .connecting(to:service,  from:.selected(devices)) ) )
@@ -27,34 +28,35 @@ NetworkListener(for: .wifiAware( .connecting(to:service,  from:.selected(devices
 ## Topics
 
 ### Configuring a listener
-- [WAPublisherListener.Action](wapublisherlistener/action.md)
+- [WAPublisherListener.Action](./wapublisherlistener/action.md)
   The structure that configures the Wi-Fi Aware publisher operation that the network listener performs.
-- [WAPublisherListener.Devices](wapublisherlistener/devices.md)
+- [WAPublisherListener.Devices](./wapublisherlistener/devices.md)
   The structure that determines the devices to connect to.
-- [WAPublisherListener.DatapathParameters](wapublisherlistener/datapathparameters.md)
+- [WAPublisherListener.DatapathParameters](./wapublisherlistener/datapathparameters.md)
   The parameter that sets the initial Wi-Fi Aware data path configuration for any devices that are connected.
 ### Creating publisher implementation details
-- [func configureParameters(NWParameters)](wapublisherlistener/configureparameters(_:).md)
+- [func configureParameters(NWParameters)](./wapublisherlistener/configureparameters%28_%29.md)
   Configures the provided parameters for a Wi-Fi Aware publish operation and connection.
-- [var service: NWListener.Service](wapublisherlistener/service.md)
+- [var service: NWListener.Service](./wapublisherlistener/service.md)
   The service data for the Wi-Fi Aware publish operation.
-- [var isApplicationService: Bool](wapublisherlistener/isapplicationservice.md)
+- [var isApplicationService: Bool](./wapublisherlistener/isapplicationservice.md)
   A Boolean value that determines whether the devices are listening for an application service.
 
 ## Relationships
 
 ### Conforms To
-- [ListenerProvider](../network/listenerprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ListenerProvider](../Network/listenerprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [WAPublisherListener.Action](wapublisherlistener/action.md)
+### Publisher
+- [WAPublisherListener.Action](./wapublisherlistener/action.md)
   The structure that configures the Wi-Fi Aware publisher operation that the network listener performs.
-- [WAPublisherListener.Devices](wapublisherlistener/devices.md)
+- [WAPublisherListener.Devices](./wapublisherlistener/devices.md)
   The structure that determines the devices to connect to.
-- [WAPublisherListener.DatapathParameters](wapublisherlistener/datapathparameters.md)
+- [WAPublisherListener.DatapathParameters](./wapublisherlistener/datapathparameters.md)
   The parameter that sets the initial Wi-Fi Aware data path configuration for any devices that are connected.
 
 

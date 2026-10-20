@@ -1,7 +1,8 @@
 # result(at:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the query result at a specific index.
 
@@ -20,13 +21,17 @@ Returns the query result at a specific index.
 func result(at idx: Int) -> Any
 ```
 
+```objc
+- (id) resultAtIndex:(NSUInteger) idx;
+```
+
 #### Return Value
 
 The query result at a specific index.
 
 #### Discussion
 
-For performance reasons, you should use this method when retrieving a specific result, rather than they array contained in [`results`](nsmetadataqueryresultgroup/results.md).
+For performance reasons, you should use this method when retrieving a specific result, rather than they array contained in [`results`](./results.md).
 
 ## Parameters
 
@@ -34,15 +39,16 @@ For performance reasons, you should use this method when retrieving a specific r
 
 ## See Also
 
-- [var attribute: String](nsmetadataqueryresultgroup/attribute.md)
+### Getting Query Results
+- [var attribute: String](./attribute.md)
   The result group’s attribute name.
-- [var value: Any](nsmetadataqueryresultgroup/value.md)
+- [var value: Any](./value.md)
   The result group’s value.
-- [var results: [Any]](nsmetadataqueryresultgroup/results.md)
+- [var results: [Any]](./results.md)
   An array containing the result group’s result objects.
-- [var resultCount: Int](nsmetadataqueryresultgroup/resultcount.md)
+- [var resultCount: Int](./resultcount.md)
   The number of results returned by the result group.
-- [var subgroups: [NSMetadataQueryResultGroup]?](nsmetadataqueryresultgroup/subgroups.md)
+- [var subgroups: [NSMetadataQueryResultGroup]?](./subgroups.md)
   An array containing the result group’s subgroups.
 
 

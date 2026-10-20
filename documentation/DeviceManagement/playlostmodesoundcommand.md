@@ -1,7 +1,8 @@
 # PlayLostModeSoundCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to play the Lost Mode sound on a device that’s in Lost Mode.
 
@@ -12,14 +13,14 @@ The command to play the Lost Mode sound on a device that’s in Lost Mode.
 
 ## Declaration
 
-```swift
+```
 object PlayLostModeSoundCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object PlayLostModeSoundCommand.Command](playlostmodesoundcommand/command-data.dictionary.md)
+- [object PlayLostModeSoundCommand.Command](./playlostmodesoundcommand/command-data.dictionary.md)
   The command to play the Lost Mode sound on a device that’s in Lost Mode.
 
 ## Properties
@@ -29,7 +30,8 @@ object PlayLostModeSoundCommand
 
 ## See Also
 
-- [object PlayLostModeSoundResponse](playlostmodesoundresponse.md)
+### Commands and responses
+- [object PlayLostModeSoundResponse](./playlostmodesoundresponse.md)
   A response from the device after it processes the command to play the Lost Mode sound on a device that’s in Lost Mode.
 
 

@@ -1,7 +1,8 @@
 # sampleBufferAttachments
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var sampleBufferAttachments: MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray { get }
+```
+
+```objc
+@property (readonly) MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray * sampleBufferAttachments;
 ```
 
 

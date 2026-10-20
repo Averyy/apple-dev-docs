@@ -1,22 +1,29 @@
 # discoverAllUserIdentitiesCompletionBlock
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure to execute when the operation finishes.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- macOS 10.12+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 10.0+ - Deprecated in 15.0
+- iPadOS 10.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- macOS 10.12+ - Deprecated in 12.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 8.0
+
+> **Deprecated**: Use discoverAllUserIdentitiesResultBlock instead
 
 ## Declaration
 
 ```swift
 var discoverAllUserIdentitiesCompletionBlock: (((any Error)?) -> Void)? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) void (^discoverAllUserIdentitiesCompletionBlock)(NSError *operationError);
 ```
 
 #### Discussion
@@ -29,7 +36,8 @@ This closure executes only once, after all of the individual discovery closures 
 
 ## See Also
 
-- [var userIdentityDiscoveredBlock: ((CKUserIdentity) -> Void)?](ckdiscoveralluseridentitiesoperation/useridentitydiscoveredblock.md)
+### Processing the Operation Results
+- [var userIdentityDiscoveredBlock: ((CKUserIdentity) -> Void)?](./useridentitydiscoveredblock.md)
   The closure to execute for each user identity.
 
 

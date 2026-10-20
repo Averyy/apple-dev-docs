@@ -1,7 +1,8 @@
 # leastNonzeroMagnitude
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The least positive number.
 
@@ -26,21 +27,22 @@ This value compares less than or equal to all positive numbers, but greater than
 
 ## See Also
 
-- [static var pi: Float](float/pi.md)
+### Accessing Numeric Constants
+- [static var pi: Float](./pi.md)
   The mathematical constant pi (π), approximately equal to 3.14159.
-- [static var infinity: Float](float/infinity.md)
+- [static var infinity: Float](./infinity.md)
   Positive infinity.
-- [static var greatestFiniteMagnitude: Float](float/greatestfinitemagnitude.md)
+- [static var greatestFiniteMagnitude: Float](./greatestfinitemagnitude.md)
   The greatest finite number representable by this type.
-- [static var nan: Float](float/nan.md)
+- [static var nan: Float](./nan.md)
   A quiet NaN (“not a number”).
-- [static var signalingNaN: Float](float/signalingnan.md)
+- [static var signalingNaN: Float](./signalingnan.md)
   A signaling NaN (“not a number”).
-- [static var ulpOfOne: Float](float/ulpofone.md)
+- [static var ulpOfOne: Float](./ulpofone.md)
   The unit in the last place of 1.0.
-- [static var leastNormalMagnitude: Float](float/leastnormalmagnitude.md)
+- [static var leastNormalMagnitude: Float](./leastnormalmagnitude.md)
   The least positive normal number.
-- [static var zero: Self](float/zero.md)
+- [static var zero: Self](./zero.md)
   The zero value.
 
 

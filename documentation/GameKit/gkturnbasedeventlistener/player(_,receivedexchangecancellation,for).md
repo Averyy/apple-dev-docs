@@ -1,7 +1,8 @@
 # player(_:receivedExchangeCancellation:for:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles when the sender cancels an exchange request they intiated.
 
@@ -20,9 +21,13 @@ Handles when the sender cancels an exchange request they intiated.
 optional func player(_ player: GKPlayer, receivedExchangeCancellation exchange: GKTurnBasedExchange, for match: GKTurnBasedMatch)
 ```
 
+```objc
+- (void) player:(GKPlayer *) player receivedExchangeCancellation:(GKTurnBasedExchange *) exchange forMatch:(GKTurnBasedMatch *) match;
+```
+
 ## Mentions
 
-- [Exchanging data between players in turn-based games](exchanging-data-between-players-in-turn-based-games.md)
+- [Exchanging data between players in turn-based games](../exchanging-data-between-players-in-turn-based-games.md)
 
 ## Parameters
 
@@ -32,9 +37,10 @@ optional func player(_ player: GKPlayer, receivedExchangeCancellation exchange: 
 
 ## See Also
 
-- [func player(GKPlayer, receivedExchangeRequest: GKTurnBasedExchange, for: GKTurnBasedMatch)](gkturnbasedeventlistener/player(_:receivedexchangerequest:for:).md)
+### Handling Data Exchanges
+- [func player(GKPlayer, receivedExchangeRequest: GKTurnBasedExchange, for: GKTurnBasedMatch)](./player%28_,receivedexchangerequest,for%29.md)
   Handles when the local player receives an exchange request from another participant.
-- [func player(GKPlayer, receivedExchangeReplies: [GKTurnBasedExchangeReply], forCompletedExchange: GKTurnBasedExchange, for: GKTurnBasedMatch)](gkturnbasedeventlistener/player(_:receivedexchangereplies:forcompletedexchange:for:).md)
+- [func player(GKPlayer, receivedExchangeReplies: [GKTurnBasedExchangeReply], forCompletedExchange: GKTurnBasedExchange, for: GKTurnBasedMatch)](./player%28_,receivedexchangereplies,forcompletedexchange,for%29.md)
   Handles when all recipients of an exchange request respond.
 
 

@@ -1,16 +1,17 @@
 # kAudioSessionOverrideAudioRoute_Speaker
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-Specifies, for the [`kAudioSessionCategory_PlayAndRecord`](kaudiosessioncategory_playandrecord.md) category,  that output audio should go to the speaker, not the receiver.
+Specifies, for the [`kAudioSessionCategory_PlayAndRecord`](./kaudiosessioncategory_playandrecord.md) category,  that output audio should go to the speaker, not the receiver.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -18,10 +19,15 @@ Specifies, for the [`kAudioSessionCategory_PlayAndRecord`](kaudiosessioncategory
 var kAudioSessionOverrideAudioRoute_Speaker: Int { get }
 ```
 
+```c
+kAudioSessionOverrideAudioRoute_Speaker
+```
+
 ## See Also
 
-- [var kAudioSessionOverrideAudioRoute_None: Int](kaudiosessionoverrideaudioroute_none.md)
-  Specifies, for the [`kAudioSessionCategory_PlayAndRecord`](kaudiosessioncategory_playandrecord.md) category, that output audio should go to the receiver. This is the default output audio route for this category.
+### Constants
+- [var kAudioSessionOverrideAudioRoute_None: Int](./kaudiosessionoverrideaudioroute_none.md)
+  Specifies, for the [`kAudioSessionCategory_PlayAndRecord`](./kaudiosessioncategory_playandrecord.md) category, that output audio should go to the receiver. This is the default output audio route for this category.
 
 
 ---

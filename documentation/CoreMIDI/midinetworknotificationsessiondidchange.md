@@ -1,7 +1,8 @@
 # MIDINetworkNotificationSessionDidChange
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates that other aspects of the session changed, such as the connection list, connection policy, and so on.
 
@@ -16,6 +17,10 @@ Indicates that other aspects of the session changed, such as the connection list
 
 ```swift
 let MIDINetworkNotificationSessionDidChange: String
+```
+
+```c
+extern NSString * const MIDINetworkNotificationSessionDidChange;
 ```
 
 

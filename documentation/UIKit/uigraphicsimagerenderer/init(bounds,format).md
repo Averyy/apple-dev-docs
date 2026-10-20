@@ -1,7 +1,8 @@
 # init(bounds:format:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image renderer with the specified bounds and format.
 
@@ -18,6 +19,10 @@ Creates an image renderer with the specified bounds and format.
 init(bounds: CGRect, format: UIGraphicsImageRendererFormat)
 ```
 
+```objc
+- (instancetype) initWithBounds:(CGRect) bounds format:(UIGraphicsImageRendererFormat *) format;
+```
+
 #### Return Value
 
 An initialized image renderer.
@@ -29,13 +34,14 @@ Use this initializer to create an image renderer when you want to override the d
 ## Parameters
 
 - `bounds`: The bounds of the image context the image renderer creates and subsequently draws upon. Specify values in points in the Core Graphics coordinate space.
-- `format`: A [`UIGraphicsImageRendererFormat`](uigraphicsimagerendererformat.md) object that encapsulates the format used to create the renderer context.
+- `format`: A [`UIGraphicsImageRendererFormat`](../uigraphicsimagerendererformat.md) object that encapsulates the format used to create the renderer context.
 
 ## See Also
 
-- [convenience init(size: CGSize)](uigraphicsimagerenderer/init(size:).md)
+### Initializing an image renderer
+- [convenience init(size: CGSize)](./init%28size%29.md)
   Creates an image renderer for drawing images of the specified size.
-- [init(size: CGSize, format: UIGraphicsImageRendererFormat)](uigraphicsimagerenderer/init(size:format:).md)
+- [init(size: CGSize, format: UIGraphicsImageRendererFormat)](./init%28size,format%29.md)
   Creates an image renderer with the specified size and format.
 
 

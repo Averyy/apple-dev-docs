@@ -1,7 +1,8 @@
 # mapTemplate(_:pitchEndedWithCenter:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a person stopped pitching the map.
 
@@ -16,9 +17,13 @@ Tells the delegate that a person stopped pitching the map.
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, pitchEndedWithCenter center: CGPoint)
 ```
 
+```objc
+- (void) mapTemplate:(CPMapTemplate *) mapTemplate pitchEndedWithCenter:(CGPoint) center;
+```
+
 ## Parameters
 
-- `mapTemplate`: The [`CPMapTemplate`](cpmaptemplate.md) the gesture applies to.
+- `mapTemplate`: The [`CPMapTemplate`](../cpmaptemplate.md) the gesture applies to.
 - `center`: A `CGPoint` that indicates the center between two fingers performing the pitch gesture.
 
 

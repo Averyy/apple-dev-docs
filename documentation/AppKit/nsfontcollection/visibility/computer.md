@@ -1,12 +1,13 @@
 # computer
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The font collection is visible to all users and is stored persistently.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The font collection is visible to all users and is stored persistently.
 static var computer: NSFontCollection.Visibility { get }
 ```
 
+```c
+NSFontCollectionVisibilityComputer
+```
+
 ## See Also
 
-- [static var process: NSFontCollection.Visibility](nsfontcollection/visibility/process.md)
+### Visibility Options
+- [static var process: NSFontCollection.Visibility](./process.md)
   The font collection is visible within this process and is not persistent.
-- [static var user: NSFontCollection.Visibility](nsfontcollection/visibility/user.md)
+- [static var user: NSFontCollection.Visibility](./user.md)
   The font collection is visible to all processes and is stored persistently.
 
 

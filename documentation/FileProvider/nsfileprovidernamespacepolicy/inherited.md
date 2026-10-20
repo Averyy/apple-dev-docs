@@ -1,7 +1,8 @@
 # NSFileProviderNamespacePolicy.inherited
 
 **Framework**: File Provider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Inherit the namespace policy of the parent folder.
 
@@ -16,6 +17,10 @@ Inherit the namespace policy of the parent folder.
 
 ```swift
 case inherited
+```
+
+```c
+NSFileProviderNamespacePolicyInherited
 ```
 
 #### Discussion

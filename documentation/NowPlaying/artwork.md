@@ -1,7 +1,8 @@
 # Artwork
 
 **Framework**: Now Playing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Artwork for a media item that can be requested at a specified size.
 
@@ -22,7 +23,7 @@ struct Artwork
 
 ## Mentions
 
-- [Publishing media sessions](publishing-media-sessions.md)
+- [Publishing media sessions](./publishing-media-sessions.md)
 
 #### Overview
 
@@ -46,22 +47,23 @@ let content = MusicContent(
 ## Topics
 
 ### Initializers
-- [init(id: String, artworkProvider: (CGSize) async throws -> ArtworkRepresentation)](artwork/init(id:artworkprovider:).md)
+- [init(id: String, artworkProvider: (CGSize) async throws -> ArtworkRepresentation)](./artwork/init%28id,artworkprovider%29.md)
   Creates an artwork whose image data loads on demand at the requested size.
 ### Instance Properties
-- [let id: String](artwork/id.md)
+- [let id: String](./artwork/id.md)
   A unique identifier for this artwork, which the system uses to cache artwork across fetches.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
+- [Identifiable](../Swift/identifiable.md)
 
 ## See Also
 
-- [struct ArtworkRepresentation](artworkrepresentation.md)
+### Displaying artwork
+- [struct ArtworkRepresentation](./artworkrepresentation.md)
   An artwork image representation, such as music album cover art, associated with a media item.
-- [struct AnimatedArtwork](animatedartwork.md)
+- [struct AnimatedArtwork](./animatedartwork.md)
   Animated artwork for the media item with video and preview support.
 
 

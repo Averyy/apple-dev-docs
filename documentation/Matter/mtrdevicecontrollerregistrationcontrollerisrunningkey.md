@@ -1,7 +1,8 @@
 # MTRDeviceControllerRegistrationControllerIsRunningKey
 
 **Framework**: Matter  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.3+
@@ -16,6 +17,10 @@
 
 ```swift
 let MTRDeviceControllerRegistrationControllerIsRunningKey: String
+```
+
+```c
+extern NSString * const MTRDeviceControllerRegistrationControllerIsRunningKey;
 ```
 
 

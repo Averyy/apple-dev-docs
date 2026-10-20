@@ -1,14 +1,15 @@
 # ulmax
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 u_int32_t ulmax(u_int32_t a, u_int32_t b);
 ```
 

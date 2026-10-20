@@ -1,16 +1,19 @@
 # MLImageClassifier.ModelParameters.ValidationData.dictionary(_:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A validation dataset represented by a dictionary.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 10.15+
+- iOS 15.0+ - Deprecated in 16.0
+- iPadOS 15.0+ - Deprecated in 16.0
+- Mac Catalyst 15.0+ - Deprecated in 16.0
+- macOS 10.15+ - Deprecated in 11.0
 - visionOS 1.0+
+
+> **Deprecated**: Use DataSource.filesByLabel to provide dictionary validation data instead.
 
 ## Declaration
 
@@ -20,11 +23,12 @@ case dictionary([String : [URL]])
 
 ## See Also
 
-- [MLImageClassifier.ModelParameters.ValidationData.split(strategy:)](mlimageclassifier/modelparameters-swift.struct/validationdata-swift.enum/split(strategy:).md)
+### Designating validation data
+- [MLImageClassifier.ModelParameters.ValidationData.split(strategy:)](./split%28strategy%29.md)
   A validation dataset derived by randomly selecting a portion of the image classifier’s training dataset using the split strategy.
-- [MLImageClassifier.ModelParameters.ValidationData.dataSource(_:)](mlimageclassifier/modelparameters-swift.struct/validationdata-swift.enum/datasource(_:).md)
+- [MLImageClassifier.ModelParameters.ValidationData.dataSource(_:)](./datasource%28_%29.md)
   A validation dataset represented by a data source.
-- [MLImageClassifier.ModelParameters.ValidationData.none](mlimageclassifier/modelparameters-swift.struct/validationdata-swift.enum/none.md)
+- [MLImageClassifier.ModelParameters.ValidationData.none](./none.md)
   An empty validation dataset that skips the model validation phase after training.
 
 

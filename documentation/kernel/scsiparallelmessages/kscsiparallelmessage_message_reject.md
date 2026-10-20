@@ -1,14 +1,15 @@
 # kSCSIParallelMessage_MESSAGE_REJECT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kSCSIParallelMessage_MESSAGE_REJECT = 0x07
 ```
 

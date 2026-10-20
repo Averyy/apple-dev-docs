@@ -1,7 +1,8 @@
 # kAXDockItemRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An icon that represents an item in the Dock.
 
@@ -12,6 +13,10 @@ An icon that represents an item in the Dock.
 
 ```swift
 var kAXDockItemRole: String { get }
+```
+
+```c
+#define kAXDockItemRole
 ```
 
 

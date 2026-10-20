@@ -1,7 +1,8 @@
 # prominence
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -16,11 +17,16 @@
 var prominence: UIColor.Prominence { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIColorProminence prominence;
+```
+
 ## See Also
 
-- [func withProminence(UIColor.Prominence) -> UIColor](uicolor/withprominence(_:).md)
+### Working with color prominence
+- [func withProminence(UIColor.Prominence) -> UIColor](./withprominence%28_%29.md)
   Returns the version of the current color that results from applying the specified prominence.
-- [UIColor.Prominence](uicolor/prominence-swift.enum.md)
+- [UIColor.Prominence](./prominence-swift.enum.md)
   A type that indicates the prominence of a color in the interface.
 
 

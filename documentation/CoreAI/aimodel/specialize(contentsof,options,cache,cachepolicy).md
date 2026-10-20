@@ -1,7 +1,8 @@
 # specialize(contentsOf:options:cache:cachePolicy:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Specializes a model for the current device.
 
@@ -21,7 +22,7 @@ static func specialize(contentsOf modelURL: URL, options: SpecializationOptions 
 
 ## Mentions
 
-- [Managing model specialization and caching](managing-model-specialization-and-caching.md)
+- [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
 #### Return Value
 
@@ -31,7 +32,7 @@ The model, ready for inference on the current device.
 
 This method performs specialization on the input `.aimodel` or `.aimodelc`, storing the resulting specialized assets in the specified cache.
 
-> **Note**: If specializing or loading the model fails.
+> **Throws**: If specializing or loading the model fails.
 
 ## Parameters
 

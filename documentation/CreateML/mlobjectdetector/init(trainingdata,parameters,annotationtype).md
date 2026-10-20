@@ -1,7 +1,8 @@
 # init(trainingData:parameters:annotationType:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object detector with a data source.
 
@@ -16,17 +17,18 @@ init(trainingData: MLObjectDetector.DataSource, parameters: MLObjectDetector.Mod
 
 #### Discussion
 
-Use this initializer to create an object detector with an [`MLObjectDetector.DataSource`](mlobjectdetector/datasource.md).
+Use this initializer to create an object detector with an [`MLObjectDetector.DataSource`](./datasource.md).
 
 ## Parameters
 
 - `trainingData`: A data source that contains the annotated images the task uses to train the object detector.
-- `parameters`: An [`MLObjectDetector.ModelParameters`](mlobjectdetector/modelparameters-swift.struct.md) instance you use to set the model configuration settings for the training session.
+- `parameters`: An [`MLObjectDetector.ModelParameters`](./modelparameters-swift.struct.md) instance you use to set the model configuration settings for the training session.
 - `annotationType`: The format your data source uses for its image annotations.
 
 ## See Also
 
-- [init(trainingData: MLDataTable, imageColumn: String, annotationColumn: String, annotationType: MLObjectDetector.AnnotationType, parameters: MLObjectDetector.ModelParameters) throws](mlobjectdetector/init(trainingdata:imagecolumn:annotationcolumn:annotationtype:parameters:).md)
+### Training an object detector synchronously
+- [init(trainingData: MLDataTable, imageColumn: String, annotationColumn: String, annotationType: MLObjectDetector.AnnotationType, parameters: MLObjectDetector.ModelParameters) throws](./init%28trainingdata,imagecolumn,annotationcolumn,annotationtype,parameters%29.md)
   Creates an object detector with a data table.
 
 

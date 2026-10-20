@@ -1,7 +1,8 @@
 # MTRNetworkCommissioningWiFiBand.band3G65
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 case band3G65
+```
+
+```c
+MTRNetworkCommissioningWiFiBand3G65
 ```
 
 

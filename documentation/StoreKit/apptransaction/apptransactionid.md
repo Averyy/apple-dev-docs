@@ -1,7 +1,8 @@
 # appTransactionID
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the app download transaction.
 
@@ -23,7 +24,7 @@ var appTransactionID: String { get }
 
 ## Mentions
 
-- [Generating JWS to sign App Store requests](generating-jws-to-sign-app-store-requests.md)
+- [Generating JWS to sign App Store requests](../generating-jws-to-sign-app-store-requests.md)
 
 #### Discussion
 
@@ -35,11 +36,11 @@ The `appTransactionID` is available even if a customer makes no Apple In-App Pur
 
 The App Store server and StoreKit provide the `appTransactionID` in the following APIs:
 
-- This symbol, `appTransactionID`, in the [`AppTransaction`](apptransaction.md) object
-- [`appTransactionID`](product/subscriptioninfo/renewalinfo/apptransactionid.md), in the subscription renewal information [`Product.SubscriptionInfo.RenewalInfo`](product/subscriptioninfo/renewalinfo.md)
-- [`appTransactionID`](transaction/apptransactionid.md), in the transaction information [`Transaction`](transaction.md)
-- In transaction and subscription renewal information you receive from notifications, [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2)
-- In transaction and subscription renewal information you receive from the [`App Store Server API`](https://developer.apple.com/documentation/appstoreserverapi)
+- This symbol, `appTransactionID`, in the [`AppTransaction`](../apptransaction.md) object
+- [`appTransactionID`](../product/subscriptioninfo/renewalinfo/apptransactionid.md), in the subscription renewal information [`Product.SubscriptionInfo.RenewalInfo`](../product/subscriptioninfo/renewalinfo.md)
+- [`appTransactionID`](../transaction/apptransactionid.md), in the transaction information [`Transaction`](../transaction.md)
+- In transaction and subscription renewal information you receive from notifications, [`App Store Server Notifications V2`](../../AppStoreServerNotifications/app-store-server-notifications-v2.md)
+- In transaction and subscription renewal information you receive from the [App Store Server API](../../AppStoreServerAPI/AppStoreServerAPI.md)
 
 
 ---

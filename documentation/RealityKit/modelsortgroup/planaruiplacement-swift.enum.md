@@ -1,7 +1,8 @@
 # ModelSortGroup.PlanarUIPlacement
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A set of predefined groups that indicate how the renderer draws a model relative to a planar mesh or a SwiftUI view that’s coplanar and overlapping.
 
@@ -21,15 +22,15 @@ enum PlanarUIPlacement
 
 ##### Overview
 
-Use one of the predefined groups [`planarUIInline`](modelsortgroup/planaruiinline.md), [`planarUIAlwaysInFront`](modelsortgroup/planaruialwaysinfront.md), and [`planarUIAlwaysBehind`](modelsortgroup/planaruialwaysbehind.md) to order virtual content relative to coincidental (coplanar and overlapping) app UI to avoid rendering artifacts.
+Use one of the predefined groups [`planarUIInline`](./planaruiinline.md), [`planarUIAlwaysInFront`](./planaruialwaysinfront.md), and [`planarUIAlwaysBehind`](./planaruialwaysbehind.md) to order virtual content relative to coincidental (coplanar and overlapping) app UI to avoid rendering artifacts.
 
-##### Placing Virtual Content Relative to App Ui
+##### Placing virtual content relative to app UI
 
-The scenario below shows a museum scene that has a green planar mesh entity, stacked between two SwiftUI [`View`](https://developer.apple.com/documentation/swiftui/view) instances in a [`ZStack`](https://developer.apple.com/documentation/swiftui/zstack).
+The scenario below shows a museum scene that has a green planar mesh entity, stacked between two SwiftUI [`View`](../../SwiftUI/view.md) instances in a [`ZStack`](../../SwiftUI/zstack.md).
 
 | **Actual View** | **Layout Illustration** |
 | --- | --- |
-| ![A screenshot of a museum scene with the red UI layer drawing first, followed by the greenPlane entity drawing second, and the layer with text and symbol drawing third. All 3 are coplanar and overlapping with one another.](/images/com.apple.RealityKit/modelsortgroupcomponent-planarui-green-inline-dark.jpg) | ![A screenshot illustrating the relative layout of the 3 layers in this scenario with the red UI layer at the back, greenPlane entity in the middle, and the UI with text and SF Symbol in front.](/images/com.apple.RealityKit/modelsortgroupcomponent-planarui-layer-breakdown.jpg) |
+| ![A screenshot of a museum scene with the red UI layer drawing first, followed by the greenPlane entity drawing second, and the layer with text and symbol drawing third. All 3 are coplanar and overlapping with one another.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/modelsortgroupcomponent-planarui-green-inline-dark.jpg) | ![A screenshot illustrating the relative layout of the 3 layers in this scenario with the red UI layer at the back, greenPlane entity in the middle, and the UI with text and SF Symbol in front.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/modelsortgroupcomponent-planarui-layer-breakdown.jpg) |
 
 ```swift
 ZStack {
@@ -69,44 +70,50 @@ ZStack {
 }
 ```
 
-Use the [`planarUIInline`](modelsortgroup/planaruiinline.md) group to draw the `greenPlane` entity according to its placement within the `ZStack`. The `greenPlane` draws over the red layer, and the text/symbol draws over the `greenPlane`.
+Use the [`planarUIInline`](./planaruiinline.md) group to draw the `greenPlane` entity according to its placement within the `ZStack`. The `greenPlane` draws over the red layer, and the text/symbol draws over the `greenPlane`.
 
 ```swift
 let group = ModelSortGroup.planarUIAlwaysInline
 greenPlane.components.set(ModelSortGroupComponent(group: group, order: 0))
 ```
 
-Use the [`planarUIAlwaysInFront`](modelsortgroup/planaruialwaysinfront.md) group to order the `greenPlane` after both UI layers. The `greenPlane` draws over both the text/symbol layer and the red layer.
+![A screenshot of a museum scene with the red UI layer drawing first, followed by the greenPlane entity drawing second, and the layer with text and symbol drawing third. All 3 are coplanar and overlapping with one another.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/modelsortgroupcomponent-planarui-green-inline-dark.jpg)
+
+Use the [`planarUIAlwaysInFront`](./planaruialwaysinfront.md) group to order the `greenPlane` after both UI layers. The `greenPlane` draws over both the text/symbol layer and the red layer.
 
 ```swift
 let group = ModelSortGroup.planarUIAlwaysInFront
 greenPlane.components.set(ModelSortGroupComponent(group: group, order: 0))
 ```
 
-Use the [`planarUIAlwaysBehind`](modelsortgroup/planaruialwaysbehind.md) group to order the `greenPlane` before both UI layers. The red layer and the text/symbol layer both draw over the `greenPlane`.
+![A screenshot of a museum scene with the greenPlane entity drawing after both UI layers. All 3 are coplanar and overlapping with one another.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/modelsortgroupcomponent-planarui-green-alwaysinfront-dark.jpg)
+
+Use the [`planarUIAlwaysBehind`](./planaruialwaysbehind.md) group to order the `greenPlane` before both UI layers. The red layer and the text/symbol layer both draw over the `greenPlane`.
 
 ```swift
 let group = ModelSortGroup.planarUIAlwaysBehind
 greenPlane.components.set(ModelSortGroupComponent(group: group, order: 0))
 ```
 
+![A screenshot of a living room scene with the greenPlane entity drawing before both UI layers. All 3 are coplanar and overlapping with one another.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/modelsortgroupcomponent-planarui-green-alwaysbehind-dark.jpg)
+
 ## Topics
 
 ### Enumeration Cases
-- [ModelSortGroup.PlanarUIPlacement.alwaysBehind](modelsortgroup/planaruiplacement-swift.enum/alwaysbehind.md)
+- [ModelSortGroup.PlanarUIPlacement.alwaysBehind](./planaruiplacement-swift.enum/alwaysbehind.md)
   Instructs the renderer to draw a model’s mesh behind a SwiftUI layer that’s coincident with the mesh.
-- [ModelSortGroup.PlanarUIPlacement.alwaysInFront](modelsortgroup/planaruiplacement-swift.enum/alwaysinfront.md)
+- [ModelSortGroup.PlanarUIPlacement.alwaysInFront](./planaruiplacement-swift.enum/alwaysinfront.md)
   Instructs the renderer to draw a model’s mesh in front of a SwiftUI layer that’s coincident with the mesh.
-- [ModelSortGroup.PlanarUIPlacement.inlineUI](modelsortgroup/planaruiplacement-swift.enum/inlineui.md)
+- [ModelSortGroup.PlanarUIPlacement.inlineUI](./planaruiplacement-swift.enum/inlineui.md)
   Instructs the renderer to draw a model’s mesh along with a SwiftUI layer that’s coincident with the mesh.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

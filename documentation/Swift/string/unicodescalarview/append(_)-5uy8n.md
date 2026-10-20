@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an element to the end of the collection.
 
@@ -32,7 +33,7 @@ print(numbers)
 // Prints "[1, 2, 3, 4, 5, 100]"
 ```
 
-> **Note**: O(1) on average, over many calls to `append(_:)` on the same collection.
+> **Complexity**: O(1) on average, over many calls to `append(_:)` on the same collection.
 
 ## Parameters
 

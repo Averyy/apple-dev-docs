@@ -1,7 +1,8 @@
 # transferRepresentation
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The representation the system uses to import and export the item.
 
@@ -10,7 +11,7 @@ The representation the system uses to import and export the item.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

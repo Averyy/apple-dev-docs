@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state value, taking into account whatever bindings might be in effect due to the current location of focus.
 
@@ -26,9 +27,10 @@ When focus is not in any view that is bound to this state, the wrapped value wil
 
 ## See Also
 
-- [var projectedValue: AccessibilityFocusState<Value>.Binding](accessibilityfocusstate/projectedvalue.md)
+### Getting the state
+- [var projectedValue: AccessibilityFocusState<Value>.Binding](./projectedvalue.md)
   A projection of the state value that can be used to establish bindings between view content and accessibility focus placement.
-- [AccessibilityFocusState.Binding](accessibilityfocusstate/binding.md)
+- [AccessibilityFocusState.Binding](./binding.md)
 
 
 ---

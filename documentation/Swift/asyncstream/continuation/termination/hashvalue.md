@@ -1,7 +1,8 @@
 # hashValue
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hash value.
 
@@ -28,7 +29,8 @@ Hash values are not guaranteed to be equal across different executions of your p
 
 ## See Also
 
-- [func hash(into: inout Hasher)](asyncstream/continuation/termination/hash(into:).md)
+### Hashing
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

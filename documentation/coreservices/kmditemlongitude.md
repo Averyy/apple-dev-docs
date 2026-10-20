@@ -1,7 +1,8 @@
 # kMDItemLongitude
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
  The longitude of the item in degrees east of the prime meridian,  expressed using the WGS84 datum.  Negative values lie west of the prime meridian. A CFString.
 
@@ -12,6 +13,10 @@
 
 ```swift
 let kMDItemLongitude: CFString!
+```
+
+```c
+const CFStringRef kMDItemLongitude;
 ```
 
 

@@ -1,7 +1,8 @@
 # AnnotatedFeatureProvider.Annotation
 
 **Framework**: Create ML Components  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The annotation type.
 
@@ -22,13 +23,14 @@ typealias Annotation = Base.Annotation
 
 ## See Also
 
-- [var annotationColumnID: ColumnID<AnnotatedFeatureProvider<Base, UnwrappedInput>.Annotation>](annotatedfeatureprovider/annotationcolumnid.md)
+### Getting the properties
+- [var annotationColumnID: ColumnID<AnnotatedFeatureProvider<Base, UnwrappedInput>.Annotation>](./annotationcolumnid.md)
   The annotation column identifier.
-- [var base: Base](annotatedfeatureprovider/base.md)
+- [var base: Base](./base.md)
   The base estimator.
-- [var featuresColumnName: String](annotatedfeatureprovider/featurescolumnname.md)
+- [var featuresColumnName: String](./featurescolumnname.md)
   The features column name.
-- [var resultsColumnName: String](annotatedfeatureprovider/resultscolumnname.md)
+- [var resultsColumnName: String](./resultscolumnname.md)
   The results column name.
 
 

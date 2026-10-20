@@ -1,7 +1,8 @@
 # type
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the type of the annotation.
 
@@ -19,23 +20,28 @@ Returns the type of the annotation.
 var type: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * type;
+```
+
 #### Return Value
 
 The type of the annotation. Types include `Line`, `Link`, `Text`, and so on, referring to the `PDFAnnotation` subclasses. In the Adobe PDF Specification, this attribute is called `Subtype`, and the common “type” for all annotations in the PDF Specification is `Annot`.
 
 ## See Also
 
-- [var page: PDFPage?](pdfannotation/page.md)
+### Accessing Information About an Annotation
+- [var page: PDFPage?](./page.md)
   Returns the page that the annotation is associated with.
-- [var modificationDate: Date?](pdfannotation/modificationdate.md)
+- [var modificationDate: Date?](./modificationdate.md)
   Returns the modification date of the annotation.
-- [var userName: String?](pdfannotation/username.md)
+- [var userName: String?](./username.md)
   Returns the name of the user who created the annotation.
-- [var action: PDFAction?](pdfannotation/action.md)
+- [var action: PDFAction?](./action.md)
   An object that represents an action for a PDF element, such as a link annotation.
-- [class PDFAction](pdfaction.md)
+- [class PDFAction](../pdfaction.md)
   An action that is performed when, for example, a PDF annotation is activated or an outline item is clicked.
-- [class PDFDestination](pdfdestination.md)
+- [class PDFDestination](../pdfdestination.md)
   A `PDFDestination` object describes a point on a PDF page.
 
 

@@ -1,7 +1,8 @@
 # UICollectionViewDropProposal.Intent.insertIntoDestinationIndexPath
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Incorporate the dropped items into the item at the specified index path.
 
@@ -15,6 +16,10 @@ Incorporate the dropped items into the item at the specified index path.
 
 ```swift
 case insertIntoDestinationIndexPath
+```
+
+```c
+UICollectionViewDropIntentInsertIntoDestinationIndexPath
 ```
 
 #### Discussion

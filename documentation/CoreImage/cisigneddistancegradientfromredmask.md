@@ -1,22 +1,27 @@
 # CISignedDistanceGradientFromRedMask
 
 **Framework**: Core Image  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol for the Signed Distance Gradient From Red Mask filter.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 protocol CISignedDistanceGradientFromRedMask : CIFilterProtocol
+```
+
+```objc
+@protocol CISignedDistanceGradientFromRedMask <CIFilter>
 ```
 
 #### Overview
@@ -26,15 +31,15 @@ Produces an infinite image where the red channel contains the distance in pixels
 ## Topics
 
 ### Instance Properties
-- [var inputImage: CIImage?](cisigneddistancegradientfromredmask/inputimage.md)
+- [var inputImage: CIImage?](./cisigneddistancegradientfromredmask/inputimage.md)
   The input image whose red channel defines a mask. If the red channel pixel value is greater than 0.5 then the point is considered in the mask and output pixel will be a value between zero and negative one. Otherwise the output pixel will be a value between zero and one.
-- [var maximumDistance: Float](cisigneddistancegradientfromredmask/maximumdistance.md)
+- [var maximumDistance: Float](./cisigneddistancegradientfromredmask/maximumdistance.md)
   Determines the maximum distance to the mask that can be measured. Distances between zero and the maximum will be normalized to negative one and one.
 
 ## Relationships
 
 ### Inherits From
-- [CIFilterProtocol](cifilterprotocol.md)
+- [CIFilterProtocol](./cifilterprotocol.md)
 
 
 ---

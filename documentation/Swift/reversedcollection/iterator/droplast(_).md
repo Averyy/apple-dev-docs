@@ -1,7 +1,8 @@
 # dropLast(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a sequence containing all but the given number of final elements.
 
@@ -36,7 +37,7 @@ print(numbers.dropLast(10))
 // Prints "[]"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 

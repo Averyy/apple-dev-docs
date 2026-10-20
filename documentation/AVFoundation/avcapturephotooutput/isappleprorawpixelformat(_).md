@@ -1,7 +1,8 @@
 # isAppleProRAWPixelFormat(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the pixel format is an Apple ProRAW format.
 
@@ -17,13 +18,17 @@ Returns a Boolean value that indicates whether the pixel format is an Apple ProR
 class func isAppleProRAWPixelFormat(_ pixelFormat: OSType) -> Bool
 ```
 
+```objc
++ (BOOL) isAppleProRAWPixelFormat:(OSType) pixelFormat;
+```
+
 ## Mentions
 
-- [Capturing photos in RAW and Apple ProRAW formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
+- [Capturing photos in RAW and Apple ProRAW formats](../capturing-photos-in-raw-and-apple-proraw-formats.md)
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the pixel format is an Apple ProRAW format, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the pixel format is an Apple ProRAW format, otherwise [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -31,15 +36,16 @@ class func isAppleProRAWPixelFormat(_ pixelFormat: OSType) -> Bool
 
 ## See Also
 
-- [var availablePhotoPixelFormatTypes: [OSType]](avcapturephotooutput/availablephotopixelformattypes-3ydgm.md)
+### Determining supported pixel formats
+- [var availablePhotoPixelFormatTypes: [OSType]](./availablephotopixelformattypes-3ydgm.md)
   The pixel formats the capture output supports for photo capture.
-- [var availableRawPhotoPixelFormatTypes: [OSType]](avcapturephotooutput/availablerawphotopixelformattypes-9t9k5.md)
+- [var availableRawPhotoPixelFormatTypes: [OSType]](./availablerawphotopixelformattypes-9t9k5.md)
   The pixel formats the capture output supports for RAW photo capture.
-- [func supportedPhotoPixelFormatTypes(for: AVFileType) -> [OSType]](avcapturephotooutput/supportedphotopixelformattypes(for:).md)
+- [func supportedPhotoPixelFormatTypes(for: AVFileType) -> [OSType]](./supportedphotopixelformattypes%28for%29.md)
   Returns the list of uncompressed pixel formats supported for photo data in the specified file type.
-- [func supportedRawPhotoPixelFormatTypes(for: AVFileType) -> [OSType]](avcapturephotooutput/supportedrawphotopixelformattypes(for:).md)
+- [func supportedRawPhotoPixelFormatTypes(for: AVFileType) -> [OSType]](./supportedrawphotopixelformattypes%28for%29.md)
   Returns the list of Bayer RAW pixel formats supported for photo data in the specified file type.
-- [class func isBayerRAWPixelFormat(OSType) -> Bool](avcapturephotooutput/isbayerrawpixelformat(_:).md)
+- [class func isBayerRAWPixelFormat(OSType) -> Bool](./isbayerrawpixelformat%28_%29.md)
   Returns a Boolean value that indicates whether the pixel format is a Bayer RAW format.
 
 

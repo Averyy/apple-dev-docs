@@ -1,12 +1,13 @@
 # AudioHardwareError
 
 **Framework**: Core Audio  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Represents errors returned by the HAL
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration
@@ -18,19 +19,19 @@ struct AudioHardwareError
 ## Topics
 
 ### Initializers
-- [init(OSStatus)](audiohardwareerror/init(_:).md)
+- [init(OSStatus)](./audiohardwareerror/init%28_%29.md)
 ### Instance Properties
-- [let error: OSStatus](audiohardwareerror/error.md)
-- [var errorDescription: String?](audiohardwareerror/errordescription.md)
+- [let error: OSStatus](./audiohardwareerror/error.md)
+- [var errorDescription: String?](./audiohardwareerror/errordescription.md)
   Provides localized descriptions for the error constants unique to HAL . Note that the HAL’s functions can and will return other codes that are not covered here, in which case no description is provided.
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../Swift/error.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # expanded
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configuration options for an expanded experience.
 
@@ -16,7 +17,8 @@ var expanded: AVExperienceController.ExpandedConfiguration
 
 ## See Also
 
-- [AVExperienceController.ExpandedConfiguration](avexperiencecontroller/expandedconfiguration.md)
+### Configuring experiences
+- [AVExperienceController.ExpandedConfiguration](../expandedconfiguration.md)
   A structure that specifies options for an expanded experience.
 
 

@@ -1,7 +1,8 @@
 # CMSampleBuffer.MultiSampleContent
 
 **Framework**: Core Media  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 This is a marker protocol to indicate content that supports multiple samples.
 
@@ -23,13 +24,13 @@ protocol MultiSampleContent : CMSampleBuffer.Content
 ## Relationships
 
 ### Inherits From
-- [CMSampleBuffer.Content](cmsamplebuffer/content.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CMSampleBuffer.Content](./content.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 ### Conforming Types
-- [CMReadOnlyDataBlockBuffer](cmreadonlydatablockbuffer.md)
-- [CMSampleBuffer.DynamicContent](cmsamplebuffer/dynamiccontent.md)
-- [CMSampleDataReference](cmsampledatareference.md)
+- [CMReadOnlyDataBlockBuffer](../cmreadonlydatablockbuffer.md)
+- [CMSampleBuffer.DynamicContent](./dynamiccontent.md)
+- [CMSampleDataReference](../cmsampledatareference.md)
 
 
 ---

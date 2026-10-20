@@ -1,7 +1,8 @@
 # curStateRange
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 8-bit integer specifying the number of entries in a given dead-key state range.
 
@@ -13,6 +14,10 @@ An unsigned 8-bit integer specifying the number of entries in a given dead-key s
 
 ```swift
 var curStateRange: UInt8
+```
+
+```c
+UInt8 curStateRange;
 ```
 
 

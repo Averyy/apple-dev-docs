@@ -1,7 +1,8 @@
 # disabled
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Do not apply collision resolution to this label. The label will always be displayed.
 

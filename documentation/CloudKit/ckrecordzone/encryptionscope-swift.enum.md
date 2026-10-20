@@ -1,7 +1,8 @@
 # CKRecordZone.EncryptionScope
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -18,25 +19,29 @@
 enum EncryptionScope
 ```
 
+```c
+enum CKRecordZoneEncryptionScope : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [CKRecordZone.EncryptionScope.perRecord](ckrecordzone/encryptionscope-swift.enum/perrecord.md)
+- [CKRecordZone.EncryptionScope.perRecord](./encryptionscope-swift.enum/perrecord.md)
   Zone uses per-record encryption keys for any encrypted values on a record or share.
-- [CKRecordZone.EncryptionScope.perZone](ckrecordzone/encryptionscope-swift.enum/perzone.md)
+- [CKRecordZone.EncryptionScope.perZone](./encryptionscope-swift.enum/perzone.md)
   Zone uses per-zone encryption keys for encrypted values across all records and the zone-wide share, if present.
 ### Initializers
-- [init?(rawValue: Int)](ckrecordzone/encryptionscope-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./encryptionscope-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

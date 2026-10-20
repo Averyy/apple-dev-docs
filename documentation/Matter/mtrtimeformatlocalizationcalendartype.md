@@ -1,7 +1,8 @@
 # MTRTimeFormatLocalizationCalendarType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,34 +19,38 @@
 enum MTRTimeFormatLocalizationCalendarType
 ```
 
+```c
+enum MTRTimeFormatLocalizationCalendarType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRTimeFormatLocalizationCalendarType.buddhist](mtrtimeformatlocalizationcalendartype/buddhist.md)
-- [MTRTimeFormatLocalizationCalendarType.chinese](mtrtimeformatlocalizationcalendartype/chinese.md)
-- [MTRTimeFormatLocalizationCalendarType.coptic](mtrtimeformatlocalizationcalendartype/coptic.md)
-- [MTRTimeFormatLocalizationCalendarType.ethiopian](mtrtimeformatlocalizationcalendartype/ethiopian.md)
-- [MTRTimeFormatLocalizationCalendarType.gregorian](mtrtimeformatlocalizationcalendartype/gregorian.md)
-- [MTRTimeFormatLocalizationCalendarType.hebrew](mtrtimeformatlocalizationcalendartype/hebrew.md)
-- [MTRTimeFormatLocalizationCalendarType.indian](mtrtimeformatlocalizationcalendartype/indian.md)
-- [MTRTimeFormatLocalizationCalendarType.islamic](mtrtimeformatlocalizationcalendartype/islamic.md)
-- [MTRTimeFormatLocalizationCalendarType.japanese](mtrtimeformatlocalizationcalendartype/japanese.md)
-- [MTRTimeFormatLocalizationCalendarType.korean](mtrtimeformatlocalizationcalendartype/korean.md)
-- [MTRTimeFormatLocalizationCalendarType.persian](mtrtimeformatlocalizationcalendartype/persian.md)
-- [MTRTimeFormatLocalizationCalendarType.taiwanese](mtrtimeformatlocalizationcalendartype/taiwanese.md)
-- [MTRTimeFormatLocalizationCalendarType.useActiveLocale](mtrtimeformatlocalizationcalendartype/useactivelocale.md)
+- [MTRTimeFormatLocalizationCalendarType.buddhist](./mtrtimeformatlocalizationcalendartype/buddhist.md)
+- [MTRTimeFormatLocalizationCalendarType.chinese](./mtrtimeformatlocalizationcalendartype/chinese.md)
+- [MTRTimeFormatLocalizationCalendarType.coptic](./mtrtimeformatlocalizationcalendartype/coptic.md)
+- [MTRTimeFormatLocalizationCalendarType.ethiopian](./mtrtimeformatlocalizationcalendartype/ethiopian.md)
+- [MTRTimeFormatLocalizationCalendarType.gregorian](./mtrtimeformatlocalizationcalendartype/gregorian.md)
+- [MTRTimeFormatLocalizationCalendarType.hebrew](./mtrtimeformatlocalizationcalendartype/hebrew.md)
+- [MTRTimeFormatLocalizationCalendarType.indian](./mtrtimeformatlocalizationcalendartype/indian.md)
+- [MTRTimeFormatLocalizationCalendarType.islamic](./mtrtimeformatlocalizationcalendartype/islamic.md)
+- [MTRTimeFormatLocalizationCalendarType.japanese](./mtrtimeformatlocalizationcalendartype/japanese.md)
+- [MTRTimeFormatLocalizationCalendarType.korean](./mtrtimeformatlocalizationcalendartype/korean.md)
+- [MTRTimeFormatLocalizationCalendarType.persian](./mtrtimeformatlocalizationcalendartype/persian.md)
+- [MTRTimeFormatLocalizationCalendarType.taiwanese](./mtrtimeformatlocalizationcalendartype/taiwanese.md)
+- [MTRTimeFormatLocalizationCalendarType.useActiveLocale](./mtrtimeformatlocalizationcalendartype/useactivelocale.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrtimeformatlocalizationcalendartype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrtimeformatlocalizationcalendartype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

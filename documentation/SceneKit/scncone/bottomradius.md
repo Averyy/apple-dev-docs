@@ -1,23 +1,28 @@
 # bottomRadius
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radius of the cone’s circular base. Animatable.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 var bottomRadius: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat bottomRadius;
 ```
 
 #### Discussion
@@ -26,13 +31,14 @@ The cone is centered in its local coordinate system. For example, the base of a 
 
 If either the top or bottom radius is zero, the geometry forms a cone that tapers to an apex point at that end. If both top and bottom radii are nonzero, the geometry forms a frustum that tapers (or expands) from a circular base to a circular top. If both top and bottom radii are zero or less, or either if the top or bottom radius is less than zero, the geometry is empty. The default bottom radius is `0.5`.
 
-You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
+You can animate changes to this property’s value. See [Animating SceneKit Content](../animating-scenekit-content.md).
 
 ## See Also
 
-- [var topRadius: CGFloat](scncone/topradius.md)
+### Adjusting a Cone’s Dimensions
+- [var topRadius: CGFloat](./topradius.md)
   The radius of the cone’s circular top. Animatable.
-- [var height: CGFloat](scncone/height.md)
+- [var height: CGFloat](./height.md)
   The extent of the cylinder along its y-axis. Animatable.
 
 

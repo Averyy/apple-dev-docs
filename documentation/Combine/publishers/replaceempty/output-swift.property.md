@@ -1,7 +1,8 @@
 # output
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The element to deliver when the upstream publisher finishes without delivering any elements.
 
@@ -22,7 +23,8 @@ let output: Publishers.ReplaceEmpty<Upstream>.Output
 
 ## See Also
 
-- [let upstream: Upstream](publishers/replaceempty/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
 
 

@@ -1,7 +1,8 @@
 # referenceRasterWidth
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width in pixels of the 2D coordinate system to define the rectangle.
 

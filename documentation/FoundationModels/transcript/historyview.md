@@ -1,7 +1,8 @@
 # Transcript.HistoryView
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A mutable view into the conversational entries of a transcript.
 
@@ -22,40 +23,41 @@ struct HistoryView
 ## Topics
 
 ### Instance Methods
-- [func append(Transcript.Entry)](transcript/historyview/append(_:).md)
+- [func append(Transcript.Entry)](./historyview/append%28_%29.md)
   Adds an entry to the end of the history view.
-- [func append(contentsOf: some Sequence<Transcript.Entry>)](transcript/historyview/append(contentsof:).md)
+- [func append(contentsOf: some Sequence<Transcript.Entry>)](./historyview/append%28contentsof%29.md)
   Adds the entries of a sequence to the end of the history view.
 ### Subscripts
-- [subscript(_:)](transcript/historyview/subscript(_:).md)
+- [subscript(_:)](./historyview/subscript%28_%29.md)
   Accesses the subsequence of entries within the specified bounds.
 ### Type Aliases
-- [Transcript.HistoryView.Element](transcript/historyview/element.md)
+- [Transcript.HistoryView.Element](./historyview/element.md)
   The type of entry the view contains.
-- [Transcript.HistoryView.SubSequence](transcript/historyview/subsequence.md)
+- [Transcript.HistoryView.SubSequence](./historyview/subsequence.md)
   The type that represents a contiguous subrange of the view’s entries.
 ### Default Implementations
-- [ExpressibleByArrayLiteral Implementations](transcript/historyview/expressiblebyarrayliteral-implementations.md)
-- [MutableCollection Implementations](transcript/historyview/mutablecollection-implementations.md)
+- [ExpressibleByArrayLiteral Implementations](./historyview/expressiblebyarrayliteral-implementations.md)
+- [MutableCollection Implementations](./historyview/mutablecollection-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [MutableCollection](../swift/mutablecollection.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [RangeReplaceableCollection](../swift/rangereplaceablecollection.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../Swift/bidirectionalcollection.md)
+- [Collection](../../Swift/collection.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [MutableCollection](../../Swift/mutablecollection.md)
+- [RandomAccessCollection](../../Swift/randomaccesscollection.md)
+- [RangeReplaceableCollection](../../Swift/rangereplaceablecollection.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [var history: Transcript.HistoryView](transcript/history.md)
+### Accessing the transcript history
+- [var history: Transcript.HistoryView](./history.md)
   The transcript entries excluding the leading instructions entry, if present.
 
 

@@ -1,7 +1,8 @@
 # AppStoreVersionExperimentTreatmentLocalization
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The localized screenshots, previews, and text for one treatment variant in an App Store product page A/B experiment.
 
@@ -10,16 +11,16 @@ The localized screenshots, previews, and text for one treatment variant in an Ap
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperimentTreatmentLocalization
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionExperimentTreatmentLocalization.Attributes](appstoreversionexperimenttreatmentlocalization/attributes-data.dictionary.md)
+- [object AppStoreVersionExperimentTreatmentLocalization.Attributes](./appstoreversionexperimenttreatmentlocalization/attributes-data.dictionary.md)
   Attributes that describe an app store version experiment treatment localization resource.
-- [object AppStoreVersionExperimentTreatmentLocalization.Relationships](appstoreversionexperimenttreatmentlocalization/relationships-data.dictionary.md)
+- [object AppStoreVersionExperimentTreatmentLocalization.Relationships](./appstoreversionexperimenttreatmentlocalization/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,17 +29,18 @@ object AppStoreVersionExperimentTreatmentLocalization
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (AppStoreVersionExperimentTreatmentLocalization.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersionExperimentTreatmentLocalizations`
 
 ## See Also
 
-- [object AppStoreVersionExperimentTreatmentLocalizationCreateRequest](appstoreversionexperimenttreatmentlocalizationcreaterequest.md)
+### Objects
+- [object AppStoreVersionExperimentTreatmentLocalizationCreateRequest](./appstoreversionexperimenttreatmentlocalizationcreaterequest.md)
   The request body you use to create an App Store version experiment treatment localization.
-- [object AppStoreVersionExperimentTreatmentLocalizationResponse](appstoreversionexperimenttreatmentlocalizationresponse.md)
+- [object AppStoreVersionExperimentTreatmentLocalizationResponse](./appstoreversionexperimenttreatmentlocalizationresponse.md)
   The response body for endpoints that create, read, or modify a localized treatment for an App Store experiment.
-- [object AppStoreVersionExperimentTreatmentLocalizationsResponse](appstoreversionexperimenttreatmentlocalizationsresponse.md)
+- [object AppStoreVersionExperimentTreatmentLocalizationsResponse](./appstoreversionexperimenttreatmentlocalizationsresponse.md)
   The response body for endpoints that list localized treatments for an App Store version experiment.
-- [object AppStoreVersionExperimentTreatmentLocalizationPlacementsLinkagesResponse](appstoreversionexperimenttreatmentlocalizationplacementslinkagesresponse.md)
+- [object AppStoreVersionExperimentTreatmentLocalizationPlacementsLinkagesResponse](./appstoreversionexperimenttreatmentlocalizationplacementslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
 
 

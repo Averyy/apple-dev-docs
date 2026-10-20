@@ -1,7 +1,8 @@
 # drop(untilOutputFrom:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ignores elements from the upstream publisher until it receives an element from a second publisher.
 
@@ -26,7 +27,7 @@ A publisher that drops elements from the upstream publisher until the `other` pu
 
 #### Discussion
 
-Use [`drop(untilOutputFrom:)`](publisher/drop(untiloutputfrom:).md) to ignore elements from the upstream publisher until another, second, publisher delivers its first element. This publisher requests a single value from the second publisher, and it ignores (drops) all elements from the upstream publisher until the second publisher produces a value. After the second publisher produces an element, [`drop(untilOutputFrom:)`](publisher/drop(untiloutputfrom:).md) cancels its subscription to the second publisher, and allows events from the upstream publisher to pass through.
+Use [`drop(untilOutputFrom:)`](./drop%28untiloutputfrom%29.md) to ignore elements from the upstream publisher until another, second, publisher delivers its first element. This publisher requests a single value from the second publisher, and it ignores (drops) all elements from the upstream publisher until the second publisher produces a value. After the second publisher produces an element, [`drop(untilOutputFrom:)`](./drop%28untiloutputfrom%29.md) cancels its subscription to the second publisher, and allows events from the upstream publisher to pass through.
 
 After this publisher receives a subscription from the upstream publisher, it passes through backpressure requests from downstream to the upstream publisher. If the upstream publisher acts on those requests before the other publisher produces an item, this publisher drops the elements it receives from the upstream publisher.
 
@@ -53,31 +54,32 @@ upstream.send(4)
 
 ## See Also
 
-- [func dropFirst(Int) -> Publishers.Drop<Self>](publisher/dropfirst(_:).md)
+### Applying sequence operations to elements
+- [func dropFirst(Int) -> Publishers.Drop<Self>](./dropfirst%28_%29.md)
   Omits the specified number of elements before republishing subsequent elements.
-- [func drop(while: (Self.Output) -> Bool) -> Publishers.DropWhile<Self>](publisher/drop(while:).md)
+- [func drop(while: (Self.Output) -> Bool) -> Publishers.DropWhile<Self>](./drop%28while%29.md)
   Omits elements from the upstream publisher until a given closure returns false, before republishing all remaining elements.
-- [func tryDrop(while: (Self.Output) throws -> Bool) -> Publishers.TryDropWhile<Self>](publisher/trydrop(while:).md)
+- [func tryDrop(while: (Self.Output) throws -> Bool) -> Publishers.TryDropWhile<Self>](./trydrop%28while%29.md)
   Omits elements from the upstream publisher until an error-throwing closure returns false, before republishing all remaining elements.
-- [func append(Self.Output...) -> Publishers.Concatenate<Self, Publishers.Sequence<[Self.Output], Self.Failure>>](publisher/append(_:)-1qb8d.md)
+- [func append(Self.Output...) -> Publishers.Concatenate<Self, Publishers.Sequence<[Self.Output], Self.Failure>>](./append%28_%29-1qb8d.md)
   Appends a publisher’s output with the specified elements.
-- [func append<S>(S) -> Publishers.Concatenate<Self, Publishers.Sequence<S, Self.Failure>>](publisher/append(_:)-69sdn.md)
+- [func append<S>(S) -> Publishers.Concatenate<Self, Publishers.Sequence<S, Self.Failure>>](./append%28_%29-69sdn.md)
   Appends a publisher’s output with the specified sequence.
-- [func append<P>(P) -> Publishers.Concatenate<Self, P>](publisher/append(_:)-5yh02.md)
+- [func append<P>(P) -> Publishers.Concatenate<Self, P>](./append%28_%29-5yh02.md)
   Appends the output of this publisher with the elements emitted by the given publisher.
-- [func prepend(Self.Output...) -> Publishers.Concatenate<Publishers.Sequence<[Self.Output], Self.Failure>, Self>](publisher/prepend(_:)-7wk5l.md)
+- [func prepend(Self.Output...) -> Publishers.Concatenate<Publishers.Sequence<[Self.Output], Self.Failure>, Self>](./prepend%28_%29-7wk5l.md)
   Prefixes a publisher’s output with the specified values.
-- [func prepend<S>(S) -> Publishers.Concatenate<Publishers.Sequence<S, Self.Failure>, Self>](publisher/prepend(_:)-v9sb.md)
+- [func prepend<S>(S) -> Publishers.Concatenate<Publishers.Sequence<S, Self.Failure>, Self>](./prepend%28_%29-v9sb.md)
   Prefixes a publisher’s output with the specified sequence.
-- [func prepend<P>(P) -> Publishers.Concatenate<P, Self>](publisher/prepend(_:)-5dj9c.md)
+- [func prepend<P>(P) -> Publishers.Concatenate<P, Self>](./prepend%28_%29-5dj9c.md)
   Prefixes the output of this publisher with the elements emitted by the given publisher.
-- [func prefix(Int) -> Publishers.Output<Self>](publisher/prefix(_:).md)
+- [func prefix(Int) -> Publishers.Output<Self>](./prefix%28_%29.md)
   Republishes elements up to the specified maximum count.
-- [func prefix(while: (Self.Output) -> Bool) -> Publishers.PrefixWhile<Self>](publisher/prefix(while:).md)
+- [func prefix(while: (Self.Output) -> Bool) -> Publishers.PrefixWhile<Self>](./prefix%28while%29.md)
   Republishes elements while a predicate closure indicates publishing should continue.
-- [func tryPrefix(while: (Self.Output) throws -> Bool) -> Publishers.TryPrefixWhile<Self>](publisher/tryprefix(while:).md)
+- [func tryPrefix(while: (Self.Output) throws -> Bool) -> Publishers.TryPrefixWhile<Self>](./tryprefix%28while%29.md)
   Republishes elements while an error-throwing predicate closure indicates publishing should continue.
-- [func prefix<P>(untilOutputFrom: P) -> Publishers.PrefixUntilOutput<Self, P>](publisher/prefix(untiloutputfrom:).md)
+- [func prefix<P>(untilOutputFrom: P) -> Publishers.PrefixUntilOutput<Self, P>](./prefix%28untiloutputfrom%29.md)
   Republishes elements until another publisher emits an element.
 
 

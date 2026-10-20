@@ -1,7 +1,8 @@
 # rotationMatrix()
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -18,10 +19,15 @@
 func rotationMatrix() -> matrix_float3x3
 ```
 
+```objc
+- (matrix_float3x3) rotationMatrix;
+```
+
 ## See Also
 
-- [func eulerAngles() -> vector_float3](sktransformnode/eulerangles.md)
-- [func quaternion() -> simd_quatf](sktransformnode/quaternion.md)
+### Reading the Current Rotation
+- [func eulerAngles() -> vector_float3](./eulerangles%28%29.md)
+- [func quaternion() -> simd_quatf](./quaternion%28%29.md)
 
 
 ---

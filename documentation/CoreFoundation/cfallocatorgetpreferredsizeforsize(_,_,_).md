@@ -1,23 +1,28 @@
 # CFAllocatorGetPreferredSizeForSize(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtains the number of bytes likely to be allocated upon a specific request.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFAllocatorGetPreferredSizeForSize(_ allocator: CFAllocator!, _ size: CFIndex, _ hint: CFOptionFlags) -> CFIndex
+```
+
+```c
+extern CFIndex CFAllocatorGetPreferredSizeForSize(CFAllocatorRef allocator, CFIndex size, CFOptionFlags hint);
 ```
 
 #### Return Value
@@ -40,11 +45,12 @@ If no function callback is assigned to the `preferredSize` field of the allocato
 
 ## See Also
 
-- [func CFAllocatorAllocate(CFAllocator!, CFIndex, CFOptionFlags) -> UnsafeMutableRawPointer!](cfallocatorallocate(_:_:_:).md)
+### Managing Memory with an Allocator
+- [func CFAllocatorAllocate(CFAllocator!, CFIndex, CFOptionFlags) -> UnsafeMutableRawPointer!](./cfallocatorallocate%28_,_,_%29.md)
   Allocates memory using the specified allocator.
-- [func CFAllocatorDeallocate(CFAllocator!, UnsafeMutableRawPointer!)](cfallocatordeallocate(_:_:).md)
+- [func CFAllocatorDeallocate(CFAllocator!, UnsafeMutableRawPointer!)](./cfallocatordeallocate%28_,_%29.md)
   Deallocates a block of memory with a given allocator.
-- [func CFAllocatorReallocate(CFAllocator!, UnsafeMutableRawPointer!, CFIndex, CFOptionFlags) -> UnsafeMutableRawPointer!](cfallocatorreallocate(_:_:_:_:).md)
+- [func CFAllocatorReallocate(CFAllocator!, UnsafeMutableRawPointer!, CFIndex, CFOptionFlags) -> UnsafeMutableRawPointer!](./cfallocatorreallocate%28_,_,_,_%29.md)
   Reallocates memory using the specified allocator.
 
 

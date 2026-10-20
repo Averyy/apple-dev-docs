@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The value of this type’s nested content.
@@ -24,9 +25,10 @@ The value of this type’s nested content.
 
 ## See Also
 
-- [associatedtype Body : TabContent](tabcontent/body-swift.associatedtype.md)
+### Setting tab content
+- [associatedtype Body : TabContent](./body-swift.associatedtype.md)
   The type of content representing the body of this content type.
-- [associatedtype TabValue : Hashable](tabcontent/tabvalue.md)
+- [associatedtype TabValue : Hashable](./tabvalue.md)
   The type used to drive selection for the containing tab view.
 
 

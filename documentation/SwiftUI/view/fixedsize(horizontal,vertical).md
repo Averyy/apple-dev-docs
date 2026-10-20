@@ -1,7 +1,8 @@
 # fixedSize(horizontal:vertical:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fixes this view at its ideal size in the specified dimensions.
 
@@ -27,7 +28,7 @@ A view that fixes this view at its ideal size in the dimensions specified by `ho
 
 #### Discussion
 
-This function behaves like [`fixedSize()`](view/fixedsize().md), except with `fixedSize(horizontal:vertical:)` the fixing of the axes can be optionally specified in one or both dimensions. For example, if you horizontally fix a text view before wrapping it in the frame view, you’re telling the text view to maintain its ideal *width*. The view calculates this to be the space needed to represent the entire string.
+This function behaves like [`fixedSize()`](./fixedsize%28%29.md), except with `fixedSize(horizontal:vertical:)` the fixing of the axes can be optionally specified in one or both dimensions. For example, if you horizontally fix a text view before wrapping it in the frame view, you’re telling the text view to maintain its ideal *width*. The view calculates this to be the space needed to represent the entire string.
 
 ```swift
 Text("A single line of text, too long to fit in a box.")
@@ -38,7 +39,7 @@ Text("A single line of text, too long to fit in a box.")
 
 This can result in the view exceeding the parent’s bounds, which may or may not be the effect you want.
 
-![A screenshot showing a text view exceeding the bounds of its](/images/com.apple.SwiftUI/SwiftUI-View-fixedSize-3@2x.png)
+![A screenshot showing a text view exceeding the bounds of its](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-fixedSize-3@2x.png)
 
 ## Parameters
 
@@ -47,23 +48,24 @@ This can result in the view exceeding the parent’s bounds, which may or may no
 
 ## See Also
 
-- [func frame(width: CGFloat?, height: CGFloat?, alignment: Alignment) -> some View](view/frame(width:height:alignment:).md)
+### Influencing a view’s size
+- [func frame(width: CGFloat?, height: CGFloat?, alignment: Alignment) -> some View](./frame%28width,height,alignment%29.md)
   Positions this view within an invisible frame with the specified size.
-- [func frame(depth: CGFloat?, alignment: DepthAlignment) -> some View](view/frame(depth:alignment:).md)
+- [func frame(depth: CGFloat?, alignment: DepthAlignment) -> some View](./frame%28depth,alignment%29.md)
   Positions this view within an invisible frame with the specified depth.
-- [func frame(minWidth: CGFloat?, idealWidth: CGFloat?, maxWidth: CGFloat?, minHeight: CGFloat?, idealHeight: CGFloat?, maxHeight: CGFloat?, alignment: Alignment) -> some View](view/frame(minwidth:idealwidth:maxwidth:minheight:idealheight:maxheight:alignment:).md)
+- [func frame(minWidth: CGFloat?, idealWidth: CGFloat?, maxWidth: CGFloat?, minHeight: CGFloat?, idealHeight: CGFloat?, maxHeight: CGFloat?, alignment: Alignment) -> some View](./frame%28minwidth,idealwidth,maxwidth,minheight,idealheight,maxheight,alignment%29.md)
   Positions this view within an invisible frame having the specified size constraints.
-- [func frame(minDepth: CGFloat?, idealDepth: CGFloat?, maxDepth: CGFloat?, alignment: DepthAlignment) -> some View](view/frame(mindepth:idealdepth:maxdepth:alignment:).md)
+- [func frame(minDepth: CGFloat?, idealDepth: CGFloat?, maxDepth: CGFloat?, alignment: DepthAlignment) -> some View](./frame%28mindepth,idealdepth,maxdepth,alignment%29.md)
   Positions this view within an invisible frame having the specified depth constraints.
-- [func containerRelativeFrame(Axis.Set, alignment: Alignment) -> some View](view/containerrelativeframe(_:alignment:).md)
+- [func containerRelativeFrame(Axis.Set, alignment: Alignment) -> some View](./containerrelativeframe%28_,alignment%29.md)
   Positions this view within an invisible frame with a size relative to the nearest container.
-- [func containerRelativeFrame(Axis.Set, alignment: Alignment, (CGFloat, Axis) -> CGFloat) -> some View](view/containerrelativeframe(_:alignment:_:).md)
+- [func containerRelativeFrame(Axis.Set, alignment: Alignment, (CGFloat, Axis) -> CGFloat) -> some View](./containerrelativeframe%28_,alignment,_%29.md)
   Positions this view within an invisible frame with a size relative to the nearest container.
-- [func containerRelativeFrame(Axis.Set, count: Int, span: Int, spacing: CGFloat, alignment: Alignment) -> some View](view/containerrelativeframe(_:count:span:spacing:alignment:).md)
+- [func containerRelativeFrame(Axis.Set, count: Int, span: Int, spacing: CGFloat, alignment: Alignment) -> some View](./containerrelativeframe%28_,count,span,spacing,alignment%29.md)
   Positions this view within an invisible frame with a size relative to the nearest container.
-- [func fixedSize() -> some View](view/fixedsize.md)
+- [func fixedSize() -> some View](./fixedsize%28%29.md)
   Fixes this view at its ideal size.
-- [func layoutPriority(Double) -> some View](view/layoutpriority(_:).md)
+- [func layoutPriority(Double) -> some View](./layoutpriority%28_%29.md)
   Sets the priority by which a parent layout should apportion space to this child.
 
 

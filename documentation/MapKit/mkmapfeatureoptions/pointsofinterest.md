@@ -1,7 +1,8 @@
 # pointsOfInterest
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The option that represents points of interest such as museums, cafes, parks, or schools.
 
@@ -17,11 +18,16 @@ The option that represents points of interest such as museums, cafes, parks, or 
 static var pointsOfInterest: MKMapFeatureOptions { get }
 ```
 
+```c
+MKMapFeatureOptionPointsOfInterest
+```
+
 ## See Also
 
-- [static var physicalFeatures: MKMapFeatureOptions](mkmapfeatureoptions/physicalfeatures.md)
+### Selecting interactive map features
+- [static var physicalFeatures: MKMapFeatureOptions](./physicalfeatures.md)
   The option that represents physical map features such as mountain ranges, rivers, and ocean basins.
-- [static var territories: MKMapFeatureOptions](mkmapfeatureoptions/territories.md)
+- [static var territories: MKMapFeatureOptions](./territories.md)
   The option that represents territorial boundaries such as a national border, a state boundary, or a neighborhood.
 
 

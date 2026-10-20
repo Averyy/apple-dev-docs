@@ -1,7 +1,8 @@
 # cameraID
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the immersive camera associated with this lens definition instance.
 

@@ -1,7 +1,8 @@
 # resume(throwing:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resume the task awaiting the continuation by having it throw an error from its suspension point
 

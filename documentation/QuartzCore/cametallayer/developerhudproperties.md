@@ -1,7 +1,8 @@
 # developerHUDProperties
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The properties of the Metal performance heads-up display.
 
@@ -17,6 +18,10 @@ The properties of the Metal performance heads-up display.
 
 ```swift
 var developerHUDProperties: [AnyHashable : Any]? { get set }
+```
+
+```objc
+@property (copy, nullable) NSDictionary * developerHUDProperties;
 ```
 
 #### Discussion

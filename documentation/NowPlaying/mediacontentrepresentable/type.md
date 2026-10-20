@@ -2,6 +2,7 @@
 
 **Framework**: Now Playing  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The media type (audio or video).

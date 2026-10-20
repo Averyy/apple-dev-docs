@@ -1,7 +1,8 @@
 # PartResult.shape(_:)
 
 **Framework**: hvf  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The result is a Shape; data is in the ShapeWriter
 

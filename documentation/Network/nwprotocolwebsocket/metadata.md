@@ -1,7 +1,8 @@
 # NWProtocolWebSocket.Metadata
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A WebSocket message you configure when sending and receiving packets.
 
@@ -23,36 +24,36 @@ class Metadata
 ## Topics
 
 ### Sending Messages
-- [init(opcode: NWProtocolWebSocket.Opcode)](nwprotocolwebsocket/metadata/init(opcode:).md)
+- [init(opcode: NWProtocolWebSocket.Opcode)](./metadata/init%28opcode%29.md)
   Initializes a WebSocket message with a specific type code.
-- [NWProtocolWebSocket.Opcode](nwprotocolwebsocket/opcode.md)
+- [NWProtocolWebSocket.Opcode](./opcode.md)
   Types of messages that you send and receive on a WebSocket connection.
-- [func setPongHandler(DispatchQueue, handler: (NWError?) -> Void)](nwprotocolwebsocket/metadata/setponghandler(_:handler:).md)
+- [func setPongHandler(DispatchQueue, handler: (NWError?) -> Void)](./metadata/setponghandler%28_,handler%29.md)
   Sets a handler on a Ping message to be invoked when the corresponding Pong message is received.
-- [var closeCode: NWProtocolWebSocket.CloseCode](nwprotocolwebsocket/metadata/closecode.md)
+- [var closeCode: NWProtocolWebSocket.CloseCode](./metadata/closecode.md)
   The close code on a WebSocket message.
-- [NWProtocolWebSocket.CloseCode](nwprotocolwebsocket/closecode.md)
+- [NWProtocolWebSocket.CloseCode](./closecode.md)
   Types of codes used upon closing a WebSocket connection.
 ### Receiving Messages
-- [let opcode: NWProtocolWebSocket.Opcode](nwprotocolwebsocket/metadata/opcode.md)
+- [let opcode: NWProtocolWebSocket.Opcode](./metadata/opcode.md)
   The type code of a WebSocket message.
-- [var closeCode: NWProtocolWebSocket.CloseCode](nwprotocolwebsocket/metadata/closecode.md)
+- [var closeCode: NWProtocolWebSocket.CloseCode](./metadata/closecode.md)
   The close code on a WebSocket message.
-- [NWProtocolWebSocket.CloseCode](nwprotocolwebsocket/closecode.md)
+- [NWProtocolWebSocket.CloseCode](./closecode.md)
   Types of codes used upon closing a WebSocket connection.
 ### Inspecting Handshake Results
-- [var selectedSubprotocol: String?](nwprotocolwebsocket/metadata/selectedsubprotocol.md)
+- [var selectedSubprotocol: String?](./metadata/selectedsubprotocol.md)
   The subprotocol selected by the server during the WebSocket handshake.
-- [var additionalServerHeaders: [(String, String)]?](nwprotocolwebsocket/metadata/additionalserverheaders.md)
+- [var additionalServerHeaders: [(String, String)]?](./metadata/additionalserverheaders.md)
   Additional HTTP headers sent by the server during the WebSocket handshake.
 
 ## Relationships
 
 ### Inherits From
-- [NWProtocolMetadata](nwprotocolmetadata.md)
+- [NWProtocolMetadata](../nwprotocolmetadata.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

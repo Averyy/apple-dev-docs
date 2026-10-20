@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a new set containing the elements of this set that do not occur in the given set.
@@ -40,6 +41,12 @@ print(nonNeighbors)
 ## Parameters
 
 - `other`: A set of the same type as the current set.
+
+## Default Implementations
+
+### SetAlgebra Implementations
+- [func subtracting(Self) -> Self](./subtracting%28_%29-648yh.md)
+  Returns a new set containing the elements of this set that do not occur in the given set.
 
 
 ---

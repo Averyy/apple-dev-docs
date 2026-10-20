@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Accessory Transport Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A data object that contains the message content.
 
@@ -20,7 +21,8 @@ For messages from the system containing sensitive data, this data is encrypted a
 
 ## See Also
 
-- [let sessionID: UUID](transportmessage/sessionid.md)
+### Accessing message content
+- [let sessionID: UUID](./sessionid.md)
   A unique identifier for the message’s capability session.
 
 

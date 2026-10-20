@@ -1,7 +1,8 @@
 # init(forLocale:usage:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `UnitEnergy` which the specified `locale` prefers for the specific `usage`.
 

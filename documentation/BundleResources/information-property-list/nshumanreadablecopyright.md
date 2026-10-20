@@ -1,24 +1,27 @@
 # NSHumanReadableCopyright
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A human-readable copyright notice for the bundle.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSHumanReadableCopyright` (Copyright (human-readable))
+- **Type**: string
 
 ## See Also
 
-- [CFBundleVersion](information-property-list/cfbundleversion.md)
+### Bundle version
+- [CFBundleVersion](./cfbundleversion.md)
   The version of the build that identifies an iteration of the bundle.
-- [CFBundleShortVersionString](information-property-list/cfbundleshortversionstring.md)
+- [CFBundleShortVersionString](./cfbundleshortversionstring.md)
   The release or version number of the bundle.
-- [CFBundleInfoDictionaryVersion](information-property-list/cfbundleinfodictionaryversion.md)
+- [CFBundleInfoDictionaryVersion](./cfbundleinfodictionaryversion.md)
   The current version of the Information Property List structure.
 
 

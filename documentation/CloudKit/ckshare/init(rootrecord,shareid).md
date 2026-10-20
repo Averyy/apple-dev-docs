@@ -1,7 +1,8 @@
 # init(rootRecord:shareID:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new share for the specified record and record ID.
 
@@ -20,22 +21,27 @@ Creates a new share for the specified record and record ID.
 init(rootRecord: CKRecord, shareID: CKRecord.ID)
 ```
 
+```objc
+- (instancetype) initWithRootRecord:(CKRecord *) rootRecord shareID:(CKRecordID *) shareID;
+```
+
 #### Discussion
 
-When saving a newly created [`CKShare`](ckshare.md), you save both the share and its [`rootRecord`](ckshare/metadata/rootrecord.md) in the same [`CKModifyRecordsOperation`](ckmodifyrecordsoperation.md) batch.
+When saving a newly created [`CKShare`](../ckshare.md), you save both the share and its [`rootRecord`](./metadata/rootrecord.md) in the same [`CKModifyRecordsOperation`](../ckmodifyrecordsoperation.md) batch.
 
 ## Parameters
 
 - `rootRecord`: The record to share.
-- `shareID`: The [`CKRecord.ID`](ckrecord/id.md) for the share.
+- `shareID`: The [`CKRecord.ID`](../ckrecord/id.md) for the share.
 
 ## See Also
 
-- [init(coder: NSCoder)](ckshare/init(coder:).md)
+### Creating a Share
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Creates a share from a serialized instance.
-- [convenience init(rootRecord: CKRecord)](ckshare/init(rootrecord:).md)
+- [convenience init(rootRecord: CKRecord)](./init%28rootrecord%29.md)
   Creates a new share for the specified record.
-- [init(recordZoneID: CKRecordZone.ID)](ckshare/init(recordzoneid:).md)
+- [init(recordZoneID: CKRecordZone.ID)](./init%28recordzoneid%29.md)
   Creates a new share for the specified record zone.
 
 

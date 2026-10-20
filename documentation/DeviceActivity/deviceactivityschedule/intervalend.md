@@ -1,7 +1,8 @@
 # intervalEnd
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date components that represent the end time for a schedule’s interval.
 
@@ -22,15 +23,16 @@ The system uses these components to compute `nextInterval.end`.
 
 ## See Also
 
-- [init(intervalStart: DateComponents, intervalEnd: DateComponents, repeats: Bool, warningTime: DateComponents?)](deviceactivityschedule/init(intervalstart:intervalend:repeats:warningtime:).md)
+### Creating a Schedule
+- [init(intervalStart: DateComponents, intervalEnd: DateComponents, repeats: Bool, warningTime: DateComponents?)](./init%28intervalstart,intervalend,repeats,warningtime%29.md)
   Creates a new schedule.
-- [var intervalStart: DateComponents](deviceactivityschedule/intervalstart.md)
+- [var intervalStart: DateComponents](./intervalstart.md)
   The date components that represent the start time for a schedule’s interval.
-- [var nextInterval: DateInterval?](deviceactivityschedule/nextinterval.md)
+- [var nextInterval: DateInterval?](./nextinterval.md)
   The schedule’s next interval or the current interval if one is ongoing.
-- [var repeats: Bool](deviceactivityschedule/repeats.md)
+- [var repeats: Bool](./repeats.md)
   A Boolean value that indicates whether the schedule recurs.
-- [var warningTime: DateComponents?](deviceactivityschedule/warningtime.md)
+- [var warningTime: DateComponents?](./warningtime.md)
   Optional components that generate a warning prior to regularly scheduled events.
 
 

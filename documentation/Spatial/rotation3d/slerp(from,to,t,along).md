@@ -1,7 +1,8 @@
 # slerp(from:to:t:along:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the spherical linear interpolation along either the shortest or the longest arc between two rotations.
 
@@ -11,7 +12,7 @@ Returns the spherical linear interpolation along either the shortest or the long
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -33,11 +34,12 @@ A new rotation. When `t = 0.0`, the result is the `from` rotation. When `t = 1.0
 
 ## See Also
 
-- [Rotation3D.SlerpPath](rotation3d/slerppath.md)
+### Transforming a 3D rotation structure
+- [Rotation3D.SlerpPath](./slerppath.md)
   Constants that define the arc that a slerp operation takes.
-- [var inverse: Rotation3D](rotation3d/inverse.md)
+- [var inverse: Rotation3D](./inverse.md)
   The inverse of the rotation.
-- [static let identity: Rotation3D](rotation3d/identity.md)
+- [static let identity: Rotation3D](./identity.md)
   The identity rotation.
 
 

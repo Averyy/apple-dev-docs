@@ -1,7 +1,8 @@
 # Fishing
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for fishing locations.
 
@@ -10,7 +11,7 @@ The point-of-interest category for fishing locations.
 
 ## Declaration
 
-```swift
+```
 readonly Fishing: "Fishing";
 ```
 

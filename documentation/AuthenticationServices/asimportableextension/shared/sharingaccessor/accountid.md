@@ -1,7 +1,8 @@
 # accountID
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID of the account that has been granted access to this shared entity.
 

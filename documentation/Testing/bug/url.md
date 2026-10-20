@@ -1,18 +1,19 @@
 # url
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL that links to more information about the bug, if available.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -24,7 +25,7 @@ var url: String?
 
 #### Discussion
 
-The value of this property represents a URL conforming to [`RFC 3986`](https://developer.apple.comhttps://www.ietf.org/rfc/rfc3986.txt).
+The value of this property represents a URL conforming to [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt).
 
 
 ---

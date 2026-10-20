@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a message identifier with the specified raw value.
 

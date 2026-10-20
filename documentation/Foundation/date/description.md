@@ -1,9 +1,10 @@
 # description
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The representation is useful for debugging only. There are a number of options to acquire a formatted string for a date including: date formatters (see [`NSDateFormatter`](https://developer.apple.com//apple_ref/occ/cl/NSDateFormatter) and [`Data Formatting Guide`](https://developer.apple.com//apple_ref/doc/uid/10000029i)), and the `Date` function `description(locale:)`.
+The representation is useful for debugging only. There are a number of options to acquire a formatted string for a date including: date formatters (see [NSDateFormatter](https://developer.apple.com//apple_ref/occ/cl/NSDateFormatter) and [Data Formatting Guide](https://developer.apple.com//apple_ref/doc/uid/10000029i)), and the `Date` function `description(locale:)`.
 
 **Availability**:
 - iOS 8.0+
@@ -22,9 +23,10 @@ var description: String { get }
 
 ## See Also
 
-- [func description(with: Locale?) -> String](date/description(with:).md)
+### Describing Dates
+- [func description(with: Locale?) -> String](./description%28with%29.md)
   Returns a string representation of the receiver using the given locale.
-- [var customPlaygroundQuickLook: PlaygroundQuickLook](date/customplaygroundquicklook.md)
+- [var customPlaygroundQuickLook: PlaygroundQuickLook](./customplaygroundquicklook.md)
   A custom playground Quick Look for the date.
 
 

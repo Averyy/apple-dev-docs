@@ -1,7 +1,8 @@
 # errSecRequestRejected
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The request is rejected.
 
@@ -18,6 +19,10 @@ The request is rejected.
 
 ```swift
 var errSecRequestRejected: OSStatus { get }
+```
+
+```c
+errSecRequestRejected
 ```
 
 

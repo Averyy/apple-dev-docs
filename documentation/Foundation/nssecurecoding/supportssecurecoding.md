@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 A Boolean value that indicates whether or not the class supports secure coding.
@@ -21,9 +22,13 @@ A Boolean value that indicates whether or not the class supports secure coding.
 static var supportsSecureCoding: Bool { get }
 ```
 
+```objc
+@property (class, readonly) BOOL supportsSecureCoding;
+```
+
 #### Discussion
 
-When you write a class that supports secure coding, ensure that this class property’s getter returns [`true`](https://developer.apple.com/documentation/swift/true).
+When you write a class that supports secure coding, ensure that this class property’s getter returns [`true`](../../Swift/true.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # insert(_:at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 mutating func insert(_ newElement: Base.Element, at i: Slice<Base>.Index)
 ```
+
+Available when `Base` conforms to `BidirectionalCollection` and `RangeReplaceableCollection`.
 
 
 ---

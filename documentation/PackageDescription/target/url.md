@@ -1,7 +1,8 @@
 # url
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of a binary target.
 
@@ -22,11 +23,12 @@ Binary targets are only available on Apple platforms.
 
 ## See Also
 
-- [static func binaryTarget(name: String, path: String) -> Target](target/binarytarget(name:path:).md)
+### Creating a Binary Target
+- [static func binaryTarget(name: String, path: String) -> Target](./binarytarget%28name,path%29.md)
   Creates a binary target that references an artifact on disk.
-- [static func binaryTarget(name: String, url: String, checksum: String) -> Target](target/binarytarget(name:url:checksum:).md)
+- [static func binaryTarget(name: String, url: String, checksum: String) -> Target](./binarytarget%28name,url,checksum%29.md)
   Creates a binary target that references a remote artifact.
-- [var checksum: String?](target/checksum.md)
+- [var checksum: String?](./checksum.md)
   The checksum for the archive file that contains the referenced binary artifact.
 
 

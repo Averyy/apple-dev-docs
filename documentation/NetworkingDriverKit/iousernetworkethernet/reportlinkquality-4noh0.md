@@ -1,16 +1,17 @@
 # ReportLinkQuality
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports the quality of the link between the device and your driver to the system.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn ReportLinkQuality(IOUserNetworkLinkQuality linkQuality);
 ```
 
@@ -24,17 +25,18 @@ Call this method to make the system aware of changes in the quality of the link 
 
 ## Parameters
 
-- `linkQuality`: The quality of the link between your driver and the device. For a list of possible values, see the constants in [`IOUserNetworkLinkQuality`](iousernetworklinkquality.md).
+- `linkQuality`: The quality of the link between your driver and the device. For a list of possible values, see the constants in [`IOUserNetworkLinkQuality`](../iousernetworklinkquality.md).
 
 ## See Also
 
-- [ReportLinkStatus](iousernetworkethernet/reportlinkstatus-5cxiq.md)
+### Reporting the Connection Status
+- [ReportLinkStatus](./reportlinkstatus-5cxiq.md)
   Reports the status of the link between the device and your driver to the system.
-- [ReportDataBandwidths](iousernetworkethernet/reportdatabandwidths-10ssx.md)
+- [ReportDataBandwidths](./reportdatabandwidths-10ssx.md)
   Reports the input and output bandwidth between the device and your driver to the system.
-- [IOUserNetworkLinkStatus](iousernetworklinkstatus.md)
+- [IOUserNetworkLinkStatus](../iousernetworklinkstatus.md)
   A type for specifying the state of your device’s connection.
-- [IOUserNetworkLinkQuality](iousernetworklinkquality.md)
+- [IOUserNetworkLinkQuality](../iousernetworklinkquality.md)
   A type for specifying the quality of your device’s connection to the host.
 
 

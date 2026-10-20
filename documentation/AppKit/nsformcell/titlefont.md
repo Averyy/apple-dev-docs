@@ -1,12 +1,13 @@
 # titleFont
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The font used to draw cell’s title.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ The font used to draw cell’s title.
 var titleFont: NSFont { get set }
 ```
 
+```objc
+@property (strong) NSFont * titleFont;
+```
+
 ## See Also
 
-- [var attributedTitle: NSAttributedString](nsformcell/attributedtitle.md)
+### Accessing a Cell’s Title
+- [var attributedTitle: NSAttributedString](./attributedtitle.md)
   The title of the cell as an attributed string.
-- [var title: String](nsformcell/title.md)
+- [var title: String](./title.md)
   The cell’s title text.
-- [var titleAlignment: NSTextAlignment](nsformcell/titlealignment.md)
+- [var titleAlignment: NSTextAlignment](./titlealignment.md)
   The alignment of the title.
-- [var titleBaseWritingDirection: NSWritingDirection](nsformcell/titlebasewritingdirection.md)
+- [var titleBaseWritingDirection: NSWritingDirection](./titlebasewritingdirection.md)
   The default writing direction used to render the form cell’s title.
-- [var titleWidth: CGFloat](nsformcell/titlewidth.md)
+- [var titleWidth: CGFloat](./titlewidth.md)
   The width of the title field.
 
 

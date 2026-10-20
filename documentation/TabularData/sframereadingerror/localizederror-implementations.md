@@ -1,11 +1,12 @@
 # LocalizedError Implementations
 
-**Framework**: TabularData
+**Framework**: TabularData  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var errorDescription: String?](sframereadingerror/errordescription.md)
+- [var errorDescription: String?](./errordescription.md)
   A localized message describing what error occurred.
 
 

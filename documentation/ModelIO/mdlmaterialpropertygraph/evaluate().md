@@ -1,7 +1,8 @@
 # evaluate()
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func evaluate()
+```
+
+```objc
+- (void) evaluate;
 ```
 
 

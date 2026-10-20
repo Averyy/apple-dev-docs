@@ -1,7 +1,8 @@
 # HMCharacteristicValueProgramMode.scheduleOverriddenToManual
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user has manually overridden the scheduled program.
 
@@ -19,11 +20,16 @@ The user has manually overridden the scheduled program.
 case scheduleOverriddenToManual
 ```
 
+```c
+HMCharacteristicValueProgramModeScheduleOverriddenToManual
+```
+
 ## See Also
 
-- [HMCharacteristicValueProgramMode.notScheduled](hmcharacteristicvalueprogrammode/notscheduled.md)
+### Constants
+- [HMCharacteristicValueProgramMode.notScheduled](./notscheduled.md)
   No program is scheduled.
-- [HMCharacteristicValueProgramMode.scheduled](hmcharacteristicvalueprogrammode/scheduled.md)
+- [HMCharacteristicValueProgramMode.scheduled](./scheduled.md)
   A program is scheduled.
 
 

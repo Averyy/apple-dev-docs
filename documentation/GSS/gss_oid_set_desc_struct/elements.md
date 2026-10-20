@@ -1,7 +1,8 @@
 # elements
 
 **Framework**: GSS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to the array of OID descriptors.
 
@@ -18,9 +19,14 @@ A pointer to the array of OID descriptors.
 var elements: gss_OID!
 ```
 
+```c
+gss_OID elements;
+```
+
 ## See Also
 
-- [var count: Int](gss_oid_set_desc_struct/count.md)
+### Instance Properties
+- [var count: Int](./count.md)
   The number of OID descriptors in the array.
 
 

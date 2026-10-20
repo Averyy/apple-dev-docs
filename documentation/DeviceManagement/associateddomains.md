@@ -1,7 +1,8 @@
 # AssociatedDomains
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures associated domains.
 
@@ -10,13 +11,13 @@ The payload that configures associated domains.
 
 ## Declaration
 
-```swift
+```
 object AssociatedDomains
 ```
 
 ## Mentions
 
-- [Implementing Platform SSO during Automated Device Enrollment](implementing-platform-sso-during-automated-device-enrollment.md)
+- [Implementing Platform SSO during Automated Device Enrollment](./implementing-platform-sso-during-automated-device-enrollment.md)
 
 #### Discussion
 
@@ -24,7 +25,7 @@ Specify `com.apple.associated-domains` as the payload type.
 
 You can use associated domains with features such as Extensible AppSSO, universal links, and Password AutoFill.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -36,7 +37,7 @@ You can use associated domains with features such as Extensible AppSSO, universa
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | macOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -84,7 +85,7 @@ You can use associated domains with features such as Extensible AppSSO, universa
 ## Topics
 
 ### Objects
-- [object AssociatedDomains.ConfigurationItem](associateddomains/configurationitem.md)
+- [object AssociatedDomains.ConfigurationItem](./associateddomains/configurationitem.md)
   A dictionary that maps apps to their associated domains.
 
 ## Properties
@@ -93,11 +94,12 @@ You can use associated domains with features such as Extensible AppSSO, universa
 
 ## See Also
 
-- [object AppLock](applock.md)
+### App management
+- [object AppLock](./applock.md)
   The payload that configures a device to run a single app.
-- [object AutonomousSingleAppMode](autonomoussingleappmode.md)
+- [object AutonomousSingleAppMode](./autonomoussingleappmode.md)
   The payload that configures Autonomous Single App mode.
-- [object NSExtensionManagement](nsextensionmanagement.md)
+- [object NSExtensionManagement](./nsextensionmanagement.md)
   The payload that configures the extensions that the system allows or disallows to run on the device.
 
 

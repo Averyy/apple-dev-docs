@@ -1,7 +1,8 @@
 # GeometrySource
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container for geometrical vector data.
 
@@ -16,41 +17,42 @@ struct GeometrySource
 
 #### Overview
 
-Mesh-anchor geometry ([`MeshDescriptor`](https://developer.apple.com/documentation/realitykit/meshdescriptor)) uses geometry sources to hold 3D data like vertices and normals in an efficent, array-like format. A Metal buffer wraps the data and other properties specify how to interpret that data.
+Mesh-anchor geometry ([`MeshDescriptor`](../RealityKit/meshdescriptor.md)) uses geometry sources to hold 3D data like vertices and normals in an efficent, array-like format. A Metal buffer wraps the data and other properties specify how to interpret that data.
 
-If [`componentsPerVector`](geometrysource/componentspervector.md) is greater than one, the element type of the geometry-source array is itself a sequence (pairs, triplets, and so on).
+If [`componentsPerVector`](./geometrysource/componentspervector.md) is greater than one, the element type of the geometry-source array is itself a sequence (pairs, triplets, and so on).
 
 ## Topics
 
 ### Inspecting geometry data
-- [var buffer: any MTLBuffer](geometrysource/buffer.md)
+- [var buffer: any MTLBuffer](./geometrysource/buffer.md)
   A Metal buffer that contains per-vector data for a geometry source.
-- [var count: Int](geometrysource/count.md)
+- [var count: Int](./geometrysource/count.md)
   The number of vectors in a geometry source.
-- [var format: MTLVertexFormat](geometrysource/format.md)
+- [var format: MTLVertexFormat](./geometrysource/format.md)
   The vertex format for data in a geometry source’s buffer.
-- [var componentsPerVector: Int](geometrysource/componentspervector.md)
+- [var componentsPerVector: Int](./geometrysource/componentspervector.md)
   The number of scalar components in each vector in a geometry source.
-- [var offset: Int](geometrysource/offset.md)
+- [var offset: Int](./geometrysource/offset.md)
   The offset, in bytes, from the beginning of a geometry source’s buffer.
-- [var stride: Int](geometrysource/stride.md)
+- [var stride: Int](./geometrysource/stride.md)
   The number of bytes between one vector and another in a geometry source’s buffer.
-- [var description: String](geometrysource/description.md)
+- [var description: String](./geometrysource/description.md)
   A textual representation of this geometry source.
 ### Default Implementations
-- [Equatable Implementations](geometrysource/equatable-implementations.md)
+- [Equatable Implementations](./geometrysource/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct GeometryElement](geometryelement.md)
+### Geometry
+- [struct GeometryElement](./geometryelement.md)
   A container for vertex indices of lines or triangles.
 
 

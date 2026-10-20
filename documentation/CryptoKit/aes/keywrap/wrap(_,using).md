@@ -1,7 +1,8 @@
 # wrap(_:using:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Wraps a key using the AES wrap algorithm.
 

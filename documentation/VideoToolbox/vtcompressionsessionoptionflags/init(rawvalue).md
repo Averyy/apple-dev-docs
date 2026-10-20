@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a flags structure with a raw value.
 

@@ -1,7 +1,8 @@
 # AdAttributionKitError.invalidImpressionJWSPayload
 
 **Framework**: AdAttributionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The attribution failed due to an invalid JWS payload.
 

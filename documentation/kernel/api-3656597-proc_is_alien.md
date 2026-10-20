@@ -1,14 +1,15 @@
 # proc_is_alien
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 bool proc_is_alien(proc_t p);
 ```
 

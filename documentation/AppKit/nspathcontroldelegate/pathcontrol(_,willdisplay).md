@@ -1,7 +1,8 @@
 # pathControl(_:willDisplay:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Implement this method to customize the Open panel shown by a pop-up–style path.
 
@@ -15,6 +16,10 @@ Implement this method to customize the Open panel shown by a pop-up–style path
 optional func pathControl(_ pathControl: NSPathControl, willDisplay openPanel: NSOpenPanel)
 ```
 
+```objc
+- (void) pathControl:(NSPathControl *) pathControl willDisplayOpenPanel:(NSOpenPanel *) openPanel;
+```
+
 #### Discussion
 
 This method is called before the Open panel is shown but after its allowed file types are set to the cell’s allowed types. At this time, you can further customize the Open panel as required. This method is called only when the style is set to `NSPathStylePopUp`. Implementation of this method is optional.
@@ -26,7 +31,8 @@ This method is called before the Open panel is shown but after its allowed file 
 
 ## See Also
 
-- [func pathControl(NSPathControl, willPopUp: NSMenu)](nspathcontroldelegate/pathcontrol(_:willpopup:).md)
+### Customizing a Pop-Up–Style Path
+- [func pathControl(NSPathControl, willPopUp: NSMenu)](./pathcontrol%28_,willpopup%29.md)
   Implement this method to customize the menu of a pop-up–style path.
 
 

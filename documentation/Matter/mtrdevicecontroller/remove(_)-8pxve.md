@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a Delegate from the device controller
 
@@ -18,6 +19,10 @@ Removes a Delegate from the device controller
 
 ```swift
 func remove(_ delegate: any MTRDeviceControllerDelegate)
+```
+
+```objc
+- (void) removeDeviceControllerDelegate:(id<MTRDeviceControllerDelegate>) delegate;
 ```
 
 

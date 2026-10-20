@@ -1,28 +1,30 @@
 # RightCenter
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 RightCenter
 ```
 
 ## See Also
 
-- [Right](videodriverkit/iouservideochannellabel/right.md)
-- [RightTopFront](videodriverkit/iouservideochannellabel/righttopfront.md)
-- [VerticalHeightRight](videodriverkit/iouservideochannellabel/verticalheightright.md)
+### Right channels
+- [Right](./right.md)
+- [RightTopFront](./righttopfront.md)
+- [VerticalHeightRight](./verticalheightright.md)
   WAVE: “Top Front Right”
-- [RightTopMiddle](videodriverkit/iouservideochannellabel/righttopmiddle.md)
-- [RightTopRear](videodriverkit/iouservideochannellabel/righttoprear.md)
-- [RightTotal](videodriverkit/iouservideochannellabel/righttotal.md)
+- [RightTopMiddle](./righttopmiddle.md)
+- [RightTopRear](./righttoprear.md)
+- [RightTotal](./righttotal.md)
   matrix encoded 4 channels
-- [RightWide](videodriverkit/iouservideochannellabel/rightwide.md)
+- [RightWide](./rightwide.md)
 
 
 ---

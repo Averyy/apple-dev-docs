@@ -1,7 +1,8 @@
 # url
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the URL of the document referenced by the remote go-to action.
 
@@ -17,6 +18,10 @@ Returns the URL of the document referenced by the remote go-to action.
 
 ```swift
 var url: URL { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSURL * URL;
 ```
 
 #### Return Value

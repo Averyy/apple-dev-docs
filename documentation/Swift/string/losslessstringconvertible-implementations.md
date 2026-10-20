@@ -1,11 +1,12 @@
 # LosslessStringConvertible Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init<S>(S)](string/init(_:)-50pwi.md)
+- [init<S>(S)](./init%28_%29-50pwi.md)
   Creates a new string containing the characters in the given sequence.
 
 

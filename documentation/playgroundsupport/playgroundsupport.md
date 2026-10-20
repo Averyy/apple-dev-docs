@@ -1,6 +1,7 @@
 # Playground Support
 
-**Framework**: Playground Support
+**Framework**: Playground Support  
+**Role**: Framework
 
 Share playground data, manage live views, and control the execution of a playground.
 
@@ -23,30 +24,30 @@ Traditional live views are available in playgrounds in Xcode and in Swift Playgr
 ## Topics
 
 ### Playground Pages
-- [class PlaygroundPage](playgroundpage.md)
+- [class PlaygroundPage](./playgroundpage.md)
   An object you use to configure the state of a playground page and its live view.
 ### Live Views
-- [protocol PlaygroundLiveViewable](playgroundliveviewable.md)
+- [protocol PlaygroundLiveViewable](./playgroundliveviewable.md)
   A protocol that displays an instance as a live view in a playground.
-- [enum PlaygroundLiveViewRepresentation](playgroundliveviewrepresentation.md)
+- [enum PlaygroundLiveViewRepresentation](./playgroundliveviewrepresentation.md)
   The supported types for displaying for live views in playgrounds.
-- [protocol PlaygroundLiveViewSafeAreaContainer](playgroundliveviewsafeareacontainer.md)
+- [protocol PlaygroundLiveViewSafeAreaContainer](./playgroundliveviewsafeareacontainer.md)
   A protocol that ensures that views fit without obstruction within the Swift Playgrounds user interface.
 ### Page-View Communication
-- [Messaging Between a Playground Page and the Always-On Live View](messaging_between_a_playground_page_and_the_always-on_live_view.md)
+- [Messaging Between a Playground Page and the Always-On Live View](./messaging_between_a_playground_page_and_the_always-on_live_view.md)
   Display the results of running a playground page's code in a persistent live view.
-- [class PlaygroundRemoteLiveViewProxy](playgroundremoteliveviewproxy.md)
+- [class PlaygroundRemoteLiveViewProxy](./playgroundremoteliveviewproxy.md)
   A proxy that facilitates message passing between the always-on live view and its corresponding playground page.
-- [protocol PlaygroundRemoteLiveViewProxyDelegate](playgroundremoteliveviewproxydelegate.md)
+- [protocol PlaygroundRemoteLiveViewProxyDelegate](./playgroundremoteliveviewproxydelegate.md)
   A delegate you use to receive messages from the always-on live view.
-- [protocol PlaygroundLiveViewMessageHandler](playgroundliveviewmessagehandler.md)
+- [protocol PlaygroundLiveViewMessageHandler](./playgroundliveviewmessagehandler.md)
   A handler you use to send and receive messages between the always-on live view and its corresponding playground page.
 ### Data Persistence
-- [class PlaygroundKeyValueStore](playgroundkeyvaluestore.md)
+- [class PlaygroundKeyValueStore](./playgroundkeyvaluestore.md)
   A data storage container you use to persist information across different sessions.
-- [enum PlaygroundValue](playgroundvalue.md)
+- [enum PlaygroundValue](./playgroundvalue.md)
   The types you can save in the key-value store or send in messages to live views.
-- [let playgroundSharedDataDirectory: URL](playgroundshareddatadirectory.md)
+- [let playgroundSharedDataDirectory: URL](./playgroundshareddatadirectory.md)
   The path to the directory containing data shared between all playgrounds in Xcode.
 
 

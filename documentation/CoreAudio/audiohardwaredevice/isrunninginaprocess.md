@@ -1,12 +1,13 @@
 # isRunningInAProcess
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Bool where true indicates that the device is running in at least one process on the system and false means that it isn’t running at all.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

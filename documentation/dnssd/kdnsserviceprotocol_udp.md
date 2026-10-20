@@ -1,7 +1,8 @@
 # kDNSServiceProtocol_UDP
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kDNSServiceProtocol_UDP: Int { get }
+```
+
+```c
+kDNSServiceProtocol_UDP
 ```
 
 #### Discussion

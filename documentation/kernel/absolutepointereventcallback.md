@@ -1,14 +1,15 @@
 # AbsolutePointerEventCallback
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*AbsolutePointerEventCallback)(OSObject *target, int buttons, IOGPoint *newLoc, IOGBounds *bounds, bool proximity, int pressure, int stylusAngle, AbsoluteTime ts, OSObject *sender, void *refcon);
 ```
 

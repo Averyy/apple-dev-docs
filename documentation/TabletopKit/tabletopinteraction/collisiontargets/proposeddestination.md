@@ -1,7 +1,8 @@
 # proposedDestination
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The currently proposed destination
 

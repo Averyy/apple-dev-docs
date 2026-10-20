@@ -1,14 +1,15 @@
 # ModePageFormatHeader
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct ModePageFormatHeader ModePageFormatHeader;
 ```
 
@@ -19,8 +20,8 @@ Mode Page format header.
 ## Topics
 
 ### Instance Properties
-- [PAGE_LENGTH](modepageformatheader/1476325-page_length.md)
-- [PS_PAGE_CODE](modepageformatheader/1476400-ps_page_code.md)
+- [PAGE_LENGTH](./modepageformatheader/api-1476325-page_length.md)
+- [PS_PAGE_CODE](./modepageformatheader/api-1476400-ps_page_code.md)
 
 
 ---

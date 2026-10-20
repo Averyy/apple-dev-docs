@@ -1,7 +1,8 @@
 # AccessorySensorUpdates.StreamError
 
 **Framework**: AudioAccessoryKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -15,18 +16,18 @@ enum StreamError
 ## Topics
 
 ### Enumeration Cases
-- [AccessorySensorUpdates.StreamError.connectionLost](accessorysensorupdates/streamerror/connectionlost.md)
+- [AccessorySensorUpdates.StreamError.connectionLost](./streamerror/connectionlost.md)
   The XPC connection was permanently lost; the stream is finished.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

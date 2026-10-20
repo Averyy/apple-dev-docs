@@ -1,7 +1,8 @@
 # serverPort
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The port number of the server.
 
@@ -13,6 +14,10 @@ The port number of the server.
 
 ```swift
 var serverPort: mach_port_t { get }
+```
+
+```objc
+@property (readonly) mach_port_t serverPort;
 ```
 
 

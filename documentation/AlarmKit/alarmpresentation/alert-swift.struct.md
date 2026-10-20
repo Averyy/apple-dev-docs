@@ -1,7 +1,8 @@
 # AlarmPresentation.Alert
 
 **Framework**: AlarmKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that describes the UI of the alert that appears when an alarm fires.
 
@@ -29,36 +30,37 @@ let alert = AlarmPresentation.Alert(title: "Eggs are ready!",
 ## Topics
 
 ### Creating an alert
-- [init(title: LocalizedStringResource, secondaryButton: AlarmButton?, secondaryButtonBehavior: AlarmPresentation.Alert.SecondaryButtonBehavior?)](alarmpresentation/alert-swift.struct/init(title:secondarybutton:secondarybuttonbehavior:).md)
+- [init(title: LocalizedStringResource, secondaryButton: AlarmButton?, secondaryButtonBehavior: AlarmPresentation.Alert.SecondaryButtonBehavior?)](./alert-swift.struct/init%28title,secondarybutton,secondarybuttonbehavior%29.md)
   Creates an alert for an alarm, with a system-provided stop control and optionally a second button.
-- [var title: LocalizedStringResource](alarmpresentation/alert-swift.struct/title.md)
+- [var title: LocalizedStringResource](./alert-swift.struct/title.md)
   The title of the alert.
 ### Creating a second button
-- [var secondaryButton: AlarmButton?](alarmpresentation/alert-swift.struct/secondarybutton.md)
+- [var secondaryButton: AlarmButton?](./alert-swift.struct/secondarybutton.md)
   The appearance of the secondary button.
-- [var secondaryButtonBehavior: AlarmPresentation.Alert.SecondaryButtonBehavior?](alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.property.md)
+- [var secondaryButtonBehavior: AlarmPresentation.Alert.SecondaryButtonBehavior?](./alert-swift.struct/secondarybuttonbehavior-swift.property.md)
   The defined behavior of the second button.
-- [AlarmPresentation.Alert.SecondaryButtonBehavior](alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum.md)
+- [AlarmPresentation.Alert.SecondaryButtonBehavior](./alert-swift.struct/secondarybuttonbehavior-swift.enum.md)
   Describes the behaviour of the second button.
 ### Deprecated
-- [init(title: LocalizedStringResource, stopButton: AlarmButton, secondaryButton: AlarmButton?, secondaryButtonBehavior: AlarmPresentation.Alert.SecondaryButtonBehavior?)](alarmpresentation/alert-swift.struct/init(title:stopbutton:secondarybutton:secondarybuttonbehavior:).md)
+- [init(title: LocalizedStringResource, stopButton: AlarmButton, secondaryButton: AlarmButton?, secondaryButtonBehavior: AlarmPresentation.Alert.SecondaryButtonBehavior?)](./alert-swift.struct/init%28title,stopbutton,secondarybutton,secondarybuttonbehavior%29.md)
   Creates an alert for an alarm.
-- [var stopButton: AlarmButton](alarmpresentation/alert-swift.struct/stopbutton.md)
+- [var stopButton: AlarmButton](./alert-swift.struct/stopbutton.md)
   The appearance of the stop button.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AlarmPresentation.Countdown](alarmpresentation/countdown-swift.struct.md)
+### Describing an alarm state
+- [AlarmPresentation.Countdown](./countdown-swift.struct.md)
   An object that describes the content required for the countdown UI.
-- [AlarmPresentation.Paused](alarmpresentation/paused-swift.struct.md)
+- [AlarmPresentation.Paused](./paused-swift.struct.md)
   An object that configures the UI for a paused timer state.
 
 

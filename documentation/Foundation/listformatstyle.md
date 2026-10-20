@@ -1,7 +1,8 @@
 # ListFormatStyle
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that formats lists of items with a separator and conjunction appropriate for a given locale.
 
@@ -22,11 +23,11 @@ struct ListFormatStyle<Style, Base> where Style : FormatStyle, Base : Sequence, 
 
 #### Overview
 
-A list format style creates human readable text from a [`Sequence`](https://developer.apple.com/documentation/swift/sequence) of values. Customize the formatting behavior of the list using the [`width`](listformatstyle/width-swift.property.md), [`listType`](listformatstyle/listtype-swift.property.md), and [`locale`](listformatstyle/locale.md) properties. The system automatically caches unique configurations of [`ListFormatStyle`](listformatstyle.md) to enhance performance.
+A list format style creates human readable text from a [`Sequence`](../Swift/sequence.md) of values. Customize the formatting behavior of the list using the [`width`](./listformatstyle/width-swift.property.md), [`listType`](./listformatstyle/listtype-swift.property.md), and [`locale`](./listformatstyle/locale.md) properties. The system automatically caches unique configurations of [`ListFormatStyle`](./listformatstyle.md) to enhance performance.
 
-Use either [`formatted()`](https://developer.apple.com/documentation/swift/sequence/formatted()) or [`formatted(_:)`](https://developer.apple.com/documentation/swift/sequence/formatted(_:)), both instance methods of [`Sequence`](https://developer.apple.com/documentation/swift/sequence), to create a string representation of the items.
+Use either [`formatted()`](../Swift/sequence/formatted%28%29.md) or [`formatted(_:)`](../Swift/sequence/formatted%28_%29.md), both instance methods of [`Sequence`](../Swift/sequence.md), to create a string representation of the items.
 
-The [`formatted()`](https://developer.apple.com/documentation/swift/sequence/formatted()) method applies the default list format style to a sequence of strings. For example:
+The [`formatted()`](../Swift/sequence/formatted%28%29.md) method applies the default list format style to a sequence of strings. For example:
 
 ```swift
 ["Kristin", "Paul", "Ana", "Bill"].formatted()
@@ -35,19 +36,19 @@ The [`formatted()`](https://developer.apple.com/documentation/swift/sequence/for
 
 You can customize a list’s `type` and `width` properties.
 
-- The [`listType`](listformatstyle/listtype-swift.property.md) property specifies the semantics of the list.
-- The [`width`](listformatstyle/width-swift.property.md) property determines the size of the returned string.
+- The [`listType`](./listformatstyle/listtype-swift.property.md) property specifies the semantics of the list.
+- The [`width`](./listformatstyle/width-swift.property.md) property determines the size of the returned string.
 
-The [`formatted(_:)`](https://developer.apple.com/documentation/swift/sequence/formatted(_:)) method to applies a custom list format style. You can use the static factory method [`list(type:width:)`](formatstyle/list(type:width:).md) to create a custom list format style as a parameter to the method.
+The [`formatted(_:)`](../Swift/sequence/formatted%28_%29.md) method to applies a custom list format style. You can use the static factory method [`list(type:width:)`](./formatstyle/list%28type,width%29.md) to create a custom list format style as a parameter to the method.
 
-This example formats a sequence with a [`ListFormatStyle.ListType.and`](listformatstyle/listtype-swift.enum/and.md) list type and [`ListFormatStyle.Width.short`](listformatstyle/width-swift.enum/short.md) width:
+This example formats a sequence with a [`ListFormatStyle.ListType.and`](./listformatstyle/listtype-swift.enum/and.md) list type and [`ListFormatStyle.Width.short`](./listformatstyle/width-swift.enum/short.md) width:
 
 ```swift
 ["Kristin", "Paul", "Ana", "Bill"].formatted(.list(type: .and, width: .short))
 // Kristin, Paul, Ana, & Bill
 ```
 
-You can provide a member format style to transform each list element to a string in applications where the elements aren’t already strings. For example, the following code sample uses an [`IntegerFormatStyle`](integerformatstyle.md) to convert a range of integer values into a list:
+You can provide a member format style to transform each list element to a string in applications where the elements aren’t already strings. For example, the following code sample uses an [`IntegerFormatStyle`](./integerformatstyle.md) to convert a range of integer values into a list:
 
 ```swift
 (5201719 ... 5201722).formatted(.list(memberStyle: IntegerFormatStyle(), type: .or, width: .standard))
@@ -70,60 +71,61 @@ stride(from: 89.0, through: 95.0, by: 2.0).formatted(percentStyle)
 ## Topics
 
 ### Creating a list format style
-- [init(memberStyle: Style)](listformatstyle/init(memberstyle:).md)
+- [init(memberStyle: Style)](./listformatstyle/init%28memberstyle%29.md)
   Creates an instance using the provided format style.
 ### Modifying a list format style
-- [var width: ListFormatStyle<Style, Base>.Width](listformatstyle/width-swift.property.md)
+- [var width: ListFormatStyle<Style, Base>.Width](./listformatstyle/width-swift.property.md)
   The size of the list.
-- [ListFormatStyle.Width](listformatstyle/width-swift.enum.md)
+- [ListFormatStyle.Width](./listformatstyle/width-swift.enum.md)
   The type representing the width of a list.
-- [var listType: ListFormatStyle<Style, Base>.ListType](listformatstyle/listtype-swift.property.md)
+- [var listType: ListFormatStyle<Style, Base>.ListType](./listformatstyle/listtype-swift.property.md)
   The type of the list.
-- [ListFormatStyle.ListType](listformatstyle/listtype-swift.enum.md)
+- [ListFormatStyle.ListType](./listformatstyle/listtype-swift.enum.md)
   A type that describes whether the returned list contains cumulative or alternative elements.
-- [var locale: Locale](listformatstyle/locale.md)
+- [var locale: Locale](./listformatstyle/locale.md)
   The locale to use when formatting items in the list.
-- [func locale(Locale) -> ListFormatStyle<Style, Base>](listformatstyle/locale(_:).md)
+- [func locale(Locale) -> ListFormatStyle<Style, Base>](./listformatstyle/locale%28_%29.md)
   Modifies the list format style to use the specified locale.
 ### Applying list styles
-- [func format(Base) -> String](listformatstyle/format(_:).md)
+- [func format(Base) -> String](./listformatstyle/format%28_%29.md)
   Creates a locale-aware string representation of the value.
 ### Applying currency styles
-- [IntegerFormatStyle.Currency](integerformatstyle/currency.md)
+- [IntegerFormatStyle.Currency](./integerformatstyle/currency.md)
   A format style that converts between integer currency values and their textual representations.
 ### Applying measurement styles
-- [Measurement.FormatStyle](measurement/formatstyle.md)
+- [Measurement.FormatStyle](./measurement/formatstyle.md)
   A type that provides localized representations of measurements.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [FormatStyle](formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [FormatStyle](./formatstyle.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Language Introspector](language-introspector.md)
+### Data formatting in Swift
+- [Language Introspector](./language-introspector.md)
   Converts data into human-readable text using formatters and locales.
-- [protocol FormatStyle](formatstyle.md)
+- [protocol FormatStyle](./formatstyle.md)
   A type that converts a given data type into a representation in another type, such as a string.
-- [struct IntegerFormatStyle](integerformatstyle.md)
+- [struct IntegerFormatStyle](./integerformatstyle.md)
   A structure that converts between integer values and their textual representations.
-- [struct FloatingPointFormatStyle](floatingpointformatstyle.md)
+- [struct FloatingPointFormatStyle](./floatingpointformatstyle.md)
   A structure that converts between floating-point values and their textual representations.
-- [Decimal.FormatStyle](decimal/formatstyle.md)
+- [Decimal.FormatStyle](./decimal/formatstyle.md)
   A structure that converts between decimal values and their textual representations.
-- [struct StringStyle](stringstyle.md)
-- [struct FormatStyle](url/formatstyle.md)
+- [struct StringStyle](./stringstyle.md)
+- [struct FormatStyle](./url/formatstyle.md)
   A structure that converts between URL instances and their textual representations.
-- [struct FormatStyleCapitalizationContext](formatstylecapitalizationcontext.md)
+- [struct FormatStyleCapitalizationContext](./formatstylecapitalizationcontext.md)
   The capitalization formatting context used when formatting dates and times.
-- [Format Style Configurations](format-style-configurations.md)
+- [Format Style Configurations](./format-style-configurations.md)
   Behaviors for traits like numeric precision, rounding, and scale, used for formatting and parsing numeric values.
 
 

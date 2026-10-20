@@ -1,7 +1,8 @@
 # createResumableCompressionSession(width:height:codecType:encoderSpecification:sourceImageBufferAttributes:outputHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Helper function to create a VTCompressionSession that restores the video encoder state persisted at the end of the previous segment.
 
@@ -31,7 +32,7 @@ Client cannot call this method more than once on a writing request object. For t
 
 The client should release the session after use. The writing request retains the compression session but does not mutate the session after this method is returned.
 
-> **Note**: An error if the session cannot be created or if parameters differ from previous segment.
+> **Throws**: An error if the session cannot be created or if parameters differ from previous segment.
 
 ## Parameters
 

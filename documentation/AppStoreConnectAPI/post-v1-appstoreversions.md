@@ -1,7 +1,8 @@
 # Create an app store version
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Add a new App Store version or platform to an app.
 
@@ -12,11 +13,11 @@ Add a new App Store version or platform to an app.
 
 Use this endpoint to add a new version of an app. The new version can be an incremental update of an existing app for a particular platform, or it can be the first version on a new platform for the app.
 
-##### Add a New Version of an Ios App
+##### Add a New Version of an iOS App
 
 **Request**:
 
-```None
+```
 POST https://api.appstoreconnect.apple.com/v1/appStoreVersions
 
 {
@@ -130,11 +131,27 @@ POST https://api.appstoreconnect.apple.com/v1/appStoreVersions
 
 `POST https://api.appstoreconnect.apple.com/v1/appStoreVersions`
 
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `AppStoreVersionCreateRequest`
+
+## Responses
+
+- `201` Created (`AppStoreVersionResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `409` Conflict (`ErrorResponse`, `application/json`): The provided resource data is not valid.
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [Modify an app store version](patch-v1-appstoreversions-_id_.md)
+### Creating and Modifying App Store Versions
+- [Modify an app store version](./patch-v1-appstoreversions-_id_.md)
   Update the App Store version for a specific app.
-- [Delete an app store version](delete-v1-appstoreversions-_id_.md)
+- [Delete an app store version](./delete-v1-appstoreversions-_id_.md)
   Delete an app store version that is associated with an app.
 
 

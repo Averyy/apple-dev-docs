@@ -1,7 +1,8 @@
 # init(text:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates ruby text.
 
@@ -17,13 +18,18 @@ Creates ruby text.
 init(text: String)
 ```
 
+```objc
+- (instancetype) initWithText:(NSString *) text;
+```
+
 ## Parameters
 
 - `text`: The ruby text.
 
 ## See Also
 
-- [convenience init(text: String, position: AVCaption.Ruby.Position, alignment: AVCaption.Ruby.Alignment)](avcaption/ruby/init(text:position:alignment:).md)
+### Creating Ruby text
+- [convenience init(text: String, position: AVCaption.Ruby.Position, alignment: AVCaption.Ruby.Alignment)](./init%28text,position,alignment%29.md)
   Creates ruby text with position and alignment.
 
 

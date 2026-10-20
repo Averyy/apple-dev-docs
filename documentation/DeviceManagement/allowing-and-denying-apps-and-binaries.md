@@ -1,12 +1,13 @@
 # Allowing and denying apps and binaries
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Control what apps and binaries can run on supervised Apple devices.
 
 #### Overview
 
-On supervised devices running iOS 27, iPadOS 27, macOS 27, tvOS 27, or visionOS 27, you can manage the apps people can run by using the [`AppSettings`](appsettings.md) configuration. This configuration offers two pairs of keys for granular, flexible control of what apps and binaries can run, as detailed in the table below.
+On supervised devices running iOS 27, iPadOS 27, macOS 27, tvOS 27, or visionOS 27, you can manage the apps people can run by using the [`AppSettings`](./appsettings.md) configuration. This configuration offers two pairs of keys for granular, flexible control of what apps and binaries can run, as detailed in the table below.
 
 | Key | Platform | System scope | User scope |
 | --- | --- | --- | --- |
@@ -29,13 +30,13 @@ If you apply both an allow and a deny key, the device uses the more restrictive 
 
 If an app or binary appears in both lists, the device prevents it from running.
 
-#### Allow and Deny Binaries in Macos
+#### Allow and deny binaries in macOS
 
 In macOS, the configuration uses an Endpoint Security client and can manage standalone binaries and binaries embedded in an app bundle. You can create rules for the policy the Endpoint Security client uses to decide whether to allow or deny a binary.
 
-For more information on the architecture and decision process, see [`Allow and deny apps and binaries`](https://developer.apple.comhttps://support.apple.com/guide/deployment/dep001044b08).
+For more information on the architecture and decision process, see [Allow and deny apps and binaries](https://support.apple.com/guide/deployment/dep001044b08).
 
-#### Create Binary Matching Rules
+#### Create binary matching rules
 
 For the Endpoint Security client to allow or deny a binary, provide the necessary identifiers in the configuration.
 
@@ -124,7 +125,7 @@ For platform binaries, use the `Authority` value to determine the `SigningState`
 
 If `codesign` returns an ad hoc `Signature` value, or if the certificate contains OID `1.2.840.113635.100.6.1.12` to indicate a development signature, the device denies the binary.
 
-#### Deny Specific Binaries
+#### Deny specific binaries
 
 When the Endpoint Security client denies a binary, it shows an alert to inform the user that their organization prevented the use of the binary.
 
@@ -153,7 +154,7 @@ To deny Web Clips, use the following entry in `DeniedBinaries`:
 ]
 ```
 
-#### Allow Only Specific Binaries
+#### Allow only specific binaries
 
 Use one of the following required attributes to create an  `AllowedBinaries` list entry:
 
@@ -170,7 +171,7 @@ Because `SigningID` isn’t globally unique across teams, `AllowedBinaries` requ
 
 You can combine multiple required and optional values — up to all five identifiers — to form more specific rules.
 
-The [`AppSettings`](appsettings.md) configuration has an `AlwaysAllowManagedApps` key to simplify managing allow lists. You deploy managed apps with the [`AppManaged`](appmanaged.md) configuration or set the `InstallAsManaged` flag to `true` in the [`InstallApplicationCommand`](installapplicationcommand.md). Set the `AlwaysAllowManagedApps` key to `true` to automatically allow managed apps to run in allow mode.
+The [`AppSettings`](./appsettings.md) configuration has an `AlwaysAllowManagedApps` key to simplify managing allow lists. You deploy managed apps with the [`AppManaged`](./appmanaged.md) configuration or set the `InstallAsManaged` flag to `true` in the [`InstallApplicationCommand`](./installapplicationcommand.md). Set the `AlwaysAllowManagedApps` key to `true` to automatically allow managed apps to run in allow mode.
 
 Even when you set this key, you can still deny individual managed apps using the `DeniedBinaries` key.
 
@@ -187,7 +188,7 @@ To allow Web Clips, use the following entry in `AllowedBinaries`:
 ]
 ```
 
-#### Configure Allow and Deny Scenarios
+#### Configure allow and deny scenarios
 
 The following examples show `AllowedBinaries` and `DeniedBinaries` combinations in macOS.
 
@@ -282,7 +283,8 @@ Deny all apps and binaries, but allow a specific one and apps provided by Apple,
 
 ## See Also
 
-- [Configuring managed apps and extensions](configuring-managed-apps-and-extensions.md)
+### Configure managed apps
+- [Configuring managed apps and extensions](./configuring-managed-apps-and-extensions.md)
   Provide managed apps and extensions with app configuration and secrets.
 
 

@@ -1,7 +1,8 @@
 # stopFilter(with:completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stop the filter.
 
@@ -15,7 +16,15 @@ Stop the filter.
 ## Declaration
 
 ```swift
+func stopFilter(with reason: NEProviderStopReason, completionHandler: @escaping @Sendable () -> Void)
+```
+
+```swift
 func stopFilter(with reason: NEProviderStopReason) async
+```
+
+```objc
+- (void) stopFilterWithReason:(NEProviderStopReason) reason completionHandler:(void (^)()) completionHandler;
 ```
 
 #### Discussion
@@ -26,12 +35,13 @@ This method is called by the system to stop the filter.
 
 ## Parameters
 
-- `reason`: An `NEProviderStopReason` code indicating why the filter is being stopped. For a list of possible codes, see [`NEProvider`](neprovider.md).
+- `reason`: An `NEProviderStopReason` code indicating why the filter is being stopped. For a list of possible codes, see [`NEProvider`](../neprovider.md).
 - `completionHandler`: A block that must be executed when the filter is fully stopped.
 
 ## See Also
 
-- [func startFilter(completionHandler: ((any Error)?) -> Void)](nefilterprovider/startfilter(completionhandler:).md)
+### Managing the filter life cycle
+- [func startFilter(completionHandler: ((any Error)?) -> Void)](./startfilter%28completionhandler%29.md)
   Start the filter.
 
 

@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.R
 
 # mlx.nn.RoPE
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.RoPE.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.RoPE
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.RoPE
-
 **class RoPE(*dims: int*, *traditional: bool = False*, *base: float = 10000*, *scale: float = 1.0*)**
 : Implements the rotary positional encoding.
 The traditional implementation rotates consecutive pairs of elements in the
@@ -53,5 +26,3 @@ each dimension in the positional encodings. Default: `10000`.
 Default: `1.0`.
 
 Methods
-
-** Contents

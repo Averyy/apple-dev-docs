@@ -1,7 +1,8 @@
 # streamingEar()
 
 **Framework**: Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns which ears enable streaming.
 
@@ -18,15 +19,20 @@ Returns which ears enable streaming.
 static func streamingEar() -> AXMFiHearingDevice.Ear
 ```
 
+```c
+extern AXHearingDeviceEar AXMFiHearingDeviceStreamingEar();
+```
+
 #### Return Value
 
-An [`AXMFiHearingDevice.Ear`](axmfihearingdevice/ear.md) constant that represents which ears enable streaming.
+An [`AXMFiHearingDevice.Ear`](./ear.md) constant that represents which ears enable streaming.
 
 ## See Also
 
-- [AXMFiHearingDevice.Ear](axmfihearingdevice/ear.md)
+### Streaming status
+- [AXMFiHearingDevice.Ear](./ear.md)
   Constants that represent a hearing device ear.
-- [static let streamingEarDidChangeNotification: NSNotification.Name](axmfihearingdevice/streamingeardidchangenotification.md)
+- [static let streamingEarDidChangeNotification: NSNotification.Name](./streamingeardidchangenotification.md)
   A notification that the system posts when there’s a change to which ears enable streaming.
 
 

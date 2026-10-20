@@ -1,7 +1,8 @@
 # NWPath.LinkQuality
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Represents the link quality measurement of the link layer network attachment
 
@@ -27,22 +28,22 @@ Use this value to tune initial values for algorithms that can scale with the cap
 ## Topics
 
 ### Enumeration Cases
-- [NWPath.LinkQuality.good](nwpath/linkquality-swift.enum/good.md)
+- [NWPath.LinkQuality.good](./linkquality-swift.enum/good.md)
   Link quality is good
-- [NWPath.LinkQuality.minimal](nwpath/linkquality-swift.enum/minimal.md)
+- [NWPath.LinkQuality.minimal](./linkquality-swift.enum/minimal.md)
   Link quality is minimal
-- [NWPath.LinkQuality.moderate](nwpath/linkquality-swift.enum/moderate.md)
+- [NWPath.LinkQuality.moderate](./linkquality-swift.enum/moderate.md)
   Link quality is moderate
-- [NWPath.LinkQuality.unknown](nwpath/linkquality-swift.enum/unknown.md)
+- [NWPath.LinkQuality.unknown](./linkquality-swift.enum/unknown.md)
   No link quality measurement is available
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

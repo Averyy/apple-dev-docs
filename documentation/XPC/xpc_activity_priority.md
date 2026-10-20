@@ -1,7 +1,8 @@
 # XPC_ACTIVITY_PRIORITY
 
 **Framework**: XPC  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string property that indicates the priority of the activity.
 
@@ -14,11 +15,16 @@ A string property that indicates the priority of the activity.
 let XPC_ACTIVITY_PRIORITY: UnsafePointer<CChar>
 ```
 
+```c
+extern const char * const XPC_ACTIVITY_PRIORITY;
+```
+
 ## See Also
 
-- [let XPC_ACTIVITY_PRIORITY_MAINTENANCE: UnsafePointer<CChar>](xpc_activity_priority_maintenance.md)
+### Priority
+- [let XPC_ACTIVITY_PRIORITY_MAINTENANCE: UnsafePointer<CChar>](./xpc_activity_priority_maintenance.md)
   A string that indicates an activity is maintenance priority.
-- [let XPC_ACTIVITY_PRIORITY_UTILITY: UnsafePointer<CChar>](xpc_activity_priority_utility.md)
+- [let XPC_ACTIVITY_PRIORITY_UTILITY: UnsafePointer<CChar>](./xpc_activity_priority_utility.md)
   A string that indicates an activity is utility priority.
 
 

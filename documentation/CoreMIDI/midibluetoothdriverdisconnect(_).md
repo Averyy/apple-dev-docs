@@ -1,7 +1,8 @@
 # MIDIBluetoothDriverDisconnect(_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Disconnect the Bluetooth MIDI driver from a Bluetooth Low Energy MIDI peripheral.
 
@@ -20,13 +21,17 @@ Disconnect the Bluetooth MIDI driver from a Bluetooth Low Energy MIDI peripheral
 func MIDIBluetoothDriverDisconnect(_ uuid: CFString) -> OSStatus
 ```
 
+```c
+extern OSStatus MIDIBluetoothDriverDisconnect(CFStringRef uuid);
+```
+
 #### Return Value
 
 A status code that indicates the result of the disconnect.
 
 #### Discussion
 
-If a [`Core MIDI`](CoreMIDI.md) device is in a connected state to a Bluetooth Low Energy MIDI peripheral with the identifier you specify, the system disconnects it.
+If a [Core MIDI](./CoreMIDI.md) device is in a connected state to a Bluetooth Low Energy MIDI peripheral with the identifier you specify, the system disconnects it.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ If a [`Core MIDI`](CoreMIDI.md) device is in a connected state to a Bluetooth Lo
 
 ## See Also
 
-- [func MIDIBluetoothDriverActivateAllConnections() -> OSStatus](midibluetoothdriveractivateallconnections().md)
+### Managing Device Connections
+- [func MIDIBluetoothDriverActivateAllConnections() -> OSStatus](./midibluetoothdriveractivateallconnections%28%29.md)
   Promote all active Bluetooth connections into an online MIDI device capable of input and output.
 
 

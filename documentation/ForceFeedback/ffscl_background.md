@@ -1,7 +1,8 @@
 # FFSCL_BACKGROUND
 
 **Framework**: Force Feedback  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,11 +14,16 @@
 var FFSCL_BACKGROUND: Int { get }
 ```
 
+```c
+FFSCL_BACKGROUND
+```
+
 ## See Also
 
-- [var FFSCL_EXCLUSIVE: Int](ffscl_exclusive.md)
-- [var FFSCL_FOREGROUND: Int](ffscl_foreground.md)
-- [var FFSCL_NONEXCLUSIVE: Int](ffscl_nonexclusive.md)
+### Constants
+- [var FFSCL_EXCLUSIVE: Int](./ffscl_exclusive.md)
+- [var FFSCL_FOREGROUND: Int](./ffscl_foreground.md)
+- [var FFSCL_NONEXCLUSIVE: Int](./ffscl_nonexclusive.md)
 
 
 ---

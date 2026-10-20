@@ -1,7 +1,8 @@
 # paymentCredentialStatus
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status of the possible payment credentials that a person has provisioned in Wallet.
 
@@ -11,17 +12,17 @@ The status of the possible payment credentials that a person has provisioned in 
 
 ## Declaration
 
-```swift
+```
 PaymentCredentialStatus paymentCredentialStatus;
 ```
 
 ## Mentions
 
-- [Checking for Apple Pay availability](checking-for-apple-pay-availability.md)
+- [Checking for Apple Pay availability](../checking-for-apple-pay-availability.md)
 
 #### Discussion
 
-This object, which [`applePayCapabilities`](applepaysession/applepaycapabilities.md) returns, helps you determine when and where to display an Apple Pay button.
+This object, which [`applePayCapabilities`](../applepaysession/applepaycapabilities.md) returns, helps you determine when and where to display an Apple Pay button.
 
 The following are possible return values:
 

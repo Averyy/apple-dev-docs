@@ -1,7 +1,8 @@
 # tangents
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Buffer of tangents, if any.
 
@@ -11,7 +12,7 @@ Buffer of tangents, if any.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

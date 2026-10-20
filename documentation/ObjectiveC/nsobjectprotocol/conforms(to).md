@@ -2,18 +2,19 @@
 
 **Framework**: Objective-C Runtime  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value that indicates whether the receiver conforms to a given protocol.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,13 +22,17 @@ Returns a Boolean value that indicates whether the receiver conforms to a given 
 func conforms(to aProtocol: Protocol) -> Bool
 ```
 
+```objc
+- (BOOL) conformsToProtocol:(Protocol *) aProtocol;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if the receiver conforms to `aProtocol`, otherwise [`NO`](no.md).
+[`YES`](../yes.md) if the receiver conforms to `aProtocol`, otherwise [`NO`](../no.md).
 
 #### Discussion
 
-This method works identically to the [`conforms(to:)`](nsobject-swift.class/conforms(to:).md) class method declared in [`NSObject`](nsobject-swift.class.md). It’s provided as a convenience so that you don’t need to get the class object to find out whether an instance can respond to a given set of messages.
+This method works identically to the [`conforms(to:)`](../nsobject-swift.class/conforms%28to%29.md) class method declared in [`NSObject`](../nsobject-swift.class.md). It’s provided as a convenience so that you don’t need to get the class object to find out whether an instance can respond to a given set of messages.
 
 ## Parameters
 
@@ -35,11 +40,12 @@ This method works identically to the [`conforms(to:)`](nsobject-swift.class/conf
 
 ## See Also
 
-- [func isKind(of: AnyClass) -> Bool](nsobjectprotocol/iskind(of:).md)
+### Testing Object Inheritance, Behavior, and Conformance
+- [func isKind(of: AnyClass) -> Bool](./iskind%28of%29.md)
   Returns a Boolean value that indicates whether the receiver is an instance of given class or an instance of any class that inherits from that class.
-- [func isMember(of: AnyClass) -> Bool](nsobjectprotocol/ismember(of:).md)
+- [func isMember(of: AnyClass) -> Bool](./ismember%28of%29.md)
   Returns a Boolean value that indicates whether the receiver is an instance of a given class.
-- [func responds(to: Selector!) -> Bool](nsobjectprotocol/responds(to:).md)
+- [func responds(to: Selector!) -> Bool](./responds%28to%29.md)
   Returns a Boolean value that indicates whether the receiver implements or inherits a method that can respond to a specified message.
 
 

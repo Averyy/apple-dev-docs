@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notifies an interested controller that the preferred content size of one of its children changed.
@@ -10,7 +11,7 @@ Notifies an interested controller that the preferred content size of one of its 
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ Notifies an interested controller that the preferred content size of one of its 
 func preferredContentSizeDidChange(forChildContentContainer container: any UIContentContainer)
 ```
 
+```objc
+- (void) preferredContentSizeDidChangeForChildContentContainer:(id<UIContentContainer>) container;
+```
+
 #### Discussion
 
-UIKit calls this method on a container view controller when the [`preferredContentSize`](uicontentcontainer/preferredcontentsize.md) property of one of its child view controllers changes. Similarly, if the view controller is managed by a presentation controller, UIKit calls this method on the presentation controller to let it know of the change. The parent view controller or presentation controller can use this method to initiate layout adjustments based on the new size information.
+UIKit calls this method on a container view controller when the [`preferredContentSize`](./preferredcontentsize.md) property of one of its child view controllers changes. Similarly, if the view controller is managed by a presentation controller, UIKit calls this method on the presentation controller to let it know of the change. The parent view controller or presentation controller can use this method to initiate layout adjustments based on the new size information.
 
 ## Parameters
 
@@ -29,11 +34,12 @@ UIKit calls this method on a container view controller when the [`preferredConte
 
 ## See Also
 
-- [func size(forChildContentContainer: any UIContentContainer, withParentContainerSize: CGSize) -> CGSize](uicontentcontainer/size(forchildcontentcontainer:withparentcontainersize:).md)
+### Responding to changes in child view controllers
+- [func size(forChildContentContainer: any UIContentContainer, withParentContainerSize: CGSize) -> CGSize](./size%28forchildcontentcontainer,withparentcontainersize%29.md)
   Returns the size of the specified child view controller’s content.
-- [func systemLayoutFittingSizeDidChange(forChildContentContainer: any UIContentContainer)](uicontentcontainer/systemlayoutfittingsizedidchange(forchildcontentcontainer:).md)
+- [func systemLayoutFittingSizeDidChange(forChildContentContainer: any UIContentContainer)](./systemlayoutfittingsizedidchange%28forchildcontentcontainer%29.md)
   Notifies the container that a child view controller was resized using Auto Layout.
-- [var preferredContentSize: CGSize](uicontentcontainer/preferredcontentsize.md)
+- [var preferredContentSize: CGSize](./preferredcontentsize.md)
   The preferred size for the container’s content.
 
 

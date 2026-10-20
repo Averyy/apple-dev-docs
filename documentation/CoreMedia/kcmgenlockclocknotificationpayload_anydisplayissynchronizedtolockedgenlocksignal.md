@@ -1,7 +1,8 @@
 # kCMGenlockClockNotificationPayload_AnyDisplayIsSynchronizedToLockedGenlockSignal
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 27.0+
@@ -11,6 +12,10 @@
 
 ```swift
 let kCMGenlockClockNotificationPayload_AnyDisplayIsSynchronizedToLockedGenlockSignal: CFString
+```
+
+```c
+extern CFStringRef const kCMGenlockClockNotificationPayload_AnyDisplayIsSynchronizedToLockedGenlockSignal;
 ```
 
 

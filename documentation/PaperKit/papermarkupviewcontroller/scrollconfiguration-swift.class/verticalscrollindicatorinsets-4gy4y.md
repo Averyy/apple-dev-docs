@@ -1,7 +1,8 @@
 # verticalScrollIndicatorInsets
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vertical scroll indicator’s insets.
 
@@ -20,11 +21,12 @@ Default is `NSEdgeInsetsZero`.
 
 ## See Also
 
-- [var verticalScrollIndicatorInsets: UIEdgeInsets](papermarkupviewcontroller/scrollconfiguration-swift.class/verticalscrollindicatorinsets-79jxb.md)
+### Configuring scroll indicator insets
+- [var verticalScrollIndicatorInsets: UIEdgeInsets](./verticalscrollindicatorinsets-79jxb.md)
   The vertical scroll indicator’s insets.
-- [var horizontalScrollIndicatorInsets: UIEdgeInsets](papermarkupviewcontroller/scrollconfiguration-swift.class/horizontalscrollindicatorinsets-5nzvz.md)
+- [var horizontalScrollIndicatorInsets: UIEdgeInsets](./horizontalscrollindicatorinsets-5nzvz.md)
   The horizontal scroll indicator’s insets.
-- [var horizontalScrollIndicatorInsets: NSEdgeInsets](papermarkupviewcontroller/scrollconfiguration-swift.class/horizontalscrollindicatorinsets-6inpv.md)
+- [var horizontalScrollIndicatorInsets: NSEdgeInsets](./horizontalscrollindicatorinsets-6inpv.md)
   The horizontal scroll indicator’s insets.
 
 

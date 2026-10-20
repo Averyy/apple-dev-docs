@@ -1,7 +1,8 @@
 # NSTextCheckingKey
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 2.0+
@@ -18,32 +19,37 @@
 struct NSTextCheckingKey
 ```
 
+```c
+typedef NSString * NSTextCheckingKey;
+```
+
 ## Topics
 
 ### Initializers
-- [init(String)](nstextcheckingkey/init(_:).md)
-- [init(rawValue: String)](nstextcheckingkey/init(rawvalue:).md)
+- [init(String)](./nstextcheckingkey/init%28_%29.md)
+- [init(rawValue: String)](./nstextcheckingkey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Keys for Transit Components](keys-for-transit-components.md)
+### Constants
+- [Keys for Transit Components](./keys-for-transit-components.md)
   The following constants identify the possible keys returned in the components dictionary.
-- [Keys for Address Components](keys-for-address-components.md)
-  The following constants identify the possible keys returned in the [`addressComponents`](nstextcheckingresult/addresscomponents.md) dictionary.
-- [NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype.md)
-  These constants specify the type of checking the methods should do. They are returned by [`resultType`](nstextcheckingresult/resulttype.md).
-- [typealias NSTextCheckingTypes](nstextcheckingtypes.md)
+- [Keys for Address Components](./keys-for-address-components.md)
+  The following constants identify the possible keys returned in the [`addressComponents`](./nstextcheckingresult/addresscomponents.md) dictionary.
+- [NSTextCheckingResult.CheckingType](./nstextcheckingresult/checkingtype.md)
+  These constants specify the type of checking the methods should do. They are returned by [`resultType`](./nstextcheckingresult/resulttype.md).
+- [typealias NSTextCheckingTypes](./nstextcheckingtypes.md)
   Defines the types of checking that are available. These values can be combined using the C-bitwise OR operator. The system supports its own internal types, and the user can extend those types by subclassing `NSTextCheckingResult` and adding their own custom types.
-- [Anonymous](1476845-anonymous.md)
+- [Anonymous](./api-1476845-anonymous.md)
 
 
 ---

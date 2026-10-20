@@ -1,7 +1,8 @@
 # isStationary
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the user is stationary.
 
@@ -22,13 +23,14 @@ var isStationary: Bool { get }
 
 #### Discussion
 
-Updates may stop flowing temporarily for several reasons including if the app is no longer authorized to receive location updates or if its location becomes unknown. If Core Location stops delivering updates because the device is stationary, then it sets `isStationary` to [`true`](https://developer.apple.com/documentation/swift/true); otherwise, it’s [`false`](https://developer.apple.com/documentation/swift/false).
+Updates may stop flowing temporarily for several reasons including if the app is no longer authorized to receive location updates or if its location becomes unknown. If Core Location stops delivering updates because the device is stationary, then it sets `isStationary` to [`true`](../../Swift/true.md); otherwise, it’s [`false`](../../Swift/false.md).
 
-If `isStationary` is [`true`](https://developer.apple.com/documentation/swift/true), the framework can suspend updates until the person starts moving, or their location becomes unknown.
+If `isStationary` is [`true`](../../Swift/true.md), the framework can suspend updates until the person starts moving, or their location becomes unknown.
 
 ## See Also
 
-- [var location: CLLocation?](cllocationupdate/location.md)
+### Determining movement and location
+- [var location: CLLocation?](./location.md)
   The user’s location, if available.
 
 

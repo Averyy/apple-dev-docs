@@ -1,7 +1,8 @@
 # pendingTransactions
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Incomplete transactions.
 
@@ -18,9 +19,14 @@ Incomplete transactions.
 var pendingTransactions: [CXTransaction] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<CXTransaction *> * pendingTransactions;
+```
+
 ## See Also
 
-- [func pendingCallActions(of: AnyClass, withCall: UUID) -> [CXCallAction]](cxprovider/pendingcallactions(of:withcall:).md)
+### Accessing Pending Transaction and Call Actions
+- [func pendingCallActions(of: AnyClass, withCall: UUID) -> [CXCallAction]](./pendingcallactions%28of,withcall%29.md)
   Returns all call actions in any pending transactions of the specified class for the specified call identifier that are incomplete.
 
 

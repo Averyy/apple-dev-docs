@@ -1,14 +1,15 @@
 # sin6_addr
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 struct in6_addr sin6_addr;
 ```
 

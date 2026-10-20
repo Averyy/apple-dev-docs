@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified array of selections to the receiving selection.
 
@@ -19,19 +20,25 @@ Adds the specified array of selections to the receiving selection.
 func add(_ selections: [PDFSelection])
 ```
 
+```objc
+- (void) addSelections:(NSArray<PDFSelection *> *) selections;
+```
+
 #### Discussion
 
 This method provides better performance than multiple calls to `addSelection` if you need to add several selections to an existing selection. This is because the normalization of the selection (the removal of any overlaps between selections) occurs only once, after all selections have been added.
 
 ## See Also
 
-- [class PDFSelection](pdfselection.md)
+### Related Documentation
+- [class PDFSelection](../pdfselection.md)
   A `PDFSelection` object identifies a contiguous or noncontiguous selection of text in a PDF document.
-- [func add(PDFSelection)](pdfselection/add(_:)-8c2r.md)
+### Modifying a Selection
+- [func add(PDFSelection)](./add%28_%29-8c2r.md)
   Adds the specified selection to the receiving selection.
-- [func extend(atEnd: Int)](pdfselection/extend(atend:).md)
+- [func extend(atEnd: Int)](./extend%28atend%29.md)
   Extends the selection from its end toward the end of the document.
-- [func extend(atStart: Int)](pdfselection/extend(atstart:).md)
+- [func extend(atStart: Int)](./extend%28atstart%29.md)
   Extends the selection from its start toward the beginning of the document.
 
 

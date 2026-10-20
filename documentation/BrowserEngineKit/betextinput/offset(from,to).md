@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the distance between two positions in the text view’s text.
@@ -18,9 +19,13 @@ Returns the distance between two positions in the text view’s text.
 func offset(from: UITextPosition, to toPosition: UITextPosition) -> Int
 ```
 
+```objc
+- (NSInteger) offsetFromPosition:(UITextPosition *) from toPosition:(UITextPosition *) toPosition;
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # minimumMTU(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configure IP to use the minimum MTU value.
 

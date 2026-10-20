@@ -1,7 +1,8 @@
 # decode(from:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the pre-defined tabular transformer.
 
@@ -22,7 +23,8 @@ func decode(from decoder: inout any EstimatorDecoder) throws -> Transformer
 
 ## See Also
 
-- [func encode(Transformer, to: inout any EstimatorEncoder) throws](tabulartransformertoestimatoradaptor/encode(_:to:).md)
+### Encoding and decoding
+- [func encode(Transformer, to: inout any EstimatorEncoder) throws](./encode%28_,to%29.md)
   Does nothing since this tabular estimator uses a pre-defined tabular transformer.
 
 

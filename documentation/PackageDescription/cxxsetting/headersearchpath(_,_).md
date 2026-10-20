@@ -1,7 +1,8 @@
 # headerSearchPath(_:_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Provides a header search path relative to the target’s directory.
 
@@ -20,7 +21,7 @@ Use this setting to add a search path for headers within your target. You can’
 
 The path must be a directory inside the package.
 
-> **Note**: First available in PackageDescription 5.0.
+> **Since**: First available in PackageDescription 5.0.
 
 ## Parameters
 
@@ -29,9 +30,10 @@ The path must be a directory inside the package.
 
 ## See Also
 
-- [static func define(String, to: String?, BuildSettingCondition?) -> CXXSetting](cxxsetting/define(_:to:_:).md)
+### Configuring CXX Settings
+- [static func define(String, to: String?, BuildSettingCondition?) -> CXXSetting](./define%28_,to,_%29.md)
   Defines a value for a macro.
-- [static func unsafeFlags([String], BuildSettingCondition?) -> CXXSetting](cxxsetting/unsafeflags(_:_:).md)
+- [static func unsafeFlags([String], BuildSettingCondition?) -> CXXSetting](./unsafeflags%28_,_%29.md)
   Sets unsafe flags to pass arbitrary command-line flags to the corresponding build tool.
 
 

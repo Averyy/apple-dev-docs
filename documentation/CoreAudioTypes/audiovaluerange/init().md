@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Audio Types  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ init()
 
 ## See Also
 
-- [init(mMinimum: Float64, mMaximum: Float64)](audiovaluerange/init(mminimum:mmaximum:).md)
+### Initializers
+- [init(mMinimum: Float64, mMaximum: Float64)](./init%28mminimum,mmaximum%29.md)
 
 
 ---

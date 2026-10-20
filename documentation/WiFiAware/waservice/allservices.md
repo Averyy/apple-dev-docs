@@ -2,6 +2,7 @@
 
 **Framework**: Wi-Fi Aware  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 A dictionary of all services declared by your app, indexed by service name.

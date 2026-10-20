@@ -1,7 +1,8 @@
 # ENOMSG
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No message of desired type.
 

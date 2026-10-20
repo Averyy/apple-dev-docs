@@ -1,7 +1,8 @@
 # synchronizationMode
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mode in which the NBD client synchronizes data with the NBD server.
 
@@ -14,17 +15,22 @@ The mode in which the NBD client synchronizes data with the NBD server.
 var synchronizationMode: VZDiskSynchronizationMode { get }
 ```
 
+```objc
+@property (readonly) VZDiskSynchronizationMode synchronizationMode;
+```
+
 #### Discussion
 
-See [`VZDiskSynchronizationMode`](vzdisksynchronizationmode.md) for details on how the specific mode affects data synchronization between the NBD client and server.
+See [`VZDiskSynchronizationMode`](../vzdisksynchronizationmode.md) for details on how the specific mode affects data synchronization between the NBD client and server.
 
 ## See Also
 
-- [var isForcedReadOnly: Bool](vznetworkblockdevicestoragedeviceattachment/isforcedreadonly.md)
+### Getting information about the attachment point
+- [var isForcedReadOnly: Bool](./isforcedreadonly.md)
   Returns a Boolean value that indicates whether the underlying disk attachment network is in a read-only state.
-- [var timeout: TimeInterval](vznetworkblockdevicestoragedeviceattachment/timeout.md)
+- [var timeout: TimeInterval](./timeout.md)
   The timeout value in seconds for the connection between the client and server.
-- [var url: URL](vznetworkblockdevicestoragedeviceattachment/url.md)
+- [var url: URL](./url.md)
   The URL that refers to the NBD server to which the NBD client will connect.
 
 

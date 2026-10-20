@@ -1,7 +1,8 @@
 # PTChannelTransmitRequestSource.handsfreeButton
 
 **Framework**: Push to Talk  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A transmission request that indicates a user pressed a button on a hands-free device.
 
@@ -16,13 +17,18 @@ A transmission request that indicates a user pressed a button on a hands-free de
 case handsfreeButton
 ```
 
+```c
+PTChannelTransmitRequestSourceHandsfreeButton
+```
+
 ## See Also
 
-- [PTChannelTransmitRequestSource.userRequest](ptchanneltransmitrequestsource/userrequest.md)
+### Transmission sources
+- [PTChannelTransmitRequestSource.userRequest](./userrequest.md)
   A transmission request that indicates the user pressed the transmit button in the system user interface.
-- [PTChannelTransmitRequestSource.developerRequest](ptchanneltransmitrequestsource/developerrequest.md)
+- [PTChannelTransmitRequestSource.developerRequest](./developerrequest.md)
   A transmission request that indicates the app calls the begin transmission method.
-- [PTChannelTransmitRequestSource.unknown](ptchanneltransmitrequestsource/unknown.md)
+- [PTChannelTransmitRequestSource.unknown](./unknown.md)
   A transmission request that indicates an unknown reason.
 
 

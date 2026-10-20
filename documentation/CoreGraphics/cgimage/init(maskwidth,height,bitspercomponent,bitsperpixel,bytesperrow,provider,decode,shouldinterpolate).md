@@ -1,7 +1,8 @@
 # init(maskWidth:height:bitsPerComponent:bitsPerPixel:bytesPerRow:provider:decode:shouldInterpolate:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a bitmap image mask from data supplied by a data provider.
 
@@ -10,7 +11,7 @@ Creates a bitmap image mask from data supplied by a data provider.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Creates a bitmap image mask from data supplied by a data provider.
 init?(maskWidth width: Int, height: Int, bitsPerComponent: Int, bitsPerPixel: Int, bytesPerRow: Int, provider: CGDataProvider, decode: UnsafePointer<CGFloat>?, shouldInterpolate: Bool)
 ```
 
+```c
+extern CGImageRefCGImageMaskCreate(size_t width, size_t height, size_t bitsPerComponent, size_t bitsPerPixel, size_t bytesPerRow, CGDataProviderRef provider, const CGFloat *decode, bool shouldInterpolate);
+```
+
 #### Return Value
 
-A bitmap image mask. In Objective-C, you’re responsible for releasing this object by calling [`CGImageRelease`](cgimagerelease.md).
+A bitmap image mask. In Objective-C, you’re responsible for releasing this object by calling [`CGImageRelease`](../cgimagerelease.md).
 
 #### Discussion
 

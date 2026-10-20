@@ -1,7 +1,8 @@
 # Model3DPlaceholderContent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container view that presents either a 3D model or a placeholder for one.
 
@@ -17,24 +18,25 @@ A container view that presents either a 3D model or a placeholder for one.
 
 #### Overview
 
-Don’t instantiate this type directly. [`Model3D`](model3d.md) creates it for you.
+Don’t instantiate this type directly. [`Model3D`](./model3d.md) creates it for you.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [struct Model3D](model3d.md)
+### SwiftUI 3D model presentation
+- [struct Model3D](./model3d.md)
   A view that asynchronously loads and displays a 3D model.
-- [enum Model3DPhase](model3dphase.md)
+- [enum Model3DPhase](./model3dphase.md)
   The current phase of the asynchronous model loading operation.
-- [struct ResolvedModel3D](resolvedmodel3d.md)
+- [struct ResolvedModel3D](./resolvedmodel3d.md)
   A view for displaying static three-dimensional models.
-- [class Model3DAsset](model3dasset.md)
+- [class Model3DAsset](./model3dasset.md)
   A container used to represent the asset loaded into the Model3D View.
 
 

@@ -1,7 +1,8 @@
 # MTRThermostatClusterPresetStruct
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.4+
@@ -18,28 +19,32 @@
 class MTRThermostatClusterPresetStruct
 ```
 
+```objc
+@interface MTRThermostatClusterPresetStruct : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var builtIn: NSNumber?](mtrthermostatclusterpresetstruct/builtin.md)
-- [var coolingSetpoint: NSNumber?](mtrthermostatclusterpresetstruct/coolingsetpoint.md)
-- [var heatingSetpoint: NSNumber?](mtrthermostatclusterpresetstruct/heatingsetpoint.md)
-- [var name: String?](mtrthermostatclusterpresetstruct/name.md)
-- [var presetHandle: Data?](mtrthermostatclusterpresetstruct/presethandle.md)
-- [var presetScenario: NSNumber](mtrthermostatclusterpresetstruct/presetscenario.md)
+- [var builtIn: NSNumber?](./mtrthermostatclusterpresetstruct/builtin.md)
+- [var coolingSetpoint: NSNumber?](./mtrthermostatclusterpresetstruct/coolingsetpoint.md)
+- [var heatingSetpoint: NSNumber?](./mtrthermostatclusterpresetstruct/heatingsetpoint.md)
+- [var name: String?](./mtrthermostatclusterpresetstruct/name.md)
+- [var presetHandle: Data?](./mtrthermostatclusterpresetstruct/presethandle.md)
+- [var presetScenario: NSNumber](./mtrthermostatclusterpresetstruct/presetscenario.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

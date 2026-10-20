@@ -1,7 +1,8 @@
 # UIContextMenuInteractionCommitStyle.dismiss
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An interaction with no animations.
 
@@ -17,9 +18,14 @@ An interaction with no animations.
 case dismiss
 ```
 
+```c
+UIContextMenuInteractionCommitStyleDismiss
+```
+
 ## See Also
 
-- [UIContextMenuInteractionCommitStyle.pop](uicontextmenuinteractioncommitstyle/pop.md)
+### Interaction Styles
+- [UIContextMenuInteractionCommitStyle.pop](./pop.md)
   An interaction that uses animations.
 
 

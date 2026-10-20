@@ -1,7 +1,8 @@
 # setInputImage(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the image input for the picture taker.
 
@@ -14,6 +15,10 @@ Set the image input for the picture taker.
 func setInputImage(_ image: NSImage!)
 ```
 
+```objc
+- (void) setInputImage:(NSImage *) image;
+```
+
 #### Discussion
 
 The input image is never modified by the picture taker.
@@ -24,9 +29,10 @@ The input image is never modified by the picture taker.
 
 ## See Also
 
-- [func inputImage() -> NSImage!](ikpicturetaker/inputimage.md)
+### Getting and Setting Images
+- [func inputImage() -> NSImage!](./inputimage%28%29.md)
   Returns the  input  image associated with the picture taker.
-- [func outputImage() -> NSImage!](ikpicturetaker/outputimage.md)
+- [func outputImage() -> NSImage!](./outputimage%28%29.md)
   Returns the edited image.
 
 

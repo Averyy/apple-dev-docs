@@ -1,7 +1,8 @@
 # VNElementType.double
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The elements are double-precision floating-point numbers.
 
@@ -19,11 +20,16 @@ The elements are double-precision floating-point numbers.
 case double
 ```
 
+```c
+VNElementTypeDouble
+```
+
 ## See Also
 
-- [VNElementType.unknown](vnelementtype/unknown.md)
+### Element Types
+- [VNElementType.unknown](./unknown.md)
   The element type isn’t known.
-- [VNElementType.float](vnelementtype/float.md)
+- [VNElementType.float](./float.md)
   The elements are floating-point numbers.
 
 

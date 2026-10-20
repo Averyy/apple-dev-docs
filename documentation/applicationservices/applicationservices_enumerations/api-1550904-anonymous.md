@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kInvalidFont: Int](kinvalidfont.md)
-- [var kInvalidFontFamily: Int](kinvalidfontfamily.md)
-- [var kInvalidGeneration: Int](kinvalidgeneration.md)
+- [var kInvalidFont: Int](../kinvalidfont.md)
+- [var kInvalidFontFamily: Int](../kinvalidfontfamily.md)
+- [var kInvalidGeneration: Int](../kinvalidgeneration.md)
 
 
 ---

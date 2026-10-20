@@ -1,7 +1,8 @@
 # findPath(from:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes and returns a sequence of nodes that represents the lowest-cost graph traversal from the specified node to this node.
 
@@ -19,13 +20,17 @@ Computes and returns a sequence of nodes that represents the lowest-cost graph t
 func findPath(from startNode: GKGraphNode) -> [GKGraphNode]
 ```
 
+```objc
+- (NSArray<__kindof GKGraphNode *> *) findPathFromNode:(GKGraphNode *) startNode;
+```
+
 #### Return Value
 
 An array of nodes representing a path through the graph in start to end order, or an empty array if no path exists between the specified nodes.
 
 #### Discussion
 
-This method is equivalent to the [`findPath(to:)`](gkgraphnode/findpath(to:).md) method, but finds a path from the specified node to this node, rather than the other way around. Connections in a graph are directional—that is, a connection from Node A to Node B indicates only that travel is possible from A to B, and indicating that travel from B to A is also possible requires a separate connection. Therefore, calling the [`findPath(to:)`](gkgraphnode/findpath(to:).md) and [`findPath(from:)`](gkgraphnode/findpath(from:).md) methods with the same pair of nodes might not always return the same paths.
+This method is equivalent to the [`findPath(to:)`](./findpath%28to%29.md) method, but finds a path from the specified node to this node, rather than the other way around. Connections in a graph are directional—that is, a connection from Node A to Node B indicates only that travel is possible from A to B, and indicating that travel from B to A is also possible requires a separate connection. Therefore, calling the [`findPath(to:)`](./findpath%28to%29.md) and [`findPath(from:)`](./findpath%28from%29.md) methods with the same pair of nodes might not always return the same paths.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ This method is equivalent to the [`findPath(to:)`](gkgraphnode/findpath(to:).md)
 
 ## See Also
 
-- [func findPath(to: GKGraphNode) -> [GKGraphNode]](gkgraphnode/findpath(to:).md)
+### Finding Paths
+- [func findPath(to: GKGraphNode) -> [GKGraphNode]](./findpath%28to%29.md)
   Computes and returns a sequence of nodes that represents the lowest-cost graph traversal from this node to the specified node.
 
 

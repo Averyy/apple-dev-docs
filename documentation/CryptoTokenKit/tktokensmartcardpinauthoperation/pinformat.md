@@ -1,7 +1,8 @@
 # pinFormat
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The PIN format.
 
@@ -20,17 +21,22 @@ The PIN format.
 var pinFormat: TKSmartCardPINFormat { get set }
 ```
 
+```objc
+@property TKSmartCardPINFormat * PINFormat;
+```
+
 #### Discussion
 
 By default, this property is set to a `TKSmartCardPINFormat` object initialized without any further configuration.
 
 ## See Also
 
-- [var apduTemplate: Data?](tktokensmartcardpinauthoperation/apdutemplate.md)
+### Configuring the Operation
+- [var apduTemplate: Data?](./apdutemplate.md)
   The template into which the PIN is filled in. `nil` by default.
-- [var pinByteOffset: Int](tktokensmartcardpinauthoperation/pinbyteoffset.md)
+- [var pinByteOffset: Int](./pinbyteoffset.md)
   The offset, in bytes, within the APDU template to mark the location for filling in the PIN.
-- [var smartCard: TKSmartCard?](tktokensmartcardpinauthoperation/smartcard.md)
+- [var smartCard: TKSmartCard?](./smartcard.md)
   A Smart Card to which the formatted APDU is sent in order to authenticate.
 
 

@@ -1,7 +1,8 @@
 # PopularityTopChartSongs
 
 **Framework**: Apple Music Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a song popularity chart resource.
 
@@ -10,16 +11,16 @@ The data structure that represents a song popularity chart resource.
 
 ## Declaration
 
-```swift
+```
 object PopularityTopChartSongs
 ```
 
 ## Topics
 
 ### Related objects
-- [object PopularityTopChartSongs.Genre](popularitytopchartsongs/genre-data.dictionary.md)
+- [object PopularityTopChartSongs.Genre](./popularitytopchartsongs/genre-data.dictionary.md)
   A genre name and its structure.
-- [object PopularityTopChartSongs.Rankings](popularitytopchartsongs/rankings-data.dictionary.md)
+- [object PopularityTopChartSongs.Rankings](./popularitytopchartsongs/rankings-data.dictionary.md)
   A song’s ranking in a popularity chart.
 
 ## Properties
@@ -30,13 +31,14 @@ object PopularityTopChartSongs
 
 ## See Also
 
-- [object Album](album.md)
+### Objects
+- [object Album](./album.md)
   The data structure that represents an Album resource.
-- [object Song](song.md)
+- [object Song](./song.md)
   The data structure that represents a Song resource.
-- [object Artist](artist.md)
+- [object Artist](./artist.md)
   The data structure that represents an Artist resource.
-- [object PopularityTopChartAlbums](popularitytopchartalbums.md)
+- [object PopularityTopChartAlbums](./popularitytopchartalbums.md)
   The data structure that represents an album popularity chart resource.
 
 

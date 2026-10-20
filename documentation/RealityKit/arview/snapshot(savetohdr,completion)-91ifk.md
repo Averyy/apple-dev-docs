@@ -1,7 +1,8 @@
 # snapshot(saveToHDR:completion:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Takes a screenshot.
 
@@ -15,11 +16,19 @@ Takes a screenshot.
 @preconcurrency func snapshot(saveToHDR: Bool, completion: @escaping (ARView.Image?) -> Void)
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency func snapshot(saveToHDR: Bool, completion: @escaping (ARView.Image?) -> Void)
+```
+
 ## See Also
 
-- [func snapshot(saveToHDR: Bool, completion: (ARView.Image?) -> Void)](arview/snapshot(savetohdr:completion:)-66jzu.md)
+### Taking a snapshot
+- [func snapshot(saveToHDR: Bool, completion: (ARView.Image?) -> Void)](./snapshot%28savetohdr,completion%29-66jzu.md)
   Takes a screenshot.
-- [typealias Image](arview/image.md)
+- [typealias Image](./image.md)
 
 
 ---

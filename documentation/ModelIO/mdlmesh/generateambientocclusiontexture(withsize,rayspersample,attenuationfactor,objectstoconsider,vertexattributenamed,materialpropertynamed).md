@@ -1,7 +1,8 @@
 # generateAmbientOcclusionTexture(withSize:raysPerSample:attenuationFactor:objectsToConsider:vertexAttributeNamed:materialPropertyNamed:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates ambient occlusion (AO) information for the mesh and saves it in the mesh as a material property texture of the specified size.
 
@@ -19,17 +20,21 @@ Calculates ambient occlusion (AO) information for the mesh and saves it in the m
 func generateAmbientOcclusionTexture(withSize textureSize: vector_int2, raysPerSample: Int, attenuationFactor: Float, objectsToConsider: [MDLObject], vertexAttributeNamed vertexAttributeName: String, materialPropertyNamed materialPropertyName: String) -> Bool
 ```
 
+```objc
+- (BOOL) generateAmbientOcclusionTextureWithSize:(vector_int2) textureSize raysPerSample:(NSInteger) raysPerSample attenuationFactor:(float) attenuationFactor objectsToConsider:(NSArray<MDLObject *> *) objectsToConsider vertexAttributeNamed:(NSString *) vertexAttributeName materialPropertyNamed:(NSString *) materialPropertyName;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if AO calculation succeeded; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if AO calculation succeeded; otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
 Ambient occlusion (AO) is a measure, for each point on a surface, of how much ambient light can reach that point. For example, a narrow, concave section of a mesh does not receive much ambient light compared with a wide, flat section—thus, in a realistic rendering of the mesh, the concave sections should appear darker than the flat sections. This method analyzes the mesh (and, optionally, static elements of its local environment, specified in the `objectsToConsider` parameter) to precompute (or “bake”) AO information for each point on the mesh’s surface. You can then use the resulting information in shading to produce a more realistic render.
 
-This method saves AO data as a texture image and associates that image with the mesh through the material property specified in the `materialPropertyName` parameter. To map the texture onto the mesh’s surface, this method also generates texture coordinates and writes them in the vertex attribute specified in the `vertexAttributeName` parameter. If the mesh already contains that attribute, this method overwrites the contents of the corresponding vertex buffer. If the mesh does not contain that attribute, this method creates a new attribute and updates the mesh’s [`vertexDescriptor`](mdlmesh/vertexdescriptor.md) object accordingly.
+This method saves AO data as a texture image and associates that image with the mesh through the material property specified in the `materialPropertyName` parameter. To map the texture onto the mesh’s surface, this method also generates texture coordinates and writes them in the vertex attribute specified in the `vertexAttributeName` parameter. If the mesh already contains that attribute, this method overwrites the contents of the corresponding vertex buffer. If the mesh does not contain that attribute, this method creates a new attribute and updates the mesh’s [`vertexDescriptor`](./vertexdescriptor.md) object accordingly.
 
-The `textureSize` and `raysPerSample` parameters together control the fidelity and performance of the AO calculation process and its output. To control quality without specifying a texture size or raytracing options, use the [`generateAmbientOcclusionTexture(withQuality:attenuationFactor:objectsToConsider:vertexAttributeNamed:materialPropertyNamed:)`](mdlmesh/generateambientocclusiontexture(withquality:attenuationfactor:objectstoconsider:vertexattributenamed:materialpropertynamed:).md) method.
+The `textureSize` and `raysPerSample` parameters together control the fidelity and performance of the AO calculation process and its output. To control quality without specifying a texture size or raytracing options, use the [`generateAmbientOcclusionTexture(withQuality:attenuationFactor:objectsToConsider:vertexAttributeNamed:materialPropertyNamed:)`](./generateambientocclusiontexture%28withquality,attenuationfactor,objectstoconsider,vertexattributenamed,materialpropertynamed%29.md) method.
 
 ## Parameters
 
@@ -42,11 +47,12 @@ The `textureSize` and `raysPerSample` parameters together control the fidelity a
 
 ## See Also
 
-- [func generateAmbientOcclusionTexture(withQuality: Float, attenuationFactor: Float, objectsToConsider: [MDLObject], vertexAttributeNamed: String, materialPropertyNamed: String) -> Bool](mdlmesh/generateambientocclusiontexture(withquality:attenuationfactor:objectstoconsider:vertexattributenamed:materialpropertynamed:).md)
+### Generating Ambient Occlusion Data
+- [func generateAmbientOcclusionTexture(withQuality: Float, attenuationFactor: Float, objectsToConsider: [MDLObject], vertexAttributeNamed: String, materialPropertyNamed: String) -> Bool](./generateambientocclusiontexture%28withquality,attenuationfactor,objectstoconsider,vertexattributenamed,materialpropertynamed%29.md)
   Calculates ambient occlusion (AO) information for the mesh and saves it in the mesh as a material property texture.
-- [func generateAmbientOcclusionVertexColors(withQuality: Float, attenuationFactor: Float, objectsToConsider: [MDLObject], vertexAttributeNamed: String) -> Bool](mdlmesh/generateambientocclusionvertexcolors(withquality:attenuationfactor:objectstoconsider:vertexattributenamed:).md)
+- [func generateAmbientOcclusionVertexColors(withQuality: Float, attenuationFactor: Float, objectsToConsider: [MDLObject], vertexAttributeNamed: String) -> Bool](./generateambientocclusionvertexcolors%28withquality,attenuationfactor,objectstoconsider,vertexattributenamed%29.md)
   Calculates ambient occlusion (AO) information for the mesh and saves it in the mesh as a vertex color attribute.
-- [func generateAmbientOcclusionVertexColors(withRaysPerSample: Int, attenuationFactor: Float, objectsToConsider: [MDLObject], vertexAttributeNamed: String) -> Bool](mdlmesh/generateambientocclusionvertexcolors(withrayspersample:attenuationfactor:objectstoconsider:vertexattributenamed:).md)
+- [func generateAmbientOcclusionVertexColors(withRaysPerSample: Int, attenuationFactor: Float, objectsToConsider: [MDLObject], vertexAttributeNamed: String) -> Bool](./generateambientocclusionvertexcolors%28withrayspersample,attenuationfactor,objectstoconsider,vertexattributenamed%29.md)
   Calculates ambient occlusion (AO) information for the mesh, using the specified number of rays per sample, and saves it in the mesh as a vertex color attribute.
 
 

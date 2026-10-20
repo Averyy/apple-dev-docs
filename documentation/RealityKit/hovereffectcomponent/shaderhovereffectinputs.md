@@ -1,7 +1,8 @@
 # HoverEffectComponent.ShaderHoverEffectInputs
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that configures the visual aspects of a hover effect that applies a custom material
 
@@ -21,20 +22,20 @@ struct ShaderHoverEffectInputs
 ## Topics
 
 ### Initializers
-- [init(fadeInDuration: TimeInterval, fadeOutDuration: TimeInterval)](hovereffectcomponent/shaderhovereffectinputs/init(fadeinduration:fadeoutduration:).md)
+- [init(fadeInDuration: TimeInterval, fadeOutDuration: TimeInterval)](./shaderhovereffectinputs/init%28fadeinduration,fadeoutduration%29.md)
 ### Instance Properties
-- [var fadeInDuration: TimeInterval](hovereffectcomponent/shaderhovereffectinputs/fadeinduration.md)
+- [var fadeInDuration: TimeInterval](./shaderhovereffectinputs/fadeinduration.md)
   The time it takes in seconds for the effect to fade in.
-- [var fadeOutDuration: TimeInterval](hovereffectcomponent/shaderhovereffectinputs/fadeoutduration.md)
+- [var fadeOutDuration: TimeInterval](./shaderhovereffectinputs/fadeoutduration.md)
   The time it takes in seconds for the effect to fade out.
 ### Type Properties
-- [static let `default`: HoverEffectComponent.ShaderHoverEffectInputs](hovereffectcomponent/shaderhovereffectinputs/default.md)
+- [static let `default`: HoverEffectComponent.ShaderHoverEffectInputs](./shaderhovereffectinputs/default.md)
   The default style initializes the fade-in and fade-out durations to match the durations of the default spotlight.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 
 ---

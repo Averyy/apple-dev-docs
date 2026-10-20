@@ -1,7 +1,8 @@
 # popFirst()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes and returns the first key-value pair of the dictionary if the dictionary isn’t empty.
 
@@ -20,6 +21,8 @@ Removes and returns the first key-value pair of the dictionary if the dictionary
 mutating func popFirst() -> Dictionary<Key, Value>.Element?
 ```
 
+Available when `Key` conforms to `Hashable`.
+
 #### Return Value
 
 The first key-value pair of the dictionary if the dictionary is not empty; otherwise, `nil`.
@@ -28,15 +31,16 @@ The first key-value pair of the dictionary if the dictionary is not empty; other
 
 The first element of the dictionary is not necessarily the first element added. Don’t expect any particular ordering of key-value pairs.
 
-> **Note**: Averages to O(1) over many calls to `popFirst()`.
+> **Complexity**: Averages to O(1) over many calls to `popFirst()`.
 
 ## See Also
 
-- [func dropFirst(Int) -> Self.SubSequence](dictionary/dropfirst(_:).md)
+### Excluding Elements
+- [func dropFirst(Int) -> Self.SubSequence](./dropfirst%28_%29.md)
   Returns a subsequence containing all but the given number of initial elements.
-- [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](dictionary/drop(while:).md)
+- [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](./drop%28while%29.md)
   Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.
-- [func dropLast(Int) -> Self.SubSequence](dictionary/droplast(_:).md)
+- [func dropLast(Int) -> Self.SubSequence](./droplast%28_%29.md)
   Returns a subsequence containing all but the specified number of final elements.
 
 

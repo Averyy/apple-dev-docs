@@ -1,7 +1,8 @@
 # NSObjectMapValueCallBacks
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 For values that are objects.
 
@@ -20,17 +21,22 @@ For values that are objects.
 let NSObjectMapValueCallBacks: NSMapTableValueCallBacks
 ```
 
+```c
+extern const NSMapTableValueCallBacks NSObjectMapValueCallBacks;
+```
+
 ## See Also
 
-- [let NSIntegerMapValueCallBacks: NSMapTableValueCallBacks](nsintegermapvaluecallbacks.md)
+### Constants
+- [let NSIntegerMapValueCallBacks: NSMapTableValueCallBacks](./nsintegermapvaluecallbacks.md)
   For values that are pointer-sized quantities, (for example, `int`, `long`, or `unichar`).
-- [let NSIntMapValueCallBacks: NSMapTableValueCallBacks](nsintmapvaluecallbacks.md)
+- [let NSIntMapValueCallBacks: NSMapTableValueCallBacks](./nsintmapvaluecallbacks.md)
   For values that are pointer-sized quantities, (for example, `int`, `long`, or `unichar`).
-- [let NSNonOwnedPointerMapValueCallBacks: NSMapTableValueCallBacks](nsnonownedpointermapvaluecallbacks.md)
+- [let NSNonOwnedPointerMapValueCallBacks: NSMapTableValueCallBacks](./nsnonownedpointermapvaluecallbacks.md)
   For values that are not owned pointers.
-- [let NSOwnedPointerMapValueCallBacks: NSMapTableValueCallBacks](nsownedpointermapvaluecallbacks.md)
+- [let NSOwnedPointerMapValueCallBacks: NSMapTableValueCallBacks](./nsownedpointermapvaluecallbacks.md)
   For values that are owned pointers.
-- [let NSNonRetainedObjectMapValueCallBacks: NSMapTableValueCallBacks](nsnonretainedobjectmapvaluecallbacks.md)
+- [let NSNonRetainedObjectMapValueCallBacks: NSMapTableValueCallBacks](./nsnonretainedobjectmapvaluecallbacks.md)
   For sets of objects, but without retaining/releasing.
 
 

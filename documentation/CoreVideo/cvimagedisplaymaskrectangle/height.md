@@ -1,7 +1,8 @@
 # height
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the rectangle starting at rectangle’s top offset toward the rectangle’s bottom edge.
 
@@ -22,7 +23,7 @@ var height: UInt16
 
 #### Discussion
 
-This value is always less than [`referenceRasterHeight`](cvimagedisplaymaskrectangle/referencerasterheight.md).
+This value is always less than [`referenceRasterHeight`](./referencerasterheight.md).
 
 
 ---

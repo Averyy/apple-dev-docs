@@ -1,7 +1,8 @@
 # OS_LOG_TYPE_DEBUG
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 Debug-level messages are only captured in memory when debug logging is enabled through a configuration change. They’re purged in accordance with the configuration’s persistence setting. Messages logged at this level contain information that may be useful during development or while troubleshooting a specific problem. Debug logging is intended for use in a development environment and not in shipping software. Logging a message of this type is equivalent to calling the `os_log_debug` function.
 
@@ -10,7 +11,7 @@ Debug-level messages are only captured in memory when debug logging is enabled t
 
 ## Declaration
 
-```swift
+```c
 OS_LOG_TYPE_DEBUG
 ```
 

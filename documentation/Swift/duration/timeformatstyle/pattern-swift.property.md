@@ -1,7 +1,8 @@
 # pattern
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pattern to display a Duration with.
 
@@ -22,7 +23,8 @@ var pattern: Duration.TimeFormatStyle.Pattern { get set }
 
 ## See Also
 
-- [Duration.TimeFormatStyle.Pattern](duration/timeformatstyle/pattern-swift.struct.md)
+### Using a style pattern
+- [Duration.TimeFormatStyle.Pattern](./pattern-swift.struct.md)
   The units — including hours, minutes, or seconds — and the configuration of those units, used to format a duration.
 
 

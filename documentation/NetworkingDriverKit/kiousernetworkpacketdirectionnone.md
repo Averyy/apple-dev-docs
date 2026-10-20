@@ -1,24 +1,26 @@
 # kIOUserNetworkPacketDirectionNone
 
 **Framework**: NetworkingDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The packet is not moving.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 kIOUserNetworkPacketDirectionNone
 ```
 
 ## See Also
 
-- [kIOUserNetworkPacketDirectionRx](kiousernetworkpacketdirectionrx.md)
+### Getting the Packet Directions
+- [kIOUserNetworkPacketDirectionRx](./kiousernetworkpacketdirectionrx.md)
   The packet is moving from the device to the networking stack.
-- [kIOUserNetworkPacketDirectionTx](kiousernetworkpacketdirectiontx.md)
+- [kIOUserNetworkPacketDirectionTx](./kiousernetworkpacketdirectiontx.md)
   The packet is moving from the networking stack to the device.
 
 

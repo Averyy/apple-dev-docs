@@ -1,7 +1,8 @@
 # WKSwipeGestureRecognizerDirection
 
 **Framework**: WatchKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants indicating the direction of a swipe.
 
@@ -14,32 +15,36 @@ Constants indicating the direction of a swipe.
 struct WKSwipeGestureRecognizerDirection
 ```
 
+```c
+enum WKSwipeGestureRecognizerDirection : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var right: WKSwipeGestureRecognizerDirection](wkswipegesturerecognizerdirection/right.md)
+- [static var right: WKSwipeGestureRecognizerDirection](./wkswipegesturerecognizerdirection/right.md)
   The touch moves from left to right. This direction is the default.
-- [static var left: WKSwipeGestureRecognizerDirection](wkswipegesturerecognizerdirection/left.md)
+- [static var left: WKSwipeGestureRecognizerDirection](./wkswipegesturerecognizerdirection/left.md)
   The touch moves from right to left.
-- [static var up: WKSwipeGestureRecognizerDirection](wkswipegesturerecognizerdirection/up.md)
+- [static var up: WKSwipeGestureRecognizerDirection](./wkswipegesturerecognizerdirection/up.md)
   The touch moves upward.
-- [static var down: WKSwipeGestureRecognizerDirection](wkswipegesturerecognizerdirection/down.md)
+- [static var down: WKSwipeGestureRecognizerDirection](./wkswipegesturerecognizerdirection/down.md)
   The touch moves downward.
 ### Initializers
-- [init(rawValue: UInt)](wkswipegesturerecognizerdirection/init(rawvalue:).md)
+- [init(rawValue: UInt)](./wkswipegesturerecognizerdirection/init%28rawvalue%29.md)
   Returns a new direction constant based on the provided raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

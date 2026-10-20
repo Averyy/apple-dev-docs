@@ -1,14 +1,15 @@
 # GENERIC_RELOC_LOCAL_SECTDIFF
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 GENERIC_RELOC_LOCAL_SECTDIFF
 ```
 

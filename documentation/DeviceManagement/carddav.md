@@ -1,7 +1,8 @@
 # CardDAV
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures a Contacts account.
 
@@ -14,7 +15,7 @@ The payload that configures a Contacts account.
 
 ## Declaration
 
-```swift
+```
 object CardDAV
 ```
 
@@ -22,7 +23,7 @@ object CardDAV
 
 Specify `com.apple.carddav.account` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ Specify `com.apple.carddav.account` as the payload type.
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -83,7 +84,7 @@ Specify `com.apple.carddav.account` as the payload type.
 ## Topics
 
 ### Objects
-- [object CardDAV.CommunicationServiceRules](carddav/communicationservicerules-data.dictionary.md)
+- [object CardDAV.CommunicationServiceRules](./carddav/communicationservicerules-data.dictionary.md)
   The communication service handler rules for this account.
 
 ## Properties
@@ -92,25 +93,34 @@ Specify `com.apple.carddav.account` as the payload type.
 - `CardDAVHostName` (string) *(required)*: The server’s address.
 - `CardDAVPassword` (string): The user’s password. Only use this in encrypted profiles.
 - `CardDAVPort` (integer): The server’s port.
-- `CardDAVPrincipalURL` (string): The base URL to the user’s address book. Available: iOS 4+ | iPadOS 4+ | visionOS 1.1+
+- `CardDAVPrincipalURL` (string): The base URL to the user’s address book.
+
+  Available: iOS 4+ | iPadOS 4+ | visionOS 1.1+
 - `CardDAVUsername` (string): The user name for logins.
 - `CardDAVUseSSL` (boolean): If `true`, the system enables SSL.
-- `CommunicationServiceRules` (CardDAV.CommunicationServiceRules): An array of communication service rules for this account. Available: iOS 10+ | iPadOS 10+ | visionOS 1.1+
-- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
+
+  **Default**: `true`
+- `CommunicationServiceRules` (CardDAV.CommunicationServiceRules): An array of communication service rules for this account.
+
+  Available: iOS 10+ | iPadOS 10+ | visionOS 1.1+
+- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication.
+
+  Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
 
 ## See Also
 
-- [object Accounts](accounts.md)
+### Accounts
+- [object Accounts](./accounts.md)
   The payload that configures guest accounts.
-- [object CalDAV](caldav.md)
+- [object CalDAV](./caldav.md)
   The payload that configures a Calendar account.
-- [object GoogleAccount](googleaccount.md)
+- [object GoogleAccount](./googleaccount.md)
   The payload that configures a Google account.
-- [object LDAP](ldap.md)
+- [object LDAP](./ldap.md)
   The payload that configures a Lightweight Directory Access Protocol (LDAP) account.
-- [object MobileAccounts](mobileaccounts.md)
+- [object MobileAccounts](./mobileaccounts.md)
   The payload that configures mobile accounts on the device.
-- [object SubscribedCalendars](subscribedcalendars.md)
+- [object SubscribedCalendars](./subscribedcalendars.md)
   The payload that configures subscribed calendars.
 
 

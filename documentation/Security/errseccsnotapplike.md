@@ -1,7 +1,8 @@
 # errSecCSNotAppLike
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The code is valid but does not seem to be an app.
 
@@ -13,6 +14,10 @@ The code is valid but does not seem to be an app.
 
 ```swift
 var errSecCSNotAppLike: OSStatus { get }
+```
+
+```c
+errSecCSNotAppLike
 ```
 
 

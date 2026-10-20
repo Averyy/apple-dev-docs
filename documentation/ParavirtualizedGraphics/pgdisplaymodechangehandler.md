@@ -1,7 +1,8 @@
 # PGDisplayModeChangeHandler
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The block signature for a routine that handles changes to the display’s graphics mode.
 
@@ -15,6 +16,10 @@ The block signature for a routine that handles changes to the display’s graphi
 typealias PGDisplayModeChangeHandler = (PGDisplayCoord_t, OSType) -> Void
 ```
 
+```c
+typedef void (^)(PGDisplayCoord_t, unsigned int) PGDisplayModeChangeHandler;
+```
+
 ## Parameters
 
 - `sizeInPixels`: The dimensions of the new display mode.
@@ -22,7 +27,8 @@ typealias PGDisplayModeChangeHandler = (PGDisplayCoord_t, OSType) -> Void
 
 ## See Also
 
-- [var modeChangeHandler: PGDisplayModeChangeHandler?](pgdisplaydescriptor/modechangehandler.md)
+### Handling Mode Changes
+- [var modeChangeHandler: PGDisplayModeChangeHandler?](./pgdisplaydescriptor/modechangehandler.md)
   A handler that the framework calls to change the virtual display’s graphics mode.
 
 

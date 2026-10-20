@@ -1,7 +1,8 @@
 # createFolder
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An intent schema that creates a new folder.
 
@@ -20,7 +21,7 @@ var createFolder: some AppSchemaIntent { get }
 
 #### Discussion
 
-To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `files` domain and one of your app’s actions matches the `createFolder` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .files.createFolder)` Swift macro. To make your app work with Siri, see [`Apple Intelligence and Siri AI`](apple-intelligence-and-siri-ai.md).
+To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `files` domain and one of your app’s actions matches the `createFolder` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .files.createFolder)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
 The following example shows an intent that conforms to the `createFolder` schema:
 
@@ -40,19 +41,20 @@ The schema supports the following system experiences:
 
 - Shortcuts
 
-For more information about the App Intents framework and the experiences it supports, see [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md).
+For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
 
 ## See Also
 
-- [var deleteFiles: some AppSchemaIntent](appschema/filesintent/deletefiles.md)
+### Actions
+- [var deleteFiles: some AppSchemaIntent](./deletefiles.md)
   An intent schema that deletes existing files or folders.
-- [var moveFiles: some AppSchemaIntent](appschema/filesintent/movefiles.md)
+- [var moveFiles: some AppSchemaIntent](./movefiles.md)
   An intent schema that moves existing files or folders.
-- [var openFile: some AppSchemaIntent](appschema/filesintent/openfile.md)
+- [var openFile: some AppSchemaIntent](./openfile.md)
   An intent schema that opens a selected file or folder.
-- [var renameFile: some AppSchemaIntent](appschema/filesintent/renamefile.md)
+- [var renameFile: some AppSchemaIntent](./renamefile.md)
   An intent schema that renames an existing file or folder.
-- [AppSchema.FilesIntent](appschema/filesintent.md)
+- [AppSchema.FilesIntent](../filesintent.md)
   Identifies intent schemas in the files domain.
 
 

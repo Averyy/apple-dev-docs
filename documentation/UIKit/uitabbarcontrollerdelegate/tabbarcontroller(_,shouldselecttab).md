@@ -1,7 +1,8 @@
 # tabBarController(_:shouldSelectTab:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether the specified tab should be made active.
 
@@ -16,6 +17,10 @@ Asks the delegate whether the specified tab should be made active.
 
 ```swift
 optional func tabBarController(_ tabBarController: UITabBarController, shouldSelectTab tab: UITab) -> Bool
+```
+
+```objc
+- (BOOL) tabBarController:(UITabBarController *) tabBarController shouldSelectTab:(UITab *) tab;
 ```
 
 #### Discussion

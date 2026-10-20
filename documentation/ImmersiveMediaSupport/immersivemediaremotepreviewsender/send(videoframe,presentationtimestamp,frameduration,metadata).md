@@ -1,7 +1,8 @@
 # send(videoFrame:presentationTimeStamp:frameDuration:metadata:)
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a video frame to all the connected receivers using its sample buffer representation.
 
@@ -16,7 +17,7 @@ func send(videoFrame: ImmersiveVideoFrame, presentationTimeStamp: CMTime, frameD
 
 #### Discussion
 
-> **Note**: This function throws if anything fails while sending the frame, for example, if the frame has an invalid format or data.
+> **Throws**: This function throws if anything fails while sending the frame, for example, if the frame has an invalid format or data.
 
 ## Parameters
 

@@ -1,61 +1,83 @@
 # ABPropertyType
 
 **Framework**: Address Book  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 These are the possible types of ABRecord properties.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS ?+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst*
+
+```swift
+typealias ABPropertyType = UInt32
+```
+
+*macOS*
 
 ```swift
 typealias ABPropertyType = CFIndex
 ```
 
+*iOS, iPadOS, Mac Catalyst*
+
+```c
+typedef uint32_t ABPropertyType;
+```
+
+*macOS*
+
+```c
+typedef CFIndex ABPropertyType;
+```
+
 ## Topics
 
 ### Constants
-- [var kABErrorInProperty: _ABPropertyType](kaberrorinproperty.md)
+- [var kABErrorInProperty: _ABPropertyType](./kaberrorinproperty.md)
   An invalid property was used.
-- [var kABStringProperty: _ABPropertyType](kabstringproperty.md)
+- [var kABStringProperty: _ABPropertyType](./kabstringproperty.md)
   This property is an `NSString` object.
-- [var kABIntegerProperty: _ABPropertyType](kabintegerproperty.md)
+- [var kABIntegerProperty: _ABPropertyType](./kabintegerproperty.md)
   This property is an `NSNumber` object representing an integer.
-- [var kABRealProperty: _ABPropertyType](kabrealproperty.md)
+- [var kABRealProperty: _ABPropertyType](./kabrealproperty.md)
   This property is an `NSNumber` object representing a real number.
-- [var kABDateProperty: _ABPropertyType](kabdateproperty.md)
+- [var kABDateProperty: _ABPropertyType](./kabdateproperty.md)
   This property is an `NSDate` object.
-- [var kABArrayProperty: _ABPropertyType](kabarrayproperty.md)
+- [var kABArrayProperty: _ABPropertyType](./kabarrayproperty.md)
   This property is an `NSArray` object.
-- [var kABDictionaryProperty: _ABPropertyType](kabdictionaryproperty.md)
+- [var kABDictionaryProperty: _ABPropertyType](./kabdictionaryproperty.md)
   This property is an `NSDictionary` object.
-- [var kABDataProperty: _ABPropertyType](kabdataproperty.md)
+- [var kABDataProperty: _ABPropertyType](./kabdataproperty.md)
   This property is an `NSData` object.
-- [var kABMultiStringProperty: _ABPropertyType](kabmultistringproperty.md)
+- [var kABMultiStringProperty: _ABPropertyType](./kabmultistringproperty.md)
   This property is an `ABMultiValue` object containing `NSString` objects.
-- [var kABMultiIntegerProperty: _ABPropertyType](kabmultiintegerproperty.md)
+- [var kABMultiIntegerProperty: _ABPropertyType](./kabmultiintegerproperty.md)
   This property is an `ABMultiValue` object containing `NSNumber` objects representing integers.
-- [var kABMultiRealProperty: _ABPropertyType](kabmultirealproperty.md)
+- [var kABMultiRealProperty: _ABPropertyType](./kabmultirealproperty.md)
   This property is an `ABMultiValue` object containing `NSNumber` objects representing real numbers.
-- [var kABMultiDateProperty: _ABPropertyType](kabmultidateproperty.md)
+- [var kABMultiDateProperty: _ABPropertyType](./kabmultidateproperty.md)
   This property is an `ABMultiValue` object containing `NSDate` objects.
-- [var kABMultiArrayProperty: _ABPropertyType](kabmultiarrayproperty.md)
+- [var kABMultiArrayProperty: _ABPropertyType](./kabmultiarrayproperty.md)
   This property is an `ABMultiValue` object containing `NSArray` objects.
-- [var kABMultiDictionaryProperty: _ABPropertyType](kabmultidictionaryproperty.md)
+- [var kABMultiDictionaryProperty: _ABPropertyType](./kabmultidictionaryproperty.md)
   This property is an `ABMultiValue` object containing `NSDictionary` objects.
-- [var kABMultiDataProperty: _ABPropertyType](kabmultidataproperty.md)
+- [var kABMultiDataProperty: _ABPropertyType](./kabmultidataproperty.md)
   This property is an `ABMultiValue` object containing `NSData` objects.
 
 ## See Also
 
-- [typealias ABSearchComparison](absearchcomparison.md)
+### Miscellaneous
+- [typealias ABSearchComparison](./absearchcomparison.md)
   Constants used to specify the type of comparison beingmade.
-- [typealias ABSearchConjunction](absearchconjunction.md)
+- [typealias ABSearchConjunction](./absearchconjunction.md)
   Constants used to create compound search elements.
 
 

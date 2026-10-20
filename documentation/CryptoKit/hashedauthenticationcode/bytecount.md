@@ -1,7 +1,8 @@
 # byteCount
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes in the message authentication code.
 

@@ -1,7 +1,8 @@
 # setInsertionHandler(_:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an insertion handler closure to be called when a new token is inserted into the system.
 
@@ -20,9 +21,13 @@ Sets an insertion handler closure to be called when a new token is inserted into
 func setInsertionHandler(_ insertionHandler: @escaping (String) -> Void)
 ```
 
+```objc
+- (void) setInsertionHandler:(void (^)(NSString *tokenID)) insertionHandler;
+```
+
 ## Mentions
 
-- [Using Cryptographic Assets Stored on a Smart Card](using-cryptographic-assets-stored-on-a-smart-card.md)
+- [Using Cryptographic Assets Stored on a Smart Card](../using-cryptographic-assets-stored-on-a-smart-card.md)
 
 ## Parameters
 
@@ -30,7 +35,8 @@ func setInsertionHandler(_ insertionHandler: @escaping (String) -> Void)
 
 ## See Also
 
-- [func addRemovalHandler((String) -> Void, forTokenID: String)](tktokenwatcher/addremovalhandler(_:fortokenid:).md)
+### Configuring Handlers
+- [func addRemovalHandler((String) -> Void, forTokenID: String)](./addremovalhandler%28_,fortokenid%29.md)
   Adds a removal handler for the specified token ID.
 
 

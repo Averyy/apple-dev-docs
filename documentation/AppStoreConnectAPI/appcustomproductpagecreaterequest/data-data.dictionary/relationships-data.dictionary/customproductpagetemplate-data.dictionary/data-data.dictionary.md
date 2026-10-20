@@ -1,7 +1,8 @@
 # AppCustomProductPageCreateRequest.Data.Relationships.CustomProductPageTemplate.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an app custom product page.
 
@@ -10,14 +11,14 @@ The request body you use to create an app custom product page.
 
 ## Declaration
 
-```swift
+```
 object AppCustomProductPageCreateRequest.Data.Relationships.CustomProductPageTemplate.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appCustomProductPages`
 
 
 ---

@@ -1,14 +1,15 @@
 # d_ttys
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 struct tty **d_ttys;
 ```
 

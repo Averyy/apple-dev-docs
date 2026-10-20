@@ -1,14 +1,15 @@
 # idtype_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 typedef enum idtype_t : unsigned int {
     ...
 } idtype_t;
@@ -17,9 +18,9 @@ typedef enum idtype_t : unsigned int {
 ## Topics
 
 ### Constants
-- [P_ALL](idtype_t/p_all.md)
-- [P_PGID](idtype_t/p_pgid.md)
-- [P_PID](idtype_t/p_pid.md)
+- [P_ALL](./idtype_t/p_all.md)
+- [P_PGID](./idtype_t/p_pgid.md)
+- [P_PID](./idtype_t/p_pid.md)
 
 
 ---

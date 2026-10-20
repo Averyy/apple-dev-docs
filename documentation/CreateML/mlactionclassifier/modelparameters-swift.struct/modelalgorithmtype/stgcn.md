@@ -1,7 +1,8 @@
 # MLActionClassifier.ModelParameters.ModelAlgorithmType.stgcn
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The spatial-temporal graph convolution neural-network algorithm.
 

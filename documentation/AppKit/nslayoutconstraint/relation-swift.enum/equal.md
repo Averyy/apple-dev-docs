@@ -1,12 +1,13 @@
 # NSLayoutConstraint.Relation.equal
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constraint requires the first attribute to be exactly equal to the modified second attribute.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The constraint requires the first attribute to be exactly equal to the modified 
 case equal
 ```
 
+```c
+NSLayoutRelationEqual
+```
+
 ## See Also
 
-- [NSLayoutConstraint.Relation.lessThanOrEqual](nslayoutconstraint/relation-swift.enum/lessthanorequal.md)
+### Constants
+- [NSLayoutConstraint.Relation.lessThanOrEqual](./lessthanorequal.md)
   The constraint requires the first attribute to be less than or equal to the modified second attribute.
-- [NSLayoutConstraint.Relation.greaterThanOrEqual](nslayoutconstraint/relation-swift.enum/greaterthanorequal.md)
+- [NSLayoutConstraint.Relation.greaterThanOrEqual](./greaterthanorequal.md)
   The constraint requires the first attribute to be greater than or equal to the modified second attribute.
 
 

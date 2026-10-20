@@ -1,14 +1,15 @@
 # hash_type
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 uint8_t hash_type;
 ```
 

@@ -1,7 +1,8 @@
 # ExtensionPointDefining
 
 **Framework**: ExtensionFoundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that extension point types adopt.
 
@@ -22,16 +23,17 @@ protocol ExtensionPointDefining
 
 #### Overview
 
-The [`ExtensionFoundation`](ExtensionFoundation.md) framework uses this protocol to identify types that represent extension points.
+The [ExtensionFoundation](./ExtensionFoundation.md) framework uses this protocol to identify types that represent extension points.
 
 ## Relationships
 
 ### Conforming Types
-- [AppExtensionPoint](appextensionpoint.md)
+- [AppExtensionPoint](./appextensionpoint.md)
 
 ## See Also
 
-- [struct AppExtensionPoint](appextensionpoint.md)
+### Extension-point management
+- [struct AppExtensionPoint](./appextensionpoint.md)
   A type you use to declare your host app’s extension points and bind to them from app extensions.
 
 

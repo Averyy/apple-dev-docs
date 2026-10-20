@@ -1,15 +1,20 @@
 # variantID
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var variantID: UInt32
+```
+
+```c
+UInt32 variantID;
 ```
 
 

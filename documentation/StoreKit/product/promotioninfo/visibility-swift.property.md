@@ -1,7 +1,8 @@
 # visibility
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates whether the promoted Apple In-App Purchase is visible or hidden on the user’s device.
 
@@ -18,19 +19,20 @@ var visibility: Product.PromotionInfo.Visibility
 
 ## Mentions
 
-- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
+- [Supporting promoted Apple In-App Purchases in your app](../../supporting-promoted-in-app-purchases-in-your-app.md)
 
 #### Discussion
 
-To override the visibility of a promoted Apple In-App Purchase, set the [`visibility`](product/promotioninfo/visibility-swift.property.md) value and then call [`update()`](product/promotioninfo/update().md) to save the change. You can also call [`updateProductVisibility(_:for:)`](product/promotioninfo/updateproductvisibility(_:for:).md) to set the visibility.
+To override the visibility of a promoted Apple In-App Purchase, set the [`visibility`](./visibility-swift.property.md) value and then call [`update()`](./update%28%29.md) to save the change. You can also call [`updateProductVisibility(_:for:)`](./updateproductvisibility%28_,for%29.md) to set the visibility.
 
-The default value is [`Product.PromotionInfo.Visibility.appStoreConnectDefault`](product/promotioninfo/visibility-swift.enum/appstoreconnectdefault.md).
+The default value is [`Product.PromotionInfo.Visibility.appStoreConnectDefault`](./visibility-swift.enum/appstoreconnectdefault.md).
 
 ## See Also
 
-- [Product.PromotionInfo.Visibility](product/promotioninfo/visibility-swift.enum.md)
+### Managing promotion visibility
+- [Product.PromotionInfo.Visibility](./visibility-swift.enum.md)
   The visibility states for product promotion information.
-- [static func updateProductVisibility(Product.PromotionInfo.Visibility, for: Product.ID) async throws](product/promotioninfo/updateproductvisibility(_:for:).md)
+- [static func updateProductVisibility(Product.PromotionInfo.Visibility, for: Product.ID) async throws](./updateproductvisibility%28_,for%29.md)
   Updates a value that indicates whether a promoted Apple In-App Purchase appears in the App Store on the user’s device.
 
 

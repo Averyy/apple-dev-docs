@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image to use as an input image.
@@ -11,7 +12,7 @@ The image to use as an input image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,13 +21,18 @@ The image to use as an input image.
 var inputImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage;
+```
+
 ## See Also
 
-- [var headIndex: Float](cicoremlmodel/headindex.md)
+### Instance Properties
+- [var headIndex: Float](./headindex.md)
   A number that specifies which output of a multihead Core ML model applies the effect on the image.
-- [var model: MLModel](cicoremlmodel/model.md)
+- [var model: MLModel](./model.md)
   The Core ML model used to apply the effect on the image.
-- [var softmaxNormalization: Bool](cicoremlmodel/softmaxnormalization.md)
+- [var softmaxNormalization: Bool](./softmaxnormalization.md)
   A Boolean value that specifies whether to apply Softmax normalization to the output of the model.
 
 

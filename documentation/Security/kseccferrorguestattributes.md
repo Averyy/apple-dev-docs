@@ -1,7 +1,8 @@
 # kSecCFErrorGuestAttributes
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a Core Foundation object containing an attribute that is unrecognized or that contains a value of the wrong type.
 
@@ -15,9 +16,13 @@ A key whose value is a Core Foundation object containing an attribute that is un
 let kSecCFErrorGuestAttributes: CFString
 ```
 
+```c
+extern CFStringRef const kSecCFErrorGuestAttributes;
+```
+
 #### Discussion
 
-This key is present when you pass a bad guest attribute to the [`SecHostCreateGuest`](sechostcreateguest.md) or [`SecHostSetGuestStatus`](sechostsetgueststatus.md) function.
+This key is present when you pass a bad guest attribute to the [`SecHostCreateGuest`](./sechostcreateguest.md) or [`SecHostSetGuestStatus`](./sechostsetgueststatus.md) function.
 
 
 ---

@@ -1,7 +1,8 @@
 # WKBackgroundFetchResult.failed
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The download attempt failed.
 
@@ -14,11 +15,16 @@ The download attempt failed.
 case failed
 ```
 
+```c
+WKBackgroundFetchResultFailed
+```
+
 ## See Also
 
-- [WKBackgroundFetchResult.newData](wkbackgroundfetchresult/newdata.md)
+### Fetch Results
+- [WKBackgroundFetchResult.newData](./newdata.md)
   The download attempt succeeded.
-- [WKBackgroundFetchResult.noData](wkbackgroundfetchresult/nodata.md)
+- [WKBackgroundFetchResult.noData](./nodata.md)
   The notification has no associated content.
 
 

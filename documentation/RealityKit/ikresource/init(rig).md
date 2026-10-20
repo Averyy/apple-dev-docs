@@ -1,7 +1,8 @@
 # init(rig:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new resource instance for a single solver using the given rig and an automatic solver identifier.
 
@@ -21,7 +22,7 @@ convenience init(rig: IKRig) throws
 
 #### Discussion
 
-> **Note**: Validation errors for the given rig structure.
+> **Throws**: Validation errors for the given rig structure.
 
 ## Parameters
 

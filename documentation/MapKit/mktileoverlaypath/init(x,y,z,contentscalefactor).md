@@ -1,18 +1,19 @@
 # init(x:y:z:contentScaleFactor:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new overlay path with the specified indexes and content scale factor.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -29,7 +30,8 @@ init(x: Int, y: Int, z: Int, contentScaleFactor: CGFloat)
 
 ## See Also
 
-- [init()](mktileoverlaypath/init.md)
+### Creating a tile overlay path
+- [init()](./init%28%29.md)
   Creates a new tile overlay path.
 
 

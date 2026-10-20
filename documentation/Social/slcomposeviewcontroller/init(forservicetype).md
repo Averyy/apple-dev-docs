@@ -1,7 +1,8 @@
 # init(forServiceType:)
 
 **Framework**: Social  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new social compose view controller.
 
@@ -16,6 +17,10 @@ Creates a new social compose view controller.
 init!(forServiceType serviceType: String!)
 ```
 
+```objc
++ (SLComposeViewController *) composeViewControllerForServiceType:(NSString *) serviceType;
+```
+
 #### Return Value
 
 Returns a social compose view controller or `nil` if an error occurs.
@@ -26,7 +31,7 @@ Use this method to create a social compose view controller. Do not use any other
 
 ## Parameters
 
-- `serviceType`: This specifies the social networking service to which you want to post. You must use one of the possible values listed in Service Type Constants. This also sets the value of [`serviceType`](slcomposeviewcontroller/servicetype.md). If an invalid `serviceType` is passed in, this method throws an exception.
+- `serviceType`: This specifies the social networking service to which you want to post. You must use one of the possible values listed in Service Type Constants. This also sets the value of [`serviceType`](./servicetype.md). If an invalid `serviceType` is passed in, this method throws an exception.
 
 
 ---

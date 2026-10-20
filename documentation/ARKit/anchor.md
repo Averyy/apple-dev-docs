@@ -1,7 +1,8 @@
 # Anchor
 
 **Framework**: ARKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The identity, location, and orientation of an object in world space.
 
@@ -18,50 +19,51 @@ protocol Anchor : CustomStringConvertible, Identifiable, Sendable
 ## Topics
 
 ### Inspecting an anchor
-- [var id: UUID](anchor/id.md)
+- [var id: UUID](./anchor/id.md)
   A unique identifier that distinguishes this anchor from all other anchors.
-- [var timestamp: TimeInterval](anchor/timestamp.md)
-- [var originFromAnchorTransform: simd_float4x4](anchor/originfromanchortransform.md)
+- [var timestamp: TimeInterval](./anchor/timestamp.md)
+- [var originFromAnchorTransform: simd_float4x4](./anchor/originfromanchortransform.md)
   The position and orientation of this anchor in world space.
 ### Tracking anchors over time
-- [struct AnchorUpdate](anchorupdate.md)
+- [struct AnchorUpdate](./anchorupdate.md)
   Information about the event that updated an anchor.
-- [struct AnchorUpdateSequence](anchorupdatesequence.md)
+- [struct AnchorUpdateSequence](./anchorupdatesequence.md)
   An asynchronous sequence of updates to anchors.
 
 ## Relationships
 
 ### Inherits From
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Inherited By
-- [TrackableAnchor](trackableanchor.md)
+- [TrackableAnchor](./trackableanchor.md)
 ### Conforming Types
-- [AccessoryAnchor](accessoryanchor.md)
-- [BarcodeAnchor](barcodeanchor.md)
-- [CameraRegionAnchor](cameraregionanchor.md)
-- [DeviceAnchor](deviceanchor.md)
-- [EnvironmentProbeAnchor](environmentprobeanchor.md)
-- [FieldOfViewAnchor](fieldofviewanchor.md)
-- [HandAnchor](handanchor.md)
-- [ImageAnchor](imageanchor.md)
-- [MeshAnchor](meshanchor.md)
-- [ObjectAnchor](objectanchor.md)
-- [PlaneAnchor](planeanchor.md)
-- [RoomAnchor](roomanchor.md)
-- [WorldAnchor](worldanchor.md)
+- [AccessoryAnchor](./accessoryanchor.md)
+- [BarcodeAnchor](./barcodeanchor.md)
+- [CameraRegionAnchor](./cameraregionanchor.md)
+- [DeviceAnchor](./deviceanchor.md)
+- [EnvironmentProbeAnchor](./environmentprobeanchor.md)
+- [FieldOfViewAnchor](./fieldofviewanchor.md)
+- [HandAnchor](./handanchor.md)
+- [ImageAnchor](./imageanchor.md)
+- [MeshAnchor](./meshanchor.md)
+- [ObjectAnchor](./objectanchor.md)
+- [PlaneAnchor](./planeanchor.md)
+- [RoomAnchor](./roomanchor.md)
+- [WorldAnchor](./worldanchor.md)
 
 ## See Also
 
-- [Setting up access to ARKit data](../visionos/setting-up-access-to-arkit-data.md)
+### visionOS
+- [Setting up access to ARKit data](../visionOS/setting-up-access-to-arkit-data.md)
   Check whether your app can use ARKit and respect people’s privacy.
-- [class ARKitSession](arkitsession.md)
+- [class ARKitSession](./arkitsession.md)
   The main entry point for receiving data from ARKit.
-- [protocol DataProvider](dataprovider.md)
+- [protocol DataProvider](./dataprovider.md)
   A source of live data from ARKit.
-- [ARKit in visionOS](arkit-in-visionos.md)
+- [ARKit in visionOS](./arkit-in-visionos.md)
   Create immersive augmented reality experiences.
 
 

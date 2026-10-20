@@ -1,7 +1,8 @@
 # supportedInterfaceOrientations(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the interface orientations supported by the window scene. The returned value replaces the app’s UISupportedInterfaceOrientations Info.plist value for this scene. If not implemented, the Info.plist value is used.
 
@@ -15,6 +16,10 @@ Returns the interface orientations supported by the window scene. The returned v
 
 ```swift
 optional func supportedInterfaceOrientations(for windowScene: UIWindowScene) -> UIInterfaceOrientationMask
+```
+
+```objc
+- (UIInterfaceOrientationMask) supportedInterfaceOrientationsForWindowScene:(UIWindowScene *) windowScene;
 ```
 
 

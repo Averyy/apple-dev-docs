@@ -1,7 +1,8 @@
 # P384.KeyAgreement.PublicKey.EphemeralPrivateKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of the ephemeral private key associated with this public key.
 

@@ -1,7 +1,8 @@
 # NSHostingMenu
 
 **Framework**: SwiftUI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An AppKit menu with menu items that are defined by a SwiftUI View.
 
@@ -20,7 +21,7 @@ Because `NSHostingMenu` is an `NSMenu` subclass, you can integrate it into your 
 
 A hosting menu’s `items` property will be updated based on the content of the provided `rootView`, so direct mutations to the item array are not allowed, even if done using methods like `addItem` on the menu itself.
 
-SwiftUI views hosted in the menu will be styled and behave identically to views in a [`Menu`](menu.md) or `View/contextMenu`. Make sure to use a `Group` or a view with multiple subviews as your top level container instead of an `HStack` or other container that would attempt to place all of your actions in a single menu item.
+SwiftUI views hosted in the menu will be styled and behave identically to views in a [`Menu`](./menu.md) or `View/contextMenu`. Make sure to use a `Group` or a view with multiple subviews as your top level container instead of an `HStack` or other container that would attempt to place all of your actions in a single menu item.
 
 > **Note**: When used as the menu of an `NSPopUpButton`, make sure `NSPopUpButtonCell.usesItemFromMenu` is set to `false`. When using a hosting menu with macOS 14, do not change the value of the `delegate` property. (Setting the delegate is permitted on macOS 15 and newer.)
 
@@ -72,45 +73,46 @@ List(directoryContents, selection: $selection) { entry in
 ## Topics
 
 ### Initializers
-- [init(rootView: Content)](nshostingmenu/init(rootview:).md)
+- [init(rootView: Content)](./nshostingmenu/init%28rootview%29.md)
   Creates a hosting menu object that wraps the specified SwiftUI view.
 ### Instance Properties
-- [var rootView: Content](nshostingmenu/rootview.md)
+- [var rootView: Content](./nshostingmenu/rootview.md)
   The root view of the SwiftUI view hierarchy managed by this menu.
 ### Instance Methods
-- [func copy(with: NSZone?) -> Any](nshostingmenu/copy(with:).md)
+- [func copy(with: NSZone?) -> Any](./nshostingmenu/copy%28with%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSMenu](../appkit/nsmenu.md)
+- [NSMenu](../AppKit/nsmenu.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
-- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](../AppKit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../AppKit/nsaccessibilityprotocol.md)
+- [NSAppearanceCustomization](../AppKit/nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
 
 ## See Also
 
-- [Unifying your app’s animations](unifying-your-app-s-animations.md)
+### Displaying SwiftUI views in AppKit
+- [Unifying your app’s animations](./unifying-your-app-s-animations.md)
   Create a consistent UI animation experience across SwiftUI, UIKit, and AppKit.
-- [class NSHostingController](nshostingcontroller.md)
+- [class NSHostingController](./nshostingcontroller.md)
   An AppKit view controller that hosts SwiftUI view hierarchy.
-- [class NSHostingView](nshostingview.md)
+- [class NSHostingView](./nshostingview.md)
   An AppKit view that hosts a SwiftUI view hierarchy.
-- [struct NSHostingSizingOptions](nshostingsizingoptions.md)
+- [struct NSHostingSizingOptions](./nshostingsizingoptions.md)
   Options for how hosting views and controllers reflect their content’s size into Auto Layout constraints.
-- [class NSHostingSceneRepresentation](nshostingscenerepresentation.md)
+- [class NSHostingSceneRepresentation](./nshostingscenerepresentation.md)
   An AppKit type that hosts and can present SwiftUI scenes
-- [struct NSHostingSceneBridgingOptions](nshostingscenebridgingoptions.md)
+- [struct NSHostingSceneBridgingOptions](./nshostingscenebridgingoptions.md)
   Options for how hosting views and controllers manage aspects of the associated window.
 
 

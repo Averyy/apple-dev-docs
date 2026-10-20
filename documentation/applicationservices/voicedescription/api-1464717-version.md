@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The version number of the voice.
 
@@ -12,6 +13,10 @@ The version number of the voice.
 
 ```swift
 var version: Int32
+```
+
+```c
+SInt32 version;
 ```
 
 

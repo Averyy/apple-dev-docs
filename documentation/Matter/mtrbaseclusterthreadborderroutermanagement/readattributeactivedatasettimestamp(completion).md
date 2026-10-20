@@ -1,7 +1,8 @@
 # readAttributeActiveDatasetTimestamp(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeActiveDatasetTimestamp(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeActiveDatasetTimestamp() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeActiveDatasetTimestampWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

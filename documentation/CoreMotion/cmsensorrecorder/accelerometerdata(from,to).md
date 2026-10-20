@@ -1,7 +1,8 @@
 # accelerometerData(from:to:)
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the accelerometer data collected between the specified dates.
 
@@ -15,6 +16,10 @@ Retrieves the accelerometer data collected between the specified dates.
 
 ```swift
 func accelerometerData(from fromDate: Date, to toDate: Date) -> CMSensorDataList?
+```
+
+```objc
+- (CMSensorDataList *) accelerometerDataFromDate:(NSDate *) fromDate toDate:(NSDate *) toDate;
 ```
 
 #### Return Value

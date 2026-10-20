@@ -1,10 +1,11 @@
 # kOBEXConnectFlag7Reserved
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,16 +13,21 @@
 var kOBEXConnectFlag7Reserved: OBEXConnectFlagValues { get }
 ```
 
+```c
+kOBEXConnectFlag7Reserved
+```
+
 ## See Also
 
-- [var kOBEXConnectFlag1Reserved: OBEXConnectFlagValues](kobexconnectflag1reserved.md)
-- [var kOBEXConnectFlag2Reserved: OBEXConnectFlagValues](kobexconnectflag2reserved.md)
-- [var kOBEXConnectFlag3Reserved: OBEXConnectFlagValues](kobexconnectflag3reserved.md)
-- [var kOBEXConnectFlag4Reserved: OBEXConnectFlagValues](kobexconnectflag4reserved.md)
-- [var kOBEXConnectFlag5Reserved: OBEXConnectFlagValues](kobexconnectflag5reserved.md)
-- [var kOBEXConnectFlag6Reserved: OBEXConnectFlagValues](kobexconnectflag6reserved.md)
-- [var kOBEXConnectFlagNone: OBEXConnectFlagValues](kobexconnectflagnone.md)
-- [var kOBEXConnectFlagSupportMultipleItLMPConnections: OBEXConnectFlagValues](kobexconnectflagsupportmultipleitlmpconnections.md)
+### Constants
+- [var kOBEXConnectFlag1Reserved: OBEXConnectFlagValues](./kobexconnectflag1reserved.md)
+- [var kOBEXConnectFlag2Reserved: OBEXConnectFlagValues](./kobexconnectflag2reserved.md)
+- [var kOBEXConnectFlag3Reserved: OBEXConnectFlagValues](./kobexconnectflag3reserved.md)
+- [var kOBEXConnectFlag4Reserved: OBEXConnectFlagValues](./kobexconnectflag4reserved.md)
+- [var kOBEXConnectFlag5Reserved: OBEXConnectFlagValues](./kobexconnectflag5reserved.md)
+- [var kOBEXConnectFlag6Reserved: OBEXConnectFlagValues](./kobexconnectflag6reserved.md)
+- [var kOBEXConnectFlagNone: OBEXConnectFlagValues](./kobexconnectflagnone.md)
+- [var kOBEXConnectFlagSupportMultipleItLMPConnections: OBEXConnectFlagValues](./kobexconnectflagsupportmultipleitlmpconnections.md)
 
 
 ---

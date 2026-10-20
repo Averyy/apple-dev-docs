@@ -1,7 +1,8 @@
 # intermediateCertificateTLV
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.5+
@@ -16,6 +17,10 @@
 
 ```swift
 var intermediateCertificateTLV: Data? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) MTRCertificateTLVBytes intermediateCertificateTLV;
 ```
 
 

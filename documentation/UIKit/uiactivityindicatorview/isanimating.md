@@ -1,7 +1,8 @@
 # isAnimating
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the activity indicator is currently running its animation.
 
@@ -9,7 +10,7 @@ A Boolean value indicating whether the activity indicator is currently running i
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ A Boolean value indicating whether the activity indicator is currently running i
 var isAnimating: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isAnimating) BOOL animating;
+```
+
 ## See Also
 
-- [func startAnimating()](uiactivityindicatorview/startanimating.md)
+### Managing an activity indicator
+- [func startAnimating()](./startanimating%28%29.md)
   Starts the animation of the progress indicator.
-- [func stopAnimating()](uiactivityindicatorview/stopanimating.md)
+- [func stopAnimating()](./stopanimating%28%29.md)
   Stops the animation of the progress indicator.
-- [var hidesWhenStopped: Bool](uiactivityindicatorview/hideswhenstopped.md)
+- [var hidesWhenStopped: Bool](./hideswhenstopped.md)
   A Boolean value that controls whether the activity indicator is hidden when the animation is stopped.
 
 

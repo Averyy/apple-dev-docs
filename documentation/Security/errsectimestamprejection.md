@@ -1,7 +1,8 @@
 # errSecTimestampRejection
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A timestamp transaction is rejected.
 
@@ -18,6 +19,10 @@ A timestamp transaction is rejected.
 
 ```swift
 var errSecTimestampRejection: OSStatus { get }
+```
+
+```c
+errSecTimestampRejection
 ```
 
 

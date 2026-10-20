@@ -1,7 +1,8 @@
 # usesBottomSafeArea
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the layout guide uses the view’s safe area layout guide.
 
@@ -17,11 +18,15 @@ A Boolean value that indicates whether the layout guide uses the view’s safe a
 var usesBottomSafeArea: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL usesBottomSafeArea;
+```
+
 #### Discussion
 
-Defaults to [`true`](https://developer.apple.com/documentation/swift/true), indicating that the layout guide ties to the [`bottomAnchor`](uilayoutguide/bottomanchor.md) of the view’s [`safeAreaLayoutGuide`](uiview/safearealayoutguide.md).
+Defaults to [`true`](../../Swift/true.md), indicating that the layout guide ties to the [`bottomAnchor`](../uilayoutguide/bottomanchor.md) of the view’s [`safeAreaLayoutGuide`](../uiview/safearealayoutguide.md).
 
-Set to [`false`](https://developer.apple.com/documentation/swift/false) to tie the layout guide to the [`bottomAnchor`](uiview/bottomanchor.md) of the view instead.
+Set to [`false`](../../Swift/false.md) to tie the layout guide to the [`bottomAnchor`](../uiview/bottomanchor.md) of the view instead.
 
 
 ---

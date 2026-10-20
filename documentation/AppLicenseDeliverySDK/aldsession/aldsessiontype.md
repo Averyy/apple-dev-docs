@@ -1,7 +1,8 @@
 # ALDSession.ALDSessionType
 
 **Framework**: App License Delivery SDK  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of the license session created. A normalSession is used for a session created with a license request. A staticSession is used for session created without a license request
 
@@ -14,22 +15,22 @@ enum ALDSessionType
 ## Topics
 
 ### Enumeration Cases
-- [ALDSession.ALDSessionType.normalSession](aldsession/aldsessiontype/normalsession.md)
-- [ALDSession.ALDSessionType.staticSession](aldsession/aldsessiontype/staticsession.md)
-- [ALDSession.ALDSessionType.unknown](aldsession/aldsessiontype/unknown.md)
+- [ALDSession.ALDSessionType.normalSession](./aldsessiontype/normalsession.md)
+- [ALDSession.ALDSessionType.staticSession](./aldsessiontype/staticsession.md)
+- [ALDSession.ALDSessionType.unknown](./aldsessiontype/unknown.md)
 ### Initializers
-- [init?(rawValue: UInt32)](aldsession/aldsessiontype/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./aldsessiontype/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 ### Default Implementations
-- [Equatable Implementations](aldsession/aldsessiontype/equatable-implementations.md)
-- [RawRepresentable Implementations](aldsession/aldsessiontype/rawrepresentable-implementations.md)
+- [Equatable Implementations](./aldsessiontype/equatable-implementations.md)
+- [RawRepresentable Implementations](./aldsessiontype/rawrepresentable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 
 ---

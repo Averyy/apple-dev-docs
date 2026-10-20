@@ -1,7 +1,8 @@
 # artwork
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The record label’s artwork.
 

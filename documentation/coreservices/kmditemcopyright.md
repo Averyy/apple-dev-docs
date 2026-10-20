@@ -1,7 +1,8 @@
 # kMDItemCopyright
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The copyright owner of the file contents. A CFString.
 
@@ -12,6 +13,10 @@ The copyright owner of the file contents. A CFString.
 
 ```swift
 let kMDItemCopyright: CFString!
+```
+
+```c
+const CFStringRef kMDItemCopyright;
 ```
 
 

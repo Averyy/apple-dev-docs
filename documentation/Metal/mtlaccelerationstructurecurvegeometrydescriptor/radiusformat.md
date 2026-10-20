@@ -1,7 +1,8 @@
 # radiusFormat
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format of each radius in the radius buffer.
 
@@ -19,9 +20,13 @@ The format of each radius in the radius buffer.
 var radiusFormat: MTLAttributeFormat { get set }
 ```
 
+```objc
+@property (nonatomic) MTLAttributeFormat radiusFormat;
+```
+
 #### Discussion
 
-The property’s default value is [`MTLAttributeFormat.float`](mtlattributeformat/float.md).
+The property’s default value is [`MTLAttributeFormat.float`](../mtlattributeformat/float.md).
 
 
 ---

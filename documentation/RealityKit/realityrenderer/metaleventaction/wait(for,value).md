@@ -1,7 +1,8 @@
 # wait(for:value:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an action that represents waiting for an event to reach the value.
 

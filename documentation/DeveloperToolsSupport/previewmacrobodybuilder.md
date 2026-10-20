@@ -1,7 +1,8 @@
 # PreviewMacroBodyBuilder
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Builder for preview body content within a `#Preview` macro.
 
@@ -28,7 +29,7 @@ struct PreviewMacroBodyBuilder<Content>
 ## Topics
 
 ### Type Methods
-- [static func buildBlock(Content) -> Content](previewmacrobodybuilder/buildblock(_:).md)
+- [static func buildBlock(Content) -> Content](./previewmacrobodybuilder/buildblock%28_%29.md)
 
 
 ---

@@ -1,17 +1,18 @@
 # MPSImageTransformProvider
 
 **Framework**: Metal Performance Shaders  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A general interface for objects that provide image resampling.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,25 +20,30 @@ A general interface for objects that provide image resampling.
 protocol MPSImageTransformProvider : NSSecureCoding, NSObjectProtocol
 ```
 
+```objc
+@protocol MPSImageTransformProvider <NSSecureCoding, NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func transform(forSourceImage: MPSImage, handle: (any MPSHandle)?) -> MPSScaleTransform](mpsimagetransformprovider/transform(forsourceimage:handle:).md)
+- [func transform(forSourceImage: MPSImage, handle: (any MPSHandle)?) -> MPSScaleTransform](./mpsimagetransformprovider/transform%28forsourceimage,handle%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSNNBilinearScaleNode](mpsnnbilinearscalenode.md)
+### Resampling Nodes
+- [class MPSNNBilinearScaleNode](./mpsnnbilinearscalenode.md)
   A representation of a bilinear resampling filter.
-- [class MPSNNLanczosScaleNode](mpsnnlanczosscalenode.md)
+- [class MPSNNLanczosScaleNode](./mpsnnlanczosscalenode.md)
   A representation of a Lanczos resampling filter.
-- [class MPSNNScaleNode](mpsnnscalenode.md)
+- [class MPSNNScaleNode](./mpsnnscalenode.md)
   Abstract node representing an image resampling filter.
 
 

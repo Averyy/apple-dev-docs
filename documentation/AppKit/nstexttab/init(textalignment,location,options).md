@@ -1,7 +1,8 @@
 # init(textAlignment:location:options:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a text tab with the specified text alignment, location, and options.
 
@@ -14,13 +15,17 @@ Initializes a text tab with the specified text alignment, location, and options.
 init(textAlignment alignment: NSTextAlignment, location loc: CGFloat, options: [NSTextTab.OptionKey : Any] = [:])
 ```
 
+```objc
+- (instancetype) initWithTextAlignment:(NSTextAlignment) alignment location:(CGFloat) loc options:(NSDictionary<NSString *,id> *) options;
+```
+
 #### Return Value
 
 An initialized text tab.
 
 #### Discussion
 
-The text alignment is used to determine the position of text inside the tab column. See [`NSParagraphStyle.TextTabType`](nsparagraphstyle/texttabtype.md) for a mapping between alignments and tab stop types
+The text alignment is used to determine the position of text inside the tab column. See [`NSParagraphStyle.TextTabType`](../nsparagraphstyle/texttabtype.md) for a mapping between alignments and tab stop types
 
 ## Parameters
 

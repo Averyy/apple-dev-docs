@@ -1,7 +1,8 @@
 # VZError.Code.deviceAlreadyAttached
 
 **Framework**: Virtualization  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device already has an attachment to the VM.
 
@@ -14,37 +15,42 @@ The device already has an attachment to the VM.
 case deviceAlreadyAttached
 ```
 
+```c
+VZErrorDeviceAlreadyAttached
+```
+
 ## See Also
 
-- [VZError.Code.internalError](vzerror/code/internalerror.md)
+### Error codes
+- [VZError.Code.internalError](./internalerror.md)
   An internal error, such as the VM unexpectedly stopping.
-- [VZError.Code.invalidVirtualMachineConfiguration](vzerror/code/invalidvirtualmachineconfiguration.md)
+- [VZError.Code.invalidVirtualMachineConfiguration](./invalidvirtualmachineconfiguration.md)
   An invalid configuration error.
-- [VZError.Code.invalidVirtualMachineState](vzerror/code/invalidvirtualmachinestate.md)
+- [VZError.Code.invalidVirtualMachineState](./invalidvirtualmachinestate.md)
   An invalid state error.
-- [VZError.Code.invalidVirtualMachineStateTransition](vzerror/code/invalidvirtualmachinestatetransition.md)
+- [VZError.Code.invalidVirtualMachineStateTransition](./invalidvirtualmachinestatetransition.md)
   An invalid state transition error.
-- [VZError.Code.invalidDiskImage](vzerror/code/invaliddiskimage.md)
+- [VZError.Code.invalidDiskImage](./invaliddiskimage.md)
   An invalid disk-image error.
-- [VZError.Code.virtualMachineLimitExceeded](vzerror/code/virtualmachinelimitexceeded.md)
+- [VZError.Code.virtualMachineLimitExceeded](./virtualmachinelimitexceeded.md)
   Unable to create an additional VM.
-- [VZError.Code.networkError](vzerror/code/networkerror.md)
+- [VZError.Code.networkError](./networkerror.md)
   A network error, such as a failed connection error, occurred.
-- [VZError.Code.notSupported](vzerror/code/notsupported.md)
+- [VZError.Code.notSupported](./notsupported.md)
   The host computer or operating system isn’t supported.
-- [VZError.Code.outOfDiskSpace](vzerror/code/outofdiskspace.md)
+- [VZError.Code.outOfDiskSpace](./outofdiskspace.md)
   The host is out of disk space.
-- [VZError.Code.operationCancelled](vzerror/code/operationcancelled.md)
+- [VZError.Code.operationCancelled](./operationcancelled.md)
   The code that indicates user canceled the installation of Rosetta or the app canceled the installation of a guest OS.
-- [VZError.Code.installationFailed](vzerror/code/installationfailed.md)
+- [VZError.Code.installationFailed](./installationfailed.md)
   An error occurred during installation.
-- [VZError.Code.installationRequiresUpdate](vzerror/code/installationrequiresupdate.md)
+- [VZError.Code.installationRequiresUpdate](./installationrequiresupdate.md)
   The VM requires a software update in order to complete the installation.
-- [VZError.Code.invalidRestoreImage](vzerror/code/invalidrestoreimage.md)
+- [VZError.Code.invalidRestoreImage](./invalidrestoreimage.md)
   The restore image is invalid.
-- [VZError.Code.invalidRestoreImageCatalog](vzerror/code/invalidrestoreimagecatalog.md)
+- [VZError.Code.invalidRestoreImageCatalog](./invalidrestoreimagecatalog.md)
   The restore image catalog is invalid.
-- [VZError.Code.noSupportedRestoreImagesInCatalog](vzerror/code/nosupportedrestoreimagesincatalog.md)
+- [VZError.Code.noSupportedRestoreImagesInCatalog](./nosupportedrestoreimagesincatalog.md)
   The restore image catalog has no supported restore images.
 
 

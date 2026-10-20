@@ -1,7 +1,8 @@
 # MusicContent
 
 **Framework**: Now Playing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Content representing a music track or song.
 
@@ -22,7 +23,7 @@ struct MusicContent
 
 ## Mentions
 
-- [Publishing media sessions](publishing-media-sessions.md)
+- [Publishing media sessions](./publishing-media-sessions.md)
 
 #### Overview
 
@@ -54,53 +55,54 @@ var content: some MediaContentRepresentable {
 ## Topics
 
 ### Initializers
-- [init(id: String, songTitle: String, artistName: String, albumName: String, type: MediaType, duration: MediaDuration?, artwork: Artwork?)](musiccontent/init(id:songtitle:artistname:albumname:type:duration:artwork:).md)
+- [init(id: String, songTitle: String, artistName: String, albumName: String, type: MediaType, duration: MediaDuration?, artwork: Artwork?)](./musiccontent/init%28id,songtitle,artistname,albumname,type,duration,artwork%29.md)
   Creates music content with the specified metadata.
-- [init(id: String, songTitle: String, artistName: String, albumName: String, type: MediaType, duration: MediaDuration?, artwork: Artwork, animatedArtwork: AnimatedArtwork?)](musiccontent/init(id:songtitle:artistname:albumname:type:duration:artwork:animatedartwork:).md)
+- [init(id: String, songTitle: String, artistName: String, albumName: String, type: MediaType, duration: MediaDuration?, artwork: Artwork, animatedArtwork: AnimatedArtwork?)](./musiccontent/init%28id,songtitle,artistname,albumname,type,duration,artwork,animatedartwork%29.md)
   Creates music content with static and animated artwork.
 ### Instance Properties
-- [let albumName: String](musiccontent/albumname.md)
+- [let albumName: String](./musiccontent/albumname.md)
   The name of the album.
-- [let animatedArtwork: AnimatedArtwork?](musiccontent/animatedartwork.md)
+- [let animatedArtwork: AnimatedArtwork?](./musiccontent/animatedartwork.md)
   Animated artwork for this content.
-- [let artistName: String](musiccontent/artistname.md)
+- [let artistName: String](./musiccontent/artistname.md)
   The name of the artist or performer.
-- [let artwork: Artwork?](musiccontent/artwork.md)
+- [let artwork: Artwork?](./musiccontent/artwork.md)
   Artwork for this content.
-- [var composer: String?](musiccontent/composer.md)
+- [var composer: String?](./musiccontent/composer.md)
   The name of the composer, if applicable.
-- [let duration: MediaDuration?](musiccontent/duration.md)
+- [let duration: MediaDuration?](./musiccontent/duration.md)
   The duration of this content.
-- [var isrc: String?](musiccontent/isrc.md)
+- [var isrc: String?](./musiccontent/isrc.md)
   The International Standard Recording Code (ISRC) for this content.
-- [let songTitle: String](musiccontent/songtitle.md)
+- [let songTitle: String](./musiccontent/songtitle.md)
   The title of the song.
-- [let type: MediaType](musiccontent/type.md)
+- [let type: MediaType](./musiccontent/type.md)
   The media type (audio or video).
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [MediaContentRepresentable](mediacontentrepresentable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [MediaContentRepresentable](./mediacontentrepresentable.md)
 
 ## See Also
 
-- [protocol MediaContentRepresentable](mediacontentrepresentable.md)
+### Presenting content
+- [protocol MediaContentRepresentable](./mediacontentrepresentable.md)
   A protocol that describes media content being played.
-- [struct PodcastContent](podcastcontent.md)
+- [struct PodcastContent](./podcastcontent.md)
   Content representing a podcast episode.
-- [struct MovieContent](moviecontent.md)
+- [struct MovieContent](./moviecontent.md)
   Content representing a movie.
-- [struct TVShowContent](tvshowcontent.md)
+- [struct TVShowContent](./tvshowcontent.md)
   Content representing a TV show episode.
-- [struct BookContent](bookcontent.md)
+- [struct BookContent](./bookcontent.md)
   Content representing an audiobook or book being read aloud.
-- [struct RadioContent](radiocontent.md)
+- [struct RadioContent](./radiocontent.md)
   Content representing a radio station or live audio stream.
-- [struct HomeMediaContent](homemediacontent.md)
+- [struct HomeMediaContent](./homemediacontent.md)
   Content representing home media or ambient content.
-- [struct GenericContent](genericcontent.md)
+- [struct GenericContent](./genericcontent.md)
   Content representing generic or unspecified media.
 
 

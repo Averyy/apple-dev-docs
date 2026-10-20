@@ -1,23 +1,25 @@
 # kUSBHostHubPropertyHubPowerSupplyType
 
 **Framework**: USBDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 #define kUSBHostHubPropertyHubPowerSupplyType
 ```
 
 ## See Also
 
-- [kUSBHostHubPropertyIdlePolicy](kusbhosthubpropertyidlepolicy.md)
-- [kUSBHostHubPropertyPowerSupply](kusbhosthubpropertypowersupply.md)
-- [kUSBHostHubPropertyStartupDelay](kusbhosthubpropertystartupdelay.md)
-- [kUSBHostHubPropertyPortSequenceDelay](kusbhosthubpropertyportsequencedelay.md)
+### Hub Properties
+- [kUSBHostHubPropertyIdlePolicy](./kusbhosthubpropertyidlepolicy.md)
+- [kUSBHostHubPropertyPowerSupply](./kusbhosthubpropertypowersupply.md)
+- [kUSBHostHubPropertyStartupDelay](./kusbhosthubpropertystartupdelay.md)
+- [kUSBHostHubPropertyPortSequenceDelay](./kusbhosthubpropertyportsequencedelay.md)
 
 
 ---

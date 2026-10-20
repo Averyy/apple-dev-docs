@@ -1,6 +1,8 @@
 # Sharing Your Location to Find a Park
 
-**Framework**: CoreLocationUI
+**Framework**: CoreLocationUI  
+**Role**: Sample Code  
+**Download**: [SharingYourLocationToFindAPark.zip](https://docs-assets.developer.apple.com/published/fc8ca9a16ea9/SharingYourLocationToFindAPark.zip)
 
 Ask for location access using a customizable location button.
 
@@ -12,13 +14,14 @@ Ask for location access using a customizable location button.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC21 session [`10102: Meet the Location Button`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10102/).
+> **Note**: This sample code project is associated with WWDC21 session [10102: Meet the Location Button](https://developer.apple.com/wwdc21/10102/).
 
 ## See Also
 
-- [struct LocationButton](locationbutton.md)
+### Location authorization
+- [struct LocationButton](./locationbutton.md)
   A SwiftUI button that grants one-time location authorization.
-- [class CLLocationButton](cllocationbutton.md)
+- [class CLLocationButton](./cllocationbutton.md)
   A button that grants one-time location authorization.
 
 

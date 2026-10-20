@@ -1,7 +1,8 @@
 # isNilTransformerName
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 This value transformer returns true if the value is nil.
 
@@ -20,21 +21,26 @@ This value transformer returns true if the value is nil.
 static let isNilTransformerName: NSValueTransformerName
 ```
 
+```c
+extern NSValueTransformerName const NSIsNilTransformerName;
+```
+
 #### Discussion
 
 This transformer is not reversible.
 
 ## See Also
 
-- [static let isNotNilTransformerName: NSValueTransformerName](nsvaluetransformername/isnotniltransformername.md)
+### Type Properties
+- [static let isNotNilTransformerName: NSValueTransformerName](./isnotniltransformername.md)
   This value transformer returns true if the value is non-nil.
-- [static let keyedUnarchiveFromDataTransformerName: NSValueTransformerName](nsvaluetransformername/keyedunarchivefromdatatransformername.md)
+- [static let keyedUnarchiveFromDataTransformerName: NSValueTransformerName](./keyedunarchivefromdatatransformername.md)
   The name of the value transformer that attempts to unarchive data stored inside a keyed archive in an object you provide.
-- [static let negateBooleanTransformerName: NSValueTransformerName](nsvaluetransformername/negatebooleantransformername.md)
+- [static let negateBooleanTransformerName: NSValueTransformerName](./negatebooleantransformername.md)
   This value transformer negates a boolean value, transforming true to false and false to true.
-- [static let unarchiveFromDataTransformerName: NSValueTransformerName](nsvaluetransformername/unarchivefromdatatransformername.md)
+- [static let unarchiveFromDataTransformerName: NSValueTransformerName](./unarchivefromdatatransformername.md)
   The name of the value transformer that attempts to unarchive data from an object you provide.
-- [static let secureUnarchiveFromDataTransformerName: NSValueTransformerName](nsvaluetransformername/secureunarchivefromdatatransformername.md)
+- [static let secureUnarchiveFromDataTransformerName: NSValueTransformerName](./secureunarchivefromdatatransformername.md)
   The name of the value transformer that creates then returns an object by attempting to unarchive the data to a class that supports secure coding.
 
 

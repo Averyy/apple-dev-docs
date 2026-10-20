@@ -1,7 +1,8 @@
 # address
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Attempts to locate addresses.
 
@@ -20,31 +21,36 @@ Attempts to locate addresses.
 static var address: NSTextCheckingResult.CheckingType { get }
 ```
 
+```c
+NSTextCheckingTypeAddress
+```
+
 ## See Also
 
-- [static var orthography: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/orthography.md)
+### Constants
+- [static var orthography: NSTextCheckingResult.CheckingType](./orthography.md)
   Attempts to identify the language
-- [static var spelling: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/spelling.md)
+- [static var spelling: NSTextCheckingResult.CheckingType](./spelling.md)
   Checks spelling.
-- [static var grammar: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/grammar.md)
+- [static var grammar: NSTextCheckingResult.CheckingType](./grammar.md)
   Checks grammar.
-- [static var date: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/date.md)
+- [static var date: NSTextCheckingResult.CheckingType](./date.md)
   Attempts to locate dates.
-- [static var link: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/link.md)
+- [static var link: NSTextCheckingResult.CheckingType](./link.md)
   Attempts to locate URL links.
-- [static var quote: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/quote.md)
+- [static var quote: NSTextCheckingResult.CheckingType](./quote.md)
   Replaces quotes with smart quotes.
-- [static var dash: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/dash.md)
+- [static var dash: NSTextCheckingResult.CheckingType](./dash.md)
   Replaces dashes with em-dashes.
-- [static var replacement: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/replacement.md)
+- [static var replacement: NSTextCheckingResult.CheckingType](./replacement.md)
   Replaces characters such as (c) with the appropriate symbol (in this case ©).
-- [static var correction: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/correction.md)
+- [static var correction: NSTextCheckingResult.CheckingType](./correction.md)
   Performs autocorrection on misspelled words.
-- [static var regularExpression: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/regularexpression.md)
+- [static var regularExpression: NSTextCheckingResult.CheckingType](./regularexpression.md)
   Matches a regular expression.
-- [static var phoneNumber: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/phonenumber.md)
+- [static var phoneNumber: NSTextCheckingResult.CheckingType](./phonenumber.md)
   Matches a phone number.
-- [static var transitInformation: NSTextCheckingResult.CheckingType](nstextcheckingresult/checkingtype/transitinformation.md)
+- [static var transitInformation: NSTextCheckingResult.CheckingType](./transitinformation.md)
   Matches a transit information, for example, flight information.
 
 

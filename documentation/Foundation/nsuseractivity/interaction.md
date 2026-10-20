@@ -1,7 +1,8 @@
 # interaction
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The SiriKit interaction object to use when configuring your app.
 
@@ -20,15 +21,28 @@ The SiriKit interaction object to use when configuring your app.
 var interaction: INInteraction? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly, nullable) INInteraction * interaction;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly, nullable) INInteraction * interaction;
+```
+
 #### Discussion
 
 When SiriKit launches your app, it fills this property with the intent and response information that are the reason for launching your app. Use the information in this property to configure your app’s interface and show any relevant interaction details. If your app wasn’t launched because of a Siri interaction, the value in this property is `nil`.
 
 ## See Also
 
-- [var suggestedInvocationPhrase: String?](nsuseractivity/suggestedinvocationphrase.md)
+### Providing SiriKit with activity details
+- [var suggestedInvocationPhrase: String?](./suggestedinvocationphrase.md)
   A phrase suggested to the user when they create a shortcut.
-- [var shortcutAvailability: INShortcutAvailabilityOptions](nsuseractivity/shortcutavailability.md)
+- [var shortcutAvailability: INShortcutAvailabilityOptions](./shortcutavailability.md)
   A set of defined contexts in which an intent or activity might be relevant to a user.
 
 

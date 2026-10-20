@@ -1,7 +1,8 @@
 # crashDetectionManager(_:didDetect:)
 
 **Framework**: SafetyKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Receive and process a Crash Detection event.
 
@@ -18,13 +19,17 @@ Receive and process a Crash Detection event.
 optional func crashDetectionManager(_ crashDetectionManager: SACrashDetectionManager, didDetect event: SACrashDetectionEvent)
 ```
 
+```objc
+- (void) crashDetectionManager:(SACrashDetectionManager *) crashDetectionManager didDetectEvent:(SACrashDetectionEvent *) event;
+```
+
 #### Discussion
 
-To receive Crash Detection events, create a new [`SACrashDetectionManager`](sacrashdetectionmanager.md) instance and set its delegate early in the app life cycle, such as [`applicationDidFinishLaunching(_:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/applicationdidfinishlaunching(_:)).
+To receive Crash Detection events, create a new [`SACrashDetectionManager`](../sacrashdetectionmanager.md) instance and set its delegate early in the app life cycle, such as [`applicationDidFinishLaunching(_:)`](../../UIKit/uiapplicationdelegate/applicationdidfinishlaunching%28_%29.md).
 
 > ❗ **Important**:  Use the iOS Simulator to test Crash Detection events and the background functionality of your app.
 
-Following a Crash Detection event, the system launches the app in the background. When the app launches, it performs critical tasks related to the Crash Detection event, such as placing a network request or scheduling a local notification. If the system generates multiple Crash Detection events while the app isn’t running, it reports the most recent event on the next app launch. The system may report the same Crash Detection event across different launches of your app, so always check [`date`](sacrashdetectionevent/date.md) before processing it.
+Following a Crash Detection event, the system launches the app in the background. When the app launches, it performs critical tasks related to the Crash Detection event, such as placing a network request or scheduling a local notification. If the system generates multiple Crash Detection events while the app isn’t running, it reports the most recent event on the next app launch. The system may report the same Crash Detection event across different launches of your app, so always check [`date`](../sacrashdetectionevent/date.md) before processing it.
 
 ## Parameters
 

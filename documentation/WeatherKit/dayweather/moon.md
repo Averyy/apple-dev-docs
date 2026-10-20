@@ -1,7 +1,8 @@
 # moon
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The lunar events for the day.
 
@@ -22,7 +23,8 @@ var moon: MoonEvents
 
 ## See Also
 
-- [var sun: SunEvents](dayweather/sun.md)
+### Getting celestial information
+- [var sun: SunEvents](./sun.md)
   The solar events for the day.
 
 

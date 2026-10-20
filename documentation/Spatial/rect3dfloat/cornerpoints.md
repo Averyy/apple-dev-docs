@@ -1,7 +1,8 @@
 # cornerPoints
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the corner points of the rectangle.
 
@@ -24,7 +25,7 @@ var cornerPoints: [Point3DFloat] { get }
 
 This function returns the vertices in a clockwise direction, starting from the origin:
 
-```None
+```
            5-----6
            |     |
         1-----2  |

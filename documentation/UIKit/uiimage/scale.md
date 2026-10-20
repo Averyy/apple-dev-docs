@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scale factor of the image.
 
@@ -9,7 +10,7 @@ The scale factor of the image.
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,15 +20,20 @@ The scale factor of the image.
 var scale: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat scale;
+```
+
 #### Discussion
 
 If you load an image from a file whose name includes the `@2x` modifier, the scale is set to `2.0`. You can also specify an explicit scale factor when initializing an image from a Core Graphics image. All other images are assumed to have a scale factor of `1.0`.
 
-If you multiply the logical size of the image (stored in the [`size`](uiimage/size.md) property) by the value in this property, you get the dimensions of the image in pixels.
+If you multiply the logical size of the image (stored in the [`size`](./size.md) property) by the value in this property, you get the dimensions of the image in pixels.
 
 ## See Also
 
-- [var size: CGSize](uiimage/size.md)
+### Getting the image size and scale
+- [var size: CGSize](./size.md)
   The logical dimensions, in points, for the image.
 
 

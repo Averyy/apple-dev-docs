@@ -1,7 +1,8 @@
 # HKVO2MaxTestType
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Methods for calculating the user’s VO2 max rate.
 
@@ -19,6 +20,10 @@ Methods for calculating the user’s VO2 max rate.
 enum HKVO2MaxTestType
 ```
 
+```c
+enum HKVO2MaxTestType : NSInteger;
+```
+
 #### Overview
 
 VO2 max represents the maximal oxygen consumption during incremental exercise. VO2 max is an important indicator of fitness and endurance.
@@ -26,26 +31,26 @@ VO2 max represents the maximal oxygen consumption during incremental exercise. V
 ## Topics
 
 ### Test Types
-- [HKVO2MaxTestType.maxExercise](hkvo2maxtesttype/maxexercise.md)
+- [HKVO2MaxTestType.maxExercise](./hkvo2maxtesttype/maxexercise.md)
   A test that measures VO2 max rate by monitoring exercise to the user’s physical limit.
-- [HKVO2MaxTestType.predictionSubMaxExercise](hkvo2maxtesttype/predictionsubmaxexercise.md)
+- [HKVO2MaxTestType.predictionSubMaxExercise](./hkvo2maxtesttype/predictionsubmaxexercise.md)
   A calculation that estimates VO2 max rate based on low-intensity exercise.
-- [HKVO2MaxTestType.predictionNonExercise](hkvo2maxtesttype/predictionnonexercise.md)
+- [HKVO2MaxTestType.predictionNonExercise](./hkvo2maxtesttype/predictionnonexercise.md)
   A calculation that estimates VO2 max rate without any exercise.
 ### Enumeration Cases
-- [HKVO2MaxTestType.predictionStepTest](hkvo2maxtesttype/predictionsteptest.md)
+- [HKVO2MaxTestType.predictionStepTest](./hkvo2maxtesttype/predictionsteptest.md)
 ### Initializers
-- [init?(rawValue: Int)](hkvo2maxtesttype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkvo2maxtesttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

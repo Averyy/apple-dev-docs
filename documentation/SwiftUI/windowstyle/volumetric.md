@@ -1,7 +1,8 @@
 # volumetric
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A window style that creates a 3D volumetric window.
 
@@ -14,9 +15,11 @@ A window style that creates a 3D volumetric window.
 static var volumetric: VolumetricWindowStyle { get }
 ```
 
+Available when `Self` is `VolumetricWindowStyle`.
+
 #### Discussion
 
-Use a volumetric window — or a *volume* — to display 3D content within a bounded region. For example, [`Hello World`](https://developer.apple.com/documentation/visionos/world) uses a volume to present a `Globe` model that people can pick up and move around the Shared Space using the window bar:
+Use a volumetric window — or a *volume* — to display 3D content within a bounded region. For example, [Hello World](../../visionOS/world.md) uses a volume to present a `Globe` model that people can pick up and move around the Shared Space using the window bar:
 
 ```swift
 WindowGroup(id: Module.globe.name) {
@@ -27,21 +30,22 @@ WindowGroup(id: Module.globe.name) {
 .defaultSize(width: 0.6, height: 0.6, depth: 0.6, in: .meters)
 ```
 
-A volume enables someone to view content from all angles, unlike other windows which fade out as people move around the window. Also unlike other windows, a volume uses fixed scale, which means that objects in the volume appear smaller when the volume is farther away, like real objects would. For a comparison of fixed and dynamic scale, see [`Spatial layout`](https://developer.apple.com/design/human-interface-guidelines/spatial-layout) in the Human Interface Guidelines.
+A volume enables someone to view content from all angles, unlike other windows which fade out as people move around the window. Also unlike other windows, a volume uses fixed scale, which means that objects in the volume appear smaller when the volume is farther away, like real objects would. For a comparison of fixed and dynamic scale, see [Spatial layout](https://developer.apple.com/design/human-interface-guidelines/spatial-layout) in the Human Interface Guidelines.
 
-You can specify a size for the volume using one of the default size scene modifiers, like [`defaultSize(width:height:depth:in:)`](scene/defaultsize(width:height:depth:in:).md). Because volumes use fixed scale, it’s typically convenient to specify a size in physical units — like meters, as the above code demonstrates. People can’t change the size of the volume after it appears.
+You can specify a size for the volume using one of the default size scene modifiers, like [`defaultSize(width:height:depth:in:)`](../scene/defaultsize%28width,height,depth,in%29.md). Because volumes use fixed scale, it’s typically convenient to specify a size in physical units — like meters, as the above code demonstrates. People can’t change the size of the volume after it appears.
 
-For design guidance, see [`Windows`](https://developer.apple.com/design/human-interface-guidelines/windows) in the Human Interface Guidelines. If you want to place 3D objects arbitrarily throughout the Shared Space or in a Full Space, use an [`ImmersiveSpace`](immersivespace.md) instead.
+For design guidance, see [Windows](https://developer.apple.com/design/human-interface-guidelines/windows) in the Human Interface Guidelines. If you want to place 3D objects arbitrarily throughout the Shared Space or in a Full Space, use an [`ImmersiveSpace`](../immersivespace.md) instead.
 
 ## See Also
 
-- [static var automatic: DefaultWindowStyle](windowstyle/automatic.md)
+### Getting built-in window styles
+- [static var automatic: DefaultWindowStyle](./automatic.md)
   The default window style.
-- [static var hiddenTitleBar: HiddenTitleBarWindowStyle](windowstyle/hiddentitlebar.md)
+- [static var hiddenTitleBar: HiddenTitleBarWindowStyle](./hiddentitlebar.md)
   A window style which hides both the window’s title and the backing of the titlebar area, allowing more of the window’s content to show.
-- [static var plain: PlainWindowStyle](windowstyle/plain.md)
+- [static var plain: PlainWindowStyle](./plain.md)
   The plain window style.
-- [static var titleBar: TitleBarWindowStyle](windowstyle/titlebar.md)
+- [static var titleBar: TitleBarWindowStyle](./titlebar.md)
   A window style which displays the title bar section of the window.
 
 

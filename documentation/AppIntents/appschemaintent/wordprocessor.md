@@ -1,7 +1,8 @@
 # wordProcessor
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of intent schemas in the word processor domain.
 
@@ -17,6 +18,8 @@ The collection of intent schemas in the word processor domain.
 ```swift
 static var wordProcessor: some AppSchema.WordProcessorIntent { get }
 ```
+
+Available when `Self` is `AppSchema.Intent`.
 
 
 ---

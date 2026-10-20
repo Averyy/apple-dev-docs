@@ -1,7 +1,8 @@
 # ContiguousArray.Iterator
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that allows iteration over an array’s elements.
 

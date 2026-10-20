@@ -1,18 +1,21 @@
 # in1_type
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor type of the first input.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,21 +23,26 @@ The descriptor type of the first input.
 var in1_type: BNNSDescriptorType
 ```
 
+```c
+BNNSDescriptorType in1_type;
+```
+
 ## See Also
 
-- [var in1: BNNSNDArrayDescriptor](bnnsarithmeticternary/in1.md)
+### Inspecting the Properties of an Arithmetic Structure
+- [var in1: BNNSNDArrayDescriptor](./in1.md)
   The descriptor of the first input.
-- [var in2: BNNSNDArrayDescriptor](bnnsarithmeticternary/in2.md)
+- [var in2: BNNSNDArrayDescriptor](./in2.md)
   The descriptor of the second input.
-- [var in2_type: BNNSDescriptorType](bnnsarithmeticternary/in2_type.md)
+- [var in2_type: BNNSDescriptorType](./in2_type.md)
   The descriptor type of the second input.
-- [var in3: BNNSNDArrayDescriptor](bnnsarithmeticternary/in3.md)
+- [var in3: BNNSNDArrayDescriptor](./in3.md)
   The descriptor of the third input.
-- [var in3_type: BNNSDescriptorType](bnnsarithmeticternary/in3_type.md)
+- [var in3_type: BNNSDescriptorType](./in3_type.md)
   The descriptor type of the third input.
-- [var out: BNNSNDArrayDescriptor](bnnsarithmeticternary/out.md)
+- [var out: BNNSNDArrayDescriptor](./out.md)
   The descriptor of the output.
-- [var out_type: BNNSDescriptorType](bnnsarithmeticternary/out_type.md)
+- [var out_type: BNNSDescriptorType](./out_type.md)
   The descriptor type of the output.
 
 

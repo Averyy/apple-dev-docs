@@ -1,7 +1,8 @@
 # repeatType
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The repeat type used when fulfilling the event request.
 
@@ -20,9 +21,14 @@ The repeat type used when fulfilling the event request.
 var repeatType: MPRepeatType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MPRepeatType repeatType;
+```
+
 ## See Also
 
-- [var preservesRepeatMode: Bool](mpchangerepeatmodecommandevent/preservesrepeatmode.md)
+### Changing the repeat type
+- [var preservesRepeatMode: Bool](./preservesrepeatmode.md)
   A Boolean value that indicates whether the chosen repeat mode is preserved between playback sessions.
 
 

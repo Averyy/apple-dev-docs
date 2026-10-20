@@ -1,7 +1,8 @@
 # nw_ip_version_any
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Allow any IP version.
 
@@ -20,11 +21,16 @@ Allow any IP version.
 var nw_ip_version_any: nw_ip_version_t { get }
 ```
 
+```c
+nw_ip_version_any
+```
+
 ## See Also
 
-- [var nw_ip_version_4: nw_ip_version_t](nw_ip_version_4.md)
+### Versions
+- [var nw_ip_version_4: nw_ip_version_t](./nw_ip_version_4.md)
   Require IP version 4.
-- [var nw_ip_version_6: nw_ip_version_t](nw_ip_version_6.md)
+- [var nw_ip_version_6: nw_ip_version_t](./nw_ip_version_6.md)
   Require IP version 6.
 
 

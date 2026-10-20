@@ -1,7 +1,8 @@
 # HIShapeCreateDifference(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 func HIShapeCreateDifference(_ inShape1: HIShape!, _ inShape2: HIShape!) -> Unmanaged<HIShape>!
+```
+
+```c
+HIShapeRef HIShapeCreateDifference(HIShapeRef inShape1, HIShapeRef inShape2);
 ```
 
 

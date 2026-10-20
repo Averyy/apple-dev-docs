@@ -1,7 +1,8 @@
 # Playlist.Kind.editorial
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the playlist was created by an Apple Music curator.
 

@@ -1,7 +1,8 @@
 # end()
 
 **Framework**: Now Playing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends the session and removes it from the Now Playing interface.
 
@@ -19,11 +20,11 @@ func end() async throws
 
 ## Mentions
 
-- [Publishing remote media sessions](publishing-remote-media-sessions.md)
+- [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 
 #### Discussion
 
-> **Note**: [`RemoteMediaSessionError.internalFailure`](remotemediasessionerror/internalfailure.md) if the session couldn’t be removed from the system.
+> **Throws**: [`RemoteMediaSessionError.internalFailure`](../remotemediasessionerror/internalfailure.md) if the session couldn’t be removed from the system.
 
 
 ---

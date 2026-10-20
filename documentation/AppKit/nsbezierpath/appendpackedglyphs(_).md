@@ -1,12 +1,15 @@
 # appendPackedGlyphs(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends an array of packed glyphs to the path.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Use [`append(withCGGlyphs:count:in:)`](./append%28withcgglyphs,count,in%29.md) instead.
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Appends an array of packed glyphs to the path.
 func appendPackedGlyphs(_ packedGlyphs: UnsafePointer<CChar>)
 ```
 
+```objc
+- (void) appendBezierPathWithPackedGlyphs:(const char *) packedGlyphs;
+```
+
 #### Discussion
 
-You should avoid using this method directly. Instead, use the [`appendGlyph(_:in:)`](nsbezierpath/appendglyph(_:in:).md) and [`appendGlyphs(_:count:in:)`](nsbezierpath/appendglyphs(_:count:in:).md) methods to append glyphs to a path.
+You should avoid using this method directly. Instead, use the [`appendGlyph(_:in:)`](./appendglyph%28_,in%29.md) and [`appendGlyphs(_:count:in:)`](./appendglyphs%28_,count,in%29.md) methods to append glyphs to a path.
 
 ## Parameters
 
@@ -24,11 +31,13 @@ You should avoid using this method directly. Instead, use the [`appendGlyph(_:in
 
 ## See Also
 
-- [class func drawPackedGlyphs(UnsafePointer<CChar>, at: NSPoint)](nsbezierpath/drawpackedglyphs(_:at:).md)
+### Related Documentation
+- [class func drawPackedGlyphs(UnsafePointer<CChar>, at: NSPoint)](./drawpackedglyphs%28_,at%29.md)
   Draws a set of packed glyphs at the specified point in the current coordinate system.
-- [func appendGlyph(NSGlyph, in: NSFont)](nsbezierpath/appendglyph(_:in:).md)
+### Deprecated
+- [func appendGlyph(NSGlyph, in: NSFont)](./appendglyph%28_,in%29.md)
   Appends an outline of the specified glyph to the path.
-- [func appendGlyphs(UnsafeMutablePointer<NSGlyph>, count: Int, in: NSFont)](nsbezierpath/appendglyphs(_:count:in:).md)
+- [func appendGlyphs(UnsafeMutablePointer<NSGlyph>, count: Int, in: NSFont)](./appendglyphs%28_,count,in%29.md)
   Appends the outlines of the specified glyphs to the path.
 
 

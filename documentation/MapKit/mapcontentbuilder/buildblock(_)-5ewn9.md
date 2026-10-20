@@ -1,7 +1,8 @@
 # buildBlock(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a map content block that contains a single content result.
 
@@ -11,7 +12,7 @@ Creates a map content block that contains a single content result.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ static func buildBlock<C>(_ content: C) -> C where C : MapContent
 
 #### Return Value
 
-Returns the [`MapContent`](mapcontent.md) with the single element you provided.
+Returns the [`MapContent`](../mapcontent.md) with the single element you provided.
 
 ## Parameters
 
@@ -30,7 +31,8 @@ Returns the [`MapContent`](mapcontent.md) with the single element you provided.
 
 ## See Also
 
-- [static func buildBlock() -> EmptyMapContent](mapcontentbuilder/buildblock.md)
+### Map content builders
+- [static func buildBlock() -> EmptyMapContent](./buildblock%28%29.md)
   Creates an empty map content block that contains no statements.
 
 

@@ -1,7 +1,8 @@
 # character
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies a character that denotes an attachment.
 
@@ -12,6 +13,10 @@ Specifies a character that denotes an attachment.
 
 ```swift
 class var character: Int { get }
+```
+
+```c
+NSAttachmentCharacter
 ```
 
 

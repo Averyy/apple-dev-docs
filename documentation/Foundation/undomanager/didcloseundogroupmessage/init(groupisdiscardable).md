@@ -1,7 +1,8 @@
 # init(groupIsDiscardable:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a did close undo group message.
 

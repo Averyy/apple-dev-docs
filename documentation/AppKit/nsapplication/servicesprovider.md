@@ -1,17 +1,22 @@
 # servicesProvider
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that provides the services the current app advertises in the Services menu of other apps.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var servicesProvider: Any? { get set }
+```
+
+```objc
+@property (strong, nullable) id servicesProvider;
 ```
 
 #### Return Value
@@ -24,7 +29,8 @@ The service provider performs all advertised services for the app. When another 
 
 ## See Also
 
-- [func validRequestor(forSendType: NSPasteboard.PasteboardType?, returnType: NSPasteboard.PasteboardType?) -> Any?](nsapplication/validrequestor(forsendtype:returntype:).md)
+### Providing services
+- [func validRequestor(forSendType: NSPasteboard.PasteboardType?, returnType: NSPasteboard.PasteboardType?) -> Any?](./validrequestor%28forsendtype,returntype%29.md)
   Indicates whether the receiver can send and receive the specified pasteboard types.
 
 

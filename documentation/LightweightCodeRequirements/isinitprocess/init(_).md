@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Matches if the process is or is not the init process depending on the specified value.
 

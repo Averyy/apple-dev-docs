@@ -1,7 +1,8 @@
 # AVInterstitialTimeRange
 
 **Framework**: AVKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A time range in an audiovisual presentation for content with an interstitial designation, such as advertisements or legal notices.
 
@@ -17,47 +18,52 @@ A time range in an audiovisual presentation for content with an interstitial des
 class AVInterstitialTimeRange
 ```
 
+```objc
+@interface AVInterstitialTimeRange : NSObject
+```
+
 ## Mentions
 
-- [Working with interstitial content](working-with-interstitial-content.md)
+- [Working with interstitial content](./working-with-interstitial-content.md)
 
 #### Overview
 
-When you associate interstitial time ranges with an [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) you present with an [`AVPlayerViewController`](avplayerviewcontroller.md), you can customize or restrict the presentation of interstitial content. For example, you can allow the user to skip advertisements or prohibit skipping of a legal notice.
+When you associate interstitial time ranges with an [`AVPlayerItem`](../AVFoundation/avplayeritem.md) you present with an [`AVPlayerViewController`](./avplayerviewcontroller.md), you can customize or restrict the presentation of interstitial content. For example, you can allow the user to skip advertisements or prohibit skipping of a legal notice.
 
 ## Topics
 
 ### Creating an interstitial time range
-- [init(timeRange: CMTimeRange)](avinterstitialtimerange/init(timerange:).md)
+- [init(timeRange: CMTimeRange)](./avinterstitialtimerange/init%28timerange%29.md)
   Initializes an interstitial time range object with the specified time range.
 ### Inspecting an interstitial time range
-- [var timeRange: CMTimeRange](avinterstitialtimerange/timerange.md)
+- [var timeRange: CMTimeRange](./avinterstitialtimerange/timerange.md)
   The time range identified as interstitial content.
 ### Initializers
-- [init?(coder: NSCoder)](avinterstitialtimerange/init(coder:).md)
+- [init?(coder: NSCoder)](./avinterstitialtimerange/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Working with interstitial content](working-with-interstitial-content.md)
+### Interstitials and markers
+- [Working with interstitial content](./working-with-interstitial-content.md)
   Present additional content alongside your main media presentation using HTTP Live Streaming support.
-- [Presenting navigation markers](presenting-navigation-markers.md)
+- [Presenting navigation markers](./presenting-navigation-markers.md)
   Present navigation markers in the Chapters panel to help users quickly navigate your content.
-- [class AVNavigationMarkersGroup](avnavigationmarkersgroup.md)
+- [class AVNavigationMarkersGroup](./avnavigationmarkersgroup.md)
   A set of markers for navigating playback of an audiovisual presentation.
 
 

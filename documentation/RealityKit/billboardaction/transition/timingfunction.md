@@ -1,7 +1,8 @@
 # timingFunction
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rate of change at the beginning and end of the transition.
 

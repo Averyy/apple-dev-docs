@@ -1,7 +1,8 @@
 # title
 
 **Framework**: Social  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the configuration item stored as a localized string.
 
@@ -16,11 +17,16 @@ The name of the configuration item stored as a localized string.
 var title: String! { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * title;
+```
+
 ## See Also
 
-- [var value: String!](slcomposesheetconfigurationitem/value.md)
+### Specifying Configuration Information
+- [var value: String!](./value.md)
   The current value or setting of the configuration item.
-- [var valuePending: Bool](slcomposesheetconfigurationitem/valuepending.md)
+- [var valuePending: Bool](./valuepending.md)
   A Boolean value that indicates whether the configuration item’s value is ready for display.
 
 

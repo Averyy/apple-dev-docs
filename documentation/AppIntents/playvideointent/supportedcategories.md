@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The list of video categories that the app supports through this intent.
@@ -12,7 +13,7 @@ The list of video categories that the app supports through this intent.
 - Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

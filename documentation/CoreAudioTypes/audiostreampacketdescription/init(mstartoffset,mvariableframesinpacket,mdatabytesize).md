@@ -1,7 +1,8 @@
 # init(mStartOffset:mVariableFramesInPacket:mDataByteSize:)
 
 **Framework**: Core Audio Types  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio stream basic description with the start offset, and the number of sample frames and bytes in the packet that you specify.
 
@@ -28,7 +29,8 @@ init(mStartOffset: Int64, mVariableFramesInPacket: UInt32, mDataByteSize: UInt32
 
 ## See Also
 
-- [init()](audiostreampacketdescription/init.md)
+### Creating an audio stream packet descripiton
+- [init()](./init%28%29.md)
   Creates an audio stream basic description.
 
 

@@ -1,7 +1,8 @@
 # suggestedFilename
 
 **Framework**: Core Transferable  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A suggested filename of a `Transferable` value.
 
@@ -22,7 +23,7 @@ var suggestedFilename: String? { get }
 
 #### Discussion
 
-A filename for given item, or `nil` if none specified. A name can be specified using `TransferRepresentation.suggestedFileName(_:)`. The default implementation of this property is available to all types that conform to [`Transferable`](transferable.md) protocol.
+A filename for given item, or `nil` if none specified. A name can be specified using `TransferRepresentation.suggestedFileName(_:)`. The default implementation of this property is available to all types that conform to [`Transferable`](../transferable.md) protocol.
 
 
 ---

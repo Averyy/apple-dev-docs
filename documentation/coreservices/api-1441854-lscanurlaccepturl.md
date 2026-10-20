@@ -1,7 +1,8 @@
 # LSCanURLAcceptURL(_:_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Tests whether an app can accept (open) an item for a URL.
 
@@ -14,15 +15,19 @@ Tests whether an app can accept (open) an item for a URL.
 func LSCanURLAcceptURL(_ inItemURL: CFURL, _ inTargetURL: CFURL, _ inRoleMask: LSRolesMask, _ inFlags: LSAcceptanceFlags, _ outAcceptsItem: UnsafeMutablePointer<DarwinBoolean>) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus LSCanURLAcceptURL(CFURLRef inItemURL, CFURLRef inTargetURL, LSRolesMask inRoleMask, LSAcceptanceFlags inFlags, Boolean *outAcceptsItem);
+```
 
-A result code; see [`Result Codes`](launch_services#1661359.md).
+#### Return Value
+
+A result code; see [Result Codes](./launch_services.md#1661359).
 
 #### Discussion
 
 If the item URL’s scheme is `file` (designating either a file or a directory), the acceptance test is based on the designated item’s filename extension, file type, and creator signature, along with the role specified by the `inRolesMask` parameter; otherwise, it is based on the URL scheme (such as `http`, `ftp`, or `mailto`).
 
-##### 1675609
+##### Version-Notes
 
 Thread-safe since Mac OS version 10.2.
 
@@ -30,19 +35,20 @@ Thread-safe since Mac OS version 10.2.
 
 - `inItemURL`: A Core Foundation URL reference designating the source item (the item to test for acceptance by the target application); see the *CFURL Reference* in the Core Foundation Reference Documentation for a description of the `CFURLRef` data type.
 - `inTargetURL`: A Core Foundation URL reference designating the target application; see the *CFURL Reference* in the Core Foundation Reference Documentation for a description of the `CFURLRef` data type. The URL must have scheme `file` and contain a valid path to an application file or application bundle.
-- `inRolesMask`: A bit mask specifying the target app’s desired role or roles with respect to the source item; see [`LSRolesMask`](lsrolesmask.md) for a description of this mask. This parameter applies only to URLs with a scheme component of `file`, and is ignored for all other schemes. If the role is unimportant, pass `kLSRolesAll`.
-- `inFlags`: Flags specifying behavior to observe during the acceptance test; see [`LSAcceptanceFlags`](lsacceptanceflags.md) for a description of these flags.
+- `inRolesMask`: A bit mask specifying the target app’s desired role or roles with respect to the source item; see [`LSRolesMask`](./lsrolesmask.md) for a description of this mask. This parameter applies only to URLs with a scheme component of `file`, and is ignored for all other schemes. If the role is unimportant, pass `kLSRolesAll`.
+- `inFlags`: Flags specifying behavior to observe during the acceptance test; see [`LSAcceptanceFlags`](./lsacceptanceflags.md) for a description of these flags.
 - `outAcceptsItem`: A pointer to a Boolean value that, on return, will indicate whether the target application can accept the source item with at least one of the specified roles.
 
 ## See Also
 
-- [func LSCopyDefaultApplicationURLForURL(CFURL, LSRolesMask, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<CFURL>?](1448824-lscopydefaultapplicationurlforur.md)
+### Locating an App
+- [func LSCopyDefaultApplicationURLForURL(CFURL, LSRolesMask, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<CFURL>?](./api-1448824-lscopydefaultapplicationurlforur.md)
   Returns the app that opens an item.
-- [func LSCopyDefaultApplicationURLForContentType(CFString, LSRolesMask, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<CFURL>?](1447734-lscopydefaultapplicationurlforco.md)
+- [func LSCopyDefaultApplicationURLForContentType(CFString, LSRolesMask, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<CFURL>?](./api-1447734-lscopydefaultapplicationurlforco.md)
   Returns the app that opens a content type.
-- [func LSCopyApplicationURLsForURL(CFURL, LSRolesMask) -> Unmanaged<CFArray>?](1445148-lscopyapplicationurlsforurl.md)
+- [func LSCopyApplicationURLsForURL(CFURL, LSRolesMask) -> Unmanaged<CFArray>?](./api-1445148-lscopyapplicationurlsforurl.md)
   Locates all known apps suitable for opening an item for the specified URL.
-- [func LSCopyApplicationURLsForBundleIdentifier(CFString, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<CFArray>?](1449290-lscopyapplicationurlsforbundleid.md)
+- [func LSCopyApplicationURLsForBundleIdentifier(CFString, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<CFArray>?](./api-1449290-lscopyapplicationurlsforbundleid.md)
   Locates all URLs for apps that correspond to the specified bundle identifier.
 
 

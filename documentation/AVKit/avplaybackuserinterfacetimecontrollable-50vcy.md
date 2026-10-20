@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceTimeControllable
 
 **Framework**: AVKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Provides time control and navigation capabilities for media content.
 
@@ -20,34 +21,35 @@ protocol AVPlaybackUserInterfaceTimeControllable : AnyObject, Observable
 ## Topics
 
 ### Instance Properties
-- [var currentSegment: AVPlaybackUserInterfaceTimelineSegment](avplaybackuserinterfacetimecontrollable-50vcy/currentsegment.md)
+- [var currentSegment: AVPlaybackUserInterfaceTimelineSegment](./avplaybackuserinterfacetimecontrollable-50vcy/currentsegment.md)
   The segment containing the current playback position.
-- [var playbackPosition: AVPlaybackUserInterfacePlaybackPosition](avplaybackuserinterfacetimecontrollable-50vcy/playbackposition.md)
+- [var playbackPosition: AVPlaybackUserInterfacePlaybackPosition](./avplaybackuserinterfacetimecontrollable-50vcy/playbackposition.md)
   A snapshot of the current playback position. Must be updated — with a fresh `hostTime` — on play, pause, seek, scan, and buffering state changes. Must be observable.
-- [var seekableTimeRanges: [CMTimeRange]?](avplaybackuserinterfacetimecontrollable-50vcy/seekabletimeranges.md)
+- [var seekableTimeRanges: [CMTimeRange]?](./avplaybackuserinterfacetimecontrollable-50vcy/seekabletimeranges.md)
   Time ranges within the timeline where seeking operations are permitted.
-- [var segments: [AVPlaybackUserInterfaceTimelineSegment]](avplaybackuserinterfacetimecontrollable-50vcy/segments.md)
+- [var segments: [AVPlaybackUserInterfaceTimelineSegment]](./avplaybackuserinterfacetimecontrollable-50vcy/segments.md)
   Segments representing different content types within the timeline.
-- [var timeRange: CMTimeRange](avplaybackuserinterfacetimecontrollable-50vcy/timerange.md)
+- [var timeRange: CMTimeRange](./avplaybackuserinterfacetimecontrollable-50vcy/timerange.md)
   The time range representing the total duration and bounds of the media content.
 ### Instance Methods
-- [func seek(to: CMTime, tolerance: CMTime)](avplaybackuserinterfacetimecontrollable-50vcy/seek(to:tolerance:).md)
+- [func seek(to: CMTime, tolerance: CMTime)](./avplaybackuserinterfacetimecontrollable-50vcy/seek%28to,tolerance%29.md)
   Requests a seek to the specified position.
 
 ## Relationships
 
 ### Inherits From
-- [Observable](../observation/observable.md)
+- [Observable](../Observation/observable.md)
 ### Inherited By
-- [AVPlaybackUserInterfaceControllable](avplaybackuserinterfacecontrollable-92fri.md)
+- [AVPlaybackUserInterfaceControllable](./avplaybackuserinterfacecontrollable-92fri.md)
 
 ## See Also
 
-- [class AVPlaybackUserInterfacePlaybackPosition](avplaybackuserinterfaceplaybackposition.md)
+### Timeline and segments
+- [class AVPlaybackUserInterfacePlaybackPosition](./avplaybackuserinterfaceplaybackposition.md)
   A snapshot comprising a playback position recorded at a known host time and the rate of position advancement.
-- [class AVPlaybackUserInterfaceTimelineSegment](avplaybackuserinterfacetimelinesegment.md)
+- [class AVPlaybackUserInterfaceTimelineSegment](./avplaybackuserinterfacetimelinesegment.md)
   Represents a contiguous segment of timeline content with specific playback characteristics.
-- [enum AVPlaybackUserInterfaceTimelineSegmentType](avplaybackuserinterfacetimelinesegmenttype.md)
+- [enum AVPlaybackUserInterfaceTimelineSegmentType](./avplaybackuserinterfacetimelinesegmenttype.md)
   Describes the type of content within a timeline segment.
 
 

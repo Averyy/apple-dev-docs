@@ -1,7 +1,8 @@
 # muteLayer(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Mutes the layer with the given identifier, excluding its opinions from composition.
 
@@ -25,11 +26,12 @@ func muteLayer(_ identifier: String)
 
 ## See Also
 
-- [var rootLayer: USDLayer](usdstage/rootlayer.md)
+### Managing layers
+- [var rootLayer: USDLayer](./rootlayer.md)
   The root layer of this stage.
-- [func unmuteLayer(String)](usdstage/unmutelayer(_:).md)
+- [func unmuteLayer(String)](./unmutelayer%28_%29.md)
   Unmutes the layer with the given identifier, restoring its opinions to composition.
-- [func isLayerMuted(String) -> Bool](usdstage/islayermuted(_:).md)
+- [func isLayerMuted(String) -> Bool](./islayermuted%28_%29.md)
   Returns a Boolean value that indicates whether the layer with the given identifier is muted.
 
 

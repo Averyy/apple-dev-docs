@@ -1,7 +1,8 @@
 # NSMenuItemBadge.BadgeType.none
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A badge with no string portion.
 
@@ -14,13 +15,18 @@ A badge with no string portion.
 case none
 ```
 
+```c
+NSMenuItemBadgeTypeNone
+```
+
 ## See Also
 
-- [NSMenuItemBadge.BadgeType.alerts](nsmenuitembadge/badgetype/alerts.md)
+### Getting badge types
+- [NSMenuItemBadge.BadgeType.alerts](./alerts.md)
   A badge representing the number of alerts.
-- [NSMenuItemBadge.BadgeType.newItems](nsmenuitembadge/badgetype/newitems.md)
+- [NSMenuItemBadge.BadgeType.newItems](./newitems.md)
   A badge representing the number of new items.
-- [NSMenuItemBadge.BadgeType.updates](nsmenuitembadge/badgetype/updates.md)
+- [NSMenuItemBadge.BadgeType.updates](./updates.md)
   A badge representing the number of available updates.
 
 

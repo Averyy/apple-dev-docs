@@ -1,7 +1,8 @@
 # kAXComboBoxRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A combo box control.
 
@@ -12,6 +13,10 @@ A combo box control.
 
 ```swift
 var kAXComboBoxRole: String { get }
+```
+
+```c
+#define kAXComboBoxRole
 ```
 
 

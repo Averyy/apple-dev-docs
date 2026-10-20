@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw C error number.
 
@@ -22,7 +23,8 @@ let rawValue: CInt
 
 ## See Also
 
-- [init(rawValue: CInt)](errno/init(rawvalue:).md)
+### Interacting with C APIs
+- [init(rawValue: CInt)](./init%28rawvalue%29.md)
   Creates a strongly typed error number from a raw C error number.
 
 

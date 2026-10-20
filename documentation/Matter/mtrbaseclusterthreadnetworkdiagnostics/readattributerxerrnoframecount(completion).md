@@ -1,7 +1,8 @@
 # readAttributeRxErrNoFrameCount(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeRxErrNoFrameCount(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeRxErrNoFrameCount() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeRxErrNoFrameCountWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

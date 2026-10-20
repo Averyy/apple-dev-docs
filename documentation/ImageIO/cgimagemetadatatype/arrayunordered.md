@@ -1,7 +1,8 @@
 # CGImageMetadataType.arrayUnordered
 
 **Framework**: Image I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An array that doesn’t preserve the order of items.
 
@@ -20,25 +21,30 @@ An array that doesn’t preserve the order of items.
 case arrayUnordered
 ```
 
+```c
+kCGImageMetadataTypeArrayUnordered
+```
+
 #### Discussion
 
 During serialization, this type becomes `<rdf:Bag>` in the XMP format.
 
 ## See Also
 
-- [CGImageMetadataType.invalid](cgimagemetadatatype/invalid.md)
+### Metadata Types
+- [CGImageMetadataType.invalid](./invalid.md)
   An invalid metadata type.
-- [CGImageMetadataType.default](cgimagemetadatatype/default.md)
+- [CGImageMetadataType.default](./default.md)
   The default type for new tags.
-- [CGImageMetadataType.string](cgimagemetadatatype/string.md)
+- [CGImageMetadataType.string](./string.md)
   A string value.
-- [CGImageMetadataType.arrayOrdered](cgimagemetadatatype/arrayordered.md)
+- [CGImageMetadataType.arrayOrdered](./arrayordered.md)
   An array that preserves the order of items.
-- [CGImageMetadataType.alternateArray](cgimagemetadatatype/alternatearray.md)
+- [CGImageMetadataType.alternateArray](./alternatearray.md)
   An ordered array, in which all elements are alternates for the same value.
-- [CGImageMetadataType.alternateText](cgimagemetadatatype/alternatetext.md)
+- [CGImageMetadataType.alternateText](./alternatetext.md)
   An alternate array, in which all elements are localized strings for the same value.
-- [CGImageMetadataType.structure](cgimagemetadatatype/structure.md)
+- [CGImageMetadataType.structure](./structure.md)
   A collection of keys and values.
 
 

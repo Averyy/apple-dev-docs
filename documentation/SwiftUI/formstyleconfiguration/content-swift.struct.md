@@ -1,7 +1,8 @@
 # FormStyleConfiguration.Content
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased content of a form.
 
@@ -24,11 +25,12 @@ A type-erased content of a form.
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](../view.md)
 
 ## See Also
 
-- [let content: FormStyleConfiguration.Content](formstyleconfiguration/content-swift.property.md)
+### Getting configuration content
+- [let content: FormStyleConfiguration.Content](./content-swift.property.md)
   A view that is the content of the form.
 
 

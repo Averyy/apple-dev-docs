@@ -1,7 +1,8 @@
 # EmptyControlWidgetTemplate
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An empty control widget template.
 
@@ -22,33 +23,34 @@ An empty control widget template.
 ## Topics
 
 ### Initializers
-- [init()](emptycontrolwidgettemplate/init.md)
+- [init()](./emptycontrolwidgettemplate/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [ControlWidgetTemplate](controlwidgettemplate.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [ControlWidgetTemplate](./controlwidgettemplate.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
 
 ## See Also
 
-- [protocol ControlWidget](controlwidget.md)
+### Composing control widgets
+- [protocol ControlWidget](./controlwidget.md)
   The configuration and content of a control widget to display in system spaces such as Control Center, the Lock Screen, and the Action Button.
-- [protocol ControlWidgetConfiguration](controlwidgetconfiguration.md)
+- [protocol ControlWidgetConfiguration](./controlwidgetconfiguration.md)
   A type that describes a control widget’s content.
-- [struct EmptyControlWidgetConfiguration](emptycontrolwidgetconfiguration.md)
+- [struct EmptyControlWidgetConfiguration](./emptycontrolwidgetconfiguration.md)
   An empty control widget configuration.
-- [struct ControlWidgetConfigurationBuilder](controlwidgetconfigurationbuilder.md)
+- [struct ControlWidgetConfigurationBuilder](./controlwidgetconfigurationbuilder.md)
   A custom attribute that constructs a control widget’s body.
-- [protocol ControlWidgetTemplate](controlwidgettemplate.md)
+- [protocol ControlWidgetTemplate](./controlwidgettemplate.md)
   A type that describes a control widget’s content.
-- [struct ControlWidgetTemplateBuilder](controlwidgettemplatebuilder.md)
+- [struct ControlWidgetTemplateBuilder](./controlwidgettemplatebuilder.md)
   A custom attribute that constructs a control widget template’s body.
-- [func controlWidgetActionHint(_:)](view/controlwidgetactionhint(_:).md)
+- [func controlWidgetActionHint(_:)](./view/controlwidgetactionhint%28_%29.md)
   The action hint of the control described by the modified label.
-- [func controlWidgetStatus(_:)](view/controlwidgetstatus(_:).md)
+- [func controlWidgetStatus(_:)](./view/controlwidgetstatus%28_%29.md)
   The status of the control described by the modified label.
 
 

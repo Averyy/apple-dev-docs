@@ -1,7 +1,8 @@
 # all
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 All color channels are enabled.
 
@@ -10,13 +11,17 @@ All color channels are enabled.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 static var all: MTLColorWriteMask { get }
+```
+
+```c
+MTLColorWriteMaskAll
 ```
 
 

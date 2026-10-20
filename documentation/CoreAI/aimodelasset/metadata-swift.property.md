@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The author-provided metadata for the model asset.
 
@@ -20,9 +21,10 @@ var metadata: AIModelAsset.Metadata { get }
 
 ## See Also
 
-- [func summary(includingStatistics: Bool) throws -> AIModelAsset.Summary?](aimodelasset/summary(includingstatistics:).md)
+### Inspecting an asset
+- [func summary(includingStatistics: Bool) throws -> AIModelAsset.Summary?](./summary%28includingstatistics%29.md)
   Returns the model summary.
-- [let url: URL](aimodelasset/url.md)
+- [let url: URL](./url.md)
   The file URL of the model asset bundle on disk.
 
 

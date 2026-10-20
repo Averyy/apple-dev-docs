@@ -1,7 +1,8 @@
 # init(size:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a rectangular region of the specified size.
 
@@ -18,6 +19,10 @@ Initializes and returns a rectangular region of the specified size.
 init(size: CGSize)
 ```
 
+```objc
+- (instancetype) initWithSize:(CGSize) size;
+```
+
 #### Return Value
 
 A rectangular region of the specified size.
@@ -32,9 +37,10 @@ The center of the rectangle is the origin of the region’s coordinate system.
 
 ## See Also
 
-- [class var infinite: UIRegion](uiregion/infinite.md)
+### Creating and initializing regions
+- [class var infinite: UIRegion](./infinite.md)
   Returns the region that encloses all points.
-- [init(radius: CGFloat)](uiregion/init(radius:).md)
+- [init(radius: CGFloat)](./init%28radius%29.md)
   Initializes and returns a region with a circular shape of the specified radius.
 
 

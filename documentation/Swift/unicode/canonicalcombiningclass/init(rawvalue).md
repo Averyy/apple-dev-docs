@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new canonical combining class with the given raw integer value.
 

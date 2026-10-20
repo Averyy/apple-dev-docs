@@ -1,7 +1,8 @@
 # propagate(from:)
 
 **Framework**: Core Video  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies all propagated attachment values from another buffer.
 

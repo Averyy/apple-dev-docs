@@ -1,7 +1,8 @@
 # showAnchorGeometry
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Display anchor geometry.
 
@@ -19,19 +20,20 @@ static let showAnchorGeometry: ARView.DebugOptions
 
 ## See Also
 
-- [static let none: ARView.DebugOptions](arview/debugoptions-swift.struct/none.md)
+### Configuring debug options
+- [static let none: ARView.DebugOptions](./none.md)
   Disable all debugging overlays.
-- [static let showPhysics: ARView.DebugOptions](arview/debugoptions-swift.struct/showphysics.md)
+- [static let showPhysics: ARView.DebugOptions](./showphysics.md)
   Draw visualizations for collision objects and rigid bodies.
-- [static let showStatistics: ARView.DebugOptions](arview/debugoptions-swift.struct/showstatistics.md)
+- [static let showStatistics: ARView.DebugOptions](./showstatistics.md)
   Collect performance statistics and display them in the view.
-- [static let showAnchorOrigins: ARView.DebugOptions](arview/debugoptions-swift.struct/showanchororigins.md)
+- [static let showAnchorOrigins: ARView.DebugOptions](./showanchororigins.md)
   Display anchor origins.
-- [static let showWorldOrigin: ARView.DebugOptions](arview/debugoptions-swift.struct/showworldorigin.md)
+- [static let showWorldOrigin: ARView.DebugOptions](./showworldorigin.md)
   Display a coordinate axis indicating the position and orientation of the AR world coordinate system.
-- [static let showFeaturePoints: ARView.DebugOptions](arview/debugoptions-swift.struct/showfeaturepoints.md)
+- [static let showFeaturePoints: ARView.DebugOptions](./showfeaturepoints.md)
   Display a point cloud showing intermediate results of the scene analysis used to track device position.
-- [static let showSceneUnderstanding: ARView.DebugOptions](arview/debugoptions-swift.struct/showsceneunderstanding.md)
+- [static let showSceneUnderstanding: ARView.DebugOptions](./showsceneunderstanding.md)
   Display the depth-colored wireframe for scene-understanding meshes.
 
 

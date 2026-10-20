@@ -1,7 +1,8 @@
 # MigrationStatus.success
 
 **Framework**: AppMigrationKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The migration completed successfully.
 
@@ -17,7 +18,8 @@ case success
 
 ## See Also
 
-- [MigrationStatus.failure(_:)](migrationstatus/failure(_:).md)
+### Examining migration statuses
+- [MigrationStatus.failure(_:)](./failure%28_%29.md)
   The migration failed with an error.
 
 

@@ -1,7 +1,8 @@
 # getPortStateMachine(forPort:error:)
 
 **Framework**: IOUSBHost  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,16 +14,21 @@
 func getPortStateMachine(forPort port: Int, error: NSErrorPointer) -> IOUSBHostCIPortStateMachine
 ```
 
+```objc
+- (IOUSBHostCIPortStateMachine *) getPortStateMachineForPort:(NSUInteger) port error:(NSError **) error;
+```
+
 ## See Also
 
-- [func capabilities(forPort: Int) -> UnsafePointer<IOUSBHostCIMessage>](iousbhostcontrollerinterface/capabilities(forport:).md)
-- [func description(for: UnsafePointer<IOUSBHostCIMessage>) -> String](iousbhostcontrollerinterface/description(for:).md)
-- [func destroy()](iousbhostcontrollerinterface/destroy.md)
-- [func enqueueInterrupt(UnsafePointer<IOUSBHostCIMessage>) throws](iousbhostcontrollerinterface/enqueueinterrupt(_:).md)
-- [func enqueueInterrupt(UnsafePointer<IOUSBHostCIMessage>, expedite: Bool) throws](iousbhostcontrollerinterface/enqueueinterrupt(_:expedite:).md)
-- [func enqueueInterrupts(UnsafePointer<IOUSBHostCIMessage>, count: Int) throws](iousbhostcontrollerinterface/enqueueinterrupts(_:count:).md)
-- [func enqueueInterrupts(UnsafePointer<IOUSBHostCIMessage>, count: Int, expedite: Bool) throws](iousbhostcontrollerinterface/enqueueinterrupts(_:count:expedite:).md)
-- [func getPortStateMachine(forCommand: UnsafePointer<IOUSBHostCIMessage>, error: NSErrorPointer) -> IOUSBHostCIPortStateMachine](iousbhostcontrollerinterface/getportstatemachine(forcommand:error:).md)
+### Instance Methods
+- [func capabilities(forPort: Int) -> UnsafePointer<IOUSBHostCIMessage>](./capabilities%28forport%29.md)
+- [func description(for: UnsafePointer<IOUSBHostCIMessage>) -> String](./description%28for%29.md)
+- [func destroy()](./destroy%28%29.md)
+- [func enqueueInterrupt(UnsafePointer<IOUSBHostCIMessage>) throws](./enqueueinterrupt%28_%29.md)
+- [func enqueueInterrupt(UnsafePointer<IOUSBHostCIMessage>, expedite: Bool) throws](./enqueueinterrupt%28_,expedite%29.md)
+- [func enqueueInterrupts(UnsafePointer<IOUSBHostCIMessage>, count: Int) throws](./enqueueinterrupts%28_,count%29.md)
+- [func enqueueInterrupts(UnsafePointer<IOUSBHostCIMessage>, count: Int, expedite: Bool) throws](./enqueueinterrupts%28_,count,expedite%29.md)
+- [func getPortStateMachine(forCommand: UnsafePointer<IOUSBHostCIMessage>, error: NSErrorPointer) -> IOUSBHostCIPortStateMachine](./getportstatemachine%28forcommand,error%29.md)
 
 
 ---

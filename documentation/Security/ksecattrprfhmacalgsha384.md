@@ -1,7 +1,8 @@
 # kSecAttrPRFHmacAlgSHA384
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Use the SHA384 algorithm.
 
@@ -12,6 +13,10 @@ Use the SHA384 algorithm.
 
 ```swift
 let kSecAttrPRFHmacAlgSHA384: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrPRFHmacAlgSHA384;
 ```
 
 

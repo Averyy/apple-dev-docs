@@ -1,17 +1,22 @@
 # font
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The font of all the receiver’s text.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var font: NSFont? { get set }
+```
+
+```objc
+@property (strong, nullable) NSFont * font;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ When the specified font doesn’t include a character, the text system uses an a
 
 ## See Also
 
-- [func changeFont(Any?)](nstext/changefont(_:).md)
+### Changing the font
+- [func changeFont(Any?)](./changefont%28_%29.md)
   This action method changes the font of the selection for a rich text object, or of all text for a plain text object.
-- [func setFont(NSFont, range: NSRange)](nstext/setfont(_:range:).md)
+- [func setFont(NSFont, range: NSRange)](./setfont%28_,range%29.md)
   Sets the font of characters within `aRange` to `aFont`.
 
 

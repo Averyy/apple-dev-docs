@@ -1,7 +1,8 @@
 # isRunning
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns YES if the timer is currently active.
 
@@ -16,6 +17,10 @@ Returns YES if the timer is currently active.
 
 ```swift
 var isRunning: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly, getter=isRunning) BOOL running;
 ```
 
 

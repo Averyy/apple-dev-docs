@@ -1,14 +1,15 @@
 # experiment_factor_long_handler
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 int experiment_factor_long_handler(struct sysctl_oid *oidp, void *arg1, int arg2, struct sysctl_req *req);
 ```
 

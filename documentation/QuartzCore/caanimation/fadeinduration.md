@@ -1,22 +1,27 @@
 # fadeInDuration
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 For animations attached to SceneKit objects, the duration for transitioning into the animation’s effect as it begins.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS
+- iPadOS
 - Mac Catalyst 13.1+
 - macOS 10.9+
-- tvOS ?+
-- visionOS ?+
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var fadeInDuration: CGFloat { get set }
+```
+
+```objc
+@property CGFloat fadeInDuration;
 ```
 
 #### Discussion
@@ -25,11 +30,12 @@ Use this property to create smooth transitions between the effects of multiple a
 
 For example, the geometry loaded from a scene file for a game character may have associated animations for player actions such as walking and jumping. When the player jumps, if the fade duration is zero, SceneKit abruptly switches from the current frame of the walk animation to the first frame of the jump animation. If the fade duration is greater than zero, SceneKit plays both animations at once during that duration and interpolates vertex positions from one animation to the other, creating a smooth transition.
 
-To attach animations to SceneKit objects, see [`SCNAnimatable`](https://developer.apple.com/documentation/scenekit/scnanimatable).
+To attach animations to SceneKit objects, see [`SCNAnimatable`](../../SceneKit/scnanimatable.md).
 
 ## See Also
 
-- [var fadeOutDuration: CGFloat](caanimation/fadeoutduration.md)
+### Fading between SceneKit Animations
+- [var fadeOutDuration: CGFloat](./fadeoutduration.md)
   For animations attached to SceneKit objects, the duration for transitioning out of the animation’s effect as it ends.
 
 

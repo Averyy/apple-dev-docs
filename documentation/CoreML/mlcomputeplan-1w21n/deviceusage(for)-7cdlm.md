@@ -1,7 +1,8 @@
 # deviceUsage(for:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the anticipated compute devices that would be used for executing a MLProgram operation.
 
@@ -20,6 +21,12 @@ Returns the anticipated compute devices that would be used for executing a MLPro
 func deviceUsage(for operation: MLModelStructure.Program.Operation) -> MLComputePlan.DeviceUsage?
 ```
 
+**Other overloads**:
+
+```swift
+func deviceUsage(for layer: MLModelStructure.NeuralNetwork.Layer) -> MLComputePlan.DeviceUsage?
+```
+
 #### Return Value
 
 The anticipated compute devices that would be used for executing the layer or `nil` if the usage couldn’t be determined.
@@ -30,11 +37,12 @@ The anticipated compute devices that would be used for executing the layer or `n
 
 ## See Also
 
-- [func deviceUsage(for:)](mlcomputeplan-1w21n/deviceusage(for:).md)
+### Getting the device usage
+- [func deviceUsage(for:)](./deviceusage%28for%29.md)
   Returns the anticipated compute devices that would be used for executing a NeuralNetwork layer.
-- [func deviceUsage(for: MLModelStructure.NeuralNetwork.Layer) -> MLComputePlan.DeviceUsage?](mlcomputeplan-1w21n/deviceusage(for:)-9em1q.md)
+- [func deviceUsage(for: MLModelStructure.NeuralNetwork.Layer) -> MLComputePlan.DeviceUsage?](./deviceusage%28for%29-9em1q.md)
   Returns the anticipated compute devices that would be used for executing a NeuralNetwork layer.
-- [MLComputePlan.DeviceUsage](mlcomputeplan-1w21n/deviceusage.md)
+- [MLComputePlan.DeviceUsage](./deviceusage.md)
   The anticipated compute devices that would be used for executing a layer/operation.
 
 

@@ -1,7 +1,8 @@
 # x
 
 **Framework**: ColorSync  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Input levels normalized by reference white: 1.0 = reference white.
 

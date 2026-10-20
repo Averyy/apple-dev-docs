@@ -2,6 +2,7 @@
 
 **Framework**: Core Transferable  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The representation used to import and export the item.
@@ -24,15 +25,16 @@ The representation used to import and export the item.
 
 ## Mentions
 
-- [Choosing a transfer representation for a model type](choosing-a-transfer-representation-for-a-model-type.md)
+- [Choosing a transfer representation for a model type](../choosing-a-transfer-representation-for-a-model-type.md)
 
 #### Discussion
 
-A [`transferRepresentation`](transferable/transferrepresentation.md) can contain multiple representations for different content types.
+A [`transferRepresentation`](./transferrepresentation.md) can contain multiple representations for different content types.
 
 ## See Also
 
-- [associatedtype Representation : TransferRepresentation](transferable/representation.md)
+### Implementing a transfer representation
+- [associatedtype Representation : TransferRepresentation](./representation.md)
   The type of the representation used to import and export the item.
 
 

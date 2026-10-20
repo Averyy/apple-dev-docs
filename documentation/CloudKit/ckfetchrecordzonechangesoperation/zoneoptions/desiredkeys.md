@@ -1,23 +1,28 @@
 # desiredKeys
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fields to fetch for the requested records.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- macOS 10.12+
-- tvOS 10.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 10.0+ - Deprecated in 12.0 (renamed: CKFetchRecordZoneChangesOperation.ZoneConfiguration)
+- iPadOS 10.0+ - Deprecated in 12.0 (renamed: CKFetchRecordZoneChangesOperation.ZoneConfiguration)
+- Mac Catalyst 13.1+ - Deprecated in 13.1 (renamed: CKFetchRecordZoneChangesOperation.ZoneConfiguration)
+- macOS 10.12+ - Deprecated in 10.14 (renamed: CKFetchRecordZoneChangesOperation.ZoneConfiguration)
+- tvOS 10.0+ - Deprecated in 12.0 (renamed: CKFetchRecordZoneChangesOperation.ZoneConfiguration)
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: CKFetchRecordZoneChangesOperation.ZoneConfiguration)
+- watchOS 3.0+ - Deprecated in 5.0 (renamed: CKFetchRecordZoneChangesOperation.ZoneConfiguration)
 
 ## Declaration
 
 ```swift
 var desiredKeys: [String]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSArray<NSString *> * desiredKeys;
 ```
 
 #### Discussion
@@ -30,9 +35,10 @@ If you intend to specify the desired set of keys, set the value of this property
 
 ## See Also
 
-- [var previousServerChangeToken: CKServerChangeToken?](ckfetchrecordzonechangesoperation/zoneoptions/previousserverchangetoken.md)
+### Zone Change Options
+- [var previousServerChangeToken: CKServerChangeToken?](./previousserverchangetoken.md)
   The token that identifies the starting point for retrieving changes.
-- [var resultsLimit: Int](ckfetchrecordzonechangesoperation/zoneoptions/resultslimit.md)
+- [var resultsLimit: Int](./resultslimit.md)
   The maximum number of records to fetch from the record zone.
 
 

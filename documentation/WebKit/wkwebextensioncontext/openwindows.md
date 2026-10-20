@@ -1,7 +1,8 @@
 # openWindows
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The open windows that are exposed to this extension.
 
@@ -18,17 +19,22 @@ The open windows that are exposed to this extension.
 var openWindows: [any WKWebExtensionWindow] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<id<WKWebExtensionWindow>> * openWindows;
+```
+
 #### Discussion
 
-Provides the windows that are open and visible to the extension, as updated by the [`didOpenWindow(_:)`](wkwebextensioncontext/didopenwindow(_:).md) and [`didCloseWindow(_:)`](wkwebextensioncontext/didclosewindow(_:).md) methods.
+Provides the windows that are open and visible to the extension, as updated by the [`didOpenWindow(_:)`](./didopenwindow%28_%29.md) and [`didCloseWindow(_:)`](./didclosewindow%28_%29.md) methods.
 
-Initially populated by the windows returned by the extension controller delegate method [`webExtensionController(_:openWindowsFor:)`](wkwebextensioncontrollerdelegate/webextensioncontroller(_:openwindowsfor:).md).
+Initially populated by the windows returned by the extension controller delegate method [`webExtensionController(_:openWindowsFor:)`](../wkwebextensioncontrollerdelegate/webextensioncontroller%28_,openwindowsfor%29.md).
 
 ## See Also
 
-- [func didOpenWindow(any WKWebExtensionWindow)](wkwebextensioncontext/didopenwindow(_:).md)
+### Related Documentation
+- [func didOpenWindow(any WKWebExtensionWindow)](./didopenwindow%28_%29.md)
   Called by the app when a new window is opened to fire appropriate events with only this extension.
-- [func didCloseWindow(any WKWebExtensionWindow)](wkwebextensioncontext/didclosewindow(_:).md)
+- [func didCloseWindow(any WKWebExtensionWindow)](./didclosewindow%28_%29.md)
   Called by the app when a window is closed to fire appropriate events with only this extension.
 
 

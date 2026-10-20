@@ -1,7 +1,8 @@
 # init(limitIncreaseSuggestion:resetDate:debugDescription:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a quota limit reached instance.
 

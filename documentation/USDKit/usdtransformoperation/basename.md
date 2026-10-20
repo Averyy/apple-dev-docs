@@ -1,7 +1,8 @@
 # baseName
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The base name of this operation without namespace.
 

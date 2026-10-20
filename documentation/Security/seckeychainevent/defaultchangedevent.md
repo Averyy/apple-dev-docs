@@ -1,7 +1,8 @@
 # SecKeychainEvent.defaultChangedEvent
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that a different keychain was specified as the default.
 
@@ -13,6 +14,10 @@ Indicates that a different keychain was specified as the default.
 
 ```swift
 case defaultChangedEvent
+```
+
+```c
+kSecDefaultChangedEvent
 ```
 
 

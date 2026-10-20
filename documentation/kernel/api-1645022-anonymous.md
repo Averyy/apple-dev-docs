@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPMExternalPower](1645022-anonymous/kiopmexternalpower.md)
-- [kIOPMInternalPower](1645022-anonymous/kiopminternalpower.md)
+- [kIOPMExternalPower](./api-1645022-anonymous/kiopmexternalpower.md)
+- [kIOPMInternalPower](./api-1645022-anonymous/kiopminternalpower.md)
 
 
 ---

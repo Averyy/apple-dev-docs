@@ -2,6 +2,7 @@
 
 **Framework**: Accessory Live Activities  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Establishes communication between the data provider extension and the system.
@@ -18,11 +19,11 @@ func activate(for session: LiveActivityForwarding.Session)
 
 ## Mentions
 
-- [Receiving Live Activity updates and alerts on an accessory](receiving-live-activities-on-an-accessory.md)
+- [Receiving Live Activity updates and alerts on an accessory](../../receiving-live-activities-on-an-accessory.md)
 
 #### Overview
 
-Store a reference to the session and use it to receive life-cycle events and updates to ongoing Live Activities. The session becomes invalid after the system calls [`sessionInvalidated()`](liveactivityforwarding/accessoryliveactivitieshandler/sessioninvalidated().md) to indicate that the system won’t deliver Live Activities to your accessory. Don’t use the session after invalidation.
+Store a reference to the session and use it to receive life-cycle events and updates to ongoing Live Activities. The session becomes invalid after the system calls [`sessionInvalidated()`](./sessioninvalidated%28%29.md) to indicate that the system won’t deliver Live Activities to your accessory. Don’t use the session after invalidation.
 
 ## Parameters
 
@@ -30,7 +31,8 @@ Store a reference to the session and use it to receive life-cycle events and upd
 
 ## See Also
 
-- [func sessionInvalidated()](liveactivityforwarding/accessoryliveactivitieshandler/sessioninvalidated.md)
+### Managing the session life cycle
+- [func sessionInvalidated()](./sessioninvalidated%28%29.md)
   Indicates that the system invalidated the session and stopped sending Live Activity updates.
 
 

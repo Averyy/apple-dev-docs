@@ -1,7 +1,8 @@
 # authorizedRoutesDidChange
 
 **Framework**: AVRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when the list of authorized routes changes.
 
@@ -17,11 +18,16 @@ A notification the system posts when the list of authorized routes changes.
 class let authorizedRoutesDidChange: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVCustomRoutingControllerAuthorizedRoutesDidChangeNotification;
+```
+
 ## See Also
 
-- [var authorizedRoutes: [AVCustomDeviceRoute]](avcustomroutingcontroller/authorizedroutes.md)
+### Managing authorization
+- [var authorizedRoutes: [AVCustomDeviceRoute]](./authorizedroutes.md)
   A list of authorized routes.
-- [func invalidateAuthorization(for: AVCustomDeviceRoute)](avcustomroutingcontroller/invalidateauthorization(for:).md)
+- [func invalidateAuthorization(for: AVCustomDeviceRoute)](./invalidateauthorization%28for%29.md)
   Revokes an app’s authorization to connect to a route.
 
 

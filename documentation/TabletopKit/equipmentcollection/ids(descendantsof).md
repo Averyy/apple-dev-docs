@@ -1,7 +1,8 @@
 # ids(descendantsOf:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the identifiers of all equipment that are descendants of the given equipment identifier.
 
@@ -20,9 +21,10 @@ func ids(descendantsOf parentID: EquipmentIdentifier) -> [EquipmentIdentifier]
 
 ## See Also
 
-- [func ids(childrenOf: EquipmentIdentifier) -> [EquipmentIdentifier]](equipmentcollection/ids(childrenof:).md)
+### Retrieving equipment identifiers
+- [func ids(childrenOf: EquipmentIdentifier) -> [EquipmentIdentifier]](./ids%28childrenof%29.md)
   Returns the identifiers of all equipment that are children of the given equipment identifier.
-- [func ids(of: (some Equipment).Type) -> [EquipmentIdentifier]](equipmentcollection/ids(of:).md)
+- [func ids(of: (some Equipment).Type) -> [EquipmentIdentifier]](./ids%28of%29.md)
   Returns the identifiers of all equipment that conform to the given type.
 
 

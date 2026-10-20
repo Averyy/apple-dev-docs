@@ -1,7 +1,8 @@
 # onWithRecallGlobalScene(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func onWithRecallGlobalScene(completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func onWithRecallGlobalScene() async throws
+```
+
+```objc
+- (void) onWithRecallGlobalSceneWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

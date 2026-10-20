@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A type that represents the words of a binary integer.
@@ -27,11 +28,12 @@ The `Words` type must conform to the `RandomAccessCollection` protocol with an `
 
 ## See Also
 
-- [var bitWidth: Int](binaryinteger/bitwidth.md)
+### Working with Binary Representation
+- [var bitWidth: Int](./bitwidth.md)
   The number of bits in the current binary representation of this value.
-- [var trailingZeroBitCount: Int](binaryinteger/trailingzerobitcount.md)
+- [var trailingZeroBitCount: Int](./trailingzerobitcount.md)
   The number of trailing zeros in this value’s binary representation.
-- [var words: Self.Words](binaryinteger/words-swift.property.md)
+- [var words: Self.Words](./words-swift.property.md)
   A collection containing the words of this value’s binary representation, in order from the least significant to most significant.
 
 

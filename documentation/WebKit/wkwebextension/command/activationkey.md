@@ -1,7 +1,8 @@
 # activationKey
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The primary key used to trigger the command, distinct from any modifier flags.
 
@@ -16,6 +17,10 @@ The primary key used to trigger the command, distinct from any modifier flags.
 
 ```swift
 var activationKey: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * activationKey;
 ```
 
 #### Discussion

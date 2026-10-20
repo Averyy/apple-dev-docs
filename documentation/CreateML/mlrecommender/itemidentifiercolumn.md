@@ -1,7 +1,8 @@
 # itemIdentifierColumn
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the column you selected at initialization to define the item identifiers.
 
@@ -20,15 +21,16 @@ Changing the value of this property doesn’t retrain the model or affect its be
 
 ## See Also
 
-- [init(trainingData:userColumn:itemColumn:ratingColumn:parameters:)](mlrecommender/init(trainingdata:usercolumn:itemcolumn:ratingcolumn:parameters:).md)
+### Creating and training a recommender
+- [init(trainingData:userColumn:itemColumn:ratingColumn:parameters:)](./init%28trainingdata,usercolumn,itemcolumn,ratingcolumn,parameters%29.md)
   Creates an instance given a table and the names of the item and user columns contained therein.
-- [MLRecommender.ModelParameters](mlrecommender/modelparameters-swift.struct.md)
+- [MLRecommender.ModelParameters](./modelparameters-swift.struct.md)
   Parameters that affect the process of training a recommender model.
-- [let modelParameters: MLRecommender.ModelParameters](mlrecommender/modelparameters-swift.property.md)
+- [let modelParameters: MLRecommender.ModelParameters](./modelparameters-swift.property.md)
   The configuration parameters that the recommender used for training during initialization.
-- [var userIdentifierColumn: String](mlrecommender/useridentifiercolumn.md)
+- [var userIdentifierColumn: String](./useridentifiercolumn.md)
   The name of the column you selected at initialization to define the user identifiers.
-- [var ratingColumn: String?](mlrecommender/ratingcolumn.md)
+- [var ratingColumn: String?](./ratingcolumn.md)
   The name of the column you selected at initialization to define the ratings.
 
 

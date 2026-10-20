@@ -1,18 +1,19 @@
 # mbuf_maxlen
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 size_t mbuf_maxlen(const mbuf_t mbuf);
 ```
 
-#### Return_value
+#### Return Value
 
 The maximum lenght of data for this mbuf.
 

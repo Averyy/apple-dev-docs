@@ -1,14 +1,17 @@
 # allowsActions
 
 **Framework**: Address Book UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies whether the to display buttons for actions such as sending a text message or initiating a FaceTime call.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
+- iOS 4.0+ - Deprecated in 9.0
+- iPadOS 4.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use [`CNContactViewController`](../../ContactsUI/cncontactviewcontroller.md) instead.
 
 ## Declaration
 
@@ -16,13 +19,18 @@ Specifies whether the to display buttons for actions such as sending a text mess
 var allowsActions: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsActions;
+```
+
 ## See Also
 
-- [var addressBook: ABAddressBook?](abpersonviewcontroller/addressbook.md)
+### Configuring Person Views
+- [var addressBook: ABAddressBook?](./addressbook.md)
   Optional. The address book from which to obtain the contact to display.
-- [var allowsEditing: Bool](abpersonviewcontroller/allowsediting.md)
+- [var allowsEditing: Bool](./allowsediting.md)
   Specifies whether the user can edit the person’s information.
-- [func setHighlightedItemForProperty(ABPropertyID, withIdentifier: ABMultiValueIdentifier)](abpersonviewcontroller/sethighlighteditemforproperty(_:withidentifier:).md)
+- [func setHighlightedItemForProperty(ABPropertyID, withIdentifier: ABMultiValueIdentifier)](./sethighlighteditemforproperty%28_,withidentifier%29.md)
   Specifies whether to highlight a particular property of the displayed person.
 
 

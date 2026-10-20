@@ -1,7 +1,8 @@
 # AVPortraitEffectsMatte
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An auxiliary image used to separate foreground from background with high resolution.
 
@@ -20,9 +21,13 @@ An auxiliary image used to separate foreground from background with high resolut
 class AVPortraitEffectsMatte
 ```
 
+```objc
+@interface AVPortraitEffectsMatte : NSObject
+```
+
 ## Mentions
 
-- [Extracting Portrait Effects matte image data from a photo](extracting-portrait-effects-matte-image-data-from-a-photo.md)
+- [Extracting Portrait Effects matte image data from a photo](./extracting-portrait-effects-matte-image-data-from-a-photo.md)
 
 #### Overview
 
@@ -32,7 +37,7 @@ Starting in iOS 11, apps accessing the photo library can use images containing e
 
 Starting in iOS 12, the portrait effects matte helps achieve this fine-grain level of detail.
 
-![Zoomed in photo showing the fine detail in a portrait effects matte image](/images/com.apple.avfoundation/media-3030223@2x.png)
+![Zoomed in photo showing the fine detail in a portrait effects matte image](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-3030223@2x.png)
 
 | **Camera type** | **RGB image resolution** | **Depth map resolution** | **Portrait effects matte resolution** |
 | --- | --- | --- | --- |
@@ -43,44 +48,45 @@ Using the auxiliary matte image, you can improve the quality of rendered portrai
 
 Unlike the depth map, the portrait effects matte isn’t intended to faithfully preserve all gradations of depth in the scene. It’s a depth-guided, people-focused segmentation mask generated from a proprietary Apple neural network trained to detect people. It separates an individual in the foreground from whatever is in the background, with greater detail and clarity than with the depth map alone. It achieves this clarity in part because the matte image has higher resolution than the depth map.
 
-For information about capturing the portrait effects matte, see [`Configuring camera capture to collect a Portrait Effects matte`](configuring-camera-capture-to-collect-a-portrait-effects-matte.md). To learn how to extract a portrait effects matte from photos previously captured in portrait mode on a device running iOS 12, see [`Extracting Portrait Effects matte image data from a photo`](extracting-portrait-effects-matte-image-data-from-a-photo.md).
+For information about capturing the portrait effects matte, see [Configuring camera capture to collect a Portrait Effects matte](./configuring-camera-capture-to-collect-a-portrait-effects-matte.md). To learn how to extract a portrait effects matte from photos previously captured in portrait mode on a device running iOS 12, see [Extracting Portrait Effects matte image data from a photo](./extracting-portrait-effects-matte-image-data-from-a-photo.md).
 
 ## Topics
 
 ### Creating a Portrait Effects matte
-- [Configuring camera capture to collect a Portrait Effects matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
+- [Configuring camera capture to collect a Portrait Effects matte](./configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
   Prepare your app to capture a portrait effects matte when taking photos.
-- [convenience init(fromDictionaryRepresentation: [AnyHashable : Any]) throws](avportraiteffectsmatte/init(fromdictionaryrepresentation:).md)
+- [convenience init(fromDictionaryRepresentation: [AnyHashable : Any]) throws](./avportraiteffectsmatte/init%28fromdictionaryrepresentation%29.md)
   Initializes a portrait effects matte instance from auxiliary image information in an image file.
-- [func applyingExifOrientation(CGImagePropertyOrientation) -> Self](avportraiteffectsmatte/applyingexiforientation(_:).md)
+- [func applyingExifOrientation(CGImagePropertyOrientation) -> Self](./avportraiteffectsmatte/applyingexiforientation%28_%29.md)
   Returns a derivative portrait effects matte after applying the specified Exif orientation.
-- [func replacingPortraitEffectsMatte(with: CVPixelBuffer) throws -> Self](avportraiteffectsmatte/replacingportraiteffectsmatte(with:).md)
+- [func replacingPortraitEffectsMatte(with: CVPixelBuffer) throws -> Self](./avportraiteffectsmatte/replacingportraiteffectsmatte%28with%29.md)
   Returns a portrait effects matte by wrapping the replacement pixel buffer.
 ### Examining a Portrait Effects matte
-- [Extracting Portrait Effects matte image data from a photo](extracting-portrait-effects-matte-image-data-from-a-photo.md)
+- [Extracting Portrait Effects matte image data from a photo](./extracting-portrait-effects-matte-image-data-from-a-photo.md)
   Check for portrait effects matte metadata in existing images.
-- [var mattingImage: CVPixelBuffer](avportraiteffectsmatte/mattingimage.md)
+- [var mattingImage: CVPixelBuffer](./avportraiteffectsmatte/mattingimage.md)
   The portrait effects matte’s internal image, formatted as a pixel buffer.
-- [var pixelFormatType: OSType](avportraiteffectsmatte/pixelformattype.md)
+- [var pixelFormatType: OSType](./avportraiteffectsmatte/pixelformattype.md)
   The pixel format type of this portrait effects matte’s internal image.
-- [func dictionaryRepresentation(forAuxiliaryDataType: AutoreleasingUnsafeMutablePointer<NSString?>?) -> [AnyHashable : Any]?](avportraiteffectsmatte/dictionaryrepresentation(forauxiliarydatatype:).md)
+- [func dictionaryRepresentation(forAuxiliaryDataType: AutoreleasingUnsafeMutablePointer<NSString?>?) -> [AnyHashable : Any]?](./avportraiteffectsmatte/dictionaryrepresentation%28forauxiliarydatatype%29.md)
   A dictionary of primitive map information used for writing an image file with a portrait effects matte.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVSemanticSegmentationMatte](avsemanticsegmentationmatte.md)
+### Matte data
+- [class AVSemanticSegmentationMatte](./avsemanticsegmentationmatte.md)
   An object that wraps a matting image for a particular semantic segmentation.
 
 

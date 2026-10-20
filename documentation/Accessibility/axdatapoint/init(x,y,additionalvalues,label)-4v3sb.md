@@ -1,7 +1,8 @@
 # init(x:y:additionalValues:label:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data point with the specified x-value, y-value, additional values, and label.
 
@@ -22,7 +23,8 @@ convenience init(x: Double, y: Double? = nil, additionalValues: [AXDataPoint.Val
 
 ## See Also
 
-- [convenience init(x: String, y: Double?, additionalValues: [AXDataPoint.Value], label: String?)](axdatapoint/init(x:y:additionalvalues:label:)-83xvg.md)
+### Creating a data point
+- [convenience init(x: String, y: Double?, additionalValues: [AXDataPoint.Value], label: String?)](./init%28x,y,additionalvalues,label%29-83xvg.md)
   Creates a data point with the specified x-value, y-value, additional values, and label.
 
 

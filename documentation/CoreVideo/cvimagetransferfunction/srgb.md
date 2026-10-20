@@ -1,7 +1,8 @@
 # CVImageTransferFunction.sRGB
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The standard transfer function for web and desktop publishing.
 

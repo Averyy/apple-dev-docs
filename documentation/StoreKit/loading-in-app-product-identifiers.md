@@ -1,6 +1,7 @@
 # Loading in-app product identifiers
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: Article
 
 Load the unique identifiers for your in-app products to retrieve product information from the App Store.
 
@@ -8,15 +9,15 @@ Load the unique identifiers for your in-app products to retrieve product informa
 
 Implementing an Apple In-App Purchase flow consists of three stages. In the first stage, your app retrieves product information. Then your app requests payment when the user selects a product in your app’s store. Finally, your app delivers the product.
 
-![A flowchart depicting the three stages of the Apple In-App Purchase process between your app and the App Store. First, your app makes a request for a product, the App Store provides that product information, and your app displays it. Next, the user selects a product, your app makes a payment request, and the App Store processes the payment. Finally, the App Store calls your app’s transaction queue observer, and your app delivers the purchased product. The first stage, retrieving product information, is highlighted.](/images/com.apple.storekit/media-3317194@2x.png)
+![A flowchart depicting the three stages of the Apple In-App Purchase process between your app and the App Store. First, your app makes a request for a product, the App Store provides that product information, and your app displays it. Next, the user selects a product, your app makes a payment request, and the App Store processes the payment. Finally, the App Store calls your app’s transaction queue observer, and your app delivers the purchased product. The first stage, retrieving product information, is highlighted.](https://developer.apple.com/tutorials/images/com.apple.storekit/media-3317194@2x.png)
 
-To begin the purchase process, your app needs the product identifiers so it can retrieve information about the products from the App Store and present its store UI to the user. Every product you sell in your app has a unique product identifier. You provide this value in App Store Connect when you create a new Apple In-App Purchase product (see [`Create Apple In-App Purchases`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/devae49fb316) for more information). Your app uses these product identifiers to fetch information about products available for sale in the App Store, such as pricing, and to submit payment requests when users purchase those products.
+To begin the purchase process, your app needs the product identifiers so it can retrieve information about the products from the App Store and present its store UI to the user. Every product you sell in your app has a unique product identifier. You provide this value in App Store Connect when you create a new Apple In-App Purchase product (see [Create Apple In-App Purchases](https://help.apple.com/app-store-connect/#/devae49fb316) for more information). Your app uses these product identifiers to fetch information about products available for sale in the App Store, such as pricing, and to submit payment requests when users purchase those products.
 
 There are several strategies for storing a list of product identifiers in your app, such as embedding them in the app bundle or storing them on your server. You can then retrieve the product identifiers by reading them locally in the app bundle or fetching them from your server. Choose the method that best serves your app’s needs.
 
 > **Note**:  There’s no runtime mechanism to fetch a list of the configured products in App Store Connect for a particular app. You’re responsible for managing your app’s list of products and providing that information to your app.
 
-##### Retrieve Product Ids From the App Bundle
+##### Retrieve product IDs from the app bundle
 
 Embed the product identifiers in your app bundle if:
 
@@ -61,7 +62,7 @@ NSURL *url = [[NSBundle mainBundle] URLForResource:@"product_ids"
 NSArray *productIdentifiers = [NSArray arrayWithContentsOfURL:url];
 ```
 
-##### Retrieve Product Ids From Your Server
+##### Retrieve product IDs from your server
 
 Store the product identifiers on your server if:
 
@@ -133,17 +134,18 @@ Consider versioning the JSON file so future versions of your app can change its 
 
 To ensure that your app remains responsive, use a background thread to download the JSON file and extract the list of product identifiers. To minimize the data that transfers, use standard HTTP caching mechanisms, such as the `Last-Modified` and `If-Modified-Since` headers.
 
-After loading all in-app product identifiers, pass them into the product information request to the App Store. For details on obtaining product information, see [`Fetching product information from the App Store`](fetching-product-information-from-the-app-store.md).
+After loading all in-app product identifiers, pass them into the product information request to the App Store. For details on obtaining product information, see [Fetching product information from the App Store](./fetching-product-information-from-the-app-store.md).
 
 ## See Also
 
-- [Fetching product information from the App Store](fetching-product-information-from-the-app-store.md)
+### Product information
+- [Fetching product information from the App Store](./fetching-product-information-from-the-app-store.md)
   Retrieve up-to-date information about the products for sale in your app to display to your customers.
-- [class SKProductsRequest](skproductsrequest.md)
+- [class SKProductsRequest](./skproductsrequest.md)
   An object that can retrieve localized information from the App Store about a specified list of products.
-- [class SKProductsResponse](skproductsresponse.md)
+- [class SKProductsResponse](./skproductsresponse.md)
   An App Store response to a request for information about a list of products.
-- [class SKProduct](skproduct.md)
+- [class SKProduct](./skproduct.md)
   Information about a registered product in App Store Connect.
 
 

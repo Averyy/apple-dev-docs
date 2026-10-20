@@ -2,6 +2,7 @@
 
 **Framework**: USDKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The stage associated with this notice.

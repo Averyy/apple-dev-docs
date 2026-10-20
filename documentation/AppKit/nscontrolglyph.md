@@ -1,12 +1,13 @@
 # NSControlGlyph
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The reserved code for a control glyph.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ The reserved code for a control glyph.
 var NSControlGlyph: Int { get }
 ```
 
+```c
+NSControlGlyph
+```
+
 #### Discussion
 
-An [`NSGlyphGenerator`](nsglyphgenerator.md) objects generates [`NSControlGlyph`](nscontrolglyph.md) for all characters in the Unicode General Category C* and U200B (ZERO WIDTH SPACE).
+An [`NSGlyphGenerator`](./nsglyphgenerator.md) objects generates [`NSControlGlyph`](./nscontrolglyph.md) for all characters in the Unicode General Category C* and U200B (ZERO WIDTH SPACE).
 
 ## See Also
 
-- [var numberOfGlyphs: Int](nsfont/numberofglyphs.md)
+### Getting Information About Glyphs
+- [var numberOfGlyphs: Int](./nsfont/numberofglyphs.md)
   The number of glyphs in the font.
-- [typealias NSGlyph](nsglyph.md)
+- [typealias NSGlyph](./nsglyph.md)
   The type used to specify glyphs.
-- [var NSNullGlyph: Int](nsnullglyph.md)
+- [var NSNullGlyph: Int](./nsnullglyph.md)
   The reserved code for a null glyph.
 
 

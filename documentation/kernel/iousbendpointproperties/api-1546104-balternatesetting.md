@@ -1,7 +1,8 @@
 # bAlternateSetting
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The alternative setting for obtaining endpoint and pipe properties.
 
@@ -10,35 +11,36 @@ The alternative setting for obtaining endpoint and pipe properties.
 
 ## Declaration
 
-```swift
+```c
 UInt8 bAlternateSetting;
 ```
 
 ## See Also
 
-- [bVersion](iousbendpointproperties/1546121-bversion.md)
+### Getting the Properties
+- [bVersion](./api-1546121-bversion.md)
   The version of the structure.
-- [bDirection](iousbendpointproperties/1546544-bdirection.md)
+- [bDirection](./api-1546544-bdirection.md)
   The direction of the endpoint.
-- [bEndpointNumber](iousbendpointproperties/1546577-bendpointnumber.md)
+- [bEndpointNumber](./api-1546577-bendpointnumber.md)
   The number of the endpoint.
-- [bTransferType](iousbendpointproperties/1546085-btransfertype.md)
+- [bTransferType](./api-1546085-btransfertype.md)
   The transfer type of the endpoint.
-- [bUsageType](iousbendpointproperties/1545903-busagetype.md)
+- [bUsageType](./api-1545903-busagetype.md)
   The usage type of the endpoint.
-- [bSyncType](iousbendpointproperties/1546228-bsynctype.md)
+- [bSyncType](./api-1546228-bsynctype.md)
   The type for isochronous endpoints.
-- [bInterval](iousbendpointproperties/1546398-binterval.md)
+- [bInterval](./api-1546398-binterval.md)
   The interval field from the standard endpoint descriptor.
-- [wMaxPacketSize](iousbendpointproperties/1546100-wmaxpacketsize.md)
+- [wMaxPacketSize](./api-1546100-wmaxpacketsize.md)
   The maximum packet size.
-- [bMaxBurst](iousbendpointproperties/1546213-bmaxburst.md)
+- [bMaxBurst](./api-1546213-bmaxburst.md)
   The maximum number of packets the endpoint can send or receive for SuperSpeed endpoints.
-- [bMaxStreams](iousbendpointproperties/1546220-bmaxstreams.md)
+- [bMaxStreams](./api-1546220-bmaxstreams.md)
   The maximum number of streams this endpoint supports for SuperSpeed bulk endpoints.
-- [bMult](iousbendpointproperties/1546456-bmult.md)
+- [bMult](./api-1546456-bmult.md)
   The mult value for isochronous endpoints.
-- [wBytesPerInterval](iousbendpointproperties/1546060-wbytesperinterval.md)
+- [wBytesPerInterval](./api-1546060-wbytesperinterval.md)
   The number of bytes per interval.
 
 

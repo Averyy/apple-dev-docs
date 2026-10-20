@@ -1,7 +1,8 @@
 # pre_output
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The function to be called for outbound packets.
 
@@ -10,23 +11,24 @@ The function to be called for outbound packets.
 
 ## Declaration
 
-```swift
+```c
 proto_media_preout pre_output;
 ```
 
 ## See Also
 
-- [demux_array](ifnet_attach_proto_param/1525038-demux_array.md)
+### Fields
+- [demux_array](./api-1525038-demux_array.md)
   An array of ifnet_demux_desc structures describing the protocol.
-- [demux_count](ifnet_attach_proto_param/1525033-demux_count.md)
+- [demux_count](./api-1525033-demux_count.md)
   The number of entries in the demux_array array.
-- [input](ifnet_attach_proto_param/1524849-input.md)
+- [input](./api-1524849-input.md)
   The function to be called for inbound packets.
-- [event](ifnet_attach_proto_param/1524843-event.md)
+- [event](./api-1524843-event.md)
   The function to be called for interface events.
-- [ioctl](ifnet_attach_proto_param/1525050-ioctl.md)
+- [ioctl](./api-1525050-ioctl.md)
   The function to be called for ioctls.
-- [detached](ifnet_attach_proto_param/1524863-detached.md)
+- [detached](./api-1524863-detached.md)
   The function to be called for handling the detach.
 
 

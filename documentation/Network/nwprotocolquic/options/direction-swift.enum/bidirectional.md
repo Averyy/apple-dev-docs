@@ -1,7 +1,8 @@
 # NWProtocolQUIC.Options.Direction.bidirectional
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A bidirectional QUIC stream.
 
@@ -22,7 +23,8 @@ case bidirectional
 
 ## See Also
 
-- [NWProtocolQUIC.Options.Direction.unidirectional](nwprotocolquic/options/direction-swift.enum/unidirectional.md)
+### Direction Values
+- [NWProtocolQUIC.Options.Direction.unidirectional](./unidirectional.md)
   A unidirectional QUIC stream.
 
 

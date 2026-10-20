@@ -1,7 +1,8 @@
 # isFieldOfViewValid
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the field of view (FoV) is valid.
 

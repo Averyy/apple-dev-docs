@@ -1,23 +1,26 @@
 # GameCenterChallengeVersionReleaseCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body for releasing a Game Center challenge version to players.
 
 **Availability**:
-- App Store Connect API 4.0+
+- App Store Connect API 4.0+ - Deprecated in 4.3
+
+> **Deprecated**: This object is deprecated.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeVersionReleaseCreateRequest
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterChallengeVersionReleaseCreateRequest.Data](gamecenterchallengeversionreleasecreaterequest/data-data.dictionary.md)
+- [object GameCenterChallengeVersionReleaseCreateRequest.Data](./gamecenterchallengeversionreleasecreaterequest/data-data.dictionary.md)
   The request body you use to create a Game Center challenge version release.
 
 ## Properties
@@ -26,11 +29,12 @@ object GameCenterChallengeVersionReleaseCreateRequest
 
 ## See Also
 
-- [object GameCenterChallengeVersionRelease](gamecenterchallengeversionrelease.md)
+### Objects
+- [object GameCenterChallengeVersionRelease](./gamecenterchallengeversionrelease.md)
   The data structure that represent a challenge version release.
-- [object GameCenterChallengeVersionReleaseResponse](gamecenterchallengeversionreleaseresponse.md)
+- [object GameCenterChallengeVersionReleaseResponse](./gamecenterchallengeversionreleaseresponse.md)
   A response containing a single release record for a Game Center challenge version.
-- [object GameCenterChallengeVersionReleasesResponse](gamecenterchallengeversionreleasesresponse.md)
+- [object GameCenterChallengeVersionReleasesResponse](./gamecenterchallengeversionreleasesresponse.md)
   A response containing a list of release records for a Game Center challenge version.
 
 

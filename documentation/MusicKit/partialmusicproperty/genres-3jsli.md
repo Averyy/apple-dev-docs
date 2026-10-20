@@ -1,7 +1,8 @@
 # genres
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the relationship property that returns the associated genres for the artist.
 
@@ -19,6 +20,8 @@ An identifier for the relationship property that returns the associated genres f
 ```swift
 static let genres: MusicRelationshipProperty<Artist, Genre>
 ```
+
+Available when `Root` is `Artist`.
 
 
 ---

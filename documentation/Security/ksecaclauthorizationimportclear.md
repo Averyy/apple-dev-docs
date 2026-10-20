@@ -1,7 +1,8 @@
 # kSecACLAuthorizationImportClear
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Import an unencrypted key.
 
@@ -12,6 +13,10 @@ Import an unencrypted key.
 
 ```swift
 let kSecACLAuthorizationImportClear: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationImportClear;
 ```
 
 

@@ -1,7 +1,8 @@
 # ARSession.RunOptions
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for transitioning an AR session’s current state when you change its configuration.
 
@@ -15,42 +16,47 @@ Options for transitioning an AR session’s current state when you change its co
 struct RunOptions
 ```
 
+```c
+enum ARSessionRunOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Creating Run Options
-- [init(rawValue: UInt)](arsession/runoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./runoptions/init%28rawvalue%29.md)
   Creates a run options.
 ### Run Options
-- [static var resetTracking: ARSession.RunOptions](arsession/runoptions/resettracking.md)
+- [static var resetTracking: ARSession.RunOptions](./runoptions/resettracking.md)
   An option to reset the device’s position from the session’s previous run.
-- [static var removeExistingAnchors: ARSession.RunOptions](arsession/runoptions/removeexistinganchors.md)
+- [static var removeExistingAnchors: ARSession.RunOptions](./runoptions/removeexistinganchors.md)
   An option to remove any anchor objects associated with the session’s previous run.
-- [static var stopTrackedRaycasts: ARSession.RunOptions](arsession/runoptions/stoptrackedraycasts.md)
+- [static var stopTrackedRaycasts: ARSession.RunOptions](./runoptions/stoptrackedraycasts.md)
   An option to stop all active tracked raycasts.
-- [static var resetSceneReconstruction: ARSession.RunOptions](arsession/runoptions/resetscenereconstruction.md)
+- [static var resetSceneReconstruction: ARSession.RunOptions](./runoptions/resetscenereconstruction.md)
   An option to reset the scene mesh.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func run(ARConfiguration, options: ARSession.RunOptions)](arsession/run(_:options:).md)
+### Configuring and running a session
+- [func run(ARConfiguration, options: ARSession.RunOptions)](./run%28_,options%29.md)
   Starts AR processing for the session with the specified configuration and options.
-- [var identifier: UUID](arsession/identifier.md)
+- [var identifier: UUID](./identifier.md)
   A unique identifier of the running session.
-- [var configuration: ARConfiguration?](arsession/configuration.md)
+- [var configuration: ARConfiguration?](./configuration.md)
   An object that defines motion and scene tracking behaviors for the session.
-- [func pause()](arsession/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses processing in the session.
 
 

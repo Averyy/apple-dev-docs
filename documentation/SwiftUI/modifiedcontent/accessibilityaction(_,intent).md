@@ -1,7 +1,8 @@
 # accessibilityAction(_:intent:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an accessibility action representing `actionKind` to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action. When the action is performed, the `intent` will be invoked.
 
@@ -20,6 +21,8 @@ Adds an accessibility action representing `actionKind` to the view. Actions allo
 nonisolated
 func accessibilityAction<I>(_ actionKind: AccessibilityActionKind = .default, intent: I) -> ModifiedContent<Content, Modifier> where I : AppIntent
 ```
+
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
 
 
 ---

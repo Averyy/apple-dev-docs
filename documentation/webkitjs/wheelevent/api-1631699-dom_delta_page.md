@@ -9,14 +9,15 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned long DOM_DELTA_PAGE;
 ```
 
 ## See Also
 
-- [DOM_DELTA_LINE](wheelevent/1633362-dom_delta_line.md)
-- [DOM_DELTA_PIXEL](wheelevent/1633750-dom_delta_pixel.md)
+### Miscellaneous
+- [DOM_DELTA_LINE](./api-1633362-dom_delta_line.md)
+- [DOM_DELTA_PIXEL](./api-1633750-dom_delta_pixel.md)
 
 
 ---

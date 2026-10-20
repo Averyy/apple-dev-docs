@@ -1,7 +1,8 @@
 # CNContactJobTitleKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The contact’s job title.
 
@@ -19,17 +20,22 @@ The contact’s job title.
 let CNContactJobTitleKey: String
 ```
 
+```c
+extern NSString * const CNContactJobTitleKey;
+```
+
 #### Discussion
 
 This key takes a string value.
 
 ## See Also
 
-- [let CNContactDepartmentNameKey: String](cncontactdepartmentnamekey.md)
+### Work
+- [let CNContactDepartmentNameKey: String](./cncontactdepartmentnamekey.md)
   The contact’s department name.
-- [let CNContactOrganizationNameKey: String](cncontactorganizationnamekey.md)
+- [let CNContactOrganizationNameKey: String](./cncontactorganizationnamekey.md)
   The contact’s organization name.
-- [let CNContactPhoneticOrganizationNameKey: String](cncontactphoneticorganizationnamekey.md)
+- [let CNContactPhoneticOrganizationNameKey: String](./cncontactphoneticorganizationnamekey.md)
   The phonetic spelling of the contact’s organization name.
 
 

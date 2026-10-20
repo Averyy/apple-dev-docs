@@ -1,7 +1,8 @@
 # separateSecondaryViewController(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a split view controller transitions to a regular-width size class.
 
@@ -9,7 +10,7 @@ Called when a split view controller transitions to a regular-width size class.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,17 @@ Called when a split view controller transitions to a regular-width size class.
 func separateSecondaryViewController(for splitViewController: UISplitViewController) -> UIViewController?
 ```
 
+```objc
+- (UIViewController *) separateSecondaryViewControllerForSplitViewController:(UISplitViewController *) splitViewController;
+```
+
 #### Return Value
 
 The designated secondary view controller for the split view controller.
 
 #### Discussion
 
-This method provides default behavior when you do not overwrite the [`splitViewController(_:separateSecondaryFrom:)`](uisplitviewcontrollerdelegate/splitviewcontroller(_:separatesecondaryfrom:).md) method. The previous secondary view controller is returned.
+This method provides default behavior when you do not overwrite the [`splitViewController(_:separateSecondaryFrom:)`](../uisplitviewcontrollerdelegate/splitviewcontroller%28_,separatesecondaryfrom%29.md) method. The previous secondary view controller is returned.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ This method provides default behavior when you do not overwrite the [`splitViewC
 
 ## See Also
 
-- [func collapseSecondaryViewController(UIViewController, for: UISplitViewController)](uiviewcontroller/collapsesecondaryviewcontroller(_:for:).md)
+### Adapting to environment changes
+- [func collapseSecondaryViewController(UIViewController, for: UISplitViewController)](./collapsesecondaryviewcontroller%28_,for%29.md)
   Called when a split view controller transitions to a compact-width size class.
 
 

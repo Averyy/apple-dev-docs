@@ -1,7 +1,8 @@
 # sec_protocol_challenge_t
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 typealias sec_protocol_challenge_t = (sec_protocol_metadata_t, @escaping sec_protocol_challenge_complete_t) -> Void
+```
+
+```c
+typedef void (^)(NSObject<OS_sec_protocol_metadata> *, void (^)(NSObject<OS_sec_identity> *)) sec_protocol_challenge_t;
 ```
 
 #### Discussion

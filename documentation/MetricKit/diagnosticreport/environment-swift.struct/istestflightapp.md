@@ -1,7 +1,8 @@
 # isTestFlightApp
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the app is registered with TestFlight.
 
@@ -20,7 +21,8 @@ let isTestFlightApp: Bool
 
 ## See Also
 
-- [let applicationVersion: String](diagnosticreport/environment-swift.struct/applicationversion.md)
+### App information
+- [let applicationVersion: String](./applicationversion.md)
   The value of the bundle version key, short form, in the app’s property list.
 
 

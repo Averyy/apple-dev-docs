@@ -1,17 +1,22 @@
 # NSUserInterfaceLayoutDirection.rightToLeft
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Layout direction is right to left.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case rightToLeft
+```
+
+```c
+NSUserInterfaceLayoutDirectionRightToLeft
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ This is appropriate when running with localizations such as Arabic or Hebrew tha
 
 ## See Also
 
-- [NSUserInterfaceLayoutDirection.leftToRight](nsuserinterfacelayoutdirection/lefttoright.md)
+### Constants
+- [NSUserInterfaceLayoutDirection.leftToRight](./lefttoright.md)
   Layout direction is left to right.
 
 

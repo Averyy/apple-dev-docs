@@ -1,7 +1,8 @@
 # Visibility.hidden
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The element may be hidden.
 
@@ -22,13 +23,14 @@ case hidden
 
 #### Discussion
 
-Some APIs may use this value to represent a hint or preference, rather than a mandatory assertion. For example, setting confirmation dialog title visibility to `hidden` using the [`confirmationDialog(_:isPresented:titleVisibility:actions:)`](view/confirmationdialog(_:ispresented:titlevisibility:actions:).md) modifier may not always hide the dialog title, which is required on some platforms.
+Some APIs may use this value to represent a hint or preference, rather than a mandatory assertion. For example, setting confirmation dialog title visibility to `hidden` using the [`confirmationDialog(_:isPresented:titleVisibility:actions:)`](../view/confirmationdialog%28_,ispresented,titlevisibility,actions%29.md) modifier may not always hide the dialog title, which is required on some platforms.
 
 ## See Also
 
-- [Visibility.automatic](visibility/automatic.md)
+### Getting visibility options
+- [Visibility.automatic](./automatic.md)
   The element may be visible or hidden depending on the policies of the component accepting the visibility configuration.
-- [Visibility.visible](visibility/visible.md)
+- [Visibility.visible](./visible.md)
   The element may be visible.
 
 

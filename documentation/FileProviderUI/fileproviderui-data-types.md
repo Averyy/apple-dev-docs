@@ -1,11 +1,12 @@
 # FileProviderUI Data Types
 
-**Framework**: File Provider UI
+**Framework**: File Provider UI  
+**Role**: API Collection
 
 ## Topics
 
 ### Data Types
-- [struct FPUIActionIdentifier](fpuiactionidentifier.md)
+- [struct FPUIActionIdentifier](./fpuiactionidentifier.md)
 
 
 ---

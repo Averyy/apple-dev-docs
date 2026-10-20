@@ -1,7 +1,8 @@
 # predictedStartTime
 
 **Framework**: WirelessInsights  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start time of the predicted event.
 
@@ -21,9 +22,10 @@ The resolution of the time isn’t exact and is limited for privacy.
 
 ## See Also
 
-- [let predictedInterval: TimeInterval](serviceprediction/predictedinterval.md)
+### Accessing prediction timing
+- [let predictedInterval: TimeInterval](./predictedinterval.md)
   The expected duration of the predicted event.
-- [ServicePrediction.QuantizedInterval](serviceprediction/quantizedinterval.md)
+- [ServicePrediction.QuantizedInterval](./quantizedinterval.md)
   A type that provides discrete time intervals to express the expected duration of a predicted event.
 
 

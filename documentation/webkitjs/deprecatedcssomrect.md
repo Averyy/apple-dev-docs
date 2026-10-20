@@ -1,7 +1,8 @@
 # DeprecatedCSSOMRect
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface DeprecatedCSSOMRect
 ```
 
 ## Topics
 
 ### Instance Properties
-- [bottom](deprecatedcssomrect/2871307-bottom.md)
-- [left](deprecatedcssomrect/2871104-left.md)
-- [right](deprecatedcssomrect/2871305-right.md)
-- [top](deprecatedcssomrect/2871473-top.md)
+- [bottom](./deprecatedcssomrect/api-2871307-bottom.md)
+- [left](./deprecatedcssomrect/api-2871104-left.md)
+- [right](./deprecatedcssomrect/api-2871305-right.md)
+- [top](./deprecatedcssomrect/api-2871473-top.md)
 
 
 ---

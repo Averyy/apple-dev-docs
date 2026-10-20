@@ -1,7 +1,8 @@
 # VZEFISignatureDatabaseConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for Unified Extensible Firmware Interface (UEFI) Secure Boot signature lists.
 
@@ -12,6 +13,10 @@ A container for Unified Extensible Firmware Interface (UEFI) Secure Boot signatu
 
 ```swift
 class VZEFISignatureDatabaseConfiguration
+```
+
+```objc
+@interface VZEFISignatureDatabaseConfiguration : NSObject
 ```
 
 #### Overview
@@ -25,40 +30,42 @@ This class represents the signature lists used in UEFI Secure Boot configuration
 ## Topics
 
 ### Initializers
-- [init(keyExchangeKeys: [VZEFISignatureList], dbSignatures: [VZEFISignatureList], dbxSignatures: [VZEFISignatureList])](vzefisignaturedatabaseconfiguration/init(keyexchangekeys:dbsignatures:dbxsignatures:).md)
+- [init(keyExchangeKeys: [VZEFISignatureList], dbSignatures: [VZEFISignatureList], dbxSignatures: [VZEFISignatureList])](./vzefisignaturedatabaseconfiguration/init%28keyexchangekeys,dbsignatures,dbxsignatures%29.md)
   Creates a signature lists container from signature list objects.
 ### Instance Properties
-- [var dbSignatures: [VZEFISignatureList]](vzefisignaturedatabaseconfiguration/dbsignatures.md)
+- [var dbSignatures: [VZEFISignatureList]](./vzefisignaturedatabaseconfiguration/dbsignatures.md)
   Allowed signature database (db) entries.
-- [var dbxSignatures: [VZEFISignatureList]](vzefisignaturedatabaseconfiguration/dbxsignatures.md)
+- [var dbxSignatures: [VZEFISignatureList]](./vzefisignaturedatabaseconfiguration/dbxsignatures.md)
   Forbidden signature database (dbx) entries.
-- [var keyExchangeKeys: [VZEFISignatureList]](vzefisignaturedatabaseconfiguration/keyexchangekeys.md)
+- [var keyExchangeKeys: [VZEFISignatureList]](./vzefisignaturedatabaseconfiguration/keyexchangekeys.md)
   Key Exchange Key (KEK) database entries.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class VZEFISignatureList](vzefisignaturelist.md)
+### Related Documentation
+- [class VZEFISignatureList](./vzefisignaturelist.md)
   A class that represents a Unified Extensible Firmware Interface (UEFI) signature list.
-- [class VZEFIVariableStore](vzefivariablestore.md)
+- [class VZEFIVariableStore](./vzefivariablestore.md)
   An object that represents the Extensible Firmware Interface (EFI) variable store that contains NVRAM variables the EFI exposes.
-- [class VZEFISignatureList](vzefisignaturelist.md)
+### Working with secure boot configurations
+- [class VZEFISignatureList](./vzefisignaturelist.md)
   A class that represents a Unified Extensible Firmware Interface (UEFI) signature list.
-- [enum VZEFISignature](vzefisignature-swift.enum.md)
+- [enum VZEFISignature](./vzefisignature-swift.enum.md)
 
 
 ---

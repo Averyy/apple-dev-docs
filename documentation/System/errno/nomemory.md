@@ -1,7 +1,8 @@
 # noMemory
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Can’t allocate memory.
 
@@ -22,7 +23,7 @@ static var noMemory: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,9 +33,10 @@ The corresponding C error is `ENOMEM`.
 
 ## See Also
 
-- [static var deadlock: Errno](errno/deadlock.md)
+### Runtime Errors
+- [static var deadlock: Errno](./deadlock.md)
   Resource deadlock avoided.
-- [static var wouldBlock: Errno](errno/wouldblock.md)
+- [static var wouldBlock: Errno](./wouldblock.md)
   Operation would block.
 
 

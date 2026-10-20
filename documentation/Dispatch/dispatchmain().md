@@ -1,7 +1,8 @@
 # dispatchMain()
 
 **Framework**: Dispatch  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Executes blocks submitted to the main queue.
 
@@ -10,7 +11,7 @@ Executes blocks submitted to the main queue.
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
 - macOS 10.6+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Executes blocks submitted to the main queue.
 func dispatchMain() -> Never
 ```
 
+```c
+extern void dispatch_main();
+```
+
 #### Discussion
 
-This function “parks” the main thread and waits for blocks to be submitted to the main queue. Applications that call [`UIApplicationMain(_:_:_:_:)`](https://developer.apple.com/documentation/uikit/uiapplicationmain(_:_:_:_:)-1yub7) (iOS), [`NSApplicationMain(_:_:)`](https://developer.apple.com/documentation/appkit/nsapplicationmain(_:_:)) (macOS), or [`CFRunLoopRun()`](https://developer.apple.com/documentation/corefoundation/cfrunlooprun()) on the main thread must not call [`dispatchMain()`](dispatchmain().md).
+This function “parks” the main thread and waits for blocks to be submitted to the main queue. Applications that call [`UIApplicationMain(_:_:_:_:)`](../UIKit/uiapplicationmain%28_,_,_,_%29-1yub7.md) (iOS), [`NSApplicationMain(_:_:)`](../AppKit/nsapplicationmain%28_,_%29.md) (macOS), or [`CFRunLoopRun()`](../CoreFoundation/cfrunlooprun%28%29.md) on the main thread must not call [`dispatchMain()`](./dispatchmain%28%29.md).
 
 This function never returns.
 

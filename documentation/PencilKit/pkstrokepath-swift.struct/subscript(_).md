@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: PencilKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Access the stroke point at the provided index.
 

@@ -1,7 +1,8 @@
 # MediaIntelligenceError.faceGroupProcessing
 
 **Framework**: Media Intelligence  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework can’t complete a face grouping operation.
 
@@ -21,15 +22,16 @@ case faceGroupProcessing
 
 #### Discussion
 
-This error occurs when the framework fails to detect faces, insert or delete face data, or update face cluster assignments. If this error occurs during [`insertOrUpdateAssets(_:)`](facegroupanalyzer/insertorupdateassets(_:).md) or [`deleteAssets(_:)`](facegroupanalyzer/deleteassets(_:).md), the framework automatically rolls back any partial changes.
+This error occurs when the framework fails to detect faces, insert or delete face data, or update face cluster assignments. If this error occurs during [`insertOrUpdateAssets(_:)`](../facegroupanalyzer/insertorupdateassets%28_%29.md) or [`deleteAssets(_:)`](../facegroupanalyzer/deleteassets%28_%29.md), the framework automatically rolls back any partial changes.
 
 ## See Also
 
-- [MediaIntelligenceError.mediaProcessing](mediaintelligenceerror/mediaprocessing.md)
+### Errors
+- [MediaIntelligenceError.mediaProcessing](./mediaprocessing.md)
   The framework can’t process a media asset.
-- [MediaIntelligenceError.resultFetching](mediaintelligenceerror/resultfetching.md)
+- [MediaIntelligenceError.resultFetching](./resultfetching.md)
   The framework can’t retrieve analysis results.
-- [MediaIntelligenceError.workingDirectory](mediaintelligenceerror/workingdirectory.md)
+- [MediaIntelligenceError.workingDirectory](./workingdirectory.md)
   The framework can’t access the working directory.
 
 

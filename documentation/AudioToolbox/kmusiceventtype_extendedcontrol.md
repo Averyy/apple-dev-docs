@@ -1,15 +1,20 @@
 # kMusicEventType_ExtendedControl
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var kMusicEventType_ExtendedControl: Int { get }
+```
+
+```c
+kMusicEventType_ExtendedControl
 ```
 
 

@@ -1,7 +1,8 @@
 # init(data:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a parser with the XML contents encapsulated in a given data object.
 
@@ -20,6 +21,10 @@ Initializes a parser with the XML contents encapsulated in a given data object.
 init(data: Data)
 ```
 
+```objc
+- (instancetype) initWithData:(NSData *) data;
+```
+
 #### Return Value
 
 An initialized `NSXMLParser` object or `nil` if an error occurs.
@@ -30,13 +35,14 @@ This method is the designated initializer.
 
 ## Parameters
 
-- `data`: An [`NSData`](nsdata.md) object containing XML markup.
+- `data`: An [`NSData`](../nsdata.md) object containing XML markup.
 
 ## See Also
 
-- [convenience init?(contentsOf: URL)](xmlparser/init(contentsof:).md)
+### Initializing a Parser Object
+- [convenience init?(contentsOf: URL)](./init%28contentsof%29.md)
   Initializes a parser with the XML content referenced by the given URL.
-- [convenience init(stream: InputStream)](xmlparser/init(stream:).md)
+- [convenience init(stream: InputStream)](./init%28stream%29.md)
   Initializes a parser with the XML contents from the specified stream and parses it.
 
 

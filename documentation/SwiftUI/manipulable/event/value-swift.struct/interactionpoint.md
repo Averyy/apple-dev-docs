@@ -1,7 +1,8 @@
 # interactionPoint
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The point at which a person interacted with a view to begin manipulating it.
 

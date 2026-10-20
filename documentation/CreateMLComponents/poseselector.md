@@ -1,7 +1,8 @@
 # PoseSelector
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transformer that selects one pose from an array of poses.
 
@@ -22,52 +23,53 @@ struct PoseSelector
 ## Topics
 
 ### Creating a selector
-- [init()](poseselector/init.md)
+- [init()](./poseselector/init%28%29.md)
   Creates a pose selector.
-- [init(strategy: PoseSelectionStrategy)](poseselector/init(strategy:).md)
+- [init(strategy: PoseSelectionStrategy)](./poseselector/init%28strategy%29.md)
   Creates a pose selector.
-- [init(strategy: PoseSelectionStrategy, confidenceThreshold: Float)](poseselector/init(strategy:confidencethreshold:).md)
+- [init(strategy: PoseSelectionStrategy, confidenceThreshold: Float)](./poseselector/init%28strategy,confidencethreshold%29.md)
   Creates a pose selector.
 ### Getting the properties
-- [var confidenceThreshold: Float](poseselector/confidencethreshold.md)
+- [var confidenceThreshold: Float](./poseselector/confidencethreshold.md)
   A threshold confidence between 0 to 1 for the joints to be considered valid in pose selection. The default value is 0.2.
-- [var strategy: PoseSelectionStrategy](poseselector/strategy.md)
+- [var strategy: PoseSelectionStrategy](./poseselector/strategy.md)
   Pose selection strategy.
 ### Performing the transformation
-- [func applied(to: [Pose], eventHandler: EventHandler?) -> Pose](poseselector/applied(to:eventhandler:).md)
+- [func applied(to: [Pose], eventHandler: EventHandler?) -> Pose](./poseselector/applied%28to,eventhandler%29.md)
   Select a pose if multiple poses are detected on the same frame.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transformer](transformer.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Transformer](./transformer.md)
 
 ## See Also
 
-- [Counting human body action repetitions in a live video feed](counting-human-body-action-repetitions-in-a-live-video-feed.md)
+### Pose components
+- [Counting human body action repetitions in a live video feed](./counting-human-body-action-repetitions-in-a-live-video-feed.md)
   Use Create ML Components to analyze a series of video frames and count a person’s repetitive or periodic body movements.
-- [struct Pose](pose.md)
+- [struct Pose](./pose.md)
   A pose that contains joint keypoints from a person, a hand, or a combination.
-- [struct JointKey](jointkey.md)
+- [struct JointKey](./jointkey.md)
   A key that uniquely identifies a joint.
-- [struct JointPoint](jointpoint.md)
+- [struct JointPoint](./jointpoint.md)
   A joint in a pose that contains a location and scoring information.
-- [enum PoseSelectionStrategy](poseselectionstrategy.md)
+- [enum PoseSelectionStrategy](./poseselectionstrategy.md)
   Pose selection strategy.
-- [struct JointsSelector](jointsselector.md)
+- [struct JointsSelector](./jointsselector.md)
   Joints selector from a pose.
-- [struct HumanBodyPoseExtractor](humanbodyposeextractor.md)
+- [struct HumanBodyPoseExtractor](./humanbodyposeextractor.md)
   The human body pose image feature extractor.
-- [struct HumanHandPoseExtractor](humanhandposeextractor.md)
+- [struct HumanHandPoseExtractor](./humanhandposeextractor.md)
   The human hand pose image feature extractor.
-- [struct HumanBodyActionCounter](humanbodyactioncounter.md)
+- [struct HumanBodyActionCounter](./humanbodyactioncounter.md)
   A human body action repetition counting transformer that takes window of human body poses and produces cumulative human body action repetition counts.
-- [struct HumanBodyActionPeriodPredictor](humanbodyactionperiodpredictor.md)
+- [struct HumanBodyActionPeriodPredictor](./humanbodyactionperiodpredictor.md)
   A human body action period predictor transformer that takes window of poses and produces a window of predictions.
 
 

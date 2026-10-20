@@ -1,7 +1,8 @@
 # init(authenticationChallenge:sender:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an authentication challenge from an existing challenge instance.
 
@@ -20,24 +21,29 @@ Creates an authentication challenge from an existing challenge instance.
 init(authenticationChallenge challenge: URLAuthenticationChallenge, sender: any URLAuthenticationChallengeSender)
 ```
 
+```objc
+- (instancetype) initWithAuthenticationChallenge:(NSURLAuthenticationChallenge *) challenge sender:(id<NSURLAuthenticationChallengeSender>) sender;
+```
+
 #### Return Value
 
 A new authentication challenge object, based on an existing challenge.
 
 #### Discussion
 
-Most apps don’t create [`URLAuthenticationChallenge`](urlauthenticationchallenge.md) instances themselves. Instead, they handle received challenges in the [`urlSession(_:task:didReceive:completionHandler:)`](urlsessiontaskdelegate/urlsession(_:task:didreceive:completionhandler:).md) method of [`URLSessionTaskDelegate`](urlsessiontaskdelegate.md).
+Most apps don’t create [`URLAuthenticationChallenge`](../urlauthenticationchallenge.md) instances themselves. Instead, they handle received challenges in the [`urlSession(_:task:didReceive:completionHandler:)`](../urlsessiontaskdelegate/urlsession%28_,task,didreceive,completionhandler%29.md) method of [`URLSessionTaskDelegate`](../urlsessiontaskdelegate.md).
 
-However, you might need to create authentication challenge objects when adding support for custom networking protocols, as part of a custom [`URLProtocol`](urlprotocol.md) subclass. When you subclass an existing [`URLProtocol`](urlprotocol.md) subclass, this initializer lets you modify challenges issued by the existing class so that your subclass receives any responses to those challenges.
+However, you might need to create authentication challenge objects when adding support for custom networking protocols, as part of a custom [`URLProtocol`](../urlprotocol.md) subclass. When you subclass an existing [`URLProtocol`](../urlprotocol.md) subclass, this initializer lets you modify challenges issued by the existing class so that your subclass receives any responses to those challenges.
 
 ## Parameters
 
-- `challenge`: The challenge that you want to copy. Usually, this is a challenge received by an existing [`URLProtocol`](urlprotocol.md) subclass that you are subclassing.
-- `sender`: The sender that you want to use for the new object. Typically, the sender is the instance of your custom [`URLProtocol`](urlprotocol.md) subclass that called this method.
+- `challenge`: The challenge that you want to copy. Usually, this is a challenge received by an existing [`URLProtocol`](../urlprotocol.md) subclass that you are subclassing.
+- `sender`: The sender that you want to use for the new object. Typically, the sender is the instance of your custom [`URLProtocol`](../urlprotocol.md) subclass that called this method.
 
 ## See Also
 
-- [init(protectionSpace: URLProtectionSpace, proposedCredential: URLCredential?, previousFailureCount: Int, failureResponse: URLResponse?, error: (any Error)?, sender: any URLAuthenticationChallengeSender)](urlauthenticationchallenge/init(protectionspace:proposedcredential:previousfailurecount:failureresponse:error:sender:).md)
+### Creating an authentication challenge instance
+- [init(protectionSpace: URLProtectionSpace, proposedCredential: URLCredential?, previousFailureCount: Int, failureResponse: URLResponse?, error: (any Error)?, sender: any URLAuthenticationChallengeSender)](./init%28protectionspace,proposedcredential,previousfailurecount,failureresponse,error,sender%29.md)
   Initializes an authentication challenge from parameters you provide.
 
 

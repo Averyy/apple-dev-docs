@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Music Understanding  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the ranged value into the given encoder.
 

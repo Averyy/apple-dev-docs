@@ -1,16 +1,17 @@
 # UITextAutocorrectionType
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The autocorrection behavior of a text-based view.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,47 +19,52 @@ The autocorrection behavior of a text-based view.
 enum UITextAutocorrectionType
 ```
 
+```c
+enum UITextAutocorrectionType : NSInteger;
+```
+
 #### Overview
 
-Use these constants with the [`autocorrectionType`](uitextinputtraits/autocorrectiontype.md) property. If the script system doesn’t support inline autocorrection, the keyboard input method ignores these constants.
+Use these constants with the [`autocorrectionType`](./uitextinputtraits/autocorrectiontype.md) property. If the script system doesn’t support inline autocorrection, the keyboard input method ignores these constants.
 
 ## Topics
 
 ### Constants
-- [UITextAutocorrectionType.default](uitextautocorrectiontype/default.md)
+- [UITextAutocorrectionType.default](./uitextautocorrectiontype/default.md)
   Specifies an appropriate autocorrection behavior for the current script system.
-- [UITextAutocorrectionType.no](uitextautocorrectiontype/no.md)
+- [UITextAutocorrectionType.no](./uitextautocorrectiontype/no.md)
   Disables autocorrection behavior.
-- [UITextAutocorrectionType.yes](uitextautocorrectiontype/yes.md)
+- [UITextAutocorrectionType.yes](./uitextautocorrectiontype/yes.md)
   Enables autocorrection behavior.
 ### Initializers
-- [init?(rawValue: Int)](uitextautocorrectiontype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uitextautocorrectiontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var autocapitalizationType: UITextAutocapitalizationType](uitextinputtraits/autocapitalizationtype.md)
+### Managing spelling and autocorrection
+- [var autocapitalizationType: UITextAutocapitalizationType](./uitextinputtraits/autocapitalizationtype.md)
   The autocapitalization style for the text object.
-- [enum UITextAutocapitalizationType](uitextautocapitalizationtype.md)
+- [enum UITextAutocapitalizationType](./uitextautocapitalizationtype.md)
   The autocapitalization behavior of a text-based view.
-- [var autocorrectionType: UITextAutocorrectionType](uitextinputtraits/autocorrectiontype.md)
+- [var autocorrectionType: UITextAutocorrectionType](./uitextinputtraits/autocorrectiontype.md)
   The autocorrection style for the text object.
-- [var spellCheckingType: UITextSpellCheckingType](uitextinputtraits/spellcheckingtype.md)
+- [var spellCheckingType: UITextSpellCheckingType](./uitextinputtraits/spellcheckingtype.md)
   The spell-checking style for the text object.
-- [enum UITextSpellCheckingType](uitextspellcheckingtype.md)
+- [enum UITextSpellCheckingType](./uitextspellcheckingtype.md)
   The spell-checking behavior of a text-based view.
-- [var inlinePredictionType: UITextInlinePredictionType](uitextinputtraits/inlinepredictiontype.md)
+- [var inlinePredictionType: UITextInlinePredictionType](./uitextinputtraits/inlinepredictiontype.md)
   The behavior of inline text predictions for a text-entry area.
-- [enum UITextInlinePredictionType](uitextinlinepredictiontype.md)
+- [enum UITextInlinePredictionType](./uitextinlinepredictiontype.md)
   Constants that identify the behavior of inline text predictions for a text-entry area.
 
 

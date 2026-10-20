@@ -1,14 +1,15 @@
 # kHIDUsage_Button_159
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Button_159 = 0x9f
 ```
 

@@ -1,7 +1,8 @@
 # locationThreshold
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 locationThreshold is the maximum distance in meters from the centerPoint used to determine if a destination is valid.
 
@@ -14,6 +15,10 @@ locationThreshold is the maximum distance in meters from the centerPoint used to
 
 ```swift
 var locationThreshold: Measurement<UnitLength>? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSMeasurement<NSUnitLength *> * locationThreshold;
 ```
 
 

@@ -1,7 +1,8 @@
 # retain
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Retains the OSObject instance
 
@@ -11,7 +12,7 @@ Retains the OSObject instance
 
 ## Declaration
 
-```swift
+```cpp
 virtual void retain(void);
 ```
 
@@ -21,12 +22,13 @@ Increases the retain count of the instance by one.
 
 ## See Also
 
-- [- init](osobject/3180945-init.md)
-- [- release](osobject/3180946-release.md)
+### Managing the Object Lifecycle
+- [- init](./api-3180945-init.md)
+- [- release](./api-3180946-release.md)
   Releases the OSObject instance
-- [- free](osobject/3180944-free.md)
-- [OSObjectPtr](../driverkit/osobjectptr.md)
-- [OSObjectRef](../driverkit/osobjectref.md)
+- [- free](./api-3180944-free.md)
+- [OSObjectPtr](../../DriverKit/osobjectptr.md)
+- [OSObjectRef](../../DriverKit/osobjectref.md)
 
 
 ---

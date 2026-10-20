@@ -1,7 +1,8 @@
 # distanceSquared(toPoint:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates the distance from a point to the bounding box.
 
@@ -11,7 +12,7 @@ Calculates the distance from a point to the bounding box.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

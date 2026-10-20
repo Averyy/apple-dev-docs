@@ -1,7 +1,8 @@
 # PHASEDistanceModelFadeOutParameters
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A distance over which the framework fades out sound.
 
@@ -19,9 +20,13 @@ A distance over which the framework fades out sound.
 class PHASEDistanceModelFadeOutParameters
 ```
 
+```objc
+@interface PHASEDistanceModelFadeOutParameters : NSObject
+```
+
 #### Overview
 
-For spatial sound output, the framework stops playing a sound when its distance from the listener surpases [`cullDistance`](phasedistancemodelfadeoutparameters/culldistance.md). The framework gradually fades out the sound’s volume as the distance between the source and listener approaches [`cullDistance`](phasedistancemodelfadeoutparameters/culldistance.md). Likewise, the framework gradually fades in the sound as the distance between the source and listener approaches `0`. A [`PHASEDistanceModelParameters`](phasedistancemodelparameters.md) object provides an instance of this class to a spatial mixer; for more information, see [`fadeOutParameters`](phasedistancemodelparameters/fadeoutparameters.md).
+For spatial sound output, the framework stops playing a sound when its distance from the listener surpases [`cullDistance`](./phasedistancemodelfadeoutparameters/culldistance.md). The framework gradually fades out the sound’s volume as the distance between the source and listener approaches [`cullDistance`](./phasedistancemodelfadeoutparameters/culldistance.md). Likewise, the framework gradually fades in the sound as the distance between the source and listener approaches `0`. A [`PHASEDistanceModelParameters`](./phasedistancemodelparameters.md) object provides an instance of this class to a spatial mixer; for more information, see [`fadeOutParameters`](./phasedistancemodelparameters/fadeoutparameters.md).
 
 ##### Specifying a Maximum Distance That Sound Reaches
 
@@ -51,31 +56,32 @@ spatialMixer.distanceModelParameters = piecewiseModel;
 ## Topics
 
 ### Creating the Distance Model Fade-Out Parameters
-- [init(cullDistance: Double)](phasedistancemodelfadeoutparameters/init(culldistance:).md)
+- [init(cullDistance: Double)](./phasedistancemodelfadeoutparameters/init%28culldistance%29.md)
   Creates a distance beyond which sound sources stop playing.
 ### Inspecting the Cull Distance
-- [var cullDistance: Double](phasedistancemodelfadeoutparameters/culldistance.md)
+- [var cullDistance: Double](./phasedistancemodelfadeoutparameters/culldistance.md)
   The distance beyond which the framework doesn’t process the sound.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASEGeometricSpreadingDistanceModelParameters](phasegeometricspreadingdistancemodelparameters.md)
+### Distance Modeling
+- [class PHASEGeometricSpreadingDistanceModelParameters](./phasegeometricspreadingdistancemodelparameters.md)
   An object that dissipates sound frequencies over distance.
-- [class PHASEEnvelopeDistanceModelParameters](phaseenvelopedistancemodelparameters.md)
+- [class PHASEEnvelopeDistanceModelParameters](./phaseenvelopedistancemodelparameters.md)
   A graph of points and curves that shapes the volume of a sound over distance.
-- [class PHASEDistanceModelParameters](phasedistancemodelparameters.md)
+- [class PHASEDistanceModelParameters](./phasedistancemodelparameters.md)
   A base class for a sound’s rate of change over distance.
 
 

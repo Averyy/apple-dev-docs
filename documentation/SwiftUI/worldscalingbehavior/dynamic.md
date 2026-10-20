@@ -1,7 +1,8 @@
 # dynamic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The window will scale up as it moves further away, maintaining the same angular size.
 
@@ -18,7 +19,7 @@ static var dynamic: WorldScalingBehavior { get }
 
 Prefer dynamic window scaling for windows that display dense UI or a lot of text. Using dynamic scaling ensures that controls and text remain at a comfortable size regardless of the window’s position.
 
-For further information, see [`Spatial layout`](https://developer.apple.com/design/human-interface-guidelines/spatial-layout) in the Human Interface Guidelines.
+For further information, see [Spatial layout](https://developer.apple.com/design/human-interface-guidelines/spatial-layout) in the Human Interface Guidelines.
 
 
 ---

@@ -1,7 +1,8 @@
 # XCUIAccessibilityAuditType
 
 **Framework**: XCUIAutomation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -19,38 +20,43 @@
 struct XCUIAccessibilityAuditType
 ```
 
+```c
+enum XCUIAccessibilityAuditType : uint64_t;
+```
+
 ## Topics
 
 ### Accessibility audit type creation
-- [init(rawValue: UInt64)](xcuiaccessibilityaudittype/init(rawvalue:).md)
+- [init(rawValue: UInt64)](./xcuiaccessibilityaudittype/init%28rawvalue%29.md)
 ### Accessibility audit types
-- [static var action: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/action.md)
-- [static var all: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/all.md)
-- [static var contrast: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/contrast.md)
-- [static var dynamicType: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/dynamictype.md)
-- [static var elementDetection: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/elementdetection.md)
-- [static var hitRegion: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/hitregion.md)
-- [static var parentChild: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/parentchild.md)
-- [static var sufficientElementDescription: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/sufficientelementdescription.md)
-- [static var textClipped: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/textclipped.md)
-- [static var trait: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/trait.md)
+- [static var action: XCUIAccessibilityAuditType](./xcuiaccessibilityaudittype/action.md)
+- [static var all: XCUIAccessibilityAuditType](./xcuiaccessibilityaudittype/all.md)
+- [static var contrast: XCUIAccessibilityAuditType](./xcuiaccessibilityaudittype/contrast.md)
+- [static var dynamicType: XCUIAccessibilityAuditType](./xcuiaccessibilityaudittype/dynamictype.md)
+- [static var elementDetection: XCUIAccessibilityAuditType](./xcuiaccessibilityaudittype/elementdetection.md)
+- [static var hitRegion: XCUIAccessibilityAuditType](./xcuiaccessibilityaudittype/hitregion.md)
+- [static var parentChild: XCUIAccessibilityAuditType](./xcuiaccessibilityaudittype/parentchild.md)
+- [static var sufficientElementDescription: XCUIAccessibilityAuditType](./xcuiaccessibilityaudittype/sufficientelementdescription.md)
+- [static var textClipped: XCUIAccessibilityAuditType](./xcuiaccessibilityaudittype/textclipped.md)
+- [static var trait: XCUIAccessibilityAuditType](./xcuiaccessibilityaudittype/trait.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [func performAccessibilityAudit(for: XCUIAccessibilityAuditType, ((XCUIAccessibilityAuditIssue) throws -> Bool)?) throws](xcuiapplication/performaccessibilityaudit(for:_:).md)
-- [class XCUIAccessibilityAuditIssue](xcuiaccessibilityauditissue.md)
+### Performing an accessibility audit
+- [func performAccessibilityAudit(for: XCUIAccessibilityAuditType, ((XCUIAccessibilityAuditIssue) throws -> Bool)?) throws](./xcuiapplication/performaccessibilityaudit%28for,_%29.md)
+- [class XCUIAccessibilityAuditIssue](./xcuiaccessibilityauditissue.md)
 
 
 ---

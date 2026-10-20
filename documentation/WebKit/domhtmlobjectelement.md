@@ -1,10 +1,11 @@
 # DOMHTMLObjectElement
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -12,62 +13,67 @@
 class DOMHTMLObjectElement
 ```
 
+```objc
+@interface DOMHTMLObjectElement : DOMHTMLElement
+```
+
 ## Topics
 
 ### Instance Properties
-- [var absoluteImageURL: URL!](domhtmlobjectelement/absoluteimageurl.md)
-- [var align: String!](domhtmlobjectelement/align.md)
-- [var archive: String!](domhtmlobjectelement/archive.md)
-- [var border: String!](domhtmlobjectelement/border.md)
-- [var code: String!](domhtmlobjectelement/code.md)
-- [var codeBase: String!](domhtmlobjectelement/codebase.md)
-- [var codeType: String!](domhtmlobjectelement/codetype.md)
-- [var contentDocument: DOMDocument!](domhtmlobjectelement/contentdocument.md)
-- [var contentFrame: WebFrame!](domhtmlobjectelement/contentframe.md)
+- [var absoluteImageURL: URL!](./domhtmlobjectelement/absoluteimageurl.md)
+- [var align: String!](./domhtmlobjectelement/align.md)
+- [var archive: String!](./domhtmlobjectelement/archive.md)
+- [var border: String!](./domhtmlobjectelement/border.md)
+- [var code: String!](./domhtmlobjectelement/code.md)
+- [var codeBase: String!](./domhtmlobjectelement/codebase.md)
+- [var codeType: String!](./domhtmlobjectelement/codetype.md)
+- [var contentDocument: DOMDocument!](./domhtmlobjectelement/contentdocument.md)
+- [var contentFrame: WebFrame!](./domhtmlobjectelement/contentframe.md)
   The content frame of the element.
-- [var data: String!](domhtmlobjectelement/data.md)
-- [var declare: Bool](domhtmlobjectelement/declare.md)
-- [var form: DOMHTMLFormElement!](domhtmlobjectelement/form.md)
-- [var height: String!](domhtmlobjectelement/height.md)
-- [var hspace: Int32](domhtmlobjectelement/hspace.md)
-- [var name: String!](domhtmlobjectelement/name.md)
-- [var standby: String!](domhtmlobjectelement/standby.md)
-- [var type: String!](domhtmlobjectelement/type.md)
-- [var useMap: String!](domhtmlobjectelement/usemap.md)
-- [var vspace: Int32](domhtmlobjectelement/vspace.md)
-- [var width: String!](domhtmlobjectelement/width.md)
+- [var data: String!](./domhtmlobjectelement/data.md)
+- [var declare: Bool](./domhtmlobjectelement/declare.md)
+- [var form: DOMHTMLFormElement!](./domhtmlobjectelement/form.md)
+- [var height: String!](./domhtmlobjectelement/height.md)
+- [var hspace: Int32](./domhtmlobjectelement/hspace.md)
+- [var name: String!](./domhtmlobjectelement/name.md)
+- [var standby: String!](./domhtmlobjectelement/standby.md)
+- [var type: String!](./domhtmlobjectelement/type.md)
+- [var useMap: String!](./domhtmlobjectelement/usemap.md)
+- [var vspace: Int32](./domhtmlobjectelement/vspace.md)
+- [var width: String!](./domhtmlobjectelement/width.md)
 
 ## Relationships
 
 ### Inherits From
-- [DOMHTMLElement](domhtmlelement.md)
+- [DOMHTMLElement](./domhtmlelement.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [DOMEventTarget](domeventtarget.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [DOMEventTarget](./domeventtarget.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class DOMAbstractView](domabstractview.md)
-- [class DOMAttr](domattr.md)
-- [class DOMBlob](domblob.md)
-- [class DOMCDATASection](domcdatasection.md)
-- [class DOMCharacterData](domcharacterdata.md)
-- [class DOMComment](domcomment.md)
-- [class DOMCounter](domcounter.md)
-- [class DOMCSSCharsetRule](domcsscharsetrule.md)
-- [class DOMCSSFontFaceRule](domcssfontfacerule.md)
-- [class DOMCSSImportRule](domcssimportrule.md)
-- [class DOMCSSMediaRule](domcssmediarule.md)
-- [class DOMCSSPageRule](domcsspagerule.md)
-- [class DOMCSSPrimitiveValue](domcssprimitivevalue.md)
-- [class DOMCSSRule](domcssrule.md)
-- [class DOMCSSRuleList](domcssrulelist.md)
+### Document Object Model (DOM) APIs
+- [class DOMAbstractView](./domabstractview.md)
+- [class DOMAttr](./domattr.md)
+- [class DOMBlob](./domblob.md)
+- [class DOMCDATASection](./domcdatasection.md)
+- [class DOMCharacterData](./domcharacterdata.md)
+- [class DOMComment](./domcomment.md)
+- [class DOMCounter](./domcounter.md)
+- [class DOMCSSCharsetRule](./domcsscharsetrule.md)
+- [class DOMCSSFontFaceRule](./domcssfontfacerule.md)
+- [class DOMCSSImportRule](./domcssimportrule.md)
+- [class DOMCSSMediaRule](./domcssmediarule.md)
+- [class DOMCSSPageRule](./domcsspagerule.md)
+- [class DOMCSSPrimitiveValue](./domcssprimitivevalue.md)
+- [class DOMCSSRule](./domcssrule.md)
+- [class DOMCSSRuleList](./domcssrulelist.md)
 
 
 ---

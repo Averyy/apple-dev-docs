@@ -1,7 +1,8 @@
 # CollisionCastHit
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A hit result of a collision cast.
 
@@ -11,7 +12,7 @@ A hit result of a collision cast.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,43 +22,44 @@ struct CollisionCastHit
 
 #### Overview
 
-You get a collection of collision cast hits from either the [`raycast(origin:direction:length:query:mask:relativeTo:)`](scene/raycast(origin:direction:length:query:mask:relativeto:).md) method, or the [`convexCast(convexShape:fromPosition:fromOrientation:toPosition:toOrientation:query:mask:relativeTo:)`](scene/convexcast(convexshape:fromposition:fromorientation:toposition:toorientation:query:mask:relativeto:).md) method. Each hit indicates where the ray or the convex shape, starting at a given point and traveling in a given direction, hit a particular entity in the scene.
+You get a collection of collision cast hits from either the [`raycast(origin:direction:length:query:mask:relativeTo:)`](./scene/raycast%28origin,direction,length,query,mask,relativeto%29.md) method, or the [`convexCast(convexShape:fromPosition:fromOrientation:toPosition:toOrientation:query:mask:relativeTo:)`](./scene/convexcast%28convexshape,fromposition,fromorientation,toposition,toorientation,query,mask,relativeto%29.md) method. Each hit indicates where the ray or the convex shape, starting at a given point and traveling in a given direction, hit a particular entity in the scene.
 
 The frame of reference for the position and normal of the hit depends on the reference entity parameter passed to the method that generated the hit. Pass `nil` as the reference to use world space.
 
 ## Topics
 
 ### Getting the entity
-- [var entity: Entity](collisioncasthit/entity.md)
+- [var entity: Entity](./collisioncasthit/entity.md)
   The entity that was hit.
 ### Characterizing the collision cast hit
-- [var position: SIMD3<Float>](collisioncasthit/position.md)
+- [var position: SIMD3<Float>](./collisioncasthit/position.md)
   The position of the hit.
-- [var normal: SIMD3<Float>](collisioncasthit/normal.md)
+- [var normal: SIMD3<Float>](./collisioncasthit/normal.md)
   The normal of the hit.
-- [var distance: Float](collisioncasthit/distance.md)
+- [var distance: Float](./collisioncasthit/distance.md)
   The distance from the ray origin to the hit, or the convex shape travel distance.
 ### Structures
-- [CollisionCastHit.TriangleHit](collisioncasthit/trianglehit-swift.struct.md)
+- [CollisionCastHit.TriangleHit](./collisioncasthit/trianglehit-swift.struct.md)
   Information returned when ray intersects a triangle mesh.
 ### Instance Properties
-- [var shapeIndex: Int](collisioncasthit/shapeindex.md)
+- [var shapeIndex: Int](./collisioncasthit/shapeindex.md)
   The index of the shape that was hit.
-- [var triangleHit: CollisionCastHit.TriangleHit?](collisioncasthit/trianglehit-swift.property.md)
+- [var triangleHit: CollisionCastHit.TriangleHit?](./collisioncasthit/trianglehit-swift.property.md)
   Information the system provides when a ray touches or intersects a triangle mesh.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [CollisionCastHit.TriangleHit](collisioncasthit/trianglehit-swift.struct.md)
+### Ray casting
+- [CollisionCastHit.TriangleHit](./collisioncasthit/trianglehit-swift.struct.md)
   Information returned when ray intersects a triangle mesh.
-- [enum CollisionCastQueryType](collisioncastquerytype.md)
+- [enum CollisionCastQueryType](./collisioncastquerytype.md)
   The kinds of ray and convex shape cast queries that you can make.
-- [struct PixelCastHit](pixelcasthit.md)
+- [struct PixelCastHit](./pixelcasthit.md)
 
 
 ---

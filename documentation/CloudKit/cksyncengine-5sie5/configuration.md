@@ -1,7 +1,8 @@
 # CKSyncEngine.Configuration
 
 **Framework**: CloudKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that configures the attributes and behavior of a sync engine.
 
@@ -11,7 +12,7 @@ A type that configures the attributes and behavior of a sync engine.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,40 +24,41 @@ struct Configuration
 ## Topics
 
 ### Creating configurations
-- [init(database: CKDatabase, stateSerialization: CKSyncEngine.State.Serialization?, delegate: any CKSyncEngineDelegate)](cksyncengine-5sie5/configuration/init(database:stateserialization:delegate:).md)
+- [init(database: CKDatabase, stateSerialization: CKSyncEngine.State.Serialization?, delegate: any CKSyncEngineDelegate)](./configuration/init%28database,stateserialization,delegate%29.md)
   Creates a configuration for the specified database and serialized state.
 ### Handling record changes
-- [var delegate: any CKSyncEngineDelegate](cksyncengine-5sie5/configuration/delegate.md)
+- [var delegate: any CKSyncEngineDelegate](./configuration/delegate.md)
   The object that provides the records to sync and handles any related events.
-- [protocol CKSyncEngineDelegate](cksyncenginedelegate-1q7g8.md)
+- [protocol CKSyncEngineDelegate](../cksyncenginedelegate-1q7g8.md)
   An interface for providing record data to a sync engine and customizing that engine’s behavior.
 ### Managing attributes
-- [var automaticallySync: Bool](cksyncengine-5sie5/configuration/automaticallysync.md)
+- [var automaticallySync: Bool](./configuration/automaticallysync.md)
   A Boolean value that determines whether the engine syncs automatically.
-- [var database: CKDatabase](cksyncengine-5sie5/configuration/database.md)
+- [var database: CKDatabase](./configuration/database.md)
   The associated database.
-- [var subscriptionID: CKSubscription.ID?](cksyncengine-5sie5/configuration/subscriptionid.md)
+- [var subscriptionID: CKSubscription.ID?](./configuration/subscriptionid.md)
   The subscription identifier for the associated database.
-- [var stateSerialization: CKSyncEngine.State.Serialization?](cksyncengine-5sie5/configuration/stateserialization.md)
+- [var stateSerialization: CKSyncEngine.State.Serialization?](./configuration/stateserialization.md)
   The sync engine’s serialized state.
 ### Debugging the configuration
-- [var description: String](cksyncengine-5sie5/configuration/description.md)
+- [var description: String](./configuration/description.md)
   A textual description of the configuration that’s suitable for logging.
 ### Default Implementations
-- [CustomStringConvertible Implementations](cksyncengine-5sie5/configuration/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./configuration/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(CKSyncEngine.Configuration)](cksyncengine-5sie5/init(_:).md)
+### Creating a sync engine
+- [init(CKSyncEngine.Configuration)](./init%28_%29.md)
   Creates a sync engine with the specified configuration.
 
 

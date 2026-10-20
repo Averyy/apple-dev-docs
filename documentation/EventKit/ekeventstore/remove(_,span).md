@@ -1,7 +1,8 @@
 # remove(_:span:)
 
 **Framework**: EventKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an event from the event store.
 
@@ -18,11 +19,15 @@ Removes an event from the event store.
 func remove(_ event: EKEvent, span: EKSpan) throws
 ```
 
+```objc
+- (BOOL) removeEvent:(EKEvent *) event span:(EKSpan) span error:(NSError **) error;
+```
+
 #### Discussion
 
 This method raises an exception if the event belongs to another event store.
 
-> **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. Call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. Call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -31,21 +36,22 @@ This method raises an exception if the event belongs to another event store.
 
 ## See Also
 
-- [func event(withIdentifier: String) -> EKEvent?](ekeventstore/event(withidentifier:).md)
+### Accessing calendar events
+- [func event(withIdentifier: String) -> EKEvent?](./event%28withidentifier%29.md)
   Locates the first occurrence of an event with a given identifier.
-- [func calendarItem(withIdentifier: String) -> EKCalendarItem?](ekeventstore/calendaritem(withidentifier:).md)
+- [func calendarItem(withIdentifier: String) -> EKCalendarItem?](./calendaritem%28withidentifier%29.md)
   Locates a reminder or the first occurrence of an event with the specified identifier.
-- [func calendarItems(withExternalIdentifier: String) -> [EKCalendarItem]](ekeventstore/calendaritems(withexternalidentifier:).md)
+- [func calendarItems(withExternalIdentifier: String) -> [EKCalendarItem]](./calendaritems%28withexternalidentifier%29.md)
   Locates all reminders or the first occurrences of all events with the specified external identifier.
-- [func remove(EKEvent, span: EKSpan, commit: Bool) throws](ekeventstore/remove(_:span:commit:).md)
+- [func remove(EKEvent, span: EKSpan, commit: Bool) throws](./remove%28_,span,commit%29.md)
   Removes an event or recurring events from the event store by either committing or batching the changes.
-- [func remove(EKReminder, commit: Bool) throws](ekeventstore/remove(_:commit:).md)
+- [func remove(EKReminder, commit: Bool) throws](./remove%28_,commit%29.md)
   Removes a reminder from the event store by either committing or batching the changes.
-- [func save(EKEvent, span: EKSpan) throws](ekeventstore/save(_:span:).md)
+- [func save(EKEvent, span: EKSpan) throws](./save%28_,span%29.md)
   Saves changes to an event permanently.
-- [func save(EKEvent, span: EKSpan, commit: Bool) throws](ekeventstore/save(_:span:commit:).md)
+- [func save(EKEvent, span: EKSpan, commit: Bool) throws](./save%28_,span,commit%29.md)
   Saves an event or recurring events to the event store by either committing or batching the changes.
-- [func save(EKReminder, commit: Bool) throws](ekeventstore/save(_:commit:).md)
+- [func save(EKReminder, commit: Bool) throws](./save%28_,commit%29.md)
   Saves changes to a reminder by either committing or batching the changes.
 
 

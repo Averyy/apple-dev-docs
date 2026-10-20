@@ -1,7 +1,8 @@
 # layoutFrame
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout guide’s frame in its owning view’s coordinate system.
 
@@ -18,17 +19,23 @@ The layout guide’s frame in its owning view’s coordinate system.
 var layoutFrame: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect layoutFrame;
+```
+
 #### Discussion
 
-The layout guide defines a rectangular space in its owning view’s coordinate system. This property contains a valid [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) value by the time its owning view’s [`layoutSubviews()`](uiview/layoutsubviews().md) method is called.
+The layout guide defines a rectangular space in its owning view’s coordinate system. This property contains a valid [`CGRect`](../../CoreFoundation/cgrect.md) value by the time its owning view’s [`layoutSubviews()`](../uiview/layoutsubviews%28%29.md) method is called.
 
 ## See Also
 
-- [func layoutSubviews()](uiview/layoutsubviews.md)
+### Related Documentation
+- [func layoutSubviews()](../uiview/layoutsubviews%28%29.md)
   Lays out subviews.
-- [var identifier: String](uilayoutguide/identifier.md)
+### Working with layout guides
+- [var identifier: String](./identifier.md)
   A string used to identify the layout guide.
-- [var owningView: UIView?](uilayoutguide/owningview.md)
+- [var owningView: UIView?](./owningview.md)
   The view that owns this layout guide.
 
 

@@ -1,7 +1,8 @@
 # JSStringGetLength(_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the number of Unicode characters in a JavaScript string.
 
@@ -19,21 +20,26 @@ Returns the number of Unicode characters in a JavaScript string.
 func JSStringGetLength(_ string: JSStringRef!) -> Int
 ```
 
+```c
+size_t JSStringGetLength(JSStringRef string);
+```
+
 #### Return Value
 
 The number of Unicode characters in `string`.
 
 ## Parameters
 
-- `string`: The [`JSStringRef`](jsstringref.md) with the length (in Unicode characters) you want to know.
+- `string`: The [`JSStringRef`](./jsstringref.md) with the length (in Unicode characters) you want to know.
 
 ## See Also
 
-- [func JSStringGetCharactersPtr(JSStringRef!) -> UnsafePointer<JSChar>!](jsstringgetcharactersptr(_:).md)
+### Accessing JavaScript String Information
+- [func JSStringGetCharactersPtr(JSStringRef!) -> UnsafePointer<JSChar>!](./jsstringgetcharactersptr%28_%29.md)
   Returns a pointer to the Unicode character buffer that serves as the backing store for a JavaScript string.
-- [func JSStringGetMaximumUTF8CStringSize(JSStringRef!) -> Int](jsstringgetmaximumutf8cstringsize(_:).md)
+- [func JSStringGetMaximumUTF8CStringSize(JSStringRef!) -> Int](./jsstringgetmaximumutf8cstringsize%28_%29.md)
   Returns the maximum number of bytes a JavaScript string uses when you convert it into a null-terminated UTF-8 string.
-- [func JSStringGetUTF8CString(JSStringRef!, UnsafeMutablePointer<CChar>!, Int) -> Int](jsstringgetutf8cstring(_:_:_:).md)
+- [func JSStringGetUTF8CString(JSStringRef!, UnsafeMutablePointer<CChar>!, Int) -> Int](./jsstringgetutf8cstring%28_,_,_%29.md)
   Converts a JavaScript string into a null-terminated UTF-8 string, and copies the result into an external byte buffer.
 
 

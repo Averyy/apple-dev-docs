@@ -1,7 +1,8 @@
 # matchPath
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file system path of the app that matches the rule.
 
@@ -18,15 +19,20 @@ The file system path of the app that matches the rule.
 var matchPath: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * matchPath;
+```
+
 ## See Also
 
-- [var matchSigningIdentifier: String](neapprule/matchsigningidentifier.md)
+### Accessing app rule properties
+- [var matchSigningIdentifier: String](./matchsigningidentifier.md)
   The signing identifier of the app that matches the rule.
-- [var matchDesignatedRequirement: String](neapprule/matchdesignatedrequirement.md)
+- [var matchDesignatedRequirement: String](./matchdesignatedrequirement.md)
   The designated requirement of the app that matches the rule.
-- [var matchDomains: [Any]?](neapprule/matchdomains.md)
+- [var matchDomains: [Any]?](./matchdomains.md)
   The hostname domains that match the rule.
-- [var matchTools: [NEAppRule]?](neapprule/matchtools.md)
+- [var matchTools: [NEAppRule]?](./matchtools.md)
   An array of app rule objects that restrict the rule so it only matches network traffic generated from helper processes.
 
 

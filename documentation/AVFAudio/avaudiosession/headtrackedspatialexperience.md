@@ -1,7 +1,8 @@
 # AVAudioSession.HeadTrackedSpatialExperience
 
 **Framework**: AVFAudio  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An experience where the sound a size dictated by its sound stage and location dictated by its anchoring strategy.
 
@@ -17,29 +18,30 @@ struct HeadTrackedSpatialExperience
 ## Topics
 
 ### Inspecting the experience
-- [var anchoringStrategy: AVAudioSession.AnchoringStrategy](avaudiosession/headtrackedspatialexperience/anchoringstrategy.md)
-- [var soundStageSize: AVAudioSession.SoundStageSize](avaudiosession/headtrackedspatialexperience/soundstagesize.md)
+- [var anchoringStrategy: AVAudioSession.AnchoringStrategy](./headtrackedspatialexperience/anchoringstrategy.md)
+- [var soundStageSize: AVAudioSession.SoundStageSize](./headtrackedspatialexperience/soundstagesize.md)
 
 ## Relationships
 
 ### Conforms To
-- [AVAudioSessionSpatialExperience](avaudiosessionspatialexperience-swift.protocol.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AVAudioSessionSpatialExperience](../avaudiosessionspatialexperience-swift.protocol.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func fixed(soundStageSize: AVAudioSession.SoundStageSize) -> Self](avaudiosessionspatialexperience-swift.protocol/fixed(soundstagesize:).md)
-- [AVAudioSession.FixedSpatialExperience](avaudiosession/fixedspatialexperience.md)
+### Choosing an experience
+- [static func fixed(soundStageSize: AVAudioSession.SoundStageSize) -> Self](../avaudiosessionspatialexperience-swift.protocol/fixed%28soundstagesize%29.md)
+- [AVAudioSession.FixedSpatialExperience](./fixedspatialexperience.md)
   An experience where the sound has a size dictated by its sound stage and is head-locked relative to the user.
-- [static func headTracked(soundStageSize: AVAudioSession.SoundStageSize, anchoringStrategy: AVAudioSession.AnchoringStrategy) -> Self](avaudiosessionspatialexperience-swift.protocol/headtracked(soundstagesize:anchoringstrategy:).md)
-- [static var bypassed: AVAudioSession.BypassedSpatialExperience](avaudiosessionspatialexperience-swift.protocol/bypassed.md)
-- [AVAudioSession.BypassedSpatialExperience](avaudiosession/bypassedspatialexperience.md)
+- [static func headTracked(soundStageSize: AVAudioSession.SoundStageSize, anchoringStrategy: AVAudioSession.AnchoringStrategy) -> Self](../avaudiosessionspatialexperience-swift.protocol/headtracked%28soundstagesize,anchoringstrategy%29.md)
+- [static var bypassed: AVAudioSession.BypassedSpatialExperience](../avaudiosessionspatialexperience-swift.protocol/bypassed.md)
+- [AVAudioSession.BypassedSpatialExperience](./bypassedspatialexperience.md)
   An experience that bypasses system-provided audio spatialization.
-- [AVAudioSession.SoundStageSize](avaudiosession/soundstagesize.md)
+- [AVAudioSession.SoundStageSize](./soundstagesize.md)
   Constants that specify the perceived size of sounds the audio session plays.
-- [AVAudioSession.AnchoringStrategy](avaudiosession/anchoringstrategy.md)
+- [AVAudioSession.AnchoringStrategy](./anchoringstrategy.md)
   Constants that specify how to set the origin of audio in a head-tracked spatial experience.
 
 

@@ -1,10 +1,11 @@
 # kOBEXTransportEventTypeDataReceived
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kOBEXTransportEventTypeDataReceived: OBEXTransportEventTypes { get }
 ```
 
+```c
+kOBEXTransportEventTypeDataReceived
+```
+
 ## See Also
 
-- [var kOBEXTransportEventTypeStatus: OBEXTransportEventTypes](kobextransporteventtypestatus.md)
+### Constants
+- [var kOBEXTransportEventTypeStatus: OBEXTransportEventTypes](./kobextransporteventtypestatus.md)
 
 
 ---

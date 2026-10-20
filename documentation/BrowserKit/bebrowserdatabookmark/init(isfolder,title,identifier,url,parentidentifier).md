@@ -1,7 +1,8 @@
 # init(isFolder:title:identifier:url:parentIdentifier:)
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a bookmark.
 
@@ -13,6 +14,10 @@ Creates a bookmark.
 
 ```swift
 init(isFolder: Bool, title: String, identifier: String, url: URL?, parentIdentifier: String?)
+```
+
+```objc
+- (instancetype) initAsFolder:(BOOL) isFolder title:(NSString *) title identifier:(NSString *) identifier url:(NSURL *) url parentIdentifier:(NSString *) parentIdentifier;
 ```
 
 ## Parameters

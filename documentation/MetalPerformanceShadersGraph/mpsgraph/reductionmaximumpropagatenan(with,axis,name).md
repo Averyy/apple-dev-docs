@@ -1,7 +1,8 @@
 # reductionMaximumPropagateNaN(with:axis:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a reduction max propagate NaN operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a reduction max propagate NaN operation and returns the result tensor.
 
 ```swift
 func reductionMaximumPropagateNaN(with tensor: MPSGraphTensor, axis: Int, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) reductionMaximumPropagateNaNWithTensor:(MPSGraphTensor *) tensor axis:(NSInteger) axis name:(NSString *) name;
 ```
 
 #### Return Value

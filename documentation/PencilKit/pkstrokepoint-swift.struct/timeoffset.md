@@ -1,7 +1,8 @@
 # timeOffset
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time offset since the start of the stroke path in seconds.
 
@@ -20,11 +21,12 @@ var timeOffset: TimeInterval { get }
 
 ## Mentions
 
-- [Importing Bézier path data into PencilKit](importing-external-drawing-data-into-pencilkit.md)
+- [Importing Bézier path data into PencilKit](../importing-external-drawing-data-into-pencilkit.md)
 
 ## See Also
 
-- [var location: CGPoint](pkstrokepoint-swift.struct/location.md)
+### Getting the point’s location
+- [var location: CGPoint](./location.md)
   The location of this point.
 
 

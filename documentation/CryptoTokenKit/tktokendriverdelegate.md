@@ -1,7 +1,8 @@
 # TKTokenDriverDelegate
 
 **Framework**: CryptoTokenKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface that a token driver delegate implements to respond to token creation events.
 
@@ -20,28 +21,33 @@ The interface that a token driver delegate implements to respond to token creati
 protocol TKTokenDriverDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol TKTokenDriverDelegate <NSObject>
+```
+
 ## Topics
 
 ### Creating and Removing Tokens
-- [func tokenDriver(TKTokenDriver, terminateToken: TKToken)](tktokendriverdelegate/tokendriver(_:terminatetoken:).md)
+- [func tokenDriver(TKTokenDriver, terminateToken: TKToken)](./tktokendriverdelegate/tokendriver%28_,terminatetoken%29.md)
   Tells the delegate to terminate the token you specify.
-- [func tokenDriver(TKTokenDriver, tokenFor: TKToken.Configuration) throws -> TKToken](tktokendriverdelegate/tokendriver(_:tokenfor:).md)
+- [func tokenDriver(TKTokenDriver, tokenFor: TKToken.Configuration) throws -> TKToken](./tktokendriverdelegate/tokendriver%28_,tokenfor%29.md)
   Creates a new token for the configuration you specify.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [TKSmartCardTokenDriverDelegate](tksmartcardtokendriverdelegate.md)
+- [TKSmartCardTokenDriverDelegate](./tksmartcardtokendriverdelegate.md)
 
 ## See Also
 
-- [var delegate: (any TKTokenDriverDelegate)?](tktokendriver/delegate.md)
+### Responding to Token Creation
+- [var delegate: (any TKTokenDriverDelegate)?](./tktokendriver/delegate.md)
   The token driver delegate.
-- [TKTokenDriver.ClassID](tktokendriver/classid.md)
+- [TKTokenDriver.ClassID](./tktokendriver/classid.md)
   The type of the class identifier for the token driver.
-- [TKTokenDriver.Configuration](tktokendriver/configuration.md)
+- [TKTokenDriver.Configuration](./tktokendriver/configuration.md)
   A configuration for one class of token.
 
 

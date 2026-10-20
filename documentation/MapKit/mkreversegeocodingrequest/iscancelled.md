@@ -1,7 +1,8 @@
 # isCancelled
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the current reverse geocoding request is in a cancelled state.
 
@@ -20,11 +21,16 @@ A Boolean value that indicates whether the current reverse geocoding request is 
 var isCancelled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isCancelled) BOOL cancelled;
+```
+
 ## See Also
 
-- [var isLoading: Bool](mkreversegeocodingrequest/isloading.md)
+### Getting the reverse geocoder’s state
+- [var isLoading: Bool](./isloading.md)
   A Boolean value that indicates whether the current reverse geocoding request is in a loading state.
-- [var location: CLLocation](mkreversegeocodingrequest/location.md)
+- [var location: CLLocation](./location.md)
   The location provided to the initializer.
 
 

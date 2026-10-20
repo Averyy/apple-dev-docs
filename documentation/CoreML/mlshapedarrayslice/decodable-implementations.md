@@ -1,11 +1,12 @@
 # Decodable Implementations
 
-**Framework**: Core ML
+**Framework**: Core ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](mlshapedarrayslice/init(from:).md)
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates an array slice from the passed decoder.
 
 

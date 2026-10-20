@@ -1,7 +1,8 @@
 # kSecACLAuthorizationKeychainItemDelete
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Delete an item from a keychain.
 
@@ -12,6 +13,10 @@ Delete an item from a keychain.
 
 ```swift
 let kSecACLAuthorizationKeychainItemDelete: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationKeychainItemDelete;
 ```
 
 

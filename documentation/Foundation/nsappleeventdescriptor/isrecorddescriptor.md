@@ -1,7 +1,8 @@
 # isRecordDescriptor
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether or not the receiver is a record-like descriptor.
 
@@ -12,6 +13,10 @@ Returns whether or not the receiver is a record-like descriptor.
 
 ```swift
 var isRecordDescriptor: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL isRecordDescriptor;
 ```
 
 #### Discussion

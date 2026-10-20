@@ -1,7 +1,8 @@
 # size
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The requested size of the snapshot image.
 
@@ -18,11 +19,16 @@ The requested size of the snapshot image.
 var size: CGSize { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGSize size;
+```
+
 ## See Also
 
-- [var pointOfInterestFilter: MKPointOfInterestFilter?](mklookaroundsnapshotter/options/pointofinterestfilter.md)
+### Customizing Snaphot Appearance
+- [var pointOfInterestFilter: MKPointOfInterestFilter?](./pointofinterestfilter.md)
   A filter to use to customize what map features are visible in the snapshot.
-- [var traitCollection: UITraitCollection](mklookaroundsnapshotter/options/traitcollection.md)
+- [var traitCollection: UITraitCollection](./traitcollection.md)
   A collection of traits that describes orientation and other characteristics of the snapshot.
 
 

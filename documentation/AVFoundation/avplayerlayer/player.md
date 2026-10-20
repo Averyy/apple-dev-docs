@@ -1,7 +1,8 @@
 # player
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The player whose visual content the layer displays.
 
@@ -17,6 +18,10 @@ The player whose visual content the layer displays.
 
 ```swift
 var player: AVPlayer? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) AVPlayer * player;
 ```
 
 

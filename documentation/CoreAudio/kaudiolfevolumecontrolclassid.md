@@ -1,11 +1,12 @@
 # kAudioLFEVolumeControlClassID
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,10 +14,15 @@
 var kAudioLFEVolumeControlClassID: AudioClassID { get }
 ```
 
+```c
+kAudioLFEVolumeControlClassID
+```
+
 ## See Also
 
-- [var kAudioLevelControlClassID: AudioClassID](kaudiolevelcontrolclassid.md)
-- [var kAudioVolumeControlClassID: AudioClassID](kaudiovolumecontrolclassid.md)
+### Constants
+- [var kAudioLevelControlClassID: AudioClassID](./kaudiolevelcontrolclassid.md)
+- [var kAudioVolumeControlClassID: AudioClassID](./kaudiovolumecontrolclassid.md)
 
 
 ---

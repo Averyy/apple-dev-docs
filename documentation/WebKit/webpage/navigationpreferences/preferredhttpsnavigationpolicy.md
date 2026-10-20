@@ -1,7 +1,8 @@
 # preferredHTTPSNavigationPolicy
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Used when performing a top-level navigation to a webpage.
 

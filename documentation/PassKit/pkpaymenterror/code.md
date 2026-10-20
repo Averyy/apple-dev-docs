@@ -1,7 +1,8 @@
 # PKPaymentError.Code
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An error code that you provide to indicate problems with address or contact information on an Apple Pay sheet.
 
@@ -19,19 +20,23 @@ An error code that you provide to indicate problems with address or contact info
 enum Code
 ```
 
+```c
+enum PKPaymentErrorCode : NSInteger;
+```
+
 #### Overview
 
-The user must resolve any errors that you report on the Apple Pay sheet before they’re able to authorize the transaction.  You return any errors in [`PKPaymentAuthorizationResult`](pkpaymentauthorizationresult.md) or [`PKPaymentRequestShippingContactUpdate`](pkpaymentrequestshippingcontactupdate.md).
+The user must resolve any errors that you report on the Apple Pay sheet before they’re able to authorize the transaction.  You return any errors in [`PKPaymentAuthorizationResult`](../pkpaymentauthorizationresult.md) or [`PKPaymentRequestShippingContactUpdate`](../pkpaymentrequestshippingcontactupdate.md).
 
-You can build your own payment error ([`NSError`](https://developer.apple.com/documentation/foundation/nserror)), or use one of the following convenience methods from [`PKPaymentRequest`](pkpaymentrequest.md) to build it for you.
+You can build your own payment error ([`NSError`](../../Foundation/nserror.md)), or use one of the following convenience methods from [`PKPaymentRequest`](../pkpaymentrequest.md) to build it for you.
 
-For an error with contact information: [`paymentContactInvalidError(withContactField:localizedDescription:)`](pkpaymentrequest/paymentcontactinvaliderror(withcontactfield:localizeddescription:).md).
+For an error with contact information: [`paymentContactInvalidError(withContactField:localizedDescription:)`](../pkpaymentrequest/paymentcontactinvaliderror%28withcontactfield,localizeddescription%29.md).
 
-For a shipping address that is unserviceable: [`paymentShippingAddressUnserviceableError(withLocalizedDescription:)`](pkpaymentrequest/paymentshippingaddressunserviceableerror(withlocalizeddescription:).md).
+For a shipping address that is unserviceable: [`paymentShippingAddressUnserviceableError(withLocalizedDescription:)`](../pkpaymentrequest/paymentshippingaddressunserviceableerror%28withlocalizeddescription%29.md).
 
-For an error with the billing address: [`paymentBillingAddressInvalidError(withKey:localizedDescription:)`](pkpaymentrequest/paymentbillingaddressinvaliderror(withkey:localizeddescription:).md).
+For an error with the billing address: [`paymentBillingAddressInvalidError(withKey:localizedDescription:)`](../pkpaymentrequest/paymentbillingaddressinvaliderror%28withkey,localizeddescription%29.md).
 
-For an error with the shipping address: [`paymentShippingAddressInvalidError(withKey:localizedDescription:)`](pkpaymentrequest/paymentshippingaddressinvaliderror(withkey:localizeddescription:).md).
+For an error with the shipping address: [`paymentShippingAddressInvalidError(withKey:localizedDescription:)`](../pkpaymentrequest/paymentshippingaddressinvaliderror%28withkey,localizeddescription%29.md).
 
 The following code example shows:
 
@@ -63,46 +68,47 @@ NSError *billingAddressInvalidStreet = [PKPaymentRequest
 ## Topics
 
 ### Error codes
-- [PKPaymentError.Code.couponCodeExpiredError](pkpaymenterror/code/couponcodeexpirederror.md)
+- [PKPaymentError.Code.couponCodeExpiredError](./code/couponcodeexpirederror.md)
   The error code that indicates an expired coupon.
-- [PKPaymentError.Code.couponCodeInvalidError](pkpaymenterror/code/couponcodeinvaliderror.md)
+- [PKPaymentError.Code.couponCodeInvalidError](./code/couponcodeinvaliderror.md)
   The error code that indicates an invalid coupon.
-- [PKPaymentError.Code.billingContactInvalidError](pkpaymenterror/code/billingcontactinvaliderror.md)
+- [PKPaymentError.Code.billingContactInvalidError](./code/billingcontactinvaliderror.md)
   The error code that indicates an invalid billing address or billing name.
-- [PKPaymentError.Code.shippingContactInvalidError](pkpaymenterror/code/shippingcontactinvaliderror.md)
+- [PKPaymentError.Code.shippingContactInvalidError](./code/shippingcontactinvaliderror.md)
   The error code that indicates an invalid shipping address, email, phone, or name.
-- [PKPaymentError.Code.shippingAddressUnserviceableError](pkpaymenterror/code/shippingaddressunserviceableerror.md)
+- [PKPaymentError.Code.shippingAddressUnserviceableError](./code/shippingaddressunserviceableerror.md)
   The error code that indicates an unserviceable shipping address.
-- [PKPaymentError.Code.unknownError](pkpaymenterror/code/unknownerror.md)
+- [PKPaymentError.Code.unknownError](./code/unknownerror.md)
   The error code that indicates an unknown error.
 ### Initializers
-- [init?(rawValue: Int)](pkpaymenterror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PKDisbursementError](pkdisbursementerror.md)
+### Errors
+- [struct PKDisbursementError](../pkdisbursementerror.md)
   A structure that describes errors that can occur while processing the disbursement.
-- [struct PKDisbursementErrorKey](pkdisbursementerrorkey.md)
+- [struct PKDisbursementErrorKey](../pkdisbursementerrorkey.md)
   Values that describe errors that can occur when processing disbursements.
-- [struct PKPaymentError](pkpaymenterror.md)
+- [struct PKPaymentError](../pkpaymenterror.md)
   An error type that you create to indicate problems with address or contact information on an Apple Pay sheet.
-- [struct PKPaymentErrorKey](pkpaymenterrorkey.md)
+- [struct PKPaymentErrorKey](../pkpaymenterrorkey.md)
   Additional details about an error on the Apple Pay sheet.
-- [PKDisbursementError.Code](pkdisbursementerror/code.md)
+- [PKDisbursementError.Code](../pkdisbursementerror/code.md)
   Values that describe errors that can occur while processing the disbursement.
-- [let PKPaymentErrorDomain: String](pkpaymenterrordomain.md)
+- [let PKPaymentErrorDomain: String](../pkpaymenterrordomain.md)
   The error domain for specific errors associated with Apple Pay in-app or web payments.
-- [let PKDisbursementErrorDomain: String](pkdisbursementerrordomain.md)
+- [let PKDisbursementErrorDomain: String](../pkdisbursementerrordomain.md)
   The error domain to use for errors with in-app disbursements.
 
 

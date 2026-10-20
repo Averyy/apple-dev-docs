@@ -1,7 +1,8 @@
 # networkIdentifier
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for a Downlink Time-Difference-of-Arrival network.
 
@@ -14,6 +15,10 @@ A unique identifier for a Downlink Time-Difference-of-Arrival network.
 
 ```swift
 var networkIdentifier: Int { get set }
+```
+
+```objc
+@property (nonatomic, assign) NSInteger networkIdentifier;
 ```
 
 #### Discussion

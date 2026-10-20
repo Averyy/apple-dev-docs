@@ -1,7 +1,8 @@
 # AuditSorting
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A sort directive in an audit query request, specifying a field to sort by and the direction.
 
@@ -10,13 +11,13 @@ A sort directive in an audit query request, specifying a field to sort by and th
 
 ## Declaration
 
-```swift
+```
 object AuditSorting
 ```
 
 #### Discussion
 
-Include one or more `AuditSorting` entries in the `sorting` array of an [`AuditQuery`](auditquery.md) request to control the order of results. When you omit this array, the API returns results sorted by `eventTime` descending (most recent first).
+Include one or more `AuditSorting` entries in the `sorting` array of an [`AuditQuery`](./auditquery.md) request to control the order of results. When you omit this array, the API returns results sorted by `eventTime` descending (most recent first).
 
 ```json
 "sorting": [
@@ -38,15 +39,15 @@ The API applies multiple sort directives in order. The first directive is the pr
 ## Properties
 
 - `field` (string): The name of the field to sort by. Common values: `eventTime`, `entityType`, `eventType`, `userType`.
-- `order` (AuditSortOrder): The sort direction. See [`AuditSortOrder`](auditsortorder.md). Defaults to `DESC`.
+- `order` (AuditSortOrder): The sort direction. See [`AuditSortOrder`](./auditsortorder.md). Defaults to `DESC`.
 
 ## See Also
 
-- [object AuditQuery](auditquery.md)
+- [object AuditQuery](./auditquery.md)
   Request body for the Query Change History endpoint.
-- [object AuditFilter](auditfilter.md)
+- [object AuditFilter](./auditfilter.md)
   A single filter condition in an audit query request, specifying the field to filter on, the comparison operator, and one or more values to match against.
-- [object Pagination](pagination.md)
+- [object Pagination](./pagination.md)
   Pagination state in change history list responses.
 
 

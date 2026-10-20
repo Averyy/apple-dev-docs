@@ -1,7 +1,8 @@
 # NSUTF8StringEncoding
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An 8-bit representation of Unicode characters, suitable for transmission or storage by ASCII-based systems.
 
@@ -20,20 +21,25 @@ An 8-bit representation of Unicode characters, suitable for transmission or stor
 var NSUTF8StringEncoding: UInt { get }
 ```
 
+```c
+NSUTF8StringEncoding
+```
+
 ## See Also
 
-- [var NSUTF16BigEndianStringEncoding: UInt](nsutf16bigendianstringencoding.md)
+### Unicode Encodings
+- [var NSUTF16BigEndianStringEncoding: UInt](./nsutf16bigendianstringencoding.md)
   `NSUTF16StringEncoding` encoding with explicit endianness specified.
-- [var NSUTF16LittleEndianStringEncoding: UInt](nsutf16littleendianstringencoding.md)
+- [var NSUTF16LittleEndianStringEncoding: UInt](./nsutf16littleendianstringencoding.md)
   `NSUTF16StringEncoding` encoding with explicit endianness specified.
-- [var NSUTF16StringEncoding: UInt](nsutf16stringencoding.md)
-- [var NSUnicodeStringEncoding: UInt](nsunicodestringencoding.md)
+- [var NSUTF16StringEncoding: UInt](./nsutf16stringencoding.md)
+- [var NSUnicodeStringEncoding: UInt](./nsunicodestringencoding.md)
   The canonical Unicode encoding for string objects.
-- [var NSUTF32BigEndianStringEncoding: UInt](nsutf32bigendianstringencoding.md)
+- [var NSUTF32BigEndianStringEncoding: UInt](./nsutf32bigendianstringencoding.md)
   `NSUTF32StringEncoding` encoding with explicit endianness specified.
-- [var NSUTF32LittleEndianStringEncoding: UInt](nsutf32littleendianstringencoding.md)
+- [var NSUTF32LittleEndianStringEncoding: UInt](./nsutf32littleendianstringencoding.md)
   `NSUTF32StringEncoding` encoding with explicit endianness specified.
-- [var NSUTF32StringEncoding: UInt](nsutf32stringencoding.md)
+- [var NSUTF32StringEncoding: UInt](./nsutf32stringencoding.md)
   32-bit UTF encoding.
 
 

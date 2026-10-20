@@ -1,7 +1,8 @@
 # timeSinceAudioStart
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of seconds since the start of the audio stream.
 
@@ -16,19 +17,24 @@ The number of seconds since the start of the audio stream.
 var timeSinceAudioStart: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSTimeInterval timeSinceAudioStart;
+```
+
 #### Discussion
 
 When an audio stream starts, such as a phone call, SensorKit collects samples periodically. Use this field to determine the order of the samples in the audio stream.
 
 ## See Also
 
-- [var sessionIdentifier: String](srspeechmetrics/sessionidentifier.md)
+### Getting session information
+- [var sessionIdentifier: String](./sessionidentifier.md)
   An identifier for the audio session.
-- [var sessionFlags: SRSpeechMetrics.SessionFlags](srspeechmetrics/sessionflags-swift.property.md)
+- [var sessionFlags: SRSpeechMetrics.SessionFlags](./sessionflags-swift.property.md)
   Details about the audio processing.
-- [SRSpeechMetrics.SessionFlags](srspeechmetrics/sessionflags-swift.struct.md)
+- [SRSpeechMetrics.SessionFlags](./sessionflags-swift.struct.md)
   Possible details about processing an audio stream.
-- [var timestamp: Date](srspeechmetrics/timestamp.md)
+- [var timestamp: Date](./timestamp.md)
   The date and time when the speech occurs.
 
 

@@ -1,14 +1,15 @@
 # kAVCSignalModeDVCPro525_60
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kAVCSignalModeDVCPro525_60 = 0x78
 ```
 

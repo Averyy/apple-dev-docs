@@ -1,18 +1,19 @@
 # MIDIUniqueID
 
 **Framework**: Core MIDI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A MIDI object’s unique identifier.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ A MIDI object’s unique identifier.
 typealias MIDIUniqueID = Int32
 ```
 
+```c
+typedef SInt32 MIDIUniqueID;
+```
+
 ## See Also
 
-- [var kMIDIInvalidUniqueID: MIDIUniqueID](kmidiinvaliduniqueid.md)
+### Parameter Types
+- [var kMIDIInvalidUniqueID: MIDIUniqueID](./kmidiinvaliduniqueid.md)
   An invalid identifier.
-- [enum MIDIObjectType](midiobjecttype.md)
+- [enum MIDIObjectType](./midiobjecttype.md)
   The MIDI object types that the system supports.
 
 

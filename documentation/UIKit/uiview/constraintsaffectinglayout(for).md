@@ -1,7 +1,8 @@
 # constraintsAffectingLayout(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the constraints impacting the layout of the view for a given axis.
 
@@ -9,13 +10,17 @@ Returns the constraints impacting the layout of the view for a given axis.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func constraintsAffectingLayout(for axis: NSLayoutConstraint.Axis) -> [NSLayoutConstraint]
+```
+
+```objc
+- (NSArray<__kindof NSLayoutConstraint *> *) constraintsAffectingLayoutForAxis:(UILayoutConstraintAxis) axis;
 ```
 
 #### Return Value
@@ -34,9 +39,10 @@ This method should only be used for debugging constraint-based layout. No applic
 
 ## See Also
 
-- [var hasAmbiguousLayout: Bool](uiview/hasambiguouslayout.md)
+### Debugging Auto Layout
+- [var hasAmbiguousLayout: Bool](./hasambiguouslayout.md)
   A Boolean value that determines whether the constraints impacting the layout of the view incompletely specify the location of the view.
-- [func exerciseAmbiguityInLayout()](uiview/exerciseambiguityinlayout.md)
+- [func exerciseAmbiguityInLayout()](./exerciseambiguityinlayout%28%29.md)
   Randomly changes the frame of a view with an ambiguous layout between the different valid values.
 
 

@@ -1,7 +1,8 @@
 # subscribe
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An action for inviting the user to subscribe to Apple Music.
 

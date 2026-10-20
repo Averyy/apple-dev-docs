@@ -1,7 +1,8 @@
 # init(type:compactDescription:detailedDescription:sourceCodeContext:associatedError:attachments:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an issue for a test failure, with descriptions, source code location, error, and attachments.
 
@@ -9,6 +10,10 @@ Creates an issue for a test failure, with descriptions, source code location, er
 
 ```swift
 init(type: XCTIssueReference.IssueType, compactDescription: String, detailedDescription: String?, sourceCodeContext: XCTSourceCodeContext, associatedError: (any Error)?, attachments: [XCTAttachment])
+```
+
+```objc
+- (instancetype) initWithType:(XCTIssueType) type compactDescription:(NSString *) compactDescription detailedDescription:(NSString *) detailedDescription sourceCodeContext:(XCTSourceCodeContext *) sourceCodeContext associatedError:(NSError *) associatedError attachments:(NSArray<XCTAttachment *> *) attachments;
 ```
 
 ## Parameters
@@ -22,7 +27,8 @@ init(type: XCTIssueReference.IssueType, compactDescription: String, detailedDesc
 
 ## See Also
 
-- [convenience init(type: XCTIssueReference.IssueType, compactDescription: String)](xctissuereference/init(type:compactdescription:).md)
+### Initializers
+- [convenience init(type: XCTIssueReference.IssueType, compactDescription: String)](./init%28type,compactdescription%29.md)
   Creates an issue with a compact description for a test failure.
 
 

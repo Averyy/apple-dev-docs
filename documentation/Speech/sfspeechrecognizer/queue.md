@@ -1,7 +1,8 @@
 # queue
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The queue on which to execute recognition task handlers and delegate methods.
 
@@ -18,15 +19,20 @@ The queue on which to execute recognition task handlers and delegate methods.
 var queue: OperationQueue { get set }
 ```
 
+```objc
+@property (nonatomic, strong) NSOperationQueue * queue;
+```
+
 #### Discussion
 
 The default value of this property is the app’s main queue. Assign a different queue if you want delegate methods and handlers to be executed on a background queue.
 
-The handler you pass to the [`requestAuthorization(_:)`](sfspeechrecognizer/requestauthorization(_:).md) method does not use this queue.
+The handler you pass to the [`requestAuthorization(_:)`](./requestauthorization%28_%29.md) method does not use this queue.
 
 ## See Also
 
-- [var defaultTaskHint: SFSpeechRecognitionTaskHint](sfspeechrecognizer/defaulttaskhint.md)
+### Configuring the speech recognizer
+- [var defaultTaskHint: SFSpeechRecognitionTaskHint](./defaulttaskhint.md)
   A hint that indicates the type of speech recognition being requested.
 
 

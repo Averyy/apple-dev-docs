@@ -1,7 +1,8 @@
 # ScmRepository.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe a Repositories resource.
 
@@ -10,7 +11,7 @@ The attributes that describe a Repositories resource.
 
 ## Declaration
 
-```swift
+```
 object ScmRepository.Attributes
 ```
 
@@ -24,7 +25,8 @@ object ScmRepository.Attributes
 
 ## See Also
 
-- [object ScmRepository.Relationships](scmrepository/relationships-data.dictionary.md)
+### Objects
+- [object ScmRepository.Relationships](./relationships-data.dictionary.md)
   The relationships of the Repositories resource you included in the request and those on which you can operate.
 
 

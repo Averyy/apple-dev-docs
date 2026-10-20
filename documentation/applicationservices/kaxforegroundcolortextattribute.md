@@ -1,7 +1,8 @@
 # kAXForegroundColorTextAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A `CGColorRef` value that describes the foreground color.
 
@@ -12,6 +13,10 @@ A `CGColorRef` value that describes the foreground color.
 
 ```swift
 var kAXForegroundColorTextAttribute: Unmanaged<CFString>
+```
+
+```c
+CFStringRef kAXForegroundColorTextAttribute;
 ```
 
 #### Discussion

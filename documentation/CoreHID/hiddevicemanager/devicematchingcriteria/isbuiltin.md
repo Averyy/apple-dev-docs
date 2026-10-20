@@ -1,7 +1,8 @@
 # isBuiltIn
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device is built-in to the system or external.
 

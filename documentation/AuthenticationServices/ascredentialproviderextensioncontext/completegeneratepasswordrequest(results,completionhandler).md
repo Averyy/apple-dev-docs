@@ -1,7 +1,8 @@
 # completeGeneratePasswordRequest(results:completionHandler:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Return potential passwords for the given request.
 
@@ -14,7 +15,15 @@ Return potential passwords for the given request.
 ## Declaration
 
 ```swift
+func completeGeneratePasswordRequest(results: [ASGeneratedPassword], completionHandler: (@Sendable (Bool) -> Void)? = nil)
+```
+
+```swift
 func completeGeneratePasswordRequest(results: [ASGeneratedPassword]) async -> Bool
+```
+
+```objc
+- (void) completeGeneratePasswordRequestWithResults:(NSArray<ASGeneratedPassword *> *) results completionHandler:(void (^)(BOOL expired)) completionHandler;
 ```
 
 ## Parameters

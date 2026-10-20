@@ -1,7 +1,8 @@
 # CSSM_ATTRIBUTE_KEY_LENGTH_RANGE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_ATTRIBUTE_KEY_LENGTH_RANGE: UInt32 { get }
+```
+
+```c
+CSSM_ATTRIBUTE_KEY_LENGTH_RANGE
 ```
 
 

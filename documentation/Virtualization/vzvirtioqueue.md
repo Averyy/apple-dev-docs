@@ -1,7 +1,8 @@
 # VZVirtioQueue
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A Virtio queue.
 
@@ -14,44 +15,50 @@ A Virtio queue.
 class VZVirtioQueue
 ```
 
+```objc
+@interface VZVirtioQueue : NSObject
+```
+
 #### Overview
 
-A `VZVirtioQueue` represents a virtqueue (Virtio queue) that belongs to a Virtio device. A virtqueue provides a mechanism for bulk data transport on Virtio devices, that facilitate device operations. For more information about how virtqueues work, see the [`Virtio specification`](https://developer.apple.comhttps://docs.oasis-open.org/virtio/virtio/v1.3/csd01/virtio-v1.3-csd01.html).
+A `VZVirtioQueue` represents a virtqueue (Virtio queue) that belongs to a Virtio device. A virtqueue provides a mechanism for bulk data transport on Virtio devices, that facilitate device operations. For more information about how virtqueues work, see the [Virtio specification](https://docs.oasis-open.org/virtio/virtio/v1.3/csd01/virtio-v1.3-csd01.html).
 
-Don’t instantiate `VZVirtioQueue` objects directly. Once you have created and configured a [`VZCustomVirtioDevice`](vzcustomvirtiodevice.md), you can access the Virtio queues belonging to that device through the [`queue(at:)`](vzcustomvirtiodevice/queue(at:).md) method.
+Don’t instantiate `VZVirtioQueue` objects directly. Once you have created and configured a [`VZCustomVirtioDevice`](./vzcustomvirtiodevice.md), you can access the Virtio queues belonging to that device through the [`queue(at:)`](./vzcustomvirtiodevice/queue%28at%29.md) method.
 
-When the device receives a notification from the guest, the framework provides the queue with which the framework associates the notification as an argument when the framework calls [`customVirtioDevice(_:didReceiveNotificationFor:)`](vzcustomvirtiodevicedelegate/customvirtiodevice(_:didreceivenotificationfor:).md).
+When the device receives a notification from the guest, the framework provides the queue with which the framework associates the notification as an argument when the framework calls [`customVirtioDevice(_:didReceiveNotificationFor:)`](./vzcustomvirtiodevicedelegate/customvirtiodevice%28_,didreceivenotificationfor%29.md).
 
 ## Topics
 
 ### Instance Properties
-- [var queueIndex: UInt16](vzvirtioqueue/queueindex.md)
+- [var queueIndex: UInt16](./vzvirtioqueue/queueindex.md)
   The index for this queue.
-- [var queueSize: UInt16](vzvirtioqueue/queuesize.md)
+- [var queueSize: UInt16](./vzvirtioqueue/queuesize.md)
   Size of this queue.
 ### Instance Methods
-- [func nextElement() -> VZVirtioQueueElement?](vzvirtioqueue/nextelement.md)
+- [func nextElement() -> VZVirtioQueueElement?](./vzvirtioqueue/nextelement%28%29.md)
   Gets the next element in this queue, if any.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZCustomVirtioDevice](vzcustomvirtiodevice.md)
+### Related Documentation
+- [class VZCustomVirtioDevice](./vzcustomvirtiodevice.md)
   An interface that represents a custom Virtio device that you provide the implementation for.
-- [class VZVirtioQueueElement](vzvirtioqueueelement.md)
+- [class VZVirtioQueueElement](./vzvirtioqueueelement.md)
   A unit of work on a Virtio queue, also known as a descriptor chain.
-- [class VZVirtioQueueElement](vzvirtioqueueelement.md)
+### Working with VirtQueues
+- [class VZVirtioQueueElement](./vzvirtioqueueelement.md)
   A unit of work on a Virtio queue, also known as a descriptor chain.
 
 

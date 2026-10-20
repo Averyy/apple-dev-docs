@@ -1,7 +1,8 @@
 # init(deviceTypeStruct:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the receiver based on the values in the specified struct.
 
@@ -18,6 +19,10 @@ Initializes the receiver based on the values in the specified struct.
 
 ```swift
 init?(deviceTypeStruct: MTRDescriptorClusterDeviceTypeStruct)
+```
+
+```objc
+- (instancetype) initWithDeviceTypeStruct:(MTRDescriptorClusterDeviceTypeStruct *) deviceTypeStruct;
 ```
 
 

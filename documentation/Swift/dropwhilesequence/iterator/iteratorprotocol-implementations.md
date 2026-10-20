@@ -1,14 +1,15 @@
 # IteratorProtocol Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func next() -> DropWhileSequence<Base>.Iterator.Element?](dropwhilesequence/iterator/next.md)
+- [func next() -> DropWhileSequence<Base>.Iterator.Element?](./next%28%29.md)
   Advances to the next element and returns it, or `nil` if no next element exists.
 ### Type Aliases
-- [DropWhileSequence.Iterator.Element](dropwhilesequence/iterator/element.md)
+- [DropWhileSequence.Iterator.Element](./element.md)
   The type of element traversed by the iterator.
 
 

@@ -1,12 +1,13 @@
 # canMakeTextLarger
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the text can be made larger.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ A Boolean that indicates whether the text can be made larger.
 var canMakeTextLarger: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL canMakeTextLarger;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if able to make the text larger; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if able to make the text larger; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func makeTextLarger(Any?)](webview-swift.class/maketextlarger(_:).md)
+### Changing the Text Size
+- [func makeTextLarger(Any?)](./maketextlarger%28_%29.md)
   Action method that increases the text size by one unit.
-- [var canMakeTextSmaller: Bool](webview-swift.class/canmaketextsmaller.md)
+- [var canMakeTextSmaller: Bool](./canmaketextsmaller.md)
   A Boolean that indicates whether the text can be made smaller.
-- [func makeTextSmaller(Any?)](webview-swift.class/maketextsmaller(_:).md)
+- [func makeTextSmaller(Any?)](./maketextsmaller%28_%29.md)
   Action method that reduces the text size by one unit.
 
 

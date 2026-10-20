@@ -1,7 +1,8 @@
 # originalURL
 
 **Framework**: Link Presentation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The original URL of the metadata request.
 

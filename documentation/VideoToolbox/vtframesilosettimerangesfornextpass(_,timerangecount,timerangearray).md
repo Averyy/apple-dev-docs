@@ -1,7 +1,8 @@
 # VTFrameSiloSetTimeRangesForNextPass(_:timeRangeCount:timeRangeArray:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Begins a new pass of samples to be added to a frame silo object.
 
@@ -17,6 +18,10 @@ Begins a new pass of samples to be added to a frame silo object.
 
 ```swift
 func VTFrameSiloSetTimeRangesForNextPass(_ silo: VTFrameSilo, timeRangeCount: CMItemCount, timeRangeArray: UnsafePointer<CMTimeRange>) -> OSStatus
+```
+
+```c
+extern OSStatus VTFrameSiloSetTimeRangesForNextPass(VTFrameSiloRef silo, CMItemCount timeRangeCount, const CMTimeRange *timeRangeArray);
 ```
 
 #### Return Value
@@ -37,11 +42,12 @@ Previously added sample buffers with decode timestamps within the time ranges ar
 
 ## See Also
 
-- [func VTFrameSiloAddSampleBuffer(VTFrameSilo, sampleBuffer: CMSampleBuffer) -> OSStatus](vtframesiloaddsamplebuffer(_:samplebuffer:).md)
+### Configuring Frame Silos
+- [func VTFrameSiloAddSampleBuffer(VTFrameSilo, sampleBuffer: CMSampleBuffer) -> OSStatus](./vtframesiloaddsamplebuffer%28_,samplebuffer%29.md)
   Adds a sample buffer to a frame silo object.
-- [func VTFrameSiloCallBlockForEachSampleBuffer(VTFrameSilo, in: CMTimeRange, handler: (CMSampleBuffer) -> OSStatus) -> OSStatus](vtframesilocallblockforeachsamplebuffer(_:in:handler:).md)
+- [func VTFrameSiloCallBlockForEachSampleBuffer(VTFrameSilo, in: CMTimeRange, handler: (CMSampleBuffer) -> OSStatus) -> OSStatus](./vtframesilocallblockforeachsamplebuffer%28_,in,handler%29.md)
   Retrieves sample buffers from a frame silo object.
-- [func VTFrameSiloCallFunctionForEachSampleBuffer(VTFrameSilo, in: CMTimeRange, refcon: UnsafeMutableRawPointer?, callback: (UnsafeMutableRawPointer?, CMSampleBuffer) -> OSStatus) -> OSStatus](vtframesilocallfunctionforeachsamplebuffer(_:in:refcon:callback:).md)
+- [func VTFrameSiloCallFunctionForEachSampleBuffer(VTFrameSilo, in: CMTimeRange, refcon: UnsafeMutableRawPointer?, callback: (UnsafeMutableRawPointer?, CMSampleBuffer) -> OSStatus) -> OSStatus](./vtframesilocallfunctionforeachsamplebuffer%28_,in,refcon,callback%29.md)
   Retrieves sample buffers from a frame silo object.
 
 

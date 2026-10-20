@@ -1,14 +1,15 @@
 # nlist
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 int nlist(const char *filename, struct nlist *list);
 ```
 

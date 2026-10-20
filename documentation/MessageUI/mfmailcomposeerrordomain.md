@@ -1,7 +1,8 @@
 # MFMailComposeErrorDomain
 
 **Framework**: Message UI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain used for error objects that are associated with the mail composition interface.
 
@@ -17,16 +18,21 @@ The domain used for error objects that are associated with the mail composition 
 let MFMailComposeErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const MFMailComposeErrorDomain;
+```
+
 #### Discussion
 
-The error domain associated with [`NSError`](https://developer.apple.com/documentation/foundation/nserror) objects.
+The error domain associated with [`NSError`](../Foundation/nserror.md) objects.
 
 ## See Also
 
-- [struct MFMailComposeError](mfmailcomposeerror.md)
+### Responding to errors
+- [struct MFMailComposeError](./mfmailcomposeerror.md)
   Mail composition errors.
-- [MFMailComposeError.Code](mfmailcomposeerror/code.md)
-  Error codes for [`NSError`](https://developer.apple.com/documentation/foundation/nserror) objects that are associated with the mail composition interface.
+- [MFMailComposeError.Code](./mfmailcomposeerror/code.md)
+  Error codes for [`NSError`](../Foundation/nserror.md) objects that are associated with the mail composition interface.
 
 
 ---

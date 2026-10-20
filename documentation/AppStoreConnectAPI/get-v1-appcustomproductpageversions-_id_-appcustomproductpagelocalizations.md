@@ -1,7 +1,8 @@
 # List Custom Product Pages Localizations
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 List all localizations for an app custom product page.
 
@@ -14,7 +15,7 @@ List all localizations for an app custom product page.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/appCustomProductPageVersions/6c0df710-d69a-454f-be7c-f5b014788dee/appCustomProductPageLocalizations
 ```
 
@@ -147,29 +148,61 @@ https://api.appstoreconnect.apple.com/v1/appCustomProductPageVersions/6c0df710-d
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app custom product page version resource ID from the [`List Custom Product Page Versions`](./get-v1-appcustomproductpages-_id_-appcustomproductpageversions.md) response.
+
+### Query Parameters
+
 - `fields[appCustomProductPageLocalizations]` ([string]): Additional fields to include for each app custom product page localization resource returned by the response.
+
+  **Allowed Values**: `locale`, `promotionalText`, `appCustomProductPageVersion`, `appScreenshotSets`, `appPreviewSets`, `searchKeywords`, `placements`
 - `fields[appPreviewSets]` ([string]): Additional fields to include for each app preview set resource returned by the response.
+
+  **Allowed Values**: `previewType`, `appStoreVersionLocalization`, `appCustomProductPageLocalization`, `appStoreVersionExperimentTreatmentLocalization`, `appPreviews`
 - `fields[appScreenshotSets]` ([string]): Additional fields to include for each app screenshot set resource returned by the response.
+
+  **Allowed Values**: `screenshotDisplayType`, `appStoreVersionLocalization`, `appCustomProductPageLocalization`, `appStoreVersionExperimentTreatmentLocalization`, `appScreenshots`
 - `filter[locale]` ([string]): Filter the returned app custom product page localizations by locale.
 - `include` ([string]): The relationship data to include in the response.
+
+  **Allowed Values**: `appCustomProductPageVersion`, `appScreenshotSets`, `appPreviewSets`, `searchKeywords`, `placements`
 - `limit` (integer): The maximum number of app custom product page localization resources to return.
+
+  **Maximum**: `200`
 - `limit[appPreviewSets]` (integer): The maximum number of related app preview sets resources to return.
+
+  **Maximum**: `50`
 - `limit[appScreenshotSets]` (integer): The maximum number of related app screenshot sets resources to return.
+
+  **Maximum**: `50`
 - `fields[appCustomProductPageVersions]` ([string]): Additional fields to include for each app custom product page version resource returned by the response.
-- `fields[appAssetLibraryPlacements]` ([string])
+
+  **Allowed Values**: `version`, `state`, `deepLink`, `appCustomProductPage`, `appCustomProductPageLocalizations`
+- `fields[appAssetLibraryPlacements]` ([string]): **Allowed Values**: `mediaType`, `placementType`, `placementGroup`, `createdDate`, `lastModifiedDate`, `state`, `stateDetails`, `image`, `video`, `appEventLocalization`, `appStoreVersionLocalization`, `appCustomProductPageLocalization`, `appStoreVersionExperimentTreatmentLocalization`
 - `fields[appKeywords]` ([string])
-- `limit[placements]` (integer)
-- `limit[searchKeywords]` (integer)
+- `limit[placements]` (integer): **Maximum**: `50`
+- `limit[searchKeywords]` (integer): **Maximum**: `50`
+
+## Responses
+
+- `200` OK (`AppCustomProductPageLocalizationsResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read Custom Product Page Localization Information](get-v1-appcustomproductpagelocalizations-_id_.md)
+### Managing localizations
+- [Read Custom Product Page Localization Information](./get-v1-appcustomproductpagelocalizations-_id_.md)
   Get information about a specific app custom product page localization.
-- [Create a Custom Product Page Localization](post-v1-appcustomproductpagelocalizations.md)
+- [Create a Custom Product Page Localization](./post-v1-appcustomproductpagelocalizations.md)
   Add a localization for your app custom product page.
-- [Modify Custom Product Page Localization Information](patch-v1-appcustomproductpagelocalizations-_id_.md)
+- [Modify Custom Product Page Localization Information](./patch-v1-appcustomproductpagelocalizations-_id_.md)
   Update the promotional text for an app custom product page localization.
-- [Delete an App Custom Product Page Localization](delete-v1-appcustomproductpagelocalizations-_id_.md)
+- [Delete an App Custom Product Page Localization](./delete-v1-appcustomproductpagelocalizations-_id_.md)
   Delete localized metadata that you configured for a custom product page.
 
 

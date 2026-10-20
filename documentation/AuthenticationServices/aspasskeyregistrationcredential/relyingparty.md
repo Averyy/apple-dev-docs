@@ -1,7 +1,8 @@
 # relyingParty
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The relying party associated with this passkey.
 
@@ -18,13 +19,18 @@ The relying party associated with this passkey.
 var relyingParty: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * relyingParty;
+```
+
 ## See Also
 
-- [var attestationObject: Data](aspasskeyregistrationcredential/attestationobject.md)
+### Accessing credential information
+- [var attestationObject: Data](./attestationobject.md)
   The attestation object for this passkey.
-- [var clientDataHash: Data](aspasskeyregistrationcredential/clientdatahash.md)
+- [var clientDataHash: Data](./clientdatahash.md)
   A hash of the client data for this credential.
-- [var credentialID: Data](aspasskeyregistrationcredential/credentialid.md)
+- [var credentialID: Data](./credentialid.md)
   The identifier for this credential.
 
 

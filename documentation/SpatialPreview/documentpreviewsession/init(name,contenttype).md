@@ -1,13 +1,14 @@
 # init(name:contentType:)
 
 **Framework**: Spatial Preview  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new DocumentPreviewSession with the name and contentType, to be used for all content updates.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

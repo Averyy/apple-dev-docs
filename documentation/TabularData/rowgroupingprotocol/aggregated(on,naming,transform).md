@@ -2,6 +2,7 @@
 
 **Framework**: TabularData  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Generates a data frame by aggregating each group’s contents for each column you select by name.
@@ -34,29 +35,36 @@ The data frame contains two columns that:
 - `naming`: A closure that converts a column name to another name.
 - `transform`: A closure that aggregates a group’s elements in a specific column.
 
+## Default Implementations
+
+### RowGroupingProtocol Implementations
+- [func aggregated<Element, Result>(on: String..., naming: (String) -> String, transform: (DiscontiguousColumnSlice<Element>) throws -> Result?) rethrows -> DataFrame](./aggregated%28on,naming,transform%29-7s4mf.md)
+  Generates a data frame by aggregating each group’s contents for each column you select by name.
+
 ## See Also
 
-- [func counts() -> DataFrame](rowgroupingprotocol/counts.md)
+### Aggregating a Row Grouping
+- [func counts() -> DataFrame](./counts%28%29.md)
   Generates a data frame with two columns, one that has a row for each group key and another for the number of rows in the group.
-- [func counts(order: Order?) -> DataFrame](rowgroupingprotocol/counts(order:).md)
+- [func counts(order: Order?) -> DataFrame](./counts%28order%29.md)
   Generates a data frame, that you choose how to sort, with two columns, one that has a row for each group key and another for the number or rows in the group.
-- [func sums<N>(String, N.Type, order: Order?) -> DataFrame](rowgroupingprotocol/sums(_:_:order:).md)
+- [func sums<N>(String, N.Type, order: Order?) -> DataFrame](./sums%28_,_,order%29.md)
   Generates a data frame that contains the sum of each group’s rows along a column you select by name.
-- [func sums<N>(ColumnID<N>, order: Order?) -> DataFrame](rowgroupingprotocol/sums(_:order:).md)
+- [func sums<N>(ColumnID<N>, order: Order?) -> DataFrame](./sums%28_,order%29.md)
   Generates a data frame that contains the sum of each group’s rows along a column you select by column identifier.
-- [func means<N>(String, N.Type, order: Order?) -> DataFrame](rowgroupingprotocol/means(_:_:order:).md)
+- [func means<N>(String, N.Type, order: Order?) -> DataFrame](./means%28_,_,order%29.md)
   Generates a data frame that contains the average mean of each group’s rows along a column you select by name.
-- [func means<N>(ColumnID<N>, order: Order?) -> DataFrame](rowgroupingprotocol/means(_:order:).md)
+- [func means<N>(ColumnID<N>, order: Order?) -> DataFrame](./means%28_,order%29.md)
   Generates a data frame that contains the average mean of each group’s rows along a column you select by column identifier.
-- [func minimums<N>(String, N.Type, order: Order?) -> DataFrame](rowgroupingprotocol/minimums(_:_:order:).md)
+- [func minimums<N>(String, N.Type, order: Order?) -> DataFrame](./minimums%28_,_,order%29.md)
   Generates a data frame that contains the minimums of each group’s rows along a column you select by name.
-- [func minimums<N>(ColumnID<N>, order: Order?) -> DataFrame](rowgroupingprotocol/minimums(_:order:).md)
+- [func minimums<N>(ColumnID<N>, order: Order?) -> DataFrame](./minimums%28_,order%29.md)
   Generates a data frame that contains the minimums of each group’s rows along a column you select by column identifier.
-- [func maximums<N>(String, N.Type, order: Order?) -> DataFrame](rowgroupingprotocol/maximums(_:_:order:).md)
+- [func maximums<N>(String, N.Type, order: Order?) -> DataFrame](./maximums%28_,_,order%29.md)
   Generates a data frame that contains the maximums of each group’s rows along a column you select by name.
-- [func maximums<N>(ColumnID<N>, order: Order?) -> DataFrame](rowgroupingprotocol/maximums(_:order:).md)
+- [func maximums<N>(ColumnID<N>, order: Order?) -> DataFrame](./maximums%28_,order%29.md)
   Generates a data frame that contains the maximums of each group’s rows along a column you select by column identifier.
-- [func aggregated<Element, Result>(on: ColumnID<Element>, into: String?, transform: (DiscontiguousColumnSlice<Element>) throws -> Result) rethrows -> DataFrame](rowgroupingprotocol/aggregated(on:into:transform:).md)
+- [func aggregated<Element, Result>(on: ColumnID<Element>, into: String?, transform: (DiscontiguousColumnSlice<Element>) throws -> Result) rethrows -> DataFrame](./aggregated%28on,into,transform%29.md)
   Generates a data frame with a column for the group identifier and a column of values from the transform.
 
 

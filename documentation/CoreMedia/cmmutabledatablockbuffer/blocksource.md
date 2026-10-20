@@ -1,7 +1,8 @@
 # CMMutableDataBlockBuffer.BlockSource
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Provides ability to allocate memory for blocks using custom allocator
 
@@ -23,16 +24,16 @@ struct BlockSource
 ## Topics
 
 ### Initializers
-- [init(allocate: (Int) -> UnsafeMutableRawBufferPointer, deallocate: (UnsafeMutableRawBufferPointer) -> Void)](cmmutabledatablockbuffer/blocksource/init(allocate:deallocate:).md)
+- [init(allocate: (Int) -> UnsafeMutableRawBufferPointer, deallocate: (UnsafeMutableRawBufferPointer) -> Void)](./blocksource/init%28allocate,deallocate%29.md)
 ### Instance Properties
-- [var allocate: (Int) -> UnsafeMutableRawBufferPointer](cmmutabledatablockbuffer/blocksource/allocate.md)
-- [var deallocate: (UnsafeMutableRawBufferPointer) -> Void](cmmutabledatablockbuffer/blocksource/deallocate.md)
+- [var allocate: (Int) -> UnsafeMutableRawBufferPointer](./blocksource/allocate.md)
+- [var deallocate: (UnsafeMutableRawBufferPointer) -> Void](./blocksource/deallocate.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

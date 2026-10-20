@@ -1,7 +1,8 @@
 # LabeledContentStyle.Configuration
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The properties of a labeled content instance.
 
@@ -22,9 +23,10 @@ typealias Configuration = LabeledContentStyleConfiguration
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](labeledcontentstyle/makebody(configuration:).md)
+### Creating custom labeled content styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view that represents the body of labeled content.
-- [associatedtype Body : View](labeledcontentstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the appearance and behavior of labeled content.
 
 

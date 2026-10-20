@@ -1,12 +1,13 @@
 # penLowerSide
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mask that matches the button on the lower side of the device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ A mask that matches the button on the lower side of the device.
 static var penLowerSide: NSEvent.ButtonMask { get }
 ```
 
+```c
+NSEventButtonMaskPenLowerSide
+```
+
 ## See Also
 
-- [static var penTip: NSEvent.ButtonMask](nsevent/buttonmask-swift.struct/pentip.md)
+### Getting the Tablet Button Masks
+- [static var penTip: NSEvent.ButtonMask](./pentip.md)
   A mask that matches the pen tip.
-- [static var penUpperSide: NSEvent.ButtonMask](nsevent/buttonmask-swift.struct/penupperside.md)
+- [static var penUpperSide: NSEvent.ButtonMask](./penupperside.md)
   A mask that matches the button on the upper side of the device.
 
 

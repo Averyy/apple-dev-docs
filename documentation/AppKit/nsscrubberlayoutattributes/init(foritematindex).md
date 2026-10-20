@@ -1,7 +1,8 @@
 # init(forItemAtIndex:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.12.2+

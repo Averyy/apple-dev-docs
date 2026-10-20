@@ -1,7 +1,8 @@
 # deviceCallHoldModes
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Return the device’s supported call hold modes.
 
@@ -12,6 +13,10 @@ Return the device’s supported call hold modes.
 
 ```swift
 var deviceCallHoldModes: UInt32 { get }
+```
+
+```objc
+@property (readonly) uint32_t deviceCallHoldModes;
 ```
 
 #### Return Value

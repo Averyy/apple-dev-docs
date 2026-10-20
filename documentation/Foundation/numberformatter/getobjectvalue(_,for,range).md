@@ -1,7 +1,8 @@
 # getObjectValue(_:for:range:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns by reference a cell-content object after creating it from a range of characters in a given string.
 
@@ -20,6 +21,10 @@ Returns by reference a cell-content object after creating it from a range of cha
 func getObjectValue(_ obj: AutoreleasingUnsafeMutablePointer<AnyObject?>?, for string: String, range rangep: UnsafeMutablePointer<NSRange>?) throws
 ```
 
+```objc
+- (BOOL) getObjectValue:(id*) obj forString:(NSString *) string range:(NSRange *) rangep error:(NSError **) error;
+```
+
 #### Discussion
 
 If a string contains any characters other than numerical digits or locale-appropriate group or decimal separators, parsing will fail.
@@ -28,21 +33,24 @@ Any leading or trailing space separator characters in a string are ignored. For 
 
 If there is an error, this method calls `control(_:didFailToFormatString:errorDescription:)` on the delegate.
 
-> **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
-- `obj`: On return, contains an instance of [`NSDecimalNumber`](nsdecimalnumber.md) or [`NSNumber`](nsnumber.md) based on the current value of the [`generatesDecimalNumbers`](numberformatter/generatesdecimalnumbers.md) property. Returns `nil` by reference if conversion failed.
+- `obj`: On return, contains an instance of [`NSDecimalNumber`](../nsdecimalnumber.md) or [`NSNumber`](../nsnumber.md) based on the current value of the [`generatesDecimalNumbers`](./generatesdecimalnumbers.md) property. Returns `nil` by reference if conversion failed.
 - `string`: A string object with the range of characters specified in `rangep` that is used to create `anObject`.
 - `rangep`: A range of characters in `aString`. On return, contains the actual range of characters used to create the object.
 
 ## See Also
 
-- [func number(from: String) -> NSNumber?](numberformatter/number(from:).md)
-  Returns an [`NSNumber`](nsnumber.md) object created by parsing a given string.
-- [func string(from: NSNumber) -> String?](numberformatter/string(from:).md)
+### Converting Between Numbers and Strings
+- [func number(from: String) -> NSNumber?](./number%28from%29.md)
+  Returns an [`NSNumber`](../nsnumber.md) object created by parsing a given string.
+- [func string(from: NSNumber) -> String?](./string%28from%29.md)
   Returns a string containing the formatted value of the provided number object.
-- [class func localizedString(from: NSNumber, number: NumberFormatter.Style) -> String](numberformatter/localizedstring(from:number:).md)
+- [class func localizedString(from: NSNumber, number: NumberFormatter.Style) -> String](./localizedstring%28from,number%29.md)
   Returns a localized number string with the specified style.
 
 

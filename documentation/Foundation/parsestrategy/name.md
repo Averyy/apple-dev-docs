@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A parse strategy for person name components.
 
@@ -20,11 +21,14 @@ A parse strategy for person name components.
 static var name: PersonNameComponents.ParseStrategy { get }
 ```
 
+Available when `Self` is `PersonNameComponents.ParseStrategy`.
+
 ## See Also
 
-- [static func fixed(format: Date.FormatString, timeZone: TimeZone, locale: Locale?) -> Self](parsestrategy/fixed(format:timezone:locale:).md)
+### Commonly-used parsers
+- [static func fixed(format: Date.FormatString, timeZone: TimeZone, locale: Locale?) -> Self](./fixed%28format,timezone,locale%29.md)
   A fixed-format date parse strategy.
-- [static var url: URL.ParseStrategy](parsestrategy/url.md)
+- [static var url: URL.ParseStrategy](./url.md)
   A parse strategy for URLs.
 
 

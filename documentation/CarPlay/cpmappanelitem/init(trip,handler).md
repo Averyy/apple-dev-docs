@@ -1,7 +1,8 @@
 # init(trip:handler:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a map panel item with trip-related details.
 
@@ -14,6 +15,10 @@ Creates a map panel item with trip-related details.
 
 ```swift
 init(trip: CPTrip, handler: ((CPMapPanelItem, @escaping () -> Void) -> Void)? = nil)
+```
+
+```objc
+- (instancetype) initWithTrip:(CPTrip *) trip handler:(void (^)(CPMapPanelItem *item, dispatch_block_t completionBlock)) handler;
 ```
 
 #### Return Value

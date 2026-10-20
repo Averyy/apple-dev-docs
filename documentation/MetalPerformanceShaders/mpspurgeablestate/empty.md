@@ -1,7 +1,8 @@
 # MPSPurgeableState.empty
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The contents of the resource are or will be discarded.
 
@@ -19,19 +20,24 @@ The contents of the resource are or will be discarded.
 case empty
 ```
 
+```c
+MPSPurgeableStateEmpty
+```
+
 #### Overview
 
-The contents of the resource are discarded. This is equivalent to using [`MTLPurgeableState.empty`](https://developer.apple.com/documentation/metal/mtlpurgeablestate/empty).
+The contents of the resource are discarded. This is equivalent to using [`MTLPurgeableState.empty`](../../Metal/mtlpurgeablestate/empty.md).
 
 ## See Also
 
-- [MPSPurgeableState.allocationDeferred](mpspurgeablestate/allocationdeferred.md)
-  The image’s underlying texture hasn’t been allocated yet. Attempts to set another purgeable state using the [`setPurgeableState(_:)`](mpsimage/setpurgeablestate(_:).md) method will be ignored.
-- [MPSPurgeableState.keepCurrent](mpspurgeablestate/keepcurrent.md)
+### Constants
+- [MPSPurgeableState.allocationDeferred](./allocationdeferred.md)
+  The image’s underlying texture hasn’t been allocated yet. Attempts to set another purgeable state using the [`setPurgeableState(_:)`](../mpsimage/setpurgeablestate%28_%29.md) method will be ignored.
+- [MPSPurgeableState.keepCurrent](./keepcurrent.md)
   The current state is queried but doesn’t change.
-- [MPSPurgeableState.nonVolatile](mpspurgeablestate/nonvolatile.md)
+- [MPSPurgeableState.nonVolatile](./nonvolatile.md)
   The contents of the resource aren’t allowed to be discarded.
-- [MPSPurgeableState.volatile](mpspurgeablestate/volatile.md)
+- [MPSPurgeableState.volatile](./volatile.md)
   The system is allowed to discard the resource to free up memory.
 
 

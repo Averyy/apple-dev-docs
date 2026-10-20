@@ -1,7 +1,8 @@
 # toggleSidebar(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Collapses or expands the first sidebar in the split view controller using an animation.
 
@@ -15,15 +16,20 @@ Collapses or expands the first sidebar in the split view controller using an ani
 func toggleSidebar(_ sender: Any?)
 ```
 
+```objc
+- (void) toggleSidebar:(id) sender;
+```
+
 #### Discussion
 
 If the split view controller doesn’t contain a sidebar, calling this method does nothing.
 
 ## See Also
 
-- [var minimumThicknessForInlineSidebars: CGFloat](nssplitviewcontroller/minimumthicknessforinlinesidebars.md)
+### Managing Sidebars
+- [var minimumThicknessForInlineSidebars: CGFloat](./minimumthicknessforinlinesidebars.md)
   The minimum thickness for a sidebar before it automatically collapses.
-- [class let automaticDimension: CGFloat](nssplitviewcontroller/automaticdimension.md)
+- [class let automaticDimension: CGFloat](./automaticdimension.md)
   The default value to apply to a dimension.
 
 

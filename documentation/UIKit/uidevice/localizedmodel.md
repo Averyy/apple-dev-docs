@@ -1,7 +1,8 @@
 # localizedModel
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The model of the device as a localized string.
 
@@ -9,7 +10,7 @@ The model of the device as a localized string.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,23 +19,28 @@ The model of the device as a localized string.
 var localizedModel: String { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSString * localizedModel;
+```
+
 #### Discussion
 
-The value of this property is a string that contains a localized version of the string returned from [`model`](uidevice/model.md).
+The value of this property is a string that contains a localized version of the string returned from [`model`](./model.md).
 
 ## See Also
 
-- [var name: String](uidevice/name.md)
+### Identifying the device and operating system
+- [var name: String](./name.md)
   The name of the device.
-- [var systemName: String](uidevice/systemname.md)
+- [var systemName: String](./systemname.md)
   The name of the operating system running on the device.
-- [var systemVersion: String](uidevice/systemversion.md)
+- [var systemVersion: String](./systemversion.md)
   The current version of the operating system.
-- [var model: String](uidevice/model.md)
+- [var model: String](./model.md)
   The model of the device.
-- [var userInterfaceIdiom: UIUserInterfaceIdiom](uidevice/userinterfaceidiom.md)
+- [var userInterfaceIdiom: UIUserInterfaceIdiom](./userinterfaceidiom.md)
   The style of interface to use on the current device.
-- [var identifierForVendor: UUID?](uidevice/identifierforvendor.md)
+- [var identifierForVendor: UUID?](./identifierforvendor.md)
   An alphanumeric string that uniquely identifies a device to the app’s vendor.
 
 

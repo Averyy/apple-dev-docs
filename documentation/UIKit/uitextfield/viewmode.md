@@ -1,16 +1,17 @@
 # UITextField.ViewMode
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that define when overlay views appear in a text field.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,41 +19,46 @@ Constants that define when overlay views appear in a text field.
 enum ViewMode
 ```
 
+```c
+enum UITextFieldViewMode : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UITextField.ViewMode.never](uitextfield/viewmode/never.md)
+- [UITextField.ViewMode.never](./viewmode/never.md)
   The overlay view never appears.
-- [UITextField.ViewMode.whileEditing](uitextfield/viewmode/whileediting.md)
+- [UITextField.ViewMode.whileEditing](./viewmode/whileediting.md)
   The overlay view is displayed only while text is being edited in the text field.
-- [UITextField.ViewMode.unlessEditing](uitextfield/viewmode/unlessediting.md)
+- [UITextField.ViewMode.unlessEditing](./viewmode/unlessediting.md)
   The overlay view is displayed only when text is not being edited.
-- [UITextField.ViewMode.always](uitextfield/viewmode/always.md)
+- [UITextField.ViewMode.always](./viewmode/always.md)
   The overlay view is always displayed if the text field contains text.
 ### Initializers
-- [init?(rawValue: Int)](uitextfield/viewmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./viewmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var clearButtonMode: UITextField.ViewMode](uitextfield/clearbuttonmode.md)
+### Managing overlay views
+- [var clearButtonMode: UITextField.ViewMode](./clearbuttonmode.md)
   A mode that controls when the standard Clear button appears in the text field.
-- [var leftView: UIView?](uitextfield/leftview.md)
+- [var leftView: UIView?](./leftview.md)
   The overlay view that displays on the left (or leading) side of the text field.
-- [var leftViewMode: UITextField.ViewMode](uitextfield/leftviewmode.md)
+- [var leftViewMode: UITextField.ViewMode](./leftviewmode.md)
   A mode that controls when the left overlay view appears in the text field.
-- [var rightView: UIView?](uitextfield/rightview.md)
+- [var rightView: UIView?](./rightview.md)
   The overlay view that displays on the right (or trailing) side of the text field.
-- [var rightViewMode: UITextField.ViewMode](uitextfield/rightviewmode.md)
+- [var rightViewMode: UITextField.ViewMode](./rightviewmode.md)
   A mode that controls when the right overlay view appears in the text field.
 
 

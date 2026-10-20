@@ -1,6 +1,8 @@
 # Adopting New Safari Web Extension APIs
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: Sample Code  
+**Download**: [AdoptingNewSafariWebExtensionAPIs.zip](https://docs-assets.developer.apple.com/published/dbeff6e414b9/AdoptingNewSafariWebExtensionAPIs.zip)
 
 Improve your web extension in Safari with a non-persistent background page and new tab-override customization.
 
@@ -13,7 +15,7 @@ Improve your web extension in Safari with a non-persistent background page and n
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC21 sessions [`10027: Explore Safari Web Extension Improvements`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10027/); and [`10104: Meet Safari Web Extensions on iOS`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10104/).
+> **Note**: This sample code project is associated with WWDC21 sessions [10027: Explore Safari Web Extension Improvements](https://developer.apple.com/wwdc21/10027/); and [10104: Meet Safari Web Extensions on iOS](https://developer.apple.com/wwdc21/10104/).
 
 ##### Configure the Sample Code Project
 
@@ -36,13 +38,14 @@ On iOS, to run on a device:
 
 ## See Also
 
-- [Optimizing your web extension for Safari](optimizing-your-web-extension-for-safari.md)
+### Extension improvements
+- [Optimizing your web extension for Safari](./optimizing-your-web-extension-for-safari.md)
   Support Dark Mode, reduce memory and power usage, and ensure feature compatibility to improve your web extension experience in Safari and web apps.
-- [Syncing Safari web extensions across devices and platforms](syncing-safari-web-extensions-across-devices-and-platforms.md)
+- [Syncing Safari web extensions across devices and platforms](./syncing-safari-web-extensions-across-devices-and-platforms.md)
   Let users install your extension on one device and then use and manage the extension on all their other iOS and macOS devices.
-- [Assessing your Safari web extension’s browser compatibility](assessing-your-safari-web-extension-s-browser-compatibility.md)
+- [Assessing your Safari web extension’s browser compatibility](./assessing-your-safari-web-extension-s-browser-compatibility.md)
   Review your Safari web extension implementation plan, manifest keys, and JavaScript API usage for compatibility with other browsers.
-- [Troubleshooting your Safari web extension](troubleshooting-your-safari-web-extension.md)
+- [Troubleshooting your Safari web extension](./troubleshooting-your-safari-web-extension.md)
   Use developer resources to investigate and resolve common problems with Safari web extensions.
 
 

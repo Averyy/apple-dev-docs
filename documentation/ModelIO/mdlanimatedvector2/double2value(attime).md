@@ -1,7 +1,8 @@
 # double2Value(atTime:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func double2Value(atTime time: TimeInterval) -> vector_double2
+```
+
+```objc
+- (vector_double2) double2AtTime:(NSTimeInterval) time;
 ```
 
 

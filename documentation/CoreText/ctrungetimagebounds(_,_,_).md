@@ -1,7 +1,8 @@
 # CTRunGetImageBounds(_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calculates the image bounds for a glyph range.
 
@@ -20,9 +21,13 @@ Calculates the image bounds for a glyph range.
 func CTRunGetImageBounds(_ run: CTRun, _ context: CGContext?, _ range: CFRange) -> CGRect
 ```
 
+```c
+extern CGRect CTRunGetImageBounds(CTRunRef run, CGContextRef context, CFRange range);
+```
+
 #### Return Value
 
-A rectangle that tightly encloses the paths of the run’s glyphs, or, if `run`, `context`, or `range` is invalid, [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull).
+A rectangle that tightly encloses the paths of the run’s glyphs, or, if `run`, `context`, or `range` is invalid, [`CGRectNull`](../CoreGraphics/cgrectnull.md).
 
 ## Parameters
 
@@ -32,11 +37,12 @@ A rectangle that tightly encloses the paths of the run’s glyphs, or, if `run`,
 
 ## See Also
 
-- [func CTLineGetBoundsWithOptions(CTLine, CTLineBoundsOptions) -> CGRect](ctlinegetboundswithoptions(_:_:).md)
+### Measuring the Glyph Run
+- [func CTLineGetBoundsWithOptions(CTLine, CTLineBoundsOptions) -> CGRect](./ctlinegetboundswithoptions%28_,_%29.md)
   Calculates the bounds for a line.
-- [func CTRunGetTypographicBounds(CTRun, CFRange, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?) -> Double](ctrungettypographicbounds(_:_:_:_:_:).md)
+- [func CTRunGetTypographicBounds(CTRun, CFRange, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?) -> Double](./ctrungettypographicbounds%28_,_,_,_,_%29.md)
   Gets the typographic bounds of the run.
-- [func CTRunGetBaseAdvancesAndOrigins(CTRun, CFRange, UnsafeMutablePointer<CGSize>?, UnsafeMutablePointer<CGPoint>?)](ctrungetbaseadvancesandorigins(_:_:_:_:).md)
+- [func CTRunGetBaseAdvancesAndOrigins(CTRun, CFRange, UnsafeMutablePointer<CGSize>?, UnsafeMutablePointer<CGPoint>?)](./ctrungetbaseadvancesandorigins%28_,_,_,_%29.md)
   Copies a range of base advances and origins into user-provided buffers.
 
 

@@ -1,7 +1,8 @@
 # init(captions:timeRange:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a caption group with captions and a time range.
 
@@ -17,6 +18,10 @@ Creates a caption group with captions and a time range.
 init(captions: [AVCaption], timeRange: CMTimeRange)
 ```
 
+```objc
+- (instancetype) initWithCaptions:(NSArray<AVCaption *> *) captions timeRange:(CMTimeRange) timeRange;
+```
+
 ## Parameters
 
 - `captions`: The captions of the caption group.
@@ -24,7 +29,8 @@ init(captions: [AVCaption], timeRange: CMTimeRange)
 
 ## See Also
 
-- [init(timeRange: CMTimeRange)](avcaptiongroup/init(timerange:).md)
+### Creating a caption group
+- [init(timeRange: CMTimeRange)](./init%28timerange%29.md)
   Creates a caption group with a time range.
 
 

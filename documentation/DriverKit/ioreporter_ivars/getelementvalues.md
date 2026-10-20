@@ -1,17 +1,18 @@
 # getElementValues
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual const IOReportElementValues * getElementValues(int element_index);
 ```
 
@@ -27,7 +28,9 @@ Locking: Caller must ensure that the reporter (data) lock is held. The returned 
 
 ## Parameters
 
-- `element_index`: - index of the _element in internal array
+- `element_index`:
+
+  - index of the _element in internal array
 
 
 ---

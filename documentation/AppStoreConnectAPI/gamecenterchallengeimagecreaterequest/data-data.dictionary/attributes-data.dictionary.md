@@ -1,7 +1,8 @@
 # GameCenterChallengeImageCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a challenge image resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a challenge image resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeImageCreateRequest.Data.Attributes
 ```
 

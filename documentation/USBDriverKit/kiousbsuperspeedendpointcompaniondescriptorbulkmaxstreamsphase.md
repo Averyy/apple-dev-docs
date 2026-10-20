@@ -1,29 +1,31 @@
 # kIOUSBSuperSpeedEndpointCompanionDescriptorBulkMaxStreamsPhase
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBSuperSpeedEndpointCompanionDescriptorBulkMaxStreamsPhase
 ```
 
 ## See Also
 
-- [kIOUSBSuperSpeedEndpointCompanionDescriptorMaxBurst](kiousbsuperspeedendpointcompaniondescriptormaxburst.md)
-- [kIOUSBSuperSpeedEndpointCompanionDescriptorMaxBurstPhase](kiousbsuperspeedendpointcompaniondescriptormaxburstphase.md)
-- [kIOUSBSuperSpeedEndpointCompanionDescriptorBulkMaxStreams](kiousbsuperspeedendpointcompaniondescriptorbulkmaxstreams.md)
-- [kIOUSBSuperSpeedEndpointCompanionDescriptorBulkReserved](kiousbsuperspeedendpointcompaniondescriptorbulkreserved.md)
-- [kIOUSBSuperSpeedEndpointCompanionDescriptorBulkReservedPhase](kiousbsuperspeedendpointcompaniondescriptorbulkreservedphase.md)
-- [kIOUSBSuperSpeedEndpointCompanionDescriptorIsocMult](kiousbsuperspeedendpointcompaniondescriptorisocmult.md)
-- [kIOUSBSuperSpeedEndpointCompanionDescriptorIsocMultPhase](kiousbsuperspeedendpointcompaniondescriptorisocmultphase.md)
-- [kIOUSBSuperSpeedEndpointCompanionDescriptorIsocReserved](kiousbsuperspeedendpointcompaniondescriptorisocreserved.md)
-- [kIOUSBSuperSpeedEndpointCompanionDescriptorIsocReservedPhase](kiousbsuperspeedendpointcompaniondescriptorisocreservedphase.md)
-- [kIOUSBSuperSpeedEndpointCompanionDescriptorSSPIsocCompanion](kiousbsuperspeedendpointcompaniondescriptorsspisoccompanion.md)
+### Getting the Descriptor Options
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorMaxBurst](./kiousbsuperspeedendpointcompaniondescriptormaxburst.md)
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorMaxBurstPhase](./kiousbsuperspeedendpointcompaniondescriptormaxburstphase.md)
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorBulkMaxStreams](./kiousbsuperspeedendpointcompaniondescriptorbulkmaxstreams.md)
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorBulkReserved](./kiousbsuperspeedendpointcompaniondescriptorbulkreserved.md)
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorBulkReservedPhase](./kiousbsuperspeedendpointcompaniondescriptorbulkreservedphase.md)
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorIsocMult](./kiousbsuperspeedendpointcompaniondescriptorisocmult.md)
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorIsocMultPhase](./kiousbsuperspeedendpointcompaniondescriptorisocmultphase.md)
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorIsocReserved](./kiousbsuperspeedendpointcompaniondescriptorisocreserved.md)
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorIsocReservedPhase](./kiousbsuperspeedendpointcompaniondescriptorisocreservedphase.md)
+- [kIOUSBSuperSpeedEndpointCompanionDescriptorSSPIsocCompanion](./kiousbsuperspeedendpointcompaniondescriptorsspisoccompanion.md)
 
 
 ---

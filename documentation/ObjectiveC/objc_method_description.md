@@ -1,18 +1,19 @@
 # objc_method_description
 
 **Framework**: Objective-C Runtime  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Defines an Objective-C method.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,37 +21,42 @@ Defines an Objective-C method.
 struct objc_method_description
 ```
 
+```c
+struct objc_method_description;
+```
+
 ## Topics
 
 ### Fields
-- [var name: Selector?](objc_method_description/name.md)
+- [var name: Selector?](./objc_method_description/name.md)
   The name of the method at runtime.
-- [var types: UnsafeMutablePointer<CChar>?](objc_method_description/types.md)
+- [var types: UnsafeMutablePointer<CChar>?](./objc_method_description/types.md)
   The types of the method arguments.
 ### Initializers
-- [init()](objc_method_description/init.md)
-- [init(name: Selector?, types: UnsafeMutablePointer<CChar>?)](objc_method_description/init(name:types:).md)
+- [init()](./objc_method_description/init%28%29.md)
+- [init(name: Selector?, types: UnsafeMutablePointer<CChar>?)](./objc_method_description/init%28name,types%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [typealias Method](method.md)
+### Class-Definition Data Structures
+- [typealias Method](./method.md)
   An opaque type that represents a method in a class definition.
-- [typealias Ivar](ivar.md)
+- [typealias Ivar](./ivar.md)
   An opaque type that represents an instance variable.
-- [typealias Category](category.md)
+- [typealias Category](./category.md)
   An opaque type that represents a category.
-- [typealias objc_property_t](objc_property_t.md)
+- [typealias objc_property_t](./objc_property_t.md)
   An opaque type that represents an Objective-C declared property.
-- [typealias IMP](imp.md)
+- [typealias IMP](./imp.md)
   A pointer to the start of a method implementation.
-- [objc_cache](objc_cache.md)
+- [objc_cache](./objc_cache.md)
   Performance optimization for method calls. Contains pointers to recently used methods.
-- [struct objc_property_attribute_t](objc_property_attribute_t.md)
+- [struct objc_property_attribute_t](./objc_property_attribute_t.md)
   Defines a property attribute.
 
 

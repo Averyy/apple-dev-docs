@@ -1,7 +1,8 @@
 # frameCount
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of frames in this planned video segment.
 
@@ -17,6 +18,10 @@ The number of frames in this planned video segment.
 
 ```swift
 var frameCount: Int { get }
+```
+
+```objc
+@property (readonly) NSInteger frameCount;
 ```
 
 

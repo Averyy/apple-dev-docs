@@ -1,7 +1,8 @@
 # CKQueryNotification.Reason
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the event that triggers the notification.
 
@@ -10,7 +11,7 @@ Constants that indicate the event that triggers the notification.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,31 +21,36 @@ Constants that indicate the event that triggers the notification.
 enum Reason
 ```
 
+```c
+enum CKQueryNotificationReason : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [CKQueryNotification.Reason.recordCreated](ckquerynotification/reason/recordcreated.md)
+- [CKQueryNotification.Reason.recordCreated](./reason/recordcreated.md)
   A notification that indicates the creation of a record matching the subscription’s predicate.
-- [CKQueryNotification.Reason.recordUpdated](ckquerynotification/reason/recordupdated.md)
+- [CKQueryNotification.Reason.recordUpdated](./reason/recordupdated.md)
   A notification that indicates the update of a record matching the subscription’s predicate.
-- [CKQueryNotification.Reason.recordDeleted](ckquerynotification/reason/recorddeleted.md)
+- [CKQueryNotification.Reason.recordDeleted](./reason/recorddeleted.md)
   A notification that indicates the deletion of a record matching the subscription’s predicate.
 ### Initializers
-- [init?(rawValue: Int)](ckquerynotification/reason/init(rawvalue:).md)
+- [init?(rawValue: Int)](./reason/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var queryNotificationReason: CKQueryNotification.Reason](ckquerynotification/querynotificationreason.md)
+### Getting the Notification Attributes
+- [var queryNotificationReason: CKQueryNotification.Reason](./querynotificationreason.md)
   The event that triggers the push notification.
 
 

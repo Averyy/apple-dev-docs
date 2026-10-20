@@ -2,6 +2,7 @@
 
 **Framework**: Playground Bluetooth  
 **Kind**: intfm  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that the state of the central manager has changed.
@@ -19,6 +20,12 @@ func centralManagerStateDidChange(_ centralManager: PlaygroundBluetoothCentralMa
 ## Parameters
 
 - `centralManager`: The central manager providing this information.
+
+## Default Implementations
+
+### PlaygroundBluetoothCentralManagerDelegate Implementations
+- [func centralManagerStateDidChange(PlaygroundBluetoothCentralManager)](./api-3029485-centralmanagerstatedidchange.md)
+  Tells the delegate that the state of the central manager has changed.
 
 
 ---

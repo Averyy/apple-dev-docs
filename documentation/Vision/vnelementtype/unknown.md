@@ -1,7 +1,8 @@
 # VNElementType.unknown
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The element type isn’t known.
 
@@ -19,11 +20,16 @@ The element type isn’t known.
 case unknown
 ```
 
+```c
+VNElementTypeUnknown
+```
+
 ## See Also
 
-- [VNElementType.float](vnelementtype/float.md)
+### Element Types
+- [VNElementType.float](./float.md)
   The elements are floating-point numbers.
-- [VNElementType.double](vnelementtype/double.md)
+- [VNElementType.double](./double.md)
   The elements are double-precision floating-point numbers.
 
 

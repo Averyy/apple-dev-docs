@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The delete operation’s transaction identifier.
@@ -24,11 +25,12 @@ var transactionIdentifier: Self.TransactionIdentifier { get }
 
 ## See Also
 
-- [var changeIdentifier: Self.ChangeIdentifier](historydelete/changeidentifier-swift.property.md)
+### History deletion properites
+- [var changeIdentifier: Self.ChangeIdentifier](./changeidentifier-swift.property.md)
   The change identifier of the delete operation.
-- [var changedPersistentIdentifier: PersistentIdentifier](historydelete/changedpersistentidentifier.md)
+- [var changedPersistentIdentifier: PersistentIdentifier](./changedpersistentidentifier.md)
   The changed persistent identifier of the delete operation.
-- [var tombstone: HistoryTombstone<Self.Model>](historydelete/tombstone.md)
+- [var tombstone: HistoryTombstone<Self.Model>](./tombstone.md)
   The value the framework uses to represent information about data the Swift Data previously deleted from a model.
 
 

@@ -1,7 +1,8 @@
 # Get Realtime URL
 
 **Framework**: Retention Messaging API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Gets the URL for real-time messages that points to your Get Retention Message endpoint, which you previously configured.
 
@@ -10,35 +11,44 @@ Gets the URL for real-time messages that points to your Get Retention Message en
 
 ## Mentions
 
-- [Identifying rate limits](identifying-rate-limits.md)
-- [Retention Messaging API changelog](retention-messaging-changelog.md)
-- [Setting up your Get Retention Message endpoint](setting-up-retention-messaging-endpoint.md)
+- [Identifying rate limits](./identifying-rate-limits.md)
+- [Retention Messaging API changelog](./retention-messaging-changelog.md)
+- [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md)
 
 #### Discussion
 
-This endpoint returns your `Get Retention Message` endpoint’s URL. The URL it provides is specific to the environment (sandbox or production) you use to call [`Get Realtime URL`](get-realtime-url.md).
+This endpoint returns your `Get Retention Message` endpoint’s URL. The URL it provides is specific to the environment (sandbox or production) you use to call [`Get Realtime URL`](./get-realtime-url.md).
 
-This endpoint returns an `HTTP 404` error with [`RealtimeUrlNotFoundError`](realtimeurlnotfounderror.md) if the URL isn’t configured.
+This endpoint returns an `HTTP 404` error with [`RealtimeUrlNotFoundError`](./realtimeurlnotfounderror.md) if the URL isn’t configured.
 
-For more information on configuring your `Get Retention Message` endpoint, see [`Setting up your Get Retention Message endpoint`](setting-up-retention-messaging-endpoint.md).
+For more information on configuring your `Get Retention Message` endpoint, see [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md).
 
 ## Endpoint
 
 `GET https://api.storekit-sandbox.apple.com/inApps/v1/messaging/realtime/url`
 
+## Responses
+
+- `200` OK (`RealtimeUrlResponse`, `application/json`): Request succeeded.
+- `401` Unauthorized: The JSON Web Token (JWT) in the authorization header is invalid. For more information, see [Generating JSON Web Tokens for API requests](../AppStoreServerAPI/generating-json-web-tokens-for-api-requests.md).
+- `404` Not Found (`RealtimeUrlNotFoundError`, `application/json`): The `Get Retention Message` URL wasn’t found.
+- `429` (`RateLimitExceededError`, `application/json`): The request exceeded the rate limit. For more information, see [Identifying rate limits](./identifying-rate-limits.md).
+- `500` Internal Server Error (`GeneralInternalError`, `application/json`): Server error. Try again later.
+
 ## See Also
 
-- [Setting up your Get Retention Message endpoint](setting-up-retention-messaging-endpoint.md)
+### Real-time retention messaging setup
+- [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md)
   Choose retention messages for customers in real time by implementing an endpoint on your server that responds to requests from the App Store server.
-- [Configure Realtime URL](configure-realtime-url.md)
+- [Configure Realtime URL](./configure-realtime-url.md)
   Configures the URL for your Get Retention Message endpoint in the sandbox and production environments.
-- [Delete Realtime URL](delete-realtime-url.md)
+- [Delete Realtime URL](./delete-realtime-url.md)
   Deletes the URL for your Get Retention Message endpoint, in the sandbox or production environments.
-- [object RealtimeUrlRequest](realtimeurlrequest.md)
+- [object RealtimeUrlRequest](./realtimeurlrequest.md)
   The request body for configuring the URL of your Get Retention Message endpoint.
-- [object RealtimeRequestBody](realtimerequestbody.md)
+- [object RealtimeRequestBody](./realtimerequestbody.md)
   The request body the App Store server sends to your Get Retention Message endpoint.
-- [object RealtimeUrlResponse](realtimeurlresponse.md)
+- [object RealtimeUrlResponse](./realtimeurlresponse.md)
   The response body that contains the URL for your Get Retention Message endpoint.
 
 

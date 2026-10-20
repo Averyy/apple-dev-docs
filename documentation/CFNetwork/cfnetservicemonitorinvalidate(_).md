@@ -1,17 +1,20 @@
 # CFNetServiceMonitorInvalidate(_:)
 
 **Framework**: CFNetwork  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Invalidates an instance of a Network Service monitor object.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.4+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 2.0+ - Deprecated in 27.0
+- iPadOS 2.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.4+ - Deprecated in 27.0
+- tvOS 9.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use nw_browser_t or nw_listener_t in Network framework instead
 
 ## Declaration
 
@@ -19,9 +22,13 @@ Invalidates an instance of a Network Service monitor object.
 func CFNetServiceMonitorInvalidate(_ monitor: CFNetServiceMonitor)
 ```
 
+```c
+extern void CFNetServiceMonitorInvalidate(CFNetServiceMonitorRef monitor);
+```
+
 #### Discussion
 
-This function invalidates the specified Network Service monitor so that it cannot be used again. Before you call this function, you should call [`CFNetServiceMonitorStop(_:_:)`](cfnetservicemonitorstop(_:_:).md). If the monitor has not already been stopped, this function stops the monitor for you.
+This function invalidates the specified Network Service monitor so that it cannot be used again. Before you call this function, you should call [`CFNetServiceMonitorStop(_:_:)`](./cfnetservicemonitorstop%28_,_%29.md). If the monitor has not already been stopped, this function stops the monitor for you.
 
 ##### Special Considerations
 
@@ -33,35 +40,36 @@ This function is thread safe.
 
 ## See Also
 
-- [class CFNetService](cfnetservice.md)
+### Network Services
+- [class CFNetService](./cfnetservice.md)
   An opaque reference representing a CFNetService.
-- [class CFNetServiceBrowser](cfnetservicebrowser.md)
+- [class CFNetServiceBrowser](./cfnetservicebrowser.md)
   An opaque reference representing a CFNetServiceBrowser.
-- [struct CFNetServiceBrowserFlags](cfnetservicebrowserflags.md)
+- [struct CFNetServiceBrowserFlags](./cfnetservicebrowserflags.md)
   Flags that the system passes to net service browser callbacks.
-- [class CFNetServiceMonitor](cfnetservicemonitor.md)
+- [class CFNetServiceMonitor](./cfnetservicemonitor.md)
   An opaque reference for a service monitor.
-- [enum CFNetServiceMonitorType](cfnetservicemonitortype.md)
+- [enum CFNetServiceMonitorType](./cfnetservicemonitortype.md)
   Record type specifier used to tell a service monitor the type of record changes to watch for.
-- [struct CFNetServiceClientContext](cfnetserviceclientcontext.md)
+- [struct CFNetServiceClientContext](./cfnetserviceclientcontext.md)
   A structure provided when a CFNetService is associated with a callback function or when a CFNetServiceBrowser is created.
-- [struct CFNetServiceRegisterFlags](cfnetserviceregisterflags.md)
+- [struct CFNetServiceRegisterFlags](./cfnetserviceregisterflags.md)
   Options to use when registering a service on the network.
-- [enum CFNetServicesError](cfnetserviceserror.md)
+- [enum CFNetServicesError](./cfnetserviceserror.md)
   Error codes that may be returned by CFNetServices functions or passed to CFNetServices callback functions.
-- [func CFNetServiceBrowserInvalidate(CFNetServiceBrowser)](cfnetservicebrowserinvalidate(_:).md)
+- [func CFNetServiceBrowserInvalidate(CFNetServiceBrowser)](./cfnetservicebrowserinvalidate%28_%29.md)
   Invalidates an instance of a Network Service browser object.
-- [func CFNetServiceBrowserScheduleWithRunLoop(CFNetServiceBrowser, CFRunLoop, CFString)](cfnetservicebrowserschedulewithrunloop(_:_:_:).md)
+- [func CFNetServiceBrowserScheduleWithRunLoop(CFNetServiceBrowser, CFRunLoop, CFString)](./cfnetservicebrowserschedulewithrunloop%28_,_,_%29.md)
   Schedules a CFNetServiceBrowser on a run loop.
-- [func CFNetServiceBrowserCreate(CFAllocator?, CFNetServiceBrowserClientCallBack, UnsafeMutablePointer<CFNetServiceClientContext>) -> Unmanaged<CFNetServiceBrowser>](cfnetservicebrowsercreate(_:_:_:).md)
+- [func CFNetServiceBrowserCreate(CFAllocator?, CFNetServiceBrowserClientCallBack, UnsafeMutablePointer<CFNetServiceClientContext>) -> Unmanaged<CFNetServiceBrowser>](./cfnetservicebrowsercreate%28_,_,_%29.md)
   Creates an instance of a Network Service browser object.
-- [func CFNetServiceBrowserGetTypeID() -> CFTypeID](cfnetservicebrowsergettypeid().md)
+- [func CFNetServiceBrowserGetTypeID() -> CFTypeID](./cfnetservicebrowsergettypeid%28%29.md)
   Gets the Core Foundation type identifier for the Network Service browser object.
-- [func CFNetServiceBrowserSearchForDomains(CFNetServiceBrowser, Bool, UnsafeMutablePointer<CFStreamError>?) -> Bool](cfnetservicebrowsersearchfordomains(_:_:_:).md)
+- [func CFNetServiceBrowserSearchForDomains(CFNetServiceBrowser, Bool, UnsafeMutablePointer<CFStreamError>?) -> Bool](./cfnetservicebrowsersearchfordomains%28_,_,_%29.md)
   Searches for domains.
-- [func CFNetServiceBrowserSearchForServices(CFNetServiceBrowser, CFString, CFString, UnsafeMutablePointer<CFStreamError>?) -> Bool](cfnetservicebrowsersearchforservices(_:_:_:_:).md)
+- [func CFNetServiceBrowserSearchForServices(CFNetServiceBrowser, CFString, CFString, UnsafeMutablePointer<CFStreamError>?) -> Bool](./cfnetservicebrowsersearchforservices%28_,_,_,_%29.md)
   Searches a domain for services of a specified type.
-- [func CFNetServiceBrowserStopSearch(CFNetServiceBrowser, UnsafeMutablePointer<CFStreamError>?)](cfnetservicebrowserstopsearch(_:_:).md)
+- [func CFNetServiceBrowserStopSearch(CFNetServiceBrowser, UnsafeMutablePointer<CFStreamError>?)](./cfnetservicebrowserstopsearch%28_,_%29.md)
   Stops a search for domains or services.
 
 

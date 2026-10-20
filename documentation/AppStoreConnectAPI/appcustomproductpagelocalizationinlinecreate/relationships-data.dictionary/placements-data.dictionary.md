@@ -1,21 +1,22 @@
 # AppCustomProductPageLocalizationInlineCreate.Relationships.Placements
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object AppCustomProductPageLocalizationInlineCreate.Relationships.Placements
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppCustomProductPageLocalizationInlineCreate.Relationships.Placements.Data](appcustomproductpagelocalizationinlinecreate/relationships-data.dictionary/placements-data.dictionary/data-data.dictionary.md)
+- [object AppCustomProductPageLocalizationInlineCreate.Relationships.Placements.Data](./placements-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

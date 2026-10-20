@@ -1,7 +1,8 @@
 # vDouble
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 7.0+
@@ -14,7 +15,7 @@
 
 ## Declaration
 
-```swift
+```c
 typedef __attribute__((__vector_size__(2 * sizeof(double)))) double vDouble;
 ```
 

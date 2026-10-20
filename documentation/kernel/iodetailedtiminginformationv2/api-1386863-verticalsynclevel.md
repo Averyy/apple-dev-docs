@@ -1,7 +1,8 @@
 # verticalSyncLevel
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Zero.
 
@@ -10,7 +11,7 @@ Zero.
 
 ## Declaration
 
-```swift
+```c
 UInt32 verticalSyncLevel;
 ```
 

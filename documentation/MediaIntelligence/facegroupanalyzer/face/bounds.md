@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: Media Intelligence  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A normalized rectangle describing the location of the face within its source image.
 
@@ -21,7 +22,7 @@ let bounds: CGRect
 
 ## Mentions
 
-- [Detecting and grouping faces in images](detecting-and-grouping-faces-in-images.md)
+- [Detecting and grouping faces in images](../../detecting-and-grouping-faces-in-images.md)
 
 #### Discussion
 

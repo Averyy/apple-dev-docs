@@ -1,7 +1,8 @@
 # handGestureShortcut
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A finger or wrist movement that the user can perform in order to scroll a view.
 

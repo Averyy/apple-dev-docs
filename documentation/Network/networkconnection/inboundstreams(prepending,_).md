@@ -1,7 +1,8 @@
 # inboundStreams(prepending:_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handle inbound streams and provide a closure on which callback handlers will be executed. When the `NetworkConnection<QUIC>` state moves to `ready`, the internal listener is registered with the system and can receive incoming streams on the multiplexing instance. `inboundStreams` should only be called once on a `NetworkConnection<QUIC>`, and multiple calls to run will throw an exception.
 
@@ -19,6 +20,8 @@ Handle inbound streams and provide a closure on which callback handlers will be 
 ```swift
 final func inboundStreams<NewApplicationProtocol>(@ProtocolStackBuilder<NewApplicationProtocol> prepending: @escaping (QUICStream) -> NewApplicationProtocol, _ handler: @escaping @isolated(any) @Sendable (QUIC.Stream<NewApplicationProtocol>) async throws -> Void) async throws where NewApplicationProtocol : OneToOneProtocol
 ```
+
+Available when `ApplicationProtocol` is `QUIC`.
 
 #### Discussion
 

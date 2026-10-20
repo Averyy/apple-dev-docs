@@ -1,7 +1,8 @@
 # fillDiscontinuitiesWithSilence
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Fill the difference between discontiguous sample buffers with silence.
 

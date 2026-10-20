@@ -1,7 +1,8 @@
 # EntitlementTaskState.loading
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The task is loading the entitlement in the background.
 
@@ -22,9 +23,10 @@ case loading
 
 ## See Also
 
-- [EntitlementTaskState.success(_:)](entitlementtaskstate/success(_:).md)
+### Getting the task state
+- [EntitlementTaskState.success(_:)](./success%28_%29.md)
   The task successfully loaded the entitlement.
-- [EntitlementTaskState.failure(_:)](entitlementtaskstate/failure(_:).md)
+- [EntitlementTaskState.failure(_:)](./failure%28_%29.md)
   The task failed to load the entitlement, with an error.
 
 

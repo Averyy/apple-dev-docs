@@ -1,7 +1,8 @@
 # NSTextLayoutManager.SegmentType.highlight
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The segment behavior suitable for highlighting.
 
@@ -14,11 +15,16 @@ The segment behavior suitable for highlighting.
 case highlight
 ```
 
+```c
+NSTextLayoutManagerSegmentTypeHighlight
+```
+
 ## See Also
 
-- [NSTextLayoutManager.SegmentType.selection](nstextlayoutmanager/segmenttype/selection.md)
+### Kinds of text selection segments
+- [NSTextLayoutManager.SegmentType.selection](./selection.md)
   The segment behavior suitable for selection rendering.
-- [NSTextLayoutManager.SegmentType.standard](nstextlayoutmanager/segmenttype/standard.md)
+- [NSTextLayoutManager.SegmentType.standard](./standard.md)
   The standard segment, matching the typographic bounds of the range.
 
 

@@ -1,7 +1,8 @@
 # changeLayoutOrientation(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An action method that sets the layout orientation of the text.
 
@@ -14,9 +15,13 @@ An action method that sets the layout orientation of the text.
 func changeLayoutOrientation(_ sender: Any?)
 ```
 
+```objc
+- (void) changeLayoutOrientation:(id) sender;
+```
+
 #### Discussion
 
-Calls [`setLayoutOrientation(_:)`](nstextview/setlayoutorientation(_:).md) with the sender’s tag as the orientation.
+Calls [`setLayoutOrientation(_:)`](./setlayoutorientation%28_%29.md) with the sender’s tag as the orientation.
 
 ## Parameters
 
@@ -24,7 +29,8 @@ Calls [`setLayoutOrientation(_:)`](nstextview/setlayoutorientation(_:).md) with 
 
 ## See Also
 
-- [func setLayoutOrientation(NSLayoutManager.TextLayoutOrientation)](nstextview/setlayoutorientation(_:).md)
+### Changing layout orientation
+- [func setLayoutOrientation(NSLayoutManager.TextLayoutOrientation)](./setlayoutorientation%28_%29.md)
   Changes the receiver’s layout orientation and invalidates the contents.
 
 

@@ -1,7 +1,8 @@
 # WKBackgroundFetchResult.noData
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The notification has no associated content.
 
@@ -14,11 +15,16 @@ The notification has no associated content.
 case noData
 ```
 
+```c
+WKBackgroundFetchResultNoData
+```
+
 ## See Also
 
-- [WKBackgroundFetchResult.failed](wkbackgroundfetchresult/failed.md)
+### Fetch Results
+- [WKBackgroundFetchResult.failed](./failed.md)
   The download attempt failed.
-- [WKBackgroundFetchResult.newData](wkbackgroundfetchresult/newdata.md)
+- [WKBackgroundFetchResult.newData](./newdata.md)
   The download attempt succeeded.
 
 

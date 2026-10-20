@@ -1,7 +1,8 @@
 # waitForAll(isolation:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Wait for all of the group’s remaining tasks to complete.
 
@@ -14,6 +15,8 @@ Wait for all of the group’s remaining tasks to complete.
 - visionOS 1.0+
 - watchOS 6.0+
 
+> **Deprecated**: Replaced by nonisolated(nonsending) overload
+
 ## Declaration
 
 ```swift
@@ -22,11 +25,12 @@ mutating func waitForAll(isolation: isolated (any Actor)? = #isolation) async
 
 ## See Also
 
-- [func add(priority: TaskPriority?, operation: () async -> ChildTaskResult) async -> Bool](taskgroup/add(priority:operation:).md)
-- [func async(priority: TaskPriority?, operation: () async -> ChildTaskResult)](taskgroup/async(priority:operation:).md)
-- [func asyncUnlessCancelled(priority: TaskPriority?, operation: () async -> ChildTaskResult) -> Bool](taskgroup/asyncunlesscancelled(priority:operation:).md)
-- [func spawn(priority: TaskPriority?, operation: () async -> ChildTaskResult)](taskgroup/spawn(priority:operation:).md)
-- [func spawnUnlessCancelled(priority: TaskPriority?, operation: () async -> ChildTaskResult) -> Bool](taskgroup/spawnunlesscancelled(priority:operation:).md)
+### Deprecated
+- [func add(priority: TaskPriority?, operation: () async -> ChildTaskResult) async -> Bool](./add%28priority,operation%29.md)
+- [func async(priority: TaskPriority?, operation: () async -> ChildTaskResult)](./async%28priority,operation%29.md)
+- [func asyncUnlessCancelled(priority: TaskPriority?, operation: () async -> ChildTaskResult) -> Bool](./asyncunlesscancelled%28priority,operation%29.md)
+- [func spawn(priority: TaskPriority?, operation: () async -> ChildTaskResult)](./spawn%28priority,operation%29.md)
+- [func spawnUnlessCancelled(priority: TaskPriority?, operation: () async -> ChildTaskResult) -> Bool](./spawnunlesscancelled%28priority,operation%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # recognizedDataTypes
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The types of data that the data scanner identifies in the live video.
 
@@ -19,9 +20,10 @@ final let recognizedDataTypes: Set<DataScannerViewController.RecognizedDataType>
 
 ## See Also
 
-- [init(recognizedDataTypes: Set<DataScannerViewController.RecognizedDataType>, qualityLevel: DataScannerViewController.QualityLevel, recognizesMultipleItems: Bool, isHighFrameRateTrackingEnabled: Bool, isPinchToZoomEnabled: Bool, isGuidanceEnabled: Bool, isHighlightingEnabled: Bool)](datascannerviewcontroller/init(recognizeddatatypes:qualitylevel:recognizesmultipleitems:ishighframeratetrackingenabled:ispinchtozoomenabled:isguidanceenabled:ishighlightingenabled:).md)
+### Creating data scanners
+- [init(recognizedDataTypes: Set<DataScannerViewController.RecognizedDataType>, qualityLevel: DataScannerViewController.QualityLevel, recognizesMultipleItems: Bool, isHighFrameRateTrackingEnabled: Bool, isPinchToZoomEnabled: Bool, isGuidanceEnabled: Bool, isHighlightingEnabled: Bool)](./init%28recognizeddatatypes,qualitylevel,recognizesmultipleitems,ishighframeratetrackingenabled,ispinchtozoomenabled,isguidanceenabled,ishighlightingenabled%29.md)
   Creates a scanner for finding data, such as text and machine-readable codes, in the camera’s live video.
-- [DataScannerViewController.RecognizedDataType](datascannerviewcontroller/recognizeddatatype.md)
+- [DataScannerViewController.RecognizedDataType](./recognizeddatatype.md)
   A type of data that the scanner recognizes.
 
 

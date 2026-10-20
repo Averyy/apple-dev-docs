@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [MBUF_DONTWAIT](1644523-anonymous/mbuf_dontwait.md)
-- [MBUF_WAITOK](1644523-anonymous/mbuf_waitok.md)
+- [MBUF_DONTWAIT](./api-1644523-anonymous/mbuf_dontwait.md)
+- [MBUF_WAITOK](./api-1644523-anonymous/mbuf_waitok.md)
 
 
 ---

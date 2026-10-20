@@ -2,17 +2,18 @@
 
 **Framework**: Create ML Components  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes the transformer and optimizer to an encoder.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
+- iOS 16.0+ - Deprecated in 18.0
+- iPadOS 16.0+ - Deprecated in 18.0
+- Mac Catalyst 16.0+ - Deprecated in 18.0
+- macOS 13.0+ - Deprecated in 15.0
+- tvOS 16.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
 
 ## Declaration
 
@@ -27,7 +28,8 @@ func encodeWithOptimizer(_ transformer: Self.Transformer, to encoder: inout any 
 
 ## See Also
 
-- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> Self.Transformer](updatablesupervisedtemporalestimator/decodewithoptimizer(from:).md)
+### Encoding and decoding
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> Self.Transformer](./decodewithoptimizer%28from%29.md)
   Reads the encoded transformer and optimizer with a decoder.
 
 

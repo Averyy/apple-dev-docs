@@ -1,7 +1,8 @@
 # ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents input for the binary large object extension in passkey assertion requests.
 
@@ -25,21 +26,22 @@ Use this type during assertion (sign-in) with an existing passkey. An app can sp
 ## Topics
 
 ### Using assertion inputs
-- [static var read: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput](asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/read.md)
+- [static var read: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput](./asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/read.md)
   An operation to read the existing blob value.
-- [static func write(Data) -> ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput](asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/write(_:).md)
+- [static func write(Data) -> ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput](./asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/write%28_%29.md)
   An operation to write the blob value, overwriting any existing value.
 ### Inspecting the operation
-- [var operation: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation](asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/operation-swift.property.md)
+- [var operation: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation](./asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/operation-swift.property.md)
   The reading or writing operation the input performs.
-- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation](asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/operation-swift.enum.md)
+- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation](./asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/operation-swift.enum.md)
   A type to represent the possible operations of a large binary object assertion input.
 
 ## See Also
 
-- [init(largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput?, prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?)](aspasskeyassertioncredentialextensioninput-swift.struct/init(largeblob:prf:).md)
+### Creating an assertion input
+- [init(largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput?, prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?)](./aspasskeyassertioncredentialextensioninput-swift.struct/init%28largeblob,prf%29.md)
   Creates a passkey assertion input.
-- [struct ASAuthorizationPublicKeyCredentialPRFAssertionInput](asauthorizationpublickeycredentialprfassertioninput-swift.struct.md)
+- [struct ASAuthorizationPublicKeyCredentialPRFAssertionInput](./asauthorizationpublickeycredentialprfassertioninput-swift.struct.md)
   A type that represents input for the web authentication PRF extension in passkey assertion requests.
 
 

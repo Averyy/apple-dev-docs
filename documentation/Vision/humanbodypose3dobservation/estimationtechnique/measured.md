@@ -1,7 +1,8 @@
 # HumanBodyPose3DObservation.EstimationTechnique.measured
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A technique that uses LiDAR depth data to measure body height, in meters.
 
@@ -21,7 +22,8 @@ case measured
 
 ## See Also
 
-- [HumanBodyPose3DObservation.EstimationTechnique.reference](humanbodypose3dobservation/estimationtechnique/reference.md)
+### Getting estimation techniques
+- [HumanBodyPose3DObservation.EstimationTechnique.reference](./reference.md)
   A technique that uses a reference height.
 
 

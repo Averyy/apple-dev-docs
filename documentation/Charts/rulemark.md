@@ -1,7 +1,8 @@
 # RuleMark
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Chart content that represents data using a single horizontal or vertical rule.
 
@@ -61,11 +62,11 @@ var body: some View {
 }
 ```
 
-![Horizontal rule chart with x-axis showing the month in the year 2020 starting with January and ending with December, and with y-axis showing a pollen source: Trees, Grass, and Weeds. There are 4 rules. 2 for Trees 1 starting in January and going until the end of September and 1 spanning December, 1 for Grass starting in March and going until the end of August, and 1 for Weeds starting in April and going until the end of November.](/images/com.apple.Charts/LineSegmentMarkSwift.LineSegmentMarkHorizontalLineSegmentChart@2x.png)
+![Horizontal rule chart with x-axis showing the month in the year 2020 starting with January and ending with December, and with y-axis showing a pollen source: Trees, Grass, and Weeds. There are 4 rules. 2 for Trees 1 starting in January and going until the end of September and 1 spanning December, 1 for Grass starting in March and going until the end of August, and 1 for Weeds starting in April and going until the end of November.](https://developer.apple.com/tutorials/images/com.apple.Charts/LineSegmentMarkSwift.LineSegmentMarkHorizontalLineSegmentChart@2x.png)
 
-##### Annotate a Chart with Rule Mark
+##### Annotate a chart with rule mark
 
-You can annotate a chart with horizontal or vertically spanning rules. This allows viewers to easily compare values over a range to a constant value. Use the [`init(xStart:xEnd:y:)`](rulemark/init(xstart:xend:y:)-444cp.md) initializer to represent a constant `y` value or [`init(x:yStart:yEnd:)`](rulemark/init(x:ystart:yend:)-6zemd.md) for a constant `x` value. To span the plotting area of a chart with a line, omit the optional start and end parameters and plot a constant value.  The example below results in a line that spans the chart horizontally at the y position of 9000:
+You can annotate a chart with horizontal or vertically spanning rules. This allows viewers to easily compare values over a range to a constant value. Use the [`init(xStart:xEnd:y:)`](./rulemark/init%28xstart,xend,y%29-444cp.md) initializer to represent a constant `y` value or [`init(x:yStart:yEnd:)`](./rulemark/init%28x,ystart,yend%29-6zemd.md) for a constant `x` value. To span the plotting area of a chart with a line, omit the optional start and end parameters and plot a constant value.  The example below results in a line that spans the chart horizontally at the y position of 9000:
 
 ```swift
 struct DepartmentProfit {
@@ -93,11 +94,11 @@ var body: some View {
 }
 ```
 
-![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance, and R&D, and with y-axis ranging from 0 to 15000. There are 3 bars: Production 15000, Marketing 8000, Finance 10000. A rule mark at 9000 shows the break even threshold.](/images/com.apple.Charts/LineSegmentMarkSwift.LineSegmentMarkBarChartWithHorizontalLineSegmentMark@2x.png)
+![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance, and R&D, and with y-axis ranging from 0 to 15000. There are 3 bars: Production 15000, Marketing 8000, Finance 10000. A rule mark at 9000 shows the break even threshold.](https://developer.apple.com/tutorials/images/com.apple.Charts/LineSegmentMarkSwift.LineSegmentMarkBarChartWithHorizontalLineSegmentMark@2x.png)
 
-##### Rulemark in Chart3d
+##### RuleMark in Chart3D
 
-To plot a rule in a 3D chart, use the [`init(x:y:z:)`](rulemark/init(x:y:z:).md) initializer.
+To plot a rule in a 3D chart, use the [`init(x:y:z:)`](./rulemark/init%28x,y,z%29.md) initializer.
 
 The rule extends along the axis that you provide a range for, and is positioned at the single points you specify for the other two axes.
 
@@ -136,44 +137,45 @@ Chart3D {
 ## Topics
 
 ### Initializers
-- [init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)](rulemark/init(x:y:z:).md)
+- [init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)](./rulemark/init%28x,y,z%29.md)
   Creates a horizontal or vertical rule mark for a  3D chart.
-- [init<X, Y>(x: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>)](rulemark/init(x:ystart:yend:)-5gy50.md)
+- [init<X, Y>(x: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>)](./rulemark/init%28x,ystart,yend%29-5gy50.md)
   Creates a vertical rule mark with an x encoding and y interval encoding.
-- [init<X>(x: PlottableValue<X>, yStart: CGFloat?, yEnd: CGFloat?)](rulemark/init(x:ystart:yend:)-6zemd.md)
+- [init<X>(x: PlottableValue<X>, yStart: CGFloat?, yEnd: CGFloat?)](./rulemark/init%28x,ystart,yend%29-6zemd.md)
   Creates a vertical rule mark with value plotted with x.
-- [init<Y>(x: CGFloat?, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>)](rulemark/init(x:ystart:yend:)-8iusl.md)
+- [init<Y>(x: CGFloat?, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>)](./rulemark/init%28x,ystart,yend%29-8iusl.md)
   Creates a vertical rule mark with a fixed x position and y interval encoding.
-- [init<X, Y>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: PlottableValue<Y>)](rulemark/init(xstart:xend:y:)-27yvc.md)
+- [init<X, Y>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: PlottableValue<Y>)](./rulemark/init%28xstart,xend,y%29-27yvc.md)
   Creates a horizontal rule mark that plots values on its x interval and on y.
-- [init<Y>(xStart: CGFloat?, xEnd: CGFloat?, y: PlottableValue<Y>)](rulemark/init(xstart:xend:y:)-444cp.md)
+- [init<Y>(xStart: CGFloat?, xEnd: CGFloat?, y: PlottableValue<Y>)](./rulemark/init%28xstart,xend,y%29-444cp.md)
   Creates a horizontal rule mark that plots a value on y.
-- [init<X>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: CGFloat?)](rulemark/init(xstart:xend:y:)-6jsoi.md)
+- [init<X>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: CGFloat?)](./rulemark/init%28xstart,xend,y%29-6jsoi.md)
   Creates a horizontal rule mark that plots values on its x interval.
 
 ## Relationships
 
 ### Conforms To
-- [Chart3DContent](chart3dcontent.md)
-- [ChartContent](chartcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Chart3DContent](./chart3dcontent.md)
+- [ChartContent](./chartcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AreaMark](areamark.md)
+### Marks
+- [struct AreaMark](./areamark.md)
   Chart content that represents data using the area of one or more regions.
-- [struct LineMark](linemark.md)
+- [struct LineMark](./linemark.md)
   Chart content that represents data using a sequence of connected line segments.
-- [struct PointMark](pointmark.md)
+- [struct PointMark](./pointmark.md)
   Chart content that represents data using points.
-- [struct RectangleMark](rectanglemark.md)
+- [struct RectangleMark](./rectanglemark.md)
   Chart content that represents data using rectangles.
-- [struct BarMark](barmark.md)
+- [struct BarMark](./barmark.md)
   Chart content that represents data using bars.
-- [struct SectorMark](sectormark.md)
+- [struct SectorMark](./sectormark.md)
   A sector of a pie or donut chart, which shows how individual categories make up a meaningful total.
 
 

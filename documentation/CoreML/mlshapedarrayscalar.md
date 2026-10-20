@@ -1,7 +1,8 @@
 # MLShapedArrayScalar
 
 **Framework**: Core ML  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that associates a scalar with a shaped array.
 
@@ -23,16 +24,17 @@ protocol MLShapedArrayScalar
 ## Topics
 
 ### Determining the underlying type
-- [static var multiArrayDataType: MLMultiArrayDataType](mlshapedarrayscalar/multiarraydatatype.md)
+- [static var multiArrayDataType: MLMultiArrayDataType](./mlshapedarrayscalar/multiarraydatatype.md)
   The shaped array’s scalar type as a multiarray data type.
 
 ## See Also
 
-- [associatedtype Scalar : MLShapedArrayScalar](mlshapedarrayprotocol/scalar-swift.associatedtype.md)
+### Supporting types
+- [associatedtype Scalar : MLShapedArrayScalar](./mlshapedarrayprotocol/scalar-swift.associatedtype.md)
   Represents the underlying scalar type of the shaped array type.
-- [struct MLShapedArraySlice](mlshapedarrayslice.md)
+- [struct MLShapedArraySlice](./mlshapedarrayslice.md)
   A multidimensional subset of elements from a shaped array type.
-- [protocol MLShapedArrayRangeExpression](mlshapedarrayrangeexpression.md)
+- [protocol MLShapedArrayRangeExpression](./mlshapedarrayrangeexpression.md)
   An interface for a range expression, which you typically use with subscripts of shaped array types.
 
 

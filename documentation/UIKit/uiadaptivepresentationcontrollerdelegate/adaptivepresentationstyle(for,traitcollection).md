@@ -1,7 +1,8 @@
 # adaptivePresentationStyle(for:traitCollection:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the presentation style to use when the specified set of traits are active.
 
@@ -9,7 +10,7 @@ Asks the delegate for the presentation style to use when the specified set of tr
 - iOS 8.3+
 - iPadOS 8.3+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,19 @@ Asks the delegate for the presentation style to use when the specified set of tr
 optional func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle
 ```
 
+```objc
+- (UIModalPresentationStyle) adaptivePresentationStyleForPresentationController:(UIPresentationController *) controller traitCollection:(UITraitCollection *) traitCollection;
+```
+
 #### Return Value
 
-The new presentation style, which must be [`UIModalPresentationStyle.fullScreen`](uimodalpresentationstyle/fullscreen.md), [`UIModalPresentationStyle.overFullScreen`](uimodalpresentationstyle/overfullscreen.md), [`UIModalPresentationStyle.formSheet`](uimodalpresentationstyle/formsheet.md), or [`UIModalPresentationStyle.none`](uimodalpresentationstyle/none.md).
+The new presentation style, which must be [`UIModalPresentationStyle.fullScreen`](../uimodalpresentationstyle/fullscreen.md), [`UIModalPresentationStyle.overFullScreen`](../uimodalpresentationstyle/overfullscreen.md), [`UIModalPresentationStyle.formSheet`](../uimodalpresentationstyle/formsheet.md), or [`UIModalPresentationStyle.none`](../uimodalpresentationstyle/none.md).
 
 #### Discussion
 
 The presentation controller calls this method when the traits of the current environment are about to change. Your implementation of this method can return the preferred presentation style to use for the specified traits. If you do not return one of the allowed styles, the presentation controller uses its preferred default style.
 
-If you do not implement this method in your delegate, UIKit calls the [`adaptivePresentationStyle(for:)`](uiadaptivepresentationcontrollerdelegate/adaptivepresentationstyle(for:).md) method instead.
+If you do not implement this method in your delegate, UIKit calls the [`adaptivePresentationStyle(for:)`](./adaptivepresentationstyle%28for%29.md) method instead.
 
 ## Parameters
 
@@ -35,7 +40,8 @@ If you do not implement this method in your delegate, UIKit calls the [`adaptive
 
 ## See Also
 
-- [func adaptivePresentationStyle(for: UIPresentationController) -> UIModalPresentationStyle](uiadaptivepresentationcontrollerdelegate/adaptivepresentationstyle(for:).md)
+### Adapting the presentation style
+- [func adaptivePresentationStyle(for: UIPresentationController) -> UIModalPresentationStyle](./adaptivepresentationstyle%28for%29.md)
   Asks the delegate for the new presentation style to use.
 
 

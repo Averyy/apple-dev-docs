@@ -1,7 +1,8 @@
 # object(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value associated with a given key.
 
@@ -20,6 +21,10 @@ Returns the value associated with a given key.
 func object(forKey aKey: Any) -> Any?
 ```
 
+```objc
+- (ObjectType) objectForKey:(KeyType) aKey;
+```
+
 #### Return Value
 
 The value associated with `aKey`, or `nil` if no value is associated with `aKey`.
@@ -30,19 +35,20 @@ The value associated with `aKey`, or `nil` if no value is associated with `aKey`
 
 ## See Also
 
-- [var allKeys: [Any]](nsdictionary/allkeys.md)
+### Accessing Keys and Values
+- [var allKeys: [Any]](./allkeys.md)
   A new array containing the dictionary’s keys, or an empty array if the dictionary has no entries.
-- [func allKeys(for: Any) -> [Any]](nsdictionary/allkeys(for:).md)
+- [func allKeys(for: Any) -> [Any]](./allkeys%28for%29.md)
   Returns a new array containing the keys corresponding to all occurrences of a given object in the dictionary.
-- [var allValues: [Any]](nsdictionary/allvalues.md)
+- [var allValues: [Any]](./allvalues.md)
   A new array containing the dictionary’s values, or an empty array if the dictionary has no entries.
-- [func value(forKey: String) -> Any?](nsdictionary/value(forkey:).md)
+- [func value(forKey: String) -> Any?](./value%28forkey%29.md)
   Returns the value associated with a given key.
-- [func objects(forKeys: [Any], notFoundMarker: Any) -> [Any]](nsdictionary/objects(forkeys:notfoundmarker:).md)
+- [func objects(forKeys: [Any], notFoundMarker: Any) -> [Any]](./objects%28forkeys,notfoundmarker%29.md)
   Returns as a static array the set of objects from the dictionary that corresponds to the specified keys.
-- [subscript(any NSCopying) -> Any?](nsdictionary/subscript(_:)-52n56.md)
+- [subscript(any NSCopying) -> Any?](./subscript%28_%29-52n56.md)
   Returns the value associated with a given key.
-- [subscript(Any) -> Any?](nsdictionary/subscript(_:)-1bt1b.md)
+- [subscript(Any) -> Any?](./subscript%28_%29-1bt1b.md)
   Accesses the value associated with a given key.
 
 

@@ -1,7 +1,8 @@
 # Sound sample description version 0 ('stsd')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 A sound sample description that supports only uncompressed audio in raw or twos-complement format.
 
@@ -14,36 +15,37 @@ Version 0 of the sound description format assumes uncompressed audio in `'raw '`
 ## Topics
 
 ### Data fields
-- [Sample description size](sound_sample_description_version_0/sample_description_size.md)
+- [Sample description size](./sound_sample_description_version_0/sample_description_size.md)
   A 32-bit integer indicating the number of bytes in the sample description.
-- [Data format](sound_sample_description_version_0/data_format.md)
+- [Data format](./sound_sample_description_version_0/data_format.md)
   A 32-bit integer indicating the format of the stored data.
-- [Reserved](sound_sample_description_version_0/reserved.md)
+- [Reserved](./sound_sample_description_version_0/reserved.md)
   Six bytes.
-- [Data reference index](sound_sample_description_version_0/data_reference_index.md)
+- [Data reference index](./sound_sample_description_version_0/data_reference_index.md)
   A 16-bit integer that contains the index of the data reference to use to retrieve data associated with samples that use this sample description.
-- [Version](sound_sample_description_version_0/version.md)
+- [Version](./sound_sample_description_version_0/version.md)
   A 16-bit integer that holds the sample description version.
-- [Revision level](sound_sample_description_version_0/revision_level.md)
+- [Revision level](./sound_sample_description_version_0/revision_level.md)
   A 16-bit integer.
-- [Vendor](sound_sample_description_version_0/vendor.md)
+- [Vendor](./sound_sample_description_version_0/vendor.md)
   A 32-bit integer.
-- [Number of channels](sound_sample_description_version_0/number_of_channels.md)
+- [Number of channels](./sound_sample_description_version_0/number_of_channels.md)
   A 16-bit integer that indicates the number of sound channels used by the sound sample.
-- [Sample size](sound_sample_description_version_0/sample_size.md)
+- [Sample size](./sound_sample_description_version_0/sample_size.md)
   A 16-bit integer that specifies the number of bits in each uncompressed sound sample.
-- [Compression ID](sound_sample_description_version_0/compression_id.md)
+- [Compression ID](./sound_sample_description_version_0/compression_id.md)
   A 16-bit integer.
-- [Packet size](sound_sample_description_version_0/packet_size.md)
+- [Packet size](./sound_sample_description_version_0/packet_size.md)
   A 16-bit integer.
-- [Sample rate](sound_sample_description_version_0/sample_rate.md)
+- [Sample rate](./sound_sample_description_version_0/sample_rate.md)
   A 32-bit unsigned fixed-point number (16.16) that indicates the rate at which the sound samples were obtained.
 
 ## See Also
 
-- [Sound sample description version 1 ('stsd')](sound_sample_description_version_1.md)
+### Using sample descriptions
+- [Sound sample description version 1 ('stsd')](./sound_sample_description_version_1.md)
   An extended sound sample description that supports compressed audio, and includes the ability to add atoms to the sound description.
-- [Sound sample description version 2 ('stsd')](sound_sample_description_version_2.md)
+- [Sound sample description version 2 ('stsd')](./sound_sample_description_version_2.md)
   An updated sound sample description that adds high resolution audio.
 
 

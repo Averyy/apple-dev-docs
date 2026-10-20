@@ -1,7 +1,8 @@
 # MEComposeUserAction
 
 **Framework**: MailKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 12.0+
@@ -12,33 +13,38 @@
 enum MEComposeUserAction
 ```
 
+```c
+enum MEComposeUserAction : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MEComposeUserAction.forward](mecomposeuseraction/forward.md)
-- [MEComposeUserAction.newMessage](mecomposeuseraction/newmessage.md)
-- [MEComposeUserAction.reply](mecomposeuseraction/reply.md)
-- [MEComposeUserAction.replyAll](mecomposeuseraction/replyall.md)
+- [MEComposeUserAction.forward](./mecomposeuseraction/forward.md)
+- [MEComposeUserAction.newMessage](./mecomposeuseraction/newmessage.md)
+- [MEComposeUserAction.reply](./mecomposeuseraction/reply.md)
+- [MEComposeUserAction.replyAll](./mecomposeuseraction/replyall.md)
 ### Initializers
-- [init?(rawValue: Int)](mecomposeuseraction/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mecomposeuseraction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MEComposeSessionError.Code](mecomposesessionerror/code.md)
+### Enumerations
+- [MEComposeSessionError.Code](./mecomposesessionerror/code.md)
   Errors that indicate invalid compose session states.
-- [MEMessageAction.Flag](memessageaction/flag.md)
-- [enum MEMessageEncryptionState](memessageencryptionstate.md)
-- [MEMessageSecurityError.Code](memessagesecurityerror/code.md)
+- [MEMessageAction.Flag](./memessageaction/flag.md)
+- [enum MEMessageEncryptionState](./memessageencryptionstate.md)
+- [MEMessageSecurityError.Code](./memessagesecurityerror/code.md)
 
 
 ---

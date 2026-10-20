@@ -1,14 +1,15 @@
 # kCSRClockStrobeArrivedMidAddress
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kCSRClockStrobeArrivedMidAddress = kCSRCoreRegistersBaseAddress + 0x006C
 ```
 

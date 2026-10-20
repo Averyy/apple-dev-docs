@@ -1,7 +1,8 @@
 # visit(_:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user deleted a group.
 
@@ -19,6 +20,10 @@ Tells the delegate that the user deleted a group.
 optional func visit(_ event: CNChangeHistoryDeleteGroupEvent)
 ```
 
+```objc
+- (void) visitDeleteGroupEvent:(CNChangeHistoryDeleteGroupEvent *) event;
+```
+
 #### Discussion
 
 Inspect the group identifier in the event that the system provides and update your app’s cached data accordingly.
@@ -29,9 +34,10 @@ Inspect the group identifier in the event that the system provides and update yo
 
 ## See Also
 
-- [func visit(CNChangeHistoryAddGroupEvent)](cnchangehistoryeventvisitor/visit(_:)-ve62.md)
+### Updating groups
+- [func visit(CNChangeHistoryAddGroupEvent)](./visit%28_%29-ve62.md)
   Tells the delegate that the user added a group.
-- [func visit(CNChangeHistoryUpdateGroupEvent)](cnchangehistoryeventvisitor/visit(_:)-23p9h.md)
+- [func visit(CNChangeHistoryUpdateGroupEvent)](./visit%28_%29-23p9h.md)
   Tells the delegate that the user updated a group.
 
 

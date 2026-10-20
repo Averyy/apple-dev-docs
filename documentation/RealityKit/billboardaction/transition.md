@@ -1,7 +1,8 @@
 # BillboardAction.Transition
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The duration and timing of how an action event transitions from one state to another.
 
@@ -22,19 +23,19 @@ struct Transition
 ## Topics
 
 ### Initializers
-- [init(duration: TimeInterval, timingFunction: AnimationTimingFunction)](billboardaction/transition/init(duration:timingfunction:).md)
+- [init(duration: TimeInterval, timingFunction: AnimationTimingFunction)](./transition/init%28duration,timingfunction%29.md)
   Creates a transition with a duration and timing function.
 ### Instance Properties
-- [var duration: TimeInterval](billboardaction/transition/duration.md)
+- [var duration: TimeInterval](./transition/duration.md)
   The amount of time the transition takes to go from one state to another.
-- [var timingFunction: AnimationTimingFunction](billboardaction/transition/timingfunction.md)
+- [var timingFunction: AnimationTimingFunction](./transition/timingfunction.md)
   The rate of change at the beginning and end of the transition.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
 
 
 ---

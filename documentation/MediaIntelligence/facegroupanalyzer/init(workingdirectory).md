@@ -1,7 +1,8 @@
 # init(workingDirectory:)
 
 **Framework**: Media Intelligence  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a face group analyzer at the specified directory.
 
@@ -21,7 +22,7 @@ init(workingDirectory: URL) throws
 
 ## Mentions
 
-- [Detecting and grouping faces in images](detecting-and-grouping-faces-in-images.md)
+- [Detecting and grouping faces in images](../detecting-and-grouping-faces-in-images.md)
 
 #### Discussion
 

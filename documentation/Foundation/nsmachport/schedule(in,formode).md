@@ -1,7 +1,8 @@
 # schedule(in:forMode:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules the receiver into the run loop mode `mode` of `runLoop`.
 
@@ -20,9 +21,13 @@ Schedules the receiver into the run loop mode `mode` of `runLoop`.
 func schedule(in runLoop: RunLoop, forMode mode: RunLoop.Mode)
 ```
 
+```objc
+- (void) scheduleInRunLoop:(NSRunLoop *) runLoop forMode:(NSRunLoopMode) mode;
+```
+
 #### Discussion
 
-When the receiver is scheduled, the run loop monitors the mach port for incoming messages and, when a message arrives, invokes the delegate method [`handleMachMessage(_:)`](nsmachportdelegate/handlemachmessage(_:).md).
+When the receiver is scheduled, the run loop monitors the mach port for incoming messages and, when a message arrives, invokes the delegate method [`handleMachMessage(_:)`](../nsmachportdelegate/handlemachmessage%28_%29.md).
 
 ## Parameters
 
@@ -31,7 +36,8 @@ When the receiver is scheduled, the run loop monitors the mach port for incoming
 
 ## See Also
 
-- [func remove(from: RunLoop, forMode: RunLoop.Mode)](nsmachport/remove(from:formode:).md)
+### Scheduling the Port on a Run Loop
+- [func remove(from: RunLoop, forMode: RunLoop.Mode)](./remove%28from,formode%29.md)
   Removes the receiver from the run loop mode `mode` of `runLoop`.
 
 

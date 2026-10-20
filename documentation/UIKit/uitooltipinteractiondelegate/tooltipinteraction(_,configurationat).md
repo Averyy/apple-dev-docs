@@ -1,7 +1,8 @@
 # toolTipInteraction(_:configurationAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for a tooltip configuration that describes the tooltip settings.
 
@@ -14,6 +15,10 @@ Asks the delegate for a tooltip configuration that describes the tooltip setting
 
 ```swift
 optional func toolTipInteraction(_ interaction: UIToolTipInteraction, configurationAt point: CGPoint) -> UIToolTipConfiguration?
+```
+
+```objc
+- (UIToolTipConfiguration *) toolTipInteraction:(UIToolTipInteraction *) interaction configurationAtPoint:(CGPoint) point;
 ```
 
 #### Return Value
@@ -53,7 +58,8 @@ func toolTipInteraction(_ interaction: UIToolTipInteraction, configurationAt poi
 
 ## See Also
 
-- [class UIToolTipConfiguration](uitooltipconfiguration.md)
+### Providing a tooltip configuration
+- [class UIToolTipConfiguration](../uitooltipconfiguration.md)
   An object that a tooltip interaction delegate uses to describe the tooltip settings.
 
 

@@ -1,7 +1,8 @@
 # SCSensitivityAnalysis
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that indicates whether sensitive content is present and includes intervention guidance.
 
@@ -18,48 +19,52 @@ An object that indicates whether sensitive content is present and includes inter
 class SCSensitivityAnalysis
 ```
 
+```objc
+@interface SCSensitivityAnalysis : NSObject
+```
+
 ## Mentions
 
-- [Testing your app’s response to sensitive media](testing-your-app-s-response-to-sensitive-media.md)
+- [Testing your app’s response to sensitive media](./testing-your-app-s-response-to-sensitive-media.md)
 
 #### Overview
 
 The framework provides an instance of this class to convey the results of content sensitivity checks, for example:
 
-- The [`SCSensitivityAnalyzer`](scsensitivityanalyzer.md) completion handler [`analyzeImage(_:completionHandler:)`](scsensitivityanalyzer/analyzeimage(_:completionhandler:).md)
-- The [`SCVideoStreamAnalyzer`](scvideostreamanalyzer.md) callback [`SCVideoStreamAnalysisChangeHandler`](scvideostreamanalysischangehandler.md)
+- The [`SCSensitivityAnalyzer`](./scsensitivityanalyzer.md) completion handler [`analyzeImage(_:completionHandler:)`](./scsensitivityanalyzer/analyzeimage%28_,completionhandler%29.md)
+- The [`SCVideoStreamAnalyzer`](./scvideostreamanalyzer.md) callback [`SCVideoStreamAnalysisChangeHandler`](./scvideostreamanalysischangehandler.md)
 
 ## Topics
 
 ### Confirming the presence of sensitive content
-- [var isSensitive: Bool](scsensitivityanalysis/issensitive.md)
+- [var isSensitive: Bool](./scsensitivityanalysis/issensitive.md)
   A Boolean value that indicates whether the checked content contains sensitive material.
 ### Identifying content categories
-- [var detectedTypes: Set<SCSensitivityAnalysis.ContentType>](scsensitivityanalysis/detectedtypes.md)
+- [var detectedTypes: Set<SCSensitivityAnalysis.ContentType>](./scsensitivityanalysis/detectedtypes.md)
   A property that contains the categories of sensitive content that analysis detects.
-- [SCSensitivityAnalysis.ContentType](scsensitivityanalysis/contenttype.md)
+- [SCSensitivityAnalysis.ContentType](./scsensitivityanalysis/contenttype.md)
   A type that identifies a category of sensitive content.
 ### Receiving intervention guidance
-- [var shouldIndicateSensitivity: Bool](scsensitivityanalysis/shouldindicatesensitivity.md)
+- [var shouldIndicateSensitivity: Bool](./scsensitivityanalysis/shouldindicatesensitivity.md)
   Intervention guidance that suggests the app indicate the presence of sensitive content.
-- [var shouldInterruptVideo: Bool](scsensitivityanalysis/shouldinterruptvideo.md)
+- [var shouldInterruptVideo: Bool](./scsensitivityanalysis/shouldinterruptvideo.md)
   Intervention guidance that suggests the app interrupt the video stream.
-- [var shouldMuteAudio: Bool](scsensitivityanalysis/shouldmuteaudio.md)
+- [var shouldMuteAudio: Bool](./scsensitivityanalysis/shouldmuteaudio.md)
   Intervention guidance that suggests the app mute the audio of the current video stream.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # P384.Signing.ECDSASignature
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A P-384 elliptic curve digital signature algorithm (ECDSA) signature.
 
@@ -23,28 +24,29 @@ struct ECDSASignature
 ## Topics
 
 ### Creating a signature
-- [init<D>(derRepresentation: D) throws](p384/signing/ecdsasignature/init(derrepresentation:).md)
+- [init<D>(derRepresentation: D) throws](./ecdsasignature/init%28derrepresentation%29.md)
   Creates a P-384 digital signature from a Distinguished Encoding Rules (DER) encoded representation.
-- [init<D>(rawRepresentation: D) throws](p384/signing/ecdsasignature/init(rawrepresentation:).md)
+- [init<D>(rawRepresentation: D) throws](./ecdsasignature/init%28rawrepresentation%29.md)
   Creates a P-384 digital signature from a raw representation.
 ### Representing the signature
-- [var derRepresentation: Data](p384/signing/ecdsasignature/derrepresentation.md)
+- [var derRepresentation: Data](./ecdsasignature/derrepresentation.md)
   A Distinguished Encoding Rules (DER) encoded representation of a P-384 digital signature.
-- [var rawRepresentation: Data](p384/signing/ecdsasignature/rawrepresentation.md)
+- [var rawRepresentation: Data](./ecdsasignature/rawrepresentation.md)
   A raw data representation of a P-384 digital signature.
 
 ## Relationships
 
 ### Conforms To
-- [ContiguousBytes](../foundation/contiguousbytes.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ContiguousBytes](../../../Foundation/contiguousbytes.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func signature<D>(for: D) throws -> P384.Signing.ECDSASignature](p384/signing/privatekey/signature(for:)-8nncg.md)
+### Creating a signature
+- [func signature<D>(for: D) throws -> P384.Signing.ECDSASignature](./privatekey/signature%28for%29-8nncg.md)
   Generates an Elliptic Curve Digital Signature Algorithm (ECDSA) signature of the data you provide over the P-384 elliptic curve, using SHA-384 as the hash function.
-- [func signature<D>(for: D) throws -> P384.Signing.ECDSASignature](p384/signing/privatekey/signature(for:)-wrsj.md)
+- [func signature<D>(for: D) throws -> P384.Signing.ECDSASignature](./privatekey/signature%28for%29-wrsj.md)
   Generates an Elliptic Curve Digital Signature Algorithm (ECDSA) signature of the digest you provide over the P-384 elliptic curve.
 
 

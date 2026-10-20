@@ -1,7 +1,8 @@
 # willStartLiveScrollNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted on the main thread at the beginning of user-initiated live scroll tracking (gesture scroll or scroller tracking, for example, thumb dragging).
 
@@ -14,21 +15,26 @@ Posted on the main thread at the beginning of user-initiated live scroll trackin
 class let willStartLiveScrollNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const NSScrollViewWillStartLiveScrollNotification;
+```
+
 #### Discussion
 
 The notification object is the scroll view performing the scroll.
 
-To observe this notification using Swift concurrency, use [`NSScrollView.WillStartLiveScrollMessage`](nsscrollview/willstartlivescrollmessage.md).
+To observe this notification using Swift concurrency, use [`NSScrollView.WillStartLiveScrollMessage`](./willstartlivescrollmessage.md).
 
 ## See Also
 
-- [class let willStartLiveMagnifyNotification: NSNotification.Name](nsscrollview/willstartlivemagnifynotification.md)
+### Notifications
+- [class let willStartLiveMagnifyNotification: NSNotification.Name](./willstartlivemagnifynotification.md)
   Posted at the beginning of a magnify gesture.
-- [class let didEndLiveMagnifyNotification: NSNotification.Name](nsscrollview/didendlivemagnifynotification.md)
+- [class let didEndLiveMagnifyNotification: NSNotification.Name](./didendlivemagnifynotification.md)
   Posted at the end of a magnify gesture.
-- [class let didLiveScrollNotification: NSNotification.Name](nsscrollview/didlivescrollnotification.md)
+- [class let didLiveScrollNotification: NSNotification.Name](./didlivescrollnotification.md)
   Posted on the main thread after changing the clipview bounds origin due to a user-initiated event.
-- [class let didEndLiveScrollNotification: NSNotification.Name](nsscrollview/didendlivescrollnotification.md)
+- [class let didEndLiveScrollNotification: NSNotification.Name](./didendlivescrollnotification.md)
   Posted on the main thread at the end of live scroll tracking.
 
 

@@ -1,7 +1,8 @@
 # LevelOfDetailComponent.SelectionStrategy.ResolutionMetric
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -20,17 +21,18 @@ struct ResolutionMetric
 ## Topics
 
 ### Creating a resolution metric
-- [init(switchingResolutions: [LevelOfDetailComponent.SelectionStrategy.ResolutionMetric.DirectionalSwitchingResolutions], boundingBox: BoundingBox)](levelofdetailcomponent/selectionstrategy/resolutionmetric/init(switchingresolutions:boundingbox:).md)
+- [init(switchingResolutions: [LevelOfDetailComponent.SelectionStrategy.ResolutionMetric.DirectionalSwitchingResolutions], boundingBox: BoundingBox)](./resolutionmetric/init%28switchingresolutions,boundingbox%29.md)
   Creates a resolution metric for a level of detail component to switch with.
 ### Configuring the metric
-- [var switchingResolutions: [LevelOfDetailComponent.SelectionStrategy.ResolutionMetric.DirectionalSwitchingResolutions]](levelofdetailcomponent/selectionstrategy/resolutionmetric/switchingresolutions.md)
-- [LevelOfDetailComponent.SelectionStrategy.ResolutionMetric.DirectionalSwitchingResolutions](levelofdetailcomponent/selectionstrategy/resolutionmetric/directionalswitchingresolutions.md)
+- [var switchingResolutions: [LevelOfDetailComponent.SelectionStrategy.ResolutionMetric.DirectionalSwitchingResolutions]](./resolutionmetric/switchingresolutions.md)
+- [LevelOfDetailComponent.SelectionStrategy.ResolutionMetric.DirectionalSwitchingResolutions](./resolutionmetric/directionalswitchingresolutions.md)
   A struct containing the ideal switching resolutions for a single detail level in a `LevelOfDetailComponent` when viewed from a specific direction. Note that switching may not actually occur at these resolutions depending on device performance.
-- [let boundingBox: BoundingBox](levelofdetailcomponent/selectionstrategy/resolutionmetric/boundingbox.md)
+- [let boundingBox: BoundingBox](./resolutionmetric/boundingbox.md)
 
 ## See Also
 
-- [static func resolutionMetric(switchingResolutions: [LevelOfDetailComponent.SelectionStrategy.ResolutionMetric.DirectionalSwitchingResolutions], boundingBox: BoundingBox) -> LevelOfDetailComponent.SelectionStrategy](levelofdetailcomponent/selectionstrategy/resolutionmetric(switchingresolutions:boundingbox:).md)
+### Selecting by resolution metric
+- [static func resolutionMetric(switchingResolutions: [LevelOfDetailComponent.SelectionStrategy.ResolutionMetric.DirectionalSwitchingResolutions], boundingBox: BoundingBox) -> LevelOfDetailComponent.SelectionStrategy](./resolutionmetric%28switchingresolutions,boundingbox%29.md)
   Creates a resolution metric for a level of detail component to switch with.
 
 

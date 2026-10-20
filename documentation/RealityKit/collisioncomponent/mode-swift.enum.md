@@ -1,7 +1,8 @@
 # CollisionComponent.Mode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A mode that dictates how much collision data is collected for a given entity.
 
@@ -11,7 +12,7 @@ A mode that dictates how much collision data is collected for a given entity.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,38 +23,39 @@ enum Mode
 ## Topics
 
 ### Collision modes
-- [CollisionComponent.Mode.default](collisioncomponent/mode-swift.enum/default.md)
+- [CollisionComponent.Mode.default](./mode-swift.enum/default.md)
   A default collision object.
-- [CollisionComponent.Mode.trigger](collisioncomponent/mode-swift.enum/trigger.md)
+- [CollisionComponent.Mode.trigger](./mode-swift.enum/trigger.md)
   A trigger collision object.
 ### Enumeration Cases
-- [CollisionComponent.Mode.colliding](collisioncomponent/mode-swift.enum/colliding.md)
+- [CollisionComponent.Mode.colliding](./mode-swift.enum/colliding.md)
   An environmental collision object.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [Simulating physics with collisions in your visionOS app](simulating-physics-with-collisions-in-your-visionos-app.md)
+### Collision shapes and groups
+- [Simulating physics with collisions in your visionOS app](../simulating-physics-with-collisions-in-your-visionos-app.md)
   Create entities that behave and react like physical objects in a RealityKit view.
-- [Configuring Collision in RealityKit](configuring-collision-in-realitykit.md)
+- [Configuring Collision in RealityKit](../configuring-collision-in-realitykit.md)
   Use collision groups and collision filters to control which objects collide.
-- [Creating an interactive 3D model in visionOS](../visionos/creating-an-interactable-3d-model-in-visionos.md)
+- [Creating an interactive 3D model in visionOS](../../visionOS/creating-an-interactable-3d-model-in-visionos.md)
   Display an interactive car model using gestures in a reality view.
-- [struct CollisionComponent](collisioncomponent.md)
+- [struct CollisionComponent](../collisioncomponent.md)
   A component that gives an entity the ability to collide with other entities that also have collision components.
-- [class ShapeResource](shaperesource.md)
+- [class ShapeResource](../shaperesource.md)
   A representation of a shape.
-- [enum ShapeResourceError](shaperesourceerror.md)
-- [struct CollisionGroup](collisiongroup.md)
+- [enum ShapeResourceError](../shaperesourceerror.md)
+- [struct CollisionGroup](../collisiongroup.md)
   A bitmask used to define the collision group to which an entity belongs.
-- [struct CollisionFilter](collisionfilter.md)
+- [struct CollisionFilter](../collisionfilter.md)
   A set of masks that determine whether entities can collide during simulations.
-- [class TriggerVolume](triggervolume.md)
+- [class TriggerVolume](../triggervolume.md)
   An invisible 3D shape that detects when objects enter or exit a given region of space.
 
 

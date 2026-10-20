@@ -1,7 +1,8 @@
 # hevcSyncSampleNALUnitType
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates sync sample NAL unit type.
 

@@ -1,7 +1,8 @@
 # polyline
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The detailed route geometry.
 
@@ -20,15 +21,20 @@ The detailed route geometry.
 var polyline: MKPolyline { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MKPolyline * polyline;
+```
+
 #### Discussion
 
 The polyline object in this property reflects the complete path of the route, including all of its steps. You can use the polyline object as an overlay in a map view.
 
 ## See Also
 
-- [var steps: [MKRoute.Step]](mkroute/steps.md)
+### Getting the route geometry
+- [var steps: [MKRoute.Step]](./steps.md)
   The array of steps that create the overall route.
-- [MKRoute.Step](mkroute/step.md)
+- [MKRoute.Step](./step.md)
   One portion of an overall route.
 
 

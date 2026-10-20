@@ -12,11 +12,11 @@ This object is accessed using the `my.result` property.
 ## Topics
 
 ### Working with Result Properties
-- [message](result/1811962-message.md)
+- [message](./result/api-1811962-message.md)
   A String describing the cause of a warning or fatal result.
-- [type](result/1811969-type.md)
+- [type](./result/api-1811969-type.md)
   The type of the result.
-- [title](result/1811977-title.md)
+- [title](./result/api-1811977-title.md)
   The title of the warning.
 
 

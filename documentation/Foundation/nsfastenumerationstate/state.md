@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Arbitrary state information used by the iterator. Typically this is set to `0` at the beginning of the iteration.
 
@@ -18,6 +19,10 @@ Arbitrary state information used by the iterator. Typically this is set to `0` a
 
 ```swift
 var state: UInt
+```
+
+```c
+unsigned long state;
 ```
 
 

@@ -1,18 +1,19 @@
 # patternDashDotDot
 
 **Framework**: Core Text  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A modifier that indicates to draw an underline using a pattern of a dash followed by two dots.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ A modifier that indicates to draw an underline using a pattern of a dash followe
 static var patternDashDotDot: CTUnderlineStyleModifiers { get }
 ```
 
+```c
+kCTUnderlinePatternDashDotDot
+```
+
 ## See Also
 
-- [static var patternSolid: CTUnderlineStyleModifiers](ctunderlinestylemodifiers/patternsolid.md)
+### Constants
+- [static var patternSolid: CTUnderlineStyleModifiers](./patternsolid.md)
   A modifier that indicates to draw a solid underline.
-- [static var patternDot: CTUnderlineStyleModifiers](ctunderlinestylemodifiers/patterndot.md)
+- [static var patternDot: CTUnderlineStyleModifiers](./patterndot.md)
   A modifier that indicates to draw an underline using a pattern of dots.
-- [static var patternDash: CTUnderlineStyleModifiers](ctunderlinestylemodifiers/patterndash.md)
+- [static var patternDash: CTUnderlineStyleModifiers](./patterndash.md)
   A modifier that indicates to draw an underline using a pattern of dashes.
-- [static var patternDashDot: CTUnderlineStyleModifiers](ctunderlinestylemodifiers/patterndashdot.md)
+- [static var patternDashDot: CTUnderlineStyleModifiers](./patterndashdot.md)
   A modifier that indicates to draw an underline using a pattern of alternating dashes and dots.
 
 

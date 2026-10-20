@@ -1,7 +1,8 @@
 # SampledAnimation.SkeletalAnimationOperation.RootMotionOptions
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for controlling root motion extraction.
 
@@ -22,36 +23,37 @@ struct RootMotionOptions
 ## Topics
 
 ### Extracting translation
-- [static let extractAll: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](sampledanimation/skeletalanimationoperation/rootmotionoptions/extractall.md)
+- [static let extractAll: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](./rootmotionoptions/extractall.md)
   All motion is extracted and returned.
-- [static let translationX: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](sampledanimation/skeletalanimationoperation/rootmotionoptions/translationx.md)
+- [static let translationX: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](./rootmotionoptions/translationx.md)
   Translation X is extracted.
-- [static let translationY: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](sampledanimation/skeletalanimationoperation/rootmotionoptions/translationy.md)
+- [static let translationY: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](./rootmotionoptions/translationy.md)
   Translation Y is extracted.
-- [static let translationZ: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](sampledanimation/skeletalanimationoperation/rootmotionoptions/translationz.md)
+- [static let translationZ: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](./rootmotionoptions/translationz.md)
   Translation Z is extracted.
-- [static let translationXZ: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](sampledanimation/skeletalanimationoperation/rootmotionoptions/translationxz.md)
+- [static let translationXZ: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](./rootmotionoptions/translationxz.md)
   Translation XZ is extracted (common for ground-based locomotion).
 ### Extracting rotation
-- [static let rotationX: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](sampledanimation/skeletalanimationoperation/rootmotionoptions/rotationx.md)
+- [static let rotationX: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](./rootmotionoptions/rotationx.md)
   Rotation X is extracted.
-- [static let rotationY: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](sampledanimation/skeletalanimationoperation/rootmotionoptions/rotationy.md)
+- [static let rotationY: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](./rootmotionoptions/rotationy.md)
   Rotation Y is extracted.
-- [static let rotationZ: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](sampledanimation/skeletalanimationoperation/rootmotionoptions/rotationz.md)
+- [static let rotationZ: SampledAnimation<JointTransforms>.SkeletalAnimationOperation.RootMotionOptions](./rootmotionoptions/rotationz.md)
   Rotation Z is extracted.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../../Swift/optionset.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [SetAlgebra](../../../Swift/setalgebra.md)
 
 ## See Also
 
-- [static func extractRootMotion(jointName: String, options: SampledAnimation<Value>.SkeletalAnimationOperation.RootMotionOptions, lockPosition: Transform?) -> SampledAnimation<Value>.SkeletalAnimationOperation](sampledanimation/skeletalanimationoperation/extractrootmotion(jointname:options:lockposition:).md)
+### Extracting root motion
+- [static func extractRootMotion(jointName: String, options: SampledAnimation<Value>.SkeletalAnimationOperation.RootMotionOptions, lockPosition: Transform?) -> SampledAnimation<Value>.SkeletalAnimationOperation](./extractrootmotion%28jointname,options,lockposition%29.md)
   Extracts root motion from the specified joint.
 
 

@@ -1,7 +1,8 @@
 # Preview Surface
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 A MaterialX version of USD Preview Surface.
 
@@ -15,7 +16,25 @@ A MaterialX version of USD Preview Surface.
 
 #### Parameter Types
 
-#### Parameter Description
+| Input | Type |
+| --- | --- |
+| `Diffuse Color` | Color3 |
+| `Roughness` | Float |
+| `Metallic` | Float |
+| `Opacity` | Float |
+| `Normal` | Vector3f |
+| `Clearcoat` | Float |
+| `Clearcoat Roughness` | Float |
+| `Emissive Color` | Color3 |
+| `Index of Refraction` | Float |
+| `Ambient Occlusion` | Float |
+| `Opacity Threshold` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Token |
+
+#### Parameter description
 
 - **`Diffuse Color`**: The base display color of the surface. The color of an object under pure white light.
 - **`Roughness`**: The level of roughness of the surface. This value ranges between `0` and `1.0`, with `0` outputting a perfectly specular surface and `1.0` indicating maximum roughness. The default is `0.5`.
@@ -32,6 +51,10 @@ A MaterialX version of USD Preview Surface.
 #### Discussion
 
 The `Preview Surface` node produces a custom surface based on its input parameters. Connect the output of the `Preview Surface` node to the `Custom Surface` output of your material. Below is an example material that uses only the `Preview Surface` node to produce a gold-like texture and apply it to a sphere:
+
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/PreviewSurfaceMaterial.png)
+
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/PreviewSurfaceInputs.png)
 
 
 ---

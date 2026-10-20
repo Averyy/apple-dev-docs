@@ -1,7 +1,8 @@
 # updateAppearance(forLockupViewState:)
 
 **Framework**: TVUIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides an opportunity to change the appearance of a view when a state changes.
 
@@ -12,6 +13,10 @@ Provides an opportunity to change the appearance of a view when a state changes.
 
 ```swift
 optional func updateAppearance(forLockupViewState state: UIControl.State)
+```
+
+```objc
+- (void) updateAppearanceForLockupViewState:(UIControlState) state;
 ```
 
 

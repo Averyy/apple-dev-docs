@@ -1,7 +1,8 @@
 # MTRNetworkCommissioningClusterScanNetworksResponseParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,29 +19,33 @@
 class MTRNetworkCommissioningClusterScanNetworksResponseParams
 ```
 
+```objc
+@interface MTRNetworkCommissioningClusterScanNetworksResponseParams : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(responseValue: [String : Any]) throws](mtrnetworkcommissioningclusterscannetworksresponseparams/init(responsevalue:).md)
+- [init(responseValue: [String : Any]) throws](./mtrnetworkcommissioningclusterscannetworksresponseparams/init%28responsevalue%29.md)
 ### Instance Properties
-- [var debugText: String?](mtrnetworkcommissioningclusterscannetworksresponseparams/debugtext.md)
-- [var networkingStatus: NSNumber](mtrnetworkcommissioningclusterscannetworksresponseparams/networkingstatus.md)
-- [var threadScanResults: [Any]?](mtrnetworkcommissioningclusterscannetworksresponseparams/threadscanresults.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrnetworkcommissioningclusterscannetworksresponseparams/timedinvoketimeoutms.md)
-- [var wiFiScanResults: [Any]?](mtrnetworkcommissioningclusterscannetworksresponseparams/wifiscanresults.md)
+- [var debugText: String?](./mtrnetworkcommissioningclusterscannetworksresponseparams/debugtext.md)
+- [var networkingStatus: NSNumber](./mtrnetworkcommissioningclusterscannetworksresponseparams/networkingstatus.md)
+- [var threadScanResults: [Any]?](./mtrnetworkcommissioningclusterscannetworksresponseparams/threadscanresults.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrnetworkcommissioningclusterscannetworksresponseparams/timedinvoketimeoutms.md)
+- [var wiFiScanResults: [Any]?](./mtrnetworkcommissioningclusterscannetworksresponseparams/wifiscanresults.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

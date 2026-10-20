@@ -1,7 +1,8 @@
 # time
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scene time, in seconds, that the renderer passes to shaders as a uniform.
 

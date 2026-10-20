@@ -1,7 +1,8 @@
 # kUSBPowerDuringWakeUSB3
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The system requests extra power allocation.
 
@@ -10,7 +11,7 @@ The system requests extra power allocation.
 
 ## Declaration
 
-```swift
+```c
 kUSBPowerDuringWakeUSB3 = 7
 ```
 

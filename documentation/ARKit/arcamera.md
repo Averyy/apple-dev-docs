@@ -1,7 +1,8 @@
 # ARCamera
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Information about the camera position and imaging characteristics for a given frame.
 
@@ -15,67 +16,71 @@ Information about the camera position and imaging characteristics for a given fr
 class ARCamera
 ```
 
+```objc
+@interface ARCamera : NSObject
+```
+
 ## Mentions
 
-- [Managing Session Life Cycle and Tracking Quality](managing-session-life-cycle-and-tracking-quality.md)
-- [Understanding World Tracking](understanding-world-tracking.md)
+- [Managing Session Life Cycle and Tracking Quality](./managing-session-life-cycle-and-tracking-quality.md)
+- [Understanding World Tracking](./understanding-world-tracking.md)
 
 #### Overview
 
-You get camera information from the [`camera`](arframe/camera.md) property of each [`ARFrame`](arframe.md) ARKit delivers.
+You get camera information from the [`camera`](./arframe/camera.md) property of each [`ARFrame`](./arframe.md) ARKit delivers.
 
 ## Topics
 
 ### Handling Tracking Status
-- [var trackingState: ARCamera.TrackingState](arcamera/trackingstate-6i3pt.md)
+- [var trackingState: ARCamera.TrackingState](./arcamera/trackingstate-6i3pt.md)
   The general quality of position tracking available when the camera captured a frame.
-- [ARCamera.TrackingState](arcamera/trackingstate-swift.enum.md)
+- [ARCamera.TrackingState](./arcamera/trackingstate-swift.enum.md)
   Values for position tracking quality, with possible causes when tracking quality is limited.
 ### Examining Camera Geometry
-- [var transform: simd_float4x4](arcamera/transform.md)
+- [var transform: simd_float4x4](./arcamera/transform.md)
   The position and orientation of the camera in world coordinate space.
-- [var eulerAngles: simd_float3](arcamera/eulerangles.md)
+- [var eulerAngles: simd_float3](./arcamera/eulerangles.md)
   The orientation of the camera, expressed as roll, pitch, and yaw values.
 ### Examining Imaging Parameters
-- [var imageResolution: CGSize](arcamera/imageresolution.md)
+- [var imageResolution: CGSize](./arcamera/imageresolution.md)
   The width and height, in pixels, of the captured camera image.
-- [var intrinsics: simd_float3x3](arcamera/intrinsics.md)
+- [var intrinsics: simd_float3x3](./arcamera/intrinsics.md)
   A matrix that converts between the 2D camera plane and 3D world coordinate space.
 ### Applying Camera Geometry
-- [var projectionMatrix: simd_float4x4](arcamera/projectionmatrix.md)
+- [var projectionMatrix: simd_float4x4](./arcamera/projectionmatrix.md)
   A transform matrix appropriate for rendering 3D content to match the image captured by the camera.
-- [func unprojectPoint(CGPoint, ontoPlane: simd_float4x4, orientation: UIInterfaceOrientation, viewportSize: CGSize) -> simd_float3?](arcamera/unprojectpoint(_:ontoplane:orientation:viewportsize:).md)
+- [func unprojectPoint(CGPoint, ontoPlane: simd_float4x4, orientation: UIInterfaceOrientation, viewportSize: CGSize) -> simd_float3?](./arcamera/unprojectpoint%28_,ontoplane,orientation,viewportsize%29.md)
   Returns the projection of a point from the 2D space of a view rendering the scene onto a plane in the 3D world space detected by ARKit.
 ### Applying Motion Blur
-- [var exposureDuration: TimeInterval](arcamera/exposureduration.md)
+- [var exposureDuration: TimeInterval](./arcamera/exposureduration.md)
   A value you use to effect motion blur when rendering your app’s virtual content.
 ### Applying Post-Processed Lighting
-- [var exposureOffset: Float](arcamera/exposureoffset.md)
+- [var exposureOffset: Float](./arcamera/exposureoffset.md)
   A value you supply to your custom renderer to light your scene.
 ### Instance Methods
-- [func projectPoint(simd_float3, viewRotationAngle: CGFloat, viewportSize: CGSize) -> CGPoint](arcamera/projectpoint(_:viewrotationangle:viewportsize:).md)
+- [func projectPoint(simd_float3, viewRotationAngle: CGFloat, viewportSize: CGSize) -> CGPoint](./arcamera/projectpoint%28_,viewrotationangle,viewportsize%29.md)
   Project a 3D point in world coordinate system into 2D viewport space.
-- [func projectionMatrix(viewRotationAngle: CGFloat, viewportSize: CGSize, zNear: CGFloat, zFar: CGFloat) -> simd_float4x4](arcamera/projectionmatrix(viewrotationangle:viewportsize:znear:zfar:).md)
+- [func projectionMatrix(viewRotationAngle: CGFloat, viewportSize: CGSize, zNear: CGFloat, zFar: CGFloat) -> simd_float4x4](./arcamera/projectionmatrix%28viewrotationangle,viewportsize,znear,zfar%29.md)
   Creates a projection matrix for the camera given rendering parameters.
-- [func unprojectPoint(CGPoint, ontoPlane: simd_float4x4, viewRotationAngle: CGFloat, viewportSize: CGSize) -> simd_float3?](arcamera/unprojectpoint(_:ontoplane:viewrotationangle:viewportsize:).md)
+- [func unprojectPoint(CGPoint, ontoPlane: simd_float4x4, viewRotationAngle: CGFloat, viewportSize: CGSize) -> simd_float3?](./arcamera/unprojectpoint%28_,ontoplane,viewrotationangle,viewportsize%29.md)
   Unprojects a 2D point in image space onto a 3D plane in world space.
-- [func viewMatrix(viewRotationAngle: CGFloat) -> simd_float4x4](arcamera/viewmatrix(viewrotationangle:).md)
+- [func viewMatrix(viewRotationAngle: CGFloat) -> simd_float4x4](./arcamera/viewmatrix%28viewrotationangle%29.md)
   Returns the view matrix for the camera with a given view angle.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

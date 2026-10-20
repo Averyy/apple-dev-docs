@@ -1,7 +1,8 @@
 # allowsOnlyParticipantsToRun
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether only participant applications are allowed to run during an assessment.
 
@@ -15,11 +16,15 @@ A Boolean value that indicates whether only participant applications are allowed
 var allowsOnlyParticipantsToRun: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL allowsOnlyParticipantsToRun;
+```
+
 #### Discussion
 
-Only validly signed participants can be permitted. The launch allowlist pins each entry to the code signing identifier and team identifier read from its signature, so an unsigned or invalidly signed participant has no identity to pin and is denied launch even though you configured it as a participant. This holds regardless of [`requiresSignatureValidation`](aeassessmentbinaryexecutable/requiressignaturevalidation.md).
+Only validly signed participants can be permitted. The launch allowlist pins each entry to the code signing identifier and team identifier read from its signature, so an unsigned or invalidly signed participant has no identity to pin and is denied launch even though you configured it as a participant. This holds regardless of [`requiresSignatureValidation`](../aeassessmentbinaryexecutable/requiressignaturevalidation.md).
 
-> **Note**: [`AEAssessmentBinaryExecutable`](aeassessmentbinaryexecutable.md) for how an unenforceable executable participant affects the session.
+> **See Also**: [`AEAssessmentBinaryExecutable`](../aeassessmentbinaryexecutable.md) for how an unenforceable executable participant affects the session.
 
 
 ---

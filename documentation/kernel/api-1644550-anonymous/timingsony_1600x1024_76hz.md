@@ -1,14 +1,15 @@
 # timingSony_1600x1024_76hz
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 timingSony_1600x1024_76hz = 500
 ```
 

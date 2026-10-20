@@ -1,7 +1,8 @@
 # NSShiftJISStringEncoding
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 8-bit Shift-JIS encoding for Japanese text.
 
@@ -20,11 +21,16 @@
 var NSShiftJISStringEncoding: UInt { get }
 ```
 
+```c
+NSShiftJISStringEncoding
+```
+
 ## See Also
 
-- [var NSISO2022JPStringEncoding: UInt](nsiso2022jpstringencoding.md)
+### 7- and 8-bit Japanese Encodings
+- [var NSISO2022JPStringEncoding: UInt](./nsiso2022jpstringencoding.md)
   ISO 2022 Japanese encoding for email.
-- [var NSJapaneseEUCStringEncoding: UInt](nsjapaneseeucstringencoding.md)
+- [var NSJapaneseEUCStringEncoding: UInt](./nsjapaneseeucstringencoding.md)
   8-bit EUC encoding for Japanese text.
 
 

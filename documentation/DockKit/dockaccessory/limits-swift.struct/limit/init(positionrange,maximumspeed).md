@@ -1,7 +1,8 @@
 # init(positionRange:maximumSpeed:)
 
 **Framework**: DockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+

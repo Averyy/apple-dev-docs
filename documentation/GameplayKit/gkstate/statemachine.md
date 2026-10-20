@@ -1,7 +1,8 @@
 # stateMachine
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state machine that owns this state object.
 
@@ -19,13 +20,18 @@ The state machine that owns this state object.
 weak var stateMachine: GKStateMachine? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) GKStateMachine * stateMachine;
+```
+
 #### Discussion
 
 Use this property to refer to the state machine this state object is being used in.
 
 ## See Also
 
-- [func isValidNextState(AnyClass) -> Bool](gkstate/isvalidnextstate(_:).md)
+### Working with State Machines
+- [func isValidNextState(AnyClass) -> Bool](./isvalidnextstate%28_%29.md)
   Returns a Boolean value indicating whether a state machine currently in this state is allowed to transition into the specified state.
 
 

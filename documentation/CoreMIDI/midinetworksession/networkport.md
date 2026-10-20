@@ -1,7 +1,8 @@
 # networkPort
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The session’s UDP port.
 
@@ -18,15 +19,20 @@ The session’s UDP port.
 var networkPort: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger networkPort;
+```
+
 ## See Also
 
-- [var localName: String](midinetworksession/localname.md)
+### Inspecting a Sessions
+- [var localName: String](./localname.md)
   The name of this session’s entity.
-- [var networkName: String](midinetworksession/networkname.md)
+- [var networkName: String](./networkname.md)
   The name with which this session advertises itself over Bonjour.
-- [func sourceEndpoint() -> MIDIEndpointRef](midinetworksession/sourceendpoint.md)
+- [func sourceEndpoint() -> MIDIEndpointRef](./sourceendpoint%28%29.md)
   Returns the session’s source endpoint.
-- [func destinationEndpoint() -> MIDIEndpointRef](midinetworksession/destinationendpoint.md)
+- [func destinationEndpoint() -> MIDIEndpointRef](./destinationendpoint%28%29.md)
   Returns the session’s destination endpoint.
 
 

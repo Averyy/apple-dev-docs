@@ -1,7 +1,8 @@
 # CBPeripheralManagerRestoredStateServicesKey
 
 **Framework**: Core Bluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An array of restored peripheral services.
 
@@ -20,15 +21,20 @@ An array of restored peripheral services.
 let CBPeripheralManagerRestoredStateServicesKey: String
 ```
 
+```c
+extern NSString * const CBPeripheralManagerRestoredStateServicesKey;
+```
+
 #### Discussion
 
-The value associated with this key is an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) of [`CBMutableService`](cbmutableservice.md) objects. It contains all of the services that previously published to the local peripheral’s database when the system quit the app.
+The value associated with this key is an [`NSArray`](../Foundation/nsarray.md) of [`CBMutableService`](./cbmutableservice.md) objects. It contains all of the services that previously published to the local peripheral’s database when the system quit the app.
 
 Restoration includes all information about a service, including any included services, characteristics, characteristic descriptors, and subscribed centrals.
 
 ## See Also
 
-- [let CBPeripheralManagerRestoredStateAdvertisementDataKey: String](cbperipheralmanagerrestoredstateadvertisementdatakey.md)
+### State Restoration Dictionary Keys
+- [let CBPeripheralManagerRestoredStateAdvertisementDataKey: String](./cbperipheralmanagerrestoredstateadvertisementdatakey.md)
   A dictionary of restored advertising data.
 
 

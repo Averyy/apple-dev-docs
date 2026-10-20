@@ -1,7 +1,8 @@
 # CustomMaterial.GeometryModifier
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The custom material’s optional shader function that can manipulate an entity’s vertex data.
 
@@ -20,7 +21,7 @@ struct GeometryModifier
 
 #### Overview
 
-A geometry modifier is an optional Metal function that you can use with custom materials. Use a geometry modifier to change vertex data, such as vertex position, color, or texture coordinates. For example, offsetting a vertex’s position changes the size and shape of the entity for rendering only. If your custom material has a geometry modifier, RealityKit’s custom material vertex shader calls it once for each vertex in the entity. Changes that your geometry modifier makes are transient and don’t affect the vertex positions of the original [`ModelEntity`](modelentity.md).
+A geometry modifier is an optional Metal function that you can use with custom materials. Use a geometry modifier to change vertex data, such as vertex position, color, or texture coordinates. For example, offsetting a vertex’s position changes the size and shape of the entity for rendering only. If your custom material has a geometry modifier, RealityKit’s custom material vertex shader calls it once for each vertex in the entity. Changes that your geometry modifier makes are transient and don’t affect the vertex positions of the original [`ModelEntity`](../modelentity.md).
 
 Here’s a simple example of a geometry modifier that offsets the vertex positions along the z-axis based on the elapsed time:
 
@@ -36,56 +37,57 @@ params) {
 }
 ```
 
-For more information on creating custom materials and writing shader functions, see [`Modifying RealityKit rendering using custom materials`](modifying-realitykit-rendering-using-custom-materials.md).
+For more information on creating custom materials and writing shader functions, see [Modifying RealityKit rendering using custom materials](../modifying-realitykit-rendering-using-custom-materials.md).
 
 ## Topics
 
 ### Creating geometry modifier objects
-- [init(named: String, in: any MTLLibrary)](custommaterial/geometrymodifier/init(named:in:).md)
+- [init(named: String, in: any MTLLibrary)](./geometrymodifier/init%28named,in%29.md)
   Creates a geometry modifier object from a named function in a Metal library.
 ### Accessing geometry modifier properties
-- [var name: String](custommaterial/geometrymodifier/name.md)
+- [var name: String](./geometrymodifier/name.md)
   The name of the geometry modifier function.
-- [var library: any MTLLibrary](custommaterial/geometrymodifier/library.md)
+- [var library: any MTLLibrary](./geometrymodifier/library.md)
   The Metal library that contains this surface shader function.
 ### Initializers
-- [init(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues)](custommaterial/geometrymodifier/init(named:in:constantvalues:).md)
+- [init(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues)](./geometrymodifier/init%28named,in,constantvalues%29.md)
   Creates a geometry modifier with the specified function constant values.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MaterialFunction](materialfunction.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [MaterialFunction](../materialfunction.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Implementing adjustable material](../visionos/implementing-adjustable-material-in-visionos.md)
+### Shaders
+- [Implementing adjustable material](../../visionOS/implementing-adjustable-material-in-visionos.md)
   Update the adjustable parameters of a 3D model in visionOS.
-- [Displaying a stereoscopic image](../visionos/displaying-a-stereoscopic-image-in-visionos.md)
+- [Displaying a stereoscopic image](../../visionOS/displaying-a-stereoscopic-image-in-visionos.md)
   Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
-- [struct ShaderGraphMaterial](shadergraphmaterial.md)
+- [struct ShaderGraphMaterial](../shadergraphmaterial.md)
   A material that comes from a shader graph in a Reality Composer Pro project, or a MaterialX shader.
-- [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)
+- [ShaderGraphMaterial.FaceCulling](../shadergraphmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
-- [ShaderGraphMaterial.TriangleFillMode](shadergraphmaterial/trianglefillmode-swift.typealias.md)
+- [ShaderGraphMaterial.TriangleFillMode](../shadergraphmaterial/trianglefillmode-swift.typealias.md)
   An alias for the triangle fill mode object that’s appropriate for this material class.
-- [Modifying RealityKit rendering using custom materials](modifying-realitykit-rendering-using-custom-materials.md)
+- [Modifying RealityKit rendering using custom materials](../modifying-realitykit-rendering-using-custom-materials.md)
   Write Metal shader functions to implement custom rendering effects.
-- [struct CustomMaterial](custommaterial.md)
+- [struct CustomMaterial](../custommaterial.md)
   A material that works with custom Metal shader functions.
-- [CustomMaterial.SurfaceShader](custommaterial/surfaceshader.md)
+- [CustomMaterial.SurfaceShader](./surfaceshader.md)
   The custom material’s surface shader function.
-- [protocol MaterialFunction](materialfunction.md)
+- [protocol MaterialFunction](../materialfunction.md)
   The abstract superclass for objects representing compute functions for RealityKit custom materials .
-- [CustomMaterial.Program](custommaterial/program-swift.class.md)
+- [CustomMaterial.Program](./program-swift.class.md)
   An object that represents the backing shader compilation required for custom materials.
-- [CustomMaterial.Program.Descriptor](custommaterial/program-swift.class/descriptor-swift.struct.md)
+- [CustomMaterial.Program.Descriptor](./program-swift.class/descriptor-swift.struct.md)
   An object that specifies all parameters necessary to initialize `CustomMaterial` programs
-- [enum CustomShaderStage](customshaderstage.md)
+- [enum CustomShaderStage](../customshaderstage.md)
 
 
 ---

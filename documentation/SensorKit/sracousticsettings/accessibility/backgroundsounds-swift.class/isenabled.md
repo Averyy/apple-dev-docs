@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var isEnabled: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly, getter=isEnabled) BOOL enabled;
 ```
 
 #### Discussion

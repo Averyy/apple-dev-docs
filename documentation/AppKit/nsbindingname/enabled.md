@@ -1,12 +1,13 @@
 # enabled
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that identifies an enabled binding.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,41 +15,46 @@ A constant that identifies an enabled binding.
 static let enabled: NSBindingName
 ```
 
+```c
+extern NSBindingName NSEnabledBinding;
+```
+
 #### Discussion
 
-For more information, see [`Cocoa Bindings`](cocoa-bindings.md).
+For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 
 ## See Also
 
-- [static let alignment: NSBindingName](nsbindingname/alignment.md)
+### Binding Names
+- [static let alignment: NSBindingName](./alignment.md)
   A constant that identifies an alignment binding.
-- [static let alternateImage: NSBindingName](nsbindingname/alternateimage.md)
+- [static let alternateImage: NSBindingName](./alternateimage.md)
   A constant that identifies an alternate image binding.
-- [static let alternateTitle: NSBindingName](nsbindingname/alternatetitle.md)
+- [static let alternateTitle: NSBindingName](./alternatetitle.md)
   A constant that identifies an alternate title binding.
-- [static let animate: NSBindingName](nsbindingname/animate.md)
+- [static let animate: NSBindingName](./animate.md)
   A constant that identifies an animate binding.
-- [static let animationDelay: NSBindingName](nsbindingname/animationdelay.md)
+- [static let animationDelay: NSBindingName](./animationdelay.md)
   A constant that identifies an animation delay binding.
-- [static let argument: NSBindingName](nsbindingname/argument.md)
+- [static let argument: NSBindingName](./argument.md)
   A constant that identifies an argument binding.
-- [static let attributedString: NSBindingName](nsbindingname/attributedstring.md)
+- [static let attributedString: NSBindingName](./attributedstring.md)
   A constant that identifies an attributed string binding.
-- [static let content: NSBindingName](nsbindingname/content.md)
+- [static let content: NSBindingName](./content.md)
   A constant that identifies a content binding.
-- [static let contentArray: NSBindingName](nsbindingname/contentarray.md)
+- [static let contentArray: NSBindingName](./contentarray.md)
   A constant that identifies a content array binding.
-- [static let contentArrayForMultipleSelection: NSBindingName](nsbindingname/contentarrayformultipleselection.md)
+- [static let contentArrayForMultipleSelection: NSBindingName](./contentarrayformultipleselection.md)
   A constant that identifies a content array for multiple selection binding.
-- [static let contentDictionary: NSBindingName](nsbindingname/contentdictionary.md)
+- [static let contentDictionary: NSBindingName](./contentdictionary.md)
   A constant that identifies a content dictionary binding.
-- [static let contentHeight: NSBindingName](nsbindingname/contentheight.md)
+- [static let contentHeight: NSBindingName](./contentheight.md)
   A constant that identifies a content height binding.
-- [static let contentObject: NSBindingName](nsbindingname/contentobject.md)
+- [static let contentObject: NSBindingName](./contentobject.md)
   A constant that identifies a content object binding.
-- [static let contentObjects: NSBindingName](nsbindingname/contentobjects.md)
+- [static let contentObjects: NSBindingName](./contentobjects.md)
   A constant that identifies a content objects binding.
-- [static let contentSet: NSBindingName](nsbindingname/contentset.md)
+- [static let contentSet: NSBindingName](./contentset.md)
   A constant that identifies a content set binding.
 
 

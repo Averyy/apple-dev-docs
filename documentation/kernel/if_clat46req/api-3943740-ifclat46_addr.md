@@ -1,14 +1,15 @@
 # ifclat46_addr
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 struct if_ipv6_address ifclat46_addr;
 ```
 

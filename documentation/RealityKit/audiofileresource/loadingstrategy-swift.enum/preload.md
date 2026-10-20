@@ -1,7 +1,8 @@
 # AudioFileResource.LoadingStrategy.preload
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Load and decode all the data into memory before playback.
 
@@ -11,7 +12,7 @@ Load and decode all the data into memory before playback.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ case preload
 
 ## See Also
 
-- [AudioFileResource.LoadingStrategy.stream](audiofileresource/loadingstrategy-swift.enum/stream.md)
+### Specifying a loading strategy
+- [AudioFileResource.LoadingStrategy.stream](./stream.md)
   Stream data from disk, decoding in real time.
 
 

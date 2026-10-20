@@ -1,7 +1,8 @@
 # ungrouped
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Don’t use the system’s default behavior for grouping widgets.
 

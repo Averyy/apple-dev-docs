@@ -1,7 +1,8 @@
 # kAXCreatedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An accessibility object was created.
 
@@ -12,6 +13,10 @@ An accessibility object was created.
 
 ```swift
 var kAXCreatedNotification: String { get }
+```
+
+```c
+#define kAXCreatedNotification
 ```
 
 

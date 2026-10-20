@@ -1,23 +1,28 @@
 # move(by:duration:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an action that moves a node relative to its current position.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 class func move(by delta: SCNVector3, duration: TimeInterval) -> SCNAction
+```
+
+```objc
++ (SCNAction *) moveBy:(SCNVector3) delta duration:(NSTimeInterval) duration;
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ A new action object.
 
 #### Discussion
 
-When the action executes, the node’s [`position`](scnnode/position.md) property animates from its current position to its new position.
+When the action executes, the node’s [`position`](../scnnode/position.md) property animates from its current position to its new position.
 
 This action is reversible; the reverse is created as if the following code had been executed:
 
@@ -42,9 +47,10 @@ SCNVector3 reverseDelta = SCNVector3Make(-delta.x, -delta.y, -delta.z);
 
 ## See Also
 
-- [class func moveBy(x: CGFloat, y: CGFloat, z: CGFloat, duration: TimeInterval) -> SCNAction](scnaction/moveby(x:y:z:duration:).md)
+### Creating Actions That Move a Node
+- [class func moveBy(x: CGFloat, y: CGFloat, z: CGFloat, duration: TimeInterval) -> SCNAction](./moveby%28x,y,z,duration%29.md)
   Creates an action that moves a node relative to its current position.
-- [class func move(to: SCNVector3, duration: TimeInterval) -> SCNAction](scnaction/move(to:duration:).md)
+- [class func move(to: SCNVector3, duration: TimeInterval) -> SCNAction](./move%28to,duration%29.md)
   Creates an action that moves a node to a new position.
 
 

@@ -1,7 +1,8 @@
 # download(_:didReceiveFinalURL:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.2+
@@ -14,6 +15,10 @@
 
 ```swift
 optional func download(_ download: WKDownload, didReceiveFinalURL url: URL)
+```
+
+```objc
+- (void) download:(WKDownload *) download didReceiveFinalURL:(NSURL *) url;
 ```
 
 

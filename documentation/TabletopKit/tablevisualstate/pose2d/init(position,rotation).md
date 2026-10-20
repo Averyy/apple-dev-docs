@@ -1,7 +1,8 @@
 # init(position:rotation:)
 
 **Framework**: TabletopKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - visionOS 2.0+
@@ -14,8 +15,9 @@ init(position: TableVisualState.Point2D, rotation: Angle2D)
 
 ## See Also
 
-- [init()](tablevisualstate/pose2d/init.md)
-- [init(projecting: Pose3D)](tablevisualstate/pose2d/init(projecting:).md)
+### Creating 2D pose objects
+- [init()](./init%28%29.md)
+- [init(projecting: Pose3D)](./init%28projecting%29.md)
   Initializes this pose as the 2D projection of the given pose on the XZ plane
 
 

@@ -1,7 +1,8 @@
 # MLHandPoseClassifier.ModelParameters.ValidationData.none
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Creates an empty validation dataset, which tells the task to skip the model validation phase in a training session.
 
@@ -24,9 +25,10 @@ This case prevents Create ML from creating a validation dataset from your traini
 
 ## See Also
 
-- [MLHandPoseClassifier.ModelParameters.ValidationData.dataSource(_:)](mlhandposeclassifier/modelparameters-swift.struct/validationdata/datasource(_:).md)
+### Designating validation data
+- [MLHandPoseClassifier.ModelParameters.ValidationData.dataSource(_:)](./datasource%28_%29.md)
   Creates a validation dataset from a data source.
-- [MLHandPoseClassifier.ModelParameters.ValidationData.split(strategy:)](mlhandposeclassifier/modelparameters-swift.struct/validationdata/split(strategy:).md)
+- [MLHandPoseClassifier.ModelParameters.ValidationData.split(strategy:)](./split%28strategy%29.md)
   Creates a validation dataset by randomly selecting a portion of the hand pose classifier task’s training dataset with a split strategy.
 
 

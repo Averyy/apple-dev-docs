@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,12 +19,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kREAD_CAPACITY_PROT_Disabled](1638046-anonymous/kread_capacity_prot_disabled.md)
-- [kREAD_CAPACITY_PROT_Enabled](1638046-anonymous/kread_capacity_prot_enabled.md)
-- [kREAD_CAPACITY_PROT_Mask](1638046-anonymous/kread_capacity_prot_mask.md)
-- [kREAD_CAPACITY_PROT_Disabled](../driverkit/kread_capacity_prot_disabled.md)
-- [kREAD_CAPACITY_PROT_Enabled](../driverkit/kread_capacity_prot_enabled.md)
-- [kREAD_CAPACITY_PROT_Mask](../driverkit/kread_capacity_prot_mask.md)
+- [kREAD_CAPACITY_PROT_Disabled](./api-1638046-anonymous/kread_capacity_prot_disabled.md)
+- [kREAD_CAPACITY_PROT_Enabled](./api-1638046-anonymous/kread_capacity_prot_enabled.md)
+- [kREAD_CAPACITY_PROT_Mask](./api-1638046-anonymous/kread_capacity_prot_mask.md)
+- [kREAD_CAPACITY_PROT_Disabled](../DriverKit/kread_capacity_prot_disabled.md)
+- [kREAD_CAPACITY_PROT_Enabled](../DriverKit/kread_capacity_prot_enabled.md)
+- [kREAD_CAPACITY_PROT_Mask](../DriverKit/kread_capacity_prot_mask.md)
 
 
 ---

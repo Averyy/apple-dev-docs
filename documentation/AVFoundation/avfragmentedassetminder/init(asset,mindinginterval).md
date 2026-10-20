@@ -1,7 +1,8 @@
 # init(asset:mindingInterval:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a fragmented asset minder that monitors the specified asset at the indicated minding interval.
 
@@ -18,6 +19,10 @@ Creates a fragmented asset minder that monitors the specified asset at the indic
 
 ```swift
 init(asset: any AVAsset & AVFragmentMinding, mindingInterval: TimeInterval)
+```
+
+```objc
+- (instancetype) initWithAsset:(AVAsset<AVFragmentMinding> *) asset mindingInterval:(NSTimeInterval) mindingInterval;
 ```
 
 #### Return Value

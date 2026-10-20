@@ -1,7 +1,8 @@
 # NEVPNConnectionErrorDomain
 
 **Framework**: Network Extension  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for errors resulting from VPN connection calls.
 
@@ -19,15 +20,20 @@ The domain for errors resulting from VPN connection calls.
 let NEVPNConnectionErrorDomain: String
 ```
 
+```c
+extern NSString * const NEVPNConnectionErrorDomain;
+```
+
 #### Discussion
 
-Match this constant to the [`domain`](https://developer.apple.com/documentation/foundation/nserror/domain) of an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) encountered when calling methods on [`NEVPNConnection`](nevpnconnection.md). The [`NEDNSSettingsManagerError`](nednssettingsmanagererror.md) enumeration defines possible [`code`](https://developer.apple.com/documentation/foundation/nserror/code) values for these errors.
+Match this constant to the [`domain`](../Foundation/nserror/domain.md) of an [`NSError`](../Foundation/nserror.md) encountered when calling methods on [`NEVPNConnection`](./nevpnconnection.md). The [`NEDNSSettingsManagerError`](./nednssettingsmanagererror.md) enumeration defines possible [`code`](../Foundation/nserror/code.md) values for these errors.
 
 ## See Also
 
-- [func fetchLastDisconnectError(completionHandler: ((any Error)?) -> Void)](nevpnconnection/fetchlastdisconnecterror(completionhandler:).md)
+### Handling errors
+- [func fetchLastDisconnectError(completionHandler: ((any Error)?) -> Void)](./nevpnconnection/fetchlastdisconnecterror%28completionhandler%29.md)
   Retrives the most recent error that caused the VPN to disconnect.
-- [enum NEVPNConnectionError](nevpnconnectionerror.md)
+- [enum NEVPNConnectionError](./nevpnconnectionerror.md)
   Error codes specific to VPN connections.
 
 

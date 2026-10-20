@@ -1,14 +1,15 @@
 # kTaskSharedRegionOther
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 kTaskSharedRegionOther = 0x80000000
 ```
 

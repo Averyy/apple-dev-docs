@@ -1,7 +1,8 @@
 # kAuthorizationEnvironmentShared
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The type for an authorization item containing a shared right.
 
@@ -13,6 +14,10 @@ The type for an authorization item containing a shared right.
 
 ```swift
 var kAuthorizationEnvironmentShared: String { get }
+```
+
+```c
+#define kAuthorizationEnvironmentShared
 ```
 
 #### Discussion

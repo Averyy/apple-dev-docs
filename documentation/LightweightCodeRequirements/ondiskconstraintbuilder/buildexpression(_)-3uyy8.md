@@ -1,7 +1,8 @@
 # buildExpression(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Builds an expression within the builder
 

@@ -1,18 +1,19 @@
 # CustomTestArgumentEncodable
 
 **Framework**: Swift Testing  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for customizing how arguments passed to parameterized tests are encoded, which is used to match against when running specific arguments.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -24,40 +25,42 @@ protocol CustomTestArgumentEncodable : Sendable
 
 ## Mentions
 
-- [Implementing parameterized tests](parameterizedtesting.md)
+- [Implementing parameterized tests](./parameterizedtesting.md)
 
 #### Overview
 
-The testing library checks whether a test argument conforms to this protocol, or any of several other known protocols, when running selected test cases. When a test argument conforms to this protocol, that conformance takes highest priority, and the testing library will then call [`encodeTestArgument(to:)`](customtestargumentencodable/encodetestargument(to:).md) on the argument. A type that conforms to this protocol is not required to conform to either `Encodable` or `Decodable`.
+The testing library checks whether a test argument conforms to this protocol, or any of several other known protocols, when running selected test cases. When a test argument conforms to this protocol, that conformance takes highest priority, and the testing library will then call [`encodeTestArgument(to:)`](./customtestargumentencodable/encodetestargument%28to%29.md) on the argument. A type that conforms to this protocol is not required to conform to either `Encodable` or `Decodable`.
 
-See [`Implementing parameterized tests`](parameterizedtesting.md) for a list of the other supported ways to allow running selected test cases.
+See [Implementing parameterized tests](./parameterizedtesting.md) for a list of the other supported ways to allow running selected test cases.
 
 ## Topics
 
 ### Instance Methods
-- [func encodeTestArgument(to: some Encoder) throws](customtestargumentencodable/encodetestargument(to:).md)
+- [func encodeTestArgument(to: some Encoder) throws](./customtestargumentencodable/encodetestargument%28to%29.md)
   Encode this test argument.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Implementing parameterized tests](parameterizedtesting.md)
+### Related Documentation
+- [Implementing parameterized tests](./parameterizedtesting.md)
   Specify different input parameters to generate multiple test cases from a test function.
-- [Implementing parameterized tests](parameterizedtesting.md)
+### Test parameterization
+- [Implementing parameterized tests](./parameterizedtesting.md)
   Specify different input parameters to generate multiple test cases from a test function.
-- [macro Test<C>(String?, any TestTrait..., arguments: C)](test(_:_:arguments:)-8kn7a.md)
+- [macro Test<C>(String?, any TestTrait..., arguments: C)](./test%28_,_,arguments%29-8kn7a.md)
   Declare a test parameterized over a collection of values.
-- [macro Test<C1, C2>(String?, any TestTrait..., arguments: C1, C2)](test(_:_:arguments:_:).md)
+- [macro Test<C1, C2>(String?, any TestTrait..., arguments: C1, C2)](./test%28_,_,arguments,_%29.md)
   Declare a test parameterized over two collections of values.
-- [macro Test<C1, C2>(String?, any TestTrait..., arguments: Zip2Sequence<C1, C2>)](test(_:_:arguments:)-3rzok.md)
+- [macro Test<C1, C2>(String?, any TestTrait..., arguments: Zip2Sequence<C1, C2>)](./test%28_,_,arguments%29-3rzok.md)
   Declare a test parameterized over two zipped collections of values.
-- [struct Case](test/case.md)
-  A single test case from a parameterized [`Test`](test.md).
+- [struct Case](./test/case.md)
+  A single test case from a parameterized [`Test`](./test.md).
 
 
 ---

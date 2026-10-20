@@ -1,7 +1,8 @@
 # videoGravity
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string value that defines how the capture view displays video within its bounds.
 
@@ -14,15 +15,20 @@ A string value that defines how the capture view displays video within its bound
 var videoGravity: AVLayerVideoGravity { get set }
 ```
 
+```objc
+@property (copy) AVLayerVideoGravity videoGravity;
+```
+
 #### Discussion
 
-See [`AVLayerVideoGravity`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity) for supported values. The default value is [`resizeAspect`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resizeaspect).
+See [`AVLayerVideoGravity`](../../AVFoundation/avlayervideogravity.md) for supported values. The default value is [`resizeAspect`](../../AVFoundation/avlayervideogravity/resizeaspect.md).
 
 ## See Also
 
-- [var controlsStyle: AVCaptureViewControlsStyle](avcaptureview/controlsstyle.md)
+### Customizing the view
+- [var controlsStyle: AVCaptureViewControlsStyle](./controlsstyle.md)
   The style of the capture controls presented by the view.
-- [enum AVCaptureViewControlsStyle](avcaptureviewcontrolsstyle.md)
+- [enum AVCaptureViewControlsStyle](../avcaptureviewcontrolsstyle.md)
   Constants that describe the capture view’s supported controls styles.
 
 

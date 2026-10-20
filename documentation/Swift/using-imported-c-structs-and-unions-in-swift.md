@@ -1,6 +1,7 @@
 # Using Imported C Structs and Unions in Swift
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Learn how Swift represents imported C structures and unions, including types with bitfields and unnamed fields.
 
@@ -123,9 +124,10 @@ Because the first field of the `Cake` structure is unnamed, its initializer’s 
 
 ## See Also
 
-- [Using Imported C Functions in Swift](using-imported-c-functions-in-swift.md)
+### C APIs
+- [Using Imported C Functions in Swift](./using-imported-c-functions-in-swift.md)
   Learn how to call imported functions that are declared in a C header.
-- [Using Imported C Macros in Swift](using-imported-c-macros-in-swift.md)
+- [Using Imported C Macros in Swift](./using-imported-c-macros-in-swift.md)
   Use imported C-defined macros as constants.
 
 

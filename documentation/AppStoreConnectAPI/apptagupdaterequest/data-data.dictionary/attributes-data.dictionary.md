@@ -1,7 +1,8 @@
 # AppTagUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The updateable attributes of an app tag, including its territory associations.
 
@@ -10,7 +11,7 @@ The updateable attributes of an app tag, including its territory associations.
 
 ## Declaration
 
-```swift
+```
 object AppTagUpdateRequest.Data.Attributes
 ```
 

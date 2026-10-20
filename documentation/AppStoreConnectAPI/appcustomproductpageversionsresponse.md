@@ -1,7 +1,8 @@
 # AppCustomProductPageVersionsResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that list versions of a custom App Store product page.
 
@@ -10,30 +11,31 @@ The response body for endpoints that list versions of a custom App Store product
 
 ## Declaration
 
-```swift
+```
 object AppCustomProductPageVersionsResponse
 ```
 
 ## Properties
 
 - `data` ([AppCustomProductPageVersion]) *(required)*
-- `included` ([*])
+- `included` ([*]): **Allowed Types**: `AppCustomProductPageLocalization`, `AppCustomProductPage`
 - `links` (PagedDocumentLinks) *(required)*
 - `meta` (PagingInformation)
 
 ## See Also
 
-- [object AppCustomProductPageVersion](appcustomproductpageversion.md)
+### Objects
+- [object AppCustomProductPageVersion](./appcustomproductpageversion.md)
   A version of a custom App Store product page, containing its localizations and review status.
-- [object AppCustomProductPageVersionCreateRequest](appcustomproductpageversioncreaterequest.md)
+- [object AppCustomProductPageVersionCreateRequest](./appcustomproductpageversioncreaterequest.md)
   The request body you use to create an app custom product page version.
-- [object AppCustomProductPageVersionInlineCreate](appcustomproductpageversioninlinecreate.md)
+- [object AppCustomProductPageVersionInlineCreate](./appcustomproductpageversioninlinecreate.md)
   An inline object for specifying a custom product page version when creating or updating a related resource.
-- [object AppCustomProductPageVersionUpdateRequest](appcustomproductpageversionupdaterequest.md)
+- [object AppCustomProductPageVersionUpdateRequest](./appcustomproductpageversionupdaterequest.md)
   The request body you use to update an app custom product page version.
-- [object AppCustomProductPageVersionResponse](appcustomproductpageversionresponse.md)
+- [object AppCustomProductPageVersionResponse](./appcustomproductpageversionresponse.md)
   The response body for endpoints that create, read, or modify a single custom product page version.
-- [object AppCustomProductPageVersionAppCustomProductPageLocalizationsLinkagesResponse](appcustomproductpageversionappcustomproductpagelocalizationslinkagesresponse.md)
+- [object AppCustomProductPageVersionAppCustomProductPageLocalizationsLinkagesResponse](./appcustomproductpageversionappcustomproductpagelocalizationslinkagesresponse.md)
 
 
 ---

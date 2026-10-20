@@ -1,7 +1,8 @@
 # overviewScanInProgress
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var overviewScanInProgress: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL overviewScanInProgress;
 ```
 
 

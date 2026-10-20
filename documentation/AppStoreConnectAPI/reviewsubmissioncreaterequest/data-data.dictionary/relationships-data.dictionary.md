@@ -1,7 +1,8 @@
 # ReviewSubmissionCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmissionCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object ReviewSubmissionCreateRequest.Data.Relationships.App](reviewsubmissioncreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
+- [object ReviewSubmissionCreateRequest.Data.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
   The data that describe the relationship between the resources.
 
 ## Properties
@@ -26,7 +27,8 @@ object ReviewSubmissionCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object ReviewSubmissionCreateRequest.Data.Attributes](reviewsubmissioncreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object ReviewSubmissionCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a review submission create request resource.
 
 

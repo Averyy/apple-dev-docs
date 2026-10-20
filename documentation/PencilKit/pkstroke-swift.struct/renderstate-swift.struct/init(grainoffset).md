@@ -1,7 +1,8 @@
 # init(grainOffset:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a render state with the specified grain offset.
 

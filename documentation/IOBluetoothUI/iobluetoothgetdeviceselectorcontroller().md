@@ -1,7 +1,8 @@
 # IOBluetoothGetDeviceSelectorController()
 
 **Framework**: IOBluetooth UI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.2+
@@ -12,10 +13,15 @@
 func IOBluetoothGetDeviceSelectorController() -> Unmanaged<IOBluetoothDeviceSelectorControllerRef>!
 ```
 
+```c
+IOBluetoothDeviceSelectorControllerRefIOBluetoothGetDeviceSelectorController();
+```
+
 ## See Also
 
-- [func IOBluetoothGetPairingController() -> Unmanaged<IOBluetoothPairingControllerRef>!](iobluetoothgetpairingcontroller().md)
-- [func IOBluetoothValidateHardwareWithDescription(CFString!, CFString!) -> IOReturn](iobluetoothvalidatehardwarewithdescription(_:_:).md)
+### Functions
+- [func IOBluetoothGetPairingController() -> Unmanaged<IOBluetoothPairingControllerRef>!](./iobluetoothgetpairingcontroller%28%29.md)
+- [func IOBluetoothValidateHardwareWithDescription(CFString!, CFString!) -> IOReturn](./iobluetoothvalidatehardwarewithdescription%28_,_%29.md)
 
 
 ---

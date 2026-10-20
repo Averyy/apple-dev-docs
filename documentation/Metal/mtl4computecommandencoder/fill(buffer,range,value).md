@@ -1,7 +1,8 @@
 # fill(buffer:range:value:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a command that fills a buffer with a constant value for each byte.
 

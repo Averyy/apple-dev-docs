@@ -1,7 +1,8 @@
 # PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Your service’s response to a request to resolve the queue location in a play media intent.
 
@@ -10,14 +11,14 @@ Your service’s response to a request to resolve the queue location in a play m
 
 ## Declaration
 
-```swift
+```
 object PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse
 ```
 
 ## Topics
 
 ### Specifying a Result
-- [object PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse.Result](playmediaintenthandlingresolveplaybackqueuelocationinvocationresponse/result-data.dictionary.md)
+- [object PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse.Result](./playmediaintenthandlingresolveplaybackqueuelocationinvocationresponse/result-data.dictionary.md)
   The result of resolving the queue location for a play media intent.
 
 ## Properties
@@ -25,16 +26,19 @@ object PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse
 - `result` (PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse.Result) *(required)*: The result of processing the intent.
 - `method` (string) *(required)*: The action your service takes to process this intent.
 
+  **Allowed Values**: `PlayMediaIntentHandling.resolvePlaybackQueueLocation`
+
 ## Relationships
 
 ### Inherits From
-- [InvocationResponse](invocationresponse.md)
+- [InvocationResponse](./invocationresponse.md)
 
 ## See Also
 
-- [object PlaybackQueueLocationResolutionResult](playbackqueuelocationresolutionresult.md)
+### Resolving the Intended Queue Location
+- [object PlaybackQueueLocationResolutionResult](./playbackqueuelocationresolutionresult.md)
   Information about whether your service can resolve the specified queue location.
-- [type PlaybackQueueLocation](playbackqueuelocation.md)
+- [type PlaybackQueueLocation](./playbackqueuelocation.md)
   Possible locations in a playback queue to insert a media item.
 
 

@@ -1,14 +1,15 @@
 # AXBoolReturnBlock
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,23 +18,28 @@
 typealias AXBoolReturnBlock = () -> Bool
 ```
 
+```c
+typedef _Bool (^)(void) AXBoolReturnBlock;
+```
+
 ## See Also
 
-- [typealias AXArrayReturnBlock](axarrayreturnblock.md)
-- [typealias AXAttributedStringArrayReturnBlock](axattributedstringarrayreturnblock.md)
-- [typealias AXAttributedStringReturnBlock](axattributedstringreturnblock.md)
-- [typealias AXContainerTypeReturnBlock](axcontainertypereturnblock.md)
-- [typealias AXCustomActionsReturnBlock](axcustomactionsreturnblock.md)
-- [typealias AXCustomRotorsReturnBlock](axcustomrotorsreturnblock.md)
-- [typealias AXNavigationStyleReturnBlock](axnavigationstylereturnblock.md)
-- [typealias AXObjectReturnBlock](axobjectreturnblock.md)
-- [typealias AXPathReturnBlock](axpathreturnblock.md)
-- [typealias AXPointReturnBlock](axpointreturnblock.md)
-- [typealias AXRectReturnBlock](axrectreturnblock.md)
-- [typealias AXStringArrayReturnBlock](axstringarrayreturnblock.md)
-- [typealias AXStringReturnBlock](axstringreturnblock.md)
-- [typealias AXTextualContextReturnBlock](axtextualcontextreturnblock.md)
-- [typealias AXTraitsReturnBlock](axtraitsreturnblock.md)
+### Supporting types
+- [typealias AXArrayReturnBlock](./axarrayreturnblock.md)
+- [typealias AXAttributedStringArrayReturnBlock](./axattributedstringarrayreturnblock.md)
+- [typealias AXAttributedStringReturnBlock](./axattributedstringreturnblock.md)
+- [typealias AXContainerTypeReturnBlock](./axcontainertypereturnblock.md)
+- [typealias AXCustomActionsReturnBlock](./axcustomactionsreturnblock.md)
+- [typealias AXCustomRotorsReturnBlock](./axcustomrotorsreturnblock.md)
+- [typealias AXNavigationStyleReturnBlock](./axnavigationstylereturnblock.md)
+- [typealias AXObjectReturnBlock](./axobjectreturnblock.md)
+- [typealias AXPathReturnBlock](./axpathreturnblock.md)
+- [typealias AXPointReturnBlock](./axpointreturnblock.md)
+- [typealias AXRectReturnBlock](./axrectreturnblock.md)
+- [typealias AXStringArrayReturnBlock](./axstringarrayreturnblock.md)
+- [typealias AXStringReturnBlock](./axstringreturnblock.md)
+- [typealias AXTextualContextReturnBlock](./axtextualcontextreturnblock.md)
+- [typealias AXTraitsReturnBlock](./axtraitsreturnblock.md)
 
 
 ---

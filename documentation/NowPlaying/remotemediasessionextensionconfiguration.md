@@ -1,7 +1,8 @@
 # RemoteMediaSessionExtensionConfiguration
 
 **Framework**: Now Playing  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The configuration object for a remote playback extension.
 
@@ -20,13 +21,13 @@ final class RemoteMediaSessionExtensionConfiguration<Extension> where Extension 
 
 ## Mentions
 
-- [Publishing remote media sessions](publishing-remote-media-sessions.md)
+- [Publishing remote media sessions](./publishing-remote-media-sessions.md)
 
 #### Overview
 
 This class manages the lifecycle of remote sessions within your app extension. It handles XPC communication, session registration, attribute updates, and automatic observation of session state changes.
 
-For more information, see [`Publishing remote media sessions`](publishing-remote-media-sessions.md)
+For more information, see [Publishing remote media sessions](./publishing-remote-media-sessions.md)
 
 Create an instance of this class in your extension’s `configuration` property:
 
@@ -42,33 +43,34 @@ struct MyPlaybackExtension: RemoteMediaSessionExtension {
 ## Topics
 
 ### Initializers
-- [init(extension: Extension)](remotemediasessionextensionconfiguration/init(extension:).md)
+- [init(extension: Extension)](./remotemediasessionextensionconfiguration/init%28extension%29.md)
   Creates a new configuration with the specified extension instance.
 
 ## Relationships
 
 ### Conforms To
-- [AppExtensionConfiguration](../extensionfoundation/appextensionconfiguration.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtensionConfiguration](../ExtensionFoundation/appextensionconfiguration.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Publishing remote media sessions](publishing-remote-media-sessions.md)
+### Remote sessions
+- [Publishing remote media sessions](./publishing-remote-media-sessions.md)
   Show media from an external device on the Lock Screen and Control Center.
-- [protocol RemoteMediaSessionRepresentable](remotemediasessionrepresentable.md)
+- [protocol RemoteMediaSessionRepresentable](./remotemediasessionrepresentable.md)
   A session that plays remotely, potentially across multiple devices.
-- [class RemoteMediaSession](remotemediasession.md)
+- [class RemoteMediaSession](./remotemediasession.md)
   A session that manages remote media playback across devices.
-- [protocol RemoteMediaSessionExtension](remotemediasessionextension.md)
+- [protocol RemoteMediaSessionExtension](./remotemediasessionextension.md)
   An app extension that provides remote media sessions.
-- [protocol RemoteMediaSessionAttributes](remotemediasessionattributes.md)
+- [protocol RemoteMediaSessionAttributes](./remotemediasessionattributes.md)
   A type that represents attributes for remote sessions.
-- [enum RemoteMediaSessionError](remotemediasessionerror.md)
+- [enum RemoteMediaSessionError](./remotemediasessionerror.md)
   Errors that can occur during remote session operations.
-- [struct MediaDevice](mediadevice.md)
+- [struct MediaDevice](./mediadevice.md)
   A device that plays media in a remote session.
 
 

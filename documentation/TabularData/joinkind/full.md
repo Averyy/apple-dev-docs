@@ -1,7 +1,8 @@
 # JoinKind.full
 
 **Framework**: TabularData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A join kind that contains every row from both data frame types.
 

@@ -1,12 +1,13 @@
 # symbolicTraits
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A bit mask that describes the traits of the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,21 @@ A bit mask that describes the traits of the receiver.
 var symbolicTraits: NSFontDescriptor.SymbolicTraits { get }
 ```
 
+```objc
+@property (readonly) NSFontDescriptorSymbolicTraits symbolicTraits;
+```
+
 ## See Also
 
-- [var fontAttributes: [NSFontDescriptor.AttributeName : Any]](nsfontdescriptor/fontattributes.md)
+### Related Documentation
+- [var fontAttributes: [NSFontDescriptor.AttributeName : Any]](./fontattributes.md)
   The receiver’s dictionary of attributes.
-- [var postscriptName: String?](nsfontdescriptor/postscriptname.md)
+- [var postscriptName: String?](./postscriptname.md)
   The PostScript name of the receiver.
-- [typealias NSFontSymbolicTraits](nsfontsymbolictraits.md)
+### Getting the Font Traits
+- [typealias NSFontSymbolicTraits](../nsfontsymbolictraits.md)
   A symbolic description of stylistic aspects of a font.
-- [NSFontDescriptor.TraitKey](nsfontdescriptor/traitkey.md)
+- [NSFontDescriptor.TraitKey](./traitkey.md)
   Constants that can be used as keys to retrieve information about a font descriptor from its trait dictionary.
 
 

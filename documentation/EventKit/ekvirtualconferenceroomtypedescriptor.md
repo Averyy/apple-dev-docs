@@ -1,7 +1,8 @@
 # EKVirtualConferenceRoomTypeDescriptor
 
 **Framework**: EventKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Details about a room where virtual conferences take place.
 
@@ -19,42 +20,47 @@ Details about a room where virtual conferences take place.
 class EKVirtualConferenceRoomTypeDescriptor
 ```
 
+```objc
+@interface EKVirtualConferenceRoomTypeDescriptor : NSObject
+```
+
 #### Overview
 
-To present a list of rooms where a virtual conference takes place, your virtual conference provider creates one or more room type descriptors. Each descriptor contains a user-visible title and an identifier of your choosing. When users create events using one of the rooms you provide, EventKit calls [`fetchVirtualConference(identifier:completionHandler:)`](ekvirtualconferenceprovider/fetchvirtualconference(identifier:completionhandler:).md) and passes the room’s identifier.
+To present a list of rooms where a virtual conference takes place, your virtual conference provider creates one or more room type descriptors. Each descriptor contains a user-visible title and an identifier of your choosing. When users create events using one of the rooms you provide, EventKit calls [`fetchVirtualConference(identifier:completionHandler:)`](./ekvirtualconferenceprovider/fetchvirtualconference%28identifier,completionhandler%29.md) and passes the room’s identifier.
 
 ## Topics
 
 ### Creating Room Type Descriptors
-- [init(title: String, identifier: EKVirtualConferenceRoomTypeIdentifier)](ekvirtualconferenceroomtypedescriptor/init(title:identifier:).md)
+- [init(title: String, identifier: EKVirtualConferenceRoomTypeIdentifier)](./ekvirtualconferenceroomtypedescriptor/init%28title,identifier%29.md)
   Creates an object that describes a location where a virtual conference takes place.
 ### Configuring Room Type Descriptors
-- [var title: String](ekvirtualconferenceroomtypedescriptor/title.md)
+- [var title: String](./ekvirtualconferenceroomtypedescriptor/title.md)
   The user-visible name of a room where virtual conferences take place, such as Personal Room or Team Room.
-- [var identifier: EKVirtualConferenceRoomTypeIdentifier](ekvirtualconferenceroomtypedescriptor/identifier.md)
+- [var identifier: EKVirtualConferenceRoomTypeIdentifier](./ekvirtualconferenceroomtypedescriptor/identifier.md)
   A unique string you choose that identifies the room.
-- [typealias EKVirtualConferenceRoomTypeIdentifier](ekvirtualconferenceroomtypeidentifier.md)
+- [typealias EKVirtualConferenceRoomTypeIdentifier](./ekvirtualconferenceroomtypeidentifier.md)
   The type for a room type identifier.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Implementing a virtual conference extension](implementing-a-virtual-conference-extension.md)
+### Virtual conferences
+- [Implementing a virtual conference extension](./implementing-a-virtual-conference-extension.md)
   Support adding a virtual conference room to an event in Calendar.
-- [class EKVirtualConferenceProvider](ekvirtualconferenceprovider.md)
+- [class EKVirtualConferenceProvider](./ekvirtualconferenceprovider.md)
   An object that associates virtual conferencing details with an event object in a user’s calendar.
-- [class EKVirtualConferenceDescriptor](ekvirtualconferencedescriptor.md)
+- [class EKVirtualConferenceDescriptor](./ekvirtualconferencedescriptor.md)
   Details about a virtual conference that uses a custom room type.
 
 

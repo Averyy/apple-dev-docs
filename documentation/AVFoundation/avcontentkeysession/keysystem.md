@@ -1,7 +1,8 @@
 # keySystem
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of key system used to retrieve keys.
 
@@ -20,15 +21,20 @@ The type of key system used to retrieve keys.
 var keySystem: AVContentKeySystem { get }
 ```
 
+```objc
+@property (readonly) AVContentKeySystem keySystem;
+```
+
 #### Discussion
 
-Valid values for keySystem are [`fairPlayStreaming`](avcontentkeysystem/fairplaystreaming.md) and [`clearKey`](avcontentkeysystem/clearkey.md).
+Valid values for keySystem are [`fairPlayStreaming`](../avcontentkeysystem/fairplaystreaming.md) and [`clearKey`](../avcontentkeysystem/clearkey.md).
 
 ## See Also
 
-- [struct AVContentKeySystem](avcontentkeysystem.md)
+### Inspecting the session
+- [struct AVContentKeySystem](../avcontentkeysystem.md)
   A key-delivery method for a content key session.
-- [var storageURL: URL?](avcontentkeysession/storageurl.md)
+- [var storageURL: URL?](./storageurl.md)
   A URL that points to a writable storage directory.
 
 

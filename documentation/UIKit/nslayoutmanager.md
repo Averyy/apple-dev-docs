@@ -1,7 +1,8 @@
 # NSLayoutManager
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that coordinates the layout and display of text characters.
 
@@ -9,7 +10,7 @@ An object that coordinates the layout and display of text characters.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,19 @@ An object that coordinates the layout and display of text characters.
 class NSLayoutManager
 ```
 
+```objc
+@interface NSLayoutManager : NSObject
+```
+
 #### Overview
 
-[`NSLayoutManager`](nslayoutmanager.md) maps Unicode character codes to glyphs, sets the glyphs in a series of [`NSTextContainer`](nstextcontainer.md) objects, and displays them in a series of [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview) objects. In addition to its core function of laying out text, a layout manager object coordinates its text view objects, provides services to those text views to support [`NSRulerView`](https://developer.apple.com/documentation/appkit/nsrulerview) instances for editing paragraph styles, and handles the layout and display of text attributes not inherent in glyphs (such as underline or strikethrough). You can create a subclass of [`NSLayoutManager`](nslayoutmanager.md) to handle additional text attributes, whether inherent or not.
+[`NSLayoutManager`](./nslayoutmanager.md) maps Unicode character codes to glyphs, sets the glyphs in a series of [`NSTextContainer`](./nstextcontainer.md) objects, and displays them in a series of [`NSTextView`](../AppKit/nstextview.md) objects. In addition to its core function of laying out text, a layout manager object coordinates its text view objects, provides services to those text views to support [`NSRulerView`](../AppKit/nsrulerview.md) instances for editing paragraph styles, and handles the layout and display of text attributes not inherent in glyphs (such as underline or strikethrough). You can create a subclass of [`NSLayoutManager`](./nslayoutmanager.md) to handle additional text attributes, whether inherent or not.
 
 ##### Text Antialiasing
 
-[`NSLayoutManager`](nslayoutmanager.md) provides the threshold for text antialiasing. It looks at the `AppleAntiAliasingThreshold` default value. If the font size is smaller than or equal to this threshold size, the text is rendered aliased by [`NSLayoutManager`](nslayoutmanager.md). In macOS, you can change the threshold value from the Appearance pane of System Preferences.
+[`NSLayoutManager`](./nslayoutmanager.md) provides the threshold for text antialiasing. It looks at the `AppleAntiAliasingThreshold` default value. If the font size is smaller than or equal to this threshold size, the text is rendered aliased by [`NSLayoutManager`](./nslayoutmanager.md). In macOS, you can change the threshold value from the Appearance pane of System Preferences.
 
-##### Thread Safety of Nslayoutmanager
+##### Thread Safety of NSLayoutManager
 
 Generally speaking, a specific layout manager (and associated objects) should not be used in more than one block, operation, or thread at a time. Most layout managers are used on the main thread, since it is the main thread on which their text views are displayed, and since background layout occurs on the main thread.
 
@@ -36,284 +41,285 @@ If you want to use a layout manager on a background thread, first make sure that
 
 Noncontiguous layout is an optional layout manager behavior. Previously, both glyph generation and layout were always performed, in order, from the beginning to the end of the document. When noncontiguous layout is turned on, however, the layout manager gains the option of performing glyph generation or layout for one portion of the document without having done so for previous sections. This can provide significant performance improvements for large documents.
 
-Noncontiguous layout is not turned on automatically because direct clients of `NSLayoutManager` typically have relied on the previous behavior—for example, by forcing layout for a specific glyph range, and then assuming that previous glyphs would therefore be laid out. Clients who use [`NSLayoutManager`](nslayoutmanager.md) only indirectly—for example, those who use [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview) without directly calling the underlying layout manager—can usually turn on noncontiguous layout without difficulty. Clients using [`NSLayoutManager`](nslayoutmanager.md) directly need to examine their usage before turning on noncontiguous layout.
+Noncontiguous layout is not turned on automatically because direct clients of `NSLayoutManager` typically have relied on the previous behavior—for example, by forcing layout for a specific glyph range, and then assuming that previous glyphs would therefore be laid out. Clients who use [`NSLayoutManager`](./nslayoutmanager.md) only indirectly—for example, those who use [`NSTextView`](../AppKit/nstextview.md) without directly calling the underlying layout manager—can usually turn on noncontiguous layout without difficulty. Clients using [`NSLayoutManager`](./nslayoutmanager.md) directly need to examine their usage before turning on noncontiguous layout.
 
-Enable noncontiguous layout using the [`allowsNonContiguousLayout`](nslayoutmanager/allowsnoncontiguouslayout.md) property. In addition, see the other methods in [`Causing glyph generation and layout`](nslayoutmanager#Causing-glyph-generation-and-layout.md), many of which enable you to ensure that glyph generation and layout are performed for specified portions of the text. The behavior of a number of other layout manager methods is affected by the state of noncontiguous layout, as noted in the discussion sections of those method descriptions.
+Enable noncontiguous layout using the [`allowsNonContiguousLayout`](./nslayoutmanager/allowsnoncontiguouslayout.md) property. In addition, see the other methods in [Causing glyph generation and layout](./nslayoutmanager.md#Causing-glyph-generation-and-layout), many of which enable you to ensure that glyph generation and layout are performed for specified portions of the text. The behavior of a number of other layout manager methods is affected by the state of noncontiguous layout, as noted in the discussion sections of those method descriptions.
 
 ## Topics
 
 ### Creating a layout manager
-- [init()](nslayoutmanager/init.md)
+- [init()](./nslayoutmanager/init%28%29.md)
   Initializes a newly created layout manager object.
-- [init?(coder: NSCoder)](nslayoutmanager/init(coder:).md)
+- [init?(coder: NSCoder)](./nslayoutmanager/init%28coder%29.md)
   Creates a layout manager from data in an unarchiver.
 ### Managing the layout process
-- [var delegate: (any NSLayoutManagerDelegate)?](nslayoutmanager/delegate.md)
+- [var delegate: (any NSLayoutManagerDelegate)?](./nslayoutmanager/delegate.md)
   The layout manager’s delegate.
-- [protocol NSLayoutManagerDelegate](nslayoutmanagerdelegate.md)
+- [protocol NSLayoutManagerDelegate](./nslayoutmanagerdelegate.md)
   A set of optional methods that delegates of layout manager objects implement.
 ### Accessing the text storage
-- [var textStorage: NSTextStorage?](nslayoutmanager/textstorage.md)
+- [var textStorage: NSTextStorage?](./nslayoutmanager/textstorage.md)
   The text storage object that contains the content to lay out.
-- [func replaceTextStorage(NSTextStorage)](../appkit/nslayoutmanager/replacetextstorage(_:).md)
+- [func replaceTextStorage(NSTextStorage)](../AppKit/nslayoutmanager/replacetextstorage%28_%29.md)
   Replaces the layout manager’s current text storage object with the specified object.
 ### Configuring the global layout manager options
-- [var allowsNonContiguousLayout: Bool](nslayoutmanager/allowsnoncontiguouslayout.md)
+- [var allowsNonContiguousLayout: Bool](./nslayoutmanager/allowsnoncontiguouslayout.md)
   A Boolean value that indicates whether the layout manager allows noncontiguous layout.
-- [var hasNonContiguousLayout: Bool](nslayoutmanager/hasnoncontiguouslayout.md)
+- [var hasNonContiguousLayout: Bool](./nslayoutmanager/hasnoncontiguouslayout.md)
   A Boolean value that indicates whether the layout manager currently has any areas of noncontiguous layout.
-- [var showsInvisibleCharacters: Bool](nslayoutmanager/showsinvisiblecharacters.md)
+- [var showsInvisibleCharacters: Bool](./nslayoutmanager/showsinvisiblecharacters.md)
   A Boolean value that indicates whether to substitute visible glyphs for whitespace and other typically invisible characters.
-- [var showsControlCharacters: Bool](nslayoutmanager/showscontrolcharacters.md)
+- [var showsControlCharacters: Bool](./nslayoutmanager/showscontrolcharacters.md)
   A Boolean value that indicates whether the layout manager substitutes visible glyphs for control characters in the layout.
-- [var usesFontLeading: Bool](nslayoutmanager/usesfontleading.md)
+- [var usesFontLeading: Bool](./nslayoutmanager/usesfontleading.md)
   A Boolean value that indicates whether the layout manager uses the leading of the font.
-- [var backgroundLayoutEnabled: Bool](../appkit/nslayoutmanager/backgroundlayoutenabled.md)
+- [var backgroundLayoutEnabled: Bool](../AppKit/nslayoutmanager/backgroundlayoutenabled.md)
   A Boolean value that indicates whether the layout manager generates glyphs and lays them out when the app’s run loop is idle.
-- [var limitsLayoutForSuspiciousContents: Bool](nslayoutmanager/limitslayoutforsuspiciouscontents.md)
+- [var limitsLayoutForSuspiciousContents: Bool](./nslayoutmanager/limitslayoutforsuspiciouscontents.md)
   A Boolean value that indicates whether the layout manager avoids laying out unusually long or suspicious input.
-- [var usesDefaultHyphenation: Bool](nslayoutmanager/usesdefaulthyphenation.md)
+- [var usesDefaultHyphenation: Bool](./nslayoutmanager/usesdefaulthyphenation.md)
   A Boolean value that indicates whether the layout manager uses the default hyphenation rules to wrap lines.
 ### Managing the text containers
-- [var textContainers: [NSTextContainer]](nslayoutmanager/textcontainers.md)
+- [var textContainers: [NSTextContainer]](./nslayoutmanager/textcontainers.md)
   The current text containers of the layout manager.
-- [func addTextContainer(NSTextContainer)](nslayoutmanager/addtextcontainer(_:).md)
+- [func addTextContainer(NSTextContainer)](./nslayoutmanager/addtextcontainer%28_%29.md)
   Appends the specified text container to the series of text containers where the layout manager arranges text.
-- [func insertTextContainer(NSTextContainer, at: Int)](nslayoutmanager/inserttextcontainer(_:at:).md)
+- [func insertTextContainer(NSTextContainer, at: Int)](./nslayoutmanager/inserttextcontainer%28_,at%29.md)
   Inserts a text container at the specified index in the list of text containers.
-- [func removeTextContainer(at: Int)](nslayoutmanager/removetextcontainer(at:).md)
+- [func removeTextContainer(at: Int)](./nslayoutmanager/removetextcontainer%28at%29.md)
   Removes the text container at the specified index and invalidates the layout as necessary.
-- [func setTextContainer(NSTextContainer, forGlyphRange: NSRange)](nslayoutmanager/settextcontainer(_:forglyphrange:).md)
+- [func setTextContainer(NSTextContainer, forGlyphRange: NSRange)](./nslayoutmanager/settextcontainer%28_,forglyphrange%29.md)
   Associates a text container with the specified range of glyphs.
-- [func textContainerChangedGeometry(NSTextContainer)](nslayoutmanager/textcontainerchangedgeometry(_:).md)
+- [func textContainerChangedGeometry(NSTextContainer)](./nslayoutmanager/textcontainerchangedgeometry%28_%29.md)
   Invalidates the layout information, and possibly glyphs, for the specified text container and all subsequent text container objects.
-- [func textContainerChangedTextView(NSTextContainer)](../appkit/nslayoutmanager/textcontainerchangedtextview(_:).md)
+- [func textContainerChangedTextView(NSTextContainer)](../AppKit/nslayoutmanager/textcontainerchangedtextview%28_%29.md)
   Updates the information necessary to manage text view objects for the specified text container.
-- [func textContainer(forGlyphAt: Int, effectiveRange: NSRangePointer?) -> NSTextContainer?](nslayoutmanager/textcontainer(forglyphat:effectiverange:).md)
+- [func textContainer(forGlyphAt: Int, effectiveRange: NSRangePointer?) -> NSTextContainer?](./nslayoutmanager/textcontainer%28forglyphat,effectiverange%29.md)
   Returns the text container that manages the layout for the specified glyph, causing layout to happen as necessary.
-- [func textContainer(forGlyphAt: Int, effectiveRange: NSRangePointer?, withoutAdditionalLayout: Bool) -> NSTextContainer?](nslayoutmanager/textcontainer(forglyphat:effectiverange:withoutadditionallayout:).md)
+- [func textContainer(forGlyphAt: Int, effectiveRange: NSRangePointer?, withoutAdditionalLayout: Bool) -> NSTextContainer?](./nslayoutmanager/textcontainer%28forglyphat,effectiverange,withoutadditionallayout%29.md)
   Returns the text container that manages the layout for the specified glyph.
-- [func usedRect(for: NSTextContainer) -> CGRect](nslayoutmanager/usedrect(for:).md)
+- [func usedRect(for: NSTextContainer) -> CGRect](./nslayoutmanager/usedrect%28for%29.md)
   Returns the bounding rectangle for the glyphs in the specified text container.
 ### Invalidating glyphs and layout
-- [func invalidateDisplay(forCharacterRange: NSRange)](nslayoutmanager/invalidatedisplay(forcharacterrange:).md)
+- [func invalidateDisplay(forCharacterRange: NSRange)](./nslayoutmanager/invalidatedisplay%28forcharacterrange%29.md)
   Invalidates display for the specified character range.
-- [func invalidateDisplay(forGlyphRange: NSRange)](nslayoutmanager/invalidatedisplay(forglyphrange:).md)
+- [func invalidateDisplay(forGlyphRange: NSRange)](./nslayoutmanager/invalidatedisplay%28forglyphrange%29.md)
   Invalidates a range of glyphs, requiring new layout information, and updates the appropriate regions of any text views that display those glyphs.
-- [func invalidateGlyphs(forCharacterRange: NSRange, changeInLength: Int, actualCharacterRange: NSRangePointer?)](nslayoutmanager/invalidateglyphs(forcharacterrange:changeinlength:actualcharacterrange:).md)
+- [func invalidateGlyphs(forCharacterRange: NSRange, changeInLength: Int, actualCharacterRange: NSRangePointer?)](./nslayoutmanager/invalidateglyphs%28forcharacterrange,changeinlength,actualcharacterrange%29.md)
   Invalidates and adjusts the glyphs in the specified character range.
-- [func invalidateLayout(forCharacterRange: NSRange, actualCharacterRange: NSRangePointer?)](nslayoutmanager/invalidatelayout(forcharacterrange:actualcharacterrange:).md)
+- [func invalidateLayout(forCharacterRange: NSRange, actualCharacterRange: NSRangePointer?)](./nslayoutmanager/invalidatelayout%28forcharacterrange,actualcharacterrange%29.md)
   Invalidates the layout information for the glyphs that map to the specified character range.
-- [func processEditing(for: NSTextStorage, edited: NSTextStorage.EditActions, range: NSRange, changeInLength: Int, invalidatedRange: NSRange)](nslayoutmanager/processediting(for:edited:range:changeinlength:invalidatedrange:).md)
+- [func processEditing(for: NSTextStorage, edited: NSTextStorage.EditActions, range: NSRange, changeInLength: Int, invalidatedRange: NSRange)](./nslayoutmanager/processediting%28for,edited,range,changeinlength,invalidatedrange%29.md)
   Notifies the layout manager when an edit action changes the contents of its text storage object.
 ### Causing glyph generation and layout
-- [func ensureGlyphs(forCharacterRange: NSRange)](nslayoutmanager/ensureglyphs(forcharacterrange:).md)
+- [func ensureGlyphs(forCharacterRange: NSRange)](./nslayoutmanager/ensureglyphs%28forcharacterrange%29.md)
   Forces the layout manager to generate glyphs for the specified character range if it hasn’t already.
-- [func ensureGlyphs(forGlyphRange: NSRange)](nslayoutmanager/ensureglyphs(forglyphrange:).md)
+- [func ensureGlyphs(forGlyphRange: NSRange)](./nslayoutmanager/ensureglyphs%28forglyphrange%29.md)
   Forces the layout manager to generate glyphs for the specified glyph range if it hasn’t already.
-- [func ensureLayout(forBoundingRect: CGRect, in: NSTextContainer)](nslayoutmanager/ensurelayout(forboundingrect:in:).md)
+- [func ensureLayout(forBoundingRect: CGRect, in: NSTextContainer)](./nslayoutmanager/ensurelayout%28forboundingrect,in%29.md)
   Forces the layout manager to perform layout for the specified area in the specified text container if it hasn’t already.
-- [func ensureLayout(forCharacterRange: NSRange)](nslayoutmanager/ensurelayout(forcharacterrange:).md)
+- [func ensureLayout(forCharacterRange: NSRange)](./nslayoutmanager/ensurelayout%28forcharacterrange%29.md)
   Forces the layout manager to perform layout for the specified character range if it hasn’t already.
-- [func ensureLayout(forGlyphRange: NSRange)](nslayoutmanager/ensurelayout(forglyphrange:).md)
+- [func ensureLayout(forGlyphRange: NSRange)](./nslayoutmanager/ensurelayout%28forglyphrange%29.md)
   Forces the layout manager to perform layout for the specified glyph range if it hasn’t already.
-- [func ensureLayout(for: NSTextContainer)](nslayoutmanager/ensurelayout(for:).md)
+- [func ensureLayout(for: NSTextContainer)](./nslayoutmanager/ensurelayout%28for%29.md)
   Forces the layout manager to perform layout for the specified text container if it hasn’t already.
-- [var glyphGenerator: NSGlyphGenerator](../appkit/nslayoutmanager/glyphgenerator.md)
+- [var glyphGenerator: NSGlyphGenerator](../AppKit/nslayoutmanager/glyphgenerator.md)
   The glyph generator that the layout manager uses.
 ### Accessing glyphs
-- [func getGlyphs(in: NSRange, glyphs: UnsafeMutablePointer<CGGlyph>?, properties: UnsafeMutablePointer<NSLayoutManager.GlyphProperty>?, characterIndexes: UnsafeMutablePointer<Int>?, bidiLevels: UnsafeMutablePointer<UInt8>?) -> Int](nslayoutmanager/getglyphs(in:glyphs:properties:characterindexes:bidilevels:).md)
+- [func getGlyphs(in: NSRange, glyphs: UnsafeMutablePointer<CGGlyph>?, properties: UnsafeMutablePointer<NSLayoutManager.GlyphProperty>?, characterIndexes: UnsafeMutablePointer<Int>?, bidiLevels: UnsafeMutablePointer<UInt8>?) -> Int](./nslayoutmanager/getglyphs%28in,glyphs,properties,characterindexes,bidilevels%29.md)
   Fills a passed-in buffer with a sequence of glyphs.
-- [func cgGlyph(at: Int) -> CGGlyph](nslayoutmanager/cgglyph(at:).md)
+- [func cgGlyph(at: Int) -> CGGlyph](./nslayoutmanager/cgglyph%28at%29.md)
   Returns the glyph at the specified index.
-- [func cgGlyph(at: Int, isValidIndex: UnsafeMutablePointer<ObjCBool>?) -> CGGlyph](nslayoutmanager/cgglyph(at:isvalidindex:).md)
+- [func cgGlyph(at: Int, isValidIndex: UnsafeMutablePointer<ObjCBool>?) -> CGGlyph](./nslayoutmanager/cgglyph%28at,isvalidindex%29.md)
   Returns the glyph at the specified index along with information about whether the glyph index is valid.
-- [func setGlyphs(UnsafePointer<CGGlyph>, properties: UnsafePointer<NSLayoutManager.GlyphProperty>, characterIndexes: UnsafePointer<Int>, font: UIFont, forGlyphRange: NSRange)](nslayoutmanager/setglyphs(_:properties:characterindexes:font:forglyphrange:).md)
+- [func setGlyphs(UnsafePointer<CGGlyph>, properties: UnsafePointer<NSLayoutManager.GlyphProperty>, characterIndexes: UnsafePointer<Int>, font: UIFont, forGlyphRange: NSRange)](./nslayoutmanager/setglyphs%28_,properties,characterindexes,font,forglyphrange%29.md)
   Stores the initial glyphs and glyph properties for a character range.
-- [func characterIndexForGlyph(at: Int) -> Int](nslayoutmanager/characterindexforglyph(at:).md)
+- [func characterIndexForGlyph(at: Int) -> Int](./nslayoutmanager/characterindexforglyph%28at%29.md)
   Returns the index in the text storage for the first character of the specified glyph.
-- [func glyphIndexForCharacter(at: Int) -> Int](nslayoutmanager/glyphindexforcharacter(at:).md)
+- [func glyphIndexForCharacter(at: Int) -> Int](./nslayoutmanager/glyphindexforcharacter%28at%29.md)
   Returns the index of the first glyph of the character at the specified index.
-- [func isValidGlyphIndex(Int) -> Bool](nslayoutmanager/isvalidglyphindex(_:).md)
+- [func isValidGlyphIndex(Int) -> Bool](./nslayoutmanager/isvalidglyphindex%28_%29.md)
   Indicates whether the specified index refers to a valid glyph.
-- [var numberOfGlyphs: Int](nslayoutmanager/numberofglyphs.md)
+- [var numberOfGlyphs: Int](./nslayoutmanager/numberofglyphs.md)
   The number of glyphs in the layout manager.
-- [func propertyForGlyph(at: Int) -> NSLayoutManager.GlyphProperty](nslayoutmanager/propertyforglyph(at:).md)
+- [func propertyForGlyph(at: Int) -> NSLayoutManager.GlyphProperty](./nslayoutmanager/propertyforglyph%28at%29.md)
   Returns the glyph property of the glyph at the specified index.
-- [NSLayoutManager.GlyphProperty](nslayoutmanager/glyphproperty.md)
+- [NSLayoutManager.GlyphProperty](./nslayoutmanager/glyphproperty.md)
   Glyph properties.
 ### Setting layout information
-- [func setAttachmentSize(CGSize, forGlyphRange: NSRange)](nslayoutmanager/setattachmentsize(_:forglyphrange:).md)
+- [func setAttachmentSize(CGSize, forGlyphRange: NSRange)](./nslayoutmanager/setattachmentsize%28_,forglyphrange%29.md)
   Sets the size to use when drawing a glyph that represents an attachment.
-- [func setDrawsOutsideLineFragment(Bool, forGlyphAt: Int)](nslayoutmanager/setdrawsoutsidelinefragment(_:forglyphat:).md)
+- [func setDrawsOutsideLineFragment(Bool, forGlyphAt: Int)](./nslayoutmanager/setdrawsoutsidelinefragment%28_,forglyphat%29.md)
   Indicates whether the specified glyph exceeds the bounds of the line fragment for its layout.
-- [func setExtraLineFragmentRect(CGRect, usedRect: CGRect, textContainer: NSTextContainer)](nslayoutmanager/setextralinefragmentrect(_:usedrect:textcontainer:).md)
+- [func setExtraLineFragmentRect(CGRect, usedRect: CGRect, textContainer: NSTextContainer)](./nslayoutmanager/setextralinefragmentrect%28_,usedrect,textcontainer%29.md)
   Sets the bounds and container for the extra line fragment.
-- [func setLineFragmentRect(CGRect, forGlyphRange: NSRange, usedRect: CGRect)](nslayoutmanager/setlinefragmentrect(_:forglyphrange:usedrect:).md)
+- [func setLineFragmentRect(CGRect, forGlyphRange: NSRange, usedRect: CGRect)](./nslayoutmanager/setlinefragmentrect%28_,forglyphrange,usedrect%29.md)
   Associates the line fragment bounds for the specified range of glyphs.
-- [func setLocation(CGPoint, forStartOfGlyphRange: NSRange)](nslayoutmanager/setlocation(_:forstartofglyphrange:).md)
+- [func setLocation(CGPoint, forStartOfGlyphRange: NSRange)](./nslayoutmanager/setlocation%28_,forstartofglyphrange%29.md)
   Sets the location for the first glyph in the specified range.
-- [func setNotShownAttribute(Bool, forGlyphAt: Int)](nslayoutmanager/setnotshownattribute(_:forglyphat:).md)
+- [func setNotShownAttribute(Bool, forGlyphAt: Int)](./nslayoutmanager/setnotshownattribute%28_,forglyphat%29.md)
   Sets the visibility of the glyph at the specified index.
 ### Getting layout information
-- [func attachmentSize(forGlyphAt: Int) -> CGSize](nslayoutmanager/attachmentsize(forglyphat:).md)
+- [func attachmentSize(forGlyphAt: Int) -> CGSize](./nslayoutmanager/attachmentsize%28forglyphat%29.md)
   Returns the size of the attachment glyph at the specified index.
-- [func drawsOutsideLineFragment(forGlyphAt: Int) -> Bool](nslayoutmanager/drawsoutsidelinefragment(forglyphat:).md)
+- [func drawsOutsideLineFragment(forGlyphAt: Int) -> Bool](./nslayoutmanager/drawsoutsidelinefragment%28forglyphat%29.md)
   Indicates whether the glyph draws outside its line fragment rectangle.
-- [var extraLineFragmentRect: CGRect](nslayoutmanager/extralinefragmentrect.md)
+- [var extraLineFragmentRect: CGRect](./nslayoutmanager/extralinefragmentrect.md)
   The rectangle for the extra line fragment at the end of a document.
-- [var extraLineFragmentTextContainer: NSTextContainer?](nslayoutmanager/extralinefragmenttextcontainer.md)
+- [var extraLineFragmentTextContainer: NSTextContainer?](./nslayoutmanager/extralinefragmenttextcontainer.md)
   The text container for the extra line fragment rectangle.
-- [var extraLineFragmentUsedRect: CGRect](nslayoutmanager/extralinefragmentusedrect.md)
+- [var extraLineFragmentUsedRect: CGRect](./nslayoutmanager/extralinefragmentusedrect.md)
   The rectangle that encloses the insertion point in the extra line fragment rectangle.
-- [func firstUnlaidCharacterIndex() -> Int](nslayoutmanager/firstunlaidcharacterindex.md)
+- [func firstUnlaidCharacterIndex() -> Int](./nslayoutmanager/firstunlaidcharacterindex%28%29.md)
   Returns the index for the first character in the layout manager that isn’t in the layout.
-- [func firstUnlaidGlyphIndex() -> Int](nslayoutmanager/firstunlaidglyphindex.md)
+- [func firstUnlaidGlyphIndex() -> Int](./nslayoutmanager/firstunlaidglyphindex%28%29.md)
   Returns the index for the first glyph in the layout manager that isn’t in the layout.
-- [func getFirstUnlaidCharacterIndex(UnsafeMutablePointer<Int>?, glyphIndex: UnsafeMutablePointer<Int>?)](nslayoutmanager/getfirstunlaidcharacterindex(_:glyphindex:).md)
+- [func getFirstUnlaidCharacterIndex(UnsafeMutablePointer<Int>?, glyphIndex: UnsafeMutablePointer<Int>?)](./nslayoutmanager/getfirstunlaidcharacterindex%28_,glyphindex%29.md)
   Returns the indexes for the first character and glyph that have invalid layout information.
-- [func lineFragmentRect(forGlyphAt: Int, effectiveRange: NSRangePointer?) -> CGRect](nslayoutmanager/linefragmentrect(forglyphat:effectiverange:).md)
+- [func lineFragmentRect(forGlyphAt: Int, effectiveRange: NSRangePointer?) -> CGRect](./nslayoutmanager/linefragmentrect%28forglyphat,effectiverange%29.md)
   Returns the rectangle for the line fragment where the glyph lies and (optionally), by reference, the entire range of glyphs in that fragment.
-- [func lineFragmentRect(forGlyphAt: Int, effectiveRange: NSRangePointer?, withoutAdditionalLayout: Bool) -> CGRect](nslayoutmanager/linefragmentrect(forglyphat:effectiverange:withoutadditionallayout:).md)
+- [func lineFragmentRect(forGlyphAt: Int, effectiveRange: NSRangePointer?, withoutAdditionalLayout: Bool) -> CGRect](./nslayoutmanager/linefragmentrect%28forglyphat,effectiverange,withoutadditionallayout%29.md)
   Returns the line fragment rectangle that contains the glyph at the specified glyph index.
-- [func lineFragmentUsedRect(forGlyphAt: Int, effectiveRange: NSRangePointer?) -> CGRect](nslayoutmanager/linefragmentusedrect(forglyphat:effectiverange:).md)
+- [func lineFragmentUsedRect(forGlyphAt: Int, effectiveRange: NSRangePointer?) -> CGRect](./nslayoutmanager/linefragmentusedrect%28forglyphat,effectiverange%29.md)
   Returns the usage rectangle for the line fragment and (optionally) returns the entire range of glyphs in that fragment.
-- [func lineFragmentUsedRect(forGlyphAt: Int, effectiveRange: NSRangePointer?, withoutAdditionalLayout: Bool) -> CGRect](nslayoutmanager/linefragmentusedrect(forglyphat:effectiverange:withoutadditionallayout:).md)
+- [func lineFragmentUsedRect(forGlyphAt: Int, effectiveRange: NSRangePointer?, withoutAdditionalLayout: Bool) -> CGRect](./nslayoutmanager/linefragmentusedrect%28forglyphat,effectiverange,withoutadditionallayout%29.md)
   Returns the usage rectangle for the line fragment and (optionally) returns the entire range of glyphs in that fragment.
-- [func location(forGlyphAt: Int) -> CGPoint](nslayoutmanager/location(forglyphat:).md)
+- [func location(forGlyphAt: Int) -> CGPoint](./nslayoutmanager/location%28forglyphat%29.md)
   Returns the location for the specified glyph within its line fragment.
-- [func notShownAttribute(forGlyphAt: Int) -> Bool](nslayoutmanager/notshownattribute(forglyphat:).md)
+- [func notShownAttribute(forGlyphAt: Int) -> Bool](./nslayoutmanager/notshownattribute%28forglyphat%29.md)
   Indicates whether the glyph at the specified index has a visible representation.
-- [func truncatedGlyphRange(inLineFragmentForGlyphAt: Int) -> NSRange](nslayoutmanager/truncatedglyphrange(inlinefragmentforglyphat:).md)
+- [func truncatedGlyphRange(inLineFragmentForGlyphAt: Int) -> NSRange](./nslayoutmanager/truncatedglyphrange%28inlinefragmentforglyphat%29.md)
   Returns the range of truncated glyphs for a line fragment that contains the specified index.
 ### Performing advanced layout queries
-- [func boundingRect(forGlyphRange: NSRange, in: NSTextContainer) -> CGRect](nslayoutmanager/boundingrect(forglyphrange:in:).md)
+- [func boundingRect(forGlyphRange: NSRange, in: NSTextContainer) -> CGRect](./nslayoutmanager/boundingrect%28forglyphrange,in%29.md)
   Returns the bounding rectangle for the specified glyphs in a container.
-- [func characterIndex(for: CGPoint, in: NSTextContainer, fractionOfDistanceBetweenInsertionPoints: UnsafeMutablePointer<CGFloat>?) -> Int](nslayoutmanager/characterindex(for:in:fractionofdistancebetweeninsertionpoints:).md)
+- [func characterIndex(for: CGPoint, in: NSTextContainer, fractionOfDistanceBetweenInsertionPoints: UnsafeMutablePointer<CGFloat>?) -> Int](./nslayoutmanager/characterindex%28for,in,fractionofdistancebetweeninsertionpoints%29.md)
   Returns the index of the character that lies beneath the specified point using the specified container’s coordinate system.
-- [func characterRange(forGlyphRange: NSRange, actualGlyphRange: NSRangePointer?) -> NSRange](nslayoutmanager/characterrange(forglyphrange:actualglyphrange:).md)
+- [func characterRange(forGlyphRange: NSRange, actualGlyphRange: NSRangePointer?) -> NSRange](./nslayoutmanager/characterrange%28forglyphrange,actualglyphrange%29.md)
   Returns the range of characters that correspond to the glyphs in the specified glyph range.
-- [func enumerateEnclosingRects(forGlyphRange: NSRange, withinSelectedGlyphRange: NSRange, in: NSTextContainer, using: (CGRect, UnsafeMutablePointer<ObjCBool>) -> Void)](nslayoutmanager/enumerateenclosingrects(forglyphrange:withinselectedglyphrange:in:using:).md)
+- [func enumerateEnclosingRects(forGlyphRange: NSRange, withinSelectedGlyphRange: NSRange, in: NSTextContainer, using: (CGRect, UnsafeMutablePointer<ObjCBool>) -> Void)](./nslayoutmanager/enumerateenclosingrects%28forglyphrange,withinselectedglyphrange,in,using%29.md)
   Enumerates enclosing rectangles for the specified glyph range in a text container.
-- [func enumerateLineFragments(forGlyphRange: NSRange, using: (CGRect, CGRect, NSTextContainer, NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)](nslayoutmanager/enumeratelinefragments(forglyphrange:using:).md)
+- [func enumerateLineFragments(forGlyphRange: NSRange, using: (CGRect, CGRect, NSTextContainer, NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)](./nslayoutmanager/enumeratelinefragments%28forglyphrange,using%29.md)
   Enumerates line fragments intersecting with the specified glyph range.
-- [func fractionOfDistanceThroughGlyph(for: CGPoint, in: NSTextContainer) -> CGFloat](nslayoutmanager/fractionofdistancethroughglyph(for:in:).md)
+- [func fractionOfDistanceThroughGlyph(for: CGPoint, in: NSTextContainer) -> CGFloat](./nslayoutmanager/fractionofdistancethroughglyph%28for,in%29.md)
   Returns the fraction of the distance between the glyph at the specified point and the next glyph.
-- [func getLineFragmentInsertionPoints(forCharacterAt: Int, alternatePositions: Bool, inDisplayOrder: Bool, positions: UnsafeMutablePointer<CGFloat>?, characterIndexes: UnsafeMutablePointer<Int>?) -> Int](nslayoutmanager/getlinefragmentinsertionpoints(forcharacterat:alternatepositions:indisplayorder:positions:characterindexes:).md)
+- [func getLineFragmentInsertionPoints(forCharacterAt: Int, alternatePositions: Bool, inDisplayOrder: Bool, positions: UnsafeMutablePointer<CGFloat>?, characterIndexes: UnsafeMutablePointer<Int>?) -> Int](./nslayoutmanager/getlinefragmentinsertionpoints%28forcharacterat,alternatepositions,indisplayorder,positions,characterindexes%29.md)
   Returns insertion points in bulk for a specified line fragment.
-- [func glyphIndex(for: CGPoint, in: NSTextContainer) -> Int](nslayoutmanager/glyphindex(for:in:).md)
+- [func glyphIndex(for: CGPoint, in: NSTextContainer) -> Int](./nslayoutmanager/glyphindex%28for,in%29.md)
   Returns the index of the glyph at the specified location in a text container.
-- [func glyphIndex(for: CGPoint, in: NSTextContainer, fractionOfDistanceThroughGlyph: UnsafeMutablePointer<CGFloat>?) -> Int](nslayoutmanager/glyphindex(for:in:fractionofdistancethroughglyph:).md)
+- [func glyphIndex(for: CGPoint, in: NSTextContainer, fractionOfDistanceThroughGlyph: UnsafeMutablePointer<CGFloat>?) -> Int](./nslayoutmanager/glyphindex%28for,in,fractionofdistancethroughglyph%29.md)
   Returns the index of the glyph at the specified point using the container’s coordinate system.
-- [func glyphRange(forBoundingRect: CGRect, in: NSTextContainer) -> NSRange](nslayoutmanager/glyphrange(forboundingrect:in:).md)
+- [func glyphRange(forBoundingRect: CGRect, in: NSTextContainer) -> NSRange](./nslayoutmanager/glyphrange%28forboundingrect,in%29.md)
   Returns the smallest contiguous range for glyphs lying wholly or partially within the specified rectangle of the text container.
-- [func glyphRange(forBoundingRectWithoutAdditionalLayout: CGRect, in: NSTextContainer) -> NSRange](nslayoutmanager/glyphrange(forboundingrectwithoutadditionallayout:in:).md)
+- [func glyphRange(forBoundingRectWithoutAdditionalLayout: CGRect, in: NSTextContainer) -> NSRange](./nslayoutmanager/glyphrange%28forboundingrectwithoutadditionallayout,in%29.md)
   Returns the smallest contiguous range for glyphs lying wholly or partially within the specified rectangle of the text container.
-- [func glyphRange(for: NSTextContainer) -> NSRange](nslayoutmanager/glyphrange(for:).md)
+- [func glyphRange(for: NSTextContainer) -> NSRange](./nslayoutmanager/glyphrange%28for%29.md)
   Returns the range of glyphs lying within the specified text container.
-- [func glyphRange(forCharacterRange: NSRange, actualCharacterRange: NSRangePointer?) -> NSRange](nslayoutmanager/glyphrange(forcharacterrange:actualcharacterrange:).md)
+- [func glyphRange(forCharacterRange: NSRange, actualCharacterRange: NSRangePointer?) -> NSRange](./nslayoutmanager/glyphrange%28forcharacterrange,actualcharacterrange%29.md)
   Returns the range of glyphs that the specified range of characters generates.
-- [func range(ofNominallySpacedGlyphsContaining: Int) -> NSRange](nslayoutmanager/range(ofnominallyspacedglyphscontaining:).md)
+- [func range(ofNominallySpacedGlyphsContaining: Int) -> NSRange](./nslayoutmanager/range%28ofnominallyspacedglyphscontaining%29.md)
   Returns the range of displayable glyphs that surround the glyph at the specified index.
 ### Drawing
-- [func drawBackground(forGlyphRange: NSRange, at: CGPoint)](nslayoutmanager/drawbackground(forglyphrange:at:).md)
+- [func drawBackground(forGlyphRange: NSRange, at: CGPoint)](./nslayoutmanager/drawbackground%28forglyphrange,at%29.md)
   Draws background marks for the specified glyphs, which must lie completely within a single text container.
-- [func drawGlyphs(forGlyphRange: NSRange, at: CGPoint)](nslayoutmanager/drawglyphs(forglyphrange:at:).md)
+- [func drawGlyphs(forGlyphRange: NSRange, at: CGPoint)](./nslayoutmanager/drawglyphs%28forglyphrange,at%29.md)
   Draws the specified glyphs, which must lie completely within a single text container.
-- [func drawStrikethrough(forGlyphRange: NSRange, strikethroughType: NSUnderlineStyle, baselineOffset: CGFloat, lineFragmentRect: CGRect, lineFragmentGlyphRange: NSRange, containerOrigin: CGPoint)](nslayoutmanager/drawstrikethrough(forglyphrange:strikethroughtype:baselineoffset:linefragmentrect:linefragmentglyphrange:containerorigin:).md)
+- [func drawStrikethrough(forGlyphRange: NSRange, strikethroughType: NSUnderlineStyle, baselineOffset: CGFloat, lineFragmentRect: CGRect, lineFragmentGlyphRange: NSRange, containerOrigin: CGPoint)](./nslayoutmanager/drawstrikethrough%28forglyphrange,strikethroughtype,baselineoffset,linefragmentrect,linefragmentglyphrange,containerorigin%29.md)
   Draws a strikethrough for the specified glyphs.
-- [func drawUnderline(forGlyphRange: NSRange, underlineType: NSUnderlineStyle, baselineOffset: CGFloat, lineFragmentRect: CGRect, lineFragmentGlyphRange: NSRange, containerOrigin: CGPoint)](nslayoutmanager/drawunderline(forglyphrange:underlinetype:baselineoffset:linefragmentrect:linefragmentglyphrange:containerorigin:).md)
+- [func drawUnderline(forGlyphRange: NSRange, underlineType: NSUnderlineStyle, baselineOffset: CGFloat, lineFragmentRect: CGRect, lineFragmentGlyphRange: NSRange, containerOrigin: CGPoint)](./nslayoutmanager/drawunderline%28forglyphrange,underlinetype,baselineoffset,linefragmentrect,linefragmentglyphrange,containerorigin%29.md)
   Draws underlining for the glyphs in a specified range.
-- [func fillBackgroundRectArray(UnsafePointer<CGRect>, count: Int, forCharacterRange: NSRange, color: UIColor)](nslayoutmanager/fillbackgroundrectarray(_:count:forcharacterrange:color:).md)
+- [func fillBackgroundRectArray(UnsafePointer<CGRect>, count: Int, forCharacterRange: NSRange, color: UIColor)](./nslayoutmanager/fillbackgroundrectarray%28_,count,forcharacterrange,color%29.md)
   Fills background rectangles with a color.
-- [func showCGGlyphs(UnsafePointer<CGGlyph>, positions: UnsafePointer<CGPoint>, count: Int, font: UIFont, textMatrix: CGAffineTransform, attributes: [NSAttributedString.Key : Any], in: CGContext)](nslayoutmanager/showcgglyphs(_:positions:count:font:textmatrix:attributes:in:).md)
+- [func showCGGlyphs(UnsafePointer<CGGlyph>, positions: UnsafePointer<CGPoint>, count: Int, font: UIFont, textMatrix: CGAffineTransform, attributes: [NSAttributedString.Key : Any], in: CGContext)](./nslayoutmanager/showcgglyphs%28_,positions,count,font,textmatrix,attributes,in%29.md)
   Renders the glyphs at the specified positions, using the specified attributes.
-- [func strikethroughGlyphRange(NSRange, strikethroughType: NSUnderlineStyle, lineFragmentRect: CGRect, lineFragmentGlyphRange: NSRange, containerOrigin: CGPoint)](nslayoutmanager/strikethroughglyphrange(_:strikethroughtype:linefragmentrect:linefragmentglyphrange:containerorigin:).md)
+- [func strikethroughGlyphRange(NSRange, strikethroughType: NSUnderlineStyle, lineFragmentRect: CGRect, lineFragmentGlyphRange: NSRange, containerOrigin: CGPoint)](./nslayoutmanager/strikethroughglyphrange%28_,strikethroughtype,linefragmentrect,linefragmentglyphrange,containerorigin%29.md)
   Calculates and draws strikethrough for the specified glyphs.
-- [func underlineGlyphRange(NSRange, underlineType: NSUnderlineStyle, lineFragmentRect: CGRect, lineFragmentGlyphRange: NSRange, containerOrigin: CGPoint)](nslayoutmanager/underlineglyphrange(_:underlinetype:linefragmentrect:linefragmentglyphrange:containerorigin:).md)
+- [func underlineGlyphRange(NSRange, underlineType: NSUnderlineStyle, lineFragmentRect: CGRect, lineFragmentGlyphRange: NSRange, containerOrigin: CGPoint)](./nslayoutmanager/underlineglyphrange%28_,underlinetype,linefragmentrect,linefragmentglyphrange,containerorigin%29.md)
   Calculates subranges to underline for the specified glyphs and draws the underlining as appropriate.
 ### Handling layout for text blocks
-- [func setLayoutRect(NSRect, for: NSTextBlock, glyphRange: NSRange)](../appkit/nslayoutmanager/setlayoutrect(_:for:glyphrange:).md)
+- [func setLayoutRect(NSRect, for: NSTextBlock, glyphRange: NSRange)](../AppKit/nslayoutmanager/setlayoutrect%28_,for,glyphrange%29.md)
   Sets the layout rectangle that encloses the specified text block and glyph range.
-- [func layoutRect(for: NSTextBlock, glyphRange: NSRange) -> NSRect](../appkit/nslayoutmanager/layoutrect(for:glyphrange:).md)
+- [func layoutRect(for: NSTextBlock, glyphRange: NSRange) -> NSRect](../AppKit/nslayoutmanager/layoutrect%28for,glyphrange%29.md)
   Returns the rectangle for the layout of the specified text block and glyph range.
-- [func setBoundsRect(NSRect, for: NSTextBlock, glyphRange: NSRange)](../appkit/nslayoutmanager/setboundsrect(_:for:glyphrange:).md)
+- [func setBoundsRect(NSRect, for: NSTextBlock, glyphRange: NSRange)](../AppKit/nslayoutmanager/setboundsrect%28_,for,glyphrange%29.md)
   Sets the bounding rectangle that encloses the specified text block and glyph range.
-- [func boundsRect(for: NSTextBlock, glyphRange: NSRange) -> NSRect](../appkit/nslayoutmanager/boundsrect(for:glyphrange:).md)
+- [func boundsRect(for: NSTextBlock, glyphRange: NSRange) -> NSRect](../AppKit/nslayoutmanager/boundsrect%28for,glyphrange%29.md)
   Returns the bounding rectangle that encloses the specified text block and glyph range.
-- [func layoutRect(for: NSTextBlock, at: Int, effectiveRange: NSRangePointer?) -> NSRect](../appkit/nslayoutmanager/layoutrect(for:at:effectiverange:).md)
+- [func layoutRect(for: NSTextBlock, at: Int, effectiveRange: NSRangePointer?) -> NSRect](../AppKit/nslayoutmanager/layoutrect%28for,at,effectiverange%29.md)
   Returns the rectangle for the layout of the specified text block and glyph.
-- [func boundsRect(for: NSTextBlock, at: Int, effectiveRange: NSRangePointer?) -> NSRect](../appkit/nslayoutmanager/boundsrect(for:at:effectiverange:).md)
+- [func boundsRect(for: NSTextBlock, at: Int, effectiveRange: NSRangePointer?) -> NSRect](../AppKit/nslayoutmanager/boundsrect%28for,at,effectiverange%29.md)
   Returns the bounding rectangle for the specified text block and glyph.
 ### Managing attachments
-- [var defaultAttachmentScaling: NSImageScaling](../appkit/nslayoutmanager/defaultattachmentscaling.md)
+- [var defaultAttachmentScaling: NSImageScaling](../AppKit/nslayoutmanager/defaultattachmentscaling.md)
   The default amount of scaling to apply when an attachment image is too large to fit in a text container.
-- [func showAttachmentCell(NSCell, in: NSRect, characterIndex: Int)](../appkit/nslayoutmanager/showattachmentcell(_:in:characterindex:).md)
+- [func showAttachmentCell(NSCell, in: NSRect, characterIndex: Int)](../AppKit/nslayoutmanager/showattachmentcell%28_,in,characterindex%29.md)
   Draws an attachment cell.
 ### Handling Rulers
-- [func rulerAccessoryView(for: NSTextView, paragraphStyle: NSParagraphStyle, ruler: NSRulerView, enabled: Bool) -> NSView?](../appkit/nslayoutmanager/ruleraccessoryview(for:paragraphstyle:ruler:enabled:).md)
+- [func rulerAccessoryView(for: NSTextView, paragraphStyle: NSParagraphStyle, ruler: NSRulerView, enabled: Bool) -> NSView?](../AppKit/nslayoutmanager/ruleraccessoryview%28for,paragraphstyle,ruler,enabled%29.md)
   Returns the accessory view that the text system uses for its ruler.
-- [func rulerMarkers(for: NSTextView, paragraphStyle: NSParagraphStyle, ruler: NSRulerView) -> [NSRulerMarker]](../appkit/nslayoutmanager/rulermarkers(for:paragraphstyle:ruler:).md)
+- [func rulerMarkers(for: NSTextView, paragraphStyle: NSParagraphStyle, ruler: NSRulerView) -> [NSRulerMarker]](../AppKit/nslayoutmanager/rulermarkers%28for,paragraphstyle,ruler%29.md)
   Returns an array of text ruler objects for the current selection.
 ### Managing the responder chain
-- [func layoutManagerOwnsFirstResponder(in: NSWindow) -> Bool](../appkit/nslayoutmanager/layoutmanagerownsfirstresponder(in:).md)
+- [func layoutManagerOwnsFirstResponder(in: NSWindow) -> Bool](../AppKit/nslayoutmanager/layoutmanagerownsfirstresponder%28in%29.md)
   Indicates whether the first responder in the specified window is a text view for the layout manager.
-- [var firstTextView: NSTextView?](../appkit/nslayoutmanager/firsttextview.md)
+- [var firstTextView: NSTextView?](../AppKit/nslayoutmanager/firsttextview.md)
   The first text view in the layout manager’s series of text views.
-- [var textViewForBeginningOfSelection: NSTextView?](../appkit/nslayoutmanager/textviewforbeginningofselection.md)
+- [var textViewForBeginningOfSelection: NSTextView?](../AppKit/nslayoutmanager/textviewforbeginningofselection.md)
   The text view that contains the first glyph in the selection.
 ### Managing the typesetter
-- [var typesetter: NSTypesetter](../appkit/nslayoutmanager/typesetter.md)
+- [var typesetter: NSTypesetter](../AppKit/nslayoutmanager/typesetter.md)
   The current typesetter.
-- [var typesetterBehavior: NSLayoutManager.TypesetterBehavior](../appkit/nslayoutmanager/typesetterbehavior-swift.property.md)
+- [var typesetterBehavior: NSLayoutManager.TypesetterBehavior](../AppKit/nslayoutmanager/typesetterbehavior-swift.property.md)
   The default typesetter behavior.
-- [NSLayoutManager.TypesetterBehavior](../appkit/nslayoutmanager/typesetterbehavior-swift.enum.md)
+- [NSLayoutManager.TypesetterBehavior](../AppKit/nslayoutmanager/typesetterbehavior-swift.enum.md)
   Constants that determine the layout manager’s behavior during layout.
-- [func defaultLineHeight(for: NSFont) -> CGFloat](../appkit/nslayoutmanager/defaultlineheight(for:).md)
+- [func defaultLineHeight(for: NSFont) -> CGFloat](../AppKit/nslayoutmanager/defaultlineheight%28for%29.md)
   Returns the default line height for a line of text that uses a specified font.
-- [func defaultBaselineOffset(for: NSFont) -> CGFloat](../appkit/nslayoutmanager/defaultbaselineoffset(for:).md)
+- [func defaultBaselineOffset(for: NSFont) -> CGFloat](../AppKit/nslayoutmanager/defaultbaselineoffset%28for%29.md)
   Returns the default baseline offset that the layout manager’s typesetter uses for the specified font.
 ### Managing temporary attribute support
-- [func addTemporaryAttributes([NSAttributedString.Key : Any], forCharacterRange: NSRange)](../appkit/nslayoutmanager/addtemporaryattributes(_:forcharacterrange:).md)
+- [func addTemporaryAttributes([NSAttributedString.Key : Any], forCharacterRange: NSRange)](../AppKit/nslayoutmanager/addtemporaryattributes%28_,forcharacterrange%29.md)
   Appends one or more temporary attributes to the attributes dictionary of the specified character range.
-- [func addTemporaryAttribute(NSAttributedString.Key, value: Any, forCharacterRange: NSRange)](../appkit/nslayoutmanager/addtemporaryattribute(_:value:forcharacterrange:).md)
+- [func addTemporaryAttribute(NSAttributedString.Key, value: Any, forCharacterRange: NSRange)](../AppKit/nslayoutmanager/addtemporaryattribute%28_,value,forcharacterrange%29.md)
   Adds a temporary attribute to the characters in the specified range.
-- [func setTemporaryAttributes([NSAttributedString.Key : Any], forCharacterRange: NSRange)](../appkit/nslayoutmanager/settemporaryattributes(_:forcharacterrange:).md)
+- [func setTemporaryAttributes([NSAttributedString.Key : Any], forCharacterRange: NSRange)](../AppKit/nslayoutmanager/settemporaryattributes%28_,forcharacterrange%29.md)
   Sets one or more temporary attributes for the specified character range.
-- [func removeTemporaryAttribute(NSAttributedString.Key, forCharacterRange: NSRange)](../appkit/nslayoutmanager/removetemporaryattribute(_:forcharacterrange:).md)
+- [func removeTemporaryAttribute(NSAttributedString.Key, forCharacterRange: NSRange)](../AppKit/nslayoutmanager/removetemporaryattribute%28_,forcharacterrange%29.md)
   Removes a temporary attribute from the list of attributes for the specified character range.
-- [func temporaryAttribute(NSAttributedString.Key, atCharacterIndex: Int, effectiveRange: NSRangePointer?) -> Any?](../appkit/nslayoutmanager/temporaryattribute(_:atcharacterindex:effectiverange:).md)
+- [func temporaryAttribute(NSAttributedString.Key, atCharacterIndex: Int, effectiveRange: NSRangePointer?) -> Any?](../AppKit/nslayoutmanager/temporaryattribute%28_,atcharacterindex,effectiverange%29.md)
   Returns the value for the temporary attribute of a character, and the range it applies to.
-- [func temporaryAttribute(NSAttributedString.Key, atCharacterIndex: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> Any?](../appkit/nslayoutmanager/temporaryattribute(_:atcharacterindex:longesteffectiverange:in:).md)
+- [func temporaryAttribute(NSAttributedString.Key, atCharacterIndex: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> Any?](../AppKit/nslayoutmanager/temporaryattribute%28_,atcharacterindex,longesteffectiverange,in%29.md)
   Returns the value for the temporary attribute of a character, and the maximum range it applies to.
-- [func temporaryAttributes(atCharacterIndex: Int, effectiveRange: NSRangePointer?) -> [NSAttributedString.Key : Any]](../appkit/nslayoutmanager/temporaryattributes(atcharacterindex:effectiverange:).md)
+- [func temporaryAttributes(atCharacterIndex: Int, effectiveRange: NSRangePointer?) -> [NSAttributedString.Key : Any]](../AppKit/nslayoutmanager/temporaryattributes%28atcharacterindex,effectiverange%29.md)
   Returns the dictionary of temporary attributes for the specified character range.
-- [func temporaryAttributes(atCharacterIndex: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> [NSAttributedString.Key : Any]](../appkit/nslayoutmanager/temporaryattributes(atcharacterindex:longesteffectiverange:in:).md)
+- [func temporaryAttributes(atCharacterIndex: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> [NSAttributedString.Key : Any]](../AppKit/nslayoutmanager/temporaryattributes%28atcharacterindex,longesteffectiverange,in%29.md)
   Returns the temporary attributes for a character, and the maximum range they apply to.
 ### Supporting types
-- [NSLayoutManager.TextLayoutOrientation](nslayoutmanager/textlayoutorientation.md)
+- [NSLayoutManager.TextLayoutOrientation](./nslayoutmanager/textlayoutorientation.md)
   Constants that describe the text layout orientation.
 ### Deprecated
-- [Deprecated symbols](nslayoutmanager-deprecated-symbols.md)
+- [Deprecated symbols](./nslayoutmanager-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NSTextStorage](nstextstorage.md)
+### TextKit 1
+- [class NSTextStorage](./nstextstorage.md)
   The fundamental storage mechanism of TextKit that contains the text managed by the system.
 
 

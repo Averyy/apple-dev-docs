@@ -1,7 +1,8 @@
 # outputSpec
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expected vertex buffer output spec for the deformer type.
 
@@ -21,7 +22,8 @@ let outputSpec: MeshDeformerVertexOptions
 
 ## See Also
 
-- [let inputSpec: MeshDeformerVertexOptions](meshdeformeroptions/inputspec.md)
+### Specifying vertex data
+- [let inputSpec: MeshDeformerVertexOptions](./inputspec.md)
   The expected vertex buffer input spec for the deformer type.
 
 

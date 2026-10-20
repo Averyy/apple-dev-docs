@@ -1,7 +1,8 @@
 # parameterID
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dynamic parameter ID defining the type of parameter being modified.
 
@@ -19,11 +20,16 @@ The dynamic parameter ID defining the type of parameter being modified.
 var parameterID: CHHapticDynamicParameter.ID { get }
 ```
 
+```objc
+@property (readonly) CHHapticDynamicParameterID parameterID;
+```
+
 ## See Also
 
-- [var relativeTime: TimeInterval](chhapticdynamicparameter/relativetime.md)
+### Specifying a Dynamic Parameter’s Value
+- [var relativeTime: TimeInterval](./relativetime.md)
   The time at which this dynamic parameter is applied, relative to the start time of the pattern.
-- [var value: Float](chhapticdynamicparameter/value.md)
+- [var value: Float](./value.md)
   The value of the dynamic parameter.
 
 

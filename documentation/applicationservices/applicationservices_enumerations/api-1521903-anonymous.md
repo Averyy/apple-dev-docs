@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kATSUDataStreamUnicodeStyledText: Int](katsudatastreamunicodestyledtext.md)
+- [var kATSUDataStreamUnicodeStyledText: Int](../katsudatastreamunicodestyledtext.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # gridSize
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of rectangles, vertically and horizontally, the training algorithm uses to analyze each input image.
 
@@ -16,13 +17,14 @@ var gridSize: CGSize { get set }
 
 ## See Also
 
-- [var validation: MLObjectDetector.ModelParameters.ValidationData](mlobjectdetector/modelparameters-swift.struct/validation.md)
+### Accessing the training parameters
+- [var validation: MLObjectDetector.ModelParameters.ValidationData](./validation.md)
   The object detector’s validation dataset for the training session.
-- [var batchSize: Int?](mlobjectdetector/modelparameters-swift.struct/batchsize.md)
+- [var batchSize: Int?](./batchsize.md)
   The number of images the training session can use in a training iteration.
-- [var maxIterations: Int?](mlobjectdetector/modelparameters-swift.struct/maxiterations.md)
+- [var maxIterations: Int?](./maxiterations.md)
   The maximum number of iterations the training session can use.
-- [var algorithm: MLObjectDetector.ModelParameters.ModelAlgorithmType](mlobjectdetector/modelparameters-swift.struct/algorithm.md)
+- [var algorithm: MLObjectDetector.ModelParameters.ModelAlgorithmType](./algorithm.md)
   The algorithm the training session uses to train the object detector.
 
 

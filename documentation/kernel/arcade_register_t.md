@@ -1,14 +1,15 @@
 # arcade_register_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 typedef struct arcade_register *arcade_register_t;
 ```
 

@@ -1,7 +1,8 @@
 # routes
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 An array of route objects.
 
@@ -10,19 +11,20 @@ An array of route objects.
 
 ## Declaration
 
-```swift
+```
 routes: Route[];
 ```
 
 #### Discussion
 
-The server returns up to three [`Route`](route.md) objects in the array.
+The server returns up to three [`Route`](../route.md) objects in the array.
 
 ## See Also
 
-- [origin](directionsresponse/origin.md)
+### Directions response
+- [origin](./origin.md)
   An optional starting point for routing directions.
-- [destination](directionsresponse/destination.md)
+- [destination](./destination.md)
   An optional end point for routing directions.
 
 

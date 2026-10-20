@@ -1,7 +1,8 @@
 # MediaCommand.FeedbackStatus.positive
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user has expressed positive feedback for the content.
 

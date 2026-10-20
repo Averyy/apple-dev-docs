@@ -1,7 +1,8 @@
 # OS_nw_txt_record
 
 **Framework**: Network  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 12.0+
@@ -18,10 +19,14 @@
 protocol OS_nw_txt_record : NSObjectProtocol
 ```
 
+```objc
+@protocol OS_nw_txt_record <NSObject>
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

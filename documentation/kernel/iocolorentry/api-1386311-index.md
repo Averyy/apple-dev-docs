@@ -1,7 +1,8 @@
 # index
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Number of pixels visible per row.
 
@@ -10,7 +11,7 @@ Number of pixels visible per row.
 
 ## Declaration
 
-```swift
+```c
 UInt16 index;
 ```
 

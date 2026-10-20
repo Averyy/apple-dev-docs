@@ -1,7 +1,8 @@
 # sleet
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of sleet for the period.
 

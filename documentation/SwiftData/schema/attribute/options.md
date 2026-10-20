@@ -1,7 +1,8 @@
 # options
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -21,7 +22,8 @@ var options: [Schema.Attribute.Option]
 
 ## See Also
 
-- [var isTransformable: Bool](schema/attribute/istransformable.md)
+### Determining behavior
+- [var isTransformable: Bool](./istransformable.md)
 
 
 ---

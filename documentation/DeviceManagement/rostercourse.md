@@ -1,7 +1,8 @@
 # RosterCourse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A course’s properties and their values.
 
@@ -10,7 +11,7 @@ A course’s properties and their values.
 
 ## Declaration
 
-```swift
+```
 object RosterCourse
 ```
 
@@ -19,6 +20,8 @@ object RosterCourse
 - `course_number` (string): The number of the course.
 - `name` (string): The course name. Maximum length 1024 UTF-8 characters.
 - `source` (string): The data source where the class was created.
+
+  **Allowed Values**: `LDAP`, `SIS`, `CSV`, `MANUAL`, `SYSTEM`, `ENROLLMENT`, `DEP`, `FORMULA_GENERATED`, `SFTP`
 - `source_system_identifier` (string): The identifier configured by organization for the course. Maximum length is 256 UTF-8 characters. Value can be null.
 - `unique_identifier` (string): The unique identifier for the course. Maximum length 256 UTF-8 characters.
 - `op_date` (string): The time stamp, in iSO 8601 format, when the course was added, updated, or deleted.
@@ -26,11 +29,12 @@ object RosterCourse
 
 ## See Also
 
-- [object BaseRosterCourse](baserostercourse.md)
+### Course management
+- [object BaseRosterCourse](./baserostercourse.md)
   A base course’s properties and their values.
-- [Get the List of Courses](fetch-course-roster.md)
+- [Get the List of Courses](./fetch-course-roster.md)
   Obtain a list of the courses the server manages.
-- [Sync the List of Courses](fetch-course-roster-sync.md)
+- [Sync the List of Courses](./fetch-course-roster-sync.md)
   Get updates about the list of courses the server manages.
 
 

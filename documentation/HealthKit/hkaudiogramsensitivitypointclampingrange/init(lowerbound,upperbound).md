@@ -1,7 +1,8 @@
 # init(lowerBound:upperBound:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.1+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(lowerBound: NSNumber?, upperBound: NSNumber?) throws
+```
+
+```objc
++ (instancetype) clampingRangeWithLowerBound:(NSNumber *) lowerBound upperBound:(NSNumber *) upperBound error:(NSError **) errorOut;
 ```
 
 

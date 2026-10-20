@@ -1,7 +1,8 @@
 # kAXOutlineRowSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A row in an outline view (see `kAXOutlineRole` for a description of an outline view).
 
@@ -12,6 +13,10 @@ A row in an outline view (see `kAXOutlineRole` for a description of an outline v
 
 ```swift
 var kAXOutlineRowSubrole: String { get }
+```
+
+```c
+#define kAXOutlineRowSubrole
 ```
 
 

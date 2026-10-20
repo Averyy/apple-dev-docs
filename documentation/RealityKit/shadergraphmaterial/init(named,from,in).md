@@ -1,7 +1,8 @@
 # init(named:from:in:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Loads a ShaderGraphMaterial from a bundle.
 

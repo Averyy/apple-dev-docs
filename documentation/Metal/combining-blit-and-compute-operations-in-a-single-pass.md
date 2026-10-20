@@ -1,6 +1,8 @@
 # Combining blit and compute operations in a single pass
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [CombiningBlitAndComputeOperationsInASinglePass.zip](https://docs-assets.developer.apple.com/published/bd2eacf0a83d/CombiningBlitAndComputeOperationsInASinglePass.zip)
 
 Run concurrent blit commands and then a compute dispatch in a single pass with a unified compute encoder.
 
@@ -16,7 +18,7 @@ Run concurrent blit commands and then a compute dispatch in a single pass with a
 
 This sample demonstrates how to use Metal 4’s unified compute encoder to combine texture data and create a grayscale version of it at the same time. The app runs blit and dispatch operations in a single compute pass, then renders the results with a render pass.
 
-This sample builds on Metal 4 fundamentals in [`Drawing a triangle with Metal 4`](drawing-a-triangle-with-metal-4.md), including command buffers, allocators, residency sets, and submitting work to the GPU.
+This sample builds on Metal 4 fundamentals in [Drawing a triangle with Metal 4](./drawing-a-triangle-with-metal-4.md), including command buffers, allocators, residency sets, and submitting work to the GPU.
 
 Each time the system requests a frame, the app:
 
@@ -24,15 +26,15 @@ Each time the system requests a frame, the app:
 2. Creates a grayscale texture by converting the composite color texture with a compute kernel.
 3. Draws two adjacent rectangles, one for each composite texture.
 
-An [`MTL4ComputeCommandEncoder`](mtl4computecommandencoder.md) instance combines blit, dispatch, and acceleration structure commands into a single pass, which reduces your app’s overhead from creating multiple encoders and encoding separate passes. The app increases its GPU utilization by running independent blit commands that concurrently write to memory regions that don’t overlap. However, it prevents the blit and dispatch stage memory operations from running at the same time, by synchronizing them with an intrapass barrier.
+An [`MTL4ComputeCommandEncoder`](./mtl4computecommandencoder.md) instance combines blit, dispatch, and acceleration structure commands into a single pass, which reduces your app’s overhead from creating multiple encoders and encoding separate passes. The app increases its GPU utilization by running independent blit commands that concurrently write to memory regions that don’t overlap. However, it prevents the blit and dispatch stage memory operations from running at the same time, by synchronizing them with an intrapass barrier.
 
-![A timeline diagram along a GPU runtime axis that shows a compute pass followed by a render pass. The compute pass contains two blit stages that run in parallel, followed by an intrapass barrier, and then a dispatch stage. A consumer barrier separates the compute pass from the render pass, which contains render stages.](/images/com.apple.metal/combining-blit-and-compute-operations-in-a-single-pass@2x.png)
+![A timeline diagram along a GPU runtime axis that shows a compute pass followed by a render pass. The compute pass contains two blit stages that run in parallel, followed by an intrapass barrier, and then a dispatch stage. A consumer barrier separates the compute pass from the render pass, which contains render stages.](https://developer.apple.com/tutorials/images/com.apple.metal/combining-blit-and-compute-operations-in-a-single-pass@2x.png)
 
 The app also reuses its one argument table by modifying the arguments in the table as necessary. For example, each blit command copies from a different source texture, and the dispatch command needs access to both composite textures. Metal processes bindings at draw and dispatch time, allowing the renderer to reconfigure bindings so that you don’t have to create new argument tables.
 
-##### Create Long Term Resources
+##### Create long-term resources
 
-The renderer’s initializer creates the fundamental Metal instances it needs: a command queue, a reusable command buffer, and the default library. For more information on how these work, see [`Drawing a triangle with Metal 4`](drawing-a-triangle-with-metal-4.md).
+The renderer’s initializer creates the fundamental Metal instances it needs: a command queue, a reusable command buffer, and the default library. For more information on how these work, see [Drawing a triangle with Metal 4](./drawing-a-triangle-with-metal-4.md).
 
 ```objective-c
 device = mtkView.device;
@@ -57,7 +59,7 @@ The initializer also creates buffers, textures, an argument table, a shared even
 
 The renderer stores and reuses them for every frame.
 
-##### Load Textures From Image Files
+##### Load textures from image files
 
 The `createTextures` helper method starts by loading the contents from the app’s two TGA files into textures:
 
@@ -80,7 +82,7 @@ NSURL *chyronImageFile = [mainBundle URLForResource:chyronImageFileName
 chyronTexture = [self loadImageToTexture:chyronImageFile];
 ```
 
-The `loadImageToTexture:` method creates an instance of [`MTLTexture`](mtltexture.md) with a pixel format that stores four color channels: blue, green, red, and alpha. Each channel uses an 8-bit unnormalized value, where `0` maps to `0.0` and `255` maps to `1.0`:
+The `loadImageToTexture:` method creates an instance of [`MTLTexture`](./mtltexture.md) with a pixel format that stores four color channels: blue, green, red, and alpha. Each channel uses an 8-bit unnormalized value, where `0` maps to `0.0` and `255` maps to `1.0`:
 
 ```objective-c
 MTLTextureDescriptor *textureDescriptor = [[MTLTextureDescriptor alloc] init];
@@ -96,7 +98,7 @@ id<MTLTexture> texture;
 texture = [device newTextureWithDescriptor:textureDescriptor];
 ```
 
-After creating the texture, the method copies the image data into it with its [`replace(region:mipmapLevel:withBytes:bytesPerRow:)`](mtltexture/replace(region:mipmaplevel:withbytes:bytesperrow:).md) method:
+After creating the texture, the method copies the image data into it with its [`replace(region:mipmapLevel:withBytes:bytesPerRow:)`](./mtltexture/replace%28region,mipmaplevel,withbytes,bytesperrow%29.md) method:
 
 ```objective-c
 // Define a region that's the size of the texture, which is the same as the image.
@@ -117,9 +119,9 @@ NSUInteger bytesPerRow = 4 * textureDescriptor.width;
            bytesPerRow:bytesPerRow];
 ```
 
-##### Create Textures for the Composite Images
+##### Create textures for the composite images
 
-The app creates two additional textures to store the composite images, by configuring an instance of [`MTLTextureDescriptor`](mtltexturedescriptor.md) with dimensions that fit both source images. The first texture stores the composite color texture that the compute pass creates from the background and chyron textures. The second texture stores the grayscale equivalent of the composite color texture.
+The app creates two additional textures to store the composite images, by configuring an instance of [`MTLTextureDescriptor`](./mtltexturedescriptor.md) with dimensions that fit both source images. The first texture stores the composite color texture that the compute pass creates from the background and chyron textures. The second texture stores the grayscale equivalent of the composite color texture.
 
 ```objective-c
 MTLTextureDescriptor *textureDescriptor = [[MTLTextureDescriptor alloc] init];
@@ -146,11 +148,11 @@ textureDescriptor.usage = MTLTextureUsageShaderWrite | MTLTextureUsageShaderRead
 compositeGrayscaleTexture = [device newTextureWithDescriptor:textureDescriptor];
 ```
 
-##### Create an Argument Table
+##### Create an argument table
 
 The renderer binds resources to shader parameters by creating an argument table that stores buffer and texture bindings:
 
-The `createArgumentTable` method configures an instance of [`MTL4ArgumentTableDescriptor`](mtl4argumenttabledescriptor.md) with the largest number of buffer and texture bindings the app ever needs at one time:
+The `createArgumentTable` method configures an instance of [`MTL4ArgumentTableDescriptor`](./mtl4argumenttabledescriptor.md) with the largest number of buffer and texture bindings the app ever needs at one time:
 
 ```objective-c
 MTL4ArgumentTableDescriptor *argumentTableDescriptor;
@@ -169,9 +171,9 @@ The compute pass binds two textures for the color input and grayscale output. Th
 
 > 💡 **Tip**: Minimize an app’s memory footprint by setting the binding counts to only what the renderer needs.
 
-##### Compile a Render Pipeline
+##### Compile a render pipeline
 
-The renderer compiles a render pipeline at launch time by creating an instance of [`MTL4Compiler`](mtl4compiler.md) with a default configuration:
+The renderer compiles a render pipeline at launch time by creating an instance of [`MTL4Compiler`](./mtl4compiler.md) with a default configuration:
 
 ```objective-c
 MTL4CompilerDescriptor *compilerDescriptor;
@@ -208,11 +210,11 @@ renderPipelineState = [compiler newRenderPipelineStateWithDescriptor:pipelineDes
                                                                error:&error];
 ```
 
-##### Compile a Compute Pipeline with a Grayscale Kernel
+##### Compile a compute pipeline with a grayscale kernel
 
 The renderer compiles a compute pipeline with the `convertToGrayscale` kernel function.
 
-The `createComputePipeline` method creates an [`MTL4LibraryFunctionDescriptor`](mtl4libraryfunctiondescriptor.md) that refers to the `convertToGrayscale` kernel in the default library:
+The `createComputePipeline` method creates an [`MTL4LibraryFunctionDescriptor`](./mtl4libraryfunctiondescriptor.md) that refers to the `convertToGrayscale` kernel in the default library:
 
 ```objective-c
 MTL4LibraryFunctionDescriptor *kernelFunction;
@@ -267,7 +269,7 @@ outTexture.write(half4(grayValue, grayValue, grayValue, 1.0), gridId);
 
 The kernel first checks whether the thread’s grid coordinates are within the texture’s bounds, then returns early if they aren’t. This check handles the case where the grid size exceeds the texture’s size.
 
-##### Calculate the Threadgroup Count
+##### Calculate the threadgroup count
 
 The renderer calculates how many threadgroups to dispatch based on the composite texture’s dimensions.
 
@@ -294,7 +296,7 @@ threadgroupCount.depth = 1;
 
 This calculation ensures the grid covers an area that’s at least as large as the texture, which is why the kernel checks whether each thread’s coordinates are within bounds.
 
-##### Combine Textures with Concurrent Blit Commands
+##### Combine textures with concurrent blit commands
 
 The renderer encodes a compute pass that combines two operations with a compute encoder:
 
@@ -365,7 +367,7 @@ The unified compute encoder automatically improves the app’s runtime performan
 
 > **Note**: Metal runs copy commands sequentially when they write to overlapping regions of a destination texture.
 
-##### Synchronize the Blit and Dispatch Stages with a Barrier
+##### Synchronize the blit and dispatch stages with a barrier
 
 The renderer resolves an access conflict between the blit and dispatch stages by encoding an intrapass barrier:
 
@@ -379,9 +381,9 @@ An access conflict happens when multiple commands access the same resource at th
 
 The barrier forces the GPU to wait until the blit stage completes before starting the dispatch stage, ensuring the dispatch loads the final data values from the composite texture.
 
-For more information about access conflicts and synchronization, see [`Resource synchronization`](resource-synchronization.md) and [`Synchronizing stages within a pass`](synchronizing-stages-within-a-pass.md).
+For more information about access conflicts and synchronization, see [Resource synchronization](./resource-synchronization.md) and [Synchronizing stages within a pass](./synchronizing-stages-within-a-pass.md).
 
-##### Convert the Composite Texture to Grayscale
+##### Convert the composite texture to grayscale
 
 The renderer converts the composite color texture to grayscale by dispatching the `convertToGrayscale` kernel:
 
@@ -406,7 +408,7 @@ After encoding the dispatch command, the renderer ends the compute pass:
 [computeEncoder endEncoding];
 ```
 
-##### Render the Composite Textures
+##### Render the composite textures
 
 The renderer creates a render encoder to draw a rectangle for both the color and grayscale composite textures:
 
@@ -417,7 +419,7 @@ id<MTL4RenderCommandEncoder> renderEncoder =
 
 Before the renderer encodes any draw commands, it needs to resolve a potential access conflict between the render pass it’s encoding and the preceding compute pass. The conflict comes from the dispatch command in the compute pass that stores data `compositeColorTexture` and `compositeGrayscaleTexture` and the fragment shader in the render pass because it loads data from the same texture with a sampler.
 
-The renderer resolves this access conflict by encoding a consumer barrier between the [`dispatch`](mtlstages/dispatch.md) and [`fragment`](mtlstages/fragment.md) stages:
+The renderer resolves this access conflict by encoding a consumer barrier between the [`dispatch`](./mtlstages/dispatch.md) and [`fragment`](./mtlstages/fragment.md) stages:
 
 ```objective-c
 [renderEncoder barrierAfterQueueStages:MTLStageDispatch
@@ -425,7 +427,7 @@ The renderer resolves this access conflict by encoding a consumer barrier betwee
                      visibilityOptions:MTL4VisibilityOptionDevice];
 ```
 
-The `afterQueueStages` parameter refers to stages in earlier passes, whereas the `beforeStages` parameter refers to stages in the current and later passes. The app passes [`fragment`](mtlstages/fragment.md) to `beforeStages` because only the fragment stage accesses the texture, which means the GPU can run the vertex stage ([`vertex`](mtlstages/vertex.md)) before the compute pass finishes.
+The `afterQueueStages` parameter refers to stages in earlier passes, whereas the `beforeStages` parameter refers to stages in the current and later passes. The app passes [`fragment`](./mtlstages/fragment.md) to `beforeStages` because only the fragment stage accesses the texture, which means the GPU can run the vertex stage ([`vertex`](./mtlstages/vertex.md)) before the compute pass finishes.
 
 > ❗ **Important**: To minimize the runtime performance of a barrier, carefully choose only the stages that need to wait for another stage.
 
@@ -487,7 +489,7 @@ const NSUInteger secondRectangleOffset = 6;
 
 The app changes the binding entries in the argument table between draw calls because each call needs different arguments.
 
-> **Note**:  You can modify the entries in an [`MTL4ArgumentTable`](mtl4argumenttable.md) instance after passing it to an encoder’s [`setArgumentTable(_:)`](mtl4computecommandencoder/setargumenttable(_:).md) method because Metal evaluates the argument table each time you call a command-encoding method.
+> **Note**:  You can modify the entries in an [`MTL4ArgumentTable`](./mtl4argumenttable.md) instance after passing it to an encoder’s [`setArgumentTable(_:)`](./mtl4computecommandencoder/setargumenttable%28_%29.md) method because Metal evaluates the argument table each time you call a command-encoding method.
 
 After encoding both draw commands, the renderer ends the render pass.
 
@@ -495,7 +497,7 @@ After encoding both draw commands, the renderer ends the render pass.
 [renderEncoder endEncoding];
 ```
 
-##### Submit the Command Buffer to the Gpu
+##### Submit the command buffer to the GPU
 
 After encoding the compute and render passes, the renderer finalizes and submits the command buffer to the Metal device by committing the command buffer to the device’s command queue:
 
@@ -510,7 +512,8 @@ After encoding the compute and render passes, the renderer finalizes and submits
 
 ## See Also
 
-- [Performing calculations on a GPU](performing-calculations-on-a-gpu.md)
+### Essentials
+- [Performing calculations on a GPU](./performing-calculations-on-a-gpu.md)
   Use Metal to find GPUs and perform calculations on them.
 
 

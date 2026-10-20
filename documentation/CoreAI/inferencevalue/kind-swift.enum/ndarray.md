@@ -1,7 +1,8 @@
 # InferenceValue.Kind.ndArray
 
 **Framework**: Core AI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A multidimensional array value.
 
@@ -20,7 +21,8 @@ case ndArray
 
 ## See Also
 
-- [InferenceValue.Kind.image](inferencevalue/kind-swift.enum/image.md)
+### Defining value kinds
+- [InferenceValue.Kind.image](./image.md)
   A pixel buffer image value.
 
 

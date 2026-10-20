@@ -1,7 +1,8 @@
 # fetchRequest
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fetch request of the receiver.
 
@@ -10,7 +11,7 @@ The fetch request of the receiver.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,14 +21,19 @@ The fetch request of the receiver.
 var fetchRequest: NSFetchRequest<any NSFetchRequestResult>? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSFetchRequest * fetchRequest;
+```
+
 #### Discussion
 
 Setting the fetch request raises an exception if the receiver’s model has been used by an object graph manager.
 
 ## See Also
 
-- [Core Data Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)
-- [Predicate Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html#//apple_ref/doc/uid/TP40001789)
+### Related Documentation
+- [Core Data Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)
+- [Predicate Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html#//apple_ref/doc/uid/TP40001789)
 
 
 ---

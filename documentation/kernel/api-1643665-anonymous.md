@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 24.4+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,20 +19,20 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOReportQuantityCapacitance](1643665-anonymous/kioreportquantitycapacitance.md)
-- [kIOReportQuantityCurrent](1643665-anonymous/kioreportquantitycurrent.md)
-- [kIOReportQuantityData](1643665-anonymous/kioreportquantitydata.md)
-- [kIOReportQuantityEnergy](1643665-anonymous/kioreportquantityenergy.md)
-- [kIOReportQuantityEventCount](1643665-anonymous/kioreportquantityeventcount.md)
-- [kIOReportQuantityFrequency](1643665-anonymous/kioreportquantityfrequency.md)
-- [kIOReportQuantityInductance](1643665-anonymous/kioreportquantityinductance.md)
-- [kIOReportQuantityPacketCount](1643665-anonymous/kioreportquantitypacketcount.md)
-- [kIOReportQuantityPower](1643665-anonymous/kioreportquantitypower.md)
-- [kIOReportQuantityTemperature](1643665-anonymous/kioreportquantitytemperature.md)
-- [kIOReportQuantityTime](1643665-anonymous/kioreportquantitytime.md)
-- [kIOReportQuantityUndefined](1643665-anonymous/kioreportquantityundefined.md)
-- [kIOReportQuantityVoltage](1643665-anonymous/kioreportquantityvoltage.md)
-- [kIOReportQuantityCPUInstrs](1643665-anonymous/kioreportquantitycpuinstrs.md)
+- [kIOReportQuantityCapacitance](./api-1643665-anonymous/kioreportquantitycapacitance.md)
+- [kIOReportQuantityCurrent](./api-1643665-anonymous/kioreportquantitycurrent.md)
+- [kIOReportQuantityData](./api-1643665-anonymous/kioreportquantitydata.md)
+- [kIOReportQuantityEnergy](./api-1643665-anonymous/kioreportquantityenergy.md)
+- [kIOReportQuantityEventCount](./api-1643665-anonymous/kioreportquantityeventcount.md)
+- [kIOReportQuantityFrequency](./api-1643665-anonymous/kioreportquantityfrequency.md)
+- [kIOReportQuantityInductance](./api-1643665-anonymous/kioreportquantityinductance.md)
+- [kIOReportQuantityPacketCount](./api-1643665-anonymous/kioreportquantitypacketcount.md)
+- [kIOReportQuantityPower](./api-1643665-anonymous/kioreportquantitypower.md)
+- [kIOReportQuantityTemperature](./api-1643665-anonymous/kioreportquantitytemperature.md)
+- [kIOReportQuantityTime](./api-1643665-anonymous/kioreportquantitytime.md)
+- [kIOReportQuantityUndefined](./api-1643665-anonymous/kioreportquantityundefined.md)
+- [kIOReportQuantityVoltage](./api-1643665-anonymous/kioreportquantityvoltage.md)
+- [kIOReportQuantityCPUInstrs](./api-1643665-anonymous/kioreportquantitycpuinstrs.md)
 
 
 ---

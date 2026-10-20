@@ -1,19 +1,20 @@
 # OSSerialization
 
 **Framework**: DriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for one or more objects, serialized in a binary data format that is suitable for messaging.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 class OSSerialization;
 ```
 
@@ -26,53 +27,54 @@ OSSerialization provides no concurrency protection; it’s up to the usage conte
 ## Topics
 
 ### Creating a Serialization Object
-- [OSCreateSerializationFromBytes](oscreateserializationfrombytes.md)
-- [OSCreateSerializationFromObject](oscreateserializationfromobject.md)
-- [free](osserialization/free.md)
-- [OSSerializationFreeBufferHandler](osserializationfreebufferhandler.md)
-- [OSSerializationPtr](osserializationptr.md)
+- [OSCreateSerializationFromBytes](./oscreateserializationfrombytes.md)
+- [OSCreateSerializationFromObject](./oscreateserializationfromobject.md)
+- [free](./osserialization/free.md)
+- [OSSerializationFreeBufferHandler](./osserializationfreebufferhandler.md)
+- [OSSerializationPtr](./osserializationptr.md)
 ### Getting the Serialized Content
-- [copyObject](osserialization/copyobject.md)
+- [copyObject](./osserialization/copyobject.md)
   Obtain the result of the deserialization performed by createFromBytes().
-- [OSCreateObjectFromSerialization](oscreateobjectfromserialization.md)
-- [OSSerializationGetBytes](osserializationgetbytes.md)
-- [finalizeBuffer](osserialization/finalizebuffer.md)
+- [OSCreateObjectFromSerialization](./oscreateobjectfromserialization.md)
+- [OSSerializationGetBytes](./osserializationgetbytes.md)
+- [finalizeBuffer](./osserialization/finalizebuffer.md)
   Obtain the result of the serialization performed by createFromObject().
 ### Type Methods
-- [freeBuffer](osserialization/freebuffer.md)
-- [createFromBytes](osserialization/createfrombytes-8jjh8.md)
-- [createFromBytes](osserialization/createfrombytes-9lb79.md)
-- [createFromObject](osserialization/createfromobject-2st9w.md)
-- [createFromObject](osserialization/createfromobject-4rdec.md)
+- [freeBuffer](./osserialization/freebuffer.md)
+- [createFromBytes](./osserialization/createfrombytes-8jjh8.md)
+- [createFromBytes](./osserialization/createfrombytes-9lb79.md)
+- [createFromObject](./osserialization/createfromobject-2st9w.md)
+- [createFromObject](./osserialization/createfromobject-4rdec.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSContainer](oscontainer.md)
+- [OSContainer](./oscontainer.md)
 
 ## See Also
 
-- [OSArray](osarray.md)
+### Registry data types
+- [OSArray](./osarray.md)
   A container for an ordered, random-access collection of objects.
-- [OSDictionary](osdictionary.md)
+- [OSDictionary](./osdictionary.md)
   A container for a collection with elements that are key-value pairs.
-- [OSBoolean](osboolean.md)
+- [OSBoolean](./osboolean.md)
   A container for a true or false value.
-- [OSData](osdata.md)
+- [OSData](./osdata.md)
   A container for untyped data.
-- [OSNumber](osnumber.md)
+- [OSNumber](./osnumber.md)
   A container for an integer value.
-- [OSString](osstring.md)
+- [OSString](./osstring.md)
   A container for managing an array of characters.
-- [OSCollection](oscollection.md)
+- [OSCollection](./oscollection.md)
   The base class for DriverKit collection objects.
-- [OSContainer](oscontainer.md)
+- [OSContainer](./oscontainer.md)
   The base class for DriverKit data objects.
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
   The base class for DriverKit objects
-- [OSSymbol](ossymbol.md)
+- [OSSymbol](./ossymbol.md)
   A container for managing an array of characters.
-- [IOFixed](iofixed.md)
+- [IOFixed](./iofixed.md)
   A fixed-point number.
 
 

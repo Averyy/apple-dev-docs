@@ -1,11 +1,12 @@
 # init(length:data:)
 
 **Framework**: Endpoint Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,7 +16,8 @@ init(length: Int, data: UnsafePointer<CChar>!)
 
 ## See Also
 
-- [init()](es_string_token_t/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

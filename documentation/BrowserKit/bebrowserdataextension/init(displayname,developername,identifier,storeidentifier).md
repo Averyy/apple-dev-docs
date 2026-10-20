@@ -1,7 +1,8 @@
 # init(displayName:developerName:identifier:storeIdentifier:)
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an extension with its identifying information and App Store reference.
 
@@ -13,6 +14,10 @@ Initializes an extension with its identifying information and App Store referenc
 
 ```swift
 init(displayName: String, developerName: String, identifier: String, storeIdentifier: String)
+```
+
+```objc
+- (instancetype) initWithDisplayName:(NSString *) displayName developerName:(NSString *) developerName identifier:(NSString *) identifier storeIdentifier:(NSString *) storeIdentifier;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # searchBarResultsListButtonClicked(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the search results list button was tapped.
 
@@ -17,17 +18,22 @@ Tells the delegate that the search results list button was tapped.
 optional func searchBarResultsListButtonClicked(_ searchBar: UISearchBar)
 ```
 
+```objc
+- (void) searchBarResultsListButtonClicked:(UISearchBar *) searchBar;
+```
+
 ## Parameters
 
 - `searchBar`: The search bar that was tapped.
 
 ## See Also
 
-- [func searchBarBookmarkButtonClicked(UISearchBar)](uisearchbardelegate/searchbarbookmarkbuttonclicked(_:).md)
+### Responding to clicks in search controls
+- [func searchBarBookmarkButtonClicked(UISearchBar)](./searchbarbookmarkbuttonclicked%28_%29.md)
   Tells the delegate that the bookmark button was tapped.
-- [func searchBarCancelButtonClicked(UISearchBar)](uisearchbardelegate/searchbarcancelbuttonclicked(_:).md)
+- [func searchBarCancelButtonClicked(UISearchBar)](./searchbarcancelbuttonclicked%28_%29.md)
   Tells the delegate that the cancel button was tapped.
-- [func searchBarSearchButtonClicked(UISearchBar)](uisearchbardelegate/searchbarsearchbuttonclicked(_:).md)
+- [func searchBarSearchButtonClicked(UISearchBar)](./searchbarsearchbuttonclicked%28_%29.md)
   Tells the delegate that the search button was tapped.
 
 

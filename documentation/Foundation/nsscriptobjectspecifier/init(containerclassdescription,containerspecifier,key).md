@@ -1,7 +1,8 @@
 # init(containerClassDescription:containerSpecifier:key:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `NSScriptObjectSpecifier` object initialized with the given attributes.
 
@@ -13,6 +14,10 @@ Returns an `NSScriptObjectSpecifier` object initialized with the given attribute
 
 ```swift
 init(containerClassDescription classDesc: NSScriptClassDescription, containerSpecifier container: NSScriptObjectSpecifier?, key property: String)
+```
+
+```objc
+- (instancetype) initWithContainerClassDescription:(NSScriptClassDescription *) classDesc containerSpecifier:(NSScriptObjectSpecifier *) container key:(NSString *) property;
 ```
 
 #### Return Value
@@ -27,7 +32,8 @@ This is the designated initializer for `NSScriptObjectSpecifier`.
 
 ## See Also
 
-- [convenience init(containerSpecifier: NSScriptObjectSpecifier, key: String)](nsscriptobjectspecifier/init(containerspecifier:key:).md)
+### Initializing an object specifier
+- [convenience init(containerSpecifier: NSScriptObjectSpecifier, key: String)](./init%28containerspecifier,key%29.md)
   Returns an `NSScriptObjectSpecifier` object initialized with a given container specifier  and key.
 
 

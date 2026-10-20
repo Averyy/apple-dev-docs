@@ -2,17 +2,24 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The highest theoretical rate, in bytes per second, the system can copy between system memory and the GPU’s dedicated memory (VRAM).
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 27.0
+
+> **Deprecated**: Not applicable on Apple Silicon
 
 ## Declaration
 
 ```swift
 var maxTransferRate: UInt64 { get }
+```
+
+```objc
+@property (readonly) uint64_t maxTransferRate;
 ```
 
 #### Discussion
@@ -23,11 +30,12 @@ Metal calculates this value from the raw data-clock rate, and the GPU may not be
 
 ## See Also
 
-- [var currentAllocatedSize: Int](mtldevice/currentallocatedsize.md)
+### Checking a GPU device’s memory
+- [var currentAllocatedSize: Int](./currentallocatedsize.md)
   The total amount of memory, in bytes, the GPU device is using for all of its resources.
-- [var recommendedMaxWorkingSetSize: UInt64](mtldevice/recommendedmaxworkingsetsize.md)
+- [var recommendedMaxWorkingSetSize: UInt64](./recommendedmaxworkingsetsize.md)
   An approximation of how much memory, in bytes, this GPU device can allocate without affecting its runtime performance.
-- [var hasUnifiedMemory: Bool](mtldevice/hasunifiedmemory.md)
+- [var hasUnifiedMemory: Bool](./hasunifiedmemory.md)
   A Boolean value that indicates whether the GPU shares all of its memory with the CPU.
 
 

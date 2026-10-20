@@ -1,7 +1,8 @@
 # init(identifier:allowUndeclared:)
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a type given a type identifier, optionally allowing identifiers that do not have an active declaration on the current system.
 

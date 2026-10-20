@@ -1,7 +1,8 @@
 # all
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Filters data for all devices that are sharing activity data with the current device.
 

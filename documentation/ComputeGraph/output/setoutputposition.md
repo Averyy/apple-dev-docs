@@ -1,13 +1,14 @@
 # output::setOutputPosition
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the position of the rendered output.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void output::setOutputPosition(float3 position)
 
 This function customizes where the particle will be rendered in 3D space. This affects only the rendered appearance and does not modify the particle node’s actual position.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/output__setOutputPosition.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/output__setOutputPosition.svg)
 
 ## Parameters
 

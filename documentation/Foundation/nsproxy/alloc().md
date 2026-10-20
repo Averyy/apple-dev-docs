@@ -1,7 +1,8 @@
 # alloc()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a new instance of the receiving class
 
@@ -20,9 +21,14 @@ Returns a new instance of the receiving class
 class func alloc() -> Self
 ```
 
+```objc
++ (id) alloc;
+```
+
 ## See Also
 
-- [Distributed Objects Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DistrObjects/DistrObjects.html#//apple_ref/doc/uid/10000102i)
+### Related Documentation
+- [Distributed Objects Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DistrObjects/DistrObjects.html#//apple_ref/doc/uid/10000102i)
 
 
 ---

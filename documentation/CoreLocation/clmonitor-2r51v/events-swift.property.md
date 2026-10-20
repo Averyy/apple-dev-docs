@@ -1,7 +1,8 @@
 # events
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence of events that represent the conditions the monitor object observes.
 

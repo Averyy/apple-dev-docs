@@ -1,7 +1,8 @@
 # openInMaps
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Display a small “Open in Apple Maps” link.
 
@@ -18,17 +19,22 @@ Display a small “Open in Apple Maps” link.
 class var openInMaps: MKSelectionAccessory.MapItemDetailPresentationStyle { get }
 ```
 
+```objc
+@property (class, nonatomic, strong, readonly) MKMapItemDetailSelectionAccessoryPresentationStyle * openInMaps;
+```
+
 ## See Also
 
-- [static func automatic(presentationViewController: UIViewController?) -> MKSelectionAccessory.MapItemDetailPresentationStyle](mkselectionaccessory/mapitemdetailpresentationstyle/automatic(presentationviewcontroller:)-648ee.md)
+### Creating a presentation style
+- [static func automatic(presentationViewController: UIViewController?) -> MKSelectionAccessory.MapItemDetailPresentationStyle](./automatic%28presentationviewcontroller%29-648ee.md)
   An appropriate presentation style will be chosen automatically.
-- [static func automatic(presentationViewController: NSViewController?) -> MKSelectionAccessory.MapItemDetailPresentationStyle](mkselectionaccessory/mapitemdetailpresentationstyle/automatic(presentationviewcontroller:)-9t9vt.md)
+- [static func automatic(presentationViewController: NSViewController?) -> MKSelectionAccessory.MapItemDetailPresentationStyle](./automatic%28presentationviewcontroller%29-9t9vt.md)
   An appropriate presentation style will be chosen automatically.
-- [class var callout: MKSelectionAccessory.MapItemDetailPresentationStyle](mkselectionaccessory/mapitemdetailpresentationstyle/callout.md)
+- [class var callout: MKSelectionAccessory.MapItemDetailPresentationStyle](./callout.md)
   Show map item detail as an annotation callout on the map.
-- [static func callout(MKSelectionAccessory.MapItemDetailPresentationStyle.CalloutStyle) -> MKSelectionAccessory.MapItemDetailPresentationStyle](mkselectionaccessory/mapitemdetailpresentationstyle/callout(_:).md)
+- [static func callout(MKSelectionAccessory.MapItemDetailPresentationStyle.CalloutStyle) -> MKSelectionAccessory.MapItemDetailPresentationStyle](./callout%28_%29.md)
   Show map item detail as an annotation callout on the map
-- [class func sheet(presentedFrom: UIViewController) -> MKSelectionAccessory.MapItemDetailPresentationStyle](mkselectionaccessory/mapitemdetailpresentationstyle/sheet(presentedfrom:).md)
+- [class func sheet(presentedFrom: UIViewController) -> MKSelectionAccessory.MapItemDetailPresentationStyle](./sheet%28presentedfrom%29.md)
   Show map item detail by presenting a sheet.
 
 

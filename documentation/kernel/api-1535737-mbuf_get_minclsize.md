@@ -1,18 +1,19 @@
 # mbuf_get_minclsize
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 u_int32_t mbuf_get_minclsize(void);
 ```
 
-#### Return_value
+#### Return Value
 
 The minimum number of bytes before a cluster will be used.
 

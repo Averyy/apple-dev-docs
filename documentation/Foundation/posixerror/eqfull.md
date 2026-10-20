@@ -1,7 +1,8 @@
 # EQFULL
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Interface output queue is full.
 

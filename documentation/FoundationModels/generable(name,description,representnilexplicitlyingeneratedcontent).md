@@ -1,7 +1,8 @@
 # Generable(name:description:representNilExplicitlyInGeneratedContent:)
 
 **Framework**: Foundation Models  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - iOS 27.0+
@@ -20,8 +21,9 @@
 
 ## See Also
 
-- [macro Generable(description: String?)](generable(description:).md)
-- [macro Generable(description: String?, representNilExplicitlyInGeneratedContent: Bool)](generable(description:representnilexplicitlyingeneratedcontent:).md)
+### Creating a Generable type
+- [macro Generable(description: String?)](./generable%28description%29.md)
+- [macro Generable(description: String?, representNilExplicitlyInGeneratedContent: Bool)](./generable%28description,representnilexplicitlyingeneratedcontent%29.md)
 
 
 ---

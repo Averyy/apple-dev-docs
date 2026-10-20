@@ -1,7 +1,8 @@
 # NSExtensionActivationDictionaryVersion
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The version of the parent extension-activation rule dictionary.
 
@@ -11,13 +12,15 @@ The version of the parent extension-activation rule dictionary.
 - macOS 10.11+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: integer
+- **Name**: `NSExtensionActivationDictionaryVersion`
+- **Type**: integer
 
 ## See Also
 
-- [NSExtensionActivationUsesStrictMatching](information-property-list/nsextension/nsextensionattributes/nsextensionactivationrule/nsextensionactivationusesstrictmatching.md)
+### Configuration
+- [NSExtensionActivationUsesStrictMatching](./nsextensionactivationusesstrictmatching.md)
   A Boolean value indicating whether strict or fuzzy matching is used when determining the asset types an app extension handles.
 
 

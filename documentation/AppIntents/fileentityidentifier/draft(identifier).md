@@ -1,7 +1,8 @@
 # draft(identifier:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns an identifier for a draft document.
 

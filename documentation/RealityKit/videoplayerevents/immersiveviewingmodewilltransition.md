@@ -1,7 +1,8 @@
 # VideoPlayerEvents.ImmersiveViewingModeWillTransition
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - visionOS 2.0+
@@ -15,17 +16,17 @@ struct ImmersiveViewingModeWillTransition
 ## Topics
 
 ### Instance Properties
-- [let currentMode: VideoPlayerComponent.ImmersiveViewingMode?](videoplayerevents/immersiveviewingmodewilltransition/currentmode.md)
+- [let currentMode: VideoPlayerComponent.ImmersiveViewingMode?](./immersiveviewingmodewilltransition/currentmode.md)
   Current immersive viewing mode
-- [let previousMode: VideoPlayerComponent.ImmersiveViewingMode?](videoplayerevents/immersiveviewingmodewilltransition/previousmode.md)
+- [let previousMode: VideoPlayerComponent.ImmersiveViewingMode?](./immersiveviewingmodewilltransition/previousmode.md)
   Previous immersive viewing mode
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

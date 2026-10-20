@@ -1,7 +1,8 @@
 # kCISamplerWrapBlack
 
 **Framework**: Core Image  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Pixels are transparent black.
 
@@ -19,13 +20,18 @@ Pixels are transparent black.
 let kCISamplerWrapBlack: String
 ```
 
+```c
+extern NSString * const kCISamplerWrapBlack;
+```
+
 ## See Also
 
-- [let kCISamplerWrapClamp: String](kcisamplerwrapclamp.md)
+### Constants
+- [let kCISamplerWrapClamp: String](./kcisamplerwrapclamp.md)
   Coordinates are clamped to the extent.
-- [let kCISamplerFilterNearest: String](kcisamplerfilternearest.md)
+- [let kCISamplerFilterNearest: String](./kcisamplerfilternearest.md)
   Nearest neighbor sampling.
-- [let kCISamplerFilterLinear: String](kcisamplerfilterlinear.md)
+- [let kCISamplerFilterLinear: String](./kcisamplerfilterlinear.md)
   Bilinear interpolation.
 
 

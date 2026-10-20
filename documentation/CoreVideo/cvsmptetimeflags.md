@@ -1,7 +1,8 @@
 # CVSMPTETimeFlags
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 4.0+
@@ -18,33 +19,38 @@
 struct CVSMPTETimeFlags
 ```
 
+```c
+enum CVSMPTETimeFlags : uint32_t;
+```
+
 ## Topics
 
 ### Constants
-- [static var running: CVSMPTETimeFlags](cvsmptetimeflags/running.md)
+- [static var running: CVSMPTETimeFlags](./cvsmptetimeflags/running.md)
   Time is running.
-- [static var valid: CVSMPTETimeFlags](cvsmptetimeflags/valid.md)
+- [static var valid: CVSMPTETimeFlags](./cvsmptetimeflags/valid.md)
   The full time is valid.
 ### Initializers
-- [init(rawValue: UInt32)](cvsmptetimeflags/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./cvsmptetimeflags/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [enum CVSMPTETimeType](cvsmptetimetype.md)
-- [struct CVTimeFlags](cvtimeflags.md)
-- [struct CVTimeStampFlags](cvtimestampflags.md)
+### Enumerations
+- [enum CVSMPTETimeType](./cvsmptetimetype.md)
+- [struct CVTimeFlags](./cvtimeflags.md)
+- [struct CVTimeStampFlags](./cvtimestampflags.md)
 
 
 ---

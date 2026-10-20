@@ -1,13 +1,14 @@
 # ES_DESTINATION_TYPE_EXISTING_FILE
 
 **Framework**: Endpoint Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The destination is an existing file.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,14 @@ The destination is an existing file.
 var ES_DESTINATION_TYPE_EXISTING_FILE: es_destination_type_t { get }
 ```
 
+```c
+ES_DESTINATION_TYPE_EXISTING_FILE
+```
+
 ## See Also
 
-- [var ES_DESTINATION_TYPE_NEW_PATH: es_destination_type_t](es_destination_type_new_path.md)
+### Destination Types
+- [var ES_DESTINATION_TYPE_NEW_PATH: es_destination_type_t](./es_destination_type_new_path.md)
   The destination is a path to a new location.
 
 

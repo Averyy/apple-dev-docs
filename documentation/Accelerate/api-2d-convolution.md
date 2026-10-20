@@ -1,6 +1,7 @@
 # 2D convolution
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Perform convolution operations on matrices of real data.
 
@@ -13,35 +14,36 @@ Use the functions in this group to apply a convolution kernel to a 2D matrix. Th
 ## Topics
 
 ### Fixed-Size Kernel
-- [static func convolve<T, U>(T, rowCount: Int, columnCount: Int, with3x3Kernel: U) -> [Double]](vdsp/convolve(_:rowcount:columncount:with3x3kernel:)-1r5oa.md)
+- [static func convolve<T, U>(T, rowCount: Int, columnCount: Int, with3x3Kernel: U) -> [Double]](./vdsp/convolve%28_,rowcount,columncount,with3x3kernel%29-1r5oa.md)
   Returns the 2D convolution of a double-precision vector with a 3 x 3 kernel.
-- [static func convolve<T, U>(T, rowCount: Int, columnCount: Int, with3x3Kernel: U) -> [Float]](vdsp/convolve(_:rowcount:columncount:with3x3kernel:)-7qjgw.md)
+- [static func convolve<T, U>(T, rowCount: Int, columnCount: Int, with3x3Kernel: U) -> [Float]](./vdsp/convolve%28_,rowcount,columncount,with3x3kernel%29-7qjgw.md)
   Returns the 2D convolution of a single-precision vector with a 3 x 3 kernel.
-- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, with3x3Kernel: U, result: inout V)](vdsp/convolve(_:rowcount:columncount:with3x3kernel:result:)-34k76.md)
+- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, with3x3Kernel: U, result: inout V)](./vdsp/convolve%28_,rowcount,columncount,with3x3kernel,result%29-34k76.md)
   Calculates the 2D convolution of a double-precision vector with a 3 x 3 kernel.
-- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, with3x3Kernel: U, result: inout V)](vdsp/convolve(_:rowcount:columncount:with3x3kernel:result:)-2worq.md)
+- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, with3x3Kernel: U, result: inout V)](./vdsp/convolve%28_,rowcount,columncount,with3x3kernel,result%29-2worq.md)
   Calculates the 2D convolution of a single-precision vector with a 3 x 3 kernel.
-- [static func convolve<T, U>(T, rowCount: Int, columnCount: Int, with5x5Kernel: U) -> [Double]](vdsp/convolve(_:rowcount:columncount:with5x5kernel:)-7cvh9.md)
+- [static func convolve<T, U>(T, rowCount: Int, columnCount: Int, with5x5Kernel: U) -> [Double]](./vdsp/convolve%28_,rowcount,columncount,with5x5kernel%29-7cvh9.md)
   Returns the 2D convolution of a double-precision vector with a 5 x 5 kernel.
-- [static func convolve<T, U>(T, rowCount: Int, columnCount: Int, with5x5Kernel: U) -> [Float]](vdsp/convolve(_:rowcount:columncount:with5x5kernel:)-101d6.md)
+- [static func convolve<T, U>(T, rowCount: Int, columnCount: Int, with5x5Kernel: U) -> [Float]](./vdsp/convolve%28_,rowcount,columncount,with5x5kernel%29-101d6.md)
   Returns the 2D convolution of a single-precision vector with a 5 x 5 kernel.
-- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, with5x5Kernel: U, result: inout V)](vdsp/convolve(_:rowcount:columncount:with5x5kernel:result:)-g68r.md)
+- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, with5x5Kernel: U, result: inout V)](./vdsp/convolve%28_,rowcount,columncount,with5x5kernel,result%29-g68r.md)
   Calculates the 2D convolution of a double-precision vector with a 5 x 5 kernel.
-- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, with5x5Kernel: U, result: inout V)](vdsp/convolve(_:rowcount:columncount:with5x5kernel:result:)-76h85.md)
+- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, with5x5Kernel: U, result: inout V)](./vdsp/convolve%28_,rowcount,columncount,with5x5kernel,result%29-76h85.md)
   Calculates the 2D convolution of a single-precision vector with a 5 x 5 kernel.
 ### Arbitrary-Size Kernel
-- [static func convolve<T, U>(T, rowCount: Int, columnCount: Int, withKernel: U, kernelRowCount: Int, kernelColumnCount: Int) -> [Double]](vdsp/convolve(_:rowcount:columncount:withkernel:kernelrowcount:kernelcolumncount:)-1sswe.md)
+- [static func convolve<T, U>(T, rowCount: Int, columnCount: Int, withKernel: U, kernelRowCount: Int, kernelColumnCount: Int) -> [Double]](./vdsp/convolve%28_,rowcount,columncount,withkernel,kernelrowcount,kernelcolumncount%29-1sswe.md)
   Returns the 2D convolution of a double-precision vector with an arbitrarily sized kernel.
-- [static func convolve<T, U>(T, rowCount: Int, columnCount: Int, withKernel: U, kernelRowCount: Int, kernelColumnCount: Int) -> [Float]](vdsp/convolve(_:rowcount:columncount:withkernel:kernelrowcount:kernelcolumncount:)-267yl.md)
+- [static func convolve<T, U>(T, rowCount: Int, columnCount: Int, withKernel: U, kernelRowCount: Int, kernelColumnCount: Int) -> [Float]](./vdsp/convolve%28_,rowcount,columncount,withkernel,kernelrowcount,kernelcolumncount%29-267yl.md)
   Returns the 2D convolution of a single-precision vector with an arbitrarily sized kernel.
-- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, withKernel: U, kernelRowCount: Int, kernelColumnCount: Int, result: inout V)](vdsp/convolve(_:rowcount:columncount:withkernel:kernelrowcount:kernelcolumncount:result:)-4211m.md)
+- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, withKernel: U, kernelRowCount: Int, kernelColumnCount: Int, result: inout V)](./vdsp/convolve%28_,rowcount,columncount,withkernel,kernelrowcount,kernelcolumncount,result%29-4211m.md)
   Calculates the 2D convolution of a double-precision vector with an arbitrarily sized kernel.
-- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, withKernel: U, kernelRowCount: Int, kernelColumnCount: Int, result: inout V)](vdsp/convolve(_:rowcount:columncount:withkernel:kernelrowcount:kernelcolumncount:result:)-5hiro.md)
+- [static func convolve<T, U, V>(T, rowCount: Int, columnCount: Int, withKernel: U, kernelRowCount: Int, kernelColumnCount: Int, result: inout V)](./vdsp/convolve%28_,rowcount,columncount,withkernel,kernelrowcount,kernelcolumncount,result%29-5hiro.md)
   Calculates the 2D convolution of a single-precision vector with an arbitrarily sized kernel.
 
 ## See Also
 
-- [1D correlation and convolution](1d-correlation-and-convolution.md)
+### Vector and matrix correlation and convolution
+- [1D correlation and convolution](./api-1d-correlation-and-convolution.md)
   Use correlation to compare and convolution to combine vectors of real or complex data.
 
 

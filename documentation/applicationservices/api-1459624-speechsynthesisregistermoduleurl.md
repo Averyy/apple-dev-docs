@@ -1,7 +1,8 @@
 # SpeechSynthesisRegisterModuleURL(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Registers and makes available a speech synthesizer or voice.
 
@@ -14,20 +15,24 @@ Registers and makes available a speech synthesizer or voice.
 func SpeechSynthesisRegisterModuleURL(_ url: CFURL) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr SpeechSynthesisRegisterModuleURL(CFURLRef url);
+```
 
-A resultcode. See [`Result Codes`](speech_synthesis_manager#1659745.md).
+#### Return Value
+
+A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
 #### Discussion
 
-The `SpeechSynthesisRegisterModuleURL` function registers the speech synthesizer or voice specified by `url` and makes it available to the calling process. Before a synthesizer’s voices can be registered, the synthesizer must be registered (or loaded automatically by the Speech Synthesis Manager). If you call `SpeechSynthesisRegisterModuleURL` to register a voice and you receive the [`incompatibleVoice`](https://developer.apple.com/documentation/coreservices/incompatiblevoice) result code, it’s likely that the synthesizer associated with the voice needs to be registered. If you call this function to register a synthesizer or voice that has already been registered, `SpeechSynthesisRegisterModuleURL` does nothing and returns an error.
+The `SpeechSynthesisRegisterModuleURL` function registers the speech synthesizer or voice specified by `url` and makes it available to the calling process. Before a synthesizer’s voices can be registered, the synthesizer must be registered (or loaded automatically by the Speech Synthesis Manager). If you call `SpeechSynthesisRegisterModuleURL` to register a voice and you receive the [`incompatibleVoice`](../coreservices/incompatiblevoice.md) result code, it’s likely that the synthesizer associated with the voice needs to be registered. If you call this function to register a synthesizer or voice that has already been registered, `SpeechSynthesisRegisterModuleURL` does nothing and returns an error.
 
 A registered synthesizer or voice is known only to the application that registered it. For this reason, each application must call `SpeechSynthesisRegisterModuleURL` to register the synthesizer or voice it uses, even if a suite of applications work together and use the same synthesizer and voice.
 
 An application that called `SpeechSynthesisRegisterModuleURL` to register a synthesizer or voice should do the following if the volume containing the synthesizer or voice is about to be unmounted:
 
-- Call [`DisposeSpeechChannel(_:)`](1462081-disposespeechchannel.md) to dispose of each speech channel that uses the synthesizer or voice
-- Call [`SpeechSynthesisUnregisterModuleURL(_:)`](1462511-speechsynthesisunregistermoduleu.md) to unregister the synthesizer or voice
+- Call [`DisposeSpeechChannel(_:)`](./api-1462081-disposespeechchannel.md) to dispose of each speech channel that uses the synthesizer or voice
+- Call [`SpeechSynthesisUnregisterModuleURL(_:)`](./api-1462511-speechsynthesisunregistermoduleu.md) to unregister the synthesizer or voice
 
 ## Parameters
 
@@ -35,7 +40,8 @@ An application that called `SpeechSynthesisRegisterModuleURL` to register a synt
 
 ## See Also
 
-- [func SpeechSynthesisUnregisterModuleURL(CFURL) -> OSErr](1462511-speechsynthesisunregistermoduleu.md)
+### Registering and Unregistering Synthesizers and Voices
+- [func SpeechSynthesisUnregisterModuleURL(CFURL) -> OSErr](./api-1462511-speechsynthesisunregistermoduleu.md)
   Unregisters a registered speech synthesizer or voice.
 
 

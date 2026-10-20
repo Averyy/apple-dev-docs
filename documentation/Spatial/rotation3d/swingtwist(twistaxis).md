@@ -1,7 +1,8 @@
 # swingTwist(twistAxis:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the rotation’s swing-twist decomposition for a given twist axis.
 
@@ -11,7 +12,7 @@ Returns the rotation’s swing-twist decomposition for a given twist axis.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -30,13 +31,14 @@ A tuple that contains the swing rotation and the twist rotation.
 
 ## See Also
 
-- [func swing(twistAxis: RotationAxis3D) -> Rotation3D](rotation3d/swing(twistaxis:).md)
+### Decomposing a 3D rotation structure
+- [func swing(twistAxis: RotationAxis3D) -> Rotation3D](./swing%28twistaxis%29.md)
   Returns the swing component of the rotation’s swing-twist decomposition for a given twist axis.
-- [func twist(twistAxis: RotationAxis3D) -> Rotation3D](rotation3d/twist(twistaxis:).md)
+- [func twist(twistAxis: RotationAxis3D) -> Rotation3D](./twist%28twistaxis%29.md)
   Returns the twist component of the rotation’s swing-twist decomposition for a given twist axis.
-- [func swing(twistAxis: RotationAxis3D) -> Rotation3D](rotation3d/swing(twistaxis:).md)
+- [func swing(twistAxis: RotationAxis3D) -> Rotation3D](./swing%28twistaxis%29.md)
   Returns the swing component of the rotation’s swing-twist decomposition for a given twist axis.
-- [func twist(twistAxis: RotationAxis3D) -> Rotation3D](rotation3d/twist(twistaxis:).md)
+- [func twist(twistAxis: RotationAxis3D) -> Rotation3D](./twist%28twistaxis%29.md)
   Returns the twist component of the rotation’s swing-twist decomposition for a given twist axis.
 
 

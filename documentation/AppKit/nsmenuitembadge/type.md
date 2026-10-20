@@ -1,7 +1,8 @@
 # type
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of items the badge displays.
 
@@ -14,15 +15,20 @@ The type of items the badge displays.
 var type: NSMenuItemBadge.BadgeType { get }
 ```
 
+```objc
+@property (readonly) NSMenuItemBadgeType type;
+```
+
 #### Discussion
 
-If you create a badge with a custom string, this value is [`NSMenuItemBadge.BadgeType.none`](nsmenuitembadge/badgetype/none.md).
+If you create a badge with a custom string, this value is [`NSMenuItemBadge.BadgeType.none`](./badgetype/none.md).
 
 ## See Also
 
-- [var itemCount: Int](nsmenuitembadge/itemcount.md)
+### Accessing menu item badge attributes
+- [var itemCount: Int](./itemcount.md)
   The number of items the badge displays.
-- [var stringValue: String?](nsmenuitembadge/stringvalue-fc9f.md)
+- [var stringValue: String?](./stringvalue-fc9f.md)
   The string representation of the badge when it displays.
 
 

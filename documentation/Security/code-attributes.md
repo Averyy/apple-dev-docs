@@ -1,23 +1,24 @@
 # Code Attributes
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: API Collection
 
 Specify these keys from the attribute dictionary when you create a static code instance.
 
 #### Overview
 
-Use these keys in the attribute dictionary when calling the [`SecStaticCodeCreateWithPathAndAttributes(_:_:_:_:)`](secstaticcodecreatewithpathandattributes(_:_:_:_:).md) function.
+Use these keys in the attribute dictionary when calling the [`SecStaticCodeCreateWithPathAndAttributes(_:_:_:_:)`](./secstaticcodecreatewithpathandattributes%28_,_,_,_%29.md) function.
 
 ## Topics
 
 ### Constants
-- [let kSecCodeAttributeArchitecture: CFString](kseccodeattributearchitecture.md)
+- [let kSecCodeAttributeArchitecture: CFString](./kseccodeattributearchitecture.md)
   A key whose value is a string that indicates an architecture, such as `i386` or `x86_64`.
-- [let kSecCodeAttributeSubarchitecture: CFString](kseccodeattributesubarchitecture.md)
+- [let kSecCodeAttributeSubarchitecture: CFString](./kseccodeattributesubarchitecture.md)
   A key whose value is a string indicating a specific processor type, such as `i686` or `core2`.
-- [let kSecCodeAttributeBundleVersion: CFString](kseccodeattributebundleversion.md)
+- [let kSecCodeAttributeBundleVersion: CFString](./kseccodeattributebundleversion.md)
   A key whose value indicates the bundle version.
-- [let kSecCodeAttributeUniversalFileOffset: CFString](kseccodeattributeuniversalfileoffset.md)
+- [let kSecCodeAttributeUniversalFileOffset: CFString](./kseccodeattributeuniversalfileoffset.md)
   A key whose value indicates the offset of a Mach-O specific slice of a universal Mach-O file.
 
 

@@ -1,7 +1,8 @@
 # horizontalScaledInset
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 If the mode is scaled, sets the number of active pixels to remove the left and right edges in order to display an underscanned image.
 
@@ -10,7 +11,7 @@ If the mode is scaled, sets the number of active pixels to remove the left and r
 
 ## Declaration
 
-```swift
+```c
 UInt32 horizontalScaledInset;
 ```
 

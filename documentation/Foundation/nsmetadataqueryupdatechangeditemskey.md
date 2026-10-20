@@ -1,9 +1,10 @@
 # NSMetadataQueryUpdateChangedItemsKey
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-The key for retrieving an array of items that have changed in the query result. By default, this array contains [`NSMetadataItem`](nsmetadataitem.md) objects, representing the query’s results; however, the query’s delegate can substitute these objects with instances of a different class.
+The key for retrieving an array of items that have changed in the query result. By default, this array contains [`NSMetadataItem`](./nsmetadataitem.md) objects, representing the query’s results; however, the query’s delegate can substitute these objects with instances of a different class.
 
 **Availability**:
 - iOS 8.0+
@@ -20,12 +21,17 @@ The key for retrieving an array of items that have changed in the query result. 
 let NSMetadataQueryUpdateChangedItemsKey: String
 ```
 
+```c
+extern NSString * const NSMetadataQueryUpdateChangedItemsKey;
+```
+
 ## See Also
 
-- [let NSMetadataQueryUpdateAddedItemsKey: String](nsmetadataqueryupdateaddeditemskey.md)
-  The key for retrieving an array of items added to the query result. By default, this array contains [`NSMetadataItem`](nsmetadataitem.md) objects, representing the query’s results; however, the query’s delegate can substitute these objects with instances of a different class.
-- [let NSMetadataQueryUpdateRemovedItemsKey: String](nsmetadataqueryupdateremoveditemskey.md)
-  The key for retrieving an array of items removed from the query result. By default, this array contains [`NSMetadataItem`](nsmetadataitem.md) objects, representing the query’s results; however, the query’s delegate can substitute these objects with instances of a different class.
+### Constants
+- [let NSMetadataQueryUpdateAddedItemsKey: String](./nsmetadataqueryupdateaddeditemskey.md)
+  The key for retrieving an array of items added to the query result. By default, this array contains [`NSMetadataItem`](./nsmetadataitem.md) objects, representing the query’s results; however, the query’s delegate can substitute these objects with instances of a different class.
+- [let NSMetadataQueryUpdateRemovedItemsKey: String](./nsmetadataqueryupdateremoveditemskey.md)
+  The key for retrieving an array of items removed from the query result. By default, this array contains [`NSMetadataItem`](./nsmetadataitem.md) objects, representing the query’s results; however, the query’s delegate can substitute these objects with instances of a different class.
 
 
 ---

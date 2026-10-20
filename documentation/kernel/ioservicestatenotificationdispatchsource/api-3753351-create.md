@@ -1,7 +1,8 @@
 # Create
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t Create(IOService *service, OSArray *items, IODispatchQueue *queue, IOServiceStateNotificationDispatchSource **source);
 ```
 

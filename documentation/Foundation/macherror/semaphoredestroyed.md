@@ -1,7 +1,8 @@
 # semaphoreDestroyed
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Semaphore has been destroyed and is no longer available.
 

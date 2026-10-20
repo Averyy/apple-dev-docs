@@ -1,7 +1,8 @@
 # init(_:selection:displayedComponents:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that selects a `Date` with an unbounded range.
 
@@ -20,6 +21,20 @@ Creates an instance that selects a `Date` with an unbounded range.
 nonisolated init(_ titleResource: LocalizedStringResource, selection: Binding<Date>, displayedComponents: DatePicker<Label>.Components = [.hourAndMinute, .date])
 ```
 
+Available when `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, selection: Binding<Date>, displayedComponents: DatePicker<Label>.Components = [.hourAndMinute, .date])
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, selection: Binding<Date>, displayedComponents: DatePicker<Label>.Components = [.hourAndMinute, .date]) where S : StringProtocol
+```
+
 ## Parameters
 
 - `titleResource`: The localized title of `self`, describing its purpose.
@@ -28,7 +43,8 @@ nonisolated init(_ titleResource: LocalizedStringResource, selection: Binding<Da
 
 ## See Also
 
-- [init(selection: Binding<Date>, displayedComponents: DatePicker<Label>.Components, label: () -> Label)](datepicker/init(selection:displayedcomponents:label:).md)
+### Creating a date picker for any date
+- [init(selection: Binding<Date>, displayedComponents: DatePicker<Label>.Components, label: () -> Label)](./init%28selection,displayedcomponents,label%29.md)
   Creates an instance that selects a `Date` with an unbounded range.
 
 

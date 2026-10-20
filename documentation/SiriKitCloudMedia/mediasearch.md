@@ -1,7 +1,8 @@
 # MediaSearch
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A description of the media items the user wants to play, add to a playlist, or express a preference for.
 
@@ -10,7 +11,7 @@ A description of the media items the user wants to play, add to a playlist, or e
 
 ## Declaration
 
-```swift
+```
 object MediaSearch
 ```
 
@@ -21,14 +22,14 @@ A `releaseDate` may refer to the publication of a specific media item, or to mus
 ## Topics
 
 ### Prioritizing Search Results
-- [type MediaSortOrder](mediasortorder.md)
+- [type MediaSortOrder](./mediasortorder.md)
   A prioritization for search results.
 ### Filtering by Release Date
-- [object DateComponentsRange](datecomponentsrange.md)
+- [object DateComponentsRange](./datecomponentsrange.md)
   A period of time from a specified start date to a specified end date.
-- [type DateComponents](datecomponents.md)
+- [type DateComponents](./datecomponents.md)
   A full or partial date and time.
-- [object ExplicitDateComponents](explicitdatecomponents.md)
+- [object ExplicitDateComponents](./explicitdatecomponents.md)
   A date or time in specified of units (such as year, month, day, hour, and minute) for evaluation in a calendar system and time zone.
 
 ## Properties
@@ -46,11 +47,12 @@ A `releaseDate` may refer to the publication of a specific media item, or to mus
 
 ## See Also
 
-- [object MediaItem](mediaitem.md)
+### Media Items
+- [object MediaItem](./mediaitem.md)
   A particular piece of media that an intent references, such as a song, podcast episode, or playlist.
-- [type MediaReference](mediareference.md)
+- [type MediaReference](./mediareference.md)
   A way of identifying the current media item rather than with metadata.
-- [type MediaItemType](mediaitemtype.md)
+- [type MediaItemType](./mediaitemtype.md)
   Types of media items or media searches.
 
 

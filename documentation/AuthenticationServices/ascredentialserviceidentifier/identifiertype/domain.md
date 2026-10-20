@@ -1,7 +1,8 @@
 # ASCredentialServiceIdentifier.IdentifierType.domain
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A domain service identifier.
 
@@ -18,9 +19,14 @@ A domain service identifier.
 case domain
 ```
 
+```c
+ASCredentialServiceIdentifierTypeDomain
+```
+
 ## See Also
 
-- [ASCredentialServiceIdentifier.IdentifierType.URL](ascredentialserviceidentifier/identifiertype/url.md)
+### Identifier types
+- [ASCredentialServiceIdentifier.IdentifierType.URL](./url.md)
   A URL service identifier.
 
 

@@ -1,7 +1,8 @@
 # body
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The updating gesture containing the originating gesture’s value, the updated state of the gesture, and a transaction.
 

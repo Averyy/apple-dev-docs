@@ -1,7 +1,8 @@
 # themeColor
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Theme color to apply to conversation view.
 
@@ -16,13 +17,14 @@ var themeColor: CGColor? { get }
 
 ## See Also
 
-- [let backgroundImageURL: URL?](rcsservice/business/backgroundimageurl.md)
+### Accessing display information
+- [let backgroundImageURL: URL?](./backgroundimageurl.md)
   Background image to apply to business information page.
-- [let styleSheetTemplateURL: URL?](rcsservice/business/stylesheettemplateurl.md)
+- [let styleSheetTemplateURL: URL?](./stylesheettemplateurl.md)
   URL referring to a CSS template to be used in rich cards sent by business.
-- [let persistentMenu: RCSService.Business.Menu?](rcsservice/business/persistentmenu.md)
+- [let persistentMenu: RCSService.Business.Menu?](./persistentmenu.md)
   Persistent menu with a nested collection of suggested replies and suggested actions.
-- [RCSService.Business.Menu](rcsservice/business/menu.md)
+- [RCSService.Business.Menu](./menu.md)
   A menu provided by business.
 
 

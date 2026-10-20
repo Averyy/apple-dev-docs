@@ -1,14 +1,15 @@
 # debugActionNMI
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.12.2+ - Deprecated in 10.15.1
 
 ## Declaration
 
-```swift
+```c
 static void debugActionNMI(IOHIDEventService *self, void *parameter);
 ```
 

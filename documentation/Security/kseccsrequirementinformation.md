@@ -1,7 +1,8 @@
 # kSecCSRequirementInformation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Code requirements—including the designated requirement—embedded in the code.
 
@@ -13,6 +14,10 @@ Code requirements—including the designated requirement—embedded in the code.
 
 ```swift
 var kSecCSRequirementInformation: UInt32 { get }
+```
+
+```c
+kSecCSRequirementInformation
 ```
 
 

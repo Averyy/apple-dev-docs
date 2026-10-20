@@ -1,7 +1,8 @@
 # vertexFormat
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the format of the vertices in the vertex buffers.
 
@@ -17,6 +18,10 @@ Defines the format of the vertices in the vertex buffers.
 
 ```swift
 var vertexFormat: MTLAttributeFormat { get set }
+```
+
+```objc
+@property (nonatomic) MTLAttributeFormat vertexFormat;
 ```
 
 #### Discussion

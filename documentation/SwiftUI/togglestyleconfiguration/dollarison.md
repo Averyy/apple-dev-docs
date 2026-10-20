@@ -1,7 +1,8 @@
 # $isOn
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,9 +21,10 @@ var $isOn: Binding<Bool> { get }
 
 ## See Also
 
-- [var isMixed: Bool](togglestyleconfiguration/ismixed.md)
-  Whether the [`Toggle`](toggle.md) is currently in a mixed state.
-- [var isOn: Bool](togglestyleconfiguration/ison.md)
+### Managing the toggle state
+- [var isMixed: Bool](./ismixed.md)
+  Whether the [`Toggle`](../toggle.md) is currently in a mixed state.
+- [var isOn: Bool](./ison.md)
   A binding to a state property that indicates whether the toggle is on.
 
 

@@ -1,7 +1,8 @@
 # documentInteractionControllerViewControllerForPreview(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a document interaction controller needs a view controller for presenting a document preview.
 
@@ -16,6 +17,10 @@ Called when a document interaction controller needs a view controller for presen
 ```swift
 @MainActor
 optional func documentInteractionControllerViewControllerForPreview(_ controller: UIDocumentInteractionController) -> UIViewController
+```
+
+```objc
+- (UIViewController *) documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController *) controller;
 ```
 
 #### Return Value
@@ -34,9 +39,10 @@ If you return a navigation controller from this method, the document interaction
 
 ## See Also
 
-- [func documentInteractionControllerViewForPreview(UIDocumentInteractionController) -> UIView?](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerviewforpreview(_:).md)
+### Configuring the parent view controller
+- [func documentInteractionControllerViewForPreview(UIDocumentInteractionController) -> UIView?](./documentinteractioncontrollerviewforpreview%28_%29.md)
   Called when a document interaction controller needs the starting point for animating the display of a document preview.
-- [func documentInteractionControllerRectForPreview(UIDocumentInteractionController) -> CGRect](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerrectforpreview(_:).md)
+- [func documentInteractionControllerRectForPreview(UIDocumentInteractionController) -> CGRect](./documentinteractioncontrollerrectforpreview%28_%29.md)
   Called when a document interaction controller needs the rectangle to use as the starting point for animating the display of a document preview.
 
 

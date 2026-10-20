@@ -1,7 +1,8 @@
 # mask
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Immersive camera mask that needs to be used for this calibration.
 

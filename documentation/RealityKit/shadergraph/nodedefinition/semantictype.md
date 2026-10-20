@@ -1,7 +1,8 @@
 # ShaderGraph.NodeDefinition.SemanticType
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -18,15 +19,15 @@ struct SemanticType
 ## Topics
 
 ### Initializers
-- [init(name: String, values: [String]?)](shadergraph/nodedefinition/semantictype/init(name:values:).md)
+- [init(name: String, values: [String]?)](./semantictype/init%28name,values%29.md)
 ### Instance Properties
-- [let name: String](shadergraph/nodedefinition/semantictype/name.md)
-- [let values: [String]?](shadergraph/nodedefinition/semantictype/values.md)
+- [let name: String](./semantictype/name.md)
+- [let values: [String]?](./semantictype/values.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../../Swift/equatable.md)
 
 
 ---

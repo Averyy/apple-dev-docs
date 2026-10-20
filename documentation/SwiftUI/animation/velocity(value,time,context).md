@@ -1,7 +1,8 @@
 # velocity(value:time:context:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates the current velocity of the animation.
 

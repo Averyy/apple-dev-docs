@@ -1,7 +1,8 @@
 # Key_namespace
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit identifier describing the domain and the structure of the key value.
 
@@ -11,11 +12,12 @@ For example, this could indicate that `key_value` is a reverse-address style str
 
 ## See Also
 
-- [Size](metadata_key_declaration_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit unsigned integer that indicates the size in bytes of the atom structure.
-- [Type](metadata_key_declaration_atom/type.md)
+- [Type](./type.md)
   A 32-bit unsigned integer value.
-- [Key_value array](metadata_key_declaration_atom/key_value_array.md)
+- [Key_value array](./key_value_array.md)
   An array of unsigned 8-bit bytes holding the key’s value.
 
 

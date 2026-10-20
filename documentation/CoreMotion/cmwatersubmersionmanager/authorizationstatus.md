@@ -1,7 +1,8 @@
 # authorizationStatus
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value indicating whether the app has user authorization to receive submersion data.
 
@@ -18,13 +19,18 @@ A value indicating whether the app has user authorization to receive submersion 
 class var authorizationStatus: CMAuthorizationStatus { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) CMAuthorizationStatus authorizationStatus;
+```
+
 #### Discussion
 
 The system automatically requests authorization to access motion data the first time your app instantiates a `CMWaterSubmersionManager`. You can use this property to check the current authorization status.
 
 ## See Also
 
-- [class var waterSubmersionAvailable: Bool](cmwatersubmersionmanager/watersubmersionavailable.md)
+### Checking availability and authorization
+- [class var waterSubmersionAvailable: Bool](./watersubmersionavailable.md)
   A Boolean value indicating whether the current device supports the submersion manager.
 
 

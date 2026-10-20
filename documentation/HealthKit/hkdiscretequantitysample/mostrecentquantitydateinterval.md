@@ -1,7 +1,8 @@
 # mostRecentQuantityDateInterval
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date interval for the most recent quantity contained by the sample.
 
@@ -19,15 +20,20 @@ The date interval for the most recent quantity contained by the sample.
 var mostRecentQuantityDateInterval: DateInterval { get }
 ```
 
+```objc
+@property (copy, readonly) NSDateInterval * mostRecentQuantityDateInterval;
+```
+
 ## See Also
 
-- [var averageQuantity: HKQuantity](hkdiscretequantitysample/averagequantity.md)
+### Accessing Calculated Values
+- [var averageQuantity: HKQuantity](./averagequantity.md)
   The average of all quantities contained by the sample.
-- [var maximumQuantity: HKQuantity](hkdiscretequantitysample/maximumquantity.md)
+- [var maximumQuantity: HKQuantity](./maximumquantity.md)
   The maximum quantity contained by the sample.
-- [var minimumQuantity: HKQuantity](hkdiscretequantitysample/minimumquantity.md)
+- [var minimumQuantity: HKQuantity](./minimumquantity.md)
   The minimum value contained by the sample.
-- [var mostRecentQuantity: HKQuantity](hkdiscretequantitysample/mostrecentquantity.md)
+- [var mostRecentQuantity: HKQuantity](./mostrecentquantity.md)
   The most recent quantity contained by the sample.
 
 

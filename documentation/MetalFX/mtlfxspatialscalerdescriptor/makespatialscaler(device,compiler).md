@@ -1,7 +1,8 @@
 # makeSpatialScaler(device:compiler:)
 
 **Framework**: MetalFX  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a spatial scaler instance for a Metal device.
 
@@ -17,6 +18,10 @@ Creates a spatial scaler instance for a Metal device.
 
 ```swift
 func makeSpatialScaler(device: any MTLDevice, compiler: any MTL4Compiler) -> (any MTL4FXSpatialScaler)?
+```
+
+```objc
+- (id<MTL4FXSpatialScaler>) newSpatialScalerWithDevice:(id<MTLDevice>) device compiler:(id<MTL4Compiler>) compiler;
 ```
 
 #### Return Value

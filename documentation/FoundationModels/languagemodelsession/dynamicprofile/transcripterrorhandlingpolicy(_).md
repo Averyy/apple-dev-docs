@@ -1,7 +1,8 @@
 # transcriptErrorHandlingPolicy(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the policy for managing the transcript when errors occur.
 
@@ -21,7 +22,7 @@ func transcriptErrorHandlingPolicy(_ transcriptErrorHandlingPolicy: TranscriptEr
 
 ## Mentions
 
-- [Expanding generation with tool calling](expanding-generation-with-tool-calling.md)
+- [Expanding generation with tool calling](../../expanding-generation-with-tool-calling.md)
 
 
 ---
